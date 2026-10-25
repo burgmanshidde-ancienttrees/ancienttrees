@@ -1717,7 +1717,9 @@ def check_own_supply_is_paused():
     many pages at once is the shape the September 2026 spam update punished,
     noindex or not. A reader's tree still ships. Trees live on 2026-10-22 are
     in data/photo-baseline.json. SUPPLY_PAUSED in scripts/findable.py; lifting
-    it needs Hidde and a Search Console week that moved.
+    it needs Hidde and a Search Console week that moved. Hidde lifted it on
+    2026-10-25 (own trees with an approved photograph ship again); the check
+    stays so setting the flag back to True pauses supply at once.
     """
     from findable import SUPPLY_PAUSED, reader_added
     if not SUPPLY_PAUSED:

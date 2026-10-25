@@ -120,8 +120,14 @@ ADD_NEEDS_PHOTO = True
 # source and it is the opposite of scaled content. Trees live on 2026-10-22 are
 # in data/photo-baseline.json and stay. Research continues into data/leads/ and
 # data/research/; the pages wait. preflight's check_own_supply_is_paused()
-# reads this; False needs Hidde and a Search Console week that moved.
-SUPPLY_PAUSED = True
+# reads this.
+# LIFTED 2026-10-25 by Hidde ("het is toch prima dat we bomen blijven
+# toevoegen als er fotos bij komen, ik sta achter die strategie"): own trees
+# ship again, only with an approved photograph (ADD_NEEDS_PHOTO), no cap of
+# our own beyond check_publishing_pace()'s 60. Since the 10-24 reader cut a
+# new tree without reader content carries the googlebot noindex, so Google's
+# index does not grow with them. True again pauses everything.
+SUPPLY_PAUSED = False
 
 
 def has_approved_photo(tree):
