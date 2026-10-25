@@ -50,13 +50,14 @@
       "access": "Free, public. Stands on the village's former churchyard, now a green space, about 100m into the village beside St. Nikolaus church.",
       "transport": "Rural village near Kirchhain, Hesse; a car or regional bus is the practical way in, no station in the village itself.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Linde_Himmelsberg_%28Kirchhain%29.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Hydro, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/hmb_001-tanzlinde-himmelsberg.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/linden/himmelsberg/",
         "status": "approved",
-        "width": 2894,
-        "height": 4370,
-        "taken_month": 10
+        "width": 1515,
+        "height": 1200,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/linden/himmelsberg/), his page 'Tanzlinde in Himmelsberg'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 0 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "best_time": {
         "months": [
@@ -72,7 +73,18 @@
       "official_register": {
         "name": "Naturdenkmalbuch Landkreis Marburg-Biedenkopf (designated 29.12.1971), no. Lfd.-Nr. 534 443",
         "url": null
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Linde_Himmelsberg_%28Kirchhain%29.jpg",
+          "license": "CC BY-SA 3.0",
+          "attribution": "Hydro, via Wikimedia Commons",
+          "status": "approved",
+          "width": 2894,
+          "height": 4370,
+          "taken_month": 10
+        }
+      ]
     }
   ]
 }

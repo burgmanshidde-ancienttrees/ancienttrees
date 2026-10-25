@@ -60,15 +60,27 @@
         "label": "June, when the lime comes into flower and the scent fills the market square"
       },
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Schenklengsfelder_Linde%2C_1.jpg",
-        "license": "Public domain",
-        "attribution": "Rainer Lippert, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/sfd_001-schenklengsfelder-dorflinde.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/linden/schenklengsfeld/",
         "status": "approved",
-        "width": 2560,
-        "height": 1920,
-        "taken_month": 5
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/linden/schenklengsfeld/), his page 'Linde in Schenklengsfeld'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 20 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
-      "how_to_recognise": "You can recognise it by its four trunk sections ringing the shell of a vanished single stem, held up by a wooden scaffold of some 80 beams. It stands on the market square in Schenklengsfeld."
+      "how_to_recognise": "You can recognise it by its four trunk sections ringing the shell of a vanished single stem, held up by a wooden scaffold of some 80 beams. It stands on the market square in Schenklengsfeld.",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Schenklengsfelder_Linde%2C_1.jpg",
+          "license": "Public domain",
+          "attribution": "Rainer Lippert, via Wikimedia Commons",
+          "status": "approved",
+          "width": 2560,
+          "height": 1920,
+          "taken_month": 5
+        }
+      ]
     }
   ]
 }

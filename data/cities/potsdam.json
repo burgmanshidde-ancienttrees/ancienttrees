@@ -232,15 +232,14 @@
       "access": "Free. Stands in the Schlosspark Sacrow, a public landscape park by the Havel (Lenne design); open in daylight. ",
       "transport": "By bus from central Potsdam to Sacrow, then on foot through the Schlosspark Sacrow to the oak.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_2.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "WikiVagant, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/pot_005-the-thousand-year-oak-of-sacrow.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/brandenburg/2-kategorie/potsdam-1/",
         "status": "approved",
-        "approved_by": "viewing pass",
-        "approved_on": "2026-10-14",
-        "width": 3696,
-        "height": 2448,
-        "taken_month": 9
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/brandenburg/2-kategorie/potsdam-1/), his page 'Eiche im Sacrower Park bei Potsdam'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 8 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -249,7 +248,20 @@
       "official_register": {
         "name": "Naturdenkmal Nr. 15 (Landeshauptstadt Potsdam), no. Naturdenkmal Nr. 15",
         "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-15-stiel-eiche-im-schlosspark-sacrow"
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_2.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "WikiVagant, via Wikimedia Commons",
+          "status": "approved",
+          "approved_by": "viewing pass",
+          "approved_on": "2026-10-14",
+          "width": 3696,
+          "height": 2448,
+          "taken_month": 9
+        }
+      ]
     },
     {
       "id": "pot_006",
@@ -277,15 +289,14 @@
       "access": "Free. A public city square in central Potsdam, open at all times.",
       "transport": "In central Potsdam, a short walk from the Brandenburger Tor.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Naturdenkmal_Nr._31_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Haplochromis, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/pot_006-the-columnar-oaks-of-bassinplatz.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/brandenburg/2-kategorie/potsdam/",
         "status": "approved",
-        "approved_by": "viewing pass",
-        "approved_on": "2026-10-14",
-        "width": 4160,
-        "height": 3120,
-        "taken_month": 12
+        "width": 1598,
+        "height": 1200,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/brandenburg/2-kategorie/potsdam/), his page 'Pyramideneiche in Potsdam'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 0 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -294,7 +305,20 @@
       "official_register": {
         "name": "Naturdenkmal Nr. 31 und Nr. 32 (Landeshauptstadt Potsdam), no. Naturdenkmal Nr. 31, Nr. 32",
         "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-31-saeulen-eiche-auf-dem-bassinplatz"
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Naturdenkmal_Nr._31_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Haplochromis, via Wikimedia Commons",
+          "status": "approved",
+          "approved_by": "viewing pass",
+          "approved_on": "2026-10-14",
+          "width": 4160,
+          "height": 3120,
+          "taken_month": 12
+        }
+      ]
     },
     {
       "id": "pot_007",

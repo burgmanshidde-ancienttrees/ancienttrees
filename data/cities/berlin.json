@@ -57,13 +57,14 @@
       "access": "Free, public forest, open at all times",
       "transport": "12-15 min walk from Alt-Tegel U-Bahn (U6), via the Tegel harbour bridge and lakeside path",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Dicke_Marie.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Maculata, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/ber_001-dicke-marie.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/berlin/2-kategorie/tegel/",
         "status": "approved",
-        "width": 3135,
-        "height": 4250,
-        "taken_month": 5
+        "width": 1067,
+        "height": 1600,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/berlin/2-kategorie/tegel/), his page 'Dicke Marie im Tegeler Forst'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 7 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "flagged",
       "notes": "Age is genuinely disputed between two credible sources: Berlin forestry authorities (800-900 years, per visitBerlin.de and multiple secondary sources) versus the German Dendrological Society's 2021 National Heritage Tree assessment (500-600 years, per de.wikipedia). Presented as a range with the disagreement named in the story per P7, rather than picking one figure. Coordinates from the German Wikipedia infobox.",
@@ -73,7 +74,18 @@
         "name": "Naturdenkmal (Land Berlin, Senatsverwaltung), no. 12-24/B",
         "url": null
       },
-      "girth_cm": 672
+      "girth_cm": 672,
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Dicke_Marie.JPG",
+          "license": "CC BY-SA 3.0",
+          "attribution": "Maculata, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3135,
+          "height": 4250,
+          "taken_month": 5
+        }
+      ]
     },
     {
       "id": "ber_002",
@@ -105,13 +117,14 @@
       "access": "Free (a 1 euro donation is requested at the gate); park open daily until sunset, the palace interior open only on Mondays, May to September",
       "transport": "12 min walk from Alt-Tegel U-Bahn (U6)",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tegel_Schlosspark_Tegel.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Fridolin freudenfett, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/ber_002-the-humboldt-oak.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/berlin/tegel/",
         "status": "approved",
-        "width": 3000,
-        "height": 4000,
-        "taken_month": 6
+        "width": 1598,
+        "height": 1200,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/berlin/tegel/), his page 'Humboldteiche im Schlosspark Tegel'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 1 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal since 1939, registration 12-25/B. Girth (7.80 m) and age range (400-500 years) confirmed by two independent sources. Coordinates from a GPS-tagged tree registry source, used for cross-check.",
@@ -122,7 +135,18 @@
         "url": null
       },
       "girth_cm": 780,
-      "height_m": 29
+      "height_m": 29,
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tegel_Schlosspark_Tegel.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Fridolin freudenfett, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3000,
+          "height": 4000,
+          "taken_month": 6
+        }
+      ]
     },
     {
       "id": "ber_003",

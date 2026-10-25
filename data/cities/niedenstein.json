@@ -50,13 +50,14 @@
       "access": "Free, public. Naturdenkmal in the town.",
       "transport": "Small town in the Schwalm-Eder-Kreis, Hesse, near Kassel; a car is the practical way in.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Niedensteiner_Tanzlinde_%281%29%2C_2017.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Cosal, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/ndn_001-niedensteiner-tanzlinde.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/linden/niedenstein/",
         "status": "approved",
-        "width": 4608,
-        "height": 3456,
-        "taken_month": 5
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/linden/niedenstein/), his page 'Tanzlinde in Niedenstein'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 0 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "best_time": {
         "months": [
@@ -67,7 +68,18 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its three low trunks splitting into six flat-spreading limbs, 8.6 metres round. It stands as Niedenstein's protected village lime, on open public ground."
+      "how_to_recognise": "You can recognise it by its three low trunks splitting into six flat-spreading limbs, 8.6 metres round. It stands as Niedenstein's protected village lime, on open public ground.",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Niedensteiner_Tanzlinde_%281%29%2C_2017.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Cosal, via Wikimedia Commons",
+          "status": "approved",
+          "width": 4608,
+          "height": 3456,
+          "taken_month": 5
+        }
+      ]
     }
   ]
 }

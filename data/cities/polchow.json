@@ -50,13 +50,14 @@
       "access": "Free, public. Stands on the churchyard (Kirchfriedhof) in the village, also known locally as the Kirchlinde/Kirchhofslinde.",
       "transport": "Small village near Laage, Mecklenburg-Vorpommern; a car is the practical way in, nearest larger town Guestrow/Laage.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Polchower_Sommerlinde.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Markus Göllnitz, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/plc_001-polchower-linde.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/linden/polchow/",
         "status": "approved",
-        "width": 3456,
-        "height": 2304,
-        "taken_month": 7
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/linden/polchow/), his page 'Polchower Linde'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 3 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "best_time": {
         "months": [
@@ -73,7 +74,18 @@
         "name": "Naturdenkmal Nr. 61 (Landkreis Rostock; Verordnung vom 23.08.1937); Nationalerbe-Baum (DDG)",
         "url": "https://nationalerbe-baeume.de/project/polchower-linde-landkreis-rostock-mecklenburg-vorpommern/"
       },
-      "height_m": 20
+      "height_m": 20,
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Polchower_Sommerlinde.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Markus Göllnitz, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3456,
+          "height": 2304,
+          "taken_month": 7
+        }
+      ]
     }
   ]
 }

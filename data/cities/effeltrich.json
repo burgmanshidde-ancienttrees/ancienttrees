@@ -54,20 +54,32 @@
       "curation_status": "flagged",
       "story": "The crown of this lime sits eight metres up and runs twenty metres across, flat as a table, and none of that is an accident. Generation after generation trained the branches out sideways onto a scaffold of oak: two concentric ring beams carried on 24 posts, the whole structure standing on a stone wall 49 metres long and 90 centimetres high that circles the trunk. It is still pruned every second year to hold the form.\n\nThis is a Tanzlinde, a dance lime. The square beside the fortified church of St. Georg served Effeltrich as court and assembly ground as well as dance floor, and music and processions still take place under the disc of leaves.\n\nEstimates based on trunk structure and growth habit put the tree at 600 to 800 years old. The village calls it the thousand-year lime, a name handed down at the site rather than a figure anyone arrived at, and it is worth hearing in that spirit. The trunk measures a little over eight metres round: 8.02 metres when Nationalerbe-Baeume took it in May 2024, 7.89 when baumkunde came in July 2025.\n\nIn August 2024 it was named National Heritage Tree number 39, one of a short national list. Baumkunde's visit the following summer found it vital. The square is open, free, and the tree is unmistakable from the church door.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Effeltrich_1270266.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Ermell, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/eff_001-tanzlinde-effeltrich.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/linden/effeltrich/",
         "status": "approved",
-        "width": 4608,
-        "height": 3456,
-        "taken_month": 7
+        "width": 1600,
+        "height": 1200,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/linden/effeltrich/), his page 'Tanzlinde in Effeltrich'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 3 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "how_to_recognise": "You can recognise it by its flat, table-like crown trained sideways onto a scaffold of oak beams on 24 posts, ringed by a low stone wall. It stands on the village square beside the fortified church of St. Georg in Effeltrich.",
       "official_register": {
         "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-04472",
         "url": null
       },
-      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-04472 (data/registers/bayern-naturdenkmale.json), matched on our pin at 4 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-04472 (data/registers/bayern-naturdenkmale.json), matched on our pin at 4 m (register_match.py, 2026-10-12).",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Effeltrich_1270266.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Ermell, via Wikimedia Commons",
+          "status": "approved",
+          "width": 4608,
+          "height": 3456,
+          "taken_month": 7
+        }
+      ]
     }
   ]
 }

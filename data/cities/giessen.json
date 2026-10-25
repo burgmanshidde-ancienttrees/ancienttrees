@@ -96,13 +96,14 @@
       "curation_status": "flagged",
       "story": "A steel grating covers the triangular hole in this oak's trunk, one heavy horizontal branch rests on two steel tubes, and the bark has gone from the far side. Surveyors still describe it as vital overall. That is what an old oak looks like when a town has decided to keep it.\n\nIt has stood under protection since 3 September 1906, one of the earliest protection dates on Giessen's Naturdenkmal register and older than both world wars. The setting is modest, a former forest picnic clearing at the corner of Geiselweg and Seeweg, on the Rödgen side of the city.\n\nIts age and size are on record twice and the two records do not match. The city register gives roughly 275 to 300 years, 16 metres tall, 6.10 metres round. Monumentale-eichen, measuring in 2018, gives about 350 years, 15 metres and 6.29 metres. Neither is careless. An oak's age is estimated from girth and structure rather than counted, and two estimates from different decades will differ, so the honest span here is 275 to 350 years.\n\nThe clearing is free and open. The Schillerlinde is about 400 metres away, so those two make a short walk together; Giessen's other veterans are kilometres off in other districts and are separate outings.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Gie%C3%9Fen-R%C3%B6dgen%2C_Alte_Eiche_01.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "B!G!1851, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/gie_002-alte-eiche.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/hessen/3-kategorie/r%C3%B6dgen/",
         "status": "approved",
-        "width": 3648,
-        "height": 2736,
-        "taken_month": 5
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/hessen/3-kategorie/r%C3%B6dgen/), his page 'Alte Eiche bei Rödgen'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 1 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "how_to_recognise": "You can recognise it by the steel grating over a hole in its trunk and a heavy branch propped on steel tubes. It stands at the corner of Geiselweg and Seeweg, in Rödgen.",
       "best_time": {
@@ -116,7 +117,18 @@
       "official_register": {
         "name": "Naturdenkmale der Stadt Gießen (Hessisches Naturschutzgesetz), city list, archived 2016",
         "url": "https://web.archive.org/web/20160124143510/https://www.giessen.de/index.phtml?La=1&object=tx%7C640.180.1&sub=0"
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Gie%C3%9Fen-R%C3%B6dgen%2C_Alte_Eiche_01.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "B!G!1851, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3648,
+          "height": 2736,
+          "taken_month": 5
+        }
+      ]
     },
     {
       "id": "gie_003",

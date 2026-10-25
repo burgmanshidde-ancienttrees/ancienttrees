@@ -61,15 +61,27 @@
         "label": "January and February, when the leaves are off and the three trunk sections and their steel column stand fully exposed"
       },
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Linde-Reinborn-JR-E-2495-2018-08-02.jpg",
-        "license": "CC BY-SA 3.0 de",
-        "attribution": "Johannes Robalotoff, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/rbn_001-1000-j-hrige-linde-in-reinborn.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/linden/reinborn/",
         "status": "approved",
-        "width": 4678,
-        "height": 3052,
-        "taken_month": 8
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/linden/reinborn/), his page 'Linde in Reinborn'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 17 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
-      "how_to_recognise": "You can recognise it by its trunk in three sections, held together by a steel column and cables, 14.34 metres round. It stands on the Kirchberg beside the church and cemetery in Reinborn."
+      "how_to_recognise": "You can recognise it by its trunk in three sections, held together by a steel column and cables, 14.34 metres round. It stands on the Kirchberg beside the church and cemetery in Reinborn.",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Linde-Reinborn-JR-E-2495-2018-08-02.jpg",
+          "license": "CC BY-SA 3.0 de",
+          "attribution": "Johannes Robalotoff, via Wikimedia Commons",
+          "status": "approved",
+          "width": 4678,
+          "height": 3052,
+          "taken_month": 8
+        }
+      ]
     }
   ]
 }

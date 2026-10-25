@@ -11,6 +11,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 session: 35 German trees get Rainer Lippert's photographs
+
+- **Live with this deploy**: 35 German trees now lead with a photograph from Rainer Lippert's monumentale-eichen.de, credited with a link to his page, under his standing permission (mail, 2026-10-10: "Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link"). 13 had no photograph at all (Hamburg's Hirschpark maple, the Ash at Schloss Solitude, both Dawn Redwoods in Frankfurt and Bad Homburg, two Nuremberg burl oaks, three Frankfurt and Offenbach oaks, Leipzig's Starkeiche, Dresden's Grenzeiche, Gut Burgstall's lime). 22 swapped a Commons lead for his, and the Commons photo moved into the strip (Dicke Marie, the Humboldt Oak, the Kaditzer Linde, the Tassilolinde, Teuchatz, Effeltrich and others).
+- **Google**: all 35 now count as reader content (a photograph unique to us). This deploy has room for 26 returning pages; the guard lets the rest back on the next deploys by itself.
+- **How it was matched**: his sitemap (2,882 pages), narrowed by place and genus, then paired on the coordinates every page of his carries (same genus, mostly within 20 m). Every photo was looked at, and each was checked against his 1,523 Commons uploads by image fingerprint: none is on Commons, so they really are unique. Five stories that now face Google lost a colon reveal.
+- Held, not applied: frk_023 (Bethmannpark ginkgo, several trees in the frame), pot_011 (his twin oak against our three oaks, 69 m), pot_012 (66 m, unclear trunk), frk_009 (131 m, a group).
+- Next on the same permission: only 78 of his 2,882 pages were read this time, chosen by place name. A coordinate pass over the rest would find German trees whose names do not match his.
+- The archive mail batch the night run still lists as waiting went out this afternoon on Hidde's "verstuur" (Brussels, Munich, Barcelona).
+
 ## 2026-10-25 night run, third attempt (same window): Baltimore retried
 
 Same state as the two attempts before: no claims, 3 READY leads all held by the supply pause, rungs 1, 2 and 4 clear (health.py flags only a skipped smoke run on a log-only commit), enrich and recognise have nothing, the archive mail batch still waits for Hidde. Scouting: Baltimore retried, the ArcGIS item has no licence statement, so still stalled (only a written yes from Rec and Parks opens it), `retried` set. No trees added.

@@ -251,15 +251,14 @@
       "access": "Stands in a meadow on the DBU Naturerbe Frauenholz (former military training area, managed by Bundesforstbetrieb Hohenfels); baumkunde.de lists access as publicly accessible and the road to Obertraubling passes the tree. The trunk opening with the Madonna figure is behind a grille.",
       "transport": "About 8 km south of Regensburg centre, near Obertraubling and Oberhinkofen. We have not checked bus connections or travel time; look up the route before you go.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Bildeiche_%28H%C3%B6henhof%29_2.jpg",
-        "license": "CC0",
-        "attribution": "APneunzehn74, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/rgb_006-the-bildeiche-at-h-henhof.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/monumentale-eichen-in-bayern/h%C3%B6henhof/",
         "status": "approved",
-        "approved_by": "viewing pass",
-        "approved_on": "2026-10-21",
-        "width": 2992,
-        "height": 4000,
-        "taken_month": 6
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/monumentale-eichen-in-bayern/h%C3%B6henhof/), his page 'Bildeiche beim Höhenhof'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 0 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -267,7 +266,20 @@
       "official_register": {
         "name": "Bavarian LfU Naturdenkmal register ND-02810 (Landkreis Regensburg ND list no. 47)",
         "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Regensburg"
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Bildeiche_%28H%C3%B6henhof%29_2.jpg",
+          "license": "CC0",
+          "attribution": "APneunzehn74, via Wikimedia Commons",
+          "status": "approved",
+          "approved_by": "viewing pass",
+          "approved_on": "2026-10-21",
+          "width": 2992,
+          "height": 4000,
+          "taken_month": 6
+        }
+      ]
     },
     {
       "id": "rgb_007",
