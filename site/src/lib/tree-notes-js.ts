@@ -35,6 +35,9 @@ export const TREE_NOTES_JS = `
   try { near = JSON.parse(sec.getAttribute('data-near') || '[]'); } catch (e) {}
   var body = sec.querySelector('.td-notes-body');
   var btnsBox = sec.querySelector('.td-notes-btns');
+  var T = function(k) { return sec.getAttribute('data-' + k) || ''; };
+  var askBtn = document.getElementById('td-note-ask');
+  var own = null;      // {body, created_at} from your own row
   // The one button lives where the next note will appear: inside the grey
   // empty card while there are none, under the list once there are (Hidde,
   // 2026-10-25). Taken out before the card is kept as the empty state, so
@@ -50,7 +53,6 @@ export const TREE_NOTES_JS = `
     (act || btnsBox || sec).appendChild(askBtn);
   }
   placeAsk();
-  var T = function(k) { return sec.getAttribute('data-' + k) || ''; };
   var LOCALE = document.documentElement.lang || 'en';
   var dlg = document.getElementById('note-dlg');
   var field = document.getElementById('note-field');
@@ -59,8 +61,6 @@ export const TREE_NOTES_JS = `
   var delBtn = document.getElementById('note-del');
   var cancelBtn = document.getElementById('note-cancel');
   var status = document.getElementById('note-status');
-  var askBtn = document.getElementById('td-note-ask');
-  var own = null;      // {body, created_at} from your own row
   var rows = [];       // every public note on this tree and its neighbours
   var gone = false;    // the function is not there yet
 
