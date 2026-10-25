@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 session: the map card and sheet on a phone
+
+- **Live on the phone website, every map**: the tapped tree's card has 16 on all four sides (it had 30 on top, 16 under), the list sheet steps away while a card is up and comes back when it closes (Airbnb's mobile map), and /explore's resting sheet shows the top of its first city, cut by the screen edge, so the list reads as something to pull up. Hidde approved the mockup first. Desktop and the app are unchanged (the app's tapped tree rises in its own sheet). CONVENTIONS.md "Tapping a pin on a map that has a list in a sheet" has the measurements.
+
 ## 2026-10-25 session: tree notes table confirmed, digest shows the week day by day
 
 tree_notes is in Supabase: sqlcheck with the service key says every migration is applied, and the Postbox check is green (10-24 22:35 and 10-25 11:58). Stop writing "paste supabase/tree-notes.sql" as something for Hidde. The digest now opens with readers' words in full (local page only), a day-by-day table for the last seven days, and a Waiting for you block. Its Today line now counts accounts and waitlist signups.
