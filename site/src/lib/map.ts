@@ -582,13 +582,27 @@ try {
 // town fills, and the sheet asks for its first tree under its name. Read after
 // the timezone guess above so the town wins.
 var PLACE = null;
+// On a phone the sheet covers the lower map: the town goes in the middle of
+// what is still visible, measured the way the tree card measures it.
+function _goPlace() {
+  var lift = 0;
+  try {
+    var mr = map.getContainer().getBoundingClientRect();
+    var st = window.atSheetTop ? window.atSheetTop() : null;
+    if (st !== null && st < mr.bottom) { lift = (mr.bottom - st) / 2; }
+  } catch (e) {}
+  map.easeTo({center: [PLACE.lng, PLACE.lat], zoom: 11, offset: [0, -lift], duration: 0});
+}
 function _placeFromHash() {
   var m = /^#@(-?[0-9.]+),(-?[0-9.]+),?(.*)$/.exec(location.hash);
   if (!m) { return; }
   var name = '';
   try { name = decodeURIComponent(m[3] || ''); } catch (e) {}
   PLACE = {lat: parseFloat(m[1]), lng: parseFloat(m[2]), name: name};
-  map.jumpTo({center: [PLACE.lng, PLACE.lat], zoom: 11});
+  _goPlace();
+  // Once more on the next frame: the sheet's script may only now have said
+  // where its top is.
+  requestAnimationFrame(_goPlace);
   try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
 }
 _placeFromHash();
