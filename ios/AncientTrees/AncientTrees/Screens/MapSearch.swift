@@ -22,6 +22,11 @@ struct MapSearch: View {
         .first { $0.hasPrefix("-search=") }.map { String($0.dropFirst(8)) } ?? ""
     @FocusState private var focused: Bool
     @State private var lane: Lane = .top
+    /// Real towns Apple knows for the query, and which query they answer, so
+    /// a stale answer is never shown under a newer one (EmptyPlace.swift).
+    @State private var realPlaces: [RealPlace] = []
+    @State private var answered: String?
+    @Environment(Units.self) private var units
 
     enum Lane: String, CaseIterable, Identifiable {
         case top, places, species, trees
@@ -41,6 +46,8 @@ struct MapSearch: View {
         case country(String)
         case species(String)
         case tree(Tree)
+        /// A real town with none of our trees (2026-10-25).
+        case place(name: String, lat: Double, lng: Double)
     }
 
     var body: some View {
@@ -58,7 +65,48 @@ struct MapSearch: View {
         }
         .brandGround()
         .accessibilityIdentifier("map-search")
-        .onAppear { focused = true }
+        // `-searchblur` (debug, with -search=) keeps the keyboard down so a
+        // screenshot shows the whole result list; simctl cannot dismiss it.
+        .onAppear { focused = !ProcessInfo.processInfo.arguments.contains("-searchblur") }
+        // Apple's towns, a beat after the last keystroke so typing "Bern" is
+        // one lookup and not four. Not asked when one of OUR places carries
+        // the name typed: "Lisbon" is ours, and Apple has nothing to add.
+        .task(id: query) {
+            let q = query.trimmingCharacters(in: .whitespaces)
+            guard q.count >= 2, !oursIsNamed(q) else { realPlaces = []; answered = nil; return }
+            try? await Task.sleep(for: .milliseconds(300))
+            guard !Task.isCancelled else { return }
+            let found = await EmptyPlace.lookup(q)
+            guard !Task.isCancelled else { return }
+            realPlaces = found
+            answered = query
+        }
+    }
+
+    /// One of our cities or countries carries exactly this name, in English or
+    /// in another language browse.json knows.
+    private func oursIsNamed(_ raw: String) -> Bool {
+        let q = Self.fold(raw)
+        if countries.contains(where: { Self.fold($0.name) == q }) { return true }
+        return biggestCities.contains { c in
+            Self.fold(c.name) == q || catalogue.facets.aka(city: c.slug).contains { Self.fold($0) == q }
+        }
+    }
+
+    /// The town the empty card is about, or nil for no card.
+    ///
+    /// When nothing of ours matches, Apple's first town. When some of ours
+    /// match only in passing ("Bern" finds Brno through its Albanian name
+    /// Bërno, and Oberndorf through the middle of a word), a town Apple knows
+    /// by EXACTLY the name typed still gets its card: somebody who typed a
+    /// town's whole name was asking for that town (Hidde's mockup, 2026-10-25,
+    /// is Bern). Our partial matches stay listed under it, unchanged.
+    private var cardTown: RealPlace? {
+        guard answered == query, !realPlaces.isEmpty else { return nil }
+        let r = ranked
+        if r.places.isEmpty && r.species.isEmpty && r.trees.isEmpty { return realPlaces[0] }
+        let q = Self.fold(query.trimmingCharacters(in: .whitespaces))
+        return realPlaces.first { Self.fold($0.name) == q }
     }
 
     // MARK: - the field
@@ -162,14 +210,26 @@ struct MapSearch: View {
             && (!showSpecies || r.species.isEmpty)
             && (!showTrees || r.trees.isEmpty)
 
-        if empty {
-            Text(lane == .top
-                 ? "Nothing matches that yet."
-                 : "Nothing under \(lane.label.lowercased()). Try Top results.")
+        // NOTHING OF OURS, BUT A REAL TOWN (Hidde, 2026-10-25): the ask to
+        // add the first tree, the towns themselves, and the nearest tree we
+        // do hold. On Top results and Places, the lanes a town belongs in.
+        let ours = r.places.isEmpty && r.species.isEmpty && r.trees.isEmpty
+        let asksForPlaces = lane == .top || lane == .places
+        let town = asksForPlaces ? cardTown : nil
+        if let town {
+            notMappedYet(town, ourPlaces: r.places)
+        } else if ours && asksForPlaces && answered == query {
+            // The 16 every row on this screen starts at.
+            Text("Nothing matches “\(query)”. Check the spelling, or try a town nearby.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                .padding(.horizontal, 20).padding(.top, 24)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.horizontal, 16).padding(.top, 24)
+        } else if empty && !(ours && asksForPlaces) {
+            Text("Nothing under \(lane.label.lowercased()). Try Top results.")
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .padding(.horizontal, 16).padding(.top, 24)
         }
-        if showPlaces && !r.places.isEmpty {
+        if town == nil && showPlaces && !r.places.isEmpty {
             if lane == .top { head("Places") }
             ForEach(r.places, id: \.id) { p in
                 row(p.name, p.sub, p.icon) { onPick(p.hit); dismiss() }
@@ -187,6 +247,36 @@ struct MapSearch: View {
                 row(t.name, "\(t.commonName) · \(t.city)", "tree") { onPick(.tree(t)); dismiss() }
                     .accessibilityIdentifier("search-result-tree")
             }
+        }
+    }
+
+    /// The grey card for the town, Apple's towns (that one first) with any
+    /// of our own places that also matched, and the nearest tree.
+    @ViewBuilder private func notMappedYet(_ top: RealPlace, ourPlaces: [Place]) -> some View {
+        EmptyPlaceCard(place: top.name)
+            .padding(.horizontal, 16).padding(.top, 18)
+        head("Places")
+        ForEach([top] + realPlaces.filter { $0 != top }) { p in
+            Button { onPick(.place(name: p.name, lat: p.lat, lng: p.lng)); dismiss() } label: {
+                EmptyPlaceRow(name: p.name,
+                              sub: p.country.isEmpty ? "Show on the map" : "\(p.country) · show on the map",
+                              icon: "mappin.and.ellipse")
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("empty-place-town")
+        }
+        ForEach(ourPlaces, id: \.id) { p in
+            row(p.name, p.sub, p.icon) { onPick(p.hit); dismiss() }
+        }
+        if let n = EmptyPlace.nearest(in: catalogue, lat: top.lat, lng: top.lng) {
+            head("Nearest tree")
+            Button { onPick(.tree(n.tree)); dismiss() } label: {
+                EmptyPlaceRow(name: n.tree.name,
+                              sub: "\(EmptyPlace.distance(n.km, units.unit)) from \(top.name) · \(n.tree.city)",
+                              icon: "tree")
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("empty-place-nearest")
         }
     }
 

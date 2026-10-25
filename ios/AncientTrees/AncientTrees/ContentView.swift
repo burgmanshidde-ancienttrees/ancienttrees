@@ -719,6 +719,10 @@ struct ContentView: View {
             // go there. MapTab frames the city and clears the request.
             if new != nil { mapPath = []; tab = 0 }
         }
+        .onChange(of: navigator.showPlaceOnMap) { _, new in
+            // The same, for a town we hold no trees in (2026-10-25).
+            if new != nil { mapPath = []; tab = 0 }
+        }
         .onChange(of: navigator.showOnMap) { _, new in
             // POP the map's own stack as well. The tree page you
             // tapped the inset on is usually pushed ON the map tab, so

@@ -84,6 +84,10 @@ struct MapTab: View {
     @State private var moveRequest: (token: UUID, region: MKCoordinateRegion)?
     @State private var filters = MapFilters()
     @State private var shownWalk: Walk?
+    /// The town a search just flew to, so the empty card can name it while
+    /// the map is still looking there (2026-10-25, EmptyPlace.swift).
+    @State private var flownPlace: PlaceOnMap?
+    @Environment(Units.self) private var units
     @Environment(Entitlement.self) private var entitlement
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
@@ -234,10 +238,42 @@ struct MapTab: View {
         flewAt = Date()
     }
 
-    /// No tree in view, no walk, no arrival and nothing selected: the list
-    /// would be empty, so the sheet stays down.
-    private var nothingToList: Bool {
-        inReach == 0 && shownWalk == nil && arrived == nil && selected == nil
+    /// No tree in view, none of yours, no walk, no arrival and nothing
+    /// selected. The sheet used to lock down here, with nothing to list; since
+    /// 2026-10-25 it lists the ask to add the first tree and the nearest one.
+    private var nothingInView: Bool {
+        inReach == 0 && minesInView.isEmpty && shownWalk == nil && arrived == nil
+            && selected == nil && query.isEmpty
+            // A filter that empties the view is not an empty place: the
+            // trees are there, the filter hides them.
+            && !filters.isOn
+    }
+
+    /// The town's name while the map still looks at the town a search flew to.
+    private var placeInView: String? {
+        guard let p = flownPlace else { return nil }
+        return Geo.km(focus, (p.lat, p.lng)) < 15 ? p.name : nil
+    }
+
+    /// The grey card, then the nearest tree we hold to the map's centre.
+    @ViewBuilder private var emptyHere: some View {
+        EmptyPlaceCard(place: placeInView)
+        if let n = EmptyPlace.nearest(in: catalogue, lat: focus.lat, lng: focus.lng) {
+            VStack(alignment: .leading, spacing: 0) {
+                // MapSearch's small heading, the app's eyebrow.
+                Text("Nearest")
+                    .font(.eyebrow).textCase(.uppercase).tracking(0.8)
+                    .foregroundStyle(Brand.inkSoft)
+                    .padding(.top, 6).padding(.bottom, 6)
+                SheetLink(route: .tree(n.tree.id)) {
+                    EmptyPlaceRow(name: n.tree.name,
+                                  sub: "\(EmptyPlace.distance(n.km, units.unit)) · \(n.tree.city)",
+                                  icon: "tree", inset: 0)
+                }
+                .accessibilityIdentifier("empty-place-nearest")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
     }
 
     /// How many trees are actually under the view, uncapped.
@@ -458,12 +494,11 @@ struct MapTab: View {
         // The list, pulled all the way up, stops under the search field
         // rather than running beneath it (Google Maps; Hidde, 2026-10-12).
         .environment(\.sheetFullInset, searchBottom > 0 ? searchBottom + 10 : 0)
-        // Nothing to list, nothing to pull up.
-        .environment(\.sheetLocked, nothingToList)
-        // No automatic collapse: the count passes through zero while the
-        // map settles at launch, and collapsing on that pulled the list down
-        // under people (the full UI suite caught it). Locked is enough: an
-        // empty list cannot be pulled up.
+        // NO LOCK any more (2026-10-25): with no tree in view the list holds
+        // the ask to add one and the nearest tree, so there is always
+        // something to pull up. No automatic collapse either: the count passes
+        // through zero while the map settles at launch, and collapsing on that
+        // pulled the list down under people (the full UI suite caught it).
         .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
         // AT FULL HEIGHT ONLY, which is his own correction within the minute:
         // "de map floating knop op de map pagina is overbodig" and then, having
@@ -536,6 +571,11 @@ struct MapTab: View {
             query = ""
             sheetHeight = .peek
             moveRequest = (token: UUID(), region: MKCoordinateRegion(center: centre, span: span))
+        }
+        .onChange(of: navigator.showPlaceOnMap) { _, new in
+            guard let p = new else { return }
+            navigator.showPlaceOnMap = nil
+            showPlace(p)
         }
         .onChange(of: navigator.showOnMap) { _, new in
             guard let id = new, let t = catalogue.tree(id) else { return }
@@ -619,6 +659,8 @@ struct MapTab: View {
                 case .tree(let t):
                     fly(to: t.lat, lng: t.lng, span: 1200)
                     selected = t
+                case .place(let name, let lat, let lng):
+                    showPlace(PlaceOnMap(name: name, lat: lat, lng: lng))
                 }
             }
         }
@@ -626,6 +668,18 @@ struct MapTab: View {
         // A tapped pin: TreePlaceSheet.swift's PinSelection, shared with a
         // city's map and My trees.
         .pinSelection($selected, height: $sheetHeight)
+    }
+
+    /// Look at a town a search found, ours or not. The sheet rises to its
+    /// card stop, a deliberate move rather than the map settling, so the
+    /// empty card (or the town's trees) is what you see next.
+    private func showPlace(_ p: PlaceOnMap) {
+        selected = nil
+        shownWalk = nil
+        filters = MapFilters()
+        flownPlace = p
+        fly(to: p.lat, lng: p.lng, span: EmptyPlace.spanMetres)
+        if sheetHeight == .peek { sheetHeight = .card }
     }
 
     /// The cross: the list comes back at the height it had, the pin shrinks.
@@ -913,7 +967,9 @@ struct MapTab: View {
                         .accessibilityIdentifier("tree-card")
                         .id(hit.tree.id)
                 }
-                if listed.isEmpty {
+                if nothingInView {
+                    emptyHere
+                } else if listed.isEmpty && minesInView.isEmpty {
                     Text(query.isEmpty
                          ? (lookingAtYou
                             ? "No tree of ours within fifty kilometres."
