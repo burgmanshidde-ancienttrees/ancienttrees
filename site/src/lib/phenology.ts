@@ -475,6 +475,11 @@ export function seasonBlock(tree: Tree, lat: number): string {
   }
 
   const [vals, moments] = highlightCurve(ph);
+  // An evergreen with only small moments draws a near-flat line that says
+  // nothing (Hidde, 2026-10-25, on the Lone Pine in Canberra). A deciduous
+  // tree keeps its chart: bare winter, fresh leaf and summer are worth seeing.
+  const bigMoment = moments.some((m) => m.word === "striking" || m.word === "worth the trip");
+  if (!hasBt && !(ph.bare && ph.bare.length) && !bigMoment) return "";
   if (Math.max(...vals) - Math.min(...vals) < 0.02) {
     if (hasBt) return seasonCurve(tree);
     // Nothing: an honest gap is silent (Hidde, 2026-10-24: "de season chart

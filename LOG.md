@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 session: no year chart for an evergreen without a moment
+
+- **Tree pages**: "The tree's year" is left out for an evergreen with no best_time and no moment rated striking or worth the trip (pines, cedars, cypresses, holm and live oaks, camphor: their line was near flat). About 315 charts go, 74 to 66 percent of trees; deciduous trees keep theirs (bare winter, fresh leaf). Hidde, after the Lone Pine in Canberra. Web only: the app has no year chart. Noticed in passing: some autumn colour reads low (White Oak, Pecan, Silver Maple "nice").
+
 ## 2026-10-25 session: the map card and sheet on a phone
 
 - **Live on the phone website, every map**: the tapped tree's card has 16 on all four sides (it had 30 on top, 16 under), the list sheet steps away while a card is up and comes back when it closes (Airbnb's mobile map), and /explore's resting sheet shows the top of its first city, cut by the screen edge, so the list reads as something to pull up. Hidde approved the mockup first. Desktop and the app are unchanged (the app's tapped tree rises in its own sheet). CONVENTIONS.md "Tapping a pin on a map that has a list in a sheet" has the measurements.
