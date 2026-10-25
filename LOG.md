@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25, thirty-second attempt (nothing shipped)
+
+Nothing changed in the product. Inbox empty, harvest 0 new comments, both open Reddit items already drafted, same 3 photo-less READY leads (Oxford 2, Madrid 1) under paused own supply, so no write or verify pass. health.py exit 1 is the push-skipped smoke test (scheduled run 09:18 succeeded); answered with `health.py --answer`. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
+
 ## 2026-10-25, thirty-first attempt (nothing shipped)
 
 No claims standing, inbox empty, same 3 photo-less READY leads (Oxford 2, Madrid 1) under the paused own supply, both open Reddit items already drafted. Staged-city verify would only add leads that cannot go live under the pause, so none dispatched. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
