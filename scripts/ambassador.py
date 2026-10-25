@@ -25,8 +25,11 @@ a standard thing whenever someone adds something to a city we dont have a
 ambassador for we email this - and once they respond with more info we actually
 give them the badge"). It finds every reader whose photograph is live on a tree
 in a place with no ambassador, who has not been invited, and sends them the
-invitation once, from the Ancient Trees address the other contributor mails use
-(never as Hidde: hard rule 4). The badge is NOT granted here: it follows their
+invitation once, from the Ancient Trees address the other contributor mails use.
+The three ambassador mails (invitation, request answer, heads-up) end with
+"Hidde" above "Ancient Trees" (Hidde, 2026-10-25: "better to end with my name;
+Hidde make it more personal"), the one exception to hard rule 4's signature;
+every other automatic mail stays signed Ancient Trees. The badge is NOT granted here: it follows their
 answer, by hand, with --grant. Without --send it prints the mails it would send.
 The invitations live in data/ambassadors.json under "invited".
 
@@ -328,7 +331,7 @@ INVITE_BODY = (
     "We would love to make you our ambassador for {place}: somebody who adds photos, checks the "
     "facts and helps sharpen the list. What do you think of our {place} list, is it missing any, "
     "are some wrong? Let us know if you are up for it.\n{listlink}\n\n"
-    "Thanks,\nAncient Trees\n"
+    "Thanks,\nHidde\nAncient Trees\n"
 )
 BASE_URL = "https://ancienttrees.app"
 
@@ -491,7 +494,7 @@ REQUEST_BODY = (
     "- telling us which trees to add or remove\n"
     "- helping us get photographs of the trees\n\n"
     "Whatever you have time for is welcome. Just reply to this mail.\n\n"
-    "Thanks again for your support,\nAncient Trees\n"
+    "Thanks again for your support,\nHidde\nAncient Trees\n"
 )
 
 
@@ -606,7 +609,7 @@ HEADS_UP_BODY = (
     "- helping us get photographs of the trees\n\n"
     "Just reply to this mail. The full list is here:\n{listlink}\n"
     "{appline}\n"
-    "Thanks again for your support,\nAncient Trees\n"
+    "Thanks again for your support,\nHidde\nAncient Trees\n"
 )
 
 
