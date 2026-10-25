@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25, twenty-ninth attempt
+
+Nothing shipped. No claims standing; 3 READY leads (Oxford 2, Madrid 1) are our own supply and wait under the pause. Inbox empty. Smoke and deploy "skipped" on bot pushes only; the scheduled deploys succeed, so not broken. Reddit: 2 open items both already drafted, preview rebuilt, harvest and watch found nothing new.
+For Hidde: 2 Reddit replies in drafts/batch-community-preview.md (r/lisbon Santa Iria photo ask, r/marijuanaenthusiasts Grizzly Giant).
+
 ## 2026-10-25 night run, twenty-eighth attempt (nothing shipped)
 
 Nothing changed in the product. Inbox empty, harvest 0 new comments, the 2 open Reddit items already drafted (preview rebuilt, store pushed), no archive-group mail ready. Same 3 photo-less READY leads under paused own supply, enrich says nothing to do. health.py exit 1 is the by-design skipped smoke test (smoke.yml skips claude[bot] pushes); answered with `health.py --answer`. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
