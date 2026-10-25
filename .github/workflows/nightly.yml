@@ -393,10 +393,13 @@ jobs:
           # --seen). This step only counts them; until 2026-10-25 it marked
           # them read here, into the Actions log, so no run ever saw one.
           python3 scripts/tree_notes.py --waiting || true
-          if ! git diff --quiet -- data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json data/notes-seen.json || [ -n "$(git ls-files --others --exclude-standard site/public/photos data/photo-live-mailed.json data/notes-seen.json)" ]; then
+          # A tree with a reader's note counts as reader content, so its page
+          # returns to Google at the next build (Hidde, 2026-10-25).
+          python3 scripts/tree_notes.py --noted || true
+          if ! git diff --quiet -- data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json data/notes-seen.json data/tree-notes-live.json || [ -n "$(git ls-files --others --exclude-standard site/public/photos data/photo-live-mailed.json data/notes-seen.json data/tree-notes-live.json)" ]; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
-            git add -A data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json data/notes-seen.json
+            git add -A data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json data/notes-seen.json data/tree-notes-live.json
             git commit -m "Photographs readers sent, queued for a look; vouched ones live"
             git push
           fi

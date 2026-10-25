@@ -143,11 +143,29 @@ DEMAND_CUT = 50
 READER_ONLY = True
 
 
+_NOTED = None
+
+
+def noted_trees():
+    """Trees with a visible reader's note (data/tree-notes-live.json, written
+    by tree_notes.py --noted; Hidde, 2026-10-25)."""
+    global _NOTED
+    if _NOTED is None:
+        try:
+            with open(os.path.join(ROOT, "data", "tree-notes-live.json"), encoding="utf-8") as fh:
+                _NOTED = set(json.load(fh).get("trees") or [])
+        except (OSError, ValueError):
+            _NOTED = set()
+    return _NOTED
+
+
 def reader_content(t):
     """Something on the page only a reader gave us: a photograph unique to us
-    as the lead, a reader's photograph in the strip, or a tree a reader found
-    (through the app or a public tip)."""
+    as the lead, a reader's photograph in the strip, a note a reader wrote on
+    it, or a tree a reader found (through the app or a public tip)."""
     if unique_photo(t):
+        return True
+    if t.get("id") in noted_trees():
         return True
     if any((p or {}).get("source") == "contributor" for p in t.get("photos") or []):
         return True

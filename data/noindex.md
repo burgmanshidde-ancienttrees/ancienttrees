@@ -333,7 +333,7 @@ Thin places kept indexed (17), a destination tree or real impressions: Alishan, 
 | Oostkapelle | Netherlands | 1 | 0 |
 | Rhenen | Netherlands | 2 | 0 |
 | Sambeek | Netherlands | 1 | 0 |
-| Sittard-Geleen | Netherlands | 3 | 0 |
+| Sittard-Geleen | Netherlands | 3 | 1 |
 | Stoutenburg | Netherlands | 1 | 0 |
 | Velp | Netherlands | 1 | 0 |
 | Vorden | Netherlands | 1 | 0 |

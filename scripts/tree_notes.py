@@ -14,6 +14,9 @@ read them afterwards. This is that reader.
   python3 scripts/tree_notes.py --show <code> <tree_id>
                                                  put it back
   python3 scripts/tree_notes.py --count          one line for the digest
+  python3 scripts/tree_notes.py --noted          write data/tree-notes-live.json (tree ids
+                                                 with a visible reader's note; Google reads
+                                                 those pages as reader content)
 
 Needs SUPABASE_SERVICE_KEY. What has been read is in data/notes-seen.json as
 (code, tree_id, updated_at): codes, never ids (scripts/people.py), and never
@@ -36,6 +39,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 KEY = os.environ.get("SUPABASE_SERVICE_KEY")
 SEEN = os.path.join(ROOT, "data", "notes-seen.json")
+NOTED = os.path.join(ROOT, "data", "tree-notes-live.json")
 # What the last --new printed, so --seen marks exactly the notes somebody read
 # and never one that arrived in between. Until 2026-10-25 the knock ran
 # `--new --seen` into the Actions log, so every note was marked read and no run
@@ -159,7 +163,29 @@ def count():
     return 0
 
 
+def noted():
+    """Write data/tree-notes-live.json: the trees a reader wrote a note on that
+    is up (not hidden), our own accounts left out. Tree ids only, never who or
+    what. thin_pages.reader_content() reads it, so a note puts the tree's page
+    back in Google like a reader's photograph does (Hidde, 2026-10-25: "laat
+    een boom met een notitie van een lezer ook meetellen als lezersinhoud")."""
+    import ours
+    trees = sorted({r["tree_id"] for r in rows()
+                    if not r.get("hidden") and not ours.is_ours(r.get("user_id"))})
+    doc = {"note": "Trees with a visible note from a reader, ids only. Written by "
+                   "scripts/tree_notes.py --noted; read by thin_pages.reader_content().",
+           "trees": trees}
+    with open(NOTED, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
+    print(f"tree notes: {len(trees)} tree(s) carry a reader's note")
+    return 0
+
+
 def main():
+    if "--noted" in sys.argv[1:] and not KEY:
+        print("tree notes: SUPABASE_SERVICE_KEY absent, data/tree-notes-live.json left as it is")
+        return 0
     if not KEY:
         print("tree notes: SUPABASE_SERVICE_KEY absent, nothing read")
         return 0
@@ -181,6 +207,8 @@ def main():
         return set_hidden(a[i + 1], a[i + 2], False)
     if "--count" in a:
         return count()
+    if "--noted" in a:
+        return noted()
     print(__doc__)
     return 1
 
