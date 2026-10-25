@@ -10,7 +10,7 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-
+<!-- archive-index -->
 ## 2026-10-25, thirty-first attempt (nothing shipped)
 
 No claims standing, inbox empty, same 3 photo-less READY leads (Oxford 2, Madrid 1) under the paused own supply, both open Reddit items already drafted. Staged-city verify would only add leads that cannot go live under the pause, so none dispatched. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
@@ -185,7 +185,6 @@ Shipped no trees, on purpose. Own supply is paused, so the 3 READY leads (2 Oxfo
 - vendor_photos.py: 1 photograph vendored (pal_022).
 - Reddit: closed 5 open items (no tree, no ask). 2 replies drafted. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md (the r/lisbon Santa Iria photo offer and the Grizzly Giant thread).
 - Still open: the r/lisbon thread on the cypress with the metal frame and the Santa Iria location. The Postbox check failure was answered earlier.
-<!-- archive-index -->
 ## 2026-10-24 night run (13:15 window): rung 4, Reddit read, two replies drafted
 
 **Nothing changed in the product this window.** Rung 1 empty (0 photographs waiting). Health: the Postbox check failure and the "migration not pasted" line are one cause, supabase/tree-notes.sql, already FOR HIDDE; answered with `health.py --answer`. Rung 4: harvest found 0 new comments, watch found 9 new posts; the 13 open items closed with a reason each, except two with a reply. **For Hidde: 2 Reddit replies in drafts/batch-community-preview.md:** (1) the r/Lisbon commenter's photograph of the Santa Iria olive (I looked at it: a big old olive with the information panel, our lis_036, which has no photograph yet), a reply asking if we may use it on the page; (2) the Grizzly Giant thread in r/marijuanaenthusiasts, a light reply that also gently corrects the 1903 camp (Roosevelt with Muir, not Grant), check that fact before posting. No new tree leads (the Evansville reserve and the Santa Iria image gave no placeable new tree). Mail batch: none drafted, the 10-23 batches still wait for his word; the `archive` group has 0 ready in contacts_db, no feeder yet. Own supply paused, enrichment says nothing to do, recognise --stuck and pagegaps have nothing worth a window (one species page, noindex under the strict cut).
@@ -219,7 +218,6 @@ Hidde pasted supabase/tree-notes.sql the same afternoon (the first try ran an ol
 ## 2026-10-24 night run, restart after early stop
 
 Nothing new live. No standing claims. READY leads were 3 (Oxford 2, Madrid 1), own supply is paused and they have no photographs, so none written. Ran the kept-set photo sweep (`photo_hunt.py --recheck`) and a photo-judge pass over the 35 trees with unjudged candidates (Singapore, Amsterdam, Chicago, Utrecht, Budapest): 712 candidates, 0 approved, 1 held (sgp_027, earlier closer-geotag hold kept). Commons is spent for the kept set; further photos need iNaturalist or readers. Not done: iOS app workflow shows FAILED (newest finished run 10-23), not investigated this attempt.
-<!-- archive-index -->
 ## 2026-10-24 which tree gets the full pin: photograph, then readers' saves (live, web and app)
 
 Hidde, looking at the new maps: "it looks good tbh" and, on the order, "i think photo and likes are the best way." The likes are readers' Want to go saves, which never reached the build. scripts/tree_saves.py counts them per tree from Supabase (counts only, our own accounts left out) into data/tree-saves.json, nightly from data-digest.yml; lib/saves.ts reads it, every map's features carry `pr` from one `pinPriority(hasPhoto, saves)` in lib/map.ts, the app feed carries `saves` and TreeMap.swift uses the same arithmetic (qa holds them equal). First count today: 38 trees saved by readers, 39 saves, so for now the photograph decides almost everywhere and the count grows with the people.
@@ -641,81 +639,4 @@ Rung 1 empty (0 photographs waiting). Rung 2: the health "Smoke test skipped" fl
 - **Nothing else:** health.py flagged only that GitHub dropped 6 of 12 knocks. Spokane claimed then released (1 unmined row, under the six-candidate floor). No write pass: the writable pile is 1 READY lead plus held trees. A second viewing pass looked at the other 61 candidates and approved none (wrong subject or species, close-ups, or trunk ambiguity). Tooling note: photo_apply.py matches iNaturalist candidates by observation url, so verdicts for photos of one observation can land on the wrong one; feed it thumb urls. The sweep also re-adds about 93 already-judged candidates.
 - **Scout:** Chicago retried, stays stalled on licence. The Forest Preserves of Cook County champion layer (106 rows with GNSS coordinates) carries no licence and a sensitive-areas notice; those trees are already leads. Whether a county layer with no reuse restriction counts as open is Hidde's call; nothing imported. Leipzig claimed and released (1 tree to target).
 - **Enrichment:** New York + San Francisco + Heidelberg pass. sfo_010's girth 383 cm (DataSF DBH 48 in) was already on the page, nothing new; hei_007 got its LUBW Naturdenkmal ids (82210001208/9; the LUBW page itself timed out, ids rest on the Wikipedia list). nyc_028 closed nothing: the landmarked 1847 beech died in 1998, so the LPC record and 14 ft girth are not applied to the replacement. 8 gaps dead-ended for 90 days. nycgovparks.org serves a captcha to automated fetches. Langcheck and pagegaps both have nothing to do.
-
-## 2026-10-21 night run (19:53 UTC window): five trees live
-
-- **Live:** sfo_009 (Mary Ellen Pleasant's blue gums), sfo_010 (Third and Yosemite pepper), hei_007 (Münchelstrasse oaks), nyc_028 (weeping beech, descendant of the 1847 original), pot_015 (Königswald beech). None has a photograph, so Google will not show them. German overlays for hei_007 and pot_015 added. preflight 0 problems. prepare.py: 92 cities claimable, READY pile 3 (under 60, shelf refill flagged).
-- **Held:** inn_007 (pin on a house, private yard), Rotterdam Pelgrimvaderskerk beech (church garden, open two days a week), nyc_029 (duplicate-ish of nyc_003). Regensburg READY lead was already rgb_006 and is marked so.
-- **Found:** Garfield Square sequoia in San Francisco is a stump (moved to blocked). sfo_008's pin may sit about 300 m off the DataSF Quesada median; needs a look at aerial imagery.
-- **Breakage, separate:** iOS app run 39580864787 (FlowWalk back-way test) failed; needs a Mac, not touched. Rungs 1 to 3 otherwise clear.
-
-## 2026-10-21 (session with Hidde): the Santranges well is closed for good
-
-Hidde has turned down the Santranges oak photograph (a garden well, not the oak) about ten times: "kun je ergens registreren dat die waterput al 10 keer is afgekeurd onthoud dat". No script looped; every session reopened the file and brought it back as news. Now `rejected` with `closed_by_hidde` in data/leads/_sightings.json, verdict `reject` with his answer in data/judgements.json, `rejected` in data/sightings-processed.json. New preflight check `check_a_closed_sighting_stays_closed()` fails if any of the three reopens. The reader's girth and age stay on the row; a new photograph of the oak arrives as a new sighting and is judged fresh.
-
-Also checked, nothing changed: no lead with a photograph is held back for being in Russia, India, Israel or Africa. The Tangier fig was the only one; Morocco's Cèdre Gouraud is dead and "Prayer trees in Egypt" is a Commons category, not a tree.
-
-## 2026-10-21 (session): report a second thing on the same tree
-
-A reader told Hidde that after one report on a tree, "Something's wrong" was gone and the line only said "Thanks, that helps", so a second report meant the flag up top. Now the line stays on both surfaces (Google Maps keeps "Suggest an edit" the same way); a new report shows its own follow-up question. Live on the website with the next deploy; in the app from the next build. App build checked; the reported state was not looked at on screen (it needs a signed-in tap, which simctl cannot do).
-
-## 2026-10-21 (session): less air in the map sheet and on My trees
-
-**Product (app, next build):** Hidde found the map sheet at its lowest stop and My trees "not using the space". Benchmarked (Polarsteps' profile measured, Google Maps' and Apple Maps' list sheets from their App Store screens), shown as now / middle / tight; he chose the middle and kept the grip where it is on every sheet. Built and measured in the simulator: at peek the first tree card shows 46 points above the tab bar instead of 29 (grip to "7 trees" 25, to the card 16); on My trees the photos start about 25 points higher (tags to tabs 27, was 41). Tap targets unchanged, BottomSheet untouched. Reference in CONVENTIONS.md, "Vertical rhythm of a profile header".
-
-## 2026-10-21 (session with Hidde): Tangier fig live from a reader, and a stranger's photo with GPS is never parked again
-
-- **Product:** tng_001, The Moreton Bay Fig of the Mendoubia (Tangier), live as a lone tree page from a stranger's app photograph and three-paragraph note (sighting 2aa7147b, 2026-10-18). The story quotes them: the 800-to-1,000-year age on the signs against their 120 to 140 years, planted by the Mendoub's residency. Wikipedia's Mendoubia page is the written source. lis_037 (Lisbon dragon tree) now quotes its reader too.
-- **Rule (Hidde):** "user content is the most valuable thing"; a good photo plus a GPS fix goes live, whatever the focus areas, sources or certainty; their words go on the page quoted and unnamed. CLAUDE.md (Verify), DECISIONS.md, and preflight `note_a_strangers_photo_with_gps_waits_for_nothing()`. Out-of-focus now covers our own research only.
-- **Data:** two stale sighting rows corrected: the Montsouris plane has been live as par_034 since 10-13; the Santranges oak is held (its photo shows a well, not the tree).
-- **Mail:** the Tangier reader gets the automatic "your tree is on Ancient Trees" mail on the next knock, which no longer asks for what their note already gave. The ambassador ask now rides as a P.S. under that mail instead of a second mail the same day; the separate invitation goes only to a reader with photos of two or more trees in one place, and thanks them for photographs, not for "adding". Photos on existing trees still mail nothing (Hidde: "doe maar niet").
-- **App:** the app checked for new trees only at a cold launch and on Home's pull to refresh, so a phone with the app still in memory never saw Tangier. It now also checks each time it comes back to the front (ContentView.swift). Built and seen in the simulator: the fig shows at the Mendoubia. For Hidde: next build carries this fix; until then, swipe the app away and reopen it.
-- **Breakage, separate:** the iOS app workflow failed on 2026-10-21 (session-start brief); not looked at in this session.
-
-## 2026-10-21 (window from 14:48 UTC): one reader photograph cleared, then stopped
-
-Rung 1: the one queued sighting (lis_037, Lisbon dragon tree) was already the tree's live lead photo, same sighting id, so nothing new for readers to see. I viewed it (Dracaena draco, fits the recognition line) and recorded the verdict in data/sightings-processed.json. sightings_publish.py's `add` copied the same picture beside itself; I reverted the city file and moved the duplicate jpg out of site/public/photos (to out/tmp). Worth a fix: `add` should skip a sighting that is already the lead photo. Preflight 0 problems.
-
-Photos on the roster: photo_hunt sweep queued candidates for 14 new trees; a photo-judge pass looked at 44 and approved 8 (hst_007, pot_012, pot_013, pot_014, rgb_006, thm_001, wdc_018, wdc_020), none held, 36 rejected; reverse one with `python3 scripts/photo_apply.py hold <tree_id> <candidate_url> --reason "..."`. Weakest: wdc_020 (over-processed colours, barriers) and wdc_018 (375x500 iNaturalist CC0). Open: wdc_018's iNaturalist GPS (6 m) could confirm its pin. Still no photo: hst_006, pot_011, rot_017, rot_018, srm_006, wdc_021.
-
-Enrichment, 7 proven cities (10 trees): verify pass improved 3. sea_020 and sea_021 got the SDOT Heritage Tree record id and an autumn best_time; frb_008 got an autumn best_time. 14 gaps dead-ended for 90 days. Not closed: hst_006's pin (e-gov.ooe.gv.at refused port 443 from this runner), lis_037 and frb_008 register and measurement (nothing found; the Ebringen NatURWALDpfad brochure PDF could not be read, pdftotext missing). SDOT diameter and height left out, units unconfirmed.
-
-Supply: US/UK/DE/AT cities are full or walled (Vienna has 2 slots; claim released, wall written). Took the scouting RETRY, San Francisco: DataSF moved to data.sf.gov with renamed fields; 232 landmark rows, 30 not palms, kept in data/registers/san-francisco-landmark-trees.json (PDDL). Still stalled, nothing to publish from it; one lead worth a pass, the Moreton Bay Fig at 1580 Valencia St (72 in DBH, seen from the pavement). Verdict rewritten in data/register-scouting.json with `retried`.
-
-Page gaps: wrote the Willow Oak species intro (data/species/willow-oak.json) from its three Washington DC trees; pagegaps now shows none open.
-
-Broken, not mine to fix from Linux: iOS app run 39580864787 failed `FlowWalk.testEveryFlowLeavesAWayBack` (search-to-a-tree: after "first-result" no tab bar, back button or dismiss; 229 passed, 1 failed). No ios/ commits since the last green run, so it is either data-driven (the first search result) or a flake; it needs a Mac session. For Hidde: nothing to do yet, the next scheduled ios.yml run says which.
-
-## 2026-10-21 (retry window): the Lisbon dragon tree is live
-
-The Goethe-Institut garden dragon tree (lis_037) is on the Lisbon page, with the reader's photograph, a written verdict and the Portuguese overlay. Pillow installed fine this time. The reader's verdict also needed a `sight:` entry in data/judgements.json, which preflight looks for; the `lead:` one alone was not enough. Preflight clean; the site build and qa.py were not run on this runner (no dist).
-
-## 2026-10-21 (window from 09:03 UTC): stopped on Pillow
-
-Rung 1: the Lisbon dragon tree (sighting 9b10ae23). The photograph is a clear Cadiz-standard Dracaena draco, and a web search found Time Out Lisboa listing the Goethe-Institut garden as a public garden esplanade with opening hours, which settles the access doubt that held it yesterday. I wrote the new tree (lis_037) as a script, out/tmp/add_dragon.py, but it stopped at the first step: Pillow is not installed on this runner and `pip install pillow` was refused, so the photograph cannot be rotated upright and written to site/public/photos. Nothing was added; the verdict in data/leads/_sightings.json still reads "lead". The script sits in out/tmp (gitignored), so it will not survive this runner. Nothing else was taken from the ladder in this attempt.
-
-**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
-
-- [2026-10](archive/LOG-2026-10.md)
-- [2026-09](archive/LOG-2026-09.md)
-- [2026-08](archive/LOG-2026-08.md)
-- [2026-07](archive/LOG-2026-07.md)
-
-## 2026-10-21 - Night run 2026-10-21 05:55 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
-
-What each attempt said as it stopped, in its own words (secrets scrubbed):
-
-- Attempt 1: You've hit your weekly limit · resets 9am (UTC)
-
-## 2026-10-21 - Night run 2026-10-21 02:56 UTC ended without saying anything
-
-Written by the workflow's Run health step, not by the run. 0.3 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). 1 commit(s), none of them a published tree.
-
-This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
-
-What it cannot tell you is WHY the run stopped: no attempt left closing words on disk. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
 
