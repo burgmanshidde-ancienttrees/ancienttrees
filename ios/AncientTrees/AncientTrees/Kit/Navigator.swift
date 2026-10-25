@@ -86,6 +86,9 @@ public final class Navigator {
     /// A slug rather than a tree id, so the map frames the whole city instead
     /// of selecting one arbitrary trunk in it.
     public var showCityOnMap: String?
+    /// A real town with none of our trees, chosen in Discover's search: the
+    /// map looks at it and its sheet asks for the first tree (2026-10-25).
+    var showPlaceOnMap: PlaceOnMap?
 
     /// Collect's own button asking for the nearby-trees sheet. The root owns
     /// every sheet, so the request travels rather than the presentation.

@@ -360,6 +360,10 @@ struct HomeView: View {
                 case .country(let name): navigator.push = .country(name)
                 case .species(let name): navigator.push = .species(name)
                 case .tree(let t): navigator.push = .tree(t.id)
+                // A town with none of our trees is a place on the MAP, where
+                // its empty card and nearest tree wait (2026-10-25).
+                case .place(let name, let lat, let lng):
+                    navigator.showPlaceOnMap = PlaceOnMap(name: name, lat: lat, lng: lng)
                 }
             }
         }
