@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 session: a note under the thumb after collecting a tree
+
+- **In the next app build**: after "Was it worth the trip?", the chosen thumb stays filled and an open box appears under it, "Leave a note: share something you'd like the next visitors to read about this tree". Done becomes Add note once something is typed; empty, Done just closes. The "first tree in your collection / first photo" line is gone. Benchmarked on Google Play's in-app review card and Google Maps' review screen (CONVENTIONS.md "A note under the thumb on the payoff"). Hidde approved each render.
+- **Live on the web and in the next app build**: the note sheet on a tree page says only "Shown as A visitor." (or the name); "with today's date. Public right away." is gone in all eight languages. copycheck now refuses that kind of line.
+- Also live earlier today: the empty notes card on the web showed "Write a note" twice (the button was read before it was declared); fixed.
+
 ## 2026-10-25 session: no year chart for an evergreen without a moment
 
 - **Tree pages**: "The tree's year" is left out for an evergreen with no best_time and no moment rated striking or worth the trip (pines, cedars, cypresses, holm and live oaks, camphor: their line was near flat). About 315 charts go, 74 to 66 percent of trees; deciduous trees keep theirs (bare winter, fresh leaf). Hidde, after the Lone Pine in Canberra. Web only: the app has no year chart. Noticed in passing: some autumn colour reads low (White Oak, Pecan, Silver Maple "nice").
