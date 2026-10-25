@@ -1784,8 +1784,11 @@ def product_section(today):
         if since is not None and since <= 1:
             name_ = label.rstrip("s").lower()
             article = "an" if name_[:1] in "aeiou" else "a"
-            ATTENTION.append("%s %s signup arrived %s (%d total)"
-                             % (article, name_, _ago(since), total))
+            # Counted (2026-10-24 brought 15 Android signups and the line said one).
+            n = sum(1 for r in (allrows or []) if _days_since(r.get("created_at"), today) == since)
+            ATTENTION.append("%s arrived %s (%d total)" % (
+                "%s %s signup" % (article, name_) if n <= 1 else "%d %s signups" % (n, name_),
+                _ago(since), total))
         out.append("- %-12s %d total, newest %s" % (
             label + ":", total, _ago(since)))
 
@@ -1926,6 +1929,91 @@ def reader_trees_to_inspect(today):
         "- Photographs and the readers' own words: `python3 scripts/inspect_readers.py` (a local page, "
         "never in this public file). Your answer goes in with `python3 scripts/judgement.py --feedback <id> \"...\"`.",
     ])
+
+
+def day_by_day_section(today):
+    """The last seven days, one row a day, strangers only: the table Hidde
+    keeps track by (2026-10-25: "ik mis het dagelijkse overzicht van de
+    afgelopen week waar ik visitors, new accounts, submissions, bookmarks en
+    android waitlist etc kan bijhouden"). The 10-19 cut had left its older
+    twin running silently in product_section. Each source is fetched on its
+    own, so one that fails costs a column, never the table."""
+    days = [(today - datetime.timedelta(days=i)).isoformat() for i in range(7, 0, -1)]
+    cols = collections.OrderedDict((k, None) for k in (
+        "Visitors", "New accounts", "Saves", "Android waitlist", "App downloads",
+        "Trees sent", "Feedback", "Ambassador asks", "App photos", "Tree notes"))
+
+    def fill(name, pairs):
+        c = cols[name] = collections.Counter()
+        for day, n in pairs:
+            c[str(day)[:10]] += n
+
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    since = days[0] + "T00:00:00"
+    try:
+        import ga_report
+        daily = ga_report.fetch(8)[0] if ga_report.creds() else None
+        if daily:
+            fill("Visitors", (("%s-%s-%s" % (d[:4], d[4:6], d[6:8]), int(u))
+                              for d, u, *_ in daily))
+    except Exception as e:
+        print("day_by_day visitors: %s" % str(e)[:100])
+    if key:
+        steps = {
+            "New accounts": lambda: [(u.get("created_at"), 1) for u in
+                                     ((_supa("/auth/v1/admin/users?page=1&per_page=1000", key)[0]
+                                       or {}).get("users") or []) if not is_ours(u.get("id"))],
+            "Saves": lambda: [(r.get("created_at"), 1) for r in
+                              _supa("/rest/v1/saves?select=user_id,created_at&created_at=gte.%s"
+                                    % since, key)[0] or [] if not is_ours(r.get("user_id"))],
+            "Android waitlist": lambda: [(r.get("created_at"), 1) for r in
+                                         _supa("/rest/v1/waitlist?select=created_at&created_at=gte.%s"
+                                               % since, key)[0] or []],
+            "App photos": lambda: [(r.get("updated_at"), 1) for r in
+                                   _supa("/rest/v1/sightings?select=user_id,updated_at&shared=eq.true"
+                                         "&photo=not.is.null&updated_at=gte.%s" % since, key)[0] or []
+                                   if not is_ours(r.get("user_id"))],
+            "Tree notes": lambda: [(r.get("created_at"), 1) for r in
+                                   _supa("/rest/v1/tree_notes?select=user_id,created_at"
+                                         "&created_at=gte.%s" % since, key)[0] or []
+                                   if not is_ours(r.get("user_id"))],
+        }
+        for name, fn in steps.items():
+            try:
+                fill(name, fn())
+            except Exception as e:
+                print("day_by_day %s: %s" % (name, str(e)[:100]))
+        try:
+            subs, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,why,user_id"
+                            "&created_at=gte.%s" % since, key)
+            subs = [r for r in subs or [] if r.get("id") not in TEST_SUBMISSION_IDS
+                    and not is_ours(r.get("user_id"))
+                    and not (r.get("why") or "").startswith("vote undone")]
+            fill("Trees sent", ((r["created_at"], 1) for r in subs if r.get("kind") in ("tree", "city")))
+            fill("Ambassador asks", ((r["created_at"], 1) for r in subs if r.get("kind") == "ambassador"))
+            fill("Feedback", ((r["created_at"], 1) for r in subs
+                              if r.get("kind") not in ("tree", "city", "ambassador")))
+        except Exception as e:
+            print("day_by_day submissions: %s" % str(e)[:100])
+    try:
+        from asc_downloads import download_rows, split_by_type
+        rows, note = download_rows(days=9)
+        if not note:
+            fill("App downloads", ((d, v.get("first-time download", 0))
+                                   for d, v in split_by_type(rows).items()))
+    except Exception as e:
+        print("day_by_day downloads: %s" % str(e)[:100])
+    shown = [k for k, v in cols.items() if v is not None]
+    if not shown:
+        return ""
+    out = ["**Day by day, the last seven days** (strangers only; visitors are Google Analytics', "
+           "so only people who accepted the cookie bar)", "",
+           "| Day | %s |" % " | ".join(shown), "|---|%s" % ("---:|" * len(shown))]
+    for d in days:
+        out.append("| %s | %s |" % (d[5:], " | ".join(str(cols[k].get(d, 0)) for k in shown)))
+    out.append("| **7 days** | %s |" % " | ".join(
+        "**%d**" % sum(cols[k].get(d, 0) for d in days) for k in shown))
+    return "\n".join(out)
 
 
 def waiting_for_you_section(today):
@@ -3677,6 +3765,7 @@ def main():
         except Exception as e:
             _weekly(["%s: failed today (%s)." % (fn.__name__, str(e)[:90])])
 
+    block(day_by_day_section, today)
     block(reader_trees_to_inspect, today)
     block(waiting_for_you_section, today)
     block(readers_gave_section, today)
