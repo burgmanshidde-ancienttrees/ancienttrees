@@ -206,7 +206,10 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
 ---
 <Base title={title} description={description} canonical={canonical} lang={lang} headExtra={mapHead() + hreflangSet("/explore", exploreVariants)} footer={false}>
   <div class="split">
-    <aside class="panel" id="sheet">
+    {/* data-peek-row: the peek reaches into the first city of the list, cut
+        off by the screen edge, so the list reads as something to pull up
+        (sheet-js.ts, Hidde 2026-10-25). */}
+    <aside class="panel" id="sheet" data-peek-row=".exc-card">
       <div class="sheet-grab">
         <div class="panel-head">
           <h1>{U.exploreHeading}</h1>

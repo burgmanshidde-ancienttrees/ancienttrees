@@ -11,7 +11,8 @@
 // sheet"): the pin is marked, a card with the photograph appears, the card
 // opens the listing, its heart saves, a tap on the map or Escape lets it go.
 // On a desktop the card stands beside the pin, never over it. On a phone it is
-// the map's width less 16 a side, low over the map above the sheet's peek, and
+// the map's width less 16 a side, 16 above the bottom with the sheet stepped
+// away (2026-10-25), and
 // the map's own buttons lift above it (--map-pop-lift); the map only moves
 // when the pin would sit behind the card.
 //
@@ -39,6 +40,7 @@ function atMapCard(map, opts) {
     if (!el) return;
     el.remove(); el = null; at = null;
     document.documentElement.style.removeProperty('--map-pop-lift');
+    if (window.atSheetAway) window.atSheetAway(false);
     if (opts.onClose) opts.onClose();
   }
   function place() {
@@ -51,7 +53,7 @@ function atMapCard(map, opts) {
       var st = window.atSheetTop ? window.atSheetTop() : null;
       var bottom = (st !== null ? Math.min(mr.bottom, st) : mr.bottom) - mr.top;
       el.style.left = '16px';
-      el.style.top = Math.max(16, bottom - h - 12) + 'px';
+      el.style.top = Math.max(16, bottom - h - 16) + 'px';
       document.documentElement.style.setProperty('--map-pop-lift', (h + 12) + 'px');
       return;
     }
@@ -63,7 +65,12 @@ function atMapCard(map, opts) {
   }
   // card: a .tree-card element (copied) or its markup; lngLat: [lng, lat].
   function open(card, lngLat, href) {
-    if (phone.matches && window.atSheetPeek) { window.atSheetPeek(); }
+    // The sheet steps away while the card is up (Airbnb), so the card stands
+    // alone 16 above the bottom; a page without the hook keeps the peek.
+    if (phone.matches) {
+      if (window.atSheetAway) { window.atSheetAway(true); }
+      else if (window.atSheetPeek) { window.atSheetPeek(); }
+    }
     if (el) { el.remove(); }
     el = document.createElement('div');
     el.className = 'map-pop' + (phone.matches ? ' map-pop--phone' : '');

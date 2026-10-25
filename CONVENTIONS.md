@@ -147,6 +147,8 @@ Ours (MapTab.swift `onSelectTree`) pushed the full tree page on a pin tap, which
 
 **Every website map, one card (Hidde, 2026-10-24):** the Airbnb card went onto the city map only, and /explore still jumped straight to the tree page ("kun je altijd de city maps en de explore map gelijk houden ... kan dat gewoon een en hetzelfde ding worden?"). The tap now lives once, in site/src/lib/map-card-js.ts: the city map, /explore, the country and state maps and the profile map all open the same card the same way (Airbnb: the pin grows, a card with the photograph, the card opens the tree, its heart saves, a tap on the map lets it go). qa.py `check_one_tree_card_on_every_map()` refuses a map that builds its own.
 
+**Changed 2026-10-25, the phone website** (Hidde, on his iPhone screenshot: "de vertical alignment hier voelt niet goed ... niet echt duidelijk dat je de lijst naar boven kan scrollen", approved on a mockup beside Airbnb's mobile map, measured at 375 that day). Airbnb: tap a pin and the list sheet leaves the screen, the card stands alone 16 above the bottom; pulled down, the sheet is a handle and a count; it opens with the first result cut off by the screen edge, which is what says "pull me". Ours now: the sheet steps away while a card is up (`atSheetAway` in sheet-js.ts, `.panel.is-away`) and returns at its peek when the card closes; the card is 16 on all four sides (a later `:not(:has(...))` rule had put 14 back on top, 30 above the buttons against 16 under the text); /explore's peek reaches 36 into its first city (`data-peek-row`), cut by the edge. The app keeps its sheet (its tapped tree rises IN the sheet, above), so none of this applies there.
+
 ---
 
 ## An early-adopter badge on your own profile (2026-10-16)

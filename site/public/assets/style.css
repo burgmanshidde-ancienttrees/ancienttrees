@@ -271,8 +271,12 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 /* The no-photo card's own padding (14 on top) and the row heart's -6 lift
    are later, more specific rules; measured live 2026-10-20: save at 22,
    cross at 28. One 16 from the top for the pair, the name's first line
-   centred on it ((32 - 23.4) / 2). */
-.map-pop .tree-card.tree-card-nophoto { padding-top: 0; }
+   centred on it ((32 - 23.4) / 2). The doubled class outweighs the
+   `.tree-card:not(:has(> .tree-card-photo...))` rule further down, which
+   weighs the same as one class and, being later, put the 14 back: 30 above
+   the pair and 16 under the text (Hidde, 2026-10-25: "de vertical alignment
+   voelt niet goed"). 16 on all four sides now. */
+.map-pop .tree-card.tree-card.tree-card-nophoto { padding-top: 0; }
 .map-pop .tree-card.tree-card-nophoto .tree-card-top { padding-top: 16px; }
 .map-pop .tree-card .tree-card-top .heart-card { margin-top: 0; }
 .map-pop .tree-card-nophoto .tree-name { padding-top: 4px; }
@@ -1915,7 +1919,15 @@ footer { border-top: 1px solid var(--cream-dark); }
     display: flex; flex-direction: column; overflow: hidden;
     box-shadow: 0 -6px 24px rgba(26, 32, 18, 0.16);
     padding-bottom: 0; touch-action: none; }
-  .panel.is-animating { transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .panel { translate: 0 0; transition: translate 220ms cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .panel.is-animating { transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    translate 220ms cubic-bezier(0.22, 0.61, 0.36, 1); }
+  /* A tapped tree's card is up: the sheet steps off the bottom (Airbnb's
+     mobile map, 2026-10-25) and the map's buttons sit 12 above the card,
+     which itself stands 16 above the bottom (map-card-js.ts). `translate`
+     composes with the detent's inline transform, so the detent survives. */
+  .panel.is-away { translate: 0 calc(100% + 24px); pointer-events: none; }
+  :root.sheet-away .walks { bottom: calc(16px + var(--map-pop-lift, 0px)); }
   .sheet-grab { flex: 0 0 auto; cursor: grab; user-select: none; }
   /* The handle: the one piece of furniture that says "this drags". */
   .sheet-grab::before { content: ""; display: block; width: 2.25rem; height: 4px;

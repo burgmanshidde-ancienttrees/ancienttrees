@@ -74,9 +74,20 @@ export const SHEET_JS = `
     return h - peekHeight();
   }
 
+  // A sheet whose list is the point (/explore, data-peek-row) peeks far enough
+  // to show the top of its first row, cut off by the screen edge: that cut is
+  // what says the list pulls up, as Airbnb's map opens with its first result
+  // half in view (Hidde, 2026-10-25: "niet echt duidelijk dat je de lijst naar
+  // boven kan scrollen"). With no row (nothing in view) it is the header alone.
+  var PEEK_INTO_ROW = 36;
   function peekHeight() {
     var head = sheet.querySelector('.panel-head');
-    return (head ? head.offsetHeight : 84) + 8;
+    var base = (head ? head.offsetHeight : 84) + 8;
+    var sel = sheet.dataset.peekRow;
+    var row = sel && body.querySelector(sel);
+    if (!row) return base;
+    var into = row.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop;
+    return Math.max(base, grab.offsetHeight + into + PEEK_INTO_ROW);
   }
 
   // --- dragging ------------------------------------------------------------
@@ -215,12 +226,33 @@ export const SHEET_JS = `
     setDetent('peek');
   };
 
+  // While a tapped tree's card is over the map the sheet steps away entirely,
+  // so the card stands alone 16 above the bottom, as on Airbnb's mobile map
+  // (Hidde, 2026-10-25, approved on a mockup). It comes back at the peek when
+  // the card closes. map-card-js.ts calls this on open and close.
+  var away = false;
+  window.atSheetAway = function(on) {
+    if (!mq.matches) return;
+    if (on) { closeTree(); setDetent('peek'); }
+    away = Boolean(on);
+    sheet.classList.toggle('is-away', away);
+    document.documentElement.classList.toggle('sheet-away', away);
+  };
+
+  // A list that is drawn after load or redrawn as the map moves (/explore's
+  // cities in view) changes how deep the peek reaches into it.
+  if (sheet.dataset.peekRow && window.MutationObserver) {
+    new MutationObserver(function() {
+      if (mq.matches && at === 'peek' && !dragging) setDetent('peek', !away);
+    }).observe(body, { childList: true, subtree: true });
+  }
+
   // Where the sheet will COME TO REST, not where it is: the map wants to know
   // this the instant a pin is tapped, and at that moment the sheet is still
   // sliding, so a getBoundingClientRect would read the old position and put
   // the tree behind the sheet anyway.
   window.atSheetTop = function() {
-    if (!mq.matches) return null;
+    if (!mq.matches || away) return null;
     return (window.innerHeight - sheet.offsetHeight) + offsetFor(at);
   };
 
