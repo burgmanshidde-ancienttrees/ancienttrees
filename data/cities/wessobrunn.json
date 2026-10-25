@@ -111,13 +111,14 @@
       "access": "Free, no permission needed. A protected Naturdenkmal standing in the open in the hamlet of Linden; listed as a public point of interest by Chiemsee-Alpenland Tourismus.",
       "transport": "Rural Upper Bavaria, no train station in Linden itself; Weilheim in Oberbayern is the nearest town with a station, roughly 20 to 25 minutes by car. About 3.7km from the Tassilolinde in Wessobrunn village, a short drive rather than a walk.",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Marienlinde_%28Linden%2C_Wessobrunn%29_02.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Wilrooij, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/lnw_001-the-marienlinde-of-linden.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/linden/linden/",
         "status": "approved",
-        "width": 3648,
-        "height": 4864,
-        "taken_month": 9
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/linden/linden/), his page 'Marienlinde in Linden'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 3 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -135,7 +136,18 @@
         ],
         "label": "Scented pale yellow flowers in June, loud with bees",
         "kind": "flowers"
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Marienlinde_%28Linden%2C_Wessobrunn%29_02.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wilrooij, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3648,
+          "height": 4864,
+          "taken_month": 9
+        }
+      ]
     }
   ]
 }

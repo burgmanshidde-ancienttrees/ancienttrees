@@ -68,17 +68,29 @@
         "label": "winter, when the bare crown shows the propped limb in full"
       },
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sankt-Wolfgangs-Eiche.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Rainer Lippert, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/thm_001-st-wolfgang-s-oak-wolfgangseiche.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://monumentale-eichen.de/bayern/schloss-haus/",
         "status": "approved",
-        "approved_by": "viewing pass",
-        "approved_on": "2026-10-21",
-        "width": 3072,
-        "height": 2048,
-        "taken_month": 7
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://monumentale-eichen.de/bayern/schloss-haus/), his page 'St. Wolfgangseiche bei Schloss Haus'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 11 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
-      "verify_notes": "Photo candidate to look at: https://commons.wikimedia.org/wiki/File:Sankt_Wolfgangs_Eiche_VI.jpg (CC BY-SA 4.0)"
+      "verify_notes": "Photo candidate to look at: https://commons.wikimedia.org/wiki/File:Sankt_Wolfgangs_Eiche_VI.jpg (CC BY-SA 4.0)",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sankt-Wolfgangs-Eiche.jpg",
+          "license": "CC BY-SA 3.0",
+          "attribution": "Rainer Lippert, via Wikimedia Commons",
+          "status": "approved",
+          "approved_by": "viewing pass",
+          "approved_on": "2026-10-21",
+          "width": 3072,
+          "height": 2048,
+          "taken_month": 7
+        }
+      ]
     }
   ]
 }

@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 session: eight more Lippert photographs, the Calvos oak, and mailed words get quoted
+
+- **Live with this deploy**: eight more trees lead with Rainer Lippert's own photographs, each replacing a Commons lead that moves into the strip: the Marienlinde of Linden, the Hohenheim Love Plane, the Cedars of the Königsflügel in Bad Homburg, St. Wolfgang's Oak, the Schäferköppel chestnut, the Bötersheim oak, the Waldhaustanne and the Betteleiche. Found by the coordinate pass Hidde asked for: his My Maps layer (1,838 oaks) for the oaks, his 551 other-species pages for the rest; looked at, and checked against his Commons uploads by image fingerprint (none the same). That pass is now complete: 43 trees carry his site photographs from today.
+- **Live earlier tonight**: the Carvalho de Calvos (clv_001) has Paulo V. Araujo's own photograph from his 2009 Dias com Arvores post. His blog has three authors; only posts by him and marked "Foto: pva" count, and most 2004-2006 images are on hosts that no longer exist, so this was the one usable photo of one of our trees.
+- **New rule, live**: words people send by mail go on the page like app notes. The session handling the mail copies the sender's own sentences into the private data/outreach-words.json and `reader_words.py` lists them until quoted (CLAUDE.md, reply-mail skill). Luisa Carta's two PDFs turned out to be Camarda's book text, used correctly already; nothing of hers to quote.
+- For Hidde: the ambassador mail to Luisa Carta (Sardinia) in drafts/reply-luisa-carta-2026-10-25.md waits for his "verstuur". Paulo's mail (his own words) goes once the Calvos photo shows on the page.
+
 ## 2026-10-25 session: a town we hold no tree for asks for its first one (web; app on its way)
 
 - **What changed, website**: search now finds every town of 15,000 people or more, also where we have nothing. Type "Bern" and the dropdown opens with the grey card of an empty notes section, "No trees mapped in Bern yet", "Know an old tree here? Add the first one.", and "Add a tree" (the contribute form with Bern filled in); under it Bern on the map and the nearest tree (The Linden of Morat, 27 km). On the map, any view without a tree shows the same card and the nearest tree. A typo gets one plain line, "Nothing matches ... Check the spelling, or try a town nearby." Seven languages. Hidde approved the design today, screens 1 and 2 as drawn, no card on a typo.

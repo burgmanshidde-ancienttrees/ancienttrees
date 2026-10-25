@@ -59,15 +59,27 @@
         "label": "January and February, when the leaves are down and the hollow, cabled frame of it is fully visible"
       },
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Tausendj%C3%A4hrige_Eiche_B%C3%B6tersheim.png",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Aeroid, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/bot_001-the-tausendjaehrige-eiche-of-boetersheim.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/niedersachsen/b%C3%B6tersheim/",
         "status": "approved",
-        "width": 2265,
-        "height": 3201,
-        "taken_month": 5
+        "width": 1067,
+        "height": 1600,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/niedersachsen/b%C3%B6tersheim/), his page 'Eiche in Bötersheim'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 15 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
-      "how_to_recognise": "You can recognise it by its deeply fissured, hollow trunk (7.1m round) held together at the top with steel cables and props. It stands beside the village war memorial on Esteweg."
+      "how_to_recognise": "You can recognise it by its deeply fissured, hollow trunk (7.1m round) held together at the top with steel cables and props. It stands beside the village war memorial on Esteweg.",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Tausendj%C3%A4hrige_Eiche_B%C3%B6tersheim.png",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Aeroid, via Wikimedia Commons",
+          "status": "approved",
+          "width": 2265,
+          "height": 3201,
+          "taken_month": 5
+        }
+      ]
     }
   ]
 }

@@ -702,22 +702,34 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kastanie_am_Sch%C3%A4ferk%C3%B6ppel_2.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Fernando Ferkelkraut, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/frk_016-the-chestnut-at-the-schaeferkoeppel.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/andere-baumarten/kastanien/nieder-erlenbach/",
         "status": "approved",
-        "approved_by": "viewing pass",
-        "approved_on": "2026-10-18",
-        "width": 4280,
-        "height": 3489,
-        "taken_month": 6
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/andere-baumarten/kastanien/nieder-erlenbach/), his page 'Kastanie an der Schäferköppel bei Nieder-Erlenbach'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched 2026-10-25 on his page's coordinates, 12 m from our pin, same genus; looked at before approval; not among his Commons uploads (difference hash). Not an open licence; ask him before reuse elsewhere."
       },
       "how_to_recognise": "You can recognise it as the horse chestnut with a trunk 5.30 metres round and a crown about 17 metres high. It stands at Am Schäferköppel, on the northern edge of Nieder-Erlenbach.",
       "official_register": {
         "name": "Stadt Frankfurt am Main Naturdenkmal register (Amtsblatt Nr. 44/2025)",
         "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale"
       },
-      "height_m": 17
+      "height_m": 17,
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kastanie_am_Sch%C3%A4ferk%C3%B6ppel_2.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Fernando Ferkelkraut, via Wikimedia Commons",
+          "status": "approved",
+          "approved_by": "viewing pass",
+          "approved_on": "2026-10-18",
+          "width": 4280,
+          "height": 3489,
+          "taken_month": 6
+        }
+      ]
     },
     {
       "id": "frk_017",
