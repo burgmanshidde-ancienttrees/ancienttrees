@@ -2,60 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-03T17:22:36+00:00",
-   "date": "2026-09-03",
-   "run_id": "33784154409",
-   "minutes": 99.7,
-   "minutes_basis": "measured",
-   "attempts": 3,
-   "turns": 602,
-   "denials": 52,
-   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(mv), Bash(pip), Bash(python3), Bash(rm), Bash(sleep)",
-   "ended": "success",
-   "tokens": 57712321,
-   "claims_held": [
-    "_famous-australia"
-   ],
-   "commits": 43,
-   "cities_touched": 8,
-   "cities": [
-    {
-     "city": "matera",
-     "trees": 4
-    },
-    {
-     "city": "oahu",
-     "trees": 3
-    },
-    {
-     "city": "higashimiyoshi",
-     "trees": 1
-    },
-    {
-     "city": "hilo",
-     "trees": 1
-    },
-    {
-     "city": "llangernyw",
-     "trees": 1
-    },
-    {
-     "city": "shingu",
-     "trees": 1
-    },
-    {
-     "city": "assisi",
-     "trees": 0
-    },
-    {
-     "city": "kauai",
-     "trees": 0
-    }
-   ],
-   "trees": 11,
-   "logged": true
-  },
-  {
    "started": "2026-09-03T20:15:48+00:00",
    "date": "2026-09-03",
    "run_id": "33801201625",
@@ -23381,6 +23327,25 @@
    "denials_source": "permission_denials: no names in the record",
    "ended": "success",
    "tokens": 312846,
+   "claims_held": [],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-25T12:30:42+00:00",
+   "date": "2026-10-25",
+   "run_id": "40193380308",
+   "minutes": 4.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 71,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 446522,
    "claims_held": [],
    "commits": 4,
    "cities_touched": 0,
