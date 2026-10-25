@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25, thirty-eighth attempt (nothing shipped)
+
+Re-checked: no claims, same 3 photo-less READY leads (Oxford x2, Madrid) held by the own-supply pause, `enrich.py --next` has nothing. No new work found; nothing dispatched.
+
 ## 2026-10-25, thirty-seventh attempt (nothing shipped)
 
 Re-checked, nothing workable: no claims standing, no reader photographs waiting, health.py's "skipped" deploys are push-skips by design (the 12:36 dispatch succeeded). The 3 READY leads (Oxford x2, Madrid) are own supply, paused under recovery mode, so not written. `enrich.py --next` says nothing to do. The 3 open Reddit items already have drafted replies; preview refreshed, nothing new to push. For Hidde: 3 Reddit replies in drafts/batch-community-preview.md.
