@@ -16,12 +16,47 @@ outreach_inbox.py reads to know what was answered. keep_copy() puts it there.
     server = mailer.connect(creds)       # logged in, ready
     server.send_message(msg)             # sends, then files a copy in Sent
     server.quit()
+
+ONE REST PERIOD ACROSS EVERY ROUTE (Hidde, 2026-10-25: "we hebben die porto
+dude nu in totaal 3 keer gemaild kun je in het vervolg altijd checken voor je
+mailt of we niet iemand al eerder hebben gemaild"). Five scripts send mail
+(outreach batches, ambassador invitation, editor mail and heads-up, reader
+replies, photo-live and congratulation mails) and each guarded only its own
+history, so one person could hear from three of them in a week. Every one of
+them sends through this door, so the check lives here: an address that got any
+mail logged in data/outreach-sent.json in the last RECENT_DAYS is refused with
+RecentlyMailed. The automatic routes catch it and try again on a later knock.
+Let through without the check: a reply in a thread (In-Reply-To set), and a
+caller that passes recent_ok, a sentence saying why (an answer to a message
+the person just sent us).
 """
+import datetime
 import imaplib
+import json
 import os
 import smtplib
 import time
-from email.utils import formatdate, make_msgid
+from email.utils import formatdate, make_msgid, parseaddr
+
+SENT_LOG = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "outreach-sent.json")
+RECENT_DAYS = 7
+
+
+class RecentlyMailed(Exception):
+    pass
+
+
+def last_sent(addr, days=RECENT_DAYS):
+    """The latest logged mail to this address within `days`, or None. A missing
+    log answers None: the routes that send pull it first (nightly.yml)."""
+    addr = (addr or "").strip().lower()
+    try:
+        sent = json.load(open(SENT_LOG, encoding="utf-8")).get("sent", [])
+    except (OSError, ValueError):
+        return None
+    since = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
+    hits = [s for s in sent if (s.get("to") or "").strip().lower() == addr and (s.get("date") or "") >= since]
+    return max(hits, key=lambda s: s.get("date") or "") if hits else None
 
 
 def _route(creds):
@@ -56,7 +91,14 @@ class _Server:
     def __init__(self, smtp, copy):
         self._smtp, self._copy = smtp, copy
 
-    def send_message(self, msg):
+    def send_message(self, msg, recent_ok=None):
+        if not recent_ok and not msg["In-Reply-To"]:
+            prior = last_sent(parseaddr(msg["To"] or "")[1])
+            if prior:
+                raise RecentlyMailed(
+                    f"{parseaddr(msg['To'])[1]} already had a mail on {prior.get('date')} "
+                    f"({prior.get('batch') or prior.get('outlet') or '?'}: {(prior.get('subject') or '')[:60]}); "
+                    f"{RECENT_DAYS}-day rest across every route")
         if not msg["Date"]:
             msg["Date"] = formatdate(localtime=True)
         if not msg["Message-ID"]:

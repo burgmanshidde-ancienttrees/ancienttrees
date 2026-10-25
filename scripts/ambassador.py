@@ -585,6 +585,21 @@ def requests_scan(send):
             continue
         requested.append({"row": rid, "user_id": people.ref(uid), "place_slug": slug, "place_name": place,
                           "date": datetime.date.today().isoformat()})
+        # Into the one send log too, so every other route sees this mail and
+        # waits its week (mailer.py, Hidde 2026-10-25). Until then the editor
+        # mail was the one send no other script could see.
+        try:
+            log_path = os.path.join(ROOT, "data", "outreach-sent.json")
+            with open(log_path, encoding="utf-8") as fh:
+                log = json.load(fh)
+            log.setdefault("sent", []).append({"date": datetime.date.today().isoformat(), "to": addr,
+                                               "outlet": "ambassador editor mail", "subject": subject,
+                                               "batch": "ambassador-request"})
+            with open(log_path, "w", encoding="utf-8") as fh:
+                json.dump(log, fh, indent=2, ensure_ascii=False)
+                fh.write("\n")
+        except Exception:
+            pass
         asked.add((people.ref(uid), slug))
         n += 1
         print(f"request {rid} / {slug}: editor mail sent")

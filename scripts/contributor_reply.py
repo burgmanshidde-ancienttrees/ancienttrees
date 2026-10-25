@@ -549,7 +549,9 @@ def main():
         try:
             if server is None:
                 server = mailer.connect(creds, timeout=30)
-            server.send_message(msg)
+            # An answer to what this person just sent us, so not held by the
+            # week's rest in mailer.py: that rest is against us writing first.
+            server.send_message(msg, recent_ok="answer to their own submission")
         except Exception as e:
             print("MAIL FAILED for %s: %s" % (low, str(e)[:160]))
             _note_transport(str(e)[:200])

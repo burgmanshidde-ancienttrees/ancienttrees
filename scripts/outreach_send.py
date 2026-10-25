@@ -220,6 +220,19 @@ def main():
                     f"words to that mail in the batch file.")
                 continue
             results.append(f"REPEAT {label}: {to}, on purpose: {why}")
+        # A WEEK'S REST, WHATEVER ROUTE MAILED THEM (Hidde, 2026-10-25, three
+        # mails to one Porto contributor from three scripts). resend_reason
+        # says why we write again at all; this asks whether ANY route already
+        # wrote this week. A reply in their thread passes; anything else needs
+        # `recent_ok`, a sentence of five words or more saying why it cannot wait.
+        recent_ok = (m.get("recent_ok") or "").strip()
+        prior = mailer.last_sent(to)
+        if prior and not m.get("in_reply_to") and len(recent_ok.split()) < 5:
+            results.append(
+                f"SKIP  {label}: {to} already had a mail on {prior.get('date')} "
+                f"({prior.get('batch') or prior.get('outlet')}). A week's rest across every "
+                f"route; add recent_ok (five words or more) only if it cannot wait.")
+            continue
         # The promise we made in writing, now enforced. Batches 003 and 004
         # closed with "if you would rather not hear from me again, just say
         # so", and until 2026-08-16 nothing in the machine could honour that:
@@ -274,7 +287,7 @@ def main():
         msg.add_alternative(html_twin(m["body"]), subtype="html")
         if server is None:
             server = mailer.connect(creds, timeout=30)
-        server.send_message(msg)
+        server.send_message(msg, recent_ok=recent_ok or None)
         sent_today += 1
         record = {"date": today, "to": to, "outlet": label,
                   "subject": m["subject"], "batch": batch.get("batch")}
