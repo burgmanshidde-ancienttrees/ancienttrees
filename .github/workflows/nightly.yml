@@ -389,8 +389,10 @@ jobs:
           # Live first, then checked (2026-10-24): every reader photograph of a
           # tree that has a lead goes into its strip now; the lead look is the run's.
           python3 scripts/sightings_publish.py --live-first --send || true
-          # And the notes visitors wrote since the last knock, for the run to read.
-          python3 scripts/tree_notes.py --new --seen || true
+          # The notes visitors wrote are READ by the run (rung 1: --new, --hide,
+          # --seen). This step only counts them; until 2026-10-25 it marked
+          # them read here, into the Actions log, so no run ever saw one.
+          python3 scripts/tree_notes.py --waiting || true
           if ! git diff --quiet -- data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json data/notes-seen.json || [ -n "$(git ls-files --others --exclude-standard site/public/photos data/photo-live-mailed.json data/notes-seen.json)" ]; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
@@ -425,9 +427,27 @@ jobs:
             echo "::notice::Budget spent, skipping this knock before it costs a window."
           fi
 
+      # Is there work for Claude, or would this window only re-check? (Hidde,
+      # 2026-10-25: "saving tokens is good tbh if we can", once nothing a
+      # reader sent waits longer.) Every step above already ran; this only
+      # decides whether an agent starts. Reasons and slots: claude_gate.py.
+      # Revert: delete this step and the `work` conditions below.
+      - name: Is there work for Claude
+        id: work
+        if: steps.budget.outputs.start == 'yes'
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          if python3 scripts/claude_gate.py; then
+            echo "go=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=no" >> "$GITHUB_OUTPUT"
+            echo "::notice::No reader work and outside the 06 and 18 UTC slots; the cheap steps ran, no agent."
+          fi
+
       - name: Run the research workflow from CLAUDE.md
         id: claude
-        if: steps.budget.outputs.start == 'yes'
+        if: steps.budget.outputs.start == 'yes' && steps.work.outputs.go == 'yes'
         uses: anthropics/claude-code-action@v1
         env:
           # Reader submissions intake (native form -> Supabase). Absent secret
@@ -891,8 +911,9 @@ jobs:
         id: probe
         # Not always(): a knock the budget gate skipped has no attempt to judge
         # and no execution file to read, so the probe would fall back to a
-        # stale record from a previous run on the same runner path.
-        if: always() && steps.budget.outputs.start == 'yes'
+        # stale record from a previous run on the same runner path. Same for a
+        # knock the work gate skipped.
+        if: always() && steps.budget.outputs.start == 'yes' && steps.work.outputs.go == 'yes'
         continue-on-error: true
         env:
           RUN_START_SHA: ${{ steps.start.outputs.sha }}
@@ -1109,7 +1130,9 @@ jobs:
       # when the run wrote none of its own. It cannot fail the job: the work is
       # already done and pushed by the time this runs.
       - name: Run health
-        if: always()
+        # Not for a knock the work gate skipped: no agent ran, and the record
+        # would add a "said nothing" stub to LOG.md every two hours.
+        if: always() && steps.work.outputs.go != 'no'
         continue-on-error: true
         env:
           RUN_START_SHA: ${{ steps.start.outputs.sha }}
@@ -1185,7 +1208,10 @@ jobs:
       # fails to land. workflow_dispatch is the one event GITHUB_TOKEN may
       # start (knock.yml relies on the same exception).
       - name: Deploy the window's work
-        if: always() && steps.budget.outputs.start == 'yes'
+        # always(): the cheap steps push readers' photographs live-first even
+        # when no agent ran, and a push as claude[bot] starts no deploy of its
+        # own. The step itself does nothing when nothing was pushed.
+        if: always()
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

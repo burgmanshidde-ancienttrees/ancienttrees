@@ -642,6 +642,29 @@ def check_a_deleted_account_keeps_its_photographs():
     return out
 
 
+def check_notes_are_read_before_they_are_marked_read():
+    """A note on a tree is marked read only by the run that read it.
+
+    Found 2026-10-25: the knock ran `tree_notes.py --new --seen` into the
+    Actions log, so every note was marked read and no run ever saw one; Hidde:
+    "fix the tree notes bug so the night run actually reads new notes". The
+    knock may count them (--waiting); --seen belongs to the agent at rung 1,
+    and the night run's work gate must still count unread notes as work.
+    Removing this check needs Hidde.
+    """
+    root = Path(__file__).resolve().parent.parent
+    flow = (root / ".github/workflows/nightly.yml").read_text(encoding="utf-8")
+    gate = root / "scripts/claude_gate.py"
+    out = []
+    if re.search(r"^\s*python3 scripts/tree_notes\.py[^\n]*--seen", flow, re.M):
+        out.append(".github/workflows/nightly.yml marks tree notes read in a shell step; only the "
+                   "run that read them may (rung 1, tree_notes.py --new then --seen).")
+    if not gate.exists() or "unread_notes()" not in gate.read_text(encoding="utf-8"):
+        out.append("scripts/claude_gate.py no longer counts unread notes as work, so a note could "
+                   "wait for a slot (Hidde, 2026-10-25).")
+    return out
+
+
 def check_app_downloads_are_their_own_block():
     """App Store downloads is its OWN digest block, never appended to the app
     table's.
@@ -3282,6 +3305,7 @@ def main():
         check_the_headline_never_judges_take_me_there,
         check_the_digest_page_shows_readers_words,
         check_a_deleted_account_keeps_its_photographs,
+        check_notes_are_read_before_they_are_marked_read,
         check_every_site_route_is_claimed_or_excluded,
         check_app_downloads_are_their_own_block,
         check_auth_corpus_agreement,
@@ -3477,6 +3501,7 @@ def main():
     failures += check_the_headline_never_judges_take_me_there()
     failures += check_the_digest_page_shows_readers_words()
     failures += check_a_deleted_account_keeps_its_photographs()
+    failures += check_notes_are_read_before_they_are_marked_read()
     failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()

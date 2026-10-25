@@ -2006,13 +2006,15 @@ def day_by_day_section(today):
     shown = [k for k, v in cols.items() if v is not None]
     if not shown:
         return ""
+    # Days across, numbers down (Hidde, 2026-10-25: "dagen horizontaal en
+    # andere verticaal").
     out = ["**Day by day, the last seven days** (strangers only; visitors are Google Analytics', "
            "so only people who accepted the cookie bar)", "",
-           "| Day | %s |" % " | ".join(shown), "|---|%s" % ("---:|" * len(shown))]
-    for d in days:
-        out.append("| %s | %s |" % (d[5:], " | ".join(str(cols[k].get(d, 0)) for k in shown)))
-    out.append("| **7 days** | %s |" % " | ".join(
-        "**%d**" % sum(cols[k].get(d, 0) for d in days) for k in shown))
+           "| | %s | **7 days** |" % " | ".join(d[5:] for d in days),
+           "|---|%s---:|" % ("---:|" * len(days))]
+    for k in shown:
+        out.append("| %s | %s | **%d** |" % (k, " | ".join(str(cols[k].get(d, 0)) for d in days),
+                                            sum(cols[k].get(d, 0) for d in days)))
     return "\n".join(out)
 
 

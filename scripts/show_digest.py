@@ -213,7 +213,7 @@ body{font:15px/1.5 -apple-system,system-ui,sans-serif;max-width:1100px;margin:0 
 h1{font-size:22px;margin:8px 0 16px}p{margin:10px 0}strong{color:#22301f}
 table{border-collapse:collapse;margin:8px 0 16px;font-size:13.5px;display:block;overflow-x:auto;max-width:100%%}
 th,td{border-bottom:1px solid #e3e3dc;padding:5px 9px;text-align:left;vertical-align:top}
-th{background:#eef0e8;position:sticky;top:0}td:first-child{white-space:nowrap}code,pre{font:12.5px ui-monospace,Menlo,monospace;background:#f0f1ec;border-radius:4px}
+th{background:#eef0e8;position:sticky;top:0}td:first-child,th{white-space:nowrap}code,pre{font:12.5px ui-monospace,Menlo,monospace;background:#f0f1ec;border-radius:4px}
 code{padding:1px 4px}pre{padding:10px;overflow-x:auto}a{color:#3d6b35}ul{padding-left:20px}
 </style></head><body><h1>Daily digest %(day)s</h1>
 %(body)s</body></html>"""

@@ -25,6 +25,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - **Live on the phone website, every map**: the tapped tree's card has 16 on all four sides (it had 30 on top, 16 under), the list sheet steps away while a card is up and comes back when it closes (Airbnb's mobile map), and /explore's resting sheet shows the top of its first city, cut by the screen edge, so the list reads as something to pull up. Hidde approved the mockup first. Desktop and the app are unchanged (the app's tapped tree rises in its own sheet). CONVENTIONS.md "Tapping a pin on a map that has a list in a sheet" has the measurements.
 
+## 2026-10-25 session: notes are read by the run, and Claude starts only when there is work
+
+**Notes on trees:** until today the knock marked every new note read into the Actions log, so no run ever read one. Now the knock only counts them (`tree_notes.py --waiting`); the run reads them at rung 1 (`--new`, `--hide` for the closed list, `--seen`, which marks only what `--new` printed). Guarded by qa's `check_notes_are_read_before_they_are_marked_read()`.
+
+**Night run (Hidde: "saving tokens is good tbh if we can"):** every knock still runs the cheap steps every two hours (mail, live-first photographs, unlinking, outreach batches, page dates, deploy). The Claude window now starts only when `scripts/claude_gate.py` finds work: an app photograph in the queue, a submission from the last 150 minutes, an unread note, or the fixed slots 06:00 to 07:59 and 18:00 to 19:59 UTC for Reddit, outreach and the rest of the ladder. Any doubt starts it. A skipped knock writes no run-health record or LOG stub. Revert: delete the "Is there work for Claude" step in nightly.yml. Also: the digest's day table now has days across.
+
 ## 2026-10-25 session: tree notes table confirmed, digest shows the week day by day
 
 tree_notes is in Supabase: sqlcheck with the service key says every migration is applied, and the Postbox check is green (10-24 22:35 and 10-25 11:58). Stop writing "paste supabase/tree-notes.sql" as something for Hidde. The digest now opens with readers' words in full (local page only), a day-by-day table for the last seven days, and a Waiting for you block. Its Today line now counts accounts and waitlist signups.

@@ -6,7 +6,8 @@ A note goes live for everyone the moment it is written (Hidde, 2026-10-24:
 read them afterwards. This is that reader.
 
   python3 scripts/tree_notes.py --new            every note not yet read, with the tree
-  python3 scripts/tree_notes.py --seen           mark everything printed by --new as read
+  python3 scripts/tree_notes.py --seen           mark what the last --new printed as read
+  python3 scripts/tree_notes.py --waiting        how many are unread (exit 0 if any), marks nothing
   python3 scripts/tree_notes.py --hide <code> <tree_id> "<why>"
                                                  take one down (hidden=true; the person
                                                  still sees and can edit their own)
@@ -35,6 +36,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 KEY = os.environ.get("SUPABASE_SERVICE_KEY")
 SEEN = os.path.join(ROOT, "data", "notes-seen.json")
+# What the last --new printed, so --seen marks exactly the notes somebody read
+# and never one that arrived in between. Until 2026-10-25 the knock ran
+# `--new --seen` into the Actions log, so every note was marked read and no run
+# ever saw one.
+PENDING = os.path.join(ROOT, "out", "tmp", "notes-pending.json")
 
 
 def supa(path, method="GET", body=None):
@@ -82,30 +88,53 @@ def rows():
                 "&order=updated_at.desc&limit=500") or []
 
 
-def new(mark=False):
-    doc = load_seen()
-    seen = doc.setdefault("seen", {})
-    names = tree_names()
-    fresh = []
+def unread():
+    seen = load_seen().setdefault("seen", {})
+    out = []
     for r in rows():
         k = f"{people.ref(r['user_id'])}|{r['tree_id']}"
-        if seen.get(k) == r["updated_at"]:
-            continue
-        fresh.append((k, r))
+        if seen.get(k) != r["updated_at"]:
+            out.append((k, r))
+    return out
+
+
+def new():
+    names = tree_names()
+    fresh = unread()
+    os.makedirs(os.path.dirname(PENDING), exist_ok=True)
+    with open(PENDING, "w", encoding="utf-8") as fh:
+        json.dump({k: r["updated_at"] for k, r in fresh}, fh)
     if not fresh:
         print("tree notes: nothing new")
         return 0
-    print(f"tree notes: {len(fresh)} new or changed")
+    print(f"tree notes: {len(fresh)} new or changed. Read each; hide only for the closed "
+          "list (--hide), then --seen.")
     for k, r in fresh:
         name, city = names.get(r["tree_id"], (r["tree_id"], "?"))
         flag = " HIDDEN" if r.get("hidden") else ""
         print(f"\n  {k}  {r['updated_at'][:10]}  {name} ({city}){flag}")
         print("    " + (r["body"] or "").replace("\n", "\n    "))
-        if mark:
-            seen[k] = r["updated_at"]
-    if mark:
-        save_seen(doc)
     return 0
+
+
+def mark_seen():
+    try:
+        printed = json.load(open(PENDING, encoding="utf-8"))
+    except Exception:
+        print("tree notes: run --new first and read what it prints; nothing marked")
+        return 1
+    doc = load_seen()
+    doc.setdefault("seen", {}).update(printed)
+    save_seen(doc)
+    os.remove(PENDING)
+    print(f"tree notes: {len(printed)} marked read")
+    return 0
+
+
+def waiting():
+    n = len(unread())
+    print(f"tree notes: {n} unread")
+    return 0 if n else 1
 
 
 def set_hidden(code, tree_id, hidden, why=""):
@@ -135,10 +164,15 @@ def main():
         print("tree notes: SUPABASE_SERVICE_KEY absent, nothing read")
         return 0
     a = sys.argv[1:]
+    if "--new" in a and "--seen" in a:
+        print("tree notes: --new and --seen together marks notes nobody read; run them apart")
+        return 1
     if "--new" in a:
-        return new(mark="--seen" in a)
+        return new()
     if "--seen" in a:
-        return new(mark=True)
+        return mark_seen()
+    if "--waiting" in a:
+        return waiting()
     if "--hide" in a:
         i = a.index("--hide")
         return set_hidden(a[i + 1], a[i + 2], True, a[i + 3] if len(a) > i + 3 else "")
