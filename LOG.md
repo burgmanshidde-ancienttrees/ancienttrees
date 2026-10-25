@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 night run (window from 18:40 UTC): nothing to ship
+
+Rungs 1 and 2 clear (no photographs or notes waiting, health.py all green). Rung 4: Reddit harvest and watch found 0 new comments and 0 threads, 0 open items; no new mail batch, because the archive batch of today (drafts/batch-archive-2026-10-25-preview.md) still waits for Hidde. Rung 5 is closed by the supply pause and enrich says nothing to do. Scouting: Stirling retried (one search, same answer: the council appeal routes to the Woodland Trust inventory, off limits), still stalled, `retried` set; next target is Baltimore. No trees added; no commands were refused. Local pre-push hooks were armed by prepare.py.
+
 ## 2026-10-25 session: the first archive batch, and Reddit drafts stop blocking mail
 
 - **Outreach**: the first `archive` batch is drafted, three photo asks: Belgische Dendrologie Belge for Brussels (31 of 35 trees without a photo), Dr. Andreas Gröger for Munich (33 of 63), and Ricard Llerins Bonet, who self-published two Barcelona tree books with his own photos (42 of 56). Each names last week's Wilder article. Mailcheck clean, every URL answered 200. For Hidde: 3 archive mails in drafts/batch-archive-2026-10-25-preview.md
