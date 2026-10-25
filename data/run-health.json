@@ -2,54 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-03T23:32:27+00:00",
-   "date": "2026-09-04",
-   "run_id": "33818019771",
-   "minutes": 47.7,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 374,
-   "denials": 33,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(if), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(tail)",
-   "ended": "success",
-   "tokens": 28405725,
-   "claims_held": [
-    "indianapolis",
-    "boise",
-    "fort-lauderdale"
-   ],
-   "commits": 17,
-   "cities_touched": 6,
-   "cities": [
-    {
-     "city": "port-renfrew",
-     "trees": 2
-    },
-    {
-     "city": "cooper-creek",
-     "trees": 1
-    },
-    {
-     "city": "derby",
-     "trees": 1
-    },
-    {
-     "city": "flinders-ranges",
-     "trees": 1
-    },
-    {
-     "city": "pemberton",
-     "trees": 1
-    },
-    {
-     "city": "baarn",
-     "trees": 0
-    }
-   ],
-   "trees": 6,
-   "logged": false
-  },
-  {
    "started": "2026-09-04T00:21:33+00:00",
    "date": "2026-09-04",
    "run_id": "33818544690",
@@ -23309,6 +23261,25 @@
    "denials_source": "permission_denials: no names in the record",
    "ended": "success",
    "tokens": 214611,
+   "claims_held": [],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-25T16:50:15+00:00",
+   "date": "2026-10-25",
+   "run_id": "40213541577",
+   "minutes": 4.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 58,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 304763,
    "claims_held": [],
    "commits": 4,
    "cities_touched": 0,
