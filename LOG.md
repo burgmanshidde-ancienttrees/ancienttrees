@@ -61,7 +61,7 @@ Rungs 1 and 2 clear (no photographs or notes waiting, health.py all green). Rung
 
 ## 2026-10-25 session: the Pohutukawa of Campo Santana is live (lis_038)
 
-**In the product:** /lisbon gains its 37th tree, the Pohutukawa of Campo Santana, from a reader's photograph with GPS (the one that had wrongly led the weeping fig's page), on the ICNF register's classified group AIP11065609C (four bela-sombra and two Pohutukawa, 123 years at the 2016 survey). Hidde chose it: "this photo looks way more interesting". English and Portuguese; Lisbon's counts updated (title 37, "and thirty-six more" beside the olive). The reader who identified it (submissions 484 to 486) still has no reply; one goes out only on Hidde's word.
+**In the product:** /lisbon gains its 37th tree, the Pohutukawa of Campo Santana, from a reader's photograph with GPS (the one that had wrongly led the weeping fig's page), on the ICNF register's classified group AIP11065609C (four bela-sombra and two Pohutukawa, 123 years at the 2016 survey). Hidde chose it: "this photo looks way more interesting". English and Portuguese; Lisbon's counts updated (title 37, "and thirty-six more" beside the olive). Both pages seen live after the deploy. On Hidde's word ("mail de beste persoon dat zn boom live staat") the reader who identified it (submissions 484 to 486) got a reply with both links, signed Ancient Trees, via contributor_reply.py.
 
 ## 2026-10-25 session: the Campo Santana fig shows the fig again; every reader photograph reaches Hidde
 
