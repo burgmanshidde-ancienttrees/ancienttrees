@@ -27,7 +27,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 ## 2026-10-24 (previous UTC day)
 
-**Today: an android waitlist signup arrived today (39 total); an ambassador request for Porto arrived yesterday (48 total); an account was opened today (43 total).**
+**Today: 4 android waitlist signups arrived today (42 total); an ambassador request for Porto arrived yesterday (48 total); 2 accounts were opened today (44 total).**
 
 **The numbers that matter** (this week against the week before; strangers only)
 
@@ -37,20 +37,33 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 | ... of which from search | every search engine | 9 | 5 |
 | ... from Google | Google's recovery | 2 | 1 |
 | ... from Bing | Bing | 0 | 1 |
-| App downloads (first-time) | people | 18 | 19 |
+| App downloads (first-time) | people | 38 | 18 |
 | New accounts | people | 13 | 4 |
-| Phones back within 30 days | people who stay | 7 of 11 | 6 of 16 |
+| Phones back within 30 days | people who stay | 8 of 12 | 6 of 15 |
 | Trees saved to Want to go | intent | 23 | 3 |
 | Trees collected | goal 1: stood at a tree | 13 | 1 |
 | Readers' contributions | data: trees, photos, corrections, votes | 13 | 2 |
 
 Website visitors are Google Analytics' count, so only people who accepted the cookie bar. The 30-day row is the phones that arrived five weeks ago, so it moves slowly.
 
+**Day by day, the last seven days** (strangers only; visitors are Google Analytics', so only people who accepted the cookie bar)
+
+| Day | Visitors | New accounts | Saves | Android waitlist | App downloads | Trees sent | Feedback | Ambassador asks | App photos | Tree notes |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 10-18 | 2 | 0 | 4 | 0 | 1 | 0 | 2 | 0 | 4 | 0 |
+| 10-19 | 4 | 2 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 10-20 | 6 | 1 | 0 | 0 | 3 | 1 | 6 | 1 | 8 | 0 |
+| 10-21 | 3 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 5 | 0 |
+| 10-22 | 11 | 2 | 13 | 0 | 2 | 0 | 0 | 1 | 3 | 0 |
+| 10-23 | 15 | 1 | 0 | 1 | 5 | 0 | 0 | 0 | 0 | 0 |
+| 10-24 | 41 | 6 | 6 | 15 | 23 | 0 | 0 | 1 | 0 | 0 |
+| **7 days** | **82** | **13** | **23** | **16** | **38** | **2** | **8** | **3** | **20** | **0** |
+
 **Trees readers sent, for you to inspect:** none waiting. Every tree a stranger sent has your answer.
 
 **Waiting for you** (what the runs left for you since 2026-10-24)
 
-- 2 Reddit replies in drafts/batch-community-preview.md
+- 3 Reddit replies in drafts/batch-community-preview.md (the r/lisbon Santa Iria photo reply is the one that matters: asks permission to use the photograph).
 - paste supabase/tree-notes.sql to clear the Postbox check.
 - Postbox check fails only because supabase/tree-notes.sql has never been pasted (sqlcheck: table tree_notes).
 - reply drafted in drafts/reply-james-kearney-2026-10-24.md; he says more photos follow.
@@ -96,23 +109,24 @@ Google, the last 10 days it will give us (2-3 days behind; the newest row is sti
 | 10-21 | 0 | 43 | 0.0% | 39.2 |
 | 10-22 | 2 | 45 | 4.4% | 51.8 |
 | 10-23 | 0 | 48 | 0.0% | 55.1 |
-| 10-24 *partial* | 1 | 24 | 4.2% | 43.2 |
-| **window** | **16** | **475** | **3.4%** | |
+| 10-24 | 1 | 24 | 4.2% | 43.2 |
+| 10-25 *partial* | 1 | 15 | 6.7% | 46.6 |
+| **window** | **17** | **490** | **3.5%** | |
 - Top queries (10d): # system role you operate as a precision (i1, p6); 2023 euwallacea validus over 20 families (i1, p96); 43 rue buffon 75005 paris (i1, p73); amsterdam trees (i1, p81); ancient roman trees (i1, p68)
 **What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)
 
 | Day | Impressions | Clicks | CTR |
 |---|---:|---:|---:|
-| 10-17 | 57 | 3 | 5.3% |
 | 10-18 | 50 | 2 | 4.0% |
 | 10-19 | 82 | 0 | 0.0% |
 | 10-20 | 91 | 9 | 9.9% |
 | 10-21 | 103 | 2 | 1.9% |
 | 10-22 | 77 | 2 | 2.6% |
 | 10-23 | 82 | 5 | 6.1% |
-| **7 days** | **542** | **23** | **4.2%** |
-- Week before: 523 impressions, 21 clicks. No Bing demotion in sight.
-- Top Bing queries: oldest tree china (c8/i4, p12); fig tree in square alicante (c2/i4, p4); big trees of quebec city (c2/i1, p2); how old are the trees in queen square bristol (c1/i4, p3); oak tree in zurich (c1/i4, p2); trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1)
+| 10-24 | - | - | 0.0% |
+| **7 days** | **485** | **20** | **4.1%** |
+- Week before: 523 impressions, 23 clicks. No Bing demotion in sight.
+- Top Bing queries: oldest tree china (c8/i4, p12); fig tree in square alicante (c2/i4, p4); big trees of quebec city (c2/i1, p2); how old are the trees in queen square bristol (c1/i4, p3); oak tree in zurich (c1/i4, p2); trees in the plaza dus burgos seville (c1/i3, p5); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6)
 - Bing alone, from Bing Webmaster Tools. DuckDuckGo and Yahoo draw on the same index and publish no numbers. Bing's data lags about two days.
 
 ---
@@ -124,9 +138,6 @@ Google, the last 10 days it will give us (2-3 days behind; the newest row is sti
 
 | Started | Minutes | Trees | Commits | Refused | Cities |
 |---|---:|---:|---:|---:|---|
-| 10-24T13:15 | 5.9 | 0 | 5 | 2 | - |
-| 10-24T13:47 | 2.7 | 0 | 3 | 0 | - |
-| 10-24T16:43 | 4.5 | 0 | 5 | 0 | - |
 | 10-24T17:09 | 3.6 | 0 | 4 | 0 | - |
 | 10-24T20:04 | 5.1 | 0 | 4 | 0 | - |
 | 10-24T23:44 | 5.7 | 0 | 7 | 0 | - |
@@ -134,32 +145,35 @@ Google, the last 10 days it will give us (2-3 days behind; the newest row is sti
 | 10-25T03:04 | 3.8 | 0 | 4 | 0 | - |
 | 10-25T06:54 | 3.2 | 0 | 4 | 0 | - |
 | 10-25T08:53 | 3.9 | 0 | 4 | 0 | - |
-| **10 runs** | **42** | **0** | **44** | | |
+| 10-25T12:30 | 4.5 | 0 | 4 | 0 | - |
+| 10-25T14:03 | 4.8 | 0 | 4 | 0 | - |
+| 10-25T16:50 | 4.4 | 0 | 4 | 0 | - |
+| **10 runs** | **43** | **0** | **43** | | |
 
-- 10 of 10 produced no trees; 2 to 2 commands refused per run; last build that went live: 1h ago.
+- 10 of 10 produced no trees; last build that went live: 1h ago.
 
 **What they made**
 
-- Night run: thirty-first attempt, state re-checked, log
-- Night run: thirtieth attempt, state re-checked, log
-- Night run: twenty-ninth attempt, community lane, log
-- Night run: twenty-eighth attempt, health answer, log
-- Night run: twenty-seventh attempt, state re-checked, log
-- Night run: twenty-sixth attempt, state re-checked, log
-- Night run: twenty-fifth attempt, state re-checked, log
-- Night run: twenty-fourth attempt, state re-checked, log
-- Night run: twenty-third attempt, state re-checked, log
-- Night run: twenty-second attempt, state re-checked, log
-- Night run: twenty-first attempt, state re-checked, log
-- Night run: twentieth attempt, community lane re-run, log
-- Night run: nineteenth attempt, community lane re-run, log
-- Night run: eighteenth attempt, state re-checked, log
+- Night run: forty-first attempt, state re-checked, log
+- Night run: fortieth attempt, state re-checked, log
+- Night run: outreach rung, 3 Reddit replies previewed, log
+- Night run: thirty-ninth attempt, state re-checked, log
+- Night run: thirty-eighth attempt, state re-checked, log
+- Night run: thirty-seventh attempt, state re-checked, log
+- Night run: thirty-sixth attempt, state re-checked, log
+- Night run: thirty-fifth attempt, state re-checked, log
+- Night run: thirty-fourth attempt, state re-checked, log
+- Night run: community lane, three Reddit replies drafted, log
+- Night run: thirty-third attempt, state re-checked, log
+- Night run: thirty-second attempt, state re-checked, log
+- Fresh-eyes review: 4 finding(s)
+- Fresh-eyes review: 1 finding(s)
 
 Machine: 9 chain attempts yesterday, 9 got real work time (~83 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
 **Search work lists**
 
-- Top pages (10d): / (c7/i22); /leiden/beets-beech-of-the-burcht (c2/i2); /app (c1/i11); /de (c1/i6); /de/stuttgart/hohenheim-love-plane (c1/i2)
+- Top pages (10d): / (c8/i23); /leiden/beets-beech-of-the-burcht (c2/i2); /app (c1/i11); /de (c1/i6); /de/stuttgart/hohenheim-love-plane (c1/i2)
 - Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
     - 'comfort tree niagara' (i2, p75)
     - '# system role you operate as a precision' (i1, p6)
@@ -174,14 +188,14 @@ What Google does, last 10 days:
 
 | Measure | Now |
 |---|---:|
-| Impressions | 537 |
-| Clicks | 16 |
-| Pages that got at least one impression | 275 |
-| Impressions on the proven cities | 326 |
+| Impressions | 550 |
+| Clicks | 17 |
+| Pages that got at least one impression | 280 |
+| Impressions on the proven cities | 333 |
 
-- 330 impressions from site: and operator searches left out (ours, not readers; every Google table below is without them).
+- 350 impressions from site: and operator searches left out (ours, not readers; every Google table below is without them).
 
-What we did (context, proves nothing by itself): 3057 trees Google may index, 825 kept out for lacking a photo and an exact pin, 6978 pages on the noindex list.
+What we did (context, proves nothing by itself): 3057 trees Google may index, 825 kept out for lacking a photo and an exact pin, 6977 pages on the noindex list.
 
 **Is enriching working** (indexed tree pages, last 10 days of Google; rich = register record, a measurement and concrete access)
 

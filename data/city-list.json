@@ -249,6 +249,29 @@
    "trees": 7
   },
   {
+   "city": "Houston",
+   "country": "United States",
+   "slug": "houston",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 11
+  },
+  {
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "status": "published",
+   "trees": 21
+  },
+  {
+   "city": "Taipei",
+   "country": "Taiwan",
+   "slug": "taipei",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
    "city": "Alicante",
    "country": "Spain",
    "slug": "alicante",
@@ -325,29 +348,6 @@
    "trees": 7
   },
   {
-   "city": "Houston",
-   "country": "United States",
-   "slug": "houston",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 11
-  },
-  {
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "status": "published",
-   "trees": 21
-  },
-  {
-   "city": "Taipei",
-   "country": "Taiwan",
-   "slug": "taipei",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
-  },
-  {
    "city": "Cagliari",
    "country": "Italy",
    "slug": "cagliari",
@@ -362,6 +362,15 @@
    "status": "published",
    "demand_views_90d": 34962,
    "trees": 5
+  },
+  {
+   "city": "Braga",
+   "country": "Portugal",
+   "slug": "braga",
+   "status": "published",
+   "demand_views_90d": 34522,
+   "trees": 4,
+   "note": "Ships with 4. Two further ICNF-classified trees stand in the cerca of the Mosteiro de Tibaes (twin Himalayan cedars and Portugal's tallest maritime pine); the monastery's own site carries a live closure notice for the cerca while works run, so both are held in data/leads/braga.json until it reopens."
   },
   {
    "city": "Parma",
@@ -435,6 +444,14 @@
    "trees": 6
   },
   {
+   "city": "Bogota",
+   "country": "Colombia",
+   "slug": "bogota",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
    "city": "Fukuoka",
    "country": "Japan",
    "slug": "fukuoka",
@@ -442,14 +459,6 @@
    "note": "Hidde, 2026-08-02: he is travelling there, so this one is worth doing properly and soon. Search order per Step 1: name the shrine and temple precincts first (Kushida-jinja and its ginkgo, Sumiyoshi-jinja, Shofuku-ji, Tochoji, Ohori Park, Maizuru Park and the castle ruins, Rakusuien, Atago-jinja), then the national Natural Monument register, then the generic sweep. Note the CURATION.md entry closing Fukuoka is about the REGISTER LAYER only (no openly licensed prefectural dataset), which says nothing about whether the city has remarkable trees to curate.",
    "demand_views_90d": 77485,
    "trees": 18
-  },
-  {
-   "city": "Bogota",
-   "country": "Colombia",
-   "slug": "bogota",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
   },
   {
    "city": "Shanghai",
@@ -1145,15 +1154,6 @@
    "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
    "demand_views_90d": 145206,
    "trees": 13
-  },
-  {
-   "city": "Braga",
-   "country": "Portugal",
-   "slug": "braga",
-   "status": "published",
-   "demand_views_90d": 34522,
-   "trees": 4,
-   "note": "Ships with 4. Two further ICNF-classified trees stand in the cerca of the Mosteiro de Tibaes (twin Himalayan cedars and Portugal's tallest maritime pine); the monastery's own site carries a live closure notice for the cerca while works run, so both are held in data/leads/braga.json until it reopens."
   },
   {
    "city": "Okinawa",
