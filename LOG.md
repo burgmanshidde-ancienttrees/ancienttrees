@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25, thirtieth attempt (nothing shipped)
+
+No claims standing. Same 3 READY leads (Oxford 2, Madrid 1), own supply under the pause and no photographs, so no write pass. Nothing new since the twenty-ninth attempt; Reddit drafts still wait for Hidde.
+
 ## 2026-10-25, twenty-ninth attempt
 
 Nothing shipped. No claims standing; 3 READY leads (Oxford 2, Madrid 1) are our own supply and wait under the pause. Inbox empty. Smoke and deploy "skipped" on bot pushes only; the scheduled deploys succeed, so not broken. Reddit: 2 open items both already drafted, preview rebuilt, harvest and watch found nothing new.
