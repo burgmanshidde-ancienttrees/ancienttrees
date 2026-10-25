@@ -29,6 +29,12 @@ Web half: last 24 hours were the Add a photo / notes-card move on the tree page 
 
 - WARN (sixth review to see it) meta description still prints a planting year as an age: 106 built tree pages match `description" content="...(15xx-20xx)-year-old`. Worst reading: /cork/1870-magnolia-of-fota says "A 1870-year-old Campbell's Magnolia" (the tree is named for its planting year, so it is about 156), /leiden/old-plane-of-the-plantsoen "A 1800-year-old London Plane", /seattle/wedgwood-scarlet-oak "A 1920-year-old Scarlet Oak". Also "A 1870" is ungrammatical. Hard rule 2 (never fabricate tree facts) and Verify (a derived age states its basis). Prose findings have not held this for two months and grep finds no check for it in scripts/qa.py: it needs a qa.py check on built HTML first (refuse a four-digit year from 1500 to 2025 directly before "-year-old" in any description meta), then the fix at the meta template.
 
+App half (iPhone SE: profile/Settings, refused, review-ask, search, signin-email, signin):
+- NOTE APP search ("lis"): the species row reads "Elm, listed as Lombarts' Elm" with "Ulmus 'Lombartsii'" under it. "listed as" is a data label leaking into a reader-facing species name (Hard rule 9: one canonical common name per species). Either the canonical name alone or the cultivar name; the bold run also spans "listed as Lombarts' Elm" although only "lis" matched.
+- NOTE APP signin-email.png is pixel-identical to signin.png (the three-button sheet over the same background, no email field), so the "Continue with email" step was not captured and the email screen got no look tonight. Sweep fault, not a product fault; a session should check the sweep taps the button.
+- NOTE APP Settings sign-in row: "Register and sign in to add and save trees." Two verbs for one act, and "add" sits oddly beside the 2026-10-24 live-first rule (a reader's photograph is public when sent). If photographs and notes need an account, say so in one verb ("Sign in to add and save trees"); if they do not, the line promises a gate that is not there.
+- Other four screens read fine: no contradiction, no clipped photograph, no stray count.
+
 ## 2026-10-24
 
 Web half: last 24 hours were mostly night-run logs, the Airbnb-style pin change (map.ts, TreeMap.swift), the Sicily collection and the new Messina fig (reader tip). Read the built Messina tree page and checked the built site for the age-meta fault. Not a Monday, so no corpus or copy audit. Two findings.
