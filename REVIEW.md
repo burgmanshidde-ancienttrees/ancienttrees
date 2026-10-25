@@ -23,6 +23,12 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25
+
+Web half: last 24 hours were the Add a photo / notes-card move on the tree page (web and app), the one shared map card, digest changes and night-run logs. Read the built Totteridge yew page for the new grey photo and notes cards (present, strings match i18n.ts) and checked the built site for em dashes (none in three sampled pages). Not a Monday, so no corpus or copy audit.
+
+- WARN (sixth review to see it) meta description still prints a planting year as an age: 106 built tree pages match `description" content="...(15xx-20xx)-year-old`. Worst reading: /cork/1870-magnolia-of-fota says "A 1870-year-old Campbell's Magnolia" (the tree is named for its planting year, so it is about 156), /leiden/old-plane-of-the-plantsoen "A 1800-year-old London Plane", /seattle/wedgwood-scarlet-oak "A 1920-year-old Scarlet Oak". Also "A 1870" is ungrammatical. Hard rule 2 (never fabricate tree facts) and Verify (a derived age states its basis). Prose findings have not held this for two months and grep finds no check for it in scripts/qa.py: it needs a qa.py check on built HTML first (refuse a four-digit year from 1500 to 2025 directly before "-year-old" in any description meta), then the fix at the meta template.
+
 ## 2026-10-24
 
 Web half: last 24 hours were mostly night-run logs, the Airbnb-style pin change (map.ts, TreeMap.swift), the Sicily collection and the new Messina fig (reader tip). Read the built Messina tree page and checked the built site for the age-meta fault. Not a Monday, so no corpus or copy audit. Two findings.
