@@ -1174,6 +1174,11 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
 .ats-head { padding: 0.5rem 1.1rem 0.15rem; font-family: var(--sans); font-size: 10.5px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-light); }
 .ats-empty { padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 13px; color: var(--ink-mid); }
 .ats-empty a { color: var(--moss); }
+/* A town we hold no tree for: the empty notes card inside the dropdown and
+   on the explore sheet (2026-10-25). */
+.ats-drop .ats-card { margin: 12px 1.1rem 6px; }
+.ats-card a.addphoto-btn, .exc-ask a.addphoto-btn { text-decoration: none; }
+.exc-ask { margin: 0 0 12px; }
 /* Country page: the ranked-list form (Hidde, 2026-08-01, the PictureThis
    Top-50 pattern): rank numeral, photo, name, one honest sub-line, chevron. */
 /* Country page species clusters (2026-08-13). Rows rather than the species
@@ -3581,6 +3586,7 @@ body:has(form.hero-search) .nav-search, body:has(form.ex-search) .nav-search { d
   .nav-search .ats-drop .ats-row span { font-size: 13px; font-weight: 400; color: var(--ink-light); }
   .nav-search .ats-drop .ats-head { padding: 14px var(--gutter) 4px; }
   .nav-search .ats-drop .ats-empty { padding: 14px var(--gutter); }
+  .nav-search .ats-drop .ats-card { margin: 12px var(--gutter) 6px; }
 }
 
 /* THE TREE PAGE REBUILT, 2026-10-24 (Hidde: "bouw alles"; CONVENTIONS.md

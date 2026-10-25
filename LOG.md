@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 session: a town we hold no tree for asks for its first one (web; app on its way)
+
+- **What changed, website**: search now finds every town of 15,000 people or more, also where we have nothing. Type "Bern" and the dropdown opens with the grey card of an empty notes section, "No trees mapped in Bern yet", "Know an old tree here? Add the first one.", and "Add a tree" (the contribute form with Bern filled in); under it Bern on the map and the nearest tree (The Linden of Morat, 27 km). On the map, any view without a tree shows the same card and the nearest tree. A typo gets one plain line, "Nothing matches ... Check the spelling, or try a town nearby." Seven languages. Hidde approved the design today, screens 1 and 2 as drawn, no card on a typo.
+- **No new pages**: nothing for Google; the ask lives in search and on the map (the convention, and the 09-28 demotion's lesson). Towns from GeoNames cities15000 (CC BY 4.0, credited on /sources), `data/places-geonames.json` via `scripts/geonames_places.py`; the nearest tree is worked out at every build in `/places.json`, loaded only when a query matches none of our places.
+- **Measured from now**: a search that ends on an empty town logs `search-empty-<ctx>`, one that ends on nothing `search-none-<ctx>`, and the card's button `empty-place-add`. Until today only a clicked result was logged, so how often people hit an empty place was unknown.
+- Benchmark in CONVENTIONS.md, "A place we have nothing for".
+
 ## 2026-10-25 session: 35 German trees get Rainer Lippert's photographs
 
 - **Live with this deploy**: 35 German trees now lead with a photograph from Rainer Lippert's monumentale-eichen.de, credited with a link to his page, under his standing permission (mail, 2026-10-10: "Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link"). 13 had no photograph at all (Hamburg's Hirschpark maple, the Ash at Schloss Solitude, both Dawn Redwoods in Frankfurt and Bad Homburg, two Nuremberg burl oaks, three Frankfurt and Offenbach oaks, Leipzig's Starkeiche, Dresden's Grenzeiche, Gut Burgstall's lime). 22 swapped a Commons lead for his, and the Commons photo moved into the strip (Dicke Marie, the Humboldt Oak, the Kaditzer Linde, the Tassilolinde, Teuchatz, Effeltrich and others).

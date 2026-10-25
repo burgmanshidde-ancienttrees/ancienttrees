@@ -5,6 +5,8 @@
 import {MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
 import { mapCardJs } from "./map-card-js";
+import { ui } from "./i18n";
+import { icon } from "./icons";
 
 /** MapLibre, loaded without blocking the page.
  *
@@ -409,6 +411,11 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
     `${PILES_JS}${PINS_JS}${mapCardJs(lang)}
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
+// The empty map's ask (Hidde, 2026-10-25): the grey card of an empty notes
+// section, then the nearest tree. Words in the page's language.
+var EMPTY = ${JSON.stringify({ title: ui(lang).emptyPlaceTitle, here: ui(lang).emptyHereTitle,
+  ask: ui(lang).emptyPlaceAsk, add: ui(lang).addTree, nearest: ui(lang).nearestTree,
+  ic: icon("tree", "regular"), plus: icon("plus", "bold") })};
 var SPECIES = ${speciesJson};
 // THE FILTER MODEL AND THE ACCOUNT CHIPS COME BEFORE THE MAP (2026-10-07):
 // MapLibre throws where WebGL is unavailable, and everything below the
@@ -570,6 +577,22 @@ try {
   if (REGIONS[tz]) { map.jumpTo({center: REGIONS[tz], zoom: 9}); }
   else if (tz && tz.indexOf('Europe/') === 0) { map.jumpTo({center: [10, 50], zoom: 4}); }
 } catch (e) {}
+// Arriving from a town in the search that we hold no tree for
+// (#@lat,lng,Name, search-form.ts): the map opens on that town, at the zoom a
+// town fills, and the sheet asks for its first tree under its name. Read after
+// the timezone guess above so the town wins.
+var PLACE = null;
+function _placeFromHash() {
+  var m = /^#@(-?[0-9.]+),(-?[0-9.]+),?(.*)$/.exec(location.hash);
+  if (!m) { return; }
+  var name = '';
+  try { name = decodeURIComponent(m[3] || ''); } catch (e) {}
+  PLACE = {lat: parseFloat(m[1]), lng: parseFloat(m[2]), name: name};
+  map.jumpTo({center: [PLACE.lng, PLACE.lat], zoom: 11});
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+}
+_placeFromHash();
+window.addEventListener('hashchange', _placeFromHash);
 function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   atMarkPiles(DATA.features);
@@ -658,6 +681,8 @@ function renderPanel() {
   if (!panel) return;
   var b = map.getBounds();
   var cities = CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
+  var anyTree = DATA.features.some(function(f) { var g = f.geometry.coordinates; return g[0] !== null && g[1] !== null && b.contains(g); });
+  if (!anyTree) { panel.innerHTML = emptyHere(); return; }
   if (!cities.length) {
     panel.innerHTML = '<p class="exc-empty">No mapped cities in view. Zoom out, or <a href="contribute">be the first to map one here</a>.</p>';
     return;
@@ -666,6 +691,44 @@ function renderPanel() {
   panel.innerHTML = '<div class="exc-cityhead"><h2>' + head + '</h2></div>' +
     cities.slice(0, 10).map(fmtCard).join('');
 }
+function _km(a, b) {
+  var R = Math.PI / 180, h = Math.pow(Math.sin((b[1] - a[1]) * R / 2), 2) +
+    Math.cos(a[1] * R) * Math.cos(b[1] * R) * Math.pow(Math.sin((b[0] - a[0]) * R / 2), 2);
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+function _esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+// No tree in view: the ask, named after the town while the map is still on
+// it, then the tree nearest the middle of the map.
+function emptyHere() {
+  var c = map.getCenter(), here = [c.lng, c.lat];
+  var named = PLACE && PLACE.name && _km(here, [PLACE.lng, PLACE.lat]) < 15;
+  var title = named ? EMPTY.title.replace('{place}', PLACE.name) : EMPTY.here;
+  var html = '<div class="td-notes-empty exc-ask">' +
+    '<span class="td-notes-empty-ic" aria-hidden="true">' + EMPTY.ic + '</span>' +
+    '<p class="td-notes-empty-t">' + _esc(title) + '</p>' +
+    '<p class="td-notes-empty-s">' + _esc(EMPTY.ask) + '</p>' +
+    '<div class="td-notes-empty-act"><a class="addphoto-btn quiet td-note-ask" href="/contribute?kind=tree' +
+    (named ? '&city=' + encodeURIComponent(PLACE.name) : '') +
+    '" data-ev="empty-place-add">' + EMPTY.plus + '<span>' + _esc(EMPTY.add) + '</span></a></div></div>';
+  var best = null, bd = Infinity;
+  DATA.features.forEach(function(f) {
+    var g = f.geometry.coordinates;
+    if (g[0] === null) { return; }
+    var d = _km(here, g);
+    if (d < bd) { bd = d; best = f; }
+  });
+  if (best) {
+    html += '<div class="exc-cityhead"><h2>' + _esc(EMPTY.nearest) + '</h2></div>' +
+      '<a class="exc-card" href="/' + best.properties.url + '">${NO_PHOTO_CARD}' +
+      '<span class="exc-body"><b>' + _esc(best.properties.name) + '</b>' +
+      '<span>' + Math.round(bd) + ' km &middot; ' + _esc(best.properties.city) + '</span></span></a>';
+  }
+  return html;
+}
+if (panel) panel.addEventListener('click', function(e) {
+  var a = e.target.closest ? e.target.closest('[data-ev]') : null;
+  if (a) at.track(a.getAttribute('data-ev'), 'map');
+});
 map.on('moveend', renderPanel);
 map.on('load', renderPanel);
 renderPanel();

@@ -18,7 +18,7 @@ import { toEnglishPath, ui } from "../lib/i18n";
 import { isNoindexed, noindexScope, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import { icon } from "../lib/icons";
-import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
+import { searchForm, searchWidgetJs } from "../lib/search-form";
 // The account menu, two rows to two places (Hidde, 2026-10-10: "ik denk dat
 // je wel een dropdown wil met my trees and settings right?"): My trees, the
 // app's tab and leaf, and Settings, the app's gear. It had two rows to one page.
@@ -625,7 +625,7 @@ window.atPaintFace = function(inNow) {
 <SignInModal lang={lang} />
 <Fragment set:html={SIGNIN_JS} />
 <Fragment set:html={OVERLAY_SHEET_JS} />
-<Fragment set:html={SEARCH_WIDGET_JS} />
+<Fragment set:html={searchWidgetJs(lang)} />
 <script is:inline>
 // The phone search opens with the field ready to type in.
 (function() {

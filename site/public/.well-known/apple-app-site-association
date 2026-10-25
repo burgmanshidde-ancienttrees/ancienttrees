@@ -140,6 +140,10 @@
             "exclude": true
           },
           {
+            "/": "/places.json",
+            "exclude": true
+          },
+          {
             "/": "/build.txt",
             "exclude": true
           },

@@ -2,6 +2,9 @@
 // op home en hier en ik wil dat je die gelijk houdt"). Ported verbatim from
 // search_form()/SEARCH_WIDGET_JS, build_site.py:2087-2225. One shared
 // /search-index.json, so home and /explore cannot drift apart.
+import { ui } from "./i18n";
+import { icon } from "./icons";
+
 export function searchForm(ctx: string, inputId: string, formClass: string, withButton = false, placeholder = "Search a city or tree"): string {
   const ico = withButton
     ? '<button type="submit" class="search-ico" aria-label="Search">' +
@@ -18,9 +21,19 @@ export function searchForm(ctx: string, inputId: string, formClass: string, with
   );
 }
 
-export const SEARCH_WIDGET_JS = `
+/** The widget in the page's language. Only the empty-place answer is
+ * translated so far (2026-10-25); the older section heads are still English. */
+export function searchWidgetJs(lang = "en"): string {
+  const U = ui(lang);
+  const S = {
+    title: U.emptyPlaceTitle, ask: U.emptyPlaceAsk, add: U.addTree, onMap: U.placeOnMap,
+    nearest: U.nearestTree, kmFrom: U.kmFrom, none: U.searchNoMatch,
+    explore: lang === "en" ? "/explore" : `/${lang}/explore`,
+  };
+  return `
 <script>
 (function() {
+  var STR = ${JSON.stringify(S)};
   // Every .at-search on the page gets wired, so a second placement (a header
   // bar, the AllTrails pattern) needs no new script.
   Array.prototype.forEach.call(document.querySelectorAll('form.at-search'), setup);
@@ -31,6 +44,11 @@ export const SEARCH_WIDGET_JS = `
   var drop = form.querySelector('.ats-drop');
   var ctx = form.getAttribute('data-ctx');
   var IDX = null, loading = false, rows = [], active = -1;
+  // The towns we hold no tree for (places.json, GeoNames), fetched the first
+  // time a query matches nothing of ours. lastEmpty remembers what the visitor
+  // met, so a search that ends there is logged as a request: until 2026-10-25
+  // only a clicked result was ever recorded, and a dead end left no trace.
+  var PL = null, plLoading = false, lastEmpty = null;
   function norm(s) {
     s = s.toLowerCase();
     try { s = s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, ''); } catch (e) {}
@@ -97,7 +115,81 @@ export const SEARCH_WIDGET_JS = `
     return out;
   }
 
-  function hide() { drop.hidden = true; active = -1; }
+  function loadPlaces() {
+    if (PL || plLoading) return;
+    plLoading = true;
+    fetch('/places.json').then(function(r) { return r.json(); })
+      .then(function(j) { PL = j; if (document.activeElement === input) show(); })
+      .catch(function() { plLoading = false; });
+  }
+  function hide() {
+    if (lastEmpty) { at.track('search-' + lastEmpty.kind + '-' + ctx, lastEmpty.q.slice(0, 60)); lastEmpty = null; }
+    drop.hidden = true; active = -1;
+  }
+  function fill(s, v) { return s.replace(/\\{(\\w+)\\}/g, function(m, k) { return v[k] !== undefined ? v[k] : m; }); }
+  // One list of our own rows under their heads; lastKind lets a caller
+  // continue a section it already opened.
+  function listHtml(res, lastKind) {
+    return res.map(function(r) {
+      var name, sec, head = '';
+      if (r.kind === 'country') {
+        name = r.it.country;
+        sec = r.it.cities + ' cities &middot; ' + r.it.n + ' trees';
+      } else if (r.kind === 'city') {
+        name = r.it.city;
+        sec = r.it.n + (r.it.n === 1 ? ' tree' : ' trees') + ' &middot; ' + escT(r.it.country);
+      } else if (r.kind === 'species') {
+        name = r.it.n;
+        // The scientific name under the common one, in italics, which is how
+        // iNaturalist lays out a taxon row; it is also the only way a person
+        // who typed the Latin can see why this row answered.
+        sec = (r.it.lh ? r.it.lh + ' &middot; ' : '') + r.it.count + ' mapped';
+      } else {
+        name = r.it.n;
+        sec = escT(r.it.c);
+      }
+      var label = (r.kind === 'country' || r.kind === 'city') ? 'Places'
+                : r.kind === 'species' ? 'Species' : 'Trees';
+      if (label !== lastKind) { head = '<div class="ats-head">' + label + '</div>'; lastKind = label; }
+      return head + '<a class="ats-row" href="/' + r.it.u + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
+    }).join('');
+  }
+  // A town we hold no tree for: the grey card of an empty notes section (the
+  // same ask, the same look), the towns on the map, and the nearest tree
+  // (Hidde, 2026-10-25). Only while none of our places begins with the query; a typo that is no
+  // town either gets one plain line and no card.
+  function emptyAnswer(q, res) {
+    var hits = [];
+    for (var i = 0; i < PL.p.length && hits.length < 4; i++) {
+      var p = PL.p[i];
+      if (norm(p[0]).indexOf(q) === 0 || (p[1] && norm(p[1]).indexOf(q) === 0)) hits.push(p);
+    }
+    if (!hits.length) return '';
+    var top = hits[0], html = '';
+    // A town with one of our trees inside 5 km is not empty, whatever its name.
+    if (top[6] < 0 || top[6] >= 5) {
+      lastEmpty = {kind: 'empty', q: q};
+      html += '<div class="ats-card td-notes-empty">' +
+        '<span class="td-notes-empty-ic" aria-hidden="true">${icon("tree", "regular")}</span>' +
+        '<p class="td-notes-empty-t">' + escT(fill(STR.title, {place: top[0]})) + '</p>' +
+        '<p class="td-notes-empty-s">' + escT(STR.ask) + '</p>' +
+        '<div class="td-notes-empty-act"><a class="addphoto-btn quiet td-note-ask ats-go" data-ev="empty-place-add" href="/contribute?kind=tree&city=' +
+        encodeURIComponent(top[0]) + '">${icon("plus", "bold")}<span>' + escT(STR.add) + '</span></a></div></div>';
+    }
+    // Our places that only contain the letters (Oberndorf for "bern") go: the
+    // visitor meant the town. Species and trees follow the nearest tree.
+    var ourOther = res.filter(function(r) { return r.kind !== 'city' && r.kind !== 'country'; });
+    html += '<div class="ats-head">Places</div>' + hits.map(function(p) {
+      return row(p[0], escT(PL.k[p[2]]) + ' &middot; ' + escT(STR.onMap),
+                 STR.explore + '#@' + p[3] + ',' + p[4] + ',' + encodeURIComponent(p[0]));
+    }).join('');
+    if (top[5] >= 0) {
+      var t = PL.t[top[5]];
+      html += '<div class="ats-head">' + escT(STR.nearest) + '</div>' +
+              row(t[0], escT(fill(STR.kmFrom, {km: top[6], place: top[0]})) + ' &middot; ' + escT(t[1]), '/' + t[2]);
+    }
+    return html + listHtml(ourOther, null);
+  }
 
   // The zero-query state: what the dropdown shows the moment the field is
   // focused and still empty (Hidde, 2026-08-14, asking whether it is
@@ -153,34 +245,33 @@ export const SEARCH_WIDGET_JS = `
     if (!IDX) return;
     var res = results(q);
     active = -1;
-    if (!res.length) {
-      drop.innerHTML = '<div class="ats-empty">Not mapped yet. <a href="/contribute">Be the first to map it</a>.</div>';
-    } else {
-      var lastKind = null;
-      drop.innerHTML = res.map(function(r) {
-        var name, sec, head = '';
-        if (r.kind === 'country') {
-          name = r.it.country;
-          sec = r.it.cities + ' cities &middot; ' + r.it.n + ' trees';
-        } else if (r.kind === 'city') {
-          name = r.it.city;
-          sec = r.it.n + (r.it.n === 1 ? ' tree' : ' trees') + ' &middot; ' + escT(r.it.country);
-        } else if (r.kind === 'species') {
-          name = r.it.n;
-          // The scientific name under the common one, in italics, which is how
-          // iNaturalist lays out a taxon row; it is also the only way a person
-          // who typed the Latin can see why this row answered.
-          sec = (r.it.lh ? r.it.lh + ' &middot; ' : '') + r.it.count + ' mapped';
-        } else {
-          name = r.it.n;
-          sec = escT(r.it.c);
-        }
-        var label = (r.kind === 'country' || r.kind === 'city') ? 'Places'
-                  : r.kind === 'species' ? 'Species' : 'Trees';
-        if (label !== lastKind) { head = '<div class="ats-head">' + label + '</div>'; lastKind = label; }
-        return head + '<a class="ats-row" href="/' + r.it.u + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
-      }).join('');
+    lastEmpty = null;
+    // The empty-place answer comes up when none of OUR places begins with what
+    // was typed: "Bern" finds Oberndorf and a linden in Vilnius by their
+    // letters, but the visitor meant the town.
+    var strong = res.some(function(r) {
+      if (r.kind === 'country') return norm(r.it.country).indexOf(q) === 0;
+      if (r.kind !== 'city') return false;
+      // A name in another language counts only whole: Brno's "Bërno" begins
+      // with "bern", and nobody typing Bern means Brno.
+      return norm(r.it.city).indexOf(q) === 0 || (r.it.a && r.it.a.some(function(n) { return norm(n) === q; }));
+    });
+    var html = '';
+    if (!strong && q.length >= 3) {
+      loadPlaces();
+      if (PL) html = emptyAnswer(q, res);
     }
+    if (!html) {
+      if (!res.length) {
+        // Two letters match half the world's towns; wait for a third.
+        if (q.length < 3 || !PL) { drop.hidden = true; rows = []; return; }
+        lastEmpty = {kind: 'none', q: q};
+        html = '<div class="ats-empty">' + escT(fill(STR.none, {q: input.value.trim()})) + '</div>';
+      } else {
+        html = listHtml(res, null);
+      }
+    }
+    drop.innerHTML = html;
     drop.hidden = false;
     rows = Array.prototype.slice.call(drop.querySelectorAll('.ats-row'));
     rows.forEach(function(a) {
@@ -191,6 +282,7 @@ export const SEARCH_WIDGET_JS = `
     });
   }
   function go(row) {
+    lastEmpty = null;
     at.track('search-' + ctx, norm(input.value.trim()).slice(0, 60));
     window.location.href = row.getAttribute('href');
   }
@@ -209,6 +301,14 @@ export const SEARCH_WIDGET_JS = `
     else if (e.key === 'Escape') { hide(); }
   });
   drop.addEventListener('mousedown', function(e) {
+    var b = e.target.closest ? e.target.closest('.ats-go') : null;
+    if (b) {
+      e.preventDefault();
+      at.track(b.getAttribute('data-ev'), norm(input.value.trim()).slice(0, 60));
+      lastEmpty = null;
+      window.location.href = b.getAttribute('href');
+      return;
+    }
     var a = e.target.closest ? e.target.closest('.ats-row') : null;
     if (a) { e.preventDefault(); go(a); }
   });
@@ -220,3 +320,6 @@ export const SEARCH_WIDGET_JS = `
 })();
 </script>
 `;
+}
+
+export const SEARCH_WIDGET_JS = searchWidgetJs("en");

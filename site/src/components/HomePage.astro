@@ -49,7 +49,7 @@ import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { FAVOURITE_CITIES } from "../lib/favourites";
 import { SPECIES_ICONS } from "../lib/species-icons";
-import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
+import { searchForm, searchWidgetJs } from "../lib/search-form";
 import { ui, languagesForCity, cityHref, hreflangSet, translatedLanguages } from "../lib/i18n";
 
 const u = ui(lang);
@@ -458,7 +458,7 @@ const collectedSpecies = [...lit, ...dim]
 const graph = SITE_SCHEMA;
 const headExtra = ldScript(graph);
 const heroImg = imgSrcset(HERO_PHOTO_URL, [1200, 2000, 2800], "100vw");
-const scripts = SEARCH_WIDGET_JS;
+const scripts = searchWidgetJs(lang);
 ---
 <Base title={title} description={description} canonical={canonical} lang={lang} ogType="website" headExtra={headExtra + "\n" + hreflangSet("/", homeVariants)}>
 <div class="home-hero poster">
