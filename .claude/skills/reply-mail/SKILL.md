@@ -50,7 +50,7 @@ Then `python3 scripts/mailcheck.py <draft>` and rewrite until clean. For pitch c
 
 ## 6. Show it
 
-Write the draft to drafts/reply-<name>-<date>.md: notes for Hidde above a `---` line, the mail body below it (mailcheck reads only the body). In chat, quote the person's latest mail in full, translated to English unless it is English or Dutch, then the draft. His "verstuur" on that text means send now: follow drafts/OUTREACH.md and scripts/outreach_send.py (approved_word set in the same step as the send, never before).
+Write the draft to drafts/reply-<name>-<date>.md: notes for Hidde above a `---` line, the mail body below it (mailcheck reads only the body). In chat, quote the person's latest mail in full, translated to English unless it is English or Dutch, then the draft. Hidde reads only Dutch and English (2026-10-25): a draft in any other language is shown with its full word-for-word English translation right beside it, never a summary, and the same translation sits in the draft file's notes. His "verstuur" on that text means send now: follow drafts/OUTREACH.md and scripts/outreach_send.py (approved_word set in the same step as the send, never before).
 
 ## 7. When he corrects a draft
 
