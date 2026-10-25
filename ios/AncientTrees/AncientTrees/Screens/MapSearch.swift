@@ -100,7 +100,8 @@ struct MapSearch: View {
     /// Bërno, and Oberndorf through the middle of a word), a town Apple knows
     /// by EXACTLY the name typed still gets its card: somebody who typed a
     /// town's whole name was asking for that town (Hidde's mockup, 2026-10-25,
-    /// is Bern). Our partial matches stay listed under it, unchanged.
+    /// is Bern). Our passing place matches are then dropped; our species and
+    /// trees stay listed under it.
     private var cardTown: RealPlace? {
         guard answered == query, !realPlaces.isEmpty else { return nil }
         let r = ranked
@@ -217,7 +218,7 @@ struct MapSearch: View {
         let asksForPlaces = lane == .top || lane == .places
         let town = asksForPlaces ? cardTown : nil
         if let town {
-            notMappedYet(town, ourPlaces: r.places)
+            notMappedYet(town)
         } else if ours && asksForPlaces && answered == query {
             // The 16 every row on this screen starts at.
             Text("Nothing matches “\(query)”. Check the spelling, or try a town nearby.")
@@ -250,9 +251,10 @@ struct MapSearch: View {
         }
     }
 
-    /// The grey card for the town, Apple's towns (that one first) with any
-    /// of our own places that also matched, and the nearest tree.
-    @ViewBuilder private func notMappedYet(_ top: RealPlace, ourPlaces: [Place]) -> some View {
+    /// The grey card for the town, Apple's towns (that one first), and the
+    /// nearest tree. Our own places that matched only in passing (Brno via
+    /// "Bërno") are left out, as on the website; species and trees follow.
+    @ViewBuilder private func notMappedYet(_ top: RealPlace) -> some View {
         EmptyPlaceCard(place: top.name)
             .padding(.horizontal, 16).padding(.top, 18)
         head("Places")
@@ -264,9 +266,6 @@ struct MapSearch: View {
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("empty-place-town")
-        }
-        ForEach(ourPlaces, id: \.id) { p in
-            row(p.name, p.sub, p.icon) { onPick(p.hit); dismiss() }
         }
         if let n = EmptyPlace.nearest(in: catalogue, lat: top.lat, lng: top.lng) {
             head("Nearest tree")
