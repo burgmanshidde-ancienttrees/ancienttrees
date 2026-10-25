@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25 night run, nineteenth attempt (nothing shipped)
+
+Nothing changed in the product. No claims, sightings inbox empty, the 3 READY leads still cannot ship under paused own supply. Community lane re-run: harvest found 0 new comments, the 2 open items (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant) already carry drafts, preview refreshed and pushed. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md. iOS run 40144403493 for the pill fix was still in progress.
+
 ## 2026-10-24 night run, eighteenth attempt (nothing shipped)
 
 No claims standing, sightings inbox empty, 3 READY leads (Oxford x2, Madrid) have no approved photograph and own supply is paused. The iOS run for the pill fix (40144403493) is in progress; the earlier failure was the appfit issue it fixes. The Reddit batch still waits on Hidde, so no mail batch started.
