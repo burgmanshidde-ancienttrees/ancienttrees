@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25 night run, twentieth attempt (nothing shipped)
+
+Nothing changed in the product. Inbox empty, harvest 0 new comments, watch 0 new threads; the 2 open Reddit items are drafted, preview rebuilt and pushed, so no mail batch started. health.py exit 1 is only the push-skipped smoke test. Own supply paused, 3 READY leads photo-less, staged cities walled. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
+
 ## 2026-10-25 night run, nineteenth attempt (nothing shipped)
 
 Nothing changed in the product. No claims, sightings inbox empty, the 3 READY leads still cannot ship under paused own supply. Community lane re-run: harvest found 0 new comments, the 2 open items (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant) already carry drafts, preview refreshed and pushed. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md. iOS run 40144403493 for the pill fix was still in progress.
