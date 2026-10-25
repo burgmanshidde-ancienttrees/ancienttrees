@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25 night run, twenty-seventh attempt (nothing shipped)
+
+No claims standing, inbox empty. READY leads are 3 of our own (Oxford x2, Madrid x1), none with a photograph, so own supply pause and ADD_NEEDS_PHOTO keep them from going live; no write pass dispatched. health.py's "Smoke test / Build and deploy skipped" is a false alarm: log-only pushes skip by path filter, the last scheduled deploy (04:55) succeeded.
+
 ## 2026-10-25 night run, twenty-sixth attempt (nothing shipped)
 
 Nothing changed in the product. No claims, inbox empty, same 3 photo-less READY leads under paused own supply, both open Reddit items already drafted. health.py exit 1 is only the push-skipped smoke and build runs; the last scheduled deploy succeeded. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
