@@ -24,6 +24,22 @@ text and this repository is public, so nothing here writes them to disk.
 
 Shorter than MIN_WORDS is not a note worth a quote ("big tree!"). --done keeps
 only the row id and a reason in data/reader-words-done.json, never the words.
+
+WORDS THAT CAME BY MAIL (Hidde, 2026-10-25, on Luisa Carta's two Sardinian
+oaks: "shouldnt we use her literal words so that google loves us more than
+ai?"). Everything above came from the app and the form; a contribution that
+arrived by mail had its facts retold in our story and its own sentences lost.
+So the session that handles such a mail copies the sender's OWN sentences
+about a tree into data/outreach-words.json, which is private (gitignored,
+synced by private_store.py like the rest of outreach) because they are a
+person's words and this repository is public:
+
+  {"words": [{"id": "mail-2026-10-13-carta-1", "tree_id": "sar_006",
+              "date": "2026-10-13", "lang": "it", "text": "..."}]}
+
+Only their own words: a passage they quote from a book is someone else's
+text and is named, never copied (Camarda in that same mail). They are listed
+here beside the app notes and go on the page the same way, quoted, unnamed.
 """
 import argparse
 import glob
@@ -40,6 +56,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MIN_WORDS = 12
 RUN = 6  # words in a row that count as a quote
 DONE = os.path.join(ROOT, "data", "reader-words-done.json")
+MAILED = os.path.join(ROOT, "data", "outreach-words.json")
 
 
 def done():
@@ -88,7 +105,17 @@ def notes(key):
         if tid:
             rows.append((tid, "submission " + (r.get("kind") or ""), r["id"],
                          (r.get("created_at") or "")[:10], r.get("why") or ""))
-    return [r for r in rows if len(words(r[4])) >= MIN_WORDS]
+    return [r for r in rows + mailed() if len(words(r[4])) >= MIN_WORDS]
+
+
+def mailed():
+    """Rows for words that came by mail, from the private data/outreach-words.json."""
+    try:
+        doc = json.load(open(MAILED, encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    return [(w["tree_id"], "mail", w["id"], w.get("date", ""), w.get("text") or "")
+            for w in doc.get("words", []) if w.get("tree_id")]
 
 
 _BY_PATH, _BY_SIGHTING = {}, {}
