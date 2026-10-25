@@ -255,6 +255,7 @@ def screens(sub):
         ("collect-place", ["-collect", "-collect-place"], 8),
         ("collect-identify", ["-collect", "-collect-identify"], 8),
         ("collect-ticked", ["-collect", "-collect-ticked"], 8),
+        ("collect-voted", ["-collect", "-collect-ticked", "-collect-voted"], 8),
         ("collect-compare", ["-collect", "-collect-compare"], 8),
         # THE FORM, added 2026-09-11 with the trunk-size row and overdue by
         # three days: this is the screen carrying every field a contributor

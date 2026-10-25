@@ -449,40 +449,37 @@ struct WorthTheTripAsk: View {
     @Environment(MyVotes.self) private var votes
     @State private var signingIn = false
 
-    private var vote: String { votes.vote(tree.id) }
+    private var vote: String { Launch.collectVoted ? "up" : votes.vote(tree.id) }
 
     var body: some View {
-        Group {
-            if vote.isEmpty {
-                VStack(alignment: centred ? .center : .leading, spacing: 10) {
-                    Text("Was it worth the trip?")
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(Brand.ink)
-                    HStack(spacing: 10) {
-                        thumb("hand.thumbsup", "up", "Yes, worth the trip")
-                        thumb("hand.thumbsdown", "down", "No, not worth the trip")
-                    }
-                }
-                .accessibilityIdentifier("worth-the-trip")
-            } else {
-                // Acknowledged where it happened rather than by a toast, which
-                // leaves no trace for somebody coming back (CONVENTIONS.md,
-                // landing after you have added something). No thanks-for-the-
-                // negative variant: the same line either way, because a
-                // different one would read as us minding.
-                Text("Noted, that helps.")
-                    .font(.footnote)
-                    .foregroundStyle(Brand.inkSoft)
+        // THE THUMBS STAY, THE CHOSEN ONE FILLED (2026-10-25). Google Play's
+        // in-app review card and Google Maps' review screen both keep the
+        // rating on screen with the chosen stars filled and open the text
+        // field under it; the filled thumb is the acknowledgement, so the
+        // "Noted, that helps." line went. The note field itself is drawn by
+        // the step that owns the primary button (CollectSheet's tickedState).
+        VStack(alignment: centred ? .center : .leading, spacing: 10) {
+            Text("Was it worth the trip?")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Brand.ink)
+            HStack(spacing: 10) {
+                thumb("hand.thumbsup", "up", "Yes, worth the trip")
+                thumb("hand.thumbsdown", "down", "No, not worth the trip")
             }
         }
+        .accessibilityIdentifier("worth-the-trip")
         .sheet(isPresented: $signingIn) { SignInSheet(reason: .feedback, localCount: 0) }
     }
 
     private func thumb(_ icon: String, _ value: String, _ label: String) -> some View {
-        Button {
+        let chosen = vote == value
+        return Button {
             guard account.isSignedIn else { signingIn = true; return }
+            guard !chosen else { return }
+            // A change of mind is a new answer, the last row wins (MyVotes.load).
+            let before = vote
             votes.setVote(tree.id, value)
-            if value == "up" { counts.record(tree.id, from: "", to: "up") }
+            counts.record(tree.id, from: before, to: value == "up" ? "up" : "")
             let why = value == "up" ? "worth it" : "not worth it"
             Task {
                 _ = await Submission.sendFeedback(city: tree.city,
@@ -491,14 +488,15 @@ struct WorthTheTripAsk: View {
                                                   token: await account.freshToken())
             }
         } label: {
-            Image(systemName: icon)
+            Image(systemName: chosen ? icon + ".fill" : icon)
                 .font(.system(size: 20, weight: .semibold))
                 .frame(width: 64, height: 44)
-                .background(Brand.surfaceMuted, in: .capsule)
-                .foregroundStyle(Brand.ink)
+                .background(chosen ? Brand.moss.opacity(0.12) : Brand.surfaceMuted, in: .capsule)
+                .foregroundStyle(chosen ? Brand.moss : Brand.ink)
         }
         .buttonStyle(.plain)
         .accessibilityLabel(label)
+        .accessibilityAddTraits(chosen ? .isSelected : [])
         .accessibilityIdentifier("worth-the-trip-\(value)")
     }
 }

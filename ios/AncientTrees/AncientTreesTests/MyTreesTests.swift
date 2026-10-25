@@ -587,36 +587,6 @@ struct WhenPermissionIsRefused {
         #expect(CollectSheet.agePhrase("  ") == nil)
     }
 
-    /// A first that is actually a first, and nothing where there is none.
-    ///
-    /// The rule the references settled (CONVENTIONS.md 2026-09-07): the first
-    /// photograph of a tree is geocaching's FTF and is marked; "first in your
-    /// own collection" is Strava's segment case and is not, because every tick
-    /// is one; first of a KIND is Merlin's life list and is.
-    @Test func onlyARealFirstIsMarked() {
-        let noPhoto = Self.feedTree(id: "nra_010", lat: 34.68, lng: 135.84,
-                                    precision: "confirmed")
-        let ticked = ["nra_002": Saved.Entry(treeId: "nra_002", visitedAt: Date(),
-                                             savedAt: Date(), favourite: false)]
-        #expect(CollectSheet.firstOf(tree: noPhoto, visited: ticked, trees: [noPhoto])
-                == "Nobody had photographed this one. Yours is the first.")
-
-        // A tree that already has a photograph, in a city where they have
-        // already ticked one off: nothing to mark.
-        let shot = Self.feedTree(id: "nra_003", lat: 34.68, lng: 135.84,
-                                 precision: "confirmed", photo: true)
-        let sameCity = ["nra_002": Saved.Entry(treeId: "nra_002", visitedAt: Date(),
-                                               savedAt: Date(), favourite: false)]
-        let other = Self.feedTree(id: "nra_002", lat: 34.68, lng: 135.84,
-                                  precision: "confirmed", photo: true)
-        #expect(CollectSheet.firstOf(tree: shot, visited: sameCity,
-                                     trees: [shot, other]) == nil,
-                "an ordinary tick was dressed up as a milestone")
-
-        // Nothing ticked anywhere yet.
-        #expect(CollectSheet.firstOf(tree: shot, visited: [:], trees: [shot])
-                == "The first tree in your collection.")
-    }
 
     /// Every simulator, and any iPad without a rear camera.
     @Test func noCameraAtAllIsTheLibraryWhateverTheAnswerWas() {

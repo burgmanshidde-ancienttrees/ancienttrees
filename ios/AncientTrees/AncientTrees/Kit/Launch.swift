@@ -100,6 +100,9 @@ public enum Launch {
     /// as the two above: it comes after a camera a simulator does not have.
     public static let collectTicked = ProcessInfo.processInfo.arguments.contains("-collect-ticked")
 
+    /// The payoff after the thumb, where the note is offered (2026-10-25).
+    public static let collectVoted = ProcessInfo.processInfo.arguments.contains("-collect-voted")
+
     /// The "is this the one" comparison, added 2026-09-07 on Hidde's sketch of
     /// the flow. Same reason as its three neighbours: it lives behind a camera.
     public static let collectCompare = ProcessInfo.processInfo.arguments.contains("-collect-compare")

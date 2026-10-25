@@ -87,7 +87,14 @@ struct CollectSheet: View {
     @Environment(Nudge.self) private var nudge
     @Environment(ReviewPrompt.self) private var reviewPrompt
     @Environment(Navigator.self) private var navigator
+    @Environment(MyVotes.self) private var votes
     @Environment(\.dismiss) private var dismiss
+    /// The note offered under the thumb on the payoff (2026-10-25).
+    @State private var notes = TreeNotes()
+    @State private var noteText = ""
+    @State private var noteSending = false
+    @State private var noteFailed = false
+    @FocusState private var noteFocused: Bool
 
     /// Where the flow is. One enum rather than five booleans, because the old
     /// sheet grew nine of them and two combinations were unreachable.
@@ -1351,10 +1358,8 @@ struct CollectSheet: View {
             if pinReported {
                 sheetFootnote("Thank you for the location. We will check it and move our pin.")
             }
-            if newFind, let first = Self.firstOf(tree: t, visited: saved.entries,
-                                                 trees: catalogue.trees) {
-                milestone(first).padding(.top, 12)
-            }
+            // No milestone line ("first tree in your collection", "first
+            // photo"): Hidde, 2026-10-25, "leave such a line out. less is more".
             // THE ONE MOMENT THIS QUESTION CAN BE ASKED HONESTLY. Somebody is
             // standing in front of a tree we already map, having just found
             // it, which is the only state in the whole product where "was it
@@ -1363,64 +1368,33 @@ struct CollectSheet: View {
             // screen is a control nobody sees.
             WorthTheTripAsk(tree: t, centred: true)
                 .padding(.top, 20)
+            // THE NOTE, AN OPEN FIELD UNDER THE THUMB (Hidde, 2026-10-25: "an
+            // open space you tick and type in"; CONVENTIONS.md "A note under
+            // the thumb on the payoff"). Google Play's in-app review card opens
+            // "(Optional) Tell others what you think" under the stars the
+            // moment one is tapped, in the same card, and its Submit sends it;
+            // Google Maps puts "Share details of your own experience" straight
+            // under the stars. So: after a thumb, the field appears here with
+            // the tree page's own placeholder, and Done becomes Add note once
+            // there is text. Optional: an empty field and Done end the screen.
+            if !(Launch.collectVoted ? "up" : votes.vote(t.id)).isEmpty, notes.mine == nil || noteSending {
+                noteField
+                    .padding(.top, 16)
+                    .transition(.opacity)
+            }
+            Color.clear.frame(height: 0)
+                // Your own note on this tree, so a second visit does not offer
+                // a blank field that would overwrite it.
+                .task(id: t.id) { await notes.load(tree: t.id, near: [], token: await account.freshToken()) }
             // No "I am not sure it was this one" (Hidde, 2026-10-14): it was
             // the escape from a silent match (Nara), and since the same day you
             // always pick the tree yourself a tap before this sheet.
-            doneButton
+            payoffButton(t)
             .padding(.top, 22)
             // No footnote (Hidde, 2026-10-14: "it is in your trees now with
             // photograph clutters, less is more"): the title already says it.
             // What we may do with a photograph lives in the terms (2026-10-12).
         }
-    }
-
-    /// The one line that says this was a FIRST, or nothing at all.
-    ///
-    /// Two references, and they disagree on purpose (CONVENTIONS.md, 2026-09-07).
-    /// Geocaching's First To Find is the most popular unofficial statistic in
-    /// the hobby: people travel for it and cache owners leave a gift for
-    /// whoever signs first. Ours is rarer and leaves more behind, because
-    /// around two thousand of our trees have never been photographed by
-    /// anybody and the picture stays there for everyone who comes after.
-    ///
-    /// Strava is the other half. It gives no personal record for the FIRST
-    /// time you ride a segment, because a first has nothing to compare against
-    /// and marking it makes the mark meaningless. That decides the case Hidde
-    /// raised: "first in your own trees" is every tick you will ever make, so
-    /// it is not an event. What IS one is the first of a KIND, which is
-    /// Merlin's life list: your first tree at all, your first in this city.
-    ///
-    /// Ordered hardest-won first, and only one ever shows. "Nobody had
-    /// photographed this" is a claim about what we had published when the app
-    /// last read the feed, which is why it is past tense.
-    static func firstOf(tree t: Tree, visited: [String: Saved.Entry],
-                        trees: [Tree]) -> String? {
-        let ticked = visited.filter { $0.value.visitedAt != nil }.keys
-        if t.photo == nil {
-            return "Nobody had photographed this one. Yours is the first."
-        }
-        if ticked.filter({ $0 != t.id }).isEmpty {
-            return "The first tree in your collection."
-        }
-        let byId = Dictionary(uniqueKeysWithValues: trees.map { ($0.id, $0) })
-        let elsewhereInCity = ticked.contains { $0 != t.id && byId[$0]?.citySlug == t.citySlug }
-        if !elsewhereInCity && !t.city.isEmpty {
-            return "Your first in \(t.city)."
-        }
-        return nil
-    }
-
-    /// A first is marked rather than narrated: one row, the project's own
-    /// green, and no exclamation mark doing the work a fact should do.
-    /// Centred under the subtitle, in the sheet's own column, no box (Hidde,
-    /// 2026-10-14: "doesnt seem to be designed that well", "less is more"). It
-    /// was a left-aligned card in a bold face on a centred sheet.
-    private func milestone(_ line: String) -> some View {
-        Label(line, systemImage: "rosette")
-            .font(.system(size: 15, weight: .semibold))
-            .foregroundStyle(Brand.moss)
-            .multilineTextAlignment(.center)
-            .fixedSize(horizontal: false, vertical: true)
     }
 
     private func subtitle(_ t: Tree) -> String {
@@ -1504,6 +1478,62 @@ struct CollectSheet: View {
         Button("Done") { dismiss() }
             .buttonStyle(SheetButtonStyle(kind: .primary))
             .accessibilityIdentifier("collect-done")
+    }
+
+    private var noteTyped: String { noteText.trimmingCharacters(in: .whitespacesAndNewlines) }
+
+    /// The tree page's note field (TreeDetail.noteFields) at the payoff's
+    /// width: the same placeholder, the same "Shown as" line.
+    private var noteField: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            ZStack(alignment: .topLeading) {
+                TextEditor(text: $noteText)
+                    .font(.system(size: 16))
+                    .scrollContentBackground(.hidden)
+                    .focused($noteFocused)
+                    .frame(minHeight: 96)
+                    .padding(.horizontal, 10).padding(.vertical, 8)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+                    .accessibilityIdentifier("collect-note-field")
+                if noteText.isEmpty {
+                    Text("Leave a note: share something you'd like the next visitors to read about this tree")
+                        .font(.system(size: 16))
+                        .foregroundStyle(Brand.inkSoft.opacity(0.7))
+                        .padding(.horizontal, 15).padding(.vertical, 16)
+                        .allowsHitTesting(false)
+                }
+            }
+            if noteFailed {
+                Text("That did not go through. Try again in a moment.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// Done, or Add note once something is typed (Google Play's Submit).
+    private func payoffButton(_ t: Tree) -> some View {
+        Group {
+            if noteTyped.isEmpty {
+                doneButton
+            } else {
+                Button(noteSending ? "Adding…" : "Add note") { sendNote(t) }
+                    .buttonStyle(SheetButtonStyle(kind: .primary))
+                    .disabled(noteSending)
+                    .accessibilityIdentifier("collect-note-send")
+            }
+        }
+    }
+
+    private func sendNote(_ t: Tree) {
+        noteSending = true; noteFailed = false
+        Task {
+            guard let token = await account.freshToken() else { noteSending = false; noteFailed = true; return }
+            let ok = await notes.save(tree: t.id, body: String(noteTyped.prefix(1000)), token: token)
+            noteSending = false
+            if ok { dismiss() } else { noteFailed = true }
+        }
     }
 }
 

@@ -2111,8 +2111,8 @@ struct TreeDetail: View {
             Text("For example: \u{201C}Best seen from the north side around four, when the sun comes through.\u{201D} Or: \u{201C}There was a church on this square until 1755.\u{201D}")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
-            Text(named.map { "Shown as \($0) with today's date. Public right away." }
-                 ?? "Shown as \u{201C}A visitor\u{201D} with today's date. Public right away.")
+            Text(named.map { "Shown as \($0)." }
+                 ?? "Shown as \u{201C}A visitor\u{201D}.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
         }

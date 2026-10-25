@@ -28,6 +28,7 @@ Read it aloud as a stranger holding a phone and cut:
 - a pronoun whose noun is in another component ("Walk them" on a card that never said what "them" is).
 - abstract nouns where a verb would do, stacked "of the ... of the".
 - anything that talks about us: our data, our process, what we are building.
+- a footnote that narrates how the system behaves ("Public right away", "with today's date"). A benchmark sets the interaction, never the extra lines: a new control ships with a title, a placeholder and a button, and every further line needs a reason the screen breaks without it (Hidde, 2026-10-25: "less is more"; copycheck's reassurance tic).
 
 If a shorter sentence says the same thing, take the shorter one.
 

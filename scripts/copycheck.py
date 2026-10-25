@@ -41,6 +41,14 @@ APP = ROOT / "ios" / "AncientTrees" / "AncientTrees"
 STRING = re.compile(r'(?:Text|Label|Button)\(\s*"((?:[^"\\]|\\.){12,})"')
 
 TICS = [
+    # The reassurance footnote. Hidde, 2026-10-25, on "Shown with today's
+    # date. Public right away." under a note field: "please delete that copy -
+    # how can we make you stop producing unnecessary copy, less is more". A
+    # line that narrates how the system behaves (when it goes public, which
+    # date it carries) answers a question nobody asked; the field and the
+    # button already say what happens.
+    (re.compile(r"today's date|\b(?:public|visible|live)\b[^.]{0,20}\b(?:right away|straight away|immediately|at once)\b", re.I),
+     "reassurance line: narrates how the system behaves; delete it, less is more"),
     # The promise nobody may make. Hidde, 2026-08-26, deciding the free
     # launch: "kun je wel nergens beloftes in de app of ergens op het product
     # doen dat het altijd gratis blijft? Die belofte kunnen we gewoon niet
