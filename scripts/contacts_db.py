@@ -78,6 +78,8 @@ def norm(a):
 def guess_segment(c):
     t = (c.get("type") or "").lower()
     blob = " ".join(str(c.get(k) or "") for k in ("org", "email", "source_url", "outlet"))
+    if t == "archive":  # typed by the night run's sourcing (data/outreach-contacts-archive.json)
+        return "archive"
     if "press" in t or "(press" in blob or t in ("newspaper", "media", "broadcaster"):
         return "press"
     if t in ("garden", "arboretum", "park", "cemetery", "estate", "university"):

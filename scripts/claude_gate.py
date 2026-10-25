@@ -12,7 +12,7 @@ and only the Claude window asks first. It starts when:
     submission sent since the last knock, or a note on a tree nobody has read
     (rungs 1 and 3, which CLAUDE.md wants handled within hours);
   - or this knock falls in a fixed slot, 06:00 to 07:59 or 18:00 to 19:59
-    UTC, for Reddit, outreach and everything else on the ladder (rung 2's
+    UTC, for outreach mail and everything else on the ladder (rung 2's
     breakage included: a red deploy waits at most until the next slot, and the
     digest names it the same morning).
 
