@@ -1931,6 +1931,55 @@ def reader_trees_to_inspect(today):
     ])
 
 
+def ambassador_requests_section(today):
+    """Every open ambassador request, near the top, until the badge is granted.
+
+    Hidde, 2026-10-25, on learning that New York (10-20) and Buçaco (10-22)
+    had asked and never reached him: "ambassadeur aanvragen is ongeveer het
+    belangrijkste wat er is". The 10-19 cut silenced product_section, which
+    carried the only ambassador table, and the Today line called each one "1
+    feedback report". So each request is its own row here, with whether the
+    standard mail went out, for 30 days or until `ambassador.py --grant`.
+    The place only: DATA.md is public."""
+    import people
+    path = os.path.join(ROOT, "data", "ambassadors.json")
+    try:
+        doc = json.load(open(path, encoding="utf-8"))
+    except Exception:
+        doc = {}
+    granted = {(people.ref(a.get("user_id")) if a.get("user_id") else None, a.get("place_slug"))
+               for a in doc.get("ambassadors") or []}
+    mailed = {r.get("row"): r.get("date") for r in doc.get("requested") or []}
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not key:
+        return ""
+    since = (today - datetime.timedelta(days=30)).isoformat()
+    rows, _ = _supa("/rest/v1/submissions?select=id,created_at,city,page,user_id&kind=eq.ambassador"
+                    "&created_at=gte.%sT00:00:00&order=created_at.desc" % since, key)
+    open_ = []
+    for r in rows or []:
+        if r.get("id") in TEST_SUBMISSION_IDS or is_ours(r.get("user_id")):
+            continue
+        code = people.ref(r["user_id"]) if r.get("user_id") else None
+        slug = re.sub(r"[^a-z0-9]+", "-", (r.get("city") or "").lower()).strip("-")
+        if (code, slug) in granted:
+            continue
+        open_.append(r)
+    if not open_:
+        return ""
+    out = ["**Ambassador requests, open** (%d; each stays here until the badge is granted with "
+           "`python3 scripts/ambassador.py --grant`)" % len(open_), "",
+           "| Asked | Place | From | Our mail with the questions | Waiting on |", "|---|---|---|---|---|"]
+    for r in open_:
+        sent = mailed.get(r["id"])
+        out.append("| %s | **%s** | %s | %s | %s |" % (
+            r["created_at"][:10], r.get("city") or "?",
+            "the app" if r.get("page") == "app" else (r.get("page") or "web"),
+            "sent %s" % sent if sent else "not yet (next knock)",
+            "their answer, then your yes" if sent else "the mail"))
+    return "\n".join(out)
+
+
 def day_by_day_section(today):
     """The last seven days, one row a day, strangers only: the table Hidde
     keeps track by (2026-10-25: "ik mis het dagelijkse overzicht van de
@@ -3767,6 +3816,7 @@ def main():
         except Exception as e:
             _weekly(["%s: failed today (%s)." % (fn.__name__, str(e)[:90])])
 
+    block(ambassador_requests_section, today)
     block(day_by_day_section, today)
     block(reader_trees_to_inspect, today)
     block(waiting_for_you_section, today)

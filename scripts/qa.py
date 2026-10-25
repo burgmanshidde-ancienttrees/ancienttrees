@@ -665,6 +665,24 @@ def check_notes_are_read_before_they_are_marked_read():
     return out
 
 
+def check_ambassador_requests_reach_hidde():
+    """Every open ambassador request is its own row in the daily digest.
+
+    Hidde, 2026-10-25: "ambassadeur aanvragen is ongeveer het belangrijkste
+    wat er is", after New York (10-20) and Buçaco (10-22) never reached him:
+    the 10-19 cut had silenced the only block that named them. The block must
+    exist and run among the daily blocks, never quiet() or weekly. Removing
+    this check needs Hidde.
+    """
+    root = Path(__file__).resolve().parent.parent
+    digest = (root / "scripts/daily_digest.py").read_text(encoding="utf-8")
+    if "def ambassador_requests_section(" not in digest or \
+            "    block(ambassador_requests_section, today)" not in digest:
+        return ["scripts/daily_digest.py no longer shows open ambassador requests among the daily "
+                "blocks (Hidde, 2026-10-25: the most important thing there is)."]
+    return []
+
+
 def check_app_downloads_are_their_own_block():
     """App Store downloads is its OWN digest block, never appended to the app
     table's.
@@ -3306,6 +3324,7 @@ def main():
         check_the_digest_page_shows_readers_words,
         check_a_deleted_account_keeps_its_photographs,
         check_notes_are_read_before_they_are_marked_read,
+        check_ambassador_requests_reach_hidde,
         check_every_site_route_is_claimed_or_excluded,
         check_app_downloads_are_their_own_block,
         check_auth_corpus_agreement,
@@ -3502,6 +3521,7 @@ def main():
     failures += check_the_digest_page_shows_readers_words()
     failures += check_a_deleted_account_keeps_its_photographs()
     failures += check_notes_are_read_before_they_are_marked_read()
+    failures += check_ambassador_requests_reach_hidde()
     failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()
