@@ -5,7 +5,7 @@
   "intro": "Lisbon officially records almost every notable tree in the city: under a 2012 law it holds more classified trees of public interest than any other Portuguese municipality. Its oldest, half an hour away in Loures, is an olive dated at roughly 2,850 years; inside the city it is four hollow olives by a hilltop chapel in Alcântara. Its strangest is a rubber fig that escaped a cracked flowerpot in Mouraria and swallowed a street. Between them sit a bleeding dragon tree, a cypress mistaken for a cedar, and the parliament's private tipu. All but one are free to visit.",
   "meta_description": "Lisbon's oldest trees are classified by law. A nearly 2,850-year-old olive, a dragon tree nobody can age, and thirty-five more.",
   "question_answer": "The oldest tree on this list is the Ancient Olive of Santa Iria de Azoia, in Loures municipality, about half an hour from central Lisbon by train and on foot. Researchers at the University of Trás-os-Montes e Alto Douro dated it in 2011 to roughly 2,850 years old from the size of its trunk, over ten metres round at the base. It once held the title of Portugal's oldest tree; two other olives dated by the same method have since been shown to be older, so this one keeps its place as one of the country's oldest confirmed and independently certified trees rather than the record holder. It stands beside the ruins of Pirescoxe Castle in a small dedicated square. This page names it plainly as a day trip rather than folding it quietly into the city: the oldest tree actually standing inside Lisbon itself is one of the four olives outside the Capela de Santo Amaro in Alcântara, at around 457 years.",
-  "question_meta": "The Ancient Olive of Santa Iria de Azoia, roughly 2,850 years old, is the oldest tree on this list. Where it stands, and thirty-five more.",
+  "question_meta": "The Ancient Olive of Santa Iria de Azoia, roughly 2,850 years old, is the oldest tree on this list. Where it stands, and thirty-six more.",
   "question_context": "Lisbon's own classification records put the Santo Amaro olives, outside a hilltop chapel in Alcântara, at around 457 years, and until recently that was the oldest documented age on this list. It no longer is. The Ancient Olive of Santa Iria de Azoia, in neighbouring Loures municipality, was dated in 2011 by researchers at the University of Trás-os-Montes e Alto Douro using a dendrometric method built for trees whose rings have long since hollowed away, and it came out at roughly 2,850 years, a base ten metres round. Press called it Portugal's oldest tree at the time. That title has since passed to two other olives assessed by the same method, one in Abrantes near 3,350 years and one in Vidigueira over 3,700, so this one is no longer the record holder, only one of the country's oldest confirmed specimens. It stands beside the ruined Pirescoxe Castle, about half an hour from central Lisbon by train and on foot, which this page states plainly rather than quietly folding an out of town tree into the city list. The Santo Amaro olives remain the oldest tree actually standing inside Lisbon itself.",
   "faq": [
     {
@@ -1568,6 +1568,58 @@
         "date": "2026-10-21",
         "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
       }
+    },
+    {
+      "id": "lis_038",
+      "name": "The Pohutukawa of Campo Santana",
+      "species": "Pohutukawa (Metrosideros excelsa)",
+      "age_estimate": "about 130 years",
+      "age_min": 120,
+      "age_max": 140,
+      "age_basis": "source",
+      "location": {
+        "address": "Jardim Braamcamp Freire, Campo dos Mártires da Pátria, 1150-230 Lisboa",
+        "latitude": 38.72268,
+        "longitude": -9.13964,
+        "neighbourhood": "Campo Santana, Arroios"
+      },
+      "story": "Curtains of reddish roots hang from the limbs of this tree, thin as string where they start and matted into thick ropes where they gather, above the tables and the playground of the Jardim Braamcamp Freire on Campo Santana. It is a Pohutukawa, Metrosideros excelsa, a coastal tree of New Zealand's North Island, where it grows on sea cliffs and is known as the New Zealand Christmas tree for the crimson flowers it carries in December. Here the roots have no rock to hold and simply keep growing down. Portugal classified it in 2018 as part of a group of public interest that also takes in four bela-sombra trees, and the national register gives that group an age of 123 years at its 2016 survey, so these trees are around 130 years old now. The register counts two Pohutukawas in the garden. A reader photographed this one in October 2026, and a second reader told us what it was after we had first taken it for the weeping fig that stands about a hundred metres away on the same slope. Look for the leaning, many-stemmed trunk at the edge of the play area and stand under the roots.",
+      "how_to_recognise": "A leaning, many-stemmed trunk at the edge of the play area, with mats of reddish roots hanging from its limbs almost to the ground.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://pt.wikipedia.org/wiki/Jardim_Braamcamp_Freire"
+      ],
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11065609C (group: four bela-sombra, two Pohutukawa)",
+        "url": null
+      },
+      "found_by_reader": {
+        "sighting_id": "bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
+        "date": "2026-10-18"
+      },
+      "access": "Free, municipal garden, open daily",
+      "transport": "Metro Intendente (green line), about 8 min walk, or Metro Avenida (blue line), about 10 min",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/lis_038-the-pohutukawa-of-campo-santana.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "p_0ca44ad155ecd346c570f251",
+        "sighting_id": "bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
+        "note": "Photographed by a reader and sent through the app (2026-10-18); first published by mistake as the weeping fig lis_015, moved to its own tree on 2026-10-25 after a second reader identified it (Hidde looked: 'this photo looks way more interesting'). Daylight, colour, the leaning trunk and the hanging root mats fill the frame. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04)."
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
+        "date": "2026-10-18",
+        "note": "Where the reader stood to photograph this tree; the ICNF point for the group lies 30 m away."
+      },
+      "verify_notes": "2026-10-25: a reader's app photograph with GPS (sighting bf8d0df1, 2026-10-18), identified as Metrosideros excelsa by a second reader (submission 486) and confirmed by looking at it (reddish fibrous aerial roots, leathery leaves). ICNF register group AIP11065609C, classified D.R. 115, II Série, 18/06/2018, 'bela-sombra (4); Metrosidero (2)', age 123 at the 2016 survey, register point 30 m from the reader's fix. The age is the group's, so the page says around 130. Which of the two Pohutukawas is the bigger is not known; no girth or height in the register."
     }
   ],
   "hero_tree_id": "lis_017"

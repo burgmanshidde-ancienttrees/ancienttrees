@@ -59,6 +59,10 @@ Rungs 1 and 2 clear (no photographs or notes waiting, health.py all green). Rung
 
 - **Live on the phone website, every map**: the tapped tree's card has 16 on all four sides (it had 30 on top, 16 under), the list sheet steps away while a card is up and comes back when it closes (Airbnb's mobile map), and /explore's resting sheet shows the top of its first city, cut by the screen edge, so the list reads as something to pull up. Hidde approved the mockup first. Desktop and the app are unchanged (the app's tapped tree rises in its own sheet). CONVENTIONS.md "Tapping a pin on a map that has a list in a sheet" has the measurements.
 
+## 2026-10-25 session: the Pohutukawa of Campo Santana is live (lis_038)
+
+**In the product:** /lisbon gains its 37th tree, the Pohutukawa of Campo Santana, from a reader's photograph with GPS (the one that had wrongly led the weeping fig's page), on the ICNF register's classified group AIP11065609C (four bela-sombra and two Pohutukawa, 123 years at the 2016 survey). Hidde chose it: "this photo looks way more interesting". English and Portuguese; Lisbon's counts updated (title 37, "and thirty-six more" beside the olive). The reader who identified it (submissions 484 to 486) still has no reply; one goes out only on Hidde's word.
+
 ## 2026-10-25 session: the Campo Santana fig shows the fig again; every reader photograph reaches Hidde
 
 **In the product:** /lisbon, the Weeping Fig of Campo Santana (lis_015). A reader reported on 10-20 that its lead photograph showed a Pohutukawa and that the pin had moved to it; both photographs looked at, the reader was right. The fig's own photograph (smooth grey trunk, glossy leaves, the plaque) now leads, the Pohutukawa photograph is off the page, and the pin is back on the ICNF register point, 11 m from where the reader placed the fig on Google Maps, approximate. The Pohutukawa is a READY reader lead in data/leads/lisbon.json (the reader asked for it to be added); it ships with a short story. The reader (submissions 484 to 486) has no reply yet; a reply goes out only with Hidde's word.

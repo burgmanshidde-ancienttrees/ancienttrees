@@ -334,7 +334,7 @@
       "id": "lis_lead_pohutukawa_campo_santana",
       "name": "The Pohutukawa of Campo Santana",
       "species": "Pohutukawa (Metrosideros excelsa)",
-      "status": "READY",
+      "status": "PUBLISHED",
       "location": {
         "address": "Jardim Braamcamp Freire, Campo dos Mártires da Pátria, Lisboa",
         "latitude": 38.72268,
@@ -355,7 +355,8 @@
       },
       "source": "reader app photograph 2026-10-18 with GPS, species from a second reader's report 2026-10-20 (submission 486)",
       "reason": "A reader asked for it to be added (submission 486). Reader photo plus GPS: ships under the reader rule once a short story is written.",
-      "added": "2026-10-25"
+      "added": "2026-10-25",
+      "published_as": "lis_038"
     }
   ],
   "blocked": [
