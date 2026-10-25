@@ -2099,10 +2099,37 @@ def waiting_for_you_section(today):
                 continue
             seen.add(key)
             lines.append("- %s" % text[:220])
-    if not lines:
+    ready = outreach_ready_line()
+    if not lines and not ready:
         return ""
+    if ready:
+        lines = [ready] + lines[:8]
     return "**Waiting for you** (what the runs left for you since %s)\n\n%s" % (
-        since, "\n".join(lines[:8]))
+        since, "\n".join(lines[:9]))
+
+
+def outreach_ready_line():
+    """How many addresses are ready to mail, per group, archive first.
+
+    Hidde, 2026-10-25, once the night run started sourcing contacts: "laat me
+    maar in de daily digest weten hoeveel email adressen er klaar staan om te
+    mailen". Counts only, from the private data/outreach-db.json (pulled and
+    rebuilt by data-digest.yml before this runs); DATA.md is public, so never
+    an address or a name. Ready means an address never mailed and not on hold
+    (contacts_db.py)."""
+    try:
+        with open(os.path.join(ROOT, "data", "outreach-db.json"), encoding="utf-8") as f:
+            rows = list((json.load(f).get("contacts") or {}).values())
+    except (OSError, ValueError):
+        return ""
+    per = {}
+    for r in rows:
+        if r.get("status") == "ready" and not r.get("hold"):
+            per[r.get("segment") or "other"] = per.get(r.get("segment") or "other", 0) + 1
+    total = sum(per.values())
+    order = ["archive"] + sorted((s for s in per if s != "archive"), key=lambda s: -per[s])
+    parts = ["%s %d" % (s, per.get(s, 0)) for s in order if per.get(s) or s == "archive"]
+    return "- %d email addresses ready to mail (%s)" % (total, ", ".join(parts))
 
 
 def readers_gave_section(today):

@@ -73,6 +73,16 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: python3 scripts/tree_saves.py
 
+      # The private outreach database, so the digest can count the addresses
+      # ready to mail (Hidde, 2026-10-25). Counts only reach DATA.md.
+      - name: Pull and rebuild the outreach database
+        continue-on-error: true
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          python3 scripts/private_store.py pull
+          python3 scripts/contacts_db.py --build
+
       - name: Build the digest entry
         env:
           GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}

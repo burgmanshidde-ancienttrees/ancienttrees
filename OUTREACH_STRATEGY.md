@@ -53,6 +53,17 @@ Ambassadors are never asked for links or badges (Hidde, 2026-10-16). Nobody gets
 
 **Warm repliers (Hidde, 2026-10-20: "go do this"):** the people who answered a mail are the best link source we have, and a second mail to them carries the news that concerns them (their tree live, their correction on the page) and the one plain link ask. Two rules he set the same minute: **read his inbox first** (`outreach_inbox.py`), so a batch mail never lands in the middle of a conversation he is having ("check my inbox before jumping in with random conversation in between"); and **the organisations he is already deep in conversation with get no batch mail at all**: Quercus, the Woodland Trust, the Bomenstichtingen (Amsterdam, Den Haag), Baumkunde. Those threads are his.
 
+## Where the night run looks for the archive group (2026-10-25)
+
+Who holds photographs of our trunks, in the order they pay off. Start from the kept-set cities with the most photo-less trees (on 2026-10-25: Barcelona 42, Chicago 37, Vienna 36, Seville 35, Munich 33, Brussels 31, Portland 31, Krakow 30, Singapore 29, Arnhem 29, Valencia 29; 1,158 in 109 cities).
+
+1. **National and regional dendrology or tree societies**, the Dansk Dendrologisk Forening model (32 Copenhagen pages from one yes). Members photograph remarkable trees for their journals and excursions. Starting points to check: Bomenstichting and the Nederlandse Dendrologische Vereniging (NL), Belgische Dendrologie Belge (asked 10-25), Deutsche Dendrologische Gesellschaft, Österreichische Dendrologische Gesellschaft, Polskie Towarzystwo Dendrologiczne, Asociación Española de Arboricultura, the Tree Register and the Ancient Tree Forum (UK).
+2. **People who published their own photographs of a city's trees**: a book author (Ricard Llerins Bonet, Barcelona, asked 10-25), a monumental-tree blog, a local photographer whose site shows our trunks. Find them from the sources our pages already cite and from the city's newspaper survey.
+3. **Arboreta, botanical gardens, cemeteries and friends-of-the-park groups** whose grounds hold several of our trees and who keep a photo library (for example Hoyt Arboretum for Portland, the Morton Arboretum for Chicago).
+4. **City heritage-tree programmes** that photograph their listed trees (Portland's Heritage Trees, Singapore's NParks Heritage Trees). These file as `council`; ask for the photographs, not a link.
+
+Not worth the search: national registers and ministries (they do not answer photo asks), tourism offices (no own tree photos), Flickr accounts without a website of their own (no published address).
+
 ## Communities: Reddit and Facebook (decided 2026-10-16)
 
 Posts, not mails, and Hidde posts them himself from his own accounts; a session drafts. The full plan, the four example posts and the ask-the-admin messages are on his private page https://claude.ai/artifact/CX8HzNwrwuo9wyKXEAfig4 (local copies drafts/where-to-post.html and drafts/group-messages.md stay out of the repo: they name people).
