@@ -2127,9 +2127,26 @@ def outreach_ready_line():
         if r.get("status") == "ready" and not r.get("hold"):
             per[r.get("segment") or "other"] = per.get(r.get("segment") or "other", 0) + 1
     total = sum(per.values())
-    order = ["archive"] + sorted((s for s in per if s != "archive"), key=lambda s: -per[s])
-    parts = ["%s %d" % (s, per.get(s, 0)) for s in order if per.get(s) or s == "archive"]
-    return "- %d email addresses ready to mail (%s)" % (total, ", ".join(parts))
+    first = ["archive", "nature", "guide"]
+    order = first + sorted((s for s in per if s not in first), key=lambda s: -per[s])
+    parts = ["%s %d" % (s, per.get(s, 0)) for s in order if per.get(s) or s in first]
+    return "- %d email addresses ready to mail (%s); %s" % (
+        total, ", ".join(parts), sourcing_note(rows, datetime.date.today()))
+
+
+def sourcing_note(rows, today):
+    """What the night run's contact sourcing found (CLAUDE.md rung 4, Hidde
+    2026-10-25: "zorg dat het vanaf nu gebeurt"). Each record it writes
+    carries `found`; two days with none are said out loud, so a run that
+    stopped sourcing shows in the digest instead of going quiet."""
+    day1 = (today - datetime.timedelta(days=1)).isoformat()
+    day2 = (today - datetime.timedelta(days=2)).isoformat()
+    sourced = [r for r in rows if r.get("segment") in ("archive", "nature", "guide") and r.get("found")]
+    new1 = sum(1 for r in sourced if r["found"] >= day1)
+    new2 = sum(1 for r in sourced if r["found"] >= day2)
+    if new2 == 0:
+        return "**the night run found no new contacts in two days**"
+    return "%d found by the night run since %s" % (new1, day1)
 
 
 def readers_gave_section(today):

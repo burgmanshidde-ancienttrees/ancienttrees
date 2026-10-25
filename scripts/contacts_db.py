@@ -162,7 +162,7 @@ def build():
             continue
         r = db.setdefault(e, {"email": e, "found_in": []})
         for k in ("org", "name", "role", "type", "country", "city", "language", "source_url",
-                  "why_them", "our_page", "ask", "trees"):
+                  "why_them", "our_page", "ask", "trees", "found"):
             if c.get(k) and not r.get(k):
                 r[k] = c[k]
         if c["_from"] not in r["found_in"]:
