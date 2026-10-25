@@ -118,8 +118,8 @@
       "at": "2026-10-24T16:45:02+00:00"
     },
     "2026-10-25": {
-      "note": "Build and deploy / Smoke test show skipped on night-run commits (push-skip by design, no failed run); nothing to fix",
-      "at": "2026-10-25T12:35:59+00:00"
+      "note": "Smoke test skipped is the push-skip for claude[bot] log-only pushes; scheduled deploy succeeded 2.7h ago",
+      "at": "2026-10-25T16:51:31+00:00"
     }
   }
 }
