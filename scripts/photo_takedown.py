@@ -131,33 +131,6 @@ def account_exists(user_id):
     return people.exists(user_id)
 
 
-def unvendor(url):
-    """Drop a photograph's local copies and its manifest entry.
-
-    Nothing here is fatal. A file that is already gone is the state we want,
-    and a manifest entry with no file is caught by qa.py's own check on the
-    next build, which is a better place to hear about it than here.
-    """
-    removed = []
-    man_path = os.path.join(ROOT, "data/photo-manifest.json")
-    if not os.path.exists(man_path):
-        return removed
-    with open(man_path, encoding="utf-8") as fh:
-        man = json.load(fh)
-    rec = (man.get("photos") or {}).pop(url, None)
-    if not rec:
-        return removed
-    for width in rec.get("widths", []):
-        f = os.path.join(ROOT, "site/public/photos", f"{rec['base']}-{width}.jpg")
-        if os.path.exists(f):
-            os.remove(f)
-            removed.append(os.path.relpath(f, ROOT))
-    with open(man_path, "w", encoding="utf-8") as fh:
-        json.dump(man, fh, indent=2, ensure_ascii=False)
-        fh.write("\n")
-    return removed
-
-
 def take_down(item):
     """UNLINK one photograph from the account that sent it. The picture stays.
 

@@ -326,13 +326,13 @@ jobs:
             git push
           fi
 
-      - name: Take down a photograph whose account is gone
-        # /terms and /privacy promise that deleting an account removes what was
-        # published with it. The database keeps that promise by cascade; a
-        # PUBLISHED photograph is the one thing outside it, a copy in
-        # data/cities and a file in site/public/photos that no cascade reaches.
+      - name: Unlink a photograph whose account is gone (the picture stays)
+        # The photographs are ours: a published photograph STAYS when its
+        # account is deleted (Hidde, 2026-09-04 and 2026-10-04; /terms and
+        # /privacy say so). Only the link to the person goes: the account id
+        # in data/cities and data/leads, which no database cascade reaches.
         # This sweep asks whether each contributing account still exists and
-        # takes the photograph off when it does not. It costs one request per
+        # unlinks the photograph when it does not. It costs one request per
         # contributing account and exits in a line while there are none, which
         # is why it sits before the budget gate rather than inside the agent's
         # window: a promise in the terms people accept at sign-in should not
@@ -356,7 +356,7 @@ jobs:
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
             git add -A data/cities data/photo-manifest.json site/public/photos data/ambassadors.json
-            git commit -m "A reader deleted their account, so their photograph and badge came off"
+            git commit -m "A reader deleted their account: their photograph stays, unlinked; their badge came off"
             git push
           fi
 
