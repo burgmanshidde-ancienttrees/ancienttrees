@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25, thirty-fifth attempt (nothing shipped)
+
+Nothing changed in the product. Inbox empty, harvest 0 new comments, watch queued 0 threads, all 3 open Reddit items already drafted (batch waits for Hidde, so no mail batch). Same 3 photo-less READY leads under paused own supply, no write pass. health.py exit 1 is the push-skipped smoke test; the scheduled deploy succeeded.
+
 ## 2026-10-25, thirty-fourth attempt (nothing shipped)
 
 Nothing changed in the product. No claims, inbox empty, the same 3 photo-less READY leads wait under the supply pause. The skipped Build and deploy / Smoke test runs are push no-ops, answered in health.py. All 3 open Reddit items already have drafted replies and a batch waits for Hidde, so no mail batch was started.
