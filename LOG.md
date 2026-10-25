@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 night run, second attempt (same window): nothing to ship
+
+Claims: none standing. READY leads: 3 (Oxford 2, Madrid 1), all our own supply, so held by the supply pause (no reader found them, none carries an approved photograph). Rung 1 clear, health.py's only flag was a skipped smoke run on a log-only commit (build green, not a break). Rung 4: harvest, watch and open all 0; no mail batch because the archive batch still waits for Hidde. No trees added.
+
 ## 2026-10-25 night run (window from 18:40 UTC): nothing to ship
 
 Rungs 1 and 2 clear (no photographs or notes waiting, health.py all green). Rung 4: Reddit harvest and watch found 0 new comments and 0 threads, 0 open items; no new mail batch, because the archive batch of today (drafts/batch-archive-2026-10-25-preview.md) still waits for Hidde. Rung 5 is closed by the supply pause and enrich says nothing to do. Scouting: Stirling retried (one search, same answer: the council appeal routes to the Woodland Trust inventory, off limits), still stalled, `retried` set; next target is Baltimore. No trees added; no commands were refused. Local pre-push hooks were armed by prepare.py.
