@@ -665,6 +665,23 @@ def check_notes_are_read_before_they_are_marked_read():
     return out
 
 
+def check_every_reader_photo_reaches_hidde():
+    """The digest page counts and links every reader photograph he has not seen.
+
+    Hidde, 2026-10-25: "i want to see all photos even from existing trees ...
+    het is echt kwalijk als ik niet weet van ambassadeurs of fotos of trees".
+    The inspect page only ever showed photographs of new trees; 11 on existing
+    trees had gone by without him. scripts/reader_photos.py builds the page and
+    show_digest.py must run it. Removing this check needs Hidde.
+    """
+    root = Path(__file__).resolve().parent.parent
+    show = (root / "scripts/show_digest.py").read_text(encoding="utf-8")
+    if not (root / "scripts/reader_photos.py").exists() or '"reader_photos.py"' not in show:
+        return ["scripts/show_digest.py no longer shows every reader photograph Hidde has not seen "
+                "(scripts/reader_photos.py; Hidde, 2026-10-25)."]
+    return []
+
+
 def check_ambassador_requests_reach_hidde():
     """Every open ambassador request is its own row in the daily digest.
 
@@ -3325,6 +3342,7 @@ def main():
         check_a_deleted_account_keeps_its_photographs,
         check_notes_are_read_before_they_are_marked_read,
         check_ambassador_requests_reach_hidde,
+        check_every_reader_photo_reaches_hidde,
         check_every_site_route_is_claimed_or_excluded,
         check_app_downloads_are_their_own_block,
         check_auth_corpus_agreement,
@@ -3522,6 +3540,7 @@ def main():
     failures += check_a_deleted_account_keeps_its_photographs()
     failures += check_notes_are_read_before_they_are_marked_read()
     failures += check_ambassador_requests_reach_hidde()
+    failures += check_every_reader_photo_reaches_hidde()
     failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()

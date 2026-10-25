@@ -237,6 +237,18 @@ def main():
             md = extra + " (computed now)\n\n" + md if extra.endswith("none.") else \
                 extra.replace("\n\n", " (computed now)\n\n", 1) + "\n\n" + md
     md, shown, missing = readers_words(md, day)
+    # Every reader photograph he has not seen, new tree or existing (Hidde,
+    # 2026-10-25: "het is echt kwalijk als ik niet weet van ambassadeurs of
+    # fotos of trees"). reader_photos.py builds photos.html beside this page.
+    try:
+        import subprocess
+        out = subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "reader_photos.py")],
+                             capture_output=True, text=True, timeout=900).stdout
+        n = int(out.split("reader photos:")[1].split()[0])
+        md = ("**Readers' photographs you have not seen: %d.** [Open them all](http://127.0.0.1:8766/photos.html), "
+              "new trees and trees we already had." % n) + "\n\n" + md
+    except Exception as e:
+        md = "**Readers' photographs**: the photo page failed (%s)\n\n" % str(e)[:90] + md
     try:
         md = readers_in_full(day) + "\n\n" + md
     except Exception as e:

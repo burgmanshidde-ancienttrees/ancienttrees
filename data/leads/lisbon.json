@@ -329,6 +329,33 @@
       "note": "Not on the national protection order (the four classified Bensaúde trees are lis_022 to lis_025, all without a photograph). Park open daily 07:00 to 20:00. Needs: the exact spot in the park, a second source for 'oldest' (the municipal inventory or Lisboa Verde), and an open-licence photograph before it ships. A reader's photo settles pin and photo at once.",
       "status": "open",
       "added": "2026-10-22"
+    },
+    {
+      "id": "lis_lead_pohutukawa_campo_santana",
+      "name": "The Pohutukawa of Campo Santana",
+      "species": "Pohutukawa (Metrosideros excelsa)",
+      "status": "READY",
+      "location": {
+        "address": "Jardim Braamcamp Freire, Campo dos Mártires da Pátria, Lisboa",
+        "latitude": 38.72268,
+        "longitude": -9.13964,
+        "neighbourhood": "Campo Santana, Arroios"
+      },
+      "location_precision": "confirmed",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
+        "date": "2026-10-18"
+      },
+      "photo": {
+        "sighting_id": "bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
+        "source": "contributor",
+        "contributor_user_id": "p_0ca44ad155ecd346c570f251",
+        "note": "A reader's app photograph (2026-10-18), first published by mistake as the weeping fig lis_015; big tree with mats of reddish aerial roots over the playground, daylight, fills the frame."
+      },
+      "source": "reader app photograph 2026-10-18 with GPS, species from a second reader's report 2026-10-20 (submission 486)",
+      "reason": "A reader asked for it to be added (submission 486). Reader photo plus GPS: ships under the reader rule once a short story is written.",
+      "added": "2026-10-25"
     }
   ],
   "blocked": [
