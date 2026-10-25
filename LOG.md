@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 night run, third attempt (same window): Baltimore retried
+
+Same state as the two attempts before: no claims, 3 READY leads all held by the supply pause, rungs 1, 2 and 4 clear (health.py flags only a skipped smoke run on a log-only commit), enrich and recognise have nothing, the archive mail batch still waits for Hidde. Scouting: Baltimore retried, the ArcGIS item has no licence statement, so still stalled (only a written yes from Rec and Parks opens it), `retried` set. No trees added.
+
 ## 2026-10-25 night run, second attempt (same window): nothing to ship
 
 Claims: none standing. READY leads: 3 (Oxford 2, Madrid 1), all our own supply, so held by the supply pause (no reader found them, none carries an approved photograph). Rung 1 clear, health.py's only flag was a skipped smoke run on a log-only commit (build green, not a break). Rung 4: harvest, watch and open all 0; no mail batch because the archive batch still waits for Hidde. No trees added.
