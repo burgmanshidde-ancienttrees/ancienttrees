@@ -1177,6 +1177,8 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
 /* A town we hold no tree for: the empty notes card inside the dropdown and
    on the explore sheet (2026-10-25). */
 .ats-drop .ats-card { margin: 12px 1.1rem 6px; }
+/* The header bar sets nowrap for its own row; a sentence in the dropdown wraps. */
+.ats-drop .ats-empty, .ats-drop .ats-card { white-space: normal; }
 .ats-card a.addphoto-btn, .exc-ask a.addphoto-btn { text-decoration: none; }
 .exc-ask { margin: 0 0 12px; }
 /* Country page: the ranked-list form (Hidde, 2026-08-01, the PictureThis
