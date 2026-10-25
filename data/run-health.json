@@ -2,62 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-03T20:15:48+00:00",
-   "date": "2026-09-03",
-   "run_id": "33801201625",
-   "minutes": 73.2,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 470,
-   "denials": 55,
-   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(echo), Bash(for), Bash(iconv), Bash(ls), Bash(mkdir), Bash(npx), Bash(python3), Bash(rm), Bash(wc)",
-   "ended": "success",
-   "tokens": 34879533,
-   "claims_held": [],
-   "commits": 13,
-   "cities_touched": 9,
-   "cities": [
-    {
-     "city": "apeldoorn",
-     "trees": 1
-    },
-    {
-     "city": "atami",
-     "trees": 1
-    },
-    {
-     "city": "baarn",
-     "trees": 1
-    },
-    {
-     "city": "dordrecht",
-     "trees": 1
-    },
-    {
-     "city": "ichinohe",
-     "trees": 1
-    },
-    {
-     "city": "leeuwarden",
-     "trees": 1
-    },
-    {
-     "city": "nagi",
-     "trees": 1
-    },
-    {
-     "city": "odawara",
-     "trees": 1
-    },
-    {
-     "city": "ora",
-     "trees": 1
-    }
-   ],
-   "trees": 9,
-   "logged": true
-  },
-  {
    "started": "2026-09-03T23:32:27+00:00",
    "date": "2026-09-04",
    "run_id": "33818019771",
@@ -23346,6 +23290,25 @@
    "denials_source": "permission_denials: no names in the record",
    "ended": "success",
    "tokens": 446522,
+   "claims_held": [],
+   "commits": 4,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-25T14:03:44+00:00",
+   "date": "2026-10-25",
+   "run_id": "40200421679",
+   "minutes": 4.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 60,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 214611,
    "claims_held": [],
    "commits": 4,
    "cities_touched": 0,
