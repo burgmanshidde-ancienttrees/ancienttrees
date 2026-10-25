@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25, thirty-sixth attempt (nothing shipped)
+
+State re-checked. No claims standing. No photographs waiting. health.py's two "skipped" flags (Smoke test, Build and deploy) are push-triggered runs that skip by design; the dispatched deploy at 12:36 succeeded, so the site is not stuck. READY has 3 leads (oxford 2, madrid 1) but own supply is paused, so they wait. Community lane: 3 open Reddit items all already carry drafted replies, harvest found no new comments, preview rebuilt. For Hidde: 3 Reddit replies in drafts/batch-community-preview.md. No mail batch started because this batch waits for his word.
+
 ## 2026-10-25, thirty-fifth attempt (nothing shipped)
 
 Nothing changed in the product. Inbox empty, harvest 0 new comments, watch queued 0 threads, all 3 open Reddit items already drafted (batch waits for Hidde, so no mail batch). Same 3 photo-less READY leads under paused own supply, no write pass. health.py exit 1 is the push-skipped smoke test; the scheduled deploy succeeded.
