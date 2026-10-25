@@ -10,6 +10,12 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-10-25 night run, rung 4 (communities)
+
+No claims standing. The 3 READY leads (Oxford x2, Madrid) are our own trees without an approved photograph, so they wait under the supply pause. Health: the skipped deploys are push no-ops, the scheduled build succeeded. Reddit: harvested, watched (1 new thread queued), 3 replies drafted, previewed and pushed to the private store.
+
+For Hidde: 3 Reddit replies in drafts/batch-community-preview.md (r/lisbon Santa Iria photo permission, two r/marijuanaenthusiasts redwood threads).
 <!-- archive-index -->
 ## 2026-10-25, thirty-third attempt (nothing shipped)
 
