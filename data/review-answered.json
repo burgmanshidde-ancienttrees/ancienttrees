@@ -118,8 +118,8 @@
       "at": "2026-10-24T16:45:02+00:00"
     },
     "2026-10-25": {
-      "note": "Smoke test skips are by design (smoke.yml line 36: not on claude[bot] pushes); last scheduled run 10-24 18:54 and last person push 22:37 succeeded. Build and deploy green.",
-      "at": "2026-10-25T08:54:45+00:00"
+      "note": "Build and deploy / Smoke test show skipped on night-run commits (push-skip by design, no failed run); nothing to fix",
+      "at": "2026-10-25T12:35:59+00:00"
     }
   }
 }
