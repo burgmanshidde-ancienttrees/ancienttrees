@@ -43,6 +43,10 @@ Rungs 1 and 2 clear (no photographs or notes waiting, health.py all green). Rung
 
 - **Live on the phone website, every map**: the tapped tree's card has 16 on all four sides (it had 30 on top, 16 under), the list sheet steps away while a card is up and comes back when it closes (Airbnb's mobile map), and /explore's resting sheet shows the top of its first city, cut by the screen edge, so the list reads as something to pull up. Hidde approved the mockup first. Desktop and the app are unchanged (the app's tapped tree rises in its own sheet). CONVENTIONS.md "Tapping a pin on a map that has a list in a sheet" has the measurements.
 
+## 2026-10-25 session: personal follow-up to the three ambassador requests sent
+
+Hidde's own words, grammar only, sent on his "verstuur alle drie" (batch ambassador-personal-2026-10-25, logged in outreach-sent.json): New York (EN), Buçaco and Porto (PT). They thank them again and ask what they think of the list and the product. Open for a run: the Campo Santana weeping fig (lis_015) has a reader's 10-20 report, unanswered, that its photograph shows a Pohutukawa (Metrosideros excelsa) where the pin now stands and that the fig stood at the old spot (submissions 484 to 486, with a Google Maps link).
+
 ## 2026-10-25 session: notes are read by the run, and Claude starts only when there is work
 
 **Notes on trees:** until today the knock marked every new note read into the Actions log, so no run ever read one. Now the knock only counts them (`tree_notes.py --waiting`); the run reads them at rung 1 (`--new`, `--hide` for the closed list, `--seen`, which marks only what `--new` printed). Guarded by qa's `check_notes_are_read_before_they_are_marked_read()`.
