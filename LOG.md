@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-25 session: the first archive batch, and Reddit drafts stop blocking mail
+
+- **Outreach**: the first `archive` batch is drafted, three photo asks: Belgische Dendrologie Belge for Brussels (31 of 35 trees without a photo), Dr. Andreas Gröger for Munich (33 of 63), and Ricard Llerins Bonet, who self-published two Barcelona tree books with his own photos (42 of 56). Each names last week's Wilder article. Mailcheck clean, every URL answered 200. For Hidde: 3 archive mails in drafts/batch-archive-2026-10-25-preview.md
+- **Rule**: Hidde had already answered the 3 Reddit items himself; all closed with `community.py --done`. A drafted Reddit reply no longer counts as a batch waiting for his word (CLAUDE.md rung 4), so the night run stops holding mail for it. Two days of mail were held for nothing.
+- Left out of the batch: Peter Kálnai (Seville). Hidde's 10-15 mail promised to tell him about the WiFi crash, and drafts/reply-peter-wifi-crash.md is still unsent. Not his: the January felling in Seville's Jardines de las Delicias was an ombú (ID 236), not our Senegal date palm sev_034.
+
 ## 2026-10-25 session: a note under the thumb after collecting a tree
 
 - **In the next app build**: after "Was it worth the trip?", the chosen thumb stays filled and an open box appears under it, "Leave a note: share something you'd like the next visitors to read about this tree". Done becomes Add note once something is typed; empty, Done just closes. The "first tree in your collection / first photo" line is gone. Benchmarked on Google Play's in-app review card and Google Maps' review screen (CONVENTIONS.md "A note under the thumb on the payoff"). Hidde approved each render.
