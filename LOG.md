@@ -10,6 +10,10 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-10-26 09:35 run (short window, rung 4)
+
+No reader photographs or notes, health.py clear. The 10-25 archive batch still waits for Hidde's "verstuur", so no new mail batch. Sourced archive contacts: the Deutsche Dendrologische Gesellschaft (own Bildarchiv and Champion Trees gallery, Berlin/Munich trees) and the Morton Arboretum library (Chicago, a weak tie); recorded in the private archive contacts file, built the database, pushed it. Not found: the Österreichische Dendrologische Gesellschaft (no published address), the Tree Register (address only behind Cloudflare obfuscation, not verified), the Ancient Tree Forum (contact form only). Nothing sent. No trees made; the shelf says REFILL but I spent the window on contacts only.
 <!-- archive-index -->
 ## 2026-10-25 session: eight more Lippert photographs, the Calvos oak, and mailed words get quoted
 
