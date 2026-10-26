@@ -495,6 +495,15 @@
       "Bratislawah",
       "Bratisluavu"
     ],
+    "bregenz": [
+      "Brégence",
+      "Bregencja",
+      "Brėgencas",
+      "Brēgenca",
+      "Brigantium",
+      "Bregenc",
+      "Bregenco"
+    ],
     "brighton": [
       "Braitonas",
       "Braitona",
@@ -776,6 +785,10 @@
       "Koimbr",
       "Koimbro"
     ],
+    "college-station": [
+      "College Station",
+      "Koledž Steišenas"
+    ],
     "collm": [
       "Wermsdorf"
     ],
@@ -834,6 +847,9 @@
       "Kopenhaga",
       "Kodaň",
       "Koppenhága"
+    ],
+    "coppell": [
+      "Coppell"
     ],
     "coppenbrugge": [
       "Pons Cobbanus"
@@ -1315,6 +1331,10 @@
     "glastonbury": [
       "Glastonia"
     ],
+    "goliad": [
+      "Goliad",
+      "Goliadas"
+    ],
     "gonzales-texas": [
       "Gonzales"
     ],
@@ -1572,6 +1592,18 @@
       "Hygebeorht",
       "Xobart",
       "ma tomo Opa"
+    ],
+    "hochosterwitz": [
+      "Kasteel Hochosterwitz",
+      "Burg Hochosterwitz",
+      "Château de Hochosterwitz",
+      "Castillo de Hochosterwitz",
+      "Castello di Hochosterwitz",
+      "Castelo de Hochosterwitz",
+      "Borgen Hochosterwitz",
+      "Hochosterwitzin linna",
+      "Zamek Hochosterwitz",
+      "Grad Ostrovica"
     ],
     "hokuto": [
       "Hokuto-chhī",
@@ -2623,6 +2655,12 @@
       "Ôhunato-chhī",
       "Ōfunato-shi"
     ],
+    "ogi": [
+      "Ogi-chhī",
+      "Ogi-shi",
+      "Ogi-sṳ",
+      "Oqi"
+    ],
     "oguni": [
       "Oguni Machi"
     ],
@@ -3141,6 +3179,10 @@
       "Sakegava",
       "Sakekawa-mura"
     ],
+    "sakurai": [
+      "Sakurai-chhī",
+      "Sakurai-shi"
+    ],
     "salamanca": [
       "Salamanque",
       "Salamanka",
@@ -3352,6 +3394,11 @@
       "Hispalis",
       "Sebilha",
       "Seviggia"
+    ],
+    "shikokuchuo": [
+      "Shikoku-chūō Shi",
+      "Sikokuchuo",
+      "Sikokutyûô-chhī"
     ],
     "shimizu": [
       "Shimizu-ku"
@@ -3970,6 +4017,12 @@
       "Vilmington",
       "Wieghelmestūn on Delawarlande"
     ],
+    "winterswijk": [
+      "Gemeente Winterswijk",
+      "Wenters",
+      "Winterswiek",
+      "Winterswyk"
+    ],
     "wrexham": [
       "Reksamas",
       "Reksema",
@@ -4199,6 +4252,7 @@
     "braga": "Braga",
     "bratislava": "Bratislava",
     "breda": "Breda",
+    "bregenz": "Bregenz",
     "breukelen": "Breukelen",
     "brielow": "Brielow",
     "brighton": "Brighton",
@@ -4241,6 +4295,7 @@
     "cinovec": "Dubí",
     "coimbra": "Coimbra",
     "colindres": "Colindres",
+    "college-station": "College Station, Texas",
     "collm": "Wermsdorf",
     "cologne": "Cologne",
     "columbia-missouri": "Columbia, Missouri",
@@ -4249,6 +4304,7 @@
     "congaree-national-park": "Congaree National Park",
     "coos-bay": "Coos Bay",
     "copenhagen": "Copenhagen",
+    "coppell": "Coppell, Texas",
     "coppenbrugge": "Coppenbrügge",
     "cordoba": "Córdoba, Spain",
     "cork": "Cork (city)",
@@ -4326,6 +4382,7 @@
     "glasgow": "Glasgow",
     "glastonbury": "Glastonbury",
     "gliniak": "Gliniak",
+    "goliad": "Goliad, Texas",
     "gonzales-texas": "Gonzales, Texas",
     "goose-island-state-park": "Goose Island State Park",
     "gornja-stubica": "Gornja Stubica",
@@ -4371,6 +4428,7 @@
     "hniszow": "Hniszów",
     "hobart": "Hobart",
     "hochneukirchen-gschaidt": "Hochneukirchen-Gschaidt",
+    "hochosterwitz": "Hochosterwitz Castle",
     "hokuto": "Hokuto, Yamanashi",
     "hong-kong": "Hong Kong",
     "hoorn": "Hoorn",
@@ -4558,6 +4616,7 @@
     "oberndorf-bei-salzburg": "Oberndorf bei Salzburg",
     "odawara": "Odawara",
     "ofunato": "Ōfunato",
+    "ogi": "Ogi, Saga",
     "oguni": "Oguni, Kumamoto",
     "oisterwijk": "Oisterwijk",
     "okinawa": "Okinawa Island",
@@ -4646,6 +4705,7 @@
     "s-gravenvoeren": "Voeren",
     "sachsenbrunn": "Sachsenbrunn",
     "sakegawa": "Sakegawa",
+    "sakurai": "Sakurai, Nara",
     "salamanca": "Salamanca",
     "salt-lake-city": "Salt Lake City",
     "salzburg": "Salzburg",
@@ -4676,6 +4736,7 @@
     "sequoia-national-park": "Sequoia National Park",
     "setubal": "Setúbal",
     "seville": "Seville",
+    "shikokuchuo": "Shikokuchūō",
     "shimizu": "Shimizu-ku, Shizuoka",
     "shingu": "Shingū, Wakayama",
     "shinkamigoto": "Shin-Kamigotō",
@@ -4788,6 +4849,7 @@
     "wessobrunn": "Wessobrunn",
     "westerlo": "Westerlo",
     "wilmington-delaware": "Wilmington, Delaware",
+    "winterswijk": "Winterswijk",
     "wojslawice": "Wojsławice",
     "wolfheze": "Wolfheze",
     "wrexham": "Wrexham",
@@ -4962,6 +5024,7 @@
     "gastilionys": "no article within 40 km, tried Gastilionys; Gastilionys, Lithuania; search: Baltic states",
     "gojaus-miskas": "no article within 40 km, tried Gojaus Miskas; Gojaus Miskas, Lithuania; search: Lithuanian grammar",
     "grybiskes": "no article within 40 km, tried Grybiskes; Grybiskes, Lithuania",
+    "hagerum": "no article within 40 km, tried Hägerum; Hägerum, Sweden",
     "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii",
     "herchies": "no article within 40 km, tried Herchies (Herchies, 181 km away); Herchies, Belgium; search: List of castles and châteaux in Belgium; search: Chantilly, Oise; search: Pont-Sainte-Maxence",
     "himmelsberg": "no article within 40 km, tried Himmelsberg; Himmelsberg, Germany; search: Zweibrücken; search: Sondershausen; search: Straden",
@@ -4976,6 +5039,7 @@
     "laumenai": "no article within 40 km, tried Laumenai; Laumenai, Lithuania; search: Šilalė District Municipality (Šilalė District Municipality, title does not match)",
     "lazy-cheb": "no article within 40 km, tried Lazy (Lazy, no coordinates, disambiguation page); Lazy, Czech Republic; search: List of German names for places in the Czech Republic; search: Aquapalace Prague; search: Capital Cities (duo)",
     "lecina": "no article within 40 km, tried Lecina; Lecina, Spain; search: Results breakdown of the 1936 Spanish general election; search: Results breakdown of the 1931 Spanish general election; search: Results breakdown of the 1933 Spanish general election",
+    "leonstein": "no article within 40 km, tried Leonstein; Leonstein, Austria; search: Pörtschach am Wörthersee; search: Steyr Valley Railway (Steyr Valley Railway, title does not match); search: Dürnstein Castle",
     "linkaiciai": "no article within 40 km, tried Linkaičiai; Linkaičiai, Lithuania; search: Šiauliai Ghetto (Šiauliai Ghetto, title does not match); search: Radviliškis–Daugavpils Railway; search: List of military headstamps",
     "longlou": "no article within 40 km, tried Longlou; Longlou, Belgium; search: Typhoon Yagi",
     "lukavice": "no article within 40 km, tried Lukavice (Lukavice, no coordinates, disambiguation page); Lukavice, Czech Republic; search: List of municipalities in the Czech Republic; search: List of German names for places in the Czech Republic; search: Rychnov nad Kněžnou",
