@@ -1965,6 +1965,28 @@ def check_one_photograph_per_tree():
     return out
 
 
+def check_a_wikimedia_url_carries_no_query():
+    """A Wikimedia photo url is the bare file path, never with ?utm_source=...
+
+    img_srcset() only builds thumbnails from a bare upload.wikimedia.org path;
+    with a tracking query the page serves the full-size original and qa.py
+    refuses it, fifteen minutes into CI (2026-10-26: eight places from the
+    restart run broke the deploy this way).
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            for photo in [tree.get("photo") or {}] + list(tree.get("photos") or []):
+                url = photo.get("url") or ""
+                if "upload.wikimedia.org" in url and "?" in url:
+                    out.append("%s: %s photo url carries a query (%s); drop everything "
+                               "from the ? so img_srcset() can size it."
+                               % (path, tree.get("id"), url[:70]))
+    return out
+
+
 def check_photos_are_not_the_lead_twice():
     """The same picture must not be both the lead and an extra.
 
@@ -3662,6 +3684,7 @@ def main():
                 + check_a_permission_covers_the_photographer_it_names()
                 + check_photos_are_not_the_lead_twice()
                 + check_one_photograph_per_tree()
+                + check_a_wikimedia_url_carries_no_query()
                 + check_translations_have_no_stray_script()
                 + check_every_tree_names_a_source()
                 + check_no_invitation_to_harm_the_tree()
