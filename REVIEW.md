@@ -23,6 +23,21 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-26
+
+Web half (Monday): last 24 hours were the eight small places from photo-batch-2, the three Texas trees, the Albertshausen Bildeiche, the Wikimedia query fix and outreach/digest work. Read the built Albertshausen, Tamatoriyama, Bregenz pages and metas: no em dashes in the sampled new pages, ages stated with basis. Findings:
+
+- WARN (seventh review to see it) meta description still prints a planting year as an age: built pages still say "A 1870-year-old Campbell's Magnolia" (/cork/1870-magnolia-of-fota), "A 1800-year-old London Plane" (/leiden/old-plane-of-the-plantsoen), "A 1920-year-old Scarlet Oak" (/seattle/wedgwood-scarlet-oak); a grep for a 15xx to 20xx year before "-year-old" in description metas matches about 110 pages (many legitimately 1500-year-old yews, the planting-year ones are the errors). scripts/qa.py has no check for it (grep "year-old" finds nothing). Hard rule 2, Verify (derived age states its basis). Prose has not held this for two months: write the qa.py check on built HTML first (refuse a year 1700 to 2025 directly before "-year-old" unless age_basis is source), then fix the template.
+- WARN site/src/pages/contribute.astro:17 (meta/intro) and :401: "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". Made false by CLAUDE.md Verify, "Good reader input IS the source" (2026-10-12) and the 2026-10-21 decision that a stranger's good photo with GPS goes live with no written source. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Check the translations of the same strings.
+- NOTE site/src/pages/feed.xml.ts:108: "each verified against its sources" has the same drift in milder form; "each with its sources" is true for reader-found trees too.
+
+Monday corpus audit (suggestions only):
+- NOTE CLAUDE.md "Digest reports" is one paragraph of roughly 5,000 words that says itself "the rest of this paragraph is the history of each block". Move everything after that sentence to RULINGS.md/DECISIONS.md; the working rules (daily order, Monday set, readers' words whole) fit in ten lines.
+- NOTE CLAUDE.md "Google recovery mode" restates the photo-only rule three times (own supply bullet, "A new tree of our own ships only with an approved photograph", Indexing) and still says "Rungs 5 to 7 mean depth on the kept set, never new pages" beside "Own supply ships again". Merge into one bullet and drop the pause/lift history (2026-10-22/25) into DECISIONS.md.
+- NOTE CLAUDE.md "Ambassadors" paragraph mixes the mail-rest rule, the sent_drafts rule and the ambassador commands; split so the one-week rest is findable from the Outreach rung.
+
+Copy audit (English added to i18n.ts in 7 days): "Know an old tree here? Add the first one.", "Nothing matches “{q}”...", the notes strings and the home strings read grammatical and idiomatic. NOTE "Saving..." uses three full stops where the rest of the file uses the plain word; harmless. No new AI shape found that copycheck misses.
+
 ## 2026-10-25
 
 Web half: last 24 hours were the Add a photo / notes-card move on the tree page (web and app), the one shared map card, digest changes and night-run logs. Read the built Totteridge yew page for the new grey photo and notes cards (present, strings match i18n.ts) and checked the built site for em dashes (none in three sampled pages). Not a Monday, so no corpus or copy audit.
