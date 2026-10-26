@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-26 session with Hidde: archive batch 2 drafted (Vienna, Krakow and Warsaw, Berlin and Munich)
+- Hidde asked for the next batch; none had waited since 10-23. Inbox read first, then the archive group as the strategy orders: two dendrology societies with a published address found today (Austria's ÖDG for Vienna's 33 photo-less trees, Poland's PTD for Krakow's 27 and Warsaw's 19), plus a third mail to the DDG with a resend reason, Hidde's call. Preview drafts/batch-archive-2026-10-26-preview.md, nothing sent. Morton and the Ancient Tree Forum skipped at three unanswered mails; NDV and Hoyt have no published address.
+
 ## 2026-10-26 restart run: 13 photographed trees live from the parked batches
 
 - Thirteen trees with approved photographs went live, parked since 10-22 behind the pace guard: photo-batch-2 (Winterswijk, Hägerum, Bregenz, Hochosterwitz, Leonstein, Ogi, Sakurai, Shikokuchū) and the Texas famous places (Goliad, Coppell, College Station). Four colon reveals in the stories were rewritten; the three Texas places were added to data/us-states.json. Preflight is clean. The site build was not run here (npm was denied), so CI's qa is the first full check.
