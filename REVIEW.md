@@ -38,6 +38,12 @@ Monday corpus audit (suggestions only):
 
 Copy audit (English added to i18n.ts in 7 days): "Know an old tree here? Add the first one.", "Nothing matches “{q}”...", the notes strings and the home strings read grammatical and idiomatic. NOTE "Saving..." uses three full stops where the rest of the file uses the plain word; harmless. No new AI shape found that copycheck misses.
 
+App half (iPhone SE: review-ask, search, signin-email, signin, species-pick, species):
+- NOTE APP review-ask.png is not a review ask: it is the welcome screen ("Trees worth the walk, wherever you are.") with no sheet, so that screen got no look tonight. Sweep fault, for a session.
+- NOTE APP signin-email.png is again pixel-identical to signin.png (three buttons, no email field), second night running: the email step has not been seen by any review since 10-25. A session should check the sweep taps "Continue with email".
+- NOTE APP signin sheet: "Sign in to keep this one" over a bare tree photograph with no tree named, so a person who arrived from a map or search cannot tell which "one". Fine from a tree page; worth a look from other entry points.
+- search, species-pick, species read consistently: no contradiction, no clipped photograph, counts plausible (Lisbon 37 trees, Aleppo Pine 20 on the map).
+
 ## 2026-10-25
 
 Web half: last 24 hours were the Add a photo / notes-card move on the tree page (web and app), the one shared map card, digest changes and night-run logs. Read the built Totteridge yew page for the new grey photo and notes cards (present, strings match i18n.ts) and checked the built site for em dashes (none in three sampled pages). Not a Monday, so no corpus or copy audit.
