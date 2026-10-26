@@ -10,7 +10,7 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-
+<!-- archive-index -->
 ## 2026-10-26 restart run: 13 photographed trees live from the parked batches
 
 - Thirteen trees with approved photographs went live, parked since 10-22 behind the pace guard: photo-batch-2 (Winterswijk, Hägerum, Bregenz, Hochosterwitz, Leonstein, Ogi, Sakurai, Shikokuchū) and the Texas famous places (Goliad, Coppell, College Station). Four colon reveals in the stories were rewritten; the three Texas places were added to data/us-states.json. Preflight is clean. The site build was not run here (npm was denied), so CI's qa is the first full check.
@@ -19,7 +19,6 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-26 09:35 run (short window, rung 4)
 
 No reader photographs or notes, health.py clear. The 10-25 archive batch still waits for Hidde's "verstuur", so no new mail batch. Sourced archive contacts: the Deutsche Dendrologische Gesellschaft (own Bildarchiv and Champion Trees gallery, Berlin/Munich trees) and the Morton Arboretum library (Chicago, a weak tie); recorded in the private archive contacts file, built the database, pushed it. Not found: the Österreichische Dendrologische Gesellschaft (no published address), the Tree Register (address only behind Cloudflare obfuscation, not verified), the Ancient Tree Forum (contact form only). Nothing sent. No trees made; the shelf says REFILL but I spent the window on contacts only.
-<!-- archive-index -->
 ## 2026-10-25 session: eight more Lippert photographs, the Calvos oak, and mailed words get quoted
 
 - **Live with this deploy**: eight more trees lead with Rainer Lippert's own photographs, each replacing a Commons lead that moves into the strip: the Marienlinde of Linden, the Hohenheim Love Plane, the Cedars of the Königsflügel in Bad Homburg, St. Wolfgang's Oak, the Schäferköppel chestnut, the Bötersheim oak, the Waldhaustanne and the Betteleiche. Found by the coordinate pass Hidde asked for: his My Maps layer (1,838 oaks) for the oaks, his 551 other-species pages for the rest; looked at, and checked against his Commons uploads by image fingerprint (none the same). That pass is now complete: 43 trees carry his site photographs from today.
