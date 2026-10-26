@@ -52,6 +52,8 @@ Feeders, all code, almost no tokens:
 
 Ambassadors are never asked for links or badges (Hidde, 2026-10-16). Nobody gets a second cold mail; a second mail needs news or a reply.
 
+**Never ask a stranger to go out and photograph a tree** (Hidde, 2026-10-26, on the Lisbon ten: "this is a big ask dont do that"). A cold mail asks only for what the person already has: photographs they already took, a fact they already know. The good opener is news about their own work ("your photograph of <tree> is on its page now, with your name"), then the one tree question.
+
 **Warm repliers (Hidde, 2026-10-20: "go do this"):** the people who answered a mail are the best link source we have, and a second mail to them carries the news that concerns them (their tree live, their correction on the page) and the one plain link ask. Two rules he set the same minute: **read his inbox first** (`outreach_inbox.py`), so a batch mail never lands in the middle of a conversation he is having ("check my inbox before jumping in with random conversation in between"); and **the organisations he is already deep in conversation with get no batch mail at all**: Quercus, the Woodland Trust, the Bomenstichtingen (Amsterdam, Den Haag), Baumkunde. Those threads are his.
 
 ## Where the night run looks for the archive group (2026-10-25)
