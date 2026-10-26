@@ -2,41 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-04T01:53:18+00:00",
-   "date": "2026-09-04",
-   "run_id": "33827433382",
-   "minutes": 43.0,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 353,
-   "denials": 29,
-   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(pip), Bash(printenv), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 5404464,
-   "claims_held": [
-    "_famous-united-kingdom",
-    "_famous-germany"
-   ],
-   "commits": 11,
-   "cities_touched": 3,
-   "cities": [
-    {
-     "city": "asago",
-     "trees": 1
-    },
-    {
-     "city": "kawago",
-     "trees": 1
-    },
-    {
-     "city": "suzuka",
-     "trees": 1
-    }
-   ],
-   "trees": 3,
-   "logged": true
-  },
-  {
    "started": "2026-09-04T06:03:27+00:00",
    "date": "2026-09-04",
    "run_id": "33842790825",
@@ -23230,6 +23195,72 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-26T09:35:19+00:00",
+   "date": "2026-10-26",
+   "run_id": "40300650830",
+   "minutes": 5.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 131,
+   "denials": 1,
+   "denials_source": "permission_denials: Bash(npm)",
+   "ended": "success",
+   "tokens": 178489,
+   "claims_held": [
+    "san-francisco"
+   ],
+   "commits": 6,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "shikokuchuo",
+     "trees": 2
+    },
+    {
+     "city": "bregenz",
+     "trees": 1
+    },
+    {
+     "city": "college-station",
+     "trees": 1
+    },
+    {
+     "city": "coppell",
+     "trees": 1
+    },
+    {
+     "city": "goliad",
+     "trees": 1
+    },
+    {
+     "city": "hagerum",
+     "trees": 1
+    },
+    {
+     "city": "hochosterwitz",
+     "trees": 1
+    },
+    {
+     "city": "leonstein",
+     "trees": 1
+    },
+    {
+     "city": "ogi",
+     "trees": 1
+    },
+    {
+     "city": "sakurai",
+     "trees": 1
+    },
+    {
+     "city": "winterswijk",
+     "trees": 1
+    }
+   ],
+   "trees": 12,
    "logged": true
   }
  ],
