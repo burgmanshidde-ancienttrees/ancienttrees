@@ -100,6 +100,22 @@ def last_seen():
         return None
 
 
+def tree_page(tree_id):
+    """The live page of one of our trees, as a markdown link, so a reader's
+    photograph in the table can be looked at (Hidde, 2026-10-26: "i also want
+    to be able to see the photo")."""
+    from sightings_publish import page_url
+    cities = os.path.join(ROOT, "data", "cities")
+    for f in sorted(os.listdir(cities)):
+        if not f.endswith(".json"):
+            continue
+        for t in json.load(open(os.path.join(cities, f), encoding="utf-8")).get("trees", []):
+            if t.get("id") == tree_id:
+                return "[%s](%s)" % (t.get("name") or tree_id, page_url(
+                    {"city_slug": f[:-5], "tree_id": tree_id, "tree_name": t.get("name") or ""}))
+    return None
+
+
 def readers_in_full(day):
     """Everything a stranger sent since Hidde last looked (else since the
     digest's day), word for word.
@@ -155,8 +171,9 @@ def readers_in_full(day):
                            "&shared=eq.true&updated_at=gte.%s&order=updated_at.asc" % since, key) or []:
             if is_ours(r.get("user_id")):
                 continue
+            page = tree_page(r["tree_id"]) if r.get("tree_id") else None
             rows.append((r["updated_at"], "app photograph", r.get("tree_id") or r.get("name") or "-",
-                         r.get("note") or "", [], r.get("status") or ""))
+                         r.get("note") or "", [page] if page else [], r.get("status") or ""))
     except Exception as e:
         rows.append(("", "app photographs", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
     head = "**Everything readers sent since %s, in full** (word for word; names and addresses left out)" % day
