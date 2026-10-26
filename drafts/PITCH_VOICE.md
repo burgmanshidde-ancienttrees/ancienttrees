@@ -213,6 +213,21 @@ belongs in Helpful Details or nowhere.
 - NO: "Goed dat je het vraagt! Ik ben Hidde, ik woon in Baarn, zo'n 30 minuten onder Amsterdam. Ancient Trees is een kaart van bijzondere oude bomen..."
 - YES: "Ik ben Hidde, ik woon in Baarn en werk aan Ancient Trees, en dan het verhaal van de About-pagina (Lisabon, geen expert maar fan)"
 
+**rewording his own text instead of only fixing its grammar** (added 2026-10-25)
+
+- NO: "Either way, thanks for the help again, and looking forward to staying in touch in the coming weeks."
+- YES: "either way thanks for the help again and looking forward to stay in touch the comming time."
+
+**A detailed intro reads as AI: open with one plain line about their piece, then who and why** (added 2026-10-26)
+
+- NO: "Your guide to the UK's oldest trees has Fortingall and Ankerwycke. A yew I'd love to see beside them is the Great Yew of Ormiston in East Lothian, which grew a ring of new trunks from its own rooted branches, so locals call it the Cathedral Yew"
+- YES: "Hi, I read your article on x. [the tree is on our map too + link]. My name is Hidde and I'm building Ancient Trees ... to get a broader audience outside"
+
+**In a cold mail the about part is who, where, what and the goal, from the mail that reached Wilder; the origin story belongs to the article, not the intro** (added 2026-10-26)
+
+- NO: "The idea started in Lisbon: travelling for work I had time to kill... I'm not a tree expert, but I am a big fan."
+- YES: "My name is Hidde, I live in Baarn near Amsterdam, and I'm building Ancient Trees... My goal is to get people excited about old trees and get them outside to go and see them."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
