@@ -2075,6 +2075,7 @@ def waiting_for_you_section(today):
     reached him only through chat: "heb ik nog iets anders belangrijks
     gemist ... daar hoort het". The runs already write these lines; until
     now they lived only in LOG.md, which he does not read daily."""
+    import sent_drafts
     path = os.path.join(ROOT, "LOG.md")
     if not os.path.exists(path):
         return ""
@@ -2091,6 +2092,12 @@ def waiting_for_you_section(today):
                                line, flags=re.I):
             text = hit.group(1).strip().strip("*").strip()
             if not text or text.lower().startswith("nothing"):
+                continue
+            # A draft that has gone out is not waiting (Hidde, 2026-10-26: "die
+            # ambassadeurs zijn al gemaild"). sent_drafts.py reads the send
+            # log and his Sent folder; a line whose every draft is sent drops.
+            named = re.findall(r"drafts/[\w./-]+\.(?:md|json)", line[hit.start():])
+            if named and all(sent_drafts.status_of(n.rstrip(".")) == "sent" for n in named):
                 continue
             key = re.sub(r"[\d\W]+", " ", text.lower())
             key = re.sub(r"\b(still|wait|waits|the)\b", "", key).split()

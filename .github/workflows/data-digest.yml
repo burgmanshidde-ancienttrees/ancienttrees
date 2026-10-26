@@ -83,6 +83,17 @@ jobs:
           python3 scripts/private_store.py pull
           python3 scripts/contacts_db.py --build
 
+      # Which drafted mails went out, from the send log and the headers of
+      # Hidde's Sent folder, so Waiting for you drops what he already sent
+      # (Hidde, 2026-10-26: "zodat ik je niet steeds de status hoef te vertellen").
+      - name: Check which drafts went out
+        continue-on-error: true
+        env:
+          OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
+          OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
+        run: python3 scripts/sent_drafts.py --quiet
+
       - name: Build the digest entry
         env:
           GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}

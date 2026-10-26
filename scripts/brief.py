@@ -406,6 +406,26 @@ def worktrees_beside_the_repo(out):
         out += [""]
 
 
+def drafts_not_sent(out):
+    """The drafted mails that have not gone out, from the send log and the
+    headers of Hidde's Sent folder (scripts/sent_drafts.py). Hidde, 2026-10-26:
+    "die ambassadeurs zijn al gemaild ... zodat ik je niet steeds de status hoef
+    te vertellen". Reading the mailbox takes longer than a brief may, so this
+    prints the last check and starts the next one in the background."""
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import sent_drafts
+        rows = sent_drafts.open_drafts()
+        subprocess.Popen([sys.executable, str(ROOT / "scripts" / "sent_drafts.py"), "--quiet"],
+                         cwd=ROOT, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except Exception:
+        return
+    if rows:
+        out.append("Drafted mails NOT sent yet (send log and his Sent folder; "
+                   "everything else drafted in the last 30 days has gone out):")
+        out += ["  %s  %s" % (k, n) for k, n in rows] + [""]
+
+
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
     worktrees_beside_the_repo(out)
@@ -416,6 +436,7 @@ def main():
     photos_still_off_domain(out)
     bundled_catalogue_drift(out)
     work_stranded_on_branches(out)
+    drafts_not_sent(out)
 
     # Cities and trees
     try:
