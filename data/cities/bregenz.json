@@ -1,0 +1,74 @@
+{
+  "city": "Bregenz",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Bregenz protects a Japanese pagoda tree in Rieden-Vorkloster that is remarkable less for its age than for its shape: a crown 26 metres wide on a tree only 12.5 metres tall. Planted around 1950, it became a natural monument in July 2010 and stands beside a school on Johann-Jörg-Weg, seen from the street. Come in August, when the species opens its cream flowers and little else in town is in bloom.",
+  "meta_description": "A Japanese pagoda tree in Bregenz with a crown 26 metres wide on a 12.5 metre tree, a natural monument since 2010, flowering in August.",
+  "question_meta": "Bregenz's Japanese pagoda tree on Johann-Jörg-Weg: a natural monument since 2010, 12.5 metres tall with a 26 metre crown.",
+  "question_answer": "The Japanese pagoda tree on Johann-Jörg-Weg in Bregenz's Rieden-Vorkloster district is a natural monument, declared by the town council on 1 July 2010 and listed in the Vorarlberg register as ND-213. Planted around 1950, it is about 75 years old, 12.5 metres tall, with a trunk 86 centimetres thick and a crown 26 metres across.",
+  "question_context": "Rieden-Vorkloster is a district of Bregenz, the capital of Vorarlberg on Lake Constance. The pagoda tree grows at the edge of the schoolyard of the district's Hauptschule, with its trunk right at the street behind a low hedge, so the street is where you stand to see it. The school grounds are not open to visitors. It is a young tree by the standards of this map, planted around 1950. What sets it apart is proportion. Its crown, at 26 metres, is more than twice as wide as the tree is tall, and in July 2010 the town council made it a natural monument. A newspaper report that year called it vital, with 11 to 25 percent leaf loss. The species flowers late, in August, with clusters of cream blossom at a time when little else is in flower, and that is the month to come. The most recent photograph we know of was taken in May 2016, in full leaf, and we have found no newer report on its health. Our pin is approximate; look for the hedge on Johann-Jörg-Weg.",
+  "faq": [
+    {
+      "q": "Why is the pagoda tree in Bregenz a natural monument?",
+      "a": "For its crown, 26 metres wide on a tree 12.5 metres tall. The town council declared it a natural monument on 1 July 2010."
+    },
+    {
+      "q": "When does the Bregenz pagoda tree flower?",
+      "a": "In August. Japanese pagoda trees open cream flowers in late summer, when little else is in bloom."
+    },
+    {
+      "q": "Can you enter the school grounds to see it?",
+      "a": "No. The trunk stands at the edge of Johann-Jörg-Weg behind a low hedge, so see it from the street."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bgz_001",
+      "name": "Japanischer Schnurbaum, Bregenz",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "roughly 75 years",
+      "age_min": 70,
+      "age_max": 80,
+      "age_basis": "source",
+      "girth_cm": 270,
+      "height_m": 12.5,
+      "location": {
+        "address": "Johann-Jörg-Weg beside the schoolyard of the Hauptschule Rieden-Vorkloster, Bregenz",
+        "latitude": 47.4922093,
+        "longitude": 9.7241186,
+        "neighbourhood": "Rieden-Vorkloster"
+      },
+      "verified_sources": [
+        "https://www.vol.at/japanischer-schnurbaum-jetzt-naturdenkmal/1730404",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Bregenz",
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum,_Bregenz.jpg"
+      ],
+      "access": "VIEW ONLY from the public street Johann-Jörg-Weg: the lead photograph shows the trunk at the edge of the street behind a low hedge, with a street name sign and the school building behind. Do not enter school grounds.",
+      "transport": "Bregenz Rieden-Vorkloster district; no public-transport time verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This tree is twice as wide as it is tall. Its crown spreads 26 metres; the whole tree stands only 12.5 metres high.\n\nIt is a Japanese pagoda tree beside the schoolyard of the Hauptschule in Rieden-Vorkloster, and it is young for this map. It was planted around 1950, which makes it roughly 75 years old, and its trunk is 86 centimetres thick. It is not a veteran; what sets it apart is that spread. On 1 July 2010 the Bregenz town council declared it a natural monument, listed in the Vorarlberg register as ND-213. A newspaper report that year called it vital, with 11 to 25 percent leaf loss.\n\nThe species flowers late. In August, when almost nothing else around it is in bloom, a pagoda tree opens clusters of cream flowers, and a crown this wide has a great deal of room for them.\n\nThe last photograph we know of was taken in May 2016, in full leaf. We have found nothing more recent, so we cannot confirm how it is doing now. If you walk past, tell us.\n\nSee it from the street, Johann-Jörg-Weg, where the trunk stands at the edge behind a low hedge, with the school building behind it. The school grounds are not open to visitors, and from the pavement you see all of it anyway.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when the wide crown opens clusters of cream flowers"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Japanischer_Schnurbaum%2C_Bregenz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "attribution": "HanifeBiyikli",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum,_Bregenz.jpg",
+        "width": 1130,
+        "height": 1425,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by the low, very broad crown, 26 metres across on a tree 12.5 metres tall. It stands behind a low hedge on Johann-Jörg-Weg, at the edge of the schoolyard in Rieden-Vorkloster.",
+      "official_register": {
+        "name": "Naturdenkmal Vorarlberg ND-213 (Bregenz)",
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Bregenz"
+      }
+    }
+  ]
+}

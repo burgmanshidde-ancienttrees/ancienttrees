@@ -1,0 +1,60 @@
+{
+  "city": "Hochosterwitz",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Below Hochosterwitz castle, at the south foot of its hill, stands a lime with its age written on a plaque on its own trunk: about 450 years. That plaque is the only record we have found. The trunk is massive, with big buttress roots under a crown of upright limbs, and a wooden bench sits beside it on the open wooded slope. The castle up the hill charges for entry; the tree does not.",
+  "meta_description": "A lime at the foot of Hochosterwitz castle hill in Carinthia, about 450 years old by the plaque on its trunk, with a bench beside it.",
+  "question_meta": "The lime below Hochosterwitz castle, Carinthia: about 450 years old according to the plaque on its trunk, at the foot of the castle hill.",
+  "question_answer": "At the south foot of the Hochosterwitz castle hill, near Maigern in Carinthia, stands a lime whose plaque gives its age as about 450 years. That figure comes from the plaque alone; the tree is not on Carinthia's list of natural monuments and no survey has measured it. It has a massive trunk with buttress roots and a candelabra crown.",
+  "question_context": "Hochosterwitz castle crowns a hill near Maigern in Carinthia, and the castle charges for entry. The lime does not. It grows at the south foot of the hill, a few hundred metres below the castle, on an open wooded slope with no fence or gate in sight, and a wooden bench stands next to it. A small plaque on the trunk reads \"Linde, Alter etwa 450 Jahre\", lime, about 450 years old, and that is the whole of its written record. The photographs we know of were taken in December 2019, when the tree was bare, so they show the shape well: a huge trunk flaring into buttress roots, upright limbs branching like a candelabra, and mistletoe in the crown. They do not show the leaves, which is why nobody has yet recorded which kind of lime it is. A visit in summer would settle that, and a dated photograph would confirm that it still stands, since we have found nothing newer than 2019. No public-transport time has been checked. Our pin comes from a GPS fix at the tree.",
+  "faq": [
+    {
+      "q": "How old is the lime at Hochosterwitz?",
+      "a": "About 450 years, according to the plaque on its trunk. We have found no other source for the figure."
+    },
+    {
+      "q": "Do you need a castle ticket to see the tree?",
+      "a": "No. The lime stands at the foot of the hill, on open slope below the castle, which charges for entry further up."
+    },
+    {
+      "q": "What kind of lime is it?",
+      "a": "That is not recorded. The only photographs were taken in winter, without leaves. If you photograph its leaves in summer, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hoc_001",
+      "name": "Linde Hochosterwitz",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 450 years (on-site sign)",
+      "age_min": 450,
+      "age_max": 450,
+      "age_basis": "source",
+      "location": {
+        "address": "South foot of the Hochosterwitz hill, near Maigern, Carinthia",
+        "latitude": 46.75421,
+        "longitude": 14.45055,
+        "neighbourhood": "Maigern"
+      },
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_01.jpg",
+        "https://commons.wikimedia.org/wiki/Category:Linde_Hochosterwitz"
+      ],
+      "access": "Stands at the foot of the castle hill beside a wooden bench on open woodland slope, no fence or gate in the photograph; reachable on foot. No source states ownership or rights of way.",
+      "transport": "Near Maigern/Hochosterwitz; no public-transport time verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The only written record of this tree's age hangs on its own trunk. A small plaque reads \"Linde, Alter etwa 450 Jahre\": lime, about 450 years old.\n\nThat is the tree's own claim, and we have found nothing to check it against. It is not on Carinthia's list of natural monuments, no survey has measured it, and everything we know comes from the plaque and one photographer's pictures. Read the 450 years as the sign's estimate, not a dating.\n\nWhat the photographs do show is a tree built for the number. The trunk is massive and flares into big buttress roots where it meets the slope. Above it the crown divides into upright limbs like a candelabra, with mistletoe in the branches. A wooden bench sits beside it.\n\nIt grows at the south foot of the hill crowned by Hochosterwitz castle, near Maigern, on open wooded slope with no fence or gate in sight. The castle, which charges for entry, is a few hundred metres further up.\n\nTwo gaps remain. The pictures were taken in December 2019, bare, so nobody has recorded which lime it is, and we know of no photograph since. If you pass in summer, the leaves would settle the species, and a picture would tell us it is still standing.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Linde_Hochosterwitz_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Niki.L",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_01.jpg",
+        "width": 3456,
+        "height": 4608,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by the plaque on the trunk giving its age as about 450 years, the big buttress roots and the wooden bench beside it. It stands at the south foot of the Hochosterwitz castle hill."
+    }
+  ]
+}

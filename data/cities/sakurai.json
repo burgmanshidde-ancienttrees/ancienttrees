@@ -1,0 +1,66 @@
+{
+  "city": "Sakurai",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "In the Jionji district of Sakurai, a hollow zelkova leans out over the old road from a stone wall in front of the Amida Hall, beside Tamatsura Shrine. Locally it is known as the tree struck by lightning. The prefecture's sign says 800 years, the tourist association says 400, and its girth is about 6 metres. It stands in the open, free to see, and Sakurai is roughly half an hour by train from Nara.",
+  "meta_description": "The Amidaji zelkova in Sakurai, Nara: a hollow tree 6 metres round leaning over the old road, 400 or 800 years old by two accounts.",
+  "question_meta": "Sakurai's Amidaji zelkova: hollow, 6 metres round, 400 to 800 years old by two accounts, leaning over the old road at Jionji.",
+  "question_answer": "The Amidaji no Keyaki is a zelkova in front of the Amida Hall of Jionji in Sakurai, Nara Prefecture, beside Tamatsura Shrine. Its age is disputed: the prefecture's sign says 800 years, from tradition, and Sakurai's tourist association says 400. The Ministry of the Environment measured its girth at 6.05 metres in 2023. The trunk is hollow, and locally it is called the tree struck by lightning.",
+  "question_context": "Sakurai lies in the south-east of the Nara basin, roughly half an hour by train from Nara itself. The zelkova grows in the Jionji district, in front of the Amida Hall and beside Tamatsura Shrine, rising from a stone retaining wall and leaning over the old road below. It is out in the open and free to see. The sources do not agree on much. The prefecture's sign says 800 years, a figure from tradition; the city's tourist association says 400. Heights range from 10 metres in an older survey of the Kinki region to 22 metres in the Ministry of the Environment's giant-tree database of 2023, and girths from 5.2 metres to 6.05. What all of them describe is the same hollow old tree, known locally as the one struck by lightning. A survey of village giants photographed it in July 2023, so it was alive then. The nearest station named in the temple listings is Yamato-Asakura on the JR Sakurai Line, a walk from the hall. Our pin is approximate; the wall and the leaning trunk are the landmarks.",
+  "faq": [
+    {
+      "q": "How old is the zelkova at Amidaji in Sakurai?",
+      "a": "Between 400 and 800 years by the two accounts. The prefecture's sign says 800, from tradition; Sakurai's tourist association says 400."
+    },
+    {
+      "q": "How do you get to the Amidaji zelkova?",
+      "a": "Take the JR Sakurai Line to Yamato-Asakura station and walk. Sakurai is roughly half an hour by train from Nara."
+    },
+    {
+      "q": "Is it free to see?",
+      "a": "Yes. The tree stands in the open in front of the Amida Hall, beside Tamatsura Shrine."
+    }
+  ],
+  "trees": [
+    {
+      "id": "skr_001",
+      "name": "Amidaji no Keyaki",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "roughly 400 to 800 years",
+      "age_min": 400,
+      "age_max": 800,
+      "age_basis": "source",
+      "girth_cm": 600,
+      "location": {
+        "address": "Jionji 383, Sakurai, Nara, in front of Amida Hall beside Tamatsura Shrine",
+        "latitude": 34.520083,
+        "longitude": 135.866972,
+        "neighbourhood": "Jionji"
+      },
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/sakurai-amidaji-keyaki.htm",
+        "http://www.tree-flower.jp/29/amidaji_keyaki_586/amidaji.html",
+        "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15310888693).jpg"
+      ],
+      "access": "Stands in front of the Amida Hall of Jionji beside Tamatsura Shrine, leaning over the old road from a stone retaining wall; public and free to see.",
+      "transport": "Near Yamato-Asakura station on the JR Sakurai Line (name from the temple listings), then walk; time not verified here.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The prefecture's sign beside this zelkova says it is 800 years old. Sakurai's tourist association says 400. Neither shows its working, and the 800 rests on tradition, so the honest answer is somewhere between the two.\n\nIts measurements disagree almost as much. The Ministry of the Environment's giant-tree survey of April 2023 gives a height of 22 metres and a girth of 6.05 metres. Another listing has 15 metres and 6, and an older survey of the Kinki region 10 metres and 5.2. We give the girth as about 6 metres and leave the height open.\n\nWhat nobody disputes is where it stands and how. It grows in front of the Amida Hall of Jionji, beside Tamatsura Shrine, rooted in a stone retaining wall and leaning out over the old road below. The trunk is hollow, and locally it is known as the tree that was struck by lightning. Nara Prefecture lists it as a protected tree, designated in October 1972 according to the listings we have seen.\n\nIt was photographed for a survey of village giants in July 2023, so it was standing then.\n\nThe tree is in the open and free to see. The nearest station named in the temple listings is Yamato-Asakura on the JR Sakurai Line, a walk away. Sakurai itself is roughly half an hour by train from Nara.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Amidaji_no_Keyaki_%2815310888693%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 2.0",
+        "attribution": "coniferconifer from japan",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15310888693).jpg",
+        "width": 4032,
+        "height": 2272,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by the hollow trunk, about 6 metres round, leaning out over the old road from a stone retaining wall. It stands in front of the Amida Hall of Jionji, beside Tamatsura Shrine.",
+      "official_register": {
+        "name": "Nara Prefecture protected tree (hogo jumoku), designated 1972-10-02",
+        "url": "http://www.hitozato-kyoboku.com/sakurai-amidaji-keyaki.htm"
+      }
+    }
+  ]
+}
