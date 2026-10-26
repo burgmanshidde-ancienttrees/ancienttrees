@@ -4,7 +4,7 @@
  "note": "Every path here leaves sitemap.xml and renders a self canonical (site/src/layouts/Base.astro). A path in google_only renders <meta name=googlebot content=noindex>, which only Google reads, and is offered to Bing in sitemap-bing.xml; every other path renders <meta name=robots content=noindex> for every engine. Pages stay live. Undo by emptying 'paths' and removing the thin_pages step from deploy.yml.",
  "counts": {
   "fallback": 0,
-  "thin_places": 584,
+  "thin_places": 585,
   "question_pages": 354,
   "weak_trees": 3740,
   "strict_cut": 1703,
@@ -8320,6 +8320,7 @@
   "/aizuwakamatsu/great-zelkova-of-takase": "2026-10-06",
   "/albersdorf": "2026-10-01",
   "/albersdorf/funffingerlinde": "2026-10-22",
+  "/albertshausen": "2026-10-26",
   "/alicante": "2026-10-24",
   "/alicante/araucaria-of-plaza-de-calvo-sotelo": "2026-10-01",
   "/alicante/araucaria-of-plaza-de-galicia": "2026-10-01",

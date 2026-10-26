@@ -729,10 +729,10 @@
   },
   {
    "name": "Bildeiche bei Albertshausen",
-   "lat": null,
-   "lng": null,
+   "lat": 50.202918,
+   "lng": 9.996412,
    "photos": [],
-   "status": "lead",
+   "status": "published",
    "species": "Oak (Quercus sp.)",
    "species_basis": "genus read from the tree's own name; ask which species",
    "place": "Albertshausen, Bad Kissingen, Bavaria",
@@ -740,7 +740,8 @@
    "sources": [
     "https://www.infranken.de/lk/bad-kissingen/saale-zeitung-leserfotos-zum-tag-des-baumes-art-2631571",
     "https://www.monumentale-eichen.de/"
-   ]
+   ],
+   "published_as": "albertshausen/abh_001"
   }
  ],
  "blocked": [

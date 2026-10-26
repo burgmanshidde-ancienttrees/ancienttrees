@@ -10,8 +10,8 @@
   },
   "lisbon": {
    "impressions": 316,
-   "kept_trees": 18,
-   "trees": 36,
+   "kept_trees": 19,
+   "trees": 37,
    "place_page": true
   },
   "amsterdam": {
@@ -496,7 +496,7 @@
   },
   "leipzig": {
    "impressions": 51,
-   "kept_trees": 23,
+   "kept_trees": 24,
    "trees": 29,
    "place_page": true
   },
@@ -554,6 +554,18 @@
    "trees": 3,
    "place_page": true
   },
+  "frankfurt": {
+   "impressions": 23,
+   "kept_trees": 4,
+   "trees": 23,
+   "place_page": true
+  },
+  "schenklengsfeld": {
+   "impressions": 22,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
   "miyazaki": {
    "impressions": 20,
    "kept_trees": 1,
@@ -562,9 +574,15 @@
   },
   "nuremberg": {
    "impressions": 18,
-   "kept_trees": 1,
+   "kept_trees": 3,
    "trees": 20,
    "place_page": true
+  },
+  "wessobrunn": {
+   "impressions": 18,
+   "kept_trees": 2,
+   "trees": 2,
+   "place_page": false
   },
   "freiburg": {
    "impressions": 17,
@@ -572,17 +590,35 @@
    "trees": 8,
    "place_page": true
   },
+  "stuttgart": {
+   "impressions": 14,
+   "kept_trees": 2,
+   "trees": 11,
+   "place_page": true
+  },
   "hamburg": {
    "impressions": 12,
-   "kept_trees": 2,
+   "kept_trees": 3,
    "trees": 6,
    "place_page": true
   },
   "dresden": {
    "impressions": 11,
-   "kept_trees": 1,
+   "kept_trees": 5,
    "trees": 32,
    "place_page": true
+  },
+  "regensburg": {
+   "impressions": 10,
+   "kept_trees": 1,
+   "trees": 8,
+   "place_page": true
+  },
+  "albertshausen": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
   },
   "amt-neuhaus": {
    "impressions": 0,
@@ -590,19 +626,37 @@
    "trees": 1,
    "place_page": false
   },
-  "assisi": {
-   "impressions": 0,
-   "kept_trees": 0,
-   "trees": 6,
-   "place_page": true
-  },
   "baarn": {
    "impressions": 0,
    "kept_trees": 3,
    "trees": 8,
    "place_page": true
   },
+  "bad-homburg": {
+   "impressions": 0,
+   "kept_trees": 2,
+   "trees": 6,
+   "place_page": true
+  },
   "bad-staffelstein": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "bamberg": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 9,
+   "place_page": true
+  },
+  "boetersheim": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "calvos": {
    "impressions": 0,
    "kept_trees": 1,
    "trees": 1,
@@ -614,11 +668,65 @@
    "trees": 1,
    "place_page": false
   },
-  "giessen": {
+  "collm": {
    "impressions": 0,
    "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "effeltrich": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "eisolzried": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "erdmannrode": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "friedewald": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "giessen": {
+   "impressions": 0,
+   "kept_trees": 2,
    "trees": 4,
    "place_page": true
+  },
+  "hainich-national-park": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "heede": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "himmelsberg": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "koenigslutter": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
   },
   "munsterland": {
    "impressions": 0,
@@ -626,11 +734,41 @@
    "trees": 4,
    "place_page": true
   },
+  "niedenstein": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "polchow": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "potsdam": {
+   "impressions": 0,
+   "kept_trees": 2,
+   "trees": 18,
+   "place_page": true
+  },
   "ramsau-bei-berchtesgaden": {
    "impressions": 0,
    "kept_trees": 1,
    "trees": 1,
    "place_page": false
+  },
+  "reinborn": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "rothenburg-ob-der-tauber": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 5,
+   "place_page": true
   },
   "takachiho": {
    "impressions": 0,
@@ -644,6 +782,12 @@
    "trees": 1,
    "place_page": false
   },
+  "thalmassing": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
   "untermerzbach": {
    "impressions": 0,
    "kept_trees": 1,
@@ -651,6 +795,12 @@
    "place_page": false
   },
   "volkenroda": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "zwieslerwaldhaus": {
    "impressions": 0,
    "kept_trees": 1,
    "trees": 1,

@@ -1,0 +1,75 @@
+{
+  "city": "Albertshausen",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Albertshausen maps one tree: the Bildeiche, a hollow pedunculate oak in a meadow at the edge of the village, 7.95 metres round when Rainer Lippert measured it in 2021. It was spared when the forest around it was cleared around 1810, and since 1933 it has carried a carved figure of the archangel Michael, now a copy after the original was stolen.",
+  "meta_description": "The Bildeiche of Albertshausen, a hollow Bavarian oak 7.95 metres round, spared in 1810 and carrying a carved archangel since 1933.",
+  "question_meta": "Albertshausen's mapped tree is the Bildeiche, a hollow pedunculate oak 7.95 metres round at the edge of the village.",
+  "question_answer": "The tree mapped at Albertshausen is the Bildeiche, a pedunculate oak at the village edge in Bad Kissingen, 7.95 metres round in 2021, about 23 metres tall and about 400 years old by Rainer Lippert's estimate. It has been a protected natural monument since 1935.",
+  "question_context": "The Bildeiche grew up inside a forest. When the wood around it was cleared around 1810 it was spared, and it has stood alone ever since, in a meadow ringed by a hedge beside the road to the motorway at the edge of Albertshausen, a district of Bad Kissingen. In 1933 a carved figure of the archangel Michael was fixed to its trunk, with a Latin line that translates as \"Who is like God?\". The figure was stolen and turned up later in Fulda; the original is now in the village church and a copy hangs on the tree. The trunk is completely hollow, split open to the north, with bark more deeply furrowed than on almost any other oak. Rainer Lippert, who measures Germany's monumental oaks and calls this one his favourite, recorded 7.95 metres round in 2021, against 7.35 metres in 1990, about 1.8 centimetres a year. He puts it at about 400 years old and 23 metres tall; a local paper gives 380 to 700 years. It has been a protected natural monument since 1935.",
+  "hero_tree_id": "abh_001",
+  "oldest_tree_id": "abh_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Albertshausen?",
+      "a": "The tree mapped at Albertshausen is the Bildeiche, a pedunculate oak at the village edge in Bad Kissingen, 7.95 metres round in 2021, about 23 metres tall and about 400 years old by Rainer Lippert's estimate. It has been a protected natural monument since 1935."
+    }
+  ],
+  "trees": [
+    {
+      "id": "abh_001",
+      "name": "The Bildeiche of Albertshausen",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 400 years by Rainer Lippert's estimate; a local newspaper caption gives 380 to 700",
+      "age_min": 380,
+      "age_max": 700,
+      "age_basis": "source",
+      "girth_cm": 795,
+      "height_m": 23,
+      "location": {
+        "address": "Meadow beside the road to the motorway, at the edge of Albertshausen, Bad Kissingen, Bavaria",
+        "latitude": 50.202918,
+        "longitude": 9.996412,
+        "neighbourhood": "Albertshausen"
+      },
+      "location_precision": "confirmed",
+      "pin_source": "published GPS on monumentale-eichen.de (Rainer Lippert, measured on site 2021)",
+      "story": "Somebody once stole the archangel off this oak. A carved figure of Michael was fixed to the trunk in 1933; it vanished, turned up later in Fulda, and the original now hangs in the church at Albertshausen, with a copy back on the tree. The figure carries a Latin line that translates as \"Who is like God?\". For a while people called the tree the Michaelseiche after it, but the name never took, and it is still the Bildeiche.\n\nIt did not grow up alone. The oak stood inside a forest until the wood was cleared around 1810, when it was spared, and it has stood free ever since, in a meadow ringed by a hedge beside the road to the motorway, just outside the village. The trunk is completely hollow, split open on its north side, and its bark is furrowed more deeply than on almost any other oak. The first branches start about four metres up.\n\nRainer Lippert, who measures Germany's monumental oaks, has known it since he was a child and calls it his favourite. He has taped it for thirty years: 7.35 metres round in 1990, in Hans Joachim Fröhlich's measurement, and 7.95 metres in his own of 2021, about 1.8 centimetres a year. He puts it at about 400 years old, 23 metres tall, with a crown 18 metres across. It has been a protected natural monument since 1935.",
+      "how_to_recognise": "A lone, completely hollow oak in a hedged meadow at the roadside, with a carved figure of the archangel Michael fixed to its trunk.",
+      "access": "Free, no ticket. It stands in a meadow ringed by a hedge, right beside the road at the edge of the village, and is in full view from the road.",
+      "transport": "Albertshausen is a district of Bad Kissingen; the tree stands at the village edge on the road towards the motorway. Easiest by car or bike; no bus stop confirmed this pass.",
+      "verified_sources": [
+        "https://www.monumentale-eichen.de/bayern/albertshausen/ (Rainer Lippert: history, measurements 1990 and 2021, age about 400, height 23 m, crown 18 m, protected 1935 and 1987, coordinates)",
+        "https://www.infranken.de/lk/bad-kissingen/saale-zeitung-leserfotos-zum-tag-des-baumes-art-2631571 (Saale-Zeitung reader photo caption: the oak alone on a meadow at the village edge, 380 to 700 years)"
+      ],
+      "official_register": {
+        "name": "Naturdenkmal, protected 1935 and again 1987 (per Rainer Lippert's page)",
+        "url": null
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Named by Rainer Lippert by mail on 2026-10-10 as an oak we were missing; his page calls it 'Meine Lieblingseiche'. Two sources: his page (with the Baumarchiv books it cites) and the Saale-Zeitung caption. Age is his estimate, the paper's range kept beside it. Pin from his published coordinates. Flagged: the Naturdenkmal number is not confirmed in an official list.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/abh_001-the-bildeiche-of-albertshausen.jpg",
+        "license": "Provided by Rainer Lippert with permission, credit required",
+        "attribution": "Rainer Lippert",
+        "attribution_url": "https://www.monumentale-eichen.de/bayern/albertshausen/",
+        "status": "approved",
+        "width": 1600,
+        "height": 1067,
+        "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/bayern/albertshausen/), the whole tree in its meadow. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Looked at before approval; not among his Commons uploads of this oak (difference hash, closest 20 of 64). Not an open licence; ask him before reuse elsewhere."
+      },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/abh_001-the-bildeiche-of-albertshausen-trunk.jpg",
+          "license": "Provided by Rainer Lippert with permission, credit required",
+          "attribution": "Rainer Lippert",
+          "attribution_url": "https://www.monumentale-eichen.de/bayern/albertshausen/",
+          "status": "approved",
+          "width": 1067,
+          "height": 1600,
+          "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/bayern/albertshausen/), the trunk with the Michael figure. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Looked at before approval; not among his Commons uploads of this oak (difference hash, closest 20 of 64). Not an open licence; ask him before reuse elsewhere."
+        }
+      ]
+    }
+  ]
+}
