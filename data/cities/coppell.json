@@ -1,0 +1,57 @@
+{
+  "city": "Coppell, Texas",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "In 1843 Sam Houston is said to have spent about six weeks camped under a post oak in what is now Grapevine Springs Park, waiting to sign a peace treaty. The City of Coppell calls it the Sam Houston Treaty Oak and marks it with a sign. Whether this exact trunk sheltered him is tradition rather than record, and nobody has published its age. The park around it is twenty-three acres with features built by the Works Progress Administration.",
+  "meta_description": "The Houston Campsite Oak in Coppell, Texas: a post oak in Grapevine Springs Park where Sam Houston is said to have camped in 1843.",
+  "question_meta": "The Houston Campsite Oak in Coppell, Texas: a post oak in Grapevine Springs Park where Sam Houston is said to have camped in 1843.",
+  "question_answer": "The tree we map for Coppell is the Houston Campsite Oak, a post oak in Grapevine Springs Park, where Sam Houston is said to have camped for about six weeks in 1843. No age has been published for it.",
+  "question_context": "The oak stands in Grapevine Springs Park, a city park open from 30 minutes before sunrise to 30 minutes after sunset. It is about 26 km northwest of central Dallas, reached by car; no public transport walk is established.\n\nThe 1843 date comes from Coppell and Dallas County. Other accounts say 1836 or place the treaty site near Arlington, so the link to this trunk is tradition.\n\nNo age, girth or height has been published for the tree, and our pin is approximate, set in the park rather than on the trunk. A sign marks the tree itself, so once you are in the park there is no guessing which post oak is meant. Parking is at the Coppell Senior and Community Center on West Bethel Road, a short walk from the park. The tree is alive: a visitor who found it bare in December 2019 saw it in full leaf the following spring. If you know how old it is, you can tell us on its page.",
+  "faq": [
+    {
+      "q": "Can I visit the Houston Campsite Oak?",
+      "a": "Yes. It stands in Grapevine Springs Park in Coppell, open from half an hour before sunrise to half an hour after sunset, and a sign marks it."
+    },
+    {
+      "q": "Did Sam Houston really camp under this tree?",
+      "a": "The city and Dallas County say he camped near here for about six weeks in 1843. Whether this exact trunk is the one is tradition rather than record."
+    }
+  ],
+  "oldest_tree_id": "cpl_001",
+  "trees": [
+    {
+      "id": "cpl_001",
+      "name": "Houston Campsite Oak",
+      "species": "Post Oak (Quercus stellata)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Grapevine Springs Park, 700 S Park Road, Coppell, TX 75019",
+        "latitude": 32.9522,
+        "longitude": -97.001,
+        "neighbourhood": "Coppell"
+      },
+      "verified_sources": [
+        "https://www.dallascounty.org/departments/plandev/openspaces/locations/01-grapevine.php",
+        "https://www.coppellhistoricalsociety.org/witness-trees.html",
+        "https://www.carolynhestand.com/blog/2020/11/1/houston-campsite-oak"
+      ],
+      "access": "Public city park maintained by the City of Coppell; open 30 minutes before sunrise to 30 minutes after sunset. Parking at the Coppell Senior & Community Center, 345 W. Bethel Road. The tree is marked with a sign.",
+      "transport": "Car; about 26 km northwest of central Dallas. No public-transport walk established.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Houston_campsite_oak.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Larry D. Moore",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Houston_campsite_oak.jpg",
+        "status": "approved"
+      },
+      "story": "In 1843 Sam Houston spent about six weeks camped under a post oak here, waiting to sign a peace treaty with Native nations. The City of Coppell, which looks after the park, calls the tree the Sam Houston Treaty Oak. Dallas County's account and the Coppell Historical Society agree on the outline: almost six weeks of waiting in 1843, and a treaty that was finally signed months later at Bird's Fort, near present-day Euless.\n\nNot every telling matches. A student article puts the camp in 1836, and the state historical marker for the park places the treaty site near Arlington. Whether this particular trunk is the one Houston slept beneath is tradition rather than record. Nobody has published its age, its girth or its height either. If you know how old it is, tell us.\n\nWhat is on record is that it is alive and doing well. A visitor who came in December 2019 found it bare, returned in spring 2020 to find it in full leaf, and called it healthy.\n\nIt grows in Grapevine Springs Park, 23 acres with features built by the Works Progress Administration. A sign marks it, so there is no guessing which oak carries the name. The park opens half an hour before sunrise and closes half an hour after sunset.",
+      "how_to_recognise": "You can recognise it by the sign that marks it, the one named tree in Grapevine Springs Park. It stands in the park at 700 S Park Road; parking is at the Senior & Community Center on W. Bethel Road."
+    }
+  ]
+}

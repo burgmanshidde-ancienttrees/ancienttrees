@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-26 restart run: 13 photographed trees live from the parked batches
+
+- Thirteen trees with approved photographs went live, parked since 10-22 behind the pace guard: photo-batch-2 (Winterswijk, Hägerum, Bregenz, Hochosterwitz, Leonstein, Ogi, Sakurai, Shikokuchū) and the Texas famous places (Goliad, Coppell, College Station). Four colon reveals in the stories were rewritten; the three Texas places were added to data/us-states.json. Preflight is clean. The site build was not run here (npm was denied), so CI's qa is the first full check.
+- Not done: txf_004 (held photo), the stale `*-verified.json` files, ftw_018 and inn_007 (unwritten), and the three READY Oxford/Madrid leads, which have no photograph. `city_names.py` left Hägerum and Leonstein unresolved.
+
 ## 2026-10-26 09:35 run (short window, rung 4)
 
 No reader photographs or notes, health.py clear. The 10-25 archive batch still waits for Hidde's "verstuur", so no new mail batch. Sourced archive contacts: the Deutsche Dendrologische Gesellschaft (own Bildarchiv and Champion Trees gallery, Berlin/Munich trees) and the Morton Arboretum library (Chicago, a weak tie); recorded in the private archive contacts file, built the database, pushed it. Not found: the Österreichische Dendrologische Gesellschaft (no published address), the Tree Register (address only behind Cloudflare obfuscation, not verified), the Ancient Tree Forum (contact form only). Nothing sent. No trees made; the shelf says REFILL but I spent the window on contacts only.

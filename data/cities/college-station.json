@@ -1,0 +1,59 @@
+{
+  "city": "College Station, Texas",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Texas A&M's Century Tree spreads a crown about 101 feet across, more than twice its own height, beside the Academic Building where Old Main burned in 1912. A bulletin from 1908 describes a live oak planted here in 1891, which would make it somewhere between 110 and 135 years old. It is open campus ground, free to walk up to.",
+  "meta_description": "The Century Tree at Texas A&M in College Station: a live oak with a 101-foot crown, planted around 1891 beside the site of Old Main.",
+  "question_meta": "The Century Tree at Texas A&M in College Station: a live oak with a 101-foot crown, planted around 1891 beside the site of Old Main.",
+  "question_answer": "The tree we map for College Station is the Century Tree, a southern live oak beside the Academic Building on the Texas A&M campus. A 1908 bulletin describes a live oak planted there in 1891, so it is roughly 110 to 135 years old. Its crown spreads about 101 feet.",
+  "question_context": "The Century Tree stands on open grounds at the centre of the Texas A&M campus, beside the Academic Building on the site of Old Main. Campus buses serve the area; check the timetable before you rely on them.\n\nIts age is derived, not recorded: a 1908 bulletin describes a live oak planted in 1891 and a 2018 report matches the bulletin's photograph to this tree. Every account comes from the university or the local station.\n\nThe oak is a southern live oak, the evergreen species of the Gulf coast plain, and it is young for this map: its place here rests on its enormous crown and on the history around it, not on great age. Girth, 333 cm, and height, 13.7 m, come from a forester quoted around 2016, so a fresh measurement would be welcome. Nearby trees have suffered oak wilt, which has not been seen in this one. In 2025 the university rooted more than forty clones of it, so offspring of the Century Tree now grow elsewhere.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in College Station, Texas?",
+      "a": "The Century Tree on the Texas A&M campus, a live oak probably planted around 1891, so roughly 110 to 135 years old."
+    },
+    {
+      "q": "Can I visit the Century Tree?",
+      "a": "Yes. It stands on open campus grounds beside the Academic Building, with no ticket. Campus parking rules apply."
+    }
+  ],
+  "oldest_tree_id": "clg_001",
+  "trees": [
+    {
+      "id": "clg_001",
+      "name": "Century Tree",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "about 135 years",
+      "age_min": 110,
+      "age_max": 135,
+      "age_basis": "derived",
+      "girth_cm": 333,
+      "height_m": 13.7,
+      "location": {
+        "address": "Texas A&M University main campus, beside the Academic Building (site of Old Main), College Station, TX 77843",
+        "latitude": 30.6159,
+        "longitude": -96.3414,
+        "neighbourhood": "Texas A&M University campus"
+      },
+      "verified_sources": [
+        "https://kamu.tamu.edu/from-acorns-to-i-do-10-facts-about-the-century-tree/",
+        "https://www.aggienetwork.com/century-tree-125",
+        "https://www.kbtx.com/content/news/Uncovering-the-origin-of-the-Century-Tree--498247281.html",
+        "https://www.arch.tamu.edu/news/2025/06/06/texas-ams-century-tree-gets-new-life-through-successful-cloning"
+      ],
+      "access": "Open outdoor campus grounds beside the Academic Building; no ticket, no gate seen in sources. Visitor parking rules on campus apply.",
+      "transport": "On the central campus of Texas A&M; Aggie Spirit campus buses serve the Academic Building area. Not checked against a timetable.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Century_Tree.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Ed Schipul",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Century_Tree.jpg",
+        "status": "approved"
+      },
+      "story": "The crown of the Century Tree spreads about 101 feet, more than twice as wide as the tree is tall. Nobody wrote down when it was planted. A 1908 bulletin from the Texas Agricultural Experiment Station describes a live oak set out in 1891 on the hard-tramped parade ground, an 18-inch sapling that had reached 28 feet in sixteen years. In 2018 KBTX reported that the bulletin's photograph shows this tree beside Old Main, and a Texas A&M Forest Service forester calls it a good candidate. Before that match, the best guess was around 1900 or later. So it is somewhere between about 110 and 135 years old, and every account of it comes from the university or the local station.\n\nOld Main burned in 1912. The oak outlived it, and its roots are said to have found a cistern under the lost building. About a decade ago it measured some 45 feet tall with a trunk nearly 11 feet round. Oak wilt struck trees nearby and has not been seen in this one; the grounds arborist pruned its deadwood and fed the soil after a nitrogen shortfall.\n\nCampus tradition says a couple who walk beneath it together stay together, which is why people propose and marry here. In 2025 the university cloned it, rooting more than 40 copies.\n\nIt is young for this map. History and that crown are what earn it a place.",
+      "how_to_recognise": "You can recognise it by the crown, about 101 feet across and more than twice the tree's height. It stands on its own beside the Academic Building, on the site of the Old Main that burned in 1912."
+    }
+  ]
+}
