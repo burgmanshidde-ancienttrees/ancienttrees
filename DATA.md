@@ -25,6 +25,67 @@ event on the list is unaffected.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## Weekly analysis 2026-10-26
+
+Thirteenth weekly analysis. Compares 10-19 to 10-25 with 10-12 to 10-18, read
+from the 10-25 daily entry. Google's last three days are still filling, so
+its row can move. Volumes are small; nothing below is a trend unless it says so.
+
+**Scorecard**
+
+| Week | Impressions | Clicks | CTR | Avg position | Visitors (GA, new) | Directions (web) | App-CTA | App downloads (first-time) | Android waitlist total | Readers' contributions |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 10-12 to 10-18 | 317 | 12 | 3.8% | 30 to 53 | 25 | 0 (7d) | 14 (7d) | 18 | n/a | 4 |
+| 10-19 to 10-25 | 296 (partial) | 10 | 3.4% | 26 to 59 | 85 | not in the entry (8 ever) | not in the entry (117 ever) | 38 | 42 (20 this week) | 11 |
+
+Bing, same weeks: 523 impressions and 23 clicks, then 554 and 24 (4.3% CTR);
+index 2,775 to 3,428 pages. Device split and per-visit ratios are not in the
+10-25 entry (the audience section failed that day), so no ratio is claimed.
+App return: 9 of 13 phones back within 30 days against 6 of 15.
+
+**What moved:**
+1. Google is flat at the floor for a fourth week: about 42 impressions a day,
+   10 clicks. Position is all over (26 to 59) on single-digit clicks, which is
+   noise.
+2. Visitors jumped, from one day: 10-24 had 41 people against 3 to 15 on the
+   other days, with 23 app downloads and 15 Android waitlist signups that
+   day. The same day wilder.pt first linked us (12 visits, 8 people in the
+   week, 5th backlink) and Facebook sent 11 visits. Lisbon (45 pageviews, 20
+   people), Porto and Sintra lead the pages, so this is Portuguese interest.
+3. Bing again out-clicks Google, 24 against 10, and its index keeps growing.
+4. Readers gave more: contributions 4 to 11, accounts 3 to 16, trees collected
+   1 to 13, saved 7 to 19, 16 app photos. Mostly one weekend spike; small
+   numbers.
+5. The machine: 6 runs of about 28 minutes in the last day, 0 trees. Night
+   runs are mostly re-checking state; the digest says no new outreach
+   contacts in two days.
+
+**Suggestions, ranked:**
+1. **[run]** Source nature magazines and websites per focus country (the
+   Wilder model) into the outreach database. One placed link produced the
+   week's only spike (41 visitors, 23 downloads, 15 signups in a day), while
+   the digest shows nature 0 ready to mail and no new contacts in two days.
+   Start with Portugal-adjacent and Spain/Italy titles; drafts only.
+2. **[sessie]** Fix two broken digest blocks seen in the 10-25 entry:
+   `audience_section failed (name 'MARKERS' is not defined)` and App Store
+   downloads "unreadable (timed out)". Without the first, device splits and
+   per-visit ratios cannot be kept on this scorecard.
+3. **[run]** Portugal depth: Lisbon, Porto and Sintra drew 71 of 474
+   pageviews. Check each has photographs, access lines and a visible way to
+   save a tree, so the next link-driven day converts; Porto's ambassador
+   request is already open.
+4. **[run]** Bing converts, so give its winning pages (oldest tree china
+   c8/i4 p12, fig tree in square alicante c2, big trees of quebec city c2,
+   queen square bristol, oak tree in zurich) a photograph, register link and
+   access line. Still the same call as last week.
+5. **[FOR HIDDE]** Android waitlist is 42 total, 20 in this week, against 38
+   iOS downloads. Is an Android build still phase 2, or does that demand move
+   it? A decision to note, not urgent.
+
+**Watch next week:** whether visitors stay above about 10 a day without a
+new link (if not, 10-24 was a one-off), Google days above 100 impressions,
+and the Sequoia / Sherman page (31 impressions, position 73.6 again).
+
 ## 2026-10-25 (previous UTC day)
 
 **Today: 4 android waitlist signups arrived yesterday (42 total); 3 accounts were opened yesterday (45 total).**
