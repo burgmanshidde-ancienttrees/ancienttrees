@@ -68,13 +68,6 @@
    "trees": 6
   },
   {
-   "city": "Lisbon",
-   "country": "Portugal",
-   "slug": "lisbon",
-   "status": "published",
-   "trees": 36
-  },
-  {
    "city": "Paris",
    "country": "France",
    "slug": "paris",
@@ -90,12 +83,27 @@
    "trees": 30
   },
   {
+   "city": "Lisbon",
+   "country": "Portugal",
+   "slug": "lisbon",
+   "status": "published",
+   "trees": 37
+  },
+  {
    "city": "Cambridge",
    "country": "United Kingdom",
    "slug": "cambridge",
    "status": "published",
    "demand_views_90d": 97974,
    "trees": 5
+  },
+  {
+   "city": "Singapore",
+   "country": "Singapore",
+   "slug": "singapore",
+   "status": "published",
+   "demand_views_90d": 967821,
+   "trees": 34
   },
   {
    "city": "Seville",
@@ -105,28 +113,12 @@
    "trees": 44
   },
   {
-   "city": "Antwerp",
-   "country": "Belgium",
-   "slug": "antwerp",
-   "status": "published",
-   "demand_views_90d": 128289,
-   "trees": 10
-  },
-  {
    "city": "Arnhem",
    "country": "Netherlands",
    "slug": "arnhem",
    "status": "published",
    "demand_views_90d": 31478,
    "trees": 32
-  },
-  {
-   "city": "Haarlem",
-   "country": "Netherlands",
-   "slug": "haarlem",
-   "status": "published",
-   "demand_views_90d": 33960,
-   "trees": 21
   },
   {
    "city": "Milan",
@@ -151,19 +143,20 @@
    "trees": 12
   },
   {
-   "city": "Edinburgh",
-   "country": "United Kingdom",
-   "slug": "edinburgh",
-   "status": "published",
-   "trees": 16
-  },
-  {
    "city": "Zaragoza",
    "country": "Spain",
    "slug": "zaragoza",
    "status": "published",
    "demand_views_90d": 87580,
    "trees": 7
+  },
+  {
+   "city": "Antwerp",
+   "country": "Belgium",
+   "slug": "antwerp",
+   "status": "published",
+   "demand_views_90d": 128289,
+   "trees": 10
   },
   {
    "city": "Malaga",
@@ -180,13 +173,6 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 11
-  },
-  {
-   "city": "Vienna",
-   "country": "Austria",
-   "slug": "vienna",
-   "status": "published",
-   "trees": 58
   },
   {
    "city": "Venice",
@@ -241,35 +227,19 @@
    "trees": 21
   },
   {
+   "city": "Edinburgh",
+   "country": "United Kingdom",
+   "slug": "edinburgh",
+   "status": "published",
+   "trees": 16
+  },
+  {
    "city": "Vancouver",
    "country": "Canada",
    "slug": "vancouver",
    "status": "published",
    "demand_views_90d": null,
    "trees": 7
-  },
-  {
-   "city": "Houston",
-   "country": "United States",
-   "slug": "houston",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 11
-  },
-  {
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "status": "published",
-   "trees": 21
-  },
-  {
-   "city": "Taipei",
-   "country": "Taiwan",
-   "slug": "taipei",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
   },
   {
    "city": "Alicante",
@@ -292,6 +262,13 @@
    "slug": "barcelona",
    "status": "published",
    "trees": 56
+  },
+  {
+   "city": "Enschede",
+   "country": "Netherlands",
+   "slug": "enschede",
+   "status": "published",
+   "trees": 13
   },
   {
    "city": "Maastricht",
@@ -348,6 +325,21 @@
    "trees": 7
   },
   {
+   "city": "Houston",
+   "country": "United States",
+   "slug": "houston",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 11
+  },
+  {
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "status": "published",
+   "trees": 21
+  },
+  {
    "city": "Cagliari",
    "country": "Italy",
    "slug": "cagliari",
@@ -362,6 +354,14 @@
    "status": "published",
    "demand_views_90d": 34962,
    "trees": 5
+  },
+  {
+   "city": "Los Angeles",
+   "country": "United States",
+   "slug": "los-angeles",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 11
   },
   {
    "city": "Braga",
@@ -381,20 +381,20 @@
    "trees": 5
   },
   {
-   "city": "Los Angeles",
-   "country": "United States",
-   "slug": "los-angeles",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 11
-  },
-  {
    "city": "Girona",
    "country": "Spain",
    "slug": "girona",
    "status": "published",
    "trees": 7,
    "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
+  },
+  {
+   "city": "Santiago de Compostela",
+   "country": "Spain",
+   "slug": "santiago-de-compostela",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Madrid",
@@ -404,9 +404,9 @@
    "trees": 17
   },
   {
-   "city": "Santiago de Compostela",
-   "country": "Spain",
-   "slug": "santiago-de-compostela",
+   "city": "Zagreb",
+   "country": "Croatia",
+   "slug": "zagreb",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -420,9 +420,17 @@
    "note": "Opened 2026-08-31 from Castilla y Leon's register of notable trees (ORDEN MAM/1156/2006). Five of six are in the royal gardens at La Granja, 11 km out. The register has no age column, so no tree here carries an age, and its trunk column is not quoted anywhere because reading it as diameter makes AS-SG-07 the thickest sequoia in Europe."
   },
   {
-   "city": "Zagreb",
-   "country": "Croatia",
-   "slug": "zagreb",
+   "city": "Bogota",
+   "country": "Colombia",
+   "slug": "bogota",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Shanghai",
+   "country": "China",
+   "slug": "shanghai",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
@@ -444,11 +452,11 @@
    "trees": 6
   },
   {
-   "city": "Bogota",
-   "country": "Colombia",
-   "slug": "bogota",
+   "city": "Funchal",
+   "country": "Portugal",
+   "slug": "funchal",
    "status": "pending",
-   "demand_views_90d": null,
+   "demand_views_90d": 174351,
    "trees": 0
   },
   {
@@ -459,14 +467,6 @@
    "note": "Hidde, 2026-08-02: he is travelling there, so this one is worth doing properly and soon. Search order per Step 1: name the shrine and temple precincts first (Kushida-jinja and its ginkgo, Sumiyoshi-jinja, Shofuku-ji, Tochoji, Ohori Park, Maizuru Park and the castle ruins, Rakusuien, Atago-jinja), then the national Natural Monument register, then the generic sweep. Note the CURATION.md entry closing Fukuoka is about the REGISTER LAYER only (no openly licensed prefectural dataset), which says nothing about whether the city has remarkable trees to curate.",
    "demand_views_90d": 77485,
    "trees": 18
-  },
-  {
-   "city": "Shanghai",
-   "country": "China",
-   "slug": "shanghai",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
   },
   {
    "city": "Nagoya",
@@ -485,12 +485,12 @@
    "trees": 4
   },
   {
-   "city": "Funchal",
-   "country": "Portugal",
-   "slug": "funchal",
-   "status": "pending",
-   "demand_views_90d": 174351,
-   "trees": 0
+   "city": "Toronto",
+   "country": "Canada",
+   "slug": "toronto",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
   },
   {
    "city": "Berlin",
@@ -515,20 +515,19 @@
    "trees": 30
   },
   {
-   "city": "Singapore",
-   "country": "Singapore",
-   "slug": "singapore",
-   "status": "published",
-   "demand_views_90d": 967821,
-   "trees": 34
-  },
-  {
    "city": "Tallinn",
    "country": "Estonia",
    "slug": "tallinn",
    "status": "published",
    "demand_views_90d": null,
    "trees": 9
+  },
+  {
+   "city": "Vienna",
+   "country": "Austria",
+   "slug": "vienna",
+   "status": "published",
+   "trees": 58
   },
   {
    "city": "Vilnius",
@@ -555,14 +554,6 @@
    "trees": 5
   },
   {
-   "city": "Toronto",
-   "country": "Canada",
-   "slug": "toronto",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
-  },
-  {
    "city": "Galway",
    "country": "Ireland",
    "slug": "galway",
@@ -586,14 +577,6 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 4
-  },
-  {
-   "city": "Helsinki",
-   "country": "Finland",
-   "slug": "helsinki",
-   "status": "published",
-   "demand_views_90d": 148908,
-   "trees": 12
   },
   {
    "city": "Kobe",
@@ -633,20 +616,20 @@
    "trees": 27
   },
   {
-   "city": "Oxford",
-   "country": "United Kingdom",
-   "slug": "oxford",
-   "status": "published",
-   "demand_views_90d": 111583,
-   "trees": 5
-  },
-  {
    "city": "Glasgow",
    "country": "United Kingdom",
    "slug": "glasgow",
    "status": "published",
    "demand_views_90d": 253705,
    "trees": 6
+  },
+  {
+   "city": "Oxford",
+   "country": "United Kingdom",
+   "slug": "oxford",
+   "status": "published",
+   "demand_views_90d": 111583,
+   "trees": 5
   },
   {
    "city": "Sofia",
@@ -665,14 +648,6 @@
    "trees": 0
   },
   {
-   "city": "Montreal",
-   "country": "Canada",
-   "slug": "montreal",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 13
-  },
-  {
    "city": "Tel Aviv",
    "country": "Israel",
    "slug": "tel-aviv",
@@ -687,6 +662,22 @@
    "status": "published",
    "demand_views_90d": 176863,
    "trees": 35
+  },
+  {
+   "city": "Montreal",
+   "country": "Canada",
+   "slug": "montreal",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 13
+  },
+  {
+   "city": "Taipei",
+   "country": "Taiwan",
+   "slug": "taipei",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
   },
   {
    "city": "Eindhoven",
@@ -782,14 +773,6 @@
    "trees": 38
   },
   {
-   "city": "Hong Kong",
-   "country": "China",
-   "slug": "hong-kong",
-   "status": "published",
-   "demand_views_90d": 689212,
-   "trees": 21
-  },
-  {
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -804,6 +787,14 @@
    "status": "published",
    "demand_views_90d": 125046,
    "trees": 4
+  },
+  {
+   "city": "Hong Kong",
+   "country": "China",
+   "slug": "hong-kong",
+   "status": "published",
+   "demand_views_90d": 689212,
+   "trees": 21
   },
   {
    "city": "Turin",
@@ -838,6 +829,14 @@
    "status": "published",
    "demand_views_90d": 31401,
    "trees": 17
+  },
+  {
+   "city": "Helsinki",
+   "country": "Finland",
+   "slug": "helsinki",
+   "status": "published",
+   "demand_views_90d": 148908,
+   "trees": 12
   },
   {
    "city": "Poznan",
@@ -983,14 +982,6 @@
    "trees": 20
   },
   {
-   "city": "Beijing",
-   "country": "China",
-   "slug": "beijing",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
-  },
-  {
    "city": "Tilburg",
    "country": "Netherlands",
    "slug": "tilburg",
@@ -1003,6 +994,14 @@
    "slug": "alkmaar",
    "status": "published",
    "trees": 11
+  },
+  {
+   "city": "Beijing",
+   "country": "China",
+   "slug": "beijing",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 7
   },
   {
    "city": "Oslo",
@@ -1179,6 +1178,14 @@
    "trees": 21
   },
   {
+   "city": "Haarlem",
+   "country": "Netherlands",
+   "slug": "haarlem",
+   "status": "published",
+   "demand_views_90d": 33960,
+   "trees": 21
+  },
+  {
    "city": "Kanazawa",
    "country": "Japan",
    "slug": "kanazawa",
@@ -1250,13 +1257,6 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 1
-  },
-  {
-   "city": "Enschede",
-   "country": "Netherlands",
-   "slug": "enschede",
-   "status": "published",
-   "trees": 13
   },
   {
    "city": "Sintra",
