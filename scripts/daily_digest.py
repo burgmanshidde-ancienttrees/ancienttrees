@@ -1326,11 +1326,12 @@ SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 # submissions, and the session reading it believed them for a paragraph. A
 # number that includes us flatters us, so ours are excluded by id.
 TEST_SUBMISSION_IDS = {1, 2, 3}
-# The iOS app went live on 2026-09-03. Before that the waitlist was interest in
-# any app (sources "app", "walks-modal", one "chain-test"); from then on it is
-# Android only. The digest counts Android from this day; the older rows stay in
-# the table, they are people who asked to hear about the app (Hidde, 2026-10-27).
-ANDROID_SINCE = "2026-09-03"
+# Waitlist rows that are not Android interest (Hidde, 2026-10-27, going through
+# the pre-launch rows): 1 and 3 are our own test addresses, 4 is his father, 17 a
+# colleague with an iPhone. Every other row counts as Android, the pre-launch
+# ones included, since any of them may have an Android phone. The rows stay in
+# the table; this only keeps them out of the count.
+WAITLIST_NOT_ANDROID = {1, 3, 4, 17}
 
 # Our own accounts, keyed by sha1 of the Supabase user id. Hidde, 2026-09-02,
 # reading that morning's digest: "im the user who addes something to baarn".
@@ -1619,9 +1620,10 @@ def product_section(today):
         def bump(day_, label_):
             series.setdefault(day_, {})[label_] = series.setdefault(day_, {}).get(label_, 0) + 1
 
-        rows_, _ = _supa("/rest/v1/waitlist?select=created_at&created_at=gte.%s"
-                         % ANDROID_SINCE, key)
+        rows_, _ = _supa("/rest/v1/waitlist?select=id,created_at", key)
         for r in rows_:
+            if r.get("id") in WAITLIST_NOT_ANDROID:
+                continue
             bump(str(r.get("created_at"))[:10], "waitlist")
         # Dedupe form double-submits before counting: on 2026-08-20 one reader's
         # Toulouse correction arrived as three identical rows (CURATION.md, same
@@ -1734,9 +1736,10 @@ def product_section(today):
             continue
         try:
             sel = ("?select=id,created_at,kind,city,tree,why,user_id"
-                   if label == "Submissions"
-                   else "?select=id,created_at&created_at=gte.%s" % ANDROID_SINCE)
+                   if label == "Submissions" else "?select=id,created_at")
             allrows, _ = _supa(path + sel, key)
+            if label != "Submissions":
+                allrows = [r for r in allrows if r.get("id") not in WAITLIST_NOT_ANDROID]
             if label == "Submissions":
                 allrows = [r for r in allrows if r.get("id") not in TEST_SUBMISSION_IDS]
                 allrows = [r for r in allrows if not is_ours(r.get("user_id"))]
