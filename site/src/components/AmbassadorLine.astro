@@ -93,16 +93,27 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
 )}
 {place && requestCity && (
   <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
-    <button type="button" class="ambassador ambassador-apply" aria-label={taken ? openTitle : `${openTitle}. ${U.ambassadorApply}`}>
-      <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
-        <Fragment set:html={icon("seal-check", "bold", "ic")} />
-      </span>
-      <span class="ambassador-text">
-        <span class="ambassador-name">{openTitle}</span>
-        <span class="ambassador-role" data-done={U.ambassadorApplied}>{U.ambassadorWantedLine}</span>
-      </span>
-      <svg class="ambassador-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
+    {taken ? (
+      /* SECOND IN RANK under the person (Hidde, 2026-10-27: "in hierarchy moet
+         dat duidelijk de tweede zijn", "niet groen"): Atlas Obscura's "Make an
+         Edit" under its contributors, a thin rule then a line icon and plain
+         text, here at the size and grey of the role line under the name. */
+      <button type="button" class="ambassador-apply ambassador-act" aria-label={openTitle}>
+        <span class="ambassador-act-ic" aria-hidden="true"><Fragment set:html={icon("seal-check", "bold", "ic")} /></span>
+        <span class="ambassador-role" data-done={U.ambassadorApplied}>{openTitle}</span>
+      </button>
+    ) : (
+      <button type="button" class="ambassador ambassador-apply" aria-label={`${openTitle}. ${U.ambassadorApply}`}>
+        <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
+          <Fragment set:html={icon("seal-check", "bold", "ic")} />
+        </span>
+        <span class="ambassador-text">
+          <span class="ambassador-name">{openTitle}</span>
+          <span class="ambassador-role" data-done={U.ambassadorApplied}>{U.ambassadorWantedLine}</span>
+        </span>
+        <Fragment set:html={icon("caret-right", "bold", "ic ambassador-chev")} />
+      </button>
+    )}
   </div>
   <Sheet lang={lang} class="amb-dialog" id="amb-dialog" aria-labelledby="amb-title">
     {/* THE ONE SHEET (components/Sheet.astro, 2026-10-10): a sheet from
@@ -241,13 +252,21 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
   .ambassador-apply .ambassador-text { flex: 1; }
   .ambassador-chev { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
   .ambassador-asked .ambassador-chev { display: none; }
+  .ambassador-apply :global(.ambassador-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
+  .ambassador-asked :global(.ambassador-chev) { display: none; }
   /* The named row as a link (2026-10-19): the open seat's row, same chevron. */
   .ambassador-link { min-height: 44px; text-decoration: none; color: inherit; }
   .ambassador-link .ambassador-text { flex: 1; }
   .ambassador-link :global(.ambassador-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
   @media (hover: hover) { .ambassador-link:hover .ambassador-name { text-decoration: underline; } }
-  /* Under a named ambassador the open row sits in the same list rhythm. */
-  .ambassador-open-after { margin-top: 10px; }
+  /* Under a named ambassador: a thin rule, then the quiet action line. */
+  .ambassador-open-after { margin-top: 10px; border-top: 1px solid var(--cream-dark); }
+  .ambassador-act { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px;
+    padding: 0; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; color: inherit; }
+  .ambassador-act-ic { flex: none; width: 32px; display: grid; place-items: center; }
+  .ambassador-act-ic :global(.ic) { width: 14px; height: 14px; fill: var(--ink-mid); }
+  @media (hover: hover) { .ambassador-act:not(:disabled):hover .ambassador-role { text-decoration: underline; } }
+  .ambassador-act:disabled { cursor: default; }
   .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
   .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }
 </style>

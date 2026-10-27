@@ -246,33 +246,62 @@ struct AmbassadorWantedRow: View {
     /// thing clickable instead of adding a huge button"), an iOS list row with
     /// a chevron, as Google Maps draws "Join Local Guides". The website's row
     /// is the same (AmbassadorLine.astro).
-    var body: some View {
-        Button(action: tap) {
+    private var openRow: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "checkmark.seal")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 32, height: 32)
+                .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
+            VStack(alignment: .leading, spacing: 1) {
+                Text("\(place) is looking for an ambassador")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundStyle(Brand.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(asked ? "Request sent." : "Help us improve this list.")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 8)
+            if !asked {
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(Brand.inkSoft.opacity(0.6))
+            }
+        }
+        .frame(minHeight: 44)
+        .contentShape(.rect)
+    }
+
+    /// SECOND IN RANK under the person (Hidde, 2026-10-27: "in hierarchy moet
+    /// dat duidelijk de tweede zijn", "niet groen"): Atlas Obscura's "Make an
+    /// Edit" under its contributors, a thin rule, then a small line icon and
+    /// grey text at the size of the role line. The website is the same
+    /// (AmbassadorLine.astro, .ambassador-act).
+    private var seatedLine: some View {
+        VStack(spacing: 0) {
+            // A Divider inside a Button label draws nothing, so the rule is a
+            // one-point hairline.
+            Rectangle().fill(Brand.hairline).frame(height: 1)
             HStack(spacing: 10) {
                 Image(systemName: "checkmark.seal")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(Brand.moss)
-                    .frame(width: 32, height: 32)
-                    .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
-                VStack(alignment: .leading, spacing: 1) {
-                    Text(seated ? "Become an ambassador" : "\(place) is looking for an ambassador")
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(Brand.ink)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Text(asked ? "Request sent." : "Help us improve this list.")
-                        .font(.system(size: 12))
-                        .foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                Spacer(minLength: 8)
-                if !asked {
-                    Image(systemName: "chevron.right")
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(Brand.inkSoft.opacity(0.6))
-                }
+                    .font(.system(size: 12))
+                    .foregroundStyle(Brand.inkSoft)
+                    .frame(width: 32)
+                Text(asked ? "Request sent." : "Become an ambassador")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Brand.inkSoft)
+                Spacer(minLength: 0)
             }
             .frame(minHeight: 44)
-            .contentShape(.rect)
+        }
+        .contentShape(.rect)
+    }
+
+    var body: some View {
+        Button(action: tap) {
+            if seated { seatedLine } else { openRow }
         }
         .buttonStyle(.plain)
         .disabled(asked || sending)
