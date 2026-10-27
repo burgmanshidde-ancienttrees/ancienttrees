@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-27 night run (second retry window)
+
+- Shipped 0 trees. The 3 READY leads are false positives: Oxford's two are a young oak and a possibly dead chestnut with no photo, Madrid's has none either. The 56 "awaiting a writer" are mostly stale files or duplicates (passcheck --pending flags them). The only real unpublished entries are sfo_012/013, ftw_018, inn_007, txf_004, all without a photograph.
+- Retried the Bristol register (BACKUP): the National Trust Leigh Woods veteran walk names 12 trees (Parish Yew about 500 years, an oak pollard about 400) but gives no girth, no coordinates and no open photos. Still stalled; the note in data/register-scouting.json says what would unblock it.
+- san-francisco claim left standing: its four verified entries are unwritten and wait for photographs. sfo_014 and sfo_015 are duplicates of sfo_003 and sfo_006.
+
 ## 2026-10-27 night run (retry window, after an early stop)
 
 - Shipped 0 trees. Shelf check: 3 READY leads (oxford 2, madrid 1), under the six-candidate floor for a write pass and none has a photograph, so none can go live under the photographed-only supply rule. Stale research files make up most of the "awaiting a writer" count.
