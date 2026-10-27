@@ -184,6 +184,10 @@ export interface UIStrings {
   ambassadorApply: string;
   ambassadorApplied: string;
   ambassadorAskTitle: (place: string) => string;
+  /** The open-seat row and sheet title where somebody already looks after
+   *  the place (Hidde, 2026-10-27: a second may still sign up). */
+  ambassadorJoin: string;
+  ambassadorJoinTitle: (place: string) => string;
   /** The list of a place's ambassadors, for a screen reader. */
   ambassadorsLabel: string;
   ambassadorAskBody: string;
@@ -627,6 +631,8 @@ const EN: UIStrings = {
   ambassadorApply: "Become the ambassador",
   ambassadorApplied: "Request sent.",
   ambassadorAskTitle: (place) => `Become the ambassador for ${place}`,
+  ambassadorJoin: "Become an ambassador",
+  ambassadorJoinTitle: (place) => `Become an ambassador for ${place}`,
   ambassadorsLabel: "Ambassadors",
   ambassadorAskBody: "An ambassador helps us get the trees of this place right.",
   ambassadorAskPoints: ["Add photographs of the trees", "Check the facts and tell us which trees are missing", "Help put together walks past them"],
@@ -1200,6 +1206,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Quiero hacerlo",
     ambassadorApplied: "Solicitud enviada.",
     ambassadorAskTitle: (place) => `¿Quieres cuidar la lista de ${place}?`,
+    ambassadorJoin: "Cuida la lista con nosotros",
+    ambassadorJoinTitle: (place) => `¿Quieres cuidar la lista de ${place}?`,
     ambassadorsLabel: "Embajadores",
     ambassadorAskBody: "Un embajador nos ayuda a acertar con los \u00e1rboles de este lugar.",
     ambassadorAskPoints: ["Añade fotos de los árboles", "Comprueba los datos y dinos qué árboles faltan", "Ayuda a preparar paseos que pasen por ellos"],
@@ -1523,6 +1531,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Mi candido",
     ambassadorApplied: "Richiesta inviata.",
     ambassadorAskTitle: (place) => `Vuoi curare la lista di ${place}?`,
+    ambassadorJoin: "Cura la lista con noi",
+    ambassadorJoinTitle: (place) => `Vuoi curare la lista di ${place}?`,
     ambassadorsLabel: "Ambasciatori",
     ambassadorAskBody: "Un ambasciatore ci aiuta a raccontare bene gli alberi di questo posto.",
     ambassadorAskPoints: ["Aggiungi foto degli alberi", "Controlla i dati e dicci quali alberi mancano", "Aiuta a preparare passeggiate che li toccano"],
@@ -1846,6 +1856,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Ik doe mee",
     ambassadorApplied: "Aanvraag verstuurd.",
     ambassadorAskTitle: (place) => `Ambassadeur worden van ${place}?`,
+    ambassadorJoin: "Word ambassadeur",
+    ambassadorJoinTitle: (place) => `Ambassadeur worden van ${place}?`,
     ambassadorsLabel: "Ambassadeurs",
     ambassadorAskBody: "Een ambassadeur helpt ons de bomen van deze plek goed te krijgen.",
     ambassadorAskPoints: ["Voeg foto's van de bomen toe", "Controleer de feiten en vertel ons welke bomen ontbreken", "Help wandelingen langs de bomen samen te stellen"],
@@ -2169,6 +2181,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Ich mache mit",
     ambassadorApplied: "Anfrage gesendet.",
     ambassadorAskTitle: (place) => `Die Liste für ${place} betreuen?`,
+    ambassadorJoin: "Die Liste mitbetreuen",
+    ambassadorJoinTitle: (place) => `Die Liste für ${place} betreuen?`,
     ambassadorsLabel: "Botschafter",
     ambassadorAskBody: "Ein Botschafter hilft uns, die B\u00e4ume dieses Ortes richtig darzustellen.",
     ambassadorAskPoints: ["Füge Fotos der Bäume hinzu", "Prüfe die Angaben und sag uns, welche Bäume fehlen", "Hilf mit, Spaziergänge zu den Bäumen zusammenzustellen"],
@@ -2492,6 +2506,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Quero participar",
     ambassadorApplied: "Pedido enviado.",
     ambassadorAskTitle: (place) => `Quer cuidar da lista de ${place}?`,
+    ambassadorJoin: "Cuide da lista connosco",
+    ambassadorJoinTitle: (place) => `Quer cuidar da lista de ${place}?`,
     ambassadorsLabel: "Embaixadores",
     ambassadorAskBody: "Um embaixador ajuda-nos a acertar nas \u00e1rvores deste lugar.",
     ambassadorAskPoints: ["Acrescente fotografias das árvores", "Confirme os dados e diga-nos que árvores faltam", "Ajude a preparar passeios que passem por elas"],
@@ -2815,6 +2831,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Ça m'intéresse",
     ambassadorApplied: "Demande envoyée.",
     ambassadorAskTitle: (place) => `Veiller sur la liste de ${place}\u00a0?`,
+    ambassadorJoin: "Veiller sur la liste avec nous",
+    ambassadorJoinTitle: (place) => `Veiller sur la liste de ${place}\u00a0?`,
     ambassadorsLabel: "Ambassadeurs",
     ambassadorAskBody: "Un ambassadeur nous aide \u00e0 bien pr\u00e9senter les arbres de ce lieu.",
     ambassadorAskPoints: ["Ajoutez des photos des arbres", "Vérifiez les faits et dites-nous quels arbres manquent", "Aidez à composer des promenades qui passent par eux"],
@@ -3137,6 +3155,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "応募する",
     ambassadorApplied: "申請を送信しました。",
     ambassadorAskTitle: (place) => `${place}のアンバサダーになりますか？`,
+    ambassadorJoin: "アンバサダーになる",
+    ambassadorJoinTitle: (place) => `${place}のアンバサダーになりますか？`,
     ambassadorsLabel: "アンバサダー",
     ambassadorAskBody: "\u30a2\u30f3\u30d0\u30b5\u30c0\u30fc\u306f\u3001\u3053\u306e\u5834\u6240\u306e\u6728\u3092\u6b63\u3057\u304f\u4f1d\u3048\u308b\u624b\u52a9\u3051\u3092\u3057\u3066\u304f\u308c\u307e\u3059\u3002",
     ambassadorAskPoints: ["木の写真を追加する", "情報を確かめ、足りない木を教える", "木をめぐる散歩コースづくりを手伝う"],

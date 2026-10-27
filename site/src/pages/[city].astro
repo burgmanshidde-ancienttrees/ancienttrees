@@ -292,7 +292,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="city-intro">
         <p class="lede">{intro}</p>
         <button type="button" class="city-intro-more">Read more</button>
-        <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={placeHasAmbassador(city.id) ? undefined : cityName} />
+        <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} seated={placeHasAmbassador(city.id)} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <a class="passport-save" href="/account#saved">{ui("en").seeCollection}</a>

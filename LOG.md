@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-27 session with Hidde: a second ambassador may sign up
+
+- **Product:** a place that already has an ambassador keeps the open row under that person, "Become an ambassador", and the sheet says "an" instead of "the". Web in all seven languages and the app; the app was looked at in the simulator on Florence (row and sheet). The website is checked by the CI build only, no local Node. Home's "your city is looking" row stays for empty places only, and --invite-scan still mails only places nobody holds. CONVENTIONS.md "the open seat" carries the reference.
+- **Inês (Wilder):** her Bucaco request, row 503, was her own test (her mail of 2026-10-26); noted in data/ambassadors.json and left out of the digest.
+- For Hidde: the next app build carries the second-ambassador row.
+
 ## 2026-10-27 session with Hidde: digest cleanup, sightings no longer re-sent, Miguel's five places
 - **App, next build**: the catch-up after sign-in now sends only sightings that changed (a fingerprint of what the account last received). Until now every new session re-sent every sighting and stamped it as freshly saved, which is why the Tangier fig came back on the digest as a new photograph. Seven unit tests, whole unit-test target green on iOS 26; merged to main. For Hidde: next build carries the fix for sightings re-sent on every sign-in.
 - **Digest**: an app sighting shows again only when its content changed (scripts/sighting_changes.py, data/sightings-shown.json, 93 seeded). The Android waitlist counts every row except four Hidde named (two test addresses, family, a colleague with an iPhone): 44, not 48.

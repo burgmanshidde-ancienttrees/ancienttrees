@@ -191,9 +191,10 @@ struct PlaceMapPage: View {
                             AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
                         }
                     }
-                    // Nobody named: the open seat, as the website draws it,
-                    // unless an ambassador holds it who is not named yet.
-                    if named.isEmpty && !catalogue.facets.seated(city: slug) { AmbassadorWantedRow(place: title) }
+                    // The open seat, as the website draws it. A place somebody
+                    // already looks after keeps the row, asking for "an"
+                    // ambassador (Hidde, 2026-10-27).
+                    AmbassadorWantedRow(place: title, seated: !named.isEmpty || catalogue.facets.seated(city: slug))
                 }
                 ForEach(inTown) { t in card(t) }
                 // A DAY TRIP AWAY, on the website's word (Hidde approved the

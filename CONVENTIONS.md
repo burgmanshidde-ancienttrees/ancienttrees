@@ -3252,6 +3252,15 @@ asks the questions, the badge follows the answer. Same row on the app's city
 page. Where we differ from komoot: at our volume nobody earns a region by
 upvotes, so the seat has to be offered rather than waited for.
 
+**A second ambassador (2026-10-27).** Hidde: "moeten we het mogelijk maken
+dat ook al er een ambassadeur is er alsnog een tweede kan aanmelden". Google's
+"Join Local Guides" is offered however many guides a place has, and a Reddit
+community recruits more moderators beside the ones it has; only komoot keeps
+one Pioneer per region. So the open row stays under a named ambassador, the
+same dashed seal and chevron, reading "Become an ambassador" (Hidde chose
+the mockup and dropped "too"), and the sheet says "an" for "the". The
+automatic invitation (--invite-scan) still goes only to places nobody holds.
+
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 
 **The interaction: a public page names the person who looks after it.** Looked

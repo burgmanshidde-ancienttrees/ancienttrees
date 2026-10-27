@@ -222,6 +222,10 @@ struct AmbassadorRow: View {
 /// the person's answer to our mail, never the tap.
 struct AmbassadorWantedRow: View {
     let place: String
+    /// Somebody already looks after this place (Hidde, 2026-10-27: a second
+    /// may still sign up). The row stays, as Google's "Join Local Guides" is
+    /// there however many guides a place has, and says "an", not "the".
+    var seated = false
 
     @Environment(Account.self) private var account
     @State private var asked = false
@@ -251,7 +255,7 @@ struct AmbassadorWantedRow: View {
                     .frame(width: 32, height: 32)
                     .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
                 VStack(alignment: .leading, spacing: 1) {
-                    Text("\(place) is looking for an ambassador")
+                    Text(seated ? "Become an ambassador" : "\(place) is looking for an ambassador")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundStyle(Brand.ink)
                         .fixedSize(horizontal: false, vertical: true)
@@ -272,7 +276,7 @@ struct AmbassadorWantedRow: View {
         }
         .buttonStyle(.plain)
         .disabled(asked || sending)
-        .accessibilityHint(asked ? "" : "Become the ambassador")
+        .accessibilityHint(asked ? "" : (seated ? "Become an ambassador" : "Become the ambassador"))
         .accessibilityIdentifier("ambassador-wanted")
         .task(id: account.isSignedIn) {
             // A sheet no argument can open ships unseen: -ambassadorask opens
@@ -300,7 +304,7 @@ struct AmbassadorWantedRow: View {
         // one line each, and one button. The website's dialog carries the
         // same three lines (AmbassadorLine.astro, i18n ambassadorAskPoints).
         .sheet(isPresented: $confirming, onDismiss: { sent = false }) {
-            AmbassadorApplySheet(place: place, writeTo: writeTo, sent: $sent, sending: $sending) {
+            AmbassadorApplySheet(place: place, seated: seated, writeTo: writeTo, sent: $sent, sending: $sending) {
                 send()
             }
         }
@@ -350,6 +354,7 @@ struct AmbassadorWantedRow: View {
 /// in the same order, as rows rather than bullets on both.
 struct AmbassadorApplySheet: View {
     let place: String
+    var seated = false
     let writeTo: String
     /// Bindings rather than values: a sheet's content can keep the value it
     /// was first drawn with, so the receipt step never appeared (2026-10-10).
@@ -368,7 +373,7 @@ struct AmbassadorApplySheet: View {
         } else {
             BrandSheet(
                 icon: "checkmark.seal",
-                title: "Become the ambassador for \(place)",
+                title: seated ? "Become an ambassador for \(place)" : "Become the ambassador for \(place)",
                 message: "An ambassador helps us get the trees of this place right.",
                 points: ["Add photographs of the trees",
                          "Check the facts and tell us which trees are missing",

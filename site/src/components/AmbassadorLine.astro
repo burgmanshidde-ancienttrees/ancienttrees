@@ -54,9 +54,15 @@ interface Props {
    *  reads one spelling whatever language the page was in. Without it no
    *  open seat is drawn. */
   requestCity?: string;
+  /** Somebody already looks after this place, named or not (Hidde,
+   *  2026-10-27): the open-seat row stays, asking for "an" ambassador, as
+   *  Google's "Join Local Guides" is there however many guides a place has. */
+  seated?: boolean;
 }
-const { people, lang = "en", place, requestCity } = Astro.props as Props;
+const { people, lang = "en", place, requestCity, seated = false } = Astro.props as Props;
 const U = ui(lang);
+const taken = seated || people.length > 0;
+const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place)) : "";
 // THE NAME OPENS THE PROFILE when its owner made it public (Hidde,
 // 2026-10-19, design page frames 1 and 6): the whole row is the link
 // with a chevron, as the open seat's row already is. A private profile
@@ -85,14 +91,14 @@ const U = ui(lang);
     })}
   </ul>
 )}
-{people.length === 0 && place && requestCity && (
-  <div class="ambassadors ambassador-open" data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
-    <button type="button" class="ambassador ambassador-apply" aria-label={`${U.ambassadorWanted(place)}. ${U.ambassadorApply}`}>
+{place && requestCity && (
+  <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length > 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
+    <button type="button" class="ambassador ambassador-apply" aria-label={taken ? openTitle : `${openTitle}. ${U.ambassadorApply}`}>
       <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
         <Fragment set:html={icon("seal-check", "bold", "ic")} />
       </span>
       <span class="ambassador-text">
-        <span class="ambassador-name">{U.ambassadorWanted(place)}</span>
+        <span class="ambassador-name">{openTitle}</span>
         <span class="ambassador-role" data-done={U.ambassadorApplied}>{U.ambassadorWantedLine}</span>
       </span>
       <svg class="ambassador-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -105,7 +111,7 @@ const U = ui(lang);
         (AmbassadorBadge.swift). */}
     <div class="amb-step amb-ask" data-step="ask">
       <span class="at-sheet-tile"><Fragment set:html={icon("seal-check", "bold")} /></span>
-      <h3 class="at-sheet-h" id="amb-title">{U.ambassadorAskTitle(place)}</h3>
+      <h3 class="at-sheet-h" id="amb-title">{taken ? U.ambassadorJoinTitle(place) : U.ambassadorAskTitle(place)}</h3>
       <p class="at-sheet-p">{U.ambassadorAskBody}</p>
       {/* What the role is, before anybody applies (Hidde, 2026-10-08).
           Google Maps' Local Guides join sheet lists what you will do the
@@ -240,6 +246,8 @@ const U = ui(lang);
   .ambassador-link .ambassador-text { flex: 1; }
   .ambassador-link :global(.ambassador-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
   @media (hover: hover) { .ambassador-link:hover .ambassador-name { text-decoration: underline; } }
+  /* Under a named ambassador the open row sits in the same list rhythm. */
+  .ambassador-open-after { margin-top: 10px; }
   .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
   .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }
 </style>

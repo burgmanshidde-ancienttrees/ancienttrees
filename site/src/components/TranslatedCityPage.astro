@@ -147,7 +147,7 @@ const cityHasQuestion = hasQuestionPage(city);
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
-        <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={placeHasAmbassador(cslug) ? undefined : city.data.city} />
+        <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={city.data.city} seated={placeHasAmbassador(cslug)} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <a class="passport-save" href="/account#saved">{U.seeCollection}</a>
