@@ -23,6 +23,13 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-27
+
+Web half: the last 24 hours were the second-ambassador line (AmbassadorLine.astro, web and app), the About Wilder line, the Porto Copper Beech retirement, eight nature-magazine sources and outreach work. Built output has no em dashes on porto.html; the new `ambassadorJoin`/`ambassadorJoinTitle` strings exist in all eight languages and read fine ("Become an ambassador for X"). Findings:
+
+- WARN (eighth review to see it) meta description prints a planting or event year as an age: built pages say "A 1903-year-old Mexican Fan Palm" (/riverside/roosevelt-palm), "A 1914-year-old Redwood" (/riverside/chicago-white-sox-redwood-tree); a grep of built HTML finds at least 94 description metas of the form "A 17xx-20xx-year-old". Hard rule 2 (never fabricate tree facts), Verify (a derived age states its basis). scripts/qa.py contains no "year-old" check at all, so nothing refuses it. Write the qa.py check on built HTML first (refuse a year 1700 to 2025 directly before "-year-old"), then fix the meta template.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources" (also built into contribute.html twice and toronto/oldest-tree.html). Made false by CLAUDE.md "Good reader input IS the source" (2026-10-12) and the 2026-10-21 decision that a good photograph with GPS goes live with no written source. Second review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Fix the translations too.
+
 ## 2026-10-26
 
 Web half (Monday): last 24 hours were the eight small places from photo-batch-2, the three Texas trees, the Albertshausen Bildeiche, the Wikimedia query fix and outreach/digest work. Read the built Albertshausen, Tamatoriyama, Bregenz pages and metas: no em dashes in the sampled new pages, ages stated with basis. Findings:
