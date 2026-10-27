@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-26/27 session with Hidde: nature magazines, the Wilder model
+
+- **Outreach:** 47 nature magazines mailed in three batches on his word (natur, Sveriges Natur, Countryfile on 10-26; 8 whose own article names a tree of ours and 36 with one photographed tree from their country on 10-27), in eight languages, from his own text (drafts/nature-template.md, variants A and B). Each article named in a variant A mail is now a source on that tree's page. The nature group went from 0 to 58 addresses; 10 remain (weak fits or unverified addresses).
+- **Product:** 11 trees gained a magazine article as a source (Hueter des Feldes, Fortingall Yew, Rumskullaeken, Old Tjikko, Dicke Marie, Williamson bur oak, Goose Island Big Tree, Gija Jumulu, Platano di Curinga and others).
+- **Rules he set:** never ask a stranger to go out and photograph a tree (OUTREACH_STRATEGY.md); the Lisbon photographers get "we happily use your photos" instead (drafts/lisbon-photo-thanks.md, he posts on Commons).
+- **Breakage:** AmbassadorLine.astro tripped preflight on main (a > inside the tag); rewritten as !== 0, preflight clean.
+- For Hidde: 6 Lisbon photographer messages in drafts/lisbon-photo-thanks.md, to post on their Commons talk pages.
+
 ## 2026-10-27 session with Hidde: a second ambassador may sign up
 
 - **Product:** a place that already has an ambassador keeps the open row under that person, "Become an ambassador", and the sheet says "an" instead of "the". Web in all seven languages and the app; the app was looked at in the simulator on Florence (row and sheet). The website is checked by the CI build only, no local Node. Home's "your city is looking" row stays for empty places only, and --invite-scan still mails only places nobody holds. CONVENTIONS.md "the open seat" carries the reference.
