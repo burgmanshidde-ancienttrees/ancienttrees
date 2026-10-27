@@ -140,6 +140,7 @@
    "place": "Canterbury",
    "country": "United Kingdom",
    "status": "stalled",
+   "retried": "2026-10-27",
    "note": "SCOUTED 2026-10-15 on scout_next.py --target (#277). Two searches: Canterbury City Council publishes no notable or heritage tree register. planning.data.gov.uk carries its Tree Preservation Order points (OGL v3.0, WGS84 points, e.g. 3/1993/CAN/T1) but a TPO is protection, not remarkableness, and group orders have no geometry, so not a register under our rule. Woodland Trust Ancient Tree Inventory has Kent records but no reuse licence seen. Next angle: ask ancienttreeinventory@woodlandtrust.org.uk for terms; Kent Downs North Kent Woods veteran tree survey (2024-25, 907 ancient/veteran trees on 18 sites) is a finding aid for sites near Canterbury."
   },
   {

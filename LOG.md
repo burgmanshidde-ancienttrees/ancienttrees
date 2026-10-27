@@ -12,6 +12,7 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 ## 2026-10-27 day run (window from 06:10 UTC)
+- Second attempt in the window: nothing new shipped. READY is the same 3 photo-less Oxford/Madrid leads; ftw_018, inn_007, txf_004, sfo_013 stay held (access or photograph). The fort-worth claim stays until ftw_018 can merge (no register candidates there, 0 mined). Scouting: Canterbury retried, still stalled (no council register; cathedral precincts and Dane John searches name no veteran trees).
 - Rung 1 empty, health: the 10-26 iOS failure is the same single `testNoAnswerFromTheServerAsksNobody` crash as the night run logged, previous runs green, so still read as a flake (watch the next run); the skipped smoke runs are non-site pushes. Shelf refill: San Francisco verify found its landmark register used up (0 new, two leads recorded). Write pass: sfo_013 (Moreton Bay Fig, Valencia Street) story written but held for a photograph; sfo_012 is a duplicate of live sfo_004 (53 m apart, same Landmark Tree 15; its DataSF pin and girth belong in an enrich pass); inn_007, ftw_018, txf_004 stay held. No tree shipped. Scouting: Middletown CT retried, oak.conncoll.edu times out (added to fetch-blocklist), stays stalled. The san-francisco claim stays until sfo_013 has a photograph.
 
 ## 2026-10-27 night run (window from 00:51 UTC)
