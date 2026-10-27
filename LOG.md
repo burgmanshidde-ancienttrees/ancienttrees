@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-27 night run (retry window, after an early stop)
+
+- Shipped 0 trees. Shelf check: 3 READY leads (oxford 2, madrid 1), under the six-candidate floor for a write pass and none has a photograph, so none can go live under the photographed-only supply rule. Stale research files make up most of the "awaiting a writer" count.
+- Verify pass on san-francisco (staged, US): 2 new verified entries in data/research/san-francisco-verified.json (sfo_014 Bernal Heights Library flowering ashes, sfo_015 Customs House sweet bay), both flagged, no open-licence photograph found. They wait for a photo. Claim left standing (releases once merged, or expires after 4 hours); sfo_012 to sfo_015 are in that file unwritten.
+- Next run: photo sweep on those four SF trees, then write; or the Bristol register retry named in prepare.py BACKUP.
+
 ## 2026-10-27 night run (18:18 window)
 
 - Rungs 1 to 3 clear (no reader photos or notes, health green). Rung 4: 94 drafts still open, so no new mail batch; sourced two archive contacts instead (Nederlandse Dendrologische Vereniging for Arnhem, Asociación Española de Arboricultura for Barcelona/Seville/Valencia; both addresses from their own sites), contacts rebuilt and pushed. Tree Register and Ancient Tree Forum addresses were only on the Charity Commission register, not their own sites, so left out. Hoyt Arboretum's address was only in old event listings (its site returned 403).

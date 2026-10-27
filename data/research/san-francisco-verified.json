@@ -223,5 +223,63 @@
   "story": "San Francisco's largest Moreton Bay fig grows in a side yard on Valencia Street, beside St. Luke's Hospital. The local tree guide sftrees.com calls it by far the biggest of its kind in the city, where the species is rare; it is far more common in southern California.\n\nThe city's street tree records put its trunk at about 183 centimetres across at chest height, roughly 5.7 metres round. That is a register estimate on a buttressed trunk, and nobody has published a second measurement. Mayor Gavin Newsom added it to the Landmark Tree list on 24 March 2008.\n\nIts age is looser. A 2010 history of the block put it at well over a century and wondered whether Hubert Howe Bancroft planted it himself. The historian kept his library at Valencia and Army Street, now Cesar Chavez, from 1881 to 1906, and a bronze marker about that library stands beside the tree. But Bancroft's own photographs from the 1880s show no fig, so the link stays a guess. If you know when it went in, tell us.\n\nAge has cost it. Two big limbs came down within about a year around 2010, one of them onto a car. sftrees.com still calls it a mammoth tree, and a naturalist recorded it alive in February 2025.\n\nThe yard is private ground, so this is a tree to take in from the Valencia Street sidewalk, not to walk up to.",
   "how_to_recognise": "You can recognise it by its size, as by far the largest Moreton Bay fig in the city, with a bronze Bancroft Library marker beside it. It stands in the side yard by St. Luke's Hospital on Valencia Street.",
   "not_merged_reason": "Written 2026-10-27, held: no approved photograph (ADD_NEEDS_PHOTO). Merge once a photo of this trunk is approved."
+ },
+ {
+  "id": "sfo_014",
+  "name": "The Flowering Ashes of Bernal Heights Library",
+  "species": "Flowering Ash (Fraxinus ornus)",
+  "age_estimate": "not documented",
+  "location": {
+   "address": "Bernal Heights Branch Library, 500 Cortland Avenue (both sides of the main entry)",
+   "latitude": 37.738954,
+   "longitude": -122.416118,
+   "neighbourhood": "Bernal Heights"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (official Landmark Tree list: two Flowering Ash at 500 Cortland Avenue, Bernal Heights Library)",
+   "http://www.sftrees.com/blog/2023/1/30/bernal-heights-south-tree-tour (Mike Sullivan, tour of 29 Jan 2023: '500 Cortland, Flowering ash trees (Fraxinus ornus) ... 2 trees flanking the main entry to the library; official SF city landmark trees')",
+   "https://data.sf.gov/resource/tkzw-k3nq.json (DataSF Street Tree List, PDDL; treeids 24539 and 24540, legalstatus Landmark tree, planter Rec/Park, sidewalk cutouts; stored in data/registers/san-francisco-landmark-trees.json)",
+   "https://forestknolls.info/2010/08/16/landmark-tree-tour/ (2010 landmark tour also lists the two trees at the library)"
+  ],
+  "official_register": {
+   "name": "San Francisco Public Works, Significant and Landmark Trees",
+   "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
+  },
+  "access": "Free. Two street trees on the public sidewalk at the entrance of a public branch library; nothing to enter to see them. Library opening hours not checked.",
+  "transport": "Muni 24 and 67 serve Cortland Avenue (stops not verified); not source-checked",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Bernal Heights Branch Library entrance, Cortland Avenue",
+   "radius_m": 30
+  },
+  "curation_status": "flagged",
+  "verify_notes": "ENSEMBLE of two, one place to stand (library entry). Official Landmark Trees (listed already in the 2010 tour, so designation predates it). Species fits Fraxinus ornus (Mediterranean to Armenia per sftrees). Alive: dated eyewitness Jan 2023 (sftrees tour); lifecheck RECENT 2025-09-05 is an iNaturalist hit that turned out to be a Ribes observation, NOT these trees, so do not count it. Register coordinates: 37.738961,-122.416171 (tree 3) and 37.738947,-122.416064 (tree 4); pin is the midpoint, not checked on aerial imagery. DataSF mapdbh says 50 in for both: IMPLAUSIBLE for a flowering ash (127 cm diameter), likely a data error, so girth_cm deliberately left out. No planting date or reason for designation found; age not documented, do not infer from the library (opened 1960s, not sourced). Why it is landmark-worthy is not stated on any page I read; this is a flagged, register-led entry. Photo: none found; Commons geosearch for the block was not answered (Commons search busy), no open-licence candidate recorded."
+ },
+ {
+  "id": "sfo_015",
+  "name": "The Sweet Bay of the Customs House",
+  "species": "Sweet Bay (Laurus nobilis)",
+  "age_estimate": "not documented",
+  "girth_cm": 144,
+  "location": {
+   "address": "555 Battery Street at Jackson Street, in front of the U.S. Custom House",
+   "latitude": 37.796259,
+   "longitude": -122.400666,
+   "neighbourhood": "Financial District"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (official Landmark Tree list; Board of Supervisors resolution 670-05 designates one Laurus nobilis at 555 Battery Street, seen only in a search result, PDF not readable)",
+   "http://www.sftrees.com/new-page-1 (Mike Sullivan, San Francisco's Top 10 Trees, #8 'Sweet bay - 555 Battery Street in the Financial District': 'San Francisco's largest sweet bay', in front of the Beaux Arts U.S. Customs House, given official landmark status; page undated)",
+   "https://data.sf.gov/resource/tkzw-k3nq.json (DataSF Street Tree List, PDDL; treeid 1716, '555 Battery St | Tree 4', mapdbh 18 in, DPW, sidewalk cutout, Landmark tree)"
+  ],
+  "official_register": {
+   "name": "San Francisco Public Works, Significant and Landmark Trees",
+   "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
+  },
+  "access": "Free. A street tree on the public sidewalk of Battery Street.",
+  "transport": "Muni and BART at Embarcadero are within a short walk (not source-checked)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "FLAGGED: thin alive evidence. Official list and DataSF still carry it; sftrees describes it (undated page). The lifecheck RECENT 2024-04-20 hit (iNaturalist 222197280) is an Aeonium arboreum, NOT this tree, so alive is NOT confirmed by a dated observation. Needs a dated photo before the writer says it stands today. Size: DataSF DBH 18 in = 46 cm diameter, girth_cm 144 by diameter times pi (register estimate, date unknown); a modest trunk, the claim to fame is only 'largest sweet bay in San Francisco' (sftrees, single opinion, not measured against a census). Search summaries add that it was slated for removal in 1999 and saved by neighbourhood opposition with a Friends of the Urban Forest tree easement: seen only in a search summary, NOT confirmed on a fetched page, do not use. Age not documented. Pin: register coordinate on the sidewalk cutout, not checked on aerial imagery. Photo: Commons geosearch within 150 m returned no tree photo (only the Custom House night view and unrelated files); no open-licence candidate."
  }
 ]
