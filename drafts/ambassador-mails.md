@@ -172,3 +172,29 @@ For organisations and people who have never written to us. Mail 1 asks for help 
 ## How to describe the role, in one honest paragraph (Hidde, 2026-10-09)
 
 On a draft to Kerry Pickett (Brighton) that said an ambassador "never has to go looking", Hidde: "dit is niet helemaal eerlijk". The role as he describes it: you keep an eye on whether the list is right; a new tree on your place reaches you; checking the details and adding a photo through the app is welcome and never required; and mostly it shows other people that somebody local stands behind the list. Use that, and never promise it costs nothing at all.
+
+## One person asks for several places (Hidde's own text, 2026-10-27)
+
+Use when one account presses "become the ambassador" on more than one place
+(first case: Miguel, Porto plus Guimarães, Braga, Calvos and Vales in seven
+minutes). Several places for one person is fine (Hidde, 2026-10-27: "voor mij
+is het prima om meerdere plekken ambassadeur te zijn"). Hold the automatic
+"Looking after <place>" mail for every place after the first (record the rows
+in data/ambassadors.json with a note), so they get this one mail and no stack
+of templates. Their first name only when their sign-in gave one. List every
+place they asked for, the first one included.
+
+> Hi <first name>,
+>
+> Thanks for wanting to help out with making Ancient Trees better. Is it correct that you can help out with all these places?
+>
+> https://ancienttrees.app/<place>
+> https://ancienttrees.app/<place>
+>
+> All sorts of help are welcome, whether it is suggesting new trees or telling us which ones don't belong, improving the stories of the trees, or adding photos. Photos are easiest to upload through the app, but everything else we can discuss by mail for now.
+>
+> Very nice to meet you, and thanks again for the help.
+> Hidde
+
+Ends "Hidde", like the other ambassador mails (Hidde, 2026-10-25). No App
+Store link (no link in any mail to a reader); "through the app" is enough.
