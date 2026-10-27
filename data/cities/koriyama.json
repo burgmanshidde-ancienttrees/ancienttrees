@@ -2,10 +2,10 @@
   "city": "Koriyama",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Koriyama maps one tree: Akatsu no Katsura, a national natural monument since 1941 that has been shrinking ever since. Typhoons have taken limbs and soil has washed from under its roots, and it still stands 25 metres tall with fourteen stems climbing from a single trunk 3.5 metres through. It is published alone here because it is the destination, not because Koriyama's research is finished.",
-  "meta_description": "Akatsu no Katsura, a national natural monument since 1941 near Koriyama, Fukushima: fourteen stems from one trunk, over 350 years old.",
-  "question_meta": "Koriyama's mapped tree is Akatsu no Katsura, a katsura designated a national natural monument in 1941, over 350 years old.",
-  "question_answer": "Akatsu no Katsura, standing beside a rural road toward Aizu-Nunobikiyama west of the city. Japan designated it a national natural monument in 1941 and dated it at over 350 years, a floor rather than a settled figure. It is the only tree mapped here, published alone under the single-tree exception.",
+  "intro": "Koriyama maps two trees, both far from the city centre and both easiest to reach by car. Akatsu no Katsura has been a national natural monument since 1941 and has been shrinking ever since, though fourteen stems still climb from one trunk 3.5 metres through. Tate-no-Omayumi is a Japanese spindle that grew to 7.3 metres where the species usually stays a shrub. They are published here because each is worth the trip alone.",
+  "meta_description": "Two protected trees near Koriyama, Fukushima: Akatsu no Katsura, a national natural monument, and Tate-no-Omayumi, a giant spindle tree.",
+  "question_meta": "Koriyama's mapped trees are Akatsu no Katsura, a katsura over 350 years old, and Tate-no-Omayumi, a spindle tree about 300 to 340 years old.",
+  "question_answer": "Akatsu no Katsura, standing beside a rural road toward Aizu-Nunobikiyama west of the city. Japan designated it a national natural monument in 1941 and dated it at over 350 years, a floor rather than a settled figure. The second tree, Tate-no-Omayumi, is a spindle tree of about 300 to 340 years beside a shrine in the Konan district.",
   "question_context": "The 1941 designation record is also the clearest evidence of what Akatsu no Katsura has lost since. It described a tree over 30 metres tall with a crown spreading about as wide; typhoons and root erosion have since taken it down to 25 metres and a 20 metre spread. What survives is still one of the largest katsura in Japan: a trunk 3.5 metres through at chest height that stops being a single stem about 1.2 metres up, where fourteen trunks of wildly different sizes climb out of it. Old katsura routinely split into multiple stems near the base; very few do it on this scale, or keep doing it while visibly shrinking from storm damage. Its age, over 350 years, comes with no published basis, so treat it as a floor rather than a verdict. It stands unfenced on a rural road toward Aizu-Nunobikiyama, west of the city, with no station within reach; our coordinates mark the area rather than the exact trunk, so expect a short hunt on arrival. If you know what actually dates it, tell us.",
   "hero_tree_id": "kna_001",
   "oldest_tree_id": "kna_001",
@@ -65,6 +65,49 @@
         "url": "https://online.bunka.go.jp/heritages/detail/209640"
       },
       "height_m": 25
+    },
+    {
+      "name": "Tate-no-Omayumi",
+      "species": "Japanese Spindle (Euonymus hamiltonianus)",
+      "age_estimate": "roughly 300 to 340 years",
+      "age_min": 300,
+      "age_max": 340,
+      "age_basis": "source",
+      "girth_cm": 355,
+      "height_m": 7.3,
+      "location": {
+        "address": "Tate, Nakayachi 1459, Konan-machi, Koriyama, Fukushima",
+        "latitude": 37.408,
+        "longitude": 140.14536,
+        "neighbourhood": "Konan"
+      },
+      "location_precision": "approximate",
+      "access": "Stands beside a shrine on a road curve, seen from the road; earlier pass found no dedicated parking.",
+      "transport": "Konan district of Koriyama; no public-transport time verified, expect bus or car.",
+      "verified_sources": [
+        "https://www.pref.fukushima.lg.jp/site/shinrinkankyouzei/kyoboku-kencyu.html",
+        "https://commons.wikimedia.org/wiki/Category:Tate-no-Omayumi",
+        "https://commons.wikimedia.org/wiki/File:Tate-no-Omayumi_(8112790876).jpg"
+      ],
+      "official_register": {
+        "name": "Koriyama City Natural Monument (designated 1979-11-20) and Fukushima Prefecture Green Cultural Property",
+        "url": "https://www.pref.fukushima.lg.jp/site/shinrinkankyouzei/kyoboku-kencyu.html"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tate-no-Omayumi_%288112790876%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "M Murakami from Fukushima, Japan",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Tate-no-Omayumi_(8112790876).jpg",
+        "width": 4352,
+        "height": 3264,
+        "status": "approved",
+        "taken_month": 10
+      },
+      "curation_status": "flagged",
+      "id": "kna_002",
+      "story": "Mayumi, the Japanese spindle, normally grows to the size of a shrub. This one is 7.3 metres tall with a trunk 3.55 metres round.\n\nIt is protected twice over. Koriyama made it a city natural monument, on 20 November 1979 according to the city's list of designations, and Fukushima Prefecture counts it among its Green Cultural Properties. The prefecture's giant-tree survey of 2016 and 2017 measured it at those figures and put its age at 340 years.\n\nThe local tourism association gives slightly different numbers: about 6 metres tall, a trunk about a metre across, and more than 300 years old. Either way the two agree on the point. This is a plant that usually stays modest, and here it has had three centuries to ignore that.\n\nIt stands beside a shrine where the road bends at Tate, in the Konan district, well outside central Koriyama. Look at it from the road; we know of no dedicated parking. Expect to come by car or bus.\n\nOne caution about the map. Two sources put the tree about 155 metres apart, and neither has been checked on the ground, so our pin is approximate. Look for the shrine on the curve. If you stand beside it, a GPS fix from your phone would settle the map for everyone who comes after you.\n\nIf you know its story, tell us.",
+      "how_to_recognise": "You can recognise it by its size, a spindle tree 7.3 metres tall and 3.55 metres round where the species is usually a shrub. It stands beside a shrine on a bend in the road at Tate, Nakayachi.",
+      "verify_notes": "Fukushima Prefecture giant-tree survey FY2016-17 (page updated 2018-09-12) measured it; Commons photo 2012-10-21. Two sources put the tree about 155 m apart, neither checked on the ground."
     }
   ]
 }
