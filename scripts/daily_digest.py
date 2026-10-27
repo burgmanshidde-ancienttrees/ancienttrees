@@ -1326,7 +1326,10 @@ SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 # marked "[TEST ROW...]". They made the 08-14 digest announce two reader
 # submissions, and the session reading it believed them for a paragraph. A
 # number that includes us flatters us, so ours are excluded by id.
-TEST_SUBMISSION_IDS = {1, 2, 3}
+# Id 503 is the Wilder journalist testing the Bucaco ambassador button with
+# her own address (her mail, 2026-10-26: "I wasn't expecting it would be so
+# simple and fast"); not a candidate.
+TEST_SUBMISSION_IDS = {1, 2, 3, 503}
 # Waitlist rows that are not Android interest (Hidde, 2026-10-27, going through
 # the pre-launch rows): 1 and 3 are our own test addresses, 4 is his father, 17 a
 # colleague with an iPhone. Every other row counts as Android, the pre-launch
