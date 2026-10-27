@@ -94,10 +94,6 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
 {place && requestCity && (
   <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
     {taken ? (
-      /* SECOND IN RANK under the person (Hidde, 2026-10-27: "in hierarchy moet
-         dat duidelijk de tweede zijn", "niet groen"): Atlas Obscura's "Make an
-         Edit" under its contributors, a thin rule then a line icon and plain
-         text, here at the size and grey of the role line under the name. */
       <button type="button" class="ambassador-apply ambassador-act" aria-label={openTitle}>
         <span class="ambassador-act-ic" aria-hidden="true"><Fragment set:html={icon("seal-check", "bold", "ic")} /></span>
         <span class="ambassador-role" data-done={U.ambassadorApplied}>{openTitle}</span>
@@ -259,7 +255,10 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
   .ambassador-link .ambassador-text { flex: 1; }
   .ambassador-link :global(.ambassador-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
   @media (hover: hover) { .ambassador-link:hover .ambassador-name { text-decoration: underline; } }
-  /* Under a named ambassador: a thin rule, then the quiet action line. */
+  /* Under a named ambassador: a thin rule, then the quiet action line,
+     SECOND IN RANK to the person (Hidde, 2026-10-27: "in hierarchy moet dat
+     duidelijk de tweede zijn", "niet groen"). Atlas Obscura's "Make an Edit"
+     under its contributors, at the size and grey of the role line. */
   .ambassador-open-after { margin-top: 10px; border-top: 1px solid var(--cream-dark); }
   .ambassador-act { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px;
     padding: 0; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; color: inherit; }
