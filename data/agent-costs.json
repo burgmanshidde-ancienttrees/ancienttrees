@@ -1,6 +1,24 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-27": [
+   {
+    "date": "2026-10-27",
+    "target": "san-francisco",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "DEEPEN pass: register exhausted (all rows published, private or already leads); 0 verified, lead note appended"
+   },
+   {
+    "date": "2026-10-27",
+    "target": "san-francisco+innsbruck+fort-worth+texas-famous",
+    "kind": "write",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "sfo_013 written but held (no approved photo); sfo_012 duplicate of sfo_004; inn_007, ftw_018, txf_004 held (photo, access)"
+   }
+  ],
   "2026-10-23": [
    {
     "date": "2026-10-23",
