@@ -116,6 +116,11 @@ enum SightingSync {
             } else {
                 sightings.absorb(made, image: picture, sign: sign, extras: extras)
             }
+            // What just came down IS what the account holds, so the push below
+            // has nothing to send for it.
+            if let now = sightings.all.first(where: { $0.id == id }) {
+                sightings.markSynced(id, at: now.syncedAt ?? Date(), sent: now)
+            }
         }
 
         await pushAll(account: account, sightings: sightings)
@@ -168,8 +173,13 @@ enum SightingSync {
     /// the sign-out clear its state first and let the upload finish behind it:
     /// a token stays valid for its own lifetime whether or not we still hold a
     /// copy in the Keychain.
+    ///
+    /// Only what changed since it last went up (2026-10-27). Every edit is
+    /// already sent the moment it is made (`Sightings.syncOne`), so this is a
+    /// catch-up for sends that failed, and re-sending the rest only stamped
+    /// them as freshly saved with nothing new in them.
     static func pushAll(session s: Session, sightings: Sightings) async {
-        for sighting in sightings.all {
+        for sighting in sightings.all where Sightings.needsPush(sighting) {
             await push(session: s, sightings: sightings, sighting: sighting)
         }
     }
@@ -177,6 +187,9 @@ enum SightingSync {
     /// One sighting changed. Fire and forget.
     static func push(account: Account, sightings: Sightings,
                             sighting: Sightings.Sighting) async {
+        // Changed here, so not what the account holds until this lands, even
+        // when there is no session to send it with right now.
+        sightings.markUnsent(sighting.id)
         guard let s = await account.freshSession() else { return }
         await push(session: s, sightings: sightings, sighting: sighting)
     }
@@ -297,7 +310,7 @@ enum SightingSync {
         if landed, stored != nil || sightings.image(sighting) == nil,
            signStored != nil || sightings.signImage(sighting) == nil,
            extrasStored.count == extraImages.count {
-            await MainActor.run { sightings.markSynced(sighting.id) }
+            await MainActor.run { sightings.markSynced(sighting.id, sent: sighting) }
         }
     }
 

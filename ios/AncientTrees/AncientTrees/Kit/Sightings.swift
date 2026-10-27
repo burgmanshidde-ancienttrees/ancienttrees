@@ -33,6 +33,7 @@ import Foundation
 import Observation
 import UIKit
 import ImageIO
+import CryptoKit
 
 /// Main-actor isolated, like every store the root holds. See Account.swift for
 /// why: SwiftUI already reads these from the main actor, so the annotation
@@ -162,6 +163,17 @@ final class Sightings {
         /// not yet shared rather than defaulted forward. "Stop sharing the
         /// link" in the menu is how somebody takes it back.
         var shared: Bool?
+
+        /// A fingerprint of what the account last received from this phone
+        /// (`Sightings.contentPrint`), so the catch-up after sign-in sends only
+        /// what changed. Before 2026-10-27 that catch-up re-sent every sighting
+        /// on every new session, which stamped each one as freshly saved with
+        /// nothing changed: the Tangier fig came back on Hidde's digest as a
+        /// new photograph, and thirteen of one person's trees were "saved" in
+        /// the same minute (Hidde: "is this a bug that the person uploaded it
+        /// again?"). Nil means not known to have arrived in this form, which
+        /// always sends. Optional so older files still decode.
+        var sentPrint: String?
 
         /// The trees this MIGHT be, when the person told us they could not
         /// tell which one (2026-09-07, Hidde standing in Nara: "its hard to
@@ -835,10 +847,48 @@ final class Sightings {
         persist()
     }
 
-    func markSynced(_ id: UUID, at when: Date = Date()) {
+    /// The account has it. `sent` is the copy that went up, so a later
+    /// catch-up can tell whether anything changed since (`needsPush`).
+    func markSynced(_ id: UUID, at when: Date = Date(), sent: Sighting? = nil) {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
         all[i].syncedAt = when
+        all[i].sentPrint = sent.map(Self.contentPrint)
         persist()
+    }
+
+    /// A send has started and not finished: until it lands, the catch-up must
+    /// send this one again whatever its fingerprint says. This is what covers
+    /// a photograph replaced under the same file name while offline.
+    func markUnsent(_ id: UUID) {
+        guard let i = all.firstIndex(where: { $0.id == id }),
+              all[i].sentPrint != nil else { return }
+        all[i].sentPrint = nil
+        persist()
+    }
+
+    /// What the account holds of a sighting, as a short hash of exactly the
+    /// fields `SightingSync.push` sends. Nothing the phone keeps for itself
+    /// (`syncedAt`, `place`, the fingerprint) is in it, so looking at a tree
+    /// never makes it "changed".
+    nonisolated static func contentPrint(_ s: Sighting) -> String {
+        let parts: [String] = [
+            s.id.uuidString, s.treeId ?? "", s.name, s.note, s.species ?? "", s.age ?? "",
+            s.girthCm.map(String.init) ?? "", s.girthHugs ?? "",
+            String(s.lat), String(s.lng), String(s.date.timeIntervalSince1970),
+            s.photo ?? "", s.signPhoto ?? "", (s.extraPhotos ?? []).joined(separator: ","),
+            s.status.rawValue, s.shared.map { $0 ? "1" : "0" } ?? "",
+        ]
+        let digest = SHA256.hash(data: Data(parts.joined(separator: "\u{1F}").utf8))
+        return digest.prefix(8).map { String(format: "%02x", $0) }.joined()
+    }
+
+    /// Whether the catch-up after sign-in has to send this one: never a draft,
+    /// always one the account has not confirmed, otherwise only when it
+    /// changed since it last went up.
+    nonisolated static func needsPush(_ s: Sighting) -> Bool {
+        if s.draft == true { return false }
+        guard s.syncedAt != nil, let sent = s.sentPrint else { return true }
+        return sent != contentPrint(s)
     }
 
     /// EVERYTHING, off this phone, when nobody is signed in.
