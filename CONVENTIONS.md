@@ -3261,6 +3261,19 @@ same dashed seal and chevron, reading "Become an ambassador" (Hidde chose
 the mockup and dropped "too"), and the sheet says "an" for "the". The
 automatic invitation (--invite-scan) still goes only to places nobody holds.
 
+**Smaller than the person (same day).** Hidde: "the second button should be
+smaller than the first one - also to give respect to the current ambassador",
+and then "niet groen". Looked at 2026-10-27: **Atlas Obscura** (Major Oak
+page) lists contributors with avatars, then a thin rule, then "EDIT THIS
+LISTING" with "Make an Edit" and "Add Photos" as plain black 16px text beside
+a thin brown line icon, no button. **GitHub** (a repo sidebar) shows
+"Contributing" as a grey row with a line icon among the other sidebar rows,
+and "+ 669 contributors" as a 12px link under the avatars. Not reachable from
+the browser pane that day: Reddit (blocked), iNaturalist (bot check), Airbnb
+co-hosts (listing gone). Google Maps' "Suggest an edit" pill is from memory.
+Three mockups went to Hidde built on these: an action line under a rule, one
+grey line under the name, a small outlined pill.
+
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 
 **The interaction: a public page names the person who looks after it.** Looked
