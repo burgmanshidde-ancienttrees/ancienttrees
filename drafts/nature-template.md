@@ -6,6 +6,7 @@ Before using it, these must be true:
 - Their article is about a tree we have, you read it, and it names that tree.
 - That article is in the tree's `verified_sources` (add it in the same session and push before sending). Without both, the first sentence is false, so pick another outlet or another of their articles.
 - Every link answers 200; mailcheck.py is clean; the address has had no mail in 7 days.
+- One mail per publishing house (Discover Wildlife and Countryfile are both Our Media), a magazine for the public rather than a trade title, and a desk address over a named journalist (2026-10-27 replies).
 
 Subject: [the title of their article]
 

@@ -19,6 +19,16 @@ Three things, in this order while Google recovery mode lasts:
 | People who already love trees | Asking an organisation to become something of ours |
 | Local and regional press (Brabants Dagblad, Omrop Fryslân answered) | Big-city desks (no reply yet) |
 
+## What the first 47 nature mails taught us (2026-10-26/27, first day of replies)
+
+| Worked | Did not |
+|---|---|
+| A tree-loving members' magazine: Crann's editor asked within the hour for an article, 500 to 600 words with four or five photos, on the plan and how people can join | A trade magazine for professionals (Vakblad Natuur Bos Landschap: "die kennen die oude bomen wel", and named Bomenbieb). The nature group is magazines for the public, never trade titles |
+| Variant B (one tree from their country, no article of theirs) got the warm answers: Crann, and Discover Wildlife passing it to Countryfile | One publisher, two pitches: Discover Wildlife forwarded us to Countryfile, which had our variant A mail the day before (both Our Media). One mail per publishing house; check the masthead's company |
+| A desk address | A named journalist from a masthead: Skogsaktuellt's was on parental leave (redaktion@ja.se answers instead) |
+
+Big national titles (Canadian Geographic) answer with an auto-reply and plan print months ahead; count them as slow, not silent. An offer to write for them is the best result there is: the session that sees one offers Hidde a draft in his voice and photographs we may hand over (open-licence ones with their credit, Hidde's own; a reader's only with that reader's own yes), never photographs we only hold for our own pages.
+
 ## The database
 
 `python3 scripts/contacts_db.py` keeps one private file, data/outreach-db.json, with every address we know: group, language, city, the trees that tie us to them, every mail sent, every reply, and a status (ready, mailed, replied, linked, declined, ambassador, do_not_contact). It is rebuilt from the sent log and replies on every `--build`, so it never drifts; notes and link status set by hand survive.
