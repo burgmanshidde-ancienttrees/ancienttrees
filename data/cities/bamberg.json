@@ -394,7 +394,15 @@
         "height": 6000,
         "taken_month": 3
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "heavily scented cream flowers, audible with bees from metres away",
+        "kind": "flowers"
+      }
     },
     {
       "id": "bam_009",
@@ -435,7 +443,15 @@
         "height": 3402,
         "taken_month": 9
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "heavily scented cream flowers, audible with bees from metres away",
+        "kind": "flowers"
+      }
     }
   ]
 }

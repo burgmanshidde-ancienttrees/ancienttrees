@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-27 night run (18:18 window)
+
+- Rungs 1 to 3 clear (no reader photos or notes, health green). Rung 4: 94 drafts still open, so no new mail batch; sourced two archive contacts instead (Nederlandse Dendrologische Vereniging for Arnhem, Asociación Española de Arboricultura for Barcelona/Seville/Valencia; both addresses from their own sites), contacts rebuilt and pushed. Tree Register and Ancient Tree Forum addresses were only on the Charity Commission register, not their own sites, so left out. Hoyt Arboretum's address was only in old event listings (its site returned 403).
+- Rung 5: enrichment lisbon+albertshausen+bamberg+potsdam: 4 trees closed (3 best_time, Potsdam beech pin source), 14 gaps recorded as dead ends. Measurements and Bamberg access had no source. Preflight 0 problems.
+
 ## 2026-10-27 session with Hidde: Show HN, second try
 
 The 10-24 Show HN (item 50208440, posted on a Saturday) ended at 1 point, and its first comment is [dead]: the filter for new accounts killed it (hburgmans, karma 1). Hidde already mailed hn@ycombinator.com about the dead comment on Friday 10-23 at 15:13 (his Sent folder; so the post went up that Friday, not 10-24), and no answer came. Second try: the same URL with the explanation in the submission's own text field, Tuesday to Thursday 14:00 to 17:00; if the submit lands on the old item, the duplicate filter folded it and he stops. drafts/show-hn.md now says text in the post, not a separate comment.

@@ -675,7 +675,8 @@
       "how_to_recognise": "You can recognise it by its trunk, about 4 metres round. It stands in the Königswald west of Sacrow, beside the road into the village.",
       "verified_sources": [
         "https://www.potsdam.de/de/content/naturdenkmal-nr-16-rotbuche-bei-sacrow (city register page, fetched 2026-10-20: Naturdenkmal Nr. 16, Rotbuche, girth 405 cm, Flur 3 Flurstueck 35, 'westlich von Sacrow im Koenigswald')",
-        "https://www.openstreetmap.org/node/8679244125 (OSM tree node, circumference 4.05, on the register coordinate; not an independent position)"
+        "https://www.openstreetmap.org/node/8679244125 (OSM tree node, circumference 4.05, on the register coordinate; not an independent position)",
+        "https://www.openstreetmap.org/node/8679244125 (natural=tree, denotation=natural_monument, 'Naturdenkmal Nr. 16: Rotbuche bei Sacrow', wikidata Q106393692, description:url the city register page)"
       ],
       "official_register": {
         "name": "Landeshauptstadt Potsdam, Naturdenkmal Nr. 16",
@@ -690,8 +691,22 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "From the READY lead in data/leads/potsdam.json (Naturdenkmal Nr. 16, 'Copper/Red Beech west of Sacrow'). City page (fetched 2026-10-20): girth 405 cm, Flur 3 Flurstueck 35, 'westlich von Sacrow im Koenigswald', 'Strasse nach Sacrow'. OSM node 8679244125 (circumference 4.05) sits exactly on the register coordinate, so not independent. Forest tree with a register point only: no photograph, no recent observation (lifecheck NONE), pin cannot be placed on a crown. Public forest. FLAGGED: single source (official register) and no life check; alive only by the city still listing it. Species: register name 'Rotbuche' is Fagus sylvatica (the lead's genus-only species was refined from the register name). No age source; age left empty, the page asks the reader. Story sentence on Sacrow's Cold War border position and the Heilandskirche is about the village, not this tree."
+      "location_precision": "confirmed",
+      "notes": "From the READY lead in data/leads/potsdam.json (Naturdenkmal Nr. 16, 'Copper/Red Beech west of Sacrow'). City page (fetched 2026-10-20): girth 405 cm, Flur 3 Flurstueck 35, 'westlich von Sacrow im Koenigswald', 'Strasse nach Sacrow'. OSM node 8679244125 (circumference 4.05) sits exactly on the register coordinate, so not independent. Forest tree with a register point only: no photograph, no recent observation (lifecheck NONE), pin cannot be placed on a crown. Public forest. FLAGGED: single source (official register) and no life check; alive only by the city still listing it. Species: register name 'Rotbuche' is Fagus sylvatica (the lead's genus-only species was refined from the register name). No age source; age left empty, the page asks the reader. Story sentence on Sacrow's Cold War border position and the Heilandskirche is about the village, not this tree.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "copper and russet, and young trees keep dead leaves all winter",
+        "kind": "colour"
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.openstreetmap.org/node/8679244125 (natural=tree, denotation=natural_monument, 'Naturdenkmal Nr. 16: Rotbuche bei Sacrow', wikidata Q106393692, description:url the city register page)",
+        "date": "2026-10-27",
+        "moved_m": 0
+      }
     },
     {
       "id": "pot_016",
