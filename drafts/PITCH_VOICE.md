@@ -228,6 +228,11 @@ belongs in Helpful Details or nowhere.
 - NO: "The idea started in Lisbon: travelling for work I had time to kill... I'm not a tree expert, but I am a big fan."
 - YES: "My name is Hidde, I live in Baarn near Amsterdam, and I'm building Ancient Trees... My goal is to get people excited about old trees and get them outside to go and see them."
 
+**Show the tree right after saying what the map is; the goal comes after the example** (added 2026-10-27)
+
+- NO: "My name is Hidde... My goal is to get people excited... One of the trees on it is the Great Yew of Ormiston"
+- YES: "My name is Hidde... a map of remarkable old trees worth a detour. One of the trees on it is the Great Yew of Ormiston...: <link>. My goal is to get people excited..."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
