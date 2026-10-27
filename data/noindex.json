@@ -4,11 +4,11 @@
  "note": "Every path here leaves sitemap.xml and renders a self canonical (site/src/layouts/Base.astro). A path in google_only renders <meta name=googlebot content=noindex>, which only Google reads, and is offered to Bing in sitemap-bing.xml; every other path renders <meta name=robots content=noindex> for every engine. Pages stay live. Undo by emptying 'paths' and removing the thin_pages step from deploy.yml.",
  "counts": {
   "fallback": 0,
-  "thin_places": 585,
+  "thin_places": 586,
   "question_pages": 354,
   "weak_trees": 3740,
-  "strict_cut": 1703,
-  "reader_cut": 1377
+  "strict_cut": 1704,
+  "reader_cut": 1378
  },
  "google_only": [
   "/aachen/forster-linde",
@@ -3117,6 +3117,7 @@
   "/komjatice/plane-tree-of-komjatice",
   "/kopcany/lime-tree-of-kopcany",
   "/koriyama/akatsu-no-katsura",
+  "/koriyama/tate-no-omayumi",
   "/kotel/kotel-lindens",
   "/kozaki/kozaki-no-okusu",
   "/kozy/kozy-plane-tree-platan-klonolistny",
@@ -7154,6 +7155,7 @@
   "/kitamoto/ishito-no-kaba-zakura",
   "/komjatice/plane-tree-of-komjatice",
   "/kopcany/lime-tree-of-kopcany",
+  "/koriyama/tate-no-omayumi",
   "/kozaki/kozaki-no-okusu",
   "/kozy/kozy-plane-tree-platan-klonolistny",
   "/krakow",
@@ -11849,6 +11851,8 @@
   "/kopcany/lime-tree-of-kopcany": "2026-10-22",
   "/koriyama": "2026-10-01",
   "/koriyama/akatsu-no-katsura": "2026-10-01",
+  "/koriyama/oldest-tree": "2026-10-27",
+  "/koriyama/tate-no-omayumi": "2026-10-27",
   "/kotel": "2026-10-01",
   "/kotel/kotel-lindens": "2026-10-06",
   "/kozaki": "2026-10-01",

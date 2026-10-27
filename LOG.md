@@ -398,30 +398,6 @@ Hidde, looking at the new maps: "it looks good tbh" and, on the order, "i think 
 ## 2026-10-24 night run (02:55): nothing shipped
 
 - Inbox empty, READY still 3 photo-less own trees (supply paused), prepare.py shelf unchanged. health.py exit 1 is the same iOS appfit hang (run 40017321068) plus a skipped smoke test; no source fix possible from Linux. Stirling RETRY not repeated: already stalled twice on 10-23. Nothing new since the sixteenth attempt; waiting on Search Console or a reader's tree.
-## 2026-10-23 night run, sixteenth attempt: nothing shipped
-
-- No claims standing, inbox empty, READY is 3 photo-less own trees (oxford 2, madrid 1) and `SUPPLY_PAUSED` is True, so no write pass. `enrich.py --next`, `recognise.py --stuck` and `pagegaps.py` all report nothing to do. The 54 "awaiting a writer" trees cannot go live while supply is paused.
-- I reran `photo_hunt.py --recheck` against the fifteenth entry's note: 0 new candidates again. Stirling was retried twice today already, still stalled. iOS failure is the same appfit hang, nothing new.
-- Do not rerun any of the above until Search Console moves or a reader's tree arrives.
-## 2026-10-23 night run, fifteenth attempt (22:50): nothing shipped
-
-- Inbox empty, READY the same 3 photo-less own trees (supply paused). health.py exit 1 is only the iOS app: both failed runs (40013002762, 40017321068) died in appfit's `xcodebuild test` hanging past 30 minutes on the iPhone SE simulator, then the 110-minute cap; the appsweep after it produced 40 screenshots. A runner hang, no assertion failure, and the run before succeeded, so no source fix is possible from this runner. For Hidde: nothing yet; if the next scheduled iOS run hangs too, the SweepFrames step needs a look on the Mac.
-- I reran `photo_hunt.py --recheck` against the fourteenth entry's note: 40 trees, 0 new candidates, as predicted. Do not rerun.
-- Open lane remains `scout_next.py --target` (RETRY Stirling).
-## 2026-10-23 night run, fourteenth attempt: nothing shipped, one finding
-
-- Claims none, inbox empty, READY is the same 3 own trees without photographs (supply paused). `enrich.py --next`: nothing anywhere. `photo_gaps.py --shortlist`: nothing queued, every candidate already judged.
-- Correction to the thirteenth entry: `photo_hunt.py --recheck` re-asks the same first 40 trees by design, and the "1025 unchecked" line counts the recheck pool. Plain `photo_hunt.py` says 0 unchecked: the kept set is fully swept. Photo lane is exhausted until new uploads appear; do not rerun it.
-- `scout_next.py --target` names RETRY Stirling (#266): the one open lane for the next window.
-## 2026-10-23 night run, thirteenth attempt: nothing shipped
-
-- No claims standing; sightings inbox empty. READY leads are 3 (Oxford 2, Madrid 1), all our own trees without a photograph, so `ADD_NEEDS_PHOTO` and the paused own supply keep them waiting.
-- `photo_hunt.py --recheck` run twice: both swept the same 40 kept-set trees (ali, ams, arn), 0 new candidates; the sweep does not advance past them. A session with time should look at why the other ~985 unchecked photo-less trees are never reached.
-
-## 2026-10-23 night run, twelfth attempt (19:44 window): nothing published
-
-Rungs 1 and 2 clear (0 reader photos waiting, health.py clean, 0 BLOCKER). Own supply is paused, enrichment says nothing to do, `recognise.py --stuck` and `pagegaps.py` are empty. `photo_hunt.py --recheck` swept 40 kept-set trees: 0 new candidates, so no viewing pass. Scout target Stirling was already retried earlier today (still stalled), so I did not repeat it. Nothing refused in the shell.
-
 ## 2026-10-24 every map draws pins the Airbnb way, never counted bubbles (live, web and app)
 
 Hidde, an hour after the city map got bubbles: "je wil ook niet nodeloos bubbels openklikken ... kun je deze interactie bij airbnb onderzoeken". Airbnb and Google Maps never pile a results map into counted bubbles (benchmark in CONVENTIONS.md); shown Lisbon both ways, he chose: "Doe de Airbnb-manier overal ... Web en app." Now on every map (city, /explore, country and state, My trees, the app): every tree drawn, a full pin where none stands within 40 px (lib/map.ts PIN_DISTANCE, TreeMap.swift pinDistance), photograph first, a dot for the rest, a tap always opens the tree, nothing zooms for you. The app's own grid clusterer is gone; MapLibre's symbol collision places the pins there and on the circle-pin maps, the city map does the pass over its DOM pins. The one bubble left is a same-spot stack, from zoom 14 only (STACK_ZOOM, stackZoom). Checked on mocks of the live pages at 375px and desktop (Lisbon 18 pins and 18 dots at the opening zoom; explore 98 pins and 2,731 dots over Europe; Italy; My trees filled and hollow) and in the simulator (Lisbon, the Ajuda stack); the app built twice and its unit tests pass. qa `check_every_map_shows_pins_the_same_way()` refuses a clustered source, the old grid, or the two numbers drifting. DECISIONS.md 2026-10-24, CLAUDE.md one line. Not done: the night's three cluster tests were replaced by three pin-rule tests; a walk through the UI test sweep on CI will say whether the grid tap still lands.
@@ -429,50 +405,6 @@ Hidde, an hour after the city map got bubbles: "je wil ook niet nodeloos bubbels
 ## 2026-10-24 city map piles its own trees like every other map (live)
 
 Hidde, on /lisbon (36 trees): the city map drew every species pin over the others zoomed out while /explore, the country maps, My trees and the app showed counted bubbles ("kunnen we die interacties gelijk houden?"). The city map now carries a clustered source of its own trees that decides which DOM pins show and draws the same moss bubble with the count, from the shared numbers in lib/map.ts (radius 13, distance 40, piles to zoom 14); a tap zooms to where the bubble parts, past zoom 14 the species pins and the same-spot stacks are back, and a selected tree flies to 15.5 so its pin never lands inside a bubble. Checked on a mockup of the live pages at 375px and desktop: Lisbon 6+2+16+10 plus two pins, Palermo, London 27 in six piles plus five, Bruges one 2 beside two pins. qa `check_every_web_map_piles_with_the_same_numbers()` refuses a map file writing those numbers as literals. CONVENTIONS.md "How close two pins have to be" got the dated line. Seen in passing, not fixed: /london at 375px opens at zoom 8.4, below FAR, so the live page shows one 32 bubble and no pins until you zoom in.
-
-## 2026-10-23 night run, eleventh attempt: nothing live, photo lane nearly empty
-
-No claims stood. READY is still 3 (Oxford 2, Madrid 1) and own supply is paused, so no write pass. `photo_fetch.py --roster` had only four images left to look at, and I viewed them: 3 rejected (seedling leaves twice at lux_009, a dark horse chestnut for the plane tri_032), 1 held (tri_003: a good giant sequoia 89 m from the pin where the entry says Ghost Pine, so trunk and species need a check). Approved 0. The sweep of the kept set is close to exhausted; the next lever is checking tri_003 or Hidde lifting the pause.
-
-## 2026-10-23 night run, tenth attempt: nothing published
-
-No claims stood. READY is still 3 (Oxford 2, Madrid 1), none with a photograph, so own-supply rules stop them. `photo_hunt.py --recheck` swept the same first 40 kept-set trees (Alicante, Amsterdam, Arnhem) again: 0 new candidates, so the sweep order needs to advance before it is worth running again. Nothing dispatched.
-
-## 2026-10-23 night run, ninth attempt: nothing published
-
-Resolved a LOG.md rebase conflict with the city-map entry and pushed. No claims stood. READY is 3 (Oxford 2, Madrid 1), none with a photograph, so `ADD_NEEDS_PHOTO` and `SUPPLY_PAUSED` stop a write pass from shipping them. enrich.py reports nothing to do, the Stirling register was retried earlier today, and a verify pass on a staged city would only add leads that cannot go live. Nothing dispatched.
-
-## 2026-10-23 night run, eighth attempt: nothing published
-
-Inbox empty, health.py clear. `photo_hunt.py --recheck` swept 40 more kept-set trees (Alicante, Amsterdam, Arnhem), 0 new candidates. Own supply is paused and READY is 3 without photos; scout_next names Stirling, already retried today. Nothing dispatched.
-
-## 2026-10-23 night run, seventh attempt: nothing published
-
-No claims stood. READY is still 3 (Oxford 2, Madrid 1, no photos, supply paused). Staged-city and refill advice only adds leads while `SUPPLY_PAUSED` holds; Stirling register already retried today. Nothing dispatched.
-
-## 2026-10-23 night run, sixth attempt: nothing published, photo lane checked
-
-No claims stood. READY is 3 (Oxford 2, Madrid 1, no photos, supply paused). `photo_hunt.py --recheck` swept 40 kept-set trees (Alicante, Amsterdam, Arnhem), 0 new candidates. A photo-judge pass found every fetchable candidate in the kept set already judged; 720 unjudged are last-resort (no geotag, or 30 to 100 m off the pin). It viewed the 7 nearest, all wrong subjects, 8 rejects recorded (6de16587b). No approvals. Next photo step is a by-name sweep on the 35 trees left, not another viewing pass. Pillow was missing on the runner and was installed.
-
-## 2026-10-23 night run, fifth attempt: nothing published
-
-Sightings 0. health.py again flags "deploy skipped", which is pushes superseding each other (the latest deploys were in progress, not failed). Supply is still paused, READY is 3 without photos, and the 92 staged cities would only add leads. Nothing dispatched, nothing refused by the shell.
-
-## 2026-10-23 night run, fourth attempt: nothing published
-
-No claims stood. READY is 3 (Oxford 2, Madrid 1, no photos, supply paused, so no write pass). Enrichment and page gaps: nothing to do. prepare.py's staged-city and refill advice assumes supply is open; with `SUPPLY_PAUSED` a verify pass would only add leads, and the walls already hold the likely cities. Stirling already retried three times today, not repeated. Nothing dispatched.
-
-## 2026-10-23 night run, third attempt: nothing published
-
-No claims stood. READY is still 3 (Oxford 2, Madrid 1, no photos). The written batches parked earlier (photo-batch-2: 10, texas-famous: 4) are own supply, so they stay unmerged while `SUPPLY_PAUSED` holds. Sightings 0, enrichment nothing to do. health.py's "deploy skipped" is only cancelled or skipped runs from pushes landing close together, not a failing build.
-
-## 2026-10-23 night run, second attempt: nothing published
-
-No claims stood, READY is 3 (Oxford 2, Madrid 1, no photos, supply paused). `photo_hunt.py --recheck` swept 40 more trees, no new candidates. Claimed Bamberg for a verify pass, found it already holds its 9 trees and only 6 open leads, released it (now a 48h wall in data/walls.json). Munich is full (63 of 60). Stirling register retry was done in the first attempt. Nothing worth dispatching while supply is paused.
-
-## 2026-10-23 night run (14:28 UTC window): nothing published, supply paused
-
-Rung 1 and 2 clear (0 sightings waiting, health green). Own supply is paused, so no tree work. Ran `photo_hunt.py --recheck` (40 trees swept, no new candidates) and fetched the only four queued candidates: two Luxembourg sycamore saplings (not the tree), a giant-sequoia photo for the Trieste Ghost Pine (species mismatch) and a worm's-eye chestnut for the Trieste plane (wrong species, no frame). All four rejected, nothing approved. Enrichment, recognition lines and page gaps all say nothing to do. Scouted Stirling again (rung 5): only Inchmahome yews/oaks and the Bridge of Allan sequoia as leads, still stalled, note in data/register-scouting.json. READY leads (Oxford 2, Madrid 1) have no photo, so they wait. Nothing refused by the shell.
 
 ## 2026-10-24 session: map list comes down again with no trees in view
 
@@ -489,50 +421,4 @@ wilder.pt published the Lisbon interview on 2026-10-23 (Ines Sequeira): links to
 ## 2026-10-24 session: Show HN posted
 
 Hidde posted "Show HN: I'm mapping the old trees worth walking to (3,800 so far)" at 15:04 Dutch time, news.ycombinator.com/item?id=50208440, from his own account; first comment in his About-page voice with the AI paragraph in his own framing (drafts/show-hn.md, local). Measure over the week: points and comments on the item, visitors with referrer news.ycombinator.com in Google Analytics, submissions and accounts. OUTREACH_STRATEGY's "later or not at all" was replaced on his word on 10-23.
-
-## 2026-10-23 session: Reddit threads (r/Lisbon, r/sicily), a Sicily collection, the Messina fig live
-
-**In the product:** /collections/sicilys-most-remarkable-trees (13 trees: Palermo, Catania, Sant'Alfio, Messina) as the page Hidde's r/sicily post links to in its edit; out of Google like every collection under the strict cut. /messina/the-moreton-bay-fig-of-villa-mazzini is the first tree from a Reddit tip to go live: regional register sheet 05/F158/ME/19 (25.13 m round) plus LetteraEmme 2020, a CC BY-SA Commons photograph with the board in front of the trunk, looked at. **Rule:** a stranger's public tip is a reader's tree under the supply pause (`found_by_reader.tip`, findable.reader_added; CLAUDE.md). **Outreach:** a post is for people, not tips, the name goes in every thread (OUTREACH_STRATEGY.md); HIS_VOICE got his AI line and the no-photo-ask-by-reflex lesson. **Leads:** Seia (Souto da Lapa chestnuts, the tipster's photos were off the internet), Agrigento (7 Valle dei Templi register trees, a walk; the Borgo Giallonardo olive blocked on hotel grounds), Syracuse, Pozzallo. r/sicily gave 8 places in two hours and no accounts; GA referrals to check tomorrow for both subs.
-
-## 2026-10-23 session: Mapillary tried as a photo source
-
-Two trees looked at in the viewer (Catania figs, Den Bosch plane): coverage at both, frames from dashcams and walks where the tree is at the edge or out of shot. Verdict in OPEN_DATA_SURVEY.md: a dated life check, rarely a photograph; the API needs a free token Hidde would have to create. Nothing in the product changed.
-
-## 2026-10-23 session: the Season Radar case, answered; Plus parked; one digest row
-Made the case that Season Radar (a dated push) is the retention hook and the paid feature (docs/season-radar-case.md, conventions looked up in CONVENTIONS.md: Weathernews 紅葉Ch., eBird, Audubon, AllTrails, Strava, Apple; mockup beside the reference in a preview). Hidde was not convinced and was right: return is a monthly, trip-shaped thing, season is content, and the open question is the Plus step once people upload trees, which is parked until free traction (DECISIONS.md 2026-10-23). Today's cohorts: 103 stranger phones, 60 opened on one day only; back within 7 days 1 in 3 in September, 1 in 5 in October (not the 1 in 13 quoted on 10-22). **Digest: unchanged in the end.** A row under "Phones back within 30 days" (how many of those saved, ticked or photographed a tree in those 30 days) was built, widened and removed within the hour on Hidde's word ("slechte titel en vraag me af of dit nou het getal is"): his seven headline numbers already say whether there is free traction. What the exercise did settle: of the 23 phones back on three days or more, 10 gave something and 13 never, so the session's line that "the ones who come back are the ones who contribute" was wrong. Nothing in the product changed.
-
-## 2026-10-23 night run, fourth attempt: nothing new, said plainly
-Nothing changed on the site. No claims, READY leads still the same 3 (photo-less, supply paused). `photo_hunt.py --recheck` swept 40 more kept-set trees (Alicante, Amsterdam, Arnhem): 0 new candidates. Stirling already retried yesterday. Remaining kept-set photo-less trees: about 985, same sweep next run.
-
-## 2026-10-23 night run, third attempt: two species intros
-Wrote the two missing species intros (Sugar Maple, Eastern White Pine) from the site's own trees; `pagegaps.py --check` now clean. Bing only while the strict cut holds. Not built or qa-run here (no site/dist). Nothing else workable: claims empty, READY leads photo-less under the supply pause, enrich empty.
-
-## 2026-10-23 night run, second attempt: nothing to do, said plainly
-Nothing changed on the site. No claims standing. READY leads (3: Oxford x2, Madrid) have no approved photograph and own supply is paused (`SUPPLY_PAUSED`), so no write pass. Written-and-ready batches (photo-batch-2, texas-famous) are held by the same pause. `enrich.py --next` and `photo_gaps.py --shortlist` empty; pagegaps only species pages, which the strict cut keeps out of Google. Stirling register retried yesterday and stays stalled. iOS fix (FlowWalk) is running in CI. Open for Hidde: when own supply restarts, photo-batch-2 (10 trees) and texas-famous (4) are ready to merge.
-
-## 2026-10-23 night run (09:00 UTC): photo recheck on the kept set, nothing live
-Nothing changed on the site. Rung 1 empty (0 sightings). Rung 2: the iOS app failure of 10-22 is a FlowWalk assertion (search-to-a-tree has no way back after the first result); a fix commit is already running in CI, so left alone. Own supply is paused, so I ran `photo_hunt.py --recheck` (no new candidates) and `photo_fetch.py --roster`, which fetched 7 images for Luxembourg, Como and Trieste. I looked at them: a sycamore seedling, a magnolia and a statue, a dark chestnut shot, and a giant sequoia against our Monterey Cypress. All 8 candidate urls rejected via photo_verdicts.py (the `page` field must hold the candidate url, not the city). prepare.py printed no 7-day visits line.
-
-## 2026-10-23 session: readers' photos lead the page, and readers hear when theirs is live
-
-What changed in the product: a reader's photograph now becomes the LEAD on a tree's page, the old lead moving into the strip ("if google appreciates them as lead better then make them lead"; `unique_photo()` reads the lead only). Applied to the three trees that had one as an extra only (cma_001, lis_030, tkc_001). And a reader whose photograph goes live gets a mail: the first at once, later ones bundled, at most one per 30 days (text he approved in drafts/photo-live-mail.md; sent by nightly.yml's mail step). The weeping cedar's reader is queued for the first one. Hidde agreed on the cedar (judgement filed). The red iOS check is one flaky test (search-to-a-tree in FlowWalk, 229 of 230 pass); not fixed.
-
-## 2026-10-23 session: source batch sent, Season Radar session started
-
-Hidde: "verstuur een batch!" The source batch of ten (people-run sites our tree pages cite, link ask) went out, then on his second word press round 4 (ten regional desks) and tourism batch 2 (Porto, The Hague, Ede, Cagliari): 24 mails today. Every desk from the 10-20 press list is now mailed; round 5 needs new desks from the kept set. Sent log and contacts database in the private store. A separate session makes the case for Season Radar as the retention lever, honestly, with references; nothing built.
-
-## 2026-10-23 second restart: nothing to ship
-
-No claims; READY still 3 leads without photographs; inbox empty; supply paused. `photo_hunt.py --recheck` found 0 new candidates in its 40-tree slice. `vendor_photos.py` still cannot downscale bne_004 and chi_023 (no Pillow on this runner). Deploy dispatch refused (HTTP 403 from this token), so the live site stays behind main until the next scheduled build. For Hidde: nothing.
-
-## 2026-10-23 restart attempt: nothing to ship, and why
-
-No claims standing. READY holds 3 leads (two Oxford, one Madrid), none with an approved photograph. The 15 written trees (photo-batch-2, texas-famous, ftw_018) and the 11 held city files are not waiting on the pace cap any more: own supply is paused (SUPPLY_PAUSED), per data/research/held-pace-2026-10-22/README.md, so merging them would break the 10-22 ruling. Stirling register was retried earlier today. Refill and verify lanes add leads only, and the shelf already holds more than the paused supply can use. No trees added.
-
-## 2026-10-23 03:00 window: photo sweep and vendoring, no new trees
-
-- Rung 1 inbox empty. Rung 2: Smoke skipped (push condition) and iOS failure (FlowWalk, needs a Mac) answered in health.py. Supply paused and READY leads lack photographs, so no write pass.
-- `photo_hunt.py --recheck` swept 40 kept-set trees; photo-judge viewed 13 files for 16 trees, approved none (park-wide aerials, sculptures, a mineral; The Hague beech has no geotag). Kept-set queue has no unjudged candidates left.
-- `vendor_photos.py` put 22 photographs on our own domain; bne_004 and chi_023 failed to downscale (Pillow missing on this runner), still to vendor.
-- For Hidde: nothing.
 
