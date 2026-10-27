@@ -3273,6 +3273,12 @@ the browser pane that day: Reddit (blocked), iNaturalist (bot check), Airbnb
 co-hosts (listing gone). Google Maps' "Suggest an edit" pill is from memory.
 Three mockups went to Hidde built on these: an action line under a rule, one
 grey line under the name, a small outlined pill.
+**What we do:** Atlas Obscura's shape, chosen by Hidde, then shrunk on his
+word ("de tekst lijkt nog steeds groter dan de ambassadeur zelf"): a thin rule
+under the person, then a 14px grey seal centred under the avatar and
+"Become an ambassador" in the 12px grey of the role line, lined up with the
+name. No avatar circle, no second line, no chevron, no green. The tap area
+stays 44 high. A place with no ambassador keeps the full open-seat row.
 
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 
