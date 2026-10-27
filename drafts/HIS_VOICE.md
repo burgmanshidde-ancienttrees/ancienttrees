@@ -388,6 +388,18 @@ Two lessons from his own hand. (1) Photos: my drafts asked nearly every tipster 
 
 No ask beyond their opinion. He replaced my version, which ended on a request for more photos.
 
+## Calibration 2026-10-27: a guest article for a magazine (Crann, Declan O'Brien)
+
+The sent version is drafts/crann-article-2026-10-final.md; start any later article or press piece from it. What he changed, in his words or his edits:
+
+- **The covering mail is three lines and hands the editor control**: "Sure, I got right to it. Here's a first version about 600 words. I'm not a writer or an editor, so please tell me honestly what you think and change whatever you like." Photo credits listed plainly beneath; signed "Let me know what you think, Hidde". No extra ask (he cut the King Oak photo request).
+- **He is "a Dutch tree fan", not "a designer"**: he struck "I'm a designer" from the body, and the standfirst followed.
+- **"Ticked off" is out ("i dont lik ticked off")**: the product verbs are find, walk and collect.
+- **No invented plans**: "I'm planning a trip to Ireland" was his own line and he withdrew it ("im not planning a trip"); never write a visit, trip or memory he has not given.
+- **Title and standfirst never repeat a phrase** ("worth a detour" twice "does really overlap"); "worth a visit" was the same echo.
+- **A fact in his article is checked against the cited source, word by word** ("is this bullsht how did yo come up with this?" on the King Oak): the brief's "bow to the ground" and "the owning family" went beyond Wikipedia and its Irish Examiner and Irish Times sources, and were replaced.
+- His own story sentences (Palermo fig, Lisbon parks, "not a tree expert, just a big fan", "Each tree has a story that only locals know") stay verbatim; edits to them are grammar only.
+
 ## Calibration 2026-10-27: a last word from them is not a reason to write (four drafts, one kept)
 
 I drafted four replies from the owed list: an ambassador ask to James Kearney (UNLV, mid-way through sending photos), a thank-you to Andreas Groeger for "no photos, sorry", a thank-you plus a product question to Ines (Wilder) for explaining her Bucaco test, and a reply to Fred van Holland, who declined the ambassador role. His verdict: **"all these mails are unnecessary except the one to fred."** Then he gave Fred's content himself: thank him, say we understand, without any pressure a tip or photo is more than welcome, thanks again for the help.
