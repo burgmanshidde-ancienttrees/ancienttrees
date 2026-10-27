@@ -167,13 +167,28 @@ def readers_in_full(day):
     except Exception as e:
         rows.append(("", "tree notes", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
     try:
-        for r in inbox.get("/rest/v1/sightings?select=user_id,tree_id,name,note,shared,status,updated_at"
-                           "&shared=eq.true&updated_at=gte.%s&order=updated_at.asc" % since, key) or []:
+        # The app re-sends every sighting when it gets a session, which moves
+        # updated_at with nothing changed (Tangier fig, 2026-10-27). Only a
+        # sighting that is new, or whose content really changed since he saw
+        # it, is shown (scripts/sighting_changes.py).
+        import sighting_changes
+        shown = sighting_changes.load()
+        pending = {}
+        for r in inbox.get("/rest/v1/sightings?select=%s"
+                           "&shared=eq.true&updated_at=gte.%s&order=updated_at.asc"
+                           % (sighting_changes.SELECT, since), key) or []:
             if is_ours(r.get("user_id")):
                 continue
+            state = sighting_changes.status(r, shown)
+            if state == "same":
+                continue
+            pending[r["id"]] = sighting_changes.fingerprint(r)
             page = tree_page(r["tree_id"]) if r.get("tree_id") else None
-            rows.append((r["updated_at"], "app photograph", r.get("tree_id") or r.get("name") or "-",
+            rows.append((r["updated_at"], "app photograph" + (" (changed since you saw it)" if state == "changed" else ""),
+                         r.get("tree_id") or r.get("name") or "-",
                          r.get("note") or "", [page] if page else [], r.get("status") or ""))
+        with open(os.path.join(OUT, "sightings-pending.json"), "w", encoding="utf-8") as fh:
+            json.dump(pending, fh)
     except Exception as e:
         rows.append(("", "app photographs", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
     head = "**Everything readers sent since %s, in full** (word for word; names and addresses left out)" % day
@@ -269,6 +284,16 @@ def mark_seen():
     with open(SEEN_AT, "w", encoding="utf-8") as fh:
         json.dump({"_note": "When Hidde last looked at the digest page (show_digest.py --seen). "
                             "The page shows everything readers sent after this.", "seen_at": built}, fh, indent=1)
+    # Every app sighting the page showed is now seen in that form.
+    try:
+        pending = json.load(open(os.path.join(OUT, "sightings-pending.json"), encoding="utf-8"))
+    except Exception:
+        pending = {}
+    if pending:
+        import sighting_changes
+        shown = sighting_changes.load()
+        shown.update(pending)
+        sighting_changes.save(shown)
     import subprocess
     subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "reader_photos.py"), "--seen"])
     print("show_digest: seen up to %s UTC" % built)

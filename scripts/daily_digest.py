@@ -13,6 +13,7 @@ import collections
 import datetime
 import hashlib
 import ours as _ours
+import sighting_changes
 import glob
 import json
 import os
@@ -2028,10 +2029,14 @@ def day_by_day_section(today):
             "Android waitlist": lambda: [(r.get("created_at"), 1) for r in
                                          _supa("/rest/v1/waitlist?select=created_at&created_at=gte.%s"
                                                % since, key)[0] or []],
+            # A sighting the app merely re-sent (same content, new updated_at)
+            # is not a new photograph (scripts/sighting_changes.py).
             "App photos": lambda: [(r.get("updated_at"), 1) for r in
-                                   _supa("/rest/v1/sightings?select=user_id,updated_at&shared=eq.true"
-                                         "&photo=not.is.null&updated_at=gte.%s" % since, key)[0] or []
-                                   if not is_ours(r.get("user_id"))],
+                                   _supa("/rest/v1/sightings?select=%s&shared=eq.true"
+                                         "&photo=not.is.null&updated_at=gte.%s"
+                                         % (sighting_changes.SELECT, since), key)[0] or []
+                                   if not is_ours(r.get("user_id"))
+                                   and sighting_changes.status(r) != "same"],
             "Tree notes": lambda: [(r.get("created_at"), 1) for r in
                                    _supa("/rest/v1/tree_notes?select=user_id,created_at"
                                          "&created_at=gte.%s" % since, key)[0] or []
