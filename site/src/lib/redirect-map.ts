@@ -196,6 +196,8 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-27, scripts/retire.py: Reported dead or gone on 2026-10-26 by Miguel Portugal of ICNF Norte, who works on the Arv
+  ["porto", "copper-beech-of-faup"],
   // 2026-10-20, scripts/retire.py: duplicate of rot_002 (same Breytenbach plane, same pin; story facts: moved 1960s, 2021 Tre
   ["rotterdam", "westersingel-plane"],
   // 2026-10-19, scripts/retire.py: Dead: a reader's two app photographs at the pin (2026-10-18, GPS 6 and 20 m off) show blea

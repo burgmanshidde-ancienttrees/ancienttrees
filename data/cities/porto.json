@@ -2,8 +2,8 @@
   "city": "Porto",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Porto's grandest trees mostly arrived with 19th-century British port wine families, who filled their quintas with tulip trees, magnolias and southern hemisphere exotics their money could import but Porto's own climate had to accept. Three gardens hold much of what is worth seeing: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, and the Jardim da Cordoaria, near São Bento station. A short walk east adds three University of Porto quintas, the same collector's habit continued on academic ground. Porto also calls itself the City of Camellias, and means it literally.",
-  "meta_description": "Porto's trees range from a 250-year tulip tree to a 35-metre ginkgo that turns gold in December, across three gardens and three university quintas.",
+  "intro": "Porto's grandest trees mostly arrived with 19th-century British port wine families, who filled their quintas with tulip trees, magnolias and southern hemisphere exotics their money could import but Porto's own climate had to accept. Three gardens hold much of what is worth seeing: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, and the Jardim da Cordoaria, near São Bento station. A short walk east adds two University of Porto quintas, the same collector's habit continued on academic ground. Porto also calls itself the City of Camellias, and means it literally.",
+  "meta_description": "Porto's trees range from a 250-year tulip tree to a 35-metre ginkgo that turns gold in December, across three gardens and two university quintas.",
   "question_answer": "Porto's oldest tree that anyone can walk up to is a Virginia tulip tree (Liriodendron tulipifera) beside Casa Tait in the Jardins do Palacio de Cristal, put at more than 250 years and one of the first individual trees Portugal placed under legal protection, in 1950. It stands in the free public gardens off Rua de D. Manuel II. The national register lists one older, a 300-year tulip tree in a school yard on Rua Joao de Deus, which is not open to visitors.",
   "question_meta": "Porto's oldest tree is a 250-year tulip tree at Casa Tait, protected since 1950. Where it stands, and the city's other remarkable trees.",
   "question_context": "The tulip tree beside Casa Tait has the strongest documented age claim in Porto: it was already mature enough to warrant individual legal protection when Portugal formalised its tree of public interest classification in 1950, and both the city council's own parks department and independent garden historians place its age at over 250 years. That makes it older than the Palácio de Cristal gardens built around it, which German landscape architect Émile David laid out in the 1860s, and older than the original glass-and-iron exhibition palace itself, demolished in 1951 and replaced with the domed arena that stands there now. Casa Tait, the mansion beside the tree, took its name from a family of British port wine merchants whose 19th-century wealth shaped much of what grows in this corner of the garden, tulip trees, magnolias and camellias among them. A second, taller tulip tree grows nearby without the same formal protection status, and should not be confused with the older, classified specimen the question above refers to.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Porto's remarkable trees free to visit?",
-      "a": "Nearly all of them. Seventeen of the twenty-seven stand in free public gardens or walkable university campuses: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, the Jardim da Cordoaria, and three University of Porto quintas a short walk further east. The one exception is the Camphor Tree of Via Panorâmica, which stands on a privately owned plot and is viewed from the public road rather than entered."
+      "a": "Nearly all of them. Sixteen of the twenty-six stand in free public gardens or walkable university campuses: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, the Jardim da Cordoaria, and two University of Porto quintas a short walk further east. The one exception is the Camphor Tree of Via Panorâmica, which stands on a privately owned plot and is viewed from the public road rather than entered."
     },
     {
       "q": "Why is Porto called the City of Camellias?",
@@ -423,50 +423,6 @@
       "notes": "Single-source tree: the 'most beautiful in the garden' description and general presence come from one dedicated garden-history blog, and no second independent source confirming this specific specimen was found despite a real search. Kept because the underlying facts (species, general garden context, presence of a comparative cedar collection) are independently verifiable even though this exact tree isn't cross-confirmed; age left unknown rather than guessed. Checked 2026-07-29 against ICNF's national register of classified trees (sigservices.icnf.pt, BDG/AIP layer): the only Cedrus atlantica record for the whole of Porto is at 'Jardim da Casa do Professor' (id 360), a distinct site roughly 300m from the Botanical Garden's own coordinates with no clear connection to the garden in any source found, so it was not used to upgrade this pin; still approximate. Photo search 2026-07-29: no openly-licensed photo found on Wikimedia Commons (no 'Cedrus atlantica in Portugal' category exists), iNaturalist, Openverse or Flickr CC search. Still missing.",
       "location_precision": "approximate",
       "how_to_recognise": "You are looking for one of three cedars planted close together in the conifer collection. The Atlas is told from the Lebanon and Himalayan ones by branch angle and needle colour, so get close."
-    },
-    {
-      "id": "por_011",
-      "name": "The Copper Beech of FAUP",
-      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-      "age_estimate": "100+ years",
-      "age_min": 100,
-      "age_max": 150,
-      "location": {
-        "address": "Faculdade de Arquitectura da Universidade do Porto (FAUP), Via Panorâmica Edgar Cardoso, Quinta do Gólgota, Porto",
-        "latitude": 41.150475,
-        "longitude": -8.635183,
-        "neighbourhood": "Lordelo do Ouro e Massarelos"
-      },
-      "story": "Architects travel to this campus for the buildings. The tree was here first. This copper beech grows in the gardens of the Quinta do Gólgota, the old estate that became the Faculty of Architecture of the University of Porto, a short walk from the Casa Cor-de-Rosa and the Pavilhão Carlos Ramos. Álvaro Siza began remodelling the site in 1984, and what he built here is one of the addresses the Escola do Porto is known by, visited by architecture students from all over. The beech was already more than sixty years old when the first drawings were made. It measures 4.85 metres around at chest height, stands 23 metres tall and carries a crown 20 metres across, all measured in 2020, the year Portugal's forest institute classified it a tree of public interest on the city council's proposal and with the University's agreement as owner. Copper beech is the purple-leaved form of the common European beech, planted through the 19th century by estate owners who wanted something on the lawn that was not green. This one has outlived the fashion, the estate and the family that paid for both, and it now spends its days being photographed by accident, in the background of somebody's shot of a Siza wall. Campus hours, no ticket.",
-      "best_time": {
-        "months": [
-          4,
-          5
-        ],
-        "kind": "fresh leaves",
-        "label": "late April and May, when the new leaves open translucent red before darkening"
-      },
-      "verified_sources": [
-        "ICNF national register (data/registers/portugal-icnf.json, processo AIP13121881I): girth 4.85m, age_register 100, last measured 2020, lugar 'Quinta do Gólgota, Via Panorâmica Edgar Cardoso'",
-        "https://noticias.up.pt/2020/11/20/arvores-da-faup-classificadas-como-de-interesse-publico/ (Universidade do Porto news, 2020-11-20): confirms the purple beech at Quinta do Gólgota/FAUP grounds, over 100 years old, classification agreed by the owner (University of Porto), sited in the gardens near Casa Cor-de-Rosa and Pavilhão Carlos Ramos"
-      ],
-      "access": "Free. Stands on the FAUP campus (Faculty of Architecture, University of Porto), a working academic campus rather than a public park; the Álvaro Siza-designed buildings here are a recognised architecture pilgrimage site and the grounds are walkable during campus hours.",
-      "transport": "STCP bus to Rua de Entre-Quintas / Via Panorâmica Edgar Cardoso, then a short walk onto the FAUP campus.",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "photo": {
-        "url": "https://ancienttrees.app/photos/por_011-copper-beech-of-faup.jpg",
-        "license": "Provided by Paulo V. Araujo (Dias com Arvores), all rights reserved",
-        "attribution": "Paulo V. Araujo, Dias com Arvores",
-        "status": "approved",
-        "width": 1064,
-        "height": 1600,
-        "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-01, with the permission in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
-      },
-      "girth_cm": 485,
-      "how_to_recognise": "You can recognise it by the trunk, 4.85 metres round, on the FAUP campus a short walk from the Casa Cor-de-Rosa and the Pavilhao Carlos Ramos.",
-      "height_m": 23.0,
-      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. AIP13121881I (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "por_012",

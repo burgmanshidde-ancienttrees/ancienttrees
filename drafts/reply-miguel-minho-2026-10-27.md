@@ -10,8 +10,10 @@ Notes for Hidde (not sent):
   not held by the one-week rest.
 - He also reported the Copper Beech of FAUP (por_011, an ICNF-registered tree)
   as dead or gone at 16:48 on 10-26. From the man who works on that register,
-  that is close to certain. It is not in your text; the tree is still on the
-  map.
+  that is close to certain. Retired on 2026-10-27 at Hidde's word (retire.py,
+  redirect added, Porto now 26 trees, counts fixed in English and Portuguese);
+  submission 573 closed as changed with replied_at set, so no automatic mail
+  goes. The mail now says it is off the map.
 - Your own text (2026-10-27), grammar, spelling and capitals only, plus the
   Sources-fix sentence from the other draft as the opening line. Second round
   (Hidde, 2026-10-27): the ICNF answer and the ambassador answer as one
@@ -26,7 +28,7 @@ Notes for Hidde (not sent):
 
 Hi Miguel,
 
-Thanks for your mail, and for the pointer on the Sources page. That entry now links to the geocatalogo page, sorry it sent people to a login. And thanks for wanting to help out with making Ancient Trees better. Is it correct that you can help out with all these places?
+Thanks for your mail, and for the pointer on the Sources page. That entry now links to the geocatalogo page, sorry it sent people to a login. Thanks as well for letting us know about the copper beech at FAUP, it is off the map now. And thanks for wanting to help out with making Ancient Trees better. Is it correct that you can help out with all these places?
 
 https://ancienttrees.app/porto
 https://ancienttrees.app/guimaraes
