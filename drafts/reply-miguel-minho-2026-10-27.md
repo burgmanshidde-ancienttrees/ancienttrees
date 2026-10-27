@@ -13,7 +13,9 @@ Notes for Hidde (not sent):
   that is close to certain. It is not in your text; the tree is still on the
   map.
 - Your own text (2026-10-27), grammar, spelling and capitals only, plus the
-  Sources-fix sentence from the other draft as the opening line. "List all"
+  Sources-fix sentence from the other draft as the opening line. Second round
+  (Hidde, 2026-10-27): the ICNF answer and the ambassador answer as one
+  message, his help welcome anywhere in Portugal, and a call offered. "List all"
   read as every place he asked for, Porto included. "suggesting new trees or
   old ones" rendered as "or telling us which ones don't belong".
 - His earlier mails from us: the automatic welcome (10-26) and the automatic
@@ -24,9 +26,7 @@ Notes for Hidde (not sent):
 
 Hi Miguel,
 
-Thanks for your mail, and for the pointer on the Sources page. That entry now links to the geocatalogo page, sorry it sent people to a login.
-
-Thanks for wanting to help out with making Ancient Trees better. Is it correct that you can help out with all these places?
+Thanks for your mail, and for the pointer on the Sources page. That entry now links to the geocatalogo page, sorry it sent people to a login. And thanks for wanting to help out with making Ancient Trees better. Is it correct that you can help out with all these places?
 
 https://ancienttrees.app/porto
 https://ancienttrees.app/guimaraes
@@ -34,7 +34,7 @@ https://ancienttrees.app/braga
 https://ancienttrees.app/calvos
 https://ancienttrees.app/vales
 
-All sorts of help are welcome, whether it is suggesting new trees or telling us which ones don't belong, improving the stories of the trees, or adding photos. Photos are easiest to upload through the app, but everything else we can discuss by mail for now.
+Your help is very welcome for these places, but just as much for any other place in Portugal. Any kind of help is great, whether it is suggesting new trees or telling us which ones don't belong, improving the stories of the trees, or adding photos. Photos are easiest to upload through the app, and everything else we can discuss by mail, or in a call if you like.
 
 Very nice to meet you, and thanks again for the help.
 Hidde
