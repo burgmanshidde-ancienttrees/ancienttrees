@@ -15,6 +15,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Rungs 1 to 3 clear (no reader photos or notes, health green). Rung 4: 94 drafts still open, so no new mail batch; sourced two archive contacts instead (Nederlandse Dendrologische Vereniging for Arnhem, Asociación Española de Arboricultura for Barcelona/Seville/Valencia; both addresses from their own sites), contacts rebuilt and pushed. Tree Register and Ancient Tree Forum addresses were only on the Charity Commission register, not their own sites, so left out. Hoyt Arboretum's address was only in old event listings (its site returned 403).
 - Rung 5: enrichment lisbon+albertshausen+bamberg+potsdam: 4 trees closed (3 best_time, Potsdam beech pin source), 14 gaps recorded as dead ends. Measurements and Bamberg access had no source. Preflight 0 problems.
+- Shelf thin (the writable pile is stale or held), so scout: Canberra (#31). The ACT Tree Register (ArcGIS FeatureServer, CC BY 4.0 per the item's licenseInfo; data.gov.au says "Other") holds 376 rows, 350 registered; stored in data/registers/act-tree-register.json, 12 large public-ground trees as leads in data/leads/canberra.json, verdict in register-scouting.json and OPEN_DATA_SURVEY.md. Coordinates are crown-polygon means, so approximate. Nothing published. Next for Canberra: photo hunt on the 12 leads. The scout agent used a heredoc for the survey append (rule slip, content fine).
 
 ## 2026-10-27 session with Hidde: Show HN, second try
 
