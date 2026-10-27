@@ -3279,6 +3279,16 @@ under the person, then a 14px grey seal centred under the avatar and
 "Become an ambassador" in the 12px grey of the role line, lined up with the
 name. No avatar circle, no second line, no chevron, no green. The tap area
 stays 44 high. A place with no ambassador keeps the full open-seat row.
+Then (same day) Hidde on the live page: the vertical spacing is off and the
+icon is not nice, "mss gewoon geen icoon", look for a better example. Looked
+at 2026-10-27: **Google Maps** (a place panel, Orto Botanico Florence) puts
+"Suggest an edit" under the facts and "Add photos & videos" under the photos,
+each a borderless tonal pill, centred, about 32 high, 14px medium text with a
+small icon. **Tripadvisor** (a hotel page) asks "Is this your business?" in a
+full block with a 20px bold title: too loud for this. **AllTrails** did not
+load in the browser pane. Two mockups went to Hidde, neither with an icon:
+Google's pill in ink on light grey, and text only with even space either side
+of the rule.
 
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 
