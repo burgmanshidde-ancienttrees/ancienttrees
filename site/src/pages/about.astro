@@ -66,12 +66,13 @@ const graph = [
     <p>If you really want to help, you can <a href="/cities">become a city ambassador</a> and help guide others to see the most remarkable trees in your city.</p>
     <p>The photo is me under a Japanese cedar we found recently, on a trip while we were testing the app. I work on the app every day to make it better. For questions, feedback or anything else, mail me at <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
     <p class="about-sign">Thanks,<br>Hidde</p>
+    {/* PRESS: Hidde's line (2026-10-22), live since the article went up on
+        2026-10-23. Under the signature and set like the "not a tree expert"
+        line, larger, on his word (2026-10-27). Nothing else narrates press. */}
+    <p class="about-press">Ancient Trees was in <a href="https://wilder.pt/historias/ancient-trees-hidde-lancou-uma-app-sobre-arvores-fascinantes-de-lisboa-porto-e-outras-272-cidades">Wilder</a> in October 2026.</p>
     <div class="about-where">
       <h2>Where the trees come from</h2>
       <p>Most trees come from official registers of protected and monumental trees, the rest from tree societies, local newspapers and readers. The stories are written with AI, and readers who know the trees correct them. All sources are on the <a href="/sources">sources page</a>.</p>
-      {/* PRESS: Hidde's line (2026-10-22), live since the article went up on
-          2026-10-23. Nothing else on this page narrates press. */}
-      <p>Ancient Trees was in <a href="https://wilder.pt/historias/ancient-trees-hidde-lancou-uma-app-sobre-arvores-fascinantes-de-lisboa-porto-e-outras-272-cidades">Wilder</a> in October 2026.</p>
     </div>
   </div>
 </main>
@@ -86,6 +87,8 @@ const graph = [
   .about-words .about-sign { color: var(--ink); font-weight: 500; }
   .about-words p { font-size: 17px; line-height: 1.75; color: var(--ink-mid); font-weight: 300; margin: 0 0 1.1rem; }
   .about-mark { color: var(--ink); font-weight: 500; }
+  .about-words .about-press { font-size: 21px; line-height: 1.45; color: var(--ink); font-weight: 500; margin: 2rem 0 0; }
+  .about-press a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .about-where { border-top: 1px solid var(--line, rgba(0, 0, 0, .08)); margin-top: 2.5rem; padding-top: 2rem; }
   .about-where h2 { font-size: 20px; margin: 0 0 .6rem; }
   .about-where p { font-size: 15px; }
