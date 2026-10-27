@@ -1,0 +1,970 @@
+{
+ "date": "2026-10-27",
+ "site": "sc-domain:ancienttrees.app",
+ "samples": {
+  "out": [
+   {
+    "path": "/singapore/snake-tree-of-main-gate-road",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/london/mulberry-of-charlton-house",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-08T18:50:47Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/london/mulberry-of-charlton-house",
+    "userCanonical": "https://ancienttrees.app/london/mulberry-of-charlton-house",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/segovia/cedar-of-the-plaza-de-la-merced",
+    "verdict": "NEUTRAL",
+    "coverageState": "Excluded by ‘noindex’ tag",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "BLOCKED_BY_META_TAG",
+    "lastCrawlTime": "2026-10-10T03:42:05Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/segovia/cedar-of-the-plaza-de-la-merced",
+    "userCanonical": "https://ancienttrees.app/segovia/cedar-of-the-plaza-de-la-merced",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/plunge/mykolas-oginskis-linden",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-12T19:51:50Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/plunge/mykolas-oginskis-linden",
+    "userCanonical": "https://ancienttrees.app/plunge/mykolas-oginskis-linden",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/species/scots-pine",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-18T20:15:06Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/species/scots-pine",
+    "userCanonical": "https://ancienttrees.app/species/scots-pine",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/haarlem/caucasian-wingnut-of-statenbolwerk",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-01T06:58:02Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/haarlem/caucasian-wingnut-of-statenbolwerk",
+    "userCanonical": "https://ancienttrees.app/haarlem/caucasian-wingnut-of-statenbolwerk",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/deventer/marshaven-poplar",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-12T19:52:45Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/deventer/marshaven-poplar",
+    "userCanonical": "https://ancienttrees.app/deventer/marshaven-poplar",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/madeira/araucaria-of-quinta-vigia",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/barcelona/japanese-cheesewood-of-the-ciutadella",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-02T18:43:03Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/barcelona/japanese-cheesewood-of-the-ciutadella",
+    "userCanonical": "https://ancienttrees.app/barcelona/japanese-cheesewood-of-the-ciutadella",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/es/barcelona/japanese-cheesewood-of-the-ciutadella",
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/plauginiai-forest/mikalojaus-dauksa-oak-betygala",
+    "verdict": "NEUTRAL",
+    "coverageState": "Excluded by ‘noindex’ tag",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "BLOCKED_BY_META_TAG",
+    "lastCrawlTime": "2026-10-09T22:14:57Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/plauginiai-forest/mikalojaus-dauksa-oak-betygala",
+    "userCanonical": "https://ancienttrees.app/plauginiai-forest/mikalojaus-dauksa-oak-betygala",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/the-hague/planes-of-the-grote-kerk",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-04T13:39:33Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/the-hague/planes-of-the-grote-kerk",
+    "userCanonical": "https://ancienttrees.app/the-hague/planes-of-the-grote-kerk",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/nl/the-hague/planes-of-the-grote-kerk"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/species/eastern-hemlock",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/martinsville-new-jersey/devils-tree",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-11T03:42:24Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/martinsville-new-jersey/devils-tree",
+    "userCanonical": "https://ancienttrees.app/martinsville-new-jersey/devils-tree",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/berlin/bosnian-maple-of-gendarmenmarkt",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/cagliari/jacaranda-of-giardini-pubblici",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-28T00:40:16Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/cagliari/jacaranda-of-giardini-pubblici",
+    "userCanonical": "https://ancienttrees.app/cagliari/jacaranda-of-giardini-pubblici",
+    "referringUrls": [
+     "https://ancienttrees.app/it/cagliari/jacaranda-of-giardini-pubblici",
+     "https://ancienttrees.app/cagliari"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/arnhem/lorentz-monument-oak",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-12T19:55:10Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/arnhem/lorentz-monument-oak",
+    "userCanonical": "https://ancienttrees.app/arnhem/lorentz-monument-oak",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/hawaii/larger-kalopa-kopiko-ula",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-03T21:19:18Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/hawaii/larger-kalopa-kopiko-ula",
+    "userCanonical": "https://ancienttrees.app/hawaii/larger-kalopa-kopiko-ula",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/miedzyzdroje/bolko-oak",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-18T10:54:51Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/miedzyzdroje/bolko-oak",
+    "userCanonical": "https://ancienttrees.app/miedzyzdroje/bolko-oak",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/daruvar/adam-the-daruvar-ginkgo",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/barcelona/osage-orange-of-carrer-maria-montessori",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-04T11:30:48Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/barcelona/osage-orange-of-carrer-maria-montessori",
+    "userCanonical": "https://ancienttrees.app/barcelona/osage-orange-of-carrer-maria-montessori",
+    "referringUrls": [
+     "https://ancienttrees.app/es/barcelona/osage-orange-of-carrer-maria-montessori",
+     "https://ancienttrees.app/barcelona/pepper-tree-of-carrer-joaquim-blume",
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/eraul/eraulgo-artea-the-encina-de-eraul",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/leeuwarden/twin-beeches-of-the-goverts-gasthuis",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-12T19:53:01Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/leeuwarden/twin-beeches-of-the-goverts-gasthuis",
+    "userCanonical": "https://ancienttrees.app/leeuwarden/twin-beeches-of-the-goverts-gasthuis",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/berlin/podbielski-oak",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-19T20:28:49Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/berlin/podbielski-oak",
+    "userCanonical": "https://ancienttrees.app/berlin/podbielski-oak",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/de/berlin/podbielski-oak"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/nara/thickest-black-pine-of-nara-park",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-13T16:19:38Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/nara/thickest-black-pine-of-nara-park",
+    "userCanonical": "https://ancienttrees.app/nara/thickest-black-pine-of-nara-park",
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/dresden/oak-of-the-brauteich",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap-recrawl.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   }
+  ],
+  "kept": [
+   {
+    "path": "/las-vegas/texas-olive-behind-the-paint-shop",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/oslo/munch-eika",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-09T10:12:51Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/oslo/munch-eika",
+    "userCanonical": "https://ancienttrees.app/oslo/munch-eika",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/oslo"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/copenhagen/hungarian-oak-of-bispebjerg-kirkegard",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/porto/tulip-tree-of-casa-allen",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-03T04:03:51Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/porto/tulip-tree-of-casa-allen",
+    "userCanonical": "https://ancienttrees.app/porto/tulip-tree-of-casa-allen",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/pt/porto/tulip-tree-of-casa-allen",
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/porto/magnolia-of-casa-tait",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-04T00:12:23Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/porto/magnolia-of-casa-tait",
+    "userCanonical": "https://ancienttrees.app/porto/magnolia-of-casa-tait",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/pt/porto/magnolia-of-casa-tait",
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/lisbon/pohutukawa-of-campo-santana",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/lisbon/dragon-tree-of-quinta-conde-dos-arcos",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-02T17:38:01Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/lisbon/dragon-tree-of-quinta-conde-dos-arcos",
+    "userCanonical": "https://ancienttrees.app/lisbon/dragon-tree-of-quinta-conde-dos-arcos",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/pt/lisbon/dragon-tree-of-quinta-conde-dos-arcos"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/porto/metrosidero-of-the-library",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-02T02:44:19Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/porto/metrosidero-of-the-library",
+    "userCanonical": "https://ancienttrees.app/porto/metrosidero-of-the-library",
+    "referringUrls": [
+     "https://ancienttrees.app/pt/porto/metrosidero-of-the-library",
+     "https://ancienttrees.app/porto/tulip-tree-of-casa-tait"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/munich/hollow-lime-of-obermarbach",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/frankfurt/great-oak-of-the-leonhard-eissnert-park",
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+   },
+   {
+    "path": "/stuttgart/hohenheim-love-plane",
+    "verdict": "NEUTRAL",
+    "coverageState": "Excluded by ‘noindex’ tag",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "BLOCKED_BY_META_TAG",
+    "lastCrawlTime": "2026-10-11T14:03:55Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/stuttgart/hohenheim-love-plane",
+    "userCanonical": "https://ancienttrees.app/stuttgart/hohenheim-love-plane",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/reykjavik/larch-of-holavallagardur",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-21T04:41:46Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/reykjavik/larch-of-holavallagardur",
+    "userCanonical": "https://ancienttrees.app/reykjavik/larch-of-holavallagardur",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/copenhagen/lanceleaf-cottonwood-of-bispebjerg-kirkegard",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/copenhagen/oriental-plane-of-j-c-jacobsens-have",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-13T21:00:21Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/copenhagen/oriental-plane-of-j-c-jacobsens-have",
+    "userCanonical": "https://ancienttrees.app/copenhagen/oriental-plane-of-j-c-jacobsens-have",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/reykjavik/city-hall-maple",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-09T09:22:06Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/reykjavik/city-hall-maple",
+    "userCanonical": "https://ancienttrees.app/reykjavik/city-hall-maple",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/reykjavik"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/wessobrunn/marienlinde-of-linden",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-12T21:58:33Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/wessobrunn/marienlinde-of-linden",
+    "userCanonical": "https://ancienttrees.app/wessobrunn/marienlinde-of-linden",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/porto/bunya-bunya-of-jardim-da-cordoaria",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-25T22:56:29Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/porto/bunya-bunya-of-jardim-da-cordoaria",
+    "userCanonical": "https://ancienttrees.app/porto/bunya-bunya-of-jardim-da-cordoaria",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/pt/porto/bunya-bunya-of-jardim-da-cordoaria",
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/oslo/ginkgo-of-botanisk-hage",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-16T16:10:23Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/oslo/ginkgo-of-botanisk-hage",
+    "userCanonical": "https://ancienttrees.app/oslo/ginkgo-of-botanisk-hage",
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml",
+     "https://ancienttrees.app/species/ginkgo"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/copenhagen/london-plane-of-landbohojskolens-have",
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+   },
+   {
+    "path": "/manchester/variegated-green-ash",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/frankfurt/chestnut-at-the-schaeferkoeppel",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/palermo/ficus-of-piazza-marina",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-02T13:29:37Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/palermo/ficus-of-piazza-marina",
+    "userCanonical": "https://ancienttrees.app/palermo/ficus-of-piazza-marina",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/it/palermo/ficus-of-piazza-marina",
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/copenhagen/pedunculate-oak-of-frederiksberg-have",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-09T10:39:01Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/copenhagen/pedunculate-oak-of-frederiksberg-have",
+    "userCanonical": "https://ancienttrees.app/copenhagen/pedunculate-oak-of-frederiksberg-have",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/feed.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/wessobrunn/tassilolinde",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-12T19:55:52Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/wessobrunn/tassilolinde",
+    "userCanonical": "https://ancienttrees.app/wessobrunn/tassilolinde",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/frankfurt/brentanopark-oak",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   }
+  ],
+  "places": [
+   {
+    "path": "/miyazaki",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-23T15:05:20Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/miyazaki",
+    "userCanonical": "https://ancienttrees.app/miyazaki",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/ja/miyazaki"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/oslo",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-09T10:01:54Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/oslo",
+    "userCanonical": "https://ancienttrees.app/oslo",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/cities"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/dresden",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-18T12:27:55Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/dresden",
+    "userCanonical": "https://ancienttrees.app/dresden",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/de/dresden"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/seville",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-23T10:21:23Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/seville",
+    "userCanonical": "https://ancienttrees.app/seville",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/las-vegas",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-20T20:27:03Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/las-vegas",
+    "userCanonical": "https://ancienttrees.app/las-vegas",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/toronto"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/porto",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-09-29T06:44:35Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/porto",
+    "userCanonical": "https://ancienttrees.app/porto",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/leipzig",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-27T04:50:05Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/leipzig",
+    "userCanonical": "https://ancienttrees.app/leipzig",
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/nuremberg",
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+   },
+   {
+    "path": "/regensburg",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-21T18:58:54Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/regensburg",
+    "userCanonical": "https://ancienttrees.app/regensburg",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/copenhagen",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-27T05:20:38Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/copenhagen",
+    "userCanonical": "https://ancienttrees.app/copenhagen",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/collections/europes-most-remarkable-trees"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/paris",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-21T10:18:02Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/paris",
+    "userCanonical": "https://ancienttrees.app/paris",
+    "referringUrls": [
+     "https://ancienttrees.app/paris/oldest-tree",
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+   },
+   {
+    "path": "/reykjavik",
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-10-06T10:13:13Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://ancienttrees.app/reykjavik",
+    "userCanonical": "https://ancienttrees.app/reykjavik",
+    "sitemap": [
+     "https://ancienttrees.app/sitemap.xml"
+    ],
+    "referringUrls": [
+     "https://ancienttrees.app/collections/europes-most-remarkable-trees",
+     "https://ancienttrees.app/seoul"
+    ],
+    "crawledAs": "MOBILE"
+   }
+  ]
+ }
+}
