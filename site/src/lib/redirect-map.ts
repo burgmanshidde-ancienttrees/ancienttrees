@@ -63,6 +63,9 @@ const RENAMED_TREE_SLUGS: [string, string, string][] = [
   // cat_001 (2026-10-23): a link posted on r/sicily with "the-" in the slug,
   // our own typo in the thread; the comment was fixed, early clicks were not.
   ["catania", "the-moreton-bay-fig-of-villa-bellini", "cat_001"],
+  // ven_003 (2026-07-28): renamed to the Bcharre Cedars when its 'century-old'
+  // claim proved unsourced; the old URL sat in Search Console as a 404.
+  ["venice", "cedar-of-san-lazzaro-degli-armeni", "ven_003"],
   // bhg_005 (2026-09-25): "by the lake" was our transcription error; the
   // survey puts it 30 m south-west of the lake, as a reader pointed out.
   ["bad-homburg", "oak-by-the-lake", "bhg_005"],
