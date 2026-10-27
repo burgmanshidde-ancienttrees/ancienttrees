@@ -434,7 +434,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 229 | Budapest | 2.42 | 283,807 | 13 | 2 | 3 | - | 60 | published, never ranked (may be uncrawled) |
 | 230 | Bern | 2.51 | 90,627 | - | - | - | - | 20 | predicted (travel demand) |
 | 231 | Nice | 2.46 | 136,877 | 10 | 6 | 2 | - | 30 | published, never ranked (may be uncrawled) |
-| 232 | Porto | 1.23 | 120,415 | 27 | 17 | 2 | 40 | 30 | published, never ranked (may be uncrawled) |
+| 232 | Porto | 1.23 | 120,415 | 26 | 16 | 2 | 42 | 30 | published, never ranked (may be uncrawled) |
 | 233 | Valletta | 2.45 | 84,342 | - | - | - | - | 10 | predicted (travel demand) |
 | 234 | Faro | 1.62 | 55,645 | - | - | - | - | 20 | predicted (travel demand) |
 | 235 | Capri | 1.60 | - | - | - | - | - | 10 | predicted (travel demand) |
