@@ -330,6 +330,16 @@ When somebody asks what counts as "ancient", or which trees we pick, use his lin
 
 The line works because it is a definition anyone can test by standing in front of a tree. Do not add biggest, oldest or rarest as a checklist after it. If they offered one of those, take up the offer in the ask instead.
 
+## Calibration 2026-10-25: following up someone who offered to be ambassador
+
+New York, Buçaco and Porto pressed "become the ambassador" and got the automatic mail with the three-task list, then went quiet. My follow-up gave the full standard intro and asked for their favourite tree. His verdict: **"the mail is rubbish. they had the list of things to do"**, and he wrote it himself:
+
+> hi name, thanks again for wanting to help make the list for city better. im super curious about what you think of the list so far but also the product in general. the product is quite new so any feedback is super relvant for me. either way thanks for the help again and looking forward to stay in touch the comming time. Thanks, Hidde
+
+Lesson: someone who already offered and already has the tasks is not a stranger to introduce yourself to or to give a new question. Thank them again for wanting to help, ask what they think of the list AND the product, say it is new so their feedback matters, and close with "either way" and staying in touch. No intro, no link, no new ask. Use their first name when their sign-in gave one.
+
+And when he hands over his own text, **fix grammar, spelling and capitals only**. My render swapped "the coming time" for "in the coming weeks" and, in Portuguese, "the product" for "Ancient Trees"; his verdict: "je hebt de mail niet beter gemaakt ... minder authentiek, kun je mijn woorden alleen grammaticaal verbeteren". His words, his "super", his phrasing stay; a translation follows his words as closely as the language allows.
+
 ## Calibration 2026-10-15: a journalist who asked who you are (Wibren, Omrop Fryslan)
 
 I added a Leeuwarden line (34 trees live) and the app link to his own short answer. His verdict: "dat van leeuwarden weet hij al, dat van die app hoeft er ook niet in." A journalist asking about the person gets the person: answer his questions, give the phone number, stop. Do not add what he already knows, and the app line is not automatic in a press reply. (Superseded 2026-10-22: a Dutch mail mentions no Amsterdam at all; see "His standard intro".)
@@ -359,3 +369,27 @@ My draft gave every bullet a fact ("half of it sick so go while it's there", "wh
 ## Calibration 2026-10-23: replies under a tip thread (r/sicily)
 
 Two lessons from his own hand. (1) Photos: my drafts asked nearly every tipster for a photo; Hidde: "is het niet gek om iedereen om fotos te vragen als ze overduidelijk ze niet hebben". The post already asks once; a reply asks the one thing that person can know (where in the park, can you walk in), never a photo by reflex. Hidde, 2026-10-24, on the drafts that then asked nobody: "we can do photo requests if its natural". So ask when this person plausibly stood there and could have one (they visited, walked past, "was just there"), and skip it for a memory, a hearsay tip or a link. Same day: "i rather not answer if you just make conversational comments that dont go anywhere". A comment gets a reply only when the reply moves a tree forward (a spot, access, a photo, a page link); a remark, a challenge or a passing question gets none. (2) AI: when someone in the thread raises AI, he says it plainly himself: **"Thanks! To be honest, I did consult ai to improve the list but think in the end humans are way better in doing it"**. True to the product (every tree page says the story was written with AI), said once, no defence.
+
+
+## To a Commons photographer whose photos lead our pages (2026-10-26, his own text, "doe ze zo")
+
+> Hi,
+>
+> Just to let you know: we happily use three of your Lisbon photos on Ancient Trees. My name is Hidde and I'm building Ancient Trees to map all old trees worth a detour, to get a broader audience to enjoy nature.
+>
+> These are online
+>
+> <links>
+>
+> Thanks for taking them! And very curious what you think of the platform.
+>
+> Thanks,
+> Hidde (ancienttrees.app)
+
+No ask beyond their opinion. He replaced my version, which ended on a request for more photos.
+
+## Calibration 2026-10-27: a last word from them is not a reason to write (four drafts, one kept)
+
+I drafted four replies from the owed list: an ambassador ask to James Kearney (UNLV, mid-way through sending photos), a thank-you to Andreas Groeger for "no photos, sorry", a thank-you plus a product question to Ines (Wilder) for explaining her Bucaco test, and a reply to Fred van Holland, who declined the ambassador role. His verdict: **"all these mails are unnecessary except the one to fred."** Then he gave Fred's content himself: thank him, say we understand, without any pressure a tip or photo is more than welcome, thanks again for the help.
+
+Lessons. (1) The owed list counts who wrote last, not who is owed: a short closing line (no photos, a clarification, "will do") needs no reply, and a thank-you to it only adds a mail. (2) Do not open a new ask (ambassador) with someone who is in the middle of giving; let them finish. (3) A person who says no to a role still gets the door left open, in his words: "zonder enige druk", a tip or a photo "meer dan welkom", and thanks for the help.
