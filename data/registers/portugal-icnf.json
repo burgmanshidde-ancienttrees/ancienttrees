@@ -1,6 +1,8 @@
 {
  "source": "ICNF, Arvoredo de Interesse Publico (Portugal's national register of trees of public interest)",
  "endpoint": "https://si.icnf.pt/wfs/arv_class (WFS 2.0, GeoJSON, EPSG:4326)",
+ "metadata_url": "https://geocatalogo.icnf.pt/metadados/arv_class.html",
+ "metadata_url_note": "The dataset's own catalogue page (ICNF geocatalogo). The bare endpoint host si.icnf.pt redirects to a login page, which is what the Sources page linked until 2026-10-27, when Miguel Portugal (ICNF Norte) wrote to say readers could not reach anything through it.",
  "licence": "CC BY 4.0",
  "licence_proof": "Sem restricoes. A utilizacao ou divulgacao deste conjunto de dados geograficos requer sempre a indicacao expressa da sua proveniencia e autoria: ICNF. (https://geocatalogo.icnf.pt/metadados/arv_class.html)",
  "designation": "Arvoredo de Interesse Publico",
