@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-27 session with Hidde: Show HN, second try
+
+The 10-24 Show HN (item 50208440, posted on a Saturday) ended at 1 point, and its first comment is [dead]: the filter for new accounts killed it (hburgmans, karma 1). Hidde already mailed hn@ycombinator.com about the dead comment on Friday 10-23 at 15:13 (his Sent folder; so the post went up that Friday, not 10-24), and no answer came. Second try: the same URL with the explanation in the submission's own text field, Tuesday to Thursday 14:00 to 17:00; if the submit lands on the old item, the duplicate filter folded it and he stops. drafts/show-hn.md now says text in the post, not a separate comment.
+
 ## 2026-10-26/27 session with Hidde: nature magazines, the Wilder model
 
 - **Outreach:** 47 nature magazines mailed in three batches on his word (natur, Sveriges Natur, Countryfile on 10-26; 8 whose own article names a tree of ours and 36 with one photographed tree from their country on 10-27), in eight languages, from his own text (drafts/nature-template.md, variants A and B). Each article named in a variant A mail is now a source on that tree's page. The nature group went from 0 to 58 addresses; 10 remain (weak fits or unverified addresses).
@@ -24,6 +28,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Product:** a place that already has an ambassador keeps the open row under that person, "Become an ambassador", and the sheet says "an" instead of "the". Web in all seven languages and the app; the app was looked at in the simulator on Florence (row and sheet). The website is checked by the CI build only, no local Node. Home's "your city is looking" row stays for empty places only, and --invite-scan still mails only places nobody holds. CONVENTIONS.md "the open seat" carries the reference.
 - **Inês (Wilder):** her Bucaco request, row 503, was her own test (her mail of 2026-10-26); noted in data/ambassadors.json and left out of the digest.
 - **Then smaller, same day** (Hidde: second in rank, not green): the row under a named ambassador is now a thin rule and one grey 12px line with a small seal, Atlas Obscura's "Make an Edit" shape. Web and app; the app looked at in the simulator on Florence. The website's chevron on the open-seat row is now the Phosphor icon (the pre-push icon check refused the old hand-drawn path).
+- **Then text only** (Hidde: no icon, the pill would outrank Giulia): a thin rule and the grey line under the name, even space either side. Web and app, the app looked at in the simulator on Florence.
 - For Hidde: the next app build carries the second-ambassador line.
 
 ## 2026-10-27 session with Hidde: digest cleanup, sightings no longer re-sent, Miguel's five places

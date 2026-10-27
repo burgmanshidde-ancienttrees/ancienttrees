@@ -3289,6 +3289,9 @@ full block with a 20px bold title: too loud for this. **AllTrails** did not
 load in the browser pane. Two mockups went to Hidde, neither with an icon:
 Google's pill in ink on light grey, and text only with even space either side
 of the rule.
+**Chosen: text only.** Hidde: the pill "makes it more important than Giulia
+herself". So a thin rule, then "Become an ambassador" in the 12px grey of the
+role line, under the name column, even space either side of the rule, no icon.
 
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 

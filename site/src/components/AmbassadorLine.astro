@@ -95,7 +95,6 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
   <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
     {taken ? (
       <button type="button" class="ambassador-apply ambassador-act" aria-label={openTitle}>
-        <span class="ambassador-act-ic" aria-hidden="true"><Fragment set:html={icon("seal-check", "bold", "ic")} /></span>
         <span class="ambassador-role" data-done={U.ambassadorApplied}>{openTitle}</span>
       </button>
     ) : (
@@ -259,11 +258,16 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
      SECOND IN RANK to the person (Hidde, 2026-10-27: "in hierarchy moet dat
      duidelijk de tweede zijn", "niet groen"). Atlas Obscura's "Make an Edit"
      under its contributors, at the size and grey of the role line. */
-  .ambassador-open-after { margin-top: 10px; border-top: 1px solid var(--cream-dark); }
-  .ambassador-act { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px;
-    padding: 0; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; color: inherit; }
-  .ambassador-act-ic { flex: none; width: 32px; display: grid; place-items: center; }
-  .ambassador-act-ic :global(.ic) { width: 14px; height: 14px; fill: var(--ink-mid); }
+  .ambassador-open-after { margin-top: 12px; border-top: 1px solid var(--cream-dark); }
+  /* Text only, no icon (Hidde, 2026-10-27: "mss gewoon geen icoon"; a pill
+     "makes it more important than Giulia herself"): 12px either side of the
+     rule, the grey line under the name column, nothing extra below. The tap
+     area reaches 44 through ::after without moving the text. */
+  .ambassador-act { display: block; position: relative; width: 100%; min-height: 0;
+    padding: 12px 0 0 42px; border: 0; background: none; font: inherit; text-align: left;
+    cursor: pointer; color: inherit; }
+  .ambassador-act .ambassador-role { display: block; line-height: 16px; }
+  .ambassador-act::after { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: -16px; }
   @media (hover: hover) { .ambassador-act:not(:disabled):hover .ambassador-role { text-decoration: underline; } }
   .ambassador-act:disabled { cursor: default; }
   .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }

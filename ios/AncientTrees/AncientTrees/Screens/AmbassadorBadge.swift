@@ -276,26 +276,25 @@ struct AmbassadorWantedRow: View {
 
     /// SECOND IN RANK under the person (Hidde, 2026-10-27: "in hierarchy moet
     /// dat duidelijk de tweede zijn", "niet groen"): Atlas Obscura's "Make an
-    /// Edit" under its contributors, a thin rule, then a small line icon and
-    /// grey text at the size of the role line. The website is the same
+    /// Edit" under its contributors: a thin rule, then grey text at the size
+    /// of the role line, even space either side. The website is the same
     /// (AmbassadorLine.astro, .ambassador-act).
     private var seatedLine: some View {
-        VStack(spacing: 0) {
-            // A Divider inside a Button label draws nothing, so the rule is a
-            // one-point hairline.
+        // Text only, no icon (Hidde, 2026-10-27: "mss gewoon geen icoon"; a
+        // pill "makes it more important than Giulia herself"): the grey line
+        // sits under the name column (32 avatar + 10).
+        // A Divider inside a Button label draws nothing, hence the Rectangle.
+        // The person's row above leaves about 19 points over the rule (its
+        // 44-point row plus the list's spacing), so 18 under it evens them.
+        VStack(alignment: .leading, spacing: 18) {
             Rectangle().fill(Brand.hairline).frame(height: 1)
-            HStack(spacing: 10) {
-                Image(systemName: "checkmark.seal")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Brand.inkSoft)
-                    .frame(width: 32)
-                Text(asked ? "Request sent." : "Become an ambassador")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Brand.inkSoft)
-                Spacer(minLength: 0)
-            }
-            .frame(minHeight: 44)
+            Text(asked ? "Request sent." : "Become an ambassador")
+                .font(.system(size: 12))
+                .foregroundStyle(Brand.inkSoft)
+                .padding(.leading, 42)
         }
+        .padding(.bottom, 12)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .contentShape(.rect)
     }
 
