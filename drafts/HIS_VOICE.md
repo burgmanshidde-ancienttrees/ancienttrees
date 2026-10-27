@@ -390,7 +390,7 @@ No ask beyond their opinion. He replaced my version, which ended on a request fo
 
 ## Calibration 2026-10-27: a guest article for a magazine (Crann, Declan O'Brien)
 
-The sent version is drafts/crann-article-2026-10-final.md; start any later article or press piece from it. What he changed, in his words or his edits:
+The sent article is drafts/crann-article-2026-10-final.md, its covering mail drafts/reply-declan-crann-2026-10-27.md; start any later article or press piece from it. What he changed, in his words or his edits:
 
 - **The covering mail is three lines and hands the editor control**: "Sure, I got right to it. Here's a first version about 600 words. I'm not a writer or an editor, so please tell me honestly what you think and change whatever you like." Photo credits listed plainly beneath; signed "Let me know what you think, Hidde". No extra ask (he cut the King Oak photo request).
 - **He is "a Dutch tree fan", not "a designer"**: he struck "I'm a designer" from the body, and the standfirst followed.
