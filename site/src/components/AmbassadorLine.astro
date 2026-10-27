@@ -92,7 +92,7 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
   </ul>
 )}
 {place && requestCity && (
-  <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length > 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
+  <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
     <button type="button" class="ambassador ambassador-apply" aria-label={taken ? openTitle : `${openTitle}. ${U.ambassadorApply}`}>
       <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
         <Fragment set:html={icon("seal-check", "bold", "ic")} />
