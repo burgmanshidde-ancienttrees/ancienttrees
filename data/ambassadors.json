@@ -1,6 +1,6 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named on the public page (public true); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": "2026-10-19T21:39Z",
+  "synced": "2026-10-28T09:07Z",
   "ambassadors": [
     {
       "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
@@ -10,6 +10,41 @@
       "since": "2026-10-18",
       "display_name": "Hidde",
       "profile_public": true
+    },
+    {
+      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
+      "place_slug": "porto",
+      "place_name": "Porto",
+      "public": false,
+      "since": "2026-10-28"
+    },
+    {
+      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
+      "place_slug": "guimaraes",
+      "place_name": "Guimaraes",
+      "public": false,
+      "since": "2026-10-28"
+    },
+    {
+      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
+      "place_slug": "braga",
+      "place_name": "Braga",
+      "public": false,
+      "since": "2026-10-28"
+    },
+    {
+      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
+      "place_slug": "calvos",
+      "place_name": "Calvos",
+      "public": false,
+      "since": "2026-10-28"
+    },
+    {
+      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
+      "place_slug": "vales",
+      "place_name": "Vales",
+      "public": false,
+      "since": "2026-10-28"
     },
     {
       "user_id": null,
