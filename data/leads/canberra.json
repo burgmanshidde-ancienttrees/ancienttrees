@@ -1,149 +1,215 @@
 {
-  "leads": [
-    {
-      "candidate": "Blakely'S Red Gum (Eucalyptus blakelyi), Urban Open Space, BELCONNEN",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.23974, 149.10024 (approximate). Register ref PTR075, status REGISTERED, girth 1028 cm, height 15 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.239737,
-      "longitude": 149.100241,
-      "girth_cm": 1028,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Yellow Box (Eucalyptus melliodora), Urban Open Space, GUNGAHLIN",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.17166, 149.11295 (approximate). Register ref RT1152, status REGISTERED, girth 614 cm, height 23 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.171665,
-      "longitude": 149.112949,
-      "girth_cm": 614,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Apple Box (Eucalyptus bridgesiana), Hall Showground, HALL",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.17080, 149.07485 (approximate). Register ref PTR221, status REGISTERED, girth 565 cm, height 21 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.170804,
-      "longitude": 149.074851,
-      "girth_cm": 565,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Blakely'S Red Gum (Eucalyptus blakelyi), Urban Open Space, CANBERRA CENTRAL",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.23916, 149.12530 (approximate). Register ref PTR038, status REGISTERED, girth 560 cm, height 25 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.23916,
-      "longitude": 149.125298,
-      "girth_cm": 560,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Balakely'S Red Gum (Eucalyptus blakelyi), Road Verge, BELCONNEN",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.24024, 149.02949 (approximate). Register ref PTR081, status REGISTERED, girth 560 cm, height None m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.240242,
-      "longitude": 149.02949,
-      "girth_cm": 560,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Yellow  Box (Eucalyptus melliodora), Road Verge , GUNGAHLIN",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.17429, 149.12551 (approximate). Register ref PTR123, status REGISTERED, girth 520 cm, height 20 m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.174294,
-      "longitude": 149.12551,
-      "girth_cm": 520,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Blakely'S Red Gum (Eucalyptus blakelyi), Road Median, TUGGERANONG",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.42302, 149.13468 (approximate). Register ref PTR045, status REGISTERED, girth 510 cm, height 25 m, land use ROAD_MEDIAN. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.423022,
-      "longitude": 149.134678,
-      "girth_cm": 510,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Yellow Box (Eucalyptus melliodora), Hilltop Reserve, GUNGAHLIN",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.20124, 149.11182 (approximate). Register ref PTR084B, status REGISTERED, girth 502 cm, height 30 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.201238,
-      "longitude": 149.111822,
-      "girth_cm": 502,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Yellow Box (Eucalyptus melliodora), Road Verge, TUGGERANONG",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.47790, 149.09907 (approximate). Register ref PTR082, status REGISTERED, girth 500 cm, height 14 m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.477903,
-      "longitude": 149.09907,
-      "girth_cm": 500,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Apple Box (Eucalyptus bridgesiana), Urban Open Space, GUNGAHLIN",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.16528, 149.09930 (approximate). Register ref PTR114, status REGISTERED, girth 500 cm, height 19 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.165284,
-      "longitude": 149.099305,
-      "girth_cm": 500,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "Yellow Box (Eucalyptus melliodora), Urban Open Space, TUGGERANONG",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.41527, 149.12588 (approximate). Register ref PTR080A, status REGISTERED, girth 500 cm, height 22 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.415271,
-      "longitude": 149.125883,
-      "girth_cm": 500,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    },
-    {
-      "candidate": "River Red Gum (Eucalyptus camaldulensis), Road Verge, TUGGERANONG",
-      "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.39085, 149.05403 (approximate). Register ref RT1238, status REGISTERED, girth 500 cm, height 20 m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
-      "latitude": -35.390848,
-      "longitude": 149.054031,
-      "girth_cm": 500,
-      "official_register": {
-        "name": "ACT Tree Register",
-        "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
-      },
-      "register_file": "data/registers/act-tree-register.json"
-    }
-  ],
-  "blocked": []
+ "leads": [
+  {
+   "candidate": "Blakely'S Red Gum (Eucalyptus blakelyi), Urban Open Space, BELCONNEN",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.23974, 149.10024 (approximate). Register ref PTR075, status REGISTERED, girth 1028 cm, height 15 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.239737,
+   "longitude": 149.100241,
+   "girth_cm": 1028,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Yellow Box (Eucalyptus melliodora), Urban Open Space, GUNGAHLIN",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.17166, 149.11295 (approximate). Register ref RT1152, status REGISTERED, girth 614 cm, height 23 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.171665,
+   "longitude": 149.112949,
+   "girth_cm": 614,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Apple Box (Eucalyptus bridgesiana), Hall Showground, HALL",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.17080, 149.07485 (approximate). Register ref PTR221, status REGISTERED, girth 565 cm, height 21 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.170804,
+   "longitude": 149.074851,
+   "girth_cm": 565,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Blakely'S Red Gum (Eucalyptus blakelyi), Urban Open Space, CANBERRA CENTRAL",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.23916, 149.12530 (approximate). Register ref PTR038, status REGISTERED, girth 560 cm, height 25 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.23916,
+   "longitude": 149.125298,
+   "girth_cm": 560,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Balakely'S Red Gum (Eucalyptus blakelyi), Road Verge, BELCONNEN",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.24024, 149.02949 (approximate). Register ref PTR081, status REGISTERED, girth 560 cm, height None m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.240242,
+   "longitude": 149.02949,
+   "girth_cm": 560,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Yellow  Box (Eucalyptus melliodora), Road Verge , GUNGAHLIN",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.17429, 149.12551 (approximate). Register ref PTR123, status REGISTERED, girth 520 cm, height 20 m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.174294,
+   "longitude": 149.12551,
+   "girth_cm": 520,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Blakely'S Red Gum (Eucalyptus blakelyi), Road Median, TUGGERANONG",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.42302, 149.13468 (approximate). Register ref PTR045, status REGISTERED, girth 510 cm, height 25 m, land use ROAD_MEDIAN. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.423022,
+   "longitude": 149.134678,
+   "girth_cm": 510,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Yellow Box (Eucalyptus melliodora), Hilltop Reserve, GUNGAHLIN",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.20124, 149.11182 (approximate). Register ref PTR084B, status REGISTERED, girth 502 cm, height 30 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.201238,
+   "longitude": 149.111822,
+   "girth_cm": 502,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Yellow Box (Eucalyptus melliodora), Road Verge, TUGGERANONG",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.47790, 149.09907 (approximate). Register ref PTR082, status REGISTERED, girth 500 cm, height 14 m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.477903,
+   "longitude": 149.09907,
+   "girth_cm": 500,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Apple Box (Eucalyptus bridgesiana), Urban Open Space, GUNGAHLIN",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.16528, 149.09930 (approximate). Register ref PTR114, status REGISTERED, girth 500 cm, height 19 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.165284,
+   "longitude": 149.099305,
+   "girth_cm": 500,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Yellow Box (Eucalyptus melliodora), Urban Open Space, TUGGERANONG",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.41527, 149.12588 (approximate). Register ref PTR080A, status REGISTERED, girth 500 cm, height 22 m, land use PRZ_URBAN_PARKS_AND_RECREATION. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.415271,
+   "longitude": 149.125883,
+   "girth_cm": 500,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "River Red Gum (Eucalyptus camaldulensis), Road Verge, TUGGERANONG",
+   "reason": "No photo or exact pin in reach: ACT Tree Register (CC BY 4.0) gives a crown polygon, vertex mean -35.39085, 149.05403 (approximate). Register ref RT1238, status REGISTERED, girth 500 cm, height 20 m, land use ROAD_VERGE. Public ground by land-use code, but LOCATION is generic, so find the tree on the ground or from a geotagged photo before shipping. Alive not checked (run scripts/lifecheck.py).",
+   "latitude": -35.390848,
+   "longitude": 149.054031,
+   "girth_cm": 500,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Yellow Box PTR118, Corroboree Park, Ainslie",
+   "reason": "Register PTR118 SINGLE, registered 2013-03-08, girth 300 cm, 19 m, Corroboree Park. Wikipedia says the park was made about 1925 around the Corroboree Tree, but no fetched source gives its species or says PTR118 is that tree; an unfetched Nov 2024 citizen-science snippet mentions a dead iconic eucalypt at Ainslie, unverified. Lifecheck NONE. Settle identity and life before shipping.",
+   "latitude": -35.26888,
+   "longitude": 149.14239,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 300
+  },
+  {
+   "candidate": "Legacy Park Apple Boxes RT1129, Campbell",
+   "reason": "Three Apple Box (395, 285, 355 cm) registered 2024-03-12, MULTIPLE SINGLES; lifecheck RECENT 2024-02-20 (iNaturalist 239355492) near -35.28905,149.15024 but not tied to a trunk. Register only, approximate pin.",
+   "latitude": -35.28905,
+   "longitude": 149.15024,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 395
+  },
+  {
+   "candidate": "English Oak PTR005, 22 Farrer Street, Braddon",
+   "reason": "Register girth 465 cm, 18 m, but the location is a street address (probably a private residence); access not established.",
+   "latitude": -35.27204,
+   "longitude": 149.13899,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 465
+  },
+  {
+   "candidate": "English Elms of Glebe Park PTR039 Group, Civic",
+   "reason": "Group in a public park. Wikipedia: just over 500 English elms, descended from plantings by Rev. Pierce Galliard Smith (rector 1855 to 1906), park proclaimed 1983, National Trust and Australian Heritage Commission listed. A stand, not one collectible point; find the largest individual elm first.",
+   "latitude": -35.2826,
+   "longitude": 149.13577,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Cooyong Street trees PTR053-055 (American Elms, Holly Oak), Braddon",
+   "reason": "Addressed to 61 Cooyong Street, girths 210 to 260 cm; private or institutional ground not established.",
+   "latitude": -35.27746,
+   "longitude": 149.13553,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 260
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Atlas Cedars median PTR071 Group, Ainslie Avenue, Braddon and Reid",
+   "reason": "Avenue median planting, not one collectible point.",
+   "latitude": -35.2774,
+   "longitude": 149.14047
+  }
+ ]
 }

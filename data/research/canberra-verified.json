@@ -1,0 +1,60 @@
+[
+ {
+  "id": "can_002",
+  "name": "Blue Atlas Cedar, Ainslie Avenue and Currong Street",
+  "species": "Blue Atlas Cedar (Cedrus atlantica f. glauca)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 350,
+  "height_m": 29,
+  "location": {
+   "address": "Road verge, Ainslie Avenue at Currong Street, Braddon ACT",
+   "latitude": -35.27844,
+   "longitude": 149.13724,
+   "neighbourhood": "Braddon"
+  },
+  "verified_sources": [
+   "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register/registered_trees",
+   "data/registers/act-tree-register.json (ArcGIS ACTGOV_Tree_Register_public_view, CC BY 4.0, fetched 2026-10-27)"
+  ],
+  "official_register": {
+   "name": "ACT Tree Register (PTR03, registered 2010-08-10)",
+   "url": "https://www.cityservices.act.gov.au/__data/assets/pdf_file/0009/390348/18.pdf"
+  },
+  "access": "Public road verge, free, reachable on foot",
+  "transport": "Civic about 1 km away; about 12 minutes on foot along Ainslie Avenue (straight line, not routed)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register only, one source. ACT Tree Register PTR03, SINGLE, REGISTERED 2010-08-10, criterion natural and cultural heritage value, girth 350 cm, height 29 m, land use road verge. Search snippet of the register page (not fetched, host returns 403) describes it as a verge street-tree planting at the corner of Ainslie Avenue and Currong Street. Coordinate is the vertex mean of the register crown polygon, so approximate. Alive: lifecheck NONE, no dated observation found. No age or planting date in any source seen. 29 m is tall for a blue atlas cedar but plausible. About 40 m from the PTR073 group (can_003), so one walk. No photo looked for."
+ },
+ {
+  "id": "can_003",
+  "name": "Gorman House Arizona Cypress",
+  "species": "Arizona Cypress (Cupressus arizonica)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 537,
+  "height_m": 20,
+  "location": {
+   "address": "Road verge in front of Gorman House, Ainslie Avenue at Doonkuna Street, Braddon ACT",
+   "latitude": -35.27803,
+   "longitude": 149.13828,
+   "neighbourhood": "Braddon"
+  },
+  "verified_sources": [
+   "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register/registered_trees",
+   "data/registers/act-tree-register.json (ArcGIS ACTGOV_Tree_Register_public_view, CC BY 4.0, fetched 2026-10-27)"
+  ],
+  "official_register": {
+   "name": "ACT Tree Register (PTR073 Group, registered 2011-09-16)",
+   "url": "https://www.cityservices.act.gov.au/__data/assets/pdf_file/0010/390358/Ainslie_Avenue_Braddon_PTR073.pdf"
+  },
+  "access": "Public road verge outside Gorman House Arts Centre, free, reachable on foot",
+  "transport": "Civic about 1 km away; about 12 to 15 minutes on foot (straight line, not routed)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register only, one source. PTR073-GROUP, REGISTERED 2011-09-16, criterion natural and cultural heritage value. Register rows for the group: Arizona Cypress girth 537 cm height 20 m (-35.27803,149.13828); Atlas Cedar 300 cm / 22 m (-35.27814,149.13799); Atlas Cedar 295 cm / 19 m (-35.27829,149.13758). Register text per search snippet: road verge in front of Gorman House in Braddon. ACT City Services species sheet (Cupressus-arizonica.pdf, snippet only) also says an ACT Tree Register Arizona cypress stands in front of Gorman House at Ainslie Avenue and Doonkuna Street, and that the species reaches about 20 m. 537 cm girth is unusually large for an Arizona cypress: may be multi-stem or buttressed, or a register error; unverified, writer should not make it a headline. Alive: lifecheck NONE, no dated observation seen. Gorman House is ACT Heritage Register listed (search snippet); no source ties these trees to its planting, do not bridge. The two atlas cedars of the same group fold into this stop."
+ }
+]

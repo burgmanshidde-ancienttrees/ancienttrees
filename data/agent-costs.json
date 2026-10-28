@@ -1,6 +1,16 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-28": [
+   {
+    "date": "2026-10-28",
+    "target": "canberra",
+    "kind": "verify",
+    "tokens": 100000,
+    "trees": 0,
+    "note": "2 register-only trees verified (no photo, cannot ship); register host 403 blocked per-tree PDFs; 5 leads kept"
+   }
+  ],
   "2026-10-27": [
    {
     "date": "2026-10-27",

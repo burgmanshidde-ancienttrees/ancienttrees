@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-28 night run (07:50 window)
+
+- Shipped 0 trees. Rungs 1 to 2 clear: no reader photos or notes waiting; the two "skipped" deploys health.py flagged are bot-commit pushes, the scheduled build at 05:54 succeeded (answered in health). The only unpublished verified entries (sfo_013, inn_007, ftw_018, txf_004) are still held for photo or access, same as last night.
+- Graz and Nuremberg are walls (3 of 16 and 0 of 7 leads carry a coordinate). Canberra verify pass: 2 register-only trees (can_002 Blue Atlas Cedar, can_003 Gorman House Arizona Cypress, approximate pins, no photo, so they cannot go live under the photo rule); cityservices.act.gov.au answers 403 to curl and WebFetch, which blocked the per-tree register PDFs. Five more leads kept in data/leads/canberra.json. Canberra a wall for 48h.
+- For Hidde: nothing. The shelf is empty of photographed supply; what would move it is photographs (archive asks) rather than more verify passes.
+
 ## 2026-10-27 night run (second retry window)
 
 - Shipped 0 trees. The 3 READY leads are false positives: Oxford's two are a young oak and a possibly dead chestnut with no photo, Madrid's has none either. The 56 "awaiting a writer" are mostly stale files or duplicates (passcheck --pending flags them). The only real unpublished entries are sfo_012/013, ftw_018, inn_007, txf_004, all without a photograph.
