@@ -250,8 +250,22 @@ public final class Profiles {
     /// Give a profile its first name from what the provider said, once.
     /// True when a name exists afterwards, from before or from this call;
     /// false means the person has to be asked (ProfileEditor).
+    /// The name the server gives an account it has no name for, "Mossy Linden
+    /// 4821" (supabase/profile-at-signup.sql, Hidde 2026-10-28). Apple hands
+    /// the person's name to the app, never to the server, and only on the
+    /// first sign-in, so the app swaps a generated name for it then. Pure.
+    nonisolated public static func isGeneratedName(_ name: String) -> Bool {
+        name.range(of: #"^[A-Z][a-z]+ [A-Z][a-z]+ [0-9]{4}$"#, options: .regularExpression) != nil
+    }
+
     public func ensureName(userId: String, token: String, providerName: String?) async -> Bool {
-        if let me, !me.display_name.isEmpty { return true }
+        if let me, !me.display_name.isEmpty {
+            guard Self.isGeneratedName(me.display_name), let providerName else { return true }
+            let short = Self.shortName(from: providerName)
+            if short.isEmpty { return true }
+            _ = await save(name: short, avatarURL: me.avatar_url, userId: userId, token: token)
+            return true
+        }
         // No answer from the server is not "no name": asking would open the
         // editor over every offline launch, and did, in the flow walk.
         guard meLoaded else { return true }

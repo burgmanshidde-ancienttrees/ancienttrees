@@ -143,6 +143,8 @@ Sources for the second group are third-party how-tos, not the companies' own hel
 
 **Ours today**: no row until a name is set; the app fills it from the Apple or Google name (Profiles.ensureName) and otherwise opens the editor. Draft for the generated route: supabase/profile-at-signup.sql, ON HOLD until Hidde picks.
 
+**Picked 2026-10-28** (Hidde: "oke ja laten we die route doen", after asking what "the provider's name" meant): the provider's name, shortened, else a generated tree name; no extra sign-up screen. Edit profile changes either. Apple gives the name to the app only, on the first sign-in, so the app replaces a generated name with it then (Profiles.swift `isGeneratedName`, NameTests).
+
 
 **Reference: Material Design 3, snackbar guidelines, Placement** (m3.material.io/components/snackbar/guidelines, read 2026-10-20): "Snackbars should be placed at the bottom of a UI, in front of the main content", nudged up for FABs or docked toolbars, never in front of navigation. On our split map pages on a computer the main content is the map, so the confirmation is centred on the map, 24 from its foot, not on the window, where it straddled the list's edge (Hidde: "message op de juiste plek ziet er raar uit"). Phones keep it centred over everything above the tab bar. style.css, `.at-snack`.
 
