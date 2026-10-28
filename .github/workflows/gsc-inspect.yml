@@ -27,7 +27,8 @@ concurrency:
 jobs:
   inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # The API answers in about 9 s a url, so --wanted (230 urls) needs ~35 min.
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
 
