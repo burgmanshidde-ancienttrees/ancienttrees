@@ -131,7 +131,18 @@ Ours today: TreeDetail's button points at ancienttrees.app/open, the same domain
 **Where we differ**: Polarsteps has a third state (followers only) and per-trip settings. We have one switch and no per-tree setting, and the server never returns the day a tree was ticked, which is the part of a travel log that says where somebody is now.
 
 
-## Where the one-line confirmation sits on a map page (2026-10-20, read)
+## When a profile is made, and the name it starts with (2026-10-28, searched)
+
+Hidde, 2026-10-28, on finding 16 of 17 new accounts without a profile (ours makes one only when somebody sets a name): "public profiles should be created when account is created", then "this is just one solution start benchmarking before building plz".
+
+**Every reference has a profile from the moment the account exists.** They differ only in where the first name comes from:
+- **Asked in sign-up**: Strava (an onboarding screen for first and last name, "public by default"; support.strava.com 15401763: profile visibility defaults to Everyone, name always visible), AllTrails (first and last name in sign-up per a 2023 guide; help centre: new profile Public, name visible to everyone; Google, Apple, Facebook or email), Polarsteps (support 29049619141266: after Google, Apple or email, "enter your name and other details"), komoot (basic profile setup, a name, per a third-party review), iNaturalist (email, username, password; the username is what public content is credited to).
+- **Generated, changed later**: Reddit (Google or Apple sign-ups get an auto-generated username, changeable once or within 30 days, per third-party guides), TikTok ("user" plus digits as the starting name, per guides).
+
+Sources for the second group are third-party how-tos, not the companies' own help pages. Nobody we found leaves an account without a profile.
+
+**Ours today**: no row until a name is set; the app fills it from the Apple or Google name (Profiles.ensureName) and otherwise opens the editor. Draft for the generated route: supabase/profile-at-signup.sql, ON HOLD until Hidde picks.
+
 
 **Reference: Material Design 3, snackbar guidelines, Placement** (m3.material.io/components/snackbar/guidelines, read 2026-10-20): "Snackbars should be placed at the bottom of a UI, in front of the main content", nudged up for FABs or docked toolbars, never in front of navigation. On our split map pages on a computer the main content is the map, so the confirmation is centred on the map, 24 from its foot, not on the window, where it straddled the list's edge (Hidde: "message op de juiste plek ziet er raar uit"). Phones keep it centred over everything above the tab bar. style.css, `.at-snack`.
 
@@ -3459,6 +3470,24 @@ search open the sign-in sheet; a write the account refuses puts the button
 back. **Where we still differ, and it is a gap rather than a choice:** a row
 does not open the person's profile, because another person's trees are their
 own and not public here, so there is nothing to show behind the name yet.
+
+**Finding somebody on the web, and sharing your own profile (2026-10-28, looked
+up after Hidde asked "een profiel van iemand vinden op web? of vrienden
+toevoegen").** Every reference has the same two doors: search by name, and share
+your own profile link; the link lands on the profile and Follow does the rest,
+with no friend-request system beside it. Strava (support.strava.com 216928797):
+a share icon on your own profile gives "Share my QR code" or "Copy" a link; on
+the web it sits top right beside Search and Settings. AllTrails
+(support.alltrails.com 360018930812): on desktop "Members" in the menu under
+your name searches people; in the app, profile picture, Following, search bar.
+Polarsteps (support.polarsteps.com 24268053797010): search by name in the
+search tab, the share button beside Follow. komoot (komoot.com/help/privacy):
+findable by name by default, with an opt-out; link and QR exist for tours, not
+profiles. **What ours lacks** (2026-10-28): the web has no search and no share,
+its follower counts do not open lists, the app's "Invite a friend" shares the
+App Store link so the friend still has to search a name, and /profile is
+excluded in apple-app-site-association so a profile link never opens the app.
+Proposal shown to Hidde as a page; not built until his yes.
 
 ---
 

@@ -1,4 +1,4 @@
--- PENDING, for Hidde to paste in the Supabase SQL editor (2026-10-28). A copy of
+-- ON HOLD, DO NOT PASTE (2026-10-28): Hidde asked for a benchmark first. A copy of
 -- supabase/profile-at-signup.sql.
 --
 -- Every account has a profile from the moment it exists.
