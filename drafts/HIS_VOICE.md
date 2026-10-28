@@ -414,3 +414,8 @@ My "laat maar weten wanneer het jullie uitkomt" became his **"laat maar weten wa
 ## Calibration 2026-10-28: say it is a worldwide map (archive asks)
 
 On the NDV draft: **"mss goed om te noemen dat het een wereldwijde kaart is in de opening want mensen denken ah nederlandse kaart hebben we al"**. A cold mail to a local or national organisation says in its opening sentence that Ancient Trees is a worldwide map (with the city count), so they do not file it as one more map of their own country.
+
+
+## Calibration 2026-10-28: his own typed text stays as he typed it (Northern Woodlands)
+
+When Hidde writes a mail himself for an outlet that refuses AI-written pitches, I do not correct it: **"hou mijn spelfouten en letterlijke tekst aan dan lijkt t geen ai"**. Give his text back verbatim; at most point out a wrong address or a broken link.
