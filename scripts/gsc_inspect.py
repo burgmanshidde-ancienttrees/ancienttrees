@@ -19,7 +19,10 @@ data/research/gsc-inspection-<date>.json and prints a summary per sample.
 Needs GSC_CLIENT_ID / GSC_CLIENT_SECRET / GSC_REFRESH_TOKEN (the digest's
 Search Console OAuth, scope webmasters). Runs from gsc-inspect.yml.
 
-    python3 scripts/gsc_inspect.py [--per-sample 25]
+    python3 scripts/gsc_inspect.py [--per-sample 25] [--wanted]
+
+--wanted inspects every url in the live sitemap.xml instead of the samples;
+the file is then gsc-inspection-<date>-wanted.json.
 """
 import collections
 import datetime
@@ -104,6 +107,31 @@ def samples(per):
             "places": rnd.sample(places, min(per // 2, len(places)))}
 
 
+def wanted():
+    """Every url in the live sitemap.xml: the pages we ask Google to index
+    (2026-10-28, Hidde asked whether a crawl request could help; it can only
+    help a wanted page Google has not indexed, so this names them)."""
+    try:
+        with urllib.request.urlopen(f"{BASE}/sitemap.xml", timeout=30) as r:
+            locs = re.findall(r"<loc>([^<]+)</loc>", r.read().decode("utf-8"))
+    except Exception as e:  # noqa: BLE001
+        print(f"gsc_inspect: live sitemap unreadable ({e.__class__.__name__})")
+        return []
+    return [u.replace(BASE, "") or "/" for u in locs]
+
+
+def sitemaps(token):
+    """What Search Console knows of each sitemap: submitted, last read, errors, url count."""
+    req = urllib.request.Request(
+        "https://www.googleapis.com/webmasters/v3/sites/" + urllib.parse.quote(SITE, safe="") + "/sitemaps",
+        headers={"Authorization": "Bearer " + token})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r).get("sitemap", [])
+    except urllib.error.HTTPError as e:
+        return [{"error": e.code, "body": e.read().decode()[:200]}]
+
+
 def main(argv):
     per = 25
     if "--per-sample" in argv:
@@ -111,7 +139,16 @@ def main(argv):
     token = access_token()
     today = datetime.date.today().isoformat()
     results = {"date": today, "site": SITE, "samples": {}}
-    for name, paths in samples(per).items():
+    results["sitemaps"] = sitemaps(token)
+    print("sitemaps Search Console knows:")
+    for s in results["sitemaps"]:
+        sub = ", ".join(f"{c.get('type')} {c.get('submitted')}" for c in s.get("contents", []))
+        print(f"  {s.get('path', s)}  last read {s.get('lastDownloaded', '-')}  "
+              f"errors {s.get('errors', '-')}  warnings {s.get('warnings', '-')}  {sub}")
+    chosen = samples(per)
+    if "--wanted" in argv:
+        chosen = {"wanted": wanted()}
+    for name, paths in chosen.items():
         rows = []
         for p in paths:
             r = inspect(token, BASE + p)
@@ -131,7 +168,7 @@ def main(argv):
             print(f"  last crawl: oldest {crawls[0]}, newest {crawls[-1]}, {since} of {len(crawls)} since 2026-10-08")
         else:
             print("  last crawl: none reported")
-    outp = os.path.join(ROOT, "data", "research", f"gsc-inspection-{today}.json")
+    outp = os.path.join(ROOT, "data", "research", f"gsc-inspection-{today}{'-wanted' if '--wanted' in argv else ''}.json")
     with open(outp, "w", encoding="utf-8") as fh:
         json.dump(results, fh, ensure_ascii=False, indent=1)
     print(f"\nwritten {os.path.relpath(outp, ROOT)}")

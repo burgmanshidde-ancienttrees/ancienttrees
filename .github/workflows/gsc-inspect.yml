@@ -12,6 +12,10 @@ on:
         description: "Pages per sample (out / kept / places)"
         type: number
         default: 25
+      wanted:
+        description: "Inspect every url in the live sitemap.xml instead of the samples"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -35,7 +39,7 @@ jobs:
           GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
-        run: python3 scripts/gsc_inspect.py --per-sample ${{ inputs.per_sample }}
+        run: python3 scripts/gsc_inspect.py --per-sample ${{ inputs.per_sample }} ${{ inputs.wanted && '--wanted' || '' }}
 
       - name: Commit the answers
         run: |
