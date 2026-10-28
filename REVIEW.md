@@ -219,20 +219,3 @@ App half could not run: /tmp/appshots-list.txt is empty and /tmp/appshots-note.t
 
 ---
 
-## 2026-10-13
-
-Web half: read the new Roosendaal pages as built (copper beech of Nispen cemetery, Julianalinde, the London plane of De Kring in the data) and the Copenhagen FAQ edit (cf54927a, 98729e46: 41 + 8 = 49 trees, the counts agree; the built copenhagen/index.html in site/dist still carries the older text, so that page was read from data/cities). No em dashes or banned words in site/dist/roosendaal.
-
-- WARN /roosendaal/* and at least seven other built pages (`verified_sources` strings in data/cities/roosendaal.json, e.g. lines 199-200, 316-318): an aerial-imagery note was stored as a URL ("https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)") and renders as a Sources bullet "service.pdok.nl" whose href contains spaces and a parenthesis, so the link is broken and names nothing a reader can check. The register's ArcGIS query URL is also printed twice (once as the register line, again as a bare "services-eu1.arcgis.com" bullet) and opens raw JSON. Same family as the 2026-10-12 file-name finding: code leaking as text in Sources. Suggest note-only entries live in `verify_notes` or `pin_source`, and the register link not be repeated as a plain source.
-- WARN /roosendaal/copper-beech-of-nispen-cemetery and /roosendaal/julianalinde-of-nispen (`transport`, data/cities/roosendaal.json:292, 333): the visitor-facing travel line ends "650 m from the Julianalinde (roo_013)" / "(roo_012)", an internal tree id printed as text. The Nearby card on the same page says 640 m, so the page also states the distance twice with two values.
-- WARN same pages (`access`): "Register: visitable ja, visible ja, openbaar ja, owner a religious body (parish)" puts Dutch register field values and a column list into the English access line; "No cemetery hours found" is fine, the "ja" list is not a sentence a visitor can use. Suggest "The register lists it as visible and open to visit."
-- NOTE /roosendaal London plane of De Kring and the Oriental plane: `location_precision` is "confirmed" with the evidence being an aerial frame viewed on 2026-10-13 (CLAUDE.md burn list names "aerial imagery or equivalent evidence" for pin passes; `check_pin_upgrades()` should be the judge of whether that counts, I did not run it).
-
-## 2026-10-13 (app half)
-
-App half (collect-identify, collect-intro, collect-place, collect-ticked, collection-tab-full, collection-tab; iPhone SE).
-
-- WARN APP: collect-intro, collect-place and collect-ticked are three more frames of the same "Add a tree" sheet (Take a photograph / Choose from your photos) over different backdrops; none shows a place step or a ticked state, so the screens they are named for ship unlooked-at. Same fault as 2026-10-12 (collect-away/compare/describe), still open: the sweep does not reach the later steps of the add flow.
-- WARN APP: collect-identify, "Which one is it?" with "Pick the one in your photograph" offers a single candidate, 325 m south, under the line "You are standing among trees we map", and its own description says "Nobody has established which lime it is, so tell us if you know." A choice of one that admits it may not be the tree, 325 m away, contradicts the sentence above it and is the data-model-sentence-in-a-row fault logged for search on 2026-10-10. Suggest the step not show when only one candidate exists or the row drop the "nobody has established" line.
-- NOTE APP: collection-tab-full, the Collected grid shows two identical placeholder tree tiles labelled only "Amsterdam" (different backdrop colours, no tree names), so a person cannot tell which two trees they collected. Likely fixture data without photographs; if real collected trees without a photo look like this, the tile needs the tree's name.
-
