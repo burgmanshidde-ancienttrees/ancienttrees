@@ -6,16 +6,16 @@ Hoe: Search Console, bovenin de balk "URL inspecteren", plak de URL, wacht op he
 
 ## Dag 1: de bomen met lezersverhalen, en een pagina die Google verkeerd kent
 
-- [ ] https://ancienttrees.app/stuttgart/hohenheim-love-plane (Google zag op 10-11 nog een noindex, die is er nu af)
-- [ ] https://ancienttrees.app/tangier/moreton-bay-fig-of-the-mendoubia
-- [ ] https://ancienttrees.app/paris/great-lawn-plane-of-parc-montsouris
-- [ ] https://ancienttrees.app/chatenay-malabry/weeping-cedar-of-the-vallee-aux-loups-cedre-pleureur
-- [ ] https://ancienttrees.app/lisbon/pohutukawa-of-campo-santana
-- [ ] https://ancienttrees.app/lisbon/dragon-tree-of-the-goethe-institut-garden
-- [ ] https://ancienttrees.app/bucaco/wellingtons-olive
-- [ ] https://ancienttrees.app/palermo/white-fig-of-villino-favaloro
-- [ ] https://ancienttrees.app/palma-de-mallorca/fig-of-la-llotja
-- [ ] https://ancienttrees.app/seville/cardon-of-the-expo
+- [x] https://ancienttrees.app/stuttgart/hohenheim-love-plane (Google zag op 10-11 nog een noindex, die is er nu af)
+- [x] https://ancienttrees.app/tangier/moreton-bay-fig-of-the-mendoubia
+- [x] https://ancienttrees.app/paris/great-lawn-plane-of-parc-montsouris
+- [x] https://ancienttrees.app/chatenay-malabry/weeping-cedar-of-the-vallee-aux-loups-cedre-pleureur
+- [x] https://ancienttrees.app/lisbon/pohutukawa-of-campo-santana
+- [x] https://ancienttrees.app/lisbon/dragon-tree-of-the-goethe-institut-garden
+- [x] https://ancienttrees.app/bucaco/wellingtons-olive
+- [x] https://ancienttrees.app/palermo/white-fig-of-villino-favaloro
+- [x] https://ancienttrees.app/palma-de-mallorca/fig-of-la-llotja
+- [x] https://ancienttrees.app/seville/cardon-of-the-expo
 
 ## Dag 2 en 3: Kopenhagen (de archieffoto's van de Dansk Dendrologisk Forening)
 
