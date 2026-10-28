@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-28 session with Hidde: second archive batch sent
+
+archive-2026-10-26 went out on his word ("verstuur alle 3"): photo asks to the Austrian (Vienna), Polish (Krakow, Warsaw) and German (Berlin, Munich) dendrology societies; the DDG mail is a third contact with resend_reason recorded. Logged in drafts/OUTREACH.md and outreach-sent.json (private store). Next archive candidate: the Nederlandse Dendrologische Vereniging, now with a published address (secretariaat@dendrologie.nl) in the contacts database.
+
 ## 2026-10-28 session with Hidde: one person, one ambassador row
 
 The digest showed Miguel's five places (Porto, Guimarães, Braga, Calvos, Vales, one account, 10-26) as five requests, four "not yet (next knock)". They were held all along (a session had marked rows 575 to 578 by hand), so nothing would have gone out, but the page said otherwise. Now the block has one row per person with every place named (4 people, 8 places today), and a row held on purpose reads "held". ambassador.py --requests no longer depends on the hand marking: a person already sent the questions mail gets no second template for another place, the row is recorded "same person as row N; answered in that thread".
