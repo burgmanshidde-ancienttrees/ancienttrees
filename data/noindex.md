@@ -346,7 +346,7 @@ Thin places kept indexed (17), a destination tree or real impressions: Alishan, 
 | Vorden | Netherlands | 1 | 0 |
 | Winterswijk | Netherlands | 1 | 0 |
 | Wolfheze | Netherlands | 1 | 0 |
-| Zaanstad | Netherlands | 3 | 1 |
+| Zaanstad | Netherlands | 3 | 0 |
 | Coromandel Forest Park | New Zealand | 1 | 0 |
 | Otari-Wilton's Bush | New Zealand | 1 | 0 |
 | Parry Kauri Park | New Zealand | 2 | 0 |
