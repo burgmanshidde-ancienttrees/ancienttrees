@@ -120,6 +120,10 @@
     "2026-10-25": {
       "note": "Smoke test skipped is the push-skip for claude[bot] log-only pushes; scheduled deploy succeeded 2.7h ago",
       "at": "2026-10-25T16:51:31+00:00"
+    },
+    "2026-10-28": {
+      "note": "Skipped deploys are bot-commit pushes (digest, review); the scheduled build 05:54 succeeded",
+      "at": "2026-10-28T07:52:11+00:00"
     }
   }
 }
