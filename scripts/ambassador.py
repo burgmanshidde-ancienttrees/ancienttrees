@@ -66,8 +66,10 @@ reaches them in the app the day they make an account and --grant links it. A
 sync keeps these entries, because the table knows nothing about them.
 
 --grant writes the row to Supabase (the person said yes to Hidde's mail) with
-`public` false: consent to be NAMED on the website is a second, separate yes,
-and --public records it. --sync rewrites data/ambassadors.json from the table,
+`public` false. Since 2026-10-28 a public profile is the consent to be NAMED
+on the city page (komoot's and Local Guides' convention; Hidde: "alleen als
+mensen een account hebben"); --public still names somebody whose profile is
+private. A mail ambassador without an account is named only on their yes. --sync rewrites data/ambassadors.json from the table,
 with the display name only where public is true, and drops anybody whose
 account is gone (the row cascades, so the table is already right; the file has
 to follow). The knock runs --sync beside photo_takedown.py, for the same
@@ -236,7 +238,8 @@ def _link_signed_in(doc):
 
 def sync():
     """data/ambassadors.json from the table. The file carries a display name
-    ONLY for a row whose person consented (public), and that name is read
+    ONLY for a row whose person consented (--public) or whose profile is
+    public, and that name is read
     from profiles at sync time rather than stored twice."""
     if not KEY:
         print("ambassador --sync: no SUPABASE_SERVICE_KEY, file left as it is")
@@ -260,7 +263,11 @@ def sync():
         raise
     names = {}
     open_profiles = set()
-    public_ids = sorted({r["user_id"] for r in table if r.get("public")})
+    # A public profile is the consent to be named (Hidde, 2026-10-28: komoot
+    # and Local Guides print the badge beside a public profile, and new
+    # accounts are public since 2026-10-19); the Settings switch is the way
+    # out. A row's own `public` still names somebody whose profile is private.
+    public_ids = sorted({r["user_id"] for r in table})
     if public_ids:
         q = ",".join(public_ids)
         # profiles.public (supabase/public-profiles.sql, 2026-10-19) makes the
@@ -285,7 +292,8 @@ def sync():
     out = []
     for r in table:
         entry = {"user_id": r["user_id"], "place_slug": r["place_slug"],
-                 "place_name": r["place_name"], "public": bool(r.get("public")),
+                 "place_name": r["place_name"],
+                 "public": bool(r.get("public")) or r["user_id"] in open_profiles,
                  "since": r.get("since")}
         if entry["public"] and names.get(r["user_id"]):
             entry["display_name"] = names[r["user_id"]]
