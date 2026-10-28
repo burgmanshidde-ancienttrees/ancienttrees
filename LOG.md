@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-28 night run, second attempt: nothing shipped, shelf is photo-blocked
+The SF verify found all 30 register rows already worked; sfo_012 to sfo_015 have no open photo within 150 m (Commons was busy for two lookups, retry later). The san-francisco claim stays until they merge (expires in 4 hours). The three READY leads are not ready (no photos). Next useful work: a photo or archive ask for held trees (Canberra can_002/can_003 are written and wait only for a photograph), not more verify passes.
+
 ## 2026-10-28 write pass on the pending shelf: 0 trees shipped, 2 stories written and held
 Shipped nothing to the site. Every candidate still lacks an approved photograph or public access, and a new tree of our own ships only with one. Written: Canberra can_002 (blue atlas cedar, Ainslie Avenue at Currong Street) and can_003 (Gorman House Arizona cypress), stories and recognition lines in data/research/canberra-verified.json, held until a photo of each trunk is approved (none was ever looked for). Held as before: ftw_018 (access to the register point unknown, no photo); txf_004 (its Commons photo is daylight and full-frame, but it has no geotag and was taken under the canopy inside the fenced private land, so the earlier hold stands); sfo_013 (no photo); inn_007 (register pin falls in a private yard at Brennerstrasse 6f, not written). Skipped: sfo_012, a duplicate of live sfo_004; the txf_001 to 003 duplicates were not touched. The three READY leads are not ready: Oxford's Headington oak is about 150 years old with no photo, the Iffley horse chestnut's only photo is from 2008 and nothing shows it alive, and the Madrid Castellana elm has one source, no trunk pin and no photo. preflight: 0 problems.
 
