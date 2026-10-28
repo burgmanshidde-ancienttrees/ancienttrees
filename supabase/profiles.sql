@@ -8,9 +8,10 @@
 --
 -- WHAT THIS STORES, exactly, and nothing else: a display name, a link to an
 -- avatar image, and rows saying that one account follows another. No real
--- name is required, no location, no age, no contacts. A profile is created
--- the moment somebody sets a name and not before, so an account that never
--- touches this has no row here at all.
+-- name is required, no location, no age, no contacts. Since 2026-10-28 a
+-- profile is created with the account itself, with the sign-in name or a
+-- generated one (profile-at-signup.sql); before that, only once somebody set
+-- a name.
 --
 -- DELETION IS THE CONDITION HE SET IN JULY AND IT STILL HOLDS. Everything
 -- below cascades off auth.users, so deleting an account really does take the
