@@ -45,6 +45,37 @@ struct PeopleView: View {
     /// Signed out, Follow and search ask for an account instead of doing
     /// nothing (2026-10-02, the same gate the heart and the tick carry).
     @State private var signingIn = false
+    /// Share your profile on a private profile: the question, then the share
+    /// sheet once the server has taken the switch; a profile with no name yet
+    /// gets the name editor first, as Privacy settings does.
+    @State private var askingPublic = false
+    @State private var editingName = false
+    @State private var sharing: SharedURL?
+    struct SharedURL: Identifiable { let url: URL; var id: String { url.absoluteString } }
+    static let shareLine = "See the trees I have collected on Ancient Trees."
+
+    private var shareRow: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "square.and.arrow.up")
+                .frame(width: 32).foregroundStyle(Brand.moss)
+            Text("Share your profile").font(.callout).foregroundStyle(Brand.ink)
+            Spacer(minLength: 0)
+        }
+        .frame(minHeight: 44)
+        .contentShape(.rect)
+    }
+
+    private func makePublic(_ uid: String, then url: URL) {
+        Task {
+            guard let t = await account.freshToken() else { askingPublic = false; return }
+            let ok = await profiles.savePublic(true, userId: uid, token: t)
+            askingPublic = false
+            guard ok else { return }
+            // The question's sheet has to be gone before the next one rises.
+            try? await Task.sleep(for: .milliseconds(450))
+            sharing = SharedURL(url: url)
+        }
+    }
     /// A person's profile opens on the stack under this sheet, where every
     /// other page opens (Route.person), so the sheet closes first.
     @Environment(Navigator.self) private var navigator
@@ -124,26 +155,44 @@ struct PeopleView: View {
                 // nobody asks for an email address to send it to: the sheet
                 // already knows every way this person contacts anybody.
                 //
-                // THE LINK IS THE APP STORE, not a profile page, and that is a
-                // deliberate limit rather than a first version. A link that
-                // makes the follow happen by itself would have to name the
-                // sender on a public web page, and this site does not publish
-                // a person's name (2026-08-11). So the invitation brings
-                // somebody to the app, and finding each other is still the
-                // search above.
-                if source == .search {
-                    ShareLink(item: URL(string: "https://apps.apple.com/app/id6806177833")!,
-                              message: Text("Come and see which ancient trees are near you. I am collecting them on Ancient Trees.")) {
-                        HStack(spacing: 12) {
-                            Image(systemName: "person.badge.plus")
-                                .frame(width: 32).foregroundStyle(Brand.moss)
-                            Text("Invite a friend").font(.callout).foregroundStyle(Brand.ink)
-                            Spacer(minLength: 0)
+                // SHARE YOUR PROFILE (2026-10-28), where "Invite a friend"
+                // stood. The App Store link it shared was a limit from before
+                // public profiles: since 2026-10-19 a person chooses to be
+                // seen, so the link is their profile, as Strava and
+                // Polarsteps share it. Your friend opens your trees, and
+                // Follow is on the page. A private profile asks first, with
+                // the words Privacy settings uses, then shares.
+                if source == .search, let uid = account.session?.userId {
+                    let url = Feed.base.appending(path: "profile").appending(queryItems: [URLQueryItem(name: "u", value: uid)])
+                    Group {
+                        if profiles.myPublic == true {
+                            ShareLink(item: url, message: Text(Self.shareLine)) { shareRow }
+                        } else {
+                            Button {
+                                if profiles.me?.display_name.isEmpty ?? true { editingName = true }
+                                else { askingPublic = true }
+                            } label: { shareRow }
+                            .buttonStyle(.plain)
                         }
-                        .frame(minHeight: 44)
-                        .contentShape(.rect)
                     }
-                    .accessibilityIdentifier("people-invite")
+                    .accessibilityIdentifier("people-share")
+                    .sheet(isPresented: $askingPublic) {
+                        BrandSheet(
+                            icon: "globe.europe.africa",
+                            title: "Make your profile public?",
+                            message: "Anyone can then open it, with or without an account.",
+                            points: ["Your name and picture",
+                                     "The trees you collected and want to visit",
+                                     "Your badges"],
+                            buttons: [
+                                .primary("Make public", id: "public-yes") { makePublic(uid, then: url) },
+                                .quiet("Not now", id: "public-no") { askingPublic = false },
+                            ])
+                    }
+                    .sheet(item: $sharing) { item in
+                        ShareSheet(items: [Self.shareLine, item.url]).presentationDetents([.medium, .large])
+                    }
+                    .sheet(isPresented: $editingName) { ProfileEditor() }
                 }
                 ForEach(visible, id: \.user_id) { p in
                     HStack(spacing: 12) {

@@ -51,6 +51,10 @@ export interface SignInStrings {
    *  the person had pressed. */
   titleAmbassador: string;
   subAmbassador: string;
+  /** The heading and line when the dialog opens from Follow on somebody's
+   *  profile (2026-10-28). %s is their name. */
+  titleFollow: string;
+  subFollow: string;
   /** An example address, in the local convention. */
   placeholder: string;
   send: string;
@@ -99,6 +103,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "Your account keeps the trees you send, so you can see what happened to each one.",
     titleAmbassador: "Sign in to apply",
     subAmbassador: "We use your account to write to you about the list.",
+    titleFollow: "Sign in to follow %s",
+    subFollow: "An account keeps who you follow, on every device.",
     placeholder: "you@example.com",
     send: "Email me a sign-in link",
     google: "Continue with Google",
@@ -132,6 +138,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "Tu cuenta guarda los árboles que envías, así que puedes ver qué pasó con cada uno.",
     titleAmbassador: "Inicia sesión para solicitarlo",
     subAmbassador: "Usamos tu cuenta para escribirte sobre la lista.",
+    titleFollow: "Inicia sesión para seguir a %s",
+    subFollow: "Tu cuenta guarda a quién sigues, en todos tus dispositivos.",
     placeholder: "tu@ejemplo.com",
     send: "Envíame un enlace de acceso",
     google: "Continuar con Google",
@@ -164,6 +172,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "Il tuo account conserva gli alberi che invii, così puoi vedere che fine ha fatto ciascuno.",
     titleAmbassador: "Accedi per candidarti",
     subAmbassador: "Usiamo il tuo account per scriverti sulla lista.",
+    titleFollow: "Accedi per seguire %s",
+    subFollow: "Il tuo account ricorda chi segui, su ogni dispositivo.",
     placeholder: "tu@esempio.com",
     send: "Inviami un link di accesso",
     google: "Continua con Google",
@@ -193,6 +203,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "Je account bewaart de bomen die je stuurt, zodat je kunt zien wat er met elke boom is gebeurd.",
     titleAmbassador: "Log in om je aan te melden",
     subAmbassador: "Via je account nemen we contact met je op over de lijst.",
+    titleFollow: "Log in om %s te volgen",
+    subFollow: "Je account onthoudt wie je volgt, op elk apparaat.",
     placeholder: "jij@voorbeeld.nl",
     send: "Mail me een inloglink",
     google: "Doorgaan met Google",
@@ -222,6 +234,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "Dein Konto behält die Bäume, die du schickst, damit du siehst, was aus jedem geworden ist.",
     titleAmbassador: "Melde dich an, um dich zu bewerben",
     subAmbassador: "Über dein Konto schreiben wir dir zur Liste.",
+    titleFollow: "Melde dich an, um %s zu folgen",
+    subFollow: "Dein Konto merkt sich, wem du folgst, auf jedem Gerät.",
     placeholder: "du@beispiel.de",
     send: "Schick mir einen Anmeldelink",
     google: "Weiter mit Google",
@@ -251,6 +265,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "A sua conta guarda as árvores que envia, para poder ver o que aconteceu a cada uma.",
     titleAmbassador: "Inicie sessão para se candidatar",
     subAmbassador: "Usamos a sua conta para lhe escrever sobre a lista.",
+    titleFollow: "Inicie sessão para seguir %s",
+    subFollow: "A sua conta guarda quem segue, em todos os seus dispositivos.",
     placeholder: "tu@exemplo.com",
     send: "Envia-me um link de acesso",
     google: "Continuar com Google",
@@ -280,6 +296,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "Votre compte conserve les arbres que vous envoyez, pour que vous puissiez voir ce qu'il est advenu de chacun.",
     titleAmbassador: "Connectez-vous pour postuler",
     subAmbassador: "Votre compte nous permet de vous écrire au sujet de la liste.",
+    titleFollow: "Connectez-vous pour suivre %s",
+    subFollow: "Votre compte garde les personnes que vous suivez, sur tous vos appareils.",
     placeholder: "vous@exemple.com",
     send: "Envoyez-moi un lien de connexion",
     google: "Continuer avec Google",
@@ -309,6 +327,8 @@ export const SIGNIN: Record<Lang, SignInStrings> = {
     subContribute: "アカウントが送った木を保存するので、それぞれがどうなったかを確認できます。",
     titleAmbassador: "サインインして申し込む",
     subAmbassador: "リストについての連絡はアカウント宛てに届きます。",
+    titleFollow: "サインインして%sをフォローする",
+    subFollow: "フォローした人はアカウントに残り、どの端末でも見られる。",
     placeholder: "sample@example.com",
     send: "サインインのリンクを送る",
     google: "Googleで続ける",

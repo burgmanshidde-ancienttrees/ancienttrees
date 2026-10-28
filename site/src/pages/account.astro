@@ -33,6 +33,7 @@ import SignInPanel from "../components/SignInPanel.astro";
 import Sheet from "../components/Sheet.astro";
 import { myTreesMapScript, mapHead } from "../lib/map";
 import { SHEET_JS } from "../lib/sheet-js";
+import { PEOPLE_JS } from "../lib/people-js";
 import { icon } from "../lib/icons";
 const BOOKMARK_GHOST = icon("bookmark-simple", "bold", "ic");
 const MAP_ICON = icon("map-trifold", "bold", "ic");
@@ -89,8 +90,12 @@ const canonical = `${BASE_URL}/account`;
         {/* Your flag after your name (lib/countries.ts, 2026-10-16), the
             app's CountryFlag: the country picked in settings, none if not. */}
         <div class="profile-name"><h1 id="in-handle">Your trees</h1><img class="profile-flag" id="in-flag" alt="" width="20" height="20" hidden /></div>
-        <p class="profile-follow"><b id="n-followers">0</b> followers &nbsp; <b id="n-following">0</b> following</p>
+        {/* The counts open the lists, as the app's do (Collect.swift). */}
+        <p class="profile-follow"><button type="button" class="profile-count" id="n-followers-btn" aria-haspopup="dialog"><b id="n-followers">0</b> followers</button> <button type="button" class="profile-count" id="n-following-btn" aria-haspopup="dialog"><b id="n-following">0</b> following</button></p>
       </div>
+      {/* Find people, the app's round person-plus beside the gear
+          (2026-10-28; CONVENTIONS.md "Finding somebody on the web"). */}
+      <button type="button" class="profile-gear" id="people-open" aria-label="Find people" aria-haspopup="dialog"><Fragment set:html={icon("user-plus", "bold", "ic")} /></button>
       {/* No add-a-tree button here (Hidde, 2026-10-10: "the plus sign on
           web on profile ... is so random"): adding a tree is "Suggest a
           tree" in the menu, as the app's is the camera in its tab bar. */}
@@ -131,6 +136,33 @@ const canonical = `${BASE_URL}/account`;
     <p class="at-sheet-p">This badge is only for the first people to use Ancient Trees, and you are one of them.</p>
     <div class="at-sheet-btns">
       <button type="button" class="sheet-b sheet-b--primary early-done">Done</button>
+    </div>
+  </Sheet>
+
+  {/* FIND PEOPLE, FOLLOWERS, FOLLOWING: one sheet, the app's PeopleView
+      (lib/people-js.ts). Search on top, as every website has it. The second
+      step is the settings page's own "Make your profile public?". */}
+  <Sheet lang="en" class="people-sheet" id="people-sheet" aria-labelledby="people-h">
+    <div class="people-step" data-step="list">
+      <h3 class="at-sheet-h" id="people-h" data-search="Find people" data-followers="Followers" data-following="Following">Find people</h3>
+      <label class="people-search" id="people-search"><Fragment set:html={icon("magnifying-glass", "bold", "ic")} /><input type="search" id="people-q" placeholder="Search by name" aria-label="Search by name" autocomplete="off" /></label>
+      <button type="button" class="people-share" id="people-share" data-text="See the trees I have collected on Ancient Trees." data-copied="Link copied" data-name="Add a name first; it is what your public profile shows." data-settings="Settings"><span class="people-share-ic"><Fragment set:html={icon("export", "bold", "ic")} /></span>Share your profile</button>
+      <p class="people-empty" id="people-empty" data-search="Search for somebody by the name they chose." data-none="Couldn't find that person." data-followers="Nobody follows you yet." data-following="You do not follow anybody yet." hidden></p>
+      <ul class="people-list" id="people-list" data-follow="Follow" data-following="Following" data-back="Follow back" data-noname="No name yet"></ul>
+    </div>
+    <div class="people-step" data-step="ask" hidden>
+      <span class="at-sheet-tile"><Fragment set:html={icon("globe-hemisphere-east", "bold")} /></span>
+      <h3 class="at-sheet-h">Make your profile public?</h3>
+      <p class="at-sheet-p">Anyone can then open it, with or without an account.</p>
+      <ul class="at-sheet-pts">
+        <li><Fragment set:html={icon("check", "bold")} />Your name and picture</li>
+        <li><Fragment set:html={icon("check", "bold")} />The trees you collected and want to visit</li>
+        <li><Fragment set:html={icon("check", "bold")} />Your badges</li>
+      </ul>
+      <div class="at-sheet-btns">
+        <button type="button" id="people-pub-yes" class="sheet-b sheet-b--primary">Make public</button>
+        <button type="button" id="people-pub-no" class="sheet-b sheet-b--quiet">Not now</button>
+      </div>
     </div>
   </Sheet>
 
@@ -191,7 +223,7 @@ const canonical = `${BASE_URL}/account`;
     <div id="map" class="map"></div>
   </div>
 </div>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + COUNTRY_JS + PROFILE_JS + MY_TREES_JS + SHEET_JS + `
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + COUNTRY_JS + PROFILE_JS + MY_TREES_JS + SHEET_JS + PEOPLE_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";

@@ -68,6 +68,13 @@ public enum WebLink {
                   let id = UUID(uuidString: idStr) else { return .none }
             return .route(.shared(id))
         }
+        // Somebody's profile, /profile?u=<id>: what Share your profile
+        // sends (2026-10-28). The app asks the server who may be seen.
+        if parts == ["profile"] {
+            guard let u = comps.queryItems?.first(where: { $0.name == "u" })?.value,
+                  UUID(uuidString: u) != nil else { return .none }
+            return .route(.person(u.lowercased()))
+        }
         if let first = parts.first, languages.contains(first) { parts.removeFirst() }
         guard let first = parts.first else { return .none }
         switch first {

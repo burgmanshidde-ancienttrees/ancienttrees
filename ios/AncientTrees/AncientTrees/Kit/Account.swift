@@ -640,6 +640,8 @@ public enum SignInReason: Equatable, Identifiable {
                                  // that lets us answer (2026-08-21 ruling)
     case ambassador              // the open seat: says what was pressed
                                  // rather than "have your say" (2026-10-08)
+    case follow(String)          // Follow on somebody's profile, by name
+                                 // (2026-10-28, the website's titleFollow)
 
     /// SHALLOW ON PURPOSE (Hidde, 2026-08-29, reading "Sign in to keep your 7
     /// trees" over "Sign in and they follow you": "kijk even naar conventies
@@ -674,6 +676,7 @@ public enum SignInReason: Equatable, Identifiable {
         case .seasonAlerts: "Sign in for season alerts"
         case .feedback: "Sign in to have your say"
         case .ambassador: "Sign in to apply"
+        case .follow(let name): "Sign in to follow \(name)"
         }
     }
 
@@ -687,6 +690,8 @@ public enum SignInReason: Equatable, Identifiable {
             "We check every vote, correction and tip, and your account lets us tell you what came of it."
         case .ambassador:
             "We use your account to write to you about the list."
+        case .follow:
+            "An account keeps who you follow, on every device."
         }
     }
 }

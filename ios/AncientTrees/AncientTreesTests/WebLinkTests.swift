@@ -62,4 +62,11 @@ final class WebLinkTests: XCTestCase {
         XCTAssertEqual(WebLink.slugify("Tilleul d'Henri IV"), "tilleul-dhenri-iv")
         XCTAssertEqual(WebLink.slugify("Pedunculate Oak (Quercus robur)"), "pedunculate-oak-quercus-robur")
     }
+
+    func testAProfileLinkOpensThePerson() {
+        XCTAssertEqual(parse("https://ancienttrees.app/profile?u=8F14E45F-CEEA-467F-A8F1-6E0A2B7C9D01"),
+                       .route(.person("8f14e45f-ceea-467f-a8f1-6e0a2b7c9d01")))
+        XCTAssertEqual(parse("https://ancienttrees.app/profile?u=nobody"), WebLink.Target.none)
+        XCTAssertEqual(parse("https://ancienttrees.app/profile"), WebLink.Target.none)
+    }
 }

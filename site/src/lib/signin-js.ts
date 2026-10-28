@@ -113,6 +113,8 @@ export const SIGNIN_JS = `
     // this on DOMContentLoaded and reopens the confirm step (AmbassadorLine).
     if (want.kind === 'ambassador') { window.atPendingAmbassador = want.city || true; return; }
     if (want.kind === 'filter') { window.atPendingFilter = want.filter; return; }
+    // Follow: /profile reads this once it knows who is signed in.
+    if (want.kind === 'follow') { window.atPendingFollow = want.user; return; }
     if (!want.tree) return;
     if (!document.querySelector('[data-tree="' + want.tree + '"]')) return;
     // The account's answer FIRST. Both lists were fetched by their own scripts
@@ -304,6 +306,11 @@ export const SIGNIN_JS = `
         // the tap.
         localStorage.setItem('ancienttrees_pending',
           JSON.stringify({ kind: 'ambassador', city: want.city, at: Date.now() }));
+      } else if (want && want.kind === 'follow' && want.user) {
+        // Follow on somebody's profile (2026-10-28): who, so the profile
+        // they land back on follows them, as a save is finished after it.
+        localStorage.setItem('ancienttrees_pending',
+          JSON.stringify({ kind: 'follow', user: want.user, at: Date.now() }));
       } else {
         localStorage.removeItem('ancienttrees_pending');
       }
@@ -318,7 +325,11 @@ export const SIGNIN_JS = `
     // The ambassador seat names what was pressed (2026-10-08), the app's
     // SignInReason.ambassador.
     var amb = want && want.kind === 'ambassador';
-    if (title && !appMode) {
+    // Follow names the person, the app's SignInReason.follow.
+    var fol = reason === 'follow';
+    if (title && !appMode && fol) {
+      title.textContent = (title.getAttribute('data-follow') || '').replace('%s', treeName || '');
+    } else if (title && !appMode) {
       title.textContent = title.getAttribute(
         amb ? 'data-ambassador'
         : reason === 'contribute' ? 'data-contribute'
@@ -328,6 +339,8 @@ export const SIGNIN_JS = `
     if (sub && !appMode) {
       if (amb) {
         sub.textContent = sub.getAttribute('data-ambassador') || sub.getAttribute('data-generic');
+      } else if (fol) {
+        sub.textContent = sub.getAttribute('data-follow') || sub.getAttribute('data-generic');
       } else if (reason === 'contribute') {
         sub.textContent = sub.getAttribute('data-contribute') || sub.getAttribute('data-generic');
       } else if (reason === 'expired') {

@@ -61,7 +61,10 @@ struct PersonProfileView: View {
         // No bar title: the name is the header's, and a page that says its
         // own name twice is the "title twice" fault (Profile.swift).
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $signingIn) { SignInSheet(reason: .general, localCount: 0) }
+        .sheet(isPresented: $signingIn) {
+            // Names the person (2026-10-28), as the website's sheet does.
+            SignInSheet(reason: profile.map { .follow($0.display_name) } ?? .general, localCount: 0)
+        }
         .task { await load() }
     }
 

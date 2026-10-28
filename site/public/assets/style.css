@@ -3488,6 +3488,42 @@ dialog.at-sheet .at-sheet-fine { margin: 0.9rem 0 0; font-size: 12px; color: var
 dialog.at-sheet .at-sheet-fine[hidden] { display: none; }
 .at-sheet [data-step][hidden] { display: none; }
 .at-sheet button:focus:not(:focus-visible) { outline: none; }
+/* FIND PEOPLE (account.astro, lib/people-js.ts, 2026-10-28): the app's
+   PeopleView numbers. Rows 56 with a 40 avatar, the Follow pill 34 tall and
+   96 wide, moss while it says Follow and outlined once you do. The search
+   field takes the close cross's grey; the sheet keeps its height while the
+   list fills, so it does not jump under the typing thumb. */
+.people-step[hidden] { display: none; }
+dialog.people-sheet { text-align: left; }
+dialog.people-sheet .at-sheet-h { margin: 0 2.4rem 0.9rem 0; }
+.people-search { display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 12px; border-radius: 12px; background: #F1F0EA; color: var(--ink-mid); }
+.people-search[hidden] { display: none; }
+.people-search svg { width: 18px; height: 18px; flex: none; }
+.people-search input { flex: 1; min-width: 0; border: 0; background: none; font: inherit; font-size: 16px; color: var(--ink); outline: none; }
+.people-share { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 48px; margin-top: 8px; padding: 0; border: 0; background: none; cursor: pointer; font: inherit; font-size: 15px; color: var(--ink); text-align: left; }
+.people-share[hidden] { display: none; }
+.people-share-ic { display: flex; justify-content: center; width: 40px; color: var(--moss); }
+.people-share-ic svg { width: 20px; height: 20px; }
+.people-empty { margin: 8px 0 4px; font-size: 14px; color: var(--ink-mid); }
+.people-empty[hidden] { display: none; }
+.people-list { list-style: none; margin: 0; padding: 0; min-height: 12rem; }
+.people-list li { display: flex; align-items: center; gap: 12px; min-height: 56px; }
+.people-list li.is-blocked { opacity: 0.5; }
+.people-who { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; color: var(--ink); text-decoration: none; }
+.people-av { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--moss-light) center/cover no-repeat; color: var(--moss);
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; }
+.people-name { font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.people-name.none { color: var(--ink-mid); }
+.people-pill { flex: none; height: 34px; min-width: 96px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--moss); background: var(--moss); color: #fff; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.people-pill.on { background: transparent; border-color: #D3D1C8; color: var(--ink); }
+.people-pill:disabled { opacity: 0.55; }
+/* The counts under your name open the lists; they stay the same small grey
+   line, with room for a thumb. */
+.profile-count { padding: 6px 0; margin: -6px 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+.profile-count + .profile-count { margin-left: 10px; }
+.profile-count:hover b { text-decoration: underline; }
+button.profile-gear { padding: 0; cursor: pointer; }
+button.profile-gear svg { width: 20px; height: 20px; }
 @media (max-width: 600px) {
   .at-sheet { margin: auto 0 0; width: 100%; max-width: 100%; box-sizing: border-box;
     border-radius: 28px 28px 0 0; padding: 2.4rem 1.5rem calc(1.9rem + env(safe-area-inset-bottom));

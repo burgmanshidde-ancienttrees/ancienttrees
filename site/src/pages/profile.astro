@@ -174,24 +174,36 @@ const LOCK = icon("lock-simple", "bold", "ic");
           if (!me) return;
           api(s, "GET", "/rest/v1/follows?select=followee&follower=eq." + me + "&followee=eq." + p.user_id)
             .then(function(r) { return r.ok ? r.json() : []; })
-            .then(function(rows) { following = !!(rows && rows.length); paint(); });
+            .then(function(rows) {
+              following = !!(rows && rows.length); paint();
+              // Signed in from this Follow: finish it, as a save is finished
+              // after its sign-in (signin-js landed()). The button saying
+              // Following is the acknowledgement; no toast.
+              if (window.atPendingFollow === p.user_id && !following) toggle(s);
+              window.atPendingFollow = null;
+            });
         });
     });
+    function toggle(s) {
+      if (!me || me === p.user_id) return;
+      btn.disabled = true;
+      var req = following
+        ? api(s, "DELETE", "/rest/v1/follows?follower=eq." + me + "&followee=eq." + p.user_id)
+        : api(s, "POST", "/rest/v1/follows", { follower: me, followee: p.user_id });
+      req.then(function(r) {
+        btn.disabled = false;
+        if (!r.ok) return;
+        var n = el("pp-followers");
+        n.textContent = Math.max(0, parseInt(n.textContent, 10) + (following ? -1 : 1));
+        following = !following; paint();
+      }).catch(function() { btn.disabled = false; });
+    }
     btn.addEventListener("click", function() {
-      C.gate(function(s) {
-        if (!me || me === p.user_id) return;
-        btn.disabled = true;
-        var req = following
-          ? api(s, "DELETE", "/rest/v1/follows?follower=eq." + me + "&followee=eq." + p.user_id)
-          : api(s, "POST", "/rest/v1/follows", { follower: me, followee: p.user_id });
-        req.then(function(r) {
-          btn.disabled = false;
-          if (!r.ok) return;
-          var n = el("pp-followers");
-          n.textContent = Math.max(0, parseInt(n.textContent, 10) + (following ? -1 : 1));
-          following = !following; paint();
-        }).catch(function() { btn.disabled = false; });
-      }, function() { if (window.atOpenSignIn) window.atOpenSignIn(null, "feedback"); });
+      // Signed out, the sheet names the person (it said "Sign in to have
+      // your say" until 2026-10-28, the vote's wording).
+      C.gate(toggle, function() {
+        if (window.atOpenSignIn) window.atOpenSignIn(p.display_name, "follow", { kind: "follow", user: p.user_id });
+      });
     });
   }
 
