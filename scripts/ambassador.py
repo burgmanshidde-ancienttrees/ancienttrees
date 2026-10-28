@@ -557,6 +557,18 @@ def requests_scan(send):
         if (people.ref(uid), slug) in asked or (uid, slug) in badged:
             requested.append({"row": rid, "user_id": people.ref(uid), "place_slug": slug, "date": None, "note": "repeat"})
             continue
+        # One person, one mail (Hidde, 2026-10-28, Miguel asked for five
+        # places in seven minutes: "vales is from same as we already emaild").
+        # A person we already sent the questions to is in that thread; a
+        # second place is answered there, by hand, never by a second template
+        # that the one-week rest would only delay.
+        first = next((r for r in requested if r.get("user_id") == people.ref(uid) and r.get("date")), None)
+        if first:
+            requested.append({"row": rid, "user_id": people.ref(uid), "place_slug": slug,
+                              "place_name": row.get("city"), "date": None,
+                              "note": "same person as row %s; answered in that thread" % first["row"]})
+            print(f"request {rid} / {slug}: same person as row {first['row']}, no second mail")
+            continue
         place = place_name(slug)
         subject = REQUEST_SUBJECT.format(place=place)
         body = REQUEST_BODY.format(place=place, listlink=f"{BASE_URL}/{slug}")

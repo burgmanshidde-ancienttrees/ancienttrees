@@ -1981,16 +1981,33 @@ def ambassador_requests_section(today):
         open_.append(r)
     if not open_:
         return ""
-    out = ["**Ambassador requests, open** (%d; each stays here until the badge is granted with "
-           "`python3 scripts/ambassador.py --grant`)" % len(open_), "",
-           "| Asked | Place | From | Our mail with the questions | Waiting on |", "|---|---|---|---|---|"]
+    # One row per person, every place they asked for named in it (Hidde,
+    # 2026-10-28: five places from Miguel read as five people waiting on a
+    # mail, when one mail had gone and his thread answers the rest). A row
+    # ambassador.py recorded without a date was held on purpose, never "next
+    # knock".
+    held = {r.get("row") for r in doc.get("requested") or [] if not r.get("date")}
+    people_ = collections.OrderedDict()
     for r in open_:
-        sent = mailed.get(r["id"])
+        people_.setdefault(people.ref(r["user_id"]) if r.get("user_id") else r["id"], []).append(r)
+    out = ["**Ambassador requests, open** (%d %s, %d %s; each stays here until the badge is granted "
+           "with `python3 scripts/ambassador.py --grant`)" % (
+               len(people_), "person" if len(people_) == 1 else "people",
+               len(open_), "place" if len(open_) == 1 else "places"), "",
+           "| Asked | Places | From | Our mail with the questions | Waiting on |", "|---|---|---|---|---|"]
+    for rs in people_.values():
+        sent = sorted(mailed[r["id"]] for r in rs if mailed.get(r["id"]))
+        froms = sorted({"the app" if r.get("page") == "app" else (r.get("page") or "web") for r in rs})
+        if sent:
+            mail, wait = "sent %s" % sent[0], "their answer, then your yes"
+        elif all(r["id"] in held for r in rs):
+            mail, wait = "held", "a mail by hand"
+        else:
+            mail, wait = "not yet (next knock)", "the mail"
         out.append("| %s | **%s** | %s | %s | %s |" % (
-            r["created_at"][:10], r.get("city") or "?",
-            "the app" if r.get("page") == "app" else (r.get("page") or "web"),
-            "sent %s" % sent if sent else "not yet (next knock)",
-            "their answer, then your yes" if sent else "the mail"))
+            min(r["created_at"][:10] for r in rs),
+            ", ".join(r.get("city") or "?" for r in reversed(rs)),
+            ", ".join(froms) if len(froms) < 3 else "web", mail, wait))
     return "\n".join(out)
 
 

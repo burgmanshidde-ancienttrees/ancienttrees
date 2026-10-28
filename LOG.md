@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-28 session with Hidde: one person, one ambassador row
+
+The digest showed Miguel's five places (Porto, Guimarães, Braga, Calvos, Vales, one account, 10-26) as five requests, four "not yet (next knock)". They were held all along (a session had marked rows 575 to 578 by hand), so nothing would have gone out, but the page said otherwise. Now the block has one row per person with every place named (4 people, 8 places today), and a row held on purpose reads "held". ambassador.py --requests no longer depends on the hand marking: a person already sent the questions mail gets no second template for another place, the row is recorded "same person as row N; answered in that thread".
+
 ## 2026-10-28 session with Hidde: returning website visitors in the headline
 
 His numbers gain a row, "Website visitors who came back" (GA's returning activeUsers, week on week; Hidde: "yes add returning website visitors"). First reading: 18 this week against 5. The footnote says it reads low (another browser or device counts as new) and may hold our own visits, since GA cannot filter us out. Also checked on his question: the week's 19 saves came from two accounts (13 on 10-22, mostly Paris; 6 on 10-24, mostly Cambridge), no one else saved.
