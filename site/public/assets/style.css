@@ -138,6 +138,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .bar-signin:hover { background: var(--cream-dark); }
 html[data-signed-in="1"] .bar-signin { display: none; }
 html:not([data-signed-in="1"]) .nav-acct.only-desktop { display: none; }
+.bar-links a.bar-face { display: inline-flex; align-items: center; }
 /* Signed out, the phone sheet hides My trees and Settings too, so both widths
    show the same thing: sign in first, then your own things (Hidde, 2026-10-12). */
 html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }

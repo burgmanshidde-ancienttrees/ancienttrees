@@ -3756,6 +3756,8 @@ Hidde asked whether the filled triangle behind Explore and Account is what other
 
 What we do: the AllTrails chevron, Phosphor caret-down bold, small and thin, on Explore. Since the account became your round photo (2026-10-20), it stands alone with no chevron, like Google and AllTrails (Hidde: "go for the cleaner version"). The account button is the plain word, no leaf, like its neighbours. Its menu is two rows of one shape (icon, label): My trees, Settings. No group heading (the button already says whose menu it is) and no sign out row (Hidde: sign out lives on Settings).
 
+**Since 2026-10-28 there is no menu** (Hidde: "moeten we het icoon niet gewoon direct naar je profiel brengen ipv dat er een menu open klapt - setting kun je daar vervolgens vinden"). The face is a link to /account, the way Instagram's and Polarsteps' web profile picture opens the profile, and our own app's tab does; Settings is the gear on the profile (see "A profile page, and where settings sit"). AllTrails and Strava keep a dropdown, but theirs holds five rows or more; ours had become two rows to one page and its gear. The phone sheet's Yours group keeps one row, My trees. Instagram and Polarsteps from memory, not re-opened that day.
+
 ---
 
 ## A photograph whose place we have pinned wrong (2026-10-15)
