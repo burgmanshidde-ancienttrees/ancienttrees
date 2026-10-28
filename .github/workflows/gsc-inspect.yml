@@ -40,7 +40,7 @@ jobs:
           GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
-        run: python3 scripts/gsc_inspect.py --per-sample ${{ inputs.per_sample }} ${{ inputs.wanted && '--wanted' || '' }}
+        run: python3 -u scripts/gsc_inspect.py --per-sample ${{ inputs.per_sample }} ${{ inputs.wanted && '--wanted' || '' }}
 
       - name: Commit the answers
         run: |
