@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-28 session with Hidde: returning website visitors in the headline
+
+His numbers gain a row, "Website visitors who came back" (GA's returning activeUsers, week on week; Hidde: "yes add returning website visitors"). First reading: 18 this week against 5. The footnote says it reads low (another browser or device counts as new) and may hold our own visits, since GA cannot filter us out. Also checked on his question: the week's 19 saves came from two accounts (13 on 10-22, mostly Paris; 6 on 10-24, mostly Cambridge), no one else saved.
+
 ## 2026-10-28 scheduled send
 
 Sent the thank-you reply to Laura Parrack (Cardiff Council parks) for the Tree Register and Bute Park trail links, approved by Hidde 2026-10-27.
@@ -42,7 +46,7 @@ Sent the thank-you reply to Laura Parrack (Cardiff Council parks) for the Tree R
 
 ## 2026-10-27 session with Hidde: Show HN, second try
 
-The 10-24 Show HN (item 50208440, posted on a Saturday) ended at 1 point, and its first comment is [dead]: the filter for new accounts killed it (hburgmans, karma 1). Hidde already mailed hn@ycombinator.com about the dead comment on Friday 10-23 at 15:13 (his Sent folder; so the post went up that Friday, not 10-24), and no answer came. Second try: the same URL with the explanation in the submission's own text field, Tuesday to Thursday 14:00 to 17:00; if the submit lands on the old item, the duplicate filter folded it and he stops. drafts/show-hn.md now says text in the post, not a separate comment.
+The 10-24 Show HN (item 50208440, posted on a Saturday) ended at 1 point, and its first comment is [dead]: the filter for new accounts killed it (hburgmans, karma 1). Hidde already mailed hn@ycombinator.com about the dead comment on Friday 10-23 at 15:13 (his Sent folder; so the post went up that Friday, not 10-24), and no answer came. Second try: the same URL with the explanation in the submission's own text field, Tuesday to Thursday 14:00 to 17:00; if the submit lands on the old item, the duplicate filter folded it and he stops. drafts/show-hn.md now says text in the post, not a separate comment. Result, ~14:45: no new item; his submitted list still shows only 50208440 (1 point), so the duplicate filter folded the resubmit into Friday's post. Next try with the text in the post in two to three weeks, ideally with a new reason, and a few genuine comments from the account before then.
 
 ## 2026-10-26/27 session with Hidde: nature magazines, the Wilder model
 

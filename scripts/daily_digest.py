@@ -3726,6 +3726,7 @@ def headline_section(today):
         ("... of which from search", "every search engine", web[1] if web else None),
         ("... from Google", "Google's recovery", web[2] if web else None),
         ("... from Bing", "Bing", web[3] if web else None),
+        ("Website visitors who came back", "people who stay", web[4] if web else None),
         ("App downloads (first-time)", "people", H.get("downloads")),
         ("New accounts", "people", H.get("accounts")),
         ("Phones back within 30 days", "people who stay", H.get("back30")),
@@ -3740,7 +3741,9 @@ def headline_section(today):
                                             cell(v[1]) if v else "-"))
     out.append("")
     out.append("Website visitors are Google Analytics' count, so only people who accepted "
-               "the cookie bar. The 30-day row is the phones that arrived five weeks ago, "
+               "the cookie bar; a visitor who comes back on another browser or device counts "
+               "as new, and GA cannot leave our own visits out, so read the came-back row as a "
+               "direction, not a count. The 30-day row is the phones that arrived five weeks ago, "
                "so it moves slowly.")
     return "\n".join(out)
 

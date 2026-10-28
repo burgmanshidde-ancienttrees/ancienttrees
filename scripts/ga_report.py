@@ -91,7 +91,12 @@ def week_numbers():
     Search is split by engine (Hidde, 2026-10-22: "is this only google or also
     bing"): "organic" is every engine, and only the Google row answers whether
     Google is coming back.
-    Returns ([this week, week before], [from search], [Google], [Bing]) or None."""
+    Returning visitors ride along (Hidde, 2026-10-28: "yes add returning
+    website visitors"): people GA had seen before who came back that week, the
+    website's side of the app's 30-day row. GA knows a returner only by its
+    cookie, so another browser or device counts as new.
+    Returns ([this week, week before], [from search], [Google], [Bing],
+    [returning]) or None."""
     c = creds()
     if not c:
         return None
@@ -112,7 +117,15 @@ def week_numbers():
                 google[w] += n
             elif "bing" in source:
                 bing[w] += n
-    return new, search, google, bing
+    back = [0, 0]
+    for row in _report(tok, {
+            "dateRanges": [{"startDate": "7daysAgo", "endDate": "yesterday", "name": "now"},
+                           {"startDate": "14daysAgo", "endDate": "8daysAgo", "name": "before"}],
+            "dimensions": [{"name": "newVsReturning"}],
+            "metrics": [{"name": "activeUsers"}]}):
+        if row[0] == "returning":
+            back[0 if row[1] == "now" else 1] += int(float(row[2]))
+    return new, search, google, bing, back
 
 
 def lines(daily, pages, sources, returning):
