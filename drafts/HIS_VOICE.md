@@ -405,3 +405,12 @@ The sent article is drafts/crann-article-2026-10-final.md, its covering mail dra
 I drafted four replies from the owed list: an ambassador ask to James Kearney (UNLV, mid-way through sending photos), a thank-you to Andreas Groeger for "no photos, sorry", a thank-you plus a product question to Ines (Wilder) for explaining her Bucaco test, and a reply to Fred van Holland, who declined the ambassador role. His verdict: **"all these mails are unnecessary except the one to fred."** Then he gave Fred's content himself: thank him, say we understand, without any pressure a tip or photo is more than welcome, thanks again for the help.
 
 Lessons. (1) The owed list counts who wrote last, not who is owed: a short closing line (no photos, a clarification, "will do") needs no reply, and a thank-you to it only adds a mail. (2) Do not open a new ask (ambassador) with someone who is in the middle of giving; let them finish. (3) A person who says no to a role still gets the door left open, in his words: "zonder enige druk", a tip or a photo "meer dan welkom", and thanks for the help.
+
+## Calibration 2026-10-27: accepting an offer to write for them (Esther, Bezoek Ede)
+
+My "laat maar weten wanneer het jullie uitkomt" became his **"laat maar weten wanneer ik iets kan aanleveren?"**. When someone offers us a guest piece, the yes says what we will do (deliver something), not that we wait for their convenience.
+
+
+## Calibration 2026-10-28: say it is a worldwide map (archive asks)
+
+On the NDV draft: **"mss goed om te noemen dat het een wereldwijde kaart is in de opening want mensen denken ah nederlandse kaart hebben we al"**. A cold mail to a local or national organisation says in its opening sentence that Ancient Trees is a worldwide map (with the city count), so they do not file it as one more map of their own country.

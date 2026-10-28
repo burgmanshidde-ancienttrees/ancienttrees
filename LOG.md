@@ -13,7 +13,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 ## 2026-10-28 session with Hidde: second archive batch sent
 
-archive-2026-10-26 went out on his word ("verstuur alle 3"): photo asks to the Austrian (Vienna), Polish (Krakow, Warsaw) and German (Berlin, Munich) dendrology societies; the DDG mail is a third contact with resend_reason recorded. Logged in drafts/OUTREACH.md and outreach-sent.json (private store). Next archive candidate: the Nederlandse Dendrologische Vereniging, now with a published address (secretariaat@dendrologie.nl) in the contacts database.
+archive-2026-10-26 went out on his word ("verstuur alle 3"): photo asks to the Austrian (Vienna), Polish (Krakow, Warsaw) and German (Berlin, Munich) dendrology societies; the DDG mail is a third contact with resend_reason recorded. Logged in drafts/OUTREACH.md and outreach-sent.json (private store). Then archive-2026-10-28 on his "Verstuur": the Nederlandse Dendrologische Vereniging (Arnhem, Nijmegen) and the Munich Baumschutzbehörde (its own photographs only; the Mein schönster Baum entries are licensed to the city non-commercially). His edit: a cold mail's opening says Ancient Trees is a worldwide map, in 235 cities, recorded in drafts/HIS_VOICE.md. The archive contacts file now holds only the Morton Arboretum (three unanswered mails), so the next archive batch needs new contacts sourced first.
 
 ## 2026-10-28 session with Hidde: one person, one ambassador row
 
