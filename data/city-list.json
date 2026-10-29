@@ -29,20 +29,6 @@
    "trees": 20
   },
   {
-   "city": "Paris",
-   "country": "France",
-   "slug": "paris",
-   "status": "published",
-   "trees": 32
-  },
-  {
-   "city": "New York",
-   "country": "United States",
-   "slug": "new-york",
-   "status": "published",
-   "trees": 28
-  },
-  {
    "city": "Palma de Mallorca",
    "country": "Spain",
    "slug": "palma-de-mallorca",
@@ -51,11 +37,11 @@
    "trees": 6
   },
   {
-   "city": "Amsterdam",
-   "country": "Netherlands",
-   "slug": "amsterdam",
+   "city": "New York",
+   "country": "United States",
+   "slug": "new-york",
    "status": "published",
-   "trees": 27
+   "trees": 28
   },
   {
    "city": "Geneva",
@@ -66,6 +52,13 @@
    "trees": 21
   },
   {
+   "city": "Paris",
+   "country": "France",
+   "slug": "paris",
+   "status": "published",
+   "trees": 32
+  },
+  {
    "city": "Singapore",
    "country": "Singapore",
    "slug": "singapore",
@@ -74,12 +67,12 @@
    "trees": 34
   },
   {
-   "city": "Alicante",
-   "country": "Spain",
-   "slug": "alicante",
+   "city": "Tokyo",
+   "country": "Japan",
+   "slug": "tokyo",
    "status": "published",
-   "demand_views_90d": 77454,
-   "trees": 21
+   "demand_views_90d": 394702,
+   "trees": 22
   },
   {
    "city": "Cambridge",
@@ -90,19 +83,26 @@
    "trees": 5
   },
   {
+   "city": "Alicante",
+   "country": "Spain",
+   "slug": "alicante",
+   "status": "published",
+   "demand_views_90d": 77454,
+   "trees": 21
+  },
+  {
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "slug": "amsterdam",
+   "status": "published",
+   "trees": 27
+  },
+  {
    "city": "Milan",
    "country": "Italy",
    "slug": "milan",
    "status": "published",
    "trees": 30
-  },
-  {
-   "city": "Tokyo",
-   "country": "Japan",
-   "slug": "tokyo",
-   "status": "published",
-   "demand_views_90d": 394702,
-   "trees": 22
   },
   {
    "city": "Catania",
@@ -211,6 +211,21 @@
    "trees": 10
   },
   {
+   "city": "Houston",
+   "country": "United States",
+   "slug": "houston",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 11
+  },
+  {
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "status": "published",
+   "trees": 21
+  },
+  {
    "city": "Arnhem",
    "country": "Netherlands",
    "slug": "arnhem",
@@ -233,34 +248,11 @@
    "trees": 13
   },
   {
-   "city": "Houston",
-   "country": "United States",
-   "slug": "houston",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 11
-  },
-  {
    "city": "Leeuwarden",
    "country": "Netherlands",
    "slug": "leeuwarden",
    "status": "published",
    "trees": 34
-  },
-  {
-   "city": "Maastricht",
-   "country": "Netherlands",
-   "slug": "maastricht",
-   "status": "published",
-   "demand_views_90d": 47763,
-   "trees": 16
-  },
-  {
-   "city": "Oahu",
-   "country": "United States",
-   "slug": "oahu",
-   "status": "published",
-   "trees": 21
   },
   {
    "city": "Rome",
@@ -309,20 +301,21 @@
    "trees": 11
   },
   {
-   "city": "Cagliari",
-   "country": "Italy",
-   "slug": "cagliari",
-   "status": "published",
-   "demand_views_90d": 51351,
-   "trees": 14
-  },
-  {
    "city": "Coimbra",
    "country": "Portugal",
    "slug": "coimbra",
    "status": "published",
    "demand_views_90d": 34962,
    "trees": 5
+  },
+  {
+   "city": "Genoa",
+   "country": "Italy",
+   "slug": "genoa",
+   "status": "published",
+   "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
+   "demand_views_90d": 145206,
+   "trees": 13
   },
   {
    "city": "Braga",
@@ -342,20 +335,20 @@
    "trees": 0
   },
   {
-   "city": "Girona",
-   "country": "Spain",
-   "slug": "girona",
-   "status": "published",
-   "trees": 7,
-   "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
-  },
-  {
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Girona",
+   "country": "Spain",
+   "slug": "girona",
+   "status": "published",
+   "trees": 7,
+   "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
   },
   {
    "city": "Seattle",
@@ -445,6 +438,13 @@
    "trees": 44
   },
   {
+   "city": "Vienna",
+   "country": "Austria",
+   "slug": "vienna",
+   "status": "published",
+   "trees": 58
+  },
+  {
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
@@ -460,12 +460,11 @@
    "trees": 33
   },
   {
-   "city": "Malaga",
-   "country": "Spain",
-   "slug": "malaga",
+   "city": "Leipzig",
+   "country": "Germany",
+   "slug": "leipzig",
    "status": "published",
-   "demand_views_90d": 117780,
-   "trees": 9
+   "trees": 29
   },
   {
    "city": "Prague",
@@ -483,27 +482,12 @@
    "trees": 9
   },
   {
-   "city": "Vienna",
-   "country": "Austria",
-   "slug": "vienna",
-   "status": "published",
-   "trees": 58
-  },
-  {
    "city": "Vilnius",
    "country": "Lithuania",
    "slug": "vilnius",
    "status": "published",
    "demand_views_90d": null,
    "trees": 12
-  },
-  {
-   "city": "Wroclaw",
-   "country": "Poland",
-   "slug": "wroclaw",
-   "status": "published",
-   "demand_views_90d": 123894,
-   "trees": 5
   },
   {
    "city": "Montreal",
@@ -600,20 +584,20 @@
    "trees": 0
   },
   {
-   "city": "Oxford",
-   "country": "United Kingdom",
-   "slug": "oxford",
-   "status": "published",
-   "demand_views_90d": 111583,
-   "trees": 5
-  },
-  {
    "city": "Tel Aviv",
    "country": "Israel",
    "slug": "tel-aviv",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Oxford",
+   "country": "United Kingdom",
+   "slug": "oxford",
+   "status": "published",
+   "demand_views_90d": 111583,
+   "trees": 5
   },
   {
    "city": "Brussels",
@@ -644,6 +628,14 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Malaga",
+   "country": "Spain",
+   "slug": "malaga",
+   "status": "published",
+   "demand_views_90d": 117780,
+   "trees": 9
   },
   {
    "city": "Naples",
@@ -715,13 +707,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Leipzig",
-   "country": "Germany",
-   "slug": "leipzig",
-   "status": "published",
-   "trees": 29
   },
   {
    "city": "Krakow",
@@ -819,6 +804,14 @@
    "slug": "copenhagen",
    "status": "published",
    "trees": 49
+  },
+  {
+   "city": "Maastricht",
+   "country": "Netherlands",
+   "slug": "maastricht",
+   "status": "published",
+   "demand_views_90d": 47763,
+   "trees": 16
   },
   {
    "city": "Mexico City",
@@ -987,6 +980,14 @@
    "trees": 7
   },
   {
+   "city": "Wroclaw",
+   "country": "Poland",
+   "slug": "wroclaw",
+   "status": "published",
+   "demand_views_90d": 123894,
+   "trees": 5
+  },
+  {
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
@@ -1017,6 +1018,14 @@
    "demand_views_90d": null,
    "trees": 5,
    "note": "Opened 2026-09-01, 5 trees: two Moreton Bay figs (Devonport, Hillsborough), a champion Algerian oak (Cornwall Park), and a pair of coronation oaks at Takapuna Primary School (view-only, flagged, school grounds not confirmed open)."
+  },
+  {
+   "city": "Cagliari",
+   "country": "Italy",
+   "slug": "cagliari",
+   "status": "published",
+   "demand_views_90d": 51351,
+   "trees": 14
   },
   {
    "city": "York",
@@ -1128,15 +1137,6 @@
    "status": "published",
    "demand_views_90d": 36579,
    "trees": 11
-  },
-  {
-   "city": "Genoa",
-   "country": "Italy",
-   "slug": "genoa",
-   "status": "published",
-   "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
-   "demand_views_90d": 145206,
-   "trees": 13
   },
   {
    "city": "Leiden",

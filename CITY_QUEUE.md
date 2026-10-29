@@ -203,50 +203,50 @@ so qa.py fails the deploy when the table and the json disagree.
 
 | # | city | score | demand | trees | photos | walks | register | target | basis |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | Munich | 50.19 | 224,067 | 63 | 32 | 8 | 74 | 60 | measured |
-| 2 | Tenerife | 34.75 | - | 4 | 4 | - | - | 30 | measured |
-| 3 | Lisbon | 19.31 | 201,877 | 37 | 21 | 3 | 67 | 30 | measured |
+| 1 | Munich | 42.19 | 224,067 | 63 | 32 | 8 | 74 | 60 | measured |
+| 2 | Lisbon | 30.68 | 201,877 | 37 | 21 | 3 | 67 | 30 | measured |
+| 3 | Tenerife | 34.51 | - | 4 | 4 | - | - | 30 | measured |
 | 4 | Birmingham | 37.53 | - | - | - | - | - | 60 | predicted (travel demand) |
-| 5 | Brisbane | 23.17 | 162,602 | 20 | 5 | 2 | 186 | 60 | measured |
-| 6 | Paris | 23.17 | 524,268 | 32 | 12 | 4 | 129 | 60 | measured |
-| 7 | New York | 30.89 | 1,124,326 | 28 | 10 | 2 | - | 100 | measured |
-| 8 | Palma de Mallorca | 19.31 | 84,075 | 6 | 2 | 1 | 8 | 30 | measured |
-| 9 | Monterey | 30.89 | - | 3 | 2 | - | - | 10 | measured |
-| 10 | Yakushima | 15.44 | - | 2 | 1 | - | 1 | 10 | measured |
-| 11 | Charleston | 23.17 | 155,987 | 3 | 1 | - | - | 20 | measured |
-| 12 | Hilo | 23.17 | - | 6 | - | 1 | - | 10 | measured |
-| 13 | Amsterdam | 11.58 | 294,030 | 27 | 7 | 2 | 5488 | 30 | measured |
-| 14 | Canberra | 15.44 | - | 1 | 1 | - | 132 | 30 | measured |
-| 15 | Geneva | 15.44 | 162,269 | 21 | 6 | 4 | 131 | 20 | measured |
-| 16 | Jacksonville | 22.76 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 17 | Asheville | 20.89 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 5 | Brisbane | 23.01 | 162,602 | 20 | 5 | 2 | 186 | 60 | measured |
+| 6 | Palma de Mallorca | 19.18 | 84,075 | 6 | 2 | 1 | 8 | 30 | measured |
+| 7 | Yakushima | 19.18 | - | 2 | 1 | - | 1 | 10 | measured |
+| 8 | New York | 23.01 | 1,124,326 | 28 | 10 | 2 | - | 100 | measured |
+| 9 | Canberra | 15.34 | - | 1 | 1 | - | 132 | 30 | measured |
+| 10 | Geneva | 15.34 | 162,269 | 21 | 6 | 4 | 131 | 20 | measured |
+| 11 | Hilo | 23.01 | - | 6 | - | 1 | - | 10 | measured |
+| 12 | Monterey | 23.01 | - | 3 | 2 | - | - | 10 | measured |
+| 13 | Paris | 15.34 | 524,268 | 32 | 12 | 4 | 129 | 60 | measured |
+| 14 | Singapore | 15.34 | 967,821 | 34 | 7 | 3 | 165 | 100 | measured |
+| 15 | Jacksonville | 22.76 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 16 | Asheville | 20.89 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 17 | Tokyo | 11.50 | 394,702 | 22 | 16 | 1 | 5 | 100 | measured |
 | 18 | Long Beach | 20.48 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 19 | Little Rock | 20.40 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 20 | Oakland | 18.81 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 21 | Lexington | 18.25 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 22 | Reno | 18.19 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 23 | Des Moines | 18.11 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 24 | Daytona Beach | 17.66 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 25 | Singapore | 11.58 | 967,821 | 34 | 7 | 3 | 165 | 100 | measured |
+| 20 | Cambridge | 19.18 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
+| 21 | Oakland | 18.81 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 22 | Lexington | 18.25 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 23 | Reno | 18.19 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 24 | Des Moines | 18.11 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 25 | Daytona Beach | 17.66 | - | - | - | - | - | 20 | predicted (travel demand) |
 | 26 | Chattanooga | 16.68 | - | - | - | - | - | 20 | predicted (travel demand) |
 | 27 | Santa Cruz | 16.06 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 28 | Alicante | 7.72 | 77,454 | 21 | 4 | 2 | 44 | 30 | measured |
-| 29 | Cambridge | 15.44 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
-| 30 | Milan | 7.72 | 212,705 | 30 | 14 | 3 | 25 | 60 | measured |
-| 31 | Huntsville | 15.35 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 32 | Saratoga Springs | 15.05 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 33 | West Palm Beach | 14.98 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 34 | Saint Petersburg | 14.83 | - | - | - | - | - | 100 | predicted (travel demand) |
-| 35 | St. Louis | 14.80 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 36 | Tampa | 14.10 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 37 | Tokyo | 7.72 | 394,702 | 22 | 16 | 1 | 5 | 100 | measured |
+| 28 | Charleston | 15.34 | 155,987 | 3 | 1 | - | - | 20 | measured |
+| 29 | Huntsville | 15.35 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 30 | Alicante | 7.67 | 77,454 | 21 | 4 | 2 | 44 | 30 | measured |
+| 31 | Amsterdam | 7.67 | 294,030 | 27 | 7 | 2 | 5488 | 30 | measured |
+| 32 | Milan | 7.67 | 212,705 | 30 | 14 | 3 | 25 | 60 | measured |
+| 33 | Saratoga Springs | 15.05 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 34 | West Palm Beach | 14.98 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 35 | Saint Petersburg | 14.83 | - | - | - | - | - | 100 | predicted (travel demand) |
+| 36 | St. Louis | 14.80 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 37 | Tampa | 14.10 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 38 | Cincinnati | 13.33 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 39 | Catania | 7.72 | 58,252 | 4 | 3 | 1 | 5 | 30 | measured |
+| 39 | Catania | 7.67 | 58,252 | 4 | 3 | 1 | 5 | 30 | measured |
 | 40 | Lansing | 13.02 | - | - | - | - | - | 20 | predicted (travel demand) |
 | 41 | Detroit | 12.53 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 42 | Zaragoza | 7.72 | 87,580 | 7 | - | 1 | - | 30 | measured |
-| 43 | Denver | 11.66 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 44 | San Francisco | 7.72 | 361,111 | 11 | 3 | 1 | 26 | 30 | measured |
+| 42 | Denver | 11.66 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 43 | Zaragoza | 7.67 | 87,580 | 7 | - | 1 | - | 30 | measured |
+| 44 | San Francisco | 7.67 | 361,111 | 11 | 3 | 1 | 26 | 30 | measured |
 | 45 | Venice | 6.28 | 267,527 | 11 | 6 | 2 | 4 | 30 | published, never ranked (may be uncrawled) |
 | 46 | Chiang Mai | 11.42 | 66,541 | - | - | - | - | 60 | predicted (travel demand) |
 | 47 | Dublin | 6.56 | 240,850 | 17 | 4 | 2 | 12 | 30 | published, never ranked (may be uncrawled) |
@@ -254,8 +254,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 49 | Sacramento | 11.32 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 50 | Jerusalem | 11.17 | 314,788 | - | - | - | - | 60 | predicted (travel demand) |
 | 51 | Dubai | 11.02 | 334,167 | - | - | - | - | 60 | predicted (travel demand) |
-| 52 | Spokane | 7.72 | - | 14 | - | 2 | 18 | 20 | measured |
-| 53 | Milwaukee | 10.63 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 52 | Milwaukee | 10.63 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 53 | Spokane | 7.67 | - | 14 | - | 2 | 18 | 20 | measured |
 | 54 | Jersey City | 10.08 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 55 | Atlanta | 10.29 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 56 | Anchorage | 10.25 | - | - | - | - | - | 30 | predicted (travel demand) |
@@ -265,118 +265,118 @@ so qa.py fails the deploy when the table and the json disagree.
 | 60 | El Paso | 9.70 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 61 | Las Vegas | 9.64 | - | 11 | 3 | 2 | - | 30 | published, never ranked (may be uncrawled) |
 | 62 | Santorini | 9.63 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 63 | Stockholm | 7.72 | 188,184 | 8 | 7 | - | - | 30 | measured |
+| 63 | Stockholm | 7.67 | 188,184 | 8 | 7 | - | - | 30 | measured |
 | 64 | Edmonton | 9.38 | - | - | - | - | - | 60 | predicted (travel demand) |
 | 65 | Winnipeg | 9.21 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 66 | Chicago | 7.72 | 485,769 | 38 | 2 | 3 | 9 | 60 | measured |
+| 66 | Chicago | 7.67 | 485,769 | 38 | 2 | 3 | 9 | 60 | measured |
 | 67 | Nashville | 8.93 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 68 | Tampere | 8.78 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 69 | Ann Arbor | 8.55 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 70 | Washington DC | 7.72 | 606,731 | 21 | 8 | 4 | - | 30 | measured |
+| 70 | Washington DC | 7.67 | 606,731 | 21 | 8 | 4 | - | 30 | measured |
 | 71 | Adelaide | 8.14 | 139,166 | - | - | - | - | 60 | predicted (travel demand) |
 | 72 | London | 6.74 | 718,291 | 32 | 25 | 1 | - | 100 | published, never ranked (may be uncrawled) |
-| 73 | Athens | 7.72 | 235,429 | 12 | 7 | 2 | - | 30 | measured |
-| 74 | Pittsburgh | 7.72 | - | 12 | - | 1 | - | 30 | measured |
-| 75 | Vancouver | 7.72 | 351,552 | 7 | - | - | - | 30 | measured |
-| 76 | Albuquerque | 7.83 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 77 | Antwerp | 7.72 | 128,289 | 10 | 4 | 1 | - | 30 | measured |
-| 78 | Arnhem | 3.86 | 31,478 | 32 | 3 | 3 | 202 | 20 | measured |
-| 79 | Dordrecht | 3.86 | - | 17 | 1 | 2 | 105 | 20 | measured |
-| 80 | Enschede | 3.86 | - | 13 | 1 | 1 | 82 | 20 | measured |
-| 81 | Houston | 7.72 | - | 11 | - | 1 | - | 60 | measured |
-| 82 | Leeuwarden | 3.86 | - | 34 | - | 2 | 61 | 20 | measured |
-| 83 | Maastricht | 3.86 | 47,763 | 16 | - | 2 | 135 | 20 | measured |
-| 84 | Maui | 7.72 | - | 4 | 1 | - | - | 20 | measured |
-| 85 | Minneapolis | 7.72 | - | 4 | - | - | - | 30 | measured |
-| 86 | Oahu | 7.72 | - | 21 | 8 | 3 | - | 30 | measured |
-| 87 | Rome | 3.86 | 358,876 | 31 | 10 | 2 | 32 | 60 | measured |
-| 88 | San Diego | 7.72 | 214,939 | 6 | 1 | 1 | - | 60 | measured |
-| 89 | Sorrento | 3.86 | 40,049 | 7 | - | 1 | 20 | 10 | measured |
-| 90 | The Hague | 3.86 | 236,723 | 26 | 4 | 5 | 166 | 30 | measured |
-| 91 | Trento | 3.86 | 56,455 | 10 | 2 | 1 | 20 | 20 | measured |
-| 92 | Valencia | 3.86 | 162,209 | 31 | 4 | 2 | 350 | 30 | measured |
-| 93 | Venlo | 3.86 | - | 7 | - | 1 | 144 | 20 | measured |
-| 94 | Luang Prabang | 7.49 | 24,534 | - | - | - | - | 20 | predicted (travel demand) |
-| 95 | Los Angeles | 7.20 | 665,559 | 11 | 3 | - | - | 60 | published, never ranked (may be uncrawled) |
-| 96 | Bergen | 7.30 | 82,940 | - | - | - | - | 30 | predicted (travel demand) |
-| 97 | Cagliari | 3.86 | 51,351 | 14 | 1 | 2 | 14 | 20 | measured |
-| 98 | Coimbra | 3.86 | 34,962 | 5 | - | - | 5 | 20 | measured |
-| 99 | Sardinia | 3.86 | - | 7 | 6 | - | 10 | 60 | measured |
-| 100 | Braga | 3.86 | 34,522 | 4 | 2 | - | 8 | 20 | measured |
-| 101 | Gyeongju | 6.94 | 30,260 | - | - | - | - | 20 | predicted (travel demand) |
-| 102 | Siena | 4.62 | 57,436 | - | - | - | - | 20 | predicted (travel demand) |
-| 103 | Santiago de Compostela | 4.52 | 93,477 | - | - | - | - | 20 | predicted (travel demand) |
-| 104 | Frankfurt | 4.51 | 150,379 | 23 | 11 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 105 | Girona | 3.86 | 51,072 | 7 | 3 | - | - | 20 | measured |
-| 106 | Zagreb | 6.42 | 122,890 | - | - | - | - | 30 | predicted (travel demand) |
-| 107 | Seattle | 6.22 | 398,724 | 30 | 3 | 4 | - | 30 | published, never ranked (may be uncrawled) |
-| 108 | Bogota | 6.39 | 1,623 | - | - | - | - | 100 | predicted (travel demand) |
-| 109 | Shanghai | 6.38 | 277,140 | - | - | - | - | 100 | predicted (travel demand) |
-| 110 | Madrid | 3.86 | 274,553 | 17 | 11 | 2 | - | 60 | measured |
-| 111 | Funchal | 3.77 | 174,351 | - | - | - | - | 20 | predicted (travel demand) |
-| 112 | Hawaii | 6.19 | - | 6 | - | 1 | - | 60 | published, never ranked (may be uncrawled) |
-| 113 | Segovia | 3.86 | 30,968 | 6 | - | 1 | 5 | 20 | measured |
-| 114 | Dallas | 6.15 | - | 12 | 2 | 1 | - | 60 | published, never ranked (may be uncrawled) |
-| 115 | Ibiza | 3.86 | - | 1 | - | - | 4 | 20 | measured |
-| 116 | Toronto | 5.96 | 411,011 | 6 | - | - | - | 60 | published, never ranked (may be uncrawled) |
-| 117 | Osaka | 3.86 | 163,112 | 6 | 1 | - | - | 60 | measured |
-| 118 | Fukuoka | 3.86 | 77,485 | 18 | 11 | 1 | - | 60 | measured |
-| 119 | Nagoya | 3.86 | 83,437 | 6 | 2 | - | 1 | 60 | measured |
-| 120 | Seville | 3.86 | 170,545 | 44 | 12 | 2 | - | 30 | measured |
-| 121 | Berlin | 3.86 | 412,181 | 63 | 51 | 5 | 195 | 60 | measured |
-| 122 | Hiroshima | 3.86 | 129,791 | 33 | 5 | 2 | - | 60 | measured |
-| 123 | Malaga | 3.86 | 117,780 | 9 | 5 | 1 | - | 30 | measured |
-| 124 | Malta | 5.79 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 125 | Prague | 3.86 | 303,350 | 30 | 21 | 4 | 31 | 60 | measured |
-| 126 | Strasbourg | 3.86 | 154,700 | 10 | 2 | 2 | 66 | 30 | measured |
-| 127 | Tallinn | 3.86 | 124,888 | 9 | 3 | 2 | 42 | 30 | measured |
-| 128 | Vienna | 3.86 | 283,090 | 58 | 25 | 6 | 371 | 60 | measured |
-| 129 | Vilnius | 3.86 | 113,188 | 12 | 4 | 1 | 34 | 30 | measured |
-| 130 | Wroclaw | 3.86 | 123,894 | 5 | 2 | 1 | 121 | 30 | measured |
-| 131 | Alice Springs | 5.71 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 132 | Montreal | 5.70 | 315,322 | 13 | 1 | 2 | - | 60 | published, never ranked (may be uncrawled) |
-| 133 | Avignon | 5.54 | 64,047 | - | - | - | - | 20 | predicted (travel demand) |
-| 134 | Galway | 3.65 | 88,162 | - | - | - | - | 20 | predicted (travel demand) |
-| 135 | Phuket | 5.46 | 5,487 | - | - | - | - | 30 | predicted (travel demand) |
-| 136 | Rovaniemi | 5.38 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 137 | Aarhus | 5.23 | 52,722 | 7 | 1 | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 138 | Lagos | 3.43 | 34,452 | - | - | - | - | 100 | predicted (travel demand) |
-| 139 | Kansas City | 5.26 | - | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 140 | Barcelona | 2.59 | 346,477 | 56 | 14 | 7 | 180 | 60 | published, never ranked (may be uncrawled) |
-| 141 | Santa Fe | 5.17 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 142 | Lund | 5.14 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 143 | Kobe | 3.40 | 54,798 | - | - | - | - | 60 | predicted (travel demand) |
-| 144 | Boise | 5.07 | - | 4 | - | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 145 | Fort Lauderdale | 4.61 | - | 4 | - | - | 4 | 20 | published, never ranked (may be uncrawled) |
-| 146 | Sydney | 4.92 | 305,304 | 7 | 1 | - | - | 100 | published, never ranked (may be uncrawled) |
-| 147 | Heraklion | 4.96 | 66,359 | - | - | - | - | 20 | predicted (travel demand) |
-| 148 | Marseille | 4.96 | 182,033 | - | - | - | - | 30 | predicted (travel demand) |
-| 149 | Indianapolis | 4.57 | - | 1 | 1 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 150 | Basel | 4.59 | 105,838 | - | - | - | - | 20 | predicted (travel demand) |
-| 151 | Portland | 3.06 | 217,222 | 33 | 2 | 3 | 306 | 30 | published, never ranked (may be uncrawled) |
-| 152 | Key West | 3.95 | - | 2 | 1 | - | 7 | 10 | published, never ranked (may be uncrawled) |
-| 153 | Boston | 4.28 | 385,902 | 13 | 3 | 2 | - | 30 | published, never ranked (may be uncrawled) |
-| 154 | Florence | 2.21 | 184,099 | 27 | 9 | 1 | 27 | 30 | published, never ranked (may be uncrawled) |
-| 155 | Tasmania | 4.41 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 156 | Glasgow | 4.29 | 253,705 | 6 | 4 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 157 | Ravenna | 2.77 | 86,471 | - | - | - | 1 | 20 | predicted (travel demand) |
-| 158 | Sofia | 2.81 | 138,710 | 4 | - | - | - | 60 | published, never ranked (may be uncrawled) |
-| 159 | San Sebastian | 2.80 | 367 | - | - | - | - | 20 | predicted (travel demand) |
-| 160 | Perth | 4.10 | 180,478 | 6 | 4 | 1 | - | 60 | published, never ranked (may be uncrawled) |
-| 161 | Oxford | 3.86 | 111,583 | 5 | 1 | 1 | - | 20 | measured |
-| 162 | Tel Aviv | 4.09 | 177,885 | - | - | - | - | 30 | predicted (travel demand) |
-| 163 | Interlaken | 4.06 | 24,936 | - | - | - | - | 10 | predicted (travel demand) |
-| 164 | Brussels | 2.70 | 176,863 | 35 | 4 | 2 | 436 | 60 | published, never ranked (may be uncrawled) |
-| 165 | Ghent | 3.86 | 82,757 | 8 | 2 | 1 | - | 30 | measured |
-| 166 | Eindhoven | 1.99 | - | 17 | - | 3 | 195 | 20 | published, never ranked (may be uncrawled) |
-| 167 | Edinburgh | 3.86 | 292,981 | 16 | 6 | 1 | - | 30 | measured |
-| 168 | Azores | 2.62 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 169 | Salt Lake City | 2.58 | - | 6 | - | 1 | 39 | 20 | published, never ranked (may be uncrawled) |
-| 170 | Leuven | 3.86 | 40,645 | 4 | - | - | - | 20 | measured |
-| 171 | Nantes | 3.86 | 67,689 | 1 | 1 | - | - | 30 | measured |
-| 172 | Taormina | 2.35 | 33,169 | - | - | - | 5 | 10 | predicted (travel demand) |
-| 173 | Niagara Falls | 3.68 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 174 | Kuala Lumpur | 3.80 | 191,800 | - | - | - | - | 100 | predicted (travel demand) |
+| 73 | Albuquerque | 7.83 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 74 | Athens | 7.67 | 235,429 | 12 | 7 | 2 | - | 30 | measured |
+| 75 | Vancouver | 7.67 | 351,552 | 7 | - | - | - | 30 | measured |
+| 76 | Antwerp | 7.67 | 128,289 | 10 | 4 | 1 | - | 30 | measured |
+| 77 | Houston | 7.67 | - | 11 | - | 1 | - | 60 | measured |
+| 78 | Maui | 7.67 | - | 4 | 1 | - | - | 20 | measured |
+| 79 | Minneapolis | 7.67 | - | 4 | - | - | - | 30 | measured |
+| 80 | Oahu | 7.67 | - | 21 | 8 | 3 | - | 30 | measured |
+| 81 | San Diego | 7.67 | 214,939 | 6 | 1 | 1 | - | 60 | measured |
+| 82 | Arnhem | 3.83 | 31,478 | 32 | 3 | 3 | 202 | 20 | measured |
+| 83 | Dordrecht | 3.83 | - | 17 | 1 | 2 | 105 | 20 | measured |
+| 84 | Enschede | 3.83 | - | 13 | 1 | 1 | 82 | 20 | measured |
+| 85 | Leeuwarden | 3.83 | - | 34 | - | 2 | 61 | 20 | measured |
+| 86 | Rome | 3.83 | 358,876 | 31 | 10 | 2 | 32 | 60 | measured |
+| 87 | Sorrento | 3.83 | 40,049 | 7 | - | 1 | 20 | 10 | measured |
+| 88 | The Hague | 3.83 | 236,723 | 26 | 4 | 5 | 166 | 30 | measured |
+| 89 | Trento | 3.83 | 56,455 | 10 | 2 | 1 | 20 | 20 | measured |
+| 90 | Valencia | 3.83 | 162,209 | 31 | 4 | 2 | 350 | 30 | measured |
+| 91 | Venlo | 3.83 | - | 7 | - | 1 | 144 | 20 | measured |
+| 92 | Luang Prabang | 7.49 | 24,534 | - | - | - | - | 20 | predicted (travel demand) |
+| 93 | Los Angeles | 7.20 | 665,559 | 11 | 3 | - | - | 60 | published, never ranked (may be uncrawled) |
+| 94 | Bergen | 7.30 | 82,940 | - | - | - | - | 30 | predicted (travel demand) |
+| 95 | Coimbra | 3.83 | 34,962 | 5 | - | - | 5 | 20 | measured |
+| 96 | Sardinia | 3.83 | - | 7 | 6 | - | 10 | 60 | measured |
+| 97 | Genoa | 3.83 | 145,206 | 13 | 2 | 1 | 10 | 30 | measured |
+| 98 | Gyeongju | 6.94 | 30,260 | - | - | - | - | 20 | predicted (travel demand) |
+| 99 | Siena | 4.62 | 57,436 | - | - | - | - | 20 | predicted (travel demand) |
+| 100 | Braga | 3.84 | 34,522 | 4 | 2 | - | 8 | 20 | measured |
+| 101 | Santiago de Compostela | 4.52 | 93,477 | - | - | - | - | 20 | predicted (travel demand) |
+| 102 | Frankfurt | 4.51 | 150,379 | 23 | 11 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 103 | Zagreb | 6.42 | 122,890 | - | - | - | - | 30 | predicted (travel demand) |
+| 104 | Girona | 3.83 | 51,072 | 7 | 3 | - | - | 20 | measured |
+| 105 | Seattle | 6.22 | 398,724 | 30 | 3 | 4 | - | 30 | published, never ranked (may be uncrawled) |
+| 106 | Bogota | 6.39 | 1,623 | - | - | - | - | 100 | predicted (travel demand) |
+| 107 | Shanghai | 6.38 | 277,140 | - | - | - | - | 100 | predicted (travel demand) |
+| 108 | Madrid | 3.83 | 274,553 | 17 | 11 | 2 | - | 60 | measured |
+| 109 | Funchal | 3.77 | 174,351 | - | - | - | - | 20 | predicted (travel demand) |
+| 110 | Hawaii | 6.19 | - | 6 | - | 1 | - | 60 | published, never ranked (may be uncrawled) |
+| 111 | Dallas | 6.15 | - | 12 | 2 | 1 | - | 60 | published, never ranked (may be uncrawled) |
+| 112 | Segovia | 3.83 | 30,968 | 6 | - | 1 | 5 | 20 | measured |
+| 113 | Toronto | 5.96 | 411,011 | 6 | - | - | - | 60 | published, never ranked (may be uncrawled) |
+| 114 | Ibiza | 3.83 | - | 1 | - | - | 4 | 20 | measured |
+| 115 | Osaka | 3.83 | 163,112 | 6 | 1 | - | - | 60 | measured |
+| 116 | Fukuoka | 3.83 | 77,485 | 18 | 11 | 1 | - | 60 | measured |
+| 117 | Nagoya | 3.83 | 83,437 | 6 | 2 | - | 1 | 60 | measured |
+| 118 | Seville | 3.83 | 170,545 | 44 | 12 | 2 | - | 30 | measured |
+| 119 | Malta | 5.79 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 120 | Vienna | 3.84 | 283,090 | 58 | 25 | 6 | 371 | 60 | measured |
+| 121 | Berlin | 3.83 | 412,181 | 63 | 51 | 5 | 195 | 60 | measured |
+| 122 | Hiroshima | 3.83 | 129,791 | 33 | 5 | 2 | - | 60 | measured |
+| 123 | Leipzig | 3.83 | 121,319 | 29 | 24 | 4 | - | 30 | measured |
+| 124 | Luxembourg City | 3.83 | 64,851 | 10 | 8 | 2 | 18 | 20 | measured |
+| 125 | Prague | 3.83 | 303,350 | 30 | 21 | 4 | 31 | 60 | measured |
+| 126 | Strasbourg | 3.83 | 154,700 | 10 | 2 | 2 | 66 | 30 | measured |
+| 127 | Tallinn | 3.83 | 124,888 | 9 | 3 | 2 | 42 | 30 | measured |
+| 128 | Vilnius | 3.83 | 113,188 | 12 | 4 | 1 | 34 | 30 | measured |
+| 129 | Alice Springs | 5.71 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 130 | Montreal | 5.70 | 315,322 | 13 | 1 | 2 | - | 60 | published, never ranked (may be uncrawled) |
+| 131 | Avignon | 5.54 | 64,047 | - | - | - | - | 20 | predicted (travel demand) |
+| 132 | Galway | 3.65 | 88,162 | - | - | - | - | 20 | predicted (travel demand) |
+| 133 | Phuket | 5.46 | 5,487 | - | - | - | - | 30 | predicted (travel demand) |
+| 134 | Rovaniemi | 5.38 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 135 | Aarhus | 5.23 | 52,722 | 7 | 1 | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 136 | Lagos | 3.43 | 34,452 | - | - | - | - | 100 | predicted (travel demand) |
+| 137 | Kansas City | 5.26 | - | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 138 | Barcelona | 2.59 | 346,477 | 56 | 14 | 7 | 180 | 60 | published, never ranked (may be uncrawled) |
+| 139 | Santa Fe | 5.17 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 140 | Lund | 5.14 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 141 | Kobe | 3.40 | 54,798 | - | - | - | - | 60 | predicted (travel demand) |
+| 142 | Boise | 5.07 | - | 4 | - | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 143 | Fort Lauderdale | 4.61 | - | 4 | - | - | 4 | 20 | published, never ranked (may be uncrawled) |
+| 144 | Sydney | 4.92 | 305,304 | 7 | 1 | - | - | 100 | published, never ranked (may be uncrawled) |
+| 145 | Heraklion | 4.96 | 66,359 | - | - | - | - | 20 | predicted (travel demand) |
+| 146 | Marseille | 4.96 | 182,033 | - | - | - | - | 30 | predicted (travel demand) |
+| 147 | Indianapolis | 4.57 | - | 1 | 1 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 148 | Basel | 4.59 | 105,838 | - | - | - | - | 20 | predicted (travel demand) |
+| 149 | Portland | 3.06 | 217,222 | 33 | 2 | 3 | 306 | 30 | published, never ranked (may be uncrawled) |
+| 150 | Key West | 3.95 | - | 2 | 1 | - | 7 | 10 | published, never ranked (may be uncrawled) |
+| 151 | Boston | 4.28 | 385,902 | 13 | 3 | 2 | - | 30 | published, never ranked (may be uncrawled) |
+| 152 | Florence | 2.21 | 184,099 | 27 | 9 | 1 | 27 | 30 | published, never ranked (may be uncrawled) |
+| 153 | Tasmania | 4.41 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 154 | Glasgow | 4.29 | 253,705 | 6 | 4 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 155 | Ravenna | 2.77 | 86,471 | - | - | - | 1 | 20 | predicted (travel demand) |
+| 156 | Sofia | 2.81 | 138,710 | 4 | - | - | - | 60 | published, never ranked (may be uncrawled) |
+| 157 | San Sebastian | 2.80 | 367 | - | - | - | - | 20 | predicted (travel demand) |
+| 158 | Perth | 4.10 | 180,478 | 6 | 4 | 1 | - | 60 | published, never ranked (may be uncrawled) |
+| 159 | Tel Aviv | 4.09 | 177,885 | - | - | - | - | 30 | predicted (travel demand) |
+| 160 | Interlaken | 4.06 | 24,936 | - | - | - | - | 10 | predicted (travel demand) |
+| 161 | Oxford | 3.83 | 111,583 | 5 | 1 | 1 | - | 20 | measured |
+| 162 | Brussels | 2.70 | 176,863 | 35 | 4 | 2 | 436 | 60 | published, never ranked (may be uncrawled) |
+| 163 | Eindhoven | 1.99 | - | 17 | - | 3 | 195 | 20 | published, never ranked (may be uncrawled) |
+| 164 | Ghent | 3.83 | 82,757 | 8 | 2 | 1 | - | 30 | measured |
+| 165 | Azores | 2.62 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 166 | Edinburgh | 3.83 | 292,981 | 16 | 6 | 1 | - | 30 | measured |
+| 167 | Pittsburgh | 3.80 | - | 12 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 168 | Salt Lake City | 2.58 | - | 6 | - | 1 | 39 | 20 | published, never ranked (may be uncrawled) |
+| 169 | Taormina | 2.35 | 33,169 | - | - | - | 5 | 10 | predicted (travel demand) |
+| 170 | Leuven | 3.83 | 40,645 | 4 | - | - | - | 20 | measured |
+| 171 | Nantes | 3.83 | 67,689 | 1 | 1 | - | - | 30 | measured |
+| 172 | Niagara Falls | 3.68 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 173 | Kuala Lumpur | 3.80 | 191,800 | - | - | - | - | 100 | predicted (travel demand) |
+| 174 | Malaga | 2.51 | 117,780 | 9 | 5 | 1 | - | 30 | published, never ranked (may be uncrawled) |
 | 175 | Bratislava | 2.49 | 132,162 | 7 | 1 | 1 | 26 | 30 | published, never ranked (may be uncrawled) |
 | 176 | Kauai | 3.67 | - | 6 | 1 | - | - | 20 | published, never ranked (may be uncrawled) |
 | 177 | Wellington | 3.60 | 132,267 | - | - | - | - | 20 | predicted (travel demand) |
@@ -395,33 +395,33 @@ so qa.py fails the deploy when the table and the json disagree.
 | 190 | Chania | 3.30 | 47,379 | - | - | - | - | 20 | predicted (travel demand) |
 | 191 | Fort Worth | 3.28 | - | 19 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
 | 192 | Santiago | 3.25 | 111,647 | - | - | - | - | 100 | predicted (travel demand) |
-| 193 | Leipzig | 2.15 | 121,319 | 29 | 24 | 4 | - | 30 | published, never ranked (may be uncrawled) |
-| 194 | Tulsa | 3.01 | - | 1 | - | - | 3 | 30 | published, never ranked (may be uncrawled) |
-| 195 | Sarajevo | 3.15 | 205,074 | - | - | - | - | 30 | predicted (travel demand) |
-| 196 | Krakow | 2.09 | 140,824 | 38 | 11 | 3 | 198 | 30 | published, never ranked (may be uncrawled) |
-| 197 | Lucerne | 3.10 | 66,356 | - | - | - | - | 20 | predicted (travel demand) |
-| 198 | Miami | 2.37 | 278,558 | 7 | - | - | 15 | 30 | published, never ranked (may be uncrawled) |
-| 199 | Malmo | 3.07 | 103,940 | - | - | - | - | 30 | predicted (travel demand) |
-| 200 | Lille | 3.06 | 73,435 | - | - | - | - | 20 | predicted (travel demand) |
-| 201 | Cologne | 3.04 | 191,812 | 5 | - | 1 | - | 60 | published, never ranked (may be uncrawled) |
-| 202 | Ljubljana | 2.98 | 125,046 | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 203 | Corsica | 3.00 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 204 | Mechelen | 2.93 | 20,707 | - | - | - | - | 20 | predicted (travel demand) |
-| 205 | Turin | 1.49 | 147,456 | 11 | 10 | 2 | 30 | 30 | published, never ranked (may be uncrawled) |
-| 206 | Nuremberg | 1.94 | 161,614 | 20 | 8 | 2 | 37 | 30 | published, never ranked (may be uncrawled) |
-| 207 | Bilbao | 1.93 | 133,133 | 4 | 1 | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 208 | Ottawa | 1.91 | - | 21 | - | 3 | 122 | 60 | published, never ranked (may be uncrawled) |
-| 209 | Trieste | 1.43 | 117,233 | 36 | 1 | 3 | 43 | 20 | published, never ranked (may be uncrawled) |
-| 210 | Groningen | 1.42 | 31,401 | 17 | - | 2 | 76 | 20 | published, never ranked (may be uncrawled) |
-| 211 | Helsinki | 2.25 | 148,908 | 12 | 3 | 1 | 13 | 30 | published, never ranked (may be uncrawled) |
-| 212 | Poznan | 1.89 | 65,666 | 10 | - | 1 | 397 | 30 | published, never ranked (may be uncrawled) |
-| 213 | Philadelphia | 2.67 | 405,294 | 4 | 1 | - | - | 60 | published, never ranked (may be uncrawled) |
-| 214 | Inverness | 2.76 | 92,195 | - | - | - | - | 10 | predicted (travel demand) |
-| 215 | Gdansk | 1.82 | 4,908 | 12 | 5 | 1 | 307 | 30 | published, never ranked (may be uncrawled) |
-| 216 | Bled | 2.72 | 13,126 | - | - | - | - | 10 | predicted (travel demand) |
-| 217 | Copenhagen | 2.62 | 218,621 | 49 | 41 | 6 | - | 30 | published, never ranked (may be uncrawled) |
-| 218 | Hamburg | 2.57 | 191,221 | 6 | 4 | 1 | - | 60 | published, never ranked (may be uncrawled) |
-| 219 | Corfu | 2.71 | 139,334 | - | - | - | - | 20 | predicted (travel demand) |
+| 193 | Tulsa | 3.01 | - | 1 | - | - | 3 | 30 | published, never ranked (may be uncrawled) |
+| 194 | Sarajevo | 3.15 | 205,074 | - | - | - | - | 30 | predicted (travel demand) |
+| 195 | Krakow | 2.09 | 140,824 | 38 | 11 | 3 | 198 | 30 | published, never ranked (may be uncrawled) |
+| 196 | Lucerne | 3.10 | 66,356 | - | - | - | - | 20 | predicted (travel demand) |
+| 197 | Miami | 2.37 | 278,558 | 7 | - | - | 15 | 30 | published, never ranked (may be uncrawled) |
+| 198 | Malmo | 3.07 | 103,940 | - | - | - | - | 30 | predicted (travel demand) |
+| 199 | Lille | 3.06 | 73,435 | - | - | - | - | 20 | predicted (travel demand) |
+| 200 | Cologne | 3.04 | 191,812 | 5 | - | 1 | - | 60 | published, never ranked (may be uncrawled) |
+| 201 | Ljubljana | 2.98 | 125,046 | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 202 | Corsica | 3.00 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 203 | Mechelen | 2.93 | 20,707 | - | - | - | - | 20 | predicted (travel demand) |
+| 204 | Turin | 1.49 | 147,456 | 11 | 10 | 2 | 30 | 30 | published, never ranked (may be uncrawled) |
+| 205 | Nuremberg | 1.94 | 161,614 | 20 | 8 | 2 | 37 | 30 | published, never ranked (may be uncrawled) |
+| 206 | Bilbao | 1.93 | 133,133 | 4 | 1 | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 207 | Ottawa | 1.91 | - | 21 | - | 3 | 122 | 60 | published, never ranked (may be uncrawled) |
+| 208 | Trieste | 1.43 | 117,233 | 36 | 1 | 3 | 43 | 20 | published, never ranked (may be uncrawled) |
+| 209 | Groningen | 1.42 | 31,401 | 17 | - | 2 | 76 | 20 | published, never ranked (may be uncrawled) |
+| 210 | Helsinki | 2.25 | 148,908 | 12 | 3 | 1 | 13 | 30 | published, never ranked (may be uncrawled) |
+| 211 | Poznan | 1.89 | 65,666 | 10 | - | 1 | 397 | 30 | published, never ranked (may be uncrawled) |
+| 212 | Philadelphia | 2.67 | 405,294 | 4 | 1 | - | - | 60 | published, never ranked (may be uncrawled) |
+| 213 | Inverness | 2.76 | 92,195 | - | - | - | - | 10 | predicted (travel demand) |
+| 214 | Gdansk | 1.82 | 4,908 | 12 | 5 | 1 | 307 | 30 | published, never ranked (may be uncrawled) |
+| 215 | Bled | 2.72 | 13,126 | - | - | - | - | 10 | predicted (travel demand) |
+| 216 | Copenhagen | 2.62 | 218,621 | 49 | 41 | 6 | - | 30 | published, never ranked (may be uncrawled) |
+| 217 | Hamburg | 2.57 | 191,221 | 6 | 4 | 1 | - | 60 | published, never ranked (may be uncrawled) |
+| 218 | Corfu | 2.71 | 139,334 | - | - | - | - | 20 | predicted (travel demand) |
+| 219 | Maastricht | 1.34 | 47,763 | 16 | - | 2 | 135 | 20 | published, never ranked (may be uncrawled) |
 | 220 | Mexico City | 2.49 | 566,583 | 9 | 2 | - | - | 100 | published, never ranked (may be uncrawled) |
 | 221 | Utrecht | 1.32 | 67,963 | 30 | 9 | 2 | 339 | 30 | published, never ranked (may be uncrawled) |
 | 222 | Syracuse | 1.75 | 102,833 | - | - | - | - | 20 | predicted (travel demand) |
@@ -460,77 +460,77 @@ so qa.py fails the deploy when the table and the json disagree.
 | 255 | Alkmaar | 1.01 | - | 11 | - | 2 | 79 | 20 | published, never ranked (may be uncrawled) |
 | 256 | Oslo | 1.76 | 181,113 | 4 | 3 | - | - | 30 | published, never ranked (may be uncrawled) |
 | 257 | Izmir | 1.88 | 69,826 | - | - | - | - | 60 | predicted (travel demand) |
-| 258 | Beijing | 1.93 | 269,737 | 7 | 1 | - | - | 100 | measured |
+| 258 | Beijing | 1.92 | 269,737 | 7 | 1 | - | - | 100 | measured |
 | 259 | Como | 0.96 | 82,645 | 9 | 3 | 1 | 23 | 20 | published, never ranked (may be uncrawled) |
-| 260 | Buenos Aires | 1.83 | 333,331 | 4 | 2 | - | - | 60 | published, never ranked (may be uncrawled) |
-| 261 | Hilversum | 0.93 | - | 6 | 1 | 1 | 122 | 20 | published, never ranked (may be uncrawled) |
-| 262 | Bucharest | 1.84 | 136,836 | 4 | - | 1 | - | 60 | published, never ranked (may be uncrawled) |
-| 263 | Hobart | 1.23 | 81,734 | 11 | 1 | 2 | 455 | 20 | published, never ranked (may be uncrawled) |
-| 264 | Austin | 1.82 | 226,631 | 10 | 4 | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 265 | Stirling | 1.78 | 43,558 | - | - | - | - | 10 | predicted (travel demand) |
-| 266 | Baltimore | 1.77 | - | 4 | - | - | - | 30 | published, never ranked (may be uncrawled) |
-| 267 | Christchurch | 1.21 | 104,874 | 6 | 2 | 1 | 466 | 30 | published, never ranked (may be uncrawled) |
-| 268 | Graz | 1.21 | 65,717 | 16 | 10 | 2 | 87 | 30 | published, never ranked (may be uncrawled) |
-| 269 | Killarney | 1.20 | 28,763 | - | - | - | - | 10 | predicted (travel demand) |
-| 270 | Auckland | 1.17 | 152,056 | 5 | 2 | - | 977 | 60 | published, never ranked (may be uncrawled) |
-| 271 | Dijon | 1.72 | 43,526 | - | - | - | - | 20 | predicted (travel demand) |
-| 272 | Annecy | 1.69 | 56,859 | - | - | - | - | 20 | predicted (travel demand) |
-| 273 | York | 1.69 | 118,066 | 6 | 2 | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 274 | Zurich | 1.59 | 140,788 | 6 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 275 | Middletown | 1.64 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 276 | Canterbury | 1.59 | 53,301 | - | - | - | - | 20 | predicted (travel demand) |
-| 277 | Liverpool | 1.61 | 248,189 | 2 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 278 | Freiburg | 1.54 | 92,752 | 8 | 4 | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 279 | Rio de Janeiro | 1.59 | 279,431 | 6 | - | - | - | 100 | published, never ranked (may be uncrawled) |
-| 280 | Mostar | 1.58 | 63,907 | - | - | - | - | 20 | predicted (travel demand) |
-| 281 | Reykjavik | 1.38 | 166,789 | 4 | 3 | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 282 | Zadar | 1.53 | 71,549 | - | - | - | - | 20 | predicted (travel demand) |
-| 283 | Bristol | 1.52 | 163,983 | 6 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 284 | Quebec City | 1.01 | 124,358 | 6 | - | 1 | 494 | 30 | published, never ranked (may be uncrawled) |
-| 285 | Savannah | 1.52 | 128,162 | 3 | 1 | - | - | 20 | published, never ranked (may be uncrawled) |
-| 286 | Gothenburg | 1.49 | 119,991 | 5 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 287 | Delft | 0.74 | 31,293 | 12 | - | 1 | 60 | 20 | published, never ranked (may be uncrawled) |
-| 288 | Cork | 0.97 | 101,405 | 13 | 2 | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 289 | Parma | 0.80 | 40,425 | 5 | - | 1 | 7 | 20 | published, never ranked (may be uncrawled) |
-| 290 | Thessaloniki | 1.42 | 180,145 | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 291 | Bruges | 1.40 | 106,902 | 4 | - | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 292 | Cadiz | 0.90 | 79,226 | 5 | 4 | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 293 | Amersfoort | 0.67 | - | 21 | 1 | 2 | 181 | 20 | published, never ranked (may be uncrawled) |
-| 294 | Sapporo | 0.88 | 88,633 | 6 | 1 | - | - | 60 | published, never ranked (may be uncrawled) |
-| 295 | Antalya | 1.31 | 70,688 | - | - | - | - | 60 | predicted (travel demand) |
-| 296 | Cardiff | 1.27 | - | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 297 | Breda | 0.64 | 36,579 | 11 | 1 | 2 | 120 | 20 | published, never ranked (may be uncrawled) |
-| 298 | Colmar | 1.28 | 45,517 | - | - | - | - | 20 | predicted (travel demand) |
-| 299 | Madeira | 0.77 | - | 10 | 2 | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 300 | Bodrum | 1.26 | 33,918 | - | - | - | - | 20 | predicted (travel demand) |
-| 301 | Riga | 1.23 | 108,918 | 5 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 302 | Nafplio | 1.24 | 31,193 | - | - | - | - | 10 | predicted (travel demand) |
-| 303 | Lausanne | 1.23 | 68,242 | 8 | 1 | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 304 | Cyprus | 1.18 | - | 4 | - | - | - | 60 | published, never ranked (may be uncrawled) |
-| 305 | Evora | 0.78 | 15,345 | - | - | - | - | 20 | predicted (travel demand) |
-| 306 | Genoa | 0.66 | 145,206 | 13 | 2 | 1 | 10 | 30 | published, never ranked (may be uncrawled) |
-| 307 | Stuttgart | 1.02 | 112,789 | 11 | 7 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 308 | Bergamo | 0.57 | 52,933 | 8 | 1 | 1 | 17 | 20 | published, never ranked (may be uncrawled) |
-| 309 | Bordeaux | 0.76 | 156,201 | 10 | - | 2 | 211 | 30 | published, never ranked (may be uncrawled) |
-| 310 | Menorca | 0.73 | - | 6 | - | - | 2 | 20 | published, never ranked (may be uncrawled) |
-| 311 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
-| 312 | Toulouse | 0.73 | 112,721 | 10 | - | 1 | 34 | 30 | published, never ranked (may be uncrawled) |
-| 313 | Leiden | 0.54 | 33,227 | 19 | 6 | 1 | 129 | 20 | published, never ranked (may be uncrawled) |
-| 314 | Okinawa | 0.71 | 24,466 | 6 | - | - | 1 | 30 | published, never ranked (may be uncrawled) |
-| 315 | Apeldoorn | 0.53 | - | 8 | - | 2 | 80 | 20 | published, never ranked (may be uncrawled) |
-| 316 | La Palma | 0.70 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 317 | Dubrovnik | 0.99 | 119,586 | 4 | 4 | - | 2 | 10 | published, never ranked (may be uncrawled) |
-| 318 | Belfast | 1.04 | 224,315 | 5 | 2 | 1 | - | 30 | published, never ranked (may be uncrawled) |
-| 319 | Salzburg | 0.68 | 107,243 | 21 | 12 | 3 | 33 | 20 | published, never ranked (may be uncrawled) |
-| 320 | Haarlem | 0.50 | 33,960 | 21 | 2 | 2 | 277 | 20 | published, never ranked (may be uncrawled) |
-| 321 | Kanazawa | 0.63 | 25,778 | 7 | 3 | 1 | 2 | 30 | published, never ranked (may be uncrawled) |
-| 322 | Oaxaca | 0.95 | 72,955 | - | - | - | - | 60 | predicted (travel demand) |
-| 323 | Split | 0.97 | 132,399 | 4 | - | 1 | - | 20 | published, never ranked (may be uncrawled) |
-| 324 | Granada | 0.60 | 86,361 | 9 | 4 | 2 | 4 | 20 | published, never ranked (may be uncrawled) |
-| 325 | Innsbruck | 0.63 | 58,742 | 6 | 2 | 1 | 39 | 20 | published, never ranked (may be uncrawled) |
-| 326 | Rothenburg ob der Tauber | 0.77 | 39,879 | 5 | 1 | 1 | 8 | 10 | published, never ranked (may be uncrawled) |
-| 327 | Lucca | 0.45 | 52,271 | 14 | 3 | 1 | 27 | 20 | published, never ranked (may be uncrawled) |
-| 328 | Luxembourg City | 0.60 | 64,851 | 10 | 8 | 2 | 18 | 20 | published, never ranked (may be uncrawled) |
+| 260 | Wroclaw | 1.27 | 123,894 | 5 | 2 | 1 | 121 | 30 | published, never ranked (may be uncrawled) |
+| 261 | Buenos Aires | 1.83 | 333,331 | 4 | 2 | - | - | 60 | published, never ranked (may be uncrawled) |
+| 262 | Hilversum | 0.93 | - | 6 | 1 | 1 | 122 | 20 | published, never ranked (may be uncrawled) |
+| 263 | Bucharest | 1.84 | 136,836 | 4 | - | 1 | - | 60 | published, never ranked (may be uncrawled) |
+| 264 | Hobart | 1.23 | 81,734 | 11 | 1 | 2 | 455 | 20 | published, never ranked (may be uncrawled) |
+| 265 | Austin | 1.82 | 226,631 | 10 | 4 | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 266 | Stirling | 1.78 | 43,558 | - | - | - | - | 10 | predicted (travel demand) |
+| 267 | Baltimore | 1.77 | - | 4 | - | - | - | 30 | published, never ranked (may be uncrawled) |
+| 268 | Christchurch | 1.21 | 104,874 | 6 | 2 | 1 | 466 | 30 | published, never ranked (may be uncrawled) |
+| 269 | Graz | 1.21 | 65,717 | 16 | 10 | 2 | 87 | 30 | published, never ranked (may be uncrawled) |
+| 270 | Killarney | 1.20 | 28,763 | - | - | - | - | 10 | predicted (travel demand) |
+| 271 | Auckland | 1.17 | 152,056 | 5 | 2 | - | 977 | 60 | published, never ranked (may be uncrawled) |
+| 272 | Dijon | 1.72 | 43,526 | - | - | - | - | 20 | predicted (travel demand) |
+| 273 | Annecy | 1.69 | 56,859 | - | - | - | - | 20 | predicted (travel demand) |
+| 274 | Cagliari | 0.92 | 51,351 | 14 | 1 | 2 | 14 | 20 | published, never ranked (may be uncrawled) |
+| 275 | York | 1.69 | 118,066 | 6 | 2 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 276 | Zurich | 1.59 | 140,788 | 6 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 277 | Middletown | 1.64 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 278 | Canterbury | 1.59 | 53,301 | - | - | - | - | 20 | predicted (travel demand) |
+| 279 | Liverpool | 1.61 | 248,189 | 2 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 280 | Freiburg | 1.54 | 92,752 | 8 | 4 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 281 | Rio de Janeiro | 1.59 | 279,431 | 6 | - | - | - | 100 | published, never ranked (may be uncrawled) |
+| 282 | Mostar | 1.58 | 63,907 | - | - | - | - | 20 | predicted (travel demand) |
+| 283 | Reykjavik | 1.38 | 166,789 | 4 | 3 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 284 | Zadar | 1.53 | 71,549 | - | - | - | - | 20 | predicted (travel demand) |
+| 285 | Bristol | 1.52 | 163,983 | 6 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 286 | Quebec City | 1.01 | 124,358 | 6 | - | 1 | 494 | 30 | published, never ranked (may be uncrawled) |
+| 287 | Savannah | 1.52 | 128,162 | 3 | 1 | - | - | 20 | published, never ranked (may be uncrawled) |
+| 288 | Gothenburg | 1.49 | 119,991 | 5 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 289 | Delft | 0.74 | 31,293 | 12 | - | 1 | 60 | 20 | published, never ranked (may be uncrawled) |
+| 290 | Cork | 0.97 | 101,405 | 13 | 2 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 291 | Parma | 0.80 | 40,425 | 5 | - | 1 | 7 | 20 | published, never ranked (may be uncrawled) |
+| 292 | Thessaloniki | 1.42 | 180,145 | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 293 | Bruges | 1.40 | 106,902 | 4 | - | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 294 | Cadiz | 0.90 | 79,226 | 5 | 4 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 295 | Amersfoort | 0.67 | - | 21 | 1 | 2 | 181 | 20 | published, never ranked (may be uncrawled) |
+| 296 | Sapporo | 0.88 | 88,633 | 6 | 1 | - | - | 60 | published, never ranked (may be uncrawled) |
+| 297 | Antalya | 1.31 | 70,688 | - | - | - | - | 60 | predicted (travel demand) |
+| 298 | Cardiff | 1.27 | - | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 299 | Breda | 0.64 | 36,579 | 11 | 1 | 2 | 120 | 20 | published, never ranked (may be uncrawled) |
+| 300 | Colmar | 1.28 | 45,517 | - | - | - | - | 20 | predicted (travel demand) |
+| 301 | Madeira | 0.77 | - | 10 | 2 | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 302 | Bodrum | 1.26 | 33,918 | - | - | - | - | 20 | predicted (travel demand) |
+| 303 | Riga | 1.23 | 108,918 | 5 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 304 | Nafplio | 1.24 | 31,193 | - | - | - | - | 10 | predicted (travel demand) |
+| 305 | Lausanne | 1.23 | 68,242 | 8 | 1 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 306 | Cyprus | 1.18 | - | 4 | - | - | - | 60 | published, never ranked (may be uncrawled) |
+| 307 | Evora | 0.78 | 15,345 | - | - | - | - | 20 | predicted (travel demand) |
+| 308 | Stuttgart | 1.02 | 112,789 | 11 | 7 | - | - | 30 | published, never ranked (may be uncrawled) |
+| 309 | Bergamo | 0.57 | 52,933 | 8 | 1 | 1 | 17 | 20 | published, never ranked (may be uncrawled) |
+| 310 | Bordeaux | 0.76 | 156,201 | 10 | - | 2 | 211 | 30 | published, never ranked (may be uncrawled) |
+| 311 | Menorca | 0.73 | - | 6 | - | - | 2 | 20 | published, never ranked (may be uncrawled) |
+| 312 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
+| 313 | Toulouse | 0.73 | 112,721 | 10 | - | 1 | 34 | 30 | published, never ranked (may be uncrawled) |
+| 314 | Leiden | 0.54 | 33,227 | 19 | 6 | 1 | 129 | 20 | published, never ranked (may be uncrawled) |
+| 315 | Okinawa | 0.71 | 24,466 | 6 | - | - | 1 | 30 | published, never ranked (may be uncrawled) |
+| 316 | Apeldoorn | 0.53 | - | 8 | - | 2 | 80 | 20 | published, never ranked (may be uncrawled) |
+| 317 | La Palma | 0.70 | - | - | - | - | - | 20 | predicted (travel demand) |
+| 318 | Dubrovnik | 0.99 | 119,586 | 4 | 4 | - | 2 | 10 | published, never ranked (may be uncrawled) |
+| 319 | Belfast | 1.04 | 224,315 | 5 | 2 | 1 | - | 30 | published, never ranked (may be uncrawled) |
+| 320 | Salzburg | 0.68 | 107,243 | 21 | 12 | 3 | 33 | 20 | published, never ranked (may be uncrawled) |
+| 321 | Haarlem | 0.50 | 33,960 | 21 | 2 | 2 | 277 | 20 | published, never ranked (may be uncrawled) |
+| 322 | Kanazawa | 0.63 | 25,778 | 7 | 3 | 1 | 2 | 30 | published, never ranked (may be uncrawled) |
+| 323 | Oaxaca | 0.95 | 72,955 | - | - | - | - | 60 | predicted (travel demand) |
+| 324 | Split | 0.97 | 132,399 | 4 | - | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 325 | Granada | 0.60 | 86,361 | 9 | 4 | 2 | 4 | 20 | published, never ranked (may be uncrawled) |
+| 326 | Innsbruck | 0.63 | 58,742 | 6 | 2 | 1 | 39 | 20 | published, never ranked (may be uncrawled) |
+| 327 | Rothenburg ob der Tauber | 0.77 | 39,879 | 5 | 1 | 1 | 8 | 10 | published, never ranked (may be uncrawled) |
+| 328 | Lucca | 0.45 | 52,271 | 14 | 3 | 1 | 27 | 20 | published, never ranked (may be uncrawled) |
 | 329 | Crete | 0.86 | - | 4 | 3 | - | - | 30 | published, never ranked (may be uncrawled) |
 | 330 | Brighton | 0.85 | 114,108 | 6 | 3 | 1 | - | 20 | published, never ranked (may be uncrawled) |
 | 331 | Busan | 0.83 | 94,737 | 2 | - | - | - | 60 | published, never ranked (may be uncrawled) |
