@@ -1,0 +1,29 @@
+[
+  {
+    "id": "evr_001",
+    "name": "Sobreira Grande (The Big Cork Oak)",
+    "species": "Cork Oak (Quercus suber)",
+    "age_estimate": "roughly 250 years",
+    "age_min": 200,
+    "age_max": 300,
+    "location": {
+      "address": "Vale do Pereiro, Arraiolos, Alentejo",
+      "latitude": 38.762478,
+      "longitude": -7.827519,
+      "neighbourhood": "Vale do Pereiro (Arraiolos municipality)"
+    },
+    "verified_sources": [
+      "https://www.treeoftheyear.org/previous-years/2022/The-Big-Cork-Oak",
+      "https://www.agroportal.pt/a-sobreira-grande-foi-eleita-a-arvore-portuguesa-do-ano-2022/ (seen only as a WebSearch pointer: 250 years, Vale do Pereiro, 3rd in European Tree of the Year 2022; page itself 403 to WebFetch)",
+      "https://www.inaturalist.org/observations/152418939 (alive check, 2023-03-26, found by scripts/lifecheck.py)"
+    ],
+    "access": "Stands on a path at the edge of the village of Vale do Pereiro, in open montado; no entry fee or gate reported. Marked circular walk PR4 ARL 'Rota da Sobreira Grande' (about 9 to 11 km, little shade) per Wikiloc/Komoot listings, not an official page. Land ownership not stated by any source; confirm with Arraiolos tourist office (turismo@cm-arraiolos.pt) if needed.",
+    "transport": "About 22 km north of Evora by road, no useful public transport reported; Arraiolos town is reached by bus from Evora, then the village is a further car or taxi hop. Day trip by car.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "In 2022, 70,563 people voted for a cork oak on a path outside a small Alentejo village, and it still came third in Europe. At home it had already won. The Sobreira Grande, the Big Cork Oak, was Portugal's Tree of the Year 2022, nominated by the municipality of Arraiolos in the contest run by UNAC, the Mediterranean forest union.\n\nThe case the contest page makes is not a record. It is shade. The tree stands on a path at Vale do Pereiro, in open montado, and its wide canopy is where walkers stop, where the people working the fields around it eat their lunch in summer, and where the herds wait out the heat.\n\nHow long it has done that is less certain. The contest page gives its age as about 250 years. That is the nominator's figure, with no measurement published behind it, and no source we have read gives a girth or a height either. Treat it as the village's estimate rather than a count of rings. The same year, the Arraiolos council said it would seek national protection as a Tree of Public Interest. We have not seen that it was granted.\n\nVale do Pereiro is about 22 kilometres north of Évora, and you will want a car. Walking apps list a circular route named after the tree, roughly nine to eleven kilometres with little shade on the way, which makes its one job easy to appreciate at the end.",
+    "how_to_recognise": "You can recognise it by the wide canopy spreading over a path at the edge of Vale do Pereiro, where walkers and herds stop for shade. It stands at the GPS point the Tree of the Year contest published for it.",
+    "verify_notes": "Nominated by the Arraiolos municipality; Portuguese Tree of the Year 2022 (organised by UNAC, the Mediterranean forest union) and 3rd in European Tree of the Year 2022 with 70,563 votes. treeoftheyear.org: tree stands on a path in Vale do Pereiro, wide canopy, shade for walkers, workers' field lunches and herds in summer; age stated 250 years (a stated age, no measurement basis seen). Pin: GPS published by the contest page, N 38 45 44.92, W 7 49 39.07 (= 38.762478, -7.827519), nominator's coordinates for this single tree; confirmed on that basis. Search summary (not a fetched page) says last cork stripping 2018 yielded over 80 arrobas, and that the crown is propped by support cables; unverified, do not use without a fetched source. Arraiolos council announced in 2022 it would seek Public Interest Tree status; no confirmation seen that it was completed, so no official_register entry. No girth or height found in any fetched source. Flagged: one fetched source (contest page, nominator-supplied) plus alive observation; second source for age not fetched. Not the Sobreiro Assobiador. Arraiolos municipality, not Evora city; day trip.",
+    "dependent_gap": "no photograph in hand (Commons/iNaturalist not searched, per rules); findable by confirmed pin."
+  }
+]

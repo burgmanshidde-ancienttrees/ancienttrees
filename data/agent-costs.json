@@ -65,6 +65,30 @@
     "tokens": 112000,
     "trees": 2,
     "note": "por_029 and por_030 plus pt overlay entries preflight required; stb_011 skipped as duplicate"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "madeira",
+    "kind": "verify",
+    "tokens": 120000,
+    "trees": 1,
+    "note": "Campo da Barca dragon tree; Wikidata and register mined out; 8 leads from Funchal PDM list"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "evora",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 1,
+    "note": "Sobreira Grande (Arraiolos), Tree of the Year 2022; 7 leads, no Evora survey"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "madeira, vale-do-pereiro",
+    "kind": "write",
+    "tokens": 73000,
+    "trees": 2,
+    "note": "mdr_011 and evr_001 (new lone-tree place); pt overlay for madeira"
    }
   ],
   "2026-10-28": [

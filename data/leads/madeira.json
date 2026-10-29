@@ -1,72 +1,117 @@
 {
-  "note": "2026-09-02 verify pass: the Funchal PDM's Quadro 5 (Relatorio de Fundamentacao, Vol II, marco 2018, fetched directly at http://revisaopdm.cm-funchal.pt/images/PDF_SITE/versao_final/Relatorio-de-Fundamentacao_posparecerSRARN_vf.pdf) is a full official monumental-tree table, roughly 100+ named specimens by freguesia and site, codes 192 to 327+, the register behind every Wikidata 'arvore monumental (Funchal)' candidate. Its licence is NOT open: the PDM site's own footer reads 'Copyright (c) 2017 Camara Municipal do Funchal. Todos os direitos reservados' (all rights reserved), so per BRIEF_RESEARCH.md it is not imported to data/registers/ and is used only to cross-check individual candidates, same as any other government document cited as one of two sources. Not re-fetched in full for this pass beyond confirming the table's shape; a future pass wanting the complete row list should re-fetch and OCR/extract pages 94-97 of that PDF (pdfplumber worked cleanly, no OCR needed).",
-  "leads": [
-    {
-      "candidate": "Canforeira (Quinta Josefina), Wikidata Q98822606, inventory PDM-F-AM-218",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "reason": "Officially designated Funchal arvore monumental at 32.65774,-16.92848, code 218 in the Funchal PDM's Quadro 5 (Relatorio de Fundamentacao, Vol II, March 2018). This pass found the resolving fact: Quadro 5 lists code 218 under the location \"Escola Basica de 2 e 3 Ciclo de Santo Antonio\", a public basic school, not a private quinta or an ambiguous street tree as previously guessed. Per hard rule 10's school exception, a school-grounds tree ships only with real evidence the grounds are genuinely open (a public path crossing them, weekend opening, etc); this pass found no such evidence for this specific school. Absent that evidence it stays a lead rather than being published or moved to blocked, in case a later pass finds the school opens its yard or the tree actually stands on the public street frontage rather than inside the grounds. Follow-up (2026-09-02, OSM check): an Overpass query around 32.65774,-16.928482 finds a natural=tree node at 32.657747,-16.928455, essentially the register's own coordinate, so a tree-level pin exists and is ready the day access is settled. The same query returns the school itself as way 162526449 (\"Escola Basica com Pre-escolar de Santo Antonio e Curral das Freiras\", public, Rua da Quinta Josefina 1), and its building/grounds bounding box (lat 32.6568807-32.657934, lon -16.9293092 to -16.9280255) contains the tree node. No footway or foot=yes tag crosses that footprint in the data pulled. This corroborates rather than resolves the earlier finding: the tree sits inside the school's own grounds and nothing found this pass shows a public path reaching it, so it stays a lead."
-    },
-    {
-      "candidate": "Nucleo de Tis - Montado do Sabugal (til grove)",
-      "species": "Til (Ocotea foetens)",
-      "reason": "Second officially designated til nucleus (ASMAC n.78, island code SFOF02), same species and 'predates 1419' framing as the Fanal nucleus, height 37.0m, max perimeter 13.80m across the grove, 'Medio' (medium) accessibility on a forest path linking the Faja da Nogueira power station to the Levada da Serra do Faial in Santana/Faial parish, coordinates 32.744917,-16.907861. Unlike Fanal, no individually named or independently identified specimen (no 'witch tree' equivalent) was found this pass, so it fails the collectible-point test as researched. Worth a future pass if a named individual specimen or better access description turns up. Follow-up check (this pass, 2026-09-01): searched specifically for an individually named specimen within this grove, the way Fanal's 'Witch Tree' was singled out of its own nucleus. Found none: Madeira Island Magazine's own 'oldest tree in Madeira' piece describes the whole grove at Chao do Nateiro as predating 1419, exactly like the register, but does not name or distinguish one trunk from the others. Stays a lead as a grove, not a collectible point."
-    },
-    {
-      "candidate": "Hospital garden rubber tree (Ficus elastica), Hospital Dr. Joao de Almada, Quinta de Santana, Monte",
-      "species": "Rubber tree (Ficus elastica)",
-      "reason": "Register entry ASMAC n.89 (island code FMFE01), height 27.0m, perimeter 7.23m, historically tied to the former Quinta de Santana tuberculosis sanatorium (opened 1940). The site is now an operating public hospital (Hospital Dr. Joao de Almada / SESARAM). Could not confirm this pass whether the grounds are genuinely open to casual visitors beyond patients, visitors and staff; sending readers onto working hospital grounds needs that confirmation first. Held as a lead pending an access check, not blocked outright, since public hospital grounds sometimes have an accessible forecourt or garden."
-    },
-    {
-      "candidate": "Nucleo dos Dragoeiros (Neves), Wikidata Q109303182, inventory PDM-F-AM code (Sao Goncalo)",
-      "species": "Dragon Tree (Dracaena draco)",
-      "reason": "At 32.648809,-16.869793, Sao Goncalo. This is the same designated dragon-tree grove already published as mdr_006, 'The Dragon Tree Grove of Neves' (Jardim do Nucleo dos Dragoeiros das Neves, 32.64875,-16.869667), roughly 30 metres away, same name (Nucleo dos Dragoeiros), same species and same parish. Recorded here as a duplicate rather than a new entry, per the brief's instruction to log rather than re-ship anything within 30 metres of an existing published tree."
-    }
-  ],
-  "blocked": [
-    {
-      "candidate": "Palmeira-de-leque (Caminho das Courelas, 31), Wikidata Q98822491, inventory PDM-F-AM-215",
-      "species": "Fan palm, likely Washingtonia filifera per common name",
-      "reason": "Officially designated Funchal arvore monumental at 32.66518,-16.94609, in Santo Antonio parish. Moved here from leads on 2026-09-02 after an address and OSM check: Nominatim resolves 'Caminho das Courelas, 31' to a residential place node inside a cluster OSM itself names 'Casas Proximas' (nearby houses), Santo Amaro, Santo Antonio, i.e. a private house address, not a garden or institution. An Overpass query in an 80m radius around the coordinate returns only building=yes residential structures and no natural=tree node, no public path and no garden/park landuse tag. The earlier lead entry noted the nearby paid public garden Quinta da Palmeira sits at a different address (Rua da Levada de Santa Luzia 31) and is not the same site. Nothing found across either pass points to public access; block rather than hold, since a private residential address is unlikely to read differently on a future check."
-    },
-    {
-      "candidate": "Oliveira milenar (Royal Savoy Hotel), Wikidata Q99658911, inventory PT-Q99658911",
-      "species": "Olive (Olea europaea)",
-      "reason": "Officially designated Funchal arvore monumental at 32.64240,-16.92036; Wikidata's own Commons category names it 'Oliveira milenar (Royal Savoy Hotel)'. The Royal Savoy is a 5-star oceanfront resort hotel in Funchal and its 'lush subtropical gardens' and seaside promenade are described in every source found as hotel amenities for guests, with no evidence of general public access. Same private/guests-only pattern as the already-blocked Quinta do Jardim da Serra eucalyptus. Fails the 'can they get in without asking anyone's permission' test; block rather than hold, since a 5-star resort garden is very unlikely to read differently on a future check."
-    },
-    {
-      "candidate": "Araucaria (Quinta das Preces), Wikidata Q98815275, inventory as Funchal arvore monumental #220",
-      "species": "Araucaria, likely Araucaria bidwillii (Bunya Pine) per the Commons category name",
-      "reason": "At 32.66434,-16.95168 in Santo Antonio parish. Unlike Quinta Vigia, Quinta das Cruzes, Quinta do Poco and Quinta Palmeira, Quinta das Preces does not appear on visit.funchal.pt's or IFCN Madeira's lists of public gardens/quintas, and no source found this pass describes it as open to visitors, ticketed or otherwise; it reads as a private residential quinta. Held as blocked rather than a lead because there is no positive signal at all pointing toward public access, only absence of the kind of listing every genuinely public quinta in Funchal has."
-    },
-    {
-      "candidate": "Cipreste-da-california (Quinta de Sao Roque), Canforeira (Quinta de Sao Roque, PDM-F-AM-325), Canforeira (Quinta de Sao Roque, PDM-F-AM-326) - Wikidata Q98939627, Q98939438, Q98939610",
-      "species": "California Cypress (Cupressus macrocarpa) and two Camphor Trees (Cinnamomum camphora)",
-      "reason": "Three separate Funchal arvore monumental designations, all within about 100m of each other at Quinta de Sao Roque (32.660,-16.922 area). Property searches for Quinta de Sao Roque return only real-estate listings ('Quinta tradicional Madeirense', a traditional Madeiran manor house, listed among properties for sale) and a parish history page about the Aburdarham wine-trading family who owned it; nothing indicates it is a public garden or otherwise open to casual visitors. Blocked as private residential grounds under hard rule 10; if a future pass finds it operating as a hotel, event venue or otherwise open, reopen all three together."
-    },
-    {
-      "candidate": "Nucleo de Pinheiros Mansos, Wikidata Q98821920, inventory PDM-F-AM-216",
-      "species": "Stone Pine (Pinus pinea), multiple trees",
-      "reason": "At 32.65890,-16.93960, Pico dos Barcelos, Santo Antonio parish, this is a roughly 2.5 hectare stand of stone pines ('Stone Pines Park'), not one tree. Same failure as the already-blocked Fanal til nucleus: a designated grove or forest type spanning hectares is not one identifiable collectible point to stand at, per the brief's own instruction. Pico dos Barcelos itself is a known public viewpoint, so access is not the issue; the issue is that this candidate is an ensemble/area rather than a single tree, and no individually named specimen within it (a 'witch tree' equivalent) was found this pass."
-    },
-    {
-      "candidate": "Eucalyptus of Quinta do Jardim da Serra (referenced as the tallest tree in Madeira)",
-      "species": "Eucalyptus (Eucalyptus globulus)",
-      "reason": "Register entry ASMAC n.80 (island code CLJSEG01), height 64.0m (the tallest tree on the island per the register itself), perimeter 9.67m, believed over 200 years old. Stands on the grounds of Hotel Quinta da Serra, a private 5-star hotel; multiple sources confirm the garden is NOT open to the public and the tree is only shown via a guided visit offered to hotel guests. Fails the 'can they get in without asking anyone's permission' test under hard rule 10 (private land, guests-only)."
-    },
-    {
-      "candidate": "Cork Oak (Sobreiro) of Quinta do Padre Americo, Vale Paraiso, Camacha",
-      "species": "Cork Oak (Quercus suber)",
-      "reason": "Register entry ASMAC n.84 (island code SCCQS01), height 35.0m, perimeter 4.48m. Stands on the grounds of a diocesan institution for disadvantaged children (Aldeia do Padre Americo). Not genuinely open to casual public visitors; sending strangers onto the grounds of a children's care institution is inappropriate whatever the register says."
-    },
-    {
-      "candidate": "Monterey Pine (Pinheiro-insigne) of Casais Proximos, Santo da Serra",
-      "species": "Monterey Pine (Pinus radiata)",
-      "reason": "Register entry ASMAC n.83 (island code SCSSPR01), height 28.0m, perimeter 6.93m. The register's own description states it stands on a private property, currently a rural hotel unit. Same private/guests-only access failure as the Quinta da Serra eucalyptus."
-    },
-    {
-      "candidate": "The Fanal laurisilva / til nucleus as a whole (as opposed to the single Witch Tree entry, mdr_005)",
-      "species": "Til (Ocotea foetens), grove of multiple trunks",
-      "reason": "Explicitly rejected as a collectible point in its own right per the brief's instruction. The official register (ASMAC n.77) designates a 20-hectare 'nucleus' with 8 documented trunk perimeters, not one tree; a forest type or grove spanning 20ha is not one identifiable point to stand at. One specimen within it, independently identified by name across multiple sources and an OSM natural_monument node as the 'Witch Tree', was pulled out and verified separately as mdr_005. Recording this explicitly so a future pass does not re-argue whether the grove itself should be an entry: it should not, only the individually identified specimen should."
-    }
-  ]
+ "note": "2026-09-02 verify pass: the Funchal PDM's Quadro 5 (Relatorio de Fundamentacao, Vol II, marco 2018, fetched directly at http://revisaopdm.cm-funchal.pt/images/PDF_SITE/versao_final/Relatorio-de-Fundamentacao_posparecerSRARN_vf.pdf) is a full official monumental-tree table, roughly 100+ named specimens by freguesia and site, codes 192 to 327+, the register behind every Wikidata 'arvore monumental (Funchal)' candidate. Its licence is NOT open: the PDM site's own footer reads 'Copyright (c) 2017 Camara Municipal do Funchal. Todos os direitos reservados' (all rights reserved), so per BRIEF_RESEARCH.md it is not imported to data/registers/ and is used only to cross-check individual candidates, same as any other government document cited as one of two sources. Not re-fetched in full for this pass beyond confirming the table's shape; a future pass wanting the complete row list should re-fetch and OCR/extract pages 94-97 of that PDF (pdfplumber worked cleanly, no OCR needed).",
+ "leads": [
+  {
+   "candidate": "Canforeira (Quinta Josefina), Wikidata Q98822606, inventory PDM-F-AM-218",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "reason": "Officially designated Funchal arvore monumental at 32.65774,-16.92848, code 218 in the Funchal PDM's Quadro 5 (Relatorio de Fundamentacao, Vol II, March 2018). This pass found the resolving fact: Quadro 5 lists code 218 under the location \"Escola Basica de 2 e 3 Ciclo de Santo Antonio\", a public basic school, not a private quinta or an ambiguous street tree as previously guessed. Per hard rule 10's school exception, a school-grounds tree ships only with real evidence the grounds are genuinely open (a public path crossing them, weekend opening, etc); this pass found no such evidence for this specific school. Absent that evidence it stays a lead rather than being published or moved to blocked, in case a later pass finds the school opens its yard or the tree actually stands on the public street frontage rather than inside the grounds. Follow-up (2026-09-02, OSM check): an Overpass query around 32.65774,-16.928482 finds a natural=tree node at 32.657747,-16.928455, essentially the register's own coordinate, so a tree-level pin exists and is ready the day access is settled. The same query returns the school itself as way 162526449 (\"Escola Basica com Pre-escolar de Santo Antonio e Curral das Freiras\", public, Rua da Quinta Josefina 1), and its building/grounds bounding box (lat 32.6568807-32.657934, lon -16.9293092 to -16.9280255) contains the tree node. No footway or foot=yes tag crosses that footprint in the data pulled. This corroborates rather than resolves the earlier finding: the tree sits inside the school's own grounds and nothing found this pass shows a public path reaching it, so it stays a lead."
+  },
+  {
+   "candidate": "Nucleo de Tis - Montado do Sabugal (til grove)",
+   "species": "Til (Ocotea foetens)",
+   "reason": "Second officially designated til nucleus (ASMAC n.78, island code SFOF02), same species and 'predates 1419' framing as the Fanal nucleus, height 37.0m, max perimeter 13.80m across the grove, 'Medio' (medium) accessibility on a forest path linking the Faja da Nogueira power station to the Levada da Serra do Faial in Santana/Faial parish, coordinates 32.744917,-16.907861. Unlike Fanal, no individually named or independently identified specimen (no 'witch tree' equivalent) was found this pass, so it fails the collectible-point test as researched. Worth a future pass if a named individual specimen or better access description turns up. Follow-up check (this pass, 2026-09-01): searched specifically for an individually named specimen within this grove, the way Fanal's 'Witch Tree' was singled out of its own nucleus. Found none: Madeira Island Magazine's own 'oldest tree in Madeira' piece describes the whole grove at Chao do Nateiro as predating 1419, exactly like the register, but does not name or distinguish one trunk from the others. Stays a lead as a grove, not a collectible point."
+  },
+  {
+   "candidate": "Hospital garden rubber tree (Ficus elastica), Hospital Dr. Joao de Almada, Quinta de Santana, Monte",
+   "species": "Rubber tree (Ficus elastica)",
+   "reason": "Register entry ASMAC n.89 (island code FMFE01), height 27.0m, perimeter 7.23m, historically tied to the former Quinta de Santana tuberculosis sanatorium (opened 1940). The site is now an operating public hospital (Hospital Dr. Joao de Almada / SESARAM). Could not confirm this pass whether the grounds are genuinely open to casual visitors beyond patients, visitors and staff; sending readers onto working hospital grounds needs that confirmation first. Held as a lead pending an access check, not blocked outright, since public hospital grounds sometimes have an accessible forecourt or garden."
+  },
+  {
+   "candidate": "Nucleo dos Dragoeiros (Neves), Wikidata Q109303182, inventory PDM-F-AM code (Sao Goncalo)",
+   "species": "Dragon Tree (Dracaena draco)",
+   "reason": "At 32.648809,-16.869793, Sao Goncalo. This is the same designated dragon-tree grove already published as mdr_006, 'The Dragon Tree Grove of Neves' (Jardim do Nucleo dos Dragoeiros das Neves, 32.64875,-16.869667), roughly 30 metres away, same name (Nucleo dos Dragoeiros), same species and same parish. Recorded here as a duplicate rather than a new entry, per the brief's instruction to log rather than re-ship anything within 30 metres of an existing published tree."
+  },
+  {
+   "candidate": "Nucleo de Figueiras da India (Ficus benjamina), Jardim do Almirante Reis, Funchal (ASMAC 091, PDM code 262)",
+   "species": "Weeping fig (Ficus benjamina)",
+   "reason": "ASMAC 091: two neighbouring figs, height 27.0 m, max perimeters 4.49 m and 3.64 m, 'more than 150 years' per register, in the free public Jardim do Almirante Reis (OSM way 364848197, about 90 x 190 m, centre 32.6472,-16.9013). Fails 'no photo or exact pin in reach': park is too large for a small site, no trunk-level coordinate (only a genus-level iNaturalist fix 241689625 at 32.64745,-16.90141), no openly licensed identified photo found. Reopen if a geotagged photo of the pair turns up. Pass 2026-10-29."
+  },
+  {
+   "candidate": "Praca do Municipio chama-da-floresta (Spathodea campanulata), Funchal, PDM code 297",
+   "species": "African tulip tree (Spathodea campanulata)",
+   "reason": "Free public square (about 50 m across, 32.6496,-16.9086) in front of the town hall, alive (iNaturalist observations to 2026-10-22), but the square holds many African tulip trees (30 observations) and no source says which is the registered one; no size or age in the PDM table; fast-growing short-lived species. Not ancient, trunk not identifiable. Pass 2026-10-29."
+  },
+  {
+   "candidate": "Barbusano of Quinta Vigia (ASMAC 095, PDM code 290)",
+   "species": "Barbusano (Apollonias barbujana)",
+   "reason": "Register height 18.0 m, perimeter 4.42 m. Stands in the Quinta Vigia gardens (about 1 ha, seat of the regional presidency, grounds already served by published mdr_007 araucaria). No pin separates it from mdr_007 and no photo found; fold in only if a source places the trunk. Pass 2026-10-29."
+  },
+  {
+   "candidate": "Camphor tree of Quinta da Achada / Jardins do Lago hotel (ASMAC 098)",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "reason": "Register height 35.0 m, perimeter 7.01 m, the largest camphor in the register series, in the grounds of the Jardins do Lago hotel (Quinta da Achada, Sao Pedro). Access to the hotel garden not established; hard rule 10 needs it. Pass 2026-10-29."
+  },
+  {
+   "candidate": "Spathodea of Jardim Municipal (ASMAC 094)",
+   "species": "African tulip tree (Spathodea campanulata)",
+   "reason": "Register height 16.0 m, perimeter 2.56 m, 'visitable and easy access' in Jardim Municipal; same garden as published mdr_008 and mdr_009 and not distinguishable by pin, fast-growing species. Not delivered. Pass 2026-10-29."
+  },
+  {
+   "candidate": "Campo da Barca other monumentals (Sumauma code 258, Tipuana code 259)",
+   "species": "Kapok (Ceiba/Chorisia speciosa), Tipuana tipu",
+   "reason": "Listed in the Funchal PDM Quadro 5 under Jardins do Campo da Barca with no measurements; the 2024 renovation tender names a monumental Tipuana with surface roots. Same small garden as mdr_011; no trunk-level source. Lead only. Pass 2026-10-29."
+  },
+  {
+   "candidate": "Parque de Santa Catarina monumentals (Pimenteira-bastarda code 293, Camphor code 294), Funchal",
+   "species": "Brazilian pepper tree (Schinus terebinthifolia), Camphor Tree (Cinnamomum camphora)",
+   "reason": "Free municipal park; Funchal 2026-06-03 news says the new signs identify the municipal monumental trees there, but no source found lists size, location or which trunk; park too big for a small site. Needs the park signage or a geotagged photo of the signed trees. Pass 2026-10-29."
+  },
+  {
+   "candidate": "Monte church and Monte Palace trees (PDM codes 227-231 Monte Palace, 232 Til and 233 Pinheiro-de-Damara at Igreja de N. Sra do Monte)",
+   "species": "Til (Ocotea foetens), Dammar pine (Agathis), Pine, Araucaria, Oak",
+   "reason": "Monte Palace is ticketed; the church-precinct til and Agathis (codes 232, 233) are in a free churchyard but no source gives size, age or position; not researched further this pass for lack of a tree-level source. Pass 2026-10-29."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Palmeira-de-leque (Caminho das Courelas, 31), Wikidata Q98822491, inventory PDM-F-AM-215",
+   "species": "Fan palm, likely Washingtonia filifera per common name",
+   "reason": "Officially designated Funchal arvore monumental at 32.66518,-16.94609, in Santo Antonio parish. Moved here from leads on 2026-09-02 after an address and OSM check: Nominatim resolves 'Caminho das Courelas, 31' to a residential place node inside a cluster OSM itself names 'Casas Proximas' (nearby houses), Santo Amaro, Santo Antonio, i.e. a private house address, not a garden or institution. An Overpass query in an 80m radius around the coordinate returns only building=yes residential structures and no natural=tree node, no public path and no garden/park landuse tag. The earlier lead entry noted the nearby paid public garden Quinta da Palmeira sits at a different address (Rua da Levada de Santa Luzia 31) and is not the same site. Nothing found across either pass points to public access; block rather than hold, since a private residential address is unlikely to read differently on a future check."
+  },
+  {
+   "candidate": "Oliveira milenar (Royal Savoy Hotel), Wikidata Q99658911, inventory PT-Q99658911",
+   "species": "Olive (Olea europaea)",
+   "reason": "Officially designated Funchal arvore monumental at 32.64240,-16.92036; Wikidata's own Commons category names it 'Oliveira milenar (Royal Savoy Hotel)'. The Royal Savoy is a 5-star oceanfront resort hotel in Funchal and its 'lush subtropical gardens' and seaside promenade are described in every source found as hotel amenities for guests, with no evidence of general public access. Same private/guests-only pattern as the already-blocked Quinta do Jardim da Serra eucalyptus. Fails the 'can they get in without asking anyone's permission' test; block rather than hold, since a 5-star resort garden is very unlikely to read differently on a future check."
+  },
+  {
+   "candidate": "Araucaria (Quinta das Preces), Wikidata Q98815275, inventory as Funchal arvore monumental #220",
+   "species": "Araucaria, likely Araucaria bidwillii (Bunya Pine) per the Commons category name",
+   "reason": "At 32.66434,-16.95168 in Santo Antonio parish. Unlike Quinta Vigia, Quinta das Cruzes, Quinta do Poco and Quinta Palmeira, Quinta das Preces does not appear on visit.funchal.pt's or IFCN Madeira's lists of public gardens/quintas, and no source found this pass describes it as open to visitors, ticketed or otherwise; it reads as a private residential quinta. Held as blocked rather than a lead because there is no positive signal at all pointing toward public access, only absence of the kind of listing every genuinely public quinta in Funchal has."
+  },
+  {
+   "candidate": "Cipreste-da-california (Quinta de Sao Roque), Canforeira (Quinta de Sao Roque, PDM-F-AM-325), Canforeira (Quinta de Sao Roque, PDM-F-AM-326) - Wikidata Q98939627, Q98939438, Q98939610",
+   "species": "California Cypress (Cupressus macrocarpa) and two Camphor Trees (Cinnamomum camphora)",
+   "reason": "Three separate Funchal arvore monumental designations, all within about 100m of each other at Quinta de Sao Roque (32.660,-16.922 area). Property searches for Quinta de Sao Roque return only real-estate listings ('Quinta tradicional Madeirense', a traditional Madeiran manor house, listed among properties for sale) and a parish history page about the Aburdarham wine-trading family who owned it; nothing indicates it is a public garden or otherwise open to casual visitors. Blocked as private residential grounds under hard rule 10; if a future pass finds it operating as a hotel, event venue or otherwise open, reopen all three together."
+  },
+  {
+   "candidate": "Nucleo de Pinheiros Mansos, Wikidata Q98821920, inventory PDM-F-AM-216",
+   "species": "Stone Pine (Pinus pinea), multiple trees",
+   "reason": "At 32.65890,-16.93960, Pico dos Barcelos, Santo Antonio parish, this is a roughly 2.5 hectare stand of stone pines ('Stone Pines Park'), not one tree. Same failure as the already-blocked Fanal til nucleus: a designated grove or forest type spanning hectares is not one identifiable collectible point to stand at, per the brief's own instruction. Pico dos Barcelos itself is a known public viewpoint, so access is not the issue; the issue is that this candidate is an ensemble/area rather than a single tree, and no individually named specimen within it (a 'witch tree' equivalent) was found this pass."
+  },
+  {
+   "candidate": "Eucalyptus of Quinta do Jardim da Serra (referenced as the tallest tree in Madeira)",
+   "species": "Eucalyptus (Eucalyptus globulus)",
+   "reason": "Register entry ASMAC n.80 (island code CLJSEG01), height 64.0m (the tallest tree on the island per the register itself), perimeter 9.67m, believed over 200 years old. Stands on the grounds of Hotel Quinta da Serra, a private 5-star hotel; multiple sources confirm the garden is NOT open to the public and the tree is only shown via a guided visit offered to hotel guests. Fails the 'can they get in without asking anyone's permission' test under hard rule 10 (private land, guests-only)."
+  },
+  {
+   "candidate": "Cork Oak (Sobreiro) of Quinta do Padre Americo, Vale Paraiso, Camacha",
+   "species": "Cork Oak (Quercus suber)",
+   "reason": "Register entry ASMAC n.84 (island code SCCQS01), height 35.0m, perimeter 4.48m. Stands on the grounds of a diocesan institution for disadvantaged children (Aldeia do Padre Americo). Not genuinely open to casual public visitors; sending strangers onto the grounds of a children's care institution is inappropriate whatever the register says."
+  },
+  {
+   "candidate": "Monterey Pine (Pinheiro-insigne) of Casais Proximos, Santo da Serra",
+   "species": "Monterey Pine (Pinus radiata)",
+   "reason": "Register entry ASMAC n.83 (island code SCSSPR01), height 28.0m, perimeter 6.93m. The register's own description states it stands on a private property, currently a rural hotel unit. Same private/guests-only access failure as the Quinta da Serra eucalyptus."
+  },
+  {
+   "candidate": "The Fanal laurisilva / til nucleus as a whole (as opposed to the single Witch Tree entry, mdr_005)",
+   "species": "Til (Ocotea foetens), grove of multiple trunks",
+   "reason": "Explicitly rejected as a collectible point in its own right per the brief's instruction. The official register (ASMAC n.77) designates a 20-hectare 'nucleus' with 8 documented trunk perimeters, not one tree; a forest type or grove spanning 20ha is not one identifiable point to stand at. One specimen within it, independently identified by name across multiple sources and an OSM natural_monument node as the 'Witch Tree', was pulled out and verified separately as mdr_005. Recording this explicitly so a future pass does not re-argue whether the grove itself should be an entry: it should not, only the individually identified specimen should."
+  },
+  {
+   "candidate": "Plane trees of Largo da Fonte, Monte (PDM codes 222, 'nucleo de platanos'; part of the 2008 Arvores Monumentais project)",
+   "species": "London plane (Platanus x hispanica)",
+   "reason": "All felled in August 2021 after a large branch fell (Publico 2021-08-13, JM Madeira 'Platanos ja estao todos cortados'): 15 planes and a chestnut, the last three cut later. Dead; never ship."
+  }
+ ]
 }

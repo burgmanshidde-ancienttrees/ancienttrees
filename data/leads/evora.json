@@ -1,0 +1,64 @@
+{
+  "city": "Evora",
+  "country": "Portugal",
+  "updated": "2026-10-29",
+  "about": "Leads from the 2026-10-29 verify pass for Evora (Alentejo). The ICNF register holds very few Evora-district trees; no city tree survey or Jardim Publico specimens found. Delivered: evr_001 Sobreira Grande (Arraiolos) in data/research/evora-verified.json.",
+  "leads": [
+    {
+      "name": "Azaruja olives (two, Courela do Ferreira)",
+      "species": "Olive (Olea europaea)",
+      "place": "Azaruja, Sao Bento do Mato, Evora",
+      "latitude": 38.68301475,
+      "longitude": -7.77353,
+      "source": "ICNF register KNJ1/603 (girth 6.9 m, height 4.8 m, age 1000 as register, measured 2011) and KNJ1/604 (girth 5.1 m, 4.7 m, same age, 18 m away at 38.68317643,-7.77335); Aviso n.6 of 01/06/2011 (snit-mais.dgterritorio.gov.pt/SRUP/AVISO%206_2011.pdf) classifies two olives at Courelas da Azaruja as public interest ('millennial appearance'); WebSearch summary of that notice",
+      "reason": "no photo or exact pin in reach; access unsettled (private courela, nothing says open; lifecheck NONE); register age 1000 is a classification impression, not a measurement. Possibly related to Monte da Oliveira Velha / Amor e Cego olive-oil visits (by appointment, a tasting 'near a 2000-year-old olive', promo text only), identity not established. PDF could not be read (no PDF tool). Fold the two as one point if ever published."
+    },
+    {
+      "name": "Eucalipto da Herdade da Gramacha",
+      "species": "Blue Gum (Eucalyptus globulus)",
+      "place": "Herdade da Gramacha, Nossa Senhora de Machede, Evora",
+      "latitude": 38.5998,
+      "longitude": -7.8144,
+      "source": "ICNF register KNJ1/337, D.R. n.90 II Serie 17/04/1999; girth 9.14 m, height 37 m, crown 30 m, measured 2006; Wikidata Q98444320",
+      "reason": "private herdade, no source says visitors may enter; no alive check; no photo. Girth 9.14 m for a blue gum is exceptional if the register's units are right; check units before any use."
+    },
+    {
+      "name": "Zambujeiro do Monte do Zambujeiro",
+      "species": "Wild Olive (Olea europaea var. sylvestris)",
+      "place": "Monte do Zambujeiro, Foros de Vale Figueira, Montemor-o-Novo",
+      "latitude": 38.6884,
+      "longitude": -8.3152,
+      "source": "ICNF register KNJ1/602, Aviso n.5 of 05/05/2011; girth 8.5 m, height 10 m, crown 19 m, age 1000 (register)",
+      "reason": "private monte, access unknown, no alive check, outside a walkable Evora cluster (about 38 km)."
+    },
+    {
+      "name": "Azinheira, Herdade do Pinheiro - Toirais",
+      "species": "Holm Oak (Quercus ilex ssp. rotundifolia)",
+      "place": "Montemor-o-Novo",
+      "source": "ICNF register KNJ1/317, D.R. n.81 II Serie 07/04/1997, age 120 (register, 2006)",
+      "reason": "young for its class, private herdade, no access evidence."
+    },
+    {
+      "name": "Parque da Caridade olives (four)",
+      "species": "Olive (Olea europaea)",
+      "place": "Parque da Caridade, Reguengos de Monsaraz",
+      "source": "ICNF register AIP071104116I to 119I, measured 2021, girths 2.8 to 6.0 m, register ages 890 to 1910 (1910 looks like corruption or an extreme estimate)",
+      "reason": "about 32 km from Evora, belongs to a Reguengos de Monsaraz pass; public park so access is probably fine, but no pins checked, no life check, ages implausible. Worth its own pass."
+    },
+    {
+      "name": "Oliveira junto ao Castelo do Alvito",
+      "species": "Olive (Olea europaea)",
+      "place": "Alvito (Beja district), about 35 km from Evora",
+      "latitude": 38.2581,
+      "source": "ICNF register KNJ1/541, Aviso n.1 of 07/01/2010, girth 5.6 m; Aviso text (per search summary) calls the classified olives hollow and decayed",
+      "reason": "not Evora; castle precinct access unverified; belongs to an Alvito pass."
+    },
+    {
+      "name": "Jardim Publico de Evora",
+      "place": "Evora city",
+      "source": "Garden laid out from 1863 (Cinatti), national monument 1910, per municipal and search sources",
+      "reason": "no named or measured tree found in any source; search found nothing. Nothing to verify without a tree survey."
+    }
+  ],
+  "blocked": []
+}
