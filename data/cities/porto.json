@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Porto's remarkable trees free to visit?",
-      "a": "Nearly all of them. Sixteen of the twenty-six stand in free public gardens or walkable university campuses: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, the Jardim da Cordoaria, and two University of Porto quintas a short walk further east. The one exception is the Camphor Tree of Via Panorâmica, which stands on a privately owned plot and is viewed from the public road rather than entered."
+      "a": "Nearly all of them. Eighteen of the twenty-eight stand in free public gardens or walkable university campuses: the Jardins do Palácio de Cristal, the Jardim Botânico do Porto, the Jardim da Cordoaria, and two University of Porto quintas a short walk further east. The one exception is the Camphor Tree of Via Panorâmica, which stands on a privately owned plot and is viewed from the public road rather than entered."
     },
     {
       "q": "Why is Porto called the City of Camellias?",
@@ -1080,6 +1080,96 @@
       },
       "girth_cm": 360,
       "how_to_recognise": "You can recognise them as four tulip trees, each about 22 metres tall with a leaf cut square at the tip, unlike anything else on the square. They stand beside the former Liceu D. Manuel II on Praca Pedro Nunes."
+    },
+    {
+      "id": "por_029",
+      "name": "The Himalayan Cedar of Palacete Burmester",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 340,
+      "height_m": 23.5,
+      "location": {
+        "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciencias, Universidade do Porto, Rua do Campo Alegre, Porto",
+        "latitude": 41.15256111,
+        "longitude": -8.640988889,
+        "neighbourhood": "Lordelo do Ouro e Massarelos"
+      },
+      "verified_sources": [
+        "ICNF national register of Arvoredo de Interesse Publico, processo AIP13121886I (data/registers/portugal-icnf.json): cedro-do-himalaia, girth 3.4 m, height 23.5 m, crown 17.5 m, last measured 2020, lugar 'FCUP - Faculdade de Ciencias da Universidade do Porto', no age on file",
+        "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico (Porto city council, Ambiente; fetched 2026-10-29): 'A classificacao abarca quatro exemplares: um castanheiro-da-india, um cedro-do-himalaia, um tulipeiro-da-virginia e um teixo, todos situados no jardim do Palacete Burmester, em terreno adstrito a Faculdade de Ciencias da Universidade do Porto'"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico, processo AIP13121886I",
+        "url": "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico"
+      },
+      "access": "Garden of the Palacete Burmester (Casa dos Livros) on the University of Porto Faculty of Sciences campus, Rua do Campo Alegre. Same garden as the horse chestnut and the yew of Palacete Burmester; no opening hours have been published for the garden itself.",
+      "transport": "STCP bus to Rua do Campo Alegre; the garden is a few hundred metres east of the Jardim Botanico do Porto.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Jardim do Palacete Burmester",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "Portugal's national register of protected trees lists one Himalayan cedar in the whole of Porto, and it is not the one in the Palacio de Cristal gardens. It is this one, in a small university garden on Rua do Campo Alegre, beside the Palacete Burmester, the house the University of Porto now runs as the Casa dos Livros.\n\nWhen the forest service measured it in 2020 it stood 23.5 metres tall, with a trunk 3.4 metres round and a crown 17.5 metres across. It was classified in one round with three neighbours in the same garden, a horse chestnut, a tulip tree and a yew. Four protected trees in one small garden looks like somebody planting with intent. No source names who, or when.\n\nThat silence runs all the way through. The register left the age column empty, and the city council's announcement of the classification gives no date either. A trunk of 3.4 metres says this cedar is mature. It does not say how mature, so this page prints no number, and the 2020 measurement is the latest anyone has published about it.\n\nThe garden sits on the Faculty of Sciences campus, a few hundred metres east of the Jardim Botanico do Porto, and no opening hours for it have been published. If you know when the Burmester garden was planted, or have an old photograph of this tree, tell us.",
+      "how_to_recognise": "You can recognise it as the only cedar among the four protected trees here, 23.5 metres tall with a trunk 3.4 metres round. It stands in the Jardim do Palacete Burmester, with a horse chestnut, a tulip tree and a yew.",
+      "verify_notes": "Fourth of four trees classified together in this garden (the other three are live: horse chestnut por_016 AIP13121885I, yew por_017 AIP13121888I, plus the tulip tree por_030). Register only plus the council announcement (which is a restatement of the same classification round, not an independent measurement): flagged 'register only', measured 2020 (within five years). Alive: not seen individually; lifecheck.py near the pin returned RECENT only for an iNaturalist observation 2026-03-06 (id 377098095) that was NOT checked to be this cedar, so it is not counted as evidence. Garden itself is alive and its sibling trees are published. Register gives no age; none invented. Register coordinate (8 decimals) not confirmed on a single crown from imagery in this pass, so approximate; the four classified trees are 10 to 100 m apart in one small garden. Cedrus deodara in Porto already has por_008 (Palacio de Cristal): note for writer to avoid repeating the species lead. Height 23.5 m and crown 17.5 m are plausible for the species. Earlier pass (data/leads/porto.json) held this only to avoid crowding; not a quality failure.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "por_030",
+      "name": "The Tulip Tree of Palacete Burmester",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 490,
+      "height_m": 36,
+      "location": {
+        "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciencias, Universidade do Porto, Rua do Campo Alegre, Porto",
+        "latitude": 41.15322222,
+        "longitude": -8.641427778,
+        "neighbourhood": "Lordelo do Ouro e Massarelos"
+      },
+      "verified_sources": [
+        "ICNF national register of Arvoredo de Interesse Publico, processo AIP13121887I (data/registers/portugal-icnf.json): tulipeiro-da-virginia, girth 4.9 m, height 36 m, crown 21.4 m, last measured 2020, lugar 'FCUP - Faculdade de Ciencias da Universidade do Porto', no age on file",
+        "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico (Porto city council, Ambiente; fetched 2026-10-29): names a tulipeiro-da-virginia among the four trees of interest classified in the garden of the Palacete Burmester"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico, processo AIP13121887I",
+        "url": "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico"
+      },
+      "access": "Garden of the Palacete Burmester (Casa dos Livros) on the University of Porto Faculty of Sciences campus, Rua do Campo Alegre. Same garden as the horse chestnut and the yew of Palacete Burmester; no opening hours have been published for the garden itself.",
+      "transport": "STCP bus to Rua do Campo Alegre; the garden is a few hundred metres east of the Jardim Botanico do Porto.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Jardim do Palacete Burmester",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "Porto's most celebrated tree is a tulip tree at Casa Tait, protected since 1950 and put at more than 250 years old. A little over a kilometre west, in a university garden that hardly anyone writes about, stands another that Portugal's forest register measured at the same height, 36 metres. Its trunk is 4.9 metres round, against five at Casa Tait. Its age column is empty.\n\nMatching measurements do not make matching ages, and nothing published dates this one. What the record does give is scale. The register measured it in 2020 with a crown 21.4 metres across, and it was classified in one round with three neighbours in the garden of the Palacete Burmester, the house the University of Porto now runs as the Casa dos Livros. The other three are a horse chestnut, a Himalayan cedar and a yew. Of the four it is by far the tallest, some twelve metres above the cedar.\n\nPorto seems to collect these trees. A third giant tulip tree stands at Casa Allen, about 330 metres away, and a fourth on the lawn at Casa Primo Madeira.\n\nCome in late October or November, when the leaves, cut square at the tip, turn clear yellow 36 metres up. The garden is on the Faculty of Sciences campus off Rua do Campo Alegre, a few hundred metres east of the Jardim Botanico do Porto; no opening hours for it have been published. If you know when this tree went in, tell us.",
+      "how_to_recognise": "You can recognise it by its height, 36 metres, the tallest of the four protected trees in this garden, with a trunk 4.9 metres round. It stands in the Jardim do Palacete Burmester, with a horse chestnut, a cedar and a yew.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when the crown turns clear yellow"
+      },
+      "verify_notes": "Same classification round and garden as por_029. Register only plus council announcement, measured 2020: flagged. Alive: not seen individually; lifecheck.py returned an iNaturalist observation 2025-06-18 (id 290611890) but that observation is a Japanese maple (Acer palmatum), so it is NOT evidence for this tree and was discarded. Girth 4.9 m with height 36 m and crown 21.4 m are plausible for a mature tulip tree; the girth is the largest of the four trees in the garden after the yew (5.8 m). Not the same tree as por_020 (Casa Allen tulip, AIP131218113I, 5.24 m, about 330 m away), por_001 or por_014, and not the blocked school tulip tree (KNJ1/009). Register gives no age; none invented. Approximate pin (register coordinate not placed on a crown).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "hero_tree_id": "por_008",

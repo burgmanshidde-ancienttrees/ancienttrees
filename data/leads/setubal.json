@@ -9,7 +9,8 @@
       "species": "Olea europaea",
       "lat": null,
       "lng": null,
-      "status": "lead",
+      "status": "verified_flagged",
+      "update_2026-10-29": "Delivered as stb_011 in data/research/setubal-verified.json, flagged: parish council confirms location and 'about 2,000 years per some specialists', 2016 blog describes roadside plaque; access still not stated by a source, life check NONE.",
       "why": "Three olives classified in 1959, decades before anything in the centre, with girths of 7.60m, 5.25m and 5.24m, so by far the largest trees in the municipality and claimed at roughly 2,000 years. Three blockers, all solvable: access is unconfirmed (they stand by the EN10 at Quinta Velha and no source says whether a visitor may approach, so hard rule 10's leave-it-out applies), the register's age field is corrupt for all three (it reads 2009, a year in an age column), and the 2,000-year claim needs checking against Portugal's other olive claims under hard rule 8. About 10 km west, within the day-trip boundary by TST bus. If access confirms, these beat everything on the published page."
     },
     {
@@ -27,6 +28,39 @@
       "lng": -8.89854,
       "status": "folded",
       "why": "Already published: folded into stb_003 (\"The Silky Oaks of Largo Marques de Pombal\"), whose story explicitly covers both trees ('there are two of them here'). Registered separately (KNJ1/520) but standing metres from its twin and distinguished only by girth, so it was deliberately given no pin of its own. Same for KNJ1/524 (stone pine) and KNJ1/527 (black poplar): three registered trees folded into their siblings' pages to avoid near-identical entries. Marked 'folded' 2026-08-23 after leads.py's READY check surfaced this as needing a story, which it does not: the status field just hadn't been updated when the folding decision was made."
+    }
+    ,
+    {
+      "name": "Sobreiro of Campo Desportivo de Lagameças (KNJ1/229)",
+      "species": "Quercus suber",
+      "lat": 38.5983,
+      "lng": -8.7636,
+      "status": "lead",
+      "why": "Palmela concelho, about 14 km. Register only (girth 3.6 m, age 100, Wikidata Q98444726); lifecheck NONE, no web source found, no photo or confirmed pin in reach. 2026-10-29 pass."
+    },
+    {
+      "name": "Pinheiro Ramundo, Lagoa do Calvo (KNJ1/228)",
+      "species": "Pinus pinea",
+      "lat": 38.6834,
+      "lng": -8.7415,
+      "status": "lead",
+      "why": "Palmela concelho but about 20 km north; register only (girth 3.75 m), not checked this pass, outside the Setubal walking area."
+    },
+    {
+      "name": "Pinheiro-manso, Azenha da Ordem EN379 km 17.3 (KNJ1/047)",
+      "species": "Pinus pinea",
+      "lat": 38.49336,
+      "lng": -9.05539,
+      "status": "lead",
+      "why": "Sesimbra concelho, outside the Setubal area; register only (girth 4.48 m, Wikidata Q98444740), not checked this pass."
+    },
+    {
+      "name": "Sobreiro Assobiador, Aguas de Moura",
+      "species": "Quercus suber",
+      "lat": 38.5866,
+      "lng": -8.6909,
+      "status": "folded",
+      "why": "Already published as its own place (data/cities/aguas-de-moura.json); not a Setubal entry. Magnolias on Avenida Luisa Todi: re-searched 2026-10-29, still no register or second source."
     }
   ],
   "open_questions": [
