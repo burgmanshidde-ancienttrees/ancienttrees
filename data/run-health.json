@@ -2,52 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-04T20:00:20+00:00",
-   "date": "2026-09-04",
-   "run_id": "33914001785",
-   "minutes": 60.0,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 349,
-   "denials": 22,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(mkdir), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 13306455,
-   "claims_held": [
-    "valencia"
-   ],
-   "commits": 13,
-   "cities_touched": 6,
-   "cities": [
-    {
-     "city": "rotterdam",
-     "trees": 3
-    },
-    {
-     "city": "fujikawaguchiko",
-     "trees": 1
-    },
-    {
-     "city": "ito",
-     "trees": 1
-    },
-    {
-     "city": "shiwa",
-     "trees": 1
-    },
-    {
-     "city": "valencia",
-     "trees": 1
-    },
-    {
-     "city": "yabu",
-     "trees": 1
-    }
-   ],
-   "trees": 8,
-   "logged": true
-  },
-  {
    "started": "2026-09-04T22:59:22+00:00",
    "date": "2026-09-04",
    "run_id": "33927725576",
@@ -22966,6 +22920,58 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-29T13:02:49+00:00",
+   "date": "2026-10-29",
+   "run_id": "40878300099",
+   "minutes": 62.9,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 162,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(cat ; import ; ? ; ? ...), Bash(cat ; import ; for ; ? ...)",
+   "ended": "success",
+   "tokens": 365921,
+   "claims_held": [],
+   "commits": 9,
+   "cities_touched": 8,
+   "cities": [
+    {
+     "city": "monchique",
+     "trees": 3
+    },
+    {
+     "city": "canberra",
+     "trees": 2
+    },
+    {
+     "city": "porto",
+     "trees": 2
+    },
+    {
+     "city": "coimbra",
+     "trees": 1
+    },
+    {
+     "city": "madeira",
+     "trees": 1
+    },
+    {
+     "city": "san-francisco",
+     "trees": 1
+    },
+    {
+     "city": "sao-bras-de-alportel",
+     "trees": 1
+    },
+    {
+     "city": "vale-do-pereiro",
+     "trees": 1
+    }
+   ],
+   "trees": 12,
    "logged": true
   }
  ],
