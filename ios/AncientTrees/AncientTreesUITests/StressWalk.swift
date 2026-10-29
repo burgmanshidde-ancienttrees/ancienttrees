@@ -42,6 +42,9 @@ final class StressWalk: XCTestCase {
         "privacy", "terms", "legal",            // these open Safari
         "continue with apple", "continue with google",
         "take me there",                        // hands over to Maps
+        // Both left the app in CI on 2026-10-28 (state runningBackground, not a
+        // crash): the first hands over to Mail, the second to the system picker.
+        "send feedback", "change photo",
     ]
 
     override func setUpWithError() throws {
