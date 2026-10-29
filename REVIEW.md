@@ -23,6 +23,13 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-29
+
+Web half: the last 24 hours changed no site pages beyond the profile bar (face opens the profile), find-people on the web and outreach/mail-voice files. No em dashes in built English HTML. Findings:
+
+- WARN (tenth review to see it) meta description prints a planting or event year as an age: `grep` of site/dist finds 94 pages with `A 17xx-20xx-year-old` (e.g. /riverside/roosevelt-palm). Hard rule 2, Verify (a derived age states its basis). `grep -c "year-old" scripts/qa.py` is still 0, so nothing refuses it and prose has not held for ten days. Build the qa.py check on built HTML first (a year 1700 to 2025 directly before "-year-old"), then fix the meta template.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". Made false by CLAUDE.md "Good reader input IS the source" (2026-10-12) and the 2026-10-21 Tangier ruling. Fourth review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Fix the translations too.
+
 ## 2026-10-28
 
 Web half: the last 24 hours were the second-ambassador line, the Crann guest article drafts, Ede and Canberra registers, the Venice cedar redirect and enrichment of Lisbon, Bamberg and Potsdam. Nothing user-facing on the site changed except the redirect. Findings:
