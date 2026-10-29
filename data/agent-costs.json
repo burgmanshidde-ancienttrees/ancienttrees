@@ -1,6 +1,24 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-29": [
+   {
+    "date": "2026-10-29",
+    "target": "sintra",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "Sintra concelho register rows all published or blocked; other unmined candidates are Cascais/Lisbon rows; no new verifiable trees"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "guimaraes",
+    "kind": "verify",
+    "tokens": 85000,
+    "trees": 0,
+    "note": "register mined out, remaining leads fail access or transport, no new evidence"
+   }
+  ],
   "2026-10-28": [
    {
     "date": "2026-10-28",

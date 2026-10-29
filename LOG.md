@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-29, night run (window from 13:02 UTC): Portugal verify passes on Sintra and Guimaraes found nothing
+
+Rungs 1 and 2 clear (iOS fix for StressWalk already pushed and running). Rung 5, Portugal first: verify passes on Sintra and Guimaraes both came back with 0 trees. Sintra's 23 "unmined" register rows are Cascais/Lisbon rows inside the 20 km radius, and every row in Sintra concelho is published or blocked; Guimaraes' register rows are all live, leads or blocked, and the remaining leads (Casa de Margaride by appointment, Briteiros pine transport unclear) still fail. Both are 48h walls. Sintra's only untried angle is a Parques de Sintra tree inventory or dendrology literature; passcheck's 20 km radius lists other towns' rows as Sintra candidates. Portugal's registers look mined out; more needs a new source type, not another register pass. For Hidde: nothing.
+
 ## 2026-10-29, night run fourth attempt: nothing shipped, shelf still photo-blocked
 
 No claims standing. READY is 3 (oxford 2, madrid 1), under the six floor. The written-and-waiting trees (canberra can_002/can_003, fort-worth ftw_018, texas-famous txf_004, san-francisco sfo_013; sfo_012 has no story) all lack an approved photograph, so ADD_NEEDS_PHOTO keeps them out. Several research files list duplicates within 50 m (las-vegas lvg_015/016, london lon_031, munich muc_062, sfo_014/015, txf_001 to 003, wdc_017, a28_001) and need folding into leads by hand. A famous-philippines id clash (phl_003) needs a free id before any merge. Next useful work remains a photo or archive ask for these held trees. For Hidde: nothing.
