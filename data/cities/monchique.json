@@ -1,0 +1,141 @@
+{
+  "city": "Monchique",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Monchique maps three trees, all classified by Portugal's forest service: a plane 41 metres tall beside a watermill in the Barranco dos Pisoes, a Norfolk Island pine of 36.5 metres on the terrace of the municipal park, and a Monchique oak, a species critically endangered in Portugal, on the EN 267 towards Alferce. The village sits high in the Serra de Monchique, about an hour and a half from Lagos by bus with a change in Portimao.",
+  "meta_description": "Three classified trees in Monchique, Algarve: a 41-metre plane by a mill, a Norfolk Island pine in the park and a rare Monchique oak.",
+  "question_meta": "Monchique's mapped trees are a 41-metre plane by a mill, a Norfolk Island pine in the municipal park and a rare Monchique oak.",
+  "question_answer": "Monchique's mapped trees are three Trees of Public Interest: the Barranco dos Pisoes plane, 41 metres tall and classified in 1947, the Norfolk Island pine of the Quinta da Vila in the municipal park, and a Monchique oak beside the EN 267. The forest service gave each an age of about 150 years when it measured them in 2006.",
+  "question_context": "All three are on the national register of Trees of Public Interest kept by the ICNF, Portugal's forest service, and on the town's own list. The plane was protected first, in 1947, the other two in 1993. The plane stands at the entrance to the Barranco dos Pisoes leisure area beside the Poucochinho mill, on the PR4 Trilho dos Moinhos walk about two kilometres from the centre. The araucaria rises over a small terrace of the Parque Municipal and is visible from across the village; a second, taller classified araucaria at the Quinta do Viador is a different tree. The oak is a Quercus canariensis, which in Portugal grows wild only in the Serra de Monchique and the Mira basin, and it is a roadside view on a national road with no footpath. Monchique is reached by bus from Portimao in about 40 to 50 minutes, and from Lagos in about an hour and a half with a change in Portimao.",
+  "hero_tree_id": "mnq_001",
+  "oldest_tree_id": "mnq_001",
+  "faq": [
+    {
+      "q": "What trees are mapped in Monchique?",
+      "a": "Monchique's mapped trees are three Trees of Public Interest: the Barranco dos Pisoes plane, 41 metres tall and classified in 1947, the Norfolk Island pine of the Quinta da Vila in the municipal park, and a Monchique oak beside the EN 267. The forest service gave each an age of about 150 years when it measured them in 2006."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mnq_001",
+      "name": "Barranco dos Pisoes plane tree",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "age_basis": "source",
+      "girth_cm": 510,
+      "height_m": 41,
+      "location": {
+        "address": "Barranco dos Pisoes (entrance to the leisure area, beside the Poucochinho mill), Monchique",
+        "latitude": 37.3325,
+        "longitude": -8.5679,
+        "neighbourhood": "Monchique"
+      },
+      "location_precision": "approximate",
+      "story": "Portugal's forest service measures this plane tree at 41 metres, and it grows at the bottom of a stream valley beside an old watermill. The state classified it as a Tree of Public Interest in 1947, and the register's other numbers keep pace with the height. The trunk is 5.1 metres round and the crown spreads 26 metres across.\n\nIts age is a rounder figure. When the forest service measured the tree in 2006 it gave 150 years, which would make it about 170 now, and the town's list of protected trees and the trail leaflet both repeat the 150. Nobody has published a ring count, so read it as somewhere between 120 and 180.\n\nThe Serra de Monchique has had a rough few years. In August 2018 a wildfire burned through Monchique. This tree, down in the damp of the Barranco dos Pisoes, was recorded alive in July 2026.\n\nIt marks the entrance to the Barranco dos Pisoes leisure area, beside the Poucochinho mill, and the PR4 Trilho dos Moinhos, the waymarked walk of the mills, passes right by it. From the Sao Sebastiao square in the middle of Monchique it is about two kilometres on foot, free and open on public tracks. Our pin is the register's coordinate rather than a fix taken at the trunk, so trust the mill more than the dot.",
+      "how_to_recognise": "You can recognise it by its size, 41 metres tall by the register with a trunk 5.1 metres round. It stands at the entrance to the Barranco dos Pisoes leisure area, beside the Poucochinho mill.",
+      "verified_sources": [
+        "https://geocatalogo.icnf.pt/metadados/arv_class.html (ICNF Arvoredo de Interesse Publico, processo KNJ1/078, data/registers/portugal-icnf.json)",
+        "https://www.cm-monchique.pt/upload_files/client_id_1/website_id_1/Concelho/cultura/P_natural/arvores_centenarias/arvoresmonumentais.pdf (Camara Municipal de Monchique list of Arvores de Interesse Publico: Barranco dos Pisoes, plátano-vulgar, D.G. 105 of 08/05/1947, 150 years)",
+        "https://viaalgarviana.org/en/627/monumental-trees-route-monchique (Via Algarviana Monumental Trees Route, Monchique); PR4 MCQ Trilho dos Moinhos leaflet describes this plane as about 150 years and 41 m"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico KNJ1/078",
+        "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+      },
+      "access": "On the PR4 MCQ Trilho dos Moinhos waymarked walk, at the entrance to the Barranco dos Pisoes leisure area; geocaching listing for the walk says it runs 24/7 on public tracks. Free.",
+      "transport": "About 2 km from Monchique centre (Sao Sebastiao Square, tourist office) on foot; Monchique reached by bus from Portimao (roughly 40 to 50 min); Lagos to Monchique about 1.5 h by bus with a change in Portimao.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "verify_notes": "Register facts (ICNF): classified 1947 (D.G. n. 105, II Serie, 08/05/1947), register age 150 (measured 2006, so about 170 now), girth 5.1 m, height 41 m, crown 26 m. Register coordinate is the pin; not matched to a mapped trunk, so approximate. Alive: iNaturalist observation 2026-07-11 (https://www.inaturalist.org/observations/380601928) within the lifecheck radius of the register coordinate. Geocaching listing GC9V9E6 (a lead, not a source) places the plane at the leisure-area entrance beside the Poucochinho mill, matching the register place name. Monchique burned in August 2018; this valley tree is recorded alive in 2026. Recognise: tallest of the Monchique classified trees at 41 m by the register, a plane in a stream valley beside a mill. Day trip, not a Lagos walk: Monchique is about 1.5 h from Lagos by public transport, so it belongs to a Monchique place, not Lagos."
+    },
+    {
+      "id": "mnq_002",
+      "name": "Norfolk Island pine of the Quinta da Vila",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "age_basis": "source",
+      "girth_cm": 410,
+      "height_m": 36.5,
+      "location": {
+        "address": "Quinta da Vila de Monchique, small terrace of the Parque Municipal, Monchique",
+        "latitude": 37.3181,
+        "longitude": -8.5547,
+        "neighbourhood": "Monchique"
+      },
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Quinta da Vila terrace, Parque Municipal",
+        "radius_m": 50
+      },
+      "story": "The tree you can see from all over Monchique did not come from these hills. It is a Norfolk Island pine, a conifer whose wild home is one small island in the South Pacific, and here it rises 36.5 metres over the terrace of the Quinta da Vila, in the village's municipal park.\n\nPortugal made it a Tree of Public Interest in 1993. The forest service measured it in 2006 at 4.1 metres round the trunk, with a crown 19 metres across, and gave its age as 150 years. That is an estimate rather than a planting record, and we have found no source that says who brought it here or when, so take it as roughly 120 to 180 years.\n\nDo not mix it up with its neighbour in the register. Monchique has a second classified araucaria, at the Quinta do Viador, which the forest service puts taller still at 44 metres. This one stands on the park terrace.\n\nThe most recent sighting we found, from May 2025, was close to the register's point but not certainly this trunk. If you have stood under it lately, tell us. The park is free and a few minutes on foot from the Sao Sebastiao square; we did not find published opening hours. Our pin is the register's coordinate, so look for the terrace and then look up.",
+      "how_to_recognise": "You can recognise it by its height, 36.5 metres by the register, which makes it visible from across the village. It stands on the small terrace of the Parque Municipal at the Quinta da Vila, not at the Quinta do Viador.",
+      "verified_sources": [
+        "https://geocatalogo.icnf.pt/metadados/arv_class.html (ICNF processo KNJ1/235, data/registers/portugal-icnf.json)",
+        "https://www.cm-monchique.pt/upload_files/client_id_1/website_id_1/Concelho/cultura/P_natural/arvores_centenarias/arvoresmonumentais.pdf (municipal list: Quinta da Vila de Monchique, araucaria-de-norfolk, D.R. 190 of 14/08/1993, 150 years)",
+        "https://viaalgarviana.org/627/rota-das-arvores-monumentais-monchique (Via Algarviana leaflet: classified araucaria at Quinta da Vila, small terrace of the Parque Municipal, visible from all of the village)"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico KNJ1/235",
+        "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+      },
+      "access": "Municipal park (Parque Municipal) in Monchique village; free. Opening hours not found.",
+      "transport": "In Monchique village, a few minutes on foot from Sao Sebastiao Square; bus from Portimao about 40 to 50 min.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "verify_notes": "Register: classified 1993 (D.R. n. 190, II Serie, 14/08/1993), register age 150 (measured 2006), girth 4.1 m, height 36.5 m, crown 19 m. Two sources plus owner of the ground (municipality). Alive: iNaturalist observation 2025-05-24 (https://www.inaturalist.org/observations/287259588) near the register coordinate; observation not confirmed to be the araucaria itself, so alive is flagged moderate. Do not confuse with the Quinta do Viador araucaria (KNJ1/234, 44 m), a separate classified tree. The park is a small named site, but the Parque Municipal as a whole is a park; radius 50 m is a judgement on the terrace only. Via Algarviana says the tree is visible from across the village. Day trip from Lagos (about 1.5 h)."
+    },
+    {
+      "id": "mnq_003",
+      "name": "Monchique oak at Alferce",
+      "species": "Algerian Oak (Quercus canariensis)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "age_basis": "source",
+      "girth_cm": 310,
+      "height_m": 25,
+      "location": {
+        "address": "EN 267 km 32.82, Alferce to Monchique road, Monchique",
+        "latitude": 37.31737631,
+        "longitude": -8.54339388,
+        "neighbourhood": "Monchique, EN 267"
+      },
+      "location_precision": "approximate",
+      "story": "Portugal's forest service has classified two Monchique oaks as Trees of Public Interest, and one of them grows on the edge of a national road. The species is rare enough to matter. In Portugal it grows wild only in the Serra de Monchique and the Mira basin, and it is listed there as critically endangered. Locally it goes by the town's own name, carvalho-de-monchique; botanists call it Quercus canariensis.\n\nThis one stands at kilometre 32.82 of the EN 267, the road from Monchique east towards Alferce, about a kilometre out of the centre. It was classified in 1993. When the register measured it in 2006 it stood 25 metres tall, 3.1 metres round, with a crown 23 metres wide, almost as broad as it is high. The register's age is 150 years, the same round figure it gives the town's classified plane and araucaria, so treat it as an estimate somewhere between 120 and 180.\n\nTwo things we could not settle. Nobody we found has recorded this trunk alive recently; a 2026 sighting near the register's point was not confirmed as this tree. And we did not establish a safe place to stop. It is a roadside view, and walking out from the village means walking the road itself, with no footpath. Our pin is the register's coordinate on the road line.\n\nIf you have seen it standing, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, 23 metres across on a tree 25 metres tall. It stands beside the EN 267 at kilometre 32.82, about a kilometre east of Monchique on the road to Alferce.",
+      "verified_sources": [
+        "https://geocatalogo.icnf.pt/metadados/arv_class.html (ICNF processo KNJ1/236, data/registers/portugal-icnf.json)",
+        "https://www.cm-monchique.pt/upload_files/client_id_1/website_id_1/Concelho/cultura/P_natural/arvores_centenarias/arvoresmonumentais.pdf (municipal list: E.N. 267 Km 32,82 Alferce-Monchique, carvalho-de-monchique, D.R. 190 of 14/08/1993, 150 years)",
+        "https://postal.pt/nacional/monchique-quer-conservar-carvalhos-autoctones/ (Postal: one of two ICNF-classified Monchique oaks stands on the EN 267 at Alferce, classified 1993)"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico KNJ1/236",
+        "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+      },
+      "access": "Standing by a national road (EN 267); roadside view. Whether there is a safe place to stop or a public path was not established.",
+      "transport": "On the EN 267 about 1 km east of Monchique centre; walkable from the village along the road (not a footpath, flagged). Bus from Portimao to Monchique about 40 to 50 min.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Register: classified 1993, register age 150 (measured 2006), girth 3.1 m, height 25 m, crown 23 m. Species is the Monchique oak, critically endangered in Portugal and wild only in the Serra de Monchique and the Mira basin (Barlavento, https://www.barlavento.pt/?p=249669). Alive: iNaturalist observation 2026-04-18 (https://www.inaturalist.org/observations/357454649) was found near the Pe da Cruz coordinate, not confirmed on this trunk; the EN 267 tree itself has no dated recent observation found, so flagged. Roadside access not settled; pin is the register coordinate on the road line, approximate. The second classified Monchique oak (Pomar Velho, KNJ1/320, 3.78 m girth, 28 m, classified 1997) is in leads: no recent observation, location 'Pomar Velho' only."
+    }
+  ]
+}

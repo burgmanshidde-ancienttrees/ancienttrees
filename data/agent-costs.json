@@ -84,6 +84,22 @@
    },
    {
     "date": "2026-10-29",
+    "target": "lagos",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 3,
+    "note": "Lagos town empty; three Monchique classified trees via ICNF, municipal list and Via Algarviana"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "monchique",
+    "kind": "write",
+    "tokens": 50000,
+    "trees": 3,
+    "note": "mnq_001 to mnq_003 as new lone-tree place monchique"
+   },
+   {
+    "date": "2026-10-29",
     "target": "madeira, vale-do-pereiro",
     "kind": "write",
     "tokens": 73000,
