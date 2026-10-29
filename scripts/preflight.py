@@ -1265,7 +1265,11 @@ def check_no_new_thin_places():
 # commit with nobody looking. No honest day comes near it. The note that
 # used to fire at 10 is gone; nothing nags below the guard.
 PACE_PER_DAY = None
-PACE_HARD_CAP = 60
+# 25 since 2026-10-29 (Hidde, "yes", when trees without a photograph shipped
+# again and he asked whether 15 was too careful): steady growth, not the
+# ~40 a day of the burst before the demotion. Own trees only; a reader's tree
+# never waits for the pace.
+PACE_HARD_CAP = 25
 
 
 def check_publishing_pace():
@@ -1294,6 +1298,8 @@ def check_publishing_pace():
     if not base:
         return []
 
+    from findable import reader_added
+
     def ids_from(texts):
         out = set()
         for txt in texts:
@@ -1302,6 +1308,8 @@ def check_publishing_pace():
             except ValueError:
                 continue
             for t in d.get("trees") or []:
+                if reader_added(t):
+                    continue
                 if t.get("story") and (t.get("location") or {}).get("latitude") is not None:
                     out.add(t.get("id"))
         return out
@@ -1344,8 +1352,8 @@ def check_publishing_pace():
         return []
     new = len(now - before)
     if new > PACE_HARD_CAP:
-        return ["publishing pace: %d new trees in the last 24 hours, past the runaway cap of %d "
-                "(the burst before the demotion was about that). Commit the best %d, keep the "
+        return ["publishing pace: %d new trees of our own in the last 24 hours, past the cap of %d "
+                "(Hidde, 2026-10-29: steady growth while Google recovers). Commit the best %d, keep the "
                 "rest in data/research/ and write them tomorrow." % (new, PACE_HARD_CAP, PACE_HARD_CAP)]
     if PACE_PER_DAY is not None and new > PACE_PER_DAY:
         return ["NOTE publishing pace: %d new trees in the last 24 hours against a preferred %d "

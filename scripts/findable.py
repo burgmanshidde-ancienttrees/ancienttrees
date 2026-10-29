@@ -112,7 +112,7 @@ ADD_NEEDS_RICH = False
 # same morning it was lifted for Portugal alone. Google sends almost nobody; the
 # app and the press do, and a tree without a photo is somewhere to go and
 # something for a reader to add. Every tree without reader content carries the
-# googlebot noindex, and check_publishing_pace()'s 60 a day stays as the guard
+# googlebot noindex, and check_publishing_pace()'s 25 a day is the guard
 # against the many-pages-at-once shape. True brings the rule back.
 ADD_NEEDS_PHOTO = False
 # When the rule is on, the countries it skips.

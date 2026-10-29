@@ -229,7 +229,7 @@ def pipeline_status():
     else:
         print("      NEW TREES WITHOUT A PHOTOGRAPH SHIP (Hidde, 2026-10-29: \"it invites people to go visit them\"):")
         print("      readers and Bing see them, Google only once a reader adds to them. Findable still applies,")
-        print("      and so does the 60-a-day pace. Write the READY leads and the trees awaiting a writer.")
+        print("      and so does the 25-a-day pace. Write the READY leads and the trees awaiting a writer.")
     # Rung 1 before any of the stages below it, because a photograph somebody
     # walked to a tree to take outranks anything the machine found by itself.
     # Printed here rather than left to memory: the queue is written by a
