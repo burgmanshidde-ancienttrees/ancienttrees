@@ -319,12 +319,15 @@ def pipeline_status():
     STAGED_FIRST = [s for s in ok if qc.get(s) in supply and s not in walls]
     if walls:
         print("  walls (verified empty in the last 48h, do not re-verify): %s" % " ".join(sorted(walls)))
-    ok.sort(key=lambda s: (qc.get(s) not in supply, s))
+    def focus_rank(country):  # SUPPLY_FOCUS is in priority order (Portugal first, 2026-10-29)
+        return supply.index(country) if country in supply else len(supply)
+    ok.sort(key=lambda s: (focus_rank(qc.get(s)), s))
+    STAGED_FIRST.sort(key=lambda s: (focus_rank(qc.get(s)), s))
     parked = [s for s in names if s not in ok]
     print("  staged for verify : %d claimable  %s" % (
         len(ok), " ".join("%s%s" % (s, "*" if qc.get(s) in supply else "") for s in ok) or "(empty)"))
     if ok:
-        print("      (* = where the visitors are: the US, the UK, Germany, Austria. Take those first.)")
+        print("      (* = focus, in this order: %s. Take those first.)" % ", ".join(supply))
     if parked:
         print("  parked            : %d staged file(s) a verify claim would refuse, or "
               "whose coordinates cannot become a confirmed pin" % len(parked))
@@ -724,7 +727,8 @@ def main():
         [c for c in queue if c.get("rank")
          and (not proven or c["slug"] in proven)
          and (not focus or c.get("country") in focus)],
-        key=lambda c: (c.get("country") not in supply, c["rank"]))
+        key=lambda c: (supply.index(c.get("country")) if c.get("country") in supply else len(supply),
+                       c["rank"]))
     done = 0
     for c in order:
         if done >= STAGE_LIMIT:
