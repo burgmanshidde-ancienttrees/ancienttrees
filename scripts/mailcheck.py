@@ -193,6 +193,17 @@ CHECKS = [
         r"vicino ad? Amsterdam,? e sto", r"bij Amsterdam,? en ik bouw",
         r"Ancient Trees,[^.\n]{0,120}\b(?:now|already|inzwischen|déjà|ya|já|già|inmiddels) in \d+",
     ]),
+    # Hidde, 2026-10-29, on "It started in Lisbon, where I walked the parks on
+    # work trips and kept stopping at the old jacarandas and fig trees":
+    # "use my personal words or once we agreed on instead of making up new
+    # sentences that again feel ai". A first mail copies the agreed intro
+    # (drafts/HIS_VOICE.md, drafts/nature-template.md); the Lisbon story is in
+    # the Wilder article, which goes in the P.S.
+    ("ORIGIN STORY IN A FIRST MAIL (copy the agreed intro, Wilder in the P.S.)", [
+        r"[Ii]t started in Lisbon", r"[Hh]et begon in Lissabon", r"[Aa]ngefangen hat es in Lissabon",
+        r"[Cc]omeçou em Lisboa", r"[Ee]mpezó en Lisboa", r"commencé à Lisbonne",
+        r"[Èè] (?:iniziato|cominciato) a Lisbona", r"kept stopping at the old",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",

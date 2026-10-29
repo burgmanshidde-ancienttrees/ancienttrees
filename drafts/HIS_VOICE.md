@@ -291,7 +291,15 @@ Then he wrote the paragraph himself and named the strategy: **"telling them how 
 
 So when somebody says they are busy but leaves an opening: first say you understand, without a "but". Then name the ways anyone could help as options ("if someone does have time"), not as a task for them: missing trees, a photo with the app in passing, sharing the app on their site or in a mail. Close with "either way, thanks" so nothing hangs on it. The App Store link belongs here, in the sentence about the photo ("het is geen harde weigering, je moet m goed plaatsen"): a reason beside it, never as a plug on its own at the end. mailcheck lets it through only in that paragraph. Never set them a specific job (pick a handful, check the list). This is the one place where more than one way to help is fine, because nothing is being asked of them in particular.
 
-## His standard intro: who we are (Hidde, 2026-10-22)
+## His standard intro: who we are (Hidde, 2026-10-22; replaced for first mails 2026-10-29)
+
+**A first mail to a stranger uses the agreed text, word for word, and nothing new** (Hidde, 2026-10-29, on the Ottawa archive mail's Lisbon line: "use my personal words or once we agreed on instead of making up new sentences that again feel ai"):
+
+> My name is Hidde, I live in Baarn near Amsterdam. I'm building Ancient Trees, a worldwide map of remarkable old trees worth a walk. My goal is to get people excited about old trees and get them outside to go and see them.
+
+then the one thing that concerns them, the ask, "Thanks,\nHidde", and Wilder only as the P.S. in its agreed form (drafts/nature-template.md). The Lisbon origin story stays out of first mails; it is in the Wilder article. Two sentences for who and what ("this sentence is way to long", same day). The only sentences a session writes itself are the ones about their trees and the ask; everything around them is copied. mailcheck's ORIGIN STORY IN A FIRST MAIL and INTRO IN ONE LONG SENTENCE.
+
+The Peter Raggers intro below is kept for replies to someone who asked who we are.
 
 When a mail has to say who we are (a first mail, or somebody who asked), reuse the intro sent to Peter Raggers on 2026-10-21. Hidde: "the intro you gave to Peter yesterday was better, please remember that one and reuse." My "I'm Hidde, I live in Baarn, about 30 minutes from Amsterdam" on its own "makes no sense": where he lives only works joined to what he does ("and I work on Ancient Trees").
 
