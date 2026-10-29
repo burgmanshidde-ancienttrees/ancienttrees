@@ -217,13 +217,18 @@ def pipeline_status():
     print("      claim it (passcheck.py --claim <city> --kind enrich, push), verify agent on the brief, then enrich.py --apply out/enrich/<city>.answer.json")
     print("      A pass that closed nothing: enrich.py --done <city> (dead-ends the briefed gaps, 90 days). Only when this says nothing to do,")
     print("      take the rest of THE LINE below (new trees, refill, backup).")
-    from findable import ADD_NEEDS_RICH
+    from findable import ADD_NEEDS_RICH, ADD_NEEDS_PHOTO, PHOTO_EXEMPT_COUNTRIES
     if ADD_NEEDS_RICH:
         print("      NEW TREES ship only RICH (findable + register + measurement + access) or reader-sent (Hidde, 2026-10-09);")
         print("      preflight refuses the rest, so a verify pass delivers those fields or files the tree as a lead.")
+    elif ADD_NEEDS_PHOTO:
+        print("      NEW TREES need an APPROVED PHOTOGRAPH (Hidde, 2026-10-22), except in %s (Hidde, 2026-10-29:"
+              % ", ".join(sorted(PHOTO_EXEMPT_COUNTRIES) or ["nowhere"]))
+        print("      \"focus on portugal for now\"), where a findable tree ships without one and readers add it.")
+        print("      Elsewhere a lead without a photo waits. Write the READY leads and the trees awaiting a writer.")
     else:
-        print("      NEW TREES WITHOUT A PHOTOGRAPH SHIP AGAIN (Hidde, 2026-10-18): readers and Bing see them, Google")
-        print("      only once they have a photograph. Write the READY leads and the trees awaiting a writer.")
+        print("      NEW TREES WITHOUT A PHOTOGRAPH SHIP: readers and Bing see them, Google only once they have one.")
+        print("      Write the READY leads and the trees awaiting a writer.")
     # Rung 1 before any of the stages below it, because a photograph somebody
     # walked to a tree to take outranks anything the machine found by itself.
     # Printed here rather than left to memory: the queue is written by a

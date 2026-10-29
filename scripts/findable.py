@@ -108,6 +108,12 @@ ADD_NEEDS_RICH = False
 # data/photo-baseline.json and stay (hard rule 3). preflight's
 # check_a_new_tree_has_a_photograph() reads this; False needs Hidde.
 ADD_NEEDS_PHOTO = True
+# Except here (Hidde, 2026-10-29, "focus on portugal for now", then yes to new
+# trees there without a photograph): Portugal is where readers send photos and
+# ask to be ambassadors, so a photo-less tree is an invitation, and it carries
+# the googlebot noindex like every tree without reader content. An empty set
+# puts Portugal back under the rule.
+PHOTO_EXEMPT_COUNTRIES = {"Portugal"}
 
 
 # OWN SUPPLY PAUSED WHILE GOOGLE RECOVERS (Hidde, 2026-10-22, "moeten we de

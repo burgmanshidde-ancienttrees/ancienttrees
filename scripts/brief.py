@@ -443,6 +443,14 @@ def main():
         cities = json.loads((ROOT / "data" / "city-list.json").read_text())["cities"]
         done = [c for c in cities if c["status"] != "pending"]
         nxt = next((c["city"] for c in cities if c["status"] == "pending"), "none")
+        try:  # a country Hidde put first leads, as city_queue.py --next prints it
+            sys.path.insert(0, str(ROOT / "scripts"))
+            from city_queue import FIRST_COUNTRY, country_first, load_source
+            first = country_first(load_source())
+            if first:
+                nxt = f"{first[0]['city']} ({FIRST_COUNTRY} first)"
+        except Exception:
+            pass
         trees = approx = photos = 0
         for f in sorted((ROOT / "data" / "cities").glob("*.json")):
             for t in json.loads(f.read_text()).get("trees", []):

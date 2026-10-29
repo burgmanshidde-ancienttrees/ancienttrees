@@ -1688,7 +1688,7 @@ def check_a_new_tree_has_a_photograph():
     exempt: the person who stood there is the source. Trees live on 10-22 are
     in data/photo-baseline.json and keep their pages. Removing this needs Hidde.
     """
-    from findable import ADD_NEEDS_PHOTO, has_approved_photo, reader_added
+    from findable import ADD_NEEDS_PHOTO, PHOTO_EXEMPT_COUNTRIES, has_approved_photo, reader_added
     if not ADD_NEEDS_PHOTO:
         return []
     try:
@@ -1700,6 +1700,8 @@ def check_a_new_tree_has_a_photograph():
     for path in sorted(glob.glob("data/cities/*.json")):
         with open(path, encoding="utf-8") as fh:
             city = json.load(fh)
+        if city.get("country") in PHOTO_EXEMPT_COUNTRIES:  # Hidde, 2026-10-29
+            continue
         for tree in city.get("trees", []):
             if tree.get("id") in base or reader_added(tree) or has_approved_photo(tree):
                 continue

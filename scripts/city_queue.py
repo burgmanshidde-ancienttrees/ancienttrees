@@ -642,6 +642,27 @@ def supply_of(c):
     return (c.get("register") or 0) + (c.get("wikidata") or 0) + (c.get("ready") or 0)
 
 
+FIRST_COUNTRY = "Portugal"
+
+
+def country_first(doc):
+    """Every place in FIRST_COUNTRY below target with supply, most supply first.
+
+    Hidde, 2026-10-29: "focus on portugal for now". The visitors, the site's
+    searches (Vila Nova, Oeiras, Braganca, Sintra, Porto) and five of the nine
+    open ambassador requests (Porto, Braga, Guimaraes, Sintra, Calvos) are
+    Portuguese, while Google sends almost nobody. None restores the old order.
+    """
+    if not FIRST_COUNTRY:
+        return []
+    rows = [c for c in doc["cities"]
+            if c.get("country") == FIRST_COUNTRY
+            and c.get("trees", 0) < max(c.get("target") or 10, 10)
+            and supply_of(c) > 0]
+    rows.sort(key=lambda c: -supply_of(c))
+    return rows
+
+
 def visitors_first(doc):
     """Cities in the countries the visitors come from (passcheck.SUPPLY_FOCUS),
     below target and holding supply, most supply times demand first.
@@ -720,9 +741,22 @@ def main():
         # exists to stop. Named is named; the rest still need a register, a
         # lead file or a Wikidata cluster before a pass is worth dispatching.
         named = {c.lower() for c in NAMED_BY_HIDDE}
+        first = country_first(doc)
+        if first:
+            print("FIRST, BEFORE ANYTHING BELOW: %s (Hidde, 2026-10-29: \"focus on" % FIRST_COUNTRY.upper())
+            print("portugal for now\"). The readers, the site's own searches and most open")
+            print("ambassador requests are here. From-zero research is ON for every place in")
+            print("the country, because he named it. A place people searched for that we do")
+            print("not map (the digest's 'Searched yesterday': Vila Nova, Oeiras, Braganca,")
+            print("Castelo Branco) is a request: a tree there goes into the nearest place.\n")
+            print("  city                  trees  target  supply")
+            for c in first:
+                print("  %-21s %5d %7d %7d" % (c["city"][:21], c.get("trees", 0),
+                      max(c.get("target") or 10, 10), supply_of(c)))
+            print()
         us = us_demand_first(doc)
         if us:
-            print("FIRST, BEFORE ANYTHING BELOW: THE US PAGES GOOGLE ALREADY SHOWS")
+            print("THEN: THE US PAGES GOOGLE ALREADY SHOWS")
             print("(Hidde, 2026-09-27). Deepen these toward their target; from-zero")
             print("research is ON for all of them. The California Big Trees leads in")
             print("data/leads are finding aids (never the cited source); in the South,")
