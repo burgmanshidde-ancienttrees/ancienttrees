@@ -295,9 +295,9 @@ So when somebody says they are busy but leaves an opening: first say you underst
 
 **A first mail to a stranger uses the agreed text, word for word, and nothing new** (Hidde, 2026-10-29, on the Ottawa archive mail's Lisbon line: "use my personal words or once we agreed on instead of making up new sentences that again feel ai"):
 
-> My name is Hidde, I live in Baarn near Amsterdam. I'm building Ancient Trees, a worldwide map of remarkable old trees worth a walk. My goal is to get people excited about old trees and get them outside to go and see them.
+> My name is Hidde, I live in Baarn, a small town near Amsterdam. I'm building Ancient Trees, a worldwide map of remarkable old trees worth a walk. My goal is to get people excited about old trees and get them outside to go and see them.
 
-then the one thing that concerns them, the ask, "Thanks,\nHidde", and Wilder only as the P.S. in its agreed form (drafts/nature-template.md). The Lisbon origin story stays out of first mails; it is in the Wilder article. Two sentences for who and what ("this sentence is way to long", same day). The only sentences a session writes itself are the ones about their trees and the ask; everything around them is copied. mailcheck's ORIGIN STORY IN A FIRST MAIL and INTRO IN ONE LONG SENTENCE.
+then the one thing that concerns them, the ask, "Thanks,\nHidde", and Wilder only as the P.S. in its agreed form (drafts/nature-template.md). "Baarn, a small town near Amsterdam" is his own wording (Hidde, same day: "ive in Baarn a small town near Amsterdam"): in French "une petite ville près d'Amsterdam", Italian "una piccola città vicino ad Amsterdam", German "einer kleinen Stadt bei Amsterdam"; a Dutch mail says only Baarn. The Lisbon origin story stays out of first mails; it is in the Wilder article. Two sentences for who and what ("this sentence is way to long", same day). The only sentences a session writes itself are the ones about their trees and the ask; everything around them is copied. mailcheck's ORIGIN STORY IN A FIRST MAIL and INTRO IN ONE LONG SENTENCE.
 
 The Peter Raggers intro below is kept for replies to someone who asked who we are.
 

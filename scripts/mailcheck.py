@@ -186,6 +186,11 @@ CHECKS = [
     # are two sentences: "My name is Hidde, I live in Baarn near Amsterdam.
     # I'm building Ancient Trees, a worldwide map of remarkable old trees
     # worth a walk." No city count tacked on.
+    # Same day: "ive in Baarn a small town near Amsterdam". His wording.
+    ("BAARN WITHOUT 'A SMALL TOWN' (I live in Baarn, a small town near Amsterdam)", [
+        r"live in Baarn,? near Amsterdam", r"à Baarn, près d'Amsterdam", r"a Baarn, vicino ad Amsterdam",
+        r"in Baarn bei Amsterdam", r"en Baarn, cerca de Ámsterdam",
+    ]),
     ("INTRO IN ONE LONG SENTENCE", [
         r"Hidde, I live in Baarn near Amsterdam,? and I",
         r"près d'Amsterdam,? et je construis", r"bei Amsterdam,? und baue",
