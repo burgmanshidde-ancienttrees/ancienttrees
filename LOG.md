@@ -10,6 +10,10 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-10-29, night run third attempt: nothing shippable, no claims left standing
+
+Nothing shipped. No claims were standing. READY is 3 leads (oxford 2, madrid 1), under the six-candidate floor for a write pass, and none has a photograph. Fort Worth has 0 unmined register candidates. Canberra is a 48-hour wall (the claim was refused), although the scout shows 114 unjudged register rows there, so it is worth a retry with a new source after 2026-10-30. The photo shortlist is empty. Famous demand's top item is Lithuania, ten oaks at 16 reads a month or less, out of focus, not taken. Translations stay paused under TRANSLATIONS_OUT. For Hidde: nothing.
 <!-- archive-index -->
 ## 2026-10-29 night run (window from 07:55 UTC): nothing shipped, one archive contact sourced
 Rung 1 empty. Rung 2: the iOS run of 21:29 failed differently from the 18:45 one: 235 passed, StressWalk testNinetyRandomActionsDoNotKillTheApp failed (the app stopped running at action 75 after "Send feedback" and at action 64 after "Change photo"), plus a "failed to terminate" in the drag test. The profile-at-signup change landed in between, so a crash in Edit profile or feedback is possible; it needs the Mac simulator (not reproducible on this Linux runner), so nothing changed. For Hidde: a session with Xcode should run StressWalk and look at those two actions. Shelf still photo-blocked. Rung 4 sourcing: Portland Heritage Tree Program (address on its own nomination page) added to the archive contacts for portland/ptl_001 to 006; Barcelona and Brussels searches gave no published address (Woodwideweb page shows none), so nothing recorded.
