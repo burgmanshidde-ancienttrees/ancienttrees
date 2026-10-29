@@ -34,7 +34,7 @@
    "lat": 40.1171,
    "lng": -8.4964,
    "status": "lead",
-   "why": "Register only: girth 4.3m, age_register 115. South of the city, on the far side of the close-in cluster; not researched this pass."
+   "why": "Register only: girth 4.3m, age_register 115. South of the city, on the far side of the close-in cluster; not researched this pass. [2026-10-29] Quinta do Palacio, Condeixa-a-Nova (Condeixa concelho, not Coimbra), ICNF record cites Diario do Governo n.30 II Serie 06/02/1942 per search listing of si.icnf.pt/kml/arv_class (not fetched); venerablesarboles 2009: girth 4 m, height 26 m, 100 years. Access to the quinta not found."
   },
   {
    "name": "Sobreiro (ICNF, 12.1km out)",
@@ -42,7 +42,7 @@
    "lat": 40.2749,
    "lng": -8.5209,
    "status": "lead",
-   "why": "Register only: girth 5.4m, age_register 306. Not researched this pass."
+   "why": "Register only: girth 5.4m, age_register 306. Not researched this pass. [2026-10-29] Quinta da Sobreira Quinhentista, Anca (Cantanhede concelho): Municipio de Cantanhede page (fetched, updated 12.08.2020) lists it as a private events venue (weddings, conferences, 'sobreira quinhentista com qualificacao da Quercus'), booking only, no open visiting. Under hard rule 10 (reception/booking is not public access) it does not ship; folded with Quinta do Rol as a possible different tree. Also outside Coimbra concelho."
   },
   {
    "name": "Eucalipto (ICNF, 12.2km out)",
@@ -58,7 +58,7 @@
    "lat": 40.2695,
    "lng": -8.2841,
    "status": "lead",
-   "why": "Register only: girth 4.2m, age_register 158. Close to the two glicinias and the Eucalyptus obliqua candidate above (within about 1km), possibly a small cluster worth a dedicated pass. [SKIPPED 2026-09-01 by the write pass: register-only, single source, no address and no independent second source found; not shippable this pass. a day-trip-boundary check is needed given the 13.3km distance before it could be presented honestly as reachable.]"
+   "why": "Register only: girth 4.2m, age_register 158. Close to the two glicinias and the Eucalyptus obliqua candidate above (within about 1km), possibly a small cluster worth a dedicated pass. [SKIPPED 2026-09-01 by the write pass: register-only, single source, no address and no independent second source found; not shippable this pass. a day-trip-boundary check is needed given the 13.3km distance before it could be presented honestly as reachable.] [2026-10-29] Identified as Penacova, Quinta de Santo Antonio (ICNF KNJ1/511, DR n.81 II Serie 07/04/1997); blog 2009 gives girth 4.1 m, height 35 m, 150 years, at N40 16 7 W8 17 6, which is a different spot from the register coordinate by about 2 km (blog coordinates unreliable). Private-quinta access unknown. Same day-trip distance problem as the Penacova wisterias."
   },
   {
    "name": "Glicinia n.2 (ICNF, 13.5km out)",
@@ -74,7 +74,7 @@
    "lat": 40.2701,
    "lng": -8.2807,
    "status": "lead",
-   "why": "Register only: girth 2.3m, age_register 97. Not researched this pass."
+   "why": "Register only: girth 2.3m, age_register 97. Not researched this pass. [2026-10-29 verify pass] Terreiro de Penacova (ICNF KNJ1/314; n.2 is KNJ1/315, register girth 0.1 m is likely a data error). Junta de Freguesia de Penacova (jfpenacova.pt/patrimonio-cultural-edificado, fetched) describes the Raul Lino pergola at the main terreiro, between the town hall and the neoclassical court building, as a belvedere 'coberta por velhas cepas de glicinias'; open public terrace over the Mondego. Second figure: venerablesarboles 2009 blog gives n.1 girth 1.95 m, 89 years (vs register 2.3 m, 97). Alive: iNaturalist observation 2026-06-05 at the coordinate (lifecheck RECENT). Register coordinate 40.2701,-8.2807 lands on the Posto de Turismo de Penacova (Nominatim), beside the terreiro: approximate. HELD ONLY ON DISTANCE: Penacova is outside Coimbra concelho, about 14 km by road (23 min by car) but public transport is 45 to 60 min with a few departures a day (search listings: rome2rio, moovit, not fetched), beyond the 30-minute day-trip bound. Ready to verify as its own Penacova tree page (pergola as one collectible ensemble, small named site radius 30 m) if the day-trip bound is waived. n.1 and n.2 fold into one entry."
   },
   {
    "name": "Platano (ICNF, 13.6km out)",
@@ -91,7 +91,32 @@
    "lng": -8.23704,
    "status": "lead",
    "why": "Register only: girth 2.4m, age_register 108. Furthest of the non-Bucaco candidates from the centre; a day-trip-boundary check is needed before this could ever ship as part of a Coimbra page."
+  },
+  {
+   "name": "Quinta da Varzea araucarias (Lages, left bank of the Mondego)",
+   "species": "Araucaria (species not stated)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Named in a 2005 council plan reported by Dias com Arvores (dias-com-arvores.blogspot.com/2005/04, fetched, extracts from a asbeirasonline report): 'as duas araucarias existentes na margem esquerda do Mondego, na Quinta da Varzea - Lages' deserve protection for size and age. No coordinate, measurements, access or later confirmation found; Overpass unreachable. Needs a pin and a look at whether the quinta is public. No photo or exact pin in reach."
+  },
+  {
+   "name": "Quinta das Lagrimas camphor tree and sequoia",
+   "species": "Camphor Tree (Cinnamomum camphora) / Coast Redwood (Sequoia sempervirens)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Hotel gardens, open to day visitors for a small fee (Time Out listing 2.50 EUR, Tue-Sun 10:00-18:00, prices disagree across sources, not fetched). Dias com Arvores 2005 comment: a camphor tree 'merece os 3 euros da visita'; the same report names olaias (Judas trees) and a sequoia 'que se diz ter sido plantado pelo Duque de Wellington' (florestas.pt repeats two sequoias planted in 1813): that date is implausible for Sequoia sempervirens, which reached Europe in the 1840s, so do not use it. No measurements, no coordinates; the garden is a walk-through park, not a small site. Owner (quintadaslagrimas.pt/pt/servicos/jardins/1077, fetched) says only 'arvores raras e de grande porte'. Needs a register or survey with measurements and a pin. The fig (cbr_005) is already published."
   }
  ],
- "blocked": []
+ "blocked": [
+  {
+   "name": "Date palms (Phoenix dactylifera) of the Avenida Sa da Bandeira garden",
+   "reason": "Row/avenue ensemble (council 2005 plan stresses the alignment of the palms), not one collectible point; no measurements or coordinates found."
+  },
+  {
+   "name": "Linden group, Rua Pedro Monteiro",
+   "reason": "Avenue/street group of lindens, not one collectible point (named in the 2005 council plan, Dias com Arvores)."
+  }
+ ]
 }

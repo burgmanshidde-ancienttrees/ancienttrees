@@ -19,11 +19,11 @@
     },
     {
       "q": "Are Coimbra's remarkable trees free to visit?",
-      "a": "Two are. The Karri Knight and the Bunya Knight stand in the free, public Mata Nacional de Vale de Canas forest. The bunya pine in the University Botanical Garden needs a paid garden ticket, and the camphor tree at ESAC stands on a college campus whose general walk-in access was not independently confirmed; ask the school first. The Lovers' Banyan Tree stands in the Quinta das Lágrimas gardens, which charge a modest entry fee."
+      "a": "Two are. The Karri Knight and the Bunya Knight stand in the free, public Mata Nacional de Vale de Canas forest. The bunya pine in the University Botanical Garden needs a paid garden ticket, and the strangler fig beside the garden's Estufa Grande stands inside the same garden, whose current entry terms are worth checking before you go. The camphor tree at ESAC stands on a college campus whose general walk-in access was not independently confirmed; ask the school first. The Lovers' Banyan Tree stands in the Quinta das Lágrimas gardens, which charge a modest entry fee."
     },
     {
       "q": "Why does a Portuguese city grow so many Australian trees?",
-      "a": "Coimbra's institutions filled their grounds with imported conifers and eucalypts in the second half of the nineteenth century, the same decades the university's botanical garden and the Vale de Canas plantings both date from. Four of Coimbra's five remarkable trees are Australian species planted within a few decades of each other, including the Moreton Bay fig at Quinta das Lágrimas, grown from a seed exchange with the Sydney Botanic Garden."
+      "a": "Coimbra's institutions filled their grounds with imported conifers and eucalypts in the second half of the nineteenth century, the same decades the university's botanical garden and the Vale de Canas plantings both date from. Five of Coimbra's six remarkable trees are Australian species planted within a few decades of each other, including the Moreton Bay fig at Quinta das Lágrimas, grown from a seed exchange with the Sydney Botanic Garden."
     }
   ],
   "trees": [
@@ -214,6 +214,40 @@
       },
       "photos": [],
       "paid_entry": true
+    },
+    {
+      "id": "cbr_006",
+      "name": "The Strangler Fig of the Botanical Garden",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "height_m": 20,
+      "location": {
+        "address": "Jardim Botanico da Universidade de Coimbra, Calcada Martim de Freitas, 3000-456 Coimbra",
+        "latitude": 40.2063,
+        "longitude": -8.42165,
+        "neighbourhood": "Santa Cruz / Alta, beside the Estufa Grande"
+      },
+      "verified_sources": [
+        "https://florestas.pt/descobrir/figueira-dos-amores-uma-exotica-gigante-na-quinta-das-lagrimas/",
+        "https://wilder.pt/historias/leslie-derrubou-12-arvores-e-danificou-figueira-iconica-do-jardim-botanico-em-coimbra",
+        "https://visit.uc.pt/pt/info"
+      ],
+      "access": "Botanical garden of the University of Coimbra (owner and manager of the ground). Hours published by the university visit site: 09:00-20:00 1 April to 30 September, 09:00-17:30 1 October to 31 March; closed 24-25 December, 31 December, 1 January and on Queima das Fitas / Latada days. Guided tours are sold by UCTour (about 10 EUR per search listing, not fetched). Entry fee for a free visit not confirmed on a fetched page: check before the visit. Parts of the garden were reported in refurbishment with limited access (search listing of visit.uc.pt, not fetched).",
+      "transport": "Central Coimbra; garden entrance on Calcada Martim de Freitas beside the Arcos do Jardim, walkable from the Baixa. Walk time not measured.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In October 2018 storm Leslie tore through Coimbra's botanical garden, brought down twelve trees in the upper garden and left this fig, in the words of the garden's director, damaged in the crown and badly deformed. It is still standing. Visitors' photographs of it keep arriving, the latest from October 2026.\n\nThe crown is why anyone worried. António Gouveia, the director, called the tree very emblematic of the garden for the reach of that canopy, about a hundred metres round. The tree rises to about 20 metres beside the Estufa Grande, the garden's great glasshouse, and its branches travel much further sideways than up.\n\nIt is a Moreton Bay fig, an Australian species that in its home forests can start life as a seedling in another tree's branches, which is where the strangler name comes from. Coimbra has two famous ones. The other grows at Quinta das Lágrimas, about a kilometre and a half away across the Mondego, and was Portugal's Tree of the Year in 2025.\n\nIts age rests on a single line. A Portuguese forestry site says it is thought to have been planted by the gardener Francisco Cabral in 1877, which would make it roughly 150 years old. No second source we found repeats the date, so read it as the garden's account rather than a record. If you know more, tell us.\n\nParts of the garden have been under refurbishment and the entry terms were not confirmed, so check before you go.",
+      "how_to_recognise": "You can recognise it by the crown, about 100 metres round on a fig about 20 metres tall, misshapen since storm Leslie in 2018. It stands beside the Estufa Grande, the garden's great glasshouse.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "age_basis": "derived",
+      "verify_notes": "WHAT: the garden's emblematic strangler fig, near the Estufa Grande (Wilder 2018: director calls it 'muito emblematica' for the great circumference of its crown, about 100 m round). florestas.pt (fetched, the article on the Quinta das Lagrimas fig being Portugal's Tree of the Year 2025) says the garden's specimen 'terá sido plantada' by gardener Francisco Cabral in 1877 and rises to about 20 m: hedged wording, single source for the planting date, so age is derived from a documented-but-hedged planting date, kept broad (140-160). The search listing of uc.pt/jardimbotanico/colecoes/jardineta-da-figueira also gives 1877, about 20 m, and a trunk perimeter of 18 m, but those uc.pt pages are JavaScript-rendered and the figures were NOT seen on a fetched page, so no girth is recorded here (18 m sounds like the buttressed mass or crown; do not use unseen). SANITY: 20 m height and 1877 planting are consistent for the species. DAMAGE: storm Leslie (13-14 Oct 2018) felled 12 trees in the upper garden and left the fig 'afectada na copa e muito deformada' (Wilder 17.10.2018, fetched; director Antonio Gouveia). Still standing and photographed since: iNaturalist has more than 20 observations of Ficus macrophylla at this spot, latest 2026-10-15 (obs 408505307, 408501914), 2026-09-07, 2026-08-21, GPS accuracy 4-9 m, cluster centre 40.20630,-8.42165 (about 120 m west of the published bunya cbr_001 at 40.2064,-8.4202, so a different tree). Pin: median of the repeated iNaturalist GPS fixes at the tree (GPS at the tree = confirmed); observations are casual-grade (cultivated), used only for position and alive. DO NOT CONFUSE with cbr_005 (Fig of the Lovers, Quinta das Lagrimas, a different fig about 1.5 km away, Tree of the Year 2025); florestas.pt says the botanical garden fig is the 'bem perto' second well-known Ficus macrophylla in Coimbra. Single owner-adjacent news source for planting year: flagged. No register record found (not in ICNF list within 1 km)."
     }
   ]
 }

@@ -17,6 +17,30 @@
     "tokens": 85000,
     "trees": 0,
     "note": "register mined out, remaining leads fail access or transport, no new evidence"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "coimbra",
+    "kind": "verify",
+    "tokens": 150000,
+    "trees": 1,
+    "note": "botanical garden strangler fig verified (flagged); Penacova wisterias held on distance; ICNF leads blocked on access"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "braga",
+    "kind": "verify",
+    "tokens": 85000,
+    "trees": 0,
+    "note": "all Braga-municipality ICNF rows live or held; Tibaes cerca closed; Passadico ginkgo private"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "coimbra, innsbruck",
+    "kind": "write",
+    "tokens": 45000,
+    "trees": 1,
+    "note": "cbr_006 written and merged; inn_007 held again (private yard)"
    }
   ],
   "2026-10-28": [
