@@ -16,6 +16,10 @@ on:
         description: "Inspect every url in the live sitemap.xml instead of the samples"
         type: boolean
         default: false
+      paths:
+        description: "Comma-separated paths to inspect instead (e.g. /lisbon,/porto)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -40,7 +44,7 @@ jobs:
           GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
-        run: python3 -u scripts/gsc_inspect.py --per-sample ${{ inputs.per_sample }} ${{ inputs.wanted && '--wanted' || '' }}
+        run: python3 -u scripts/gsc_inspect.py --per-sample ${{ inputs.per_sample }} ${{ inputs.wanted && '--wanted' || '' }} ${{ inputs.paths != '' && format('--paths "{0}"', inputs.paths) || '' }}
 
       - name: Commit the answers
         run: |

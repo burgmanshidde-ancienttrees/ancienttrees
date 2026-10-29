@@ -22,7 +22,9 @@ Search Console OAuth, scope webmasters). Runs from gsc-inspect.yml.
     python3 scripts/gsc_inspect.py [--per-sample 25] [--wanted]
 
 --wanted inspects every url in the live sitemap.xml instead of the samples;
-the file is then gsc-inspection-<date>-wanted.json.
+the file is then gsc-inspection-<date>-wanted.json. --paths /a,/b asks about
+those paths only (gsc-inspection-<date>-paths.json), to see whether pages
+Hidde asked Google to index have been taken in.
 """
 import collections
 import datetime
@@ -148,6 +150,8 @@ def main(argv):
     chosen = samples(per)
     if "--wanted" in argv:
         chosen = {"wanted": wanted()}
+    if "--paths" in argv:
+        chosen = {"paths": [p.strip() for p in argv[argv.index("--paths") + 1].split(",") if p.strip()]}
     for name, paths in chosen.items():
         rows = []
         for p in paths:
@@ -168,7 +172,7 @@ def main(argv):
             print(f"  last crawl: oldest {crawls[0]}, newest {crawls[-1]}, {since} of {len(crawls)} since 2026-10-08")
         else:
             print("  last crawl: none reported")
-    outp = os.path.join(ROOT, "data", "research", f"gsc-inspection-{today}{'-wanted' if '--wanted' in argv else ''}.json")
+    outp = os.path.join(ROOT, "data", "research", f"gsc-inspection-{today}{'-wanted' if '--wanted' in argv else '-paths' if '--paths' in argv else ''}.json")
     with open(outp, "w", encoding="utf-8") as fh:
         json.dump(results, fh, ensure_ascii=False, indent=1)
     print(f"\nwritten {os.path.relpath(outp, ROOT)}")
