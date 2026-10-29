@@ -1,0 +1,68 @@
+[
+  {
+    "id": "tav_001",
+    "name": "Oliveira Real of Pedras d'el Rei",
+    "species": "European Olive (Olea europaea)",
+    "age_estimate": "reported as about 2,000 years",
+    "age_min": 1000,
+    "age_max": 2250,
+    "girth_cm": 774,
+    "height_m": 10.3,
+    "location": {
+      "address": "Aldeamento Turistico de Pedras d'el Rei, Santa Luzia, Tavira",
+      "latitude": 37.095805,
+      "longitude": -7.67801,
+      "neighbourhood": "Santa Luzia, Tavira"
+    },
+    "verified_sources": [
+      "https://geocatalogo.icnf.pt/metadados/arv_class.html (ICNF Arvoredo de Interesse Publico, processo KNJ1/195, data/registers/portugal-icnf.json)",
+      "https://wilder.pt/diversoes/siga-este-roteiro-pelas-10-candidatas-a-arvore-do-ano-em-portugal (Wilder: Tree of the Year 2022 candidates; Oliveira Real, 37 05 45.4 N 7 40 40.9 W, 10.3 m tall, 11 m trunk perimeter, hollow trunk, classified 1984)",
+      "http://sombra-verde.blogspot.com/2007/07/as-oliveiras-de-pedras-del-rei.html (Arvores de Portugal bloggers' visit, July 2007: height 9 m, girth at breast height 7.8 m, crown 9.8 m)",
+      "https://blog.algarveholidaylets.com/tree-of-the-year/ (Tree of the Year 2022 candidate, Royal Olive Tree, Tavira)",
+      "https://commons.wikimedia.org/wiki/File:Oliveira_Bi-milenar_-_Pedras_Del_Rei_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54843185074).jpg (CC BY-SA 4.0, Vitor Oliveira, taken 2025-07-10, geotag 37.095811 -7.678000)"
+    ],
+    "official_register": {
+      "name": "ICNF Arvoredo de Interesse Publico KNJ1/195",
+      "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+    },
+    "access": "Inside the Pedras d'el Rei holiday resort (aldeamento turistico), Santa Luzia. No source states whether non-guests may enter or whether there is a gate; a 2007 visit by tree bloggers and a July 2025 visitor photo series exist but neither says how they got in. Resort has on-site restaurants and a beach bar. Access NOT confirmed; flagged.",
+    "transport": "Resort sits between Santa Luzia and Tavira, just west of Tavira (Barlavento, Wilder). Public transport not established.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (ICNF KNJ1/195): classified 1984 (D.R. n. 178, II Serie, 02/08/1984), register age 2210 (measured 2006, so about 2230 now), girth 7.74 m, height 10.3 m, crown 14 m. AGE IS A CLAIM: the 2,000 to 2,225 figures come from the register and the 2021 Tree of the Year nomination; the 2007 blog says carbon-14 estimate about 2,000 but gives no method source; no ring count or published dating study found. Do not state as fact; broad range recorded. Girth conflict: register 7.74 m and 2007 blog 7.8 m at breast height agree; nomination text says 11 m trunk perimeter (probably base or at a different height). girth_cm uses 774. Trunk is hollow and large enough to hold a person (nomination: cavity about 1.30 m across; Publico 2010 quoted on the Commons file: a gap between two limbs invites a look inside, a table and bench of wood). Nominated for Portugal's Tree of the Year 2022 (Wilder, Algarve Holiday Lets); result not verified from a fetched page. Alive: Commons photo series dated 2025-07-10 and 2025-11-12 uploaded, five files geotagged within 18 m of the register coordinate and named after the tree, so the pin is a photographer's GPS at the trunk: confirmed. A neighbouring olive near the swimming pool lost trunks in a fall on 2021-08-10 (Correio da Manha) and is a different tree; the blog of 2007 also notes a second unclassified olive nearby, about 6 m girth and 11 m tall, 'close to' the Oliveira Real: lead, no coordinate. LIFECHECK returned NONE (no iNaturalist observation) but Commons 2025 photos settle alive. Not confused with the Oliveira do Mouchao (Abrantes). Candidate photo for the writer pass: the Commons files above (CC BY-SA 4.0, credit Vitor Oliveira); not judged here.",
+    "not_merged_reason": "Not written or merged (2026-10-29): stands inside the Pedras d'el Rei holiday resort and no source says non-guests may enter; hard rule 10 needs access shown open before it ships. Kept for a pass that can establish public access."
+  },
+  {
+    "id": "sba_001",
+    "name": "Azinheira de Alportel",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "roughly 250 years",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": 490,
+    "height_m": 17,
+    "location": {
+      "address": "Rua Serpa Pinto (EN 2), Poco dos Ferreiros, Sao Bras de Alportel",
+      "latitude": 37.1571,
+      "longitude": -7.89347,
+      "neighbourhood": "Poco dos Ferreiros, Sao Bras de Alportel"
+    },
+    "verified_sources": [
+      "https://geocatalogo.icnf.pt/metadados/arv_class.html (ICNF Arvoredo de Interesse Publico, processo KNJ1/035, data/registers/portugal-icnf.json)",
+      "https://www.cm-sbras.pt/pt/noticias/13320/azinheira-centenaria-de-sao-bras-de-alportel-alcanca-segundo-lugar-em-concurso-nacional.aspx (Camara Municipal de Sao Bras de Alportel, 12 January 2023: about 250 years, 17 m, 5 m trunk perimeter, classified 1942, a stop on the Rota da EN2, planted beside the EN2, second place in the 2023 national Tree of the Year vote with 2879 votes)",
+      "https://agriculturaemar.com/arvore-do-ano-2025-conheca-a-azinheira-de-alportel-votacoes-ate-11-de-dezembro/ (UNAC, 6 November 2024: one of the ten candidates for Tree of the Year 2025, proposed by the municipality)",
+      "https://www.allaboutportugal.pt/en/sao-bras-de-alportel/natural-resources/azinheira-do-alportel-arvore-monumental (Rua Serpa Pinto, EN 2, Poco dos Ferreiros; car access)"
+    ],
+    "official_register": {
+      "name": "ICNF Arvoredo de Interesse Publico KNJ1/035",
+      "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+    },
+    "access": "Planted beside the EN 2 (Rua Serpa Pinto) in Sao Bras de Alportel; roadside, free, a published stop for people driving the Rota da EN2 (municipal page). Register places it next to petrol pumps at Poco dos Ferreiros.",
+    "transport": "In the town of Sao Bras de Alportel on the EN 2; an iNaturalist fix is labelled Terminal Circular (the town bus terminal) about 20 m away. Bus from Faro not established.",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register (ICNF KNJ1/035): classified 1942 (D.G. n. 30, II Serie, 06/02/1942; a newspaper cited by search gives 1964, unverified), register age 250 (measured 2006, so about 270 now), girth 4.9 m, height 17 m, crown 26 m. Girth conflict: register 4.9 m, municipality 5 m, All About Portugal 4.10 m, but the UNAC 2024 nomination text says 10 m trunk perimeter (probably a different measure such as base); girth_cm uses the register 490. Age is the register estimate plus municipal repetition, not a ring count. Notable: second place in the 2023 national Tree of the Year vote (2879 votes, winner Eucalipto de Contige) and again a candidate for 2025; the municipality proposed it. The municipal text speaks of generations gathering round it, a social tree on the old road. Alive: two iNaturalist research-grade holm oak fixes 19 to 25 m from the register coordinate, 2026-08-20 (https://www.inaturalist.org/observations/392905637, accuracy 3 m) and 2021-07-03 (https://www.inaturalist.org/observations/87171346); not confirmed they are this very trunk, so pin stays approximate. Register coordinate is 37.15710 -7.89347; observations sit at 37.15727 -7.89355. Nominations from 2023 and 2024 are recent alive evidence. No Commons photo within 300 m found (geosearch). Recognise: a very broad holm oak at the roadside of the EN 2 in the centre of Sao Bras, beside the petrol pumps at Poco dos Ferreiros per the register.",
+    "story": "A holm oak beside a row of petrol pumps came second in Portugal's Tree of the Year vote in 2023. The Azinheira de Alportel stands on the EN 2 where it runs through São Brás de Alportel, at Poço dos Ferreiros, and 2,879 people voted for it. Only the Eucalipto de Contige drew more.\n\nThe town council, which put it forward, makes its case on company rather than size. Generations have gathered round this tree on the old road, and the council lists it as a stop on the Rota da EN2, for people driving that road. It was entered again for Tree of the Year 2025.\n\nThe state noticed it long before the voters did. Portugal's forest service classified it as a Tree of Public Interest in 1942, by the register's date; one newspaper gives 1964, which we have not confirmed. When the service measured it in 2006 it recorded 17 metres of height, a crown 26 metres across and a trunk 4.9 metres round, and put its age at about 250 years. That is an estimate, not a count of rings, so read it as somewhere between 200 and 300. Other sources give the girth as 5 metres, 4.1 metres and, in the 2024 nomination, 10 metres, probably measured lower on the trunk.\n\nIt is a roadside tree, free to see, close to the town's bus terminal. Our pin is approximate, and we have no photograph of it yet. If you stand under it, send us one.",
+    "how_to_recognise": "You can recognise it by the sheer spread of the crown, 26 metres across, at the roadside of the EN 2. It stands beside the petrol pumps at Poço dos Ferreiros, in the centre of São Brás de Alportel."
+  }
+]

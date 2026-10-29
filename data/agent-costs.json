@@ -100,6 +100,22 @@
    },
    {
     "date": "2026-10-29",
+    "target": "faro",
+    "kind": "verify",
+    "tokens": 140000,
+    "trees": 1,
+    "note": "central Algarve ICNF rows; sba_001 shippable, tav_001 held on resort access; 10 leads"
+   },
+   {
+    "date": "2026-10-29",
+    "target": "sao-bras-de-alportel",
+    "kind": "write",
+    "tokens": 70000,
+    "trees": 1,
+    "note": "sba_001 as lone-tree place; one-tree pass, fixed cost high"
+   },
+   {
+    "date": "2026-10-29",
     "target": "madeira, vale-do-pereiro",
     "kind": "write",
     "tokens": 73000,

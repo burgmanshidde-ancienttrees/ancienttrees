@@ -1,0 +1,60 @@
+{
+  "city": "São Brás de Alportel",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "São Brás de Alportel maps one tree: the Azinheira de Alportel, a holm oak 17 metres tall with a crown 26 metres across, standing beside the EN 2 at Poço dos Ferreiros in the centre of town. It came second in Portugal's Tree of the Year vote in 2023 and is a stop on the Rota da EN2, the route for people driving the old national road.",
+  "meta_description": "The Azinheira de Alportel, a classified holm oak on the EN 2 in São Brás de Alportel, second in Portugal's Tree of the Year 2023.",
+  "question_meta": "São Brás de Alportel's mapped tree is the Azinheira de Alportel, a holm oak on the EN 2 that came second in Portugal's Tree of the Year 2023.",
+  "question_answer": "The tree mapped in São Brás de Alportel is the Azinheira de Alportel, a holm oak beside the EN 2 at Poço dos Ferreiros that came second in Portugal's Tree of the Year vote in 2023 with 2,879 votes. Portugal's forest service classified it in 1942 and put its age at about 250 years when it measured it in 2006.",
+  "question_context": "The Azinheira de Alportel is on the national register of Trees of Public Interest kept by the ICNF, Portugal's forest service, classified in 1942 by the register's date. Its 2006 measurement gives 17 metres of height, a crown 26 metres across and a trunk 4.9 metres round; other sources give 5 metres or 4.1 metres for the girth, and the 2024 nomination 10 metres, probably measured lower. The age of about 250 years is the register's estimate rather than a ring count. The town council nominated it for Tree of the Year 2023, when it finished second behind the Eucalipto de Contige, and again for 2025, and it is a published stop on the Rota da EN2. It stands at the roadside of the EN 2, Rua Serpa Pinto, beside petrol pumps and close to the town's bus terminal, free to see. The town council describes it as a social tree, one that generations have gathered round on the old road. Naturalists recorded holm oaks within about 25 metres of the register's point in 2021 and again in August 2026; the pin here is the register's and is approximate.",
+  "hero_tree_id": "sba_001",
+  "oldest_tree_id": "sba_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree in São Brás de Alportel?",
+      "a": "The tree mapped in São Brás de Alportel is the Azinheira de Alportel, a holm oak beside the EN 2 at Poço dos Ferreiros that came second in Portugal's Tree of the Year vote in 2023 with 2,879 votes. Portugal's forest service classified it in 1942 and put its age at about 250 years when it measured it in 2006."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sba_001",
+      "name": "Azinheira de Alportel",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 200,
+      "age_max": 300,
+      "age_basis": "source",
+      "girth_cm": 490,
+      "height_m": 17,
+      "location": {
+        "address": "Rua Serpa Pinto (EN 2), Poco dos Ferreiros, Sao Bras de Alportel",
+        "latitude": 37.1571,
+        "longitude": -7.89347,
+        "neighbourhood": "Poco dos Ferreiros, Sao Bras de Alportel"
+      },
+      "location_precision": "approximate",
+      "story": "A holm oak beside a row of petrol pumps came second in Portugal's Tree of the Year vote in 2023. The Azinheira de Alportel stands on the EN 2 where it runs through São Brás de Alportel, at Poço dos Ferreiros, and 2,879 people voted for it. Only the Eucalipto de Contige drew more.\n\nThe town council, which put it forward, makes its case on company rather than size. Generations have gathered round this tree on the old road, and the council lists it as a stop on the Rota da EN2, for people driving that road. It was entered again for Tree of the Year 2025.\n\nThe state noticed it long before the voters did. Portugal's forest service classified it as a Tree of Public Interest in 1942, by the register's date; one newspaper gives 1964, which we have not confirmed. When the service measured it in 2006 it recorded 17 metres of height, a crown 26 metres across and a trunk 4.9 metres round, and put its age at about 250 years. That is an estimate, not a count of rings, so read it as somewhere between 200 and 300. Other sources give the girth as 5 metres, 4.1 metres and, in the 2024 nomination, 10 metres, probably measured lower on the trunk.\n\nIt is a roadside tree, free to see, close to the town's bus terminal. Our pin is approximate, and we have no photograph of it yet. If you stand under it, send us one.",
+      "how_to_recognise": "You can recognise it by the sheer spread of the crown, 26 metres across, at the roadside of the EN 2. It stands beside the petrol pumps at Poço dos Ferreiros, in the centre of São Brás de Alportel.",
+      "verified_sources": [
+        "https://geocatalogo.icnf.pt/metadados/arv_class.html (ICNF Arvoredo de Interesse Publico, processo KNJ1/035, data/registers/portugal-icnf.json)",
+        "https://www.cm-sbras.pt/pt/noticias/13320/azinheira-centenaria-de-sao-bras-de-alportel-alcanca-segundo-lugar-em-concurso-nacional.aspx (Camara Municipal de Sao Bras de Alportel, 12 January 2023: about 250 years, 17 m, 5 m trunk perimeter, classified 1942, a stop on the Rota da EN2, planted beside the EN2, second place in the 2023 national Tree of the Year vote with 2879 votes)",
+        "https://agriculturaemar.com/arvore-do-ano-2025-conheca-a-azinheira-de-alportel-votacoes-ate-11-de-dezembro/ (UNAC, 6 November 2024: one of the ten candidates for Tree of the Year 2025, proposed by the municipality)",
+        "https://www.allaboutportugal.pt/en/sao-bras-de-alportel/natural-resources/azinheira-do-alportel-arvore-monumental (Rua Serpa Pinto, EN 2, Poco dos Ferreiros; car access)"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico KNJ1/035",
+        "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+      },
+      "access": "Planted beside the EN 2 (Rua Serpa Pinto) in Sao Bras de Alportel; roadside, free, a published stop for people driving the Rota da EN2 (municipal page). Register places it next to petrol pumps at Poco dos Ferreiros.",
+      "transport": "In the town of Sao Bras de Alportel on the EN 2; an iNaturalist fix is labelled Terminal Circular (the town bus terminal) about 20 m away. Bus from Faro not established.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "verify_notes": "Register (ICNF KNJ1/035): classified 1942 (D.G. n. 30, II Serie, 06/02/1942; a newspaper cited by search gives 1964, unverified), register age 250 (measured 2006, so about 270 now), girth 4.9 m, height 17 m, crown 26 m. Girth conflict: register 4.9 m, municipality 5 m, All About Portugal 4.10 m, but the UNAC 2024 nomination text says 10 m trunk perimeter (probably a different measure such as base); girth_cm uses the register 490. Age is the register estimate plus municipal repetition, not a ring count. Notable: second place in the 2023 national Tree of the Year vote (2879 votes, winner Eucalipto de Contige) and again a candidate for 2025; the municipality proposed it. The municipal text speaks of generations gathering round it, a social tree on the old road. Alive: two iNaturalist research-grade holm oak fixes 19 to 25 m from the register coordinate, 2026-08-20 (https://www.inaturalist.org/observations/392905637, accuracy 3 m) and 2021-07-03 (https://www.inaturalist.org/observations/87171346); not confirmed they are this very trunk, so pin stays approximate. Register coordinate is 37.15710 -7.89347; observations sit at 37.15727 -7.89355. Nominations from 2023 and 2024 are recent alive evidence. No Commons photo within 300 m found (geosearch). Recognise: a very broad holm oak at the roadside of the EN 2 in the centre of Sao Bras, beside the petrol pumps at Poco dos Ferreiros per the register."
+    }
+  ]
+}
