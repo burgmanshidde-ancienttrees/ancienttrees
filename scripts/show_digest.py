@@ -191,6 +191,17 @@ def readers_in_full(day):
             json.dump(pending, fh)
     except Exception as e:
         rows.append(("", "app photographs", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
+    try:
+        # Written App Store reviews (Hidde, 2026-10-29: "zou je die ook mee
+        # willen nemen in de daily als die er is"). The nickname stays out.
+        import asc_reviews
+        for r in asc_reviews.reviews(since_iso[:19]):
+            stars = "%s of 5 stars" % r["rating"] if r.get("rating") else ""
+            words = ("%s. %s" % (r["title"], r["body"])) if r["title"] else r["body"]
+            rows.append((r["date"], "App Store review (%s)" % r["territory"], "the app",
+                         words, [stars] if stars else [], "public on the App Store"))
+    except BaseException as e:  # asc_auth raises SystemExit without its keys
+        rows.append(("", "App Store reviews", "-", "unreadable (%s)" % str(e)[:60], [], ""))
     head = "**Everything readers sent since %s, in full** (word for word; names and addresses left out)" % day
     if not rows:
         return head + "\n\nNothing."

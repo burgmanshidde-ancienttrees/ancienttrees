@@ -2021,7 +2021,10 @@ def day_by_day_section(today):
     days = [(today - datetime.timedelta(days=i)).isoformat() for i in range(7, 0, -1)]
     cols = collections.OrderedDict((k, None) for k in (
         "Visitors", "New accounts", "Saves", "Android waitlist", "App downloads",
-        "Trees sent", "Feedback", "Ambassador asks", "App photos", "Tree notes"))
+        "App phones", "Trees opened in the app", "Trees collected",
+        "Trees sent", "Feedback", "Ambassador asks", "App photos", "Tree notes",
+        "App Store reviews"))
+    totals = {}  # a row whose week is not the sum of its days
 
     def fill(name, pairs):
         c = cols[name] = collections.Counter()
@@ -2087,6 +2090,44 @@ def day_by_day_section(today):
                                    for d, v in split_by_type(rows).items()))
     except Exception as e:
         print("day_by_day downloads: %s" % str(e)[:100])
+    # Written App Store reviews, a count only: DATA.md is public, the words
+    # are on the local digest page (show_digest.readers_in_full).
+    try:
+        import asc_reviews
+        fill("App Store reviews", ((r["date"], 1) for r in asc_reviews.reviews(days[0])))
+    except BaseException as e:  # asc_auth raises SystemExit without its keys
+        print("day_by_day reviews: %s" % str(e)[:100])
+    # What the app's people do each day, from PostHog, our own testing cut
+    # (Hidde, 2026-10-29, after a week of 6 phones a day opening 195 trees and
+    # saving none: "deze gegevens lijken me goed aan de daily toe te voegen").
+    # Phones that opened it, trees they opened, trees they stood at. Take me
+    # there stays out, as in the headline (2026-10-19).
+    ph_key = os.environ.get("POSTHOG_READ_KEY")
+    if ph_key:
+        try:
+            project, _why = _ph_project(ph_key)
+            ours = _ph_ours()[0]
+            if project:
+                rows = _posthog("""
+                    SELECT toDate(timestamp), count(DISTINCT distinct_id),
+                           countIf(event = 'tree_opened'), countIf(event = 'tree_visited')
+                    FROM events
+                    WHERE timestamp >= toDateTime('%s 00:00:00') %s
+                    GROUP BY 1""" % (days[0], ("AND " + ours) if ours else ""),
+                    ph_key, project)
+                fill("App phones", ((r[0], int(r[1])) for r in rows))
+                fill("Trees opened in the app", ((r[0], int(r[2])) for r in rows))
+                fill("Trees collected", ((r[0], int(r[3])) for r in rows))
+                # A phone that came on four days is one phone, not four.
+                week = _posthog("""
+                    SELECT count(DISTINCT distinct_id) FROM events
+                    WHERE timestamp >= toDateTime('%s 00:00:00')
+                          AND timestamp < toDateTime('%s 00:00:00') %s"""
+                    % (days[0], today.isoformat(), ("AND " + ours) if ours else ""),
+                    ph_key, project)
+                totals["App phones"] = int(week[0][0])
+        except Exception as e:
+            print("day_by_day app: %s" % str(e)[:100])
     shown = [k for k, v in cols.items() if v is not None]
     if not shown:
         return ""
@@ -2098,7 +2139,7 @@ def day_by_day_section(today):
            "|---|%s---:|" % ("---:|" * len(days))]
     for k in shown:
         out.append("| %s | %s | **%d** |" % (k, " | ".join(str(cols[k].get(d, 0)) for d in days),
-                                            sum(cols[k].get(d, 0) for d in days)))
+                                            totals.get(k, sum(cols[k].get(d, 0) for d in days))))
     return "\n".join(out)
 
 
