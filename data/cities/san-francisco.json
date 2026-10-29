@@ -3,11 +3,11 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "sfo_001",
-  "intro": "San Francisco was a town of a few hundred people in 1848 and Golden Gate Park was bare dunes into the 1870s, so every tree here was planted on purpose, and 150 years counts as old. Nine of the eleven are city Landmark Trees, designated one at a time by ordinance, from a cork oak atop a stairway street to six blue gums that Mary Ellen Pleasant planted outside her home and a Cole Valley pohutukawa that flowers yellow instead of red. The other two are the city's Christmas tree and a Presidio blue gum planted in 1876.",
+  "intro": "San Francisco was a town of a few hundred people in 1848 and Golden Gate Park was bare dunes into the 1870s, so every tree here was planted on purpose, and 150 years counts as old. Ten of the twelve are city Landmark Trees, designated one at a time by ordinance, from a cork oak atop a stairway street to six blue gums that Mary Ellen Pleasant planted outside her home and a Cole Valley pohutukawa that flowers yellow instead of red. The other two are the city's Christmas tree and a Presidio blue gum planted in 1876.",
   "meta_description": "Every tree in San Francisco was planted on purpose. The city's Landmark Trees, plus the cypress it has lit as its Christmas tree since 1929.",
   "question_answer": "Nobody has dated most of San Francisco's remarkable trees, so the honest answer is a planting era rather than an age. The oldest here is Uncle John's Tree, the Monterey cypress on the lawn outside McLaren Lodge at the eastern end of Golden Gate Park, which the park's historians put at planted around 1880, so roughly 135 to 155 years old. It is named for John McLaren, the park's long-serving superintendent, who died in 1943, and it has been lit as the city's Christmas tree since 1929. Mary Ellen Pleasant's six blue gums on Octavia Street may run it close: she planted them before her death in 1904, and nobody has published the year. The yellow-flowered pohutukawa on Stanyan Street dates from the late 1950s; the rest carry no documented planting date, and the city's Landmark Tree register does not record one. If you know a date, or have a photograph old enough to help, tell us.",
   "question_meta": "Uncle John's Tree, a Monterey cypress planted around 1880 outside McLaren Lodge, is the oldest tree on this San Francisco page. Where to find it.",
-  "question_context": "San Francisco keeps a Landmark Tree register rather than an ancient-tree register, and the difference explains this page. Trees are designated one at a time under Article 16 of the Public Works Code, on grounds of size, rarity or the part they play in a street, and the list runs to roughly twenty-five trees citywide. Nine of the eleven here come off it. What that register does not record is age, and neither does anything else within reach: not the 2005 Board of Supervisors resolution that landmarked the bay laurel outside the Customs House, not the city's own entry for the Dolores Street palms, not Mike Sullivan's Trees of San Francisco, which is the standard reference for this city. That leaves the dating to circumstance. The gold rush arrived in 1849, Golden Gate Park was sand dunes until the 1870s, and the Mission and Bernal Heights streets these trees stand on were laid out later still, so a tree of 150 years is an early one by local reckoning. If you can date any of the nine, that is the gap this page would most like closed.",
+  "question_context": "San Francisco keeps a Landmark Tree register rather than an ancient-tree register, and the difference explains this page. Trees are designated one at a time under Article 16 of the Public Works Code, on grounds of size, rarity or the part they play in a street, and the list runs to roughly twenty-five trees citywide. Ten of the twelve here come off it. What that register does not record is age, and neither does anything else within reach: not the 2005 Board of Supervisors resolution that landmarked the bay laurel outside the Customs House, not the city's own entry for the Dolores Street palms, not Mike Sullivan's Trees of San Francisco, which is the standard reference for this city. That leaves the dating to circumstance. The gold rush arrived in 1849, Golden Gate Park was sand dunes until the 1870s, and the Mission and Bernal Heights streets these trees stand on were laid out later still, so a tree of 150 years is an early one by local reckoning. If you can date any of the nine, that is the gap this page would most like closed.",
   "faq": [
     {
       "q": "What is the oldest tree in San Francisco?",
@@ -412,6 +412,45 @@
         "width": 2448,
         "height": 3264,
         "taken_month": 2
+      }
+    },
+    {
+      "id": "sfo_013",
+      "name": "The Moreton Bay Fig of Valencia Street",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": null,
+      "girth_cm": 574,
+      "location": {
+        "address": "Valencia Street south of Cesar Chavez Street, west side, beside St. Luke's Hospital (official address 3555 Cesar Chavez St; DataSF 1580 Valencia St)",
+        "latitude": 37.748516,
+        "longitude": -122.420316,
+        "neighbourhood": "Mission / Bernal Heights"
+      },
+      "verified_sources": [
+        "https://sfpublicworks.org/services/significant-and-landmark-trees",
+        "http://www.sftrees.com/new-page-1",
+        "http://www.sftrees.com/landmark-trees",
+        "https://burritojustice.com/2010/09/16/history-of-a-tree-a-branch-a-block/",
+        "https://data.sf.gov/resource/tkzw-k3nq.json (treeid 251597)",
+        "https://www.inaturalist.org/observations/262869523"
+      ],
+      "official_register": {
+        "name": "San Francisco Landmark Tree (Public Works Significant and Landmark Trees list, listed at 3555 Cesar Chavez Street; DataSF treeid 251597)",
+        "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
+      },
+      "access": "Free to see from the Valencia Street sidewalk. The tree stands in a side yard on private ground beside St. Luke's Hospital, so view-only; a historical marker about the Bancroft Library is described as standing near it. Do not imply entry to the lot.",
+      "transport": "Muni 14 and 49 run on Mission St, about 300 m east; BART 24th St Mission about 1.2 km north (transport detail from map knowledge, not source-checked)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "San Francisco's largest Moreton Bay fig grows in a side yard on Valencia Street, beside St. Luke's Hospital. The local tree guide sftrees.com calls it by far the biggest of its kind in the city, where the species is rare; it is far more common in southern California.\n\nThe city's street tree records put its trunk at about 183 centimetres across at chest height, roughly 5.7 metres round. That is a register estimate on a buttressed trunk, and nobody has published a second measurement. Mayor Gavin Newsom added it to the Landmark Tree list on 24 March 2008.\n\nIts age is looser. A 2010 history of the block put it at well over a century and wondered whether Hubert Howe Bancroft planted it himself. The historian kept his library at Valencia and Army Street, now Cesar Chavez, from 1881 to 1906, and a bronze marker about that library stands beside the tree. But Bancroft's own photographs from the 1880s show no fig, so the link stays a guess. If you know when it went in, tell us.\n\nAge has cost it. Two big limbs came down within about a year around 2010, one of them onto a car. sftrees.com still calls it a mammoth tree, and a naturalist recorded it alive in February 2025.\n\nThe yard is private ground, so this is a tree to take in from the Valencia Street sidewalk, not to walk up to.",
+      "how_to_recognise": "You can recognise it by its size, as by far the largest Moreton Bay fig in the city, with a bronze Bancroft Library marker beside it. It stands in the side yard by St. Luke's Hospital on Valencia Street.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
