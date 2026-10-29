@@ -11,8 +11,8 @@ and only the Claude window asks first. It starts when:
   - a reader's work waits: an app photograph in the sighting queue, a
     submission sent since the last knock, or a note on a tree nobody has read
     (rungs 1 and 3, which CLAUDE.md wants handled within hours);
-  - or this knock falls in a fixed slot, 06:00 to 07:59 or 18:00 to 19:59
-    UTC, for outreach mail and everything else on the ladder (rung 2's
+  - or this knock falls in a fixed slot, two hours from 00, 06, 12 or 18
+    UTC (two slots until 2026-10-29), for outreach mail and everything else on the ladder (rung 2's
     breakage included: a red deploy waits at most until the next slot, and the
     digest names it the same morning).
 
@@ -30,7 +30,10 @@ import sys
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SLOT_HOURS = {6, 7, 18, 19}
+# Four slots since 2026-10-29 (Hidde, "ok", when own supply opened again
+# without the photo rule and the two slots left the runs 280 minutes a week):
+# 00, 06, 12 and 18 UTC, each two hours wide.
+SLOT_HOURS = {0, 1, 6, 7, 12, 13, 18, 19}
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 
 
@@ -89,7 +92,7 @@ def main():
     if reasons:
         print("claude gate: start (%s)" % "; ".join(reasons))
         return 0
-    print("claude gate: skip, no reader work waiting and outside the 06 and 18 UTC slots")
+    print("claude gate: skip, no reader work waiting and outside the 00, 06, 12 and 18 UTC slots")
     return 1
 
 

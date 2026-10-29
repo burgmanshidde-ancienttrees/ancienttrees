@@ -445,7 +445,7 @@ jobs:
             echo "go=yes" >> "$GITHUB_OUTPUT"
           else
             echo "go=no" >> "$GITHUB_OUTPUT"
-            echo "::notice::No reader work and outside the 06 and 18 UTC slots; the cheap steps ran, no agent."
+            echo "::notice::No reader work and outside the 00, 06, 12 and 18 UTC slots; the cheap steps ran, no agent."
           fi
 
       - name: Run the research workflow from CLAUDE.md
