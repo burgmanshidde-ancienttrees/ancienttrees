@@ -121,11 +121,13 @@ struct PeopleView: View {
 
     /// Said plainly per list, including the case that is true today: somebody
     /// can follow you before they have chosen a display name, and then there is
-    /// nothing to show but the fact that they are there.
-    private var emptyLine: String {
+    /// nothing to show but the fact that they are there. An empty search says
+    /// nothing: the field's prompt already does (Instagram, Strava, AllTrails;
+    /// Hidde, 2026-10-29).
+    private var emptyLine: String? {
         switch source {
         case .search: account.session == nil ? "Sign in to find people."
-                      : query.isEmpty ? "Search for somebody by the name they chose."
+                      : query.isEmpty ? nil
                                       : "Couldn't find that person."
         case .followers: "Nobody follows you yet."
         case .following: "You do not follow anybody yet."
@@ -135,7 +137,7 @@ struct PeopleView: View {
     var body: some View {
         NavigationStack {
             List {
-                if visible.isEmpty && !searching {
+                if visible.isEmpty && !searching, let emptyLine {
                     // Right under the field it answers, with no rule above it
                     // (Hidde, 2026-10-12: "weirdly placed ... closer to the
                     // search area").

@@ -90,10 +90,12 @@ export const PEOPLE_JS = `
   }
 
   // The app's empty lines, word for word (People.swift emptyLine).
+  // An empty search says nothing: the field's placeholder already does.
   function empty(text) {
     var e = el('people-empty');
-    e.textContent = text || e.getAttribute('data-' + (mode === 'search'
-      ? (el('people-q').value.trim() ? 'none' : 'search') : mode));
+    var typed = el('people-q').value.trim();
+    if (!text && mode === 'search' && !typed) { e.hidden = true; return; }
+    e.textContent = text || e.getAttribute('data-' + (mode === 'search' ? 'none' : mode));
     e.hidden = false;
   }
 
