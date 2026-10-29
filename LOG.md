@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-29 night run (window from 07:55 UTC): nothing shipped, one archive contact sourced
+Rung 1 empty. Rung 2: the iOS run of 21:29 failed differently from the 18:45 one: 235 passed, StressWalk testNinetyRandomActionsDoNotKillTheApp failed (the app stopped running at action 75 after "Send feedback" and at action 64 after "Change photo"), plus a "failed to terminate" in the drag test. The profile-at-signup change landed in between, so a crash in Edit profile or feedback is possible; it needs the Mac simulator (not reproducible on this Linux runner), so nothing changed. For Hidde: a session with Xcode should run StressWalk and look at those two actions. Shelf still photo-blocked. Rung 4 sourcing: Portland Heritage Tree Program (address on its own nomination page) added to the archive contacts for portland/ptl_001 to 006; Barcelona and Brussels searches gave no published address (Woodwideweb page shows none), so nothing recorded.
+
 ## 2026-10-28 night run, second attempt: nothing shipped, shelf is photo-blocked
 The SF verify found all 30 register rows already worked; sfo_012 to sfo_015 have no open photo within 150 m (Commons was busy for two lookups, retry later). The san-francisco claim stays until they merge (expires in 4 hours). The three READY leads are not ready (no photos). Next useful work: a photo or archive ask for held trees (Canberra can_002/can_003 are written and wait only for a photograph), not more verify passes.
 
