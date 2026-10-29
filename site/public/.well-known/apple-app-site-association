@@ -148,6 +148,10 @@
             "exclude": true
           },
           {
+            "/": "/country.js",
+            "exclude": true
+          },
+          {
             "/": "/*.gpx",
             "exclude": true
           },

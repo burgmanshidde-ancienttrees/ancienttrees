@@ -48,8 +48,9 @@ export const flagUrl = (code: string) => `/flags/${code.toLowerCase()}.svg`;
 // tz-country.json is the system zone.tab (time zone -> ISO country).
 import TZ_COUNTRY from "./tz-country.json";
 
-export const COUNTRY_JS = `
-<script>
+// The same code as a file, /country.js (pages/country.js.ts), so a sign-in on
+// any page can settle the flag without every page carrying the zone table.
+export const COUNTRY_CORE_JS = `
 (function() {
   var TZ = ${JSON.stringify(TZ_COUNTRY)};
   window.atCountryGuess = function() {
@@ -80,4 +81,7 @@ export const COUNTRY_JS = `
       }).catch(function() { return { country: '', hidden: false, guess: '' }; });
   };
 })();
-</script>`;
+`;
+
+export const COUNTRY_JS = `
+<script>${COUNTRY_CORE_JS}</script>`;

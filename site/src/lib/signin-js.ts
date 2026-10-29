@@ -103,12 +103,34 @@ export const SIGNIN_JS = `
   // A vote is deliberately NOT replayed. A save and a tick are one press and
   // the account was the only thing in the way; an opinion is not something to
   // post on somebody's behalf because they signed in afterwards.
+  // YOUR FLAG, SET AT SIGN-IN (Hidde, 2026-10-29). Until you choose one, the
+  // flag after your name is the country you appear to be in (countries.ts);
+  // it used to be written only on /account, so almost nobody had one. Now
+  // every sign-in writes it once. A chosen flag or "Don't show" is never
+  // touched: atSettleCountry only fills an empty one.
+  function settleFlag() {
+    var s, uid;
+    try {
+      s = JSON.parse(localStorage.getItem('ancienttrees_session') || 'null');
+      var b = s.access_token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+      uid = JSON.parse(atob(b)).sub;
+    } catch (e) { return; }
+    if (!uid) return;
+    function go() { window.atSettleCountry(SB, SBK, s.access_token, uid); }
+    if (window.atSettleCountry) return go();
+    var el = document.createElement('script');
+    el.src = '/country.js';
+    el.onload = function() { if (window.atSettleCountry) go(); };
+    document.head.appendChild(el);
+  }
+
   function landed() {
     var want = window.atJustSignedIn;
     // The END of the funnel, which had no event: signin-open and
     // signin-link-sent said who was asked and who typed an address, and nothing
     // said who arrived back signed in.
     try { at.track('signin-done', want.kind || 'direct'); } catch (e) {}
+    settleFlag();
     // An ambassador request has no tree: the city page's own script reads
     // this on DOMContentLoaded and reopens the confirm step (AmbassadorLine).
     if (want.kind === 'ambassador') { window.atPendingAmbassador = want.city || true; return; }
