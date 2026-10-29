@@ -54,6 +54,8 @@ Then `python3 scripts/mailcheck.py <draft>` and rewrite until clean. For pitch c
 
 Write the draft to drafts/reply-<name>-<date>.md: notes for Hidde above a `---` line, the mail body below it (mailcheck reads only the body). In chat, quote the person's latest mail in full, translated to English unless it is English or Dutch, then the draft. Hidde reads only Dutch and English (2026-10-25): a draft in any other language is shown with its full word-for-word English translation right beside it, never a summary, and the same translation sits in the draft file's notes. His "verstuur" on that text means send now: follow drafts/OUTREACH.md and scripts/outreach_send.py (approved_word set in the same step as the send, never before).
 
+**Every draft waits for his yes on that draft, after he has seen it in chat** (Hidde, 2026-10-29: "vraag altijd mn toestemming na n draft"). A yes to one mail never carries to another, and an ambiguous word is a question, not a send: "ja en ook die voor jerry zo" meant "Jerry's next" ("zo" = soon), and the Jerry reply went out before he had read it. Show it, then ask.
+
 ## 7. When he corrects a draft
 
 Record it before the next reply: a mailcheck pattern if it can be grepped, otherwise a dated section in drafts/HIS_VOICE.md with his words. Not a memory note.
