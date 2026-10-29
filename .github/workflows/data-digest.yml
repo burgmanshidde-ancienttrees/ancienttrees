@@ -2,9 +2,17 @@ name: Data digest
 
 on:
   schedule:
-    # Once, early: 05:15 UTC so the previous UTC day is complete and the entry
-    # exists before Hidde's morning. The nightly research runs read DATA.md
-    # for their own conclusions; this workflow only produces the numbers.
+    # Early, after the previous UTC day is complete, so the entry exists before
+    # Hidde's morning. The nightly research runs read DATA.md for their own
+    # conclusions; this workflow only produces the numbers.
+    # 2026-10-29: GitHub delivered the single 05:15 cron 4.5 to 6 hours late
+    # every day (10:38, 11:22 UTC), so the digest was never ready by morning.
+    # Hidde wants it ready by 05:00 his time. Four knocks from just after
+    # midnight UTC; the first one GitHub delivers writes the entry and the
+    # gate job below turns the rest into a no-op.
+    - cron: "20 0 * * *"
+    - cron: "20 1 * * *"
+    - cron: "20 2 * * *"
     - cron: "15 5 * * *"
   workflow_dispatch:
     inputs:
@@ -25,7 +33,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # A scheduled knock whose day is already in DATA.md does nothing at all, so
+  # the extra crons never rerun the watchdog or recommit the side files.
+  # A manual dispatch always goes through.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: DATA.md
+      - id: check
+        run: |
+          yday=$(date -u -d yesterday +%Y-%m-%d)
+          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "^## $yday" DATA.md; then
+            echo "Entry for $yday already written; this knock does nothing."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
   digest:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
