@@ -107,12 +107,15 @@ ADD_NEEDS_RICH = False
 # person who stood there is the source. Trees live that day are in
 # data/photo-baseline.json and stay (hard rule 3). preflight's
 # check_a_new_tree_has_a_photograph() reads this; False needs Hidde.
-ADD_NEEDS_PHOTO = True
-# Except here (Hidde, 2026-10-29, "focus on portugal for now", then yes to new
-# trees there without a photograph): Portugal is where readers send photos and
-# ask to be ambassadors, so a photo-less tree is an invitation, and it carries
-# the googlebot noindex like every tree without reader content. An empty set
-# puts Portugal back under the rule.
+# OFF since 2026-10-29 (Hidde: "with people coming to the app anyway even trees
+# without photos are welcome because it invites people to go visit them"), the
+# same morning it was lifted for Portugal alone. Google sends almost nobody; the
+# app and the press do, and a tree without a photo is somewhere to go and
+# something for a reader to add. Every tree without reader content carries the
+# googlebot noindex, and check_publishing_pace()'s 60 a day stays as the guard
+# against the many-pages-at-once shape. True brings the rule back.
+ADD_NEEDS_PHOTO = False
+# When the rule is on, the countries it skips.
 PHOTO_EXEMPT_COUNTRIES = {"Portugal"}
 
 
