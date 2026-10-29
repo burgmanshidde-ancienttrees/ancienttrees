@@ -18,7 +18,7 @@ I read your article on [the tree, in their words]. We actually used it to build 
 
 [our tree page]
 
-My name is Hidde, I live in Baarn near Amsterdam, and I'm building Ancient Trees, a map of remarkable old trees worth a detour. My goal is to get people excited about old trees and get them outside to go and see them. People who visit a tree add their own photos and stories, so the map keeps getting better.
+My name is Hidde, I live in Baarn, a small town near Amsterdam. I'm building Ancient Trees, a map of remarkable old trees worth a detour. My goal is to get people excited about old trees and get them outside to go and see them. People who visit a tree add their own photos and stories, so the map keeps getting better.
 
 Would that be interesting for [outlet]? Very curious what you think of it.
 
@@ -31,8 +31,12 @@ P.S. Wilder in Portugal wrote about it last week, if you want to know a bit more
 
 The German and Swedish renderings Hidde approved are in drafts/batches/nature-2026-10-26.json. "Last week" goes stale: from mid-November write "Wilder in Portugal wrote about it recently".
 
+2026-10-29, Hidde: "this sentence is way to long". Who he is and what he builds are two sentences, and no city count is tacked on ("now in 235 cities"); mailcheck's INTRO IN ONE LONG SENTENCE refuses the old form in every language.
+
 What he changed on the way here: the intro was too detailed and read as AI; the origin story (Lisbon, Palermo) stays out, it is in the Wilder article; Wilder only as the P.S.
 
+
+**The source group uses this mail too** (Hidde, 2026-10-29: "onthou deze benadering"): every site our pages cite wrote about our tree, so it gets the text above, never the old link ask. First batch: drafts/batches/source-2026-10-29.json, with Dutch, Italian, French and Japanese renderings.
 
 ## Variant B: no article of theirs about a tree of ours (Hidde's own text, 2026-10-27)
 
@@ -44,7 +48,7 @@ Subject: Ancient Trees: old trees worth a detour
 
 Hi [first name, or nothing],
 
-My name is Hidde, I live in Baarn near Amsterdam, and I'm building Ancient Trees, a map of remarkable old trees worth a detour. One of the trees on it is [tree, place], which [one true clause from our story]:
+My name is Hidde, I live in Baarn, a small town near Amsterdam. I'm building Ancient Trees, a map of remarkable old trees worth a detour. One of the trees on it is [tree, place], which [one true clause from our story]:
 [our tree page]
 
 My goal is to get people excited about old trees and get them outside to go and see them. People who visit a tree add their own photos and stories, so the map keeps getting better.
