@@ -110,7 +110,8 @@ CHECKS = [
     # stacey the 30 min from amsterdam is relevant, its not relevant for dutch
     # peeps": the English intro carries it, a Dutch mail never does.
     ("WHERE HE LIVES WITHOUT WHAT HE DOES (use his standard intro)", [
-        r"\b(?:[Ll]ive|[Ww]oon) in Baarn\b(?![^.]*(?:Ancient Trees|work on|werk aan))",
+        # The next sentence may carry it (2026-10-29: two sentences, not one).
+        r"\b(?:[Ll]ive|[Ww]oon) in Baarn\b(?![^.]*\.?\s*[^.]*(?:Ancient Trees|work on|werk aan))",
     ]),
     ("AMSTERDAM IN A DUTCH MAIL (only foreigners need it)", [
         r"minuten (?:van|onder|vanaf) Amsterdam", r"(?:vlak ?bij|onder) Amsterdam",
@@ -178,6 +179,19 @@ CHECKS = [
         r"\bmeasur", r"\bgirth\b", r"\bcircumference\b", r"\bopmeten\b", r"\bomtrek\b",
         r"\bmessen\b", r"\bStammumfang\b", r"\bmisura", r"\bcirconferenza\b",
         r"\bmedir\b", r"\bperímetro\b", r"\bmesurer\b",
+    ]),
+    # Hidde, 2026-10-29, on "My name is Hidde, I live in Baarn near Amsterdam,
+    # and I'm building Ancient Trees, a worldwide map of ... now in 235
+    # cities": "this sentence is way to long". Who he is and what he builds
+    # are two sentences: "My name is Hidde, I live in Baarn near Amsterdam.
+    # I'm building Ancient Trees, a worldwide map of remarkable old trees
+    # worth a walk." No city count tacked on.
+    ("INTRO IN ONE LONG SENTENCE", [
+        r"Hidde, I live in Baarn near Amsterdam,? and I",
+        r"près d'Amsterdam,? et je construis", r"bei Amsterdam,? und baue",
+        r"cerca de Ámsterdam,? y estoy", r"perto de Amesterdão,? e estou",
+        r"vicino ad? Amsterdam,? e sto", r"bij Amsterdam,? en ik bouw",
+        r"Ancient Trees,[^.\n]{0,120}\b(?:now|already|inzwischen|déjà|ya|já|già|inmiddels) in \d+",
     ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
