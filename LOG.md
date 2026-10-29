@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-29, night run fourth attempt: nothing shipped, shelf still photo-blocked
+
+No claims standing. READY is 3 (oxford 2, madrid 1), under the six floor. The written-and-waiting trees (canberra can_002/can_003, fort-worth ftw_018, texas-famous txf_004, san-francisco sfo_013; sfo_012 has no story) all lack an approved photograph, so ADD_NEEDS_PHOTO keeps them out. Several research files list duplicates within 50 m (las-vegas lvg_015/016, london lon_031, munich muc_062, sfo_014/015, txf_001 to 003, wdc_017, a28_001) and need folding into leads by hand. A famous-philippines id clash (phl_003) needs a free id before any merge. Next useful work remains a photo or archive ask for these held trees. For Hidde: nothing.
+
 ## 2026-10-29, night run third attempt: nothing shippable, no claims left standing
 
 Nothing shipped. No claims were standing. READY is 3 leads (oxford 2, madrid 1), under the six-candidate floor for a write pass, and none has a photograph. Fort Worth has 0 unmined register candidates. Canberra is a 48-hour wall (the claim was refused), although the scout shows 114 unjudged register rows there, so it is worth a retry with a new source after 2026-10-30. The photo shortlist is empty. Famous demand's top item is Lithuania, ten oaks at 16 reads a month or less, out of focus, not taken. Translations stay paused under TRANSLATIONS_OUT. For Hidde: nothing.
