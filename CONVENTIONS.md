@@ -3909,3 +3909,5 @@ Hidde: when scrolling a tree page up, the white page should go over the photogra
 ## Sharing a tree from a saved list (2026-10-30)
 
 Hidde, on the design page (drafts/invite-and-share-design.html): "voorstel b lijkt me een goeie". A tree on Want to visit is a walk you might take with somebody. AllTrails shares a saved route with its share arrow (support.alltrails.com 360029314591); Airbnb puts one round control in a card's top corner. Ours: on every Want to visit card a white disc with the share arrow (app: top right of the tile; web: beside the save on the photograph, after it in the name row without one), opening the system share sheet with "Shall we go and see this one? <name>, <city>." and the tree's page; on a computer the link is copied. The payoff (A1/A2) and Invite a friend wait for his choice.
+
+**The payoff, built 2026-10-30** (Hidde: "de grote knop met share this tree wel ok", the A1 label "Send it to who was with you" was "gek"): a grey "Share this tree" button between the note field and Done, opening the system share sheet with the tree's page. App only: the website has no collect payoff.
