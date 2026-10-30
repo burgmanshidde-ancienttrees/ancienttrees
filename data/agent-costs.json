@@ -1,6 +1,16 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-30": [
+   {
+    "date": "2026-10-30",
+    "target": "lagos+faro+setubal",
+    "kind": "write",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "16 READY Portugal leads (13 unique) were register-only or access-blocked, none verified or findable; 0 written, 13 marked held/blocked/published so leads.py stops offering them; Pomar Velho oak has a new iNat life lead for a verify pass"
+   }
+  ],
   "2026-10-29": [
    {
     "date": "2026-10-29",

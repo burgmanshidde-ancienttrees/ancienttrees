@@ -28,31 +28,33 @@
       "lng": -8.89854,
       "status": "folded",
       "why": "Already published: folded into stb_003 (\"The Silky Oaks of Largo Marques de Pombal\"), whose story explicitly covers both trees ('there are two of them here'). Registered separately (KNJ1/520) but standing metres from its twin and distinguished only by girth, so it was deliberately given no pin of its own. Same for KNJ1/524 (stone pine) and KNJ1/527 (black poplar): three registered trees folded into their siblings' pages to avoid near-identical entries. Marked 'folded' 2026-08-23 after leads.py's READY check surfaced this as needing a story, which it does not: the status field just hadn't been updated when the folding decision was made."
-    }
-    ,
+    },
     {
       "name": "Sobreiro of Campo Desportivo de Lagameças (KNJ1/229)",
       "species": "Quercus suber",
       "lat": 38.5983,
       "lng": -8.7636,
-      "status": "lead",
-      "why": "Palmela concelho, about 14 km. Register only (girth 3.6 m, age 100, Wikidata Q98444726); lifecheck NONE, no web source found, no photo or confirmed pin in reach. 2026-10-29 pass."
+      "status": "held",
+      "why": "Palmela concelho, about 14 km. Register only (girth 3.6 m, age 100, Wikidata Q98444726); lifecheck NONE, no web source found, no photo or confirmed pin in reach. 2026-10-29 pass.",
+      "held_2026-10-30": "2026-10-30 write pass: not written: register only, no second source, no life evidence (nothing within 150 to 200 m on iNaturalist or Commons, 2026-10-30), no photo or confirmed pin; not findable."
     },
     {
       "name": "Pinheiro Ramundo, Lagoa do Calvo (KNJ1/228)",
       "species": "Pinus pinea",
       "lat": 38.6834,
       "lng": -8.7415,
-      "status": "lead",
-      "why": "Palmela concelho but about 20 km north; register only (girth 3.75 m), not checked this pass, outside the Setubal walking area."
+      "status": "held",
+      "why": "Palmela concelho but about 20 km north; register only (girth 3.75 m), not checked this pass, outside the Setubal walking area.",
+      "held_2026-10-30": "2026-10-30 write pass: not written: register only, never checked by a pass, no life evidence (nothing on iNaturalist or Commons within 150 to 200 m, 2026-10-30), no photo or confirmed pin; not findable."
     },
     {
       "name": "Pinheiro-manso, Azenha da Ordem EN379 km 17.3 (KNJ1/047)",
       "species": "Pinus pinea",
       "lat": 38.49336,
       "lng": -9.05539,
-      "status": "lead",
-      "why": "Sesimbra concelho, outside the Setubal area; register only (girth 4.48 m, Wikidata Q98444740), not checked this pass."
+      "status": "held",
+      "why": "Sesimbra concelho, outside the Setubal area; register only (girth 4.48 m, Wikidata Q98444740), not checked this pass.",
+      "held_2026-10-30": "2026-10-30 write pass: not written: register only, never checked by a pass, no life evidence (no tree observation on iNaturalist or Commons within 150 to 200 m, 2026-10-30), no photo or confirmed pin; not findable."
     },
     {
       "name": "Sobreiro Assobiador, Aguas de Moura",
