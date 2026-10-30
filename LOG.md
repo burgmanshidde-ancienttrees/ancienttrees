@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-30, night run (retry window): par_071 live, pace now full
+Paris par_071 (Ranelagh wingnut) merged with its French overlay (and "55 more" raised to 56 in both languages); preflight clean; the Paris claim is released. The pace stood at 24 of 25, so the 7 other READY leads (Paris 3, Oxford 2, Madrid 1, Sightings 1) wait for tomorrow. The Town Hall Plane sighting is still open: its photo is not on disk, never judged blind. iOS CI failure is the earlier simulator timeout, not an assertion.
+
 ## 2026-10-30, night run (14:53 window): short, nothing published
 
 Rung 1: one new tree note (Baarn Pekingtuin oak, fine) read and marked seen; the Town Hall Plane (app lead, 52.2140 5.2971, mine) stays open because its photo is not on disk and a stranger's photo is never judged blind. Rung 2: iOS CI failed because `xcodebuild test` hung 30 minutes after a slow simulator boot (bootstatus 180 s) and was killed; infrastructure, not an assertion, so no app fix (next push reruns it). Knocks: 5 of 12 delivered in 24h (GitHub dropping the cron). Enrichment: Paris had only season and register-pin gaps, 30 recorded as dead ends (`enrich.py --done paris`); claim stays because par_071 is still unmerged. No write pass: Paris's 21 trees filled the 25-a-day pace, so par_071 and any new leads wait for tomorrow's window.

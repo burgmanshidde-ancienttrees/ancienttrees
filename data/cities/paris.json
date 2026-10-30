@@ -6,7 +6,7 @@
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. They include the city's oldest tree, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
   "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 55 more within a metro ride.",
   "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
-  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 55 more remarkable trees nearby.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 56 more remarkable trees nearby.",
   "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
   "faq": [
     {
@@ -2373,6 +2373,43 @@
         "kind": "fruit",
         "label": "July to September, when chains of pale green winged seeds hang from every branch"
       },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "par_071",
+      "name": "The Wingnut of the Ranelagh Garden",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 105 years",
+      "age_min": 100,
+      "age_max": 110,
+      "age_basis": "source",
+      "girth_cm": 465,
+      "height_m": 28,
+      "location": {
+        "address": "Jardin du Ranelagh, 22 chaussee de la Muette, 75016 Paris",
+        "latitude": 48.86003338,
+        "longitude": 2.26913462,
+        "neighbourhood": "16th arrondissement"
+      },
+      "verified_sources": [
+        "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136794.pdf",
+        "https://www.paris.fr/equipements/jardin-du-ranelagh-1778"
+      ],
+      "official_register": {
+        "name": "Arbres remarquables de Paris (Ville de Paris), no. 136794",
+        "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136794.pdf"
+      },
+      "access": "Free public garden; paris.fr lists it open 24 hours for 1 May to 31 August 2026, other seasons have fixed hours (not fetched).",
+      "transport": "La Muette (M9), about 3 minutes' walk (estimated from the address).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This Paris garden carries the name of a London one. In the eighteenth century a ballroom here borrowed it from Ranelagh Gardens, a fashionable pleasure ground on the Thames, and the Jardin du Ranelagh has kept the word ever since. The wingnut came much later, in 1920, by the date on the city's fact sheet, two years after the First World War ended.\n\nIt is a Caucasian wingnut, a fast, big tree from the wet lowlands between the Caucasus and Iran, and the register measures it at 465 centimetres round and 28 metres tall; the sheet gives 449 and 28. For a tree barely a century old, that is a lot of trunk. The open register leaves its planting year blank, so the 1920 rests on the printed sheet alone.\n\nWe have to be straight about one thing. We have found no recent photograph or report of this particular tree, and the pin sits on the register's point rather than on a trunk anyone has confirmed. The city still lists it, and that is all we can say for certain. If you walk through the garden, look for a wingnut with a trunk over four and a half metres round, and tell us whether it is still there. A photograph would settle it.\n\nIn summer, a healthy wingnut is hard to miss, its branches hanging with long green chains of winged seeds. The garden is a few minutes from La Muette metro and free to enter.",
+      "how_to_recognise": "You can recognise it, if it stands, by a trunk over four and a half metres round on a wingnut 28 metres tall, hung with green seed chains in summer. It stands in the Jardin du Ranelagh.",
       "photo": {
         "url": null,
         "license": null,
