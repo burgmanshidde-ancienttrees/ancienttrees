@@ -124,6 +124,10 @@
     "2026-10-28": {
       "note": "Skipped deploys are bot-commit pushes (digest, review); the scheduled build 05:54 succeeded",
       "at": "2026-10-28T07:52:11+00:00"
+    },
+    "2026-10-30": {
+      "note": "iOS app run 41088978129 failed because no macOS runner was acquired (capacity), no test ran; not an app fault",
+      "at": "2026-10-30T19:33:52+00:00"
     }
   }
 }

@@ -4,6 +4,14 @@
   "2026-10-30": [
    {
     "date": "2026-10-30",
+    "kind": "write",
+    "target": "frankfurt, graz, texas-famous (fort-worth, innsbruck, san-francisco, faro checked and held)",
+    "tokens": 124022,
+    "trees": 3,
+    "note": "frk_024 and grz_017 written with de overlays; txf_004 merged as new place rio-frio; ftw_018, inn_007, tav_001 held on public access, sfo_012 duplicate of sfo_004."
+   },
+   {
+    "date": "2026-10-30",
     "kind": "verify",
     "target": "paris (register top 40, east)",
     "tokens": 172063,
