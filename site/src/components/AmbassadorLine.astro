@@ -164,6 +164,22 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
         .then(function(r) { return r.ok ? r.json() : []; })
         .then(function(rows) { if (rows && rows.length) done(); })
         .catch(function() {});
+      // You look after this place already: the ask is not yours (Hidde,
+      // 2026-10-30, Baarn's ambassador still reading "Request sent." under his
+      // own name). Google Maps shows "Join Local Guides" only to non-guides.
+      // The user id is the token's sub claim (see add-photo-js userId).
+      var uid = null;
+      try {
+        var b = s.access_token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+        while (b.length % 4) b += '=';
+        uid = JSON.parse(atob(b)).sub || null;
+      } catch (e) {}
+      if (!uid) return;
+      fetch(SB + '/rest/v1/ambassadors?select=place_name&user_id=eq.' + encodeURIComponent(uid) + '&place_name=ilike.' + encodeURIComponent(city),
+            { headers: headers(s) })
+        .then(function(r) { return r.ok ? r.json() : []; })
+        .then(function(rows) { if (rows && rows.length) box.hidden = true; })
+        .catch(function() {});
     });
     var dlg = document.getElementById('amb-dialog');
     var ask = dlg.querySelector('.amb-ask'), sent = dlg.querySelector('.amb-sent');

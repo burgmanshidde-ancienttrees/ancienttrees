@@ -26,9 +26,19 @@ struct TreeMapPage: View {
 
     @Environment(Navigator.self) private var navigator
     @Environment(Saved.self) private var saved
-    /// The map wants somewhere to put a selection; this page has none, because
-    /// a tap here opens a page rather than selecting a pin.
+    /// THIS TREE IS THE SELECTED PIN, from the first frame and for as long as
+    /// the page is open (Hidde, 2026-10-30: among its neighbours "best lastig
+    /// te onderscheiden welke boom nou geselecteerd is"). Apple Maps and Google
+    /// Maps open a place as the large selected pin among small neighbours, and
+    /// it stays selected; a neighbour's tap opens its own page here, so nothing
+    /// ever replaces it.
     @State private var selected: Tree?
+
+    init(tree: Tree, catalogue: Catalogue) {
+        self.tree = tree
+        self.catalogue = catalogue
+        _selected = State(initialValue: tree)
+    }
 
     /// This tree and whatever else of ours stands within a walk of it.
     private var nearby: [Tree] {

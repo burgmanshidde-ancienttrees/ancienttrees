@@ -562,6 +562,9 @@ struct TreeMap: UIViewRepresentable {
                 sync(trees: p.trees, mine: p.mine, route: p.route,
                      routeIsReal: p.routeIsReal, declutter: p.declutter, on: map)
             }
+            // A tree chosen before the style existed (the tree page's own map
+            // opens with it selected) was aimed at no layer; aim it now.
+            MapLayers.select(parent.selected?.id, on: style)
             startBreathing(on: style)
             }
         }

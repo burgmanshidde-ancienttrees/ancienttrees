@@ -298,7 +298,21 @@ struct AmbassadorWantedRow: View {
         .contentShape(.rect)
     }
 
+    @Environment(Profiles.self) private var profiles
+
+    /// You look after this place already, so the ask is not yours (Hidde,
+    /// 2026-10-30, made Baarn's ambassador and still reading "Request sent."
+    /// under his own name). Google Maps shows "Join Local Guides" only to
+    /// somebody who is not one.
+    private var isMine: Bool {
+        profiles.myPlaces.contains { $0.place_name.caseInsensitiveCompare(place) == .orderedSame }
+    }
+
     var body: some View {
+        if !isMine { row }
+    }
+
+    private var row: some View {
         Button(action: tap) {
             if seated { seatedLine } else { openRow }
         }
