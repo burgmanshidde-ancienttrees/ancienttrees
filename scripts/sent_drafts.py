@@ -129,6 +129,29 @@ def from_json(path, skip):
     return to, subjects
 
 
+def batch_tags(path):
+    """The names the send log files this draft's mails under: the file name and
+    the batch file's own `batch` field (outreach_send.py writes either). A row
+    tagged with one of them was sent from this draft whatever its date says:
+    on 2026-10-30 batch-009 (sent 08-26) showed "0 of 40" because a pull had
+    given it a made date of 10-27, and press-2026-10-30 was sent on 10-29."""
+    stem = os.path.basename(path).rsplit(".", 1)[0]
+    if stem.endswith("-preview"):
+        stem = stem[:-len("-preview")]
+    tags = {stem}
+    if stem.startswith("batch-press-"):          # batch-press-2026-10-30-preview.md
+        tags.add(stem[len("batch-"):])
+    for name in sorted(tags):
+        twin = os.path.join(ROOT, "drafts", "batches", name + ".json")
+        try:
+            doc = json.load(open(twin, encoding="utf-8"))
+            if isinstance(doc, dict) and doc.get("batch"):
+                tags.add(str(doc["batch"]))
+        except (OSError, ValueError):
+            pass
+    return tags
+
+
 def scan(drafts, skip):
     """Add or refresh every recent draft present on this machine; drafts that
     are not here (the digest runner has no session drafts) keep their row."""
@@ -151,7 +174,8 @@ def scan(drafts, skip):
             to, subjects = from_json(twin, skip)
         row = drafts.setdefault(rel, {})
         made = min(made, row.get("made") or made)   # a Linux runner has no birthtime
-        row.update({"made": made, "to": sorted(to), "subjects": sorted(subjects)})
+        row.update({"made": made, "to": sorted(to), "subjects": sorted(subjects),
+                    "tags": sorted(batch_tags(p))})
         row.setdefault("sent", {})
 
 
@@ -213,8 +237,8 @@ def main():
     open_ = {k: v for k, v in drafts.items() if v.get("to") or v.get("subjects")}
     since = min([v["made"] for v in open_.values()] or [datetime.date.today().isoformat()])
 
-    seen = [((r.get("to") or "").lower(), norm_subject(r.get("subject")), (r.get("date") or "")[:10])
-            for r in rows if isinstance(r, dict)]
+    seen = [((r.get("to") or "").lower(), norm_subject(r.get("subject")), (r.get("date") or "")[:10],
+             str(r.get("batch") or "")) for r in rows if isinstance(r, dict)]
     added, box = 0, None
     if "--no-mail" not in sys.argv:
         want_to = {a for v in open_.values() for a in v.get("to", [])}
@@ -227,7 +251,7 @@ def main():
         # Every script send through Gmail leaves a copy in Sent too, dated in
         # UTC where the log has the local day: a copy within a day of a logged
         # row to the same address is that row, not a second mail.
-        logged = {(a, d) for a, _, d in seen}
+        logged = {(a, d) for a, _, d, _ in seen}
 
         def near(a, when):
             day = datetime.date.fromisoformat(when)
@@ -238,7 +262,7 @@ def main():
                 rows.append({"date": when, "to": a, "outlet": "sent by hand", "subject": subj,
                              "batch": HAND})
                 logged.add((a, when))
-                seen.append((a, norm_subject(subj), when))
+                seen.append((a, norm_subject(subj), when, HAND))
                 added += 1
         if added:
             with open(SENT, "w", encoding="utf-8") as fh:
@@ -249,8 +273,10 @@ def main():
     for rel, v in drafts.items():
         to, subjects, made = v.get("to", []), v.get("subjects", []), v.get("made", "")
         sent = v.setdefault("sent", {})
-        for a, s, d in seen:
-            if d < made:
+        # scan() skips drafts past DAYS, whose rows then carry no tags.
+        tags = set(v.get("tags") or batch_tags(os.path.join(ROOT, rel)))
+        for a, s, d, b in seen:
+            if d < made and b not in tags:
                 continue
             if a in to and a not in sent:
                 sent[a] = d
