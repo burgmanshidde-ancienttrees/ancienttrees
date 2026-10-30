@@ -1,110 +1,119 @@
 [
- {
-  "id": "grz_014",
-  "name": "The Lustbuhel Sweet Chestnut",
-  "species": "Sweet Chestnut (Castanea sativa)",
-  "age_estimate": "",
-  "location": {
-   "address": "Waltendorfer Hauptstrasse (car park by the Lustbuhel hill), Graz",
-   "latitude": 47.069641,
-   "longitude": 15.498169,
-   "neighbourhood": "Waltendorf / Lustbuhel"
+  {
+    "id": "grz_014",
+    "name": "The Lustbuhel Sweet Chestnut",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "",
+    "location": {
+      "address": "Waltendorfer Hauptstrasse (car park by the Lustbuhel hill), Graz",
+      "latitude": 47.069641,
+      "longitude": 15.498169,
+      "neighbourhood": "Waltendorf / Lustbuhel"
+    },
+    "verified_sources": [
+      "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 69)",
+      "https://commons.wikimedia.org/wiki/File:Graz_Castanea_sativa_ID1121.JPG"
+    ],
+    "access": "Stands beside a public car park on Waltendorfer Hauptstrasse at the foot of the Lustbuhel landscape-protection hill; the register lists the owner as public. Seen from the car park and road; nothing needs asking.",
+    "transport": "Bus to Waltendorf / Lustbuhel direction; exact stop and walk time not verified",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "- Styrian Naturdenkmal ID 1121 (Commons file description). Register point 47.069641,15.498169 and the geotagged Commons photo 47.069642,15.498181 agree within about 1 m, so the pin is on the individual trunk.\n- Photo (Christian Pirkl, CC BY-SA 3.0 at, 2014-05-08) shows a very thick, deeply fissured chestnut with a storm-snapped top and new limbs, in leaf. I looked at the file. Leaves of a compound-leaved neighbour overhang.\n- Register carries species only: no age, girth, height or vitality. No girth_cm recorded (nothing to read it from).\n- Alive: lifecheck NONE, no iNaturalist observation within 50 m. Only evidence is the 2014 Commons photo, so register only plus an old photo: flagged. The snapped crown is visible there, so the page should ask readers how it looks now.\n- Access: OSM reverse geocode puts the point on amenity=parking, Waltendorfer Hauptstrasse. A fence line runs behind the tree in the photo; the tree may stand at the edge of a pasture, visitor stands on the car park side.\n- Unverified: whether the Lustbuhel car park is open all day; two verified hosts did not answer (sterz.stmk.gv.at returns 403).",
+    "photo_candidate": {
+      "url": "https://commons.wikimedia.org/wiki/File:Graz_Castanea_sativa_ID1121.JPG",
+      "license": "CC BY-SA 3.0 at",
+      "attribution": "Christian Pirkl",
+      "note": "geotagged 1 m from register point; viewed, one trunk dominant"
+    },
+    "story": "A storm once snapped the top off this chestnut, and it carried on regardless. The only dated picture of it, taken in May 2014, shows the damage plainly: a very thick trunk, deeply furrowed, a splintered end where the leader used to rise, and a set of younger limbs climbing past the break.\n\nIt stands at the edge of a public car park on Waltendorfer Hauptstrasse, at the foot of the Lustbühel, the hill on the eastern side of Graz that is kept under landscape protection. A fence runs behind it, so the trunk may sit on the boundary of a field. You look at it from the car park side, which is close enough to take in the girth.\n\nStyria lists it as Naturdenkmal 1121, which protects it by law, and that is very nearly all the record says: the species, a public owner, a point on the map. No age, no girth, no height, no planting date. The 2014 photograph was taken within a metre of the register's own point, so there is no doubt which tree this is.\n\nWhat nobody has written down since 2014 is how it is doing, and a tree that has already lost its top is the kind worth checking on. If you have stood in front of it recently, tell us how it looks, and if you have a tape measure, how far it is round the trunk.",
+    "how_to_recognise": "You can recognise it by the very thick, deeply furrowed trunk with a broken top and younger limbs rising past the break. It stands at the edge of the car park on Waltendorfer Hauptstrasse, a fence behind it."
   },
-  "verified_sources": [
-   "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 69)",
-   "https://commons.wikimedia.org/wiki/File:Graz_Castanea_sativa_ID1121.JPG"
-  ],
-  "access": "Stands beside a public car park on Waltendorfer Hauptstrasse at the foot of the Lustbuhel landscape-protection hill; the register lists the owner as public. Seen from the car park and road; nothing needs asking.",
-  "transport": "Bus to Waltendorf / Lustbuhel direction; exact stop and walk time not verified",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "- Styrian Naturdenkmal ID 1121 (Commons file description). Register point 47.069641,15.498169 and the geotagged Commons photo 47.069642,15.498181 agree within about 1 m, so the pin is on the individual trunk.\n- Photo (Christian Pirkl, CC BY-SA 3.0 at, 2014-05-08) shows a very thick, deeply fissured chestnut with a storm-snapped top and new limbs, in leaf. I looked at the file. Leaves of a compound-leaved neighbour overhang.\n- Register carries species only: no age, girth, height or vitality. No girth_cm recorded (nothing to read it from).\n- Alive: lifecheck NONE, no iNaturalist observation within 50 m. Only evidence is the 2014 Commons photo, so register only plus an old photo: flagged. The snapped crown is visible there, so the page should ask readers how it looks now.\n- Access: OSM reverse geocode puts the point on amenity=parking, Waltendorfer Hauptstrasse. A fence line runs behind the tree in the photo; the tree may stand at the edge of a pasture, visitor stands on the car park side.\n- Unverified: whether the Lustbuhel car park is open all day; two verified hosts did not answer (sterz.stmk.gv.at returns 403).",
-  "photo_candidate": {
-   "url": "https://commons.wikimedia.org/wiki/File:Graz_Castanea_sativa_ID1121.JPG",
-   "license": "CC BY-SA 3.0 at",
-   "attribution": "Christian Pirkl",
-   "note": "geotagged 1 m from register point; viewed, one trunk dominant"
+  {
+    "id": "grz_015",
+    "name": "The Johannhohe Cornelian Cherry",
+    "species": "Cornelian Cherry (Cornus mas)",
+    "age_estimate": "",
+    "location": {
+      "address": "Johannhohe (service road on the ridge), Kroisbach, Graz",
+      "latitude": 47.099705,
+      "longitude": 15.468162,
+      "neighbourhood": "Kroisbach / Mariatrost"
+    },
+    "verified_sources": [
+      "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 23)",
+      "https://commons.wikimedia.org/wiki/File:ID_997_Dirndlbeere_2.jpg"
+    ],
+    "access": "Register lists the owner as public; OSM puts the point on the Johannhohe service road (a public hill road). Not checked whether the road is open to cars; on foot it is a public way.",
+    "transport": "Not verified; bus to Kroisbach then a steep climb, walk time unknown",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "- Styrian Naturdenkmal ID 997 (Commons file description). Register point 47.099705,15.468162; geotagged Commons photo (Christian Pirkl, CC BY-SA 3.0 at, 2015-03-30) at 47.099685,15.468212, about 4 m away.\n- The photo shows only the crown in full yellow flower against sky (late March bloom). No trunk or surroundings visible, so it proves species-in-flower and the pin, nothing about size. I looked at the file. Not a photo to lead with.\n- Season: Cornus mas flowers late February to March, a real seasonal peak and unusual to see as a large old specimen; a Cornus mas Naturdenkmal is rare, which is why it is listed.\n- Register carries species only, no age, girth or vitality. Alive: lifecheck NONE, no iNaturalist observation; only the 2015 photo. Flagged, register only.\n- Weakest of the delivered trees on 'worth the walk': the case rests on being a protected old Cornelian cherry on a viewpoint ridge, with no size figure.",
+    "story": "The only photograph on record of this tree shows no trunk at all. Taken from underneath on 30 March 2015, it is a crown of small yellow flowers against a blue sky, and nothing else.\n\nThat is the cornelian cherry's moment. It flowers between late February and March, among the first trees of the year to do so, and in Austria, where its fruit is the Dirndlbeere, it is far more often met as a hedge or a shrub than as a protected monument. Styria lists this one as Naturdenkmal 997, on public ground beside the service road that runs along the Johannhöhe ridge above Kroisbach, in the hills north-east of the centre. The photograph's coordinates sit about four metres from the register's point.\n\nBeyond that the record is thin. The register names the species and the owner and stops there: no age, no girth, no height. Nobody has measured how big it is, and the 2015 picture is the latest evidence that it is still standing.\n\nGetting there is a steep climb from the bus in Kroisbach; on foot the ridge road is a public way. Go in March, when you will know it by the colour. If you have seen it since 2015, or have put a tape round its trunk, tell us what you found.",
+    "how_to_recognise": "You can recognise it in late February and March by the crown, covered in small yellow flowers before the leaves. It stands beside the service road along the Johannhöhe ridge above Kroisbach.",
+    "best_time": {
+      "months": [
+        3
+      ],
+      "kind": "flowers",
+      "label": "March, when the whole crown flowers yellow, sometimes from late February"
+    }
   },
-  "story": "A storm once snapped the top off this chestnut, and it carried on regardless. The only dated picture of it, taken in May 2014, shows the damage plainly: a very thick trunk, deeply furrowed, a splintered end where the leader used to rise, and a set of younger limbs climbing past the break.\n\nIt stands at the edge of a public car park on Waltendorfer Hauptstrasse, at the foot of the Lustbühel, the hill on the eastern side of Graz that is kept under landscape protection. A fence runs behind it, so the trunk may sit on the boundary of a field. You look at it from the car park side, which is close enough to take in the girth.\n\nStyria lists it as Naturdenkmal 1121, which protects it by law, and that is very nearly all the record says: the species, a public owner, a point on the map. No age, no girth, no height, no planting date. The 2014 photograph was taken within a metre of the register's own point, so there is no doubt which tree this is.\n\nWhat nobody has written down since 2014 is how it is doing, and a tree that has already lost its top is the kind worth checking on. If you have stood in front of it recently, tell us how it looks, and if you have a tape measure, how far it is round the trunk.",
-  "how_to_recognise": "You can recognise it by the very thick, deeply furrowed trunk with a broken top and younger limbs rising past the break. It stands at the edge of the car park on Waltendorfer Hauptstrasse, a fence behind it."
- },
- {
-  "id": "grz_015",
-  "name": "The Johannhohe Cornelian Cherry",
-  "species": "Cornelian Cherry (Cornus mas)",
-  "age_estimate": "",
-  "location": {
-   "address": "Johannhohe (service road on the ridge), Kroisbach, Graz",
-   "latitude": 47.099705,
-   "longitude": 15.468162,
-   "neighbourhood": "Kroisbach / Mariatrost"
+  {
+    "id": "grz_016",
+    "name": "The Münzgrabenstrasse Oriental Plane",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "",
+    "location": {
+      "address": "Münzgrabenstraße (by the roadside car park), 8010 Graz",
+      "latitude": 47.050934,
+      "longitude": 15.455815,
+      "neighbourhood": "Harmsdorf, Jakomini"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Graz",
+      "https://commons.wikimedia.org/wiki/File:Platane_M%C3%BCnzgrabenstra%C3%9Fe.jpg",
+      "https://sterz.stmk.gv.at/at.gv.stmk.capp/cms/crokat/process.do?app=ROKAT_Detail&embed=frame&output=1&ip01=NN&ip01def=SNB&ip02=NN&ip02def=1014"
+    ],
+    "access": "Free. Stands beside the public Münzgrabenstraße at a roadside car park; viewable from the street.",
+    "transport": "In Jakomini, about 3 km south-east of Hauptplatz; bus stop and line not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Graz protects eighteen plane trees as natural monuments, and the register records only one of them as an Oriental plane. This is it, standing beside a roadside car park on Münzgrabenstraße.\n\nThe other seventeen are London planes, the hybrid that shades the Volksgarten and Schillerplatz. Platanus orientalis is one of that hybrid's two parent species, and in a central European street it is far rarer than its offspring.\n\nIt was listed as Naturdenkmal 1014 on 1 July 1981, on a parcel of about 117 square metres, little more than a square of ground around the trunk. The city's register gives the owner as public.\n\nThat is close to everything on record. Nobody has published its age, its girth or its height, and the most recent photograph we know of was taken for Wiki Loves Earth in May 2014. The tree is still on the official list with no note of removal, but we have seen nothing newer that shows it standing. If you pass it, tell us, and if you have a tape measure, a girth would let us put an age on it.\n\nIt is a detour of its own rather than part of a walk: about three kilometres south-east of the Hauptplatz in Jakomini, and nearly two kilometres from the nearest of the city's other protected trees, the Schillerplatz plane.",
+    "how_to_recognise": "You can recognise it as the plane tree beside the roadside car park on Münzgrabenstraße in Jakomini, the only Oriental plane among Graz's protected planes. It is Naturdenkmal 1014."
   },
-  "verified_sources": [
-   "https://data.graz.gv.at (Graz Naturdenkmale register, data/registers/graz-naturdenkmale.json, CC BY 4.0, owner: oeffentlich, register_id 23)",
-   "https://commons.wikimedia.org/wiki/File:ID_997_Dirndlbeere_2.jpg"
-  ],
-  "access": "Register lists the owner as public; OSM puts the point on the Johannhohe service road (a public hill road). Not checked whether the road is open to cars; on foot it is a public way.",
-  "transport": "Not verified; bus to Kroisbach then a steep climb, walk time unknown",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "- Styrian Naturdenkmal ID 997 (Commons file description). Register point 47.099705,15.468162; geotagged Commons photo (Christian Pirkl, CC BY-SA 3.0 at, 2015-03-30) at 47.099685,15.468212, about 4 m away.\n- The photo shows only the crown in full yellow flower against sky (late March bloom). No trunk or surroundings visible, so it proves species-in-flower and the pin, nothing about size. I looked at the file. Not a photo to lead with.\n- Season: Cornus mas flowers late February to March, a real seasonal peak and unusual to see as a large old specimen; a Cornus mas Naturdenkmal is rare, which is why it is listed.\n- Register carries species only, no age, girth or vitality. Alive: lifecheck NONE, no iNaturalist observation; only the 2015 photo. Flagged, register only.\n- Weakest of the delivered trees on 'worth the walk': the case rests on being a protected old Cornelian cherry on a viewpoint ridge, with no size figure.",
-  "story": "The only photograph on record of this tree shows no trunk at all. Taken from underneath on 30 March 2015, it is a crown of small yellow flowers against a blue sky, and nothing else.\n\nThat is the cornelian cherry's moment. It flowers between late February and March, among the first trees of the year to do so, and in Austria, where its fruit is the Dirndlbeere, it is far more often met as a hedge or a shrub than as a protected monument. Styria lists this one as Naturdenkmal 997, on public ground beside the service road that runs along the Johannhöhe ridge above Kroisbach, in the hills north-east of the centre. The photograph's coordinates sit about four metres from the register's point.\n\nBeyond that the record is thin. The register names the species and the owner and stops there: no age, no girth, no height. Nobody has measured how big it is, and the 2015 picture is the latest evidence that it is still standing.\n\nGetting there is a steep climb from the bus in Kroisbach; on foot the ridge road is a public way. Go in March, when you will know it by the colour. If you have seen it since 2015, or have put a tape round its trunk, tell us what you found.",
-  "how_to_recognise": "You can recognise it in late February and March by the crown, covered in small yellow flowers before the leaves. It stands beside the service road along the Johannhöhe ridge above Kroisbach.",
-  "best_time": {
-   "months": [
-    3
-   ],
-   "kind": "flowers",
-   "label": "March, when the whole crown flowers yellow, sometimes from late February"
+  {
+    "id": "grz_017",
+    "name": "The Stadtpark Caucasian Wingnut",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "roughly 150 years",
+    "age_min": 140,
+    "age_max": 160,
+    "location": {
+      "address": "Stadtpark (northern part, fenced tree), 8010 Graz",
+      "latitude": 47.0743,
+      "longitude": 15.4452,
+      "neighbourhood": "Innere Stadt"
+    },
+    "verified_sources": [
+      "https://www.inside-graz.at/freizeit/stadtpark-info.html",
+      "https://www.grazinteressiertmich.at/denkspazierg%C3%A4nge/denkspazierg%C3%A4nge-2021/blausternchen/",
+      "https://3hefecit.eu/monatsspaziergang-im-mai-2025/",
+      "https://www.graz.at/cms/beitrag/10143292/8029509/Der_Grazer_Stadtpark.html",
+      "https://grazjournal.at/freizeit/stadtpark-graz/"
+    ],
+    "access": "Free. Public city park (Stadt Graz, 22 ha, open recreation area), no gate. The tree itself has been fenced since 2010 against falling branches, so it is seen from the fence.",
+    "transport": "Central Graz, a few minutes on foot from the old town; Commons geotag puts the tram/bike stop Zinzendorfgasse about 80 m away (not checked against the timetable).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "The only tree in Graz's Stadtpark with a fence of its own is a Caucasian wingnut from the park's first planting. Its crown spreads so wide that it has to be propped up, and since 2010 the fence has kept visitors out from under it, so a falling branch cannot land on anyone.\n\nThe Stadtpark was laid out between 1869 and 1872 under mayor Moritz Ritter von Franck. Local guides place this wingnut in that first planting around 1870, which makes it one of the oldest trees in the park and roughly 150 years old. That age rests on the park's founding, not on a planting record or a tape measure. Nobody has published a girth. If you have measured the trunk, tell us.\n\nCount it forward and it was already a big tree when Austria-Hungary came apart in 1918, and it stood here through both world wars. It is still going. A walking group found it in full leaf in May 2025.\n\nThe best of it is underfoot. In March and April the ground beneath it turns blue with squill, a carpet the city's gardeners are proud of. Squill and wingnut come from the same part of the world, the Caucasus.\n\nThe park is free and open, a few minutes' walk from the old town, and the tree stands in its northern part. You see it from the fence, which is as close as anyone gets.",
+    "how_to_recognise": "You can recognise it as the one tree in the Stadtpark with a fence round it and its wide crown propped up. It stands in the northern part of the park; in March the ground under it is blue with squill.",
+    "best_time": {
+      "months": [
+        3,
+        4
+      ],
+      "kind": "flowers",
+      "label": "March and April, when a carpet of blue squill flowers beneath it"
+    }
   }
- },
- {
-  "id": "grz_016",
-  "name": "The Münzgrabenstrasse Oriental Plane",
-  "species": "Oriental Plane (Platanus orientalis)",
-  "age_estimate": "",
-  "location": {
-   "address": "Münzgrabenstraße (by the roadside car park), 8010 Graz",
-   "latitude": 47.050934,
-   "longitude": 15.455815,
-   "neighbourhood": "Harmsdorf, Jakomini"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Graz",
-   "https://commons.wikimedia.org/wiki/File:Platane_M%C3%BCnzgrabenstra%C3%9Fe.jpg",
-   "https://sterz.stmk.gv.at/at.gv.stmk.capp/cms/crokat/process.do?app=ROKAT_Detail&embed=frame&output=1&ip01=NN&ip01def=SNB&ip02=NN&ip02def=1014"
-  ],
-  "access": "Free. Stands beside the public Münzgrabenstraße at a roadside car park; viewable from the street.",
-  "transport": "In Jakomini, about 3 km south-east of Hauptplatz; bus stop and line not checked.",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "story": "Graz protects eighteen plane trees as natural monuments, and the register records only one of them as an Oriental plane. This is it, standing beside a roadside car park on Münzgrabenstraße.\n\nThe other seventeen are London planes, the hybrid that shades the Volksgarten and Schillerplatz. Platanus orientalis is one of that hybrid's two parent species, and in a central European street it is far rarer than its offspring.\n\nIt was listed as Naturdenkmal 1014 on 1 July 1981, on a parcel of about 117 square metres, little more than a square of ground around the trunk. The city's register gives the owner as public.\n\nThat is close to everything on record. Nobody has published its age, its girth or its height, and the most recent photograph we know of was taken for Wiki Loves Earth in May 2014. The tree is still on the official list with no note of removal, but we have seen nothing newer that shows it standing. If you pass it, tell us, and if you have a tape measure, a girth would let us put an age on it.\n\nIt is a detour of its own rather than part of a walk: about three kilometres south-east of the Hauptplatz in Jakomini, and nearly two kilometres from the nearest of the city's other protected trees, the Schillerplatz plane.",
-  "how_to_recognise": "You can recognise it as the plane tree beside the roadside car park on Münzgrabenstraße in Jakomini, the only Oriental plane among Graz's protected planes. It is Naturdenkmal 1014."
- },
- {
-  "id": "grz_017",
-  "name": "The Stadtpark Caucasian Wingnut",
-  "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-  "age_estimate": "roughly 150 years",
-  "age_min": 140,
-  "age_max": 160,
-  "location": {
-   "address": "Stadtpark (northern part, fenced tree), 8010 Graz",
-   "latitude": 47.0743,
-   "longitude": 15.4452,
-   "neighbourhood": "Innere Stadt"
-  },
-  "verified_sources": [
-   "https://www.inside-graz.at/freizeit/stadtpark-info.html",
-   "https://www.grazinteressiertmich.at/denkspazierg%C3%A4nge/denkspazierg%C3%A4nge-2021/blausternchen/",
-   "https://3hefecit.eu/monatsspaziergang-im-mai-2025/",
-   "https://www.graz.at/cms/beitrag/10143292/8029509/Der_Grazer_Stadtpark.html",
-   "https://grazjournal.at/freizeit/stadtpark-graz/"
-  ],
-  "access": "Free. Public city park (Stadt Graz, 22 ha, open recreation area), no gate. The tree itself has been fenced since 2010 against falling branches, so it is seen from the fence.",
-  "transport": "Central Graz, a few minutes on foot from the old town; Commons geotag puts the tram/bike stop Zinzendorfgasse about 80 m away (not checked against the timetable).",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Verified 2026-10-30 (graz pass). ALIVE: 3hefecit.eu Monatsspaziergang May 2025 shows it in leaf ('mit Blaetterkleid') and refers back to an earlier walk; fence and prop still described by inside-graz. SPECIES AND AGE: grazinteressiertmich.at (2021): 'one of the oldest trees in the park, still from the first planting around 1870, a huge Caucasian wingnut'; inside-graz.at: 'almost 150 years old', widely branching crown that already has to be propped up, fenced so falling branches cannot hit visitors; grazjournal.at: 'the monumental Caucasian wingnut, which like a few others dates from the founding period' (Stadtpark laid out 1869-1872 under mayor Moritz Ritter von Franck); the city's own Stadtpark page (graz.at) carries a photo captioned Fluegelnuss (caption only, no text, no age). Age is from the park's founding planting, stated by the sources about THIS tree, so it is a source-based age, but no measured girth or planting record seen: kept broad. NO girth: no official figure found (monumentaltrees.com not consulted for this tree). One blog says it is a registered Naturdenkmal and in the city tree register; the Graz register extract (data/registers/graz-naturdenkmale.json, 90 rows) has NO Pterocarya, so that claim is unconfirmed: do not state it. The Stadtpark as a whole is under nature protection (1987) and monument protection (2002) per grazjournal.at. WHAT TELLS IT APART: the one fenced tree in the park, propped crown, and in spring (March-April) a carpet of blue squill (Scilla / Blausternchen) under it, which the Stadtgaertnerei is proud of (grazinteressiertmich.at); species native to the Caucasus, same as the squill. Best time: blue squill carpet in early spring (March, per Commons photo dated 2016-03-18 'Blue Lake of Flowers'). PIN: approximate. Commons geotags at 47.074261,15.445211 ('Blue Lake of Flowers', Flickr import, 2016-03-18) and 47.074352,15.445313 ('Very Old Tree') sit where the squill meadow is; the park is a park, not a small named site, so no location_site. A session with a photo or the city Baumkataster (geodaten.graz.at/WebOffice, flex viewer, not fetchable by curl) could confirm the pin. Photographs: none verified; Commons files nearby are possible candidates only after a look. Other named Stadtpark trees (Franckeiche oak planted in honour of the founder; Fosslbuche; giant sequoia) have no locations in any source seen: see data/leads/graz.json."
- }
 ]
