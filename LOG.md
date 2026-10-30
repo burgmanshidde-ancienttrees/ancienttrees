@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-30, session: trees on one approximate spot now stand apart on every map
+
+Hidde: tapping beside a spread stack made all its pins vanish. Airbnb looked at by hand (CONVENTIONS.md "Two trees on exactly the same spot"): it never spreads, because its spots are approximate. Ours were too: 99 of the 104 piled trees had an approximate pin. Now each stands on a fixed 10 m ring around the shared point (site/src/lib/map-spread.ts, applied where the data loads, so web maps and the app feed agree); confirmed pins never move. The bubble remains only for Genoa gnv_009/gnv_010, both confirmed on one point. Directions for a spread tree go to its ring spot, at most 12 m from the old guess.
+
 ## 2026-10-30, night run (window from 07:58 UTC): no tree shipped, two US/Austria verify passes came back empty
 
 Nothing waiting from readers. health.py: the skipped deploys are CI pushes (normal); the iOS red run is the one already logged below. Shelf: the writable trees (ftw_018, txf_004, tav_001, inn_007) are held for access or pin reasons, so no write pass. Verify on San Francisco: the DataSF landmark rows are all private yards or already led, 0 new, wall 48h. Verify on Graz: Naturdenkmal register exhausted, one Stadtpark wingnut (grz_017) with an approximate pin in a big park, not findable; 4 leads; wall 48h. Unblock for Graz: the Baumkataster viewer at geodaten.graz.at. Deploy to be dispatched at window end.

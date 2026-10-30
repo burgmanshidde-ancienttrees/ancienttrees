@@ -5,6 +5,7 @@
 // runs, rather than after render_page() builds the string.
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
+import { spreadSameSpot } from "./lib/map-spread";
 
 const photoFields = z
   .object({
@@ -217,7 +218,8 @@ const cities = defineCollection({
     // note string (e.g. data/cities/zaragoza.json); it's an internal signal,
     // not a rendered field, so accept either rather than reject real data.
     not_ready_to_publish: z.union([z.boolean(), z.string()]).optional(),
-    trees: z.array(treeSchema).default([]),
+    // Approximate pins on one spot stand a few metres apart (lib/map-spread.ts).
+    trees: z.array(treeSchema).default([]).transform(spreadSameSpot),
   }),
 });
 

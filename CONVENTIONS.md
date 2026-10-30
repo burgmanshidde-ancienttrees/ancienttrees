@@ -1460,6 +1460,26 @@ Read 2026-10-15:
 - https://help.repliers.com/en/article/handling-overlapping-map-pins-for-units-sharing-the-same-address-92ous3/
 - https://community.withairbnb.com/t5/Ask-about-your-listing/Map-view-showing-smaller-bubbles-without-prices/m-p/1872869
 
+**Airbnb looked at by hand, 2026-10-29** (Hidde: "volgens mij doen die dit
+helemaal anders", after a tap beside a spread stack folded all its pins away).
+airbnb.com/s/Lisbon/homes, desktop: a price pin or a small dot opens the
+listing's card floating over the map at once, with heart and cross; nothing
+zooms and nothing spreads. A tap on empty map closes only the card; every pin
+stays where it was, the visited one turns grey. Airbnb has no same-spot piles
+to solve, because a listing's map spot is approximate until booking, so
+listings never share one coordinate. Our fold on a tap beside the pins is the
+step that differs from it.
+
+**What we do since 2026-10-30** (Hidde: "kunnen we ze dan niet net zo goed
+random n beetje verspreiden", and "relatief dicht bij elkaar houden"): 99 of
+the 104 piled trees had an approximate pin, so we do what Airbnb does with an
+approximate spot. Each approximate tree in a pile stands on a small fixed ring,
+10 m from the shared point (12 m for three or more), by id order; a confirmed
+pin keeps the centre. Done once where the data loads (site/src/lib/map-spread.ts
+via content.config.ts), so every web map and the app feed get the same spots.
+The bubble and spread above remain only for confirmed pins on one point (one
+pile that day, Genoa gnv_009 and gnv_010).
+
 ---
 
 ## What a sign-in sheet says
