@@ -1,0 +1,241 @@
+[
+ {
+  "id": "par_038",
+  "name": "The Oriental Planes of Buttes-Chaumont",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "over 150 years",
+  "age_min": 150,
+  "age_max": 175,
+  "girth_cm": 740,
+  "height_m": 30,
+  "location": {
+   "address": "Parc des Buttes-Chaumont, mid-slope above the lake, 7 rue Botzaris, 75019 Paris",
+   "latitude": 48.8804,
+   "longitude": 2.3813,
+   "neighbourhood": "Buttes-Chaumont, 19th arrondissement"
+  },
+  "verified_sources": [
+   "https://www.paris.fr/pages/le-parc-des-buttes-chaumont-une-ode-a-l-art-paysager-6740",
+   "https://paris.fr/lieux/parc-des-buttes-chaumont-1757"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free public park, open daily 7:00 to 20:00 (to 21:00 or later in summer; paris.fr hours table read 2026-10-30).",
+  "transport": "Botzaris or Buttes Chaumont (line 7bis), at the park gate on rue Botzaris",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "ENSEMBLE of three register trees within 10 m: 102141 (girth 740 cm, 30 m), 102140 (580 cm, 30 m), 102139 (570 cm, 31 m); one standing place, one entry. Register coordinates 48.88034,2.38129 / 48.88040,2.38130 / 48.88040,2.38138, which land on Avenue Alphand (a path), no OSM tree node, so approximate. paris.fr's park feature calls them three immense Oriental planes (Platanus orientalis) with bumpy trunks and thick upright branches, standing mid-slope on a thick bed of ivy sloping to the lake, planted 1865 after fifteen years in nursery, largest circumference 6.70 m. CONFLICT: register says Platanus x hispanica (common plane) with 740/580/570 cm; paris.fr says orientalis and 6.70 m; species left as London Plane per register, both noted. Age basis: documented planting 1865 (paris.fr article, says these three) plus 15 years nursery, so roughly 160 years in the ground. The register's 740 cm is the widest plane in the Paris register per a secondary page (not used as source). Park laid out 1864 to 1867 under Alphand. One-line reason: three of the widest planes in Paris on a ivy slope above the lake. Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ },
+ {
+  "id": "par_039",
+  "name": "The Twin Planes of Square Carnot",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "about a century",
+  "age_min": 100,
+  "age_max": 115,
+  "girth_cm": 635,
+  "height_m": 35,
+  "location": {
+   "address": "Square Carnot, esplanade Saint-Louis / avenue Daumesnil, 75012 Paris (Bois de Vincennes, at the foot of the Vincennes chateau esplanade)",
+   "latitude": 48.83952,
+   "longitude": 2.43338,
+   "neighbourhood": "Bois de Vincennes, 12th arrondissement"
+  },
+  "verified_sources": [
+   "https://www.paris.fr/lieux/square-carnot-6430",
+   "OpenStreetMap natural=tree node 'Platane commun' at 48.83953,2.43343 (Nominatim reverse, 2026-10-30)"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free public square, open 24 hours (paris.fr hours table 2026-10-30).",
+  "transport": "Chateau de Vincennes (line 1), about 5 minutes on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Twin register trees 2002371 (635 cm, 34 m) and 2040959 (630 cm, 35 m), 10 m apart, folded into one entry; both planted 1918 per register. paris.fr's square page independently lists two common planes planted in 1918 among the square's oldest witnesses. OSM has a natural=tree node named Platane commun within metres of the register point, so the pin is confirmed. Square laid out after the Quartier Carnot cavalry barracks (1889) in front of the chateau esplanade; paris.fr says only a few trees survived the 1999 storm. A 1918 planting gives about 108 years, so 635 cm is very fast growth: girth is the register's, age is the paris.fr planting date; the girth is large for the age (flag for writer, do not infer). Same square holds the weeping beech par_040 (55 m away) and a 1862 tulip tree, a 1912 giant thuja and a 1875 persimmon, all named on the paris.fr page. Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ },
+ {
+  "id": "par_040",
+  "name": "The Weeping Beech of Square Carnot",
+  "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+  "age_estimate": "about 160 years",
+  "age_min": 150,
+  "age_max": 165,
+  "girth_cm": 550,
+  "height_m": 15,
+  "location": {
+   "address": "Square Carnot, esplanade Saint-Louis, 75012 Paris",
+   "latitude": 48.83989,
+   "longitude": 2.43388,
+   "neighbourhood": "Bois de Vincennes, 12th arrondissement"
+  },
+  "verified_sources": [
+   "https://www.paris.fr/lieux/square-carnot-6430",
+   "OpenStreetMap natural=tree node 'Hetre pleureur' at 48.83989,2.43388 (Nominatim reverse, 2026-10-30)"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free public square, open 24 hours.",
+  "transport": "Chateau de Vincennes (line 1), about 5 minutes on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Register 2002372: girth 550 cm, height 15 m, planted 1864. paris.fr's square page: a weeping beech planted 1865, 'one of the finest specimens of the square' and one of the oldest survivors of the 1999 storm. Planting year differs by one (1864 register, 1865 paris.fr). OSM tree node named Hetre pleureur sits on the register point, pin confirmed. Collectible as a separate stop from the twin planes (55 m away, different species, a domed weeping crown 15 m high versus 35 m planes); could be folded into one square entry if the writer prefers a single stop. Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ },
+ {
+  "id": "par_041",
+  "name": "The Black Walnut of Lac Daumesnil",
+  "species": "Black Walnut (Juglans nigra)",
+  "age_estimate": "about 180 years",
+  "age_min": 150,
+  "age_max": 185,
+  "girth_cm": 605,
+  "height_m": 30,
+  "location": {
+   "address": "Route de la Ceinture du Lac Daumesnil, Bois de Vincennes, 75012 Paris",
+   "latitude": 48.83344,
+   "longitude": 2.4128,
+   "neighbourhood": "Bois de Vincennes, 12th arrondissement"
+  },
+  "verified_sources": [
+   "https://cdn.paris.fr/paris/2019/07/24/57e05e516ab975da1fb6946f9bea4ae1.pdf",
+   "https://cdn.paris.fr/paris/2019/07/24/c993cac3790faa9a634d736e3c553eb9.pdf"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free; the Bois de Vincennes is open public woodland, the tree stands beside the lake ring road and is visible from the road (city sheet).",
+  "transport": "Porte Doree (line 8), about 10 minutes on foot along the lake",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Register 2002367: girth 605 cm, height 26 m, planted 1845. City tree sheet (Ville de Paris, 'Noyer noir', Bois de Vincennes, 12e): planted 1845, 30 m, 580 cm (2015 figures), a multi-stem clump originally three stems, large wound visible from the road now healing with a scar roll, 'full maturity but vigorous', some dead branches and cavities; it received the national label Arbre Remarquable de France from the A.R.B.R.E.S. association in 2015, awarded to the City of Paris. Girth conflict 605 (register) vs 580 (sheet): different dates, both given. Age basis: documented planting 1845 for this specimen. Register point lands on the lake road, no OSM tree node, so approximate; the sheet says it is seen from the road. One-line reason: a three-stem black walnut with a visible old wound, 1845, nationally labelled. Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ },
+ {
+  "id": "par_042",
+  "name": "The Planes of Ile de Bercy",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "about 160 years",
+  "age_min": 150,
+  "age_max": 170,
+  "girth_cm": 430,
+  "height_m": 40,
+  "location": {
+   "address": "Ile de Bercy, Lac Daumesnil, Bois de Vincennes, 75012 Paris",
+   "latitude": 48.83225,
+   "longitude": 2.411,
+   "neighbourhood": "Bois de Vincennes, 12th arrondissement"
+  },
+  "verified_sources": [
+   "https://www.paris.fr/lieux/ile-de-bercy-15389",
+   "https://cdn.paris.fr/paris/2019/07/24/c993cac3790faa9a634d736e3c553eb9.pdf",
+   "OpenStreetMap natural=tree nodes 'Platane commun' on the island (Nominatim reverse, 2026-10-30)"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free; island reached by a ~20 m suspension bridge from the Ile de Reuilly, or by rowing boat from the west; a path circles the island, no motor vehicles. Paris.fr notes the green space can close for events (closed from noon on 31 October 2026).",
+  "transport": "Porte Doree (line 8), about 10 minutes on foot to the bridge",
+  "location_precision": "confirmed",
+  "location_site": {
+   "name": "Ile de Bercy (2 ha island)",
+   "radius_m": 50
+  },
+  "curation_status": "ai_generated",
+  "verify_notes": "ENSEMBLE: five register planes, all planted 1860 per register, on a 2 ha island, one place to stand: 2002365 (430 cm, 40 m; listed twice in the candidate file, one tree), 2041448 (420 cm, 40 m), 2002364 (410 cm, 35 m), 2041444 (400 cm, 32 m), 2041452 (395 cm, 35 m). Register points 10 to 50 m apart; OSM natural=tree nodes 'Platane commun' sit at or within about 5 m of three of them (48.83205,2.41092; 48.83238,2.41144), so the ensemble centre is confirmed to the island. paris.fr's island page (figures dated 2011): a plane planted 1860, 45 m tall, 4.05 m girth; a second plane planted 1895, 35 m, 5.10 m girth (not in our candidate file, a lead: the widest on the island and not located); also a 1870 yew, 1930 tulip tree, 1930 bald cypress, 1935 persimmon. Island was created 1865 when Lac Daumesnil was dug; 2015 Arbre Remarquable de France label (A.R.B.R.E.S.) for the island's tree ensemble. Planting year conflict: register and paris.fr say 1860 for the planes, island dated 1865 by the city, so planes may have predated the island or the date is a stand estimate. Age basis: documented planting 1860 (register and paris.fr). Reason: a stand of 40 m planes on an island reached by suspension bridge. Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ },
+ {
+  "id": "par_043",
+  "name": "The Plane of Parc de Bercy",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 528,
+  "height_m": 35,
+  "location": {
+   "address": "Parc de Bercy / Jardin Yitzhak Rabin, 16 rue Joseph Kessel, 75012 Paris",
+   "latitude": 48.83416,
+   "longitude": 2.38256,
+   "neighbourhood": "Bercy, 12th arrondissement"
+  },
+  "verified_sources": [
+   "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/",
+   "OpenStreetMap natural=tree node 'Platane commun' at 48.83416,2.38256 (Nominatim reverse, 2026-10-30)",
+   "https://cdn.paris.fr/paris/2019/07/24/c993cac3790faa9a634d736e3c553eb9.pdf"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free public park; seasonal hours (opens about 8:00, 9:00 weekends, closes between about 17:45 and 21:30, per secondary listings, not confirmed on a paris.fr hours page).",
+  "transport": "Cour Saint-Emilion (line 14), a few minutes' walk (estimate)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER ONLY (flagged): register 100818, girth 528 cm, height 35 m, no planting year. OSM has a natural=tree node named Platane commun on the register point (pin confirmed). The city's tree sheet for Parc de Bercy says the park (a 19th-century wine warehouse site) holds 1200 trees and 'some centuries-old planes' and the ensemble of the park's trees got the 2015 Arbre Remarquable de France label; it does not name this tree. Remnant of the Bercy wine-warehouse avenues is plausible but not sourced, do not state. Age: none documented, ask the reader. Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ },
+ {
+  "id": "par_044",
+  "name": "The Cedar of Pere Lachaise",
+  "species": "Cedar of Lebanon (Cedrus libani)",
+  "age_estimate": "about 155 years",
+  "age_min": 140,
+  "age_max": 160,
+  "girth_cm": 407,
+  "height_m": 25,
+  "location": {
+   "address": "Cimetiere du Pere Lachaise, 4th division, on the axis of the main gate, 75020 Paris",
+   "latitude": 48.86081,
+   "longitude": 2.39184,
+   "neighbourhood": "Pere Lachaise, 20th arrondissement"
+  },
+  "verified_sources": [
+   "https://www.paris.fr/pages/cimetiere-du-pere-lachaise-la-faune-et-la-flore-17467",
+   "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free public cemetery, open daily (hours seasonal; main entrance boulevard de Menilmontant). Check paris.fr for current opening hours.",
+  "transport": "Philippe Auguste (line 2) or Pere Lachaise (lines 2, 3), the tree stands just inside the main gate",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Two sources: Ville de Paris page 'Pere-Lachaise: faune et flore' (2021) lists it among the nine remarkable trees of the cemetery: cedar of Lebanon in the 4th division, on the axis of the main gate, shaped like a candelabra, its great horizontal branches frame the Monument aux Morts (1899, Albert Bartholomé); 25 m, 3.72 m girth, planted 1870. Register 152606: girth 407 cm, height 25 m, species recorded as Cedrus atlantica (CONFLICT on species: city page says Cedrus libani; register's common name is Cedre du Liban, so atlantica is probably a register slip; girth 372 vs 407 is a different date or measure). Age basis: documented planting 1870 per the city page. Register coordinate lands inside the cemetery, no OSM tree node; the city page's description (axis of the gate, in front of the Monument aux Morts) is the recognition line. The cemetery is 44 ha, so no location_site. Stand beside it: the plane of div. 45 and eight other remarkable trees named on the same page (leads, not in our candidate file). Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ },
+ {
+  "id": "par_045",
+  "name": "The Ash of Butte du Chapeau Rouge",
+  "species": "Common Ash (Fraxinus excelsior)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 405,
+  "height_m": 21,
+  "location": {
+   "address": "Parc de la Butte du Chapeau Rouge, 11 boulevard d'Algerie, 75019 Paris",
+   "latitude": 48.88194,
+   "longitude": 2.39826,
+   "neighbourhood": "Butte du Chapeau Rouge, 19th arrondissement"
+  },
+  "verified_sources": [
+   "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/",
+   "OpenStreetMap natural=tree node 'Frene commun' at 48.88194,2.39826, allee Michel Serrault (Nominatim reverse, 2026-10-30)",
+   "https://www.paris.fr/evenements/balade-botanique-au-parc-de-la-butte-du-chapeau-rouge-21973"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free public park (paris.fr lists it as a public equipment; hours not extracted, seasonal).",
+  "transport": "Danube or Place des Fetes (line 7bis), about 5 to 8 minutes on foot (estimate)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "REGISTER ONLY (flagged): register 127998, girth 405 cm, height 21 m, no planting year. OSM natural=tree node 'Frene commun' on the register point (Allee Michel Serrault inside the park), pin confirmed. paris.fr's 2023 botanical-walk page lists the ash among the park's remarkable trees (with purple beeches, Japanese pagoda trees, tulip trees, yews) without figures. The park page lists a paper mulberry, a Siberian elm, a tulip tree, a giant sequoia and several honey locusts as remarkable (leads, not in the candidate file). Park created 1939 on a former Thiers-fortification zone. Ash dieback risk: no sign checked, alive via iNaturalist only. Age: none, ask the reader. Alive: iNaturalist observation inside the lifecheck radius (not tree-specific), so thin; register-listed and maintained by the city."
+ }
+]

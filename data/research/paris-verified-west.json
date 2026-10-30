@@ -1,0 +1,418 @@
+[
+ {
+  "id": "par_061",
+  "name": "The Fused Plane of the Champ de Mars",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly 210 years",
+  "age_min": 205,
+  "age_max": 215,
+  "age_basis": "source",
+  "girth_cm": 710,
+  "height_m": 25,
+  "location": {
+   "address": "Jardin du Champ de Mars, west foot of the Eiffel Tower, 75007 Paris",
+   "latitude": 48.85783876,
+   "longitude": 2.29331874,
+   "neighbourhood": "7th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/108095.pdf",
+   "https://cdn.paris.fr/paris/2022/03/17/1a401337e814deb12f69b7a7506d272c.pdf (page 'Platane commun, 705 cm, planted 1814')",
+   "https://www.waymarking.com/waymarks/WMQW4Y_Platanus_acerifolia_Tour_Eiffel_Paris_France (six fused trunks at the foot of the tower, 48.85767,2.29322, 20 m from the register point)"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 108095",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/108095.pdf"
+  },
+  "access": "Public park, free. The tree stands at the foot of the Eiffel Tower, where the tower's grounds are enclosed; visitors normally pass a security check. Hours and entry point at the tower not verified.",
+  "transport": "RER C Champ de Mars-Tour Eiffel or Bir-Hakeim (M6), roughly a 10 minute walk (estimated from the coordinates, not checked on a timetable).",
+  "location_precision": "confirmed",
+  "verify_notes": "Register 108095 (A.R.B.R.E.S. label 2015). Open-data register: girth 710 cm, height 25 m, planting date 'unknown'. The city's printed fact sheet and its 2015 label brochure both say planted 1814, 705 cm, 27 m (brochure 20 m): sheet says its shape probably comes from six trees planted in a tight group whose trunks fused ('probablement', not documented). Waymarking independently describes a six-trunk fused plane at the foot of the tower, 20 m from the register point, so the pin is corroborated. The sheet says it stands 'au bord de l'eau' (a pond lies at the tower's base; not checked). A plane tree where arborist Thomas Brail sat in June 2022 against felling for the OnE works was reported as 208 years old (planted 1814), but no source says it is this trunk; the city dropped the felling (linfodurable.fr, 2022). Alive: iNaturalist observation 2026-09-16 within radius (https://www.inaturalist.org/observations/400678086), not tree-specific. Register only for age, hence flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_062",
+  "name": "The Plane of Square des Batignolles",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly 175 to 185 years",
+  "age_min": 175,
+  "age_max": 186,
+  "age_basis": "source",
+  "girth_cm": 604,
+  "height_m": 34,
+  "location": {
+   "address": "Square des Batignolles, 144 rue Cardinet, 75017 Paris",
+   "latitude": 48.887621,
+   "longitude": 2.31643523,
+   "neighbourhood": "17th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/135378.pdf (fact sheet for this tree's register entry, pair of planes)",
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/135397.pdf (register link, the sheet itself returns HTTP 500)",
+   "https://www.paris.fr/equipements/square-des-batignolles-1761"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 135397",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/135378.pdf"
+  },
+  "access": "Free public square. Paris.fr lists seasonal hours, 25 Oct 2026 to 28 Feb 2027 Mon-Fri 08:00-17:45, Sat-Sun 09:00-17:45, longer from March (to 21:30 in summer).",
+  "transport": "Pont-Cardinet and Malesherbes (per paris.fr), a few minutes' walk.",
+  "location_precision": "approximate",
+  "verify_notes": "Register 135397 (A.R.B.R.E.S. label 2015): girth 604 cm, height 34 m, planting '1850' in the open data. The city's printed sheet (135378) covers two planes in the square, a London plane planted 1840 (595 cm, 28 m) and an oriental plane planted 1872 (442 cm); the only plane in the open-data register here is this one, so which sheet trunk it is is not certain. Planting dates conflict (1850 vs 1840), kept as a range. Square laid out 1862 to 1863 (Alphand), so the plane is said to predate it or be an older planting; no source reconciles that, do not bridge. A Time Out guide says four planes stand since the mid-19th century. 68 m from par_063 (the wingnut, same square); separate trunks, one visit. Alive: iNaturalist 2026-08-29 (https://www.inaturalist.org/observations/395512961), 2025-05-07 (/279272915). Register only, flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_063",
+  "name": "The Caucasian Wingnut of Square des Batignolles",
+  "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+  "age_estimate": "roughly 125 years",
+  "age_min": 120,
+  "age_max": 130,
+  "age_basis": "source",
+  "girth_cm": 435,
+  "height_m": 30,
+  "location": {
+   "address": "Square des Batignolles, 144 rue Cardinet, 75017 Paris",
+   "latitude": 48.88723845,
+   "longitude": 2.31716979,
+   "neighbourhood": "17th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/135262.pdf",
+   "https://www.paris.fr/equipements/square-des-batignolles-1761"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 135262",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/135262.pdf"
+  },
+  "access": "Free public square; seasonal hours on paris.fr (25 Oct 2026 to 28 Feb 2027 Mon-Fri 08:00-17:45, Sat-Sun 09:00-17:45; to 21:30 in summer).",
+  "transport": "Pont-Cardinet and Malesherbes (per paris.fr).",
+  "location_precision": "confirmed",
+  "verify_notes": "Register 135262: girth 435 cm, height 30 m (sheet: 395 cm, 30 m, planted 1899; the open data has planting 'unknown'). A second small tree, a lotus persimmon (135415, 155 cm), is in the register at nearly the same spot. Fluted trunk with very rough ridged bark per the sheet. Alive: iNaturalist 2025-08-11 (https://www.inaturalist.org/observations/342609576 and /342609613). 68 m from par_062. Register only, flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_064",
+  "name": "The Chinese Wingnut of the Serres d'Auteuil",
+  "species": "Chinese Wingnut (Pterocarya stenoptera)",
+  "age_estimate": "roughly 120 years",
+  "age_min": 115,
+  "age_max": 125,
+  "age_basis": "source",
+  "girth_cm": 587,
+  "height_m": 20,
+  "location": {
+   "address": "Jardin des Serres d'Auteuil, 3 avenue de la Porte d'Auteuil, 75016 Paris",
+   "latitude": 48.84714674,
+   "longitude": 2.25198354,
+   "neighbourhood": "16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136310.pdf",
+   "https://www.paris.fr/photos/13-arbres-classes-remarquables-25"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 136310",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136310.pdf"
+  },
+  "access": "Free public garden; seasonal hours (greenhouses close earlier than the garden, roughly 8h to 16h on weekdays; garden to about 20h in summer, sources disagree, check paris.fr/lieux/jardin-des-serres-d-auteuil-1780).",
+  "transport": "Porte d'Auteuil (M10), about 3 minutes' walk.",
+  "location_precision": "confirmed",
+  "verify_notes": "Register 136310: girth 587 cm, height 20 m, planted 1905 (open data and sheet agree; sheet gives 540 cm, 26 m, listed 'for size, presence and rarity in Paris'). A city sheet says only about ten such trees stand in Paris gardens (search summary of the city's page, not re-fetched). Alive: iNaturalist 2026-06-22 (https://www.inaturalist.org/observations/374225607). It is the only Pterocarya stenoptera in the register, so the point identifies the trunk. 80 m from par_065. Register plus the ground's owner (city), flagged only for no tree-specific dated photo.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_065",
+  "name": "The Ginkgo of the Serres d'Auteuil",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "roughly 130 years",
+  "age_min": 125,
+  "age_max": 135,
+  "age_basis": "source",
+  "girth_cm": 434,
+  "height_m": 24,
+  "location": {
+   "address": "Jardin des Serres d'Auteuil, 3 avenue de la Porte d'Auteuil, 75016 Paris",
+   "latitude": 48.84763639,
+   "longitude": 2.25274648,
+   "neighbourhood": "16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136527.pdf",
+   "https://www.paris.fr/photos/13-arbres-classes-remarquables-25"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 136527",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136527.pdf"
+  },
+  "access": "Free public garden; seasonal hours, check paris.fr/lieux/jardin-des-serres-d-auteuil-1780 (sources disagree on closing time).",
+  "transport": "Porte d'Auteuil (M10), about 3 minutes' walk.",
+  "location_precision": "confirmed",
+  "verify_notes": "Register 136527: girth 434 cm (sheet 425), height 24 m (sheet 25), planted 1895 (open data and sheet). The garden itself dates from 1898 per general sources; the 1895 date is the city's and is not reconciled, do not bridge. The French name 'arbre aux quarante ecus' is the ginkgo's folk name. A tourist guide says the ginkgo at the main entrance turns gold in autumn; not confirmed that it is this tree. Alive: iNaturalist 2026-06-22 (https://www.inaturalist.org/observations/374222397). Only large ginkgo in the garden register. 80 m from par_064. Flagged: register only.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_066",
+  "name": "The Giant Sequoia of Bagatelle",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "age_estimate": "roughly 150 years or more",
+  "age_min": 150,
+  "age_max": 176,
+  "age_basis": "source",
+  "girth_cm": 540,
+  "height_m": 30,
+  "location": {
+   "address": "Parc de Bagatelle, route de Sevres a Neuilly, Bois de Boulogne, 75016 Paris",
+   "latitude": 48.86945829,
+   "longitude": 2.24771344,
+   "neighbourhood": "Bois de Boulogne, 16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002350.pdf",
+   "https://www.paris.fr/lieux/parc-de-bagatelle-1808 (captions a 'sequoia geant remarquable' near the Pagoda)"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 2002350",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002350.pdf"
+  },
+  "access": "Paid entry at Bagatelle from 1 April to 30 September (paris.fr: 2.80 EUR full, 1.60 EUR reduced); free October to March. Hours from 25 Oct 2026 to 28 Feb 2027 09:30-17:00 daily, 09:30-20:00 from late March. Entrances: Grille d'Honneur (allee de Longchamp) and Grille de Sevres.",
+  "transport": "Bus 244 stop Bagatelle-Pre Catelan; bus 43 weekends and public holidays (per paris.fr).",
+  "location_precision": "confirmed",
+  "verify_notes": "Register 2002350: girth 540 cm, height 30 m (sheet 511 cm, 28 m), planted '1850'. Age doubt: giant sequoia reached Europe only in 1853 to 1854 (general knowledge, not checked on a page this pass), so 1850 cannot be a literal planting date; kept as the city's figure, age given broad. The register point is 44 m from the Pagoda (Commons geotag), which agrees with paris.fr placing the remarkable sequoia near the Pagoda. Ticketed Apr to Sep. Alive: no recent tree-specific evidence (lifecheck returned an OLD Commons file 2011); the paris.fr page captions it as remarkable in a 2026 listing. Register plus the ground's owner; flagged for missing recent dated photo. 125 m from par_067.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_067",
+  "name": "The Planes of Bagatelle",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly 180 years",
+  "age_min": 175,
+  "age_max": 185,
+  "age_basis": "source",
+  "girth_cm": 503,
+  "height_m": 40,
+  "location": {
+   "address": "Parc de Bagatelle, allee de Longchamp, Bois de Boulogne, 75016 Paris",
+   "latitude": 48.86922606,
+   "longitude": 2.24600777,
+   "neighbourhood": "Bois de Boulogne, 16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002346.pdf",
+   "https://cdn.paris.fr/paris/2022/03/17/1a401337e814deb12f69b7a7506d272c.pdf (Bagatelle: planes planted between 1842 and 1847)",
+   "https://www.paris.fr/pages/a-l-ombre-des-plus-beaux-arbres-du-bois-de-boulogne-8094"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 2002346",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002346.pdf"
+  },
+  "access": "Paid entry at Bagatelle from 1 April to 30 September (2.80 EUR full, 1.60 reduced per paris.fr); free October to March; 09:30-17:00 in winter, to 20:00 in summer.",
+  "transport": "Bus 244 stop Bagatelle-Pre Catelan; bus 43 weekends and public holidays (per paris.fr).",
+  "location_precision": "approximate",
+  "verify_notes": "Register 2002346 (register complement 'ORANGERIE'): girth 503 cm, height 40 m, planted 1847, matching the city's statement that Bagatelle's planes were planted between 1842 and 1847 when the park was enlarged. Register point only; several planes of that planting stand in the park, so this is approximate. Alive: iNaturalist 2026-05-04 within radius (https://www.inaturalist.org/observations/358310288), not tree-specific. 125 m from par_066. Flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_068",
+  "name": "The Tall Plane of the Serpentine",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly 155 years",
+  "age_min": 150,
+  "age_max": 160,
+  "age_basis": "source",
+  "girth_cm": 535,
+  "height_m": 45,
+  "location": {
+   "address": "Route du lac a Bagatelle, Bois de Boulogne, 75016 Paris",
+   "latitude": 48.86711844,
+   "longitude": 2.25294211,
+   "neighbourhood": "Bois de Boulogne, 16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002389.pdf",
+   "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 2002389",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002389.pdf"
+  },
+  "access": "Free, open woodland (Bois de Boulogne), no gate.",
+  "transport": "Not verified. Bagatelle-Pre Catelan bus 244 (paris.fr) is the nearest stop found; allow a walk through the wood.",
+  "location_precision": "approximate",
+  "verify_notes": "Register 2002389 (complement 16-10): girth 535 cm, height 45 m, planted 1872; sheet says it belongs to a group of trees that accompany the stream called the 'Serpentine', made by Alphand under the Second Empire. A 45 m height is at the top of what a plane reaches; it is the register figure and not independently measured. Register point in a group, so approximate. Alive: iNaturalist 2026-01-24 within radius (https://www.inaturalist.org/observations/335953169), not tree-specific. Register only, flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_069",
+  "name": "The Wingnut on the Lower Lake",
+  "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+  "age_estimate": "roughly 145 years",
+  "age_min": 140,
+  "age_max": 150,
+  "age_basis": "source",
+  "girth_cm": 418,
+  "height_m": 28,
+  "location": {
+   "address": "Chemin de ceinture du lac Inferieur, Bois de Boulogne, 75016 Paris",
+   "latitude": 48.86311085,
+   "longitude": 2.26180065,
+   "neighbourhood": "Bois de Boulogne, 16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002392.pdf"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 2002392",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002392.pdf"
+  },
+  "access": "Free, open lakeside path in the Bois de Boulogne.",
+  "transport": "Not verified; the Lower Lake is reached from the Porte Maillot / La Muette side, allow a walk through the wood.",
+  "location_precision": "approximate",
+  "verify_notes": "Register 2002392 (complement 16-02): girth 418 cm (sheet 407), height 28 m (sheet 27), planted 1882. Sits on the lake bank near the island ferry area (Commons geotags: Chalet des Iles 25 m away). Alive: iNaturalist 2024-08-31 within radius (https://www.inaturalist.org/observations/238997596), not tree-specific. A paris.fr tree page about the Bois describes a ginkgo on the same bank but not this walnut. Register only, flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_070",
+  "name": "The Cedar of the Grande Cascade",
+  "species": "Cedar of Lebanon (Cedrus libani)",
+  "age_estimate": "roughly 165 years",
+  "age_min": 160,
+  "age_max": 170,
+  "age_basis": "source",
+  "girth_cm": 488,
+  "height_m": 25,
+  "location": {
+   "address": "Carrefour de Longchamp, Grande Cascade, Bois de Boulogne, 75016 Paris",
+   "latitude": 48.86339074,
+   "longitude": 2.24048113,
+   "neighbourhood": "Bois de Boulogne, 16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002348.pdf",
+   "https://www.paris.fr/pages/a-l-ombre-des-plus-beaux-arbres-du-bois-de-boulogne-8094 (a Lebanon cedar about 25 m tall beside the Grande Cascade, near the Longchamp crossroads car park)"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 2002348",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002348.pdf"
+  },
+  "access": "Free, open woodland beside the cascade. The Grande Cascade itself was reported closed (non-potable water) on paris.fr; the starred restaurant next door is private, the tree is described as beside the cascade, not inside the restaurant garden (not independently confirmed).",
+  "transport": "Not verified.",
+  "location_precision": "approximate",
+  "verify_notes": "Register 2002348 (complement 16-09): girth 488 cm (sheet 468), height 25 m, planted 1862. Species conflict: the open-data inventory fields say Cedrus atlantica, the city's register label, fact sheet and paris.fr page say Cedrus libani; published as the city's stated Lebanon cedar, to be settled by a reader. paris.fr page independently confirms a 25 m Lebanon cedar here (second source, no planting date). Also near it a bald cypress 28 m (paris.fr). Alive: iNaturalist 2026-07-17 within radius (https://www.inaturalist.org/observations/384329733), not tree-specific. Approximate: restaurant grounds adjoin, exact spot to be checked by a reader.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_071",
+  "name": "The Wingnut of the Ranelagh Garden",
+  "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+  "age_estimate": "roughly 105 years",
+  "age_min": 100,
+  "age_max": 110,
+  "age_basis": "source",
+  "girth_cm": 465,
+  "height_m": 28,
+  "location": {
+   "address": "Jardin du Ranelagh, 22 chaussee de la Muette, 75016 Paris",
+   "latitude": 48.86003338,
+   "longitude": 2.26913462,
+   "neighbourhood": "16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136794.pdf",
+   "https://www.paris.fr/equipements/jardin-du-ranelagh-1778"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 136794",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/136794.pdf"
+  },
+  "access": "Free public garden; paris.fr lists it open 24 hours for 1 May to 31 August 2026, other seasons have fixed hours (not fetched).",
+  "transport": "La Muette (M9), about 3 minutes' walk (estimated from the address).",
+  "location_precision": "approximate",
+  "verify_notes": "Register 136794 (complement 16-40): girth 465 cm (sheet 449), height 28 m, planted 1920 per the city's sheet (open data: planting unknown). NO recent evidence of the tree alive: lifecheck returned NONE and a Commons geosearch found only streets and garden views 55 m or more away. Register only, alive unverified, hence flagged and approximate.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_072",
+  "name": "The Plane of the Trocadero Gardens",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "not documented",
+  "girth_cm": 490,
+  "height_m": 28,
+  "location": {
+   "address": "Jardin du Trocadero, 3 place de Varsovie, 75016 Paris",
+   "latitude": 48.86261831,
+   "longitude": 2.28980425,
+   "neighbourhood": "16th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/108281.pdf"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 108281",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/108281.pdf"
+  },
+  "access": "Free public gardens (hours seasonal, not fetched).",
+  "transport": "Iena (M9) about 1 minute (a station geotag lies 51 m away), Trocadero (M6, M9).",
+  "location_precision": "approximate",
+  "verify_notes": "Register 108281 (complement 'Canton 10'): girth 490 cm (sheet 479), height 28 m, no planting date anywhere (open data and sheet blank): age empty, ask the reader. The gardens hold many planes; the register point is one of them, approximate. Alive: iNaturalist 2025-05-09 within radius (https://www.inaturalist.org/observations/279920107), not tree-specific. Register only, flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_073",
+  "name": "The Sycamore Maple of Parc Monceau",
+  "species": "Sycamore Maple (Acer pseudoplatanus)",
+  "age_estimate": "roughly 170 years",
+  "age_min": 165,
+  "age_max": 175,
+  "age_basis": "source",
+  "girth_cm": 437,
+  "height_m": 28,
+  "location": {
+   "address": "Parc Monceau, 1 place de la Republique Dominicaine, 75008 Paris",
+   "latitude": 48.87870299,
+   "longitude": 2.30647417,
+   "neighbourhood": "8th arrondissement"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/305507.pdf"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 305507",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/305507.pdf"
+  },
+  "access": "Free public park (hours seasonal, not fetched).",
+  "transport": "Monceau (M2) or Courcelles (M2), about 5 minutes' walk (estimated).",
+  "location_precision": "approximate",
+  "verify_notes": "Register 305507 (complement 08-01): girth 437 cm (sheet 450), height 28 m, planted 1853 per the city's sheet (open data: unknown). A sycamore of 4.4 m girth is large for the species. 80 m from the already published par_005 (the great oriental plane): same park, separate trunk. Alive: iNaturalist 2023-08-26 within radius (https://www.inaturalist.org/observations/180249357), older than three years, not tree-specific. Register only, flagged.",
+  "curation_status": "flagged"
+ },
+ {
+  "id": "par_074",
+  "name": "The Wingnut Above the Funicular",
+  "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+  "age_estimate": "roughly 125 years",
+  "age_min": 120,
+  "age_max": 130,
+  "age_basis": "source",
+  "girth_cm": 416,
+  "height_m": 26,
+  "location": {
+   "address": "Square Louise Michel, 6 place Saint-Pierre, 75018 Paris",
+   "latitude": 48.88530199,
+   "longitude": 2.34272088,
+   "neighbourhood": "18th arrondissement, below Sacre-Coeur"
+  },
+  "verified_sources": [
+   "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/112542.pdf"
+  ],
+  "official_register": {
+   "name": "Arbres remarquables de Paris (Ville de Paris), no. 112542",
+   "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/112542.pdf"
+  },
+  "access": "Free public square on the Montmartre slope (hours seasonal, not fetched).",
+  "transport": "Anvers (M2), about 6 minutes' walk; the funicular runs through the square (estimated).",
+  "location_precision": "approximate",
+  "verify_notes": "Register 112542 (complement 'Talus du Funiculaire'): girth 416 cm (sheet 418), height 26 m (sheet 28), planted 1900 per the sheet (open data: unknown). Third register tree of this square beside par_028, par_029 and par_030: 110 m from par_028, 190 m from par_029; separate entry. Alive: iNaturalist 2026-10-15 within radius (https://www.inaturalist.org/observations/408467259). Register only, flagged.",
+  "curation_status": "flagged"
+ }
+]

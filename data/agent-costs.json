@@ -4,6 +4,38 @@
   "2026-10-30": [
    {
     "date": "2026-10-30",
+    "kind": "verify",
+    "target": "paris (register top 40, east)",
+    "tokens": 172063,
+    "trees": 8,
+    "note": "21 east candidates folded into 14 points: 8 verified, 6 leads (register-only, the point on a path)"
+   },
+   {
+    "date": "2026-10-30",
+    "kind": "verify",
+    "target": "paris (register top 40, west)",
+    "tokens": 201833,
+    "trees": 13,
+    "note": "18 west candidates: 14 verified (register plus city fact sheets, flagged), 4 leads; par_071 Ranelagh wingnut held for the pace cap and its unconfirmed life"
+   },
+   {
+    "date": "2026-10-30",
+    "kind": "write",
+    "target": "paris (par_038-045, par_061-074)",
+    "tokens": 210202,
+    "trees": 21,
+    "note": "22 stories and recognition lines, 6 best_time; species names normalised at merge"
+   },
+   {
+    "date": "2026-10-30",
+    "kind": "translate",
+    "target": "fr/paris (top-up, 21 trees)",
+    "tokens": 147496,
+    "trees": 21,
+    "note": "the live French overlay had to grow with the English page or the build refuses; title loses its count, FAQ says Bagatelle is paid April to September"
+   },
+   {
+    "date": "2026-10-30",
     "target": "san-francisco",
     "kind": "verify",
     "tokens": 90000,

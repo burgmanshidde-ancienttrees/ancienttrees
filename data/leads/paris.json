@@ -97,6 +97,114 @@
       "longitude": 2.338278,
       "reason": "Tipped with a map point: a tree with one very long, very low branch where children hang in the afternoon. Species unknown; compare with the register's Montsouris rows near that point. The tipper added that the point is a Street View position and the tree stands just to its left in that view, so the trunk is not at the point itself. Register rows nearest: plane no. 113547 at 90 m (already live as par_009), ginkgo 106981 at 126 m, ginkgo 112946 at 135 m, copper beech 'Riversii' 113328 at 136 m, coast redwood 113353 at 146 m, holm oak 110934 at 182 m; none confirmed as the low-branch tree.",
       "source": "reader tip on r/paris, 2026-10-30 (thread 1xif691)"
+    },
+    {
+      "name": "Chene pedoncule, Fort Neuf (register 2002375)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "register_girth_cm": 475,
+      "place": "Bois de Vincennes, Avenue de la Pepiniere / Route du Grand Marechal",
+      "latitude": 48.84331,
+      "longitude": 2.44974,
+      "reason": "Register: 475 cm, 33 m, planted 1815 (age basis if used: documented planting, about 210 years). No second source found. Sits on a track beside the military Fort Neuf; the fort itself is not public, the wood road is. Register-only (Ville de Paris Arbres remarquables), register coordinate on a path or track with no OSM tree node, no photograph: no photo or exact pin in reach (east pass 2026-10-30). Alive: iNaturalist observation within the lifecheck radius only. Bois de Vincennes is open public woodland, free."
+    },
+    {
+      "name": "Chene pedoncule, Lac des Minimes (register 2002376)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "register_girth_cm": 435,
+      "place": "Bois de Vincennes, Route Ronde des Minimes",
+      "latitude": 48.83417,
+      "longitude": 2.46132,
+      "reason": "Register: 435 cm, 27 m, planted 1784 (older than the wood's 1860s landscaping, so plausibly a relic of the old royal forest, not sourced). No second source found. Register-only (Ville de Paris Arbres remarquables), register coordinate on a path or track with no OSM tree node, no photograph: no photo or exact pin in reach (east pass 2026-10-30). Alive: iNaturalist observation within the lifecheck radius only. Bois de Vincennes is open public woodland, free."
+    },
+    {
+      "name": "Cedre du Liban, Lac de Gravelle (register 2002384)",
+      "species": "Cedar (Cedrus atlantica per register)",
+      "register_girth_cm": 430,
+      "place": "Bois de Vincennes, Route du Pesage / Route de la Tourelle, Plateau de Gravelle",
+      "latitude": 48.82013,
+      "longitude": 2.44512,
+      "reason": "Register: 430 cm, 22 m, planted 1829. Species may be libani, as at Pere Lachaise; no second source found. Register-only (Ville de Paris Arbres remarquables), register coordinate on a path or track with no OSM tree node, no photograph: no photo or exact pin in reach (east pass 2026-10-30). Alive: iNaturalist observation within the lifecheck radius only. Bois de Vincennes is open public woodland, free."
+    },
+    {
+      "name": "Platane commun, Square Edouard Vaillant (register 121945)",
+      "species": "London Plane (Platanus x hispanica)",
+      "register_girth_cm": 520,
+      "place": "Square Edouard Vaillant, 50 avenue Gambetta, 75020",
+      "latitude": 48.86562,
+      "longitude": 2.39994,
+      "reason": "Register: 520 cm, 28 m, no planting year. Register point lands on a pitch (rue du Japon side), paris.fr's square page only says planes and chestnuts without naming one. Free square. Alive: iNaturalist 2023 only, thin."
+    },
+    {
+      "name": "Platane commun, Promenade Maurice-Boitel (register 2002357)",
+      "species": "London Plane (Platanus x hispanica)",
+      "register_girth_cm": 530,
+      "place": "Bois de Vincennes, Route de la Ceinture du lac Daumesnil, near the Ile de Reuilly",
+      "latitude": 48.82925,
+      "longitude": 2.41318,
+      "reason": "Register: 530 cm, 29 m, planted 1871. Nearest OSM feature is a bench 40 m away, no tree node. Register-only (Ville de Paris Arbres remarquables), register coordinate on a path or track with no OSM tree node, no photograph: no photo or exact pin in reach (east pass 2026-10-30). Alive: iNaturalist observation within the lifecheck radius only. Bois de Vincennes is open public woodland, free."
+    },
+    {
+      "name": "Platane commun, Avenue Daumesnil (register 2002366)",
+      "species": "London Plane (Platanus x hispanica)",
+      "register_girth_cm": 500,
+      "place": "Bois de Vincennes, lake road at Porte Doree",
+      "latitude": 48.83382,
+      "longitude": 2.41122,
+      "reason": "Register: 500 cm, 26 m, planted 1860. 120 m from the black walnut par_041; point lands on a cycleway, no tree node. Could be folded into a lake-walk with par_041 and par_042. Register-only (Ville de Paris Arbres remarquables), register coordinate on a path or track with no OSM tree node, no photograph: no photo or exact pin in reach (east pass 2026-10-30). Alive: iNaturalist observation within the lifecheck radius only. Bois de Vincennes is open public woodland, free."
+    },
+    {
+      "name": "Platane 1895, Ile de Bercy (not in register file)",
+      "species": "London Plane (Platanus x hispanica)",
+      "register_girth_cm": 510,
+      "place": "Ile de Bercy, Bois de Vincennes",
+      "latitude": 48.8322,
+      "longitude": 2.4109,
+      "reason": "paris.fr island page (2011 figures): a plane planted 1895, 35 m, 5.10 m girth, the widest named on the island. Not in the candidate file and not located; likely among the register's island planes or a sixth one. Needs a coordinate. Free."
+    },
+    {
+      "name": "Eight other remarkable trees of Pere Lachaise",
+      "species": "various",
+      "register_girth_cm": null,
+      "place": "Cimetiere du Pere Lachaise",
+      "latitude": 48.8607,
+      "longitude": 2.3935,
+      "reason": "Ville de Paris page lists nine remarkable trees by division: cedar (div. 4, shipped as par_044), common plane swallowing tombs (div. 45), Montpellier maple planted 1833 (div. 77, called the oldest in Paris), Lotus persimmon (div. 77), gum tree (div. 75), Canadian Kentucky coffee tree (div. 77), two ginkgos (div. 78). None has a coordinate in our files; register may hold some. https://www.paris.fr/pages/cimetiere-du-pere-lachaise-la-faune-et-la-flore-17467"
+    },
+    {
+      "name": "Platane commun, Avenue Foch (lawn 20, nos. 75-77)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "register_girth_cm": 450,
+      "place": "Avenue Foch, 75016 Paris",
+      "latitude": 48.87153634,
+      "longitude": 2.27816924,
+      "reason": "Register 111331, girth 450 cm, 27 m, city sheet says planted 1853 (443 cm). Alive (iNaturalist 2026-02-19 within radius). Not delivered: a row tree in the avenue's side lawns, indistinguishable from its neighbours, no photograph or crown to pin it; the avenue is already represented by par_008. A dated photo of the trunk would release it."
+    },
+    {
+      "name": "Platane commun, Avenue Foch (lawn 08, nos. 34-44)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "register_girth_cm": 450,
+      "place": "Avenue Foch, 75016 Paris",
+      "latitude": 48.873134,
+      "longitude": 2.28679553,
+      "reason": "Register 114166, girth 450 cm, 24 m (sheet 440 cm, 21 m, planted 1853). Alive (iNaturalist 2024-05-09 within radius). Same reason as the other Avenue Foch plane: avenue row tree, no way to tell the trunk apart, 650 m from it."
+    },
+    {
+      "name": "Platane commun, Parc Montsouris (Talus du Lac)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "register_girth_cm": 390,
+      "place": "Parc Montsouris, 28 boulevard Jourdan, 75014 Paris",
+      "latitude": 48.82413394,
+      "longitude": 2.3379657,
+      "reason": "Register 112897, 390 cm, 26 m; city sheet says planted 1935 (370 cm), so about 90 years old. Alive (iNaturalist 2026-04-25). Not delivered: young by the city's own date and a third plane in a park that already has par_009 and par_034; not a reason to walk. A reader photo or an older date would change it."
+    },
+    {
+      "name": "Catalpa commun, Tir aux Pigeons (Bois de Boulogne)",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "register_girth_cm": 410,
+      "place": "32 route de l'Etoile, Bois de Boulogne, 75016 Paris",
+      "latitude": 48.87408216,
+      "longitude": 2.25916497,
+      "reason": "Register 2009236, 410 cm, 21 m (sheet 397 cm, 16 m), planted 1910. No sign it is alive (lifecheck NONE, no Commons or iNaturalist hit). Access unresolved: paris.fr says part of the Tir aux Pigeons wooded site remains closed to the public and the grounds were long a private sports club; the register point could not be placed inside the open part. Needs a photograph or access source."
     }
   ],
   "blocked": [
