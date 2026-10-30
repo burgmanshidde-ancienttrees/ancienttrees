@@ -568,12 +568,12 @@ struct CollectView: View {
                 .foregroundStyle(Brand.ink)
                 .opacity(1 - pageProgress)
                 .frame(width: 44, height: 44)
-                .background(.regularMaterial, in: .circle)
-                // POLARSTEPS' GEAR: it never leaves. Over the map it is a
-                // light circle; as the sheet becomes the page it turns into a
-                // grey circle on white, the same grey as the sheet's chevron,
-                // in one continuous move with the sheet (Hidde, 2026-10-02).
-                .overlay { Circle().fill(Brand.surfaceMuted).opacity(pageProgress) }
+                // POLARSTEPS' GEAR: it never leaves (Hidde, 2026-10-02). ONE
+                // WHITE DISC at every height since 2026-10-30, the same disc
+                // as Find people under it (Hidde: the two "niet helemaal goed
+                // uitgelijnd of op elkaar afgestemd"); the glass circle went
+                // faint on the page while its neighbour stayed white.
+                .background(Brand.surface, in: .circle)
                 // AND THE GEAR FILLS IN (Hidde, 2026-10-08: "the settings logo
                 // should get filled in an animation like Polarsteps when the
                 // list is dragged fully"). The outline fades out and the solid
@@ -1267,12 +1267,18 @@ struct CollectView: View {
                     // A plain white disc, the country chips' white, centred
                     // on the photo (2026-10-10): the outline made it one more
                     // style in the header, and grey vanished on the sheet.
+                    // THE GEAR'S TWIN (Hidde, 2026-10-30: the two "niet
+                    // helemaal goed uitgelijnd of op elkaar afgestemd"): the
+                    // same white disc and 18 point glyph, reaching 4 into the
+                    // page margin so its circle stands on the gear's 16 point
+                    // edge, one column under it.
                     Image(systemName: "person.badge.plus")
-                        .font(.system(size: 17, weight: .medium))
+                        .font(.system(size: 18, weight: .medium))
                         .foregroundStyle(Brand.ink)
                         .frame(width: 44, height: 44)
                         .background(Brand.surface, in: .circle)
                 }
+                .padding(.trailing, -4)
                 .buttonStyle(.plain)
                 .accessibilityLabel("Find people")
                 .accessibilityIdentifier("mytrees-find-people")
