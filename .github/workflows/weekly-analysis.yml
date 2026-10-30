@@ -103,6 +103,14 @@ jobs:
                beacon allows. Search-term events (the detail column of the
                events table) are a standing content-gap source: a term
                searched but unserved is a lead.
+            2c. OUTREACH YIELD: read data/mail-yield.json and add one
+               table, one row per group (archive, nature, guide, source,
+               press, tourism, garden, society, council, other): mailed in
+               the week before last, answered of those so far, mailed in
+               total, answered in total, rate, linked. Weeks are keyed by the
+               Monday of our first mail, and answers keep arriving for weeks,
+               so never judge last week's sends. If "mailbox_read" is false,
+               say the answers are from the log only.
             3. Write "## Weekly analysis YYYY-MM-DD" at the TOP of DATA.md
                (above the daily entries) with: (a) five lines max on what
                actually moved; (b) three to five CONCRETE improvement

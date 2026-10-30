@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-30, session: the weekly analysis now says which outreach group answers and links
+
+Hidde asked which group to grow after 164 mails this week (88 the week before). The hand-kept replies log had stopped on 10-07, so `scripts/outreach_yield.py` now reads the answers from the mailbox headers (sender matches an address we mailed, after our first mail; out-of-office counted apart) and links from data/backlinks.json. It writes counts only to data/mail-yield.json (no addresses), runs daily in data-digest.yml, and the weekly analysis has a step 2c table per group. First read: 67 answers the log had missed (society 18%, tourism 17%, council 15%, garden 11%, press 7%, nature 4% of 52 but those went out this week). Nature and press answers trail by weeks, so judge them from mid-November.
+
 ## 2026-10-30, session: build 36 (1.0.4) archived for TestFlight
 
 Everything in the app since build 35 (10-15) is in it: Airbnb-style pins and the one tree card, visitors' notes and Add a photo on the tree page, profiles at sign-up with people search and follow, the collect note, Become an ambassador, merging duplicates, the copy sweep's app strings. Bundled catalogue refreshed (3699 to 3911 trees, 346 walks). iOS CI green on the latest push. For Hidde: Organizer, Distribute App, App Store Connect, then test it from TestFlight. Also restored supabase/profile-at-signup.sql, which had been overwritten locally with "su" (the database itself was untouched).

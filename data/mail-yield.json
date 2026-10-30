@@ -1,0 +1,401 @@
+{
+ "_note": "Per outreach group: addresses mailed, how many answered (a human reply, out-of-office left out), how many link to us. 'weeks' is keyed by the Monday of the week of our FIRST mail, so a week's answers keep arriving for weeks after. Counts only, no addresses. Built by scripts/outreach_yield.py.",
+ "built": "2026-10-30",
+ "mailbox_read": false,
+ "total": {
+  "archive": {
+   "mailed": 12,
+   "answered": 1,
+   "only_auto": 1,
+   "linked": 0
+  },
+  "nature": {
+   "mailed": 52,
+   "answered": 2,
+   "only_auto": 0,
+   "linked": 0
+  },
+  "guide": {
+   "mailed": 3,
+   "answered": 0,
+   "only_auto": 0,
+   "linked": 0
+  },
+  "source": {
+   "mailed": 55,
+   "answered": 1,
+   "only_auto": 0,
+   "linked": 0
+  },
+  "press": {
+   "mailed": 84,
+   "answered": 6,
+   "only_auto": 1,
+   "linked": 0
+  },
+  "tourism": {
+   "mailed": 18,
+   "answered": 3,
+   "only_auto": 0,
+   "linked": 0
+  },
+  "garden": {
+   "mailed": 97,
+   "answered": 11,
+   "only_auto": 1,
+   "linked": 0
+  },
+  "society": {
+   "mailed": 154,
+   "answered": 27,
+   "only_auto": 1,
+   "linked": 3
+  },
+  "council": {
+   "mailed": 55,
+   "answered": 8,
+   "only_auto": 1,
+   "linked": 0
+  },
+  "other": {
+   "mailed": 138,
+   "answered": 43,
+   "only_auto": 0,
+   "linked": 2
+  }
+ },
+ "weeks": {
+  "2026-10-26": {
+   "archive": {
+    "mailed": 10,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "nature": {
+    "mailed": 52,
+    "answered": 2,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "source": {
+    "mailed": 17,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "press": {
+    "mailed": 24,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "society": {
+    "mailed": 2,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "council": {
+    "mailed": 1,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 7,
+    "answered": 3,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-10-19": {
+   "source": {
+    "mailed": 24,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "press": {
+    "mailed": 27,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "tourism": {
+    "mailed": 17,
+    "answered": 3,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 17,
+    "answered": 7,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-10-12": {
+   "guide": {
+    "mailed": 3,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "source": {
+    "mailed": 14,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "press": {
+    "mailed": 25,
+    "answered": 2,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "society": {
+    "mailed": 1,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "council": {
+    "mailed": 5,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 28,
+    "answered": 10,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-10-05": {
+   "press": {
+    "mailed": 2,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "garden": {
+    "mailed": 28,
+    "answered": 4,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "society": {
+    "mailed": 46,
+    "answered": 8,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "council": {
+    "mailed": 23,
+    "answered": 2,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 32,
+    "answered": 6,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-09-28": {
+   "tourism": {
+    "mailed": 1,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 4,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-09-21": {
+   "press": {
+    "mailed": 1,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 15,
+    "answered": 3,
+    "only_auto": 0,
+    "linked": 1
+   }
+  },
+  "2026-09-14": {
+   "other": {
+    "mailed": 1,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-09-07": {
+   "garden": {
+    "mailed": 4,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "council": {
+    "mailed": 5,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 7,
+    "answered": 2,
+    "only_auto": 0,
+    "linked": 1
+   }
+  },
+  "2026-08-31": {
+   "council": {
+    "mailed": 1,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 5,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-08-24": {
+   "garden": {
+    "mailed": 33,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "society": {
+    "mailed": 13,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "council": {
+    "mailed": 8,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 13,
+    "answered": 5,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-08-17": {
+   "archive": {
+    "mailed": 1,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "press": {
+    "mailed": 1,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "garden": {
+    "mailed": 8,
+    "answered": 2,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "society": {
+    "mailed": 31,
+    "answered": 3,
+    "only_auto": 0,
+    "linked": 1
+   },
+   "other": {
+    "mailed": 4,
+    "answered": 2,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-08-10": {
+   "archive": {
+    "mailed": 1,
+    "answered": 0,
+    "only_auto": 1,
+    "linked": 0
+   },
+   "garden": {
+    "mailed": 18,
+    "answered": 3,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "society": {
+    "mailed": 57,
+    "answered": 14,
+    "only_auto": 1,
+    "linked": 2
+   },
+   "council": {
+    "mailed": 9,
+    "answered": 3,
+    "only_auto": 1,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 3,
+    "answered": 2,
+    "only_auto": 0,
+    "linked": 0
+   }
+  },
+  "2026-08-03": {
+   "press": {
+    "mailed": 4,
+    "answered": 2,
+    "only_auto": 1,
+    "linked": 0
+   },
+   "garden": {
+    "mailed": 6,
+    "answered": 1,
+    "only_auto": 1,
+    "linked": 0
+   },
+   "society": {
+    "mailed": 4,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "council": {
+    "mailed": 3,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 2,
+    "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   }
+  }
+ }
+}
