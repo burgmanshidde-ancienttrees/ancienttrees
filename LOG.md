@@ -12,7 +12,7 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 ## 2026-10-30, night run (retry window): par_071 live, pace now full
-Paris par_071 (Ranelagh wingnut) merged with its French overlay (and "55 more" raised to 56 in both languages); preflight clean; the Paris claim is released. The pace stood at 24 of 25, so the 7 other READY leads (Paris 3, Oxford 2, Madrid 1, Sightings 1) wait for tomorrow. The Town Hall Plane sighting is still open: its photo is not on disk, never judged blind. iOS CI failure is the earlier simulator timeout, not an assertion.
+Paris par_071 (Ranelagh wingnut) merged with its French overlay (and "55 more" raised to 56 in both languages); preflight clean; the Paris claim is released. The pace stood at 24 of 25, so the 7 other READY leads (Paris 3, Oxford 2, Madrid 1, Sightings 1) wait for tomorrow. A Frankfurt verify pass added frk_024 (Mark Oak of Offenbach, flagged, approximate pin) to data/research/frankfurt-verified.json, 1 tree for about 120k tokens; the other Frankfurt leads have no new evidence in reach, and the Bismarckstrasse 193 oak stays a lead (probably a courtyard, ownership unknown). frk_024 needs a story tomorrow when the pace allows. The Town Hall Plane sighting is still open: its photo is not on disk, never judged blind. iOS CI failure is the earlier simulator timeout, not an assertion.
 
 ## 2026-10-30, night run (14:53 window): short, nothing published
 
