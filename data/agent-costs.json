@@ -4,6 +4,14 @@
   "2026-10-30": [
    {
     "date": "2026-10-30",
+    "kind": "verify",
+    "target": "canberra",
+    "tokens": 143037,
+    "trees": 0,
+    "note": "5 register trees verified (can_004 to can_008) awaiting a writer; 6 leads, 1 dead (PTR1017). act.gov.au PDFs 403 to curl, read via web.archive.org."
+   },
+   {
+    "date": "2026-10-30",
     "kind": "write",
     "target": "frankfurt, graz, texas-famous (fort-worth, innsbruck, san-francisco, faro checked and held)",
     "tokens": 124022,
