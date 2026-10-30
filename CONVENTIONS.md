@@ -3905,3 +3905,7 @@ Hidde: "Migu...rtugal" on a public profile "is heel raar". Middle truncation is 
 ## A detail page whose text slides over its photograph (2026-10-30)
 
 Hidde: when scrolling a tree page up, the white page should go over the photograph rather than both moving together. The parallax header: the picture moves at a fraction of the scroll while the content slides over it (Apple Music's artist pages; a common travel-app detail header; vp0.com/blogs/parallax-scroll-header-ui-mobile). Ours (TreeDetail.swift): the hero keeps half the scroll through `visualEffect` (an offset only, no layout per frame), the content is the page's white with 16 point rounded top corners drawn above it. No stretch on pull-down. The map and My trees keep their sheet with stops (Apple Maps); only the look is shared.
+
+## Sharing a tree from a saved list (2026-10-30)
+
+Hidde, on the design page (drafts/invite-and-share-design.html): "voorstel b lijkt me een goeie". A tree on Want to visit is a walk you might take with somebody. AllTrails shares a saved route with its share arrow (support.alltrails.com 360029314591); Airbnb puts one round control in a card's top corner. Ours: on every Want to visit card a white disc with the share arrow (app: top right of the tile; web: beside the save on the photograph, after it in the name row without one), opening the system share sheet with "Shall we go and see this one? <name>, <city>." and the tree's page; on a computer the link is copied. The payoff (A1/A2) and Invite a friend wait for his choice.

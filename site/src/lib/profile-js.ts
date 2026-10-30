@@ -16,6 +16,8 @@ import { EARLY_ADOPTER_UNTIL } from "./early-adopter";
 // The seal the badge wears, Phosphor's own file, so the account page and the
 // city page draw the same glyph (never hand-drawn, Hidde 2026-09-24).
 const SEAL_SVG = icon("seal-check", "fill", "ic").replace(/\n/g, "").replace(/'/g, "");
+// The share arrow on a Want to visit card (2026-10-30), Phosphor's own.
+const SHARE_SVG = icon("export", "regular", "ic").replace(/\n/g, "").replace(/'/g, "");
 
 export const PROFILE_JS = `
 <script>
@@ -24,6 +26,7 @@ export const PROFILE_JS = `
   if (!C) return;
   var SB = '${SUPABASE_URL}', KEY = '${SUPABASE_KEY}';
   var SEAL = '${SEAL_SVG}';
+  var SHARE = '${SHARE_SVG}';
 
   function el(id) { return document.getElementById(id); }
   function setText(id, v) { var n = el(id); if (n) n.textContent = v; }
@@ -167,6 +170,31 @@ export const PROFILE_JS = `
       return '<li data-k="' + k + '"' + (city ? ' data-city="' + city + '"' : '') + '>' + C.card(id, cards[id], savedSet[id] === true, visitedSet[id] === true) + '</li>';
     }).join('');
     node.hidden = false;
+    // ASK A FRIEND ALONG on Want to visit, as the app does (Hidde, 2026-10-30:
+    // "voorstel b lijkt me een goeie"). One round button beside the save, the
+    // system share sheet on a phone, the link copied on a computer.
+    if (node.id === 'saved-list') {
+      node.querySelectorAll('.tree-card').forEach(function(card) {
+        var id = card.getAttribute('data-tree-id'), c = cards[id];
+        if (!c) return;
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'want-share';
+        b.setAttribute('aria-label', 'Share ' + (c.n || ''));
+        b.innerHTML = SHARE;
+        b.addEventListener('click', function(e) {
+          e.preventDefault(); e.stopPropagation();
+          var url = new URL(c.u, location.origin).href;
+          var text = 'Shall we go and see this one? ' + c.n + (c.c ? ', ' + c.c : '') + '.';
+          if (navigator.share) { navigator.share({ title: c.n, text: text, url: url }).catch(function() {}); return; }
+          if (navigator.clipboard) navigator.clipboard.writeText(url).then(function() {
+            if (window.atSnack) window.atSnack('Link copied');
+          }, function() {});
+        });
+        var spot = card.querySelector('.tree-card-photo') || card.querySelector('.tree-card-top');
+        if (spot) spot.appendChild(b);
+      });
+    }
     if (window.atPaintSaves) window.atPaintSaves();
     // A photograph you took of one of our trees goes on that tree's card, and
     // its signed url may have arrived before this list existed.

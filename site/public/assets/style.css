@@ -332,6 +332,14 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .tree-card-top .heart-card { position: relative; order: 3; margin-left: auto; align-self: center;
   flex-shrink: 0; background: var(--cream); box-shadow: none; }
 .heart-card[aria-pressed="true"] { color: var(--moss); }
+/* Share on a Want to visit card (profile-js, 2026-10-30): the save's twin,
+   8 to its left on the photograph, after it in the name row without one. */
+.want-share { position: absolute; z-index: 2; top: 10px; right: 54px; width: 36px; height: 36px;
+  padding: 0; border: none; border-radius: 50%; display: grid; place-items: center; cursor: pointer;
+  background: rgba(255, 255, 255, 0.94); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18); color: var(--ink); }
+.want-share .ic { width: 18px; height: 18px; }
+.tree-card-top .want-share { position: relative; top: auto; right: auto; order: 4; margin-left: 8px;
+  align-self: center; flex-shrink: 0; background: var(--cream); box-shadow: none; }
 .tree-card-seen-line { margin: 0.5rem 0 0; }
 .tree-card-seen-line .tree-card-seen { position: static; }
 /* No map number means nothing to indent under: the 2.15rem on the meta, the
