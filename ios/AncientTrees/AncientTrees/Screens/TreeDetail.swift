@@ -160,7 +160,19 @@ struct TreeDetail: View {
                 // and put real air between sections. So: 28 between sections,
                 // 10 inside a group, and the picture full bleed.
                 VStack(alignment: .leading, spacing: 0) {
+                    // THE PAGE SLIDES OVER THE PHOTOGRAPH (Hidde, 2026-10-30:
+                    // "dat het witte een effect heeft waarbij het over die
+                    // foto gaat"): the parallax header of Apple Music's artist
+                    // pages and most travel apps. The hero keeps half the
+                    // scroll, so the white page below overtakes it. Only an
+                    // offset, worked out by the renderer each frame, never a
+                    // layout pass: the freeze on Hidde's phone is the reason
+                    // to keep per-frame work this small.
                     hero
+                        .visualEffect { content, proxy in
+                            content.offset(y: -min(0, proxy.frame(in: .scrollView).minY) * 0.5)
+                        }
+                        .zIndex(0)
                     VStack(alignment: .leading, spacing: 28) {
                     // ONE GROUP: what this tree IS. The name, where it stands
                     // and the facts are not three sections, and giving them the
@@ -307,6 +319,11 @@ struct TreeDetail: View {
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 20)
+                    // The page's own white, rounded where it meets the picture
+                    // it slides over, drawn above the hero.
+                    .background(Color(.systemBackground),
+                                in: UnevenRoundedRectangle(topLeadingRadius: 16, topTrailingRadius: 16))
+                    .zIndex(1)
                 }
             }
             .onGeometryChange(for: CGSize.self) { $0.size } action: { pageSize = $0 }

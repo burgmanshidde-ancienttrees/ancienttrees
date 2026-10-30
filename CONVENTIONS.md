@@ -3901,3 +3901,7 @@ Hidde, on his phone: from the half stop on the Map tab and My trees, swiping the
 ## A long name in a profile header (2026-10-30)
 
 Hidde: "Migu...rtugal" on a public profile "is heel raar". Middle truncation is for strings whose two ends both matter (file names with a version at the end; SwiftUI TruncationMode.middle, and the Macintosh guidelines Peter Hilton cites at hilton.org.uk/blog/truncate-content-in-context). A person's name is read from its start, so tail is the rule, and profile headers (Instagram, Strava, AllTrails, from memory) let a name run to a second line before cutting. Ours now: two lines, then a tail ellipsis, on a person's profile and on My trees.
+
+## A detail page whose text slides over its photograph (2026-10-30)
+
+Hidde: when scrolling a tree page up, the white page should go over the photograph rather than both moving together. The parallax header: the picture moves at a fraction of the scroll while the content slides over it (Apple Music's artist pages; a common travel-app detail header; vp0.com/blogs/parallax-scroll-header-ui-mobile). Ours (TreeDetail.swift): the hero keeps half the scroll through `visualEffect` (an offset only, no layout per frame), the content is the page's white with 16 point rounded top corners drawn above it. No stretch on pull-down. The map and My trees keep their sheet with stops (Apple Maps); only the look is shared.
