@@ -1,0 +1,60 @@
+{
+  "city": "Rio Frio, Texas",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "When the hamlet of Rio Frio was laid out in the 1880s, local history says it took its bearings from two landmarks, Schoolhouse Mountain to the east and a live oak to the west. That oak still stands on FM 1120, on private land behind a hedge and fence, and a plaque by the Friends of the Rio Frio Oak marks it. You see it from the road.",
+  "meta_description": "The Rio Frio Landmark Oak in Real County, Texas: the live oak the village took its bearings from in the 1880s, seen from FM 1120.",
+  "question_meta": "The Rio Frio Landmark Oak in Real County, Texas: the live oak the village took its bearings from in the 1880s, seen from FM 1120.",
+  "question_answer": "The tree we map for Rio Frio is the Rio Frio Landmark Oak, a Texas live oak that local history says the village used as its western landmark when it was laid out between 1880 and 1890. No age, girth or height has been published for it.",
+  "question_context": "The oak grows on private land behind a hedge and a fence posted with no-trespassing signs, on FM 1120 on the east side of the Rio Frio, about seven miles south of Leakey. It is seen from the road only, and a plaque put up by the Friends of the Rio Frio Oak stands by it. There is no public transport; it is a drive through the Hill Country.\n\nLocal history writers say that when the village was laid out, between 1880 and 1890, it took its bearings from Schoolhouse Mountain to the east and this oak to the west, and Backroads of Texas adds that the schoolhouse and part of the settlement were built in its shade. Some travel sites call it the third largest live oak in Texas, behind the Goose Island Oak and the Columbus Oak, but nobody has published a measurement to support that. Texas Escapes described it in 2001 and 2006, and a photograph from July 2024 shows it standing. Our pin is approximate. If you know its age or girth, you can tell us on its page.",
+  "faq": [
+    {
+      "q": "Can I visit the Rio Frio Landmark Oak?",
+      "a": "You can see it from FM 1120, about seven miles south of Leakey, where a plaque stands by it. The tree is on private land behind a hedge and a fence with no-trespassing signs, so stay on the road."
+    },
+    {
+      "q": "Is the Rio Frio oak the third largest live oak in Texas?",
+      "a": "Some travel sites say so, ranking it behind the Goose Island Oak and the Columbus Oak, but no measurement has been published to back the claim."
+    }
+  ],
+  "oldest_tree_id": "txf_004",
+  "trees": [
+    {
+      "id": "txf_004",
+      "name": "Rio Frio Landmark Oak",
+      "species": "Texas Live Oak (Quercus fusiformis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "FM 1120, Rio Frio, Real County, TX 78879 (east side of the Rio Frio, about 7 miles south of Leakey)",
+        "latitude": 29.6351,
+        "longitude": -99.7376,
+        "neighbourhood": "Rio Frio"
+      },
+      "verified_sources": [
+        "https://backroadstexas.net/leakey/rio-frio-landmark-oak",
+        "https://texasescapes.com/TexasHistory/TexasHistoricTrees/RioFrio/RioFrioLandmarkOak.htm",
+        "https://commons.wikimedia.org/wiki/File:RIO_FRIO_LANDMARK_OAK.jpg"
+      ],
+      "access": "VIEW ONLY. The oak stands on private property behind a hedge and fence with no-trespassing signs; it can be seen from the road (FM 1120) and a landmark plaque (erected by the Friends of the Rio Frio Oak) stands by it. Visitors must not enter the land. A good view of the trunk is difficult.",
+      "transport": "Car only; remote Hill Country hamlet, about 7 miles (11 km) south of Leakey on FM 1120.",
+      "location_precision": "approximate",
+      "location_site": null,
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/File:RIO_FRIO_LANDMARK_OAK.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Michaelluckey",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:RIO_FRIO_LANDMARK_OAK.jpg",
+        "status": "held",
+        "taken_month": 7
+      },
+      "story": "When Rio Frio was laid out, sometime between 1880 and 1890, the village took its bearings from two landmarks: Schoolhouse Mountain to the east and this live oak to the west. That is the account retold by local history writers rather than a survey anyone has quoted. Backroads of Texas adds that the schoolhouse and part of the settlement were built in its shade.\n\nSome travel sites go further and call it the third largest live oak in Texas, behind the Goose Island Oak and the Columbus Oak. Nobody has published a measurement to back that up, so it stays a claim, repeated rather than proven. The same gap runs through everything else: no age, girth or height has been recorded for it anywhere. If you know any of them, tell us.\n\nIt is still alive. Texas Escapes described it in 2001 and again in 2006, and a photograph dated 3 July 2024 shows it standing.\n\nThis is a tree to look at from the road, not to walk up to. It grows on private land behind a hedge and a fence posted with no-trespassing signs, and a good view of the trunk is hard to get. You see it from FM 1120 on the east side of the Rio Frio, about seven miles south of Leakey, where a plaque put up by the Friends of the Rio Frio Oak stands by the tree. Stay on the road; the land is not open.",
+      "how_to_recognise": "You can recognise it by the plaque of the Friends of the Rio Frio Oak standing by it. It stands behind a hedge and a fence with no-trespassing signs on FM 1120, about seven miles south of Leakey, seen from the road only."
+    }
+  ]
+}
