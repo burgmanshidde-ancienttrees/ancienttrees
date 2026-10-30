@@ -202,6 +202,77 @@
    },
    "register_file": "data/registers/act-tree-register.json",
    "girth_cm": 260
+  },
+  {
+   "candidate": "Californian Incense Cedars PTR129 Group, Barton",
+   "reason": "Three single-trunk Calocedrus decurrens (350, 300, 350 cm; 19 to 21.5 m), register calls them 'some of the best examples in Canberra'. But the PDF places them on a 'vacant block of land between Brisbane Avenue and Telopea Park' next to Barton Tennis Club: public access not established (leased block?). Pin approximate (polygon mean).",
+   "latitude": -35.3103,
+   "longitude": 149.1395,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 350
+  },
+  {
+   "candidate": "Swamp White Oaks PTR117 Group, Ainslie",
+   "reason": "Six Quercus bicolor (224 to 286 cm, 18 to 24 m) at the corners of Cowper Street, Wakefield Avenue and Wakefield Gardens, Ainslie; street trees spread over about 100 m, so an avenue-like group rather than one place to stand; register PDF fetched via archive but not read. Decide ensemble vs blocked.",
+   "latitude": -35.2618,
+   "longitude": 149.1421,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 286
+  },
+  {
+   "candidate": "Western Catalpa PTR152, 150 Northbourne Avenue, Braddon",
+   "reason": "Register girth 480 cm, 12 m, but the land use is commercial (CZ_COMMERCIAL) at a street address: public access not established.",
+   "latitude": -35.267046,
+   "longitude": 149.131497,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 480
+  },
+  {
+   "candidate": "Southern Blue Gum RT1175, Bass Gardens, Griffith",
+   "reason": "Single southern blue gum, 24 m, urban open space (public park land), register PDF is a scanned/redacted profile not read, no girth. Verify girth and life, then it joins can_008 (0.2 km away) as a second stop.",
+   "latitude": -35.325118,
+   "longitude": 149.129292,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json"
+  },
+  {
+   "candidate": "Blakely's Red Gum PTR038, Montfort Crescent, Lyneham",
+   "reason": "Register girth 560 cm, 25 m, urban open space; register PDF not fetched this pass; lifecheck not run; 4.6 km from Civic. Next pass candidate (already in the earlier READY list).",
+   "latitude": -35.23916,
+   "longitude": 149.125298,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 560
+  },
+  {
+   "candidate": "Yellow Box PTR079, Black Mountain District Girl Guides, O'Connor",
+   "reason": "Register girth 560 cm, 26 m (the largest yellow box in the table), but on a Girl Guides property (44 Clianthus Street): public access not established.",
+   "latitude": -35.252113,
+   "longitude": 149.117903,
+   "official_register": {
+    "name": "ACT Tree Register",
+    "url": "https://www.cityservices.act.gov.au/trees-and-nature/trees/act_tree_register"
+   },
+   "register_file": "data/registers/act-tree-register.json",
+   "girth_cm": 560
   }
  ],
  "blocked": [
@@ -210,6 +281,12 @@
    "reason": "Avenue median planting, not one collectible point.",
    "latitude": -35.2774,
    "longitude": 149.14047
+  },
+  {
+   "candidate": "The Leaning Tree of Ainslie PTR1017 (spotted red gum, Paterson Street)",
+   "reason": "Dead: Braidwood Times, 3 Oct 2025, reports the tree died about 18 months earlier (still lying across the verge, residents campaigning to keep it). Never ship as a living tree.",
+   "latitude": -35.268832,
+   "longitude": 149.142983
   }
  ]
 }

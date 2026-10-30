@@ -60,5 +60,150 @@
   "story": "In front of Gorman House in Braddon, three conifers from two continents share a single entry in the ACT Tree Register. The largest is an Arizona cypress, a tree of the dry mountains of the American Southwest, standing 20 metres tall on the road verge at Ainslie Avenue and Doonkuna Street.\n\nThe territory registered the group on 16 September 2011 for its natural and cultural heritage value. Beside the cypress the register lists two Atlas cedars, one 22 metres tall and 3 metres round, the other 19 metres and 2.95 metres round. The city's own notes on the species say an Arizona cypress reaches about 20 metres, so this one has gone the full distance.\n\nThe register also gives the cypress a girth of 537 centimetres. That is a great deal of trunk for this species, and the record does not say whether the tape went around several stems, a flared base, or whether the figure is simply a slip. Take it as a number to check rather than one to quote, and if you have measured it, tell us.\n\nGorman House is on the ACT Heritage Register, but nothing we have found says when these three trees went in or who planted them, so their age is undocumented too.\n\nPair it with the blue atlas cedar 40 metres away at the corner of Currong Street and the stop covers four registered trees. Civic is about a kilometre off, twelve to fifteen minutes on foot.",
   "how_to_recognise": "You can recognise it as the cypress among three registered conifers on the verge; the other two are Atlas cedars. It stands in front of Gorman House, at Ainslie Avenue and Doonkuna Street.",
   "not_merged_reason": "Written 2026-10-28, held: no approved photograph (ADD_NEEDS_PHOTO); no photo looked for yet. Merge once a photo of this trunk is approved."
+ },
+ {
+  "id": "can_004",
+  "name": "The Corroboree Tree",
+  "species": "Yellow Box (Eucalyptus melliodora)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": 19,
+  "location": {
+   "address": "Corroboree Park, Paterson Street, Ainslie ACT (east side of the park near the community hall)",
+   "latitude": -35.268884,
+   "longitude": 149.142391,
+   "neighbourhood": "Ainslie"
+  },
+  "verified_sources": [
+   "https://www.abc.net.au/news/2015-07-24/canberra-exceptional-trees/6640614",
+   "http://web.archive.org/web/2025/https://www.cityservices.act.gov.au/__data/assets/pdf_file/0005/474989/Ainslie-PTR118.pdf",
+   "https://en.wikipedia.org/wiki/Corroboree_Park"
+  ],
+  "official_register": {
+   "name": "ACT Tree Register PTR118 (registered 2013-03-08)",
+   "url": "https://www.cityservices.act.gov.au/__data/assets/pdf_file/0005/474989/Ainslie-PTR118.pdf"
+  },
+  "access": "Free, open public park (Corroboree Park, ACT parks and recreation land)",
+  "transport": "About 1.1 km north of Civic by straight line; public transport route not checked",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Identity settled: ABC Canberra 2015 (photo caption) names the Corroboree Tree as a yellow box (Eucalyptus melliodora) in Corroboree Park, Ainslie, 'an area believed to have been used as a corroboree ground and also the initial campsite of Duntroon overseer James Ainslie'; 'it is claimed that the tree was a focal point for the local Aboriginal community'. Register PDF PTR118: height 19.2 m, canopy broadest 26.2 m, 1 trunk, circumference only given as 'combined trunks >3.0 m' (so girth_cm left empty; register table in the repo says 300), located 'on the eastern side of the park near the community hall'; criteria cultural heritage value (aboriginal heritage and culture) plus landscape; register text: 'iconic landmark', Aboriginal history 'not well documented'. Registered 8 March 2013. Wikipedia (Corroboree Park): park created about 1925 around the 'Corroboree Tree'; in a heritage precinct. No source gives the tree's age; a 2024 arborist post (unfetched, search snippet only) guesses 350 to 450 years, not used. ALIVE: flagged. Register entry 2013 and ABC 2015 only; lifecheck NONE. A different Ainslie tree, 'The Leaning Tree of Ainslie' (PTR1017, spotted red gum on Paterson Street outside the park) died about 18 months before Oct 2025 per Braidwood Times (Tim the Yowie Man, 3 Oct 2025), which is likely the dead eucalypt an earlier pass saw in a snippet; do not conflate. Pin: Pin is the mean of the register's crown polygon (data/registers/act-tree-register.json), so approximate. A hand conversion (unverified) of the PDF's MGA55 grid point landed about 40 m west of that polygon mean on three PDFs, so neither is treated as the trunk. Walk: 1.1 km from the Braddon cedar group (can_002, can_003)."
+ },
+ {
+  "id": "can_005",
+  "name": "Bruce Remnant Red Gum",
+  "species": "Blakely's Red Gum (Eucalyptus blakelyi)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 1028,
+  "height_m": 15,
+  "location": {
+   "address": "Corner of Kinloch Circuit and Lycos Street, Bruce ACT (east corner of the small park, Block 11 Section 93)",
+   "latitude": -35.239737,
+   "longitude": 149.100241,
+   "neighbourhood": "Bruce"
+  },
+  "verified_sources": [
+   "http://web.archive.org/web/20250329152951/https://www.cityservices.act.gov.au/__data/assets/pdf_file/0010/390385/Bruce_PTR075.pdf",
+   "https://www.abc.net.au/news/2015-07-24/canberra-exceptional-trees/6640614"
+  ],
+  "official_register": {
+   "name": "ACT Tree Register PTR075",
+   "url": "https://www.cityservices.act.gov.au/__data/assets/pdf_file/0010/390385/Bruce_PTR075.pdf"
+  },
+  "access": "Free, small public park (urban open space, ACT parks and recreation land)",
+  "transport": "About 5.7 km north-west of Civic by straight line; public transport route not checked",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register PDF PTR075: Eucalyptus blakelyi, tree height 15.0 m, broadest canopy 25.4 m, FOUR trunks with a combined circumference of 10.28 m (girth_cm 1028 is the sum of the four trunks, NOT one stem; do not present as one trunk). Register statement: 'remnant' Eucalyptus blakelyi, important for its age, stature and prominent position in the small park; nest-building birds and a number of parrot hollows; 'Bruce is blessed with several parks containing remnant vegetation and this small park is particularly attractive due to this magnificent tree'; noted features 'very large spreading canopy and interesting multi branched trunk habit'. ABC Canberra 2015 photo caption (Andrew Tatnell) describes 'this remnant Blakely's red gum, special due to its size, age and attractive bark', parrots in its hollows, and the article says 'a gnarled red gum hundreds of years old'; the caption does not name the suburb, so the link to PTR075 rests on the matching wording and is not proven. No source dates the tree: age left empty. 'Remnant' means it stood before the suburb, a fact about the site, not an age. ALIVE: flagged, register only (PDF snapshot Mar 2025 of an old nomination) plus ABC 2015; lifecheck NONE. Pin: Pin is the mean of the register's crown polygon (data/registers/act-tree-register.json), so approximate. A hand conversion (unverified) of the PDF's MGA55 grid point landed about 40 m west of that polygon mean on three PDFs, so neither is treated as the trunk. The park is small, so the tree is the park's one big tree."
+ },
+ {
+  "id": "can_006",
+  "name": "Legacy Park Apple Boxes",
+  "species": "Apple Box (Eucalyptus bridgesiana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 395,
+  "height_m": 13.5,
+  "location": {
+   "address": "Legacy Park, between Savige and Garsia Streets, Campbell ACT",
+   "latitude": -35.289047,
+   "longitude": 149.150238,
+   "neighbourhood": "Campbell"
+  },
+  "verified_sources": [
+   "http://web.archive.org/web/2025/https://www.cityservices.act.gov.au/__data/assets/pdf_file/0006/2424507/RT1129-Campbell.pdf",
+   "data/registers/act-tree-register.json (ArcGIS ACTGOV_Tree_Register_public_view, CC BY 4.0, fetched 2026-10-27)"
+  ],
+  "official_register": {
+   "name": "ACT Tree Register RT1129 (registered 2024-03-12, Urban Forest Act 2023)",
+   "url": "https://www.cityservices.act.gov.au/__data/assets/pdf_file/0006/2424507/RT1129-Campbell.pdf"
+  },
+  "access": "Free, public park (Legacy Park, ACT parks and recreation land)",
+  "transport": "About 1.4 km south-east of Civic by straight line; public transport route not checked",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Three apple boxes, each a single trunk, registered together in March 2024: tree 1 girth 395 cm, 11.5 m tall, canopy 23.5 m; tree 2 285 cm, 13.0 m, canopy 13.5 m; tree 3 355 cm, 13.5 m, canopy 21.5 m. Girth figures from the register PDF (the RT1129 PDF prints 395, 285, 355 cm; heights in the ArcGIS table 12, 13, 14 m differ by rounding; PDF values used). The three stand within about 45 m of each other (register grid points for trees 1 to 3), a compact ensemble with one place to stand. Register criteria: landscape and aesthetic value plus scientific and ecological value (the PDF's stated reasons are generic criteria text only). ALIVE: register decision only 2024-03-12 (recent, under two years); lifecheck found an iNaturalist observation dated 2024-02-20 (239355492) near -35.28905, 149.15024, not tied to a trunk. No age source. Pin: Pin is the mean of the register's crown polygon (data/registers/act-tree-register.json), so approximate. A hand conversion (unverified) of the PDF's MGA55 grid point landed about 40 m west of that polygon mean on three PDFs, so neither is treated as the trunk."
+ },
+ {
+  "id": "can_007",
+  "name": "Banksia Street Yellow Box",
+  "species": "Yellow Box (Eucalyptus melliodora)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 440,
+  "height_m": 32,
+  "location": {
+   "address": "Banksia Street opposite No. 5, next to the Banksia Street wetland, O'Connor ACT (Block 4 Section 24)",
+   "latitude": -35.257807,
+   "longitude": 149.116839,
+   "neighbourhood": "O'Connor"
+  },
+  "verified_sources": [
+   "http://web.archive.org/web/2025/https://www.cityservices.act.gov.au/__data/assets/pdf_file/0018/390321/OConnor_PTR030.pdf"
+  ],
+  "official_register": {
+   "name": "ACT Tree Register PTR030",
+   "url": "https://www.cityservices.act.gov.au/__data/assets/pdf_file/0018/390321/OConnor_PTR030.pdf"
+  },
+  "access": "Free, on unleased Territory land beside the Banksia Street wetland (register wording)",
+  "transport": "About 3.2 km north-west of Civic by straight line; public transport route not checked",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register PDF PTR030 (nomination 46): Eucalyptus melliodora, 32.0 m tall, broadest canopy 30.0 m, one trunk of 4.4 m circumference, 'opposite Number 5 Banksia Street'. Radial R4 printed as 77.6 m is a typo; ignore. Register statement: prominent position on unleased Territory land close to the Banksia Street wetland; parrot hollows and mud lark nests; 'very few trees of this stature remain in the inner city suburbs of Canberra'; maintained by the Tree Management Unit. A remnant, not a planting. Register height 32 m is the tallest of any entry within 6 km of Civic in the repo's ACT register table; 32 m is tall for yellow box, so treat the height as the register's measurement, not ours. No age source. ALIVE: flagged, register only (registration date not read from the PDF); lifecheck NONE. Pin: Pin is the mean of the register's crown polygon (data/registers/act-tree-register.json), so approximate. A hand conversion (unverified) of the PDF's MGA55 grid point landed about 40 m west of that polygon mean on three PDFs, so neither is treated as the trunk."
+ },
+ {
+  "id": "can_008",
+  "name": "Grant Crescent Blue Gums",
+  "species": "Southern Blue Gum (Eucalyptus globulus subsp. bicostata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 650,
+  "height_m": 21,
+  "location": {
+   "address": "Corner of Grant Crescent and La Perouse Street (opposite 17 Grant Crescent), Griffith ACT",
+   "latitude": -35.323995,
+   "longitude": 149.130988,
+   "neighbourhood": "Griffith"
+  },
+  "verified_sources": [
+   "http://web.archive.org/web/2025/https://www.cityservices.act.gov.au/__data/assets/pdf_file/0004/1607521/Griffith-RT1033-Group.pdf",
+   "data/registers/act-tree-register.json (ArcGIS ACTGOV_Tree_Register_public_view, CC BY 4.0, fetched 2026-10-27)"
+  ],
+  "official_register": {
+   "name": "ACT Tree Register RT1033 (registered 2020-07-03)",
+   "url": "https://www.cityservices.act.gov.au/__data/assets/pdf_file/0004/1607521/Griffith-RT1033-Group.pdf"
+  },
+  "access": "Free, public open space and road verge at the corner of Grant Crescent and La Perouse Street",
+  "transport": "About 5.1 km south of Civic by straight line; public transport route not checked",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Four single-trunk southern blue gums registered together in July 2020. Register PDF: tree 1 girth 5.7 m, 24 m tall, canopy 28.2 m; tree 2 3.7 m, 26 m, 21.7 m; tree 3 4.4 m, 21 m, 27.5 m; tree 4 6.5 m, 20.5 m, 30.4 m. The ArcGIS table lists girths 650, 570, 370, 440 cm and heights 21, 24, 26, 21 m for the same four, matching the PDF within rounding (the 650 cm tree is the PDF's tree 4, 20.5 m tall). girth_cm 650 is the largest single trunk. The register's grid points for the four trees span about 30 m, so one place to stand. Register criteria: landscape and aesthetic value; 'beautiful, large blue gum trees'. AGE: none; no source says when or by whom they were planted or whether they are remnants. ALIVE: flagged, register decision 2020-07-03 (over five years ago), lifecheck NONE. Pin: Pin is the mean of the register's crown polygon (data/registers/act-tree-register.json), so approximate. A hand conversion (unverified) of the PDF's MGA55 grid point landed about 40 m west of that polygon mean on three PDFs, so neither is treated as the trunk."
  }
 ]
