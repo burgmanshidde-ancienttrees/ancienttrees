@@ -2,102 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-05T05:35:32+00:00",
-   "date": "2026-09-05",
-   "run_id": "33947598672",
-   "minutes": 44.4,
-   "minutes_basis": "measured",
-   "attempts": 3,
-   "turns": 256,
-   "denials": 44,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(for), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 4850478,
-   "claims_held": [],
-   "commits": 13,
-   "cities_touched": 19,
-   "cities": [
-    {
-     "city": "arnhem",
-     "trees": 7
-    },
-    {
-     "city": "higashiomi",
-     "trees": 2
-    },
-    {
-     "city": "den-hout",
-     "trees": 1
-    },
-    {
-     "city": "doornenburg",
-     "trees": 1
-    },
-    {
-     "city": "fleringen",
-     "trees": 1
-    },
-    {
-     "city": "gottingen",
-     "trees": 1
-    },
-    {
-     "city": "hilvarenbeek",
-     "trees": 1
-    },
-    {
-     "city": "ichinohe",
-     "trees": 1
-    },
-    {
-     "city": "maibara",
-     "trees": 1
-    },
-    {
-     "city": "mito",
-     "trees": 1
-    },
-    {
-     "city": "nuenen",
-     "trees": 1
-    },
-    {
-     "city": "rhenen",
-     "trees": 1
-    },
-    {
-     "city": "sachsenbrunn",
-     "trees": 1
-    },
-    {
-     "city": "sambeek",
-     "trees": 1
-    },
-    {
-     "city": "stoutenburg",
-     "trees": 1
-    },
-    {
-     "city": "telgte",
-     "trees": 1
-    },
-    {
-     "city": "velp",
-     "trees": 1
-    },
-    {
-     "city": "vorden",
-     "trees": 1
-    },
-    {
-     "city": "wolfheze",
-     "trees": 1
-    }
-   ],
-   "trees": 26,
-   "logged": true
-  },
-  {
    "started": "2026-09-05T07:36:07+00:00",
    "date": "2026-09-05",
    "run_id": "33949924784",
@@ -22851,6 +22755,32 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-30T14:53:46+00:00",
+   "date": "2026-10-30",
+   "run_id": "41075609547",
+   "minutes": 9.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 101,
+   "denials": 1,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; for ...)",
+   "ended": "success",
+   "tokens": 142904,
+   "claims_held": [
+    "frankfurt"
+   ],
+   "commits": 5,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "paris",
+     "trees": 1
+    }
+   ],
+   "trees": 1,
    "logged": true
   }
  ],
