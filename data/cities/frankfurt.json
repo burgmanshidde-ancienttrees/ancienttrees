@@ -2,7 +2,7 @@
   "city": "Frankfurt",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the twenty-three trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: ginkgos in Rödelheim and the Bethmannpark, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach, three oaks, one planted around 1590.",
+  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the twenty-four trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: ginkgos in Rödelheim and the Bethmannpark, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach, four oaks, one planted around 1590.",
   "meta_description": "Frankfurt's Naturdenkmal trees: the lime the U-Bahn curves around, a yew moved by steam roller in 1907, and an oak planted around 1590 in Offenbach.",
   "question_answer": "Frankfurt's oldest tree is probably the Senckenberg Yew in the Palmengarten, roughly 400 years old: it was already about 300 when two steam rollers moved it across the city in 1907, and local tradition has it planted before the Thirty Years War. The oldest on the city's register with a dated record is the Eschersheimer Linde, a large-leaved lime from the end of the 17th century beside Lindenbaum U-Bahn station. The Schwanheim oaks rival both, a group the city dates to up to 500 years without dating any single trunk.",
   "question_meta": "The Senckenberg Yew in the Palmengarten, roughly 400 years old and moved across Frankfurt by steam roller in 1907, is probably the city's oldest tree.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can I see several of Frankfurt's old trees in one walk?",
-      "a": "Yes. Five of the twenty-three are in the Westend within a few hundred metres of each other: two beeches and the Senckenberg Yew in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all five. In Nieder-Erlenbach in the far north, the cemetery limes and the oak on An der Bleiche are about 500 metres apart."
+      "a": "Yes. Five of the twenty-four are in the Westend within a few hundred metres of each other: two beeches and the Senckenberg Yew in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all five. In Nieder-Erlenbach in the far north, the cemetery limes and the oak on An der Bleiche are about 500 metres apart."
     },
     {
       "q": "Are Frankfurt's old trees free to visit?",
-      "a": "Eighteen of the twenty-three cost nothing and have no gate: the trees on public streets and squares, in Gruneburgpark, the Ostpark, the Bethmannpark, the Bockenheimer Anlage, the Botanical Garden, the Schwanheimer Wald, the Nieder-Erlenbach cemetery, the Offenbach city forest, the Leonhard-Eissnert-Park in Offenbach-Bieber, and a street corner in Offenbach. The two beeches and the Senckenberg Yew are inside the Palmengarten, which sells an admission ticket. The Goethe Ginkgo is free, but the Petrihaus grounds in Rödelheim open only for events and on the last Sunday afternoon of each month from spring to autumn. The oak on An der Bleiche stands on church grounds and is seen from the street."
+      "a": "Nineteen of the twenty-four cost nothing and have no gate: the trees on public streets and squares, in Gruneburgpark, the Ostpark, the Bethmannpark, the Bockenheimer Anlage, the Botanical Garden, the Schwanheimer Wald, the Nieder-Erlenbach cemetery, the Offenbach city forest, the Leonhard-Eissnert-Park in Offenbach-Bieber, a street corner in Offenbach, and the Hainbach path in Offenbach, where the Mark Oak is seen through its fence. The two beeches and the Senckenberg Yew are inside the Palmengarten, which sells an admission ticket. The Goethe Ginkgo is free, but the Petrihaus grounds in Rödelheim open only for events and on the last Sunday afternoon of each month from spring to autumn. The oak on An der Bleiche stands on church grounds and is seen from the street."
     },
     {
       "q": "Why does the U-Bahn curve at Lindenbaum?",
@@ -1014,6 +1014,35 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "frk_024",
+      "name": "The Mark Oak of Offenbach",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 700,
+      "height_m": 23,
+      "location": {
+        "address": "Hainbach path about 170 m north of the Stadthalle, Offenbach am Main",
+        "latitude": 50.0847,
+        "longitude": 8.7766,
+        "neighbourhood": "Offenbach (Mark / Hainbach valley)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Offenbach_am_Main",
+        "https://photo-auge.de/markeiche-in-offenbach/",
+        "https://stadtundnatur.wordpress.com/2017/06/05/mark-eiche-in-offenbach-am-hainbach-von-1880-ein-naturdenkmal-an-der-regionalparkroute/"
+      ],
+      "official_register": {
+        "name": "Naturdenkmale der Stadt Offenbach am Main (mirrored in the de.wikipedia list)",
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Offenbach_am_Main"
+      },
+      "access": "Free. Stands about 50 m west of the Hainbach footpath (Regionalpark route), inside a high fence; seen from the path, a Regionalpark post names it. Not enterable.",
+      "transport": "Stadthalle Offenbach is about 170 m south; Offenbach is the neighbouring city on S-Bahn from Frankfurt (exact stop and time not checked this pass).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Nobody seems to have planted this oak. Offenbach's register of natural monuments says it was probably sown by animals, and what came up has six stems rather than one trunk. A local tree photographer calls it the most powerful tree in Offenbach.\n\nIn 1979 the Offenbach natural history society measured it at seven metres round just above the roots, the whole buttressed mass of stems taken together. The three strongest are about four, three and three metres round each, and the register gives the height as about 23 metres. The name comes from the field it stands in, Die Mark.\n\nIt has had a hard time. The Hainbach once ran seven metres from it, until the brook was channelled, which by the photographer's account did the tree and its surroundings no good. The main trunk is hollow at ground level, a big limb has been taken off, and the thick stems are held together with strong straps. A high fence keeps everyone at a distance. Even so, a walker in 2017 found the crown healthy and full of vigour, and a photograph from May 2018 shows it standing.\n\nOne blog dates it to 1880 without saying why, so we leave its age open. If you know how old it is, or have seen it lately, tell us.\n\nIt stands a little west of the Hainbach footpath, about 170 metres north of the Stadthalle, where a post on the Regionalpark route points it out.",
+      "how_to_recognise": "You can recognise it by its six stems held together with straps, inside a high fence. It stands about 50 metres west of the Hainbach path, 170 metres north of the Stadthalle, where a Regionalpark post names it."
     }
   ],
   "oldest_tree_id": "frk_012"
