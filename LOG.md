@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-30, session: build 36 (1.0.4) archived for TestFlight
+
+Everything in the app since build 35 (10-15) is in it: Airbnb-style pins and the one tree card, visitors' notes and Add a photo on the tree page, profiles at sign-up with people search and follow, the collect note, Become an ambassador, merging duplicates, the copy sweep's app strings. Bundled catalogue refreshed (3699 to 3911 trees, 346 walks). iOS CI green on the latest push. For Hidde: Organizer, Distribute App, App Store Connect, then test it from TestFlight. Also restored supabase/profile-at-signup.sql, which had been overwritten locally with "su" (the database itself was untouched).
+
 ## 2026-10-30, session: trees on one approximate spot now stand apart on every map
 
 Hidde: tapping beside a spread stack made all its pins vanish. Airbnb looked at by hand (CONVENTIONS.md "Two trees on exactly the same spot"): it never spreads, because its spots are approximate. Ours were too: 99 of the 104 piled trees had an approximate pin. Now each stands on a fixed 10 m ring around the shared point (site/src/lib/map-spread.ts, applied where the data loads, so web maps and the app feed agree); confirmed pins never move. The bubble remains only for Genoa gnv_009/gnv_010, both confirmed on one point. Directions for a spread tree go to its ring spot, at most 12 m from the old guess.
