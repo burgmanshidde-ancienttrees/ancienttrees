@@ -1173,6 +1173,150 @@
    "seen": "2026-10-20",
    "tree_id": "lis_037",
    "unlinked": true
+  },
+  {
+   "sighting_id": "598e6c83-da01-471c-9605-c27a0f199a34",
+   "user_id": "p_6312cf4c9007b0fcfae9011c",
+   "mine": true,
+   "name": "The Town Hall Plane",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 52.2139636524304,
+   "longitude": 5.2970521881827,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/598E6C83-DA01-471C-9605-C27A0F199A34.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [],
+   "nearest_published_m": 518,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-30"
+  },
+  {
+   "sighting_id": "b6455a29-c8b6-47ba-b3e2-8fa5a1626090",
+   "user_id": "p_6312cf4c9007b0fcfae9011c",
+   "mine": true,
+   "name": "A tree in Baarn",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 52.2088283300886,
+   "longitude": 5.29835706577198,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/B6455A29-C8B6-47BA-B3E2-8FA5A1626090.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [],
+   "nearest_published_m": 80,
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 62 m away (netherlands-lrmb): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 52.20906,
+      "lng": 5.29918,
+      "source": "netherlands-lrmb",
+      "designation": "",
+      "name": "Groene beuk Cantonspark",
+      "species": "",
+      "girth_cm": null,
+      "height_m": null,
+      "distance_m": 61.8
+     }
+    ]
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-30"
+  },
+  {
+   "sighting_id": "f6164700-7588-470f-947b-6504bd25a3bb",
+   "user_id": "p_6312cf4c9007b0fcfae9011c",
+   "mine": true,
+   "name": "European Beech in Baarn",
+   "species": "European Beech",
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 52.2087278573092,
+   "longitude": 5.29863564694245,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/F6164700-7588-470F-947B-6504BD25A3BB.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [
+    "out/sightings/f6164700-7588-470f-947b-6504bd25a3bb-extra-1.jpg"
+   ],
+   "nearest_published_m": 70,
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 52 m away (netherlands-lrmb): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 52.20906,
+      "lng": 5.29918,
+      "source": "netherlands-lrmb",
+      "designation": "",
+      "name": "Groene beuk Cantonspark",
+      "species": "",
+      "girth_cm": null,
+      "height_m": null,
+      "distance_m": 52.4
+     }
+    ]
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-30"
+  },
+  {
+   "sighting_id": "7c4530f7-0ee8-4011-a82c-78118e7d9845",
+   "user_id": "p_6312cf4c9007b0fcfae9011c",
+   "mine": true,
+   "name": "A tree in Baarn",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 52.2081133899877,
+   "longitude": 5.29898401047824,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/7C4530F7-0EE8-4011-A82C-78118E7D9845.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [
+    "out/sightings/7c4530f7-0ee8-4011-a82c-78118e7d9845-extra-1.jpg"
+   ],
+   "nearest_published_m": 39,
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 39 m away (netherlands-lrmb): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 52.208112,
+      "lng": 5.298418,
+      "source": "netherlands-lrmb",
+      "designation": "",
+      "name": "Tulpenboom Cantonspark",
+      "species": "",
+      "girth_cm": null,
+      "height_m": null,
+      "distance_m": 38.6
+     }
+    ]
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-30"
   }
  ]
 }
