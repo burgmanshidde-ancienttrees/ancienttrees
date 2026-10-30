@@ -1159,7 +1159,7 @@ struct CollectView: View {
                          : "Your trees")
                         .font(.brand(22, .bold, relativeTo: .title3))
                         .foregroundStyle(Brand.ink)
-                        .lineLimit(1).truncationMode(.middle)
+                        .lineLimit(2).truncationMode(.tail)
                         // A NAME IS 23 POINTS TALL and Apple's floor is 44,
                         // and it is as WIDE as the name too, which is the half
                         // this line missed until 2026-09-04. Signed out the

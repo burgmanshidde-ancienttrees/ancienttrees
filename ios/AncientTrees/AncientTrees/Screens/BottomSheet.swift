@@ -587,8 +587,21 @@ struct BottomSheet<Header: View, Content: View>: View {
                     .onEnded { value in
                         defer { handingOff = false }
                         guard drag != 0 else { return }
-                        let settled = target - (locked ? max(0, value.translation.height) : value.translation.height)
-                        let next = SheetHeight.allCases.min {
+                        // WHERE THE FLICK WOULD END, not where the finger let
+                        // go (Hidde, 2026-10-30: from half "gaat het net te
+                        // lastig waardoor die altijd terugvalt"). Apple's rule
+                        // for sheets and the one in Designing Fluid Interfaces
+                        // (WWDC18): project the release velocity, then take the
+                        // nearest stop. On the finger's position alone, half to
+                        // the page needed some 230 points of slow drag on a 17.
+                        // predictedEndTranslation is that projection.
+                        let moved = value.predictedEndTranslation.height
+                        let settled = target - (locked ? max(0, moved) : moved)
+                        // The card stop belongs to a tapped tree. Without one it
+                        // sat 16 points under half and caught every small drag
+                        // down from the list.
+                        let stops = SheetHeight.allCases.filter { $0 != .card || cardFits }
+                        let next = stops.min {
                             abs(($0 == .full ? page : stop($0)) - settled)
                                 < abs(($1 == .full ? page : stop($1)) - settled)
                         } ?? .peek

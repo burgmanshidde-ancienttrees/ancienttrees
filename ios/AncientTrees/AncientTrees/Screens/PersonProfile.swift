@@ -93,7 +93,7 @@ struct PersonProfileView: View {
                     Text(profile?.display_name ?? knownName ?? "")
                         .font(.brand(22, .bold, relativeTo: .title3))
                         .foregroundStyle(Brand.ink)
-                        .lineLimit(1).truncationMode(.middle)
+                        .lineLimit(2).truncationMode(.tail)
                     CountryFlag(code: profile?.country)
                 }
                 if profile != nil {
