@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-30, session: no batch was waiting; sent_drafts fixed, source batch of five drafted
+
+Hidde asked whether an outreach batch was ready. None was: the 24-desk press batch went out on 10-29, and every older batch the brief listed as open had been sent too. `sent_drafts.py` had been calling them open because their "made" date was wrong (a pull rewrote the files), so mails sent before it were not counted; it now also counts a send-log row tagged with the batch's own name, whatever its date. Open went from 79 to 39, all of them `.md` reply drafts with no batch tag (still unverified, not fixed). Source ready list was nearly all newspapers, museums and companies, so `source_contacts.py --top 60` found new person-run sites; drafts/batches/source-2026-10-30.json (preview drafts/batch-source-2026-10-30-preview.md, mailcheck clean): un albero al giorno (Padua), Stadtgeschichte München, Tierras de Burgos, the 100 Oaks Project, Gathering Growth. For Hidde: the source batch of five waits for your word.
+
 ## 2026-10-30, night run (retry window): par_071 live, pace now full
 Paris par_071 (Ranelagh wingnut) merged with its French overlay (and "55 more" raised to 56 in both languages); preflight clean; the Paris claim is released. The pace stood at 24 of 25, so the 7 other READY leads (Paris 3, Oxford 2, Madrid 1, Sightings 1) wait for tomorrow. A Frankfurt verify pass added frk_024 (Mark Oak of Offenbach, flagged, approximate pin) to data/research/frankfurt-verified.json, 1 tree for about 120k tokens; the other Frankfurt leads have no new evidence in reach, and the Bismarckstrasse 193 oak stays a lead (probably a courtyard, ownership unknown). frk_024 needs a story tomorrow when the pace allows. The Town Hall Plane sighting is still open: its photo is not on disk, never judged blind. iOS CI failure is the earlier simulator timeout, not an assertion.
 
