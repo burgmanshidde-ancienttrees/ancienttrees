@@ -406,7 +406,7 @@ struct TreeDetail: View {
                     ShareTo(url: URL(string: "https://ancienttrees.app" + tree.url)!,
                         subject: tree.name,
                         message: "\(tree.name), \(tree.city).",
-                        label: "Share this tree")
+                        label: "Share this tree", from: "tree")
                 // THE SAME ELLIPSIS ON OUR TREES (Hidde, 2026-08-26: "we hadden
                 // daar rechtsboven drie puntjes bedacht waar je eigenlijk alle
                 // feedback kon geven... goed om die ook te herhalen op de
@@ -1102,6 +1102,23 @@ struct TreeDetail: View {
                             }
                         }
                     }
+                }
+                // SHARE YOUR PHOTO, once it is on the page (Hidde, 2026-10-30,
+                // asking how users bring others: "ja" to the pride moment).
+                // Google Local Guides puts a share on a contribution the day it
+                // is published, and a photograph of yours on the page of a
+                // 400-year-old oak is the one thing here people send unasked.
+                // The link is the tree's page, which now carries their picture.
+                if shots.first?.status == .published,
+                   let url = Shared.page(tree.url, from: "your_photo") {
+                    ShareLink(item: url, subject: Text(tree.name),
+                              message: Text("My photo of \(tree.name) in \(tree.city) is on Ancient Trees.")) {
+                        Label("Share your photo", systemImage: "square.and.arrow.up")
+                    }
+                    .buttonStyle(SheetButtonStyle(kind: .secondary))
+                    .countsShare("your_photo")
+                    .accessibilityIdentifier("tree-your-photo-share")
+                    .padding(.top, 2)
                 }
             }
             .accessibilityIdentifier("tree-your-photos")

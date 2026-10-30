@@ -44,11 +44,12 @@ struct TreePlaceHeader: View {
             if tree.url.isEmpty {
                 Color.clear.frame(width: 38, height: 38)
             } else {
-                ShareLink(item: URL(string: "https://ancienttrees.app" + tree.url)!,
+                ShareLink(item: Shared.page(tree.url, from: "map_card")!,
                           subject: Text(tree.name)) {
                     PlaceCircle(symbol: "square.and.arrow.up")
                 }
                 .buttonStyle(.plain)
+                .countsShare("map_card")
                 .accessibilityLabel("Share \(tree.name)")
                 .accessibilityIdentifier("place-share")
             }

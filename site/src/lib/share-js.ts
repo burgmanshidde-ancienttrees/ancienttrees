@@ -22,7 +22,11 @@ export const SHARE_JS = `
 (function() {
   document.querySelectorAll('[data-share]').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      var url = btn.getAttribute('data-share-url') || location.href;
+      var where = btn.getAttribute('data-share-where') || 'page';
+      var url = btn.getAttribute('data-share-url') || (location.origin + location.pathname);
+      // Tagged and counted (Base.astro at.shareUrl, 2026-10-30).
+      if (window.at && at.shareUrl) { url = at.shareUrl(url, where); }
+      if (window.at && at.track) { at.track('share_tapped', where); }
       var title = btn.getAttribute('data-share-title') || document.title;
       if (navigator.share) {
         navigator.share({ title: title, url: url }).catch(function() {});

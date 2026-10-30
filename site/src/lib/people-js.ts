@@ -182,6 +182,8 @@ export const PEOPLE_JS = `
   // SHARE YOUR PROFILE.
   function share() {
     var url = location.origin + '/profile?u=' + encodeURIComponent(me);
+    if (window.at && at.shareUrl) { url = at.shareUrl(url, 'profile'); }
+    if (window.at && at.track) { at.track('share_tapped', 'profile'); }
     var text = el('people-share').getAttribute('data-text');
     var phone = window.matchMedia && matchMedia('(pointer: coarse)').matches;
     function copy() {

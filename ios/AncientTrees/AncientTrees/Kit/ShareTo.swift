@@ -15,15 +15,49 @@
 // floor.
 import SwiftUI
 
+/// WHETHER ANYBODY SHARES, AND WHETHER IT BRINGS ANYBODY (Hidde, 2026-10-30,
+/// asking what makes users bring others: "ja" to measuring first). Sharing was
+/// the growth hypothesis since July (PRINCIPLES.md 5) and no share button
+/// counted anything, so nobody could say it ever happened. Two numbers now:
+/// a tap on any share control is a `share_tapped` event with where it was, and
+/// the link it sends carries utm tags, the convention Google Analytics reads
+/// without setup, so the visit it brings shows as source "share". The website
+/// tags its own the same way (share-js.ts, `atShareUrl`) with medium "web".
+enum Shared {
+    static func tag(_ url: URL, from place: String) -> URL {
+        guard var c = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return url }
+        c.queryItems = (c.queryItems ?? []) + [
+            URLQueryItem(name: "utm_source", value: "share"),
+            URLQueryItem(name: "utm_medium", value: "app"),
+            URLQueryItem(name: "utm_campaign", value: place),
+        ]
+        return c.url ?? url
+    }
+
+    /// A page of ours by its path ("/lisbon/the-dragon-tree"), tagged.
+    static func page(_ path: String, from place: String) -> URL? {
+        URL(string: "https://ancienttrees.app" + path).map { tag($0, from: place) }
+    }
+}
+
+extension View {
+    /// Counts a tap on a share control without taking the tap from it.
+    func countsShare(_ place: String) -> some View {
+        simultaneousGesture(TapGesture().onEnded { Measure.event("share_tapped", ["where": place]) })
+    }
+}
+
 struct ShareTo: ToolbarContent {
     let url: URL
     let subject: String
     let message: String
     var label: String = "Share"
+    /// Where the share happened, for `share_tapped` and the link's campaign.
+    var from: String = "page"
 
     var body: some ToolbarContent {
         ToolbarItem(placement: .topBarTrailing) {
-            ShareLink(item: url, subject: Text(subject), message: Text(message)) {
+            ShareLink(item: Shared.tag(url, from: from), subject: Text(subject), message: Text(message)) {
                 // NO HAND-ROLLED FRAME. A 44 by 44 box inside a toolbar item
                 // is the tap target twice: iOS already gives one, and since it
                 // groups trailing items into a single glass capsule, two
@@ -39,6 +73,7 @@ struct ShareTo: ToolbarContent {
                 // keeps the 44 point target it was hand-drawn to guarantee.
                 Image(systemName: "square.and.arrow.up")
             }
+            .countsShare(from)
             .accessibilityLabel(label)
         }
     }

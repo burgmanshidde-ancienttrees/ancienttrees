@@ -1396,11 +1396,12 @@ struct CollectSheet: View {
             // Under it, not between the note field and Add note, which read as
             // sharing the note (CONVENTIONS.md "Where the payoff share sits":
             // AllTrails and Strava share after saving, never inside the form).
-            if let url = URL(string: "https://ancienttrees.app" + t.url) {
+            if let url = Shared.page(t.url, from: "collect") {
                 ShareLink(item: url, subject: Text(t.name), message: Text("\(t.name), \(t.city).")) {
                     Label("Share this tree", systemImage: "square.and.arrow.up")
                 }
                 .buttonStyle(SheetButtonStyle(kind: .secondary))
+                .countsShare("collect")
                 .accessibilityIdentifier("collect-share")
                 .padding(.top, 12)
             }

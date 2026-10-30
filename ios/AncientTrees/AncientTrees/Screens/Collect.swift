@@ -847,7 +847,7 @@ struct CollectView: View {
                             // its heart, the share arrow AllTrails uses on a
                             // saved route; the system share sheet does the rest.
                             .overlay(alignment: .topTrailing) {
-                                if let url = URL(string: "https://ancienttrees.app" + t.url) {
+                                if let url = Shared.page(t.url, from: "want_to_visit") {
                                     ShareLink(item: url, subject: Text(t.name),
                                               message: Text("Shall we go and see this one? \(t.name), \(t.city).")) {
                                         Image(systemName: "square.and.arrow.up")
@@ -860,6 +860,7 @@ struct CollectView: View {
                                             .contentShape(.rect)
                                     }
                                     .buttonStyle(.plain)
+                                    .countsShare("want_to_visit")
                                     .accessibilityLabel("Share \(t.name)")
                                     .accessibilityIdentifier("want-share")
                                 }

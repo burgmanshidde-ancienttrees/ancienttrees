@@ -168,7 +168,8 @@ struct PeopleView: View {
                     let url = Feed.base.appending(path: "profile").appending(queryItems: [URLQueryItem(name: "u", value: uid)])
                     Group {
                         if profiles.myPublic == true {
-                            ShareLink(item: url, message: Text(Self.shareLine)) { shareRow }
+                            ShareLink(item: Shared.tag(url, from: "profile"), message: Text(Self.shareLine)) { shareRow }
+                                .countsShare("profile")
                         } else {
                             Button {
                                 if profiles.me?.display_name.isEmpty ?? true { editingName = true }

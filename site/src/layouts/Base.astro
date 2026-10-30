@@ -446,6 +446,25 @@ at.track = function (name, detail) {
     fetch(SB_URL + "/rest/v1/events", { method: "POST", keepalive: true, headers: { apikey: SB_KEY, "Content-Type": "application/json", Prefer: "return=minimal" }, body: body });
   } catch (e) {}
 };
+// WHETHER ANYBODY SHARES, AND WHETHER IT BRINGS ANYBODY (Hidde, 2026-10-30,
+// "ja" to measuring first; the app's Shared in ShareTo.swift). Every share
+// control tags the link it sends with utm tags, which Google Analytics reads
+// as source "share", and counts the tap as share_tapped. A visit arriving on
+// such a link is share_arrived here too, because GA sees only visitors who
+// accepted its cookie and this table sees every one.
+at.shareUrl = function (url, where) {
+  try {
+    var u = new URL(url, location.origin);
+    u.searchParams.set("utm_source", "share");
+    u.searchParams.set("utm_medium", "web");
+    u.searchParams.set("utm_campaign", where || "page");
+    return u.toString();
+  } catch (e) { return url; }
+};
+try {
+  var sq = new URLSearchParams(location.search);
+  if (sq.get("utm_source") === "share") { at.track("share_arrived", (sq.get("utm_campaign") || "") + "/" + (sq.get("utm_medium") || "")); }
+} catch (e) {}
 // Directions is the one event with no attribute to hang off: the link is an
 // outbound Google Maps URL built per tree, so the href IS the signal. Every
 // other funnel step is a data-ev attribute read by the single listener below

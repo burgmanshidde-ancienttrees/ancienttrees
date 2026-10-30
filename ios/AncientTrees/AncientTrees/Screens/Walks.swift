@@ -141,7 +141,7 @@ struct WalkDetail: View {
             ShareTo(url: URL(string: "https://ancienttrees.app/\(walk.citySlug)/walks")!,
                     subject: walk.name,
                     message: "\(walk.name): \(trees.count) ancient trees in \(walk.city), on foot.",
-                    label: "Share these walks")
+                    label: "Share these walks", from: "walks")
         }
     }
 

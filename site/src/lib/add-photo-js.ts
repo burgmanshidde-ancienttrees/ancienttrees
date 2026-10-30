@@ -262,6 +262,26 @@ export const ADD_PHOTO_JS = `
         // it waits, nothing after a no. The app's Sighting.photoState.
         if (rows[0].status !== 'published') return;
         sayWithLink(msgOnPage);
+        // SHARE YOUR PHOTO (2026-10-30), the app's button under your
+        // photographs: the day a contribution is on the page is the day
+        // people send it (Google Local Guides). System sheet on a phone, the
+        // link copied elsewhere; tagged and counted like every share.
+        var sb = document.createElement('button');
+        sb.type = 'button';
+        sb.className = 'addphoto-share';
+        sb.textContent = box.getAttribute('data-msg-share') || 'Share your photo';
+        sb.addEventListener('click', function() {
+          var url = location.origin + location.pathname;
+          if (window.at && at.shareUrl) { url = at.shareUrl(url, 'your_photo'); }
+          if (window.at && at.track) { at.track('share_tapped', 'your_photo'); }
+          var phone = window.matchMedia && matchMedia('(pointer: coarse)').matches;
+          if (phone && navigator.share) { navigator.share({ title: treeName, url: url }).catch(function() {}); return; }
+          if (navigator.clipboard) navigator.clipboard.writeText(url).then(function() {
+            if (window.atSnack) window.atSnack(box.getAttribute('data-msg-copied') || 'Link copied');
+          }, function() {});
+        });
+        note.appendChild(document.createTextNode(' · '));
+        note.appendChild(sb);
       }).catch(function() {});
   })();
 

@@ -185,6 +185,8 @@ export const PROFILE_JS = `
         b.addEventListener('click', function(e) {
           e.preventDefault(); e.stopPropagation();
           var url = new URL(c.u, location.origin).href;
+          if (window.at && at.shareUrl) { url = at.shareUrl(url, 'want_to_visit'); }
+          if (window.at && at.track) { at.track('share_tapped', 'want_to_visit'); }
           var text = 'Shall we go and see this one? ' + c.n + (c.c ? ', ' + c.c : '') + '.';
           if (navigator.share) { navigator.share({ title: c.n, text: text, url: url }).catch(function() {}); return; }
           if (navigator.clipboard) navigator.clipboard.writeText(url).then(function() {

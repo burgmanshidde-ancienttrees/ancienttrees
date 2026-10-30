@@ -3919,3 +3919,9 @@ Hidde, on the design page (drafts/invite-and-share-design.html): "voorstel b lij
 - **Apple HIG Buttons**: one or two prominent buttons per view, style not size marks the preferred one, and buttons stand close to the view they act on.
 - **Conclusion**: no reference puts a share control between a text field and its submit button. The field and its button stay together, and sharing comes after.
 - **Ours now** (Hidde: "Ja, verplaats hem"): the note field, then Done or Add note, then the grey Share this tree 12 points under it.
+
+## Measuring shares, and the share when a contribution goes live (2026-10-30)
+
+Hidde: "wat kunnen wij doen dat onze gebruikers meer gaan zorgen dat andere deze app ook gaan gebruiken", then "ja" to measuring first plus the pride moment.
+- **Tagging**: utm_source, utm_medium and utm_campaign are what Google Analytics reads as a visit's source without setup (support.google.com/analytics, campaign URLs). Ours: every share control, app and web, sends `utm_source=share`, `utm_medium=app|web`, `utm_campaign=<where>` (tree, city, walks, map_card, want_to_visit, collect, profile, your_photo), counts the tap as `share_tapped` (PostHog in the app, the events table and GA on the web), and a visit arriving on such a link is `share_arrived` in the events table, which sees visitors GA's cookie bar hides. App: `Shared` in Kit/ShareTo.swift; web: `at.shareUrl` in Base.astro.
+- **Share your photo**: Google Local Guides puts a share on a contribution once it is published. Ours: under "Your photo is on this page" on the tree page, a grey "Share your photo" (app) and a "Share your photo" link beside "See it in My trees" (web), sharing the tree's page. Only once the photo is published; nothing while it waits.

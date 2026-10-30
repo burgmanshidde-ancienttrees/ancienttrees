@@ -21,7 +21,7 @@ interface Props {
 const { shareLabel, copiedLabel, closeLabel } = Astro.props as Props;
 ---
 <div class="place-row" aria-live="polite">
-  <button type="button" class="place-circle share-btn" data-share data-share-url=""
+  <button type="button" class="place-circle share-btn" data-share data-share-where="map_card" data-share-url=""
           data-share-title="" data-share-copied={copiedLabel} aria-label={shareLabel}>
     <Fragment set:html={icon("export")} />
   </button>

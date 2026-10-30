@@ -156,7 +156,7 @@ struct PlaceMapPage: View {
                 ShareTo(url: URL(string: "https://ancienttrees.app/\(slug)")!,
                         subject: title,
                         message: "Ancient trees in \(title).",
-                        label: "Share this city")
+                        label: "Share this city", from: "city")
             }
         }
         .accessibilityIdentifier("place-map-page")

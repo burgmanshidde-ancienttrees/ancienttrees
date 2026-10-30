@@ -413,6 +413,7 @@ export interface UIStrings {
   photoDeleted: string;
   /** The link from the acknowledgement to where the photograph now lives. */
   addPhotoSeeMine: string;
+  addPhotoShare: string;
   /** The optional second photograph when somebody adds a tree: the sign
    *  beside it, which names the species, often the age and the tree itself
    *  (Hidde, 2026-09-24). Same words as the app's describe form. */
@@ -789,6 +790,7 @@ const EN: UIStrings = {
   photoDeleteBtn: "Delete photo",
   photoDeleted: "Photo deleted",
   addPhotoSeeMine: "See it in My trees",
+  addPhotoShare: "Share your photo",
   havePhotographed: "Have you photographed this tree?",
   havePhotographedLine: "If yours shows the tree better, we can put it in place of the picture above, or beside it.",
   goNote: "The button above opens directions in your maps app.",
@@ -1147,6 +1149,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoDeleteBtn: "Eliminar foto",
     photoDeleted: "Foto eliminada",
     addPhotoSeeMine: "Verla en Mis árboles",
+    addPhotoShare: "Comparte tu foto",
     havePhotographed: "¿Has fotografiado este árbol?",
     havePhotographedLine: "Si la tuya muestra mejor el \u00e1rbol, podemos ponerla en lugar de la foto de arriba, o a su lado.",
     goNote: "El botón de arriba abre las indicaciones en tu aplicación de mapas.",
@@ -1472,6 +1475,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoDeleteBtn: "Elimina foto",
     photoDeleted: "Foto eliminata",
     addPhotoSeeMine: "Vedila in I miei alberi",
+    addPhotoShare: "Condividi la tua foto",
     havePhotographed: "Hai fotografato questo albero?",
     havePhotographedLine: "Se la tua mostra meglio l'albero, possiamo metterla al posto della foto qui sopra, o accanto.",
     goNote: "Il pulsante qui sopra apre le indicazioni nella tua app di mappe.",
@@ -1797,6 +1801,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoDeleteBtn: "Foto verwijderen",
     photoDeleted: "Foto verwijderd",
     addPhotoSeeMine: "Bekijk hem bij Mijn bomen",
+    addPhotoShare: "Deel je foto",
     havePhotographed: "Heb je deze boom gefotografeerd?",
     havePhotographedLine: "Laat jouw foto de boom beter zien, dan kunnen we hem in plaats van de foto hierboven zetten, of ernaast.",
     goNote: "De knop hierboven opent de route in je kaartenapp.",
@@ -2122,6 +2127,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoDeleteBtn: "Foto löschen",
     photoDeleted: "Foto gelöscht",
     addPhotoSeeMine: "In Meine Bäume ansehen",
+    addPhotoShare: "Dein Foto teilen",
     havePhotographed: "Hast du diesen Baum fotografiert?",
     havePhotographedLine: "Wenn deins den Baum besser zeigt, k\u00f6nnen wir es statt des Fotos oben zeigen oder daneben.",
     goNote: "Der Knopf oben öffnet die Route in Ihrer Karten-App.",
@@ -2447,6 +2453,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoDeleteBtn: "Eliminar foto",
     photoDeleted: "Foto eliminada",
     addPhotoSeeMine: "Ver em As minhas árvores",
+    addPhotoShare: "Partilhar a sua foto",
     havePhotographed: "Fotografou esta árvore?",
     havePhotographedLine: "Se a sua mostrar melhor a \u00e1rvore, podemos p\u00f4-la no lugar da foto acima, ou ao lado.",
     goNote: "O botão acima abre as indicações na sua aplicação de mapas.",
@@ -2772,6 +2779,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoDeleteBtn: "Supprimer la photo",
     photoDeleted: "Photo supprimée",
     addPhotoSeeMine: "La voir dans Mes arbres",
+    addPhotoShare: "Partager votre photo",
     havePhotographed: "Avez-vous photographié cet arbre ?",
     havePhotographedLine: "Si la v\u00f4tre montre mieux l'arbre, nous pouvons la mettre \u00e0 la place de la photo ci-dessus, ou \u00e0 c\u00f4t\u00e9.",
     goNote: "Le bouton ci-dessus ouvre l'itinéraire dans votre application de cartes.",
@@ -3096,6 +3104,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoDeleteBtn: "写真を削除",
     photoDeleted: "写真を削除しました",
     addPhotoSeeMine: "アカウントで見る",
+    addPhotoShare: "写真を共有する",
     havePhotographed: "この木を撮影しましたか?",
     havePhotographedLine: "上の写真より良く撮れていれば、それに差し替えるか、並べて掲載します。",
     goNote: "上のボタンで、地図アプリの経路案内が開く。",

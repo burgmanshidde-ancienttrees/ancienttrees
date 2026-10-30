@@ -39,7 +39,8 @@ const U = ui(lang);
      data-msg-signin={U.addPhotoSignIn} data-msg-sending={U.addPhotoSending}
      data-msg-badfile={U.addPhotoBadFile} data-msg-thanks={U.addPhotoThanks}
      data-msg-failed={U.addPhotoFailed} data-msg-waiting={U.addPhotoWaiting}
-     data-msg-onpage={U.addPhotoOnPage} data-msg-seemine={U.addPhotoSeeMine}>
+     data-msg-onpage={U.addPhotoOnPage} data-msg-seemine={U.addPhotoSeeMine}
+     data-msg-share={U.addPhotoShare} data-msg-copied={U.shareCopied}>
   <button type="button" id="addphoto-btn" class={tonal ? "addphoto-btn tonal" : quiet ? "addphoto-btn quiet" : "addphoto-btn"}>
     {tonal && <Fragment set:html={icon("camera", "regular")} />}<span class="addphoto-l">{U.addPhotoBtn}</span>
   </button>

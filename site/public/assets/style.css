@@ -1094,6 +1094,8 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
 @media (max-width: 899px) { .addphoto-btn.tonal { min-height: 44px; height: 44px; } }
 .addphoto-note { margin: 0.5rem 0 0; font-family: var(--sans); font-size: 13px;
   line-height: 1.45; color: var(--ink-mid); }
+/* Share your photo, a link-styled button beside See it in My trees (2026-10-30). */
+.addphoto-share { all: unset; cursor: pointer; color: var(--moss); text-decoration: underline; font: inherit; }
 /* Whose photographs we can use, said once under the button (2026-09-24). */
 .addphoto-own { margin: 0.4rem 0 0; font-family: var(--sans); font-size: 12px;
   line-height: 1.45; color: var(--ink-mid); }
