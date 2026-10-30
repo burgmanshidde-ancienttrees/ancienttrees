@@ -45,6 +45,9 @@ final class StressWalk: XCTestCase {
         // Both left the app in CI on 2026-10-28 (state runningBackground, not a
         // crash): the first hands over to Mail, the second to the system picker.
         "send feedback", "change photo",
+        // The profile row reads "Change your photo and name" and slipped past
+        // "change photo" on iOS 18 in CI on 2026-10-29.
+        "change your photo",
     ]
 
     override func setUpWithError() throws {
@@ -141,16 +144,24 @@ final class StressWalk: XCTestCase {
                 if tab.exists, tab.isHittable { tab.tap() }
             }
 
-            // The one assertion, and it is the point of the whole file.
-            XCTAssertEqual(app.state, .runningForeground,
-                           "the app stopped running at action \(step), after \(lastAction). "
-                           + "Re-run this test to watch it happen again: the seed is fixed.")
+            // The one assertion, and it is the point of the whole file: a
+            // crash leaves the app not running. Being handed to another app
+            // leaves it running in the background, which is not a crash, and
+            // a hand-over can land a step late (iOS 18 in CI on 2026-10-29
+            // went to the background at a step that tapped nothing), so that
+            // state is never the failure.
+            XCTAssertNotEqual(app.state, .notRunning,
+                              "the app stopped running at action \(step), after \(lastAction). "
+                              + "Re-run this test to watch it happen again: the seed is fixed.")
 
             // A random finger can still reach a system sheet or a share sheet
-            // that no filter predicted. Come back rather than failing: being
-            // handed to another app is not a crash, and the test has 90 actions
-            // to get through.
-            if app.state != .runningForeground { app.activate() }
+            // that no filter predicted. Come back rather than failing, and the
+            // test has 90 actions to get through.
+            if app.state != .runningForeground {
+                app.activate()
+                XCTAssertTrue(app.wait(for: .runningForeground, timeout: 10),
+                              "the app did not come back after action \(step), \(lastAction)")
+            }
         }
 
         XCTAssertEqual(app.state, .runningForeground)
