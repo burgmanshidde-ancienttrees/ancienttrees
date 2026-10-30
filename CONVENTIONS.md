@@ -3109,6 +3109,8 @@ Hidde: "should the option to add more than one photo also be added to all tree a
 
 **What we took:** each access and transport line stops at two lines with "Read more"; the STORY always shows in full (Hidde, same evening: "not sure the main story deserves a read more"; it is capped at 250 words and it is the product), that opens it where it stands; the button appears only when something is actually cut. App: ExpandableText. Web: .td-clamp in TreeDetail.astro, labelled from UIStrings.readMore in every language, the full text still in the page for search. The Discover more chips wrap onto new rows on both surfaces, as the website already did.
 
+**Changed 2026-10-30, the App Store's exact shape, app** (Hidde: the "Read more" button was "een beetje raar" with "een raar effect als je erop klikt"). The App Store puts "more" at the end of the last visible line over a short fade; a tap on the text opens the rest at once, and there is no "less". Ours (ExpandableText.swift, story and access lines alike): the same, with no animation (the animated line limit cross-faded the paragraph while the page slid), cut by measured height rather than a character count. The website's .td-clamp still has its button under the text.
+
 ---
 
 ## A line of explanation on the "add" sheet? (2026-09-27)

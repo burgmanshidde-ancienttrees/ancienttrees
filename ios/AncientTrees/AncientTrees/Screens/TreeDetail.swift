@@ -107,6 +107,7 @@ struct TreeDetail: View {
     /// Done, and you are on your tree.
     @State private var savedName: String?
     @State private var extraCamera = false
+    @State private var extraLibrary = false
     @State private var photoCamera = false
     @State private var photoLibrary = false
     @State private var photoRefused: Permission?
@@ -123,9 +124,6 @@ struct TreeDetail: View {
     @State private var noteFailed = false
     @State private var noteSignIn = false
     @Environment(Profiles.self) private var profiles
-    /// The story folded to about six lines (Hidde, 2026-10-24, lifting his
-    /// 09-27 wish for the full text: "look at the page holistically").
-    @State private var storyOpen = false
 
     /// The live record, so a draft that is saved on this page turns into a
     /// saved tree on this page without being opened again.
@@ -377,6 +375,12 @@ struct TreeDetail: View {
                 if let image, let m = live { sightings.addExtra(m.id, image: image) }
             }.ignoresSafeArea()
         }
+        .fullScreenCover(isPresented: $extraLibrary) {
+            LibraryPicker(limit: max(1, Sightings.maxExtras - (live.map { sightings.extraImages($0).count } ?? 0))) { p in
+                guard let p, let m = live else { return }
+                for img in [p.image] + p.extras { sightings.addExtra(m.id, image: img) }
+            }.ignoresSafeArea()
+        }
         .toolbar {
             // Only ours can be shared: a tree only you have has no address on
             // the web to send anybody to, and inventing one would send them to
@@ -491,14 +495,10 @@ struct TreeDetail: View {
                         Button { placing = true } label: {
                             Label("Move the pin", systemImage: "mappin.and.ellipse")
                         }
-                        // TAKING THE LINK BACK, in the same menu as removing,
-                        // because it is the same kind of act. It only appears
-                        // once there is something to take back.
-                        if mine?.shared == true {
-                            Button { stopSharing() } label: {
-                                Label("Stop sharing the link", systemImage: "link.slash")
-                            }
-                        }
+                        // "Stop sharing the link" left this menu on 2026-10-30
+                        // (Hidde: "Deze functie begrijp ik niet; die zou ik
+                        // liever niet hebben"). Removing the tree still takes
+                        // its link down.
                         // Not on an approved tree, which is ours by then,
                         // nor on one already folded into ours.
                         if let m = live, m.treeId == nil, m.status != .published {
@@ -1664,8 +1664,21 @@ struct TreeDetail: View {
                                 .accessibilityLabel("Photograph")
                         }
                         if extras.count < Sightings.maxExtras {
-                            Button {
-                                if !CameraPicker.isRefused { extraCamera = true }
+                            // CAMERA OR YOUR PHOTOS, the same two ways as the
+                            // first photograph (Hidde, 2026-10-30: "Nu kan je
+                            // alleen direct een foto maken"). Google Maps' Add
+                            // photo and iOS's own photo fields offer take and
+                            // choose from one control; a menu on the tile, as
+                            // the ⋯ menu on this page already is.
+                            Menu {
+                                Button {
+                                    if CameraPicker.isRefused { photoRefused = .camera } else { extraCamera = true }
+                                } label: {
+                                    Label("Take a photograph", systemImage: "camera")
+                                }
+                                Button { extraLibrary = true } label: {
+                                    Label("Choose from your photos", systemImage: "photo.on.rectangle")
+                                }
                             } label: {
                                 VStack(spacing: 6) {
                                     Image(systemName: "plus")
@@ -1699,30 +1712,11 @@ struct TreeDetail: View {
                 // and Google Maps both truncate the description and put the
                 // practical rows before the long text. A short story never gets
                 // the button: the cut is by length, not by the view.
-                VStack(alignment: .leading, spacing: 0) {
-                    Text(tree.storyText)
-                        .lineLimit(storyOpen || !storyIsLong ? nil : 6)
-                        .fixedSize(horizontal: false, vertical: true)
-                    if storyIsLong {
-                        Button { withAnimation(.snappy) { storyOpen.toggle() } } label: {
-                            Text(storyOpen ? "Read less" : "Read more")
-                                .fontWeight(.semibold)
-                                .foregroundStyle(Brand.moss)
-                                .padding(.top, 4)
-                                .frame(minHeight: 44, alignment: .topLeading)
-                                .contentShape(.rect)
-                        }
-                        .buttonStyle(.plain)
-                        .padding(.bottom, -18)
-                        .accessibilityIdentifier("read-more")
-                    }
-                }
+                // The App Store's "more" (ExpandableText, 2026-10-30).
+                ExpandableText(text: tree.storyText, lines: 6)
             }
         }
     }
-
-    /// Six lines of story at 17 points on a phone is roughly 420 characters.
-    private var storyIsLong: Bool { tree.story.count > 420 }
 
     /// That the tree was saved, and what happens to it next, at the top of the
     /// page somebody lands on the moment they add one.
