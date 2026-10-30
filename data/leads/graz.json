@@ -41,6 +41,30 @@
    "species": "Norway Spruce (Picea abies)",
    "location_hint": "47.087201,15.461210",
    "why_not_shipped": "2026-10-15 pass: sits beside the already blocked Leechwald-Villa plots at Hilmteichstrasse 104; no measurement, no access evidence. Lead."
+  },
+  {
+   "name": "Schloss Eggenberg park Ginkgo (1830s)",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "location_hint": "Schlosspark Eggenberg, Graz (near the already-live grz_009/grz_010 at Eggenberger Allee 90); no coordinate in any source",
+   "why_not_shipped": "2026-10-30 pass: Universalmuseum Joanneum (park owner) says its Eggenberg ginkgo dates from the 1830s (museum-joanneum.at .../baeume-in-eggenberg/ginkgo), plus per-species pages for Platane, Tulpenbaum, Trompetenbaum, Gleditschie, Paulownie, Schnurbaum, Taschentuchbaum, Amur-Korkbaum, Manna-Esche, Blasenesche, Stieleiche, Winterlinde, Eibe, Hainbuche. None gives a coordinate or a position in the 18 ha park, and no register row exists for them, so there is no way to place the trunk and no photo: no photo or exact pin in reach. A joanneum park brochure (18 species, mapped) exists; the brochure map would settle the pin. Park access (free or ticketed) not seen."
+  },
+  {
+   "name": "Stadtpark Graz: Franckeiche, Fosslbuche, giant sequoia, plane 7.74 m",
+   "species": "Pedunculate Oak (Quercus robur), Beech, Giant Sequoia, London Plane",
+   "location_hint": "Stadtpark Graz (47.073,15.445 area). Franckeiche = oak planted in honour of founder mayor Moritz Ritter von Franck (grazjournal.at). Fosslbuche and Franckeiche passed pull tests in 2011 despite fungus (a 2011-era article, not fetched). monumentaltrees.com lists a plane at 7.74 m girth, black poplar 7.72 m, oak 5.35 m in the park (cross-check only, not a source).",
+   "why_not_shipped": "2026-10-30 pass: no source seen gives any of these a location inside a 22 ha park, and the city's Baumkataster viewer (geodaten.graz.at/WebOffice) is a JavaScript map client (project=baumkataster) that was not queried. meinbezirk.at reported a felled fungus-infected Stadtpark tree (article a4463127, date 1 Feb, year not read) so aliveness of the named oaks/beeches needs a check. Needs Baumkataster coordinates."
+  },
+  {
+   "name": "Botanischer Garten Graz Dawn Redwood (1952)",
+   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+   "location_hint": "Botanischer Garten der Universitaet Graz, near the Glasbruecke, per the garden's own guide PDF (researchgate copy)",
+   "why_not_shipped": "2026-10-30 pass: only a search summary of the guide seen (seedling received 1952, 'one of the oldest outside China'); the PDF was not fetched, the garden's opening hours and entry not checked, no coordinate. Lead for a pass with the guide PDF in hand."
+  },
+  {
+   "name": "Uhrturm (Schlossberg) female Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "location_hint": "Beside the Uhrturm on the Schlossberg, Graz; no coordinate yet",
+   "why_not_shipped": "2026-10-30 pass: only a visitor story on story.one mentions a fruiting female ginkgo at the Uhrturm; no age, girth or official source. Lead."
   }
  ],
  "blocked": [

@@ -4,6 +4,22 @@
   "2026-10-30": [
    {
     "date": "2026-10-30",
+    "target": "san-francisco",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "DataSF landmark rows all private yard or already led; no tree-level source outside the register; wall 48h"
+   },
+   {
+    "date": "2026-10-30",
+    "target": "graz",
+    "kind": "verify",
+    "tokens": 190000,
+    "trees": 0,
+    "note": "Naturdenkmal register exhausted; grz_017 Stadtpark wingnut verified but approximate pin in a big park, not findable; 4 leads; wall 48h. Unblock: geodaten.graz.at Baumkataster"
+   },
+   {
+    "date": "2026-10-30",
     "target": "lagos+faro+setubal",
     "kind": "write",
     "tokens": 90000,

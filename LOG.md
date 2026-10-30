@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-30, night run (window from 07:58 UTC): no tree shipped, two US/Austria verify passes came back empty
+
+Nothing waiting from readers. health.py: the skipped deploys are CI pushes (normal); the iOS red run is the one already logged below. Shelf: the writable trees (ftw_018, txf_004, tav_001, inn_007) are held for access or pin reasons, so no write pass. Verify on San Francisco: the DataSF landmark rows are all private yards or already led, 0 new, wall 48h. Verify on Graz: Naturdenkmal register exhausted, one Stadtpark wingnut (grz_017) with an approximate pin in a big park, not findable; 4 leads; wall 48h. Unblock for Graz: the Baumkataster viewer at geodaten.graz.at. Deploy to be dispatched at window end.
+
 ## 2026-10-30, night run (window from 01:22 UTC): no tree shipped, Algarve READY leads were not READY
 
 Nothing waiting from readers (0 photographs, 0 notes). Rung 2: health.py names the iOS scheduled run (2026-10-29 21:31, 235 passed, 1 failed): StressWalk testNinetyRandomActionsDoNotKillTheApp stopped at action 62 and 76 (after 'Change your photo and name' and after off screen), and SignedOutWalk testDiscoverWantToVisitAsks found no control discover-want-signin. Needs a Mac session; this runner cannot reproduce it. The live site is behind main; deploy dispatched at window end. Write pass on the 16 Portugal READY leads (lagos, faro, setubal) wrote 0 trees: all register-only or access-blocked, none findable. They are now marked held/blocked/published so leads.py stops offering them (Monchique oak at Pomar Velho has an iNaturalist lead for a verify pass). Enrichment pass (porto+coimbra+madeira+san-francisco+tangier) improved 0 trees in effect: Madeira dragon tree pin candidate lacked a source URL and was refused; the other 10 gaps were recorded as dead ends for 90 days (Porto cedar and tulip tree access were not actually investigated).
