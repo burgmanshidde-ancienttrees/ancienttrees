@@ -3697,6 +3697,18 @@ def _hl_supabase(today):
         if w is not None and not is_ours(r.get("user_id")):
             wk[w] += 1
     out["contributions"] = wk
+    # Shares (Hidde, 2026-10-30: "digest mag"): a tap on a share control on
+    # the website, and a visit arriving on a shared link from either surface
+    # (Base.astro at.shareUrl). The app's taps come from PostHog in _hl_app.
+    for name, slot in (("share_tapped", "shares_web"), ("share_arrived", "share_visits")):
+        rows, _ = _supa("/rest/v1/events?select=created_at&name=eq.%s"
+                        "&created_at=gte.%sT00:00:00" % (name, since), key)
+        wk = [0, 0]
+        for r in rows or []:
+            w = _week_of(r.get("created_at"), today)
+            if w is not None:
+                wk[w] += 1
+        out[slot] = wk
     return out
 
 
@@ -3740,9 +3752,25 @@ def _hl_app(_today):
             """ % (first, a, b), key, project)
         return tuple(int(v or 0) for v in r[0]) if r else (0, 0)
 
+    def shared(a, b):
+        r = _posthog("""
+            SELECT count() FROM events
+            WHERE event = 'share_tapped'
+                  AND timestamp >= now() - INTERVAL %d DAY
+                  AND timestamp < now() - INTERVAL %d DAY %s
+            """ % (a, b, and_ours), key, project)
+        return int(r[0][0] or 0) if r else 0
+
     nb, pb = back(38, 31), back(45, 38)
     return {"collected": [collected(8, 1), collected(15, 8)],
-            "back30": [(nb[1], nb[0]), (pb[1], pb[0])]}
+            "back30": [(nb[1], nb[0]), (pb[1], pb[0])],
+            "shares_app": [shared(8, 1), shared(15, 8)]}
+
+
+def _sum_weeks(*pairs):
+    """Two surfaces' [this week, week before] added; None when neither came."""
+    got = [p for p in pairs if p]
+    return [sum(p[0] for p in got), sum(p[1] for p in got)] if got else None
 
 
 def headline_section(today):
@@ -3797,6 +3825,8 @@ def headline_section(today):
         ("Trees saved to Want to go", "intent", H.get("saves")),
         ("Trees collected", "goal 1: stood at a tree", H.get("collected")),
         ("Readers' contributions", "data: trees, photos, corrections, votes", H.get("contributions")),
+        ("Shares (app and web)", "word of mouth, since 10-30", _sum_weeks(H.get("shares_app"), H.get("shares_web"))),
+        ("Visits from a shared link", "what sharing brings", H.get("share_visits")),
     ]
     out = ["**The numbers that matter** (this week against the week before; strangers only)", "",
            "| Number | Why | This week | Week before |", "|---|---|---:|---:|"]
