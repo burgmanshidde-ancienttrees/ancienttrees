@@ -4,9 +4,9 @@
   "face_tree_id": "par_010",
   "status": "needs_curation",
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. They include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
-  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 31 more within a metro ride.",
+  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 32 more within a metro ride.",
   "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
-  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 31 more remarkable trees nearby.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 32 more remarkable trees nearby.",
   "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
   "faq": [
     {
@@ -1437,6 +1437,49 @@
         "url": null
       },
       "age_basis": "source"
+    },
+    {
+      "id": "par_035",
+      "name": "The Plane of Boulevard de Charonne",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 145 years (planted 1880)",
+      "age_min": 145,
+      "age_max": 146,
+      "age_basis": "source",
+      "girth_cm": 425,
+      "height_m": 23.0,
+      "location": {
+        "address": "Boulevard de Charonne at Rue de Bagnolet, 75020 Paris",
+        "latitude": 48.85647419983058,
+        "longitude": 2.394618479034989,
+        "neighbourhood": "Boulevard de Charonne, 20th arrondissement"
+      },
+      "story": "A reader on r/paris sent us here in one line: an enormous plane where Boulevard de Charonne meets Rue de Bagnolet, impressive, and at least a century old. The city agrees and puts a date on it. Its own fact sheet gives a planting year of 1880, which makes the tree about 145 years old, and its register of remarkable trees measures the trunk at 425 centimetres round and 23 metres tall. The printed sheet says 407; both are the city's figures, and either one makes this a very big street tree.\n\nParis lists it as remarkable for its size and for the mark it leaves on the street. When the city's boulevards were rebuilt in the nineteenth century, plane and horse chestnut were the two trees chosen to line them, and the sheet calls this one a living witness of that work. Its date puts it a decade after the Second Empire that began the rebuilding had fallen.\n\nIt is a street tree, with no gate and no opening hours, in the 20th arrondissement by the Alexandre Dumas metro. Nothing marks it out except the size of the trunk, so the way to find it is the corner itself. We have no photograph of it yet; if you pass, one taken in daylight that shows the whole tree would help the next person find it.",
+      "verified_sources": [
+        "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 223748: Platanus x hispanica, girth 425cm, height 23m, Boulevard de Charonne)",
+        "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/223748.pdf (city fact sheet: height 23 m, circumference 407 cm, planted 1880)"
+      ],
+      "access": "Free, a street tree on the public pavement, no gate or opening hours.",
+      "transport": "Alexandre Dumas (Metro 2), at the junction of Boulevard de Charonne and Rue de Bagnolet.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by its corner: the plane on Boulevard de Charonne at Rue de Bagnolet, by the Alexandre Dumas metro, its trunk about four metres round.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "Ville de Paris register of remarkable trees, no. 223748 (the city's own coordinate for this trunk)",
+      "found_by_reader": {
+        "tip": "r/paris, 2026-10-30",
+        "thread": "https://www.reddit.com/r/paris/comments/1xif691/"
+      },
+      "verify_notes": "Reader tip on r/paris, 2026-10-30: an enormous plane at Boulevard de Charonne x Rue de Bagnolet, no photo, impressive, at least a century old. Register: Arbres remarquables de Paris no. 223748, Platanus x hispanica, 425 cm, 23 m, pin 48.85647 2.39462, which is that junction. City fact sheet 223748.pdf: 23 m, 407 cm, planted 1880, classed for its size and mark on the landscape, called a witness of the Haussmann boulevard planting. The two girth figures are both stated. The reader's sighting is the life check (the register has no vitality field). Fact sheet photographs are the city's, copyrighted, not used. Ships under the reader-tip rule (found_by_reader.tip).",
+      "official_register": {
+        "name": "Arbres remarquables de Paris (Ville de Paris), no. 223748",
+        "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/223748.pdf"
+      }
     }
   ]
 }
