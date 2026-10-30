@@ -1990,17 +1990,23 @@ def ambassador_requests_section(today):
     people_ = collections.OrderedDict()
     for r in open_:
         people_.setdefault(people.ref(r["user_id"]) if r.get("user_id") else r["id"], []).append(r)
-    out = ["**Ambassador requests, open** (%d %s, %d %s; each stays here until the badge is granted "
-           "with `python3 scripts/ambassador.py --grant`)" % (
+    # A person whose mail has gone leaves the block: the next move is their
+    # answer, which reaches Hidde in his inbox, not here (Hidde, 2026-10-30,
+    # on Sintra, Porto and New York, all mailed: "so they can go out of daily
+    # digest"). The block keeps what still needs a mail or his hand.
+    for k in [k for k, rs in people_.items() if any(mailed.get(r["id"]) for r in rs)]:
+        del people_[k]
+    open_ = [r for rs in people_.values() for r in rs]
+    if not open_:
+        return ""
+    out = ["**Ambassador requests, open** (%d %s, %d %s; each stays here until our mail with the "
+           "questions has gone, or the badge is granted with `python3 scripts/ambassador.py --grant`)" % (
                len(people_), "person" if len(people_) == 1 else "people",
                len(open_), "place" if len(open_) == 1 else "places"), "",
            "| Asked | Places | From | Our mail with the questions | Waiting on |", "|---|---|---|---|---|"]
     for rs in people_.values():
-        sent = sorted(mailed[r["id"]] for r in rs if mailed.get(r["id"]))
         froms = sorted({"the app" if r.get("page") == "app" else (r.get("page") or "web") for r in rs})
-        if sent:
-            mail, wait = "sent %s" % sent[0], "their answer, then your yes"
-        elif all(r["id"] in held for r in rs):
+        if all(r["id"] in held for r in rs):
             mail, wait = "held", "a mail by hand"
         else:
             mail, wait = "not yet (next knock)", "the mail"
