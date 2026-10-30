@@ -220,6 +220,13 @@ CHECKS = [
         r"\bkurze (?:Nachfrage|Erinnerung|Notiz)\b", r"\bpetit (?:rappel|mot)\b",
         r"\bbreve (?:nota|seguimiento|promemoria)\b", r"\buma nota rápida\b",
     ]),
+    # Hidde, 2026-10-30: "you can collect stop saying tick off". Collect is
+    # the product's own verb (find, walk, collect, season); a paraphrase makes
+    # the app sound like a checklist.
+    ("SAY COLLECT, NOT TICK OFF", [
+        r"\btick(?:s|ed|ing)? (?:them |it )?off\b", r"\bcheck(?:s|ed|ing)? (?:them |it )?off\b",
+        r"\bafvinken\b", r"\bafgevinkt\b", r"\babhaken\b", r"\babgehakt\b",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",
