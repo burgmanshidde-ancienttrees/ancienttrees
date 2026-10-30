@@ -4,9 +4,9 @@
   "face_tree_id": "par_010",
   "status": "needs_curation",
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. They include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
-  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 32 more within a metro ride.",
+  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 34 more within a metro ride.",
   "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
-  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 32 more remarkable trees nearby.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 34 more remarkable trees nearby.",
   "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
   "faq": [
     {
@@ -1480,6 +1480,89 @@
         "name": "Arbres remarquables de Paris (Ville de Paris), no. 223748",
         "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/223748.pdf"
       }
+    },
+    {
+      "id": "par_036",
+      "name": "The Giant Sequoia of the Pré Catelan",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 154 years (planted 1872)",
+      "age_min": 154,
+      "age_max": 155,
+      "age_basis": "source",
+      "girth_cm": 645,
+      "height_m": 36.0,
+      "location": {
+        "address": "Jardin du Pré Catelan, Route de Suresnes, Bois de Boulogne, 75016 Paris",
+        "latitude": 48.864817944958034,
+        "longitude": 2.2526762439998396,
+        "neighbourhood": "Bois de Boulogne, 16th arrondissement"
+      },
+      "story": "The city planted this tree in 1872, when giant sequoias were still a novelty in Europe, and it has had a century and a half to grow; of the trees the city lists in this garden, it is the tallest. Paris lists it among its remarkable trees for its size and the mark it leaves on the landscape: its register gives a trunk 645 centimetres round and a height of 36 metres, its printed fact sheet 634 and 32. A reader on r/paris who pointed us to it remembered the year as 1876. The city's own figure is 1872, and that is the one we give.\n\nThe species comes from the western slopes of the Sierra Nevada in California, where it is a tree of fire. Its bark, as the city's sheet puts it, can grow tens of centimetres thick and does not burn, shielding the living wood inside, and its cones need heat to release their seed. In a Paris garden it gets neither the fire nor the company, and grows anyway.\n\nThe Pré Catelan is a garden inside the Bois de Boulogne, with lawns, old trees and a Shakespeare garden, and entry is free. Twenty-four metres from the sequoia the register also lists a persimmon planted in 1897. The same reader mentioned a copper beech of over two hundred years in the garden; if you know which one, tell us.",
+      "verified_sources": [
+        "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arbresremarquablesparis (register_id 2002394: Sequoiadendron giganteum, girth 645cm, height 36m, planted 1872, Jardin du Pré Catelan)",
+        "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002394.pdf (city fact sheet: height 32 m, circumference 634 cm, planted 1872)",
+        "https://www.paris.fr/evenements/decouverte-des-arbres-du-jardin-du-pre-catelan-49778 (city guided walk of the garden's trees: an immense sequoia planted in 1872)"
+      ],
+      "access": "Free. The Jardin du Pré Catelan is a public garden in the Bois de Boulogne; paris.fr gives summer hours of 9:30 to 20:00, shorter in winter.",
+      "transport": "Bus 244 to Pré Catelan, or about 25 minutes on foot from Porte Dauphine (Metro 2) through the Bois de Boulogne (not verified).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it as a narrow dark spire with thick, soft, rust-red bark, standing over the lawns.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "Ville de Paris register of remarkable trees, no. 2002394 (the city's own coordinate for this trunk)",
+      "found_by_reader": {
+        "tip": "r/paris, 2026-10-30",
+        "thread": "https://www.reddit.com/r/paris/comments/1xif691/"
+      },
+      "verify_notes": "Reader tip on r/paris, 2026-10-30: a sequoia planted in 1876 and a copper beech of over 200 years in the Pré Catelan. Register no. 2002394: Sequoiadendron giganteum, 645 cm, 36 m, planted 1872, pin in the Jardin du Pré Catelan. City fact sheet 2002394.pdf: 32 m, 634 cm, 1872 (both figures on the page). paris.fr guided-walk page: un immense séquoia planté en 1872. Reader's 1876 stated and set aside for the city's date. Copper beech not in the register under the garden; stays a lead. Access free per paris.fr and Paris je t'aime; winter hours not read. Fact sheet photographs are the city's, copyrighted, not used.",
+      "official_register": {
+        "name": "Arbres remarquables de Paris (Ville de Paris), no. 2002394",
+        "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/2002394.pdf"
+      }
+    },
+    {
+      "id": "par_037",
+      "name": "Vaillant's Pistachio",
+      "species": "Pistachio (Pistacia vera)",
+      "age_estimate": "about 320 years (planted 1702, or sown 1704)",
+      "age_min": 322,
+      "age_max": 324,
+      "age_basis": "source",
+      "location": {
+        "address": "Jardin alpin, Jardin des Plantes, 57 Rue Cuvier, 75005 Paris",
+        "latitude": 48.844167,
+        "longitude": 2.358917,
+        "neighbourhood": "Jardin des Plantes, 5th arrondissement"
+      },
+      "story": "This pistachio helped prove that plants have sexes. In the early 1700s Sébastien Vaillant, a botanist at the royal garden that became the Jardin des Plantes, had a pistachio that flowered every year and never set fruit. The story told about it is that he took pollen from this one and shook it over a second pistachio, which then fruited, and in 1717 he set out in a public lecture that flowers have male and female parts. The tree he worked with is still alive, in a corner of the Jardin alpin.\n\nIts date depends on who you read. The description on its best-known photograph says it was planted in 1702; the Muséum's own head of botanical gardens has dated its sowing to 1704. Either way it is about 320 years old, and the oldest pistachio we know of in Paris.\n\nA reader on r/paris sent us here calling it a living witness of the history of science, which is exactly what it is. It does not look like much at first: a tree of modest size, with leathery leaves in threes and fives. The Jardin alpin is the sunken rock garden of the Jardin des Plantes, free to enter; the pin is where a photographer stood beside the tree, so look for the pistachio leaves there.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/S%C3%A9bastien_Vaillant",
+        "https://www.pariszigzag.fr/insolite/lieux-insolites/jardin-alpin-jardin-plantes-paris/ (pistachier vrai of about 300 years in the Jardin alpin, entry free)",
+        "https://commons.wikimedia.org/wiki/File:Pistacia_vera_L.1702.jpg (description: historical tree planted in the Alpine garden in 1702, used by Vaillant to demonstrate plant sexuality; geotag 48.844167, 2.358917)",
+        "https://fr.gaultmillau.com/fr/news/les-mille-et-une-facettes-de-la-pistache-de-ses-bienfaits-a-la-gourmandise (the pollen experiment)"
+      ],
+      "access": "Free. The Jardin alpin is the sunken rock garden inside the Jardin des Plantes and keeps the garden's hours (until 20:00 in summer); it can close in winter, so check the Muséum's site before a special trip.",
+      "transport": "Gare d'Austerlitz (Metro 5 and 10, RER C) or Jussieu (Metro 7 and 10), a few minutes on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it by its leaves, leathery and grey-green in groups of three to five leaflets, on a tree of modest size in the Jardin alpin, at the pin.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "GPS geotag of Jebulon's photograph of this tree, 2010-10-09 (Wikimedia Commons, File:Pistacia vera L.1702.jpg)",
+      "found_by_reader": {
+        "tip": "r/paris, 2026-10-30",
+        "thread": "https://www.reddit.com/r/paris/comments/1xif691/"
+      },
+      "verify_notes": "Reader tip on r/paris, 2026-10-30: le Pistachier de Vaillant, au Jardin des Plantes, a living witness of the history of science. Not in the city register (the garden is the Muséum's). Sources: Wikipedia (Vaillant, plant sexuality, 1717 lecture), pariszigzag (pistachier vrai of about 300 years in the Jardin alpin, free), Commons description (planted 1702, used by Vaillant 1716) with a GPS geotag that confirms the pin, Gault&Millau (pollen shaken over a second pistachio which then fruited). A search summary attributes a 1704 sowing date to Sophie Kling of the Muséum; not read at source, stated as a second date. The Commons photo is a leaf close-up (public domain), fails the Cadiz standard as lead, not used. 'oldest pistachio we know of in Paris' is our own belief, no source claims it. Hours in winter not confirmed."
     }
   ]
 }
