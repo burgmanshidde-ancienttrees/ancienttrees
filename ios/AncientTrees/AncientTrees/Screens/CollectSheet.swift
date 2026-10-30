@@ -1389,20 +1389,21 @@ struct CollectSheet: View {
             // No "I am not sure it was this one" (Hidde, 2026-10-14): it was
             // the escape from a silent match (Nara), and since the same day you
             // always pick the tree yourself a tap before this sheet.
-            // SHARE THIS TREE, the grey button above Done (Hidde, 2026-10-30,
+            payoffButton(t)
+            .padding(.top, 22)
+            // SHARE THIS TREE, the grey button under Done (Hidde, 2026-10-30,
             // on the design page: "de grote knop met share this tree wel ok").
-            // AllTrails offers a share link the moment a walk is finished; the
-            // system sheet carries the tree's page.
+            // Under it, not between the note field and Add note, which read as
+            // sharing the note (CONVENTIONS.md "Where the payoff share sits":
+            // AllTrails and Strava share after saving, never inside the form).
             if let url = URL(string: "https://ancienttrees.app" + t.url) {
                 ShareLink(item: url, subject: Text(t.name), message: Text("\(t.name), \(t.city).")) {
                     Label("Share this tree", systemImage: "square.and.arrow.up")
                 }
                 .buttonStyle(SheetButtonStyle(kind: .secondary))
                 .accessibilityIdentifier("collect-share")
-                .padding(.top, 22)
+                .padding(.top, 12)
             }
-            payoffButton(t)
-            .padding(.top, 12)
             // No footnote (Hidde, 2026-10-14: "it is in your trees now with
             // photograph clutters, less is more"): the title already says it.
             // What we may do with a photograph lives in the terms (2026-10-12).
