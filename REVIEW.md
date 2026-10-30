@@ -23,6 +23,19 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-30
+
+Web half: the last 24 hours were Portugal places (Monchique, Vale do Pereiro, Sao Bras de Alportel, Madeira, Porto, Coimbra), Las Vegas UNLV photographs, three photo-less trees live, the pace and photo-gate changes, and the flag at sign-in. No em dashes in the built pages sampled (monchique, vale-do-pereiro, sao-bras-de-alportel, las-vegas, canberra); the three new Portugal place descriptions read true and state a source for the age. Findings:
+
+- WARN (eleventh review to see it) meta description prints a planting or event year as an age: `grep` of site/dist finds 94 pages with `content="A 17xx-20xx-year-old ..."` (e.g. /riverside/roosevelt-palm). Hard rule 2, Verify (a derived age states its basis). `grep -c "year-old" scripts/qa.py` is still 0, so nothing refuses it and prose has not held for eleven days. Build the qa.py check on built HTML first (a year 1700 to 2025 directly before "-year-old"), then fix the meta template.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". Made false by CLAUDE.md "Good reader input IS the source" (2026-10-12) and the 2026-10-21 Tangier ruling. Fifth review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Fix the translations too.
+
+App half (iPhone SE: directions, early-adopter, early-adopter-sheet, explore, feedback, map-full):
+
+- NOTE APP map-full.png: the floating "Map" pill sits over the second card in the list and cuts through the "Canadian Poplar" title and its subtitle on the photo-less card, so a person cannot read what the card says. A session, not a night run.
+- NOTE APP explore.png: "767 trees at their best this month" carries a "13 within 20 km of you" count while the card's tag says "Baarn"; fine if the location is Baarn, but the Discover tab title and the tab label "My trees" still differ from the "Your trees" sheet noted on 10-29 (unchanged).
+- directions, early-adopter, early-adopter-sheet, feedback: read consistently, nothing contradicted.
+
 ## 2026-10-29
 
 Web half: the last 24 hours changed no site pages beyond the profile bar (face opens the profile), find-people on the web and outreach/mail-voice files. No em dashes in built English HTML. Findings:
