@@ -209,6 +209,17 @@ CHECKS = [
         r"[Cc]omeçou em Lisboa", r"[Ee]mpezó en Lisboa", r"commencé à Lisbonne",
         r"[Èè] (?:iniziato|cominciato) a Lisbona", r"kept stopping at the old",
     ]),
+    # Hidde, 2026-10-30, on "A short follow-up to my mail about the trees of
+    # Budapest": "ik haak al af als mensen beginnen met a short follow up".
+    # A mail that announces itself as a reminder tells the reader it is a
+    # chaser before it says anything; open on the thing itself.
+    ("FOLLOW-UP OPENER", [
+        r"\b(?:a |just a )?(?:short|quick|brief|small) (?:follow[- ]?up|note|reminder)\b",
+        r"\bjust (?:following up|checking in|a reminder)\b", r"\bfollowing up on my\b",
+        r"\bkorte? (?:follow[- ]?up|herinnering|vervolg)\b", r"\bkleine herinnering\b",
+        r"\bkurze (?:Nachfrage|Erinnerung|Notiz)\b", r"\bpetit (?:rappel|mot)\b",
+        r"\bbreve (?:nota|seguimiento|promemoria)\b", r"\buma nota rápida\b",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",
