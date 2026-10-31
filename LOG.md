@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31 (07:56 retry): scouted Lagos, nothing live
+
+No claims stood. The 25-a-day pace is full until about 14:00 UTC, so Canberra (5), Fort Worth (3) and the 9 READY leads still wait. Backup lane: scouted Lagos. No municipal list and no classified tree in Lagos concelho; recorded as stalled in data/register-scouting.json with the next step (Faro-district rows of portugal-icnf.json near Lagoa and Silves). Next run after 14:00 UTC: merge canberra can_004 to can_008 and fort-worth ftw_018, ftw_022, ftw_023.
+
 ## 2026-10-31 (07:53 window, short run)
 
 - Rung 1: four reader photographs of Baarn trees (598e6c83, b6455a29, f6164700, 7c4530f7) stay open: files are not on disk here, and a stranger's photo is never judged blind. They need a session with the Supabase key. No tree notes new.
