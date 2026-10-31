@@ -5,6 +5,30 @@
    {
     "date": "2026-10-31",
     "kind": "verify",
+    "target": "braga",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "in-municipality ICNF rows all live or held; Tibaes cerca reopening unconfirmable (hosts 403/refused); 48h wall"
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "verify",
+    "target": "setubal",
+    "tokens": 84000,
+    "trees": 0,
+    "note": "register exhausted; Tree Tag and candidacy trees have no pins, municipal map host fails TLS; 5 leads added; 48h wall"
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "scout",
+    "target": "funchal retry",
+    "tokens": 77000,
+    "trees": 0,
+    "note": "still stalled: IFCN sheets already mined as mdr_001-011; ASMAC092 needs a PDF reader"
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "verify",
     "target": "guimaraes",
     "tokens": 72000,
     "trees": 0,

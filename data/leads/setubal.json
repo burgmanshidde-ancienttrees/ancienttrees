@@ -63,6 +63,46 @@
       "lng": -8.6909,
       "status": "folded",
       "why": "Already published as its own place (data/cities/aguas-de-moura.json); not a Setubal entry. Magnolias on Avenida Luisa Todi: re-searched 2026-10-29, still no register or second source."
+    },
+    {
+      "name": "Sequoia of Parque do Bonfim",
+      "species": "Sequoia sempervirens",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-10-31 pass: municipal candidacy (semmais.pt 2020-06-06) gives 95 years, not classified; Camara Tree Tag release (noticias.mun-setubal.pt, 2025) tags one and calls it unique in the concelho, so it was alive in 2025. No coordinate, no measurement, no tree-level photo (Commons geosearch near 38.529,-8.891 finds only park views); the park is not a small site. No photo or exact pin in reach. A 95-year-old sequoia is not ancient on its own."
+    },
+    {
+      "name": "Magnolia of Avenida Luisa Todi (Tree Tag)",
+      "species": "Magnolia grandiflora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-10-31 pass: second source now exists. Camara Tree Tag release (2025) tags one magnolia on Avenida Luisa Todi (alive 2025); the candidacy gave two magnolias aged 93 and 95. Still no coordinate or measurement, an avenue median is not a small site, no photo. No photo or exact pin in reach."
+    },
+    {
+      "name": "Linden, Norfolk Island hibiscus and Aleppo pine of Jardim do Quebedo",
+      "species": "Tilia sp.; Lagunaria patersonii; Pinus halepensis",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-10-31 pass: candidacy ages 96, 92 and 90 years (semmais.pt 2020); Tree Tag 2025 tags the linden. Garden centred near 38.525,-8.887 (Praca do Quebedo); no per-tree coordinate, size or photo, which trunk is which unknown. Lagunaria already ours as stb_007."
+    },
+    {
+      "name": "Bunya pine and plane of Parque do Bonfim; cedars of Avenida Frei Antonio das Chagas; weeping elm of Praca Teofilo Braga; cork oaks of Avenida Mestre Lima de Freitas and the two cemeteries (one over 200 years)",
+      "species": "various",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-10-31 pass: all named only in the 2020 municipal candidacy of 17 trees (semmais.pt), no coordinates, no measurements, classification status unconfirmed; Tree Tag 2025 tags a cedar at Rua Frei Antonio das Chagas, a cork oak at Avenida Mestre Lima de Freitas, an oak at Parque de Vanicelos and a eucalyptus at Parque Urbano de Albarquel. Needs the municipal map (setubalambiente.pt fails TLS from the runner, curl exit 60) for pins. The cemetery cork oak over 200 years is the one most worth a pin."
+    },
+    {
+      "name": "Register rows 17 to 25 km out (unjudged)",
+      "species": "Phoenix dactylifera 1.1 m (38.65075,-9.00504); Dracaena draco 1.9 m (38.6442,-9.0932); Quercus ilex 7.3 m (38.637,-9.1377); Quercus suber 3.5 m (38.4794,-9.1402)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "2026-10-31 pass: ICNF register rows only, beyond the 30-minute day-trip boundary or in other concelhos (Seixal, Almada, Sesimbra), no web source or life evidence found for the palm; the 7.3 m holm oak (Almada side, 24.5 km) is the one worth a Lisbon-area pass."
     }
   ],
   "open_questions": [
