@@ -194,6 +194,25 @@ struct TreeDetail: View {
                     // card's edge and the card's own inset carries the rest.
                     // The 28 still separates this whole group from the story.
                     VStack(alignment: .leading, spacing: 8) {
+                    // THE PHOTOGRAPH'S FOOTER LINE CARRIES THE ADD (Hidde,
+                    // 2026-10-25: "integrate the button better"). Google Maps'
+                    // tonal pill directly under the photographs, right-aligned
+                    // on the page's edge as the website puts it opposite the
+                    // credit; it steps aside in place while the add page shows.
+                    // On the white page itself since 2026-10-31: it hung from
+                    // the hero, and the page sliding over the photograph
+                    // (2026-10-30) cut off its lower edge. Pulled up into the
+                    // page's own 20 so the name keeps its place.
+                    if showsFooterPill {
+                        HStack(spacing: 0) {
+                            Spacer(minLength: 0)
+                            addPhotoRow
+                                .opacity(shotAt >= tree.shots.count ? 0 : 1)
+                                .allowsHitTesting(shotAt < tree.shots.count)
+                        }
+                        .padding(.top, -12)
+                        .padding(.bottom, -4)
+                    }
                     header
                     // THE CONFIRMATION, WHERE YOU LAND (Hidde, 2026-09-01: "ook
                     // krijg je geen bevestiging dat iets is opgeslagen"). It
@@ -872,22 +891,6 @@ struct TreeDetail: View {
                     // No camera over a photograph that is already there
                     // (Hidde, 2026-10-13: "feels a bit big and takes up prime
                     // space"). It is addPhotoRow, on the footer line below.
-                // THE PHOTOGRAPH'S FOOTER LINE CARRIES THE ADD (Hidde,
-                // 2026-10-25: "integrate the button better"). Google Maps' tonal
-                // pill directly under the photographs; right-aligned on the
-                // page's edge, as the website puts it opposite the credit. It
-                // steps aside in place while the add page shows.
-                HStack(spacing: 0) {
-                    Spacer(minLength: 0)
-                    addPhotoRow
-                        .opacity(shotAt >= tree.shots.count ? 0 : 1)
-                        .allowsHitTesting(shotAt < tree.shots.count)
-                }
-                .padding(.horizontal, 20)
-                .padding(.top, 2)
-                // The page's own 20 above the name would leave 30 between pill
-                // and name; the website has 15 (measured 2026-10-25). Pull in.
-                .padding(.bottom, -11)
 
             }
         } else if mine == nil {
@@ -2371,6 +2374,12 @@ struct TreeDetail: View {
     /// Since 2026-10-25 Google Maps' tonal pill ("+ Add photos & videos",
     /// read that day) on the photograph's footer line, 36 points like the
     /// website's; the 44 point touch target comes from the content shape.
+    /// The footer pill shows under a photograph in the hero, not over the map
+    /// or a photo of your own (the hero's own branches decide which).
+    private var showsFooterPill: Bool {
+        !showingMap && heroOwnShot == nil && tree.photo?.full != nil
+    }
+
     private var addPhotoRow: some View {
         Button { startAddPhoto() } label: {
             Label("Add a photo", systemImage: "camera")
