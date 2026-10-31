@@ -673,8 +673,9 @@
         "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
-      "status": "open",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "lead",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "verify_notes": "2026-10-31 verify pass: not delivered. City layer (OBJECTID 31) puts it at 32.74718,-97.36486, which Nominatim resolves to 3312 West Lancaster Avenue, Will Rogers area; no source says whether the ground is open to walk up to, and no dated observation found (lifecheck NONE). Planting date undocumented: a Fort Worth Star-Telegram caption of 1936-02-28 (UTA mavmatrix 1763) says a $331.60 residue of the 1904 World's Fair Texas fund was to pay for planting two trees in memory of Paul Waples, which may or may not be this tree (the city text says it was dedicated to the Executive Committee). Reason: access unknown and no life check."
     },
     {
       "name": "Steele's Tavern Oak",
