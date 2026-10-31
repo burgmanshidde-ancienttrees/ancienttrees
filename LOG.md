@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-31, night run (06:07 UTC attempt): no tree live, Coimbra scouted
+
+No claims stood to release. The 25-a-day pace is full until about 14:00 UTC, so the 8 written trees (Canberra 5, Fort Worth 3) and the 9 READY leads cannot merge yet; no new pass dispatched behind it. Backup lane: Coimbra. Its draft tree regulation (Edital 198/2023, Anexo VII "lista de arvores de interesse publico") is the lead, but cm-coimbra.pt answers 403 from the runner. Recorded as stalled in data/register-scouting.json with the next step; Aviso 25/2010 (bunya-bunya) was already ours. Next run after 14:00 UTC: merge Canberra and Fort Worth.
+
 ## 2026-10-31, night run (third attempt): Funchal scouted, no tree live
 
 No claims stood. 9 READY leads still wait on the 25-a-day pace (full until about 14:00 UTC), and the four Baarn reader photographs are still not on disk (no key), so no verdict. Backup lane: scouted Funchal. No protected-tree list exists, but IFCN Madeira publishes one fact sheet per remarkable tree or grove (ASMAC76 to 100+, with WGS84 coordinates, access, ownership). Recorded as stalled in data/register-scouting.json with the next step (fetch the sheets, check reuse terms). Next run: that, then merge canberra and fort-worth after 14:00 UTC.

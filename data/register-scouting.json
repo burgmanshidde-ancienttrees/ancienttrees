@@ -1169,6 +1169,12 @@
    "country": "Portugal",
    "status": "stalled",
    "note": "SCOUTED 2026-10-31 (backup lane, one search). No city or regional list of protected trees found. Lead: the IFCN Madeira fact-sheet series 'Arvores e bosques singulares da Madeira e Porto Santo' (ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC<n>.pdf, seen n=76..100): each sheet gives location, WGS84 coordinates, access and ownership, one tree or grove per sheet (ASMAC100 = red beech at Quinta do Imperador, Funchal). Next: fetch the sheets (curl -m 20), check reuse terms on the IFCN site, then record coordinates per sheet. Funchal council manages ~10,000 trees but publishes no notable list found."
+  },
+  {
+   "place": "Coimbra",
+   "country": "Portugal",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-31 (backup lane, one search). The municipality's draft tree regulation, Edital 198/2023 (cm-coimbra.pt/wp-content/uploads/2023/12/Edital_198_VF.pdf), carries an Anexo VII 'Lista de arvores de interesse publico existentes no concelho de Coimbra'; Edital 182/2025 is the newer draft. From the night runner the host answers 403 (CloudFront), so the list was not read. Individual classifications also exist in the Diario da Republica: Aviso 25/2010 (bunya-bunya, Jardim dos Arcos) and Aviso 26/2010 (plane, Rua da Igreja, Lamarosa), both on snit-mais.dgterritorio.gov.pt/SRUP. Aviso 25/2010 (bunya-bunya) read: already in cities/coimbra.json and the ICNF register. Next: a session with a browser reads Anexo VII and the two avisos, checks they are not already in portugal-icnf.json, records locations."
   }
  ],
  "out_of_focus": {
