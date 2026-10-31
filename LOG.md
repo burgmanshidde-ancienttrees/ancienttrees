@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31 (session with Hidde): the second ambassador gets an empty seat
+- **Product:** under a place's ambassador, "Become an ambassador" now has a small dashed circle with a plus in the avatar column (Slack's and Google Docs' "add someone"), replacing the thin rule and bare text of 10-27. Hidde chose it from three plus mockups (B). Web and app; the app looked at in the simulator on Florence; the website is checked by the CI build and then on the live Florence page. Still hidden for the place's own ambassador (10-30).
+- For Hidde: the next app build carries the empty-seat line.
+
 ## 2026-10-31 (session): the profile flag fills on every signed-in visit
 
 What changed for readers: the website now fills the flag after your name on any page you open while signed in, not only at sign-in (signin-js.ts `settleIfSignedIn()`, and after a token refresh). Only an empty flag is written; a chosen flag or "Don't show" stays. Why: 47 of 53 accounts had no flag, because before 10-29 it was written only on /account and a stored session comes back for weeks without signing in again. The two sign-ins since the 10-29 fix (NL, AU) got theirs. Hidde asked about the 10-30 account with no flag: it never confirmed its address, and that address is a throwaway (a random subdomain of a domain registered 2025-12 behind a privacy service, no website), so a bot or a disposable sign-up, not a mail fault of ours; three real email sign-ins on 10-24 and 10-26 confirmed fine.

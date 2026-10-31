@@ -95,6 +95,7 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
   <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
     {taken ? (
       <button type="button" class="ambassador-apply ambassador-act" aria-label={openTitle}>
+        <span class="ambassador-seat" aria-hidden="true"><Fragment set:html={icon("plus", "bold", "ic")} /></span>
         <span class="ambassador-role" data-done={U.ambassadorApplied}>{openTitle}</span>
       </button>
     ) : (
@@ -274,17 +275,20 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
      SECOND IN RANK to the person (Hidde, 2026-10-27: "in hierarchy moet dat
      duidelijk de tweede zijn", "niet groen"). Atlas Obscura's "Make an Edit"
      under its contributors, at the size and grey of the role line. */
-  .ambassador-open-after { margin-top: 12px; border-top: 1px solid var(--cream-dark); }
-  /* Text only, no icon (Hidde, 2026-10-27: "mss gewoon geen icoon"; a pill
-     "makes it more important than Giulia herself"): 12px either side of the
-     rule, the grey line under the name column, nothing extra below. The tap
-     area reaches 44 through ::after without moving the text. */
-  .ambassador-act { display: block; position: relative; width: 100%; min-height: 0;
-    padding: 12px 0 0 42px; border: 0; background: none; font: inherit; text-align: left;
+  .ambassador-open-after { margin-top: 8px; }
+  /* THE EMPTY SEAT (Hidde, 2026-10-31, mockup B): a 22px dashed circle with a
+     plus in the avatar column, under the person, as Slack and Google Docs draw
+     "add someone"; smaller than the 32px avatar, so the open seat stays second
+     to the person. No rule: the empty circle says it is the next seat. Grey
+     12px text under the name column, as the role line. */
+  .ambassador-act { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px;
+    padding: 0; border: 0; background: none; font: inherit; text-align: left;
     cursor: pointer; color: inherit; }
-  .ambassador-act .ambassador-role { display: block; line-height: 16px; }
-  .ambassador-act::after { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: -16px; }
-  @media (hover: hover) { .ambassador-act:not(:disabled):hover .ambassador-role { text-decoration: underline; } }
+  .ambassador-act .ambassador-role { line-height: 16px; }
+  .ambassador-seat { flex: none; width: 32px; display: grid; place-items: center; }
+  .ambassador-seat::before { content: ""; grid-area: 1 / 1; width: 22px; height: 22px; border-radius: 50%;
+    border: 1.5px dashed var(--ink-mid); box-sizing: border-box; opacity: .8; }
+  .ambassador-seat :global(.ic) { grid-area: 1 / 1; width: 11px; height: 11px; fill: var(--ink-mid); }  @media (hover: hover) { .ambassador-act:not(:disabled):hover .ambassador-role { text-decoration: underline; } }
   .ambassador-act:disabled { cursor: default; }
   .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
   .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }

@@ -3327,6 +3327,14 @@ of the rule.
 **Chosen: text only.** Hidde: the pill "makes it more important than Giulia
 herself". So a thin rule, then "Become an ambassador" in the 12px grey of the
 role line, under the name column, even space either side of the rule, no icon.
+**Changed 2026-10-31: the empty seat.** Hidde asked for the plus sign he
+remembered; three mockups (a plus before the text as Google Maps' "+ Add
+photos", an empty dashed seat, a plus beside her avatar as GitHub's stack) and
+he chose the seat. Slack and Google Docs draw "add someone" as a dashed circle
+with a plus. Ours: under the person, a 22px dashed circle with a plus in the
+32px avatar column, so the seat stays smaller than the person, then "Become an
+ambassador" in the 12px grey of the role line under the name. No rule: the
+empty circle says it is the next seat. Web and app.
 
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 
