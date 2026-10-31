@@ -216,16 +216,3 @@ App half (map, own-tree, paywall, people, photo-viewer, place-pin; iPhone SE; th
 
 ---
 
-## 2026-10-16
-
-Web half: read the Cardiff Wallenberg tree (species corrected to tree of heaven by the parks officer, 8c0522dfb) and the three new London photographs (Battersea strawberry tree, Carshalton plane, Gunnersbury mulberry) as built in site/dist. No em dashes, the story, recognition line and meta agree with the new species, each photo carries its CC BY-SA credit, and the Cardiff page still says honestly that the pin is approximate. Nothing found.
-
-## 2026-10-16 (app half)
-
-App half (directions, early-adopter sheet, early-adopter profile, discover, feedback sign-in, map-full; iPhone SE). Directions, the early-adopter sheet and profile (tag, flag and "Paris ambassador" read together cleanly) and the feedback sign-in agree with themselves.
-
-- WARN APP: map-full, the expanded sheet opens with a blank band of about 140 px between the handle and the first card, so the first screen of results is mostly empty, and the floating "Map" pill sits on top of the second card's title ("Ca... lar") and hides it. A person would read the gap as content that failed to load. Worth a look at what the pill is for when the sheet is full, since the Map tab already sits in the bar below it.
-- NOTE APP: discover, the hero says "Autumn is here" and "748 trees at their best this month", but the first two cards under "At their best now" are full summer green with no colour. The count is from `best_time` data and may be right (flowers, fruit, bare silhouette all count), but the card photographs do not show it, so the promise reads thinner than the number. A label on each card naming why it is at its best would close the gap.
-
----
-
