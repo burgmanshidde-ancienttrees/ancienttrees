@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-31, night run (01:37 retry): no tree live, nothing could ship
+
+Nothing changed for readers. The eight written trees (Canberra 5, Fort Worth 3) still wait on the 25-a-day pace, which Paris's 21 trees of 10-30 (14:50 CET onward) fill until about 14:00 UTC today. Spokane was claimed for a verify pass, but the brief showed one unmined candidate (under the six-candidate floor), so it was released and is a 48h wall. The four Baarn/Town Hall Plane reader photographs are not on disk here, so no verdict (never judged blind). The fort-worth claim stands (its 3 written trees are unmerged). Next run: merge Canberra and Fort Worth once the pace clears.
+
 ## 2026-10-31, night run (01:22 window): no tree live, seven stories waiting on the pace
 
 Rung 2: the deploy was red because four Baarn sighting photo paths carried a raw account id (qa's reader-trace check); replaced with the person's code, photo sizes measured, pushed. A build could not be dispatched from the runner (`gh workflow run deploy.yml`: HTTP 403), so the live site stays behind main until the next push from a laptop or the schedule. Rung 1: the four Baarn photos still have no verdict (not on disk, never judged blind). Rung 5: a Fort Worth verify pass produced ftw_021 to ftw_023 (ftw_021, the Botanic Garden magnolia, is a different tree from ftw_001 the jujube, 15 m apart, kept); a write pass wrote can_004 to can_008, ftw_022 and ftw_023 but preflight's pace check refused the merge (32 own trees in 24h, cap 25), so they wait in data/research with their stories. Fort Worth's claim stays until they merge. Rung 4: 9 contacts (4 archive, 5 guide, Lisbon, Porto, London) added to the private outreach file and pushed; no mail sent, many drafts still open. For Hidde: nothing new needs you.
