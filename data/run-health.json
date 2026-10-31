@@ -2,68 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-05T11:27:54+00:00",
-   "date": "2026-09-05",
-   "run_id": "33963390413",
-   "minutes": 111.8,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 498,
-   "denials": 68,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(git), Bash(iconv), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(until), Bash(wc), Bash(which)",
-   "ended": "success",
-   "tokens": 13355621,
-   "claims_held": [
-    "hiroshima"
-   ],
-   "commits": 18,
-   "cities_touched": 10,
-   "cities": [
-    {
-     "city": "alicante",
-     "trees": 1
-    },
-    {
-     "city": "brielow",
-     "trees": 1
-    },
-    {
-     "city": "ghisonaccia",
-     "trees": 1
-    },
-    {
-     "city": "lue",
-     "trees": 1
-    },
-    {
-     "city": "nantes",
-     "trees": 1
-    },
-    {
-     "city": "perouges",
-     "trees": 1
-    },
-    {
-     "city": "prety",
-     "trees": 1
-    },
-    {
-     "city": "samoens",
-     "trees": 1
-    },
-    {
-     "city": "wessobrunn",
-     "trees": 1
-    },
-    {
-     "city": "scheessel",
-     "trees": 0
-    }
-   ],
-   "trees": 9,
-   "logged": true
-  },
-  {
    "started": "2026-09-05T14:11:06+00:00",
    "date": "2026-09-05",
    "run_id": "33971009194",
@@ -22672,6 +22610,34 @@
    "commits": 9,
    "cities_touched": 0,
    "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-31T06:03:15+00:00",
+   "date": "2026-10-31",
+   "run_id": "41174965825",
+   "minutes": 4.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 101,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(cat ; import ; ? ; E ...), Bash(rm)",
+   "ended": "success",
+   "tokens": 1518119,
+   "claims_held": [],
+   "commits": 5,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "paris",
+     "trees": 0
+    },
+    {
+     "city": "rio-frio",
+     "trees": 0
+    }
+   ],
    "trees": 0,
    "logged": true
   }
