@@ -5,6 +5,14 @@
    {
     "date": "2026-10-31",
     "kind": "verify",
+    "target": "sintra",
+    "tokens": 64000,
+    "trees": 0,
+    "note": "19:24 window: all 23 unmined ICNF rows non-Sintra or already blocked; wall. Also merged canberra can_004-008 and fort-worth ftw_018/022/023 (session work, tokens 0)"
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "verify",
     "target": "fort-worth",
     "tokens": 109000,
     "trees": 0,

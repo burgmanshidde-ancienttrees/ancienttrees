@@ -137,11 +137,6 @@
       "released_at": "2026-10-28T07:56:55+00:00"
     },
     {
-      "slug": "sintra",
-      "kind": "verify",
-      "released_at": "2026-10-29T13:05:51+00:00"
-    },
-    {
       "slug": "guimaraes",
       "kind": "verify",
       "released_at": "2026-10-29T13:07:21+00:00"
@@ -185,6 +180,11 @@
       "slug": "nuremberg",
       "kind": "verify",
       "released_at": "2026-10-31T01:38:43+00:00"
+    },
+    {
+      "slug": "sintra",
+      "kind": "verify",
+      "released_at": "2026-10-31T19:29:29+00:00"
     }
   ]
 }
