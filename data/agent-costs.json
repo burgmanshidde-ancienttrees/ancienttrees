@@ -1,6 +1,32 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-31": [
+   {
+    "date": "2026-10-31",
+    "kind": "verify",
+    "target": "fort-worth",
+    "tokens": 109000,
+    "trees": 0,
+    "note": "ftw_021 to ftw_023 delivered flagged, one lead; cluster was already mostly published"
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "write",
+    "target": "canberra + fort-worth",
+    "tokens": 103000,
+    "trees": 0,
+    "note": "7 stories written (can_004 to can_008, ftw_022, ftw_023), none merged: 32 own trees in 24h against the cap of 25"
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "scout",
+    "target": "archive contacts (Lisbon, Porto, London)",
+    "tokens": 75000,
+    "trees": 0,
+    "note": "9 contacts added to the private outreach file: 4 archive, 5 guide; nothing sent"
+   }
+  ],
   "2026-10-30": [
    {
     "date": "2026-10-30",
