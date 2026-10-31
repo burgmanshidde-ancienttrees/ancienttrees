@@ -30,6 +30,13 @@ Web half: the last 24 hours changed one user-facing file, the flag fill on every
 - WARN (twelfth review to see it) meta description prints a planting or event year as an age: `grep -rlE 'content="A (17|18|19|20)[0-9]{2}-year-old' site/dist` still finds 94 pages (e.g. /riverside/roosevelt-palm, /cork/1870-magnolia-of-fota, /seattle/wedgwood-scarlet-oak). Hard rule 2, Verify (a derived age states its basis). `grep -c "year-old" scripts/qa.py` is still 0, so nothing refuses it. Build the qa.py check on built HTML first, then fix the meta template.
 - WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". Made false by CLAUDE.md "Good reader input IS the source" (2026-10-12) and the 2026-10-21 Tangier ruling. Sixth review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Fix the translations too.
 
+App half (iPhone SE: map-pin, map, own-tree, paywall, people, photo-viewer):
+
+- WARN APP paywall.png: the title "Unlock every walk" and the button "Tell me when this opens" sit beside "Plus is not open yet", so the headline promises an unlock the sheet then says is not there. Say what it is ("Walks are coming to Plus") or drop the verb. CLAUDE.md "promising what is not there"; copy for a session (PRODUCT_COPY.md), and pricing stays unshown on the hard list.
+- NOTE APP own-tree.png: the "Back" chevron and the top-right control are dark green on the green hero illustration and are nearly invisible, so a person sees no way out except the system gesture. A session, not a night run.
+- NOTE APP map-pin.png: the card title is cut mid-name, "Dąb Fabrykant (the Factory Owner's Oak, als...", so the alias is truncated into nonsense; show the first name only or let it wrap to a second line.
+- map, people, photo-viewer: read consistently, nothing contradicted (photo-viewer shows the licence line "Śryż (CC BY-SA 4.0)").
+
 ## 2026-10-30
 
 Web half: the last 24 hours were Portugal places (Monchique, Vale do Pereiro, Sao Bras de Alportel, Madeira, Porto, Coimbra), Las Vegas UNLV photographs, three photo-less trees live, the pace and photo-gate changes, and the flag at sign-in. No em dashes in the built pages sampled (monchique, vale-do-pereiro, sao-bras-de-alportel, las-vegas, canberra); the three new Portugal place descriptions read true and state a source for the age. Findings:
