@@ -402,10 +402,11 @@ export interface ExploreCityRow {
  * register layer fetched separately. Ported from the
  * inline `script` string in build_explore_page(), build_site.py:4641-4805. */
 export function exploreMapScript(features: ExploreTreeFeature[], cities: ExploreCityRow[],
-                                 species: string[] = [], lang = "en"): string {
+                                 species: string[] = [], lang = "en", speciesLatin: string[] = []): string {
   const geojson = JSON.stringify({ type: "FeatureCollection", features });
   const citiesJson = JSON.stringify(cities);
   const speciesJson = JSON.stringify(species);
+  const speciesLatinJson = JSON.stringify(speciesLatin);
   return (
     mapScript(
     `${PILES_JS}${PINS_JS}${mapCardJs(lang)}
@@ -417,6 +418,7 @@ var EMPTY = ${JSON.stringify({ title: ui(lang).emptyPlaceTitle, here: ui(lang).e
   ask: ui(lang).emptyPlaceAsk, add: ui(lang).addTree, nearest: ui(lang).nearestTree,
   ic: icon("tree", "regular"), plus: icon("plus", "bold") })};
 var SPECIES = ${speciesJson};
+var SPECIES_L = ${speciesLatinJson};
 // THE FILTER MODEL AND THE ACCOUNT CHIPS COME BEFORE THE MAP (2026-10-07):
 // MapLibre throws where WebGL is unavailable, and everything below the
 // constructor then never runs. A chip that cannot ask for sign-in because
@@ -656,23 +658,137 @@ map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
 
 // The species chip wears the chosen species, the way the app's does
-// (FilterChipLabel(label: filters.species ?? "Species")). The select is the
-// invisible tap layer over it, so the filled state and the word both belong to
-// the pill around it rather than to the field.
-var spPick = document.getElementById('mf-species');
+// (FilterChipLabel(label: filters.species ?? "Species")), and opens the
+// species sheet: the app's SpeciesPicker, row for row (Hidde, 2026-10-31,
+// "cross platform always"). Species on the map in view first, then by how many
+// we map; typing answers to the name, the Latin, every other name it goes by
+// and one letter off, best match first, the way Kit/SpeciesSearch.swift does.
+// The row says which name answered. Tapping the chosen species again turns it
+// off, as in the app.
 var spWrap = document.getElementById('mf-species-wrap');
 var spLabel = document.getElementById('mf-species-label');
-if (spPick) {
-  var spAny = spLabel ? spLabel.textContent : '';
-  spPick.addEventListener('change', function() {
-    FILTERS.sp = spPick.value === '' ? -1 : parseInt(spPick.value, 10);
-    if (spWrap) spWrap.classList.toggle('is-on', FILTERS.sp >= 0);
-    if (spLabel) {
-      spLabel.textContent = FILTERS.sp < 0 ? spAny
-        : spPick.options[spPick.selectedIndex].textContent;
+var spSheet = document.getElementById('sp-sheet');
+var spQ = document.getElementById('sp-q');
+var spList = document.getElementById('sp-list');
+var spEmpty = document.getElementById('sp-empty');
+var spAnyBtn = document.getElementById('sp-any');
+if (spWrap && spSheet && spQ && spList) {
+  var spAnyText = spLabel ? spLabel.textContent : '';
+  var SP_TICK = ${JSON.stringify(icon("check", "bold"))};
+  var spNames = null, spLoading = false, spOrder = [], spCount = [];
+  for (var si = 0; si < SPECIES.length; si++) spCount.push(0);
+  DATA.features.forEach(function(f) { var s = f.properties.sp; if (s !== undefined) spCount[s]++; });
+  var spPlain = SPECIES_L.map(function(h) { return h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&'); });
+  var spFold = function(s) {
+    s = String(s).toLowerCase();
+    try { s = s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, ''); } catch (e) {}
+    return s.trim();
+  };
+  var spWords = function(f) { return f.split(/[ ('-]+/).filter(Boolean); };
+  var spStarts = function(name, q) {
+    var n = spFold(name);
+    return n.indexOf(q) === 0 || spWords(n).some(function(w) { return w.indexOf(q) === 0; });
+  };
+  var spDist = function(a, b) {
+    if (Math.abs(a.length - b.length) > 1) return 2;
+    var prev = [], cur, i, j;
+    for (j = 0; j <= b.length; j++) prev.push(j);
+    for (i = 1; i <= a.length; i++) {
+      cur = [i];
+      for (j = 1; j <= b.length; j++) {
+        cur.push(Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)));
+      }
+      prev = cur;
     }
+    return prev[b.length];
+  };
+  // Five letters at least: below that one letter off matches half the list.
+  var spNearly = function(name, q) {
+    if (q.length < 5) return false;
+    return spWords(spFold(name)).some(function(w) {
+      for (var len = q.length - 1; len <= q.length + 1; len++) {
+        if (len > 0 && len <= w.length && spDist(q, w.slice(0, len)) <= 1) return true;
+      }
+      return false;
+    });
+  };
+  // [rank, the other name that answered]: 0 name, 1 Latin, 2 another name, 3 nearly.
+  var spHit = function(i, q) {
+    if (!q) return [0, ''];
+    var c = SPECIES[i], l = spPlain[i], other = (spNames && spNames[c]) || [], k;
+    if (spStarts(c, q)) return [0, ''];
+    if (l && spStarts(l, q)) return [1, ''];
+    for (k = 0; k < other.length; k++) if (spStarts(other[k], q)) return [2, other[k]];
+    if (spNearly(c, q) || (l && spNearly(l, q))) return [3, ''];
+    for (k = 0; k < other.length; k++) if (spNearly(other[k], q)) return [2, other[k]];
+    return null;
+  };
+  var spRender = function() {
+    var q = spFold(spQ.value), rows = [];
+    spOrder.forEach(function(i, pos) {
+      var h = spHit(i, q);
+      if (h) rows.push({ i: i, pos: pos, r: h[0], via: h[1] });
+    });
+    rows.sort(function(a, b) { return a.r - b.r || a.pos - b.pos; });
+    if (spAnyBtn) spAnyBtn.hidden = FILTERS.sp < 0;
+    if (spEmpty) spEmpty.hidden = rows.length > 0;
+    spList.innerHTML = rows.map(function(row) {
+      var i = row.i, sub = (row.via ? _esc(row.via) + (SPECIES_L[i] ? ' &middot; ' : '') : '') + SPECIES_L[i];
+      return '<li><button type="button" class="sp-row" data-i="' + i + '">' +
+        '<span class="sp-txt"><span class="sp-n">' + _esc(SPECIES[i]) + '</span>' +
+        (sub ? '<span class="sp-sub">' + sub + '</span>' : '') + '</span>' +
+        (FILTERS.sp === i ? '<span class="sp-tick">' + SP_TICK + '</span>' : '<span class="sp-c">' + spCount[i] + '</span>') +
+        '</button></li>';
+    }).join('');
+  };
+  var spLoad = function() {
+    if (spNames || spLoading) return;
+    spLoading = true;
+    fetch('/api/species.json').then(function(r) { return r.json(); }).then(function(j) {
+      spNames = {};
+      (j.names || []).forEach(function(r) { if (r.m !== false && !r.g) spNames[r.c] = r.a || []; });
+      if (spQ.value) spRender();
+    }).catch(function() { spLoading = false; });
+  };
+  var spChoose = function(i) {
+    FILTERS.sp = i;
+    spWrap.classList.toggle('is-on', i >= 0);
+    if (spLabel) spLabel.textContent = i < 0 ? spAnyText : SPECIES[i];
     applyFilters();
+    spSheet.close();
+  };
+  spWrap.addEventListener('click', function() {
+    // What is around you first, as the app's picker leads with what is on the
+    // map: counted when the sheet opens, against the map as it stands.
+    var near = {};
+    try {
+      var b = map.getBounds();
+      DATA.features.forEach(function(f) {
+        var g = f.geometry.coordinates, s = f.properties.sp;
+        if (s !== undefined && g[0] !== null && b.contains(g)) near[s] = 1;
+      });
+    } catch (e) {}
+    spOrder = SPECIES.map(function(_, i) { return i; }).sort(function(a, b) {
+      return (near[b] ? 1 : 0) - (near[a] ? 1 : 0) || spCount[b] - spCount[a] || a - b;
+    });
+    spQ.value = '';
+    spRender();
+    spLoad();
+    spSheet.showModal();
+    spList.scrollTop = 0;
+    // The keyboard only where there is one to spare: on a phone it would
+    // cover the list before anybody has looked at it (the app's .searchable
+    // does not focus either).
+    if (window.matchMedia('(pointer: fine)').matches) spQ.focus(); else spQ.blur();
   });
+  spQ.addEventListener('input', function() { spLoad(); spRender(); });
+  spList.addEventListener('click', function(e) {
+    var btn = e.target.closest && e.target.closest('.sp-row');
+    if (!btn) return;
+    var i = parseInt(btn.getAttribute('data-i'), 10);
+    spChoose(FILTERS.sp === i ? -1 : i);
+  });
+  if (spAnyBtn) spAnyBtn.addEventListener('click', function() { spChoose(-1); });
 }
 // The account's two lists arrive after this runs, so a chip pressed while they
 // are still in flight repaints when they land.

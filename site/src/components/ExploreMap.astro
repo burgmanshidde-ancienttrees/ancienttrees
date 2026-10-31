@@ -12,7 +12,9 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, slugify, distSpan, type CityEntry } from "../lib/trees";
-import { speciesCommon } from "../lib/species";
+import { speciesCommon, speciesScientific } from "../lib/species";
+import { sciNameHtml } from "../lib/latin";
+import Sheet from "./Sheet.astro";
 import { cityFace, cityFaceSrcset, usablePhoto } from "../lib/images";
 import { mapHead, exploreMapScript, pinPriority, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
 import { savesOf } from "../lib/saves";
@@ -66,6 +68,21 @@ const speciesList = [...speciesCount.entries()]
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
   .map(([name]) => name);
 const speciesIndex = new Map(speciesList.map((s, i) => [s, i]));
+// The Latin under each row of the species sheet, as HTML (latin.ts italics),
+// beside the list rather than in it. Every other name a species goes by is
+// 117 KB, so the sheet fetches it from /api/species.json, the app's own feed,
+// the first time somebody types.
+const speciesLatin = new Map<string, string>();
+for (const entry of allCities) {
+  for (const t of entry.data.trees) {
+    const s = speciesCommon(t), l = speciesScientific(t.species ?? "");
+    if (s && l && !speciesLatin.has(s)) speciesLatin.set(s, l);
+  }
+}
+const speciesLatinHtml = speciesList.map((s) => {
+  const l = speciesLatin.get(s);
+  return l ? sciNameHtml(l) : "";
+});
 
 for (const entry of allCities) {
   const cslug = entry.id;
@@ -201,7 +218,7 @@ const ICON = {
 };
 
 const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
-const mapScript = exploreMapScript(features, cityRows, speciesList, lang);
+const mapScript = exploreMapScript(features, cityRows, speciesList, lang, speciesLatinHtml);
 const scripts = mapScript + searchWidgetJs(lang);
 ---
 <Base title={title} description={description} canonical={canonical} lang={lang} headExtra={mapHead() + hreflangSet("/explore", exploreVariants)} footer={false}>
@@ -251,24 +268,19 @@ const scripts = mapScript + searchWidgetJs(lang);
         <button type="button" class="mf" data-f="mine" data-label={U.mapFilterMine} aria-pressed="false">
           <span class="mf-pill"><Fragment set:html={ICON.seal} />{U.mapFilterMine}</span>
         </button>
-        {/* The species picker stays a native select, which is what 521 options
-            want and what nobody has to be taught. What changed is that it no
-            longer LOOKS like a form field parked in a row of chips: the select
-            is a transparent tap layer over a pill we draw, so the platform
-            keeps the picker and the row keeps one set of clothes. The invisible
-            select stays at 16px, which is what stops Safari zooming the map in
-            on tap and never back out. */}
-        <span class="mf mf-species" id="mf-species-wrap">
+        {/* The species chip opens a list you can type into, the app's
+            SpeciesPicker (Hidde, 2026-10-31: "can we improve this also on app
+            please thing cross platform always"). It was a native select: 521
+            English names to scroll, no typing, so nobody who knows the tree as
+            Zomereik or Quercus robur could find it. The sheet is the one sheet
+            with the Find people sheet's search field and rows. */}
+        <button type="button" class="mf mf-species" id="mf-species-wrap" aria-haspopup="dialog" aria-controls="sp-sheet">
           <span class="mf-pill">
             <Fragment set:html={ICON.leaf} />
             <span class="mf-label" id="mf-species-label">{U.mapFilterSpecies}</span>
             <Fragment set:html={ICON.caret} />
           </span>
-          <select class="mf-select" id="mf-species" aria-label={U.mapFilterSpecies}>
-            <option value="">{U.mapFilterSpecies}</option>
-            {speciesList.map((s, i) => <option value={i}>{s}</option>)}
-          </select>
-        </span>
+        </button>
         {/* Last, on Hidde's word (2026-09-12: "zet free to visit maar als
             laatst"). It leaves the row in the app's own order, Favourites,
             My trees, Species, with ours after it rather than in front of it. */}
@@ -280,5 +292,12 @@ const scripts = mapScript + searchWidgetJs(lang);
       <div id="map" class="map"></div>
     </div>
   </div>
+  <Sheet lang={lang} class="people-sheet sp-sheet" id="sp-sheet" aria-labelledby="sp-h">
+    <h3 class="at-sheet-h" id="sp-h">{U.mapFilterSpecies}</h3>
+    <label class="people-search"><Fragment set:html={icon("magnifying-glass", "bold", "ic")} /><input type="search" id="sp-q" placeholder={U.speciesSearchPrompt} aria-label={U.speciesSearchPrompt} autocomplete="off" /></label>
+    <button type="button" class="sp-any" id="sp-any" hidden>{U.anySpecies}</button>
+    <p class="people-empty" id="sp-empty" hidden>{U.speciesNoMatch}</p>
+    <ul class="sp-list" id="sp-list"></ul>
+  </Sheet>
   <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + scripts + SHEET_JS} />
 </Base>

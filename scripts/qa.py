@@ -1864,6 +1864,18 @@ def check_species_answer_to_every_name():
             text = f.read_text(encoding="utf-8")
             if "filterSpecies(" not in text and "speciesHit(" not in text:
                 out.append("%s searches species without Kit/SpeciesSearch.swift" % name)
+    # The website's map filter is the app's SpeciesPicker too (Hidde, same day:
+    # "can we improve this also on app please thing cross platform always"): a
+    # sheet you type into that reads the same names, never a select of 521
+    # English names.
+    explore = root / "site" / "src" / "components" / "ExploreMap.astro"
+    mapjs = root / "site" / "src" / "lib" / "map.ts"
+    if explore.exists() and mapjs.exists():
+        e, m = explore.read_text(encoding="utf-8"), mapjs.read_text(encoding="utf-8")
+        if 'id="sp-sheet"' not in e or "<select" in e:
+            out.append("ExploreMap.astro: the species filter is not the species sheet")
+        if "/api/species.json" not in m:
+            out.append("map.ts: the species sheet does not read the names from /api/species.json")
     return out
 
 

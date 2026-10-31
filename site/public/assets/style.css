@@ -2759,18 +2759,10 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
   box-shadow: none; }
 .mf.is-on .mf-caret { opacity: 0.8; }
 .mf:focus-visible { outline: none; }
-.mf:focus-visible .mf-pill, .mf-species:focus-within .mf-pill {
+.mf:focus-visible .mf-pill {
   outline: 2px solid var(--moss); outline-offset: 2px; }
-/* The species picker is a native select on purpose: 521 options is exactly
-   what a platform picker is good at, and a hand-rolled listbox over a map is
-   the interaction nobody has been trained on. So the select stays, invisible,
-   filling the chip as its tap layer, and we draw the capsule under it. Being
-   invisible is also what lets it hold the 16px Safari needs (a focused field
-   under 16px zooms the page in and never back out) without the row carrying
-   one word larger than the other three. */
-.mf-species .mf-select { position: absolute; inset: 0; width: 100%; height: 100%;
-  opacity: 0; appearance: none; -webkit-appearance: none; border: 0; padding: 0;
-  margin: 0; background: none; font-family: inherit; font-size: 16px; cursor: pointer; }
+/* The species chip was a native select until 2026-10-31; it now opens the
+   species sheet (.sp-sheet), whose search field holds Safari's 16px. */
 .mf-label { overflow: hidden; text-overflow: ellipsis; max-width: 8.5rem; }
 /* A number only while a filter is on, so it is an answer rather than copy. It
    is not a control, so it is quieter than the chips: no border, no shadow, the
@@ -2845,13 +2837,9 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
   .app-getter-form input,
   .suggest-form input, .suggest-form select, .suggest-form textarea,
   .worthit-detail textarea,
-  /* The map's species picker, added to this floor the hour the row was built
-     (2026-09-12): a chip reads at 13, a FIELD at 13 makes Safari zoom the map
-     in on tap and never back out. Since 2026-09-17 the select is the chip's
-     invisible tap layer rather than the chip itself, so it holds 16 at every
-     width and the price the row used to pay for that (one word larger than the
-     three beside it) is gone. Kept here as the floor it is. */
-  .mf-select,
+  /* A FIELD under 16 makes Safari zoom the page in on tap and never back out.
+     The map's species select stood here too until it became a sheet
+     (2026-10-31). */
   .signin-form input { font-size: 16px; }
 }
 
@@ -3528,6 +3516,26 @@ dialog.people-sheet .at-sheet-h { margin: 0 2.4rem 0.9rem 0; }
 .people-pill { flex: none; height: 34px; min-width: 96px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--moss); background: var(--moss); color: #fff; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
 .people-pill.on { background: transparent; border-color: #D3D1C8; color: var(--ink); }
 .people-pill:disabled { opacity: 0.55; }
+/* THE SPECIES SHEET (ExploreMap.astro, map.ts, 2026-10-31): the app's
+   SpeciesPicker in the Find people sheet's clothes. The same search field,
+   rows 56 tall with the name over the matched name and the Latin, the count
+   right, a tick on the chosen one. A fixed height, so the list scrolls inside
+   and the sheet does not jump under the typing thumb. */
+dialog.sp-sheet[open] { display: flex; flex-direction: column; height: min(38rem, 86vh); }
+dialog.sp-sheet .people-search { flex: none; margin-bottom: 8px; }
+.sp-any { flex: none; display: flex; align-items: center; width: 100%; min-height: 48px; padding: 0; border: 0; background: none;
+  font: inherit; font-size: 15px; font-weight: 600; color: var(--moss); text-align: left; cursor: pointer; }
+.sp-any[hidden] { display: none; }
+.sp-list { flex: 1; min-height: 0; overflow-y: auto; list-style: none; margin: 0 -1.5rem; padding: 0 1.5rem; -webkit-overflow-scrolling: touch; }
+.sp-row { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 56px; padding: 6px 0; border: 0; background: none;
+  font: inherit; color: var(--ink); text-align: left; cursor: pointer; }
+.sp-row:hover .sp-n { text-decoration: underline; }
+.sp-txt { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+.sp-n { font-size: 15px; }
+.sp-sub { font-size: 13px; color: var(--ink-mid); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sp-c { flex: none; font-size: 14px; color: var(--ink-mid); font-variant-numeric: tabular-nums; }
+.sp-tick { flex: none; display: flex; color: var(--moss); }
+.sp-tick svg { width: 18px; height: 18px; }
 /* The counts under your name open the lists; they stay the same small grey
    line, with room for a thumb. */
 .profile-count { padding: 6px 0; margin: -6px 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }

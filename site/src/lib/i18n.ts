@@ -497,6 +497,9 @@ export interface UIStrings {
   wantUndo: string;
   mapFilterMine: string;
   mapFilterSpecies: string;
+  speciesSearchPrompt: string;
+  anySpecies: string;
+  speciesNoMatch: string;
   mapFilterFree: string;
 
   /** One entry in the tightest-walks list: how many trees and how far apart.
@@ -850,6 +853,9 @@ const EN: UIStrings = {
   wantUndo: "Undo",
   mapFilterMine: "Collected",
   mapFilterSpecies: "Species",
+  speciesSearchPrompt: "Which kind of tree?",
+  anySpecies: "Any species",
+  speciesNoMatch: "No species by that name.",
   mapFilterFree: "Free to visit",
   exploreWalkItem: (n, d) => `${n} trees, ${d} apart`,
   homeVerbFind: "Find",
@@ -1037,6 +1043,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     wantUndo: "Deshacer",
     mapFilterMine: "Coleccionados",
     mapFilterSpecies: "Especie",
+    speciesSearchPrompt: "¿Qué árbol es?",
+    anySpecies: "Cualquier especie",
+    speciesNoMatch: "Ninguna especie con ese nombre.",
     mapFilterFree: "Gratis",
     treeLabels: {
       "Youngest tree": "El más joven",
@@ -1369,6 +1378,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     wantUndo: "Annulla",
     mapFilterMine: "Collezionati",
     mapFilterSpecies: "Specie",
+    speciesSearchPrompt: "Che albero è?",
+    anySpecies: "Qualsiasi specie",
+    speciesNoMatch: "Nessuna specie con quel nome.",
     mapFilterFree: "Gratis",
     treeLabels: {
       "Youngest tree": "Il più giovane",
@@ -1701,6 +1713,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     wantUndo: "Ongedaan maken",
     mapFilterMine: "Verzameld",
     mapFilterSpecies: "Soort",
+    speciesSearchPrompt: "Welke boom is het?",
+    anySpecies: "Elke soort",
+    speciesNoMatch: "Geen soort met die naam.",
     mapFilterFree: "Gratis",
     treeLabels: {
       "Youngest tree": "Jongste boom",
@@ -2033,6 +2048,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     wantUndo: "Rückgängig",
     mapFilterMine: "Gesammelt",
     mapFilterSpecies: "Art",
+    speciesSearchPrompt: "Welcher Baum ist es?",
+    anySpecies: "Jede Art",
+    speciesNoMatch: "Keine Art mit diesem Namen.",
     mapFilterFree: "Kostenlos",
     treeLabels: {
       "Youngest tree": "Jüngster Baum",
@@ -2365,6 +2383,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     wantUndo: "Desfazer",
     mapFilterMine: "Colecionadas",
     mapFilterSpecies: "Espécie",
+    speciesSearchPrompt: "Que árvore é?",
+    anySpecies: "Qualquer espécie",
+    speciesNoMatch: "Nenhuma espécie com esse nome.",
     mapFilterFree: "Grátis",
     treeLabels: {
       "Youngest tree": "A mais nova",
@@ -2697,6 +2718,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     wantUndo: "Annuler",
     mapFilterMine: "Collectionnés",
     mapFilterSpecies: "Espèce",
+    speciesSearchPrompt: "Quel arbre est-ce ?",
+    anySpecies: "Toutes les espèces",
+    speciesNoMatch: "Aucune espèce de ce nom.",
     mapFilterFree: "Gratuit",
     treeLabels: {
       "Youngest tree": "Le plus jeune",
@@ -3029,6 +3053,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     wantUndo: "元に戻す",
     mapFilterMine: "集めた木",
     mapFilterSpecies: "樹種",
+    speciesSearchPrompt: "どんな木ですか？",
+    anySpecies: "すべての樹種",
+    speciesNoMatch: "その名前の樹種はありません。",
     mapFilterFree: "無料",
     treeLabels: {
       "Youngest tree": "最も若い木",
