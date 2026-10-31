@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-31, night run (01:39 second retry): no tree live, pace still full
+
+Checked claims (fort-worth and canberra stand, both hold written-but-unmerged trees), READY leads (9, none new: Paris 4, Oxford 2, Madrid 1, two sightings), prepare.py status and preflight (0 problems). The 25-a-day pace is full until about 14:00 UTC (it is 01:39 UTC), so no tree can merge in this window, and the other READY leads were already weighed by earlier runs. The four Baarn reader photographs are still not on disk, so no verdict. Nothing new dispatched: another verify or write pass would only add to the queue behind the pace. Next run after 14:00 UTC: merge canberra can_004 to can_008 and fort-worth ftw_018, ftw_022, ftw_023, then release both claims.
+
 ## 2026-10-31, night run (01:37 retry): no tree live, nothing could ship
 
 Nothing changed for readers. The eight written trees (Canberra 5, Fort Worth 3) still wait on the 25-a-day pace, which Paris's 21 trees of 10-30 (14:50 CET onward) fill until about 14:00 UTC today. Spokane was claimed for a verify pass, but the brief showed one unmined candidate (under the six-candidate floor), so it was released and is a 48h wall. The four Baarn/Town Hall Plane reader photographs are not on disk here, so no verdict (never judged blind). The fort-worth claim stands (its 3 written trees are unmerged). Next run: merge Canberra and Fort Worth once the pace clears.
