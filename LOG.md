@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31 (07:58 retry): scouted Faro, nothing live
+
+No claims stood. Pace full until about 14:00 UTC, so the 9 READY leads wait; no write pass dispatched. Claimed and released bamberg (only 6 open leads, under the six-candidate floor; reverted the wall it would have recorded). Backup lane: scouted Faro. No municipal list; the ICNF register already holds Faro-district rows (Portimao, Monchique, Olhao, Sao Bras). Recorded as stalled with the next step: a verify pass on those rows. Next run after 14:00 UTC: write the READY leads and merge Canberra and Fort Worth.
+
 ## 2026-10-31 (07:56 retry): scouted Lagos, nothing live
 
 No claims stood. The 25-a-day pace is full until about 14:00 UTC, so Canberra (5), Fort Worth (3) and the 9 READY leads still wait. Backup lane: scouted Lagos. No municipal list and no classified tree in Lagos concelho; recorded as stalled in data/register-scouting.json with the next step (Faro-district rows of portugal-icnf.json near Lagoa and Silves). Next run after 14:00 UTC: merge canberra can_004 to can_008 and fort-worth ftw_018, ftw_022, ftw_023.

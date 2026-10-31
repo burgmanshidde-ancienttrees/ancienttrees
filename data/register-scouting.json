@@ -1181,6 +1181,12 @@
    "country": "Portugal",
    "status": "stalled",
    "note": "SCOUTED 2026-10-31 (backup lane, one search). No Lagos municipal list of notable trees found and no classified (interesse publico) tree named in Lagos concelho. The national ICNF Registo Nacional do Arvoredo de Interesse Publico is the only register; Algarve entries seen elsewhere: Oliveira de Pedras d'el Rei (Tavira, already ours), Bemparece olives (Lagoa, ~1000 yr), Algoz school olive (Silves, ~1500 yr). Next: check whether portugal-icnf.json holds Faro-district rows near Lagos, Lagoa and Silves (day-trip range); no from-zero city research."
+  },
+  {
+   "place": "Faro",
+   "country": "Portugal",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-31 (backup lane). No Faro municipal list. The national ICNF register is already imported (data/registers/portugal-icnf.json) and holds Faro-district rows (Portimao Alvor pinheiro-manso, Monchique carvalho and platano and araucaria, Olhao Quinta da Parra alfarrobeira, Sao Bras azinheira), all approximate coordinates. Next: a verify pass on those district rows, one source each, for an Algarve cluster; no from-zero city research."
   }
  ],
  "out_of_focus": {
