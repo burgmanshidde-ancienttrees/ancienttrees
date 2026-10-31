@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31 (session with Hidde): the map's species filter on the website is the app's picker
+- **Product:** the Species chip on /explore no longer opens a dropdown of 521 English names. It opens a sheet you type into, the same as the app's map filter: species in view first, then by count; "zomereik", "Stieleiche", "Quercus robur" or one letter off all find Pedunculate Oak, and the row shows which name matched with the Latin under it, the count beside it, a tick on the chosen one; tap it again or "Any species" to turn it off. All eight languages. The other names come from /api/species.json, the app's feed, the first time the sheet opens (commit c0074e983). The app's picker already did this; nothing changed there.
+- qa's `check_species_answer_to_every_name()` now also fails if the website's filter goes back to a select.
+
 ## 2026-10-31 (session with Hidde): Seasons row on tree pages, web and app
 
 **Live on the web** (commit 33ea54780): deciduous trees outside the tropics with a photograph show "Seasons" under the facts, four tiles spring to winter with every visitor's photographs of that season, "N of 4", and an empty tile that asks with the Add a photo flow (the one for now: camera and "Now" on moss). Desktop: under the facts beside a landscape lead, in the right column between map and story beside a portrait one. Looked at live at 375 and 1280 on the Paris horse chestnut (1 of 4, autumn, 7 photos; a tap opens the viewer). Rule in site/src/lib/seasons.ts, sent in the feed (`season` per photo, `seasonal` per tree); reader photos now get taken_month at publish; 53 months backfilled. **App**: seasonsRow in TreeDetail.swift, seen in the simulator (Paris 1 of 4; Friedewald 2 of 4 with the Now tile); ships with the next build. The app's Add a photo pill, whose lower edge the white page cut off since the 10-30 slide-over, now sits on the page itself (commit 728a58760, seen in the simulator); next build.
