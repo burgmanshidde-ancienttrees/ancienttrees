@@ -5,21 +5,27 @@
       "species": "Sessile Oak (Quercus petraea)",
       "location": "New Square, Trinity College Dublin, opposite House 39, roughly 100m from dub_006",
       "reason": "Real and documented (TCD news article on the 2023 Trinity Tree Walk & Talk), provenance from Killarney National Park, planted to mark Trinity's 400th anniversary (1992), so only around 30 years old. Article itself calls it 'still very young by comparison' to a mature oak's centuries-long lifespan. Historically meaningful as a ceremonial planting but too young and too thin a story to clear the ancient-trees bar on its own. Worth revisiting in a few decades, or if a stronger historical angle turns up.",
-      "sources": ["https://www.tcd.ie/news_events/articles/2023/trinity-tree-walk--talk-event-/"]
+      "sources": [
+        "https://www.tcd.ie/news_events/articles/2023/trinity-tree-walk--talk-event-/"
+      ]
     },
     {
       "name": "Sessile Oak beside The Flatiron (Tree No. 528)",
       "species": "Sessile Oak (Quercus petraea)",
       "location": "Beside 'The Flatiron', Trinity College Dublin (exact building/location not confirmed)",
       "reason": "Only source found is the same TCD Tree Walk article, which calls it 'a larger specimen' with no age, girth, or precise location given, and I could not independently confirm where 'The Flatiron' actually is on campus (not a building name that turned up in any map or heritage source I could reach). Second source and precise location both missing. Worth a second pass with access to TCD's own campus map or the 2011 'Trees of Trinity College Dublin' booklet (3rd/4th edition), which was referenced but never found online as a downloadable PDF.",
-      "sources": ["https://www.tcd.ie/news_events/articles/2023/trinity-tree-walk--talk-event-/"]
+      "sources": [
+        "https://www.tcd.ie/news_events/articles/2023/trinity-tree-walk--talk-event-/"
+      ]
     },
     {
       "name": "Giant Redwood, edge of Physics Lawn",
       "species": "Giant Redwood / Wellingtonia (Sequoiadendron giganteum)",
       "location": "Edge of the Physics Lawn, Trinity College Dublin main campus",
       "reason": "TCD's own 'Tree of the Month' article explicitly describes this as a 'young specimen', distinct from a larger, older Giant Redwood at Trinity Hall in Dartry (off main campus, ~5km away and outside this cluster's 1.5km radius). The main-campus specimen is too young to be remarkable; the Dartry one is out of range for this pass.",
-      "sources": ["https://www.tcd.ie/news_events/articles/2024/trinity-tree-of-the-month---the-giant-redwood/"]
+      "sources": [
+        "https://www.tcd.ie/news_events/articles/2024/trinity-tree-of-the-month---the-giant-redwood/"
+      ]
     },
     {
       "name": "St Stephen's Green / Merrion Square / Iveagh Gardens specimen trees (general)",
@@ -37,6 +43,30 @@
         "https://www.irishtimes.com/news/ireland/irish-news/tree-over-170-years-old-collapses-in-trinity-college-square-1.3517860",
         "https://universitytimes.ie/2018/07/trinity-bids-a-final-farewell-to-the-last-oregon-maple-tree/"
       ]
+    },
+    {
+      "name": "Trinity College bigleaf maples (register 18, 19, 20)",
+      "species": "Bigleaf Maple (Acer macrophyllum)",
+      "location": "53.34394,-6.25576; 53.34425,-6.25586; 53.34401,-6.25387 (Trinity College, converted register coordinates)",
+      "reason": "Register 2009 records, but the Library Square Oregon maple collapsed in 2018 and its sister was removed (Irish Times, TheJournal); reports say three maples stood on campus and no source says what happened to the third, so #20 (53.34401,-6.25387) is unconfirmed alive and #18/#19 are almost surely the dead pair. Not shipped."
+    },
+    {
+      "name": "Glasnevin yew (register 588)",
+      "species": "European Yew (Taxus baccata)",
+      "location": "53.37279,-6.27128, National Botanic Gardens",
+      "reason": "Register 200-300 years, lifecheck RECENT 2026-09-28; 65 m from dub_004 Addison's Walk, which already took the garden's single register yew record as its pin, so folded into dub_004 as probably the same record. No girth found."
+    },
+    {
+      "name": "St Anne's Park second holm oak (register 450)",
+      "species": "Holm Oak (Quercus ilex)",
+      "location": "53.37205,-6.16654",
+      "reason": "Multi-stem, 100-150 years, within about 80 m of dub_007, the many-trunked holm oak; probably the same tree, not checked separately."
+    },
+    {
+      "name": "TCD planes (register 411, 412) and bigleaf-maple neighbours",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "location": "53.34428,-6.25407; 53.3442,-6.25416",
+      "reason": "Twins about 10 m apart already folded into dub_006 The Champion Planes of New Square."
     }
   ],
   "blocked": [

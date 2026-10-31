@@ -1,0 +1,40 @@
+[
+  {
+    "id": "dub_018",
+    "name": "The Marlay Park Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "roughly 300 to 500 years",
+    "age_min": 300,
+    "age_max": 500,
+    "girth_cm": 578,
+    "location": {"address": "Marlay Park, Grange Road, Rathfarnham, Dublin 16", "latitude": 53.27841, "longitude": -6.26845, "neighbourhood": "Rathfarnham"},
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_tree_database/marlay-park-rathfarnham/",
+      "https://maps.biodiversityireland.ie/Dataset/27"
+    ],
+    "official_register": {"name": "Heritage Trees of Ireland (Tree Council of Ireland / NBDC dataset 27, record 603)", "url": "https://maps.biodiversityireland.ie/Dataset/27"},
+    "access": "Free; Marlay Park is a public regional park run by Dun Laoghaire-Rathdown County Council, open to the public since 1975",
+    "transport": "Dublin Bus 16 serves the park directly; bus 14 and 75 within walking distance",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register record 603: multi-stem yew, age band 300-500 years as of the 2009 survey (Aubrey Fennell), so add ~17 years; band kept broad. Ancient Yew Group database (tree ID 2748, Marlay Park - Rathfarnham, site type estate, access Public, visited 6 Aug 2009, recorded by Tree Register of Ireland) gives 578 cm girth at 40 cm, class Ancient 5m-7m. The AYG record draws on the same Tree Register survey, so the two are NOT independent; flagged register-level. Girth 578 cm is a multi-stem measurement per the register tree_form, taken at 40 cm. Pin is the register coordinate converted from Irish Grid with no datum shift (about 40 m error per register caveat) in a 300-acre park, so approximate. lifecheck NONE: no recent dated observation found, alive not confirmed since 2009. No photo found (not hunted). Findability: park-level pin only, no small named site, no recognition line from sources; writer should not ship it without a photograph or a GPS fix from a reader. Marlay Park is 8.9 km from city centre, about 25-30 min by bus 16 from the centre (not timed here)."
+  },
+  {
+    "id": "dub_019",
+    "name": "The Marlay Park Cedar of Lebanon",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "roughly 150 to 200 years",
+    "age_min": 150,
+    "age_max": 200,
+    "location": {"address": "Marlay Park, Grange Road, Rathfarnham, Dublin 16", "latitude": 53.27385, "longitude": -6.26752, "neighbourhood": "Rathfarnham"},
+    "verified_sources": [
+      "https://maps.biodiversityireland.ie/Dataset/27"
+    ],
+    "official_register": {"name": "Heritage Trees of Ireland (Tree Council of Ireland / NBDC dataset 27, record 117)", "url": "https://maps.biodiversityireland.ie/Dataset/27"},
+    "access": "Free; Marlay Park is a public regional park run by Dun Laoghaire-Rathdown County Council",
+    "transport": "Dublin Bus 16 serves the park directly; bus 14 and 75 within walking distance",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register only (record 117, maiden tree, age band 150-200 years as of the 2009 survey, Exceptional specimen tree class; no girth or height in our extract). Register only, no vitality field. lifecheck RECENT 2026-05-25 (iNaturalist observation 365181370 within range; page is Cloudflare-blocked so the species on it was not seen, so it only suggests a tree or plant was observed near the coordinate). Pin is the converted Irish Grid register coordinate, no datum shift, so approximate. Web search found nothing else naming a cedar at Marlay Park; no second source. No photo found. Weakest of the delivered pair: same findability caveat as dub_018 (park-level pin, no photo)."
+  }
+]
