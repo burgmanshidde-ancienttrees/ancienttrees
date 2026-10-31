@@ -62,9 +62,13 @@ public struct Photo: Codable, Hashable, Sendable {
     /// The month the photograph was taken, 1 to 12 (scripts/photo_months.py,
     /// 2026-10-13); nil when unknown or in an older snapshot.
     public let takenMonth: Int?
+    /// The season that month is where the tree stands ("spring", "summer",
+    /// "autumn", "winter"), decided on the server (seasons.ts, 2026-10-31) so
+    /// the Seasons row files a photograph exactly where the website does.
+    public let season: String?
 
     enum CodingKeys: String, CodingKey {
-        case url, license, attribution, width, height
+        case url, license, attribution, width, height, season
         case takenMonth = "taken_month"
         case thumbRaw = "thumb"
         case heroRaw = "hero"
@@ -232,6 +236,10 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// "autumn", "fruit", "leaves", "catkins", "winter", "peak"), decided on the
     /// website (phenology.ts seasonKey, 2026-10-04). Nil without a best_time.
     public var seasonKey: String? = nil
+    /// The tree goes through the seasons (deciduous, outside the tropics), so
+    /// its page shows the Seasons row. Sent only when true (seasons.ts,
+    /// Hidde, 2026-10-31); nil in an older snapshot, which shows no row.
+    public var seasonal: Bool? = nil
     public struct DayTrip: Codable, Hashable, Sendable {
         public let place: String
         public let km: Int
@@ -248,6 +256,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case ageMax = "age_max"
         case ageShort = "age_short"
         case seasonKey = "season_key"
+        case seasonal
         case access, story, url, precision, photo, photos, peak
         case recogniseRaw = "how_to_recognise"
         case paidEntryRaw = "paid_entry"

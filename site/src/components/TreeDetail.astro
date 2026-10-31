@@ -49,6 +49,7 @@ import { ui } from "../lib/i18n";
 import { treeSources } from "../lib/tree-sources";
 import { officialRegister } from "../lib/official-register";
 import type { Tree } from "../lib/trees";
+import { SEASONS, isSeasonal, seasonOfMonth } from "../lib/seasons";
 
 interface Props {
   lang: string;
@@ -155,6 +156,21 @@ const parkLink = p.parkUrl && p.parkName ? { name: p.parkName, url: p.parkUrl } 
 const districtShown = p.district && !(parkLink && p.district.toLowerCase() === parkLink.name.toLowerCase()) ? p.district : null;
 const noPhoto = !(photo && photo.url);
 const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
+// THE SEASONS ROW (Hidde, 2026-10-31; CONVENTIONS.md "A tree's photographs by
+// season, and the empty season as an ask"). Deciduous trees outside the
+// tropics only, and only beside a photograph: every visitor's photographs,
+// filed by the month they were taken, so the tree can be seen in all four
+// seasons; an empty season asks for the photo with the same Add a photo flow.
+// Each tile's index is the photograph's place in PhotoFigure's set, so a tap
+// opens the viewer at that picture. The page decides "now" in the browser
+// (the script at the foot), so a build from last week never names the wrong one.
+const seasonal = !noPhoto && isSeasonal(tree, loc.latitude);
+const seasonTiles = seasonal ? SEASONS.map((key) => {
+  const idx = p.shots.map((s, i) => (s?.url && seasonOfMonth(s.taken_month, loc.latitude!) === key ? i : -1)).filter((i) => i >= 0);
+  return { key, name: U.seasonNames[key], index: idx[0] ?? -1, count: idx.length };
+}) : [];
+const seasonsFilled = seasonTiles.filter((s) => s.count > 0).length;
+const leadSeason = seasonal ? seasonOfMonth(photo?.taken_month, loc.latitude!) : null;
 ---
 <main class:list={["content-page", "td-page", { "td-tall": tall, "td-nophoto-page": noPhoto }]}
   style={tall ? `--td-ar:${tallAr.toFixed(4)}` : undefined}>
@@ -290,6 +306,38 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
           )}
         </div>
       </div>
+
+      {seasonal && (
+        <section class="td-section td-seasons" data-south={loc.latitude! < 0 ? "1" : undefined}>
+          <h2>{U.seasonsHeading}<span class="td-seasons-n">{U.seasonsTally(seasonsFilled)}</span></h2>
+          <ol class="td-seasons-row">
+            {seasonTiles.map((s) => (
+              <li>
+                {s.count > 0 ? (
+                  <button type="button" class:list={["td-season", { on: s.key === leadSeason }]} data-open={s.index}
+                    aria-label={`${s.name}, ${U.photoNumber(s.index + 1, p.shots.length)}`}>
+                    <span class="td-season-tile">
+                      <img {...imgSrcset(p.shots[s.index].url, [250, 500], "(max-width: 900px) 25vw, 140px")} alt="" loading="lazy" />
+                      {s.count > 1 && <span class="td-season-count">{s.count}</span>}
+                    </span>
+                    <span class="td-season-l">{s.name}</span>
+                  </button>
+                ) : (
+                  <button type="button" class="td-season td-season-empty" data-press="addphoto-btn" data-season={s.key}
+                    aria-label={U.seasonAddAria(s.name)}>
+                    <span class="td-season-tile">
+                      <span class="td-season-plus"><Fragment set:html={icon("plus", "bold")} /></span>
+                      <span class="td-season-now"><Fragment set:html={icon("camera", "bold")} /><b>{U.seasonNow}</b></span>
+                    </span>
+                    <span class="td-season-l">{s.name}</span>
+                  </button>
+                )}
+              </li>
+            ))}
+          </ol>
+          {seasonsFilled === 4 && <p class="td-seasons-all"><Fragment set:html={icon("check", "bold")} />{U.seasonsAll}</p>}
+        </section>
+      )}
 
       {/* YOUR PHOTOGRAPHS OF THIS TREE, under the facts, as on the app's tree
           page (TreeDetail.swift yourPhotos). The tree's own picture stays the
@@ -551,6 +599,25 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
 </main>
 <script is:inline>
   (function() {
+    // Seasons (TreeDetail.astro frontmatter): the empty tile of the season it
+    // is now, where the tree stands, turns into the camera ask; a filled tile
+    // opens the viewer at its own photograph, as a tile in Google Maps' Photos
+    // block does, by pressing that photograph's own opener in the figure.
+    var sr = document.querySelector('.td-seasons');
+    if (sr) {
+      var m = new Date().getMonth() + 1;
+      var k = m >= 3 && m <= 5 ? 0 : m >= 6 && m <= 8 ? 1 : m >= 9 && m <= 11 ? 2 : 3;
+      if (sr.getAttribute('data-south')) k = (k + 2) % 4;
+      var now = ['spring', 'summer', 'autumn', 'winter'][k];
+      var nt = sr.querySelector('.td-season-empty[data-season="' + now + '"]');
+      if (nt) nt.classList.add('is-now');
+      sr.addEventListener('click', function(e) {
+        var b = e.target.closest && e.target.closest('[data-open]');
+        if (!b) return;
+        var o = document.querySelector('.td-hero figure .photo-open[data-i="' + b.getAttribute('data-open') + '"]');
+        if (o) o.click();
+      });
+    }
     document.querySelectorAll('.td-clamp').forEach(function(el) {
       if (el.scrollHeight <= el.clientHeight + 1) { el.classList.add('open'); return; }
       var b = document.createElement('button');

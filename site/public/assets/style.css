@@ -3552,6 +3552,35 @@ button.profile-gear svg { width: 20px; height: 20px; }
 
 /* Your photographs of this tree (2026-10-12), the app's yourPhotos strip:
    140px squares, the date under each, a row that scrolls sideways. */
+/* THE SEASONS ROW (TreeDetail.astro; Hidde, 2026-10-31). The app's Add photo
+   tile taken over: radius 12, 10 apart, the muted surface for an empty one,
+   moss for the season it is now. Four columns of the column's width, so a
+   phone gets about 80 and the desktop column about 130, never wider than 560. */
+.td-seasons h2 { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.td-seasons-n { font-size: 14px; font-weight: 500; color: var(--ink-light); }
+.td-seasons-row { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px; max-width: 560px; }
+.td-season { display: flex; flex-direction: column; align-items: stretch; gap: 6px; width: 100%; padding: 0; border: 0;
+  background: none; font: inherit; color: var(--ink); cursor: pointer; text-align: center; }
+.td-season-tile { position: relative; display: grid; place-items: center; aspect-ratio: 1; border-radius: 12px;
+  overflow: hidden; background: #F2F2F2; color: var(--ink-light); }
+.td-season-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.td-season.on .td-season-tile { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--moss); }
+.td-season-l { font-size: 13px; font-weight: 600; line-height: 1.2; }
+.td-season-empty .td-season-l { color: var(--ink-light); font-weight: 500; }
+.td-season-count { position: absolute; top: 6px; right: 6px; min-width: 22px; height: 22px; padding: 0 6px;
+  box-sizing: border-box; border-radius: 999px; background: rgba(0,0,0,0.55); color: #fff; font-size: 12px;
+  font-weight: 700; line-height: 22px; }
+.td-season-plus svg.ic { width: 22px; height: 22px; }
+.td-season-now { display: none; flex-direction: column; align-items: center; gap: 3px; }
+.td-season-now svg.ic { width: 22px; height: 22px; }
+.td-season-now b { font-size: 12px; font-weight: 700; }
+.td-season-empty.is-now .td-season-tile { background: var(--moss-light); color: var(--moss); }
+.td-season-empty.is-now .td-season-plus { display: none; }
+.td-season-empty.is-now .td-season-now { display: flex; }
+.td-season-empty.is-now .td-season-l { color: var(--moss); font-weight: 700; }
+.td-seasons-all { display: flex; align-items: center; gap: 6px; margin: 12px 0 0; font-size: 14px; font-weight: 600; color: var(--moss); }
+.td-seasons-all svg.ic { width: 16px; height: 16px; }
 .td-yours[hidden] { display: none; }
 .td-yours { margin: 20px 0 4px; }
 .td-yours-h { font-size: 1.05rem; margin: 0 0 10px; }

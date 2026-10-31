@@ -226,6 +226,9 @@ struct TreeDetail: View {
                     // entrance fee read as one of our own tiers (2026-08-25).
                     factsBlock
                     }
+                    // THE SEASONS ROW under the facts (Hidde, 2026-10-31: "op
+                    // mobile ... zit het wel in weg" directly under the photo).
+                    if mine == nil { seasonsRow }
                     // YOUR PHOTOGRAPHS OF THIS TREE, high, because they are
                     // the reason somebody who has been here opens the page
                     // again. See Sightings.ofTree for how they went missing.
@@ -1675,6 +1678,126 @@ struct TreeDetail: View {
     /// tree's picture and these are evidence for whoever checks it, the sign
     /// among them: the separate "Photograph the sign" button this replaces is
     /// now a hint. CONVENTIONS.md, "More than one photograph when adding a tree".
+    /// THE TREE IN ALL FOUR SEASONS (Hidde, 2026-10-31; CONVENTIONS.md "A
+    /// tree's photographs by season, and the empty season as an ask"). Every
+    /// visitor's photographs, filed by the season the feed gave each one; a
+    /// filled tile opens the viewer at that photograph, as a tile in Google
+    /// Maps' Photos block does, and an empty one asks with the same flow as
+    /// the Add a photo pill. The tile is morePhotosRow's Add photo tile:
+    /// radius 12, 10 apart, the muted surface. Only where the feed says the
+    /// tree has seasons; the website draws the same row from the same fields.
+    @ViewBuilder private var seasonsRow: some View {
+        if tree.seasonal == true, !tree.shots.isEmpty {
+            let shots = tree.shots
+            let keys = ["spring", "summer", "autumn", "winter"]
+            let firsts = keys.map { k in shots.firstIndex { $0.season == k } }
+            let filled = firsts.compactMap { $0 }.count
+            VStack(alignment: .leading, spacing: 10) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text("Seasons")
+                        .font(.brand(18, .bold, relativeTo: .headline))
+                        .foregroundStyle(Brand.ink)
+                    Spacer(minLength: 8)
+                    Text("\(filled) of 4")
+                        .font(.system(size: 14, weight: .medium))
+                        .foregroundStyle(Brand.inkSoft)
+                }
+                HStack(alignment: .top, spacing: 10) {
+                    ForEach(0..<4, id: \.self) { i in
+                        seasonTile(key: keys[i], at: firsts[i],
+                                   count: shots.filter { $0.season == keys[i] }.count,
+                                   lead: shots.first?.season == keys[i])
+                    }
+                }
+                if filled == 4 {
+                    Label("Photographed in all four seasons", systemImage: "checkmark")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(Brand.moss)
+                        .padding(.top, 2)
+                }
+            }
+            .accessibilityIdentifier("tree-seasons")
+        }
+    }
+
+    /// The season it is now where the tree stands: meteorological, flipped
+    /// south of the equator, as the website's tree page decides it.
+    private var seasonNow: String {
+        let m = Calendar.current.component(.month, from: Date())
+        var k = (3...5).contains(m) ? 0 : (6...8).contains(m) ? 1 : (9...11).contains(m) ? 2 : 3
+        if tree.lat < 0 { k = (k + 2) % 4 }
+        return ["spring", "summer", "autumn", "winter"][k]
+    }
+
+    @ViewBuilder private func seasonTile(key: String, at: Int?, count: Int, lead: Bool) -> some View {
+        let name = key.prefix(1).uppercased() + key.dropFirst()
+        if let at {
+            Button { photoAt = at; showingPhoto = true } label: {
+                VStack(spacing: 6) {
+                    Color.clear
+                        .aspectRatio(1, contentMode: .fit)
+                        .overlay { TreePhoto(url: tree.shots[at].card) { Brand.surfaceMuted } }
+                        .clipShape(.rect(cornerRadius: 12))
+                        .overlay(alignment: .topTrailing) {
+                            if count > 1 {
+                                Text("\(count)")
+                                    .font(.system(size: 12, weight: .bold))
+                                    .foregroundStyle(.white)
+                                    .padding(.horizontal, 6)
+                                    .frame(minWidth: 22, minHeight: 22)
+                                    .background(.black.opacity(0.55), in: .capsule)
+                                    .padding(6)
+                            }
+                        }
+                        .overlay {
+                            if lead {
+                                RoundedRectangle(cornerRadius: 12).inset(by: -3)
+                                    .stroke(Brand.moss, lineWidth: 2)
+                            }
+                        }
+                    Text(name)
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(Brand.ink)
+                }
+                .frame(maxWidth: .infinity)
+                .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("\(name), photograph \(at + 1) of \(tree.shots.count)")
+            .accessibilityIdentifier("season-\(key)")
+        } else {
+            let now = key == seasonNow
+            Button { startAddPhoto() } label: {
+                VStack(spacing: 6) {
+                    (now ? Brand.mossTint : Brand.surfaceMuted)
+                        .aspectRatio(1, contentMode: .fit)
+                        .overlay {
+                            if now {
+                                VStack(spacing: 3) {
+                                    Image(systemName: "camera").font(.system(size: 20, weight: .semibold))
+                                    Text("Now").font(.system(size: 12, weight: .bold))
+                                }
+                                .foregroundStyle(Brand.moss)
+                            } else {
+                                Image(systemName: "plus")
+                                    .font(.system(size: 20, weight: .semibold))
+                                    .foregroundStyle(Brand.inkSoft.opacity(0.7))
+                            }
+                        }
+                        .clipShape(.rect(cornerRadius: 12))
+                    Text(name)
+                        .font(.system(size: 13, weight: now ? .bold : .medium))
+                        .foregroundStyle(now ? Brand.moss : Brand.inkSoft)
+                }
+                .frame(maxWidth: .infinity)
+                .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Add a photo taken in \(key)")
+            .accessibilityIdentifier("season-\(key)-add")
+        }
+    }
+
     @ViewBuilder private var morePhotosRow: some View {
         if let m = live {
             let extras = sightings.extraImages(m)

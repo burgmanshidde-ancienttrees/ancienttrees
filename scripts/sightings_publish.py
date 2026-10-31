@@ -178,6 +178,12 @@ def photo_block(entry, width, height, reason, today, fname=None):
         "status": "approved",
         "width": width,
         "height": height,
+        # The month it was taken, so the tree page files it under its season
+        # (site/src/lib/seasons.ts; Hidde, 2026-10-31). From taken_at, which
+        # the app reads from the file's own date for a photo chosen from the
+        # library, so last winter's picture counts for winter.
+        **({"taken_month": int(entry["taken_at"][5:7])}
+           if re.match(r"\d{4}-\d{2}", entry.get("taken_at") or "") else {}),
         "source": "contributor",
         "contributor_user_id": people.ref(entry["user_id"]),
         "sighting_id": entry["sighting_id"],

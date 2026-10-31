@@ -264,6 +264,8 @@ const SHOULDER = 0.4;
 
 interface PhenologyEntry {
   common_name: string;
+  /** "deciduous" or "evergreen": whether the tree has seasons (seasons.ts). */
+  habit?: string;
   leaf?: number[];
   bare?: number[];
   flowers?: number[];

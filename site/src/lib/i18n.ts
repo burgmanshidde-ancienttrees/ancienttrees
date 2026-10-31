@@ -564,6 +564,16 @@ export interface UIStrings {
   noteEditMine: string;
   photoAddTitle: string;
   photoAddAsk: string;
+  /** The Seasons row on a tree page (seasons.ts; Hidde, 2026-10-31): its
+   *  heading, how many of the four the tree has, the four names, the word in
+   *  the empty tile of the season it is now, the line once all four are
+   *  there, and the label of an empty tile, which asks for that season. */
+  seasonsHeading: string;
+  seasonsTally: (n: number) => string;
+  seasonNames: { spring: string; summer: string; autumn: string; winter: string };
+  seasonNow: string;
+  seasonsAll: string;
+  seasonAddAria: (season: string) => string;
   noteAsk: string;
   noteSheetTitle: string;
   notePlaceholder: string;
@@ -891,6 +901,12 @@ const EN: UIStrings = {
   noteEditMine: "Edit your note",
   photoAddTitle: "Your photo here",
   photoAddAsk: "Seen this tree? Show the next visitor how it looks.",
+  seasonsHeading: "Seasons",
+  seasonsTally: (n) => `${n} of 4`,
+  seasonNames: { spring: "Spring", summer: "Summer", autumn: "Autumn", winter: "Winter" },
+  seasonNow: "Now",
+  seasonsAll: "Photographed in all four seasons",
+  seasonAddAria: (s) => `Add a photo taken in ${s.toLowerCase()}`,
   noteAsk: "Leave a note for the next visitor",
   noteSheetTitle: "A note for the next visitor",
   notePlaceholder: "What should they know? Where to stand, when to come, what you noticed.",
@@ -959,6 +975,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     noteEditMine: "Editar tu nota",
     photoAddTitle: "Tu foto aquí",
     photoAddAsk: "¿Has visto este árbol? Enseña al próximo visitante cómo es.",
+    seasonsHeading: "Estaciones",
+    seasonsTally: (n) => `${n} de 4`,
+    seasonNames: { spring: "Primavera", summer: "Verano", autumn: "Otoño", winter: "Invierno" },
+    seasonNow: "Ahora",
+    seasonsAll: "Fotografiado en las cuatro estaciones",
+    seasonAddAria: (s) => `Añadir una foto de ${s.toLowerCase()}`,
     noteAsk: "Deja una nota para el próximo visitante",
     noteSheetTitle: "Una nota para el próximo visitante",
     notePlaceholder: "¿Qué debería saber? Dónde ponerse, cuándo venir, qué te llamó la atención.",
@@ -1285,6 +1307,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     noteEditMine: "Modifica la tua nota",
     photoAddTitle: "La tua foto qui",
     photoAddAsk: "Hai visto questo albero? Mostra al prossimo visitatore com'è.",
+    seasonsHeading: "Stagioni",
+    seasonsTally: (n) => `${n} su 4`,
+    seasonNames: { spring: "Primavera", summer: "Estate", autumn: "Autunno", winter: "Inverno" },
+    seasonNow: "Ora",
+    seasonsAll: "Fotografato in tutte e quattro le stagioni",
+    seasonAddAria: (s) => `Aggiungi una foto di ${s.toLowerCase()}`,
     noteAsk: "Lascia una nota per il prossimo visitatore",
     noteSheetTitle: "Una nota per il prossimo visitatore",
     notePlaceholder: "Cosa dovrebbe sapere? Dove mettersi, quando venire, cosa hai notato.",
@@ -1611,6 +1639,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     noteEditMine: "Bewerk je notitie",
     photoAddTitle: "Jouw foto hier",
     photoAddAsk: "Deze boom gezien? Laat de volgende bezoeker zien hoe hij eruitziet.",
+    seasonsHeading: "Seizoenen",
+    seasonsTally: (n) => `${n} van 4`,
+    seasonNames: { spring: "Lente", summer: "Zomer", autumn: "Herfst", winter: "Winter" },
+    seasonNow: "Nu",
+    seasonsAll: "Gefotografeerd in alle vier seizoenen",
+    seasonAddAria: (s) => `Voeg een foto uit de ${s.toLowerCase()} toe`,
     noteAsk: "Laat een notitie achter voor de volgende bezoeker",
     noteSheetTitle: "Een notitie voor de volgende bezoeker",
     notePlaceholder: "Wat moet die weten? Waar je gaat staan, wanneer je komt, wat je opviel.",
@@ -1937,6 +1971,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     noteEditMine: "Deine Notiz bearbeiten",
     photoAddTitle: "Dein Foto hier",
     photoAddAsk: "Diesen Baum gesehen? Zeig dem nächsten Besucher, wie er aussieht.",
+    seasonsHeading: "Jahreszeiten",
+    seasonsTally: (n) => `${n} von 4`,
+    seasonNames: { spring: "Frühling", summer: "Sommer", autumn: "Herbst", winter: "Winter" },
+    seasonNow: "Jetzt",
+    seasonsAll: "In allen vier Jahreszeiten fotografiert",
+    seasonAddAria: (s) => `Ein Foto aus dem ${s} hinzufügen`,
     noteAsk: "Hinterlass eine Notiz für den nächsten Besucher",
     noteSheetTitle: "Eine Notiz für den nächsten Besucher",
     notePlaceholder: "Was sollte er wissen? Wo man steht, wann man kommt, was dir aufgefallen ist.",
@@ -2263,6 +2303,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     noteEditMine: "Editar a sua nota",
     photoAddTitle: "A sua foto aqui",
     photoAddAsk: "Viu esta árvore? Mostre ao próximo visitante como ela é.",
+    seasonsHeading: "Estações",
+    seasonsTally: (n) => `${n} de 4`,
+    seasonNames: { spring: "Primavera", summer: "Verão", autumn: "Outono", winter: "Inverno" },
+    seasonNow: "Agora",
+    seasonsAll: "Fotografada nas quatro estações",
+    seasonAddAria: (s) => `Adicionar uma foto de ${s.toLowerCase()}`,
     noteAsk: "Deixe uma nota para o próximo visitante",
     noteSheetTitle: "Uma nota para o próximo visitante",
     notePlaceholder: "O que deve saber? Onde ficar, quando vir, o que reparou.",
@@ -2589,6 +2635,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     noteEditMine: "Modifier votre note",
     photoAddTitle: "Votre photo ici",
     photoAddAsk: "Vous avez vu cet arbre ? Montrez au prochain visiteur à quoi il ressemble.",
+    seasonsHeading: "Saisons",
+    seasonsTally: (n) => `${n} sur 4`,
+    seasonNames: { spring: "Printemps", summer: "Été", autumn: "Automne", winter: "Hiver" },
+    seasonNow: "Maintenant",
+    seasonsAll: "Photographié aux quatre saisons",
+    seasonAddAria: (s) => `Ajouter une photo (${s.toLowerCase()})`,
     noteAsk: "Laissez une note au prochain visiteur",
     noteSheetTitle: "Une note pour le prochain visiteur",
     notePlaceholder: "Que doit-il savoir ? Où se placer, quand venir, ce que vous avez remarqué.",
@@ -2915,6 +2967,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     noteEditMine: "メモを編集",
     photoAddTitle: "あなたの写真をここに",
     photoAddAsk: "この木を見ましたか？次に訪れる人にその姿を見せてください。",
+    seasonsHeading: "四季",
+    seasonsTally: (n) => `${n}/4`,
+    seasonNames: { spring: "春", summer: "夏", autumn: "秋", winter: "冬" },
+    seasonNow: "今",
+    seasonsAll: "四季すべての写真があります",
+    seasonAddAria: (s) => `${s}の写真を追加`,
     noteAsk: "次に訪れる人にメモを残す",
     noteSheetTitle: "次に訪れる人へのメモ",
     notePlaceholder: "何を伝えますか？どこから見るか、いつ来るか、気づいたこと。",

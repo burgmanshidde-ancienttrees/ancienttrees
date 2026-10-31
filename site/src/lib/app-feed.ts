@@ -21,6 +21,7 @@ import { ageShort } from "./age-short";
 import { dayTrips, type DayTrip } from "./day-trips";
 import type { CityEntry } from "./trees";
 import { peakFor, seasonKey } from "./phenology";
+import { isSeasonal, seasonOfMonth, type Season } from "./seasons";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText, heroFrame } from "./images";
 import { savesOf } from "./saves";
@@ -121,6 +122,10 @@ export interface FeedTree {
   photo: FeedPhoto | null;
   /** The whole set, lead first, present only when there is more than one. */
   photos?: (FeedPhoto | null)[];
+  /** The tree goes through the seasons (deciduous, outside the tropics), so
+   * its page shows the Seasons row (seasons.ts; Hidde, 2026-10-31). Sent only
+   * when true, and only on a tree with a photograph. */
+  seasonal?: true;
 }
 
 export interface FeedPhoto {
@@ -132,6 +137,9 @@ export interface FeedPhoto {
   frame: number;
   /** The month it was taken (scripts/photo_months.py), or null. */
   taken_month: number | null;
+  /** The season that month is where the tree stands, flipped south of the
+   * equator (seasons.ts), or null. The app files the photograph under it. */
+  season: Season | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -182,7 +190,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         // No `register`: the official register is shown on the website only,
         // in the tree's sources (Hidde, 2026-10-08: remove from the app).
         ...(trips.get(t.id) ? { day_trip: trips.get(t.id) } : {}),
-        photo: resolvePhoto(p),
+        photo: resolvePhoto(p, loc.latitude),
         // MORE THAN ONE PHOTOGRAPH (2026-09-12). Sent only when there IS more
         // than one, so 3000-odd single-photograph trees pay nothing for a
         // feature they do not use, and it carries the FULL set, lead first, so
@@ -196,8 +204,9 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         // show and how to credit it, one city wore two faces and four
         // photographs disagreed across the two surfaces.
         ...(shots.length > 1
-          ? { photos: shots.map(resolvePhoto).filter(Boolean) }
+          ? { photos: shots.map((x) => resolvePhoto(x, loc.latitude)).filter(Boolean) }
           : {}),
+        ...(p?.url && isSeasonal(t, loc.latitude) ? { seasonal: true as const } : {}),
       });
     }
   }
@@ -205,7 +214,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
   return out;
 }
 
-function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
+function resolvePhoto(p: ReturnType<typeof usablePhoto>, lat: number): FeedPhoto | null {
   return p?.url
     ? {
       url: p.url,
@@ -250,6 +259,7 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
       // Discover's season hero shows a tree only when its photograph was
       // taken in the tree's best months (Hidde, 2026-10-13).
       taken_month: (p as any).taken_month ?? null,
+      season: seasonOfMonth((p as any).taken_month, lat),
       }
     : null;
 }

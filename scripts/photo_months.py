@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Record the month each Wikimedia Commons lead photograph was taken.
+"""Record the month each Wikimedia Commons photograph was taken, lead and strip.
 
 Why (Hidde, 2026-10-13): Discover's season hero said "Autumn is here" over a
 green summer photograph. A tree is at its best in some months; its photograph
@@ -68,16 +68,22 @@ def query(titles):
     return out
 
 
+def shots(tree):
+    """The lead and every further photograph: the tree page's Seasons row
+    files each one under the season of its month (Hidde, 2026-10-31)."""
+    return [p for p in [tree.get("photo") or {}] + list(tree.get("photos") or []) if isinstance(p, dict)]
+
+
 def main():
     dry = "--dry-run" in sys.argv
     files = sorted(glob.glob("data/cities/*.json"))
     wanted = {}
     for f in files:
         for t in json.load(open(f)).get("trees", []):
-            p = t.get("photo") or {}
-            title = title_of(p.get("url") or "")
-            if title and "taken_month" not in p:
-                wanted[title] = None
+            for p in shots(t):
+                title = title_of(p.get("url") or "")
+                if title and "taken_month" not in p:
+                    wanted[title] = None
     titles = list(wanted)
     print(f"{len(titles)} Commons photographs without a month")
     if dry:
@@ -93,12 +99,12 @@ def main():
         d = json.load(open(f))
         changed = False
         for t in d.get("trees", []):
-            p = t.get("photo") or {}
-            m = wanted.get(title_of(p.get("url") or "") or "")
-            if m and "taken_month" not in p:
-                p["taken_month"] = m
-                changed = True
-                found += 1
+            for p in shots(t):
+                m = wanted.get(title_of(p.get("url") or "") or "")
+                if m and "taken_month" not in p:
+                    p["taken_month"] = m
+                    changed = True
+                    found += 1
         if changed:
             with open(f, "w") as fh:
                 json.dump(d, fh, ensure_ascii=False, indent=2)
