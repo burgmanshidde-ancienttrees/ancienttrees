@@ -4,6 +4,22 @@
   "2026-10-31": [
    {
     "date": "2026-10-31",
+    "kind": "write",
+    "target": "READY leads: paris, madrid (oxford declined)",
+    "tokens": 87000,
+    "trees": 2,
+    "note": "par_075 and mad_018 live; 5 of 7 READY leads declined for thin evidence. Overlays es/madrid and fr/paris translated by session."
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "scout",
+    "target": "nature contacts Portugal, Japan, Australia",
+    "tokens": 66000,
+    "trees": 0,
+    "note": "3 nature contacts added to the private file; Portugal guides publish no address; nothing sent"
+   },
+   {
+    "date": "2026-10-31",
     "kind": "verify",
     "target": "sintra",
     "tokens": 64000,

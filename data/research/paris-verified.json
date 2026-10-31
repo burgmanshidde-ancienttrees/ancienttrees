@@ -717,5 +717,43 @@
    "kind": "fruit",
    "label": "July to September, when chains of pale green winged seeds hang from every branch"
   }
+ },
+ {
+  "id": "par_075",
+  "name": "The Lakeside Plane of Lac Daumesnil",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "about 155 years (register planting year 1871)",
+  "age_min": 154,
+  "age_max": 155,
+  "age_basis": "source",
+  "girth_cm": 530,
+  "height_m": 29,
+  "location": {
+   "address": "Route de la Ceinture du Lac Daumesnil (Promenade Maurice-Boitel), near the Ile de Reuilly, Bois de Vincennes, 75012 Paris",
+   "latitude": 48.829253209100635,
+   "longitude": 2.413182058651702,
+   "neighbourhood": "Bois de Vincennes, 12th arrondissement"
+  },
+  "verified_sources": [
+   "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/ (Ville de Paris, Arbres remarquables, register no. 2002357: 530 cm, 29 m, planted 1871)",
+   "https://www.paris.fr/lieux/ile-de-bercy-15389",
+   "iNaturalist observation within the lifecheck radius of the register point (alive check, east pass 2026-10-30)"
+  ],
+  "official_register": {
+   "name": "Ville de Paris, Arbres remarquables",
+   "url": "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/"
+  },
+  "access": "Free; the Bois de Vincennes is open public woodland and the tree stands on the road that circles Lac Daumesnil.",
+  "transport": "Porte Doree (line 8), about 15 minutes on foot to the lake road near the Ile de Reuilly",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "This plane is wider than any of the famous planes on the Ile de Bercy, out in the same lake, and about a decade younger than them. The city's register of remarkable trees gives it a planting year of 1871, the year Paris came out of the Prussian siege and straight into the Commune. Lac Daumesnil had been dug only six years earlier, so the tree has spent nearly the whole life of this landscape beside it.\n\nThe register measures it at 530 centimetres round and 29 metres tall. That makes it a near twin of the tall plane by the lower lake in the Bois de Boulogne, on the opposite edge of Paris, which is 535 centimetres round and was planted a year later. Where the two part company is height. The western tree has climbed to 45 metres. This one stopped at 29, still well above the lake road.\n\nIt stands on the Route de la Ceinture du Lac Daumesnil, the road that circles the water, near the Ile de Reuilly. The register's point falls on the path itself, with no tree marked on the map there, so treat the pin as a starting place and look for the widest plane trunk around you. The wood is free and open, and the black walnut planted in 1845 stands about 500 metres north along the same road.",
+  "how_to_recognise": "You can recognise it by the trunk, 5.3 metres round, wider than the planes on the Ile de Bercy. It stands on the road around Lac Daumesnil, near the Ile de Reuilly.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  }
 ]
