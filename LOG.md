@@ -10,6 +10,13 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-10-31 (07:53 window, short run)
+
+- Rung 1: four reader photographs of Baarn trees (598e6c83, b6455a29, f6164700, 7c4530f7) stay open: files are not on disk here, and a stranger's photo is never judged blind. They need a session with the Supabase key. No tree notes new.
+- Rung 2: the 05:55 scheduled deploy failure was the qa photo measurement, fixed in 998eb186f; the 06:08 manual deploy succeeded. Answered in health.py. Smoke "skipped" rows are push-triggered skips.
+- Rung 4: private store pulled. One Porto source-search (árvores monumentais, associations with photos) found no association or published address, so no contact recorded. Nothing sent, nothing published. Own supply is at the 25-a-day pace, so no new trees.
+- For Hidde: the four Baarn photos need a look with the key.
 <!-- archive-index -->
 ## 2026-10-31, night run (06:07 UTC attempt): no tree live, Coimbra scouted
 

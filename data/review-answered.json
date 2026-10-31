@@ -128,6 +128,10 @@
     "2026-10-30": {
       "note": "iOS app run 41088978129 failed because no macOS runner was acquired (capacity), no test ran; not an app fault",
       "at": "2026-10-30T19:33:52+00:00"
+    },
+    "2026-10-31": {
+      "note": "Scheduled deploy failure of 05:55 was the qa photo measurement, fixed in 998eb186f; the 06:08 manual deploy succeeded (27m). Smoke skips are push-triggered skips, not failures.",
+      "at": "2026-10-31T07:55:13+00:00"
     }
   }
 }
