@@ -648,5 +648,177 @@
     "curation_status": "flagged",
     "story": "Nobody seems to have planted this oak. Offenbach's register of natural monuments says it was probably sown by animals, and what came up has six stems rather than one trunk. A local tree photographer calls it the most powerful tree in Offenbach.\n\nIn 1979 the Offenbach natural history society measured it at seven metres round just above the roots, the whole buttressed mass of stems taken together. The three strongest are about four, three and three metres round each, and the register gives the height as about 23 metres. The name comes from the field it stands in, Die Mark.\n\nIt has had a hard time. The Hainbach once ran seven metres from it, until the brook was channelled, which by the photographer's account did the tree and its surroundings no good. The main trunk is hollow at ground level, a big limb has been taken off, and the thick stems are held together with strong straps. A high fence keeps everyone at a distance. Even so, a walker in 2017 found the crown healthy and full of vigour, and a photograph from May 2018 shows it standing.\n\nOne blog dates it to 1880 without saying why, so we leave its age open. If you know how old it is, or have seen it lately, tell us.\n\nIt stands a little west of the Hainbach footpath, about 170 metres north of the Stadthalle, where a post on the Regionalpark route points it out.",
     "how_to_recognise": "You can recognise it by its six stems held together with straps, inside a high fence. It stands about 50 metres west of the Hainbach path, 170 metres north of the Stadthalle, where a Regionalpark post names it."
+  },
+  {
+    "id": "frk_025",
+    "name": "The Ironwood Trees of the Untermainkai",
+    "species": "Persian Ironwood (Parrotia persica)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "height_m": 21,
+    "location": {
+      "address": "Untermainkai, Frankfurt",
+      "latitude": 50.105332,
+      "longitude": 8.671875,
+      "neighbourhood": "Innenstadt"
+    },
+    "verified_sources": [
+      "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eisenholzbaeume-am-untermainkai",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+    ],
+    "official_register": {
+      "name": "Frankfurt Naturdenkmal register, entry 026",
+      "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eisenholzbaeume-am-untermainkai"
+    },
+    "access": "Free, public riverside promenade along the Main (Untermainkai), open at all times",
+    "transport": "U-Bahn/S-Bahn Willy-Brandt-Platz or Taunusanlage, about 8 to 10 minutes on foot",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "A relative of the witch hazel has grown past 20 metres on the bank of the Main. The Persian ironwoods of the Untermainkai stand between 19 and 23 metres tall, by the city's register of natural monuments, and their crowns spread 19 to 22 metres across. They are entry 026 on that register.\n\nThe species comes from the Hyrcanian forest, the band of old woodland south of the Caspian Sea. It takes its name from its wood, which is unusually hard. Frankfurt's own description adds the two things gardeners plant it for, gnarled stems with handsome bark and intense autumn colour.\n\nThese are not single trunks. The register describes them as multi-stemmed and protects them in groups, with a 15-metre radius around each group, so on the promenade expect clusters of stems rather than clean single columns.\n\nWhat nobody has written down is their age. The city gives no planting year and no girth, and we will not guess at either. If you know when they went into the ground, tell us.\n\nThe Untermainkai is a free public promenade along the river, open at all times. By our estimate it is about 8 to 10 minutes on foot from Willy-Brandt-Platz or Taunusanlage stations. The pin marks the group as a whole and is approximate, so the easiest time to find them is autumn, when the colour does the pointing for you.",
+    "how_to_recognise": "You can recognise them by their many gnarled stems, crowns 19 to 23 metres tall and nearly as wide, and their colour in autumn. They stand on the Untermainkai, the public promenade along the Main.",
+    "best_time": {"months": [10, 11], "kind": "autumn colour", "label": "October into November, when the ironwoods turn their intense autumn colours"},
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+    "verify_notes": "City page (fetched 2026-10-31 via r.jina.ai text proxy, frankfurt.de itself 403s): Parrotia persica, height 19 to 23 m, crown diameter 19 to 22 m, multi-stemmed; protected radius 15 m per tree group (groups, plural). Girth not given. No age given; do not invent one. City text: relative of witch hazel, native to the Hyrcanian forest south of the Caspian, known for hard wood, intense autumn colour and gnarled stems with attractive bark. Autumn colour is the draw. Pin is the register coordinate for the group (approximate). Life check: lifecheck.py RECENT (iNaturalist 2026-09-23 nearby, not tree-specific). Register only, flagged. No photo found by this pass (not hunted)."
+  },
+  {
+    "id": "frk_026",
+    "name": "The Bald Cypresses of Frankfurt Zoo",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "roughly 150 to 170 years",
+    "age_min": 150,
+    "age_max": 170,
+    "girth_cm": 690,
+    "height_m": null,
+    "location": {
+      "address": "Zoo Frankfurt, shore of the Grosser Weiher",
+      "latitude": 50.115693,
+      "longitude": 8.701195,
+      "neighbourhood": "Ostend"
+    },
+    "verified_sources": [
+      "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/sumpfzypressen-im-zoo-frankfurt",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main",
+      "https://www.zoo-frankfurt.de/de/zoobesuch-planen/eintrittskarten/tageskarten"
+    ],
+    "official_register": {
+      "name": "Frankfurt Naturdenkmal register, entry 018",
+      "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/sumpfzypressen-im-zoo-frankfurt"
+    },
+    "access": "Paid entry to Zoo Frankfurt: adults 12 or 13 EUR, reduced 6 EUR, children under 6 free (zoo-frankfurt.de, fetched 2026-10-31); open 365 days, winter hours reported 09:00 to 17:00 from 25 Oct",
+    "paid_entry": true,
+    "transport": "U-Bahn Zoo station (U6, U7), a few minutes to the zoo entrance, then the Grosser Weiher inside; line and walk not read from a source",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Grosser Weiher pond, Zoo Frankfurt",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "story": "Five trees from the swamps of North America have spent a century and a half beside a pond in Frankfurt Zoo. The city puts the bald cypresses on the shore of the Grosser Weiher at 150 to 170 years old, and the largest of them measures 6.90 metres round.\n\nThe largest also shows the species' strangest habit. Around its base rise knee roots, hollow outgrowths pushing up from the ground. Where a bald cypress stands with its roots in water, as it does in the swamps it comes from, the knees exchange gas for the roots below. The city says they are clearly visible on this tree.\n\nIt is a conifer that behaves like a broadleaf. In autumn the soft needles turn copper red, and then the whole tree drops them and stands bare through the cold months.\n\nThe species can reach 30 metres, but nobody has published the height of these five, and only the largest has a recorded girth. No planting year is given either, so the age stays a range.\n\nThey are entry 018 on Frankfurt's register of natural monuments, and they stand inside the zoo, so seeing them takes a ticket. Adults pay 12 to 13 euros, the reduced rate is 6 euros, and children under six go free. The zoo opens every day of the year, from 9:00 to 17:00 on its winter hours. The Zoo U-Bahn station is near the entrance, though we have not timed the walk to the pond.",
+    "how_to_recognise": "You can recognise the largest by the knee roots rising around its base and its trunk, 6.90 metres round. The five stand on the shore of the Grosser Weiher, the pond inside Zoo Frankfurt.",
+    "best_time": {"months": [10, 11], "kind": "autumn colour", "label": "late October into November, when the needles turn copper red before they fall"},
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+    "verify_notes": "City page (fetched 2026-10-31): five bald cypresses on the shore of the Grosser Weiher; age 150 to 170 years; largest has a circumference of 6.90 m (the other four are smaller, not measured on the page). Conifers reach 30 m; city notes the knee roots (hollow outgrowths that exchange gas when roots stand in water) are clearly visible on the largest specimen. Native to North American swamps; deciduous conifer that drops its needles in the cold season (autumn colour is a candidate best_time, unconfirmed). Planting year NOT on the fetched page (a search summary said 1873, not seen on a page, so not recorded). Pin is the register coordinate. Life check RECENT (iNaturalist 2025-04-19 nearby). Register only plus the city page, flagged."
+  },
+  {
+    "id": "frk_027",
+    "name": "The Black Mulberry at Goethe's Mother's Grave",
+    "species": "Black Mulberry (Morus nigra)",
+    "age_estimate": "over 200 years",
+    "age_min": 200,
+    "age_max": 270,
+    "girth_cm": 331,
+    "height_m": 12,
+    "location": {
+      "address": "Peterskirchhof / Liebfrauenschule, Stephanstrasse area, Frankfurt",
+      "latitude": 50.116736,
+      "longitude": 8.684772,
+      "neighbourhood": "Innenstadt"
+    },
+    "verified_sources": [
+      "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/schwarze-maulbeere",
+      "https://www.visitfrankfurt.travel/poi/peterskirchhof",
+      "https://stadtundgruen.de/artikel/grundsanierung-des-peterskirchhofs-in-frankfurtm-abgeschlossen-umgestaltung-mit-bluehaspekt-5054",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+    ],
+    "official_register": {
+      "name": "Frankfurt Naturdenkmal register, entry 017",
+      "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/schwarze-maulbeere"
+    },
+    "access": "View-only. The tree stands on the schoolyard of the Liebfrauenschule beside Catharina Elisabeth Goethe's grave; Visit Frankfurt says the grave can only be seen from afar from the adjoining, publicly open Peterskirchhof garden. Not entered.",
+    "transport": "U-Bahn/S-Bahn Hauptwache or Konstablerwache, about 5 to 7 minutes on foot to the Peterskirchhof",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Peterskirchhof, Frankfurt",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "not_merged_reason": "Held by the writing pass 2026-10-31 (hard rule 10). The tree stands in the Liebfrauenschule schoolyard, which no source shows is open. Visit Frankfurt only says the GRAVE can be seen from afar from the Peterskirchhof; no source read says the mulberry itself is visible from there, and the pin is the register coordinate in the schoolyard, not a viewing place. Ships once a source, reader photo or GPS fix shows the crown from the Peterskirchhof path and the pin moves to that viewing point.",
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+    "verify_notes": "City page (fetched 2026-10-31): Morus nigra, about 12 m, girth 3.31 m, over 200 years, stands on the schoolyard of the Liebfrauenschule next to the grave of Goethe's mother; she was buried in 1808 and the mulberry was already a relatively large tree then; presumably planted 1760 (city's 'Vermutlich', keep as a presumption); partly hollow, gnarled, 'enchanted' look; a rare species in Frankfurt. Independent: Stadt und Grün (Peterskirchhof renovation) names 'the old mulberry at the grave of Goethe's mother' and says four new mulberries were planted at the path junctions (those are young; do not confuse). Visit Frankfurt: grave on the neighbouring schoolyard, visible only from afar. Hard rule 10: view-only trees ship with the pin on the viewing place; the writer must put the viewing point at Peterskirchhof and state that the schoolyard is not entered. Whether the old mulberry is actually visible from the Peterskirchhof path is NOT established by any source read: flagged. Pin is the register coordinate, approximate. Life check RECENT (iNaturalist 2025-04-29 nearby). Aja grave also visible there, so story anchor is Goethe's mother (Catharina Elisabeth Goethe, buried 1808)."
+  },
+  {
+    "id": "frk_028",
+    "name": "The Walnut on the Nidda Oxbow",
+    "species": "Common Walnut (Juglans regia)",
+    "age_estimate": "planted 1910",
+    "age_min": 110,
+    "age_max": 120,
+    "girth_cm": 436,
+    "height_m": 23,
+    "location": {
+      "address": "Altarm der Nidda, Heddernheim, Frankfurt",
+      "latitude": 50.149725,
+      "longitude": 8.629383,
+      "neighbourhood": "Heddernheim"
+    },
+    "verified_sources": [
+      "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/nussbaum-am-niddaaltarm",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+    ],
+    "official_register": {
+      "name": "Frankfurt Naturdenkmal register, entry 009",
+      "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/nussbaum-am-niddaaltarm"
+    },
+    "access": "Free, public path under the crown beside the Nidda oxbow (city page: crown shades the path below), open at all times",
+    "transport": "U-Bahn Heddernheim (U1, U2, U3), about 15 minutes on foot; check the walk on a map, not measured by this pass",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "In 1910 somebody planted a walnut beside the Nidda in Heddernheim. A little over a century later it stands 23 metres tall and 4.36 metres round, and its crown hangs so low that the leaves reach almost to the ground.\n\nThose figures come from Frankfurt's register of natural monuments, where the tree is entry 009. The planting year is the city's own, so for once the age is a date rather than a guess, about 115 years. Walnuts are quick growers, which is how a tree that young has put on a trunk of that size.\n\nThe city's description is warmer than registers usually allow themselves. It calls the walnut exceptionally beautiful and imposing, and singles out the mighty crown that shades the path beneath it. That path is the point of the visit. You do not admire this tree from behind a fence; you walk under it.\n\nIt has stood here through both world wars, on the bank of an Altarm, an old arm of the Nidda that the river's main channel no longer runs through.\n\nThe path is free and open at all times. By our estimate the walk from Heddernheim U-Bahn station (U1, U2, U3) takes about 15 minutes, so check the route on a map before you set out. The pin is the register coordinate and only approximate, but a walnut whose leaves nearly touch the ground is not an easy tree to walk past.",
+    "how_to_recognise": "You can recognise it by the low walnut crown, leaves reaching almost to the ground over the path, on a trunk 4.36 metres round. It stands beside the old arm of the Nidda in Heddernheim.",
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+    "verify_notes": "City page (fetched 2026-10-31): Juglans regia, height 23 m, girth 4.36 m, planting year 1910 (city's own figure, so a documented planting for this specimen: about 115 years). Mighty crown shading the path below; leaves reach almost to the ground, 'exceptionally beautiful and imposing'. Protected radius 15 m. Girth 4.36 m on a 115-year walnut is plausible (fast species). Pin is the register coordinate (approximate). Life check RECENT (iNaturalist 2026-04-12 nearby). Register only, flagged. Transport minutes are an estimate from the coordinate, not read from a source."
+  },
+  {
+    "id": "frk_029",
+    "name": "The Wolfsweide Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 358,
+    "height_m": 25,
+    "location": {
+      "address": "An der Wolfsweide, Preungesheim, Frankfurt",
+      "latitude": 50.14761,
+      "longitude": 8.698791,
+      "neighbourhood": "Preungesheim"
+    },
+    "verified_sources": [
+      "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eiche-an-der-wolfsweide",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main"
+    ],
+    "official_register": {
+      "name": "Frankfurt Naturdenkmal register, entry 005",
+      "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eiche-an-der-wolfsweide"
+    },
+    "access": "Free: stands at the edge of a new housing area where it meets open fields (city page); no source states a fence, but no OSM check was possible",
+    "transport": "U-Bahn Preungesheim (U5), about 10 to 15 minutes on foot; estimate from the coordinate only",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Frankfurt protects this oak for its shape. The city's register says its crown begins unusually low and unfolds with remarkable symmetry, and the numbers back that up. It is 25 metres high and about 23 metres across, very nearly as wide as it is tall.\n\nIt is a pedunculate oak, 3.58 metres round, entry 005 on the city's register of natural monuments. It stands exactly where Preungesheim runs out. A new housing area comes up to it on one side and open fields begin on the other, and the city describes the tree as the transition between the two.\n\nHow long it has stood there, nobody has written down. The register gives no age, and we would rather leave the question open than guess one from the girth. If you know, tell us.\n\nThere is a second gap, and we would rather say it plainly. The register page is current, but we have found no recent photograph or sighting of the oak itself, so for now the city's listing is our only word that it still stands. If you walk out to it, a photograph would settle the matter.\n\nThe tree is free to visit, on the street called An der Wolfsweide. By our estimate it is 10 to 15 minutes on foot from the Preungesheim U5 stop. The pin is the register coordinate and approximate, so look for the low, even crown at the point where the houses stop and the fields start.",
+    "how_to_recognise": "You can recognise it by the crown, starting unusually low and spreading evenly about 23 metres across on a 25-metre oak. It stands at An der Wolfsweide, where the new houses of Preungesheim meet open fields.",
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+    "verify_notes": "City page (fetched 2026-10-31): Quercus robur, height 25 m, crown diameter about 23 m, girth 3.58 m; 'fascinates with a crown that begins unusually low and unfolds in remarkable symmetry'; stands on the edge of a development area as the transition to open fields; protected radius 15 m. No age given. Pin is the register coordinate. Life check NONE (no nearby observation), so alive status rests on a register page that is current (2025 register). Flagged: register only, no life observation. An earlier pass held it for lack of a figure; the figures are now fetched."
   }
 ]

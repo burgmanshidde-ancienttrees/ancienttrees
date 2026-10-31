@@ -405,6 +405,66 @@
       "lat": 50.22753,
       "lng": 8.6109,
       "reason": "2026-10-22. Already published under Bad Homburg (data/cities/bad-homburg.json); not a Frankfurt tree. Do not re-research."
+    },
+    {
+      "candidate": "Pappel am Lachegraben, Preungesheim (ND 007)",
+      "coords": [
+        50.156831,
+        8.684737
+      ],
+      "lat": 50.156831,
+      "lng": 8.684737,
+      "reason": "2026-10-31 verify pass. City page fetched: Populus sp., about 24 m, girth 7.4 m (suspicious for a poplar: likely buttressed or multi-stem, unverified), on partly farmed meadows. lifecheck NONE, no photo, species only to genus. Kept as a lead; verify the girth and a trunk photo before shipping."
+    },
+    {
+      "candidate": "Linde an der Bartholomaeusgasse, Zeilsheim (ND 027)",
+      "coords": [
+        50.094045,
+        8.492553
+      ],
+      "lat": 50.094045,
+      "lng": 8.492553,
+      "reason": "2026-10-31. City page fetched: small-leaved lime 24 m, girth 3.58 m, on a playground. lifecheck NONE, no age, no photo, playground pin is approximate. Deliverable next pass if a life observation or photo turns up."
+    },
+    {
+      "candidate": "Speierling im Sossenheimer Unterfeld, Sossenheim (ND 006)",
+      "coords": [
+        50.115202,
+        8.566095
+      ],
+      "lat": 50.115202,
+      "lng": 8.566095,
+      "reason": "2026-10-31. City page fetched: service tree 16 m, girth 3.05 m, markedly twisted trunk, on orchard meadows (Obstwiesen; access not stated). lifecheck NONE. Kept; distinctive spiral trunk is a reason if a photo or access evidence appears."
+    },
+    {
+      "candidate": "Speierling am Lohrberg, Seckbach (ND 023)",
+      "coords": [
+        50.149835,
+        8.734446
+      ],
+      "lat": 50.149835,
+      "lng": 8.734446,
+      "reason": "2026-10-31. City page fetched: only species and location, no measurements, no age. Lead."
+    },
+    {
+      "candidate": "Mispel am Berger Hang, Bergen-Enkheim (ND 002)",
+      "coords": [
+        50.155241,
+        8.770009
+      ],
+      "lat": 50.155241,
+      "lng": 8.770009,
+      "reason": "2026-10-31. City page fetched: medlar 5 to 6 m, 12 m wide, girth 2.2 m at 40 cm height, 'a very old specimen' on the Berger Hang orchard slope. No age figure, no life check run. Lead."
+    },
+    {
+      "candidate": "Eiche an der Herrenwiese, Schwanheim (ND 003)",
+      "coords": [
+        50.080801,
+        8.603985
+      ],
+      "lat": 50.080801,
+      "lng": 8.603985,
+      "reason": "2026-10-31. City page fetched: pedunculate oak, 'particularly beautiful, large and vital' but no girth, height or age. Lead."
     }
   ],
   "blocked": [
@@ -417,6 +477,16 @@
       "lat": 50.08695,
       "lng": 8.66806,
       "reason": "DEAD. Frankfurter Rundschau 2019-08-09 ('Baeumesterben in Frankfurt'): the 89-year-old weeping beech in Park Louisa, 1.10 m trunk diameter, was dead from climate stress and had to be felled. Not on the 2025 register. Never ship; Wikidata still lists it as a remarkable tree."
+    },
+    {
+      "candidate": "Eibe in der Berger Strasse 174, Bornheim (ND 031)",
+      "coords": [
+        50.12481,
+        8.7058
+      ],
+      "lat": 50.12481,
+      "lng": 8.7058,
+      "reason": "2026-10-31. City page: yew about 130 years, 16 m, girth 1.5 m, stands 'im Hinterhof des Hauses 174' (a private back yard); young and not a collectible public point. Hard rule 10."
     }
   ]
 }
