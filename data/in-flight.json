@@ -13,6 +13,20 @@
       "by": "night-run",
       "claimed_at": "2026-10-31T19:57:08+00:00",
       "trees_at_claim": 22
+    },
+    {
+      "target": "paris+madrid+frankfurt",
+      "kind": "enrich",
+      "by": "night-run",
+      "claimed_at": "2026-10-31T19:58:46+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "bamberg",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-10-31T19:58:47+00:00",
+      "trees_at_claim": 9
     }
   ]
 }
