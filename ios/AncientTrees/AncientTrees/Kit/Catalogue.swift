@@ -50,8 +50,14 @@ public struct Catalogue: Sendable {
     /// parenthetical the trees themselves carry, which is the same words from
     /// the same file one step earlier.
     private let scientificByCommon: [String: String]
+    /// Every name a kind of tree goes by, from /api/species.json's `names`
+    /// (2026-10-31), including species and genera we do not map yet. Search
+    /// only; see Kit/SpeciesSearch.swift.
+    public let speciesDirectory: [SpeciesNameRow]
+    private let otherNamesByCommon: [String: [String]]
 
     public init(trees: [Tree], walks: [Walk], species: [Species],
+                speciesDirectory: [SpeciesNameRow] = [],
                 collections: [TreeCollection] = [],
                 facets: BrowseFacets = .empty, version: String) {
         self.trees = trees
@@ -77,10 +83,19 @@ public struct Catalogue: Sendable {
             }
         }
         self.scientificByCommon = sci
+        self.speciesDirectory = speciesDirectory
+        var other: [String: [String]] = [:]
+        for r in speciesDirectory where r.isMapped {
+            other[r.c, default: []].append(contentsOf: r.a ?? [])
+        }
+        self.otherNamesByCommon = other
     }
 
     /// The scientific name behind a common name, where we hold one.
     public func scientificName(of commonName: String) -> String? { scientificByCommon[commonName] }
+
+    /// The other names of one of our species, in any of our languages.
+    public func otherNames(of commonName: String) -> [String] { otherNamesByCommon[commonName] ?? [] }
 
     public func tree(_ id: String) -> Tree? { byId[id] }
 

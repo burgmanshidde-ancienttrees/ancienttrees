@@ -91,10 +91,18 @@ export function searchWidgetJs(lang = "en"): string {
     // autocomplete, which matches either and says which one it matched. Latin
     // matches on the start of any word, so "robur" finds Quercus robur the way
     // a botanist would type it; the common name keeps its start-of-name bar.
+    // Its name in any of our languages answers too (s.a, 2026-10-31: Hidde
+    // often does not know the English name), on the start of any word, and
+    // the row then says which name matched, iNaturalist's matched_term.
+    function wordStart(name) { var x = norm(name); return x.indexOf(q) === 0 || x.indexOf(' ' + q) !== -1 || x.indexOf('-' + q) !== -1; }
     IDX.s.forEach(function(s) {
       var l = norm(s.l || '');
       if (norm(s.n).indexOf(q) === 0) species.push({kind: 'species', it: s});
       else if (l && (l.indexOf(q) === 0 || l.indexOf(' ' + q) !== -1)) species.push({kind: 'species', it: s});
+      else {
+        var hit = (s.a || []).filter(wordStart)[0];
+        if (hit) species.push({kind: 'species', it: s, via: hit});
+      }
     });
     // Trees only earn a slot once the query is specific: at least four
     // characters, matching the start of a word in the name, and never
@@ -143,7 +151,8 @@ export function searchWidgetJs(lang = "en"): string {
         // The scientific name under the common one, in italics, which is how
         // iNaturalist lays out a taxon row; it is also the only way a person
         // who typed the Latin can see why this row answered.
-        sec = (r.it.lh ? r.it.lh + ' &middot; ' : '') + r.it.count + ' mapped';
+        sec = (r.via ? escT(r.via) + ' &middot; ' : '') +
+              (r.it.lh ? r.it.lh + ' &middot; ' : '') + r.it.count + ' mapped';
       } else {
         name = r.it.n;
         sec = escT(r.it.c);

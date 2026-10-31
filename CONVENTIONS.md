@@ -3560,6 +3560,43 @@ scripts/qa.py guards it.
 
 ---
 
+## Searching a species by any of its names (2026-10-31)
+
+Hidde: "when adding a tree I often dont know the english name - some people
+might even prefer latin names can we make the specie database smarter and
+easier to search through on every occasion in the app possible".
+
+**Reference: iNaturalist's taxon autocomplete** (the entry above): it answers
+to the scientific name and to every common name it holds in every language,
+and returns `matched_term` so a row can say which name matched. **Pl@ntNet**
+matches scientific or common names fuzzily. So three things, all theirs:
+every name answers, a near miss still finds, and the row shows the name that
+matched when it is not the one on top ("Zomereik · Quercus robur" under
+Pedunculate Oak).
+
+**What ours does, both surfaces:** data/species-names.json (scripts/
+species_names.py: our own translations first, then Wikidata's labels and
+taxon common names, CC0) holds every name per species in our seven languages
+plus English synonyms. The app reads it as `names` on /api/species.json and
+matches in one place, Kit/SpeciesSearch.swift: start of any word, accents
+off, one letter off from five letters up; the map's species filter, the
+chooser for naming your own tree, map search and the species index all use
+it. The website reads `a` on the search index's species rows (search-form.ts),
+start of any word. The name we PRINT is still ours (hard rule 9); the others
+only answer.
+
+**The chooser also offers what we do not map:** species met in our leads and
+genera, under "Not on the map yet", so "haagbeuk" offers European Hornbeam
+(Carpinus betulus) and "eik" offers Oak (Quercus sp.), the publish-and-ask
+answer, instead of a name typed by hand. "Use what I typed" stays, at the
+foot, while no row carries exactly that name.
+
+Not done: showing names in the reader's own language (the app has no
+localisation yet) and iNaturalist's "scientific name first" setting (the
+Latin is under every row instead). `check_species_answer_to_every_name()`.
+
+---
+
 ## Discover: infinite scroll or more shelves? (2026-10-04)
 
 Hidde asked whether Discover should become an infinite scroll, with rows like tree islands, tallest trees and the best of the US. These are the references as remembered that day, not re-read. **True infinite scroll is used only for feeds of endless, similar items:** Instagram Explore, Pinterest, TikTok, Airbnb's results grid. **Catalogue browse screens are long but they END:** AllTrails Explore (near you, popular, lists, by activity, about ten shelves), komoot Discover (highlights and collections near you), the App Store's Apps tab (about twenty shelves), Netflix (forty-odd rows, each one a deliberate pick, personalised by row order rather than by endless loading), Spotify Home (shelves, near-personal ones first).

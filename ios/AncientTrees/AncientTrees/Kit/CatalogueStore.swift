@@ -211,9 +211,10 @@ public final class CatalogueStore {
         let dec = JSONDecoder()
         let tf = try dec.decode(TreeFeed.self, from: trees)
         let wf = try dec.decode(WalkFeed.self, from: walks)
-        let sp = species.flatMap { try? dec.decode(SpeciesFeed.self, from: $0) }?.species ?? []
+        let sf = species.flatMap { try? dec.decode(SpeciesFeed.self, from: $0) }
         let bf = browse.flatMap { try? dec.decode(BrowseFeed.self, from: $0) }
-        return Catalogue(trees: tf.trees, walks: wf.walks, species: sp,
+        return Catalogue(trees: tf.trees, walks: wf.walks, species: sf?.species ?? [],
+                         speciesDirectory: sf?.names ?? [],
                          collections: bf?.collections ?? [],
                          facets: BrowseFacets(feed: bf), version: tf.version)
     }

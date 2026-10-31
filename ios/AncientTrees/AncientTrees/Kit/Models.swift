@@ -346,6 +346,9 @@ public struct SpeciesFeed: Codable, Sendable {
     public let version: String
     public let count: Int
     public let species: [Species]
+    /// Every name a reader might type for a kind of tree (2026-10-31).
+    /// Optional, so a cached file from before it still decodes.
+    public let names: [SpeciesNameRow]?
 }
 
 /// One hand-curated collection: the website's own, not derived here. Thirteen of

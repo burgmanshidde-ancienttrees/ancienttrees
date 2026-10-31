@@ -1822,6 +1822,51 @@ def check_species_answer_to_their_latin_name():
     return out
 
 
+def check_species_answer_to_every_name():
+    """A species answers to every name it goes by, on both surfaces, 2026-10-31.
+
+    Hidde: "when adding a tree I often dont know the english name - some
+    people might even prefer latin names can we make the specie database
+    smarter and easier to search through on every occasion in the app
+    possible". The names are data (data/species-names.json, written by
+    scripts/species_names.py) and travel as `names` on /api/species.json for
+    the app and as `a` on the search index's species rows for the website.
+
+    Guarded here: the dictionary exists and covers the species we map, both
+    feeds carry it, and every app screen that searches species goes through
+    the one matcher (Kit/SpeciesSearch.swift) rather than a filter of its own,
+    which is how the Latin reached three screens and missed none only because
+    somebody went looking."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    names_path = root / "data" / "species-names.json"
+    if not names_path.exists():
+        return ["data/species-names.json is missing: run python3 scripts/species_names.py"]
+    rows = json.loads(names_path.read_text(encoding="utf-8")).get("species", [])
+    mapped = {r["common"] for r in rows if r.get("mapped", True)}
+    named = sum(1 for r in rows if r.get("mapped", True) and r.get("names"))
+    if len(mapped) and named < len(mapped) // 3:
+        out.append("data/species-names.json: only %d of %d mapped species have another name to search by"
+                   % (named, len(mapped)))
+    feed = DIST / "api" / "species.json"
+    if feed.exists():
+        if not json.loads(feed.read_text(encoding="utf-8")).get("names"):
+            out.append("api/species.json carries no `names`: the app's species search is English and Latin only")
+    index = DIST / "search-index.json"
+    if index.exists():
+        s = json.loads(index.read_text(encoding="utf-8")).get("s", [])
+        if s and not any(r.get("a") for r in s):
+            out.append("search-index.json: no species row carries its other names (a)")
+    screens = root / "ios" / "AncientTrees" / "AncientTrees" / "Screens"
+    for name in ("SpeciesPicker.swift", "SpeciesChooser.swift", "MapSearch.swift", "IndexPages.swift"):
+        f = screens / name
+        if f.exists():
+            text = f.read_text(encoding="utf-8")
+            if "filterSpecies(" not in text and "speciesHit(" not in text:
+                out.append("%s searches species without Kit/SpeciesSearch.swift" % name)
+    return out
+
+
 def check_faces_travel_to_the_app():
     """The thirteenth ratchet check, from 2026-08-25.
 
@@ -3582,6 +3627,7 @@ def main():
     failures += check_species_face_is_chosen()
     failures += check_faces_travel_to_the_app()
     failures += check_species_answer_to_their_latin_name()
+    failures += check_species_answer_to_every_name()
     failures += check_a_thumbnail_is_actually_a_thumbnail()
     failures += check_every_feed_is_in_the_version()
     failures += check_park_key_is_one_function()

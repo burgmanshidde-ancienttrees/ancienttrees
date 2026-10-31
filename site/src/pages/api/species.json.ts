@@ -10,14 +10,23 @@
 // depends on where the tree stands, the client already knows each tree's
 // coordinates, and a feed that pre-shifted would be wrong for every tree in a
 // species that spans two climates.
+//
+// `names` rides here too (2026-10-31): every name a reader might type for a
+// species, so the app's species search answers to "Zomereik", "Stieleiche" or
+// "Quercus robur" for the Pedunculate Oak, and offers species and genera we do
+// not map yet when somebody names their own tree. It is species data, it
+// changes no more often than the season data, and an app that predates it
+// ignores the key. See lib/species-names.ts.
 import { loadPhenology } from "../../lib/phenology";
+import { speciesNameRows } from "../../lib/species-names";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 
 export async function GET() {
   const species = [...loadPhenology().values()];
-  const body = JSON.stringify(species);
+  const names = speciesNameRows();
+  const body = JSON.stringify({ species, names });
   const version = await feedVersion(body);
-  return new Response(JSON.stringify({ version, licence: FEED_LICENCE, count: species.length, species }), {
+  return new Response(JSON.stringify({ version, licence: FEED_LICENCE, count: species.length, species, names }), {
     headers: { "Content-Type": "application/json" },
   });
 }

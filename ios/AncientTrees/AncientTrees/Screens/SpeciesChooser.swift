@@ -49,52 +49,40 @@ struct SpeciesChooser: View {
 
     private var typed: String { query.trimmingCharacters(in: .whitespaces) }
 
-    private var rows: [(name: String, count: Int)] {
-        guard !typed.isEmpty else { return index }
-        // The scientific name answers too (2026-10-03). It matters most here:
-        // a reader who knows their tree as Taxus baccata and finds no row for
-        // it would type a second name for a species we already carry, which
-        // is the exact split this chooser exists to prevent.
-        return index.filter {
-            $0.name.localizedCaseInsensitiveContains(typed)
-                || (catalogue.scientificName(of: $0.name)?.localizedCaseInsensitiveContains(typed) ?? false)
-        }
+    private var rows: [(name: String, count: Int, hit: SpeciesHit)] {
+        guard !typed.isEmpty else { return index.map { ($0.name, $0.count, .name) } }
+        // Every name it goes by answers. It matters most here: a reader who
+        // knows their tree as Taxus baccata (2026-10-03) or as a zomereik
+        // (2026-10-31, Hidde: "I often dont know the english name") and finds
+        // no row would type a second name for a species we already carry,
+        // which is the exact split this chooser exists to prevent.
+        let counts = Dictionary(index.map { ($0.name, $0.count) }, uniquingKeysWith: { a, _ in a })
+        return catalogue.filterSpecies(index.map(\.name), query: typed)
+            .map { ($0.name, counts[$0.name] ?? 0, $0.hit) }
     }
 
-    /// Offered only when nothing on the list matches what they typed, which is
-    /// how every tag field that also accepts new tags behaves. Offering it
-    /// beside a matching row invites a second spelling of a name we already
-    /// have, which is the whole reason this screen exists.
+    /// Kinds of tree we know by name and do not map yet: species met in our
+    /// leads and genera. A reader at a hornbeam gets Hornbeam, not a name of
+    /// their own; one who only knows "eik" gets Oak (Quercus sp.), which is
+    /// the publish-and-ask answer the site gives itself.
+    private var notMapped: [(row: SpeciesNameRow, hit: SpeciesHit)] {
+        catalogue.unmappedSpecies(matching: typed)
+    }
+
+    /// Offered while no row carries exactly what they typed, and at the foot
+    /// of the list, under every row that matched: the tag field that also
+    /// accepts new tags. Above a matching row it invited a second spelling of
+    /// a name we already have, which is the whole reason this screen exists.
     private var mayTypeOwn: Bool {
-        typed.count >= 3 && !rows.contains { $0.name.lowercased() == typed.lowercased() }
+        let t = SpeciesSearch.fold(typed)
+        return typed.count >= 3
+            && !rows.contains { SpeciesSearch.fold($0.name) == t }
+            && !notMapped.contains { SpeciesSearch.fold($0.row.c) == t }
     }
 
     var body: some View {
         NavigationStack {
             List {
-                if mayTypeOwn {
-                    Section {
-                        Button {
-                            onPick(typed)
-                            dismiss()
-                        } label: {
-                            HStack(spacing: 12) {
-                                Image(systemName: "plus.circle")
-                                    .foregroundStyle(Brand.moss)
-                                    .frame(width: 26, height: 26)
-                                Text("Use \u{201C}\(typed)\u{201D}")
-                                    .foregroundStyle(Brand.ink)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .contentShape(.rect)
-                            .frame(minHeight: 44)
-                        }
-                        .buttonStyle(.plain)
-                    } footer: {
-                        Text("You can name a kind of tree we do not map yet.")
-                    }
-                }
-
                 Section {
                     ForEach(rows, id: \.name) { row in
                         Button {
@@ -104,7 +92,7 @@ struct SpeciesChooser: View {
                             HStack(spacing: 12) {
                                 SpeciesMark(species: row.name, color: Brand.moss)
                                     .frame(width: 26, height: 26)
-                                Text(row.name).foregroundStyle(Brand.ink)
+                                SpeciesRowName(catalogue: catalogue, name: row.name, hit: row.hit)
                                 Spacer(minLength: 8)
                                 if row.name.lowercased() == current.lowercased() {
                                     Image(systemName: "checkmark")
@@ -128,6 +116,59 @@ struct SpeciesChooser: View {
                 } header: {
                     if typed.isEmpty, !nearby.isEmpty {
                         Text("Growing near you first")
+                    }
+                }
+
+                if !notMapped.isEmpty {
+                    Section {
+                        ForEach(notMapped, id: \.row) { item in
+                            Button {
+                                onPick(item.row.species)
+                                dismiss()
+                            } label: {
+                                HStack(spacing: 12) {
+                                    SpeciesMark(species: item.row.c, color: Brand.moss)
+                                        .frame(width: 26, height: 26)
+                                    SpeciesRowName(catalogue: catalogue, name: item.row.c, hit: item.hit,
+                                                   latin: item.row.isGenus ? item.row.l + " sp." : item.row.l)
+                                    Spacer(minLength: 8)
+                                    if SpeciesSearch.fold(item.row.species) == SpeciesSearch.fold(current)
+                                        || SpeciesSearch.fold(item.row.c) == SpeciesSearch.fold(current) {
+                                        Image(systemName: "checkmark")
+                                            .foregroundStyle(Brand.moss)
+                                    }
+                                }
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .contentShape(.rect)
+                                .frame(minHeight: 44)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    } header: {
+                        Text("Not on the map yet")
+                    }
+                }
+
+                if mayTypeOwn {
+                    Section {
+                        Button {
+                            onPick(typed)
+                            dismiss()
+                        } label: {
+                            HStack(spacing: 12) {
+                                Image(systemName: "plus.circle")
+                                    .foregroundStyle(Brand.moss)
+                                    .frame(width: 26, height: 26)
+                                Text("Use \u{201C}\(typed)\u{201D}")
+                                    .foregroundStyle(Brand.ink)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .contentShape(.rect)
+                            .frame(minHeight: 44)
+                        }
+                        .buttonStyle(.plain)
+                    } footer: {
+                        Text("You can name a kind of tree we do not map yet.")
                     }
                 }
             }

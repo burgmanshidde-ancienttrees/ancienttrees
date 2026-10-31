@@ -12,6 +12,7 @@ import { cityIsRenderable, slugify } from "../lib/trees";
 import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { citySearchNames } from "../lib/city-aliases";
+import { speciesSearchNames } from "../lib/species-names";
 import { cityPopularity } from "../lib/popularity";
 import { sciNameHtml } from "../lib/latin";
 
@@ -76,8 +77,14 @@ export async function GET() {
   // Pedunculate Oak page by typing either, which is what iNaturalist's
   // autocomplete does. The name is an ANSWER the intro already holds, so it
   // travels on the row and the widget never parses a parenthetical.
+  // `a` is every other name the species goes by (2026-10-31, Hidde: "when
+  // adding a tree I often dont know the english name"): Zomereik, Stieleiche,
+  // Farnia, イギリスナラ. The same block as a city's `a`, from the same file
+  // the app reads (lib/species-names.ts), search only.
+  const otherNames = speciesSearchNames();
   const s = qualifying.map(([common, members]) => ({
     n: common,
+    ...(otherNames.get(common)?.length ? { a: otherNames.get(common) } : {}),
     l: introBySlug.get(common)!.data.scientific_name,
     // The same name as HTML, italic but for the hybrid sign, the rank words
     // and a cultivar in quotes (latin.ts), so the widget prints it as given.

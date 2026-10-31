@@ -46,16 +46,15 @@ struct SpeciesPicker: View {
             }
     }
 
-    private var rows: [(name: String, count: Int)] {
-        let q = query.trimmingCharacters(in: .whitespaces).lowercased()
-        guard !q.isEmpty else { return index }
-        // The scientific name answers too (2026-10-03), so somebody who knows
-        // the tree as Taxus baccata filters the map without knowing we call
-        // it European Yew.
-        return index.filter {
-            $0.name.lowercased().contains(q)
-                || (catalogue.scientificName(of: $0.name)?.lowercased().contains(q) ?? false)
-        }
+    private var rows: [(name: String, count: Int, hit: SpeciesHit)] {
+        let q = query.trimmingCharacters(in: .whitespaces)
+        guard !q.isEmpty else { return index.map { ($0.name, $0.count, .name) } }
+        // Every name it goes by answers (2026-10-31): the Latin since
+        // 2026-10-03, and now Zomereik, Stieleiche, Farnia, one letter off
+        // included. The one matcher, Kit/SpeciesSearch.swift.
+        let counts = Dictionary(index.map { ($0.name, $0.count) }, uniquingKeysWith: { a, _ in a })
+        return catalogue.filterSpecies(index.map(\.name), query: q)
+            .map { ($0.name, counts[$0.name] ?? 0, $0.hit) }
     }
 
     var body: some View {
@@ -80,7 +79,7 @@ struct SpeciesPicker: View {
                         HStack(spacing: 12) {
                             SpeciesMark(species: name, color: Brand.moss)
                                 .frame(width: 26, height: 26)
-                            Text(name).foregroundStyle(Brand.ink)
+                            SpeciesRowName(catalogue: catalogue, name: name, hit: row.hit)
                             Spacer(minLength: 8)
                             if selection == name {
                                 Image(systemName: "checkmark").foregroundStyle(Brand.moss)

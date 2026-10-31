@@ -319,11 +319,10 @@ struct MapSearch: View {
         // And the scientific name, word-start too, so "quercus" and "robur"
         // both find Pedunculate Oak (2026-10-03). iNaturalist's autocomplete
         // answers to either name; the website's search does the same.
-        let species = allSpecies.filter { common in
-            if Self.startsAWord(Self.fold(common), q) { return true }
-            guard let sci = catalogue.scientificName(of: common) else { return false }
-            return Self.startsAWord(Self.fold(sci), q)
-        }
+        // And every other name it goes by, in any of our languages, one
+        // letter off included (2026-10-31): the one matcher every species
+        // list uses, Kit/SpeciesSearch.swift.
+        let species = catalogue.filterSpecies(allSpecies, query: query).map(\.name)
 
         var trees: [Tree] = []
         if q.count >= 4 || lane == .trees {
@@ -411,9 +410,12 @@ struct MapSearch: View {
     /// common name on top, Latin beneath. It is also how somebody who typed
     /// "robur" sees why Pedunculate Oak answered.
     private func speciesSub(_ s: String) -> Text {
-        let count = Text(treesLabel(catalogue.trees(ofSpecies: s).count))
-        guard let sci = catalogue.scientificName(of: s) else { return count }
-        return scientificNameText(sci) + Text(" · ") + count
+        var count = Text(treesLabel(catalogue.trees(ofSpecies: s).count))
+        if let sci = catalogue.scientificName(of: s) { count = scientificNameText(sci) + Text(" · ") + count }
+        // The name that answered, when it was not the one on top: somebody
+        // who typed "stieleiche" sees Stieleiche over Pedunculate Oak.
+        guard let via = catalogue.speciesHit(s, query: query)?.via else { return count }
+        return Text(via) + Text(" · ") + count
     }
 
     /// Does the query start the name, or start any word inside it?
