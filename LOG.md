@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31 (session): the profile flag fills on every signed-in visit
+
+What changed for readers: the website now fills the flag after your name on any page you open while signed in, not only at sign-in (signin-js.ts `settleIfSignedIn()`, and after a token refresh). Only an empty flag is written; a chosen flag or "Don't show" stays. Why: 47 of 53 accounts had no flag, because before 10-29 it was written only on /account and a stored session comes back for weeks without signing in again. The two sign-ins since the 10-29 fix (NL, AU) got theirs. Hidde asked about the 10-30 account with no flag: it never confirmed its address, and that address is a throwaway (a random subdomain of a domain registered 2025-12 behind a privacy service, no website), so a bot or a disposable sign-up, not a mail fault of ours; three real email sign-ins on 10-24 and 10-26 confirmed fine.
+
 ## 2026-10-31 (session, morning): false rung-2 alarm fixed, Baarn sightings closed
 
 Nothing changed for readers. Breakage: the brief and health.py said the smoke test "has not passed once" and the site was not being updated. Not true: smoke.yml and deploy.yml skip every push at job level, and both scripts counted those skipped runs as verdicts on top of a green scheduled smoke test (10-30 20:57) and a green deploy (06:08). Both now treat skipped like cancelled; health.py reads RUNG 2 clear. The one real red, the 05:55 scheduled deploy, was the Rio Frio photo width the night run had already fixed. Rung 1: the four Baarn sightings the night runs kept re-listing are Hidde's own (mine), and their photos are on this Mac. Verdicts written: 598e6c83 is a photo of a living room, blocked; the Cantonspark beech f6164700 waits on which trunk (register 1696954 sits 56 m off by the wintertuin, its text names a second beech near the Heemskerklaan entrance); the two Cantonspark sweetgums have no source and stay leads. Inbox reads 0 and 0.

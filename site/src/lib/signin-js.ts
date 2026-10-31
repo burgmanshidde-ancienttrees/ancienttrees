@@ -84,6 +84,7 @@ export const SIGNIN_JS = `
   //    here is the half that needs the rest of the page: finishing the act
   //    that asked for the sign-in.
   if (window.atJustSignedIn) landed();
+  else settleIfSignedIn();
 
   // WHAT HAPPENS ON THE PAGE YOU LAND ON (2026-09-18). Hidde: signing in and
   // out is clunky about which pages you land on. Two halves were missing. The
@@ -122,6 +123,17 @@ export const SIGNIN_JS = `
     el.src = '/country.js';
     el.onload = function() { if (window.atSettleCountry) go(); };
     document.head.appendChild(el);
+  }
+  // AND ON EVERY VISIT WHILE SIGNED IN (Hidde, 2026-10-31: "Yes, build it").
+  // A sign-in is rare: a stored session comes back for weeks without one, so
+  // 47 of 53 accounts still had no flag two days after the sign-in fix. The
+  // app already fills it on every profile load. One read per page, and a write
+  // only while the flag is empty. A spent token waits for refreshIfStale.
+  function settleIfSignedIn() {
+    try {
+      var s = JSON.parse(localStorage.getItem('ancienttrees_session') || 'null');
+      if (s && s.expires_at > Date.now() / 1000 + 60) settleFlag();
+    } catch (e) {}
   }
 
   function landed() {
@@ -208,6 +220,7 @@ export const SIGNIN_JS = `
         // ik wel ingelogd").
         if (window.atPaintNav) window.atPaintNav(true);
         if (window.atSyncSaves) window.atSyncSaves();
+        settleFlag();
       })
       .catch(function() {});
   })();
