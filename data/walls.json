@@ -132,11 +132,6 @@
       "released_at": "2026-10-26T09:41:20+00:00"
     },
     {
-      "slug": "nuremberg",
-      "kind": "verify",
-      "released_at": "2026-10-28T07:52:52+00:00"
-    },
-    {
       "slug": "canberra",
       "kind": "verify",
       "released_at": "2026-10-28T07:56:55+00:00"
@@ -185,6 +180,11 @@
       "slug": "spokane",
       "kind": "verify",
       "released_at": "2026-10-31T01:37:24+00:00"
+    },
+    {
+      "slug": "nuremberg",
+      "kind": "verify",
+      "released_at": "2026-10-31T01:38:43+00:00"
     }
   ]
 }
