@@ -2,96 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-05T17:47:31+00:00",
-   "date": "2026-09-05",
-   "run_id": "33982036154",
-   "minutes": 100.8,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 524,
-   "denials": 50,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(printenv), Bash(python3), Bash(rm), Bash(test)",
-   "ended": "success",
-   "tokens": 9307324,
-   "claims_held": [
-    "arnhem"
-   ],
-   "commits": 26,
-   "cities_touched": 17,
-   "cities": [
-    {
-     "city": "helsinki",
-     "trees": 2
-    },
-    {
-     "city": "argoules",
-     "trees": 1
-    },
-    {
-     "city": "aubers",
-     "trees": 1
-    },
-    {
-     "city": "estry",
-     "trees": 1
-    },
-    {
-     "city": "gjerrild",
-     "trees": 1
-    },
-    {
-     "city": "kopcany",
-     "trees": 1
-    },
-    {
-     "city": "kremnica",
-     "trees": 1
-    },
-    {
-     "city": "les-clayes-sous-bois",
-     "trees": 1
-    },
-    {
-     "city": "lohja",
-     "trees": 1
-    },
-    {
-     "city": "ramsau-bei-berchtesgaden",
-     "trees": 1
-    },
-    {
-     "city": "rannee",
-     "trees": 1
-    },
-    {
-     "city": "reyersviller",
-     "trees": 1
-    },
-    {
-     "city": "taasinge",
-     "trees": 1
-    },
-    {
-     "city": "tombeboeuf",
-     "trees": 1
-    },
-    {
-     "city": "toul",
-     "trees": 1
-    },
-    {
-     "city": "turku",
-     "trees": 1
-    },
-    {
-     "city": "yvignac-la-tour",
-     "trees": 1
-    }
-   ],
-   "trees": 18,
-   "logged": true
-  },
-  {
    "started": "2026-09-05T19:41:07+00:00",
    "date": "2026-09-05",
    "run_id": "33987839947",
@@ -22597,6 +22507,50 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-31T19:24:40+00:00",
+   "date": "2026-10-31",
+   "run_id": "41234026379",
+   "minutes": 33.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 208,
+   "denials": 1,
+   "denials_source": "permission_denials: Bash(python3 ; if ; for)",
+   "ended": "success",
+   "tokens": 682206,
+   "claims_held": [
+    "fort-worth",
+    "paris+madrid+frankfurt",
+    "bamberg"
+   ],
+   "commits": 12,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "canberra",
+     "trees": 5
+    },
+    {
+     "city": "frankfurt",
+     "trees": 4
+    },
+    {
+     "city": "fort-worth",
+     "trees": 3
+    },
+    {
+     "city": "madrid",
+     "trees": 1
+    },
+    {
+     "city": "paris",
+     "trees": 1
+    }
+   ],
+   "trees": 14,
    "logged": true
   }
  ],
