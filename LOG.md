@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31 (session with Hidde): Seasons row on tree pages, web and app
+
+**Live on the web** (commit 33ea54780): deciduous trees outside the tropics with a photograph show "Seasons" under the facts, four tiles spring to winter with every visitor's photographs of that season, "N of 4", and an empty tile that asks with the Add a photo flow (the one for now: camera and "Now" on moss). Desktop: under the facts beside a landscape lead, in the right column between map and story beside a portrait one. Looked at live at 375 and 1280 on the Paris horse chestnut (1 of 4, autumn, 7 photos; a tap opens the viewer). Rule in site/src/lib/seasons.ts, sent in the feed (`season` per photo, `seasonal` per tree); reader photos now get taken_month at publish; 53 months backfilled. **App**: seasonsRow in TreeDetail.swift, seen in the simulator (Paris 1 of 4; Friedewald 2 of 4 with the Now tile); ships with the next build. Not fixed: the app's Add a photo pill has its lower edge cut by the white page sliding over the photo (the 10-30 parallax); needs the pill moved into the page.
+
 ## 2026-10-31 (session with Hidde): the second ambassador gets an empty seat
 - **Product:** under a place's ambassador, "Become an ambassador" now has a small dashed circle with a plus in the avatar column (Slack's and Google Docs' "add someone"), replacing the thin rule and bare text of 10-27. Hidde chose it from three plus mockups (B). Web and app; the app looked at in the simulator on Florence; the website is checked by the CI build and then on the live Florence page. Still hidden for the place's own ambassador (10-30).
 - For Hidde: the next app build carries the empty-seat line.
