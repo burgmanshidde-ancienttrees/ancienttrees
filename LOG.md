@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31 (session, morning): false rung-2 alarm fixed, Baarn sightings closed
+
+Nothing changed for readers. Breakage: the brief and health.py said the smoke test "has not passed once" and the site was not being updated. Not true: smoke.yml and deploy.yml skip every push at job level, and both scripts counted those skipped runs as verdicts on top of a green scheduled smoke test (10-30 20:57) and a green deploy (06:08). Both now treat skipped like cancelled; health.py reads RUNG 2 clear. The one real red, the 05:55 scheduled deploy, was the Rio Frio photo width the night run had already fixed. Rung 1: the four Baarn sightings the night runs kept re-listing are Hidde's own (mine), and their photos are on this Mac. Verdicts written: 598e6c83 is a photo of a living room, blocked; the Cantonspark beech f6164700 waits on which trunk (register 1696954 sits 56 m off by the wintertuin, its text names a second beech near the Heemskerklaan entrance); the two Cantonspark sweetgums have no source and stay leads. Inbox reads 0 and 0.
+
 ## 2026-10-31 (07:58 retry): scouted Faro, nothing live
 
 No claims stood. Pace full until about 14:00 UTC, so the 9 READY leads wait; no write pass dispatched. Claimed and released bamberg (only 6 open leads, under the six-candidate floor; reverted the wall it would have recorded). Backup lane: scouted Faro. No municipal list; the ICNF register already holds Faro-district rows (Portimao, Monchique, Olhao, Sao Bras). Recorded as stalled with the next step: a verify pass on those rows. Next run after 14:00 UTC: write the READY leads and merge Canberra and Fort Worth.
