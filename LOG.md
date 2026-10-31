@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-31, night run (19:24 window): the held Canberra and Fort Worth trees went live
+
+- Rungs 1 to 3 clear (no submissions or notes; health only says the live site is behind main, so one deploy is dispatched at the end of the window).
+- Pace had reopened: merged canberra can_004 to can_008 (5) and fort-worth ftw_018, ftw_022, ftw_023 (3), all written earlier. Preflight 0 problems. Canberra's intro said "maps one tree" with three live; rewrote intro, meta and the stale FAQ for eight. Fort Worth count promises moved to 22.
+- Rung 4: a mail batch (archive-2026-11-01) still waits for Hidde's word, so no new batch drafted.
+
 ## 2026-10-31 (session with Hidde): the map's species filter on the website is the app's picker
 - **Product:** the Species chip on /explore no longer opens a dropdown of 521 English names. It opens a sheet you type into, the same as the app's map filter: species in view first, then by count; "zomereik", "Stieleiche", "Quercus robur" or one letter off all find Pedunculate Oak, and the row shows which name matched with the Latin under it, the count beside it, a tick on the chosen one; tap it again or "Any species" to turn it off. All eight languages. The other names come from /api/species.json, the app's feed, the first time the sheet opens (commit c0074e983). The app's picker already did this; nothing changed there.
 - qa's `check_species_answer_to_every_name()` now also fails if the website's filter goes back to a select.
