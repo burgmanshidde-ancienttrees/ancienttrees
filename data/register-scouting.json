@@ -1163,6 +1163,12 @@
    "country": "Australia",
    "status": "imported",
    "note": "SCOUTED 2026-10-27 on scout_next.py --target. The register is the ACT Tree Register (Urban Forest Act 2023, Conservator of Flora and Fauna), served as ArcGIS FeatureServer ACTGOV_Tree_Register_public_view layer 1 (item 3886f145a44f43e6a1a4b061b532d4c2); the old data.act.gov.au rsuq-cjs6 entry only links to actmapi MapServer hosts that do not resolve from the runner. Licence: the ArcGIS item's licenseInfo says Creative Commons By Attribution 4.0 (Australian Capital Territory); data.gov.au lists it 'Other', so the item field is the proof. 376 polygon rows: 350 registered, 17 provisional, 9 cancelled; 323 with trunk circumference (top 1030 cm red box, 1028 cm Blakely's red gum), height, canopy, species, land use, district. Coordinates are crown polygons, so approximate; LOCATION often generic (URBAN OPEN SPACE) and some rows are residential addresses (not visitable). Saved to data/registers/act-tree-register.json; 12 big single registered trees on public ground are leads in data/leads/canberra.json. Nothing published: needs a photo or pin per tree, and Australia is not a covered country so the photo-or-pin gate applies via preflight only. Next: photo_hunt on the leads, register_match for Canberra's existing trees."
+  },
+  {
+   "place": "Funchal",
+   "country": "Portugal",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-31 (backup lane, one search). No city or regional list of protected trees found. Lead: the IFCN Madeira fact-sheet series 'Arvores e bosques singulares da Madeira e Porto Santo' (ifcn.madeira.gov.pt/images/FotosArtigos/Florestas/ASMAC/ASMAC<n>.pdf, seen n=76..100): each sheet gives location, WGS84 coordinates, access and ownership, one tree or grove per sheet (ASMAC100 = red beech at Quinta do Imperador, Funchal). Next: fetch the sheets (curl -m 20), check reuse terms on the IFCN site, then record coordinates per sheet. Funchal council manages ~10,000 trees but publishes no notable list found."
   }
  ],
  "out_of_focus": {

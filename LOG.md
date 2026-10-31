@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-31, night run (third attempt): Funchal scouted, no tree live
+
+No claims stood. 9 READY leads still wait on the 25-a-day pace (full until about 14:00 UTC), and the four Baarn reader photographs are still not on disk (no key), so no verdict. Backup lane: scouted Funchal. No protected-tree list exists, but IFCN Madeira publishes one fact sheet per remarkable tree or grove (ASMAC76 to 100+, with WGS84 coordinates, access, ownership). Recorded as stalled in data/register-scouting.json with the next step (fetch the sheets, check reuse terms). Next run: that, then merge canberra and fort-worth after 14:00 UTC.
+
 ## 2026-10-31, night run (06:03): fixed the failing deploy
 
 Rung 2: Build and deploy had failed on qa.py's "1 of 1338 photographs have no measured width". It was rio-frio txf_004, a held Commons photo (a File: page URL, so photo_res.py could not read it). I wrote the real size (4032x2609) from the Commons API into data/cities/rio-frio.json, preflight 0 problems, pushed. This run cannot dispatch deploy.yml (HTTP 403 from the integration token), and a CI push does not trigger it, so For Hidde: next build carries the fix once deploy.yml runs (a laptop push or the schedule). No tree merged: pace is full until about 14:00 UTC and the four Baarn reader photographs are still not on disk (no key), so no verdict.
