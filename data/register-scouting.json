@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Evora",
+   "country": "Portugal",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-31 on scout_next.py --target. No register beyond the imported ICNF one (data/registers/portugal-icnf.json, CC BY 4.0, geocatalogo.icnf.pt/metadados/arv_class.html). It holds 4 rows within 25 km of Evora: KNJ1/337 blue gum, Herdade da Gramacha (8.9 km, girth 9.14 m, private); KNJ1/603 and 604 olives, Azaruja (17 km, register age 1000, private courela); KNJ1/317 holm oak, Herdade do Pinheiro, Montemor-o-Novo (23 km, age 120). All four already sit as leads in data/leads/evora.json, none open to walkers. Two web searches (Portuguese): no Camara Municipal de Evora list of arvores de interesse municipal (the 2012 law allows one, none found), no Jardim Publico tree survey, and the Arvore do Ano Portugal (UNAC) entries nearby are single trees, not a register: Sobreira Grande, Arraiolos (2022 winner, already evr_001; the council wants it classified). Not reached: Aviso PDFs on snit-mais.dgterritorio.gov.pt/SRUP (no PDF reader; they restate ICNF rows). Next angle: Camara de Evora ambiente or patrimonio office by mail for a municipal tree inventory; Evora Roman temple and Se cloister garden old trees, Jardim Publico and Convento dos Loisõs as hand leads; Parque da Caridade olives (Reguengos de Monsaraz, 32 km) as their own pass."
+  },
+  {
    "place": "Ibiza",
    "country": "Spain",
    "status": "stalled",

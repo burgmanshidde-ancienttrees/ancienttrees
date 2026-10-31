@@ -1,7 +1,8 @@
 {
   "city": "Evora",
   "country": "Portugal",
-  "updated": "2026-10-29",
+  "updated": "2026-10-31",
+  "scout_2026-10-31": "Register scout: no source beyond ICNF found (see data/register-scouting.json). Added the Arvore do Ano Portugal note below.",
   "about": "Leads from the 2026-10-29 verify pass for Evora (Alentejo). The ICNF register holds very few Evora-district trees; no city tree survey or Jardim Publico specimens found. Delivered: evr_001 Sobreira Grande (Arraiolos) in data/research/evora-verified.json.",
   "leads": [
     {
@@ -52,6 +53,13 @@
       "latitude": 38.2581,
       "source": "ICNF register KNJ1/541, Aviso n.1 of 07/01/2010, girth 5.6 m; Aviso text (per search summary) calls the classified olives hollow and decayed",
       "reason": "not Evora; castle precinct access unverified; belongs to an Alvito pass."
+    },
+    {
+      "name": "Sobreira Grande (Arraiolos), Arvore Portuguesa do Ano 2022",
+      "species": "Cork Oak (Quercus suber)",
+      "place": "Vale do Pereiro, Arraiolos, about 25 km from Evora",
+      "source": "UNAC national contest 2022 winner (3,317 votes), third in the European contest; agroportal.pt/a-sobreira-grande-foi-eleita-a-arvore-portuguesa-do-ano-2022/; Arraiolos council plans an interesse publico classification",
+      "reason": "already delivered as evr_001 in data/research/evora-verified.json; recorded here so the scout trail is complete."
     },
     {
       "name": "Jardim Publico de Evora",

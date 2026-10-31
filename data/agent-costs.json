@@ -4,6 +4,22 @@
   "2026-10-31": [
    {
     "date": "2026-10-31",
+    "kind": "verify",
+    "target": "guimaraes",
+    "tokens": 72000,
+    "trees": 0,
+    "note": "nothing new, all register rows live or leads; 48h wall"
+   },
+   {
+    "date": "2026-10-31",
+    "kind": "scout",
+    "target": "evora",
+    "tokens": 52000,
+    "trees": 0,
+    "note": "verdict empty in register-scouting.json; four private ICNF rows already leads"
+   },
+   {
+    "date": "2026-10-31",
     "kind": "write",
     "target": "READY leads: paris, madrid (oxford declined)",
     "tokens": 87000,
