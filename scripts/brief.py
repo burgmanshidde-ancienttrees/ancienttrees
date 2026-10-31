@@ -113,14 +113,20 @@ def broken_gates(out):
                "data-digest.yml", "weekly-analysis.yml", "routes.yml"]
 
     def latest(wf):
-        raw = sh("gh", "run", "list", "--workflow", wf, "-L", "12",
+        # Thirty, and SKIPPED runs dropped: smoke.yml and deploy.yml skip every
+        # push at job level, so on 2026-10-31 twelve skipped pushes filled the
+        # window and the brief said the smoke test "has not passed once" while
+        # its scheduled run the evening before was green. A skipped run judged
+        # nothing, like a cancelled one.
+        raw = sh("gh", "run", "list", "--workflow", wf, "-L", "30",
                  "--json", "workflowName,conclusion,status,createdAt,event")
         try:
             rows = json.loads(raw) if raw else []
         except Exception:
             return wf, []
         return wf, [r for r in rows
-                    if r.get("status") == "completed" and r.get("conclusion")]
+                    if r.get("status") == "completed" and r.get("conclusion")
+                    and r.get("conclusion") != "skipped"]
 
     try:
         from concurrent.futures import ThreadPoolExecutor

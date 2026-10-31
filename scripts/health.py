@@ -192,8 +192,14 @@ def gh_latest(workflow):
                 and r.get("conclusion")]
         if not done:
             return None
-        # The newest run that reached a verdict. Cancelled is not a verdict.
-        judged = [r for r in done if r.get("conclusion") != "cancelled"]
+        # The newest run that reached a verdict. Cancelled is not a verdict, and
+        # neither is skipped: since 2026-10-31 at the latest smoke.yml and
+        # deploy.yml skip every push run at job level, so twelve skipped pushes
+        # sat on top of a green scheduled smoke test and a green dispatched
+        # deploy, and this answered "skipped, 0h ago, the site is NOT being
+        # updated" while a deploy was in flight.
+        judged = [r for r in done
+                  if r.get("conclusion") not in ("cancelled", "skipped")]
         done = judged or done
         created = done[0].get("createdAt", "")
         when = datetime.datetime.fromisoformat(created.replace("Z", "+00:00"))
