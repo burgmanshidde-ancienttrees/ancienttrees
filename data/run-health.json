@@ -2,34 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-05T19:41:07+00:00",
-   "date": "2026-09-05",
-   "run_id": "33987839947",
-   "minutes": 41.4,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 273,
-   "denials": 32,
-   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(git), Bash(iconv), Bash(mkdir), Bash(python3), Bash(rm), Bash(set)",
-   "ended": "success",
-   "tokens": 4954414,
-   "claims_held": [
-    "prague",
-    "_famous-japan",
-    "milan"
-   ],
-   "commits": 9,
-   "cities_touched": 1,
-   "cities": [
-    {
-     "city": "hiroshima",
-     "trees": 2
-    }
-   ],
-   "trees": 2,
-   "logged": true
-  },
-  {
    "started": "2026-09-05T21:46:39+00:00",
    "date": "2026-09-05",
    "run_id": "33994005165",
@@ -22551,6 +22523,42 @@
     }
    ],
    "trees": 14,
+   "logged": true
+  },
+  {
+   "started": "2026-11-01T01:29:37+00:00",
+   "date": "2026-11-01",
+   "run_id": "41261255245",
+   "minutes": 21.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 119,
+   "denials": 1,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; if ...)",
+   "ended": "success",
+   "tokens": 789623,
+   "claims_held": [
+    "new-york",
+    "fort-worth",
+    "porto"
+   ],
+   "commits": 10,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "dublin",
+     "trees": 2
+    },
+    {
+     "city": "new-york",
+     "trees": 1
+    },
+    {
+     "city": "paris",
+     "trees": 0
+    }
+   ],
+   "trees": 3,
    "logged": true
   }
  ],
