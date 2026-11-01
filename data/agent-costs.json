@@ -9,6 +9,38 @@
     "tokens": 81000,
     "trees": 1,
     "note": "dub_018 live; held: dub_019 no recognition basis, tav_001/frk_027/inn_007 access (rule 10), sfo_012 duplicate of sfo_004"
+   },
+   {
+    "date": "2026-11-01",
+    "kind": "verify",
+    "target": "paris+madrid+frankfurt (enrich)",
+    "tokens": 59000,
+    "trees": 0,
+    "note": "1 best_time (par_071); 11 gaps dead-ended; frankfurt.de behind Cloudflare"
+   },
+   {
+    "date": "2026-11-01",
+    "kind": "verify",
+    "target": "lagos",
+    "tokens": 75000,
+    "trees": 0,
+    "note": "nothing new; ICNF Algarve rows unconfirmed or private; passcheck --brief lagos searches Nigeria"
+   },
+   {
+    "date": "2026-11-01",
+    "kind": "verify",
+    "target": "faro",
+    "tokens": 78000,
+    "trees": 0,
+    "note": "no cluster of four in eastern Algarve; Almargem Loule PDF needs OCR"
+   },
+   {
+    "date": "2026-11-01",
+    "kind": "verify",
+    "target": "new-york",
+    "tokens": 115000,
+    "trees": 0,
+    "note": "nyc_030 Douglaston weeping beech and nyc_031 delivered flagged; NJDEP/Westchester rows unshippable; nycgovparks.org blocked"
    }
   ],
   "2026-10-31": [
