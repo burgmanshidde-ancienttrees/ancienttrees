@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 session: Caribbean, four lone trees live (Hidde's ask, after Curaçao)
+
+Live: bbd_001 the Queen's Park baobab (/bridgetown, Barbados), pur_001 La Ceiba de Vieques (/vieques, Puerto Rico), abw_001 the Eagle Beach fofoti (/aruba, there for its wind-twisted shape, not its age), dom_001 La Ceiba of Tamboril (/tamboril, Dominican Republic, natural monument, access unsettled and said so). All flagged, approximate pins, ages left as claims with `age_basis: source` so no title prints one as fact. Commons photos for Barbados and Aruba, both geotagged at the tree; Vieques and Tamboril have none. One light verify pass, 177k tokens. Dead: Ponce ceiba (2021/22), Tom Cringle's cotton tree (Jamaica). Young-tree traps: Havana's El Templete ceiba, St Vincent breadfruit. 9 leads in data/leads/caribbean.json, best: the Warrens baobab (Barbados, no coordinate) and Bonaire's wayaká (Dutch Tree of the Year 2024 runner-up, location not published). Also: a place named after its country shows once in the breadcrumb (Curaçao, Aruba, Singapore, Cyprus).
+
 ## 2026-11-01 session: the support page is gone
 
 Hidde: "de support page wat absolute onzin ... haal maar helemaal weg" (among other things it claimed that deleting an account removes your pictures, which is false). The page is deleted, along with its footer link and the Support row in the web Settings. /support redirects to /about, because it is the App Store listing's Support URL and /about carries info@ancienttrees.app. The app had no link to it. Not yet seen after the CI build.
