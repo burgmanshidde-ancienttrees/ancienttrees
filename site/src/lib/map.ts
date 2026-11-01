@@ -5,6 +5,7 @@
 import {MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
 import { mapCardJs } from "./map-card-js";
+import { mapFiltersJs } from "./map-filters-js";
 import { ui } from "./i18n";
 import { icon } from "./icons";
 
@@ -409,7 +410,7 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
   const speciesLatinJson = JSON.stringify(speciesLatin);
   return (
     mapScript(
-    `${PILES_JS}${PINS_JS}${mapCardJs(lang)}
+    `${PILES_JS}${PINS_JS}${mapCardJs(lang)}${mapFiltersJs()}
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
 // The empty map's ask (Hidde, 2026-10-25): the grey card of an empty notes
@@ -419,113 +420,23 @@ var EMPTY = ${JSON.stringify({ title: ui(lang).emptyPlaceTitle, here: ui(lang).e
   ic: icon("tree", "regular"), plus: icon("plus", "bold") })};
 var SPECIES = ${speciesJson};
 var SPECIES_L = ${speciesLatinJson};
-// THE FILTER MODEL AND THE ACCOUNT CHIPS COME BEFORE THE MAP (2026-10-07):
-// MapLibre throws where WebGL is unavailable, and everything below the
-// constructor then never runs. A chip that cannot ask for sign-in because
-// the map failed is the dead control Hidde keeps finding; it asks first.
-// ---- THE FILTER ROW (2026-09-12).
-//
-// Convention, looked up rather than invented (CONVENTIONS.md): Google Maps
-// puts a scrolling row of capsule chips over the top of the map and nothing
-// else; AllTrails and Airbnb put a Filters BUTTON that opens a sheet, which is
-// the right shape for eight filters and the wrong one for four. Our own app
-// draws the chip row, so the website draws the same row: same capsules, same
-// words, same order.
-//
-// WHICH CHIPS, and this is the half that needed checking rather than copying.
-// MapFilters.swift still DEFINES five (peaking, photo, walkable, species,
-// mine) and the app's row carried four of them for a while. It does not now:
-// what ships on the phone today is the walk chip, Favourites, My trees and
-// Species, because Hidde cut the rest, and his reasons are in MapTab.swift.
-// "At their best" is a pulse on the pins rather than a filter, "with a photo"
-// was doing the editorial order's job, and "within 2 km" was doing the
-// distance-ordered list's job. So the website takes the row the app actually
-// has, minus the walk chip, which is Plus.
-//
-// Plus one the app has not got: FREE TO VISIT (Hidde, 2026-09-12: "ik zou nog
-// wel een filter willen bouwen voor betaalde bomen waar je een ticket voor
-// moet kopen - dat je die weg kunt halen"). It is the oldest complaint about
-// this site wearing a control: a city page that turns out to be a garden page
-// (2026-08-23, "ik heb liever 34 goede bereikbare dan 39"). 241 of our trees
-// stand behind a ticket, and somebody who wants an afternoon out for nothing
-// should be able to say so. It belongs in the app's row too; that half needs
-// a Mac and is written down.
-//
+// THE FILTER ROW is lib/map-filters-js.ts, shared with the city map; it is
+// wired up here, before the map, for the reason it gives.
 // FILTERING RE-SOURCES, it does not hide a layer: the same-spot piles are
 // marked on the data (atMarkPiles), so what is hidden must leave the data.
-var FILTERS = { free: false, fav: false, mine: false, sp: -1 };
-function filtersOn() {
-  return FILTERS.free || FILTERS.fav || FILTERS.mine || FILTERS.sp >= 0;
-}
-function keepsTree(f) {
-  var p = f.properties;
-  if (FILTERS.free && p.paid === 1) return false;
-  if (FILTERS.sp >= 0 && p.sp !== FILTERS.sp) return false;
-  if (FILTERS.fav && !(window.atHasSaved && window.atHasSaved(p.id))) return false;
-  if (FILTERS.mine && !(window.atHasVisited && window.atHasVisited(p.id))) return false;
-  return true;
-}
 function applyFilters() {
   var src = (typeof map !== 'undefined' && map && map.getSource) ? map.getSource('trees') : null;
   if (!src) return;
-  var kept = filtersOn() ? DATA.features.filter(keepsTree) : DATA.features;
+  var kept = filtersOn() ? DATA.features.filter(function(f) { return keepsTree(f.properties); }) : DATA.features;
   src.setData({ type: 'FeatureCollection', features: atMarkPiles(kept) });
-  var note = document.getElementById('mf-count');
-  if (note) {
-    // A number only while a filter is on. The map's own copy carries no counts
-    // on purpose (2026-07-29), and this is not copy: it is the answer to what
-    // you just pressed, and zero has to be sayable.
-    note.hidden = !filtersOn();
-    note.textContent = kept.length === 0 ? 'No trees match'
-      : (kept.length === 1 ? '1 tree' : kept.length + ' trees');
-  }
+  atFilterCount(kept.length);
 }
-// Both lists live in the account, so both chips need one. Signed out they ask
-// rather than emptying the map, which is the rule Hidde set for the app's own
-// two: "als je uitgelogd op favourites of my trees filter klikt moet er ook
-// een inlog scherm opkomen."
-// AND THE SERVER DECIDES whether there is an account, through the one door
-// every gated tap uses (atCollection.gate, 2026-10-05). This chip used to ask
-// the browser (a stored session believed on its own say-so), so a token the
-// server had already refused let the filter switch on and empty the map, with
-// no sign-in in sight (Hidde, 2026-10-07: "if I press favourites or mytrees
-// as a filter it should force people to login").
-function toggleFilter(b, f) {
-  FILTERS[f] = !FILTERS[f];
-  b.classList.toggle('is-on', FILTERS[f]);
-  b.setAttribute('aria-pressed', FILTERS[f] ? 'true' : 'false');
-  applyFilters();
-}
-document.querySelectorAll('.mf[data-f]').forEach(function(b) {
-  b.addEventListener('click', function() {
-    var f = b.dataset.f;
-    if ((f === 'fav' || f === 'mine') && !FILTERS[f]) {
-      var C = window.atCollection;
-      var ask = function() {
-        // Signed out: sign in and come back with THIS chip on, rather than
-        // landing on an unfiltered map having been asked for nothing.
-        if (window.atOpenSignIn) window.atOpenSignIn(b.dataset.label || b.textContent.trim(), null, { kind: 'filter', filter: f });
-      };
-      if (C && C.gate) C.gate(function() { toggleFilter(b, f); }, ask);
-      else ask();
-      return;
-    }
-    toggleFilter(b, f);
-  });
+atMapFilters({
+  apply: applyFilters,
+  items: function() { return DATA.features.map(function(f) { return { sp: f.properties.sp, c: f.geometry.coordinates }; }); },
+  ready: function(cb) { cb(); },
+  map: function() { return typeof map !== 'undefined' ? map : null; }
 });
-// Back from signing in with a chip to switch on (signin-js hands it over).
-if (window.atPendingFilter) {
-  var pf = window.atPendingFilter; window.atPendingFilter = null;
-  var pb = document.querySelector('.mf[data-f="' + pf + '"]');
-  var PC = window.atCollection;
-  if (pb && !FILTERS[pf] && PC && PC.gate) {
-    // After the saved and seen lists have arrived, or the filter keeps nothing.
-    var jobs = [];
-    if (window.atSyncSaves) jobs.push(Promise.resolve(window.atSyncSaves()));
-    if (window.atSyncVisited) jobs.push(Promise.resolve(window.atSyncVisited()));
-    PC.gate(function() { Promise.all(jobs).then(function() { toggleFilter(pb, pf); }).catch(function() {}); }, function() {});
-  }
-}
 
 // One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
 var map = new maplibregl.Map({
@@ -579,6 +490,18 @@ try {
   if (REGIONS[tz]) { map.jumpTo({center: REGIONS[tz], zoom: 9}); }
   else if (tz && tz.indexOf('Europe/') === 0) { map.jumpTo({center: [10, 50], zoom: 4}); }
 } catch (e) {}
+// The map keeps its place in the address (#map=zoom/lat/lng, the
+// OpenStreetMap form; Google Maps and Airbnb do the same), so back from a tree
+// page lands where you were, not on the timezone guess (Hidde, 2026-11-01:
+// "fix the back button thing"). replaceState, so panning adds no history.
+var _view = /^#map=([0-9.]+)\\/(-?[0-9.]+)\\/(-?[0-9.]+)$/.exec(location.hash);
+if (_view) { map.jumpTo({zoom: +_view[1], center: [+_view[3], +_view[2]]}); }
+map.on('moveend', function() {
+  if (location.hash && location.hash.indexOf('#map=') !== 0) { return; }
+  var c = map.getCenter();
+  try { history.replaceState(null, '', location.pathname + location.search + '#map=' +
+    map.getZoom().toFixed(2) + '/' + c.lat.toFixed(5) + '/' + c.lng.toFixed(5)); } catch (e) {}
+});
 // Arriving from a town in the search that we hold no tree for
 // (#@lat,lng,Name, search-form.ts): the map opens on that town, at the zoom a
 // town fills, and the sheet asks for its first tree under its name. Read after
@@ -701,142 +624,6 @@ function initTreeLayers() {
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
 
-// The species chip wears the chosen species, the way the app's does
-// (FilterChipLabel(label: filters.species ?? "Species")), and opens the
-// species sheet: the app's SpeciesPicker, row for row (Hidde, 2026-10-31,
-// "cross platform always"). Species on the map in view first, then by how many
-// we map; typing answers to the name, the Latin, every other name it goes by
-// and one letter off, best match first, the way Kit/SpeciesSearch.swift does.
-// The row says which name answered. Tapping the chosen species again turns it
-// off, as in the app.
-var spWrap = document.getElementById('mf-species-wrap');
-var spLabel = document.getElementById('mf-species-label');
-var spSheet = document.getElementById('sp-sheet');
-var spQ = document.getElementById('sp-q');
-var spList = document.getElementById('sp-list');
-var spEmpty = document.getElementById('sp-empty');
-var spAnyBtn = document.getElementById('sp-any');
-if (spWrap && spSheet && spQ && spList) {
-  var spAnyText = spLabel ? spLabel.textContent : '';
-  var SP_TICK = ${JSON.stringify(icon("check", "bold"))};
-  var spNames = null, spLoading = false, spOrder = [], spCount = [];
-  for (var si = 0; si < SPECIES.length; si++) spCount.push(0);
-  DATA.features.forEach(function(f) { var s = f.properties.sp; if (s !== undefined) spCount[s]++; });
-  var spPlain = SPECIES_L.map(function(h) { return h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&'); });
-  var spFold = function(s) {
-    s = String(s).toLowerCase();
-    try { s = s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, ''); } catch (e) {}
-    return s.trim();
-  };
-  var spWords = function(f) { return f.split(/[ ('-]+/).filter(Boolean); };
-  var spStarts = function(name, q) {
-    var n = spFold(name);
-    return n.indexOf(q) === 0 || spWords(n).some(function(w) { return w.indexOf(q) === 0; });
-  };
-  var spDist = function(a, b) {
-    if (Math.abs(a.length - b.length) > 1) return 2;
-    var prev = [], cur, i, j;
-    for (j = 0; j <= b.length; j++) prev.push(j);
-    for (i = 1; i <= a.length; i++) {
-      cur = [i];
-      for (j = 1; j <= b.length; j++) {
-        cur.push(Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)));
-      }
-      prev = cur;
-    }
-    return prev[b.length];
-  };
-  // Five letters at least: below that one letter off matches half the list.
-  var spNearly = function(name, q) {
-    if (q.length < 5) return false;
-    return spWords(spFold(name)).some(function(w) {
-      for (var len = q.length - 1; len <= q.length + 1; len++) {
-        if (len > 0 && len <= w.length && spDist(q, w.slice(0, len)) <= 1) return true;
-      }
-      return false;
-    });
-  };
-  // [rank, the other name that answered]: 0 name, 1 Latin, 2 another name, 3 nearly.
-  var spHit = function(i, q) {
-    if (!q) return [0, ''];
-    var c = SPECIES[i], l = spPlain[i], other = (spNames && spNames[c]) || [], k;
-    if (spStarts(c, q)) return [0, ''];
-    if (l && spStarts(l, q)) return [1, ''];
-    for (k = 0; k < other.length; k++) if (spStarts(other[k], q)) return [2, other[k]];
-    if (spNearly(c, q) || (l && spNearly(l, q))) return [3, ''];
-    for (k = 0; k < other.length; k++) if (spNearly(other[k], q)) return [2, other[k]];
-    return null;
-  };
-  var spRender = function() {
-    var q = spFold(spQ.value), rows = [];
-    spOrder.forEach(function(i, pos) {
-      var h = spHit(i, q);
-      if (h) rows.push({ i: i, pos: pos, r: h[0], via: h[1] });
-    });
-    rows.sort(function(a, b) { return a.r - b.r || a.pos - b.pos; });
-    if (spAnyBtn) spAnyBtn.hidden = FILTERS.sp < 0;
-    if (spEmpty) spEmpty.hidden = rows.length > 0;
-    spList.innerHTML = rows.map(function(row) {
-      var i = row.i, sub = (row.via ? _esc(row.via) + (SPECIES_L[i] ? ' &middot; ' : '') : '') + SPECIES_L[i];
-      return '<li><button type="button" class="sp-row" data-i="' + i + '">' +
-        '<span class="sp-txt"><span class="sp-n">' + _esc(SPECIES[i]) + '</span>' +
-        (sub ? '<span class="sp-sub">' + sub + '</span>' : '') + '</span>' +
-        (FILTERS.sp === i ? '<span class="sp-tick">' + SP_TICK + '</span>' : '<span class="sp-c">' + spCount[i] + '</span>') +
-        '</button></li>';
-    }).join('');
-  };
-  var spLoad = function() {
-    if (spNames || spLoading) return;
-    spLoading = true;
-    fetch('/api/species.json').then(function(r) { return r.json(); }).then(function(j) {
-      spNames = {};
-      (j.names || []).forEach(function(r) { if (r.m !== false && !r.g) spNames[r.c] = r.a || []; });
-      if (spQ.value) spRender();
-    }).catch(function() { spLoading = false; });
-  };
-  var spChoose = function(i) {
-    FILTERS.sp = i;
-    spWrap.classList.toggle('is-on', i >= 0);
-    if (spLabel) spLabel.textContent = i < 0 ? spAnyText : SPECIES[i];
-    applyFilters();
-    spSheet.close();
-  };
-  spWrap.addEventListener('click', function() {
-    // What is around you first, as the app's picker leads with what is on the
-    // map: counted when the sheet opens, against the map as it stands.
-    var near = {};
-    try {
-      var b = map.getBounds();
-      DATA.features.forEach(function(f) {
-        var g = f.geometry.coordinates, s = f.properties.sp;
-        if (s !== undefined && g[0] !== null && b.contains(g)) near[s] = 1;
-      });
-    } catch (e) {}
-    spOrder = SPECIES.map(function(_, i) { return i; }).sort(function(a, b) {
-      return (near[b] ? 1 : 0) - (near[a] ? 1 : 0) || spCount[b] - spCount[a] || a - b;
-    });
-    spQ.value = '';
-    spRender();
-    spLoad();
-    spSheet.showModal();
-    spList.scrollTop = 0;
-    // The keyboard only where there is one to spare: on a phone it would
-    // cover the list before anybody has looked at it (the app's .searchable
-    // does not focus either).
-    if (window.matchMedia('(pointer: fine)').matches) spQ.focus(); else spQ.blur();
-  });
-  spQ.addEventListener('input', function() { spLoad(); spRender(); });
-  spList.addEventListener('click', function(e) {
-    var btn = e.target.closest && e.target.closest('.sp-row');
-    if (!btn) return;
-    var i = parseInt(btn.getAttribute('data-i'), 10);
-    spChoose(FILTERS.sp === i ? -1 : i);
-  });
-  if (spAnyBtn) spAnyBtn.addEventListener('click', function() { spChoose(-1); });
-}
-// The account's two lists arrive after this runs, so a chip pressed while they
-// are still in flight repaints when they land.
-window.atRefilterMap = applyFilters;
 // ---- The city chooser (Hidde, 2026-07-31, final form: "waarom kom ik
 // dan niet direct op de City Page?"). The map is where you choose; the
 // city page is the city experience, full stop. The panel lists up to ten

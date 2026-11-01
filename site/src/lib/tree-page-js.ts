@@ -22,11 +22,11 @@
 // maplibregl-canvas is there at every width.
 
 import { MAP_STYLE, MAP_CREDIT, SUPABASE_URL, SUPABASE_KEY } from "./site-config";
-import { mapScript } from "./map";
+import { mapScript, PILES_JS, PINS_JS } from "./map";
 
-export function treePageScript(lat: number, lng: number): string {
-  return mapScript(`
-var LAT = ${lat}, LNG = ${lng};
+export function treePageScript(lat: number, lng: number, id = ""): string {
+  return mapScript(`${PILES_JS}${PINS_JS}
+var LAT = ${lat}, LNG = ${lng}, TREE_ID = ${JSON.stringify(id)};
 var mapEl = document.getElementById('map');
 var hero = document.querySelector('.td-hero');
 var insetHost = document.querySelector('.td-inset');
@@ -65,6 +65,37 @@ if (mapEl) {
   dot.className = 'pin pin-dot';
   new maplibregl.Marker({ element: dot }).setLngLat([LNG, LAT]).addTo(map);
   map.on('load', function () { map.resize(); });
+  // THE MAP AROUND IT (Hidde, 2026-11-01: "should be showing a view of the
+  // actual map which you can then click"). The small map was one dot on a
+  // street plan; it now draws the trees around this one as every map draws
+  // them (PINS_JS), from the rows the city map reads (/api/pins.json). A tap
+  // on one opens it on its city's map; a click anywhere else on the side map
+  // opens the full map on this tree, as Google Maps' place preview does. A
+  // drag is not a click, so the side map still pans.
+  map.on('load', function () {
+    fetch('/api/pins.json').then(function (r) { return r.json(); }).then(function (rows) {
+      var feats = [];
+      rows.forEach(function (r) {
+        if (r[0] === TREE_ID) { return; }
+        feats.push({type: 'Feature', geometry: {type: 'Point', coordinates: [r[1], r[2]]},
+                    properties: {id: r[0], cs: r[3], pr: r[4]}});
+      });
+      if (map.getSource('around')) { return; }
+      map.addSource('around', {type: 'geojson', data: {type: 'FeatureCollection', features: atMarkPiles(feats)}});
+      atPinLayers(map, 'around', 'around-tree', function (p) {
+        tappedTree = true;
+        location.href = '/' + p.cs + '#tree=' + encodeURIComponent(p.id);
+      }, null, null);
+    }).catch(function () {});
+  });
+  var tappedTree = false;
+  var fullMap = document.querySelector('.td-side-expand');
+  map.on('click', function () {
+    setTimeout(function () {
+      if (tappedTree) { tappedTree = false; return; }
+      if (fullMap && wide.matches && !noPhoto && mapEl.parentNode === sideHost) { location.href = fullMap.href; }
+    }, 0);
+  });
   interactive(wide.matches && !noPhoto);
   if (wide.addEventListener) wide.addEventListener('change', place);
 }

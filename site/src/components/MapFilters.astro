@@ -1,0 +1,65 @@
+---
+// The filter row over a map, and the species sheet its species chip opens:
+// /explore and the city map (Hidde, 2026-11-01: "put the filters also on city
+// map"). What the chips do is lib/map-filters-js.ts; the page wires it to its
+// own map with atMapFilters().
+//
+// It is the APP'S chip, redrawn here rather than reinvented (Hidde,
+// 2026-09-17: "de filters zien er totaal slecht uit neem de app als
+// voorbeeld"). FilterChip.swift draws a 34-tall capsule carrying an icon and
+// a 13pt medium label inside a 44-tall target, so the pill is its own element
+// inside each button: 34 drawn, 44 hit. Four chips, because four is what the
+// app's row carries today and a row of eight is a Filters sheet wearing the
+// wrong clothes.
+import Sheet from "./Sheet.astro";
+import { icon } from "../lib/icons";
+import { ui } from "../lib/i18n";
+
+interface Props { lang?: string }
+const { lang = "en" } = Astro.props;
+const U = ui(lang);
+
+/** The row's icons, drawn the way the app's are: SF Symbols are outline
+ * shapes, so these are strokes at a single weight rather than a mix of filled
+ * and hollow. checkmark.seal, leaf and ticket, as the app names them in
+ * MapTab.filterRow. */
+const svg = (d: string) =>
+  `<svg class="mf-ic" viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
+const ICON = {
+  seal: svg(`<path d="M12 3.4l2.2 1.5 2.6-.1.8 2.5 2.2 1.4-.8 2.5.8 2.5-2.2 1.4-.8 2.5-2.6-.1L12 20.6l-2.2-1.5-2.6.1-.8-2.5-2.2-1.4.8-2.5-.8-2.5 2.2-1.4.8-2.5 2.6.1z"/><path d="M9.2 12.2l2 2 3.6-3.9"/>`),
+  leaf: svg(`<path d="M19.8 4.3c.6 7.7-3.3 13.4-9.4 13.4-1.9 0-3.4-.5-3.4-.5s-1.5-5.9 2.4-9.4c3.1-2.8 7.2-3.4 10.4-3.5z"/><path d="M5.4 20.2c1.5-4.3 4.3-7.7 8.3-10.1"/>`),
+  ticket: svg(`<path d="M4.2 9.3V7.7c0-.8.7-1.5 1.5-1.5h12.6c.8 0 1.5.7 1.5 1.5v1.6a2.7 2.7 0 000 5.4v1.6c0 .8-.7 1.5-1.5 1.5H5.7c-.8 0-1.5-.7-1.5-1.5v-1.6a2.7 2.7 0 000-5.4z"/><path d="M14.2 6.6v2.2M14.2 11.1v1.8M14.2 15.2v2.2"/>`),
+  caret: `<svg class="mf-ic mf-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 10.5l4.5 4.5 4.5-4.5"/></svg>`,
+};
+---
+<div class="map-filters" role="group" aria-label={U.mapFilterGroup}>
+  <button type="button" class="mf" data-f="fav" data-label={U.mapFilterFav} aria-pressed="false">
+    <span class="mf-pill"><Fragment set:html={icon("bookmark-simple", "bold", "mf-ic mf-ic-solid")} />{U.mapFilterFav}</span>
+  </button>
+  <button type="button" class="mf" data-f="mine" data-label={U.mapFilterMine} aria-pressed="false">
+    <span class="mf-pill"><Fragment set:html={ICON.seal} />{U.mapFilterMine}</span>
+  </button>
+  {/* The species chip opens a list you can type into, the app's
+      SpeciesPicker (Hidde, 2026-10-31: "can we improve this also on app
+      please thing cross platform always"). */}
+  <button type="button" class="mf mf-species" id="mf-species-wrap" aria-haspopup="dialog" aria-controls="sp-sheet">
+    <span class="mf-pill">
+      <Fragment set:html={ICON.leaf} />
+      <span class="mf-label" id="mf-species-label">{U.mapFilterSpecies}</span>
+      <Fragment set:html={ICON.caret} />
+    </span>
+  </button>
+  {/* Last, on Hidde's word (2026-09-12: "zet free to visit maar als
+      laatst"), after the app's own order. */}
+  <button type="button" class="mf" data-f="free" data-label={U.mapFilterFree} aria-pressed="false">
+    <span class="mf-pill"><Fragment set:html={ICON.ticket} />{U.mapFilterFree}</span>
+  </button>
+  <span class="mf-count" id="mf-count" hidden></span>
+</div>
+<Sheet lang={lang} class="people-sheet sp-sheet" id="sp-sheet" aria-labelledby="sp-h">
+  <h3 class="at-sheet-h" id="sp-h">{U.mapFilterSpecies}</h3>
+  <label class="people-search"><Fragment set:html={icon("magnifying-glass", "bold", "ic")} /><input type="search" id="sp-q" placeholder={U.speciesSearchPrompt} aria-label={U.speciesSearchPrompt} autocomplete="off" /></label>
+  <button type="button" class="sp-any" id="sp-any" hidden>{U.anySpecies}</button>
+  <p class="people-empty" id="sp-empty" hidden>{U.speciesNoMatch}</p>
+  <ul class="sp-list" id="sp-list"></ul>
+</Sheet>

@@ -26,6 +26,9 @@ import { type WalkMarker } from "../lib/walks";
 import { hasWalksPage } from "../lib/city-walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { savesOf } from "../lib/saves";
+import { mapSpecies } from "../lib/map-species";
+import { speciesCommon } from "../lib/species";
+import MapFilters from "./MapFilters.astro";
 import { SHEET_JS } from "../lib/sheet-js";
 import { SHARE_JS } from "../lib/share-js";
 import { hreflangForCity, QUESTION_SLUG, ui, cityTranslation, cityHref, type CityTranslation } from "../lib/i18n";
@@ -66,6 +69,7 @@ const canonical = fallback ? `${BASE_URL}/${cslug}` : selfUrl;
 // English word on an otherwise translated page.
 const countryLabel = (tr as CityTranslation & { country?: string }).country ?? city.data.country;
 
+const { index: spIndex } = await mapSpecies();
 const markers: WalkMarker[] = trees.map((t, i) => ({
   lat: t.location.latitude!,
   lng: t.location.longitude!,
@@ -76,6 +80,7 @@ const markers: WalkMarker[] = trees.map((t, i) => ({
   area: (t.location.neighbourhood ?? "").trim(),
   shot: Boolean(usablePhoto(t)),
   saves: savesOf(t.id),
+  sp: spIndex.get(speciesCommon(t)) ?? -1,
   ...(t.paid_entry ? { paid: true } : {}),
 }));
 
@@ -226,6 +231,7 @@ const cityHasQuestion = hasQuestionPage(city);
       </div>
     </aside>
     <div class="stage">
+      <MapFilters lang={lang} />
       <div id="map" class="map"></div>
       <div class="walks" id="walk">
         <div class="map-tools">

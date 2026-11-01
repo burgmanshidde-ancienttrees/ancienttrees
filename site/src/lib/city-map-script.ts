@@ -26,6 +26,7 @@ import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
 import { ui } from "./i18n";
 import { mapCardJs } from "./map-card-js";
+import { mapFiltersJs } from "./map-filters-js";
 
 // The saved-tree corner of a pin: the cards' own bookmark, filled.
 const PIN_BOOKMARK = icon("bookmark-simple", "fill", "pin-fav-ic");
@@ -135,8 +136,61 @@ export function cityMapScript(
 
   const home = homeBounds(inTown && inTown.length >= 2 ? inTown : markers);
 
-  return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs(lang)}
+  return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs(lang)}${mapFiltersJs()}
 var markers = ${data};
+// THE FILTER ROW (lib/map-filters-js.ts), the explore map's, wired here before
+// the map for the reason given there (Hidde, 2026-11-01: "put the filters also
+// on city map"). A tree the filter leaves out loses its pin, its dot and its
+// card in the list; the other places' trees go the same way. The species list
+// comes from /api/map-species.json when the chip is first opened.
+var SPECIES = null, SPECIES_L = null;
+var OFF = markers.map(function() { return false; });
+var NEARBY = [];
+function homeFeatures() {
+  var out = [];
+  markers.forEach(function(m, i) {
+    if (OFF[i]) { return; }
+    out.push({type: 'Feature', geometry: {type: 'Point', coordinates: [m.lng, m.lat]},
+              properties: {id: m.id, ix: i, pr: -1000000 + PIN_ORDER.indexOf(i)}});
+  });
+  return out;
+}
+function applyCityFilters() {
+  var on = filtersOn(), n = 0;
+  markers.forEach(function(m, i) {
+    var keep = !on || keepsTree({id: m.id, paid: m.paid ? 1 : 0, sp: m.sp});
+    OFF[i] = !keep;
+    if (keep) { n++; }
+    var card = document.getElementById('tree-' + (i + 1));
+    if (card) { card.style.display = keep ? '' : 'none'; }
+  });
+  if (typeof map === 'undefined' || !map) { atFilterCount(n); return; }
+  var hs = map.getSource && map.getSource('hometrees');
+  if (hs) { hs.setData({type: 'FeatureCollection', features: atMarkPiles(homeFeatures())}); }
+  var ns = map.getSource && map.getSource('nearby');
+  if (ns) {
+    ns.setData({type: 'FeatureCollection', features: atMarkPiles(on
+      ? NEARBY.filter(function(f) { return keepsTree(f.properties); }) : NEARBY)});
+  }
+  if (OFF[activeIdx] && typeof mapCard !== 'undefined' && mapCard && mapCard.isOpen()) { mapCard.close(); }
+  updatePins();
+  atFilterCount(n);
+}
+atMapFilters({
+  apply: applyCityFilters,
+  items: function() {
+    return markers.map(function(m) { return {sp: m.sp, c: [m.lng, m.lat]}; })
+      .concat(NEARBY.map(function(f) { return {sp: f.properties.sp, c: f.geometry.coordinates}; }));
+  },
+  ready: function(cb) {
+    if (SPECIES) { cb(); return; }
+    fetch('/api/map-species.json').then(function(r) { return r.json(); }).then(function(j) {
+      SPECIES = j.names || []; SPECIES_L = j.latin || [];
+      cb();
+    }).catch(function() {});
+  },
+  map: function() { return typeof map !== 'undefined' ? map : null; }
+});
 // The opening frame: the cluster, not every outlier. See homeBounds().
 var HOME = ${JSON.stringify(home)};
 var map = new maplibregl.Map({
@@ -181,10 +235,7 @@ map.on('load', function() {
   }, null, null);
   openNearby = atCirclePinCard(map, 'nearby', 'nearby-tree');
   map.addSource('hometrees', {type: 'geojson', data: {type: 'FeatureCollection', features:
-    atMarkPiles(markers.map(function(m, i) {
-      return {type: 'Feature', geometry: {type: 'Point', coordinates: [m.lng, m.lat]},
-              properties: {id: m.id, ix: i, pr: -1000000 + PIN_ORDER.indexOf(i)}};
-    }))}});
+    atMarkPiles(homeFeatures())}});
   atPinLayers(map, 'hometrees', 'hometree', function(p) {
     if (openNearby) { openNearby.close(); }
     selectTree(p.ix);
@@ -194,13 +245,13 @@ map.on('load', function() {
   homeFar = null;
   updatePins();
   fetch('/api/pins.json').then(function(r) { return r.json(); }).then(function(rows) {
-    var feats = [];
+    NEARBY = [];
     rows.forEach(function(r) {
       if (HOME_IDS[r[0]]) { return; }
-      feats.push({type: 'Feature', geometry: {type: 'Point', coordinates: [r[1], r[2]]},
-                  properties: {id: r[0], cs: r[3], pr: r[4]}});
+      NEARBY.push({type: 'Feature', geometry: {type: 'Point', coordinates: [r[1], r[2]]},
+                   properties: {id: r[0], cs: r[3], pr: r[4], sp: r[5], paid: r[6]}});
     });
-    map.getSource('nearby').setData({type: 'FeatureCollection', features: atMarkPiles(feats)});
+    applyCityFilters();
   }).catch(function() {});
 });
 // WHICH PINS SHOW: THE AIRBNB WAY (Hidde, 2026-10-24: "volledige pins voor
@@ -238,7 +289,8 @@ function updatePins() {
     return true;
   }
   STACKS.forEach(function(s) {
-    s.bubble.style.visibility = far || !near ? 'hidden' : '';
+    var gone = s.ix.every(function(i) { return OFF[i]; });
+    s.bubble.style.visibility = far || !near || gone ? 'hidden' : '';
     // Its first tree stands for the stack below STACK_ZOOM (never while spread).
     if (openStack !== s) { pins[s.ix[0]].classList.toggle('pin-stacked', near); }
     if (!far && near) { placed.push(map.project([markers[s.ix[0]].lng, markers[s.ix[0]].lat])); }
@@ -247,8 +299,8 @@ function updatePins() {
     placed.push(map.project([markers[activeIdx].lng, markers[activeIdx].lat]));
   }
   PIN_ORDER.forEach(function(i) {
-    pins[i].style.visibility = far ? 'hidden' : '';
-    if (far || pins[i].classList.contains('pin-stacked')) { return; }
+    pins[i].style.visibility = far || OFF[i] ? 'hidden' : '';
+    if (far || OFF[i] || pins[i].classList.contains('pin-stacked')) { return; }
     // A spread stack's pins stand 36 apart by design: never dots.
     if (stackOf[i] && openStack === stackOf[i]) { pins[i].classList.remove('pin-mini'); return; }
     var full = i === activeIdx;
@@ -554,6 +606,16 @@ function paintStacks() {
   });
 }
 if (markers.length > 1) { map.fitBounds(HOME, { padding: 70, maxZoom: 13 }); }
+// The map keeps its place in the address (#map=zoom/lat/lng), as /explore
+// does, so back from a tree page lands where you were (Hidde, 2026-11-01).
+var _view = /^#map=([0-9.]+)\\/(-?[0-9.]+)\\/(-?[0-9.]+)$/.exec(location.hash);
+if (_view) { map.jumpTo({zoom: +_view[1], center: [+_view[3], +_view[2]]}); }
+map.on('moveend', function() {
+  if (location.hash && location.hash.indexOf('#map=') !== 0) { return; }
+  var c = map.getCenter();
+  try { history.replaceState(null, '', location.pathname + location.search + '#map=' +
+    map.getZoom().toFixed(2) + '/' + c.lat.toFixed(5) + '/' + c.lng.toFixed(5)); } catch (e) {}
+});
 updatePins();
 
 // A tap on a card OPENS the tree since 2026-10-04 (TreeCard.astro: the whole

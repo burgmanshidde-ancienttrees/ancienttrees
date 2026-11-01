@@ -39,6 +39,9 @@ export interface WalkMarker {
   shot: boolean;
   /** Readers' Want to go saves (lib/saves.ts); the map's pin order. */
   saves?: number;
+  /** Index into the map's species list (lib/map-species.ts), -1 unknown:
+   *  the filter row's species chip. */
+  sp?: number;
   /** Behind a ticket. The pin wears a small blue ticket when it is, the same
    *  mark the app's pin has carried since 2026-08-25 and in the same blue. */
   paid?: boolean;

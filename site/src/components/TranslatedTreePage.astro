@@ -109,7 +109,7 @@ const headExtra = mapHead() + ogImage + (fallback ? "" : "\n" + hreflangForCity(
 // SIGNIN_JS left this list on 2026-09-18: the sheet and its script are Base's
 // now, on every page, so there is no list to forget it from.
 // VISITED_SYNC_JS came back with the seal (2026-10-10): the collect sheet.
-const scripts = treePageScript(loc.latitude!, loc.longitude!)
+const scripts = treePageScript(loc.latitude!, loc.longitude!, tree.id)
   + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + DOWNSIZE_JS + ADD_PHOTO_JS + TREE_NOTES_JS;
 const nearbyCards = nearby.map((t) => ({
   id: t.id,

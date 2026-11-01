@@ -252,7 +252,7 @@ const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
 // VISITED_SYNC_JS came back with the seal (2026-10-10): the collect sheet.
-const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS
+const scripts = treePageScript(loc.latitude!, loc.longitude!, tree.id) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS
   + DOWNSIZE_JS + ADD_PHOTO_JS + TREE_NOTES_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
