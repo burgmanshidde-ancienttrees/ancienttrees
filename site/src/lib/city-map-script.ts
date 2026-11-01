@@ -122,29 +122,6 @@ export function cityMapScript(
       combined: Boolean(w.combined),
     }))
   );
-  // This city travels in the same source as every other one, so zoomed out it
-  // sits among the other cities the way its trees do on /explore instead of
-  // as a pile of 34-pixel pins on top of them (Hidde, 2026-10-10: "uitzoomen
-  // gaat niet lekker vanuit een stadspagina ... trek dit gelijk"). Drawn the
-  // Airbnb way like every map (PINS_JS): a pin where it fits, ranked first,
-  // a dot where it does not; home gets the full pin before any other.
-  const otherCitiesJson = JSON.stringify({
-    type: "FeatureCollection",
-    features: [
-      ...(markers.length
-        ? [{
-            type: "Feature",
-            geometry: { type: "Point", coordinates: [center[1], center[0]] },
-            properties: { slug: "", city: "", n: markers.length, home: 1, pr: 0 },
-          }]
-        : []),
-      ...otherCities.map((c) => ({
-        type: "Feature",
-        geometry: { type: "Point", coordinates: [c.lng, c.lat] },
-        properties: { slug: c.slug, city: c.city, n: c.n, home: 0, pr: 1 + (c.rank ?? 99) },
-      })),
-    ],
-  });
   // Which tree gets its full pin where two would collide: a photograph
   // first, then readers' saves, then our own order (lib/map.ts pinPriority).
   const pinOrderJson = JSON.stringify(
@@ -175,25 +152,57 @@ map.addControl(new maplibregl.NavigationControl());
 map.addControl(new maplibregl.FullscreenControl());
 map.on('load', function() { map.resize(); });
 new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
-var OTHER_CITIES = ${otherCitiesJson};
-// FAR is the zoom below which the map stops being this city and becomes the
-// world: the other cities, drawn like the trees on /explore, with this city
-// among them. Above it the pins come back and the other cities go, so the
-// two are never drawn on top of each other.
+// EVERY TREE IN VIEW, the explore map's way (Hidde, 2026-11-01, zooming out
+// from Amsterdam: the neighbours' trees were missing, then every dot was a
+// whole city that opened another page). The city map is the explore map
+// pointed at this city: other places' trees are drawn as /explore draws them,
+// at every zoom, and a tap opens the tree's card, never another page. Below
+// FAR this city's own pins step back and its trees join the others as circle
+// pins, so a map zoomed out looks the same from every page, and the list
+// turns to the cities in view at that same zoom (updatePanelMode). The other
+// places' rows come from /api/pins.json, fetched once and cached.
+var HOME_IDS = {};
+markers.forEach(function(m) { HOME_IDS[m.id] = 1; });
 var FAR = 9;
-if (OTHER_CITIES.features.length) {
-  map.on('load', function() {
-    if (map.getSource('othercities')) { return; }
-    map.addSource('othercities', {type: 'geojson', data: OTHER_CITIES});
-    function goHome() { map.fitBounds(HOME, { padding: 70, maxZoom: 13, duration: 900 }); }
-    // The explore map's rule: a pin or a dot opens its city (this one flies
-    // back home).
-    atPinLayers(map, 'othercities', 'othercity', function(p) {
-      if (p.home) { goHome(); } else { window.location.href = '/' + p.slug; }
-    }, null, null);
-    ['othercity', 'othercity-dot'].forEach(function(l) { map.setLayerZoomRange(l, 0, FAR); });
-  });
-}
+// A city that opens wider than FAR (an island, a spread region) keeps its
+// own pins until it is zoomed out past where it opened.
+function farAt() { return homeZoom !== null ? Math.min(FAR, homeZoom - 1.2) : FAR; }
+var HOME_LAYERS = [];
+var homeFar = null;
+var openNearby = null;
+map.on('load', function() {
+  if (map.getSource('nearby')) { return; }
+  // The others go in first, so this city's circle pins draw over them and
+  // win where two would collide.
+  map.addSource('nearby', {type: 'geojson', data: {type: 'FeatureCollection', features: []}});
+  atPinLayers(map, 'nearby', 'nearby-tree', function(p, c) {
+    if (mapCard.isOpen()) { mapCard.close(); }
+    if (openNearby) { openNearby(p, c); }
+  }, null, null);
+  openNearby = atCirclePinCard(map, 'nearby', 'nearby-tree');
+  map.addSource('hometrees', {type: 'geojson', data: {type: 'FeatureCollection', features:
+    atMarkPiles(markers.map(function(m, i) {
+      return {type: 'Feature', geometry: {type: 'Point', coordinates: [m.lng, m.lat]},
+              properties: {id: m.id, ix: i, pr: -1000000 + PIN_ORDER.indexOf(i)}};
+    }))}});
+  atPinLayers(map, 'hometrees', 'hometree', function(p) {
+    if (openNearby) { openNearby.close(); }
+    selectTree(p.ix);
+  }, null, null);
+  HOME_LAYERS = map.getStyle().layers.map(function(l) { return l.id; })
+    .filter(function(id) { return id.indexOf('hometree') === 0; });
+  homeFar = null;
+  updatePins();
+  fetch('/api/pins.json').then(function(r) { return r.json(); }).then(function(rows) {
+    var feats = [];
+    rows.forEach(function(r) {
+      if (HOME_IDS[r[0]]) { return; }
+      feats.push({type: 'Feature', geometry: {type: 'Point', coordinates: [r[1], r[2]]},
+                  properties: {id: r[0], cs: r[3], pr: r[4]}});
+    });
+    map.getSource('nearby').setData({type: 'FeatureCollection', features: atMarkPiles(feats)});
+  }).catch(function() {});
+});
 // WHICH PINS SHOW: THE AIRBNB WAY (Hidde, 2026-10-24: "volledige pins voor
 // wat past, kleine stippen voor de rest, nooit bubbels, een tik opent altijd
 // de boom"; lib/map.ts PIN_DISTANCE has the benchmark). The pins are DOM
@@ -214,7 +223,11 @@ function updatePins() {
   // hoisted but still undefined), and a throw there stopped every pin being
   // drawn (Hidde, 2026-10-10: "they dont show any pins anymore").
   if (!pins || !STACKS) { return; }
-  var far = OTHER_CITIES.features.length > 0 && map.getZoom() < FAR;
+  var far = map.getZoom() < farAt();
+  if (far !== homeFar && HOME_LAYERS.length) {
+    homeFar = far;
+    HOME_LAYERS.forEach(function(id) { map.setLayoutProperty(id, 'visibility', far ? 'visible' : 'none'); });
+  }
   var near = map.getZoom() >= STACK_ZOOM;
   var placed = [];
   function fits(p) {
@@ -280,10 +293,9 @@ function chooserCard(c) {
 }
 function updatePanelMode() {
   if (!cityPanel || !CHOOSER_CITIES.length) { return; }
-  var z = map.getZoom();
-  var onAt = homeZoom === null ? 9.5 : Math.min(9.5, homeZoom - 1.2);
-  if (!chooserOn && z <= onAt) { chooserOn = true; }
-  else if (chooserOn && z >= onAt + 1) { chooserOn = false; }
+  // At the zoom where the map turns to every place's trees (farAt), never a
+  // step before it, so the list and the map change together.
+  chooserOn = map.getZoom() < farAt();
   var box = ensureChooserBox();
   var b = map.getBounds();
   var inview = CHOOSER_CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });

@@ -81,6 +81,9 @@ function atMapCard(map, opts) {
       copy = card.cloneNode(true);
       copy.removeAttribute('id');
       copy.classList.remove('active');
+      // The list may be hidden (the city map zoomed out lists the cities in
+      // view), and the copy must not inherit that.
+      copy.style.removeProperty('display');
     }
     if (!copy) { el = null; return; }
     el.appendChild(copy);
@@ -139,7 +142,9 @@ function atCirclePinCard(map, source, treeLayer) {
   // Warm, so the first tap does not wait for the catalogue.
   map.once('idle', function() { if (C && C.catalogue) C.catalogue(); });
   var asked = 0;
-  return function(p, c) {
+  // The returned opener carries close(), so a map with a second kind of pin
+  // (the city map's own) can let this card go when the other opens.
+  var openOne = function(p, c) {
     var mine = ++asked;
     var id = p.id || '';
     map.setFilter(sel, ['==', ['get', 'id'], id]);
@@ -156,6 +161,8 @@ function atCirclePinCard(map, source, treeLayer) {
       if (html) { ctl.open(html, c, rec.u || null); }
     });
   };
+  openOne.close = ctl.close;
+  return openOne;
 }
 `;
 }
