@@ -23,6 +23,13 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01
+
+Web half: the last 24 hours were data (Dublin Marlay Park, Frankfurt Naturdenkmal trees, New York Douglaston, Porto/Portugal scouting, digest). No em dashes in the built dublin, frankfurt, new-york pages; their meta descriptions read true. Findings:
+
+- WARN (thirteenth review to see it) meta description prints a planting or event year as an age: `grep -rlE 'content="A (17|18|19|20)[0-9]{2}-year-old' site/dist` finds 95 pages. Hard rule 2, Verify (a derived age states its basis). `grep -c "year-old" scripts/qa.py` is still 0, so nothing refuses it. Build the qa.py check on built HTML first, then fix the meta template.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". Made false by CLAUDE.md "Good reader input IS the source" (2026-10-12) and the 2026-10-21 Tangier ruling. Seventh review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Fix the translations too.
+
 ## 2026-10-31
 
 Web half: the last 24 hours changed one user-facing file, the flag fill on every signed-in visit (site/src/lib/signin-js.ts); the rest was data (Fort Worth and Canberra held by the pace, Portugal scouting, sightings, Rio Frio). No em dashes in the built English HTML. The flag change reads only the stored session's expiry and writes only while the flag is empty; nothing contradicts hard rule 11. Findings:
