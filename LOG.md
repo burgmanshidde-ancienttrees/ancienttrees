@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-11-01 01:30 window (night run)
+
+Rungs 1 and 2 clear (no reader photos or notes, health green). Portugal's cities are all on the 48h wall, so I took the six verified-but-unwritten trees. Product: Dublin +1, the Marlay Park Yew (dub_018, no photo, approximate pin, a recognition line carries it). Held with reasons: dub_019 (no basis to tell it apart), tav_001 (Pedras d'el Rei resort, access unproven), frk_027 (schoolyard), inn_007 (pin on a building, access unsettled), sfo_012 (duplicate of sfo_004, its DataSF pin and 176 cm girth belong in an enrichment of sfo_004). Enrichment of paris+madrid+frankfurt: only par_071 got a best_time (fruit, September); 11 other gaps went to dead ends for 90 days (pins equal their register coordinates; frankfurt.de sits behind a Cloudflare challenge, so none of its city pages could be opened; mad_018 was not searched). Breakage: none. For Hidde: nothing.
+
 ## 2026-10-31, night run (19:24 window): the held Canberra and Fort Worth trees went live
 
 - Rungs 1 to 3 clear (no submissions or notes; health only says the live site is behind main, so one deploy is dispatched at the end of the window).
