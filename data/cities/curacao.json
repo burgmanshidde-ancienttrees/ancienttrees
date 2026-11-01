@@ -1,0 +1,67 @@
+{
+  "city": "Curaçao",
+  "country": "Curaçao",
+  "status": "needs_curation",
+  "intro": "Curaçao maps one tree so far, the kapok of Hofi Pastor in Barber, which the island's guides call its oldest tree. How old is disputed, with claims from 300 to 800 years and no published dating. It stands in a ranger-run garden of native plants behind the village church, about 30 to 45 minutes by car from Willemstad, with two walking trails passing its trunk.",
+  "meta_description": "The great kapok of Hofi Pastor in Barber, called Curaçao's oldest tree: where it stands, how to get there and what to look for.",
+  "question_meta": "Curaçao's best-known old tree is the kapok of Hofi Pastor in Barber, with age claims from 300 to 800 years.",
+  "question_answer": "The tree most often called Curaçao's oldest is the kapok (Ceiba pentandra) of Hofi Pastor, a garden of native plants behind the church in Barber, in the north-west of the island. Guides and Wikipedia give it 800 years; other accounts say 300, 400 or 600, and no dating has been published, so its age is open. It stands on the garden's walking trails, about 30 to 45 minutes by car from Willemstad.",
+  "question_context": "The age claims do not fit together. Wikipedia, citing a 2017 article in the island magazine Inlander and an ANWB guide, gives 800 years. A local blog says the Caquetío, the island's first people, brought the tree over about 400 years ago, which cannot both be true, and other accounts give 300 or 600. Kapok grows fast, and nobody has published a measurement or a dating, so its age is best called unknown, and anyone who knows more is welcome to say so. The tree itself is easy to tell apart: a pale grey trunk with buttress roots running out like thin walls, and limbs that twist out sideways above the scrub. Hofi Pastor covers about 12 hectares and opened as a garden of native plants in 1996, with a ranger at the entrance. Accounts differ on whether there is a small fee of about NAf 5 in cash or none. The ground was once an orchard, a hòfi in Papiamentu, owned in the nineteenth century by Monsignor Niewindt, and the Landhuis Barber plantation house, founded in the early eighteenth century, stands nearby. Buses to Barber are rare, so most visitors drive.",
+  "hero_tree_id": "cuw_001",
+  "oldest_tree_id": "cuw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree on Curaçao?",
+      "a": "The kapok of Hofi Pastor in Barber is the tree most often given that title. Its age is claimed at anything from 300 to 800 years, and no dating has been published."
+    },
+    {
+      "q": "How do I get to Hofi Pastor?",
+      "a": "It is behind the church in Barber, in the north-west of the island, about 30 to 45 minutes by car from Willemstad. Buses are rare."
+    },
+    {
+      "q": "Does it cost anything to visit?",
+      "a": "A ranger looks after the garden at the entrance. One guide mentions a small fee of about NAf 5 in cash, another says entry is usually free, so bring a little cash."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cuw_001",
+      "name": "The Great Kapok of Hofi Pastor",
+      "species": "Kapok (Ceiba pentandra)",
+      "age_estimate": "disputed, local claims from 300 to 800 years",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Hofi Pastor, behind Barber church, Kaminda Popo Royer, Barber, Soto, Curaçao",
+        "latitude": 12.290883,
+        "longitude": -69.073447,
+        "neighbourhood": "Barber"
+      },
+      "story": "Ask on Curaçao for the oldest tree and you will be sent to Barber, to a kapok in the garden behind the village church. How old it is, nobody agrees. Wikipedia and the island's guides say 800 years. A local blog says the Caquetío, the island's first people, brought it over about 400 years ago, and other accounts give 300 or 600. No dating has been published, and kapok is a fast grower, so the fair answer is old and undated. If you know more, tell us.\n\nWhat nobody disputes is the trunk. It sits low and grey in the scrub, with roots like thin walls running out from its base before they sink into the ground. Above them the limbs twist out sideways, pale and creased like elephant hide, and the crown stands green over the dry forest around it.\n\nThe ground was once an orchard, a hòfi in Papiamentu, owned in the nineteenth century by Monsignor Niewindt, a Catholic priest on the island. Since 1996 its twelve hectares have been a garden of native plants with a ranger at the gate, and two walking trails pass the tree. The Landhuis Barber plantation house, founded in the early eighteenth century, stands close by.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Barber,_Cura%C3%A7ao",
+        "https://www.komoot.com/highlight/3936727",
+        "https://curacao.for91days.com/?p=384",
+        "https://www.takeyourbackpack.com/backpacking-in-curacao/visit-hofi-pastor/",
+        "https://1000awesomethingsaboutcuracao.com/2013/05/22/719-our-oldest-tree/",
+        "https://seafariadventurescuracao.com/en/inspiration/landhuizen"
+      ],
+      "access": "Hofi Pastor is a ranger-run garden of native plants, about 12 hectares, open to visitors. One guide mentions a small fee of about NAf 5 in cash at the entrance, another says entry is usually free. Opening hours not confirmed. Two walking trails pass the tree.",
+      "transport": "About 30 to 45 minutes by car from Willemstad. Buses to Barber are rare.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/H%C3%B2fi_pastor_-_kapokboom.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hardscarf, via Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Hardscarf",
+        "status": "approved",
+        "width": 2736,
+        "height": 3648,
+        "taken_month": 11
+      },
+      "how_to_recognise": "You can recognise it by its pale grey trunk with wall-like buttress roots and limbs twisting out sideways, the largest tree on the trail through Hofi Pastor, behind Barber church.",
+      "verify_notes": "Verify pass 2026-11-01, Hidde named the place. One source cluster (Wikipedia and tourism writing), so flagged. Age left empty: 800 years (Wikipedia, citing Inlander 2017 and ANWB 2017, not seen), 400 years brought by the Caiquetios (blog), 300 or 600 elsewhere; no dating found. Pin from a komoot visitor highlight (12.290883, -69.073447), Hofi Pastor bus stop about 130 m away; not confirmed on a crown, so approximate. Alive per takeyourbackpack, updated Oct 2026. Photo: Commons 'Hòfi pastor - kapokboom.jpg' (Hardscarf, 2020-11-03, CC BY-SA 4.0, categories Ceiba pentandra and Barber, Curaçao); no geotag, but the title names this kapok at this site; pixels viewed 2026-11-01 (trunk and buttresses fill the frame, daylight, in leaf; photo_light OK)."
+    }
+  ]
+}
