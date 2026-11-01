@@ -227,6 +227,18 @@ def main():
     if args.manifest:
         return write_manifest()
     todo, skipped, have = [], [], 0
+    # Which original each vendored file was made from. Files are named by tree,
+    # not by photograph, so on 2026-11-01 two Munich trees that took a new lead
+    # photograph kept the old Commons file under the new photographer's credit
+    # until it was deleted by hand. The manifest remembers the url a base was
+    # made from; a different url now means the file on disk is stale.
+    made_from = {}
+    try:
+        with open(os.path.join(ROOT, "data", "photo-manifest.json"), encoding="utf-8") as fh:
+            for u, v in json.load(fh).get("photos", {}).items():
+                made_from[v["base"]] = u
+    except (OSError, ValueError):
+        pass
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         with open(f, encoding="utf-8") as fh:
             city = json.load(fh)
@@ -240,6 +252,18 @@ def main():
                 skipped.append((t["id"], why))
                 continue
             base = "%s-%s" % (t["id"], slugify(t.get("name")))
+            old = made_from.get(base)
+            if old and old != url and ("/photos/%s" % base) not in url:
+                for w in WIDTHS:
+                    stale = os.path.join(OUT, "%s-%d.jpg" % (base, w))
+                    if os.path.exists(stale) and not args.dry_run:
+                        os.remove(stale)
+                others = [w for w in KNOWN_WIDTHS if w not in WIDTHS
+                          and os.path.exists(os.path.join(OUT, "%s-%d.jpg" % (base, w)))]
+                print("   new lead photo for %s: refetching%s" % (t["id"], (
+                    "; STALE %s widths left on disk, regenerate them" % others) if others else ""))
+                todo.append((t["id"], base, url, p))
+                continue
             if all(os.path.exists(os.path.join(OUT, "%s-%d.jpg" % (base, w))) for w in WIDTHS):
                 have += 1
                 continue
