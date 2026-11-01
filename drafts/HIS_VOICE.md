@@ -433,3 +433,10 @@ On the NDV draft: **"mss goed om te noemen dat het een wereldwijde kaart is in d
 ## Calibration 2026-10-28: his own typed text stays as he typed it (Northern Woodlands)
 
 When Hidde writes a mail himself for an outlet that refuses AI-written pitches, I do not correct it: **"hou mijn spelfouten en letterlijke tekst aan dan lijkt t geen ai"**. Give his text back verbatim; at most point out a wrong address or a broken link.
+
+
+## Calibration 2026-11-01: an expert who sent a list gets curiosity, not our inventory (Pere Vives, Amics del Jardí Botànic)
+
+Pere answered our archive ask with a long list of the garden's trees and said he would look for photos. My draft told him which of his trees were already on the map and which had photos, so he knew which to photograph. His verdict: **"moeten we niet vooral het gesprek gaande houden. gaan opnoemen welke we al hadden voelt als een betweterige ai, stop daarmee."**
+
+So: when somebody gives a list, do not answer with our stock-take against it (what we have, what lacks a photo, what we noted). That is checking their list against ours, the same fault as "I already knew that one". Thank them, react to something in their own mail with real curiosity, and end on a question that keeps them writing. Here: he mentioned the "curiosities" attached to some trees, so ask about those.
