@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 session: Curaçao, one tree live (Hidde named it, for a friend)
+
+Live: cuw_001 The Great Kapok of Hofi Pastor (Barber), a one-tree place at /curacao. Flagged (one source cluster, Wikipedia and tourism writing), approximate pin from a komoot highlight, age left open (claims 300, 400, 600, 800 years; the page asks readers). Lead photo from Commons (Hardscarf, CC BY-SA 4.0, 2020), pixels viewed, photo_light OK. Verify pass cost 147k tokens for one tree: Curaçao has no tree register or champion list, and Willemstad, the landhuizen and Beth Haim gave no named old tree. 3 leads and 2 blocked in data/leads/curacao.json; untried routes in data/research/curacao-notes.md (Inlander 2017, Delpher, OSM natural=tree, iNaturalist). The next trees here should come from Hidde's friend on the island through the app, not more web research.
+
 ## 2026-11-01 second attempt: Porto verify
 
 Wrote the READY shelf (see the entry below: 2 live, 12 held). Verify pass on Porto found one tree: por_031, the Cavadinha cork oak (ICNF KNJ1/567 plus Maia council, flagged: no life check beyond 2021 photos), in data/research/porto-verified.json awaiting a story. The porto claim stays standing until it is merged. Two new leads in data/leads/porto.json. The other 12 unmined candidates were already on file. Fort-worth and new-york claims left to the earlier attempt.
