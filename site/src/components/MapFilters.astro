@@ -19,17 +19,15 @@ interface Props { lang?: string }
 const { lang = "en" } = Astro.props;
 const U = ui(lang);
 
-/** The row's icons, drawn the way the app's are: SF Symbols are outline
- * shapes, so these are strokes at a single weight rather than a mix of filled
- * and hollow. checkmark.seal, leaf and ticket, as the app names them in
- * MapTab.filterRow. */
-const svg = (d: string) =>
-  `<svg class="mf-ic" viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
+/** The row's icons, Phosphor's bold set like the bookmark beside them
+ * (never drawn by hand): seal-check, leaf and ticket, the app's
+ * checkmark.seal, leaf and ticket in MapTab.filterRow. */
+const ic = (name: string, extra = "") => icon(name, "bold", "mf-ic mf-ic-solid" + extra);
 const ICON = {
-  seal: svg(`<path d="M12 3.4l2.2 1.5 2.6-.1.8 2.5 2.2 1.4-.8 2.5.8 2.5-2.2 1.4-.8 2.5-2.6-.1L12 20.6l-2.2-1.5-2.6.1-.8-2.5-2.2-1.4.8-2.5-.8-2.5 2.2-1.4.8-2.5 2.6.1z"/><path d="M9.2 12.2l2 2 3.6-3.9"/>`),
-  leaf: svg(`<path d="M19.8 4.3c.6 7.7-3.3 13.4-9.4 13.4-1.9 0-3.4-.5-3.4-.5s-1.5-5.9 2.4-9.4c3.1-2.8 7.2-3.4 10.4-3.5z"/><path d="M5.4 20.2c1.5-4.3 4.3-7.7 8.3-10.1"/>`),
-  ticket: svg(`<path d="M4.2 9.3V7.7c0-.8.7-1.5 1.5-1.5h12.6c.8 0 1.5.7 1.5 1.5v1.6a2.7 2.7 0 000 5.4v1.6c0 .8-.7 1.5-1.5 1.5H5.7c-.8 0-1.5-.7-1.5-1.5v-1.6a2.7 2.7 0 000-5.4z"/><path d="M14.2 6.6v2.2M14.2 11.1v1.8M14.2 15.2v2.2"/>`),
-  caret: `<svg class="mf-ic mf-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 10.5l4.5 4.5 4.5-4.5"/></svg>`,
+  seal: ic("seal-check"),
+  leaf: ic("leaf"),
+  ticket: ic("ticket"),
+  caret: ic("caret-down", " mf-caret"),
 };
 ---
 <div class="map-filters" role="group" aria-label={U.mapFilterGroup}>
