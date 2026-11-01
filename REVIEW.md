@@ -30,6 +30,11 @@ Web half: the last 24 hours were data (Dublin Marlay Park, Frankfurt Naturdenkma
 - WARN (thirteenth review to see it) meta description prints a planting or event year as an age: `grep -rlE 'content="A (17|18|19|20)[0-9]{2}-year-old' site/dist` finds 95 pages. Hard rule 2, Verify (a derived age states its basis). `grep -c "year-old" scripts/qa.py` is still 0, so nothing refuses it. Build the qa.py check on built HTML first, then fix the meta template.
 - WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". Made false by CLAUDE.md "Good reader input IS the source" (2026-10-12) and the 2026-10-21 Tangier ruling. Seventh review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Fix the translations too.
 
+App half (iPhone SE: place-pin, profile-edit, profile-signed-in, profile, refused, review-ask):
+
+- NOTE APP profile-edit.png: "Your name" shows an empty field with the placeholder "The name people see", while the Settings row for the same account (profile-signed-in.png) shows the name "test". CLAUDE.md (Privacy and accounts) says every account has a profile name from the moment it exists, so a person sees the same account with a name in one place and none in the other. A session should check whether the field is meant to start with the current name.
+- place-pin, profile, refused, review-ask: read consistently, nothing contradicted (the splash photo carries its CC BY-SA 2.0 credit).
+
 ## 2026-10-31
 
 Web half: the last 24 hours changed one user-facing file, the flag fill on every signed-in visit (site/src/lib/signin-js.ts); the rest was data (Fort Worth and Canberra held by the pace, Portugal scouting, sightings, Rio Frio). No em dashes in the built English HTML. The flag change reads only the stored session's expiry and writes only while the flag is empty; nothing contradicts hard rule 11. Findings:
