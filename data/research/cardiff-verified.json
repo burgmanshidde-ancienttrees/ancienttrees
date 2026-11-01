@@ -1,0 +1,67 @@
+[
+  {
+    "id": "car_001",
+    "name": "Blackfriars London Plane, Bute Park",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "roughly 250 to 300 years",
+    "age_min": 250,
+    "age_max": 310,
+    "age_basis": "derived",
+    "girth_cm": 612,
+    "height_m": 24,
+    "location": {"address": "Blackfriars site, south east edge, Bute Park, Cardiff CF10 3ER", "latitude": 51.48296, "longitude": -3.1851, "neighbourhood": "Bute Park"},
+    "verified_sources": [
+      "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php",
+      "https://www.cardiffparks.org.uk/trees/bute/index.shtml",
+      "https://bute-park.com/tree-experts-praise-cardiffs-treescape-after-visit-to-bute-park/"
+    ],
+    "official_register": {"name": "Bute Park champion tree table (cardiffparks.org.uk, survey by Owen Johnson for the Tree Register)", "url": "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php"},
+    "access": "Free, open public park (Bute Park, Cardiff); tree on the Blackfriars site in the southern section.",
+    "transport": "Cardiff Central about 15 minutes on foot; Cardiff Queen Street about 12 minutes on foot.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Glamorgan Champion 2022, tagged #3 at 'Blackfriars, south east edge'. Girth 612 cm and height 24 m measured April 2022 (page figures). OS grid ST 17804 76667 converted to WGS84 51.48296, -3.1851 (a register coordinate, so approximate until placed on a crown; #5 stands about 30 m west). Age is the page's own derived estimate from girth: about 251 years in 2022 (planted c.1771) on a good site, about 307 (c.1715) on an average site; the page notes the tree clearly predates Andrew Pettigrew (head gardener from 1873) and that no record of landscaping here before him exists. The park's intro says plane trees near Blackfriars MAY date from Capability Brown's landscaping for the first Marquis of Bute (mid 18th century); that is only 'possible', no source says this tree is one of them: do not bridge. The page's own general text says London plane arrived in Britain from Spain in the 17th century with earliest London specimens planted 1789 (Berkeley Square). Blackfriars is also the site of the Dominican friary excavated by the third Marquess. Alive: iNaturalist observation 2026-08-03 near the pin (lifecheck RECENT, not confirmed same trunk); the bark photo on the page is dated August 2025. Second source: bute-park.com (the council's park site) confirms Bute Park's 51 champion trees and 3,000 catalogued trees generally but does not name this tree, so flagged 'register only / one survey source'. The cardiffparks.org.uk host needs a browser User-Agent (403 otherwise)."
+  },
+  {
+    "id": "car_002",
+    "name": "Blackfriars West London Plane, Bute Park",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "roughly 200 to 240 years",
+    "age_min": 197,
+    "age_max": 245,
+    "age_basis": "derived",
+    "girth_cm": 532,
+    "height_m": 32,
+    "location": {"address": "Blackfriars site, west edge, Bute Park, Cardiff CF10 3ER", "latitude": 51.48305, "longitude": -3.1855, "neighbourhood": "Bute Park"},
+    "verified_sources": [
+      "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica5.php",
+      "https://www.cardiffparks.org.uk/trees/bute/index.shtml"
+    ],
+    "official_register": {"name": "Bute Park champion tree table (cardiffparks.org.uk)", "url": "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica5.php"},
+    "access": "Free, open public park (Bute Park, Cardiff).",
+    "transport": "Cardiff Central about 15 minutes on foot.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Tagged #5, 'Blackfriars, west edge'. Girth 532 cm, height 32 m (April 2022). Page's derived age: about 197 years in 2022 (c.1825) on a good site, about 241 (c.1781) on an average site; predates Pettigrew (1873). Grid ST 17776 76677 converted. One survey source only, flagged. Same plane group as car_001 (about 30 m apart); could be offered as one stop if the pages merge. Not recorded as champion in the table (status blank)."
+  },
+  {
+    "id": "car_003",
+    "name": "Bute Park Wellingtonia",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "girth_cm": 472,
+    "height_m": 25,
+    "location": {"address": "Blackweir woodland north, Bute Park, Cardiff", "latitude": 51.49407, "longitude": -3.19417, "neighbourhood": "Bute Park"},
+    "verified_sources": [
+      "https://www.cardiffparks.org.uk/trees/bute/sequoiadendron-giganteum.php",
+      "https://www.cardiffparks.org.uk/trees/bute/index.shtml"
+    ],
+    "official_register": {"name": "Bute Park champion tree table (cardiffparks.org.uk)", "url": "https://www.cardiffparks.org.uk/trees/bute/sequoiadendron-giganteum.php"},
+    "access": "Free, open public park; far northern end of Bute Park.",
+    "transport": "Walking from Cardiff Central about 40 minutes; nearest bus stops on North Road, check locally.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 472 cm, height 25 m measured August 2016 (10 years old figures, not re-measured). Grid ST 17194 77913 converted. Not a champion. Age not given on the page. One survey source, no recent life check, so held as a flagged candidate; lower priority than car_001. Page says nothing of when it was planted."
+  }
+]

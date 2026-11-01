@@ -45,6 +45,27 @@
       },
       "reason": "Named in passing during the same 2023 survey (nation.cymru) as notable specimens at Cefn Onn park; no individual details (girth, exact location) found this pass.",
       "source": "https://nation.cymru/news/cardiff-volunteers-help-to-map-citys-ancient-and-veteran-trees/"
+    },
+    {
+      "name": "Ginkgo, Sunken Lawn, Bute Park",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "location": {"address": "Sunken Lawn north east, Bute Park, Cardiff", "latitude": 51.4867, "longitude": -3.18617},
+      "reason": "Glamorgan Champion 2015, girth 302 cm (Nov 2015) and 336 cm (Feb 2023), height 22 m; grid ST 17736 77084 converted. Young for a veteran (a post-1947 planting is likely but no source says so); a champion, not old. One source, register pin approximate.",
+      "source": "https://www.cardiffparks.org.uk/trees/bute/ginkgo-biloba.php"
+    },
+    {
+      "name": "Sessile Oak, Old Man's Wood, Bute Park",
+      "species": "Sessile Oak (Quercus petraea)",
+      "location": {"address": "Old Man's Wood east, north end, Bute Park, Cardiff", "latitude": 51.48443, "longitude": -3.18622},
+      "reason": "Girth only 112 cm (July 2025), 17 m: not remarkable.",
+      "source": "https://www.cardiffparks.org.uk/trees/bute/quercus-petraea1.php"
+    },
+    {
+      "name": "Beech row along the River Taff, Bute Park",
+      "species": "Common Beech (Fagus sylvatica)",
+      "location": {"address": "River Taff bank, Bute Park, Cardiff", "latitude": null, "longitude": null},
+      "reason": "A search summary mentions a line of huge old beeches by the Taff; not seen on a fetched page, no specimen named. The council's champion leaflet PDF (bute-park.com/wp-content/uploads/C21770-CC-Bute-Park-Champion-Tree-Leaflet-South_WEB.pdf) was fetched but not read (no PDF reader on the runner); a next pass with a PDF reader could name champion specimens with the council as owner source.",
+      "source": "https://bute-park.com/tree-experts-praise-cardiffs-treescape-after-visit-to-bute-park/"
     }
   ],
   "blocked": [],
