@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 night run (21:36 window): Porto cork oak of Cavadinha (por_031) live, nothing else shippable
+
+Rungs 1 to 3 clear (no sightings, no notes, health green). Rung 4: an 11-mail archive batch already waits for Hidde, so no new batch. Rung 5, Porto deepen: the verify pass found every unmined ICNF row already published, blocked or a lead, and the rest 20 to 25 km out; 5 leads added. The write pass merged por_031 (Maia, approximate pin, recognition line, PT translation, FAQ count fixed; commit f84018e69). Held and why: car_003 (no photo or pin), tav_001, frk_027 and inn_007 (access, rule 10), nyc_031 (no pin in the park), sfo_012 (duplicate of sfo_004). por_031 has Commons photos by Reis Quarteu (CC BY-SA 4.0) not yet in the photo queue, so a photo-judge pass is open. scout_next says RETRY Madeira, but it was retried yesterday and is the already-mined ASMAC series; left stalled. Not done: source-contact sourcing for outreach. Not pushed (the Run health step pushes).
+
 ## 2026-11-01 night run (19:49 window): Coimbra verify found nothing, no trees added
 
 Rung 1 and 2 clear (no sightings, no notes, health green). Rung 5, Portugal first: claimed Coimbra (6 of 20) and ran a verify pass. Result: zero new trees. The unmined ICNF rows near the centre are trees already published; the one new candidate, the Quinta de Santa Comba stone pine (Wikidata Q98444931), went to data/leads/coimbra.json as a lead (no measurements, no pin, no access info). The Quinta das Lagrimas lead was updated (the 1813 planting date for the redwood is not credible). The old ICNF tree-record host www2.icnf.pt now serves an error page. Coimbra is a wall for 48h. Nothing was published. No refused commands.
