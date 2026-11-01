@@ -387,6 +387,15 @@
    }
   },
   {
+   "common": "Apple Box",
+   "latin": "Eucalyptus bridgesiana",
+   "names": {
+    "en": [
+     "applebox"
+    ]
+   }
+  },
+  {
    "common": "Apricot",
    "latin": "Prunus armeniaca",
    "names": {
@@ -1326,6 +1335,10 @@
      "黒くるみ"
     ]
    }
+  },
+  {
+   "common": "Blakely's Red Gum",
+   "latin": "Eucalyptus blakelyi"
   },
   {
    "common": "Blue Atlas Cedar",
@@ -3281,6 +3294,54 @@
     ],
     "ja": [
      "アメリカガキ"
+    ]
+   }
+  },
+  {
+   "common": "Common Walnut",
+   "latin": "Juglans regia",
+   "names": {
+    "en": [
+     "Old World Walnut",
+     "Persian Walnut",
+     "Walnut"
+    ],
+    "nl": [
+     "notelaar",
+     "okkernoot",
+     "okkernotenboom",
+     "walnoot"
+    ],
+    "de": [
+     "Echte Walnuss",
+     "Calottier",
+     "Walnussbaum"
+    ],
+    "es": [
+     "nogal",
+     "nogal común",
+     "nogal de Castilla",
+     "nogal del Viejo Mundo"
+    ],
+    "it": [
+     "noce bianco",
+     "noce da frutto"
+    ],
+    "fr": [
+     "calottier",
+     "gojeutier",
+     "noyer",
+     "noyer commun"
+    ],
+    "pt": [
+     "nogueira",
+     "nogueira-comum",
+     "nozes"
+    ],
+    "ja": [
+     "カシグルミ",
+     "シナノグルミ",
+     "ペルシャグルミ"
     ]
    }
   },
@@ -14324,6 +14385,15 @@
    }
   },
   {
+   "common": "Yellow Box",
+   "latin": "Eucalyptus melliodora",
+   "names": {
+    "en": [
+     "yellow-box"
+    ]
+   }
+  },
+  {
    "common": "Yellow Poinciana",
    "latin": "Peltophorum dubium",
    "names": {
@@ -16445,6 +16515,17 @@
    "mapped": false
   },
   {
+   "common": "Eucalyptus collection",
+   "latin": "Eucalyptus obliqua",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Messmate Stringybark",
+     "brown top"
+    ]
+   }
+  },
+  {
    "common": "Snow Gum",
    "latin": "Eucalyptus pauciflora",
    "mapped": false,
@@ -16847,55 +16928,6 @@
    "names": {
     "en": [
      "tawnyberry holly"
-    ]
-   }
-  },
-  {
-   "common": "Common Walnut",
-   "latin": "Juglans regia",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Old World Walnut",
-     "Persian Walnut",
-     "Walnut"
-    ],
-    "nl": [
-     "notelaar",
-     "okkernoot",
-     "okkernotenboom",
-     "walnoot"
-    ],
-    "de": [
-     "Calottier",
-     "Echte Walnuss",
-     "Walnussbaum"
-    ],
-    "es": [
-     "nogal",
-     "nogal común",
-     "nogal de Castilla",
-     "nogal del Viejo Mundo"
-    ],
-    "it": [
-     "noce bianco",
-     "noce da frutto"
-    ],
-    "fr": [
-     "calottier",
-     "gojeutier",
-     "noyer",
-     "noyer commun"
-    ],
-    "pt": [
-     "nogueira",
-     "nogueira-comum",
-     "nozes"
-    ],
-    "ja": [
-     "カシグルミ",
-     "シナノグルミ",
-     "ペルシャグルミ"
     ]
    }
   },
@@ -18277,6 +18309,48 @@
    "names": {
     "en": [
      "evergreen cherry"
+    ]
+   }
+  },
+  {
+   "common": "Cherry Laurel",
+   "latin": "Prunus laurocerasus",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Cherry-laurel",
+     "English laurel",
+     "common laurel"
+    ],
+    "nl": [
+     "Laurierkers",
+     "Paplaurier",
+     "gewone laurierkers"
+    ],
+    "de": [
+     "Kirschlorbeer",
+     "Lorbeer-Kirsche",
+     "Lorbeerkirsche",
+     "Pontische Lorbeer-Kirsche"
+    ],
+    "es": [
+     "Laurel cerezo",
+     "Laurel liso",
+     "Laurel romano",
+     "Laurel-cerezo"
+    ],
+    "it": [
+     "Lauroceraso"
+    ],
+    "fr": [
+     "Laurier cerise",
+     "Laurier du Caucase",
+     "Laurier palme",
+     "Laurier-cerise"
+    ],
+    "ja": [
+     "セイヨウバクチノキ",
+     "ベニバスモモ"
     ]
    }
   },
