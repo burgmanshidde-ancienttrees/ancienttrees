@@ -285,16 +285,19 @@ function updatePanelMode() {
   if (!chooserOn && z <= onAt) { chooserOn = true; }
   else if (chooserOn && z >= onAt + 1) { chooserOn = false; }
   var box = ensureChooserBox();
+  var b = map.getBounds();
+  var inview = CHOOSER_CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
+  // The list says what is in view (Hidde, 2026-11-01, Curacao's one tree
+  // gave way to "No other mapped cities in view"): with no other city in
+  // view, this place's own trees are what the map shows, so they stay.
+  var showChooser = chooserOn && inview.length > 0;
   for (var i = 0; i < chooserHost.children.length; i++) {
     var el = chooserHost.children[i];
-    if (el !== box) { el.style.display = chooserOn ? 'none' : ''; }
+    if (el !== box) { el.style.display = showChooser ? 'none' : ''; }
   }
-  if (chooserOn) {
-    var b = map.getBounds();
-    var inview = CHOOSER_CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
+  if (showChooser) {
     box.innerHTML = '<div class="exc-cityhead"><h2>Cities in view</h2></div>' +
-      (inview.length ? inview.slice(0, 10).map(chooserCard).join('')
-                     : '<p class="exc-empty">No other mapped cities in view yet. Keep zooming out.</p>');
+      inview.slice(0, 10).map(chooserCard).join('');
     box.style.display = '';
   } else {
     box.style.display = 'none';

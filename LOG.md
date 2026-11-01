@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 session: a place's own trees stay in its list when no other city is in view
+
+Hidde, on Curacao's page: zoomed out, the list swapped its one tree for "No other mapped cities in view yet. Keep zooming out." The city page's sheet switches to "Cities in view" once you zoom out; it now does that only when another city is actually in view, and otherwise keeps the place's own trees (`updatePanelMode()` in site/src/lib/city-map-script.ts). The empty line is gone. Seen on the live Curacao page with the patch through the local proxy, desktop and 375px; not yet after the CI build.
+
 ## 2026-11-01 session: searching a country lands on the map, not its page
 
 Hidde: on the web map, searching Greece sent you to the Greece page instead of moving the map; and from the home search the map is more interesting than the country landing page (Airbnb does both). Now on /explore a country or city picked in the search frames the map on it and the list beside it follows (`window.atMapPlace` in site/src/lib/map.ts); in every other search field a country opens `/explore#country=<name>`. A city row elsewhere still opens the city page (itself a map with the walk, and where Google traffic lands). The app already did this. Tested against the live page through a local proxy carrying the patch (desktop and 375px); not yet seen after the CI build. CONVENTIONS.md "A place picked in the search lands on the map".
