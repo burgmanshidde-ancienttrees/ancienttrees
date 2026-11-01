@@ -1182,6 +1182,21 @@ Recorded from our own corpus, 2026-08-01, the day the rule itself was set.
 
 ---
 
+## A place picked in the search lands on the map
+
+**Reference: Airbnb.** Searching a place from the home page or from the map
+always lands on the map with that place framed and the list beside it showing
+what is there; it never opens a page about the place. Our app already did this
+(MapTab.swift, case .country frames the country's whole spread).
+
+On the web since 2026-11-01 (Hidde: on /explore, searching Greece sent you to
+the Greece page): on /explore a country or city row moves the map
+(`window.atMapPlace`, map.ts); from any other search field a country opens
+`/explore#country=<name>`. A city still opens its page, which is itself a map
+with the walk and the page Google sends people to.
+
+---
+
 ## A sheet that asks for one thing
 
 **Reference: Airbnb.** The one action fills the sheet, so it sits where a thumb

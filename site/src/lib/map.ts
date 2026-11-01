@@ -609,6 +609,50 @@ function _placeFromHash() {
 }
 _placeFromHash();
 window.addEventListener('hashchange', _placeFromHash);
+// A place picked in the search on this map moves this map (Hidde, 2026-11-01:
+// "als je op de kaart naar griekenland zoekt ... niet in de kaart blijft").
+// Airbnb's search on its map, and our app's (MapTab.swift, case .country):
+// the whole spread of the country or city in view, never its page. Returns
+// false for a place this map holds no tree of, and the search then navigates.
+window.atMapPlace = function(kind, key) {
+  var slugs = {};
+  CITIES.forEach(function(c) {
+    if (kind === 'country' ? c.country === key : c.url === key) { slugs[c.url] = 1; }
+  });
+  var b = new maplibregl.LngLatBounds(), n = 0;
+  DATA.features.forEach(function(f) {
+    var c = f.geometry.coordinates;
+    if (slugs[f.properties.cs] && c[0] !== null && c[1] !== null) { b.extend(c); n++; }
+  });
+  if (!n) { return false; }
+  var lift = 0;
+  try {
+    var mr = map.getContainer().getBoundingClientRect();
+    var st = window.atSheetTop ? window.atSheetTop() : null;
+    if (st !== null && st < mr.bottom) { lift = Math.min(mr.bottom - st, mr.height * 0.6); }
+  } catch (e) {}
+  // The top clears the filter chips that sit over the map.
+  map.fitBounds(b, { padding: {top: 100, left: 40, right: 40, bottom: 40 + lift},
+                     maxZoom: kind === 'country' ? 9 : 13, duration: 900 });
+  return true;
+};
+// A country picked in the search anywhere else lands here (#country=Greece,
+// search-form.ts), Airbnb's search, which always lands on its map (Hidde,
+// 2026-11-01). Read after the timezone guess so the country wins.
+function _countryFromHash() {
+  var m = /^#country=(.+)$/.exec(location.hash);
+  if (!m) { return; }
+  var name = '';
+  try { name = decodeURIComponent(m[1]); } catch (e) { return; }
+  window.atMapPlace('country', name);
+  // Once more on the next frame, when the sheet has said where its top is,
+  // and once the map has loaded, when its container has its final size.
+  requestAnimationFrame(function() { window.atMapPlace('country', name); });
+  if (!map.loaded()) { map.once('load', function() { window.atMapPlace('country', name); }); }
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+}
+_countryFromHash();
+window.addEventListener('hashchange', _countryFromHash);
 function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   atMarkPiles(DATA.features);

@@ -160,7 +160,15 @@ export function searchWidgetJs(lang = "en"): string {
       var label = (r.kind === 'country' || r.kind === 'city') ? 'Places'
                 : r.kind === 'species' ? 'Species' : 'Trees';
       if (label !== lastKind) { head = '<div class="ats-head">' + label + '</div>'; lastKind = label; }
-      return head + '<a class="ats-row" href="/' + r.it.u + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
+      // A place row says which place it is, so the search on /explore can
+      // move the map there instead of leaving it (go() below).
+      var pk = r.kind === 'country' ? ' data-pk="country" data-pv="' + escT(r.it.country).replace(/"/g, '&quot;') + '"'
+             : r.kind === 'city' ? ' data-pk="city" data-pv="' + r.it.u + '"' : '';
+      // A country opens the map on that country, never its page (Hidde,
+      // 2026-11-01: "interessanter om op de kaart te komen", as Airbnb does).
+      // A city still opens its page, which is itself a map with the walk.
+      var href = r.kind === 'country' ? STR.explore + '#country=' + encodeURIComponent(r.it.country) : '/' + r.it.u;
+      return head + '<a class="ats-row"' + pk + ' href="' + href + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
     }).join('');
   }
   // A town we hold no tree for: the grey card of an empty notes section (the
@@ -293,6 +301,17 @@ export function searchWidgetJs(lang = "en"): string {
   function go(row) {
     lastEmpty = null;
     at.track('search-' + ctx, norm(input.value.trim()).slice(0, 60));
+    // On the map a place stays on the map (Airbnb, and our app): the map
+    // frames it and the field keeps its name. Anywhere else, and for a
+    // species or a tree, the row is a link.
+    var pk = row.getAttribute('data-pk');
+    if (pk && window.atMapPlace && window.atMapPlace(pk, row.getAttribute('data-pv'))) {
+      var b = row.querySelector('b');
+      if (b) input.value = b.textContent;
+      drop.hidden = true; active = -1;
+      input.blur();
+      return;
+    }
     window.location.href = row.getAttribute('href');
   }
   function mark(i) {

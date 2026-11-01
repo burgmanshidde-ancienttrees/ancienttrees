@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 session: searching a country lands on the map, not its page
+
+Hidde: on the web map, searching Greece sent you to the Greece page instead of moving the map; and from the home search the map is more interesting than the country landing page (Airbnb does both). Now on /explore a country or city picked in the search frames the map on it and the list beside it follows (`window.atMapPlace` in site/src/lib/map.ts); in every other search field a country opens `/explore#country=<name>`. A city row elsewhere still opens the city page (itself a map with the walk, and where Google traffic lands). The app already did this. Tested against the live page through a local proxy carrying the patch (desktop and 375px); not yet seen after the CI build. CONVENTIONS.md "A place picked in the search lands on the map".
+
 ## 2026-11-01 session: 36 coverage mails sent, coverage now before photo asks
 
 Hidde, 2026-10-31: "je zit heel erg achter fotos aan", the more interesting thing is magazines, blogs, press and nature sites writing about us; then "zoek gewoon de adressen en maakt contact". The rung 4 rule in CLAUDE.md now puts `nature` and `guide` before the `archive` photo asks (135e9f548). Four sourcing agents found 37 outlets; 36 kept (Kleine Zeitung dropped, no tree with a reason a desk would care about). Every address read on the outlet's own page (six behind Cloudflare decoded or read in the browser pane), recorded in data/outreach-contacts-archive.json with `found: 2026-11-01`. Batch drafts/batches/coverage-2026-11-01.json: variant B in seven languages, one of their own trees each, mailcheck clean, every link 200. Sent at 12:20 on "ik bedoel verstuur nu". The 11 archive mails (archive-2026-11-01.json) still wait for his word. Thin spot: the Netherlands (only Omroep West; most Dutch nature blogs have a form only). Replies via outreach_inbox.py.
