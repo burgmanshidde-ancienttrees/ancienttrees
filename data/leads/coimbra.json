@@ -106,7 +106,15 @@
    "lat": null,
    "lng": null,
    "status": "lead",
-   "why": "Hotel gardens, open to day visitors for a small fee (Time Out listing 2.50 EUR, Tue-Sun 10:00-18:00, prices disagree across sources, not fetched). Dias com Arvores 2005 comment: a camphor tree 'merece os 3 euros da visita'; the same report names olaias (Judas trees) and a sequoia 'que se diz ter sido plantado pelo Duque de Wellington' (florestas.pt repeats two sequoias planted in 1813): that date is implausible for Sequoia sempervirens, which reached Europe in the 1840s, so do not use it. No measurements, no coordinates; the garden is a walk-through park, not a small site. Owner (quintadaslagrimas.pt/pt/servicos/jardins/1077, fetched) says only 'arvores raras e de grande porte'. Needs a register or survey with measurements and a pin. The fig (cbr_005) is already published."
+   "why": "Hotel gardens, open to day visitors for a small fee (Time Out listing 2.50 EUR, Tue-Sun 10:00-18:00, prices disagree across sources, not fetched). Dias com Arvores 2005 comment: a camphor tree 'merece os 3 euros da visita'; the same report names olaias (Judas trees) and a sequoia 'que se diz ter sido plantado pelo Duque de Wellington' (florestas.pt repeats two sequoias planted in 1813): that date is implausible for Sequoia sempervirens, which reached Europe in the 1840s, so do not use it. No measurements, no coordinates; the garden is a walk-through park, not a small site. Owner (quintadaslagrimas.pt/pt/servicos/jardins/1077, fetched) says only 'arvores raras e de grande porte'. Needs a register or survey with measurements and a pin. The fig (cbr_005) is already published. [2026-11-01 verify pass] Searched again: a Sygic/geocaching/waymarking listing names a 'Sequoia Wellington' there, planted early 19th century (implausible for the species), no height or girth in any source; europeangardens.eu inventory PDF (J10) names no individual trees. Still no measurements or pin."
+  },
+  {
+   "name": "Pinheiro-manso, Quinta de Santa Comba",
+   "species": "Stone Pine (Pinus pinea)",
+   "lat": 40.21869,
+   "lng": -8.41764,
+   "status": "lead",
+   "why": "Wikidata Q98444931 (CC0), which cites ICNF register processo KNJ1/203 (Arvores de Interesse Publico). Not in our portugal-icnf.json extract, so no girth, height or age in hand. ICNF ficha URL (www2.icnf.pt/portal/florestas/ArvoresFicha) now returns an error page; web searches found no page on this tree. Access to the quinta unknown. No measurements, photo or confirmed pin in reach; leave until the ICNF record or a Diario da Republica classification notice is found."
   }
  ],
  "blocked": [
