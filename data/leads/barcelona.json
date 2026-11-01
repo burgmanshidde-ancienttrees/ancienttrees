@@ -2,8 +2,8 @@
   "city": "Barcelona",
   "country": "Spain",
   "city_slug": "barcelona",
-  "updated": "2026-08-08",
-  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility. Extended 2026-08-08 by a verification pass on the five undated Gracia/Park Guell-adjacent candidates: the Llentiscle de l'Hort de l'Avi verified and delivered to data/research/barcelona-verified.json as bcn_033 (public access path into Park Guell's free wooded perimeter, second source bcnsostenible.cat). The combined four-tree lead entry below is superseded by the three entries that follow it, split out with what this pass found. Two of the remaining three moved to blocked (Ficus de Mysore, Xiprer del carrer Betlem); two stay leads with access now the open question rather than the date (Garrofer and Pebrer bord del carrer Maignon). Extended 2026-08-29: a verify claim on the Pedralbes/Sarria cluster re-verified bcn_023/024/025 under new ids (bcn_056/057/058) without checking passcheck.py first; folded into blocked as duplicates. One genuine new find survived from the same pass, the Osage Oranges of the Torre Girona Gardens (bcn_059), a distinct catalogued item (register_id 99400680106) in the same garden as the already-published bcn_026/027/028, different species, not a duplicate.",
+  "updated": "2026-11-01",
+  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility. Extended 2026-08-08 by a verification pass on the five undated Gracia/Park Guell-adjacent candidates: the Llentiscle de l'Hort de l'Avi verified and delivered to data/research/barcelona-verified.json as bcn_033 (public access path into Park Guell's free wooded perimeter, second source bcnsostenible.cat). The combined four-tree lead entry below is superseded by the three entries that follow it, split out with what this pass found. Two of the remaining three moved to blocked (Ficus de Mysore, Xiprer del carrer Betlem); two stay leads with access now the open question rather than the date (Garrofer and Pebrer bord del carrer Maignon). Extended 2026-08-29: a verify claim on the Pedralbes/Sarria cluster re-verified bcn_023/024/025 under new ids (bcn_056/057/058) without checking passcheck.py first; folded into blocked as duplicates. One genuine new find survived from the same pass, the Osage Oranges of the Torre Girona Gardens (bcn_059), a distinct catalogued item (register_id 99400680106) in the same garden as the already-published bcn_026/027/028, different species, not a duplicate. Extended 2026-11-01: eight leads in the Jardi Botanic Historic named by the garden's friends' association in a mail (ginkgo pair, olive, Atlas cedars, Balearic box, carob, American elms, planes, Kentucky coffee tree); coordinates are the sector only. The same mail also named smaller specimens (Pistacia lentiscus, Pistacia atlantica, Vitex agnus-castus, Teline, Ephedra altissima, Celtis australis, Vachellia caven) and pointed at the newer Jardi Botanic de Barcelona.",
   "leads": [
     {
       "name": "Freixe de fulla estreta del Jardi Botanic Historic",
@@ -318,6 +318,86 @@
       "species": "Holm Oak (Quercus ilex)",
       "status": "lead",
       "why": "Spotted by Hidde on Instagram 2026-08-13: a very large low-branching holm oak in the Parc del Montnegre i el Corredor, climbable, photographed with a person standing in the crown. Not researched yet and NOT a Barcelona city tree: the park centre is about 41 km from the city, well past the day-trip boundary of roughly 30 minutes by public transport, so it belongs to a future page for Mataro, Sant Celoni or the park itself rather than to Barcelona. Catalonia's monumental-tree register would name it in one query but is BLOCKED on licence (its metadata says only otherRestrictions and the WFS declares no permission), which is what the drafts/catalonia-permission.md letter asks for. The Instagram photograph itself is unusable under hard rule 4, no open licence. What a future pass needs: the tree's own name, whether it is one of the park's named alzines, and a source that is not social media."
+    },
+    {
+      "name": "Ginkgos del Jardi Botanic Historic (male and female)",
+      "species": "Ginkgo biloba",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. 'Two good specimens, a male and a female.' An ensemble only if they stand together; needs a spot.",
+      "found": "2026-11-01"
+    },
+    {
+      "name": "Olivera del Jardi Botanic Historic",
+      "species": "Olea europaea",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. An olive 'of more than 8 metres'. Needs a spot and an age basis.",
+      "found": "2026-11-01"
+    },
+    {
+      "name": "Cedres de l'Atles del Jardi Botanic Historic",
+      "species": "Cedrus atlantica",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. Atlas cedars 'of nearly 80 years'. Needs a spot; pick the biggest one as the collectible point.",
+      "found": "2026-11-01"
+    },
+    {
+      "name": "Boixos de les Balears del Jardi Botanic Historic",
+      "species": "Buxus balearica",
+      "lat": 41.3672,
+      "lng": 2.1534,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de la Masia. Balearic box 'of good size'; a Balearic endemic, so rarity could carry it. Needs a spot.",
+      "found": "2026-11-01"
+    },
+    {
+      "name": "Garrofer del Jardi Botanic Historic",
+      "species": "Ceratonia siliqua",
+      "lat": 41.3672,
+      "lng": 2.1534,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de la Masia. Needs size and a spot.",
+      "found": "2026-11-01"
+    },
+    {
+      "name": "Oms americans del Jardi Botanic Historic",
+      "species": "Ulmus americana",
+      "lat": 41.3672,
+      "lng": 2.1534,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de la Masia. 'American elms and planes that are quite big.' Needs a spot and a measurement.",
+      "found": "2026-11-01"
+    },
+    {
+      "name": "Plataners del Jardi Botanic Historic",
+      "species": "Platanus x hispanica",
+      "lat": 41.3672,
+      "lng": 2.1534,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de la Masia, beside the American elms, 'quite big'. Needs a spot and a measurement.",
+      "found": "2026-11-01"
+    },
+    {
+      "name": "Arbre del cafe de Kentucky del Jardi Botanic Historic",
+      "species": "Gymnocladus dioicus",
+      "lat": 41.3672,
+      "lng": 2.1534,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de la Masia. Rare in Barcelona. Needs size and a spot.",
+      "found": "2026-11-01"
     }
   ],
   "blocked": [
