@@ -1,0 +1,32 @@
+{
+ "leads": [
+  {
+   "name": "Tamarind in front of Landhuis Daniel",
+   "species": "Tamarind (Tamarindus indica)",
+   "location": "Landhuis Daniel, Weg naar Westpunt (ruin, no coordinates found)",
+   "reason": "Only source is an old folklore book (sambumbu.com, Volkskunde van Curacao) via search snippet: a large tamarind with a painted cross, hanging legend. Not fetched, not dated, tree may be gone; Landhuis Daniel register page (curacaomonuments.org) mentions no trees. Lead only; no coordinate, no life check."
+  },
+  {
+   "name": "Cathedral of Thorns, Landhuis Bloemhof",
+   "species": "Wabi / Sumpina (Acacia tortuosa)",
+   "location": "Landhuis Bloemhof, Curacao",
+   "reason": "Seafari guide: a thorn structure made of sumpina spines; Lonely Planet lists Bloemhof. An ensemble or built installation, not an old individual tree; blocked as not a collectible old tree unless a source shows living ancient specimens."
+  },
+  {
+   "name": "Unnamed veteran trees in Christoffelpark / landhuis grounds",
+   "species": "unknown",
+   "location": "Christoffelpark; landhuis grounds island-wide",
+   "reason": "Searches found no named individual old tree besides the Hofi Pastor kapok; no naming body (no champion register, monument register of trees) found for Curacao. Needs an on-island source or iNaturalist observations."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Willemstad historic quarters trees (Punda, Otrobanda, Scharloo, Pietermaai, Wilhelminapark, Plaza Brion)",
+   "reason": "Searched in English; no source names an old individual tree there."
+  },
+  {
+   "name": "Beth Haim cemetery, Jan Kok, Dokterstuin, Ascencion, Knip",
+   "reason": "No source found naming a notable tree at any of them (Knip only gives the kenepa as name origin)."
+  }
+ ]
+}
