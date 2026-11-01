@@ -195,7 +195,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
       </div>
     </details>
     <details class="nav-drop">
-      <summary aria-label={t.menu}><span class="sum-desktop">{t.browse}<Fragment set:html={CARET} /></span><span class="sum-mobile" aria-hidden="true"><Fragment set:html={icon("list", "bold")} /></span></summary>
+      <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}<Fragment set:html={CARET} /></span><span class="sum-mobile" aria-hidden="true"><Fragment set:html={icon("list", "bold")} /></span></summary>
       <div class="nav-drop-menu">
         {/* Below 800px this panel is a full-screen sheet rather than a
             dropdown, copied from AllTrails' own phone menu (CONVENTIONS.md
