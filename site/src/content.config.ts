@@ -37,7 +37,7 @@ const photoFields = z
     // "mine" is our own photograph (2026-10-24, the Piazza Marina fig): no
     // licence line, never credited, counts as unique to us in
     // thin_pages.unique_photo(). Missing here it broke the build.
-    source: z.enum(["contributor", "mine"]).nullable().optional(),
+    source: z.enum(["contributor", "mine", "mail"]).nullable().optional(),
     contributor_user_id: z.string().nullable().optional(),
     // Set when the account behind a published photograph was deleted
     // (2026-09-04). The picture stays under the licence in /terms and the
