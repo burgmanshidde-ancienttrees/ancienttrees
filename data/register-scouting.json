@@ -859,7 +859,8 @@
    "place": "Savannah",
    "country": "United States",
    "status": "stalled",
-   "note": "SCOUTED 2026-08-31 (session, US register scouting round two). SAGIS's Savannah/Trees ArcGIS layer (36,553 + 2,723 features) is a full municipal maintenance inventory, fails the semantic filter, no licenseInfo set. The Georgia Landmark and Historic Tree Register (gatreecouncil.org) is a real statewide semantic register since 1994 naming 2 Savannah entries (Candler Oak 2001, Bonaventure Cemetery Live Oaks 2004) but is published as plain HTML text only, no coordinates, no dataset, and no licence statement found anywhere on the site: a stall, not a yes. Worth a permission ask to the Georgia Tree Council (small 501c3, melanie@gatreecouncil.org), Hidde's call. Full detail in OPEN_DATA_SURVEY.md."
+   "note": "SCOUTED 2026-08-31 (session, US register scouting round two). SAGIS's Savannah/Trees ArcGIS layer (36,553 + 2,723 features) is a full municipal maintenance inventory, fails the semantic filter, no licenseInfo set. The Georgia Landmark and Historic Tree Register (gatreecouncil.org) is a real statewide semantic register since 1994 naming 2 Savannah entries (Candler Oak 2001, Bonaventure Cemetery Live Oaks 2004) but is published as plain HTML text only, no coordinates, no dataset, and no licence statement found anywhere on the site: a stall, not a yes. Worth a permission ask to the Georgia Tree Council (small 501c3, melanie@gatreecouncil.org), Hidde's call. Full detail in OPEN_DATA_SURVEY.md. RETRIED 2026-11-01: unchanged, the only way forward is that permission ask (drafts only, Hidde sends); nothing a night run can do.",
+   "retried": "2026-11-01"
   },
   {
    "place": "Charleston",
@@ -1195,7 +1196,8 @@
    "place": "Faro",
    "country": "Portugal",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-31 (backup lane). No Faro municipal list. The national ICNF register is already imported (data/registers/portugal-icnf.json) and holds Faro-district rows (Portimao Alvor pinheiro-manso, Monchique carvalho and platano and araucaria, Olhao Quinta da Parra alfarrobeira, Sao Bras azinheira), all approximate coordinates. Next: a verify pass on those district rows, one source each, for an Algarve cluster; no from-zero city research."
+   "note": "SCOUTED 2026-10-31 (backup lane). No Faro municipal list. The national ICNF register is already imported (data/registers/portugal-icnf.json) and holds Faro-district rows (Portimao Alvor pinheiro-manso, Monchique carvalho and platano and araucaria, Olhao Quinta da Parra alfarrobeira, Sao Bras azinheira), all approximate coordinates. Next: a verify pass on those district rows, one source each, for an Algarve cluster; no from-zero city research. RETRIED 2026-11-01: verify pass found only single trees in Tavira, Olhao, Sao Bras and Loule (Quinta da Parra carob private; Quarteira cork oak unconfirmed alive); no cluster of four. Tavira's Oliveira Real stays held on resort access. Next only with new evidence: Almargem's 2007 Loule inventory (almargem.org/site/images/documentos/ArvoresMonumentaisdeLoule.pdf, 78 trees with GPS, image-only PDF, needs OCR).",
+   "retried": "2026-11-01"
   }
  ],
  "out_of_focus": {
