@@ -55,13 +55,15 @@
       "access": "Free, public land, viewable from outside Gut Nederling",
       "transport": "10 min walk from Nederlinger Straße bus stop or Moosach S-Bahn station",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/R%C3%B6th-Linde.jpg",
-        "license": "Public Domain",
-        "attribution": "Holger Heinzmann, via Wikimedia Commons",
+        "url": "https://stadtgeschichte-muenchen.de/fotoarchiv/2020/04/200424_191406_6.jpg",
+        "license": "Used with permission from Stadtgeschichte München (Gerhard Willhalm); credit required",
+        "attribution": "Gerhard Willhalm, stadtgeschichte-muenchen.de",
+        "attribution_url": "https://stadtgeschichte-muenchen.de/bilder/d_fotos.php?id=12731",
         "status": "approved",
-        "width": 428,
-        "height": 262,
-        "taken_month": 8
+        "width": 800,
+        "height": 534,
+        "taken_month": 4,
+        "note": "From stadtgeschichte-muenchen.de photo 12731, geotagged 7 m from our pin, title naming the tree. Looked at 2026-11-01: the Röth-Linde in fresh leaf beside the road, whole tree in frame. Carries their fotoagentur-muenchen.de watermark. Permission by mail from Veronika Willhalm, stadtgeschichte-muenchen.de, 2026-11-01: 'Allerdings können Sie auch die Bilder von unserer Seite verwenden.' Their site marks its photos CC BY-NC 4.0; this mail is what covers our use. Not an open licence; ask before reuse elsewhere."
       },
       "curation_status": "flagged",
       "notes": "The Thirty Years' War planting date is local tradition, not a documented record; the 300-350 year range comes from the tree's own Wikipedia entry and matches independently, but no source gives a single precise figure. Photo viewed directly: shows a large, mature, dome-shaped linden standing alone on a grassy plot beside a rural-looking building, consistent with the tree's setting near Gut Nederling. Approved. Cross-checked against an OpenStreetMap node (denotation=natural_monument, name=Röth-Linde) within 5m of this entry's own coordinates: independent confirmation the pin is already right.",
@@ -72,7 +74,18 @@
         "url": null
       },
       "girth_cm": 624,
-      "height_m": 23
+      "height_m": 23,
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/R%C3%B6th-Linde.jpg",
+          "license": "Public Domain",
+          "attribution": "Holger Heinzmann, via Wikimedia Commons",
+          "status": "approved",
+          "width": 428,
+          "height": 262,
+          "taken_month": 8
+        }
+      ]
     },
     {
       "id": "muc_002",
@@ -152,13 +165,15 @@
       "access": "Free, public park",
       "transport": "10 min walk from Brudermühlbrücke tram/bus stop",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Friedenseiche_Flaucheranlagen_Muenchen-1.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Rufus46, via Wikimedia Commons",
+        "url": "https://stadtgeschichte-muenchen.de/fotoarchiv/2021/01/210101_093622_6.jpg",
+        "license": "Used with permission from Stadtgeschichte München (Gerhard Willhalm); credit required",
+        "attribution": "Gerhard Willhalm, stadtgeschichte-muenchen.de",
+        "attribution_url": "https://stadtgeschichte-muenchen.de/bilder/d_fotos.php?id=7886",
         "status": "approved",
-        "width": 3648,
-        "height": 5472,
-        "taken_month": 9
+        "width": 800,
+        "height": 1199,
+        "taken_month": 1,
+        "note": "From stadtgeschichte-muenchen.de photo 7886, geotagged 10 m from our pin, title naming the tree. Looked at 2026-11-01: a tall bare oak in the Flaucheranlagen with a yew at its foot. Carries their fotoagentur-muenchen.de watermark. Permission by mail from Veronika Willhalm, stadtgeschichte-muenchen.de, 2026-11-01: 'Allerdings können Sie auch die Bilder von unserer Seite verwenden.' Their site marks its photos CC BY-NC 4.0; this mail is what covers our use. Not an open licence; ask before reuse elsewhere."
       },
       "curation_status": "flagged",
       "notes": "Planting date (1 July 1871) is explicit on the tree's own plaque per stadtgeschichte-muenchen.de, so age is calculated directly rather than estimated. Photo viewed directly: shows a large solitary oak on a park lawn with a memorial stone at its base, consistent with a commemorative planting. Approved. Pin corrected 2026-07-27, about 1.3km, using German Wikipedia's Naturdenkmäler list coordinates (see muc_002 for the cross-check that validated this table against an independent Nominatim geocode).",
@@ -167,7 +182,18 @@
       "official_register": {
         "name": "Naturdenkmal (Landeshauptstadt München, LfU Bayern), no. ND-01972",
         "url": null
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Friedenseiche_Flaucheranlagen_Muenchen-1.jpg",
+          "license": "CC BY-SA 3.0",
+          "attribution": "Rufus46, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3648,
+          "height": 5472,
+          "taken_month": 9
+        }
+      ]
     },
     {
       "id": "muc_004",
@@ -1032,10 +1058,15 @@
       "access": "Free, public land, no restrictions",
       "transport": "1 min walk from the Am Gasteig tram stop",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://stadtgeschichte-muenchen.de/fotoarchiv/2023/02/230226_091729_6.jpg",
+        "license": "Used with permission from Stadtgeschichte München (Gerhard Willhalm); credit required",
+        "attribution": "Gerhard Willhalm, stadtgeschichte-muenchen.de",
+        "attribution_url": "https://stadtgeschichte-muenchen.de/bilder/d_fotos.php?id=12729",
+        "status": "approved",
+        "width": 1138,
+        "height": 800,
+        "taken_month": 2,
+        "note": "From stadtgeschichte-muenchen.de photo 12729, geotagged 45 m from our pin, title naming the tree. Looked at 2026-11-01: a wide horse chestnut with long low limbs beside the road at Am Gasteig, in snow. Carries their fotoagentur-muenchen.de watermark. Permission by mail from Veronika Willhalm, stadtgeschichte-muenchen.de, 2026-11-01: 'Allerdings können Sie auch die Bilder von unserer Seite verwenden.' Their site marks its photos CC BY-NC 4.0; this mail is what covers our use. Not an open licence; ask before reuse elsewhere."
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -1480,7 +1511,7 @@
         "longitude": 11.672519,
         "neighbourhood": "Trudering-Riem"
       },
-      "story": "If you find this chestnut brown and blotched in August, autumn has nothing to do with it. Since the 1990s a small moth, the horse chestnut leaf miner, has spread across central Europe and mines the leaves of nearly every chestnut on the continent, browning them weeks early. The tree survives it and keeps flowering; it simply stops looking its best at the exact moment people are out in shirtsleeves. Come in May instead, when the candles are up and the leaf miners have not yet got going.\n\nWhat brought it onto Munich's protected list is bulk. The 2021 ordinance calls it a mighty free-standing tree, rare within the city at this size, and free-standing is the operative word: no neighbours, no competition, a full dome from the ground up. It stands on Kirchtruderinger Strasse, the road named for the church end of Trudering, a farming village east of Munich that had its own parish long before the city grew out to meet it and swallowed it whole.\n\nThe register carries no age and nobody else has published one, which is normal for a street tree that was never famous. Trudering keeps its own local history well. If somebody there knows when this chestnut was planted, we would like to put the year on the page.",
+      "story": "If you find this chestnut brown and blotched in August, autumn has nothing to do with it. Since the 1990s a small moth, the horse chestnut leaf miner, has spread across central Europe and mines the leaves of nearly every chestnut on the continent, browning them weeks early. The tree survives it and keeps flowering; it simply stops looking its best at the exact moment people are out in shirtsleeves. Come in May instead, when the candles are up and the leaf miners have not yet got going.\n\nWhat brought it onto Munich's protected list is bulk. The 2021 ordinance calls it a mighty free-standing tree, rare within the city at this size. Free-standing matters here. With no neighbours and no competition, it carries a full dome from the ground up. It stands on Kirchtruderinger Strasse, the road named for the church end of Trudering, a farming village east of Munich that had its own parish long before the city grew out to meet it and swallowed it whole.\n\nThe register carries no age and nobody else has published one, which is normal for a street tree that was never famous. Trudering keeps its own local history well. If somebody there knows when this chestnut was planted, we would like to put the year on the page.",
       "verified_sources": [
         "Munich Naturdenkmalverordnung 2021, Trudering-Riem 1",
         "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete%3Anaturdenkmal_punktfoermig&srsName=EPSG%3A4326&FILTER=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsEqualTo%3E%3Cfes%3AValueReference%3Eid%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3END-01996%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsEqualTo%3E%3C%2Ffes%3AFilter%3E"
@@ -1490,10 +1521,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://stadtgeschichte-muenchen.de/fotoarchiv/2023/02/230218_170810_6.jpg",
+        "license": "Used with permission from Stadtgeschichte München (Gerhard Willhalm); credit required",
+        "attribution": "Gerhard Willhalm, stadtgeschichte-muenchen.de",
+        "attribution_url": "https://stadtgeschichte-muenchen.de/bilder/d_fotos.php?id=12717",
+        "status": "approved",
+        "width": 1120,
+        "height": 800,
+        "taken_month": 2,
+        "note": "From stadtgeschichte-muenchen.de photo 12717, geotagged 7 m from our pin, title naming the tree. Looked at 2026-11-01: a broad solitary horse chestnut on a sports field, bare, whole crown in frame. Carries their fotoagentur-muenchen.de watermark. Permission by mail from Veronika Willhalm, stadtgeschichte-muenchen.de, 2026-11-01: 'Allerdings können Sie auch die Bilder von unserer Seite verwenden.' Their site marks its photos CC BY-NC 4.0; this mail is what covers our use. Not an open licence; ask before reuse elsewhere."
       },
       "best_time": {
         "months": [
@@ -1527,7 +1563,7 @@
         "longitude": 11.606563,
         "neighbourhood": "Ramersdorf-Perlach"
       },
-      "story": "A beech that still has its lowest branches has never had a neighbour. In a beech wood the low limbs die in the shade of the canopy and drop off, which is why forest beeches stand like grey columns with nothing on them for the first ten metres. An even crown that sweeps all the way down to the grass is the shape of a tree that grew up in the open with all the light to itself, and that is precisely what Munich's 2021 natural monument ordinance records here: a large solitary tree with an even crown reaching down to the ground.\n\nIt stands on Kagerstrasse in Ramersdorf-Perlach, in the south-east of the city, on the sort of residential street where a tree this size is the only thing older than the houses. Fagus sylvatica is the species that would cover most of central Europe if we left it alone, and it casts the deepest shade of any tree here, which is why almost nothing grows underneath one.\n\nThe city recorded no age and no girth, and no second source names it, so the honest answer is that nobody has dated it. If somebody on Kagerstrasse remembers the tree from childhood, or has put a tape around the trunk, that is already more than any register holds.",
+      "story": "A beech that still has its lowest branches has never had a neighbour. In a beech wood the low limbs die in the shade of the canopy and drop off, which is why forest beeches stand like grey columns with nothing on them for the first ten metres. An even crown that sweeps all the way down to the grass is the shape of a tree that grew up in the open with all the light to itself, and that is precisely what Munich's 2021 natural monument ordinance records here. It describes a large solitary tree with an even crown reaching down to the ground.\n\nIt stands on Kagerstrasse in Ramersdorf-Perlach, in the south-east of the city, on the sort of residential street where a tree this size is the only thing older than the houses. Fagus sylvatica is the species that would cover most of central Europe if we left it alone, and it casts the deepest shade of any tree here, which is why almost nothing grows underneath one.\n\nThe city recorded no age and no girth, and no second source names it, so the honest answer is that nobody has dated it. If somebody on Kagerstrasse remembers the tree from childhood, or has put a tape around the trunk, that is already more than any register holds.",
       "best_time": {
         "months": [
           10,
@@ -1545,10 +1581,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://stadtgeschichte-muenchen.de/fotoarchiv/2023/02/230227_153127_6.jpg",
+        "license": "Used with permission from Stadtgeschichte München (Gerhard Willhalm); credit required",
+        "attribution": "Gerhard Willhalm, stadtgeschichte-muenchen.de",
+        "attribution_url": "https://stadtgeschichte-muenchen.de/bilder/d_fotos.php?id=12733",
+        "status": "approved",
+        "width": 800,
+        "height": 942,
+        "taken_month": 2,
+        "note": "From stadtgeschichte-muenchen.de photo 12733, geotagged 8 m from our pin, title naming the tree. Looked at 2026-11-01: a tall smooth-barked beech in a small green, bare, light snow, whole tree in frame. Carries their fotoagentur-muenchen.de watermark. Permission by mail from Veronika Willhalm, stadtgeschichte-muenchen.de, 2026-11-01: 'Allerdings können Sie auch die Bilder von unserer Seite verwenden.' Their site marks its photos CC BY-NC 4.0; this mail is what covers our use. Not an open licence; ask before reuse elsewhere."
       },
       "how_to_recognise": "You can recognise it by the even crown, which sweeps all the way down to the grass where a forest beech would be bare for its first ten metres. It stands alone on Kagerstraße in Ramersdorf-Perlach.",
       "official_register": {
