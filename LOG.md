@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 session: the support page is gone
+
+Hidde: "de support page wat absolute onzin ... haal maar helemaal weg" (among other things it claimed that deleting an account removes your pictures, which is false). The page is deleted, along with its footer link and the Support row in the web Settings. /support redirects to /about, because it is the App Store listing's Support URL and /about carries info@ancienttrees.app. The app had no link to it. Not yet seen after the CI build.
+
 ## 2026-11-01 session: the city map shows every tree in view, and a dot is always a tree
 
 Hidde asked for a look at how the maps work together and then "Yes, do that" on the first fix. A city map now draws the other places' trees the way /explore does, at every zoom (Zaanstad's and Haarlem's beside Amsterdam's), and a tap opens the tree's card on the page. Zoomed out (below zoom 9, or 1.2 below where a wide place opens) its own pins become dots among the others, so the map looks like /explore from every page; the old city dots that loaded another city's page are gone. The list turns to "Cities in view" at that same zoom, no longer half a step earlier. The rows come from a new /api/pins.json (id, place, city, pin priority; about 200 KB before compression, fetched once). Also fixed on the way: a card copied from a hidden list came out zero high. Seen on the live Amsterdam page with the patch through the local proxy, desktop and 375px; not yet after the CI build. Still open from the same look: two pin designs (white drawn pins on a city, green discs elsewhere), the country page as an article with a static list and a title saying "Oldest First" over a list by tree count, "Explore" in the header not going to /explore, and Curacao's "Home › Curaçao › Curaçao".
