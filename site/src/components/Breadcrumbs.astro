@@ -3,12 +3,12 @@
 // root-absolute URLs directly (the crumb tuple's url is already the full
 // canonical, e.g. BASE_URL + "/parks"), simplifying away the %%ROOTPATH%%
 // relative-depth math the Python version needed.
-import { BASE_URL } from "../lib/schema";
+import { BASE_URL, dedupeCrumbs } from "../lib/schema";
 
 export interface Props {
   items: [name: string, url: string | null][];
 }
-const { items } = Astro.props;
+const items = dedupeCrumbs(Astro.props.items);
 
 function toPath(url: string): string {
   if (url === BASE_URL) return "/";

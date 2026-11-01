@@ -10,6 +10,13 @@ export const SITE_SCHEMA = [
 
 export type Crumb = [name: string, url: string | null];
 
+/** A place named after its country (Curaçao, Singapore, Cyprus) would read
+ * "Curaçao › Curaçao"; the broader crumb drops and the place keeps its link
+ * (Hidde, 2026-11-01). Used by the visible nav and the schema alike. */
+export function dedupeCrumbs(items: Crumb[]): Crumb[] {
+  return items.filter(([name], i) => i === items.length - 1 || name !== items[i + 1][0]);
+}
+
 /** Google requires every ListItem to carry an "item". Crumbs without a page
  * of their own (a country not yet published, or the current page itself)
  * fall back to the page's own canonical URL for the LAST crumb only,
@@ -20,8 +27,9 @@ export type Crumb = [name: string, url: string | null];
  * invalid; it still shows as plain text in the visible breadcrumb nav. */
 export function breadcrumbSchema(items: Crumb[], pageUrl?: string) {
   const elements: Record<string, unknown>[] = [];
-  items.forEach(([name, url], i) => {
-    const isLast = i === items.length - 1;
+  const crumbs = dedupeCrumbs(items);
+  crumbs.forEach(([name, url], i) => {
+    const isLast = i === crumbs.length - 1;
     const item = url ?? (isLast ? pageUrl : undefined);
     if (!item) return;
     elements.push({ "@type": "ListItem", position: elements.length + 1, name, item });
