@@ -936,9 +936,12 @@ renderPanel();
  */
 export function myTreesMapScript(): string {
   return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs()}
+// An empty collection opens on the whole world, as Polarsteps' empty map
+// does, not on Europe: an Australian with no trees yet saw an empty Europe
+// (Hidde, 2026-11-01). The trees, once there, frame themselves (paint()).
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
-  center: [8, 48], zoom: 2.6, minZoom: 1.3,
+  bounds: [[-165, -50], [180, 70]], minZoom: 1.3,
   renderWorldCopies: false,
   attributionControl: false
 });
