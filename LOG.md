@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-11-01 second attempt: Porto verify
+
+Wrote the READY shelf (see the entry below: 2 live, 12 held). Verify pass on Porto found one tree: por_031, the Cavadinha cork oak (ICNF KNJ1/567 plus Maia council, flagged: no life check beyond 2021 photos), in data/research/porto-verified.json awaiting a story. The porto claim stays standing until it is merged. Two new leads in data/leads/porto.json. The other 12 unmined candidates were already on file. Fort-worth and new-york claims left to the earlier attempt.
+
 ## 2026-11-01 write pass: New York +1, Dublin +1
 
 Live: nyc_030 The Weeping Beech of Douglaston Station (traffic island opposite the LIRR station, by the WWI memorial; age disputed 1850 to 1880s, the Flushing-cutting story kept as belief; species name aligned to the canonical Weeping Beech) and dub_019 The Marlay Park Cedar of Lebanon (register-only, 2009 survey band 150 to 200 years, a tree-level grid pin rather than a park centre, alive unconfirmed and said so on the page). Count promises moved: Dublin 19, New York 29. Preflight 0 problems.

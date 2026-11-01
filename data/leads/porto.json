@@ -69,6 +69,26 @@
     "longitude": -8.575166662
    },
    "reason": "Re-seen 2026-10-29, not advanced: register has no measurements, no photo or exact pin in reach, garden access for non-guests unconfirmed."
+  },
+  {
+   "name_pt": "eucaliptos e outras (Quinta de Santo Inacio de Fiaes)",
+   "species": "Eucalyptus collection (Eucalyptus obliqua and others)",
+   "location": {
+    "address": "Quinta de Santo Inacio de Fiaes (Zoo Santo Inacio), Avintes, Vila Nova de Gaia",
+    "latitude": 41.0969,
+    "longitude": -8.5362
+   },
+   "reason": "2026-11-01 verify pass. ICNF KNJ2/024 is a multi-species estate ensemble (camellia, six eucalypts, pines, oaks, araucaria, tulip tree, myrtle) with no girth or height and an unsourced age of 800; not one collectible point. Jardins Historicos (jardinshistoricos.pt/ad/877) lists it as private (Aveleda S.A.), paid or by booking, part of it a zoo; Direccao-Geral dos Recursos Florestais classified the trees in 2006. A single named tree (the largest Eucalyptus obliqua in Portugal, planted by Roberto van-Zeller) would need its own coordinate and a source; none found. Search summaries only, nothing fetched."
+  },
+  {
+   "name_pt": "louro-cerejo (Gandarela, Maia)",
+   "species": "Cherry Laurel (Prunus laurocerasus)",
+   "location": {
+    "address": "Gandarela, Maia",
+    "latitude": 41.24596347,
+    "longitude": -8.612529859
+   },
+   "reason": "2026-11-01 verify pass. ICNF KNJ1/568, girth 0.81 m, height 6.2 m, age 170: a shrub-sized evergreen, not worth the walk; not researched further. Wikidata Q98444109 has an image."
   }
  ],
  "blocked": [

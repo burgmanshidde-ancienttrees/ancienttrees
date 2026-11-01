@@ -76,5 +76,40 @@
       "label": "late October and November, when the crown turns clear yellow"
     },
     "verify_notes": "Same classification round and garden as por_029. Register only plus council announcement, measured 2020: flagged. Alive: not seen individually; lifecheck.py returned an iNaturalist observation 2025-06-18 (id 290611890) but that observation is a Japanese maple (Acer palmatum), so it is NOT evidence for this tree and was discarded. Girth 4.9 m with height 36 m and crown 21.4 m are plausible for a mature tulip tree; the girth is the largest of the four trees in the garden after the yew (5.8 m). Not the same tree as por_020 (Casa Allen tulip, AIP131218113I, 5.24 m, about 330 m away), por_001 or por_014, and not the blocked school tulip tree (KNJ1/009). Register gives no age; none invented. Approximate pin (register coordinate not placed on a crown)."
+  },
+  {
+    "id": "por_031",
+    "name": "The Cork Oak of the Chapel of Santo Antonio, Cavadinha",
+    "species": "Cork Oak (Quercus suber)",
+    "age_estimate": "roughly 250 years",
+    "age_min": 200,
+    "age_max": 300,
+    "age_basis": "source",
+    "girth_cm": 417,
+    "height_m": 19.5,
+    "location": {
+      "address": "Adro of the Capela de Santo Antonio, Monte de Santo Antonio, Rua de Santo Antonio, Silva Escura, Nogueira e Silva Escura, Maia",
+      "latitude": 41.2567,
+      "longitude": -8.5757,
+      "neighbourhood": "Cavadinha, Nogueira e Silva Escura (Maia)"
+    },
+    "verified_sources": [
+      "ICNF Arvoredo de Interesse Publico register, processo KNJ1/567 (data/registers/portugal-icnf.json): sobreiro, Quercus suber, arvore isolada, Maia, Nogueira e Silva Escura, lugar Cavadinha, classified Aviso n.o 22 de 17/12/2010, age 250, measured 2010, girth 4.17 m, height 19.5 m, crown 15.4 m",
+      "https://www.cm-maia.pt/viver/ambiente/ambiente/espacos-verdes/monte-de-santo-antonio (Maia municipal council, owner/manager of the green space; fetched 2026-11-01): 'a presenca na proximidade da Capela de um Sobreiro, que pelas suas caracteristicas particulares quanto ao porte, estrutura, idade e enquadramento cultural e historico, se classifica como exemplar de Interesse Publico'; address Rua de Santo Antonio, 41 15 24.7 N 8 34 32.0 W; area 18,000 m2",
+      "https://commons.wikimedia.org/wiki/File:Sobreiro_bicenten%C3%A1rio_no_adro_da_capela_de_Santo_Ant%C3%B3nio_-_Silva_Escura,_Maia_-_01.jpg (CC BY-SA 4.0, Reis Quarteu, photographed 2021-07-03: 'Sobreiro bicentenario no adro da capela de Santo Antonio', Lugar da Cavadinha)"
+    ],
+    "official_register": {
+      "name": "ICNF Arvoredo de Interesse Publico, processo KNJ1/567",
+      "url": "https://www.cm-maia.pt/viver/ambiente/ambiente/espacos-verdes/monte-de-santo-antonio"
+    },
+    "access": "Open municipal green space (Monte de Santo Antonio, 18,000 m2, Maia council): the tree stands beside the chapel in a paved churchyard walled in stone, reached by steps from Rua de Santo Antonio and by new access from Rua de Joao Paulo II. No opening hours published; the chapel itself is busiest at the June Festa de Santo Antonio.",
+    "transport": "About 12 km north of central Porto, in Silva Escura (Maia); no bus line or travel time was verified, so the 30-minute public-transport rule is unconfirmed. Mostly a car or taxi trip.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Adro of the Capela de Santo Antonio",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Register (2010) plus Maia council page (owner of the ground) plus Maia PDM 2025 table of protected trees (Aviso 4731/2025/2, Quercus suber, KNJ1/567, 250 years, Aviso 22 of 17/12/2010; seen only as a search extract, not fetched, so not counted). Register age 250 is at the 2010 measurement, so about 266 now; broad range kept. Girth 4.17 m, height 19.5 m, crown 15.4 m all measured 2010, plausible for an old cork oak. Alive: dated photographs on Commons from 2021-07-03 (Reis Quarteu, many files, Wiki Loves Monuments) show the tree; lifecheck.py returned NONE; no sighting from the last two years seen, so flagged for thin aliveness. Council page cites coordinate 41.25686,-8.57556 (DMS 41 15 24.7 N, 8 34 32.0 W), 20 m from the register point 41.2567,-8.5757, both on the chapel hill; neither lands on a crown from imagery, so approximate within the chapel adro. Photo identity: the Commons files are titled and described as the bicentennial cork oak in the adro of the chapel in Lugar da Cavadinha, matching the register lugar and the council description; a lead photo exists (File ... - 01.jpg and up to at least 18 numbered files, CC BY-SA 4.0), not downloaded or judged here. Chapel dated to about 1770 by Visit Maia (visitmaia.pt/produtos-turisticos/capela-de-santo-antonio-nogueira-e-silva-escura), a miracle legend of an ox cart and wine; municipiosefreguesias.pt disagrees (20th century); no source links the tree to the chapel's founding, so no bridge claim. Wikidata Q98444140 holds the tree with the photo. Cultural and religious setting: the Festa de Santo Antonio in June. Overpass unreachable, so no OSM access tags checked. ICNF ficha host (www2.icnf.pt) failed TLS (curl exit 35)."
   }
 ]
