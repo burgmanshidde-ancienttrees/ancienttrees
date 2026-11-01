@@ -483,7 +483,9 @@ function showable(photo: Photo | null | undefined): Photo | null {
     p.license &&
     // A reader's photograph and our own (source "mine", 2026-10-24) print no
     // name; both still carry a licence line, which the feed sends as a string.
-    (p.attribution || p.source === "contributor" || p.source === "mine") &&
+    // So does one a person mailed us (source "mail"), which goes up at once,
+    // uncredited like an app photo (CLAUDE.md, Photos; Montreal's mtl_015).
+    (p.attribution || p.source === "contributor" || p.source === "mine" || p.source === "mail") &&
     (p.status === "approved" || p.status === "found_needs_check")
   ) {
     if (p.url.includes("/wiki/File:")) return null;
