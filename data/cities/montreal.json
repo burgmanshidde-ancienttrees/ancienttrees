@@ -2,11 +2,11 @@
   "city": "Montreal",
   "country": "Canada",
   "status": "needs_curation",
-  "intro": "Six of these thirteen stand on Mont-Royal, in the park or the two cemeteries sharing its flank, so Montreal arrives here as a mountain rather than a city. Six more cluster at the foot of the hill on McGill's downtown campus, led by a ginkgo a botanist who has spent twenty-five years looking picked as the city's most remarkable tree. The last stands apart, on the neighbouring summit of Westmount. Up on the mountain: an Austrian pine that grew eighteen metres wide instead of tall, and one of the last big American elms in Montreal.",
-  "meta_description": "Thirteen remarkable trees in Montreal: six on Mont-Royal, six on McGill's campus, one on Westmount's own summit, plus a pine wider than it is tall.",
+  "intro": "Six of these fourteen stand on Mont-Royal, in the park or the two cemeteries sharing its flank, so Montreal arrives here as a mountain rather than a city. Most of the rest cluster at the foot of the hill on McGill's downtown campus, led by a ginkgo a botanist who has spent twenty-five years looking picked as the city's most remarkable tree. One stands on the summit of Westmount, and one in the Botanical Garden, a silver maple older than the garden itself. Up on the mountain: an Austrian pine eighteen metres wide.",
+  "meta_description": "Fourteen remarkable trees in Montreal: on Mont-Royal, McGill's campus, Westmount's summit and in the Botanical Garden, plus a pine wider than it is tall.",
   "question_meta": "Montreal's oldest tree is a red oak on Mont-Royal, roughly 200 years old and seeded before the park existed. Where it stands, and twelve more.",
   "question_answer": "The oldest tree on this page is a northern red oak in Parc du Mont-Royal, standing off a secondary trail leading from the Olmsted Trail. The city's own dendrological survey measured it at 118 centimetres across the trunk at chest height and 200 centimetres at the base, and reads that as roughly two hundred years, which makes it one of the ten largest oaks on the mountain. It seeded itself rather than being planted, and it was already mature when the park was laid out around it in 1876. In 1954 Mayor Jean Drapeau had much of the mountain's undergrowth cleared in a campaign remembered afterwards as the morality cuts, and this oak came through that too. Two things are worth knowing before you go. It stands in a stand of white spruce about fifty years old, which makes the age difference obvious the moment you are standing there. And it is not in good health: a primary branch tore out and left a major cavity in the trunk, and the city's survey describes it as being in the twilight of its life, which is a formal way of saying go sooner rather than later.",
-  "question_context": "There is no national or provincial register of remarkable trees behind this page. What Montreal has instead is unusual and better: the Ville de Montreal publishes a dendrological page for individual designated trees on Mont-Royal, in the two cemeteries on its flank, on Westmount's neighbouring summit and on McGill's campus, carrying species, trunk diameter, an age reading and a paragraph of history. Most of the thirteen trees rest on that source alone, which is why each page says so and carries a flag; the McGill ginkgo, the Roddick Gates black walnut and the McGill Katsura are the three with a genuinely independent second account. Every pin on this city is marked approximate: the source places a tree in a cemetery section, along a trail or in a campus planting rather than on a spot, so the prose carries the findable detail instead, a plot number, a gate, a parking area. One tree that was on the original list is not here. The cemetery's designated red ash was felled in 2025 to the emerald ash borer, which we learned because its own page now redirects to an address ending in disparu. See the full list of thirteen on the Montreal page.",
+  "question_context": "There is no national or provincial register of remarkable trees behind this page. What Montreal has instead is unusual and better: the Ville de Montreal publishes a dendrological page for individual designated trees on Mont-Royal, in the two cemeteries on its flank, on Westmount's neighbouring summit and on McGill's campus, carrying species, trunk diameter, an age reading and a paragraph of history. Most of the trees rest on that source alone, which is why each page says so and carries a flag; the McGill ginkgo, the Roddick Gates black walnut and the McGill Katsura are the three with a genuinely independent second account. All but one pin on this city are marked approximate: the source places a tree in a cemetery section, along a trail or in a campus planting rather than on a spot, so the prose carries the findable detail instead, a plot number, a gate, a parking area. One tree that was on the original list is not here. The cemetery's designated red ash was felled in 2025 to the emerald ash borer, which we learned because its own page now redirects to an address ending in disparu.",
   "faq": [
     {
       "q": "What is the oldest tree in Montreal?",
@@ -492,6 +492,48 @@
         "url": "https://montroyal.montreal.ca/arbre-remarquable/metasequoia-de-chine"
       },
       "height_m": 15
+    },
+    {
+      "id": "mtl_015",
+      "name": "The Old Silver Maple of the Botanical Garden",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "about 140 years, by a local guide's account",
+      "age_min": 135,
+      "age_max": 145,
+      "age_basis": "source",
+      "location": {
+        "address": "Jardin botanique de Montréal, south-west part, east of the Alpine Garden and north of the Useful Plants Garden, 4101 Rue Sherbrooke Est",
+        "latitude": 45.5576556,
+        "longitude": -73.5592889,
+        "neighbourhood": "Rosemont / Hochelaga-Maisonneuve"
+      },
+      "story": "This silver maple is older than the garden it stands in. A guide who knows the Montreal Botanical Garden's trees wrote to us that it dates from around 1885, nearly half a century before Brother Marie-Victorin founded the garden in 1931.\n\n\"It is the oldest silver maple at the Botanical Garden, unfortunately severely damaged since the photo was taken, but still viable.\"\n\nSilver maple is native to the riverbanks and floodplains of southern Quebec, a fast grower with soft wood, named for the pale undersides of its leaves, which flash white when the wind turns them. This one splits low into several great stems, and its bark has broken into long shaggy plates that curl away at the edges, as the photograph on this page shows. That photograph was taken before the damage the guide describes, so expect a more battered crown than the one you see here.\n\nIt stands in the south-west part of the garden, east of the Alpine Garden and just north of the Useful Plants Garden. The garden charges admission. Nobody has published a measurement or a planting record for this tree yet, so its age is the guide's account rather than a ring count. If you know more about it, tell us.",
+      "verified_sources": [
+        "Local guide at the Montreal Botanical Garden, by mail 2026-10-29 to 2026-11-01: his own photograph of the tree and the GPS position it was taken at",
+        "https://www.britannica.com/place/Montreal-Botanical-Garden",
+        "https://espacepourlavie.ca/carnet-horticole/erable-argente"
+      ],
+      "access": "Inside the Jardin botanique de Montréal, paid entry, open daily (hours vary by season).",
+      "transport": "Pie-IX metro (Green Line), then a walk through the garden",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/mtl_015-the-old-silver-maple-of-the-botanical-garden.jpg",
+        "license": "Provided by a reader by mail, used with permission",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "note": "Sent by mail on 2026-10-29 by a volunteer guide at the garden in answer to our photo ask (no name kept in the repo). Looked at 2026-11-01: a looking-up view of the trunk and crown, the low fork into several stems and the shaggy plated bark of an old silver maple, in leaf, daylight and colour; photo_light OK. Taken before the damage he reports. Reply asks if it is ok to use.",
+        "taken_month": 7
+      },
+      "location_precision": "confirmed",
+      "pin_source": "reader GPS: the photograph's own geotag (2023-07-14, 4.7 m accuracy), the same point he sent by mail 2026-11-01",
+      "curation_status": "flagged",
+      "found_by_reader": {
+        "tip": "mail, 2026-10-29"
+      },
+      "how_to_recognise": "You can recognise it by the low fork into several great stems and the long shaggy bark plates that curl away from the trunk. It stands east of the Alpine Garden, just north of the Useful Plants Garden.",
+      "verify_notes": "From a mail thread with a volunteer guide at the Jardin botanique (thread 'Photos of the Mount Royal trees?', 2026-10-29 to 2026-11-01; name kept out of the repo). His words, quoted on the page: 'It is the oldest silver maple at the Botanical Garden, unfortunately severely damaged since the photo was taken, but still viable.' and 'I believe it dates from around 1885' (he said he would look it up). Pin: the coordinate of his photograph's position, 45.5576556,-73.5592889, which he sent as a map screenshot; a GPS fix at the tree, so confirmed. Garden founding 1931 by Marie-Victorin from Britannica. Species facts from the garden's own horticultural notes page. Age and 'oldest in the garden' are his, stated as his. No second written source found (one search, 2026-11-01). The photograph's EXIF geotag (45 33 27.56 N, 73 33 33.44 W, 2023-07-14, horizontal error 4.7 m) is the same point.",
+      "paid_entry": true
     }
   ]
 }
