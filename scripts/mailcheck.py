@@ -227,6 +227,22 @@ CHECKS = [
         r"\btick(?:s|ed|ing)? (?:them |it )?off\b", r"\bcheck(?:s|ed|ing)? (?:them |it )?off\b",
         r"\bafvinken\b", r"\bafgevinkt\b", r"\babhaken\b", r"\babgehakt\b",
     ]),
+    # Hidde, 2026-11-01, on a reply to Pere Vives (Amics del Jardí Botànic)
+    # that answered his list of the garden's trees with which ones we already
+    # had and which lacked a photo: "moeten we niet vooral het gesprek gaande
+    # houden. gaan opnoemen welke we al hadden voelt als een betweterige ai,
+    # stop daarmee." A list somebody gives gets thanks and curiosity, never
+    # our stock-take against it. "It's on the page now" for a tree we just
+    # added is still fine; "already" is the tell.
+    ("OUR INVENTORY AGAINST THEIR LIST (thank them and ask, do not stock-take)", [
+        r"\balready (?:on (?:the|our) (?:map|list|page|site)|live|have (?:them|it|those|these))\b",
+        r"\bwe already (?:have|had|know)\b", r"\bal(?:lemaal)? (?:op de kaart|op de lijst|online)\b",
+        r"\bhadden we al\b", r"\bhebben we al\b",
+        r"\bja (?:són|és|estan?) (?:al|a la|en el) (?:mapa|llista|web)\b", r"\bja els tenim\b",
+        r"\bya (?:están?|los tenemos|la tenemos)\b", r"\bjá (?:estão?|os temos|temos)\b",
+        r"\b(?:sind|ist|haben wir) (?:schon|bereits)\b", r"\b(?:sont|est) déjà sur\b",
+        r"\bnous (?:les )?avons déjà\b", r"\b(?:sono|è) già (?:sulla|nella|online)\b", r"\bli abbiamo già\b",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",
