@@ -4,6 +4,22 @@
   "2026-11-01": [
    {
     "date": "2026-11-01",
+    "kind": "verify",
+    "target": "porto",
+    "tokens": 75000,
+    "trees": 0,
+    "note": "unmined ICNF candidates all published/blocked/leads; remaining rows 20-25 km out; 5 leads added"
+   },
+   {
+    "date": "2026-11-01",
+    "kind": "write",
+    "target": "porto+6 held",
+    "tokens": 70000,
+    "trees": 1,
+    "note": "por_031 live; car_003 no photo/pin, tav_001/frk_027/inn_007 access, nyc_031 no pin, sfo_012 dup of sfo_004"
+   },
+   {
+    "date": "2026-11-01",
     "kind": "write",
     "target": "dublin + 5 held",
     "tokens": 81000,
