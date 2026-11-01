@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 session: 36 coverage mails sent, coverage now before photo asks
+
+Hidde, 2026-10-31: "je zit heel erg achter fotos aan", the more interesting thing is magazines, blogs, press and nature sites writing about us; then "zoek gewoon de adressen en maakt contact". The rung 4 rule in CLAUDE.md now puts `nature` and `guide` before the `archive` photo asks (135e9f548). Four sourcing agents found 37 outlets; 36 kept (Kleine Zeitung dropped, no tree with a reason a desk would care about). Every address read on the outlet's own page (six behind Cloudflare decoded or read in the browser pane), recorded in data/outreach-contacts-archive.json with `found: 2026-11-01`. Batch drafts/batches/coverage-2026-11-01.json: variant B in seven languages, one of their own trees each, mailcheck clean, every link 200. Sent at 12:20 on "ik bedoel verstuur nu". The 11 archive mails (archive-2026-11-01.json) still wait for his word. Thin spot: the Netherlands (only Omroep West; most Dutch nature blogs have a form only). Replies via outreach_inbox.py.
+
 ## 2026-11-01 session: the digest counts only accounts that were used
 
 New accounts in the digest (headline, day by day, the total) now leave out accounts nobody ever signed in with (`is_counted_account()` in scripts/daily_digest.py; Hidde: "kunnen we dat soort niet gelukte accountaanvragen niet meetellen?"). Two dropped: a mail sign-up on a throwaway domain (10-30) and an unconfirmed gmail one (10-14); 50 strangers' accounts remain. Also seen: the three new accounts of 10-31/11-01 are Friends of Burnley Gardens (two days after our archive ask), a Portuguese and a Greek reader; the profile name "Kaylene J." took the last word of "De Jong", not yet fixed.
