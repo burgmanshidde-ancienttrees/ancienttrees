@@ -2,6 +2,11 @@
   "_note": "Strings that live on ONE surface on purpose, read by scripts/paritycheck.py. Each entry is a decision with its reason, never a way to silence the check. Anything not listed here that is removed from the app must leave the website too, and the other way round (Hidde, 2026-09-11: 'zorg dat dit volgende keer wel gelijk app en web doet').",
   "one_surface_only": [
     {
+      "text": "A tree we are missing",
+      "surface": "app",
+      "reason": "Was a heading on the web /support page, removed 2026-11-01 (Hidde). In the app it is the label of a submission kind, which the web form names its own way; nothing to take out there."
+    },
+    {
       "text": "Ancient Trees is a passion project. I'm building it to let others appreciate nature and go outside. Marvel at something older than you can imagine.",
       "surface": "web",
       "reason": "The sponsor page is web-only by design. The app's sponsor sheet was taken out of the build while the paywall line settles; the page on the website stays."

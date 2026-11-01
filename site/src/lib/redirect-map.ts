@@ -464,6 +464,15 @@ export function buildRedirectStubs(): RedirectStub[] {
     canonical: `${BASE_URL}/app`,
     title: "Moved: The Ancient Trees app",
   });
+  // /support, removed 2026-11-01 (Hidde: "absolute onzin, haal maar helemaal
+  // weg"). It is the App Store listing's Support URL, so it lands on /about,
+  // which carries the address Apple wants a support page to give.
+  stubs.push({
+    outputPath: "support.html",
+    targetRelative: "./about",
+    canonical: `${BASE_URL}/about`,
+    title: "Moved: About Ancient Trees",
+  });
   // /<city>/app, which never existed and which Google has crawled seven times
   // (Search Console, 2026-08-25: brisbane, bratislava, berlin, brussels and
   // three more, all 404). Nothing in this repo links there, so the likeliest
