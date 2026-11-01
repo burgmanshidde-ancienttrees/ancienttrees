@@ -1,0 +1,72 @@
+{
+ "leads": [
+  {
+   "name": "Warrens Baobab",
+   "species": "African Baobab (Adansonia digitata)",
+   "location": "Warrens, Saint Michael, Barbados (small public park with tiled benches around the tree, per barbados.org)",
+   "reason": "No coordinate found (Nominatim, Waymarking and search all empty) and no girth. Visit Barbados calls it the oldest known living tree on the island; barbados.org says over 300 years, Pocket Guide says said to be brought from Guinea in 1738 (a claim). Nation News April 2026 item mentions visitors there (page 403, not read). A pin from a Commons geotag or OSM would let it ship next to bbd_001."
+  },
+  {
+   "name": "Wayaka (lignum vitae) of Bonaire",
+   "species": "Lignum Vitae (Guaiacum officinale)",
+   "location": "A limestone plateau on Bonaire, discovered by Johan van Blerk of tuin Tera Barra; no location published",
+   "reason": "Dutch Tree of the Year 2024, second place (2,836 votes), nominated by Stichting Celebritrees; estimated about 1,000 years by Van Blerk (bnnvara, Sept 2024), hollow with two trunks, 'hard to reach plateau'. No source gives where it is or whether visitors may go: possibly withheld, so no pin and no access line. Ask Tera Barra or Celebritrees before any page."
+  },
+  {
+   "name": "Moruga Silk Cotton Tree",
+   "species": "Kapok (Ceiba pentandra)",
+   "location": "Moruga (Moruga Bouffe area), Trinidad",
+   "reason": "Trinidad and Tobago Field Naturalists' Club article 'The Moruga Silk Cotton Tree: Grandest of them All' (Living World, 31 Dec 2003) measured girth on 21 July 2002, says probably not more than 200 years old, nine buttresses, some rot. The PDF fetched was the wrong article and Trinidad Express (2019 feature) returned 429, so no figures seen. No pin, no recent alive check, access unknown. Retry the Express page and the Living World PDF."
+  },
+  {
+   "name": "Breadfruit descendant of Bligh's 1793 introduction, Botanic Gardens",
+   "species": "Breadfruit (Artocarpus altilis)",
+   "location": "Saint Vincent and the Grenadines Botanic Gardens, Kingstown, St Vincent",
+   "reason": "Young-tree trap: Wikipedia and CARICOM describe the current tree as a third-generation clone or sucker of the 1793 plant, a Stabroek News item claims one original remains (unverified). No age for the living tree, no pin. Not an ancient tree."
+  },
+  {
+   "name": "Ceiba of the Jardin botanique de Deshaies",
+   "species": "Kapok (Ceiba pentandra)",
+   "location": "Jardin botanique de Deshaies, Basse-Terre, Guadeloupe",
+   "reason": "A 2015 visit report (archipel-des-sciences.org, seen in search results only) calls the great fromager there a key tree; no age, no girth, no register, garden is a ticketed site. Search found no Guadeloupe remarkable-tree register. Fetch the report and check the garden's own page before any work."
+  },
+  {
+   "name": "Divi-divi trees of Eagle Beach (other trunks), Aruba",
+   "species": "Divi-divi (Caesalpinia coriaria) / buttonwood",
+   "location": "Eagle Beach, Aruba",
+   "reason": "Sources conflict on species (fofoti = buttonwood vs divi-divi) and on how many iconic trees stand at the north end; abw_001 takes the one in front of Amsterdam Manor. Others not individually placed."
+  },
+  {
+   "name": "El Templete ceiba, Havana",
+   "species": "Kapok (Ceiba pentandra)",
+   "location": "Plaza de Armas, Havana Vieja, Cuba",
+   "reason": "Young-tree trap and Cuba lead-only: the original was felled by a hurricane in 1828 and replaced, a replacement died in 2017 and another was planted the same year (translatingcuba / thecubanhistory in search results). The tree standing now is a young planting; no age basis."
+  },
+  {
+   "name": "Tom Cringle's Cotton Tree, Jamaica",
+   "species": "Kapok (Ceiba pentandra)",
+   "location": "Near Ferry Police Station, Spanish Town road, St Catherine, Jamaica",
+   "reason": "Fell apart limb by limb and blocked the road per a Gleaner feature and National Library of Jamaica records. Dead; see blocked."
+  },
+  {
+   "name": "Other Jamaican cotton trees (Westmoreland, Roaring River)",
+   "species": "Kapok (Ceiba pentandra)",
+   "location": "Westmoreland, Jamaica",
+   "reason": "Only an informal blog and a search snippet; nothing named, dated or placed. The Jamaica Olympic Association pages claiming an ancient 'Treebeard' of 1,800 to 2,500 years read as SEO spam and are not a source."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "La Ceiba de Ponce",
+   "species": "Kapok (Ceiba pentandra)",
+   "location": "Parque de la Ceiba, Cuatro Calles, San Anton, Ponce, Puerto Rico",
+   "reason": "Dead. Primera Hora (1 April 2022) says the historic ceiba died; El Nuevo Dia reports its last branch fell and gives October 2021 as the confirmed death. Only the remains stand. Never ship as a living tree."
+  },
+  {
+   "name": "Tom Cringle's Cotton Tree",
+   "species": "Kapok (Ceiba pentandra)",
+   "location": "Ferry, St Catherine, Jamaica",
+   "reason": "Fallen and gone (Gleaner feature; National Library of Jamaica)."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+  "city": "Tamboril",
+  "country": "Dominican Republic",
+  "status": "needs_curation",
+  "intro": "Tamboril maps one tree so far, La Ceiba, a kapok called the largest tree in the Dominican Republic and protected as a natural monument. Two scientists have estimated it at about 1,000 years, without a published method. It stands beside the road between Licey and Tamboril, about 12 km from Santiago de los Caballeros. Published heights run from 25 to 55 metres, and how close a visitor may walk on their own is not documented.",
+  "meta_description": "La Ceiba near Tamboril, called the largest tree in the Dominican Republic and a protected natural monument: where it is and how to visit.",
+  "question_meta": "Tamboril's famous tree is La Ceiba, a kapok called the largest tree in the Dominican Republic and protected as a natural monument.",
+  "question_answer": "The tree to see near Tamboril is La Ceiba, a kapok (Ceiba pentandra) at Los Peña on the road between Licey and Tamboril, about 3 km from Tamboril and 12 km from Santiago de los Caballeros. The historian Frank Moya Pons called it the largest and most robust tree in the Dominican Republic, and it is protected as the Monumento Natural La Ceiba. Two scientists estimate it at about 1,000 years, though no dating has been published.",
+  "question_context": "The age comes from Milciades Mejía of the Academia de Ciencias and Ricardo García, director of the national botanic garden, who told Diario Libre in 2019 that the tree could be about a thousand years old; Acento repeated the estimate in February 2026. Ceibas grow quickly, and no method was given, so the number is an expert guess rather than a dating. Its size is just as unsettled: Diario Libre gives 55 metres tall with a crown 43 metres wide, while International Parks and Acento say about 25 metres tall with a trunk more than 12 metres across, which probably includes the spread of its buttress roots. The tree is a natural monument in the national system of protected areas, IUCN category III, under Presidential Decree 571-09. Its care has been shared between the environment ministry and local partners, and in July 2024 one of them, Fundación Acción Verde, protested a new agreement that left the earlier co-managers out. How close a visitor may walk unaccompanied is not documented.",
+  "hero_tree_id": "dom_001",
+  "oldest_tree_id": "dom_001",
+  "faq": [
+    {
+      "q": "Is La Ceiba the biggest tree in the Dominican Republic?",
+      "a": "The historian Frank Moya Pons called it the largest and most robust tree in the country, quoted by Diario Libre in 2019. Published measurements disagree."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Two scientists, Milciades Mejía and Ricardo García, estimate about 1,000 years. No dating method has been published."
+    },
+    {
+      "q": "Can I visit it?",
+      "a": "It is a protected natural monument beside the public Licey to Tamboril road. Guided visits may be arranged through local environmental groups or the ministry's regional office; whether you can walk up to the trunk on your own is not documented."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dom_001",
+      "name": "La Ceiba of Tamboril",
+      "species": "Kapok (Ceiba pentandra)",
+      "age_estimate": "about 1,000 years by two scientists' estimate, undated",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Monumento Natural La Ceiba, Licey to Tamboril road, Los Peña, Santiago province, Dominican Republic",
+        "latitude": 19.4511,
+        "longitude": -70.6231,
+        "neighbourhood": "Los Peña"
+      },
+      "story": "The historian Frank Moya Pons called it the largest and most robust tree in the Dominican Republic, and it is protected under its own name, as the Monumento Natural La Ceiba.\n\nHow large is another matter. Diario Libre reported 55 metres tall with a crown 43 metres across. International Parks and the paper Acento say about 25 metres tall, with a trunk more than 12 metres wide, a figure that probably takes in the great buttress roots fanning out from its base. Either way it is a kapok of a size you do not forget.\n\nAge is guesswork too, but the guessers are serious. Milciades Mejía of the Academia de Ciencias and Ricardo García, director of the national botanic garden, told Diario Libre in 2019 that it could be about a thousand years old. Ceibas grow fast and nobody has published how they arrived at the figure, so hold it lightly.\n\nThe tree stands at Los Peña, beside the road between Licey and Tamboril, about twelve kilometres from Santiago. Its care has been shared between the environment ministry and local groups, not always peacefully: in 2024 one of them protested at being left out of a new agreement. If you have visited, tell us how close you could get.",
+      "verified_sources": [
+        "https://www.diariolibre.com/actualidad/medioambiente/la-ceiba-de-santiago-la-mas-grande-de-republica-dominicana-EO13484572",
+        "https://www.internationalparks.org/dominican-republic/La%20Ceiba",
+        "https://acento.com.do/ecologia/recorridos-monumentales-naturaleza-y-patrimonio-9611747.html",
+        "https://diariodigitalrd.com/2024/07/29/accion-verde-denuncia-manejo-irregular-en-la-ceiba.html"
+      ],
+      "official_register": {
+        "name": "Sistema Nacional de Áreas Protegidas, Monumento Natural La Ceiba, Decree 571-09",
+        "url": "https://www.internationalparks.org/dominican-republic/La%20Ceiba"
+      },
+      "access": "Protected natural monument beside the public Licey to Tamboril road, managed by the environment ministry with local partners. Hours and fee not found. Guided visits may be arranged through local environmental groups or the ministry's regional office; whether you can walk up to the trunk on your own is not documented.",
+      "transport": "About 3 km from Tamboril and 12 km from Santiago de los Caballeros by road; by car or taxi from Santiago.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it as the giant kapok the Monumento Natural La Ceiba is named after, beside the road at Los Peña between Licey and Tamboril.",
+      "verify_notes": "Verify pass 2026-11-01 (Caribbean, Hidde's ask). Press and protected-area directory, flagged. Age: Mejía and García ~1,000 years (Diario Libre 2019, Acento Feb 2026), no method, left empty. Size conflicts (55 m vs ~25 m tall; 'trunk 12.3 m' likely buttress spread), not recorded. Decree 571-09 (2009) per International Parks; Diario Libre's 5 May 2019 date conflicts. Alive: Acento Feb 2026 presents it as current. Pin from International Parks (19.4511,-70.6231), approximate. Access unsettled and said so on the page. No open-licence photo found on Commons."
+    }
+  ]
+}

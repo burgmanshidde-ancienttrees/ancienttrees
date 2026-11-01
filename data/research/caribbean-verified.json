@@ -1,0 +1,132 @@
+[
+ {
+  "id": "bbd_001",
+  "place": "Barbados",
+  "country": "Barbados",
+  "name": "The Queen's Park Baobab",
+  "species": "African Baobab (Adansonia digitata)",
+  "age_estimate": "not documented (local claim of over 1,000 years)",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Queen's Park, Bridgetown, Saint Michael",
+   "latitude": 13.09892,
+   "longitude": -59.60925,
+   "neighbourhood": "Queen's Park, Bridgetown"
+  },
+  "verified_sources": [
+   "https://www.waymarking.com/waymarks/WM5YTJ_Boabab_Tree_in_Queens_Park",
+   "https://en.wikipedia.org/wiki/Queen%27s_Park,_Bridgetown_(Barbados)",
+   "https://www.visitbarbados.org/the-baobab-tree",
+   "https://www.loopbarbados.com/loop-blog/oldest-largest-barbados-boabab",
+   "https://nationnews.com/2013/12/31/carving-on-tree-sparks-anger/"
+  ],
+  "official_register": null,
+  "access": "Queen's Park is a public national park run by the National Conservation Commission (Wikipedia); no entry fee found, hours not found.",
+  "transport": "Queen's Park lies in north-east Bridgetown, a few hundred metres from the city centre; walking time from the Bridgetown terminals not verified.",
+  "location_precision": "approximate",
+  "location_site": null,
+  "curation_status": "flagged",
+  "verify_notes": "One of only two baobabs on Barbados (Wikipedia; Visit Barbados calls the Warrens tree in St Thomas the oldest known living tree on the island and this the second). Tourism and park-owner sources, one source cluster, flagged. AGE: only the 'over 1,000 years' claim (park sign per Waymarking, barbados.org, Wikipedia 'almost 1000 years', Loop blog 2012 as an estimate); one pocket guide says 250 years. No dating exists; baobab age claims are routinely unreliable, so left empty. GIRTH CONFLICTS, so not recorded: sign reads girth 81 ft (25 m) with height 90 ft (28 m) per Waymarking (waymark WM5YTJ); Wikipedia ~18 m circumference; Loop 2012 blog ~55 ft (about 17 m) circumference and 90 ft tall. Spread 17 to 25 m; a baobab trunk of 25 m round is at the extreme, treat all as unverified. Pin: Waymarking posted coordinates N13 05.935 W59 36.555 (about 13.09892, -59.60925), the photographer's position was N13 05.924 W59 36.560; Wikipedia gives the park centre as 13.0983,-59.6091. Within a few tens of metres of the tree but not checked on a crown, so approximate; the Overpass API returned 406 so no OSM node was checked. ALIVE: Waymarking log by a visitor 28 Mar 2025 with photo (log text not shown); Loop blog says it sheds leaves in the dry season; Visit Barbados says it bears fruit in late summer. No health report found. Lifecheck not run. History worth leading with: reportedly stood at the edge of a lagoon that is now the park's playing field (Loop blog, attributed only to 'many historians', unsourced); in Dec 2013 Nation News reported the trunk had been carved with graffiti, historian Karl Watson noted its historical importance. Park history: Queen's Park House built 1786 as residence of the British garrison commander, park opened to public 10 June 1909. A claim that it was declared a national monument in 1990 appears only in a search summary of Plizio, unverified, not recorded. Not a covered country."
+ },
+ {
+  "id": "pur_001",
+  "place": "Vieques",
+  "country": "Puerto Rico",
+  "name": "La Ceiba de Vieques",
+  "species": "Kapok (Ceiba pentandra)",
+  "age_estimate": "not documented (claims of 300 to 400 years)",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Parque La Ceiba de Vieques, Mosquito, Vieques, Puerto Rico",
+   "latitude": 18.1334,
+   "longitude": -65.5054,
+   "neighbourhood": "Mosquito, Vieques"
+  },
+  "verified_sources": [
+   "https://climatetrackercaribbean.org/climate-justice/rescuing-a-centuries-old-tree-how-the-viequense-community-has-protected-the-ceiba-tree-park/",
+   "https://www.delawarepublic.org/national-headlines/2019-03-10/puerto-ricos-historic-ceiba-tree-blooms-after-hurricane-devastation",
+   "https://cgii.virginia.edu/projects/environmental-justice-puerto-rican-archipelago-study-parque-la-ceiba-de-vieques",
+   "https://vieques.com/?p=258361",
+   "https://nominatim.openstreetmap.org/search?q=Parque+de+la+Ceiba+Vieques&format=json"
+  ],
+  "official_register": null,
+  "access": "Community-managed nature reserve (declared by the Vieques municipality in 2012, La Ceiba Community Project, Inc.); open to visitors, 'thousands a year', third most visited site on Vieques (Climate Tracker Caribbean, 11 Oct 2024). Hours and fee not found.",
+  "transport": "North side of Vieques, west of the Vieques airport, about 5 minutes by car west of Isabel Segunda along Route 200 per travel guides (islaguru, not fetched) and vieques.com; near Mosquito Pier. Public transport on the island (publicos, ferry from Fajardo) not verified.",
+  "location_precision": "approximate",
+  "location_site": null,
+  "curation_status": "flagged",
+  "verify_notes": "The island's famous ceiba, centrepiece of Parque La Ceiba, a community park on the former US Navy site (Navy left the site in 2004 per NPR/Delaware Public Media 2019; residents began a volunteer cleanup afterwards, led by Ardelle Ferrer). AGE: no dating. Sources give 'centuries-old' (NPR 2019), 'about 350 years' (University of Virginia project page), 'a little over three centuries' (vieques.com), 375 to 400 (a Puerto Rico Senate statement and a travel guide, seen only in search summaries, not fetched). Left empty, claims 300 to 400. NO girth or height on any fetched page ('tens of meters' in Climate Tracker, unsourced, not recorded). ALIVE: Hurricanes Irma and Maria in 2017 stripped it and broke branches; it bloomed again by March 2019 (NPR, 10 Mar 2019, via Delaware Public Media); Climate Tracker Caribbean (11 Oct 2024) describes it standing. PIN: only the park polygon is mapped (OSM way 1241989525 'Parque La Ceiba De Vieques', centre 18.1334179, -65.5053712, box about 250 m by 170 m); no tree coordinate found, no OSM node (Overpass timed out). Approximate. Photo geotags on Commons might settle it. Legal: a 2024 Senate bill to protect the reserve was pocket-vetoed by the governor (Climate Tracker); the 51-acre reserve is municipal-declared. Puerto Rico is a US territory, so a focus country, one credible source rule applies; several sources, but all one tourism and news cluster, flagged. Note the other Puerto Rico ceiba, La Ceiba de Ponce, is dead (see blocked)."
+ },
+ {
+  "id": "abw_001",
+  "place": "Aruba",
+  "country": "Aruba",
+  "name": "The Eagle Beach Fofoti",
+  "species": "Buttonwood (Conocarpus erectus)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Eagle Beach, on the sand in front of Amsterdam Manor Beach Resort, J.E. Irausquin Boulevard, Oranjestad West",
+   "latitude": 12.554486,
+   "longitude": -70.055091,
+   "neighbourhood": "Eagle Beach, Bushiri, Oranjestad"
+  },
+  "verified_sources": [
+   "https://www.visitaruba.com/things-to-do/aruba-beaches/eagle-beach/",
+   "https://www.amsterdammanor.com/blog/romance-rooted-in-nature-the-fofoti-tree-at-amsterdam-manor",
+   "https://www.encirclephotos.com/image/iconic-divi-divi-tree-at-eagle-beach-near-oranjestad-aruba/",
+   "https://shipstamps.co.uk/forum/viewtopic.php?p=21751",
+   "https://nominatim.openstreetmap.org/search?q=Amsterdam+Manor+Aruba&format=json"
+  ],
+  "official_register": null,
+  "access": "Eagle Beach is a public beach; the tree stands on the sand at the edge of the beach at the Amsterdam Manor resort frontage. Aruba beaches are public in general but the page does not state it for this stretch; the resort asks visitors not to sit on the tree or hang things from it. No fee.",
+  "transport": "Bus stop 'Amsterdam Manor - Eagle' on J.E. Irausquin Boulevard (OSM node 13438847331), roughly 60 m from the tree by coordinates; Arubus service frequency to Oranjestad not verified.",
+  "location_precision": "approximate",
+  "location_site": null,
+  "curation_status": "flagged",
+  "verify_notes": "Visually spectacular, not documented as old: a wind-sculpted buttonwood leaning toward the sea, called Aruba's 'most photographed Fofoti tree (now protected)' by Visit Aruba (the tourism authority's own page, undated). The Amsterdam Manor blog (undated) places it at the edge of Eagle Beach directly in front of the resort and says fofoti/mangrove trees are protected by Aruban law and that the trade winds twisted the trunk toward the sea. SPECIES: sources say 'mangle', Combretaceae, English name buttonwood (shipstamps post about the 2021 Aruba stamp, Scott 668, which says the Fofoti is one of the landmark trees on Eagle Beach photographed at sunset); this is Conocarpus erectus, but no source fetched gives the Latin name, so a reader could confirm. Several tourism pages call it divi-divi (Caesalpinia coriaria), which is a different tree; the Encircle photo page calls it divi-divi, watapana in Arawak, national tree. Treat as the fofoti, not the divi-divi, and say so. PIN: 12.554486, -70.055091 taken from the map marker of the Encircle Photos listing 'Iconic Divi-divi Tree at Eagle Beach' (not written text; a stock photo agency), and it is consistent with the OSM mapped footprint of Amsterdam Manor Resort (way 640018902, centre 12.55431, -70.05435, box edge at -70.0548), i.e. on the beach just west of the resort. No tree node checked (Overpass timed out); a second pair of trees might stand nearby (an earlier search summary mentioned 'two iconic trees at the north end of the beach', unconfirmed and a search summary only), so which trunk is exact is unproven; approximate. ALIVE: Visit Aruba and the resort page describe it as present (undated), a 2021 stamp and the latest Waymarking-type evidence not checked; no dated photo within the last two years fetched, so flagged. Lifecheck not run. Possible lean to include 'one place to stand' as the resort frontage; the size of the tree and the girth are not given anywhere."
+ },
+ {
+  "id": "dom_001",
+  "place": "Santiago (Tamboril)",
+  "country": "Dominican Republic",
+  "name": "La Ceiba of Tamboril",
+  "species": "Kapok (Ceiba pentandra)",
+  "age_estimate": "not documented (estimated about 1,000 years by two named experts)",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Monumento Natural La Ceiba, Peña-Tamboril (Licey-Tamboril) road, Monte Adentro, Los Peña, Santiago province",
+   "latitude": 19.4511,
+   "longitude": -70.6231,
+   "neighbourhood": "Los Peña, between Licey and Tamboril, Santiago province"
+  },
+  "verified_sources": [
+   "https://www.diariolibre.com/actualidad/medioambiente/la-ceiba-de-santiago-la-mas-grande-de-republica-dominicana-EO13484572",
+   "https://www.internationalparks.org/dominican-republic/La%20Ceiba",
+   "https://acento.com.do/ecologia/recorridos-monumentales-naturaleza-y-patrimonio-9611747.html",
+   "https://diariodigitalrd.com/2024/07/29/accion-verde-denuncia-manejo-irregular-en-la-ceiba.html"
+  ],
+  "official_register": {
+   "name": "Sistema Nacional de Areas Protegidas (SINAP), Natural Monument La Ceiba, Presidential Decree 571-09 (per International Parks)",
+   "url": "https://www.internationalparks.org/dominican-republic/La%20Ceiba"
+  },
+  "access": "Protected natural monument beside the public Peña-Tamboril road, co-managed by the environment ministry (Viceministerio de Areas Protegidas) with partners (Diario Digital, 29 Jul 2024). Visiting rules, hours and fee not found; International Parks says guided visits may be available through local environmental groups or the ministry's regional offices. Whether you can walk up to the trunk unaccompanied is UNSETTLED; check before shipping the access line.",
+  "transport": "About 3 km from Tamboril town and 12 km from Santiago de los Caballeros by road (International Parks). No public transport time verified; by car or taxi from Santiago.",
+  "location_precision": "approximate",
+  "location_site": null,
+  "curation_status": "flagged",
+  "verify_notes": "Billed as the largest and most robust tree in the Dominican Republic (historian Frank Moya Pons, quoted by Diario Libre, 24 Jul 2019). AGE: Milciades Mejia (Academia de Ciencias) and Ricardo Garcia (director of the Jardin Botanico Nacional) estimate it could be about 1,000 years (Diario Libre 2019, repeated by Acento 14 Feb 2026); no dating method given, ceiba is a fast-growing species, so left empty and treated as an expert estimate. SIZE CONFLICT, nothing recorded: Diario Libre says 55 m tall with a 43 m crown and about 30 m at chest height (unclear whether circumference); International Parks and Acento say about 25 m tall and trunk diameter 12.3 m / 'more than 12 m' (the 12.3 m is probably a buttress-and-roots spread, not a trunk). DESIGNATION CONFLICT: Presidential Decree 571-09 (2009) per International Parks; Diario Libre says declared 5 May 2019 under the same decree number, a date that cannot match a 2009 decree; both agree on Natural Monument, IUCN category III. Co-management agreement DJ-A-1-2018-0016 of 19 Apr 2018 between the ministry and Fundacion Accion Verde; in July 2024 Accion Verde protested that a new agreement had excluded the earlier co-managers (SOECI, Jardin Botanico de Santiago, municipalities). ALIVE: Acento (14 Feb 2026) presents it as a current protected area with 'long survival'; Diario Digital 2024 about the management dispute; no dated tree-photo or condition report seen, flagged; lifecheck not run. PIN: International Parks gives 19.4511, -70.6231 and an area of 0.01 km2 (listing also says 0.07 km2 elsewhere); Nominatim finds nothing for the monument. The coordinate is the park listing's, not checked on a crown, so approximate. Not a covered country. Sources are press and a protected-area directory, not the ministry register itself, so the single-source bar is only met via the SINAP designation reported by two outlets; flagged."
+ }
+]

@@ -1,0 +1,61 @@
+{
+  "city": "Vieques",
+  "country": "Puerto Rico",
+  "status": "needs_curation",
+  "intro": "Vieques maps one tree so far, the great ceiba at the heart of Parque La Ceiba on the island's north side. Accounts give it 300 to 400 years, without a dating. Hurricanes Irma and Maria stripped it in 2017 and it flowered again by 2019. The park is run by the community and open to visitors, a few minutes' drive west of Isabel Segunda.",
+  "meta_description": "La Ceiba de Vieques, the centuries-old kapok at the heart of Parque La Ceiba on Vieques, Puerto Rico: where it is and how to visit.",
+  "question_meta": "Vieques' best-known old tree is La Ceiba, a kapok said to be 300 to 400 years old, in Parque La Ceiba on the north coast.",
+  "question_answer": "The tree to see on Vieques is La Ceiba, a kapok (Ceiba pentandra) at the centre of Parque La Ceiba, a community-run reserve on the north side of the island, west of the airport and a few minutes by car from Isabel Segunda. It is said to be 300 to 400 years old, with figures from about 350 to 400 in different accounts, though no dating has been published. It survived Hurricanes Irma and Maria in 2017 and flowered again by March 2019.",
+  "question_context": "The park around the ceiba stands on land the US Navy used until it left in 2004. Afterwards residents began clearing the site as volunteers, and in 2012 the Vieques municipality declared it a nature reserve, now looked after by a community organisation. Climate Tracker Caribbean reported in October 2024 that thousands of people visit each year, making it the third most visited place on the island, and that a 2024 bill in the Puerto Rico Senate to protect the reserve further was pocket-vetoed by the governor. The 2017 hurricanes broke branches and stripped the crown bare, and NPR reported in March 2019 that the tree was blooming again. How old the ceiba is remains open: the University of Virginia's project page says about 350 years, vieques.com a little over three centuries, other accounts up to 400, and none gives a method. No published girth or height has been found, and the pin marks the park rather than the trunk itself.",
+  "hero_tree_id": "pur_001",
+  "oldest_tree_id": "pur_001",
+  "faq": [
+    {
+      "q": "How old is the Ceiba of Vieques?",
+      "a": "Accounts give it 300 to 400 years, most often about 350. No dating has been published."
+    },
+    {
+      "q": "Did it survive Hurricane Maria?",
+      "a": "Yes. Irma and Maria stripped it and broke branches in 2017, and it was flowering again by March 2019."
+    },
+    {
+      "q": "Where is Parque La Ceiba?",
+      "a": "On the north side of Vieques, west of the airport near Mosquito Pier, a few minutes by car west of Isabel Segunda along Route 200."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pur_001",
+      "name": "La Ceiba de Vieques",
+      "species": "Kapok (Ceiba pentandra)",
+      "age_estimate": "claims of 300 to 400 years, undated",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parque La Ceiba de Vieques, Mosquito, Vieques, Puerto Rico",
+        "latitude": 18.1334,
+        "longitude": -65.5054,
+        "neighbourhood": "Mosquito"
+      },
+      "story": "In 2017 two hurricanes, Irma and then Maria, crossed Vieques within two weeks and left this ceiba stripped bare, its big branches broken. By March 2019 it was in flower again, news that NPR carried across the United States.\n\nThe tree is the reason for the park around it. The land was part of the US Navy's holdings on Vieques until the Navy left in 2004. Residents started clearing it themselves, and in 2012 the municipality declared it a nature reserve, now run by a community organisation. In 2024 Climate Tracker Caribbean counted it the third most visited place on the island, with thousands of visitors a year, and reported that a Senate bill to protect it further had been pocket-vetoed by the governor.\n\nHow old the ceiba is, nobody has measured. The University of Virginia's project page says about 350 years, a local site says a little over three centuries, and other accounts reach 400. Ceibas grow fast, so read those numbers as respect rather than dating. What you meet is a great kapok at the centre of a park that exists because people on the island decided it should. If you know its girth or have a photograph of it, tell us.",
+      "verified_sources": [
+        "https://climatetrackercaribbean.org/climate-justice/rescuing-a-centuries-old-tree-how-the-viequense-community-has-protected-the-ceiba-tree-park/",
+        "https://www.delawarepublic.org/national-headlines/2019-03-10/puerto-ricos-historic-ceiba-tree-blooms-after-hurricane-devastation",
+        "https://cgii.virginia.edu/projects/environmental-justice-puerto-rican-archipelago-study-parque-la-ceiba-de-vieques",
+        "https://vieques.com/?p=258361"
+      ],
+      "access": "Parque La Ceiba is a community-run nature reserve, declared by the Vieques municipality in 2012, open to visitors. Opening hours and any fee not confirmed.",
+      "transport": "North side of Vieques, west of the airport near Mosquito Pier, a few minutes by car west of Isabel Segunda along Route 200. Vieques is reached by ferry or plane from mainland Puerto Rico.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "You can recognise it as the great kapok the park is named after, at the centre of Parque La Ceiba on the north side of Vieques.",
+      "verify_notes": "Verify pass 2026-11-01 (Caribbean, Hidde's ask). Tourism and news cluster, flagged. Age claims 300 to 400 (UVA ~350, vieques.com 'a little over three centuries', others 375 to 400), left empty. No girth or height. Alive: NPR 2019 (blooming after 2017 hurricanes), Climate Tracker Caribbean 11 Oct 2024. Pin is the centre of the OSM park polygon (way 1241989525), not the trunk: approximate. No open-licence photo found on Commons (searched 'Ceiba Vieques', 'Parque La Ceiba Vieques'). Note La Ceiba de Ponce is dead (blocked in data/leads/caribbean.json)."
+    }
+  ]
+}

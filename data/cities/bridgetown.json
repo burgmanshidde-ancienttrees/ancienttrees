@@ -1,0 +1,66 @@
+{
+  "city": "Bridgetown",
+  "country": "Barbados",
+  "status": "needs_curation",
+  "intro": "Bridgetown maps one tree so far, the African baobab in Queen's Park, one of only two baobabs on Barbados. A sign in the park claims more than 1,000 years; nothing has dated it. Its trunk is so wide that the park's sign, Wikipedia and local writers all give different figures for it. It stands on the lawn beside a children's playground, a short walk from the city centre, in a public park with no entry fee found.",
+  "meta_description": "The Queen's Park baobab in Bridgetown, one of only two baobabs on Barbados: where it stands, how old it may be and how to find it.",
+  "question_meta": "Bridgetown's best-known old tree is the African baobab in Queen's Park, one of only two baobabs on Barbados.",
+  "question_answer": "The tree to see in Bridgetown is the African baobab (Adansonia digitata) in Queen's Park, in the north-east of the city a few hundred metres from the centre. It is one of only two baobabs on Barbados; the other, at Warrens in St Thomas, is called the island's oldest. The park's own sign claims more than 1,000 years for the Queen's Park tree, while a pocket guide says 250, and no dating has been published, so its age is open.",
+  "question_context": "The size of the trunk is as unsettled as its age. The park sign, as recorded by visitors, gives a girth of 81 feet, about 25 metres, and a height of 90 feet; Wikipedia gives a circumference of about 18 metres and a 2012 local blog about 17. Even the smallest of those is a vast trunk, and it is the trunk, grey and folded, that people come for. The tree drops its leaves in the dry season and bears fruit in late summer, according to Visit Barbados. In December 2013 the Nation newspaper reported that someone had carved into the bark, and the historian Karl Watson spoke up for the tree's place in the island's history. Queen's Park itself grew around Queen's Park House, built in 1786 for the commander of the British garrison, and opened to the public on 10 June 1909. It is run today by the National Conservation Commission as a public park.",
+  "hero_tree_id": "bbd_001",
+  "oldest_tree_id": "bbd_001",
+  "faq": [
+    {
+      "q": "How old is the Queen's Park baobab?",
+      "a": "Nobody knows. The park's sign claims more than 1,000 years and one guide says 250. No dating has been published."
+    },
+    {
+      "q": "Where is the other baobab on Barbados?",
+      "a": "At Warrens in St Thomas parish, which Visit Barbados calls the oldest known living tree on the island."
+    },
+    {
+      "q": "Does it cost anything to see?",
+      "a": "Queen's Park is a public park run by the National Conservation Commission. No entry fee has been reported."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bbd_001",
+      "name": "The Queen's Park Baobab",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "undated, a park sign claims over 1,000 years",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Queen's Park, Bridgetown, Saint Michael, Barbados",
+        "latitude": 13.09892,
+        "longitude": -59.60925,
+        "neighbourhood": "Queen's Park"
+      },
+      "story": "Barbados has two baobabs, and this is the one you can walk to from the middle of Bridgetown. The trunk is the thing. Grey, folded and swollen, it is so wide that nobody's numbers agree. The park sign gives 81 feet round, Wikipedia about 18 metres, a local blog about 17. Even the smallest of those is a vast trunk.\n\nHow old it is, nobody can say either. The sign claims more than a thousand years, and one pocket guide says 250. Baobabs are notorious for ages that grow in the telling, and this one has never been dated, so treat the big number as a story. Visit Barbados calls the other baobab, at Warrens in St Thomas, the island's oldest living tree.\n\nThe tree drops its leaves in the dry season and fruits in late summer. In 2013 someone carved into its bark, the Nation newspaper reported it, and the historian Karl Watson spoke up for the tree. The park around it grew from Queen's Park House, built in 1786 for the commander of the British garrison, and opened to everyone in 1909. Today the baobab stands on the lawn beside a children's playground, with a small white sign at its foot.",
+      "verified_sources": [
+        "https://www.waymarking.com/waymarks/WM5YTJ_Boabab_Tree_in_Queens_Park",
+        "https://en.wikipedia.org/wiki/Queen%27s_Park,_Bridgetown_(Barbados)",
+        "https://www.visitbarbados.org/the-baobab-tree",
+        "https://www.loopbarbados.com/loop-blog/oldest-largest-barbados-boabab",
+        "https://nationnews.com/2013/12/31/carving-on-tree-sparks-anger/"
+      ],
+      "access": "Queen's Park is a public park run by the National Conservation Commission. No entry fee found; opening hours not confirmed.",
+      "transport": "In the north-east of Bridgetown, a few hundred metres from the city centre, on foot.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Baobab_Tree_%2846674496915%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "David Stanley, via Wikimedia Commons",
+        "attribution_url": "https://www.flickr.com/photos/davidstanleytravel/46674496915/",
+        "status": "approved",
+        "width": 1024,
+        "height": 768,
+        "taken_month": 12
+      },
+      "how_to_recognise": "You can recognise it by its enormous grey, folded trunk with a small white 'Baobab Tree' sign at its foot, on the lawn beside the children's playground in Queen's Park.",
+      "verify_notes": "Verify pass 2026-11-01 (Caribbean, Hidde's ask). Tourism and park-owner sources, one cluster, flagged. Age: sign 'over 1,000 years' (Waymarking), one guide 250; left empty. Girth conflicts (sign 81 ft / 25 m, Wikipedia ~18 m, Loop 2012 ~17 m), not recorded. Pin from Waymarking (N13 05.935 W59 36.555), approximate. Alive: Waymarking visitor log 28 Mar 2025; Commons photo geotagged 13.09909,-59.60929 (Dec 2018) shows the tree with its sign, a few tens of metres from the pin. Photo: David Stanley, Flickr via Commons, CC BY 2.0; pixels viewed 2026-11-01, photo_light OK. The Flickr caption's '1738' is not a source and is not used."
+    }
+  ]
+}

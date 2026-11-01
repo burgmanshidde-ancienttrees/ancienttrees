@@ -1,0 +1,65 @@
+{
+  "city": "Aruba",
+  "country": "Aruba",
+  "status": "needs_curation",
+  "intro": "Aruba maps one tree so far, the wind-bent fofoti on Eagle Beach that the island's tourism authority calls its most photographed. It is not known to be old; it is here for its shape, a trunk twisted by the trade winds and leaning toward the sea. It stands on the public sand in front of the Amsterdam Manor resort, free to see.",
+  "meta_description": "The Eagle Beach fofoti on Aruba, the wind-twisted buttonwood the island calls its most photographed tree: where it stands and what it is.",
+  "question_meta": "Aruba's most photographed tree is the wind-bent fofoti on Eagle Beach, a buttonwood often mistaken for a divi-divi.",
+  "question_answer": "Aruba's best-known tree is the fofoti on Eagle Beach, a button mangrove (Conocarpus erectus), also called buttonwood, bent by the trade winds so its trunk leans toward the sea. Visit Aruba calls it the island's most photographed fofoti and says it is protected. It stands on the sand in front of the Amsterdam Manor resort on J.E. Irausquin Boulevard, about 60 metres from the bus stop of the same name.",
+  "question_context": "Many photographs and travel pages call this tree a divi-divi, but the divi-divi (Caesalpinia coriaria) is a different tree, the one Curaçao counts as its national tree. The tree on Eagle Beach is a fofoti, a buttonwood related to the mangroves, and photographs of it on Wikimedia Commons are labelled Conocarpus erectus. Its age is not documented and it makes no claim to be ancient; it earns its place by its shape. The trade winds, which blow from the east across Aruba almost all year, have twisted the trunk and pushed the crown out over the sand toward the water, according to the Amsterdam Manor resort, which says fofoti trees are protected under Aruban law. The tree was on an Aruban postage stamp in 2021. Eagle Beach has more than one fofoti, and the pin and photograph here mark the one in front of the resort. Whether it still stands is reported by the resort and the tourism authority, in pages without a date.",
+  "hero_tree_id": "abw_001",
+  "oldest_tree_id": "abw_001",
+  "faq": [
+    {
+      "q": "Is the Eagle Beach tree a divi-divi?",
+      "a": "No. It is a fofoti, a buttonwood (Conocarpus erectus). The divi-divi is a different tree, though travel pages often mix them up."
+    },
+    {
+      "q": "Why does it lean?",
+      "a": "The trade winds blow across Aruba from the east almost all year and have twisted the trunk toward the sea."
+    },
+    {
+      "q": "Where exactly is it?",
+      "a": "On Eagle Beach, on the sand in front of the Amsterdam Manor resort on J.E. Irausquin Boulevard, about 60 metres from the 'Amsterdam Manor - Eagle' bus stop."
+    }
+  ],
+  "trees": [
+    {
+      "id": "abw_001",
+      "name": "The Eagle Beach Fofoti",
+      "species": "Button Mangrove (Conocarpus erectus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Eagle Beach, in front of Amsterdam Manor Beach Resort, J.E. Irausquin Boulevard, Oranjestad",
+        "latitude": 12.554486,
+        "longitude": -70.055091,
+        "neighbourhood": "Eagle Beach"
+      },
+      "story": "This is not an old tree, as far as anyone knows. It is on this map for its shape. Aruba's tourism authority calls it the island's most photographed fofoti, and once you have seen it you understand why. The trunk twists out of the white sand, bends hard toward the sea and holds a flat green crown over the beach like a hand.\n\nThe wind did that. The trade winds blow across Aruba from the east nearly all year, and the Amsterdam Manor resort, whose stretch of Eagle Beach the tree stands on, says they have pushed the trunk toward the water over its whole life. Fofoti trees are protected under Aruban law, the resort says, and in 2021 this one appeared on an Aruban stamp.\n\nHalf the photographs online call it a divi-divi. It is not. The divi-divi is a different tree altogether, the one Curaçao counts as its national tree. The fofoti is a button mangrove, Conocarpus erectus, a relative of the true mangroves that grows happily with its roots in salty ground.\n\nEagle Beach has more than one of these trees, so the pin marks the one in front of the resort, the one in the photograph. If you have stood under it lately, tell us it is still there.",
+      "verified_sources": [
+        "https://www.visitaruba.com/things-to-do/aruba-beaches/eagle-beach/",
+        "https://www.amsterdammanor.com/blog/romance-rooted-in-nature-the-fofoti-tree-at-amsterdam-manor",
+        "https://shipstamps.co.uk/forum/viewtopic.php?p=21751",
+        "https://commons.wikimedia.org/wiki/File:Mangrove_tree_(Conocarpus_erectus)_Aruba_Eagle_Beach_(2896882763).jpg"
+      ],
+      "access": "Free, on the public sand of Eagle Beach in front of the Amsterdam Manor resort. No fee.",
+      "transport": "Bus stop 'Amsterdam Manor - Eagle' on J.E. Irausquin Boulevard, about 60 metres away; frequency to Oranjestad not confirmed.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mangrove_tree_%28Conocarpus_erectus%29_Aruba_Eagle_Beach_%282896882763%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Serge Melki, via Wikimedia Commons",
+        "attribution_url": "https://www.flickr.com/photos/sergemelki/2896882763/",
+        "status": "approved",
+        "width": 2560,
+        "height": 1714,
+        "taken_month": 9
+      },
+      "how_to_recognise": "You can recognise it by its twisted grey trunk bending hard toward the sea from the white sand, with a flat green crown, in front of the Amsterdam Manor resort on Eagle Beach.",
+      "verify_notes": "Verify pass 2026-11-01 (Caribbean, Hidde's ask). Visually spectacular, no age. Visit Aruba (undated) 'most photographed Fofoti tree (now protected)'; Amsterdam Manor blog (undated): at the edge of Eagle Beach in front of the resort, trade winds twisted it, fofoti protected by law; 2021 stamp (shipstamps). Species: the Commons photo series by Serge Melki is titled Conocarpus erectus. Pin from a stock-photo map marker (12.554486,-70.055091); the chosen photo is geotagged 12.554395,-70.054836, about 25 m away, so the photographed trunk is the one at the pin. Photo taken 2008-09-20; alive rests on the resort's and Visit Aruba's undated pages; the page asks readers to confirm. Other trunks on Eagle Beach (Commons 2019 photo shows a pair) are leads, not this entry. Pixels viewed 2026-11-01, photo_light OK."
+    }
+  ]
+}
