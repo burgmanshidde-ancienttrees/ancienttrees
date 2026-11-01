@@ -2,10 +2,10 @@
   "city": "Dublin",
   "country": "Ireland",
   "status": "needs_curation",
-  "intro": "Dublin's remarkable trees rarely come from grand planned woodland the way London's or Madrid's do. They arrive by accident and by institution instead: a bench a plane tree slowly ate, a sequoia a visiting queen planted as a courtesy, two Georgian college squares, a windbreak oak that grew several trunks instead of one, a cluster of botanic garden specimens gathered from three continents, and a scattering of Guinness family estates now open to everyone. Sixteen of these seventeen cost nothing to visit, though one keeps its gate locked for all but ten weeks a year.",
-  "meta_description": "Dublin's ancient trees range from a plane eating a park bench to a queen's own sequoia. Seventeen verified locations, real stories, how to reach each one.",
+  "intro": "Dublin's remarkable trees rarely come from grand planned woodland the way London's or Madrid's do. They arrive by accident and by institution instead: a bench a plane tree slowly ate, a sequoia a visiting queen planted as a courtesy, two Georgian college squares, a windbreak oak that grew several trunks instead of one, a cluster of botanic garden specimens gathered from three continents, and a scattering of Guinness family estates now open to everyone. Seventeen of these eighteen cost nothing to visit, though one keeps its gate locked for all but ten weeks a year.",
+  "meta_description": "Dublin's ancient trees range from a plane eating a park bench to a queen's own sequoia. Eighteen verified locations, real stories, how to reach each one.",
   "question_answer": "Dublin's oldest tree is very likely Dean's Tree, a yew in the private garden of the Old Glebe in Newcastle, on the city's western edge, estimated at between 500 and 700 years old depending on which measure you trust. It only opens to the public for a few weeks each year, in May, June and mid-August, under Ireland's Section 482 scheme for historic properties.",
-  "question_meta": "A 500-700 year old yew in a private garden, linked by legend to Jonathan Swift, is Dublin's oldest tree. When it opens to visitors, and the full seventeen.",
+  "question_meta": "A 500-700 year old yew in a private garden, linked by legend to Jonathan Swift, is Dublin's oldest tree. When it opens to visitors, and the full eighteen.",
   "question_context": "Ring counts are not possible without felling the tree, so estimates for the Old Glebe yew swing widely: a girth-based rule of thumb puts it past 500 years, while local tradition claims over 700. Either number makes it older than the house whose garden it now shares, built in 1710, and older than most of the city's other ancient trees. Jonathan Swift, Dean of St Patrick's Cathedral, is said to have sat beneath it while composing verse, though that pairing of an ancient tree and a famous writer is exactly the kind of story that attaches itself whether or not it happened, so treat it as folklore. The nearest challenger for oldest is a good deal younger: a pair of yews in the National Botanic Gardens, possibly planted in the 1730s to commemorate the essayist Joseph Addison, a claim the garden's own historians can't fully reconcile with its 1795 founding date. Getting there requires checking the calendar first. It is a private property that opens free to the public under Ireland's Section 482 tax relief scheme, specifically in May, all of June, and nine days in mid-August, 10am to 2pm. Turn up outside those windows and the gate stays shut.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Dublin's ancient trees free to visit?",
-      "a": "Fifteen of the seventeen are free at any time. Áras an Uachtaráin's sequoia requires a free guided tour booked on the day, and the Old Glebe's yew only opens for a few weeks a year."
+      "a": "Sixteen of the eighteen are free at any time. Áras an Uachtaráin's sequoia requires a free guided tour booked on the day, and the Old Glebe's yew only opens for a few weeks a year."
     },
     {
       "q": "Why is there a tree eating a bench in Dublin?",
@@ -653,6 +653,41 @@
         "url": null
       },
       "verify_notes": "2026-10-12: Noeleen Smyth, Director of the National Botanic Gardens, asked us by mail to drop the line inviting visitors to peel the bark; story rewritten to say look, not touch."
+    },
+    {
+      "id": "dub_018",
+      "name": "The Marlay Park Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 578,
+      "location": {
+        "address": "Marlay Park, Grange Road, Rathfarnham, Dublin 16",
+        "latitude": 53.27841,
+        "longitude": -6.26845,
+        "neighbourhood": "Rathfarnham"
+      },
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/marlay-park-rathfarnham/",
+        "https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / NBDC dataset 27, record 603)",
+        "url": "https://maps.biodiversityireland.ie/Dataset/27"
+      },
+      "access": "Free; Marlay Park is a public regional park run by Dun Laoghaire-Rathdown County Council, open to the public since 1975",
+      "transport": "Dublin Bus 16 serves the park directly; bus 14 and 75 within walking distance",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This yew was already between 300 and 500 years old when Aubrey Fennell measured it for the Tree Council of Ireland in 2009, which puts its first growth somewhere between the early 1500s and the early 1700s. Nobody has dated it more tightly than that.\n\nIt is not one trunk but several. The heritage register records it as a multi-stemmed tree, and its 5.78 metres of girth was taken low, 40 centimetres off the ground, around the whole cluster. The Ancient Yew Group's database lists it in its Ancient class, but on the strength of that same survey, so the two records are one measurement rather than two opinions.\n\nThe yew database files it as an estate tree. Since 1975, when Marlay Park opened to the public, it has been one anyone off the 16 bus can walk up to, in a regional park now run by Dún Laoghaire-Rathdown County Council.\n\nTwo plain caveats. No dated sighting of it has been published since the 2009 survey, so how it has fared since is unrecorded. And the pin comes from the register's grid reference, which can sit about 40 metres out in a park of 300 acres, so search the ground around the marker for a cluster of dark evergreen stems rather than expecting to find it under the pin. If you do find it, a photograph taken at the tree would settle both questions.",
+      "how_to_recognise": "You can recognise it by its several stems rising together from one base, 5.78 metres round at 40 centimetres up. It stands in Marlay Park, within about 40 metres of the pin.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

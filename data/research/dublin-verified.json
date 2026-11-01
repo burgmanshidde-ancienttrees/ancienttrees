@@ -7,17 +7,27 @@
     "age_min": 300,
     "age_max": 500,
     "girth_cm": 578,
-    "location": {"address": "Marlay Park, Grange Road, Rathfarnham, Dublin 16", "latitude": 53.27841, "longitude": -6.26845, "neighbourhood": "Rathfarnham"},
+    "location": {
+      "address": "Marlay Park, Grange Road, Rathfarnham, Dublin 16",
+      "latitude": 53.27841,
+      "longitude": -6.26845,
+      "neighbourhood": "Rathfarnham"
+    },
     "verified_sources": [
       "https://www.ancient-yew.org/yew_tree_database/marlay-park-rathfarnham/",
       "https://maps.biodiversityireland.ie/Dataset/27"
     ],
-    "official_register": {"name": "Heritage Trees of Ireland (Tree Council of Ireland / NBDC dataset 27, record 603)", "url": "https://maps.biodiversityireland.ie/Dataset/27"},
+    "official_register": {
+      "name": "Heritage Trees of Ireland (Tree Council of Ireland / NBDC dataset 27, record 603)",
+      "url": "https://maps.biodiversityireland.ie/Dataset/27"
+    },
     "access": "Free; Marlay Park is a public regional park run by Dun Laoghaire-Rathdown County Council, open to the public since 1975",
     "transport": "Dublin Bus 16 serves the park directly; bus 14 and 75 within walking distance",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Register record 603: multi-stem yew, age band 300-500 years as of the 2009 survey (Aubrey Fennell), so add ~17 years; band kept broad. Ancient Yew Group database (tree ID 2748, Marlay Park - Rathfarnham, site type estate, access Public, visited 6 Aug 2009, recorded by Tree Register of Ireland) gives 578 cm girth at 40 cm, class Ancient 5m-7m. The AYG record draws on the same Tree Register survey, so the two are NOT independent; flagged register-level. Girth 578 cm is a multi-stem measurement per the register tree_form, taken at 40 cm. Pin is the register coordinate converted from Irish Grid with no datum shift (about 40 m error per register caveat) in a 300-acre park, so approximate. lifecheck NONE: no recent dated observation found, alive not confirmed since 2009. No photo found (not hunted). Findability: park-level pin only, no small named site, no recognition line from sources; writer should not ship it without a photograph or a GPS fix from a reader. Marlay Park is 8.9 km from city centre, about 25-30 min by bus 16 from the centre (not timed here)."
+    "verify_notes": "Register record 603: multi-stem yew, age band 300-500 years as of the 2009 survey (Aubrey Fennell), so add ~17 years; band kept broad. Ancient Yew Group database (tree ID 2748, Marlay Park - Rathfarnham, site type estate, access Public, visited 6 Aug 2009, recorded by Tree Register of Ireland) gives 578 cm girth at 40 cm, class Ancient 5m-7m. The AYG record draws on the same Tree Register survey, so the two are NOT independent; flagged register-level. Girth 578 cm is a multi-stem measurement per the register tree_form, taken at 40 cm. Pin is the register coordinate converted from Irish Grid with no datum shift (about 40 m error per register caveat) in a 300-acre park, so approximate. lifecheck NONE: no recent dated observation found, alive not confirmed since 2009. No photo found (not hunted). Findability: park-level pin only, no small named site, no recognition line from sources; writer should not ship it without a photograph or a GPS fix from a reader. Marlay Park is 8.9 km from city centre, about 25-30 min by bus 16 from the centre (not timed here).",
+    "story": "This yew was already between 300 and 500 years old when Aubrey Fennell measured it for the Tree Council of Ireland in 2009, which puts its first growth somewhere between the early 1500s and the early 1700s. Nobody has dated it more tightly than that.\n\nIt is not one trunk but several. The heritage register records it as a multi-stemmed tree, and its 5.78 metres of girth was taken low, 40 centimetres off the ground, around the whole cluster. The Ancient Yew Group's database lists it in its Ancient class, but on the strength of that same survey, so the two records are one measurement rather than two opinions.\n\nThe yew database files it as an estate tree. Since 1975, when Marlay Park opened to the public, it has been one anyone off the 16 bus can walk up to, in a regional park now run by Dún Laoghaire-Rathdown County Council.\n\nTwo plain caveats. No dated sighting of it has been published since the 2009 survey, so how it has fared since is unrecorded. And the pin comes from the register's grid reference, which can sit about 40 metres out in a park of 300 acres, so search the ground around the marker for a cluster of dark evergreen stems rather than expecting to find it under the pin. If you do find it, a photograph taken at the tree would settle both questions.",
+    "how_to_recognise": "You can recognise it by its several stems rising together from one base, 5.78 metres round at 40 centimetres up. It stands in Marlay Park, within about 40 metres of the pin."
   },
   {
     "id": "dub_019",
@@ -26,11 +36,19 @@
     "age_estimate": "roughly 150 to 200 years",
     "age_min": 150,
     "age_max": 200,
-    "location": {"address": "Marlay Park, Grange Road, Rathfarnham, Dublin 16", "latitude": 53.27385, "longitude": -6.26752, "neighbourhood": "Rathfarnham"},
+    "location": {
+      "address": "Marlay Park, Grange Road, Rathfarnham, Dublin 16",
+      "latitude": 53.27385,
+      "longitude": -6.26752,
+      "neighbourhood": "Rathfarnham"
+    },
     "verified_sources": [
       "https://maps.biodiversityireland.ie/Dataset/27"
     ],
-    "official_register": {"name": "Heritage Trees of Ireland (Tree Council of Ireland / NBDC dataset 27, record 117)", "url": "https://maps.biodiversityireland.ie/Dataset/27"},
+    "official_register": {
+      "name": "Heritage Trees of Ireland (Tree Council of Ireland / NBDC dataset 27, record 117)",
+      "url": "https://maps.biodiversityireland.ie/Dataset/27"
+    },
     "access": "Free; Marlay Park is a public regional park run by Dun Laoghaire-Rathdown County Council",
     "transport": "Dublin Bus 16 serves the park directly; bus 14 and 75 within walking distance",
     "location_precision": "approximate",

@@ -1,6 +1,16 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-11-01": [
+   {
+    "date": "2026-11-01",
+    "kind": "write",
+    "target": "dublin + 5 held",
+    "tokens": 81000,
+    "trees": 1,
+    "note": "dub_018 live; held: dub_019 no recognition basis, tav_001/frk_027/inn_007 access (rule 10), sfo_012 duplicate of sfo_004"
+   }
+  ],
   "2026-10-31": [
    {
     "date": "2026-10-31",
