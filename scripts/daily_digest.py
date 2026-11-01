@@ -1360,6 +1360,14 @@ def is_ours(uid):
     return _ours.is_ours(uid)
 
 
+# An account counts only once somebody signed in with it (Hidde, 2026-11-01:
+# "kunnen we dat soort niet gelukte accountaanvragen niet meetellen?", after a
+# mail sign-up on a throwaway domain that never confirmed sat in the count).
+def is_counted_account(u):
+    """A stranger's account that was used at least once."""
+    return bool(u.get("last_sign_in_at")) and not is_ours(u.get("id"))
+
+
 # Anything a block thinks should reach Hidde today. The verdict line at the top
 # of the entry is built from this, and an empty list is the good case and says
 # so in words. Without it the report has no front door: fifteen true blocks and
@@ -1673,15 +1681,16 @@ def product_section(today):
             if is_ours(u.get("id")):
                 ours_n["accounts"] += 1
                 continue
-            bump(str(u.get("created_at"))[:10], "accounts")
+            if is_counted_account(u):
+                bump(str(u.get("created_at"))[:10], "accounts")
         # Strangers' accounts per week for the conclusion on top: this week is
         # the seven days to yesterday, the same window as the app's.
         wk = [0, 0]
         for u in ((users or {}).get("users") or []):
-            if is_ours(u.get("id")):
+            if not is_counted_account(u):
                 continue
             try:
-                age = (today - datetime.date.fromisoformat(str(u.get("created_at"))[:10])).days
+                age =(today - datetime.date.fromisoformat(str(u.get("created_at"))[:10])).days
             except ValueError:
                 continue
             if 1 <= age <= 7:
@@ -1812,7 +1821,8 @@ def product_section(today):
         while page <= 10:
             users, _ = _supa("/auth/v1/admin/users?page=%d&per_page=1000" % page, key)
             users = (users or {}).get("users") or []
-            users = [u for u in users if not is_ours(u.get("id"))]
+            full = len(users)
+            users = [u for u in users if is_counted_account(u)]
             acc += len(users)
             for u in users:
                 c = u.get("created_at")
@@ -1821,7 +1831,7 @@ def product_section(today):
                 d = _days_since(c, today) if c else None
                 if d is not None and d <= 1:
                     recent[d] += 1
-            if len(users) < 1000:
+            if full < 1000:
                 break
             page += 1
         since = _days_since(newest_at, today)
@@ -2051,7 +2061,7 @@ def day_by_day_section(today):
         steps = {
             "New accounts": lambda: [(u.get("created_at"), 1) for u in
                                      ((_supa("/auth/v1/admin/users?page=1&per_page=1000", key)[0]
-                                       or {}).get("users") or []) if not is_ours(u.get("id"))],
+                                       or {}).get("users") or []) if is_counted_account(u)],
             "Saves": lambda: [(r.get("created_at"), 1) for r in
                               _supa("/rest/v1/saves?select=user_id,created_at&created_at=gte.%s"
                                     % since, key)[0] or [] if not is_ours(r.get("user_id"))],
@@ -3662,7 +3672,7 @@ def _hl_supabase(today):
     wk = [0, 0]
     for u in ((users or {}).get("users") or []):
         w = _week_of(u.get("created_at"), today)
-        if w is not None and not is_ours(u.get("id")):
+        if w is not None and is_counted_account(u):
             wk[w] += 1
     out["accounts"] = wk
     since = (today - datetime.timedelta(days=15)).isoformat()

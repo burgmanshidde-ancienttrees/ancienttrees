@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-01 session: the digest counts only accounts that were used
+
+New accounts in the digest (headline, day by day, the total) now leave out accounts nobody ever signed in with (`is_counted_account()` in scripts/daily_digest.py; Hidde: "kunnen we dat soort niet gelukte accountaanvragen niet meetellen?"). Two dropped: a mail sign-up on a throwaway domain (10-30) and an unconfirmed gmail one (10-14); 50 strangers' accounts remain. Also seen: the three new accounts of 10-31/11-01 are Friends of Burnley Gardens (two days after our archive ask), a Portuguese and a Greek reader; the profile name "Kaylene J." took the last word of "De Jong", not yet fixed.
+
 ## 2026-11-01 session: Curaçao, one tree live (Hidde named it, for a friend)
 
 Live: cuw_001 The Great Kapok of Hofi Pastor (Barber), a one-tree place at /curacao. Flagged (one source cluster, Wikipedia and tourism writing), approximate pin from a komoot highlight, age left open (claims 300, 400, 600, 800 years; the page asks readers). Lead photo from Commons (Hardscarf, CC BY-SA 4.0, 2020), pixels viewed, photo_light OK. Verify pass cost 147k tokens for one tree: Curaçao has no tree register or champion list, and Willemstad, the landhuizen and Beth Haim gave no named old tree. 3 leads and 2 blocked in data/leads/curacao.json; untried routes in data/research/curacao-notes.md (Inlander 2017, Delpher, OSM natural=tree, iNaturalist). The next trees here should come from Hidde's friend on the island through the app, not more web research.
