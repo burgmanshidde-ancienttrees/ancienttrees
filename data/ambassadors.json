@@ -1,6 +1,6 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named or their profile is public (public true, since 2026-10-28); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": "2026-11-02T14:01Z",
+  "synced": "2026-11-02T15:30Z",
   "ambassadors": [
     {
       "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
@@ -62,7 +62,7 @@
       "place_name": "Paris",
       "public": true,
       "since": "2026-11-02",
-      "display_name": "Tall Ginkgo 6205",
+      "display_name": "Loic S.",
       "profile_public": true
     },
     {
@@ -264,7 +264,7 @@
         "The Twisted Beech of Square des Arenes de Lutece",
         "The Horse Chestnut of Square Rene-Le Gall"
       ],
-      "follow_up": "Ask their name in the reply to their answer (Hidde, 2026-11-02): Apple passed none, so the profile and the Paris page show the generated 'Tall Ginkgo 6205'. Set the name they give on their profile for them. No answer by 2026-11-09: one short mail asking only that."
+      "follow_up": "Name set for them on 2026-11-02 (Hidde: \"cant we just change it for them\"): Apple passed none, so 'Tall Ginkgo 6205' became 'Loic S.', first name and initial from their account address, the shape Google names get. If they ask for another, set that one."
     }
   ],
   "requested": [
