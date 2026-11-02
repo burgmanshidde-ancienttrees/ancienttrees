@@ -14,9 +14,8 @@
 --
 -- WHAT WAS CHECKED FOR LEAKS (2026-10-19, Hidde: "kijk nog eens kritisch"):
 -- the website's public key read every display name and the whole follow
--- graph; both are signed-in only from here. The lists carry no dates, no
--- time order and nothing from the last 24 hours, so a profile never says
--- where somebody is now. What remains visible on a public profile, by
+-- graph; both are signed-in only from here. The lists carry no dates and no
+-- time order. What remains visible on a public profile, by
 -- design: the places somebody collects trees in, which is roughly where
 -- they live or travel, the same as AllTrails' location field.
 --
@@ -82,12 +81,14 @@ as $$
     'following', (select count(*) from public.follows where follower = p.user_id),
     'ambassador', coalesce((select json_agg(a.place_name order by a.since)
                             from public.ambassadors a where a.user_id = p.user_id), '[]'::json),
-    -- NEVER WHERE SOMEBODY IS NOW: no dates, not in the order they happened,
-    -- and nothing ticked in the last 24 hours (Polarsteps' live-location
-    -- lesson, 2026-09-04). Sorted by tree id, which groups by place.
+    -- No dates and not in the order they happened; sorted by tree id, which
+    -- groups by place. A tick shows at once, as a published step does on
+    -- Polarsteps (Hidde, 2026-11-02: "lets follow polarsteps rules"): the
+    -- 24-hour hold made a reader's own walk vanish from their public page
+    -- for a day. We never keep a live position, so there is nothing else
+    -- to hide.
     'visited', coalesce((select json_agg(v.tree_id order by v.tree_id)
-                         from public.visited v where v.user_id = p.user_id
-                           and v.created_at < now() - interval '24 hours'), '[]'::json),
+                         from public.visited v where v.user_id = p.user_id), '[]'::json),
     'saves', coalesce((select json_agg(s.tree_id order by s.tree_id)
                        from public.saves s where s.user_id = p.user_id), '[]'::json)
   )
