@@ -300,6 +300,62 @@
       "by": "session-44668465",
       "claimed_at": "2026-11-02T19:21:55+00:00",
       "trees_at_claim": null
+    },
+    {
+      "target": "edinburgh",
+      "kind": "verify",
+      "by": "session-97f93d4c",
+      "claimed_at": "2026-11-02T19:21:58+00:00",
+      "trees_at_claim": 16
+    },
+    {
+      "target": "glasgow",
+      "kind": "verify",
+      "by": "session-97f93d4c",
+      "claimed_at": "2026-11-02T19:21:58+00:00",
+      "trees_at_claim": 6
+    },
+    {
+      "target": "los-angeles",
+      "kind": "verify",
+      "by": "session-e2f631fb",
+      "claimed_at": "2026-11-02T19:22:00+00:00",
+      "trees_at_claim": 11
+    },
+    {
+      "target": "san-diego",
+      "kind": "verify",
+      "by": "session-e2f631fb",
+      "claimed_at": "2026-11-02T19:22:00+00:00",
+      "trees_at_claim": 6
+    },
+    {
+      "target": "oakland",
+      "kind": "verify",
+      "by": "session-e2f631fb",
+      "claimed_at": "2026-11-02T19:22:01+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "birmingham-uk",
+      "kind": "verify",
+      "by": "session-97f93d4c",
+      "claimed_at": "2026-11-02T19:22:09+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "wolverhampton",
+      "kind": "verify",
+      "by": "session-97f93d4c",
+      "claimed_at": "2026-11-02T19:22:13+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "milton-keynes",
+      "kind": "verify",
+      "by": "session-97f93d4c",
+      "claimed_at": "2026-11-02T19:22:16+00:00",
+      "trees_at_claim": null
     }
   ]
 }
