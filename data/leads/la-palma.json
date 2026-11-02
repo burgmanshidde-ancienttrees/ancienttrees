@@ -1,0 +1,53 @@
+{
+ "leads": [
+  {
+   "name": "Pino de Santo Domingo",
+   "species": "Canary Pine (Pinus canariensis)",
+   "lat": 28.5029982,
+   "lng": -17.8476078,
+   "reason": "Zona Recreativa Pino de Santo Domingo, Fuencaliente, free access, signposted road from the village (festivalesdeespana.com). Age about 400 years comes from that events page only (no height or girth anywhere); komoot lists it as natural monument at 28.50344,-17.84777 (about 50 m from the OSM named tree node 837827112), no iNaturalist or open Commons photo, lifecheck NONE. Single weak source for age, pin not corroborated within 15 m, no photo: needs a photo or an official ficha (Cabildo de La Palma) before shipping. Worth a retry: strong candidate (recreation area, annual feast on 21 July).",
+   "source": "https://www.festivalesdeespana.com/festival/fiesta-del-pino-de-santo-domingo-fuencaliente"
+  },
+  {
+   "name": "Dragos de Buracas (Las Tricias)",
+   "species": "Canary Island Dragon Tree (Dracaena draco)",
+   "lat": 28.7927,
+   "lng": -17.9767,
+   "reason": "A grove along the GR 130 leg Las Tricias to Buracas, called 'dragos centenarios'. A grove is not one collectible point; no source names a trunk or gives an age. Only the one individual at 28.78789,-17.97299 is delivered as lpa_004. Commons has photos by Gerda Arendt (CC BY-SA 4.0, 2023-01-19) of an old drago in Las Tricias without geotag.",
+   "source": "https://es.hispanopedia.com/wiki/Las_Tricias"
+  },
+  {
+   "name": "Drago of Puntagorda (Mirador de los Dragos)",
+   "species": "Canary Island Dragon Tree (Dracaena draco)",
+   "lat": null,
+   "lng": null,
+   "reason": "Commons category 'Dracaena draco at Mirador de los Dragos' (Frank Vincentz, 2008, CC BY-SA 3.0, 19 photos). Not researched: no source on age or which trunk; no coordinates fetched. Retry via Puntagorda council page.",
+   "source": "https://commons.wikimedia.org/wiki/File:Dracaena_draco_(Puntagorda)_01_ies.jpg"
+  },
+  {
+   "name": "Laurisilva trees at Los Tilos / Barlovento chestnuts",
+   "species": "Til (Ocotea foetens) / Sweet Chestnut (Castanea sativa)",
+   "lat": null,
+   "lng": null,
+   "reason": "Searches (Spanish and English) found no named individual tree: a wood is not a collectible point. No La Palma chestnut found in any source despite searches.",
+   "source": "search only"
+  },
+  {
+   "name": "Old Canary pines of the Caldera de Taburiente",
+   "species": "Canary Pine (Pinus canariensis)",
+   "lat": null,
+   "lng": null,
+   "reason": "Not researched in depth: no named individual in any source found, and the Caldera is permit-regulated for parts of the park. Reserved for a later pass.",
+   "source": "search only"
+  },
+  {
+   "name": "Figs and laurels in Santa Cruz de La Palma plazas",
+   "species": "unknown",
+   "lat": null,
+   "lng": null,
+   "reason": "Not researched (time). Wikidata sweep found only churches and chapels in town, no tree items. Could be searched via OSM natural=tree with a name tag, but Overpass returned 406/502 from this machine.",
+   "source": "none"
+  }
+ ],
+ "blocked": []
+}

@@ -1,0 +1,33 @@
+{
+  "leads": [
+    {
+      "name": "Drago near Betancuria (iNaturalist cluster)",
+      "species": "Dragon Tree (Dracaena draco)",
+      "lat": 28.44083,
+      "lng": -14.05623,
+      "reason": "No photo or exact pin in reach as a verified tree. Four iNaturalist observations (e.g. 405457683, 2026-10-03, accuracy 4 m, marked casual i.e. planted/cultivated, photo CC BY-NC so not usable) put a dragon tree at FV-30 in Betancuria. No age, girth or catalogue source found; ULPGC text says Fuerteventura dragons are imported from Gran Canaria, Tenerife and La Palma (one grown from seed brought in 1889, location not seen). Alive in 2026. Needs an age/size source and an open-licence photo."
+    },
+    {
+      "name": "Drago near Antigua (iNaturalist)",
+      "species": "Dragon Tree (Dracaena draco)",
+      "lat": 28.34425,
+      "lng": -14.04091,
+      "reason": "Single casual iNaturalist observation 342203701 (2026-02-24), photo CC BY-NC, no age or size source, planted ornamental likely. No photo or exact pin in reach."
+    },
+    {
+      "name": "Palmeral de Vega de Rio Palmas",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "lat": null,
+      "lng": null,
+      "reason": "Grove, not one collectible tree; no individual palm with a source for age or girth found. Ministry route page only says the name comes from the palms and springs. Would need one named palm with a story."
+    },
+    {
+      "name": "Tarajales (Barranco de las Penitas, Tarajal de Sancho)",
+      "species": "Tamarisk (Tamarix canariensis)",
+      "lat": null,
+      "lng": null,
+      "reason": "Stands of tamarisk, historically recorded (17th-century protection by the Cabildo), no individual tree with a source. Avenue/stand, not a collectible point."
+    }
+  ],
+  "blocked": []
+}

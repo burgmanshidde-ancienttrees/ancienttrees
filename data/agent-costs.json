@@ -14445,6 +14445,10 @@
   {"date": "2026-11-02", "kind": "write", "target": "horta", "tokens": 104801, "trees": 2, "note": "2 ensemble stories, held for the pace."},
   {"date": "2026-11-02", "kind": "verify", "target": "taormina (register)", "tokens": 171441, "trees": 2, "note": "Taormina itself 0 (register trees in a private hotel's grounds). Ilice di Carrinu, Zafferana Etnea (confirmed via Commons geotags); Minicucco di Fornazzo, Milo (approximate, square)."},
   {"date": "2026-11-02", "kind": "verify", "target": "amalfi+capri (register)", "tokens": 138864, "trees": 0, "note": "MASAF has 8 rows for the whole coast, none shippable; Capri none, its roverella dead 2021. Campania's regional list is JS-rendered; a later import may hold more."},
-  {"date": "2026-11-02", "kind": "write", "target": "zafferana-etnea+milo", "tokens": 104061, "trees": 2, "note": "2 stories, held for the pace."}
+  {"date": "2026-11-02", "kind": "write", "target": "zafferana-etnea+milo", "tokens": 104061, "trees": 2, "note": "2 stories, held for the pace."},
+  {"date": "2026-11-02", "kind": "verify", "target": "la-palma", "tokens": 175652, "trees": 0, "verified": 4, "note": "No island catalogue. 3 solid (Pino de la Virgen, Dragos Gemelos, Pino del Consuelo) plus 1 unnamed GR 130 drago, all confirmed pins via OSM nodes. 5 leads. Held for the pace cap."},
+  {"date": "2026-11-02", "kind": "verify", "target": "lanzarote", "tokens": 151526, "trees": 0, "verified": 1, "note": "No public catalogue (a preliminary Reserva de la Biosfera inventory, not online). Yaiza church ombu only; 12 leads, best the Tremesana fig in Timanfaya (guided only). Held for the pace cap."},
+  {"date": "2026-11-02", "kind": "verify", "target": "fuerteventura", "tokens": 123401, "trees": 0, "note": "No catalogue; two dragos with NC-only photos and no sources, the rest groves. 4 leads. Interrupted once by an API timeout and resumed."},
+  {"date": "2026-11-02", "kind": "write", "target": "la-palma+lanzarote", "tokens": 119112, "trees": 0, "verified": 5, "note": "5 stories plus place copy in data/research/canary-places-2026-11-02.json; place files built to data/research/<slug>-city.json, preflight clean except pace."}
  ]
 }

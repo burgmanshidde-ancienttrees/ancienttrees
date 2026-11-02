@@ -1,0 +1,150 @@
+[
+ {
+  "id": "lpa_001",
+  "name": "Pino de la Virgen de El Paso",
+  "species": "Canary Pine (Pinus canariensis)",
+  "age_estimate": "roughly 800 years",
+  "age_min": 775,
+  "age_max": 900,
+  "age_basis": "source",
+  "girth_cm": 700,
+  "height_m": 33,
+  "location": {
+   "address": "Beside the Ermita de la Virgen del Pino, Calle Virgen del Pino, El Paso, La Palma",
+   "latitude": 28.6628512,
+   "longitude": -17.841499,
+   "neighbourhood": "El Paso"
+  },
+  "verified_sources": [
+   "https://diariodeavisos.elespanol.com/2023/06/el-pino-canario-mas-antiguo/",
+   "https://www.eldiario.es/canariasahora/lapalmaahora/municipios/el_paso/primeras-pino-virgen-tratamiento-naturalizacion_1_1311146.html",
+   "https://www.openstreetmap.org/node/11161935013",
+   "https://commons.wikimedia.org/wiki/File:Pino_de_la_Virgen_(El_Paso).jpg",
+   "https://es.hispanopedia.com/wiki/Anexo:%C3%81rboles_centenarios_en_Espa%C3%B1a"
+  ],
+  "official_register": {
+   "name": "Bien de Interes Cultural de Canarias (declared 2014, per Diario de Avisos); no catalogue ficha with coordinates fetched",
+   "url": "https://diariodeavisos.elespanol.com/2023/06/el-pino-canario-mas-antiguo/"
+  },
+  "access": "Free, stands beside the village shrine (ermita) on a public street in El Paso, no ticket or gate seen in any source. Hours of the ermita itself not verified.",
+  "transport": "In El Paso village centre; bus stop and walk not verified; reached by road across the island from Santa Cruz de La Palma.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Pino_de_la_Virgen_%28El_Paso%29.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Elena.rguez.hdez, own work, taken 2023-12-18",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Pino_de_la_Virgen_(El_Paso).jpg",
+   "status": "found_needs_check"
+  },
+  "story": "Tree-ring counts made in 1995 and 2004 put this pine at 775 to 825 years old, and Diario de Avisos calls it the oldest known Canary pine. Other sources give 800 to 850 years, and one list says 900. The figure everyone lands near is about 800.\n\nIts name comes from the conquest of La Palma. The chronicles say a soldier in Alonso Fernández de Lugo's force found a small image of the Virgin among its branches, and the shrine beside it is the Ermita de la Virgen del Pino, the Virgin of the Pine.\n\nThat story is also why the tree is still here. The mountains around El Paso were later heavily deforested, and this pine was kept for its religious meaning when the forest around it went.\n\nIt stands about 910 metres above sea level, roughly seven metres round, and 33 metres tall by a 2023 measurement (35 by one from 2019). Eight centuries have not left it untouched. After it weakened, the council spent 309,000 euros in 2018 on returning its surroundings to a more natural state, and when it was measured again in October 2019 the first assessment was very positive. The Canary Islands declared it a Bien de Interés Cultural in 2014.\n\nThere is no gate and no ticket. It is on a public street in the middle of El Paso, beside the shrine that grew up around its legend.",
+  "recognise": "You can recognise it by its size, about 33 metres tall and seven metres round, with no rival beside it. It stands next to the Ermita de la Virgen del Pino on Calle Virgen del Pino in El Paso.",
+  "verify_notes": "ALIVE: OSM node edited 2026-07-16 (tags height 37.5 m, species tag wrongly Pinus pinea, ignore; description 'casi 800'); iNaturalist observation 2026-03-25 at the pin (lifecheck RECENT); Commons photo 2023-12-18 shows it in leaf; eldiario.es 2019-10-15: Ayuntamiento measured it on 2019-10-14 and called initial assessment very positive after it weakened and a 309,000 euro naturalisation project of the surroundings (2018). PIN: OSM natural=tree node 11161935013 (name Pino de la Virgen de El Paso, denotation natural_monument) beside the ermita, 28.66285,-17.84150; Wikidata Q6163609 (the Virgin image) has 28.6629,-17.8415, consistent. FIGURES DISAGREE by source and date: Diario de Avisos 2023-06: 33 m, perimeter 7 m, 'more than 800 years', dendrochronology 1995 and 2004 gave 775 to 825 years; eldiario.es 2019: 35 m, crown 27 m, perimeter 6.8 (unit not stated, read as metres), age 800 to 850 years, altitude 910 m; Hispanopedia list: 900 years; Spanish search summaries mention a ULPGC study with perimeter about 7.5 m at 1.30 m (not fetched, not used). girth_cm 700 and height 33 m from Diario de Avisos 2023. Age range 775 to 900 spans the cited sources; 'about 800 years' is the common figure. Called the oldest known Canary pine (Diario de Avisos: 'pino canario mas antiguo'); do not write 'in the world' without a source seen on a fetched page. Legend (Diario de Avisos via Wikimedia photo caption): chronicles say a soldier of Alonso Fernandez de Lugo's conquest force found the small image of the Virgin among its branches, hence the name; the surrounding mountains were heavily deforested later and this specimen was kept for its religious meaning. A small sanctuary was built next to its west face in 1876 (a documentary description seen only in a search summary, not fetched, do not use). Declared BIC 2014 (Diario de Avisos, no date of declaration given). The village feast: Romeria de la Virgen del Pino (hellocanaryislands.com listing, not fetched). Which trunk: single tree, no rival."
+ },
+ {
+  "id": "lpa_002",
+  "name": "Dragos Gemelos",
+  "species": "Canary Island Dragon Tree (Dracaena draco)",
+  "age_estimate": "roughly 200 to 250 years",
+  "age_min": 200,
+  "age_max": 250,
+  "age_basis": "source",
+  "girth_cm": 1260,
+  "height_m": 15,
+  "location": {
+   "address": "Beside the LP-301 road at a sharp bend, San Isidro, Breña Alta, La Palma",
+   "latitude": 28.6482855,
+   "longitude": -17.7875391,
+   "neighbourhood": "San Isidro, Breña Alta"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Dragos_Gemelos",
+   "https://visitlapalma.es/en/municipality/brena-alta/",
+   "https://www.openstreetmap.org/node/583274546",
+   "https://commons.wikimedia.org/wiki/File:Los_Dragos_Gemelos_-_Bre%C3%B1a_Alta_-_La_Palma_01.jpg"
+  ],
+  "access": "Free, publicly accessible: in a small garden reached by a corridor from the road to a small square, on land now owned by Breña Alta council (Wikipedia, citing the council and Atlas Obscura). Cabildo tourism page says the drago that inspired the legend can be visited.",
+  "transport": "Breña Alta, just south of Santa Cruz de La Palma, on the LP-301 towards San Isidro; distance, bus stop and walk not verified.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Los_Dragos_Gemelos_-_Bre%C3%B1a_Alta_-_La_Palma_01.jpg",
+   "license": "CC BY-SA 3.0",
+   "attribution": "H. Zell, own work, 2019-03-16 (Wikimedia Commons quality image)",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Los_Dragos_Gemelos_-_Bre%C3%B1a_Alta_-_La_Palma_01.jpg",
+   "status": "found_needs_check"
+  },
+  "story": "Two dragon trees stand a metre and a half apart in Breña Alta, both 15 metres tall, their branches woven together where the crowns meet. The municipality has carried them on its coat of arms since 1990.\n\nThe island explains them with a legend. Twin brothers, Urente and Timizara, loved the same woman, Urbina, and fought until both were dead. She planted a dragon tree where each of them fell and tended the two. Another telling has a woman in love with twin brothers. The likelier truth is less tragic. They were probably planted together, and a Canarian government teaching wiki lists them as cultivated, not wild.\n\nThe documented history is a farm. They grew on Las Gallanias, the land of Servando Pérez, where their leaves went to feed the animals. The land later passed to Breña Alta council, which is why a short corridor now leads from a sharp bend in the LP-301 to the small square where they stand, sheltered by houses and a hedge of avocado and fig.\n\nThe usual age, 200 to 250 years, is repeated rather than measured. Diario de Avisos notes that a drago cannot be aged by DNA; experts read its branchings and cavities instead, which gives a range at best. The northern tree has the bigger trunk, about four metres across. The southern one has lost a large part of its bark. Neither has hollows or aerial roots. Their red resin is the one called dragon's blood.",
+  "recognise": "You can recognise them as a pair of 15 metre dragon trees a metre and a half apart, branches interwoven. They stand in a small square up a corridor from a sharp bend of the LP-301 in San Isidro, Breña Alta.",
+  "verify_notes": "PIN: OSM natural=tree node 583274546 'Dragos Gemelos' (denotation natural_monument, wikidata Q107976185) at 28.64829,-17.78754; the Commons photo's geotag 28.64824,-17.78775 is about 20 m away; Wikipedia 28.64806,-17.78750. One collectible point: a pair about 1.5 m apart, a single place to stand. ALIVE: Commons photo 2019-03-16; lifecheck RECENT 2026-07-06 (iNaturalist observation 382346704 at the node). Facts (English Wikipedia 'Dragos Gemelos', which cites Pellagofio 2017-02-02, Atlas Obscura, Dominguez 2016 guide, a Gobierno de Canarias teaching PDF by Eli Lorenzo, Turismo Rural Isla Bonita; Atlas Obscura 403 to our fetcher, not read): both 15 m tall, about 1.5 m apart, probably planted together, said to be 200 to 250 years old (a drakenbloedboom.com blog, a retailer, repeats it; no scientific dating; Diario de Avisos notes a drago cannot be aged by DNA, experts use branching and cavities); the northern tree has the larger trunk, diameter about 4 m (girth_cm 1260 is pi x 4 m, derived and probably a basal mass, so treat as approximate; the Wikipedia figure is the only one); the southern tree is missing a large part of its bark; branches interwoven where they meet; no hollows or aerial roots; about 380 m altitude; sheltered by houses, hedge of avocado and fig. Stood on the Las Gallanias farm of Servando Perez and the leaves fed animals; the land passed to Breña Alta council; the pair has been in the municipal coat of arms since 1990. Gobierno de Canarias Medusa wiki (search summary only) says they are cultivated trees, not wild. Legend, give as legend: twins Urente and Timizara loved Urbina, fought to the death, she planted the two trees where they fell and tended them; variant: a woman in love with twin brothers planted them. The red resin is called dragon's blood. visitlapalma.es says the pair is in the San Isidro neighbourhood of Breña Alta."
+ },
+ {
+  "id": "lpa_003",
+  "name": "Pino del Consuelo",
+  "species": "Canary Pine (Pinus canariensis)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "location": {
+   "address": "LP-2 roadside before Los Canarios, Fuencaliente de La Palma",
+   "latitude": 28.5185837,
+   "longitude": -17.8216126,
+   "neighbourhood": "Los Canarios, Fuencaliente"
+  },
+  "verified_sources": [
+   "https://diariodeavisos.elespanol.com/2017/02/monumento-la-memoria-consuelo/",
+   "https://rtvc.es/el-pino-del-consuelo-en-fuencaliente-un-monumento-a-la-memoria-historica-29-agosto-2025/",
+   "https://www3.gobiernodecanarias.org/noticias/consuelo-1994-rescata-el-papel-de-la-palma-en-la-primera-exhumacion-judicial-de-victimas-del-franquismo-en-espana/",
+   "https://rtvc.es/canarias-financiara-grabacion-documental-pino-del-consuelo-1-abril-2026/",
+   "https://www.openstreetmap.org/node/13585404571",
+   "https://www.wikidata.org/wiki/Q132783195"
+  ],
+  "access": "Free roadside memorial site, monument and commemorative plaque inaugurated 2025-08-28 (RTVC dated 2025-08-29 says 'this Thursday'); Cabildo handled access works and parking (Diario de Avisos 2025-02-15). Opening hours not stated; an excavation of the nearby Vaguada de la Arana continues, so parts may be fenced.",
+  "transport": "By road on the LP-2 south of the island, south of the island; bus line 200 passes Los Canarios (festivalesdeespana.com, secondary) but the stop for the tree was not verified.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "photo": {
+   "status": "missing"
+  },
+  "story": "In May 1994, a few metres from this pine, the remains of five men executed in 1936 were lifted from a common grave. The Canary Islands government and the public broadcaster RTVC describe it as the first judicial exhumation of victims of the Franco regime in Spain. Two sources date it 7 May, one 9 May.\n\nOne of the five was Francisco Rodríguez Betancort, the last Republican mayor of Los Llanos de Aridane. With him were José Ruperto, Antonio Fernández Acosta, Manuel Peña and Antonio Hernández González. In 2006 the remains of eight more people were found lower on the slope, thirteen in three graves. The Asociación para la Memoria Histórica estimates that 44 men were executed here and buried in secret, more than 30 of them still unaccounted for, and RTVC reports that up to 50 may lie on this hillside. Excavation of the nearby Vaguada de la Araña has continued.\n\nThe pine marks the place. It stands beside the LP-2 before Los Canarios, in Fuencaliente, and on 28 August 2025 a monument and plaque were unveiled at the site, paid for with 76,000 euros from the Canary Islands government, the island Cabildo, Spain's Ministry of Democratic Memory and Fuencaliente council. A documentary, Consuelo 1994, was presented in Los Llanos de Aridane in July 2026.\n\nLittle is written about the tree itself. It is recorded as a Canary pine, and nobody has published its height, girth or age. If you know, tell us.",
+  "recognise": "You can recognise it by the memorial monument and plaque unveiled at its site in 2025. It stands beside the LP-2 just before Los Canarios, in Fuencaliente.",
+  "verify_notes": "WHY IT MATTERS (historical, not size): the tree marks the hillside beside which mass graves of men executed in 1936 at the start of Franco repression were found; Diario de Avisos 2017-02-20: remains of 13 people in three common graves a few metres from the tree (5 in 1994, 8 in 2006 lower on the slope); Asociacion para la Memoria Historica estimates 44 men were executed and buried clandestinely, over 30 unaccounted for; RTVC 2025-08-29 says up to 50 may lie there, 8 more recovered since 1994. The 1994 exhumation is described by the Gobierno de Canarias and RTVC as the first judicial exhumation of victims of the Franco regime in Spain (Gobierno de Canarias news gives 1994-05-07; RTVC 2025-08-29 says 9 May; RTVC 2026-04-01 says 7 May, so 7 May is used by two of three, flag the conflict). Among the five found in 1994: Francisco Rodriguez Betancort (RTVC spells Bethencourt), last Republican mayor of Los Llanos de Aridane, plus Jose Ruperto, Antonio Fernandez Acosta, Manuel Pena, Antonio Hernandez Gonzalez (RTVC 2026-04-01). Monument cost 76,000 euros (Gobierno de Canarias Presidency, Cabildo, Ministry of Democratic Memory, Fuencaliente council), inaugurated by councillor Nieves Lady Barreto; a documentary 'Consuelo 1994' presented 2026-07-16 in Los Llanos de Aridane. Tone: sober, name facts, no melodrama, the victims are people not a theme. PIN: OSM natural=tree node 13585404571 (name Pino del Consuelo, species pinus canariensis, edited 2026-02-23) at 28.518584,-17.821613 and Wikidata Q132783195 ('arbol singular en Fuencaliente', species item Q12024) at 28.518569,-17.821633 agree within 3 m. ALIVE: iNaturalist CC0 observations 2026-03-01 by john-p-martin within 12 m (a fern epiphyte on the tree and a Canary pine 70 m away); lifecheck not run on this pin but observations seen directly. SPECIES comes only from OSM and Wikidata; no source seen gives size, age or girth, so none recorded. Nobody has published a tree measurement; the page should ask readers. PHOTO: iNaturalist photos exist but are CC BY-NC (john-p-martin), not usable; no open photo found. Flagged for single-source species."
+ },
+ {
+  "id": "lpa_004",
+  "name": "Drago on the GR 130 above Las Tricias",
+  "species": "Canary Island Dragon Tree (Dracaena draco)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "location": {
+   "address": "GR 130 footpath, Finca El Morro, between Las Tricias and Buracas, Garafia, La Palma",
+   "latitude": 28.7878924,
+   "longitude": -17.9729879,
+   "neighbourhood": "Las Tricias, Garafia"
+  },
+  "verified_sources": [
+   "https://www.openstreetmap.org/node/478517100",
+   "https://www.inaturalist.org/observations/277015646",
+   "https://www.inaturalist.org/observations/338209722",
+   "https://visitlapalma.es/en/hiking/la-palma/tricias-buracas-leg-of-the-4th-stage-of-the-gr-130-hiking-path/",
+   "https://es.hispanopedia.com/wiki/Las_Tricias"
+  ],
+  "access": "Free, stands on the marked GR 130 walking path (stage 4 leg Las Tricias to Buracas, about 4.8 km, easy per hiking guides). Public path; the tree is beside it.",
+  "transport": "No regular public transport to Las Tricias per festivalesdeespana.com (secondary); about 1 h 45 min by car from Santa Cruz de La Palma via LP-1. Walk from Las Tricias village down the path.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "photo": {
+   "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/497422544/large.jpg",
+   "license": "CC BY 4.0",
+   "attribution": "Annette Peters (nettilie) on iNaturalist, observation 277015646, 2025-04-28",
+   "attribution_url": "https://www.inaturalist.org/observations/277015646",
+   "status": "found_needs_check"
+  },
+  "story": "Nobody has given this dragon tree a name or a date. It is a roadside veteran of the GR 130 footpath above Las Tricias, and the people who know it are the walkers who pass it on the way down to Buracas.\n\nWhat they see is a short, buttressed trunk holding up a broad umbrella crown beside the stone-walled path. Guides to the area call the dragon trees along this route centenarios, hundred-year-olds, but that is a word for the group, not a measurement of this one. No written source names this tree, sizes it or dates it.\n\nThe path is the reason to come. The leg from Las Tricias to Buracas runs about 4.8 kilometres and is graded easy, and the island's tourism site describes it as a short walk down to the Buracas dragon trees, with an aboriginal cave settlement and a windmill further along the same path. About 20 metres from this tree stands a younger drago on a single trunk, so the broad, buttressed one is the tree to look for.\n\nLas Tricias has no regular bus. Most visitors drive the hour and three quarters from Santa Cruz de La Palma on the LP-1 and walk down from the village.\n\nIf you know how old this tree is, or how big, tell us. It stands beside a public path, where a great many people have walked past it without anyone writing it down.",
+  "recognise": "You can recognise it by the short buttressed trunk under a broad umbrella crown, beside the stone wall of the path; a younger single-trunked drago stands about 20 metres off. It is on the GR 130 between Las Tricias and Buracas.",
+  "verify_notes": "WEAK ENTRY, deliver flagged: no source names or sizes this individual and none dates it. It is one of the dragos of the Buracas path that guides call 'dragos centenarios' (Hispanopedia, Las Tricias) and one of the most striking on the island by comparison (visitlapalma: short walk down to the Buracas dragon trees). PIN: OSM natural=tree node 478517100 (name drago, species Dracaena draco, import) at 28.78789,-17.97299 and four iNaturalist GPS fixes between 2025-04 and 2026-03 within 10 m (277015646 accuracy 5 m, 338209722 accuracy 2 m, 2026-02-11 by william_stephens CC BY), so the individual tree is placed. PHOTO seen: a broad umbrella crown, short buttressed trunk beside the stone-walled path, taken 2025-04-28 by Annette Peters, photo licence CC BY (observation licence also CC BY). The photo shows a mature, handsome tree, looks like the Cadiz standard; not judged against other Buracas trunks, a second tree 20 m away was seen in 2026-02 observation (young, single trunk). Age: none; do not derive from the picture. Area: the Buracas group is the better 'destination' (aboriginal cave settlement and windmill on the same path) but no individual there is named by any source. Ask the reader for the tree's age and size."
+ }
+]
