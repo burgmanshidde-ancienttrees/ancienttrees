@@ -18,6 +18,11 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Cammo Ash (edi_003) has its first photographs**, mailed by a Friends of Cammo member this morning.
 - **Mail:** sent Veronika Willhalm (photos online), Jerry Bull, Piero, Michael Roe, Mikel Belasko (Hidde's own words). Held: Pere Vives until his 26 photos are on the pages (Hidde). Every other owed thread closed by Hidde ("als afgehandelt beschouwen"): data/outreach-closed.json, read by outreach_inbox.py.
 
+## 2026-11-02 session: Horta written and held; three opening runs in their own sessions
+
+- **Horta (Faial, Azores)**: 2 ensembles from the Azores register, written and held in data/research/horta-verified.json: the three Norfolk Island pines of Praça da República and the five dragon trees of Jardim Florêncio Terra. Of the 36 Horta register points, 13 are on private, hotel or company ground and 15 lack a confirmed pin (leads). **Queue for 11-03 is now 16 trees** (the 11, the 3 Thai, these 2). Pamplona's session lifted the cap once on Hidde's word today, so check preflight's count before publishing.
+- **Started on Hidde's ask, each in its own session sharing this checkout:** the Canary Islands (La Palma, Lanzarote, Fuerteventura), Puglia (Lecce, Ostuni, Alberobello, Polignano, Monopoli, Otranto, Valle d'Itria olives) and the Croatian coast (Pula with Brijuni, Rovinj, Zadar, Hvar, Korčula and more), all from imported registers. Each logs its own entry and queues behind the pace.
+
 ## 2026-11-02 session: Thai and Azores registers imported; 3 more Thai trees held
 
 - **Registers in:** data/registers/thailand-rukkha.json (Ministry of Culture Heritage Trees of the Land, 217 entries, 121 placed, CC BY; eight rows' private owners' names stripped, the repo is public) and data/registers/azores-aip.json (58 classified trees, CC BY 4.0, 36 in Horta on Faial: the next place to open, check access per tree since several stand in private gardens). Both in OPEN_DATA_SURVEY.md and register-scouting.json. The map's register layer stays off (REGISTER_LAYER_ON = false, Hidde 2026-08-09); I told him so when he said "do it" to the dots.

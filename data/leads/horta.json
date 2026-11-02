@@ -1,0 +1,318 @@
+{
+  "city": "Horta",
+  "country": "Portugal",
+  "updated": "2026-11-02",
+  "about": "Horta (Faial, Azores) trees from the Azores classified-trees register (CC BY 4.0) and the Horta municipal tree regulation (1055/2023). No girth, height or age in either source. 'leads' failed only on evidence (pin or recent sighting); 'blocked' are private or non-public ground. Register points are approximate; the register says 44 of 49 locations are unchecked on the ground.",
+  "leads": [
+    {
+      "register_id": "FAI_IIM_17",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Jardim Florêncio Terra, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.54184,
+      "longitude": -28.626123,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Public municipal garden, OSM landmark node 8 m away, but no dated sighting of the pine found; folded context in hrt_002 notes"
+    },
+    {
+      "register_id": "FAI_IIM_18",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Cemitério do Carmo, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.538636,
+      "longitude": -28.629685,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Cemitério do Carmo (municipal cemetery, public), no recent sighting or pin evidence for the pines found (iNat 0 plant observations there since 2023)"
+    },
+    {
+      "register_id": "FAI_IIM_19",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Cemitério do Carmo, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.538562,
+      "longitude": -28.62944,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Cemitério do Carmo (municipal cemetery, public), no recent sighting or pin evidence for the pines found (iNat 0 plant observations there since 2023)"
+    },
+    {
+      "register_id": "FAI_IIM_21",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Rua do Arco (Acesso à Travessa de São Francisco), Matriz",
+      "owner": "Diocese de Angra do Heroísmo",
+      "latitude": 38.534484,
+      "longitude": -28.627748,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Rua do Arco, church-owned (Diocese de Angra do Heroísmo); street level, public visibility not established, no recent sighting"
+    },
+    {
+      "register_id": "FAI_IIM_22",
+      "species": "Ombu (Phytolacca dioica)",
+      "site": "Rua Cônsul Dabney, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.533007,
+      "longitude": -28.628623,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Ombu on Rua Cônsul Dabney, Câmara Municipal, street/public ground; register point only, no recent sighting or pin evidence found"
+    },
+    {
+      "register_id": "FAI_IIM_28",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Cruzamento da ER 1-1º. (Espalamaca) com ER 1-2.ª (Lomba), Conceição",
+      "owner": "Público/RAA",
+      "latitude": 38.548758,
+      "longitude": -28.620127,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Norfolk pine on a public roundabout/road junction (publicly visible), register point only, no recent sighting or pin evidence found"
+    },
+    {
+      "register_id": "FAI_IIM_29",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Rotunda da Avenida Marginal (Praceta Luis de Camões/ Av. 25 de Abril), Conceição",
+      "owner": "Câmara Municipal",
+      "latitude": 38.541934,
+      "longitude": -28.621359,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Norfolk pine on a public roundabout/road junction (publicly visible), register point only, no recent sighting or pin evidence found"
+    },
+    {
+      "register_id": "FAI_IIM_33",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Largo Duque de Ávila e Bolama, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.536977,
+      "longitude": -28.626411,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Largo Duque de Ávila e Bolama pine, Câmara, public square; register point only. Note: iNat Dracaena obs 367726109 (2024-08-04, 5 m) at 38.53646,-28.62604 and OSM dragon node 4555634800 at 38.5365,-28.62698 suggest a dragon tree nearby that is NOT in the register; check on a later pass"
+    },
+    {
+      "register_id": "FAI_IIM_36",
+      "species": "Dragon Tree (Dracaena draco)",
+      "site": "Colónia Alemã, Matriz",
+      "owner": "Público/RAA",
+      "latitude": 38.534096,
+      "longitude": -28.629174,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Antiga Colónia Alemã, owner Público/RAA; whether the grounds are open to visitors not established, no recent sighting"
+    },
+    {
+      "register_id": "FAI_IIM_37",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Colónia Alemã, Matriz",
+      "owner": "Público/RAA",
+      "latitude": 38.533372,
+      "longitude": -28.629069,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Antiga Colónia Alemã, owner Público/RAA; whether the grounds are open to visitors not established, no recent sighting"
+    },
+    {
+      "register_id": "FAI_IIM_40",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Adro da Igreja das Angústias, Angústias",
+      "owner": "Igreja das Angústias",
+      "latitude": 38.528181,
+      "longitude": -28.627404,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Church adro (Igreja das Angústias), public churchyard; iNat Araucaria 309044747 (2025-08-25, no accuracy) at 38.528049,-28.627562 is about 20 m from register point, not close enough to confirm"
+    },
+    {
+      "register_id": "FAI_IIM_42",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "site": "Largo do Infante, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.532827,
+      "longitude": -28.626451,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Four Canary palms in a row at Largo do Infante by the marina, public, municipal. No confirmed pin: iNaturalist Phoenix canariensis 184668418 (2023-09-24, 14 m accuracy) is 14 m from FAI_IIM_42 but older than two years; Commons geotags are photo positions. Needs a 2024+ GPS fix or a geotagged trunk photo. Metrosideros excelsa and Erythrina crista-galli also stand in the Largo (iNat 2026) and are not in the register"
+    },
+    {
+      "register_id": "FAI_IIM_43",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "site": "Largo do Infante, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.532671,
+      "longitude": -28.626478,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Four Canary palms in a row at Largo do Infante by the marina, public, municipal. No confirmed pin: iNaturalist Phoenix canariensis 184668418 (2023-09-24, 14 m accuracy) is 14 m from FAI_IIM_42 but older than two years; Commons geotags are photo positions. Needs a 2024+ GPS fix or a geotagged trunk photo. Metrosideros excelsa and Erythrina crista-galli also stand in the Largo (iNat 2026) and are not in the register"
+    },
+    {
+      "register_id": "FAI_IIM_44",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "site": "Largo do Infante, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.532503,
+      "longitude": -28.6265,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Four Canary palms in a row at Largo do Infante by the marina, public, municipal. No confirmed pin: iNaturalist Phoenix canariensis 184668418 (2023-09-24, 14 m accuracy) is 14 m from FAI_IIM_42 but older than two years; Commons geotags are photo positions. Needs a 2024+ GPS fix or a geotagged trunk photo. Metrosideros excelsa and Erythrina crista-galli also stand in the Largo (iNat 2026) and are not in the register"
+    },
+    {
+      "register_id": "FAI_IIM_45",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "site": "Largo do Infante, Matriz",
+      "owner": "Câmara Municipal",
+      "latitude": 38.532351,
+      "longitude": -28.626522,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Four Canary palms in a row at Largo do Infante by the marina, public, municipal. No confirmed pin: iNaturalist Phoenix canariensis 184668418 (2023-09-24, 14 m accuracy) is 14 m from FAI_IIM_42 but older than two years; Commons geotags are photo positions. Needs a 2024+ GPS fix or a geotagged trunk photo. Metrosideros excelsa and Erythrina crista-galli also stand in the Largo (iNat 2026) and are not in the register"
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "FAI_IIM_20",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Canada das Dutras, Matriz",
+      "owner": "Privado",
+      "latitude": 38.536623,
+      "longitude": -28.631074,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Canada das Dutras, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_23",
+      "species": "Ombu (Phytolacca dioica)",
+      "site": "“Cedars House”, Rua Cônsul Dabney, Matriz",
+      "owner": "Privado",
+      "latitude": 38.534563,
+      "longitude": -28.630985,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, “Cedars House”, Rua Cônsul Dabney, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_24",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Antiga Colónia Inglesa, Matriz",
+      "owner": "Privado",
+      "latitude": 38.532961,
+      "longitude": -28.629378,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Antiga Colónia Inglesa, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_25",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Antiga Colónia Inglesa, Matriz",
+      "owner": "Privado",
+      "latitude": 38.532025,
+      "longitude": -28.629478,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Antiga Colónia Inglesa, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_26",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Antiga Colónia Inglesa, Matriz",
+      "owner": "Privado",
+      "latitude": 38.531929,
+      "longitude": -28.629553,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Antiga Colónia Inglesa, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_27",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Logradouro no Azoris Faial Garden Resort Hotel, Angústias",
+      "owner": "Hotel Fayal",
+      "latitude": 38.531514,
+      "longitude": -28.629561,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Hotel grounds (Azoris Faial Garden Resort), guests only, not public ground"
+    },
+    {
+      "register_id": "FAI_IIM_34",
+      "species": "Dragon Tree (Dracaena draco)",
+      "site": "Jardins da Bagatelle, Rua de S. Paulo, Matriz",
+      "owner": "Privado",
+      "latitude": 38.540543,
+      "longitude": -28.627251,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Jardins da Bagatelle, Rua de S. Paulo, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_35",
+      "species": "Dragon Tree (Dracaena draco)",
+      "site": "Rua Médico Avelar, 23, Matriz",
+      "owner": "Privado (a private person, named in the register)",
+      "latitude": 38.536474,
+      "longitude": -28.629924,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Rua Médico Avelar, 23, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_38",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Rua Conselheiro Medeiros, 2, Matriz",
+      "owner": "Privado",
+      "latitude": 38.533025,
+      "longitude": -28.627203,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Rua Conselheiro Medeiros, 2, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IIM_39",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Rua Vasco da Gama, 42, Matriz",
+      "owner": "Bensaúde & C.ª, L.ª",
+      "latitude": 38.531047,
+      "longitude": -28.627321,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Company property (Bensaúde & Cª), not public ground; visibility from a street not established"
+    },
+    {
+      "register_id": "FAI_IIM_41",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Rua Conde Ávila, Relva, Angústias",
+      "owner": "Bensaúde & C.ª, L.ª",
+      "latitude": 38.527754,
+      "longitude": -28.628394,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Company property (Bensaúde & Cª), not public ground; visibility from a street not established"
+    },
+    {
+      "register_id": "FAI_IM_46",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Rua Eduardo Bulcão, Matriz",
+      "owner": "Privado",
+      "latitude": 38.536435,
+      "longitude": -28.62741,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Rua Eduardo Bulcão, Matriz); private ground, not verified as publicly visible"
+    },
+    {
+      "register_id": "FAI_IM_47",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "site": "Rua Eduardo Bulcão, Matriz",
+      "owner": "Privado",
+      "latitude": 38.536847,
+      "longitude": -28.627653,
+      "location_precision": "approximate",
+      "source": "Património Classificado dos Açores (CC BY 4.0), municipal-interest classification; also Horta Regulamento 1055/2023 Anexo III/IV",
+      "reason": "Private owner per register (Privado, Rua Eduardo Bulcão, Matriz); private ground, not verified as publicly visible"
+    }
+  ]
+}
