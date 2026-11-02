@@ -148,13 +148,6 @@
       "trees_at_claim": 3
     },
     {
-      "target": "Lamphun",
-      "kind": "verify",
-      "by": "session-75b6383b",
-      "claimed_at": "2026-11-02T18:52:49+00:00",
-      "trees_at_claim": null
-    },
-    {
       "target": "Corfu",
       "kind": "verify",
       "by": "session-a3d7971d",
@@ -251,6 +244,13 @@
       "by": "session-5b4800d8",
       "claimed_at": "2026-11-02T19:02:20+00:00",
       "trees_at_claim": null
+    },
+    {
+      "target": "tenerife",
+      "kind": "verify",
+      "by": "session-ead8b787",
+      "claimed_at": "2026-11-02T19:03:31+00:00",
+      "trees_at_claim": 4
     }
   ]
 }
