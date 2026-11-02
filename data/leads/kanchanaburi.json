@@ -1,0 +1,30 @@
+{
+ "city": "Kanchanaburi",
+ "country": "Thailand",
+ "updated": "2026-11-02",
+ "about": "Register-backed pass 2026-11-02 from the Ministry of Culture Heritage Trees lists (data/registers/thailand-rukkha.json). Nothing here reached the bar.",
+ "leads": [
+  {
+   "name": "Rain Tree 'Alangkan', Army Animal Unit 1, Dan Makham Tia",
+   "species": "Rain Tree (Samanea saman)",
+   "latitude": 13.971866,
+   "longitude": 99.51121,
+   "age_register": "100 years",
+   "girth_register_m": 15,
+   "height_register_m": 20,
+   "source": "Ministry of Culture Heritage Trees list, register id 2017-33; travel blogs (trueid) describe it as a visitor stop inside the Army Animal Department compound (Ko Samrong), crown radius 25.9 m",
+   "note": "Inside a military compound: public access not established by an owner source; hours not found. lifecheck NONE. Needs an access source (army unit or tourism authority) then a pin. Dan Makham Tia is its own place, west of Kanchanaburi town, distance not checked. Girth 15 m is register's crown-and-trunk figure, not verified."
+  },
+  {
+   "name": "Krabak Khao (Anisoptera) in the valley of Thong Pha Phum National Park",
+   "species": "Anisoptera sp.",
+   "latitude": 14.692724,
+   "longitude": 98.405028,
+   "age_register": "100+ years",
+   "girth_register_m": 13.4,
+   "height_register_m": null,
+   "source": "Ministry of Culture Heritage Trees list, register id 2018-55",
+   "note": "Register height 70 m impossible, cleared; girth 13.4 m likely buttress. In a national park valley beside a sinkhole pool; no trail, access or entry details found. lifecheck RECENT 2026-08-30 only within 100 m (an observation of something, not shown to be this trunk, iNaturalist 405118910). No exact pin or photo in reach: lead. Own place Thong Pha Phum, far from Kanchanaburi town, travel time not checked, never the town page. Species genus only, confirm."
+  }
+ ]
+}

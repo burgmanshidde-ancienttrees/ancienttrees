@@ -1,0 +1,34 @@
+[
+ {
+  "id": "skt_001",
+  "name": "Mango Tree of Wat Si Chum",
+  "species": "Mango (Mangifera indica)",
+  "age_estimate": "roughly 200 years",
+  "age_min": 150,
+  "age_max": 250,
+  "girth_cm": 600,
+  "height_m": 20,
+  "location": {
+   "address": "Wat Si Chum, Sukhothai Historical Park (north zone), Mueang Kao, Mueang Sukhothai District",
+   "latitude": 17.02697,
+   "longitude": 99.69332,
+   "neighbourhood": "Beside the Phra Achana mandapa, Wat Si Chum"
+  },
+  "verified_sources": [
+   "https://www.inaturalist.org/observations/185257170 (Mangifera indica, GPS accuracy 4 m, 2023-09-26; note says a sign at the tree gives 6.5 m circumference)",
+   "https://www.inaturalist.org/observations/230926532 (Indian mango, 'A huge one', 2024-07-22)",
+   "https://www.inaturalist.org/observations/30242916 (Mangifera indica, GPS 17 m, 2019-07-30)",
+   "Ministry of Culture Heritage Trees of the Land 2017 list, entry 'Mamuang Wat Si Chum' (data/registers/thailand-rukkha.json, 2017-38)"
+  ],
+  "official_register": {
+   "name": "Rukkha Moradok khong Phaendin (Heritage Trees of the Land), Department of Cultural Promotion, Ministry of Culture, 2017 list",
+   "url": "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9"
+  },
+  "access": "Inside Sukhothai Historical Park (World Heritage). Open daily about 06:00 to 18:00; separate ticket per zone, 100 baht for foreigners per The Longest Way Home blog (price unconfirmed on an official page, Thais pay less); check at the gate. No dress code stated for the grounds; modest dress usual at a Buddhist site.",
+  "transport": "About 2.5 km north of the old city gate and the park's central zone; songthaew, tuk-tuk or bicycle hire from New Sukhothai (the town is about 12 km east of the park).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "The Buddha next door is 15 metres tall. The mango beside his hall is 20.\n\nIt grows in the corner by the mandapa of Wat Si Chum, the walled hall in Sukhothai's old city that holds Phra Achana, the great seated Buddha. In 2017 Thailand's Ministry of Culture listed the mango as a heritage tree of the land, with a height of 20 metres and a girth of six, which is a great deal of trunk for a fruit tree. A sign at the tree says 6.5 metres, though nobody can tell you at what height that was measured.\n\nThe register puts its age at about 200 years. That is the register's figure, with no ring count behind it, so read it as somewhere between 150 and 250. If you know where the number came from, or have an older picture of this corner, tell us.\n\nFigs and crape myrtles grow close by, so look for the sign at its foot before you decide which trunk is the mango.\n\nWat Si Chum is in the north zone of Sukhothai Historical Park, a World Heritage site open daily from about 6:00 to 18:00, about 2.5 km north of the old city gate. Each zone has its own ticket. Foreign visitors have been charged 100 baht, but check the price at the gate. Dress modestly, as at any Buddhist site. New Sukhothai is about 12 km east, with songthaews, tuk-tuks and bicycles for hire.",
+  "how_to_recognise": "You can recognise it by the sign at its foot giving 6.5 metres round, and as the mango among figs and crape myrtles. It stands in the corner beside the walled mandapa of Wat Si Chum, which holds the great seated Buddha."
+ }
+]

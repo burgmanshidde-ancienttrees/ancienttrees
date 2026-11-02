@@ -24,18 +24,7 @@
    "girth_register_m": 9,
    "height_register_m": 19,
    "source": "Ministry of Culture Heritage Trees 2017 list; TCP Spirit and The Cloud say about 150 years; a 2005 profile says over 100 years, 15 m tall, 13 m girth, crown radius 25.87 m",
-   "note": "Members club grounds; access for non-members unsettled (the club has a restaurant open to the public, not confirmed). Ages disagree (100 to 150, no ring count). No alive evidence beyond news (lifecheck NONE). Needs access settled and a dated photo."
-  },
-  {
-   "name": "Ma Chamrong tree, San Pa Tong",
-   "species": "Samrong (Sterculia sp.)",
-   "latitude": 18.623655,
-   "longitude": 98.890304,
-   "age_register": "300 years",
-   "girth_register_m": "31.4 (corrupt: likely crown, not girth)",
-   "height_register_m": "90 (corrupt)",
-   "source": "Ministry of Culture Heritage Trees 2017 list; sanpatong.info 2018-01-06 (Culture Minister visited and paid respects at the town's namesake tree next to Ma Chamrong market)",
-   "note": "Local landmark beside the old market on Highway 108, but about 25 km from the old city (45+ minutes), beyond day-trip band. Register cells corrupt. Species uncertain (the article says 'samrong'). Alive in 2018 only."
+   "note": "Members club grounds; access for non-members unsettled (the club has a restaurant open to the public, not confirmed). Ages disagree (100 to 150, no ring count). No alive evidence beyond news (lifecheck NONE). Needs access settled and a dated photo. 2026-11-02: re-searched, a Chiang Mai city guide describes the clubhouse restaurant on a veranda shaded by the tree (undated), no stated public-access policy; Guinness lists a 58.9 m crown for a Gymkhana rain tree. Still unsettled."
   },
   {
    "name": "Fig embracing teak, Dong Phra Chao Nang Kon, Hang Dong",
@@ -52,7 +41,24 @@
    "height_register_m": 20,
    "source": "Ministry of Culture Heritage Trees 2018 list",
    "note": "Cloud forest groups at the summit of Doi Inthanon National Park, about 100 km from the city: label as a day trip by car, group, not a point."
+  },
+  {
+   "name": "Beleric, Mae Takhrai National Park",
+   "species": "Beleric (Terminalia bellirica)",
+   "source": "Ministry of Culture Heritage Trees 2019 list (th.wikipedia)",
+   "note": "Name and province only, no site, coordinate or figures. National park, far from the city."
+  },
+  {
+   "name": "Jackfruit, Tai Lue community",
+   "species": "Jackfruit (Artocarpus sp.)",
+   "source": "Ministry of Culture Heritage Trees 2019 list (th.wikipedia)",
+   "note": "Name and province only; no village, coordinate or figures. Not placeable."
   }
  ],
- "blocked": []
+ "blocked": [
+  {
+   "name": "Ma Chamrong tree, San Pa Tong",
+   "reason": "Register flags private care (private_care), access unconfirmed, corrupt girth and height, about 25 km from the old city. Moved from leads to blocked-for-now: not shipped unless a source shows public access."
+  }
+ ]
 }

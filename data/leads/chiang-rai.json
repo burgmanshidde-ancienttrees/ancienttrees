@@ -1,0 +1,52 @@
+{
+ "city": "Chiang Rai",
+ "country": "Thailand",
+ "updated": "2026-11-02",
+ "about": "Register-backed pass 2026-11-02 from the Ministry of Culture Heritage Trees lists (data/registers/thailand-rukkha.json). Nothing here reached the bar.",
+ "leads": [
+  {
+   "name": "Tetrameles (Somphong) of Huai Pu Phatthana village",
+   "species": "Tetrameles nudiflora",
+   "latitude": 19.93005,
+   "longitude": 99.718921,
+   "age_register": "200 years",
+   "girth_register_m": null,
+   "height_register_m": 35,
+   "source": "Ministry of Culture Heritage Trees list, register id 2017-11",
+   "note": "Karen village tree with buttresses about 2 m high, register girth 30 m is a buttress spread (cleared). Remote hill road Huai Pu Phatthana to Yang Kham Nu; searches found nothing on this village, no dated sighting, lifecheck NONE, no public-access source. No photo or exact pin in reach."
+  },
+  {
+   "name": "Thousand-year Assam tea tree, Phan Pi tea forest park, Doi Chang to Doi Wawi ridge",
+   "species": "Camellia sinensis var. assamica",
+   "latitude": 19.825762,
+   "longitude": 99.571392,
+   "age_register": "1,000 years",
+   "girth_register_m": 2.05,
+   "height_register_m": 20,
+   "source": "Ministry of Culture Heritage Trees list, register id 2017-40",
+   "note": "Register: found Nov 2005, about 2.05 m girth, called Thailand's largest tea tree; a park exists per register text, but searches found no page confirming the park, opening or the tree today. lifecheck NONE. Register coordinate is ridge-level only. Doi Chang/Doi Wawi are in Mae Suai district, a long drive from Chiang Rai town. Lead: needs access and an observation."
+  },
+  {
+   "name": "Beleric (Samo Phiphek) at Wat Kio Phrao",
+   "species": "Terminalia bellirica",
+   "latitude": null,
+   "longitude": null,
+   "age_register": "150+ years",
+   "girth_register_m": 3.4,
+   "height_register_m": 50,
+   "source": "Ministry of Culture Heritage Trees list, register id 2018-19",
+   "note": "Register coordinate was a placeholder, cleared. Temple tree in Tambon Chan Chawa Tai, Mae Chan, said discovered at the temple's founding 1867; height 50 m implausible (cleared by us). Searches found nothing on it. Temple visit free, dress code expected; no coordinate or photo: lead, find the temple pin on OSM."
+  },
+  {
+   "name": "Ironwood (Takhian Thong) at Wat Phra That Doi Phu Kaeo",
+   "species": "Hopea odorata",
+   "latitude": null,
+   "longitude": null,
+   "age_register": null,
+   "girth_register_m": null,
+   "height_register_m": null,
+   "source": "2019 list names only, via th.wikipedia (CC BY-SA)",
+   "note": "No coordinates or measurements anywhere read. Lead."
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "city": "Sukhothai",
+ "country": "Thailand",
+ "updated": "2026-11-02",
+ "about": "Trees from the Ministry of Culture Heritage Trees lists for Sukhothai province that are not published.",
+ "leads": [
+  {
+   "name": "Tamarind, Moo 7 Ban Na Klang",
+   "species": "Tamarind (Tamarindus indica)",
+   "source": "Ministry of Culture Heritage Trees 2019 list (th.wikipedia)",
+   "note": "2019 list: name and province only, no coordinate, figures or site. No photo or exact pin in reach."
+  },
+  {
+   "name": "Ton Tan 3 Yot, Ban Dok Chan",
+   "species": "Unclear: name says toddy palm (tan), register mapped to Diospyros (chan)",
+   "source": "Ministry of Culture Heritage Trees 2019 list (th.wikipedia)",
+   "note": "2019 list: name and province only. Species mapping in register is doubtful (tan is a palm, chan an ebony). No pin, no photo."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Giant Chorakhe durian, Ban Huai Tum, Si Satchanalai",
+   "latitude": 17.666885,
+   "longitude": 99.934803,
+   "reason": "Private family orchard (Thai Post 2018-09-10, farmed by the owner's family); register flags private care; 2018 article gives age about 108 years, no access terms, no dated life check. Not shipped unless a source shows public access."
+  }
+ ]
+}
