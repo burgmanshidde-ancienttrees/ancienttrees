@@ -1105,6 +1105,21 @@ sign-in sheet entry above.
 - https://developer.apple.com/sign-in-with-apple/usage-guidelines-for-websites-and-other-platforms/
 - https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
 
+**The name, looked up 2026-11-02** (Hidde, after a Paris ambassador showed as
+"Tall Ginkgo 6205": "ik wil dat je het gat dicht op app en web"). Apple puts no
+name in the id token, and hands it over once, on the first authorisation. Supabase's
+Apple guide says so for the redirect above in so many words: with the OAuth flow
+the user's full name is not accessible from Apple's response; it comes only through
+the native SDKs or **Sign in with Apple JS**, and the guide's own advice is to take
+it from there and store it with `updateUser` or in a profiles table. So the
+redirect route can never give us a name, whatever we change on our side. The way
+that does is the one this entry set aside on 2026-09-12: Apple's JS script on our
+page, the name read from its response, the id token posted to
+`/auth/v1/token?grant_type=id_token` as the app does. That needs our own domain
+and return URL on the Services ID in Hidde's Apple account, and the script is a
+third party in the product (hard list 5), so it waits for his yes. The app's half
+was a timing bug, fixed the same day: the name was saved only at a cold launch.
+
 ---
 
 ## Two sign-in buttons stacked, and why they cannot fully agree
