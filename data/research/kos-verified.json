@@ -1,0 +1,34 @@
+[
+  {
+    "id": "kos_001",
+    "name": "Plane Tree of Hippocrates",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "roughly 400 to 500 years",
+    "age_min": 400,
+    "age_max": 500,
+    "girth_cm": 1200,
+    "location": {
+      "address": "Platia Platanou (Plane Tree Square), Kos town",
+      "latitude": 36.8947582,
+      "longitude": 27.2909514,
+      "neighbourhood": "Kos old town, beside the Defterdar (Loggia) mosque"
+    },
+    "verified_sources": [
+      "https://kos.gr/historical-monuments-and-museums/the-plane-tree-of-hippocrates",
+      "https://www.aegeanislands.gr/pois/kos-the-plane-tree-of-hippocrates-en",
+      "https://nominatim.openstreetmap.org/ui/details.html?osmtype=N&osmid=432473427",
+      "https://www.inaturalist.org/observations/410268524"
+    ],
+    "official_register": {
+      "name": "Protected natural monument since 1985 (Greek Government Gazette 589/B/1985), per Municipality of Kos",
+      "url": "https://kos.gr/historical-monuments-and-museums/the-plane-tree-of-hippocrates"
+    },
+    "access": "Free, open public square, always accessible",
+    "transport": "In the centre of Kos town, a few minutes on foot from the harbour and the castle of the Knights",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Alive: lifecheck RECENT, iNaturalist observation 2026-10-23 at the pin. Pin: OSM natural=tree node 432473427 named Platanos tou Ippokrati, one clear crown in the square. Girth 12 m circumference per kos.gr (municipal page, no measurement date), a municipal mobility page (mobility.kos.gr, seen only as search snippet, not fetched) cites about 4.7 m diameter and a crown about 12 m across. Age: the legend ties it to Hippocrates (c. 460-370 BC) teaching under a plane here; kos.gr itself says the present tree cannot exceed five centuries and may have grown from a shoot of the original roots. The mobility.kos.gr snippet claims over 2,300 years: disputed, not adopted. Age range 400-500 is the kos.gr ceiling plus a snippet-level 19th-century-photo estimate (aegeanislands/other, not independently fetched), so age_basis is source, flagged. Hollow trunk eaten by fungi and wood-boring insects (kos.gr); search snippets (medgulets blog) describe metal scaffolding carrying lower branches; did not verify the 2020s grafting/successor reports, nothing seen of them. Legend of a plane tree seed carried to Montpellier and the Medical Schools. Tourist icon, crowded; the Loggia (Defterdar) mosque stands beside it. Public fetch notes: worldcitytrail.com 403 to WebFetch. Further figures: aegeanislands.gr gives trunk 9.8 m \"in diameter\" (clearly a circumference misuse) and says may be more than 400 years, already old in 19th-century pictures; sits on the mound between Finikon Street and the ancient port, opposite the Lotzia mosque. Search snippets (not fetched): Charles de Saint Maure in 1721 saw the branches carried by 36 pillars; health said to decline since about 2018; Allan 1843 Pictorial Tour has a plate of the great plane of Cos. Commons file Plane tree of Hippocrates.jpg exists (photo not checked).",
+    "story": "Hippocrates almost certainly never sat under this tree, and the town that looks after it says so itself. The legend holds that the father of medicine, born on Kos around 460 BC, taught his students beneath a plane in this square. The Municipality of Kos writes that the present tree cannot be more than five centuries old, though it may have grown from a shoot of the original roots.\n\nSo the honest age is roughly 400 to 500 years. The regional tourism site adds that it already looked old in nineteenth-century pictures. A claim of more than 2,300 years still circulates, and nothing supports it.\n\nThe tree is impressive without the legend. The municipality gives its trunk a circumference of 12 metres, and that trunk is hollow, eaten out by fungi and wood-boring insects. The crown spreads over Platia Platanou, the Plane Tree Square, on the mound between the ancient port and Finikon Street, with the old Loggia mosque beside it.\n\nThe legend has travelled further than the tree ever could. Another story has a seed from it carried to Montpellier and to other medical schools, so the tradition of learning under Hippocrates' plane continues in places he never saw.\n\nIt has been a protected natural monument since 1985. The square is open at all hours and a few minutes on foot from the harbour and the Knights' castle. This is the island's most famous tree, and it is rarely alone.",
+    "how_to_recognise": "You can recognise it by the hollow trunk, 12 metres round, the one great plane in Plane Tree Square. It stands opposite the Loggia (Defterdar) mosque, between the ancient port and Finikon Street."
+  }
+]

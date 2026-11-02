@@ -1,0 +1,55 @@
+{
+  "leads": [
+    {
+      "name": "Bidnija olive grove (Bidni olives)",
+      "species": "Olive (Olea europaea)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "reason": "About 20 large olives near Bidnija, Mosta, Tree Protection Area (2011), Government Notice 473/11. Heritage Malta's own page lists the site as 'Permanently Closed' (fetched 2026-11-02); a 2026 Ambjent Malta / Heritage Malta MoU adds CCTV and fire measures, no opening. Ages conflict: Heritage Malta page says about 500 years by carbon dating of the oldest trunks, Heritage Malta-funded study at least 17th century, popular '2,000 years' repeated by press and Wikipedia unsupported. Not public: do not ship. Re-check if Heritage Malta announces opening."
+    },
+    {
+      "name": "Il-Ballut tal-Wardija holm oaks",
+      "species": "Holm Oak (Quercus ilex)",
+      "lat": null,
+      "lng": null,
+      "reason": "Small group of ancient holm oaks on Wardija Ridge, limits of St Paul's Bay, about 175 m up, Tree Protection Area TPA005MT, on the antiquarian-trees list. Age 'about 1,000 years' belief only (blog, ERA poster says 500 to 1,000); no coordinate. A 2013 visitor blog reports the path signed 'Keep Out: Private Property' and the site 'relatively inaccessible': access unsettled, hard rule 10 means no ship. ERA poster (era.org.mt wp-content) 403s to curl. Needs ERA's own access wording or a published GPS."
+    },
+    {
+      "name": "Il-Wied tal-Imgiebah holm oak, Mellieha",
+      "species": "Holm Oak (Quercus ilex)",
+      "lat": null,
+      "lng": null,
+      "reason": "Tree Protection Area TPA004MT per a search summary of ERA's list (ERA page 403s, so not seen on a fetched page). No coordinate, age, girth or access found; possibly inside Majjistral Park (unconfirmed)."
+    },
+    {
+      "name": "Buskett Woodland ancient trees (holm oak, olive, carob)",
+      "species": "Holm Oak (Quercus ilex)",
+      "lat": 35.8613,
+      "lng": 14.4082,
+      "reason": "Listed among the antiquarian-importance sites ('Il-Buskett') per a search summary of ERA; Ambjent Malta's Buskett Woodland page (manager) says the wood holds centuries-old holm oaks, carob and olives but names no tree. Public woodland. Site coordinate only, no individual tree, no age, girth or pin. Needs a tree-level source (ERA schedule text or a geotagged photo of a named tree). iNaturalist Quercus ilex points at 35.85627,14.39918 (2023-05-23) and 35.85886,14.40205 (2021-11-21) are species records, not an old-tree identification."
+    },
+    {
+      "name": "San Anton Gardens ancient trees (Attard)",
+      "species": "unknown (olives, figs, others mentioned)",
+      "lat": 35.896107,
+      "lng": 14.448178,
+      "reason": "Il-gonna ta' San Anton listed on ERA's antiquarian list per search summary (not fetched). OSM: public garden, access=yes, fee=no, Jun-Sep 07:00-18:00, Oct-May 07:00-17:00. Tourism sites repeat 'some trees 300 years old' and 'massive olives' without naming a tree or a source. Only an iNaturalist Ficus point at 35.89596,14.44886 (2025-06-24, obs 292304369), no identity of an old specimen. Needs a named, measured tree; a site visit or the antiquarian schedule text."
+    },
+    {
+      "name": "Argotti Botanic Gardens Dragon Blood tree, Floriana",
+      "species": "Dragon Tree (Dracaena draco), identification unconfirmed",
+      "lat": 35.892677,
+      "lng": 14.502611,
+      "reason": "Culture Malta and GuideMeMalta say one of the oldest specimens is a Dragon Blood tree over 250 years old; both are tourism pieces, no named source for the age; the garden's own page (maltabotanicgardens.gov.mt/argotti) lists Dracaena draco but gives no age. Garden operated by Malta Botanical Gardens, OSM access=permissive. Moreton Bay figs also mentioned, no ages. Needs the garden's own tree record and a pin on the trunk."
+    },
+    {
+      "name": "Upper and Lower Barrakka Gardens trees, Valletta",
+      "species": "unknown",
+      "lat": 35.8949552,
+      "lng": 14.5120091,
+      "reason": "Searched for named old trees: none surfaced. No candidate."
+    }
+  ],
+  "blocked": []
+}

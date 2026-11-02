@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mlt_001",
+    "name": "Xemxija Old Carob Tree",
+    "species": "Carob (Ceratonia siliqua)",
+    "age_estimate": "reputedly around 1,000 years",
+    "age_min": 400,
+    "age_max": 1000,
+    "girth_cm": 725,
+    "location": {
+      "address": "Xemxija Heritage Trail, Triq Raddet ir-Roti, Xemxija, St Paul's Bay",
+      "latitude": 35.9485038,
+      "longitude": 14.380459,
+      "neighbourhood": "Xemxija, St Paul's Bay"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/5582271537",
+      "https://lovinmalta.com/lifestyle/check-out-maltas-oldest-carob-tree-and-its-stunning-historical-surroundings/",
+      "https://www.monumentaltrees.com/en/mlt/malta/sanpawlilbahar/16697_heritagetrail/"
+    ],
+    "access": "Free; on the public Xemxija Heritage Trail (old Roman road), a short walk past the rock-cut apiary. Open footpath, no published hours.",
+    "transport": "Xemxija, St Paul's Bay (Malta public bus network serves Xemxija; exact stop and walk time to trail point 6 not verified).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "One OSM natural=tree node (id 5582271537, tags name 'Old Carob Tree', age=1000, denotation=natural_monument, wikimedia_commons Category:Xemxija Old Carob Tree, Mapillary id) sits on the crown; a second OSM node 4702080468 named 'Il-Harruba Xwejha' / 'The Thousand Year old Carob Tree' stands 30 m SW (35.94844,14.38073), probably a signpost or the same tree, folded in. Girth 7.25 m comes from a 2006 trail leaflet as relayed by monumentaltrees.com (cross-check only) and Lovin Malta (2021-01-04), which says 'dated as around 1,000 years' with no method; a guide says the figure comes from a poem on the dry-stone wall beneath it. Treat age as a local claim, not a measurement: a 7.25 m multi-stem carob girth fits several hundred years at least, 1,000 unproven. Not on ERA fetched list (ERA 403 to curl and WebFetch). Alive: lifecheck RECENT, iNaturalist observation 2026-02-13 (obs 339147625). Trail point: stands in front of a rock-carved Roman apiary. Source count: OSM plus one article, no register; flagged.",
+    "story": "Malta calls this the thousand-year-old carob, and the best evidence for that number may be a poem. A local guide says the figure comes from verses on the dry-stone wall beneath the tree. Lovin Malta repeated it in 2021, describing the tree as dated around 1,000 years without saying how, and the community map of the island lists it as a natural monument of the same age.\n\nNobody has dated it properly, so read the thousand as a local claim. What has been measured is the trunk. A trail leaflet from 2006 gives it a girth of 7.25 metres across its several stems, and a carob that size has been growing for several hundred years at least. Somewhere between four centuries and the legend is the honest answer.\n\nIt keeps old company either way. The tree stands on the Xemxija Heritage Trail, which follows an old Roman road above St Paul's Bay, directly in front of an apiary the Romans cut into the rock. Whatever its true age, it has spent its whole life beside a beekeeping site older than itself.\n\nThe trail is a free public footpath with no opening hours, and the tree is a short walk along it, just past the rock-cut apiary. Malta's buses serve Xemxija, roughly 30 to 45 minutes by road from Valletta. If you know who wrote the poem on the wall, tell us.",
+    "how_to_recognise": "You can recognise it by the many-stemmed trunk, 7.25 metres round, over a dry-stone wall with a poem on it. It stands on the Xemxija Heritage Trail directly in front of the rock-carved Roman apiary."
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "id": "gcn_001",
+    "name": "Pino de Casandra",
+    "species": "Canary Pine (Pinus canariensis)",
+    "age_estimate": "over 380 years",
+    "age_min": 380,
+    "age_max": 420,
+    "girth_cm": 530,
+    "height_m": 25,
+    "location": {
+      "address": "Majada Alta, beside the Presa de las Ninas, Parque Rural del Nublo, Tejeda",
+      "latitude": 27.9258486,
+      "longitude": -15.6673729,
+      "neighbourhood": "Presa de las Ninas, Tejeda"
+    },
+    "verified_sources": [
+      "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/pino-de-casandra",
+      "https://rtvc.es/un-plan-para-proteger-los-380-anos-del-pino-de-casandra-agosto-2025/",
+      "https://www.grancanaria.com/turismo/en/the-island/the-island-with-557-different-faces/las-ninas-reservoir-and-a-legendary-old-tree/",
+      "https://www.inaturalist.org/observations/160404289",
+      "OpenStreetMap natural=tree node named Arbol de Casandra"
+    ],
+    "official_register": {
+      "name": "Catalogo de Arboles Singulares de Gran Canaria, Cabildo de Gran Canaria (ficha: Pino de Casandra, Tejeda, visitable, access normal)",
+      "url": "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/pino-de-casandra"
+    },
+    "access": "Free, open countryside in the Parque Rural del Nublo beside the reservoir (parking, barbecue area). Cabildo is defining and reinforcing paths under the crown to limit trampling; keep to the marked path.",
+    "transport": "No practical public transport; about 1.5 hours by car from Las Palmas via GC-15, GC-600, GC-605 to the Presa de las Ninas, tree a short walk from the dam (OSM node about 230 m from the dam).",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Alive: Cabildo watering and soil plan August 2025 (RTVC/Europa Press 2025-08-21); iNaturalist observation 2023-03-21 at the OSM node (lifecheck RECENT). Age: RTVC 'over 380 years'; Gran Canaria tourism site 'four-century old'; Barcelo guide says ~400; Komoot blurb says 500+ (not used). Size per RTVC: trunk about 2.5 m diameter at base (girth_cm = pi x 250 = 785, derived, base of trunk), 25 m tall, crown about 30 m across. Also called Pino Bonito. Survived several fires and lightning strikes, unusual shape, large burn scar. Legend of Casandra, a 15-year-old burned at the tree, no official version, tourism site says unknown whether true. Wikidata Q75754696 has pin 27.92407,-15.67228 (about 500 m off the OSM node); OSM node used because it is a named tree node near the dam coordinate 27.92793,-15.66729. Cabildo plans a permanent information table. Same Cabildo catalogue (2021) lists about 85 to 90 singular trees and 10 dragos; catalogue itself not retrieved (not fetched as a PDF). CORRECTION/UPDATE: the official Cabildo ficha gives perimeter at 1.30 m 5.30 m (girth_cm 530, used instead of the pi x 2.5 m diameter figure which RTVC quotes for the base), height 25 m, age over 380 years, ownership recorded as private, Visitable, access Normal. Ficha coordinate 27.92580,-15.66734 matches the OSM named tree node within about 5 m, so the pin is confirmed from two independent mappings.",
+    "story": "This pine is named after a girl who may never have existed. Legend says Casandra, fifteen years old, was burned at this tree. There is no official version of the story, and Gran Canaria's own tourism board says plainly that nobody knows whether any of it is true. Locals have a second, kinder name for it, the Pino Bonito, the pretty pine.\n\nWhat is certain is the tree. It stands above the Presa de las Niñas reservoir in the pine country of Tejeda, inside the Parque Rural del Nublo, and the Cabildo's catalogue of singular trees puts it at over 380 years old. The tourism board rounds that to four centuries. It is 25 metres tall and 5.30 metres round at chest height, with a crown about 30 metres across.\n\nIt has come through several fires and lightning strikes, and it shows. The trunk carries a large burn scar and the whole tree has grown into a shape nobody would call regular, which is most of its appeal.\n\nIn August 2025 the Cabildo began a plan to water it and improve the soil around its roots, and it is marking out paths under the crown to limit trampling. Keep to them. There is parking and a picnic area by the dam, and the tree is a short walk away. Getting here takes about an hour and a half by car from Las Palmas, with no practical bus.",
+    "how_to_recognise": "You can recognise it by the large burn scar on a trunk 5.30 metres round, under a crown about 30 metres wide. It stands a short walk from the Presa de las Niñas dam, about 230 metres away."
+  },
+  {
+    "id": "gcn_002",
+    "name": "Drago de Galdar",
+    "species": "Dragon Tree (Dracaena draco)",
+    "age_estimate": "about 300 years",
+    "age_min": 300,
+    "age_max": 310,
+    "girth_cm": 400,
+    "height_m": 8,
+    "location": {
+      "address": "Courtyard of the old Casas Consistoriales (now the tourist office), Plaza de Santiago, Galdar",
+      "latitude": 28.1445933,
+      "longitude": -15.6553902,
+      "neighbourhood": "Galdar historic centre"
+    },
+    "verified_sources": [
+      "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/drago-de-g%C3%A1ldar",
+      "https://www.grancanaria.com/turismo/en/tours-around-the-island/the-northern-route/galdar/",
+      "https://es.hispanopedia.com/wiki/Drago_de_G%C3%A1ldar",
+      "https://www.inaturalist.org/observations/379753916",
+      "OpenStreetMap natural=tree node Drago de Galdar"
+    ],
+    "official_register": {
+      "name": "Catalogo de Arboles Singulares de Gran Canaria, Cabildo de Gran Canaria (ficha: Drago de Galdar, public, visitable, access easy)",
+      "url": "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/drago-de-g%C3%A1ldar"
+    },
+    "access": "Public. The tree stands in the inner courtyard of the old town hall, now the Galdar tourist office on Plaza de Santiago; Cabildo ficha: visitable, easy access. Gran Canaria tourism site gives town hall opening Monday to Friday 08:00 to 14:30. Its crown rises above the building roofline.",
+    "transport": "Galdar bus station about 5 min walk; guagua lines from Las Palmas (about 50 min by car, 60 to 75 min by bus, check exact route).",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Official Cabildo ficha (fetched): perimeter at 1.30 m 4 m (girth_cm 400), base diameter 1.40 m, height 8 m, crown 12 m, estimated age 300 years, planted 1718 per the ficha text, oldest drago on the island; ownership public; not in a protected space. Ficha coordinate 28.14460,-15.65537 matches the OSM named tree node within 1 m and an iNaturalist observation dated 2026-07-03 (lifecheck RECENT). The earlier hispanopedia figures (perimeter 2.5 m, height 8.5 m) are superseded by the ficha. Ficha story: engraved scars from historic resin (dragon's blood) tapping; legend of Dona Catalina la regannona, a Galdar noblewoman who left a convent after faking her death and worked as a herbalist beneath this drago. 2016 scale-insect infestation cut foliage about 40 percent, recovery declared in 2019 (hispanopedia). Flowered only 5 or 6 times in 77 years per its technical sheet. Municipal leaflet and tourism site agree on 1718. Part of the Conjunto Historico-Artistico of Plaza de Santiago (1981) with the Iglesia de Santiago de los Caballeros. Not the 50-year-old drago felled in La Vega, Galdar, in 2025.",
+    "story": "Gran Canaria's oldest dragon tree lives in a town hall courtyard, and it has outgrown the building. The Cabildo's catalogue of singular trees dates the Drago de Gáldar to 1718, which makes it about 300 years old, and the town's own leaflet gives the same year.\n\nIt is 8 metres tall and 4 metres round at chest height, with a crown 12 metres across that rises above the roofline of the old Casas Consistoriales, now the tourist office on the Plaza de Santiago. The trunk still carries engraved scars from the centuries when people tapped it for its red resin, sold as dragon's blood.\n\nIt also carries a legend. Doña Catalina, remembered in Gáldar as la regañona, the scold, was a noblewoman said to have faked her own death to get out of a convent and then to have lived as a herbalist beneath this tree.\n\nIts recent history is less romantic. In 2016 a scale insect infestation cost it about 40 percent of its foliage, and recovery was only declared in 2019. It flowers rarely, five or six times in 77 years according to its technical sheet, so nobody should plan a trip around the blossom.\n\nThe square around it, with the church of Santiago de los Caballeros, has been a protected historic ensemble since 1981. The courtyard keeps office hours, Monday to Friday from 08:00 to 14:30 by the island tourism board's listing, and the bus station is five minutes away on foot.",
+    "how_to_recognise": "You can recognise it by the crown, 12 metres across, showing above the roof of the old town hall. It stands in the inner courtyard of the tourist office on the Plaza de Santiago."
+  },
+  {
+    "id": "gcn_003",
+    "name": "Araucaria of the Plaza de Teror",
+    "species": "Norfolk Island Pine (Araucaria heterophylla)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 150,
+    "girth_cm": 510,
+    "height_m": 38,
+    "location": {
+      "address": "Plaza de Nuestra Senora del Pino, beside the basilica and the Casas Consistoriales, Teror",
+      "latitude": 28.059277,
+      "longitude": -15.548064,
+      "neighbourhood": "Teror centre"
+    },
+    "verified_sources": [
+      "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/araucaria-de-la-plaza-de-teror",
+      "https://www.inaturalist.org/observations/357922034"
+    ],
+    "official_register": {
+      "name": "Catalogo de Arboles Singulares de Gran Canaria, Cabildo de Gran Canaria (ficha: Araucaria de la Plaza de Teror, public, visitable, easy)",
+      "url": "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/araucaria-de-la-plaza-de-teror"
+    },
+    "access": "Free, in the public square beside the Basilica de Nuestra Senora del Pino; open at all times.",
+    "transport": "Bus (guagua) from Las Palmas to Teror, about 40 to 50 min by road, check line; tree is in the central plaza.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "One official register (Cabildo ficha) plus lifecheck RECENT (iNaturalist observation within 10 m); register only for age. Ficha: 38 m tall, trunk perimeter over 5 m, estimated age over 100 years (no planting date). Two parallel trunks fork low, the main trunk probably truncated by a storm or lightning early in the 20th century; the ficha says this multi-stem form is its main singularity. A stone bench at its base, popularly called 'el queque', where townspeople gather. The ficha says at least ten large araucarias stand around Teror, this being the one in the square. Ficha coordinate 28.05928,-15.54806 sits at the plaza next to the basilica (OSM basilica node 28.05930,-15.54781). Plaza also tied to the Pino de la Virgen legend: the image of the Virgin found in a pine in 1481, the original Pino de las Maravillas fell, no living tree is claimed to be it (the Cabildo catalogues a Pino de la Virgen in Teror, but only about 70 years old, so not ancient). Flagged: register-only for age and age is a bound, not an estimate.",
+    "story": "Teror's basilica is named after a pine, and the tallest tree beside it is not a true pine at all. By tradition an image of the Virgin was found in a pine tree here in 1481, and the church became Nuestra Señora del Pino. That original tree, the Pino de las Maravillas, fell, and no living tree in the square claims to be it.\n\nWhat towers over the plaza now is a Norfolk Island Pine, an araucaria from the South Pacific, 38 metres tall and more than 5 metres round. The Cabildo's catalogue of singular trees estimates it at over 100 years old. Treat that as a floor rather than a date. Nobody has recorded when it was planted, and the catalogue is the only source for its age.\n\nThe catalogue says its real distinction is its shape. Two parallel trunks rise from a low fork, and the main trunk was probably cut short by a storm or lightning early in the twentieth century. Whatever took the top off, the tree has kept climbing.\n\nAt its foot is a stone bench the town calls el queque, where people sit and meet, which makes this as much a piece of Teror's daily life as of its scenery. The catalogue counts at least ten large araucarias around Teror; this is the one in the square, open at all hours. If you know when it went in, tell us.",
+    "how_to_recognise": "You can recognise it by the two parallel trunks forking low, 38 metres to the top, with a stone bench at its foot. It stands in the plaza beside the Basilica de Nuestra Señora del Pino."
+  },
+  {
+    "id": "gcn_004",
+    "name": "Drago de Pino Santo",
+    "species": "Dragon Tree (Dracaena draco)",
+    "age_estimate": "roughly 240 to 250 years",
+    "age_min": 240,
+    "age_max": 260,
+    "girth_cm": 490,
+    "height_m": 16,
+    "location": {
+      "address": "Barranco Alonso (Hoya Bravo), Pino Santo, Santa Brigida; seen from the GC-151 road to Pino Santo",
+      "latitude": 28.0326196,
+      "longitude": -15.5132173,
+      "neighbourhood": "Pino Santo, Santa Brigida"
+    },
+    "verified_sources": [
+      "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/drago-de-pino-santo",
+      "https://rtvc.es/el-cabildo-logra-controlar-la-plaga-del-drago-de-pino-santo-el-mayor-de-gran-canaria/",
+      "https://www.inaturalist.org/observations/336744693"
+    ],
+    "official_register": {
+      "name": "Catalogo de Arboles Singulares de Gran Canaria, Cabildo de Gran Canaria (ficha: Drago de Pino Santo), also in the Santa Brigida municipal catalogue since 2008",
+      "url": "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/drago-de-pino-santo"
+    },
+    "access": "VIEW ONLY. Private land (ficha: not visitable). It stands on a basalt cliff about 15 m above the Barranco Alonso and can be seen from the GC-151 road that leads to Pino Santo, or from the barranco floor. Do not enter the finca.",
+    "transport": "Car or guagua towards Pino Santo, Santa Brigida (about 25 min from Las Palmas by car); the GC-151 viewpoint is by the road.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree: Cabildo ficha (height 16 m, perimeter at 1.30 m 4.9 m, about 240 to 250 years from 15 branchings, in good condition) and RTVC 2021-03-18 (17 m tall, crown 15 m, 240 years, fifth oldest tree on the island per the Cabildo, 'el rey de los dragos de Gran Canaria'; cochineal/lapilla infestation yellowed about a quarter of the crown, treated June 2020 in four rounds from a crane, brought under control; Cabildo keeps monitoring). The ficha says it is the most spectacular wild-looking tree on the island, dramatic on the cliff, frames a garden like Bosch's Garden of Earthly Delights, worry that the rock could one day give way. Flowered only 5 or 6 times in the last 77 years (geographer Rafael S. Almeida), about once per 14 years. Alive: iNaturalist observation within 10 m (lifecheck RECENT). Ficha coordinate 28.03262,-15.51322 within about 20 m of Wikidata Q124100237 (28.03278,-15.51319); unique crown on the cliff so pin is confirmed. Also known as Drago de Barranco Alonso or de Hoya Bravo. Included in the 100 singular trees of Macaronesia (Canarias7 2021). Private land: access is view-only from the road.",
+    "story": "The biggest dragon tree on Gran Canaria grows on a basalt cliff, about 15 metres above the floor of the Barranco Alonso, and you can only look at it from across the way. RTVC, the Canary Islands broadcaster, calls it the king of the island's dragos.\n\nThe Cabildo's catalogue of singular trees gives it 16 metres of height (RTVC says 17), a trunk 4.9 metres round at chest height and a crown about 15 metres wide. Its age is counted from its 15 branchings, which puts it at roughly 240 to 250 years. RTVC, quoting the Cabildo, ranks it the fifth oldest tree on the island.\n\nThe catalogue drops its usual dry tone for this one. It calls it the most spectacular wild-looking tree on Gran Canaria, framing the garden below like a scene from Bosch's Garden of Earthly Delights, and it admits a worry that the rock holding it could one day give way.\n\nIn 2020 a cochineal infestation turned about a quarter of the crown yellow. The Cabildo treated it in four rounds from a crane that June and brought the plague under control, and it still keeps watch. It is also counted among the 100 singular trees of Macaronesia.\n\nThe tree stands on private land and the finca is not open. See it from the GC-151 road that climbs to Pino Santo, or from the floor of the barranco, about 25 minutes by car from Las Palmas.",
+    "how_to_recognise": "You can recognise it as the lone dragon tree on the basalt cliff, about 15 metres above the Barranco Alonso, its crown 15 metres wide. You see it from the GC-151 road to Pino Santo; the land is private."
+  },
+  {
+    "id": "gcn_005",
+    "name": "Drago del Jardin de la Marquesa",
+    "species": "Dragon Tree (Dracaena draco)",
+    "age_estimate": "roughly 230 to 250 years",
+    "age_min": 230,
+    "age_max": 250,
+    "girth_cm": 430,
+    "height_m": 10,
+    "location": {
+      "address": "Jardin de la Marquesa (Jardin de las Hesperides), road between Arucas and Banaderos, Arucas",
+      "latitude": 28.1246722,
+      "longitude": -15.5286941,
+      "neighbourhood": "La Vega, Arucas"
+    },
+    "location_site": {
+      "name": "Jardin de la Marquesa, Arucas",
+      "radius_m": 50
+    },
+    "verified_sources": [
+      "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/drago-del-jard%C3%ADn-de-la-marquesa",
+      "https://www.inaturalist.org/observations/279184322"
+    ],
+    "official_register": {
+      "name": "Catalogo de Arboles Singulares de Gran Canaria, Cabildo de Gran Canaria (ficha: public garden, visitable, easy)",
+      "url": "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/drago-del-jard%C3%ADn-de-la-marquesa"
+    },
+    "access": "Historic garden open to the public since 1985 (ficha: visitable, easy access). Opening hours and entry fee not established in this pass; check before visiting.",
+    "transport": "Between Arucas and Banaderos on the Vega road, about 25 min by car from Las Palmas; bus Arucas to Banaderos, check line.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One official register (Cabildo ficha): height 10 m, perimeter at 1.30 m 4.3 m, base diameter 1.6 m, crown 14 m, 15 branchings, about 230 years (the text says about 250), predates the colonial palace built 1880 by the Marques Ramon Madan y Uriondo. The ficha says it outclasses two other centenarian dragos at the garden entrance, so the trunk worth the visit is the large one among three. Alive: iNaturalist observation within 10 m (lifecheck RECENT). Ficha coordinate 28.12467,-15.52869 not checked on the crown; pin approximate within the garden. Flagged: register only, access hours and fee missing, pin not tied to one of three dragos by a mapped photo. The same ficha mentions an eucalyptus called Arbol Bonito (Marquesa de Arucas) between Arucas and Banaderos, a possible lead.",
+    "story": "This dragon tree is older than the palace it now decorates. When the Marqués Ramón Madan y Uriondo built his colonial palace between Arucas and Bañaderos in 1880, this drago was already standing, according to the Cabildo's catalogue of singular trees.\n\nThe catalogue cannot quite settle on its age. Its figures say about 230 years, its text says about 250, both counted from the tree's 15 branchings, so somewhere between the two is the honest answer. It is 10 metres tall and 4.3 metres round at chest height, with a base 1.6 metres across and a crown spreading 14 metres.\n\nThere are three dragon trees here, which matters if you want the right one. Two centenarian dragos stand at the garden entrance, and the catalogue says this one outclasses them both. Look for the largest of the three.\n\nThe Jardín de la Marquesa, also called the Jardín de las Hespérides, has been open to the public since 1985. We have not confirmed its current hours or entry fee, so check before you go. It sits on the Vega road about 25 minutes by car from Las Palmas, with a bus from Arucas towards Bañaderos.\n\nThe same catalogue lists a eucalyptus nearby known as the Árbol Bonito. If you have seen it, tell us where it stands.",
+    "how_to_recognise": "You can recognise it as the largest of the three dragon trees in the Jardín de la Marquesa, 4.3 metres round with a 14 metre crown. The two smaller ones stand at the garden entrance."
+  }
+]

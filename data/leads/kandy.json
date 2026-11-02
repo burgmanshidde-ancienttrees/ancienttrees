@@ -1,0 +1,47 @@
+{
+  "leads": [
+    {
+      "name": "Bo Tree, Peradeniya Road (Kandy city)",
+      "species": "Sacred Fig (Ficus religiosa)",
+      "lat": 7.2891316,
+      "lng": 80.6303884,
+      "reason": "OpenStreetMap natural=tree node 2902135968 named Bo Tree on Sirimavo Bandaranaike Mawatha, Kandy. Pin exists, no age, no register, no second source; roadside shrine tree. Needs a source for age."
+    },
+    {
+      "name": "Bohdi and Boo Tree near Bogambara, Sri Pushpadana Mawatha",
+      "species": "Sacred Fig (Ficus religiosa)",
+      "lat": 7.2945391,
+      "lng": 80.63123,
+      "reason": "Two OpenStreetMap nodes (10697283331 'Bohdi' at 7.29454, 80.63123 and 5509947684 'Boo Tree' at 7.29552, 80.62977), both near the Temple of the Tooth and Bahirawakanda road. No ages or sources. Temple-of-the-Tooth precinct bodhi trees are described only as 'surrounded by bodhi trees' with no dated source."
+    },
+    {
+      "name": "Cannonball Tree, Peradeniya Royal Botanic Gardens",
+      "species": "Cannonball Tree (Couroupita guianensis)",
+      "lat": null,
+      "lng": null,
+      "reason": "Wikipedia says planted by King George V and Queen Mary in 1901; a travel blog gives the same. George V did not become king until 1910, so the attribution and date are doubtful (not checked beyond that); the plaque text and date must be read from the plaque or garden records. No pin, single weak source. Strong candidate if a plaque photo or garden record is found."
+    },
+    {
+      "name": "Memorial trees on the Peradeniya garden circuit (Ceylon Ironwood for Nicholas II, Bo tree for Edward VII, Saraca for Yuri Gagarin 1961)",
+      "species": "various",
+      "lat": null,
+      "lng": null,
+      "reason": "Travel pages list trees planted by visiting royalty and leaders with conflicting years (ironwood 1891 vs 1894, bo tree 1875 as Edward VII who was Prince of Wales then). Gagarin Saraca thaipingensis 1961 per travelgumbo (a page with an error about the moon). No plaque transcriptions, no pins. A planting date on a plaque would be a strong age source; needs the garden's own tree-planting register or a plaque photograph."
+    },
+    {
+      "name": "Peradeniya Royal Palm Avenue, Cook's Pine Avenue, Double Coconut avenue",
+      "species": "Royal Palm, Cook's Pine, Double Coconut",
+      "lat": null,
+      "lng": null,
+      "reason": "Avenues named in Wikipedia; avenue is blocked as a collectible point. Double Coconut (Lodoicea maldivica) at 7.26896, 80.59516 is an OSM node 4012766526 'Double Coconut Tree' on Monument Road; no age source."
+    },
+    {
+      "name": "Udawattakele Forest Reserve",
+      "species": "n/a",
+      "lat": null,
+      "lng": null,
+      "reason": "A wood, not one tree. Not searched for individual trees beyond one pass; nothing named found."
+    }
+  ],
+  "blocked": []
+}

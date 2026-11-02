@@ -1,0 +1,58 @@
+{
+  "city": "Malta",
+  "country": "Malta",
+  "status": "needs_curation",
+  "intro": "Malta's best-known old tree is the carob of Xemxija, called the thousand-year-old carob, on the Xemxija Heritage Trail above St Paul's Bay. Nobody has dated it, but its trunk measures 7.25 metres round across its stems, and it stands beside a beekeeping site the Romans cut into the rock. The trail is a free public footpath, and buses run to Xemxija from Valletta.",
+  "meta_description": "The old carob of Xemxija, Malta's thousand-year-old tree on the Xemxija Heritage Trail: what is known of its age and how to find it.",
+  "question_meta": "Malta's oldest-known tree is the Xemxija carob, called a thousand years old, on the Xemxija Heritage Trail.",
+  "question_answer": "The tree to see on Malta is the old carob of Xemxija, on the Xemxija Heritage Trail above St Paul's Bay. Locally it is called the thousand-year-old carob. Nobody has dated it, but a 2006 trail leaflet gives its girth as 7.25 metres across its stems, which means several hundred years of growth at least.",
+  "question_context": "The thousand years seems to come from verses on the dry-stone wall beneath the tree, a local guide says, and Lovin Malta repeated the figure in 2021 without a method; the community map of the island lists it as a natural monument of that age. So the honest age is somewhere between four centuries and the legend. The tree stands on the trail's old Roman road directly in front of a rock-cut Roman apiary. The trail is a free public footpath with no opening hours. Malta's public buses serve the village of Xemxija, roughly 30 to 45 minutes by road from Valletta. Malta protects its trees of antiquity in law, but its official list, dating from 1933, names sites rather than individual trees. The ancient olives of Bidnija, the other trees Malta is known for, stand on a site Heritage Malta lists as permanently closed, so they are not on this map.",
+  "hero_tree_id": "mlt_001",
+  "oldest_tree_id": "mlt_001",
+  "faq": [
+    {
+      "q": "Is the Xemxija carob really 1,000 years old?",
+      "a": "Nobody has dated it. The figure appears to come from a poem on the wall beneath it. Its 7.25 metre girth points to several hundred years at least."
+    },
+    {
+      "q": "How do you get to the Xemxija carob?",
+      "a": "It stands on the Xemxija Heritage Trail in St Paul's Bay, a short walk past the Roman rock-cut apiary. Public buses serve Xemxija from Valletta, roughly 30 to 45 minutes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mlt_001",
+      "name": "Xemxija Old Carob Tree",
+      "species": "Carob (Ceratonia siliqua)",
+      "age_estimate": "reputedly around 1,000 years",
+      "age_min": 400,
+      "age_max": 1000,
+      "girth_cm": 725,
+      "location": {
+        "address": "Xemxija Heritage Trail, Triq Raddet ir-Roti, Xemxija, St Paul's Bay",
+        "latitude": 35.9485038,
+        "longitude": 14.380459,
+        "neighbourhood": "Xemxija, St Paul's Bay"
+      },
+      "verified_sources": [
+        "https://www.openstreetmap.org/node/5582271537",
+        "https://lovinmalta.com/lifestyle/check-out-maltas-oldest-carob-tree-and-its-stunning-historical-surroundings/",
+        "https://www.monumentaltrees.com/en/mlt/malta/sanpawlilbahar/16697_heritagetrail/"
+      ],
+      "access": "Free; on the public Xemxija Heritage Trail (old Roman road), a short walk past the rock-cut apiary. Open footpath, no published hours.",
+      "transport": "Xemxija, St Paul's Bay (Malta public bus network serves Xemxija; exact stop and walk time to trail point 6 not verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "One OSM natural=tree node (id 5582271537, tags name 'Old Carob Tree', age=1000, denotation=natural_monument, wikimedia_commons Category:Xemxija Old Carob Tree, Mapillary id) sits on the crown; a second OSM node 4702080468 named 'Il-Harruba Xwejha' / 'The Thousand Year old Carob Tree' stands 30 m SW (35.94844,14.38073), probably a signpost or the same tree, folded in. Girth 7.25 m comes from a 2006 trail leaflet as relayed by monumentaltrees.com (cross-check only) and Lovin Malta (2021-01-04), which says 'dated as around 1,000 years' with no method; a guide says the figure comes from a poem on the dry-stone wall beneath it. Treat age as a local claim, not a measurement: a 7.25 m multi-stem carob girth fits several hundred years at least, 1,000 unproven. Not on ERA fetched list (ERA 403 to curl and WebFetch). Alive: lifecheck RECENT, iNaturalist observation 2026-02-13 (obs 339147625). Trail point: stands in front of a rock-carved Roman apiary. Source count: OSM plus one article, no register; flagged.",
+      "story": "Malta calls this the thousand-year-old carob, and the best evidence for that number may be a poem. A local guide says the figure comes from verses on the dry-stone wall beneath the tree. Lovin Malta repeated it in 2021, describing the tree as dated around 1,000 years without saying how, and the community map of the island lists it as a natural monument of the same age.\n\nNobody has dated it properly, so read the thousand as a local claim. What has been measured is the trunk. A trail leaflet from 2006 gives it a girth of 7.25 metres across its several stems, and a carob that size has been growing for several hundred years at least. Somewhere between four centuries and the legend is the honest answer.\n\nIt keeps old company either way. The tree stands on the Xemxija Heritage Trail, which follows an old Roman road above St Paul's Bay, directly in front of an apiary the Romans cut into the rock. Whatever its true age, it has spent its whole life beside a beekeeping site older than itself.\n\nThe trail is a free public footpath with no opening hours, and the tree is a short walk along it, just past the rock-cut apiary. Malta's buses serve Xemxija, roughly 30 to 45 minutes by road from Valletta. If you know who wrote the poem on the wall, tell us.",
+      "how_to_recognise": "You can recognise it by the many-stemmed trunk, 7.25 metres round, over a dry-stone wall with a poem on it. It stands on the Xemxija Heritage Trail directly in front of the rock-carved Roman apiary.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

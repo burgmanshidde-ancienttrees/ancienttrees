@@ -1,0 +1,41 @@
+{
+ "slug": "azores",
+ "leads": [
+  {
+   "name": "Metrosideros at Campo de Sao Francisco",
+   "species": "Pohutukawa (Metrosideros excelsa)",
+   "latitude": 37.7376934,
+   "longitude": -25.6728396,
+   "reason": "OSM node 3106113528 named Metrosidero in the square; komoot says planted over 150 years ago, branches held by steel props; a Tripadvisor summary gave 7.6 m girth, 18 m height but the page would not fetch. No official source read. Needs a register or council source for age and size."
+  },
+  {
+   "name": "Dragoeiro, Rua Coronel Silva Leal",
+   "species": "Dragon tree (Dracaena draco)",
+   "latitude": 37.741265,
+   "longitude": -25.6721941,
+   "reason": "OSM node 13162961526 only; lifecheck NONE; no source for age or access (street or private plot not known)."
+  },
+  {
+   "name": "Norfolk Island pine, Rua Antonio Borges",
+   "species": "Araucaria heterophylla",
+   "latitude": 37.7441844,
+   "longitude": -25.6765058,
+   "reason": "OSM node 12025325543 next to Jardim Antonio Borges; SIARAM names a majestic Norfolk pine near the small lake inside the garden, not confirmed as the same trunk."
+  },
+  {
+   "name": "Ficus macrophylla inside Jardim Jose do Canto",
+   "species": "Ficus macrophylla",
+   "latitude": 37.7492573,
+   "longitude": -25.67029,
+   "reason": "OSM nodes 12020707815 and 12020707823; inventory says monumental Ficus, Agathis and Araucaria bidwillii there (europeangardens.eu summary only, PDF would not fetch). Needs the SIARAM tree list and the garden's entry terms."
+  },
+  {
+   "name": "Jardim Duque da Terceira araucarias, Angra do Heroismo (Terceira)",
+   "species": "Araucaria heterophylla",
+   "latitude": null,
+   "longitude": null,
+   "reason": "Municipal guide and SIARAM say centenary araucarias from the 1882 opening; no individual tree, age or coordinate found. Terceira is about 40 minutes by plane from Sao Miguel."
+  }
+ ],
+ "notes": "No individual-tree register for the Azores found: DRRF's RRAIPA was created by DRR 2/2026/A (6 March 2026) and its list was not reachable (drrf.azores.gov.pt 403 to WebFetch); a 2022 news item cited 58 classified trees, 37 Faial, 14 Terceira, 7 Sao Miguel, not seen. Overpass hangs from this runner (overpass-api.de and kumi both time out); Nominatim worked."
+}

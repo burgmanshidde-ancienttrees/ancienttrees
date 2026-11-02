@@ -1,0 +1,33 @@
+[
+  {
+    "id": "anu_001",
+    "name": "Jaya Sri Maha Bodhi",
+    "species": "Bodhi Tree (Ficus religiosa)",
+    "age_estimate": "over 2,200 years",
+    "age_min": 2200,
+    "age_max": 2300,
+    "location": {
+      "address": "Mihindu Mawatha, Mahamevnawa Gardens, Anuradhapura",
+      "latitude": 8.3447103,
+      "longitude": 80.3972255,
+      "neighbourhood": "Sacred City, Anuradhapura"
+    },
+    "verified_sources": [
+      "https://www.guinnessworldrecords.com/world-records/oldest-known-human-planted-tree",
+      "https://en.wikipedia.org/wiki/Jaya_Sri_Maha_Bodhi",
+      "https://www.openstreetmap.org/node/3657323592",
+      "https://www.inaturalist.org/observations/290827780"
+    ],
+    "access": "Open to worshippers and visitors year-round inside the Sacred City; reported entry fee SLR 200 per History Hit (check current ticket for the sacred city). Security check on arrival. Dress modestly in light or white clothing with shoulders and ankles covered; shoes off in the precinct (standard Buddhist practice, not stated on the pages fetched). The tree stands on a high terrace behind tall railings; visitors view it from the lower terraces and cannot enter the upper terrace.",
+    "transport": "In the Sacred City of Anuradhapura, about 2 km by tuk-tuk or bicycle from the new town and the railway station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Pin: OpenStreetMap natural=tree node 3657323592 (named Jaya Sri Maha Bodhi, 8.34471, 80.39723) agrees with the Wikimedia Commons lead coordinate 8.344622, 80.397206 (about 10 m apart). Alive: iNaturalist observation dated 2025-06-19 (lifecheck RECENT). Age: traditional date 288 BC per Mahavamsa; Guinness World Records lists it as the oldest known human-planted tree, planting year 288 BC, species Ficus religiosa (the page's date for the record is 2011). Wikipedia's infobox says 236 BC while its history section says 288 BC; the date is traditional chronicle dating (branch of the Bodh Gaya tree, brought by Sanghamitta, daughter of Ashoka, to King Devanampiya Tissa), so age is stated broad. By 2026 that is about 2,300 years on the 288 BC date, about 2,260 on 236 BC; age_min 2200 covers both. Witnessed: continuously tended through the Anuradhapura kingdom; Wikipedia's history section: storms broke two branches in 1907 and 1911, a branch was cut off in 1929, the LTTE attack on the upper terrace in 1985. The tree stands on a terrace about 6.5 m above ground; four lower terraces hold Parivara Bodhi trees. Protective wall about 3 m high built in the reign of Kirti Sri Rajasinha (1747-1782) to keep wild elephants out; a golden fence added in 1969; older rubble walls found in excavation opened to the public in January 2010. Descendant saplings: Bodh Gaya (1881 replanting from a cutting, per Wikipedia Bodhi Tree). Which trunk is worth the visit: this is the one; the Parivara Bodhi on the lower terraces are younger. No girth or height recorded in any fetched source. Fetch notes: unesco.org (whc.unesco.org/en/list/200) and atlasobscura.com return 403 to WebFetch; Guinness and Wikipedia are not independent of one another on the date (both follow the chronicle), flagged for that reason.",
+    "official_register": {
+      "name": "UNESCO World Heritage: Sacred City of Anuradhapura (ref. 200)",
+      "url": "https://whc.unesco.org/en/list/200"
+    },
+    "story": "Guinness World Records lists this as the oldest known tree planted by human hands. The date it gives is 288 BC, and that date comes from the Mahavamsa, the island's ancient chronicle. By its account the tree began as a branch of the fig at Bodh Gaya under which the Buddha found enlightenment, carried to Sri Lanka by Sanghamitta, daughter of the emperor Ashoka, and planted for King Devanampiya Tissa. Even Wikipedia cannot settle on one year, giving 236 BC in one place and 288 BC in another. Either way it is over 2,200 years, on tradition rather than measurement.\n\nWhat it has lived through since is better documented. Storms broke branches in 1907 and 1911, and another was cut off in 1929. In 1985 the upper terrace was attacked by the LTTE during the civil war. Its wall, about 3 metres high, was built under King Kirti Sri Rajasinha in the eighteenth century to keep wild elephants out, and a golden fence followed in 1969.\n\nThe traffic has also run the other way. Wikipedia's article on the Bodh Gaya tree says the one standing there now was replanted from a cutting in 1881, and counts it among this tree's descendants.\n\nThe tree stands on a terrace about 6.5 metres up, behind railings, and visitors watch from the lower terraces, which hold younger Bodhi trees. It is still a place of worship. Dress in light clothing that covers shoulders and ankles, and take your shoes off in the precinct.",
+    "how_to_recognise": "You can recognise it as the tree on the highest terrace, about 6.5 metres up behind tall railings and a golden fence. The Bodhi trees on the four terraces below it are younger."
+  }
+]

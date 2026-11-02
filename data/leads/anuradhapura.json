@@ -1,0 +1,40 @@
+{
+  "leads": [
+    {
+      "name": "Prarthana Bodhiya (Prayer Bodhi), beside the Jaya Sri Maha Bodhi",
+      "species": "Sacred Fig (Ficus religiosa)",
+      "lat": 8.344407,
+      "lng": 80.3968692,
+      "reason": "OpenStreetMap natural=tree node 5174699442, named Prarthana Bodhiya, about 45 m west of the Jaya Sri Maha Bodhi on Sri Maha Bodhi Circular Road. Pin exists (OSM) but no age, no register and no second source found; a tree on the same sacred terrace complex, so access is the same. Needs a dated source or a reader's age before it earns a page."
+    },
+    {
+      "name": "Meditation tree, Kammalakkulama (Trincomalee Road)",
+      "species": "unknown",
+      "lat": 8.3537078,
+      "lng": 80.4656635,
+      "reason": "OpenStreetMap natural=tree node 4702772697 named 'Meditation tree' on the Anuradhapura-Trincomalee Road, about 7 km east of the Sacred City. No species, age or access evidence found; roadside, may be a temple tree. No photo or source in reach."
+    },
+    {
+      "name": "Parivara Bodhi trees on the four lower terraces of the Sri Maha Bodhi enclosure",
+      "species": "Sacred Fig (Ficus religiosa)",
+      "lat": null,
+      "lng": null,
+      "reason": "Wikipedia (Jaya Sri Maha Bodhi) says four lower terraces hold 'Parivara Bodhi' trees that protect the main tree. A group inside the main tree's enclosure, not a separate collectible point; younger, no ages."
+    },
+    {
+      "name": "Thuparamaya Bodhighara and Isurumuniya sapling sites",
+      "species": "n/a",
+      "lat": null,
+      "lng": null,
+      "reason": "Sources say excavation exposed the Bodhighara at Thuparamaya where a Sri Maha Bodhi sapling stood, and the Bodhivamsa places a sapling at Issarasamanaramaya (Isurumuniya). These are sites of lost trees, not living trees. No living old tree found at Thuparamaya, Ruwanwelisaya, Abhayagiri, Jetavanaramaya or Mihintale in two searches."
+    },
+    {
+      "name": "Mihintale Ambasthala mango-tree site",
+      "species": "Mango",
+      "lat": null,
+      "lng": null,
+      "reason": "Mihintale (about 15 km east of Anuradhapura, roughly 30 minutes by bus or tuk-tuk) marks the spot where the king met Mahinda under a mango tree (247 BC). The shrine commemorates the tree; no living old tree identified. Blocked as a tree, kept as context."
+    }
+  ],
+  "blocked": []
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "hni_001",
+    "name": "Voi Phuc Temple muom, Vietnam's first heritage tree",
+    "species": "Bacang Mango (Mangifera foetida)",
+    "age_estimate": "roughly 700 years (press figure)",
+    "age_min": 300,
+    "age_max": 1000,
+    "location": {
+      "address": "Voi Phuc Temple (Den Voi Phuc), 362 Kim Ma, Hanoi",
+      "latitude": 21.03,
+      "longitude": 105.8048,
+      "neighbourhood": "Kim Ma / Thuy Khue, Giang Vo ward, Ba Dinh"
+    },
+    "verified_sources": [
+      "https://vacne.org.vn/the-first-trees-receiving-vietnam’s-honorable-heritage-tree-recognition-are-9-muom-trees-mangifera-foetida-at-voi-phuc-temple-thuy-khue-hanoi/e918.html",
+      "https://tienphong.vn/chin-cay-muom-nghin-nam-o-den-voi-phuc-post1326754.tpo",
+      "https://baophapluat.vn/tam-tu-tu-hang-cay-muom-co-thu-o-den-voi-phuc-post543815.html"
+    ],
+    "official_register": {
+      "name": "Cay Di san Viet Nam (VACNE), recognised 1 Oct 2010 (first ever recognition)",
+      "url": "https://vacne.org.vn/the-first-trees-receiving-vietnam’s-honorable-heritage-tree-recognition-are-9-muom-trees-mangifera-foetida-at-voi-phuc-temple-thuy-khue-hanoi/e918.html"
+    },
+    "access": "Temple, OSM tag opening_hours Mo-Su 08:00-20:00 (OSM only, not from a temple page); entry fee not stated in any fetched source. Caretakers keep outsiders from picking fruit or breaking branches (Tien Phong 2021).",
+    "transport": "Central Hanoi, Kim Ma street beside the zoo/Thu Le area; city bus on Kim Ma (stop not checked).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Voi Phuc Temple courtyard",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Recognised by VACNE on 1 Oct 2010 as the first nine Vietnam Heritage Trees (Mangifera foetida, girth 2.92 to 5.20 m, height 17 to 29 m for the nine, per VACNE page and Suc khoe doi song 15 Nov 2010; eight stood in the courtyard, one across the street). Age: VACNE says about 700 years, same age as the temple; former site manager says nearly 1000; no measured basis, hence the broad range. Survivors CONFLICT: Thuong hieu & Cong luan 14 Feb 2014 says four alive (two felled 2012, three died by early 2014); Tien Phong 9 Apr 2021 and Bao Phap luat 30 Mar 2025 say only one old muom is alive, eight died after 2013-14 despite treatment, replacement trees planted by the temple. Alive today: ONE tree per the 2025 article; which trunk, its girth and its exact spot not given in any source, so the pin is the temple. Register only plus press; no recent photo found (lifecheck OLD, 2015 Commons). Note two OSM objects are named Den Voi Phuc: the real one is the Kim Ma way (wikidata Q10841709, heritage=2); the Thuy Khue-street one at 21.0438,105.8155 is a different small shrine. Story hook: first tree ever honoured as a Vietnam Heritage Tree, then eight of nine died within four years and the temple has been criticised for it; legend: elephant (voi phuc, kneeling elephant) temple of Linh Lang prince.",
+    "story": "Vietnam's first heritage trees were nine at this temple, and within a few years eight of them were dead. On 1 October 2010 the Vietnam Association for Nature and Environment Protection, VACNE, gave its very first Vietnam Heritage Tree recognition to nine muom, a wild mango, at Voi Phuc Temple on Kim Ma street. Eight stood in the courtyard and one across the road. They ranged from 17 to 29 metres tall and from 2.92 to 5.20 metres round.\n\nVACNE put them at about 700 years, the same age as the temple. A former site manager said nearly 1,000. Nobody gave a basis for either, so the safe statement is several centuries.\n\nThen the trees began to go. By February 2014 a Vietnamese paper counted four alive, two felled in 2012 and three dead. By 2021 Tien Phong reported only one old muom left despite treatment, and a 2025 article said the same. The temple planted replacements and has been criticised for the losses. No source says which trunk survived, how big it is, or exactly where it stands, so the pin marks the temple rather than the tree. If you find it, tell us which one it is.\n\nThe temple is dedicated to Prince Linh Lang, and its name means the kneeling elephant. Caretakers keep visitors from picking the fruit or breaking branches. It opens daily from 08:00 to 20:00 by its map listing.",
+    "how_to_recognise": "You can recognise it as the one old muom left among the younger replacement trees at Voi Phuc Temple. No source yet says which trunk it is, so ask the caretakers."
+  },
+  {
+    "id": "hni_002",
+    "name": "Tran Quoc Pagoda bodhi, the diplomacy tree",
+    "species": "Bodhi Tree (Ficus religiosa)",
+    "age_estimate": "planted 1959, about 67 years",
+    "age_min": 65,
+    "age_max": 70,
+    "location": {
+      "address": "Tran Quoc Pagoda, 46 Thanh Nien road, Yen Phu, Tay Ho, Hanoi",
+      "latitude": 21.0479,
+      "longitude": 105.8368,
+      "neighbourhood": "Yen Phu, West Lake"
+    },
+    "verified_sources": [
+      "https://vnexpress.net/nhung-cay-bo-de-dac-biet-o-thu-do-3390468.html",
+      "https://www.greensm.com/vn-vi/news/chua-tran-quoc-ha-noi"
+    ],
+    "access": "Free entry (OSM fee=no; greensm.com). Hours 08:00-16:00 daily, 06:00-18:00 on the 1st and 15th of each lunar month (greensm.com, hours not from the pagoda).",
+    "transport": "City bus stop 'Chua Tran Quoc' on Thanh Nien road (OSM), at the pagoda. Central, West Lake.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Tran Quoc Pagoda courtyard",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Cutting from the Great Bodhi Tree at Bodh Gaya, planted by Indian President Rajendra Prasad on 24 March 1959 (VnExpress 22 Apr 2016); called the 'diplomacy tree', a return gift for a tree Ho Chi Minh gave India. Greensm.com repeats 1959 and gives '65 years old as of 2024' and Bodh Gaya origin, but its photo caption calls Prasad 'prime minister', so the title is inconsistent; VnExpress and body text say President. Documented planting date for this specimen, so age is not derived. No girth or height in any source. Not a VACNE heritage tree as far as found. Young by tree standards: worth the stop for its story and the pagoda, not its size; the pagoda also has a bodhi cutting tradition so confirm on site which trunk bears the plaque (not stated in sources). Alive: 2024 article treats it as living; no dated photo checked.",
+    "story": "This tree is a thank-you note between two countries. On 24 March 1959 Rajendra Prasad, the President of India, planted it at Tran Quoc Pagoda on the shore of West Lake, VnExpress reported. It was a cutting from the Great Bodhi Tree at Bodh Gaya in India, the tree under which the Buddha is said to have reached enlightenment, and it came as a return gift for a tree Ho Chi Minh had given India. Hanoi calls it the diplomacy tree.\n\nBy the standards of this map it is young, about 67 years old, and its age is one of the few here that comes from a recorded planting rather than an estimate. Nobody has published its girth or height. It earns the stop through its story and its setting, not its size.\n\nOne practical note. Bodhi cuttings are a tradition here, so the pagoda may hold more than one, and no source says exactly where in the grounds the 1959 tree stands. Look for a plaque, and if you can tell us which trunk it is, please do.\n\nEntry is free. The pagoda opens daily from 08:00 to 16:00, and from 06:00 to 18:00 on the first and fifteenth days of each lunar month. A city bus stops at the gate on Thanh Nien road.",
+    "how_to_recognise": "You can recognise it by a plaque for the 1959 planting by India's President Rajendra Prasad. It stands at Tran Quoc Pagoda; other bodhi trees may grow there too, so check the plaque."
+  }
+]

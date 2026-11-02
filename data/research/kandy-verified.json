@@ -1,0 +1,33 @@
+[
+  {
+    "id": "kdy_001",
+    "name": "Giant Java Fig of the Great Lawn",
+    "species": "Weeping Fig (Ficus benjamina)",
+    "age_estimate": "over 150 years",
+    "age_min": 100,
+    "age_max": 170,
+    "location": {
+      "address": "Great Lawn, Royal Botanic Gardens, Peradeniya",
+      "latitude": 7.2711,
+      "longitude": 80.5956,
+      "neighbourhood": "Peradeniya"
+    },
+    "verified_sources": [
+      "https://www.travelgumbo.com/blog/visiting-the-peradeniya-royal-botanical-gardens-sri-lanka",
+      "https://www.elanka.com.au/a-visit-to-royal-botanical-gardens-by-mahil-wijesinghe/",
+      "https://digitalcollections.library.upenn.edu/items/79f1f15d-8b85-4aee-95bd-e64be64ae37d",
+      "https://commons.wikimedia.org/wiki/File:Java_Fig_Tree_at_the_Great_Lawn.jpg"
+    ],
+    "access": "Royal Botanic Gardens Peradeniya, run by the Department of National Botanic Gardens; open daily, paid entry (fee and hours not confirmed on any fetched page, check the garden's current notice). The tree stands in the open on the Great Lawn, reached straight on from the main entrance.",
+    "transport": "About 5.5 to 6 km west of Kandy (Wikipedia, travelgumbo); about 20 minutes by bus or tuk-tuk on the Peradeniya Road, or by train to Peradeniya Junction then a short walk.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: age and pin are thin. Species and existence: eLanka reprint of a Sunday Observer garden piece (Mahil Wijesinghe) names the Java Willow or Java Fig (Ficus benjamina) at the centre of the Great Lawn near Monument Road, 'like a giant living umbrella', ground covered by its spread about 2,500 sq m. Canopy figures conflict across sources: about 1,600 sq m (a 1988 Monaco Nature Encyclopedia piece per search snippet, not fetched), about 2,420 sq m (a blog, snippet), about 2,500 sq m (Sunday Observer via eLanka, seen). Age: travelgumbo says 160 years old and introduced to Sri Lanka in 1861; a Sunday Observer snippet (403 to fetch) says introduced 1861. These are the species or this specimen's introduction as reported by travel journalism, not a planting record for this individual, and the two are probably not independent; no garden-department record found (botanicgardens.gov.lk not reached). So age is broad: age_min 100 ('a century old' per eLanka-era writing), age_max 170. Do not state 1861 as this tree's planting date. Alive: Penn Libraries dated colour slide, Ficus benjamina tree, Royal Botanical Gardens Peradeniya, Mary Binney Wheeler, 1982; Wikimedia Commons 'Java Fig Tree at the Great Lawn.jpg' dated 2015-11-23 (CC BY-SA 4.0, no geotag); iNaturalist captive Ficus benjamina observations in the garden 2025-02-25 (id 340366190, 7.27013, 80.59493, accuracy 31 m) are the same garden but cannot be tied to this trunk. Pin: no OSM node and no geotag found; the coordinate used is the garden's Wikipedia centre point (7 deg 16 min 16 sec N, 80 deg 35 min 44 sec E), so approximate at garden level. Which trunk: it is the one crown on the Great Lawn that a visitor walks to; the gallery on Wikipedia also shows other Java figs elsewhere in the garden. Garden background (Wikipedia): groundwork 1821 (Alexander Moon), formally established 1843, 147 acres. lifecheck on the garden coordinate returned NONE.",
+    "official_register": {
+      "name": "Department of National Botanic Gardens, Sri Lanka (owner of the ground)",
+      "url": "http://www.botanicgardens.gov.lk/"
+    },
+    "story": "This is the same species people keep in a pot by the window, grown until one tree shades somewhere between 1,600 and 2,500 square metres of lawn. The figure depends on who did the measuring. A 1988 encyclopedia piece gave about 1,600, a blogger about 2,420, and a Sunday Observer garden writer about 2,500, describing it as a giant living umbrella.\n\nIt is a weeping fig, Ficus benjamina, known in Sri Lanka as the Java fig or Java willow, and it stands in the middle of the Great Lawn of the Royal Botanic Gardens at Peradeniya, near Monument Road. The gardens themselves go back to groundwork in 1821 and were formally established in 1843, on 147 acres just outside Kandy.\n\nIts own age is less certain than its size. Travel pieces put it at around 160 years, and older writing calls it a century old, but no garden record of when this tree went in has surfaced. More than a hundred years is the safe statement. If the Department of National Botanic Gardens has the planting date, we would like to hear it.\n\nIt has been a sight for a long time. Mary Binney Wheeler photographed it on a colour slide in 1982, now in the University of Pennsylvania's library, and it is still the crown everyone on the lawn walks towards.\n\nEntry to the gardens is paid. Peradeniya is about 6 kilometres west of Kandy, around 20 minutes by bus or tuk-tuk, or by train to Peradeniya Junction.",
+    "how_to_recognise": "You can recognise it as the one vast umbrella-shaped crown standing in the open in the middle of the Great Lawn. Walk straight on from the main entrance; it is near Monument Road."
+  }
+]

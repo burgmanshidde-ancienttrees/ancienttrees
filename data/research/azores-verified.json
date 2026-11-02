@@ -1,0 +1,75 @@
+[
+  {
+    "id": "azo_001",
+    "name": "Giant Australian Rubber Tree of Jardim Antonio Borges",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Jardim Antonio Borges, Rua Antonio Borges, Ponta Delgada, Sao Miguel",
+      "latitude": 37.7434267,
+      "longitude": -25.6755293,
+      "neighbourhood": "Sao Jose, Ponta Delgada"
+    },
+    "verified_sources": [
+      "https://siaram.azores.gov.pt/patrimonio-cultural/jardins-dos-acores/Jardim-Antonio-Borges/Jardim-AntonioBorges.pdf",
+      "https://www.openstreetmap.org/node/3761891663",
+      "https://www.destinazores.com/en/destination/sao-miguel/ponta-delgada-concelho/ponta-delgada-cidade/jardim-antonio-borges"
+    ],
+    "access": "Free public access, municipal garden (owned by Ponta Delgada council since 1957); opening hours not published on the sources read",
+    "transport": "Central Ponta Delgada, about 10 minutes on foot from the Portas da Cidade / Campo de Sao Francisco",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SIARAM (Direcao Regional do Ambiente, Azores) garden sheet updated Dec 2014 calls it the colossal Australian fig (Ficus macrophylla) with fantastic aerial roots, in the south-east sector of the garden, among the largest and oldest specimens of the botanical route along the Central Alley, labelled with botanical identification. OSM natural=tree node 3761891663 named Ficus Macrophylla stands inside the garden (way relation 12768197), consistent with the south-east sector; pin from the OSM tree node, SIARAM gives no coordinate. Alive: iNaturalist observation 2026-10-09 (https://www.inaturalist.org/observations/406984254) via lifecheck.py RECENT. Age: no source gives one; garden built 1858 to 1861 (planting plans from 1861-69) but no source ties this fig to that planting, so no age (no bridge). No girth or height found. Other notables there per same SIARAM sheet: Araucaria columnaris by the tea house, Araucaria bidwillii, big jacaranda, cork oak over the royal coach, Podocarpus, Norfolk pine near small lake, Picconia azorica. Flagged: one regional source plus OSM; no measurement.",
+    "story": "In the Azores this is an Australian rubber tree. Botanists know it as a Moreton Bay Fig, and the regional government's own sheet on the Jardim António Borges simply calls it colossal. That sheet, from the Azorean environment directorate, singles it out for its fantastic aerial roots and counts it among the largest and oldest trees on the garden's botanical route.\n\nThe fig grows in the south-east part of the garden, along the Central Alley, and carries a botanical label, so it is not hard to find. Its roots are the point. A Moreton Bay Fig lets them down from its branches. Nobody has published its girth or height, so the word colossal is the only measurement on record.\n\nThe garden around it was laid out between 1858 and 1861, with planting plans running through the 1860s, and it has belonged to Ponta Delgada's council since 1957. That makes it tempting to date the fig to the first planting. No source we have found does, so its age stays open. If you know when it went in, tell us.\n\nIt is good company. The same sheet names a Cook Pine by the tea house, a Bunya Pine, a large jacaranda and a cork oak sheltering an old royal coach. Entry is free, and the garden is about ten minutes on foot from the Portas da Cidade in the centre of Ponta Delgada.",
+    "how_to_recognise": "You can recognise it by the mass of aerial roots and its botanical label. It stands in the south-east part of the garden, along the Central Alley."
+  },
+  {
+    "id": "azo_002",
+    "name": "Australian Rubber Tree of Ponta Delgada",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Rua Calco da Ma Cara, beside Jardim Jose do Canto, Ponta Delgada, Sao Miguel",
+      "latitude": 37.7502591,
+      "longitude": -25.6689171,
+      "neighbourhood": "Sao Sebastiao, Ponta Delgada"
+    },
+    "verified_sources": [
+      "https://www.dn.pt/sociedade/torres-vedras-cedro-com-75-anos-de-runa-vence-concurso-de-rvore-do-ano",
+      "https://www.openstreetmap.org/node/13359031098"
+    ],
+    "access": "Tree stands at the street edge on Rua Calco da Ma Cara next to the Jose do Canto garden; the street side is public, garden entry is separate and not checked",
+    "transport": "Central Ponta Delgada, about 10 minutes on foot from Campo de Sao Francisco",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "DN (fetched) reports the Arvore-de-Borracha-Australiana in Ponta Delgada, Acores, took second place on the national Tree of the Year 2026 podium behind the Runa cedar, of 18,000+ votes overall; no figure or age for this tree on the DN page. A search summary (Portugal News, 2026-04-16, page itself would not fetch, so NOT a source) says it was planted 1870 by Jose do Canto; unverified, so no age recorded. Pin: OSM natural=tree node 13359031098 carries the exact contest name 'Arvore-da-Borracha-Australiana' on Rua Calco da Ma Cara by the Jose do Canto garden wall; not matched to the contest entry by a source, so kept approximate. Alive: iNaturalist 2025-06-29 (https://www.inaturalist.org/observations/295055534) via lifecheck RECENT. A second Ficus macrophylla node (OSM 12020707815 and 12020707823) stands inside Jardim Jose do Canto at 37.74926,-25.67029 and 37.74789,-25.67068; whether any of them is the contest tree needs the candidacy page (arvoredoanoportugal) or the city council. Flagged: contest tree identity unconfirmed.",
+    "story": "In 2026 Portugal voted this fig the second best tree in the country. The national Tree of the Year contest drew more than 18,000 votes, the Diário de Notícias reported, and the Australian rubber tree of Ponta Delgada finished on the podium behind the cedar of Runa in Torres Vedras. Australian rubber tree is the local name for a Moreton Bay Fig.\n\nThere is one honest complication. Two more Moreton Bay Figs are mapped inside the Jardim José do Canto, just behind it. The tree on this pin is the one mapped under the contest's exact name, at the street edge of Rua Calço da Má Cara against the garden wall, but no source we have read ties the entry to this trunk. If you voted for it, or know which tree it was, tell us.\n\nNo published figure gives its age, girth or height, so the contest result is the strongest thing on record for it. For a tree native to the far side of the world, second place in a country of cork oaks and olives is a fair result.\n\nThe street side is public and needs no ticket. The garden behind the wall has its own entrance. It is about ten minutes on foot from the Campo de São Francisco in central Ponta Delgada.",
+    "how_to_recognise": "You can recognise it by its place at the street edge of Rua Calço da Má Cara, against the wall of the José do Canto garden. Two more Moreton Bay Figs stand inside the garden."
+  },
+  {
+    "id": "azo_003",
+    "name": "Lady of the Park, Terra Nostra Norfolk Pine",
+    "species": "Norfolk Island Pine (Araucaria heterophylla)",
+    "age_estimate": "about 200 years (park's own figure)",
+    "age_min": 150,
+    "age_max": 220,
+    "height_m": 52,
+    "location": {
+      "address": "Parque Terra Nostra, Rua do Parque, Furnas, Povoacao, Sao Miguel",
+      "latitude": 37.7712763,
+      "longitude": -25.3147549,
+      "neighbourhood": "Furnas"
+    },
+    "verified_sources": [
+      "https://www.parqueterranostra.com/en/news/parque-terra-nostra-submits-its-candidacy-for-tree-of-the-year-2026/",
+      "https://www.openstreetmap.org/node/13359031096"
+    ],
+    "access": "Paid entry to Parque Terra Nostra (Bensaude Hotels); fee and hours on the park ticket page, not read",
+    "transport": "Furnas village, park is on Rua do Parque in the village; Furnas is about 45 minutes by car from Ponta Delgada, no practical public bus for a day trip checked",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Owner (Parque Terra Nostra news page, fetched) nominated it for Tree of the Year 2026 as the Lady of the Park, a Norfolk Island pine of about 200 years and 52 m high, in the heart of Furnas valley, no spot given in the park. 52 m is the owner's claim and high for a Norfolk pine in the Azores; record as claimed, do not sharpen. OSM node 13359031096 named 'A Araucaria do Terra Nostra' at 37.77128,-25.31475 is the only mapped candidate; the park has a ring of araucarias round the thermal pool and the node is not tied to this one by a source, so approximate. Alive: iNaturalist 2026-07-27 (https://www.inaturalist.org/observations/385641636) via lifecheck RECENT. Park founded 1780s by Thomas Hickling, enlarged 1935; the national result for the entry was not found. Flagged: owner source only, location in the park unconfirmed.",
+    "story": "Parque Terra Nostra calls this tree the Lady of the Park and says she is 52 metres tall. That is the park's own figure, published when it entered her for Portugal's Tree of the Year 2026, and it is a remarkable one for a Norfolk Island Pine on the Azores. Nobody independent has measured her, so read it as a claim, not a record.\n\nThe park also puts her age at about 200 years, and that is the only estimate there is. Terra Nostra goes back to the 1780s, when Thomas Hickling founded a garden in the Furnas valley, and it was enlarged in 1935. No source connects the Lady to either moment, so her age stays the park's word.\n\nWhich araucaria is she? A ring of them stands around the park's thermal pool, and the nomination did not say where she grows. The pin is the single tree mapped under the name A Araucária do Terra Nostra, the best candidate but not a certainty. If you have stood under her and know which one it is, tell us.\n\nShe stands in the heart of the Furnas valley, in the park's words, and the park is a paid garden in the village itself, about 45 minutes by car from Ponta Delgada. The result of her national entry is not on record yet.",
+    "how_to_recognise": "You can recognise it by the name it is mapped under, A Araucária do Terra Nostra. It stands among the ring of araucarias around the park's thermal pool."
+  }
+]

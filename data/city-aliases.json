@@ -168,6 +168,11 @@
       "Antverpene",
       "Antuairp"
     ],
+    "anuradhapura": [
+      "Anuradapura",
+      "Anurádhapuraja",
+      "Anuradhapur"
+    ],
     "aosta": [
       "Aoste",
       "Augusta Praetoria",
@@ -1408,6 +1413,18 @@
       "Getingene",
       "Chöttingen"
     ],
+    "gran-canaria": [
+      "Grande Canarie",
+      "Grã-Canária",
+      "Gran Kanarija",
+      "Grankanārija",
+      "Kanaria Handia",
+      "Insula Canaria",
+      "Gran Kanarėjė",
+      "Grand Canària",
+      "Isla de Gran Canaria",
+      "Qran-Kanariya"
+    ],
     "granada": [
       "Grenade",
       "Grenada",
@@ -1517,6 +1534,18 @@
     "hampton-virginia": [
       "Hampton",
       "Hamptonas"
+    ],
+    "hanoi": [
+      "Hanoj",
+      "Hanojus",
+      "Hanoja",
+      "Hanáí",
+      "Hà Nội",
+      "Anòy",
+      "Ha Nui",
+      "Hanojo",
+      "Hanoy",
+      "He-ney-se"
     ],
     "harderwijk": [
       "Hardervicum",
@@ -1647,6 +1676,12 @@
       "Hochosterwitzin linna",
       "Zamek Hochosterwitz",
       "Grad Ostrovica"
+    ],
+    "hoi-an": [
+      "Cidade Antiga de Hoi An",
+      "Hojanas",
+      "Hojana",
+      "Hội An Chhī"
     ],
     "hokuto": [
       "Hokuto-chhī",
@@ -1807,6 +1842,12 @@
       "Kanazawa-chhī",
       "Kanazawa-shi"
     ],
+    "kandy": [
+      "Cândia",
+      "Mahanuvara",
+      "Kandi",
+      "Kandis"
+    ],
     "kansas-city": [
       "Kansas City i Missouri",
       "Kanzas Sitis",
@@ -1890,6 +1931,18 @@
       "Ginqsan Si",
       "Kôriyama-chhī",
       "Kōriyama Shi"
+    ],
+    "kos": [
+      "Cos",
+      "Coo",
+      "Kosz",
+      "İstanköy",
+      "Kosas",
+      "Kosa",
+      "Pulau Kos",
+      "Gŏ̤-sê̤ṳ",
+      "Nosy Kos",
+      "Nísos Kos"
     ],
     "kotel": [
       "Osečná"
@@ -2276,6 +2329,18 @@
       "Maiorche",
       "Majorca",
       "Majorko"
+    ],
+    "malta": [
+      "Malte",
+      "Melita",
+      "IMalitha",
+      "IMalta",
+      "Mal'tu",
+      "Malata",
+      "Male",
+      "Malita",
+      "Malt",
+      "Maltae"
     ],
     "manchester": [
       "Mančesteris",
@@ -4251,6 +4316,7 @@
     "ancient-bristlecone-pine-forest": "Ancient Bristlecone Pine Forest",
     "antietam": "Battle of Antietam",
     "antwerp": "Antwerp",
+    "anuradhapura": "Anuradhapura",
     "aosta": "Aosta",
     "apeldoorn": "Apeldoorn",
     "argoules": "Argoules",
@@ -4444,6 +4510,7 @@
     "gornja-stubica": "Gornja Stubica",
     "gothenburg": "Gothenburg",
     "gottingen": "Göttingen",
+    "gran-canaria": "Gran Canaria",
     "granada": "Granada",
     "granit": "Granit, Bulgaria",
     "graz": "Graz",
@@ -4462,6 +4529,7 @@
     "hallstatt": "Hallstatt",
     "hamburg": "Hamburg",
     "hampton-virginia": "Hampton, Virginia",
+    "hanoi": "Hanoi",
     "harderwijk": "Harderwijk",
     "heede": "Emsland",
     "heerlen": "Heerlen",
@@ -4485,6 +4553,7 @@
     "hobart": "Hobart",
     "hochneukirchen-gschaidt": "Hochneukirchen-Gschaidt",
     "hochosterwitz": "Hochosterwitz Castle",
+    "hoi-an": "Hội An (city)",
     "hokuto": "Hokuto, Yamanashi",
     "hong-kong": "Hong Kong",
     "hoorn": "Hoorn",
@@ -4522,6 +4591,7 @@
     "kamakura": "Kamakura",
     "kanagi": "Kanagi, Aomori",
     "kanazawa": "Kanazawa",
+    "kandy": "Kandy",
     "kansas-city": "Kansas City, Missouri",
     "kasukabe": "Kasukabe, Saitama",
     "kauai": "Kauaʻi",
@@ -4538,6 +4608,7 @@
     "komjatice": "Komjatice",
     "kopcany": "Kopčany",
     "koriyama": "Kōriyama",
+    "kos": "Kos",
     "kotel": "Osečná",
     "kozaki": "Kōzaki",
     "kozy": "Kozy",
@@ -4601,6 +4672,7 @@
     "malaga": "Málaga",
     "mallorca": "Mallorca",
     "malsfeld": "Malsfeld",
+    "malta": "Malta",
     "manchester": "Manchester",
     "maria-aurora": "Maria Aurora, Aurora",
     "martinique": "Martinique",
@@ -5067,6 +5139,7 @@
   "unresolved_names": {
     "albertshausen": "no article within 40 km, tried Albertshausen; Albertshausen, Germany; search: Raccoon; search: Bad Wildungen; search: Bad Kissingen (Bad Kissingen, title does not match)",
     "alkai": "no article within 40 km, tried Alkai; Alkai, Lithuania; search: Lithuanian mythology; search: Romuva (religion); search: Lithuanian grammar",
+    "azores": "no article within 40 km, tried Azores (Azores, 233 km away); Azores, Portugal (Azores, 233 km away); search: Azores; search: List of cities in Portugal; search: Horta, Azores",
     "baldenhain": "no article within 40 km, tried Baldenhain; Baldenhain, Germany; search: Wismut (company)",
     "bilu": "no article within 40 km, tried Bilu (Bilu, no coordinates, disambiguation page); Bilu, Taiwan; search: List of mountains in Taiwan; search: Jewish population by country; search: List of islands by population",
     "boetersheim": "no article within 40 km, tried Boetersheim; Boetersheim, Germany",

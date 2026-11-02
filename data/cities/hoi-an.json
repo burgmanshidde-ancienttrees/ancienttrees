@@ -1,0 +1,140 @@
+{
+  "city": "Hoi An",
+  "country": "Vietnam",
+  "status": "needs_curation",
+  "intro": "Hoi An's old banyans grow on the pavements of the old town. The Da Ken banyan is named after a French military bugle band that practised in its shade, and another banyan on Phan Chau Trinh street has a shrine with a carved stele inside its trunk. Offshore on Cu Lao Cham, two heritage trees of different species have knotted their crowns together over a temple yard.",
+  "meta_description": "Hoi An's heritage trees: the Da Ken banyan, the banyan with a shrine in its trunk, and Cu Lao Cham's temple pair, where each stands.",
+  "question_meta": "Hoi An's notable trees are the Da Ken banyan, the banyan with a stele shrine in Cam Pho, and Cu Lao Cham's heritage pair.",
+  "question_answer": "Hoi An's notable old trees include the Da Ken banyan in the old town, protected by the city since 2014 and named after a bugle band that practised in its shade, and the banyan on Phan Chau Trinh street that holds a shrine with a sandstone stele in its trunk. On Cu Lao Cham island, a Kén and a Nánh about 200 years old are recognised Vietnam Heritage Trees.",
+  "question_context": "In November 2014 Hoi An put 46 old trees on a protected list, and the Da Ken banyan received paving, steps and an information stele in March 2015. The Hoi An Heritage Centre puts it at about 20 metres tall; its address is disputed between Tran Hung Dao and Tran Cao Van, and the pin follows the banyan mapped on Tran Cao Van. The stele shrine banyan stands about 40 metres north of the Cam Pho communal house; its stele was exposed only when the roots were trimmed around 1991, and the shrine is a registered relic. The centre's trunk figures for both banyans are given as diameters but are probably circumferences. Neither banyan's age is documented. The Cu Lao Cham pair, at the swiftlet-nest guild temple in Bai Huong, were recognised in April 2015, and their age of about 200 years comes from the press. The island is a boat trip from Cua Dai pier, so check the crossing before planning the day.",
+  "hero_tree_id": "hoa_001",
+  "oldest_tree_id": "hoa_003",
+  "faq": [
+    {
+      "q": "Why is it called the Da Ken banyan?",
+      "a": "In the early twentieth century a French military bugle band of twelve to fourteen players practised in its shade, and Hoi An has called it the bugle band banyan since."
+    },
+    {
+      "q": "Can you see Hoi An's heritage trees for free?",
+      "a": "The two old town banyans stand on public pavements and are free at any hour. The Cu Lao Cham pair needs a boat from Cua Dai pier."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hoa_001",
+      "name": "Da Ken banyan",
+      "species": "Sea Fig (Ficus superba)",
+      "age_estimate": "several hundred years (local accounts, undocumented)",
+      "age_min": 150,
+      "age_max": 400,
+      "height_m": 20,
+      "location": {
+        "address": "Tran Cao Van street beside Xuan Lam communal house, Hoi An old town",
+        "latitude": 15.8801,
+        "longitude": 108.3279,
+        "neighbourhood": "Xuan Lam, Hoi An old town"
+      },
+      "verified_sources": [
+        "https://hoianheritage.net/vi/trao-doi-chuyen-nganh/chuyen-de-nghien-cuu-trao-doi/Cay-Da-Da-Ken-ap-Xuan-Lam-444.html",
+        "https://baodanang.vn/huy-dong-doanh-nghiep-gan-bia-thong-tin-cho-cay-co-thu-o-hoi-an-3111992.html",
+        "https://hoianheritage.net/vi/trao-doi-chuyen-nganh/chuyen-de-nghien-cuu-trao-doi/chuyen-tram-nam-duoi-nhung-tan-dai-thu-1380.html"
+      ],
+      "official_register": {
+        "name": "Hoi An City People's Committee list of protected ancient trees, Decision 2627/QD-UBND of 14 Nov 2014 (46 trees)",
+        "url": "https://hoianheritage.net/vi/trao-doi-chuyen-nganh/chuyen-de-nghien-cuu-trao-doi/Cay-Da-Da-Ken-ap-Xuan-Lam-444.html"
+      },
+      "access": "Free: on a public street pavement with paving, steps and an information stele (installed 27 Mar 2015); in the old town (old town tickets are for sites, not streets, not checked).",
+      "transport": "In Hoi An old town, walkable; no transport needed.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "On the city's protected list (Hoi An Heritage Centre page, owner/manager of the ground). Height about 20 m; trunk 'duong kinh' 4.1 m at 1.3 m height per the heritage centre: 4.1 m as a DIAMETER is implausibly large for a 20 m fig, probably a circumference or buttress span, so girth_cm left empty. Age: no document; local accounts say several hundred years; range is a vague restatement, not derived. Name from a French-era military bugle band (da ken, 12 to 14 members) that practised under it in the early 20th century. Address conflict: heritage centre page says sidewalk beside house 42 Tran Hung Dao, east of Xuan Lam communal house; Bao Da Nang 2 Apr 2015 and the 2026 heritage article say Tran Cao Van. Pin is the single OSM tree node named 'CAY DA' on Tran Cao Van (OSM node 11581238672, 15.88012,108.32789), not confirmed to be this trunk, so approximate. Alive: heritage article dated 5 Oct 2026 describes it with its information stele; protected since 2014.",
+      "story": "This banyan is named after a brass band. In the early twentieth century, under French rule, a military bugle band of twelve to fourteen players used to practise in its shade, and Hoi An has called it the Da Ken tree, the bugle band banyan, ever since.\n\nThe band is long gone and the tree is protected. In November 2014 the city put it on its list of 46 protected old trees, and in March 2015 it was given paving, steps and an information stele of its own. The Hoi An Heritage Centre puts it at about 20 metres tall. It also records a trunk of 4.1 metres at chest height, though as a diameter that would be implausibly wide for a fig this height, so it is probably a circumference or a span across the roots.\n\nNobody has a document for its age. Local accounts say several hundred years, and that is as far as the record goes. If you know more, tell us.\n\nEven its address is disputed. The heritage centre places it on the pavement beside 42 Tran Hung Dao, east of the Xuan Lam communal house, while the Da Nang newspaper and a 2026 heritage article put it on Tran Cao Van. The pin follows the one banyan mapped on Tran Cao Van, which is the likelier spot but not a certainty.\n\nIt stands on a public street in the old town, free to visit at any hour.",
+      "how_to_recognise": "You can recognise it by the information stele, paving and steps at its foot. It stands on the pavement by the Xuan Lam communal house, on Tran Cao Van street by most accounts.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hoa_002",
+      "name": "Banyan of the Yem Thuy Dao stele shrine, Cam Pho",
+      "species": "Akou (Ficus superba var. japonica)",
+      "age_estimate": "not documented",
+      "height_m": 15,
+      "location": {
+        "address": "Phan Chau Trinh street, about 40 m north of Cam Pho communal house, Hoi An",
+        "latitude": 15.8787,
+        "longitude": 108.3242,
+        "neighbourhood": "Cam Pho, Hoi An old town"
+      },
+      "verified_sources": [
+        "https://hoianheritage.net/vi/trao-doi-chuyen-nganh/chuyen-de-nghien-cuu-trao-doi/cay-da-bia-yem-thuy-dao-1251.html",
+        "https://hoianheritage.net/vi/trao-doi-chuyen-nganh/chuyen-de-nghien-cuu-trao-doi/chuyen-tram-nam-duoi-nhung-tan-dai-thu-1380.html"
+      ],
+      "access": "Free: beside the Phan Chau Trinh pavement; the shrine inside the tree is a registered relic (not entered).",
+      "transport": "In Hoi An old town, walkable.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Pavement by Cam Pho communal house, Phan Chau Trinh",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Hoi An Heritage Centre page: about 15 m high, trunk 3.6 m (stated as diameter, same doubt as hoa_001) at 1.3 m, 6.1 m at ground including creeping roots, branching at 4.0 m. A small brick shrine sits in the trunk holding a sandstone stele inscribed 'Bac De sac lenh ... yem thuy dao' (a charm against water, some locals link it to the Japanese Bridge). Nobody knows who planted it or when; roots trimmed about 1991 exposed the stele and still threaten the shrine. The stele was reportedly vandalised in early April 2025 (Thanh Nien, Nhan Dan headlines seen in search results only, pages not fetched; a pointer, not a source). The 2026 heritage article groups it with the protected old trees; the Decision 2627 entry itself was not seen on a fetched page, so no official_register recorded. Pin derived from 40 m north of Dinh Cam Pho (OSM way 565186618, 15.87833,108.32419): approximate.",
+      "story": "There is a shrine inside this banyan, and the tree has been trying to swallow it. A small brick shrine sits in the trunk, and in it stands a sandstone stele carved with a charm against water. The inscription invokes Bac De, the Emperor of the North, and closes with the words yem thuy dao. Some people in Hoi An connect it with the old town's Japanese Bridge.\n\nNobody knows who planted the tree or when. The stele was only exposed when the roots were trimmed around 1991, and according to the Hoi An Heritage Centre those roots still threaten the shrine. The centre puts the tree at about 15 metres tall, branching 4 metres up. It gives the trunk as 3.6 metres at chest height and 6.1 metres at the ground including the creeping roots, though like the figure for the Da Ken banyan nearby, a 3.6 metre diameter would be implausible, so it is probably a circumference.\n\nThe shrine itself is a registered relic, and the tree stands on the public pavement of Phan Chau Trinh street, about 40 metres north of the Cam Pho communal house in the old town, free to see at any time. Its age is undocumented. If you know anything about when it was planted, or who set the stele here, tell us.",
+      "how_to_recognise": "You can recognise it by the small brick shrine set into its trunk, holding a sandstone stele. It stands on the Phan Chau Trinh pavement, about 40 metres north of the Cam Pho communal house.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hoa_003",
+      "name": "Kenh and Nanh Trees of Cu Lao Cham",
+      "species": "Kén (Casearia grewiifolia) and Nánh (Millettia nigrescens)",
+      "age_estimate": "about 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 289,
+      "height_m": 18,
+      "location": {
+        "address": "Miếu Tổ nghề yến (swiftlet-nest guild temple), Bai Huong hamlet, Cu Lao Cham, Tan Hiep, Hoi An",
+        "latitude": 15.937,
+        "longitude": 108.531,
+        "neighbourhood": "Bai Huong, Cu Lao Cham island"
+      },
+      "verified_sources": [
+        "https://tuoitre.vn/hoi-an-cong-nhan-cay-di-san-tai-cu-lao-cham-739889.htm",
+        "https://thanhnien.vn/doc-dao-cay-di-san-viet-nam-cung-duong-cay-di-san-tren-dao-tien-tieu-185240112212058798.htm",
+        "https://culaochamtour.com/cam-nang-du-lich-cu-lao-cham/tim-hieu-cac-loai-cay-di-san-tren-dao-cu-lao-cham.html"
+      ],
+      "official_register": {
+        "name": "Cay Di san Viet Nam (VACNE), recognised April 2015 (Tuoi Tre dated 28 Apr 2015)",
+        "url": "https://tuoitre.vn/hoi-an-cong-nhan-cay-di-san-tai-cu-lao-cham-739889.htm"
+      },
+      "access": "Temple yard in a fishing village, no entry rule found; island reached by boat from Hoi An (Cua Dai pier), crossing time and ticket NOT confirmed from a fetched page. Trees stand in the temple yard, villagers gather there most evenings (Thanh Nien 2024).",
+      "transport": "Boat from Cua Dai pier, Hoi An to Cu Lao Cham (about 15 km offshore; crossing time not verified), then a short walk or ride along the island road to Bai Huong.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Swiftlet-nest guild temple yard, Bai Huong",
+        "radius_m": 30
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Two trees, one courtyard, canopies intertwine and shade the yard: Ken on the right corner (about 18 m, 2.89 m girth at 1.3 m, about 200 years) and Nanh on the left (about 16 m, 1.94 m girth, about 200 years); measurements and Latin names from culaochamtour.com (a tour site; Tuoi Tre and Thanh Nien give only 'about / over 200 years'). Register: VACNE recognition 2015, the island's four heritage groups. Folded as one collectible point. Pin: hamlet-level only (OSM has Bai Huong weather station 15.9370,108.5309; no OSM node for the temple), precision approximate. Alive: Thanh Nien 13 Jan 2024 describes them as living. Also on Cu Lao Cham, recorded as leads: the over-600-year banyan (east slope of Hon Lao) and three red wutong (Suoi Tinh slope, Bai Lang). Cu Lao Cham is a UNESCO biosphere reserve, a boat trip, not a walk from Hoi An.",
+      "story": "Two trees of different species have grown into one roof over this temple yard. On Cu Lao Cham, an island about 15 kilometres off Hoi An, a Kén and a Nánh stand on either side of the yard of the swiftlet-nest guild temple, the shrine of the island's trade in edible bird's nests, and their crowns have knotted together overhead.\n\nIn April 2015 they were recognised as Vietnam Heritage Trees by VACNE, the national nature association, one of four heritage groups on the island. The press gives both about 200 years, or over 200; a tour operator's guide adds the measurements. The Kén, on the right-hand corner, is about 18 metres tall and 2.89 metres round at chest height. The Nánh, on the left, is about 16 metres and 1.94 metres round. Neither is a giant. Together they make the yard a room.\n\nThat room gets used. Thanh Nien reported in 2024 that villagers gather under the trees most evenings, which is a better test of a shade tree than any measurement.\n\nThe island is a UNESCO biosphere reserve and a boat trip from Cua Dai pier, not a walk from the old town, so check the crossing before you plan the day. From the landing it is a short walk or ride along the island road to Bai Huong, the fishing hamlet where the temple stands. Cu Lao Cham also has a banyan said to be over 600 years old on the slopes of Hon Lao.",
+      "how_to_recognise": "You can recognise them by the two crowns meeting over the temple yard: the taller Kén, 2.89 metres round, on the right corner, the Nánh on the left. They stand at the swiftlet-nest guild temple in Bai Huong.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

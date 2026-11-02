@@ -1,0 +1,26 @@
+{
+  "city": "Kos",
+  "country": "Greece",
+  "city_slug": "kos",
+  "note": "Verify pass 2026-11-02. One tree verified (kos_001, in data/research/kos-verified.json). Searches in English and Greek found no other named old tree on the island, no Dodecanese Monuments of Nature list reachable, and OSM/Nominatim holds only the Hippocrates plane as a tree node. The place does not reach four trees from this pass.",
+  "leads": [
+    {
+      "name": "Cypress and pine grove at the Asklepieion",
+      "reason": "no photo or exact pin in reach; no source gives an age or an individual tree. Sources only describe a conifer grove (about 4 km from Kos town) echoing the ancient sacred grove; the living trees are undated.",
+      "approx_lat": 36.8, "approx_lon": 27.2
+    },
+    {
+      "name": "Plane trees and olives of the mountain villages (Zia, Pyli, Asfendiou)",
+      "reason": "no photo or exact pin in reach; Greek and English searches returned nothing about any named old tree there. Needs a local source (Municipality of Kos, Forest Service Dodecanese) or a reader."
+    },
+    {
+      "name": "Seed-grown descendants of the Hippocrates plane on Kos",
+      "reason": "no source found naming one on the island; not checked beyond search."
+    },
+    {
+      "name": "Greek Monuments of Nature (Mnimeia tis Physis) entries for Kos",
+      "reason": "only the Hippocrates plane found (Gazette 589/B/1985, per kos.gr); the Ministry or Forest Service list was not found by search, host not tried."
+    }
+  ],
+  "blocked": []
+}
