@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-02 session: a Paris reader's walk, profiles follow Polarsteps, Want to visit decided on the server
+
+- **Live:** a stranger (p_cdc28055a82c5ea92ef49afc, the Châtenay-Malabry cedar in August) saved 13 trees on 10-22 and this morning walked five of them in Paris, collecting each with a photograph. Four went live as lead photographs: the twisted beech of the Arènes de Lutèce (its first), the Cedar of Jussieu, the Buffon plane, the horse chestnut of Square René-Le Gall; Commons leads moved to the strip. The "Turkey oak" photograph is held (chestnut-like leaves, likely a neighbour). Cedar settled by the garden's own guide (cedar and ginkgo side by side below the labyrinth), plane by its plaque and label. The beech story lost two colon sentences now that it is indexed.
+- **Public profiles show a collected tree at once**, as Polarsteps shows a step (Hidde: "lets follow polarsteps rules"; DECISIONS.md 2026-11-02). Pasted and checked: the reader's profile shows six.
+- **Want to visit drops a tree once it is collected, on the server** (supabase/wishes.sql, pasted and checked): app 1.0.3 predates the 10-19 rule and re-sends every heart, so the view counts a save older than the collect as fulfilled. Public profile and website read it; the reader's list went from 13 to 10.
+- Digest: the "who they are" block works again (word lists lost with Cloudflare); a reader photo's status says "tree collected; photo on the page" instead of the app's "mine".
+
 ## 2026-11-02 session: Bali and Luang Prabang verified, nothing shipped
 
 Hidde asked to open new countries with spare tokens and chose Bali and Luang Prabang (claimed with `--outside-us`, both outside the focus list). Two verify passes, 293k tokens. **Luang Prabang: 0.** Nobody in Laos names trees and the UNESCO inventory lists buildings only. 2 leads were kept: the Wat Aham banyans (about 70 years) and the Wat Visoun bodhi (1968). **Bali: 3 flagged trees** in data/research/bali-verified.json, all one hour or more from Ubud and not a walk: Pura Kehen banyan, Kayu Putih giant fig, Bunut Bolong. There are 6 leads in data/leads/bali.json. Both places are under the four-tree floor and under the six needed for a write pass, so nothing went to writing. Lesson: a country with no register costs about 100k tokens a tree, against the 15k target. Next angle for Bali, if anyone pursues it: the old pule and kepuh trees at the death temples (notes file).
