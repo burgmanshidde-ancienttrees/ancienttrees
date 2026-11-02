@@ -35,7 +35,28 @@
    "latitude": null,
    "longitude": null,
    "reason": "Municipal guide and SIARAM say centenary araucarias from the 1882 opening; no individual tree, age or coordinate found. Terceira is about 40 minutes by plane from Sao Miguel."
+  },
+  {
+   "name": "Four dragon trees of Lugar da Praia, Água de Alto (Vila Franca do Campo)",
+   "species": "Dragon Tree (Dracaena draco)",
+   "latitude": 37.714758,
+   "longitude": -25.468543,
+   "reason": "Register SMG_IIM_38 to 41 (classified 1982, DRR 8/82/A), pins approximate, register flags 'may no longer exist'. Evidence conflicts on survival: a 2016 Correio dos Acores column (Terra Livre blog) says all four died in the late 1980s; a Governo dos Acores SIARAM report on the Ribeira da Praia says three dragon trees survive in the grounds of the Hotel Bahia Palace (now Pestana Bahia Praia), two of them marked as classified; iNaturalist Dracaena draco 2026-05-01 (id 357291096, accuracy 2 m) at 37.714655,-25.468533 confirms one alive. They stand in hotel grounds (OSM access=customers on the chapel and pool nearby). No public viewing point found, so it fails hard rule 10 for now. Would ship as a view-only ensemble if a public street or beach path with a sightline is found; fetch pin from the iNat fix."
+  },
+  {
+   "name": "Dragon tree at Escola Secundária Antero de Quental, Ponta Delgada",
+   "species": "Dragon Tree (Dracaena draco)",
+   "latitude": null,
+   "longitude": null,
+   "reason": "Terra Livre 2016 (quoting engineer Ernesto Goes) calls it the largest dragon tree of São Miguel, said to date from the old Paço begun in 1587 (unverified claim). School grounds: no evidence they are open (rule 10); no coordinate; not classified. Three more dragon trees in Jardim António Borges per the same text, not individually located."
+  },
+  {
+   "name": "Metrosideros of the Jardim do Palácio de Santana, Ponta Delgada",
+   "species": "Pohutukawa (Metrosideros excelsa)",
+   "latitude": null,
+   "longitude": null,
+   "reason": "Em Defesa das Plantas dos Açores (2021) gives about 170 years, 24 m tall, crown 37 m, a favoured wedding-photo tree. Palace garden of the regional government: no source read on public opening; no coordinate; single blog source."
   }
  ],
- "notes": "No individual-tree register for the Azores found: DRRF's RRAIPA was created by DRR 2/2026/A (6 March 2026) and its list was not reachable (drrf.azores.gov.pt 403 to WebFetch); a 2022 news item cited 58 classified trees, 37 Faial, 14 Terceira, 7 Sao Miguel, not seen. Overpass hangs from this runner (overpass-api.de and kumi both time out); Nominatim worked."
+ "notes": "No individual-tree register for the Azores found: DRRF's RRAIPA was created by DRR 2/2026/A (6 March 2026) and its list was not reachable (drrf.azores.gov.pt 403 to WebFetch); a 2022 news item cited 58 classified trees, 37 Faial, 14 Terceira, 7 Sao Miguel, not seen. Overpass hangs from this runner (overpass-api.de and kumi both time out); Nominatim worked. | 2026-11-02 São Miguel pass: delivered azo_004 to azo_007 in data/research/azores-sm-verified.json; Furnas pine, Campo de São Francisco pohutukawa, Mata-Jardim José do Canto sequoia, Jardim António Borges Norfolk pine. Campo de São Francisco lead above is now azo_004. The Jardim José do Canto (Ponta Delgada) Ficus and Rua Coronel Silva Leal dragon tree remain unverified (not reached)."
 }

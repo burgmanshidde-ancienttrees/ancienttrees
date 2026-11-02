@@ -1,0 +1,73 @@
+[
+  {
+    "id": "agh_001",
+    "name": "Cork Oak of Posto Santo",
+    "species": "Cork Oak (Quercus suber)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Largo da Igreja, Posto Santo, Angra do Heroísmo, Terceira",
+      "latitude": 38.6785253,
+      "longitude": -27.230892,
+      "neighbourhood": "Posto Santo"
+    },
+    "verified_sources": [
+      "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/7-1985-151928",
+      "https://www.openstreetmap.org/node/13153795431",
+      "https://www.wikidata.org/wiki/Q66815895"
+    ],
+    "official_register": {
+      "name": "Azores Arvoredo de Interesse Publico register (register id TER_IIM_43, Interesse Municipal; DLR 7/85/A of 29 May 1985; CC BY 4.0, data/registers/azores-aip.json)",
+      "url": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/7-1985-151928"
+    },
+    "access": "Standing in the village square between the parish church and the parish council building (per the decree text as summarised by search; the decree page itself is JavaScript-rendered and was not read in full); a public place, free to see from the square. Not checked on site.",
+    "transport": "About 4 km north of Angra do Heroísmo centre, roughly 10 minutes by car or taxi; bus connection not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "how_to_recognise": "You can recognise it as the lone cork oak in Largo da Igreja, the church square of Posto Santo. By its decree it stands between the parish church and the parish council building.",
+    "verify_notes": "Register: TER_IIM_43, municipal-interest classification under DLR 7/85/A (29 May 1985), re-listed in DLR 3/2015/A. Register location note: validated 29/11/2021 by orthophoto photo-interpretation (register's own note says the ortho is of Faial, apparently a template error). Search summary of the decree (a lead, not read in the page): cork oak between the church and the parish council building, described as the only one of its species on Terceira, size suggesting great age. OSM natural=tree node 13153795431 (denotation=natural_monument, species=Quercus suber, wikidata=Q66815895) created 2025-09-18, 1 m from the register point; it is probably derived from the register/Wikidata rather than a ground survey, so the pin is register-grade plus a mapped node, marked confirmed on the strength of the OSM node as the brief allows. Wikidata Q66815895 'Exemplar de sobreiro (Quercus suber L.) no Largo da Igreja', cultural heritage monument. ALIVE: no dated photo, news item or iNaturalist observation found (lifecheck NONE; nearest iNat observation is a fern 2021); hence flagged, register only. Girth, height and age not in the register (null). No Commons photo within 400 m (geosearch empty). No photograph candidate.",
+    "story": "If the decree that protects it is right, this is the only cork oak on Terceira. The Azores classified it in May 1985, and a summary of that decree describes it as the one tree of its species on the island, with a size that suggests great age. The decree's own text could not be read in full, so take both as the decree's words as reported.\n\nIt stands in Largo da Igreja, the church square of Posto Santo, a parish about four kilometres north of the centre of Angra do Heroísmo. By the same description it grows between the parish church and the parish council building. The classification is of municipal interest, and the Azores confirmed it when they listed their protected trees again in 2015.\n\nNobody has published a girth, a height or a date for it, so its age is an open question. If you know when it was planted, or what the village says about it, tell us.\n\nThere is a second gap, and it matters more. No dated photograph or sighting from recent years has turned up, so the register and the map are the latest word on it. If you stand in that square, a photograph settles whether it is still there.\n\nIt costs nothing to see from the square. From the centre of Angra it is about ten minutes by car or taxi; a bus connection has not been checked."
+  },
+  {
+    "id": "agh_002",
+    "name": "Til of Terra Chã",
+    "species": "Til / Stinkwood (Ocotea foetens)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Canada de Belém, Terra Chã, Angra do Heroísmo, Terceira",
+      "latitude": 38.668125,
+      "longitude": -27.251795,
+      "neighbourhood": "Terra Chã"
+    },
+    "verified_sources": [
+      "https://commons.wikimedia.org/wiki/File:Ocotea_foetens.JPG"
+    ],
+    "official_register": {
+      "name": "Azores Arvoredo de Interesse Publico register (register id TER_IIP_38, Interesse Publico; Despacho DG II Serie 155 of 6 July 1966; DLR 3/2015/A; CC BY 4.0, data/registers/azores-aip.json)",
+      "url": "https://geoportal.azores.gov.pt/"
+    },
+    "access": "Register places it at Canada de Belém, a road in Terra Chã; the register's location came from Google Street View (2 Dec 2020), which suggests it stands by the public road. Whether it is on private land behind a wall is not established. Flagged.",
+    "transport": "About 3 km west of Angra do Heroísmo centre, roughly 10 minutes by car; bus not checked.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [
+      {
+        "file_url": "https://commons.wikimedia.org/wiki/File:Ocotea_foetens.JPG",
+        "licence": "Public domain (PD-self)",
+        "author": "Angrense (Commons user, assumed own work)",
+        "date": "2006-02-19",
+        "note": "Description: Ocotea foetens tree, Terra Chã, Terceira, classified as a monument since 1965. Category 'Terra Chã (Angra do Heroísmo)' and 'Famous trees'. No geotag. Not judged; identity with the register tree (classified 1966 per the despacho) is unconfirmed, though it is the only classified til reported at Terra Chã."
+      }
+    ],
+    "how_to_recognise": "You can recognise it as a large til, an evergreen of the laurel family, by the road on Canada de Belém in Terra Chã. The pin is approximate, so look along the road.",
+    "verify_notes": "Register TER_IIP_38 with Street View derived coordinate (approximate). Commons photo of a classified Ocotea foetens at Terra Chã (2006) supports existence at that time; classification year in the caption (1965) differs by one year from the register despacho (6 July 1966). ALIVE: no dated sighting since 2023 found (no iNaturalist observation within 300 m, lifecheck not run for this point); flagged. Girth, height, age not in the register. The til is introduced on Terceira. No OSM tree node within 400 m. Ships only if the photograph candidate is judged to be this trunk; otherwise lead. Photo approved 2026-11-02 after looking at the pixels: tree fills the frame, daylight, survives the card crop.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ocotea_foetens.JPG",
+      "license": "Public domain",
+      "attribution": "Angrense",
+      "attribution_url": "https://commons.wikimedia.org/wiki/User:Angrense",
+      "status": "approved"
+    },
+    "story": "The til is a laurel whose home is Madeira and the Canaries, and on Terceira this one has been a tree of public interest since July 1966. It is an evergreen of the laurel family, introduced to the Azores, and it grows in Terra Chã, a parish about three kilometres west of the centre of Angra do Heroísmo.\n\nThe register gives a road, Canada de Belém, and nothing else. No girth, no height, no age. Its position came from Street View in December 2020, which suggests the tree stands by the public road, so the pin is approximate. Whether it grows behind a wall on private ground has not been established. See it from the road.\n\nThe photograph on this page was taken in 2006 by a local Wikimedia contributor. Its caption describes a til at Terra Chã classified as a monument since 1965, a year earlier than the register's date. It is the only classified til reported in the parish, which is why it is taken to be this tree, though nothing ties the picture to the register entry directly.\n\nThat 2020 Street View image is the latest trace of it. No dated sighting since has turned up, and nobody has dated the tree itself. If you pass along Canada de Belém, tell us whether it still stands, and how old the parish thinks it is.\n\nIt is about ten minutes from the centre of Angra by car; a bus connection has not been checked."
+  }
+]

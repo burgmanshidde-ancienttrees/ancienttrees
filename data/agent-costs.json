@@ -14633,6 +14633,30 @@
       "tokens": 60000,
       "trees": 1,
       "note": "Dispatcher session wrote the one story and place fields itself (no Opus write pass for one tree), corrected the age (the 1,000 years belongs to the Ban Tha Thok row), builder scripts/build_thailand_north.py, held for the pace. Tokens estimated."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "azores (Sao Miguel)",
+      "tokens": 200855,
+      "trees": 4,
+      "note": "Azores register rows: Campo de Sao Francisco pohutukawa, Furnas lake Norfolk pine, Furnas redwood (flagged), Borges Norfolk pine (flagged); Agua de Alto dragon trees to leads (hotel grounds). Overpass dead from here, api.openstreetmap.org map call works."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "angra-do-heroismo",
+      "tokens": 129833,
+      "trees": 2,
+      "note": "Terceira register rows: Posto Santo cork oak (OSM node), Terra Cha til (Commons photo); Veredas eucalyptus, Monte Brasil karri, Duque da Terceira araucarias to leads, Agualva pittosporum blocked (private)."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "azores+angra-do-heroismo",
+      "tokens": 141239,
+      "trees": 6,
+      "note": "6 stories plus 2 place blocks (azores rewritten for 7 trees, Angra new with 2); held for the pace, build with scripts/build_azores_2.py. Dispatcher looked at 3 Commons photos itself: 2 approved (azo_004, agh_002), 1 held (azo_006). About 79k tokens a tree all in, over target: register rows without size or sightings need a lot of fetching."
     }
   ]
 }

@@ -1,0 +1,215 @@
+[
+  {
+    "id": "azo_004",
+    "name": "Pohutukawa of Campo de São Francisco",
+    "species": "Pohutukawa (Metrosideros excelsa)",
+    "age_estimate": "over a century",
+    "age_min": 125,
+    "age_max": 160,
+    "age_basis": "source",
+    "girth_cm": 500,
+    "location": {
+      "address": "Campo de São Francisco (Praça 5 de Outubro), Ponta Delgada, São Miguel",
+      "latitude": 37.7376934,
+      "longitude": -25.6728396,
+      "neighbourhood": "São José, Ponta Delgada"
+    },
+    "verified_sources": [
+      "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779",
+      "https://www.openstreetmap.org/node/3106113528",
+      "https://www.wikidata.org/wiki/Q66815855",
+      "https://www.acorianooriental.pt/noticia/intervencao-no-metrosidero-do-campo-de-sao-francisco-comeca-hoje",
+      "https://emdefesadasplantasdosacores.blogspot.com/2021/12/metrosideros-em-sao-miguel.html",
+      "https://www.inaturalist.org/observations/385264767"
+    ],
+    "official_register": {
+      "name": "Património Classificado dos Açores: Exemplares Arbóreos (SMG_IIM_36), Governo dos Açores",
+      "url": "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779"
+    },
+    "access": "Free. Public square in the centre of Ponta Delgada, open at all hours (no gate found). Branches are held by steel props and cables; the tree is viewed from around it.",
+    "transport": "Central Ponta Delgada, walkable from the old town; bus stops not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "ONE OF TWO register-backed Azores icons. Register SMG_IIM_36 (Interesse Municipal under the 2015 decree; act: Diario do Governo II serie n.126, 28 May 1965, the first tree classified in the Azores per the Terra Livre / Em Defesa das Plantas blogs; the 2013 Lusa piece in Acoriano Oriental calls it classified of public interest, so the register level and the press disagree, use the register). Register species is written Metrosiderus tomentosa A. Cunn., OSM carries the same spelling; the Wikidata item, the blog and komoot say Metrosideros excelsa (pohutukawa, New Zealand Christmas tree). Kept excelsa (Wikidata label, blog by a local botanist); the register name is an older spelling/misidentification, noted. Pin: OSM node 3106113528 (natural=tree, historic=tree, name Metrosidero, wikidata Q66815855, last edited 2025-09-22) 11 m from the register point 37.737718,-25.672869 (register note: validated 29/11/2021 by orthophoto 2017/18). iNaturalist Metrosideros excelsa observations 2026-07-20 (accuracy 3 m, id 385264767) and 2026-09-26 (id 403504844) at the same spot = alive now. Lifecheck RECENT 2026-09-26. Size: OSM tags circumference 5 m, height 12, crown diameter 23 m (unsourced contributor tags, girth_cm 500 recorded with that caveat); a Tripadvisor summary seen only as a search snippet claimed 7.6 m girth and 18 m, never fetched, not used. The species 'on average' reaches 20 m and crowns over 30 m (blog) but this specimen's height is not documented. Age: blog says planted about 1870 so about 150 years; the Terra Livre 2016 post says about 125 years; also listed by A. Emiliano Costa in 1953 as a notable tree (Boletim da Comissao Reguladora dos Cereais, n.17). No documented planting record for this specimen; page should stay vague. History: 2013 municipal intervention by Planeta das Arvores (study by arborist Serafim Riem) to prolong its life: rebalancing pruning, crown reduction, more reinforcing cables between branches and more vertical props (Lusa, 29 Jul 2013). Flowers red in May to July (blog). Who introduced it is unknown (a columnist guesses Antonio Borges, no source). Dedicated Wikidata/Commons category exists: 'Metrosidero on Praca 5 de Outubro (Ponta Delgada)'. Photo approved 2026-11-02 after looking at the pixels: tree fills the frame, daylight, survives the card crop.",
+    "photo_candidates": [
+      {
+        "file": "File:Exemplar de Metrosídero Situado no Campo de São Francisco - Ponta Delgada, Ilha de São Miguel, Açores - 01.jpg (and -02 to -15)",
+        "url": "https://commons.wikimedia.org/wiki/Category:Metrosidero_on_Pra%C3%A7a_5_de_Outubro_(Ponta_Delgada)",
+        "licence": "CC BY-SA 4.0",
+        "author": "Reis Quarteu (User:Reis_Quarteu)",
+        "date": "2021-08-06"
+      },
+      {
+        "file": "File:A árvore e o coreto do campo de São Francisco.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:A_%C3%A1rvore_e_o_coreto_do_campo_de_S%C3%A3o_Francisco.jpg",
+        "licence": "CC BY-SA 4.0",
+        "author": "Senhormario",
+        "date": "2017-04-25"
+      },
+      {
+        "file": "File:AZ-ponta-delg-metrosidero.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:AZ-ponta-delg-metrosidero.jpg",
+        "licence": "CC BY-SA 4.0",
+        "author": "Balou46",
+        "date": "2022-02-10"
+      },
+      {
+        "file": "File:Ejemplar de pohutukawa (Metrosideros excelsa), Campo de San Francisco, Ponta Delgada, isla de San Miguel, Azores, Portugal, 2020-07-28, DD 09.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Category:Metrosidero_on_Pra%C3%A7a_5_de_Outubro_(Ponta_Delgada)",
+        "licence": "CC BY-SA 4.0",
+        "author": "see Commons file page (Wikidata Q28147777)",
+        "date": "2020-07-28"
+      }
+    ],
+    "how_to_recognise": "You can recognise it by the one huge, many-stemmed crown that fills the square, held up by steel props and cables, red with flowers from May to July. It stands beside the bandstand.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/AZ-ponta-delg-metrosidero.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Balou46",
+      "attribution_url": "https://commons.wikimedia.org/wiki/User:Balou46",
+      "status": "approved"
+    },
+    "story": "By the count of two Azorean plant blogs, this was the first tree the islands ever protected, classified in May 1965. It is a pohutukawa, the New Zealand Christmas tree, and it has spent well over a century spreading across the Campo de São Francisco in the middle of Ponta Delgada.\n\nThe crown is the reason to come. Volunteer mappers give it a spread of 23 metres and a trunk about five metres round. Nobody official has published those numbers, so treat them as rough. What anyone can see is the engineering. In 2013 the council brought in arborists to prolong its life. They rebalanced and reduced the crown, added cables between the limbs and set more steel props beneath them. The tree now leans on its crutches beside the bandstand.\n\nIts age rests on two local estimates. A botanist's blog says it went in around 1870, which makes it about 150; a post from 2016 put it at about 125. No planting record survives. It was already on a list of the island's notable trees in 1953.\n\nEven its name is disputed. The regional register writes Metrosideros tomentosa, an older name; Wikidata and the local botanist say Metrosideros excelsa. The register also files it as of municipal interest, where the press has called it of public interest.\n\nCome between May and July, when the crown flowers red. The square is public and open at all hours.",
+    "best_time": {
+      "months": [
+        5,
+        6,
+        7
+      ],
+      "kind": "flowers",
+      "label": "May to July, when the whole crown flowers red"
+    }
+  },
+  {
+    "id": "azo_005",
+    "name": "Giant Norfolk Island Pine of Lagoa das Furnas",
+    "species": "Norfolk Island Pine (Araucaria heterophylla)",
+    "age_estimate": "roughly 150 to 200 years",
+    "age_min": 165,
+    "age_max": 215,
+    "age_basis": "source",
+    "girth_cm": 597,
+    "height_m": 50.1,
+    "location": {
+      "address": "Margem sul da Lagoa das Furnas, beside the Centro de Monitorização e Investigação das Furnas, Furnas, Povoação, São Miguel",
+      "latitude": 37.7508382,
+      "longitude": -25.3387692,
+      "neighbourhood": "Lagoa das Furnas, Furnas"
+    },
+    "verified_sources": [
+      "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779",
+      "https://www.dn.pt/arquivo/diario-de-noticias/maior-araucaria-da-europa-foi-descoberta-nas-furnas.html",
+      "https://www.acorianooriental.pt/noticia/proteccao-legal-para-araucaria-gigante-das-furnas-212597",
+      "https://trails.visitazores.com/pt-pt/trilhos-dos-acores/sao-miguel/lagoa-das-furnas",
+      "https://www.openstreetmap.org/node/10106097684",
+      "https://www.inaturalist.org/observations/381706378"
+    ],
+    "official_register": {
+      "name": "Património Classificado dos Açores: Exemplares Arbóreos (SMG_IIP_66, Interesse Público, Resolução do Conselho do Governo n.º 13/2011 of 2 Feb 2011), Governo dos Açores",
+      "url": "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779"
+    },
+    "access": "Free. Stands on the lakeshore on public regional-government ground (register owner 'Público/RAA', land of SPRAçores), beside the flat dirt lakeside trail (PRC06SMI circular walk) near the Furnas environmental interpretation centre (OSM: museum, Tue-Sun 10:00-17:00). An information board stands next to the tree (OSM node 13027000663).",
+    "transport": "Furnas, about 40 km east of Ponta Delgada by road; reached on foot along the signed PRC06SMI lake walk (9.4 km loop from Furnas village) or by car to the lakeshore parking at the interpretation centre. Bus links not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register SMG_IIP_66, classified of public interest by Resolucao do Conselho do Governo 13/2011 (press reports it in Jan 2011). Two independent press sources agree on height: Lusa/DN 16 Jan 2010 quotes SPRAcores administrator Helia Palha: found during clearing of an old wood on the south shore, species Araucaria heterophylla, 'between 150 and 200 years', 50.10 m tall and 1.90 m in DIAMETER; Acoriano Oriental 13 Jan 2011: about 50 m tall, trunk 'diameter' of nearly six metres. The two diameters conflict; 1.90 m x pi = 5.97 m, so the 'six metres' is almost certainly the circumference (girth_cm 597 derived from the 1.90 m diameter; OSM tags circumference 1.9 m, which confuses the two). Age is the SPRAcores estimate at discovery in 2010, so 16 years added to 150-200 gives 166-216 (rounded). Press and the official trail page call it the largest classified Norfolk pine in Europe / among the largest in the world: attribute, not verified; the OSM board text says 'One of the world's largest Norfolk Island Pines'. OSM height tag 50 matches. Pin: OSM node 10106097684 (natural=tree, species Araucaria heterophylla, last edit 2026-10-08), 20 m from register point 37.750977,-25.338702. iNaturalist: Araucaria heterophylla observations 2026-07-15 (accuracy 7 m, id 381706378), 2026-07-03, 2025-08-02 (accuracy 14 m) all within about 25 m = alive, GPS-supported. Lifecheck RECENT 2026-07-15. Discovery story: found 'by chance' in January 2010 during requalification work on the lake margins, 'which drew attention by its size'; protection means a 50 m protection radius and no felling or pruning without authorisation (Acoriano Oriental). Official trail page (Governo dos Acores, visitazores) places 'the largest classified araucaria in Europe' on the PRC06SMI route after the interpretation centre.",
+    "photo_candidates": [],
+    "how_to_recognise": "You can recognise it by its height, a tiered conifer of about 50 metres rising above everything on the lakeshore, with an information board beside it. It stands on the lake walk near the Furnas interpretation centre.",
+    "story": "A tree fifty metres tall stood on the shore of Lagoa das Furnas, and nobody had noticed it until January 2010. Workers clearing an old wood along the south margin of the lake came across it by chance, and it caught their attention by its size. SPRAçores, the regional company that manages the land, put it at 50.10 metres with a trunk 1.90 metres across.\n\nThat diameter means a trunk about six metres round, and a year later a newspaper reported nearly six metres, but called it the diameter. SPRAçores also estimated its age at discovery at between 150 and 200 years, so somewhere around 165 to 215 today. No planting record exists.\n\nIt is a Norfolk Island Pine, from a small island in the Pacific, and within a year of being found the Azores classified it of public interest. That gave it a 50-metre protection radius, and nobody may fell or prune it without permission.\n\nThe press and the regional government's trail page call it the largest classified araucaria in Europe, and the board beside it says one of the largest Norfolk Island Pines in the world. Neither claim comes with a comparison we could check. In Furnas village, Parque Terra Nostra says its own Norfolk pine reaches 52 metres, by the park's figure.\n\nIt is free to see. The signed PRC06SMI walk, a 9.4 km loop from Furnas village, passes it after the interpretation centre, where there is lakeshore parking."
+  },
+  {
+    "id": "azo_006",
+    "name": "Coast Redwood of Mata-Jardim José do Canto",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Mata-Jardim José do Canto, Caminho da Margem Sul da Lagoa das Furnas, 9675-040 Furnas, Povoação, São Miguel (register site name: Lugar do Torninho)",
+      "latitude": 37.7426019,
+      "longitude": -25.3343815,
+      "neighbourhood": "Lagoa das Furnas, Furnas"
+    },
+    "verified_sources": [
+      "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779",
+      "https://www.openstreetmap.org/node/6550437710",
+      "https://www.wikidata.org/wiki/Q66815867",
+      "https://www.matajosedocanto.com/visit.html",
+      "https://www.inaturalist.org/observations/168811343"
+    ],
+    "official_register": {
+      "name": "Património Classificado dos Açores: Exemplares Arbóreos (SMG_IIM_34, Interesse Municipal, despacho of 14 Oct 1970), Governo dos Açores",
+      "url": "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779"
+    },
+    "access": "Paid entry, inside the private botanical garden Mata-Jardim José do Canto (open to the public since 2014): EUR 5 per person from age 13, under 13 free. April to September 10:00-18:00 daily; October to March 09:00-17:00, Tuesday to Sunday (closed Mondays in winter). Last admission 30 minutes before closing (official site, read 2026-11-02).",
+    "transport": "Garden entrance on the south shore of Lagoa das Furnas, about 40 km (about 40 minutes by car) from Ponta Delgada per the garden's own page; bus links not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: single register plus map evidence, no measurement. Register SMG_IIM_34 'Sequoia ... Lugar do Torninho, Furnas' (despacho 14 Oct 1970; register note: location supplied by the Terceira environment service). The register gives no girth, height or age. That this tree stands INSIDE Mata-Jardim Jose do Canto is established only indirectly: the Commons category named after the register item (Wikidata Q66815867, 'Lugar do Torninho') holds CC0 photographs by Jan Helebrant whose file description says 'Mata Jardim Jose do Canto botanic garden', geotagged 70-100 m from the pin; the garden's own page (Futurismo/Visit Ponta Delgada text) and a travel blog mention towering/huge sequoias in the garden. Not a fact that the garden's marketing names THIS tree. Pin: OSM node 6550437710 (natural=tree, genus Sequoia, wikidata Q66815867, last edit 2026-04-21) sits 98 m from the register point 37.742861,-25.333321; its coordinates equal the Wikidata P625 to 7 decimals, so it may be copied from Wikidata rather than surveyed; iNaturalist Sequoia sempervirens observations of 2023-06-22 (id 168811343, 37.742597,-25.334294, 8 m from the node, no accuracy given) and 2023-07-17 (id 194535851, accuracy 113 m) support the spot. Called confirmed on the OSM-node criterion; downgrade to approximate if that is judged copied. Alive: lifecheck RECENT 2026-08-20 (iNat id 393295213). A 1953 text (A. Emiliano Costa, Boletim da Comissao Reguladora dos Cereais n.17, quoted in the Terra Livre blog) gives a sequoia of 4.27 m perimeter at breast height in the Mata-Jardim Jose do Canto on the lake margin; NOT recorded as this tree's girth because the text does not say it is the classified one. Age: garden laid out 1845-1885 by José do Canto but no source dates this specimen; left empty (no bridge claim). Winter hours conflict: a search summary said open daily, the garden's own visit and contact pages both say Tuesday to Sunday in winter; used the pages. Photo held: a person poses at the trunk and nothing ties the file to the register trunk (2026-11-02).",
+    "photo_candidates": [
+      {
+        "file": "File:2019-05-24 12-46-53 PT Sao Miguel JHe K70 (54509873518).jpg (Wikidata P18 image of the register item)",
+        "url": "https://commons.wikimedia.org/wiki/File:2019-05-24_12-46-53_PT_Sao_Miguel_JHe_K70_(54509873518).jpg",
+        "licence": "CC0",
+        "author": "Jan Helebrant",
+        "date": "2019-05-24",
+        "geotag": "37.741902,-25.333348"
+      },
+      {
+        "file": "File:2019-05-24 12-46-42 PT Sao Miguel JHe K70 (54509797189).jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:2019-05-24_12-46-42_PT_Sao_Miguel_JHe_K70_(54509797189).jpg",
+        "licence": "CC0",
+        "author": "Jan Helebrant",
+        "date": "2019-05-24",
+        "geotag": "37.741950,-25.333367"
+      },
+      {
+        "file": "File:2019-05-24 12-45-22 PT Sao Miguel JHe K70 (54509962275).jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:2019-05-24_12-45-22_PT_Sao_Miguel_JHe_K70_(54509962275).jpg",
+        "licence": "CC0",
+        "author": "Jan Helebrant",
+        "date": "2019-05-24",
+        "geotag": "37.742291,-25.333506"
+      },
+      {
+        "file": "File:Sequoia - Furnas.JPG",
+        "url": "https://commons.wikimedia.org/wiki/File:Sequoia_-_Furnas.JPG",
+        "licence": "CC BY-SA 4.0",
+        "author": "Azorsony",
+        "date": "2014-09-11"
+      }
+    ],
+    "how_to_recognise": "You can recognise it as the redwood standing above the garden's other trees. It stands inside the ticketed Mata-Jardim José do Canto on the lake's south shore, near the start of the garden's Salto do Rosal waterfall trail.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sequoia_-_Furnas.JPG",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Azorsony",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Sequoia_-_Furnas.JPG",
+      "status": "held"
+    },
+    "story": "In October 1970 a redwood on the south shore of Lagoa das Furnas was classified of municipal interest, and the register has said almost nothing about it since. No girth, no height, no age. Just the genus and a place name, Lugar do Torninho.\n\nThat place, as far as the evidence goes, lies inside the Mata-Jardim José do Canto, a botanical garden that José do Canto laid out between 1845 and 1885 and that has been open to the public since 2014. The link is indirect. Photographs filed under the register entry describe the garden, the tree is mapped within it, and nature-app sightings of a coast redwood agree with the spot. The garden's own pages mention towering sequoias, plural, without naming this one.\n\nA survey of the island's notable trees from 1953 recorded a sequoia 4.27 metres round at chest height in this garden by the lake. The text does not say it is the tree classified seventeen years later, so that number stays with the survey and off this trunk.\n\nNor has anyone dated it. The garden goes back to 1845, but no source says when this redwood went in. If you know, tell us.\n\nEntry is paid, 5 euros from age 13 and free below. From April to September the garden opens daily from 10:00 to 18:00; from October to March, 09:00 to 17:00 and closed on Mondays. It is about 40 minutes by car from Ponta Delgada."
+  },
+  {
+    "id": "azo_007",
+    "name": "Norfolk Island Pine of Jardim António Borges",
+    "species": "Norfolk Island Pine (Araucaria heterophylla)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Jardim António Borges, Rua António Borges, Ponta Delgada, São Miguel (near the small lake)",
+      "latitude": 37.7441844,
+      "longitude": -25.6765058,
+      "neighbourhood": "Bairro da Vitória, São José, Ponta Delgada"
+    },
+    "verified_sources": [
+      "https://siaram.azores.gov.pt/patrimonio-cultural/jardins-dos-acores/Jardim-Antonio-Borges/Jardim-AntonioBorges.pdf",
+      "https://www.openstreetmap.org/node/12025325543",
+      "https://www.inaturalist.org/observations/381252759"
+    ],
+    "access": "Free. Municipal garden of Ponta Delgada, public and free since 1957 (SIARAM). OSM opening_hours tag (sourced to the council page, not re-read): June to October Mon-Fri 09:00-20:00, Sat-Sun 09:00-21:00; November to May daily 09:00-18:00.",
+    "transport": "Inside Ponta Delgada, about 130 m from the garden's famous rubber tree (azo_001); bus stops not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: ground-owner source only, no measurement. SIARAM (Governo dos Acores, garden description) lists the 'majestosa Araucaria-de-Norfolk (Araucaria heterophylla) nas imediacoes do lago pequeno' among the largest and oldest specimens of the garden's botanical route, in the northern sector; the same text names the colossal Australian fig (live azo_001), a columnar araucaria by the Tea House (Araucaria columnaris) and a Bunya (A. bidwillii), so a visitor must tell the Norfolk pine apart from these. Not a registered tree. Pin: OSM node 12025325543 (natural=tree, name Norfolk Island Pine, 2024-07-01, version 1) inside the garden relation 12768197, beside the Grotto node; iNaturalist Araucaria genus observation 2026-07-08 (id 381252759, accuracy 5 m) lies 7 m from the node and an A. heterophylla observation 2026-06-05 (id 369308413) about 30 m: the node and iNat agree, but the node is a single volunteer's mapping. No height, girth or age in any source seen. Alive: lifecheck RECENT 2026-09-28. The page should say that the garden holds several araucaria species. Because the supporting evidence is thin, expect a short entry; the tree is worth a place only as the tallest conifer of a garden already on the map.",
+    "photo_candidates": [],
+    "how_to_recognise": "You can recognise it as the tall tiered conifer near the small lake in the northern half of the garden. The columnar araucaria by the Tea House and the Bunya Pine below it are different species.",
+    "story": "The Jardim António Borges grows at least three kinds of araucaria, and only one of them comes from Norfolk Island. The regional government's description of the garden singles this one out and counts it among the largest and oldest trees on the garden's botanical route. It stands near the small lake, in the northern half of the garden.\n\nThe other two are worth knowing, because they are what you will mistake it for. A columnar araucaria, Araucaria columnaris, grows by the Tea House, and a Bunya Pine stands below it. The Norfolk Island Pine is the tall tiered conifer by the small lake.\n\nThat government description is nearly all there is. The tree is not on the Azores' register of classified trees, nobody has published its height or girth, and the pin comes from a single volunteer's map, which nature-app sightings of araucarias a few metres away support. The garden was laid out between 1858 and 1861 and has been public and free since 1957, but no source says this pine went in with the first planting, so its age stays open. If you know it, tell us.\n\nWhat it does have is company. About 130 metres away grows the garden's colossal Moreton Bay Fig, the tree most visitors come for, so one walk takes in both. The garden is in central Ponta Delgada. From June to October it opens 09:00 to 20:00 on weekdays and to 21:00 at weekends; from November to May, 09:00 to 18:00 daily."
+  }
+]
