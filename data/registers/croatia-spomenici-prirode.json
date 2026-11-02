@@ -1,123 +1,505 @@
 {
- "source": "Bioportal, Informacijski sustav zaštite prirode: Registar zaštićenih područja (ProtectedSite, INSPIRE)",
- "endpoint": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326",
- "country": "Croatia",
- "designation": "spomenik prirode (natural monument) under the Nature Protection Act; an individual tree or group of trees of exceptional value is one of its categories",
- "licence": "No restrictions stated by the service",
- "licence_proof": "The WFS GetCapabilities declares AccessConstraints 'nema ograničenja' (no restrictions). Read 2026-08-16. Recorded honestly as a service declaration rather than a named licence: Croatia states no CC licence for this dataset, so treat it as permission to use rather than as a licence tag, and re-check before anything derived is redistributed.",
- "attribution": "Zavod za zaštitu okoliša i prirode, Bioportal, extract of 2026-08-16",
- "fetched": "2026-08-16",
- "scope": "413 protected sites nationally. 46 are named as trees; only 12 of those carry a geometry this reader could turn into a point, so 34 tree-named entries are KNOWN TO EXIST and are not in this file. That gap is the register's own INSPIRE encoding rather than a filter decision, and it is the first thing to fix if Croatia ever matters more than Dubrovnik's three.",
- "caveat": "This is the general protected-AREAS register, not a tree register, so the tree filter is a Croatian name regex and will have edge cases both ways. Geometry is polygons for nearly every entry, so coordinates are ring centroids and pins default to approximate. Names that say skupina, čempresi, platane or dvije mark several trees under one designation and carry publishable=false under the collectible-point rule. No species field, no age, no girth, no vitality: the name is the only descriptor.",
- "count": 12,
- "trees": [
-  {
-   "name_hr": "TRSTENO - PLATANA I",
-   "designation": null,
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4328\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 42.713882,
-   "longitude": 17.9789,
-   "geometry": "polygon centroid",
-   "publishable": true
-  },
-  {
-   "name_hr": "SITSKO-ŽUTSKA OTOČNA SKUPINA",
-   "designation": "ProtectedLandscapeOrSeascape",
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4415\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 43.88009,
-   "longitude": 15.308296,
-   "geometry": "polygon centroid",
-   "publishable": false
-  },
-  {
-   "name_hr": "DEBELA LIPA - VELIKA REBAR",
-   "designation": "habitatSpeciesManagementArea",
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4333\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 45.376944,
-   "longitude": 14.749177,
-   "geometry": "polygon centroid",
-   "publishable": true
-  },
-  {
-   "name_hr": "LUN - DIVLJE MASLINE",
-   "designation": "habitatSpeciesManagementArea",
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4708\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 44.661982,
-   "longitude": 14.77907,
-   "geometry": "polygon centroid",
-   "publishable": true
-  },
-  {
-   "name_hr": "ROVINJ - DRVORED ČEMPRESA",
-   "designation": null,
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4469\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 45.093468,
-   "longitude": 13.645614,
-   "geometry": "polygon centroid",
-   "publishable": false
-  },
-  {
-   "name_hr": "ČEMPRESADA \\",
-   "designation": "habitatSpeciesManagementArea",
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4314\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 42.975692,
-   "longitude": 17.156465,
-   "geometry": "polygon centroid",
-   "publishable": true
-  },
-  {
-   "name_hr": "STANIŠTE TISA NA PAPUKU",
-   "designation": "naturalMonument",
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4734\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 45.571262,
-   "longitude": 17.522727,
-   "geometry": "polygon centroid",
-   "publishable": true
-  },
-  {
-   "name_hr": "TRSTENO - PLATANA II",
-   "designation": null,
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4336\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 42.71406,
-   "longitude": 17.978699,
-   "geometry": "polygon centroid",
-   "publishable": true
-  },
-  {
-   "name_hr": "DUBROVNIK - PLATANA",
-   "designation": null,
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4740\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 42.642318,
-   "longitude": 18.106029,
-   "geometry": "polygon centroid",
-   "publishable": true
-  },
-  {
-   "name_hr": "NOSKOVAČKA DUBRAVA - SKUPINA STABALA",
-   "designation": null,
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4467\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 45.780426,
-   "longitude": 17.831351,
-   "geometry": "polygon centroid",
-   "publishable": false
-  },
-  {
-   "name_hr": "KORČULA - DRVORED ČEMPRESA",
-   "designation": null,
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4433\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 42.94507,
-   "longitude": 17.143178,
-   "geometry": "polygon centroid",
-   "publishable": false
-  },
-  {
-   "name_hr": "LIPA NA MEDVEDNICI",
-   "designation": "ProtectedLandscapeOrSeascape",
-   "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4580\", \"namespace\": \"HR.MZOE.ZP\"}",
-   "latitude": 45.931623,
-   "longitude": 16.067006,
-   "geometry": "polygon centroid",
-   "publishable": true
-  }
- ]
+  "source": "Bioportal, Informacijski sustav zaštite prirode: Registar zaštićenih područja (ProtectedSite, INSPIRE)",
+  "endpoint": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326",
+  "country": "Croatia",
+  "designation": "spomenik prirode (natural monument) under the Nature Protection Act; an individual tree or group of trees of exceptional value is one of its categories",
+  "licence": "No restrictions stated by the service",
+  "licence_proof": "The WFS GetCapabilities declares AccessConstraints 'nema ograničenja' (no restrictions). Read 2026-08-16. Recorded honestly as a service declaration rather than a named licence: Croatia states no CC licence for this dataset, so treat it as permission to use rather than as a licence tag, and re-check before anything derived is redistributed.",
+  "attribution": "Zavod za zaštitu okoliša i prirode, Bioportal, extract of 2026-08-16",
+  "fetched": "2026-11-02",
+  "scope": "413 protected sites nationally. Re-read 2026-11-02 with MultiPoint and MultiPolygon geometry: 49 tree rows with a point (the 2026-08-16 reader kept only 12 because it read Polygon alone). A MultiPoint row is the register's own point for the tree; a polygon row's point is a ring centroid.",
+  "caveat": "This is the general protected-AREAS register, not a tree register, so the tree filter is a Croatian name regex and will have edge cases both ways. Point rows (geometry 'point') are the register's own coordinate, usually within tens of metres; polygon rows are ring centroids. Pins default to approximate either way until checked. Names that say skupina, čempresi, platane or dvije mark several trees under one designation and carry publishable=false under the collectible-point rule. No species field, no age, no girth, no vitality: the name is the only descriptor.",
+  "count": 49,
+  "trees": [
+    {
+      "name_hr": "VARAŽDINSKE TOPLICE - LIPE",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4304\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.20961,
+      "longitude": 16.421128,
+      "geometry": "point",
+      "protected_since": "1963-12-17",
+      "publishable": false
+    },
+    {
+      "name_hr": "BOR NA CRKVICI U NEREŽIŠĆU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4462\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 43.33045,
+      "longitude": 16.573754,
+      "geometry": "point",
+      "protected_since": "1969-04-06",
+      "publishable": true
+    },
+    {
+      "name_hr": "ŽIVOGOŠĆE - ČEMPRESI KOD SAMOSTANA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4490\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 43.184056,
+      "longitude": 17.164239,
+      "geometry": "point",
+      "protected_since": "1970-03-01",
+      "publishable": false
+    },
+    {
+      "name_hr": "ŽIVOGOŠĆE - ČEMPRESI NA GROBLJU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4491\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 43.188244,
+      "longitude": 17.167475,
+      "geometry": "point",
+      "protected_since": "1970-03-01",
+      "publishable": false
+    },
+    {
+      "name_hr": "HRAST U ŽRNOVU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4340\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.934194,
+      "longitude": 17.136575,
+      "geometry": "point",
+      "protected_since": "1952-07-02",
+      "publishable": true
+    },
+    {
+      "name_hr": "GUPČEVA LIPA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4381\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.973327,
+      "longitude": 16.013493,
+      "geometry": "point",
+      "protected_since": "1957-06-26",
+      "publishable": true
+    },
+    {
+      "name_hr": "OREBIĆ - SKUPINA ČEMPRESA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4416\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.981953,
+      "longitude": 17.162753,
+      "geometry": "point",
+      "protected_since": "1960-04-11",
+      "publishable": false
+    },
+    {
+      "name_hr": "DARUVAR - GINKO",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4420\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.595447,
+      "longitude": 17.22084,
+      "geometry": "point",
+      "protected_since": "1967-10-03",
+      "publishable": true
+    },
+    {
+      "name_hr": "DONJA DUBRAVA - GINKO",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4662\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.316303,
+      "longitude": 16.809202,
+      "geometry": "point",
+      "protected_since": "1995-11-10",
+      "publishable": true
+    },
+    {
+      "name_hr": "HRAST U DONJEM VIDOVCU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4663\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.329854,
+      "longitude": 16.783237,
+      "geometry": "point",
+      "protected_since": "1995-11-10",
+      "publishable": true
+    },
+    {
+      "name_hr": "VUČETINEC - TULIPANOVAC",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4667\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.452868,
+      "longitude": 16.363713,
+      "geometry": "point",
+      "protected_since": "1995-11-10",
+      "publishable": false
+    },
+    {
+      "name_hr": "SVETI URBAN - DVIJE PLATANE",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4666\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.463978,
+      "longitude": 16.27322,
+      "geometry": "point",
+      "protected_since": "1995-11-10",
+      "publishable": false
+    },
+    {
+      "name_hr": "HRAST U GULJANOVOM DOLCU I",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4726\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.187659,
+      "longitude": 14.706732,
+      "geometry": "point",
+      "protected_since": "2002-03-04",
+      "publishable": true
+    },
+    {
+      "name_hr": "TRSTENO - PLATANA I",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4328\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.713882,
+      "longitude": 17.9789,
+      "geometry": "polygon centroid",
+      "protected_since": "1951-01-23",
+      "publishable": true
+    },
+    {
+      "name_hr": "NEDELIŠĆE - PLATANA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4675\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.377302,
+      "longitude": 16.38567,
+      "geometry": "point",
+      "protected_since": "1963-02-03",
+      "publishable": true
+    },
+    {
+      "name_hr": "HRASTOVI KOD ŠUMARIJE REPAŠ",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4680\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.15368,
+      "longitude": 17.113445,
+      "geometry": "point",
+      "protected_since": "1998-10-17",
+      "publishable": false
+    },
+    {
+      "name_hr": "HRAST U GULJANOVOM DOLCU II",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4778\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.187661,
+      "longitude": 14.706833,
+      "geometry": "point",
+      "protected_since": "2002-03-04",
+      "publishable": true
+    },
+    {
+      "name_hr": "ČALINEC - TISA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4744\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.290517,
+      "longitude": 16.181553,
+      "geometry": "point",
+      "protected_since": "1963-05-21",
+      "publishable": true
+    },
+    {
+      "name_hr": "HVAR - ČEMPRES",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4402\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 43.167991,
+      "longitude": 16.442955,
+      "geometry": "point",
+      "protected_since": "1948-09-05",
+      "publishable": true
+    },
+    {
+      "name_hr": "DEBELA LIPA - VELIKA REBAR",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4333\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.376944,
+      "longitude": 14.749177,
+      "geometry": "polygon centroid",
+      "protected_since": "1964-09-20",
+      "publishable": true
+    },
+    {
+      "name_hr": "LUN - DIVLJE MASLINE",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4708\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 44.661982,
+      "longitude": 14.77907,
+      "geometry": "polygon centroid",
+      "protected_since": "1963-03-15",
+      "publishable": false
+    },
+    {
+      "name_hr": "ROVINJ - DRVORED ČEMPRESA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4469\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.093468,
+      "longitude": 13.645614,
+      "geometry": "polygon centroid",
+      "protected_since": "1969-07-02",
+      "publishable": false
+    },
+    {
+      "name_hr": "ČEMPRESADA \\",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4314\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.975637,
+      "longitude": 17.157205,
+      "geometry": "polygon centroid",
+      "protected_since": "1964-01-22",
+      "publishable": true
+    },
+    {
+      "name_hr": "TISA NA HORVATOVIM STUBAMA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4348\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.923821,
+      "longitude": 15.965349,
+      "geometry": "point",
+      "protected_since": "1964-12-28",
+      "publishable": true
+    },
+    {
+      "name_hr": "SOLIN - MOČVARNI ČEMPRES",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4724\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 43.533632,
+      "longitude": 16.485647,
+      "geometry": "point",
+      "protected_since": "1996-04-04",
+      "publishable": true
+    },
+    {
+      "name_hr": "TISA U MORAVICAMA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4353\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.429592,
+      "longitude": 15.050786,
+      "geometry": "point",
+      "protected_since": "1965-01-07",
+      "publishable": true
+    },
+    {
+      "name_hr": "PINIJE U KAROJBI",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4385\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.299651,
+      "longitude": 13.822757,
+      "geometry": "point",
+      "protected_since": "1966-05-19",
+      "publishable": false
+    },
+    {
+      "name_hr": "ZELENI HRAST",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4390\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 44.194772,
+      "longitude": 15.434915,
+      "geometry": "point",
+      "protected_since": "1957-11-07",
+      "publishable": true
+    },
+    {
+      "name_hr": "DESINIĆ - LIPA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4774\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.156093,
+      "longitude": 15.664616,
+      "geometry": "point",
+      "protected_since": "2012-08-02",
+      "publishable": true
+    },
+    {
+      "name_hr": "BEDNJA - DVIJE LIPE",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4478\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.23024,
+      "longitude": 15.984404,
+      "geometry": "point",
+      "protected_since": "1969-11-18",
+      "publishable": false
+    },
+    {
+      "name_hr": "KAŠĆERGA - ČEMPRES",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4534\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.30297,
+      "longitude": 13.900533,
+      "geometry": "point",
+      "protected_since": "1972-05-30",
+      "publishable": true
+    },
+    {
+      "name_hr": "JALŽABET - PLATANA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4291\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.259975,
+      "longitude": 16.475096,
+      "geometry": "point",
+      "protected_since": "1963-10-02",
+      "publishable": true
+    },
+    {
+      "name_hr": "HRAST U KAŠTEL GOMILICI",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4722\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 43.549436,
+      "longitude": 16.396721,
+      "geometry": "point",
+      "protected_since": "1996-04-04",
+      "publishable": true
+    },
+    {
+      "name_hr": "BELINA LIPA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4384\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.08867,
+      "longitude": 16.323389,
+      "geometry": "point",
+      "protected_since": "1966-04-20",
+      "publishable": true
+    },
+    {
+      "name_hr": "TISA U ŠUPLJAKU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4347\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.906782,
+      "longitude": 15.947847,
+      "geometry": "point",
+      "protected_since": "1964-12-28",
+      "publishable": true
+    },
+    {
+      "name_hr": "HRASTOVI U DRENOVCIMA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4438\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 44.918406,
+      "longitude": 18.856982,
+      "geometry": "point",
+      "protected_since": "1961-12-10",
+      "publishable": false
+    },
+    {
+      "name_hr": "MASLINA U KAŠTEL ŠTAFILIĆU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4639\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 43.55055,
+      "longitude": 16.335669,
+      "geometry": "point",
+      "protected_since": "1990-04-01",
+      "publishable": true
+    },
+    {
+      "name_hr": "ČARA - ČEMPRES",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4524\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.935398,
+      "longitude": 16.93436,
+      "geometry": "point",
+      "protected_since": "1948-11-12",
+      "publishable": true
+    },
+    {
+      "name_hr": "VARAŽDIN - PLATANA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4570\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.315402,
+      "longitude": 16.346812,
+      "geometry": "point",
+      "protected_since": "1975-12-10",
+      "publishable": true
+    },
+    {
+      "name_hr": "SAMOBOR - TISA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4741\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.801829,
+      "longitude": 15.712972,
+      "geometry": "point",
+      "protected_since": "1963-04-02",
+      "publishable": true
+    },
+    {
+      "name_hr": "HRAST GALŽENJAK",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4773\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.978611,
+      "longitude": 15.942964,
+      "geometry": "point",
+      "protected_since": "2012-08-02",
+      "publishable": true
+    },
+    {
+      "name_hr": "KESTEN U KOPRIVNICI",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4716\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 46.177967,
+      "longitude": 16.784381,
+      "geometry": "point",
+      "protected_since": "2001-10-13",
+      "publishable": true
+    },
+    {
+      "name_hr": "HRAST U RAKITOVCU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4723\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.653187,
+      "longitude": 16.140484,
+      "geometry": "point",
+      "protected_since": "2001-12-07",
+      "publishable": true
+    },
+    {
+      "name_hr": "HRASTOVI U DJEDOVICI",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4735\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.56496,
+      "longitude": 17.502642,
+      "geometry": "point",
+      "protected_since": "2004-10-22",
+      "publishable": false
+    },
+    {
+      "name_hr": "STANIŠTE TISA NA PAPUKU",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4734\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.571262,
+      "longitude": 17.522727,
+      "geometry": "polygon centroid",
+      "protected_since": "2005-09-21",
+      "publishable": true
+    },
+    {
+      "name_hr": "TRSTENO - PLATANA II",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4336\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.71406,
+      "longitude": 17.978699,
+      "geometry": "polygon centroid",
+      "protected_since": "1951-01-23",
+      "publishable": true
+    },
+    {
+      "name_hr": "DUBROVNIK - PLATANA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4740\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.642318,
+      "longitude": 18.106029,
+      "geometry": "polygon centroid",
+      "protected_since": "2010-03-26",
+      "publishable": true
+    },
+    {
+      "name_hr": "KORČULA - DRVORED ČEMPRESA",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4433\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 42.94507,
+      "longitude": 17.143178,
+      "geometry": "polygon centroid",
+      "protected_since": "1948-11-12",
+      "publishable": false
+    },
+    {
+      "name_hr": "LIPA NA MEDVEDNICI",
+      "designation": null,
+      "inspire_id": "{\"@dataType\": \"Identifier\", \"localId\": \"ps.4580\", \"namespace\": \"HR.MZOE.ZP\"}",
+      "latitude": 45.931623,
+      "longitude": 16.067006,
+      "geometry": "polygon centroid",
+      "protected_since": "1975-04-14",
+      "publishable": true
+    }
+  ]
 }

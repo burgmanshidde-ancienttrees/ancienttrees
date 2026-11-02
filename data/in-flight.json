@@ -113,24 +113,31 @@
       "trees_at_claim": null
     },
     {
-      "target": "porec",
+      "target": "rijeka",
       "kind": "verify",
       "by": "session-ab812d69",
-      "claimed_at": "2026-11-02T17:27:23+00:00",
+      "claimed_at": "2026-11-02T17:27:35+00:00",
       "trees_at_claim": null
     },
     {
-      "target": "taormina",
+      "target": "korcula",
       "kind": "verify",
-      "by": "session-2df41976",
-      "claimed_at": "2026-11-02T17:27:25+00:00",
+      "by": "session-ab812d69",
+      "claimed_at": "2026-11-02T17:28:47+00:00",
       "trees_at_claim": null
     },
     {
-      "target": "amalfi",
+      "target": "hvar",
       "kind": "verify",
-      "by": "session-2df41976",
-      "claimed_at": "2026-11-02T17:27:31+00:00",
+      "by": "session-ab812d69",
+      "claimed_at": "2026-11-02T17:28:53+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "kastela",
+      "kind": "verify",
+      "by": "session-ab812d69",
+      "claimed_at": "2026-11-02T17:28:59+00:00",
       "trees_at_claim": null
     }
   ]
