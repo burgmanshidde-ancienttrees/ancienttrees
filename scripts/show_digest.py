@@ -116,6 +116,18 @@ def tree_page(tree_id):
     return None
 
 
+def photo_state(row, processed):
+    """What happened to a reader's photograph, in plain words. The app's own
+    status ("mine" means the reader collected the tree) read as if the photo
+    were ours (Hidde, 2026-11-02: "can we change the word mine")."""
+    outcome = (processed.get(row.get("id")) or {}).get("outcome")
+    said = {"published": "on the page", "added": "on the page", "stripped": "on the page",
+            "held": "held", "rejected": "not used"}.get(outcome, outcome or "waiting for a look")
+    if row.get("status") == "mine":
+        said = "tree collected; photo " + said
+    return said
+
+
 def readers_in_full(day):
     """Everything a stranger sent since Hidde last looked (else since the
     digest's day), word for word.
@@ -173,6 +185,10 @@ def readers_in_full(day):
         # it, is shown (scripts/sighting_changes.py).
         import sighting_changes
         shown = sighting_changes.load()
+        try:
+            processed = json.load(open(os.path.join(ROOT, "data", "sightings-processed.json"))).get("done", {})
+        except (OSError, ValueError):
+            processed = {}
         pending = {}
         for r in inbox.get("/rest/v1/sightings?select=%s"
                            "&shared=eq.true&updated_at=gte.%s&order=updated_at.asc"
@@ -186,7 +202,7 @@ def readers_in_full(day):
             page = tree_page(r["tree_id"]) if r.get("tree_id") else None
             rows.append((r["updated_at"], "app photograph" + (" (changed since you saw it)" if state == "changed" else ""),
                          r.get("tree_id") or r.get("name") or "-",
-                         r.get("note") or "", [page] if page else [], r.get("status") or ""))
+                         r.get("note") or "", [page] if page else [], photo_state(r, processed)))
         with open(os.path.join(OUT, "sightings-pending.json"), "w", encoding="utf-8") as fh:
             json.dump(pending, fh)
     except Exception as e:
