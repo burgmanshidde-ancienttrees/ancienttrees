@@ -251,6 +251,20 @@
       "by": "session-12b3970e",
       "claimed_at": "2026-11-02T19:06:26+00:00",
       "trees_at_claim": 13
+    },
+    {
+      "target": "monchique",
+      "kind": "verify",
+      "by": "session-dc034001",
+      "claimed_at": "2026-11-02T19:06:49+00:00",
+      "trees_at_claim": 3
+    },
+    {
+      "target": "faro",
+      "kind": "verify",
+      "by": "session-dc034001",
+      "claimed_at": "2026-11-02T19:06:59+00:00",
+      "trees_at_claim": null
     }
   ]
 }
