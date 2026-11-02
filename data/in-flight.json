@@ -120,20 +120,6 @@
       "trees_at_claim": null
     },
     {
-      "target": "Rhodes",
-      "kind": "verify",
-      "by": "session-a3d7971d",
-      "claimed_at": "2026-11-02T18:53:54+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "Kos",
-      "kind": "verify",
-      "by": "session-a3d7971d",
-      "claimed_at": "2026-11-02T18:53:55+00:00",
-      "trees_at_claim": 1
-    },
-    {
       "target": "Paphos",
       "kind": "verify",
       "by": "session-f6c0e796",
@@ -334,6 +320,27 @@
       "kind": "verify",
       "by": "session-9b29504f",
       "claimed_at": "2026-11-02T19:11:58+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "Kefalonia",
+      "kind": "verify",
+      "by": "session-a3d7971d",
+      "claimed_at": "2026-11-02T19:15:14+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "Paros",
+      "kind": "verify",
+      "by": "session-a3d7971d",
+      "claimed_at": "2026-11-02T19:15:17+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "Lesbos",
+      "kind": "verify",
+      "by": "session-a3d7971d",
+      "claimed_at": "2026-11-02T19:15:20+00:00",
       "trees_at_claim": null
     }
   ]
