@@ -654,9 +654,9 @@
   },
   {
    "place": "Azores",
-   "country": "",
-   "status": "unscouted",
-   "note": "SCOUTED 2026-08-17 (island scout, Atlantic group). Authority: Direção Regional dos Recursos Florestais e Ordenamento Territorial (DRRF), Secretaria Regional da Agricultura e Alimentação, drrf.azores.gov.pt; confirmed that the Azores keep their own forestry administration separate from the mainland. URL: https://drrf.azores.gov.pt/ and https://drrf.azores.gov.pt/areas-de-atuacao/ found and not yet fetched directly this pass. Licence: not reached. Fields: not reached. Count: not reached. Confirmed precondition first, per the brief: portugal-icnf.json's own scope field states it is 'the complete national register, all 18 mainland districts' with zero entries matching 'acor'/'azor' anywhere in the 555 rows, so the Azores are genuinely uncovered by what we already hold. One search for a monumental/classified-tree register under DRRF surfaced the department itself but no register page or dataset; a second, more targeted search (the Portuguese legal term 'arvore de interesse publico', which is how mainland Portugal's AIP designation is named, applied to Acores) was not run this pass, out of time. That specific search is the right next step before concluding empty: Portugal's AIP classification is a national legal category and the Azores may run their own parallel list under it the way Madeira runs ASMAC outside ICNF. Left honestly unscouted rather than guessed at."
+   "country": "Portugal",
+   "status": "imported",
+   "note": "RESOLVED 2026-11-02, superseding the 2026-08-17 'unscouted' line. The pre-RRAIPA list of the region's classified trees is open geodata: 'Património Classificado dos Açores' (Direção Regional da Cultura / SRAAC), GeoNetwork record 0d09ba25-2b90-4576-9838-f37bea740779 on sma.idea.azores.gov.pt, licence 'CC-BY-4.0', WFS layer exemplares_arboreos on visualizador-idea.ambiente.azores.gov.pt. 49 records, 58 specimens: Faial 36 (Horta), São Miguel 8 (Ponta Delgada 2, Furnas 2, Água de Alto 4, the last flagged 'may no longer exist'), Terceira 5 (one a group of ten). Every record has a point, all approximate (44 flagged unverified in the field); no girth, height or age. The RRAIPA itself (DRR 2/2026/A) is to be published on drrf.azores.gov.pt, behind a Cloudflare challenge on this date (PDFs pass, pages 403). Imported to data/registers/azores-aip.json; detail in OPEN_DATA_SURVEY.md 'Azores'."
   },
   {
    "place": "Corsica",
