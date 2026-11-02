@@ -244,6 +244,13 @@
       "by": "session-ead8b787",
       "claimed_at": "2026-11-02T19:03:31+00:00",
       "trees_at_claim": 4
+    },
+    {
+      "target": "lyon",
+      "kind": "verify",
+      "by": "session-12b3970e",
+      "claimed_at": "2026-11-02T19:06:26+00:00",
+      "trees_at_claim": 13
     }
   ]
 }
