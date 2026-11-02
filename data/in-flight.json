@@ -356,6 +356,48 @@
       "by": "session-97f93d4c",
       "claimed_at": "2026-11-02T19:22:16+00:00",
       "trees_at_claim": null
+    },
+    {
+      "target": "new-orleans",
+      "kind": "verify",
+      "by": "session-70dfba46",
+      "claimed_at": "2026-11-02T19:22:33+00:00",
+      "trees_at_claim": 8
+    },
+    {
+      "target": "mobile",
+      "kind": "verify",
+      "by": "session-70dfba46",
+      "claimed_at": "2026-11-02T19:22:45+00:00",
+      "trees_at_claim": 1
+    },
+    {
+      "target": "savannah",
+      "kind": "verify",
+      "by": "session-70dfba46",
+      "claimed_at": "2026-11-02T19:22:45+00:00",
+      "trees_at_claim": 3
+    },
+    {
+      "target": "charleston",
+      "kind": "verify",
+      "by": "session-70dfba46",
+      "claimed_at": "2026-11-02T19:22:46+00:00",
+      "trees_at_claim": 3
+    },
+    {
+      "target": "baton-rouge",
+      "kind": "verify",
+      "by": "session-70dfba46",
+      "claimed_at": "2026-11-02T19:22:52+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "lafayette-louisiana",
+      "kind": "verify",
+      "by": "session-70dfba46",
+      "claimed_at": "2026-11-02T19:22:55+00:00",
+      "trees_at_claim": null
     }
   ]
 }
