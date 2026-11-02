@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-02 night run (third attempt): nothing shipped, Porto walled, Bergamo scouted
+
+No READY leads. Porto verify (focus country): the register pool is spent, every unmined row is private, a school, an ensemble, dead or already live; Porto is a wall for 48h. Backup scout of Bergamo: Regione Lombardia publishes a per-tree PDF list (DGR 4536/2025 annex, 431+ trees); status stalled in data/register-scouting.json because this runner has no PDF reader (no pdftotext, no pypdf). Next: extract the BG rows in a session that can, then import and cluster. Villar d'Allen (Porto) ships the moment a licensed photo of the bunya turns up.
+
 ## 2026-11-02 night run (second attempt, 08:xx window): Bergamo Gorlago cork oak live
 
 Bergamo verify found one tree (bgm_009, register only, view-only through a villa gate); write pass merged it with a Commons photo (Pattiferra, CC BY-SA, looked at, approved; reverse with status held; photo_light could not run, PIL missing). Bergamo now nine. Zanica park stays a lead; Torre Boldone cedar felled. Same six verified trees and five READY leads held again for the same reasons (about 95k tokens wasted, the earlier entry said not to re-dispatch). new-york claim released with --force (its two entries are held). Shelf still empty.

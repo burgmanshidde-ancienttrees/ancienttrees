@@ -127,11 +127,6 @@
       "released_at": "2026-10-28T07:56:55+00:00"
     },
     {
-      "slug": "porto",
-      "kind": "verify",
-      "released_at": "2026-10-30T01:35:36+00:00"
-    },
-    {
       "slug": "graz",
       "kind": "verify",
       "released_at": "2026-10-30T08:07:01+00:00"
@@ -185,6 +180,11 @@
       "slug": "san-francisco",
       "kind": "verify",
       "released_at": "2026-11-02T01:21:52+00:00"
+    },
+    {
+      "slug": "porto",
+      "kind": "verify",
+      "released_at": "2026-11-02T06:47:52+00:00"
     }
   ]
 }
