@@ -18,6 +18,243 @@
    "agreed": null
   },
   {
+   "id": "sight:bf2d7d04-5191-485b-8371-73799f57cdda",
+   "seen": "2026-11-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Twisted Beech of Square des Arenes de Lutece",
+   "city": "Paris",
+   "species": "Twisted Beech (Fagus sylvatica 'Tortuosa')",
+   "photo": "out/sightings/bf2d7d04-5191-485b-8371-73799f57cdda.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 11,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Whole twisted beech behind the square's railing, daylight and colour, GPS 11 m from our pin; the tree's first photograph",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:5e3e5985-fab2-4459-a612-200aff1436da",
+   "seen": "2026-11-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Cedar of Jussieu",
+   "city": "Paris",
+   "species": "Cedar of Lebanon (Cedrus libani)",
+   "photo": "out/sightings/5e3e5985-fab2-4459-a612-200aff1436da.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 30,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Whole cedar with two people at its foot for scale, daylight, GPS 30 m in the garden; a reader's own photograph replaces the Commons lead",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:bdae1e6e-8698-4113-a68a-22446c840120",
+   "seen": "2026-11-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/bdae1e6e-8698-4113-a68a-22446c840120.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 18,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "The whole horse chestnut centred in the square in autumn colour, daylight, GPS 18 m from our pin",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:becfd95c-4976-4023-b77d-855625e9e6bb",
+   "seen": "2026-11-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Buffon Plane",
+   "city": "Paris",
+   "species": "Oriental Plane (Platanus orientalis)",
+   "photo": "out/sightings/becfd95c-4976-4023-b77d-855625e9e6bb.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 17,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Trunk to crown with its plaque at the foot, daylight, GPS 17 m; a reader's own photograph replaces the Commons lead",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:3c0f5c56-a6f7-4e8f-b6a3-61c39abcafeb",
+   "seen": "2026-11-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Turkey Oak of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Turkey Oak (Quercus cerris)",
+   "photo": "out/sightings/3c0f5c56-a6f7-4e8f-b6a3-61c39abcafeb.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 5,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Long narrow toothed chestnut-like leaves; the page's two reader photographs show the lobed leaves and corky bark of a Turkey oak, so likely a neighbouring tree",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:598e6c83-da01-471c-9605-c27a0f199a34",
+   "seen": "2026-10-30",
+   "kind": "a tree we do not map",
+   "tree": "The Town Hall Plane",
+   "city": null,
+   "species": "Plane (Platanus sp.)",
+   "photo": "p_6312cf4c9007b0fcfae9011c/598E6C83-DA01-471C-9605-C27A0F199A34.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Plane (Platanus sp.)"
+   },
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:b6455a29-c8b6-47ba-b3e2-8fa5a1626090",
+   "seen": "2026-10-30",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Baarn",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/B6455A29-C8B6-47BA-B3E2-8FA5A1626090.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 62 m away (netherlands-lrmb): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 52.20906,
+      "lng": 5.29918,
+      "source": "netherlands-lrmb",
+      "designation": "",
+      "name": "Groene beuk Cantonspark",
+      "species": "",
+      "girth_cm": null,
+      "height_m": null,
+      "distance_m": 61.8
+     }
+    ]
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:f6164700-7588-470f-947b-6504bd25a3bb",
+   "seen": "2026-10-30",
+   "kind": "a tree we do not map",
+   "tree": "European Beech in Baarn",
+   "city": null,
+   "species": "European Beech",
+   "photo": "p_6312cf4c9007b0fcfae9011c/F6164700-7588-470F-947B-6504BD25A3BB.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 52 m away (netherlands-lrmb): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 52.20906,
+      "lng": 5.29918,
+      "source": "netherlands-lrmb",
+      "designation": "",
+      "name": "Groene beuk Cantonspark",
+      "species": "",
+      "girth_cm": null,
+      "height_m": null,
+      "distance_m": 52.4
+     }
+    ]
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about European Beech"
+   },
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:7c4530f7-0ee8-4011-a82c-78118e7d9845",
+   "seen": "2026-10-30",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Baarn",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/7C4530F7-0EE8-4011-A82C-78118E7D9845.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 39 m away (netherlands-lrmb): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 52.208112,
+      "lng": 5.298418,
+      "source": "netherlands-lrmb",
+      "designation": "",
+      "name": "Tulpenboom Cantonspark",
+      "species": "",
+      "girth_cm": null,
+      "height_m": null,
+      "distance_m": 38.6
+     }
+    ]
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "sight:0f3ee1e1-ad84-4a57-bf98-6a0b50826651",
    "seen": "2026-10-22",
    "kind": "photo of a tree we map",

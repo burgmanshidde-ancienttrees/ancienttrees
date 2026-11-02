@@ -99,13 +99,17 @@
       "access": "Free, Jardin des Plantes open daily",
       "transport": "Jussieu (Metro 7/10) or Gare d'Austerlitz, 5 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cedrus_libani_%28Jardin_des_Plantes_de_Paris%29_1.jpg",
-        "license": "Public domain",
-        "attribution": "Tangopaso, Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/par_002-the-cedar-of-jussieu-5e3e5985.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
         "status": "approved",
-        "width": 4416,
-        "height": 3312,
-        "taken_month": 3
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 11,
+        "source": "contributor",
+        "contributor_user_id": "p_cdc28055a82c5ea92ef49afc",
+        "sighting_id": "5e3e5985-fab2-4459-a612-200aff1436da",
+        "note": "Photographed by a reader and sent through the app (2026-11-02); a viewing pass approved it on 2026-11-02: Whole cedar from trunk to crown with two people at its foot for scale, daylight and colour; a reader's own photograph replaces the Commons lead. Species seen: dark tiered needle foliage in flat layers, massive forking trunk, a cedar of Lebanon. Fits the description: huge single cedar on the slope of the Jardin des Plantes labyrinth, a ginkgo beside it.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's individually mapped 'Cedre de Jussieu' natural monument node, tagged start_date 1734, matching the sourced planting year.",
@@ -119,7 +123,18 @@
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the flat, spreading crown visible right across the garden and the plaque at its base giving the planting date. It stands on the slope of the Grand Labyrinth in the Jardin des Plantes."
+      "how_to_recognise": "You can recognise it by the flat, spreading crown visible right across the garden and the plaque at its base giving the planting date. It stands on the slope of the Grand Labyrinth in the Jardin des Plantes.",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cedrus_libani_%28Jardin_des_Plantes_de_Paris%29_1.jpg",
+          "license": "Public domain",
+          "attribution": "Tangopaso, Wikimedia Commons",
+          "status": "approved",
+          "width": 4416,
+          "height": 3312,
+          "taken_month": 3
+        }
+      ]
     },
     {
       "id": "par_003",
@@ -187,18 +202,33 @@
       "access": "Free, Jardin des Plantes open daily",
       "transport": "Gare d'Austerlitz (Metro 5/10, RER C), 4 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Platane_de_Buffon_%28Jardin_des_Plantes_de_Paris%29.jpg",
-        "license": "Public domain",
-        "attribution": "Tangopaso, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/par_004-the-buffon-plane-becfd95c.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
         "status": "approved",
-        "width": 3312,
-        "height": 4416,
-        "taken_month": 3
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 11,
+        "source": "contributor",
+        "contributor_user_id": "p_cdc28055a82c5ea92ef49afc",
+        "sighting_id": "becfd95c-4976-4023-b77d-855625e9e6bb",
+        "note": "Photographed by a reader and sent through the app (2026-11-02); a viewing pass approved it on 2026-11-02: Trunk to crown from below, the garden's name plaque at its foot, daylight and colour; a reader's own photograph replaces the Commons lead. Species seen: flaking camouflage bark, pale limbs, maple-like plane leaves. Fits the description: tall single plane on a sanded path of the Jardin des Plantes with its labelled plaque.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's 'Platane de Buffon' natural monument node, tagged 'Plante par Buffon en 1785', matching the sourced date exactly.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the wide, mottled trunk of an oriental plane carrying the national Remarkable Tree label. It stands by the plane alley in the Jardin des Plantes, near the Rue Geoffroy-Saint-Hilaire gate."
+      "how_to_recognise": "You can recognise it by the wide, mottled trunk of an oriental plane carrying the national Remarkable Tree label. It stands by the plane alley in the Jardin des Plantes, near the Rue Geoffroy-Saint-Hilaire gate.",
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Platane_de_Buffon_%28Jardin_des_Plantes_de_Paris%29.jpg",
+          "license": "Public domain",
+          "attribution": "Tangopaso, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3312,
+          "height": 4416,
+          "taken_month": 3
+        }
+      ]
     },
     {
       "id": "par_005",
@@ -599,7 +629,7 @@
         "longitude": 2.3536691631893647,
         "neighbourhood": "Latin Quarter, next to the Roman arena, 5th arrondissement"
       },
-      "story": "Every wild tree of this kind on earth grows in one wood near Reims. The hetre tortillard, or fau, is a twisted-branch form of the common European beech, and its only natural population is the Faux de Verzy, roughly a thousand specimens in the Champagne hills. Why they grow that way has never been settled. This one did not arrive by accident: it is a grafted specimen, planted here around 1905, a deliberate piece of botanical strangeness dropped into the Latin Quarter.\n\nThe result is a tree that reads as two different trees depending on the month. From May to October it is a low dome of dense leaf, easy to walk straight past, closer to a large shrub than to a beech. In winter the leaves go and the architecture shows: a short trunk turning back on itself, branches spiralling and bending down, some of them trailing to the ground. The city register puts its girth at 110 centimetres, modest for its age, because this form spends its growth going sideways rather than up.\n\nIts address is far better known than it is. The square was laid out around the excavated Roman arena of Lutetia, a first-century amphitheatre built for some 15,000 spectators, found again during nineteenth-century roadworks and saved in part by a campaign Victor Hugo lent his name to. The beech arrived long after that argument had been won.",
+      "story": "Every wild tree of this kind on earth grows in one wood near Reims. The hetre tortillard, or fau, is a twisted-branch form of the common European beech, and its only natural population is the Faux de Verzy, roughly a thousand specimens in the Champagne hills. Why they grow that way has never been settled. This one is a grafted specimen, planted here around 1905, a deliberate piece of botanical strangeness dropped into the Latin Quarter.\n\nThe result is a tree that reads as two different trees depending on the month. From May to October it is a low dome of dense leaf, easy to walk straight past, closer to a large shrub than to a beech. In winter the leaves go and the architecture shows, a short trunk turning back on itself, branches spiralling and bending down, some of them trailing to the ground. The city register puts its girth at 110 centimetres, modest for its age, because this form spends its growth going sideways rather than up.\n\nIts address is far better known than it is. The square was laid out around the excavated Roman arena of Lutetia, a first-century amphitheatre built for some 15,000 spectators, found again during nineteenth-century roadworks and saved in part by a campaign Victor Hugo lent his name to. The beech arrived long after that argument had been won.",
       "best_time": {
         "months": [
           1,
@@ -625,6 +655,19 @@
       "official_register": {
         "name": "Arbres remarquables de Paris (Ville de Paris), no. 132669",
         "url": "https://capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/132669.pdf"
+      },
+      "photo": {
+        "url": "https://ancienttrees.app/photos/par_016-the-twisted-beech-of-square-des-arenes-de-lutece.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 11,
+        "source": "contributor",
+        "contributor_user_id": "p_cdc28055a82c5ea92ef49afc",
+        "sighting_id": "bf2d7d04-5191-485b-8371-73799f57cdda",
+        "note": "Photographed by a reader and sent through the app (2026-11-02); a viewing pass approved it on 2026-11-02: Whole contorted crown behind the square's green railing, daylight and colour; the tree's first photograph. Species seen: beech leaves turning yellow, smooth grey limbs twisting and drooping to the ground, the Tortuosa form. Fits the description: low, knotted, twisted branches under a dome of leaves, fenced bed above a stone wall, as at the Arenes de Lutece.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       }
     },
     {
@@ -1189,17 +1232,17 @@
       "access": "Free, public municipal square (Square Rene-Le Gall, also known as Jardin des Gobelins), open standard Paris park hours and closed at night",
       "transport": "Corvisart or Les Gobelins (Metro 6/7), 8-10 min walk",
       "photo": {
-        "url": "https://ancienttrees.app/photos/par_031-the-horse-chestnut-of-square-rene-le-gall.jpg",
+        "url": "https://ancienttrees.app/photos/par_031-the-horse-chestnut-of-square-rene-le-gall-bdae1e6e.jpg",
         "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
         "status": "approved",
         "width": 1200,
         "height": 1600,
+        "taken_month": 11,
         "source": "contributor",
-        "contributor_user_id": "p_1ca91d2bab15f40502a64368",
-        "sighting_id": "0ac9eef6-08d3-4236-a17e-3ac9f36303d9",
-        "note": "Photographed by a reader and sent through the app (2026-10-01); a viewing pass approved it on 2026-10-01: Whole tree in leaf, daylight, crown and trunk both readable, matches the Paris plaque (planted 1894, hollow trunk, Square Rene Le Gall). Species seen: Horse chestnut (Aesculus hippocastanum). Fits the description: Huge multi-limbed chestnut with a hollow, fluted trunk in a formal square, as the entry describes.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py).",
-        "taken_month": 10
+        "contributor_user_id": "p_cdc28055a82c5ea92ef49afc",
+        "sighting_id": "bdae1e6e-8698-4113-a68a-22446c840120",
+        "note": "Photographed by a reader and sent through the app (2026-11-02); a viewing pass approved it on 2026-11-02: The whole tree centred in the square, autumn colour, daylight; a cleaner whole-tree frame than the current lead. Species seen: palmate horse chestnut leaves in autumn brown, broad spreading crown, short burred trunk with a hollow. Fits the description: lone broad horse chestnut in a sanded square with benches and clipped hedges, as in Square Rene-Le Gall.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "how_to_recognise": "Near the garden's obelisk, at one of the entrances.",
       "curation_status": "ai_generated",
@@ -1214,6 +1257,19 @@
       "height_m": 17.0,
       "verify_notes": "Height 17.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
       "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/par_031-the-horse-chestnut-of-square-rene-le-gall.jpg",
+          "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+          "attribution": null,
+          "status": "approved",
+          "width": 1200,
+          "height": 1600,
+          "source": "contributor",
+          "contributor_user_id": "p_1ca91d2bab15f40502a64368",
+          "sighting_id": "0ac9eef6-08d3-4236-a17e-3ac9f36303d9",
+          "note": "Photographed by a reader and sent through the app (2026-10-01); a viewing pass approved it on 2026-10-01: Whole tree in leaf, daylight, crown and trunk both readable, matches the Paris plaque (planted 1894, hollow trunk, Square Rene Le Gall). Species seen: Horse chestnut (Aesculus hippocastanum). Fits the description: Huge multi-limbed chestnut with a hollow, fluted trunk in a formal square, as the entry describes.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py).",
+          "taken_month": 10
+        },
         {
           "url": "https://ancienttrees.app/photos/par_031-the-horse-chestnut-of-square-rene-le-gall-722e85a4.jpg",
           "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
