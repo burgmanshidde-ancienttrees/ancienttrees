@@ -361,7 +361,21 @@ def main():
     if "--sync" in sys.argv:
         sync_sent(answered)
 
-    owed = sorted(set(incoming) - set(answered), key=lambda a: incoming[a])
+    # THREADS HE CLOSED WITHOUT A REPLY (Hidde, 2026-11-02: "de andere
+    # onbeantwoorde mails ... mag je negeren en vanaf nu als afgehandelt
+    # beschouwen"). data/outreach-closed.json is private; an address stays off
+    # the owed list until it writes again after the closing date.
+    closed = {}
+    try:
+        cpath = os.path.join(ROOT, "data", "outreach-closed.json")
+        for c in json.load(open(cpath, encoding="utf-8")).get("closed", []):
+            closed[c["address"].lower()] = c["closed"]
+    except FileNotFoundError:
+        pass
+    shut = {a for a in incoming if a in closed and f"{incoming[a]:%Y-%m-%d}" <= closed[a]}
+    if shut:
+        print(f"CLOSED BY HIM, no reply needed: {len(shut)}\n")
+    owed = sorted(set(incoming) - set(answered) - shut, key=lambda a: incoming[a])
     if owed:
         print("NO REPLY FROM HIM YET:")
         for a in owed:
