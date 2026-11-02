@@ -162,7 +162,7 @@ The floor is a reason somebody standing there can see: big, tall or old for its 
 
 ## Registers (layer 2)
 
-Official designated-remarkable trees only, never full inventories, as honestly labelled dots with no own pages. Licence first, compatible with commercial reuse, proving sentence recorded in OPEN_DATA_SURVEY.md; re-read a licence verdict that blocks a country (the NL register is CC with attribution). Coordinates default to approximate. In a country with 100+ trees a new tree needs a photo or confirmed pin, US exempt (`check_covered_countries_want_a_photo_or_a_pin()`). Tier/game design is parked.
+Official designated-remarkable trees only, never full inventories, as honestly labelled dots with no own pages. Licence first, compatible with commercial reuse, proving sentence recorded in OPEN_DATA_SURVEY.md; re-read a licence verdict that blocks a country (the NL register is CC with attribution). Coordinates default to approximate. In a country with 100+ trees a new tree needs a photo or confirmed pin, US exempt (`check_covered_countries_want_a_photo_or_a_pin()`), but only while `ADD_NEEDS_FINDABLE` is on; it is OFF (findable.py), so today what binds is `check_a_tree_can_be_told_apart()`: photo, confirmed pin, or recognition line (found 2026-11-02, after runs dropped good trees for a rule that was off). Tier/game design is parked.
 
 ## Ambassadors
 
