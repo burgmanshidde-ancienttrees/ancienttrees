@@ -1,0 +1,65 @@
+[
+ {
+  "id": "pao_001",
+  "name": "The Giant Cypress of the Valley of the Butterflies",
+  "species": "Mediterranean Cypress (Cupressus sempervirens)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "girth_cm": 445,
+  "height_m": 35,
+  "location": {
+   "address": "Agios Arsenios - Petaloudes (Valley of the Butterflies), Paros, about 7 km from Parikia",
+   "latitude": 37.043863,
+   "longitude": 25.129495,
+   "neighbourhood": "Petaloudes"
+  },
+  "verified_sources": [
+   "https://filoiparkon.org/en/greek-tree-registry/200/",
+   "https://imagine.paros.gr/en/what-to-do/body/nature/616-the-valley-of-the-butterflies.html"
+  ],
+  "official_register": {
+   "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 200)",
+   "url": "https://filoiparkon.org/en/greek-tree-registry/200/"
+  },
+  "access": "Paid entry to the Butterflies Nature Reserve (small admission fee; registry: June to September, 10:00 to 18:00). Registry also says the cypress is visible from the road. Private reserve, so closed outside season.",
+  "transport": "About 7 km from Parikia (Paros main port) by road; bus or car, real timing to confirm.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "The Greek Tree Registry counts this cypress among the largest in Greece, 35 metres tall on a trunk 4.45 metres round.\n\nIt grows in the Valley of the Butterflies at Petaloudes, about 7 kilometres from Parikia, inside a private nature reserve on farmland that also lies within a Natura 2000 site. The reserve is home to the jersey tiger, which is a moth, and the valley holds cypresses, ivy-covered planes and wild olives. The valley lies close to the monastery of Agios Arsenios.\n\nTwenty-two metres away stands the cypress's companion, a stone pine 3.3 metres round and 22 metres tall, which the registry also counts among the largest of its kind in Greece. Ivy climbs its trunk, and butterflies live on the ivy leaves. The two trees share one spot, so stand between them and you have both.\n\nThe reserve charges a small fee and, according to the registry, opens from June to September, 10:00 to 18:00. Outside those months the gate is shut, but the cypress can still be seen from the road. The pine cannot, so for both trees come in season.\n\nNo source gives an age for either tree. If you know more, tell us.",
+  "how_to_recognise": "You can recognise it by its height, 35 metres, and you can see it from the road. It stands at Petaloudes, 22 metres from a big stone pine with ivy climbing its trunk."
+ },
+ {
+  "id": "pao_002",
+  "name": "Giant stone pine of the Butterflies Nature Reserve",
+  "species": "Stone Pine (Pinus pinea)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "girth_cm": 330,
+  "height_m": 22,
+  "location": {
+   "address": "Agios Arsenios - Petaloudes (Valley of the Butterflies), Paros",
+   "latitude": 37.043665,
+   "longitude": 25.129533,
+   "neighbourhood": "Petaloudes"
+  },
+  "verified_sources": [
+   "https://filoiparkon.org/en/greek-tree-registry/202/",
+   "https://imagine.paros.gr/en/what-to-do/body/nature/616-the-valley-of-the-butterflies.html"
+  ],
+  "official_register": {
+   "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 202)",
+   "url": "https://filoiparkon.org/en/greek-tree-registry/202/"
+  },
+  "access": "Paid entry to the Butterflies Nature Reserve (small fee; registry: June to September, 10:00 to 18:00). Inside the reserve only, not visible from the road per registry.",
+  "transport": "About 7 km from Parikia by road, real timing to confirm.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "fold_into": "pao_001",
+  "verify_notes": "Registry GPS recorded 18/08/2026; 22 m from the cypress (entry 200), so one place to stand: suggest folding into pao_001's page as a second trunk, or keep separate if the integrator prefers. Girth 3.3 m, height 22 m. Registry calls it one of the largest stone pines in Greece; ivy climbs the trunk and butterflies live on the ivy leaves (registry). Private agricultural land in the reserve, Natura 2000 GR4220016. Age not documented. Registry text and photos not open; facts only. No second source for this specific tree.",
+  "hold": "folded into pao_001, 22 m apart, one place to stand"
+ }
+]

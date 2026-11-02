@@ -2,12 +2,13 @@
   "city": "Kos",
   "country": "Greece",
   "city_slug": "kos",
-  "note": "Verify pass 2026-11-02. One tree verified (kos_001, in data/research/kos-verified.json). Searches in English and Greek found no other named old tree on the island, no Dodecanese Monuments of Nature list reachable, and OSM/Nominatim holds only the Hippocrates plane as a tree node. The place does not reach four trees from this pass.",
+  "note": "Verify pass 2026-11-02. One tree verified (kos_001, in data/research/kos-verified.json). Searches in English and Greek found no other named old tree on the island, no Dodecanese Monuments of Nature list reachable, and OSM/Nominatim holds only the Hippocrates plane as a tree node. The place does not reach four trees from this pass. Second pass 2026-11-02 (OSM Overpass hosts hung, el.wikipedia raw blocked, Greek Tree Registry and Wikipedia list count one tree for Kos): nothing new verified; see data/research/kos-notes.md.",
   "leads": [
     {
       "name": "Cypress and pine grove at the Asklepieion",
       "reason": "no photo or exact pin in reach; no source gives an age or an individual tree. Sources only describe a conifer grove (about 4 km from Kos town) echoing the ancient sacred grove; the living trees are undated.",
-      "approx_lat": 36.8, "approx_lon": 27.2
+      "approx_lat": 36.8,
+      "approx_lon": 27.2
     },
     {
       "name": "Plane trees and olives of the mountain villages (Zia, Pyli, Asfendiou)",
@@ -20,6 +21,16 @@
     {
       "name": "Greek Monuments of Nature (Mnimeia tis Physis) entries for Kos",
       "reason": "only the Hippocrates plane found (Gazette 589/B/1985, per kos.gr); the Ministry or Forest Service list was not found by search, host not tried."
+    },
+    {
+      "name": "Unnamed plane trees seen on iNaturalist (obs 410311972 and 208563359)",
+      "reason": "no photo or exact pin in reach as a verified tree; research-grade plane observations with no age, size or notes, at 36.8516,27.2316 and 36.7898,27.0674. Not shown to be old.",
+      "approx_lat": 36.8516,
+      "approx_lon": 27.2316
+    },
+    {
+      "name": "Root-sprouted young plane beside the Hippocrates plane",
+      "reason": "Greek Tree Registry (filoiparkon.org 128) mentions one about 50-60 years old; a successor, not an old tree, single source, no coordinate of its own."
     }
   ],
   "blocked": []

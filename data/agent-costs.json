@@ -14809,6 +14809,54 @@
       "tokens": 140441,
       "trees": 1,
       "note": "PLU-H register pass: 12 public entries but no photo or confirmed pin (Overpass down, Commons geotags show squares not trunks); dispatcher matched the Villevert cedars to surveyed inventory points, Weingarten folded into the parks entry, the other ten to leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "kos",
+      "tokens": 96454,
+      "trees": 0,
+      "note": "Greek islands run, second Kos pass: Overpass down, iNaturalist planes undated; only the Hippocrates plane exists in any list. Kos walled 48h."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "rhodes",
+      "tokens": 107463,
+      "trees": 0,
+      "note": "Greek islands run, web sweep only: no named, pinnable old tree; Kryoneri plane (tradition only), Psinthos, Petaloudes sweetgum and Lindos olive to leads; Katarti cypress forest is a forest."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "corfu",
+      "tokens": 114317,
+      "trees": 1,
+      "note": "Greek islands run, web sweep: the gazette-declared olive of Agios Spyridon (Argyrades); Evdokia olive and Kassiopi elm to leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "corfu",
+      "tokens": 112036,
+      "trees": 7,
+      "note": "Register-backed: Greek Tree Registry (Friends of Hellenic National Parks, crawled into data/research/greek-tree-registry-filoiparkon.json, not open, facts only). Gastouri plane, Liston oak, Mon Repos fig, Aleppo pine and Norfolk pine, People's Garden ombu, Strinylas elm; confirmed GPS pins."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "kefalonia+paros+lesbos",
+      "tokens": 111698,
+      "trees": 3,
+      "note": "Register-backed: Omala plane (dendro ~450 yr, gazette 2024), Petaloudes cypress and stone pine on Paros (pine folded into the cypress); Lesbos oak on private land to leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "corfu+kefalonia+paros",
+      "tokens": 146351,
+      "trees": 10,
+      "note": "8 Corfu, 1 Kefalonia, 1 Paros stories plus place fields (data/research/greek-islands-places.json); held for the pace, build with scripts/build_greek_islands.py."
     }
   ]
 }

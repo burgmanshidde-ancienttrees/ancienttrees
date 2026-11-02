@@ -1,0 +1,38 @@
+{
+  "city": "Rhodes",
+  "country": "Greece",
+  "city_slug": "rhodes",
+  "note": "2026-11-02 verify pass: no individually named, sourced, pinnable tree found on Rhodes. No Greek register imported; Greek Wikipedia list of Preserved Natural Monuments has only a cypress forest at Katarti, Embona (FEK B 656/1986, a forest, not a collectible point). See data/research/rhodes-notes.md.",
+  "leads": [
+    {
+      "name": "Plane tree at Agios Nektarios, Kryoneri, near Archipolis",
+      "reason": "Single tourism-site source (aegeanislands.gr/?p=128629) says a huge plane tree stands in front of the Agios Nektarios church, 1 km from Archipolis, said to be 2,500 years old with Paul preaching under it; local tradition, no independent source, no coordinate, no photo, no alive check. Age claim must not be repeated as fact.",
+      "approx_lat": null,
+      "approx_lon": null
+    },
+    {
+      "name": "Plane trees of Psinthos village square",
+      "reason": "Rhodes guide sites mention old plane trees by the Fasouli fountain; no age, count or named trunk found. No photo or exact pin in reach.",
+      "approx_lat": null,
+      "approx_lon": null
+    },
+    {
+      "name": "Oriental sweetgum (Liquidambar orientalis), Valley of the Butterflies",
+      "reason": "A 1984 survey cited in search results gives one tree 20-22 m tall, girth 280-290 cm; not seen on a fetched page, no named single trunk, site is a forest/valley (paid entry). Needs a primary source and a coordinate.",
+      "approx_lat": 36.34001,
+      "approx_lon": 28.05988
+    },
+    {
+      "name": "Old olive trunk, Lindos",
+      "reason": "Only a stock-photo caption ('Old olive tree in Lindos'); no location or source.",
+      "approx_lat": null,
+      "approx_lon": null
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Cypress forest at Katarti, Embona",
+      "reason": "Official FEK B 656/1986 Preserved Natural Monument but a forest, not one collectible point; exact extent not found."
+    }
+  ]
+}
