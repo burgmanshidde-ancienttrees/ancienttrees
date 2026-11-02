@@ -1,0 +1,24 @@
+[
+  {
+    "id": "brd_001",
+    "name": "Di Summa courtyard figs",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 100 years",
+    "age_min": 80,
+    "age_max": 130,
+    "girth_cm": 585,
+    "height_m": 22,
+    "location": {"address": "Piazza Antonino Di Summa, courtyard of the former Di Summa hospital (ASL Brindisi), Brindisi", "latitude": 40.63625, "longitude": 17.93230, "neighbourhood": "Cappuccini"},
+    "verified_sources": [
+      "https://www.quotidianodipuglia.it/brindisi/brindisi_ficus_alberi_monumentali_elenco-8392512.html",
+      "https://quimesagne.it/giornata-nazionale-dellalbero-iniziativa-a-brindisi-nel-complesso-sanitario-in-piazza-di-summa/"
+    ],
+    "official_register": {"name": "Alberi Monumentali d'Italia (MASAF), sheet 15/B180/BR/16 and 16/B180/BR/16; Regione Puglia list", "url": "https://www.quotidianodipuglia.it/brindisi/brindisi_ficus_alberi_monumentali_elenco-8392512.html"},
+    "access": "Inner courtyard of an active ASL Brindisi health complex. No published opening hours or entry rule found. The ASL put up a protective gate round the trees, an information plaque and a red bench in Nov 2024 and held a public National Tree Day event there (schools, Comune, Carabinieri Forestali). Whether a walk-in visitor may enter the courtyard is NOT confirmed: writer/curator must keep access wording honest or hold.",
+    "transport": "Brindisi centre: about 10 minutes on foot from Porta Mesagne / Piazza Vittoria; Brindisi railway station about 1.5 km (20 minutes on foot)",
+    "location_precision": "approximate",
+    "location_site": {"name": "Di Summa hospital courtyard, Piazza Di Summa", "radius_m": 40},
+    "curation_status": "flagged",
+    "verify_notes": "Folded twins: MASAF sheets 15/B180/BR/16 (girth 585 cm, height 22 m, coords 40.636153,17.932186) and 16/B180/BR/16 (girth 420 cm, height 16 m, coords 40.636333,17.932411) are about 25 m apart in the same courtyard (Piazza di Summa); one standing place. Register girths as recorded in the national list; the 585 cm figure is the larger tree. Age 'about 100 years' is the ASL's own estimate (Quotidiano di Puglia 3 Oct 2024; QuiMesagne 19 Nov 2024), not a register measurement; derived range broad. Ficus macrophylla is also called Fico magnolioide / strangolatore; aerial roots form pillar-like structures. Recognised by Regione Puglia in autumn 2024 on request of ASL Brindisi's technical area; ASL director general Maurizio De Nuccio quoted: 'two living monuments'. Nov 2024: gate, plaque with historical and scientific notes, red bench under one fig (violence against women symbol) installed; National Tree Day event 21 Nov 2024. Alive: last evidence is those Oct/Nov 2024 reports (lifecheck.py NONE for imagery); flagged. Pin: register coordinates only, approximate, midpoint of the two. Two independent sources are really one story (ASL press release echoed by two outlets) plus the register; owner of ground = ASL (counts as one official source). No OSM tree node, no iNaturalist observation within 150 m, no geotagged Commons photo within 150 m found (Commons geosearch nearest files are Porta Mesagne, 150 m)."
+  }
+]

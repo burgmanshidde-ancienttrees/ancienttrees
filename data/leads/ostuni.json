@@ -1,0 +1,65 @@
+{
+ "leads": [
+  {
+   "name": "Sughera di Contrada San Benedetto (cork oak)",
+   "species": "Cork Oak (Quercus suber)",
+   "reason": "Best Ostuni candidate, held only for a photograph or confirmed pin (Italy is a covered country). MASAF sheet 01/G187/BR/16 and the Puglia regional register (CC BY 4.0) fold into one: girth 560 cm, height 12 m, register point 40.688361,17.565147 (approximate). Italian Botanical Heritage page 'The Cork Oak of Ostuni' (luoghi.italianbotanicalheritage.com/en/?p=35376, a finding aid) calls it one of the largest Quercus suber in southern Italy and gives girth 18.37 ft, consistent with 560 cm. Komoot highlight 7397212 puts it at 40.688904,17.565098 (about 60 m from the register point, so not independent evidence of the trunk), with tips dated 2025-04-13 and 2025-05-04 saying it is 'very easy to reach and visible from the road' (alive and roadside as of spring 2025; a user tip says one cork oak there is 'probably a thousand years old', not a source, no age to publish). lifecheck.py: NONE. No Commons file found for it and no geotagged photo. Access: visible from the road, no source says the land is open; pin would sit on the viewing place. A session needs one geotagged photo or a GPS fix to ship it."
+  },
+  {
+   "name": "Il Grande Vecchio, Masseria Brancati (olive)",
+   "species": "Olive (Olea europaea)",
+   "reason": "Named olive at Masseria Brancati, Contrada Brancati, Ostuni (agriturismo, listing GPS 40.76408,17.55395 on iltaccodibacco.it is the masseria, not the tree). Named by italia.it Piana degli Ulivi itinerary and travel blogs; ages '2000 years' are the masseria's and bloggers' marketing, no girth anywhere. masseriabrancati.com (owner's site) says guided visits are by booking only and claims about 800 censused monumental olives on 30 ha, but the fetched pages never name Il Grande Vecchio. Paid/booked visit would count as public, but no individual pin, no measurement, no photo: lead only."
+  },
+  {
+   "name": "L'Imperatore (olive), Martucci family land",
+   "species": "Olive (Olea europaea)",
+   "reason": "Named by italia.it as an Ostuni olive on private Martucci family land; Apulia Rentals article (apuliarentals.com, fetched) says trunk over 8 m circumference and 'experts' guess Roman period, no named experts, and says nothing on access. Private land with no stated visiting: fails hard rule 10 until a source says visits are possible."
+  },
+  {
+   "name": "Ginepro coccolone, Torre Guaceto (Carovigno)",
+   "species": "Prickly Juniper (Juniperus oxycedrus subsp. macrocarpa)",
+   "reason": "Register-only: MASAF 01/B809/BR/16 and Puglia regional 01/B809/BR/16 (twins), height 4.5 m, no girth, point 40.7176,17.783 (approximate), inside the Torre Guaceto state reserve (free entry not stated; reserve says walks need reservation, visitor centre 9-13, Via Piazzetta 32 Brindisi, +39 0831 989885 per italianbotanicalheritage listing). Commons file 'Ginepro secolare Torre Guaceto.jpg' (Mfran22, CC BY-SA 4.0, 2018-08-19) shows a 'centuries-old' juniper trunk in the retro-dune scrub but has no geotag, so it cannot be tied to the register tree. No source names a trail to it. Not worth the walk as a 4.5 m shrub without a pin: lead."
+  },
+  {
+   "name": "Roverella, Cimitero di Ceglie Messapica",
+   "species": "Downy Oak (Quercus pubescens)",
+   "reason": "Register 02/C424/BR/16 (MASAF and Puglia twins): girth 450 cm, height 15 m, point 40.650419,17.500522. Nominatim reverse puts that point on the primary road SP ex SS581; the cemetery road Via Padula del Cimitero is at 40.654,17.503, about 450 m away, so the register point may not lie in the cemetery at all. No web source found for the tree. lifecheck NONE. Needs a map check before any use; if it stands inside the cemetery wall it could ship as a small named site."
+  },
+  {
+   "name": "Roverella and Fillirea, Bosco / Masserie Le Montecchie (Ceglie Messapica)",
+   "species": "Downy Oak (Quercus pubescens) and Mock Privet (Phillyrea latifolia)",
+   "reason": "Register 01/C424/BR/16 (roverella, girth 480 cm, height 20 m, 40.649353,17.536511) and 03/C424/BR/16 (phillyrea, height 7.5 m, 40.649275,17.536606), about 10 m apart. Masseria-linked wood, no source on public access, no web coverage found. Lead."
+  },
+  {
+   "name": "Quercus virgiliana, Masseria Traetta",
+   "species": "Quercus virgiliana",
+   "reason": "MASAF 03/G187/BR/16, girth 350 cm, height 18 m, 40.701439,17.557067. Masseria ground, no access evidence, nothing found on the web."
+  },
+  {
+   "name": "Fragno, Masseria Padolecchia",
+   "species": "Macedonian Oak (Quercus trojana)",
+   "reason": "MASAF 04/G187/BR/16, girth 390 cm, height 10 m, 40.704783,17.546783. Masseria ground, no access evidence. Komoot has a 'Centuries-old oaks' fragno highlight near Ostuni (map link 40.7504,17.5269) but its coordinate is a search link, not a tree. Region is the only Italian place for Quercus trojana (a visitor tip); a session could look for a public road view."
+  },
+  {
+   "name": "Pero mandorlino x2, Torre Pozzelle (Carovigno)",
+   "species": "Almond-leaved Pear (Pyrus amygdaliformis)",
+   "reason": "MASAF 02 and 03/B809/BR/16, girth 250 and 240 cm, height 6 and 5 m, 40.757681,17.668414 and 40.757414,17.666603 (about 180 m apart). Small rural pears, no web coverage, no access evidence: not a reason to walk."
+  },
+  {
+   "name": "Piana degli Ulivi: monumental olive register (finding, not a tree)",
+   "species": "Olive (Olea europaea)",
+   "reason": "FINDING for a session. Regione Puglia keeps an annual list of monumental olives under L.R. 14/2007 (340,750 units at 2016-12-31 per DGR 1413/2017), on the SIT web app http://webappsvm.sit.puglia.it/freewebapps/UliviMonumentali/index.html and ulivimonumentali.sit.puglia.it. dati.puglia.it CKAN has NO olive dataset (package_search for 'ulivi' and 'ulivi monumentali' returns only 'Le 100 Masserie di Crispiano'). The regional digital library digitallibrary.regione.puglia.it (DSpace, REST at /server/api/core/items/<uuid>) holds one item per surveyed olive with a survey photograph, e.g. 'Ostuni: ulivo monumentale codice 148478_51_94_074012' (handle 20.500.14486/1325, photo 2012-04-20, form n. 00148478, 'segnalato per forma e portamento'), photo licence CC BY-SA 3.0 IT (premis.licenseIdentifierValue), but dim.coordinateGeografiche is empty and the code is cadastral (foglio/particella), so no pin; cadastral parcels are private land. Other Ostuni codes seen: 147919_51_121_074012, 169181_34_43_074012. Not importable as a register; the photos are openly licensed but unlocated."
+  },
+  {
+   "name": "Ulivo secolare, Rosa Marina di Ostuni (Commons)",
+   "species": "Olive (Olea europaea)",
+   "reason": "Commons file 'Ulivo secolare (Rosa Marina di Ostuni) - panoramio.jpg' is geotagged 40.797925,17.556839 (licence not checked, panoramio import). Candidate for a confirmed pin on a roadside olive near Rosa Marina; a session should open the file page, check licence and that the road is public."
+  },
+  {
+   "name": "Itinerario dei Giganti, Masseria Lamasanta / Parco Dune Costiere (walk)",
+   "species": "Olive (Olea europaea)",
+   "reason": "Two-hour marked walk starting and ending at Masseria Lamasanta, Costa Merlata, through the Parco Regionale delle Dune Costiere past Lama di Torre Bianca and the Via Traiana (travel.thewom.it, fetched). Claims olives 'over 3000 years' and trunks over 10 m circumference generically, no tree named, measured or placed. No price or booking in the source. Best route to a public olive pin; needs a session on site data (komoot or wikiloc GPX with named trees)."
+  }
+ ],
+ "blocked": []
+}

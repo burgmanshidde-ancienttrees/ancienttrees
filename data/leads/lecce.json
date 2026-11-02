@@ -1,0 +1,73 @@
+{
+  "leads": [
+    {
+      "id": "lcc_002",
+      "name": "The two ombu of Piazza Europa, Lequile",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 200,
+      "girth_cm": 1100,
+      "location": {
+        "address": "Piazza Europa, Rione Paladini, 73010 Lequile (Lecce)",
+        "latitude": 40.3039,
+        "longitude": 18.12873,
+        "neighbourhood": "Rione Paladini, Lequile, on the border with San Pietro in Lama"
+      },
+      "verified_sources": [
+        "https://www.lecceprima.it/attualita/fitolacche-centenarie-lequile.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "official_register": {
+        "name": "MASAF national list of monumental trees of Italy (Puglia sheets 01/... Lequile, ombu rows)",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free, an open public square at all times.",
+      "transport": "Lequile is about 7 km south-west of Lecce centre; reached by local bus from Lecce (timetable not verified, check before going).",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Piazza Europa, Lequile",
+        "radius_m": 45
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Two trees 35 m apart in one square, one place to stand, delivered as one entry. MASAF register rows (Italian national list, from the regional file): ombu girth 1100 cm at 40.30375, 18.12882 and ombu girth 1020 cm at 40.30406, 18.12864. Girth recorded as the larger; both figures from the register, units and the 10 to 11 m values are as the register gives them and look like basal girth of a buttressed, multi-stem ombu (an ombu's base swells; a 10 m girth is plausible only for such a mass, label it so). Heights not in the rows. LECCEPRIMA 2026-07-17: two monumental 'fitolacche' have dominated Piazza Europa in the Rione Paladini for long decades; the Comune asked for and got, in October 2025 per mayor Vincenzo Carla, their entry in the Puglia register of centenarian trees; the square hosts public events (a book presentation of Fausto Bertinotti under the trees, summer reading series 'Di libri e di lune'); the article says generations of residents grew up under them. ALIVE: July 2026 article describes them in leaf and in use as a shaded gathering place. No planting date found, so no derived age; 'over a century' reflects the register term 'centenari' only (a flagged basis: the register category, not a measurement). No iNaturalist observation within 300 m and no Commons geotagged photo found, so the pin stays approximate (register coordinates, two trees); the writer must not claim a unique spot. Not seen: whether the register or the Comune publish a plaque or per-tree name. Day trip from Lecce, label as Lequile.",
+      "why_lead": "Verified on 2026-11-02 (register girths 1100 and 1020 cm, LeccePrima 2026-07-17 alive and in use), but Italy is a covered country and this pair has neither a photograph nor a confirmed pin: register coordinates only, no iNaturalist or Commons evidence found. Promote as soon as an open photograph of the two trunks or a GPS fix arrives; the record is otherwise ready, as Lequile's own place (7 km from Lecce)."
+    },
+    {
+      "name": "Eucalyptus on Via Monteroni 165 (Tenuta Tresca)",
+      "species": "River Red Gum (Eucalyptus camaldulensis)",
+      "reason": "Register row (MASAF, girth 420 cm, 40.33450,18.12328) sits on the Tenuta Tresca wedding and events estate (tresca.it). Private venue, entry by booking an event; hard rule 10 (reception/booking is not public access). No second source, no photograph."
+    },
+    {
+      "name": "Ficus macrophylla, former Conservatorio di Sant'Anna courtyard",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "reason": "Only a property-listing snippet (about 25 m, about 250 years) found; not a source, and the tree stands in a courtyard of a former conservatory with no evidence of public access. Needs a session to find a real source and the access."
+    },
+    {
+      "name": "Villa Comunale (Giardini Pubblici Giuseppe Garibaldi), Lecce",
+      "species": "mixed old garden trees",
+      "reason": "Public park since 1818, 3 hectares; a 2022 PNRR restoration note says the plant cover was never surveyed and has been altered. No named or measured individual tree found in any source, no tree route. Nothing to verify."
+    },
+    {
+      "name": "Quercus virgiliana at Villa Trani, Carmiano",
+      "species": "Pubescent Oak (Quercus virgiliana)",
+      "reason": "Register row g350 at 40.35161,18.06233. Villa Trani is a villa estate; no source found saying the grounds are open, no second source, no photograph or pin evidence. No photo or exact pin in reach."
+    },
+    {
+      "name": "White Mulberry, Casino Vigneri, Trepuzzi",
+      "species": "White Mulberry (Morus alba)",
+      "reason": "Register row g290 h4.5 at 40.40698,18.05441. A casino (country house) estate, private; height 4.5 m with 2.9 m girth is a pollard, not a visitor draw; no access source, no photo."
+    },
+    {
+      "name": "Valonia Oak at Pitanti, Campi Salentina and Pubescent Oak at Masseria Caperrone",
+      "species": "Valonia Oak (Quercus ithaburensis subsp. macrolepis) and Pubescent Oak (Quercus pubescens)",
+      "reason": "Register rows 01/I962/LE/16 (g345) and 02/B506/LE/16 (g430), about 12 km from Lecce, in farmland and a masseria. No web source found for either (searches return only the Tricase tree), no access evidence, no photo. Two vallonea/pubescent oaks inside private farms: fail hard rule 10 until a source says visitors may enter."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Eucalyptus at Tenuta Tresca, Via Monteroni 165",
+      "reason": "Private wedding and events estate, entry only by booking an event (see lead)."
+    }
+  ]
+}

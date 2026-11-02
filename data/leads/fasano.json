@@ -1,0 +1,15 @@
+{
+ "leads": [
+  {
+   "name": "Ulivo delle Tre Sorelle, Masseria Mozzone, Montalbano di Fasano",
+   "species": "Olive (Olea europaea)",
+   "reason": "Named by italia.it Piana degli Ulivi itinerary (fetched): three trunks from one base, 16.70 m circumference at the base, age not stated. Masseria Mozzone is a hotel/restaurant, Via Lecce 136, 72016 Fasano (italia.it listing), but the listing page says nothing about the tree and no source gives access, a coordinate or a photograph. 16.70 m would be exceptional (sanity check: the figure is the page's alone). Lead: needs the masseria's own word on visits plus a GPS or open photograph."
+  },
+  {
+   "name": "Fasano comune in the national and Puglia registers",
+   "species": "n/a",
+   "reason": "Neither data/registers/puglia-alberi-monumentali.json nor italy-masaf.json holds any row in the comune of Fasano (the Puglia list has Ostuni, Carovigno, Ceglie Messapica, Martina Franca, nothing in Fasano), so Fasano has no register-backed candidate. Its olives are covered by the Regione Puglia olive register, which is not open data (see data/leads/ostuni.json finding)."
+  }
+ ],
+ "blocked": []
+}

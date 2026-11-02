@@ -1,0 +1,54 @@
+[
+  {
+    "id": "vrn_001",
+    "name": "Lizza dei Briganti",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "source",
+    "girth_cm": 415,
+    "height_m": 23.0,
+    "location": {
+      "address": "Beside the country road from Pisignano towards Lizzanello, 73029 Vernole (LE)",
+      "latitude": 40.31081,
+      "longitude": 18.26851,
+      "neighbourhood": "Pisignano, a hamlet of Vernole, Salento"
+    },
+    "verified_sources": [
+      "puglia-alberi-monumentali.json, no. 01/L776/LE/16",
+      "https://luoghi.italianbotanicalheritage.com/en/?p=35395",
+      "https://www.inaturalist.org/observations/334599691",
+      "https://www.inaturalist.org/observations/137531343"
+    ],
+    "official_register": {
+      "name": "Alberi monumentali della Puglia (Regione Puglia), no. 01/L776/LE/16",
+      "url": null
+    },
+    "access": "Free to see from the road. It stands alone on the boundary between two farm fields beside the lane from Pisignano towards Lizzanello; the fields are farmland, so look from the road.",
+    "transport": "About 20 minutes by car south-east of Lecce; by bus (line 770 to Vernole) closer to an hour, with a rural last stretch on foot.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Pisignano%2C_Leccio_Lizza_dei_Briganti.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Depascali.angelo, Wikimedia Commons",
+      "status": "approved",
+      "width": 5184,
+      "height": 3456,
+      "taken_month": 3
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Lizza_dei_briganti%2C_Pisignano_%28Lecce%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Daniele Mercadante, Wikimedia Commons",
+        "status": "approved",
+        "width": 6240,
+        "height": 4160
+      }
+    ],
+    "story": "The holm oak outside Pisignano is named for the men who are said to have met under it. Lizza dei Briganti, the brigands' oak, comes from a local tradition that outlaws gathered at its trunk. No record names them or dates the meetings, so it survives as tradition and nothing more.\n\nWhat is on record is its size. Puglia's regional list of monumental trees gives it a trunk 4.15 metres round and a height of 23 metres, enough for the region to protect it as a monumental tree. It stands alone on the boundary between two farm fields beside the lane towards Lizzanello.\n\nHow old it is, nobody can say with a method. A cycling association that rides out to it put it at more than 300 years; a naturalist's note on iNaturalist in January 2026 guessed about a thousand. Those figures are far apart and neither shows its working, so take both as guesses, and if you know of a better one, tell us.\n\nLocal cyclists come out to it on the asphalt lanes from Lecce. The ground under it is farmland, so look from the road rather than walking into the fields. Pisignano is a hamlet of Vernole, about 20 minutes by car south-east of Lecce.",
+    "how_to_recognise": "You can recognise it as the one big holm oak standing alone on the field boundary, 23 metres tall. It stands beside the lane from Pisignano towards Lizzanello."
+  }
+]

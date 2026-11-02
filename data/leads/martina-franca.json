@@ -1,0 +1,266 @@
+{
+  "city": "Martina Franca",
+  "leads": [
+    {
+      "name": "Fortunato (holm oak), Bosco delle Pianelle",
+      "species": "Holm oak (Quercus ilex)",
+      "location": {
+        "latitude": null,
+        "longitude": null
+      },
+      "sources": [
+        "http://riservaboscopianelle.it/wp/i-sentieri/ (path 8, 1600 m along a lama: 'l'albero piu grande di tutto il bosco, Fortunato, un leccio plurisecolare risparmiato al taglio')"
+      ],
+      "why_lead": "Named by the reserve itself as the biggest tree of the wood, on a public path, but no coordinate anywhere (not in any register row I could match with certainty; could be register 06 g450, the largest girth in the reserve, which would make it a second name for the tree beside the Capitano pin or a different one on path 8). No photo, no pin. Needs the path 8 track or a reader's GPS."
+    },
+    {
+      "name": "Holm oaks and Macedonian oaks near Masseria Piovacqua, Bosco delle Pianelle (path 2)",
+      "species": "Quercus ilex and Quercus trojana",
+      "location": {
+        "latitude": null,
+        "longitude": null
+      },
+      "sources": [
+        "http://riservaboscopianelle.it/wp/i-sentieri/ (path 2, from Masseria Piovacqua: 'lecci e fragni secolari')"
+      ],
+      "why_lead": "Ensemble, no individual tree named, no coordinate; not a collectible point."
+    },
+    {
+      "name": "Macedonian oak, R.N. Murge Orientali Sez. Signorella",
+      "species": "Quercus trojana",
+      "girth_cm": 365,
+      "height_m": 16,
+      "location": {
+        "latitude": 40.669431,
+        "longitude": 17.180208
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 02/E986/TA/16)",
+        "data/registers/italy-masaf.json (twin, folded)"
+      ],
+      "why_lead": "Register only, approximate coordinate. Searches found no source on a public trail to it or on who owns the ground in the Signorella section; no photo or exact pin. Access unsettled."
+    },
+    {
+      "name": "Macedonian oak, R.N. Murge Orientali Sez. Gorgofreddo",
+      "species": "Quercus trojana",
+      "girth_cm": 305,
+      "height_m": 16.5,
+      "location": {
+        "latitude": 40.692706,
+        "longitude": 17.271767
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 03/E986/TA/16)",
+        "data/registers/italy-masaf.json (twin, folded)"
+      ],
+      "why_lead": "Same as Signorella: register coordinate only, no access or trail evidence, no photo."
+    },
+    {
+      "name": "Holm oak, R.N. Murge Orientali, Masseria Angela-Trasconi",
+      "species": "Quercus ilex",
+      "girth_cm": 305,
+      "height_m": 13,
+      "location": {
+        "latitude": 40.672081,
+        "longitude": 17.269322
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 01/E986/TA/16)"
+      ],
+      "why_lead": "Inside a masseria; no source on visiting. Register coordinate only."
+    },
+    {
+      "name": "Holm oak, Bosco delle Pianelle 07",
+      "species": "Quercus ilex",
+      "girth_cm": 385,
+      "height_m": 20,
+      "location": {
+        "latitude": 40.653567,
+        "longitude": 17.206925
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 07/E986/TA/16)",
+        "https://www.inaturalist.org/observations/356403757 (girth 385 matches)"
+      ],
+      "why_lead": "Public reserve, but see Capitano note: possibly the same tree as the Capitano (iNat quotes 385 cm) with a mis-placed register coordinate, or a separate tree 1.2 km west. Fold or separate once one is checked on site; no pin evidence."
+    },
+    {
+      "name": "Holm oak, Jazzo Scagno - Via Monti del Duca",
+      "species": "Quercus ilex",
+      "girth_cm": 340,
+      "height_m": 15,
+      "location": {
+        "latitude": 40.640836,
+        "longitude": 17.364108
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 15/E986/TA/16)",
+        "data/registers/italy-masaf.json (twin)"
+      ],
+      "why_lead": "A jazzo (farm complex), no access source; register coordinate only, about 5.8 km from the town."
+    },
+    {
+      "name": "Terebinth, Masseria Russoli, Crispiano",
+      "species": "Pistacia terebinthus",
+      "girth_cm": 250,
+      "height_m": 10,
+      "location": {
+        "latitude": 40.632578,
+        "longitude": 17.276131
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 01/D171/TA/16)"
+      ],
+      "why_lead": "Masseria, no access source; Crispiano, not Martina Franca; register coordinate only. Not searched further."
+    },
+    {
+      "name": "Macedonian oak, Monte Ferraro, Conversano",
+      "species": "Quercus trojana",
+      "girth_cm": 340,
+      "height_m": 12,
+      "location": {
+        "latitude": 40.912406,
+        "longitude": 17.058394
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 01/C975/BA/16)"
+      ],
+      "why_lead": "Not searched this pass (budget); Conversano is about 45 km from Martina Franca by road, so it belongs to its own place anyway. Register coordinate only, access unknown."
+    },
+    {
+      "name": "Other Martina Franca register rows (Presidente, Curcio, Monte Tullio masserie; Taranto Masseria Rossini fragno; Massafra Masseria Cicerone)",
+      "species": "mixed",
+      "location": {
+        "latitude": null,
+        "longitude": null
+      },
+      "sources": [
+        "data/registers/italy-masaf.json"
+      ],
+      "why_lead": "All masserie with no access source; not individually researched this pass (time box). The Puglia regional file has no rows for most of them; they sit in the national MASAF file only."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Holm oak, Masseria Palesi (Strada Minco di Tata)",
+      "species": "Quercus ilex",
+      "girth_cm": 540,
+      "height_m": 26,
+      "location": {
+        "latitude": 40.674142,
+        "longitude": 17.302003
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 05/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms. Largest holm oak in Puglia per register (g540, h26); the one entry labelled Strada Minco di Tata, but the pin is about 0.6 km from that road by coordinate only, no source says it is visible from it. Worth a second look if a roadside view is ever documented."
+    },
+    {
+      "name": "Holm oak, Masseria Palesi 08",
+      "species": "Quercus ilex",
+      "girth_cm": 410,
+      "height_m": 18,
+      "location": {
+        "latitude": 40.671531,
+        "longitude": 17.305103
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 08/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms."
+    },
+    {
+      "name": "Downy oak, Masseria Palesi 09",
+      "species": "Quercus pubescens",
+      "girth_cm": 455,
+      "height_m": 18,
+      "location": {
+        "latitude": 40.667994,
+        "longitude": 17.307625
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 09/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms."
+    },
+    {
+      "name": "Holm oak, Masseria Palesi 10",
+      "species": "Quercus ilex",
+      "girth_cm": 448,
+      "height_m": 12,
+      "location": {
+        "latitude": 40.666239,
+        "longitude": 17.307069
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 10/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms."
+    },
+    {
+      "name": "Holm oak, Masseria Palesi 11",
+      "species": "Quercus ilex",
+      "girth_cm": 420,
+      "height_m": 18,
+      "location": {
+        "latitude": 40.665886,
+        "longitude": 17.306808
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 11/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms."
+    },
+    {
+      "name": "Holm oak, Masseria Palesi 12",
+      "species": "Quercus ilex",
+      "girth_cm": 430,
+      "height_m": 12,
+      "location": {
+        "latitude": 40.665497,
+        "longitude": 17.3066
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 12/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms."
+    },
+    {
+      "name": "Macedonian oak, Masseria Palesi 13",
+      "species": "Quercus trojana",
+      "girth_cm": 320,
+      "height_m": 16,
+      "location": {
+        "latitude": 40.664753,
+        "longitude": 17.305661
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 13/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms."
+    },
+    {
+      "name": "Downy oak, Masseria Palesi 14",
+      "species": "Quercus pubescens",
+      "girth_cm": 470,
+      "height_m": 20,
+      "location": {
+        "latitude": 40.669767,
+        "longitude": 17.309406
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 14/E986/TA/16)",
+        "https://luoghi.italianbotanicalheritage.com/en/?p=35392 (Italian Botanical Heritage: calls the Masseria Palesi holm oak the largest in Puglia; no access info)"
+      ],
+      "why_blocked": "Masseria Palesi is a private 17th-century estate used as a wedding and events venue (lalista.com, zankyou.it listings; no source says visitors may walk in; official reserve and visitor pages do not list it). Not seen from a public road in any source. Fails hard rule 10 until the estate states visiting terms."
+    }
+  ],
+  "notes": "2026-11-02 verify pass. Zero trees verified: the only public, signposted candidate (Albero del Capitano, Bosco delle Pianelle, regional reserve, free paths) fails the covered-country rule for lack of a confirmed pin or a photograph of the trunk. Masseria Palesi (7 trees) is a private events estate. Official reserve site riservaboscopianelle.it (http, /wp/ path) fetches fine. Overpass: overpass.private.coffee answered with an empty result for natural=tree nodes within 2 km of the Capitano (works, unlike overpass-api.de; empty means no OSM tree node there). Commons geosearch within 400 m of the Capitano: no files. 2026-11-02 later: the Capitano was promoted to data/research/martina-franca-verified.json on a Commons photograph whose uploader names it (File:Albero del capitano.png, CC BY-SA 4.0, Francescodimonte)."
+}

@@ -1,0 +1,50 @@
+{
+  "note": "Place fields for three Puglia places written on 2026-11-02 and held for the 25-a-day pace. Trees are in data/research/<slug>-verified.json. Build with the same shape as data/cities/gran-canaria.json (status needs_curation), then city_names.py and preflight.py.",
+  "places": {
+    "lecce": {
+      "city": "Lecce",
+      "country": "Italy",
+      "hero_tree_id": "lcc_001",
+      "oldest_tree_id": "lcc_001",
+      "intro": "Lecce's best-known old tree is not a stone pine or an olive but an ombu from the South American pampas, a soft-wooded giant that has stood on Viale Marconi for about 150 years by the count of the local press. In 2021 residents asked the city to check its health, and it is still standing, logged by naturalists every year since. It is free to see on a public street, five minutes on foot from Piazza Sant'Oronzo.",
+      "meta_description": "Lecce's old ombu on Viale Marconi, about 150 years old by local press reports: what it is and where to find it in the city centre.",
+      "question_meta": "Lecce's oldest-known city tree is the ombu of Viale Marconi, put at about 150 years and free to see near Piazza Sant'Oronzo.",
+      "question_answer": "The old tree to see in Lecce is the ombu, Phytolacca dioica, on Viale Marconi at Piazza Filippo Bottazzi, near Porta Napoli. Lecce's local press put it at about 150 years in 2021. It stands on a public street, free and always open, five minutes on foot from Piazza Sant'Oronzo.",
+      "question_context": "The ombu is a South American species with a soft, watery trunk rather than hard timber, planted in Mediterranean towns for its shade. Lecce's is not in Italy's national list or Puglia's regional list of monumental trees; it is known through the city's own press. In April 2021 a local news site described a giant tropical tree of about 150 years on Viale Marconi and reported that residents and experts had asked for a health check, and a local writer that June called it at risk, blaming water leaking from the pipes beneath it. Nobody has published a planting date, so the 150 years is the press's figure, not a measurement, and no girth or height has been recorded. The tree is still standing: naturalists have recorded it on iNaturalist most years since 2021, the latest in July 2026. Lequile, about 7 kilometres south-west, has two more ombu trees in its Piazza Europa, listed in the national register, and the Lizza dei Briganti holm oak at Pisignano is about 20 minutes away by car.",
+      "faq": [
+        {"q": "How old is the ombu tree in Lecce?", "a": "About 150 years, by the count of Lecce's local press in 2021. Nobody has published a planting date, so the figure is an estimate, not a measurement."},
+        {"q": "Where is the big ombu in Lecce?", "a": "On Viale Marconi at Piazza Filippo Bottazzi, near Porta Napoli, about five minutes on foot from Piazza Sant'Oronzo. It is on a public street, free and always open."}
+      ]
+    },
+    "vernole": {
+      "city": "Vernole",
+      "country": "Italy",
+      "hero_tree_id": "vrn_001",
+      "oldest_tree_id": "vrn_001",
+      "intro": "Vernole's tree is the Lizza dei Briganti, a holm oak at Pisignano named for the brigands said by local tradition to have met at its trunk. Puglia's regional list of monumental trees gives it a trunk 4.15 metres round and a height of 23 metres. It stands alone on a field boundary beside the lane towards Lizzanello, seen from the road, about 20 minutes by car south-east of Lecce.",
+      "meta_description": "The Lizza dei Briganti, a monumental holm oak at Pisignano near Lecce, 23 metres tall: its brigand legend and where to see it.",
+      "question_meta": "The Lizza dei Briganti at Pisignano, Vernole, is a monumental holm oak 23 metres tall, named for brigands of local legend.",
+      "question_answer": "The tree to see at Vernole is the Lizza dei Briganti, a holm oak on the edge of the hamlet of Pisignano. Puglia's regional list of monumental trees records a trunk 4.15 metres round and a height of 23 metres. It stands on a field boundary beside the lane from Pisignano towards Lizzanello and is seen from the road.",
+      "question_context": "The name means the brigands' holm oak, after a local tradition that outlaws gathered at its trunk; no record names them or dates the meetings, so it is carried as tradition. Puglia lists it among its monumental trees under entry 01/L776/LE/16, with the 4.15 metre girth and 23 metre height, and Italy's botanical heritage guide gives the same figures. Its age is not settled: a cycling association that rides out to it has put it at more than 300 years and a naturalist's note on iNaturalist in January 2026 guessed about a thousand, and neither gives a method, so both are guesses. The tree stands on farmland, so it is seen from the road rather than visited in the field. Pisignano is a hamlet of Vernole in the Salento, about 20 minutes by car south-east of Lecce; by bus, line 770 to Vernole, the trip takes closer to an hour with a rural stretch on foot at the end. Local cycling groups reach it on asphalt lanes from Lecce.",
+      "faq": [
+        {"q": "Why is it called the Lizza dei Briganti?", "a": "By local tradition, brigands gathered at its trunk. No record names them or dates the meetings, so the story is carried as tradition."},
+        {"q": "Can you walk up to the Lizza dei Briganti?", "a": "It stands on a field boundary on farmland, so look from the lane between Pisignano and Lizzanello rather than walking into the fields."}
+      ]
+    },
+    "martina-franca": {
+      "city": "Martina Franca",
+      "country": "Italy",
+      "hero_tree_id": "mfr_001",
+      "oldest_tree_id": "mfr_001",
+      "intro": "Martina Franca's named tree is the Albero del Capitano, a centuries-old holm oak, hollow at the base, in the Bosco delle Pianelle regional nature reserve. Two of the wood's signed paths lead past it, one from the visitor centre about 120 metres away, and walkers say you should go round it three times for luck. The wood is free, its paths are open at all times, and it is about 20 minutes by car from town.",
+      "meta_description": "The Albero del Capitano, a hollow centuries-old holm oak in the Bosco delle Pianelle near Martina Franca: the paths to it and how to visit.",
+      "question_meta": "The Albero del Capitano is a centuries-old holm oak in the Bosco delle Pianelle reserve near Martina Franca, 120 metres from the visitor centre.",
+      "question_answer": "The tree to see near Martina Franca is the Albero del Capitano, the Captain's Tree, a holm oak hollow at the base in the Bosco delle Pianelle regional nature reserve. The reserve calls it centuries old. Path 16 runs to it from the visitor centre on the old SS581 towards Massafra, about 120 metres, and the wood is free and open at all times.",
+      "question_context": "The Bosco delle Pianelle is a regional nature reserve of holm oak and Macedonian oak in the Murge south-west of Martina Franca, with 30 kilometres of signed paths that the reserve says are freely open. Its own path guide names two trees. The Albero del Capitano lies on paths 11 and 16, at the junction of paths 5c and 5d, and is described as a centuries-old holm oak, hollow at the base. Fortunato, on path 8, is called the biggest tree in the wood, a holm oak several centuries old spared from felling, but it has no published location yet. Puglia's register of monumental trees lists two holm oaks in the reserve, both 20 metres tall and 3.85 and 4.5 metres round, and it is not settled which entry is the Capitano. Nobody has written down who the captain was, and walkers keep a custom of circling the tree three times for luck. The visitor centre opens daily from 10:00 to 14:00. There is no public transport; by car it is about 20 minutes from Martina Franca.",
+      "faq": [
+        {"q": "How do you get to the Albero del Capitano?", "a": "Drive to the Bosco delle Pianelle visitor centre on the old SS581 towards Massafra, about 20 minutes from Martina Franca, and follow path 16 for about 120 metres."},
+        {"q": "Is the Bosco delle Pianelle free?", "a": "Yes. The reserve's signed paths are open at all times and free. The visitor centre opens daily from 10:00 to 14:00."}
+      ]
+    }
+  }
+}

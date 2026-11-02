@@ -1,0 +1,34 @@
+{
+ "city": "Alberobello",
+ "leads": [
+  {
+   "name": "Bosco Selva, Alberobello (fragni, holm oaks, downy oaks)",
+   "species": "Quercus trojana, Q. virgiliana, Q. ilex",
+   "location": {
+    "latitude": 40.7696,
+    "longitude": 17.2352,
+    "note": "Komoot search-centre only, not a tree"
+   },
+   "sources": [
+    "https://alberobello.com/en/visit-alberobello/countryside/bosco-selva-alberobello (official tourism site: freely accessible 24 hours a day, about 2 km from the centre, 45 ha)",
+    "https://www.komoot.com/guide/3899448/natural-monuments-around-alberobello"
+   ],
+   "why_lead": "Public wood with real paths, but no source names an individual old tree, no register row, no coordinate for one. A wood is not a collectible point (avenue or wood: blocked as a unit). If someone finds a named veteran inside it, it is a candidate."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Gardens of Pomona (Alberobello area, over 1,000 old fruit varieties)",
+   "species": "mixed fruit trees",
+   "location": {
+    "latitude": 40.7397,
+    "longitude": 17.3666
+   },
+   "sources": [
+    "https://www.komoot.com/guide/3899448/natural-monuments-around-alberobello"
+   ],
+   "why_blocked": "A collection of fruit varieties, not an individual old tree; not a collectible point; the 40.7397,17.3666 coordinate is a Komoot search centre, and the garden's visiting terms were not checked."
+  }
+ ],
+ "notes": "2026-11-02 from-zero search in Italian and English (4 queries): no register row in Alberobello (Puglia regional and MASAF files), no Wikidata item, no source naming an old or monumental tree in Alberobello, Locorotondo, Noci or Cisternino. Honest result: zero trees. Nearest real candidates are in Martina Franca (Bosco delle Pianelle, about 20 km by road, see data/leads/martina-franca.json), which is not within about 30 minutes by public transport."
+}

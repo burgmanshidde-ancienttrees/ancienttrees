@@ -1,0 +1,40 @@
+{
+  "leads": [
+    {
+      "name": "Holm Oak, Via Bobbio, Poggiardo",
+      "species": "Holm Oak (Quercus ilex)",
+      "reason": "Register row 01/G751/LE/16 (MASAF and Puglia, girth 320 cm, height 20 m, urban) at 40.05159,18.38362, about 11 km from Otranto (bus, time not verified). Register only: no news, no iNaturalist observation within 100 m, no photograph, no pin evidence, and Via Bobbio is a street so no small named site. No photo or exact pin in reach; alive not checked beyond the register."
+    },
+    {
+      "name": "Holm oaks and bay laurel, Villa Franite, Muro Leccese",
+      "species": "Holm Oak (Quercus ilex) x2 and Bay Laurel (Laurus nobilis)",
+      "reason": "Register rows 01, 02 and 03 /F816/LE/16 (girths 370, 330, 325 cm; 40.1052,18.3153 and neighbours, about 25 km from Otranto, over the 30-minute public-transport limit). Villa Franite is the Tenuta Le Franite / Villa Zaira holiday and wedding villa; no source says the grounds are open. Private: fails hard rule 10."
+    },
+    {
+      "name": "Field Elm and Hungarian Oak, Canale Culupara, Botrugno",
+      "species": "Field Elm (Ulmus minor) and Hungarian Oak (Quercus frainetto)",
+      "reason": "Register rows 01/B086/LE/16 (g350 h20, 40.04121,18.28357) and 02/B086/LE/16 (g425 h18, 40.03926,18.28777), rural canal area, about 25 km from Otranto. No web source, no access evidence, no photograph, no pin evidence. Fails distance, access and findability."
+    },
+    {
+      "name": "Valonia Oak, Madonna del Carmine, Tricase (04/L419/LE/16)",
+      "species": "Valonia Oak (Quercus ithaburensis subsp. macrolepis)",
+      "reason": "Register row g340 h11 at 39.927553,18.378564, 40 m from the famous Quercia Vallonea (trc_001). The 02/L419/LE/16 row (g425 h22, 39.927881,18.378731) is trc_001 itself (same coordinate), so it is folded and not re-verified. This 04 row is a smaller neighbour within the same site with no source of its own and cannot be told apart from trc_001 or from other oaks there; iNaturalist 386313925 (2026-07-29, 5 m) is ambiguous between them. Not delivered to tricase-verified.json."
+    },
+    {
+      "name": "Valonia Oaks, Bosco Falanite and Fanucchiare, Tricase (01/L419 and 03/L419)",
+      "species": "Valonia Oak (Quercus ithaburensis subsp. macrolepis)",
+      "reason": "Register rows g350 h20 (39.925047,18.379644) and g375 h20 (39.924836,18.379714), about 300 m south of trc_001. No web source for either, access to the wood not established (Bosco di Tricase is in a regional park but no source says these are walkable), no photograph. No tricase-verified.json delivery."
+    },
+    {
+      "name": "Otranto town itself",
+      "species": "n/a",
+      "reason": "Searched in Italian (alberi secolari, monumentali, ulivo millenario, Torre Pinta) and found no individually named tree in Otranto. Torre Pinta (Valle delle Memorie) is a private estate with a booked tour and its olives are not described as individual trees. Otranto has no naming body; the town page cannot reach four trees from this pass."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Villa Franite trees, Muro Leccese",
+      "reason": "Private holiday and wedding villa, no public access source."
+    }
+  ]
+}
