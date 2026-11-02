@@ -2,78 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-06T06:37:49+00:00",
-   "date": "2026-09-06",
-   "run_id": "34016980943",
-   "minutes": 111.9,
-   "minutes_basis": "measured",
-   "attempts": 3,
-   "turns": 614,
-   "denials": 45,
-   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(grep), Bash(mkdir), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
-   "ended": "success",
-   "tokens": 52164380,
-   "claims_held": [],
-   "commits": 15,
-   "cities_touched": 13,
-   "cities": [
-    {
-     "city": "tilburg",
-     "trees": 8
-    },
-    {
-     "city": "eindhoven",
-     "trees": 4
-    },
-    {
-     "city": "aachen",
-     "trees": 1
-    },
-    {
-     "city": "borrowdale",
-     "trees": 1
-    },
-    {
-     "city": "coppenbrugge",
-     "trees": 1
-    },
-    {
-     "city": "erdmannrode",
-     "trees": 1
-    },
-    {
-     "city": "galenbeck",
-     "trees": 1
-    },
-    {
-     "city": "schlagsdorf",
-     "trees": 1
-    },
-    {
-     "city": "baarn",
-     "trees": 0
-    },
-    {
-     "city": "brielow",
-     "trees": 0
-    },
-    {
-     "city": "bristol",
-     "trees": 0
-    },
-    {
-     "city": "lisbon",
-     "trees": 0
-    },
-    {
-     "city": "warsaw",
-     "trees": 0
-    }
-   ],
-   "trees": 18,
-   "logged": true
-  },
-  {
    "started": "2026-09-06T08:45:36+00:00",
    "date": "2026-09-06",
    "run_id": "34022741485",
@@ -22521,6 +22449,25 @@
    ],
    "trees": 1,
    "logged": true
+  },
+  {
+   "started": "2026-11-02T19:56:22+00:00",
+   "date": "2026-11-02",
+   "run_id": "41514465530",
+   "minutes": 0.0,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 1,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 2,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [

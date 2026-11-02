@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-02 - Night run 2026-11-02 19:56 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 2 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: You've hit your 5-hour limit · resets 10:40pm (UTC)
+
 ## 2026-11-02 session: Greek islands, 10 trees written and held for the pace (Corfu 8, Kefalonia 1, Paros 1); a Greek tree register found
 
 - **Waiting, written and preflight-clean apart from the pace (45 own trees in 24 hours when checked):** Corfu as a new island place of eight: the Moreton Bay figs (11.4 m round), the 31.5 m Aleppo pine and the Norfolk Island pine in Mon Repos, the Liston oak (declining, said so), the ombu of the People's Garden, the plane at Empress Elisabeth's spring in Gastouri (12.78 m measured on the wall built against it, 7.70 m free trunk, both said), the elm of Strinylas (age sources conflict, left open), and the gazette-declared olive of Agios Spyridon at Panachori (21.7 m round at the base; the 2,700 years is a press estimate, said so). Kefalonia: the Plane of Saint Gerasimos on the Omala plateau, about 450 years by ring count, gazette monument since 2024. Paros: the giant cypress (35 m) in the Valley of the Butterflies, ticketed June to September; the stone pine 22 m away folded into it. Pins are the registry's GPS points, confirmed, except the Panachori olive (gazette coordinate, approximate, with a location_site). No photographs: Commons rate-limited the geosearch all session, so `photo_hunt.py --recheck` is worth one try later. **To publish, once the pace allows:** `python3 scripts/build_greek_islands.py`, then `city_names.py`, preflight, commit by path. Stories in data/research/{corfu,kefalonia,paros}-verified.json, place fields in data/research/greek-islands-places.json.
