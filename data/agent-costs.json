@@ -1,6 +1,16 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-11-02": [
+   {
+    "date": "2026-11-02",
+    "kind": "write",
+    "target": "faro+frankfurt+innsbruck+new-york+san-francisco+cardiff+4 READY leads",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "0 written: same 6 held third time (no new evidence), 4 READY leads fail photo/pin, access or floor; stop re-dispatching until a photo, pin or access source lands"
+   }
+  ],
   "2026-11-01": [
    {
     "date": "2026-11-01",
