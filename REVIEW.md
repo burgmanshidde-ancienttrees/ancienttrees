@@ -23,7 +23,16 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-11-01
+## 2026-11-02
+
+Web half: the last 24 hours were data (Bergamo Gorlago cork oak, Porto wall, register scouting, lastmod). No em dashes in the built bergamo page. Findings:
+
+- WARN (fourteenth review to see it) meta description prints a planting or event year as an age: `grep -rlE 'content="A (17|18|19|20)[0-9]{2}-year-old' site/dist` still finds 95 pages. Hard rule 2, Verify (a derived age states its basis). Nothing in qa.py refuses it. Build the check on built HTML first, then fix the meta template.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12) and the 2026-10-21 Tangier ruling. Eighth review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Translations too.
+- NOTE Monday copy reading (English added in the last 7 days in i18n.ts: "Which kind of tree?", "Any species", "No species by that name.", "Seasons", "Photographed in all four seasons", "Share your photo", "Become an ambassador"): grammatical, idiomatic, nothing machine-shaped. No new copycheck shape to add.
+- Monday corpus-rot audit and the decision-drift grep were not done in this run (time); a session should do them.
+
+
 
 Web half: the last 24 hours were data (Dublin Marlay Park, Frankfurt Naturdenkmal trees, New York Douglaston, Porto/Portugal scouting, digest). No em dashes in the built dublin, frankfurt, new-york pages; their meta descriptions read true. Findings:
 
