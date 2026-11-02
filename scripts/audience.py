@@ -57,6 +57,23 @@ def gsc_client(today):
     return q
 
 
+# Which language a search was typed in. Deliberately crude and it says so:
+# a handful of unmistakable markers per language, nothing clever, and anything
+# unmatched counts as "unclassified" rather than being guessed into English.
+MARKERS = {
+    "Spanish": ["arbol", "árbol", "arboles", "árboles", "mas antiguo", "más antiguo", "viejo"],
+    "Portuguese": ["arvore", "árvore", "arvores", "árvores", "mais antiga", "velha"],
+    "Italian": ["albero", "alberi", "piu antico", "più antico", "secolare", "monumentale"],
+    "Dutch": ["boom", "bomen", "oudste", "dikste"],
+    "German": ["baum", "baume", "bäume", "alteste", "älteste"],
+    "French": ["arbre", "arbres", "plus vieux", "remarquable"],
+    "Japanese": ["木", "樹", "巨樹", "古木"],
+    "Turkish": ["agac", "ağaç", "anitagac", "anıt ağaç"],
+    "Polish": ["drzewo", "drzewa", "najstarsze"],
+}
+ENGLISH = ["tree", "trees", "oldest", "ancient", "biggest", "largest", "old"]
+
+
 def classify(q):
     s = q.lower()
     for lang, words in MARKERS.items():
