@@ -1,0 +1,43 @@
+{
+  "leads": [
+    {
+      "name": "Cypresses at the Franciscan monastery, Živogošće (register ps.4490)",
+      "species": "Cypress (probably Cupressus sempervirens, not stated by the register)",
+      "place": "makarska",
+      "coordinates": "43.184056,17.164239",
+      "reason": "Bioportal point row, protected 1970-03-01, register name says 'čempresi' (a group). No fetched source describes the trees, their age or count; the monastery of the Holy Cross (17th century) is a working Franciscan house and no source says its grounds are open. Fails ensemble and access bars; needs a session for a photo or a visit report."
+    },
+    {
+      "name": "Cypresses in the cemetery, Živogošće (register ps.4491)",
+      "species": "Cypress (probably Cupressus sempervirens)",
+      "place": "makarska",
+      "coordinates": "43.188244,17.167475",
+      "reason": "Bioportal point row, protected 1970-03-01, a group in a cemetery (open ground would be fine). No source beyond the register describes the trees, how many or how old; a search found no page on them. Not a single collectible point unless a source names one standout trunk."
+    },
+    {
+      "name": "Garagnin-Fanfogna garden, Trogir",
+      "species": "unknown",
+      "place": "trogir",
+      "reason": "A historic botanical garden (late 18th to early 19th century, 'oldest botanical garden in Croatia' per a 2005 Šumarski list article by Gregurević, seen in a search summary only). No individual old tree named in any source seen in the 10-minute search; a walk-through garden is not a tree. The Šumarski list 2005 article (sumari.hr/sumlist/pdf/200504150.pdf) may name specimens; not fetched."
+    },
+    {
+      "name": "St Lawrence monastery garden, Šibenik",
+      "species": "unknown",
+      "place": "sibenik",
+      "reason": "Ten-minute search found no source naming a tree there or confirming the garden is open. No register row. Nothing to verify."
+    },
+    {
+      "name": "Wild chestnut (horse chestnut) trees returned to Šibenik, 2020",
+      "species": "Horse Chestnut (Aesculus hippocastanum), unconfirmed",
+      "place": "sibenik",
+      "reason": "Timeout article 'In Šibenik beautiful wild chestnut trees return home' (2020-03-14) seen in a search listing only, not fetched. Probably replanted trees, not old; not examined."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Bishop's pine and old oak of Soline, Brela (Makarska riviera)",
+      "reason": "Both originals are gone: Bijanković's pine lost in 1983 (replacement planted), old downy oak of Soline (natural monument 1967) toppled by a storm in 2012 and replaced by a sapling planted 2019 (brela.hr/en/nature/in-memory-of-giants). A replacement sapling is not an ancient tree; known dead, never ships. Replacement sapling in the courtyard of Our Lady of Mount Carmel, Brela, could be noted for a future walk, not a tree page."
+    }
+  ],
+  "notes": "Checked 2026-11-02. Overpass API hung from the Mac for three attempts (overpass-api.de SSL handshake failure from python, curl timeout 25 s on overpass-api.de and overpass.kumi.systems), so no OSM natural=tree nodes were read. hrcak.srce.hr returns HTTP 418 to automated fetch (WebFetch and curl with a browser user agent). Search summaries were used as pointers only; figures in the verified file come from fetched pages (kastela-info.hr, dalmatia.hr, total-croatia-news.com, portal.hr, solin-info.com, secretcroatia.blog, myislandbrac.com, brela.hr) and the iNaturalist API."
+}

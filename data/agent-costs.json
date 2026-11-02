@@ -14601,6 +14601,14 @@
       "tokens": 150000,
       "trees": 0,
       "note": "Dispatcher session: Commons photo rescue, 3 stories and place fields, held for the pace. Tokens estimated."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "pula+rab+lun+kastela+split+zadar+brac+hvar+cara+orebic",
+      "tokens": 154817,
+      "trees": 11,
+      "note": "12 stories plus 9 place blocks; Kastel Stafilic olive held (access unproven); all held for the pace, build with scripts/build_croatia_coast.py."
     }
   ]
 }

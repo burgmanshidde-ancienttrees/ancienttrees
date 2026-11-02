@@ -1,0 +1,100 @@
+{
+ "leads": [
+  {
+   "name": "Kostrena oak (Quercus pubescens, about 250 years)",
+   "species": "Downy Oak (Quercus pubescens)",
+   "place": "rijeka",
+   "coordinates": "45.306417,14.493831",
+   "reason": "Real, alive (Croatian Tree of the Year 2025, European Tree of the Year 2026 entry, tportal 2026-02-23) and the TotY GPS is published, but it stands at the main entrance / edge of a school yard in Kostrena and no source says the public may walk up (hard rule 10: schools only with evidence the grounds are open). Age 250 is a stated figure with no method; no height or girth. Kostrena is a municipality next to Rijeka (travel time not verified). Promote if OSM or a street view shows it on the public pavement.",
+   "sources": [
+    "https://www.treeoftheyear.org/previous-years/2026/kostrena-oak-tree",
+    "https://www.tportal.hr/lifestyle/clanak/skromni-hrast-ispred-skole-u-kostreni-je-hrvatski-adut-za-najposebnije-stablo-europe-20260222",
+    "https://turistickeprice.hr/en/?p=112059",
+    "https://www.croatiaweek.com/250-year-old-oak-named-croatias-tree-of-the-year-2025"
+   ]
+  },
+  {
+   "name": "Old oaks at Guljanov dolac (register ps.4726 and ps.4778)",
+   "species": "Downy Oak (Quercus pubescens)",
+   "place": "crikvenica",
+   "coordinates": "45.187659,14.706732 and 45.187661,14.706833",
+   "reason": "NOT on Krk: the two trees stand in the Kotor area above Crikvenica (134 m), protected 2002, about 350 and 400 years (JU Priroda page, which does not say which is which). Register points are the official coordinate, about 7 m apart, so fold as one entry. Not delivered: no dated life check (no photo, iNaturalist or Commons record within 800 m), no access information (no trail description found, likely farmland above town), no girth or height. Needs a session with a map or a local walk report. Crikvenica is a Kvarner town, not Krk.",
+   "sources": [
+    "https://ju-priroda.hr/en/?p=3043",
+    "data/registers/croatia-spomenici-prirode.json ps.4726, ps.4778"
+   ]
+  },
+  {
+   "name": "Cypress rows of Rovinj cemetery (register ps.4469 ROVINJ - DRVORED CEMPRESA)",
+   "species": "Italian Cypress (Cupressus sempervirens)",
+   "place": "rovinj",
+   "coordinates": "45.093468,13.645614",
+   "reason": "Ensemble of about 115 cypresses in 8 rows (Istria Sun tourism listing, search summary only, not fetched; older ones over 15 m, new ones replaced dead ones, so most are not old). Register row is a polygon centroid and flagged publishable=false in our register file. An avenue of cypresses in a cemetery has no single tree and no age basis; no tree-level pin. Blocked as an avenue, not a collectible point.",
+   "sources": [
+    "data/registers/croatia-spomenici-prirode.json ps.4469"
+   ]
+  },
+  {
+   "name": "Cypress at Kascerga (register ps.4534 KASCERGA - CEMPRES)",
+   "species": "Cypress (Cupressus sp.)",
+   "place": "pazin",
+   "coordinates": "45.30297,13.900533",
+   "reason": "Register point, protected 1972, village 15 km north of Pazin. Protected Planet files it as a horticultural monument. No page found with age, size, location (churchyard? garden?), access or any dated sighting; Wikipedia, central-istria and searches silent. Cannot place or life-check. Needs a Croatian register detail sheet (bioportal) or a visit report.",
+   "sources": [
+    "https://protectedplanet.net/377985 (search listing only, page 500)",
+    "data/registers/croatia-spomenici-prirode.json ps.4534"
+   ]
+  },
+  {
+   "name": "Four Pines of Karojba (Cetiri pinije, register ps.4385 PINIJE U KAROJBI)",
+   "species": "Stone Pine (Pinus pinea)",
+   "place": "pazin",
+   "coordinates": "45.299651,13.822757",
+   "reason": "Four umbrella pines at a crossroads in Karojba, said to be over 200 years old by a Komoot guide (not fetched, blogs are not sources). Register protected 1966, point row but publishable=false in our register file. Ensemble of four at a crossroads; no source fetched, no girth, no recent sighting, roadside access not confirmed. Karojba is about 15 km from Pazin, nearer Motovun/Pazin by road. Lead for a session.",
+   "sources": [
+    "data/registers/croatia-spomenici-prirode.json ps.4385"
+   ]
+  },
+  {
+   "name": "Debela lipa - Velika Rebar (register ps.4333)",
+   "species": "Small-leaved Linden (Tilia cordata), as the name says",
+   "place": "gorski-kotar",
+   "coordinates": "45.376944,14.749177",
+   "reason": "Rejected, not a tree: JU Priroda lists it as a special forest vegetation reserve proclaimed 1964, about 125 ha, highest point 959 m, in Delnice / Lokve municipality in Gorski kotar. The register geometry is a polygon centroid in the forest. No individual tree. Not a Rijeka day trip as a single stop.",
+   "sources": [
+    "https://ju-priroda.hr/en/?p=2995",
+    "https://protectedplanet.net/16483"
+   ]
+  },
+  {
+   "name": "Opatija Angiolina Park old trees and camellias",
+   "species": "various (camellias, pines, cedars)",
+   "place": "opatija",
+   "coordinates": "",
+   "reason": "Park architecture monument since 1968, 2.7 ha, laid out from 1844 around Villa Angiolina with some older trees kept; no source names an individual old tree or camellia with an age or girth (visitopatija, JU Priroda, novilist all silent on specimens). Park or camellia collection is not a collectible point. No candidate in the 10-minute search.",
+   "sources": [
+    "https://ju-priroda.hr/en/protected-nature-areas/angiolina-park/"
+   ]
+  },
+  {
+   "name": "Porec: no named old tree found",
+   "species": "",
+   "place": "porec",
+   "coordinates": "",
+   "reason": "10-minute search for a notable old tree in Porec found nothing: no register row, no named tree, no council survey. Nothing to verify.",
+   "sources": []
+  },
+  {
+   "name": "Rovinj Golden Cape (Zlatni rt) named tree",
+   "species": "Aleppo Pine, Holm Oak, Himalayan cedar",
+   "place": "rovinj",
+   "coordinates": "",
+   "reason": "Forest park laid out from 1890 (Huetterott); istra.hr mentions Himalayan cedars planted in a six-pointed star at Punta Corrente Meadow, but no named individual tree, age or girth. Park or wood, not a collectible point. Possible follow-up: the cedar star as an ensemble with one place to stand, only with a source for age.",
+   "sources": [
+    "https://www.istra.hr/en/destinations/rovinj/do-not-miss/green-istria/natural-attractions/golden-cape-forest-park"
+   ]
+  }
+ ],
+ "blocked": [],
+ "notes": "Verify pass 2026-11-02, Croatian coast, Istria and Kvarner. Delivered trees are in data/research/croatia-istria-kvarner-verified.json. Overpass was down (502) during the pass, so no OSM access checks were possible."
+}

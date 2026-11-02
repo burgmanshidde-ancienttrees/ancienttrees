@@ -1,0 +1,132 @@
+[
+  {
+    "id": "hrv_001",
+    "place": "hvar",
+    "town": "Hvar town",
+    "name": "Rosselli's Cypress, Hvar Franciscan Monastery",
+    "species": "Mediterranean Cypress (Cupressus sempervirens)",
+    "age_estimate": "roughly 300 to 350 years",
+    "age_min": 300,
+    "age_max": 350,
+    "age_basis": "source",
+    "girth_cm": 220,
+    "height_m": 7,
+    "location": {
+      "address": "Franjevački samostan, Šetalište put Križa 15, Hvar",
+      "latitude": 43.167991,
+      "longitude": 16.442955,
+      "neighbourhood": "Hvar town, east end of the harbour promenade"
+    },
+    "verified_sources": [
+      "https://www.sumari.hr/sumlist/pdf/200002790.pdf",
+      "https://cdn1-stg2019.expeditions.com/expedition-stories/daily-expedition-reports/hvar-croatia-SC-2022-09-22",
+      "https://nominatim.openstreetmap.org/ui/details.html?osmtype=R&osmid=2135584"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja, spomenik prirode ps.4402 HVAR - ČEMPRES",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs (localId ps.4402)"
+    },
+    "access": "Paid: inside the Franciscan monastery's garden and museum. Third-party guides list roughly 3 to 10 euro; current opening hours not confirmed.",
+    "transport": "On foot, about 5 to 8 minutes east of Hvar's main square along the quay past the Arsenal. Hvar town is about 1 to 2 hours by ferry or catamaran from Split.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Franciscan monastery courtyard garden, Hvar",
+      "radius_m": 30
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Register ps.4402 point (43.167991,16.442955) lies inside the OSM monastery outline (bbox 43.16805-43.16843, 16.44284-16.44329). Not a GPS fix at the trunk, so approximate with location_site; the one old tree in the courtyard. Scientific paper (Sumarski list 5-6, 2000, Cvjetan, Kajba, Pavicic, Pejic) 'Genetska analiza starog hvarskog cempresa': Cupressus sempervirens var. horizontalis, age estimated 300-350 years, planted in the west part of the courtyard terrace, probably when the top terrace was laid out in the 17th century; known as 'Roselijev cempres' because tradition says Italian painter Matteo Rosselli (1578-1650) planted it while convalescing at the monastery, but the paper says no written proof exists. Height 7 m, no vertical leader, forks in two directions giving an umbrella habit (unclear if wind broke the top or age). Girth 200 cm at base, 220 cm at 1.5 m (measured c. 1999-2000, so slightly more now). Branches 7-8 m long, 120 cm girth; heart rotted, only 10-15 cm of living tissue left. Declared protected natural rarity by the Institute for Nature Protection on 21 Sept 1961, entered in the register as natural monument (register date in our data 1948-09-05, conflict; paper says 1961). RAPD analysis suggests an introduced genotype from elsewhere. Two younger cypresses in the same courtyard were planted in 1963 by fra Venko Gugic, probably seed offspring. Tourist and cruise sources say 300 to 500 years and claim lightning split it ('struck by lightning, spreading horizontally'): those are anecdotes, not sourced, flag. Alive: described in a Sept 2022 cruise walking-tour log as the monastery's 500-year-old cypress (age figure not trusted); 2020+ mention exists but no dated photo seen. Access hours unverified.",
+    "facts": [
+      "Known as Roselijev (Rosselli's) cypress by tradition, unproven",
+      "7 m tall, no vertical leader, umbrella shape",
+      "220 cm girth at 1.5 m (c. 2000)",
+      "protected natural rarity 1961",
+      "genetic study 2000 suggests an introduced genotype",
+      "hollow: 10-15 cm living tissue left",
+      "monastery also known for a 17th-century Last Supper in the refectory"
+    ],
+    "story": "Tradition says an Italian painter planted this cypress while he recovered from an illness at the monastery. The painter is Matteo Rosselli, who lived from 1578 to 1650, and the tree is still called Roselijev čempres after him. A 2000 study of the tree states plainly that no written proof of the story exists.\n\nWhat the study does give is detail. It is the horizontal-branched form of the cypress, 300 to 350 years old by the researchers' estimate, probably planted when the monastery's top terrace was laid out in the 17th century. It stands seven metres high with no leading shoot. The trunk forks two ways into an umbrella, with branches seven to eight metres long, and the authors could not say whether wind or age took the top. Around 2000 the trunk measured 220 centimetres round at 1.5 metres. Its heart has rotted, leaving 10 to 15 centimetres of living wood to carry the whole tree, and a genetic analysis suggested it was brought from elsewhere.\n\nIt was declared a protected natural rarity in 1961. Tour guides tell of 500 years and a lightning strike, and neither claim has a source.\n\nTwo younger cypresses in the same courtyard were planted in 1963 by fra Venko Gugić, probably from its seed. The monastery is also known for a 17th-century Last Supper in its refectory. Both sit behind a paid entry whose current hours we could not confirm.",
+    "how_to_recognise": "You can recognise it by its shape: no upright leader, the trunk forks two ways into a flat umbrella. It stands on the west side of the courtyard terrace; the two younger cypresses there date from 1963."
+  },
+  {
+    "id": "hrv_002",
+    "place": "cara",
+    "town": "Čara (Korčula island)",
+    "name": "The Cypress of Čara",
+    "species": "Mediterranean Cypress (Cupressus sempervirens)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_basis": "source",
+    "location": {
+      "address": "Centre of Čara village, by the parish church of St Peter, Korčula island",
+      "latitude": 42.935398,
+      "longitude": 16.93436,
+      "neighbourhood": "Čara, Grad Korčula"
+    },
+    "verified_sources": [
+      "https://www.visit-croatia.hr/de/destinations/suddalmatien/insel-korcula/cara",
+      "https://nominatim.openstreetmap.org/reverse?lat=42.935398&lon=16.93436&format=json (OSM places the register point on road 6268 in Čara village)"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja, spomenik prirode ps.4524 ČARA - ČEMPRES (protected since 1948-11-12 in our register extract)",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs (localId ps.4524)"
+    },
+    "access": "Free: in the village centre by the parish church, no fee or gate known.",
+    "transport": "By car, about 25 km west of Korčula town, roughly 30 to 40 minutes; island buses are infrequent.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Square by the parish church of St Peter, Čara",
+      "radius_m": 40
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Register point 42.935398,16.93436 falls in Čara village (OSM reverse geocode: road 6268, Čara). It is the register's own point, not a GPS fix at the trunk, and the church position was not confirmed in OSM, so approximate with a small named site. Croatian Tourist Board (visit-croatia.hr) page for Čara: the village is dominated by the parish Church of St. Peter and the century-old cypress that locals are particularly proud of (only 'century-old'; page undated, so alive is by present tense only; flagged). Other tourism pages claim 500 years; a university thesis on Korčula's vegetation reportedly lists a cypress of about 450 years in Čara among the island's park-architecture monuments (seen only in a search summary, host repozitorij.unizd.hr returns 418 to automation, not recorded as fact). Ages conflict (100+ / 450 / 500): keep broad, none sourced to a measurement. No girth or height found. Register date 1948-11-12 is from our extract. Church of St Peter is 15th to 16th century (sources disagree); altarpiece attributed to Bassano.",
+    "facts": [
+      "Single old cypress beside the village church, source says the village is dominated by it",
+      "locals proud of it",
+      "register-protected single tree, protected 1948",
+      "age claims range from century-old to 500 years, none measured"
+    ],
+    "story": "Čara, says Croatia's tourist board, is dominated by two things, the parish church of St Peter and a century-old cypress that the villagers are particularly proud of. That one sentence is most of what anyone has put in writing about the tree.\n\nHow old it is depends on who is talking. The tourist board says a century. Other tourism pages say 500 years. Neither figure comes from a measurement, and the gap between them is four centuries, so read every number you meet for this tree as a guess. What is firm is that it is old enough to have been entered on Croatia's register of protected natural monuments in 1948, as the cypress of Čara, a single tree.\n\nThe church beside it dates from the 15th or 16th century, depending on the source, and holds an altarpiece attributed to Bassano. Village, church and cypress sit on the island of Korčula, about 25 kilometres by road from Korčula town, so this is a drive and a stop rather than a walk from the old town.\n\nOur pin is the register's own point in the village centre, not a fix on the trunk. Nobody has published its height or girth either. If you stop in Čara, a photograph and a sense of its size would tell us more than the tourism pages have.",
+    "how_to_recognise": "You can recognise it as the old cypress beside the parish church of St Peter, which with the church dominates the centre of Čara."
+  },
+  {
+    "id": "hrv_003",
+    "place": "orebic",
+    "town": "Karmen, Podgorje above Orebić (Pelješac)",
+    "name": "The Cypresses of Gospa od Karmena, Orebić",
+    "species": "Mediterranean Cypress (Cupressus sempervirens)",
+    "age_estimate": "some reportedly over 400 years",
+    "age_min": null,
+    "age_basis": "source",
+    "location": {
+      "address": "Church of Our Lady of Carmel (Gospa od Karmena), Selo Karmen, Podgorje, Orebić",
+      "latitude": 42.981953,
+      "longitude": 17.162753,
+      "neighbourhood": "Karmen hamlet, hill above Orebić"
+    },
+    "verified_sources": [
+      "https://www.komoot.com/highlight/5071319 (community highlight, Oct 2019, coords 42.982103,17.163062)",
+      "https://nominatim.openstreetmap.org/ui/details.html?osmtype=W&osmid=200501554 (OSM church way 25 m from the register point)"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja, spomenik prirode ps.4416 OREBIĆ - SKUPINA ČEMPRESA (1960-04-11)",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs (localId ps.4416)"
+    },
+    "access": "Free to walk to: the church stands on a hill reached by path or road, with no fee or gate known. Whether the church grounds are open is not confirmed.",
+    "transport": "About 3 km uphill from Orebić centre by car or on foot by the path; no public transport found.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Hilltop around Gospa od Karmena church, Karmen",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "ENSEMBLE: the register designates a group (skupina) of cypresses; register is the only official source. Register point 42.981953,17.162753 is 25 m from the OSM church 'Crkva Gospe od Karmena' (42.9820048,17.1629388) and 20 m from the Komoot user pin, so the group is around the church. Komoot (user text, Oct 2019): several huge ancient Mediterranean cypresses around the medieval church, some even over 400 years old, among the oldest in Dalmatia (unmeasured claim, community source, flag). Life check weak: only the 2023 Komoot access comment, no dated photo or news about the trees; flagged. NOT the 'Cempresada / Pod Gospu' cypress reserve below the Franciscan monastery (ps.4314), which Time Out says was planted mid-20th century. No girth or count found. Collectible only if Hidde accepts a church-hill group as one place to stand; register row marked publishable=false (group).",
+    "facts": [
+      "Group of cypresses around a medieval hill church above Orebić",
+      "reputed over 400 years for some trees, unmeasured",
+      "register-protected group since 1960",
+      "one place to stand: the church hill"
+    ],
+    "story": "Above Orebić, around the medieval hilltop church of Our Lady of Carmel, stands a group of cypresses that Croatia has protected as one natural monument since 1960. A walker's note on komoot calls them huge and ancient, some over 400 years old and among the oldest in Dalmatia. That is a hiker's claim, not a measurement, and nobody has published a count, a height or a girth.\n\nBe sure which cypresses you are looking for. Lower down, below the Franciscan monastery, there is a better-known cypress stand, and Time Out says that one was planted in the middle of the 20th century. These are the others, up at the hamlet of Karmen, on the hill about three kilometres above the town.\n\nThe point of coming is the group around the church rather than any single trunk. The register protects them together, and they are best taken in together from the church hill, which is also where our pin stands.\n\nYou can reach the church by car or on foot by the path; a 2023 note adds that the path can be ridden on a mountain bike. Whether the church grounds themselves are open is not stated anywhere we found, and that same 2023 note is the newest word on the trees. If you climb up, count them for us and tell us which is the biggest.",
+    "how_to_recognise": "You can recognise them as the group of tall cypresses around the church of Gospa od Karmena on the hill at Karmen, not the stand below the Franciscan monastery."
+  }
+]

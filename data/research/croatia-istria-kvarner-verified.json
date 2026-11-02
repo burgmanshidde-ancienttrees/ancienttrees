@@ -1,0 +1,164 @@
+[
+ {
+  "id": "pul_001",
+  "place": "pula",
+  "town": "Brijuni National Park, island of Veli Brijun (boat from Fazana)",
+  "name": "The Old Olive of Brijuni (Brijunka)",
+  "species": "Olive (Olea europaea)",
+  "age_estimate": "about 1,600 years by the park's figure",
+  "age_min": 1000,
+  "age_max": 1600,
+  "age_basis": "source",
+  "height_m": 6,
+  "location": {
+   "address": "Veli Brijun, Brijuni National Park (Fazana, Istria)",
+   "latitude": 44.91444,
+   "longitude": 13.76797,
+   "neighbourhood": "Veli Brijun island, near the main settlement"
+  },
+  "verified_sources": [
+   "https://np-brijuni.hr/en/the-olive-tree-on-brijuni",
+   "https://hrcak.srce.hr/en/65085",
+   "https://total-croatia-news.com/?p=44915",
+   "https://commons.wikimedia.org/wiki/File:Brijuni,_old_olive_tree.jpg",
+   "http://www.waymarking.com/waymarks/WMF6BN"
+  ],
+  "official_register": null,
+  "access": "Paid: Brijuni National Park, reached only by the park's ticketed boat; the olive is on the visitor route. Prices and hours not confirmed here.",
+  "transport": "Day trip from Pula: by road to Fažana, north-west of Pula, then the park boat to Veli Brijun (times not confirmed).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "travel_from_pula": "day trip: Pula to Fazana by road then the park boat (times not verified on a fetched page)",
+  "pin_evidence": "Two independent Commons photographs of the tree, both titled as the old olive, are geotagged within 35 m of each other (Dguendel 2015-05-12: 44.914444, 13.767972; RNK Brioni 03: 44.914722, 13.767569); a 2012 Waymarking entry gives 44.91507, 13.76788 (about 60 m north). Camera positions, so a few metres off the trunk. Used the first.",
+  "verify_notes": "AGE IS DISPUTED/SOFT. Park page says carbon analysis (C14) on a trunk wood sample gave about 1600 years; Rudjer Boskovic Institute Zagreb researched samples in the 1960s. The hrcak paper (SSR marker study, ~2010) calls it a 1600-year-old olive and compares it with Istrian cultivar Buga. Total Croatia News (2017-11-02) says Brijuni's olives are 'more than a thousand years old', the origin never properly researched, and that NP Brijuni, Zagreb Faculty of Agriculture and Rudjer Boskovic Institute planned to date the oldest trees (results not found). So write 'about 1,600 years by the park's figure (1960s radiocarbon), questioned', never a flat 1,600. Facts from the park page: height 6 m, crown projection 22 x 8 m (Croatia Post stamp text gives 26 m canopy, differs). Still fruits; October harvest averages 30 kg of olives giving 4.1 kg of extra virgin oil (park page). A storm in the 1970s split the trunk in two; the wounds were preserved with concrete. Park describes it as a semi-wild sub-variety of buza (Istrian autochthonous). Girth not stated by any fetched source. Alive: park page presents it as bearing fruit; the Commons photo is 2015, and the 2025 'Medic Tree Mapping' Commons category suggests a recent mapping. No recent dated source fetched, so flagged. Exact trunk coordinate relies on photo geotags.",
+  "facts": [
+   "The park says carbon-14 dating of a trunk sample put it at about 1,600 years old; the work was done at the Rudjer Boskovic Institute in the 1960s.",
+   "Height 6 m, crown 22 x 8 m (park).",
+   "Split in two by a storm in the 1970s, wounds kept with concrete.",
+   "Still fruits every October, about 30 kg of olives yielding 4.1 kg of extra virgin oil.",
+   "A scientific paper in Hrcak gave it the name Brijunka and compared its leaves and fruit with the Istrian Buza.",
+   "In 2017 Brijuni park, Zagreb agricultural faculty and the Rudjer Boskovic Institute announced a project to date the oldest Brijuni olives afresh, because the island's oldest are only known as 'over a thousand years'."
+  ],
+  "story": "A storm in the 1970s split this olive in two, and the park sealed the wounds with concrete. It still makes oil. Every October the old olive on Veli Brijun gives about 30 kilograms of fruit, which presses down to 4.1 kilograms of extra virgin oil, by Brijuni National Park's own count.\n\nIts age is the park's figure, and it comes with a footnote. The park says a carbon-14 test on a sample of trunk wood, run at the Ruđer Bošković Institute in Zagreb in the 1960s, put it at about 1,600 years. Others are more careful. In 2017 the park, the Zagreb Faculty of Agriculture and the same institute announced they would date the islands' oldest olives afresh, because the most anyone could say for certain was more than a thousand years. We have not found the results. Somewhere between a thousand and sixteen hundred years is the honest answer.\n\nIt is not tall, about six metres, but its crown spreads some 22 metres one way and 8 the other. A genetics paper named it Brijunka and compared it with Istrian olive varieties, and the park describes it as a semi-wild form of the local Buža.\n\nThe only way here is the park's ticketed boat from Fažana, and the olive is on the visitor route. The newest photographs we have seen date from 2015, so if you have stood under it recently, tell us how it looks.",
+  "how_to_recognise": "You can recognise it by the trunk split in two, its old storm wounds filled with concrete, under a low crown about six metres high. It stands on Veli Brijun on the park's visitor route."
+ },
+ {
+  "id": "pul_002",
+  "place": "pula",
+  "town": "Medulin (village at the southern tip of Istria, south of Pula; travel time not verified)",
+  "name": "Najstarija Medulinka, the hackberry of Medulin",
+  "species": "Mediterranean Hackberry (Celtis australis)",
+  "age_estimate": "about 115 years",
+  "age_min": 110,
+  "age_max": 125,
+  "age_basis": "source",
+  "location": {
+   "address": "Main square (glavna placa), Medulin",
+   "latitude": 44.821897,
+   "longitude": 13.936561,
+   "neighbourhood": "Medulin centre"
+  },
+  "verified_sources": [
+   "https://total-croatia-news.com/news/made-in-croatia/the-oldest-lady-in-medulin/",
+   "https://www.istra.hr/hr/top-news/medulinska-ladonja-u-finalu-za-eu-stablo",
+   "https://istra.hr/en/top-news/medulin-tree-one-of-the-most-beautiful-in-europe",
+   "https://www.treeoftheyear.org/previous-years/2021/ (entry 'The Eldest Resident of Medulin - Chocolate Tree of our Memories', GPS 44 49'18.83 N, 13 56'11.62 E as published; also in data/leads/_tree-of-the-year.json)"
+  ],
+  "official_register": null,
+  "access": "Free, always open: it shades the public main square of Medulin.",
+  "transport": "Medulin is at the southern tip of Istria, south of Pula, by bus or car (times not confirmed); the tree is on the main square.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "pin_evidence": "GPS published by the European Tree of the Year entry (the contest asks for the tree's own coordinate); the town-square tree is a single crown. Not checked against a photograph geotag.",
+  "verify_notes": "Young as these go (about 115 years in 2020/21, so planted around 1905 to 1906), earns its place as a community tree: Croatian Tree of the Year 2020 (9,373 of 23,238 votes, run by the Dubrovnik-Neretva protected-areas institution; second the London plane of Mursko Sredisce, third Baka Maslina of Kastel Stafilic), then Croatia's entry in European Tree of the Year 2021 (14 trees, rank 10, 31,283 votes per the contest page as logged in data/leads/_tree-of-the-year.json). Prize was a health and structure assessment by the Zagreb Faculty of Forestry. Gatherings and celebrations took place under it; TCN says the species can reach about 400 years. Planter, girth and height are not stated by any source seen. Age is as of 2020/21; add the years since. ALIVE: last dated sources are 2020 and early 2021; no 2024 or 2025 mention found, so flagged. Two sources (tourist board istra.hr and Total Croatia News) agree on species, age and place. Note the TotY page URL is truncated in our lead file.",
+  "facts": [
+   "Croatia's Tree of the Year 2020, 9,373 votes of 23,238.",
+   "Croatia's entry in the European Tree of the Year 2021, 14 trees.",
+   "About 115 years old, a hackberry (ladonja or koprivic in Croatian) shading the main square.",
+   "Prize: a health and structure assessment by the Faculty of Forestry, University of Zagreb.",
+   "Its young branches were once cut for walking sticks and tool handles; the small fruits and leaves still appear in folk medicine (TCN)."
+  ],
+  "story": "In 2020 more than 9,000 people voted for a village-square tree that is barely older than the First World War. The hackberry on Medulin's main square, known as Najstarija Medulinka, the eldest resident of Medulin, won Croatia's Tree of the Year with 9,373 of 23,238 votes. Second came a London plane in Mursko Središće, third an olive called Baka Maslina in Kaštel Štafilić.\n\nIn 2021 it represented Croatia in the European Tree of the Year under the title Chocolate Tree of our Memories, and finished tenth of fourteen. The prize for the national win was not a trophy but a check-up, an assessment of its health and structure by the Faculty of Forestry at the University of Zagreb.\n\nLocal sources put it at about 115 years in 2020 and 2021, which places its planting around 1905 or 1906. That is young for a species that, according to Total Croatia News, can live to around 400. What earns it a page is the life of the square around it. Medulin held its gatherings and celebrations in this shade, its young branches were once cut for walking sticks and tool handles, and its small fruits and leaves still turn up in folk medicine.\n\nNobody has published its height or girth, and the latest dated mention we found is from early 2021. If you sit under it, tell us how it is doing.",
+  "how_to_recognise": "You can recognise it as the big hackberry shading Medulin's main square, the town's Tree of the Year in 2020."
+ },
+ {
+  "id": "rab_001",
+  "place": "rab",
+  "town": "Rab (old town, island of Rab)",
+  "name": "Tree of Freedom, Rab",
+  "species": "Holm Oak (Quercus ilex)",
+  "age_estimate": "about 105 years, planted 23 April 1921",
+  "age_min": 104,
+  "age_max": 106,
+  "age_basis": "source",
+  "location": {
+   "address": "Pjaceta (Square of Freedom), Rab town",
+   "latitude": 44.755458,
+   "longitude": 14.760469,
+   "neighbourhood": "Rab old town"
+  },
+  "verified_sources": [
+   "https://www.treeoftheyear.org/previous-years/2025/tree-of-freedom-in-rab-square",
+   "https://www.croatiaweek.com/the-freedom-tree-named-croatian-tree-of-the-year/",
+   "https://www.croatiaweek.com/croatias-104-year-old-freedom-tree-up-for-best-in-europe-title/"
+  ],
+  "official_register": null,
+  "access": "Free, always open: it shades the Pjaceta, a public square in Rab's old town.",
+  "transport": "Rab is an island reached by ferry from the mainland (route and times not confirmed); the tree is in the old town, on foot from anywhere in Rab town.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "pin_evidence": "GPS published on the European Tree of the Year entry (N 44 45'19.65, E 14 45'37.69); the tree is the one big crown shading the square. Not cross-checked against a photograph geotag.",
+  "verify_notes": "Documented planting: 23 April 1921, to mark the departure of the Italian military from Rab (Croatia Week, 2024-11-09). So age is real, not guessed: 105 in 2026. Croatian Tree of the Year 2024 and Croatia's entry in European Tree of the Year 2025 (ranked 9th with 12,807 votes per the contest listing in data/leads/_tree-of-the-year.json). Nominated by David Kabalin of the Society of Friends of Rab. Centennial was celebrated in 2021, by then the crown shaded the whole square; many local families keep an oral tradition of an ancestor who took part in the planting (TotY entry, to be quoted as a family tradition, not fact). Height and girth are in no source seen. Alive: dated Nov 2024 and the 2025 contest. Note the Croatia Week piece on the vote calls it 104 years old (2025) and the TotY page 105: consistent.",
+  "facts": [
+   "Planted 23 April 1921 when Italian forces left Rab.",
+   "Crown now shades the whole Pjaceta square.",
+   "Croatian Tree of the Year 2024; entered in the European Tree of the Year 2025.",
+   "Families in Rab still tell of an ancestor who helped plant it (as stated on the contest page).",
+   "Nominated by the Society of Friends of Rab."
+  ],
+  "story": "This holm oak has a birthday. Rab planted it on 23 April 1921 to mark the day the Italian military left the island, and few trees on this map can be dated to the day.\n\nIt stands on the Pjaceta, the Square of Freedom, in Rab's old town. Its centenary was celebrated in 2021, and by then its crown shaded the whole square. Many Rab families still tell of an ancestor who helped plant it. That is family tradition, repeated on the tree's European Tree of the Year entry, and it would be hard to check and harder to argue with.\n\nIn 2024 it was voted Croatian Tree of the Year, nominated by the Society of Friends of Rab. In 2025 it went on to the European contest and finished ninth with 12,807 votes.\n\nAt about 105 years it is not ancient, and it does not pretend to be. Its age is a planting date rather than an estimate, which makes it one of the more trustworthy numbers you will find on an old tree. What it has witnessed is a town's whole modern century, from the day it went into the ground as a statement about who ran the island to the votes that made it the country's favourite tree.\n\nNobody has published its height or girth. If you have a tape measure and a minute, we would like to know.",
+  "how_to_recognise": "You can recognise it by the one big evergreen crown that shades the whole of the Pjaceta, the Square of Freedom, in Rab's old town."
+ },
+ {
+  "id": "lun_001",
+  "place": "lun",
+  "town": "Lun, northern tip of the island of Pag (Novalja municipality); a car trip, travel time not verified",
+  "name": "Metuzalemka, the oldest olive of Lun",
+  "species": "Olive (Olea europaea)",
+  "age_estimate": "between 1,600 and 2,000 years by local estimates",
+  "age_min": 1000,
+  "age_max": 2000,
+  "age_basis": "source",
+  "girth_cm": 1257,
+  "location": {
+   "address": "Beside the old macadam road at the entrance to the Lun olive gardens, Lun, Pag",
+   "latitude": 44.65467,
+   "longitude": 14.77631,
+   "neighbourhood": "Lun olive gardens (Vrtovi lunjskih maslina), Lun"
+  },
+  "verified_sources": [
+   "https://www.novilist.hr/?p=572266",
+   "https://total-croatia-news.com/?p=196659",
+   "https://api.inaturalist.org/v1/observations/140818029 (olive observation, GPS accuracy 3 m, 2022-11-01, place Novalja; used only for the approximate pin)"
+  ],
+  "official_register": {
+   "name": "Croatia protected natural monuments (Spomenici prirode), ps.4708 LUN - DIVLJE MASLINE, protected 1963-03-15; a polygon (the grove), not this tree",
+   "url": "data/registers/croatia-spomenici-prirode.json localId ps.4708"
+  },
+  "access": "Walkable on marked paths between dry-stone walls, no guide needed. An entrance fee in season has been reported but price and hours are not confirmed. The oldest tree is beside the old road at the entrance.",
+  "transport": "Lun is at the northern tip of the island of Pag, in Novalja municipality, reached by road. No public transport confirmed.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "pin_evidence": "No GPS fix on THIS tree found. Novi list (2021-08-09) places the oldest olive a metre or two from the road at the entrance to Lun, at the start of the marked path through the groves. Pin is an iNaturalist olive observation (2022-11-01, 3 m accuracy) at the Lun end of the groves, probably the entrance but not shown to be this trunk. The register centroid (44.66198, 14.77907, polygon) is 1 km off and not used. Approximate: do not call it confirmed. Findable only through the entrance description; no photograph checked.",
+  "verify_notes": "AGE CONFLICT: Novi list (Marinko Glavan, 2021-08-09) gives about 2,000 years, 'officially the oldest olive', an estimate by experts of the Lun olive cooperative and the Zagreb Faculty of Agronomy: trunk diameter about 4 m, trunks grow about 1 mm in width a year, so radius 2,000 mm gives about 2,000 years. That is crude arithmetic (an olive of this kind is often a hollow, multi-stem mass), not a measurement. Search summaries (not fetched pages) credit Turisticke price and an official figure with 'over 1,600 years'. Total Croatia News (2026-06) says individual trees 1,600 to 2,000 and many over 1,500, with no method. Croatia Week (summary only, page not fetched) says about two millennia. A CROSBI paper and Croatian thesis titled 'Starost stabala Lunjskih maslina' (age of the Lun olives) exist; I could not open them (dabar returned 418). Write 'between 1,600 and 2,000 years by local estimates' at most. Girth 1257 cm is the 4 m diameter times pi, a diameter statement from a newspaper, so label it a crude figure. Grove facts (TCN): about 24 hectares protected as a botanical reserve in 1963 (the register row confirms 1963-03-15), roughly 80,000 ancient olives and about 1,500 ancient wild olives; 'Metuzalemka' is the photo-caption nickname in Novi list, not an official name. Most trees are grafted; a stand of ungrafted wild olive (Olea oleaster) is a biological reserve and a 2019 genetics thesis found Pag one of two truly wild populations in Croatia (search summary only, unverified). Alive: Novi list 2021, TCN 2026, iNaturalist 2022. The register row's publishable flag is false in our register file, so the polygon was not used for any coordinate or number. One collectible point: the oldest olive at the entrance, not the grove.",
+  "facts": [
+   "The oldest olive stands a metre or two from the old road at the entrance, at the start of the marked path through the groves.",
+   "Local experts estimate it at 2,000 years from a trunk about 4 m across and a growth of 1 mm of width a year; other sources say over 1,600.",
+   "The Lun olive grove was protected as a botanical reserve in 1963.",
+   "About 80,000 ancient olives grow in the groves, many believed over 1,500 years old (TCN).",
+   "Walk the marked paths between dry-stone walls that reach nearly 2 m (Novi list 2021)."
+  ],
+  "story": "The oldest olive in the groves of Lun stands a metre or two from the road, right where the marked path begins. A newspaper photo caption gave it a nickname, Metuzalemka, after Methuselah.\n\nHow old is it? Experts from the Lun olive cooperative and the Zagreb Faculty of Agronomy told the newspaper Novi list in 2021 that it is about 2,000 years old. Their working is simple. The trunk is about four metres across, and an olive like this widens by about a millimetre a year. That is arithmetic, not a measurement, and an old olive is often a hollow mass of several stems, which makes such sums generous. Other local sources say more than 1,600 years. Between 1,600 and 2,000 years, by local estimates, is as close as anyone gets. Four metres across works out to roughly twelve and a half metres round, an equally rough figure.\n\nBehind it lie some 24 hectares of olive grove on the northern tip of Pag, protected as a botanical reserve since 1963. Total Croatia News counts about 80,000 old olives there and around 1,500 ancient wild ones. Dry-stone walls nearly two metres high run between them, and the marked paths let you walk the groves without a guide.\n\nOur pin is approximate. It sits at the entrance end of the groves, where the oldest tree is said to stand, but nobody has fixed this trunk by GPS. A photograph with its location would settle it.",
+  "how_to_recognise": "You can recognise it by a trunk about four metres across. It stands a metre or two from the old macadam road, at the entrance where the marked path into the Lun olive gardens begins."
+ }
+]

@@ -1,0 +1,48 @@
+{
+  "leads": [
+    {
+      "name": "Holm oak at Žrnovo (register ps.4340 HRAST U ŽRNOVU)",
+      "species": "Holm Oak (Quercus ilex)",
+      "place": "korcula",
+      "coordinates": "42.934194,17.136575",
+      "reason": "Register point only, no site or trunk pin, no photo in reach. Dubrovnik tourist board page (visitdubrovnik.hr/natural-beauty) calls it one of the most impressive holm oaks in Croatia in the Klokolina area near Žrnovo, protected since 1952 for size, age and local symbolism, but gives no girth, height or age and is undated, so no life check. Žrnovo is about 4 km west of Korčula town. Needs the trunk's real location (OSM node, geotagged photo) and a 2020+ mention."
+    },
+    {
+      "name": "Brsalje plane, Dubrovnik (register ps.4740 DUBROVNIK - PLATANA)",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "place": "dubrovnik",
+      "coordinates": "42.642318,18.106029",
+      "reason": "Not for the map as it stands: Narodne novine 34/10 protects the plane 'in the garden of the house at Brsalje 15' (cadastral parcels 3497 and 3498), i.e. a house garden just outside Pile gate, with no source saying it is open to visitors (hard rule 10). No age or size found. Reopen only if a source shows it can be seen from public ground."
+    },
+    {
+      "name": "Korčula cypress avenue (register ps.4433 KORČULA - DRVORED ČEMPRESA)",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "place": "korcula",
+      "coordinates": "42.94507,17.143178",
+      "reason": "Avenue, not a collectible point; no individual tree is named and no source with age or girth was found. Listed in a Zadar thesis (unfetchable, 418) among Korčula's protected park-architecture monuments."
+    },
+    {
+      "name": "Cypress reserve Pod Gospu / Čempresada (register ps.4314)",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "place": "orebic",
+      "coordinates": "42.975637,17.157205",
+      "reason": "Note correction: this register row is in Orebić (Škvar, below the Franciscan monastery), NOT on Korčula. Time Out calls it a protected cypress belt planted in the mid-twentieth century on the slope below the monastery, so a wood, not ancient and not one point. Not a candidate."
+    },
+    {
+      "name": "Other old trees in Hvar town / Stari Grad",
+      "species": "",
+      "place": "hvar",
+      "coordinates": "",
+      "reason": "10-minute search found nothing verifiable: a century-old deodar cedar at Tvrdalj (Stari Grad) in one guide only, an old olive in east Hvar with no location. Nothing met the bar."
+    },
+    {
+      "name": "Cavtat (Račić mausoleum cypresses) and Ston / Pelješac",
+      "species": "",
+      "place": "dubrovnik",
+      "coordinates": "",
+      "reason": "10-minute search: no source describes an old or named cypress at the Račić mausoleum or any old tree in Ston or Mali Ston. Nothing to verify."
+    }
+  ],
+  "blocked": [],
+  "notes": "Checked 2026-11-02. Overpass API returned 502/empty from the Mac on three attempts, so no OSM natural=tree check was possible for any candidate (pins are register points). repozitorij.unizd.hr (Zadar thesis on Korčula's vegetation) answers 418 to automation: do not retry. Register date conflict for Hvar cypress: our extract says 1948, the 2000 Šumarski list paper says 1961."
+}

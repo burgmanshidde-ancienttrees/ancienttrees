@@ -1,0 +1,224 @@
+[
+  {
+    "id": "cdl_001",
+    "name": "Mastrinka, the olive of Kaštel Štafilić",
+    "species": "Olive (Olea europaea)",
+    "place_slug": "kastela",
+    "town": "Kaštel Štafilić, Kaštela",
+    "travel_time": "About 30 to 40 minutes by the Split to Trogir local bus through the Kaštela seven towns (timing from general knowledge, not from a fetched timetable; confirm).",
+    "age_estimate": "reported at more than 1,500 years",
+    "age_min": 1000,
+    "age_max": 1500,
+    "age_basis": "source",
+    "girth_cm": 600,
+    "height_m": 10,
+    "location": {
+      "address": "Kaštel Štafilić, Kaštela (courtyard of the Maslina kindergarten per dalmatia.hr; interpretive point with benches planned around it in 2018)",
+      "latitude": 43.55055,
+      "longitude": 16.335669,
+      "neighbourhood": "Kaštel Štafilić"
+    },
+    "location_precision": "confirmed",
+    "verified_sources": [
+      "https://kastela-info.hr/en/natural-heritage",
+      "https://total-croatia-news.com/lifestyle/1500-year-old-olive-tree-in-kastel-stafilic-to-get-its-own-interpretive-point/",
+      "https://www.portal.hr/en/novosti/aktualnosti/101063-rekordan-urod-stare-masline-u-stafilicu-u-posljednjih-desetak-godina-video",
+      "https://www.dalmatia.hr/?p=1488",
+      "https://www.inaturalist.org/observations/230294510",
+      "https://www.inaturalist.org/observations/325183880"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4639, protected 1990-04-01)",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326 (localId ps.4639, HR.MZOE.ZP)"
+    },
+    "access": "Not confirmed. Reported to stand in the courtyard of the Maslina kindergarten; a public visitor point with benches was announced in 2018, but whether it exists and when it is open is not confirmed.",
+    "transport": "Kaštel Štafilić stop on the Split to Trogir local bus, roughly 30 to 40 minutes from Split (times not confirmed); walk from the stop not confirmed.",
+    "curation_status": "flagged",
+    "verify_notes": "REGISTER: Bioportal ps.4639 'MASLINA U KAŠTEL ŠTAFILIĆU', spomenik prirode, protected 1990-04-01, point 43.55055,16.335669. SECOND SOURCE: the town's own tourist site kastela-info.hr/en/natural-heritage calls it Olea europaea, 'more than 1500 years old', height 10 m, crown span 22 m, trunk span 6 m, roots occupying more than 100 m of ground (the wording 'trunk span 6 meters' is ambiguous between diameter and circumference; dalmatia.hr says trunk circumference 6 m; the 6 m is recorded as girth_cm 600 on that basis, and a 6 m circumference fits a 10 m olive). Local name 'Mastrinka' (also the name of the local olive growers' association; the Bijaći Society looks after the tree). Total Croatia News (2018) says the variety is not found elsewhere in Croatia or the region and the tree was probably brought from southern Italy or Greece; this is the article's claim, not a botanical finding. ALIVE: record-yield harvest led by Asst Prof Tatjana Klepo reported 2025-10-30 (portal.hr), so alive and bearing in autumn 2025; the Kaštela colony programme shows an art colony around it in August 2021. Branches were cut between 2012 and 2021 for structural reasons on the advice of the Institute for Adriatic Crops, Split (search summary only, not fetched page; treat as a pointer, do not write it). AGE: 1,500 years is the unanimous popular figure but no source gives a dating method; a tourism listing says over 2,000 years and is unsupported; the age_min of 1000 is a deliberately broad floor, the claim stays 'reported'. PIN: register point agrees to 13 m with an iNaturalist Olea europaea observation of 2024-07-19 (id 230294510) and to 2 m with a 2012 observation titled '1500 years old' (id 325183880, GPS accuracy 184 m, so weak); with one huge crown (22 m span) this is the individual tree, marked confirmed on register plus two iNat observations. Owner: dalmatia.hr page says the tree is in the kindergarten yard; one search summary said the Perišić family owns it, not seen on a fetched page, not recorded as fact. LIFECHECK: RECENT 2024-07-19.",
+    "facts": [
+      "Declared a natural monument in 1990 (Bioportal register date 1990-04-01).",
+      "Reported at more than 1,500 years old; 10 m tall, crown span 22 m, trunk 6 m, root system over 100 m (kastela-info.hr).",
+      "Locals call it Mastrinka; harvested each year with local participation, record yield in autumn 2025.",
+      "Total Croatia News: the variety is not found elsewhere in Croatia or the wider region, likely brought from southern Italy or Greece.",
+      "Town of Kaštela funded a visitor point (300,000 kuna via the Hidden Habitats project, per the mayor, 2018) with nine benches, panels outside the crown to protect the roots.",
+      "An annual sculpture and painting colony in Kaštela uses its pruned branches (kastela-info.hr colony programmes)."
+    ],
+    "hold": "access unproven",
+    "story": "By one account, this olive belongs to a variety found nowhere else in Croatia or the wider region. That is Total Croatia News' claim rather than a botanist's finding, and the same article guesses the tree was brought from southern Italy or Greece. Kaštel Štafilić has long since adopted it.\n\nLocals call it Mastrinka. It is ten metres tall with a crown 22 metres across and a trunk six metres round, and the town's tourist board says its roots spread through more than 100 metres of ground. The age everyone repeats is more than 1,500 years. No source we found says how that was worked out, and a listing that claims over 2,000 is less convincing still. Old, certainly. How old, nobody has shown.\n\nCroatia declared it a natural monument in 1990, and it is still working. Each autumn it is picked with the town taking part, and the harvest of October 2025 brought in a record crop. Its pruned branches go to an annual sculpture and painting colony in Kaštela.\n\nWhere to stand is the open question. One source places the tree in the courtyard of the Maslina kindergarten, and in 2018 the town announced a visitor point outside the crown, with nine benches and information panels, to keep feet off the roots. We have not confirmed that the visitor point was built or when the tree can be seen. If you know, tell us.",
+    "how_to_recognise": "You can recognise it by its size: ten metres tall, a crown 22 metres across and a trunk six metres round. It stands in Kaštel Štafilić, reported in the courtyard of the Maslina kindergarten."
+  },
+  {
+    "id": "cdl_002",
+    "name": "The oak of St Cosmas and Damian, Kaštel Gomilica",
+    "species": "Downy Oak (Quercus pubescens)",
+    "place_slug": "kastela",
+    "town": "Kaštel Gomilica, Kaštela",
+    "travel_time": "About 25 to 35 minutes by the Split to Trogir local bus (general knowledge, not a fetched timetable; confirm).",
+    "age_estimate": "not documented",
+    "age_basis": "source",
+    "location": {
+      "address": "By the Romanesque church of St Cosmas and Damian (Sv. Kuzma i Damjan), Kaštel Gomilica",
+      "latitude": 43.549436,
+      "longitude": 16.396721,
+      "neighbourhood": "Kaštel Gomilica"
+    },
+    "location_precision": "confirmed",
+    "location_site": {
+      "name": "Church of St Cosmas and Damian, Kaštel Gomilica",
+      "radius_m": 30
+    },
+    "verified_sources": [
+      "https://kastela-info.hr/en/natural-heritage",
+      "https://www.inaturalist.org/observations/250913293",
+      "https://en.wikipedia.org/wiki/Church_of_SS_Cosmas_and_Damian,_Ka%C5%A1tel_Gomilica"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4722, protected 1996-04-04)",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326 (localId ps.4722, HR.MZOE.ZP)"
+    },
+    "access": "Free to see: it stands by the Church of St Cosmas and Damian in Kaštel Gomilica. No access terms are published.",
+    "transport": "Kaštel Gomilica stop on the Split to Trogir local bus, roughly 25 to 35 minutes from Split (times not confirmed); walk from the stop not confirmed.",
+    "curation_status": "flagged",
+    "verify_notes": "REGISTER: Bioportal ps.4722 'HRAST U KAŠTEL GOMILICI', spomenik prirode, register date 1996-04-04 (one search summary of a local-heritage PDF said designated 10 December 1995 and 700 to 900 years old with a King Zvonimir legend; the PDF itself was NOT fetched, so the age, the date and the legend do not exist for us; do not use). SECOND SOURCE: kastela-info.hr/en/natural-heritage names it Quercus pubescens Willd., 'by the Romanic church of St. Kuzma and Damjan in Kaštel Gomilica', notable for beauty and size, no figures. ALIVE and PIN: iNaturalist research-grade Quercus pubescens ('Hrast medunac') observation 250913293 of 2024-11-08, 4 m from the register point (GPS accuracy 17 m); lifecheck RECENT. Register point and iNat agree within 4 m, marked confirmed; the register name gives no species, the Quercus pubescens id comes from the town page and the iNat observation. No girth or height from any fetched source. One source only gives the species, so keep flagged and ask the reader for size.",
+    "facts": [
+      "Spomenik prirode (register entry dated 1996-04-04).",
+      "Stands beside the Romanesque church of St Cosmas and Damian, built 1138 to 1160 over a late-antique basilica (Wikipedia).",
+      "Town tourist site calls it notable for its beauty and size; no measurements published."
+    ],
+    "story": "Kaštela's tourist board singles out this downy oak for two things, its beauty and its size, and gives a number for neither. Croatia has protected it as a natural monument since 1996, entered in the register simply as the oak in Kaštel Gomilica.\n\nWhat stands beside it is far better documented than the tree. The Romanesque church of St Cosmas and Damian was built between 1138 and 1160 over the remains of a late-antique basilica, and the oak grows at its side. The church has a construction date, a style and a history of the building underneath it. The oak has none of those on paper. How long it has kept the church company is something nobody we can find has written down.\n\nWe do know it is alive. A naturalist photographed it in November 2024 and logged it a few metres from the register's own point, which settles which tree the town means and confirms it is a downy oak.\n\nKaštel Gomilica is one of the seven towns of Kaštela, on the local bus line between Split and Trogir, so this is an easy stop on the way along the bay.\n\nNobody has published its height, girth or age. If you visit, a photograph and a rough idea of its size would be the first of each that anyone has shared.",
+    "how_to_recognise": "You can recognise it as the large downy oak right beside the Romanesque church of St Cosmas and Damian in Kaštel Gomilica."
+  },
+  {
+    "id": "cdl_003",
+    "name": "The Bald Cypress of Solin",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "place_slug": "split",
+    "town": "Solin",
+    "travel_time": "Solin is about 9 km from Split (komoot/tourism pages); the city bus runs there, roughly 20 to 30 minutes (general knowledge, not fetched; confirm).",
+    "age_estimate": "about 90 years",
+    "age_min": 80,
+    "age_max": 100,
+    "age_basis": "source",
+    "height_m": 25,
+    "location": {
+      "address": "Beside the Jadro river, Solin",
+      "latitude": 43.533632,
+      "longitude": 16.485647,
+      "neighbourhood": "Solin, Jadro river"
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://solin-info.com/en/znamenitosti/solin-danas/mocvarni-cempres",
+      "https://www.inaturalist.org/observations/339608475"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4724, protected 1996-04-04)",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326 (localId ps.4724, HR.MZOE.ZP)"
+    },
+    "access": "Free to see along the Jadro river near the Jadro excursion park; no exact footpath to the tree is published.",
+    "transport": "Day trip from Split: Solin is about 9 km away by city bus, roughly 20 to 30 minutes (times not confirmed); the tree is by the Jadro river.",
+    "curation_status": "flagged",
+    "verify_notes": "REGISTER: Bioportal ps.4724 'SOLIN - MOČVARNI ČEMPRES', spomenik prirode, 1996-04-04, point 43.533632,16.485647. SECOND SOURCE: Solin Tourist Board site solin-info.com: 'a very rare specimen' of swamp cypress by the Jadro river, 'age estimated to be 90 years and 25 meters high', protected 1996 as a natural monument, species native to swamps of the Gulf of Mexico region. So not ancient: it is a planted exotic of roughly 1930s age and rare locally; the draw is height and rarity, say so honestly. ALIVE: iNaturalist casual observation 339608475 of Taxodium distichum, 2026-02-20, 30 m from the register point (address on the observation 'Solin - Širina 2'); lifecheck found it within range. 30 m is outside the 15 m GPS bar so the pin stays approximate; register point likely at the tree on the Jadro bank. No girth. A swamp cypress age figure of 1,600 years on a Serbian botany page refers to the species, not this tree; do not use.",
+    "facts": [
+      "Bald cypress, a deciduous conifer of the south-eastern United States, rare in Dalmatia.",
+      "About 90 years old and 25 m tall per the Solin tourist board.",
+      "Protected as a natural monument in 1996.",
+      "Stands by the Jadro river, which fed Diocletian's palace aqueduct; the Jadro excursion park and the 'Izvor života' trail are adjacent (solin-info.com)."
+    ],
+    "story": "This tree's relatives grow in the swamps around the Gulf of Mexico. This one grows on the bank of a Dalmatian river. The bald cypress by the Jadro in Solin is, in the tourist board's words, a very rare specimen, and in 1996 Croatia made it a natural monument.\n\nIt is not old by the standards of this map. The Solin tourist board estimates it at about 90 years, which makes it a planting of roughly the 1930s, and gives its height as 25 metres. Who planted a North American swamp tree here, and why, is not recorded anywhere we found. Read it as what it is, a tall and unusual exotic, not an ancient one.\n\nIts address is old even if the tree is not. The Jadro fed the aqueduct that supplied Diocletian's palace in Split, and the riverbank around the cypress has been renovated as the Jadro excursion park, with a themed walking trail, Izvor života, the source of life, running through it.\n\nBald cypress is a conifer that loses its needles. In October and November they turn copper red, and then the whole tree drops them and stands bare through the winter.\n\nOur pin is the register's point by the river, and a recent sighting was logged about 30 metres away, so the exact spot may be off by that much.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "October and November, when the soft needles turn copper red before the tree drops them"
+    },
+    "how_to_recognise": "You can recognise it by its height, about 25 metres, and in winter by its bare branches, since this conifer drops its needles. It stands on the bank of the Jadro river in Solin."
+  },
+  {
+    "id": "cdl_004",
+    "name": "Zeleni hrast, the Green Oak of Islam Latinski",
+    "species": "Green Oak (Quercus x viridis)",
+    "place_slug": "zadar",
+    "town": "Islam Latinski, Posedarje",
+    "travel_time": "About 20 km north of Zadar beside the old Zagreb to Zadar main road; roughly 20 to 25 minutes by car. Public bus access not verified; call it a drive, not a walk.",
+    "age_estimate": "reported at about 250 years",
+    "age_min": 150,
+    "age_max": 250,
+    "age_basis": "source",
+    "location": {
+      "address": "Islam Latinski, Posedarje municipality, beside the main road from Zagreb to Zadar",
+      "latitude": 44.194772,
+      "longitude": 15.434915,
+      "neighbourhood": "Islam Latinski"
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://secretcroatia.blog/2009/09/11/zeleni-hrast-in-islam-latinski-the-mysterious-green-oak-of-ravni-kotari/",
+      "https://hrcak.srce.hr/clanak/297846",
+      "https://zenodo.org/record/3828366"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4390, protected 1957-11-07)",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326 (localId ps.4390, HR.MZOE.ZP)"
+    },
+    "access": "Seen from beside the old Zagreb to Zadar road in Islam Latinski. Whether the ground around it is public is not confirmed.",
+    "transport": "By car, about 20 km north of Zadar on the old Zagreb to Zadar road, roughly 20 to 25 minutes. No bus confirmed.",
+    "curation_status": "flagged",
+    "verify_notes": "WHAT IT IS: the register name 'ZELENI HRAST' (protected 1957-11-07, the oldest entry of the set) refers to a single famous individual oak known as the Green Oak, Quercus x viridis Trinajstić, named for keeping thick green leaves until the end of February. Sources: (1) Šumarski list 142(5-6), 2018, Temunović, Franjić, Vessella and Simeone, 'Resolving the taxonomic status of the mysterious Green oak (Quercus x viridis Trinajstić) from Croatia based on phylogenetic analysis' (DOI 10.31298/sl.142.5-6.5; abstract read via search, hrcak PDF blocked with HTTP 418 for automated fetch): a well-known individual oak of unknown origin near Zadar; earlier authors disagreed on parentage (cerris x ilex vs cerris x suber; Jedlowski 1955 proposed cerris x suber); the 16-individual DNA study did not support Q. ilex as a parent and pointed to Q. crenata, taken as confirming the cerris x suber hypothesis. The study sampled this tree, so it stood in 2018 or earlier. (2) Secret Dalmatia blog, 2009-09-11: unique hybrid of Q. cerris and Q. suber, about 250 years old, once called Wolf's Oak, believed magical, a boundary marker of old territorial divisions (Venice and the Ottomans per a second Croatian page seen only in a search summary), earlier oaks of the same species stood on the same spot. The 250-year age comes from the blog alone; keep it 'reported', do not sharpen. (3) Register ps.4390 with point 44.194772,15.434915 in Islam Latinski. PARENTAGE: not settled, the paper's own wording is hedged; write 'a hybrid whose parentage botanists have debated' and name cerris x suber only as the favoured view. ALIVE: lifecheck NONE, no 2020+ mention of the tree found (iNaturalist none within 150 m, no news). Last evidence is the 2018 paper. Flagged for alive; the paper's DNA sampling and register status are the only life evidence. PIN: register point only, no corroboration, so approximate. No girth or height from any source. Worth confirming from an aerial image before publish.",
+    "facts": [
+      "Oldest entry in Croatia's tree-natural-monument set: protected 1957-11-07.",
+      "A single known individual; a hybrid oak that stays green until about the end of February.",
+      "2018 Šumarski list paper ran DNA on it to resolve its parentage; previous authors said cerris x ilex or cerris x suber.",
+      "Blog tradition: 'Wolf's Oak', a magical tree and boundary marker between landowners and empires, with earlier oaks on the same spot."
+    ],
+    "story": "This oak keeps its thick green leaves until about the end of February, which is how it got its name, and botanists have argued for decades about what it actually is.\n\nThe Green Oak of Islam Latinski is a hybrid, a single famous tree of unknown origin. Its parents are the dispute. Earlier authors proposed Turkey oak crossed with holm oak, or Turkey oak crossed with cork oak, and Jedlowski argued for the second in 1955. A 2018 DNA study in the forestry journal Šumarski list sampled this tree and did not support holm oak as a parent, which the authors took as backing the Turkey oak and cork oak view. Even that paper words its conclusion carefully, so call the parentage debated, with one favoured answer.\n\nCroatia protected it in 1957. A 2009 blog adds the rest. It puts the tree at about 250 years, says it was once called Wolf's Oak and believed to be magical, that it marked the boundary of old territorial divisions, and that earlier oaks of the same kind stood on the same spot before it. That is one writer's account of local tradition, not a measurement.\n\nTwo honest warnings. The latest evidence that it still stands is that 2018 study, and we found nothing newer. And our pin is the register's point beside the old Zagreb to Zadar road, not a fix on the trunk. If you drive past, a photograph would settle both.",
+    "how_to_recognise": "You can recognise it in winter, when it still holds thick green leaves until about the end of February. It stands beside the old Zagreb to Zadar road in Islam Latinski."
+  },
+  {
+    "id": "cdl_005",
+    "name": "The pine on the church roof, Nerežišća",
+    "species": "Austrian Pine (Pinus nigra)",
+    "place_slug": "brac",
+    "town": "Nerežišća, Brač",
+    "travel_time": "Nerežišća is inland on Brač; from Supetar about 15 to 20 minutes by bus or car (general knowledge, not fetched). Supetar is about 50 minutes by ferry from Split.",
+    "age_estimate": "reported between about 100 and 200 years",
+    "age_min": 100,
+    "age_max": 200,
+    "age_basis": "source",
+    "height_m": 1.7,
+    "location": {
+      "address": "Roof of the church of St Peter and Paul (Sv. Petar i Pavao), centre of Nerežišća, Brač",
+      "latitude": 43.33045,
+      "longitude": 16.573754,
+      "neighbourhood": "Nerežišća"
+    },
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Church of St Peter and Paul, Nerežišća",
+      "radius_m": 20
+    },
+    "verified_sources": [
+      "https://total-croatia-news.com/?p=35493",
+      "https://myislandbrac.com/destination/nerezisca/",
+      "https://en.wikipedia.org/wiki/Nere%C5%BEi%C5%A1%C4%87a"
+    ],
+    "official_register": {
+      "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4462, protected 1969-04-06)",
+      "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326 (localId ps.4462, HR.MZOE.ZP)"
+    },
+    "access": "Free: seen from the street in the centre of Nerežišća. The church does not need to be open to see the roof.",
+    "transport": "Ferry from Split to Supetar on Brač, then island bus or car inland to Nerežišća (times not confirmed).",
+    "curation_status": "flagged",
+    "verify_notes": "REGISTER: Bioportal ps.4462 'BOR NA CRKVICI U NEREŽIŠĆU', protected 1969-04-06, point 43.33045,16.573754. SECOND SOURCE: Total Croatia News 2017-05-05: pine growing from the roof of the 600-year-old St Peter and Paul church in Nerežišće, 170 cm tall, officials estimate about 120 years (uncertain), no evidence of roots reaching the ground so it lives on rainwater, declared a nature monument 1969 as a rare specimen. Species: myislandbrac.com says 'miniature black pine'; TCN says only 'pine'. English Wikipedia captions the chapel 'with bonsai tree' in the town centre. Other ages seen only in a search summary (over 100, 150 to 200, about 200 years) not on fetched pages, so the 100 to 200 range is a broad envelope of the fetched 120 and the unverified ones; do not quote 200. The municipal coat of arms shows the church with the pine (search summary only). ALIVE: last dated evidence is TCN 2017; lifecheck nearby shows other plants in 2026 but nothing for the pine itself. Flagged for alive. PIN: register point only; the church is small and in the centre, the tree on its roof, so the site is the church; approximate with location_site. It is a rooftop oddity, not an ancient tree: the draw is the oddity and its coat-of-arms status. Church age: 600 years (TCN) and 13th or 14th century (varying).",
+    "facts": [
+      "A pine growing out of a church roof, protected as a nature monument in 1969.",
+      "170 cm tall; no sign of roots reaching the ground, so it survives on rainwater (TCN 2017).",
+      "Officials estimate about 120 years, with uncertainty (TCN 2017).",
+      "On the roof of the roughly 600-year-old church of St Peter and Paul in the village centre; it appears on the municipality's coat of arms (search summary, unfetched)."
+    ],
+    "story": "A pine grows out of the roof of the church in Nerežišća, and nobody has found its roots reaching the ground. By Total Croatia News' account in 2017, it lives on rainwater.\n\nIt is 170 centimetres tall, about the height of a person, on the church of St Peter and Paul in the centre of this inland village on Brač. Total Croatia News puts the church at about 600 years old; other sources place it in the 13th or 14th century. Officials estimate the pine at about 120 years, and say plainly that they are not sure. One island guide calls it a miniature black pine, and an English Wikipedia caption simply shows the chapel with its bonsai tree.\n\nCroatia declared it a natural monument in 1969 as a rare specimen. This is not an ancient tree and it does not need to be. It is an oddity, a pine put at over a century old by the official guess and still shorter than most of the people who stop to look at it, and the village has kept it.\n\nYou do not need the church open to see it. The roof is visible from the street in the village centre, and Nerežišća is a short trip inland from the ferry port at Supetar.\n\nThe most recent dated report we found is from 2017. If you pass through, look up and tell us whether it is still there.",
+    "how_to_recognise": "You can recognise it by looking up: it is the small pine, about 170 centimetres tall, growing out of the roof of the church of St Peter and Paul in the village centre."
+  }
+]
