@@ -1,0 +1,40 @@
+{
+  "city": "Lampang",
+  "country": "Thailand",
+  "updated": "2026-11-02",
+  "about": "Heritage Trees register rows (Ministry of Culture 2017/2018) for Lampang province that did not clear the bar in a one-round verification pass; one flagged register-only tree sits in data/research/lampang-verified.json.",
+  "leads": [
+    {
+      "name": "Khajao of Ban Tha Thok (Soi Kao Jao) beside the Chao Pho Saeng Mueang shrine hall",
+      "species": "Holoptelea integrifolia (Indian Elm), our mapping from Thai name",
+      "latitude": 18.358435,
+      "longitude": 99.549108,
+      "source": "register 2018-52, same Thai text as 2018-53; register says two mother trees plus two seedlings in the middle of Ban Tha Thok, Moo 4, Tambon Thung Fai, community care",
+      "note": "Separate site from the Lampang Luang tree (register says two places), so a distinct tree. Lead only: no independent source found, no alive evidence, register point unverified against the soi, so no findable pin; register's 35 m girth and 60 m height discarded. Needs an OSM node, photo or visitor post to ship."
+    },
+    {
+      "name": "Sacred bodhi tree propped on wooden poles, Wat Phra That Lampang Luang",
+      "species": "Ficus religiosa (Sacred Fig), not source-confirmed",
+      "latitude": 18.2176,
+      "longitude": 99.3890,
+      "source": "thailande-et-asie.com (beside the fortification wall, outside the main compound, left of Viharn Phra Put); ivanhenares.com 2014-02-15 (near exit, Songkran prop ritual)",
+      "note": "Coordinate is the temple's, not the tree's. No age, no register entry, no tree-level pin; a recognisable Lanna ritual tree. Needs OSM node or geotagged photo and an age source. Photo exists: Commons File:Lampang Luang 03.jpg (ErwinMeier, CC BY-SA 4.0, taken 2019-03-07), described on Commons as this propped bodhi; English Wikipedia mislabels it 'kaChao tree'. Not looked at for the Cadiz standard yet."
+    },
+    {
+      "name": "Somphong of faith, Ban Thung Sala (memorial to a 14th-century ruler)",
+      "species": "Tetrameles nudiflora (Tetrameles), our mapping from Thai name",
+      "latitude": 18.771825,
+      "longitude": 99.957567,
+      "source": "register 2017-12: 282 years, memorial inscription says the ruler died beneath the big tree in Ngao",
+      "note": "Register only; no news, visitor post or memorial page found in two searches, no alive evidence, village-level pin. Age 282 is the register's, and the death story is local belief. No findable pin."
+    },
+    {
+      "name": "Champi Luang / Champi Ratchani, Mae Tia forest",
+      "species": "Magnolia rajaniana (Champi Ratchani), species per Thai name, not confirmed for this tree",
+      "latitude": 17.756839,
+      "longitude": 99.226931,
+      "source": "register 2017-43 (girth 8.6 m, 50 m tall, largest in Thailand, found recently); Maethod local news (via search summary) says villagers walked about 3 hours / about 4 km in, Mae Prab reserved forest, Thoen district",
+      "note": "BLOCKED for visiting: deep forest trek in a reserved forest, no trail, guide or permit information, area only proposed as a nature study site, no dated alive evidence. 50 m is plausible only as a claim. Revisit if a guided route or a geotagged photo appears."
+    }
+  ]
+}

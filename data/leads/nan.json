@@ -1,0 +1,40 @@
+{
+ "city": "Nan",
+ "country": "Thailand",
+ "updated": "2026-11-02",
+ "about": "Nan province, northern Thailand. Pass of 2026-11-02: nothing cleared the verify bar; every candidate is register-only or a group without a single viewing spot.",
+ "leads": [
+  {
+   "name": "Giant Chilli Tree (Ton Kom), Wat Phra That Chom Phrik",
+   "species": "Kom (species unidentified)",
+   "latitude": 19.08158,
+   "longitude": 100.91084,
+   "source": "data/registers/thailand-rukkha.json 2018-03",
+   "note": "Register-only (about 800 years, girth 8 m, h 10 m, temple in care per history_th). No dated alive evidence, no second source found (Thai and English searches return nothing), botanical identity of Kom not found. Register pin is approximate. Needs a temple page, visitor post or photo with a date."
+  },
+  {
+   "name": "Chomphu Phu Kha trees, Doi Phu Kha National Park",
+   "species": "Chomphu Phu Kha (Bretschneidera sinensis)",
+   "latitude": 19.171638,
+   "longitude": 100.916232,
+   "source": "data/registers/thailand-rukkha.json 2017-42",
+   "note": "Alive: bloom reported 2023-02-23 (asianews.network) and early March 2021 (gt-rider.com thread). Wild rare trees, register girth only 0.30 m; viewpoints on Highway 1256 about 4 km from the park HQ, no single tree or trail coordinate. Park fee 200 THB foreign adult per thaiholidayguide (not official). Group, not a collectible point, not ancient: lead until a named trail tree has a coordinate."
+  },
+  {
+   "name": "Giant Tao Rang (fishtail palm), Doi Phu Kha National Park",
+   "species": "Caryota sp. (unconfirmed)",
+   "latitude": null,
+   "longitude": null,
+   "source": "data/registers/thailand-rukkha.json 2019-09",
+   "note": "2019 list names only. No trail, coordinate or species found in two searches. No alive evidence."
+  },
+  {
+   "name": "Crape myrtle group, Ban Mai Nai Fan road",
+   "species": "Lagerstroemia sp.",
+   "latitude": 18.86715,
+   "longitude": 100.58358,
+   "source": "data/registers/thailand-rukkha.json 2018-48",
+   "note": "Register-only, group along a road into a Mien village, biggest about 300 years, girth stated as 5 arm-spans (no metres), h 20 m, care of the tambon administration. No second source or alive evidence found. Group on a road, species only mapped from the Thai name Tabaek."
+  }
+ ]
+}

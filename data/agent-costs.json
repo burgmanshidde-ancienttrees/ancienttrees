@@ -14609,6 +14609,30 @@
       "tokens": 154817,
       "trees": 11,
       "note": "12 stories plus 9 place blocks; Kastel Stafilic olive held (access unproven); all held for the pace, build with scripts/build_croatia_coast.py."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "lampang+lamphun",
+      "tokens": 128173,
+      "trees": 1,
+      "note": "Thai heritage-tree register rows; one flagged register-only tree (Lampang Luang khajao), Lamphun 0. Thin Thai web coverage."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "nan+phrae+mae-hong-son",
+      "tokens": 129983,
+      "trees": 0,
+      "note": "Thai heritage-tree register rows; nothing cleared the bar, all rows kept as leads. Register-only Thai rows rarely have a second source online."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "lampang",
+      "tokens": 60000,
+      "trees": 1,
+      "note": "Dispatcher session wrote the one story and place fields itself (no Opus write pass for one tree), corrected the age (the 1,000 years belongs to the Ban Tha Thok row), builder scripts/build_thailand_north.py, held for the pace. Tokens estimated."
     }
   ]
 }

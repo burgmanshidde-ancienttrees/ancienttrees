@@ -1,0 +1,24 @@
+{
+ "city": "Phrae",
+ "country": "Thailand",
+ "updated": "2026-11-02",
+ "about": "Phrae province, northern Thailand. Pass of 2026-11-02: nothing verified.",
+ "leads": [
+  {
+   "name": "Ancient mango, Moo 2 Tambon Mae Yom",
+   "species": "Mango (Mangifera indica)",
+   "latitude": 18.15806,
+   "longitude": 100.175396,
+   "source": "data/registers/thailand-rukkha.json 2018-50",
+   "note": "Register-only: 300 to 400 years, girth 7 m, h 32 m, native cultivar Hua Lom, in the care of Ban Ton Kha Nong Lom community per history_th; ordination processions circle it three times. Ground type (temple, community, private) not established, no alive evidence, no second source found. Cannot clear hard rule 10 (not a home) without that."
+  },
+  {
+   "name": "Teak garden of Ban Mae Phuak",
+   "species": "Teak (Tectona grandis)",
+   "latitude": null,
+   "longitude": null,
+   "source": "data/registers/thailand-rukkha.json 2019-17",
+   "note": "2019 list names only, no coordinate, size or access found. A Ban Mae Phuak railway halt exists in Den Chai district but nothing links a teak garden to it."
+  }
+ ]
+}

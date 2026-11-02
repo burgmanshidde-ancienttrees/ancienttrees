@@ -1,0 +1,32 @@
+{
+ "city": "Mae Hong Son",
+ "country": "Thailand",
+ "updated": "2026-11-02",
+ "about": "Mae Hong Son province (Mae Sariang, Salawin National Park), northern Thailand. Pass of 2026-11-02: nothing verified.",
+ "leads": [
+  {
+   "name": "Giant teak in Salawin National Park care, Mae Khun Yuam",
+   "species": "Teak (Tectona grandis)",
+   "latitude": 18.164683,
+   "longitude": 97.885067,
+   "source": "data/registers/thailand-rukkha.json 2018-51",
+   "note": "Register: 450+ years, girth 8.40 m (68 m height rejected as implausible), cared for by Salawin National Park. Wikipedia says only that Thailand's second-largest teak is in the park; no size, location or trail on that page or on thaiholidayguide. Park fee 100 THB foreign adult, 08:30 to 16:30, phone 0 5204 0266 (thaiholidayguide, not official). No alive evidence dated, no trail found, register pin approximate."
+  },
+  {
+   "name": "Krapi Chan at Pho So forest protection unit",
+   "species": "Unidentified (Millettia or Dalbergia?)",
+   "latitude": null,
+   "longitude": null,
+   "source": "data/registers/thailand-rukkha.json 2019-18",
+   "note": "2019 list names only; two searches found nothing; a forest protection unit is not a public site."
+  },
+  {
+   "name": "Nawaminthrachini teak forest",
+   "species": "Teak (Tectona grandis)",
+   "latitude": null,
+   "longitude": null,
+   "source": "data/registers/thailand-rukkha.json 2019-19",
+   "note": "2019 list names only; a forest, not a collectible point; nothing found."
+  }
+ ]
+}
