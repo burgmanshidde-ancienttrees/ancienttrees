@@ -620,8 +620,13 @@ def requests_scan(send):
         msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
         msg.set_content(body)
         try:
+            # THE SAME DAY (Hidde, 2026-11-02, on New Orleans: "clicked and
+            # applied so we need to send somethign automatically the same
+            # day"). An answer to a request they just made is the exception
+            # the one-week rest names (mailer.py), so a mail of ours in the
+            # days before never holds it back.
             with mailer.connect(creds, timeout=60) as server:
-                server.send_message(msg)
+                server.send_message(msg, recent_ok="answer to their own ambassador request")
         except Exception as e:
             print(f"request {rid} / {slug}: transport failed ({e.__class__.__name__})")
             continue
