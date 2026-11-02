@@ -29,8 +29,11 @@ invitation once, from the Ancient Trees address the other contributor mails use.
 The three ambassador mails (invitation, request answer, heads-up) end with
 "Hidde" above "Ancient Trees" (Hidde, 2026-10-25: "better to end with my name;
 Hidde make it more personal"), the one exception to hard rule 4's signature;
-every other automatic mail stays signed Ancient Trees. The badge is NOT granted here: it follows their
-answer, by hand, with --grant. Without --send it prints the mails it would send.
+every other automatic mail stays signed Ancient Trees. Since 2026-11-02 the badge
+is granted with the mail (Hidde: "why is the badge a manual step that should go
+automatically", then "Yes, both"): two trees in one place earn it, as a Local
+Guide's level or a komoot Pioneer's region does, and the mail says so with a
+reply as the way out. Without --send it prints the mails it would send.
 The invitations live in data/ambassadors.json under "invited".
 
 --requests answers the OPEN SEAT (Hidde, 2026-10-04: every city with nobody
@@ -38,7 +41,8 @@ named shows "Tokyo is looking for an ambassador" with a button). The button
 writes a submissions row of kind 'ambassador'; this sends each new one the
 editor mail once (how they see the list, what to take off or add, photographs),
 the same second mail Giulia Torta got, and records it under "requested" so it
-never repeats. The badge still follows their answer, by hand, with --grant.
+never repeats. Since 2026-11-02 the request is the yes: the badge is granted
+with the mail, and with a second place the same person asked for.
 EVERY request is recorded there, ours and anonymous ones included with a note
 saying so (Hidde, 2026-10-06: "How do we keep track of people requesting
 this??"); --asked prints the ledger without a key. An anonymous row is proof
@@ -124,17 +128,24 @@ def rows():
     return _req("/rest/v1/ambassadors?select=user_id,place_slug,place_name,public,since&order=since.asc") or []
 
 
-def grant(user_id, slug):
+def _grant_row(user_id, slug):
+    """The badge row alone, no sync: the scans write their own file first and
+    sync once at the end, or the sync's rewrite would be overwritten."""
     name = place_name(slug)
     row = {"user_id": user_id, "place_slug": slug, "place_name": name,
            "public": False, "since": datetime.date.today().isoformat()}
     if not KEY:
         print("ambassador (dry, no SUPABASE_SERVICE_KEY): would grant", row)
-        return
+        return False
     _req("/rest/v1/ambassadors?on_conflict=user_id,place_slug", "POST", [row],
          prefer="resolution=merge-duplicates,return=minimal")
-    print(f"ambassador: {user_id[:8]} is the ambassador of {name} ({slug}), not yet named publicly")
-    sync()
+    print(f"ambassador: {user_id[:8]} is the ambassador of {name} ({slug})")
+    return True
+
+
+def grant(user_id, slug):
+    if _grant_row(user_id, slug):
+        sync()
 
 
 def set_public(user_id, slug, yes):
@@ -340,9 +351,10 @@ INVITE_BODY = (
     "Thanks for collecting {count} in {place}. Your photographs of {what} are on the trees' "
     "pages now, for everybody to see:\n"
     "{links}\n\n"
-    "We would love to make you our ambassador for {place}: somebody who adds photos, checks the "
-    "facts and helps sharpen the list. What do you think of our {place} list, is it missing any, "
-    "are some wrong? Let us know if you are up for it.\n{listlink}\n\n"
+    "That makes you our ambassador for {place}: somebody who adds photos, checks the facts and "
+    "helps sharpen the list. The badge is beside your name now. What do you think of our {place} "
+    "list, is it missing any, are some wrong?\n{listlink}\n\n"
+    "If you would rather not have the badge, just reply and I will take it off.\n\n"
     "Hidde\nAncient Trees\n"
 )
 _NUMBER_WORDS = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
@@ -447,6 +459,7 @@ def invite_scan(send):
     never = {people.ref(i["user_id"]) for i in invited if i.get("place_slug") == "*"}
     sent_log_path = os.path.join(ROOT, "data", "outreach-sent.json")
     n = 0
+    granted = 0
     for (uid, slug), pairs in sorted(_contributions().items()):
         names = [n for n, _ in pairs]
         if ours.is_ours(uid) or slug in covered or uid in badged or (people.ref(uid), slug) in already or people.ref(uid) in never:
@@ -506,9 +519,17 @@ def invite_scan(send):
             pass
         n += 1
         print(f"invite {uid[:8]} / {slug}: sent ({', '.join(names)[:60]})")
+        # EARNED, NOT ASKED (Hidde, 2026-11-02, "Yes, both"): two trees in one
+        # place is the badge, the way a Local Guide reaches level 4 and a
+        # komoot Pioneer tops a region; the mail tells them, and a reply is
+        # the way out.
+        _grant_row(uid, slug)
+        granted += 1
     with open(FILE, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
+    if granted and KEY:
+        sync()
     print(f"invite-scan: {n} invitation(s) sent")
     return 0
 
@@ -516,9 +537,9 @@ def invite_scan(send):
 REQUEST_SUBJECT = "Looking after {place}"
 REQUEST_BODY = (
     "Hi,\n\n"
-    "Thank you so much for offering to look after our {place} list. It means a lot to us: "
-    "people who know the trees on the ground are what make these pages good. "
-    "Here is the list as it stands:\n{listlink}\n\n"
+    "Thank you so much for offering to look after our {place} list. You are our ambassador for "
+    "{place} now, with the badge beside your name. People who know the trees on the ground are "
+    "what make these pages good. Here is the list as it stands:\n{listlink}\n\n"
     "You could really help by:\n"
     "- checking the list\n"
     "- telling us which trees to add or remove\n"
@@ -558,6 +579,7 @@ def requests_scan(send):
                  "&kind=eq.ambassador&order=created_at.asc") or []
     n = 0
     anonymous = 0
+    granted = 0
     for row in rows_:
         uid, rid = row.get("user_id"), row.get("id")
         if rid in seen_rows:
@@ -598,6 +620,8 @@ def requests_scan(send):
                               "place_name": row.get("city"), "date": None,
                               "note": "same person as row %s; answered in that thread" % first["row"]})
             print(f"request {rid} / {slug}: same person as row {first['row']}, no second mail")
+            if _grant_row(uid, slug):
+                granted += 1
             continue
         place = place_name(slug)
         subject = REQUEST_SUBJECT.format(place=place)
@@ -650,9 +674,16 @@ def requests_scan(send):
         asked.add((people.ref(uid), slug))
         n += 1
         print(f"request {rid} / {slug}: editor mail sent")
+        # THE ASK IS THE YES (Hidde, 2026-11-02, "Yes, both"): somebody who
+        # pressed "become ambassador" gets the badge with our mail, as Local
+        # Guides and komoot hand theirs out without waiting for a reply.
+        if _grant_row(uid, slug):
+            granted += 1
     with open(FILE, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
+    if granted:
+        sync()
     print(f"ambassador --requests: {n} mail(s) sent")
     if anonymous:
         print(f"ambassador --requests: {anonymous} request(s) with NO ACCOUNT reached the "

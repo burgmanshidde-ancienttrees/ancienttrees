@@ -1,6 +1,6 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named or their profile is public (public true, since 2026-10-28); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": "2026-10-28T09:18Z",
+  "synced": "2026-11-02T14:01Z",
   "ambassadors": [
     {
       "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
@@ -54,6 +54,33 @@
       "public": true,
       "since": "2026-10-28",
       "display_name": "Miguel Portugal",
+      "profile_public": true
+    },
+    {
+      "user_id": "154c94b7-0841-4161-bcab-47405b9a8051",
+      "place_slug": "paris",
+      "place_name": "Paris",
+      "public": true,
+      "since": "2026-11-02",
+      "display_name": "Tall Ginkgo 6205",
+      "profile_public": true
+    },
+    {
+      "user_id": "e059d33f-46be-4a50-9acc-f28b81a0d2aa",
+      "place_slug": "new-orleans",
+      "place_name": "New Orleans",
+      "public": true,
+      "since": "2026-11-02",
+      "display_name": "William G.",
+      "profile_public": true
+    },
+    {
+      "user_id": "ab3fc145-297e-4811-bf2b-2f530bffec20",
+      "place_slug": "pamplona",
+      "place_name": "Pamplona",
+      "public": true,
+      "since": "2026-11-02",
+      "display_name": "Mikel B.",
       "profile_public": true
     },
     {
