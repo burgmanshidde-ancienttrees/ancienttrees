@@ -1,0 +1,29 @@
+{
+ "leads": [
+  {
+   "name": "Cork oak (sobreiro) in the Monchique 'Rota das Arvores Monumentais' (Via Algarviana guide)",
+   "place": "Monchique",
+   "reason": "Guide PDF at portuguesetrails.com (Via Algarviana - Guia Rota das Arvores Monumentais, PT/EN) is image-only; no text extractor on this Mac (no pdftotext/pypdf). Needs a session that can OCR or view the PDF pages; likely the same ICNF trees already mined (Barranco dos Pisoes, Quinta da Vila, EN 267, Pomar Velho, Quinta do Viador)."
+  },
+  {
+   "name": "Evergreen magnolia, Convent of Nossa Senhora do Desterro, Monchique",
+   "place": "Monchique",
+   "reason": "No new evidence; komoot route lists the 1631 convent ruin as a waypoint but no tree detail (page behind sign-in). Still no photo or pin.",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "name": "Silves municipal urban tree inventory (7,883 trees, 135 species, 2025 postal.pt article)",
+   "place": "Silves",
+   "reason": "Inventory names populations only (Celtis australis 645); the final report mentions 'potencial para classificacao' but no individual trees are published. Ask cm-silves.pt or find the report; no named tree to verify."
+  },
+  {
+   "name": "Wikidata 'Arvore isolada' items (Q98444xxx) in the Faro district",
+   "place": "Algarve",
+   "reason": "All 15 in the west and centre Algarve are the ICNF register rows already judged in data/leads/lagos.json and faro.json; Wikidata adds no photo, no new tree and no new coordinate.",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "blocked": []
+}

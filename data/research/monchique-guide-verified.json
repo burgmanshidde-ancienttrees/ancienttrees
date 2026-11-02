@@ -1,0 +1,27 @@
+[
+  {
+    "id": "mnq_004",
+    "name": "Eucalyptus of the Centro de Saude",
+    "species": "Blue Gum (Eucalyptus globulus)",
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "girth_cm": 610,
+    "height_m": 40,
+    "location": {
+      "address": "East side of the Estrada de Saboia (EN 266), opposite the Centro de Saude, Monchique",
+      "latitude": 37.3225299,
+      "longitude": -8.5513276,
+      "neighbourhood": "Peso, Monchique"
+    },
+    "verified_sources": [
+      "https://viaalgarviana.org/upload_files/1/1/Rotas_Tematicas_PT/Rota-das-Arvores-Monumentais-ViaAlgarviana-PT-mobile.pdf",
+      "https://www.openstreetmap.org/node/6471090226"
+    ],
+    "access": "Stands beside the public road at the village exit towards Saboia, opposite the health centre; seen from the pavement. No entry needed.",
+    "transport": "Monchique village; bus Portimao to Monchique takes 40 to 50 minutes, the tree is at the edge of the village.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Via Algarviana 'Rota das Arvores Monumentais' guide (Arvores da Vila circuit, tree 2, guide p.7), measured 2010: two Eucalyptus globulus, 37.6 m and 40.0 m tall, girth at 1.30 m 4.9 m and 6.1 m (girth_cm and height_m here are the larger of the pair), base girth 5.8 m and 5.5 m, crown 23.5 m and 27.5 m N-S, 24.1 m E-W. East of the Estrada de Saboia opposite the Centro de Saude, at the village exit towards Saboia and Lisboa. A third eucalyptus of the group fell on 26 Jan 2013, a week after storms; the guide says the two remaining larger ones survived and were awaiting classification as Arvores de Interesse Publico (classification 'Pendente'). ICNF's current classified-tree KML (si.icnf.pt/kml/arv_class, fetched 2026-11-02) lists no eucalyptus in Monchique, so classification has NOT been found; do not say classified. Pin: OpenStreetMap natural=tree node 6471090226 'Eucalipto do Centro de Saude' (Eucalyptus globulus, height 37, crown 27, denotation natural_monument; node v2 edited 2026-05-23). It is one tree-level node for the 37 m tree; the second (taller) tree stands close by and is not mapped. Whether the node was surveyed or taken from the guide is unknown, so the pin is flagged. Alive: no dated photo or observation found (lifecheck NONE, no Commons geotag within 300 m, no iNaturalist record); the only recent trace is the 2026 OSM edit. Flagged: one source plus an OSM node, alive not independently dated. No photo candidate found. Guide also records a garden with camellias and hydrangeas on the other side of the road at the health centre.",
+    "photo": {"status": "missing"}
+  }
+]

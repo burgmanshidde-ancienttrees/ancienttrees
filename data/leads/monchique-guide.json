@@ -1,0 +1,54 @@
+{
+ "leads": [
+  {
+   "name": "Sobreiro da Corte Grande (cork oak), south slope of the Picota",
+   "place": "Monchique",
+   "lat": null,
+   "lon": null,
+   "reason": "Real and remarkable (guide p.11, measured 2010: girth 5.9 m at 1.30 m, base 8.1 m, 17.5 m, crown 33 m, 'largest in the Algarve'; independent blog Arvores do Sul 2008-03-02: girth 6.11 m, 19 m, crown 33.5 m; two sources). But no photo or exact pin in reach (no OSM node, no Commons or iNaturalist record, guide map only, circuit point 4 on the Picota map), private land visible from the road, classification only 'pending' (not in ICNF KML 2026-11-02), and the Picota burned in 2018, 2023 and 3 Aug 2026, so alive is unconfirmed. Best candidate to ship once a pin on the road viewpoint and a dated sighting exist (Wikiloc waypoint, Miguel Rodrigues / Arvores do Sul, Mons Cicus blog, Algarve Digital map)."
+  },
+  {
+   "name": "Sobreiro da Maia (cork oak)",
+   "place": "Monchique",
+   "lat": null,
+   "lon": null,
+   "reason": "Guide p.11: girth about 4.8 m (2009), burned 2005 and recovering; vegetative state 'not the best'. Single source, no pin, no photo, Maia area burned again in 2023. Life check not possible."
+  },
+  {
+   "name": "Sobreiros de Montinhos da Serra 1 and 2 (cork oaks)",
+   "place": "Monchique",
+   "lat": null,
+   "lon": null,
+   "reason": "Guide p.11: girth 3.32 m / 3.10 m, 19.5 m / 18 m, 2007, facing each other across the road (Picota circuit, point 1 and 2 on map near Montinhos da Serra, about 2 km east of the village). Modest, two trees across a road, single source, no pin or photo. Not a walkable set with anything published; the village is a 27 km circuit away."
+  },
+  {
+   "name": "Sobreiral do Convento (cork oaks on the path below the Convento do Desterro)",
+   "place": "Monchique",
+   "lat": 37.3195,
+   "lon": -8.5575,
+   "reason": "Guide p.8 (2006): girths 3.55 m (24 m), 3.20 m (17 m), 4.81 m (no height given, beside the magnolia). Coordinate is the convent area only, not a tree. Path is the Via Algarviana but the convent is private (a resident lives there) and the convent ruin is flagged as not recommended to visit by the municipal PR4 trail text. Only the 4.81 m one is of interest; single source, no pin or photo."
+  },
+  {
+   "name": "Magnolia da Quinta Grande (Magnolia grandiflora)",
+   "place": "Monchique",
+   "lat": null,
+   "lon": null,
+   "reason": "Guide p.12 (2010): girth 4.1 m, 18.9 m, 100 to 200 years, classification pending; seen across the Ribeira de Monchique from a clearing on the road to Alferce a few metres past the EN 267 Monchique oak (mnq_003), beside the Quinta Grande house near the Ermida de Santa Brigida ruins. It is a view across a valley to a private house, no exact pin, no photo, no second source. Lead only."
+  },
+  {
+   "name": "Magnolia de Santa Catarina, Convento do Desterro (KNJ1/077, 5.54 m, once the tallest of its species in Portugal)",
+   "place": "Monchique",
+   "lat": 37.3196,
+   "lon": -8.5590,
+   "reason": "BLOCKED as a dead tree: the guide says it was no longer accessible and declining in 2011, and Portugal Resident headline 'Monchique celebrates World Tree Day remembering its fallen Magnolia' (body not readable, 401) and a Postal.pt item say it died and was replaced by young magnolias. Never ship; replacements are saplings."
+  },
+  {
+   "name": "Viador Norfolk Island pine (KNJ1/234, 4.8 m, 44 m) as noted in the guide",
+   "place": "Monchique",
+   "lat": 37.3229,
+   "lon": -8.5577,
+   "reason": "Not on the brief's list but the ICNF KML (2026-11-02) and the guide (tree 3, 150 years, measured 2006) agree on it and the municipal PR4 trail text calls it about 150 years and 44 m; it is the tallest ICNF tree in Monchique and already a lead in lagos.json / algarve-west.json. Guide says it stands on a walled terrace above the Quinta do Viador with a public washing tank at the entrance; access from the lane still to confirm."
+  }
+ ],
+ "blocked": []
+}

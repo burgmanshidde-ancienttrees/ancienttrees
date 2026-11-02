@@ -14681,6 +14681,38 @@
       "tokens": 30000,
       "trees": 2,
       "note": "Written by the dispatcher itself (estimate), no Opus pass for two trees: 2 stories, 2 place blocks, Commons photo approved for kpn_001. About 154k tokens a tree all in: the southern register rows are scattered village trees with no web presence. Stop here; do not re-run the south without a new angle."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "algarve-west (lagos+portimao+monchique+aljezur+lagoa+silves+sagres)",
+      "tokens": 136401,
+      "trees": 0,
+      "note": "ICNF register already mined; town gardens, Arvore do Ano, Commons/iNaturalist/Wikidata gave nothing new. Its one lead, the image-only Via Algarviana tree guide, was read by the dispatcher (pages rendered with PDFKit via out/tmp/pdfpages.swift)."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "algarve-east (faro+olhao+loule+tavira+vrsa+castro-marim+alcoutim+estoi)",
+      "tokens": 128948,
+      "trees": 0,
+      "note": "Nothing new in town gardens; surfaced Tavira's route PDF, which the dispatcher read: it sends visitors to the Pedras d'el Rei olive, settling tav_001's access."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "monchique (Via Algarviana monumental-trees guide)",
+      "tokens": 150351,
+      "trees": 1,
+      "note": "Six guide trees checked: only the Centro de Saude blue gums verified (OSM node pin, flagged, no photo, life thin). Corte Grande cork oak is the best lead (no pin, Picota burned 2018/2023/2026); Santa Catarina magnolia dead."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "tavira+monchique",
+      "tokens": 40000,
+      "trees": 2,
+      "note": "Written by the dispatcher itself (estimate, includes reading both PDFs): 2 stories, Tavira place block, Monchique four-tree copy, Commons photo approved for tav_001. About 230k tokens a tree all in. The Algarve is exhausted for desk research; only a reader or a field visit adds trees now."
     }
   ]
 }

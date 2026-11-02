@@ -1,0 +1,35 @@
+{
+ "leads": [
+  {
+   "name": "Oliveira Real of Pedras d'el Rei, Tavira (access still unsettled)",
+   "species": "European Olive (Olea europaea)",
+   "location": {
+    "address": "Aldeamento Turistico de Pedras d'el Rei, Santa Luzia",
+    "latitude": 37.095805,
+    "longitude": -7.67801
+   },
+   "reason": "access: inside holiday resort; Postal do Algarve, Barlavento, Komoot highlight 7311777 (public Highlight, coords 37.095941,-7.678019, says nothing about entry) and resort material never say non-guests may enter. Confirmed pin and Commons photo exist (see data/research/faro-verified.json tav_001). Possible new evidence: Tavira municipal route 'Os segredos e encantos da Ria Formosa' (visitartavira.pt PDF) lists an 'Oliveira bimilenaria (a esquerda)' next to the Santa Luzia parish church; ICNF has only one Tavira tree (KNJ1/195), so it is either the same tree loosely placed or an unregistered second olive. Needs a human read of the route map page before it counts as a public-access source."
+  },
+  {
+   "name": "Oliveira bimilenaria, Largo da Igreja, Santa Luzia (Tavira)",
+   "species": "European Olive (Olea europaea)",
+   "location": {
+    "address": "Largo da Igreja, Santa Luzia, Tavira",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "no coordinate and no second source: named only as a stop caption in the Tavira municipal Ria Formosa route PDF (text recovered from PDF stream, map not seen); a lodging listing claims crown 11.8 m and classification 1984 which matches ICNF KNJ1/195, so likely the same tree or a misplacement. Unresolved; do not publish a second entry."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Alameda Joao de Deus, Faro (old trees)",
+   "reason": "avenue/garden of many ageing trees, none named, no species, age or coordinates (Postal do Algarve 2019 only says council is pruning them); not a collectible point"
+  },
+  {
+   "name": "Jacarandas of central Faro",
+   "reason": "street trees along avenues, not a collectible point; Commons only has watercolour sketches"
+  }
+ ],
+ "notes": "2026-11-02 algarve-east pass: no new verifiable tree found."
+}
