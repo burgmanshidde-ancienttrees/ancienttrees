@@ -260,10 +260,31 @@
       "trees_at_claim": 3
     },
     {
-      "target": "faro",
+      "target": "foresta-umbra",
       "kind": "verify",
-      "by": "session-dc034001",
-      "claimed_at": "2026-11-02T19:06:59+00:00",
+      "by": "session-45e8e69f",
+      "claimed_at": "2026-11-02T19:07:03+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "vico-del-gargano",
+      "kind": "verify",
+      "by": "session-45e8e69f",
+      "claimed_at": "2026-11-02T19:07:08+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "bisceglie",
+      "kind": "verify",
+      "by": "session-45e8e69f",
+      "claimed_at": "2026-11-02T19:07:12+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "foggia",
+      "kind": "verify",
+      "by": "session-45e8e69f",
+      "claimed_at": "2026-11-02T19:07:17+00:00",
       "trees_at_claim": null
     }
   ]
