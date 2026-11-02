@@ -1,0 +1,34 @@
+[
+ {
+  "id": "bkk_006",
+  "name": "The Tamarinds of Wat Arun's Giants",
+  "species": "Tamarind (Tamarindus indica)",
+  "age_estimate": "over 165 years (the left-hand tree)",
+  "age_min": 165,
+  "age_max": null,
+  "location": {
+   "address": "Wat Arun Ratchawararam, Thanon Wang Doem, Bangkok Yai (gate of the ordination hall)",
+   "latitude": 13.743675,
+   "longitude": 100.488895,
+   "neighbourhood": "Wat Arun, Bangkok Yai"
+  },
+  "verified_sources": [
+   "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9 (register 2017-10, Ministry of Culture)",
+   "https://spacebar.th/lifestyle/six-legendary-heritage-tree (2024-06-22, says the pair still stands beside the giants)",
+   "https://thestandard.co/trees-over-100-years-old-in-bkk/ (2020-10-21, says the two were not planted together)"
+  ],
+  "official_register": {
+   "name": "Rukkha Moradok khong Phaendin (Heritage Trees of the Land), Dept of Cultural Promotion, Ministry of Culture, 2017 list no. 10",
+   "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+  },
+  "access": "Paid entry to Wat Arun: foreign visitors pay a small cash fee at the ticket counter by the gate (amount not verified), open daily 8:00 to 18:00 (watarunvisit.com); one ticket covers the ordination hall and the gate with the giants. Shoes off inside the hall. Dress code not verified.",
+  "transport": "Cross-river ferry from Tha Tien pier (Chao Phraya Express N8), then walk through the grounds to the ordination hall gate; the exact crossing time was not verified.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Gate of the ordination hall (ubosot), Wat Arun, with the two giant guardians",
+   "radius_m": 50
+  },
+  "curation_status": "flagged",
+  "verify_notes": "Register entry 2017-10 (Thai name: Twin giant tamarinds of Wat Chaeng). Register gives no age, girth or height ('not specified'). Register history text: the tamarind beside the green giant Thotsakan (left in the photo) is already in Henri Mouhot's drawing in 'Travels in Siam, Cambodia and Laos 1858-1860' and an 1867 old photograph, so it predates 1858; the tamarind beside the white giant Sahatsadecha (right) was probably planted later, it appears on a postcard from the reign of Rama VII (1925-1934). The two were not planted together (also The Standard 2020). Both stand trimmed into a neat shape. Species is from the Thai common name (makham) only; tamarind is consistent with Thai-language descriptions. Alive: Spacebar 2024-06-22 says the pair still stands beside the giants; one iNaturalist tamarind observation labelled Wat Arun dated 2026-03-10 (observation 342189515, casual, cultivated, about 80 m east of the register point, not proven to be this tree). Register-only for dimensions; the Mouhot dating is the register's own claim, Mouhot book not seen. Register point 13.743675,100.488895 is the temple's centre (Commons photos of the prang geotag within 5 m), not the gate, so the pin is temple level: approximate. Pin not confirmed: no OSM tree node found (Overpass mirror 504, Nominatim empty). Age: the left tree is over about 165 years (1858 to 2026), basis is the register's reading of the Mouhot drawing. Thailand is not a covered country. Not a duplicate of any live Bangkok tree (bkk_001 to bkk_005 are 1 to 2 km away). Does not tip into hard rule 10: paid temple grounds are public."
+ }
+]

@@ -1,0 +1,89 @@
+{
+ "leads": [
+  {
+   "id": "bkk_lead_silpakorn_fig",
+   "name": "Pu Krang, the giant council tree of Silpakorn University",
+   "species": "Council Tree (Ficus altissima), from the Thai name krang",
+   "location": {
+    "latitude": 13.752916,
+    "longitude": 100.49024,
+    "address": "Silpakorn University Wang Tha Phra, 31 Thanon Na Phra Lan, in front of the Faculty of Archaeology"
+   },
+   "register_id": "2017-28",
+   "reason": "campus: no source read says the grounds are open to visitors (hard rule 10, schools); travel articles list the tree as a visit but the university's own page says nothing; lifecheck NONE, no iNaturalist observation of it",
+   "notes": "Register: girth about 15 m (implausible for one trunk, a spreading aerial-root mass or corrupt column), height about 25 m, age not given, 'over a hundred years, planted early Rattanakosin before the palace became the university'. The Cloud (readthecloud.com/travel/take-me-out/tree-rattanakosin-island, fetched, undated): trunk base as wide as eight people embracing it, over 100 years, among the largest trees in Bangkok, in an old photograph from Rama IV. Spacebar 2024-06-22 and The Standard 2020-10-21 both name it in front of the Faculty of Archaeology. Free art gallery at Wang Tha Phra per non-official sources. To ship: one line from the university or a dated visit saying the campus is open, and a dated photograph."
+  },
+  {
+   "id": "bkk_lead_chula_rain_trees",
+   "name": "Rain trees of Chulalongkorn University",
+   "species": "Rain Tree (Samanea saman)",
+   "register_id": "2019-88",
+   "reason": "no coordinate, no measurement in the register (2019 list is names only); campus access not evidenced; a group, not one point"
+  },
+  {
+   "id": "bkk_lead_suan_sunandha_jasmine",
+   "name": "Kaeo Chao Chom orange jasmine, Suan Sunandha Rajabhat University",
+   "species": "Orange Jasmine (Murraya paniculata), per Thai name; the register text talks of a Lignum Vitae from Java, so species is unclear",
+   "register_id": "2017-65",
+   "reason": "campus access not evidenced; species conflict (kaeo vs Guaiacum); small tree, girth 2 m, height 15 m, about 100 years, flowers the university's flower",
+   "notes": "point 13.775673,100.508269, behind the Phra Nang mound memorial; no life check run"
+  },
+  {
+   "id": "bkk_lead_bang_krasop_lamphu",
+   "name": "Lamphu (mangrove apple) stand of Bang Krasop",
+   "species": "Mangrove Apple (Sonneratia sp.)",
+   "location": {
+    "latitude": 13.665522,
+    "longitude": 100.565875
+   },
+   "register_id": "2018-15",
+   "reason": "a group of about 1,700 replanted trees (restored from 2008) on 41 rai, not an individual old tree; register gives girth 2.53 m and height 25 m for the group; in Samut Prakan (Phra Pradaeng, Bang Krachao area), within day-trip range but no individual to place; Bang Krasop is the Bang Krachao green lung and a firefly site"
+  },
+  {
+   "id": "bkk_lead_nonthaburi_durian",
+   "name": "Nonthaburi durian, Yam Ma Wat variety, Suan Pengsuk",
+   "species": "Durian (Durio zibethinus)",
+   "register_id": "2019-29",
+   "reason": "2019 list gives only name and province; no site, coordinate or measurement; possibly a working orchard"
+  },
+  {
+   "id": "bkk_lead_wat_paorohit_samo",
+   "name": "Samo Thai tree at Wat Paorohit school",
+   "register_id": "2019-86",
+   "reason": "2019 list gives name and province only; school grounds; no coordinate"
+  },
+  {
+   "id": "bkk_lead_rama6_fig",
+   "name": "Weeping fig at Rama VI Technology College",
+   "species": "Fig (Ficus sp.)",
+   "register_id": "2019-87",
+   "reason": "2019 list gives name and province only; college grounds; no coordinate"
+  },
+  {
+   "id": "bkk_lead_register_2017-19_dup",
+   "name": "Ironwoods of Wat Ratchabophit (register 2017-19)",
+   "note": "Duplicate of live bkk_001: register pin 13.749134,100.497357 sits within 20 m of bkk_001 (13.74917,100.49722). Five Hopea odorata, register girth 4.5 m, height 20 m, 200 years, planted under Rama I for warship timber; add as official_register to bkk_001."
+  },
+  {
+   "id": "bkk_lead_register_2017-23_dup",
+   "name": "Thammasat bodhi tree (register 2017-23)",
+   "note": "Same tree as live bkk_005 (Lan Pho, Thammasat). Register point 13.765097,100.490946 is about 1 km north of bkk_005 pin 13.7568,100.4917, so the register coordinate is wrong or points at a different campus site; keep the bkk_005 pin. Register gives no age ('nearly a hundred years', older than the university founded 1934), no measurements."
+  }
+ ],
+ "blocked": [
+  {
+   "id": "bkk_lead_sanam_luang_tamarinds",
+   "name": "Tamarinds of Sanam Luang",
+   "species": "Tamarind (Tamarindus indica)",
+   "register_id": "2018-45",
+   "reason": "790 trees along a public field, an avenue/group not a collectible point (planted from the reign of Rama V in 365 and in 1981 another 425); register coordinate was a cross-province placeholder and was cleared; a single old trunk would need a separate pass"
+  },
+  {
+   "id": "bkk_lead_lychee_chom_thong",
+   "name": "Ancient lychee garden of Khung Lichi, Chom Thong",
+   "species": "Lychee (Litchi chinensis)",
+   "register_id": "2017-64",
+   "reason": "private orchard of one family (deed from 1881), no public access stated; register point approximate, 'over 100 years, 20 m'"
+  }
+ ]
+}
