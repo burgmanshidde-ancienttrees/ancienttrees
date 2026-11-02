@@ -1,0 +1,66 @@
+{
+ "leads": [
+  {
+   "register_id": "2018-65",
+   "name": "Fig at Wat Ton Liap, Sathing Phra, Songkhla",
+   "reason": "Register 400+ y, girth 19.5 m, 28.5 m; temple confirmed by Thai Post 2020-03-01 (birthplace temple of Luang Pu Thuat, Dee Luang) but no coordinate found (register one is a placeholder, OSM/Nominatim has no entry) and no recent report of the tree itself; no photo or exact pin in reach"
+  },
+  {
+   "register_id": "2017-48",
+   "name": "Frangipani group, Khao Wang (Phra Nakhon Khiri), Phetchaburi",
+   "reason": "1,263 trees across a hilltop historical park, no single trunk or one place to stand; no second source found for the planting; paid entry (reported 150 THB foreigners, 08:30-16:30), blooms March-April per register. Park-level pin only"
+  },
+  {
+   "register_id": "2018-44",
+   "name": "Tamarind, Wat Kao Pak Phon, Bang Kaeo, Phatthalung",
+   "reason": "Register only (200 y, girth 3 m, height 40 m is suspect); searches found nothing else; coordinate approximate, no photo; site used for local festivals by the sub-district (open ground) but unconfirmed"
+  },
+  {
+   "register_id": "2018-33",
+   "name": "Hopea odorata 'three buttress', Huai Yai community forest, Tha Sae, Chumphon",
+   "reason": "Register only (200 y, girth 10 m, 29 m); inside a community forest near the Myanmar border, access and visitor entry unknown; no second source found"
+  },
+  {
+   "register_id": "2018-14",
+   "name": "Lamphaen (Sonneratia), Ban Khao Wang, Ron Phibun, Nakhon Si Thammarat",
+   "reason": "Register only (girth 9 m, height 50 m suspect for a Sonneratia in a hill community; species mapping unconfirmed); no second source, access unknown"
+  },
+  {
+   "register_id": "2017-63",
+   "name": "Sentang, Ban Plai Khlong, Khlong Sai, Songkhla",
+   "reason": "Register only (200 y, girth 5 m, 20 m) cared for by the sub-district administration, said to be sacred; coordinate approximate, no second source or photo; not checked for public entry"
+  },
+  {
+   "register_id": "2017-57 / 2018-47",
+   "name": "Durians (Lang Suan, Chumphon; Wiang Sa, Surat Thani)",
+   "reason": "2017-57 is in a family-run garden; 2018-47 in private care per register; no source shows open public entry (hard rule 10)"
+  },
+  {
+   "register_id": "2019-84, 2019-85, 2019-73, 2019-77, 2019-81",
+   "name": "2019 rows (Rom Yen ranger station twin trees; champak learning centre; San Luang fig; Phayom group; palmyra groups)",
+   "reason": "2019 list has name, province only: no coordinates, no measurements; nothing placeable found"
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": "2018-28",
+   "name": "Pa Yang Na Klang Ao, Bang Saphan Yai",
+   "reason": "Forest of about 6,000 trees over 1,200 rai, not a collectible point; register height 85 m implausible; DNP forest park status/access not confirmed by any search"
+  },
+  {
+   "register_id": "2017-46",
+   "name": "Chan Hom group, Kui Buri National Park",
+   "reason": "Group in a national park, no single placeable trunk, locations deliberately surveyed for royal ceremony use"
+  },
+  {
+   "register_id": "2019-32",
+   "name": "Mangrove forest, Pranburi Forest Park",
+   "reason": "Ecosystem, not a tree"
+  },
+  {
+   "register_id": "2019-34",
+   "name": "Yang Na avenue, Phetkasem road, Phetchaburi",
+   "reason": "Avenue, no coordinates"
+  }
+ ]
+}

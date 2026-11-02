@@ -1,0 +1,59 @@
+[
+ {
+  "id": "kpn_001",
+  "name": "Giant Yang Na of Ban Nok, Ko Pha Ngan",
+  "species": "Yang Na (Dipterocarpus alatus)",
+  "age_estimate": "roughly 400 years",
+  "age_min": 300,
+  "age_max": 500,
+  "girth_cm": 1464,
+  "height_m": 53.5,
+  "location": {
+   "address": "Roadside, Ban Nok (Moo 2), Ban Tai subdistrict, Ko Pha Ngan, Surat Thani, about 300 m past Wat Pho",
+   "latitude": 9.7053,
+   "longitude": 100.0289,
+   "neighbourhood": "Ban Nok, Ban Tai"
+  },
+  "verified_sources": [
+   "Ministry of Culture Rukkha Moradok khong Phaendin 2018 list, register id 2018-30 (data/registers/thailand-rukkha.json, CC BY)",
+   "https://www.lovethailand.org/travel/en/74-Surat-Thani/3681-Giant-Yang-Tree.html (page updated about 3 months before 2026-11; roadside, free, open 24 h; nav link 9.70544,100.02893)",
+   "https://www.thailandee.com/en/visit-thailand/koh-phangan-giant-tree-koh-phangan-344 (GPS 9.705272,100.028882; 300 m after Wat Pho)",
+   "https://www.lonelyplanet.com/points-of-interest/yang-na-yai-tree/1526726 (Ban Nok village, near Wat Pho; shrines and ribbons at the base)",
+   "https://www.inaturalist.org/observations/201106325 (2024-03-03, nearby observation, not confirmed as this trunk)"
+  ],
+  "official_register": {
+   "name": "Ministry of Culture, Department of Cultural Promotion: Rukkha Moradok khong Phaendin (heritage trees of the land), 2018, no. 30",
+   "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+  },
+  "access": "Free, beside the public road, open at all hours; daytime advised. Narrow road, busy about 11:00 to 14:00. Few facilities. Villagers treat it as sacred; small shrines at the foot.",
+  "transport": "About 4 to 5 km from Thong Sala pier; Thong Sala to Ban Tai/Ban Khai songthaew, or taxi or hired motorbike (lovethailand, travellingfoot). Not checked on site.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register: 400 years, girth 14.64 m, height 53.5 m (girth measured by the register, presumably at breast height; may include buttress swell, unverified). Register history says it won first prize in a Kasetsart University contest for the largest Yang Na (17 Nov 1999) and is called the biggest Yang Na in Thailand: a register/sign claim, not independently verified; do not repeat as fact without attribution. Many more Yang Na stand in the same area, this being the 'mother tree'. Bees nest in the crown. Cared for by the Ban Nok community (Moo 2). PIN: the register coordinate 9.7009,100.0225 is about 800 m off; lovethailand's navigation link (9.70544,100.02893) and thailandee's GPS (9.705272,100.028882) agree within 20 m and match the textual 'about 300 m past Wat Pho'. Another lovethailand point (9.717583,100.034081) is the page's 'check-in' point, 1.4 km north, ignored. Published tourist-guide GPS, not our own fix. 53.5 m is tall for Yang Na but within the species range (up to about 50 m+) and repeated by Lonely Planet (54 m). ALIVE: Lonely Planet (2026-branded page) and lovethailand (recently updated) both list it as visitable; no dated first-hand 2025 report found; flagged. Commons photo check failed (API busy), not retried. Holidify's '14 m Yang Na Nai' is a different or mistaken listing. LIFECHECK: RECENT, iNaturalist observation 2024-03-03 within range of the pin (https://www.inaturalist.org/observations/201106325); it was not confirmed to be this exact trunk. PHOTO 2026-11-02: Commons File:Yang_Na_Yai_Tree.jpg (Christophe95, CC BY-SA 4.0, 2018-06-12, geotag 45 m from the pin) looked at: whole tree, daylight, spirit house and fence at the foot, photo_light OK; approved as lead. File:Yang_Na_Yai_Tree_3.jpg (same photographer, the shrine at the base) in the strip. Reverse: set photo.status to held.",
+  "story": "On a narrow road through Ban Nok, a village in the south of Ko Pha Ngan, one Yang Na rises as a pale grey column past the power lines and only starts to branch far above the rooftops.\n\nThailand's Ministry of Culture listed it in 2018 as a heritage tree of the land and recorded a girth of 14.64 metres, a height of 53.5 metres and an age of about 400 years. The age is an estimate, so read it as a rough figure. The register adds that the tree won first prize in a 1999 Kasetsart University contest for the largest Yang Na and calls it the biggest in Thailand. That is the register's claim, and we have not found a national survey to check it against.\n\nYang Na is a tall tropical tree of the dipterocarp family, and more of them grow around the village. The register notes that bees nest in this one's crown. Ban Nok treats the tree as sacred, with small spirit houses at its foot, coloured cloth wound round the trunk and a low wooden fence keeping the ground clear.\n\nIt stands beside the public road about 300 metres past Wat Pho, a few kilometres from the Thong Sala pier, and is free to see at any hour. Come in daylight, because the road is narrow. If you go, tell us how it looks now.",
+  "how_to_recognise": "You can recognise it by its pale grey trunk, bare for most of its height, rising from a fenced plot beside the road with small spirit houses and coloured cloth at its foot, about 300 metres past Wat Pho in Ban Nok.",
+  "age_basis": "source",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Yang_Na_Yai_Tree.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Christophe95, via Wikimedia Commons",
+   "attribution_url": "https://commons.wikimedia.org/wiki/User:Christophe95",
+   "status": "approved",
+   "width": 3383,
+   "height": 4728,
+   "taken_month": 6
+  },
+  "photos": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Yang_Na_Yai_Tree_3.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Christophe95, via Wikimedia Commons",
+    "attribution_url": "https://commons.wikimedia.org/wiki/User:Christophe95",
+    "status": "approved",
+    "width": 4032,
+    "height": 3024,
+    "taken_month": 6
+   }
+  ]
+ }
+]

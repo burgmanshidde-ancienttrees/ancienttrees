@@ -1,0 +1,157 @@
+{
+ "leads": [
+  {
+   "register_id": "2018-38",
+   "province": "Krabi",
+   "name": "Rain Tree (Samanea saman), Wat Thammawut Saranaram, Nuea Khlong",
+   "latitude": 8.054211,
+   "longitude": 99.027392,
+   "reason": "Register only (abbot's account, 200+ years, girth 8.12 m, 25 m); no second source, no dated sighting, lifecheck NONE, no OSM or web trace of the temple found in two searches; pin is a register coordinate, no photo.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2017-13",
+   "province": "Krabi",
+   "name": "Tetrameles, Khao Phanom Bencha National Park (register: 100+ years, 15 arm-spans, 30 m)",
+   "latitude": 8.240642,
+   "longitude": 98.913713,
+   "reason": "Register coordinate sits at the park headquarters area (iNaturalist 2025 observation 8.2405,98.9139 is a shrub there, not the tree). thainationalparks.com mentions only 'an impressive big tree with gigantic roots on the trail to Huai Sakhe Falls', which may be this tree but no source says so (not asserted). No exact pin, no photo. Register girth 34 m is buttress or crown spread, not a trunk.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2019-68",
+   "province": "Krabi",
+   "name": "Tam Sao (Fagraea), Muslim cemetery Ban Ramat",
+   "latitude": null,
+   "longitude": null,
+   "reason": "2019 row without coordinates or measurements; not placeable quickly; cemetery access not shown.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2019-67",
+   "province": "Krabi",
+   "name": "Chomphu Nam group, Tha Pom Khlong Song Nam peat swamp",
+   "latitude": null,
+   "longitude": null,
+   "reason": "2019 row without coordinates; a group in a swamp boardwalk site, no single trunk identified.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2017-25",
+   "province": "Phang Nga",
+   "name": "Weeping fig tunnel, Khlong Sang Ne ('Little Amazon'), Takua Pa",
+   "latitude": 8.876397,
+   "longitude": 98.342107,
+   "reason": "Two sources agree it exists and is visited (register 2017; PPTV 2023-08-12 report on the community boat tours; tour listings), alive recently, boat tours by the community, paid. But it is a stretch of figs along a canal seen from a boat, not one place to stand; register says 200 years, PPTV says 'over 100 years'; girth 2 m and height 20 m are the largest fig of the stretch per register. Approximate pin only, no Commons photo within 3 km. Could ship as a boat-tour destination if Hidde wants an ensemble; species Ficus sp. (register says the blunt-leaved weeping fig, likely Ficus microcarpa, unconfirmed).",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2017-61",
+   "province": "Phang Nga",
+   "name": "Cinnamomum group, Wat Nirotrangsi",
+   "latitude": null,
+   "longitude": null,
+   "reason": "Not researched this pass (time); young (80 years), low priority.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2019-76",
+   "province": "Phang Nga",
+   "name": "Kathing/kra-thing tree, Mu Ko Surin National Park",
+   "latitude": null,
+   "longitude": null,
+   "reason": "2019 row, name and park only, no coordinates; the register name reads Calophyllum/'kra thing' unconfirmed; not researched further.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2019-75",
+   "province": "Phang Nga",
+   "name": "Mangrove of Tham Kong Kang, Ko Panak",
+   "latitude": null,
+   "longitude": null,
+   "reason": "2019 row without coordinates; a mangrove stand reached by boat tour, not an individual tree.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2019-78",
+   "province": "Phuket",
+   "name": "Palmyra palm group, Laem Phrom Thep",
+   "latitude": null,
+   "longitude": null,
+   "reason": "2019 row without coordinates, a group of palms at a viewpoint; not researched.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2018-40",
+   "province": "Ranong",
+   "name": "Padauk group, Wat Ratchakrut Lang (register: 5 trees left, 120 years, 7.5 m, 32 m)",
+   "latitude": 9.738049,
+   "longitude": 98.585864,
+   "reason": "Register only (temple's account); no web trace found in one search; lifecheck NONE; the five trees are a group, no single trunk identified, no photo.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2017-62",
+   "province": "Ranong",
+   "name": "Giant Rhizophora apiculata, Ranong Biosphere Reserve (register: 2.10 m, 33 m, largest of the species in Thailand)",
+   "latitude": 9.875474,
+   "longitude": 98.604595,
+   "reason": "Register says the tree stands in the core area of the biosphere reserve under the mangrove research centre (Ngao), which suggests restricted access; a 2 km nature trail is mentioned but no source shows the tree is on it. Register only, no dated sighting, lifecheck NONE.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2019-80",
+   "province": "Ranong",
+   "name": "Cinnamon tree, Raksawarin arboretum",
+   "latitude": null,
+   "longitude": null,
+   "reason": "2019 row without coordinates, species or size; not placeable from sources read.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2018-36",
+   "province": "Trang",
+   "name": "Tetrameles, Ban Khao Phlu forest, Kantang (register: 40 arm-spans including buttresses, 50 m, with a hole through the roots)",
+   "latitude": 7.462215,
+   "longitude": 99.398562,
+   "reason": "Register says a forest tree in the care of Hat Chao Mai National Park; a 2018 Prachachat report (403 to automation, host not fetchable, not read) of a village and forest-officer survey on foot, so remote, access and route unknown. Species named by the register as man chang (Tetrameles). Register-only coordinate, no photo, no recent sighting.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2017-59",
+   "province": "Trang",
+   "name": "Giant buttressed tree on the path up to Nam Tok Nan To, Palian (register: girth 20 m with buttresses, 40 m, species name 'thai-phao' in the register, unmapped)",
+   "latitude": 7.294136,
+   "longitude": 99.880595,
+   "reason": "Register text says it is a 2 to 3 hour hike from the Nan To waterfall trail towards Khao Chet Yot, cared for by the Ton Te forest guard unit, called at risk of extinction. Species not resolved, no second source, no exact pin, no photo.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2019-71",
+   "province": "Trang",
+   "name": "Krabak group (Irvingia?), botanical garden",
+   "latitude": null,
+   "longitude": null,
+   "reason": "2019 row without coordinates; garden and species unresolved.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  },
+  {
+   "register_id": "2018-16",
+   "province": "Satun",
+   "name": "Sonneratia 'Lamphu tunnel', community learning centre",
+   "latitude": null,
+   "longitude": null,
+   "reason": "Row without coordinate (as briefed); a tunnel of trees, not one place to stand.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": "2018-11",
+   "province": "Phuket",
+   "name": "Wild jackfruit (Artocarpus), Kathu (200 years, 10 m, 45 m)",
+   "reason": "Register places it on land in private care; no source shows open public entry (hard rule 10); not shipped.",
+   "source": "Ministry of Culture Rukkha Moradok khong Phaendin (data/registers/thailand-rukkha.json)"
+  }
+ ]
+}

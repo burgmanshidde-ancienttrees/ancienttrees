@@ -14657,6 +14657,30 @@
       "tokens": 141239,
       "trees": 6,
       "note": "6 stories plus 2 place blocks (azores rewritten for 7 trees, Angra new with 2); held for the pace, build with scripts/build_azores_2.py. Dispatcher looked at 3 Commons photos itself: 2 approved (azo_004, agh_002), 1 held (azo_006). About 79k tokens a tree all in, over target: register rows without size or sightings need a lot of fetching."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "thailand-gulf (ko-pha-ngan+surat-thani+songkhla+nakhon-si-thammarat+phatthalung+prachuap-khiri-khan+phetchaburi+chumphon)",
+      "tokens": 140427,
+      "trees": 1,
+      "note": "18 Rukkha register rows: only the Ko Pha Ngan Yang Na verified (pin moved 800 m to two published GPS points). Village trees had no second source or no placeable pin; groups and forests blocked. Overpass 406, Commons busy."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "thailand-andaman (krabi+phang-nga+phuket+ranong+trang+satun)",
+      "tokens": 138377,
+      "trees": 1,
+      "note": "18 Rukkha register rows: only Trang's first rubber tree (Kantang) verified, pin confirmed by an OSM node. Temple trees register-only and their register pins sit on roads (Nominatim reverse); Phuket jackfruit private; mgronline and prachachat 403."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "ko-pha-ngan+kantang",
+      "tokens": 30000,
+      "trees": 2,
+      "note": "Written by the dispatcher itself (estimate), no Opus pass for two trees: 2 stories, 2 place blocks, Commons photo approved for kpn_001. About 154k tokens a tree all in: the southern register rows are scattered village trees with no web presence. Stop here; do not re-run the south without a new angle."
     }
   ]
 }
