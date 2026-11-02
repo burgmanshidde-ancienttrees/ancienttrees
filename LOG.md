@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-02 session: Bali live, Indonesia's first place (5 trees)
+
+- **Live:** /bali with five old figs. The Pura Kehen banyan with the drum tower in its crown (Bangli), the Kayu Putih giant near Marga (hero), the Bali Botanic Garden's eight-trunk fig, Bunut Bolong with the road through its base, and the Gesing banyan near Munduk. All are flagged, ages are local estimates said as such, and there are no photographs, so Google sees nothing until a reader adds one. 3 confirmed pins (published plus codes, OSM tree nodes beside iNaturalist GPS points). Hidde asked for one more try after the first pass's 3; a second pass found 2 through OSM named tree nodes (Nominatim bounded to Bali), the angle that worked where iNaturalist, Commons geosearch and Indonesian news were dry. Cost: 4 passes, 556k tokens, about 110k a tree. Luang Prabang stays at 0 (see below). Next for Bali: photographs; 8 leads in data/leads/bali.json.
+
 ## 2026-11-02 session: a Paris reader's walk, profiles follow Polarsteps, Want to visit decided on the server
 
 - **Live:** a stranger (p_cdc28055a82c5ea92ef49afc, the Châtenay-Malabry cedar in August) saved 13 trees on 10-22 and this morning walked five of them in Paris, collecting each with a photograph. Four went live as lead photographs: the twisted beech of the Arènes de Lutèce (its first), the Cedar of Jussieu, the Buffon plane, the horse chestnut of Square René-Le Gall; Commons leads moved to the strip. The "Turkey oak" photograph is held (chestnut-like leaves, likely a neighbour). Cedar settled by the garden's own guide (cedar and ginkgo side by side below the labyrinth), plane by its plaque and label. The beech story lost two colon sentences now that it is indexed.

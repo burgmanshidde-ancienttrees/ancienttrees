@@ -25,7 +25,8 @@
       "radius_m": 50
     },
     "curation_status": "flagged",
-    "verify_notes": "Pin is the OSM temple way centroid (Nominatim, way 277204886), NOT the trunk; the banyan is in the outer courtyard just past the entrance gate. Age: Wikipedia says 'at least 400 years'; NOW Bali says 'centuries-old'; IDN Times only says very old, no figure. One unsourced site claims 700+ (not used; age_max 700 is a loose ceiling, flag). Wikipedia is the only numeric source and is not independent of the others, so flagged. Remarkable: a bale kulkul (wooden slit-drum pavilion) sits in the tree's crown and a monk's cell high in the branches; no stairs, the priest reached the drum via the roots; local belief that a falling branch foretells disaster (grubug). Tree considered sacred in Bangli. Alive: no dated recent photo or news fetched; the 2026-era IDN Times listicle and NOW Bali still describe it as standing, but that is thin. girth/height not found."
+    "story": "A wooden drum tower sits in the crown of this banyan, and it was built without stairs. The priest who sounded it reached it through the roots. The tower is a bale kulkul, the slit-drum pavilion a Balinese temple beats to call people in, and here a living tree holds it up. Higher still in the branches sits a monk's cell.\n\nThe banyan stands in the outer courtyard of Pura Kehen in Bangli, just past the entrance gate, and the town treats it as sacred. Local belief says a falling branch foretells disaster, which they call grubug, so a broken limb here is read as a warning, not as weather.\n\nHow old it is depends on whom you ask. Wikipedia says at least 400 years; the other accounts we found say only centuries old, and nobody has dated the trunk. Take 400 as the one number on offer, not a measurement. The most recent travel and local news pages still describe it standing, but we have no dated photograph, so if you have been lately, tell us.\n\nOur pin marks the temple rather than the tree. Pura Kehen is about 25 km from Ubud, roughly 45 minutes by car or scooter through Bangli town; there is no bus worth waiting for. Expect a small donation at the gate and a sarong to wear inside.",
+    "how_to_recognise": "You can recognise it by the wooden drum pavilion sitting up in its branches. It stands in the first courtyard of Pura Kehen, just inside the entrance gate."
   },
   {
     "id": "bli_002",
@@ -51,7 +52,8 @@
     "transport": "About 1 hour by car or scooter north-west of Ubud (also reachable on the way to Jatiluwih); no public transport. Not a 30-minute trip: label as a day-trip stop.",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "PIN: decoded from the Google Maps plus code H5VP+9QF (full 6P3QH5VP+9Q, cell about 14 m), printed on lokasibali.com and consistent with OSM's Tua hamlet (-8.4053, 115.1871) about 150 m away. The tree is the single attraction at that address, so I treat the pin as on the tree; an aerial check on the crown would settle it. SPECIES UNRESOLVED: locals say kayu putih (white wood, from the pale trunk) or beringin; the Kemenkeu article says nobody knows the species with certainty; one blog guesses Ficus albipila (not verified, blog); another blog suggests kapok. English 'eucalyptus' titles are not supported. Publish as fig (Ficus sp.) and ask the reader. AGE conflict: Kemenkeu (government customs office article) says more than 500 years; the temple caretakers via budayabali say about 700 years, tied to the village's age and 'older than Pura Babakan, built in the 15th century'. Both are local estimates, no dendrological dating. HEIGHT conflict: Kemenkeu 50 m; budayabali 75 m; the lokasibali and travel blog repeat 70 m local claims. Do not publish a height; 70 to 75 m would be implausible for a fig. SIZE: trunk diameter about 6 m (Kemenkeu and budayabali); girth_cm 1885 is diameter times pi and describes a buttressed, root-flared mass, not a clean trunk. Notable: pale buttress roots forming a sculpted base with a small 'window' through the trunk; bark scraped for traditional medicine (name Babakan = bark; the shrine is named for it); a nearby resident reports hearing gamelan gender from the tree and local lore says a gamelan and weapons were buried beneath it in the kingdom era. Viral since 2013 (Kemenkeu). Alive: a 2026 visitor guide (theworldtravelguy) describes visiting it and says free to visit as of 2026; lokasibali shows 1,148 Google reviews at 4.8."
+    "story": "Nobody can say for certain what kind of tree this is, and its base is about six metres across. Villagers call it kayu putih, white wood, for the pale trunk, or beringin; an article from Indonesia's Ministry of Finance says plainly that the species is not known with certainty. We list it as a fig and would like to be told.\n\nWhat you see is the root system. Pale buttresses flare out and fold into a sculpted base with a small window straight through the trunk. People have long taken its bark for traditional medicine, and the shrine beside it, Pura Babakan, is named for that bark.\n\nThe age is a local estimate either way. The ministry article says more than 500 years. The temple caretakers say about 700, tying it to the age of the village and calling the tree older than Pura Babakan, which they date to the 15th century. Nobody has dated the wood.\n\nLocal lore says a gamelan and weapons were buried beneath it in the days of the kingdom, and a neighbour says he has heard gamelan music coming from the tree. It went viral in 2013.\n\nIt stands behind Pura Babakan in Banjar Bayan, Tua village, about an hour north-west of Ubud by car or scooter, on the way to Jatiluwih. There is no bus. Entry is a donation written in a visitors' book plus a small parking fee, and you need no sarong to walk round the outside.",
+    "how_to_recognise": "You can recognise it by the pale buttress roots flaring into a base about six metres across, with a small window through the trunk. It stands behind Pura Babakan in Banjar Bayan."
   },
   {
     "id": "bli_003",
@@ -76,6 +78,65 @@
     "transport": "About 2 hours by car north-west of Kuta (Bali provincial tourism page), roughly 3 hours from Ubud; a stop on the road to Singaraja. Not a day trip from Ubud cluster; label as a west Bali road-trip stop.",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "PIN decoded from plus code JV7C+7F (full 6P3PJV7C+7F, cell about 14 m), printed on lokasibali.com; it falls at Manggisari/Pekutatan, matching the sources' village. The tree is the single attraction at that address and it straddles the road, so an aerial check would settle it. AGE: the Bali provincial tourism page (lovebali.baliprov.go.id) says locals believe it is centuries old; NOW Bali says hundreds of years; no number anywhere, so age_min/max left empty on purpose. SPECIES: 'bunut' is the local name for a banyan-type Ficus; no scientific name seen on a fetched page. Remarkable: a hole nearly 4 m wide through the base of the tree carries a paved road; per NOW Bali the tree stands on a narrow mountain ridge, the roots were cut for the road after ceremonies asking the resident spirits (said to be two holy tigers) for permission, and prop roots keep the tree alive and widening. Locals call it Gelung Kori Agung (crown of a grand door) per the Jakarta Post 2016. Neighbouring temple Pura Bhujangga Sakti honours the priest Dang Hyang Sidhi Mantra. Conflict on the hole's origin: one account says natural, another says widened by Dutch colonial labour. A search summary gave diameter 15 m and height 20 m, NOT seen on a fetched page, so not recorded. Alive: a dated 2016 Jakarta Post piece plus a current Google-reviews listing; no recent dated photo fetched."
+    "story": "A paved road runs straight through the base of this tree. The hole is nearly four metres wide, and cars drive through a living fig on the road between Pekutatan and Singaraja in west Bali.\n\nLocals call it Bunut Bolong, the hollow bunut, bunut being their name for a banyan-type fig, and also Gelung Kori Agung, the crown of a grand door. The tree stands on a narrow mountain ridge. When the road was cut, the roots were cut with it, but only after ceremonies asking the tree's resident spirits for permission. They are said to be two holy tigers. Prop roots have kept the tree alive since, and it is still widening.\n\nHow the hole got there is disputed. One account says it is natural; another says Dutch colonial labourers widened it. Its age is no clearer. The province's tourism page says locals believe it is centuries old, and nobody gives a number. Nor has anyone put a scientific name to it on a page we could read. If you know either, tell us.\n\nThe tree still keeps its own traffic rules. By local custom, cremation processions, wedding parties and hearses do not pass through the hole, and take the bypass road round it instead. The neighbouring temple, Pura Bhujangga Sakti, honours the priest Dang Hyang Sidhi Mantra.\n\nIt is free and beside a public road, about two hours by car from Kuta and roughly three from Ubud. Treat it as a stop on the drive to Singaraja.",
+    "how_to_recognise": "You can recognise it by the road running through a hole nearly four metres wide in its base. It stands astride the Pekutatan to Singaraja road at Manggisari, with a bypass road curving round it."
+  },
+  {
+    "id": "bli_004",
+    "name": "Giant Ficus Tree, Bali Botanic Garden",
+    "species": "Fig (Ficus sp.)",
+    "age_estimate": "over 100 years",
+    "age_min": 100,
+    "age_max": null,
+    "location": {
+      "address": "Bali Botanic Garden (Kebun Raya Eka Karya Bali), Candikuning, Baturiti, Tabanan, Bali, upper slope of Tapak Hill / Rasamala Forest",
+      "latitude": -8.27246,
+      "longitude": 115.15046,
+      "neighbourhood": "Candikuning, Bedugul, Tabanan"
+    },
+    "verified_sources": [
+      "https://kebunraya.id/r/bali/plant-news/giant-ficus-tree-HlTA",
+      "https://en.wikipedia.org/wiki/Bali_Botanic_Garden",
+      "https://www.amrtimes.com.au/travel/balis-botanical-garden-c-20332708",
+      "https://www.openstreetmap.org/node/4821991026",
+      "https://www.inaturalist.org/observations/64397343",
+      "https://www.inaturalist.org/observations/382209766"
+    ],
+    "official_register": {
+      "name": "Kebun Raya Bali (Bali Botanic Garden, BRIN) plant news: Giant ficus tree",
+      "url": "https://kebunraya.id/r/bali/plant-news/giant-ficus-tree-HlTA"
+    },
+    "access": "Garden entry ticket (sources disagree: roughly IDR 17,000 to 30,000; Wikipedia infobox 8am-6pm daily, last entry 5.30pm; check kebunraya.id/bali). Walk-in, no tour needed; the tree is inside the garden grounds.",
+    "transport": "Bedugul highlands, about 1 hour by car or scooter from Ubud (about 50 km north-west); no public transport worth the name. Day-trip stop, not a 30-minute trip.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "Eight trunks leave the ground here and twist into a single tree. It is the giant fig of the Bali Botanic Garden, one of the most photographed trees in the garden, and it was here before the garden was.\n\nThe garden opened in 1959. Its own page calls the fig more than 100 years old and one of the oldest plants it holds, which puts the tree on this hillside decades before anyone laid out a path to it. How much older is guesswork. A travel writer suggests hundreds of years, and a visitor who logged it in 2013 noted it was believed to be hundreds, but nobody has dated it. The garden's figure is a floor, not a birthday.\n\nThe species is open too. Naturalists' records at this spot name it variously as Ficus virens, Ficus altissima or simply Ficus, so we list it as a fig and would welcome a firm answer.\n\nIt stands high on the upper slope, which the garden calls the Rasamala Forest and other accounts place on Tapak Hill, with views toward Lake Bratan. Visitors have recorded it standing as recently as October 2026.\n\nThe garden sits in the Bedugul highlands, about 50 km north-west of Ubud, roughly an hour by car or scooter; there is no bus worth the name. Entry is a ticket, quoted between about 17,000 and 30,000 rupiah, and the garden keeps daytime hours. Expect an uphill walk once inside.",
+    "how_to_recognise": "You can recognise it by eight trunks twisting together into one tree. It stands high on the garden's upper slope, toward Tapak Hill, with views toward Lake Bratan."
+  },
+  {
+    "id": "bli_005",
+    "name": "Gesing giant banyan (near Munduk)",
+    "species": "Banyan (Ficus sp.)",
+    "age_estimate": "local tradition says over 700 years",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Jalan Pura Puseh, Gesing village, Banjar, Buleleng, Bali (south of Munduk)",
+      "latitude": -8.27843,
+      "longitude": 115.05475,
+      "neighbourhood": "Gesing, Banjar, Buleleng"
+    },
+    "verified_sources": [
+      "https://www.balitouristic.com/?p=8367",
+      "https://tatinta.com/en/diem-den/lang-munduk/2474",
+      "https://www.holidify.com/places/bali/munduk-sightseeing-1254688.html",
+      "https://www.openstreetmap.org/node/10958802627"
+    ],
+    "access": "Reached by a short track from Gesing, signboards from the village; a guide says visitors can walk among the roots; no entry fee or hours found on any fetched page, one review mentions parking touts and unclear parking fees (Holidify, undated). Kept by the local community as a sacred place (Tatinta). Not confirmed as open to all: ask on the page.",
+    "transport": "North Bali highlands; about 5 km or 5 to 15 minutes by car from Munduk (sources differ), about 1.5 hours by car from Ubud (balitouristic); no public transport, trekkers walk it from Munduk in roughly an hour (one guide). Day-trip stop.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "The roots of this banyan form a maze large enough to walk among, and one account says they once hid villagers from the Dutch. It stands outside Gesing, a village in the north Bali highlands south of Munduk, and the community keeps it as a sacred place. A spirit living in it is said to grant wishes.\n\nMost of what is written about it comes from travel pages that repeat one another, so read every fact here as told rather than checked. Tradition puts the tree at over 700 years. Nobody has dated it, and the same figure is told of the Kayu Putih tree near Marga, so it may have travelled between the two. One page concedes it holds no records for size.\n\nWe have no recent dated photograph, and our pin is approximate. Maps show one banyan here and another about 290 metres along the same road, which may be a second tree or the same one marked twice. We found no clear word on entry, fees or hours either, beyond one visitor's complaint about parking touts. If you have stood under it, tell us where it is and what you found there.\n\nA short track leads to it from Gesing, signposted in the village, off Jalan Pura Puseh. Munduk is about 5 km away, 5 to 15 minutes by car depending on the source, and Ubud roughly an hour and a half. There is no bus; trekkers walk it from Munduk in about an hour.",
+    "how_to_recognise": "You can recognise it by the roots, which form arches and passages wide enough to walk among. It stands at the end of a short track from Gesing village, signposted off Jalan Pura Puseh."
   }
 ]

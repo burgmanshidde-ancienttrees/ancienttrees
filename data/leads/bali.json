@@ -1,13 +1,6 @@
 {
   "leads": [
     {
-      "name": "Bali Botanic Garden giant ficus (Hutan Rasamala / Tapak Hill)",
-      "species": "Fig (Ficus sp.)",
-      "lat": null,
-      "lng": null,
-      "reason": "Real and visitable (garden entry about 30k IDR, 8-18h, Bedugul, about 1 hour from Ubud). Official Kebun Raya Bali page https://kebunraya.id/r/bali/plant-news/giant-ficus-tree-HlTA says over 100 years old, 'one of the oldest plants in the garden', Rasamala Forest; a travel blog says 'at the back of the park', half a dozen stumps, possibly hundreds of years (informal). No coordinate in reach (garden centre about -8.278, 115.154 only), no photo, sources disagree on Rasamala Forest versus Tapak Hill: lead, no photo or exact pin in reach. A single trunk-pin from a garden map or a geotagged photo would clear it."
-    },
-    {
       "name": "Ubud Monkey Forest giant banyan",
       "species": "Banyan (Ficus benghalensis)",
       "lat": null,
@@ -22,13 +15,6 @@
       "reason": "Sacred fragrant tree beside the Trunyan cemetery on Lake Batur, said to be about 1,100 years old (one travel site, unverified; the 1,600 years in other sources is the village). Reached by a 15 minute boat from the village; cemetery with exposed remains, a guide advised. Species unresolved (frankincense, banyan, myrrh all claimed). Single weak age source, no pin, sensitive site: lead only, needs a botanical identification and a respectful access check."
     },
     {
-      "name": "Possible Gesing 'giant banyan' (Munduk area, Buleleng)",
-      "species": "Banyan (unconfirmed)",
-      "lat": null,
-      "lng": null,
-      "reason": "Aggregator pages (banbanjara.com, thrillophilia) describe a roughly 700 year old giant banyan at Gesing near Munduk, 85 m tall (implausible). These read as a conflation with the Bayan (banjar) Kayu Putih tree in Tua village, Tabanan (bli_002); treat as a duplicate/confusion until a source with a photo and pin shows a separate tree."
-    },
-    {
       "name": "Waringin Sungsang, Selat (Karangasem)",
       "species": "Banyan",
       "lat": null,
@@ -41,6 +27,34 @@
       "lat": -8.4817,
       "lng": 115.2035,
       "reason": "A wood of tall straight dipterocarps up to about 40 m (Travelfish; NOW Bali says 30 m), some said to be 300 years old by local elders, planted as a Mengwi royal garden around a 17th century temple. Wood, not one collectible spot, and a storm on 3 Dec 2025 brought down more than 30 trees and killed a staff member (press): re-check which individual trunks still stand, whether open, before anything. Coordinates are the general area, not verified. Needs one named veteran with a pin."
+    },
+    {
+      "name": "Kepuh Agung, Ngurah Rai airport (Tuban, Kuta)",
+      "species": "Kepuh (Sterculia foetida)",
+      "lat": null,
+      "lng": null,
+      "reason": "Sacred kepuh about 4 m wide and 20 m high beside the domestic cargo terminal; priest says several hundred years old, Japanese lookout in the war, shrines on the trunk, walled with a small south entrance, people visit daily (Jakarta Post 2016-05-12, only substantive source; TravelingYuk 2019-07-05 only says the tree belonged to Pura Tegal Melakang, which was moved, so unclear whether the tree remains). No coordinate found (Nominatim empty), no dated sighting after 2016, airport expansion since may have changed access. Needs an OSM or photo pin, a recent mention and an access check."
+    },
+    {
+      "name": "Old Giant Tree, Jalan Raya Pelaga (Mungsengan, Petang, Badung)",
+      "species": "unknown",
+      "lat": -8.2645656,
+      "lng": 115.24275,
+      "reason": "Only an OSM natural=tree node named 'Old Giant Tree' tagged tourism=attraction (node 11781902566), nothing else found in English or Indonesian searches. No species, age or alive evidence: lead, needs a source."
+    },
+    {
+      "name": "Sangeh Lanang Wadon tree (Pura Bukit Sari forest)",
+      "species": "disputed (called nutmeg/pala; one source says milkwood pine)",
+      "lat": null,
+      "lng": null,
+      "reason": "Named sacred tree whose trunk has a hole with a second trunk emerging (male-female), by the temples at the forest entrance (visitbali.id undated; other results conflict on species). No age, no pin; Sangeh lost 30+ trees in the storm of 3 Dec 2025, so alive check is needed before anything."
+    },
+    {
+      "name": "Munduk second banyan node (OSM 4345222406)",
+      "species": "Banyan",
+      "lat": -8.2809361,
+      "lng": 115.0554909,
+      "reason": "OSM natural=tree 'Banyan Tree' 290 m from the Gesing giant banyan (bli_005). May be a second tree or the same one; no source. Check with aerial imagery before treating as separate."
     }
   ],
   "blocked": [

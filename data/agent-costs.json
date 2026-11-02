@@ -14405,6 +14405,22 @@
    "tokens": 119328,
    "trees": 0,
    "note": "Hidde's ask (new countries). 0 verified: no body in Laos names trees, the UNESCO inventory lists buildings only. 2 leads (Wat Aham banyans ~70 years, Wat Visoun bodhi 1968), 1 blocked (Tree of Life is a mosaic)."
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "verify",
+   "target": "bali (second pass)",
+   "tokens": 152066,
+   "trees": 2,
+   "note": "Hidde: one more try. OSM named tree nodes via Nominatim were the angle that worked; iNaturalist, Commons geosearch, Wikidata and Indonesian news dry. bli_004 Bali Botanic Garden giant fig (confirmed pin), bli_005 Gesing banyan (approximate, weak sources)."
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "write",
+   "target": "bali",
+   "tokens": 110649,
+   "trees": 5,
+   "note": "5 stories and recognition lines, no best_time. Species names fixed to canonical at merge."
   }
  ]
 }
