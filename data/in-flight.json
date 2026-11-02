@@ -279,6 +279,27 @@
       "by": "session-f427deab",
       "claimed_at": "2026-11-02T19:17:55+00:00",
       "trees_at_claim": 9
+    },
+    {
+      "target": "washington-dc",
+      "kind": "verify",
+      "by": "session-44668465",
+      "claimed_at": "2026-11-02T19:21:43+00:00",
+      "trees_at_claim": 21
+    },
+    {
+      "target": "new-york",
+      "kind": "verify",
+      "by": "session-44668465",
+      "claimed_at": "2026-11-02T19:21:44+00:00",
+      "trees_at_claim": 29
+    },
+    {
+      "target": "leesburg",
+      "kind": "verify",
+      "by": "session-44668465",
+      "claimed_at": "2026-11-02T19:21:55+00:00",
+      "trees_at_claim": null
     }
   ]
 }
