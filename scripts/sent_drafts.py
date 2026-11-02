@@ -179,6 +179,17 @@ def scan(drafts, skip):
         row.setdefault("sent", {})
 
 
+def closed(path):
+    """A draft that will never go, marked by a line 'CLOSED: <why>' in its
+    first ten lines (a .md draft), so it stops counting as waiting."""
+    try:
+        with open(path, encoding="utf-8") as fh:
+            head = [next(fh, "") for _ in range(10)]
+    except OSError:
+        return False
+    return any(l.startswith("CLOSED:") for l in head)
+
+
 def sent_log():
     try:
         doc = json.load(open(SENT, encoding="utf-8"))
@@ -273,6 +284,11 @@ def main():
     for rel, v in drafts.items():
         to, subjects, made = v.get("to", []), v.get("subjects", []), v.get("made", "")
         sent = v.setdefault("sent", {})
+        if closed(os.path.join(ROOT, rel)):
+            # woodland-trust-permission.md kept showing as unsent after the
+            # Trust answered on 2026-10-09; a session then advised sending it.
+            v["status"] = "closed"
+            continue
         # scan() skips drafts past DAYS, whose rows then carry no tags.
         tags = set(v.get("tags") or batch_tags(os.path.join(ROOT, rel)))
         for a, s, d, b in seen:
