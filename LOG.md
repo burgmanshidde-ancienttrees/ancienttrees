@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-02 session: Pamplona rebuilt from the city's own book; mail inbox caught up
+
+- **Pamplona 14 to 25 trees, the city's own first:** Mikel Belasko (co-author of the Ayuntamiento's 2010 book "Árboles viejos y árboles singulares de Pamplona") wrote that our list was not representative, eight river poplars and valley oaks. Eleven trees from that book are live as pam_015 to pam_025: the Arantzadi cedar (spared from becoming toothpicks), the washerwomen's planes at the Curtidores bridge, the Ciudadela willow, the Taconera sequoia and pagoda tree, the Caballo Blanco acacias and more, all flagged and approximate, lifecheck RECENT. Book coordinates are UTM ED50, shifted -110/-207 m (calibrated to 13 m on pam_001). pam_001's story now carries the 1855 transplant and the 1933 lightning. Parser and text: out/tmp/pamplona_book_parse.py, out/tmp/pamplona-book.txt. Not done: his Txantrea book, the Navarra association's list; pam_007 may be the book's centenarian Rochapea poplar.
+- **Pace cap lifted once by Hidde** ("Nu, eenmalig") for these 11, committed 16:29. **The 14 held trees above for 11-03 now go after 16:30 on 11-03**, not 14:10, or preflight counts these 11 against them.
+- **Cammo Ash (edi_003) has its first photographs**, mailed by a Friends of Cammo member this morning.
+- **Mail:** sent Veronika Willhalm (photos online), Jerry Bull, Piero, Michael Roe, Mikel Belasko (Hidde's own words). Held: Pere Vives until his 26 photos are on the pages (Hidde). Every other owed thread closed by Hidde ("als afgehandelt beschouwen"): data/outreach-closed.json, read by outreach_inbox.py.
+
 ## 2026-11-02 session: Thai and Azores registers imported; 3 more Thai trees held
 
 - **Registers in:** data/registers/thailand-rukkha.json (Ministry of Culture Heritage Trees of the Land, 217 entries, 121 placed, CC BY; eight rows' private owners' names stripped, the repo is public) and data/registers/azores-aip.json (58 classified trees, CC BY 4.0, 36 in Horta on Faial: the next place to open, check access per tree since several stand in private gardens). Both in OPEN_DATA_SURVEY.md and register-scouting.json. The map's register layer stays off (REGISTER_LAYER_ON = false, Hidde 2026-08-09); I told him so when he said "do it" to the dots.
