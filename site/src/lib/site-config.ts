@@ -83,7 +83,9 @@ export const APPLE_SIGNIN = true;
 // ID app.ancienttrees.web lists ancienttrees.app as a domain and
 // APPLE_JS_RETURN as a return URL in Hidde's Apple account: before that,
 // Apple's popup shows an error. Off, the button takes the redirect as before.
-export const APPLE_JS = false;
+// ON since 2026-11-02: Hidde saved the domain and return URL, and Apple's
+// authorize endpoint stopped answering "Invalid web redirect url" for it.
+export const APPLE_JS = true;
 export const APPLE_SERVICES_ID = "app.ancienttrees.web";
 export const APPLE_JS_RETURN = "https://ancienttrees.app/";
 
