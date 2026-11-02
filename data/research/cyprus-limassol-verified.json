@@ -1,0 +1,65 @@
+[
+ {
+  "id": "cyl_001",
+  "register_id": "CY-FD-16",
+  "name": "The Oak of Laneia",
+  "species": "Cyprus Oak (Quercus infectoria subsp. veneris)",
+  "age_estimate": "roughly 600 to 800 years",
+  "age_min": 600,
+  "age_max": 800,
+  "girth_cm": 840,
+  "location": {
+   "address": "North of Laneia village, Limassol District, Cyprus",
+   "latitude": 34.826804,
+   "longitude": 32.91124,
+   "neighbourhood": "Laneia"
+  },
+  "verified_sources": [
+   "https://www.inaturalist.org/observations/344757666",
+   "https://allaboutlimassol.com/en/the-centuries-old-oak-tree-of-laneia",
+   "https://www.internationaloaksociety.org/content/cyprus-april-may-2026-vacation-impressions",
+   "https://www.data.gov.cy (Department of Forests list of tree natural monuments, CY-FD-16)"
+  ],
+  "official_register": {
+   "name": "Cyprus Department of Forests, tree natural monuments (CY-FD-16, proclaimed 2004-01-30)",
+   "url": "https://www.data.gov.cy"
+  },
+  "access": "Not stated by any source. Tourism guide says a protected tree in a quiet spot north of the village among wild vegetation; an iNaturalist observer reached and photographed it on 2026-03-23. Landownership unknown (register 'ground: unknown'); confirm roadside or path access before sending visitors.",
+  "transport": "By car about 24 km north-west of Limassol into the wine villages; no public bus found.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Alive: iNaturalist research-grade observation 344757666 (2026-03-23, Aleppo Oak, GPS accuracy 3 m, place Laneia; photos CC BY-NC so NOT usable by us, open iNat photo not a licence we may take). Observer description: girth at breast height 8.4 m. The pin 34.826804,32.911240 matches the official All About Limassol guide 'View on Map' pin (34.826678,32.911031), about 25 m apart: two independent sources, so confirmed. Sources: (1) guide (article dated 2023-05-24): protected oak over 800 years, in a quiet spot north of the village, trunk 8.4 m, height 26 m, big hollow on the east side, 'sibling' of the legendary Royal Oak that fell (lt. 1997 per some sources) whose remaining part is also pictured; (2) International Oak Society trip report 2026: lists the Lania oak among three famous large Cyprus oaks, trunk diameter 270 cm (270 x pi = 8.5 m, agrees with 8.4 m girth); author did not visit it himself. CONFLICT: Department of Forests register CY-FD-16 gives girth 6.10 m, height 7 m, age about 608 (carried to about 2012) and species only 'oak': this likely records a different measurement or perhaps the Royal Oak remnant; girth_cm uses 840 (two independent sources), register 610 noted. height_m omitted (26 m guide vs 7 m register). Age: register ~600 plus years since, guide 800+; stated broad. Royal Oak legend: Henry of France rested under it. Flag: access unverified."
+ },
+ {
+  "id": "cyl_002",
+  "register_id": "CY-FD-14",
+  "name": "The Terebinth of Apesia (Tremithia of Agios Georgios)",
+  "species": "Atlas Pistachio (Pistacia atlantica)",
+  "age_estimate": "about 1,500 years",
+  "age_min": 1000,
+  "age_max": 1600,
+  "girth_cm": 680,
+  "height_m": 10,
+  "location": {
+   "address": "Apesia village, Limassol District, Cyprus",
+   "latitude": 34.789,
+   "longitude": 32.9787,
+   "neighbourhood": "Apesia"
+  },
+  "verified_sources": [
+   "https://www.cypruspost.post/en/centennial-trees",
+   "https://allaboutlimassol.com/en/perennial-trees-in-limassol-majestic-giants-of-over-1000-years-of-age",
+   "https://www.cyprusalive.com/en/village/limassol-apesia",
+   "https://www.cyprus-faq.com/en/south/goroda/zhivaya-dostoprimechatelnost-samoe-staroe-derevo-na-kipre"
+  ],
+  "official_register": {
+   "name": "Cyprus Department of Forests, tree natural monuments (CY-FD-14, proclaimed 2004-01-30)",
+   "url": "https://www.data.gov.cy"
+  },
+  "access": "Free to view per cyprus-faq.com. All About Limassol (2018): the first thing one sees on entering the village. Cyprus Alive says the tree is in the courtyard of the old elementary school (built 1911); sources disagree on exact spot, so say honestly that it is in the village and ask the reader for the exact spot.",
+  "transport": "By car from Limassol on the B8 toward Troodos, then the F812 near the Church of Saint Irene to Apesia, about 480 m altitude; no public transport found.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register CY-FD-14: girth 6.80 m, height 10 m, age 1,508 (carried to about 2012, so 'about 1,500'), proclaimed 2004. Cyprus Post stamp page independently gives Pistacia atlantica, girth 6.80 m, height 10 m, about 1,500 years, protected 2004 (it probably reuses Forestry data, so counts weakly as independent). All About Limassol guide: Mt Atlas mastic tree, 10 m, dedicated to St George per locals, considered one of the oldest Pistacia atlantica in the world, photo by Agni Tsouloupa. Cyprus Alive: village of the old Pistacia atlantica (Tremithia); tree in the courtyard of the old school built 1911, over 1,500 years. Locals call it Tremithos of Ai Yorkos. Cyprus Mail archive says an Anglisides (Larnaca) olive is the oldest living native tree; the terebinth is not native, so claims differ. Age is an estimate: one botanical source (wildflowers.co.il) says no Pistacia atlantica has been dated beyond about 600 years and trunk size inflates guesses, so age_min/max kept broad (1000 to 1600) and the writer must say 'estimated'. Alive: no dated observation found within the last few years; cyprus-faq.com page updated about 5 months ago treats it as standing; lifecheck NONE at the village centre. Pin is the OSM village node, NOT the tree. No Commons file found. Flag: register-only plus tourism sources, spot approximate, no recent dated photo seen."
+ }
+]

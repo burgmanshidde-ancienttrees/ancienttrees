@@ -1,0 +1,132 @@
+{
+ "leads": [
+  {
+   "name": "Polis Chrysochous terebinth",
+   "register_id": "CY-FD-23",
+   "species": "Atlas Pistachio (Pistacia atlantica)",
+   "girth_cm": 860,
+   "height_m": 8,
+   "age": "register 1108 yrs (about 1,100); CVAR blog 1,100; Tala blog 1,500",
+   "reason": "no exact spot: no source places it in Polis; only an anecdotal forum comment (PaphosLife, Cloudflare blocked) says it grows through the roof of a business, which would be private. Needs a pin and an access fact.",
+   "latitude": null,
+   "longitude": null,
+   "sources": [
+    "https://cvar.severis.org/en/explore/our-blog/did-you-know/did-you-know-old-trees-in-cyprus",
+    "https://talanews.blogspot.com/2022/01/the-ancient-trees-of-cyprus.html",
+    "https://kykpee.org/en/?p=19546"
+   ]
+  },
+  {
+   "name": "Foiti (Fyti) oak",
+   "register_id": "CY-FD-31",
+   "species": "Oak (Quercus infectoria subsp. veneris per IOS)",
+   "girth_cm": 960,
+   "height_m": 20,
+   "age": "register 808 yrs; CVAR blog 'about 800 each' for two giant oaks, one at Fyti",
+   "reason": "no exact spot or access: village guide says an old oak stands on the road out of Fyti towards Lasa in a narrow stretch called Agrikou (where women washed clothes); IOS 2026 trip report (photo credit only, author may not have visited) calls the Fyti oak hollow, in decline, branches broken or lopped, trunk 280 cm diameter. No pin, condition doubtful.",
+   "latitude": null,
+   "longitude": null,
+   "sources": [
+    "https://www.cyprusisland.net/cyprus-villages/paphos/fyti-village?page=1",
+    "https://www.internationaloaksociety.org/content/cyprus-april-may-2026-vacation-impressions",
+    "https://cvar.severis.org/en/explore/our-blog/did-you-know/did-you-know-old-trees-in-cyprus"
+   ]
+  },
+  {
+   "name": "Cypress of Kathikas",
+   "register_id": null,
+   "species": "Mediterranean Cypress (Cupressus sempervirens)",
+   "girth_cm": 435,
+   "height_m": 14,
+   "age": "about 700 yrs, Cyprus Post centennial-trees stamp text (protected 2017)",
+   "reason": "one source only (stamp text, copied by a 2021 blog); no place in the village, no alive evidence, no access fact. Blog map link gives 34.9137456, 32.4184108 which is village level.",
+   "latitude": 34.9137,
+   "longitude": 32.4184,
+   "sources": [
+    "https://apsida.cut.ac.cy/items/show/46006",
+    "https://photography-cyprus.blogspot.com/2021/04/cypress-tree-of-kathikas.html"
+   ]
+  },
+  {
+   "name": "Simou second terebinth",
+   "register_id": "CY-FD-73",
+   "species": "Atlas Pistachio (Pistacia atlantica)",
+   "girth_cm": 454,
+   "height_m": 16,
+   "age": "register 500 yrs",
+   "reason": "which of the two Simou register trees stands in the square is not established; this one may be elsewhere in the village. No source found.",
+   "latitude": 34.9414,
+   "longitude": 32.5047,
+   "sources": []
+  },
+  {
+   "name": "Geroskipou terebinth",
+   "register_id": "CY-FD-68",
+   "species": "Atlas Pistachio (Pistacia atlantica)",
+   "girth_cm": 360,
+   "height_m": 10,
+   "age": "register 350 yrs",
+   "reason": "register only, no source places or describes it; search found nothing.",
+   "latitude": null,
+   "longitude": null,
+   "sources": []
+  },
+  {
+   "name": "Kritou Marottou terebinth",
+   "register_id": "CY-FD-22",
+   "species": "Atlas Pistachio (Pistacia atlantica)",
+   "girth_cm": 429,
+   "height_m": 10,
+   "age": "register 510 yrs",
+   "reason": "register only; the PaphosLife Kritou Marottou page (2023) does not mention it; no spot.",
+   "latitude": null,
+   "longitude": null,
+   "sources": []
+  },
+  {
+   "name": "Filousa Chrysochous olive",
+   "register_id": "CY-FD-79",
+   "species": "Olive (Olea europaea)",
+   "girth_cm": 732,
+   "height_m": 7,
+   "age": "register 600 yrs",
+   "reason": "register only; searches found nothing on it; no spot.",
+   "latitude": null,
+   "longitude": null,
+   "sources": []
+  },
+  {
+   "name": "Choulou oak",
+   "register_id": "CY-FD-07",
+   "species": "Oak (Quercus sp.)",
+   "girth_cm": 500,
+   "height_m": 18,
+   "age": "register 413 yrs",
+   "reason": "not searched past the register (time); no spot.",
+   "latitude": null,
+   "longitude": null,
+   "sources": []
+  },
+  {
+   "name": "Tala, Steni, Kelokedara register trees",
+   "register_id": "CY-FD-74/76/77, 27/28/29, 70/71/72",
+   "species": "various",
+   "reason": "not reached in this pass. Note: the Forestry flyer (via search snippet only) lists a Sweet Gum at Tala, not a terebinth.",
+   "latitude": null,
+   "longitude": null,
+   "sources": []
+  },
+  {
+   "name": "Polis-area old trees at Emba and Kiti churches (terebinths, Panagia Angeloktisti Kiti)",
+   "register_id": null,
+   "species": "Pistacia atlantica",
+   "reason": "Kiti is Larnaca district, not Paphos; the Emba terebinth only appears in a list on a blog; no spot.",
+   "latitude": null,
+   "longitude": null,
+   "sources": [
+    "https://talanews.blogspot.com/2022/01/the-ancient-trees-of-cyprus.html"
+   ]
+  }
+ ],
+ "blocked": []
+}

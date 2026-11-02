@@ -1,0 +1,95 @@
+[
+ {
+  "id": "tro_001",
+  "name": "Lagoudera Oak at Panagia tou Araka",
+  "species": "Valonia Oak (Quercus infectoria subsp. veneris)",
+  "age_estimate": "roughly 700 to 800 years",
+  "age_min": 600,
+  "age_max": 800,
+  "age_basis": "source",
+  "girth_cm": 455,
+  "height_m": 16,
+  "location": {
+   "address": "Panagia tou Araka church yard, Lagoudera, Nicosia District (Pitsilia)",
+   "latitude": 34.9656,
+   "longitude": 33.0069,
+   "neighbourhood": "Lagoudera"
+  },
+  "verified_sources": [
+   "https://www.visitcyprus.com/?p=468334",
+   "https://www.ix-andromeda.com/en/panagia-tou-araka-lagoudera.html",
+   "https://www.moa.gov.cy/moa/fd/fd.nsf/0/4dca0bbdff72749fc225812900264f88/$FILE/Nature%20Trail%20Stavros%20tou%20Agiasmati%20-Panagia%20tou%20Araka%20Four%20fold%20flyer.pdf",
+   "https://data.gov.cy/el/dataset/memonomena-dentra-mnimeia-tis-fysis-ektos-ton-kratikon-dason"
+  ],
+  "official_register": {
+   "name": "Department of Forests, Republic of Cyprus: tree natural monuments outside the state forests, CY-FD-48 (Lagoudera)",
+   "url": "https://data.gov.cy/el/dataset/memonomena-dentra-mnimeia-tis-fysis-ektos-ton-kratikon-dason"
+  },
+  "access": "Stands in or at the entrance of the Panagia tou Araka church yard (UNESCO-listed Byzantine church); the Department of Forests' own trail leaflet has walkers meet it on entering the church yard at the end of the Panagia tou Araka to Stavros tou Agiasmati nature trail. Free to see from the yard; church opening hours not verified (a Lonely Planet listing says 9h-18h, may be out of date). Dress code inside the church: shoulders and knees covered (Komoot tip 2023).",
+  "transport": "No public transport found for Lagoudera village; reached by car from Nicosia (drive time not checked) or on foot from the trail head at Stavros tou Agiasmati.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Panagia tou Araka church yard, Lagoudera",
+   "radius_m": 50
+  },
+  "curation_status": "flagged",
+  "verify_notes": "Register CY-FD-48 (Lagoudera, Δρυς): girth 455 cm, height 16 m, age 700 (round estimate carried to ~2012; declared registers rows are village-only, no coordinate). Species per the Department of Forests' trail leaflet (Stavros tou Agiasmati - Panagia tou Araka, four-fold flyer, moa.gov.cy): 'a century-old oak (Quercus infectoria subsp. veneris), aged about 800 years... declared a nature monument... under the management and care of the Forestry Department'. Register species is only 'Δρυς' (oak), the leaflet settles it as the Valonia/Vallonea oak. Age sources disagree mildly: register 700 and visitcyprus trail page 'At the entrance of the Panagia tou Araka church you will find a 700 year old oak tree'; the Forests leaflet and ix-andromeda 'dated in the time of the construction of the Monastery, 800 years ago' (monastery founded 1192 per Komoot tip, which is not tree evidence). Quote broad: 700 to 800 years. POSITION CONFLICT: visitcyprus and the leaflet say at the entrance/in the church yard; ix-andromeda says 'a hundred metres south' of the monastery. Hence site-level, approximate; church coordinate 34.9654,33.0070 (Komoot highlight map centre) / 34.9656,33.0068 (visitcyprus trail GPS start at the church). ALIVE: thin. lifecheck at the church returns RECENT (2025-10-18) but only for the church; no dated photo of the oak itself found; a University of Edinburgh collection holds a 1992 photograph of the tree (geos.ed.ac.uk ifa_item1 item=46782, not fetched). Leaflet printed 2012 (P.I.O. 47/2012). Flagged: needs a dated recent photo; Department of Forests inspects its monument trees yearly. Witnessed: the Byzantine painted church (UNESCO 1985, frescoes 1192). No Commons photo of the trunk found."
+ },
+ {
+  "id": "tro_002",
+  "name": "Giant Black Pine of Troodos",
+  "species": "Black Pine (Pinus nigra subsp. pallasiana)",
+  "age_estimate": "roughly 500 years",
+  "age_min": 400,
+  "age_max": 600,
+  "age_basis": "source",
+  "location": {
+   "address": "On the Artemis nature trail, Troodos National Forest Park, below Mount Olympus (Chionistra), Limassol District",
+   "latitude": 34.9289,
+   "longitude": 32.8711,
+   "neighbourhood": "Troodos"
+  },
+  "verified_sources": [
+   "https://www.visitcyprus.com/?p=471258",
+   "https://commons.wikimedia.org/wiki/File:Giant_Black_Pine_(Pinus_nigra),_Troodos,_Cyprus_04.jpg",
+   "https://www.komoot.com/tour/863602446",
+   "https://www.moa.gov.cy/moa/fd/fd.nsf/F8684AD2DDA64365C22581290029A4E8/$file/Trees%20Nature%20Monuments%20of%20Cyprus%20-%20Four%20fold%20flyer.pdf"
+  ],
+  "access": "Free. Forest trail inside the Troodos National Forest Park (state forest), open to walkers: the Artemis circular trail, about 7 km, easy, well signposted; trail start about 300 m from the junction of the Chionistra road and the Troodos-Prodromos road. The pine stands near the start of the loop (Komoot highlight 388 m from the start; Commons point roughly 430 m from the official trail GPS start 34.933166, 32.871986).",
+  "transport": "No public transport verified; reached by car to the Artemis trail start (about 300 m from the Chionistra/Prodromos road junction near Troodos), then on foot along the loop.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Not in the CY-FD outside-forest register (it is inside the state forest), so NO register_id. Sources, all seen on fetched pages: (1) visitcyprus.com Artemis trail page (Cyprus Tourism Organisation listing of the Department of Forests' nature trails): 'two perennial black pine trees (Pinus nigra subsp. pallasiana) that are around 500 years old'; it does not say which two or give girth or position. (2) Department of Forests flyer 'Trees Nature Monuments of Cyprus' (2012): Troodos black pines above 1,600 m are 'aged between 500 - 1000 years', dozens survive; general, not this tree. (3) Komoot (user tips, 2022 tour): highlight 'Ancient Black Pine, Troodos National Forest Park' at waypoint 1, 388 m from start: 'Very imposing pine with a huge trunk - compared to the other pine trees nearby'; another waypoint tip (6.03 km of 7.16 km loop) 'unbelievable 500 years old' (user content, not a source). (4) Commons photographs by Fry72 (CC BY-SA 4.0), taken 2023-03-08 with a geotag of 34.928899, 32.871073 (File 04), category 'Giant Black Pine, Troodos', 'Famous trees in Cyprus'; the brief's point 34.929439, 32.871075 lies about 60 m from that geotag. Identification of the Commons 'Giant Black Pine' with the leaflet's/trail page's 'two 500-year-old pines' is NOT proven by any source; cyprusalive.com claims black pines of 'more than 500' and 'oldest 1000' on the trail (tourism site, ignore). Age therefore stated as the trail listing states it (about 500), broad. No girth or height found anywhere; none recorded. ALIVE: photographed 2023-03-08 (Commons) and in a Medic Tree Mapping 2025 category; Komoot 2022. Pin approximate because two geotags 60 m apart and the photographer's position is not the trunk; a hiker with GPS at the tree would make it confirmed. PHOTO: open licence Commons files of this trunk exist: File:Giant Black Pine (Pinus nigra), Troodos, Cyprus 01.jpg to 05.jpg and File:Balanced stones, road to Giant Black Pine, Troodos, Cyprus.jpg (all Fry72, CC BY-SA 4.0); suggest 04 (2023) as lead candidate, not looked at here."
+ },
+ {
+  "id": "tro_003",
+  "name": "Pano Platres Oak",
+  "species": "Valonia Oak (Quercus infectoria subsp. veneris)",
+  "age_estimate": "over two centuries",
+  "age_min": 200,
+  "age_max": 400,
+  "age_basis": "source",
+  "girth_cm": 505,
+  "height_m": 25,
+  "location": {
+   "address": "Dirt road off the B8 about 1.5 km east of Platres, Pano Platres, Limassol District",
+   "latitude": 34.88645,
+   "longitude": 32.86254,
+   "neighbourhood": "Pano Platres"
+  },
+  "verified_sources": [
+   "https://www.internationaloaksociety.org/content/cyprus-april-may-2026-vacation-impressions",
+   "https://evendo.com/locations/cyprus/troodos-mountains/landmark/200-years-old-oak-tree",
+   "https://data.gov.cy/el/dataset/memonomena-dentra-mnimeia-tis-fysis-ektos-ton-kratikon-dason"
+  ],
+  "official_register": {
+   "name": "Department of Forests, Republic of Cyprus: tree natural monuments outside the state forests, CY-FD-19 (Pano Platres)",
+   "url": "https://data.gov.cy/el/dataset/memonomena-dentra-mnimeia-tis-fysis-ektos-ton-kratikon-dason"
+  },
+  "access": "Stands at the end of a lane on the edge of a plot; an Evendo landmark listing says a small dirt road on the left about 1.5 km east of Platres on the B8 leads directly to the tree, limited parking. Whether the lane and the ground are open to visitors is not stated by any official source: private ground not ruled out. Check on arrival.",
+  "transport": "No public transport verified; about 1.5 km by road from Platres village centre (walkable along the B8, not timed).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register CY-FD-19 (Pano Platres, Δρυς): girth_cm 140, height 20 m, age 208 (round estimate carried to ~2012). The register's 140 cm looks like a DIAMETER mislabelled as girth: the International Oak Society report (trip late April to early May 2026, tree visited early in the trip, exact date not given) measures diameter 160 cm, circumference 505 cm, canopy spread 30 m, estimated height over 25 m, species Quercus infectoria subsp. veneris, nicknamed 'Cyprus 505', 'a perfectly vital oak, showing no signs of breakage or any form of decline'. girth_cm 505 and height 25 taken from that report (one observer's tape/estimate, not a register); the register's own 140 and 20 conflict. IDENTITY: IOS says only 'Pano Platres', end of a lane beside a property boundary; Evendo ('200 years old Oak tree', plus code VVP7+H2F, lat 34.8864494 lon 32.8625445) puts a 200-year oak by a dirt road 1.5 km east of Platres. Same village, same one register oak, same lane description: very probably one tree, but no source ties them explicitly and the register has no coordinate. Hotel/Trip.com pages claim '700 years old Oak tree' near Platres (unverified, not used). AGE: register 200-ish is a round official figure; a 505 cm girth Valonia oak could be older; do not sharpen, quote 'over two centuries'. ALIVE: April/May 2026 (IOS). Pin: Evendo's coordinate, approximate (listing coordinate, not a GPS at the trunk). No Commons photo checked."
+ }
+]

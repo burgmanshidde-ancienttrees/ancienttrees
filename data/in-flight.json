@@ -120,41 +120,6 @@
       "trees_at_claim": null
     },
     {
-      "target": "Paphos",
-      "kind": "verify",
-      "by": "session-f6c0e796",
-      "claimed_at": "2026-11-02T18:55:37+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "Limassol",
-      "kind": "verify",
-      "by": "session-f6c0e796",
-      "claimed_at": "2026-11-02T18:55:46+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "Larnaca",
-      "kind": "verify",
-      "by": "session-f6c0e796",
-      "claimed_at": "2026-11-02T18:55:50+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "Nicosia",
-      "kind": "verify",
-      "by": "session-f6c0e796",
-      "claimed_at": "2026-11-02T18:55:57+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "Troodos",
-      "kind": "verify",
-      "by": "session-f6c0e796",
-      "claimed_at": "2026-11-02T18:56:01+00:00",
-      "trees_at_claim": null
-    },
-    {
       "target": "tenerife",
       "kind": "verify",
       "by": "session-ead8b787",
@@ -195,20 +160,6 @@
       "by": "session-45e8e69f",
       "claimed_at": "2026-11-02T19:07:17+00:00",
       "trees_at_claim": null
-    },
-    {
-      "target": "granada",
-      "kind": "verify",
-      "by": "session-f427deab",
-      "claimed_at": "2026-11-02T19:08:10+00:00",
-      "trees_at_claim": 9
-    },
-    {
-      "target": "cordoba",
-      "kind": "verify",
-      "by": "session-f427deab",
-      "claimed_at": "2026-11-02T19:08:11+00:00",
-      "trees_at_claim": 16
     },
     {
       "target": "grazalema",
@@ -342,6 +293,20 @@
       "by": "session-a3d7971d",
       "claimed_at": "2026-11-02T19:15:20+00:00",
       "trees_at_claim": null
+    },
+    {
+      "target": "ronda",
+      "kind": "verify",
+      "by": "session-f427deab",
+      "claimed_at": "2026-11-02T19:17:55+00:00",
+      "trees_at_claim": 6
+    },
+    {
+      "target": "malaga",
+      "kind": "verify",
+      "by": "session-f427deab",
+      "claimed_at": "2026-11-02T19:17:55+00:00",
+      "trees_at_claim": 9
     }
   ]
 }

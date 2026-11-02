@@ -1,0 +1,92 @@
+{
+ "leads": [
+  {
+   "register_id": "CY-FD-02",
+   "name": "Nisou cypress (Cypress of the Franks)",
+   "species": "Mediterranean Cypress (Cupressus sempervirens)",
+   "village": "Nisou",
+   "girth_cm": 465,
+   "height_m": 28,
+   "coordinate": null,
+   "reason": "no photo or exact pin in reach: register has village only, cyprusisland.net says 'north of the old Limassol-Nicosia road' with no coordinates; page calls it in very good condition, undated; second source repeats register figures (~500 yr, 28 m, 4.5 m) so not independent",
+   "sources": [
+    "https://cyprusisland.net/attractions/perennial-trees-nissou",
+    "data/registers/cyprus-forests.json"
+   ]
+  },
+  {
+   "register_id": "CY-FD-01",
+   "name": "Nisou plane",
+   "species": "Oriental Plane (Platanus orientalis)",
+   "village": "Nisou",
+   "girth_cm": 465,
+   "height_m": 12,
+   "coordinate": null,
+   "reason": "no exact pin; cyprusisland.net says hollow, lightning-struck twice, poor condition, position 'ask locals'; vitality undated",
+   "sources": [
+    "https://cyprusisland.net/attractions/perennial-trees-nissou",
+    "data/registers/cyprus-forests.json"
+   ]
+  },
+  {
+   "register_id": "CY-FD-10",
+   "name": "Oak of Piphani, Kampos tis Tsakistras",
+   "species": "Oak (Quercus alnifolia/Cypriot oak per guide; register says Quercus sp.)",
+   "village": "Kampos",
+   "girth_cm": 480,
+   "height_m": 22,
+   "coordinate": null,
+   "reason": "no photo or exact pin in reach: guide (April 2026, cyprustravellerguide.com) says it stands on the main road into the village, no GPS; alive implied but health not described; guide figures equal the register's so not independent. Village coordinate not confirmed (Tsakistra wiki coords are a different village). Best of the batch: one search for a Commons/OSM node would settle it; this is a Troodos-foothill village, belongs to the other Cyprus pass",
+   "sources": [
+    "https://cyprustravellerguide.com/the-giant-oak-tree-of-kampos-tis-tsakkistras/",
+    "data/registers/cyprus-forests.json"
+   ]
+  },
+  {
+   "register_id": "CY-FD-12",
+   "name": "Politiko (Filani) pine",
+   "village": "Politiko (Filani)",
+   "girth_cm": 365,
+   "height_m": 20,
+   "coordinate": null,
+   "reason": "no photo or exact pin in reach; Forest Dept flyer lists Stone Pine at Filani (1 tree) but nothing else found; flyer is an image PDF, unreadable by fetch"
+  },
+  {
+   "register_id": "CY-FD-04",
+   "name": "Psimolofou casuarina",
+   "village": "Psimolofou",
+   "girth_cm": 325,
+   "height_m": 24,
+   "coordinate": null,
+   "reason": "not researched beyond register: no second source, no pin; casuarina age 133 is a planting-era figure, low interest"
+  },
+  {
+   "register_id": "CY-FD-33",
+   "name": "Agia Eirini cypress",
+   "village": "Agia Eirini",
+   "girth_cm": 310,
+   "height_m": 12,
+   "coordinate": null,
+   "reason": "not researched (time-box); register only"
+  },
+  {
+   "register_id": "CY-FD-03",
+   "name": "Fterikoudi oak",
+   "village": "Fterikoudi",
+   "girth_cm": 300,
+   "height_m": 16,
+   "coordinate": null,
+   "reason": "not researched (time-box); register only"
+  },
+  {
+   "register_id": "CY-FD-11",
+   "name": "Kato Pyrgos oak",
+   "village": "Kato Pyrgos",
+   "girth_cm": 400,
+   "height_m": 20,
+   "coordinate": null,
+   "reason": "not researched: remote Tillyria, and the north-side enclave risk needs checking"
+  }
+ ],
+ "blocked": []
+}

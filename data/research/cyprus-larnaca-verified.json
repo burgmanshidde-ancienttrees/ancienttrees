@@ -1,0 +1,70 @@
+[
+  {
+    "id": "lar_001",
+    "name": "The Ayia Napa Monastery sycamore fig",
+    "species": "Sycamore Fig (Ficus sycomorus)",
+    "age_estimate": "roughly 600 years",
+    "age_min": 500,
+    "age_max": 700,
+    "age_basis": "source",
+    "girth_cm": 705,
+    "height_m": 26,
+    "location": {"address": "Outside the south gate of Ayia Napa Monastery, Archbishop Makarios III Square, Ayia Napa 5330", "latitude": 34.988785, "longitude": 33.999384, "neighbourhood": "Ayia Napa old centre"},
+    "verified_sources": [
+      "https://dom.com.cy/en/live/lifehacks/the-legendary-monastery-of-ayia-napa",
+      "https://apsida.cut.ac.cy/items/show/13169",
+      "https://www.cyprus-faq.com/en/south/organizations/entertainment/landmarks/the-oldest-tree-of-ayia-napa",
+      "https://commons.wikimedia.org/wiki/File:356Zypern_Platane_Ayia_Napa_Kloster_(14191488083).jpg"
+    ],
+    "official_register": {"name": "Cyprus Department of Forests, tree natural monuments (data.gov.cy, CC BY 4.0), CY-FD-32", "url": "https://data.gov.cy"},
+    "access": "Stands in the open forecourt in front of the monastery's south gate; the monastery (now a museum) has free admission, winter hours about 09:30 to 15:00, summer 09:30 to 21:00 per dom.com.cy. A cyprus-faq listing says 24/7 for the tree itself.",
+    "transport": "In the centre of Ayia Napa beside the main square; bus stops 'Agia Napa Monastery 1 and 2' on Archiepiskopou Makariou III are about 100 m away.",
+    "location_precision": "approximate",
+    "location_site": {"name": "Ayia Napa Monastery south gate forecourt", "radius_m": 50},
+    "curation_status": "flagged",
+    "verify_notes": "Register CY-FD-32: Sycamore Fig (Ficus sycomorus, Greek Συκομουριά/Τουμπεζιά), Ayia Napa, girth 7.05 m, height 26 m, age 608 (register age carried to about 2012, so roughly 620 now), proclaimed 2004-01-30. Register has no coordinate; identification as the monastery fig is INFERRED from species, village and age (600 years in every visitor source) - flagged. Girth/height are register figures only. Sources agree: over 600 years old, 'in front of the southern gates' of the monastery (dom.com.cy, article 2023-08-04, page updated 2026); apsida.cut.ac.cy: 'believed to be over 600 years old', 'just outside the entrance'; visitfamagusta (2025) calls it believed to be the oldest tree in Cyprus (a claim, not verified, contradicted elsewhere). Legend: planted by a Venetian noblewoman from Famagusta who took refuge in the cave and founded the monastery (a Russian guide says an abbess). Russian guide: 3 to 4 people to encircle trunk (visitor estimate). Alive: 2023 and 2025 visitor/tourism pages and a Nov 2025 visitor review of the monastery describe it present; no tree-specific dated photo seen. Pin: Commons file coordinate 34.988785,33.999384 (Flickr geotag by R. Stehn, scan of a 1983 photo, captioned '600 Jahre alte Platane vor dem Suedtor') lies just south of the OSM monastery relation bbox (34.98897 to 34.98951, 33.99913 to 33.99985), consistent with the south gate; photographer-placed, so approximate. Open-licence photo of the actual tree: File:356Zypern Platane Ayia Napa Kloster (14191488083).jpg, CC BY-SA 2.0, Ruediger Stehn (1983 scan; old, check it is still how it looks). OTHER REGISTER FIGS: CY-FD-44 (girth 341 cm, 18 m, 256 yrs, proclaimed 2006) and CY-FD-45 (452 cm, 18 m, 356 yrs, 2006) are two more sycamore figs in Ayia Napa, proclaimed in a later batch; no source found says where they stand, so NOT folded into this entry. They could be younger figs near the monastery but that is unverified. Check current museum opening before a visit."
+  },
+  {
+    "id": "lar_002",
+    "name": "The lone juniper of Cape Greco",
+    "species": "Phoenician Juniper (Juniperus phoenicea)",
+    "age_estimate": "not documented",
+    "age_basis": "derived",
+    "location": {"address": "Cape Greco National Forest Park, open field near the Sea Caves, Ayia Napa 5340", "latitude": 34.972744, "longitude": 34.058717, "neighbourhood": "Cape Greco"},
+    "verified_sources": [
+      "https://www.komoot.com/highlight/5183234",
+      "https://www.plizio.com/en/cyprus/cy-002/city-cape-greco/",
+      "https://tripaligner.com/countries/cyprus-30/destinations/gazimagusa-4542/places/juniper-tree-10161772",
+      "https://commercial.cy/article/cape-greko-where-cyprus-meets-the-sea"
+    ],
+    "access": "Free; open field inside Cape Greco National Forest Park, a few minutes' walk from the Sea Caves; a bench stands by the tree.",
+    "transport": "Bus stop reported nearby (komoot tip); by car about 10 minutes from Ayia Napa or Protaras to the park, then a short walk.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "No register entry; no measurement; no age source (komoot title says 'Ancient', page gives no age; do not state an age). Described as a solitary old tree in the middle of an open field (commercial.cy, article dated 2026-08-18, a favourite wedding-photo spot), 'one of the biggest and most frequently photographed trees in Cyprus' (tripaligner, promotional, unverified superlative), 'Tree of Cape Greco, Tree of Life' (plizio, updated Oct 2026), windswept lone juniper. Species Juniperus phoenicea comes from the komoot highlight title only (user-edited); other sites say 'juniper'; flagged. Alive: komoot tips dated 2022-10-27, 2023-09-23, 2024-08-23, and the 2026 commercial.cy piece. Coordinates: komoot URL 34.972721,34.058749 and plizio 34.972744,34.058717 agree (about 3 m apart). The brief's Commons point 34.975383,34.055264 is about 420 m away; I could not check Commons files (API rate-limited), so the two should be reconciled with a Commons geotag if one exists; I used the komoot/plizio position because two independent listings agree. Fixed to approximate because both are listing pins, not a fix at the trunk. Park authority page not fetched."
+  },
+  {
+    "id": "lar_003",
+    "name": "The Anglisides Olive Museum olive",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "roughly 700 years",
+    "age_min": 500,
+    "age_max": 1000,
+    "age_basis": "source",
+    "girth_cm": 1035,
+    "height_m": 6,
+    "location": {"address": "Olive Museum yard, Agiou Amvrosiou, Anglisides 7571, Larnaca District", "latitude": 34.854157, "longitude": 33.465504, "neighbourhood": "Anglisides"},
+    "verified_sources": [
+      "https://www.cyprusfoodmuseum.com/en/experiences/other-museums/olive-museum",
+      "https://e-villages.org/en/?p=8100",
+      "https://archive.cyprus-mail.com/?p=669281"
+    ],
+    "official_register": {"name": "Cyprus Department of Forests, tree natural monuments (data.gov.cy, CC BY 4.0), CY-FD-20", "url": "https://data.gov.cy"},
+    "access": "Museum yard: Monday to Friday 08:00 to 14:00, closed public holidays, other visits by appointment via the Anglisides Community Board +357 24 432480 (cyprusfoodmuseum.com; fee not stated). The 2004 Cyprus Mail piece says the tree stood on private land of the Andreou family, so confirm the museum yard is the same tree before sending anyone.",
+    "transport": "Village about 17 km south-west of Larnaca by road; no public transport verified, car needed.",
+    "location_precision": "approximate",
+    "location_site": {"name": "Olive Museum yard, Anglisides", "radius_m": 50},
+    "curation_status": "flagged",
+    "verify_notes": "Register CY-FD-20: Olive, Anglisides, girth 10.35 m, height 6 m, age 708 (carried to about 2012), proclaimed 2004-01-30; note olive trunks are hollow/split and the register girth is a trunk perimeter. Ages conflict: register and e-villages 'more than 700 years, probably the oldest olive in Cyprus'; Cyprus Mail 2004-02-05 'almost 1,000 years', trunk 'four metres wide', hollow interior about 3 m2 fits 10 people, trunk split early and widened with stacked bricks, Forestry Dept had just proposed it for protection; the register proclamation the same month fits. Site: cyprusfoodmuseum.com / VisitCyprus list 'one of the oldest olive trees of Cyprus, est. 700 years' in the Olive Museum yard. That the museum tree is the register tree is inferred (same village, same age) - flagged. Pin is the OSM 'Olive tree museum' way (34.85398-34.85434, 33.46536-33.46564), not the trunk. Alive evidence is thin: no dated recent photo or report found (e-villages and museum pages undated); flagged for that. A separate komoot highlight '850-Year-Old Olive Tree' (34.831547,33.394633, about 7 km west, no tips) is a different location and unverified - lead only."
+  }
+]

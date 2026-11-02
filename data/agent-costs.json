@@ -14713,6 +14713,54 @@
       "tokens": 40000,
       "trees": 2,
       "note": "Written by the dispatcher itself (estimate, includes reading both PDFs): 2 stories, Tavira place block, Monchique four-tree copy, Commons photo approved for tav_001. About 230k tokens a tree all in. The Algarve is exhausted for desk research; only a reader or a field visit adds trees now."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "nicosia (cyprus)",
+      "tokens": 105667,
+      "trees": 0,
+      "note": "Cyprus register rows (data.gov.cy, village only): nothing cleared the bar, 8 leads; Nicosia city has no documented old tree. Leads in data/leads/cyprus-nicosia.json."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "larnaca+ayia-napa (cyprus)",
+      "tokens": 148816,
+      "trees": 3,
+      "note": "Ayia Napa monastery fig, Cape Greco juniper, Anglisides olive; all flagged; 7 leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "limassol (cyprus)",
+      "tokens": 150538,
+      "trees": 2,
+      "note": "Laneia oak (iNaturalist GPS, confirmed) and Apesia terebinth (village pin); Limnatis terebinth dead; most register olives unreached."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "troodos (cyprus)",
+      "tokens": 144141,
+      "trees": 3,
+      "note": "Lagoudera oak, Giant Black Pine, Pano Platres oak; Forests trail leaflets and an International Oak Society 2026 report were the useful sources."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "paphos (cyprus)",
+      "tokens": 161259,
+      "trees": 3,
+      "note": "Agia Solomoni wishing tree, Aphrodite's Oak (confirmed), Simou terebinth; register villages mostly have no findable spot; 10 leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "cyprus",
+      "tokens": 184170,
+      "trees": 11,
+      "note": "11 stories (cyp_005 to cyp_015) and the Cyprus place fields rewritten for 15 trees; held for the pace, build with scripts/build_cyprus.py. Dispatcher (register import, 4 Commons photos viewed and approved, builder) about 120k more, estimated. All in about 1.0M tokens, roughly 92k a tree."
     }
   ]
 }
