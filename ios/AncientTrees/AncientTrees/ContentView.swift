@@ -334,10 +334,28 @@ struct ContentView: View {
     /// What the account holds, read from the server: the profile and its
     /// counts, blocks, saves, your own trees and their photographs, and your
     /// votes. Run on a sign-in and when a launch without signal missed it.
+    /// A PERSON HAS A NAME (2026-10-02). Strava and Polarsteps ask for one at
+    /// sign-up and Instagram requires a handle; we asked nobody, so 22 of 24
+    /// accounts had none and showed as "No name yet" to the people they
+    /// followed. The provider's name fills it first (Google's, or Apple's from
+    /// the sheet); with none, the editor opens once and asks.
+    ///
+    /// AT SIGN-IN TOO, not only at launch (Hidde, 2026-11-02, a Paris reader
+    /// left as "Tall Ginkgo 6205": "ik wil dat je het gat dicht"). Apple hands
+    /// the name over once, on the sheet; run only at a cold launch, it waited
+    /// for however many days iOS kept the app alive.
+    private func nameTheAccount(token: String?) async {
+        guard let uid = account.session?.userId, let token else { return }
+        let named = await profiles.ensureName(userId: uid, token: token,
+                                              providerName: account.session?.providerName)
+        if !named && !askedForName { askedForName = true; askingForName = true }
+    }
+
     private func reloadTheAccount() async {
         guard account.isSignedIn else { return }
         let token = await account.freshToken()
         await profiles.load(userId: account.session?.userId, token: token)
+        await nameTheAccount(token: token)
         if let token { await moderation.load(me: account.session?.userId, token: token) }
         await CloudSync.merge(account: account, saved: saved)
         sightings.restorePending()
@@ -1025,17 +1043,7 @@ struct ContentView: View {
             Task {
                 let token = await account.freshToken()
                 await profiles.load(userId: account.session?.userId, token: token)
-                // A PERSON HAS A NAME (2026-10-02). Strava and Polarsteps ask
-                // for one at sign-up and Instagram requires a handle; we asked
-                // nobody, so 22 of 24 accounts had none and showed as "No name
-                // yet" to the people they followed. The provider's name fills
-                // it first (Google's, or Apple's from the sheet); with none,
-                // the editor opens once and asks.
-                if let uid = account.session?.userId, let token {
-                    let named = await profiles.ensureName(userId: uid, token: token,
-                                                          providerName: account.session?.providerName)
-                    if !named && !askedForName { askedForName = true; askingForName = true }
-                }
+                await nameTheAccount(token: token)
             }
             // Who you have blocked, from the server rather than only from this
             // phone: a reinstall or a second phone has to start where the last
