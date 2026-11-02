@@ -500,9 +500,12 @@ def mail_for(trees, first, display_name=None):
 
 # AT MOST ONE MAIL PER READER PER MAIL_GAP_DAYS (Hidde, 2026-10-23: "eerste
 # live foto meteen een mail, daarna hooguit één per 30 dagen, gebundeld").
+# A week since 2026-11-02 (Hidde: "Weekly"), after a benchmark: iNaturalist
+# mails once a day, nobody waits a month, and a week is the same span as the
+# one-week rest across every route (mailer.py), so the two rules agree.
 # Codes and tree ids only, never an address: this repository is public.
 MAILED = os.path.join(ROOT, "data", "photo-live-mailed.json")
-MAIL_GAP_DAYS = 30
+MAIL_GAP_DAYS = 7
 
 
 def queue_mail(entry, today):
@@ -590,7 +593,7 @@ def address_of(user_id):
 # zijn", "doe maar niet". Mail fatigue outweighs the thanks.
 # 2026-10-23 he answered the fatigue himself: the first photograph mails at
 # once, later ones wait and go together, at most one mail per 30 days
-# (flush_mail). On since the same day, when he approved the text
+# (flush_mail); a week since 2026-11-02 (MAIL_GAP_DAYS). On since the same day, when he approved the text
 # (drafts/photo-live-mail.md): "Ja, de tekst is goed, zet de mail aan."
 MAIL_WHEN_LIVE = True
 VERDICT_STATUS = {"approve": "published", "add": "published",

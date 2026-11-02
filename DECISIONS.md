@@ -1,5 +1,9 @@
 # Decisions
 
+## 2026-11-02: a reader hears their photographs are live within a week, not a month
+
+The 2026-10-23 rule mailed the first photograph at once and bundled later ones, at most one mail per 30 days. Hidde, on learning that a Paris reader's four photographs of that morning would be thanked around 22 November: "i think thats way to strict benchmark this". iNaturalist sends one daily mail that bundles everything; Google Local Guides mails about photo views; komoot sends a weekly mail and a push per activity; nobody waits a month. A daily mail would collide with the one-week rest across every route (2026-10-25), so the session advised a week, the same span. Hidde: "Weekly". `MAIL_GAP_DAYS = 7` in sightings_publish.py. Asked in the same exchange: an unsubscribe for these mails (design shown, not built), and the ambassador invitation's opening now uses the product's verb, "Thanks for collecting five trees in Paris".
+
 ## 2026-11-02: a collected tree shows on a public profile at once, as on Polarsteps
 
 A reader walked five Paris trees in one morning and collected each; Hidde opened their public profile and saw one tree, because `public_profile()` held back anything ticked in the last 24 hours (the 2026-10-19 leak check). "this is very confusing for a user", then "how does polarstep do this?". Polarsteps shows a published step at once with its place and protects only the live location (a "Location privacy" switch per trip; since summer 2026, a shared route that stops at the last published step; support.polarsteps.com). We never keep a live position, so the hold protected nothing Polarsteps protects. Hidde: "lets follow polarsteps rules". The function drops the 24-hour filter; the lists still carry no dates and no time order, and the profile stays signed-in only. What it costs, said out loud: a follower can see somebody collected a Paris tree this morning, which Polarsteps accepts for every step.

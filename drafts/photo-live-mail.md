@@ -17,7 +17,7 @@ Thanks again,
 Ancient Trees
 
 
-## LATER MAIL, one photo (at most once per 30 days)
+## LATER MAIL, one photo (at most once a week)
 
 Subject: Your photo is on the page of The Weeping Cedar of the Vallée-aux-Loups
 
