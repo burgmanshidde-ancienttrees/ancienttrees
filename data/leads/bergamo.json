@@ -11,6 +11,15 @@
       "lng": 9.705642,
       "status": "lead",
       "why": "Register sheet 01/L251/BG/03, girth 391cm, height 27m. Publicly documented as Torre Boldone's 'last surviving monumental tree' after another was illegally felled. An agronomist assessed it as declining in 2017; the comune then illegally pollarded it ('heavy pruning without any authorisation', reducing height by roughly a third) in January 2018, and a large limb failed and fell in June 2021 (Araberara, 4 June 2021), the last dated confirmation found. No source since 2021 confirms current health, and the register's girth/height figures may predate the 2018 pollarding. Worth a fresh check (recent local press or a photo) before shipping; isolated from the other candidates (nearest is Seriate, 2.5km away) so it does not join a walk on its own."
+    },
+    {
+      "name": "Zanica Villa Comunale: two Himalayan cedars and a giant sequoia",
+      "species": "Cedrus deodara / Sequoiadendron giganteum",
+      "lat": 45.643561,
+      "lng": 9.683028,
+      "status": "lead",
+      "why": "MASAF sheets 01/M147/BG/03 (Cedrus deodara, girth 478 cm, 24 m), 02/M147/BG/03 (Cedrus deodara, 420 cm, 22 m), 03/M147/BG/03 (Sequoiadendron giganteum, 420 cm, 22 m), Parco della villa comunale, Via Roma 35, Zanica (public municipal park, ex Villa Spasciani; comune page lists it as a park, territorialmentebergamo.wordpress.com 2020 says the park is worth a walk 'per osservare le piante monumentali'). Park-level register coordinates only (cedars at 45.643561,9.683028 and 45.643528,9.683056, sequoia at 45.643306,9.68375), so approximate, a park is not a small site, and no photograph or open-licensed geotagged image found (Commons has only File:Zanica municipio.jpg). Italy is a covered country: needs photo or confirmed pin. lifecheck NONE. Reason: no photo or exact pin in reach. A reader's GPS fix or a photo would ship it. About 6.4 km from Bergamo centre; Zanica is on the Bergamo-Treviglio railway (not timed).",
+      "write_pass_2026_11_02": "Held as a lead by the write pass 2026-11-02: three park-level register points, no photo or confirmed pin, and Italy is a covered country; a reader's GPS fix or photo ships it."
     }
   ],
   "blocked": [
@@ -62,6 +71,20 @@
       "lat": 45.686511,
       "lng": 9.726033,
       "reason": "Register sheet 03/I628/BG/03. Same avenue as the cypress line above; blocked as a non-collectible avenue."
+    },
+    {
+      "name": "Atlas Cedar of Parco Reich (Fondazione ISB), Torre Boldone",
+      "species": "Cedrus atlantica",
+      "lat": 45.713658,
+      "lng": 9.703394,
+      "reason": "MASAF sheet 02/L251/BG/03 (Wikidata Q55741754, girth 655 cm, 37 m) but felled: BergamoNews 16 Feb 2018 reports the 'abbattimento del pluricentenario cedro dell'Atlante' of Torre Boldone, and a 2020 GrIG post says the same. Known dead; never ship, do not re-research."
+    },
+    {
+      "name": "Gelso bianco and Roverella groups, Albano Sant'Alessandro",
+      "species": "Morus alba / Quercus pubescens",
+      "lat": 45.687411,
+      "lng": 9.777267,
+      "reason": "MASAF sheets 02/A129/BG/03 (Via Monte Grappa 31, white mulberry group) and 01/A129/BG/03 (Via Valle d'Albano, downy oak group): both flagged 'insieme omogeneo' with no girth or height, non-urban, no site or access named; groups with no collectible point and no evidence of public access."
     }
   ]
 }
