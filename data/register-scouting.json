@@ -595,7 +595,7 @@
    "place": "Chiang Mai",
    "country": "Chiang Mai",
    "status": "empty",
-   "note": "SCOUTED 2026-08-16. Thailand has no government register of individual heritage trees that this pass could find. What exists is not a substitute: Changthong Heritage Park is a private paid-entry collection of trees TRANSPLANTED from elsewhere, which fails the premise of standing where a tree has stood for centuries, and the tree-ordination sites (Saraphi road rubber trees) are a cultural practice rather than a list. Route here is not a register."
+   "note": "SCOUTED 2026-08-16. Thailand has no government register of individual heritage trees that this pass could find. What exists is not a substitute: Changthong Heritage Park is a private paid-entry collection of trees TRANSPLANTED from elsewhere, which fails the premise of standing where a tree has stood for centuries, and the tree-ordination sites (Saraphi road rubber trees) are a cultural practice rather than a list. Route here is not a register. SUPERSEDED 2026-11-02: there IS a national register, the Ministry of Culture's รุกข มรดกของแผ่นดิน; see the Thailand entry."
   },
   {
    "place": "Dubai",
@@ -1206,6 +1206,12 @@
    "country": "Italy",
    "status": "stalled",
    "note": "SCOUTED 2026-11-02 on scout_next.py --target (#41). Regione Lombardia publishes a regional list of monumental trees as PDFs (regione.lombardia.it alberi-monumentali; allegato-a-dgr-4536-del-2025.pdf, lombardianotizie 2022/2024/2026 lists, 431+ trees, species and girth per row by municipality; 34 in Bergamo province per a VareseNews count). Bergamo already has one published tree (cork oak, Gorlago). Not yet imported: needs a PDF table extract into data/registers/ and a licence line (check regione.lombardia.it terms). Next angle: download the DGR 4536/2025 annex, filter province BG, cluster by distance to Bergamo, then verify. No Citta Alta tree is on the list."
+  },
+  {
+   "place": "Thailand",
+   "country": "Thailand",
+   "status": "imported",
+   "note": "IMPORTED 2026-11-02 as data/registers/thailand-rukkha.json. Register: รุกข มรดกของแผ่นดิน (heritage trees of the land), Department of Cultural Promotion, Ministry of Culture; lists of 2017 (65), 2018 (63, 64 rows after one fold) and 2019 (88). Licence: data.go.th dataset 5bc5f557-1786-4f92-babb-41553ed5a8f9 ('ข้อมูลรุกขมรดก') reads 'สัญญาอนุญาต Creative Commons Attributions', access level public; CC BY, commercial reuse with attribution. data.go.th returns 403 Access Denied to this runner (curl, browser pane, WebFetch, every mirror host), so the page and both xlsx files came from Internet Archive captures (2022-05-28 page, 2025-04-25 files). 2017 and 2018 rows carry coordinates, age, girth, height and a Thai history paragraph; 2019 is names, sites and provinces only, from Thai Wikipedia (CC BY-SA) citing technologychaoban.com. 121 of 217 entries have a usable point. Traps hit: a placeholder point (20.207213, 99.940312) pasted onto 7 trees in 7 provinces, Wat Chedi Luang's point copied to Loei and Songkhla, girths of 30 to 97 m (buttress or crown spread), heights of 60 to 90 m, a year figure in a girth cell, arm-span girths, a 1,000-year age column whose own history says 100. No species field: Latin is our mapping from the Thai name. Never updated since listing, so every tree needs a life check. Several entries are private-caretaker trees, groups, or whole forests."
   }
  ],
  "out_of_focus": {
