@@ -2,6 +2,12 @@
   "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
   "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
   "hosts": {
+    "quotidianocostiera.it": {
+      "behaviour": "Article pages return leaked PHP source instead of the article; treat the host as compromised.",
+      "seen": "2026-11-02",
+      "cost": "one fetch",
+      "workaround": "Do not fetch; use the regional list or another paper."
+    },
     "oak.conncoll.edu": {
       "behaviour": "curl -m 20 times out (exit 28) on the Notable Trees site; hangs.",
       "seen": "2026-10-27",

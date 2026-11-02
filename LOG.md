@@ -18,6 +18,11 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Cammo Ash (edi_003) has its first photographs**, mailed by a Friends of Cammo member this morning.
 - **Mail:** sent Veronika Willhalm (photos online), Jerry Bull, Piero, Michael Roe, Mikel Belasko (Hidde's own words). Held: Pere Vives until his 26 photos are on the pages (Hidde). Every other owed thread closed by Hidde ("als afgehandelt beschouwen"): data/outreach-closed.json, read by outreach_inbox.py.
 
+## 2026-11-02 session: Etna's east slope written and held; Amalfi and Taormina empty
+
+- **Held, written:** the Ilice di Carrinu (zaf_001, data/research/zafferana-etnea-verified.json), a holm oak of roughly 700 years by unsourced estimate at the end of a 3 to 4 km footpath, pin confirmed from geotagged Commons photos; and the Minicucco di Fornazzo (fzz_001, data/research/milo-verified.json), a Mediterranean Hackberry with a chained split trunk in Fornazzo's square. Each its own place of one tree; Sant'Alfio's three are live 8 km north. **Queue for 11-03 is now 18 trees.**
+- **Empty:** Taormina (all five register trees in the Hotel Excelsior Palace's private grounds, a sixth by a guest house; the Villa Comunale names no tree) and the Amalfi Coast and Capri (MASAF has 8 rows for the whole coast, a B&B's cypresses and young or unchecked Agerola trees; Capri's roverella died in 2021). Campania's regional list was updated in 2026 and is JS-rendered: the one angle left. quotidianocostiera.it served leaked PHP and is on data/fetch-blocklist.json.
+
 ## 2026-11-02 session: Horta written and held; three opening runs in their own sessions
 
 - **Horta (Faial, Azores)**: 2 ensembles from the Azores register, written and held in data/research/horta-verified.json: the three Norfolk Island pines of Praça da República and the five dragon trees of Jardim Florêncio Terra. Of the 36 Horta register points, 13 are on private, hotel or company ground and 15 lack a confirmed pin (leads). **Queue for 11-03 is now 16 trees** (the 11, the 3 Thai, these 2). Pamplona's session lifted the cap once on Hidde's word today, so check preflight's count before publishing.

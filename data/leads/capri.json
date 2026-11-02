@@ -1,0 +1,27 @@
+{
+ "city": "Capri",
+ "country": "Italy",
+ "city_slug": "capri",
+ "note": "2026-11-02: no coordinates for any Capri tree in MASAF (none listed) or in the RAMI volunteer registry (Capri has Pinus pinea 10830 regional, Pinus halepensis 10832 regional, age 255 years stated, no coordinates, no life flag; Anacapri has a Pinus canariensis 10826, local, no coordinates). Giardini di Augusto and Villa San Michele name no individual old tree in any source found. Nothing to verify; a visit-based or Campania-scheda lookup is needed (the elenco page is JS-rendered).",
+ "leads": [
+  {
+   "name": "Pino d'Aleppo, Capri centro (Pinus halepensis)",
+   "species": "Pinus halepensis Miller",
+   "status": "lead",
+   "why": "RAMI record 10832 (https://ilregistrodeglialberi.it/10832-pino-daleppo-capri-napoli-campania), regional relevance, age 255 years, no coordinates, no photo. Volunteer registry, not an official source; find the regional Campania scheda."
+  },
+  {
+   "name": "Pino domestico, Capri (Pinus pinea)",
+   "species": "Pinus pinea L.",
+   "status": "lead",
+   "why": "RAMI record 10830, regional relevance, no coordinates, no age."
+  },
+  {
+   "name": "Pino delle Canarie, Anacapri (Pinus canariensis)",
+   "species": "Pinus canariensis C.Sm.",
+   "status": "lead",
+   "why": "RAMI record 10826, local relevance, no coordinates, no age."
+  }
+ ],
+ "blocked": []
+}

@@ -1,0 +1,66 @@
+{
+ "city": "Amalfi Coast",
+ "country": "Italy",
+ "city_slug": "amalfi",
+ "note": "2026-11-02 register-backed verify pass for the Amalfi Coast (Ravello, Positano, Atrani, Maiori, Minori, Agerola). Zero verified: MASAF holds only 2 Ravello rows and 6 Agerola rows in the whole coast, none in Amalfi, Positano, Atrani, Maiori, Minori, Praiano, Furore, Conca dei Marini, Tramonti, Cetara or Capri. The regional Campania list (agricoltura.regione.campania.it/foreste/monum) elenco page is JavaScript-rendered; scheda_NNN pages are plain HTML and fetch fine. it.wikipedia 'Alberi monumentali della Campania' has none for the coast.",
+ "leads": [
+  {
+   "name": "Cipresso comune x2 (Cupressus sempervirens), Villa Barluzzi, Via Orso Papice, Ravello",
+   "species": "Cupressus sempervirens L.",
+   "lat": 40.647181,
+   "lng": 14.613194,
+   "status": "lead",
+   "why": "MASAF sheets 01/H198/SA/15 (girth 210 cm, 20 m) and 02/H198/SA/15 (220 cm, 18 m); Campania decree 2/2025 (8 Jan 2025) per a search summary only, not a fetched page. Villa Barluzzi is a B&B/guest house, so access is not established: no source says passers-by can see or approach the trunks (hard rule 10). Register coordinate only (approximate), no tree-level pin, no photo. lifecheck RECENT hit is a Cyperus observation, not the cypress. Twins about 11 m apart, would fold into one entry. Needs: a street-view proof from Via Orso Papice or a visit offer, and a dated photo."
+  },
+  {
+   "name": "Tiglio di Via Florio (Tilia platyphyllos), Pianillo, Agerola",
+   "species": "Tilia platyphyllos Scop.",
+   "lat": 40.640242,
+   "lng": 14.553081,
+   "status": "lead",
+   "why": "Regione Campania scheda 159 (fetched, updated 2019): girth 410 cm, 30 m (implausible height for the girth, check), age >100 years, piazzetta with sea view. Register only, no tree-level pin, no photo; lifecheck hit is a Tagetes observation. Agerola is a mountain town above the coast, bus from Amalfi, not on the coast itself. Needs a photo or OSM/GPS pin and a life check."
+  },
+  {
+   "name": "Tiglio della Liberta (Tilia cordata), Campora, Agerola",
+   "species": "Tilia cordata Mill.",
+   "lat": 40.642764,
+   "lng": 14.549942,
+   "status": "lead",
+   "why": "Regione Campania scheda 104 (fetched): girth 200 cm, 15 m, stated age 200 years, planted 1799 by the parish priest, but the same scheda says it dried out in the 1940s and was replanted, so the tree is not 200 years old. No pin evidence, no photo, no life check."
+  },
+  {
+   "name": "Castagno della Colonia montana (Castanea sativa), San Lazzaro, Agerola",
+   "species": "Castanea sativa Mill.",
+   "lat": 40.624247,
+   "lng": 14.564452,
+   "status": "lead",
+   "why": "Regione Campania scheda 122 (fetched): girth 350 cm, 10 m, over 100 years, sole survivor of the chestnut grove of General Avitabile's castle park. Access to the Colonia Montana park not checked (a Commons photo geotagged 37 m away shows the park is photographed from within). No tree pin, no photo, no life check."
+  },
+  {
+   "name": "Stone pine and cedars of Villa Rufolo, Ravello",
+   "species": "Pinus pinea / Cedrus",
+   "lat": 40.6489,
+   "lng": 14.6117,
+   "status": "lead",
+   "why": "Paid garden, public. Fondazione Ravello's visit guide and the Italian Botanical Heritage page name a large Pinus pinea at the entrance, a Cedrus libani and a Cedrus deodara; no source gives age, girth or a position. Garden dates from 1851 to 1876, so no bridge to an age. Needs a measurement, a dated photo and a tree-level pin. Coordinates are the garden's approximate centre."
+  },
+  {
+   "name": "Villa Cimbrone, Ravello (stone pines, Wisteria)",
+   "species": "Pinus pinea / Wisteria sinensis",
+   "lat": 40.6459,
+   "lng": 14.6227,
+   "status": "lead",
+   "why": "Paid garden, public. Italian Botanical Heritage says most trees are about 100 years old except some stone pines and a Nolina recurvata planted mid-1800s; no individual tree, girth or position named. Wisteria on Viale dell'Immenso is the famed old plant but is a climber, not a tree page. Garden coordinates approximate."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Roverella of Capri centro (Quercus pubescens)",
+   "reason": "Dead: ilregistrodeglialberi.it (RAMI volunteer registry) record 10831 marks it deceduto 14/10/2021, field note PIANTA MORTA."
+  },
+  {
+   "name": "Euforbia, Capri centro (Euphorbia sp., 40.550275 14.243778)",
+   "reason": "RAMI record 10833; an Euphorbia shrub, not a tree worth a page; no source beyond a volunteer registry."
+  }
+ ]
+}

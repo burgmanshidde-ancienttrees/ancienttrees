@@ -11,6 +11,53 @@
    "lng": 15.198322,
    "status": "lead",
    "why": "MASAF sheet 01/H325/CT/19: 11 metres round and 18 metres tall, in Villa Puglisi at Riposto, 15.7 km from Taormina. Public villa gardens by the name, so this one probably passes; it is the only publishable tree found near Taormina and one tree cannot carry a page unless it is itself the destination. Would work as a Catania-area entry, or with Riposto as its own place. [SKIPPED 2026-09-01 by the write pass: single register source (MASAF), and it has no home yet: 15.7km from Taormina with no place of its own created, so it needs a place decision (Catania-area entry, or a new Riposto page) before it could ship, not just a story. not shippable this pass.]"
+  },
+  {
+   "name": "Castagno di Puntalazzo, Mascali",
+   "species": "European Chestnut (Castanea sativa)",
+   "lat": 37.74781,
+   "lng": 15.14434,
+   "status": "lead",
+   "why": "Regional register 02/F004/CT/19 (D.D.G. n. 2870 of 14/10/2025): 1010 cm girth, 12 m, listed with the Castagno della Nave in Oct 2025 (cataniatoday 2025-10-28; etnanatura). Via Monteleonoti / via Petralia, Puntalazzo (Mascali), 1.4 km from the Cento Cavalli. A conference report says it is an isolated tree in private land at the edge of a vineyard; no source says it can be seen from a public road or visited. Register coordinate only (DMS 37 44 52.10 N 15 08 39.62 E), no GPS fix, no photo. Access unclear plus approximate pin: no photo or exact pin in reach. Etna east page candidate if a landowner or comune says it is viewable from the road."
+  },
+  {
+   "name": "Castagno di Tramazzi, Sant'Alfio",
+   "species": "European Chestnut (Castanea sativa)",
+   "lat": 37.76239,
+   "lng": 15.10512,
+   "status": "lead",
+   "why": "MASAF/regional 04/I216/CT/19: 860 cm girth, 16 m, multi-stem from one stool, 1015 m. etnanatura (Associazione Trucioli) says it is inside private property on the Magazzeni to Bocche di Santoro path; a second 6.4 m chestnut stands a few tens of metres along the farm track. Blocked on access for now (hard rule 10 does not allow private land with no stated public view). Pin is a register coordinate only."
+  },
+  {
+   "name": "Fico magnolioide di Villa Puglisi, Riposto (second look 2026-11-02)",
+   "lat": 37.728036,
+   "lng": 15.198322,
+   "status": "lead",
+   "why": "Still a lead: Via di Circumvallazione 26, Riposto; register 11 m girth, 18 m, D.D.G. n. 108 of 16/02/2021; searches found no page saying whether the villa grounds are open to the public or when. Ask the Comune di Riposto."
+  },
+  {
+   "name": "Cipresso at Casa Cuseni area, Taormina",
+   "lat": 37.852975,
+   "lng": 15.282583,
+   "status": "lead",
+   "why": "Regional sheet 04/L042/ME/19 second entry (D.D.G. n. 261 of 13/03/2024), Cupressus sempervirens, 50 cm girth and 10 m as printed, 250 m altitude, 'historic, cultural, religious value'. The printed coordinate (37 51 10.71 N 15 16 57.30 E) falls beside Casa Cuseni (a guest house, Via Leonardo da Vinci, Villagonia). Figures look corrupt or the tree is small; no source found; probably private. Not shippable."
+  },
+  {
+   "name": "Leccio di Contrada Giuliana, Mascali",
+   "lat": 37.75925,
+   "lng": 15.11472,
+   "status": "lead",
+   "why": "Regional sheet 03/F004/CT/19 (D.D.G. n. 2917 of 16/10/2025): Quercus ilex, 254 cm girth, 10 m, 936 m, 'dimensions, form'. Register coordinate only; small for its species, no source found about access or a visit. Not researched further."
+  },
+  {
+   "name": "Other Etna trees on the regional list, unvisited",
+   "status": "lead",
+   "why": "Linguaglossa Pino laricio at Pernicana (01/E602/CT/19, 600 cm, 24 m, 1250 m, 37.80735 14.95082); Milo Cerro at Monte Fontana (01/F214/CT/19, 560 cm, 1210 m); Milo beech group at Giarrita (03/F214/CT/19, 670 to 720 cm, 1430 m); Zafferana beech at Acquarocca degli Zappini (02/M139/CT/19, 630 cm, 1522 m) and Pioppo tremolo at Monte Pomiciaro (310 cm). Mountain forest, register coordinates only, hours from Taormina by car; not researched."
+  },
+  {
+   "name": "Taormina Villa Comunale (Parco Duchi di Cesaro, Trevelyan garden)",
+   "status": "lead",
+   "why": "Public garden (donated to the comune 1922/23), old olives, carobs, almonds, araucaria and a 'monumental ficus' mentioned by APGI and tourist guides, but no source names or measures an individual tree and none is on the national or regional register. Nothing to pin. A photo or an OSM tree node of a single named specimen would be needed."
   }
  ],
  "blocked": [
@@ -33,6 +80,10 @@
   {
    "name": "Sant'Alfio and Milo trees",
    "why": "Not blocked, already ours: the Castagno dei Cento Cavalli and its neighbours were published on 2026-08-31 under Sant'Alfio. Do not duplicate them onto a Taormina page."
+  },
+  {
+   "name": "Castagno della Nave note",
+   "why": "Already ours as sal_002 (approximate pin; register sheet 01/F004/CT/19 now confirmed by cataniatoday 2025-10-28 and the 2026-07 regional PDF)."
   }
  ]
 }
