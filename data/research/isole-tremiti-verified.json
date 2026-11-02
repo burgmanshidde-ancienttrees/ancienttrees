@@ -1,0 +1,45 @@
+[
+ {
+  "id": "tmt_001",
+  "name": "Ombu of San Nicola, Isole Tremiti",
+  "species": "Ombu (Phytolacca dioica)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Isola San Nicola, Isole Tremiti (FG)",
+   "latitude": 42.120511,
+   "longitude": 15.503469,
+   "neighbourhood": "Isola San Nicola"
+  },
+  "verified_sources": [
+   "https://www.inaturalist.org/observations/309180835",
+   "https://www.inaturalist.org/observations/303541268"
+  ],
+  "official_register": {
+   "name": "Regione Puglia, elenco alberi monumentali (01/E363/FG/16)",
+   "url": "https://dati.puglia.it/"
+  },
+  "access": "Island of San Nicola is open to visitors by ferry/hydrofoil (Termoli, Vieste, Peschici, Rodi Garganico, Manfredonia in season). Whether the exact tree stands on a public path or inside a paid or closed part of the abbey-fortress complex is NOT established; flagged.",
+  "transport": "Ferry or hydrofoil to San Nicola in summer from Termoli, Vieste, Peschici and Rodi Garganico (about 45 to 90 minutes depending on port); services thin out outside May to September. Over 30 minutes, so an island day trip, not a walk from the coast.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "SOURCES: Puglia register 01/E363/FG/16 records an 'insieme omogeneo di Phytolacca dioica' (a homogeneous group, not a single measured tree) on Isola San Nicola, no girth or height given. ALIVE and species: two independent iNaturalist observers recorded Phytolacca dioica on San Nicola in 2025 (obs 303541268, 2025-08-02, 42.120369,15.503167; obs 309180835, 2025-08-26, 42.120531,15.503119), each confirmed by a second identifier, marked casual (cultivated); both within about 30 m of the register point and about 18 m of each other. Photos CC BY-NC (not usable). Web searches found no article, plaque or guide naming this ombu; only the register and iNaturalist. Ombu is a non-native South American tree, so on a Tremiti page its interest is the oddity (swollen buttressed base, evergreen, resists sea wind); no age basis, left empty. Group, not single tree: the exact trunk to stand at is not established, so approximate; two GPS fixes of the species ~18 m apart suggests one small cluster. Access to the exact spot unverified.",
+  "photo_candidates": [
+   {
+    "url": "https://www.inaturalist.org/observations/303541268",
+    "licence": "CC BY-NC (do NOT use)",
+    "author": "cronogarganico",
+    "names_this_tree": "Phytolacca dioica on San Nicola, 2025, ~25 m from register point; identify only"
+   },
+   {
+    "url": "https://www.inaturalist.org/observations/309180835",
+    "licence": "CC BY-NC (do NOT use)",
+    "author": "pierfrancescoburrato",
+    "names_this_tree": "same, 2025-08-26"
+   }
+  ]
+ }
+]

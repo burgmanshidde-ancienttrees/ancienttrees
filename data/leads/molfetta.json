@@ -1,0 +1,31 @@
+{
+  "slug": "molfetta",
+  "leads": [
+    {
+      "name": "River Red Gum, Torre di Pettine",
+      "species": "River Red Gum (Eucalyptus camaldulensis)",
+      "latitude": 41.179714,
+      "longitude": 16.531186,
+      "register_id": "01/F284/BA/16",
+      "reason": "Register only (girth 560, height 25). Searches found nothing on the tree or on access; rural point, no photo or pin evidence."
+    },
+    {
+      "name": "Downy Oak, Navarino",
+      "species": "Downy Oak (Quercus pubescens)",
+      "latitude": 41.162258,
+      "longitude": 16.512172,
+      "register_id": "03/F284/BA/16",
+      "reason": "Register only (girth 430, height 15); rural, access unknown, no photo or pin."
+    },
+    {
+      "name": "Carob, Macchia Clemente",
+      "species": "Carob (Ceratonia siliqua)",
+      "latitude": 41.168511,
+      "longitude": 16.578442,
+      "register_id": "05/F284/BA/16",
+      "reason": "Register only (girth 450, height 11); rural, access unknown, no photo or pin."
+    }
+  ],
+  "blocked": [],
+  "notes": "Nothing in reach: no iNaturalist or Commons record within 250 m of any of the three. A komoot guide lists the Antignano olive near 41.16872,16.52225 (about 600 cm diameter per the FAQ, not a register tree here), not checked further."
+}

@@ -1,0 +1,162 @@
+{
+ "place": "foresta-umbra",
+ "note": "verify pass 2026-11-02, Puglia regional register rows F631/F059/L858/H926",
+ "entries": [
+  {
+   "id": "01/F631/FG/16",
+   "register_id": "01/F631/FG/16",
+   "species": "Taxus baccata",
+   "girth_cm": 377,
+   "height_m": 10,
+   "locality": "Foresta Umbra",
+   "latitude": 41.817756,
+   "longitude": 15.989719,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach (200 m from Villaggio Umbra visitor area)"
+  },
+  {
+   "id": "03/F631/FG/16",
+   "register_id": "03/F631/FG/16",
+   "species": "Pinus nigra",
+   "girth_cm": 345,
+   "height_m": 35,
+   "locality": "Villaggio Forestale",
+   "latitude": 41.819158,
+   "longitude": 15.995833,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach"
+  },
+  {
+   "id": "07/F631/FG/16",
+   "register_id": "07/F631/FG/16",
+   "species": "Fagus sylvatica",
+   "girth_cm": 480,
+   "height_m": 34,
+   "locality": "La Fontana",
+   "latitude": 41.819694,
+   "longitude": 15.991414,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach"
+  },
+  {
+   "id": "24/F631/FG/16",
+   "register_id": "24/F631/FG/16",
+   "species": "Taxus baccata",
+   "girth_cm": 300,
+   "height_m": 20,
+   "locality": "Sentiero Laghetto Umbra - Murgia",
+   "latitude": 41.810917,
+   "longitude": 15.996389,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach; ~700 m east of the fenced Falascone reserve, trail 11 area, iNat yew obs 2024-04-13 at 41.80968,15.99408 (cc-by-nc) not identified as this tree"
+  },
+  {
+   "id": "25/F631/FG/16",
+   "register_id": "25/F631/FG/16",
+   "species": "Fagus sylvatica",
+   "girth_cm": 520,
+   "height_m": 25,
+   "locality": "Valle del Tesoro",
+   "latitude": 41.815933,
+   "longitude": 16.010839,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach; end of trail 7"
+  },
+  {
+   "id": "16-20/F631/FG/16 + 22",
+   "register_id": "16-20/F631/FG/16 + 22",
+   "species": "Quercus cerris / Q. pubescens",
+   "girth_cm": null,
+   "height_m": 30,
+   "locality": "Bosco Quarto",
+   "latitude": 41.773,
+   "longitude": 15.86,
+   "status": "lead",
+   "reason": "not checked in depth: no access, life or pin evidence found in this pass; Bosco Quarto has a ~4.5 km marked loop and an old decauville route per Gargano park pages; register girths 410-505 cm, heights 30-40 m (16: 480/40 m at 41.773147,15.861464; 20: 505/30 m at 41.771119,15.875458). Needs its own pass"
+  },
+  {
+   "id": "28,29/F631/FG/16",
+   "register_id": "28,29/F631/FG/16",
+   "species": "Quercus cerris",
+   "girth_cm": 470,
+   "height_m": 22,
+   "locality": "Piano dell'Incudine",
+   "latitude": 41.757306,
+   "longitude": 15.817528,
+   "status": "lead",
+   "reason": "not checked: no access or life evidence; girths 470/440 cm"
+  },
+  {
+   "id": "01/L858/FG/16",
+   "register_id": "01/L858/FG/16",
+   "species": "Quercus cerris",
+   "girth_cm": 560,
+   "height_m": 30,
+   "locality": "Sagro, Vieste",
+   "latitude": 41.784611,
+   "longitude": 16.116889,
+   "status": "lead",
+   "reason": "two sources (register; ministry map text via ambienteambienti.com: oak 30 m, one of the largest trees on the Gargano promontory) but no access info (likely farmland), no life record, no photo or pin; lead"
+  },
+  {
+   "id": "02/L858/FG/16",
+   "register_id": "02/L858/FG/16",
+   "species": "Quercus cerris",
+   "girth_cm": 470,
+   "height_m": 20,
+   "locality": "Valle del Compromesso, Vieste",
+   "latitude": 41.784694,
+   "longitude": 16.071889,
+   "status": "lead",
+   "reason": "iNaturalist Quercus cerris obs 2024-08-17 at 41.78470,16.07209 (cc-by-nc, https://www.inaturalist.org/observations/236610282) within 15 m of register point = a life check RECENT, but photo licence unusable and no access info; lead worth a look (possible pin upgrade)"
+  },
+  {
+   "id": "01,02,03/F059/FG/16",
+   "register_id": "01,02,03/F059/FG/16",
+   "species": "Quercus pubescens",
+   "girth_cm": 410,
+   "height_m": 13,
+   "locality": "Vergone del Lupo, Mattinata",
+   "latitude": 41.7747,
+   "longitude": 16.0967,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach; three downy oaks 330/320/410 cm in a farmland locality, access unknown"
+  },
+  {
+   "id": "01/H926/FG/16",
+   "register_id": "01/H926/FG/16",
+   "species": "Castanea sativa",
+   "girth_cm": 490,
+   "height_m": 15,
+   "locality": "Piscinelle, San Giovanni Rotondo",
+   "latitude": 41.758806,
+   "longitude": 15.775083,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach"
+  },
+  {
+   "id": "03/H926/FG/16",
+   "register_id": "03/H926/FG/16",
+   "species": "Castanea sativa",
+   "girth_cm": 400,
+   "height_m": 14,
+   "locality": "Bosco di Sant'Egidio, San Giovanni Rotondo",
+   "latitude": 41.753444,
+   "longitude": 15.766472,
+   "status": "lead",
+   "reason": "register only, no recent life record, no photo or exact pin in reach"
+  },
+  {
+   "id": "02/F631,05,06,09-15/F631/FG/16",
+   "register_id": "02/F631,05,06,09-15/F631/FG/16",
+   "species": "Taxus baccata / Fagus sylvatica",
+   "girth_cm": null,
+   "height_m": null,
+   "locality": "Falascone reserve, Foresta Umbra",
+   "latitude": 41.8122,
+   "longitude": 15.9877,
+   "status": "blocked",
+   "reason": "BLOCKED: Falascone is a fenced strict state reserve (RNS Biogenetica, 48 ha), parcogargano.it/poi/falascone: 'Area non fruibile, accesso limitato per motivi scientifici', visits only for research; one can only walk along the fence. Rule 10 (public access). Register: yews 291-471 cm, group of 8 within ~30 m at 41.8122,15.9877, yew 05 at 41.810481,15.988897, beech 06 468 cm."
+  }
+ ]
+}

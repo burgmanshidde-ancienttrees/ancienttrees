@@ -1,0 +1,21 @@
+{
+ "city": "Ischitella",
+ "country": "Italy",
+ "city_slug": "ischitella",
+ "note": "Two register rows, both rural; searches found nothing about either.",
+ "leads": [
+  {
+   "name": "Downy oak, Forchione (02/E332/FG/16, girth 600 cm, h 6 m)",
+   "reason": "Register girth 600 cm at 6 m height looks like a coppiced or stunted old stool or a data slip; contrada Forchione is private agri land (agritourism listing only); no source, photo or GPS; no photo or exact pin in reach.",
+   "approx_lat": 41.892889,
+   "approx_lon": 15.861333
+  },
+  {
+   "name": "Downy oak stand, Casino Ventrella (01/E332/FG/16, 'insieme omogeneo')",
+   "reason": "A stand, not a collectible point, no girth or height, a private casino estate; no photo or exact pin in reach.",
+   "approx_lat": 41.892444,
+   "approx_lon": 15.861944
+  }
+ ],
+ "blocked": []
+}

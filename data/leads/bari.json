@@ -1,120 +1,128 @@
 {
- "city": "Bari",
- "leads": [],
- "blocked": [
-  {
-   "name": "Aleppo Pine of Villa Sbisa",
-   "species": "Pinus halepensis Mill. (register); girth 370 cm, height 24 m",
-   "location": {
-    "latitude": 41.111372,
-    "longitude": 16.8814
-   },
-   "sources": [
-    "data/registers/puglia-alberi-monumentali.json (register_id 09/A662/BA/16)",
-    "data/registers/italy-masaf.json (sheet_id 09/A662/BA/16)",
-    "https://www.barinedita.it/reportage/n5182-bari-quell-armoniosa-dimora-circondata-da-un-monumentale-giardino--e-villa-sbisa- (Barinedita reportage)"
-   ],
-   "why_blocked": "Fails hard rule 10 test 1 (public access without permission). Villa Sbisa is a Liberty-era villa on Via Amendola now used by the University of Bari's Department of Soil, Plant and Food Sciences (Di.s.s.a.). Barinedita's own reportage, based on an on-site visit with the professor who manages the property, states plainly the garden is 'not open to the general public', the street gate on Via Amendola is 'permanently locked by a padlock', the villa is 'not visible from the street' and is 'visitable only by accessing the university campus', with access essentially limited to staff and students. No FAI Giornate di Primavera/Autunno listing found for it in searches covering 2025-2026. The pine itself (24 m, declared monumental in 2019) is real and well documented, but the site fails the access test the same way as Rome's San Sisto nursery cluster: reachable only by scheduled/staff access, not by a visitor turning up. Revisit if a scheduled open day (FAI, university open house) is documented."
-  },
-  {
-   "name": "Leccio of Carbonara (Scuola Armando Diaz)",
-   "species": "Quercus ilex L. (Leccio); girth 215 cm, height 12 m",
-   "location": {
-    "latitude": 41.070761,
-    "longitude": 16.872072
-   },
-   "sources": [
-    "data/registers/puglia-alberi-monumentali.json (register_id 05/A662/BA/16)",
-    "data/registers/italy-masaf.json (sheet_id 05/A662/BA/16)",
-    "https://www.barinedita.it/storie-e-interviste/n3098-il-pino-di-carrassi-e-il-leccio-di-carbonara--ecco-i-due-alberi-monumentali-di-bari (Barinedita, 3 Jan 2018)"
-   ],
-   "why_blocked": "Stands in the internal courtyard ('giardino interno') of the Armando Diaz primary school (CD Bari, Carbonara), a working elementary school with children on site during the day. CLAUDE.md's school exception under hard rule 10 requires real evidence of standing public access (a public path through the grounds, a park the school merely borders, a documented weekend opening); searches found only sporadic civic/ecological events at the school ('Tutti uniti per la scuola Diaz', Jan 2025; wall-cleaning volunteer days) rather than any routine open-to-the-public access to the courtyard itself. Barinedita's 2018 piece itself describes access as limited to the school grounds. Does not verify for hard rule 10; a documented standing public-access arrangement (open weekends, a public path) would flip this."
-  },
-  {
-   "name": "Carob grove of La Grave, Polignano a Mare (four register carobs)",
-   "species": "Ceratonia siliqua L. (Carrubo); girths 820, 410, 390, 350 cm, all within 51 m of each other",
-   "location": {
-    "latitude": 40.986333,
-    "longitude": 17.208069
-   },
-   "sources": [
-    "data/registers/puglia-alberi-monumentali.json (register_ids 02-05/G787/BA/16)",
-    "https://www.baritoday.it/social/carrubo-millenario-polignano-a-mare.html (BariToday, 21 Nov 2024, on the largest, 'il Patriarca')",
-    "https://www.ambienteambienti.com/polignano-carrubo-salvo/ (Ambiente&Ambienti, on the Snam pipeline dispute)"
-   ],
-   "why_blocked": "Not confirmed open under hard rule 10 test 1. Both sources describe the grove as standing in private agricultural land ('nelle campagne di Polignano a Mare'; the pipeline was rerouted after a dispute with the land's owners, who pushed for protection since 2011). An unclassified public road (OSM way 166698536, 'Strada Comunale la Grave', maxspeed 70) passes within roughly 100 m of the register coordinates, so the grove is reachable, but no source states the trees themselves are visible or standing on ground the public may enter without asking the landowner, unlike the Hobart oak precedent. Do not re-search this exact question; the missing piece is a source that says explicitly whether 'il Patriarca' is visible/reachable from that road or fenced off within the fields. A Puglia hiking group ('Millenari di Puglia', WhatsApp 373.5293970, meeting point Torre Incina) runs guided walks in the area and may be worth asking directly rather than re-searching."
-  },
-  {
-   "name": "Stone Pine of Sovereto, Terlizzi",
-   "species": "Pinus pinea L. (Pino domestico); girth 470 cm, height 20 m",
-   "location": {
-    "latitude": 41.119897,
-    "longitude": 16.574339
-   },
-   "sources": [
-    "data/registers/puglia-alberi-monumentali.json (register_id 01/L109/BA/16)"
-   ],
-   "why_blocked": "Not confirmed alive, and not confirmed as being on the sanctuary's own public ground rather than roadside private land nearby, so it fails BOTH the alive-now check and the access check for now. Sovereto is a genuinely public case in principle, a Marian sanctuary/hamlet reachable by a cycling path from Terlizzi, described in general terms as having 'centuries-old pine trees' in its landscape, which would likely pass hard rule 10's church exception if the register tree specifically stood on sanctuary ground. But two independent 2025 local reports record fallen century-old trees in the immediate area within the last year: pugliareporter.com (20 Oct 2025) reports a giant secular pine fell on Via Rimini, Terlizzi, on private property (confirmed a DIFFERENT tree and location, not this one, so it does not kill this candidate on its own); terlizziviva.it (6 Aug 2025) separately reports another large tree down 'between Sovereto and Via Traiana, on the road from SP231 toward Via Traiana near Villa Ilderis', unspecified species, raising Puliamo Terlizzi's own concern about losing 'historic points of reference if not actually monumental' trees in exactly this area. Neither report names the register's specific Pinus pinea, so this is not a confirmed death, but the register (fetched 2026-08-16) predates both incidents and has no vitality field, and this candidate should not ship without a fresh alive-now check plus a source pinning it inside the sanctuary grounds specifically."
-  },
-  {
-   "name": "Eucalyptus of Torre di Pettine, Molfetta",
-   "species": "Eucalyptus camaldulensis Dehnh. (register); girth 560 cm, height 25 m",
-   "location": {
-    "latitude": 41.179714,
-    "longitude": 16.531186
-   },
-   "sources": [
-    "data/registers/puglia-alberi-monumentali.json (register_id 01/F284/BA/16)",
-    "https://www.molfettaviva.it/notizie/presentato-il-nuovo-atlante-degli-alberi-monumentali-di-puglia-3-sono-di-molfetta/ (names the tree, no access detail)"
-   ],
-   "why_blocked": "Fails hard rule 10 test 1. Checked the register point against OpenStreetMap (Overpass, 2026-08-21): the nearest mapped way of any kind, the unclassified 'Fondo Favale' track that a Moovit routing snippet also names as the way in, sits about 305 m from the tree; the nearest track ways sit 400 to 485 m away. That is deep inside farmland with no road or path anywhere near it on the map, consistent with the locality being named for a private masseria/fortified house (Torre di Pettine, described elsewhere as a small fortified country house) rather than a public site. No source found states the tree is visible or reachable without crossing private fields. Revisit only if a source names a specific public path reaching the tree itself, not just the general area."
-  },
-  {
-   "name": "Roverella of Navarino, Molfetta",
-   "species": "Quercus pubescens Willd. (register); girth 430 cm, height 15 m",
-   "location": {
-    "latitude": 41.162258,
-    "longitude": 16.512172
-   },
-   "sources": [
-    "data/registers/puglia-alberi-monumentali.json (register_id 03/F284/BA/16)",
-    "https://www.barinedita.it/reportage/n4170-molfetta-tra-fantasmi-e-spietate-esecuzioni-la-storia-della-solitaria-masseria-navarino (on-site visit to Masseria Navarino, does not mention the tree)"
-   ],
-   "why_blocked": "Not confirmed open under hard rule 10 test 1. The register point sits about 40 m from a farm track (OSM, 2026-08-21), which is promising, but the only on-site reportage found is Barinedita's visit to Masseria Navarino itself, the ruined and abandoned fortified farmhouse the locality is named for: reached via a narrow, roughly 6 km dirt 'strada vicinale Navarino', privately owned by descendants of the Gadaleta family, and surrounded by 'un alto muro di recinzione' (a high perimeter wall). The article describes olive groves around the masseria but never mentions this oak, so whether the register tree stands inside that walled private compound or outside it on the track cannot be settled from what is findable by search. Do not re-search this exact question without a source that places the tree relative to the wall."
-  },
-  {
-   "name": "Carob of Macchia Clemente, Molfetta",
-   "species": "Ceratonia siliqua L. (register); girth 450 cm, height 11 m",
-   "location": {
-    "latitude": 41.168511,
-    "longitude": 16.578442
-   },
-   "sources": [
-    "data/registers/puglia-alberi-monumentali.json (register_id 05/F284/BA/16)",
-    "https://www.molfettaviva.it/notizie/presentato-il-nuovo-atlante-degli-alberi-monumentali-di-puglia-3-sono-di-molfetta/ (names the tree, no access detail)"
-   ],
-   "why_blocked": "Not confirmed open under hard rule 10 test 1. Macchia Clemente is a scattered rural contrada with private houses (an active real-estate listing for a 'villa' there was found in the same search), and the register point sits closest to a residential-tagged road (OSM, 2026-08-21, about 85 m). A separate famous carrubo secolare stands in Molfetta's Parco Naturale di Lama Martina, a genuinely public park, but nothing found ties that specific tree to this register entry's coordinates rather than merely the same general part of town; joining them would be exactly the bridge-claim error CLAUDE.md warns against, two true facts producing a claim neither source makes. Do not assume the park connection without a source that gives the park's actual boundary or names this tree specifically as being inside it."
-  }
- ],
- "notes": [
-  {
-   "date": "2026-08-20",
-   "finding": "Bari's IN-CITY register supply is exhausted, and that is why the city sits at 3 verified trees below the 4-tree floor. Puglia's regional register holds 5 unique trees within 20 km (each appearing twice, once in the MASAF national file and once in the regional one, so the ten rows a brief prints are five trees). Three are verified and sitting in data/research/bari-verified.json; the other two are blocked, both correctly and both on evidence: the Villa Sbisa pine is behind a padlocked gate on university property and is not visible from the street, and the Carbonara holm oak stands in a working primary school's courtyard.",
-   "so_the_fourth_tree_must_come_from": "outside the city. Within the day-trip boundary the register offers 32 more trees between 24 and 40 km, and the precedent for using them is Coole Park counting for Galway. The strongest single candidate is the La Grave carob cluster at Polignano a Mare (32.5 km, on the regional railway): FOUR carobs within 51 metres of each other, girths 820, 410, 390 and 350 cm. An 8.2 metre carob is a genuinely spectacular tree. Molfetta offers a 560 cm eucalyptus and a 450 cm carob at 24 to 29 km, and Terlizzi a 470 cm stone pine at 24.5 km.",
-   "the_open_question": "every one of those day-trip entries carries urban:false and a rural locality (Masseria Montepaolo, Macchia Clemente, La Grave), so each needs a hard rule 10 access check before it can ship, and several will fail it the way the two in-city ones did. That check is the expensive part and is the whole of the remaining Bari pass.",
-   "not_a_route": "Wikidata. data/research/bari-wikidata-candidates.json is empty."
-  },
-  {
-   "date": "2026-08-20 (session, continued)",
-   "finding": "Ran the access check on the two strongest day-trip candidates named above (La Grave carobs, Sovereto pine) and neither clears hard rule 10 with what's findable by search: the carob grove reads as private agricultural land with a public road nearby but no source confirming visibility from it, and the Sovereto pine cannot be confirmed alive given two independent 2025 reports of fallen century-old trees in that immediate area (neither naming this specific tree, so not a confirmed death, but reason enough not to ship on a 2026-08-16 register extract alone). Both moved from open question to blocked with reasons, so a future pass does not re-run the same searches. Molfetta's three candidates (Torre di Pettine eucalyptus, Navarino roverella, Macchia Clemente carob, 24-29 km) remain genuinely unchecked and are the next place to look if Hidde or a later pass wants to keep pushing on Bari's 4th tree; a coastal watchtower locality name ('Torre di Pettine') is worth checking first, since Puglia's coastal towers usually sit on public paths."
-  },
-  {
-   "date": "2026-08-21 (night run)",
-   "finding": "Checked all three Molfetta candidates named above, the last unchecked day-trip supply within Puglia's regional register for Bari. All three moved to blocked, on the same shape of evidence as the rest of this file: the eucalyptus sits 300+ metres from any mapped road or track (OSM Overpass, deep in private farmland), the roverella stands close to a track but the only on-site source describes the adjoining Masseria Navarino as a walled, privately owned ruin with no mention of the tree, and the carrubo sits near a residential road in a private-house contrada with no source distinguishing it from the unrelated, definitely-public carrubo in Parco Lama Martina. None of the three had a Barinedita-style on-site visit to settle it either way, unlike the in-city trees. That exhausts every day-trip candidate this register offers within roughly 30km; Bari's 4th tree is not coming from Puglia's regional register as currently sourced. It stays at 3 verified trees below the 4-tree floor. The path forward, in order of cost: (1) a reader submission or tip, always the cheapest; (2) a from-zero web sweep for a Bari-area tree entirely outside the register (unlikely to be efficient given the register was already exhaustive for the province); (3) asking Hidde whether to widen the day-trip boundary past 30km for this one city. Do not re-run this exact check again without new source material."
-  },
-  {
-   "date": "2026-08-27 (night run)",
-   "finding": "Bari's 4th tree found and shipped: the Lie Tree of Quasano (Wikidata Q55742469, register 01/L220/BA/16), a holm oak at a hamlet centre 29.8km from Bari. Two independent web sources (FAI fondoambiente.it, Italian Botanical Heritage) plus a June 2021 local news article corroborate species, girth, height and its public roadside location; cleared hard rule 10 test 1 via reverse geocode (lands on a pedestrian way, Viale della Pineta, matching the source description of standing in front of the old masseria's gate). City published at 4 trees. See data/cities/bari.json bar_004."
-  }
- ]
+  "city": "Bari",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "Aleppo Pine of Villa Sbisa",
+      "species": "Pinus halepensis Mill. (register); girth 370 cm, height 24 m",
+      "location": {
+        "latitude": 41.111372,
+        "longitude": 16.8814
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 09/A662/BA/16)",
+        "data/registers/italy-masaf.json (sheet_id 09/A662/BA/16)",
+        "https://www.barinedita.it/reportage/n5182-bari-quell-armoniosa-dimora-circondata-da-un-monumentale-giardino--e-villa-sbisa- (Barinedita reportage)"
+      ],
+      "why_blocked": "Fails hard rule 10 test 1 (public access without permission). Villa Sbisa is a Liberty-era villa on Via Amendola now used by the University of Bari's Department of Soil, Plant and Food Sciences (Di.s.s.a.). Barinedita's own reportage, based on an on-site visit with the professor who manages the property, states plainly the garden is 'not open to the general public', the street gate on Via Amendola is 'permanently locked by a padlock', the villa is 'not visible from the street' and is 'visitable only by accessing the university campus', with access essentially limited to staff and students. No FAI Giornate di Primavera/Autunno listing found for it in searches covering 2025-2026. The pine itself (24 m, declared monumental in 2019) is real and well documented, but the site fails the access test the same way as Rome's San Sisto nursery cluster: reachable only by scheduled/staff access, not by a visitor turning up. Revisit if a scheduled open day (FAI, university open house) is documented."
+    },
+    {
+      "name": "Leccio of Carbonara (Scuola Armando Diaz)",
+      "species": "Quercus ilex L. (Leccio); girth 215 cm, height 12 m",
+      "location": {
+        "latitude": 41.070761,
+        "longitude": 16.872072
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 05/A662/BA/16)",
+        "data/registers/italy-masaf.json (sheet_id 05/A662/BA/16)",
+        "https://www.barinedita.it/storie-e-interviste/n3098-il-pino-di-carrassi-e-il-leccio-di-carbonara--ecco-i-due-alberi-monumentali-di-bari (Barinedita, 3 Jan 2018)"
+      ],
+      "why_blocked": "Stands in the internal courtyard ('giardino interno') of the Armando Diaz primary school (CD Bari, Carbonara), a working elementary school with children on site during the day. CLAUDE.md's school exception under hard rule 10 requires real evidence of standing public access (a public path through the grounds, a park the school merely borders, a documented weekend opening); searches found only sporadic civic/ecological events at the school ('Tutti uniti per la scuola Diaz', Jan 2025; wall-cleaning volunteer days) rather than any routine open-to-the-public access to the courtyard itself. Barinedita's 2018 piece itself describes access as limited to the school grounds. Does not verify for hard rule 10; a documented standing public-access arrangement (open weekends, a public path) would flip this."
+    },
+    {
+      "name": "Carob grove of La Grave, Polignano a Mare (four register carobs)",
+      "species": "Ceratonia siliqua L. (Carrubo); girths 820, 410, 390, 350 cm, all within 51 m of each other",
+      "location": {
+        "latitude": 40.986333,
+        "longitude": 17.208069
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_ids 02-05/G787/BA/16)",
+        "https://www.baritoday.it/social/carrubo-millenario-polignano-a-mare.html (BariToday, 21 Nov 2024, on the largest, 'il Patriarca')",
+        "https://www.ambienteambienti.com/polignano-carrubo-salvo/ (Ambiente&Ambienti, on the Snam pipeline dispute)"
+      ],
+      "why_blocked": "Not confirmed open under hard rule 10 test 1. Both sources describe the grove as standing in private agricultural land ('nelle campagne di Polignano a Mare'; the pipeline was rerouted after a dispute with the land's owners, who pushed for protection since 2011). An unclassified public road (OSM way 166698536, 'Strada Comunale la Grave', maxspeed 70) passes within roughly 100 m of the register coordinates, so the grove is reachable, but no source states the trees themselves are visible or standing on ground the public may enter without asking the landowner, unlike the Hobart oak precedent. Do not re-search this exact question; the missing piece is a source that says explicitly whether 'il Patriarca' is visible/reachable from that road or fenced off within the fields. A Puglia hiking group ('Millenari di Puglia', WhatsApp 373.5293970, meeting point Torre Incina) runs guided walks in the area and may be worth asking directly rather than re-searching."
+    },
+    {
+      "name": "Stone Pine of Sovereto, Terlizzi",
+      "species": "Pinus pinea L. (Pino domestico); girth 470 cm, height 20 m",
+      "location": {
+        "latitude": 41.119897,
+        "longitude": 16.574339
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 01/L109/BA/16)"
+      ],
+      "why_blocked": "Not confirmed alive, and not confirmed as being on the sanctuary's own public ground rather than roadside private land nearby, so it fails BOTH the alive-now check and the access check for now. Sovereto is a genuinely public case in principle, a Marian sanctuary/hamlet reachable by a cycling path from Terlizzi, described in general terms as having 'centuries-old pine trees' in its landscape, which would likely pass hard rule 10's church exception if the register tree specifically stood on sanctuary ground. But two independent 2025 local reports record fallen century-old trees in the immediate area within the last year: pugliareporter.com (20 Oct 2025) reports a giant secular pine fell on Via Rimini, Terlizzi, on private property (confirmed a DIFFERENT tree and location, not this one, so it does not kill this candidate on its own); terlizziviva.it (6 Aug 2025) separately reports another large tree down 'between Sovereto and Via Traiana, on the road from SP231 toward Via Traiana near Villa Ilderis', unspecified species, raising Puliamo Terlizzi's own concern about losing 'historic points of reference if not actually monumental' trees in exactly this area. Neither report names the register's specific Pinus pinea, so this is not a confirmed death, but the register (fetched 2026-08-16) predates both incidents and has no vitality field, and this candidate should not ship without a fresh alive-now check plus a source pinning it inside the sanctuary grounds specifically."
+    },
+    {
+      "name": "Eucalyptus of Torre di Pettine, Molfetta",
+      "species": "Eucalyptus camaldulensis Dehnh. (register); girth 560 cm, height 25 m",
+      "location": {
+        "latitude": 41.179714,
+        "longitude": 16.531186
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 01/F284/BA/16)",
+        "https://www.molfettaviva.it/notizie/presentato-il-nuovo-atlante-degli-alberi-monumentali-di-puglia-3-sono-di-molfetta/ (names the tree, no access detail)"
+      ],
+      "why_blocked": "Fails hard rule 10 test 1. Checked the register point against OpenStreetMap (Overpass, 2026-08-21): the nearest mapped way of any kind, the unclassified 'Fondo Favale' track that a Moovit routing snippet also names as the way in, sits about 305 m from the tree; the nearest track ways sit 400 to 485 m away. That is deep inside farmland with no road or path anywhere near it on the map, consistent with the locality being named for a private masseria/fortified house (Torre di Pettine, described elsewhere as a small fortified country house) rather than a public site. No source found states the tree is visible or reachable without crossing private fields. Revisit only if a source names a specific public path reaching the tree itself, not just the general area."
+    },
+    {
+      "name": "Roverella of Navarino, Molfetta",
+      "species": "Quercus pubescens Willd. (register); girth 430 cm, height 15 m",
+      "location": {
+        "latitude": 41.162258,
+        "longitude": 16.512172
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 03/F284/BA/16)",
+        "https://www.barinedita.it/reportage/n4170-molfetta-tra-fantasmi-e-spietate-esecuzioni-la-storia-della-solitaria-masseria-navarino (on-site visit to Masseria Navarino, does not mention the tree)"
+      ],
+      "why_blocked": "Not confirmed open under hard rule 10 test 1. The register point sits about 40 m from a farm track (OSM, 2026-08-21), which is promising, but the only on-site reportage found is Barinedita's visit to Masseria Navarino itself, the ruined and abandoned fortified farmhouse the locality is named for: reached via a narrow, roughly 6 km dirt 'strada vicinale Navarino', privately owned by descendants of the Gadaleta family, and surrounded by 'un alto muro di recinzione' (a high perimeter wall). The article describes olive groves around the masseria but never mentions this oak, so whether the register tree stands inside that walled private compound or outside it on the track cannot be settled from what is findable by search. Do not re-search this exact question without a source that places the tree relative to the wall."
+    },
+    {
+      "name": "Carob of Macchia Clemente, Molfetta",
+      "species": "Ceratonia siliqua L. (register); girth 450 cm, height 11 m",
+      "location": {
+        "latitude": 41.168511,
+        "longitude": 16.578442
+      },
+      "sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 05/F284/BA/16)",
+        "https://www.molfettaviva.it/notizie/presentato-il-nuovo-atlante-degli-alberi-monumentali-di-puglia-3-sono-di-molfetta/ (names the tree, no access detail)"
+      ],
+      "why_blocked": "Not confirmed open under hard rule 10 test 1. Macchia Clemente is a scattered rural contrada with private houses (an active real-estate listing for a 'villa' there was found in the same search), and the register point sits closest to a residential-tagged road (OSM, 2026-08-21, about 85 m). A separate famous carrubo secolare stands in Molfetta's Parco Naturale di Lama Martina, a genuinely public park, but nothing found ties that specific tree to this register entry's coordinates rather than merely the same general part of town; joining them would be exactly the bridge-claim error CLAUDE.md warns against, two true facts producing a claim neither source makes. Do not assume the park connection without a source that gives the park's actual boundary or names this tree specifically as being inside it."
+    },
+    {
+      "name": "Aleppo Pine, Villa Sbisa",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "latitude": 41.111372,
+      "longitude": 16.8814,
+      "register_id": "09/A662/BA/16",
+      "reason": "Villa Sbisa (via Amendola 159) is a University of Bari property listed in its sale tenders (uniba.it/bandi-gare/aste/villa-sbisa), not a public park; no evidence of open access. iNat shows only garden-plant records there."
+    }
+  ],
+  "notes": [
+    {
+      "date": "2026-08-20",
+      "finding": "Bari's IN-CITY register supply is exhausted, and that is why the city sits at 3 verified trees below the 4-tree floor. Puglia's regional register holds 5 unique trees within 20 km (each appearing twice, once in the MASAF national file and once in the regional one, so the ten rows a brief prints are five trees). Three are verified and sitting in data/research/bari-verified.json; the other two are blocked, both correctly and both on evidence: the Villa Sbisa pine is behind a padlocked gate on university property and is not visible from the street, and the Carbonara holm oak stands in a working primary school's courtyard.",
+      "so_the_fourth_tree_must_come_from": "outside the city. Within the day-trip boundary the register offers 32 more trees between 24 and 40 km, and the precedent for using them is Coole Park counting for Galway. The strongest single candidate is the La Grave carob cluster at Polignano a Mare (32.5 km, on the regional railway): FOUR carobs within 51 metres of each other, girths 820, 410, 390 and 350 cm. An 8.2 metre carob is a genuinely spectacular tree. Molfetta offers a 560 cm eucalyptus and a 450 cm carob at 24 to 29 km, and Terlizzi a 470 cm stone pine at 24.5 km.",
+      "the_open_question": "every one of those day-trip entries carries urban:false and a rural locality (Masseria Montepaolo, Macchia Clemente, La Grave), so each needs a hard rule 10 access check before it can ship, and several will fail it the way the two in-city ones did. That check is the expensive part and is the whole of the remaining Bari pass.",
+      "not_a_route": "Wikidata. data/research/bari-wikidata-candidates.json is empty."
+    },
+    {
+      "date": "2026-08-20 (session, continued)",
+      "finding": "Ran the access check on the two strongest day-trip candidates named above (La Grave carobs, Sovereto pine) and neither clears hard rule 10 with what's findable by search: the carob grove reads as private agricultural land with a public road nearby but no source confirming visibility from it, and the Sovereto pine cannot be confirmed alive given two independent 2025 reports of fallen century-old trees in that immediate area (neither naming this specific tree, so not a confirmed death, but reason enough not to ship on a 2026-08-16 register extract alone). Both moved from open question to blocked with reasons, so a future pass does not re-run the same searches. Molfetta's three candidates (Torre di Pettine eucalyptus, Navarino roverella, Macchia Clemente carob, 24-29 km) remain genuinely unchecked and are the next place to look if Hidde or a later pass wants to keep pushing on Bari's 4th tree; a coastal watchtower locality name ('Torre di Pettine') is worth checking first, since Puglia's coastal towers usually sit on public paths."
+    },
+    {
+      "date": "2026-08-21 (night run)",
+      "finding": "Checked all three Molfetta candidates named above, the last unchecked day-trip supply within Puglia's regional register for Bari. All three moved to blocked, on the same shape of evidence as the rest of this file: the eucalyptus sits 300+ metres from any mapped road or track (OSM Overpass, deep in private farmland), the roverella stands close to a track but the only on-site source describes the adjoining Masseria Navarino as a walled, privately owned ruin with no mention of the tree, and the carrubo sits near a residential road in a private-house contrada with no source distinguishing it from the unrelated, definitely-public carrubo in Parco Lama Martina. None of the three had a Barinedita-style on-site visit to settle it either way, unlike the in-city trees. That exhausts every day-trip candidate this register offers within roughly 30km; Bari's 4th tree is not coming from Puglia's regional register as currently sourced. It stays at 3 verified trees below the 4-tree floor. The path forward, in order of cost: (1) a reader submission or tip, always the cheapest; (2) a from-zero web sweep for a Bari-area tree entirely outside the register (unlikely to be efficient given the register was already exhaustive for the province); (3) asking Hidde whether to widen the day-trip boundary past 30km for this one city. Do not re-run this exact check again without new source material."
+    },
+    {
+      "date": "2026-08-27 (night run)",
+      "finding": "Bari's 4th tree found and shipped: the Lie Tree of Quasano (Wikidata Q55742469, register 01/L220/BA/16), a holm oak at a hamlet centre 29.8km from Bari. Two independent web sources (FAI fondoambiente.it, Italian Botanical Heritage) plus a June 2021 local news article corroborate species, girth, height and its public roadside location; cleared hard rule 10 test 1 via reverse geocode (lands on a pedestrian way, Viale della Pineta, matching the source description of standing in front of the old masseria's gate). City published at 4 trees. See data/cities/bari.json bar_004."
+    }
+  ]
 }

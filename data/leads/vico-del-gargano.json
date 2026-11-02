@@ -1,0 +1,39 @@
+{
+ "city": "Vico del Gargano",
+ "country": "Italy",
+ "city_slug": "vico-del-gargano",
+ "note": "Puglia regional register is the naming body. One tree shipped (vgg_001, Holm Oak of the Capuchins). Other register rows are lead-level: no source beyond the register, no photo, no GPS fix.",
+ "leads": [
+  {
+   "name": "Aleppo pine, Calenella (03/L842/FG/16, girth 340 cm, h 18 m)",
+   "reason": "Register only; coastal tourist area, access to the exact ground unknown (likely beach resorts or private plots); no photo or exact pin in reach; iNaturalist and Commons within 200 m empty.",
+   "approx_lat": 41.935139,
+   "approx_lon": 15.977972
+  },
+  {
+   "name": "Prickly juniper, San Michele (04/L842/FG/16, h 7 m, no girth)",
+   "reason": "Register only. iNaturalist obs 265974654 Juniperus oxycedrus 2025-03-19, GPS 7 m, 7 m from the register point (CC BY-NC), so alive 2025 and a plausible pin, but a 7 m juniper with no girth is not a visit reason and no source names it; held, could be revived with a photo.",
+   "approx_lat": 41.924167,
+   "approx_lon": 15.958611
+  },
+  {
+   "name": "Aleppo pine, San Menaio (05/L842/FG/16, girth 303 cm, h 29 m)",
+   "reason": "Register only; sits in the Pineta Marzini / coastal belt of San Menaio but no source names this pine, ground (campsite or resort) not established; no photo or exact pin in reach.",
+   "approx_lat": 41.934417,
+   "approx_lon": 15.976139
+  },
+  {
+   "name": "Aleppo pine, San Menaio (06/L842/FG/16, girth 330 cm, h 30 m)",
+   "reason": "Register only; same as 05, ground and access not established; no photo or exact pin in reach.",
+   "approx_lat": 41.938172,
+   "approx_lon": 15.962419
+  },
+  {
+   "name": "Aleppo pine, Contrada Particchiano (07/L842/FG/16, girth 395 cm, h 12 m)",
+   "reason": "Register only, rural contrada, no road or path evidence, no source; no photo or exact pin in reach.",
+   "approx_lat": 41.921033,
+   "approx_lon": 15.940922
+  }
+ ],
+ "blocked": []
+}

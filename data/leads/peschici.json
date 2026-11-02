@@ -1,0 +1,22 @@
+{
+ "city": "Peschici",
+ "country": "Italy",
+ "city_slug": "peschici",
+ "note": "Two register rows around Calena.",
+ "leads": [
+  {
+   "name": "Downy oak, Calena (01/G487/FG/16, girth 430 cm, h 20 m)",
+   "reason": "Register only; rural, no path or source; no photo or exact pin in reach.",
+   "approx_lat": 41.936667,
+   "approx_lon": 16.011278
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Holm oak, Abbazia di Calena (02/G487/FG/16, girth 351 cm, h 20 m)",
+   "reason": "Blocked: FAI and the Salviamo Kalena committee both say the abbey is closed to the public (open only 8 September for a pilgrimage walk) and ruinous; no source mentions the oak; hard rule 10.",
+   "approx_lat": 41.937111,
+   "approx_lon": 16.01425
+  }
+ ]
+}

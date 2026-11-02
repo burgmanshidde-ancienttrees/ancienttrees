@@ -1,0 +1,43 @@
+[
+  {
+    "id": "plj_001",
+    "name": "Pino di Lenne",
+    "species": "Aleppo Pine (Pinus halepensis)",
+    "age_estimate": "over 600 years, by one national report",
+    "age_min": 600,
+    "age_max": null,
+    "girth_cm": 445,
+    "height_m": 22,
+    "location": {
+      "address": "Pineta di Lenne, Marine di Lenne, Palagiano (TA)",
+      "latitude": 40.518891,
+      "longitude": 17.02861,
+      "neighbourhood": "Marina di Lenne"
+    },
+    "verified_sources": [
+      "https://dati.puglia.it/ckan/dataset/elenco-degli-alberi-monumentali-della-regione-puglia",
+      "https://development.isprambiente.gov.it/files/ecosistemi-marini/6a-puglia-ripristino-vegetazione-dunale-marine-di-chiatona-e-lenne.pdf",
+      "https://www.inaturalist.org/observations/263644294"
+    ],
+    "official_register": {
+      "name": "Regione Puglia, Elenco degli alberi monumentali (Legge 10/2013), CC BY 4.0",
+      "id": "03/G252/TA/16",
+      "url": "https://dati.puglia.it/ckan/dataset/elenco-degli-alberi-monumentali-della-regione-puglia"
+    },
+    "access": "Free and always open. It stands in the pinewood behind the Lenne beach, about 20 metres from the road through the pines, inside the Stornara state nature reserve; no source sets out entry rules, so keep to the tracks.",
+    "transport": "By car or bike from Palagiano (coast about 7 km from town); no public transport found.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register: Pinus halepensis, girth 445 cm, height 22 m, locality 'Pino di Lenne', GIS point 40.518883,17.029358. ISPRA national restoration report (Repertorio nazionale degli interventi di ripristino, scheda 6a Puglia, seen in the PDF text): 'enorme e plurisecolare (oltre 600 anni) Pino di Lenne, per alcuni il piu vecchio esemplare di pino d'Aleppo d'Europa'. The 600-year figure is that report's claim with no stated basis; a 445 cm girth is consistent with a very old Aleppo pine but the figure is not independently verified, state it as the report's. PIN: iNaturalist obs 263644294 by valentino_traversa, 2025-03-02, GPS accuracy 4 m, at 40.5188909,17.0286096, description 'Il Pino di Lenne, albero monumentale con oltre 400 cm di circonferenza', taxon Pinus halepensis; that GPS fix labelled for the tree is the confirmed pin and also the recent alive check. It sits about 63 m west of the register point; the register point is the less exact one. Dune behind the pinewood has juniper stands; the area is SIC IT9130006 Pinete dell'Arco ionico.",
+    "age_basis": "source",
+    "story": "A national report on restoring Puglia's coastal dunes calls this Aleppo pine more than 600 years old, and adds that some consider it the oldest of its kind in Europe. The report does not say how that age was reached, so take it as the report's number rather than a measured one. What anyone can see is the trunk. Puglia's register of monumental trees gives it 4.45 metres round and 22 metres tall, and the beach in front of it carries its name, the Spiaggia Pino di Lenne.\n\nIt grows in the pinewood of Marina di Lenne, on the Ionian coast below Palagiano, inside the Stornara state nature reserve, where pines stand behind the dunes and juniper holds the sand closer to the sea. This is the trunk people walk in to find, and a naturalist who photographed it in March 2025 recorded it as a monumental tree more than four metres round.\n\nIt stands about 20 metres from the road that runs through the pinewood, so a short walk from the car is enough. No source sets out rules for walking in this part of the reserve, so keep to the tracks and leave the dune plants where they grow.",
+    "how_to_recognise": "You can recognise it as the biggest pine in the Lenne pinewood, its trunk more than four metres round, about 20 metres from the road behind the beach.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "pin_source": "iNaturalist observation 263644294, GPS fix at the tree (4 m), labelled Pino di Lenne"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "note": "Second Puglia pass, 2026-11-02. Held for the 25-a-day pace; build with scripts/build_puglia_2.py.",
+  "places": {
+    "palagiano": {
+      "city": "Palagiano",
+      "country": "Italy",
+      "hero_tree_id": "plj_001",
+      "oldest_tree_id": "plj_001",
+      "intro": "Palagiano's tree is the Pino di Lenne, an Aleppo pine in the pinewood of Marina di Lenne on the Ionian coast, 4.45 metres round and 22 metres tall in Puglia's register of monumental trees. A national report on the dunes here calls it more than 600 years old. It stands about 20 metres from the road through the pines, inside the Stornara state nature reserve, and the beach in front of it carries its name.",
+      "meta_description": "The Pino di Lenne, a giant Aleppo pine in the Marina di Lenne pinewood near Palagiano, 4.45 m round: where it stands and how to find it.",
+      "question_meta": "The Pino di Lenne is a monumental Aleppo pine in the Marina di Lenne pinewood near Palagiano, about 20 metres from the road behind the beach.",
+      "question_answer": "The tree to see near Palagiano is the Pino di Lenne, an Aleppo pine 4.45 metres round and 22 metres tall in the pinewood behind the Lenne beach on the Ionian coast. A national report calls it more than 600 years old. It stands about 20 metres from the road through the pines and costs nothing to visit.",
+      "question_context": "Marina di Lenne is the coast of Palagiano on the Gulf of Taranto, about 7 kilometres from the town. Behind the beach a pinewood of Aleppo pine runs along the dunes, part of the Stornara state nature reserve, with juniper on the sand nearer the sea. Puglia's register of monumental trees lists one tree here, the Pino di Lenne, 4.45 metres round and 22 metres tall. A national report on restoring the dunes of Chiatona and Lenne calls it enormous and more than 600 years old, and says some consider it the oldest Aleppo pine in Europe; it does not say how the age was found. The beach in front of it is named after it. The tree stands about 20 metres from the road that runs through the pinewood, so a short walk from where you park is enough. No source sets out rules for walking in this part of the reserve, so keep to the tracks and off the dune plants. There is no public transport to the beach that we could find; by car or bike it is about 15 minutes from Palagiano.",
+      "faq": [
+        {
+          "q": "How old is the Pino di Lenne?",
+          "a": "A national report on the Lenne dunes calls it more than 600 years old and says some consider it the oldest Aleppo pine in Europe. It gives no basis for the figure, and nobody has dated the tree."
+        },
+        {
+          "q": "How do you get to the Pino di Lenne?",
+          "a": "Drive or cycle from Palagiano to Marina di Lenne, about 7 kilometres. The tree stands in the pinewood behind the beach, about 20 metres from the road through the pines."
+        }
+      ]
+    },
+    "vico-del-gargano": {
+      "city": "Vico del Gargano",
+      "country": "Italy",
+      "hero_tree_id": "vgg_001",
+      "oldest_tree_id": "vgg_001",
+      "intro": "Vico del Gargano's tree is the holm oak in front of the Capuchin friary, 5.2 metres round and 18 metres tall in Puglia's register of monumental trees. A plaque says a friar planted it some 300 years ago. It stands in the open forecourt, ringed by a stone bench, a few minutes' walk from the old centre, and you do not need to enter the friary to see it.",
+      "meta_description": "The Capuchins' holm oak in Vico del Gargano, 5.2 m round and planted by a friar some 300 years ago by its plaque: where it stands and how to visit.",
+      "question_meta": "The holm oak of the Capuchins stands in the open forecourt of the friary in Vico del Gargano, a few minutes' walk from the old centre.",
+      "question_answer": "The tree to see in Vico del Gargano is the holm oak of the Capuchins, 5.2 metres round and 18 metres tall, in the open forecourt of the Capuchin friary. A plaque says a friar planted it some 300 years ago. It is free to see at any time, a few minutes on foot from the old centre.",
+      "question_context": "Vico del Gargano is a hill town in the north of the Gargano promontory, between the Foresta Umbra and the coast at San Menaio. Its best-known tree stands in front of the friary of the Santissimo Crocifisso, kept by Capuchin friars. Puglia's register of monumental trees gives the holm oak 5.2 metres round and 18 metres tall, and the State Forestry Corps classed it as a tree of exceptional historical and monumental value. A plaque says it was planted by a friar of the town, Fra' Nicola da Vico, some 300 years ago; that is the only date given for it. The botanist Adriano Fiori recorded it by the end of the nineteenth century. A storm in 1934 took one of its main branches and the trunk carries a long split. The tree stands in the open forecourt, ringed by a low stone bench, so the friary itself need not be entered. On Good Friday the confraternities stop in front of the friary on their procession. Buses run to Vico from Foggia and Peschici; there is no railway station in the town.",
+      "faq": [
+        {
+          "q": "Can you visit the holm oak of the Capuchins?",
+          "a": "Yes. It stands in the open forecourt in front of the Capuchin friary, free and open at all times, so you do not need to go inside the friary."
+        },
+        {
+          "q": "How old is the Capuchins' holm oak in Vico del Gargano?",
+          "a": "A plaque at the friary says a friar planted it some 300 years ago. Nobody has dated the tree itself; the register gives it 5.2 metres round and 18 metres tall."
+        }
+      ]
+    }
+  }
+}

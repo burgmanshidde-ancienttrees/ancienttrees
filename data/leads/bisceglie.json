@@ -1,0 +1,23 @@
+{
+  "slug": "bisceglie",
+  "leads": [
+    {
+      "name": "Cypress of Orto Schinosa",
+      "species": "Italian Cypress (Cupressus sempervirens)",
+      "latitude": 41.240761,
+      "longitude": 16.499028,
+      "register_id": "02/A883/BT/16",
+      "reason": "Register only (girth 248, height 22); an orto, no source on access, no photo, no pin evidence. No photo or exact pin in reach."
+    },
+    {
+      "name": "Holm Oak, Corso Umberto I",
+      "species": "Holm Oak (Quercus ilex)",
+      "latitude": 41.240261,
+      "longitude": 16.503736,
+      "register_id": "03/A883/BT/16",
+      "reason": "Register only (girth 320, height 20); searches found no page on any leccio on Corso Umberto I, so private or courtyard ground is possible; no photo or pin evidence."
+    }
+  ],
+  "blocked": [],
+  "notes": "bsg_001 (Pistachio, Veneziani garden) delivered in data/research/bisceglie-verified.json. 2026-11-02."
+}

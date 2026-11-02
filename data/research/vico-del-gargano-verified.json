@@ -1,0 +1,49 @@
+[
+  {
+    "id": "vgg_001",
+    "name": "Holm Oak of the Capuchins",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 350,
+    "girth_cm": 520,
+    "height_m": 18,
+    "location": {
+      "address": "Piazzale of the Convento del SS. Crocifisso dei Cappuccini, Vico del Gargano (FG)",
+      "latitude": 41.900628,
+      "longitude": 15.968003,
+      "neighbourhood": "Convento dei Cappuccini"
+    },
+    "verified_sources": [
+      "https://dati.puglia.it/ckan/dataset/elenco-degli-alberi-monumentali-della-regione-puglia",
+      "https://luoghi.italianbotanicalheritage.com/en/?p=35548",
+      "https://www.komoot.com/highlight/6598654",
+      "https://www.touringclub.it/destinazioni/vico-del-gargano",
+      "https://www.inaturalist.org/observations/326073423"
+    ],
+    "official_register": {
+      "name": "Regione Puglia, Elenco degli alberi monumentali (Legge 10/2013), CC BY 4.0",
+      "id": "01/L842/FG/16",
+      "url": "https://dati.puglia.it/ckan/dataset/elenco-degli-alberi-monumentali-della-regione-puglia"
+    },
+    "access": "Free. The tree stands in the open forecourt (piazzale) in front of the Capuchin friary, a short walk from the old town; Italian Botanical Heritage says it grows 'nel piazzale antistante' and Komoot describes it as a town symbol many visitors come to see, where the confraternities stop on Good Friday. The friary itself is not entered.",
+    "transport": "Vico del Gargano old centre, about 10 to 15 minutes on foot (Italian Botanical Heritage: 'a pochi passi dal centro storico'); no rail. Bus from Foggia/Peschici on Ferrovie del Gargano/SITA lines to Vico.",
+    "location_precision": "confirmed",
+    "location_site": {
+      "name": "Forecourt of the Capuchin friary",
+      "radius_m": 30
+    },
+    "curation_status": "flagged",
+    "verify_notes": "SOURCES: (1) Puglia register 01/L842/FG/16, Quercus ilex, girth 520 cm, height 18 m (register CC BY 4.0). (2) Italian Botanical Heritage page: classified by the State Forestry Corps as an 'example of exceptional historical and monumental value'; already recognised at the end of the 1800s by botanist Adriano Fiori; a commemorative plaque reports it was planted by Capuchin friar Fra' Nicola da Vico del Gargano and blessed by his Father Superior, 'some 300 years ago'; circumference quoted as 16.5 ft (about 503 cm, consistent with the register 520 cm); huge longitudinal gash and a branch lost to a storm in 1934; wood decay needs tree surgery. (3) Komoot highlight 'The Ancient Holm Oak of the Capuchins': goal of many visitors, ritual stop of the confraternities on Good Friday in front of the friary, 'a symbol of the town, a natural monument'. (4) Touring Club: holm oak of exceptional size in the forecourt of the Capuchin convent. Age: the plaque story is the only basis ('some 300 years'), repeated as vague; age_min/max is a broad band around it. Source for the planting is the plaque as reported by IBH; not independently dated. Not to be confused with the other old oak in the churchyard of Santa Maria degli Angeli mentioned by it.wikivoyage. ALIVE: iNaturalist obs 326073423, Quercus ilex, 2022-06-02, GPS accuracy 4 m at 41.900628,15.968003 (about 17 m from the register point), photos CC BY-NC (not usable on our licence list, alive evidence only); Komoot highlight pin at 41.900920,15.968073 (about 20 m from register). Register page last updated not known; no photo after 2022 found, so flagged 'alive 2022'. PIN: three points (register, iNat GPS, Komoot pin) all within about 35 m of each other in the forecourt, none on an individual crown I could see; kept approximate with location_site (forecourt, 30 m). The tree is the only large holm oak there per sources, so a visitor will find it. Hard rule 10: tree is in the open piazzale, not inside the cloister. OSM check not possible (Overpass down). PIN UPGRADE 2026-11-02 (dispatcher): looked at the iNaturalist photographs of obs 326073423; they show the monumental holm oak in the open forecourt with a circular stone bench, so its 4 m GPS fix is a fix at the tree: pin moved to it and set confirmed.",
+    "story": "A plaque at the Capuchin friary of Vico del Gargano says this holm oak was planted by one of its friars, Fra' Nicola da Vico, and blessed by his superior, some 300 years ago. The plaque is the only date anyone gives and nobody has tested it, but the tree has the bulk to match: 5.2 metres round and 18 metres tall in Puglia's register of monumental trees, under one dense, rounded crown.\n\nThe botanist Adriano Fiori had already noted it by the end of the nineteenth century, and the State Forestry Corps later classed it as a tree of exceptional historical and monumental value. It has not had an easy life. A storm in 1934 tore away one of its great branches, and a long split runs down the trunk where the wood has decayed, which is why it needs the care of tree surgeons now.\n\nIt stands in the open forecourt in front of the friary, ringed by a low stone bench, so there is no need to enter the convent to see it. Walkers' guides call it a symbol of the town, and on Good Friday the confraternities stop in front of the friary on their procession. The old centre of Vico is a few minutes away on foot.",
+    "age_basis": "source",
+    "pin_source": "iNaturalist observation 326073423 (2022-06-02), GPS fix 4 m at the tree; its photographs show this holm oak in the forecourt with its ring bench (looked at 2026-11-02)",
+    "how_to_recognise": "You can recognise it as the big holm oak in the middle of the friary forecourt, ringed by a low stone bench.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]

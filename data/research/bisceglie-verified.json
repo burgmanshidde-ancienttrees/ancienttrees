@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bsg_001",
+    "name": "The Pistachio of the Veneziani Botanical Garden",
+    "species": "Pistachio (Pistacia vera)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 268,
+    "height_m": 7,
+    "location": {
+      "address": "Giardino Botanico Santonio Veneziani, Via Ariosto, Bisceglie",
+      "latitude": 41.237575,
+      "longitude": 16.495794,
+      "neighbourhood": "Bisceglie town"
+    },
+    "verified_sources": [
+      "https://dati.puglia.it/ckan/dataset/elenco-degli-alberi-monumentali-della-regione-puglia",
+      "https://iltaccodibacco.it/bisceglie/giardino-botanico-veneziani",
+      "https://www.inaturalist.org/observations/408878095"
+    ],
+    "official_register": {
+      "name": "Regione Puglia, Elenco degli alberi monumentali (Legge 10/2013), CC BY 4.0",
+      "id": "01/A883/BT/16",
+      "url": "https://dati.puglia.it/ckan/dataset/elenco-degli-alberi-monumentali-della-regione-puglia"
+    },
+    "access": "Municipal botanical garden donated to the Comune di Bisceglie, run by the association Mosquito APS; no general opening hours found. A guided visit was listed for 7 June 2026 at 18:00, free with a donation, booking by phone, groups of 15 to 20. Ask via 327 4216440 or the association's Facebook page.",
+    "transport": "In Bisceglie town, Via Ariosto; Bisceglie railway station roughly 1 km away (distance from coordinates, not verified on a route).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Giardino Botanico Santonio Veneziani",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Register only (Puglia regional list, 2026-08-16 extract): Pistacia vera, girth 268 cm, height 7 m, not urban-flagged. Girth and species not seen on any other page; no second source names this tree. Pistachio of this girth is notable for the species; no age source, leave age empty. Garden is small and municipal (owner Comune di Bisceglie, donor Col. Santonio Veneziani), run by Mosquito APS who give guided visits, school workshops, picnics and evening events. Alive check: iNaturalist obs 408877326 (2026-10-17, genus Pistacia, GPS accuracy 12 m, 36 m from the register point, no licence stated) and 408878095 in the garden the same day show a Pistacia in the garden recently, but it is not tied to the registered trunk. Pin is the register GIS point, approximate; the garden is the small site. Access is event/booking based: weak. If the dispatcher judges bookable visits insufficient, treat as lead. lifecheck.py not run (offline script not used). Overpass hosts hang (overpass-api.de blocklisted, kumi timed out).",
+    "photo_candidates": []
+  }
+]

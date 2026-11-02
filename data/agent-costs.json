@@ -14761,6 +14761,38 @@
       "tokens": 184170,
       "trees": 11,
       "note": "11 stories (cyp_005 to cyp_015) and the Cyprus place fields rewritten for 15 trees; held for the pace, build with scripts/build_cyprus.py. Dispatcher (register import, 4 Commons photos viewed and approved, builder) about 120k more, estimated. All in about 1.0M tokens, roughly 92k a tree."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "foresta-umbra+vieste+mattinata+san-giovanni-rotondo",
+      "tokens": 143872,
+      "trees": 0,
+      "note": "Puglia register rows. Falascone yews blocked (fenced strict reserve, research visits only); Baracconi beech verified but its only Commons photo has no locality, so held in research; trail trees and Vieste oaks to leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "vico-del-gargano+rodi-garganico+peschici+ischitella+isole-tremiti",
+      "tokens": 127559,
+      "trees": 1,
+      "note": "Vico Capuchin holm oak (pin confirmed by the dispatcher from an iNaturalist 4 m GPS fix after looking at its photos); Tremiti ombu stand access unknown, held; the rest register-only leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "bisceglie+molfetta+polignano-a-mare+bari+foggia+terlizzi+palagiano",
+      "tokens": 144937,
+      "trees": 1,
+      "note": "Pino di Lenne (confirmed pin from a labelled iNaturalist GPS fix); Bisceglie pistachio has neither photo nor confirmed pin, held; Villa Sbisa is university property; the rest register-only."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "palagiano+vico-del-gargano",
+      "tokens": 80000,
+      "trees": 2,
+      "note": "Dispatcher session wrote both stories and place fields itself (no Opus pass for two trees), builder scripts/build_puglia_2.py, held for the pace. Tokens estimated."
     }
   ]
 }
