@@ -331,16 +331,37 @@ def sync():
 
 
 INVITE_SUBJECT = "Your {place} trees"
+# THE VERB IS COLLECT (Hidde, 2026-11-02: "lets use the verb collect thanks
+# fo collecting the xx trees"): the product's own word for standing at a tree,
+# counted from what they collected in the place, then the photographs. One
+# thanks, at the top; the sign-off is the name alone.
 INVITE_BODY = (
     "Hi,\n\n"
-    "Thanks so much for your photographs of {what} in {place}. They are on the trees' pages now, "
-    "for everybody to see:\n"
+    "Thanks for collecting {count} in {place}. Your photographs of {what} are on the trees' "
+    "pages now, for everybody to see:\n"
     "{links}\n\n"
     "We would love to make you our ambassador for {place}: somebody who adds photos, checks the "
     "facts and helps sharpen the list. What do you think of our {place} list, is it missing any, "
     "are some wrong? Let us know if you are up for it.\n{listlink}\n\n"
-    "Thanks,\nHidde\nAncient Trees\n"
+    "Hidde\nAncient Trees\n"
 )
+_NUMBER_WORDS = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+                 "ten", "eleven", "twelve"]
+
+
+def _collected(uid, slug, at_least):
+    """How many trees this account collected in the place, read from the
+    `visited` table; never fewer than the trees it photographed there."""
+    n = at_least
+    try:
+        with open(os.path.join(ROOT, "data", "cities", f"{slug}.json"), encoding="utf-8") as fh:
+            here = {t["id"] for t in json.load(fh).get("trees") or []}
+        rows = _req(f"/rest/v1/visited?select=tree_id&user_id=eq.{uid}") or []
+        n = max(n, sum(1 for r in rows if r.get("tree_id") in here))
+    except Exception:
+        pass
+    word = _NUMBER_WORDS[n] if n < len(_NUMBER_WORDS) else str(n)
+    return f"{word} tree" if n == 1 else f"{word} trees"
 BASE_URL = "https://ancienttrees.app"
 
 
@@ -443,7 +464,8 @@ def invite_scan(send):
             print(f"invite {uid[:8]} / {slug}: the feed has no page for one of the trees yet, next knock")
             continue
         links = "\n".join(BASE_URL + urls[tid] for _, tid in pairs)
-        body = INVITE_BODY.format(what=what, place=place, itis=itis, links=links,
+        count = _collected(uid, slug, len(pairs)) if KEY else f"{len(pairs)} trees"
+        body = INVITE_BODY.format(what=what, place=place, itis=itis, links=links, count=count,
                                   listlink=f"{BASE_URL}/{slug}")
         subject = INVITE_SUBJECT.format(place=place)
         if mailcheck_ok:
