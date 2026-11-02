@@ -136,8 +136,7 @@ struct SignInSheet: View {
                 let given = [cred.fullName?.givenName, cred.fullName?.familyName]
                     .compactMap { $0 }.joined(separator: " ")
                 Task {
-                    await account.signInWithApple(idToken: token, nonce: rawNonce)
-                    account.noteProviderName(given)
+                    await account.signInWithApple(idToken: token, nonce: rawNonce, name: given)
                     await finishIfSignedIn()
                 }
             }

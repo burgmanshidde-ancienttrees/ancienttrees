@@ -470,16 +470,22 @@ public final class Account {
 
     // MARK: - the Apple route
 
-    public func signInWithApple(idToken: String, nonce: String) async {
+    /// `name` is Apple's fullName from the credential, which Apple hands over
+    /// on the first authorisation only and never puts in the token. It goes
+    /// into the session in the same step as the session itself (Hidde,
+    /// 2026-11-02: "ik wil dat je het gat dicht"): noted afterwards, the
+    /// sign-in had already woken the account reload, which ran without it.
+    public func signInWithApple(idToken: String, nonce: String, name: String? = nil) async {
         state = .working
         problem = nil
         let r = Supa.request("/auth/v1/token?grant_type=id_token",
                              body: ["provider": "apple", "id_token": idToken, "nonce": nonce])
-        guard let parsed = await Self.send(r) else {
+        guard var parsed = await Self.send(r) else {
             state = .signedOut
             problem = "Apple sign-in is not switched on yet. Use your email for now."
             return
         }
+        if let name, !name.trimmingCharacters(in: .whitespaces).isEmpty { parsed.providerName = name }
         store(parsed)
     }
 
