@@ -3,6 +3,21 @@
   {
    "candidate": "Perdana Botanical Garden (Taman Botani Perdana / Lake Gardens), including the Carcosa Seri Negara grounds within it",
    "reason": "Real old-garden site (laid out from 1888/1889) with repeated secondary-source claims of 'heritage trees' and 'mahogany trees more than 300 years old', but no individually named or documented specimen tree found in this pass. The 300-year mahogany claim is almost certainly wrong or a bridge claim: mahogany (Swietenia) is a New World genus not introduced to Malaya until the 19th/20th century, and the garden itself is only ~138 years old; it appears verbatim across several tourism sites and looks copied rather than sourced, so it was not used. The Carcosa Seri Negara grounds inside the gardens (former colonial residence, now a museum since 2017, described as open to the public) are separately reported to hold 'some of the most majestically shaped rain trees in the country', again as an ensemble rather than one named tree. A future pass should try: the official klbotanicalgarden.gov.my site (did not resolve for this pass, see verify_notes-style host note below), a rendered/JS fetch if it is JS-heavy, DBKL's own heritage-tree list (593 trees reported city-wide per a 2020 Selangorkini article, no public list found), or an on-the-ground photo survey to identify one standout individual specimen worth a page entry."
+  },
+  {
+   "candidate": "FRIM Kepong Field 12 keladan (Dryobalanops oblongifolia), largest of the 1910-1912 trial plantings",
+   "reason": "One source only (FRIM news item 22 Jan 2018, https://www.frim.gov.my/keladan-among-the-oldest-planted-forest-trees-at-frim/ and ?p=24551): dbh 115.8 cm, height 36.4 m, planted Dec 1910 to 1912 (article's '116-year-old' conflicts with that, ignored). FRIM is the ground's owner so the source is sufficient, but no tree coordinate (Field 12 only), no label or public-access statement for Field 12, no recent alive check. Needs a pin (aerial or a visitor GPS) and confirmation that Field 12 is open to visitors. About 30 minutes from central KL by KTM Komuter to Kepong Sentral plus taxi.",
+   "found": "2026-11-02"
+  },
+  {
+   "candidate": "KL Forest Eco Park (Bukit Nanas) large pulai near KL Tower and a 'century-old' jelutong",
+   "reason": "Only travel listings and one blog (rainforestjournal.com/?p=848); no measurement, no coordinate, no official source. Forest reserve gazetted 1906 (Wikipedia, Bukit Nanas); trees reported labelled in the park. Needs a labelled-tree survey or Forestry Department list.",
+   "found": "2026-11-02"
+  },
+  {
+   "candidate": "DBKL 'Pokok Berusia' labelled old trees (2020 announcement, https://www.thesundaily.my/local/dbkl-to-preserve-old-trees-as-natural-heritage-LY4346805)",
+   "reason": "No public list found; 2019 DBKL inspection scheme covers trees over 30 years or girth over 1.5 m, 1,488 inspected, 173 felled (RTM). Ask DBKL for the list, or photograph labelled trees on site.",
+   "found": "2026-11-02"
   }
  ],
  "blocked": [

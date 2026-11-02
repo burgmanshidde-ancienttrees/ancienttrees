@@ -1,0 +1,33 @@
+{
+ "city": "Ayutthaya",
+ "country": "Thailand",
+ "updated": "2026-11-02",
+ "about": "Trees found while researching Ayutthaya that are not published. Source for most: the Ministry of Culture Heritage Trees of the Land lists (2017, 2018, 2019) as reproduced in th.wikipedia.",
+ "leads": [
+  {
+   "name": "Bodhi on the chedi, Wat Na Phra Meru",
+   "species": "Bodhi Tree (Ficus religiosa)",
+   "latitude": 14.36299,
+   "longitude": 100.55853,
+   "source": "OSM node 14096727338 'ต้นโพธิ์ปรกเจดีย์' (natural=tree)",
+   "note": "A bodhi crowning one of the three brick chedis behind the ordination hall of Wat Na Phra Meru (the temple that survived the 1767 sack), called a natural sculpture by the Ayutthaya provincial site (search summary only; page 404). No age. lifecheck RECENT hit at the spot was a Tecoma, not the tree, so alive not shown. Needs a dated photo of the tree and an age or measurement; lead: no second source or alive evidence yet."
+  },
+  {
+   "name": "Wat Phra Ngam bodhi gate",
+   "note": "Verified as ayu_002 (flagged, approximate)."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Ancient jujube grove, Ayutthaya Royal Palace and Queen Sirikit Park",
+   "species": "Jujube (Ziziphus mauritiana)",
+   "latitude": 14.358784,
+   "longitude": 100.558128,
+   "age_register": "100-130 years",
+   "girth_register": "1.5-2.5 (units unclear, the register's girth cell says ปี, corrupt)",
+   "height_register_m": "7-10",
+   "source": "Ministry of Culture Heritage Trees 2017 list; Khaosod and Matichon-era news: 779 to 800+ old jujube trees in the historical park, eldest about 140 years (summaries)",
+   "reason": "a grove of hundreds of trees, no single collectible point; register age and girth cells corrupt"
+  }
+ ]
+}

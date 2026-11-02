@@ -1,0 +1,66 @@
+[
+  {
+    "id": "mne_001",
+    "name": "Stara Maslina (Old Olive Tree of Mirovica)",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "roughly 2,000 to 2,250 years",
+    "age_min": 2000,
+    "age_max": 2250,
+    "girth_cm": 1000,
+    "location": {
+      "address": "Mirovica, Stari Bar, Bar, Montenegro (about 5 km from Bar towards Ulcinj, by the M-1 road)",
+      "latitude": 42.0801656,
+      "longitude": 19.1294078,
+      "neighbourhood": "Mirovica, Bar"
+    },
+    "verified_sources": [
+      "https://www.oliveoiltimes.com/world/concrete-and-water-are-damaging-montenegros-oldest-olive-tree/132139",
+      "https://www.novosti.rs/crna-gora/vesti/1321494/bitka-stablo-starije-svega-stanje-barske-masline-stare-2-248-godina-postalo-zabrinjavajuce",
+      "https://www.rferl.org/a/montenegro-2000-years-olive-tree-threat/32786991.html",
+      "https://myguidemontenegro.com/things-to-do/old-olive-tree",
+      "https://en.wikipedia.org/wiki/Stara_Maslina",
+      "https://www.openstreetmap.org/node/2269422377",
+      "https://www.inaturalist.org/observations/410586520"
+    ],
+    "access": "Paid entry to the small fenced park around the tree, reported as about 1 euro (myguidemontenegro.com; one reviewer reports 2 euro); opening hours not published on any page seen, confirm locally.",
+    "transport": "About 5 km from Bar towards Ulcinj; local bus or taxi from Bar. From Kotor about 60 km, roughly 1 hour by road (day trip, not a walk).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Day trip from Kotor, about 1 h by road; label as Bar / Mirovica. Headline tree of Montenegro. Age: Istanbul University forestry scientists estimate about 2,247 years (Olive Oil Times); Novosti says 2,248; RFE/RL Jan 2024 says 'more than 2,200'; Wikipedia and tourist pages say 'over 2,000' (tradition). Treat as an estimate, olives hollow and cannot be ring-counted. Girth about 10 m (Novosti, myguidemontenegro); Nova.rs search snippet said 11 m, not seen on a fetched page. Protection: Novosti says protected in 1963 under the former SFRJ and in early January 2021 declared a Monument of Nature, category 'group of very old trees'; the decision text and issuing body were not found, so the official register link is not recorded (flagged: no official document seen). Condition: in 2023 the municipality found parts of the crown drying; cause argued over (high groundwater, concrete ring and walls round the roots per the Bar Olive Growers Association, Alkovic); expert commission formed Aug 2023, drainage works under way (Novosti, RFE/RL 2024). One side of the trunk burnt, folklore says by a dropped match (Wikipedia, citation needed). Pin: OSM natural=tree node 2269422377 named Stara Maslina at 42.0801656, 19.1294078, matches the Wikipedia coordinate 42 04 48 N 19 07 46 E; single enclosed tree, one clear crown. Alive: lifecheck.py reports RECENT, iNaturalist observation 2026-10-23. Entry fee reported 1 EUR by a travel guide (secondary), say 'about'.",
+    "story": "One team of forestry scientists from Istanbul University put this olive at about 2,247 years. That is an estimate, and other counts differ a little. The Serbian paper Novosti gives 2,248, Radio Free Europe said in 2024 more than 2,200, and tradition and the tourist pages settle for over 2,000. Olives hollow out with age and cannot be dated by counting rings, so a range is the honest answer. Olive Oil Times calls it Montenegro's oldest olive tree.\n\nThe trunk is about 10 metres round. One side of it is burnt, and local folklore blames a dropped match. It was first protected in 1963, under the old Yugoslavia, and in January 2021 it was declared a Monument of Nature.\n\nIn 2023 the municipality found parts of the crown drying out. What caused it is still argued over. The Bar Olive Growers Association points to high groundwater and to the concrete ring and walls built around the roots. An expert commission was formed in August 2023 and drainage works followed.\n\nThe Stara Maslina stands in Mirovica, in Stari Bar, about 5 kilometres from Bar on the road towards Ulcinj, inside a small fenced park. A travel guide gives the entry fee as about 1 euro, and one visitor paid 2. Opening hours are not published, so ask locally before you go. From Kotor it is a day trip of about an hour each way by road, with a local bus or taxi from Bar for the last stretch.",
+    "how_to_recognise": "You can recognise it by the trunk, about 10 metres round, with one side burnt. It stands alone in its own small fenced park in Mirovica, Stari Bar."
+  },
+  {
+    "id": "mne_002",
+    "name": "Black Poplar of Trg od Kina",
+    "species": "Black Poplar (Populus nigra)",
+    "age_estimate": "roughly 350 years",
+    "age_min": 300,
+    "age_max": 400,
+    "age_basis": "source",
+    "girth_cm": 510,
+    "height_m": 17,
+    "location": {
+      "address": "Trg od Kina (Pjaca od kina), Old Town, Kotor",
+      "latitude": 42.42511,
+      "longitude": 18.77038,
+      "neighbourhood": "Stari Grad, Kotor"
+    },
+    "verified_sources": [
+      "https://www.kotor.me/files/documents/1618383735-18.6.pdf",
+      "https://www.kotor.me/files/documents/1602069272-Studija zastite - Populus nigra - Kotor PDF Final (1).pdf",
+      "https://www.inaturalist.org/observations/369222525"
+    ],
+    "official_register": {
+      "name": "Municipality of Kotor: Odluka o proglasenju spomenika prirode 'Stablo crne topole (Populus nigra) u Starom gradu Kotoru', Skupstina opstine Kotor, 31 March 2021",
+      "url": "https://www.kotor.me/files/documents/1618383735-18.6.pdf"
+    },
+    "access": "Free, open public square inside the walled Old Town (UNESCO site); no entry fee.",
+    "transport": "In the Old Town, a few minutes on foot from the Sea Gate and the main bus station (about 5 to 10 min).",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Legally protected natural monument (III category, regime of protection II, parcel 341 K.O. Kotor II, crown projection 154 m2). Measurements are from the decision and the protection study prepared for it (Agency-prepared study, 2020 valorisation): girth 510 cm (diameter 162 cm), height 17 m, crown span 14.20 m, crown asymmetric from pruning of dry branches. Age: study says it is assumed to have been planted around 1667, after the great earthquake that hit Kotor, in the courtyard of the former Franciscan monastery of Our Lady of the Angels (Gospe od Andela); the church was rebuilt 1722, the complex became the cinema 'Boka' in the 1950s, now City Gallery and library. The age rests on an assumption in the study, not a dated record: broad range, about 350 years. The study says black poplars live up to about 300 years, this one over 300. Official coordinate N 42 25 30.4163 E 18 46 13.4314 (central point of the monument) = 42.42511, 18.77038. Alive: decision 2021; iNaturalist observation 2026-05-09 by lifecheck.py (RECENT). Plane trees: search found no protected plane in Kotor Old Town; this poplar is the tree. The tree's proposal draft on kotor.me was titled PRIJEDLOG; the adopted decision (18.6 pdf) dated 31.03.2021 was fetched and read. Pin is the official crown-centre coordinate of a single tree on a small square, so confirmed.",
+    "story": "Black poplars live to about 300 years, according to the study that got this one protected, and this one is past it. In March 2021 the municipal assembly of Kotor declared it a natural monument, a single poplar in a small square inside the walled Old Town.\n\nThe study assumes it was planted around 1667, after the great earthquake that struck Kotor, in the courtyard of the Franciscan monastery of Our Lady of the Angels. That date is the study's assumption, not a written record, so take roughly 350 years as a broad figure. The monastery church was rebuilt in 1722. In the 1950s the complex became the Boka cinema. The square is still called Trg od Kina, Cinema Square, and the buildings now hold the City Gallery and the library.\n\nThe poplar has stood through all of it. Its trunk is 5.10 metres round and 1.62 metres across, it rises 17 metres, and its crown spreads just over 14 metres. The crown is lopsided, because dry branches have been cut away over the years.\n\nThe Old Town is a UNESCO World Heritage site and the square is open and free. It is a few minutes on foot from the Sea Gate and the main bus station.",
+    "how_to_recognise": "You can recognise it by the trunk, 5.10 metres round, and a lopsided crown over 14 metres wide. It stands alone in Trg od Kina, the small square of the former Franciscan monastery in the Old Town."
+  }
+]
