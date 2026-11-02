@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-02 night run (second attempt, 08:xx window): Bergamo Gorlago cork oak live
+
+Bergamo verify found one tree (bgm_009, register only, view-only through a villa gate); write pass merged it with a Commons photo (Pattiferra, CC BY-SA, looked at, approved; reverse with status held; photo_light could not run, PIL missing). Bergamo now nine. Zanica park stays a lead; Torre Boldone cedar felled. Same six verified trees and five READY leads held again for the same reasons (about 95k tokens wasted, the earlier entry said not to re-dispatch). new-york claim released with --force (its two entries are held). Shelf still empty.
+
 ## 2026-11-02 night run (06:32 window): nothing shippable, enrichment lane dry
 
 Rungs 1 to 3 clear (no sightings, no notes; health.py only flags a deploy behind main, which the end-of-window dispatch covers). The shelf is empty (4 READY leads are the cardiff/munich/coimbra ones held yesterday). Enrich new-york+dublin+montreal (4 trees): verify agent closed 0 of 12 gaps (qchron.com 429, espacepourlavie.ca serves an identical JS shell for every path, Ancient Yew Group has no grid reference for the Marlay yew, one Overpass timeout); recorded as dead ends for 90 days. photo_fetch --zero found no candidate for por_031 or any Portugal tree (the Fort Worth, Rotterdam, Sanremo candidates are interiors or the wrong subject, not judged). new-york claim left in place: nyc_029 and nyc_031 sit in the verified file unmerged (held earlier), so release refused. Stratford-upon-Avon RETRY not taken: its note names no new open source. Cost: one verify pass, about 51k tokens. For the next run: licence ask to IFCN Madeira and a manual photo for por_031 are the only open Portugal ways.
