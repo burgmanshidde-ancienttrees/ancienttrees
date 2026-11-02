@@ -1,9 +1,9 @@
 [
   {
     "id": "bsg_001",
-    "name": "The Pistachio of the Veneziani Botanical Garden",
+    "name": "Pistachio of the Veneziani Garden",
     "species": "Pistachio (Pistacia vera)",
-    "age_estimate": "not documented",
+    "age_estimate": null,
     "age_min": null,
     "age_max": null,
     "girth_cm": 268,
@@ -24,7 +24,7 @@
       "id": "01/A883/BT/16",
       "url": "https://dati.puglia.it/ckan/dataset/elenco-degli-alberi-monumentali-della-regione-puglia"
     },
-    "access": "Municipal botanical garden donated to the Comune di Bisceglie, run by the association Mosquito APS; no general opening hours found. A guided visit was listed for 7 June 2026 at 18:00, free with a donation, booking by phone, groups of 15 to 20. Ask via 327 4216440 or the association's Facebook page.",
+    "access": "Booked visits only. The Giardino Botanico Santonio Veneziani is a small municipal garden run by the association Mosquito APS, with no regular opening hours; guided visits are booked with the association and have been free with a donation.",
     "transport": "In Bisceglie town, Via Ariosto; Bisceglie railway station roughly 1 km away (distance from coordinates, not verified on a route).",
     "location_precision": "approximate",
     "location_site": {
@@ -32,7 +32,15 @@
       "radius_m": 50
     },
     "curation_status": "flagged",
-    "verify_notes": "Register only (Puglia regional list, 2026-08-16 extract): Pistacia vera, girth 268 cm, height 7 m, not urban-flagged. Girth and species not seen on any other page; no second source names this tree. Pistachio of this girth is notable for the species; no age source, leave age empty. Garden is small and municipal (owner Comune di Bisceglie, donor Col. Santonio Veneziani), run by Mosquito APS who give guided visits, school workshops, picnics and evening events. Alive check: iNaturalist obs 408877326 (2026-10-17, genus Pistacia, GPS accuracy 12 m, 36 m from the register point, no licence stated) and 408878095 in the garden the same day show a Pistacia in the garden recently, but it is not tied to the registered trunk. Pin is the register GIS point, approximate; the garden is the small site. Access is event/booking based: weak. If the dispatcher judges bookable visits insufficient, treat as lead. lifecheck.py not run (offline script not used). Overpass hosts hang (overpass-api.de blocklisted, kumi timed out).",
-    "photo_candidates": []
+    "verify_notes": "Register only (Puglia regional list, 2026-08-16 extract): Pistacia vera, girth 268 cm, height 7 m, not urban-flagged. Girth and species not seen on any other page; no second source names this tree. Pistachio of this girth is notable for the species; no age source, leave age empty. Garden is small and municipal (owner Comune di Bisceglie, donor Col. Santonio Veneziani), run by Mosquito APS who give guided visits, school workshops, picnics and evening events. Alive check: iNaturalist obs 408877326 (2026-10-17, genus Pistacia, GPS accuracy 12 m, 36 m from the register point, no licence stated) and 408878095 in the garden the same day show a Pistacia in the garden recently, but it is not tied to the registered trunk. Pin is the register GIS point, approximate; the garden is the small site. Access is event/booking based: weak. If the dispatcher judges bookable visits insufficient, treat as lead. lifecheck.py not run (offline script not used). Overpass hosts hang (overpass-api.de blocklisted, kumi timed out). 2026-11-02 dispatcher: taken back in on the recognition-line rule; bookable visits count as public (hard rule 10), access says so.",
+    "age_basis": null,
+    "story": "Pistachio trees are usually small, a few metres of twisting branches grown for their nuts, so a trunk 2.68 metres round is a surprise. That is what Puglia's register of monumental trees records for this one in the Giardino Botanico Santonio Veneziani in Bisceglie, with a height of 7 metres. It is one of only three trees in the town on the regional list, beside a cypress and a holm oak.\n\nThe garden is small and belongs to the town, left to it by Colonel Santonio Veneziani, and a local association, Mosquito APS, looks after it and fills it with guided visits, school workshops, picnics and evening events among the plants. Nobody has published how old the pistachio is or who planted it. If you have stood under it and heard what the gardeners say about it, tell us, and the page will carry it.\n\nThe garden has no regular opening hours. Visits run by booking with the association, and the guided ones have been free with a donation, so plan ahead rather than turning up at the gate. Bisceglie's railway station is about a kilometre from the garden.",
+    "how_to_recognise": "You can recognise it as the pistachio in the Veneziani garden with a trunk far thicker than a pistachio usually grows, 2.7 metres round.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
   }
 ]

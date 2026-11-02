@@ -14789,10 +14789,26 @@
     {
       "date": "2026-11-02",
       "kind": "write",
-      "target": "palagiano+vico-del-gargano",
-      "tokens": 80000,
-      "trees": 2,
-      "note": "Dispatcher session wrote both stories and place fields itself (no Opus pass for two trees), builder scripts/build_puglia_2.py, held for the pace. Tokens estimated."
+      "target": "palagiano+vico-del-gargano+foresta-umbra+bisceglie",
+      "tokens": 110000,
+      "trees": 4,
+      "note": "Dispatcher session wrote all four stories and place fields itself (no Opus pass for so few), builder scripts/build_puglia_2.py, held for the pace. Baracconi beech and Bisceglie pistachio taken back in on the recognition-line rule. Tokens estimated."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "lyon",
+      "tokens": 158976,
+      "trees": 10,
+      "note": "Parks pass found nothing citable in the Ville's own parks (Tete d'Or, Gerland not in any open inventory); turned to the Metropole's surveyed street-tree inventory (girth >= 300 cm): ten measured giants on squares, quays and in Caluire, Bron, Collonges, confirmed pins from surveyed points."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "lyon",
+      "tokens": 140441,
+      "trees": 1,
+      "note": "PLU-H register pass: 12 public entries but no photo or confirmed pin (Overpass down, Commons geotags show squares not trunks); dispatcher matched the Villevert cedars to surveyed inventory points, Weingarten folded into the parks entry, the other ten to leads."
     }
   ]
 }

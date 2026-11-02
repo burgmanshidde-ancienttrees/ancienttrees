@@ -1,5 +1,5 @@
 {
-  "note": "Second Puglia pass, 2026-11-02. Held for the 25-a-day pace; build with scripts/build_puglia_2.py.",
+  "note": "Second Puglia pass, 2026-11-02. Four single-tree places, held for the 25-a-day pace; build with scripts/build_puglia_2.py.",
   "places": {
     "palagiano": {
       "city": "Palagiano",
@@ -40,6 +40,48 @@
         {
           "q": "How old is the Capuchins' holm oak in Vico del Gargano?",
           "a": "A plaque at the friary says a friar planted it some 300 years ago. Nobody has dated the tree itself; the register gives it 5.2 metres round and 18 metres tall."
+        }
+      ]
+    },
+    "foresta-umbra": {
+      "city": "Foresta Umbra",
+      "country": "Italy",
+      "hero_tree_id": "fum_001",
+      "oldest_tree_id": "fum_001",
+      "intro": "The Foresta Umbra is the state forest at the centre of the Gargano promontory, and its tree to see is the Faggio dei Baracconi, a beech 5.2 metres round and 26 metres tall, one of five Puglia trees in the ministry's national book of monumental trees. It stands at Baracconi, where one of the forest's fifteen marked trails begins. The forest is free and open, with parking at the trailheads.",
+      "meta_description": "The Faggio dei Baracconi, a 5.2 m beech in the Foresta Umbra on the Gargano, in Italy's national book of monumental trees: where it stands, how to visit.",
+      "question_meta": "The Faggio dei Baracconi is a monumental beech in the Foresta Umbra, at Baracconi where trail 3 begins on the road from Villaggio Umbra towards Vieste.",
+      "question_answer": "The tree to see in the Foresta Umbra is the Faggio dei Baracconi, a beech 5.2 metres round and 26 metres tall at Baracconi, where trail 3 begins on the road from Villaggio Umbra towards Vieste. It was one of five Puglia trees chosen for Italy's national book of monumental trees. The forest is free and open.",
+      "question_context": "The Foresta Umbra covers the high centre of the Gargano promontory in northern Puglia, a state forest of beech, oak and maple inside the Gargano National Park, and its old beech stands are part of the UNESCO World Heritage listing of Europe's ancient beech forests. Puglia's register of monumental trees lists four beeches in it, and the two thickest are 5.2 metres round. One of them, at Baracconi, is the beech that went into the ministry's national book Alberi monumentali d'Italia in 2019 as one of five trees from Puglia; the register gives it 26 metres tall. Nobody has published its age. The forest has fifteen marked trails with parking at the trailheads, and trail 3 starts at Baracconi on the road from Villaggio Umbra towards Vieste. The register's group of old yews at Falascone stands in a fenced reserve kept for research, and only its fence line can be walked. There is no regular public transport into the forest; the road in runs from Vico del Gargano and Monte Sant'Angelo by way of Villaggio Umbra.",
+      "faq": [
+        {
+          "q": "Can you visit the old yews of the Foresta Umbra?",
+          "a": "Not up close. The register's yews at Falascone stand in a fenced reserve kept for research, and visitors can only walk along the fence. The Faggio dei Baracconi stands outside it, where trail 3 begins."
+        },
+        {
+          "q": "How big is the Faggio dei Baracconi?",
+          "a": "Puglia's register of monumental trees gives it 5.2 metres round and 26 metres tall, level with the thickest beech it lists in the forest."
+        }
+      ]
+    },
+    "bisceglie": {
+      "city": "Bisceglie",
+      "country": "Italy",
+      "hero_tree_id": "bsg_001",
+      "oldest_tree_id": "bsg_001",
+      "intro": "Bisceglie's tree to see is a pistachio in the Giardino Botanico Santonio Veneziani, a small municipal garden in town. Puglia's register of monumental trees gives it a trunk 2.68 metres round, far thicker than a pistachio usually grows, and 7 metres tall. The garden has no regular opening hours: visits are booked with the association that runs it, and the guided ones have been free with a donation.",
+      "meta_description": "A pistachio 2.68 m round in the Veneziani botanical garden in Bisceglie, on Puglia's list of monumental trees: how to book a visit to see it.",
+      "question_meta": "The monumental pistachio of Bisceglie grows in the Giardino Botanico Santonio Veneziani, a small municipal garden open for booked visits.",
+      "question_answer": "The tree to see in Bisceglie is the pistachio in the Giardino Botanico Santonio Veneziani, 2.68 metres round and 7 metres tall in Puglia's register of monumental trees, unusually thick for a pistachio. The garden has no regular opening hours, so book a visit with the association that runs it.",
+      "question_context": "Bisceglie is a port town on the Adriatic between Trani and Molfetta, north of Bari. Puglia's register of monumental trees lists three trees in it: a holm oak on Corso Umberto I, a cypress in the Orto Schinosa, and a pistachio in the Giardino Botanico Santonio Veneziani. The pistachio is the surprise. Pistachio trees usually stay small, a few metres of twisting branches grown for their nuts, and the register gives this one a trunk 2.68 metres round and a height of 7 metres. The garden was left to the town by Colonel Santonio Veneziani and is looked after by the association Mosquito APS, which runs guided visits, school workshops, picnics and evening events there. It has no regular opening hours; visits are booked with the association, and the guided ones have been free with a donation. Nobody has published the tree's age. Bisceglie's railway station, on the line between Bari and Foggia, is about a kilometre from the garden.",
+      "faq": [
+        {
+          "q": "Can you visit the Veneziani botanical garden in Bisceglie?",
+          "a": "Yes, by booking. The garden has no regular opening hours; the association Mosquito APS runs booked visits, and its guided visits have been free with a donation."
+        },
+        {
+          "q": "How big is the pistachio in Bisceglie?",
+          "a": "Puglia's register of monumental trees gives it a trunk 2.68 metres round and a height of 7 metres, far thicker than a pistachio usually grows."
         }
       ]
     }
