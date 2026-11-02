@@ -210,15 +210,27 @@ window.atCollection = (function() {
     catalogue: catalogue,
     card: card,
     esc: esc,
-    /** Tree ids this account has saved, newest first. Signed out: nothing, and no request. */
-    saves: function() { return ids('/rest/v1/saves?select=tree_id&order=created_at.desc'); },
+    /** Tree ids this account wants to visit, newest first. Signed out: nothing, and no request.
+        Read from the server's wishes view, which drops a save made before the tree was collected
+        (supabase/wishes.sql, Hidde 2026-11-02); the saves table answers until that view exists. */
+    saves: function() {
+      var s = session();
+      if (!s) return Promise.resolve([]);
+      return api('/rest/v1/wishes?select=tree_id&order=created_at.desc', s)
+        .then(function(r) {
+          if (!r.ok) return ids('/rest/v1/saves?select=tree_id&order=created_at.desc');
+          return r.json().then(function(rows) { return (rows || []).map(function(x) { return x.tree_id; }); });
+        })
+        .catch(function() { return []; });
+    },
     /** Tree ids this account has checked in at, newest first. */
     visited: function() { return ids('/rest/v1/visited?select=tree_id&order=created_at.desc'); },
     save: function(id, on) {
       var s = session();
       if (!s) return Promise.resolve(false);
       var p = on
-        ? api('/rest/v1/saves?on_conflict=user_id,tree_id', s, { method: 'POST', body: [{ tree_id: id }] })
+        // A fresh created_at: a heart put on a collected tree is a new wish (wishes.sql).
+        ? api('/rest/v1/saves?on_conflict=user_id,tree_id', s, { method: 'POST', body: [{ tree_id: id, created_at: new Date().toISOString() }] })
         : api('/rest/v1/saves?tree_id=eq.' + encodeURIComponent(id), s, { method: 'DELETE' });
       return p.then(function(r) { return r.ok; }).catch(function() { return false; });
     },

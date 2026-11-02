@@ -89,8 +89,12 @@ as $$
     -- to hide.
     'visited', coalesce((select json_agg(v.tree_id order by v.tree_id)
                          from public.visited v where v.user_id = p.user_id), '[]'::json),
+    -- A save older than the collect is a fulfilled wish (wishes.sql).
     'saves', coalesce((select json_agg(s.tree_id order by s.tree_id)
-                       from public.saves s where s.user_id = p.user_id), '[]'::json)
+                       from public.saves s where s.user_id = p.user_id
+                         and not exists (select 1 from public.visited v
+                                         where v.user_id = s.user_id and v.tree_id = s.tree_id
+                                           and v.created_at >= s.created_at)), '[]'::json)
   )
   from public.profiles p
   where p.user_id = uid and p.public
