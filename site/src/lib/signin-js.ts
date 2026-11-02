@@ -8,7 +8,7 @@
 // 2. Open the dialog from anything carrying data-signin, or from script via
 //    atOpenSignIn() (the save heart's first-save funnel uses this).
 // 3. The inline email flow, same OTP endpoint the account page uses.
-import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
+import { SUPABASE_URL, SUPABASE_KEY, APPLE_JS, APPLE_SERVICES_ID, APPLE_JS_RETURN } from "./site-config";
 
 // THE TOKEN IS CAUGHT IN THE HEAD, BEFORE ANY PAGE SCRIPT ASKS WHO YOU ARE.
 //
@@ -249,8 +249,106 @@ export const SIGNIN_JS = `
     // this listener fires only after More options. The buttons render only where
     // APPLE_SIGNIN is on, so it is dormant rather than wrong while that is off.
     var a = e.target.closest('#signin-apple, #acct-apple');
-    if (a) { e.preventDefault(); window.atOAuth('apple'); }
+    if (a) { e.preventDefault(); if (${APPLE_JS}) atAppleJS(); else window.atOAuth('apple'); }
   });
+
+  // APPLE'S OWN SCRIPT, FOR THE NAME (2026-11-02, site-config.ts APPLE_JS).
+  // The redirect never carries a name, so the first Apple sign-in on the web
+  // left a generated one ("Tall Ginkgo 6205"). Apple's script answers our page
+  // directly, with the name on the first authorisation, and its id token goes
+  // to the same token endpoint the app posts to. The session then arrives
+  // the way a Google return does, in the fragment of a reload, so the head
+  // catch and everything after it run unchanged. Anything but a cancel falls
+  // back to the redirect: a sign-in without a name beats no sign-in.
+  var APPLE_LANG = { nl: 'nl_NL', de: 'de_DE', fr: 'fr_FR', es: 'es_ES', it: 'it_IT', pt: 'pt_PT', ja: 'ja_JP' };
+  function appleScript() {
+    if (window.AppleID) return Promise.resolve();
+    return new Promise(function(ok, no) {
+      var loc = APPLE_LANG[(document.documentElement.lang || 'en').slice(0, 2)] || 'en_US';
+      var s = document.createElement('script');
+      s.src = 'https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/' + loc + '/appleid.auth.js';
+      s.onload = function() { ok(); };
+      s.onerror = function() { no(new Error('apple script')); };
+      document.head.appendChild(s);
+    });
+  }
+  function sha256hex(text) {
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function(buf) {
+      return Array.prototype.map.call(new Uint8Array(buf), function(b) {
+        return ('0' + b.toString(16)).slice(-2);
+      }).join('');
+    });
+  }
+  // "Hidde Burgmans" becomes "Hidde B.", the app's Profiles.shortName.
+  function shortName(first, last) {
+    first = (first || '').trim(); last = (last || '').trim();
+    if (!first) return last.slice(0, 40);
+    return (last ? first + ' ' + last.charAt(0) + '.' : first).slice(0, 40);
+  }
+  // The server's starting name, which a provider's name replaces (the app's
+  // Profiles.isGeneratedName); a name somebody chose is never touched.
+  function generated(n) { return /^[A-Z][a-z]+ [A-Z][a-z]+ [0-9]{4}$/.test(n || ''); }
+  function nameTheAccount(token, name) {
+    if (!name) return Promise.resolve();
+    var uid;
+    try {
+      var b = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+      uid = JSON.parse(atob(b)).sub;
+    } catch (e) { return Promise.resolve(); }
+    var h = { apikey: SBK, Authorization: 'Bearer ' + token };
+    return fetch(SB + '/rest/v1/profiles?select=display_name&user_id=eq.' + encodeURIComponent(uid), { headers: h })
+      .then(function(r) { return r.ok ? r.json() : []; })
+      .then(function(rows) {
+        var now = rows && rows[0] ? rows[0].display_name : '';
+        if (now && !generated(now)) return;
+        h['Content-Type'] = 'application/json';
+        h.Prefer = 'resolution=merge-duplicates';
+        return fetch(SB + '/rest/v1/profiles?on_conflict=user_id', {
+          method: 'POST', headers: h, body: JSON.stringify([{ user_id: uid, display_name: name }])
+        });
+      })
+      .catch(function() {});
+  }
+  function atAppleJS() {
+    try { at.track('signin-oauth', 'apple-js'); } catch (e) {}
+    var raw = Array.prototype.map.call(crypto.getRandomValues(new Uint8Array(16)), function(b) {
+      return ('0' + b.toString(16)).slice(-2);
+    }).join('');
+    appleScript()
+      .then(function() { return sha256hex(raw); })
+      .then(function(hashed) {
+        window.AppleID.auth.init({
+          clientId: '${APPLE_SERVICES_ID}', scope: 'name email',
+          redirectURI: '${APPLE_JS_RETURN}', nonce: hashed, usePopup: true
+        });
+        return window.AppleID.auth.signIn();
+      })
+      .then(function(res) {
+        var idt = res && res.authorization && res.authorization.id_token;
+        if (!idt) throw new Error('no token');
+        var nm = res.user && res.user.name ? shortName(res.user.name.firstName, res.user.name.lastName) : '';
+        return fetch(SB + '/auth/v1/token?grant_type=id_token', {
+          method: 'POST', headers: { apikey: SBK, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ provider: 'apple', id_token: idt, nonce: raw })
+        }).then(function(r) {
+          if (!r.ok) throw new Error('token ' + r.status);
+          return r.json();
+        }).then(function(s) {
+          return nameTheAccount(s.access_token, nm).then(function() {
+            history.replaceState(null, '', location.pathname + location.search
+              + '#access_token=' + encodeURIComponent(s.access_token)
+              + '&refresh_token=' + encodeURIComponent(s.refresh_token || '')
+              + '&expires_in=' + encodeURIComponent(s.expires_in || 3600));
+            location.reload();
+          });
+        });
+      })
+      .catch(function(err) {
+        var why = (err && (err.error || err.message)) || '';
+        if (why === 'popup_closed_by_user' || why === 'user_cancelled_authorize') return;
+        window.atOAuth('apple');
+      });
+  }
 
   // ONE WIRING, RUN PER SURFACE. The dialog and the account page render the
   // same panel (SignInPanel.astro) with different id prefixes, because both

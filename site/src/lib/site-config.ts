@@ -74,6 +74,19 @@ export const SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb";
 // scripts/apple_secret.py on a machine holding the .p8.
 export const APPLE_SIGNIN = true;
 
+// APPLE'S OWN SCRIPT FOR THE APPLE BUTTON, so the web gets the person's name
+// (Hidde, 2026-11-02: "ik wil dat je het gat dicht op app en web", then "Yes,
+// build it" to the third-party script, hard list 5). The redirect above never
+// carries a name; Sign in with Apple JS hands it to our page on the first
+// authorisation (CONVENTIONS.md, "Sign in with Apple ON THE WEB", 2026-11-02).
+// The script loads only when somebody presses Apple. False until the Services
+// ID app.ancienttrees.web lists ancienttrees.app as a domain and
+// APPLE_JS_RETURN as a return URL in Hidde's Apple account: before that,
+// Apple's popup shows an error. Off, the button takes the redirect as before.
+export const APPLE_JS = false;
+export const APPLE_SERVICES_ID = "app.ancienttrees.web";
+export const APPLE_JS_RETURN = "https://ancienttrees.app/";
+
 // Google Analytics 4, chosen by Hidde 2026-10-12 over PostHog on the web
 // ("id rather use google analytics im used to it"). Loaded only after the
 // visitor presses Accept on the cookie bar (components/ConsentBar.astro);
