@@ -137,11 +137,29 @@
       "access": "Free, Edinburgh Council nature reserve",
       "transport": "Bus to Cammo Road or Cammo Walk, Edinburgh",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/edi_003-the-cammo-ash.jpg",
+        "license": "Provided by a reader by mail, used with permission",
+        "source": "mail",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 480,
+        "height": 640,
+        "note": "Sent by mail on 2026-11-02 by a member of the Friends of Cammo in answer to our photo ask of 2026-10-29, taken that morning (no name kept in the repo). Looked at 2026-11-02: the whole tree, trunk and leaning limb in frame, ash leaves, daylight and colour; photo_light OK. He knows the tree locally and went to it for us. Small file (480x640). Reply asks how he wants to be credited.",
+        "taken_month": 11
       },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/edi_003-the-cammo-ash-trunk.jpg",
+          "license": "Provided by a reader by mail, used with permission",
+          "source": "mail",
+          "attribution": null,
+          "status": "approved",
+          "width": 480,
+          "height": 640,
+          "note": "Same mail, same morning: the trunk close up.",
+          "taken_month": 11
+        }
+      ],
       "curation_status": "flagged",
       "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding. Location corrected 2026-07-28 to a park-level estimate (55.9564, -3.3215), then to a specific surveyed tree 2026-07-30: the Woodland Trust's Ancient Tree Inventory (queried directly via its public ArcGIS FeatureServer) has exactly one Ash within the reserve, record 102509, veteran status, measured girth 4.74m, matching this entry's own 'trunk over a metre and a half across' almost exactly (a 1.5m+ diameter implies a circumference of roughly 4.7m). Its coordinate independently reverse-geocodes to South Avenue, Cammo, postcode EH4 8AW, the same postcode already cited for this entry. Moved about 390m to the surveyed point and upgraded to confirmed. 2026-10-13: Friends of Cammo (mail) say this ash is dated 1720, part of the treeline along the old Braehead to Leny road; date unsourced beyond them, not in the story.",
       "location_precision": "approximate",
