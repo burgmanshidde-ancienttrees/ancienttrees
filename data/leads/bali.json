@@ -1,0 +1,52 @@
+{
+  "leads": [
+    {
+      "name": "Bali Botanic Garden giant ficus (Hutan Rasamala / Tapak Hill)",
+      "species": "Fig (Ficus sp.)",
+      "lat": null,
+      "lng": null,
+      "reason": "Real and visitable (garden entry about 30k IDR, 8-18h, Bedugul, about 1 hour from Ubud). Official Kebun Raya Bali page https://kebunraya.id/r/bali/plant-news/giant-ficus-tree-HlTA says over 100 years old, 'one of the oldest plants in the garden', Rasamala Forest; a travel blog says 'at the back of the park', half a dozen stumps, possibly hundreds of years (informal). No coordinate in reach (garden centre about -8.278, 115.154 only), no photo, sources disagree on Rasamala Forest versus Tapak Hill: lead, no photo or exact pin in reach. A single trunk-pin from a garden map or a geotagged photo would clear it."
+    },
+    {
+      "name": "Ubud Monkey Forest giant banyan",
+      "species": "Banyan (Ficus benghalensis)",
+      "lat": null,
+      "lng": null,
+      "reason": "Banyan in the middle of the Sacred Monkey Forest Sanctuary (Padangtegal), paid entry. Only age claim is 'at least 100 years' from a travel blog (TheSmartLocal); temples are 14th century but no source ties the tree to them. A wood, not one spot: no pin, no age source. Safety event Dec 2024 (trees fell, two visitors died, forest closed for a time per press): re-check it is open and the tree stands before any work. Needs a geotagged photo or the forest management's own tree list."
+    },
+    {
+      "name": "Trunyan Taru Menyan tree",
+      "species": "Taru Menyan (species disputed in sources)",
+      "lat": null,
+      "lng": null,
+      "reason": "Sacred fragrant tree beside the Trunyan cemetery on Lake Batur, said to be about 1,100 years old (one travel site, unverified; the 1,600 years in other sources is the village). Reached by a 15 minute boat from the village; cemetery with exposed remains, a guide advised. Species unresolved (frankincense, banyan, myrrh all claimed). Single weak age source, no pin, sensitive site: lead only, needs a botanical identification and a respectful access check."
+    },
+    {
+      "name": "Possible Gesing 'giant banyan' (Munduk area, Buleleng)",
+      "species": "Banyan (unconfirmed)",
+      "lat": null,
+      "lng": null,
+      "reason": "Aggregator pages (banbanjara.com, thrillophilia) describe a roughly 700 year old giant banyan at Gesing near Munduk, 85 m tall (implausible). These read as a conflation with the Bayan (banjar) Kayu Putih tree in Tua village, Tabanan (bli_002); treat as a duplicate/confusion until a source with a photo and pin shows a separate tree."
+    },
+    {
+      "name": "Waringin Sungsang, Selat (Karangasem)",
+      "species": "Banyan",
+      "lat": null,
+      "lng": null,
+      "reason": "Named once in an Indonesian listing as a banyan near a temple gate in Desa Adat Selat; no age, pin, photo or second source found. Lead for a local-language search."
+    },
+    {
+      "name": "Sangeh Monkey Forest nutmeg trees (Dipterocarpus trinervis), Pura Bukit Sari",
+      "species": "Dipterocarpus trinervis (local 'pala', not true nutmeg)",
+      "lat": -8.4817,
+      "lng": 115.2035,
+      "reason": "A wood of tall straight dipterocarps up to about 40 m (Travelfish; NOW Bali says 30 m), some said to be 300 years old by local elders, planted as a Mengwi royal garden around a 17th century temple. Wood, not one collectible spot, and a storm on 3 Dec 2025 brought down more than 30 trees and killed a staff member (press): re-check which individual trunks still stand, whether open, before anything. Coordinates are the general area, not verified. Needs one named veteran with a pin."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Puri Kantor Ubud banyan",
+      "reason": "Fell (detik.com Bali report: banyan 2 m across and 25 m tall toppled onto buildings at Puri Kantor, Ubud); known dead, do not ship. Date not seen on a fetched page."
+    }
+  ]
+}

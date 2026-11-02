@@ -1,0 +1,81 @@
+[
+  {
+    "id": "bli_001",
+    "name": "Pura Kehen banyan with the kulkul drum tower",
+    "species": "Banyan (Ficus benghalensis)",
+    "age_estimate": "at least 400 years",
+    "age_min": 400,
+    "age_max": 700,
+    "location": {
+      "address": "Pura Kehen, Jalan Sriwijaya, Cempaga, Bangli, Bali",
+      "latitude": -8.4419,
+      "longitude": 115.36,
+      "neighbourhood": "Cempaga, Bangli"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Pura_Kehen",
+      "https://www.nowbali.co.id/pura-kehen-a-silent-witness-to-age-old-oaths/",
+      "https://www.idntimes.com/travel/destination/ari-budiadnyana/pohon-unik-di-bali-c1c2"
+    ],
+    "access": "Temple open to visitors, small entry donation and sarong required (hours not confirmed from a fetched page). Banyan stands in the outer first courtyard (jaba pisan) just inside the gate; the drum tower in its crown is not climbable by visitors.",
+    "transport": "No public transport worth the name; about 45 minutes by car or scooter from Ubud (roughly 25 km, via Bangli town).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Pura Kehen first courtyard (jaba pisan)",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Pin is the OSM temple way centroid (Nominatim, way 277204886), NOT the trunk; the banyan is in the outer courtyard just past the entrance gate. Age: Wikipedia says 'at least 400 years'; NOW Bali says 'centuries-old'; IDN Times only says very old, no figure. One unsourced site claims 700+ (not used; age_max 700 is a loose ceiling, flag). Wikipedia is the only numeric source and is not independent of the others, so flagged. Remarkable: a bale kulkul (wooden slit-drum pavilion) sits in the tree's crown and a monk's cell high in the branches; no stairs, the priest reached the drum via the roots; local belief that a falling branch foretells disaster (grubug). Tree considered sacred in Bangli. Alive: no dated recent photo or news fetched; the 2026-era IDN Times listicle and NOW Bali still describe it as standing, but that is thin. girth/height not found."
+  },
+  {
+    "id": "bli_002",
+    "name": "Kayu Putih giant tree (Bayan Ancient Tree)",
+    "species": "Fig (Ficus sp.)",
+    "age_estimate": "roughly 500 to 700 years (local estimate)",
+    "age_min": 500,
+    "age_max": 700,
+    "girth_cm": 1885,
+    "location": {
+      "address": "Behind Pura Babakan, Banjar Bayan, Tua village, Marga, Tabanan, Bali (Google plus code H5VP+9QF)",
+      "latitude": -8.40656,
+      "longitude": 115.18694,
+      "neighbourhood": "Tua, Marga, Tabanan"
+    },
+    "verified_sources": [
+      "https://www.djkn.kemenkeu.go.id/kpknl-denpasar/baca-artikel/14833/Bayan-Ancient-Tree-yang-penuh-misteri.html",
+      "https://budayabali.com/pohon-kayu-putih-bayan-en",
+      "https://theworldtravelguy.com/kayu-putih-giant-tree-ancient-kapok-tree-in-tabanan-bali/",
+      "https://lokasibali.com/lokasi/bayan-ancient-tree"
+    ],
+    "access": "Open daily, entry by voluntary donation written in a visitors' book (no fixed ticket), small parking fee. Stands behind Pura Babakan; no sarong needed to walk round the outside of the tree (per a 2026 visitor guide).",
+    "transport": "About 1 hour by car or scooter north-west of Ubud (also reachable on the way to Jatiluwih); no public transport. Not a 30-minute trip: label as a day-trip stop.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "PIN: decoded from the Google Maps plus code H5VP+9QF (full 6P3QH5VP+9Q, cell about 14 m), printed on lokasibali.com and consistent with OSM's Tua hamlet (-8.4053, 115.1871) about 150 m away. The tree is the single attraction at that address, so I treat the pin as on the tree; an aerial check on the crown would settle it. SPECIES UNRESOLVED: locals say kayu putih (white wood, from the pale trunk) or beringin; the Kemenkeu article says nobody knows the species with certainty; one blog guesses Ficus albipila (not verified, blog); another blog suggests kapok. English 'eucalyptus' titles are not supported. Publish as fig (Ficus sp.) and ask the reader. AGE conflict: Kemenkeu (government customs office article) says more than 500 years; the temple caretakers via budayabali say about 700 years, tied to the village's age and 'older than Pura Babakan, built in the 15th century'. Both are local estimates, no dendrological dating. HEIGHT conflict: Kemenkeu 50 m; budayabali 75 m; the lokasibali and travel blog repeat 70 m local claims. Do not publish a height; 70 to 75 m would be implausible for a fig. SIZE: trunk diameter about 6 m (Kemenkeu and budayabali); girth_cm 1885 is diameter times pi and describes a buttressed, root-flared mass, not a clean trunk. Notable: pale buttress roots forming a sculpted base with a small 'window' through the trunk; bark scraped for traditional medicine (name Babakan = bark; the shrine is named for it); a nearby resident reports hearing gamelan gender from the tree and local lore says a gamelan and weapons were buried beneath it in the kingdom era. Viral since 2013 (Kemenkeu). Alive: a 2026 visitor guide (theworldtravelguy) describes visiting it and says free to visit as of 2026; lokasibali shows 1,148 Google reviews at 4.8."
+  },
+  {
+    "id": "bli_003",
+    "name": "Bunut Bolong",
+    "species": "Banyan-type fig (Ficus sp.)",
+    "age_estimate": "centuries old (local belief, no figure)",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Jalan Raya Pekutatan to Singaraja, Manggisari, Pekutatan, Jembrana, Bali (Google plus code JV7C+7F)",
+      "latitude": -8.38681,
+      "longitude": 114.87119,
+      "neighbourhood": "Manggisari, Pekutatan, Jembrana"
+    },
+    "verified_sources": [
+      "https://lovebali.baliprov.go.id/destination/detail/8/bunut-bolong",
+      "https://www.nowbali.co.id/bunut-bolong-the-holy-hollow-tree/",
+      "https://www.thejakartapost.com/news/2016/01/28/sight-bunut-bolong",
+      "https://lokasibali.com/lokasi/bunut-bolong"
+    ],
+    "access": "Free, beside the public road between Pekutatan and Singaraja; open 24 hours per the Google listing as relayed by lokasibali. A bypass road runs round the tree; cremation, wedding and hearse traffic is by local custom not allowed through the hole.",
+    "transport": "About 2 hours by car north-west of Kuta (Bali provincial tourism page), roughly 3 hours from Ubud; a stop on the road to Singaraja. Not a day trip from Ubud cluster; label as a west Bali road-trip stop.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "PIN decoded from plus code JV7C+7F (full 6P3PJV7C+7F, cell about 14 m), printed on lokasibali.com; it falls at Manggisari/Pekutatan, matching the sources' village. The tree is the single attraction at that address and it straddles the road, so an aerial check would settle it. AGE: the Bali provincial tourism page (lovebali.baliprov.go.id) says locals believe it is centuries old; NOW Bali says hundreds of years; no number anywhere, so age_min/max left empty on purpose. SPECIES: 'bunut' is the local name for a banyan-type Ficus; no scientific name seen on a fetched page. Remarkable: a hole nearly 4 m wide through the base of the tree carries a paved road; per NOW Bali the tree stands on a narrow mountain ridge, the roots were cut for the road after ceremonies asking the resident spirits (said to be two holy tigers) for permission, and prop roots keep the tree alive and widening. Locals call it Gelung Kori Agung (crown of a grand door) per the Jakarta Post 2016. Neighbouring temple Pura Bhujangga Sakti honours the priest Dang Hyang Sidhi Mantra. Conflict on the hole's origin: one account says natural, another says widened by Dutch colonial labour. A search summary gave diameter 15 m and height 20 m, NOT seen on a fetched page, so not recorded. Alive: a dated 2016 Jakarta Post piece plus a current Google-reviews listing; no recent dated photo fetched."
+  }
+]

@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-02 session: Bali and Luang Prabang verified, nothing shipped
+
+Hidde asked to open new countries with spare tokens and chose Bali and Luang Prabang (claimed with `--outside-us`, both outside the focus list). Two verify passes, 293k tokens. **Luang Prabang: 0.** Nobody in Laos names trees and the UNESCO inventory lists buildings only. 2 leads were kept: the Wat Aham banyans (about 70 years) and the Wat Visoun bodhi (1968). **Bali: 3 flagged trees** in data/research/bali-verified.json, all one hour or more from Ubud and not a walk: Pura Kehen banyan, Kayu Putih giant fig, Bunut Bolong. There are 6 leads in data/leads/bali.json. Both places are under the four-tree floor and under the six needed for a write pass, so nothing went to writing. Lesson: a country with no register costs about 100k tokens a tree, against the 15k target. Next angle for Bali, if anyone pursues it: the old pule and kepuh trees at the death temples (notes file).
+
 ## 2026-11-02 night run (third attempt): nothing shipped, Porto walled, Bergamo scouted
 
 No READY leads. Porto verify (focus country): the register pool is spent, every unmined row is private, a school, an ensemble, dead or already live; Porto is a wall for 48h. Backup scout of Bergamo: Regione Lombardia publishes a per-tree PDF list (DGR 4536/2025 annex, 431+ trees); status stalled in data/register-scouting.json because this runner has no PDF reader (no pdftotext, no pypdf). Next: extract the BG rows in a session that can, then import and cluster. Villar d'Allen (Porto) ships the moment a licensed photo of the bunya turns up.

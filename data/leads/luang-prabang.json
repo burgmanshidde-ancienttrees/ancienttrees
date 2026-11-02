@@ -1,0 +1,22 @@
+{
+ "leads": [
+  {
+   "name": "Wat Aham banyan pair (Bodhi/Banyan), Luang Prabang",
+   "species": "Banyan / Bodhi fig (Ficus sp., species not settled by any source)",
+   "location": "Wat Aham, next to Wat Visounnarath, old town peninsula (about 19.89, 102.13); no sourced coordinate, not placed",
+   "reason": "Verify pass 2026-11-02: tourismluangprabang.org says a former king planted saplings from India in the 1950s (about 70 years, not ancient, and the sentence may belong to the neighbouring temple); luangprabang-laos.com says two large banyans stand there but gives no age; travel blogs call them centuries-old on the spirit legend (not a source). Conflicting age, no coordinate, species unconfirmed. Large, venerated, free to see from the street; revisit with a GPS fix or a dated photo and an age source."
+  },
+  {
+   "name": "Wat Visounnarath (Wat Visoun) Bodhi tree, Luang Prabang",
+   "species": "Bodhi tree (Ficus religiosa)",
+   "location": "Wat Visounnarath, old town (about 19.8905, 102.1370); no sourced coordinate",
+   "reason": "Verify pass 2026-11-02: British Library EAP archive records a Bodhi sapling brought from India and planted at Vat Vixunnarat on 26 Oct 1968 (and a Vat Mai Bodhi on 12 Oct 1955). Planted within living memory, not ancient. Possibly the same trees as the Wat Aham 1950s claim; unresolved. Fee for the temple site."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Wat Xieng Thong 'Tree of Life'",
+   "reason": "A 1960s glass mosaic on the sim wall, not a living tree."
+  }
+ ]
+}
