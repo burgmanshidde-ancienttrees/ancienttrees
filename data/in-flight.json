@@ -449,10 +449,66 @@
       "trees_at_claim": null
     },
     {
-      "target": "sheffield",
+      "target": "tacoma",
       "kind": "verify",
-      "by": "session-01ef2345",
-      "claimed_at": "2026-11-02T19:28:55+00:00",
+      "by": "session-5b19b32c",
+      "claimed_at": "2026-11-02T19:28:59+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "olympic-national-park",
+      "kind": "verify",
+      "by": "session-5b19b32c",
+      "claimed_at": "2026-11-02T19:29:05+00:00",
+      "trees_at_claim": 4
+    },
+    {
+      "target": "vancouver-washington",
+      "kind": "verify",
+      "by": "session-5b19b32c",
+      "claimed_at": "2026-11-02T19:29:19+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "oahu",
+      "kind": "verify",
+      "by": "session-9015ba88",
+      "claimed_at": "2026-11-02T19:29:25+00:00",
+      "trees_at_claim": 21
+    },
+    {
+      "target": "kauai",
+      "kind": "verify",
+      "by": "session-9015ba88",
+      "claimed_at": "2026-11-02T19:29:25+00:00",
+      "trees_at_claim": 6
+    },
+    {
+      "target": "hilo",
+      "kind": "verify",
+      "by": "session-9015ba88",
+      "claimed_at": "2026-11-02T19:29:26+00:00",
+      "trees_at_claim": 6
+    },
+    {
+      "target": "hawaii",
+      "kind": "verify",
+      "by": "session-9015ba88",
+      "claimed_at": "2026-11-02T19:29:26+00:00",
+      "trees_at_claim": 6
+    },
+    {
+      "target": "maui",
+      "kind": "verify",
+      "by": "session-9015ba88",
+      "claimed_at": "2026-11-02T19:29:27+00:00",
+      "trees_at_claim": 4
+    },
+    {
+      "target": "salem-oregon",
+      "kind": "verify",
+      "by": "session-5b19b32c",
+      "claimed_at": "2026-11-02T19:29:30+00:00",
       "trees_at_claim": null
     }
   ]
