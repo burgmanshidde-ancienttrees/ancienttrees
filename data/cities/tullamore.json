@@ -7,6 +7,8 @@
   "question_meta": "Tullamore's remarkable tree is the King Oak, a 400 to 800 year old oak on the Charleville Forest demesne.",
   "question_answer": "Tullamore's notable tree is the King Oak, on the Charleville Forest demesne just inside the estate's main gate, County Offaly. Estimates put it at 400 to 800 years old.",
   "question_context": "The King Oak's age has never been narrowed past that 400 to 800 year range, in the European Tree of the Year entry and in the published record alike. It was already worth writing down in the 17th century. Its trunk measures 8.29 metres round and it stands 19 metres tall, but the branches are the thing, spreading as far as 27 metres and now propped where they bow toward the ground, the shape left by centuries of pollarding for timber. Local superstition ties the family's fortunes to the tree: when a limb falls, someone in the owning family is said to die, and in 1963 a lightning strike split the trunk weeks before the estate's owner, Charles Howard-Bury, died. Thomas Pakenham included it in Meetings with Remarkable Trees, and in 2013 it placed third in Europe's Tree of the Year. It stands just inside the demesne's main entrance, free to walk into year round; the castle itself is a separate paid tour and is not needed to reach the tree.",
+  "hero_tree_id": "tlm_001",
+  "oldest_tree_id": "tlm_001",
   "faq": [
     {
       "q": "What is the remarkable tree in Tullamore?",
@@ -25,8 +27,6 @@
       "a": "It is roughly 3 km, about a 40 minute walk, from Tullamore town centre, which has its own Irish Rail station on the Dublin to Galway line."
     }
   ],
-  "hero_tree_id": "tlm_001",
-  "oldest_tree_id": "tlm_001",
   "trees": [
     {
       "id": "tlm_001",
@@ -62,6 +62,45 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 19
+    },
+    {
+      "id": "tlm_002",
+      "name": "Charleville Forest Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "several hundred years",
+      "age_min": 300,
+      "age_max": 500,
+      "age_basis": "source",
+      "girth_cm": 562,
+      "height_m": 12,
+      "location": {
+        "address": "Charleville Forest, Tullamore, Co. Offaly",
+        "latitude": 53.25652,
+        "longitude": -7.53291,
+        "neighbourhood": "Charleville Forest"
+      },
+      "story": "Everyone comes to Charleville for the King Oak at the gate. Somewhere along the edge of the same woodland stands a yew 5.62 metres round, and almost nobody writes about it.\n\nThe Tree Register of Ireland lists it as number 181 and describes it in one plain line, a large-girthed yew on the edge of an oak forest. In 2009 it was 12 metres tall. The tree recorder Aubrey Fennell had measured it at 5.59 metres a few years earlier, so in nearly a decade the trunk gained three centimetres, or the tape went round a slightly different line.\n\nThe national heritage tree register saw it the same summer, recorded it as a multi-stemmed tree and put it at 300 to 500 years old. That band is the register's judgement, not a count, and nobody has narrowed it.\n\nThe honest problem is finding it. Two published records place the tree about 1.7 kilometres apart, one near the King Oak end of the demesne and one deeper in, and the pin here follows the grid reference, which is the more careful of the two. Neither names a path or a landmark. The last dated record of the tree is from 2009.\n\nIf you find it, a photograph and a location would put it properly on the map.\n\nVisit Offaly and local walkers say the forest is free to walk. Castle tours are separate and paid.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/charleville-forest/",
+        "https://ancient-yew.org/yew_trees/charleville-forest-2731",
+        "https://www.visitoffaly.ie/attractions/charleville-castle/"
+      ],
+      "official_register": {
+        "name": "Tree Register of Ireland (no. 181) / Heritage Trees of Ireland",
+        "url": "https://www.ancient-yew.org/yew_tree_database/charleville-forest/"
+      },
+      "access": "Charleville Forest woodland is walked without a fee or permit according to Komoot's local Q&A and Visit Offaly, but no operator page states it; the demesne entrance is next to the King Oak. One walker's account says the King Oak is seen from the driveway at the gate, so confirm the forest gate is open on the day. Castle tours are separate and paid.",
+      "transport": "About 3 km west of Tullamore town centre on the R421 (roughly 5 minutes by car; Tullamore station is the nearest rail stop, 3 km, no direct bus checked)",
+      "how_to_recognise": "You can recognise it as a very thick, multi-stemmed yew, dark and evergreen, at the edge of the oak woodland. In winter it is the one dark crown among the bare oaks.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "FLAGGED: register only, one source family. The Ancient Yew Group database record 2731 reproduces the Tree Register of Ireland entry (no. 181): girth 5.62 m in 2009, 12 m high, described by the register as 'a large girthed yew tree on the edge of an oak forest'; Aubrey Fennell recorded 559 cm at 1 m between 2000 and 2005, so the trunk is thickening slowly or measurement noise. Heritage Trees of Ireland record 620 (visited 17 Aug 2009, multi-stem form, band 300-500 years as of 2009) gives grid N311230 = 53.25652,-7.53291, precision 100 m. CONFLICT ON PLACE: the Ancient Yew page puts the same record at 53.26499,-7.51089 (about 1.7 km east, near the King Oak end of the demesne, read from a map link, grid reference 'not known'). The grid-derived point is used here; the other is probably a click on the map. Not alive-checked: lifecheck NONE, no dated photo or news of this tree found. A walker's account mentions a yew planting in a union-flag pattern at Charleville (not placed, not this tree). RECOGNITION CANDIDATE: a very thick multi-stemmed yew standing at the edge of the oak woodland, dark evergreen against deciduous oak; no building or path anchor found in sources. Pin cannot be tied to one crown, so findability depends on a reader or photo. Age is the register band, not derived from girth."
     }
   ]
 }

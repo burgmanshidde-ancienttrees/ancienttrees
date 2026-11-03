@@ -1,0 +1,75 @@
+{
+  "city": "Killarney",
+  "country": "Ireland",
+  "status": "needs_curation",
+  "intro": "The yew at the centre of the cloister of Muckross Friary, about four kilometres from Killarney town, is likely up to 400 years old according to the Office of Public Works, while local tradition says it was planted with the friary around 1448. Its red, twisting trunk measured 305 centimetres round at the ground in 2005, almost exactly what it measured in 1897. In 1756 its crown already spread like an umbrella over the cloister. The friary is an unguided site inside Killarney National Park.",
+  "meta_description": "The Muckross Abbey yew near Killarney: a red, twisting yew in the middle of a 15th-century cloister, up to 400 years old or more by tradition.",
+  "question_meta": "Killarney's oldest tree is the yew in the cloister of Muckross Friary, likely up to 400 years old, by tradition as old as the friary.",
+  "question_answer": "Killarney's oldest mapped tree is the European Yew (Taxus baccata) in the centre of the cloister at Muckross Friary. The Office of Public Works says it is likely up to 400 years old; local tradition makes it as old as the friary, founded around 1448.",
+  "question_context": "Heritage Ireland calls the Muckross yew one of the oldest in Ireland and likely up to 400 years old. Tradition holds that it was planted when Donal McCarthy Mor founded the friary for the Observant Franciscans, around 1448, which would make it about 575. A hollow yew cannot be dated by its rings, so neither figure can be settled. Charles Smith described its umbrella-like crown over the cloister in 1756, and Arthur Young mentioned it in 1776. It measured ten feet round at the ground in 1897 and 305 centimetres in 2005. It is a male tree. A second old yew grows outside the ruin, near the entrance. The friary stands inside Killarney National Park and is cared for by the Office of Public Works. The yew grows from the exact centre of the cloister, its bark red and its trunk twisting as it rises. The friary has lost its roof, and the crown still fills the open square from wall to wall.",
+  "hero_tree_id": "kly_001",
+  "oldest_tree_id": "kly_001",
+  "faq": [
+    {
+      "q": "How old is the Muckross Abbey yew?",
+      "a": "The Office of Public Works says likely up to 400 years. Tradition says it was planted with the friary around 1448. Neither can be proved from a hollow trunk."
+    },
+    {
+      "q": "Where exactly is it?",
+      "a": "In the exact centre of the cloister of Muckross Friary, inside Killarney National Park, about four kilometres south-east of Killarney town."
+    },
+    {
+      "q": "Does it cost anything to see?",
+      "a": "Muckross Friary is an unguided Heritage Ireland site. Its page shows no admission charge or opening hours; check it before you go."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kly_001",
+      "name": "The Muckross Abbey Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "up to roughly 400 years",
+      "age_min": 250,
+      "age_max": 550,
+      "age_basis": "source",
+      "girth_cm": 305,
+      "location": {
+        "address": "Muckross Friary (Muckross Abbey), Killarney National Park, Co. Kerry; centre of the cloister garth",
+        "latitude": 52.02614,
+        "longitude": -9.49479,
+        "neighbourhood": "Muckross"
+      },
+      "location_site": {
+        "name": "Muckross Friary cloister",
+        "radius_m": 20
+      },
+      "story": "In 1897 this yew measured ten feet round at the ground. In 2005 the tape read 305 centimetres, the same tree to within a thumb's width. The trunk has barely thickened in a century, and nobody can say how many centuries came before that.\n\nIt grows from the exact centre of the cloister at Muckross Friary, founded around 1448 by Donal McCarthy Mor for the Observant Franciscans. The friary has lost its roof. The yew has kept its crown. In 1756 the historian Charles Smith called it one of the tallest yews he had seen, its spreading branches overshadowing the niches of the cloister \"like a great umbrella\", and the crown still fills the open square from wall to wall.\n\nHow old it is depends on whom you ask. The Office of Public Works, which cares for the site, says it is likely up to 400 years old and one of the oldest in Ireland. Local tradition says it was planted with the friary, which would make it closer to 575. A hollow yew keeps no countable record of its rings, so neither figure can be settled and both stand here as what they are.\n\nThe bark is red and the trunk twists as it rises, dividing into limbs at about four metres. It is a male tree, so it carries no berries. Outside the ruin, near the entrance, a second old yew grows inside a circular stone wall, and at knee height it is the wider of the two.",
+      "verified_sources": [
+        "https://heritageireland.ie/unguided-sites/muckross-franciscan-friary/",
+        "https://ancient-yew.org/yew_trees/muckross-friary-2017",
+        "https://ancient-yew.org/yew_trees/muckross-friary-2018",
+        "https://www.ancient-yew.org/yew_tree_database/muckross-friary"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Muckross Friary tree 2017",
+        "url": "https://ancient-yew.org/yew_trees/muckross-friary-2017"
+      },
+      "access": "Unguided Heritage Ireland (OPW) site inside Killarney National Park; no admission or opening hours seen on the Heritage Ireland page. Check the page for any change.",
+      "transport": "About 4 km south-east of Killarney town centre; no public bus verified, jaunting car, bike or walk from town or Muckross House.",
+      "how_to_recognise": "You can recognise it by the red, twisting trunk rising from the middle of the cloister, its crown filling the open courtyard. A second old yew stands outside, near the entrance, inside a circular stone wall.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Yew_tree_in_the_Cloisters_at_Muckross_Abbey_-_geograph.org.uk_-_7874141.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Marathon, via Wikimedia Commons (Geograph)",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Yew_tree_in_the_Cloisters_at_Muckross_Abbey_-_geograph.org.uk_-_7874141.jpg",
+        "status": "approved",
+        "width": 2329,
+        "height": 3105,
+        "taken_month": 8
+      },
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Heritage Ireland (fetched, OPW, owner of the site): 'a yew tree still stands at the centre [of the cloister]; thought to be one of the oldest in Ireland, as it is likely up to 400 years old'; Charles Smith in 1756 called it one of the tallest yews he had seen, 'its spreading branches, like a great umbrella, overshadow the niches of the great cloister'. Ancient Yew Group (fetched, tree 2017, Tim Hills, visit 20 Jul 2005): male, girth 305 cm at the ground; Ben Simon (Belfast City Council) 1999: 3.30 m at 0.6 m, 3.11 m at 1.5 m; Lowe 1897 recorded 10 ft at ground; earliest mention 1776, Arthur Young's Tour of Ireland; 'red-barked and twisted bole' rising from the centre of the cloister, branching at about 14 ft, elder rooted in its platform. CONFLICT on age: Heritage Ireland up to 400 years; tradition (Irish Examiner, thinplacestour, not fetched in full) says as old as the friary (founded 1448, about 575 years), and an Irish Examiner columnist suggests older; age is not measurable in a hollow yew, so the range is broad and no tradition is stated as fact. Friary founded about 1448 by Donal McCarthy Mor for the Observant Franciscans (Heritage Ireland). Pin: OSM way 1144959847 'Muckross Abbey' ambulatory, bbox centre 52.02614,-9.49479; the sources put the tree at the centre of the cloister, so within about 5-10 m. Second fine yew outside the ruin, close to the entrance, in a circular stone wall: Ancient Yew tree 2018, male, 399 cm at 60 cm, Lowe 1897 10 ft at ground (folded here as a note, not a separate collectible). Alive: Heritage Ireland present tense, lifecheck RECENT 2026-08-19 (iNaturalist at the abbey). Recognition line candidate: the huge red-barked yew rising out of the middle of the ruined cloister, its crown filling the open courtyard."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "city": "Castlepollard",
+  "country": "Ireland",
+  "status": "needs_curation",
+  "intro": "The Squire's Walking Stick at Tullynally Castle, two kilometres from Castlepollard, is the tallest oak in the Republic of Ireland according to the Irish Times. The Telegraph put it at 112 feet, about 34 metres, and dated its planting to 1745, both from that one article. The national register suggests it is younger, so its age runs from about 200 to 280 years. It stands on the left of the main avenue as you leave, in parkland Tullynally opens to walkers all year.",
+  "meta_description": "The Squire's Walking Stick at Tullynally, Castlepollard: reported as Ireland's tallest oak, about 34 metres, beside the main avenue.",
+  "question_meta": "Castlepollard's tallest tree is the Squire's Walking Stick at Tullynally, reported as the tallest oak in the Republic of Ireland.",
+  "question_answer": "Castlepollard's best-known tree is the Squire's Walking Stick, a Pedunculate Oak (Quercus robur) beside the main avenue of Tullynally Castle. The Irish Times calls it the tallest oak in the Republic; the Telegraph gave 112 feet, about 34 metres.",
+  "question_context": "Tullynally's own tree trail names the Walking Stick as the tallest oak in the demesne and places it on the left of the main avenue on the way out. A Telegraph piece on private arboretums called it the tallest oak in Ireland at 112 feet and said the first Baron Longford planted it in 1745; both figures come from that article alone. The national heritage tree register put the demesne's named oak at 150 to 200 years in 2009, about a century younger, and whether that entry is this tree has not been shown. The estate's trail also includes a young oak bred from it. Thomas Pakenham, whose family owns Tullynally, has written about these grounds in In the Company of Trees. The estate says its parkland is open to walkers all year, with dogs on leads, while the gardens are ticketed and open from late March to late September. Which side of that line this stretch of avenue falls on is not stated. No girth for the oak has been published, and no measurement checks the 112 feet.",
+  "hero_tree_id": "tly_001",
+  "oldest_tree_id": "tly_001",
+  "faq": [
+    {
+      "q": "Is the Squire's Walking Stick the tallest oak in Ireland?",
+      "a": "The Irish Times calls it the tallest in the Republic and the Telegraph the tallest in Ireland, at 112 feet. No independent measurement has been published."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Somewhere between about 200 and 280 years. The Telegraph says planted in 1745; the national register suggests a century younger."
+    },
+    {
+      "q": "Can you walk to it?",
+      "a": "Tullynally says its parkland is open to walkers all year, dogs on leads. The gardens are ticketed and seasonal, so ask at reception which side the avenue falls on."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tly_001",
+      "name": "The Squire's Walking Stick",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 200 to 280 years",
+      "age_min": 200,
+      "age_max": 280,
+      "age_basis": "source",
+      "height_m": 34,
+      "location": {
+        "address": "Tullynally Castle demesne, Pakenham Hall Road, Castlepollard, Co. Westmeath (left of the main avenue on the way out)",
+        "latitude": 53.68659,
+        "longitude": -7.32262,
+        "neighbourhood": "Castlepollard"
+      },
+      "story": "The tallest oak in the Republic of Ireland, according to the Irish Times, goes by the name of the Squire's Walking Stick. It stands beside the main avenue of Tullynally Castle, and the estate's own tree trail tells you to look for it on the left as you leave.\n\nThe Telegraph went further. It called this the tallest oak in all of Ireland, at 112 feet, about 34 metres, and said the first Baron Longford planted it in 1745. Both the height and the date come from that one article, and nobody has published a measurement to check them against.\n\nThe national heritage tree register tells a different story about age. In 2009 it put the demesne's named oak at 150 to 200 years, roughly a century short of 1745. Whether that register entry and this trunk are the same tree has not been shown, so the age here stays broad, somewhere between 200 and 280 years, until someone settles it.\n\nThomas Pakenham, whose family owns Tullynally, has written about these grounds in In the Company of Trees. Stop eleven on the estate's tree trail is a young oak bred from the Walking Stick.\n\nTullynally says its parkland is open to walkers all year, dogs on leads. The gardens are ticketed and seasonal, and it is not stated which side of that line this stretch of avenue falls on, so ask at reception.",
+      "verified_sources": [
+        "https://www.tullynallycastle.ie/tree-trail/",
+        "https://www.irishtimes.com/news/branching-out-1.106993",
+        "https://uk.style.yahoo.com/private-arboretums-became-aristocratic-status-193000343.html",
+        "https://www.tullynallycastle.ie/plan-your-visit/visitor-information/"
+      ],
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland, NBDC dataset 27), record 501, 'Named trees' (probable match)",
+        "url": "https://www.tullynallycastle.ie/tree-trail/"
+      },
+      "access": "Estate-owned. Tullynally says the parkland with its magnificent trees is open to walkers, dogs on leads, throughout the year. The gardens (EUR 9 adult) are open 21 March to 27 September 2026, Thursday to Sunday 9am to 5pm (daily in Heritage Week). The estate's trail places this tree on the left of the main avenue on the way out; whether that stretch is inside the ticketed garden or free parkland is not stated, so ask at reception.",
+      "transport": "Castlepollard 2 km; Mullingar about 25 km. No public transport verified.",
+      "how_to_recognise": "You can recognise it by its height, a tall straight oak that stands above the other oaks around it. It is on the left of the main avenue as you drive out of Tullynally.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Tullynally's own tree trail (fetched; item 11): a young oak was bred from 'the tallest in the demesne, the Squire's Walking Stick, which you can see on the left of the main avenue on the way out'. Irish Times profile of Thomas Pakenham ('Branching out', fetched): 'The Tullynally Oak, known as the Squire's Walking Stick, is the tallest oak in the Republic.' Yahoo Style / Telegraph piece on private arboretums (fetched): 'the tallest oak in Ireland at 112ft, planted by the 1st Baron Longford in 1745'. The 1745 date has one source only and the Irish Times says 'Republic', the Telegraph says 'Ireland': state the tallest claim as 'reported'. 112 ft = 34 m. Heritage Trees register record 501 is the only 'Named trees' Quercus robur at Tullynally (150-200 years in 2009, pin 53.68659,-7.32262, Irish Grid conversion, about 100 m); CONFLICT: the band implies about 170-220 years now, against 1745 (about 280). So age is shown broad 200-280 and the match to record 501 is probable, not proved; the pin is for the writer to treat as site-level. Alive: no dated photo of the tree; the 2025-26 Telegraph piece speaks of it in the present tense; lifecheck NONE at the pin. Pakenham's book 'In the Company of Trees' (2015) is the family's own writing about the demesne. Recognition line candidate: the tall straight oak beside the main avenue, noticeably taller than the other oaks."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "city": "Birr",
+  "country": "Ireland",
+  "status": "needs_curation",
+  "intro": "Birr Castle's oldest tree, the Carroll Oak, was planted before the Parsons family arrived in 1620, and probably around 1550. It stands in the open parkland of the demesne. Near the castle, on the lower terrace of the Formal Gardens, are box hedges the castle calls the tallest in the world, somewhere between nine and twelve metres depending on who measured. A dawn redwood grown from 1940s seed completes the three. All of them are inside the ticketed demesne, open all year.",
+  "meta_description": "Birr Castle's old trees: the Carroll Oak from before 1620, the world's tallest box hedges by the castle's account, and a 1940s dawn redwood.",
+  "question_meta": "Birr's oldest tree is the Carroll Oak in Birr Castle Demesne, planted before 1620 and probably around 1550.",
+  "question_answer": "Birr's oldest mapped tree is the Carroll Oak, a Pedunculate Oak (Quercus robur) in the parkland of Birr Castle Demesne. The estate says it was planted before the Parsons family arrived in 1620; the Irish Times put its planting around 1550.",
+  "question_context": "The oak carries the name of the O'Carroll clan, who held Birr until the 1620s, though the estate does not say who planted it. In 2005 the Irish Times reckoned it had been planted about 455 years earlier and was set to last roughly as long again. The national heritage tree register gave it 300 to 500 years in 2009 and recorded it as a maiden oak, a single trunk never cut back. No girth or height has been published. The demesne's box hedges are at least two centuries old, with sources ranging from the 1780s to more than 300 years. The estate says the oak was certainly planted before the Parsons family arrived in 1620, and it is the only tree it places before them. In 2005 a trimmed circle was kept clear around its base. The box hedges stand on the lower terrace of the Formal Gardens, and the castle calls them the tallest in the world, though published heights run from nine to twelve metres. A dawn redwood from seed that reached Birr in the 1940s completes the three trees mapped here. The demesne is ticketed and open all year.",
+  "hero_tree_id": "bir_001",
+  "oldest_tree_id": "bir_001",
+  "faq": [
+    {
+      "q": "How old is the Carroll Oak at Birr?",
+      "a": "More than four centuries. The estate says it predates 1620, the Irish Times put its planting around 1550, and the register gave 300 to 500 years in 2009."
+    },
+    {
+      "q": "How tall are the Birr Castle box hedges?",
+      "a": "Somewhere between nine and twelve metres. The castle calls them the tallest in the world but gives no figure, and published heights range from 31 feet to about 40."
+    },
+    {
+      "q": "Can you see the trees for free?",
+      "a": "No. All three are inside Birr Castle Demesne, which is ticketed and open all year. The castle itself is a private home."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bir_001",
+      "name": "The Carroll Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 400 years",
+      "age_min": 400,
+      "age_max": 500,
+      "age_basis": "source",
+      "location": {
+        "address": "Birr Castle Demesne, Rosse Row, Birr, Co. Offaly R42 VO27",
+        "latitude": 53.09792,
+        "longitude": -7.91842,
+        "neighbourhood": "Birr Castle Demesne parkland"
+      },
+      "story": "The oldest tree at Birr Castle carries the name of the family that lost the place. The O'Carroll clan held Birr until the 1620s, and the estate says this oak was certainly planted before the Parsons family arrived in 1620. Who put it in the ground, the estate does not say.\n\nIn 2005 the Irish Times reckoned it had been planted about 455 years earlier, around 1550, and that it was set to last roughly as long again. The national heritage tree register gave it 300 to 500 years in 2009. Taken together, the honest answer is more than four centuries, possibly closer to five. Nobody has counted its rings, so the range stays a range.\n\nThe register records it as a maiden oak, meaning a single trunk that was never cut back for timber, and notes the evidence of significant wildlife habitat in it. In 2005 a carefully trimmed circle was kept clear around its base. Of all the trees on these 120 acres, it is the one the estate names as its oldest, the only one it places before the Parsons.\n\nNo girth or height for it has been published. If you have measured it, tell us.\n\nBirr Castle Demesne is ticketed and open all year, with about ten kilometres of paths. Dogs are welcome on leads. The castle itself is a private home.",
+      "verified_sources": [
+        "https://birrcastle.com/wildlife/",
+        "https://www.irishtimes.com/news/in-birr-s-botanic-wonderland-1.448457",
+        "https://birrcastle.com/visit-us/"
+      ],
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / Aubrey Fennell), record 508, 'Named trees'",
+        "url": "https://www.ancient-yew.org/yew_tree_database/"
+      },
+      "access": "Paid entry to Birr Castle Demesne (120 acres, about 10 km of walks); admission price and opening times are on birrcastle.retailint-tickets.com, open all year with seasonal hours (UCC Tree Explorers). Dogs on leads. The castle itself is a private home.",
+      "transport": "Birr town centre, demesne gate on Rosse Row; no rail in Birr, nearest stations Tullamore and Portlaoise need a bus or taxi (Local Link, Kearns Bus). Pay-and-display parking opposite the entrance.",
+      "how_to_recognise": "You can recognise it as a single broad old oak standing on its own in the open parkland of the demesne, with a trimmed circle kept clear around its base.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Owner of the ground (birrcastle.com/wildlife) says the demesne's oldest tree is the Carroll Oak, 'certainly planted before the Parsons family arrived in 1620' (the O'Carroll clan held the castle until the 1620s; the page does not say which family planted it). Irish Times 28 May 2005 ('In Birr's botanic wonderland'): the O'Carroll oak 'planted about 455 years ago' (so about 1550), 'set to last roughly as long again', with a carefully trimmed circle around the base. Register record 508 (13 Aug 2009): Quercus robur, 'Named trees', maiden form, band 300-500 years, evidence of significant habitat. Ages differ: 455 years in 2005 means about 480 now; one guide says over 500 (not fetched). Age here is a broad band from those, not a measurement. No girth or height found. Alive: lifecheck RECENT, an iNaturalist observation 2025-03-30 within range of the register point (not confirmed to be this trunk), and the owner's current page still names it. PIN: register grid N054052 = 53.09792,-7.91842, 100 m precision, ~330 m NW of the castle coordinate (53.09536,-7.91476) which may mean the converted points sit skewed; treat as parkland-level. Birr's Tree Trail (5 km, 65 trees) is on the estate site but its list is not published. RECOGNITION CANDIDATE: a single broad old oak in open parkland with a neatly trimmed circle kept clear around its base.",
+      "paid_entry": true
+    },
+    {
+      "id": "bir_002",
+      "name": "The Birr Castle Box Hedges",
+      "species": "Common Box (Buxus sempervirens)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 330,
+      "age_basis": "source",
+      "height_m": 12,
+      "location": {
+        "address": "Formal Gardens, lower terrace, Birr Castle Demesne, Rosse Row, Birr, Co. Offaly R42 VO27",
+        "latitude": 53.09536,
+        "longitude": -7.91476,
+        "neighbourhood": "Birr Castle Formal Gardens"
+      },
+      "story": "Birr Castle says these are the tallest box hedges in the world, and Wikipedia says Guinness agrees. What nobody agrees on is how tall that is.\n\nThe castle itself gives no figure. Travel writers have filled the gap freely. One guide says 12 metres, another about 40 feet, the Irish Times 31 feet, another 32. That puts them somewhere between nine and twelve metres, which for a plant most people know as a knee-high border is absurd enough without settling the decimal.\n\nThe age is just as loose. One guide says they were planted in the 1780s. Wikipedia says more than 300 years. The national heritage tree register, which lists an avenue of multi-stemmed box at Birr, gave 200 to 300 years in 2009. So these hedges are at least two centuries old, perhaps more, and any single date you read is one source's guess.\n\nWhat they are is easier to say. Two walls of clipped box face each other on the lower terrace of the Formal Gardens and make a green corridor several times your own height. Box is a slow grower, so the height alone tells you how long these walls have been kept.\n\nThe Formal Gardens are inside the ticketed demesne, open all year. The castle is a private home and not part of the visit.",
+      "verified_sources": [
+        "https://birrcastle.com/?p=5219",
+        "https://en.wikipedia.org/wiki/Birr_Castle",
+        "https://birrcastle.com/visit-us/"
+      ],
+      "official_register": {
+        "name": "Heritage Trees of Ireland, record 79 ('Arboricultural curiosities', avenue of multi-stem box)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/"
+      },
+      "access": "Paid entry to Birr Castle Demesne; the Formal Gardens are inside the ticketed grounds. Admission price and hours are on birrcastle.retailint-tickets.com. Castle interior not included.",
+      "transport": "Birr town centre, demesne gate on Rosse Row; nearest stations Tullamore and Portlaoise need a bus or taxi (Local Link, Kearns Bus).",
+      "how_to_recognise": "You can recognise it as two enormous clipped box walls facing each other, forming a green corridor far above head height. It is on the lower terrace of the Formal Gardens beside the castle.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "FLAGGED: ensemble, not one tree, and the height and age sources disagree. Owner (birrcastle.com) states 'the worlds tallest box hedging' on the lower terrace of the Formal Gardens (no height). Wikipedia: box hedges over 300 years old, tallest hedge in the world per Guinness. Search results (not fetched pages, so pointers only): Atlas Obscura about 40 ft (about 12 m), Lonely Planet planted 1780s and 12 m, Irish Times 31 ft, Fodor's 32 ft. Height here (12 m) is the most cited but the owner gives none; the upper bound of 12 m is unverified, the safe range is 9 to 12 m. Planting date: 1780s versus over 300 years (see age range). Register record 79 (13 Aug 2009): Buxus sempervirens, avenue, multi-stem, band 200-300 years, at grid N056054 = 53.10008,-7.91619, which is ~500 m north of the castle and does not fit 'lower terrace of the Formal Gardens' beside the castle; so either the converted point is skewed or the record is a different box avenue. The pin here is the castle coordinate as a stand-in for the Formal Gardens, deliberately parkland-level approximate. One place to stand (the hedge walk on the lower terrace) so it fits a collectible ensemble; the writer may decide whether a hedge is wanted. RECOGNITION CANDIDATE: a pair of enormous, clipped box walls forming a green corridor on the lower terrace of the formal gardens, rising above head height several times over.",
+      "paid_entry": true
+    },
+    {
+      "id": "bir_003",
+      "name": "Birr Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "around 80 years",
+      "age_min": 50,
+      "age_max": 100,
+      "age_basis": "source",
+      "location": {
+        "address": "Birr Castle Demesne, Rosse Row, Birr, Co. Offaly R42 VO27",
+        "latitude": 53.0995,
+        "longitude": -7.92109,
+        "neighbourhood": "Birr Castle Demesne"
+      },
+      "story": "Until the 1940s, science knew the dawn redwood mainly as a fossil. Living trees were found and described in China between 1941 and 1948, and seed travelled west soon after. Birr Castle says some of that first seed reached its gardens in the 1940s, and that a fine tree from that period still stands.\n\nThat makes this one of the youngest trees on our Irish map and, in a sense, one of the oldest. Its line runs back through the fossil record. Its own trunk runs back about eighty years, to seed that reached Birr while the species was still news.\n\nThe national heritage tree register lists a dawn redwood at Birr as an exceptional specimen, aged 50 to 100 in 2009, and it is the tree pinned here. The estate's page does not locate its 1940s tree or measure it, so the match between the two rests on species and age, not on anyone saying so outright.\n\nIt is a conifer that behaves like a broadleaf. The needles come out bright green in spring and turn a foxy reddish brown in autumn, then drop, leaving a tall, fluted trunk bare all winter. No girth or height has been published. If you know either, tell us.\n\nThe demesne is ticketed and open all year, with seasonal hours.",
+      "verified_sources": [
+        "https://birrcastle.com/?p=5219",
+        "https://www.ucc.ie/en/tree-explorers/tree-sites/birrcastledemesne/"
+      ],
+      "official_register": {
+        "name": "Heritage Trees of Ireland, record 355 ('Exceptional specimen trees')",
+        "url": "https://www.ancient-yew.org/yew_tree_database/"
+      },
+      "access": "Paid entry to Birr Castle Demesne; open all year with seasonal hours. Price and hours on birrcastle.retailint-tickets.com.",
+      "transport": "Birr town centre, demesne gate on Rosse Row; nearest stations Tullamore and Portlaoise need a bus or taxi (Local Link, Kearns Bus).",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when the bright green needles turn a foxy reddish brown before they fall"
+      },
+      "how_to_recognise": "You can recognise it in autumn and winter, when this tall conifer turns reddish brown and then stands bare, which no evergreen around it does. Look for the fluted trunk and feathery needles.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "FLAGGED: owner's page does not locate or measure the tree; link between owner's sentence and register record is by species and age band only. Owner (birrcastle.com/?p=5219): the first Metasequoia discovered reached Birr as seed in the 1940s, and 'a fine tree from that period' still stands. Register record 355 (13 Aug 2009): Metasequoia glyptostroboides, maiden, 'Exceptional specimen trees', band 50-100 years, grid N052054 = 53.0995,-7.92109 (100 m precision). A 1940s seed would give about 80 years. Lifecheck NONE. No girth or height. A dawn redwood was only described to science in 1941-1948, so seed this early is plausible; the 'first discovered' wording is the owner's, kept as theirs. Worth the walk rather less than the oak: it is a notable specimen of a famous living fossil rather than a veteran. RECOGNITION CANDIDATE: a tall, feathery, fluted-trunk conifer that turns bronze in autumn and drops its needles in winter.",
+      "paid_entry": true
+    }
+  ]
+}

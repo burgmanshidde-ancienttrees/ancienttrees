@@ -1,0 +1,107 @@
+{
+  "city": "Inistioge",
+  "country": "Ireland",
+  "status": "needs_curation",
+  "intro": "Woodstock, just outside Inistioge, holds a gnarled giant sequoia that the Irish Times called the widest tree in Ireland in 1999, 7.65 metres round at its base and 41.5 metres tall. Woodstock's own page now gives Ireland's largest giant redwood as bigger, so the crown has moved on. In the same arboretum stands what the estate calls its Champion Coast redwood, one of a pair. Both are put at roughly 150 to 215 years. Entry is five euro per car.",
+  "meta_description": "Woodstock Gardens near Inistioge: a gnarled giant sequoia 41.5 metres tall and the estate's champion coast redwood. Five euro per car.",
+  "question_meta": "Inistioge's best-known tree is Woodstock's gnarled giant sequoia, 41.5 metres tall and 7.65 metres round at its base in 1999.",
+  "question_answer": "Inistioge's best-known tree is the giant sequoia (Sequoiadendron giganteum) in Woodstock Gardens and Arboretum, measured at 41.5 metres tall and 7.65 metres round at its base in 1999. It is roughly 150 to 215 years old.",
+  "question_context": "The Irish Times reported the sequoia during the restoration of Woodstock's Victorian gardens in 1999 and called it the tallest tree in the park and the widest in Ireland. Woodstock's own page now gives Ireland's largest recorded giant redwood as 51 metres tall and 8.6 metres round, so the widest claim no longer stands. The girth was taken at the base, not at chest height. The national heritage tree register put the sequoia at 150 to 200 years in 2009, and the species reached Ireland only in the 1850s. The estate's champion coast redwood is one of two in the arboretum, about 67 metres apart, and nobody has published which. The tree is older looking and twisted, and two stately Wellingtonias stood almost 40 metres tall nearby in 1999. No newer measurement has been published since. Woodstock is run by Kilkenny County Council, entry is five euro per car, and the gardens close whenever a yellow, orange or red weather warning is in force.",
+  "hero_tree_id": "wds_001",
+  "oldest_tree_id": "wds_001",
+  "faq": [
+    {
+      "q": "Is the Woodstock sequoia the widest tree in Ireland?",
+      "a": "The Irish Times said so in 1999, at 7.65 metres round its base. Woodstock's own page now names a larger giant redwood, so the claim no longer holds."
+    },
+    {
+      "q": "How old are the Woodstock redwoods?",
+      "a": "Roughly 150 to 215 years. The register gave 150 to 200 in 2009, and the giant sequoia only reached Ireland in the 1850s."
+    },
+    {
+      "q": "How much does Woodstock cost?",
+      "a": "Five euro per car. The gardens open daily and close whenever a yellow, orange or red weather warning is in force."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wds_001",
+      "name": "The Woodstock Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 150 to 215 years",
+      "age_min": 150,
+      "age_max": 215,
+      "age_basis": "derived",
+      "girth_cm": 765,
+      "height_m": 41.5,
+      "location": {
+        "address": "Woodstock Gardens & Arboretum, Inistioge, Co. Kilkenny (arboretum, near the edge of the woods)",
+        "latitude": 52.47351,
+        "longitude": -7.05903,
+        "neighbourhood": "Inistioge"
+      },
+      "story": "In 1999 the Irish Times called this gnarled sequoia the widest tree in Ireland, 7.65 metres round at its base. Woodstock's own website now quietly contradicts that, giving Ireland's largest recorded giant redwood as 8.6 metres round and 51 metres tall. So the crown has moved on. The tree has not.\n\nThe newspaper found it while the Victorian gardens at Woodstock were being restored. Two stately Wellingtonias stood almost 40 metres tall at the edge of the woods, and nearby was this one, older looking and twisted, the tallest tree in the park at 41.5 metres. Those figures are from 1999, and the girth was taken at the base rather than at chest height, which flatters any sequoia.\n\nThe age is an estimate, worked out rather than recorded. The national heritage tree register put Woodstock's giant sequoia at 150 to 200 years in 2009, and it is the only one of its kind in Woodstock's entries, so it is very probably this tree. The species only reached Ireland in the 1850s, which caps how old it can be. That gives roughly 150 to 215 years today.\n\nNo newer measurement has been published since 1999. If you know a newer figure, tell us.\n\nWoodstock is run by Kilkenny County Council. Entry is five euro per car, and the gardens close when a weather warning is in force, which for a 40-metre tree is a reasonable policy.",
+      "verified_sources": [
+        "https://www.irishtimes.com/news/ancient-and-exotic-trees-found-during-the-restoration-of-victorian-gardens-1.227406",
+        "https://www.woodstock.ie/we-are-the-champions/",
+        "https://www.woodstock.ie/giant-redwood-sequoiadendron-giganteum/",
+        "https://www.woodstock.ie/about-the-gardens/"
+      ],
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland, NBDC dataset 27), record 554",
+        "url": "https://www.woodstock.ie/about-the-gardens/"
+      },
+      "access": "Paid entry: EUR 5 per car (woodstock.ie, fetched), open daily, summer (April to September) 9am to 7.30pm, winter (October to March) 10am to 4pm; closed in yellow, orange or red wind/weather warnings. Run by Kilkenny County Council; car park about 750 m from the main gates.",
+      "transport": "Inistioge village about 1.5 km; Kilkenny city about 30 minutes by car. No public transport verified.",
+      "how_to_recognise": "You can recognise it by the massive, deeply fluted, gnarled red-brown trunk, taller than everything around it. It stands at the edge of the arboretum woods, near two other tall giant sequoias.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Irish Times, Dick Grogan, 15 Sep 1999 (fetched): during restoration, 'two stately Wellingtonias, almost 40 metres tall' on the edge of the woods; 'nearby is an ancient gnarled sequoia, the tallest tree in the park at 41.5 metres', 'the widest girth of any tree in Ireland, being 7.65 metres in circumference at its base'. That is a 1999 newspaper claim; the estate's own page gives the largest recorded Irish giant redwood as 51 m and 8.6 m girth (so the 'widest in Ireland' claim cannot be repeated as a fact; say 'reported in 1999'). Heritage Trees register: Sequoiadendron record 554, 'Exceptional specimen trees', maiden form, 150-200 years in 2009, pin 52.47351,-7.05903 (Irish Grid conversion, about 100 m). It is the only Sequoiadendron in the Woodstock rows, so the match to the Irish Times tree is probable not proved. Age derived: register band plus 17 years; species only reached Ireland in the 1850s, so no older. Do not use the redwoodworld 1869 planting caption (not fetched). Girth is circumference at base, 1999, so not breast height. Alive: lifecheck RECENT 2026-08-30 at the neighbouring coast redwood pin (iNaturalist, same garden); this specific tree not seen after 1999. Flagged: tree-level pin unknown. Recognition line candidate: a massive, deeply fluted, red-brown gnarled trunk, taller than everything around it, at the edge of the arboretum woods.",
+      "paid_entry": true
+    },
+    {
+      "id": "wds_002",
+      "name": "The Woodstock Champion Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "roughly 150 to 215 years",
+      "age_min": 150,
+      "age_max": 215,
+      "age_basis": "derived",
+      "location": {
+        "address": "Woodstock Gardens & Arboretum, Inistioge, Co. Kilkenny (arboretum)",
+        "latitude": 52.47407,
+        "longitude": -7.059255,
+        "neighbourhood": "Inistioge"
+      },
+      "story": "Woodstock calls this its Champion Coast redwood and then, unusually for a champion, publishes no number at all. No height, no girth. The estate's 2015 page names it alongside the tallest silver fir in Ireland and a Bentham cypress, and leaves the redwood's size to your own eyes.\n\nChampion is the title tree recorders give to the biggest known tree of its kind in a given area. Woodstock does not say which area or by which measure, so the title stands here as the estate's own.\n\nThere is a second puzzle. The national heritage tree register lists two coast redwoods in the arboretum, about 67 metres apart, both recorded as exceptional specimens and both put at 150 to 200 years old in 2009. Which of the pair is the champion is not stated anywhere. They are treated as one stop here, with the pin set between them, and the register's age carried forward to roughly 150 to 215 years today. Stand between them and you can judge the contest yourself.\n\nThe species is native to the California coast. These two share the arboretum with Woodstock's old giant sequoia.\n\nWoodstock is run by Kilkenny County Council. Entry is five euro per car, and the gardens close whenever a yellow, orange or red weather warning is in force. If you know which redwood holds the title, or have a measurement for either, tell us.",
+      "verified_sources": [
+        "https://www.woodstock.ie/we-are-the-champions/",
+        "https://www.woodstock.ie/about-the-gardens/",
+        "https://www.irishtimes.com/news/ancient-and-exotic-trees-found-during-the-restoration-of-victorian-gardens-1.227406"
+      ],
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland, NBDC dataset 27), records 546 and 547",
+        "url": "https://www.woodstock.ie/we-are-the-champions/"
+      },
+      "access": "Paid entry: EUR 5 per car (woodstock.ie, fetched), open daily, summer (April to September) 9am to 7.30pm, winter (October to March) 10am to 4pm; closed in yellow, orange or red wind/weather warnings.",
+      "transport": "Inistioge village about 1.5 km; Kilkenny city about 30 minutes by car. No public transport verified.",
+      "how_to_recognise": "You can recognise it by the tall, straight trunk with soft, fibrous red-brown bark and feathery foliage. It is one of two coast redwoods about 67 metres apart in the arboretum, near the giant sequoia.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Owner (Kilkenny County Council, woodstock.ie 'We are the Champions', 2015): 'our Champion Coast redwood'; it is named among the champions beside the tallest silver fir in Ireland and the Bentham cypress. No height or girth is published for it; do not invent any. Register has TWO coast redwoods, records 546 (52.47377,-7.05919) and 547 (52.47437,-7.05932), both 'Exceptional specimen trees', maiden, 150-200 years in 2009, about 67 m apart; folded here, pin is the midpoint (Irish Grid conversions, about 100 m each), so which one is the estate's champion is unknown. Age derived from the register band plus 17 years. Alive: lifecheck RECENT 2026-08-30 at record 546 (iNaturalist observation in the garden), not necessarily this tree. Single owner source plus register: flagged, pin approximate. Recognition line candidate: a very tall, straight, deeply red-brown fibrous-barked trunk with soft feathery foliage, in the arboretum near the sequoia.",
+      "paid_entry": true
+    }
+  ]
+}
