@@ -20,6 +20,27 @@
       "by": "session-e2f631fb",
       "claimed_at": "2026-11-03T18:47:44+00:00",
       "trees_at_claim": 6
+    },
+    {
+      "target": "salt-lake-city",
+      "kind": "verify",
+      "by": "session-21430a99",
+      "claimed_at": "2026-11-03T18:51:57+00:00",
+      "trees_at_claim": 6
+    },
+    {
+      "target": "miami",
+      "kind": "verify",
+      "by": "session-21430a99",
+      "claimed_at": "2026-11-03T18:52:01+00:00",
+      "trees_at_claim": 7
+    },
+    {
+      "target": "spokane",
+      "kind": "verify",
+      "by": "session-21430a99",
+      "claimed_at": "2026-11-03T18:52:04+00:00",
+      "trees_at_claim": 14
     }
   ]
 }
