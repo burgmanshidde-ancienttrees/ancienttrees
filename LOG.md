@@ -12,6 +12,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: Edinburgh 16 to 21, the first part of the held UK batch
+
+- Live: five Edinburgh trees from the UK round (Robert Louis Stevenson's Yew at Colinton, the Sweet Chestnut of Modern One, the Hawes Inn Yew, the Four Disciples of Malleny, the Redford Wood Redwood), with the rewritten intro and an FAQ that no longer counts sixteen. Built by `python3 scripts/build_uk.py --only edinburgh` (new `--only` flag, so the batch goes out in pace-sized parts).
+- Pace: the last 24 hours already held 20 of our own trees, so five was the room. Still held in data/research/: Glasgow +4, Wolverhampton 4, Cannock Chase 3, Milton Keynes 2, Dunkeld +4, Scone, Blair Atholl, Meikleour, Balfron (21 trees). Next session with room: `python3 scripts/build_uk.py --only glasgow,dunkeld,wolverhampton` and so on, under 25 a day, beside the London and churchyard-yew batches also waiting.
+- Note: out/tmp/gettext.py (another session's helper) shadows Python's gettext for any script run from out/tmp/; put new helpers in a subfolder.
+
 ## 2026-11-03 session: app fixes from Hidde's phone test, ready for build 37
 
 **What changed in the product (all on main, app and web where both have it):** the pin-tap freeze (map updates that change nothing now cost nothing; with a filter on, the map keeps the same tree list instead of a new one per frame); your own tree's photo opens at the same size as ours; "Added to Want to visit" sits on the bar under it; See all on Want to visit lands on the list, no back button; a country opens on its map page; notes only on their own tree; no share disc on Want to visit tiles; Edit profile without footnotes; on the web, Read more only on the intro above trees (privacy, terms and every text page open whole).

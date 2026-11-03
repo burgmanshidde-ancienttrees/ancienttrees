@@ -23,6 +23,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 R = os.path.join(ROOT, "data", "research")
 CITIES = os.path.join(ROOT, "data", "cities")
 OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else CITIES
+# --only edinburgh,dunkeld: build those places alone, so a batch can go out in pace-sized parts
+ONLY = set(sys.argv[sys.argv.index("--only") + 1].split(",")) if "--only" in sys.argv else None
 
 # slug: [(research file, tree ids taken from it), ...]
 SOURCES = {
@@ -86,6 +88,8 @@ def main():
     places.update(json.load(open(os.path.join(R, "uk-places-2.json"))))  # second round wins
     os.makedirs(OUT, exist_ok=True)
     for slug, parts in SOURCES.items():
+        if ONLY and slug not in ONLY:
+            continue
         ts = []
         for src, ids in parts:
             rows = {t["id"]: t for t in json.load(open(os.path.join(R, src))) if isinstance(t, dict)}
