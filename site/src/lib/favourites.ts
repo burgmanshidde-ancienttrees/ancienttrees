@@ -36,7 +36,7 @@ export function favouriteCitySlugs(cities: CollectionEntry<"cities">[]): string[
 // one, so Palermo and Cagliari stay cities. Same face rule: an island with no
 // photograph is not on the shelf, which today keeps Menorca, Mallorca, Maui
 // and Okinawa off it until one of their trees gets a picture.
-export const FAVOURITE_ISLANDS = ["tenerife", "madeira", "oahu", "crete", "sardinia", "kauai", "menorca", "mallorca", "maui", "hawaii", "okinawa", "yakushima"];
+export const FAVOURITE_ISLANDS = ["tenerife", "gran-canaria", "madeira", "oahu", "crete", "sardinia", "kauai", "bali", "menorca", "mallorca", "maui", "hawaii", "okinawa", "yakushima"];
 
 /** The islands that can actually be shown: in order, only those with a face. */
 export function islandSlugs(cities: CollectionEntry<"cities">[]): string[] {
