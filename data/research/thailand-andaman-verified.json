@@ -36,5 +36,81 @@
    "attribution": null,
    "status": "missing"
   }
+ },
+ {
+  "id": "kbi_001",
+  "name": "Rain tree of Wat Thammawut Saranaram, Nuea Khlong",
+  "species": "Rain Tree (Samanea saman)",
+  "age_estimate": "more than about 200 years, by the abbot's account",
+  "age_min": 200,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 812,
+  "height_m": 25,
+  "location": {
+   "address": "Wat Thammawut Saranaram (formerly Wat Bo Phlo), Ban Khlong Siat, Pakasai, Nuea Khlong, Krabi",
+   "latitude": 8.054211,
+   "longitude": 99.027392,
+   "neighbourhood": "Pakasai, Nuea Khlong"
+  },
+  "story": "Nobody planted this rain tree. The abbot of Wat Thammawut Saranaram told Thailand's Ministry of Culture that it came up by itself and was already growing before the temple was founded, so nobody knows the year.\n\nThe temple was once called Wat Bo Phlo, and the abbot counts it as the second temple in Krabi province. Reasoning from that history, the register puts the tree at more than about 200 years. It listed the tree in 2018 as a heritage tree of the land and measured a trunk 8.12 metres round and about 25 metres tall. The abbot's account adds that today's crown grew out again from the original trunk.\n\nA rain tree, Samanea saman, is a shade tree from tropical America with a broad, low dome of a crown.\n\nWe have not yet confirmed exactly where it stands. The temple is at Ban Khlong Siat in Pakasai subdistrict, Nuea Khlong, and the pin on our map is the register's own point, which may lie some way off. Ask for Wat Thammawut Saranaram, or its old name, Wat Bo Phlo. It is a working temple, so dress as you would for any wat. If you find the tree, send us a photograph from beside it, so the next visitor can walk straight there.",
+  "verified_sources": [
+   "Ministry of Culture Rukkha Moradok khong Phaendin 2018 list, register id 2018-38 (data/registers/thailand-rukkha.json, CC BY; the abbot's account)",
+   "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9/resource/badf85dc-71f2-4d8e-bd3a-5415e0730c0e/download/tree2.xlsx"
+  ],
+  "official_register": {
+   "name": "Ministry of Culture, Department of Cultural Promotion: Rukkha Moradok khong Phaendin (heritage trees of the land), 2018, no. 38",
+   "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+  },
+  "access": "Temple grounds, free; a working temple, so dress and behave as at any wat. Location not verified: the pin is the register's point, which falls on the Phetkasem road in Nuea Khlong, while the temple stands at Ban Khlong Siat in Pakasai subdistrict, possibly a few kilometres away. Ask locally for Wat Thammawut Saranaram or its old name, Wat Bo Phlo.",
+  "transport": "Nuea Khlong district, outside Krabi town. Route and public transport not verified.",
+  "how_to_recognise": "You can recognise it as the great rain tree in the grounds of Wat Thammawut Saranaram, a trunk about eight metres round, at Ban Khlong Siat in Pakasai.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register 2018-38 only (girth 8.12 m, about 25 m, 'about 200-plus years' reasoned by the abbot from the temple's history; grew back from the original trunk). No second source, no dated sighting, temple not on OSM (Nominatim: none for the current or old name) or the web. Register pin reverse-geocodes to the Phetkasem road in Nuea Khlong subdistrict, while the register text puts the temple in Pakasai subdistrict. Published on Hidde's word, 2026-11-03: 'de twee vetste bomen wel live zetten met de kanttekening dat we de gps nog moeten verifieren'. Single source plus caveat on the page; verify the pin with a reader's GPS or a dated photo."
+ },
+ {
+  "id": "tkp_001",
+  "name": "Fig tunnel of Khlong Sang Ne, Takua Pa",
+  "species": "Fig (Ficus sp.)",
+  "age_estimate": "more than 100 years (PPTV 2023); about 200 by the register",
+  "age_min": 100,
+  "age_max": 200,
+  "age_basis": "source",
+  "girth_cm": 200,
+  "height_m": 20,
+  "location": {
+   "address": "Khlong Sang Ne, Bang Nai Si, Takua Pa, Phang Nga (community boat trips)",
+   "latitude": 8.876397,
+   "longitude": 98.342107,
+   "neighbourhood": "Bang Nai Si, Takua Pa"
+  },
+  "story": "On Khlong Sang Ne, a short canal near Takua Pa, old figs lean in from both banks and meet overhead, so the boats pass through a green tunnel with roots hanging down into the water. People here call it the Little Amazon.\n\nThailand's Ministry of Culture listed the canal's fig as a heritage tree of the land in 2017. Its record, written from what the Khlong Sang Ne community told it, describes a tunnel of blunt-leaved weeping figs more than 200 years old, the largest over two metres round and more than 20 metres tall, among waterside trees whose roots lock together along both banks. Fresh and salt water mix here, and the register names hornbills and snakes among the wildlife. A 2023 report by the broadcaster PPTV put the tunnel at more than 100 years, so read the age as a range.\n\nThe trips are run by the community in paddle boats, with no motors, and take about an hour and a half. PPTV advises booking ahead so the trip can be timed to the tide. Takua Pa lies north of Khao Lak, a little over an hour's drive from Phuket.\n\nOur pin is the register's point beside the canal, and we have not yet confirmed where the boats leave from, so ask the community tourism group when you book.",
+  "verified_sources": [
+   "Ministry of Culture Rukkha Moradok khong Phaendin 2017 list, register id 2017-25 (data/registers/thailand-rukkha.json, CC BY)",
+   "https://www.pptvhd36.com/travel/thailand/203157"
+  ],
+  "official_register": {
+   "name": "Ministry of Culture, Department of Cultural Promotion: Rukkha Moradok khong Phaendin (heritage trees of the land), 2017, no. 25",
+   "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+  },
+  "access": "Seen from the water on a community-run paddle-boat trip of about an hour and a half (PPTV, 2023); book ahead with the Khlong Sang Ne community tourism group so the trip can be timed to the tide. Paid; a visitor review gives about 250 baht a person, not confirmed. Location not verified: the pin is the register's point beside the canal, about 300 m from the Khlong Sang Ne access road, not a confirmed boat launch.",
+  "transport": "Bang Nai Si, Takua Pa district, Phang Nga, north of Khao Lak; a little over an hour's drive from Phuket (PPTV). Public transport not verified.",
+  "how_to_recognise": "You can recognise it as the tunnel of figs arching over Khlong Sang Ne, their roots hanging into the water, on the paddle-boat route at Bang Nai Si.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register 2017-25 (Thai name ไทรย้อยใบทู่, blunt-leaved weeping fig, likely Ficus microcarpa, kept at genus; largest fig of the stretch girth 2 m, height 20 m, 'over 200 years' from the community) and PPTV 2023-08-12 (fig tunnel over 100 years, community paddle boats only, about 1.5 h, book ahead for the tide, a little over an hour by car from Phuket). An ensemble seen from a boat: the boat trip is the one place to stand. Nominatim places the 'Saphan Phra - Khlong Sang Ne' road 320 m from the register pin. No Commons photo within 3 km. No individual named. Published on Hidde's word, 2026-11-03: 'de twee vetste bomen wel live zetten met de kanttekening dat we de gps nog moeten verifieren'. Single source plus caveat on the page; verify the pin with a reader's GPS or a dated photo."
  }
 ]

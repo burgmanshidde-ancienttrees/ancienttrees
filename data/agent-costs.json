@@ -15035,6 +15035,62 @@
       "tokens": 179666,
       "trees": 14,
       "note": "14 stories with recognition lines, Santa Cruz place fields and the Tenerife place text rewritten for nine trees; dispatcher translated the five new trees and place text into the es overlay. Held for the pace, build with scripts/build_tenerife.py. All in about 0.85M tokens with the dispatcher, roughly 61k a tree."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "los-angeles (west and south)",
+      "tokens": 156034,
+      "trees": 3,
+      "note": "Aoyama Tree (Little Tokyo, HCM 920), Rancho Los Cerritos and Rancho Los Alamitos figs (Long Beach), all confirmed pins, free. The Cal Poly champion leads around UCLA yielded no independently sourced tree; most HCM trees are rows or avenues."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "los-angeles (San Gabriel Valley)",
+      "tokens": 148834,
+      "trees": 3,
+      "note": "Earley fig (Pasadena landmark), Library Park fig (South Pasadena), Mission San Gabriel olive. huntington.org 429 on every fetch, so no Huntington trees; Descanso oaks unpinnable."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "san-diego",
+      "tokens": 151071,
+      "trees": 5,
+      "note": "All five from Coronado's Heritage Tree list (Torrey and Norfolk Island pines, one walkable cluster). San Diego proper leads had no coordinates and stayed leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "oakland",
+      "tokens": 161065,
+      "trees": 4,
+      "note": "Old Survivor (view-only pin), UC Berkeley eucalyptus grove, Jack London Oak, Faculty Glade buckeye; three flagged for thin evidence. Mountain View Cemetery and Lake Merritt sources unreadable."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "santa-rosa (with Sonoma)",
+      "tokens": 177651,
+      "trees": 3,
+      "note": "Santa Rosa itself none (Burbank cedar gone 1989, Rosie redwood private). Glen Ellen 2 (Grandmother Tree, Jack's Oak, Jack London SHP, vehicle fee), Sebastopol 1 (Burbank's Royal Walnut, Gold Ridge farm)."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "riverside",
+      "tokens": 99099,
+      "trees": 0,
+      "note": "Nothing beyond the four live trees: Mission Inn, Victoria Avenue, Evergreen Cemetery, Mount Rubidoux, UCR all tried; riversideca.gov 403. Angle closed."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "krabi+takua-pa",
+      "tokens": 40000,
+      "trees": 2,
+      "note": "Dispatcher, no agents (estimate): Krabi rain tree and Khlong Sang Ne fig tunnel promoted from leads on Hidde's word with register pins flagged as unverified; stories, place blocks, added to scripts/build_thailand_south.py."
     }
   ]
 }

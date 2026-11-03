@@ -7,7 +7,8 @@ then city_names.py, preflight.py, commit by path, push.
 
 Sources: data/research/thailand-{gulf,andaman}-verified.json (trees with stories) and
 data/research/thailand-south-places.json (place fields). Register: data/registers/thailand-rukkha.json.
-Both are lone trees: tree pages, no place page in Google until a place reaches four.
+All four are lone trees: tree pages, no place page in Google until a place reaches four.
+Krabi and Takua Pa carry register pins that nobody has checked on the ground (Hidde, 2026-11-03).
 Leads for the rest of the south: data/leads/thailand-south.json and thailand-south-gulf.json.
 """
 import json, os, sys
@@ -20,6 +21,10 @@ OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else os.path.
 IDS = {
     "kpn_001": ("ko-pha-ngan", "kpn_001"),
     "trg_001": ("kantang", "ktg_001"),
+    # Added 2026-11-03 on Hidde's word ("de twee vetste bomen wel live zetten met de
+    # kanttekening dat we de gps nog moeten verifieren"): register pins, said so on the page.
+    "kbi_001": ("krabi", "kbi_001"),
+    "tkp_001": ("takua-pa", "tkp_001"),
 }
 PLACE_FIELDS = ["city", "country", "status", "intro", "meta_description", "question_meta",
                 "question_answer", "question_context", "hero_tree_id", "oldest_tree_id", "faq"]
