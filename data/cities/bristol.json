@@ -3,15 +3,19 @@
   "country": "United Kingdom",
   "status": "needs_curation",
   "oldest_tree_id": "bri_001",
-  "intro": "Bristol's remarkable trees cluster in the parkland estates the city inherited from its merchant families: Ashton Court, once a private deer park, now holds the largest group of ancient pollard oaks in Britain outside Windsor Great Park, including a 700-year-old oak the Tree Council named one of the country's 50 greatest. Add a Repton-landscaped cedar at Blaise Castle, an oak that predates Vanbrugh's own house at Kings Weston, and a civic square's planes that have watched Bristol since a 1719 riot, and the whole set sits inside public parks the city has kept free for well over a century.",
-  "meta_description": "Bristol's most remarkable trees: Ashton Court's 700-year Domesday Oak, Blaise Castle's Repton-era cedar, and Queen Square's riot-era planes.",
+  "intro": "Five of Bristol's remarkable trees stand on one walk of about two kilometres through the centre: the planes of Queen Square, a fig growing out of the harbour wall by Bristol Bridge, the city's largest black mulberry in Royal Fort Gardens, the oldest oak on Brandon Hill and a cedar 5.95 metres round in Clifton's Victoria Square. The oldest stand further out, in parkland estates the city inherited from merchant families: Ashton Court's Domesday Oak, around 700 years old, a Repton-era cedar at Blaise Castle and an oak older than Vanbrugh's house at Kings Weston. Twelve trees in all.",
+  "meta_description": "Twelve remarkable trees in Bristol: a central walk from Queen Square's planes to a Clifton cedar, plus Ashton Court's 700-year-old Domesday Oak.",
   "question_answer": "Bristol's oldest tree is the Domesday Oak in Ashton Court Estate, estimated at around 700 years old and named for the estate's mention in the 1086 Domesday Book. Its trunk has partially collapsed and is now held together with timber struts and wire, but it is still alive, one of Britain's 50 Great Trees named by the Tree Council in 2002. It stands free to visit in Ashton Court, a short bus ride from central Bristol.",
   "question_meta": "The Domesday Oak in Ashton Court, around 700 years old, is Bristol's oldest tree, still alive despite a partly collapsed, wire-supported trunk.",
-  "question_context": "Ashton Court was a private deer park for centuries before Bristol City Council bought it in 1959 and opened it to the public. Its oldest surviving oak, thought to be around 700 years old, takes its name from the estate's own appearance in the Domesday Book of 1086, the survey William the Conqueror ordered of his new kingdom; the Tree Council believes the tree was already growing around the time that record was made. In 2002, to mark the Queen's golden jubilee, the Tree Council selected it as one of 50 Great British Trees. Its trunk has since partially collapsed, split and settled toward the ground, and is now held upright with timber struts and steel wire rather than its own structural strength alone. Visitors who knew the tree decades ago describe climbing inside a healthier, more intact trunk; today's is thinner in the canopy and visibly declining, though still producing leaves each year. It stands, easy to miss without signage, among Ashton Court's wider population of ancient pollard oaks, more than a hundred of them, the largest such cluster in Britain outside Windsor Great Park.",
+  "question_context": "Ashton Court was a private deer park for centuries before Bristol City Council bought it in 1959 and opened it to the public. Its oldest surviving oak, thought to be around 700 years old, takes its name from the estate's own appearance in the Domesday Book of 1086; the Tree Council believes the tree was already growing around the time that record was made. In 2002, to mark the Queen's golden jubilee, the Tree Council selected it as one of 50 Great British Trees. Its trunk has since partially collapsed, split and settled toward the ground, and is now held upright with timber struts and steel wire. It is thinner in the canopy than it was, but still comes into leaf each year. It stands, easy to miss without signage, among Ashton Court's wider population of ancient pollard oaks, more than a hundred of them, the largest such cluster in Britain outside Windsor Great Park. In the city centre, the oldest tree on record is the oak on Brandon Hill, which the Bristol Tree Forum estimates at around 300 years, five metres round, standing just inside the park keepers' compound.",
   "faq": [
     {
       "q": "What is the oldest tree in Bristol?",
       "a": "The Domesday Oak in Ashton Court, around 700 years old and named for the estate's mention in the 1086 Domesday Book. Its trunk has partly collapsed and is held up with struts and wire, but it is still alive."
+    },
+    {
+      "q": "Where can I see old trees in central Bristol?",
+      "a": "On foot in an afternoon. Start at the London Planes of Queen Square, then the fig growing out of the harbour wall east of Bristol Bridge, the city's largest black mulberry in Royal Fort Gardens, the oak on Brandon Hill and the cedar in Victoria Square, Clifton, about two kilometres in all and free throughout."
     },
     {
       "q": "Is Ashton Court free to visit?",
@@ -270,6 +274,230 @@
         "name": "Tree Preservation Order TPO1109_T1, Land At Rodney Road Backwell (North Somerset Council, planning.data.gov.uk)",
         "url": "https://www.planning.data.gov.uk/entity/7001021771"
       }
+    },
+    {
+      "id": "bri_008",
+      "name": "The Harbour Wall Fig",
+      "species": "Common Fig (Ficus carica)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "age_basis": "source",
+      "location": {
+        "address": "Floating Harbour wall east of Bristol Bridge, Castle Park, Bristol BS1",
+        "latitude": 51.45485,
+        "longitude": -2.5899,
+        "neighbourhood": "Castle Park / Old Market edge"
+      },
+      "story": "This fig does not grow in the ground. It grows out of the thirty-foot harbour wall just east of Bristol Bridge, a wall that was once part of Bristol Castle's defences, and how it got there, or when, the Bristol Tree Forum calls a mystery.\n\nThe likeliest answer is an accident of trade. A Bristol river blogger who follows the figs along the Avon, the harbour and the Malago believes they were seeded by fruit from boats and by ballast. The same blogger traced a huge fig opposite the old brewery through historic photographs from 1905, the 1920s, 1930 and 1951, and thinks it the oldest of at least two figs in Castle Park. This one grows in that spot. Neither source says in so many words that it is the same plant, so its century and more rests on those photographs and its position.\n\nEvery so often it is cut hard back to keep it clear of the river traffic. On 31 July 2018 a storm pulled half of it out of the wall, and the Harbour Master's team cleared the wreckage from the water. What grows there now is the regrowth, smaller than the mass in the old photographs, and still alive: people recorded it there in July and again in October 2026.\n\nIt is a wall tree, so nobody has measured a trunk. If you know when it first appeared, tell us.",
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/",
+        "https://avonstories.com/2018/09/20/castle-park-fig-2018/",
+        "https://www.inaturalist.org/observations/384176893",
+        "https://www.inaturalist.org/observations/408282037"
+      ],
+      "access": "Free. Seen from the Castle Park path along the Floating Harbour, open at all times at no charge (Bristol City Council). The tree grows out of the harbour wall itself, so it is viewed from the path, not reached.",
+      "transport": "Beside Bristol Bridge, about 0.55 km (7 min walk) from Queen Square and about 1 km (13 min walk) from Bristol Temple Meads.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Source A, Bristol Tree Forum (ST 5910 7303, converts to 51.45476,-2.59002): a huge fig in the thirty-foot vertical wall of Bristol Docks just east of Bristol Bridge; the wall was part of the old castle's defences; how it got established and how long ago is a mystery; 'every so often it is heavily reduced so that it does not create problems for the river traffic'. Source B, Avon Stories (a Bristol river blogger, Sept 2018): at least two figs in Castle Park; the huge one opposite the old brewery is thought the oldest, visible in historic photographs from 1905 (Know Your Place), the 1920s, 1930 and 1951; figs along the Avon, harbour and Malago were seeded by accident from trade (fruit from boats, ballast). A storm on 31 July 2018 pulled half of it out of the wall and the Harbour Master team removed the debris from the water. Alive now: two iNaturalist observations of Ficus carica with GPS accuracy 3 to 4 m at 51.45485,-2.58990 (2026-07-23, research grade; 2026-10-14), which is within about 10 m of the BTF grid reference; confirmed pin on that evidence (a GPS fix at the tree). Caveat for the writer: after the 2018 storm the tree is a regrown, reduced fig, not the full mass that stood in 1905; whether the two sources' 'huge' fig is exactly this plant is inferred from the position, not stated. Age: no source dates this specimen; 'over a century' rests only on the blogger saying the fig is visible in 1905 photographs, so state that as the blogger's claim. No girth (a wall tree). Lead, not delivered: the second sprawling fig on the New Cut bank by the Bath Bridge roundabout (BTF, ST 5961 7215, no GPS or recent observation found).",
+      "location_precision": "confirmed",
+      "pin_source": "iNaturalist GPS: two observations of Ficus carica at the wall (2026-07-23, research grade, and 2026-10-14; 3 to 4 m accuracy) at 51.45485,-2.58990, within about 10 m of the Bristol Tree Forum grid reference ST 5910 7303",
+      "how_to_recognise": "You can recognise it by where it grows, out of the vertical harbour wall itself rather than from the ground. It stands just east of Bristol Bridge, seen from the Castle Park path along the water."
+    },
+    {
+      "id": "bri_010",
+      "name": "The Royal Fort Black Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Royal Fort Gardens, Tyndall Avenue, Bristol BS8 1UH",
+        "latitude": 51.45726,
+        "longitude": -2.6012,
+        "neighbourhood": "Kingsdown / University precinct"
+      },
+      "story": "The largest black mulberry in Bristol is 2.3 metres round, and it grows in a university garden that anyone can walk into. The Bristol Tree Forum, which listed the city's biggest trees species by species, gives it the title. The University of Bristol keeps Royal Fort Gardens open to the public every day of the year, with no ticket.\n\nMulberries are not known for standing up straight. The Forum notes they are often found growing horizontally, and this one leans. A mulberry register from 2007 put a tree near the east exit by the engineering building, overhanging a path, which is a rough guide to where to look rather than a promise.\n\nWhat nobody has written down is its age. There is no planting record and no estimate, nothing that dates the trunk at all. If you know when it went in, or have an old photograph of the garden with it in, tell us.\n\nWhat is on record is that it lives. Visitors logged it on iNaturalist in April 2019 and again in July 2025, each time within a few metres of the spot the Forum's survey gives, which is how the map knows where it stands.\n\nIt sits below Tyndall Avenue and the Wills Memorial Building, a few minutes up Park Street from College Green, so it fits easily into a walk between Queen Square and Clifton. Come in July or August, when the dark fruit ripens and stains the ground beneath.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "fruit",
+        "label": "July and August, when the dark fruit ripens and stains the ground beneath"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/largest-specimens-other-major-species-within-the-city/",
+        "https://bristol.ac.uk/gardens/visit-our-gardens/royal-fort-gardens",
+        "https://www.inaturalist.org/observations/300361979"
+      ],
+      "access": "Free. The University of Bristol opens Royal Fort Gardens to the public daily all year, with no ticket (its other gardens are by invitation or tour).",
+      "transport": "Below Tyndall Avenue and the Wills Memorial Building, about 0.9 km (12 min walk) north-west of Queen Square, a few minutes up Park Street from College Green.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED: one survey plus GPS observations; no age. Bristol Tree Forum (ST 5833 7331, converts to 51.45722,-2.60114): 'the largest' Black Mulberry in the city, in the gardens of the Royal Fort, girth 230 cm; mulberries are often found growing horizontally. A Garden News UK column (2021) calls an old, bent mulberry its favourite thing in the gardens (read as a search snippet only; not used for a figure). Pin: three iNaturalist observations of Morus nigra at Royal Fort Gardens (2019-04-26, 2019-04-27, 2025-07-22, GPS accuracy 4 to 8 m, research grade for two) sit at 51.45723 to 51.45727,-2.60116 to -2.60126, within about 7 m of the BTF grid reference, so the tree is placed and confirmed; the 2025 observation also shows it alive. A mulberry register entry (2007) puts one 'near the east exit by the engineering building overhanging a path', a coarse hint only. Royal Fort Gardens is a walk-through garden, not a small site, so no location_site. BTF also names a young Dawyck beech, Italian cypress, Kapuka and young Yellow Buckeye in the same garden, and a Persian Ironwood by the Wills Tower (ST5815 7318); all minor, not delivered. No sentence available that dates the mulberry; if the writer wants to say it is old, only the 230 cm girth and the leaning habit are sourced.",
+      "location_precision": "confirmed",
+      "pin_source": "iNaturalist GPS: three observations of Morus nigra in Royal Fort Gardens (2019-04-26, 2019-04-27, 2025-07-22; 4 to 8 m accuracy, two research grade) at 51.45723 to 51.45727,-2.60116 to -2.60126, within about 7 m of the Bristol Tree Forum grid reference ST 5833 7331",
+      "how_to_recognise": "You can recognise it by the lean: a black mulberry 2.3 metres round, growing sideways rather than upright. It stands in Royal Fort Gardens, towards the east exit by the engineering building.",
+      "girth_cm": 230
+    },
+    {
+      "id": "bri_009",
+      "name": "The Brandon Hill Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 200,
+      "age_max": 400,
+      "age_basis": "source",
+      "location": {
+        "address": "Brandon Hill, Bristol BS1 5RR (near the park-keepers' compound)",
+        "latitude": 51.45359,
+        "longitude": -2.60857,
+        "neighbourhood": "Brandon Hill / Clifton"
+      },
+      "story": "The oldest tree on Brandon Hill grows in the one corner of the park the public is not meant to wander into. The Bristol Tree Forum places this oak just inside the park keepers' compound, and adds that it dominates the area all the same. Its boughs reach about twenty metres.\n\nThe trunk is five metres round. The Forum puts the tree at around 300 years, its own estimate from the survey rather than a dated record, so read it as somewhere between 200 and 400. The Forum also calls Brandon Hill an extraordinary park that has been public open space for 800 years, and this oak the oldest tree on it.\n\nHere is what we cannot tell you. Whether the trunk stands in plain view from the park paths, or behind a depot fence with only the crown reaching over, is not something any source we found settles. A crown that size should be hard to miss from the paths around the compound, but nobody has confirmed the view. The pin comes from the survey's grid reference and is approximate.\n\nThe hill rises right behind College Green and the top of Park Street, about thirteen minutes' walk from Queen Square, so it is an easy detour on the way to Clifton. If you have stood there, tell us which side of the fence the trunk is on and where the best view is. One sentence from someone who has looked would settle what three sources could not.",
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://www.bristol.gov.uk/museums-parks-sports-culture/brandon-hill",
+        "https://www.parksandgardens.org/places/brandon-hill"
+      ],
+      "access": "Free. Brandon Hill is a Bristol City Council public park. The Bristol Tree Forum places the oak just inside the park keepers' compound, so it may stand behind a depot fence: see it from the park paths. Whether the trunk is in view from outside the compound is not confirmed.",
+      "transport": "Beside College Green and Park Street, about 1 km (13 min walk) west of Queen Square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED, single source for the tree itself. Bristol Tree Forum veteran survey (ST 5781 7291, converts to 51.45359,-2.60857): Common Oak, girth 500 cm, 'age 300' (BTF's estimate), 'magnificent tree with boughs twenty metres long', 'just inside the park-keepers compound but dominates the area', 'the oldest tree in this extraordinary park, which has been a public open space for 800 years' (the 800 years is BTF's phrase; the council and Parks and Gardens UK page confirm Brandon Hill is a public park, the council page lists a tree trail by the Friends of Brandon Hill, which I could not read as it is a compressed PDF). Alive: lifecheck.py returned RECENT 2024-12-01 (iNaturalist, generic nearby observation); no observation of a large oak at this exact point found, three oak observations lie 80 to 120 m away. Access question to settle on the ground: whether the oak is visible from outside the compound. Walking cluster note: the Wellingtonia (girth 300 cm, planted 1973, BTF ST5787 7286) and the Keaki, Swedish whitebeam and Pride of India on this hill are young or small and were not delivered.",
+      "location_precision": "approximate",
+      "pin_source": "Bristol Tree Forum veteran survey grid reference ST 5781 7291 (converted, approximate)",
+      "how_to_recognise": "You can recognise it by the boughs, about twenty metres long, on an oak five metres round. It stands on Brandon Hill just inside the park keepers' compound, so look from the paths around it.",
+      "girth_cm": 500
+    },
+    {
+      "id": "bri_007",
+      "name": "The Cedar of Lebanon in Victoria Square",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "roughly 150 to 180 years",
+      "age_min": 150,
+      "age_max": 190,
+      "age_basis": "source",
+      "location": {
+        "address": "Victoria Square, Clifton, Bristol BS8 4ES",
+        "latitude": 51.45553,
+        "longitude": -2.61623,
+        "neighbourhood": "Clifton"
+      },
+      "story": "Before the war, you needed a key to stand under this cedar. Victoria Square in Clifton was a residents' garden behind four locked gates, and only keyholders got in. Then its railings were taken away in wartime, the garden was left open to everyone, and it has stayed that way. Bristol City Council now looks after it as a public park.\n\nThe cedar is the reason to come. Its trunk is 5.95 metres round and its branches run out horizontally for about twenty metres. The Bristol Tree Forum counts it among the few trees left from the square's original planting and estimates its age at 150 years. When that planting happened is less settled. The Clifton and Hotwells Improvement Society dates the square to about 1840, another source to about 1860, and no source ties the cedar to either year, so somewhere between 150 and 190 years is the honest answer.\n\nA memoir published by the same society remembers a large stone urn standing beneath the cedar. The urn is gone, and so is much of the old planting. The garden was cleared and replanted in 2015, and the cedar stayed.\n\nIt keeps old company. A fern-leaved beech nearby, 4.8 metres round, also belongs to the original planting by the Forum's account, and the square holds an old black mulberry growing sideways, an Italian maple and a chimera hornbeam besides. Twenty minutes' walk west of Queen Square, it is where a walk through central Bristol's old trees ends.",
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://cliftonhotwells.org.uk/clifton-communal-gardens",
+        "https://www.cliftonhotwells.org.uk/news/2023-05-11/462/victoria-square-gardens-and-environs-by-dick-isles"
+      ],
+      "access": "Free. Victoria Square garden is a council-maintained public park (it was a keyholders' garden until the wartime removal of its railings), open to walk through.",
+      "transport": "Central Clifton, about 1.6 km (20 min walk) west of Queen Square and about 10 min walk up from College Green and Park Street.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Source A, Bristol Tree Forum veteran survey (Richard Bland, ST 5728 7313, which converts to 51.45553,-2.61623, inside the square): girth 595 cm, 'age 150 years', 'one of the few trees from the original planting', horizontal branches about 20 m long. BTF's age is its own estimate, so the range here is broad (BTF says 150; the Clifton and Hotwells society dates the square's first planting to about 1840, and another source gives about 1860; no source says this tree belongs to a dated planting, so no bridge made). Source B, Clifton and Hotwells Improvement Society's communal-gardens guide: Victoria Square (ca. 1840) is now a public park, the Council maintains it, and a fine Lebanon cedar is among the surviving original plantings; a 2015 clearance and replanting is recorded. Source C, Dick Isles memoir (same society): a large stone urn once stood under the cedar of Lebanon; before the war the gardens had four locked gates and residents held keys; wartime railing removal left them open to all. Alive: lifecheck.py 51.4562 -2.6163 returned RECENT 2026-05-17 (iNaturalist, generic nearby observation, not proof for this trunk); the square was replanted 2015 and the cedar is described as surviving. Same spot, other trees to fold into the page as context only: Fern-leaved Beech (BTF, girth 480 cm, original planting c1860, ST5727 7310), an old horizontal Black Mulberry, an Italian Maple (girth 280 cm), and a chimera hornbeam; none is a separate collectible point. Pin is the BTF grid reference (10 m resolution, judged unreliable by an earlier pass), so approximate; the square is small and the cedar is the dominant tree. Hard-rule check: this is not one of the private Clifton garden squares the earlier pass left out; the Clifton society and council sources say Victoria Square specifically is now public. Single-species survey plus two local-society pages; not a register.",
+      "location_precision": "approximate",
+      "pin_source": "Bristol Tree Forum veteran survey grid reference ST 5728 7313 (converted; approximate, inside the square)",
+      "location_site": {
+        "name": "Victoria Square garden",
+        "radius_m": 50
+      },
+      "how_to_recognise": "You can recognise it by its branches, running out horizontally for about twenty metres from a trunk 5.95 metres round. It is the largest tree in Victoria Square garden, bigger than the fern-leaved beech nearby.",
+      "girth_cm": 595
+    },
+    {
+      "id": "bri_011",
+      "name": "The Mina Road Park Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 120,
+      "age_max": 160,
+      "age_basis": "source",
+      "location": {
+        "address": "Mina Road Park, St Werburghs, Bristol BS2 9YG",
+        "latitude": 51.46743,
+        "longitude": -2.57521,
+        "neighbourhood": "St Werburghs"
+      },
+      "story": "Of all the Bristol trees the Bristol Tree Forum has measured at more than five metres round, this plane comes thirteenth. It stands in Mina Road Park in St Werburghs, 6.2 metres round, the largest of a group of London planes that the Forum says were all planted at the same time, around 1880.\n\nThat date makes them a small puzzle. The park itself opened on 30 June 1886, laid out by Frederick Ashmead with a Victorian scheme of Wellingtonia, deodar and Cryptomeria, on ground given to the Corporation in 1884. If the Forum is right, the planes were growing here before the park was a park, and no source we found explains why. Wikipedia's account of the park mentions an older group of London planes alongside its acacias and Norway maples, but gives them no date. A planting around 1880 is plausible. It is not proven, and both the girth and the year are the Forum's own figures, so the age here runs from 120 to 160 years.\n\nThe Forum also does not say which trunk in the group is the big one, and all the planes are the same age. The pin is approximate, from the survey's grid reference. Look for the widest trunk among the planes; at 6.2 metres it should stand out.\n\nIt is a 35-minute walk north-east of Queen Square, near Stapleton Road and Montpelier stations. If you know why these planes are older than the park around them, tell us.",
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://en.wikipedia.org/wiki/Mina_Road_Park",
+        "https://www.parksandgardens.org/places/mina-road-park"
+      ],
+      "access": "Free. Mina Road Park is a Bristol City Council park, open all year.",
+      "transport": "St Werburghs, about 2.6 km (35 min walk) north-east of Queen Square, near Stapleton Road and Montpelier stations.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED, single source for the tree. Bristol Tree Forum (ST 6014 7443, converts to 51.46743,-2.57521): the group of plane trees in Mina Road Park are 'stunning' and 'all the same age, having been planted c 1880'; this one is the largest, girth 620 cm (the 13th largest tree in BTF's over-5-metre list). Age is BTF's planting date, so about 140 years, not independently checked: Wikipedia says the park was laid out by Frederick Ashmead and opened 30 June 1886 with a Victorian planting scheme of Wellingtonia, deodar and Cryptomeria, and that the present-day park has an older group of London planes alongside acacia and Norway maples but gives no ages; Parks and Gardens UK says the ground was given to the Corporation in 1884. So a c1880 planting predating the 1886 opening is plausible but unconfirmed. Alive: lifecheck returned RECENT 2024-02-12 (iNaturalist, generic nearby observation, no plane-specific record). The 620 cm girth is large for a plane of that age; a writer should state it as BTF's measurement. Outside the walkable centre cluster (about 2.6 km from Queen Square). Cluster note: the BTF entry says all the planes are the same age, so which trunk is the 620 cm one cannot be told from sources.",
+      "location_precision": "approximate",
+      "pin_source": "Bristol Tree Forum veteran survey grid reference ST 6014 7443 (converted, approximate)",
+      "how_to_recognise": "You can recognise it as the widest of the group of London planes in Mina Road Park, 6.2 metres round; the other planes there are the same age but smaller.",
+      "girth_cm": 620
+    },
+    {
+      "id": "bri_012",
+      "name": "The Saville Road Horse Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "age_basis": "source",
+      "location": {
+        "address": "Saville Road, Durdham Down (the Downs), Bristol BS9",
+        "latitude": 51.47898,
+        "longitude": -2.61885,
+        "neighbourhood": "Westbury Park / the Downs"
+      },
+      "story": "The largest horse chestnut on the Downs has bleeding canker, and when the Bristol Tree Forum last looked, it was carrying on regardless. The Forum's survey calls it diseased but still vigorous, with a trunk five metres round, and estimates it at about 200 years old. That is an estimate from the survey and nothing firmer, so read it as somewhere between 150 and 250.\n\nIt stands beside Saville Road on the edge of Durdham Down, the open common in the north of the city that the Downs Committee manages for the public. The Forum thinks the line of chestnuts along Westbury Park Road was probably planted at the same time, and notes that a number of other trees have succumbed in the past few years and had to be felled.\n\nWhich is why this page comes with a warning. The Forum's survey carries no date. Its list goes back to 2016, with comments running to 2023, and we have found no recent photograph of this trunk. It may still be standing, diseased and vigorous as described. It may have gone the way of the trees around it. The pin, from the survey's grid reference, is approximate.\n\nIf you walk past Saville Road, tell us which it is, and send a photograph if the tree still stands.\n\nIf it is, come in May, when the white candles stand upright over the crown.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when white candles stand upright over the whole crown"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+      ],
+      "access": "Free. The Downs are public open common managed by the Downs Committee; the tree stands beside Saville Road on the edge of Durdham Down, open at all times. Not confirmed standing since the Bristol Tree Forum's undated survey.",
+      "transport": "About 3.2 km (40 min walk) north of Queen Square on the edge of Durdham Down; city buses serve the Downs.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED, single source, undated. Bristol Tree Forum (ST 5712 7574, converts to 51.47898,-2.61885): the largest horse chestnut on the Downs, girth 500 cm, age 200 (BTF estimate), 'diseased with bleeding canker, but remains vigorous'; the line along Westbury Park Road was probably planted at the same time; 'a number of other trees have succumbed in the past few years and had to be felled'. The BTF page has no survey date (the forum's list dates from 2016, with a comment thread to 2023), so the tree may have been felled since: lifecheck returned RECENT 2026-04-08 but it is a generic nearby observation. Alive status needs a recent photo of this trunk before the page promises it. Not in the central walk (3 km out). Dropped as the more central choice if the writer prefers: nothing else on the Downs has a source and an exact place.",
+      "location_precision": "approximate",
+      "pin_source": "Bristol Tree Forum veteran survey grid reference ST 5712 7574 (converted, approximate)",
+      "how_to_recognise": "You can recognise it by the trunk, five metres round, the largest horse chestnut on the Downs. It stands beside Saville Road on the edge of Durdham Down.",
+      "girth_cm": 500
     }
   ]
 }
