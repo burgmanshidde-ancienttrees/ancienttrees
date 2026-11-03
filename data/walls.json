@@ -47,11 +47,6 @@
       "released_at": "2026-10-11T02:07:59+00:00"
     },
     {
-      "slug": "washington-dc",
-      "kind": "verify",
-      "released_at": "2026-10-14T23:16:53+00:00"
-    },
-    {
       "slug": "regensburg",
       "kind": "verify",
       "released_at": "2026-10-14T23:25:13+00:00"
@@ -90,11 +85,6 @@
       "slug": "heidelberg",
       "kind": "verify",
       "released_at": "2026-10-20T15:34:38+00:00"
-    },
-    {
-      "slug": "new-york",
-      "kind": "verify",
-      "released_at": "2026-10-20T16:19:17+00:00"
     },
     {
       "slug": "vienna",
@@ -220,6 +210,16 @@
       "slug": "glasgow",
       "kind": "verify",
       "released_at": "2026-11-03T10:06:29+00:00"
+    },
+    {
+      "slug": "washington-dc",
+      "kind": "verify",
+      "released_at": "2026-11-03T10:09:06+00:00"
+    },
+    {
+      "slug": "new-york",
+      "kind": "verify",
+      "released_at": "2026-11-03T10:09:07+00:00"
     }
   ]
 }
