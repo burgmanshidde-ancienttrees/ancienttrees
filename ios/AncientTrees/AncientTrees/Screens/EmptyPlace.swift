@@ -34,6 +34,14 @@ struct PlaceOnMap: Equatable {
     let lng: Double
 }
 
+/// A search result on its way to the map tab (Navigator.searchOnMap). Each
+/// request is new, so the same city picked twice still moves the map.
+struct SearchOnMap: Equatable {
+    let id = UUID()
+    let hit: MapSearch.Hit
+    static func == (a: Self, b: Self) -> Bool { a.id == b.id }
+}
+
 enum EmptyPlace {
     /// Zoom 11 or so: a town and the country lanes around it.
     static let spanMetres: Double = 20_000

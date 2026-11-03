@@ -762,6 +762,10 @@ struct ContentView: View {
             // The same, for a town we hold no trees in (2026-10-25).
             if new != nil { mapPath = []; tab = 0 }
         }
+        .onChange(of: navigator.searchOnMap) { _, new in
+            // And for a city or country found in Discover's search.
+            if new != nil { mapPath = []; tab = 0 }
+        }
         .onChange(of: navigator.showOnMap) { _, new in
             // POP the map's own stack as well. The tree page you
             // tapped the inset on is usually pushed ON the map tab, so

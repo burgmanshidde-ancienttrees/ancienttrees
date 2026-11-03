@@ -626,7 +626,33 @@ struct MapTab: View {
         // search placeholder both appearing, misaligned, on the search screen.
         .accessibilityHidden(searching)
         .fullScreenCover(isPresented: $searching) {
-            MapSearch(catalogue: catalogue, origin: origin) { hit in
+            MapSearch(catalogue: catalogue, origin: origin) { take($0) }
+        }
+        .onChange(of: navigator.searchOnMap) { _, new in
+            guard let r = new else { return }
+            navigator.searchOnMap = nil
+            take(r.hit)
+        }
+        // A request sent before this tab was ever shown (the app opened on
+        // Discover) is waiting here; onChange never saw it arrive.
+        .task {
+            guard let r = navigator.searchOnMap else { return }
+            navigator.searchOnMap = nil
+            // After the map's own opening frame, which would otherwise land
+            // on top of this move and leave you where you started.
+            try? await Task.sleep(for: .milliseconds(900))
+            take(r.hit)
+        }
+        .toolbar(.hidden, for: .navigationBar)
+        // A tapped pin: TreePlaceSheet.swift's PinSelection, shared with a
+        // city's map and My trees.
+        .pinSelection($selected, height: $sheetHeight)
+    }
+
+    /// What a search result does to the map, from this tab's own search or
+    /// handed over from Discover's (Navigator.searchOnMap): one function, so
+    /// the two can never land on different screens again.
+    private func take(_ hit: MapSearch.Hit) {
                 switch hit {
                 case .city(let slug, _, let lat, let lng):
                     // STAY ON THE MAP (Hidde, 2026-08-24: "dan moet je niet een
@@ -682,12 +708,6 @@ struct MapTab: View {
                 case .place(let name, let lat, let lng):
                     showPlace(PlaceOnMap(name: name, lat: lat, lng: lng))
                 }
-            }
-        }
-        .toolbar(.hidden, for: .navigationBar)
-        // A tapped pin: TreePlaceSheet.swift's PinSelection, shared with a
-        // city's map and My trees.
-        .pinSelection($selected, height: $sheetHeight)
     }
 
     /// Look at a town a search found, ours or not. The sheet rises to its

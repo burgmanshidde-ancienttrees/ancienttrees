@@ -354,10 +354,11 @@ struct HomeView: View {
         .toolbar(.hidden, for: .navigationBar)
         .fullScreenCover(isPresented: $searching) {
             MapSearch(catalogue: catalogue, origin: origin) { hit in
-                // On the FEED a result is a page, not a camera move.
+                // A PLACE LANDS ON THE MAP, as the map's own search does
+                // (Hidde, 2026-11-03: the same search went to two different
+                // screens). A tree or a species is still its own page.
                 switch hit {
-                case .city(let slug, _, _, _): navigator.push = .city(slug)
-                case .country(let name): navigator.push = .country(name)
+                case .city, .country: navigator.searchOnMap = SearchOnMap(hit: hit)
                 case .species(let name): navigator.push = .species(name)
                 case .tree(let t): navigator.push = .tree(t.id)
                 // A town with none of our trees is a place on the MAP, where

@@ -89,6 +89,12 @@ public final class Navigator {
     /// A real town with none of our trees, chosen in Discover's search: the
     /// map looks at it and its sheet asks for the first tree (2026-10-25).
     var showPlaceOnMap: PlaceOnMap?
+    /// A city or country picked in Discover's search: the map takes it
+    /// exactly as its own search does (MapTab.take), so the same search lands
+    /// on the same screen from either tab (Hidde, 2026-11-03: "moet dat niet
+    /// één en dezelfde pagina zijn?"; Airbnb, CONVENTIONS.md "A place picked
+    /// in the search lands on the map").
+    var searchOnMap: SearchOnMap?
 
     /// Collect's own button asking for the nearby-trees sheet. The root owns
     /// every sheet, so the request travels rather than the presentation.
