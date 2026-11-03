@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-11-03 06:13 run (night run)
+
+Rungs 1 to 3: no reader photographs or notes waiting, health only flags GitHub dropping knocks (5 of 12) and the weekly analysis allowance. Rung 5 (Portugal first): braga has only 5 open leads (under six), walled 48h. Dispatched a write pass on the READY leads (Gran Canaria, Azores, Angra, Sintra, Algarve-east). Nothing published: the 24-hour pace stood at 34 own trees against the cap of 25. Twelve trees are built and preflight-clean apart from the pace (gcn_006, 008, 009, 010; azo_004 to 007; agh_001, 002; sin_006 with Portuguese overlay; tav_001), committed as preparation only. The 19 READY leads in the brief mostly cannot ship (Osorio permit-gated, others unverified or no life check). Held: gcn_007 San Telmo figs.
+For Hidde: tav_001 access rests on the 11-02 ruling that the municipal route past the resort reception counts as public; hard rule 10 excludes a reception desk, so confirm.
+For the next run after about 14:10 UTC: `python3 scripts/build_held_2026_11_03.py`, `python3 scripts/build_azores_2.py`, `city_names.py`, preflight, commit per city. A git stash holds trial files for angra and tavira and can be dropped.
+
 ## 2026-11-03 (night run, window from 01:58 UTC)
 
 Rung 1 empty (no photographs, no notes). Rung 2: health.py asks for a deploy dispatch (main is ahead of the live site) and a nightly knock (only 4 of 12 delivered); weekly analysis and night shift failures are the usage allowance. Rung 5, Portugal first: Sintra deepen pass (5 of 30). The ICNF register rows are all already worked, private or belong to Cascais/Lisbon. Delivered one flagged tree (sin_006, the Capuchos Convent plane, approximate pin, single source Visit Sintra, no photo) plus two leads (Monserrate Bunya pine, Capuchos ash and boxwoods) in data/leads/sintra.json. The tree is not merged and the claim stays until it expires. Sintra is a thin well for now. Cost about 82k tokens for one candidate. Stopped there: the window was short on yield, not on time.
