@@ -11,7 +11,6 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-
 ## 2026-11-03 session: Hawaii, 18 trees written and held for the pace (Oahu 21 to 30, Kauai 6 to 9, Maui 4 to 5, Hilo 6 to 9, Hawaii 6 to 8)
 
 - **What changed in the product**: nothing live yet. 18 trees verified and written, held in data/research/{oahu,kauai,maui,hilo,hawaii}-verified.json with place copy in us-hawaii-places.json; `python3 scripts/build_us_hawaii.py` appends them and grows intro, meta, question fields and FAQ (it also fixes FAQ answers the new trees make false, such as Kauai's "all free" now that the Allerton figs are a paid tour). Dry build passed city_names.py and preflight (only pace fails), then reverted.
