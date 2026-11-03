@@ -2,8 +2,8 @@
   "city": "Barcelona",
   "country": "Spain",
   "city_slug": "barcelona",
-  "updated": "2026-11-01",
-  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility. Extended 2026-08-08 by a verification pass on the five undated Gracia/Park Guell-adjacent candidates: the Llentiscle de l'Hort de l'Avi verified and delivered to data/research/barcelona-verified.json as bcn_033 (public access path into Park Guell's free wooded perimeter, second source bcnsostenible.cat). The combined four-tree lead entry below is superseded by the three entries that follow it, split out with what this pass found. Two of the remaining three moved to blocked (Ficus de Mysore, Xiprer del carrer Betlem); two stay leads with access now the open question rather than the date (Garrofer and Pebrer bord del carrer Maignon). Extended 2026-08-29: a verify claim on the Pedralbes/Sarria cluster re-verified bcn_023/024/025 under new ids (bcn_056/057/058) without checking passcheck.py first; folded into blocked as duplicates. One genuine new find survived from the same pass, the Osage Oranges of the Torre Girona Gardens (bcn_059), a distinct catalogued item (register_id 99400680106) in the same garden as the already-published bcn_026/027/028, different species, not a duplicate. Extended 2026-11-01: eight leads in the Jardi Botanic Historic named by the garden's friends' association in a mail (ginkgo pair, olive, Atlas cedars, Balearic box, carob, American elms, planes, Kentucky coffee tree); coordinates are the sector only. The same mail also named smaller specimens (Pistacia lentiscus, Pistacia atlantica, Vitex agnus-castus, Teline, Ephedra altissima, Celtis australis, Vachellia caven) and pointed at the newer Jardi Botanic de Barcelona.",
+  "updated": "2026-11-03",
+  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility. Extended 2026-08-08 by a verification pass on the five undated Gracia/Park Guell-adjacent candidates: the Llentiscle de l'Hort de l'Avi verified and delivered to data/research/barcelona-verified.json as bcn_033 (public access path into Park Guell's free wooded perimeter, second source bcnsostenible.cat). The combined four-tree lead entry below is superseded by the three entries that follow it, split out with what this pass found. Two of the remaining three moved to blocked (Ficus de Mysore, Xiprer del carrer Betlem); two stay leads with access now the open question rather than the date (Garrofer and Pebrer bord del carrer Maignon). Extended 2026-08-29: a verify claim on the Pedralbes/Sarria cluster re-verified bcn_023/024/025 under new ids (bcn_056/057/058) without checking passcheck.py first; folded into blocked as duplicates. One genuine new find survived from the same pass, the Osage Oranges of the Torre Girona Gardens (bcn_059), a distinct catalogued item (register_id 99400680106) in the same garden as the already-published bcn_026/027/028, different species, not a duplicate. Extended 2026-11-01: eight leads in the Jardi Botanic Historic named by the garden's friends' association in a mail (ginkgo pair, olive, Atlas cedars, Balearic box, carob, American elms, planes, Kentucky coffee tree); coordinates are the sector only. The same mail also named smaller specimens (Pistacia lentiscus, Pistacia atlantica, Vitex agnus-castus, Teline, Ephedra altissima, Celtis australis, Vachellia caven) and pointed at the newer Jardi Botanic de Barcelona. 2026-11-03: the Amics del Jardi Botanic sent 26 photographs and two booklets (AMB guide 2009, itinerary 2017); what did not ship is here with the file names. One file, 'Fraxinus angustifolia2.jpg', is a Google Street View screenshot and was not used.",
   "leads": [
     {
       "name": "Freixe de fulla estreta del Jardi Botanic Historic",
@@ -325,8 +325,8 @@
       "lat": 41.3669,
       "lng": 2.1521,
       "location_precision": "approximate",
-      "status": "lead",
-      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. 'Two good specimens, a male and a female.' An ensemble only if they stand together; needs a spot.",
+      "status": "resolved",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. 'Two good specimens, a male and a female.' An ensemble only if they stand together; needs a spot. Resolved 2026-11-03: the female went live as bcn_060 from their photographs and booklets. The two males in the Sot de l'Estany (itinerary 2017: 25 years, 18 m, the marked one) stay unpublished: young.",
       "found": "2026-11-01"
     },
     {
@@ -335,8 +335,8 @@
       "lat": 41.3669,
       "lng": 2.1521,
       "location_precision": "approximate",
-      "status": "lead",
-      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. An olive 'of more than 8 metres'. Needs a spot and an age basis.",
+      "status": "resolved",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. An olive 'of more than 8 metres'. Needs a spot and an age basis. Resolved 2026-11-03: live as bcn_061.",
       "found": "2026-11-01"
     },
     {
@@ -346,7 +346,7 @@
       "lng": 2.1521,
       "location_precision": "approximate",
       "status": "lead",
-      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. Atlas cedars 'of nearly 80 years'. Needs a spot; pick the biggest one as the collectible point.",
+      "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de l'Estany. Atlas cedars 'of nearly 80 years'. Needs a spot; pick the biggest one as the collectible point. 2026-11-03: itinerary 2017 gives the cedars 90 years and 18 m; a group by the stairs past the cascade, no single trunk named. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Cedrus atlantica 2.jpeg'; it is theirs to use on the page when the lead ships. The photograph is a silhouette of two leaning trunks against the sky, usable.",
       "found": "2026-11-01"
     },
     {
@@ -398,6 +398,106 @@
       "status": "lead",
       "why": "Named in a mail of 2026-11-01 from the friends' association of the Jardi Botanic Historic (an answer to our photo ask of 2026-10-29), which also said it would look for photographs. Not in data/registers/barcelona-ail.json. Sot de la Masia. Rare in Barcelona. Needs size and a spot.",
       "found": "2026-11-01"
+    },
+    {
+      "name": "Acacia caven del Jardi Botanic Historic",
+      "species": "Vachellia caven",
+      "lat": 41.3671,
+      "lng": 2.1529,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "One of the two acacias flanking the garden gate. Planted 1974 by Eugeni Sierra from seed collected in Chile (AMB guide 2009; itinerary 2017: 3 m, 43 years in 2017). Young and small, so a story rather than a size; the itinerary's first stop. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Acacia caven vachelia caven.jpeg'; it is theirs to use on the page when the lead ships. The photograph shows the crown in full yellow flower against the sky, striking.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Aromer (Acacia farnesiana) del Jardi Botanic Historic",
+      "species": "Vachellia farnesiana",
+      "lat": 41.3671,
+      "lng": 2.1529,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "The other acacia at the gate, from Central America; the 2009 guide tells its history (described by Tobia Aldini in the Farnese gardens in Rome in the early 1600s). No size given. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Acacia farnesiana.jpg'; it is theirs to use on the page when the lead ships. Poor photograph (611 px, crown against white sky), not usable as a lead picture.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Faig del Jardi Botanic Historic",
+      "species": "Fagus sylvatica",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "A beech in a Mediterranean quarry pit, above the big hazel on the way up from the cascade (AMB guide 2009); itinerary 2017: 14 m, 90 years. The southernmost beeches in Iberia are at the Ports de Tortosa, so one in Barcelona is a curiosity. Worth a page once a spot and a measurement exist. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Fagus sylvatica.jpg'; it is theirs to use on the page when the lead ships. Photograph: whole tree, slender, behind a fan palm, usable.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Efedra gegant del Jardi Botanic Historic",
+      "species": "Ephedra altissima",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "Not a tree: a male liana of a primitive gymnosperm genus, planted by Pius Font i Quer in the 1930s, that climbs its neighbours until they break and has brought down three large pines (AMB guide 2009; itinerary 2017: 20 m, 90 years). The garden's best story and a possible ensemble point with the hazel and the beech; kept as a lead because the product counts trees. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Ephedra altissima.jpg'; it is theirs to use on the page when the lead ships. Photograph: a mound of green stems under the fan palms, usable.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Margallo del Jardi Botanic Historic",
+      "species": "Chamaerops humilis",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "A clump of Europe's native fan palm, itinerary 2017: 3 m, 80 years, with a label. Small; a lead for a palms angle only. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Chamaerops humilis.jpg'; it is theirs to use on the page when the lead ships.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Palmera de Canaries del Jardi Botanic Historic",
+      "species": "Phoenix canariensis",
+      "lat": 41.3671,
+      "lng": 2.1529,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "A Canary palm in fruit on the plaza, no age or size in the booklets. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Phoenix canariensis.jpg'; it is theirs to use on the page when the lead ships.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Ciques del Jardi Botanic Historic",
+      "species": "Cycas revoluta",
+      "lat": 41.3671,
+      "lng": 2.1529,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "A group of eight cycads of different heights and ages on the entrance plaza (AMB guide 2009), the tallest over 2.3 m and branched, estimated 80 years (itinerary 2017); the AMB has a separate leaflet on them ('Les Ciques'). An ensemble with one place to stand; not a tree. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Cycas revoluta.jpg'; it is theirs to use on the page when the lead ships. Photograph: the whole group, usable.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Llentiscle del Jardi Botanic Historic",
+      "species": "Pistacia lentiscus",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "A mastic grown to a small tree on the way down into the Sot de l'Estany; the mail calls it an interesting specimen of good bearing, no size. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Pistacia lentiscus.jpg'; it is theirs to use on the page when the lead ships.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Tamariu africa del Jardi Botanic Historic",
+      "species": "Tamarix africana",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "A multi-stemmed old tamarisk with a label, no size in the booklets. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Tamarix africana.jpg'; it is theirs to use on the page when the lead ships.",
+      "found": "2026-11-03"
+    },
+    {
+      "name": "Teline osmariensis del Jardi Botanic Historic",
+      "species": "Teline osmariensis",
+      "lat": 41.3669,
+      "lng": 2.1521,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "A very rare broom from northern Morocco grown to a small leaning tree, propped (AMB guide 2009 names it among the garden's rarities). Botanical interest rather than size. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Teline osmariensis.jpg'; it is theirs to use on the page when the lead ships.",
+      "found": "2026-11-03"
     }
   ],
   "blocked": [
@@ -727,6 +827,16 @@
       "status": "duplicate",
       "why": "DUPLICATE, found 2026-08-29: a verify pass re-researched this tree from the register (register_id 99400454990) without checking passcheck.py first. Already published as bcn_025, The Barbary Thuja of the Palau de Pedralbes Gardens, same coordinates, same register id, same sources. Removed from data/research/barcelona-verified.json before the write pass; does not ship a second time.",
       "register_id": 99400454990
+    },
+    {
+      "name": "Ephedra fragilis del Jardi Botanic Historic",
+      "species": "Ephedra fragilis",
+      "lat": 41.3671,
+      "lng": 2.1529,
+      "location_precision": "approximate",
+      "status": "blocked",
+      "why": "A shrub, a dense green dome on the plaza with its label. Not a tree. Photograph from the Amics del Jardi Botanic (mail 2026-11-02, permission licence) kept in out/pere-2026-11-02/ on the Mac, file 'Ephedra fragilis.jpg'; it is theirs to use on the page when the lead ships.",
+      "found": "2026-11-03"
     }
   ]
 }

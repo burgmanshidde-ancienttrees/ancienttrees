@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Barcelona's remarkable trees free to visit?",
-      "a": "Most are, standing in public parks, squares and streets. Two exceptions charge general admission rather than a tree-specific fee: the Jardi Botanic Historic and the Parc del Laberint d'Horta, both free on set days each week."
+      "a": "Nearly all are, standing in public parks, squares and streets, and the Jardi Botanic Historic on Montjuic is free to enter. The one exception is the Parc del Laberint d'Horta, which charges general admission except on its free days each week."
     },
     {
       "q": "Did any of Barcelona's remarkable trees predate Gaudi's Park Guell?",
@@ -217,30 +217,60 @@
         "https://www.arbolesconhistoria.com/2015/06/13/el-mayor-arbol-de-barcelona-huye-de-la-fama/",
         "https://www.openstreetmap.org/node/6924253587",
         "https://museuciencies.cat/en/the-nat/venues/historic-botanical-garden/",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400637930"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400637930",
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go.",
+      "access": "Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Pterocarya_redheriana_al_jard%C3%AD_bot%C3%A0nic_vell_P1250816.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Pere López (Pere prlpz), via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/bcn_005-the-wingnut-of-the-sot-de-l-estany-amics.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
         "status": "approved",
-        "width": 2448,
-        "height": 3264,
+        "width": 563,
+        "height": 938,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: the whole tree from the path, a straight grey trunk and the big pinnate leaves, the tallest thing in frame; filename names the species. Small (563 px), photo_light WEAK (shaded ravine), and it is the tree. Made the lead so the page carries a photograph unique to us; the Commons photograph moved to the strip, reversal is swapping them back.",
         "taken_month": 10
       },
       "curation_status": "ai_generated",
       "notes": "Height (~40m) is the municipal catalogue's own estimate, flagged there as uncertain due to measurement difficulty in the confined ravine; reported here as an estimate rather than a precise figure. Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Jardi Botanic Historic. Sector de l'estany\", species Pterocarya x rehderiana, which names both the right garden and the right ravine sector. Confirmed on that match.",
       "location_precision": "approximate",
-      "paid_entry": true,
+      "paid_entry": false,
       "how_to_recognise": "You can recognise it by its height, roughly 40 metres and the biggest tree in the city, and by being the only wingnut recorded in Barcelona. It stands at the bottom of the Sot de l'Estany, the old quarry pit in the botanical garden.",
       "official_register": {
         "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400637930",
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400637930"
       },
       "girth_cm": 410,
-      "height_m": 32
+      "height_m": 32,
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/bcn_005-the-wingnut-of-the-sot-de-l-estany-fruit.jpg",
+          "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+          "source": "mail",
+          "attribution": "Associació Amics del Jardí Botànic",
+          "attribution_url": "https://amicsjbb.org",
+          "status": "approved",
+          "width": 1200,
+          "height": 1600,
+          "note": "Same set, summer: the trunk with the hanging chains of winged fruit that give the tree its name. photo_light OK.",
+          "taken_month": 7
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Pterocarya_redheriana_al_jard%C3%AD_bot%C3%A0nic_vell_P1250816.jpg",
+          "license": "CC BY-SA 3.0",
+          "attribution": "Pere López (Pere prlpz), via Wikimedia Commons",
+          "status": "approved",
+          "width": 2448,
+          "height": 3264,
+          "taken_month": 10,
+          "note": "Was the lead until 2026-11-03, moved to the strip when the Amics' own photograph arrived (unique_photo() reads the lead only)."
+        }
+      ],
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
     },
     {
       "id": "bcn_006",
@@ -261,23 +291,28 @@
         "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-freixe-de-pennsilvania-antic-jardi-botanic-av-dels-montanyans-sn-99400455008",
         "https://www.openstreetmap.org/node/4506719952",
         "https://museuciencies.cat/en/the-nat/venues/historic-botanical-garden/",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455008"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455008",
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go.",
+      "access": "Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Freixe_americ%C3%A0_del_Jard%C3%AD_Bot%C3%A0nic_Vell.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "DagafeSQV, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/bcn_006-the-green-ash-of-the-sot-de-l-estany-amics.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
         "status": "approved",
-        "width": 3264,
-        "height": 4912,
-        "taken_month": 10
+        "width": 553,
+        "height": 922,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: looking up the straight trunk into the crown; filename names the species. Small (553 px), photo_light OK. Made the lead so the page carries a photograph unique to us; the Commons photograph moved to the strip, reversal is swapping them back.",
+        "taken_month": 9
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Antic Jardi Botanic\", species Fraxinus pennsylvanica, matching both the garden (an alternate name for the Jardi Botanic Historic) and the species. Confirmed on that match.",
       "location_precision": "confirmed",
-      "paid_entry": true,
+      "paid_entry": false,
       "girth_cm": 320,
       "how_to_recognise": "You can recognise it by the trunk, 3.2 metres round under 24 metres of height, on an American swamp ash almost nobody plants here. It stands in the same Sot de l'Estany ravine as the garden's much taller wingnut.",
       "official_register": {
@@ -285,7 +320,31 @@
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455008"
       },
       "height_m": 32,
-      "verify_notes": "2026-11-01: a local expert's mail (the garden's friends' association) says the four Sot de l'Estany trees are Barcelona's four tallest, over 33 m; quoted as their account. Height in the story corrected from 'past 24 m' to the register's 32 m."
+      "verify_notes": "2026-11-01: a local expert's mail (the garden's friends' association) says the four Sot de l'Estany trees are Barcelona's four tallest, over 33 m; quoted as their account. Height in the story corrected from 'past 24 m' to the register's 32 m. 2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02).",
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/bcn_006-the-green-ash-of-the-sot-de-l-estany-with-wingnut.jpg",
+          "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+          "source": "mail",
+          "attribution": "Associació Amics del Jardí Botànic",
+          "attribution_url": "https://amicsjbb.org",
+          "status": "approved",
+          "width": 1200,
+          "height": 1600,
+          "note": "Same set: the ash (right) and the wingnut (centre) together above the path at the bottom of the Sot de l'Estany, the filename names both. photo_light OK.",
+          "taken_month": 7
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Freixe_americ%C3%A0_del_Jard%C3%AD_Bot%C3%A0nic_Vell.JPG",
+          "license": "CC BY-SA 3.0",
+          "attribution": "DagafeSQV, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3264,
+          "height": 4912,
+          "taken_month": 10,
+          "note": "Was the lead until 2026-11-03, moved to the strip when the Amics' own photograph arrived (unique_photo() reads the lead only)."
+        }
+      ]
     },
     {
       "id": "bcn_007",
@@ -934,20 +993,28 @@
         "http://parcsnaturals.gencat.cat/ca/coneixeu-nos/arbres-monumentals/am_arbres_monumentals_fitxes/barcelones/freixe-montjuic/",
         "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest",
         "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
-        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/bcn_021-the-ash-of-the-sot-de-l-estany.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
+        "status": "approved",
+        "width": 1600,
+        "height": 1200,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: a wide-angle frame at the bottom of the Sot de l'Estany with the ash's trunk centre right and the garden's own label plaque, number 10, at its foot; the itinerary booklet numbers Fraxinus angustifolia 10. The crown is out of frame, so the picture shows where to stand rather than the full height; kept as the lead because the page had none and it settles which trunk. photo_light OK.",
+        "taken_month": 7
       },
-      "curation_status": "flagged",
-      "notes": "FLAGGED for having no age at all. The city register's planting-year field is empty and the Generalitat's file gives none either, so no age_min or age_max is set and the age_estimate says so plainly rather than inventing a range from the neighbours (the green ash beside it, bcn_006, is dated 1924). Everything else is unusually well sourced for Barcelona, because two separate authorities cover it: the city register (register_id 99400637941, catalogued 2015, 29 m tall, girth 2.5 m, crown 15 m) and the Generalitat de Catalunya, which registers it as the Freixe de Montjuic, code MA-13.931.02, at 29.0 x 2.5 x 15.4 m and declared it monumental on 2 April 2025. The tallest-in-Catalonia claim and the up-to-four-degrees microclimate figure both come from the Museu de Ciencies Naturals de Barcelona's own account of the declaration, which is the garden's operator and independent of the tree register. Pin approximate, and deliberately so: the city register gives 41.366868/2.152084 and the Generalitat gives 41.366939/2.151886, 18 m apart, and the neighbouring monumental sycamore (bcn_022) stands about 7 m from this point. An 18 m uncertainty cannot tell the two apart on the ground, so the pin gets someone into the right corner of the ravine and the garden's own labels do the rest. Photo: the Generalitat publishes File:Freixe de Montjuic.jpg on Commons under its attribution-gencat licence, but it was viewed directly and rejected. The frame is a dark shaded ravine in which an araucaria takes the foreground and no ash is identifiable, which fails the Cadiz standard on every count. Honest gap.",
+      "curation_status": "ai_generated",
+      "notes": "FLAGGED for having no age at all. The city register's planting-year field is empty and the Generalitat's file gives none either, so no age_min or age_max is set and the age_estimate says so plainly rather than inventing a range from the neighbours (the green ash beside it, bcn_006, is dated 1924). Everything else is unusually well sourced for Barcelona, because two separate authorities cover it: the city register (register_id 99400637941, catalogued 2015, 29 m tall, girth 2.5 m, crown 15 m) and the Generalitat de Catalunya, which registers it as the Freixe de Montjuic, code MA-13.931.02, at 29.0 x 2.5 x 15.4 m and declared it monumental on 2 April 2025. The tallest-in-Catalonia claim and the up-to-four-degrees microclimate figure both come from the Museu de Ciencies Naturals de Barcelona's own account of the declaration, which is the garden's operator and independent of the tree register. Pin approximate, and deliberately so: the city register gives 41.366868/2.152084 and the Generalitat gives 41.366939/2.151886, 18 m apart, and the neighbouring monumental sycamore (bcn_022) stands about 7 m from this point. An 18 m uncertainty cannot tell the two apart on the ground, so the pin gets someone into the right corner of the ravine and the garden's own labels do the rest. Photo: the Generalitat publishes File:Freixe de Montjuic.jpg on Commons under its attribution-gencat licence, but it was viewed directly and rejected. The frame is a dark shaded ravine in which an araucaria takes the foreground and no ash is identifiable, which fails the Cadiz standard on every count. Gap closed 2026-11-03 by the Amics' photograph (see photo.note).",
       "location_precision": "confirmed",
-      "paid_entry": true,
+      "paid_entry": false,
       "girth_cm": 250,
       "how_to_recognise": "You can recognise it by the shape, 29 metres of tree under a crown only 15 metres across, on a trunk 2.5 metres round. It stands at the bottom of the Sot de l'Estany quarry pit with three monumental neighbours.",
       "official_register": {
@@ -960,7 +1027,8 @@
         "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
         "date": "2026-10-09",
         "moved_m": 18
-      }
+      },
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
     },
     {
       "id": "bcn_022",
@@ -988,20 +1056,28 @@
         "http://parcsnaturals.gencat.cat/ca/coneixeu-nos/arbres-monumentals/am_arbres_monumentals_fitxes/barcelones/platan-fals-montjuic/",
         "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest",
         "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
-        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/bcn_022-the-sycamore-of-the-sot-de-l-estany.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
+        "status": "approved",
+        "width": 510,
+        "height": 851,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: looking up a slender twin-stemmed trunk into a thin high crown, the shape the register's 30 m on 1.4 m girth describes; filename names the species and the leaves visible at the right edge are lobed, not pinnate, unlike the mislabelled Generalitat file. Small (510 px) and backlit; photo_light WEAK; a person's photograph is never refused on the light score.",
+        "taken_month": 9
       },
-      "curation_status": "flagged",
+      "curation_status": "ai_generated",
       "notes": "FLAGGED for having no age. The city register's planting year reads 'Per determinar' and the Generalitat's file gives none, so no age_min or age_max is set. Two independent authorities cover the tree: the city register (register_id 99400637939, catalogued 2015, 30 m tall, girth 1.4 m, crown 12 m) and the Generalitat de Catalunya, which registers it as the Platan Fals de Montjuic, code MA-13.931.04, at 30.0 x 1.38 x 12.0 m, declared monumental 2 April 2025. The rarity-in-Barcelona point comes from the Museu de Ciencies Naturals account of the declaration. Pin approximate: city register 41.36677/2.152069 against the Generalitat's 41.366884/2.151851, 22 m apart, and the monumental ash (bcn_021) stands about 7 m away. See the note on bcn_021: the pin puts a visitor in the right corner of the ravine, not on the exact trunk. PHOTO PROBLEM WORTH KEEPING. The Generalitat publishes File:Platan Fals de Montjuic.jpg on Commons under attribution-gencat, sourced from its own monumental-tree file for this tree. It was viewed directly and NOT used, because the tree in the frame has pinnate compound leaves, which is an ash, not a maple; Acer pseudoplatanus has palmate lobed leaves. Either the file is mislabelled or the photographer shot the wrong trunk in a ravine where the ash stands seven metres away. Recording it rather than acting on it: the identification of the tree itself rests on two official registers, not on this photograph.",
       "location_precision": "confirmed",
-      "paid_entry": true,
+      "paid_entry": false,
       "girth_cm": 140,
       "how_to_recognise": "You can recognise it by the slenderness, thirty metres of tree on a trunk 1.38 metres round, and by being the one maple among them. It stands in the Sot de l'Estany quarry pit inside the historic botanical garden.",
       "official_register": {
@@ -1014,7 +1090,8 @@
         "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
         "date": "2026-10-09",
         "moved_m": 22
-      }
+      },
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
     },
     {
       "id": "bcn_023",
@@ -1458,20 +1535,28 @@
       "verified_sources": [
         "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
         "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
-        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
-      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "location_precision": "confirmed",
-      "curation_status": "flagged",
+      "curation_status": "ai_generated",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/bcn_034-the-camphor-tree-of-the-historic-botanical-garde.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: the whole crown in winter sun above the vegetable garden of the Sot de la Masia, several trunks rising from one base, glossy pale camphor foliage; filename names the species and the strip's second picture shows the same multi-stemmed base from below. photo_light OK.",
+        "taken_month": 12
       },
-      "paid_entry": true,
+      "paid_entry": false,
       "how_to_recognise": "You can recognise it by the crown, 27 metres across on a tree only 15 metres tall, and by a trunk 4.4 metres round. It stands in the Sector de la Masia of the historic botanical garden.",
       "official_register": {
         "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455032",
@@ -1483,7 +1568,21 @@
         "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
         "date": "2026-10-09",
         "moved_m": 15
-      }
+      },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/bcn_034-the-camphor-tree-of-the-historic-botanical-garde-trunk.jpg",
+          "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+          "source": "mail",
+          "attribution": "Associació Amics del Jardí Botànic",
+          "attribution_url": "https://amicsjbb.org",
+          "status": "approved",
+          "width": 662,
+          "height": 890,
+          "note": "Same set: the base, four or five trunks from one stool on the terraced slope of the Sot de la Masia. photo_light WEAK (overcast), kept because it shows how to tell the tree."
+        }
+      ],
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
     },
     {
       "id": "bcn_035",
@@ -2313,21 +2412,29 @@
       "verified_sources": [
         "https://www.barcelona.cat/es/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/carpi-del-jardi-botanic-historic-99400455031",
         "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
-        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/bcn_055-the-hornbeam-of-the-sot-de-l-estany.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
+        "status": "approved",
+        "width": 485,
+        "height": 808,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: the whole tree beside the path at the bottom of the Sot de l'Estany, fluted grey trunk, visitors on the path for scale; filename names the species. Small (485 px), photo_light WEAK (backlit), usable.",
+        "taken_month": 9
       },
-      "curation_status": "flagged",
+      "curation_status": "ai_generated",
       "notes": "Single source: Barcelona's Catalog of Trees of Local Interest, register_id 99400455031, height ~18m, crown 13m, girth 1.2m, estimated age 80 years. A lower designation (local interest) than its four monumental neighbours in the same ravine, held back from earlier passes purely on count; shipped now per CLAUDE.md's ruling that count alone never blocks a verified tree.",
       "location_precision": "confirmed",
-      "paid_entry": true,
-      "story": "Common hornbeam barely grows wild anywhere on the Iberian peninsula, which makes the specimen in Barcelona's Jardi Botanic Historic an outlier by definition. It has found the one pocket of the city cool and damp enough to suit it: the Sot de l'Estany, a shaded former quarry hollow that already holds four of Barcelona's officially monumental trees, a wingnut, two kinds of ash and a sycamore maple among them.\n\nAt roughly 80 years old the hornbeam is younger than those neighbours, which is why the city lists it one rank down, as a tree of local interest rather than a monument. It has still reached 18 metres with a crown 13 metres across, respectable for a species this far outside its natural range.\n\nThe garden was Barcelona's original botanical collection, on this same hill, before a newer one opened elsewhere on Montjuic. The ravine has kept its own microclimate ever since: cooler, wetter and stubbornly hospitable to trees with no business surviving this far south. Same ticket as the rest of the garden's veterans.",
+      "paid_entry": false,
+      "story": "Common hornbeam barely grows wild anywhere on the Iberian peninsula, which makes the specimen in Barcelona's Jardi Botanic Historic an outlier by definition. It has found the one pocket of the city cool and damp enough to suit it, the Sot de l'Estany, a shaded former quarry hollow that already holds four of Barcelona's officially monumental trees, a wingnut, two kinds of ash and a sycamore maple among them.\n\nAt roughly 80 years old the hornbeam is younger than those neighbours, which is why the city lists it one rank down, as a tree of local interest rather than a monument. It has still reached 18 metres with a crown 13 metres across, respectable for a species this far outside its natural range.\n\nThe garden was Barcelona's original botanical collection, on this same hill, before a newer one opened elsewhere on Montjuic. The ravine has kept its own microclimate ever since: cooler, wetter and stubbornly hospitable to trees with no business surviving this far south. Same ticket as the rest of the garden's veterans.",
       "girth_cm": 120,
       "how_to_recognise": "You can recognise it by being the youngest tree in the hollow at about 80 years, 18 metres tall under a crown 13 metres across. It stands in the Sot de l'Estany among the garden's four monumental trees.",
       "official_register": {
@@ -2340,7 +2447,8 @@
         "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
         "date": "2026-10-09",
         "moved_m": 1
-      }
+      },
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
     },
     {
       "id": "bcn_059",
@@ -2366,6 +2474,117 @@
       "curation_status": "flagged",
       "story": "The city catalogued fourteen trees here as one. Osage oranges grow as a double row buried in the wooded part of the Torre Girona gardens, planted so long ago and grown so thoroughly into the surrounding vegetation that Barcelona's own tree register lists them under a single heritage number rather than fourteen separate entries, the same treatment it gives the garden's own stone pines a short walk away. The ajuntament's own record calls the species barely used today, with very few examples left anywhere in the city, which is what makes an old, unbothered row of them worth finding rather than an ordinary planting.\n\nMaclura pomifera comes from the south-central United States, the Arkansas and Louisiana river country that gave the local Catalan name tarongers de Louisiana, Louisiana oranges, for the huge, wrinkled, inedible fruit that female trees carry. Osage Nation bowyers once prized its wood above every other American timber for its spring, which is where the tree gets its English name. In this garden it has spent its life doing nothing more dramatic than standing, on ground that went from a banker's private estate to a university campus with a supercomputer installed in its old chapel, and has been a public city park since April 2019.\n\nNobody has recorded when these went in. The register leaves the planting year blank, 'to be determined', still unresolved after a century of city cataloguing. If you know, the page welcomes the correction.",
       "how_to_recognise": "You can recognise them by a double row of trunks grown thoroughly into the surrounding woodland, and by the big wrinkled inedible fruit the trees drop. They stand in the wooded part of the Torre Girona gardens, fourteen catalogued as one."
+    },
+    {
+      "id": "bcn_060",
+      "name": "The Female Ginkgo of the Sot de la Masia",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 80 years, by the Amics' estimate",
+      "age_min": 75,
+      "age_max": 85,
+      "age_basis": "source",
+      "height_m": 12.5,
+      "location": {
+        "address": "Jardi Botanic Historic, Sot de la Masia, Av. dels Muntanyans, 08038 Barcelona",
+        "latitude": 41.36737,
+        "longitude": 2.15345,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "location_site": {
+        "name": "Central terrace of the Sot de la Masia, Jardi Botanic Historic, above the vegetable garden",
+        "radius_m": 40
+      },
+      "location_precision": "approximate",
+      "story": "The historic botanical garden on Montjuic has three ginkgos, and this is the one that fruits. The two males stand down in the Sot de l'Estany; the female holds the central terrace of the Sot de la Masia, the second quarry pit, above the vegetable garden and a short climb from the big camphor tree. The garden's 2009 guide calls it a magnificent specimen and notes that it produces edible seeds, which is a polite way of saying that in autumn it drops fleshy fruit that smells of rancid butter, the reason most cities plant only males. The friends' association put it at about 70 years old and 12.5 metres in 2017, so it went in around the 1940s, when Antoni de Bolos was adding collections to a garden Pius Font i Quer had begun in 1930. Ginkgo is older than the dinosaurs that walked under it and survives today in the wild only in China, so a seed-bearing tree in a Barcelona quarry is a small outpost of a species that nearly did not make it. The best moment is the second half of November, when the whole crown goes gold at once against the dark hillside and then lets go within a week, carpeting the beds below. The farmhouse under the terrace was built as a model farm for the 1929 exhibition; the tree is younger than it.",
+      "verified_sources": [
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02",
+        "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/"
+      ],
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/bcn_060-the-female-ginkgo-of-the-sot-de-la-masia.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: the whole crown in full November gold against a blue sky, above the raised beds of the vegetable garden in the Sot de la Masia, the terrace wall and steps behind; filename says Ginkgo biloba femella. Fills the frame, daylight, colour; photo_light OK. The 2009 guide places the female ginkgo on the central terrace of the Sot de la Masia, which matches the hort in the foreground.",
+        "taken_month": 11
+      },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/bcn_060-the-female-ginkgo-of-the-sot-de-la-masia-bare.jpg",
+          "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+          "source": "mail",
+          "attribution": "Associació Amics del Jardí Botànic",
+          "attribution_url": "https://amicsjbb.org",
+          "status": "approved",
+          "width": 592,
+          "height": 921,
+          "note": "Same set, later in the season: the crown half bare with the last gold leaves and the farmhouse roof behind. Soft and blown out (photo_light WEAK), kept for the shape of the tree.",
+          "taken_month": 12
+        }
+      ],
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "the second half of November, when the whole crown turns gold and then drops it within a week"
+      },
+      "curation_status": "flagged",
+      "notes": "Sources are the Amics' mail of 2026-11-02 with the photographs, the AMB guide of 2009 (female ginkgo on the central terrace of the Sot de la Masia, 'magnific exemplar', edible seeds) and the 2017 itinerary booklet (the garden has two male ginkgos and one female; female foot 70 years and 12.5 m, ages estimated in 2017). The mail listed the two ginkgos under the Sot de l'Estany; the guide and the photograph (vegetable beds in the foreground) put the female in the Sot de la Masia, which this page follows. Not in data/registers/barcelona-ail.json. Pin approximate: about 30 m uphill of the camphor (bcn_034, register pin) on the central terrace, no coordinate of its own; the location_site and the recognition line do the rest. Flagged until a reader or a register confirms the spot.",
+      "how_to_recognise": "You can recognise it by the fan-shaped leaves, gold in November, on a tree about 12 metres tall standing on the central terrace of the Sot de la Masia directly above the vegetable beds, uphill from the big camphor tree.",
+      "verify_notes": "2026-11-03: added from the Amics del Jardi Botanic's photographs and booklets; a lead in data/leads/barcelona.json since their first mail of 2026-11-01."
+    },
+    {
+      "id": "bcn_061",
+      "name": "The Olive of the Botanical Garden Gate",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "about 80 years, by the Amics' estimate",
+      "age_min": 75,
+      "age_max": 90,
+      "age_basis": "source",
+      "height_m": 9,
+      "location": {
+        "address": "Jardi Botanic Historic, entrance plaza, Av. dels Muntanyans, 08038 Barcelona",
+        "latitude": 41.36712,
+        "longitude": 2.15285,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "location_site": {
+        "name": "Entrance plaza (placa vestibul) of the Jardi Botanic Historic, inside the gate",
+        "radius_m": 40
+      },
+      "location_precision": "approximate",
+      "story": "Almost every olive tree you have ever seen has been pruned. Farmers cut them low and open so the fruit can be reached, and after a few centuries of that the species is known by a shape it never chose. This one was left alone. It stands on the entrance plaza of Barcelona's historic botanical garden, inside the gate behind the MNAC car park, and according to the garden's 2009 guide it has grown freely for more than seventy years without the pressures of agriculture, into a form that is almost impossible to see in the wild. The friends' association measured it at nine metres in 2017, tall and narrow for an olive, and wrote that it keeps its original shape because it has never been pruned. The plaza around it is the garden's front room, with a group of cycads, a Brazilian araucaria and a pair of junipers for company. Pius Font i Quer began the garden here in 1930 with one of the first plants a chaste tree carried over from the Ciutadella park, to mark the new garden as the heir of the old natural history museum, and a cutting of that chaste tree still grows beside this olive. The garden is free to enter, and the tree is the first thing worth stopping for.",
+      "verified_sources": [
+        "Associació Amics del Jardí Botànic, by mail 2026-11-02",
+        "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02",
+        "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/"
+      ],
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/bcn_061-the-olive-of-the-botanical-garden-gate.jpg",
+        "license": "Used with permission from Associació Amics del Jardí Botànic; credit required",
+        "source": "mail",
+        "attribution": "Associació Amics del Jardí Botànic",
+        "attribution_url": "https://amicsjbb.org",
+        "status": "approved",
+        "width": 624,
+        "height": 831,
+        "note": "Sent by mail on 2026-11-02 by the president of the Associació Amics del Jardí Botànic in answer to our photo ask of 2026-10-29, as part of a set of 26 photographs of the Jardí Botànic Històric (no private address kept in the repo). Looked at 2026-11-03: the whole tree, a single leaning trunk opening into a tall airy crown, palm fronds overhanging at the top left as on the entrance plaza; filename says Olea europaea. Daylight, colour, fills the frame; photo_light OK. Small (624 px).",
+        "taken_month": 2
+      },
+      "curation_status": "flagged",
+      "notes": "Sources are the Amics' mail of 2026-11-02 ('una olivera de mes de 8 metres', photograph) and the two booklets they sent: the AMB guide of 2009 (olive on the entrance plaza, grown freely for more than 70 years, natural form) and the 2017 itinerary (9 m, estimated 70 years in 2017, never pruned, 'conserva la forma originaria'). The chaste-tree cutting beside it is the 2009 guide's own statement. Not in data/registers/barcelona-ail.json (the register's 'Oliveres del Jardi Botanic de Barcelona' are two trees in the new garden, a different place). Pin approximate on the entrance plaza, derived from the OSM relation of the garden and its entrance node; no coordinate of its own. Flagged until a reader or a register confirms the spot.",
+      "how_to_recognise": "You can recognise it by its height, nine metres on an olive that was never pruned, a single trunk rising into a tall narrow crown on the entrance plaza just inside the gate, with the group of cycads nearby.",
+      "verify_notes": "2026-11-03: added from the Amics del Jardi Botanic's photographs and booklets; a lead in data/leads/barcelona.json since their first mail of 2026-11-01."
     }
   ],
   "oldest_tree_id": "bcn_001"
