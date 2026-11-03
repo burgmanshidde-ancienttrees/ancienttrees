@@ -101,17 +101,19 @@ const iconSeat = !!(place && requestCity && people.length > 0);
 )}
 {place && requestCity && (
   <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 && !iconSeat }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
-    {iconSeat ? (
+    {iconSeat && (
       <button type="button" class="ambassador-apply ambassador-act ambassador-act-icon" aria-label={openTitle} title={openTitle}>
         <span class="ambassador-seat" aria-hidden="true"><Fragment set:html={icon("plus", "bold", "ic seat-plus")} /><Fragment set:html={icon("check", "bold", "ic seat-check")} /></span>
         <span class="ambassador-role sr-only" data-done={U.ambassadorApplied}>{openTitle}</span>
       </button>
-    ) : taken ? (
+    )}
+    {!iconSeat && taken && (
       <button type="button" class="ambassador-apply ambassador-act" aria-label={openTitle}>
         <span class="ambassador-seat" aria-hidden="true"><Fragment set:html={icon("plus", "bold", "ic")} /></span>
         <span class="ambassador-role" data-done={U.ambassadorApplied}>{openTitle}</span>
       </button>
-    ) : (
+    )}
+    {!iconSeat && !taken && (
       <button type="button" class="ambassador ambassador-apply" aria-label={`${openTitle}. ${U.ambassadorApply}`}>
         <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
           <Fragment set:html={icon("seal-check", "bold", "ic")} />
