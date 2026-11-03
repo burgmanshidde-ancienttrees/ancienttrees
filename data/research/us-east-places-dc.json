@@ -10,8 +10,14 @@
    "Are Washington DC's remarkable trees free to visit?": "Almost all of them. The trees on the National Mall, the Capitol grounds and the Tidal Basin stand on public federal ground, and the city's giant street trees stand on public sidewalks or in DC parks, visible at any hour. The National Arboretum, Battery Kemble Park, Montrose Park, Dumbarton Oaks Park, Farragut Square and the grounds of Frederick Douglass's house charge nothing to walk in, and Alexandria National Cemetery is open free from sunrise to sunset. Arlington House is free inside a cemetery with its own entry procedure, and Tudor Place's garden asks a suggested donation."
   },
   "faq_add": [
-   {"q": "Where are Washington DC's biggest street trees?", "a": "The city's own tree inventory measures them. The largest willow oak on its park ground stands opposite 6112 Banks Place NE, about 5.4 metres round; American elms of about 5.1 metres grow in Hardy Park and outside 2716 38th Street NW; and the inventory names the linden outside 3819 T Street NW the champion of its genus. The biggest tree in the city overall is still the chestnut oak in Battery Kemble Park."},
-   {"q": "Are there remarkable trees in Alexandria, Virginia?", "a": "In the 1970s Alexandria named seventeen Living Witnesses of the American Revolution, and by the city's count two still stand on public land. One is a sweet gum below the flagpole in Alexandria National Cemetery, near King St-Old Town Metro. The other is a willow oak 5.3 metres round on the Holmes Run Trail, which the city dates to around 1707."}
+   {
+    "q": "Where are Washington DC's biggest street trees?",
+    "a": "The city's own tree inventory measures them. The largest willow oak on its park ground stands opposite 6112 Banks Place NE, about 5.4 metres round; American elms of about 5.1 metres grow in Hardy Park and outside 2716 38th Street NW; and the inventory names the linden outside 3819 T Street NW the champion of its genus. The biggest tree in the city overall is still the chestnut oak in Battery Kemble Park."
+   },
+   {
+    "q": "Are there remarkable trees in Alexandria, Virginia?",
+    "a": "In the 1970s Alexandria named seventeen Living Witnesses of the American Revolution, and by the city's count two still stand on public land. One is a sweet gum below the flagpole in Alexandria National Cemetery, near King St-Old Town Metro. The other is a willow oak 5.3 metres round on the Holmes Run Trail, which the city dates to around 1707."
+   }
   ]
  },
  "leesburg": {
@@ -26,10 +32,22 @@
   "hero_tree_id": "lsb_003",
   "oldest_tree_id": "lsb_007",
   "faq": [
-   {"q": "What is the oldest tree in Leesburg?", "a": "The Leesburg Heritage Tree, a white oak beside the Rust Farm House in Ida Lee Park. The town's Tree Commission says it is well over 250 years old and grew from seed before Leesburg was founded in 1758; no ring count has been published."},
-   {"q": "Where are Leesburg's biggest trees?", "a": "Four of Loudoun County's registered big trees stand on the grounds of Saint John the Apostle Catholic Church off Church Street NE, within about a hundred metres of each other. The silver linden there, 246 inches round, is the county's Virginia champion for its species. The Shumard oak in Algonkian Regional Park, 109 feet tall, is the tallest on our Leesburg map."},
-   {"q": "Are Leesburg's remarkable trees free to visit?", "a": "Yes. Ida Lee Park is a free town park, the Morven Park grounds are free to walk from 7 a.m. to 6 p.m. daily, and the county lists the Saint John the Apostle trees as visible from public property, though it is worth checking for services or funerals before walking onto the church grounds. Algonkian Regional Park may charge for parking at busy times."},
-   {"q": "Can I see Leesburg's trees on foot?", "a": "The Saint John the Apostle trees and the Heritage Tree in Ida Lee Park are under a kilometre apart in town, and a Loudoun County Transit stop at Union Street and King Street is a few minutes from the church. Morven Park is about 2 km north-west, and Algonkian Regional Park in Sterling is about 25 to 30 minutes east by car."}
+   {
+    "q": "What is the oldest tree in Leesburg?",
+    "a": "The Leesburg Heritage Tree, a white oak beside the Rust Farm House in Ida Lee Park. The town's Tree Commission says it is well over 250 years old and grew from seed before Leesburg was founded in 1758; no ring count has been published."
+   },
+   {
+    "q": "Where are Leesburg's biggest trees?",
+    "a": "Four of Loudoun County's registered big trees stand on the grounds of Saint John the Apostle Catholic Church off Church Street NE, within about a hundred metres of each other. The silver linden there, 246 inches round, is the county's Virginia champion for its species. The Shumard oak in Algonkian Regional Park, 109 feet tall, is the tallest on our Leesburg map."
+   },
+   {
+    "q": "Are Leesburg's remarkable trees free to visit?",
+    "a": "Most are. Ida Lee Park is a free town park, the Morven Park grounds are free to walk from 7 a.m. to 6 p.m. daily, and the county lists the Saint John the Apostle trees as visible from public property, though it is worth checking for services or funerals before walking onto the church grounds. Algonkian Regional Park may charge for parking at busy times. The Oatlands ginkgo, south of town, stands in the ticketed grounds of Oatlands Historic House and Gardens."
+   },
+   {
+    "q": "Can I see Leesburg's trees on foot?",
+    "a": "The Saint John the Apostle trees and the Heritage Tree in Ida Lee Park are under a kilometre apart in town, and a Loudoun County Transit stop at Union Street and King Street is a few minutes from the church. Morven Park is about 2 km north-west, and Algonkian Regional Park in Sterling is about 25 to 30 minutes east by car."
+   }
   ]
  }
 }
