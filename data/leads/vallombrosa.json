@@ -1,0 +1,35 @@
+{
+  "city": "Vallombrosa",
+  "country": "Italy",
+  "city_slug": "vallombrosa",
+  "note": "2026-11-02 MASAF verify pass (central Italy, Reggello). Four trees verified (val_001 to val_004) in data/research/vallombrosa-verified.json, after the coordinator lifted the photo-or-pin rule: val_004, the Faggione, ships with an approximate pin and no photo. The three Sammezzano rows are blocked while the park is closed.",
+  "leads": [
+    {
+      "name": "The Twin Redwood of Sammezzano",
+      "species": "Sequoia sempervirens",
+      "latitude": 43.701781,
+      "longitude": 11.475486,
+      "masaf_code": "01/H222/FI/09",
+      "status": "blocked",
+      "reason": "park closed to visitors. Register 840 cm, 54 m, the tallest-girthed coast redwood of the pass. Visit Tuscany says park and castle are private and the Twin Redwood could be glimpsed from trail R21 out of Leccio, but savesammezzano.com (2026) says the whole estate is off limits during restoration, owners ask nobody to enter, reopening target autumn 2028. Re-open when the park reopens. Different valley from Vallombrosa (Leccio, roughly 25 km by road, not checked), not a day-trip neighbour. Source: https://www.savesammezzano.com/quando-riaprira-sammezzano-il-nuovo-obiettivo-e-lautunno-2028/"
+    },
+    {
+      "name": "The giant sequoia of Sammezzano",
+      "species": "Sequoiadendron giganteum",
+      "latitude": 43.704753,
+      "longitude": 11.469064,
+      "masaf_code": "03/H222/FI/09",
+      "status": "blocked",
+      "reason": "same private park, closed until reopening (see Twin Redwood). Register 610 cm, 28 m. Source: https://www.savesammezzano.com/le-sequoie-giganti-di-sammezzano-guida-al-parco-e-alla-sequoia-gemella/"
+    },
+    {
+      "name": "The Lawson cypress of Sammezzano",
+      "species": "Chamaecyparis lawsoniana",
+      "latitude": 43.704811,
+      "longitude": 11.469739,
+      "masaf_code": "02/H222/FI/09",
+      "status": "blocked",
+      "reason": "same private park, closed; also modest (230 cm, 20 m). Not worth the walk even when it reopens."
+    }
+  ]
+}

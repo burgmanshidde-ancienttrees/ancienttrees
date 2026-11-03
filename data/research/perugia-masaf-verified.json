@@ -1,0 +1,279 @@
+[
+ {
+  "id": "pgi_013",
+  "name": "The Cedar of Villa del Colle del Cardinale",
+  "species": "Cedar of Lebanon (Cedrus libani)",
+  "age_estimate": "roughly 130 years",
+  "age_min": 120,
+  "age_max": 140,
+  "age_basis": "source",
+  "masaf_code": "22/G478/PG/10",
+  "girth_cm": null,
+  "height_m": 16.5,
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "22/G478/PG/10",
+   "url": "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+  },
+  "location": {
+   "address": "Villa del Colle del Cardinale, Strada per Sant'Antonio 47, Colle Umberto, Perugia",
+   "latitude": 43.179683,
+   "longitude": 12.308536,
+   "neighbourhood": "Colle Umberto"
+  },
+  "location_precision": "approximate",
+  "location_site": null,
+  "pin_source": "MASAF coordinate; a CC BY-SA 2016 photo of a Lebanon cedar in the park is geotagged 43.179585, 12.308372 (about 16 m away, camera position, not an object tag), so the pin is probably right but is not proven",
+  "photo_candidates": [
+   {
+    "file_page": "https://commons.wikimedia.org/wiki/File:Villa_Colle_del_Cardinale_-_Pianta_secolare.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Villa_Colle_del_Cardinale_-_Pianta_secolare.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Roberto Brencio",
+    "why_this_trunk": "Viewed: a large spreading Lebanon cedar with flat layered branches on a lawn in the villa park, cypresses behind. Geotag 43.179585,12.308372 is about 16 m from the MASAF cedar of Lebanon (the only Lebanon cedar in the villa's register rows); Artribune places the Cesaroni cedar of Lebanon in front of the villa. Caption: 'Pianta secolare nel parco della Villa del Colle del Cardinale'. Identity as THE registered tree is probable, not proven (the register height 16.5 m looks low against the photo)."
+   }
+  ],
+  "access": "Paid entry to a state-owned villa and park, Strada per Sant'Antonio 47: about 2 euro for the park, about 4 with the villa (older listing). Open weekends, listed as Saturday and Sunday 10:00 to 13:00 and 14:00 to 18:00, with extra holiday openings; listings differ, so call +39 075 5759645 before going.",
+  "transport": "About 8 km north-west of central Perugia in the hamlet of Colle Umberto; no bus confirmed, so plan on a car or taxi, roughly 15 to 20 minutes from the centre.",
+  "curation_status": "flagged",
+  "verified_sources": [
+   "https://www.artribune.com/?p=1170621",
+   "https://www.finestresullarte.info/attualita/perugia-riapre-villa-del-colle-del-cardinale",
+   "https://www.museionline.info/perugia-musei-e-monumenti/villa-del-colle-del-cardinale",
+   "https://luoghi.italianbotanicalheritage.com/en/?p=37037",
+   "https://commons.wikimedia.org/wiki/File:Villa_Colle_del_Cardinale_-_Pianta_secolare.jpg"
+  ],
+  "verify_notes": "MASAF sheet 22/G478/PG/10 Cedrus libani, height 16.5 m, girth null (no figure in register). Same villa rows: deodar 23 (428 cm, 20 m), Monterey cypress 24 (361 cm, 18.5 m), Italian cypress 28 (328 cm, 29 m) and 30 (28 m), small-leaved lime 32 (263 cm, 20 m), Japanese cedar 26 (70 cm, 7 m, young, skip). These could fold into one villa-park entry later; this entry takes the Lebanon cedar because it alone has a photograph. Artribune (2025): Ferdinando Cesaroni, resident from 1892, planted the cedar of Lebanon and the rare Cryptomeria japonica in front of the villa, beside the oak; the Italian botanical heritage page also says Cesaroni planted cedars after buying in 1893 ('still partially visible'). Age therefore at least about 130 years by source; no girth, so not sharpened. Alive: photograph from March 2016 and the villa reopened to the public on 21 March 2025 after a PNRR garden restoration of about 2 million euros (Finestre sull'Arte); no explicit dated statement about this cedar, so flagged. Single register plus press, the villa owner is the Italian State (Ministry of Culture). Conflict on hours between Ministry listing and museionline. Hosts that refused: cultura.gov.it (ECONNREFUSED), turismo.comune.perugia.it (ECONNREFUSED); overpass-api and iNaturalist returned nothing near the villa; Commons search was rate-limited so geosearch was done via the category listing only. Other Commons candidates in the category: File:Cipresso secolare.jpg (geotag 43.180181,12.309174, about 90 m from cypress rows 28/30, trunk close-up, not matched), File:Villa Colle del Cardinale - Pianta secolare 1.jpg (43.179379,12.308257, a big conifer next to the villa wall, probably Monterey cypress 24 or the deodar 23, species not settled).",
+  "facts_for_story": [
+   {
+    "fact": "Cardinal Fulvio della Corgna commissioned the villa in 1575, attributed to Galeazzo Alessi; the Oddi family reshaped the grounds from 1645 into an English-style garden.",
+    "url": "https://www.artribune.com/?p=1170621"
+   },
+   {
+    "fact": "Ferdinando Cesaroni lived in the villa from 1892 and planted the cedar of Lebanon and a Cryptomeria japonica in front of it.",
+    "url": "https://www.artribune.com/?p=1170621"
+   },
+   {
+    "fact": "The Italian State bought the villa and it was abandoned for years before restoration; the gardens reopened on 21 March 2025 after a PNRR-funded restoration of about 2 million euros.",
+    "url": "https://www.finestresullarte.info/attualita/perugia-riapre-villa-del-colle-del-cardinale"
+   },
+   {
+    "fact": "Register record: Cedrus libani, 16.5 m tall, at 300 m altitude, MASAF 22/G478/PG/10.",
+    "url": "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+   }
+  ],
+  "recognition_facts": [
+   "Stands on the lawn in front of the villa, a broad flat-layered crown with cypresses behind it.",
+   "The villa's Lebanon cedar and the only one in the register rows, so it needs no other pointer: the deodar (pgi_015) stands about 27 m to its south.",
+   "Reddish, deeply grooved trunk dividing low into big horizontal limbs (seen in the Commons photo)."
+  ],
+  "story": "This cedar's planter is on record, which is rarer than it sounds. Ferdinando Cesaroni, who lived at Villa del Colle del Cardinale from 1892, planted the Cedar of Lebanon in front of the house, beside the oak, together with a rare Japanese cedar. That puts the tree at roughly 130 years old, a figure that comes from the planting rather than a ring count.\n\nThe villa had three centuries behind it by then. Cardinal Fulvio della Corgna commissioned it in 1575, in a design attributed to Galeazzo Alessi, and from 1645 the Oddi family reshaped the grounds into an English-style garden. Later the Italian State bought it, and for years it stood abandoned. The gardens reopened on 21 March 2025 after a restoration of about 2 million euros.\n\nThe national register lists the cedar at 16.5 metres tall and gives no girth. Photographs of the park show a broad, flat-layered crown spreading low over the lawn, wider than it is high, with Italian cypresses rising behind it. The same register names a deodar, a Monterey cypress and two tall Italian cypresses in the same park, so one ticket covers several old conifers.\n\nThe villa is open on weekends and some holidays, and the hours differ between listings. Check before you drive out.",
+  "how_to_recognise": "You can recognise it by the broad, flat-layered crown spreading low over the lawn, wider than it is tall, with cypresses behind. It stands in front of the villa; the deodar is about 27 metres to its south.",
+  "paid_entry": true,
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Villa_Colle_del_Cardinale_-_Pianta_secolare.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Roberto Brencio, via Wikimedia Commons",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Villa_Colle_del_Cardinale_-_Pianta_secolare.jpg",
+   "status": "approved",
+   "width": 4128,
+   "height": 3096
+  }
+ },
+ {
+  "id": "pgi_014",
+  "name": "The Holm Oak of Santa Giuliana",
+  "species": "Holm Oak (Quercus ilex)",
+  "age_estimate": "over 300 years",
+  "age_min": 300,
+  "age_max": null,
+  "age_basis": "source",
+  "masaf_code": "35/G478/PG/10",
+  "girth_cm": 381,
+  "height_m": 17.5,
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "35/G478/PG/10",
+   "url": "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+  },
+  "location": {
+   "address": "Complesso monumentale di Santa Giuliana, Largo dell'Ospedale Militare 4 (also Via Baldassarre Orsini 3), Perugia",
+   "latitude": 43.104008,
+   "longitude": 12.386114,
+   "neighbourhood": "Centro storico"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Cortile del Leccio, Complesso monumentale di Santa Giuliana",
+   "radius_m": 30
+  },
+  "pin_source": "MASAF coordinate for sheet 35 (Via Baldassarre Orsini), which matches the complex address; no tree-level fix",
+  "photo_candidates": [],
+  "access": "Free. The state-owned complex of Santa Giuliana opens at set times: weekends 10:00 to 13:30 and 15:00 to 18:30 during Monumenti Aperti in September 2025, otherwise visits by reservation at least two days ahead. Hours vary, call +39 075 5750511 before going.",
+  "transport": "About 1 km south of Piazza IV Novembre, roughly 15 minutes on foot from the centre.",
+  "curation_status": "flagged",
+  "recognition_facts": [
+   "Stands alone in the courtyard beside the church of Santa Giuliana, the 'cortile del leccio', named after the tree.",
+   "An old raised, closed well sits at the foot of the trunk (Fondo Ambiente).",
+   "The crown spans about 24 m (Monumenti Aperti 2025) and the trunk girth is 381 cm; a corridor behind it leads to remains of a so-called Roman road."
+  ],
+  "verified_sources": [
+   "https://monumentiaperti.com/it/wp-content/uploads/2025/04/PERUGIA.settembre25_8FACC_MA2025_esec_WEBMIL.pdf",
+   "https://fondoambiente.it/luoghi/complesso-monumentale-di-santa-giuliana",
+   "https://www.museionline.info/perugia-musei-e-monumenti/complesso-monumentale-di-santa-giuliana",
+   "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+  ],
+  "verify_notes": "Two sources beside the register: the Monumenti Aperti 2025 Perugia brochure (courtyard 'Cortile del Leccio', holm oak over 300 years, crown 24 m diameter, 'a tree monument') and Fondo Ambiente (secular holm oak, well at its foot, Via Baldassarre Orsini 3). MASAF row 35: 381 cm, 17.5 m, 396 m altitude; the 24 m crown against 17.5 m height is plausible for a holm oak. Alive: the 2025 brochure describes it as the green heart of the courtyard (Sept 2025). Brochure's age 'over 300' is an event text, not a measurement; age range kept broad. Public: free, weekend openings plus bookable visits (bookable counts as yes under hard rule 10), the complex is state property. Pin is register-based and the courtyard is small enough to take in at once; approximate with a 30 m small site. No photograph: no Commons or iNaturalist image of the leccio found (Commons category Santa Giuliana (Perugia) has only church exteriors; geosearch stayed rate-limited). Hosts refused: turismo.comune.perugia.it.",
+  "facts_for_story": [
+   {
+    "fact": "Santa Giuliana monastery was founded in 1253 under Pope Innocent IV, Benedictine rule with Cistercian ordering.",
+    "url": "https://monumentiaperti.com/it/wp-content/uploads/2025/04/PERUGIA.settembre25_8FACC_MA2025_esec_WEBMIL.pdf"
+   },
+   {
+    "fact": "The cloister, built 1376 for the arrival of the relics of Saint Giuliana, is attributed to Gattapone.",
+    "url": "https://monumentiaperti.com/it/wp-content/uploads/2025/04/PERUGIA.settembre25_8FACC_MA2025_esec_WEBMIL.pdf"
+   },
+   {
+    "fact": "The courtyard holm oak is over 300 years old with a 24 m wide crown; an old well, once filled with rubble, now closed and raised, stands at its foot.",
+    "url": "https://fondoambiente.it/luoghi/complesso-monumentale-di-santa-giuliana"
+   }
+  ],
+  "story": "A courtyard in Perugia is named after this tree. The Cortile del Leccio, the courtyard of the holm oak, sits beside the church of Santa Giuliana, and the oak at its centre has a crown about 24 metres across, wider than the tree is tall. The national register measures it at 3.81 metres round and 17.5 metres high.\n\nThe monastery around it is far older. Santa Giuliana was founded in 1253 under Pope Innocent IV, a house of Benedictine rule in the Cistercian manner, and its cloister, attributed to Gattapone, was built in 1376 to receive the relics of Saint Giuliana. The oak is younger than the stones but no sapling. The 2025 Monumenti Aperti guide puts it at over 300 years, an event text's figure rather than a ring count, and calls it the green heart of the courtyard.\n\nAt its foot stands an old well. It was once filled with rubble and is now closed and raised, and behind the tree a corridor leads to the remains of what is called a Roman road.\n\nThe complex belongs to the state and opens at set times rather than every day. It was free on weekends during Monumenti Aperti in September 2025; other listings say visits by reservation two days ahead. Call before you go. It is about a kilometre south of Piazza IV Novembre, some 15 minutes on foot.",
+  "how_to_recognise": "You can recognise it by the well at its foot, closed and raised, and a crown about 24 metres across. It stands alone in the Cortile del Leccio, the courtyard beside the church of Santa Giuliana named after it.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ },
+ {
+  "id": "pgi_015",
+  "name": "The Deodar of Villa del Colle del Cardinale",
+  "species": "Himalayan Cedar (Cedrus deodara)",
+  "age_estimate": null,
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "masaf_code": "23/G478/PG/10",
+  "girth_cm": 428,
+  "height_m": 20.0,
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "23/G478/PG/10",
+   "url": "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+  },
+  "location": {
+   "address": "Villa del Colle del Cardinale, Strada per Sant'Antonio 47, Colle Umberto, Perugia",
+   "latitude": 43.179436,
+   "longitude": 12.308561,
+   "neighbourhood": "Colle Umberto"
+  },
+  "location_precision": "approximate",
+  "location_site": null,
+  "pin_source": "MASAF coordinate; no tree-level fix",
+  "photo_candidates": [],
+  "access": "Paid entry to a state-owned villa and park, Strada per Sant'Antonio 47: about 2 euro for the park, about 4 with the villa (older listing). Open weekends, listed as Saturday and Sunday 10:00 to 13:00 and 14:00 to 18:00; listings differ, so call +39 075 5759645 before going.",
+  "transport": "About 8 km north-west of central Perugia in the hamlet of Colle Umberto; no bus confirmed, so plan on a car or taxi, roughly 15 to 20 minutes from the centre.",
+  "curation_status": "flagged",
+  "recognition_facts": [
+   "About 27 m south of the cedar of Lebanon (pgi_013) in the park in front of the villa.",
+   "A girth of 428 cm and about 20 m tall, the thickest conifer of the villa rows apart from the cypress group.",
+   "About 37 m east of the Monterey cypress (pgi_016); species tells it from the Lebanon cedar to its north."
+  ],
+  "verified_sources": [
+   "https://www.artribune.com/?p=1170621",
+   "https://www.finestresullarte.info/attualita/perugia-riapre-villa-del-colle-del-cardinale",
+   "https://www.museionline.info/perugia-musei-e-monumenti/villa-del-colle-del-cardinale",
+   "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+  ],
+  "verify_notes": "Deodar, girth 428 cm and height 20 m in the register, the largest girth of the villa's conifers after the cypress group. Cesaroni's planting is the likely, not proven, origin (the sources name cedars generally); no age claimed. Register record (sheet 23/G478/PG/10), the Umbrian regional list as reprinted by La Nazione, and the villa, owned by the Italian State, which reopened its restored gardens on 21 March 2025 (Finestre sull'Arte): register plus owner, no tree-specific sign of life, so flagged. Park is paid and weekend-only; the pin is the register point inside the park. Folds with pgi_013's villa cluster: not a separate walk, one visit. Recognition distances are computed from register coordinates (about 81 km per degree of longitude, 111 km per degree of latitude), so they carry the register's few metres of error. No photograph; the Commons file 'Pianta secolare 1' (CC BY-SA 4.0, Roberto Brencio, geotag 43.179379,12.308257) shows a large conifer by the villa wall that may be this tree or the neighbouring one, not settled.",
+  "facts_for_story": [
+   {
+    "fact": "Villa built from 1575 for Cardinal Fulvio della Corgna, attributed to Galeazzo Alessi; the Oddi family reshaped the grounds from 1645.",
+    "url": "https://www.artribune.com/?p=1170621"
+   },
+   {
+    "fact": "Ferdinando Cesaroni, resident from 1892, planted exotic conifers in front of the villa (named there: a cedar of Lebanon and a Japanese cedar).",
+    "url": "https://www.artribune.com/?p=1170621"
+   },
+   {
+    "fact": "The gardens reopened on 21 March 2025 after a PNRR restoration of about 2 million euros.",
+    "url": "https://www.finestresullarte.info/attualita/perugia-riapre-villa-del-colle-del-cardinale"
+   }
+  ],
+  "story": "Of all the old trees at Villa del Colle del Cardinale that Italy's register has put a tape round, this Himalayan cedar has the thickest trunk. The national register gives it 4.28 metres round and 20 metres tall, at about 300 metres above sea level on the hills north-west of Perugia.\n\nWho planted it is a fair question with no firm answer. Ferdinando Cesaroni, who lived at the villa from 1892, is recorded as planting exotic conifers in front of the house, and the sources name a Cedar of Lebanon and a Japanese cedar among them. They do not name this deodar, so its date stays open. If you know when it went in, tell us.\n\nThe house it stands before goes back to 1575, when Cardinal Fulvio della Corgna commissioned it in a design attributed to Galeazzo Alessi. The Oddi family turned the grounds into an English-style garden from 1645. Much later the Italian State bought the villa, left it empty for years, and then spent about 2 million euros restoring the gardens, which reopened on 21 March 2025.\n\nThe deodar stands about 27 metres south of the villa's Cedar of Lebanon, and a Monterey cypress grows some 35 metres to its west, so the three make a short circuit of one lawn. The park opens on weekends for a small fee; check the hours before you drive out.",
+  "how_to_recognise": "You can recognise it by the trunk, about 4.3 metres round, the thickest the register measured at the villa. It stands in front of the villa about 27 metres south of the Cedar of Lebanon, with the Monterey cypress some 35 metres west.",
+  "paid_entry": true,
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ },
+ {
+  "id": "pgi_016",
+  "name": "The Monterey Cypress of Villa del Colle del Cardinale",
+  "species": "Monterey Cypress (Cupressus macrocarpa)",
+  "age_estimate": null,
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "masaf_code": "24/G478/PG/10",
+  "girth_cm": 361,
+  "height_m": 18.5,
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "24/G478/PG/10",
+   "url": "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+  },
+  "location": {
+   "address": "Villa del Colle del Cardinale, Strada per Sant'Antonio 47, Colle Umberto, Perugia",
+   "latitude": 43.17935,
+   "longitude": 12.308111,
+   "neighbourhood": "Colle Umberto"
+  },
+  "location_precision": "approximate",
+  "location_site": null,
+  "pin_source": "MASAF coordinate; no tree-level fix",
+  "photo_candidates": [],
+  "access": "Paid entry to a state-owned villa and park, Strada per Sant'Antonio 47: about 2 euro for the park, about 4 with the villa (older listing). Open weekends, listed as Saturday and Sunday 10:00 to 13:00 and 14:00 to 18:00; listings differ, so call +39 075 5759645 before going.",
+  "transport": "About 8 km north-west of central Perugia in the hamlet of Colle Umberto; no bus confirmed, so plan on a car or taxi, roughly 15 to 20 minutes from the centre.",
+  "curation_status": "flagged",
+  "recognition_facts": [
+   "About 50 m south-west of the cedar of Lebanon (pgi_013) and about 35 m west of the deodar (pgi_015).",
+   "A broad, dense, dark Monterey cypress, shorter and wider than the Italian cypresses of the same park (361 cm girth, 18.5 m)."
+  ],
+  "verified_sources": [
+   "https://www.artribune.com/?p=1170621",
+   "https://www.finestresullarte.info/attualita/perugia-riapre-villa-del-colle-del-cardinale",
+   "https://www.museionline.info/perugia-musei-e-monumenti/villa-del-colle-del-cardinale",
+   "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+  ],
+  "verify_notes": "Monterey cypress, 361 cm, 18.5 m, an uncommon species in Umbria. The Italian cypresses of the villa (sheets 28, 30) stand 45 m north of the cedar and are the tallest trees of the park at 28 to 29 m. Register record (sheet 24/G478/PG/10), the Umbrian regional list as reprinted by La Nazione, and the villa, owned by the Italian State, which reopened its restored gardens on 21 March 2025 (Finestre sull'Arte): register plus owner, no tree-specific sign of life, so flagged. Park is paid and weekend-only; the pin is the register point inside the park. Folds with pgi_013's villa cluster: not a separate walk, one visit. Recognition distances are computed from register coordinates (about 81 km per degree of longitude, 111 km per degree of latitude), so they carry the register's few metres of error. No photograph; the Commons file 'Pianta secolare 1' (CC BY-SA 4.0, Roberto Brencio, geotag 43.179379,12.308257) shows a large conifer by the villa wall that may be this tree or the neighbouring one, not settled.",
+  "facts_for_story": [
+   {
+    "fact": "Villa built from 1575 for Cardinal Fulvio della Corgna, attributed to Galeazzo Alessi; the Oddi family reshaped the grounds from 1645.",
+    "url": "https://www.artribune.com/?p=1170621"
+   },
+   {
+    "fact": "Ferdinando Cesaroni, resident from 1892, planted exotic conifers in front of the villa (named there: a cedar of Lebanon and a Japanese cedar).",
+    "url": "https://www.artribune.com/?p=1170621"
+   },
+   {
+    "fact": "The gardens reopened on 21 March 2025 after a PNRR restoration of about 2 million euros.",
+    "url": "https://www.finestresullarte.info/attualita/perugia-riapre-villa-del-colle-del-cardinale"
+   }
+  ],
+  "story": "A Monterey cypress is an uncommon tree in Umbria, and this one is big enough to make Italy's national register. It measures 3.61 metres round and 18.5 metres tall, a broad, dense, dark shape that reads quite differently from the slim Italian cypresses in the same park, which rise to 28 and 29 metres as the tallest trees here.\n\nIt stands on the lawn of Villa del Colle del Cardinale, the country house Cardinal Fulvio della Corgna commissioned in 1575 on the hills north-west of Perugia, in a design attributed to Galeazzo Alessi. From 1645 the Oddi family reshaped the grounds as an English-style garden. Ferdinando Cesaroni, resident from 1892, planted exotic conifers in front of the house, but the sources name only a Cedar of Lebanon and a Japanese cedar, so they do not tell us whether this cypress was his. Nobody has published its age. If you know, tell us.\n\nThe villa later passed to the Italian State, stood abandoned for years, and reopened on 21 March 2025 after a restoration of the gardens costing about 2 million euros. Visit the cypress with its neighbours, the Himalayan cedar about 35 metres to the east and the Cedar of Lebanon about 50 metres to the north-east. The park opens on weekends for a small fee, and the listed hours disagree, so check before going.",
+  "how_to_recognise": "You can recognise it by its broad, dense, dark crown, much wider and shorter than the park's slim Italian cypresses. It stands about 35 metres west of the Himalayan cedar and 50 metres south-west of the Cedar of Lebanon.",
+  "paid_entry": true,
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ }
+]

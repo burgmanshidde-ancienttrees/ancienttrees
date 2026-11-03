@@ -99,6 +99,62 @@
       "lng": 11.209111,
       "status": "resolved_duplicate",
       "why": "RESOLVED 2026-09-17: this is flo_026, 'The Poplar of the Renaioli', already live under the exact same MASAF sheet id (58/D612/FI/09). data/cities/florence.json's flo_026 cites a second source this lead's own search missed: ilregistrodeglialberi.it/17060-il-pioppo-dei-renaioli-pioppo-nero-firenze-fi-toscana (the RAMI/citizen register), so the two-source bar IS cleared and was already shipped before this lead was written. Do not re-verify or re-dispatch; check data/cities/florence.json for a MASAF sheet id before concluding a candidate is unsourced."
+    },
+    {
+      "name": "The Holm Oak of Belmonte",
+      "species": "Quercus ilex",
+      "lat": 43.728556,
+      "lng": 11.31225,
+      "status": "lead",
+      "why": "MASAF 04/A564/FI/09 (745 cm, 14 m), Antella, Fattoria di Belmonte. Real, famous and alive (set on fire 2026-06-23, experts say damaged but probably survives: Il Tirreno, Gazzettino del Chianti, ANSA), but NOT visitable: the ground belongs to the Misericordia di Firenze, the tree has been inside a private estate since the mid-1980s, RAMI marks it 'non accessibile', and the Misericordia only offered visits by appointment after the estate is made safe (QuiAntella, 2022). The Amici del Leccio and the comune are working on public access. Re-check when public use is announced; then a strong tree (reported 600 years by the press, 505 by RAMI, conflict). Sources: https://www.gazzettinodelchianti.it/bagno-a-ripoli/un-abbraccio-al-nostro-leccio-camminata-notturna-per-vedere-i-fochi-di-san-giovanni/ ; https://ilregistrodeglialberi.it/6422-leccio-bagno-a-ripoli-firenze-toscana"
+    },
+    {
+      "name": "La Cipressa of Rimaggio",
+      "species": "Cupressus sempervirens",
+      "lat": 43.753633,
+      "lng": 11.332725,
+      "status": "lead",
+      "why": "MASAF 02/A564/FI/09 (510 cm, 23.5 m), Via di Vernalese 4/6, Bagno a Ripoli. Alive (RAMI health 'buona', updated 2025-10-14, over 200 years, candelabra crown, old dance floor beside it that gave it the name 'Cipressa sonora'). Fails access: RAMI marks it 'non accessibile', the regional news item says private land, and no source says it can be seen from the road. No photo or confirmed pin. Needs a roadside sighting before it can ship. Sources: https://ilregistrodeglialberi.it/17053-la-cipressa-sonora-cipresso-comune-bagno-a-ripoli-firenze-toscana ; https://www.comune.bagno-a-ripoli.fi.it/novita/notizie/censimento-alberi-monumentali-ex-l-10-2013"
+    },
+    {
+      "name": "The Black Pine of Villa Gamberaia (2026-11-02 re-check)",
+      "species": "Pinus nigra",
+      "lat": 43.778953,
+      "lng": 11.328269,
+      "status": "lead",
+      "why": "Adds to the earlier entry. NEW: passioneinverde.edagricole.it (fetched, read in full) says the 225 m bowling-green lawn of the ticketed garden ends at 'uno splendido esemplare di pino laricio (Pinus nigra ssp. laricio)', so a pine of this species stands inside the paid circuit (garden EUR 20, Mon-Sat 9-19, Sun 9-18 per 2026 listings; phone +39 055 697205 to confirm). It does not say that this is the registered MASAF tree and the register point is approximate. Commons category 'Villa Gamberaia' holds about 70 files, none named for the pine; iNaturalist nothing within 150 m. Still no photo or confirmed pin, so it does not ship; a visitor photograph at the end of the bowling green, or an OSM node there, would settle it. Overpass was unreachable this pass. 2026-11-02 coordinator decision: stays a lead, no source ties the registered tree to the lawn-end pine."
+    },
+    {
+      "name": "The Monterey Cypress of Largo Fermi (Arcetri)",
+      "species": "Cupressus macrocarpa",
+      "lat": 43.750431,
+      "lng": 11.254342,
+      "status": "lead",
+      "why": "MASAF 16/D612/FI/09 (480 cm, 16.5 m), Largo Enrico Fermi 5, beside the Arcetri astrophysical observatory; named a notable tree by unusualflorence.it (the Region's survey lists it too). Not RAMI 15/D612 (that is the Giardino Simone Weil tree, already flo_017). No dated alive source, no photo, no confirmed pin, and it is not stated whether the tree is outside the observatory gate or inside the institute. Source: https://unusualflorence.it/unusual-trees/"
+    },
+    {
+      "name": "The Wisteria of Via Pisana (Villa Capponi Tempi)",
+      "species": "Wisteria sinensis",
+      "lat": 43.772217,
+      "lng": 11.232589,
+      "status": "resolved_verified",
+      "why": "RESOLVED 2026-11-02: verified and delivered to data/research/florence-masaf-verified.json as flo_028 (rule change: photo or pin no longer required)."
+    },
+    {
+      "name": "The Hackberry of Terenzano (Fiesole)",
+      "species": "Celtis australis",
+      "lat": 43.780597,
+      "lng": 11.347206,
+      "status": "lead",
+      "why": "MASAF 01/D575/FI/09 (405 cm, 15 m), Via della Rosa 11-13, Compiobbi. Alive (RAMI 2022 measurement, health 'sufficiente', a main branch cut after a failure), 'accessibile', seen from the road in open country per alberimonumentali.info. About 12 km east of Florence out in Compiobbi, beyond the Florence day-trip brief and no photo or confirmed pin. Source: https://ilregistrodeglialberi.it/14381-bagolaro-fiesole-firenze-toscana"
+    },
+    {
+      "name": "The Cypress of Via del Bargellino and the Downy Oak of Torre a Buiano (Fiesole)",
+      "species": "Cupressus sempervirens; Quercus pubescens",
+      "lat": 43.821811,
+      "lng": 11.306639,
+      "status": "lead",
+      "why": "MASAF 03/D575/FI/09 (270 cm, 16 m) and 06/D575/FI/09 (440 cm, 14 m, Via Acquinvogliolo, 43.85375 11.339111). Both rural and 10 to 18 km north of Florence in the hills above Fiesole, not checked for access, alive or photo after the Florence reach test (city bus or about 30 minutes). Not researched further."
     }
   ],
   "blocked": [
@@ -164,6 +220,13 @@
       "lat": null,
       "lng": null,
       "reason": "Access-restricted private garden, checked 2026-09-17 (continuation pass) as a candidate distinct from the already-blocked 'Villa Torrigiani' entry above (that one is the Lucca-area estate; this is the separate, larger private garden inside Florence itself, entrance at Via dei Serragli 144, the largest private garden within a European city's walls). RAMI carries three named specimens here: 'La Sequoia del giardino Torrigiani' (Sequoia sempervirens, approx 209 years), 'Il Tasso giardino Torrigiani' (Taxus baccata) and 'Il leccio di Anna Torrigiani' (Quercus ilex), none with recorded girth. Checked directly (WebSearch on visiting hours/access): the garden's own site (giardinotorrigiani.it) and independent write-ups agree entry is by appointment with the owners only, or on rare open days (e.g. an annual ADSI heritage-day guided tour); it is not open to a visitor who simply walks up, which fails the first of the three hard-rule-10 access tests. Worth revisiting only if the garden ever publishes standing public visiting hours."
+    },
+    {
+      "name": "The Locust of Via dei Pepi",
+      "species": "Robinia pseudoacacia",
+      "lat": 43.769583,
+      "lng": 11.262278,
+      "reason": "In a narrow private courtyard of Palazzo Pepi (Via dei Pepi 7), MASAF 24/D612/FI/09 (270 cm, 18 m); RAMI marks it not accessible to the public and the comune lists it among the private monumental trees. Not visible from the street. https://ilregistrodeglialberi.it/16903-robinia-di-via-dei-pepi-robinia-firenze-fi-toscana"
     }
   ],
   "off_cluster_currently_published": {

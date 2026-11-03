@@ -14981,6 +14981,22 @@
       "note": "Central Italy MASAF run: Ostia Antica holm oak in Piazza Gregoriopoli; 9 of 12 rows already rejected earlier, San Sisto nursery closed, Villa Torlonia pine unproven after the December felling."
     },
     {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "spoleto+vallombrosa+perugia+lucca+rome+florence",
+      "tokens": 239665,
+      "trees": 18,
+      "note": "Central Italy MASAF run: 18 stories and recognition lines, 5 Commons photos approved after viewing, 1 held; place fields in data/research/italy-central-places.json; held for the pace, build with scripts/build_italy_central.py."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "translate",
+      "target": "it/florence+lucca+rome",
+      "tokens": 122680,
+      "trees": 4,
+      "note": "Central Italy MASAF run: Italian for flo_028, luc_015, luc_016, rom_032 and the changed place copy, so the overlays do not refuse the build; data/research/italy-central-it-overlay.json."
+    },
+    {
       "date": "2026-11-02",
       "kind": "verify",
       "target": "agrigento, palazzolo-acreide, noto, ragusa",

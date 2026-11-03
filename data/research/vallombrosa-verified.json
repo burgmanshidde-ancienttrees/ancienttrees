@@ -1,0 +1,351 @@
+[
+ {
+  "id": "vlb_001",
+  "name": "The Giant Sequoia of the Vallombrosa Arboretum",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "masaf_code": "06/H222/FI/09",
+  "age_estimate": null,
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "girth_cm": 655,
+  "height_m": 36.5,
+  "location": {
+   "address": "Arboreti sperimentali di Vallombrosa, Via del Paradisino, Vallombrosa, Reggello (FI)",
+   "latitude": 43.73282,
+   "longitude": 11.55631,
+   "neighbourhood": "Vallombrosa"
+  },
+  "location_precision": "confirmed",
+  "pin_source": "iNaturalist observation 375589030, 2026-05-24, GPS accuracy 10 m at 43.73282, 11.55631; the observer's note says the tree is on the monumental list with a 650 cm girth (2016 data), matching MASAF 06. Same spot as the Commons 'Sequoia gigante, Arboreto di Vallombrosa' geotag and the register point (within a few metres).",
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "06/H222/FI/09",
+   "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+  },
+  "photo_candidates": [
+   {
+    "file_page": "https://commons.wikimedia.org/wiki/File:Sequoia_gigante,_Arboreto_di_Vallombrosa.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Sequoia_gigante%2C_Arboreto_di_Vallombrosa.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Albarubescens (Wikimedia Commons user, no user page)",
+    "why_this_trunk": "Titled 'Sequoia gigante, Arboreto di Vallombrosa', geotag 43.732817, 11.556308 = the register point and the iNaturalist GPS fix; taken 2019-07-09. Not viewed pixel by pixel: needs the photo-judge look."
+   },
+   {
+    "file_page": "https://commons.wikimedia.org/wiki/File:Belvedere_delle_sequoie,_Arboreto_di_Vallombrosa.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Belvedere_delle_sequoie%2C_Arboreto_di_Vallombrosa.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Albarubescens (Wikimedia Commons user, no user page)",
+    "why_this_trunk": "Same geotag, same day; may show the sequoia belvedere (several young sequoias) rather than this one trunk. Second choice."
+   }
+  ],
+  "access": "Guided visits only, free, about 90 minutes: daily June to September (Monday to Saturday 10:30 and 14:00, Sundays and holidays 11:00 and 15:00) from beneath the abbey's Torrione; groups of ten or more book ahead. The rest of the year on request (arboreti.vallombrosa@gmail.com, +39 055 862020). Times from 2026 reports; check before going.",
+  "transport": "A day trip from Florence: train from Santa Maria Novella to Pontassieve, then Autolinee Toscane bus 343 to Vallombrosa (45 to 60 minutes on the bus, about an hour and a quarter door to door; check the timetable).",
+  "verified_sources": [
+   "https://www.inaturalist.org/observations/375589030",
+   "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/",
+   "https://luoghi.italianbotanicalheritage.com/en/vallombrosa-experimental-arboretums/",
+   "https://valdarno24.it/attualita/ferragosto-nella-foresta-di-vallombrosa-una-giornata-nella-natura-tra-alberi-e-biodiversita/",
+   "https://www.cosafareafirenze.it/visite-guidate-arboreti-sperimentali-vallombrosa/",
+   "https://en.wikipedia.org/wiki/Arboreti_di_Vallombrosa"
+  ],
+  "curation_status": "flagged",
+  "verify_notes": "Alive: iNaturalist observation 2026-05-24 at this spot. Existence: MASAF register 06/H222/FI/09 (girth 655 cm, height 36.5 m; observer's note on iNaturalist cites 650 cm, 2016 data) plus Visit Tuscany (Reggello comune tourism office) naming 'a Giant Redwood' as one of the two monumental trees of the arboreta, plus the Italian Botanical Heritage page listing a Sequoiadendron giganteum with a circumference of 23.62 ft (about 720 cm, older undated figure; conflicts with 655 cm, keep the register figure). No source dates this specimen: the arboretum was founded 1869 elsewhere or 1884 on the current site, but no source says this tree belongs to a particular planting, so age is left empty. Valdarno Post (2023, guided visit) calls the sequoias at the Belvedere 'giovanissime' with remarkable measures. Single iNaturalist photo set is all rights reserved: no use. Access is guided only, said plainly. Pin confirmed by the 10 m GPS observation, casual grade on iNaturalist.",
+  "facts_for_story": [
+   {
+    "fact": "The arboreta were created in 1869 so students of the Royal Forestry Institute could experiment with trees from other parts of the world.",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "The collection holds around 5,000 specimens in more than 700 tree and shrub species, the largest plant collection of its kind in Italy according to the Valdarno Post visit report.",
+    "url": "https://valdarnopost.it/cultura-valdarno/alla-scoperta-del-museo-a-cielo-aperto-di-vallombrosa-storia-e-curiosita-degli-arboreti-sperimentali/"
+   },
+   {
+    "fact": "Register measurement: 655 cm girth, 36.5 m tall, altitude 954 m (MASAF 06/H222/FI/09).",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "A giant redwood and a Lambert pine are the two monumental trees inside the arboreta.",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "Visits are led by Carabinieri biodiversity staff and last about 90 minutes, free.",
+    "url": "https://www.cosafareafirenze.it/visite-guidate-arboreti-sperimentali-vallombrosa/"
+   }
+  ],
+  "recognition_facts": [
+   "It stands among the sequoias of the arboretum's 'Belvedere delle sequoie' on the guided route below the abbey, and is the stout, 655 cm round trunk (the other sequoias there are young)",
+   "It is one of only two registered monumental trees inside the arboretum, the other being the Lambert pine a few minutes away on the same tour",
+   "It is the only giant sequoia among the registered trees of the arboretum, and the guide names it at the stop"
+  ],
+  "story": "Vallombrosa's arboretum began in 1869 as a classroom. Students of the Royal Forestry Institute planted trees from other parts of the world on this mountain to experiment with them, and the collection now holds around 5,000 specimens of more than 700 species, which a local visit report calls the largest plant collection of its kind in Italy.\n\nOf all of them, only two are on Italy's national register of monumental trees, and this giant sequoia is one. The register measures it at 6.55 metres round and 36.5 metres tall, at 954 metres above sea level. An older, undated botanical guide gives it about 7.2 metres round. It stands at the Belvedere delle sequoie, among younger sequoias that a guide on a 2023 visit described as very young, so the old trunk is easy to pick out.\n\nWhen was it planted? No source says. The arboretum was founded in 1869 and moved to its present ground in 1884, but nothing ties this tree to either date, so its age stays open. If you know, tell us.\n\nA visitor recorded it standing in May 2026. You can only reach it on a free guided visit of about 90 minutes, led by Carabinieri biodiversity staff, daily from June to September and on request the rest of the year. The other registered tree, a Lambert pine, is on the same tour.",
+  "how_to_recognise": "You can recognise it by the trunk, 6.55 metres round, far stouter than the young sequoias around it, with a low wooden rail ringing its base. It stands at the Belvedere delle sequoie on the guided route.",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Sequoia_gigante%2C_Arboreto_di_Vallombrosa.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Albarubescens, via Wikimedia Commons",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Sequoia_gigante,_Arboreto_di_Vallombrosa.jpg",
+   "status": "approved",
+   "width": 3120,
+   "height": 4160
+  }
+ },
+ {
+  "id": "vlb_002",
+  "name": "The Lambert Pine of the Vallombrosa Arboretum",
+  "species": "Sugar Pine (Pinus lambertiana)",
+  "masaf_code": "07/H222/FI/09",
+  "age_estimate": null,
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "girth_cm": 515,
+  "height_m": 51.5,
+  "location": {
+   "address": "Arboreti sperimentali di Vallombrosa, Via del Paradisino, Vallombrosa, Reggello (FI)",
+   "latitude": 43.731767,
+   "longitude": 11.555189,
+   "neighbourhood": "Vallombrosa"
+  },
+  "location_precision": "approximate",
+  "pin_source": "MASAF register point; the Commons photos carry exactly this coordinate, copied from the register rather than an independent fix at the trunk. iNaturalist has no usable observation within 100 m (obs 215460644, 2024, has 185 m accuracy).",
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "07/H222/FI/09",
+   "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+  },
+  "photo_candidates": [
+   {
+    "file_page": "https://commons.wikimedia.org/wiki/File:La_grandiosa_possenza_del_Pino_di_Lambert_-_Vallombrosa_Reggello.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/La_grandiosa_possenza_del_Pino_di_Lambert_-_Vallombrosa_Reggello.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Fabioarg",
+    "why_this_trunk": "Titled for the Lambert pine at Vallombrosa, taken 2021-09-21, geotag = register point. Full trunk view likely; needs the photo-judge look."
+   },
+   {
+    "file_page": "https://commons.wikimedia.org/wiki/File:Pino_di_Lambert,_Arboreto_di_Vallombrosa.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Pino_di_Lambert%2C_Arboreto_di_Vallombrosa.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Albarubescens (Wikimedia Commons user, no user page)",
+    "why_this_trunk": "Titled 'Pino di Lambert, Arboreto di Vallombrosa', 2019-07-09, geotag = register point."
+   },
+   {
+    "file_page": "https://commons.wikimedia.org/wiki/File:Pino_di_Lambert_-_Vallombrosa_Reggello_1.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Pino_di_Lambert_-_Vallombrosa_Reggello_1.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Fabioarg",
+    "why_this_trunk": "Same series, 2021-08-19; Commons holds about a dozen more of this one pine (cones, crown from below)."
+   }
+  ],
+  "access": "Guided visits only, free, about 90 minutes: daily June to September (Monday to Saturday 10:30 and 14:00, Sundays and holidays 11:00 and 15:00) from beneath the abbey's Torrione; groups of ten or more book ahead. The rest of the year on request (arboreti.vallombrosa@gmail.com, +39 055 862020). Times from 2026 reports; check before going.",
+  "transport": "A day trip from Florence: train from Santa Maria Novella to Pontassieve, then Autolinee Toscane bus 343 to Vallombrosa (45 to 60 minutes on the bus, about an hour and a quarter door to door; check the timetable).",
+  "verified_sources": [
+   "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/",
+   "https://luoghi.italianbotanicalheritage.com/en/vallombrosa-experimental-arboretums/",
+   "https://valdarnopost.it/cultura-valdarno/alla-scoperta-del-museo-a-cielo-aperto-di-vallombrosa-storia-e-curiosita-degli-arboreti-sperimentali/",
+   "https://valdarno24.it/attualita/ferragosto-nella-foresta-di-vallombrosa-una-giornata-nella-natura-tra-alberi-e-biodiversita/",
+   "https://www.cosafareafirenze.it/visite-guidate-arboreti-sperimentali-vallombrosa/"
+  ],
+  "curation_status": "flagged",
+  "verify_notes": "Alive: seen in Commons photos from 2019 and 2021 and described in a 2023 guided-visit report; no 2025/26 observation at this tree found (flag: recent alive evidence thin). Existence and species: MASAF 07/H222/FI/09 (515 cm, 51.5 m) plus Visit Tuscany, the Italian Botanical Heritage page, and Valdarno Post, which all name the Lambert pine as monumental in the arboreta. HEIGHT CONFLICT, keep all: register 51.5 m; Valdarno Post 2023 says 54 m with a girth of almost 8 m (a guide's spoken figure, implausible against the register 515 cm); Italian Botanical Heritage says over 131 ft (about 40 m) and a circumference of 19 ft (about 580 cm); Visit Tuscany gives the pine a nickname 'Nazareno' but the fetched page does not explain it (the reason is not recorded, do not invent one). A search summary quoting 47 m (Touring Club) was not seen on a page: do not use. Valdarno Post says the species holds the record for the second-largest cone in the world; Visit Tuscany notes visitors can see its cones. Pin approximate. No planting date for this specimen.",
+  "facts_for_story": [
+   {
+    "fact": "The Lambert pine is a North American species from the Rocky Mountains; Valdarno Post's guide calls it the most imposing tree of the arboretum.",
+    "url": "https://valdarnopost.it/cultura-valdarno/alla-scoperta-del-museo-a-cielo-aperto-di-vallombrosa-storia-e-curiosita-degli-arboreti-sperimentali/"
+   },
+   {
+    "fact": "The guide says the species has the second-largest pine cone in the world; the arboretum lets visitors see one of the cones.",
+    "url": "https://valdarnopost.it/cultura-valdarno/alla-scoperta-del-museo-a-cielo-aperto-di-vallombrosa-storia-e-curiosita-degli-arboreti-sperimentali/"
+   },
+   {
+    "fact": "This particular pine is nicknamed 'Nazareno' (Visit Tuscany asks why but the page gives no answer).",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "Register measurement: 515 cm girth, 51.5 m tall, altitude 970 m (MASAF 07/H222/FI/09); other sources give different heights, see verify_notes.",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "The arboreta date from 1869 (original site) or 1884 (current site, when 230 plants were moved).",
+    "url": "https://en.wikipedia.org/wiki/Arboreti_di_Vallombrosa"
+   }
+  ],
+  "recognition_facts": [
+   "It is the most imposing tree of the arboretum, a North American pine far taller than the neighbouring conifers (51.5 m in the register)",
+   "Its very long cones, among the biggest of any pine, lie under or hang in the crown, and the guide shows one",
+   "It stands a short walk from the sequoia belvedere inside the arboretum, on the guided route, locally nicknamed 'Nazareno'"
+  ],
+  "story": "Nobody agrees how tall this pine is, and every figure is enormous. Italy's national register gives 51.5 metres. A guide on a 2023 visit told the group 54. An English-language botanical guide says over 40. The girths disagree as well, from the register's 5.15 metres to the guide's spoken almost 8, and whichever number you trust, the guide who leads visitors calls it the most imposing tree in the Vallombrosa arboretum.\n\nIt is a Lambert pine, also called the sugar pine, a North American species growing here in an arboretum founded in 1869 so forestry students could experiment with trees from other parts of the world. Nobody has published when this one went in. The same guide said its species grows the second-largest pine cone in the world, and the tour shows visitors one of them.\n\nLocally it has a name, Nazareno. Tuscany's tourism site mentions the nickname and does not say where it came from. If you know, tell us that too.\n\nIt is one of only two trees inside the arboretum on the national monumental register; the other is the giant sequoia at the Belvedere a short walk away. Photographs from 2019 and 2021 show it standing, and the 2023 tour described it. You can see it only on a free guided visit of about 90 minutes, daily from June to September and on request the rest of the year.",
+  "how_to_recognise": "You can recognise it by its height, well above the neighbouring conifers, and by its long, straight, branchless lower trunk. It stands beside the path a short walk from the sequoia belvedere, on the guided route.",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Pino_di_Lambert_-_Vallombrosa_Reggello_1.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Fabioarg, via Wikimedia Commons",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Pino_di_Lambert_-_Vallombrosa_Reggello_1.jpg",
+   "status": "approved",
+   "width": 1200,
+   "height": 1600
+  }
+ },
+ {
+  "id": "vlb_003",
+  "name": "The Holy Beech of Vallombrosa",
+  "species": "European Beech (Fagus sylvatica)",
+  "masaf_code": "05/H222/FI/09",
+  "age_estimate": "roughly 120 to 150 years",
+  "age_min": 120,
+  "age_max": 150,
+  "age_basis": "source",
+  "girth_cm": 380,
+  "height_m": 22,
+  "location": {
+   "address": "Faggio Santo chapel, Circuito delle Cappelle, on the road to Secchieta, Vallombrosa, Reggello (FI)",
+   "latitude": 43.730258,
+   "longitude": 11.558194,
+   "neighbourhood": "Vallombrosa"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Cappella del Faggio Santo",
+   "radius_m": 30
+  },
+  "pin_source": "MASAF register point; the Commons photo 'Faggio secolare nel sito del Faggio Santo' carries exactly the same coordinate, copied from the register rather than an independent fix at the trunk.",
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "05/H222/FI/09",
+   "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+  },
+  "photo_candidates": [
+   {
+    "file_page": "https://commons.wikimedia.org/wiki/File:Faggio_secolare_nel_sito_del_Faggio_Santo,_Vallombrosa.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Faggio_secolare_nel_sito_del_Faggio_Santo%2C_Vallombrosa.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Albarubescens (Wikimedia Commons user, no user page)",
+    "why_this_trunk": "Titled as a century-old beech at the site of the Faggio Santo, taken 2019-07-12, geotag = register point. Needs the photo-judge look to confirm it is the registered trunk and not a neighbour."
+   }
+  ],
+  "access": "Free and open at all times, beside the surfaced road to Secchieta a few hundred metres from the abbey, next to a small chapel on the 5.5 km Circuito delle Cappelle. Mountain road; snow is possible in winter.",
+  "transport": "A day trip from Florence: train from Santa Maria Novella to Pontassieve, then Autolinee Toscane bus 343 to Vallombrosa (45 to 60 minutes on the bus; check the timetable). From the abbey it is a few hundred metres on foot along the road to Secchieta.",
+  "verified_sources": [
+   "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/",
+   "https://ecomuseomontagnafiorentina.it/siti-di-interesse/faggio-santo-vallombrosa/",
+   "https://www.feelflorence.it/en/experiences-itineraries/circuit-chapels"
+  ],
+  "curation_status": "flagged",
+  "verify_notes": "Existence: MASAF 05/H222/FI/09 (380 cm, 22 m, altitude 1032 m), Visit Tuscany (Reggello tourism: 'a shoot born from the original plant about 150 years ago', 380 cm, 22 m) and the Ecomuseo della Montagna Fiorentina page on the Faggio Santo; the chapel and legend are described by the FeelFlorence chapel-circuit page. AGE: Visit Tuscany says the tree is a shoot about 150 years old; a trail listing (not fetched, from a search summary) said about 120 years: treat as 120 to 150 and flag; the original beech of the legend is long gone. Alive: no dated 2025/26 observation found; a 2019 Commons photo shows a century-old beech at the site, the Chapel Circuit is a current tourist route. Register-only on vitality, hence flagged. Pin approximate (register point = Commons geotag).",
+  "facts_for_story": [
+   {
+    "fact": "Tradition: in March 1036 Giovanni Gualberto, founder of Vallombrosa, sheltered under an old beech; the chapel stone says it sheltered him, its crown filling suddenly with leaves.",
+    "url": "https://ecomuseomontagnafiorentina.it/siti-di-interesse/faggio-santo-vallombrosa/"
+   },
+   {
+    "fact": "The standing tree is a shoot of the original beech, about 150 years old, 380 cm round and 22 m tall.",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "It stands beside the Cappella del Faggio Santo on the Circuito delle Cappelle, a roughly 5.5 km walk around the abbey.",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "Local lore: the first beech to leaf in spring and last to lose its leaves in autumn (folk claim, tourism and trail sites).",
+    "url": "https://www.feelflorence.it/en/experiences-itineraries/circuit-chapels"
+   }
+  ],
+  "recognition_facts": [
+   "It stands beside the small Cappella del Faggio Santo, on the road from the abbey toward Secchieta, a stop on the Circuito delle Cappelle",
+   "A circular earthen bank was built round the tree after 1636, with a dated inscription at its foot",
+   "A 380 cm, 22 m beech: a shoot of the legendary original, not the saint's own tree"
+  ],
+  "story": "The beech in this legend is long gone, and the tree standing in its place grew from it. Tradition says that in March 1036 Giovanni Gualberto, the founder of Vallombrosa, sheltered under an old beech on this slope, and the stone at the chapel beside it says the bare crown filled suddenly with leaves. Reggello's tourism office describes today's tree as a shoot born from that original plant about 150 years ago; a trail listing says closer to 120. Either way it is the heir, not the saint's own tree.\n\nIt is a big heir. The national register measures it at 3.8 metres round and 22 metres tall, at 1,032 metres above sea level, where it stands next to the small Cappella del Faggio Santo. A circular earthen bank was built round the site after 1636, with a dated inscription at its foot, so people were marking this spot long before the present trunk began.\n\nLocal lore adds that it is the first beech on the mountain to leaf in spring and the last to drop its leaves in autumn. Nobody has measured that, but late October is a good time to check. The chapel is a stop on the Circuito delle Cappelle, a walk of about 5.5 kilometres round the abbey, a few hundred metres up the road towards Secchieta.",
+  "how_to_recognise": "You can recognise it as the big beech, about 3.8 metres round, inside a circular earthen bank with a dated inscription at its foot. It stands beside the small Cappella del Faggio Santo on the road from the abbey towards Secchieta.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "autumn colour",
+   "label": "late October, when the beech turns copper and russet"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Faggio_secolare_nel_sito_del_Faggio_Santo%2C_Vallombrosa.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Albarubescens, via Wikimedia Commons",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Faggio_secolare_nel_sito_del_Faggio_Santo,_Vallombrosa.jpg",
+   "status": "held",
+   "width": 3120,
+   "height": 4160
+  }
+ },
+ {
+  "id": "vlb_004",
+  "name": "The Faggione of Prato a Marcaccio",
+  "species": "European Beech (Fagus sylvatica)",
+  "masaf_code": "04/H222/FI/09",
+  "age_estimate": null,
+  "age_min": null,
+  "age_max": null,
+  "age_basis": null,
+  "girth_cm": 500,
+  "height_m": 30,
+  "location": {
+   "address": "Foresta di Sant'Antonio, Prato a Marcaccio, Reggello (FI), on trail R6 from Case di Sant'Antonio",
+   "latitude": 43.704894,
+   "longitude": 11.587425,
+   "neighbourhood": "Foresta di Sant'Antonio"
+  },
+  "location_precision": "approximate",
+  "pin_source": "MASAF register point only; no photograph geotag and no iNaturalist or OSM fix found. A trail named for the tree leads to it.",
+  "official_register": {
+   "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+   "id": "04/H222/FI/09",
+   "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+  },
+  "photo_candidates": [],
+  "recognition_facts": [
+   "It is the big beech the trail is named after: the 'Anello del Faggione' (Itinerary 8a), a circular walk of about 5 km that leaves from Case di Sant'Antonio via trail R6, the Sentiero delle Fonticine",
+   "The trunk is a union of two large shoots that grew together into one mass, about 5 m round (sources up to nearly 6 m) and about 30 m tall",
+   "It stands at about 1050 to 1076 m in a clearing called Prato a Marcaccio, inside the Sant'Antonio forest, a protected local nature area"
+  ],
+  "access": "Free and open at all times on a public forest trail in the Foresta di Sant'Antonio. The Anello del Faggione (Itinerary 8a) is about 5 km with 150 m of climb, 1.5 to 2 hours. Mountain forest; snow is possible in winter.",
+  "transport": "Realistically by car or taxi: Case di Sant'Antonio is up a forest road on the Reggello side of the Pratomagno, around 40 km from Florence. By public transport, Vallombrosa (train to Pontassieve, bus 343) still leaves a long transfer.",
+  "verified_sources": [
+   "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/",
+   "https://www.cittametropolitana.fi.it/wp-content/uploads/Itinerario_8a_Anello_del_Faggione.pdf",
+   "https://toscanareggelloturismo.altervista.org/la-foresta-santantonio/"
+  ],
+  "curation_status": "flagged",
+  "verify_notes": "Existence: MASAF 04/H222/FI/09 (500 cm, 30 m, altitude 1052 m) plus Visit Tuscany (Reggello tourism, photo credit Comune di Reggello Ufficio Ambiente: 'the Faggione stands thirty meters tall, trunk circumference of 5 meters, in the Forest of Sant'Antonio at an altitude of 1076'), plus the Citta Metropolitana di Firenze's own walking itinerary named for it (PDF; its text could not be extracted this pass, so only its title and the search description are relied on). Conflicts: girth 5 m (register, Visit Tuscany) vs nearly 6 m (a tourism page seen only in a search description); altitude 1052 vs 1076 m. Alive: no dated 2025/26 observation or photograph found; the only dated mention is a CAI Valdarno Superiore group outing on 2016-07-10 to the Faggione. It is presented as a current walk by the tourism pages and the register entry was in the 2024 ministerial update, so flagged 'register plus tourism pages, no recent sighting'. Pin approximate; no photo; Commons has nothing (the nearest file, an antler-shaped trunk 138 m away, is another tree). Distance from the Holy Beech pin is about 3 km straight line east (computed from coordinates); the road route is longer, treat as a separate stop reached by car.",
+  "facts_for_story": [
+   {
+    "fact": "Probably the largest beech on the Pratomagno, formed from two twin shoots that grew together.",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "30 m tall and 5 m round at about 1076 m altitude in the Foresta di Sant'Antonio.",
+    "url": "https://www.visittuscany.com/en/ideas/reggellos-monumental-and-record-breaking-trees/"
+   },
+   {
+    "fact": "The Citta Metropolitana di Firenze publishes a circular walk named after it, the Anello del Faggione (Itinerary 8a).",
+    "url": "https://www.cittametropolitana.fi.it/wp-content/uploads/Itinerario_8a_Anello_del_Faggione.pdf"
+   },
+   {
+    "fact": "A local group of mountain walkers made it the aim of a day outing in July 2016.",
+    "url": "https://caivaldarnosuperiore.it/events/toscana-reggello-foresta-di-santantonio-il-faggione-marcello-mancini-gabriele-piccardi/"
+   }
+  ],
+  "story": "This beech has a walk named after it. The metropolitan city of Florence publishes the Anello del Faggione, the ring of the big beech, a loop of about 5 kilometres through the Foresta di Sant'Antonio whose whole point is this one tree. Reggello's tourism office calls it probably the largest beech on the Pratomagno, the long ridge east of Florence.\n\nIt is not quite one tree. Two twin shoots grew together into a single trunk, which the national register measures at 5 metres round and 30 metres tall. One tourism page gives nearly 6 metres; the altitude is either 1,052 or 1,076 metres, depending on whose figure you read. It stands in a clearing called Prato a Marcaccio, inside a forest the comune of Reggello protects as a local nature area.\n\nNobody has published its age. If you know, tell us. The register kept it on its 2024 update, and a local mountain-walking group made it the goal of a day out in July 2016, but no recent photograph of it has surfaced, so a report from the trail would be welcome.\n\nThe walk leaves from Case di Sant'Antonio on trail R6, the Sentiero delle Fonticine, with about 150 metres of climb, an hour and a half to two hours in all. Getting to the trailhead realistically takes a car. It is up a forest road on the Reggello side of the mountain, around 40 kilometres from Florence.",
+  "how_to_recognise": "You can recognise it by a trunk made of two great shoots fused into one, about 5 metres round and 30 metres tall. It stands in the clearing of Prato a Marcaccio on the Anello del Faggione, the loop named after it.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "autumn colour",
+   "label": "October, when the beech forest turns copper and russet"
+  },
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
+ }
+]

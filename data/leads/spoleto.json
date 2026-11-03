@@ -1,0 +1,53 @@
+{
+  "city": "Spoleto",
+  "country": "Italy",
+  "city_slug": "spoleto",
+  "note": "Central Italy MASAF pass 2026-11-02. Regional sheets at montagneaperte.it/patriarchiverdi (Umbrian regional list) were the second source. Register total is a count of designations, not of trees that exist.",
+  "leads": [
+    {
+      "name": "Plane of the former Spoleto-Norcia station",
+      "species": "Platanus orientalis",
+      "latitude": 42.744928,
+      "longitude": 12.738553,
+      "masaf_code": "30/I921/PG/10",
+      "status": "lead",
+      "reason": "Regional sheet (code 74, 4.0 m, 20 m, health good) puts it in the courtyard of the old station, now a railway museum (opening hours not found, access unconfirmed). No photo or confirmed pin. MASAF says oriental plane, regional sheet says Platanus hispanica."
+    },
+    {
+      "name": "Garden of Palazzo Campello (sequoia, holm oak, Corsican pine)",
+      "species": "Sequoia sempervirens / Quercus ilex / Pinus nigra",
+      "latitude": 42.733461,
+      "longitude": 12.738689,
+      "masaf_code": "36/I921/PG/10, 37, 38",
+      "status": "blocked",
+      "reason": "Private garden: a Spoleto heritage listing says it is privately owned and would need an agreement with the owner to open; it opens only for events such as Festival dei Due Mondi. Not public (hard rule 10)."
+    },
+    {
+      "name": "Stone pine and ginkgo of Hotel dei Duchi",
+      "species": "Pinus pinea / Ginkgo biloba",
+      "latitude": 42.732808,
+      "longitude": 12.735328,
+      "masaf_code": "26/I921/PG/10, 27/I921/PG/10",
+      "status": "lead",
+      "reason": "Regional sheet puts the ginkgo (2.6 m, 20 m, the only big ginkgo in the Spoleto area) at the hotel entrance on Viale Matteotti, the remnant of the 17th-century Palazzo Ancaiani garden; the sheet thanks the owners for access, so street visibility is not established. Pines stand in the hotel's restaurant garden (guests). No photo or confirmed pin, access unconfirmed."
+    },
+    {
+      "name": "Beeches of San Pietro in Monte",
+      "species": "Fagus sylvatica",
+      "latitude": 42.7869,
+      "longitude": 12.571958,
+      "masaf_code": "15/I921/PG/10 to 19",
+      "status": "lead",
+      "reason": "Five registered beeches (up to 735 cm) in a wood at 1030 m above Spoleto's far side (about 17 km); a wood, not one collectible point, not checked for photo or pin. Unverified, not pursued within the priority cluster."
+    },
+    {
+      "name": "Downy oaks of Montebibico and Le Cese",
+      "species": "Quercus pubescens",
+      "latitude": 42.657769,
+      "longitude": 12.692658,
+      "masaf_code": "08/I921/PG/10, 33/I921/PG/10",
+      "status": "lead",
+      "reason": "Remote downy oaks (520 cm and 495 cm); not checked in this pass, no photo or pin evidence."
+    }
+  ]
+}

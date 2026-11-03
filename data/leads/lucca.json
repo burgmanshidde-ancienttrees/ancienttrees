@@ -67,6 +67,78 @@
       "lng": 10.551844,
       "status": "blocked",
       "why": "BLOCKED 2026-08-23 (depth pass): six registered trees at one address (Via di Matraia 269, San Pancrazio), 7 km north of the walls, which strongly suggests a single private villa park rather than public ground, and no source found this pass states the grounds are open to visitors. Per hard rule 10, when access cannot be stated honestly the tree waits rather than ships. Also sits beyond Lucca's roughly-30-minute public-transport day-trip boundary as far as this pass could establish (no direct bus route timed this pass). Needs both an access source and a transit check before it could be reconsidered; not pursued further this pass."
+    },
+    {
+      "name": "The plane of Viale Marconi",
+      "species": "Platanus x acerifolia",
+      "latitude": 43.849039,
+      "longitude": 10.515006,
+      "masaf_code": "06/E715/LU/09",
+      "status": "lead",
+      "reason": "No photo or confirmed pin. On the walls avenue, in the Regione Toscana list as 'Platano di viale Guglielmo Marconi' 30 m and 440 cm vs MASAF 478 cm and 34 m (conflict). Lucca's wall planes carry canker (Ceratocystis fimbriata; Sept 2026 order to fell five dangerous trees), so alive status needs a fresh check. Nearest Commons file 118 m away, not the tree. 2026-11-02 recheck: the September 2026 felling order (altopascio.info 2026-09-24) names two poplars on Via della Scogliera and three planes on the walls between the Santa Maria and San Paolino bastions; Viale Marconi is not mentioned, but no positive sign it stands either (lifecheck NONE), so left as a lead."
+    },
+    {
+      "name": "The Atlas cedar, London plane, coast redwood, ginkgo, Washingtonia and Quercus x audleyensis of Villa Grabau",
+      "species": "Cedrus atlantica, Platanus x acerifolia, Sequoia sempervirens, Ginkgo biloba, Washingtonia filifera, Quercus x audleyensis",
+      "latitude": 43.902731,
+      "longitude": 10.551844,
+      "masaf_code": "16/E715/LU/09, 17, 18, 19, 20, 21 (and camphor 12 at Via delle Ville)",
+      "status": "lead",
+      "reason": "Access now settled: Via di Matraia 269 is Villa Grabau, a 9 ha park open for paid visits (official site: November to Easter Sundays 11-13 and 14:30-17:30, Easter to 31 May Sat and Sun, June to September Fri to Sun, October Sat and Sun; phone +39 0583 406098; https://www.villagrabau.it/en/contact-us/; Garden Route says the park walk is free with a paper map, so ticket terms conflict). Fails the Italy photo-or-pin rule: no Commons file or iNaturalist record of any single tree (category Villa Grabau in Lucca holds villa, fountain, limonaia and statue views only), MASAF points are approximate and spread about 150 m. Counts as at most 2 paid entries in Lucca. Best two if a photo turns up: Atlas cedar 478 cm 34 m, coast redwood 439 cm 27 m. Park is 7 km north of the walls, transit time not verified. 2026-11-02 recheck: no second source names the cedar or plane individually (apgi.it lists the park as open, paid, only mentions 19th-century trees from the Orto Botanico), no recognition facts available from sources, lifecheck NONE; not promoted."
+    },
+    {
+      "name": "The coast redwood of Villa Querci, Saltocchio",
+      "species": "Sequoia sempervirens",
+      "latitude": 43.909947,
+      "longitude": 10.543778,
+      "masaf_code": "23/E715/LU/09",
+      "status": "blocked",
+      "reason": "Private: register field note puts it in the park of Villa Querci (Fattoria di Saltocchio), no source says the grounds are open (https://ilregistrodeglialberi.it/16951-sequoia-fattoria-saltocchio-sequoia-sempreverde-lucca-lu-toscana). Figures conflict: 680 cm measured 2024-12-27 vs 585 cm and 40 m in the Regione Toscana list. Also no photo or confirmed pin. Same villa holds Diospyros lotus 24/E715/LU/09."
+    },
+    {
+      "name": "The holm oak and Lebanon cedar of Villa Maria Teresa, San Martino in Vignale",
+      "species": "Quercus ilex, Cedrus libani",
+      "latitude": 43.8772,
+      "longitude": 10.462919,
+      "masaf_code": "13/E715/LU/09, 14/E715/LU/09",
+      "status": "blocked",
+      "reason": "Stand in the entrance garden of Villa Maria Teresa (Via per Pieve Santo Stefano 3427), now a private home with a farm and agriturismo (it.wikipedia Villa_Maria_Teresa); no source says the garden is open to non-guests. Not at the Pieve itself. Also no photo or confirmed pin. 530 cm, 29 m oak and 425 cm, 34 m cedar per MASAF."
+    },
+    {
+      "name": "The oriental plane of Vorno",
+      "species": "Platanus orientalis",
+      "latitude": 43.798767,
+      "longitude": 10.507447,
+      "masaf_code": "02/B648/LU/09",
+      "status": "blocked",
+      "reason": "Comune di Capannori places it at Villa Controni, Vorno, a private villa with no source on public access; no photo or confirmed pin. 515 cm, 25 m per MASAF."
+    },
+    {
+      "name": "The holm oak of San Gennaro",
+      "species": "Quercus ilex",
+      "latitude": 43.900594,
+      "longitude": 10.638953,
+      "masaf_code": "03/B648/LU/09",
+      "status": "blocked",
+      "reason": "Comune di Capannori places it at Villa Leone, San Gennaro, which is a guest accommodation; no source on public access; no photo or confirmed pin. 515 cm, 18 m per MASAF, 'before 1750' in the Regione Toscana list."
+    },
+    {
+      "name": "The camphor tree of San Pancrazio, Via delle Ville",
+      "species": "Cinnamomum camphora",
+      "latitude": 43.902811,
+      "longitude": 10.549711,
+      "masaf_code": "12/E715/LU/09",
+      "status": "lead",
+      "reason": "No photo or confirmed pin, access to the villa grounds not established; skipped for time. 384 cm, 22 m per MASAF."
+    },
+    {
+      "name": "The camellia of Massa Pisana",
+      "species": "Camellia japonica var. diamantina",
+      "latitude": 43.808333,
+      "longitude": 10.477897,
+      "masaf_code": "10/E715/LU/09",
+      "status": "blocked",
+      "reason": "A 9 m camellia with no girth: a shrub-scale specimen, not worth the walk."
     }
   ],
   "blocked": [

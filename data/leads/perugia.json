@@ -59,6 +59,86 @@
       "lng": 12.353722,
       "status": "lead",
       "why": "Register sheet 33/G478/PG/10, girth 327cm, only 4m tall (unusually short for the girth, worth sanity-checking the height figure). 4.54km out in Cenerente, isolated, no independent source found this pass."
+    },
+    {
+      "name": "Italian Cypresses and Small-leaved Lime, Villa del Colle del Cardinale",
+      "species": "Cupressus sempervirens / Tilia platyphyllos",
+      "latitude": 43.180083,
+      "longitude": 12.308575,
+      "masaf_code": "28,30,32/G478/PG/10",
+      "status": "lead",
+      "reason": "no photo or confirmed pin; cypress 328 cm 29 m, cypress 28 m, lime 263 cm 20 m; ordinary-looking row trees, rows 26 (Cryptomeria 70 cm, 7 m) is young, skip",
+      "pass": "2026-11-02 central Italy MASAF verify"
+    },
+    {
+      "name": "Villa Colombella group (Pinsapo, Atlas Cedar, American Sycamore, Holm Oak)",
+      "species": "Abies pinsapo, Cedrus atlantica 486 cm, Platanus occidentalis 328 cm, Quercus ilex",
+      "latitude": 43.156731,
+      "longitude": 12.480011,
+      "masaf_code": "18,19,20,21/G478/PG/10",
+      "status": "blocked",
+      "reason": "not researched for access: Villa Colombella appears to be a private estate and no source found saying a visitor can enter; atlas cedar 486 cm is the interesting one, revisit only if an open day or public road view is found",
+      "pass": "2026-11-02 central Italy MASAF verify"
+    },
+    {
+      "name": "Aleppo Pine, Sodo degli Ebrei (Via San Girolamo)",
+      "species": "Pinus halepensis",
+      "latitude": 43.099253,
+      "longitude": 12.410192,
+      "masaf_code": "06/G478/PG/10",
+      "status": "lead",
+      "reason": "no photo or confirmed pin; 487 cm, 28 m; hamlet 2 km outside the centre; no Commons or iNaturalist object within 150 m; access to the ground still unknown; earlier lead unchanged; 2026-11-02 retry: a search finds the pine only in the regional list, nothing says the ground is public or visible from the road (hamlet of private houses), so access fails",
+      "pass": "2026-11-02 central Italy MASAF verify"
+    },
+    {
+      "name": "Aleppo Pine, Ponte San Giovanni",
+      "species": "Pinus halepensis",
+      "latitude": 43.091817,
+      "longitude": 12.449694,
+      "masaf_code": "07/G478/PG/10",
+      "status": "lead",
+      "reason": "no photo or confirmed pin; 385 cm, 29 m; urban suburb, no second source or access found",
+      "pass": "2026-11-02 central Italy MASAF verify"
+    },
+    {
+      "name": "Cedar of Lebanon and Deodar, Collestrada",
+      "species": "Cedrus libani 540 cm / Cedrus deodara 446 cm",
+      "latitude": 43.076314,
+      "longitude": 12.487514,
+      "masaf_code": "37,38/G478/PG/10",
+      "status": "lead",
+      "reason": "no photo or confirmed pin; two big cedars 40 m apart, suburb 9 km east of the centre; web search found no source naming them beyond the register; no Commons or iNaturalist image within 150 m; worth a pass if a photo turns up; 2026-11-02 retry: no source gives the setting (street, park or garden), so public access is not established",
+      "pass": "2026-11-02 central Italy MASAF verify"
+    },
+    {
+      "name": "Holm Oak, Oscano",
+      "species": "Quercus ilex",
+      "latitude": 43.155197,
+      "longitude": 12.353094,
+      "masaf_code": "34/G478/PG/10",
+      "status": "lead",
+      "reason": "no photo or confirmed pin; 473 cm, 20.5 m; hamlet north-west of Perugia; no second source or access evidence",
+      "pass": "2026-11-02 central Italy MASAF verify"
+    },
+    {
+      "name": "Cedar of Lebanon, Viale Roma / Scuola San Paolo",
+      "species": "Cedrus libani",
+      "latitude": 43.104272,
+      "longitude": 12.391286,
+      "masaf_code": "36/G478/PG/10",
+      "status": "lead",
+      "reason": "no photo or confirmed pin; row 36 repeated from the earlier lead; still no source naming access; Commons geosearch rate-limited this pass; 2026-11-02: the Comune di Perugia 2017 census (ambiente.comune.perugia.it, row 4) lists it at Viale Roma 43.104259,12.391335, 370 cm, 15 m, 100 to 200 years, a second source; still no word on whether it stands on the street or inside the school grounds",
+      "pass": "2026-11-02 central Italy MASAF verify"
+    },
+    {
+      "name": "White Mulberry, Cenerente",
+      "species": "Morus alba",
+      "latitude": 43.143989,
+      "longitude": 12.353722,
+      "masaf_code": "33/G478/PG/10",
+      "status": "lead",
+      "reason": "no photo or confirmed pin; 327 cm girth but 4 m tall (pollard or register error), unchanged from the earlier lead",
+      "pass": "2026-11-02 central Italy MASAF verify"
     }
   ],
   "blocked": [
