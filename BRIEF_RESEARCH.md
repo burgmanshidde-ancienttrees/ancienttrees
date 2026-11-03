@@ -27,7 +27,7 @@ A tree qualifies if genuinely old OR visually spectacular OR historically signif
 
 - Never fabricate. Unverifiable: drop or flag, never smooth.
 - monumentaltrees.com: second source, photo identity (look, never download), names and measurements as cross-checks. Never the sole source or the discovery engine, never their text, photos or bulk data; single pages only, they 403 automation.
-- Never a location its source withholds, never private land not open to visitors, never somebody's home. Schools only with evidence the grounds are open.
+- Never a location its source withholds, never private land not open to visitors, never somebody's home unless the tree is clearly seen from the public street (then view-only, pin on the street, access says do not enter; Hidde 2026-11-04). Schools only with evidence the grounds are open.
 - Within ~30 minutes by public transport counts, with its real place name and travel time.
 - One collectible point: one tree, or a compact famous ensemble with one place to stand. Avenue or wood: `blocked`.
 - Twins metres apart fold into one entry; folded register ids in `verify_notes`.
