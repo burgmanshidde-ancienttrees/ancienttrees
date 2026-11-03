@@ -1,0 +1,191 @@
+[
+  {
+    "id": "edi_017",
+    "name": "Robert Louis Stevenson's Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "roughly 300 to 400 years",
+    "age_min": 300,
+    "age_max": 400,
+    "girth_cm": 351,
+    "location": {
+      "address": "Colinton Parish Church and Manse, Spylaw Street, Colinton",
+      "latitude": 55.90949,
+      "longitude": -3.2557,
+      "neighbourhood": "Colinton"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/",
+      "https://www.ancient-yew.org/yew_trees/colinton-manse-stevensons-yew-2347",
+      "https://commons.wikimedia.org/wiki/File:Robert_Louis_Stevenson%27s_Tree,_Colinton_-_geograph.org.uk_-_1407534.jpg"
+    ],
+    "official_register": {
+      "name": "City of Edinburgh Council, Heritage Trees of Edinburgh (archived page)",
+      "url": "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/"
+    },
+    "access": "The yew is in the private garden of Colinton Manse. Look at it from the churchyard of Colinton Parish Church next door, which is open to the public.",
+    "transport": "Lothian bus to Colinton village (Spylaw Street), then a few minutes on foot.",
+    "location_precision": "approximate",
+    "how_to_recognise": "You can recognise it as the broad old yew just over the wall from Colinton Parish Church's churchyard, about 3.5 metres round. It stands in the manse garden, and one limb still carries what is left of Stevenson's swing.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Robert_Louis_Stevenson%27s_Tree%2C_Colinton_-_geograph.org.uk_-_1407534.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Robert_Louis_Stevenson%27s_Tree,_Colinton_-_geograph.org.uk_-_1407534.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Kim Traynor, via Geograph/Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Robert_Louis_Stevenson%27s_Tree,_Colinton_-_geograph.org.uk_-_1407534.jpg",
+      "status": "approved"
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Council heritage page: Robert Louis Stevenson spent much of his childhood at Colinton Manse, played in the yew and refers to it in A Child's Garden of Verses; remains of his swing still on a limb; trunk diameter 116 cm (about 364 cm girth); thought 300-400 years old; identified as one of Scotland's top 100 heritage trees. Ancient Yew Group database: girth 351 cm (height of measurement not recorded), age note 300-400 years, earliest mention 2002. Geograph 1407534 geotag 55.90937,-3.2545, about 70 m from the database point, so the pin is approximate: the tree is in the manse garden. Alive: the photo is from about 2009 and the council page is old; lifecheck not run, treat as flagged. Not the same as the private-grounds yew listing on forestryandland.gov.scot (same tree per name). Photo (writing pass 2026-11-03): approved after viewing the pixels; the yew fills the frame in summer daylight, building behind, survives a centre crop; photo_light WEAK, not POOR. Geotag 70 m from the database point, title names the tree. curation_status set to flagged per the alive caveat in these notes.",
+    "story": "The remains of Robert Louis Stevenson's childhood swing still hang from a limb of this yew, according to the City of Edinburgh Council. Stevenson spent much of his boyhood at Colinton Manse, played in the tree, and later put it into A Child's Garden of Verses, the book of poems about being small that he wrote as a grown man, in the same years he was writing Treasure Island and Kidnapped.\n\nThe council puts the yew at 300 to 400 years old and names it among Scotland's top 100 heritage trees. Yews keep their age to themselves, so take that as an estimate rather than a birth date. Either end of it means the tree was already old when the boy found it. The two measurements on record do not quite agree. The Ancient Yew Group has it at 351 centimetres round, while the council's figure, a trunk 116 centimetres across, works out a little larger, and neither says at what height the tape went on.\n\nThe tree stands in the manse garden, which is private. The council's own advice is to look at it from the churchyard of Colinton Parish Church next door, which is open, and the view over the wall is the one to come for. Colinton village is a short bus ride from the centre.\n\nThe records and photographs we found are some years old. If you have stood here recently, tell us how it looks."
+  },
+  {
+    "id": "edi_018",
+    "name": "The Sweet Chestnut of Modern One",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "roughly 150 years",
+    "age_min": 140,
+    "age_max": 170,
+    "location": {
+      "address": "Scottish National Gallery of Modern Art (Modern One), 75 Belford Road",
+      "latitude": 55.9503,
+      "longitude": -3.2258,
+      "neighbourhood": "Dean Village / Belford"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/"
+    ],
+    "official_register": {
+      "name": "City of Edinburgh Council, Heritage Trees of Edinburgh (archived page)",
+      "url": "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/"
+    },
+    "access": "The gallery grounds are free to walk. Check the gallery's current opening hours before you go.",
+    "transport": "Lothian bus to the Gallery of Modern Art stop on Belford Road, or walk from Haymarket.",
+    "location_precision": "approximate",
+    "how_to_recognise": "You can recognise it by the single large trunk with bark spiralling round it. It stands close to the south-east corner of the gallery building; the other big trees in the grounds are beech, Turkey oak and lime.",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Single source (council heritage list, which counts as the authority). Council text: large tree near the SE corner of the gallery, a single large-diameter trunk with typical spiral growth; contemporary with the gallery, so about 150 years old (the council's own inference, no planting record cited; treat as derived, broad); catkins in July. Other mature beech, Turkey oak and lime in the grounds. Pin is an estimate from the building footprint, not the trunk; OSM nodes here are untagged Bing imports and settle nothing. Alive not checked since the council page (old). No photo found.",
+    "story": "This sweet chestnut is dated by the building beside it. The City of Edinburgh Council, which put it on its heritage tree list, calls it contemporary with the gallery that is now Modern One, the Scottish National Gallery of Modern Art, and so roughly 150 years old. That is the council's own reasoning, not a planting record. Read it as somewhere between 140 and 170 years rather than a date anybody wrote down.\n\nWhat the council singles out is the trunk. It is one large, single stem growing close to the south-east corner of the building, and its bark runs in the long ridges that twist round an older sweet chestnut like the thread of a screw. Most of the tree's neighbours on these lawns are grand in the ordinary way, mature beech, Turkey oak and lime. This one is the trunk that looks wrung out.\n\nCome in July. Sweet chestnut flowers late, long after most trees in the city have finished, and the council notes this one hung with catkins in high summer. In October the spiny burs follow.\n\nThe council list is the only source we have for this tree, and it is some years old. The grounds are free. If you walk round to that corner and find the chestnut still standing, or gone, tell us.",
+    "best_time": {
+      "months": [
+        7
+      ],
+      "kind": "catkins",
+      "label": "July, when the crown is hung with long cream catkins"
+    }
+  },
+  {
+    "id": "edi_019",
+    "name": "The Hawes Inn Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "roughly 200 years",
+    "age_min": 150,
+    "age_max": 250,
+    "girth_cm": 370,
+    "location": {
+      "address": "The Hawes Inn, 7 Newhalls Road, South Queensferry",
+      "latitude": 55.990772,
+      "longitude": -3.3849848,
+      "neighbourhood": "South Queensferry"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/",
+      "https://ancient-yew.org/yew_trees/hawes-inn-2349"
+    ],
+    "official_register": {
+      "name": "City of Edinburgh Council, Heritage Trees of Edinburgh (archived page)",
+      "url": "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/"
+    },
+    "access": "In the Hawes Inn's garden, open to customers; the tree can also be seen from the public footpath.",
+    "transport": "Day trip within the city to South Queensferry: train from Edinburgh Waverley to Dalmeny, then a walk down to the shore.",
+    "location_precision": "approximate",
+    "how_to_recognise": "You can recognise it by its shape: a broad, many-stemmed yew, wider than it is tall, about 3.7 metres round at the base. It stands in the garden of the Hawes Inn on the shore of the Forth.",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "verify_notes": "Council: approx 200 years old, one of the largest yews in Edinburgh, diameter 173 cm; Walter Scott placed the inn in The Antiquary and Robert Louis Stevenson wrote part of Kidnapped there; the tree existed when he stayed. Ancient Yew Group: girth 370 cm at the base, multi-stemmed, probably early Victorian, not particularly tall. The two figures are not the same measurement (173 cm diameter would be about 540 cm girth; the database figure is lower), so both are given and the girth used is the database one. The 'in existence in Stevenson's time' claim is the council's and the database's. Pin is the database point at the inn. Alive: sources old; lifecheck not run. No photo found.",
+    "story": "Robert Louis Stevenson wrote part of Kidnapped at the Hawes Inn, and both the City of Edinburgh Council and the Ancient Yew Group say this yew was already growing in its garden when he stayed. The inn had been in literature before him. Walter Scott set scenes of The Antiquary here, in a novel published in 1816.\n\nWhether the yew was there for Scott is a closer call. The council puts it at about 200 years old and calls it one of the largest yews in Edinburgh. The Ancient Yew Group thinks it probably early Victorian, which would make it a little younger than Scott's book. Neither has a planting record, so the honest answer is somewhere between 150 and 250 years.\n\nThe measurements disagree too, and for a reason. This is not a single-trunked tree but a cluster of stems, broad rather than tall. The Ancient Yew Group put a tape round the base and got 370 centimetres. The council gives a diameter of 173 centimetres, which would mean a much fatter tree. On a yew with several stems, where you hold the tape decides the number.\n\nThe garden belongs to the pub and is open to its customers, and the council notes you can also see the tree from the public footpath. The inn sits on the shore of the Forth at South Queensferry, at the north-western edge of the city."
+  },
+  {
+    "id": "edi_020",
+    "name": "The Four Disciples of Malleny",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "nearly 400 years",
+    "age_min": 300,
+    "age_max": 400,
+    "location": {
+      "address": "Malleny Garden, Bavelaw Road, Balerno",
+      "latitude": 55.884379,
+      "longitude": -3.3364279,
+      "neighbourhood": "Balerno"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/",
+      "https://www.ancient-yew.org/yew_trees/malleny-gardens-balerno-2350",
+      "https://commons.wikimedia.org/wiki/File:Malleny_Gardens_Yew_Trees.jpg"
+    ],
+    "official_register": {
+      "name": "City of Edinburgh Council, Heritage Trees of Edinburgh (archived page)",
+      "url": "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/"
+    },
+    "access": "National Trust for Scotland garden. Paid entry for non-members and seasonal opening; check nts.org.uk for current hours.",
+    "transport": "Lothian bus to Balerno, then a short walk to the garden on Bavelaw Road.",
+    "location_precision": "approximate",
+    "how_to_recognise": "You can recognise them as the four huge clipped yews standing together in the middle of Malleny's walled garden, tall rounded columns of dark green above the flower borders.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Malleny_Gardens_Yew_Trees.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Malleny_Gardens_Yew_Trees.jpg",
+      "license": "CC BY 2.0",
+      "attribution": "the yes man, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Malleny_Gardens_Yew_Trees.jpg",
+      "status": "approved"
+    },
+    "curation_status": "ai_generated",
+    "verify_notes": "Council and Ancient Yew Group both: the four clipped yews, known as the Four Disciples, are thought nearly 400 years old; eight similar trees (twelve originally, 'the apostles') were felled in 1961. Other sources (search results only, not fetched) give the name as Four Apostles/Evangelists and say they were planted with the hedge in the early 17th century to mark the Union (1603 or 1707 unclear, not verified). Ensemble with one place to stand; clipping needs a hydraulic lift in alternate years (search summary only, unverified). No girth in any source. Commons photo geotag 55.885306,-3.337944, about 100 m from the database point; the pin is garden level. Photo status needs a pixel check. Photo (writing pass 2026-11-03): approved after viewing the pixels; the clipped yews fill the left two thirds in summer daylight and colour, unmistakably this ensemble; heavily saturated processing, but the subject is clear and a centre crop keeps the yews.",
+    "story": "There were twelve of them once, and in 1961 eight were cut down. The four that survive in the walled garden at Malleny are known as the Four Disciples, and both the City of Edinburgh Council and the Ancient Yew Group think they are nearly 400 years old. The original dozen were the apostles. You will also find them called the Four Apostles or the Four Evangelists, depending on who is telling it.\n\nThey are clipped, which is what makes them strange. A yew left alone at this age goes broad and ragged. These four are kept as tall, dense, rounded columns, so four trees close to four centuries old look like furniture the size of a house. Nobody has published a girth for any of them. Why eight were felled in 1961 our sources do not say.\n\nThe garden belongs to the National Trust for Scotland and sits on the edge of Balerno, at the south-western foot of the city. Entry is paid for non-members and opening is seasonal, so check the Trust's own page before you set out. Once inside, you cannot miss them. They stand together in the middle of the walled garden, four dark green shapes over the borders."
+  },
+  {
+    "id": "edi_021",
+    "name": "The Redford Wood Redwood",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "about 115 years",
+    "age_min": 100,
+    "age_max": 120,
+    "location": {
+      "address": "Redford Wood, off Redford Road by Redford Bridge, Colinton",
+      "latitude": 55.9049,
+      "longitude": -3.2398,
+      "neighbourhood": "Colinton / Dreghorn"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/",
+      "https://production.blipfoto.com/entry/2305821284623191368"
+    ],
+    "official_register": {
+      "name": "City of Edinburgh Council, Heritage Trees of Edinburgh (archived page)",
+      "url": "https://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/"
+    },
+    "access": "Free, open woodland. Enter from Redford Road next to Redford Bridge; paths run round the wood.",
+    "transport": "Lothian bus along Colinton Road or Redford Road, then walk; the nearest stop is not confirmed.",
+    "location_precision": "approximate",
+    "how_to_recognise": "You can recognise it as the giant redwood standing in the open at the southern end of Redford Wood, north-west of Dreghorn Barracks; the wood's other redwoods stand among the trees.",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Council: a good collection of veteran trees (oak, beech, lime, ash, sycamore, yew) and several giant redwoods; the one in the open ground at the southern end is 'a particularly fine specimen' planted by the Prince of Siam on finishing training at the nearby barracks, 'approximately 100 years ago' (council, c.2012). A personal Blipfoto post (1 May 2017) gives 1909 and says it is the only redwood positively tied to a visitor, others of similar girth, no measurements. Conflict-free but both soft; the planting date is as reported, not documented. Pin is the Blipfoto map point for the wood, not the trunk: low confidence. Wood is a collection, but the council singles out this tree. No photo found; Dreghorn/Redford barracks are earmarked for disposal, so the surroundings may change.",
+    "story": "A prince of Siam is said to have planted this giant sequoia when he finished his military training at the barracks next to Redford Wood. That is how the City of Edinburgh Council told it on its heritage tree list, around 2012, putting the planting at approximately a hundred years before. A walker's account from 2017 gives the year as 1909. Neither cites a document, so treat the prince and the date as the story the tree carries rather than a record, and the age as somewhere around 100 to 120 years.\n\nIt is not alone. Redford Wood holds several giant redwoods of similar girth, along with veteran oak, beech, lime, ash, sycamore and yew. The council picked this one out as a particularly fine specimen, and the 2017 account says it is the only redwood here tied to the person who planted it. The one you want stands in the open ground at the southern end of the wood, north-west of Dreghorn Barracks.\n\nThe wood is free and open, entered from Redford Road next to Redford Bridge, with good paths round it. Our pin marks the wood, not the trunk, so walk to the southern end and look for the redwood standing clear of the others. The barracks beside it are due to be sold, which may change the ground around the tree."
+  }
+]

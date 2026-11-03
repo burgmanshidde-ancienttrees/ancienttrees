@@ -15211,6 +15211,54 @@
       "tokens": 244346,
       "trees": 20,
       "note": "20 stories and recognition lines, place fields for Sierra de Grazalema, Sierra de Cazorla, Las Alpujarras, Sierra de Aracena and the four live cities; cut once by the usage limit and resumed. Preflight then held two Grazalema trees (Ocuri olive: booked visits only; Zurraque oak: no path), so 18 ship. A translate pass for the four es overlays follows (not counted here). Dispatcher (sheet fetch and parse, one photo viewed and approved, builder, tests) about 200k by estimate. All in about 0.95M tokens, roughly 53k a tree."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "edinburgh (uk)",
+      "tokens": 170604,
+      "trees": 5,
+      "note": "From zero (Hidde named the UK 2026-11-02). Archived council Heritage Trees list as the naming body; Colinton, Hawes Inn, Malleny, Modern One, Redford Wood. Dalkeith's Michael oak and the rest of the council list to leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "birmingham-uk",
+      "tokens": 137747,
+      "trees": 0,
+      "note": "Nothing ships: no named veteran with two sources in Sutton Park, the Botanical Gardens, Aston, Cannon Hill or the churchyards. Northfield and Cofton Hackett yews to leads. Angle closed."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "milton-keynes+aylesbury",
+      "tokens": 149931,
+      "trees": 2,
+      "note": "Milton Keynes 2 (Linford Lime with OSM pin from the Parks Trust, Howe Park crab apple). Aylesbury 0, stopped after one pass."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "wolverhampton+west-bromwich+cannock-chase",
+      "tokens": 201982,
+      "trees": 4,
+      "note": "Cut by the usage limit and resumed. Tettenhall and Codsall yews, Shugborough's Great Yew, Brocton's Groot Tree. West Bromwich 0."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "glasgow (uk, second pass)",
+      "tokens": 215699,
+      "trees": 4,
+      "note": "Cut by the usage limit and resumed. Cadzow Oaks (Chatelherault), Covenanters Oak and Dalzell yews (Motherwell), John Knox's Yew (Finlaystone); Craigends Yew delivered too but already live as cra_001, dropped."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "uk (edinburgh, glasgow, wolverhampton, cannock-chase, milton-keynes)",
+      "tokens": 188990,
+      "trees": 15,
+      "note": "15 stories, 5 Commons/Geograph photos approved after viewing, 2 held (dusk light; a 1981 slide). Place fields for 3 new places and rewritten intros for Edinburgh and Glasgow. Held for the pace in scripts/build_uk.py. All in with dispatcher about 1.15M tokens, roughly 77k a tree."
     }
   ]
 }

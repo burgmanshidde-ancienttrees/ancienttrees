@@ -1,0 +1,51 @@
+{
+ "leads": [
+  {
+   "name": "Northfield churchyard yew (St Laurence)",
+   "species": "Yew (Taxus baccata)",
+   "city": "Birmingham",
+   "lat": 52.4083,
+   "lon": -1.9647,
+   "reason": "One source only (Ancient Yew Group tree 7124, 'Notable', girth 400 cm at 1 m, taken from Street View and unverified, earliest mention a 1921 photograph). No age basis, no photo, no coordinate beyond churchyard grid ref SP0255079342. Churchyard public. Could ship as approximate with location_site if a second source or a Geograph photo of the yew turns up.",
+   "how_to_recognise": "A twisted yew at the top of the steps leading into St Laurence church (AYG Street View note).",
+   "sources": [
+    "https://www.ancient-yew.org/yew_tree_database/northfield/",
+    "https://www.ancient-yew.org/yew_trees/northfield/"
+   ]
+  },
+  {
+   "name": "Cofton Hackett fallen yew (St Michael and All Angels)",
+   "species": "Yew (Taxus baccata)",
+   "city": "Birmingham (day trip, Cofton Hackett, Worcestershire; transport time not verified)",
+   "reason": "AYG class 'Ancient', girth 5-7 m, fallen male yew SW of the 14th-century church, visited 2002 (Tim Hills); 'reputed more than 800 years old' per a 1946 rector quote relayed by AYG text on a blog mirror. One source, last visit 2002, not alive-checked, outside the city, 30-minute public transport not confirmed.",
+   "how_to_recognise": "Fallen, horse-shoe shaped yew lying SW of the church, per AYG.",
+   "sources": [
+    "https://www.ancient-yew.org/yew_tree_database/cofton-hackett/"
+   ]
+  },
+  {
+   "name": "Highbury Park yew (Moseley)",
+   "species": "Yew (Taxus baccata)",
+   "city": "Birmingham",
+   "reason": "Only a local blog (coppicing.blogspot.com/2016/02/the-yew.html) mentions a single yew of significant age near the old Highbury estate quadrangle of yews; no age, girth, coordinate or register. Blog is not a source.",
+   "sources": [
+    "https://coppicing.blogspot.com/2016/02/the-yew.html"
+   ]
+  },
+  {
+   "name": "Acocks Green Oak (Arden Road, B27)",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "city": "Birmingham",
+   "reason": "Street oak standing in the road; only a paywalled Substack post (2023) and a search summary; no age, girth or coordinate seen on a fetched page.",
+   "sources": [
+    "https://thestreettree.substack.com/p/34-acocks-green-oak"
+   ]
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Cannon Hill Park burnt oak (c. 250 years)",
+   "reason": "Reported set on fire 2019 and to be cut down (Express & Star via search summary; page itself not fetched, Cloudflare). Not alive-confirmed."
+  }
+ ]
+}

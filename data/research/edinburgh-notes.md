@@ -1,0 +1,7 @@
+
+# Edinburgh deepen pass, 2026-11-02
+- Naming body found: City of Edinburgh Council 'Heritage Trees of Edinburgh' (52 trees listed, 16 highlighted), page now gone from edinburgh.gov.uk (404); archived copy: http://web.archive.org/web/2012/http://www.edinburgh.gov.uk/HeritageTrees/ . Highlighted 16: Comely Bank planes, Craigmillar yews (live), Lauriston Castle (live), GoMA chestnut, Barnton Gate Oak, St Cuthbert's Camperdown Elm (live), Colinton Yew, Dreghorn/Redford Wood, Malleny Four Disciples, Hawes Inn Yew, Corstorphine Sycamore (live), Cramond Sycamore, Hermitage of Braid (live), Cammo (live), Duddingston Estate, Norton House. The other 36 trees of the inventory are not published; ask the council (FOI) or search for the tree trail.
+- Hosts: scottishfield.co.uk, scotsman.com, inkl.com 403 to fetchers; nominatim blocked by policy; archive.org availability API rate-limited (429) but the direct web/2012/ URL worked.
+- OSM natural=tree nodes in Edinburgh/Dalkeith parks are untagged Bing imports and identify nothing. No iNaturalist hits for 'Michael Oak'.
+- The Woodland Trust page was fetched once before the off-limits rule registered for this pass; its figures for The Michael appear only in the lead, flagged as not to be cited. Ignore and recheck from independent sources.
+- Not found: any yew in Greyfriars, Canongate, Duddingston, Cramond, Currie churchyards with a source; Queen Mary's Thorn (Canmore 52132) not checked.

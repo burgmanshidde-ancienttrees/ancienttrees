@@ -43,6 +43,35 @@
    "status": "lead",
    "species": "Yew (Taxus baccata)",
    "why": "Dated 1715, one of two surviving trees from Sir John Clerk's time, now inside a grove of later yews planted as an entrance feature. Friends of Cammo (Simon Gillam, secretary) by mail 2026-10-13, in reply to our missing-tree ask; they say the dates are what they were told, origin unknown. Needs a pin and a second source."
+  },
+  {
+   "name": "The Michael (oak), Dalkeith Country Park",
+   "status": "lead",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "why": "Multi-stemmed oak, girth 10.3 m at about 0.8 m up, age claim 'up to 1,000 years' (all from the Woodland Trust survey, which we do not cite). Independent: Blipfoto post 2024-10-14 (blipfoto.com/entry/3292640774797135849) puts it just off the footpath 'almost hidden by other trees' in Dalkeith Park, and Scottish Field covers the oaks (403 to fetchers). Park open daily 07:00-19:00 with a car park charge; the oak-wood trail is closed part of winter. Lacks a pin and a source of its own; a visit report with GPS or an iNaturalist fix would settle it. Strong tree: take it first when a pin turns up."
+  },
+  {
+   "name": "Yew, Dalkeith Country Park (Ancient Yew Group tree 6991)",
+   "status": "lead",
+   "species": "Yew (Taxus baccata)",
+   "why": "Girth 443 cm at 120 cm, coordinates 55.9007903,-3.0703159, visited 2023-07-31, category Notable (ancient-yew.org/yew_trees/dalkeith-country-park/). Single source, no age or access given."
+  },
+  {
+   "name": "The Portal Tree, Mavisbank (rowan)",
+   "status": "lead",
+   "species": "Rowan (Sorbus aucuparia)",
+   "why": "Rowan bent into an archway in the grounds of Mavisbank House, Loanhead; second in the Woodland Trust Tree of the Year 2022 vote (Scottish Daily Express). No age, no coordinate, and whether the grounds can be walked is unclear (house is a ruin; estate walks reported by a walker blog). Needs access and a pin."
+  },
+  {
+   "name": "Wilfred Owen Sycamore, Craiglockhart (Edinburgh Napier)",
+   "status": "lead",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "why": "Over 100 years old, UK Tree of the Year shortlist (STV). Stands at the university's Craiglockhart campus; public access to the grounds not established and no pin found."
+  },
+  {
+   "name": "Duddingston Estate, Norton House conifer grove, Dreghorn Veterans (rest of the council list)",
+   "status": "lead",
+   "why": "Council list entries seen only as the archived page text: Duddingston Estate (private golf course, public right of way), Norton House Hotel conifer grove (hotel grounds, access unclear). Not worked this pass."
   }
  ],
  "blocked": [
@@ -53,6 +82,18 @@
   {
    "name": "The Himalayan Cedar of RBGE (planted for Prince Albert Edward's visit)",
    "reason": "Dead. A roughly 30m Himalayan cedar (Cedrus deodara), planted about 166 years ago to mark a visit by Queen Victoria's eldest son, was recently felled by Storm Eowyn (source: BBC, feeds.bbci.co.uk/news/articles/ce3n2qkkd9eo, 'We're devastated at losing Edinburgh's tallest tree'). Would otherwise have been an excellent candidate for the RBGE cluster."
+  },
+  {
+   "name": "Barnton Gate Oak, 41 Barnton Avenue South",
+   "reason": "Council list: about 250 years old, in the front garden of a house, visible from the road. Somebody's home; hard rule 10, do not ship."
+  },
+  {
+   "name": "The Cramond Sycamore, Old Schoolhouse, Cramond Glebe Road",
+   "reason": "Council list: old pollard, view from the road only; no access to the house and garden where it stands. Private home; do not ship."
+  },
+  {
+   "name": "Comely Bank London Planes",
+   "reason": "Council list: a row of sixteen street trees. Avenue, not a collectible point."
   }
  ]
 }

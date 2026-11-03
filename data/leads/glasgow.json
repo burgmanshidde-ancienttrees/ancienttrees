@@ -1,56 +1,108 @@
 {
- "leads": [
-  {
-   "name": "Pollok Beech (the Wishing Tree), Pollok Country Park",
-   "approx_location": "behind Pollok House, Pollok Country Park (no coordinate fetched)",
-   "reason": "alive status unproven and sources conflict. Friends of Glasgow Botanic Gardens (2018-04-06): about 250 years old, burned out by vandals about 2017, split in two, sparse new growth, cuttings taken. Glasgow City Council Pollok heritage trail (via search summary, PDF 403): blew down in the March 1982 gales and lives on from a layered branch. No report from 2019 onward found. Wikipedia: 7 m girth at grade, thought 250 years old. Needs a dated recent photo or council statement, plus a pin; lifecheck NONE at a guessed coordinate.",
-   "sources": [
-    "https://glasgowbotanicgardens.com/2018/04/06/once-more-unto-the-beech/",
-    "https://en.wikipedia.org/wiki/Pollok_Country_Park",
-    "https://glasgow.gov.uk/media/3644/Pollok-Country-Park-HT/pdf/Pollok_Country_Park_HT.pdf"
-   ]
-  },
-  {
-   "name": "Large Oak near Pollok House (planted about 1680)",
-   "approx_location": "Pollok House grounds",
-   "reason": "only evidence is a row in the planting-date table of the Pollok Park Conservation Area Appraisal 2016 (glasgow.gov.uk, via search summary); no individual identification, pin, girth or photograph. No photo or exact pin in reach.",
-   "sources": [
-    "https://glasgow.gov.uk/media/1608/Pollok-Park-Conservation-Area-Appraisal/pdf/Pollok_Park_Conservation_Area_Appraisal.pdf"
-   ],
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kelvingrove Park London plane (claimed largest in Glasgow)",
-   "reason": "no source found for any named or largest plane in Kelvingrove; searches returned only the Suffragette Oak (already gla_002) and felled ash. Claim must not be repeated.",
-   "sources": []
-  },
-  {
-   "name": "Wallace Oak (Elderslie), companion to gla_006",
-   "reason": "context only: lead for the story of gla_006; the oak itself is dead (see blocked).",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Wallace_Oak_(Elderslie)"
-   ]
-  }
- ],
- "blocked": [
-  {
-   "name": "Wallace Oak, Elderslie",
-   "reason": "dead: fell in a storm in 1856 (Wikipedia; SYTHI)",
-   "wikidata": "Q80488954"
-  },
-  {
-   "name": "Glasgow Botanic Gardens Weeping Ash planted 1818",
-   "reason": "felled after disease (search result, Botanic Gardens); dead",
-   "sources": []
-  },
-  {
-   "name": "Darnley Sycamore and Argyle Street Ash",
-   "reason": "already published as gla_001 and gla_005; not re-verified this pass (the pass found a Yelp/Wikipedia/Glasgow Guardian trail for the ash but no new facts needed). Darnley storm-damage status after Eowyn NOT checked: recommend a lifecheck by the next pass.",
-   "sources": [
-    "https://archivisthistoryblog.wordpress.com/2025/01/25/the-old-plane-tree-of-darnley/"
-   ]
-  }
- ],
- "notes": "Pass 2026-10-22. No Woodland Trust Ancient Tree Inventory data used. Improvement Service TPO layer, Necropolis, Botanic Gardens (beyond the felled ash) and Bellahouston not researched: searches returned nothing and the pass stopped at the single verified tree; hosts: glasgow.gov.uk media PDFs return 403 to WebFetch, no PDF tools on the runner (use curl plus a text extractor)."
+  "leads": [
+    {
+      "name": "Pollok Beech (the Wishing Tree), Pollok Country Park",
+      "approx_location": "behind Pollok House, Pollok Country Park (no coordinate fetched)",
+      "reason": "alive status unproven and sources conflict. Friends of Glasgow Botanic Gardens (2018-04-06): about 250 years old, burned out by vandals about 2017, split in two, sparse new growth, cuttings taken. Glasgow City Council Pollok heritage trail (via search summary, PDF 403): blew down in the March 1982 gales and lives on from a layered branch. No report from 2019 onward found. Wikipedia: 7 m girth at grade, thought 250 years old. Needs a dated recent photo or council statement, plus a pin; lifecheck NONE at a guessed coordinate.",
+      "sources": [
+        "https://glasgowbotanicgardens.com/2018/04/06/once-more-unto-the-beech/",
+        "https://en.wikipedia.org/wiki/Pollok_Country_Park",
+        "https://glasgow.gov.uk/media/3644/Pollok-Country-Park-HT/pdf/Pollok_Country_Park_HT.pdf"
+      ]
+    },
+    {
+      "name": "Large Oak near Pollok House (planted about 1680)",
+      "approx_location": "Pollok House grounds",
+      "reason": "only evidence is a row in the planting-date table of the Pollok Park Conservation Area Appraisal 2016 (glasgow.gov.uk, via search summary); no individual identification, pin, girth or photograph. No photo or exact pin in reach.",
+      "sources": [
+        "https://glasgow.gov.uk/media/1608/Pollok-Park-Conservation-Area-Appraisal/pdf/Pollok_Park_Conservation_Area_Appraisal.pdf"
+      ],
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kelvingrove Park London plane (claimed largest in Glasgow)",
+      "reason": "no source found for any named or largest plane in Kelvingrove; searches returned only the Suffragette Oak (already gla_002) and felled ash. Claim must not be repeated.",
+      "sources": []
+    },
+    {
+      "name": "Wallace Oak (Elderslie), companion to gla_006",
+      "reason": "context only: lead for the story of gla_006; the oak itself is dead (see blocked).",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wallace_Oak_(Elderslie)"
+      ]
+    },
+    {
+      "name": "Mugdock Country Park yew (Ancient Yew Group tree 2696)",
+      "approx_location": "Mugdock Country Park, Stirlingshire, 55.971275, -4.332153 (Ancient Yew Group map link)",
+      "reason": "Ancient Yew Group database lists girth 478 cm, no date, no height, no photo, no description of where in the park; a single database row. Needs a second source and a placeable spot; Mugdock is in Stirling council area, about 40 min by bus (not verified).",
+      "sources": [
+        "https://www.ancient-yew.org/yew_tree_database/mugdock-country-park/"
+      ]
+    },
+    {
+      "name": "Kelvingrove Park large trees (London plane near Lord Kelvin statue, narrow-leaved ash pair)",
+      "approx_location": "Kelvingrove Park, near the Lord Kelvin statue",
+      "reason": "A 2015 walking-forum post calls a plane near the Kelvin statue 'possibly (tbc) the largest in Glasgow'; the Glasgow Natural History Society 2015 Kelvingrove excursion report points the other way and says the biggest girth in the park is one of a pair of narrow-leaved ash. No measurement in either; neither fetched in full. Not publishable as a superlative.",
+      "sources": [
+        "https://www.glasgownaturalhistory.org.uk/newsletter/Kelvingrove%20excursion%202015.pdf",
+        "https://www.walkhighlands.co.uk/Forum/viewtopic.php?p=298838"
+      ]
+    },
+    {
+      "name": "Pollok Park veteran parkland trees (Deerpark, Driplea) and Pollok Beech mound",
+      "approx_location": "Pollok Country Park: Deerpark and Driplea grazed parks, woodland garden east of Pollok House",
+      "reason": "HES inventory GDL00317 says veteran parkland trees survive as individuals, roundels and a copse in Deerpark and Driplea, and the Pollok Beech stands on a mound in the woodland garden east of the house; no girths or individual trees named. Beggar's Tree blew down 1982. Pollok Beech lead above stays unresolved.",
+      "sources": [
+        "https://portal.historicenvironment.scot/designation/GDL00317"
+      ]
+    },
+    {
+      "name": "John Knox's Yew, Finlaystone House (Langbank, Renfrewshire)",
+      "approx_location": "Finlaystone Estate, Langbank, Renfrewshire (no coordinate fetched)",
+      "reason": "Named in an Ancient Yew Group presentation (Holy Supper under the yew, 1556) seen only in a search summary; not fetched, access to the estate grounds (a private estate with a visitor garden) and tree's condition not checked.",
+      "sources": [
+        "https://www.ancienttreeforum.org.uk/wp-content/uploads/2026/07/Paul-Greenwood-Presentation.pdf"
+      ]
+    },
+    {
+      "name": "Wallace Oak sapling, Fountain Gardens, Paisley",
+      "approx_location": "Fountain Gardens, Paisley",
+      "reason": "offspring of the Elderslie oak, young tree (search summary only); not old enough",
+      "sources": []
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Wallace Oak, Elderslie",
+      "reason": "dead: fell in a storm in 1856 (Wikipedia; SYTHI)",
+      "wikidata": "Q80488954"
+    },
+    {
+      "name": "Glasgow Botanic Gardens Weeping Ash planted 1818",
+      "reason": "felled after disease (search result, Botanic Gardens); dead",
+      "sources": []
+    },
+    {
+      "name": "Darnley Sycamore and Argyle Street Ash",
+      "reason": "already published as gla_001 and gla_005; not re-verified this pass (the pass found a Yelp/Wikipedia/Glasgow Guardian trail for the ash but no new facts needed). Darnley storm-damage status after Eowyn NOT checked: recommend a lifecheck by the next pass.",
+      "sources": [
+        "https://archivisthistoryblog.wordpress.com/2025/01/25/the-old-plane-tree-of-darnley/"
+      ]
+    },
+    {
+      "name": "Covenanters Oak girth, age and species figures",
+      "reason": "figures only surfaced via the Woodland Trust Ancient Tree Inventory, which is off limits; the tree itself is delivered as gla_009 without those numbers"
+    },
+    {
+      "name": "Wallace Oak, Port Glasgow (Wikidata Q80488957)",
+      "reason": "dead: fell in a storm on 29 June 1992; remains dried out and moved (dendrochronicle.co.uk; press reports); never ship"
+    },
+    {
+      "name": "The Craigends Yew, Houston",
+      "reason": "duplicate: already live as cra_001 (data/cities); verified again by the 2026-11-02 UK pass and dropped",
+      "date": "2026-11-03"
+    }
+  ],
+  "notes": "Pass 2026-10-22. No Woodland Trust Ancient Tree Inventory data used. Improvement Service TPO layer, Necropolis, Botanic Gardens (beyond the felled ash) and Bellahouston not researched: searches returned nothing and the pass stopped at the single verified tree; hosts: glasgow.gov.uk media PDFs return 403 to WebFetch, no PDF tools on the runner (use curl plus a text extractor)."
 }
