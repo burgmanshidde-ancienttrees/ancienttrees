@@ -207,8 +207,8 @@
       },
       "location": {
         "address": "Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
-        "latitude": 41.36731,
-        "longitude": 2.15273,
+        "latitude": 41.36690322469188,
+        "longitude": 2.152224885352358,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "story": "Barcelona's biggest tree grows in a hole nobody visits. The Sot de l'Estany is a former quarry pit inside the city's historic botanical garden, deep enough and damp enough to work like a greenhouse, and this wingnut has used that shelter to reach roughly 40 metres, a height the city's own catalogue admits it struggled to measure with standard equipment because the surrounding walls block a laser sightline. The tree is a Rehder's wingnut, a deliberate hybrid between a Caucasian and a Chinese species first crossed in 1908 by Alfred Rehder, a horticulturist at Boston's Arnold Arboretum, which makes this specimen barely a decade or two younger than the hybrid itself. It is the only tree of its kind recorded in Barcelona, and likely for a considerable distance beyond it. In April 2025 the Catalan government named it one of only four monumental trees in the entire city, all four sharing this same ravine. Visitors to the botanical garden rarely find their way down into the Sot; the tree that beats every other in Barcelona for size stands in the one corner of the garden most people walk straight past.",
@@ -270,7 +270,13 @@
           "note": "Was the lead until 2026-11-03, moved to the strip when the Amics' own photograph arrived (unique_photo() reads the lead only)."
         }
       ],
-      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02). 2026-11-03: pin moved 62 m to the city register's coordinate for no. 99400637930 ('Sector de l'estany'), beside the other three tall trees; the OSM node it stood on put it toward the Sot de la Masia. Still approximate.",
+      "pin_source": {
+        "kind": "register",
+        "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "date": "2026-11-03",
+        "moved_m": 62
+      }
     },
     {
       "id": "bcn_006",

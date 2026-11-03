@@ -88,7 +88,7 @@ For Hidde: the next app build carries the ambassador seat on the person's row.
 
 **Kept:** the other fourteen photographs (Atlas cedars, Acacia caven in flower, beech, the giant Ephedra liana that has felled three pines, the cycad group, fan palm, Canary palm, mastic, tamarisk, Teline, Ephedra fragilis, a second Acacia) are leads in data/leads/barcelona.json with the booklets' facts, the files in out/pere-2026-11-02/ on the Mac and in the mail. One file, "Fraxinus angustifolia2.jpg", is a Google Street View screenshot and was not used. The two male ginkgos are young (25 years in 2017) and stay unpublished.
 
-**For Hidde:** the reply to Pere Vives is rewritten as "they are online now" with the links, in drafts/reply-pere-vives-photos-2026-11-02.md; it asks how the Amics want to be named under the photographs. Waits for your word, nothing sent.
+**Sent, on Hidde's word:** the reply to Pere Vives in his thread, in Catalan, with the eight live links and one ask, how the Amics want to be named under the photographs. Their answer changes the `attribution` on the twelve photographs. Later the same day the wingnut's pin (bcn_005) moved 62 m to the city register's coordinate, beside the other three tall trees; the OSM node it stood on had put it toward the Sot de la Masia.
 
 ## 2026-11-03 session: London, 16 trees written and held for the pace (32 to 48 once built)
 
