@@ -224,7 +224,7 @@ struct TreeMap: UIViewRepresentable {
         // again whenever the answer changes, so a yes given to the first-open
         // question now puts the dot on this map too.
         map.showsUserLocation = false
-        map.minimumZoomLevel = Self.worldMinZoom
+        map.minimumZoomLevel = MapLayers.worldMinZoom
         context.coordinator.watchPermission(for: map)
         map.logoView.isHidden = true          // our own attribution sits in the sheet
         // Hidden AND out of the accessibility tree. isHidden alone left both

@@ -2579,7 +2579,7 @@ def check_every_map_shows_one_world():
     if swift.exists():
         src = swift.read_text()
         am = re.search(r"static let worldMinZoom\s*=\s*(\d+(?:\.\d+)?)", src)
-        if not am or "map.minimumZoomLevel = Self.worldMinZoom" not in src:
+        if not am or "map.minimumZoomLevel = MapLayers.worldMinZoom" not in src:
             problems.append("TreeMap.swift no longer sets minimumZoomLevel = worldMinZoom on its map")
         elif wm and float(am.group(1)) != float(wm.group(1)):
             problems.append("the app zooms out to %s and the website to %s: one world, one number"
