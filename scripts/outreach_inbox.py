@@ -12,8 +12,10 @@ THE FILTER, and it is the whole design:
 - Read-only. The mailbox is selected with readonly=True, so nothing is marked
   read, moved or deleted. This script cannot write to his mail account, and it
   never sends: sending stays scripts/outreach_send.py, which needs his word.
-- Only senders we wrote to first. A message is opened only when its From
-  address, or its From domain, appears in data/outreach-sent.json. Everything
+- Only senders we wrote to first, or mail to the project's own address
+  (info@ancienttrees.app) or naming Ancient Trees in the subject. A message is
+  opened only when its From address, or its From domain, appears in
+  data/outreach-sent.json, or one of those two holds. Everything
   else is counted and skipped without its subject or body ever being read.
   A stranger's mail, a bank, a friend: never opened.
 - Only since the first batch (2026-08-08). Nothing older is fetched at all.
@@ -244,7 +246,7 @@ def main():
     ids = data[0].split()
     matched, skipped, bounces = [], 0, []
     for i in ids:
-        ok, hdr = d.fetch(i, "(BODY.PEEK[HEADER.FIELDS (FROM DATE SUBJECT)])")
+        ok, hdr = d.fetch(i, "(BODY.PEEK[HEADER.FIELDS (FROM TO CC DATE SUBJECT)])")
         if ok != "OK" or not hdr or not hdr[0]:
             continue
         h = email.message_from_bytes(hdr[0][1])
@@ -283,9 +285,22 @@ def main():
         if frm in selves or robot:
             skipped += 1
             continue
-        by_subject = "ancienttrees" in subj_norm or subj_norm in SUBJECTS
+        # A stranger who writes to the PROJECT's address, or names us in the
+        # subject with a space, is writing to Ancient Trees, not to Hidde in
+        # private. Added 2026-11-03: Tatiana Vlas answered two of our mails at
+        # once from her personal address ("Ancient Trees - Interno Verde;
+        # Giardini Aperti Verona", to info@ancienttrees.app), matched neither
+        # the sent log nor "ancienttrees", and was nearly missed. His personal
+        # address stays out: only the project address opens a stranger's mail.
+        by_subject = ("ancienttrees" in subj_norm or "ancient trees" in subj_norm
+                      or subj_norm in SUBJECTS)
+        project = {email.utils.parseaddr(os.environ.get("OUTREACH_FROM") or "")[1].lower(),
+                   "info@ancienttrees.app"} - {""}
+        rcpts = {a.lower() for _n, a in email.utils.getaddresses(
+            [h.get("To", ""), h.get("Cc", "")])}
+        to_project = bool(project & rcpts)
         if not frm or (frm not in addrs and frm.split("@")[-1] not in domains
-                       and not by_subject):
+                       and not by_subject and not to_project):
             skipped += 1                       # never opened, never printed
             continue
         matched.append((i, frm, decode(h.get("Subject")), h.get("Date", "")))
