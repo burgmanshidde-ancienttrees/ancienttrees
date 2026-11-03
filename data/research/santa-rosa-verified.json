@@ -1,0 +1,107 @@
+[
+  {
+    "id": "snm_001",
+    "place": "glen-ellen",
+    "name": "The Grandmother Tree",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "roughly 1,800 to 2,000 years",
+    "age_min": 1800,
+    "age_max": 2000,
+    "age_basis": "source",
+    "location": {
+      "address": "Ancient Redwood Trail, Jack London State Historic Park, 2400 London Ranch Rd, Glen Ellen, CA 95442",
+      "latitude": 38.34424,
+      "longitude": -122.54197,
+      "neighbourhood": "Glen Ellen"
+    },
+    "verified_sources": [
+      "https://jacklondonpark.com/ancient-redwood-hiking-trail/",
+      "https://www.inaturalist.org/observations/12214547",
+      "https://jacklondonpark.com/?p=47178"
+    ],
+    "access": "Inside Jack London State Historic Park (California State Parks, run with Jack London Park Partners). Park open daily 9am-5pm; day-use entry $10 per vehicle on the park's own fees page, a June 2026 news item says $15 from 1 June 2026, so check. About 3.5 mile round trip on foot, moderate, 200 ft climb; dogs not allowed on back-country trails.",
+    "transport": "No public transport to the park gate; car from Glen Ellen village (about 5 min) or from Sonoma (about 20 min drive).",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "recognise": "The very wide redwood beside a small shady bench, reached by the short centre path past a picnic table and hitching posts at the three-way junction with the Fern Lake Trail.",
+    "photo_candidates": [
+      {
+        "url": "https://www.inaturalist.org/observations/12214547",
+        "licence": "CC BY-NC (not open enough for us; look only)",
+        "author": "Kim Wagner"
+      }
+    ],
+    "verify_notes": "Owner of the ground (the park) gives the figures: about 14 foot diameter (about 4.3 m; park wording is 'diameter', other outlets say '14 feet around'; no girth_cm recorded because of that conflict), estimated 1,800 to 2,000 years old, nicknamed the Grandmother Tree. The park describes it as a surviving old-growth giant: redwoods once surrounded Glen Ellen about 200 years ago and most of the giants no longer exist (park events page). Directions per the park: from the Lake turn left at the Vineyard Trail, cross Asbury Creek, at the three-way intersection with Fern Lake Trail take the small centre trail past the picnic table and hitching posts. Pin from an iNaturalist observation (2018-05-05, user kimwagner) whose own note names the tree; accuracy not stated and the spot is under dense canopy, so precision kept approximate; the tree is the only giant at the end of that spur. Alive check: park still runs guided Ancient Redwood hikes (event dated 2024-11-27) and lists the trail as current. Age is the park's estimate, not a ring count. Flagged: one source plus the iNaturalist note, the second source is the same owner.",
+    "story": "The park that keeps this redwood puts its age at 1,800 to 2,000 years. If that is right, it was well over 1,600 years old when Jack London bought his first parcels of this park's land in 1905.\n\nThat figure is the park's estimate, not a ring count, so read it as a range rather than a birthday. The same goes for its size. The park describes it as about 14 feet in diameter, while other outlets say 14 feet around, which is a very different tree.\n\nWhat is not in doubt is the setting. According to the park, redwoods surrounded Glen Ellen about two hundred years ago, and most of the giants are gone. The Grandmother Tree, as it is nicknamed, is one of the survivors, the only giant at the end of its spur trail, with a small shady bench beside it.\n\nIt is a proper walk, about 3.5 miles there and back with a climb of around 200 feet. From the Lake, turn left onto the Vineyard Trail and cross Asbury Creek. At the three-way junction with the Fern Lake Trail, take the small centre path past a picnic table and hitching posts.\n\nThe park opens daily from 9 to 5. Day use was $10 a car on the park's fees page, with a rise to $15 announced from June 2026, so check. Dogs are not allowed on the back-country trails, and you will need a car to reach the gate.",
+    "how_to_recognise": "You can recognise it as the very wide redwood beside a small shady bench, the only giant at the end of its spur. It stands past the picnic table and hitching posts, off the Fern Lake Trail junction."
+  },
+  {
+    "id": "snm_002",
+    "place": "glen-ellen",
+    "name": "Jack's Oak",
+    "species": "Coast Live Oak (Quercus agrifolia)",
+    "age_estimate": "about 400 years",
+    "age_min": 350,
+    "age_max": 450,
+    "age_basis": "source",
+    "location": {
+      "address": "Beside the Jack London Cottage, Beauty Ranch, Jack London State Historic Park, 2400 London Ranch Rd, Glen Ellen, CA 95442",
+      "latitude": 38.354725,
+      "longitude": -122.547114,
+      "neighbourhood": "Glen Ellen"
+    },
+    "verified_sources": [
+      "https://www.sonomanews.com/article/news/jacks-oak-finds-new-life-in-glen-ellen/",
+      "https://www.sonomanews.com/2021/10/03/jack-london-hikes-to-the-heritage-trees",
+      "https://www.inaturalist.org/observations/262977178"
+    ],
+    "access": "Inside Jack London State Historic Park (California State Parks). Park open daily 9am-5pm; day-use entry $10 per vehicle on the park's fees page, $15 from 1 June 2026 per a news item, so check. Short walk from the Beauty Ranch car park; the cottage is open noon-4pm.",
+    "transport": "No public transport to the park gate; car from Glen Ellen village (about 5 min) or from Sonoma (about 20 min).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "recognise": "The huge spreading coast live oak right beside the London Cottage, with a young seedling ('Little Jack', grown from its acorn) planted near it.",
+    "photo_candidates": [
+      {
+        "url": "https://www.inaturalist.org/observations/262977178",
+        "licence": "CC BY-NC (look only, not usable)",
+        "author": "mayoung01"
+      }
+    ],
+    "verify_notes": "Sonoma News (2 Feb 2015): the huge spreading coast live oak beside the cottage where Jack and Charmian London lived, nearly 400 years old, weakened by fungal infection; dropped a large limb across a fence in 2012 and removal was planned in 2013, then lab tests showed it could stand for a while and a seedling was planted in a ceremony to carry on its legacy (the article gives no measurements). Oct 2021 Sonoma News notice for a heritage tree walk still calls it 'the 400-year-old' Jack's Oak and promises a condition update (the update itself was not found). Alive evidence: iNaturalist observation 262977178, 23 Feb 2025, identified Coast Live Oak at 38.354725,-122.547114 with the Press Democrat article linked in the note; the Jack London Cottage (OSM way 462437537) sits at 38.35482,-122.54683, about 25 m away. Flagged because the tree was declared declining and the newest confirmation is Feb 2025; a visit-time check is wise. Jack London bought his first parcels here in 1905. Seedlings from its acorns were distributed to Quarryhill Botanical Garden and the public. No girth or height in the sources.",
+    "story": "In 2013 this oak was scheduled to come down. A year earlier it had dropped a large limb across a fence, and a fungal infection had been weakening it for some time. Then lab tests showed it could stand a while longer, and instead of a felling there was a planting. A seedling grown from its acorns went into the ground beside it in a ceremony, to carry on the old tree's line.\n\nJack's Oak is the huge, spreading coast live oak beside the cottage where Jack and Charmian London lived on their ranch. London bought his first parcels of land here in 1905. Local reporting puts the oak at nearly 400 years old, so it was close to three centuries old when he arrived, and it has outlived him by more than a century. Nobody has published its girth or height. Other seedlings from its acorns went to Quarryhill Botanical Garden and to the public.\n\nIt is an old tree in decline. A 2021 walk notice promised an update on its condition, and the most recent sighting we have is a visitor's record from February 2025. If you go, tell us how it looks.\n\nIt is a short walk from the Beauty Ranch car park, inside Jack London State Historic Park. The park opens 9 to 5; day use is $10 a car on the park's fees page and reported at $15 from June 2026, so check. The cottage itself opens noon to 4.",
+    "how_to_recognise": "You can recognise it as the huge spreading coast live oak right beside the London Cottage, with a young seedling grown from its acorn planted nearby. It stands on Beauty Ranch."
+  },
+  {
+    "id": "srs_001",
+    "place": "sebastopol",
+    "name": "Burbank's Royal Walnut",
+    "species": "Royal Hybrid Black Walnut (Juglans 'Royal')",
+    "age_estimate": "planted 1885, about 140 years",
+    "age_min": 135,
+    "age_max": 145,
+    "age_basis": "source",
+    "location": {
+      "address": "Luther Burbank Experiment Farm, 7781 Bodega Ave, Sebastopol, CA 95472 (county tourism and Wikipedia print 7777)",
+      "latitude": 38.39667,
+      "longitude": -122.83472,
+      "neighbourhood": "Gold Ridge, Sebastopol"
+    },
+    "verified_sources": [
+      "https://www.wschs.org/luther-burbank-experiment-farm-self-guided-tour/",
+      "https://www.sonomacounty.com/farms-farmers-markets/visit-luther-burbank-experiment-farm/"
+    ],
+    "access": "Free, open daily dawn to dusk (Western Sonoma County Historical Society, on land owned by the City of Sebastopol). Walk in on the self-guided tour; the walnut is its first stop. Guided tours and the cottage are extras, not needed to see the tree.",
+    "transport": "About a 1 mile walk west of Main Street in Sebastopol; bus link from Santa Rosa not checked.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Luther Burbank Experiment Farm (three-acre remnant)",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "recognise": "Stop #1 on the farm's self-guided tour map (the Society's tour lists it first).",
+    "photo_candidates": [],
+    "verify_notes": "The Society that runs the farm: stop #1 on its self-guided tour is the Royal Hybrid Black Walnut, marked as an original planting from before restoration, a Burbank introduction (1893), hybrid of California black walnut and eastern walnut, 'the oldest tree on the Farm (1885)', planted as a 'witness tree', a property line marker; a heavy producer. County tourism page quotes a Society member that it once produced a ton of nuts a season, and elsewhere quotes the caretaker as 'getting weaker, because it's old, but still spectacular' (second hand through a search summary for the second quote, so treat as unconfirmed). Nearby on the same tour, also original Burbank plantings: #5 hybrid chestnut (huge, per the same member), #6 Paradox Walnut north twin (introduced 1893), #9 multi-grafted English walnut 'mother' tree; these could be added as separate entries if the dispatcher wants a cluster, but no individual coordinates were found. Pin is the farm centre (Wikipedia 38.39667,-122.83472), not the tree, hence approximate with a 50 m site. No girth or height. Alive evidence is the Society's current tour page and county page (undated) and a 2021 visitor blog repeating the numbered map; no dated photo of this tree found, so flagged. Burbank bought the farm in 1885; the Society saved the three-acre remnant in the 1970s. Burbank's Santa Rosa Cedar of Lebanon over his grave was removed in 1989 (root disease): do not use it.",
+    "story": "The oldest tree on Luther Burbank's experiment farm was planted to mark a boundary. The Western Sonoma County Historical Society, which runs the farm, dates its Royal Hybrid Black Walnut to 1885, the year Burbank bought the land, and says it went in as a witness tree, a living marker on the property line.\n\nIt became more than a marker. The Royal is a cross between the California black walnut and an eastern walnut, and Burbank introduced it in 1893. The Society calls it an original planting from before the farm's restoration and the oldest tree on the grounds, and one of its members has told the county tourism office that it once produced a ton of nuts in a season.\n\nWhat survives of the farm is a three-acre remnant the Society saved in the 1970s, now on land owned by the City of Sebastopol. This walnut is stop number one on the Society's self-guided tour, and the hybrid chestnut and Paradox walnut further along the route are Burbank originals too.\n\nTwo honest gaps. Nobody has published its height or girth, and the newest evidence that it stands is the Society's own current tour, not a dated photograph. If you visit, tell us how it looks.\n\nThe farm is free and open daily from dawn to dusk, about a mile's walk west of Main Street. Docent tours run by appointment for a small fee.",
+    "how_to_recognise": "You can recognise it as stop number one on the farm's self-guided tour, the Royal Hybrid Black Walnut that marked the old property line. It stands in the Luther Burbank Experiment Farm."
+  }
+]

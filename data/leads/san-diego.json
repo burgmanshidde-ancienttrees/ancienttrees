@@ -41,6 +41,69 @@
       "species": "Olive (Olea europaea), possibly others",
       "location_hint": "Mission San Diego de Alcala, Mission Valley, San Diego",
       "reason": "The mission (founded 1769, first of the California missions) once had large olive orchards (one of 300 trees, one of 167) and cuttings from here started orchards at other missions. No source found this pass names a specific surviving individual tree with a location and evidence of current life; a widely-repeated claim about 'California's first pepper tree' being here turned out on checking to belong to Mission San Luis Rey in Oceanside, not this mission (a caught bridge-claim risk, not a verified fact). Needs fresh research into the mission's current gardens, ideally with the mission office directly, to find out whether any individual tree from the historic orchards still stands."
+    },
+    {
+      "name": "Coronado Heritage 005 Moreton Bay fig, 1121 Flora Ave next to Star Park (~32.684,-117.181)",
+      "status": "lead",
+      "reason": "designated 2011; sources call it \"at a residence\"; unclear whether visible from public ground, so not delivered. Needs a street-view or photo check of public visibility.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Coronado Heritage 009 Deodar cedar, 2nd block Orange Ave median, planted 1952, finest of 42 \"Christmas Lane\" cedars",
+      "status": "lead",
+      "reason": "avenue member, but a single named tree; no coordinate found.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Coronado Heritage 010 Sugar gum, 100 block of E Ave (planted early 20th century)",
+      "status": "lead",
+      "reason": "street tree, no coordinate; lead.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Coronado Heritage 006 Fern pine, 525 I Ave (front of a property, \"most impressive tree fronting I Avenue\")",
+      "status": "lead",
+      "reason": "street-visible, no coordinate; lead.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Wardholme Torrey pine, Encinitas (~35 km north)",
+      "status": "lead",
+      "reason": "claimed largest Torrey, outside the city; not checked (Atlas Obscura says 126 ft, Cal Poly list says 113 ft: conflicting).",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Presidio Park Torrey pine grove (SOHO page, eastern part of the park; 60-70 ft)",
+      "status": "lead",
+      "reason": "a grove, no planting date or individual tree.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Mission San Diego de Alcala olives",
+      "status": "lead",
+      "reason": "no source found naming a surviving specimen (planted 1769 per marker, current garden has \"olive, citrus and avocado\" per NPS); no individual tree.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Old Town pepper trees (Juan Street, Caltrans building area)",
+      "status": "lead",
+      "reason": "no coordinate or dated specimen found; SOHO/San Diego Magazine only say mid-19th century in general.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Grandpa the Mexican elderberry (Balboa Park)",
+      "status": "lead",
+      "reason": "search found nothing; unfetchable Reader/iNaturalist journal.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
     }
   ],
   "blocked": [
@@ -49,6 +112,41 @@
       "species": "Monterey Cypress (Cupressus macrocarpa)",
       "location_hint": "Ellen Browning Scripps Park, La Jolla, San Diego",
       "reason": "Dead. The famous cypress thought to have inspired Dr. Seuss's The Lorax toppled over and died in June 2019 (widely reported: CNN, Time, local San Diego news). Never ships as a collectible entry per the never-dead-trees rule; could only ever appear as historical context inside another story, never as its own entry."
+    },
+    {
+      "name": "Coronado Heritage 007 Italian stone pine, rear yard of 731 I Ave (private yard, ",
+      "status": "blocked",
+      "reason": "Coronado Heritage 007 Italian stone pine, rear yard of 731 I Ave (private yard, visible from street/alley only).",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Coronado Heritage 008 Italian stone pine, rear yard of 1027 Adella Ave (private ",
+      "status": "blocked",
+      "reason": "Coronado Heritage 008 Italian stone pine, rear yard of 1027 Adella Ave (private yard).",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Coronado Heritage 011 Norfolk Island pine, 1000 Adella Ave (private property of ",
+      "status": "blocked",
+      "reason": "Coronado Heritage 011 Norfolk Island pine, 1000 Adella Ave (private property of a historic home, ~100 yr).",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Coronado Heritage 014 Canary Island pine, rear yard of 1517 Ynez Place (private ",
+      "status": "blocked",
+      "reason": "Coronado Heritage 014 Canary Island pine, rear yard of 1517 Ynez Place (private home).",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Coronado Heritage 015 Magnolia, front yard of 928 A Ave (private home, planted ~",
+      "status": "blocked",
+      "reason": "Coronado Heritage 015 Magnolia, front yard of 928 A Ave (private home, planted ~1951).",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/san-diego-notes.md"
     }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "leads": [
+    {
+      "name": "Victoria Avenue eucalyptus/palm plantings (NRHP 2000, planted from 1892)",
+      "status": "lead",
+      "reason": "roughly century-old eucalyptus, no individual tree named; avenue, so blocked as a collectible point.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/riverside-notes.md"
+    },
+    {
+      "name": "UCR campus tree inventory (UCR news 2023-08-03, \"New inventory maps campus trees\")",
+      "status": "lead",
+      "reason": "mentions 1950s oaks and a monkey puzzle near Olmsted Hall; no coordinates read, worth a later fetch.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/riverside-notes.md"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Mission Inn courtyard Roosevelt orange tree (1903)",
+      "status": "blocked",
+      "reason": "died ~1921-22, replacement unconfirmed.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/riverside-notes.md"
+    },
+    {
+      "name": "Jurupa Oak (Palmer oak clone, Jurupa Valley, ~13,000 yr)",
+      "status": "blocked",
+      "reason": "outside Riverside city, shrub clone, location sensitive; not pursued.",
+      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+      "notes_file": "data/research/riverside-notes.md"
+    }
+  ]
+}

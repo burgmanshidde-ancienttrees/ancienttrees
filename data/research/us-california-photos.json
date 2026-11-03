@@ -1,0 +1,42 @@
+{
+  "lax_016": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Twice_As_Big_As_Your_House_%28132468733%29.jpeg",
+    "license": "CC BY 3.0",
+    "attribution": "Terry Lucas",
+    "attribution_url": "https://commons.wikimedia.org/wiki/File:Twice_As_Big_As_Your_House_(132468733).jpeg",
+    "status": "approved",
+    "why": "Geotag 37 m from the pin at the Rancho Los Alamitos house; one of the twin figs fills the frame with the ranch house behind; big leathery elliptic leaves and buttress roots read as Moreton Bay fig; light OK (HDR, thin 500px border at the edges)."
+  },
+  "sdg_010": {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/219006170/original.jpg",
+    "license": "CC BY 4.0",
+    "attribution": "Andrew Conboy",
+    "attribution_url": "https://www.inaturalist.org/observations/128909650",
+    "status": "approved",
+    "why": "GPS 4 m from the pin (accuracy 6 m), same observation shows the Coronado Heritage Tree 'Torrey Pine' plaque; long-needled tufts at branch tips, tree fills a corner plot; overcast, photo_light WEAK not POOR. iNaturalist shows the licence as CC BY with no version number; check it before publishing."
+  },
+  "oak_002": {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/501853958/original.jpeg",
+    "license": "CC BY 4.0",
+    "attribution": "Jens-Christian Svenning",
+    "attribution_url": "https://www.inaturalist.org/observations/279470373",
+    "status": "approved",
+    "why": "Observation about 65 m from the pin at West Circle, with the Life Sciences Addition visible through the stand; tall pale blue-gum trunks with peeling strips and sickle leaves fill the frame, blue sky; photo_light OK. iNaturalist shows the licence as CC BY with no version number; check it before publishing."
+  },
+  "snm_002": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Tree_and_cottage_-_Jack_London%27s_Cottage_-_DSC03862.JPG",
+    "license": "CC0",
+    "attribution": "Daderot",
+    "attribution_url": "https://commons.wikimedia.org/wiki/File:Tree_and_cottage_-_Jack_London%27s_Cottage_-_DSC03862.JPG",
+    "status": "approved",
+    "why": "Filename and category name the tree beside Jack London's Cottage; the huge spreading oak fills the frame with the cottage behind; at zoom the small dense holly-like leaves and gnarled lichened limbs read as coast live oak; blue sky, photo_light OK (one power line crosses the crown)."
+  },
+  "oak_003": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Oak_Tree_growing_in_Frank_H._Ogawa_Plaza.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Californiathegreat",
+    "attribution_url": "https://commons.wikimedia.org/wiki/File:Oak_Tree_growing_in_Frank_H._Ogawa_Plaza.jpg",
+    "status": "held",
+    "why": "Fine frame of a big chain-ringed live oak in Ogawa Plaza, but the file has no geotag and does not name it Jack London's Oak, and the plaza holds more than one oak (the verifier says so too); the 2017 dedication photo shows a similar chain ring but too little of the tree to settle which one it is."
+  }
+}

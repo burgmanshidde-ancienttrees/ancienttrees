@@ -34,5 +34,117 @@
     ],
     "story": "El Pino is a pine that is not a pine, on a lot nobody may enter, and East Los Angeles once petitioned to save it from a felling that was never coming.\n\nIt is a bunya pine, an Australian conifer of the monkey puzzle family, on a private lot at the southeast corner of Folsom Street and North Indiana Street, where Boyle Heights meets East Los Angeles. From the crest of the hill it is visible for miles, near Evergreen Cemetery, and that visibility is how it became a landmark. The 1993 film Blood In Blood Out used it as a location, and the neighbourhood took it up as a symbol of resistance to the gentrification changing the streets around it.\n\nIn December 2020 a rumour spread that it was about to be cut down. It was false, and a petition followed anyway. In March 2021 the lot's owner told the Los Angeles Times he had no plan to develop it, and accounts from 2022 still describe it standing.\n\nIts age is soft. One local history source says it arrived on the lot in the late 1940s, which would make it roughly seventy years old or more, and nobody we found has measured it. We have no sighting dated after 2022 either, so if you pass it, tell us how it looks.\n\nThe lot is private. This is a tree to see from the pavement on Folsom Street, not to walk up to.",
     "how_to_recognise": "You can recognise it from far off: a bunya pine visible for miles from the crest of the hill. It stands on a private lot at the southeast corner of Folsom Street and North Indiana Street; view it from the pavement."
+  },
+  {
+    "id": "lax_014",
+    "name": "The Aoyama Tree",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 110,
+    "age_basis": "source",
+    "height_m": 20,
+    "location": {
+      "address": "Parking lot north of the National Center for the Preservation of Democracy, 100 N Central Ave, Little Tokyo, Los Angeles",
+      "latitude": 34.0502319,
+      "longitude": -118.2392097,
+      "neighbourhood": "Little Tokyo"
+    },
+    "location_precision": "confirmed",
+    "verified_sources": [
+      "https://www.tclf.org/sites/default/files/microsites/everytree/aoyama.html",
+      "https://ericbrightwell.com/2016/05/08/those-useless-trees-the-aoyama-tree/"
+    ],
+    "official_register": {
+      "name": "City of Los Angeles Historic-Cultural Monument No. 920 (designated 17 July 2008)",
+      "url": "https://www.tclf.org/sites/default/files/microsites/everytree/aoyama.html"
+    },
+    "access": "Free. Stands in a city-owned parking lot beside the Japanese American National Museum complex; viewable from the surrounding streets and lot.",
+    "transport": "Metro A/E Line Little Tokyo/Arts District station, about 4 minutes on foot.",
+    "curation_status": "ai_generated",
+    "recognise": "The big fig in the parking lot immediately north of the National Center for the Preservation of Democracy.",
+    "photo_candidates": [
+      {
+        "url": "https://www.inaturalist.org/observations/214718577",
+        "license": "CC BY-NC",
+        "author": "alexbinck",
+        "note": "iNaturalist 2024, location accuracy 14 m, not judged"
+      }
+    ],
+    "verify_notes": "Planted 1920 by Rev. Shutai Aoyama at the entrance of the Koyasan Daishi Mission temple, then at 133 N Central Ave (TCLF; Brightwell). Mission moved to 342 E 1st St in 1940; temple site cleared 1952 for Parker Center, tree left standing with roots paved over; survived Little Tokyo redevelopment. TCLF: 60 by 70 ft crown, no irrigation, asphalt over roots. Brightwell: about 20 m tall (height from a blog, rough). First living object designated an LA Historic-Cultural Monument (No. 920, 17 July 2008, application by Little Tokyo Historical Society). Pin: OpenStreetMap natural=tree node 13785505451 named Aoyama Tree (mapped 2026-05), tree-level coordinate, consistent with 'immediately north of NCPD'. Alive: lifecheck RECENT 2026-02-07 nearby iNaturalist observation; iNat Ficus macrophylla research-grade 2024-05 (alexbinck) also nearby but pin 14 m accuracy and ~130 m west, not used. Age: planting date 1920 is documented for this specimen. Two sources, one is a foundation page and one a blog; HCM listing is official. Free.",
+    "story": "The first living thing Los Angeles ever made a Historic-Cultural Monument is a fig in a parking lot. It became Monument No. 920 on 17 July 2008, on an application from the Little Tokyo Historical Society, and it has had to outlast almost everything that once stood around it.\n\nThe Reverend Shutai Aoyama planted it in 1920 at the entrance of the Koyasan Daishi Mission, a Buddhist temple then at 133 North Central Avenue. In 1940 the mission moved to East First Street and the fig stayed behind. In 1952 the temple site was cleared for Parker Center, the police headquarters, and the builders left the tree standing with asphalt laid over its roots. Later rounds of Little Tokyo redevelopment came and went, and the fig is still here.\n\nIt has done all of this without anyone watering it. The Cultural Landscape Foundation describes a crown of about 60 by 70 feet growing over pavement with no irrigation at all. A local historian puts its height at about 20 metres, a blog estimate rather than a measurement.\n\nSo the tree a temple planted at its door now has no temple and no garden. It stands in a city-owned lot just north of the National Center for the Preservation of Democracy, beside the Japanese American National Museum, four minutes from the Metro. You can walk up to it from the street at any hour.",
+    "how_to_recognise": "You can recognise it by the fig crown, about 60 by 70 feet, rising out of the asphalt. It stands in the parking lot immediately north of the National Center for the Preservation of Democracy on Central Avenue."
+  },
+  {
+    "id": "lax_015",
+    "name": "The Rancho Los Cerritos Fig",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "over 140 years",
+    "age_min": 140,
+    "age_max": 150,
+    "age_basis": "source",
+    "location": {
+      "address": "Rancho Los Cerritos, 4600 Virginia Rd, Long Beach, CA 90807 (central garden behind the adobe)",
+      "latitude": 33.8394,
+      "longitude": -118.1951,
+      "neighbourhood": "Virginia Country Club, Long Beach"
+    },
+    "location_precision": "confirmed",
+    "verified_sources": [
+      "https://old.rancholoscerritos.org/?p=11998",
+      "https://www.worldjournal.com/wj/story/121359/9232174",
+      "https://www.rancholoscerritos.org/visit/"
+    ],
+    "access": "Free, parking free. Open Wednesday to Sunday (Wed-Fri 1-5 pm, Sat 10 am-5 pm, Sun 1-5 pm per the site's visit page; closed Monday and Tuesday and some holidays). Visitors check in at the Visitor Center. Asked to stay off the roots.",
+    "transport": "Mainly by car (free parking on site); Long Beach Transit buses serve Virginia Rd area, route not checked.",
+    "curation_status": "ai_generated",
+    "recognise": "The huge fig in the central garden whose roots show where two seedlings grew into one tree.",
+    "photo_candidates": [
+      {
+        "url": "https://www.inaturalist.org/observations/353064090",
+        "license": "CC BY-NC",
+        "author": "rachelstanley_pe",
+        "note": "2026-04-24, accuracy 4 m, not judged"
+      }
+    ],
+    "verify_notes": "Owner's garden page: Bixby family planted it around 1880; an 1890s photo shows two established trees that by the 1930s had grown into one; Ralph Cornell added lawn sprinklers in the 1930s; visitors asked not to climb or photograph from the roots. World Journal (2025) says over 140 years, two saplings merged, outlines of both trunks still visible. Adobe 1844, National Historic Landmark 1970 (World Journal). No height or girth published; none recorded. Pin: eleven iNaturalist observations 2019-2026 inside a 20 m cluster at the garden, best accuracies 4-5 m (33.83968,-118.19520 and 33.83951,-118.19507); one tree, so confirmed. Alive: observation dated 2026-04-24. Hours read from the site's Visit page; older pages of the same site show different Sunday hours, so check before going.",
+    "story": "This fig was two trees once. A photograph from the 1890s shows a pair of established Moreton Bay figs in the garden behind the Rancho Los Cerritos adobe; by the 1930s they had grown together into a single tree, and the outlines of both trunks can still be read in it today.\n\nThe Bixby family planted them around 1880, which makes the fig something over 140 years old by the ranch's own account. The adobe in front of it is older still. It went up in 1844 and became a National Historic Landmark in 1970. In the 1930s the landscape architect Ralph Cornell added lawn sprinklers to the garden, so for the ninety-odd years since, the fig has had somebody looking after its water.\n\nNobody has published its height or girth. What you see instead is the spread, and the roots running out across the ground where the two seedlings met. The museum asks visitors to stay off those roots, both for standing on and for taking photographs from them.\n\nEntry and parking are free. The site opens Wednesday to Sunday and checks you in at the Visitor Center; its own pages have listed different Sunday hours over the years, so look before you drive out. You will need the car for this one.",
+    "how_to_recognise": "You can recognise it by the roots, which still show where two figs grew into one tree. It stands in the central garden behind the 1844 adobe."
+  },
+  {
+    "id": "lax_016",
+    "name": "The Twin Figs of Rancho Los Alamitos",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 130 years",
+    "age_min": 125,
+    "age_max": 135,
+    "age_basis": "source",
+    "location": {
+      "address": "Rancho Los Alamitos Historic Ranch and Gardens, 6400 E Bixby Hill Rd, Long Beach, CA 90815 (beside the ranch house)",
+      "latitude": 33.77665,
+      "longitude": -118.10673,
+      "neighbourhood": "Bixby Hill, Long Beach"
+    },
+    "location_precision": "confirmed",
+    "verified_sources": [
+      "https://tclf.org/sites/default/files/landslide/2007/fig/index.html",
+      "https://www.pbssocal.org/shows/lost-la/majestic-mammoths-a-brief-history-of-las-moreton-bay-fig-trees",
+      "https://www.rancholosalamitos.org/faq.html"
+    ],
+    "access": "Free, parking free. Open Wednesday to Sunday 1-5 pm, entrance gates close 4:30 pm; closed Monday, Tuesday and federal holidays. Walk-ins welcome during public hours, reservations recommended.",
+    "transport": "Mainly by car (free parking on site); bus route not checked.",
+    "curation_status": "ai_generated",
+    "recognise": "A matched pair of figs with crowns about 120 feet across, dwarfing the 18-room ranch house.",
+    "photo_candidates": [
+      {
+        "url": "https://www.inaturalist.org/observations/329904986",
+        "license": "CC BY-NC",
+        "author": "ronvanderhoff",
+        "note": "2025-12-07, accuracy 4 m, not judged"
+      }
+    ],
+    "verify_notes": "TCLF Landslide 2007: planted circa 1890, a matched pair (unusual; most Victorian plantings were single), canopies up to 120 ft across, surface roots spanning 50-60 ft. PBS SoCal / KCET: Susan Bixby planted the two figs in the 1890s. Treat as one collectible point (a pair, one place to stand). Dates agree on 1890s; I did not find sources for individual trunk girth. Pin: three iNaturalist observations 2019-2025 at 33.7765-33.7767,-118.1066 to -118.1068 with 4-30 m accuracy, near the ranch house; OSM geocodes the ranch at 33.77697,-118.10745. Alive: observation 2025-12-07 and the TCLF warning that stewardship, not decline, is the threat. Another source in my search summary claimed early 1880s for a fig: that referred to Cerritos, not here. Two sources plus owner's access page.",
+    "story": "Most Victorian gardeners planted one Moreton Bay fig. Susan Bixby planted two. The Cultural Landscape Foundation singles out the pair at Rancho Los Alamitos for exactly that reason, a matched set where nearly everyone else settled for a single specimen, and more than a century later their canopies reach up to 120 feet across.\n\nThe sources agree on the decade. The foundation dates them to about 1890, and PBS SoCal says Susan Bixby put them in during the 1890s, which makes them roughly 130 years old. Their surface roots spread 50 to 60 feet over the ground, and the ranch house beside them, eighteen rooms of it, looks small underneath.\n\nToday the house and gardens are kept as a historic ranch on Bixby Hill in Long Beach. The foundation's warning about them was never that they are failing. It was that trees of this size depend on the people looking after them, and on those people continuing to.\n\nYou take them in together, from one spot by the house. Entry and parking are free, Wednesday to Sunday afternoons, with the gates closing at 4:30. Reservations are recommended but walk-ins are welcome. Come by car.",
+    "how_to_recognise": "You can recognise them as a matched pair of figs whose crowns, about 120 feet across, dwarf the 18-room ranch house. They stand right beside the house."
   }
 ]

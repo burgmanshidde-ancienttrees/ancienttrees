@@ -15091,6 +15091,22 @@
       "tokens": 40000,
       "trees": 2,
       "note": "Dispatcher, no agents (estimate): Krabi rain tree and Khlong Sang Ne fig tunnel promoted from leads on Hidde's word with register pins flagged as unverified; stories, place blocks, added to scripts/build_thailand_south.py."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "los-angeles+san-diego+oakland+glen-ellen+sebastopol",
+      "tokens": 200872,
+      "trees": 18,
+      "note": "18 California stories with recognition lines; place copy for LA and San Diego rewritten for 17 and 11 trees, Oakland, Glen Ellen and Sebastopol new. A first attempt was stopped at a usage limit before writing anything. Held for the pace, build with scripts/build_us_california.py."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "photo-judge",
+      "target": "California 18 (lax/sdg/oak/snm/srs)",
+      "tokens": 167497,
+      "trees": 4,
+      "note": "4 approved (lax_016 Commons, sdg_010 and oak_002 iNaturalist CC BY, snm_002 Commons CC0), oak_003 held (cannot tell which plaza oak), 13 with no usable open-licence photo. All California in about 1.6M tokens with the dispatcher, roughly 90k a tree."
     }
   ]
 }

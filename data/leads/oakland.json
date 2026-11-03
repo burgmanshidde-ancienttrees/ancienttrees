@@ -104,7 +104,113 @@
    "status": "lead",
    "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 265.25 points; 21.8 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
    "sources": []
+  },
+  {
+   "name": "Santa Cruz Cypress, Regional Parks Botanic Garden, Tilden (37.8935,-122.2426)",
+   "status": "lead",
+   "reason": "Cal Big Trees state champion (finding aid only); Wikimedia Commons has a Cupressus abramsiana photo at RPBG (2016) but no independent source for the individual champion tree; no iNaturalist hit within 2 km. Garden is free. Lead: no photo or exact pin in reach.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Oracle Oak (Quercus x morehus), Contra Costa (37.93197,-122.13378)",
+   "status": "lead",
+   "reason": "Cal Big Trees national champion lead; web search found nothing independent, location unknown (private? Lafayette/Briones area). Lead.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Hollyleaf Cherry (37.68084,-122.07853)",
+   "status": "lead",
+   "reason": "Hayward area, champion; not checked, outside Oakland/Berkeley clusters.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Manzanita Recreation Center oak, East Oakland",
+   "status": "lead",
+   "reason": "SF Chronicle column speculates it may be Oakland's oldest coast live oak (friend's estimate about 400 years); no records, no coordinate. Lead.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Lake Merritt Lakeside Park coast live oaks",
+   "status": "lead",
+   "reason": "Community for Lake Merritt tree guide (communityforlakemerritt.org/wp-content/uploads/2019/06/lake-merritt-tree-guide.pdf) is an image-only PDF, could not read it; a Conservancy post reports losing one of the largest oaks near the Edoff Bandstand. Lead for a session that can read the PDF.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Mills College Bell Tower Oak (beside El Campanil, Julia Morgan)",
+   "status": "lead",
+   "reason": "old postcard only; campus now Northeastern, access unclear. Lead.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Mountain View Cemetery",
+   "status": "lead",
+   "reason": "Olmsted design, public, Pattillo's \"Trees of Mountain View Cemetery\" booklet lists 28 trees (pgadesign.com PDF URL returned an HTML error page). No individual tree with age or position found in fetchable sources. Lead: read the booklet.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Mather Redwood Grove (UC Botanical Garden, 5 acres) and Joaquin Miller Park Big Trees trail",
+   "status": "lead",
+   "reason": "groves, no individual tree sources found.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Berkeley campus",
+   "status": "lead",
+   "reason": "'Tall Tree Tales of Cal' audio tour has 16 trees (only 3 named on the news page: London planes on Campanile Esplanade, southern magnolia north of Sproul Hall, eucalyptus grove); City of Berkeley landmarked six campus trees or groves in 1996 (not named on fetched pages). Campus olive moved from Giannini Hall site; red cedar at West Circle planted 1930s (Berkeleyan 1995). Leads. \"Trees of the Berkeley Campus\" 1976 PDF at creeks.berkeley.edu/node/55 not read.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "London Plane row, Campanile Esplanade",
+   "status": "lead",
+   "reason": "avenue, would be blocked as an ensemble; kept as lead.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
   }
  ],
- "blocked": []
+ "blocked": [
+  {
+   "name": "UC Botanical Garden coast redwood (over 150 years, Asian collection)",
+   "status": "blocked",
+   "reason": "March 2023 storm sheared a trunk; garden said beyond saving and to be removed; no later status found. Not delivered, likely gone.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Garden buckeye next to it",
+   "status": "blocked",
+   "reason": "struck down in 2023. Dead.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Annie's Oak, 1776 Le Roy Ave, Berkeley",
+   "status": "blocked",
+   "reason": "city landmark but the original died 1985, young replacement. Not ancient.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Dimond Park oak (once called Oakland's oldest)",
+   "status": "blocked",
+   "reason": "cut down 2017.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  },
+  {
+   "name": "Peralta Oak",
+   "status": "blocked",
+   "reason": "not searched, believed felled 1930s.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/oakland-notes.md"
+  }
+ ]
 }
