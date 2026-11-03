@@ -1,0 +1,160 @@
+[
+  {
+    "id": "sbr_001",
+    "name": "The Moreton Bay Fig of Santa Barbara",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "about 150 years",
+    "age_min": 145,
+    "age_max": 150,
+    "age_basis": "source",
+    "girth_cm": 1370,
+    "height_m": 23,
+    "location": {
+      "address": "101 W Montecito St (corner Chapala St), Santa Barbara, CA 93101",
+      "latitude": 34.41373,
+      "longitude": -119.69417,
+      "neighbourhood": "Downtown, beside the Amtrak station"
+    },
+    "verified_sources": [
+      "https://sbbeautiful.org/moreton-bay-fig/",
+      "https://sbparksandrec.santabarbaraca.gov/node/2643",
+      "https://www.inaturalist.org/observations/404841662"
+    ],
+    "access": "Free; city-owned park (Moreton Bay Fig Tree park) open to the public; roots protected, so you view from the paths and fence line. Paid parking on site.",
+    "transport": "Santa Barbara Amtrak station is beside it; MTD buses on State St; 5 min walk from State Street downtown",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "recognise": "The huge buttressed fig on the corner by the train station, crown wider than a city block.",
+    "photo_candidates": [],
+    "verify_notes": "Alive: iNaturalist observations by several users on 2026-09-30 (GPS accuracy 4 m, 34.41373,-119.69417), 2026-07-18, 2026-07-13, so alive and at the stated spot; Wikipedia lat/lon 34.4138,-119.6942 agrees. Sapling brought by an Australian sailor 1876, moved/planted on this corner about 1877 by Adeline Crabb (sbbeautiful: planted 1877; city: 1876; keep as c.1876-77). Landmark 1970, deeded to the City 1976 (Wikipedia, citing Days 1977; not independently re-fetched). Size: city parks page says trunk about 45 ft circumference (=1370 cm); Santa Barbara Beautiful: 75 ft tall (23 m), crown spread over 175 ft, widest of its kind in continental US though a Glendora fig has since surpassed it in height. Roots protected by a chain barrier around the canopy (Wikipedia citing Joyce 2005); a fenced perimeter is not mentioned by city page; current fence status not verified. Two sources: owner (city) plus Santa Barbara Beautiful, plus iNat life check.",
+    "how_to_recognise": "The huge buttressed fig filling the corner of Chapala and Montecito Streets beside the train station, its crown wider than the lot it stands in.",
+    "story": "A sailor brought it from Australia as a seedling in 1876, and it went into the ground on this corner soon after. Santa Barbara Beautiful credits Adeline Crabb with planting it in 1877; the city's parks page gives 1876. Either way it has had about 150 years, and by the city's measure its trunk is now about 45 feet around. Santa Barbara Beautiful puts it at about 75 feet tall with a crown more than 175 feet across, and calls it the widest tree of its kind in the continental United States, though a fig in Glendora has since grown taller.\n\nThe city made it a historic landmark in 1970, and the ground was deeded to the city in 1976, so it now stands in a small park of its own, named after it. Its roots run far out from the trunk and a barrier keeps feet off them, so this is a tree you walk around rather than under, looking up from the paths at the edge.\n\nIt is right beside the Amtrak station and a few minutes from State Street, which makes it the natural start of a short downtown walk. The pepper tree in front of City Hall, the five lemon-scented gums at the Central Library and the dragon tree in Alameda Park are all within about a mile and a half, and none of them needs a ticket."
+  },
+  {
+    "id": "sbr_002",
+    "name": "The City Hall Pepper Tree",
+    "species": "Peruvian Pepper (Schinus molle)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 150,
+    "age_basis": "derived",
+    "location": {
+      "address": "De la Guerra Plaza, in front of Santa Barbara City Hall, 735 Anacapa St, Santa Barbara, CA 93101",
+      "latitude": 34.4207,
+      "longitude": -119.6987,
+      "neighbourhood": "Downtown"
+    },
+    "verified_sources": [
+      "https://santabarbaraca.gov/sites/default/files/documents/Services/Lists/List%20of%20Designated%20City%20Landmarks.pdf",
+      "https://montecitojournal.net/?p=9510",
+      "https://www.noozhawk.com/?p=549702"
+    ],
+    "official_register": {
+      "name": "City of Santa Barbara list of designated city landmarks: City Hall and Pepper Tree (designated 11 Apr 2000)",
+      "url": "https://santabarbaraca.gov/sites/default/files/documents/Services/Lists/List%20of%20Designated%20City%20Landmarks.pdf"
+    },
+    "access": "Free; stands on the public plaza in front of City Hall, open at all hours.",
+    "transport": "Downtown, about 5 min walk from State Street; MTD buses on State and Carrillo St",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "De la Guerra Plaza in front of City Hall",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "recognise": "The one big old pepper tree standing in front of City Hall, in the plaza.",
+    "verify_notes": "Official city landmark list: 'City Hall and Pepper Tree', 735 Anacapa St, 1924, designated 4/11/2000. Montecito Journal (via search result; page 403 to fetch): the aged landmark pepper tree on De la Guerra Plaza was already mature in a c.1924 photo and was saved when City Hall was built (so older than 1924; age range is a derived floor, not a source figure; no planting date found). Noozhawk 31 Mar 2024: urban forest superintendent Nathan Slack said the pepper tree in front of City Hall will remain in the plaza renovation (construction possibly after Fiesta 2025). FLAGGED: no dated photo or observation from the last few years found at the tree (iNat nearby obs had 7.6 km accuracy), and plaza renovation status after 2025 not checked, so alive and unchanged is unconfirmed. Pin is the plaza in front of the OSM City Hall building (34.4203,-119.6986), not a tree coordinate. Species assumed Schinus molle from the Montecito Journal (Peruvian pepper), not from a measured source.",
+    "how_to_recognise": "The one big old pepper tree on De la Guerra Plaza, in front of City Hall.",
+    "story": "When Santa Barbara built its City Hall on De la Guerra Plaza in 1924, a big pepper tree was already standing in front of the site, and the city kept it. A photograph from about that year shows it fully grown, which is why nobody can give it a planting date. It was mature before anyone thought to write one down, so all that can be said is that it is more than a century old. In 2000 the city made the building and the tree one landmark, listed together as City Hall and Pepper Tree.\n\nThe plaza around it has been waiting for a renovation, and in 2024 the city's urban forest superintendent said the pepper tree would stay in the new design. We have not seen a recent dated photograph of the tree itself, so if the plaza or the tree has changed, tell us. The species, a Peruvian pepper, comes from a local newspaper rather than a botanist's record, and a reader who knows the tree can confirm it.\n\nThe plaza is open at all hours and free, a block off State Street, and a few minutes on foot from the library's gums and from the great fig by the station."
+  },
+  {
+    "id": "sbr_003",
+    "name": "The Library Gums",
+    "species": "Lemon-scented Gum (Eucalyptus citriodora)",
+    "age_estimate": "about 90 to 100 years",
+    "age_min": 85,
+    "age_max": 105,
+    "age_basis": "source",
+    "location": {
+      "address": "Santa Barbara Central Library and Faulkner Gallery, 40 E Anapamu St, Santa Barbara, CA 93101",
+      "latitude": 34.42388,
+      "longitude": -119.7032,
+      "neighbourhood": "Downtown"
+    },
+    "verified_sources": [
+      "https://santabarbaraca.gov/sites/default/files/documents/Services/Lists/List%20of%20Designated%20City%20Landmarks.pdf",
+      "https://www.independent.com/2012/10/25/five-eucalypti-declared-historic/"
+    ],
+    "official_register": {
+      "name": "City of Santa Barbara list of designated city landmarks: Five Corymbia (Eucalyptus) Trees, 40 E Anapamu St (designated 23 Oct 2012)",
+      "url": "https://santabarbaraca.gov/sites/default/files/documents/Services/Lists/List%20of%20Designated%20City%20Landmarks.pdf"
+    },
+    "access": "Free; on the grounds of the public library, open to the public; check library hours.",
+    "transport": "Downtown, 5 min walk from State Street; MTD buses on State and Anapamu",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Central Library and Faulkner Gallery grounds",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "recognise": "Five tall gums with smooth pale trunks beside the library and Faulkner Gallery.",
+    "verify_notes": "One grove of five trees folded into one collectible point. Official city landmark list: Five Corymbia (Eucalyptus) Trees, c.1930, designated 10/23/2012. Santa Barbara Independent 25 Oct 2012: lemon-scented gums, about 80 years old in 2012, drawn into the 1920s plans for library and gallery; preliminary plans then called for removing three of them. FLAGGED: only an iNat Corymbia citriodora observation (2023-12-11, 5 m accuracy, 34.42498,-119.70428, about 100 m north of the library) found nearby, so whether all five still stand today is not confirmed; library pin is the OSM building centre (34.42388,-119.70320), not tree coordinates. Species from the Independent (common name only); city list says Corymbia.",
+    "how_to_recognise": "Five tall gums with smooth pale trunks on the grounds of the Central Library and Faulkner Gallery on East Anapamu Street.",
+    "story": "When Santa Barbara drew up its plans for a new public library and the Faulkner Gallery in the 1920s, five lemon-scented gums were drawn into them. They were about eighty years old in 2012, the Santa Barbara Independent reported, which puts their planting around 1930, and that October the city made all five a landmark. The designation came in the same season as preliminary plans for the library's grounds that would have taken three of them out.\n\nLemon-scented gum is an Australian eucalyptus, now often placed in its own genus, Corymbia, which is the name the city's landmark list uses. These five are tall and straight, with the smooth pale trunks the species is planted for, and they stand together on the library grounds, so the five count here as one stop rather than five.\n\nWe have not been able to confirm that all five still stand. The most recent dated record we found of the species nearby is from late 2023, about a block to the north, so if you visit, count them and tell us. The grounds are free and open with the library, a few minutes from State Street, and on the way between the pepper tree at City Hall and the dragon tree in Alameda Park."
+  },
+  {
+    "id": "sbr_004",
+    "name": "The Alameda Park Dragon Tree",
+    "species": "Dragon Tree (Dracaena draco)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "location": {
+      "address": "West Alameda Park, Santa Barbara Street side, Santa Barbara, CA 93101",
+      "latitude": 34.4277,
+      "longitude": -119.70555,
+      "neighbourhood": "Alameda Park"
+    },
+    "verified_sources": [
+      "https://sbbeautiful.org/dragon-tree/",
+      "https://www.inaturalist.org/observations/355804518",
+      "https://www.inaturalist.org/observations/123296131"
+    ],
+    "access": "Free; public city park, open daily.",
+    "transport": "Santa Barbara Street, about 10 min walk from State Street downtown; MTD buses nearby",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "A thick-trunked dragon tree with an umbrella crown of stiff, sword-shaped leaves in the park near the Santa Barbara Street edge.",
+    "verify_notes": "Santa Barbara Beautiful (Tree of the Month, July 2022) lists West Alameda Park, along the Santa Barbara Street side, among places with mature dragon trees (it names two late-1800s specimens as California's largest, but they are in private gardens and the monastery front yard, not this tree). iNat Dracaena draco observations in the park: 2026-04-27 (3 m GPS, 34.42796,-119.70545), 2022-06-24 (3 m, 34.42756,-119.70561), 2021-11-07, 2020-05-30: alive. They cluster over about 40 m so may be more than one dragon tree; pin kept approximate. One source for 'mature'; no age or size figure. Photo candidates only from iNat (cc-by-nc, not usable commercially).",
+    "story": "Santa Barbara is dragon tree country. When Santa Barbara Beautiful made the species its Tree of the Month in 2022, it named the two largest in California, both from the late 1800s and both behind private walls. This is one you can walk up to. The group lists West Alameda Park, on its Santa Barbara Street side, among the places in town with mature dragon trees, and visitors have photographed one here every year or two since 2020, most recently in April 2026.\n\nThe dragon tree comes from the Canary Islands and grows very slowly, forking only once in many years, so a thick trunk and an umbrella crown of stiff, sword-shaped leaves are what age looks like in this species. Nobody has published a planting date or a measurement for this one, so we cannot tell you how old it is. The photographs taken in the park spread over about forty metres, and there may be more than one dragon tree here. If you know which is the oldest, or when it was planted, tell us.\n\nThe park is free and open daily, about ten minutes on foot from State Street and a short walk from the five lemon-scented gums at the Central Library."
+  },
+  {
+    "id": "sbr_005",
+    "name": "The Lotusland Dragon Tree",
+    "species": "Dragon Tree (Dracaena draco)",
+    "age_estimate": "about 130 years",
+    "age_min": 120,
+    "age_max": 140,
+    "age_basis": "source",
+    "location": {
+      "address": "Lotusland, 695 Ashley Rd, Montecito, CA 93108",
+      "latitude": 34.4354,
+      "longitude": -119.6366,
+      "neighbourhood": "Montecito"
+    },
+    "verified_sources": [
+      "https://www.lotusland.org/gardens/dracaena-circle/"
+    ],
+    "access": "Paid, guided tours by advance reservation only (residential neighbourhood; public tours typically mid-February to mid-November, Wednesday to Saturday; the 2026 season shows as sold out, so book early). Not walk-in.",
+    "transport": "Montecito; about 25 to 30 min by MTD bus from downtown Santa Barbara plus a walk, or drive; no parking on the street, tour check-in required",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Dracaena Circle, Lotusland",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "recognise": "The oldest dragon tree in the Dracaena Circle, with the thickest trunk and a crown of many branches.",
+    "verify_notes": "Owner's page (Lotusland): a tree in the Dracaena Circle traces back to Kinton Stevens' nursery in the 1890s; thick trunk and multi-branched crown are found only in very old plants of this very slow species; Lotusland estimates dragon tree age as ten years per two branchings. Age 1890s kept as the owner's statement, so the range is that date plus the years since, not a count. ONE SOURCE (owner of the ground). Pin is the garden itself (iNat dragon tree 2026-02-11, 20 m accuracy, 34.43545,-119.63660, taken as inside Lotusland but not checked on a map); not a tree coordinate, and the exact tree is shown only on tour. Bookable tour counts as public access under rule 10, but note timed tickets and that many dates are sold out.",
+    "story": "Lotusland was a nursery before it was a garden. In the 1890s Kinton Stevens ran one on this ground in Montecito, and the oldest dragon tree in the garden's Dracaena Circle goes back to his time, by Lotusland's own account. That makes it roughly 130 years old, and in a species this slow it shows. A thick trunk and a crown of many branches come only with great age, and Lotusland reckons a dragon tree's years at about ten for every two rounds of branching.\n\nIt stands in the Dracaena Circle among younger dragon trees, and it is the one with the thickest trunk and the most branched crown. The age is the garden's statement and the only source we have for it, so treat it as theirs.\n\nLotusland is not a walk-in garden. It sits in a residential neighbourhood, visits are by guided tour booked in advance, mostly from mid-February to mid-November on Wednesdays to Saturdays, and dates sell out, so book early. There is no street parking, and you check in for your tour. From downtown Santa Barbara it is about half an hour by bus and a walk, or a short drive, so it is a separate trip from the downtown trees."
+  }
+]

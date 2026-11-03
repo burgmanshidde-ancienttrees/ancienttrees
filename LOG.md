@@ -12,6 +12,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-04 session: Santa Barbara (5) and San Jose (2) written and held for the pace; El Pino ruling
+
+**What changed in the product (once built):** Santa Barbara becomes a place with five trees: the 1876 Moreton Bay fig by the station, the City Hall pepper tree, the five library gums and the Alameda Park dragon tree (a free downtown walk of about 1.5 km), plus the Lotusland dragon tree by booked tour. San Jose gets two tree pages (no place page under four): the Roberto Adobe heritage fig and the Santa Clara mission olives from about 1822. Both added to `scripts/build_us_california.py`, which now holds 29 California trees; tested, preflight fails only on the pace; reverted. The Carol Highsmith photograph of the Santa Barbara fig passes Cadiz but is a TIFF: held in data/research/us-california-photos.json until a JPEG is vendored.
+
+**Ruling (Hidde):** "als el pino goed te zien is boeie": a front-garden tree clearly seen from the public street ships view-only, pin on the street. lax_013 stays live; hard rule 10, BRIEF_RESEARCH.md and DECISIONS.md updated.
+
+**What yielded nothing:** most of San Jose (city sites blocked, heritage list only as a 2014 draft). Rejects to data/leads/santa-barbara.json and san-jose.json. About 335k tokens, 48k a tree.
+
 ## 2026-11-03 session: US deepen, 11 trees verified, written and held for the pace (Salt Lake City 9, Spokane 18, Miami 11 once built)
 
 **What changed in the product (once built):** Salt Lake City gains the Peace Gardens bur oak (state champion, its champion red oak neighbour folded in), the University of Utah saw-leaf zelkova and the Murray City Arboretum bald cypress. Spokane gains the city's register ponderosa, the last planes of Browne's Addition, the Rockwood spruce (street view, not confirmed alive, said so) and the Liberty Park corkscrew willow. Miami gains Fairchild's 1938 baobab, the Miami Beach Botanical Garden banyan, the Kampong baobab that grows lying down, and the Bayside banyan. All flagged, approximate pins with a recognition line, no photographs yet. Held because the 24-hour count stood at 40; `python3 scripts/build_us_deepen_2026_11_03.py` appends them and fixes the count copy (`--max N` for the pace); tested, preflight fails only on the pace, test build reverted. The verify claims stay until the build is merged. Why these cities: 23 percent of first-time App Store downloads come from the US on its thinnest database (Hidde: "doe 1 en 2"). San Francisco is walled for 48 hours. About 450k tokens for the three verify passes and the write pass.

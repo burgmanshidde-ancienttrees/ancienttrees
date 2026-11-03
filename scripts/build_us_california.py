@@ -1,7 +1,7 @@
 """Build the California trees (verified and written 2026-11-02/03, second pass 11-04) into data/cities.
 
 Held for the 25-a-day pace when written. The session that publishes runs:
-    python3 scripts/build_us_california.py            # appends to los-angeles (+8) and san-diego (+7), writes oakland, glen-ellen, sebastopol
+    python3 scripts/build_us_california.py            # appends to los-angeles (+8) and san-diego (+7), writes oakland, glen-ellen, sebastopol, santa-barbara (5), san-jose (2)
     python3 scripts/build_us_california.py --out DIR  # dry build elsewhere (live places read from data/cities)
 then city_names.py, preflight.py, commit by path, push.
 
@@ -31,6 +31,8 @@ SOURCES = [
     ("san-diego-oldtown-verified.json", "san-diego"),
     ("oakland-verified.json", "oakland"),
     ("santa-rosa-verified.json", None),  # each tree names its place
+    ("santa-barbara-verified.json", "santa-barbara"),
+    ("san-jose-verified.json", "san-jose"),
 ]
 PLACE_OF = {"sonoma": "glen-ellen"}
 PLACE_FIELDS = ["city", "country", "status", "intro", "meta_description", "question_meta",
@@ -42,7 +44,7 @@ TREE_FIELDS = ["id", "name", "species", "age_estimate", "age_min", "age_max", "a
                "verified_sources", "official_register", "access", "transport", "best_time",
                "photo", "location_precision", "pin_source", "curation_status", "verify_notes",
                "paid_entry"]
-PAID = {"lax_017", "lax_018", "lax_032", "snm_001", "snm_002"}  # Huntington; mission garden ticket; state park vehicle fee
+PAID = {"lax_017", "lax_018", "lax_032", "snm_001", "snm_002", "sbr_005"}  # Huntington; mission garden ticket; state park vehicle fee; Lotusland tours
 MISSING = {"url": None, "license": None, "attribution": None, "status": "missing"}
 
 

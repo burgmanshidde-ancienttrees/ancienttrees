@@ -1,0 +1,70 @@
+[
+  {
+    "id": "sjc_001",
+    "name": "The Roberto Adobe Fig",
+    "species": "Common Fig (Ficus carica)",
+    "age_estimate": "over a century",
+    "age_min": 140,
+    "age_max": 180,
+    "age_basis": "source",
+    "location": {
+      "address": "Roberto Adobe & Suñol House Museum, 770 Lincoln Avenue, San Jose, CA",
+      "latitude": 37.31579,
+      "longitude": -121.90625,
+      "neighbourhood": "Willow Glen"
+    },
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Roberto Adobe & Suñol House grounds",
+      "radius_m": 40
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20250405051657/https://www.sanjoseca.gov/home/showpublisheddocument/2522/636633202085200000",
+      "https://californiapioneers.com/visit/roberto-adobe-sunol-house-museum/",
+      "https://scvwspaintsites.blogspot.com/2018/02/roberto-adobe-and-sunol-house-san-jose.html?m=1"
+    ],
+    "official_register": {
+      "name": "City of San Jose Heritage Tree List, HT-03-012",
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/transportation/landscaping/trees/heritage-trees"
+    },
+    "access": "Grounds of a free museum run by California Pioneers of Santa Clara County, open first and third Saturdays 1pm to 3pm per the museum page (a 2018 blog says most Saturdays noon to 2pm; check before going). Outside opening hours the tree is not reachable.",
+    "transport": "VTA bus along Lincoln Avenue; the site is about 3 km southwest of downtown San Jose. Walk from the stop under 5 minutes.",
+    "curation_status": "flagged",
+    "recognise": "The big fig behind the adobe, beside the horno, that the city lists as one of the oldest in the county.",
+    "verify_notes": "City heritage list (draft resolution text of 2014, archived copy of sanjoseca.gov doc 2522; the city page itself and records.sanjoseca.gov returned 403/redirect to me, so the current 2022 amendment RES80762 was not read) records HT-03-012, 770 Lincoln Avenue Roberto Adobe, 38 inch (about 97 cm) trunk diameter, Ficus carica, with the note 'one of the oldest fig trees in Santa Clara County' (list says Black Mission Fig; no second source confirms the cultivar, so species kept to Common Fig). The museum page repeats the heritage tree number HT-03-012 (fig). Age: a 2018 painting-group blog says likely planted between 1847 and 1881 (the Sunol brick house was built 1847); a Calisphere caption speaks of a hundred year old fig behind the house. Both are loose; age_min/max is a broad derivation from those two statements, not a measurement. The blog says it still produced fruit in Feb 2018. Alive: iNaturalist shows observations on the grounds in 2025 and 2026 (garden active), but no observation of the fig itself found; flagged 'alive not confirmed after 2018'. Pin is the adobe grounds, not the trunk: approximate. girth_cm derived from the register diameter only if Hidde wants it: 38 in x pi = about 303 cm circumference; register states diameter, not girth, so left out. Status: Roberto-Suñol Adobe is also a National Register site and California Historical Landmark 898.",
+    "photo_candidates": [],
+    "story": "The City of San Jose keeps a list of heritage trees, and the entry for this fig carries a short note: one of the oldest fig trees in Santa Clara County. Its trunk is about 38 inches across by the city's measure. Nobody recorded when it was planted. A 2018 account by a local painting group puts it between 1847, when the Suñol family built their brick house beside the adobe, and 1881, which makes it somewhere between about 140 and 180 years old.\n\nThe Roberto Adobe and the Suñol House are a California Historical Landmark, No. 898, and on the National Register, and today they are a small museum run by the California Pioneers of Santa Clara County. The fig stands behind the adobe, beside the old outdoor oven. In 2018 it was still bearing fruit. We have not found a dated photograph of it since then, so if you visit, tell us how it looks.\n\nThe grounds are open only when the museum is: the first and third Saturdays of the month from 1 to 3 pm by the museum's page, though a 2018 account said most Saturdays, so check before you go. Entry is free. It is on Lincoln Avenue in Willow Glen, about three kilometres southwest of downtown San Jose."
+  },
+  {
+    "id": "sjc_002",
+    "name": "The Mission Olives of Santa Clara",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "about 200 years",
+    "age_min": 190,
+    "age_max": 205,
+    "age_basis": "source",
+    "location": {
+      "address": "Mission Gardens behind Mission Santa Clara de Asís, 500 El Camino Real, Santa Clara University, Santa Clara, CA",
+      "latitude": 37.349,
+      "longitude": -121.9412,
+      "neighbourhood": "Santa Clara University"
+    },
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Mission Gardens, Santa Clara University",
+      "radius_m": 50
+    },
+    "verified_sources": [
+      "https://blogs.scu.edu/arthursattic/?p=1847",
+      "https://university-operations.scu.edu/facilities/space-data/grounds-information/mission-gardens/"
+    ],
+    "access": "Mission Gardens behind the Mission Church on the open Santa Clara University campus; the university describes it as a site for public gatherings and the de Saisset Museum runs weekday morning tours that include it. No fee found. Check campus visitor rules.",
+    "transport": "Caltrain Santa Clara station about 15 minute walk; VTA buses on El Camino Real stop at the campus.",
+    "curation_status": "flagged",
+    "recognise": "The old olive trees along the Adobe Wall and beside the Adobe Lodge, the oldest structures on campus.",
+    "verify_notes": "Santa Clara University's own archive blog (Arthur's Attic) says the olive trees clustered around the Adobe Wall were 'probably planted sometime between 1822 and 1825'; a university archive photo caption (seen in search results only, not fetched) says planted in 1825; another archive record says around 1800 (not found on a fetched page, treat as dubious). SCU Operations page confirms the Adobe Lodge and Adobe Wall as the oldest campus structures behind the Mission Church. Species is not named on the fetched blog page; olive is from the title/context of all sources ('Mission olives'). The author believes 'many' of the trees still stand (2021 photo with olive trees beside the Adobe Lodge) but no count or per-tree identification; this is an ensemble, not one trunk, so it must be treated as one collectible point only if the writer picks a single standing place by the Adobe Wall. One source (the ground's owner) and the SCU page; flagged. Not delivered: any girth or height. Lead: ask the university or iNaturalist for the single largest trunk. Pin is the garden: approximate (iNaturalist plant observations in the garden in 2025-26 prove the garden is cared for, not that these trees stand).",
+    "photo_candidates": [],
+    "how_to_recognise": "The old olive trees along the Adobe Wall and beside the Adobe Lodge in the Mission Gardens, behind the Mission Church.",
+    "story": "The olive trees along the Adobe Wall at Santa Clara University were probably planted between 1822 and 1825, by the account of the university's own archive, when this ground belonged to the Mission Santa Clara de Asís. One archive caption gives 1825. That makes them about two hundred years old, and the wall they grow beside and the Adobe Lodge next to it are the oldest structures on the campus.\n\nNobody has counted how many of the first olives survive. The archive says many still stand, and a 2021 photograph shows old olives beside the Adobe Lodge, but no source points to the single oldest trunk. So the row by the wall is the place to go, one stop rather than one tree. If you can tell which is the oldest, tell us.\n\nThe Mission Gardens lie behind the Mission Church on the open campus. The university describes them as a place for public gatherings, the de Saisset Museum includes them in its weekday morning tours, and we found no fee. Caltrain's Santa Clara station is about fifteen minutes' walk away, and VTA buses on El Camino Real stop at the campus. Santa Clara is its own city, next door to San Jose."
+  }
+]

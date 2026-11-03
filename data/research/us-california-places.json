@@ -133,5 +133,61 @@
     ],
     "hero_tree_id": "srs_001",
     "oldest_tree_id": "srs_001"
+  },
+  "santa-barbara": {
+    "city": "Santa Barbara",
+    "country": "United States",
+    "status": "needs_curation",
+    "intro": "Santa Barbara's oldest trees are its first plantings, and the biggest of them came off a ship. A sailor brought a Moreton Bay fig from Australia in 1876; it now stands beside the train station with a crown more than 175 feet across. Four of the five trees here are downtown within about a mile and a half: the fig, a pepper tree older than City Hall, five lemon-scented gums at the library and a dragon tree in Alameda Park. The fifth, a dragon tree from an 1890s nursery, is at Lotusland in Montecito, by booked tour only.",
+    "meta_description": "Five old trees of Santa Barbara: the 1876 Moreton Bay fig by the station, City Hall's pepper tree, the library gums and two dragon trees.",
+    "question_meta": "Santa Barbara's oldest tree is the Moreton Bay fig at Chapala and Montecito Streets, planted in 1876 or 1877, about 150 years ago.",
+    "question_answer": "The oldest dated tree in Santa Barbara is the Moreton Bay fig at the corner of Chapala and Montecito Streets, beside the Amtrak station. A sailor brought it from Australia as a seedling in 1876 and it was planted on this corner in 1876 or 1877, so it is about 150 years old. Its trunk is about 45 feet around by the city's measure. The runner-up is the oldest dragon tree at Lotusland in Montecito, which the garden traces to an 1890s nursery.",
+    "question_context": "Santa Barbara may have older trees than its oldest dated one, but not with dates. The pepper tree in front of City Hall was already fully grown in a photograph from about 1924, when the building went up beside it, and nobody wrote down when it was planted, so it may be as old as the fig or older. The city made the building and the tree one landmark in 2000.\n\nThe fig is the one with a record. It came from Australia as a seedling in 1876 and went into this corner in 1876 or 1877, depending on whether you follow the city or the local tree group Santa Barbara Beautiful, which credits Adeline Crabb with the planting. It became a city landmark in 1970 and its ground was deeded to the city in 1976.\n\nThe dragon trees are the town's other speciality. Santa Barbara Beautiful names the two largest in California as late-1800s trees in private gardens. Of the ones a visitor can reach, the oldest dated is at Lotusland, from Kinton Stevens' nursery of the 1890s, and Alameda Park has a mature one nobody has dated.",
+    "hero_tree_id": "sbr_001",
+    "oldest_tree_id": "sbr_001",
+    "faq": [
+      {
+        "q": "Where is the Moreton Bay fig in Santa Barbara?",
+        "a": "At the corner of Chapala and West Montecito Streets, beside the Amtrak station, in a small city park named after it. It is free. A barrier keeps visitors off the roots, so you see it from the paths around the edge."
+      },
+      {
+        "q": "Can I walk between Santa Barbara's old trees?",
+        "a": "Four of them, yes. The fig by the station, the pepper tree in front of City Hall, the five lemon-scented gums at the Central Library and the dragon tree in Alameda Park are all within about a mile and a half, and all are free."
+      },
+      {
+        "q": "Can I see the old dragon tree at Lotusland?",
+        "a": "Only on a guided tour booked in advance. Lotusland is in a residential part of Montecito, tours run mostly from mid-February to mid-November, Wednesday to Saturday, and dates sell out. The oldest dragon tree there traces to an 1890s nursery."
+      },
+      {
+        "q": "Are Santa Barbara's landmark trees free to visit?",
+        "a": "Four of the five are: a city park, a public plaza, the library grounds and Alameda Park. Lotusland charges for its booked tours."
+      }
+    ]
+  },
+  "san-jose": {
+    "city": "San Jose",
+    "country": "United States",
+    "status": "needs_curation",
+    "intro": "San Jose's oldest trees go back to the mission and the first adobes. Behind the Roberto Adobe in Willow Glen grows a fig the city lists as one of the oldest in Santa Clara County, planted some time between 1847 and 1881. Next door in Santa Clara, the olives by the Adobe Wall at Santa Clara University were probably planted between 1822 and 1825, when the ground belonged to the Mission Santa Clara de Asís. Both are free; the fig only on the museum's open Saturdays.",
+    "meta_description": "Two old trees of San Jose and Santa Clara: mission olives from the 1820s and a heritage fig behind the Roberto Adobe.",
+    "question_meta": "The oldest trees near San Jose are the mission olives at Santa Clara University, probably planted between 1822 and 1825.",
+    "question_answer": "The oldest dated trees in the San Jose area are the olives along the Adobe Wall at Santa Clara University, which the university's archive says were probably planted between 1822 and 1825, when the land belonged to the Mission Santa Clara de Asís. In San Jose itself, the fig behind the Roberto Adobe on Lincoln Avenue is on the city's heritage tree list as one of the oldest fig trees in Santa Clara County.",
+    "question_context": "San Jose protects its old trees one at a time. The city keeps a heritage tree list, adopted by council resolution with a number and a measurement for each tree, and the fig behind the Roberto Adobe is HT-03-012 on it, with a trunk about 38 inches across and a note calling it one of the oldest fig trees in the county. Its planting date is lost. A local account puts it between 1847, when the Suñol family's brick house went up beside the adobe, and 1881.\n\nThe mission is older still. The olive trees along the Adobe Wall at Santa Clara University were probably planted between 1822 and 1825, by the university archive's account, and the wall and the Adobe Lodge beside them are the oldest structures on the campus. Nobody has counted how many of the first olives survive, and the archive says only that many still stand. Santa Clara is its own city, about fifteen minutes from downtown San Jose by Caltrain or bus.",
+    "hero_tree_id": "sjc_002",
+    "oldest_tree_id": "sjc_002",
+    "faq": [
+      {
+        "q": "What is the oldest tree in San Jose?",
+        "a": "The city's heritage list calls the fig behind the Roberto Adobe on Lincoln Avenue one of the oldest fig trees in Santa Clara County, planted some time between 1847 and 1881. The mission olives in neighbouring Santa Clara are older, from about 1822 to 1825."
+      },
+      {
+        "q": "When can I see the Roberto Adobe fig?",
+        "a": "When the museum is open, the first and third Saturdays of the month from 1 to 3 pm by its own page. Entry is free; check before you go, as hours have changed over the years."
+      },
+      {
+        "q": "Are the Santa Clara mission olives open to visitors?",
+        "a": "Yes. They grow along the Adobe Wall in the Mission Gardens behind the Mission Church, on the open Santa Clara University campus, and we found no fee."
+      }
+    ]
   }
 }
