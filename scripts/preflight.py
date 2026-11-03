@@ -3572,6 +3572,43 @@ def check_register_leads_carry_no_contact_data():
     return out
 
 
+THIN_CONFIRMATION = re.compile(
+    r"not (re)?confirmed|unconfirmed|not (been )?seen since|no (recent|current) (record|sighting|confirmation)|"
+    r"confirm\w* (it )?(is )?(still )?(alive|standing)|alive since|standing since|confirm .{0,40}before publish", re.I)
+
+
+def check_thin_confirmation_is_no_hold():
+    """A tree not confirmed alive since its last record is said on the page, never held.
+
+    2026-11-03: a write pass held the Oatlands ginkgo (Leesburg) because nobody had
+    confirmed it since the county measured it in 2025, on a brief of mine that told it
+    to. Hidde: "is dit een reden?" and "maak deze fout [niet] nog n keer". Only a tree
+    KNOWN dead stays off; thin confirmation goes in the story and readers correct it
+    (CLAUDE.md, Selection: "thin confirmation is stated on the page"). This refuses any
+    `hold` in data/research whose reason is thin confirmation."""
+    def objs(x):
+        if isinstance(x, dict):
+            yield x
+            for v in x.values():
+                yield from objs(v)
+        elif isinstance(x, list):
+            for v in x:
+                yield from objs(v)
+    out = []
+    for path in sorted(glob.glob("data/research/**/*.json", recursive=True)):
+        try:
+            d = json.load(open(path, encoding="utf-8"))
+        except ValueError:
+            continue
+        for o in objs(d):
+            h = o.get("hold")
+            if isinstance(h, str) and THIN_CONFIRMATION.search(h):
+                out.append("%s: %s is held for thin confirmation (%r); only a tree known dead stays "
+                           "off, so drop the hold and say on the page when it was last recorded"
+                           % (path, o.get("id") or o.get("name"), h[:80]))
+    return out
+
+
 def check_every_us_place_has_a_state():
     """Contract L (blueprint v1.22, 2026-09-26): data/us-states.json names the
     state of every published US place, and the build fails on one it does not
@@ -3719,6 +3756,7 @@ def main():
                 + check_photo_fields_reach_the_site()
                 + check_every_us_place_has_a_state()
                 + check_register_leads_carry_no_contact_data()
+                + check_thin_confirmation_is_no_hold()
                 + check_every_tree_has_a_recognition_line())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
