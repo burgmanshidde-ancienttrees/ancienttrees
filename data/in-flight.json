@@ -8,53 +8,46 @@
   "expire_hours_note": "The number above is a fallback only and is not read at runtime: scripts/passcheck.py's night_run_expiry_hours() greps timeout-minutes straight out of .github/workflows/nightly.yml (currently 120) and overrides this field every time, so do not trust this file's own number, trust the workflow. This field previously said 'killed at 60 minutes' after the workflow moved to 120 (2026-08-17/19) and stayed wrong for days; that is why this note now points at the source instead of restating it. Sessions keep the four hours, because a session legitimately pauses.",
   "claims": [
     {
-      "target": "dunkeld",
-      "kind": "verify",
-      "by": "session-97f93d4c",
-      "claimed_at": "2026-11-03T13:13:10+00:00",
-      "trees_at_claim": 1
-    },
-    {
-      "target": "stirling",
-      "kind": "verify",
-      "by": "session-97f93d4c",
-      "claimed_at": "2026-11-03T13:13:11+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "wolverhampton",
-      "kind": "verify",
-      "by": "session-97f93d4c",
-      "claimed_at": "2026-11-03T13:13:14+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "wales-yews",
-      "kind": "verify",
-      "by": "session-01ef2345",
-      "claimed_at": "2026-11-03T13:55:44+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "north-england-yews",
-      "kind": "verify",
-      "by": "session-01ef2345",
-      "claimed_at": "2026-11-03T13:55:47+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "london",
-      "kind": "verify",
-      "by": "session-8b4aedb6",
-      "claimed_at": "2026-11-03T13:59:47+00:00",
-      "trees_at_claim": 32
-    },
-    {
       "target": "tullamore",
       "kind": "verify",
       "by": "session-417af6bb",
       "claimed_at": "2026-11-03T14:41:55+00:00",
       "trees_at_claim": 1
+    },
+    {
+      "target": "enniskerry",
+      "kind": "verify",
+      "by": "session-417af6bb",
+      "claimed_at": "2026-11-03T18:12:46+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "kilmacurragh",
+      "kind": "verify",
+      "by": "session-417af6bb",
+      "claimed_at": "2026-11-03T18:12:49+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "ashford",
+      "kind": "verify",
+      "by": "session-417af6bb",
+      "claimed_at": "2026-11-03T18:12:52+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "gort",
+      "kind": "verify",
+      "by": "session-417af6bb",
+      "claimed_at": "2026-11-03T18:12:55+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "doneraile",
+      "kind": "verify",
+      "by": "session-417af6bb",
+      "claimed_at": "2026-11-03T18:12:58+00:00",
+      "trees_at_claim": null
     }
   ]
 }
