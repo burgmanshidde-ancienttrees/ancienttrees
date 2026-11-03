@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mob_002",
+    "name": "Duffie Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 350,
+    "girth_cm": 942,
+    "height_m": 15,
+    "location": {
+      "address": "Caroline Avenue near Georgia Avenue (Tree Trail address 1123 Caroline Avenue), Mobile, AL 36604",
+      "latitude": 30.686115,
+      "longitude": -88.062027,
+      "neighbourhood": "Oakleigh Garden District"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Duffie_Oak",
+      "https://www.downtownmobile.org/uploads/pdf/MobileTreeTrailBrochureWORKING1.pdf",
+      "https://www.openstreetmap.org/node/11724772287",
+      "https://commons.wikimedia.org/wiki/File:Duffie_Oak_Sept_2023.jpg"
+    ],
+    "location_precision": "confirmed",
+    "access": "Seen from Caroline Avenue, where the limbs reach over the street. The trunk stands on private ground, so view it from the pavement and do not step onto the lot. A stop on the Mobile Tree Commission's Tree Trail.",
+    "transport": "Oakleigh Garden District, a few minutes by car from downtown Mobile. Bus stop not checked.",
+    "curation_status": "flagged",
+    "verify_notes": "Recognised as Mobile's oldest living landmark. Wikipedia (from Mobile Bay Magazine 2011, Native Tree Society Live Oak Project): about 300 years old, girth 30 ft 11 in (9.42 m), height 48 ft (15 m), limb spread 126 ft (38 m); coordinates 30.68608,-88.06202. The Mobile Tree Commission brochure (seen only as a search snippet, not fetched) gives a lower figure: 25 ft circumference, 120 ft spread, 50 ft tall, and names the mayor George C. Duffie; Wikipedia says George A. Duffee. Conflict in girth recorded: 25 ft (about 762 cm) vs 30 ft 11 in (942 cm); girth_cm uses the 9.42 m figure (Native Tree Society measurement per Wikipedia); the brochure's 25 ft is 762 cm, quote both. Age is a scholars' estimate repeated vaguely, no dated basis. Earlier called the Seven Sisters Oak for its large limbs. Recognised by the National Arborist Association in 1977 and as an Alabama Famous and Historic Tree in 2003 (Alabama Forestry Commission, per Wikipedia). Neighbours reportedly stopped developers from cutting it (search summary only). Pin: OSM natural=tree node 11724772287 named Duffie Oak at 30.6861152,-88.0620273; Commons photo geotag 30.686233,-88.061944 within 15 m. Alive: Commons photo 2023-09-20 (CC BY-SA 3.0, Chris Pruitt) and lifecheck RECENT. One credible source only in the fetched record (Wikipedia plus OSM); flagged one source. Hosts: richard-holmes squarespace 404, onlyinyourstate 403, mobilebaymag 403, hmdb 403 to WebFetch.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Duffie_Oak_Sept_2023.jpg",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Chris Pruitt, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/User:Spyder_Monkey",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Duffie_Oak_Sept_2023.jpg",
+      "status": "approved",
+      "width": 4032,
+      "height": 3024,
+      "taken_month": 9,
+      "verify_note": "Approved 2026-11-03 by the dispatching session after looking at the pixels: whole tree from Caroline Avenue in daylight, geotag 30.686233,-88.061944 within about 15 m of the OSM tree node"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Duffie_Oak_in_Mobile_Alabama.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Altairisfar, via Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Altairisfar",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Duffie_Oak_in_Mobile_Alabama.jpg",
+        "status": "approved",
+        "width": 2718,
+        "height": 2141,
+        "verify_note": "Approved 2026-11-03 by the dispatching session after looking at the pixels: the same multi-stemmed trunk close up from the street, daylight; strip photo"
+      }
+    ],
+    "story": "Mobile's oldest living landmark grows on a private lot, and the city gets to enjoy it anyway, because the limbs come to you. They reach out over Caroline Avenue in the Oakleigh Garden District, far enough that part of the street runs under the crown.\n\nThe usual figure for its age is about 300 years. That is an estimate repeated from source to source rather than a count of rings, so read it as a rough band. The measurements disagree too. The Native Tree Society's figures, as Wikipedia reports them, put the trunk at 9.42 metres round, the height at about 15 metres and the spread at 38 metres. The Mobile Tree Commission gives a slimmer 25 feet, about 7.6 metres, with a similar height and spread. Both cannot be right, and nobody has published a fresh tape measure to settle it.\n\nThe name is disputed in a smaller way. It honours a mayor of Mobile, spelled George A. Duffee in one account and George C. Duffie in another. Before that it was called the Seven Sisters Oak, for its great limbs. The National Arborist Association recognised it in 1977, and in 2003 Alabama listed it among its Famous and Historic Trees. By one account, neighbours once stood between it and developers who wanted it gone.\n\nIt is a stop on the city's Tree Trail. Look from the pavement on Caroline Avenue and leave the lot alone, since the ground under the trunk is private.",
+    "how_to_recognise": "You can recognise it by the limbs reaching out over Caroline Avenue near Georgia Avenue, a crown about 38 metres across. It stands on a private lot beside the street, so look from the pavement."
+  },
+  {
+    "id": "mob_003",
+    "name": "Jackson's Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "not documented",
+    "girth_cm": 853,
+    "location": {
+      "address": "Village Point Park Preserve, Daphne, AL 36526",
+      "latitude": 30.627961,
+      "longitude": -87.914447,
+      "neighbourhood": "Daphne (Baldwin County), across Mobile Bay"
+    },
+    "verified_sources": [
+      "https://gulfcoastmedia.com/stories/get-off-the-beaten-path-in-baldwin-county-alabama-towering-trees-top-records-across-alabama,161917",
+      "https://encyclopediaofalabama.org/media/jackson-oak-at-village-point-park/",
+      "https://www.komoot.com/highlight/6877165",
+      "https://www.openstreetmap.org/node/14268648813"
+    ],
+    "location_precision": "confirmed",
+    "access": "Free. Village Point Park Preserve is a public park run by the City of Daphne; a sign in the parking lot reportedly gives the hours as dawn to dusk.",
+    "transport": "Day trip to Daphne, on the eastern shore of Mobile Bay, roughly 25 minutes by car from downtown Mobile across the bay causeway. No practical public transport.",
+    "curation_status": "flagged",
+    "verify_notes": "Local legend (Encyclopedia of Alabama photo caption, Erik Overbey collection, Univ. of South Alabama): Andrew Jackson reportedly addressed troops here in 1814 on the way to Pensacola. Legend only, not documented history. Girth 28 ft per Gulf Coast Media (March 2023): 28 ft = 853 cm; the article says it is not the state champion live oak, a Mobile County live oak is about 2 ft wider (30 ft). Age: no source gives one; do not derive. A MapQuest listing's 95 ft height was seen only in a search summary; not recorded. Alive: komoot visitor tip dated 2024-08-08, lifecheck RECENT (iNaturalist observation 2026-09-12 within range). Caution: Alabama's largest champion oak at Village Point Park Preserve was destroyed in storms (WKRG, about 2023); that was the Bluff or champion oak, and the WKRG article does not mention Jackson's Oak, so it is separate, but the two are easy to confuse. Pin: OSM natural=tree node 14268648813 named Jackson Oak at 30.6279607,-87.9144474; komoot gives 30.6277,-87.9159, about 140 m west, so the OSM node was preferred as tree-level. Label as a Baldwin County day trip, not Mobile walking.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Jackson%E2%80%99s_Oak.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Ddiggs721, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/User:Ddiggs721",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jackson%E2%80%99s_Oak.jpg",
+      "status": "approved",
+      "width": 4000,
+      "height": 6016,
+      "taken_month": 9,
+      "verify_note": "Approved 2026-11-03 by the dispatching session after looking at the pixels: trunk and lower crown with the boardwalk, daylight; the photographer's own caption names Village Point Park in Daphne and the Jackson legend"
+    },
+    "story": "Andrew Jackson is supposed to have stood under this oak in 1814 and addressed his troops on the way to Pensacola. That is the local legend, and it stays a legend. No document puts Jackson at this tree, and the Encyclopedia of Alabama's caption says only that he reportedly did.\n\nThe tree needs no help from him. Gulf Coast Media gave the trunk as 28 feet around in 2023, about 8.5 metres, and was careful to add that it is not Alabama's champion live oak, because an oak in Mobile County beats it by roughly two feet. Two feet short of a state champion is still a great deal of tree. It stands in Village Point Park Preserve in Daphne, on the eastern shore of Mobile Bay, with a boardwalk running past.\n\nThe preserve has already lost one giant. A champion live oak elsewhere in the park came down in storms around 2023, and the two are easy to confuse. Jackson's Oak is the other one, and a visitor described it standing in 2024.\n\nNobody has published an age for it. Live oaks grow fast when young and slow unpredictably later, which makes girth a poor clock. If you know how old it is, tell us.\n\nIt is a day trip from Mobile, roughly 25 minutes by car across the bay causeway.",
+    "how_to_recognise": "You can recognise it by the trunk, about 8.5 metres round, beside the boardwalk in Village Point Park Preserve. It stands in Daphne, on the eastern shore of Mobile Bay."
+  },
+  {
+    "id": "mob_004",
+    "name": "Bienville Square Oaks",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Bienville Square, Dauphin Street at St. Joseph Street, Mobile, AL 36602",
+      "latitude": 30.692265,
+      "longitude": -88.042543,
+      "neighbourhood": "Downtown Mobile"
+    },
+    "verified_sources": [
+      "https://planning.org/greatplaces/spaces/2012/bienvillesquare.htm",
+      "https://www.cityofmobile.gov/news/for-immediate-release-update-on-bienville-square-trees/",
+      "https://mynbc15.com/news/local/city-opt-to-not-cut-down-oaks-in-bienville-square"
+    ],
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Bienville Square",
+      "radius_m": 50
+    },
+    "access": "Free public city park, always open to walk through; closed for repairs after Hurricane Sally in 2020 and reopened afterward.",
+    "transport": "Downtown Mobile, on Dauphin Street at St. Joseph Street. Bus stop not checked.",
+    "curation_status": "flagged",
+    "verify_notes": "A square of live oaks taken in at one glance, not a single tree. APA Great Public Spaces (2012) lists bounds: St. Francis (north), Dauphin (south), St. Joseph (east), N. Conception (west); congress set the land aside as public space in 1824; the page does not state oak counts or ages. Ensemble history from search summaries only, not fetched: Mayor J.W.L. Childers began planting live oaks in 1847 and the HMDB marker says the rows date from then; city urban forester Ron Jackson says oaks have stood there since at least 1812 and soil compaction slows growth (Mobile Bay Magazine, snippet only). In 1890 citizens defeated a move to remove the oaks (marker via summary). Do not date any single trunk. Losses: 6 oaks fell in Hurricane Sally (2020) and 5 more were removed by City of Mobile order dated 2020-10-23, 11 in total (city release, fetched). A separate independent study in 2019 had urged removing 5 others; the city's forester kept them (NBC15, 2019-01-08, fetched). Which oaks remain and the present count are not verified; a 2022 restoration plan adds younger perimeter trees. Alive: iNaturalist observation 2026-03-27 within range (lifecheck RECENT). Pin is the square centre (OSM park way 465773755), approximate. A writer should treat this as a square-of-oaks entry and ask readers which is the biggest trunk.",
+    "story": "Bienville Square has been losing oaks for years and arguing about them for longer. In 1890 citizens defeated a move to clear the oaks out of the square, by the account of its historical marker. In 2019 an independent study told the city to remove five; Mobile's urban forester kept them. Then Hurricane Sally brought down six in 2020, and that October the city ordered five more taken out. Eleven gone in one autumn.\n\nWhat remains is a block of live oaks in the middle of downtown, bounded by Dauphin, St. Joseph, St. Francis and North Conception streets. Congress set the ground aside as public space in 1824. When the oaks went in is less settled. The marker, as reported, dates the planting to 1847 under Mayor J. W. L. Childers, while the city's forester has said oaks have stood here since at least 1812. The two accounts do not agree, and neither dates any single trunk.\n\nThe square closed for repairs after Sally and has since reopened, with younger trees added around its edges under a 2022 restoration plan. So you walk among old oaks and new planting together, in a square the city has fought over for well over a century.\n\nNobody has said which survivor is the biggest, or how many of the old ones are left. If you stand in the square and can tell, let us know.",
+    "how_to_recognise": "You can recognise them as the canopy of live oaks filling Bienville Square. It is the downtown block bounded by Dauphin, St. Joseph, St. Francis and North Conception streets."
+  }
+]

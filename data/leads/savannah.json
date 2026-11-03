@@ -1,5 +1,11 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "site": "Critz BMW live oak, Abercorn St",
+      "reason": "Only 'designated exceptional tree' on Savannah's books per Connect Savannah (2015, updated 2025); no age, girth, pin or current-status source found, single source. no photo or exact pin in reach. Needs City of Savannah Park and Tree exceptional-tree list.",
+      "source": "https://www.connectsavannah.com/?p=162733"
+    }
+  ],
   "blocked": [
     {
       "site": "Forsyth Park",
@@ -8,6 +14,22 @@
     {
       "site": "Bonaventure Cemetery",
       "reason": "No individually named or tree-level-sourced old live oak found. Every source (Wikipedia, Bonaventure Historical Society summary via search, treestoseesavannah.com, Telfair Museums) describes the cemetery's oaks only as a collective avenue/canopy planted by Col. John Mullryne, 15 feet apart; the \"oldest oaks, said to be over 250 years old\" near the American Legion field are named as a group, not as one specimen. This is the avenue problem the brief warned about: a general drive/walk through the cemetery is not a collectible point, and no single named tree exists to ship instead. bonaventurehistorical.org (the most likely source for an individual name) 403-blocked automated fetches twice; a session with a real browser could try again."
+    },
+    {
+      "site": "Garden City Terminal oaks (Georgia Ports Authority)",
+      "reason": "Two 360+ year old live oaks plus 24 younger, but on a working port terminal with no public access, unnamed individually (AP 2013, arborist age estimate from radius). Private/restricted ground."
+    },
+    {
+      "site": "Beauregard Oak, Oakdale (Halsey Rd/Beauregard St)",
+      "reason": "Savannah Morning News commentary only, at the author's relative's home; age is a rule of thumb; no registry entry. Somebody's home, single opinion source."
+    },
+    {
+      "site": "Victory Oak, East 41st St",
+      "reason": "Removed by the city in 2014 for irreversible decay (Connect Savannah 2015). Dead."
+    },
+    {
+      "site": "Georgia Power exceptional-tree oak (WSAV)",
+      "reason": "300-year-old Chatham County exceptional tree cut down despite protection; dead."
     }
   ]
 }

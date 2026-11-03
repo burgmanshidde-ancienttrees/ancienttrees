@@ -13,7 +13,8 @@
         "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0"
       ],
       "source": "South Carolina champion tree database, maintained with Clemson University for the state programme (government). Private-ground rows blocked; rows with no land_type still need an access check. Facts only.",
-      "status": "open"
+      "status": "blocked",
+      "note": "Hedge in front of a house (32.763,-79.862), 183 cm girth, 7.6 m: a shrub hedge, not a collectible tree; register land_type says Public but remark says front of a house. Do not ship."
     },
     {
       "name": "Live Oak",
@@ -28,7 +29,8 @@
         "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0"
       ],
       "source": "South Carolina champion tree database, maintained with Clemson University for the state programme (government). Private-ground rows blocked; rows with no land_type still need an access check. Facts only.",
-      "status": "open"
+      "status": "open",
+      "note": "Register coordinate is on Middleton Place Road, Dorchester County, about 370 m from the chs_003 pin (32.899673,-80.140617). Circumference 385 in (978 cm), height 62 ft (18.9 m), crown 129 ft, remark storm-damaged crown, submitted 10 Jul 2002, condition Good, not champion. Plausibly the Middleton Oak (Live Oak Society gives 31 ft) but no source says so; Middleton Place has other large oaks. Not folded, not published as separate: use 978 cm only as a note for chs_003, labelled a 2002 register figure."
     },
     {
       "name": "Live Oak",
@@ -43,7 +45,8 @@
         "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0"
       ],
       "source": "South Carolina champion tree database, maintained with Clemson University for the state programme (government). Private-ground rows blocked; rows with no land_type still need an access check. Facts only.",
-      "status": "open"
+      "status": "promoted",
+      "note": "Delivered as chs_004 (Arcadian Oak, Arcadian Park, Avondale); register coordinate lands on a house lot beside the park, identification inferred."
     }
   ],
   "blocked": [
@@ -62,6 +65,22 @@
     {
       "site": "Hampton Park",
       "reason": "Charleston's largest park (from the 1901 Inter-State and West Indian Exposition grounds), with 'several awesome live oak trees' with Angel-Oak-like branching near the small lake, per adventuresinthecarolinas.com. A WebSearch AI summary claimed locals call one tree the 'mini angel oak', but fetching the actual source page directly found no such phrase anywhere in the text: a fabricated-by-summary figure per the BRIEF_RESEARCH.md warning, discarded rather than recorded. No source individually names or locates a specific tree, and the park is large and spread out, not a compact ensemble. Leave as a lead."
+    },
+    {
+      "site": "Boone Hall Plantation Avenue of Oaks, Mount Pleasant",
+      "reason": "An avenue of oaks planted in 1743 per the plantation and tourism pages; an avenue is not one collectible point and no single trunk is named. Paid entry. Leave blocked unless a source singles out one oak."
+    },
+    {
+      "site": "Drayton Hall Garden House Oak",
+      "reason": "Fell in Hurricane Ian, 1 Oct 2022 (about 300 years old per Drayton Hall's own page). Known dead, never ships. No other named Drayton Hall oak found."
+    },
+    {
+      "site": "Charles Towne Landing State Historic Site (Legare-Waring allee and oaks)",
+      "reason": "Park page (admission $12, grounds 9 to 5 daily) says only 'hundreds of years old' with no individual tree, age or size; blog figures of 700 to 800 years are unsourced. Allee is an avenue. Leave as a lead for a pass with an arborist or register figure."
+    },
+    {
+      "site": "Magnolia Plantation, Citadel, Magnolia Cemetery, Mount Pleasant oaks",
+      "reason": "One search each found only generic 'ancient live oaks'; no named or measured trunk. Nothing to verify."
     }
   ]
 }

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "btr_001",
+    "name": "Old State Capitol Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "roughly 230 to 300 years",
+    "age_min": 230,
+    "age_max": 300,
+    "girth_cm": 490,
+    "location": {
+      "address": "Louisiana Old State Capitol grounds, 100 North Boulevard, Baton Rouge, LA 70801 (corner of the property beside Repentance Park)",
+      "latitude": 30.44675,
+      "longitude": -91.188783,
+      "neighbourhood": "Downtown"
+    },
+    "verified_sources": [
+      "https://countryroadsmagazine.com/travel/overnight-escapes/old-state-capitol-grounds/",
+      "https://www.waymarking.com/waymarks/wm74T9_Old_Capitol_Bicentennial_Oak_Baton_Rouge_Louisiana"
+    ],
+    "access": "Grounds of the Louisiana Old State Capitol beside Repentance Park, on the downtown riverfront. The museum is closed Sunday and Monday; grounds hours are not posted.",
+    "transport": "Downtown Baton Rouge, on foot from the riverfront and the River Center. Bus stop not checked.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Old State Capitol grounds",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: one magazine source plus a user-submitted waymark. Country Roads Magazine (undated page) says the live oak at the corner of the property next to Repentance Park is about 16 ft around and roughly 300 years old, nearly twice as old as the Capitol it shades (the building dates from 1847-1849). Girth_cm 490 is 16 ft converted; the page says 'around the trunk' so it is read as circumference. Waymarking WM74T9 (posted 2009, 'Old Capitol Bicentennial Oak') gives age approx 230 years and coordinates 30 26.805 N, 091 11.327 W, and says the tree witnessed construction from 1847, the 1862 interior fire, the 1882 reopening and the 1932 move of the capitol; the Waymarking history is community-written, not a source. Ages conflict (230 vs 300), both are unmeasured estimates, no ring count. Pin is the waymark coordinate, not a verified trunk, so approximate; site is about 50 m radius with the Old Capitol lawn, only one big oak seen described at the Repentance Park corner. lifecheck.py near the coordinate: RECENT, iNaturalist observation 2026-07-07 (nearby, not proven to be this trunk). Waymark logged visits up to 2025-05-27. Not to be confused with the Thomas Boyd oak at the new State Capitol (fell in Gustav 2008).",
+    "story": "By one estimate this live oak is nearly twice as old as the building it shades, and the building is Louisiana's Old State Capitol.\n\nCountry Roads magazine puts the tree at roughly 300 years and about 16 feet around the trunk, close to five metres. A waymark posted by visitors in 2009 says about 230. Neither comes from a ring count, so take it as somewhere between the two. Either way the oak was here first. The capitol went up beside it between 1847 and 1849.\n\nThat means it has stood through everything the building has. Fire gutted the capitol's interior in 1862, during the Civil War. It was rebuilt and reopened in 1882, and in 1932 the state government moved out to its new capitol up the road, leaving the old one to become the museum it is today. Through all of it the oak kept its corner of the grounds, by what is now Repentance Park on the downtown riverfront.\n\nDo not confuse it with the Thomas Boyd oak at the new State Capitol, which came down in Hurricane Gustav in 2008. That one is gone. This one still shades the lawn, a short walk from the River Center.\n\nThe museum closes on Sundays and Mondays, and the grounds' own hours are not posted, so the easiest time to come is a weekday.",
+    "how_to_recognise": "You can recognise it as the big live oak at the corner of the Old State Capitol grounds, a trunk about five metres round. It stands on the side of the grounds next to Repentance Park."
+  },
+  {
+    "id": "btr_002",
+    "name": "Mr. Emory Wedding Tree",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "not documented",
+    "age_min": 100,
+    "age_max": 250,
+    "location": {
+      "address": "LSU Hilltop Arboretum, 11855 Highland Road, Baton Rouge, LA 70810",
+      "latitude": 30.35636,
+      "longitude": -91.09486,
+      "neighbourhood": "Highland Road, south Baton Rouge"
+    },
+    "verified_sources": [
+      "https://lsu.edu/hilltop/about/site.php",
+      "https://lsu.edu/hilltop/rental/index.php"
+    ],
+    "access": "LSU Hilltop Arboretum is open to the public free of charge during daylight hours, seven days a week; the office is open 9 to 4:30, Tuesday to Friday.",
+    "transport": "Highland Road, south of the LSU campus, reached by car. No practical public transport found.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: the ground's owner (LSU) is the only source and the sizes conflict. LSU's own pages call it the focal point of the arboretum and a favourite wedding site, a member of the Live Oak Society of the Louisiana Garden Club Federation in the Centenarian Trees classification, named in memory of donor Emory Smith, who began developing the arboretum in 1929 and gave it to LSU in 1981. The about page gives the tree 'a diameter of 8 feet' and the rental page 'a diameter of 17 feet'. 17 ft is plausibly a circumference (the Society treats 17 ft circumference as roughly 100 years); 8 ft is the Society's minimum girth. No girth_cm recorded because the figures conflict. age_min 100 is derived from the Society's Centenarian class only, age_max is a loose bound, no source states an age. Pin is the arboretum centroid from Wikipedia (30.35636, -91.09486), not the tree; the arboretum is a walk-through garden so no small-site claim. lifecheck.py at the centroid: RECENT, iNaturalist 2026-10-17 (garden-level, not this trunk). Alive-now for this individual tree is not shown by a dated photo; an LSU page still presents it as a focal point.",
+    "story": "LSU cannot agree with itself on how big this oak is. One page of the university's Hilltop Arboretum gives it a diameter of 8 feet, another a diameter of 17 feet, and one tree cannot be both. Seventeen feet would make more sense as the distance around the trunk, but nobody has published a fresh measurement to settle it.\n\nWhat everyone agrees on is that it is the heart of the place. The arboretum calls it its focal point, and it is a favourite spot for weddings, which is half of its name. The other half honours Emory Smith, who began developing this hilltop off Highland Road in 1929 and gave it to LSU in 1981. What was his garden is now open to anyone, free, every day in daylight.\n\nThe Live Oak Society, the register of great live oaks kept by the Louisiana Garden Club Federation, lists it in its Centenarian class, which by the Society's reckoning means a tree of about a hundred years or more. Beyond that nobody has put a date on it, and with two sizes in circulation a girth estimate would only add a third guess. If you know how old it is, tell us.\n\nThe arboretum is a walk-through garden in south Baton Rouge, reached by car, and the office is staffed from Tuesday to Friday if you need directions to the tree.",
+    "how_to_recognise": "You can recognise it as the arboretum's focal point, the big live oak where weddings are held. It stands in LSU Hilltop Arboretum off Highland Road; the office, open Tuesday to Friday, can point you to it."
+  }
+]

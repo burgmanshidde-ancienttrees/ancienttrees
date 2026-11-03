@@ -1,0 +1,80 @@
+{
+ "city": "Lafayette",
+ "leads": [
+  {
+   "name": "Gabriel Oak, Longfellow-Evangeline State Historic Site",
+   "place": "St. Martinville (drive time not verified)",
+   "lat": 30.13387,
+   "lon": -91.826745,
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "source": "https://www.lafayettetravel.com/blog/stories/post/lafayettes-ancient-oaks/; https://100oaks.blog/2014/05/24/the-evangeline-and-gabriel-oaks/",
+   "reason": "no girth, age or tree-level pin in reach; both sources only call it 'lesser known and larger' than the Evangeline Oak; state site (paid entry $6, 9-5 daily) so access is fine; coordinate is the site's own, not the tree's"
+  },
+  {
+   "name": "Longfellow-Evangeline site oaks (about 350 years)",
+   "place": "St. Martinville",
+   "lat": 30.13387,
+   "lon": -91.826745,
+   "source": "theclio.com caption (403 to fetch, search summary only)",
+   "reason": "age appears only in a search summary of a caption; unverified"
+  },
+  {
+   "name": "Blanchet Oak, Lafayette",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "girth_cm": 932,
+   "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
+   "reason": "30 ft 7 in; location and access not stated, likely private; needs a visitable spot"
+  },
+  {
+   "name": "Robbins Oak, Lafayette",
+   "girth_cm": 859,
+   "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
+   "reason": "28 ft 2 in; no location or access stated"
+  },
+  {
+   "name": "Robert Earl Sr. Oak, Lafayette",
+   "girth_cm": 869,
+   "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
+   "reason": "28 ft 6 in; no location or access stated"
+  },
+  {
+   "name": "Rhett Butler Oak, Lafayette",
+   "girth_cm": 828,
+   "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
+   "reason": "27 ft 2 in; no location or access stated"
+  },
+  {
+   "name": "Hooper O'Day Oak, Lafayette",
+   "girth_cm": 775,
+   "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
+   "reason": "25 ft 5 in; no location or access stated"
+  },
+  {
+   "name": "Oldest oak right rear of the Coulon House (about 300 years)",
+   "source": "search summary only",
+   "reason": "unnamed property, location not established"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Boudreaux Friendship Oak, Scott",
+   "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
+   "reason": "31 ft 10 in, biggest in Acadiana, but on a private property; no public access found"
+  },
+  {
+   "name": "La Belle Colline Oak (near Carencro/Sunset)",
+   "source": "https://100oaks.blog/2015/11/02/more-from-the-30-something-oak-series/",
+   "reason": "30 ft+, on family land held by the Johnson family; private"
+  },
+  {
+   "name": "Rebekah Oak, Breaux Bridge",
+   "source": "https://100oaks.blog/2015/11/02/more-from-the-30-something-oak-series/",
+   "reason": "on a private property with a resident caretaker; private"
+  },
+  {
+   "name": "Pete Broussard Oak / Lady Suzan Oak",
+   "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
+   "reason": "author could not locate or confirm; identity unverified, probably private"
+  }
+ ]
+}

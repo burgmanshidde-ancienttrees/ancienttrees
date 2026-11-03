@@ -14775,6 +14775,62 @@
     {
       "date": "2026-11-02",
       "kind": "verify",
+      "target": "new-orleans (us gulf live oaks)",
+      "tokens": 131501,
+      "trees": 0,
+      "note": "Deepen. City Park registry oaks still unpinned: Overpass unreachable from the Mac, Commons and 100oaks.blog name none of them, City Park map names no oak. Newcomb College oaks and the registry five to leads. Desk research for New Orleans is done; a GPS fix on the spot is the lever."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "savannah (us gulf live oaks)",
+      "tokens": 124155,
+      "trees": 0,
+      "note": "Deepen. No naming body beyond the Candler Oak; Critz BMW exceptional oak to leads; port oaks, Beauregard, Victory and the Georgia Power oak blocked."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "baton-rouge (us gulf live oaks)",
+      "tokens": 137990,
+      "trees": 2,
+      "note": "New place, Old State Capitol Oak and Mr. Emory Wedding Tree (LSU Hilltop Arboretum), both flagged, under four. Live Oak Society Baton Rouge entries are private yards; Magnolia Mound and LSU quad oaks to leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "lafayette-louisiana (us gulf live oaks)",
+      "tokens": 155986,
+      "trees": 3,
+      "note": "New place: St. John Cathedral Oak, Evangeline Oak (St. Martinville day trip), Twentieth Century Oaks at UL Lafayette. Under four; Gabriel Oak (paid state site) is the likely fourth, lead."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "mobile (us gulf live oaks)",
+      "tokens": 137053,
+      "trees": 3,
+      "note": "Deepen: Duffie Oak (OSM node, seen from Caroline Avenue), Jackson's Oak in Daphne, Bienville Square oaks. Mobile reaches four. Jury Oak at Blakeley is gone."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "charleston (us gulf live oaks)",
+      "tokens": 134133,
+      "trees": 1,
+      "note": "Deepen: the Arcadian Oak in West Ashley; SC champion register holds only three rows near Charleston and its tie to this trunk is inferred, so no girth on the page. Plantation and park oaks have no individual source."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "mobile+lafayette-louisiana+baton-rouge+charleston (us gulf live oaks)",
+      "tokens": 137925,
+      "trees": 9,
+      "note": "9 stories and place fields for Mobile (4), Baton Rouge (2), Lafayette (3); held for the pace, build with scripts/build_us_live_oaks.py. Dispatcher (briefs, claims, 4 Commons photos viewed and approved, Charleston pin moved off a house lot, builder) about 100k more, estimated. All in about 1.06M tokens, roughly 118k a tree."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
       "target": "foresta-umbra+vieste+mattinata+san-giovanni-rotondo",
       "tokens": 143872,
       "trees": 0,
@@ -14817,8 +14873,16 @@
       "kind": "verify",
       "target": "lyon",
       "tokens": 140441,
-      "trees": 1,
-      "note": "PLU-H register pass: 12 public entries but no photo or confirmed pin (Overpass down, Commons geotags show squares not trunks); dispatcher matched the Villevert cedars to surveyed inventory points, Weingarten folded into the parks entry, the other ten to leads."
+      "trees": 11,
+      "note": "PLU-H register pass: 12 public entries, no photo or confirmed pin (Overpass down); Villevert cedars matched to surveyed inventory points, Weingarten folded into the parks entry, the other ten ship on a recognition line (covered-country gate is off)."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "write",
+      "target": "lyon",
+      "tokens": 170983,
+      "trees": 21,
+      "note": "21 stories plus the grown place text, held for the pace in data/research/lyon-verified(-2).json; builder scripts/build_lyon.py. The fr overlay still lacks the 21 trees: translate before publishing."
     },
     {
       "date": "2026-11-02",
@@ -14867,6 +14931,78 @@
       "tokens": 146351,
       "trees": 10,
       "note": "8 Corfu, 1 Kefalonia, 1 Paros stories plus place fields (data/research/greek-islands-places.json); held for the pace, build with scripts/build_greek_islands.py."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "spoleto",
+      "tokens": 153381,
+      "trees": 6,
+      "note": "Central Italy MASAF run: Villa Redenta cedar (photo), Ippocastani sequoia, Marignoli plane (view-only), Monteluco holm oak, two cypresses on recognition lines; Campello garden private. Overpass and Commons geosearch unreachable or throttled."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "vallombrosa+florence",
+      "tokens": 191071,
+      "trees": 5,
+      "note": "Central Italy MASAF run: Vallombrosa arboretum sequoia (iNaturalist GPS pin) and sugar pine, Faggio Santo, Faggione; Florence Via Pisana wisteria. Sammezzano closed to 2028, Belmonte and La Cipressa private."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "perugia",
+      "tokens": 157224,
+      "trees": 4,
+      "note": "Central Italy MASAF run: Colle del Cardinale cedar (photo), deodar, Monterey cypress (paid villa park), Santa Giuliana holm oak; Sodo, Collestrada, Viale Roma to leads for access."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "lucca",
+      "tokens": 139009,
+      "trees": 2,
+      "note": "Central Italy MASAF run: Gragnano witches' oak (photo), Vinchiana cemetery deodar; villa trees private or unnamed, Viale Marconi plane unproven after the 2026 felling order."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "rome",
+      "tokens": 145337,
+      "trees": 1,
+      "note": "Central Italy MASAF run: Ostia Antica holm oak in Piazza Gregoriopoli; 9 of 12 rows already rejected earlier, San Sisto nursery closed, Villa Torlonia pine unproven after the December felling."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "agrigento, palazzolo-acreide, noto, ragusa",
+      "tokens": 182649,
+      "trees": 13,
+      "note": "Southern Italy MASAF run: 15 entries, 2 held for access (Noto carob, Santa Lucia oak); named OSM nodes from the regional tourism GIS placed the Agrigento olives; Modica and Caltagirone not reached."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "palermo, catania, castelbuono",
+      "tokens": 151589,
+      "trees": 5,
+      "note": "Southern Italy MASAF run: Palermo +5 (ombu, Ucciardone plane, San Benedetto cypress, Villa Niscemi banyan, Orto dragon tree); Catania fig and Pantelleria fig not public; Madonie sycamore held, no route. OSM ref:masaf nodes are register imports, not pin evidence."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "naples, portici, castellammare-di-stabia, monte-faito, caserta, benevento",
+      "tokens": 178433,
+      "trees": 22,
+      "note": "Southern Italy MASAF run: Campania's regional schede (static pages) were the second source; no open photos, 2 GPS pins; Sorrento Via Rota trees are hotel grounds."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "sila, serra-san-bruno, aspromonte, san-pietro-in-amantea",
+      "tokens": 177707,
+      "trees": 5,
+      "note": "Southern Italy MASAF run, two rounds of one agent (the resumed run reported 178k in all, the first 155k):Giganti della Sila (FAI, temporarily closed), Gariglione fir and beech, Santa Maria del Bosco fir, San Pietro plane; 4 forest trees held as indistinguishable, Celico chestnut private."
     }
   ]
 }

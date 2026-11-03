@@ -12,6 +12,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: US Gulf Coast live oaks, 9 trees written and held for the pace
+
+Six verify passes (New Orleans, Savannah, Charleston, Mobile deepen; Baton Rouge and Lafayette from zero, Hidde named the US on 11-02) and one write pass. Held in data/research/, nothing published: `python3 scripts/build_us_live_oaks.py` appends mob_002 to mob_004 (Duffie Oak, Jackson's Oak in Daphne, Bienville Square oaks; Mobile reaches four) and chs_004 (the Arcadian Oak, West Ashley) to live pages, writes baton-rouge (btr_001 Old State Capitol Oak, btr_002 Mr. Emory Wedding Tree) and lafayette-louisiana (lfy_001 St. John Cathedral Oak, lfy_002 Evangeline Oak in St. Martinville, lfy_003 Twentieth Century Oaks), and adds both to data/us-states.json. Both new places stay under four, so their trees go out as tree pages. Four Commons photographs viewed and approved (Duffie x2, Jackson's Oak, Evangeline Oak). Tested: city_names.py and preflight clean apart from pace; test build reverted, city-aliases entries for the two places removed again.
+New Orleans and Savannah gave nothing new: the City Park registry oaks (Grandjean, Delgado, Flying Horses, FDR, Zachary Taylor) still have no pin, and Overpass is unreachable from the Mac. Desk research there is done; a GPS fix on the spot is the lever. About 1.06M tokens, roughly 118k a tree.
+For the session that publishes: run the builder after the queued 14:20 publish has room under the pace, then city_names.py, preflight, commit per city.
+
 ## 2026-11-03 06:13 run (night run)
 
 Rungs 1 to 3: no reader photographs or notes waiting, health only flags GitHub dropping knocks (5 of 12) and the weekly analysis allowance. Rung 5 (Portugal first): braga has only 5 open leads (under six), walled 48h. Dispatched a write pass on the READY leads (Gran Canaria, Azores, Angra, Sintra, Algarve-east). Nothing published: the 24-hour pace stood at 34 own trees against the cap of 25. Twelve trees are built and preflight-clean apart from the pace (gcn_006, 008, 009, 010; azo_004 to 007; agh_001, 002; sin_006 with Portuguese overlay; tav_001), committed as preparation only. The 19 READY leads in the brief mostly cannot ship (Osorio permit-gated, others unverified or no life check). Held: gcn_007 San Telmo figs.

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "chs_004",
+    "name": "The Arcadian Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Arcadian Park (Arcadian Way at St. Andrews Boulevard), Avondale, West Ashley, Charleston, SC 29407",
+      "latitude": 32.7891,
+      "longitude": -79.9831,
+      "neighborhood": "Avondale, West Ashley"
+    },
+    "verified_sources": [
+      "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/South_Carolina_Champion_Tree_Database/FeatureServer/0",
+      "https://www.westof.net/if-this-tree-could-talk/",
+      "https://www.westof.net/west-ashley-flashback-a-walk-in-the-park/"
+    ],
+    "access": "Small neighbourhood park beside the road, maintained since 2018 by the St. Andrews Public Service District; no posted hours or access rules found. Free, no ticket. Street parking only.",
+    "transport": "West Ashley, about 3 km (a 10 minute drive) from Charles Towne Landing; CARTA bus routes run along Savannah Highway, roughly a 15 minute walk, not checked stop by stop.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Arcadian Park, Avondale",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "ONE-LINE IDENTIFICATION IS INFERRED: the SC register row (live oak, Charleston County, submitted 5 Oct 2021, flagged 'State Champ', condition Good) has coordinates 32.789232,-79.982181 which fall about 80-100 m from Arcadian Park (OSM names it, Nominatim 32.7891,-79.9831) and on Arcadian Way. West Of (Kenneth Marolda, 8 Jul 2026) describes the Arcadian Oak as the one big tree in that park, so the register row is taken to be that tree, but no source states the link. Register values: circumference 439 in (= 1115 cm, 36.6 ft), height 53 ft (16.2 m), crown spread 104.25 ft (31.8 m), points score 518; original database spelling 'Quercus virginianna'. Register unit check: inches and feet, converted. Coordinate lands on a house lot (793 Arcadian Way per Nominatim), so the pin is the register's rounded point, not the trunk: approximate. West Of 2026: canopy spans nearly half a football field; limbs thicker than most trunks; an unnamed arborist estimated 500 to 1,000 years (no name or date; tracing to a 1940 Evening Post story 'Venerable Oak Tree Centuries Old' when Avondale was laid out); do not repeat as fact, age not documented, live oaks are hard to date. Neither the Live Oak Society nor any ring count was found for it. History from West Of 2021: park platted as Peeks Park in Avondale Section C (about 1948) on former Weimar Plantation land; John Harken cleared it, built a stone retaining wall and benches, and in 1951 filled the hollow core of the oak with cement, his initials and the year are written in it; West Of 2026 says the Belgian-block wall at the base is from the Navy Yard. West Of 2026 also ties the grove to John Godfrey's settlement (militia rallying point 1672; burned 1865), told as local history, not tied to this trunk by a dated source. Alive: West Of July 2026 describes it standing; register condition Good in 2021; lifecheck.py NONE (no geotagged photo found). Girth is 1115 cm which would exceed the 31 ft Live Oak Society figure for Middleton Oak, so it is possibly the state's largest live oak by girth, but the register says only 'State Champ' on a points score; the statewide ranking was not independently checked. SANITY WARNING: 36.6 ft is far above the Angel Oak's 25.5 to 28 ft (our chs_001 says 777 cm), so the 2021 submitter may have measured low on a buttressed or multi-stemmed base; the writer should state the figure as the register's, not call it the biggest in the state. Flagged: one government register plus one local history article, identification of the row inferred. | 2026-11-02 dispatcher: pin moved from the register point (a house lot) to Arcadian Park itself (Nominatim 32.7891,-79.9831), so nobody is sent to a front garden; still approximate within the park. | 2026-11-03 writing pass: girth_cm (1115) and height_m (16.2) removed from the object because both come from the SC register row whose link to this trunk is inferred, not stated by any source, and the girth is implausibly far above the Angel Oak's. The story gives the girth only as the register's figure, not tied to this tree by name, and does not say 'state champion'. official_register left in place; the main session may want to reconsider it on the same grounds. | 2026-11-03 dispatcher: official_register removed with girth and height, since the register row's tie to this trunk is inferred; the row stays in the notes and in data/leads/charleston.json.",
+    "story": "In 1951 a man filled the hollow core of this oak with cement and wrote his initials and the year into it. John Harken had already cleared the little park around the tree, built a stone retaining wall and set out benches, and the oak has carried his repair ever since.\n\nThe park began as Peeks Park, platted around 1948 when this part of Avondale was laid out on former Weimar Plantation land in West Ashley. The local history site West Of describes the Arcadian Oak as the one big tree in it, with a canopy spanning nearly half a football field and limbs thicker than most trunks. The Belgian blocks of the wall at its base, it says, came from the Navy Yard. The same writer ties the grove to John Godfrey's settlement, a militia rallying point in 1672, which is local history rather than a dated fact about this trunk.\n\nSouth Carolina's champion tree register lists a live oak on Arcadian Way, beside the park, at 1,115 centimetres round. The register does not name the tree, and no source ties that row to this trunk, so the number is the register's and not yet the Arcadian Oak's.\n\nHow old it is, nobody knows. A figure of 500 to 1,000 years circulates, credited to an arborist without a name, and live oaks are notoriously hard to date. If you know more, tell us.",
+    "how_to_recognise": "You can recognise it by the cement in its old hollow, with the initials and the year 1951 written in it, and the Belgian-block wall at its base. It stands in Arcadian Park, the one big tree there."
+  }
+]

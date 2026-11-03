@@ -1,0 +1,29 @@
+{
+  "city": "Mobile",
+  "leads": [
+    {
+      "name": "Washington Square Oaks",
+      "lat": 30.6823,
+      "lon": -88.0567,
+      "reason": "Square in the Oakleigh Garden Historic District (NRHP 1972, Washington Square deeded to city 1850); the district's live oak canopies planted 1850 to 1910 per the nomination (search summary, not fetched). One source, no per-tree facts, no oak count seen. Next step: NPS nomination PDF at npgallery.nps.gov/GetAsset/005589a9-148e-4060-a8d3-d5c62cc07509 and Mobile Bay Magazine Ask McGehee on Washington Square (p=29099, 403 to fetch)."
+    },
+    {
+      "name": "Spring Hill College Avenue of the Oaks (Stewartfield)",
+      "reason": "Avenue of about 50 live oaks planted about 1850 by Roger Stewart; campus access for the public unconfirmed, and an avenue is not one collectible point. Needs a source for open campus and a standout trunk before it can ship."
+    },
+    {
+      "name": "Government Street oaks (Oakleigh Garden District)",
+      "reason": "Tree Trail brochure claims British forces planted oaks along Government Street 1736 to 1780: uncorroborated, avenue, not recorded as a tree."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Jury Oak, Historic Blakeley State Park",
+      "reason": "Park visitor guide describes a pavilion preserving the remains of the Jury Oak, so the tree is gone; a separate live oak at the Old House Site is unnamed and unmeasured."
+    },
+    {
+      "name": "Avenue of the Oaks, Spring Hill College",
+      "reason": "Avenue, not a collectible point; see lead for the possible standout trunk."
+    }
+  ]
+}

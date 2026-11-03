@@ -36,6 +36,16 @@
       "status": "open",
       "why": "Registry #750 (FDR, 14 feet 1 inch / ~429 cm) and #751 (Zachary Taylor, 16 feet 10 inches / ~513 cm), both custodian 'City Park'. Presidential names, no other narrative or location found this pass beyond the registry entry itself. Grouped here rather than given full entries since neither cleared the bar alone; either could be revisited if the walking-tour brochure (see Grandjean lead) turns up and places them.",
       "pin_attempt": "2026-10-03: Commons (named-file search, geosearch around City Park and Audubon), City Park live-oaks page (404 on both domains), Live Oak Society 2019 registry PDF (no locations). No named photo, no geotag, no OSM node found. Still no pin and no photo candidate; needs the City Park oak tour map, which is not online."
+    },
+    {
+      "name": "Newcomb College oaks, Tulane University quadrangle (Broadway Street, New Orleans)",
+      "status": "lead",
+      "why": "2026-11-02 deepen pass: 100oaks.blog (facts only) says the oaks lining the Newcomb quadrangle grew from acorns carried from the old Washington Avenue campus in 1918, so roughly a century old: an ensemble of planted oaks, not one collectible trunk, on a campus (open-grounds evidence not found). No girth, no coordinate, no registry numbers seen. Kept as a lead only; revisit if a Tulane source names one individual oak with a girth and the grounds are shown open. Source: https://100oaks.blog/2021/06/26/newcomb-college-oaks/"
+    },
+    {
+      "name": "City Park named registry oaks (Grandjean #745, Delgado #744, Flying Horses #755, FDR #750, Zachary Taylor #751)",
+      "status": "lead",
+      "why": "2026-11-02 pin angles exhausted, do not repeat: (1) OSM via Nominatim (Overpass is unreachable from this Mac, exit 7 and 28) holds natural=tree nodes only for McDonogh Oak and Tree of Life (both already live), none for these five or any other New Orleans oak; (2) Commons search and geosearch (5 km round City Park) name only Dueling, Suicide, McDonogh and Glory Oak (File:Glory Oak - City Park, New Orleans.jpg, licence not checked, no geotag-to-name evidence); (3) 100oaks.blog has no post on any of the five; (4) City Park's 2024 official map PDF (neworleanscitypark.org/wp-content/uploads/2024/04/NOCP-Map_2024.pdf) marks the Historic Oak Grove but no named oak; oldgrowthforest.net names only Anseman, McDonogh, Suicide. Only an old walking-tour brochure or an on-site GPS fix would place them."
     }
   ],
   "blocked": [
