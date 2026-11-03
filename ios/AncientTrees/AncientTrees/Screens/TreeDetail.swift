@@ -2085,9 +2085,6 @@ struct TreeDetail: View {
 
     // MARK: - From people who stood here (2026-10-24)
 
-    /// The nearest trees of ours, nearest first, for the borrowed note.
-    private var nearIds: [String] { nearbyTrees.prefix(12).map(\.id) }
-
     /// komoot's Tips and AllTrails' reviews in shape (CONVENTIONS.md, "Notes
     /// from visitors on a tree page"): one note per person per tree, dated,
     /// live at once, no replies or likes. Empty: one grey card, his words and
@@ -2113,8 +2110,7 @@ struct TreeDetail: View {
                 // EMPTY: ONE GREY CARD WITH THE ASK INSIDE (Hidde, 2026-10-25:
                 // "a grey card like the cards are in app when you have not
                 // bookmarked a tree yet"; "the button should be where the
-                // eventual photo or note ends up"). His words for the ask. The
-                // nearest tree's real note, when there is one, sits in the card.
+                // eventual photo or note ends up"). His words for the ask.
                 if here.isEmpty, notes.mine == nil {
                     VStack(alignment: .leading, spacing: 4) {
                         Image(systemName: "text.bubble")
@@ -2125,27 +2121,13 @@ struct TreeDetail: View {
                         Text("No notes yet")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundStyle(Brand.ink)
-                        if notes.loaded, let b = notes.borrowed(near: nearIds),
-                           let from = nearbyTrees.first(where: { $0.id == b.tree_id }) {
-                            Text("Nearby, at \(from.name), a visitor left this:")
-                                .font(.system(size: 14))
-                                .foregroundStyle(Brand.inkSoft)
-                                .fixedSize(horizontal: false, vertical: true)
-                            Button { navigator.push = .tree(from.id) } label: {
-                                noteCard(body: b.body, date: b.date, name: b.author_name ?? "A visitor",
-                                         avatar: b.author_avatar, initial: b.author_name?.first, mine: false,
-                                         onGrey: true)
-                                    .opacity(0.85)
-                            }
-                            .buttonStyle(.plain)
-                            .padding(.top, 6)
-                            .accessibilityLabel("A note on \(from.name)")
-                        } else {
-                            Text("Did you visit the tree? Leave a note for the next visitor.")
-                                .font(.system(size: 14))
-                                .foregroundStyle(Brand.inkSoft)
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
+                        // No neighbour's note borrowed in here any more
+                        // (Hidde, 2026-11-03: "it doesnt make sense that my
+                        // note about a certain tree shows up at another tree").
+                        Text("Did you visit the tree? Leave a note for the next visitor.")
+                            .font(.system(size: 14))
+                            .foregroundStyle(Brand.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
                         noteButton(onGrey: true)
                             .padding(.top, 10)
                     }
@@ -2158,7 +2140,7 @@ struct TreeDetail: View {
                 }
             }
             .task(id: tree.id + (account.session?.userId ?? "")) {
-                await notes.load(tree: tree.id, near: nearIds, token: await account.freshToken())
+                await notes.load(tree: tree.id, near: [], token: await account.freshToken())
             }
             .sheet(isPresented: $writingNote) {
                 BrandSheet(title: "A note for the next visitor", message: tree.name,

@@ -6,12 +6,11 @@
 // (scripts/tree_notes.py). Table and function: supabase/tree-notes.sql.
 //
 // What this script does, in order:
-//   1. Reads every note on this tree AND on the nearest trees of the same place
-//      in one call (tree_notes_for, anon-readable; the name and picture only
-//      from a public profile). The page lists this tree's notes; when there are
-//      none it borrows the nearest other tree's note as the example (Airbnb's
-//      "this host has N reviews", Hidde 2026-10-24: "look at airbnb"), and when
-//      the place has none at all it keeps the grey empty card the page rendered.
+//   1. Reads every note on this tree (tree_notes_for, anon-readable; the name
+//      and picture only from a public profile) and lists them; with none it
+//      keeps the grey empty card the page rendered. It borrowed the nearest
+//      tree's note as an example until 2026-11-03 (Hidde: "it doesnt make
+//      sense that my note about a certain tree shows up at another tree").
 //   2. Signed in, reads your own row (RLS: own rows only), so your note shows
 //      as "Your note" even when your profile is private, and the sheet opens
 //      prefilled to edit it.
@@ -31,8 +30,6 @@ export const TREE_NOTES_JS = `
   if (!sec) return;
   var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
   var treeId = sec.getAttribute('data-tree');
-  var near = [];
-  try { near = JSON.parse(sec.getAttribute('data-near') || '[]'); } catch (e) {}
   var body = sec.querySelector('.td-notes-body');
   var btnsBox = sec.querySelector('.td-notes-btns');
   var T = function(k) { return sec.getAttribute('data-' + k) || ''; };
@@ -138,33 +135,16 @@ export const TREE_NOTES_JS = `
       placeAsk();
       return;
     }
-    // Nobody here yet: the nearest neighbour's note, the real thing, faded,
-    // with the line that says whose tree it is, inside the same grey card;
-    // else the card as the page rendered it.
-    var borrowed = null, from = null;
-    for (var i = 0; i < near.length && !borrowed; i++) {
-      for (var j = 0; j < rows.length; j++) {
-        if (rows[j].tree_id === near[i].id) { borrowed = rows[j]; from = near[i]; break; }
-      }
-    }
+    // Nobody here yet: the card as the page rendered it. It no longer
+    // borrows a neighbour's note (Hidde, 2026-11-03: "it doesnt make sense
+    // that my note about a certain tree shows up at another tree").
     body.innerHTML = ghost;
-    if (borrowed) {
-      var box = body.querySelector('.td-notes-empty');
-      var ask = box && box.querySelector('.td-notes-empty-s');
-      var p = el('p', 'td-notes-none');
-      var parts = T('borrowed').split('{tree}');
-      p.appendChild(document.createTextNode(parts[0]));
-      var a = el('a', null, from.name); a.href = from.url;
-      p.appendChild(a);
-      p.appendChild(document.createTextNode(parts[1] || ''));
-      if (ask) { ask.parentNode.insertBefore(p, ask); ask.parentNode.insertBefore(card(borrowed, false, true), ask); ask.remove(); }
-    }
     placeAsk();
   }
 
   function load() {
     var s = session();
-    var ids = [treeId].concat(near.map(function(n) { return n.id; }));
+    var ids = [treeId];
     var all = fetch(SB + '/rest/v1/rpc/tree_notes_for', { method: 'POST', headers: headers(null, true), body: JSON.stringify({ ids: ids }) })
       .then(function(r) {
         if (r.status === 404) { gone = true; return []; }
