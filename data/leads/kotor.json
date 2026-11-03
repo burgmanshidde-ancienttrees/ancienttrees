@@ -1,31 +1,41 @@
 {
-  "leads": [
-    {
-      "name": "Holm/downy oak of Ubalac (Quercus lanuginosa), Gornji Orahovac",
-      "species": "Downy Oak (Quercus pubescens; the draft calls it Quercus lanuginosa)",
-      "latitude": 42.5079074,
-      "longitude": 18.7185616,
-      "girth_cm": 535,
-      "height_m": 30,
-      "reason": "Draft municipal decision only (Nacrt odluke, Kotor, kotor.me files/documents/1780318219; blanks for ministry consent and session date), 'several hundred years old', municipal parcel 34 K.O. Orahovac II, 20 m protection radius, crown span 25 m, girth 5.35 m, height about 30 m. Official coordinate is the central point of the monument, so a pin is available. Not alive-checked: lifecheck NONE, no photo found, adoption unconfirmed, hamlet above Orahovac (about 10 km from Kotor Old Town by road), access to a village lane not confirmed. Recheck if adopted; likely ships then.",
-      "sources": ["https://www.kotor.me/files/documents/1780318219-Nacrt Odluke - Zaštita hrasta medunaca u selu Ubalac - Gornji Orahovac.docx"]
-    },
-    {
-      "name": "Veliki gradski park (Navy Park), Tivat: bunya pines and old exotics",
-      "latitude": 42.4337874,
-      "longitude": 18.6959839,
-      "reason": "Park-level natural monument (Tivat municipal decision 2014, category III, 5.9 ha; register entry since 1968 per tivat.travel Prirodna i kulturna bastina Tivta PDF). Founded 1892 under Admiral von Sterneck; the sailors-bring-a-tree custom is in the same PDF. No individual tree measured or located in any source seen (bunya pine and araucaria claims are from tourism pages only, one calls the araucaria 'Chilean' which conflicts with the species). Needs a named tree with a coordinate; an iNaturalist or OSM pass in the park could find one. No page for a whole park.",
-      "sources": ["https://tivat.travel/wp-content/uploads/2024/09/Prirodna-i-kultuna-bastina-Tivta.pdf"]
-    },
-    {
-      "name": "Olive groves of Valdanos and Dzidzarin, Ulcinj",
-      "reason": "Grove, not one collectible point. Tree counts (18,000 vs 80,000) and the '800 years average' conflict in tourism sources and come from no published survey. A dendrochronology date of 1,314 years for one tree in a private family grove (Olive Oil Times, via search summary, not fetched) is on private land with no location. Single tree with coordinate and access needed before it can ship.",
-      "sources": ["https://en.wikipedia.org/wiki/Valdanos"]
-    },
-    {
-      "name": "Plane trees, Perast, Prcanj, Dobrota, Risan, Herceg Novi (Savina)",
-      "reason": "No source found naming an individual old tree in these places; searches in English and Montenegrin returned only monument and history pages. No official list of protected trees (EPA Montenegro or municipal decisions) found beyond Kotor's poplar and Ubalac oak. Not researched further for lack of a naming body."
-    }
-  ],
-  "blocked": []
+ "leads": [
+  {
+   "name": "Holm/downy oak of Ubalac (Quercus lanuginosa), Gornji Orahovac",
+   "species": "Downy Oak (Quercus pubescens; the draft calls it Quercus lanuginosa)",
+   "latitude": 42.5079074,
+   "longitude": 18.7185616,
+   "girth_cm": 535,
+   "height_m": 30,
+   "reason": "Draft municipal decision only (Nacrt odluke, Kotor, kotor.me files/documents/1780318219; blanks for ministry consent and session date), 'several hundred years old', municipal parcel 34 K.O. Orahovac II, 20 m protection radius, crown span 25 m, girth 5.35 m, height about 30 m. Official coordinate is the central point of the monument, so a pin is available. Not alive-checked: lifecheck NONE, no photo found, adoption unconfirmed, hamlet above Orahovac (about 10 km from Kotor Old Town by road), access to a village lane not confirmed. Recheck if adopted; likely ships then.",
+   "sources": [
+    "https://www.kotor.me/files/documents/1780318219-Nacrt Odluke - Zaštita hrasta medunaca u selu Ubalac - Gornji Orahovac.docx"
+   ]
+  },
+  {
+   "name": "Veliki gradski park (Navy Park), Tivat: bunya pines and old exotics",
+   "latitude": 42.4337874,
+   "longitude": 18.6959839,
+   "reason": "Park-level natural monument (Tivat municipal decision 2014, category III, 5.9 ha; register entry since 1968 per tivat.travel Prirodna i kulturna bastina Tivta PDF). Founded 1892 under Admiral von Sterneck; the sailors-bring-a-tree custom is in the same PDF. No individual tree measured or located in any source seen (bunya pine and araucaria claims are from tourism pages only, one calls the araucaria 'Chilean' which conflicts with the species). Needs a named tree with a coordinate; an iNaturalist or OSM pass in the park could find one. No page for a whole park.",
+   "sources": [
+    "https://tivat.travel/wp-content/uploads/2024/09/Prirodna-i-kultuna-bastina-Tivta.pdf"
+   ],
+   "species": "Araucaria (Araucaria sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Olive groves of Valdanos and Dzidzarin, Ulcinj",
+   "reason": "Grove, not one collectible point. Tree counts (18,000 vs 80,000) and the '800 years average' conflict in tourism sources and come from no published survey. A dendrochronology date of 1,314 years for one tree in a private family grove (Olive Oil Times, via search summary, not fetched) is on private land with no location. Single tree with coordinate and access needed before it can ship.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Valdanos"
+   ]
+  },
+  {
+   "name": "Plane trees, Perast, Prcanj, Dobrota, Risan, Herceg Novi (Savina)",
+   "reason": "No source found naming an individual old tree in these places; searches in English and Montenegrin returned only monument and history pages. No official list of protected trees (EPA Montenegro or municipal decisions) found beyond Kotor's poplar and Ubalac oak. Not researched further for lack of a naming body.",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": []
 }

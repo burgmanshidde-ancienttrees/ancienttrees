@@ -49,7 +49,9 @@
    "girth_cm": 365,
    "height_m": 20,
    "coordinate": null,
-   "reason": "no photo or exact pin in reach; Forest Dept flyer lists Stone Pine at Filani (1 tree) but nothing else found; flyer is an image PDF, unreadable by fetch"
+   "reason": "no photo or exact pin in reach; Forest Dept flyer lists Stone Pine at Filani (1 tree) but nothing else found; flyer is an image PDF, unreadable by fetch",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "register_id": "CY-FD-04",
@@ -67,7 +69,9 @@
    "girth_cm": 310,
    "height_m": 12,
    "coordinate": null,
-   "reason": "not researched (time-box); register only"
+   "reason": "not researched (time-box); register only",
+   "species": "Cypress (Cupressus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "register_id": "CY-FD-03",
@@ -76,7 +80,9 @@
    "girth_cm": 300,
    "height_m": 16,
    "coordinate": null,
-   "reason": "not researched (time-box); register only"
+   "reason": "not researched (time-box); register only",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "register_id": "CY-FD-11",
@@ -85,7 +91,9 @@
    "girth_cm": 400,
    "height_m": 20,
    "coordinate": null,
-   "reason": "not researched: remote Tillyria, and the north-side enclave risk needs checking"
+   "reason": "not researched: remote Tillyria, and the north-side enclave risk needs checking",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": []

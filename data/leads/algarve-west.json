@@ -3,14 +3,18 @@
   {
    "name": "Cork oak (sobreiro) in the Monchique 'Rota das Arvores Monumentais' (Via Algarviana guide)",
    "place": "Monchique",
-   "reason": "Guide PDF at portuguesetrails.com (Via Algarviana - Guia Rota das Arvores Monumentais, PT/EN) is image-only; no text extractor on this Mac (no pdftotext/pypdf). Needs a session that can OCR or view the PDF pages; likely the same ICNF trees already mined (Barranco dos Pisoes, Quinta da Vila, EN 267, Pomar Velho, Quinta do Viador)."
+   "reason": "Guide PDF at portuguesetrails.com (Via Algarviana - Guia Rota das Arvores Monumentais, PT/EN) is image-only; no text extractor on this Mac (no pdftotext/pypdf). Needs a session that can OCR or view the PDF pages; likely the same ICNF trees already mined (Barranco dos Pisoes, Quinta da Vila, EN 267, Pomar Velho, Quinta do Viador).",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Evergreen magnolia, Convent of Nossa Senhora do Desterro, Monchique",
    "place": "Monchique",
    "reason": "No new evidence; komoot route lists the 1631 convent ruin as a waypoint but no tree detail (page behind sign-in). Still no photo or pin.",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "species": "Magnolia (Magnolia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Silves municipal urban tree inventory (7,883 trees, 135 species, 2025 postal.pt article)",
