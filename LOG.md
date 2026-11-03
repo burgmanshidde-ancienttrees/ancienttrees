@@ -24,6 +24,16 @@ What changed on the site (Sintra, from the ambassador's mail of 2026-11-03 with 
 All four photographs are a contributor's photographs sent by mail: up at once, uncredited, in the Montreal mtl_015 shape. gigantesverdes.pt gave nothing searchable without a session. Nothing was mailed.
 Breakage, not ours: preflight fails on site/src/components/AmbassadorLine.astro (typed text, already in HEAD). qa.py needs a built site, so CI checks it.
 
+## 2026-11-03 session with Hidde: the city list takes the app's card
+
+What changed in the product, web and app:
+- **The tree card on the web is now the app's card** (Hidde: "arent we going to far away from app design we need some consistency across platforms"). Photo 190 high, name 17 bold, one grey line "European Yew · 306 years". The Latin name and the neighbourhood left the card (the story and the tree page carry them). A tree without a photograph gets the app's green tile with its species silhouette, its name and "No photograph yet", on every list that uses TreeCard. The web keeps two lines of story and the credit, which Contract C and the licences ask for. Your own photograph fills the tile in My trees.
+- **The city intro folds to three lines with Read more on every width**, as the phone already did (Hidde: "ingeklapt lijkt me goed"). The whole text stays in the page.
+- **The empty ambassador seat is a circle alone at the end of the ambassador's row** (Hidde: "become one is weird text does it even need text?"). Web live after the deploy; app on main.
+- Mockups compared with Airbnb's search results first; the Airbnb-style card was dropped for the app's.
+
+For Hidde: the next app build carries the ambassador seat on the person's row.
+
 ## 2026-11-03 session: app, your own tree's photo size, the Want to visit message, the freeze
 
 - **Your own tree's page now opens its photograph at the same size as ours** (Hidde: "die pagina's moeten gewoon hetzelfde zijn"). The hero read its shape only from the feed, so a tree of yours fell back to a fixed 300 points; it now reads the shape from your picture by heroFrame's rule (3:2 landscape, own shape up to 4:5). Not seen rendered: the simulator keeps no own trees while signed out.

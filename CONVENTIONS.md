@@ -3366,6 +3366,14 @@ with a plus. Ours: under the person, a 22px dashed circle with a plus in the
 ambassador" in the 12px grey of the role line under the name. No rule: the
 empty circle says it is the next seat. Web and app.
 
+**Changed 2026-11-03: the seat alone, on the person's row.** Hidde: "become one
+is weird text does it even need text?", and the block took too much room above
+the trees. Google Docs ends its row of avatars with a dashed "add people"
+circle and no words. Ours: a 28px dashed circle with a plus at the end of the
+named person's row, 44px to hit, the words only for screen readers and as the
+tooltip; once asked the plus turns into a tick. A place with nobody named keeps
+its words. Web and app.
+
 ## Crediting the person behind a list: a byline, never a sentence (2026-10-03)
 
 **The interaction: a public page names the person who looks after it.** Looked
