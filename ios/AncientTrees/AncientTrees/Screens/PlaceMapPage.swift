@@ -170,6 +170,11 @@ struct PlaceMapPage: View {
                 // trees as the website prints it under the intro.
                 if case .city(let slug) = place {
                     let named = catalogue.facets.ambassadors(city: slug)
+                    // ONE ROW (Hidde, 2026-11-03): the empty seat sits at the
+                    // end of the named person's row, the circle alone, so the
+                    // trees start higher. As the website (AmbassadorLine.astro).
+                    HStack(spacing: 8) {
+                    VStack(alignment: .leading, spacing: 0) {
                     ForEach(named, id: \.self) { a in
                         // The row opens the person's profile while it is
                         // public, with the chevron the open seat's row wears;
@@ -191,10 +196,17 @@ struct PlaceMapPage: View {
                             AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
                         }
                     }
+                    }
+                    if !named.isEmpty {
+                        AmbassadorWantedRow(place: title, seated: true, iconOnly: true)
+                    }
+                    }
                     // The open seat, as the website draws it. A place somebody
                     // already looks after keeps the row, asking for "an"
                     // ambassador (Hidde, 2026-10-27).
-                    AmbassadorWantedRow(place: title, seated: !named.isEmpty || catalogue.facets.seated(city: slug))
+                    if named.isEmpty {
+                        AmbassadorWantedRow(place: title, seated: catalogue.facets.seated(city: slug))
+                    }
                 }
                 ForEach(inTown) { t in card(t) }
                 // A DAY TRIP AWAY, on the website's word (Hidde approved the

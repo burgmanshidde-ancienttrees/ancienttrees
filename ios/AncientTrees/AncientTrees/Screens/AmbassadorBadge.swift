@@ -226,6 +226,11 @@ struct AmbassadorWantedRow: View {
     /// may still sign up). The row stays, as Google's "Join Local Guides" is
     /// there however many guides a place has, and says "an", not "the".
     var seated = false
+    /// THE SEAT ALONE, at the end of the named person's row (Hidde,
+    /// 2026-11-03: "become one is weird text does it even need text?"): the
+    /// dashed circle with a plus, as Google Docs ends its avatars with "add
+    /// people". The words stay for VoiceOver. Website: AmbassadorLine.astro.
+    var iconOnly = false
 
     @Environment(Account.self) private var account
     @State private var asked = false
@@ -320,9 +325,25 @@ struct AmbassadorWantedRow: View {
         if !isMine { row }
     }
 
+    private var seatIcon: some View {
+        ZStack {
+            Circle()
+                .strokeBorder(Brand.inkSoft.opacity(0.8),
+                              style: StrokeStyle(lineWidth: 1.5, dash: [3, 2]))
+                .frame(width: 28, height: 28)
+            Image(systemName: asked ? "checkmark" : "plus")
+                .font(.system(size: 12, weight: .bold))
+                .foregroundStyle(Brand.inkSoft)
+        }
+        .frame(width: 44, height: 44)
+        .contentShape(.rect)
+        .accessibilityElement()
+        .accessibilityLabel(asked ? "Request sent." : "Become an ambassador")
+    }
+
     private var row: some View {
         Button(action: tap) {
-            if seated { seatedLine } else { openRow }
+            if iconOnly { seatIcon } else if seated { seatedLine } else { openRow }
         }
         .buttonStyle(.plain)
         .disabled(asked || sending)

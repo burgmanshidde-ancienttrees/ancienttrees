@@ -25,6 +25,7 @@ import { seasonChip } from "../lib/phenology";
 import { ageShort } from "../lib/age-short";
 import { latinHtml } from "../lib/latin";
 import SaveHeart from "./SaveHeart.astro";
+import { speciesIcon } from "../lib/species-icons";
 
 interface Props {
   tree: any;
@@ -136,7 +137,13 @@ const text = note ?? (variant === "full" ? story : firstSentence(story));
 const linkName = true;
 // The meta line is the same three facts in the same order on every page, which
 // is most of what "shown the same way" means to a reader.
-const metaParts = [omitSpecies ? "" : species, omitAge ? "" : age, (tree.location?.neighbourhood ?? "").trim()]
+//
+// THE APP'S META LINE (Hidde, 2026-11-03: "arent we going to far away from app
+// design we need some consistency across platforms"): TreeCard.swift prints the
+// common name and the short age, nothing else. The scientific name stays in the
+// story and on the species page; the neighbourhood is on the tree page.
+const commonName = species.replace(/\s*\(.*\)\s*$/, "").trim();
+const metaParts = [omitSpecies ? "" : commonName, omitAge ? "" : age]
   .map((s) => (s ?? "").trim())
   .filter(Boolean);
 // THE TAG ROW (Hidde, 2026-10-04, approving the mockup): at most two small
@@ -153,10 +160,16 @@ function esc(s: string): string {
 // A green disc with a white tick, the app's checkmark.seal drawn flat.
 const SEEN_MARK = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#4A6B2A"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 // The species keeps its scientific name in italics (latin.ts, 2026-10-12).
-const metaHtml = metaParts.map((s) => s === species ? latinHtml(s) : esc(s)).join(" &middot; ");
+const metaHtml = metaParts.map((s) => esc(s)).join(" &middot; ");
+// A tree without a photograph gets the app's tile (TreeCard.swift noPhoto,
+// leafTile in Style.swift): the green gradient, the species silhouette from the
+// map pins (species-icons.ts), the common name and "No photograph yet". Not an
+// empty frame: it still says what kind of tree it is (2026-11-03, replacing the
+// photo-less row of 2026-10-04 so web and app draw the same card).
+const tileIcon = hasPhoto ? "" : speciesIcon(tree);
 ---
 <article
-  class:list={["tree-card", "tree-card-link", { "tree-card-nonum": true, "tree-card-nophoto": !(photo && photo.url) }]}
+  class:list={["tree-card", "tree-card-link", { "tree-card-nonum": true, "tree-card-hastile": !(photo && photo.url) }]}
   id={index === undefined ? undefined : `tree-${index}`}
   data-tree-id={tree.id}
 >
@@ -177,11 +190,24 @@ const metaHtml = metaParts.map((s) => s === species ? latinHtml(s) : esc(s)).joi
       </div>
     </Fragment>
   )}
+  {!hasPhoto && (
+    <div class="tree-card-photo tree-card-tile">
+      <div class="tree-card-tile-art" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><Fragment set:html={tileIcon} /></svg>
+        {commonName && <span class="tree-card-tile-name">{commonName}</span>}
+        <span class="tree-card-tile-none">{U.noPhotoYet}</span>
+      </div>
+      <SaveHeart treeId={tree.id} treeName={name} look="card" labelSave={L.save} labelSaved={L.saved}
+                 treeUrl={href} meta={metaParts.join(" \u00b7 ") || undefined} />
+      {(chip || canTick) && (
+        <div class="tag-row">
+          {chip && <Fragment set:html={chip} />}
+          {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{U.seenChip}</span></span>}
+        </div>
+      )}
+    </div>
+  )}
   <div class="tree-card-top">
-    {!(photo && photo.url) && <SaveHeart treeId={tree.id} treeName={name} look="card" labelSave={L.save} labelSaved={L.saved}
-                treeUrl={href}
-                photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
-                meta={metaParts.join(" \u00b7 ") || undefined} />}
     {/* NO NUMBER (Hidde, 2026-10-05: "zijn die nummers echt nodig?"). The pins
         carry none, so the number pointed at nothing and cost the title its
         width; AllTrails, Google Maps and Airbnb number no result list, and
@@ -201,12 +227,6 @@ const metaHtml = metaParts.map((s) => s === species ? latinHtml(s) : esc(s)).joi
   {/* Without a photograph the tags follow the title, on the line under it,
       where Google Maps puts "Open now" under a place's name (Hidde, 2026-10-04:
       "don't most competitors put the label behind the title"). */}
-  {!hasPhoto && (chip || canTick) && (
-    <div class="tag-row tag-row-under">
-      {chip && <Fragment set:html={chip} />}
-      {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{U.seenChip}</span></span>}
-    </div>
-  )}
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
   {text && <p class="tree-story" set:html={latinHtml(text)} />}
   {/* The credit closes the card rather than sitting between the photograph

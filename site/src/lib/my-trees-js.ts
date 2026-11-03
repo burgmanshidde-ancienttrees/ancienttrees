@@ -146,7 +146,20 @@ export const MY_TREES_JS = `
       Array.prototype.forEach.call(cards, function(art) {
         // Ours wins where we have one, which is the Google Maps reading: the
         // place keeps its own picture. An empty slot is where yours goes.
-        if (art.querySelector('.tree-card-photo')) return;
+        if (art.querySelector('.tree-card-photo:not(.tree-card-tile)')) return;
+        // The app's green tile stands where no photograph is (2026-11-03):
+        // yours goes into it, over the silhouette, keeping its heart and tags.
+        var tile = art.querySelector('.tree-card-tile');
+        if (tile) {
+          if (tile.querySelector('img')) return;
+          var timg = document.createElement('img');
+          timg.src = url; timg.loading = 'lazy';
+          var tn = art.querySelector('.tree-name');
+          timg.alt = 'Your photograph of ' + ((tn && tn.textContent) || 'this tree');
+          tile.insertBefore(timg, tile.firstChild);
+          tile.classList.add('tree-card-yours-photo');
+          return;
+        }
         var box = document.createElement('div');
         box.className = 'tree-card-photo tree-card-yours-photo';
         var img = document.createElement('img');

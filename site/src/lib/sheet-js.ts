@@ -170,11 +170,11 @@ export const SHEET_JS = `
   // titel wel afkappen want die is te lang, maar klikbaar maken als je m wel
   // wilt lezen"). Tapping it opens it, and it stays open: a block that
   // collapses again under the next tap moves the list while you are reading
-  // it. Desktop never clamps, so this does nothing there.
+  // it. Since 2026-11-03 the desktop clamps it too (Hidde: "ingeklapt").
   var intro = document.querySelector('.city-intro');
   if (intro) {
     intro.addEventListener('click', function(e) {
-      if (!mq.matches || intro.classList.contains('is-open')) return;
+      if (intro.classList.contains('is-open')) return;
       if (e.target.closest('a, .ambassadors')) return;
       intro.classList.add('is-open');
     });

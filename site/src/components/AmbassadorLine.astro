@@ -63,11 +63,19 @@ const { people, lang = "en", place, requestCity, seated = false } = Astro.props 
 const U = ui(lang);
 const taken = seated || people.length > 0;
 const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place)) : "";
+// The seat goes icon-only beside a named person; alone it keeps its words.
+const iconSeat = !!(place && requestCity && people.length > 0);
 // THE NAME OPENS THE PROFILE when its owner made it public (Hidde,
 // 2026-10-19, design page frames 1 and 6): the whole row is the link
 // with a chevron, as the open seat's row already is. A private profile
 // keeps plain text, so no link ever lands on a closed page.
 ---
+{/* ONE ROW (Hidde, 2026-11-03: "become one is weird text does it even need
+    text?", and the block took too much room above the trees): the empty seat
+    sits at the end of the named person's row as a circle alone, the way
+    Google Docs puts its dashed "add people" circle at the end of the avatars.
+    The words stay for screen readers and as the tooltip. */}
+<div class:list={["ambassador-bar", { "ambassador-bar-seat": iconSeat }]}>
 {people.length > 0 && (
   <ul class="ambassadors" aria-label={U.ambassadorsLabel}>
     {people.map((p) => {
@@ -92,8 +100,13 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
   </ul>
 )}
 {place && requestCity && (
-  <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
-    {taken ? (
+  <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 && !iconSeat }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
+    {iconSeat ? (
+      <button type="button" class="ambassador-apply ambassador-act ambassador-act-icon" aria-label={openTitle} title={openTitle}>
+        <span class="ambassador-seat" aria-hidden="true"><Fragment set:html={icon("plus", "bold", "ic seat-plus")} /><Fragment set:html={icon("check", "bold", "ic seat-check")} /></span>
+        <span class="ambassador-role sr-only" data-done={U.ambassadorApplied}>{openTitle}</span>
+      </button>
+    ) : taken ? (
       <button type="button" class="ambassador-apply ambassador-act" aria-label={openTitle}>
         <span class="ambassador-seat" aria-hidden="true"><Fragment set:html={icon("plus", "bold", "ic")} /></span>
         <span class="ambassador-role" data-done={U.ambassadorApplied}>{openTitle}</span>
@@ -111,6 +124,9 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
       </button>
     )}
   </div>
+)}
+</div>
+{place && requestCity && (
   <Sheet lang={lang} class="amb-dialog" id="amb-dialog" aria-labelledby="amb-title">
     {/* THE ONE SHEET (components/Sheet.astro, 2026-10-10): a sheet from
         the bottom on a phone, like every other, with the three lines as rows
@@ -150,7 +166,7 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
     var first = line.textContent;
     var city = box.getAttribute('data-city');
     var SB = box.getAttribute('data-sb'), KEY = box.getAttribute('data-key');
-    function done() { line.textContent = line.getAttribute('data-done'); btn.disabled = true; box.classList.add('ambassador-asked'); }
+    function done() { line.textContent = line.getAttribute('data-done'); if (btn.title) { btn.title = line.textContent; btn.setAttribute('aria-label', line.textContent); } btn.disabled = true; box.classList.add('ambassador-asked'); }
     function headers(s, json) {
       var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
       if (json) { h['Content-Type'] = 'application/json'; h['Prefer'] = 'return=minimal'; }
@@ -230,7 +246,7 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
       }).catch(function() { send.disabled = false; });
     });
     document.addEventListener('at:signedout', function() {
-      line.textContent = first; btn.disabled = false; box.classList.remove('ambassador-asked');
+      line.textContent = first; if (btn.title) { btn.title = first; btn.setAttribute('aria-label', first); } btn.disabled = false; box.classList.remove('ambassador-asked');
     });
   });
   </script>
@@ -290,6 +306,18 @@ const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place))
     border: 1.5px dashed var(--ink-mid); box-sizing: border-box; opacity: .8; }
   .ambassador-seat :global(.ic) { grid-area: 1 / 1; width: 11px; height: 11px; fill: var(--ink-mid); }  @media (hover: hover) { .ambassador-act:not(:disabled):hover .ambassador-role { text-decoration: underline; } }
   .ambassador-act:disabled { cursor: default; }
+  /* One row: the named person and, at its end, the empty seat alone. */
+  .ambassador-bar-seat { display: flex; align-items: center; gap: 8px; margin-top: 1rem; }
+  .ambassador-bar-seat .ambassadors { margin: 0; flex: 1; min-width: 0; }
+  .ambassador-bar-seat .ambassador-open { flex: none; }
+  .ambassador-act-icon { width: 44px; height: 44px; min-height: 44px; justify-content: center; }
+  .ambassador-act-icon .ambassador-seat { width: 44px; }
+  .ambassador-act-icon .ambassador-seat::before { width: 28px; height: 28px; }
+  .ambassador-act-icon .ambassador-seat :global(.ic) { width: 13px; height: 13px; }
+  .ambassador-act-icon .ambassador-seat :global(.seat-check) { display: none; }
+  .ambassador-asked .ambassador-act-icon .ambassador-seat :global(.seat-plus) { display: none; }
+  .ambassador-asked .ambassador-act-icon .ambassador-seat :global(.seat-check) { display: block; }
+  @media (hover: hover) { .ambassador-act-icon:not(:disabled):hover .ambassador-seat::before { border-color: var(--ink); opacity: 1; } }
   .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
   .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }
 </style>

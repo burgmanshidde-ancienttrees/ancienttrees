@@ -216,7 +216,18 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
    tree card's worth of room. In the scroll area it is shown whole and it
    scrolls away. The divider follows it so the desktop panel is unchanged. */
 .city-intro { padding: 0 var(--gutter) 1.5rem; border-bottom: 1px solid var(--cream-dark); }
-.city-intro-more { display: none; }
+/* Clamped to three lines on every width (Hidde, 2026-11-03: "ingeklapt lijkt
+   me goed"), as the phone has done since 2026-08-18: at full length the intro
+   pushed the first tree below a laptop's fold. One tap opens it and it stays
+   open; the whole text is in the page either way. */
+.city-intro .lede { display: -webkit-box; -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; overflow: hidden; }
+.city-intro:not(.is-open) { cursor: pointer; }
+.city-intro.is-open .lede { -webkit-line-clamp: unset; overflow: visible; }
+.city-intro-more { display: inline-block; margin-top: 0.35rem; padding: 0;
+  background: none; border: 0; cursor: pointer;
+  font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--moss); }
+.city-intro.is-open .city-intro-more { display: none; }
 /* Two pieces of furniture that belong to the phone sheet only. Without
    these the desktop split renders a stray back button and a tree count
    under the heading, because their display rules live inside the phone
@@ -433,6 +444,24 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .tree-card .tree-story { margin: 0 var(--gutter); font-size: 14px; font-weight: 400; line-height: 1.55; -webkit-line-clamp: 2; }
 .tree-card .tree-card-seen-line { margin: 8px var(--gutter) 0; }
 .tree-card.mine-card .mine-state { margin-left: var(--gutter); margin-right: var(--gutter); }
+/* THE APP'S CARD (Hidde, 2026-11-03: "arent we going to far away from app
+   design we need some consistency across platforms"). TreeCard.swift's
+   numbers: the photograph 190 high, the name 17 bold, one 12px meta line, and
+   for a tree without a photograph the leaf tile (leafTile in Style.swift):
+   the green gradient, the species silhouette, its name and "No photograph
+   yet". The web keeps two lines of story and the credit under it, which the
+   city page's contract and the licences ask for. */
+.tree-card .tree-card-photo { aspect-ratio: auto; height: 190px; }
+.tree-card .tree-name { font-size: 17px; font-weight: 700; }
+.tree-card .tree-meta { font-size: 12px; }
+.tree-card-tile { background: linear-gradient(135deg, #3A5222, #597A4D); }
+.tree-card-tile-art { position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 6px; color: #fff; text-align: center; padding: 0 56px; }
+.tree-card-tile-art svg { width: 66px; height: 66px; fill: rgba(255, 255, 255, 0.9); }
+.tree-card-tile-name { font-size: 14px; font-weight: 600; line-height: 1.25; }
+.tree-card-tile-none { font-size: 11px; color: rgba(255, 255, 255, 0.75); }
+.tree-card-tile > img { position: absolute; inset: 0; }
+.tree-card-tile.tree-card-yours-photo .tree-card-tile-art { display: none; }
 .panel-foot { padding: var(--gutter); font-size: 13px; color: var(--ink-mid); }
 .subtle-suggest b { color: var(--ink); font-weight: 700; }
 .panel-foot h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; margin-bottom: 0.75rem; }
@@ -2034,15 +2063,7 @@ footer { border-top: 1px solid var(--cream-dark); }
      tree card most of a screen down, which is the opposite of what the list
      is for; unreadable-and-stuck was the older mistake, so it opens rather
      than staying cut. */
-  .city-intro { padding: 1rem var(--gutter) 1.1rem; cursor: pointer; }
-  .city-intro .lede { display: -webkit-box; -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; overflow: hidden; }
-  .city-intro.is-open .lede { -webkit-line-clamp: unset; overflow: visible; }
-  .city-intro-more { display: inline-block; margin-top: 0.35rem; padding: 0;
-    background: none; border: 0; cursor: pointer;
-    font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--moss); }
-  .city-intro.is-open { cursor: auto; }
-  .city-intro.is-open .city-intro-more { display: none; }
+  .city-intro { padding: 1rem var(--gutter) 1.1rem; }
   .panel-head { padding: 1.25rem var(--gutter) 1rem; }
   .panel-head h1 { font-size: 1.6rem; }
   .home-hero { height: 60vh; }
