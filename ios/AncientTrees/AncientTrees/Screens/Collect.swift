@@ -840,31 +840,11 @@ struct CollectView: View {
                         SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: wantShots[t.id]).clipShape(Self.tileShape) }
                             .accessibilityIdentifier("tree-card")
                             .accessibilityLabel(t.name)
-                            // ASK A FRIEND ALONG (Hidde, 2026-10-30, on the
-                            // design page: "voorstel b lijkt me een goeie"). A
-                            // tree you want to visit is a walk you might take
-                            // with somebody. One white disc where Airbnb puts
-                            // its heart, the share arrow AllTrails uses on a
-                            // saved route; the system share sheet does the rest.
-                            .overlay(alignment: .topTrailing) {
-                                if let url = Shared.page(t.url, from: "want_to_visit") {
-                                    ShareLink(item: url, subject: Text(t.name),
-                                              message: Text("Shall we go and see this one? \(t.name), \(t.city).")) {
-                                        Image(systemName: "square.and.arrow.up")
-                                            .font(.system(size: 13, weight: .semibold))
-                                            .foregroundStyle(Brand.ink)
-                                            .frame(width: 30, height: 30)
-                                            .background(Brand.surface, in: .circle)
-                                            .shadow(color: .black.opacity(0.12), radius: 3, y: 1)
-                                            .padding(7)
-                                            .contentShape(.rect)
-                                    }
-                                    .buttonStyle(.plain)
-                                    .countsShare("want_to_visit")
-                                    .accessibilityLabel("Share \(t.name)")
-                                    .accessibilityIdentifier("want-share")
-                                }
-                            }
+                            // NO SHARE DISC ON THE TILE (Hidde, 2026-11-03:
+                            // "a bit intrusive ... lets get rid of them",
+                            // undoing his 2026-10-30 pick). Airbnb's and
+                            // AllTrails' saved lists show the picture alone;
+                            // sharing one tree lives on its own page.
                     }
                     // A SHORT LIST STILL INVITES MORE (Hidde, 2026-10-12: "if
                     // want to visit has 1 or 2 trees in it it should still
