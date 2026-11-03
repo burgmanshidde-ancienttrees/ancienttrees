@@ -12,6 +12,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-04 session: California second pass, 4 more trees held for the pace (LA 19, San Diego 13 once built)
+
+**What changed in the product (once built):** two Huntington trees for Los Angeles (the Rose Garden Montezuma cypress grown from 1912 Chapultepec seed, with a CC0 iNaturalist photograph, and the twice-lived Chinese Garden coast live oak, 200 to 300 years by the Huntington's figures), and two for San Diego outside Balboa Park (the Florence Hotel fig on Grape Street, view-only from the sidewalk, and the Kensington library park hoop pine). LA's answer to "oldest tree" now names the oak as older by estimate. All in `scripts/build_us_california.py` beside the 18 from 11-02/03; tested, preflight fails only on the pace; reverted.
+
+**What yielded nothing:** Old Town and Presidio peppers (no single trunk placeable), the Huntington's Moreton Bay chestnut (no independent source). Rejects to data/leads/los-angeles.json and san-diego.json. About 320k tokens, 80k a tree; California is now near its yield floor for from-zero research.
+
 ## 2026-11-03 session: Edinburgh 16 to 21, the first part of the held UK batch
 
 - Live: five Edinburgh trees from the UK round (Robert Louis Stevenson's Yew at Colinton, the Sweet Chestnut of Modern One, the Hawes Inn Yew, the Four Disciples of Malleny, the Redford Wood Redwood), with the rewritten intro and an FAQ that no longer counts sixteen. Built by `python3 scripts/build_uk.py --only edinburgh` (new `--only` flag, so the batch goes out in pace-sized parts).
