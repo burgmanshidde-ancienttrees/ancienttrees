@@ -32,6 +32,8 @@ struct ContentView: View {
     /// exactly that: the root is built once per launch and never again when
     /// somebody comes back from the home screen.
     @State private var showingCover = !ProcessInfo.processInfo.arguments.contains("-no-cover")
+    /// The height of a pushed page's docked bar, which the snackbar sits on.
+    @State private var snackLift: CGFloat?
     /// Reporting and blocking, which the social half cannot ship without.
     @State fileprivate var moderation = Moderation()
     /// What this account has already said about a tree, read from the account
@@ -657,7 +659,15 @@ struct ContentView: View {
         // applies its automatic .fill inside the tab item, underneath
         // an environment set on the TabView itself.
         .safeAreaInset(edge: .bottom, spacing: 0) { tabBarInset }
-        .overlay(alignment: .bottom) { SnackBar() }
+        // Above the tab bar on a tab's root, above the page's own docked bar
+        // on a pushed page that has one (SnackLift), and otherwise near the
+        // foot. It sat 92 up everywhere, which floated it over the middle of
+        // a country page with no bar under it (Hidde, 2026-11-03: "gewoon
+        // een beetje gek hoog"). Material 3's placement, CONVENTIONS.md.
+        .onPreferenceChange(SnackLift.self) { snackLift = $0 }
+        .overlay(alignment: .bottom) {
+            SnackBar(lift: path(tab).wrappedValue.isEmpty ? 92 : (snackLift ?? 0) + 12)
+        }
         .overlay(alignment: .top) { nearbyBannerOverlay }
         .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)
         .task(id: nearKey) { checkNearby() }
@@ -1074,6 +1084,14 @@ struct ContentView: View {
             if let spec = args.first(where: { $0.hasPrefix("-open=") })?.dropFirst(6),
                let route = Self.debugRoute(String(spec)) {
                 path(tab).wrappedValue = [route]
+            }
+            // -snack shows "Added to Want to visit" a beat after launch, so
+            // its place over each screen can be looked at without a finger.
+            if args.contains("-snack") {
+                Task { @MainActor in
+                    try? await Task.sleep(for: .seconds(6))
+                    navigator.snack = .init(text: "Added to Want to visit", viewWantToVisit: true)
+                }
             }
             if args.contains("-signin") {
                 rootSheet = .signIn(.keepTree("The Last Elm of Stationsplein"))

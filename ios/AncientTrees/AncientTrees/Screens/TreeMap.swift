@@ -625,9 +625,13 @@ struct TreeMap: UIViewRepresentable {
             }
             // The collected set joins the identity of what is drawn: without
             // it, ticking a tree off changes no id and the pins never redraw.
-            let wantTrees = Set(trees.map(\.id))
-                .union(parent.collected.intersection(trees.map(\.id)).map { "c:" + $0 })
-                .union(parent.favourites.intersection(trees.map(\.id)).map { "f:" + $0 })
+            // The ids once, not three times: with every tree on the map this
+            // ran on each update and was the frame the watchdog caught when
+            // the app froze (crash of 2026-11-03 17:45, TreeMap.swift:629).
+            let ids = Set(trees.map(\.id))
+            let wantTrees = ids
+                .union(parent.collected.intersection(ids).map { "c:" + $0 })
+                .union(parent.favourites.intersection(ids).map { "f:" + $0 })
             let wantMine = Set(mine.map { $0.id.uuidString })
             MainActor.assumeIsolated {
             if wantTrees != drawnTreeIDs {

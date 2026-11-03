@@ -76,6 +76,7 @@ struct TreeDetail: View {
     /// The visible page, measured, so the hero can take the lead's shape and
     /// still stop at 60 percent of the screen, as the website does (60svh).
     @State private var pageSize: CGSize = .zero
+    @State private var barHeight: CGFloat?
     /// One of YOUR photographs of this tree, full screen.
     @State private var viewingOwn: Sightings.Sighting?
     /// The picture the share sheet hands on, drawn once when a tree of yours
@@ -358,6 +359,9 @@ struct TreeDetail: View {
             .ignoresSafeArea(edges: .top)
             .toolbarBackground(.hidden, for: .navigationBar)
             actionBar
+                // The snackbar ("Added to Want to visit") stands on this bar.
+                .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { barHeight = $0 }
+                .preference(key: SnackLift.self, value: barHeight)
                 // On the bar and not on the page: the page already carries the
                 // Remove dialog, and SwiftUI shows only one dialog per view, so
                 // a second one there never appeared (2026-09-26). An alert,
@@ -1026,8 +1030,22 @@ struct TreeDetail: View {
     /// name still shows on a short phone. 300 until the page is measured or
     /// for a catalogue older than the `frame` field, which is what it was.
     private var heroHeight: CGFloat {
-        guard pageSize.width > 0, let r = tree.photo?.frame, r > 0 else { return 300 }
+        guard pageSize.width > 0, let r = heroFrame, r > 0 else { return 300 }
         return min(pageSize.width / CGFloat(r), pageSize.height * 0.6).rounded()
+    }
+
+    /// Width over height for the hero. Ours comes from the feed; your own
+    /// photograph has no feed entry, so its shape is read from the picture
+    /// itself by the same rule (heroFrame in images.ts: 3:2 from 1.4 up, its
+    /// own shape below, never narrower than 4:5). Without this a portrait
+    /// photograph of your own tree stood 300 points tall where ours stand at
+    /// 4:5 (Hidde, 2026-11-03: "die pagina's moeten gewoon hetzelfde zijn").
+    private var heroFrame: Double? {
+        if let shot = heroOwnShot, shot.size.height > 0 {
+            let r = Double(shot.size.width / shot.size.height)
+            return r >= 1.4 ? 1.5 : max(r, 0.8)
+        }
+        return tree.photo?.frame
     }
 
     /// The photograph the hero is showing, for the credit line.

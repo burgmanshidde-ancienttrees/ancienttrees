@@ -101,9 +101,20 @@ struct SaveHeart: View {
     }
 }
 
+/// How tall a pushed page's docked bar stands above the bottom safe area,
+/// so the snackbar sits just on top of it. A page without one says nothing.
+struct SnackLift: PreferenceKey {
+    static let defaultValue: CGFloat? = nil
+    static func reduce(value: inout CGFloat?, nextValue: () -> CGFloat?) {
+        if let n = nextValue() { value = max(value ?? 0, n) }
+    }
+}
+
 /// The confirmation line itself, drawn once by the root over every screen.
-/// Above the floating tab bar and the tree page's action bar alike.
+/// `lift` is the distance from the bottom safe area: above the floating tab
+/// bar, above a page's docked bar, or just off the foot.
 struct SnackBar: View {
+    var lift: CGFloat = 92
     @Environment(Navigator.self) private var navigator
     @Environment(Saved.self) private var saved
 
@@ -147,7 +158,7 @@ struct SnackBar: View {
             .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Brand.hairline, lineWidth: 1) }
             .shadow(color: .black.opacity(0.16), radius: 14, y: 4)
             .padding(.horizontal, 16)
-            .padding(.bottom, 92)
+            .padding(.bottom, lift)
             .transition(.move(edge: .bottom).combined(with: .opacity))
             .accessibilityElement(children: .contain)
             .accessibilityIdentifier("snack")
