@@ -1,0 +1,51 @@
+{
+  "city": "Doneraile",
+  "country": "Ireland",
+  "updated": "2026-11-03",
+  "about": "Doneraile Park (OPW / Heritage Ireland, free parkland, 8-20h spring and summer, 8-17h autumn and winter per UCC Tree Explorers) round 2. Zero verified: no source (OPW, Heritage Ireland, Irish Examiner 2014 and 2016, UCC, audio guide) names an individual placeable tree; they speak of Beech Avenue, Lime Walk, larches of 1730, oaks above Lady's Well Wood. Only measured trees are two yews on the Ancient Yew Group database, whose own page says exact positions are not known.",
+  "leads": [
+    {
+      "name": "Large twin-stem yew",
+      "register_record": "580/649",
+      "species": "Yew (Taxus baccata)",
+      "latitude": 52.21484,
+      "longitude": -8.58013,
+      "girth_cm": 613,
+      "source": "https://www.ancient-yew.org/yew_trees/doneraile-park-2730/ (girth 613 cm at 40 cm, Tree Register of Ireland, visit 25 Sep 2009; 'one of the largest yews in the country', appears two-stemmed) + Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Cannot be tied to a register row or a spot (ancient-yew.org: exact position of yews not known; its map point 52.216529,-8.583061 is site level); no life evidence after 2009."
+    },
+    {
+      "name": "Circle of yews",
+      "species": "Yew (Taxus baccata)",
+      "latitude": 52.21447,
+      "longitude": -8.57942,
+      "girth_cm": 349,
+      "source": "https://www.ancient-yew.org/yew_trees/doneraile-park-5144/ (largest in a circle around a 2.2 m empty space, up to 9 m tall, 2009)",
+      "reason": "Possibly a compact ensemble worth a pin, but position uncertain between register rows 580/649; needs a map or OSM feature."
+    },
+    {
+      "register_record": "510",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 52.21356,
+      "longitude": -8.56908,
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Trees with character, fungi; register only, unnamed, no life evidence."
+    },
+    {
+      "register_record": "83",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "latitude": 52.21876,
+      "longitude": -8.57826,
+      "age_register": "200-300",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Arboricultural curiosity, holes; register only, may be on the golden avenue (chestnuts, limes, beeches per Irish Examiner 2014) but not confirmed."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Beech Avenue / Lime Walk / chestnut-lime-beech avenue",
+      "reason": "Avenues, not one collectible point; no trunk named."
+    }
+  ]
+}

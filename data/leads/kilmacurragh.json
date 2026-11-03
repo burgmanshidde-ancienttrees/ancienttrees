@@ -1,0 +1,63 @@
+{
+ "city": "Kilmacurragh",
+ "country": "Ireland",
+ "updated": "2026-11-03",
+ "about": "National Botanic Gardens Kilmacurragh (OPW, free). Round 2, garden-first method. Zero verified: the garden's own pages (heritageireland.ie, botanicgardens.ie 403) name no individual tree; the Irish Times 2015-03-07 (Janet Acton) and Travel Extra pieces name champions without girth or position. House ruin ~52.9291,-6.1467. Free entry, open daily except 25 Dec, 9-17 (last admission 16:30), winter 9-16:30 (heritageireland.ie, fetched 2026-11-03); gates may close at capacity; no parking outside the gardens.",
+ "leads": [
+  {
+   "name": "Wellingtonia, 45 m",
+   "species": "Giant Redwood (Sequoiadendron giganteum)",
+   "height_m": 45,
+   "source": "Irish Times 'Kilmacurragh Arboretum: Ireland's secret garden' (2015) and travelextra.ie: '45m Wellingtonia' among champion trees",
+   "reason": "No position, girth or register row for it (the 8 Kilmacurragh register rows hold no Sequoiadendron); a dated photo or the Tree Register champion entry would place it. A historical survey of Irish Wellingtonias reportedly lists two at Kilmacurragh (110 ft x 19 ft 3 in) but that came from a search summary only, not seen"
+  },
+  {
+   "register_record": "166",
+   "species": "Mexican Cypress (Cupressus lusitanica)",
+   "latitude": 52.92677,
+   "longitude": -6.1475,
+   "age_register": "200-300",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Press names a Mexican cypress as a champion without saying which or where; two register rows (166, 167) a few tens of metres apart; unproven which is the champion; register age band looks high for the species"
+  },
+  {
+   "register_record": "167",
+   "species": "Mexican Cypress (Cupressus lusitanica)",
+   "latitude": 52.9271,
+   "longitude": -6.14697,
+   "age_register": "150-200",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "See 166"
+  },
+  {
+   "register_record": "292",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "latitude": 52.92888,
+   "longitude": -6.14861,
+   "age_register": "100-150",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Irish Times mentions a ginkgo cluster just outside the walled garden; register point is a single exceptional specimen nearby; cluster is not one collectible trunk and not proven the same"
+  },
+  {
+   "register_record": "327",
+   "species": "Chilean Laurel/Tepa (Laureliopsis philippiana)",
+   "latitude": 52.92682,
+   "longitude": -6.14879,
+   "age_register": "100-150",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Register exceptional specimen; no published source for this tree"
+  },
+  {
+   "name": "Beech avenue, 1736, planted for the Acton wedding",
+   "species": "Common Beech (Fagus sylvatica)",
+   "source": "travelextra.ie Kilmacurragh piece",
+   "reason": "Avenue, not one trunk; the 'Queen Anne's Avenue' trunks are not individually named"
+  },
+  {
+   "name": "Unidentified tall tree, Geograph 7152550 (taken 2022-04-19, Kevin Higgins, CC BY-SA 2.0)",
+   "latitude": 52.927348,
+   "longitude": -6.148366,
+   "reason": "Geotag only (subject point), species not given; near register rows 166/167 and 327"
+  }
+ ]
+}

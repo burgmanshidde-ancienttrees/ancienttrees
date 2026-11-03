@@ -1,0 +1,45 @@
+{
+  "city": "Gort",
+  "country": "Ireland",
+  "updated": "2026-11-03",
+  "about": "Coole Park (NPWS, free) round 2. Delivered gor_001 Autograph Tree only; the 4-tree floor is not met. Coole's own pages (coolepark.ie, NPWS, UCC Tree Explorers) name only the Autograph Tree and Lady Gregory's catalpa; the rest of the estate trees are register rows with no names.",
+  "leads": [
+    {
+      "name": "Lady Gregory's Catalpa (replacement)",
+      "register_record": "105",
+      "species": "Indian Bean Tree (Catalpa bignonioides)",
+      "latitude": 53.09427,
+      "longitude": -8.83647,
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "coolepark.ie: original blew down, replacement planted 1995 by Lady Gregory's granddaughters on the original site in the walled garden, so the standing tree is about 30 years old; register row (named, band 100-150 in 2009) may be the fallen original. Not ancient, not safely placed."
+    },
+    {
+      "register_record": "414",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "latitude": 53.09386,
+      "longitude": -8.83703,
+      "age_register": "150-200",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Exceptional specimen, multi-stem; register only, no name, nothing on the ground tells it apart, no life evidence; fungal-disease fellings in 2014."
+    },
+    {
+      "register_record": "685",
+      "species": "Common Lime (Tilia x europaea)",
+      "latitude": 53.09272,
+      "longitude": -8.83435,
+      "age_register": "150-200",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Arboricultural curiosity; register only, unnamed, no life evidence."
+    },
+    {
+      "register_record": "448",
+      "species": "Holm Oak (Quercus ilex)",
+      "latitude": 53.08916,
+      "longitude": -8.83354,
+      "age_register": "100-150",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Multi-stem, register only; the cricket-match ilex of Lady Gregory's era stood on the front lawn (Irish Times 2000-08-26), not tied to this point."
+    }
+  ],
+  "blocked": []
+}

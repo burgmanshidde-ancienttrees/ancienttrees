@@ -1,0 +1,69 @@
+{
+ "city": "Enniskerry",
+ "country": "Ireland",
+ "updated": "2026-11-03",
+ "about": "Powerscourt Estate (paid) and Waterfall (separate park), Co. Wicklow. Round 2, garden-first method. Zero trees verified: powerscourt.com (403 to curl and WebFetch, Cloudflare; Wayback copies of /our-garden/trees/, /events/tree-trail/ and /visit-us/ load via curl) names only the tallest tree and three champions without placing any, and the 26-tree trail map is a PDF/image not reachable. Overpass unreachable. House centre 53.18472,-6.18694 (Powerscourt's own GPS line).",
+ "leads": [
+  {
+   "name": "Tallest tree in Ireland, River Walk Douglas fir",
+   "species": "Douglas Fir (Pseudotsuga menziesii)",
+   "girth_cm": null,
+   "height_m": 61.5,
+   "age_register": "100-150 (register band, 2009); owner: a line of Douglas firs on the estate about 150 years old",
+   "latitude": 53.17121,
+   "longitude": -6.19726,
+   "register_record": "437",
+   "source": "powerscourt.com/our-garden/trees/ (Wayback 2025 copy): 'The River Walk at Powerscourt features the tallest tree in Ireland, a Douglas Fir ... 61.5 metres, or 202 ft'; Irish Examiner 2013-11-05 (arid-30612237) same figure; Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "No photo or exact pin in reach: the tree is real and on the owner's page, but nothing seen places THE tallest trunk. Register row 437 is the only Douglas fir 'exceptional specimen' at Powerscourt (53.17121,-6.19726, near the Dargle at Onagh Bridge, ~1.5 km SW of the house), a plausible but unproven match for the River Walk tree; the 100-150 year band and the 2013 recognition date are not tied to it. Height disputed in search summaries (56 m UCC page, 57.5 m Tree Register survey; NOT seen on a fetched page) and an Avondale (Wicklow) Douglas fir is reported at 61.3 m, 2018, so the 'tallest in Ireland' crown may be contested (superlatives.py). Needs: the trail map or a geotagged photo of the River Walk tree, or the Tree Register of Ireland champion entry. Access: paid garden entry (prices not seen); River Walk path status not seen."
+  },
+  {
+   "register_record": "361",
+   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+   "latitude": 53.18436,
+   "longitude": -6.18172,
+   "age_register": "50-100",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Owner names a notable Dawn Redwood (introduced to Ireland 1949) on the 26-tree trail; register point near the Italian Garden/Triton Lake but no trail number, girth or height seen; unproven it is the same tree"
+  },
+  {
+   "register_record": "372",
+   "species": "Southern Beech (Nothofagus betuloides)",
+   "latitude": 53.18245,
+   "longitude": -6.18262,
+   "age_register": "50-100",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Owner lists a champion Southern Beech but not which species or where; hollowing noted in register; no confirmation this is the champion"
+  },
+  {
+   "register_record": "21",
+   "species": "Montpelier Maple (Acer opalus)",
+   "latitude": 53.18495,
+   "longitude": -6.18403,
+   "age_register": "150-200",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Exceptional-specimen band, hollowing; at the house; nothing published about this tree, no life evidence"
+  },
+  {
+   "register_record": "556",
+   "species": "Giant Redwood (Sequoiadendron giganteum)",
+   "latitude": 53.17473,
+   "longitude": -6.18962,
+   "age_register": "100-150",
+   "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Exceptional specimen; owner mentions Giant Redwoods from the 1870 planting programme but this trunk is not named; register only"
+  },
+  {
+   "name": "Beech Avenue to Powerscourt (avenue, register 191 at 53.18708,-6.17094)",
+   "species": "Common Beech (Fagus sylvatica)",
+   "age_register": "150-200",
+   "source": "powerscourt.com trees page: avenue planted over 250 years ago by the 1st Viscount; Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+   "reason": "Avenue, not one collectible trunk; no single named tree"
+  },
+  {
+   "name": "Torrey Pine and Wild Cherry champions",
+   "species": "Pinus torreyana; Prunus avium",
+   "source": "powerscourt.com trees page (Wayback 2025)",
+   "reason": "Named champions with no position, size or register row; the trail map would place them"
+  }
+ ]
+}

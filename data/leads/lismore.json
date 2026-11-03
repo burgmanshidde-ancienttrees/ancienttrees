@@ -1,0 +1,32 @@
+{
+  "city": "Lismore",
+  "country": "Ireland",
+  "updated": "2026-11-03",
+  "about": "Lismore Castle Gardens round 2, run out of time box after Gort and Doneraile gave one tree. Garden is paid (price not on the arts page; season 13 Mar to 25 Oct 2026, 11-18h, so closed now) and no source names an individual tree; the feature is the yew avenue.",
+  "leads": [
+    {
+      "name": "Yew avenue, lower garden",
+      "species": "Yew (Taxus baccata)",
+      "latitude": 52.14063809,
+      "longitude": -7.93225584,
+      "girth_cm": 270,
+      "source": "https://www.ancient-yew.org/yew_trees/lismore-castle-2910/ (Tree Register: avenue planted 1707, avg girth 2.7 m, 16 m, 2009; larger yews thought to grow in less accessible places) + https://lismorecastlearts.ie/plan-your-visit/the-gardens ('much older than the garden itself')",
+      "reason": "Avenue, ages in popular sources conflict (300, 400, 800 years); one trunk would have to be named. Register row 589 (yew 300-500, 52.13849,-7.93111) is the only individual candidate, unnamed."
+    },
+    {
+      "register_record": "251",
+      "species": "Common Ash (Fraxinus excelsior)",
+      "latitude": 52.14281,
+      "longitude": -7.9333,
+      "age_register": "150-200",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Landmark tree, register only, inside paid castle grounds, no life evidence."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Yew avenue as a whole",
+      "reason": "Avenue behind paid entry; one collectible point not established."
+    }
+  ]
+}
