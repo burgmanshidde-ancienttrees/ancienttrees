@@ -15,13 +15,6 @@
       "trees_at_claim": 4
     },
     {
-      "target": "manchester",
-      "kind": "verify",
-      "by": "session-01ef2345",
-      "claimed_at": "2026-11-03T08:52:03+00:00",
-      "trees_at_claim": 5
-    },
-    {
       "target": "liverpool",
       "kind": "verify",
       "by": "session-01ef2345",
@@ -29,32 +22,11 @@
       "trees_at_claim": 2
     },
     {
-      "target": "leeds",
-      "kind": "verify",
-      "by": "session-01ef2345",
-      "claimed_at": "2026-11-03T08:52:07+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "sheffield",
-      "kind": "verify",
-      "by": "session-01ef2345",
-      "claimed_at": "2026-11-03T08:52:10+00:00",
-      "trees_at_claim": null
-    },
-    {
       "target": "cardiff",
       "kind": "verify",
       "by": "session-01ef2345",
       "claimed_at": "2026-11-03T08:52:10+00:00",
       "trees_at_claim": 4
-    },
-    {
-      "target": "borrowdale",
-      "kind": "verify",
-      "by": "session-01ef2345",
-      "claimed_at": "2026-11-03T08:52:10+00:00",
-      "trees_at_claim": 1
     }
   ]
 }
