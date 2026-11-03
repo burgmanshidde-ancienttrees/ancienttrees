@@ -1,0 +1,62 @@
+[
+  {
+    "place": "Salem",
+    "candidate": "Tuliptree, Mack Park (DCR rank 16, 118 in, 82 ft, measured 2024-02-05)",
+    "reason": "Public city park but park-level pin only; no small site, no recognition line, no source naming where in the park. Lead, not shipped.",
+    "lead": true
+  },
+  {
+    "place": "Salem",
+    "candidate": "Black tupelo, Greenlawn Cemetery (DCR rank 5, 80 in, 68.5 ft, 2026-03-22)",
+    "reason": "Cemetery is large (not a one-glance site); no location inside it; modest girth 203 cm. Lead.",
+    "lead": true
+  },
+  {
+    "place": "Salem",
+    "candidate": "Sourwood, Harmony Grove Cemetery (DCR rank 2, 41 in, 38.5 ft)",
+    "reason": "57-acre cemetery, no location inside it, 104 cm girth: not a reason to walk. Lead.",
+    "lead": true
+  },
+  {
+    "place": "Salem",
+    "candidate": "American elm, 186 Lafayette St (DCR rank 7, 174 in = 442 cm, 81 ft, measured 2023-03-31)",
+    "reason": "House address in The Point; no source says it is seen from public ground. Could be a strong tree (an elm of 442 cm is rare); needs a street-level check. Lead.",
+    "lead": true
+  },
+  {
+    "place": "Salem",
+    "candidate": "Japanese zelkova near 20 Federal St (DCR rank 2, 81 in, 43 ft, 2026-03-22, note 'thought to be brought here potted from Asia in 1882')",
+    "reason": "No coordinate (Nominatim geocodes 20 Federal St to a downtown building at 42.5234233,-70.8947971 but the register says 'near'), no source for the 1882 story, unknown whether public. Lead.",
+    "lead": true
+  },
+  {
+    "place": "Salem",
+    "candidate": "Salem Common, House of the Seven Gables garden, Charter Street (Old Burying Point), Salem Willows",
+    "reason": "Searches found no named old tree at any of them and no tree list; nothing to verify. Not researched further.",
+    "lead": false
+  },
+  {
+    "place": "Concord",
+    "candidate": "Ephraim Bull's Concord grape vine, 491 Lexington Rd",
+    "reason": "A vine, not a tree; sources conflict on whether the original survives (MHC record and Concord Library finding aid: original lost, present vine a shoot from the old root). Private house. Blocked.",
+    "lead": false
+  },
+  {
+    "place": "Concord",
+    "candidate": "Thoreau's Concord elm / Pratt elm",
+    "reason": "Felled in 1856 / historic photo only; dead.",
+    "lead": false
+  },
+  {
+    "place": "Lexington",
+    "candidate": "White oak, Sheridan Street (said to be about 260 years old)",
+    "reason": "Cut down 5 June 2023 (Lexington Observer letter). Dead.",
+    "lead": false
+  },
+  {
+    "place": "Lexington",
+    "candidate": "European beech, DCR rank 5, 237 in, 96.5 ft, measured 2025-08-08",
+    "reason": "Register location withheld (null). Never published.",
+    "lead": false
+  }
+]

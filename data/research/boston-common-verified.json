@@ -1,0 +1,280 @@
+[
+  {
+    "id": "bos_046",
+    "name": "The Bagheera Fountain Beech",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "possibly over 150 years",
+    "age_min": 150,
+    "age_max": 170,
+    "age_basis": "source",
+    "girth_cm": 570,
+    "height_m": null,
+    "location": {
+      "address": "Public Garden, beside the Bagheera Fountain on the Lagoon Path, Boston",
+      "latitude": 42.3541832,
+      "longitude": -71.0692825,
+      "neighbourhood": "Beacon Hill"
+    },
+    "verified_sources": [
+      "https://friendsofthepublicgarden.org/2019/09/17/tree-blog-the-beeches-september-17-2019/",
+      "https://data.boston.gov/dataset/bprd-trees",
+      "https://nominatim.openstreetmap.org/ui/details.html?osmtype=N&osmid=4408379864"
+    ],
+    "official_register": {
+      "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+      "url": "https://data.boston.gov/dataset/bprd-trees"
+    },
+    "access": "Public park, free, open daily (Boston Parks hours apply).",
+    "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min. Charles/MGH (Red) 8 min.",
+    "location_precision": "approximate",
+    "pin_source": "City inventory point id 56199 (European beech, DBH 71.4 in), 10 m from the OSM node of Bagheera Fountain (42.3541423,-71.0691591). Tree-level coordinate, but identity as the Friends' tree is inferred from fountain proximity and being by far the largest beech in the Garden (next 60 in, 45.6 in).",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the smooth grey stems reaching right over the path and the Bagheera panther fountain, with a cable in the crown. It stands on the Lagoon Path, the biggest beech in the Garden.",
+    "verify_notes": "Friends of the Public Garden (2019): 14 beeches in the Garden, some from the original 1870s plantings; one venerable specimen reaches out over the pathway and over the Bagheera fountain, a large branch has rooted in the bed beyond and is cabled to its multi-stemmed main trunk; 'may be over 150 years old'; in decline with significant interior rot, the Friends are working to prolong its life and may reduce crown weight. Inventory DBH 71.4 in (181 cm), girth computed as DBH x pi = about 570 cm; it is a multi-stem so treat as a combined figure. Inventory shows no height. Decline since 2019: ALIVE as of the inventory (2026-11-03) but I could not find a post-2019 statement on its condition, so flagged. A cabled tree in decline may be removed; check condition before publishing. Sources: Friends are the Parks' care partner of the Boston Parks Dept; two independent sources for existence (Friends text, city inventory). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+    "story": "One of this beech's branches grew so long that it put down roots of its own in the flower bed beyond the path. The Friends of the Public Garden, who care for the Garden's trees alongside the city, described it in 2019 as a venerable specimen reaching out over the walkway and over the Bagheera fountain, with that rooted limb cabled back to its many-stemmed trunk to keep the whole thing together.\n\nThe Garden holds fourteen beeches, and the Friends say some of them date from its original plantings in the 1870s. Of this one they wrote that it may be over 150 years old, which is an estimate, not a planting record. It is by far the biggest beech in the Garden. The city's tree inventory gives its stems a combined 71 inches across, where the next largest beech is 60.\n\nAge has a cost. In the same 2019 note the Friends reported that the tree was in decline, with significant rot inside, and that they were working to prolong its life, possibly by taking weight off the crown. No public word on its health has followed since. The city inventory still lists it, and that is the latest record we have. If you visit and it has changed, tell us.\n\nIt stands on the Lagoon Path, over the fountain with the panther, a few minutes' walk from Arlington station."
+  },
+  {
+    "id": "bos_047",
+    "name": "The Public Garden Pagoda Tree",
+    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 498,
+    "height_m": 21.9,
+    "location": {
+      "address": "Public Garden, west side near the Arlington Street path, Boston",
+      "latitude": 42.3551559,
+      "longitude": -71.0715408,
+      "neighbourhood": "Back Bay"
+    },
+    "verified_sources": [
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://data.boston.gov/dataset/bprd-trees"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state big tree list), Japanese pagodatree, Boston Public Garden, state rank 2",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Public park, free, open daily (Boston Parks hours apply).",
+    "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+    "location_precision": "confirmed",
+    "pin_source": "City inventory point id 56140 (Japanese pagodatree, DBH 62 in = circumference 195 in) matches the DCR record (circumference 196 in, 72 ft, measured 2023-01-19); the only pagoda tree of this size in the Garden. Match by species and size.",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise it by the broad spreading crown of fine compound leaves over a thick fissured trunk, almost five metres round. It stands on the Arlington Street side, about 45 metres from the dawn redwood.",
+    "verify_notes": "DCR Legacy Tree record: circumference 196 in (498 cm), height 72 ft (21.9 m), crown spread recorded as 0 (corrupt/blank, ignored), measured 2023-01-19, second largest in Massachusetts. City inventory DBH 62 in (157 cm). No planting date found, age left empty. Different tree from bos_004 (dawn redwood, 45 m away). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+    "story": "Only one Japanese pagoda tree in Massachusetts is bigger than this one. The state's register measured it in January 2023 at 196 inches round, almost five metres, and 72 feet tall, and ranked it second of its kind in the Commonwealth. The city's own inventory of Public Garden trees agrees on the trunk, and has no other pagoda tree in the Garden anywhere near its size.\n\nThe tree does its best work late in the year. Pagoda trees flower in late summer, sending out sprays of cream blossom in August, when almost nothing else in bloom is a tree. On the Arlington Street side, this broad, spreading crown becomes one of the few things in flower overhead.\n\nThe Garden's west side keeps good company. The dawn redwood planted here in 1963 stands about 45 metres away, and a short walk takes in the Garden's biggest ginkgo and its biggest bur oak, all three within about 40 metres of each other. Three of the Garden's biggest trees in one corner, and it costs nothing to walk through.\n\nNobody has published a planting date for the pagoda tree. Its trunk is thick and deeply fissured, which tells you it is old without telling you how old. If you know, tell us.",
+    "best_time": {
+      "months": [
+        8
+      ],
+      "kind": "flowers",
+      "label": "August, when sprays of cream flowers open and almost no other tree is in bloom"
+    }
+  },
+  {
+    "id": "bos_048",
+    "name": "The Public Garden Rock Elm",
+    "species": "Rock Elm (Ulmus thomasii)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 287,
+    "height_m": null,
+    "location": {
+      "address": "Public Garden, near the tool shed, Boston",
+      "latitude": 42.3550491,
+      "longitude": -71.069313,
+      "neighbourhood": "Beacon Hill"
+    },
+    "verified_sources": [
+      "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/",
+      "https://data.boston.gov/dataset/bprd-trees",
+      "https://arboretum.harvard.edu/arnoldia-stories/ulmus-thomasii-the-hard-elm-thats-hard-to-find/"
+    ],
+    "official_register": {
+      "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+      "url": "https://data.boston.gov/dataset/bprd-trees"
+    },
+    "access": "Public park, free, open daily (Boston Parks hours apply).",
+    "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+    "location_precision": "confirmed",
+    "pin_source": "City inventory point id 56185, the only Ulmus thomasii among about 1,500 tree records in the Common, Public Garden and Commonwealth Avenue Mall; Friends call it the lone specimen in the three parks. Species is unique so identity is not in doubt.",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise it as the one rock elm in the Common, the Garden and the Mall, an elm about 2.9 metres round. It stands near the Public Garden's tool shed.",
+    "verify_notes": "Friends of the Public Garden (2020): the rock elm near the tool shed is the lone specimen of its species in the Common, Garden and Mall. City inventory DBH 36 in (91 cm), girth computed about 287 cm. Species is rare in cultivation (Arnold Arboretum article is species-only background, not this tree). Age unknown. python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+    "story": "Among the roughly 1,500 trees the city has recorded on Boston Common, in the Public Garden and along the Commonwealth Avenue Mall, there is exactly one rock elm, and it stands near the Public Garden's tool shed. The Friends of the Public Garden call it the lone specimen of its species in all three parks, and the city's inventory agrees.\n\nRock elm is a North American tree that is rare in cultivation, even in North America. Harvard's Arnold Arboretum titled an article on it \"the hard elm that's hard to find\", and the title holds up. Seeing one in the middle of a city park is the exception, not the rule, and this one has no relatives nearby to give it away.\n\nThis one is a good size, 36 inches across in the city's records, about 2.9 metres round. That is not huge by the standards of the Garden's beeches and oaks, and it does not need to be. Its distinction is the species, not the girth. Walk past it without knowing and it reads as one more elm among the hundreds in these parks.\n\nNobody has published when it was planted, or why a gardener chose a rock elm for the Public Garden in the first place. If you know either part of that story, tell us. The Bagheera beech and the Garden's lagoon are a short walk away."
+  },
+  {
+    "id": "bos_049",
+    "name": "The Last American Elm of the Common",
+    "species": "American Elm (Ulmus americana)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 367,
+    "height_m": null,
+    "location": {
+      "address": "Boston Common, Railroad Mall just west of the Visitor Information Center, Boston",
+      "latitude": 42.3550224,
+      "longitude": -71.0640335,
+      "neighbourhood": "Downtown"
+    },
+    "verified_sources": [
+      "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/",
+      "https://data.boston.gov/dataset/bprd-trees"
+    ],
+    "official_register": {
+      "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+      "url": "https://data.boston.gov/dataset/bprd-trees"
+    },
+    "access": "Public park, free, open daily; Visitor Information Center beside it is the staffed stop.",
+    "transport": "Park Street (Red and Green Lines) 3 to 5 min walk.",
+    "location_precision": "approximate",
+    "pin_source": "City inventory point id 900093173, the only large (DBH 46 in) tree recorded as plain American elm on the Common (all other American elms there are DBH 2 to 23 in); fits the Friends' description 'Railroad Mall, just west of the Visitor Information Center'. Identity inferred from description plus size, so approximate.",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it as the one large American elm on Railroad Mall, 3.7 metres round, among the Common's many English elms. It stands just west of the Visitor Information Center.",
+    "verify_notes": "Friends of the Public Garden (2020): 'the last true, non-hybridized, American Elm on the Common', on Railroad Mall just west of the Visitor Information Center; only about a quarter of the three parks' trees are elms, just over 400, down from thousands before Dutch elm disease; American elm is the Massachusetts state tree. Inventory DBH 46 in (117 cm), girth about 367 cm. Age not given anywhere; leave empty. python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+    "story": "Boston Common is full of elms and, according to the people who look after them, has exactly one true American elm left. The Friends of the Public Garden describe it as the last true, non-hybridized American elm on the Common, standing on Railroad Mall just west of the Visitor Information Center.\n\nThat matters because of what happened to the rest. American elm is the state tree of Massachusetts, and before Dutch elm disease the three downtown parks held thousands of elms. The Friends now count just over 400 elms across the Common, the Garden and the Commonwealth Avenue Mall, about a quarter of all their trees.\n\nThe city's tree inventory backs up the Friends' claim in its own way. It lists other trees on the Common as American elm, but none larger than 23 inches across. This one is 46, about 3.7 metres round, which puts it in a different class from anything else of its kind on the Common.\n\nNobody has published an age for it, and no planting date survives in the records. If you know it, tell us. The best view is from the Mall itself, looking up into the vase of branches, the shape that lets you pick an American elm out from the English elms around it. It has outlived thousands of elms in these parks, which is reason enough to stop."
+  },
+  {
+    "id": "bos_050",
+    "name": "The Franklin Square White Oak",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 344,
+    "height_m": 20.7,
+    "location": {
+      "address": "Franklin Square Park, Boston",
+      "latitude": 42.3387146,
+      "longitude": -71.0724945,
+      "neighbourhood": "South End"
+    },
+    "verified_sources": [
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://data.boston.gov/dataset/bprd-trees"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program, white oak, Franklin Square Park, state rank 18",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Public park (a historic South End square), free.",
+    "transport": "Silver Line SL4 and SL5 buses run along Washington Street beside the square; Massachusetts Avenue station (Orange Line) is about 1 km west, roughly 15 minutes on foot.",
+    "location_precision": "confirmed",
+    "pin_source": "City inventory point id 59060 (white oak, DBH 45 in), the only white oak in Franklin Sq; DCR record circumference 135.5 in (DBH 43 in) measured 2021 grows to the inventory figure. Match by species and size, 12 m from the geocoded square centre.",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise it by the lobed leaves with rounded tips and pale scaly bark, the only white oak in the square. It stands among the rows of littleleaf lindens in Franklin Square.",
+    "verify_notes": "DCR Legacy Tree: white oak, Franklin Square Park, circumference 135.5 in (344 cm), height 68 ft (20.7 m), measured 2021-03-15, state rank 18. Inventory DBH 45 in. The square also holds a large American elm (inventory id 59078, DBH 55 in, 42.3387718,-71.0732117) not in the DCR list: second candidate for a later pass. python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+    "story": "The only white oak in Franklin Square stands among rows of littleleaf lindens, and Massachusetts ranks it eighteenth of its species in the whole state. The register measured it in March 2021 at 135.5 inches round, about 3.4 metres, and 68 feet tall. The city's later inventory has the trunk a little wider still, at 45 inches across.\n\nEighteenth sounds modest, but the list covers the whole Commonwealth, and this tree earned its place in a city square in the South End, on Washington Street, with houses on every side.\n\nBoston's best-known white oak, on Peters Hill in the Arnold Arboretum, has been core-sampled and dated to the early 1800s. This one has never been dated, and nothing published gives a planting year. Its girth makes it a mature tree, but girth alone does not give an honest age for an oak in a city square. If you know when it went in, tell us.\n\nFranklin Square has one more big tree worth a look on the same visit, an American elm about 55 inches across that is not on the state list."
+  },
+  {
+    "id": "bos_051",
+    "name": "The Public Garden Ginkgo",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 429,
+    "height_m": null,
+    "location": {
+      "address": "Public Garden, west side, Boston",
+      "latitude": 42.3547478,
+      "longitude": -71.071579,
+      "neighbourhood": "Back Bay"
+    },
+    "verified_sources": [
+      "https://data.boston.gov/dataset/bprd-trees",
+      "https://friendsofthepublicgarden.org/2016/10/14/meet-the-trees-ginkgo-biloba/"
+    ],
+    "official_register": {
+      "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+      "url": "https://data.boston.gov/dataset/bprd-trees"
+    },
+    "access": "Public park, free, open daily (Boston Parks hours apply).",
+    "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+    "location_precision": "confirmed",
+    "pin_source": "City inventory point id 56146, the largest ginkgo of the 15 ginkgos recorded in the Garden and Common (DBH 53.8 in; next 39.4 in). Register tree coordinate.",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the fan-shaped two-lobed leaves on the biggest ginkgo in the Garden, about 4.3 metres round. It stands on the west side, about 10 metres from the bur oak and near the pagoda tree.",
+    "verify_notes": "One city source for size (inventory DBH 53.8 in, girth about 429 cm); Friends article gives the species' history in the parks (13 on the Common, 8 in the Garden) but not this tree, so FLAGGED one source. Age not documented. NOT the 1835 Joy Street ginkgo: the Common's largest ginkgo is only 22 in DBH and none stands near the Joy Street steps, so that 1835 tree is probably gone (kept as a lead, unconfirmed). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+    "story": "For most of the year this is a big tree in a garden full of big trees. For a day or two in November it is the one everybody stops for. Ginkgos turn butter gold all at once, then let go of nearly every leaf in a single drop, and a crown this size leaves a carpet of yellow fans across the lawn on the Garden's west side.\n\nIt is the largest ginkgo the city has recorded in the Public Garden and on Boston Common, 53.8 inches across, about 4.3 metres round, against 39.4 for the next one down. That figure comes from the city's tree inventory alone. No register or published account gives this tree's size or history, so treat the measurement as one good source rather than a settled fact.\n\nGinkgo has been planted in these parks for a long time, and the Friends of the Public Garden have written about the species in these parks. None of that writing dates this particular tree, and neither does anything else published. If you know when it went in, tell us.\n\nIt stands a few metres from the Garden's biggest bur oak and about 45 metres from the state's second-largest pagoda tree, so one short loop on the Arlington Street side covers all three. Come in November for the gold, or in August, when the pagoda tree is in flower and the ginkgo is a plain green giant beside it.",
+    "best_time": {
+      "months": [
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "November, when the whole crown turns butter gold and drops in a day or two"
+    }
+  },
+  {
+    "id": "bos_052",
+    "name": "The Public Garden Bur Oak",
+    "species": "Bur Oak (Quercus macrocarpa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 424,
+    "height_m": null,
+    "location": {
+      "address": "Public Garden, west side, Boston",
+      "latitude": 42.3548546,
+      "longitude": -71.0716019,
+      "neighbourhood": "Back Bay"
+    },
+    "verified_sources": [
+      "https://data.boston.gov/dataset/bprd-trees"
+    ],
+    "official_register": {
+      "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+      "url": "https://data.boston.gov/dataset/bprd-trees"
+    },
+    "access": "Public park, free, open daily (Boston Parks hours apply).",
+    "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+    "location_precision": "confirmed",
+    "pin_source": "City inventory point id 56147, the largest of six bur oaks in the Garden (DBH 53.1 in; next 41.4 in). Register tree coordinate.",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the big deeply lobed leaves and acorns in fringed cups, the broadest of the Garden's six bur oaks. It stands on the west side, about 10 metres from the big ginkgo.",
+    "verify_notes": "One source only (city inventory DBH 53.1 in, girth about 424 cm), flagged one source. No age or planting date found. Grouped walk: pagoda tree, ginkgo and bur oak stand within about 40 m of each other (ids 56140, 56146, 56147). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+    "story": "Macrocarpa means big fruit, and this oak's acorns sit in cups edged with a shaggy fringe. It is the broadest of the Public Garden's six bur oaks, 53.1 inches across in the city's tree inventory, about 4.2 metres round. The next one down is 41.4.\n\nThat inventory is the only record of this tree's size. No register lists it and nothing published gives its history, so the figure stands on one good source. It is still a big oak by any standard for a city garden, and it has a lot of company. The Garden's biggest ginkgo stands about ten metres away and the state's second-largest Japanese pagoda tree a little further on, so this corner of the Arlington Street side packs three of the Garden's largest trees into a space you can cross in a minute.\n\nBur oak is a North American species, and its big, deeply lobed leaves are almost as distinctive as the acorns, which come down under the crown in autumn.\n\nNobody has published when this tree was planted, and its girth alone is not an honest guide to the age of an oak in a city garden. If you know its story, tell us. It is a three-minute walk from Arlington station."
+  },
+  {
+    "id": "bos_053",
+    "name": "The Dilboy Field Swamp White Oak",
+    "species": "Swamp White Oak (Quercus bicolor)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 434,
+    "height_m": 16.6,
+    "location": {
+      "address": "Dilboy Field tennis courts, Alewife Brook Parkway, Somerville",
+      "latitude": 42.4096525,
+      "longitude": -71.1313953,
+      "neighbourhood": "West Somerville"
+    },
+    "verified_sources": [
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program, swamp white oak, Dilboy Tennis Courts, Alewife Brook Parkway, Somerville, state rank 4",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Public park (Dilboy Field, Alewife Brook Greenway), free.",
+    "transport": "Davis (Red Line) or Medford/Tufts (Green Line), each roughly 1.5 km away, about 20 minutes on foot; buses run along Alewife Brook Parkway.",
+    "location_precision": "approximate",
+    "pin_source": "Nominatim centroid of Dilboy Field only; the register names the tennis courts, tree not individually placed.",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the very wide trunk, 4.34 metres round, and two-tone leaves, green above and silvery below. It stands by the Dilboy Field tennis courts on the Alewife Brook Parkway.",
+    "verify_notes": "DCR record: circumference 171 in (434 cm), height 54.6 ft (16.6 m), measured 2019-12-12 (nearly seven years old, vitality unrecorded): FLAGGED 'register only'. Pin is park level; no tree coordinate found in any open source. Swamp white oak at 434 cm is an exceptional girth for the species (low height suggests a broad open-grown crown). Alive check: lifecheck RECENT 2023-08-19 only, within the park. Dilboy Field is a public memorial park. ",
+    "story": "Fourth place in Massachusetts for swamp white oak belongs to a tree beside the tennis courts at Dilboy Field, in West Somerville. The state measured it in December 2019 at 171 inches round, about 4.34 metres, and only 54.6 feet tall. For a tree that wide, that is short, and it gives the oak a squat, heavy build.\n\nThe Latin name, bicolor, describes the leaves, which are green on top and silvery underneath. It is the easiest way to tell it from other oaks nearby.\n\nDilboy Field is a public memorial park on the Alewife Brook Parkway, and the register places the tree at its tennis courts without giving a closer position. The pin on this page marks the park, not the trunk, so walk the edge of the courts and look for the widest oak you can find.\n\nThe state's measurement is nearly seven years old and the register does not record the tree's condition. The most recent sign of it is a 2023 nature-app record from within the park, which may or may not be this tree. So treat this one as a tree to confirm. If you visit, tell us whether it still stands and send a photograph, which would settle both the pin and the question. Nobody has dated it either, so any history you know is welcome too."
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "boston": {
+    "intro": "Boston lost its two most famous trees early, the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is stranger. Two English elms have flanked the Shaw Memorial since around 1800, a scarlet oak at Mount Auburn Cemetery was growing before the first burial, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue. Below are 40 trees across the Common and Public Garden, the Arboretum, Mount Auburn, Cambridge and Somerville, and a pear planted in Danvers in the 1630s. All are free.",
+    "meta_description": "Boston's remarkable trees, from the Shaw Memorial elms to a scarlet oak older than Mount Auburn Cemetery and the Arnold Arboretum's rarities.",
+    "question_meta": "The oldest tree on Boston's list is the Endicott Pear in Danvers, planted in the 1630s. In the city itself, the Shaw Memorial elms date from about 1800.",
+    "question_answer": "The oldest tree on this Boston list is the Endicott Pear in Danvers, about 25 km north, planted between 1632 and about 1640 and still fruiting beside a hospital car park. Inside the city, the oldest documented landscape trees are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. Older than the elms, and small enough for a table, is the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in 1737.",
+    "question_context": "Boston keeps a long ledger of lost trees, and that is what makes its survivors so well documented. The Liberty Tree, the elm under which the Sons of Liberty gathered, was felled by Loyalists in August 1775. The Great Elm of the Common, once called the city's oldest inhabitant, blew down in 1876. The Public Garden's lagoon willow, the most photographed tree in the city, collapsed in July 2026. Among the living, the two English elms at the Shaw Memorial were planted between 1772 and 1812, and the white oak on Peters Hill in the Arnold Arboretum has been core-sampled to a germination date in the early 1800s. Mount Auburn Cemetery, opened in 1831, records a scarlet oak and a red oak that were already growing there before the first burial. In the Public Garden, the beech that reaches over the Bagheera fountain may be over 150 years old, by the estimate of the Friends who care for it. The Arboretum's collection adds dates of its own, from a bonsai begun in 1737 to a black walnut grown from seed that arrived in 1874. Beyond all of them, in Danvers, stands a pear planted in the 1630s.",
+    "hero_tree_id": "bos_001",
+    "oldest_tree_id": "bos_013",
+    "faq_add": [
+      {
+        "q": "Can you visit Mount Auburn Cemetery to see the trees?",
+        "a": "Yes. Mount Auburn Cemetery in Cambridge is open to the public every day and entry is free; the gates open around 8 am and close between about 5 pm in winter and 7 pm in summer, so check mountauburn.org for the day's hours, and keep to the avenues and paths. Nine trees on this list stand there, including a scarlet oak and a red oak recorded as older than the cemetery's 1831 founding, and several trees the state's big-tree register lists as champions of their species."
+      }
+    ],
+    "faq_replace": {
+      "What is the oldest tree in Boston?": "The oldest tree on this list is the Endicott Pear in Danvers, about 25 km north of the city, planted in the 1630s. Inside Boston, the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812, are the oldest documented trees growing in the ground. Older than the elms is the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in Japan in 1737.",
+      "Are Boston's remarkable trees free to visit?": "All forty are free. Eight stand on Boston Common and in the Public Garden, sixteen in the Arnold Arboretum (open free daily, Orange Line to Forest Hills), nine in Mount Auburn Cemetery (open free daily, hours vary by season), four elsewhere in Cambridge, one in Franklin Square in the South End, one at Dilboy Field in Somerville, and one, the Endicott Pear, in Danvers, where it is seen through its fence beside a hospital car park."
+    }
+  },
+  "salem-massachusetts": {
+    "city": "Salem",
+    "country": "United States",
+    "status": "needs_curation",
+    "intro": "Salem's biggest trees stand where the town keeps its dead and its old houses. At the gate of Harmony Grove Cemetery grows the largest cucumber magnolia in Massachusetts, by the state's champion register, 31 metres tall. In the Ropes Mansion garden on Essex Street, a copper beech planted in 1913 is living with a fungus that has stopped spreading. And in Broad Street Cemetery, the town's second-oldest burying ground, a white oak nearly four and a half metres round stands among the graves. All three are free and within two kilometres of the station.",
+    "meta_description": "Three big old trees in Salem, Massachusetts: the state's champion cucumber magnolia, the Ropes Mansion copper beech and a Broad Street white oak.",
+    "question_meta": "Salem's biggest tree is the cucumber magnolia at Harmony Grove Cemetery, the largest of its kind in Massachusetts on the state register.",
+    "question_answer": "The biggest tree in Salem by the state's register is the cucumber magnolia at the entrance of Harmony Grove Cemetery on Grove Street, first among its species in Massachusetts: 470 cm round and 31 metres tall when measured in February 2024. The only one of Salem's big trees with a known planting date is the copper beech in the Ropes Mansion garden, planted in 1913.",
+    "question_context": "Massachusetts keeps a register of its largest trees, measured in person by state foresters, and three of Salem's entries stand on ground anyone can walk onto. The cucumber magnolia at Harmony Grove Cemetery is the state champion of its kind, a native of the Appalachian forests growing far north of its usual range. The cemetery opens from 7 am, until 7 pm in summer and until sunset from October to May. The copper beech in the Ropes Mansion garden on Essex Street belongs to the Peabody Essex Museum, which opens the garden free from dawn to dusk and has roped the tree off a few steps back; the museum found a Ganoderma fungus in it and later tests showed the infection had stopped spreading. The white oak in Broad Street Cemetery, measured in January 2026 at 437 cm round, has no recorded age at all. Commuter rail from Boston's North Station reaches Salem in about 30 minutes, and the three trees lie between 600 metres and 1.5 km from the station on foot. If you know how old the oak is, or have a photograph of any of the three, tell us.",
+    "hero_tree_id": "sma_001",
+    "oldest_tree_id": "sma_002",
+    "faq": [
+      {
+        "q": "Which is the biggest tree in Salem, Massachusetts?",
+        "a": "By the state's big-tree register, the cucumber magnolia at the entrance of Harmony Grove Cemetery, 470 cm round and 31 metres tall in 2024, the largest of its species in Massachusetts."
+      },
+      {
+        "q": "Can you see Salem's big trees without paying?",
+        "a": "Yes. Harmony Grove and Broad Street cemeteries are free to walk into, and the Ropes Mansion garden is open free every day from dawn to dusk. Please keep behind the ropes around the beech."
+      }
+    ]
+  },
+  "lexington-massachusetts": {
+    "city": "Lexington",
+    "country": "United States",
+    "status": "needs_curation",
+    "intro": "Lexington's largest measured tree is a sycamore on Massachusetts Avenue in East Lexington, 28 metres tall with a crown about 30 metres across, ranked tenth among the American sycamores on the state's big-tree register. It stands in the front garden of a private house beside a historic house sign, so it is seen from the pavement and not visited. No age is recorded. If you know more about it, or about another old tree in Lexington that anyone can walk to, tell us.",
+    "meta_description": "The Morell House sycamore on Massachusetts Avenue, Lexington: 28 metres tall and 485 cm round, on the state's big-tree register. Seen from the street.",
+    "question_meta": "Lexington's largest registered tree is an American sycamore at 627 Massachusetts Avenue, 485 cm round, seen from the pavement.",
+    "question_answer": "The largest tree in Lexington on the Massachusetts big-tree register is an American sycamore in front of 627 Massachusetts Avenue in East Lexington, measured in August 2025 at 485 cm round and 28 metres tall. It stands on private ground and is seen from the public pavement only.",
+    "question_context": "Massachusetts keeps a register of its largest trees, measured in person by state foresters and ranked within each species. The East Lexington sycamore is tenth on the state's list of American sycamores: 485 cm round, 28 metres tall and with a crown about 30 metres wide when measured in August 2025. It stands in the front garden of 627 Massachusetts Avenue, beside the sign of a historic house, and the house is a private home, so look from the pavement and do not go onto the grounds. American sycamores are easy to pick out in any season by their bark, which flakes away in patches to leave the upper trunk and branches pale, almost white. The register gives no age for the tree, and no source we have found says when it was planted. The MBTA 62 and 76 buses run along Massachusetts Avenue from Alewife station on the Red Line. If you know the tree's history, tell us.",
+    "hero_tree_id": "lxg_001",
+    "oldest_tree_id": "lxg_001",
+    "faq": [
+      {
+        "q": "Can you visit the Lexington sycamore?",
+        "a": "Only from the pavement. It stands in the front garden of a private house at 627 Massachusetts Avenue; look from the street and do not enter the grounds."
+      }
+    ]
+  }
+}

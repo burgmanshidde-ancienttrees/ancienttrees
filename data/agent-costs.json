@@ -5,6 +5,54 @@
       {
         "date": "2026-11-03",
         "kind": "verify",
+        "target": "boston (mount auburn + cambridge)",
+        "tokens": 164945,
+        "trees": 0,
+        "note": "10 verified and held for the pace (bos_014..023): 9 Mount Auburn trees pinned from the cemetery's own plant inventory (flora.mountauburn.org ArcGIS, no licence stated, facts only), DCR champion pairings by species and size flagged as inference; York St plane. Prince of Wales beech is a 2008 scion. 9 rejects to leads."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "verify",
+        "target": "boston (arnold arboretum + forest hills)",
+        "tokens": 162585,
+        "trees": 0,
+        "note": "9 verified and held (bos_030..038), confirmed pins from the Arboretum's accession GIS. Forest Hills and Larz Anderson yielded nothing placeable; Park Lane oaks private. ~10 more GIS candidates in boston-arboretum-notes.md."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "verify",
+        "target": "boston (common + public garden + street rows)",
+        "tokens": 164712,
+        "trees": 0,
+        "note": "8 verified and held (bos_046..053), pinned from the City of Boston BPRD park tree inventory (PDDL). House-address DCR rows rejected (not shown visible from the street). Inventory works for the other Boston parks too."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "verify",
+        "target": "salem-massachusetts+concord-massachusetts+lexington-massachusetts",
+        "tokens": 140045,
+        "trees": 0,
+        "note": "4 verified and held: Salem 3 (sma_001..003, champion cucumber magnolia, Ropes beech, Broad St oak), Lexington 1 (lxg_001, view-only). Concord 0: no register rows and no tree-level source. Stop the Concord angle."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "write",
+        "target": "boston-arboretum+salem+lexington",
+        "tokens": 170722,
+        "trees": 0,
+        "note": "13 stories and recognition lines, held for the pace in scripts/build_us_boston.py."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "write",
+        "target": "boston (mount auburn + common) + boston place copy",
+        "tokens": 173273,
+        "trees": 0,
+        "note": "18 stories and recognition lines plus the Boston place block for 40 trees, held for the pace. Six passes, 31 trees: about 31k tokens a tree."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "verify",
         "target": "windsor",
         "tokens": 130887,
         "trees": 0,

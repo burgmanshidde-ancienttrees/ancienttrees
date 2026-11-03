@@ -12,6 +12,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: Boston 13 -> 40, Salem MA (3) and Lexington MA (1), written and held for the pace
+
+**What changed in the product (once built):** `python3 scripts/build_us_boston.py` grows Boston by 27 trees: nine at Mount Auburn Cemetery (a scarlet oak and a red oak the cemetery's inventory records as growing before the 1831 founding, state-champion cedar of Lebanon, Nikko fir, zelkova, Himalayan pine and others), nine more in the Arnold Arboretum with confirmed pins from its accession GIS (the 1885 Kew parasol beech, Hunnewell golden larches, an 1874 black walnut, Wilson's Chinese beech), seven on the Common and in the Public Garden (the state's number-two Japanese pagoda tree, the only rock elm, the beech over the Bagheera fountain), the Franklin Square white oak, the York St plane in Cambridge and a Somerville swamp white oak. New intro, question page and FAQ for 40 trees. Salem gets three tree pages (the state's champion cucumber magnolia at Harmony Grove, the 1913 Ropes Mansion copper beech, the Broad Street Cemetery white oak) and Lexington one (a sycamore seen from the street). Tested: preflight fails only on the pace (56 > 25); reverted. 31 trees is more than one day: the script takes `--only boston`.
+
+**Sources found:** the Massachusetts DCR Legacy register geocoded with Nominatim (data/research/boston-dcr-geocoded.json, all approximate); City of Boston BPRD park tree inventory (PDDL, tree points with trunk diameter, regenerated daily, good for the other Boston parks); Mount Auburn's plant inventory behind flora.mountauburn.org (public ArcGIS, states no licence, used for facts only); the Arboretum GIS (arboretum.harvard.edu 403s to curl, WebFetch reads it).
+
+**What yielded nothing:** Concord (no register rows, no tree-level source; stop that angle), Forest Hills Cemetery, Larz Anderson Park, Harvard Yard (not reached). The house-address register rows (Moreland St green ash champion, Lafayette St elm in Salem and others) were rejected as not shown to be visible from the street; under the El Pino ruling a street-level check could still ship them. Rejects to data/leads/boston.json, salem-massachusetts.json, concord-massachusetts.json, lexington-massachusetts.json. Six passes, about 976k tokens, 31k a tree.
+
 ## 2026-11-04 session: Kauai life check after Hurricane Lowell (rung 3), all nine unknown, nothing retired
 
 **What changed in the product (once built):** the six live Kauai trees (Yamamoto and Gulick-Rowell monkeypods, Koloa baobab, Kanoa and Wilcox banyans, Tree Tunnel) say in `access` that Hurricane Lowell brought down many trees on Kauai in September 2026, that we have no word on this one since, and to check before a special trip. `verify_notes` carry what was searched.

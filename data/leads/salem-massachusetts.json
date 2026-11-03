@@ -1,0 +1,35 @@
+{
+  "leads": [
+    {
+      "candidate": "Tuliptree, Mack Park (DCR rank 16, 118 in, 82 ft, measured 2024-02-05)",
+      "reason": "Public city park but park-level pin only; no small site, no recognition line, no source naming where in the park. Lead, not shipped.",
+      "pass": "2026-11-03 verify (salem-concord)"
+    },
+    {
+      "candidate": "Black tupelo, Greenlawn Cemetery (DCR rank 5, 80 in, 68.5 ft, 2026-03-22)",
+      "reason": "Cemetery is large (not a one-glance site); no location inside it; modest girth 203 cm. Lead.",
+      "pass": "2026-11-03 verify (salem-concord)"
+    },
+    {
+      "candidate": "Sourwood, Harmony Grove Cemetery (DCR rank 2, 41 in, 38.5 ft)",
+      "reason": "57-acre cemetery, no location inside it, 104 cm girth: not a reason to walk. Lead.",
+      "pass": "2026-11-03 verify (salem-concord)"
+    },
+    {
+      "candidate": "American elm, 186 Lafayette St (DCR rank 7, 174 in = 442 cm, 81 ft, measured 2023-03-31)",
+      "reason": "House address in The Point; no source says it is seen from public ground. Could be a strong tree (an elm of 442 cm is rare); needs a street-level check. Lead.",
+      "pass": "2026-11-03 verify (salem-concord)"
+    },
+    {
+      "candidate": "Japanese zelkova near 20 Federal St (DCR rank 2, 81 in, 43 ft, 2026-03-22, note 'thought to be brought here potted from Asia in 1882')",
+      "reason": "No coordinate (Nominatim geocodes 20 Federal St to a downtown building at 42.5234233,-70.8947971 but the register says 'near'), no source for the 1882 story, unknown whether public. Lead.",
+      "pass": "2026-11-03 verify (salem-concord)"
+    },
+    {
+      "candidate": "Salem Common, House of the Seven Gables garden, Charter Street (Old Burying Point), Salem Willows",
+      "reason": "Searches found no named old tree at any of them and no tree list; nothing to verify. Not researched further.",
+      "pass": "2026-11-03 verify (salem-concord)"
+    }
+  ],
+  "blocked": []
+}

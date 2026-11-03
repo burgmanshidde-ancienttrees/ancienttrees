@@ -1,0 +1,11 @@
+[
+ {"name":"Prince of Wales Beech","reason":"Original (planted Oct 1860) removed March 2008, unsound; the tree now is a 2008 scion; no location published (1860 papers: near the ornamental ground, in front of the chapel area). Source mountauburn.org/the-prince-of-wales-beech-tree/","coordinate":null},
+ {"name":"DCR English walnut (Mount Auburn, 145.5 in, state champion)","reason":"No inventory walnut near that size (largest Persian walnut DBH 33 in vs 46 in expected); cannot be placed","coordinate":null},
+ {"name":"DCR Kentucky coffeetree 135 in (Mount Auburn)","reason":"Closest inventory tree DBH 45.75 in, 108 ft vs register 43 in, 89 ft: height 20 percent off, identity too weak to pin","coordinate":[42.37439,-71.14051]},
+ {"name":"Other DCR Mount Auburn rows (bee-bee tree, fastigiate beech, callery pear, Japanese cedar, Chinese chestnut, dogwood, hackberry, hardy rubber tree, Norway maple, oaks, Japanese maple, tupelo, false cypresses, stewartia, paperbark maple, tuliptree)","reason":"Not individually pinned or not worth a walk in this pass; inventory coordinates for 873 large trees are in out/tmp/ma_trees.json for a later pass","coordinate":null},
+ {"name":"Washington Elm / Cambridge Common elms","reason":"Original died 1923 (Wikidata Q7971850); no successor verified, not shipped","coordinate":[42.3766,-71.1222]},
+ {"name":"DCR silver maple, 55 Hastings Road, Belmont (199 in)","reason":"Residential address, private property","coordinate":null},
+ {"name":"DCR white oak, Waverley Oaks Rd, Belmont (162 in)","reason":"Geocode lands on Waverley Oaks Apartments (residential); tree spot unknown","coordinate":[42.3904,-71.1951]},
+ {"name":"DCR American elm, Beaver Brook Reservation, Belmont (127.5 in)","reason":"Reservation-level location only, not placeable","coordinate":[42.3883,-71.1968]},
+ {"name":"Harvard Yard trees","reason":"Not reached in time box","coordinate":null}
+]

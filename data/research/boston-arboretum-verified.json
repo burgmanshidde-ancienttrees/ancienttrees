@@ -1,0 +1,315 @@
+[
+  {
+    "id": "bos_030",
+    "name": "The Parasol Beech from Kew",
+    "species": "Twisted Beech (Fagus sylvatica 'Tortuosa')",
+    "age_estimate": "roughly 140 years since it arrived",
+    "age_min": 141,
+    "age_max": 170,
+    "age_basis": "derived",
+    "girth_cm": 292,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.2978873,
+      "longitude": -71.1213137,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://arboretum.harvard.edu/plant-bios/parasol-beech/",
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 2420*A (mapped individual plant), queried 2026-11-03",
+    "accession": "2420*A",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise it by its shape, a low dome of twisted branches tumbling back to the ground instead of a tall trunk. A second, slimmer parasol beech stands about 80 metres north-west, off Beech Path.",
+    "verify_notes": "Accession 2420*A, graft received 1885 from the Royal Botanic Gardens, Kew; per the Arboretum's plant page it is one of only three plants left from Kew's exchange of more than 900 accessions in the Arboretum's first twenty years (the others are Spiraea prunifolia 3138 and Philadelphus x maximus 6601). Lineage descends from a twisted beech in a forest at Remilly, France (indirect wild origin). GIS: condition Alive, last checked 2021-03-12, DBH 93.1 cm measured 2017-10-24 (girth = DBH x pi), grid 38-SW, flagged significant specimen. Twin to note: accession 14599*A (graft 1888, also Kew, DBH 79.5 cm, condition Fair 2017-10-19, 42.2982734,-71.1222443, about 80 m north-west, the one the plant page says stands right off Beech Path) is a separate tree; not folded. Handmade bracing supports the heavy pendulous shoots on the 1888 tree per the plant page. Height not recorded. Age is time since accession, the grafted tree may be a few years older. Plant page says wild parasol beeches can pass 300 years.",
+    "story": "Kew sent the Arnold Arboretum more than 900 plants in its first twenty years, and the Arboretum counts three of them still alive. This beech is one. It arrived in 1885 as a graft, from a line of twisted beeches that goes back to a wild tree in a forest at Remilly, in France. The other two survivors of the Kew exchange are a spiraea and a mock orange.\n\nA parasol beech does not grow up so much as over. Its branches twist and tumble back towards the ground, building a low dome rather than a trunk with a crown on top. The Arboretum's inventory measured the trunk at 93 centimetres across in 2017, about 2.9 metres round, and recorded the tree alive in 2021.\n\nIts age is counted from the day it arrived, so roughly 140 years, and the grafted wood can be a few years older than that. Nobody has written down how tall it is. The Arboretum notes that parasol beeches in the wild can pass 300 years, so by the standard of its own kind this one is not yet old.\n\nAbout 80 metres to the north-west, just off Beech Path, stands a second parasol beech from Kew, received in 1888 and a little slimmer, its heavy shoots held up by handmade bracing.",
+    "best_time": {
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "kind": "bare silhouette",
+      "label": "winter, when the leaves are off and every twist in the branches shows"
+    }
+  },
+  {
+    "id": "bos_031",
+    "name": "The Hunnewell Golden Larches",
+    "species": "Golden Larch (Pseudolarix amabilis)",
+    "age_estimate": "about 130 years in the ground",
+    "age_min": 129,
+    "age_max": 150,
+    "age_basis": "derived",
+    "girth_cm": 310,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.2969015,
+      "longitude": -71.1283706,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://arboretum.harvard.edu/plant-bios/golden-larch",
+      "https://arboretum.harvard.edu/stories/outstanding-plants-of-the-arnold-arboretum-pseudolarix-amabilis",
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate; the pair stands by Bussey Brook below Hemlock Hill Road, towards the Walter Street Gate.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 16779*A and 16779*B (mapped individual plant), queried 2026-11-03",
+    "accession": "16779*A and 16779*B",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise them by the needles, soft spiral rosettes on short spurs that turn gold and drop in late autumn. They stand as a pair about 15 metres apart by Bussey Brook, seen from Hemlock Hill Road.",
+    "verify_notes": "Two trees folded into one entry, 16779*A (DBH 82.6 cm, 42.2967513 -71.1283143) and 16779*B (DBH 98.8 cm, 42.2969015 -71.1283706), about 15 m apart, both condition Good, last checked 2023-10-24, grid 40-SW, flagged significant specimens. Both grown from seed received 29 Jan 1896 from H. H. Hunnewell's Pinetum, Wellesley, taken from the Hunnewell tree he had bought as a seedling in a four-inch pot from Veitch and Sons in 1866 (Arboretum plant page). Species first collected by Robert Fortune in 1853 in what is now Zhejiang. Arnoldia 40(5), 1980 (Koller) measured 16779*A at about 40 ft tall, 45 ft wide, 1 ft 9 in d.b.h. in Oct 1980 in a grove of six golden larches along Bussey Brook near the Walter Street Gate, and the Hunnewell parent at about 55 ft. A different pair, accession 3656 (from Veitch, 1891), stands in the same grove. Plant page: seen from Hemlock Hill Road. Golden larch is deciduous: needles turn gold in late autumn. Height now not recorded.",
+    "story": "Their parent tree came in a four-inch pot. In 1866 H. H. Hunnewell bought a golden larch seedling from the Veitch nursery and planted it in his pinetum at Wellesley. Thirty years later, in January 1896, the Arnold Arboretum received seed from that tree, and these two grew from it.\n\nThe species was first collected only in 1853, by the Scottish plant hunter Robert Fortune, in what is now Zhejiang in eastern China. It is a conifer that behaves like a hardwood. The soft needles sit in spiral rosettes on short spurs, and in late autumn they turn a clear gold and fall, leaving the tree bare all winter.\n\nThe two stand about 15 metres apart by Bussey Brook, in a grove of golden larches that also holds an older pair bought directly from Veitch in 1891. In 1980 the Arboretum's journal Arnoldia measured the slimmer of these two at about 12 metres tall and nearly 14 wide, and the Hunnewell parent at about 17. The current inventory records no height. The inventory now gives trunks of 83 and 99 centimetres across, about 3.1 metres round for the larger, and found both in good health in 2023.\n\nTheir age is counted from the day the seed arrived, about 130 years. They can be seen from Hemlock Hill Road.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "late autumn, when the needles turn clear gold before they fall"
+    }
+  },
+  {
+    "id": "bos_032",
+    "name": "The 1874 Black Walnut",
+    "species": "Black Walnut (Juglans nigra)",
+    "age_estimate": "about 150 years since the seed arrived",
+    "age_min": 151,
+    "age_max": 170,
+    "age_basis": "derived",
+    "girth_cm": 286,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.3013805,
+      "longitude": -71.1253963,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://arboretum.harvard.edu/stories/fall-feasting",
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths to Valley Road.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 1181*B (mapped individual plant), queried 2026-11-03",
+    "accession": "1181*B",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise the grove by five black walnuts of one age standing together on Valley Road. This is the one numbered 1181*B in the Arboretum's records.",
+    "verify_notes": "Accession 1181 arrived as seed in 1874 from the Harvard Botanic Garden, Cambridge, two years after the Arboretum was founded; five members of the accession stand on Valley Road in the black walnut grove, with 'cathedral-like canopies' per the Arboretum's Fall Feasting story. Entry is 1181*B: GIS condition Good, last checked 2021-03-02, DBH 90.9 cm measured 2017-06-14, grid 19-NW, flagged significant specimen. Siblings not individually assessed. Height not recorded.",
+    "story": "The Arnold Arboretum was two years old when the seed of this walnut arrived. It came in 1874 from the Harvard Botanic Garden in Cambridge, the university's older garden on the other side of the Charles, and it is an early entry in a catalogue that now runs past 30,000 records.\n\nIt did not come alone. Five trees from that one batch of seed still stand together on Valley Road, and the Arboretum describes their canopies as cathedral-like. This is the one the inventory files as 1181*B. It measured 91 centimetres across the trunk in 2017, about 2.9 metres round, and was recorded in good condition in 2021, which is enough to say it is healthy and not enough to say it is the biggest. Its four siblings have not been measured one by one, and nobody has recorded a height for any of them.\n\nIts age is counted from the year the seed arrived, so a little over 150 years. If you have stood in the grove and know which of the five is the largest, tell us."
+  },
+  {
+    "id": "bos_033",
+    "name": "Wilson's Chinese Beech",
+    "species": "Chinese Beech (Fagus engleriana)",
+    "age_estimate": "about 120 years since it arrived",
+    "age_min": 115,
+    "age_max": 140,
+    "age_basis": "derived",
+    "girth_cm": 250,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.2941994,
+      "longitude": -71.1297925,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://www.treesandshrubsonline.org/articles/fagus/fagus-engleriana/",
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 7416*B (mapped individual plant), queried 2026-11-03",
+    "accession": "7416*B",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise it by its accession number, 7416*B, in the Arboretum's records. It is one of two Chinese beeches from Wilson's 1907 collection that both carry the number 7416.",
+    "verify_notes": "Accession 7416*B, plant received 9 Mar 1911 from E. H. Wilson, collected wild in China (collection date 31 May 1907, western Hubei; Wilson no. W 703 per Trees and Shrubs Online). Arboretum GIS: condition Good, last checked 2021-08-25, DBH 79.6 cm measured 2021-07-14, grid 53-NW, flagged centenarian record. Trees and Shrubs Online says two original trees remain at the Arnold Arboretum in good condition (the 7416 plants). Height not recorded.",
+    "story": "The collection date on this beech is 31 May 1907, in the wild in western Hubei. The date it reached the Arnold Arboretum is 9 March 1911, nearly four years later, and the record does not say where it spent the time in between. It arrived as a living plant from Ernest Henry Wilson under his field number 703, wild-collected rather than raised in a nursery.\n\nTrees and Shrubs Online, the reference work on temperate trees in cultivation, says two of those original Wilson beeches survive at the Arboretum in good condition. Both carry the accession number 7416. This is the one filed as 7416*B.\n\nIt is not a giant. The inventory measured its trunk at about 80 centimetres across in July 2021, roughly 2.5 metres round, and recorded no height. What it has is provenance. The species carries the name of the German botanist Adolf Engler. This tree carries a wild Chinese origin, a known collector and a known day, and it has been growing on the same ground for more than a century, which is why the Arboretum flags it in its list of centenarians.\n\nIts age is counted from its arrival in 1911, so about 115 years. How old the plant was when Wilson collected it is not recorded."
+  },
+  {
+    "id": "bos_034",
+    "name": "Sargent's Japanese Castor Aralia",
+    "species": "Castor Aralia (Kalopanax septemlobus)",
+    "age_estimate": "about 130 years since the seed arrived",
+    "age_min": 129,
+    "age_max": 150,
+    "age_basis": "derived",
+    "girth_cm": 287,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.2932462,
+      "longitude": -71.129428,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://www.treesandshrubsonline.org/articles/kalopanax/kalopanax-septemlobus/",
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 12453*A (mapped individual plant), queried 2026-11-03",
+    "accession": "12453*A",
+    "curation_status": "ai_generated",
+    "how_to_recognise": "You can recognise it by its company, a konara oak and a needle juniper collected on the same 1892 Japan trip. It is the castor aralia numbered 12453*A in the Arboretum's records.",
+    "verify_notes": "Accession 12453*A, seed collected wild in Japan and received 12 Dec 1892 by the Arboretum's director Charles Sprague Sargent, who collected it himself (GIS collector field: Sargent, C. S.; Trees and Shrubs Online gives seed collected on his first Japan expedition of 1892, citing Port 2014). GIS: condition Good, last checked 2021-07-14, DBH 91.5 cm measured the same day, grid 53-SE, wild-collected origin known. Nearby wild-collected neighbours from the same 1892 trip: Konara oak 16823*B and Japan needle juniper 14866*A. Height not recorded.",
+    "story": "The director of the Arnold Arboretum gathered the seed of this tree himself. In 1892 Charles Sprague Sargent made his first collecting expedition to Japan, and the Arboretum's own record names him, not a hired collector or a nursery, as the source of this castor aralia. The wild seed was logged in Jamaica Plain on 12 December that year.\n\nIt has company from the same trip. Two of its neighbours were also collected in the wild on Sargent's 1892 trip, a konara oak and a Japanese needle juniper, so this corner of the grounds holds three living souvenirs of one journey, still standing close together more than 130 years on.\n\nThe castor aralia is an East Asian tree, wild in Japan, and this one has grown into a big one. The inventory measured its trunk at 91.5 centimetres across in July 2021, about 2.9 metres round, and recorded it in good condition. Nobody has written down its height.\n\nIts age is counted from the day the seed arrived, so about 130 years. Because it came as seed rather than as a young plant, that arrival date sits closer to the tree's real age than it would for a tree that arrived as a graft or a nursery plant of unknown years. If you have photographed it in flower or know more of its story, tell us."
+  },
+  {
+    "id": "bos_035",
+    "name": "The Sapporo Japanese Elm",
+    "species": "Japanese Elm (Ulmus davidiana var. japonica)",
+    "age_estimate": "about 130 years since the seed arrived",
+    "age_min": 130,
+    "age_max": 150,
+    "age_basis": "derived",
+    "girth_cm": 289,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.3011931,
+      "longitude": -71.122735,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Ulmus_davidiana_var._japonica",
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 4119*H (mapped individual plant), queried 2026-11-03",
+    "accession": "4119*H",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by its accession number, 4119*H, in the Arboretum's records, at grid square 20-SE. It is a Japanese elm with a trunk about 2.9 metres round, measured in 2017.",
+    "verify_notes": "Accession 4119*H, seed received 31 Aug 1895 from the Agricultural College, Sapporo, Japan (GIS source field). Wikipedia's article on the variety says it was introduced to the Arnold Arboretum in 1895 as seed sent from Sapporo by Professor Kingo Miyabe (secondary source; the GIS source field names the college). GIS: condition Good, last checked 2017-10-03, DBH 92.1 cm measured same day, grid 20-SE, flagged significant specimen. Same Sapporo Agricultural College link as the Sapporo katsuras already on the site (bos_008). Last check is six years old; flagged for that reason.",
+    "story": "Two sources tell the start of this elm's life slightly differently. The Arnold Arboretum's inventory says the seed came from the Agricultural College at Sapporo, in Japan, and arrived on 31 August 1895. Wikipedia's article on the Japanese elm says the variety reached the Arboretum that same year as seed sent from Sapporo by Professor Kingo Miyabe. They may well describe the same packet from two angles, but neither source joins them, so we leave both standing.\n\nThe Japanese elm is a variety of David's elm, and the tree that grew from that 1895 seed had a trunk 92 centimetres across when it was measured in October 2017, about 2.9 metres round, and was listed as a significant specimen of the collection. No height is on record.\n\nThat 2017 visit is also the last time the inventory says anyone checked on it, when it was in good condition. That is nine years without a written check, so how it stands today is not confirmed. If you walk past it, a photograph and a word on how it looks would settle it.\n\nIts age is counted from the day the seed arrived, about 130 years. This is one of two Sapporo stories in these grounds, the other belonging to the katsuras."
+  },
+  {
+    "id": "bos_036",
+    "name": "The Cedar of Lebanon at the Arborway End",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "about 80 years since it was planted",
+    "age_min": 79,
+    "age_max": 110,
+    "age_basis": "derived",
+    "girth_cm": 313,
+    "height_m": 22.5,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.3072679,
+      "longitude": -71.1210545,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station and walk in from the Forest Hills Gate, or enter at the Arborway end of the Arboretum, which is closer to this tree.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 271-47*A (mapped individual plant), queried 2026-11-03",
+    "accession": "271-47*A",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it as a Cedar of Lebanon about 22 metres tall with a trunk about 3.1 metres round. It stands at the northern Arborway end of the grounds, numbered 271-47*A in the Arboretum's records.",
+    "verify_notes": "Accession 271-47*A, plant received 1 May 1947 from the Antitoxin Laboratory, Jamaica Plain (GIS source field), cultivated origin. GIS: condition Good, last checked 2019-10-28, DBH 99.6 cm and height 22.46 m both measured 2022-09-20, grid 3-NW (northern end near the Arborway), flagged significant specimen. Plant was received as a nursery tree of unknown size so the tree can be older than the accession by some years. One source (the Arboretum record); flagged one source.",
+    "story": "The source column on this cedar's record does not name a nursery or a plant collector. It names the Antitoxin Laboratory in Jamaica Plain, which handed the Arnold Arboretum a Cedar of Lebanon on 1 May 1947. Why a laboratory had a cedar to give away, the record does not say.\n\nWhat the record does give is unusually exact. In September 2022 the Arboretum measured the tree at 22.46 metres tall, with a trunk 99.6 centimetres across, about 3.1 metres round. It is listed as a significant specimen of the collection and was in good condition at its last check, in 2019. It stands at the northern end of the grounds, near the Arborway.\n\nIts age is about 80 years in the ground, counted from the day it arrived. It came as a nursery tree of unknown size, so it may be some years older than that. Where it grew before 1947 is not recorded.\n\nEverything here rests on a single source, the Arboretum's own inventory. If you know the laboratory's side of the story, tell us."
+  },
+  {
+    "id": "bos_037",
+    "name": "The Engelmann Black Oak",
+    "species": "Black Oak (Quercus velutina)",
+    "age_estimate": "about 140 years since the graft arrived",
+    "age_min": 143,
+    "age_max": 170,
+    "age_basis": "derived",
+    "girth_cm": 292,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.299552,
+      "longitude": -71.123608,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 1887*A (mapped individual plant), queried 2026-11-03",
+    "accession": "1887*A",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by its accession number, 1887*A, in the Arboretum's records, at grid square 32-NW. It is a black oak with a trunk about 2.9 metres round.",
+    "verify_notes": "Accession 1887*A, graft received 21 Feb 1883 from Dr George Engelmann, St Louis; GIS record note: 'Taken by Dr. G. Engelmann from the tree described by him [note from card]' (the Arboretum's own accession card; which tree he had described is not stated in anything I could fetch). Condition Fair, last checked 2017-10-18, DBH 92.8 cm measured 2012-08-01, grid 32-NW, flagged centenarian record. Fair condition, last check 2017: flagged. One source only (the Arboretum record). The 'grafted' status means the tree is a clone of Engelmann's tree, not a seedling.",
+    "story": "This oak is a clone of a tree a botanist once described, and its record does not say which tree that was. In February 1883 the Arnold Arboretum received a graft from Dr George Engelmann, the St Louis physician and botanist. A note from the Arboretum's accession card, copied into its records, says that it was taken by Engelmann from the tree described by him.\n\nA graft is a cutting joined onto a rootstock, so the oak growing here is genetically the same individual as Engelmann's original, wherever that stood. The card does not say where, and no source we have identifies it. If you work on Engelmann's papers and recognise the tree, we would very much like to hear.\n\nThe clone has done well by its own measure. The inventory gave its trunk as 92.8 centimetres across in 2012, about 2.9 metres round, and lists it among the Arboretum's centenarians, more than 140 years after the graft arrived. Its condition was recorded as fair in 2017, the last check on file, and no height has been measured. That fair rating and the nine-year gap mean nobody has confirmed how it is doing now.\n\nAll of this comes from one source, the Arboretum's record of the tree."
+  },
+  {
+    "id": "bos_038",
+    "name": "Sargent's Geneseo Bur Oak",
+    "species": "Bur Oak (Quercus macrocarpa)",
+    "age_estimate": "about 145 years since the acorns arrived",
+    "age_min": 146,
+    "age_max": 175,
+    "age_basis": "derived",
+    "girth_cm": 306,
+    "location": {
+      "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+      "latitude": 42.3004485,
+      "longitude": -71.1249283,
+      "neighbourhood": "Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    ],
+    "official_register": {
+      "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+      "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+    },
+    "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+    "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+    "location_precision": "confirmed",
+    "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 16847*M (mapped individual plant), queried 2026-11-03",
+    "accession": "16847*M",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it as the bur oak in a cluster of three big oaks within 40 metres, beside a chestnut oak and a black oak of the same years. It is numbered 16847*M in the Arboretum's records.",
+    "verify_notes": "Accession 16847*M, seed received 8 Jan 1880, collected wild by C. S. Sargent at the Geneseo Valley (GIS locality; presumably New York, not stated), origin known, (grid 25-NE). Condition Alive, last checked 2020-01-22, DBH 97.3 cm measured 2017-10-17. Next to chestnut oak 16352*F (1879, DBH 95) and black oak 16893*A (1882, DBH 98): three of the oldest big oaks in one 40 m cluster. One source only (the Arboretum record): flagged.",
+    "story": "Three oaks that reached the Arnold Arboretum between 1879 and 1882 stand within 40 metres of each other here, each with a trunk close to a metre across. This bur oak is the one grown from acorns that Charles Sprague Sargent, the Arboretum's director, gathered in the wild. The record gives the place as the Geneseo Valley, probably the one in New York, though it does not name the state. The seed was logged in Jamaica Plain on 8 January 1880.\n\nIts neighbours are a chestnut oak received in 1879 and a black oak from 1882. All three are among the oldest large oaks in the collection, and they have grown up side by side for well over a century.\n\nThe bur oak measured 97.3 centimetres across the trunk in October 2017, a little over 3 metres round, and was last recorded alive in January 2020. No height is on file. Its age is counted from the day the acorns arrived, about 145 years, and because it came as seed rather than as a nursery plant, that figure sits close to its real age.\n\nEverything specific here comes from one source, the Arboretum's own record, and the inventory has not reported on the tree since 2020. If you have seen it lately, tell us how it looks."
+  }
+]

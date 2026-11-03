@@ -1,0 +1,318 @@
+[
+  {
+    "id": "bos_014",
+    "name": "The Fountain Avenue Katsura",
+    "species": "Katsura (Cercidiphyllum japonicum)",
+    "age_estimate": "not documented",
+    "girth_cm": 461,
+    "height_m": 23.2,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Lime and Fountain, section 29-A)",
+      "latitude": 42.372319,
+      "longitude": -71.141122,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-08-26); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by its size: it is the largest katsura in the cemetery, 4.61 metres round. It stands where Lime and Fountain avenues meet, near Auburn Lake, about 40 metres from the huge red oak.",
+    "verify_notes": "DCR Legacy list has a Mount Auburn katsura at 177 in circumference, 71.5 ft, measured 2022-08-03 (address only 'Mount Auburn Cemetery'). Cemetery inventory's biggest katsura: DBH 57.75 in (=181 in circumference), 76 ft, measured 2026-09-29; sizes agree within 3 percent so treated as the same tree, flagged as an inference, not stated by either source. Age not documented; katsura of this girth are old for the species in New England but no planting date found. PINS: the coordinate is the cemetery's own mapped tree position (inventory section N16, avenue pair 'Lime/Fountain'); not verified against a visible crown. Last inventory check 2026-08-26, measured 2026-09-29, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "Mount Auburn Cemetery keeps a mapped inventory of its trees, and its biggest katsura comes out at 4.61 metres round. The cemetery's own plant inventory measured it again in September 2026 at 57.75 inches across the trunk and about 23 metres tall, the largest katsura anywhere in its records.\n\nMassachusetts keeps a list of its biggest trees, and in 2022 the state measured a katsura in this cemetery at 177 inches round and 71.5 feet tall. The list gives no address beyond the cemetery's name. This tree comes within three percent of those figures, so it is very probably the same one, though neither record says so in as many words.\n\nKatsura is planted for its autumn. In October the round leaves turn pink and yellow, and once they are down they give off a smell of burnt sugar that tends to reach you before the tree does. The cemetery opened in 1831, but nobody has put a date on this tree. The inventory gives no planting year. If you know when it went in, tell us.\n\nIt stands on the east side of the cemetery, in the section where Lime Avenue meets Fountain Avenue, close to Auburn Lake and about 40 metres from the great red oak of the same corner.",
+    "best_time": {
+      "months": [
+        10
+      ],
+      "kind": "autumn colour",
+      "label": "October, when the leaves turn pink and yellow and smell of burnt sugar once they fall"
+    }
+  },
+  {
+    "id": "bos_015",
+    "name": "The Moss Path Scarlet Oak",
+    "species": "Scarlet Oak (Quercus coccinea)",
+    "age_estimate": "pre-1831, before the cemetery",
+    "girth_cm": 407,
+    "height_m": 31.7,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Moss Path Area, section 56-C)",
+      "latitude": 42.370972,
+      "longitude": -71.144459,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/",
+      "https://www.inaturalist.org/observations/402151836"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2025-05-14); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by its height, about 32 metres, and a trunk 4.07 metres round, recorded as older than the cemetery. It stands by Moss Path; the other big scarlet oak is at Mimosa and Heliotrope paths.",
+    "verify_notes": "Cemetery inventory: DBH 51 in (=406 cm girth), 104 ft, checked alive 2025-05-14, received-year 1831 with provenance code W (wild), i.e. recorded as pre-dating the cemetery's 1831 founding. Independent: iNaturalist observation 402151836 (2026-09-20, 42.37095,-71.14459, research grade) by a visitor says 'largest I've ever seen of this species... known to pre-date 1831 and is therefore wild, not a planting' and that cemetery staff reviewed the ID. DCR Legacy list has a Mount Auburn scarlet oak state champion at 153 in, 88 ft (2022-08-03); inventory has another scarlet oak at Mimosa/Heliotrope DBH 49.75 in, 95 ft, so which one is the DCR tree is not settled: state only that the register lists a champion scarlet oak in the cemetery. PINS: the coordinate is the cemetery's own mapped tree position (inventory section K12, avenue pair 'Moss Path Area'); not verified against a visible crown. Last inventory check 2025-05-14, measured 2026-04-28, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "This scarlet oak is older than the cemetery around it. When Mount Auburn opened in 1831, it was already growing here, and the cemetery's plant inventory still files it that way, as received in 1831 and of wild origin. Every lot, monument and avenue in this corner was laid out around a tree nobody planted.\n\nHow much older than 1831 it is, nobody knows. The record only says it was here first, which makes it at least 195 years old and possibly a good deal more. A visitor who logged it on iNaturalist in September 2026 described it the same way, as pre-dating the cemetery and therefore wild, and noted that cemetery staff had checked the identification.\n\nThe inventory puts the trunk at 51 inches across, about 4.07 metres round, and the height at 104 feet, close to 32 metres. Massachusetts lists a champion scarlet oak somewhere in Mount Auburn, measured in 2022 at 153 inches round and 88 feet tall. Whether that is this tree is not settled. A second big scarlet oak, by Mimosa and Heliotrope paths, is nearly the same size, and the state record names only the cemetery.\n\nWhat is settled is that this one was standing before the first burial here, and that it has watched the whole of Mount Auburn grow up around it. It stands by Moss Path."
+  },
+  {
+    "id": "bos_016",
+    "name": "The Hazel Avenue Cedar of Lebanon",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "not documented",
+    "girth_cm": 273,
+    "height_m": 21.6,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Hazel and Indian, section 23-C)",
+      "latitude": 42.374114,
+      "longitude": -71.144611,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-07-28); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it as the only large cedar of Lebanon in the cemetery's inventory, an evergreen about 22 metres tall. It stands between Hazel Avenue and Indian Ridge Path, about 30 metres from the big Norway spruce.",
+    "verify_notes": "Cemetery inventory: Cedrus libani ssp. stenocoma, DBH 34.25 in (=87 cm diameter, 273 cm girth), 71 ft, checked alive 2026-07-28. DCR champion list: Mount Auburn Cedar of Lebanon state champion, circumference 104 in (=33.1 in diameter), 68 ft, 2022-08-03. Size and height agree within 4 percent and it is the only Cedar of Lebanon in the large-tree query; treated as the champion, flagged as inference. Evergreen, good in winter. PINS: the coordinate is the cemetery's own mapped tree position (inventory section R12, avenue pair 'Hazel/Indian'); not verified against a visible crown. Last inventory check 2026-07-28, measured 2026-09-08, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "Massachusetts lists its champion cedar of Lebanon in this cemetery and gives no more of an address than that. The state measured it in 2022 at 104 inches round and 68 feet tall, then wrote \"Mount Auburn Cemetery\" and left it at that.\n\nThe cemetery's own plant inventory narrows it down. Among its large trees there is one cedar of Lebanon, between Hazel Avenue and Indian Ridge Path, measured at 34.25 inches across the trunk, about 2.73 metres round, and 71 feet tall. Those figures sit within four percent of the state's, so this is almost certainly the champion. Neither record makes the match itself, so take it as a strong likelihood rather than a certainty.\n\nThe inventory names it as the subspecies stenocoma. It is an evergreen, which makes it one of the few trees on this hill that looks the same in January as in June, and a fair reason to come in winter, when the crowns around it are bare.\n\nNobody has dated it, and the inventory gives no planting year. If you know when it went in, tell us. About 30 metres away on Indian Ridge Path stands the cemetery's biggest Norway spruce, which makes a two-evergreen detour of it."
+  },
+  {
+    "id": "bos_017",
+    "name": "The Pilgrim Path Nikko Fir",
+    "species": "Nikko Fir (Abies homolepis)",
+    "age_estimate": "not documented",
+    "girth_cm": 307,
+    "height_m": 23.5,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Pilgrim and Spruce, section 16-E)",
+      "latitude": 42.371325,
+      "longitude": -71.147099,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2025-10-07); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it as a big evergreen fir, about 23 metres tall and 3.07 metres round, the only Nikko fir among the cemetery's large trees. It stands between Pilgrim Path and Spruce Avenue.",
+    "verify_notes": "Cemetery inventory: DBH 38.5 in (=98 cm diameter, 307 cm girth), 77 ft, checked alive 2025-10-07. DCR champion Nikko fir at Mount Auburn: 119.5 in circumference (=38.0 in diameter), 75.5 ft, 2022-08-03: match within 2 percent, only one Nikko fir in the query, flagged as inference. Fir native to central Japan, so a champion of a rare species. PINS: the coordinate is the cemetery's own mapped tree position (inventory section L8, avenue pair 'Pilgrim/Spruce'); not verified against a visible crown. Last inventory check 2025-10-07, measured 2025-10-07, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "Nikko fir grows wild in central Japan, and the biggest one Massachusetts has on record grows between two cemetery paths in Cambridge. The state recorded its champion in Mount Auburn in 2022 at 119.5 inches round and 75.5 feet tall, and the cemetery's own plant inventory has exactly one Nikko fir that fits.\n\nThat one stands between Pilgrim Path and Spruce Avenue. The inventory, last checked in October 2025, gives it a trunk 38.5 inches across, about 3.07 metres round, and a height of 77 feet, a shade over 23 metres. The two sets of figures agree within two percent. The state does not name the spot, so the pairing rests on species and size, which is as strong as this kind of match gets without a tag on the trunk.\n\nNikko fir is not a common sight outside Japan, and a champion of a rare species is a different thing from a champion oak. There may simply be few rivals. It is still a big conifer by any measure, and as an evergreen it looks much the same in every month you could visit.\n\nMount Auburn opened in 1831, and some 870 of the trees it has mapped since are 30 inches across or more. This is one of them. Nobody has published when it was planted. If you know, tell us."
+  },
+  {
+    "id": "bos_018",
+    "name": "The Anemone Path Zelkova",
+    "species": "Saw-leaf Zelkova (Zelkova serrata)",
+    "age_estimate": "not documented",
+    "girth_cm": 391,
+    "height_m": 25.6,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Anemone and Mound, section 53-G)",
+      "latitude": 42.370318,
+      "longitude": -71.145469,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2025-04-11); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the crown, recorded by the state as about 28 metres wide, far broader than anything near it. It stands by Anemone Path and Mound Avenue; it is the largest zelkova in the cemetery.",
+    "verify_notes": "Cemetery inventory: largest of its zelkovas, DBH 49 in measured at 2 ft (=154 in circumference), 84 ft, checked alive 2025-04-11. DCR champion Japanese zelkova at Mount Auburn: 166 in circumference, 70.4 ft, crown spread 93 ft, 2022-08-03. Girth 7 percent off, but it is the largest zelkova in the inventory; DBH taken at 2 ft vs register at breast height explains some of it. Flagged as inference. PINS: the coordinate is the cemetery's own mapped tree position (inventory section J10, avenue pair 'Anemone/Mound'); not verified against a visible crown. Last inventory check 2025-04-11, measured 2025-10-01, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "The champion zelkova of Massachusetts has a crown 93 feet across, wider than the state measured the tree to be tall. That was in 2022, when the register recorded a Japanese zelkova in Mount Auburn Cemetery at 166 inches round, 70.4 feet high and 93 feet from one side of the crown to the other. Japanese zelkova is the register's name for the saw-leaf zelkova.\n\nThe register gives no spot within the cemetery. The cemetery's own plant inventory points to this tree by Anemone Path and Mound Avenue, its largest zelkova, at 49 inches across and 84 feet tall. The trunk figures do not quite agree, about seven percent apart, and the inventory measured at two feet off the ground where the state measured at chest height, which accounts for some of it. So this is very likely the champion, and not proven to be.\n\nWhat you can see for yourself is the spread. A crown nearly 28 metres wide throws a pool of summer shade over a good stretch of the lots beneath it. In autumn the leaves turn yellow to rusty orange, varying from tree to tree.\n\nNobody has dated it. The inventory gives no planting year, and the cemetery has been planting since 1831. If you know when this one went in, tell us."
+  },
+  {
+    "id": "bos_019",
+    "name": "The Willow Pond Dawn Redwood",
+    "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+    "age_estimate": "not documented",
+    "girth_cm": 395,
+    "height_m": 28.3,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Willow Pond and Azalea, section 42-F)",
+      "latitude": 42.368586,
+      "longitude": -71.146797,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-09-11); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the soft feathery needles, which turn reddish brown and drop in autumn, unlike the evergreens around it. It stands beside Willow Pond near Azalea Path, about 25 metres from the tall Himalayan pine.",
+    "verify_notes": "Cemetery inventory: DBH 49.5 in (=157 in circumference), 93 ft, checked alive 2026-09-24, year recorded 1950. DCR Legacy list: Mount Auburn dawn redwood 156 in circumference, 90 ft, 2022-02-08 (listed city Cambridge). Match within 1 percent in girth and 3 percent in height; there are bigger redwoods on Rosebay Avenue (55.5 in DBH) not in the register, so this one is the register tree by size, flagged as inference. Dawn redwood was only described from China in 1941-44, so this is a very early American planting if the 1950 year is a planting date (inventory field not labelled planting; do not state). PINS: the coordinate is the cemetery's own mapped tree position (inventory section F9, avenue pair 'Willow Pond\\Azalea'); not verified against a visible crown. Last inventory check 2026-09-11, measured 2026-09-24, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "The dawn redwood on the Massachusetts big-tree list is not even the largest dawn redwood in Mount Auburn. The state measured one here in February 2022 at 156 inches round and 90 feet tall, and the cemetery's own plant inventory has a tree beside Willow Pond that matches it within one percent on girth and three on height. Over on Rosebay Avenue, though, the inventory has dawn redwoods bigger still, at 55.5 inches across against this one's 49.5, and none of them is on the state list.\n\nSo the champion is a champion of the register rather than of the ground, which says more about who got measured than about the trees. The pairing with this pond-side trunk rests on its size, since the state names only the cemetery.\n\nIt is a big tree all the same, about 3.95 metres round and 28 metres tall by the inventory's September 2026 figures. Dawn redwood is a deciduous conifer. It loses its soft needles every autumn, after they turn a reddish brown, which sets it apart from the pines and spruces around it for half the year.\n\nNobody has published when it was planted, which matters for a species science only described from living trees in the 1940s. An early date would make it one of the first in the country. If you know the story, tell us. About 25 metres away, by Sedum Path, stands the cemetery's tall Himalayan pine."
+  },
+  {
+    "id": "bos_020",
+    "name": "The Sedum Path Himalayan Pine",
+    "species": "Himalayan Pine (Pinus wallichiana)",
+    "age_estimate": "not documented",
+    "girth_cm": 261,
+    "height_m": 30.8,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Sedum and Azalea, section 42-B)",
+      "latitude": 42.368719,
+      "longitude": -71.146529,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-09-09); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by its height, about 31 metres on a slim trunk, and its long blue-green needles. It stands by Sedum Path near Azalea Path, about 25 metres from the dawn redwood at Willow Pond.",
+    "verify_notes": "Cemetery inventory: DBH 32.75 in (=104 cm, 261 cm girth), 101 ft, checked alive 2026-09-09. DCR champion Himalayan pine: 96 in circumference (=30.6 in diameter), 91.1 ft, 2022-08-03. Match within 7 percent, only one such pine in the query, flagged as inference. PINS: the coordinate is the cemetery's own mapped tree position (inventory section F9, avenue pair 'Sedum\\Azalea'); not verified against a visible crown. Last inventory check 2026-09-09, measured 2026-09-24, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "This pine stands 101 feet tall, close to 31 metres, and its species comes from the Himalaya. The cemetery's own plant inventory measured it in September 2026, with a trunk 32.75 inches across, about 2.61 metres round, which is slender for that height. It is built upward rather than outward.\n\nMassachusetts lists its champion Himalayan pine in Mount Auburn, measured in 2022 at 96 inches round and 91.1 feet tall. The state gives no position inside the cemetery, and this is the only Himalayan pine of any size in the inventory, so it is almost certainly the same tree. The figures sit about seven percent apart, and the state's height is ten feet lower, so read the champion title as very likely rather than certain.\n\nIt keeps its needles all year, so the tree you see in February is the tree you see in July. Its neighbour 25 metres away by Willow Pond is a dawn redwood, a conifer that does the opposite and stands bare from November.\n\nNobody has published a planting date for it, and the inventory gives none. If you know when it went in, tell us."
+  },
+  {
+    "id": "bos_021",
+    "name": "The Indian Ridge Norway Spruce",
+    "species": "Norway Spruce (Picea abies)",
+    "age_estimate": "not documented",
+    "girth_cm": 449,
+    "height_m": 19.8,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Indian and Primrose, section 23-D)",
+      "latitude": 42.374447,
+      "longitude": -71.144618,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-07-28); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the trunk, far wider than any other Norway spruce in the cemetery, about 20 metres tall. It stands on Indian Ridge Path near Primrose Path, about 30 metres from the cedar of Lebanon.",
+    "verify_notes": "Cemetery inventory: DBH 56.25 in measured at 0.5 ft (=177 in circumference, a root-flare measure), 65 ft, checked alive 2026-07-28. DCR champion Norway spruce at Mount Auburn: 194 in circumference, 69.5 ft, 2022-02-08. Largest Norway spruce in the inventory by far (next 36.5 in); flagged as inference. PINS: the coordinate is the cemetery's own mapped tree position (inventory section S11, avenue pair 'Indian/Primrose'); not verified against a visible crown. Last inventory check 2026-07-28, measured 2026-09-08, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "The next biggest Norway spruce in Mount Auburn's plant inventory is 36.5 inches across. This one is 56. That gap is wide enough that the cemetery's record and the state's both point at it, even though neither says so outright.\n\nMassachusetts lists a champion Norway spruce in the cemetery, measured in February 2022 at 194 inches round and 69.5 feet tall, with no position given. The inventory's figure for this tree on Indian Ridge Path is 177 inches round, taken just six inches above the ground, across the flare of the roots, and a height of 65 feet. A measurement that low flatters any trunk, so the comparison with the other spruces is not quite like for like. Even so, nothing else in the cemetery comes close, and the champion is very probably this tree.\n\nNorway spruce is a European tree, a long way from home in a Cambridge cemetery. It is evergreen, so it looks the same in every season, and with the cedar of Lebanon about 30 metres away it makes a short winter walk of two conifers.\n\nThe inventory gives no planting year and nobody has published one. The cemetery has been planting since 1831, which bounds the question without answering it. If you know when this spruce went in, tell us."
+  },
+  {
+    "id": "bos_022",
+    "name": "The Lime Avenue Red Oak",
+    "species": "Northern Red Oak (Quercus rubra)",
+    "age_estimate": "pre-1831, before the cemetery",
+    "girth_cm": 545,
+    "height_m": 31.4,
+    "location": {
+      "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Lime and Fountain, section 29-A)",
+      "latitude": 42.371995,
+      "longitude": -71.141321,
+      "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+    },
+    "verified_sources": [
+      "https://flora.mountauburn.org/",
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+      "https://www.mountauburn.org/"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+    "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+    "location_precision": "approximate",
+    "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-08-26); crown not confirmed on aerial imagery",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by sheer bulk, the widest red oak in the cemetery and about 31 metres tall. It stands where Lime and Fountain avenues meet, about 40 metres from the big katsura near Auburn Lake.",
+    "verify_notes": "Cemetery inventory: largest red oak, DBH 68 in (=173 cm; 5.7 ft diameter looks high, flagged as possibly an included-stem measure), 103 ft, checked alive 2026-08-26, received-year 1831, i.e. recorded as pre-dating the cemetery. Not in DCR rows seen in the Mount Auburn set. Single source (owner of the ground) plus life check. PINS: the coordinate is the cemetery's own mapped tree position (inventory section M16, avenue pair 'Lime/Fountain'); not verified against a visible crown. Last inventory check 2026-08-26, measured 2026-09-29, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+    "story": "Mount Auburn's plant inventory gives this red oak a trunk 68 inches across, a figure so large it may take in a second stem. Even allowing for that, it is the biggest red oak the cemetery has on record, about 31 metres tall, and it was here before the cemetery was.\n\nThe inventory files it as received in 1831 and of wild origin, which is its way of saying the tree was already growing when Mount Auburn opened that year. That makes it at least 195 years old, with no record of how much older. It stands in the section where Lime and Fountain avenues meet, and everything around it, every lot and every monument, came later.\n\nWhat it does not have is a state title. Massachusetts lists several Mount Auburn trees as champions, but no red oak among the cemetery's rows, so the only measurements here are the cemetery's own, last checked in August 2026 and measured that September. The 5.7-foot diameter is worth taking with some caution for the reason above. The height, 103 feet, needs no such hedge.\n\nIt is one of two big oaks the inventory records as older than the cemetery. The other is the scarlet oak by Moss Path, taller and slimmer. This one is the heavyweight. About 40 metres away in the same section stands the cemetery's biggest katsura."
+  },
+  {
+    "id": "bos_023",
+    "name": "The York Street London Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented",
+    "girth_cm": 480,
+    "height_m": 24.1,
+    "location": {
+      "address": "Across from 40 York Street, Cambridge, MA 02141",
+      "latitude": 42.369455,
+      "longitude": -71.092173,
+      "neighbourhood": "Wellington-Harrington, Cambridge"
+    },
+    "verified_sources": [
+      "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    ],
+    "official_register": {
+      "name": "Massachusetts DCR Legacy Tree Program, 2nd largest London planetree in the state",
+      "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+    },
+    "access": "On the public street, free, always viewable.",
+    "transport": "MBTA Lechmere or Central Square about 10 to 15 min walk; bus 69 or 85 nearby.",
+    "location_precision": "approximate",
+    "pin_source": "Nominatim geocode of 40 York St (register says tree is across from it); street level",
+    "curation_status": "flagged",
+    "how_to_recognise": "You can recognise it by the size: a London plane about 24 metres tall with a crown just as wide, on a residential street. It stands across the road from number 40 York Street.",
+    "verify_notes": "Register only: DCR row 'Accross from 40 York St, Cambridge', circumference 189 in (=480 cm), 79 ft, crown 79.5 ft, rank 2 of the state's London planetrees, measured 2025-08-08 (recent, counts as last-seen). Pin is the 40 York St building point; the tree is on the opposite side, perhaps 20 m off. Only one source; US exemption applies (one credible government source). Not yet matched to a photo.",
+    "story": "Massachusetts gives directions to its second-largest London plane in five words, one of them misspelled. The register line reads \"Accross from 40 York St\", in Wellington-Harrington, and nobody has published a better address.\n\nThe tree behind that line is 480 centimetres round, 79 feet tall and 79.5 feet across the crown, so it is very nearly as wide as it is high, about 24 metres both ways. The state measured it in August 2025. Only one London plane in the state is bigger.\n\nIt is a street tree, not a park tree. There is no fence, no lawn and no visitor path, just a residential block in east Cambridge and a crown that spreads over it.\n\nOur pin sits on the building at number 40, because that is what can be placed. The tree is across the road from it, perhaps 20 metres off. Look for the crown, which at that width should be hard to miss on a residential street.\n\nNobody has dated it, and the register gives no planting year. If you live on York Street and know its history, tell us."
+  }
+]

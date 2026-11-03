@@ -1,0 +1,92 @@
+[
+  {
+    "candidate": "1835 Joy Street ginkgo, Boston Common",
+    "reason": "no survival evidence: the Common's largest ginkgo is 22 in DBH and none stands near the Joy Street steps in the city inventory; stays a lead",
+    "coordinate": null
+  },
+  {
+    "candidate": "Green ash state champion, 28 Moreland St, Roxbury",
+    "reason": "house address, no city inventory street tree within 250 m matches species and size (DBH about 54 in); a private-yard tree, not shown to be visible from the street",
+    "coordinate": [
+      42.3256016,
+      -71.0812408
+    ]
+  },
+  {
+    "candidate": "American elm 39 Princeton St, East Boston",
+    "reason": "house address, no matching city street tree in the inventory; not shown to be public",
+    "coordinate": [
+      42.3768244,
+      -71.0374493
+    ]
+  },
+  {
+    "candidate": "American elm 120 Warren Ave, Hyde Park",
+    "reason": "house address, no matching city street tree in the inventory; not shown to be public",
+    "coordinate": [
+      42.249098,
+      -71.1131029
+    ]
+  },
+  {
+    "candidate": "Two scarlet oaks, 10 Park Lane, Jamaica Plain",
+    "reason": "house address, no matching city street tree in the inventory; two trees at one address and not shown to be public",
+    "coordinate": [
+      42.3108029,
+      -71.0992835
+    ]
+  },
+  {
+    "candidate": "American elm, Public Alley 701, South End",
+    "reason": "alley behind houses, no matching city tree (nearest inventory American elm is 51 in at 1 Union Park, 111 m away, different tree); access and ownership unclear",
+    "coordinate": [
+      42.3426037,
+      -71.0719479
+    ]
+  },
+  {
+    "candidate": "Witch-hazel state rank 1, 46 Union Park",
+    "reason": "multi-stem shrub-size tree at a house address, not shown to be seen from the public square",
+    "coordinate": [
+      42.3432011,
+      -71.0721733
+    ]
+  },
+  {
+    "candidate": "American elm on the strip between 463 and 464 Commonwealth Ave",
+    "reason": "outside the Commonwealth Avenue Mall inventory (Mass Ave to Arlington St), no inventory match, geocode of both numbers failed to place a median tree; median of a busy road, not a walkable collectible point",
+    "coordinate": [
+      42.349,
+      -71.0932
+    ]
+  },
+  {
+    "candidate": "Swamp white oak, Butterfly Park, Bucknam St, Roxbury",
+    "reason": "Bucknam St and Butterfly Park would not geocode, no inventory park of that name; no tree coordinate",
+    "coordinate": null
+  },
+  {
+    "candidate": "European beech 42 Plainfield St, Newton",
+    "reason": "house address, not shown to be visible from the street; no Newton tree inventory checked in this pass",
+    "coordinate": [
+      42.3270612,
+      -71.2241357
+    ]
+  },
+  {
+    "candidate": "Douglas fir state champion, 170 Summer St, Somerville",
+    "reason": "geocodes to a house (building/house); not shown to be public",
+    "coordinate": [
+      42.3863646,
+      -71.1067654
+    ]
+  },
+  {
+    "candidate": "Brookline DCR rows",
+    "reason": "no Brookline rows in data/registers geocoded file"
+  },
+  {
+    "candidate": "Big English elms at Shaw Memorial (inventory 900093265, 900093273 area)",
+    "reason": "already published as bos_001"
+  }
+]
