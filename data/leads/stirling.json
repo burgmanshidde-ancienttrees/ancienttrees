@@ -1,0 +1,55 @@
+{
+ "leads": [
+  {
+   "name": "Inchmahome Priory sweet chestnuts (three)",
+   "approx_location": "Inchmahome island, Lake of Menteith, 56.1766,-4.2841 (approx, unchecked)",
+   "reason": "HES visitor page: three gnarled sweet chestnuts thought to date from the 1500s; HES garden inventory says Nuns' Walk chestnuts probably planted c.1660s (conflict); access by boat with ticket (paid, seasonal); no girth, no per-tree coordinate, no photo checked. Not within 30 min of Stirling by PT.",
+   "sources": [
+    "https://www.historicenvironment.scot/visit/all/inchmahome-priory/",
+    "https://portal.historicenvironment.scot/designation/GDL00218"
+   ]
+  },
+  {
+   "name": "Inchmahome box bower (Queen Mary's Bower)",
+   "reason": "HES inventory: origin disputed (Mary Queen of Scots legend vs replanted from Cardross estate); ensemble, no measurement.",
+   "sources": [
+    "https://portal.historicenvironment.scot/designation/GDL00218"
+   ]
+  },
+  {
+   "name": "Poker Tree, Aberfoyle",
+   "reason": "Scottish Tree of the Year 2015 finalist (search summary only); no age, no coordinate found; Aberfoyle is about 30 km from Stirling.",
+   "sources": []
+  },
+  {
+   "name": "Giant sequoia, Memorial Park (Pullar), Keir Street, Bridge of Allan",
+   "approx_location": "Bridge of Allan, Memorial Park, Keir Street boundary",
+   "reason": "Parks and Gardens UK (search summary): single giant redwood about 27 m, no planting date, no girth; a second tree (redwoodworld) stands near Chalmers Church, unrelated. Needs a page fetch for height and a girth/age source; 5 min by train from Stirling, so the best day-trip lead.",
+   "sources": [
+    "https://www.parksandgardens.org/places/memorial-park-bridge-of-allan",
+    "https://stirling.gov.uk/planning-building-the-environment/the-environment/parks-in-stirling/bridge-of-allan-pullar-memorial-park"
+   ]
+  },
+  {
+   "name": "Callendar Wood veteran oaks and Wallace-legend oak, Falkirk",
+   "reason": "FLS survey analysis: ancient semi-natural woodland with many veteran oaks, some about 250 years (tourism guide); no individual tree named or located.",
+   "sources": [
+    "https://forestryandland.gov.scot/media/lvmfatrp/06-callendar-wood-survey-analysis-concept-maps1.pdf"
+   ]
+  },
+  {
+   "name": "Mugdock yew (AYG 2696), see data/leads/glasgow.json",
+   "reason": "already a lead; girth 478 cm single database row.",
+   "sources": [
+    "https://www.ancient-yew.org/yew_tree_database/mugdock-country-park/"
+   ]
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Wallace Oak, Torwood (Wikidata Q80488959)",
+   "reason": "dead: died in the 1830s, only fragments by 1877, exact site conjectural (Wikipedia Wallace Oak (Torwood), search summary); never ship"
+  }
+ ],
+ "notes": "Pass 2026-11-03."
+}

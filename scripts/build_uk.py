@@ -11,6 +11,10 @@ data/research/uk-places.json. Edinburgh and Glasgow grow; their intro and meta a
 by the rewritten ones in uk-places.json and Edinburgh's free-entry answer loses its count. Wolverhampton, Cannock Chase and Milton Keynes have
 two trees each, so their place pages stay out of Google and the trees go live as tree pages.
 Birmingham, Aylesbury and West Bromwich found nothing that ships (data/leads/).
+Second round (2026-11-03): Perthshire (data/research/dunkeld-verified.json) takes Dunkeld from one
+tree to five and adds Scone, Blair Atholl and Meikleour; more yews bring Wolverhampton to four and
+Cannock Chase to three (wolverhampton-verified-2.json); the Clachan Oak at Balfron is Stirlingshire's
+one tree (stirling-verified.json). Place fields of that round in uk-places-2.json override round one.
 Woodland Trust Ancient Tree Inventory not used.
 """
 import json, os, sys
@@ -20,20 +24,28 @@ R = os.path.join(ROOT, "data", "research")
 CITIES = os.path.join(ROOT, "data", "cities")
 OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else CITIES
 
-# slug: (research file, tree ids taken from it)
+# slug: [(research file, tree ids taken from it), ...]
 SOURCES = {
-    "edinburgh": ("edinburgh-verified.json", ["edi_017", "edi_018", "edi_019", "edi_020", "edi_021"]),
-    "glasgow": ("glasgow-verified-2.json", ["gla_007", "gla_009", "gla_010", "gla_011"]),
-    "wolverhampton": ("wolverhampton-verified.json", ["wol_001", "wol_002"]),
-    "cannock-chase": ("wolverhampton-verified.json", ["cnk_001", "cnk_002"]),
-    "milton-keynes": ("milton-keynes-verified.json", ["mkn_001", "mkn_002"]),
+    "edinburgh": [("edinburgh-verified.json", ["edi_017", "edi_018", "edi_019", "edi_020", "edi_021"])],
+    "glasgow": [("glasgow-verified-2.json", ["gla_007", "gla_009", "gla_010", "gla_011"])],
+    "wolverhampton": [("wolverhampton-verified.json", ["wol_001", "wol_002"]),
+                      ("wolverhampton-verified-2.json", ["wol_003", "wol_004"])],
+    "cannock-chase": [("wolverhampton-verified.json", ["cnk_001", "cnk_002"]),
+                      ("wolverhampton-verified-2.json", ["cnk_003"])],
+    "milton-keynes": [("milton-keynes-verified.json", ["mkn_001", "mkn_002"])],
+    # second round (Perthshire and Stirlingshire, 2026-11-03)
+    "dunkeld": [("dunkeld-verified.json", ["dnk_002", "dnk_003", "dnk_004", "dnk_005"])],
+    "scone": [("dunkeld-verified.json", ["dnk_006"])],
+    "blair-atholl": [("dunkeld-verified.json", ["dnk_007"])],
+    "meikleour": [("dunkeld-verified.json", ["dnk_008"])],
+    "balfron": [("stirling-verified.json", ["blf_001"])],
 }
 PLACE_FIELDS = ["city", "country", "status", "intro", "meta_description", "question_meta",
                 "question_answer", "question_context", "hero_tree_id", "oldest_tree_id", "faq"]
 TREE_FIELDS = ["id", "name", "species", "age_estimate", "age_min", "age_max", "age_basis",
                "girth_cm", "height_m", "location", "location_site", "story", "verified_sources",
                "official_register", "access", "transport", "best_time", "how_to_recognise",
-               "location_precision", "pin_source", "curation_status", "verify_notes", "photo", "paid_entry"]
+               "location_precision", "pin_source", "curation_status", "verify_notes", "photo", "photos", "paid_entry"]
 MISSING = {"url": None, "license": None, "attribution": None, "status": "missing"}
 # live faq sentences that state the old count (the intros are rewritten whole in uk-places.json)
 FAQ_FIXES = {
@@ -43,11 +55,14 @@ FAQ_FIXES = {
          "both included in a paid admission ticket, and the yews of Malleny Garden, which charges admission."),
     ],
 }
-PAID = {"edi_020", "cnk_001", "gla_011"}  # Malleny (NTS), Shugborough (NT), Finlaystone: admission
+# research id -> published id: a place needs its own id prefix (preflight)
+RENAME = {"dnk_006": "scn_001", "dnk_007": "bla_001", "dnk_008": "mkl_001"}
+PAID = {"edi_020", "cnk_001", "gla_011", "scn_001"}  # Malleny (NTS), Shugborough (NT), Finlaystone, Scone Palace: admission
 
 
 def tree(t):
     o = {k: t[k] for k in TREE_FIELDS if t.get(k) not in (None, "", [])}
+    o["id"] = RENAME.get(o["id"], o["id"])
     o["verified_sources"] = [s if isinstance(s, str) else s.get("url") for s in o.get("verified_sources", [])]
     p = o.get("photo") or {}
     if p.get("status") == "approved" and p.get("url") and p.get("license"):
@@ -68,18 +83,20 @@ def tree(t):
 
 def main():
     places = json.load(open(os.path.join(R, "uk-places.json")))
+    places.update(json.load(open(os.path.join(R, "uk-places-2.json"))))  # second round wins
     os.makedirs(OUT, exist_ok=True)
-    for slug, (src, ids) in SOURCES.items():
-        rows = {t["id"]: t for t in json.load(open(os.path.join(R, src))) if isinstance(t, dict)}
+    for slug, parts in SOURCES.items():
         ts = []
-        for i in ids:
-            t = rows.get(i)
-            if t is None:
-                sys.exit(f"{slug}: {i} not in {src}")
-            if t.get("hold"):
-                print("HELD", i, t["hold"])
-                continue
-            ts.append(tree(t))
+        for src, ids in parts:
+            rows = {t["id"]: t for t in json.load(open(os.path.join(R, src))) if isinstance(t, dict)}
+            for i in ids:
+                t = rows.get(i)
+                if t is None:
+                    sys.exit(f"{slug}: {i} not in {src}")
+                if t.get("hold"):
+                    print("HELD", i, t["hold"])
+                    continue
+                ts.append(tree(t))
         if not ts:
             continue
         live = os.path.join(CITIES, slug + ".json")
@@ -89,7 +106,7 @@ def main():
             d = json.load(open(live))
             mine = {x["id"] for x in ts}
             trees = [x for x in d["trees"] if x["id"] not in mine] + ts
-            for k in ("intro", "meta_description"):
+            for k in PLACE_FIELDS:
                 if p.get(k):
                     d[k] = p[k]
             for f in d.get("faq", []):
@@ -104,6 +121,8 @@ def main():
         d.setdefault("status", "needs_curation")
         tids = {x["id"] for x in trees}
         for k in ("hero_tree_id", "oldest_tree_id"):
+            if d.get(k) in RENAME:
+                d[k] = RENAME[d[k]]
             if k in d and d[k] not in tids:
                 sys.exit(f"{slug}: {k} {d.get(k)} is not one of its trees")
         rest = {k: v for k, v in d.items() if k not in PLACE_FIELDS + ["trees"]}

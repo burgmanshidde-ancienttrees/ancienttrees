@@ -64,6 +64,36 @@
       "place": "West Bromwich",
       "reason": "Woodland of over 2 ha mainly oak, thought over 400 years old as woodland; a wood, not a collectible tree.",
       "source": "https://www.visitsandwell.com/things-to-see-and-do/codsall-coppice-local-nature-reserve-p1414811"
+    },
+    {
+      "name": "Pattingham St Chad yew",
+      "place": "Wolverhampton",
+      "reason": "AYG tree 2904: Notable, 305 cm at the ground, 'large yew on the south side' in an 1846 William Salt Library drawing; photographed 2012; modest girth and no recent alive check; no transport verified.",
+      "source": "https://www.ancient-yew.org/yew_tree_database/pattingham/"
+    },
+    {
+      "name": "Penkridge Hall yews (Shropshire)",
+      "place": "Wolverhampton",
+      "reason": "AYG tree 1529: 310 cm, Notable, garden of a private house, visible from a public footpath; planting date 1590 is the owner's inference. Near Church Stretton, not Penkridge, Staffordshire; far outside the day-trip range.",
+      "source": "https://www.ancient-yew.org/yew_tree_database/penkridge/"
+    },
+    {
+      "name": "Swindon (Staffordshire) roadside yew",
+      "place": "Wolverhampton",
+      "reason": "AYG tree 6926: Ancient, 502 cm at 20 cm, grid SO8513189069, on a road junction, photographed 2023; AYG record is credited to the Ancient Tree Inventory (off limits) and the tree is by a roadside, so access unclear. Not used.",
+      "source": "https://www.ancient-yew.org/yew_tree_database/swindon-staffordshire/"
+    },
+    {
+      "name": "Komoot 'Ancient Tree in Cannock Chase' (highlight 5877116)",
+      "place": "Cannock Chase",
+      "reason": "52.771897, -2.020145, about 650 m south of the Sher Brook stepping stones; tip 3 July 2023 'at least 500 years old'. Identity versus the Treebeard oak (cnk_003) and the Groot tree unresolved; amateur remark only.",
+      "source": "https://www.komoot.com/highlight/5877116"
+    },
+    {
+      "name": "Shugborough giant redwoods (Wellingtonia) groups",
+      "place": "Cannock Chase",
+      "reason": "Redwood World lists 21+ Sequoiadendron at Shugborough (a group of 4 near the Milford gate, 8 in the arboretum); the page has a table of measurements and coordinates that was not read (truncated); planted trees, not ancient. Candidate if a measured individual is wanted.",
+      "source": "https://redwoodworld.co.uk/picturepages/milford.htm"
     }
   ],
   "blocked": [
@@ -75,6 +105,16 @@
     {
       "name": "Wightwick Manor, Bantock Park, Oak House, Dartmouth Park trees",
       "reason": "No individual veteran tree named in any source found; paid or park-level only."
+    },
+    {
+      "name": "Shareshill / Great Saredon yew (Staffordshire)",
+      "reason": "AYG tree 2760: lost yew site, private.",
+      "source": "https://www.ancient-yew.org/yew_tree_database/shareshill/"
+    },
+    {
+      "name": "Pendeford yew",
+      "reason": "AYG record is credited to the Woodland Trust Ancient Tree Inventory (off limits) and access is 'public but restricted'; not used.",
+      "source": "https://www.ancient-yew.org/yew_tree_database/pendeford/"
     }
   ]
 }

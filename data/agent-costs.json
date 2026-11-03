@@ -15303,6 +15303,38 @@
     {
       "date": "2026-11-03",
       "kind": "verify",
+      "target": "dunkeld (perthshire)",
+      "tokens": 197936,
+      "trees": 7,
+      "note": "Birnam Oak and Sycamore (OSM pins), Parent Larch, Dunkeld Douglas fir, Scone Douglas fir, Diana's Grove grand fir (Blair Atholl), Meikleour beech hedge. Hermitage Douglas fir blew down 2017."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "stirling",
+      "tokens": 123307,
+      "trees": 1,
+      "note": "Stopped at the 15-minute check: only the Clachan Oak (Balfron). No naming body; Bridge of Allan sequoia and Inchmahome chestnuts to leads; Torwood Wallace Oak dead."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "wolverhampton+cannock-chase (yews, second pass)",
+      "tokens": 168907,
+      "trees": 3,
+      "note": "Himley Hall yews, Boningale yew, Treebeard Oak (one source). Wolverhampton reaches 4, Cannock Chase 3. Many AYG pages 404."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "uk round 2 (dunkeld, scone, blair-atholl, meikleour, balfron, wolverhampton, cannock-chase)",
+      "tokens": 199007,
+      "trees": 11,
+      "note": "11 stories, 6 Geograph photos approved after viewing, Diana's Grove photo held (likely a larch). Seven place objects in uk-places-2.json. Round 2 all in with dispatcher about 0.75M tokens, roughly 68k a tree."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
       "target": "tacoma",
       "tokens": 144352,
       "trees": 10,
