@@ -278,7 +278,7 @@ function atPinLayers(map, source, treeLayer, open, hollowExpr, hollow) {
   // Far out (below FAR_ZOOM): a few full pins and Airbnb's mini pins, the
   // rest left out; from FAR_ZOOM in, every tree as a pin or a dot.
   var farLayout = Object.assign({}, pinLayout, {'icon-padding': ${(FAR_PIN_DISTANCE - (PIN_RADIUS + 2) * 2) / 2}});
-  // A point without `mn` (My trees, a city's own trees) always stays: only
+  // A point without mn (My trees, a city's own trees) always stays: only
   // the maps of everything thin out.
   var mini = ['all', loose, ['==', ['coalesce', ['get', 'mn'], 1], 1]];
   map.addLayer({id: treeLayer + '-mini', type: 'circle', source: source, filter: mini, maxzoom: ${FAR_ZOOM},
