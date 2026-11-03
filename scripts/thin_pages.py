@@ -80,6 +80,9 @@ RETURN_ENRICHED = False
 # fixed count above stands, which is also when qa.py skips its check.
 GUARD_URLS = 80  # qa.py check_index_grows_with_the_trees(), Hidde's number
 GUARD_MARGIN = 10  # pages this script does not enumerate (collections, species)
+# And since 2026-11-03 the same number caps EVERY return, whichever switch
+# below is flipped: the release lane in main(). A cut comes back at most
+# GUARD_URLS - GUARD_MARGIN pages a build, never in one deploy.
 
 # THE SPLIT, Hidde 2026-10-08 ("Ok do the split"). The robots meta is read by
 # every engine, so the 2026-10-01 noindex also took 11,500 pages out of Bing,
@@ -434,19 +437,25 @@ def main():
 
     # 5. The strict cut's listing pages: every species, park, collection, state
     #    and country page, unless it is on the roster or readers found it.
-    if STRICT_CUT:
-        for folder, prefix in LISTINGS:
-            for p in sorted(glob.glob(os.path.join(ROOT, "data", folder, "*.json"))):
-                try:
-                    d = json.load(open(p))
-                except (OSError, ValueError):
-                    continue
-                s = (d.get("slug") if isinstance(d, dict) else None) or os.path.basename(p)[:-5]
-                u = f"{BASE}{prefix}{s}"
-                if s not in on_roster and u not in t_keep:
-                    groups["strict_cut"].append(u)
-                elif READER_ONLY:
-                    groups["reader_cut"].append(u)
+    #    Enumerated whatever the switches say (2026-11-03): the release lane
+    #    below counts every page that would enter Google, and the first
+    #    simulation of a lifted strict cut let 314 listing pages through
+    #    uncounted because only the city, question and tree pages were known.
+    for folder, prefix in LISTINGS:
+        for p in sorted(glob.glob(os.path.join(ROOT, "data", folder, "*.json"))):
+            try:
+                d = json.load(open(p))
+            except (OSError, ValueError):
+                continue
+            s = (d.get("slug") if isinstance(d, dict) else None) or os.path.basename(p)[:-5]
+            u = f"{BASE}{prefix}{s}"
+            indexable.add(u)
+            if not STRICT_CUT:
+                continue
+            if s not in on_roster and u not in t_keep:
+                groups["strict_cut"].append(u)
+            elif READER_ONLY:
+                groups["reader_cut"].append(u)
 
     returning.sort(key=lambda r: -r[0])
     take = RETURN_PER_BUILD
@@ -467,6 +476,53 @@ def main():
     held_back = returning[take:]
     for _, en_url, lang_urls in held_back:
         groups["weak_trees"] += [en_url] + lang_urls
+
+    # THE RELEASE LANE (2026-11-03, Hidde: "geen fouten meer maken", two days
+    # into the first signs of recovery). Every cut above is a switch, and a
+    # switch lets its whole group back in one build: STRICT_CUT alone holds
+    # 2,277 pages. qa.py refuses a deploy adding more than GUARD_URLS, and a
+    # guard the next deploy cannot pass is a site that never deploys again
+    # (2026-10-09, the first day under RETURN_PER_BUILD). Google's objection
+    # was the burst, so the way back is the opposite of a burst: whatever the
+    # switches say, at most RELEASE_PER_BUILD pages enter Google's index per
+    # build, and the rest keep the googlebot tag until a later build (Bing
+    # already has them). Pages that are new to the site go first (the pace cap
+    # keeps those to 25 trees a day), then, in the order Hidde set on
+    # 2026-10-22, place and country pages, English tree pages, translations,
+    # and last the species, park, collection and state pages; within a step the
+    # cities with the most readers before the demotion first. Deploys happen
+    # several times a day, so a switch drains in a day or two and Google sees
+    # pages come back as changes. With the live sitemap unreadable the lane
+    # reads the committed list instead (a page on it last time and off it now
+    # is entering), which is the moment qa.py's own burst check is blind.
+    # Raising RELEASE_PER_BUILD or emptying data/noindex.json by hand needs Hidde.
+    offlist = {u for v in groups.values() for u in v}
+    if live:
+        entering = {u for u in indexable if u not in offlist and u not in live}
+    else:
+        entering = {u for u in indexable if u not in offlist and u[len(BASE):] in prev}
+    cap = GUARD_URLS - GUARD_MARGIN
+    groups["release_wait"] = []
+    if len(entering) > cap:
+        def step(u):
+            seg = [x for x in u[len(BASE):].split("/") if x]
+            if seg and seg[0] in LANGS:
+                return 2
+            if seg and seg[0] in ("species", "parks", "collections", "united-states"):
+                return 3
+            return 0 if len(seg) == 1 else 1
+
+        def city(u):
+            seg = [x for x in u[len(BASE):].split("/") if x]
+            if seg and seg[0] in LANGS:
+                seg = seg[1:]
+            return seg[0] if seg else ""
+
+        ordered = sorted(entering, key=lambda u: (u[len(BASE):] in prev, step(u), -roster_imps.get(city(u), 0), u))
+        groups["release_wait"] = ordered[cap:]
+        print(f"release lane: {len(entering)} pages would enter Google's index this build; {cap} go "
+              f"(new pages first, then places, English tree pages, translations, listings), "
+              f"{len(groups['release_wait'])} keep the googlebot tag until a later build")
     every = sorted(set(sum(groups.values(), [])))
     today = __import__("datetime").date.today().isoformat()
     # Each path keeps the date it was FIRST listed, so the recrawl sitemap's
@@ -480,12 +536,13 @@ def main():
     # subtraction is what keeps it true if a group ever grows to include one.
     # The strict cut is Google's objection only too (Hidde, 2026-10-22), so it
     # joins the googlebot tag on the same terms.
-    google_side = ("weak_trees", "strict_cut", "reader_cut")
+    google_side = ("weak_trees", "strict_cut", "reader_cut", "release_wait")
     others = {u[len(BASE):] for k, v in groups.items() if k not in google_side for u in v}
     google_only = sorted({u[len(BASE):] for k in google_side for u in groups[k]} - others) if GOOGLE_ONLY_WEAK_TREES else []
     # The reader cut's place and listing pages are Google-only on the same
-    # terms as the strict cut's, so qa's split check reads them from one list.
-    strict_cut = sorted({u[len(BASE):] for u in groups["strict_cut"] + groups["reader_cut"]})
+    # terms as the strict cut's, so qa's split check reads them from one list;
+    # the release lane's waiting place and listing pages likewise.
+    strict_cut = sorted({u[len(BASE):] for u in groups["strict_cut"] + groups["reader_cut"] + groups["release_wait"]})
     if returning:
         print(f"finished pages returning to the index this build: {take} of {len(returning)} "
               f"(RETURN_PER_BUILD {RETURN_PER_BUILD}); {len(held_back)} wait for a later build")

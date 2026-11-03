@@ -238,6 +238,22 @@ if echo "$CHANGED" | grep -qE '^(data/(cities|parks|leads|i18n)/|data/photo-mani
         echo "have gone red in CI instead."
         exit 1
     fi
+    # THE PACE, AT THE PUSH (2026-11-03). check_publishing_pace() counts only
+    # while data/cities has uncommitted changes, so a session that committed
+    # first and ran preflight never, or in several commits, pushed past the
+    # 25-a-day cap unseen. Same count, same base commit of 24 hours ago, but
+    # the committed trees too. The deploy keeps its clean-tree pass, so a
+    # burst already on main can never stop the site from deploying.
+    if ! out=$(python3 scripts/preflight.py --pace "${base:-origin/main}" 2>&1); then
+        echo ""
+        echo "pre-push: the publishing pace says no"
+        echo "$out" | grep '^FAIL ' | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Google demoted the site on 2026-09-28 for a"
+        echo "burst of pages; keep the extra trees in data/research/ and write"
+        echo "them tomorrow."
+        exit 1
+    fi
 fi
 
 # BOTH SURFACES, checked rather than remembered (2026-09-11). Hidde found

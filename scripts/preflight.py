@@ -1272,7 +1272,7 @@ PACE_PER_DAY = None
 PACE_HARD_CAP = 25
 
 
-def check_publishing_pace():
+def check_publishing_pace(at_push=False):
     """At most PACE_PER_DAY new trees in any 24 hours while search recovers.
 
     Hidde, 2026-10-01, approving every recovery suggestion. Google's index of
@@ -1286,13 +1286,22 @@ def check_publishing_pace():
     fails only while there are UNCOMMITTED changes under data/cities, which is
     the moment a run checks itself before committing; a clean tree (the deploy
     gate) never fails here, so a burst cannot block the site from deploying.
-    Silent when history is too shallow to answer. Removing this needs Hidde."""
+    Silent when history is too shallow to answer. Removing this needs Hidde.
+
+    at_push (2026-11-03, `preflight.py --pace <remote rev>`, run by the
+    pre-push hook when data/cities moved): the same count against the same
+    base, but on HEAD and with a clean tree too, so a session that committed
+    without running preflight first is still held at the push; silent when the
+    push adds no tree the remote lacks, so a burst already on main never stops
+    a fix from being pushed. Hidde, after the Ahrefs and Search Console backlink
+    reports and the first two days of recovery: "geen fouten meer maken". The
+    deploy still never fails on it: deploy.yml runs preflight without the flag."""
     import subprocess
 
     def git(*a):
         return subprocess.run(["git", *a], capture_output=True, text=True).stdout
 
-    if not git("status", "--porcelain", "--", "data/cities").strip():
+    if not at_push and not git("status", "--porcelain", "--", "data/cities").strip():
         return []
     base = git("rev-list", "-1", "--before=24 hours ago", "HEAD").strip()
     if not base:
@@ -1314,42 +1323,39 @@ def check_publishing_pace():
                     out.add(t.get("id"))
         return out
 
-    old_files = [f for f in git("ls-tree", "-r", "--name-only", base, "data/cities").split("\n")
+    def texts_at(rev):
+        files = [f for f in git("ls-tree", "-r", "--name-only", rev, "data/cities").split("\n")
                  if f.endswith(".json")]
-    req = "".join("%s:%s\n" % (base, f) for f in old_files)
-    raw = subprocess.run(["git", "cat-file", "--batch"], input=req.encode(),
-                         capture_output=True).stdout
-    texts, i = [], 0
-    while i < len(raw):
-        nl = raw.index(b"\n", i)
-        head = raw[i:nl].split()
-        if len(head) < 3 or head[1] == b"missing":
-            i = nl + 1
-            continue
-        size = int(head[2])
-        texts.append(raw[nl + 1:nl + 1 + size].decode("utf-8", "replace"))
-        i = nl + 1 + size + 1
-    before = ids_from(texts)
-    now = ids_from(open(p, encoding="utf-8").read() for p in glob.glob("data/cities/*.json"))
-    # Only a change that itself ADDS trees is held to the pace. An edit to
-    # trees already committed (a corrected intro, a pin) is not growth.
-    head_files = [f for f in git("ls-tree", "-r", "--name-only", "HEAD", "data/cities").split("\n")
-                  if f.endswith(".json")]
-    req_h = "".join("HEAD:%s\n" % f for f in head_files)
-    raw_h = subprocess.run(["git", "cat-file", "--batch"], input=req_h.encode(),
-                           capture_output=True).stdout
-    texts_h, j = [], 0
-    while j < len(raw_h):
-        nl = raw_h.index(b"\n", j)
-        head = raw_h[j:nl].split()
-        if len(head) < 3 or head[1] == b"missing":
-            j = nl + 1
-            continue
-        size = int(head[2])
-        texts_h.append(raw_h[nl + 1:nl + 1 + size].decode("utf-8", "replace"))
-        j = nl + 1 + size + 1
-    if not (now - ids_from(texts_h)):
-        return []
+        req = "".join("%s:%s\n" % (rev, f) for f in files)
+        raw = subprocess.run(["git", "cat-file", "--batch"], input=req.encode(),
+                             capture_output=True).stdout
+        texts, i = [], 0
+        while i < len(raw):
+            nl = raw.index(b"\n", i)
+            head = raw[i:nl].split()
+            if len(head) < 3 or head[1] == b"missing":
+                i = nl + 1
+                continue
+            size = int(head[2])
+            texts.append(raw[nl + 1:nl + 1 + size].decode("utf-8", "replace"))
+            i = nl + 1 + size + 1
+        return texts
+
+    before = ids_from(texts_at(base))
+    if at_push:
+        # What is being pushed is HEAD, not the working tree (another
+        # session's uncommitted city may sit beside it); and only a push that
+        # itself ADDS trees against what the remote has is held to the pace.
+        now = ids_from(texts_at("HEAD"))
+        remote = at_push if isinstance(at_push, str) else "origin/main"
+        if not git("rev-parse", "--verify", "--quiet", remote).strip() or not (now - ids_from(texts_at(remote))):
+            return []
+    else:
+        now = ids_from(open(p, encoding="utf-8").read() for p in glob.glob("data/cities/*.json"))
+        # Only a change that itself ADDS trees is held to the pace. An edit to
+        # trees already committed (a corrected intro, a pin) is not growth.
+        if not (now - ids_from(texts_at("HEAD"))):
+            return []
     new = len(now - before)
     if new > PACE_HARD_CAP:
         return ["publishing pace: %d new trees of our own in the last 24 hours, past the cap of %d "
@@ -3787,5 +3793,19 @@ def main():
     return 1 if problems else 0
 
 
+def main_pace():
+    """`preflight.py --pace [<remote rev>]`: only the publishing pace, counted
+    on HEAD against the commits of the last 24 hours (the pre-push hook), and
+    only when HEAD adds trees the remote does not have."""
+    rest = [a for a in sys.argv[1:] if a != "--pace"]
+    problems = check_publishing_pace(at_push=rest[0] if rest else True)
+    for line in [l for l in problems if l.startswith("NOTE ")]:
+        print(line)
+    problems = [l for l in problems if not l.startswith("NOTE ")]
+    for line in problems:
+        print("FAIL " + line)
+    return 1 if problems else 0
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main_pace() if "--pace" in sys.argv[1:] else main())

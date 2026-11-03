@@ -11,6 +11,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-11-03 session: two recovery gaps closed (the pace at the push, a release lane for every cut)
+
+- **What changed in the product**: nothing a reader sees. Hidde read the Ahrefs and Search Console backlink reports (links come from press and the mails to nature organisations: Wilder, Baumkunde, Bomenstichting Den Haag, getLISBON; Reddit and Hacker News links carry nofollow) and asked whether we are doing everything to make the return go well and "geen fouten meer maken". Every switch stood in the safe position and 7,108 pages carry the Google noindex; two gaps were open and are closed:
+- **The pace at the push**: `check_publishing_pace()` counted only while data/cities had uncommitted changes, so a session that committed first was never held. Main already carried 33 own trees in 24 hours (Pamplona's 11 with Hidde's one-time yes, the eight tourist places, Bali). `preflight.py --pace <remote>` now runs from the pre-push hook on HEAD against the base of 24 hours ago, and fails only when the push itself adds trees the remote lacks, so a burst already on main never stops a fix. The deploy still never fails on it.
+- **The release lane** (thin_pages.py): lifting any cut (STRICT_CUT alone holds 2,279 pages) put the whole group back in one build, which qa's 80-url guard refuses, after which nothing deploys (the 10-09 lesson). Now at most 70 pages enter Google per deploy whatever the switches say: new pages first, then places and countries, English tree pages, translations, listings last, most-read cities first within a step; the rest keep the googlebot tag until a later build. Simulated with every switch off: 2,279 would enter, 70 went, all place pages. Listing pages (countries, species, parks, states) are now counted among the site's pages; the first simulation let 314 of them through uncounted. With the switches as they stand the lane is silent.
+- **The weekly analysis** of 2026-11-02 failed in 343 ms before its first turn (a Claude action error, nothing of ours); dispatched again by hand.
+- Rules in CLAUDE.md under Google recovery mode. The "role mandate" query in Search Console matches nothing on our pages.
+
 ## 2026-11-03 session: Hawaii, 18 trees written and held for the pace (Oahu 21 to 30, Kauai 6 to 9, Maui 4 to 5, Hilo 6 to 9, Hawaii 6 to 8)
 
 - **What changed in the product**: nothing live yet. 18 trees verified and written, held in data/research/{oahu,kauai,maui,hilo,hawaii}-verified.json with place copy in us-hawaii-places.json; `python3 scripts/build_us_hawaii.py` appends them and grows intro, meta, question fields and FAQ (it also fixes FAQ answers the new trees make false, such as Kauai's "all free" now that the Allerton figs are a paid tour). Dry build passed city_names.py and preflight (only pace fails), then reverted.
