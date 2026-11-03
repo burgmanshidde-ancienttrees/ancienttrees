@@ -505,6 +505,11 @@ struct TreeMap: UIViewRepresentable {
                               routeIsReal: Bool,
                               declutter: Bool)?
         private var drawnTreeIDs: Set<String> = []
+        /// The very array, saved and collected sets last drawn, so an update
+        /// that changed none of them costs nothing (see sync).
+        private var drawnTrees: [Tree] = []
+        private var drawnCollected: Set<String> = []
+        private var drawnFavourites: Set<String> = []
         private var drawnMineIDs: Set<String> = []
         private var drawnRoute = 0
         private var breath: Timer?
@@ -625,13 +630,30 @@ struct TreeMap: UIViewRepresentable {
             }
             // The collected set joins the identity of what is drawn: without
             // it, ticking a tree off changes no id and the pins never redraw.
-            // The ids once, not three times: with every tree on the map this
-            // ran on each update and was the frame the watchdog caught when
-            // the app froze (crash of 2026-11-03 17:45, TreeMap.swift:629).
-            let ids = Set(trees.map(\.id))
-            let wantTrees = ids
-                .union(parent.collected.intersection(ids).map { "c:" + $0 })
-                .union(parent.favourites.intersection(ids).map { "f:" + $0 })
+            // NOTHING TO DO WHEN NOTHING CHANGED. The sheet rising after a pin
+            // tap updates this view on every animation frame, about 80 times,
+            // and each pass built a set of all 4,000 ids only to find it equal
+            // to the last one. Free on the Mac; on Hidde's phone it held the
+            // main thread long enough that the card's buttons took no taps and
+            // the watchdog killed the app (2026-11-03, TreeMap.swift:629). The
+            // same array is the same storage, so comparing where it lives is
+            // exact and costs nothing; any filter or new feed is a new array.
+            let sameTrees = trees.count == drawnTrees.count
+                && trees.withUnsafeBufferPointer { a in
+                    drawnTrees.withUnsafeBufferPointer { b in a.baseAddress == b.baseAddress }
+                }
+            let treesChanged = !sameTrees || parent.collected != drawnCollected
+                || parent.favourites != drawnFavourites
+            var wantTrees = drawnTreeIDs
+            if treesChanged {
+                let ids = Set(trees.map(\.id))
+                wantTrees = ids
+                    .union(parent.collected.intersection(ids).map { "c:" + $0 })
+                    .union(parent.favourites.intersection(ids).map { "f:" + $0 })
+                drawnTrees = trees
+                drawnCollected = parent.collected
+                drawnFavourites = parent.favourites
+            }
             let wantMine = Set(mine.map { $0.id.uuidString })
             MainActor.assumeIsolated {
             if wantTrees != drawnTreeIDs {
