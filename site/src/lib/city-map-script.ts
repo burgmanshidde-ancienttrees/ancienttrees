@@ -20,7 +20,7 @@
 // proximity check that needed it went; there is no duplicate of it left here.
 import {MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
-import { mapScript, pinPriority, PIN_DISTANCE, STACK_ZOOM, PILES_JS, PINS_JS } from "./map";
+import { mapScript, pinPriority, PIN_DISTANCE, STACK_ZOOM, PILES_JS, PINS_JS, ONE_WORLD } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
@@ -197,7 +197,7 @@ var map = new maplibregl.Map({
   container: 'map',
   style: '${MAP_STYLE}',
   center: [${center[1]}, ${center[0]}],
-  zoom: 10.5,
+  zoom: 10.5, ${ONE_WORLD},
   scrollZoom: true,
   attributionControl: false
 });

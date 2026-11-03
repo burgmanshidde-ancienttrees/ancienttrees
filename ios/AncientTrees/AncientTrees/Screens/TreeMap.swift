@@ -224,6 +224,7 @@ struct TreeMap: UIViewRepresentable {
         // again whenever the answer changes, so a yes given to the first-open
         // question now puts the dot on this map too.
         map.showsUserLocation = false
+        map.minimumZoomLevel = Self.worldMinZoom
         context.coordinator.watchPermission(for: map)
         map.logoView.isHidden = true          // our own attribution sits in the sheet
         // Hidden AND out of the accessibility tree. isHidden alone left both
@@ -1468,6 +1469,11 @@ enum MapLayers {
     /// apart would overlap anyway and the bubble would read as the
     /// clustering this map no longer does. The website's STACK_ZOOM.
     static let stackZoom = 14.0
+    /// One world only, the website's WORLD_MIN_ZOOM (lib/map.ts): MapLibre
+    /// Native always draws world copies, so the floor is what keeps a second
+    /// world off the screen when somebody zooms all the way out. qa holds the
+    /// two numbers equal (check_every_map_shows_one_world()).
+    static let worldMinZoom = 1.5
 
     /// Which tree gets the full pin where two collide, lower first: one with
     /// a photograph before one without, and among equals the tree more

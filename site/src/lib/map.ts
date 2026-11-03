@@ -87,6 +87,15 @@ export const PIN_DISTANCE = 40;
 export function pinPriority(hasPhoto: boolean, saves: number): number {
   return (hasPhoto ? 0 : 100000) - Math.min(Math.max(0, Math.round(saves)), 99999);
 }
+/** ONE WORLD ON EVERY MAP (Hidde, 2026-07-29: "ik hoef niet 2 werelden te
+ *  zien"; again 2026-11-03, after the city map could be zoomed out to several
+ *  worlds). Every maplibregl.Map on the site takes ONE_WORLD: no world copies,
+ *  and a zoom floor at which one world still fills a phone. The app's
+ *  TreeMap.swift worldMinZoom is the same number; qa holds the two equal
+ *  (check_every_map_shows_one_world()). */
+export const WORLD_MIN_ZOOM = 1.5;
+export const ONE_WORLD = `renderWorldCopies: false, minZoom: ${WORLD_MIN_ZOOM}`;
+
 /** The full pin on the circle-pin maps: a moss disc with a 2px cream ring. */
 export const PIN_RADIUS = 7;
 /** The dot a tree becomes where its pin did not fit. */
@@ -278,7 +287,7 @@ export function singlePinScript(lat: number, lng: number): string {
   return mapScript(`
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
-  center: [${lng}, ${lat}], zoom: 14.5, scrollZoom: false,
+  center: [${lng}, ${lat}], zoom: 14.5, scrollZoom: false, ${ONE_WORLD},
   attributionControl: false
 });
 map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
@@ -325,7 +334,7 @@ var TREES = atMarkPiles(${JSON.stringify(data)}.features);
 TREES = { type: 'FeatureCollection', features: TREES };
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
-  center: [0, 0], zoom: 3, renderWorldCopies: false,
+  center: [0, 0], zoom: 3, ${ONE_WORLD},
   scrollZoom: false, attributionControl: false
 });
 map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
@@ -441,8 +450,7 @@ atMapFilters({
 // One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
-  center: [8, 48], zoom: 3.4, minZoom: 1.3,
-  renderWorldCopies: false,
+  center: [8, 48], zoom: 3.4, ${ONE_WORLD},
   attributionControl: false
 });
 map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
@@ -728,8 +736,7 @@ export function myTreesMapScript(): string {
 // (Hidde, 2026-11-01). The trees, once there, frame themselves (paint()).
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
-  bounds: [[-165, -50], [180, 70]], minZoom: 1.3,
-  renderWorldCopies: false,
+  bounds: [[-165, -50], [180, 70]], ${ONE_WORLD},
   attributionControl: false
 });
 map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');

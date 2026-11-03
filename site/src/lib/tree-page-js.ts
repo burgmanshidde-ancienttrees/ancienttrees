@@ -22,7 +22,7 @@
 // maplibregl-canvas is there at every width.
 
 import { MAP_STYLE, MAP_CREDIT, SUPABASE_URL, SUPABASE_KEY } from "./site-config";
-import { mapScript, PILES_JS, PINS_JS } from "./map";
+import { mapScript, PILES_JS, PINS_JS, ONE_WORLD } from "./map";
 
 export function treePageScript(lat: number, lng: number, id = ""): string {
   return mapScript(`${PILES_JS}${PINS_JS}
@@ -58,7 +58,7 @@ if (mapEl) {
   place();
   map = new maplibregl.Map({
     container: mapEl, style: '${MAP_STYLE}', center: [LNG, LAT], zoom: noPhoto ? 16 : 15,
-    scrollZoom: false, attributionControl: false
+    scrollZoom: false, ${ONE_WORLD}, attributionControl: false
   });
   map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)} }), 'top-left');
   var dot = document.createElement('div');
@@ -201,7 +201,7 @@ if (pinDlg) {
     if (!pinMap) {
       pinMap = new maplibregl.Map({
         container: pinDlg.querySelector('.pin-map'), style: '${MAP_STYLE}',
-        center: [LNG, LAT], zoom: 17, attributionControl: false
+        center: [LNG, LAT], zoom: 17, ${ONE_WORLD}, attributionControl: false
       });
       pinMap.on('move', paintMoved);
       pinMap.on('load', function () { pinMap.resize(); });

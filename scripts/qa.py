@@ -2548,6 +2548,45 @@ def check_every_map_shows_pins_the_same_way():
     return problems
 
 
+def check_every_map_shows_one_world():
+    """Zoomed all the way out, every map shows ONE world, web and app.
+
+    Hidde, 2026-07-29 ("ik hoef niet 2 werelden te zien") for the explore
+    map, and again 2026-11-03 for the city map, which could be zoomed out to
+    several worlds: "kun je daar gewoon de max op zetten ... en check gelijk
+    even overal waar we een kaartmodus hebben". Second time, so a check.
+
+    Every `new maplibregl.Map(` in site/src carries `${ONE_WORLD}` (lib/map.ts:
+    renderWorldCopies off and a zoom floor), and the app's MLNMapView gets
+    minimumZoomLevel = worldMinZoom, the same number as WORLD_MIN_ZOOM.
+
+    Removing this needs Hidde."""
+    problems = []
+    site = ROOT / "site" / "src"
+    for f in sorted(site.rglob("*.ts")) + sorted(site.rglob("*.astro")):
+        src = f.read_text()
+        for m in re.finditer(r"new maplibregl\.Map\(", src):
+            block = src[m.end():src.find("})", m.end())]
+            if "${ONE_WORLD}" not in block:
+                line = src.count("\n", 0, m.start()) + 1
+                problems.append("%s:%d builds a map without ${ONE_WORLD}: zoomed out it shows several worlds"
+                                % (f.relative_to(ROOT), line))
+    web = (site / "lib" / "map.ts").read_text()
+    wm = re.search(r"export const WORLD_MIN_ZOOM = (\d+(?:\.\d+)?);", web)
+    if not wm or "renderWorldCopies: false" not in web:
+        problems.append("lib/map.ts no longer defines WORLD_MIN_ZOOM and ONE_WORLD with renderWorldCopies off")
+    swift = ROOT / "ios" / "AncientTrees" / "AncientTrees" / "Screens" / "TreeMap.swift"
+    if swift.exists():
+        src = swift.read_text()
+        am = re.search(r"static let worldMinZoom\s*=\s*(\d+(?:\.\d+)?)", src)
+        if not am or "map.minimumZoomLevel = Self.worldMinZoom" not in src:
+            problems.append("TreeMap.swift no longer sets minimumZoomLevel = worldMinZoom on its map")
+        elif wm and float(am.group(1)) != float(wm.group(1)):
+            problems.append("the app zooms out to %s and the website to %s: one world, one number"
+                            % (am.group(1), wm.group(1)))
+    return problems
+
+
 def check_one_tree_card_on_every_map():
     """A tapped tree on any website map shows the one card from
     lib/map-card-js.ts, and no map builds its own.
@@ -3447,6 +3486,7 @@ def main():
         check_an_organisation_beside_a_name_was_asked_for,
         check_app_crashes_reach_a_person,
         check_every_map_shows_pins_the_same_way,
+        check_every_map_shows_one_world,
         check_one_tree_card_on_every_map,
     ]
     if args.source_only:
