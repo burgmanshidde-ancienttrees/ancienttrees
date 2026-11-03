@@ -975,6 +975,7 @@ struct ContentView: View {
         // my trees no longer have a photo".
         .onChange(of: account.isSignedIn) { _, now in
             Measure.signedIn = now
+            Measure.account = now ? account.session?.userId : nil
             if now { Task { await reloadTheAccount() } } else { forgetIfSignedOut() }
         }
         // A launch with no signal reads nothing; coming back to the app with
@@ -1022,6 +1023,7 @@ struct ContentView: View {
             // signal is filed before today adds to it.
             Measure.flush()
             Measure.signedIn = account.isSignedIn
+            Measure.account = account.session?.userId
             Measure.event("app_open")
             // The thumbs' figures, once per launch and never per card: the
             // whole table is a few thousand short rows and a request inside a

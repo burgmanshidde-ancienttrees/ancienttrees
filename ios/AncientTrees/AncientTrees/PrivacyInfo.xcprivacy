@@ -106,7 +106,9 @@
 		</dict>
 		<dict>
 			<!-- The account's own id, which is what every row here hangs off and
-			     what makes deleting an account able to take all of it. -->
+			     what makes deleting an account able to take all of it. Since
+			     2026-11-03 it also rides on the analytics rows (see Product
+			     Interaction below), hence the second purpose. -->
 			<key>NSPrivacyCollectedDataType</key>
 			<string>NSPrivacyCollectedDataTypeUserID</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
@@ -116,6 +118,7 @@
 			<key>NSPrivacyCollectedDataTypePurposes</key>
 			<array>
 				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+				<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
 			</array>
 		</dict>
 		<dict>
@@ -170,12 +173,14 @@
 			     events, listed in Kit/Measure.swift, sent to our own PostHog
 			     project on their EU cloud.
 
-			     NOT LINKED, and as with the crash data that is a property of
-			     what is sent rather than a claim about our intentions: the row
-			     carries an event name, the app version, the major OS version,
-			     and an id that is a random UUID this phone made for itself. No
-			     email, no account id, no coordinates, and no advertising
-			     identifier. Signing in changes none of it.
+			     LINKED SINCE 2026-11-03 (Hidde's yes): while somebody is signed
+			     in, each row also carries their account id, so a new account
+			     can be followed from first open to first tree instead of
+			     matched to a phone by the clock. Still no email, no name, no
+			     coordinates and no advertising identifier; signed out, the row
+			     carries only the random id this phone made for itself. Until
+			     that day this entry said NOT LINKED, which was true then and
+			     would be false now.
 
 			     NOT TRACKING, because none of it is joined to data from another
 			     company or used to target advertising, which is what Apple's
@@ -189,7 +194,7 @@
 			<key>NSPrivacyCollectedDataType</key>
 			<string>NSPrivacyCollectedDataTypeProductInteraction</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
-			<false/>
+			<true/>
 			<key>NSPrivacyCollectedDataTypeTracking</key>
 			<false/>
 			<key>NSPrivacyCollectedDataTypePurposes</key>

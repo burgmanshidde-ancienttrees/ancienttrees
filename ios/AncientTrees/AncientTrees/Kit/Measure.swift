@@ -22,15 +22,20 @@
 //
 // WHAT WE SEND: an event name, the app version, the major OS version, how the
 // copy was built (debug, testflight or appstore, see `build` below), and an
-// install id that is a random UUID made on this phone. No email, no account id,
-// no coordinates, no advertising identifier, nothing Apple would call linked to
-// a person. `$process_person_profile: false` tells PostHog not to build a
-// profile behind the id, which is both the private option and the cheap one.
+// install id that is a random UUID made on this phone, and, while somebody is
+// signed in, their account id (`account`). No email, no name, no coordinates,
+// no advertising identifier. `$process_person_profile: false` tells PostHog
+// not to build a profile behind the id, which is both the private option and
+// the cheap one.
 //
-// WHY IT IS UNLINKED even though we know who is signed in: linking behaviour to
-// an account is a different promise to the person and a different privacy
-// label, and it is not needed to answer any question phase 1 asks. It can be
-// added later on purpose. It cannot be unsent.
+// LINKED SINCE 2026-11-03, on purpose. Until then this was unlinked ("a
+// different promise to the person and a different privacy label ... it can be
+// added later on purpose"). Hidde added it after seven new accounts on 1 and
+// 2 November could only be matched to their phones by guessing from the clock
+// ("kunnen we dat wel in posthog gaan doen?", then "bouw"). The account id
+// only, never the email or the name; the privacy page says so, and the App
+// Store privacy label moves Usage Data to "linked to you" (his, in App Store
+// Connect). Signed out, nothing account-shaped is sent.
 
 import Foundation
 
@@ -123,6 +128,10 @@ public enum Measure {
     /// ContentView, which is the one place that knows about the account.
     public static var signedIn = false
 
+    /// WHICH ACCOUNT, while one is signed in, and nil otherwise (2026-11-03,
+    /// see the top of this file). Set beside `signedIn` by ContentView.
+    public static var account: String?
+
     /// Record one thing somebody did. Never blocks, never retries in the moment,
     /// never surfaces an error: a measurement that costs somebody a spinner has
     /// cost more than it is worth.
@@ -135,6 +144,7 @@ public enum Measure {
         p["os"] = "iOS \(ProcessInfo.processInfo.operatingSystemVersion.majorVersion)"
         p["build"] = build
         p["signed_in"] = signedIn ? "yes" : "no"
+        if signedIn, let account { p["account"] = account }
         let body: [String: Any] = [
             "api_key": key,
             "event": name,
