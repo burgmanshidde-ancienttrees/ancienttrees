@@ -1,130 +1,138 @@
 {
-  "city": "Spokane",
-  "country": "United States",
-  "city_slug": "spokane",
-  "note": "Verify pass 2026-09-11 (continuation). The two leads below from the earlier pass are now RESOLVED: the Heritage Tree register was not JS-only after all. historicspokane.org/map embeds an ArcGIS webmap (id 9314fced76574adfb159be865ce1b8f6); its 'Historic Barns and Trees' operational layer resolves to a public FeatureServer (https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1) that returns all 478 historic-property records, including all 18 current Heritage Tree Register entries, by plain curl with outFields=*&f=json, no browser rendering needed. Filtering the 'Listing Status' field for 'Heritage Tree' isolates exactly the 18. 3 of those 18 were verified this pass with a second independent source (HistoryLink.org Essay 10030, Laura Arksey, 2012, citing Dr. Edward Lester's and Robert Van Pelt's independent tree surveys) and delivered to data/research/spokane-verified.json as spk_004, spk_005, spk_006, all three clustered in Edwidge Woldson Park / Moore-Turner Heritage Gardens. Spokane now has 6 verified trees, above the 4-tree floor. The remaining 15 register entries below are leads: real, tree-level-coordinate candidates from the same official register, not yet independently corroborated by a second source this pass. The golf-course/bluffs lead was not pursued further (no named specimen found beyond spk_001's Douglas firs, which the register itself also names as 'The Ancient Ones', the same trees).",
-  "leads": [
-    {
-      "name": "Dwight's Linden (Hungarian Linden)",
-      "species": "Hungarian Linden (Tilia x juranyana)",
-      "lat": 47.641216,
-      "lng": -117.465453,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register + independently corroborated by HistoryLink Essay 10030 (Arksey, 2012), which names it as a champion Hungarian linden at Finch Arboretum planted by pioneer Daniel H. Dwight. Two sources already agree; not delivered this pass only because it sits at the same Finch Arboretum location as the already-published spk_002/spk_003 and this pass focused on opening a second cluster (Edwidge Woldson Park). Ready to verify and write on a future pass with minimal extra work: register gives age ~100 years, height 72 feet."
-    },
-    {
-      "name": "The Massive Miyabe (Miyabe Maple)",
-      "species": "Miyabe Maple (Acer miyabei)",
-      "lat": 47.641939,
-      "lng": -117.466226,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register + independently corroborated by HistoryLink Essay 10030, which lists Miyabe maple among Finch Arboretum's likely state-first-place champions. Register gives age 58 years, height 54 feet, 'a potential state champion'. Same Finch Arboretum cluster as spk_002/003."
-    },
-    {
-      "name": "The Towering Norwegian (Norway Spruce)",
-      "species": "Norway Spruce (Picea abies)",
-      "lat": 47.642152,
-      "lng": -117.466827,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far (one source). Register: ~123 feet tall, 'most likely the second tallest of its kind in the city, falling short of only the Brewton Spruce on 26th street' (see The Rockwood Spruce lead below, likely the same 'Brewton Spruce'). Same Finch Arboretum cluster as spk_002/003. Needs a second independent source before it can ship."
-    },
-    {
-      "name": "Powerful Pine (Mexican Pinyon Pine)",
-      "species": "Mexican Pinyon Pine (Pinus cembroides)",
-      "lat": 47.642564,
-      "lng": -117.466409,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far (one source): 'one of the largest trees of its kind in the state', crown over 40 feet, height ~33 feet. Same Finch Arboretum cluster as spk_002/003. Needs a second independent source."
-    },
-    {
-      "name": "Chief Garry Park Champion (Sycamore Maple)",
-      "species": "Sycamore Maple (Acer pseudoplatanus)",
-      "lat": 47.671259,
-      "lng": -117.372378,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far. 56 feet tall, 'a state champion size candidate'. Note: HistoryLink Essay 10030 separately describes a DIFFERENT variegated sycamore maple (Acer pseudoplatanus f. variegatum) at the former Amasa B. Campbell estate in Browne's Addition as 'the largest example of the variegated form ... in the state' -- that is not necessarily this tree (different park, no variegated form mentioned in the register entry), so do not merge them without checking. Own cluster, not near others verified this pass."
-    },
-    {
-      "name": "Reid Family Tree (Sugar Maple)",
-      "species": "Sugar Maple (Acer saccharum)",
-      "lat": 47.656202,
-      "lng": -117.447099,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far, on private residential property (2315 West 1st Avenue, Browne's Addition), the tree itself is on private land, visible only from the street per the register description ('situated on the west side of the Browne's Addition Historic District'). Hard rule 10 needs checking before this ships: confirm it is street-visible only, pin the viewing spot rather than the trunk if so. Charming history (planted by Dr. Peter Reid in the 1930s/40s; family reportedly poured him a gin and tonic on the roots) but needs a second source and an access check. Same address as 'The Last Planes' lead below."
-    },
-    {
-      "name": "The Last Planes (London Plane x3)",
-      "species": "London Plane (Platanus x acerifolia)",
-      "lat": 47.656345,
-      "lng": -117.446785,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far: a cluster of 3 London planes, 110+ years old, original Browne's Addition streetscape planting, same address as the Reid Family Tree lead (2315 West 1st Avenue). Needs a second source and an access check (street trees vs. private frontage). || 2026-10-04 verify pass: register point lies at the Campbell House / Northwest Museum of Arts and Culture frontage on 1st Ave (Commons files 3-27 m away show the house, not the planes); no open photo of the trees (Commons geosearch 300 m, iNat CC 100 m both empty), pin is address-level and the cluster is a streetscape rather than a small site. No photo, no confirmed pin: stays a lead."
-    },
-    {
-      "name": "The Zelkova Giant (Japanese Zelkova)",
-      "species": "Japanese Zelkova (Zelkova serrata)",
-      "lat": 47.694617,
-      "lng": -117.466766,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far: 'one of seven that borders Webster Park on the west and southwest edges', 53 feet tall, 'almost as big as the largest in the state'. Address given as 4001 North J Street, which may be a private or institutional property bordering Webster Park; access needs checking. Needs a second source. || 2026-10-04 verify pass: lifecheck RECENT (iNat 390393376, 2026-08-11) but no open photo (Commons 300 m and iNat CC 150 m empty) and one of seven zelkovas on the park edge, so the pin cannot single it out. Stays a lead."
-    },
-    {
-      "name": "The Littleleaf Linden",
-      "species": "uncertain: register title says 'Littleleaf Linden' but its own description text says 'Species: American Linden' -- an internal contradiction in the source itself",
-      "lat": 47.648358,
-      "lng": -117.42115,
-      "status": "lead",
-      "why": "Same small cluster as the verified spk_004/005/006 (Edwidge Woldson Park / Moore-Turner Heritage Gardens), but not delivered this pass because the register's own record contradicts itself on species (title vs. description) and HistoryLink's 2012 survey, which independently corroborates the other 3 trees in this exact park, does not mention a linden there at all (it lists a different Hungarian linden at Finch Arboretum, planted by Dwight). Register: ~110 years old, 29 feet tall, said to have been planted in the Moore-Turner residential garden in the late 1890s. Worth a second source and a species resolution before shipping."
-    },
-    {
-      "name": "Grant Park Guardian (Horse Chestnut)",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "lat": 47.645543,
-      "lng": -117.391226,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far: ~90 years old, 75 feet tall, greets the southeast entrance to Grant Park. Needs a second source. Own cluster, not near others verified this pass. || 2026-10-03 verify pass: register point 4 m from the house at 1303 E 11th Ave (likely address-geocoded, so pin approximate); iNaturalist obs 315690968 (2025-09-21, Aesculus hippocastanum, CC BY-NC, 57 m accuracy) shows a horse chestnut there; Commons has no photo within 250 m. Public park edge (inside Grant Park OSM bbox). No open photo and no confirmed pin: stays a lead."
-    },
-    {
-      "name": "The Rockwood Spruce (Norway Spruce)",
-      "species": "Norway Spruce (Picea abies)",
-      "lat": 47.631003,
-      "lng": -117.399734,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far: 90+ years old, 125+ feet tall, appears on the original 1926 landscaping plans for the Olmsted Brothers-designed Rockwood Historic District, towering over 26th Avenue. Likely the 'Brewton Spruce' the register's own Towering Norwegian entry (Finch Arboretum) says it is second-tallest to. Strong candidate for a future pass (Olmsted-district history plus a plausible state-height ranking) but needs a second source to confirm the identification and figures; this pass's WebSearch on '26th Avenue Norway spruce Olmsted' returned only general Rockwood Historic District history, not the tree itself. Own cluster (Rockwood Historic District, South Hill), not near others verified this pass; could anchor its own small walk with Grant Park Guardian if both check out (roughly 1.5 km apart). || 2026-10-03 verify pass: register point is beside a private house (743 E 26th Ave, address given 725 E 26th); lifecheck NONE, no open photo. Stays a lead."
-    },
-    {
-      "name": "The Spokane Ponderosa",
-      "species": "Ponderosa Pine (Pinus ponderosa)",
-      "lat": 47.65466,
-      "lng": -117.443045,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far: 'growing nearly 200 feet tall ... the largest in the city', Browne's Addition, 2028 West 2nd Avenue. FLAG: 200 feet is extraordinary for Pinus ponderosa outside old-growth coastal stands (the species' tallest known examples anywhere are in the 230-270 ft range in California/Oregon old growth); treat the register's own figure with real skepticism and do not repeat it as fact without a second source that gives an actual measured height. Needs a second source and a sanity check on the height claim before shipping. Same neighbourhood cluster as the Reid Family Tree and The Last Planes leads. || 2026-10-03 verify pass: register point is 10 m from iNat obs 303180044 (Pinus ponderosa, 2025-08-02, CC BY-NC) so a ponderosa stands there, but the point sits beside an apartment building (209 S Chestnut St) so the tree may be on private residential grounds; no open photo; 200 ft claim still unsourced. Stays a lead."
-    },
-    {
-      "name": "Liberty Park Champion (Corkscrew Willow)",
-      "species": "Corkscrew Willow (Salix matsudana 'Tortuosa')",
-      "lat": 47.652584,
-      "lng": -117.389177,
-      "status": "lead",
-      "why": "Spokane Heritage Tree Register only so far: height 45 feet, diameter 50 inches (girth_cm derivable: 50in = 127cm diameter -> circumference roughly 399cm if this figure is trustworthy), crown 60 feet, 'likely the largest or second largest in the state'. Needs a second source. || 2026-10-03 verify pass: point lies inside Liberty Park (OSM), but no willow observation or open photo within reach (iNat obs 307549145 nearby is a cottonwood), Commons none within 250 m; pin cannot be confirmed. Stays a lead."
-    },
-    {
-      "name": "Indian Canyon Golf Course old trees / South Hill bluffs old trees",
-      "species": "Unknown, likely ponderosa pine and Douglas fir",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Re-checked this pass. The register itself names only the same three Douglas firs already published as spk_001 ('The Ancient Ones', Indian Canyon Park, matching spk_001's coordinates and description almost exactly, 175+ years / 110 feet per the register). No other named specimen on the golf course or South Hill bluffs turned up in the register or in searches this pass; the 2019 Spokesman-Review piece behind spk_001-003 remains the only source naming old trees in that area in general terms ('South Hill bluffs, Mount Spokane, Mica Peak, Dishman Hills') without naming an individual specimen. Not pursued further; would need a dedicated hunt for a single named tree on the golf course itself, which this pass did not find evidence exists."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "The Treaty Tree (Ponderosa Pine)",
-      "species": "Ponderosa Pine (Pinus ponderosa)",
-      "lat": 47.750673,
-      "lng": -117.306525,
-      "status": "blocked",
-      "why": "DEAD: the Spokesman-Review reported on 2026-08-18 (spokesman.com/stories/2026/aug/18/an-indigenous-landmark-survived-centuries-of-light/) that the Treaty Tree on Peone Prairie was felled in the Fairview fire. Never ship as a live tree; may appear in a story as context. Earlier note: Found 2026-09-11 in the same GIS layer as the Heritage Tree Register but explicitly NOT part of it: the record's own text says 'The Treaty Tree is not listed on the Spokane Heritage Tree Register but was included in the 1997 Historic Resources Inventory of Spokane County.' Genuine find, real history: on land traditionally used by the Upper Spokane Indians as a meeting place, said to be where discussion took place about Col. George Wright's 1858 peace demands; the land later went to Baptiste Peone under the Donation Land Act of 1850, the only person in the county granted land under that Act, and the tree is described as the only remaining evidence of his homestead and the original Saint Michael Mission. About 13.6 km northeast of the city centre on East Dorak Road, no street address, a low hill, standing alone.\n\nSECOND SOURCE FOUND 2026-09-11: HistoryLink.org Essay 10030 (Laura Arksey, 2012) independently names the same tree on Peone Prairie, a Ponderosa pine 'variously called the Treaty Tree, Weeping Tree or Surrender Tree', ties it to the same Baptiste Peone (1820-1902?), and says it 'commemorates the signing of one of two Indian treaties in 1887 or 1888 (sources differ)', which conflicts with the GIS record's 1858 date; HistoryLink itself already flags its own sources as disagreeing on the year. Existence, species and the Peone connection now clear the two-source bar; the only thing still holding this back is ACCESS. The tree sits on what was private homestead land and nothing found this pass says whether it is reachable today, on whose land, or by what path. Per hard rule 10, do not ship on a guess: an OSM access-tag check, a county parcel lookup for the current owner, or a direct account from someone who has been there would settle it. Not pursued further this pass given the time box."
-    }
-  ]
+ "city": "Spokane",
+ "country": "United States",
+ "city_slug": "spokane",
+ "note": "Verify pass 2026-09-11 (continuation). The two leads below from the earlier pass are now RESOLVED: the Heritage Tree register was not JS-only after all. historicspokane.org/map embeds an ArcGIS webmap (id 9314fced76574adfb159be865ce1b8f6); its 'Historic Barns and Trees' operational layer resolves to a public FeatureServer (https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1) that returns all 478 historic-property records, including all 18 current Heritage Tree Register entries, by plain curl with outFields=*&f=json, no browser rendering needed. Filtering the 'Listing Status' field for 'Heritage Tree' isolates exactly the 18. 3 of those 18 were verified this pass with a second independent source (HistoryLink.org Essay 10030, Laura Arksey, 2012, citing Dr. Edward Lester's and Robert Van Pelt's independent tree surveys) and delivered to data/research/spokane-verified.json as spk_004, spk_005, spk_006, all three clustered in Edwidge Woldson Park / Moore-Turner Heritage Gardens. Spokane now has 6 verified trees, above the 4-tree floor. The remaining 15 register entries below are leads: real, tree-level-coordinate candidates from the same official register, not yet independently corroborated by a second source this pass. The golf-course/bluffs lead was not pursued further (no named specimen found beyond spk_001's Douglas firs, which the register itself also names as 'The Ancient Ones', the same trees).",
+ "leads": [
+  {
+   "name": "Dwight's Linden (Hungarian Linden)",
+   "species": "Hungarian Linden (Tilia x juranyana)",
+   "lat": 47.641216,
+   "lng": -117.465453,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register + independently corroborated by HistoryLink Essay 10030 (Arksey, 2012), which names it as a champion Hungarian linden at Finch Arboretum planted by pioneer Daniel H. Dwight. Two sources already agree; not delivered this pass only because it sits at the same Finch Arboretum location as the already-published spk_002/spk_003 and this pass focused on opening a second cluster (Edwidge Woldson Park). Ready to verify and write on a future pass with minimal extra work: register gives age ~100 years, height 72 feet."
+  },
+  {
+   "name": "The Massive Miyabe (Miyabe Maple)",
+   "species": "Miyabe Maple (Acer miyabei)",
+   "lat": 47.641939,
+   "lng": -117.466226,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register + independently corroborated by HistoryLink Essay 10030, which lists Miyabe maple among Finch Arboretum's likely state-first-place champions. Register gives age 58 years, height 54 feet, 'a potential state champion'. Same Finch Arboretum cluster as spk_002/003."
+  },
+  {
+   "name": "The Towering Norwegian (Norway Spruce)",
+   "species": "Norway Spruce (Picea abies)",
+   "lat": 47.642152,
+   "lng": -117.466827,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far (one source). Register: ~123 feet tall, 'most likely the second tallest of its kind in the city, falling short of only the Brewton Spruce on 26th street' (see The Rockwood Spruce lead below, likely the same 'Brewton Spruce'). Same Finch Arboretum cluster as spk_002/003. Needs a second independent source before it can ship."
+  },
+  {
+   "name": "Powerful Pine (Mexican Pinyon Pine)",
+   "species": "Mexican Pinyon Pine (Pinus cembroides)",
+   "lat": 47.642564,
+   "lng": -117.466409,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far (one source): 'one of the largest trees of its kind in the state', crown over 40 feet, height ~33 feet. Same Finch Arboretum cluster as spk_002/003. Needs a second independent source."
+  },
+  {
+   "name": "Chief Garry Park Champion (Sycamore Maple)",
+   "species": "Sycamore Maple (Acer pseudoplatanus)",
+   "lat": 47.671259,
+   "lng": -117.372378,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far. 56 feet tall, 'a state champion size candidate'. Note: HistoryLink Essay 10030 separately describes a DIFFERENT variegated sycamore maple (Acer pseudoplatanus f. variegatum) at the former Amasa B. Campbell estate in Browne's Addition as 'the largest example of the variegated form ... in the state' -- that is not necessarily this tree (different park, no variegated form mentioned in the register entry), so do not merge them without checking. Own cluster, not near others verified this pass."
+  },
+  {
+   "name": "Reid Family Tree (Sugar Maple)",
+   "species": "Sugar Maple (Acer saccharum)",
+   "lat": 47.656202,
+   "lng": -117.447099,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far, on private residential property (2315 West 1st Avenue, Browne's Addition), the tree itself is on private land, visible only from the street per the register description ('situated on the west side of the Browne's Addition Historic District'). Hard rule 10 needs checking before this ships: confirm it is street-visible only, pin the viewing spot rather than the trunk if so. Charming history (planted by Dr. Peter Reid in the 1930s/40s; family reportedly poured him a gin and tonic on the roots) but needs a second source and an access check. Same address as 'The Last Planes' lead below."
+  },
+  {
+   "name": "The Last Planes (London Plane x3)",
+   "species": "London Plane (Platanus x acerifolia)",
+   "lat": 47.656345,
+   "lng": -117.446785,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far: a cluster of 3 London planes, 110+ years old, original Browne's Addition streetscape planting, same address as the Reid Family Tree lead (2315 West 1st Avenue). Needs a second source and an access check (street trees vs. private frontage). || 2026-10-04 verify pass: register point lies at the Campbell House / Northwest Museum of Arts and Culture frontage on 1st Ave (Commons files 3-27 m away show the house, not the planes); no open photo of the trees (Commons geosearch 300 m, iNat CC 100 m both empty), pin is address-level and the cluster is a streetscape rather than a small site. No photo, no confirmed pin: stays a lead. || 2026-11-03 verify pass: delivered flagged in data/research/spokane-verified.json (spk_016 to spk_019), one-source US bar."
+  },
+  {
+   "name": "The Zelkova Giant (Japanese Zelkova)",
+   "species": "Japanese Zelkova (Zelkova serrata)",
+   "lat": 47.694617,
+   "lng": -117.466766,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far: 'one of seven that borders Webster Park on the west and southwest edges', 53 feet tall, 'almost as big as the largest in the state'. Address given as 4001 North J Street, which may be a private or institutional property bordering Webster Park; access needs checking. Needs a second source. || 2026-10-04 verify pass: lifecheck RECENT (iNat 390393376, 2026-08-11) but no open photo (Commons 300 m and iNat CC 150 m empty) and one of seven zelkovas on the park edge, so the pin cannot single it out. Stays a lead."
+  },
+  {
+   "name": "The Littleleaf Linden",
+   "species": "uncertain: register title says 'Littleleaf Linden' but its own description text says 'Species: American Linden' -- an internal contradiction in the source itself",
+   "lat": 47.648358,
+   "lng": -117.42115,
+   "status": "lead",
+   "why": "Same small cluster as the verified spk_004/005/006 (Edwidge Woldson Park / Moore-Turner Heritage Gardens), but not delivered this pass because the register's own record contradicts itself on species (title vs. description) and HistoryLink's 2012 survey, which independently corroborates the other 3 trees in this exact park, does not mention a linden there at all (it lists a different Hungarian linden at Finch Arboretum, planted by Dwight). Register: ~110 years old, 29 feet tall, said to have been planted in the Moore-Turner residential garden in the late 1890s. Worth a second source and a species resolution before shipping."
+  },
+  {
+   "name": "Grant Park Guardian (Horse Chestnut)",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 47.645543,
+   "lng": -117.391226,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far: ~90 years old, 75 feet tall, greets the southeast entrance to Grant Park. Needs a second source. Own cluster, not near others verified this pass. || 2026-10-03 verify pass: register point 4 m from the house at 1303 E 11th Ave (likely address-geocoded, so pin approximate); iNaturalist obs 315690968 (2025-09-21, Aesculus hippocastanum, CC BY-NC, 57 m accuracy) shows a horse chestnut there; Commons has no photo within 250 m. Public park edge (inside Grant Park OSM bbox). No open photo and no confirmed pin: stays a lead."
+  },
+  {
+   "name": "The Rockwood Spruce (Norway Spruce)",
+   "species": "Norway Spruce (Picea abies)",
+   "lat": 47.631003,
+   "lng": -117.399734,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far: 90+ years old, 125+ feet tall, appears on the original 1926 landscaping plans for the Olmsted Brothers-designed Rockwood Historic District, towering over 26th Avenue. Likely the 'Brewton Spruce' the register's own Towering Norwegian entry (Finch Arboretum) says it is second-tallest to. Strong candidate for a future pass (Olmsted-district history plus a plausible state-height ranking) but needs a second source to confirm the identification and figures; this pass's WebSearch on '26th Avenue Norway spruce Olmsted' returned only general Rockwood Historic District history, not the tree itself. Own cluster (Rockwood Historic District, South Hill), not near others verified this pass; could anchor its own small walk with Grant Park Guardian if both check out (roughly 1.5 km apart). || 2026-10-03 verify pass: register point is beside a private house (743 E 26th Ave, address given 725 E 26th); lifecheck NONE, no open photo. Stays a lead. || 2026-11-03 verify pass: delivered flagged in data/research/spokane-verified.json (spk_016 to spk_019), one-source US bar."
+  },
+  {
+   "name": "The Spokane Ponderosa",
+   "species": "Ponderosa Pine (Pinus ponderosa)",
+   "lat": 47.65466,
+   "lng": -117.443045,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far: 'growing nearly 200 feet tall ... the largest in the city', Browne's Addition, 2028 West 2nd Avenue. FLAG: 200 feet is extraordinary for Pinus ponderosa outside old-growth coastal stands (the species' tallest known examples anywhere are in the 230-270 ft range in California/Oregon old growth); treat the register's own figure with real skepticism and do not repeat it as fact without a second source that gives an actual measured height. Needs a second source and a sanity check on the height claim before shipping. Same neighbourhood cluster as the Reid Family Tree and The Last Planes leads. || 2026-10-03 verify pass: register point is 10 m from iNat obs 303180044 (Pinus ponderosa, 2025-08-02, CC BY-NC) so a ponderosa stands there, but the point sits beside an apartment building (209 S Chestnut St) so the tree may be on private residential grounds; no open photo; 200 ft claim still unsourced. Stays a lead. || 2026-11-03 verify pass: delivered flagged in data/research/spokane-verified.json (spk_016 to spk_019), one-source US bar."
+  },
+  {
+   "name": "Liberty Park Champion (Corkscrew Willow)",
+   "species": "Corkscrew Willow (Salix matsudana 'Tortuosa')",
+   "lat": 47.652584,
+   "lng": -117.389177,
+   "status": "lead",
+   "why": "Spokane Heritage Tree Register only so far: height 45 feet, diameter 50 inches (girth_cm derivable: 50in = 127cm diameter -> circumference roughly 399cm if this figure is trustworthy), crown 60 feet, 'likely the largest or second largest in the state'. Needs a second source. || 2026-10-03 verify pass: point lies inside Liberty Park (OSM), but no willow observation or open photo within reach (iNat obs 307549145 nearby is a cottonwood), Commons none within 250 m; pin cannot be confirmed. Stays a lead. || 2026-11-03 verify pass: delivered flagged in data/research/spokane-verified.json (spk_016 to spk_019), one-source US bar."
+  },
+  {
+   "name": "Indian Canyon Golf Course old trees / South Hill bluffs old trees",
+   "species": "Unknown, likely ponderosa pine and Douglas fir",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Re-checked this pass. The register itself names only the same three Douglas firs already published as spk_001 ('The Ancient Ones', Indian Canyon Park, matching spk_001's coordinates and description almost exactly, 175+ years / 110 feet per the register). No other named specimen on the golf course or South Hill bluffs turned up in the register or in searches this pass; the 2019 Spokesman-Review piece behind spk_001-003 remains the only source naming old trees in that area in general terms ('South Hill bluffs, Mount Spokane, Mica Peak, Dishman Hills') without naming an individual specimen. Not pursued further; would need a dedicated hunt for a single named tree on the golf course itself, which this pass did not find evidence exists."
+  },
+  {
+   "name": "Anne Frank Sapling at Carla Peperzak Middle School (Wikidata Q140073080)",
+   "species": "unknown (Anne Frank sapling, likely horse chestnut)",
+   "lat": 47.59575,
+   "lng": -117.37602,
+   "status": "lead",
+   "why": "Wikidata candidate, 2026-11-03 pass. At a middle school: no evidence the grounds are open to visitors (hard rule 10 schools), and a sapling is not old. No photo or exact pin. Not researched further."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "The Treaty Tree (Ponderosa Pine)",
+   "species": "Ponderosa Pine (Pinus ponderosa)",
+   "lat": 47.750673,
+   "lng": -117.306525,
+   "status": "blocked",
+   "why": "DEAD: the Spokesman-Review reported on 2026-08-18 (spokesman.com/stories/2026/aug/18/an-indigenous-landmark-survived-centuries-of-light/) that the Treaty Tree on Peone Prairie was felled in the Fairview fire. Never ship as a live tree; may appear in a story as context. Earlier note: Found 2026-09-11 in the same GIS layer as the Heritage Tree Register but explicitly NOT part of it: the record's own text says 'The Treaty Tree is not listed on the Spokane Heritage Tree Register but was included in the 1997 Historic Resources Inventory of Spokane County.' Genuine find, real history: on land traditionally used by the Upper Spokane Indians as a meeting place, said to be where discussion took place about Col. George Wright's 1858 peace demands; the land later went to Baptiste Peone under the Donation Land Act of 1850, the only person in the county granted land under that Act, and the tree is described as the only remaining evidence of his homestead and the original Saint Michael Mission. About 13.6 km northeast of the city centre on East Dorak Road, no street address, a low hill, standing alone.\n\nSECOND SOURCE FOUND 2026-09-11: HistoryLink.org Essay 10030 (Laura Arksey, 2012) independently names the same tree on Peone Prairie, a Ponderosa pine 'variously called the Treaty Tree, Weeping Tree or Surrender Tree', ties it to the same Baptiste Peone (1820-1902?), and says it 'commemorates the signing of one of two Indian treaties in 1887 or 1888 (sources differ)', which conflicts with the GIS record's 1858 date; HistoryLink itself already flags its own sources as disagreeing on the year. Existence, species and the Peone connection now clear the two-source bar; the only thing still holding this back is ACCESS. The tree sits on what was private homestead land and nothing found this pass says whether it is reachable today, on whose land, or by what path. Per hard rule 10, do not ship on a guess: an OSM access-tag check, a county parcel lookup for the current owner, or a direct account from someone who has been there would settle it. Not pursued further this pass given the time box."
+  }
+ ]
 }
