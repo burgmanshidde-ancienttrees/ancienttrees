@@ -78,7 +78,7 @@ if (mapEl) {
       rows.forEach(function (r) {
         if (r[0] === TREE_ID) { return; }
         feats.push({type: 'Feature', geometry: {type: 'Point', coordinates: [r[1], r[2]]},
-                    properties: {id: r[0], cs: r[3], pr: r[4]}});
+                    properties: {id: r[0], cs: r[3], pr: r[4], mn: r[7]}});
       });
       if (map.getSource('around')) { return; }
       map.addSource('around', {type: 'geojson', data: {type: 'FeatureCollection', features: atMarkPiles(feats)}});

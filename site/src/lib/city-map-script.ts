@@ -249,7 +249,7 @@ map.on('load', function() {
     rows.forEach(function(r) {
       if (HOME_IDS[r[0]]) { return; }
       NEARBY.push({type: 'Feature', geometry: {type: 'Point', coordinates: [r[1], r[2]]},
-                   properties: {id: r[0], cs: r[3], pr: r[4], sp: r[5], paid: r[6]}});
+                   properties: {id: r[0], cs: r[3], pr: r[4], sp: r[5], paid: r[6], mn: r[7]}});
     });
     applyCityFilters();
   }).catch(function() {});

@@ -728,7 +728,9 @@ struct TreeMap: UIViewRepresentable {
                                                styleLayerIdentifiers: [MapLayers.live(MapLayers.treeLayer, on: style),
                                                                        MapLayers.live(MapLayers.peakLayer, on: style),
                                                                        MapLayers.live(MapLayers.spreadLayer, on: style),
-                                                                       MapLayers.live(MapLayers.dotLayer, on: style)])
+                                                                       MapLayers.live(MapLayers.dotLayer, on: style),
+                                                                       MapLayers.live(MapLayers.farLayer, on: style),
+                                                                       MapLayers.live(MapLayers.miniLayer, on: style)])
             // One of yours, whether at rest or spread out of a pile.
             if let hit = treeHits.first(where: {
                    let kind = $0.attribute(forKey: MapLayers.kindKey) as? String
@@ -1086,6 +1088,9 @@ enum MapLayers {
     static let stackLayer = "at-cluster"
     /// Every tree as a dot, under the pins: what shows where a pin did not fit.
     static let dotLayer = "at-trees-dot"
+    /// Far out (below farZoom): the wider-spaced pins and the mini pins.
+    static let farLayer = "at-trees-far"
+    static let miniLayer = "at-trees-mini"
     /// A spread stack's pins, 36 points apart by design, so drawn on a layer
     /// that allows overlap: the dot rule would otherwise drop one of them.
     static let spreadLayer = "at-trees-spread"
@@ -1195,6 +1200,9 @@ enum MapLayers {
         // read as a target (seen in the simulator, 2026-10-19).
         if let pins = style.layer(withIdentifier: live(treeLayer, on: style)) as? MLNSymbolStyleLayer {
             pins.predicate = pinPredicate(peaking: false, without: id)
+        }
+        if let far = style.layer(withIdentifier: live(farLayer, on: style)) as? MLNSymbolStyleLayer {
+            far.predicate = pinPredicate(peaking: false, without: id)
         }
         if let peak = style.layer(withIdentifier: live(peakLayer, on: style)) as? MLNSymbolStyleLayer {
             peak.predicate = pinPredicate(peaking: true, without: id)
@@ -1352,7 +1360,8 @@ enum MapLayers {
             // them, which reads as a season rather than as a paint chart.
             f.attributes = [idKey: t.id, "icon": name, "peaking": peaking,
                             countKey: 1, kindKey: "tree", "at_label": "",
-                            "pr": pinPriority(hasPhoto: t.photo != nil, saves: t.saves ?? 0)]
+                            "pr": pinPriority(hasPhoto: t.photo != nil, saves: t.saves ?? 0),
+                            "mini": t.mini == true]
             features.append(f)
         }
         state(for: style).leaves = features
@@ -1406,7 +1415,7 @@ enum MapLayers {
         // identifiers, and the old set is retired once the new source reports
         // its points (or after a second, for an empty map). The double buffer
         // every map SDK's own docs give for swapping a GeoJSON source.
-        let old = (layers: [stackLayer, peakLayer, haloLayer, dotLayer, treeLayer, spreadLayer, selectedLayer, mineLayer]
+        let old = (layers: [stackLayer, peakLayer, haloLayer, dotLayer, miniLayer, treeLayer, farLayer, spreadLayer, selectedLayer, mineLayer]
                     .map { live($0, on: style) },
                    source: st.liveSourceID)
         st.retired.append(old)
@@ -1500,6 +1509,14 @@ enum MapLayers {
     /// world off the screen when somebody zooms all the way out. qa holds the
     /// two numbers equal (check_every_map_shows_one_world()).
     static let worldMinZoom = 1.5
+    /// ZOOMED OUT, THE AIRBNB SPLIT (Hidde, 2026-11-03, design B): below this
+    /// zoom, full pins at least farPinDistance apart and a mini pin for the
+    /// trees the feed marks `mini`, the rest left out; from it in, every tree.
+    /// The website's FAR_ZOOM, FAR_PIN_DISTANCE and MINI_RADIUS (lib/map.ts,
+    /// which also decides which trees are mini); qa holds them equal.
+    static let farZoom = 6.5
+    static let farPinDistance = 90.0
+    static let miniRadius = 3.0
 
     /// Which tree gets the full pin where two collide, lower first: one with
     /// a photograph before one without, and among equals the tree more
@@ -1693,6 +1710,19 @@ enum MapLayers {
         dots.circleRadius = NSExpression(forConstantValue: 4)
         dots.circleStrokeColor = NSExpression(forConstantValue: UIColor.white)
         dots.circleStrokeWidth = NSExpression(forConstantValue: 1.5)
+        // Far out, a mini pin for the trees the feed marks and nothing for the
+        // rest (farZoom). Your own trees are never thinned: they stay dots.
+        if declutter {
+            dots.minimumZoomLevel = Float(farZoom)
+            let mini = MLNCircleStyleLayer(identifier: live(miniLayer, on: style), source: trees)
+            mini.predicate = NSPredicate(format: "(at_kind == 'tree' AND mini == YES) OR at_kind == 'mine'")
+            mini.circleColor = NSExpression(forConstantValue: moss)
+            mini.circleRadius = NSExpression(forConstantValue: miniRadius)
+            mini.circleStrokeColor = NSExpression(forConstantValue: UIColor.white)
+            mini.circleStrokeWidth = NSExpression(forConstantValue: 1)
+            mini.maximumZoomLevel = Float(farZoom)
+            style.addLayer(mini)
+        }
         style.addLayer(dots)
 
         // THE PIN, placed by MapLibre: see pinDistance. Overlap is allowed
@@ -1708,7 +1738,19 @@ enum MapLayers {
         let pins = MLNSymbolStyleLayer(identifier: live(treeLayer, on: style), source: trees)
         place(pins)
         pins.predicate = pinPredicate(peaking: false, without: state(for: style).selectedID)
-        style.addLayer(pins)
+        if declutter {
+            // The same pins, spaced wider, below farZoom.
+            pins.minimumZoomLevel = Float(farZoom)
+            let farPins = MLNSymbolStyleLayer(identifier: live(farLayer, on: style), source: trees)
+            place(farPins)
+            farPins.iconPadding = NSExpression(forConstantValue: (farPinDistance - 38) / 2)
+            farPins.predicate = pins.predicate
+            farPins.maximumZoomLevel = Float(farZoom)
+            style.addLayer(pins)
+            style.addLayer(farPins)
+        } else {
+            style.addLayer(pins)
+        }
 
         let spread = MLNSymbolStyleLayer(identifier: live(spreadLayer, on: style), source: trees)
         spread.iconImageName = NSExpression(forKeyPath: "icon")

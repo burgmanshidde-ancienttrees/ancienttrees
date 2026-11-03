@@ -240,6 +240,10 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// its page shows the Seasons row. Sent only when true (seasons.ts,
     /// Hidde, 2026-10-31); nil in an older snapshot, which shows no row.
     public var seasonal: Bool? = nil
+    /// Drawn as a mini pin when the map is zoomed out (lib/map.ts miniPin,
+    /// 2026-11-03). Sent only when true; nil in an older snapshot, which then
+    /// shows only the full pins far out.
+    public var mini: Bool? = nil
     public struct DayTrip: Codable, Hashable, Sendable {
         public let place: String
         public let km: Int
@@ -257,6 +261,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case ageShort = "age_short"
         case seasonKey = "season_key"
         case seasonal
+        case mini
         case access, story, url, precision, photo, photos, peak
         case recogniseRaw = "how_to_recognise"
         case paidEntryRaw = "paid_entry"

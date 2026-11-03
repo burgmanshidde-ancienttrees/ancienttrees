@@ -22,6 +22,7 @@ import { dayTrips, type DayTrip } from "./day-trips";
 import type { CityEntry } from "./trees";
 import { peakFor, seasonKey } from "./phenology";
 import { colourMonths, isSeasonal, seasonOfMonth, type Season } from "./seasons";
+import { miniPin } from "./map";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText, heroFrame } from "./images";
 import { savesOf } from "./saves";
@@ -126,6 +127,8 @@ export interface FeedTree {
    * its page shows the Seasons row (seasons.ts; Hidde, 2026-10-31). Sent only
    * when true, and only on a tree with a photograph. */
   seasonal?: true;
+  /** Drawn as a mini pin when the map is zoomed out (lib/map.ts miniPin). */
+  mini?: true;
 }
 
 export interface FeedPhoto {
@@ -207,6 +210,8 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           ? { photos: shots.map((x) => resolvePhoto(x, loc.latitude, colourMonths(t))).filter(Boolean) }
           : {}),
         ...(p?.url && isSeasonal(t, loc.latitude) ? { seasonal: true as const } : {}),
+        // A mini pin when the map is zoomed out (lib/map.ts miniPin).
+        ...(miniPin(t.id, Boolean(p?.url)) ? { mini: true as const } : {}),
       });
     }
   }

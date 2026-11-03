@@ -87,6 +87,27 @@ export const PIN_DISTANCE = 40;
 export function pinPriority(hasPhoto: boolean, saves: number): number {
   return (hasPhoto ? 0 : 100000) - Math.min(Math.max(0, Math.round(saves)), 99999);
 }
+
+/** ZOOMED OUT, THE AIRBNB SPLIT (Hidde, 2026-11-03, design B, after "dit
+ *  voelt gewoon incompleet" about an even spread of dots). Airbnb's map shows
+ *  a few full pins for the listings most likely to be booked and "smaller
+ *  ovals without price" (mini-pins) for the next tier, each at its real
+ *  place, and nothing for the rest (airbnb.tech, "Improving Search Ranking
+ *  for Maps"). Below FAR_ZOOM ours does the same: full pins at least
+ *  FAR_PIN_DISTANCE apart, a mini pin for half the photographed trees, the
+ *  rest left out; from FAR_ZOOM in, every tree as before. The half is fixed
+ *  per tree (its id), so the same trees stand there every visit. Decided here
+ *  only: the web maps read `mn` off each point, the app reads `mini` from the
+ *  feed (app-feed.ts). */
+export const FAR_ZOOM = 6.5;
+export const FAR_PIN_DISTANCE = 90;
+export const MINI_RADIUS = 3;
+export function miniPin(id: string, hasPhoto: boolean): boolean {
+  if (!hasPhoto) return false;
+  let sum = 0;
+  for (const ch of id) sum += ch.codePointAt(0) ?? 0;
+  return sum % 2 === 0;
+}
 /** ONE WORLD ON EVERY MAP (Hidde, 2026-07-29: "ik hoef niet 2 werelden te
  *  zien"; again 2026-11-03, after the city map could be zoomed out to several
  *  worlds). Every maplibregl.Map on the site takes ONE_WORLD: no world copies,
@@ -254,11 +275,20 @@ function atPinLayers(map, source, treeLayer, open, hollowExpr, hollow) {
                    'icon-allow-overlap': false, 'icon-ignore-placement': false,
                    'icon-padding': ${(PIN_DISTANCE - (PIN_RADIUS + 2) * 2) / 2},
                    'symbol-sort-key': ['coalesce', ['get', 'pr'], 1]};
-  map.addLayer({id: treeLayer + '-dot', type: 'circle', source: source, filter: loose, paint: dotPaint});
-  map.addLayer({id: treeLayer + '-head-dot', type: 'circle', source: source, filter: pileHead, maxzoom: ${STACK_ZOOM}, paint: dotPaint});
-  map.addLayer({id: treeLayer, type: 'symbol', source: source, filter: loose, layout: pinLayout});
-  map.addLayer({id: treeLayer + '-head', type: 'symbol', source: source, filter: pileHead, maxzoom: ${STACK_ZOOM}, layout: pinLayout});
-  [treeLayer, treeLayer + '-dot', treeLayer + '-head', treeLayer + '-head-dot'].forEach(function(l) {
+  // Far out (below FAR_ZOOM): a few full pins and Airbnb's mini pins, the
+  // rest left out; from FAR_ZOOM in, every tree as a pin or a dot.
+  var farLayout = Object.assign({}, pinLayout, {'icon-padding': ${(FAR_PIN_DISTANCE - (PIN_RADIUS + 2) * 2) / 2}});
+  // A point without `mn` (My trees, a city's own trees) always stays: only
+  // the maps of everything thin out.
+  var mini = ['all', loose, ['==', ['coalesce', ['get', 'mn'], 1], 1]];
+  map.addLayer({id: treeLayer + '-mini', type: 'circle', source: source, filter: mini, maxzoom: ${FAR_ZOOM},
+    paint: {'circle-color': '#4A6B2A', 'circle-radius': ${MINI_RADIUS}, 'circle-stroke-width': 1, 'circle-stroke-color': '#F6F2E9'}});
+  map.addLayer({id: treeLayer + '-dot', type: 'circle', source: source, filter: loose, minzoom: ${FAR_ZOOM}, paint: dotPaint});
+  map.addLayer({id: treeLayer + '-head-dot', type: 'circle', source: source, filter: pileHead, minzoom: ${FAR_ZOOM}, maxzoom: ${STACK_ZOOM}, paint: dotPaint});
+  map.addLayer({id: treeLayer + '-far', type: 'symbol', source: source, filter: loose, maxzoom: ${FAR_ZOOM}, layout: farLayout});
+  map.addLayer({id: treeLayer, type: 'symbol', source: source, filter: loose, minzoom: ${FAR_ZOOM}, layout: pinLayout});
+  map.addLayer({id: treeLayer + '-head', type: 'symbol', source: source, filter: pileHead, minzoom: ${FAR_ZOOM}, maxzoom: ${STACK_ZOOM}, layout: pinLayout});
+  [treeLayer, treeLayer + '-dot', treeLayer + '-head', treeLayer + '-head-dot', treeLayer + '-far', treeLayer + '-mini'].forEach(function(l) {
     map.on('click', l, function(e) {
       var f = e.features[0];
       open(f.properties, f.geometry.coordinates);
@@ -326,7 +356,9 @@ export function countryMapScript(cities: CountryMapCity[],
     features: cities.flatMap((c) => c.markers.map((m) => ({
       type: "Feature",
       geometry: { type: "Point", coordinates: [m.lng, m.lat] },
-      properties: { id: m.id ?? "", cs: "/" + c.slug, url: m.url ?? "/" + c.slug, pr: m.pr ?? 1 },
+      properties: { id: m.id ?? "", cs: "/" + c.slug, url: m.url ?? "/" + c.slug, pr: m.pr ?? 1,
+                    // pinPriority puts a tree with a photograph at 0 or below.
+                    mn: miniPin(m.id ?? "", (m.pr ?? 1) <= 0) ? 1 : 0 },
     }))),
   };
   return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs()}
@@ -391,6 +423,8 @@ export interface ExploreTreeFeature {
     paid?: 0 | 1;
     /** pinPriority(): which tree gets the full pin where two collide. */
     pr?: number;
+    /** miniPin(): drawn as a mini pin when zoomed out. */
+    mn: 0 | 1;
     /** Index into the species list the page ships beside the features. An
      *  index rather than the name, because 3,055 copies of "Pedunculate Oak"
      *  is 45KB of the same twelve words. */

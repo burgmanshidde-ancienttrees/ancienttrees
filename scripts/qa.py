@@ -2545,6 +2545,19 @@ def check_every_map_shows_pins_the_same_way():
             problems.append("STACK_ZOOM (lib/map.ts) and stackZoom (TreeMap.swift) must both exist")
         elif float(wz.group(1)) != float(az.group(1)):
             problems.append("a stack becomes a bubble at zoom %s on the web and %s in the app" % (wz.group(1), az.group(1)))
+        # And zoomed out, the Airbnb split (2026-11-03, design B): the same
+        # zoom and the same pin spacing on both, and the app reads WHICH trees
+        # are mini pins from the feed (`mini`), never a hash of its own.
+        for web_name, app_name in (("FAR_ZOOM", "farZoom"), ("FAR_PIN_DISTANCE", "farPinDistance"),
+                                   ("MINI_RADIUS", "miniRadius")):
+            w = re.search(r"export const %s = (\d+(?:\.\d+)?);" % web_name, web)
+            a2 = re.search(r"static let %s\s*=\s*(\d+(?:\.\d+)?)" % app_name, src)
+            if not w or not a2:
+                problems.append("%s (lib/map.ts) and %s (TreeMap.swift) must both exist" % (web_name, app_name))
+            elif float(w.group(1)) != float(a2.group(1)):
+                problems.append("%s is %s on the web and %s in the app" % (web_name, w.group(1), a2.group(1)))
+        if "unicodeScalars" in src and "mini" in src.split("unicodeScalars")[0][-200:]:
+            problems.append("TreeMap.swift decides the mini pins itself; it reads `mini` from the feed")
     return problems
 
 

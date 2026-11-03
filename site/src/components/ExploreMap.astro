@@ -16,7 +16,7 @@ import { speciesCommon } from "../lib/species";
 import { mapSpecies } from "../lib/map-species";
 import MapFilters from "./MapFilters.astro";
 import { cityFace, cityFaceSrcset, usablePhoto } from "../lib/images";
-import { mapHead, exploreMapScript, pinPriority, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
+import { mapHead, exploreMapScript, miniPin, pinPriority, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
 import { savesOf } from "../lib/saves";
 import { haversineKm } from "../lib/walks";
 import { searchForm, searchWidgetJs } from "../lib/search-form";
@@ -72,6 +72,7 @@ for (const entry of allCities) {
         age: t.age_estimate ?? "",
         now: 0 as 0 | 1,
         pr: pinPriority(Boolean(usablePhoto(t)), savesOf(t.id)),
+        mn: (miniPin(t.id, Boolean(usablePhoto(t))) ? 1 : 0) as 0 | 1,
         ...(t.paid_entry ? { paid: 1 as 1 } : {}),
         ...(sp === undefined ? {} : { sp }),
       },
