@@ -26,6 +26,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-11-03
 
 Web half: the last 24 hours were data (Lyon, Andalucia, Central Italy, California, northern England and Wales, southern Thailand; Spoleto and Vallombrosa are held for the pace, so not in the build). No em dashes in the built Lyon pages sampled. Findings:
+App half (iPhone SE: tree, walk-begin, walk, city-map-full, city, collect-away):
+
+- NOTE APP tree.png: the "Back", share and report controls are green on the green oak foliage and nearly vanish, so a person sees no clear way out of the tree page. Same fault as own-tree.png on 10-31; a session, not a night run. The title also carries the whole alias list, "Dąb Fabrykant (the Factory Owner's Oak, also called Jagosz)", over three lines on the SE; the first name alone would read cleaner (same truncation family as map-pin on 10-31).
+- NOTE APP city.png / city-map-full.png: the sheet says "1 tree in Aachen" directly under the title "Aachen", and the ambassador row beside it reads "Aachen is looking for an ambassador. Help us improve this list." for a list of one tree; the promise is larger than the page. Consider whether a one-tree place needs the row.
+- walk-begin, walk, collect-away: read consistently ("0 of 6 seen", "7 min, 0.6 km", "Photograph a tree you are standing in front of"); nothing contradicted.
+
 
 - WARN (fifteenth review to see it) meta description prints a planting or event year as an age: `grep -rlE 'content="A (17|18|19|20)[0-9]{2}-year-old' site/dist` finds 96 pages, and the new Lyon page /lyon/anne-frank-chestnut says "A 2014-year-old Horse Chestnut" while its own story says it is barely twelve. Hard rule 2, Verify (a derived age states its basis). Nothing in qa.py refuses it. Build the check on built HTML first, then fix the meta template.
 - WARN /lyon/pedunculate-oak-of-rue-viret: meta and og description read "A Pedunculate Oak in Villeurbanne (Les Poulettes, Lyon. Villeurbanne's official tree register calls this pedunculate oak rare, and it means it plainly", an unclosed parenthesis and a cut mid-sentence with no ellipsis. SEO_GEO_BLUEPRINT P2 (answer first, readable snippet). Check the location string for a missing closing bracket and cut at a sentence end.
