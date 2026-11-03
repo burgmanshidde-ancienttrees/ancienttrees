@@ -1,0 +1,42 @@
+[
+ {
+  "id": "mau_005",
+  "name": "The Kaluanui Norfolk Pines",
+  "species": "Norfolk Island Pine (Araucaria heterophylla)",
+  "age_estimate": "over 150 years (believed)",
+  "age_min": 150,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Kaluanui Estate, Hui No'eau Visual Arts Center, 2841 Baldwin Avenue, Makawao, HI 96768",
+   "latitude": 20.8705,
+   "longitude": -156.3215,
+   "neighbourhood": "Makawao"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Kaluanui Estate grounds, Hui No'eau",
+   "radius_m": 50
+  },
+  "access": "Free to walk the Kaluanui grounds, gallery and History Room; the Hui's visit page says daily 9am to 4pm, its tour page says Tuesday to Saturday for the self-guided walk, so check before you go. The guidebook 'Kaluanui: Plants at the Hui' costs $6 at the front desk; a guided walking tour costs $12, Mondays and Wednesdays at 10am.",
+  "transport": "About 20 minutes by car from Kahului, via Highway 37 and Baldwin Avenue. No Maui Bus service to this stretch of Baldwin Avenue is known.",
+  "verified_sources": [
+   "https://www.huinoeau.com/visit-1",
+   "https://www.huinoeau.com/tour-kaluanui",
+   "https://www.huinoeau.com/history",
+   "https://historichawaii.org/article/history-and-art-merge-at-mauis-historic-hui-noeau-visual-arts-center/"
+  ],
+  "official_register": null,
+  "how_to_recognise": "You can recognise them as the two big Norfolk Island pines on the Kaluanui estate grounds around the 1917 main house. No source says exactly where, so ask at the front desk or use the $6 guidebook.",
+  "verify_notes": "Hui No'eau's own pages (the owner of the ground) say the Kaluanui walking tour includes 'two of Maui's largest Norfolk Island Pines' and 'more than seventy specimens of plants and trees'. Historic Hawaii Foundation article (undated in the fetch) names one Norfolk pine, 125 ft tall, 'believed to be more than 150 years old'; those two figures are the article's, not a measurement or plaque, so height_m left empty. Estate history (huinoeau.com/history): East Maui Plantation c.1850 (sugar mill remains near the entrance), Henry Perrine Baldwin bought 1885, Harry and Ethel Baldwin built the main house 1917 (C.W. Dickey), Hui founded 1934, Hui bought the 25 acres June 2005. No source ties the pines to a planting date, so no age derived. Species caveat: a gymnosperm database says many 'Norfolk pines' in Hawaii are actually Cook pines (Araucaria columnaris); species not checked at the tree. Pin is the estate address (Nominatim), not a tree. Alive: no dated observation of the trees themselves; the Hui's tour page is current. Flagged: one source family, location of the pines on the grounds unknown. Hours conflict between pages (daily vs Tuesday to Saturday).",
+  "facts": [
+   "Two of Maui's largest Norfolk Island Pines stand on the Kaluanui estate (https://www.huinoeau.com/tour-kaluanui)",
+   "A Norfolk pine on the grounds is described as 125 ft and believed over 150 years old (https://historichawaii.org/article/history-and-art-merge-at-mauis-historic-hui-noeau-visual-arts-center/)",
+   "Henry Perrine Baldwin bought the property in 1885; Harry and Ethel Baldwin built the main house in 1917 (https://www.huinoeau.com/history)"
+  ],
+  "curation_status": "flagged",
+  "story": "An arts centre in Makawao claims two of Maui's largest Norfolk Island pines, and one of them, by one account, is 38 metres tall and more than 150 years old. The Hui No'eau Visual Arts Center, which owns the Kaluanui estate, says its grounds walk takes in both pines among more than seventy specimens of plants and trees. A Historic Hawaii Foundation article gives one of them as 125 feet and believed to be over 150 years old. Those are the article's figures, not a measurement or a plaque, so read them as a belief.\n\nIf that belief holds, the pine was growing here before the Baldwins arrived. A sugar plantation worked this ground around 1850, and its mill ruins are still near the entrance. Henry Perrine Baldwin bought the property in 1885, Harry and Ethel Baldwin built the main house in 1917, and the Hui, founded in 1934, bought its 25 acres in 2005. No source ties the pines to any of those dates.\n\nTwo things are worth knowing before you go. No published source says where on the grounds the two pines stand, so ask at the front desk or buy the Hui's guidebook to the estate's plants. And many trees called Norfolk pines in Hawaii are in fact Cook pines, a close relative, and nobody has checked these two. If you can tell the difference, tell us which they are."
+ }
+]

@@ -112,6 +112,36 @@
    "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
    "status": "open",
    "register_photo": " "
+  },
+  {
+   "register_id": "1156",
+   "note_2026-11-02": "Ahukini Road False Kamani (girth 679.7 cm, Excellent): locality tied to 'Ala Moana Bowling Alley', which could not be found in current listings (only Kauai Bowl at 4303 Rice St turned up), so the spot cannot be placed. Lead: needs a street-level locator.",
+   "reason": "Cannot place: reference landmark (Ala Moana Bowling Alley, Ahukini Rd) not found; no life evidence (iNaturalist Terminalia within 2 km: none)."
+  },
+  {
+   "register_id": "1150",
+   "note_2026-11-02": "Monkeypod TMK 2-8-004:053, girth 487.7 cm, Excellent: neighbouring parcel to the Hongwanji pair (delivered as kau_009). No source beyond the register for this trunk.",
+   "reason": "Register only, no locator beyond Old Koloa Town."
+  },
+  {
+   "name": "Koloa banyan at Koloa Road and Maluhia Road",
+   "note_2026-11-02": "Named in Mayor Baptiste's letter (The Garden Island, 24 Dec 2007, https://thegardenisland.com/?p=154994) as one of four south-shore exceptional trees. No register row, no other source found.",
+   "reason": "No second source or locator; check Kauai County Code 22-5.4 (ecode360.com 403s to fetchers)."
+  },
+  {
+   "name": "Kukui at Historic County Building, Lihue",
+   "note_2026-11-02": "Hawaii Magazine (https://www.hawaiimagazine.com/content/getting-know-kauai-one-tree-time) says the writer tape-measured an old kukui in front of the Historic County Building for Smart Trees Pacific. No girth given on the page. Public grounds.",
+   "reason": "Magazine article only, no measurement; check Smart Trees Pacific map."
+  },
+  {
+   "name": "Monkeypod near Koloa post office / Koloa Road (Grove Farm boundary)",
+   "note_2026-11-02": "Large monkeypod straddling Grove Farm and Shops at Koloa Town parcel; county committee deferred a petition in 2008 (https://www.thegardenisland.com/?p=152464). Many Koloa Road monkeypods relocated or removed after a 2007 federal court order. Current status unknown.",
+   "reason": "Unknown if still standing."
+  },
+  {
+   "register_id": "1136",
+   "note_2026-11-02": "King Kalakaua's Durian, Grove Farm Homestead: still only the register plus no press naming it; register itself flags grove/row doubt. Re-searched: Grove Farm tours (paid) found but no durian mention.",
+   "reason": "Single register; collectible-point doubt; no locator inside the museum grounds."
   }
  ],
  "blocked": [
@@ -168,6 +198,14 @@
    "common_name": "King Kalakaua's Durian (Durio zibethinus, moved here from leads)",
    "locality": "On the Grove Farm Homestead grounds",
    "reason": "Moved from leads to blocked on reflection: only one source found after two search attempts, and it stands among 'other interesting trees' at a museum requiring a paid tour, which is fine per hard rule 10 only once a second source exists. Leaving as a lead already covers this; noted here only for completeness, not duplicated."
+  },
+  {
+   "name": "Koke'e redwood and sugi plantings",
+   "reason": "Planted groves (CCC era per a travel blog), not individual trees; no named specimen found."
+  },
+  {
+   "name": "NTBG McBryde and Limahuli gardens",
+   "reason": "No individual tree named by ntbg.org or press in this pass; only generic collections (Polyscias racemosa, puou breadfruit at the visitor centre)."
   }
  ]
 }

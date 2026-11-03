@@ -1,216 +1,274 @@
 {
- "leads": [
-  {
-   "register_id": "1205",
-   "name": null,
-   "species": "Indian Banyan (Ficus benghalensis)",
-   "reason": "Real, plausible historic tree but not individually confirmed. Register gives coords 19.64,-155.99 (North Kona, park-level grid only), no locality/position_source string, girth_cm 2301.2 (over 23m, sanity-flagged: this is enormous even for a banyan, though the Lahaina Banyan's canopy/aggregate girth is reported around 0.25 miles so a huge multi-trunk figure is not implausible for the species -- it is unclear whether 2301.2cm is a single trunk or an aggregate/buttressed mass, and the register does not say). Researched North Kona's historic banyan lineage: Queen Kapiolani gave four trees to Kona in 1882, two of which were Indian Banyan cuttings from the Iolani Palace banyan, one planted at Hulihee Palace and one (transplanted 1906 by the Maguire family) now standing near Kailua Pier by the King Kamehameha Hotel; both reportedly still stand today (source: Ho'okuleana LLC 'Along Ali'i Drive', 2017, via imagesofoldhawaii.com, cross-referenced against bigislandnow.com's 2025-11-02 article on the Burgess fig). Both sites are genuinely public (a state-registered historic home/museum with public grounds, and a hotel/pier waterfront). Could not determine which of the two this register entry (or if a third, different Indian Banyan) refers to, and could not independently corroborate the 2301.2cm girth against a named specimen within the time window. Worth a dedicated single-tree pass: search 'Hulihee Palace banyan tree' and 'King Kamehameha Hotel Kailua banyan' directly, or contact either site, to pin identity and confirm the tree is alive and correctly sized before publishing."
-  },
-  {
-   "register_id": "1206",
-   "name": null,
-   "species": "Chinese Banyan (Ficus microcarpa)",
-   "reason": "No girth recorded, locality only 'Kona' (no address), coords 19.64,-156.0 (park-level grid). No independent source found identifying a specific notable Chinese Banyan in Kailua-Kona within the time window; general searching surfaced the Burgess/Banyan Court Moreton Bay fig and the two royal Indian Banyan cuttings but nothing matching this species and location. Needs a dedicated search pass before it can be verified or placed."
-  },
-  {
-   "name": "Koa",
-   "species": "Koa (Acacia koa)",
-   "lat": 19.184722,
-   "lng": -155.809444,
-   "register_location": "Kona Hema Preserve, South Kona",
-   "girth_cm": 872,
-   "height_m": 35.1,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/koa11-200x300.jpg"
-  },
-  {
-   "name": "Hopbush",
-   "species": "Hopbush (Dodonaea viscosa)",
-   "lat": 19.231816,
-   "lng": -155.837845,
-   "register_location": "Kona Hema Preserve (The Nature Conservancy)",
-   "girth_cm": 81,
-   "height_m": 11.6,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/aaliiDodonaea-viscosa-Kapua-2655-1024x683.jpg"
-  },
-  {
-   "name": "Hawaiian Ebony",
-   "species": "Hawaiian Ebony (Diospyros sandwicensis)",
-   "lat": 19.416282,
-   "lng": -154.951133,
-   "register_location": "Pu‘u Wa‘awa‘a Forest Reserve",
-   "girth_cm": 91,
-   "height_m": 5.5,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2016/11/Lama-768x1024.jpg"
-  },
-  {
-   "name": "Soapberry Wingleaf",
-   "species": "Soapberry Wingleaf (Sapindus saponaria)",
-   "lat": 19.443,
-   "lng": -155.318,
-   "register_location": "Hawaiʻi Volcanoes National Park",
-   "girth_cm": 408,
-   "height_m": 21.6,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/big-tree-Sapindus-saponaria-Kipuka-Ki-1961-160x300.jpg"
-  },
-  {
-   "name": "Colicwood",
-   "species": "Colicwood (Myrsine lessertiana)",
-   "lat": 19.448048,
-   "lng": -155.303438,
-   "register_location": "Kῑpukapuaulu, Hawai‘i Volcanoes National Park",
-   "girth_cm": 168,
-   "height_m": 18.0,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Myrsine-lessertiana-Kipuka-Puaulu-7216-683x1024.jpg"
-  },
-  {
-   "name": "Australasian Catchbird Tree",
-   "species": "Australasian Catchbird Tree (Pisonia brunoniana)",
-   "lat": 19.46,
-   "lng": -155.247,
-   "register_location": "Hawai'i Volcanoes National Park",
-   "girth_cm": 330,
-   "height_m": 16.2,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Pisonia-brunoniana-Olaa-7180-683x1024.jpg"
-  },
-  {
-   "name": "Hawaiian Holly",
-   "species": "Hawaiian Holly (Ilex anomala)",
-   "lat": 19.603032,
-   "lng": -155.152322,
-   "register_location": "Hawai‘i Volcanoes National Park",
-   "girth_cm": 244,
-   "height_m": 15.2,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Ilex-anomala-Olaa-7185-683x1024.jpg"
-  },
-  {
-   "name": "Sea Hibiscus",
-   "species": "Sea Hibiscus (Hibiscus tiliaceus)",
-   "lat": 19.639444,
-   "lng": -155.984444,
-   "register_location": "Hulihe‘e Palace Kailua-Kona",
-   "girth_cm": 279,
-   "height_m": 6.1,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/hau-both_trees-300x225.jpg"
-  },
-  {
-   "name": "Hawaiian Sumac",
-   "species": "Hawaiian Sumac (Rhus sandwicensis)",
-   "lat": 19.686123,
-   "lng": -155.118354,
-   "register_location": "Kaumana",
-   "girth_cm": 51,
-   "height_m": 5.8,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/big-tree-Rhus-sandwicensis-Kaumana-7234-1024x683.jpg"
-  },
-  {
-   "name": "Mamane",
-   "species": "Mamane (Sophora chrysohylla)",
-   "lat": 19.792167,
-   "lng": -155.39949,
-   "register_location": "Mauna Kea Forest Reserve",
-   "girth_cm": 750,
-   "height_m": 7.3,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/03/photo-1-300x225.jpg"
-  },
-  {
-   "name": "Hawaiian Olive",
-   "species": "Hawaiian Olive (Nestegis sandwicensis)",
-   "lat": 19.808985,
-   "lng": -155.842638,
-   "register_location": "Pu‘u Wa‘awa‘a Forest Reserve",
-   "girth_cm": 519,
-   "height_m": 9.8,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/11/olopua1-300x217.jpg"
-  },
-  {
-   "name": "Hawaiian Coral Tree",
-   "species": "Hawaiian Coral Tree (Erythrina sandwicensis)",
-   "lat": 19.929924,
-   "lng": -155.799182,
-   "register_location": "Waikoloa Dry Forest",
-   "girth_cm": 475,
-   "height_m": 12.2,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
-   ],
-   "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
-   "status": "open",
-   "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/Waikoloa_Wiliwili_1-300x199.jpg"
-  }
- ],
- "blocked": [
-  {
-   "register_id": "1172",
-   "name": "The Burgess Moreton Bay Fig (Kona Banyan Court)",
-   "species": "Moreton Bay Fig (Ficus macrophylla)",
-   "reason": "DEAD. Confirmed via Big Island Now (2025-11-02, 'Iconic Ali'i Drive in Kona changed forever after loss of 80-foot tree', fetched directly) and corroborated by Kauai Now's syndication of the same story: internal rot caused a branch to fail on 2025-10-24, the whole tree was removed by 2025-10-26 for public safety, and only a 20-foot stump remains at Kona Banyan Court on Ali'i Drive. The tree was planted in 1882 as a gift from Queen Kapiolani to Alexander Burgess (matches the register's owner_name 'Burgess, Inc.' and locality 'Portion of Kailua Village, North Kona' exactly). An arborist said it 'may try to regrow' from the stump and locals have discussed carving the remaining trunk into a ki'i, but as it stands today there is no living crown: this fails hard rule 'we do not do dead trees' outright. Do not publish as a collectible entry. If the stump regrows a canopy in future years, or if the carved ki'i becomes a notable public artifact in its own right, that would be a new, separate research question, not a revival of this entry. The register's own 'Excellent' vitality rating for this tree is stale/wrong as of 2026; register vitality fields cannot be trusted for currency, exactly as the rulebook warns."
-  }
- ]
+  "leads": [
+    {
+      "register_id": "1205",
+      "name": null,
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "reason": "Real, plausible historic tree but not individually confirmed. Register gives coords 19.64,-155.99 (North Kona, park-level grid only), no locality/position_source string, girth_cm 2301.2 (over 23m, sanity-flagged: this is enormous even for a banyan, though the Lahaina Banyan's canopy/aggregate girth is reported around 0.25 miles so a huge multi-trunk figure is not implausible for the species -- it is unclear whether 2301.2cm is a single trunk or an aggregate/buttressed mass, and the register does not say). Researched North Kona's historic banyan lineage: Queen Kapiolani gave four trees to Kona in 1882, two of which were Indian Banyan cuttings from the Iolani Palace banyan, one planted at Hulihee Palace and one (transplanted 1906 by the Maguire family) now standing near Kailua Pier by the King Kamehameha Hotel; both reportedly still stand today (source: Ho'okuleana LLC 'Along Ali'i Drive', 2017, via imagesofoldhawaii.com, cross-referenced against bigislandnow.com's 2025-11-02 article on the Burgess fig). Both sites are genuinely public (a state-registered historic home/museum with public grounds, and a hotel/pier waterfront). Could not determine which of the two this register entry (or if a third, different Indian Banyan) refers to, and could not independently corroborate the 2301.2cm girth against a named specimen within the time window. Worth a dedicated single-tree pass: search 'Hulihee Palace banyan tree' and 'King Kamehameha Hotel Kailua banyan' directly, or contact either site, to pin identity and confirm the tree is alive and correctly sized before publishing."
+    },
+    {
+      "register_id": "1206",
+      "name": null,
+      "species": "Chinese Banyan (Ficus microcarpa)",
+      "reason": "No girth recorded, locality only 'Kona' (no address), coords 19.64,-156.0 (park-level grid). No independent source found identifying a specific notable Chinese Banyan in Kailua-Kona within the time window; general searching surfaced the Burgess/Banyan Court Moreton Bay fig and the two royal Indian Banyan cuttings but nothing matching this species and location. Needs a dedicated search pass before it can be verified or placed."
+    },
+    {
+      "name": "Koa",
+      "species": "Koa (Acacia koa)",
+      "lat": 19.184722,
+      "lng": -155.809444,
+      "register_location": "Kona Hema Preserve, South Kona",
+      "girth_cm": 872,
+      "height_m": 35.1,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/koa11-200x300.jpg"
+    },
+    {
+      "name": "Hopbush",
+      "species": "Hopbush (Dodonaea viscosa)",
+      "lat": 19.231816,
+      "lng": -155.837845,
+      "register_location": "Kona Hema Preserve (The Nature Conservancy)",
+      "girth_cm": 81,
+      "height_m": 11.6,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/aaliiDodonaea-viscosa-Kapua-2655-1024x683.jpg"
+    },
+    {
+      "name": "Hawaiian Ebony",
+      "species": "Hawaiian Ebony (Diospyros sandwicensis)",
+      "lat": 19.416282,
+      "lng": -154.951133,
+      "register_location": "Pu‘u Wa‘awa‘a Forest Reserve",
+      "girth_cm": 91,
+      "height_m": 5.5,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2016/11/Lama-768x1024.jpg"
+    },
+    {
+      "name": "Soapberry Wingleaf",
+      "species": "Soapberry Wingleaf (Sapindus saponaria)",
+      "lat": 19.443,
+      "lng": -155.318,
+      "register_location": "Hawaiʻi Volcanoes National Park",
+      "girth_cm": 408,
+      "height_m": 21.6,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/big-tree-Sapindus-saponaria-Kipuka-Ki-1961-160x300.jpg"
+    },
+    {
+      "name": "Colicwood",
+      "species": "Colicwood (Myrsine lessertiana)",
+      "lat": 19.448048,
+      "lng": -155.303438,
+      "register_location": "Kῑpukapuaulu, Hawai‘i Volcanoes National Park",
+      "girth_cm": 168,
+      "height_m": 18.0,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Myrsine-lessertiana-Kipuka-Puaulu-7216-683x1024.jpg"
+    },
+    {
+      "name": "Australasian Catchbird Tree",
+      "species": "Australasian Catchbird Tree (Pisonia brunoniana)",
+      "lat": 19.46,
+      "lng": -155.247,
+      "register_location": "Hawai'i Volcanoes National Park",
+      "girth_cm": 330,
+      "height_m": 16.2,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Pisonia-brunoniana-Olaa-7180-683x1024.jpg"
+    },
+    {
+      "name": "Hawaiian Holly",
+      "species": "Hawaiian Holly (Ilex anomala)",
+      "lat": 19.603032,
+      "lng": -155.152322,
+      "register_location": "Hawai‘i Volcanoes National Park",
+      "girth_cm": 244,
+      "height_m": 15.2,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/01/big-tree-Ilex-anomala-Olaa-7185-683x1024.jpg"
+    },
+    {
+      "name": "Sea Hibiscus",
+      "species": "Sea Hibiscus (Hibiscus tiliaceus)",
+      "lat": 19.639444,
+      "lng": -155.984444,
+      "register_location": "Hulihe‘e Palace Kailua-Kona",
+      "girth_cm": 279,
+      "height_m": 6.1,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/hau-both_trees-300x225.jpg"
+    },
+    {
+      "name": "Hawaiian Sumac",
+      "species": "Hawaiian Sumac (Rhus sandwicensis)",
+      "lat": 19.686123,
+      "lng": -155.118354,
+      "register_location": "Kaumana",
+      "girth_cm": 51,
+      "height_m": 5.8,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2017/12/big-tree-Rhus-sandwicensis-Kaumana-7234-1024x683.jpg"
+    },
+    {
+      "name": "Mamane",
+      "species": "Mamane (Sophora chrysohylla)",
+      "lat": 19.792167,
+      "lng": -155.39949,
+      "register_location": "Mauna Kea Forest Reserve",
+      "girth_cm": 750,
+      "height_m": 7.3,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2018/03/photo-1-300x225.jpg"
+    },
+    {
+      "name": "Hawaiian Olive",
+      "species": "Hawaiian Olive (Nestegis sandwicensis)",
+      "lat": 19.808985,
+      "lng": -155.842638,
+      "register_location": "Pu‘u Wa‘awa‘a Forest Reserve",
+      "girth_cm": 519,
+      "height_m": 9.8,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/11/olopua1-300x217.jpg"
+    },
+    {
+      "name": "Hawaiian Coral Tree",
+      "species": "Hawaiian Coral Tree (Erythrina sandwicensis)",
+      "lat": 19.929924,
+      "lng": -155.799182,
+      "register_location": "Waikoloa Dry Forest",
+      "girth_cm": 475,
+      "height_m": 12.2,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Big_Tree_Champion/FeatureServer/0"
+      ],
+      "source": "Hawaii DLNR Division of Forestry and Wildlife big tree champions (state government). Facts only.",
+      "status": "open",
+      "register_photo": "https://dlnr.hawaii.gov/forestry/files/2013/02/Waikoloa_Wiliwili_1-300x199.jpg"
+    },
+    {
+      "register_id": "1232/1233",
+      "name": "Two Earpod trees, Hawi",
+      "species": "Enterolobium cyclocarpum",
+      "locality": "Hawi, Hawaii",
+      "reason": "2026-11-03: register girth 11.2 m and 10.2 m, Excellent, but the register gives only the town 'Hawi' and land_use 'S' (undecoded); no owner, no public vantage, no source names them. Cannot show they are public (hard rule 10). A search found no Hawi earpod. Needs a local source or OSM-visible place."
+    },
+    {
+      "name": "Hawi Banyan Trees Park banyans",
+      "species": "Ficus (banyan, species unstated)",
+      "locality": "Akoni Pule Hwy and Hawi Road, Hawi",
+      "reason": "2026-11-03: the 2014 County resolution says the neighbouring banyans meet the County's exceptional-tree criteria and the Hawi Farmers Market stands beside/under them; West Hawaii Today says the banyans are on the lot adjoining the 0.91-acre park lot. Council voted to buy the park lot in 2014; purchase completion not found. Banyans on an adjoining (probably private) lot, no pin source, species unstated. Sources: bigislandvideonews.com 2014/03/22, westhawaiitoday.com 2014/04/02. Re-open with an OSM/aerial pin and a species."
+    },
+    {
+      "register_id": "1169",
+      "name": "Pua Kenikeni, Laupahoehoe Police Station",
+      "species": "Fagraea berteroana",
+      "locality": "Laupahoehoe",
+      "reason": "2026-11-03: girth 2.47 m, height 7.8 m, County police station grounds (access unverified), small tree for the species, no source beyond the register. Not worth the walk; lead."
+    },
+    {
+      "register_id": "1175",
+      "name": "Pohoiki Road mango",
+      "species": "Mangifera indica",
+      "locality": "Pohoiki Road",
+      "reason": "2026-11-03: girth 3.08 m, county road. Search shows the mango-lined end of Pohoiki Road survived the 2018 lava and the County plans a 2023 FEMA-assessed realignment to spare 'historic mango trees', but no source names this tree or a pin, and the register row is one of an avenue. Fails collectible-point and pin tests; lead."
+    },
+    {
+      "register_id": "1204",
+      "name": "Ohi'a Lehua, Volcano",
+      "species": "Metrosideros polymorpha",
+      "locality": "Volcano, Hawaii",
+      "reason": "2026-11-03: register Fair, girth 3.05 m, land_use 'S', locality only 'Volcano'; no owner, no source. Not shown to be public. Lead."
+    },
+    {
+      "name": "Giant Koa of Kipukapuaulu (Bird Park trail), Hawaii Volcanoes National Park",
+      "species": "Acacia koa",
+      "locality": "Kipukapuaulu, HAVO",
+      "reason": "2026-11-03: UH botany trail guide (Wayback 2024-07-31 snapshot of botany.hawaii.edu/faculty/bridges/bigisland/kipukapuaulu/kipuka_puaulu.htm, page ~24 years old) says the left branch of the loop leads to a huge koa, one of three very large trees in the kipuka with a soapberry (post number 1) and an ohia; no measurement, no tree-level coordinate. City-data calls the loop a 0.7-mile route to a giant koa older than 100 years. AllTrails lists the trail closed and HAVO restricted access past Kipukapuaulu during Hurricane Lala (Oct 2026). Park is public (entry fee). Re-check the NPS alert and NPS trail guide PDF (nps.gov/havo/planyourvisit/upload/Kipukapuaulu_Trail_Guide.pdf, could not be read in this pass) for the koa, then ship with a trailhead pin. Strongest remaining Hawaii-island lead."
+    },
+    {
+      "name": "Hawaii Tropical Bioreserve and Garden (Onomea)",
+      "species": "various",
+      "locality": "Onomea, north of Hilo",
+      "reason": "2026-11-03: paid garden (about $30). Sources name only fallen trees (a 100-year-old banyan fell on the Heliconia Trail, an 80-year-old monkeypod carved into a Ku statue) and the plantation-era coconut row along the scenic drive; no living named old tree. Lead."
+    },
+    {
+      "name": "Puuhonua o Honaunau",
+      "species": "various",
+      "locality": "South Kona",
+      "reason": "2026-11-03: NPS site mentions coconuts and loulu palm lava molds; no source names an individual ancient tree. Nothing to ship."
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "1172",
+      "name": "The Burgess Moreton Bay Fig (Kona Banyan Court)",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "reason": "DEAD. Confirmed via Big Island Now (2025-11-02, 'Iconic Ali'i Drive in Kona changed forever after loss of 80-foot tree', fetched directly) and corroborated by Kauai Now's syndication of the same story: internal rot caused a branch to fail on 2025-10-24, the whole tree was removed by 2025-10-26 for public safety, and only a 20-foot stump remains at Kona Banyan Court on Ali'i Drive. The tree was planted in 1882 as a gift from Queen Kapiolani to Alexander Burgess (matches the register's owner_name 'Burgess, Inc.' and locality 'Portion of Kailua Village, North Kona' exactly). An arborist said it 'may try to regrow' from the stump and locals have discussed carving the remaining trunk into a ki'i, but as it stands today there is no living crown: this fails hard rule 'we do not do dead trees' outright. Do not publish as a collectible entry. If the stump regrows a canopy in future years, or if the carved ki'i becomes a notable public artifact in its own right, that would be a new, separate research question, not a revival of this entry. The register's own 'Excellent' vitality rating for this tree is stale/wrong as of 2026; register vitality fields cannot be trusted for currency, exactly as the rulebook warns."
+    },
+    {
+      "register_id": "1235/1236",
+      "name": "Honomu Park weeping figs",
+      "locality": "Honomu",
+      "reason": "2026-11-03: the county proposed removing both (East Hawaii Outdoor Circle, Change.org petition); a banyan next to the park, recently trimmed, fell in October 2017 (Big Island Video News 2017-10-15) and an arborist forum post says only open lawn remains. Presumed gone; never ship without a dated photo."
+    }
+  ]
 }

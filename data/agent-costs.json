@@ -15419,6 +15419,46 @@
       "tokens": 566609,
       "trees": 58,
       "note": "Three Opus passes: NY A 20 (194,763), NY B 19 plus place copy (188,632), DC 12 + Leesburg 8 plus place copy (183,214); Oatlands ginkgo held (not reconfirmed alive). Builder scripts/build_us_east.py. Also wasted: one empty fork launched by mistake (164,886). Dispatcher about 250k by estimate. All in about 2.4M tokens for 58 trees, roughly 42k a tree."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "oahu",
+      "tokens": 182739,
+      "trees": 11,
+      "note": "Kapiolani Park banyan walk (Poni Moi, Paki Ave, Natatorium, Shell, Queen's Surf, Aquarium) placed from Honolulu Bill 66 (2025); Dept of Agriculture kapok, Nuuanu mango, Waialua earpod, Wahiawa rainbow eucalyptus with Honolulu Magazine; all free, approximate; 9 ship (Aquarium and Sinclair banuyo held), 10 leads. Cut once by the usage limit and resumed."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "kauai",
+      "tokens": 184442,
+      "trees": 3,
+      "note": "Allerton figs (paid tour), Poipu Road earpod (register 1137, species conflict), Hongwanji monkeypods; Hurricane Lowell 2026-09-08 leaves alive-now thin; ecode360 and Nominatim blocked. Low yield."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "maui",
+      "tokens": 166561,
+      "trees": 1,
+      "note": "Lahaina banyan alive, park fenced; one flagged tree (Hui No'eau Norfolk pines). mauicounty.gov 403s the county exceptional-tree lists, which a browser session could read. Polipoli and Keanae closed. Low yield: Maui needs the county list before another pass."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "hilo + hawaii",
+      "tokens": 210849,
+      "trees": 5,
+      "note": "Banyan Drive (Babe Ruth 1933, Roosevelt 1934, Earhart 1935) and two Kailua-Kona banyans (Hulihee Royal Banyan 1880s, Kailua Pier); Hawi earpods, Volcano, Honomu, Pohoiki to leads; Kipukapuaulu giant koa best lead (needs a PDF reader and the NPS alert)."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "hawaii (5 places)",
+      "tokens": 213309,
+      "trees": 18,
+      "note": "18 stories and recognition lines, place copy and FAQ fixes for Oahu, Kauai, Maui, Hilo, Hawaii. Dispatcher (briefs, claims, builder, tests) about 120k by estimate. All in about 1.08M tokens, roughly 60k a tree; Maui and Kauai passes drove the cost."
     }
   ]
 }

@@ -48,6 +48,33 @@
       "species": "Roseodendron donnell-smithii",
       "locality": "Forestry Arboretum",
       "reason": "[RESOLVED 2026-09-03: researched, not shippable yet] Confirmed the Hilo Forestry (Ho'olulu) Arboretum is real and genuinely public: it is the Hilo Nursery Arboretum on Kilauea Ave (office access via East Kawili St), 19.4 acres, over 50 trees, free, self-guided, but visitors check in at the DOFAW office (7:30am-3:30pm) for a numbered plant-tag list; became a public park in 1964, still state-run. That resolves the access half in the arboretum's favour (a check-in during posted hours reads closer to the paid-entry/booking exception than to a private gatekeeper). CAUTION for whoever picks this up next: a WebSearch AI summary claimed 'an exceptional specimen of this tree grows in the Hilo Arboretum', but the actual cited page (marinelifephotography.com) does not contain that sentence anywhere and never mentions Hilo at all, a caught case of the search-summary-invents-facts trap BRIEF_RESEARCH.md warns about. No genuine second source was found naming a Gold Tree at this arboretum specifically; the register's own accessibility_raw field for this row reads 'N/A?', suggesting the register itself was unsure. Needs a source (the arboretum's own numbered plant list, a visitor account, a flowering-season photo) that actually names this tree before it can ship."
+    },
+    {
+      "register_id": "1167",
+      "name": "Gold Tree",
+      "species": "Roseodendron donnell-smithii",
+      "locality": "Forestry Arboretum",
+      "reason": "2026-11-03 re-opened under the one-register rule: arboretum is public and free (check in at DOFAW office East Kawili St, 7:30-3:30, Keola Magazine), but the register row has no girth, height or vitality, no source names this tree, and the 19-acre arboretum is not a small site; no photo, no confirmed pin. Fails findability beyond the species name. Ship only with a photo or a plant-list number."
+    },
+    {
+      "register_id": "1171",
+      "name": "Weeping Fig",
+      "species": "Ficus benjamina",
+      "locality": "Kilauea Ave.",
+      "reason": "2026-11-03: register girth 5.4 m, state land, but the register says only 'Kilauea Ave.'; not shown to stand inside the arboretum, public vantage unknown. A Kilauea Ave banyan failed in July 2025 (two deaths), so the street's trees are under county/DLNR review. No pin source."
+    },
+    {
+      "register_id": "1173",
+      "name": "Bodhi/Peepul Tree",
+      "species": "Ficus religiosa",
+      "locality": "Old Riverside School",
+      "reason": "2026-11-03 re-checked against the new rule: register (girth 9.1 m, Excellent) is enough on sources, but the ground is the East Hawaii DOE special-education office, an institution with no evidence grounds are open to visitors (hard rule 10). Stays a lead."
+    },
+    {
+      "name": "Banyan Drive: Cecil B. DeMille banyan (first, 20 Oct 1933) and other plaqued trees",
+      "species": "Ficus benghalensis",
+      "locality": "Banyan Drive, Hilo",
+      "reason": "2026-11-03: about 50 plaqued banyans stand on the drive (Wikipedia, Keola). Planters named by Wikipedia/Keola include DeMille, Constance DeMille, Mary Boland, William Gargan, Edna Best, Herbert Marshall, Leo Carrillo, Lincoln Ellsworth, Heber J. Grant, Morgenthau, Nixon (1952, lost in a storm; Pat Nixon replanted 1972), Courtney Shropshire (replanted 1991 after tsunami). No source places any of these on the loop, so no pins; shipped hbi_007 Ruth (hotel frontage), hbi_008 Earhart, hbi_009 Roosevelt. Book: Jane Hoff, The Trees of Banyan Drive, lists each tree and would give positions."
     }
   ],
   "blocked": [

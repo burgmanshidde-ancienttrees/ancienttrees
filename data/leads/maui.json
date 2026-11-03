@@ -1,148 +1,192 @@
 {
-  "city": "Maui",
-  "leads": [
-    {
-      "register_id": "1022",
-      "name": "Kamani, Lahainaluna High School",
-      "species": "Kamani (Calophyllum inophyllum)",
-      "reason": "School grounds (hard rule 10): Lahainaluna High School is a working public boarding school, not open to casual visitors. The campus does host Hale Pa'i, a public museum run by the Lahaina Restoration Foundation, which suggests some part of the grounds may be genuinely open, but I found no specific evidence the Kamani tree's location is on the open/museum side rather than the working campus. School itself confirmed NOT destroyed by the 2023 fire (its football team appeared in the Super Bowl LVIII coin toss ceremony afterward, per Wikipedia). Needs a pass that can confirm exactly where on campus this tree stands relative to Hale Pa'i's public access."
-    },
-    {
-      "register_id": "990",
-      "name": "West Indian Locust, Wailuku Sugar Plantation Manager's Home",
-      "species": "West Indian Locust (Hymenaea courbaril)",
-      "reason": "Owner listed as 'Kaanapali Kai, Inc.' (a private company), accessibility field is an uncertain 'N/A?'. Could not confirm whether the grounds are open to the public in the time available; also could not confirm this building's actual town (the name says Wailuku but the register groups it with Kaanapali-area entries). Needs a pass to identify the actual property and its access terms."
-    },
-    {
-      "register_id": "991",
-      "name": "Monkeypod, Wailuku Sugar Plantation Manager's Home",
-      "species": "Rain Tree (Samanea saman)",
-      "reason": "Same site and same access uncertainty as register row 990 above; vitality recorded as only 'Fair' in the register, worth re-checking is-alive status too."
-    },
-    {
-      "register_id": "1120",
-      "name": "Kamani, Old Hana School",
-      "species": "Kamani (Calophyllum inophyllum)",
-      "reason": "Owner is State of Hawaii leased to County of Maui, which suggests a community facility rather than an active school, but I could not confirm what 'Old Hana School' is today (community center, museum, or still school grounds) or its public access terms in the time available. Web search tools were unreliable during this pass (see report)."
-    },
-    {
-      "register_id": "993",
-      "name": "Breadfruit, Baldwin House",
-      "species": "Breadfruit (Artocarpus altilis)",
-      "reason": "The Baldwin Home Museum itself was confirmed destroyed in the 8 August 2023 Lahaina wildfire (English Wikipedia, 'Dwight Baldwin (missionary)': 'On August 8, 2023, a massive wildfire destroyed the Baldwin Home Museum alongside most of the historic town of Lahaina'). No source found either way on whether this specific tree survived. Not moved to blocked because it is not confirmed dead, only unconfirmed; needs a post-2023 source (news, Lahaina Restoration Foundation update, satellite/aerial imagery) before it can ship either way."
-    },
-    {
-      "register_id": "994",
-      "name": "Kou, Baldwin House",
-      "species": "Kou (Cordia subcordata)",
-      "reason": "Same site and same unconfirmed post-fire status as register row 993 above."
-    },
-    {
-      "register_id": "997",
-      "name": "Mexican Fan Palm, Hale Pa'ahao",
-      "species": "Mexican Fan Palm (Washingtonia robusta)",
-      "reason": "Hale Pa'ahao (the old Lahaina prison) sits inside the Lahaina Historic District, within the area the 2023 wildfire devastated. No post-August-2023 source found confirming whether the site's trees survived; the Old Lahaina Courthouse a few blocks away was destroyed but the banyan park itself was untouched by the fire path, so the outcome for this site is genuinely unclear rather than assumed dead. Needs a dedicated check of Lahaina Restoration Foundation or news coverage of Hale Pa'ahao specifically."
-    },
-    {
-      "register_id": "995",
-      "name": "Monkeypod, Hale Pa'ahao",
-      "species": "Rain Tree (Samanea saman)",
-      "reason": "Same site and same unconfirmed post-fire status as register row 997 above."
-    },
-    {
-      "register_id": "998",
-      "name": "Royal Palm, Hale Pa'ahao",
-      "species": "Royal Palm (Roystonea regia)",
-      "reason": "Same site and same unconfirmed post-fire status as register row 997 above."
-    },
-    {
-      "register_id": "996",
-      "name": "California Featherduster Palm, Hale Pa'ahao",
-      "species": "California Featherduster Palm (Washingtonia filifera)",
-      "reason": "Same site and same unconfirmed post-fire status as register row 997 above."
-    },
-    {
-      "register_id": "1023",
-      "name": "'ohe #1, D.T. Fleming Arboretum at Pu'u Mahoe",
-      "species": "'ohe (Tetraplasadra hawaiiensis)",
-      "reason": "D.T. Fleming Arboretum at Pu'u Mahoe, Kanaio, is registered to a private individual (Martha Vockrodt-Moran) and is a rare-Hawaiian-plant conservation collection in a remote part of southeast Maui. Could not confirm free public access, appointment-only access, or no access at all in the time available (general web search tools were rate-limited/bot-blocked during this pass). Girth/circumference figures for this row also conflict in the register itself and need re-checking against the physical tree. If access turns out to be appointment-only, this whole cluster of six stays blocked per hard rule 10."
-    },
-    {
-      "register_id": "1024",
-      "name": "'ohe #2, D.T. Fleming Arboretum at Pu'u Mahoe",
-      "species": "'ohe (Tetraplasadra hawaiiensis)",
-      "reason": "Same site and same unconfirmed access as register row 1023 above; likely a twin of that entry (same locality, same common name) and may fold into one entry once access is settled."
-    },
-    {
-      "register_id": "1025",
-      "name": "Alani, D.T. Fleming Arboretum at Pu'u Mahoe",
-      "species": "Alani (Melicope knudsenii)",
-      "reason": "Same site and same unconfirmed access as register row 1023 above."
-    },
-    {
-      "register_id": "1026",
-      "name": "'Ala'a, D.T. Fleming Arboretum at Pu'u Mahoe",
-      "species": "'Ala'a (Pouteria sandwicensis)",
-      "reason": "Same site and same unconfirmed access as register row 1023 above."
-    },
-    {
-      "register_id": "1027",
-      "name": "Loulu, D.T. Fleming Arboretum at Pu'u Mahoe",
-      "species": "Loulu (Pritchardia forbesiana)",
-      "reason": "Same site and same unconfirmed access as register row 1023 above."
-    },
-    {
-      "register_id": "1029",
-      "name": "Podocarpus, D.T. Fleming Arboretum at Pu'u Mahoe",
-      "species": "Podocarpus (Afrocarpus falcatus)",
-      "reason": "Same site and same unconfirmed access as register row 1023 above."
-    }
-  ],
-  "blocked": [
-    {
-      "register_id": "963",
-      "name": "Royal Palm, Wailuku Elementary School",
-      "reason": "School grounds under hard rule 10: no evidence found that Wailuku Elementary School's grounds are genuinely open to the public. Stays blocked unless a later pass finds specific evidence of public access (a public path, a public event space, weekend open hours)."
-    },
-    {
-      "register_id": "999",
-      "name": "Royal Palm row, entrance to Lahainaluna High School",
-      "reason": "Marked not publishable in the staged register data itself: reads as a grove/row of trees at a school entrance rather than one standable collectible point."
-    },
-    {
-      "register_id": "1030",
-      "name": "Rainbow Shower, Baldwin Avenue",
-      "reason": "Not a collectible point: covers a 6.7-mile stretch of Baldwin Avenue, an avenue rather than one place to stand."
-    },
-    {
-      "register_id": "1286",
-      "name": "Ohia Lehua, Waikamoi Preserve",
-      "reason": "Sits inside Waikamoi Preserve on Haleakala Ranch, a restricted-access nature preserve. No evidence of open public access."
-    },
-    {
-      "register_id": "1285",
-      "name": "Bermuda Juniper, 3146 Baldwin Avenue",
-      "reason": "Bare private street address; reads as a private front garden. No evidence of public access, and the staged data itself flags it as not a standable collectible point."
-    },
-    {
-      "register_id": "1284",
-      "name": "Indian Rubber Tree, 3145 Baldwin Avenue",
-      "reason": "Bare private street address across the road from 3146 Baldwin Avenue above; same reasoning."
-    },
-    {
-      "register_id": "1117",
-      "name": "California Pepper Tree, 406 Lower Kimo Drive, Kula",
-      "reason": "Private residential address (owner: Harlan Hughes & Judy E. Anderson); reads as a private front/back garden tree with no evidence of public access."
-    },
-    {
-      "register_id": "1118",
-      "name": "Jacaranda, 165 Hanamu Road",
-      "reason": "Private address owned by Haleakala Ranch Company; no evidence of public access."
-    },
-    {
-      "register_id": "1283",
-      "name": "Monkeypod, 940 South Kihei Road",
-      "reason": "Bare private street address pattern (owner not even recorded); most likely a private residential or commercial lot with no evidence of public access."
-    }
-  ]
+ "city": "Maui",
+ "leads": [
+  {
+   "register_id": "1022",
+   "name": "Kamani, Lahainaluna High School",
+   "species": "Kamani (Calophyllum inophyllum)",
+   "reason": "School grounds (hard rule 10): Lahainaluna High School is a working public boarding school, not open to casual visitors. The campus does host Hale Pa'i, a public museum run by the Lahaina Restoration Foundation, which suggests some part of the grounds may be genuinely open, but I found no specific evidence the Kamani tree's location is on the open/museum side rather than the working campus. School itself confirmed NOT destroyed by the 2023 fire (its football team appeared in the Super Bowl LVIII coin toss ceremony afterward, per Wikipedia). Needs a pass that can confirm exactly where on campus this tree stands relative to Hale Pa'i's public access."
+  },
+  {
+   "register_id": "990",
+   "name": "West Indian Locust, Wailuku Sugar Plantation Manager's Home",
+   "species": "West Indian Locust (Hymenaea courbaril)",
+   "reason": "Owner listed as 'Kaanapali Kai, Inc.' (a private company), accessibility field is an uncertain 'N/A?'. Could not confirm whether the grounds are open to the public in the time available; also could not confirm this building's actual town (the name says Wailuku but the register groups it with Kaanapali-area entries). Needs a pass to identify the actual property and its access terms."
+  },
+  {
+   "register_id": "991",
+   "name": "Monkeypod, Wailuku Sugar Plantation Manager's Home",
+   "species": "Rain Tree (Samanea saman)",
+   "reason": "Same site and same access uncertainty as register row 990 above; vitality recorded as only 'Fair' in the register, worth re-checking is-alive status too."
+  },
+  {
+   "register_id": "1120",
+   "name": "Kamani, Old Hana School",
+   "species": "Kamani (Calophyllum inophyllum)",
+   "reason": "Owner is State of Hawaii leased to County of Maui, which suggests a community facility rather than an active school, but I could not confirm what 'Old Hana School' is today (community center, museum, or still school grounds) or its public access terms in the time available. Web search tools were unreliable during this pass (see report)."
+  },
+  {
+   "register_id": "993",
+   "name": "Breadfruit, Baldwin House",
+   "species": "Breadfruit (Artocarpus altilis)",
+   "reason": "The Baldwin Home Museum itself was confirmed destroyed in the 8 August 2023 Lahaina wildfire (English Wikipedia, 'Dwight Baldwin (missionary)': 'On August 8, 2023, a massive wildfire destroyed the Baldwin Home Museum alongside most of the historic town of Lahaina'). No source found either way on whether this specific tree survived. Not moved to blocked because it is not confirmed dead, only unconfirmed; needs a post-2023 source (news, Lahaina Restoration Foundation update, satellite/aerial imagery) before it can ship either way."
+  },
+  {
+   "register_id": "994",
+   "name": "Kou, Baldwin House",
+   "species": "Kou (Cordia subcordata)",
+   "reason": "Same site and same unconfirmed post-fire status as register row 993 above."
+  },
+  {
+   "register_id": "997",
+   "name": "Mexican Fan Palm, Hale Pa'ahao",
+   "species": "Mexican Fan Palm (Washingtonia robusta)",
+   "reason": "Hale Pa'ahao (the old Lahaina prison) sits inside the Lahaina Historic District, within the area the 2023 wildfire devastated. No post-August-2023 source found confirming whether the site's trees survived; the Old Lahaina Courthouse a few blocks away was destroyed but the banyan park itself was untouched by the fire path, so the outcome for this site is genuinely unclear rather than assumed dead. Needs a dedicated check of Lahaina Restoration Foundation or news coverage of Hale Pa'ahao specifically."
+  },
+  {
+   "register_id": "995",
+   "name": "Monkeypod, Hale Pa'ahao",
+   "species": "Rain Tree (Samanea saman)",
+   "reason": "Same site and same unconfirmed post-fire status as register row 997 above."
+  },
+  {
+   "register_id": "998",
+   "name": "Royal Palm, Hale Pa'ahao",
+   "species": "Royal Palm (Roystonea regia)",
+   "reason": "Same site and same unconfirmed post-fire status as register row 997 above."
+  },
+  {
+   "register_id": "996",
+   "name": "California Featherduster Palm, Hale Pa'ahao",
+   "species": "California Featherduster Palm (Washingtonia filifera)",
+   "reason": "Same site and same unconfirmed post-fire status as register row 997 above."
+  },
+  {
+   "register_id": "1023",
+   "name": "'ohe #1, D.T. Fleming Arboretum at Pu'u Mahoe",
+   "species": "'ohe (Tetraplasadra hawaiiensis)",
+   "reason": "D.T. Fleming Arboretum at Pu'u Mahoe, Kanaio, is registered to a private individual (Martha Vockrodt-Moran) and is a rare-Hawaiian-plant conservation collection in a remote part of southeast Maui. Could not confirm free public access, appointment-only access, or no access at all in the time available (general web search tools were rate-limited/bot-blocked during this pass). Girth/circumference figures for this row also conflict in the register itself and need re-checking against the physical tree. If access turns out to be appointment-only, this whole cluster of six stays blocked per hard rule 10."
+  },
+  {
+   "register_id": "1024",
+   "name": "'ohe #2, D.T. Fleming Arboretum at Pu'u Mahoe",
+   "species": "'ohe (Tetraplasadra hawaiiensis)",
+   "reason": "Same site and same unconfirmed access as register row 1023 above; likely a twin of that entry (same locality, same common name) and may fold into one entry once access is settled."
+  },
+  {
+   "register_id": "1025",
+   "name": "Alani, D.T. Fleming Arboretum at Pu'u Mahoe",
+   "species": "Alani (Melicope knudsenii)",
+   "reason": "Same site and same unconfirmed access as register row 1023 above."
+  },
+  {
+   "register_id": "1026",
+   "name": "'Ala'a, D.T. Fleming Arboretum at Pu'u Mahoe",
+   "species": "'Ala'a (Pouteria sandwicensis)",
+   "reason": "Same site and same unconfirmed access as register row 1023 above."
+  },
+  {
+   "register_id": "1027",
+   "name": "Loulu, D.T. Fleming Arboretum at Pu'u Mahoe",
+   "species": "Loulu (Pritchardia forbesiana)",
+   "reason": "Same site and same unconfirmed access as register row 1023 above."
+  },
+  {
+   "register_id": "1029",
+   "name": "Podocarpus, D.T. Fleming Arboretum at Pu'u Mahoe",
+   "species": "Podocarpus (Afrocarpus falcatus)",
+   "reason": "Same site and same unconfirmed access as register row 1023 above."
+  },
+  {
+   "name": "Redwood stands, Polipoli Spring State Recreation Area",
+   "species": "Coast Redwood (Sequoia sempervirens)",
+   "reason": "2026-11-03 verify pass: a stand (wood), not one place to stand; no per-tree measurement or planting date found (Wikipedia: park reforested in the 1930s with coast redwood among others; DLNR Redwood Trail page: 1.7 mi through stands of redwood and conifers, ends at old CCC camp). Polipoli is CLOSED as of 2026-10-01 because the surrounding Kula/Makawao/Waihou forest reserves are closed after Hurricane Nolo (mauinow.com 2026-10-01), no reopening date. Revisit if a single named redwood with a measurement turns up and the area reopens.",
+   "sources": [
+    "https://dlnr.hawaii.gov/dsp/hiking/maui/redwood-trail/",
+    "https://en.wikipedia.org/wiki/Polipoli_Spring_State_Recreation_Area",
+    "https://mauinow.com/2026/10/01/makawao-kula-and-waihou-spring-forest-reserves-and-polipoli-recreation-area-remain-closed-after-hurricane-nolo/"
+   ]
+  },
+  {
+   "name": "Rainbow eucalyptus, Ke'anae Arboretum",
+   "species": "Rainbow Eucalyptus (Eucalyptus deglupta)",
+   "reason": "2026-11-03: state arboretum (Koolau Forest Reserve, DOFAW), 6 acres, 0.6 mi paved walk, est. 1971, labelled trees, about half a mile past mile marker 16 Hana Highway (20.8546,-156.1502 Nominatim). Free entry and hours not stated on any page fetched (one aggregator says daily 6am to 6pm, unverified). Closed Oct 28 to Dec 1 2024 for roadwork; no reopening notice found. A walk-through garden, no individual tree measured, no register row: not a collectible point yet. Needs a source naming one grove or tree and a reopening confirmation.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ke%CA%BBanae_Arboretum",
+    "https://www.hawaii-guide.com/maui/sights/keanae_arboretum",
+    "https://dlnr.hawaii.gov/?p=33178"
+   ]
+  },
+  {
+   "name": "Breadfruit collection and Pi'ilanihale, Kahanu Garden (NTBG)",
+   "species": "Breadfruit (Artocarpus altilis)",
+   "reason": "2026-11-03: paid garden at 650 Ulaino Rd, Hana (20.79917,-156.03833 per Wikipedia); world's largest breadfruit collection (about 150 varieties, est. 1970s). No individual tree size or age in any fetched source; admission figures conflict ($10 vs $18), NTBG page gives no price or hours, reservations encouraged. A collection, not a tree. Lead only until a named specimen with a measurement is found.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kahanu_Garden",
+    "https://ntbg.org/gardens/kahanu/"
+   ]
+  },
+  {
+   "name": "Rainbow eucalyptus, Garden of Eden Arboretum",
+   "species": "Rainbow Eucalyptus (Eucalyptus deglupta)",
+   "reason": "2026-11-03: paid private garden at 10600 Hana Hwy, Haiku (about mile 10.5; 20.869,-156.180 Nominatim), roughly $20 adults per search summaries (not seen on an official page; official site not fetched). Rainbow eucalyptus is a highlight but no single tree, size or age sourced. Lead only."
+  },
+  {
+   "name": "Baldwin House breadfruit 'Puloa' (ulu), Lahaina",
+   "species": "Breadfruit (Artocarpus altilis)",
+   "reason": "2026-11-03: stays held. Search summaries conflict on whether the trunk and canopy survived the Aug 2023 fire (one says coal-black trunk, one says trunk and canopy did not survive, roots may be alive); the County Arborist Committee had a Baldwin House breadfruit and kou nomination on a Nov 12, 2025 agenda (via search summary; mauicounty.gov 403). No dated source shows it standing and the site open."
+  },
+  {
+   "name": "Old Hana School kamani (register M27, id 1120)",
+   "species": "Kamani (Calophyllum inophyllum)",
+   "reason": "2026-11-03: stays held. Still no source says what Old Hana School is used for or whether the grounds are open; a county bid 'Old Hana School Improvements' (P19/003) exists. County 2025 list says over 90 years old (search summary only). Needs a call or a Maui County Parks page; mauicounty.gov 403."
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": "963",
+   "name": "Royal Palm, Wailuku Elementary School",
+   "reason": "School grounds under hard rule 10: no evidence found that Wailuku Elementary School's grounds are genuinely open to the public. Stays blocked unless a later pass finds specific evidence of public access (a public path, a public event space, weekend open hours)."
+  },
+  {
+   "register_id": "999",
+   "name": "Royal Palm row, entrance to Lahainaluna High School",
+   "reason": "Marked not publishable in the staged register data itself: reads as a grove/row of trees at a school entrance rather than one standable collectible point."
+  },
+  {
+   "register_id": "1030",
+   "name": "Rainbow Shower, Baldwin Avenue",
+   "reason": "Not a collectible point: covers a 6.7-mile stretch of Baldwin Avenue, an avenue rather than one place to stand."
+  },
+  {
+   "register_id": "1286",
+   "name": "Ohia Lehua, Waikamoi Preserve",
+   "reason": "Sits inside Waikamoi Preserve on Haleakala Ranch, a restricted-access nature preserve. No evidence of open public access."
+  },
+  {
+   "register_id": "1285",
+   "name": "Bermuda Juniper, 3146 Baldwin Avenue",
+   "reason": "Bare private street address; reads as a private front garden. No evidence of public access, and the staged data itself flags it as not a standable collectible point."
+  },
+  {
+   "register_id": "1284",
+   "name": "Indian Rubber Tree, 3145 Baldwin Avenue",
+   "reason": "Bare private street address across the road from 3146 Baldwin Avenue above; same reasoning."
+  },
+  {
+   "register_id": "1117",
+   "name": "California Pepper Tree, 406 Lower Kimo Drive, Kula",
+   "reason": "Private residential address (owner: Harlan Hughes & Judy E. Anderson); reads as a private front/back garden tree with no evidence of public access."
+  },
+  {
+   "register_id": "1118",
+   "name": "Jacaranda, 165 Hanamu Road",
+   "reason": "Private address owned by Haleakala Ranch Company; no evidence of public access."
+  },
+  {
+   "register_id": "1283",
+   "name": "Monkeypod, 940 South Kihei Road",
+   "reason": "Bare private street address pattern (owner not even recorded); most likely a private residential or commercial lot with no evidence of public access."
+  }
+ ]
 }
