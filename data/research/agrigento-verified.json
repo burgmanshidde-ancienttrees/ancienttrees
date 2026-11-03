@@ -1,0 +1,325 @@
+[
+  {
+    "id": "agr_001",
+    "name": "Olive of the Temple of Juno",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "about 500 years",
+    "age_min": 500,
+    "age_max": 500,
+    "age_basis": "source",
+    "girth_cm": 420,
+    "height_m": 5,
+    "location": {
+      "address": "Beside the path to the Temple of Juno (Tempio di Giunone), Parco Archeologico e Paesaggistico della Valle dei Templi, Agrigento",
+      "latitude": 37.2891353,
+      "longitude": 13.5998917,
+      "neighbourhood": "Valle dei Templi, between the temples of Juno and Concordia"
+    },
+    "verified_sources": [
+      "https://luoghi.italianbotanicalheritage.com/36334/",
+      "https://www.openstreetmap.org/node/1506501844",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://www.coopculture.it/it/prodotti/biglietto-parco-archeologico-e-paesaggistico-della-valle-dei-templi/"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 03/A089/AG/19, D.D.G. n. 108 of 29/01/2019",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Paid entry to the Valley of the Temples archaeological park (a combined park and Kolymbethra garden ticket was 20 EUR full price in 2026; check before going). The olive stands beside the path that climbs to the Temple of Juno, on the main route along the eastern ridge.",
+    "transport": "By car, a paid car park ('Giunone') sits at the Temple of Juno end of the park, a short walk from the tree. Local buses run from Agrigento town to the park.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidates": [
+      {
+        "file": "File:Olive in the Valley of the Temples. Agrigento.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Olive_in_the_Valley_of_the_Temples._Agrigento.jpg",
+        "licence": "CC BY-SA 3.0",
+        "author": "Ввласенко (Commons user)",
+        "why": "geotag 37.289172,13.599687 is about 8 m from the OSM node; description 'Old olive tree near the Temple of Hera in the Valley of the Temples'; taken 2009-10-01. Look at the pixels: several olives stand here."
+      },
+      {
+        "file": "File:Questo ulivo potrebbe aver visto il tempio come Era - panoramio.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Questo_ulivo_potrebbe_aver_visto_il_tempio_come_Era_-_panoramio.jpg",
+        "licence": "CC BY-SA 3.0",
+        "author": "patano (Panoramio import)",
+        "why": "geotag 37.289033,13.599923 about 17 m from the node; caption 'this olive may have seen the temple as Hera'; taken 2009-06-13. Pixel check needed."
+      }
+    ],
+    "verify_notes": "Named 'Olivo del Tempio di Giunone' by the Italian Botanical Heritage guide (est. age 500 years, about 5 m tall, trunk 12 m round at the stump base and 4.20 m at 1.30 m, trunk spiralling clockwise, crown reshaped by rejuvenation pruning, one root grows toward the Temple of Juno uphill and another toward the Temple of Concordia downhill: that page is dated 2015-2017). Register sheet 03: girth 420 cm, height 5 m, matches the 4.20 m at 1.30 m and 5 m on the page. Pin: OpenStreetMap node 1506501844 carries name, ref:masaf 003/A089/AG/19, circumference 4.2 and height 5, 'natural_monument' (surveyed, regional GIS origin); it lies about 9 m from the MASAF coordinate. Alive: no tree-specific dated sighting found; iNaturalist records in the same stretch of path run to 2026-11-01 (a cypress), so the path is walked, and the Commons photos are 2009. Flagged: register plus one guide, tree itself not seen alive since 2009 photos. The 'millennial' labels in blogs have no source; use only the 500-year estimate and say whose it is. Girth quoted in two ways (12 m at the stump base is a spread root mass, do not use as girth). Recognise: the old olive with a clockwise-spiralled trunk and big exposed roots beside the path between the temples of Juno and Concordia; one root runs toward each temple.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Olive_in_the_Valley_of_the_Temples._Agrigento.jpg",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Ввласенко, via Wikimedia Commons",
+      "status": "approved",
+      "width": 3796,
+      "height": 2848,
+      "taken_month": 10,
+      "note": "Looked at the pixels 2026-11-02 (session 9b29504f): the spiralling olive fills the frame on its stone ring, Temple of Juno behind; geotag 8 m from the named OSM node; daylight, colour (photo_light OK)"
+    },
+    "story": "One of this olive's roots runs uphill toward the Temple of Juno, and another runs downhill toward the Temple of Concordia. The Italian Botanical Heritage guide, which records that split, puts the tree at about 500 years old. Blogs and captions call it a thousand. None of them gives a basis for the bigger number, so the guide's estimate is the one worth repeating, and it is still an estimate.\n\nThe trunk measures 4.2 metres round at chest height, the same figure Sicily's register of monumental trees gives, and it twists clockwise as it rises. At ground level the roots spread out so far that the same guide measured twelve metres around the base, a number that describes the root mass rather than the trunk. The crown is smaller than it once was. At some point the tree was cut back hard in a rejuvenation pruning, and it now stands about five metres tall.\n\nIt grows beside the path that climbs to the Temple of Juno at the eastern end of the Valley of the Temples, so anyone walking the ridge between the two temples passes it. In the best photograph we have of it, the Temple of Juno stands right behind.\n\nThat photograph was taken in 2009, the latest dated one we know of. The path is walked every day, but if you have seen this olive recently, tell us how it looks.",
+    "how_to_recognise": "You can recognise it by the trunk spiralling clockwise and the big bare roots, one running toward each temple, on a stone ring beside the path between the temples of Juno and Concordia."
+  },
+  {
+    "id": "agr_002",
+    "name": "Great Olive of the Kolymbethra Garden",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 640,
+    "height_m": 5,
+    "location": {
+      "address": "Giardino della Kolymbetra (FAI), Valle dei Templi, Agrigento",
+      "latitude": 37.2932845,
+      "longitude": 13.5811268,
+      "neighbourhood": "Kolymbetra garden, below the Temple of Vulcan"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/1506501946",
+      "https://www.openstreetmap.org/node/12993967941",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://fondoambiente.it/giardino-della-kolymbethra-eng/"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheets 06/A089/AG/19 and 07/A089/AG/19, D.D.G. n. 108 of 29/01/2019",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Inside the FAI Giardino della Kolymbethra, entered with the Valley of the Temples ticket (FAI says the garden is open every day with seasonal hours; a combined park and garden ticket was 20 EUR full price in 2026; FAI members free). A walk-through garden with paths.",
+    "transport": "The garden lies in the western part of the Valley of the Temples, below the Temple of Vulcan. Local buses run from Agrigento town to the park.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Register sheet 06: olive, girth 640 cm, height 5 m, the widest olive in the Agrigento register. OpenStreetMap node 1506501946 is named 'Olivo della Kolymbetra', carries ref:masaf 006/A089/AG/19, circumference 6.4, crown diameter 6.9, and the description 'the oldest tree in the Kolymbetra garden, a short way from the temple of the three columns'; the node was mapped from the regional tourist-observatory GIS and lies about 50 m south of the MASAF coordinate. A second register olive, sheet 07 (girth 470, height 7.5), has its own node 12993967941 about 40 m south-west of the first node (and about 70 m south of the MASAF point for sheet 07); folded into this entry as the neighbouring trunk, so a visitor sees both in one stop. No age in any source; none given. No Commons file or iNaturalist observation of this olive found (geosearch within 70 m empty, iNaturalist Olea within 80 m empty). Alive: only the garden-level lifecheck (iNaturalist record 2025-01-01 nearby). Flagged: register plus OSM (itself derived from the regional GIS), no dated picture of the tree. The OSM position and the MASAF position disagree by about 50 m; the OSM node is the named one. Recognise: the widest olive in the Kolymbetra garden, by the register 6.4 m round and only about 5 m tall (a broad squat trunk); OSM calls it the oldest tree of the garden, near the 'temple of the three columns'.",
+    "story": "Six metres forty round and only five metres tall, this is the widest olive in Agrigento's register of monumental trees. The trunk is wider than the tree is high.\n\nIt grows in the Giardino della Kolymbethra, the garden in the western part of the Valley of the Temples that the FAI, Italy's national trust, keeps open to visitors. OpenStreetMap, working from the Sicilian region's own tourist mapping, calls it the oldest tree in the garden and places it a short way from what it calls the temple of the three columns. Nobody has put a number on that age, so we will not either. If you know how old it is, or where a figure comes from, tell us.\n\nA second registered olive grows about forty metres to the south-west, 4.7 metres round and taller, at 7.5 metres. The two can be seen in one stop, and the contrast helps. One has spent its life going up, the other going out.\n\nTwo honest caveats. The official coordinate and the mapped one sit about fifty metres apart, so the pin is close rather than exact. And we have not found a single photograph of this tree anywhere. If you walk the garden paths and find it, yours would be the first.",
+    "how_to_recognise": "You can recognise it by the trunk, 6.4 metres round under a crown only about 5 metres high, with a slimmer, taller olive about 40 metres to the south-west."
+  },
+  {
+    "id": "agr_003",
+    "name": "Olive of the Temple of Concordia",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "about 500 to 600 years",
+    "age_min": 500,
+    "age_max": 600,
+    "age_basis": "source",
+    "girth_cm": 380,
+    "height_m": 5,
+    "location": {
+      "address": "Beside the Temple of Concordia (Via Sacra), Parco Archeologico e Paesaggistico della Valle dei Templi, Agrigento",
+      "latitude": 37.2895931,
+      "longitude": 13.5933132,
+      "neighbourhood": "Valle dei Templi, Temple of Concordia"
+    },
+    "location_site": {
+      "name": "Temple of Concordia and its olives",
+      "radius_m": 50
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/8361039287",
+      "https://www.openstreetmap.org/node/8360996158",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://www.coopculture.it/it/prodotti/biglietto-parco-archeologico-e-paesaggistico-della-valle-dei-templi/"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 01/A089/AG/19, D.D.G. n. 108 of 29/01/2019",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Paid entry to the Valley of the Temples archaeological park. The olives stand on the open ground at the Temple of Concordia, on the Via Sacra that every park visitor walks.",
+    "transport": "Local buses run from Agrigento town to the park. By car, there is a paid car park at the Temple of Juno end of the park.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidates": [
+      {
+        "file": "File:Olive tree - Valley of the Temples - Agrigento, Sicily - Italy - 18 July 2010.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Olive_tree_-_Valley_of_the_Temples_-_Agrigento,_Sicily_-_Italy_-_18_July_2010.jpg",
+        "licence": "to be read by the session (not fetched)",
+        "author": "unknown (not fetched)",
+        "why": "title says olive tree in the Valley of the Temples; geotag 37.289418,13.592705 is about 50 m from the OSM node and about 40 m from the larger neighbouring olive; licence and pixels not checked"
+      }
+    ],
+    "verify_notes": "Two olives are mapped by OpenStreetMap as 'Ulivo della Concordia', both with the description 'old olive near the Temple of Concordia, estimated age 500 to 600 years' (from the Sicilian regional tourist-observatory GIS): node 8361039287 (girth 3.8 m, height 5, crown 6.5 x 7.7 m, ref:masaf 001/A089/AG/19, so this is register sheet 01, 380 cm) and node 8360996158, about 45 m to the north-west, girth 5.2 m, height 6.5, crown 5.8 x 6.2, with NO MASAF reference. The 520 cm neighbour is bigger than the registered one: lead, same spot, a writer can mention both (source OSM only). Alive: iNaturalist records of Olea europaea at this spot, dated 2022-05-18, 2024-07-26, 2025-04-17, 2025-07-09, 2025-09-21, 2026-07-04 and 2026-10-08, all within about 10 to 40 m of the two nodes (all marked casual, i.e. cultivated, not disputed). The regional PDF prints this sheet's girth as '3800', an extraction glitch; MASAF and OSM both say 380. Age is the regional GIS estimate carried by OSM; one source, flagged. Recognise: two old olives beside the Temple of Concordia; the registered one is the smaller (3.8 m), the bigger 5.2 m olive stands about 45 m north-west of it.",
+    "story": "The olive Sicily's register chose at the Temple of Concordia is the smaller of the two. Forty-five metres to the north-west grows a second old olive, 5.2 metres round against the registered tree's 3.8, and nobody listed it.\n\nBoth carry the same description in the Sicilian region's tourist mapping, copied into OpenStreetMap. Each is called an old olive near the Temple of Concordia, estimated at 500 to 600 years. That is one source, and it gives no method, so treat the range as an estimate rather than a measurement. Nobody has published a core or a planting record for either trunk.\n\nWhat is certain is that these olives are seen. Visitors have logged olives at this spot on iNaturalist again and again, from 2022 to October 2026, all within a few dozen metres of the two trunks. They stand on the open ground beside the temple on the Via Sacra, the main route through the park, which every visitor walks.\n\nThe registered tree is about five metres tall with a crown some seven metres across. Its unlisted neighbour is taller, at six and a half metres. The temple itself is the reason people come, and most walk past both olives without a second look. Stand between them and decide for yourself which one the register should have picked.",
+    "how_to_recognise": "You can recognise it as the smaller of two old olives beside the Temple of Concordia, 3.8 metres round, with the bigger 5.2-metre olive about 45 metres to its north-west."
+  },
+  {
+    "id": "agr_004",
+    "name": "Carob of Jupiter",
+    "species": "Carob (Ceratonia siliqua)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 400,
+    "height_m": 8,
+    "location": {
+      "address": "Near the Temple of Olympian Zeus (Tempio di Giove Olimpico), Valle dei Templi, Agrigento",
+      "latitude": 37.2909167,
+      "longitude": 13.5835833,
+      "neighbourhood": "Valle dei Templi, Temple of Olympian Zeus area"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/1506501737",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://www.coopculture.it/it/prodotti/biglietto-parco-archeologico-e-paesaggistico-della-valle-dei-templi/"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 05/A089/AG/19, D.D.G. n. 108 of 29/01/2019",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Paid entry to the Valley of the Temples archaeological park; the Temple of Olympian Zeus area is open ground on the western section, reached by the main route.",
+    "transport": "Local buses run from Agrigento town to the park.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [
+      {
+        "file": "File:Old and New (Agrigento) - panoramio.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Old_and_New_(Agrigento)_-_panoramio.jpg",
+        "licence": "to be read by the session (Panoramio import, probably CC BY-SA 3.0)",
+        "author": "not fetched",
+        "why": "geotag 37.290972,13.583704 is 12 m from the OSM node; title might refer to the carob beside the ruins, unknown. Pixel check needed; probably not this tree."
+      }
+    ],
+    "verify_notes": "OpenStreetMap node 1506501737 is named 'Carrubo di Giove' with ref:masaf 005/A089/AG/19, circumference 4 m, height 8 m, but its coordinates (37.2909167, 13.5835833) fall within a few metres of the register's own degrees-minutes-seconds figure (37 17 27.46, 13 35 00.77), so they were probably copied from the register rather than taken at the trunk. So the name is evidence of identity but the pin stays approximate. Register: carob girth 400 cm, height 8 m (4 m round is big for a carob). No dated sighting found, no iNaturalist or Commons photo clearly of it. Flagged, register only, no recent sighting. Recognise: a broad carob, 4 m round and 8 m tall, in the open ground next to the ruins of the Temple of Olympian Zeus.",
+    "story": "A carob four metres round is a big carob. This one goes by Carrubo di Giove, the Carob of Jupiter, after the ruined Temple of Olympian Zeus it stands beside in the Valley of the Temples.\n\nSicily's register of monumental trees gives it a girth of four metres and a height of eight. Four metres is a lot for a carob, a tree better known for its pods than its bulk.\n\nThat is about all the paper record holds. The tree has a name, a register sheet and a mapped point, but the point was almost certainly copied from the register's own figures rather than taken at the trunk, so our pin is approximate. We have not found a dated photograph or a recent sighting either. Nobody has published an age, and a carob this size could be old or simply well fed. We would rather say so than guess.\n\nWhat a visitor can count on is the setting. The temple area is open ground on the western section of the park, reached by the main route, and the carob stands in it next to the temple's ruins. If you find it, a photograph and a note of exactly where it stands would settle what the register leaves open. So would an age, if you know one.",
+    "how_to_recognise": "You can recognise it by the broad carob crown on a trunk 4 metres round and about 8 metres tall, in the open ground beside the ruins of the Temple of Olympian Zeus."
+  },
+  {
+    "id": "agr_005",
+    "name": "Myrtle of the Kolymbetra Garden",
+    "species": "Myrtle (Myrtus communis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": null,
+    "height_m": 7.5,
+    "location": {
+      "address": "Giardino della Kolymbetra (FAI), Valle dei Templi, Agrigento",
+      "latitude": 37.291825,
+      "longitude": 13.5817722,
+      "neighbourhood": "Kolymbetra garden, near the Temple of the Dioscuri"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/1506501820",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://fondoambiente.it/giardino-della-kolymbethra-eng/"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 04/A089/AG/19, D.D.G. n. 108 of 29/01/2019",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Inside the FAI Giardino della Kolymbethra, entered with the Valley of the Temples ticket (FAI says the garden is open every day with seasonal hours; FAI members free).",
+    "transport": "The garden lies in the western part of the Valley of the Temples, below the Temple of Vulcan. Local buses run from Agrigento town to the park.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Register sheet 04: myrtle, height 7.5 m, three stem girths printed '130 - 140 - 150' (cm per stem, a multi-stemmed shrub, not one trunk). OSM node 1506501820 'Mirto della Kolymbetra' with ref:masaf 004 sits at 37.291825, 13.5817722, about 45 m from the MASAF coordinate (37.29171, 13.58225); two positions that disagree, so the exact bush is not settled: approximate. A myrtle is normally a 2 to 3 m shrub; 7.5 m is exceptional and is the reason to keep it. No photo, no sighting. Flagged; likely a lower-priority entry than the olives. Recognise: a myrtle grown into a 7.5 m multi-stemmed tree inside the Kolymbetra garden, between the Dioscuri temple and the garden paths.",
+    "story": "A myrtle normally stops at two or three metres, a shrub rather than a tree. Sicily's register of monumental trees lists this one at seven and a half.\n\nIt is not one trunk. The register measures three stems, 1.3, 1.4 and 1.5 metres round, so this is a shrub that never stopped growing rather than a tree in the usual sense, and seven and a half metres is the whole reason it is on the list.\n\nIt grows in the Giardino della Kolymbethra, the garden in the western part of the Valley of the Temples that the FAI, Italy's national trust, keeps open to visitors, near the Temple of the Dioscuri. The same garden holds the Great Olive of the Kolymbethra, so a visit covers two of the city's listed trees within a short walk.\n\nWhere exactly the myrtle grows is less settled than it should be. The official coordinate and the mapped one disagree by about forty-five metres, so our pin is approximate, and we have found no photograph of it and no recent sighting. Nobody has published an age either. A myrtle at full tree size is unusual enough that a visitor who finds it will know. If you do, a photograph and a note of where it stands would fix the pin for everyone after you.",
+    "how_to_recognise": "You can recognise it by its size, a myrtle grown into a 7.5-metre tree on three stems from one base, in the Kolymbethra garden between the Temple of the Dioscuri and the garden paths."
+  },
+  {
+    "id": "agr_006",
+    "name": "Moreton Bay Figs of Piazza Aldo Moro",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 430,
+    "height_m": 10,
+    "location": {
+      "address": "Piazza Aldo Moro, Agrigento",
+      "latitude": 37.3099418,
+      "longitude": 13.585178,
+      "neighbourhood": "Agrigento town centre, upper town"
+    },
+    "location_site": {
+      "name": "Piazza Aldo Moro",
+      "radius_m": 40
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/13004387628",
+      "https://www.openstreetmap.org/node/13004387629",
+      "https://www.inaturalist.org/observations/154443762",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheets 08/A089/AG/19 and 10/A089/AG/19, D.D.G. n. 108 of 29/01/2019",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Free. A public town square in the centre of Agrigento, no gate.",
+    "transport": "In the upper town of Agrigento; walking time from the station not measured.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Two registered figs, sheet 10 (girth 430 cm, height 9 m) and sheet 08 (girth 420 cm, height 10 m), about 25 m apart on the same square: folded into one entry, girth and height are those of the larger, sheet 10. OSM nodes 13004387628 (ref:masaf 010) and 13004387629 (ref:masaf 008) place each individually, and the second carries an iNaturalist reference. Alive: iNaturalist Ficus observation 2023-04-11 at 37.30996624, 13.58519146 (about 3 m from node 010), and 2019-08-27 at 37.3101654, 13.5852451 (about 3 m from node 008). Pin confirmed by OSM named nodes plus dated GPS observations. Geosearch for Commons files near the square found only townscape pictures (Salita Madonna degli Angeli, Panoramio), nothing named for the figs. Flagged: one-register plus iNaturalist presence, no second written source for the trees. Recognise: two big Moreton Bay figs with buttress roots on the square itself, about 25 m apart; nothing else on the square is that size.",
+    "story": "Agrigento's registered giants are not all among the temples. Two of them shade Piazza Aldo Moro in the upper town, a pair of Moreton Bay figs about twenty-five metres apart, and seeing them costs nothing.\n\nSicily's register of monumental trees lists both. The larger is 4.3 metres round and nine metres tall, the other 4.2 metres round and ten metres tall, so they are as near to twins as two trees get. Ficus macrophylla comes from eastern Australia and is the same species that fills Palermo's villas and squares. These two stand on buttress roots that spread across the ground before the trunk begins.\n\nThey are seen, too. Visitors have recorded figs at the exact spot of each tree on iNaturalist, one in 2019 and one in 2023, within a few metres of the mapped trunks. That is why our pin is confirmed even though the written record is thin. There is one register entry, no history and no planting date. Nobody has published when they went in or who planted them. If you know, tell us.\n\nThe figs give the square what the Valley of the Temples cannot, deep shade on a hot afternoon a short walk from the town's streets. Nothing else on the square comes close to their size.",
+    "how_to_recognise": "You can recognise them as the two big figs on buttress roots standing about 25 metres apart on Piazza Aldo Moro, by far the largest trees on the square."
+  },
+  {
+    "id": "agr_007",
+    "name": "Broad Olive of the Temple of Juno Terrace",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 550,
+    "height_m": 6.5,
+    "location": {
+      "address": "Beside the Temple of Juno (Hera), Valle dei Templi, Agrigento",
+      "latitude": 37.28877,
+      "longitude": 13.60051,
+      "neighbourhood": "Valle dei Templi, east end"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/13001172775",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 02/A089/AG/19",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Paid entry to the Valley of the Temples archaeological park; the Temple of Juno at the east end of the park is on the main route.",
+    "transport": "By car, a paid car park ('Giunone') sits at this end of the park. Local buses run from Agrigento town to the park.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Register sheet 02: olive, girth 550 cm, height 6.5 m. OSM node 13001172775 carries ref:masaf 002 but is tagged fixme=position, and its coordinates equal the register point, which lies on the Temple of Juno itself: the exact trunk is not settled (a different olive, 03 = agr_001, is the named one 100 m west). No dated sighting. The Commons geosearch there returns only temple pictures. Recognise: the biggest olive on the Juno temple terrace, 5.5 m round, more squat than agr_001. Approximate pin, register only.",
+    "story": "Sicily's register places this olive's point on the stones of the Temple of Juno itself, which tells you the coordinate is off and the trunk has not been pinned. The tree it describes is real enough, an olive 5.5 metres round and 6.5 metres tall, wider than the better-known spiral olive about a hundred metres to the west.\n\nThat neighbour has the name, the photographs and a guidebook estimate of 500 years. This one has a register sheet and nothing else, no age, no picture, no dated sighting. It is still, by the register's numbers, the bigger tree. The register's girth of 5.5 metres beats the spiral olive's 4.2 by more than a metre.\n\nThe Temple of Juno stands at the eastern end of the Valley of the Temples, on the main route, with a paid car park close by. Every visitor who climbs to the temple is walking past the terrace where this olive grows, and the photographs all go to the famous one.\n\nWe would like to fix that. The mapped point carries a note asking for the position to be checked, and so do we. If you stand on the temple terrace and pick out the widest olive, a photograph of it with your location would turn this entry from a register line into a tree you can walk to. An age, if anyone has one, would be welcome too.",
+    "how_to_recognise": "You can recognise it as the widest olive on the Temple of Juno terrace, 5.5 metres round and 6.5 metres tall, wider than the spiral-trunked olive about 100 metres west."
+  },
+  {
+    "id": "agr_008",
+    "name": "Moreton Bay Fig of the Basilica dell'Immacolata",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 400,
+    "height_m": 9,
+    "location": {
+      "address": "Basilica dell'Immacolata, Via Luigi Pirandello, Agrigento",
+      "latitude": 37.30976,
+      "longitude": 13.5835,
+      "neighbourhood": "Agrigento town centre"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/13004387634",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 09/A089/AG/19",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "By the basilica on a town street. Whether the fig stands in the open forecourt or an enclosed church ground is not established; a private courtyard (Cortile Santo Spirito) lies close by. Check on the ground.",
+    "transport": "In the upper town of Agrigento, a short walk from Piazza Aldo Moro; walking time not measured.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Register sheet 09: girth 400 cm, height 9 m. OSM node 13004387634 is tagged fixme=resurvey (copy of the register point). No dated sighting, no photo found (iNaturalist Ficus within 60 m empty). Recognise: the large fig beside the Basilica dell'Immacolata on Via Pirandello. Register only.",
+    "story": "Agrigento has three registered Moreton Bay figs in its town centre, and this is the one nobody seems to have photographed. It grows by the Basilica dell'Immacolata on Via Luigi Pirandello, and Sicily's register of monumental trees gives it a trunk four metres round and a height of nine metres.\n\nThat makes it a close match for the pair on Piazza Aldo Moro about 150 metres away, which measure 4.3 and 4.2 metres. All three belong to the same Australian species, the one that fills Palermo's villas and squares. No source dates this one or says who planted it.\n\nThe record is thin, and it is better to say so. The mapped point is a copy of the register's own figure and carries a note asking for a resurvey, so the pin is approximate. We found no dated photograph and no recent sighting. We also could not establish whether the fig stands in the open forecourt of the basilica or in an enclosed church ground; a private courtyard, the Cortile Santo Spirito, lies close by.\n\nSo this is a tree to look for rather than one to promise. If you pass the basilica and can see a large fig, tell us where it stands and whether you could reach it, and send a photograph if you have one. Nobody has given it an age.",
+    "how_to_recognise": "You can recognise it as the large fig beside the Basilica dell'Immacolata on Via Luigi Pirandello, about 4 metres round and 9 metres tall."
+  }
+]

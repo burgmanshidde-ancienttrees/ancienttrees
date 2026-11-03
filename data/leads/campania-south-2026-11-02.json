@@ -1,0 +1,72 @@
+[
+  {
+    "name": "The Camphor of the Accademia di Belle Arti Cloister",
+    "species": "Cinnamomum camphora",
+    "girth_cm": 300,
+    "latitude": 40.85175,
+    "longitude": 14.25118,
+    "source": "MASAF 26/F839/NA/15",
+    "status": "blocked",
+    "reason": "Cloister of the fine arts academy, an active institution; no source shows a visitor may walk in. The group of 25 Moreton Bay Figs there is an 'insieme omogeneo' (not a collectible point)."
+  },
+  {
+    "name": "The Yucca of the Mostra d'Oltremare",
+    "species": "Yucca gigantea",
+    "girth_cm": 380,
+    "latitude": 40.82429,
+    "longitude": 14.18649,
+    "source": "MASAF 20/F839/NA/15",
+    "status": "open",
+    "reason": "Public park, but 6 m yucca is a tree-sized agave relative, not a remarkable tree; below the bar next to the fig (nap_028)."
+  },
+  {
+    "name": "River Red Gum of the Reggia di Portici",
+    "species": "Eucalyptus camaldulensis",
+    "girth_cm": 230,
+    "latitude": 40.81206,
+    "longitude": 14.34363,
+    "source": "MASAF 05/G902/NA/15",
+    "status": "open",
+    "reason": "Modest girth beside the delivered Portici trees; deliver if the writing pass needs a sixth."
+  },
+  {
+    "name": "Villa Gabola stone pines (sheets 09-12)",
+    "species": "Pinus pinea / Pinus halepensis",
+    "girth_cm": 500,
+    "latitude": 40.70411,
+    "longitude": 14.49236,
+    "source": "MASAF 09-12/C129/NA/15",
+    "status": "open",
+    "reason": "Access to Villa Gabola, Via Giuseppe Cosenza, not found (only a directory listing calling it a park); iNaturalist has six cultivated Pinus fixes there from March 2023, so the pines stand. Needs one source on public opening."
+  },
+  {
+    "name": "Ginkgo and Southern Magnolia of the Castellammare Villa Comunale",
+    "species": "Ginkgo biloba / Magnolia grandiflora",
+    "girth_cm": 220,
+    "latitude": 40.69562,
+    "longitude": 14.48059,
+    "source": "MASAF 06 and 07/C129/NA/15",
+    "status": "open",
+    "reason": "Girths 150 and 220 cm, modest; same public seafront garden as csm_003."
+  },
+  {
+    "name": "Plane of Via Bernardino Rota 44 (Sorrento)",
+    "species": "Platanus x hispanica",
+    "girth_cm": 405,
+    "latitude": 40.632019,
+    "longitude": 14.389031,
+    "source": "MASAF 03/I862/NA/15",
+    "status": "blocked",
+    "reason": "Via Bernardino Rota 44 is the Grand Hotel Parco dei Principi grounds, the same address as the already-blocked kauri (02/I862): hotel guest and restaurant access, not public."
+  },
+  {
+    "name": "Secondigliano plane, Via Provinciale di Caserta 92",
+    "species": "Platanus orientalis",
+    "girth_cm": 442,
+    "latitude": 40.889722,
+    "longitude": 14.278056,
+    "source": "Campania regional scheda 27",
+    "status": "open",
+    "reason": "Regional register only, last roadside plane of the Bourbon road to Caserta; address-level, not checked this pass, found while reading schede."
+  }
+]

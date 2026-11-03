@@ -15,6 +15,66 @@
       "note": "A grove of giant hollies at 1,400 m in the Madonie, a walk from Piano Sempria above Castelbuono (the register also lists a 890 cm sessile oak and a 530 cm oak at Sempria, Castelbuono sheets 11 and 03). The 900 years is the heritage site's estimate, not the register's; keep it as theirs. Needs: which trunk, an open-licence photo, and the walk from the Sempria refuge. Reachable by car only.",
       "status": "open",
       "added": "2026-10-23"
+    },
+    {
+      "name": "11/C067/PA/19",
+      "sheet_id": "11/C067/PA/19",
+      "species": "Sessile Oak (Quercus petraea)",
+      "girth_cm": 890,
+      "latitude": 37.90147,
+      "longitude": 14.06865,
+      "source": "MASAF 11/C067/PA/19",
+      "status": "open",
+      "reason": "Sempria, Madonie park: no trail evidence or dated sighting found in this pass.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "05/C067/PA/19",
+      "sheet_id": "05/C067/PA/19",
+      "species": "Quercus virgiliana",
+      "girth_cm": 860,
+      "latitude": 37.90944,
+      "longitude": 14.05556,
+      "source": "MASAF 05/C067/PA/19",
+      "status": "open",
+      "reason": "Macchia dell'Inferno, Madonie: no trail evidence or dated sighting found.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "09/C067/PA/19",
+      "sheet_id": "09/C067/PA/19",
+      "species": "Sycamore Maple (Acer pseudoplatanus)",
+      "girth_cm": 575,
+      "latitude": 37.90412,
+      "longitude": 14.04936,
+      "source": "MASAF 09/C067/PA/19",
+      "status": "open",
+      "reason": "Piano Ciminnita, Madonie: very probably the 'Ciminnita maple' on the wikiloc via dei Giganti loop (6.1 m, 12 m, about 450 years per wikiloc); not matched to the sheet, no dated sighting. Could be folded with cbu_001 as one walk.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "Abies nebrodensis relict firs",
+      "sheet_id": "Abies nebrodensis relict firs",
+      "species": "Nebrodi Fir (Abies nebrodensis)",
+      "girth_cm": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "web",
+      "status": "open",
+      "reason": "Vallone Madonna degli Angeli, Polizzi Generosa: no MASAF row or OSM node checked in this pass (search returned nothing); about 30 wild relict trees, protected area: research lead only.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "Pomieri trail oak/maples",
+      "sheet_id": "Pomieri trail oak/maples",
+      "species": "Oak and maples",
+      "girth_cm": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "web",
+      "status": "open",
+      "reason": "Parco Madonie signed trail 'Sentiero degli alberi monumentali di Pomieri' (parks.it iti 4451, near 1300 m): oak, field maple and mountain maple several hundred years old. A signed park trail: next pass should get the individual trees; not in the brief.",
+      "added": "2026-11-02"
     }
   ],
   "blocked": [],

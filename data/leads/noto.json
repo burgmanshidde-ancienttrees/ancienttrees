@@ -1,0 +1,18 @@
+{
+  "city": "Noto",
+  "country": "Italy",
+  "leads": [
+    {
+      "name": "Olive of Busulmone",
+      "species": "Olive (Olea europaea)",
+      "girth_cm": 880,
+      "height_m": 9,
+      "latitude": 36.8927672,
+      "longitude": 15.036873,
+      "source": "MASAF sheet 07/F943/SR/19; OSM node 1506501855 'Ulivo di Busulmone'",
+      "status": "open",
+      "reason": "countryside lane with access=private service ways beside it; no source says a visitor may walk in; no photo or sighting"
+    }
+  ],
+  "blocked": []
+}

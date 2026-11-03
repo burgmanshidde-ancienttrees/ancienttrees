@@ -1,0 +1,127 @@
+[
+  {
+    "id": "not_001",
+    "name": "Norfolk Island Pine of the Villetta Ercole",
+    "species": "Norfolk Island Pine (Araucaria heterophylla)",
+    "age_estimate": "planted in the late 19th century",
+    "age_min": 100,
+    "age_max": 150,
+    "age_basis": "source",
+    "girth_cm": 300,
+    "height_m": 28,
+    "location": {
+      "address": "Villetta Ercole, Piazza XVI Maggio, Noto",
+      "latitude": 36.8917825,
+      "longitude": 15.0680704,
+      "neighbourhood": "Noto historic centre, beside San Domenico"
+    },
+    "location_site": {
+      "name": "Villetta Ercole, Piazza XVI Maggio",
+      "radius_m": 40
+    },
+    "verified_sources": [
+      "http://lnx.valdinoto4x4.com/cultura/araucaria/",
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://www.openstreetmap.org/node/12698723036",
+      "https://commons.wikimedia.org/wiki/File:Pino_di_Norfolk_(36668).jpg"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 05/F943/SR/19, D.M. n. 5450 of 19/12/2017",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Free. Public garden (Villetta Ercole) on Piazza XVI Maggio in the old town of Noto; the tree can also be seen from the square.",
+    "transport": "On Piazza XVI Maggio in the centre of Noto, beside the church of San Domenico.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidates": [
+      {
+        "file": "File:Pino di Norfolk (36668).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Pino_di_Norfolk_%2836668%29.jpg",
+        "licence": "CC BY-SA 4.0",
+        "author": "Ivan Ruggiero (Commons user)",
+        "why": "description 'monumental tree in Noto', EXIF date 2025-03-19, geotag 36.89175,15.06780 about 22 m from the OSM node; the OSM node itself links this file"
+      }
+    ],
+    "verify_notes": "Register sheet 05: Norfolk Island Pine, girth 300 cm, height 28 m, listed for 'rarity' and 'plant architecture' as well as size. A local culture site (Val di Noto) says: 32 m tall and 3.5 m round, once the largest Norfolk pine in Sicily and Italy, entered in the regional Monuments of Nature list by Decree 7538 of 2005 (the register's 3.0 m and 28 m differ: quote the register and mention the other figure as the site's). History from the same site, citing Corrado Coppa's 'Cosette di storia netina': there were originally two araucarias, bought at the end of the 19th century by the director of Noto's experimental winery from a travelling seller, first kept in pots beside the Casa Senatoria and later planted in the Villetta Ercole. Anecdote: when Noto was being celebrated as a Late Baroque World Heritage site , the then mayor proposed moving the whole tree with its roots to free the view of Gagliardi's San Domenico; the culture minister, Giuliano Urbani, answered that the tree was part of the landscape. Legambiente put up a plaque in May 2006. The page also describes a recent care and safeguard project funded by the agriculture ministry and the Region (undated in the text fetched). Alive: Commons photo dated 2025-03-19. Pin: OSM node 12698723036 (ref:masaf 005/F943/SR/19) about 10 m from the register point, and the geotagged 2025 photograph; one clear crown on a town garden: confirmed. Planting date is 'end of the 19th century' only: do not sharpen. Flagged only because the second source is a local culture site. Recognise: the 28 to 32 m Norfolk Island pine in the Villetta Ercole garden on Piazza XVI Maggio, towering over everything around and visible from San Domenico; a Legambiente plaque (2006) stands near it.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Pino_di_Norfolk_%2836668%29.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Ivan Ruggiero, via Wikimedia Commons",
+      "status": "approved",
+      "width": 2423,
+      "height": 4080,
+      "taken_month": 3,
+      "note": "Looked at the pixels 2026-11-02 (session 9b29504f): the whole pine top to base in the Villetta Ercole with San Domenico at left; geotag 22 m off; crown visibly thin, shown as it is; daylight, colour (photo_light OK)"
+    },
+    "story": "A mayor of Noto once proposed digging this tree up, roots and all, because it blocked the view of a Baroque church. The church is San Domenico, by the architect Rosario Gagliardi, and the proposal came as Noto's Late Baroque centre was being celebrated as World Heritage. The culture minister of the day, Giuliano Urbani, answered that the tree was part of the landscape. It stayed.\n\nIt arrived by chance. A local culture site, citing Corrado Coppa's history of the town, says the director of Noto's experimental winery bought two araucarias from a travelling seller at the end of the nineteenth century. They were kept in pots beside the Casa Senatoria before being planted in the Villetta Ercole, the small garden on Piazza XVI Maggio. Only this one is there now.\n\nSicily's register of monumental trees gives it 28 metres of height and 3 metres of girth, and lists it for its rarity and its architecture as well as its size. The same culture site gives 32 metres and 3.5, and calls it once the largest Norfolk Island pine in Sicily and in Italy. The region declared it a monument of nature in 2005, and Legambiente put up a plaque in May 2006.\n\nA 2025 photograph shows it still standing over the square, its crown visibly thin. The culture site describes a care project paid for by the ministry and the region.",
+    "how_to_recognise": "You can recognise it as the tall, tiered Norfolk Island pine towering over everything in the Villetta Ercole on Piazza XVI Maggio, beside San Domenico, with a Legambiente plaque near it."
+  },
+  {
+    "id": "not_002",
+    "name": "Carob of Cava Candelaro",
+    "species": "Carob (Ceratonia siliqua)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 1000,
+    "height_m": 10,
+    "location": {
+      "address": "Contrada Candelaro, Cava Candelaro, Noto",
+      "latitude": 36.8439621,
+      "longitude": 14.978835,
+      "neighbourhood": "Cava Candelaro, countryside west of Noto"
+    },
+    "verified_sources": [
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://www.openstreetmap.org/node/1506501706"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 04/F943/SR/19",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Not established. No source says who owns the ground or whether there is a path; OSM shows no private way within 150 m, which is weak evidence only. Check on the ground; do not publish as walkable without a source.",
+    "transport": "By car in the countryside west of Noto.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Register sheet 04: girth 1000 cm (10 m, possibly a multi-stem mass), height 10 m. OSM node 1506501706 'Carrubo di Contrada Candelaro', local name 'Carrua, A maccia ra carrua', circumference 9 m, height 13, crown 14 x 16.3 m, description 'one of the largest and longest-lived carobs in Sicily'; 35 m from the register point. A 10 m carob is exceptional. No dated sighting, no photo, no iNaturalist record. Recognise: a giant spreading carob, crown 14 to 16 m across, in the Cava Candelaro valley; local name 'a maccia ra carrua'. Register plus OSM only; land tenure unknown.",
+    "hold": "access unproven: land tenure of the Cava Candelaro carob unknown"
+  },
+  {
+    "id": "not_003",
+    "name": "Holm Oak of Santa Lucia di Mendola",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 380,
+    "height_m": 14,
+    "location": {
+      "address": "Chiesa di Santa Lucia di Mendola, Noto",
+      "latitude": 37.03581,
+      "longitude": 14.91501,
+      "neighbourhood": "Mendola, countryside north of Noto"
+    },
+    "location_site": {
+      "name": "Chiesa di Santa Lucia di Mendola",
+      "radius_m": 50
+    },
+    "verified_sources": [
+      "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+      "https://www.openstreetmap.org/node/13004378879"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 09/F943/SR/19",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "A country church; whether the grounds are open was not established. Check on the ground.",
+    "transport": "By car.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Register sheet 09: holm oak, girth 380 cm, height 14 m, flagged for ecological, landscape and 'historical, cultural, religious' value. OSM node 13004378879 is the register copy (fixme not set but coordinates equal the register's). No dated sighting, no Commons file, no second source. Recognise: the big holm oak beside the church of Santa Lucia di Mendola. Register only; weakest entry.",
+    "hold": "access unproven and register only: whether the church grounds of Santa Lucia di Mendola are open is unknown"
+  }
+]

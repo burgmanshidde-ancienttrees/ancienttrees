@@ -1,0 +1,114 @@
+[
+  {
+    "id": "csm_001",
+    "name": "The Aleppo Pine of Quisisana",
+    "species": "Aleppo Pine (Pinus halepensis)",
+    "age_estimate": "about 250 years",
+    "age_min": 200,
+    "age_max": 260,
+    "age_basis": "source",
+    "girth_cm": 495,
+    "height_m": 22,
+    "location": {
+      "address": "Reggia di Quisisana, Via Quisisana, 80053 Castellammare di Stabia",
+      "latitude": 40.68466,
+      "longitude": 14.48919,
+      "neighbourhood": "Quisisana"
+    },
+    "location_site": {
+      "name": "Historic garden of the Reggia di Quisisana",
+      "radius_m": 50
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://agricoltura.regione.campania.it/foreste/monum/scheda_62.html",
+      "https://cultura.gov.it/luogo/parco-archeologico-di-pompei-reggia-del-quisisana-museo-archeologico-di-stabia-libero-dorsi"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 02/C129/NA/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Ticketed. The historic garden of the Reggia di Quisisana has been part of the Parco archeologico di Pompei since 2020 and is visited with the Museo Archeologico di Stabia; listings disagree on opening days and ticket price, so check pompeiisites.org before going.",
+    "transport": "Circumvesuviana train to Castellammare di Stabia, then a steep walk or a local bus up the hill to Quisisana.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 495 cm, 22 m, species 'Pinus halepensis var. brutia' (Calabrian Pine); Campania regional scheda 62 (coord 40.684167,14.488889) gives Pinus halepensis, 495 cm, 22 m and says it has stood in the historic garden of the Palazzo Reale since 1765 under Ferdinand IV. Species conflict noted: Aleppo vs Calabrian pine, both close relatives; treated as Aleppo Pine per the regional scheda, flag it. 1765 is the source's date for the tree standing there, so age is 'about 260 years' at most, not a planting certificate: age left as a broad source-based range. No dated sighting. Recognise: the largest pine of the garden, beside the first King's fountain area.",
+    "story": "According to the Campania region, this pine has stood in the garden of the Reggia di Quisisana since 1765, in the reign of Ferdinand IV, king of Naples. That makes it roughly two and a half centuries old, and the region's dating is the only one we have.\n\nIt has grown into the largest pine of the garden, 495 centimetres round and 22 metres tall, figures the regional and national registers agree on. They do not agree on what it is. The region calls it an Aleppo pine. Italy's national register lists it as the Calabrian variety, Pinus halepensis var. brutia. The two are close relatives and hard to tell apart from the path, so we use the region's name and keep the question open. If you know your pines, tell us which it is.\n\nQuisisana sits on the hill above Castellammare di Stabia, and the royal garden around it passed to the Parco archeologico di Pompei in 2020. The palace now holds the archaeological museum of Stabia, so the pine shares its ticket with the finds of a Roman town.\n\nWe have found no recent dated photograph of the tree. Opening days and ticket prices vary between listings, so check the Pompeii sites page before you climb the hill.",
+    "how_to_recognise": "You can recognise it as the biggest pine in the garden, a trunk nearly 5 metres round and 22 metres tall, standing by the King's first fountain near a low, twisted yew."
+  },
+  {
+    "id": "csm_002",
+    "name": "The Yew of Quisisana",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "about 250 years",
+    "age_min": 200,
+    "age_max": 260,
+    "age_basis": "source",
+    "girth_cm": 211,
+    "height_m": 8,
+    "location": {
+      "address": "Reggia di Quisisana, Via Quisisana, 80053 Castellammare di Stabia",
+      "latitude": 40.68457,
+      "longitude": 14.48884,
+      "neighbourhood": "Quisisana"
+    },
+    "location_site": {
+      "name": "Historic garden of the Reggia di Quisisana",
+      "radius_m": 50
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://agricoltura.regione.campania.it/foreste/monum/scheda_63.html"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 03/C129/NA/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Ticketed. The historic garden of the Reggia di Quisisana has been part of the Parco archeologico di Pompei since 2020 and is visited with the Museo Archeologico di Stabia; listings disagree on opening days and ticket price, so check pompeiisites.org before going.",
+    "transport": "Circumvesuviana train to Castellammare di Stabia, then a steep walk or a local bus up the hill to Quisisana.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 211 cm, 8 m; regional scheda 63 (coord 40.684167,14.489167) agrees (211 cm, 8 m) and says the tree has a characteristic twisted trunk and crown and stands near the first fountain of the King in the historic garden since 1765. No dated sighting. Recognise: a low twisted yew beside the first King's fountain.",
+    "story": "The yew by the King's first fountain is only eight metres tall, and it has had about two and a half centuries to get there. The Campania region says it has stood in the historic garden of the Reggia di Quisisana since 1765.\n\nYews are slow, and this one shows its years in its shape rather than its height. The regional register describes a characteristic twisted trunk and a twisted crown, and both registers, regional and national, give the same measurements, 211 centimetres round and 8 metres high. It is a squat, contorted tree beside a fountain built for a king.\n\nThat king was Ferdinand IV of Naples, in whose reign the region dates this tree. The royal palace stands on the hill above Castellammare di Stabia, and since 2020 the garden has belonged to the Parco archeologico di Pompei, with the Stabia archaeological museum inside the palace. A much larger pine, which the region dates to the same year, stands close by, and between them they are the two old trees of the King's fountain.\n\nWe have no recent dated photograph of the yew. If you visit, tell us how it looks. Opening days and the ticket differ between listings, so check the Pompeii sites page first.",
+    "how_to_recognise": "You can recognise it by its low, twisted trunk and crown, only 8 metres tall, beside the King's first fountain in the garden, close to the garden's biggest pine."
+  },
+  {
+    "id": "csm_003",
+    "name": "The Araucaria of the Villa Comunale",
+    "species": "Araucaria (Araucaria sp.)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 220,
+    "height_m": 30,
+    "location": {
+      "address": "Villa Comunale, Viale Regina Elena, 80053 Castellammare di Stabia",
+      "latitude": 40.69561,
+      "longitude": 14.48049,
+      "neighbourhood": "Villa Comunale, seafront"
+    },
+    "location_site": {
+      "name": "Villa Comunale",
+      "radius_m": 50
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.inaturalist.org/observations/106541515"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 05/C129/NA/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. Public seafront garden (Villa Comunale), open air.",
+    "transport": "About 10 minutes' walk from Castellammare di Stabia station on the Circumvesuviana.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF lists Araucaria araucana (Monkey Puzzle), 220 cm, 30 m. Species conflict: an iNaturalist observation dated 2022-02-11 in the 'Giardini Pubblici', GPS 40.695554,14.480412 (about 9 m from the register point), is identified as Araucaria heterophylla (Norfolk Island Pine), cultivated, with the note 'H:20m'; the photo (viewed, not open licence) shows a tall conifer with whorled drooping branches above apartment blocks. A 30 m Monkey Puzzle at 220 cm girth is implausible while Norfolk Island Pine at that size is normal, so species is given generically and the page should ask readers. Alive 2022. Recognise: the tall whorled conifer in the garden near the apartment blocks on the seafront side.",
+    "story": "Italy's national register says this is a monkey puzzle, 30 metres tall. A visitor's photograph from 2022 shows a Norfolk Island pine of about 20 metres, and the photograph has the stronger case.\n\nBoth trees are araucarias, the southern-hemisphere conifers that Mediterranean seafronts have planted for generations. They look nothing alike up close. A monkey puzzle carries stiff, sharp scale leaves on bare, rope-like branches. A Norfolk Island pine grows in neat level tiers of soft, drooping branches, like a stack of green shelves, and the 2022 picture shows exactly that, a tall whorled conifer rising above the apartment blocks. A monkey puzzle reaching 30 metres on a trunk 220 centimetres round would be unusual. A Norfolk Island pine of that size is ordinary.\n\nSo we call it an araucaria and give you both names. The register's girth of 220 centimetres stands either way, and so does the fact that it was alive and towering over the Villa Comunale, the public garden on Castellammare di Stabia's seafront, in February 2022.\n\nNobody has published when it was planted. If you know, or if you stand under it and can settle which araucaria it is, tell us.\n\nThe garden is free and open air, about ten minutes on foot from the station.",
+    "how_to_recognise": "You can recognise it as the tall conifer with branches in level, drooping tiers, rising above the apartment blocks on the seafront side of the Villa Comunale."
+  }
+]

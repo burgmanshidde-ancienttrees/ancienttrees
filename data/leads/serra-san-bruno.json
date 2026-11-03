@@ -1,0 +1,38 @@
+{
+  "city": "Serra San Bruno",
+  "country": "Italy",
+  "city_slug": "serra-san-bruno",
+  "note": "Verify pass 2026-11-02 (Calabria). Nothing delivered. Sources found only describe the Serre firs generally. iNaturalist has one research-grade Abies alba fix (2021-11-05, obs 101131944, photo licence not open) about 12 m from the register point of the Santa Maria del Bosco fir. The Commons geosearch was too busy to answer after three attempts. Update 2026-11-02 (rule change, approximate pins ship): delivered from here to the verified files and removed from leads: Silver Fir at Santa Maria del Bosco; Silver Fir at Monte Pecoraro; Silver Fir at Rosarella.",
+  "leads": [
+    {
+      "name": "Silver Fir at Pietra del Caricatore",
+      "species": "Silver Fir (Abies alba)",
+      "girth_cm": 510,
+      "latitude": 38.540178,
+      "longitude": 16.336844,
+      "source": "MASAF sheet 07/I639/VV/18",
+      "status": "open",
+      "reason": "no photo, pin evidence or access source"
+    },
+    {
+      "name": "Silver Firs at Mulinelle, Stilo",
+      "species": "Silver Fir (Abies alba)",
+      "girth_cm": 390,
+      "latitude": 38.542783,
+      "longitude": 16.386167,
+      "source": "MASAF sheet 01-02/I956/RC/18",
+      "status": "open",
+      "reason": "Ferdinandea area; no photo, pin evidence or access source"
+    },
+    {
+      "name": "Albero delle fate (Mongiana fir)",
+      "species": "Silver Fir (Abies alba)",
+      "girth_cm": null,
+      "latitude": 38.511167,
+      "longitude": 16.292017,
+      "source": "MASAF sheet 01/F364/VV/18",
+      "status": "open",
+      "reason": "lacnews24 and ilvibonese 2022: a guided night walk from Santa Maria del Bosco to a listed fir said to be 6 m round and 35 m tall, 16 m crown; register row Mongiana Fontanelle says girth 460 h 35, so the figures conflict and the match to this sheet is unproven"
+    }
+  ]
+}

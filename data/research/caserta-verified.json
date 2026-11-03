@@ -1,0 +1,144 @@
+[
+  {
+    "id": "cas_021",
+    "name": "The Plane of San Leucio",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 480,
+    "height_m": 18,
+    "location": {
+      "address": "Piazza della Seta, San Leucio, 81100 Caserta",
+      "latitude": 41.09844,
+      "longitude": 14.31556,
+      "neighbourhood": "San Leucio"
+    },
+    "location_site": {
+      "name": "Piazza della Seta",
+      "radius_m": 50
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.inaturalist.org/observations/19571377"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 01/B963/CE/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. Open square in the UNESCO silk village of San Leucio, open at all hours.",
+    "transport": "About 3.5 km north-west of Caserta station; a short taxi ride, or about 45 minutes on foot.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 480 cm, 18 m. Alive and placed: iNaturalist observation 2018-12-16 (Platanus x hispanica, cultivated) at 41.098625,14.315869 (about 25 m of the register point); the photo (viewed, not open licence) shows a large mottled plane in autumn colour beside a low wall and gate, with two small signs on the wall. Only the 2018 sighting, so flagged. Recognise: a big plane with pale mottled bark at the edge of the square, next to the wall with the two plaques.",
+    "story": "Caserta's palace draws the crowds, but a plane almost five metres round stands in a small square a few kilometres north, in the silk village of San Leucio. Italy's national register of monumental trees gives it a trunk 4.8 metres round and a height of 18 metres, which makes it squat and heavy for a plane, more girth than reach.\n\nSan Leucio is a UNESCO-listed village built around silk, and Piazza della Seta, the Silk Square, carries the name of the trade. The plane stands at the edge of the square, beside a low wall and a gate with two small signs fixed to it. A naturalist photographed it there in December 2018, the mottled bark pale and the leaves still holding their autumn colour.\n\nThat photograph is the most recent public record of the tree, so we count it as standing until someone tells us otherwise. Nobody has published an age for it either, and with no planting record we would rather leave the number blank than guess one from the girth.\n\nUnlike the trees inside the Reggia's English Garden, it costs nothing to see and has no opening hours and no closing day. It is also the one big tree of Caserta that puts you in San Leucio, which is reason enough for the trip. If you know when it was planted, tell us.",
+    "how_to_recognise": "You can recognise it by the pale, mottled bark on a trunk almost five metres round, at the edge of Piazza della Seta beside the low wall and gate with two small signs."
+  },
+  {
+    "id": "cas_022",
+    "name": "The Cedar of the Caserta Cemetery",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 635,
+    "height_m": 30,
+    "location": {
+      "address": "Cimitero Comunale, Caserta",
+      "latitude": 41.08932,
+      "longitude": 14.34119,
+      "neighbourhood": "Cimitero, east Caserta"
+    },
+    "location_site": {
+      "name": "Caserta municipal cemetery",
+      "radius_m": 50
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 05/B963/CE/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. The Cimitero Comunale of Caserta is a municipal cemetery, open to visitors; check opening hours before you go.",
+    "transport": "About 2 km east of Caserta station; a short taxi ride or about 25 minutes on foot.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 635 cm, 30 m, one of the fattest cedars registered in Campania (the Reggia's cedar is 775 cm). Register only, no dated sighting, flagged. Camphor cas_023 stands about 15 m away (sheet 04, 'Cimitero Maggiore, Via Cappuccini'; probably the same walled cemetery, two register names). Recognise: the biggest conifer in the cemetery near the camphor.",
+    "story": "One of the widest cedars on Italy's register in Campania grows not in Caserta's royal gardens but in its town cemetery. The national register of monumental trees gives this cedar of Lebanon a trunk 6.35 metres round and a height of 30 metres. The great cedar of the Palco, in the Reggia's English Garden, is wider still at 7.75 metres, and the two are the heavyweights of the region's list.\n\nThe difference is the entry fee. The Reggia's cedar sits behind a ticket and a two-and-a-half-kilometre walk from the palace gate. This one stands in the Cimitero Comunale on the east side of town, municipal ground open to visitors, and it has a neighbour worth the trip on its own, a camphor tree five metres round about fifteen metres away. The register files the two under slightly different cemetery names, but they share one patch of ground, and together they make a short, quiet visit.\n\nHow old the cedar is, nobody has said. The register gives measurements and no age, and no recent photograph of the tree has been published, so the register is the latest word on it. If you visit, tell us how it looks, and if you know when it was planted, tell us that too.",
+    "how_to_recognise": "You can recognise it as the biggest conifer in the cemetery, a cedar more than six metres round and 30 metres tall, about fifteen metres from the large camphor."
+  },
+  {
+    "id": "cas_023",
+    "name": "The Camphor of the Caserta Cemetery",
+    "species": "Camphor Tree (Cinnamomum camphora)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 500,
+    "height_m": 25,
+    "location": {
+      "address": "Cimitero Maggiore, Via Cappuccini, Caserta",
+      "latitude": 41.08923,
+      "longitude": 14.34135,
+      "neighbourhood": "Cimitero, east Caserta"
+    },
+    "location_site": {
+      "name": "Caserta municipal cemetery",
+      "radius_m": 50
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 04/B963/CE/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. The Cimitero Comunale of Caserta is a municipal cemetery, open to visitors; check opening hours before you go.",
+    "transport": "About 2 km east of Caserta station; a short taxi ride or about 25 minutes on foot.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 500 cm, 25 m. Register only, flagged. Recognise: a large broadleaf camphor beside the cedar cas_022. Folded risk: sheets 04 and 05 may sit in one cemetery; kept separate because they are different species.",
+    "story": "A camphor tree five metres round stands in Caserta's municipal cemetery, a few steps from a cedar even wider. Italy's national register of monumental trees lists both. The camphor reaches 25 metres on a trunk of 500 centimetres, and it is the broadleaf of the pair, an evergreen from East Asia beside a conifer from the mountains of Lebanon.\n\nCaserta has another camphor on the register, inside the Reggia's English Garden, which the regional register puts at about 200 years. This one has no age on record at all. What it does have is free entry and no ticket queue, since a municipal cemetery is open to visitors.\n\nThe register files the camphor under the Cimitero Maggiore on Via Cappuccini and the cedar under the Cimitero Comunale, but the two points lie about fifteen metres apart, so this is probably one walled cemetery under two names. Come for the pair. The cedar, 6.35 metres round, is one of the widest on Campania's register, and the camphor stands right beside it, the two crowns together over the graves.\n\nNo recent photograph of either tree has been published. If you visit, tell us how they look, and if you know when they were planted, tell us that too.",
+    "how_to_recognise": "You can recognise it as the large evergreen broadleaf, a camphor five metres round and 25 metres tall, standing about fifteen metres from the big cedar in the cemetery."
+  },
+  {
+    "id": "cas_024",
+    "name": "The Bunya Pine of the Reggia di Caserta",
+    "species": "Bunya Pine (Araucaria bidwillii)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 278,
+    "height_m": 25,
+    "location": {
+      "address": "Parco della Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+      "latitude": 41.07818,
+      "longitude": 14.3226,
+      "neighbourhood": "Reggia di Caserta, near the palace"
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.inaturalist.org/observations/32755784"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 13/B963/CE/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Paid. Inside the Royal Park of the Reggia di Caserta, covered by the park ticket; closed on Tuesdays. The tree stands near the palace end of the park, so check on the day which area your ticket covers.",
+    "transport": "Caserta station faces the palace.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 278 cm, 25 m. iNaturalist observation 2019-09-15 (Araucaria bidwillii, cultivated) at 41.077130,14.322697 (about 115 m from the register point, so approximate); only that sighting, flagged. Recognise: a giant conifer with scaly dark bark and heavy cones near the palace end of the park.",
+    "story": "Of the Reggia di Caserta's registered trees, this is the one you can reach without the long walk to the gardens. It is a bunya pine, a conifer from Queensland known for its heavy cones, and Italy's national register of monumental trees lists it at 25 metres tall with a trunk 2.78 metres round.\n\nIt grows at the palace end of the Royal Park, not in the English Garden two and a half kilometres up the slope where most of Caserta's registered trees cluster. It stands a few minutes from the palace rather than at the far end of the main axis. A naturalist photographed a bunya pine near the register point in September 2019, about a hundred metres from where the register puts it, so the pin here is approximate and the tree is worth looking for rather than walking straight to.\n\nThe bunya is a close relative of the monkey puzzle that stands free in Piazza Vanvitelli in the town centre. Nobody has published when this one was planted, and the register gives no age. If you know, tell us.\n\nThe Royal Park is ticketed and closed on Tuesdays. Since the tree sits near the palace end, check on the day whether it falls inside the area your ticket covers.",
+    "how_to_recognise": "You can recognise it as the giant conifer with scaly dark bark and heavy cones near the palace end of the park, far below the English Garden."
+  }
+]

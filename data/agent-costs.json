@@ -15299,6 +15299,38 @@
       "tokens": 142306,
       "trees": 16,
       "note": "16 stories and recognition lines, 3 best_time, place fields for 3 new places. Held for the pace in scripts/build_us_northwest.py. Portland and Seattle refused as full. All in with dispatcher about 0.8M tokens, roughly 50k a tree."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "agrigento+palazzolo-acreide+noto+ragusa+palermo",
+      "tokens": 212617,
+      "trees": 18,
+      "note": "Southern Italy MASAF run: 18 stories and recognition lines, place fields for 4 new places and grown Palermo (oldest now the San Benedetto cypress, 444-year core); cut by the usage limit once and resumed."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "naples+caserta+benevento",
+      "tokens": 188972,
+      "trees": 13,
+      "note": "Southern Italy MASAF run: Naples +7 (31), Caserta +4 (24), Benevento new with 2; cut by the usage limit once and resumed."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "portici+castellammare-di-stabia+monte-faito+sila+san-pietro-in-amantea+serra-san-bruno",
+      "tokens": 178707,
+      "trees": 14,
+      "note": "Southern Italy MASAF run: 14 stories, 6 place blocks; Giganti della Sila closure said in access, story and faq; cut by the usage limit once and resumed."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "translate",
+      "target": "it overlay naples+palermo additions",
+      "tokens": 128184,
+      "trees": 12,
+      "note": "Italian overlay for the 12 new Naples and Palermo trees, both place texts and pal_019's corrected story; merged by scripts/build_italy_south.py. Southern Italy all in: about 1.4M agent tokens plus the dispatcher for 45 trees, about 35k a tree."
     }
   ]
 }

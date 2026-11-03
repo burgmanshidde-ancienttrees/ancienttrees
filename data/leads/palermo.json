@@ -55,6 +55,102 @@
       "note": "No row in the MASAF list or the Regione Siciliana list of 17.07.2026 for Ficuzza, Godrano or Corleone. Needs which trunk, a pin and a photo; the 400 years is the tipster's memory, never sharpened. A day trip from Palermo, not a walk.",
       "status": "open",
       "added": "2026-10-24"
+    },
+    {
+      "name": "17/G273/PA/19",
+      "sheet_id": "17/G273/PA/19",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "girth_cm": 1010,
+      "latitude": 38.11963,
+      "longitude": 13.36427,
+      "source": "MASAF 17/G273/PA/19",
+      "status": "open",
+      "reason": "Courtyard of private Palazzo Pantelleria (Piazza Meli); only occasional guided openings (latest 10 May 2026), no open access. Planted 1896 per Sicilia in Rete. Register point differs from OSM import node by 200 m.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "46/G273/PA/19",
+      "sheet_id": "46/G273/PA/19",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "girth_cm": 240,
+      "latitude": 38.10676,
+      "longitude": 13.33476,
+      "source": "MASAF 46/G273/PA/19",
+      "status": "open",
+      "reason": "Villa di Napoli: tourism portal lists the villa as temporarily closed; opens only for events and city free-visit days. No photograph or pin evidence.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "27/G273/PA/19",
+      "sheet_id": "27/G273/PA/19",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "girth_cm": 3400,
+      "latitude": 38.18304,
+      "longitude": 13.32096,
+      "source": "MASAF 27/G273/PA/19",
+      "status": "open",
+      "reason": "ZEN (housing estate), Viale Sandro Pertini: site and access not established, no source beyond the register, no sighting.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "04/G273/PA/19-olive 47",
+      "sheet_id": "04/G273/PA/19-olive 47",
+      "species": "Olive (Olea europaea)",
+      "girth_cm": 660,
+      "latitude": 38.08199,
+      "longitude": 13.3798,
+      "source": "MASAF 04/G273/PA/19-olive 47",
+      "status": "open",
+      "reason": "Santa Maria di Gesu, olive sheet 47/G273/PA/19: no source beyond register, OSM import node at 38.08304,13.37846 differs from brief point, access inside convent/cemetery grounds unclear.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "02/G273/PA/19",
+      "sheet_id": "02/G273/PA/19",
+      "species": "Olive (Olea europaea)",
+      "girth_cm": 818,
+      "latitude": 38.17012,
+      "longitude": 13.3353,
+      "source": "MASAF 02/G273/PA/19",
+      "status": "blocked",
+      "reason": "Pallavicino, Via Cesenatico: no evidence of public access, likely private ground.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "20+21/G273/PA/19",
+      "sheet_id": "20+21/G273/PA/19",
+      "species": "Olive (Olea europaea)",
+      "girth_cm": 830,
+      "latitude": 38.1662,
+      "longitude": 13.30768,
+      "source": "MASAF 20+21/G273/PA/19",
+      "status": "blocked",
+      "reason": "Via Ugo La Malfa 169: no evidence of public access, likely private.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "29+31/G273/PA/19",
+      "sheet_id": "29+31/G273/PA/19",
+      "species": "Ficus microcarpa",
+      "girth_cm": 560,
+      "latitude": 38.16424,
+      "longitude": 13.33455,
+      "source": "MASAF 29+31/G273/PA/19",
+      "status": "open",
+      "reason": "Villa Niscemi park (public): second and third fig beside pal_026; deliver later if a writer wants more at Niscemi; 31's OSM node is 1.3 km off.",
+      "added": "2026-11-02"
+    },
+    {
+      "name": "32/G273/PA/19",
+      "sheet_id": "32/G273/PA/19",
+      "species": "Dragon Tree (Dracaena draco)",
+      "girth_cm": 250,
+      "latitude": 38.16365,
+      "longitude": 13.33341,
+      "source": "MASAF 32/G273/PA/19",
+      "status": "open",
+      "reason": "Villa Niscemi park (public): dragon tree 30 m from pal_026, register only.",
+      "added": "2026-11-02"
     }
   ],
   "blocked": [

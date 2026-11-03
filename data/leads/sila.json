@@ -1,0 +1,68 @@
+{
+  "city": "Sila",
+  "country": "Italy",
+  "city_slug": "sila",
+  "note": "Verify pass 2026-11-02 (Calabria). One ensemble verified (sil_001, data/research/sila-verified.json). The FAI reserve page shows a temporary closure for maintenance on this date. Single trees below stay leads: no photo, no dated sighting, no pin evidence. Update 2026-11-02 (rule change, approximate pins ship): delivered from here to the verified files and removed from leads: Silver Fir and Beech at Gariglione.",
+  "leads": [
+    {
+      "name": "Castagno di San Francesco (Colamauci chestnut)",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "girth_cm": 1285,
+      "latitude": 39.391967,
+      "longitude": 16.503428,
+      "source": "MASAF sheet 01/C430/CS/18",
+      "status": "blocked",
+      "reason": "Comune di Celico page says it stands on a private plot beside farmhouses near an arm of Lake Cecita (about 150 m from the shore, 1160 m); owner family looks after it. No public access evidence, no dated sighting, no iNaturalist or Commons record found. Registered 2023 (MASAF news, 1285 cm). Worth a retry only with an access source or a reader photo."
+    },
+    {
+      "name": "Corsican Pine at Cozzo del Principe",
+      "species": "Corsican Pine (Pinus nigra subsp. laricio)",
+      "girth_cm": 370,
+      "latitude": 39.374167,
+      "longitude": 16.581389,
+      "source": "MASAF sheet 01/I896/CS/18",
+      "status": "open",
+      "reason": "no photo or exact pin in reach; no source about access or a recent sighting"
+    },
+    {
+      "name": "Chestnut at Serrisi",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "girth_cm": 650,
+      "latitude": 39.305053,
+      "longitude": 16.656794,
+      "source": "MASAF sheet 01/H919/CS/18",
+      "status": "open",
+      "reason": "no photo or exact pin in reach; no access or sighting source"
+    },
+    {
+      "name": "Silver Fir, Frainella Colle del Telegrafo (Taverna)",
+      "species": "Silver Fir (Abies alba)",
+      "girth_cm": 600,
+      "latitude": 39.095,
+      "longitude": 16.6161,
+      "source": "MASAF sheet 01/L070/CZ/18",
+      "status": "open",
+      "reason": "height 40 m girth 6 m is big, but no photo, pin evidence or sighting found; not researched beyond the register"
+    },
+    {
+      "name": "Corsican Pine at Pomo (Taverna)",
+      "species": "Corsican Pine (Pinus nigra subsp. laricio)",
+      "girth_cm": 530,
+      "latitude": 39.102778,
+      "longitude": 16.579967,
+      "source": "MASAF sheet 02/L070/CZ/18",
+      "status": "open",
+      "reason": "no photo or exact pin in reach"
+    },
+    {
+      "name": "Largest single pine of the Giganti grove",
+      "species": "Corsican Pine (Pinus nigra subsp. laricio)",
+      "girth_cm": null,
+      "latitude": 39.32463,
+      "longitude": 16.46717,
+      "source": "MASAF sheet 02/I896/CS/18",
+      "status": "open",
+      "reason": "Parco Sila gives girth 2.5 to 6 m and height 30 to 43 m across the grove, none names one trunk; the grove is delivered as the ensemble sil_001"
+    }
+  ]
+}

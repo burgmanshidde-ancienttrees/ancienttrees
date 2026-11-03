@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cbu_001",
+    "name": "The Acerone of the Madonie",
+    "species": "Sycamore Maple (Acer pseudoplatanus)",
+    "age_estimate": "roughly 900 years",
+    "age_min": 450,
+    "age_max": 905,
+    "age_basis": "source",
+    "girth_cm": 950,
+    "height_m": 20,
+    "location": {
+      "address": "Piano Ciminnita - Serra Circio, Parco delle Madonie, Castelbuono",
+      "latitude": 37.90994,
+      "longitude": 14.04815,
+      "neighbourhood": "Madonie (1600 m)"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/13205-acero-montano-castelbuono-palermo-sicilia",
+      "https://www.wikiloc.com/hiking-trails/madonie-la-via-dei-giganti-gli-agrifogli-di-piano-pomo-gli-aceri-di-catagiddebbe-e-ciminnita-lacero-100396054",
+      "https://www.wikiloc.com/hiking-trails/madonie-anello-piano-sempria-cozzo-luminario-piano-imperiale-pizzo-s-stefano-piano-pomo-105901653"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 10/C067/PA/19",
+      "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+    },
+    "access": "Open mountain land in the Parco delle Madonie, about 1600 m; reached on foot only. A published loop 'la via dei Giganti' (about 9.4 km, 617 m climb) starts at Piano Sempria and passes the Catagiddebbe and Ciminnita maples; a park route description says the park gives no signed directions to the Acerone itself. Mountain walk, not a stroll; snow possible in winter.",
+    "transport": "Rural; by car to Piano Sempria above Castelbuono (distance not checked), then on foot. No public transport.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "Identity caution: MASAF row 10/C067/PA/19 is Acer pseudoplatanus girth 950 cm height 20 m at 'Piano Ciminnita - Serra Circio' (37.90994,14.04815). The Acerone (ilregistrodeglialberi #13205, 1612 m, 'dolina above Serra Circio', age about 905 years, health 'sufficient', last update 29/12/2024, 3 measurements, relevance international) is very probably the same tree, but no source states the MASAF sheet number, so treat as probable. A wikiloc description of the 'Ciminnita maple' gives 6.1 m girth, 12 m, about 450 years: a separate, smaller tree on the same loop, hence age_min 450 here only as a floor; the 905 figure is the register site's estimate, not measured (a park route page says 'about 900 years', 19 m base diameter, 'largest mountain maple in Italy', unverified). Notes of field recorders: very wide root base with fused roots, in a sinkhole with a view to the Aeolian Islands; lost its two biggest primary limbs (one fell at least 14 years ago, the second after 2014). Alive as of the Dec 2024 register update; no photo or GPS fix found. Recognise: a huge, broad-based maple with fused roots standing in a hollow (dolina). Pin approximate: register point only, mountain trail with no signed route.",
+    "hold": "location cannot be stated honestly: a doline at 1612 m with no signed route and only the register point; needs a trail track or a GPS fix"
+  }
+]

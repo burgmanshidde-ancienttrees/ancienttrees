@@ -1,0 +1,73 @@
+[
+  {
+    "id": "bnv_001",
+    "name": "The Holm Oak of the Villa Comunale, Benevento",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 455,
+    "height_m": 18,
+    "location": {
+      "address": "Villa Comunale, Piazza IV Novembre, 82100 Benevento",
+      "latitude": 41.127725,
+      "longitude": 14.783881,
+      "neighbourhood": "Villa Comunale"
+    },
+    "location_site": {
+      "name": "Villa Comunale terrace",
+      "radius_m": 50
+    },
+    "location_precision": "confirmed",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.inaturalist.org/observations/230254375"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 01/A783/BN/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. City park (Villa Comunale), open air; check opening hours before you go.",
+    "transport": "About 10 minutes' walk from Benevento town centre; the station is about 1.5 km away.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 455 cm, 18 m. Alive and placed: iNaturalist observation 2024-07-19 (Quercus ilex, cultivated, place Villa Comunale) at 41.127858,14.783887, about 15 m from the register point; the photo (viewed, not open licence) shows a huge, wide-spreading multi-limbed holm oak on a terrace with benches and a viewpoint rail, trunk visibly thick. The register sheet is the only 455 cm holm oak recorded in the park. Pin confirmed by that GPS fix at a tree that fits. No age source. Recognise: the very broad holm oak on the belvedere terrace with benches under its crown.",
+    "story": "The best seat in Benevento's town park is under a holm oak four and a half metres round. Italy's national register of monumental trees lists it at 455 centimetres of girth and 18 metres tall, and it is the only holm oak that size the register records in the Villa Comunale.\n\nThe tree stands on the park's belvedere terrace, where benches sit under its crown and a rail marks the viewpoint. A naturalist photographed it there in July 2024, and the picture shows exactly why the register bothered. Instead of one trunk rising to a neat dome, it splits into several great limbs that spread wide over the terrace, so the shade reaches further than the height would suggest.\n\nHolm oaks are the native evergreen oak of southern Italy, with small dark leaves that stay on through winter. That means this tree looks much the same in January as in August, and the shade on the terrace is there in every season.\n\nNobody has published an age for it, and there is no planting record for this tree in the park. The girth is the only clue, and girth alone is not a date. If you know when it was planted, tell us.",
+    "how_to_recognise": "You can recognise it by the very broad, many-limbed crown spreading over the benches on the park's belvedere terrace, beside the viewpoint rail."
+  },
+  {
+    "id": "bnv_002",
+    "name": "The Coast Redwood of the Villa Comunale, Benevento",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 350,
+    "height_m": 33,
+    "location": {
+      "address": "Villa Comunale, Piazza IV Novembre, 82100 Benevento",
+      "latitude": 41.128567,
+      "longitude": 14.783094,
+      "neighbourhood": "Villa Comunale"
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.inaturalist.org/observations/230258467",
+      "https://www.inaturalist.org/observations/69294363"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 03/A783/BN/15",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. City park, open air.",
+    "transport": "About 10 minutes' walk from the centre.",
+    "curation_status": "flagged",
+    "photo_candidates": [],
+    "verify_notes": "MASAF 350 cm, 33 m. iNaturalist observations of Sequoia sempervirens (cultivated) on 2021-02-05 at 41.128308,14.783000 (about 30 m away) and 2024-07-19 at 41.128998,14.782962 (about 48 m away); the 2024 photo shows only foliage. Alive; pin approximate. Recognise: the tallest conifer in the park, a feathery redwood with spongy red bark, about 100 m from the holm oak bnv_001.",
+    "story": "A coast redwood 33 metres tall grows in Benevento's town park, several thousand kilometres from the California fog belt where its species belongs. Italy's national register of monumental trees gives it that height and a trunk 3.5 metres round. That is fifteen metres taller than the park's great holm oak.\n\nIt stands in the Villa Comunale, about a hundred metres from that holm oak, a tree four and a half metres round on the belvedere terrace. The two make an easy pair, the native evergreen oak that spreads sideways and the imported conifer that only goes up.\n\nNaturalists have recorded redwoods here in February 2021 and July 2024, a few dozen metres from the register point, so the tree is alive, though neither record pins the exact trunk. Look for the soft, fibrous reddish bark and the flat, feathery sprays of needles, and the height will do the rest.\n\nNobody has published when it was planted, and the register gives no age. If you know its story, tell us.",
+    "how_to_recognise": "You can recognise it by its height, a tall conifer with soft reddish bark and flat, feathery sprays of needles, about a hundred metres from the broad holm oak on the terrace."
+  }
+]

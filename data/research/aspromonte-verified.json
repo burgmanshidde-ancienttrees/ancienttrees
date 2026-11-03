@@ -1,0 +1,66 @@
+[
+  {
+    "id": "asp_001",
+    "name": "Gornelle Beech",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 536,
+    "height_m": 25,
+    "location": {
+      "address": "Localita Gornelle, Reggio di Calabria (Aspromonte)",
+      "latitude": 38.138397,
+      "longitude": 15.835447,
+      "neighbourhood": "Gornelle, Parco Nazionale dell'Aspromonte"
+    },
+    "location_site": null,
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.parks.it/parco.nazionale.aspromonte/iti_dettaglio.php?id_iti=6464"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 02/H224/RC/18",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. The Sentiero Calabria (Reggio di Calabria to Gambarie stage) crosses the SS 183 at Gornelle and continues through beech woods past the Tre Aie fountain to Piazza Mangeruca, Gambarie.",
+    "transport": "Gambarie d'Aspromonte (about 1,300 m) is reached by road from Reggio di Calabria; bus link not checked.",
+    "curation_status": "flagged",
+    "verify_notes": "Register: MASAF 02/H224/RC/18, 536 cm, 25 m, locality Gornelle. The park-listed trail page puts the official Sentiero Calabria on the SS 183 at Gornelle and in beech woods beyond; it does not name the tree, so the link between trail and tree is by locality only. A search summary (unfetched) also quoted 24 m and 5.36 m; do not rely on it. RECOGNISE: by the Sentiero Calabria at Gornelle near the SS 183 crossing in beech wood; no source describes the trunk. ALIVE: no dated sighting; flag.",
+    "photo_candidates": [],
+    "hold": "cannot be told apart: tied to the Sentiero Calabria by place name only, register point only, in a beech wood"
+  },
+  {
+    "id": "asp_002",
+    "name": "Tre Aie Beech",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "",
+    "girth_cm": 560,
+    "height_m": 20,
+    "location": {
+      "address": "Localita Tre Aie, Reggio di Calabria (Gambarie)",
+      "latitude": 38.151611,
+      "longitude": 15.831775,
+      "neighbourhood": "Tre Aie, Parco Nazionale dell'Aspromonte"
+    },
+    "location_site": null,
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://www.parks.it/parco.nazionale.aspromonte/iti_dettaglio.php?id_iti=6464"
+    ],
+    "official_register": {
+      "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 03/H224/RC/18",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    },
+    "access": "Free. Beside the historic Tre Aie fountain on the Sentiero Calabria, about 1.5 to 2 hours there and back from Gambarie (AllTrails listing 'Gambarie - Tre Aie', not fetched).",
+    "transport": "Walk from Piazza Mangeruca, Gambarie (the trail reaches it past the Tre Aie fountain).",
+    "curation_status": "flagged",
+    "verify_notes": "Register: MASAF 03/H224/RC/18, 560 cm, 20 m, locality Tre Aie; same register also lists a stand of silver firs at Tre Aie (01/H224, a group, not delivered). The Parco trail page names the 'historic Tre Aie fountain' on the path into Gambarie; the tree itself is not named by a source. RECOGNISE: near the Tre Aie fountain among beech woods on the Sentiero Calabria. ALIVE: no dated sighting; flag. Twin/neighbour: the Fragolara Corsican pine 05/H224 (38.1505,15.8321) is ~100 m away and was not delivered.",
+    "photo_candidates": [],
+    "hold": "cannot be told apart: tied to the trail by place name only, register point only, in a beech wood"
+  }
+]

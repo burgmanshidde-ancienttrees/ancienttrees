@@ -1,0 +1,38 @@
+{
+  "city": "Aspromonte",
+  "country": "Italy",
+  "city_slug": "aspromonte",
+  "note": "Verify pass 2026-11-02 (Calabria). Nothing delivered; time went to Sila and the Tyrrhenian plane. Gambarie Via Garibaldi 2 incense cedar (01/I371/RC/18, Calocedrus decurrens g475 h25, 38.168353,15.838475) checked: no iNaturalist and no OSM tree record. Remaining Gambarie, Scilla and Santa Cristina rows not researched. Update 2026-11-02 (rule change, approximate pins ship): delivered from here to the verified files and removed from leads: Beech at Gornelle and Tre Aie.",
+  "leads": [
+    {
+      "name": "Incense Cedar, Gambarie Via Garibaldi 2",
+      "species": "Incense Cedar (Calocedrus decurrens)",
+      "girth_cm": 475,
+      "latitude": 38.168353,
+      "longitude": 15.838475,
+      "source": "MASAF sheet 01/I371/RC/18",
+      "status": "open",
+      "reason": "urban tree in the Gambarie resort, but no photo, OSM node or iNat record; address in the register may be a private garden"
+    },
+    {
+      "name": "Silver Fir at Abetazzo, Scilla",
+      "species": "Silver Fir (Abies alba)",
+      "girth_cm": 495,
+      "latitude": 38.174517,
+      "longitude": 15.864886,
+      "source": "MASAF sheet 01/I537/RC/18",
+      "status": "open",
+      "reason": "not researched"
+    },
+    {
+      "name": "Silver Fir and Yew at Zervo, Santa Cristina d Aspromonte",
+      "species": "Silver Fir (Abies alba)",
+      "girth_cm": 490,
+      "latitude": 38.222244,
+      "longitude": 16.002853,
+      "source": "MASAF sheet 01-02/I176/RC/18",
+      "status": "open",
+      "reason": "not researched"
+    }
+  ]
+}
