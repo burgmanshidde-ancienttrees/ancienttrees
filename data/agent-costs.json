@@ -15221,6 +15221,30 @@
       "note": "All 16 written, none held; Lorton ships from the Pound (pin moved there by the dispatcher), Gresford age label corrected by the dispatcher. Dispatcher (photo look, fixes, builder) about 250k more by estimate. The whole pass about 1.39M tokens for 16 trees, roughly 87k a tree. Build with scripts/build_uk_north.py."
     },
     {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "wales-yews round 2",
+      "tokens": 174210,
+      "trees": 6,
+      "note": "Strata Florida, Llanfihangel-nant-Melan, Bettws Newydd, Overton-on-Dee (the Seven Wonders line names the ring of yews), Mamhilad, Llanfaredd. Corwen rejected: one young yew."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "north-england-yews",
+      "tokens": 164462,
+      "trees": 5,
+      "note": "Astbury, Goostrey, Nether Alderley, Farndon (Cheshire), Lanercost (Cumbria, AYG-only, flagged). Lancashire, Greater Manchester and Merseyside gave nothing; Bunbury, Broughton-in-Furness, Seathwaite, Wetheral to leads."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "churchyard yews round 2 (sfl/lnm/bwn/ovr/mmh/llf/ast/goo/nal/fdn/lnc) + 11 place blocks",
+      "tokens": 176050,
+      "trees": 11,
+      "note": "All 11 written, none held. Four Commons photos approved after viewing (Strata Florida, Overton, Llanfaredd, Astbury CC0 after the Geograph one scored POOR). Round 2 about 0.6M tokens with the dispatcher, roughly 54k a tree."
+    },
+    {
       "date": "2026-11-02",
       "kind": "verify",
       "target": "grazalema+alpujarras+granada+cordoba (andalucia rediam)",

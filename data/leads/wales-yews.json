@@ -67,6 +67,17 @@
    "source": "https://www.ancient-yew.org/yew_tree_database/llanfaredd/"
   }
  ],
- "blocked": [],
- "notes": "2026-11-03 Welsh yews and Snowdonia pass. Delivered six in wales-yews-verified.json. Not reached: Strata Florida, Llanfihangel-nant-Melan, Bettws Newydd, Corwen, Overton-on-Dee, Plas Newydd, Gwydir Uchaf. ancient-yew.org/yew_tree_database/<slug>/ pages fetch fine with curl; the overton-on-dee slug 404s."
+ "blocked": [
+  {
+   "name": "Corwen churchyard yew (St Mael and St Sulien)",
+   "species": "European Yew (Taxus baccata)",
+   "location": {
+    "address": "St Mael and St Sulien churchyard, Corwen, Denbighshire",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Ancient Yew Group's Denbighshire survey (Tim Hills, 5 Sep 2004) records only one yew here and it is very young; nothing remarkable to visit. Seen via search summary of the PDF, not fetched. Nearby Llangar (AYG tree 2636, 417 cm at 45 cm, near Corwen) is a modest lead, not verified."
+  }
+ ],
+ "notes": "2026-11-03 Welsh yews and Snowdonia pass. Delivered six in wales-yews-verified.json. Not reached: Strata Florida, Llanfihangel-nant-Melan, Bettws Newydd, Corwen, Overton-on-Dee, Plas Newydd, Gwydir Uchaf. ancient-yew.org/yew_tree_database/<slug>/ pages fetch fine with curl; the overton-on-dee slug 404s.\n2026-11-03 second round: Strata Florida, Llanfihangel-nant-Melan, Bettws Newydd, Overton, Mamhilad, Llanfaredd verified (sfl/lnm/bwn/ovr/mmh/llf); Corwen blocked (young yew only)."
 }

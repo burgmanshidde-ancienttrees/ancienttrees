@@ -12,6 +12,8 @@ Liverpool gains the Speke Hall yews and Cardiff three Bute Park champions; their
 meta grow with them. Every other place is one or two trees, so its place page stays out of
 Google and the trees go live as tree pages. Leeds, York, Manchester, Chester and Durham passes
 found nothing that ships (data/leads/). Woodland Trust Ancient Tree Inventory not used.
+Round 2 adds eleven churchyard yews (six in Wales, four in Cheshire, Lanercost in Cumbria), each
+its own place, from data/research/north-england-yews-verified.json and wales-yews-verified.json.
 """
 import json, os, sys
 
@@ -35,6 +37,18 @@ SOURCES = {
     "martindale": ("keswick-verified.json", ["mtd_001"]),
     "lorton": ("keswick-verified.json", ["ltn_001"]),
     "beltingham": ("newcastle-verified.json", ["blt_001"]),
+    # round 2 (2026-11-03): churchyard yews in Wales and Cheshire/Cumbria
+    "strata-florida": ("wales-yews-verified.json", ["sfl_001"]),
+    "llanfihangel-nant-melan": ("wales-yews-verified.json", ["lnm_001"]),
+    "bettws-newydd": ("wales-yews-verified.json", ["bwn_001"]),
+    "overton-on-dee": ("wales-yews-verified.json", ["ovr_001"]),
+    "mamhilad": ("wales-yews-verified.json", ["mmh_001"]),
+    "llanfaredd": ("wales-yews-verified.json", ["llf_001"]),
+    "astbury": ("north-england-yews-verified.json", ["ast_001"]),
+    "goostrey": ("north-england-yews-verified.json", ["goo_001"]),
+    "nether-alderley": ("north-england-yews-verified.json", ["nal_001"]),
+    "farndon": ("north-england-yews-verified.json", ["fdn_001"]),
+    "lanercost": ("north-england-yews-verified.json", ["lnc_001"]),
 }
 PLACE_FIELDS = ["city", "country", "status", "intro", "meta_description", "question_meta",
                 "question_answer", "question_context", "hero_tree_id", "oldest_tree_id", "faq"]

@@ -12,6 +12,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: churchyard yews round 2, 11 more trees written and held for the pace
+
+**What changed in the product (once built):** eleven more lone tree pages, each an ancient churchyard yew in its own village: in Wales Strata Florida (the plaque yew beside the abbey church), Llanfihangel-nant-Melan, Bettws Newydd (a second trunk inside the hollow shell), Overton-on-Dee (the Seven Wonders yews; the page is the ring, pin and girth on the one old propped male), Mamhilad and Llanfaredd; in Cheshire Astbury, Goostrey, Nether Alderley and Farndon; in Cumbria the Lanercost Priory yews (Ancient Yew Group sources only, flagged). Four Commons photographs approved after looking at the pixels (Strata Florida, Overton, Llanfaredd, Astbury; the first Astbury candidate scored POOR and was replaced by a CC0 one). All pins approximate, every tree a recognition line, every age written as whose claim it is. `scripts/build_uk_north.py` now builds 24 places (27 trees). Tested: preflight fails only on the pace; test build reverted, city-aliases restored.
+
+**What yielded nothing:** Corwen (one young yew), Lancashire, Greater Manchester and Merseyside. Leads waiting for a second source: Bunbury, Broughton-in-Furness, Seathwaite, Wetheral (data/leads/north-england-yews.json). About 0.6M tokens, roughly 54k a tree (round 1 was 87k).
+
 ## 2026-11-03 session: two recovery gaps closed (the pace at the push, a release lane for every cut)
 
 - **What changed in the product**: nothing a reader sees. Hidde read the Ahrefs and Search Console backlink reports (links come from press and the mails to nature organisations: Wilder, Baumkunde, Bomenstichting Den Haag, getLISBON; Reddit and Hacker News links carry nofollow) and asked whether we are doing everything to make the return go well and "geen fouten meer maken". Every switch stood in the safe position and 7,108 pages carry the Google noindex; two gaps were open and are closed:

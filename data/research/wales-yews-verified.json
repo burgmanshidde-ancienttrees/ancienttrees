@@ -1,231 +1,448 @@
 [
-  {
-    "id": "dfy_001",
-    "name": "Defynnog Yew",
-    "species": "European Yew (Taxus baccata)",
-    "age_estimate": "disputed, 1,300 to 5,000 years",
-    "age_basis": "derived",
-    "girth_cm": 1158,
-    "location": {
-      "address": "St Cynog's churchyard, Defynnog, Sennybridge, Powys LD3 8SE",
-      "latitude": 51.93946,
-      "longitude": -3.56477,
-      "neighbourhood": "Defynnog"
-    },
-    "verified_sources": [
-      "https://www.ancient-yew.org/yew_tree_database/defynnog/",
-      "https://en.wikipedia.org/wiki/Defynnog_Yew"
-    ],
-    "official_register": {
-      "name": "Ancient Yew Group database, Defynnog (Tim Hills, 1998)",
-      "url": "https://www.ancient-yew.org/yew_tree_database/defynnog/"
-    },
-    "access": "Free. Open churchyard of St Cynog's, Defynnog, in the Brecon Beacons National Park.",
-    "transport": "The TrawsCymru T6 bus between Brecon and Swansea stops in Defynnog (Lion Inn and Tanners Arms), roughly every two hours in the daytime; check the current timetable. No railway.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "photo_candidate": {
-      "file_page": "https://commons.wikimedia.org/wiki/File:The_Defynnog_Yew_trees,_Powys,_Wales.jpg",
-      "license": "CC BY 4.0",
-      "author": "Rosser1954",
-      "why_this_trunk": "file titled for the Defynnog Yew trees; more files in the same Commons set (bole, canopy, roots)"
-    },
-    "location_site": {
-      "name": "St Cynog's churchyard",
-      "radius_m": 30
-    },
-    "story": "A certificate signed by the botanist David Bellamy, kept at a café near this churchyard, says the great yew of Defynnog is about 5,000 years old. The people who have looked hardest are more cautious. Wikipedia reports that an investigation does not support the figure and calls 2,000 to 3,000 years more likely; one assessment gives 3,018. Toby Hindson of the Ancient Yew Group sets a minimum of 1,300 years, on the hard evidence the group holds. When the 5,000 figure reached the press in 2014, it came with the label of Britain's oldest tree. That is a claim several Welsh yews make, and we make it for none of them.\n\nWhat is not disputed is the size. The tree grows from a mound about eight metres across and a metre high, as nine stems with a combined girth of about 11 metres. A second, smaller yew about five metres west has been shown by DNA to be genetically identical, possibly grown from a drooping branch that touched the ground and rooted. Two more ancient yews stand on the south side, and those are not clones.\n\nThe church of St Cynog is mostly Norman and 15th century, and its porch holds a stone inscribed in both ogham and Latin. Graves have been dug between the two northern yews. Look closely at the smaller tree and you may find a small patch of albino leaves among the green.",
-    "how_to_recognise": "You can recognise it by the nine stems rising from a low mound about eight metres across, north of the church. A smaller yew stands about five metres west of it, its genetic twin."
+ {
+  "id": "dfy_001",
+  "name": "Defynnog Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "disputed, 1,300 to 5,000 years",
+  "age_basis": "derived",
+  "girth_cm": 1158,
+  "location": {
+   "address": "St Cynog's churchyard, Defynnog, Sennybridge, Powys LD3 8SE",
+   "latitude": 51.93946,
+   "longitude": -3.56477,
+   "neighbourhood": "Defynnog"
   },
-  {
-    "id": "dsc_001",
-    "name": "Discoed Yew",
-    "species": "European Yew (Taxus baccata)",
-    "age_estimate": "disputed, not documented",
-    "age_basis": "derived",
-    "girth_cm": 968,
-    "location": {
-      "address": "St Michael's churchyard, Discoed, Presteigne, Powys LD8 2NR",
-      "latitude": 52.27594,
-      "longitude": -3.06168,
-      "neighbourhood": "Discoed"
-    },
-    "verified_sources": [
-      "https://www.ancient-yew.org/yew_tree_database/discoed/",
-      "https://www.wondermondo.com/discoed-yew/"
-    ],
-    "official_register": {
-      "name": "Ancient Yew Group database, Discoed (Tim Hills, 1998)",
-      "url": "https://www.ancient-yew.org/yew_tree_database/discoed/"
-    },
-    "access": "Free. Open churchyard of St Michael's, Discoed.",
-    "transport": "No railway and no regular bus. Discoed is about 5 km west of Presteigne, a short drive or an hour's walk.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "photo_candidate": {
-      "file_page": "https://commons.wikimedia.org/wiki/File:Discoed_church_and_ancient_yew_-_geograph-2444805.jpg",
-      "license": "CC BY-SA 2.0",
-      "author": "Peter Evans",
-      "why_this_trunk": "title 'Discoed church and ancient yew' (geograph 2444805)"
-    },
-    "location_site": {
-      "name": "St Michael's churchyard",
-      "radius_m": 30
-    },
-    "story": "Popular opinion in this corner of Radnorshire makes the Discoed yew the oldest in Wales, some 5,000 years old. The figure goes back to Allen Meredith's graphs relating a yew's size to its age, and the monument guide Wondermondo, which repeats it, is careful to add that no one knows this for sure and that it is most likely not true. Several other Welsh yews carry rival claims. We back none of them.\n\nThe tree itself needs no exaggeration. The Ancient Yew Group measured it at 9.68 metres round, 90 centimetres up, in 1998; another figure in circulation is 11.28 metres, and a 1994 gazetteer put it at 22 feet. Yews this hollow and irregular are hard to measure the same way twice. It stands north of the small church of St Michael, first mentioned in 1291, with a second ancient yew in the same churchyard, 6.71 metres round, and a third notable one by the lane to the car park. A spring at the churchyard gate has become a well.\n\nNobody has dated the tree in a way that settles anything, so we give it no age. Our most recent record of it is not recent either, so if you visit St Michael's, tell us how it is doing and send a photograph.",
-    "how_to_recognise": "You can recognise it as the giant yew north of the church, the larger of the two ancient yews in the churchyard. It stands in St Michael's churchyard, Discoed; a smaller notable yew is by the car-park lane."
+  "verified_sources": [
+   "https://www.ancient-yew.org/yew_tree_database/defynnog/",
+   "https://en.wikipedia.org/wiki/Defynnog_Yew"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Defynnog (Tim Hills, 1998)",
+   "url": "https://www.ancient-yew.org/yew_tree_database/defynnog/"
   },
-  {
-    "id": "pml_001",
-    "name": "Pennant Melangell Yews",
-    "species": "European Yew (Taxus baccata)",
-    "age_estimate": "roughly 2,000 years (church's claim)",
-    "age_basis": "derived",
-    "girth_cm": 871,
-    "location": {
-      "address": "St Melangell's Church, Pennant Melangell, Llangynog, Powys SY10 0HQ",
-      "latitude": 52.82752,
-      "longitude": -3.4497,
-      "neighbourhood": "Pennant Melangell"
-    },
-    "verified_sources": [
-      "https://www.ancient-yew.org/yew_tree_database/pennant-melangell/",
-      "https://stmelangell.org/the-shrine-church-of-saint-melangell/",
-      "https://www.nationalchurchestrust.org/node/3080"
-    ],
-    "official_register": {
-      "name": "Ancient Yew Group database, Pennant Melangell (Tim Hills, 1998)",
-      "url": "https://www.ancient-yew.org/yew_tree_database/pennant-melangell/"
-    },
-    "access": "Free. Open churchyard of St Melangell's shrine church, at the end of a remote Berwyn valley road.",
-    "transport": "No railway or bus to the church. Buses reach Llangynog from Oswestry (check Traveline Cymru); from there it is about 4 miles (6 km) up the valley road on foot.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "photo_candidate": {
-      "file_page": "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree,_St_Melangell's_Church,_Pennant_Melangell,_Wales.jpg",
-      "license": "CC BY 4.0",
-      "author": "Rosser1954",
-      "why_this_trunk": "file titled ancient yew tree, St Melangell's Church"
-    },
-    "location_site": {
-      "name": "St Melangell's churchyard",
-      "radius_m": 50
-    },
-    "story": "Burial pits found at this church site have been carbon-dated to between 1500 and 1000 BC, so the round churchyard at Pennant Melangell was a burial ground long before any yew we can see here. Today it is ringed by them. Six yews grow around the circular wall, four of them ancient, the largest 8.71 metres round at its narrowest point.\n\nThe church at the centre is the 12th-century shrine of St Melangell, at the head of a dead-end valley in the Berwyn hills. Her legend says she sheltered a hunted hare under her cloak and faced down a prince and his hounds, which is why she is the patron saint of hares, and why pilgrims still come up this valley.\n\nThe church says its yews are estimated to be 2,000 years old, and the National Churches Trust gives the same figure. Both are estimates rather than measurements. Others are more cautious, noting that certificates have dated some Welsh yews to only 500 to 800 years, so treat 2,000 as the church's figure and the honest range as wide.\n\nCome for the ring rather than one trunk. The yews, the circular wall and the small shrine church make one place to stand, and an observer for the Ancient Yew Group, visiting in 2008, called it a memorable site. Four miles up a lane from Llangynog, it is not a place you pass on the way to anywhere.",
-    "how_to_recognise": "You can recognise it by the yews ringing the circular churchyard wall, the largest 8.71 metres round. They stand around St Melangell's shrine church at the head of the valley above Llangynog."
+  "access": "Free. Open churchyard of St Cynog's, Defynnog, in the Brecon Beacons National Park.",
+  "transport": "The TrawsCymru T6 bus between Brecon and Swansea stops in Defynnog (Lion Inn and Tanners Arms), roughly every two hours in the daytime; check the current timetable. No railway.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file_page": "https://commons.wikimedia.org/wiki/File:The_Defynnog_Yew_trees,_Powys,_Wales.jpg",
+   "license": "CC BY 4.0",
+   "author": "Rosser1954",
+   "why_this_trunk": "file titled for the Defynnog Yew trees; more files in the same Commons set (bole, canopy, roots)"
   },
-  {
-    "id": "lef_001",
-    "name": "Llanerfyl Yew",
-    "species": "European Yew (Taxus baccata)",
-    "age_estimate": "roughly 1,400 years (popular claim)",
-    "age_basis": "derived",
-    "girth_cm": 1067,
-    "location": {
-      "address": "St Erfyl's churchyard, Llanerfyl, Welshpool, Powys SY21 0EN",
-      "latitude": 52.67699,
-      "longitude": -3.43007,
-      "neighbourhood": "Llanerfyl"
-    },
-    "verified_sources": [
-      "https://www.ancient-yew.org/yew_tree_database/llanerfyl/",
-      "https://www.wondermondo.com/llanerfyl-yew/"
-    ],
-    "official_register": {
-      "name": "Ancient Yew Group database, Llanerfyl (Tim Hills, 1998)",
-      "url": "https://www.ancient-yew.org/yew_tree_database/llanerfyl/"
-    },
-    "access": "Free. Open churchyard of St Erfyl's, Llanerfyl.",
-    "transport": "Llanerfyl is on the A458 west of Welshpool, about 30 minutes by car. Buses along the A458 are few; check Traveline Cymru before relying on one.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "photo_candidate": {
-      "file_page": "geograph (Dave Croker and John Firth photos used by Wondermondo, CC BY-SA 2.0, file page not located)",
-      "license": "CC BY-SA 2.0",
-      "author": "Dave Croker / John Firth",
-      "why_this_trunk": "Wondermondo credits them for St Erfyl's Church and the Llanerfyl Yew; Commons file page not yet found"
-    },
-    "location_site": {
-      "name": "St Erfyl's churchyard",
-      "radius_m": 30
-    },
-    "story": "What looks like four yews standing in a circle is reported to be a single tree. The trunks at St Erfyl's measure 10.67 metres around all four together, and DNA work is said to show they are one organism, even though three of the stems are recorded as female and one as male.\n\nIt has been admired for a long time. Lewis's Topographical Dictionary of Wales called it one of the finest yew-trees in the principality, and an account of 1872 named it the mother yew of Montgomeryshire. Its legend is older still. St Padarn is said to have left his staff, Cyrwen, here in the late sixth or early seventh century, and the yew grew from it.\n\nThe ground beneath it held something real. In 1915 a stone inscribed in the fifth or sixth century was taken from under the tree, and it is now on display inside the church. A low wall circles the yew today.\n\nThe age you will see quoted, about 1,400 years, rests on the legend and on a blog rather than any measurement, so we call it ancient and leave the number open. If you know of better evidence, tell us. Llanerfyl is a small village on the A458 west of Welshpool, and the churchyard is the reason to stop.",
-    "how_to_recognise": "You can recognise it by its four trunks standing in a ring inside a low wall. It stands in St Erfyl's churchyard in the centre of Llanerfyl."
+  "location_site": {
+   "name": "St Cynog's churchyard",
+   "radius_m": 30
   },
-  {
-    "id": "gfd_001",
-    "name": "Gresford Yew",
-    "species": "European Yew (Taxus baccata)",
-    "age_estimate": "ancient, older than the 13th-century church (Ancient Yew Group); no measured age",
-    "age_basis": "source",
-    "girth_cm": 899,
-    "location": {
-      "address": "All Saints' churchyard, Church Street, Gresford, Wrexham LL12 8RG",
-      "latitude": 53.08792,
-      "longitude": -2.97749,
-      "neighbourhood": "Gresford"
-    },
-    "verified_sources": [
-      "https://www.ancient-yew.org/yew_tree_database/gresford/",
-      "https://en.wikipedia.org/wiki/All_Saints%27_Church,_Gresford"
-    ],
-    "official_register": {
-      "name": "Ancient Yew Group database, Gresford (Tim Hills, 1999)",
-      "url": "https://www.ancient-yew.org/yew_tree_database/gresford/"
-    },
-    "access": "Free. Open churchyard of All Saints', Gresford.",
-    "transport": "Buses between Wrexham and Chester stop in Gresford, a short walk from the church; check the operator's timetable. Gresford no longer has a railway station.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "photo_candidate": {
-      "file_page": "https://commons.wikimedia.org/wiki/File:Ancient_yew_at_All_Saints',_Gresford_-_geograph.org.uk_-_1464989.jpg",
-      "license": "CC BY-SA 2.0",
-      "author": "John S Turner",
-      "why_this_trunk": "title 'Ancient yew at All Saints', Gresford'"
-    },
-    "location_site": {
-      "name": "All Saints' churchyard",
-      "radius_m": 50
-    },
-    "story": "The Seven Wonders of Wales rhyme remembers Gresford for its church bells. It could have picked the yew. The Ancient Yew Group says the Gresford Yew is certainly older than the 13th-century fabric of All Saints', and it measured the trunk at 8.99 metres round in 1999.\n\nIt does not stand alone. The churchyard holds 33 younger yews, and the church lists them among its remarkable features. Wikipedia's account of the church says this one was already an ancient tree when Richard II ordered yews planted for longbows, which would make it old in the 14th century.\n\nEverything else about its age is guesswork, and we would rather say so. No one has published a measured age, and the round numbers you may hear are not ones we can trace. Ancient is the honest word, and the 13th-century church is the firmest clue.\n\nIt was already an old tree when the Gresford colliery disaster of 1934 killed 266 men underground.\n\nThe churchyard is open. Find the biggest of the yews; at nearly nine metres round, it is not hard.",
-    "how_to_recognise": "You can recognise it by its size, nearly nine metres round, far bigger than any of the 33 younger yews around it. It stands in All Saints' churchyard, Gresford."
+  "story": "A certificate signed by the botanist David Bellamy, kept at a café near this churchyard, says the great yew of Defynnog is about 5,000 years old. The people who have looked hardest are more cautious. Wikipedia reports that an investigation does not support the figure and calls 2,000 to 3,000 years more likely; one assessment gives 3,018. Toby Hindson of the Ancient Yew Group sets a minimum of 1,300 years, on the hard evidence the group holds. When the 5,000 figure reached the press in 2014, it came with the label of Britain's oldest tree. That is a claim several Welsh yews make, and we make it for none of them.\n\nWhat is not disputed is the size. The tree grows from a mound about eight metres across and a metre high, as nine stems with a combined girth of about 11 metres. A second, smaller yew about five metres west has been shown by DNA to be genetically identical, possibly grown from a drooping branch that touched the ground and rooted. Two more ancient yews stand on the south side, and those are not clones.\n\nThe church of St Cynog is mostly Norman and 15th century, and its porch holds a stone inscribed in both ogham and Latin. Graves have been dug between the two northern yews. Look closely at the smaller tree and you may find a small patch of albino leaves among the green.",
+  "how_to_recognise": "You can recognise it by the nine stems rising from a low mound about eight metres across, north of the church. A smaller yew stands about five metres west of it, its genetic twin."
+ },
+ {
+  "id": "dsc_001",
+  "name": "Discoed Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "disputed, not documented",
+  "age_basis": "derived",
+  "girth_cm": 968,
+  "location": {
+   "address": "St Michael's churchyard, Discoed, Presteigne, Powys LD8 2NR",
+   "latitude": 52.27594,
+   "longitude": -3.06168,
+   "neighbourhood": "Discoed"
   },
-  {
-    "id": "nvn_001",
-    "name": "Bleeding Yew of Nevern",
-    "species": "European Yew (Taxus baccata)",
-    "age_estimate": "not documented, the avenue is put at roughly 600 to 700 years",
-    "age_basis": "derived",
-    "girth_cm": null,
-    "location": {
-      "address": "St Brynach's churchyard, Nevern, Newport, Pembrokeshire SA42 0NF",
-      "latitude": 52.02548,
-      "longitude": -4.79519,
-      "neighbourhood": "Nevern"
-    },
-    "verified_sources": [
-      "https://www.ancient-yew.org/yew_tree_database/nevern/",
-      "https://www.pembrokeshirecoast.wales/about-the-national-park/culture-and-heritage/land-of-legends/nevern/"
-    ],
-    "official_register": {
-      "name": "Ancient Yew Group database, Nevern (Tim Hills, 1999)",
-      "url": "https://www.ancient-yew.org/yew_tree_database/nevern/"
-    },
-    "access": "Free. Open churchyard of St Brynach's, Nevern.",
-    "transport": "No railway. Nevern is about 3 km east of Newport, Pembrokeshire; buses on the Fishguard to Cardigan road pass the turning, check Traveline Cymru. The coastal Poppit Rocket runs in summer.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "photo_candidate": {
-      "file_page": "https://commons.wikimedia.org/wiki/File:A_Bleeding_Yew,_Nevern_Churchyard_-_geograph.org.uk_-_7317434.jpg",
-      "license": "CC BY-SA 2.0",
-      "author": "Jeff Gogarty",
-      "why_this_trunk": "title 'A Bleeding Yew, Nevern Churchyard'"
-    },
-    "location_site": {
-      "name": "St Brynach's churchyard",
-      "radius_m": 30
-    },
-    "story": "The second yew on the right as you walk up to St Brynach's church weeps a dark red-brown sap from a broken stub, and thousands of people come every year to see it. The Ancient Yew Group is blunt about the avenue it stands in. These yews are of no great age, it says, and are on its list only because of the bleeding one.\n\nWhy it bleeds is the question the Pembrokeshire Coast National Park asks on its own page about the tree, along with when it will stop. Legend has its answers. One links it to the Crucifixion. Another says it will bleed until a Welsh prince rules again from Nevern Castle, on the hill above the village.\n\nThe churchyard has older witnesses than the tree. A carved Celtic cross dates from the late tenth or early eleventh century, and the Vitalianus stone, inscribed in Latin and ogham, stands nearby. The church itself was built around 1380 on the site of St Brynach's early foundation.\n\nThe avenue is sometimes put at 600 to 700 years, a figure we could not trace to a firm source, and nobody has recorded this tree's girth. If you can add either, tell us.\n\nNothing else in the churchyard looks like it.",
-    "how_to_recognise": "You can recognise it by the dark red sap running from a broken stub on its trunk. It is the second yew on the right of the avenue leading to the church door at St Brynach's."
-  }
+  "verified_sources": [
+   "https://www.ancient-yew.org/yew_tree_database/discoed/",
+   "https://www.wondermondo.com/discoed-yew/"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Discoed (Tim Hills, 1998)",
+   "url": "https://www.ancient-yew.org/yew_tree_database/discoed/"
+  },
+  "access": "Free. Open churchyard of St Michael's, Discoed.",
+  "transport": "No railway and no regular bus. Discoed is about 5 km west of Presteigne, a short drive or an hour's walk.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file_page": "https://commons.wikimedia.org/wiki/File:Discoed_church_and_ancient_yew_-_geograph-2444805.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Peter Evans",
+   "why_this_trunk": "title 'Discoed church and ancient yew' (geograph 2444805)"
+  },
+  "location_site": {
+   "name": "St Michael's churchyard",
+   "radius_m": 30
+  },
+  "story": "Popular opinion in this corner of Radnorshire makes the Discoed yew the oldest in Wales, some 5,000 years old. The figure goes back to Allen Meredith's graphs relating a yew's size to its age, and the monument guide Wondermondo, which repeats it, is careful to add that no one knows this for sure and that it is most likely not true. Several other Welsh yews carry rival claims. We back none of them.\n\nThe tree itself needs no exaggeration. The Ancient Yew Group measured it at 9.68 metres round, 90 centimetres up, in 1998; another figure in circulation is 11.28 metres, and a 1994 gazetteer put it at 22 feet. Yews this hollow and irregular are hard to measure the same way twice. It stands north of the small church of St Michael, first mentioned in 1291, with a second ancient yew in the same churchyard, 6.71 metres round, and a third notable one by the lane to the car park. A spring at the churchyard gate has become a well.\n\nNobody has dated the tree in a way that settles anything, so we give it no age. Our most recent record of it is not recent either, so if you visit St Michael's, tell us how it is doing and send a photograph.",
+  "how_to_recognise": "You can recognise it as the giant yew north of the church, the larger of the two ancient yews in the churchyard. It stands in St Michael's churchyard, Discoed; a smaller notable yew is by the car-park lane."
+ },
+ {
+  "id": "pml_001",
+  "name": "Pennant Melangell Yews",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "roughly 2,000 years (church's claim)",
+  "age_basis": "derived",
+  "girth_cm": 871,
+  "location": {
+   "address": "St Melangell's Church, Pennant Melangell, Llangynog, Powys SY10 0HQ",
+   "latitude": 52.82752,
+   "longitude": -3.4497,
+   "neighbourhood": "Pennant Melangell"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/yew_tree_database/pennant-melangell/",
+   "https://stmelangell.org/the-shrine-church-of-saint-melangell/",
+   "https://www.nationalchurchestrust.org/node/3080"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Pennant Melangell (Tim Hills, 1998)",
+   "url": "https://www.ancient-yew.org/yew_tree_database/pennant-melangell/"
+  },
+  "access": "Free. Open churchyard of St Melangell's shrine church, at the end of a remote Berwyn valley road.",
+  "transport": "No railway or bus to the church. Buses reach Llangynog from Oswestry (check Traveline Cymru); from there it is about 4 miles (6 km) up the valley road on foot.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file_page": "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree,_St_Melangell's_Church,_Pennant_Melangell,_Wales.jpg",
+   "license": "CC BY 4.0",
+   "author": "Rosser1954",
+   "why_this_trunk": "file titled ancient yew tree, St Melangell's Church"
+  },
+  "location_site": {
+   "name": "St Melangell's churchyard",
+   "radius_m": 50
+  },
+  "story": "Burial pits found at this church site have been carbon-dated to between 1500 and 1000 BC, so the round churchyard at Pennant Melangell was a burial ground long before any yew we can see here. Today it is ringed by them. Six yews grow around the circular wall, four of them ancient, the largest 8.71 metres round at its narrowest point.\n\nThe church at the centre is the 12th-century shrine of St Melangell, at the head of a dead-end valley in the Berwyn hills. Her legend says she sheltered a hunted hare under her cloak and faced down a prince and his hounds, which is why she is the patron saint of hares, and why pilgrims still come up this valley.\n\nThe church says its yews are estimated to be 2,000 years old, and the National Churches Trust gives the same figure. Both are estimates rather than measurements. Others are more cautious, noting that certificates have dated some Welsh yews to only 500 to 800 years, so treat 2,000 as the church's figure and the honest range as wide.\n\nCome for the ring rather than one trunk. The yews, the circular wall and the small shrine church make one place to stand, and an observer for the Ancient Yew Group, visiting in 2008, called it a memorable site. Four miles up a lane from Llangynog, it is not a place you pass on the way to anywhere.",
+  "how_to_recognise": "You can recognise it by the yews ringing the circular churchyard wall, the largest 8.71 metres round. They stand around St Melangell's shrine church at the head of the valley above Llangynog."
+ },
+ {
+  "id": "lef_001",
+  "name": "Llanerfyl Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "roughly 1,400 years (popular claim)",
+  "age_basis": "derived",
+  "girth_cm": 1067,
+  "location": {
+   "address": "St Erfyl's churchyard, Llanerfyl, Welshpool, Powys SY21 0EN",
+   "latitude": 52.67699,
+   "longitude": -3.43007,
+   "neighbourhood": "Llanerfyl"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/yew_tree_database/llanerfyl/",
+   "https://www.wondermondo.com/llanerfyl-yew/"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Llanerfyl (Tim Hills, 1998)",
+   "url": "https://www.ancient-yew.org/yew_tree_database/llanerfyl/"
+  },
+  "access": "Free. Open churchyard of St Erfyl's, Llanerfyl.",
+  "transport": "Llanerfyl is on the A458 west of Welshpool, about 30 minutes by car. Buses along the A458 are few; check Traveline Cymru before relying on one.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file_page": "geograph (Dave Croker and John Firth photos used by Wondermondo, CC BY-SA 2.0, file page not located)",
+   "license": "CC BY-SA 2.0",
+   "author": "Dave Croker / John Firth",
+   "why_this_trunk": "Wondermondo credits them for St Erfyl's Church and the Llanerfyl Yew; Commons file page not yet found"
+  },
+  "location_site": {
+   "name": "St Erfyl's churchyard",
+   "radius_m": 30
+  },
+  "story": "What looks like four yews standing in a circle is reported to be a single tree. The trunks at St Erfyl's measure 10.67 metres around all four together, and DNA work is said to show they are one organism, even though three of the stems are recorded as female and one as male.\n\nIt has been admired for a long time. Lewis's Topographical Dictionary of Wales called it one of the finest yew-trees in the principality, and an account of 1872 named it the mother yew of Montgomeryshire. Its legend is older still. St Padarn is said to have left his staff, Cyrwen, here in the late sixth or early seventh century, and the yew grew from it.\n\nThe ground beneath it held something real. In 1915 a stone inscribed in the fifth or sixth century was taken from under the tree, and it is now on display inside the church. A low wall circles the yew today.\n\nThe age you will see quoted, about 1,400 years, rests on the legend and on a blog rather than any measurement, so we call it ancient and leave the number open. If you know of better evidence, tell us. Llanerfyl is a small village on the A458 west of Welshpool, and the churchyard is the reason to stop.",
+  "how_to_recognise": "You can recognise it by its four trunks standing in a ring inside a low wall. It stands in St Erfyl's churchyard in the centre of Llanerfyl."
+ },
+ {
+  "id": "gfd_001",
+  "name": "Gresford Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "ancient, older than the 13th-century church (Ancient Yew Group); no measured age",
+  "age_basis": "source",
+  "girth_cm": 899,
+  "location": {
+   "address": "All Saints' churchyard, Church Street, Gresford, Wrexham LL12 8RG",
+   "latitude": 53.08792,
+   "longitude": -2.97749,
+   "neighbourhood": "Gresford"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/yew_tree_database/gresford/",
+   "https://en.wikipedia.org/wiki/All_Saints%27_Church,_Gresford"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Gresford (Tim Hills, 1999)",
+   "url": "https://www.ancient-yew.org/yew_tree_database/gresford/"
+  },
+  "access": "Free. Open churchyard of All Saints', Gresford.",
+  "transport": "Buses between Wrexham and Chester stop in Gresford, a short walk from the church; check the operator's timetable. Gresford no longer has a railway station.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file_page": "https://commons.wikimedia.org/wiki/File:Ancient_yew_at_All_Saints',_Gresford_-_geograph.org.uk_-_1464989.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "John S Turner",
+   "why_this_trunk": "title 'Ancient yew at All Saints', Gresford'"
+  },
+  "location_site": {
+   "name": "All Saints' churchyard",
+   "radius_m": 50
+  },
+  "story": "The Seven Wonders of Wales rhyme remembers Gresford for its church bells. It could have picked the yew. The Ancient Yew Group says the Gresford Yew is certainly older than the 13th-century fabric of All Saints', and it measured the trunk at 8.99 metres round in 1999.\n\nIt does not stand alone. The churchyard holds 33 younger yews, and the church lists them among its remarkable features. Wikipedia's account of the church says this one was already an ancient tree when Richard II ordered yews planted for longbows, which would make it old in the 14th century.\n\nEverything else about its age is guesswork, and we would rather say so. No one has published a measured age, and the round numbers you may hear are not ones we can trace. Ancient is the honest word, and the 13th-century church is the firmest clue.\n\nIt was already an old tree when the Gresford colliery disaster of 1934 killed 266 men underground.\n\nThe churchyard is open. Find the biggest of the yews; at nearly nine metres round, it is not hard.",
+  "how_to_recognise": "You can recognise it by its size, nearly nine metres round, far bigger than any of the 33 younger yews around it. It stands in All Saints' churchyard, Gresford."
+ },
+ {
+  "id": "nvn_001",
+  "name": "Bleeding Yew of Nevern",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "not documented, the avenue is put at roughly 600 to 700 years",
+  "age_basis": "derived",
+  "girth_cm": null,
+  "location": {
+   "address": "St Brynach's churchyard, Nevern, Newport, Pembrokeshire SA42 0NF",
+   "latitude": 52.02548,
+   "longitude": -4.79519,
+   "neighbourhood": "Nevern"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/yew_tree_database/nevern/",
+   "https://www.pembrokeshirecoast.wales/about-the-national-park/culture-and-heritage/land-of-legends/nevern/"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Nevern (Tim Hills, 1999)",
+   "url": "https://www.ancient-yew.org/yew_tree_database/nevern/"
+  },
+  "access": "Free. Open churchyard of St Brynach's, Nevern.",
+  "transport": "No railway. Nevern is about 3 km east of Newport, Pembrokeshire; buses on the Fishguard to Cardigan road pass the turning, check Traveline Cymru. The coastal Poppit Rocket runs in summer.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file_page": "https://commons.wikimedia.org/wiki/File:A_Bleeding_Yew,_Nevern_Churchyard_-_geograph.org.uk_-_7317434.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Jeff Gogarty",
+   "why_this_trunk": "title 'A Bleeding Yew, Nevern Churchyard'"
+  },
+  "location_site": {
+   "name": "St Brynach's churchyard",
+   "radius_m": 30
+  },
+  "story": "The second yew on the right as you walk up to St Brynach's church weeps a dark red-brown sap from a broken stub, and thousands of people come every year to see it. The Ancient Yew Group is blunt about the avenue it stands in. These yews are of no great age, it says, and are on its list only because of the bleeding one.\n\nWhy it bleeds is the question the Pembrokeshire Coast National Park asks on its own page about the tree, along with when it will stop. Legend has its answers. One links it to the Crucifixion. Another says it will bleed until a Welsh prince rules again from Nevern Castle, on the hill above the village.\n\nThe churchyard has older witnesses than the tree. A carved Celtic cross dates from the late tenth or early eleventh century, and the Vitalianus stone, inscribed in Latin and ogham, stands nearby. The church itself was built around 1380 on the site of St Brynach's early foundation.\n\nThe avenue is sometimes put at 600 to 700 years, a figure we could not trace to a firm source, and nobody has recorded this tree's girth. If you can add either, tell us.\n\nNothing else in the churchyard looks like it.",
+  "how_to_recognise": "You can recognise it by the dark red sap running from a broken stub on its trunk. It is the second yew on the right of the avenue leading to the church door at St Brynach's."
+ },
+ {
+  "id": "sfl_001",
+  "name": "Dafydd ap Gwilym Yew, Strata Florida",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 670,
+  "location": {
+   "address": "St Mary's churchyard, Strata Florida (Ystrad Fflur), Pontrhydfendigaid, Ceredigion SY25 6BT",
+   "latitude": 52.27563,
+   "longitude": -3.83872,
+   "neighbourhood": "Strata Florida"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/wp-content/uploads/2022/11/Strata-Florida-2025.pdf",
+   "https://en.wikipedia.org/wiki/To_the_Yew_Tree_Above_Dafydd_ap_Gwilym%27s_Grave",
+   "https://coflein.gov.uk/en/site/418299",
+   "http://www.discoveringbritain.org/activities/wales/trails/strata-florida-trail"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group, Strata Florida site report (Tim Hills, 2025)",
+   "url": "https://www.ancient-yew.org/wp-content/uploads/2022/11/Strata-Florida-2025.pdf"
+  },
+  "access": "Free. Open churchyard of St Mary's, beside the abbey ruins in Cadw's care. Enter by the main lych-gate and follow the path to the yew left of the church. Free parking outside the church.",
+  "transport": "No railway. Strata Florida is near Pontrhydfendigaid, about 15 miles from Aberystwyth; check Traveline Cymru for buses. Free parking outside the church.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "St Mary's churchyard, Strata Florida",
+   "radius_m": 30
+  },
+  "curation_status": "ai_generated",
+  "story": "In the 1530s the antiquary John Leland counted 39 great yews in this churchyard. Two are left, and nobody can say which, if either, stands over the grave that made them famous.\n\nDafydd ap Gwilym, the fourteenth-century Welsh poet, is said to be buried at Strata Florida beside a yew. The tradition comes from a poem by his near-contemporary Gruffudd Gryg, addressed to the yew above the grave. Scholars are divided over whether the poet lies here at all or at Talley, and both the Ancient Yew Group and Wikipedia say there is no evidence that either surviving tree is the one in the poem.\n\nThe honour has moved anyway. In 1854 George Borrow knelt at the other yew, the broken male by the road north-east of the church, and early postcards labelled that tree as Dafydd's. Later the plaque went to the female yew beside the church path, and that is the tree visitors are sent to now.\n\nIt has had a hard two centuries. Meyrick found few yews left here in 1810, Lees three battered ones in 1874. Allen Meredith put this one at over 22 feet round in 1986, about 6.7 metres. It was cut back hard after storm damage in 2002, and the Ancient Yew Group reports many green branches since. The abbey ruins stand next door.\n\nNo source we found gives either yew an age. If you know of one, tell us.",
+  "how_to_recognise": "You can recognise it by the low stone wall circling its hollow trunk, with the Dafydd ap Gwilym plaque at the opening. It stands left of the church as you enter by the lych-gate; the broken yew by the road is Borrow's."
+ },
+ {
+  "id": "lnm_001",
+  "name": "Llanfihangel-nant-Melan Yews",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 811,
+  "location": {
+   "address": "St Michael's churchyard, Llanfihangel-nant-Melan, near New Radnor, Powys LD8 2TN",
+   "latitude": 52.21571,
+   "longitude": -3.20148,
+   "neighbourhood": "Llanfihangel-nant-Melan"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/wp-content/uploads/2022/11/Llanfihangel-Nant-Melan-2025.pdf",
+   "https://www.ancient-yew.org/yew_tree_database/llanfihangel-nant-melan/",
+   "https://heneb.org.uk/archive/cpat/Archive/churches/radnor/16855.htm",
+   "https://visionofbritain.org.uk/place/4504"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Llanfihangel-nant-Melan (tree 114 and 115 to 117)",
+   "url": "https://ancient-yew.org/yew_trees/llanfihangel-nant-melan-114"
+  },
+  "access": "Free. Open churchyard on a hill-slope. The church itself has been found locked.",
+  "transport": "Rural, on the road between New Radnor and Kington. Check Traveline Cymru for buses before relying on one.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "St Michael's churchyard, Llanfihangel-nant-Melan",
+   "radius_m": 40
+  },
+  "curation_status": "ai_generated",
+  "story": "A stone about four feet long lies half buried at the foot of one of the yews here, too heavy for one person to move, and the Ancient Yew Group thinks it may carry pre-Norman carving. Local tradition goes further. It says St Michael's was set inside a stone circle, with one of the stones caught in a yew's trunk.\n\nNobody has proved that, and the Group admits little is known of the site's origins. What it can point to is a churchyard that was once roughly round, and a close-set arc of old yews on the south side of the church. The Clwyd-Powys Archaeological Trust counted five mature yews there in 1995, with a sixth already cut down, and Reg Wheeler had recorded the loss of several others in 1982.\n\nThe biggest stands to the south-west, on a mound. Wheeler measured it at 30 feet 2 inches when it still had three stems. One has since gone to a stump, and the Group's figure of 8.11 metres at the ground includes it; the two living stems together make about 21 feet. A recorder in 2015 found the foliage green and the tree growing well.\n\nThe church is younger than its trees. It was rebuilt in 1846, and a gazetteer of the early 1870s described it on its hill-slope, surrounded by old yew trees. No source gives any of them an age, so we leave that open. The church may be locked, but the churchyard is not.",
+  "how_to_recognise": "You can recognise it by its split, two-stemmed bulk on a mound south-west of the church. The hollow shell next to it, to the west-south-west, has a large stone lying at its foot."
+ },
+ {
+  "id": "bwn_001",
+  "name": "Bettws Newydd Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 1006,
+  "location": {
+   "address": "St Aeddan's churchyard, Bettws Newydd, near Usk, Monmouthshire NP15 1JN",
+   "latitude": 51.74792,
+   "longitude": -2.92527,
+   "neighbourhood": "Bettws Newydd"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/wp-content/uploads/2022/11/Bettws-Newydd-2025c.pdf",
+   "https://ancient-yew.org/yew_trees/bettws-newydd-281",
+   "https://en.wikipedia.org/wiki/Church_of_St_Aeddan,_Bettws_Newydd",
+   "https://www.wondermondo.com/yews-at-bettws-newydd-church/"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Bettws Newydd tree 281 (Tim Hills, 1997; revisited 2025)",
+   "url": "https://ancient-yew.org/yew_trees/bettws-newydd-281"
+  },
+  "access": "Free. Open churchyard of St Aeddan's, a Grade I listed church that reopened in 2024 after storm damage.",
+  "transport": "Rural, between Abergavenny and Usk. The nearest railway is at Abergavenny; check Traveline Cymru for buses.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "St Aeddan's churchyard, Bettws Newydd",
+   "radius_m": 30
+  },
+  "curation_status": "ai_generated",
+  "story": "Inside the hollow shell of the big yew at St Aeddan's stands another trunk, a column of new wood the old tree has grown within itself. Tim Hills of the Ancient Yew Group measured that inner stem at 6 feet 6 inches round in 2025. The shell around it is 33 feet, about ten metres, by the figure in The Sacred Yew of 1994.\n\nThe tape has been round it for nearly 150 years. The Gardeners' Chronicle gave 30 feet 6 inches in 1877, Hyde and Harrison 31 feet a century later, Allen Meredith 33 feet in 1983. The monument guide Wondermondo calls it one of the largest yews in the UK. That ranking is theirs.\n\nTwo more big yews share the churchyard, both male. One leans towards the church on the east side, its trunk dividing about ten feet up. The other was half lost in undergrowth by the north wall when the Group last looked.\n\nThe church is said to stand where St Aedan of Ferns had an oratory before AD 570, though nothing of that survives. The building probably began in the 12th century, most of what stands is 15th-century, and the yews were first written down in 1848. Storm Dennis closed the church in 2020; it reopened in 2024.\n\nNobody has published an age for the tree, and we will not guess one. If you know of a credible figure, tell us.",
+  "how_to_recognise": "You can recognise it by the slender second stem standing inside its hollow, battered shell. It stands beside the path on the west side of St Aeddan's church."
+ },
+ {
+  "id": "ovr_001",
+  "name": "Overton Yews",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "not documented by AYG; Wikipedia says 1,500 to 2,000 years for the oldest",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 478,
+  "location": {
+   "address": "St Mary the Virgin churchyard, Overton-on-Dee, Wrexham LL13 0LE",
+   "latitude": 52.97007,
+   "longitude": -2.93481,
+   "neighbourhood": "Overton-on-Dee"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/userfiles/file/Overton-on-Dee-2019.pdf",
+   "https://en.wikipedia.org/wiki/Seven_Wonders_of_Wales",
+   "https://en.wikipedia.org/wiki/Overton-on-Dee",
+   "https://commons.wikimedia.org/wiki/File:Yew_Tree,_St_Mary%27s_Overton-on-Dee_-_geograph.org.uk_-_566977.jpg"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group, Overton-on-Dee site report (Tim Hills, 2019)",
+   "url": "https://www.ancient-yew.org/userfiles/file/Overton-on-Dee-2019.pdf"
+  },
+  "access": "Free. Open churchyard of St Mary the Virgin in the village centre.",
+  "transport": "No railway station in the village; check Traveline Cymru for buses.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "St Mary's churchyard, Overton-on-Dee",
+   "radius_m": 50
+  },
+  "curation_status": "ai_generated",
+  "story": "Overton's churchyard yews are one of the Seven Wonders of Wales, and by the Ancient Yew Group's account only one of them is of great age.\n\nThe wonder comes from an anonymous rhyme, probably written by an English visitor in the late 18th or early 19th century, which sets the Overton yew trees beside Snowdon, Pistyll Rhaeadr and Llangollen bridge. It means the ring of yews round the churchyard of St Mary the Virgin, not one tree. People have counted them ever since. Edward Jones found 25 in 1802, John Lowe 22 in 1896, the Ancient Yew Group 23 in 1999. Queen Elizabeth II planted another in 1992.\n\nMost are perimeter trees of no great size. The old one is different. It is a male yew north-west of the church, hollow and broken into fragments, held together by yew props and clamps, with railings put round it in 2004. Measured round three of its fragments it came to 15 feet 8 inches in 1999. That is not a large girth for an ancient yew. It is a very broken one.\n\nWikipedia gives the oldest tree here 1,500 to 2,000 years, and the same range turns up in a photo caption of 2007. The Ancient Yew Group gives no age, and neither figure rests on a measurement, so read it as a claim. A photograph from March 2025 shows the propped tree standing.\n\nThe churchyard is a registered historic park and garden, in the middle of the village.",
+  "how_to_recognise": "You can recognise it by the props and clamps holding its hollow, broken trunk together inside a ring of railings. It stands north-west of the church; the other yews round the edge of the churchyard are younger."
+ },
+ {
+  "id": "mmh_001",
+  "name": "Mamhilad Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "over 2,000 years by one source; not dated by AYG",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 953,
+  "location": {
+   "address": "St Illtyd's churchyard, Mamhilad, near Pontypool, Monmouthshire NP4 8QY",
+   "latitude": 51.72518,
+   "longitude": -3.00698,
+   "neighbourhood": "Mamhilad"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/wp-content/uploads/2022/11/Mamhilad-2025.pdf",
+   "https://ancient-yew.org/yew_trees/mamhilad-587",
+   "https://www.walkwheelcycletrust.org.uk/our-blog/national-cycle-network-route-collections/ancient-trees-on-the-national-cycle-network/",
+   "https://commons.wikimedia.org/wiki/File:St_Illtyds_Church,_Mamhilad_-_geograph.org.uk_-_817787.jpg"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Mamhilad tree 587 (Tim Hills, 2014)",
+   "url": "https://ancient-yew.org/yew_trees/mamhilad-587"
+  },
+  "access": "Free. Open churchyard of St Illtyd's, a short detour along Folly Lane from the Monmouthshire and Brecon Canal towpath.",
+  "transport": "Walkable from the Monmouthshire and Brecon Canal towpath (National Cycle Network Route 49) by a short detour along Folly Lane; about 2 miles north-east of Pontypool. Check Traveline Cymru for buses.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "St Illtyd's churchyard, Mamhilad",
+   "radius_m": 30
+  },
+  "curation_status": "ai_generated",
+  "story": "In 1880 the antiquary T. H. Thomas called the Mamhilad yew the Queen of the local yews, if the Llanthewy tree be the King. By then it had been measured for eighty years, and the record has kept going.\n\nWilliam Coxe gave it 25 feet round in 1799. Loudon recorded 29 feet 4 inches about 1840, Lees 30 feet 7 inches in 1851, the Reverend Cook 30 feet 9 inches in 1895. Tim Hills of the Ancient Yew Group found 31 feet 3 inches at the ground in 1999 and again in 2014, which is 9.53 metres, and Peter Norton 31 feet 7 inches in 2017. The tapes went round at different heights, so the early figures are rough, but they span more than two centuries.\n\nThe tree has split into several trunks from a low bole, and a separate stem grows up inside the hollow. Loudon put that inner tree at 6 feet round; Allen Meredith found 10 feet in 1981. By 1880 someone had built a stone seat against the old trunk.\n\nThe Walk Wheel Cycle Trust, which sends canal cyclists here, says the yew is over 2,000 years old, and a 2008 photo caption says 2,500. The Ancient Yew Group gives no age and nobody has measured one, so treat both as claims.\n\nIt stands by the south porch of St Illtyd's, in a churchyard of eleven yews, several more of them ancient or veteran.",
+  "how_to_recognise": "You can recognise it by the hulk split into several trunks with a smaller tree growing up inside the opening, best seen from the side away from the porch. It stands right by the south porch of St Illtyd's."
+ },
+ {
+  "id": "llf_001",
+  "name": "Llanfaredd Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "not documented; Church in Wales record says 'believed to be 3000 year old'",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 922,
+  "location": {
+   "address": "St Mary's churchyard, Llanfaredd, near Builth Wells, Powys LD2 3RA",
+   "latitude": 52.14705,
+   "longitude": -3.36141,
+   "neighbourhood": "Llanfaredd"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/userfiles/file/Llanfaredd%202019.pdf",
+   "https://www.ancient-yew.org/yew_trees/llanfaredd-96/",
+   "https://heneb.org.uk/archive/cpat/Archive/churches/radnor/16848.htm",
+   "https://heritage.churchinwales.org.uk/CHR/ChurchDetails.aspx?id=4337",
+   "https://www.wondermondo.com/yew-at-llanfaredd/"
+  ],
+  "official_register": {
+   "name": "Ancient Yew Group database, Llanfaredd tree 96 (Tim Hills, Paul Wood 2015)",
+   "url": "https://www.ancient-yew.org/yew_trees/llanfaredd-96/"
+  },
+  "access": "Free. Open churchyard of St Mary's, through the lych gate; the churchyard is still used for burials.",
+  "transport": "About 3 km east of Builth Wells, on the east side of the Wye valley. Check Traveline Cymru for buses.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "St Mary's churchyard, Llanfaredd",
+   "radius_m": 30
+  },
+  "curation_status": "ai_generated",
+  "story": "The Llanfaredd yew was measured at 36 feet round in 1811 and at 30 feet 3 inches in 2015. The tape has gone round at different heights over those two centuries, three feet up in 1982 and two in 1998, so the figures say as much about the measuring as about the tree.\n\nIn 1874 the diarist Francis Kilvert wrote that the little church was half hidden by its great yew. It still fills the west side of the churchyard, a battered trunk with a complex of interlocking hollows low down and, when a recorder looked in 2000, a full crown above them. A smaller yew stands near the south-west entrance.\n\nHow old is it? The Church in Wales heritage record says one yew here is believed to be 3,000 years old. It names no source, and the same record says elsewhere that no notable trees are connected with the church, so it contradicts itself. The Ancient Yew Group says there is no agreement even about the age of the site. Some think it early medieval. Others point to the tumuli on the hill and a spring east of the church and suggest something older. The evidence, the Group says, is yet to be found.\n\nThe church has a bell reported to date from about 1280 and was largely rebuilt in 1891. The churchyard is still used for burials, on the east side of the Wye valley about 3 km from Builth Wells.",
+  "how_to_recognise": "You can recognise it by its size, one huge hollow yew far bigger than the smaller one near the south-west gate. It stands on the west side of the little church of St Mary."
+ }
 ]

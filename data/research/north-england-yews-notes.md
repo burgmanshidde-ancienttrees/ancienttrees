@@ -1,0 +1,5 @@
+# north-england-yews pass (2026-11-03)
+Searched: Ancient Yew Group database pages and PDFs (Chester diocese intro, Cumbria girth grid 2022, Wilkinson 1997 Cumbria survey, per-site sheets) fetched locally. Cheshire: Astbury, Goostrey, Nether Alderley, Farndon verified; Bunbury, Wybunbury, Prestbury, Eastham leads. Cumbria: Lanercost verified (flagged); Broughton-in-Furness, Seathwaite, Wetheral leads. Lancashire / Greater Manchester / Merseyside: nothing found; the AYG Cumbria-former-Lancashire PDF was not opened.
+Photo candidates: only Astbury (Geograph/Commons, several CC BY-SA 2.0 and one CC0). Commons and Geograph held nothing identifiable for Goostrey, Nether Alderley (a Geograph 2360329 hit is Astbury), Farndon, Lanercost.
+Traps: a search summary linked Dorothy Wordsworth's 'patriarch of yews' to Lanercost; it belongs to a Whit Beck yew. AYG ancient-yew.org/userfiles PDF URLs often return HTML shells; the working path is wp-content/uploads/2024/02|03/<Name>-2019.pdf. pypdf missing; PyPDF2 works.
+Superlatives: Goostrey/Nether Alderley/Astbury ages are 1,000 to 2,000 years by parish or church claims; AYG gives only classes. No crown asserted.
