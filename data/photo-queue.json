@@ -41049,14 +41049,16 @@
      "judged": "reject",
      "verdict": "a koa seedling on nursery ground, not the Kalopa koa"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "haw_002": {
    "city": "Hawaii",
    "name": "The Kalopa Hame",
    "checked": "2026-10-22",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "haw_003": {
    "city": "Hawaii",
@@ -41075,7 +41077,8 @@
      "judged": "reject",
      "verdict": "iNat detail shot, and the same observation is offered for both kopiko trees"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "haw_004": {
    "city": "Hawaii",
@@ -41094,7 +41097,8 @@
      "judged": "reject",
      "verdict": "same observation as haw_003; identifies neither of the two kopiko"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "haw_005": {
    "city": "Hawaii",
@@ -41113,7 +41117,8 @@
      "judged": "reject",
      "verdict": "iNat detail, poor light, and the same observation is offered for both ohi'a"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "haw_006": {
    "city": "Hawaii",
@@ -41132,7 +41137,8 @@
      "judged": "reject",
      "verdict": "same observation as haw_005; identifies neither of the two ohi'a"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "ott_001": {
    "city": "Ottawa",
@@ -51754,7 +51760,7 @@
   "cyp_001": {
    "city": "Cyprus",
    "name": "The Sacred Oak of Theoskepasti",
-   "checked": "2026-08-29",
+   "checked": "2026-11-03",
    "sweep": 5,
    "candidates": [
     {
@@ -51792,8 +51798,35 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cyprus photographs taken on 2019-02-10 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images by User:Podzemnik (supported by Wikimedia Germany) Category:Images of Cyprus by User:Podzemnik Category:Panagia Theoskepasti (Paphos) Category:Quality images Category:Quality images by User:Podzemnik Category:Quality images missing SDC depicts Category:Quality images of Cyprus by User:Podzemnik Category:Quality images of Paphos Category:Quality images of architecture in Cyprus Category:Quatrefoils Category:Self-published work Category:Supported by Wikimedia Deutschland",
      "judged": "reject",
      "verdict": "chapel staircase through a quatrefoil"
+    },
+    {
+     "title": "File:Chypre Kalopanayiotis Agios Ioannos Tou Lampadistis - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Chypre_Kalopanayiotis_Agios_Ioannos_Tou_Lampadistis_-_panoramio.jpg/960px-Chypre_Kalopanayiotis_Agios_Ioannos_Tou_Lampadistis_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chypre_Kalopanayiotis_Agios_Ioannos_Tou_Lampadistis_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "rene boulay",
+     "lat": 34.990598,
+     "lng": 32.829729,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cyprus photographs taken on 2014-06-17 Category:Files with coordinates missing SDC location of creation Category:Nicosia District Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7081175",
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "church porch, no tree"
+    },
+    {
+     "title": "File:Ágios Ioánnis Lampadistís Détail d'une voûte.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/%C3%81gios_Io%C3%A1nnis_Lampadist%C3%ADs_D%C3%A9tail_d%27une_vo%C3%BBte.jpg/960px-%C3%81gios_Io%C3%A1nnis_Lampadist%C3%ADs_D%C3%A9tail_d%27une_vo%C3%BBte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%C3%81gios_Io%C3%A1nnis_Lampadist%C3%ADs_D%C3%A9tail_d%27une_vo%C3%BBte.jpg",
+     "licence": "CC0",
+     "author": "Croquemort Nestor",
+     "lat": 34.991231,
+     "lng": 32.828689,
+     "cats": "Category:Ayios Ionannis (St. John) Lambadhistis Monastery Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work",
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "church vault detail, no tree"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "asi_001": {
    "city": "Assisi",
@@ -52584,7 +52617,7 @@
   "cyp_002": {
    "city": "Cyprus",
    "name": "The Old Olive Tree of Xyliatos",
-   "checked": "2026-08-30",
+   "checked": "2026-11-03",
    "sweep": 5,
    "candidates": [
     {
@@ -52609,21 +52642,24 @@
      "judged": "reject",
      "verdict": "viewed at 1024px: the right kind of tree, a split hollow olive, but shot at dusk with the crown cut off, and it stands in a numbered survey grove where several old olives look alike"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "cyp_003": {
    "city": "Cyprus",
    "name": "The Ancient Laurel of Apostle Philip",
    "checked": "2026-08-30",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "cyp_004": {
    "city": "Cyprus",
    "name": "The Plane Tree of Ayia Mavri",
    "checked": "2026-08-30",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "dev_001": {
    "city": "Deventer",
@@ -79100,7 +79136,9 @@
      "licence": "CC BY",
      "author": "(c) bungelina, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "20.8718158,-156.6775676"
+     "obs_location": "20.8718158,-156.6775676",
+     "judged": "hold",
+     "verdict": "Lahaina banyan court, iNat 2019, before the 2023 fire"
     },
     {
      "title": "iNat obs 109257977 (Ficus benghalensis)",
@@ -79109,7 +79147,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "20.8720783333,-156.677475"
+     "obs_location": "20.8720783333,-156.677475",
+     "judged": "hold",
+     "verdict": "Lahaina banyan court interior, iNat 2022, before the 2023 fire"
     },
     {
      "title": "iNat obs 63205856 (Ficus benghalensis)",
@@ -79118,14 +79158,16 @@
      "licence": "CC BY",
      "author": "(c) Seig, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "20.87182965,-156.6777206167"
+     "obs_location": "20.87182965,-156.6777206167",
+     "judged": "hold",
+     "verdict": "Lahaina banyan court, iNat 2020, before the 2023 fire"
     }
    ]
   },
   "mau_002": {
    "city": "Maui",
    "name": "The Ka'ahumanu Church Monkeypod",
-   "checked": "2026-09-06",
+   "checked": "2026-11-03",
    "sweep": 5,
    "candidates": [
     {
@@ -79139,64 +79181,389 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Hawaii Category:Images from Wiki Loves Monuments 2019 in the United States Category:July 2019 in Hawaii Category:National Register of Historic Places with known IDs Category:Samanea saman Category:Self-published work Category:Sunlight through trees Category:Tantalus-Round Top Road Category:Trees in Hawaii Category:United States photographs taken on 2019-07-09 Category:Uploaded via Campaign:wlm-us Category:Wiki Loves Monuments 2019 in the United States unreviewed",
      "judged": "reject",
      "verdict": "monkeypod on Tantalus Drive, Oahu, roughly 150 km from the Wailuku tree; also a look-up canopy shot with no trunk"
+    },
+    {
+     "title": "File:Auxiliary Building behind Kaahumanu Church.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Auxiliary_Building_behind_Kaahumanu_Church.JPG/960px-Auxiliary_Building_behind_Kaahumanu_Church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Auxiliary_Building_behind_Kaahumanu_Church.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:293.xx.xxx.xx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:293.xx.xxx.xx (page does not exist)\">293.xx.xxx.xx</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3296,
+     "height": 2472,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Belfry Kaahumanu Church.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Belfry_Kaahumanu_Church.JPG/960px-Belfry_Kaahumanu_Church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Belfry_Kaahumanu_Church.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:293.xx.xxx.xx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:293.xx.xxx.xx (page does not exist)\">293.xx.xxx.xx</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3296,
+     "height": 2472,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Church in Wailuku.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Church_in_Wailuku.jpg/960px-Church_in_Wailuku.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Church_in_Wailuku.jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://flickr.com/people/47983324@N00\">Eric Chan</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 2000,
+     "height": 3008,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Honoli'i Park.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Honoli%27i_Park.JPG/960px-Honoli%27i_Park.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Honoli%27i_Park.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:293.xx.xxx.xx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:293.xx.xxx.xx (page does not exist)\">293.xx.xxx.xx</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3296,
+     "height": 2472,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Ka'ahumanu Church Behind Tree.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Ka%27ahumanu_Church_Behind_Tree.jpg/960px-Ka%27ahumanu_Church_Behind_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%27ahumanu_Church_Behind_Tree.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Rodrigues808\" title=\"User:Rodrigues808\">Rodrigues808</a>",
+     "lat": 20.885963,
+     "lng": -156.50446,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 4032,
+     "height": 3024,
+     "judged": "approve",
+     "verdict": "geotag at the church; monkeypod's low limbs fill the frame with the church behind, daylight"
+    },
+    {
+     "title": "File:Ka'ahumanu Church entrance black and white.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ka%27ahumanu_Church_entrance_black_and_white.jpg/960px-Ka%27ahumanu_Church_entrance_black_and_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%27ahumanu_Church_entrance_black_and_white.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Rodrigues808\" title=\"User:Rodrigues808\">Rodrigues808</a>",
+     "lat": 20.886055,
+     "lng": -156.504964,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 2886,
+     "height": 3856,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Ka'ahumanu Church in Maui.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Ka%27ahumanu_Church_in_Maui.jpg/960px-Ka%27ahumanu_Church_in_Maui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%27ahumanu_Church_in_Maui.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Amykatherineee&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Amykatherineee (page does not exist)\">Amy Young</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 5184,
+     "height": 3456,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Ka'ahumanu Church looking up.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Ka%27ahumanu_Church_looking_up.jpg/960px-Ka%27ahumanu_Church_looking_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%27ahumanu_Church_looking_up.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Rodrigues808\" title=\"User:Rodrigues808\">Rodrigues808</a>",
+     "lat": 20.886135,
+     "lng": -156.505182,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3024,
+     "height": 4032,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Ka'ahumanu Church sunset.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Ka%27ahumanu_Church_sunset.jpg/960px-Ka%27ahumanu_Church_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%27ahumanu_Church_sunset.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Rodrigues808\" title=\"User:Rodrigues808\">Rodrigues808</a>",
+     "lat": 20.886102,
+     "lng": -156.504963,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3926,
+     "height": 2940,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Ka'ahumanu Church.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Ka%27ahumanu_Church.JPG/960px-Ka%27ahumanu_Church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%27ahumanu_Church.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:293.xx.xxx.xx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:293.xx.xxx.xx (page does not exist)\">293.xx.xxx.xx</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 2472,
+     "height": 3296,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Kaahumanu Church Grave.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Kaahumanu_Church_Grave.JPG/960px-Kaahumanu_Church_Grave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kaahumanu_Church_Grave.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:293.xx.xxx.xx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:293.xx.xxx.xx (page does not exist)\">293.xx.xxx.xx</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 2472,
+     "height": 3296,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Kaahumanu Church Graveyard.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Kaahumanu_Church_Graveyard.JPG/960px-Kaahumanu_Church_Graveyard.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kaahumanu_Church_Graveyard.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:293.xx.xxx.xx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:293.xx.xxx.xx (page does not exist)\">293.xx.xxx.xx</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3296,
+     "height": 2472,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Kaahumanu Church Grounds.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Kaahumanu_Church_Grounds.JPG/960px-Kaahumanu_Church_Grounds.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kaahumanu_Church_Grounds.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:293.xx.xxx.xx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:293.xx.xxx.xx (page does not exist)\">293.xx.xxx.xx</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3296,
+     "height": 2472,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Kaahumanu Church, South High Street, Wailuku (Maui County, Hawaii).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Kaahumanu_Church%2C_South_High_Street%2C_Wailuku_%28Maui_County%2C_Hawaii%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Kaahumanu_Church,_South_High_Street,_Wailuku_(Maui_County,_Hawaii).jpg",
+     "licence": "Public domain",
+     "author": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Jack_Boucher\" class=\"extiw\" title=\"w:en:Jack Boucher\"><span title=\"American photographer\">Jack Boucher</span></a></bdi>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 396,
+     "height": 518,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Kaahumanu-Frontview-1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Kaahumanu-Frontview-1.jpg/960px-Kaahumanu-Frontview-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kaahumanu-Frontview-1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:07shanthuna&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:07shanthuna (page does not exist)\">07shanthuna</a>",
+     "lat": 20.886111,
+     "lng": -156.505278,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 4000,
+     "height": 6000,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Kaahumanu-Sideview-1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Kaahumanu-Sideview-1.jpg/960px-Kaahumanu-Sideview-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kaahumanu-Sideview-1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:07shanthuna&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:07shanthuna (page does not exist)\">07shanthuna</a>",
+     "lat": 20.886111,
+     "lng": -156.505278,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 4000,
+     "height": 6000,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Maui-Wailuku-KaahumanuChurch-angle.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Maui-Wailuku-KaahumanuChurch-angle.JPG/960px-Maui-Wailuku-KaahumanuChurch-angle.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Maui-Wailuku-KaahumanuChurch-angle.JPG",
+     "licence": "Public domain",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Joel_Bradshaw\" title=\"User:Joel Bradshaw\">Joel Bradshaw</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 2112,
+     "height": 2816,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
+    },
+    {
+     "title": "File:Side view of Ka'ahumanu Church.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Side_view_of_Ka%27ahumanu_Church.jpg/960px-Side_view_of_Ka%27ahumanu_Church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Side_view_of_Ka%27ahumanu_Church.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Rodrigues808\" title=\"User:Rodrigues808\">Rodrigues808</a>",
+     "lat": 20.886135,
+     "lng": -156.505182,
+     "cats": "Category:Kaahumanu Church",
+     "source": "category",
+     "width": 3024,
+     "height": 4032,
+     "judged": "reject",
+     "verdict": "church or grounds, the monkeypod is not the subject"
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "mau_003": {
    "city": "Maui",
    "name": "The Kalana Pakui Banyan",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "mau_004": {
    "city": "Maui",
    "name": "The Honoapi'ilani Highway Kiawe",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "men_003": {
    "city": "Menorca",
    "name": "Alzina d'Alfuri de Dalt",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "men_004": {
    "city": "Menorca",
    "name": "Platers de l'Ermita de Sant Joan des Verger",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "men_002": {
    "city": "Menorca",
    "name": "Pi de Cala Galdana",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "men_005": {
    "city": "Menorca",
    "name": "Drago de l'Illa del Llatzeret",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Lazareto 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Lazareto_01.jpg/960px-Lazareto_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lazareto_01.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "MontanNito",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Illa del Llatzeret",
+     "source": "category",
+     "width": 1920,
+     "height": 669,
+     "judged": "reject",
+     "verdict": "Llatzeret island seen from across the water, no tree"
+    },
+    {
+     "title": "File:Llatzeret (Maó) - 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Llatzeret_%28Ma%C3%B3%29_-_1.jpg/960px-Llatzeret_%28Ma%C3%B3%29_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Llatzeret_(Ma%C3%B3)_-_1.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/20702125@N05\">20702125@N05</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Illa del Llatzeret",
+     "source": "category",
+     "width": 28434,
+     "height": 2344,
+     "judged": "reject",
+     "verdict": "letterbox panorama of the island, no tree"
+    },
+    {
+     "title": "File:Port de Maó.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Port_de_Ma%C3%B3.JPG/960px-Port_de_Ma%C3%B3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Port_de_Ma%C3%B3.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:%C3%80lex\" title=\"User:Àlex\">Àlex</a>",
+     "lat": 39.879461,
+     "lng": 4.312134,
+     "cats": "Category:Illa del Llatzeret",
+     "source": "category",
+     "width": 4288,
+     "height": 2848,
+     "judged": "reject",
+     "verdict": "harbour view, no tree"
+    }
+   ],
+   "last_resort": "2026-11-03"
   },
   "men_006": {
    "city": "Menorca",
    "name": "Pi Felip de l'Illa del Llatzeret",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "men_001": {
    "city": "Menorca",
    "name": "Pi Ver del Doctor Camps",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "mhr_001": {
    "city": "Miharu",
@@ -80277,21 +80644,24 @@
    "name": "The Great Akagi of Shuri Kinjo",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "nah_002": {
    "city": "Okinawa",
    "name": "The Akou of Amaku",
-   "checked": "2026-09-06",
+   "checked": "2026-11-03",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "nah_003": {
    "city": "Okinawa",
    "name": "The Banyan of Jogaku",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "arn_038": {
    "city": "Arnhem",
@@ -81182,21 +81552,24 @@
    "name": "The Banyan of Takara Park",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "nah_005": {
    "city": "Okinawa",
    "name": "The Great Akagi of Uchima",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "nah_006": {
    "city": "Okinawa",
    "name": "The Great Kuwadisa of Tomari",
    "checked": "2026-09-06",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "last_resort": "2026-11-03"
   },
   "erd_001": {
    "city": "Nantes",
@@ -119016,7 +119389,7 @@
   "yak_001": {
    "city": "Yakushima",
    "name": "Jomon Sugi",
-   "checked": "2026-09-17",
+   "checked": "2026-11-03",
    "sweep": 5,
    "candidates": [
     {
@@ -119042,8 +119415,193 @@
      "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Japan photographs taken on 2023-05-02 Category:Jomon sugi Category:May 2023 in Kagoshima prefecture Category:Photographs by Raita Futo",
      "judged": "reject",
      "verdict": "trunk close-up, crown not visible"
+    },
+    {
+     "title": "File:Jhomonsugi in Yaku Island Japan 001.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Jhomonsugi_in_Yaku_Island_Japan_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Jhomonsugi_in_Yaku_Island_Japan_001.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Yosemite&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Yosemite (page does not exist)\">Yosemite</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 640,
+     "height": 480
+    },
+    {
+     "title": "File:Johomonsugi.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Johomonsugi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Johomonsugi.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"https://en.wikipedia.org/wiki/ja:User:Yosemite\" class=\"extiw\" title=\"w:ja:User:Yosemite\">Yosemite</a> at <a href=\"https://en.wikipedia.org/wiki/ja:\" class=\"extiw\" title=\"w:ja:\">Japanese Wikipedia</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 240,
+     "height": 320
+    },
+    {
+     "title": "File:Jomon Sugi 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Jomon_Sugi_01.jpg/960px-Jomon_Sugi_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_01.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 2592,
+     "height": 3888
+    },
+    {
+     "title": "File:Jomon Sugi 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Jomon_Sugi_02.jpg/960px-Jomon_Sugi_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_02.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 2592,
+     "height": 3888
+    },
+    {
+     "title": "File:Jomon Sugi 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Jomon_Sugi_03.jpg/960px-Jomon_Sugi_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_03.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 3888,
+     "height": 2592
+    },
+    {
+     "title": "File:Jomon Sugi 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Jomon_Sugi_04.jpg/960px-Jomon_Sugi_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_04.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 3888,
+     "height": 2592
+    },
+    {
+     "title": "File:Jomon Sugi 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Jomon_Sugi_05.jpg/960px-Jomon_Sugi_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_05.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 2592,
+     "height": 3888
+    },
+    {
+     "title": "File:Jomon Sugi 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Jomon_Sugi_06.jpg/960px-Jomon_Sugi_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_06.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 2592,
+     "height": 3888
+    },
+    {
+     "title": "File:Jomon Sugi 07.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Jomon_Sugi_07.jpg/960px-Jomon_Sugi_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_07.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 2725,
+     "height": 4976
+    },
+    {
+     "title": "File:Jomon Sugi Panorama.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Jomon_Sugi_Panorama.jpg/960px-Jomon_Sugi_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi_Panorama.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 4544,
+     "height": 4960,
+     "judged": "approve",
+     "verdict": "Commons category Jomon sugi; whole tree in leaf, sunlit, blue sky, trunk centred"
+    },
+    {
+     "title": "File:Jomon Sugi.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Jomon_Sugi.jpg/960px-Jomon_Sugi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomon_Sugi.jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/tyrian123/\">JoshBerglund19 on Flickr</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 2259,
+     "height": 4379
+    },
+    {
+     "title": "File:Jomonsugi (52931651088).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Jomonsugi_%2852931651088%29.jpg/960px-Jomonsugi_%2852931651088%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jomonsugi_(52931651088).jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/128275472@N07\">Raita Futo</a> from Tokyo, Japan",
+     "lat": 30.360863,
+     "lng": 130.529192,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 6904,
+     "height": 4603
+    },
+    {
+     "title": "File:Yakusugi001 Yaku Island.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Yakusugi001_Yaku_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Yakusugi001_Yaku_Island.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Yosemite&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Yosemite (page does not exist)\">Yosemite</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 600,
+     "height": 800
+    },
+    {
+     "title": "File:霧の縄文杉 (Jomon Sugi) 26 May, 2013 - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/%E9%9C%A7%E3%81%AE%E7%B8%84%E6%96%87%E6%9D%89_%28Jomon_Sugi%29_26_May%2C_2013_-_panoramio.jpg/960px-%E9%9C%A7%E3%81%AE%E7%B8%84%E6%96%87%E6%9D%89_%28Jomon_Sugi%29_26_May%2C_2013_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E9%9C%A7%E3%81%AE%E7%B8%84%E6%96%87%E6%9D%89_(Jomon_Sugi)_26_May,_2013_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161029131448/http://www.panoramio.com/user/4377977?with_photo_id=92402924\">Hiroaki Kaneko</a>",
+     "lat": 30.358138,
+     "lng": 130.532255,
+     "cats": "Category:Jomon sugi",
+     "source": "category",
+     "width": 2800,
+     "height": 2100
     }
-   ]
+   ],
+   "last_resort": "2026-11-03"
   },
   "ynh_001": {
    "city": "Yamanashi City",
@@ -139660,6 +140218,86 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Forests in Yakushima Category:Japan photographs taken on 2018-04-23 Category:Overcast in Japan Category:Photos by Grendelkhan Category:Quality images Category:Quality images taken with mobile phones Category:Self-published work Category:Taken with Google Pixel XL Category:Uploaded with Mobile/Android Category:Uploaded with Mobile/Android (Nov 2017-Aug 2019)",
      "judged": "reject",
      "verdict": "Forest from a road 8 km off"
+    },
+    {
+     "title": "File:Dai-O-Sugi.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Dai-O-Sugi.jpg/960px-Dai-O-Sugi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Dai-O-Sugi.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Chris 73",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Daio sugi",
+     "source": "category",
+     "width": 3070,
+     "height": 5130,
+     "judged": "approve",
+     "verdict": "Commons category Daio sugi; whole cedar in leaf, daylight and colour, fills the frame"
+    },
+    {
+     "title": "File:Daio Sugi 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Daio_Sugi_01.jpg/960px-Daio_Sugi_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Daio_Sugi_01.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Daio sugi",
+     "source": "category",
+     "width": 2592,
+     "height": 3888
+    },
+    {
+     "title": "File:Daio Sugi 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Daio_Sugi_02.jpg/960px-Daio_Sugi_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Daio_Sugi_02.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Daio sugi",
+     "source": "category",
+     "width": 3888,
+     "height": 2592
+    },
+    {
+     "title": "File:Daio Sugi 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Daio_Sugi_03.jpg/960px-Daio_Sugi_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Daio_Sugi_03.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Daio sugi",
+     "source": "category",
+     "width": 2592,
+     "height": 3888
+    },
+    {
+     "title": "File:Daio Sugi 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Daio_Sugi_04.jpg/960px-Daio_Sugi_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Daio_Sugi_04.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Daio sugi",
+     "source": "category",
+     "width": 3888,
+     "height": 2592
+    },
+    {
+     "title": "File:Daio Sugi 05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Daio_Sugi_05.jpg/960px-Daio_Sugi_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Daio_Sugi_05.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a href=\"https://ja.wikipedia.org/wiki/User:%CE%A364\" class=\"extiw\" title=\"ja:User:Σ64\">Σ64</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Daio sugi",
+     "source": "category",
+     "width": 2592,
+     "height": 3888
     }
    ]
   },
@@ -145580,6 +146218,1083 @@
    "checked": "2026-11-02",
    "sweep": 5,
    "candidates": []
+  },
+  "bli_004": {
+   "city": "Bali",
+   "name": "Giant Ficus Tree, Bali Botanic Garden",
+   "checked": "2026-11-03",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 320400659 (Ficus virens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/579287042/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/320400659",
+     "licence": "CC BY",
+     "author": "(c) 呂一起(Lyu yi-chi), some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-8.2725111111,115.1503527778",
+     "judged": "approve",
+     "verdict": "iNat geotag 13 m from pin; the many-trunked fig fills the frame, daylight, small walker for scale"
+    },
+    {
+     "title": "iNat obs 320400659 (Ficus virens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/579287078/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/320400659",
+     "licence": "CC BY",
+     "author": "(c) 呂一起(Lyu yi-chi), some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-8.2725111111,115.1503527778"
+    },
+    {
+     "title": "iNat obs 320403799 (Ficus virens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/579292617/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/320403799",
+     "licence": "CC BY",
+     "author": "(c) 呂一起(Lyu yi-chi), some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-8.2723138889,115.1500916667",
+     "judged": "reject",
+     "verdict": "trunk close-up of a different fig"
+    },
+    {
+     "title": "iNat obs 320403799 (Ficus virens)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/579292636/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/320403799",
+     "licence": "CC BY",
+     "author": "(c) 呂一起(Lyu yi-chi), some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-8.2723138889,115.1500916667"
+    },
+    {
+     "title": "iNat obs 320403806 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/579294099/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/320403806",
+     "licence": "CC BY",
+     "author": "(c) 呂一起(Lyu yi-chi), some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-8.2723517042,115.1503082383",
+     "judged": "reject",
+     "verdict": "WEAK exposure, detail"
+    },
+    {
+     "title": "iNat obs 320403806 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/579293968/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/320403806",
+     "licence": "CC BY",
+     "author": "(c) 呂一起(Lyu yi-chi), some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-8.2723517042,115.1503082383"
+    }
+   ],
+   "last_resort": "2026-11-03"
+  },
+  "gcn_001": {
+   "city": "Gran Canaria",
+   "name": "Pino de Casandra",
+   "checked": "2026-11-03",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Pino de Casandra - Presa de las Niñas - Parque Rural del Nublo - Gran Canaria 01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pino_de_Casandra_-_Presa_de_las_Ni%C3%B1as_-_Parque_Rural_del_Nublo_-_Gran_Canaria_01.jpg/960px-Pino_de_Casandra_-_Presa_de_las_Ni%C3%B1as_-_Parque_Rural_del_Nublo_-_Gran_Canaria_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pino_de_Casandra_-_Presa_de_las_Ni%C3%B1as_-_Parque_Rural_del_Nublo_-_Gran_Canaria_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Rvr",
+     "lat": 27.928546,
+     "lng": -15.66595,
+     "cats": "Category:All media supported by Wikimedia España in 2026 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2026 Category:Images from Wiki Loves Earth 2026 in Spain Category:Images from Wiki Loves Earth missing SDC creator Category:Images from Wiki Loves Earth missing SDC location of creation Category:Images from Wiki Loves Earth missing SDC participant in Category:Images from Wiki Loves Earth missing SDC source of file Category:Parque Rural del Nublo Category:Pino de Casandra Category:Presa de las Niñas Category:Self-published work Category:Special Areas of Conservation in Spain with known IDs Category:Uploaded via Campaign:wle-es",
+     "judged": "hold",
+     "verdict": "named and geotagged 331 m off, but the pine is a small figure on a far ridge"
+    },
+    {
+     "title": "iNat obs 122383513 (Pinus canariensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/207199669/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/122383513",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "27.9259167412,-15.6671708818",
+     "judged": "reject",
+     "verdict": "cone close-up"
+    },
+    {
+     "title": "iNat obs 122383513 (Pinus canariensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/207200519/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/122383513",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "27.9259167412,-15.6671708818"
+    },
+    {
+     "title": "iNat obs 160404289 (Pinus canariensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/277176932/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/160404289",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "27.9259885129,-15.6674936414",
+     "judged": "reject",
+     "verdict": "bark close-up"
+    },
+    {
+     "title": "iNat obs 160404289 (Pinus canariensis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/277177031/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/160404289",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "27.9259885129,-15.6674936414"
+    }
+   ]
+  },
+  "gcn_003": {
+   "city": "Gran Canaria",
+   "name": "Araucaria of the Plaza de Teror",
+   "checked": "2026-11-03",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 252263419 (Araucaria heterophylla)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/451786909/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/252263419",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "28.0592333333,-15.5480916667",
+     "judged": "hold",
+     "verdict": "geotag 6 m and a Norfolk pine in the plaza, but one trunk shows where our recognition line says two forking low; may be another araucaria"
+    },
+    {
+     "title": "iNat obs 252263419 (Araucaria heterophylla)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/451786943/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/252263419",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "28.0592333333,-15.5480916667"
+    },
+    {
+     "title": "iNat obs 15573665 (Araucaria heterophylla)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/23293120/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/15573665",
+     "licence": "CC BY",
+     "author": "(c) Andre Hosper, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "28.0595,-15.5482",
+     "judged": "reject",
+     "verdict": "POOR exposure"
+    }
+   ]
+  },
+  "gcn_004": {
+   "city": "Gran Canaria",
+   "name": "Drago de Pino Santo",
+   "checked": "2026-11-03",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 185621502 (Dracaena draco)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/324203890/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/185621502",
+     "licence": "CC BY",
+     "author": "(c) Vicente Lopes, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "28.032861,-15.5133069722",
+     "judged": "approve",
+     "verdict": "iNat geotag 28 m from pin; dragon tree on its rock ledge fills the frame, overcast daylight, colour"
+    },
+    {
+     "title": "iNat obs 185621502 (Dracaena draco)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/324203982/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/185621502",
+     "licence": "CC BY",
+     "author": "(c) Vicente Lopes, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "28.032861,-15.5133069722"
+    }
+   ]
+  },
+  "bli_001": {
+   "city": "Bali",
+   "name": "Pura Kehen banyan with the kulkul drum tower",
+   "candidates": [
+    {
+     "title": "File:Around Ubud, Pura Kehen (6989458953).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Around_Ubud%2C_Pura_Kehen_%286989458953%29.jpg/960px-Around_Ubud%2C_Pura_Kehen_%286989458953%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Around_Ubud,_Pura_Kehen_(6989458953).jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/67769030@N07\">Arian Zwegers</a>",
+     "lat": -8.442839,
+     "lng": 115.347352,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2848,
+     "height": 4272,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Balinese Hindu temple-01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Balinese_Hindu_temple-01.jpg/960px-Balinese_Hindu_temple-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Balinese_Hindu_temple-01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:DayakSibiriak\" title=\"User:DayakSibiriak\">DayakSibiriak</a>",
+     "lat": -8.44194,
+     "lng": 115.35995,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2048,
+     "height": 1365,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:COLLECTIE TROPENMUSEUM Een pemangku (volkspriester) in gebed bij het aanbieden van offers (bloemen vlees vruchten gemoduleerd vet wierookstaafjes) tijdens een groot tempelfeest in de tempel van Kêhên bij Bangli Bali TMnr 10001207.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/11/COLLECTIE_TROPENMUSEUM_Een_pemangku_%28volkspriester%29_in_gebed_bij_het_aanbieden_van_offers_%28bloemen_vlees_vruchten_gemoduleerd_vet_wierookstaafjes%29_tijdens_een_groot_tempelfeest_in_de_tempel_van_K%C3%AAh%C3%AAn_bij_Bangli_Bali_TMnr_10001207.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Een_pemangku_(volkspriester)_in_gebed_bij_het_aanbieden_van_offers_(bloemen_vlees_vruchten_gemoduleerd_vet_wierookstaafjes)_tijdens_een_groot_tempelfeest_in_de_tempel_van_K%C3%AAh%C3%AAn_bij_Bangli_Bali_TMnr_10001207.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 664,
+     "height": 700,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:COLLECTIE TROPENMUSEUM Tempel Pura Kehen bij Bangli Bali TMnr 60018427.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8b/COLLECTIE_TROPENMUSEUM_Tempel_Pura_Kehen_bij_Bangli_Bali_TMnr_60018427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Tempel_Pura_Kehen_bij_Bangli_Bali_TMnr_60018427.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 421,
+     "height": 700,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:COLLECTIE TROPENMUSEUM Vrouwen bij het aanbieden van hoge rijk bewerkte offers in Pura Kehen Bali TMnr 10001205.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cb/COLLECTIE_TROPENMUSEUM_Vrouwen_bij_het_aanbieden_van_hoge_rijk_bewerkte_offers_in_Pura_Kehen_Bali_TMnr_10001205.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Vrouwen_bij_het_aanbieden_van_hoge_rijk_bewerkte_offers_in_Pura_Kehen_Bali_TMnr_10001205.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 538,
+     "height": 700,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Gate of Pura Kehen, Bali.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Gate_of_Pura_Kehen%2C_Bali.jpg/960px-Gate_of_Pura_Kehen%2C_Bali.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Pura_Kehen,_Bali.jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8662466@N05\">Francesc Genové</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1305,
+     "height": 1740,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:ID-bali-bangli-pura-kehen-01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/ID-bali-bangli-pura-kehen-01.jpg/960px-ID-bali-bangli-pura-kehen-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:ID-bali-bangli-pura-kehen-01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Balou46\" title=\"User:Balou46\">Balou46</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 4660,
+     "height": 3106,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:ID-bali-bangli-pura-kehen-02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/ID-bali-bangli-pura-kehen-02.jpg/960px-ID-bali-bangli-pura-kehen-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:ID-bali-bangli-pura-kehen-02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Balou46\" title=\"User:Balou46\">Balou46</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 4928,
+     "height": 3264,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:ID-bali-bangli-pura-kehen-03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/ID-bali-bangli-pura-kehen-03.jpg/960px-ID-bali-bangli-pura-kehen-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:ID-bali-bangli-pura-kehen-03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Balou46\" title=\"User:Balou46\">Balou46</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 4410,
+     "height": 2939,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:ID-bali-bangli-pura-kehen-04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/ID-bali-bangli-pura-kehen-04.jpg/960px-ID-bali-bangli-pura-kehen-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:ID-bali-bangli-pura-kehen-04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Balou46\" title=\"User:Balou46\">Balou46</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 4928,
+     "height": 3264,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:ID-bali-bangli-pura-kehen-05.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/ID-bali-bangli-pura-kehen-05.jpg/960px-ID-bali-bangli-pura-kehen-05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:ID-bali-bangli-pura-kehen-05.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Balou46\" title=\"User:Balou46\">Balou46</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 4928,
+     "height": 3264,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Kehen pura2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Kehen_pura2.jpg/960px-Kehen_pura2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kehen_pura2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:DayakSibiriak\" title=\"User:DayakSibiriak\">DayakSibiriak</a>",
+     "lat": -8.44169,
+     "lng": 115.36003,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1365,
+     "height": 2048,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Kehen pura3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Kehen_pura3.jpg/960px-Kehen_pura3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kehen_pura3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:DayakSibiriak\" title=\"User:DayakSibiriak\">DayakSibiriak</a>",
+     "lat": -8.44164,
+     "lng": 115.35979,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2048,
+     "height": 1365,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Kehen Temple, Bali The Isle of the Gods, p52.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Kehen_Temple%2C_Bali_The_Isle_of_the_Gods%2C_p52.jpg/960px-Kehen_Temple%2C_Bali_The_Isle_of_the_Gods%2C_p52.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kehen_Temple,_Bali_The_Isle_of_the_Gods,_p52.jpg",
+     "licence": "Public domain",
+     "author": "Uncredited",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1000,
+     "height": 1500,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Pura_Kehen_1.jpg/960px-Pura_Kehen_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_1.jpg",
+     "licence": "CC BY 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:PhilipNalangan\" title=\"User:PhilipNalangan\">Philip Nalangan</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 6016,
+     "height": 3680,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen 1998 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Pura_Kehen_1998_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_1998_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:LBM1948\" title=\"User:LBM1948\">LBM1948</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 717,
+     "height": 1074,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen 1998 02.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Pura_Kehen_1998_02.jpg/960px-Pura_Kehen_1998_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_1998_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:LBM1948\" title=\"User:LBM1948\">LBM1948</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1048,
+     "height": 689,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen 1998 03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Pura_Kehen_1998_03.jpg/960px-Pura_Kehen_1998_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_1998_03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:LBM1948\" title=\"User:LBM1948\">LBM1948</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1047,
+     "height": 696,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen 1998 04.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pura_Kehen_1998_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_1998_04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:LBM1948\" title=\"User:LBM1948\">LBM1948</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 717,
+     "height": 1074,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen 1998 05.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/51/Pura_Kehen_1998_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_1998_05.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:LBM1948\" title=\"User:LBM1948\">LBM1948</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 687,
+     "height": 1034,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen 1998 06.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pura_Kehen_1998_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_1998_06.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:LBM1948\" title=\"User:LBM1948\">LBM1948</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 960,
+     "height": 619,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen in Bangli, Bali.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Pura_Kehen_in_Bangli%2C_Bali.jpg/960px-Pura_Kehen_in_Bangli%2C_Bali.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_in_Bangli,_Bali.jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8662466@N05\">Francesc Genové</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1368,
+     "height": 1824,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen temple complex in Bali.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Pura_Kehen_temple_complex_in_Bali.jpg/960px-Pura_Kehen_temple_complex_in_Bali.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen_temple_complex_in_Bali.jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/49503095197@N01\">Esme Vos</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 3072,
+     "height": 2304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Pura Kehen.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Pura_Kehen.jpg/960px-Pura_Kehen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pura_Kehen.jpg",
+     "licence": "CC BY 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:PhilipNalangan\" title=\"User:PhilipNalangan\">Philip Nalangan</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 6016,
+     "height": 2656,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehen1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/RIBangliPuraKehen1.jpg/960px-RIBangliPuraKehen1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehen1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehen2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/RIBangliPuraKehen2.jpg/960px-RIBangliPuraKehen2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehen2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehen3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/RIBangliPuraKehen3.jpg/960px-RIBangliPuraKehen3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehen3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehen4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/RIBangliPuraKehen4.jpg/960px-RIBangliPuraKehen4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehen4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehen5.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/RIBangliPuraKehen5.jpg/960px-RIBangliPuraKehen5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehen5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2105,
+     "height": 3208,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehen6.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/RIBangliPuraKehen6.jpg/960px-RIBangliPuraKehen6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehen6.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenK.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/RIBangliPuraKehenK.jpg/960px-RIBangliPuraKehenK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenK.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 3280,
+     "height": 2170,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenR1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/RIBangliPuraKehenR1.jpg/960px-RIBangliPuraKehenR1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenR1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenR2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/RIBangliPuraKehenR2.jpg/960px-RIBangliPuraKehenR2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenR2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1930,
+     "height": 3295,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenR3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/RIBangliPuraKehenR3.jpg/960px-RIBangliPuraKehenR3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenR3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenR4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/RIBangliPuraKehenR4.jpg/960px-RIBangliPuraKehenR4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenR4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/RIBangliPuraKehenS1.jpg/960px-RIBangliPuraKehenS1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/RIBangliPuraKehenS2.jpg/960px-RIBangliPuraKehenS2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2907,
+     "height": 2113,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/RIBangliPuraKehenS3.jpg/960px-RIBangliPuraKehenS3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2070,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/RIBangliPuraKehenS4.jpg/960px-RIBangliPuraKehenS4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS5.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/RIBangliPuraKehenS5.jpg/960px-RIBangliPuraKehenS5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1925,
+     "height": 3265,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS6.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/RIBangliPuraKehenS6.jpg/960px-RIBangliPuraKehenS6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS6.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2821,
+     "height": 1993,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS7.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/RIBangliPuraKehenS7.jpg/960px-RIBangliPuraKehenS7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS7.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenS8.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/RIBangliPuraKehenS8.jpg/960px-RIBangliPuraKehenS8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenS8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1784,
+     "height": 3070,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenSR1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/RIBangliPuraKehenSR1.jpg/960px-RIBangliPuraKehenSR1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenSR1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2170,
+     "height": 3304,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:RIBangliPuraKehenSR2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/RIBangliPuraKehenSR2.jpg/960px-RIBangliPuraKehenSR2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:RIBangliPuraKehenSR2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ziegler175\" title=\"User:Ziegler175\">Ziegler175</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1556,
+     "height": 2808,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Shrine at Pura Kehen temple site in Bangli.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Shrine_at_Pura_Kehen_temple_site_in_Bangli.jpg/960px-Shrine_at_Pura_Kehen_temple_site_in_Bangli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Shrine_at_Pura_Kehen_temple_site_in_Bangli.jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/49503095197@N01\">Esme Vos</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 2304,
+     "height": 3072,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    },
+    {
+     "title": "File:Shrines at Pura Kehen, Bali.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Shrines_at_Pura_Kehen%2C_Bali.jpg/960px-Shrines_at_Pura_Kehen%2C_Bali.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Shrines_at_Pura_Kehen,_Bali.jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8662466@N05\">Francesc Genové</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Pura Kehen",
+     "source": "category",
+     "width": 1824,
+     "height": 1368,
+     "judged": "reject",
+     "verdict": "temple scene, the banyan is not the subject"
+    }
+   ],
+   "last_resort": "2026-11-03"
+  },
+  "bli_002": {
+   "city": "Bali",
+   "name": "Kayu Putih giant tree (Bayan Ancient Tree)",
+   "candidates": [],
+   "last_resort": "2026-11-03"
+  },
+  "bli_003": {
+   "city": "Bali",
+   "name": "Bunut Bolong",
+   "candidates": [],
+   "last_resort": "2026-11-03"
+  },
+  "bli_005": {
+   "city": "Bali",
+   "name": "Gesing giant banyan (near Munduk)",
+   "candidates": [],
+   "last_resort": "2026-11-03"
+  },
+  "gcn_002": {
+   "city": "",
+   "name": "",
+   "candidates": [
+    {
+     "title": "File:Drago de Gáldar Detalle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Drago_de_G%C3%A1ldar_Detalle.jpg/960px-Drago_de_G%C3%A1ldar_Detalle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar_Detalle.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 4608,
+     "height": 3456
+    },
+    {
+     "title": "File:Drago de Gáldar Juan Borges Linares.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Drago_de_G%C3%A1ldar_Juan_Borges_Linares.jpg/960px-Drago_de_G%C3%A1ldar_Juan_Borges_Linares.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar_Juan_Borges_Linares.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3456,
+     "height": 4608
+    },
+    {
+     "title": "File:Drago de Gáldar perspectiva 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Drago_de_G%C3%A1ldar_perspectiva_1.jpg/960px-Drago_de_G%C3%A1ldar_perspectiva_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar_perspectiva_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3456,
+     "height": 4608
+    },
+    {
+     "title": "File:Drago de Gáldar perspectiva 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Drago_de_G%C3%A1ldar_perspectiva_2.jpg/960px-Drago_de_G%C3%A1ldar_perspectiva_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar_perspectiva_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3456,
+     "height": 4608
+    },
+    {
+     "title": "File:Drago de Gáldar perspectiva 3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Drago_de_G%C3%A1ldar_perspectiva_3.jpg/960px-Drago_de_G%C3%A1ldar_perspectiva_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar_perspectiva_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3456,
+     "height": 4608
+    },
+    {
+     "title": "File:Drago de Gáldar Poema.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Drago_de_G%C3%A1ldar_Poema.jpg/960px-Drago_de_G%C3%A1ldar_Poema.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar_Poema.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3456,
+     "height": 4608
+    },
+    {
+     "title": "File:Drago de Gáldar Vieja Regañona.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Drago_de_G%C3%A1ldar_Vieja_Rega%C3%B1ona.jpg/960px-Drago_de_G%C3%A1ldar_Vieja_Rega%C3%B1ona.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar_Vieja_Rega%C3%B1ona.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3456,
+     "height": 4608
+    },
+    {
+     "title": "File:Drago de Gáldar.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Drago_de_G%C3%A1ldar.jpg/960px-Drago_de_G%C3%A1ldar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Drago_de_G%C3%A1ldar.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Josefa_Molina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Josefa Molina (page does not exist)\">Josefa Molina</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3456,
+     "height": 4608,
+     "judged": "approve",
+     "verdict": "Commons category Drago de Galdar; whole dragon tree in its courtyard, daylight, trunk and crown"
+    },
+    {
+     "title": "File:Gáldar Rathaus - Drachenbaum 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/G%C3%A1ldar_Rathaus_-_Drachenbaum_1.jpg/960px-G%C3%A1ldar_Rathaus_-_Drachenbaum_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:G%C3%A1ldar_Rathaus_-_Drachenbaum_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Xenophon\" title=\"User:Xenophon\">Wolfgang Sauber</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3000,
+     "height": 4000
+    },
+    {
+     "title": "File:Gáldar Rathaus - Drachenbaum 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/G%C3%A1ldar_Rathaus_-_Drachenbaum_2.jpg/960px-G%C3%A1ldar_Rathaus_-_Drachenbaum_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:G%C3%A1ldar_Rathaus_-_Drachenbaum_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Xenophon\" title=\"User:Xenophon\">Wolfgang Sauber</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3000,
+     "height": 4000
+    },
+    {
+     "title": "File:Gáldar Rathaus - Drachenbaum 3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/G%C3%A1ldar_Rathaus_-_Drachenbaum_3.jpg/960px-G%C3%A1ldar_Rathaus_-_Drachenbaum_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:G%C3%A1ldar_Rathaus_-_Drachenbaum_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Xenophon\" title=\"User:Xenophon\">Wolfgang Sauber</a>",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Drago de Gáldar",
+     "source": "category",
+     "width": 3000,
+     "height": 4000
+    }
+   ]
   }
  },
  "notes": [
