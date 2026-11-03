@@ -633,6 +633,26 @@
    }
   },
   {
+   "common": "Bacang Mango",
+   "latin": "Mangifera foetida",
+   "names": {
+    "en": [
+     "Horse Mango",
+     "bachang"
+    ],
+    "nl": [
+     "Stinkende mango"
+    ],
+    "de": [
+     "Stinkende Mango"
+    ],
+    "ja": [
+     "ウママンゴ",
+     "ウママンゴウ"
+    ]
+   }
+  },
+  {
    "common": "Bald Cypress",
    "latin": "Taxodium distichum",
    "names": {
@@ -7161,18 +7181,21 @@
    "names": {
     "en": [
      "Chinese Dates",
-     "Chinese jujube"
+     "Chinese jujube",
+     "Indian jujube"
     ],
     "nl": [
      "Chinese jujube"
     ],
     "de": [
-     "Chinesische Jujube"
+     "Chinesische Jujube",
+     "Indische Jujube"
     ],
     "es": [
      "Azufaifo",
      "Azufaifa",
-     "Jinjolero"
+     "Jinjolero",
+     "Ciruela india"
     ],
     "it": [
      "Giuggiolo"
@@ -7182,7 +7205,9 @@
     ],
     "ja": [
      "ナツメ",
-     "棗"
+     "棗",
+     "インドナツメ",
+     "インド梅"
     ]
    }
   },
@@ -7488,6 +7513,10 @@
      "黒鉄黐"
     ]
    }
+  },
+  {
+   "common": "Kén",
+   "latin": "Casearia grewiifolia) and Nánh (Millettia nigrescens"
   },
   {
    "common": "Lacebark Pine",
@@ -9040,7 +9069,8 @@
     "en": [
      "oak tree",
      "oaks",
-     "the oak genus"
+     "the oak genus",
+     "Aleppo oak"
     ],
     "nl": [
      "Eik"
@@ -13632,8 +13662,8 @@
      "Chinesische Weide"
     ],
     "es": [
-     "Sauce crespo",
-     "Sauce llorón"
+     "Sauce llorón",
+     "Sauce crespo"
     ],
     "it": [
      "Salice piangente"
@@ -14086,7 +14116,8 @@
    "names": {
     "en": [
      "olive",
-     "olive tree"
+     "olive tree",
+     "Canarian wild olive"
     ],
     "nl": [
      "olijf",
@@ -15332,6 +15363,23 @@
    }
   },
   {
+   "common": "Chomphu Phu Kha",
+   "latin": "Bretschneidera sinensis",
+   "mapped": false,
+   "names": {
+    "es": [
+     "Bretschneidera"
+    ],
+    "pt": [
+     "Bretschneidera"
+    ],
+    "ja": [
+     "ブレッシュネイデラ・シネンシス",
+     "ブレッシュネイデラ科"
+    ]
+   }
+  },
+  {
    "common": "Paper Mulberry",
    "latin": "Broussonetia papyrifera",
    "mapped": false,
@@ -16311,6 +16359,11 @@
    }
   },
   {
+   "common": "Yang Na",
+   "latin": "Dipterocarpus alatus",
+   "mapped": false
+  },
+  {
    "common": "Isu Tree",
    "latin": "Distylium racemosum",
    "mapped": false,
@@ -16361,6 +16414,11 @@
    }
   },
   {
+   "common": "Gran Canaria Dragon Tree",
+   "latin": "Dracaena tamaranae",
+   "mapped": false
+  },
+  {
    "common": "Keladan",
    "latin": "Dryobalanops oblongifolia",
    "mapped": false
@@ -16369,6 +16427,34 @@
    "common": "Milkbark",
    "latin": "Drypetes diversifolia",
    "mapped": false
+  },
+  {
+   "common": "Durian",
+   "latin": "Durio zibethinus",
+   "mapped": false,
+   "names": {
+    "en": [
+     "durion"
+    ],
+    "nl": [
+     "Doerian",
+     "Durian właściwy"
+    ],
+    "de": [
+     "Durianbaum",
+     "Stinkfrucht",
+     "Zibetbaum"
+    ],
+    "es": [
+     "Durion"
+    ],
+    "pt": [
+     "Durião"
+    ],
+    "ja": [
+     "ドリアン"
+    ]
+   }
   },
   {
    "common": "Pinus strobus",
@@ -16470,6 +16556,11 @@
      "梯梧"
     ]
    }
+  },
+  {
+   "common": "Xanh lim",
+   "latin": "Erythrophleum fordii",
+   "mapped": false
   },
   {
    "common": "Sydney Red Gum",
@@ -16628,6 +16719,20 @@
    }
   },
   {
+   "common": "Banyan",
+   "latin": "Ficus altissima",
+   "mapped": false,
+   "names": {
+    "en": [
+     "council tree",
+     "lofty fig"
+    ],
+    "ja": [
+     "フィカス・アルティシマ"
+    ]
+   }
+  },
+  {
    "common": "Florida Strangler Fig",
    "latin": "Ficus aurea",
    "mapped": false
@@ -16656,6 +16761,40 @@
     ],
     "ja": [
      "カシワバゴムノキ"
+    ]
+   }
+  },
+  {
+   "common": "Sycamore Fig",
+   "latin": "Ficus sycomorus",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Sycomore",
+     "fig-mulberry"
+    ],
+    "nl": [
+     "Egyptische vijgenboom",
+     "Sycamore vijg",
+     "Sycamorevijg",
+     "Sycomore"
+    ],
+    "de": [
+     "Eselsfeige",
+     "Maulbeer-Feige",
+     "Maulbeerfeige",
+     "Sykomore"
+    ],
+    "fr": [
+     "figuier sycomore"
+    ],
+    "pt": [
+     "Figueira doida",
+     "Figueira-doida",
+     "Sicómoro"
+    ],
+    "ja": [
+     "エジプトイチジク"
     ]
    }
   },
@@ -16952,12 +17091,33 @@
    "mapped": false
   },
   {
-   "common": "Prickly Juniper",
+   "common": "Canary Island Cedar",
+   "latin": "Juniperus cedrus",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Canary Islands Juniper"
+    ],
+    "de": [
+     "Zedern-Wacholder"
+    ],
+    "es": [
+     "Cedro",
+     "Cedro de Canarias",
+     "Enebro de Canarias"
+    ],
+    "pt": [
+     "Cedro-da-Madeira"
+    ]
+   }
+  },
+  {
+   "common": "Cade Juniper",
    "latin": "Juniperus oxycedrus",
    "mapped": false,
    "names": {
     "en": [
-     "cade juniper"
+     "Prickly Juniper"
     ],
     "nl": [
      "Stekelige jeneverbes"
@@ -17096,6 +17256,36 @@
     ],
     "ja": [
      "トウネズミモチ"
+    ]
+   }
+  },
+  {
+   "common": "Lychee",
+   "latin": "Litchi chinensis",
+   "mapped": false,
+   "names": {
+    "en": [
+     "litchi"
+    ],
+    "de": [
+     "Litschibaum"
+    ],
+    "it": [
+     "Ciliegia della Cina",
+     "litchi"
+    ],
+    "fr": [
+     "litchi"
+    ],
+    "pt": [
+     "lichi",
+     "lichia"
+    ],
+    "ja": [
+     "れいし",
+     "ライチ",
+     "ライチー",
+     "レイシ"
     ]
    }
   },
@@ -17418,6 +17608,11 @@
      "Palma Corcho"
     ]
    }
+  },
+  {
+   "common": "Unidentified",
+   "latin": "Millettia or",
+   "mapped": false
   },
   {
    "common": "Chinese Bayberry",
@@ -18004,6 +18199,26 @@
    "common": "Chinese Pisty",
    "latin": "Pistachia chinensis",
    "mapped": false
+  },
+  {
+   "common": "Atlas Pistachio",
+   "latin": "Pistacia atlantica",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Baneh",
+     "Mt. Atlas mastic tree"
+    ],
+    "de": [
+     "Atlantische Pistazie"
+    ],
+    "es": [
+     "Terebinthus atlanticus"
+    ],
+    "ja": [
+     "ピスタシア・アトランティカ"
+    ]
+   }
   },
   {
    "common": "Chinese Pistache",
@@ -18781,6 +18996,25 @@
    }
   },
   {
+   "common": "Macedonian Oak",
+   "latin": "Quercus trojana",
+   "mapped": false,
+   "names": {
+    "de": [
+     "Makedonische Eiche",
+     "Mazedonische Eiche"
+    ],
+    "es": [
+     "Quecus macedonicus",
+     "Roble de Macedonia",
+     "Roble de Troya"
+    ],
+    "it": [
+     "Fragno"
+    ]
+   }
+  },
+  {
    "common": "Live Oak",
    "latin": "Quercus virginianna",
    "mapped": false
@@ -19303,10 +19537,11 @@
   },
   {
    "common": "Tamarisk",
-   "latin": "Tamarix chinensis",
+   "latin": "Tamarix canariensis",
    "mapped": false,
    "names": {
     "en": [
+     "Canary Island tamarisk",
      "five-stamen tamarisk"
     ],
     "ja": [
@@ -19337,6 +19572,19 @@
    "common": "Myrobalan / Bastard myrobalan",
    "latin": "Terminalia bellerica",
    "mapped": false
+  },
+  {
+   "common": "Beleric",
+   "latin": "Terminalia bellirica",
+   "mapped": false,
+   "names": {
+    "en": [
+     "myrobalan"
+    ],
+    "ja": [
+     "セイタカミロバラン"
+    ]
+   }
   },
   {
    "common": "'ohe",
@@ -21229,6 +21477,11 @@
    }
   },
   {
+   "common": "Sasswood",
+   "latin": "Erythrophleum",
+   "genus": true
+  },
+  {
    "common": "Eucalyptus",
    "latin": "Eucalyptus",
    "genus": true,
@@ -21971,6 +22224,11 @@
      "ユリノキ属"
     ]
    }
+  },
+  {
+   "common": "Lychee",
+   "latin": "Litchi",
+   "genus": true
   },
   {
    "common": "Stone Oaks",
