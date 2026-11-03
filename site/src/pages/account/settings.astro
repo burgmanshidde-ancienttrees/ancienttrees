@@ -126,9 +126,7 @@ const crumbItems: [string, string | null][] = [
       <button type="button" id="pic-pick" class="sheet-b sheet-b--secondary set-pic-btn">Choose a photo</button>
       <input id="in-pic" type="file" accept="image/*" hidden />
       <label for="in-name" class="set-edit-label">Your name</label>
-      <input id="in-name" type="text" maxlength="40" autocomplete="nickname" placeholder="The name people see" />
-      <p class="at-sheet-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
-      {/* The flag after your name (lib/countries.ts, 2026-10-16), the app's
+      <input id="in-name" type="text" maxlength="40" autocomplete="nickname" placeholder="The name people see" />      {/* The flag after your name (lib/countries.ts, 2026-10-16), the app's
           Country row as the web's native dropdown. Unchosen, the country you
           appear to be in; "Don't show" on top turns it off (2026-10-20). */}
       <label for="in-country" class="set-edit-label">Your country</label>

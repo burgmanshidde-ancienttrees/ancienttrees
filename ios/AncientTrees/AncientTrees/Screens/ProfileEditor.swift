@@ -68,8 +68,6 @@ struct ProfileEditor: View {
                         .textInputAutocapitalization(.words)
                 } header: {
                     Text("Your name")
-                } footer: {
-                    Text("Any name you like. It does not have to be your real one.")
                 }
 
                 // The flag after your name. iOS Settings' own shape for a
