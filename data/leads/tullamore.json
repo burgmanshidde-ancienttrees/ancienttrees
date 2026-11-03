@@ -1,0 +1,155 @@
+{
+  "city": "Tullamore",
+  "country": "Ireland",
+  "updated": "2026-11-03",
+  "about": "Charleville Forest candidates from Heritage Trees of Ireland (Tree Council of Ireland / Aubrey Fennell, 2009 survey, coordinates converted from Irish Grid, about 100 m, ages are 2009 bands). Not delivered because the register carries no names, no vitality, and no tree can be told apart on the ground. Delivered in data/research/tullamore-verified.json: tlm_002 (yew).",
+  "leads": [
+    {
+      "register_record": "190",
+      "species": "Spindle (Euonymus europaeus)",
+      "latitude": 53.25104,
+      "longitude": -7.52573,
+      "form": "maiden",
+      "age_register": "300-500 (register)",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Spindle is a small shrubby tree; 300-500 year band is implausible and the 'significant habitat' note says nothing a visitor can see; no second source"
+    },
+    {
+      "register_record": "466",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.26326,
+      "longitude": -7.52387,
+      "form": "maiden",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Ancient woodland oak in the woods, not an individual; no recognition anchor, no second source, no life evidence"
+    },
+    {
+      "register_record": "470",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.26243,
+      "longitude": -7.53137,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Pollard, 'arboricultural curiosity'; register only, 100 m pin in woodland, no life evidence, no recognition anchor"
+    },
+    {
+      "register_record": "473",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.2557,
+      "longitude": -7.52924,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Pollard, 'exceptional specimen'; register only, 100 m pin, no life evidence, no recognition anchor (near record 500, ~150 m)"
+    },
+    {
+      "register_record": "500",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.25691,
+      "longitude": -7.53077,
+      "form": "maiden",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Register 'Named trees' with hollowing but the name is not in the data and no source gives it; no life evidence"
+    },
+    {
+      "register_record": "502",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.2645,
+      "longitude": -7.51232,
+      "form": "maiden",
+      "age_register": "200-300",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Register 'Named trees' with holes, band 200-300; name unknown, no life evidence, ~600 m east of the King Oak (tlm_001)"
+    },
+    {
+      "register_record": "503",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.26471,
+      "longitude": -7.51058,
+      "form": "maiden",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Register 'Named trees' with hollowing; name unknown, no life evidence. The Queen Oak (storm damaged, birch growing from its fork, per offalyoutside.blogspot.com 2011, 'recorded on the Tree Council website') may be one of the named trees but no source gives a location"
+    },
+    {
+      "register_record": "512",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.26788,
+      "longitude": -7.51952,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Pollard cluster 512/513/514 lies ~130-170 m from the King Oak (tlm_001, 53.26664,-7.51847), inside the 100 m register error, so one of them may be the King Oak itself; not delivered to avoid a duplicate. Needs a pin from a photo"
+    },
+    {
+      "register_record": "513",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.26819,
+      "longitude": -7.51944,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Same cluster as 512, possible King Oak duplicate"
+    },
+    {
+      "register_record": "514",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.26793,
+      "longitude": -7.51982,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Same cluster as 512, possible King Oak duplicate"
+    },
+    {
+      "register_record": "515",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.26816,
+      "longitude": -7.52256,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Pollard with hollowing, ~230 m W of the King Oak; register only, no life evidence, no recognition anchor"
+    },
+    {
+      "register_record": "520",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.25577,
+      "longitude": -7.51601,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Pollard, 'significant habitat'; register only, no life evidence"
+    },
+    {
+      "register_record": "529",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 53.2655,
+      "longitude": -7.51136,
+      "form": "pollard",
+      "age_register": "300-500",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Wood pasture pollard; register only, no life evidence, no recognition anchor. Ancient Yew database also places the Charleville yew near here (53.26499,-7.51089)"
+    },
+    {
+      "name": "Giant oak alone in pasture near Charleville Lake",
+      "species": "Oak",
+      "latitude": null,
+      "longitude": null,
+      "source": "https://www.irishtimes.com/news/a-verdant-preserve-in-peril-1.277090 (3 Feb 2001, 'recognised as the largest oak in Ireland', between lake and the Tullamore-Birr road, no size given)",
+      "reason": "No coordinate, no size, 2001 article only; may be on private farmland; may well be a different tree from any register record"
+    },
+    {
+      "name": "Island oaks, Charleville Lake",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": null,
+      "longitude": null,
+      "source": "https://www.irishtimes.com/news/a-verdant-preserve-in-peril-1.277090 (about 8 acres of ancient woodland on a lake island, some oaks 18th century per 1971 survey)",
+      "reason": "Island, no public access established; woodland, not a collectible point"
+    }
+  ],
+  "blocked": []
+}

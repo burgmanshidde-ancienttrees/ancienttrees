@@ -1,0 +1,36 @@
+[
+  {
+    "id": "kly_001",
+    "name": "The Muckross Abbey Yew",
+    "species": "Common Yew (Taxus baccata)",
+    "age_estimate": "up to roughly 400 years",
+    "age_min": 250,
+    "age_max": 550,
+    "girth_cm": 305,
+    "location": {
+      "address": "Muckross Friary (Muckross Abbey), Killarney National Park, Co. Kerry; centre of the cloister garth",
+      "latitude": 52.02614,
+      "longitude": -9.49479,
+      "neighbourhood": "Muckross"
+    },
+    "verified_sources": [
+      "https://heritageireland.ie/unguided-sites/muckross-franciscan-friary/",
+      "https://ancient-yew.org/yew_trees/muckross-friary-2017",
+      "https://ancient-yew.org/yew_trees/muckross-friary-2018",
+      "https://www.ancient-yew.org/yew_tree_database/muckross-friary"
+    ],
+    "official_register": {
+      "name": "Ancient Yew Group database, Muckross Friary tree 2017",
+      "url": "https://ancient-yew.org/yew_trees/muckross-friary-2017"
+    },
+    "access": "Unguided Heritage Ireland (OPW) site inside Killarney National Park; no admission or opening hours seen on the Heritage Ireland page. Check the page for any change.",
+    "transport": "About 4 km south-east of Killarney town centre; no public bus verified, jaunting car, bike or walk from town or Muckross House.",
+    "location_precision": "confirmed",
+    "location_site": {
+      "name": "Muckross Friary cloister",
+      "radius_m": 20
+    },
+    "curation_status": "ai_generated",
+    "verify_notes": "Heritage Ireland (fetched, OPW, owner of the site): 'a yew tree still stands at the centre [of the cloister]; thought to be one of the oldest in Ireland, as it is likely up to 400 years old'; Charles Smith in 1756 called it one of the tallest yews he had seen, 'its spreading branches, like a great umbrella, overshadow the niches of the great cloister'. Ancient Yew Group (fetched, tree 2017, Tim Hills, visit 20 Jul 2005): male, girth 305 cm at the ground; Ben Simon (Belfast City Council) 1999: 3.30 m at 0.6 m, 3.11 m at 1.5 m; Lowe 1897 recorded 10 ft at ground; earliest mention 1776, Arthur Young's Tour of Ireland; 'red-barked and twisted bole' rising from the centre of the cloister, branching at about 14 ft, elder rooted in its platform. CONFLICT on age: Heritage Ireland up to 400 years; tradition (Irish Examiner, thinplacestour, not fetched in full) says as old as the friary (founded 1448, about 575 years), and an Irish Examiner columnist suggests older; age is not measurable in a hollow yew, so the range is broad and no tradition is stated as fact. Friary founded about 1448 by Donal McCarthy Mor for the Observant Franciscans (Heritage Ireland). Pin: OSM way 1144959847 'Muckross Abbey' ambulatory, bbox centre 52.02614,-9.49479; the sources put the tree at the centre of the cloister, so within about 5-10 m. Second fine yew outside the ruin, close to the entrance, in a circular stone wall: Ancient Yew tree 2018, male, 399 cm at 60 cm, Lowe 1897 10 ft at ground (folded here as a note, not a separate collectible). Alive: Heritage Ireland present tense, lifecheck RECENT 2026-08-19 (iNaturalist at the abbey). Recognition line candidate: the huge red-barked yew rising out of the middle of the ruined cloister, its crown filling the open courtyard."
+  }
+]

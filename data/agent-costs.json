@@ -15555,6 +15555,22 @@
       "tokens": 171179,
       "trees": 16,
       "note": "None held; yews as European Yew to match the corpus. 8 of 16 carry a Commons photo approved after viewing. Total about 739k for 16, roughly 46k a tree. Held in data/research/london-verified.json for scripts/build_uk_london.py."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "tullamore+birr (Ireland round 1)",
+      "tokens": 150282,
+      "trees": 4,
+      "note": "Heritage Trees of Ireland rows carry no names: 13 of 14 Charleville rows to leads, unmatchable on the ground. Birr Grey Poplar fell 2014 (blocked). The register alone is a poor finding aid on big estates."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "emo+inistioge+castlepollard+killarney (Ireland round 1)",
+      "tokens": 180069,
+      "trees": 5,
+      "note": "Same lesson: the estates' own champion lists name trees but give no coordinates, the register gives coordinates but no names. 20 leads, 1 blocked (Tullynally horse chestnut dead). About 37k a tree over both passes."
     }
   ]
 }

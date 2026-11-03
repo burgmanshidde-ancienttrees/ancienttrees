@@ -1,0 +1,33 @@
+[
+  {
+    "id": "emo_001",
+    "name": "The Emo Court Yew",
+    "species": "Common Yew (Taxus baccata)",
+    "age_estimate": "several hundred years",
+    "age_min": 200,
+    "age_max": 400,
+    "girth_cm": 437,
+    "height_m": 14,
+    "location": {
+      "address": "Emo Court, Emo, Co. Laois (yew walk and arboretum side of the estate)",
+      "latitude": 53.10553,
+      "longitude": -7.19212,
+      "neighbourhood": "Emo"
+    },
+    "verified_sources": [
+      "https://ancient-yew.org/yew_trees/emo-court-5160",
+      "https://www.ancient-yew.org/yew_tree_database/emo-court/",
+      "https://laois.ie/laois-gardens/emo-court",
+      "https://ucc.ie/en/tree-explorers/tree-sites/emocourt"
+    ],
+    "official_register": {
+      "name": "Tree Register of Ireland (no. 54) via Ancient Yew Group record 5160",
+      "url": "https://ancient-yew.org/yew_trees/emo-court-5160"
+    },
+    "access": "Emo Court gardens and parkland, managed by the OPW: Laois County Council says open all year during daylight hours; UCC Tree Explorers lists seasonal opening times. The house is a separate guided tour. Check heritageireland.ie before going.",
+    "transport": "Emo village; nearest station Portarlington (about 8 km). No public onward link verified.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Ancient Yew Group (recording the Tree Register of Ireland, visit 1 Aug 2009): the Emo Court yew is number 54 on the Tree Register's site, height 14 m, girth 4.37 m, 'ancient' class 4-5 m. They note it was measured by Samuel Hayes in 1794 and appears in his 'Practical Treatise on Trees' (Hayes's 'good yews'): the group asks whether this is one of those but does not claim it, so only 'a yew at Emo was measured in 1794 and the register's yew may be it' can be said. Heritage Trees of Ireland (Tree Council / A. Fennell, 1 Aug 2009, same day) holds one Taxus baccata at Emo, record 624, 'coppice', age band 200-300 years at 2009; pin 53.10553,-7.19212 is its Irish Grid conversion (about 100 m), so the match with the register tree is probable, not proved (same date, only yew recorded). Age is a derived range: register band 200-300 plus 17 years, Hayes 1794 mention would imply 230+ years; nothing dates it beyond that, so 200-400 stays broad. Laois County Council's own page mentions a 'yew walk' ending at the Ceres statue near the house; whether this is the tree in the walk is not stated. Alive: no recent dated photo of THIS tree; lifecheck RECENT 2024-08-18 within the estate (iNaturalist), register is 2009 and records no vitality. Recognition line candidate: a very wide, multi-stemmed ('coppice' form) dark yew standing in the parkland south-east of the house, girth of nearly four and a half metres. Pin is register-level only. Register-only for the tree itself, owner OPW publishes the garden but not this tree: flagged."
+  }
+]

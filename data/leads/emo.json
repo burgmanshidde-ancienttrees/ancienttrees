@@ -1,0 +1,23 @@
+{
+  "leads": [
+    {
+      "name": "Emo Court Wellingtonia Avenue",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "location": "Emo Court, Co. Laois, register record 551 at 53.10598,-7.19639 (Heritage Trees of Ireland, Landmark trees, avenue, 100-150 years)",
+      "reason": "Verify pass 2026-11-03: avenue, not one collectible tree (rule: avenue is blocked as a point). Sources: laois.ie and Heritage Ireland (mile-long, longest most complete Wellingtonia avenue in Ireland, planted 1850s; OPW tree-planting restoration 2019, Irish Times 2012 'planted in the 1850s'). Decision for Hidde: the avenue is the destination at Emo, one place to stand at the house end could be a single point; no individual tree measured."
+    },
+    {
+      "name": "Emo Court 450-year-old oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location": "Emo Court, Co. Laois; register record 525 pollard oak 300-500 years at 53.10893,-7.19798 (approx)",
+      "reason": "Verify pass 2026-11-03: Irish Times 2012 (Sylvia Thompson) lists 'a 450-year-old oak tree' in the gardens; register record 525 (Quercus robur, pollard, 300-500 years at 2009, 'significant habitat') is a possible match but nothing ties the two; no tree-level source, no second source, no measurement. Would ship with one more source or a photo."
+    },
+    {
+      "name": "Emo Court Monterey cypress (multi-stem)",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "location": "Emo Court, register record 178 at 53.10893,-7.19689",
+      "reason": "Verify pass 2026-11-03: register only (multi-stem, 100-150 years), Irish Times names Monterey cypress among trees but no individual tree; not remarkable enough on current evidence."
+    }
+  ],
+  "blocked": []
+}

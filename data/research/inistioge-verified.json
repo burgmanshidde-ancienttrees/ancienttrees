@@ -1,0 +1,61 @@
+[
+  {
+    "id": "wds_001",
+    "name": "The Woodstock Giant Sequoia",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 150 to 215 years",
+    "age_min": 150,
+    "age_max": 215,
+    "girth_cm": 765,
+    "height_m": 41.5,
+    "location": {
+      "address": "Woodstock Gardens & Arboretum, Inistioge, Co. Kilkenny (arboretum, near the edge of the woods)",
+      "latitude": 52.47351,
+      "longitude": -7.05903,
+      "neighbourhood": "Inistioge"
+    },
+    "verified_sources": [
+      "https://www.irishtimes.com/news/ancient-and-exotic-trees-found-during-the-restoration-of-victorian-gardens-1.227406",
+      "https://www.woodstock.ie/we-are-the-champions/",
+      "https://www.woodstock.ie/giant-redwood-sequoiadendron-giganteum/",
+      "https://www.woodstock.ie/about-the-gardens/"
+    ],
+    "official_register": {
+      "name": "Heritage Trees of Ireland (Tree Council of Ireland, NBDC dataset 27), record 554",
+      "url": "https://www.woodstock.ie/about-the-gardens/"
+    },
+    "access": "Paid entry: EUR 5 per car (woodstock.ie, fetched), open daily, summer (April to September) 9am to 7.30pm, winter (October to March) 10am to 4pm; closed in yellow, orange or red wind/weather warnings. Run by Kilkenny County Council; car park about 750 m from the main gates.",
+    "transport": "Inistioge village about 1.5 km; Kilkenny city about 30 minutes by car. No public transport verified.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Irish Times, Dick Grogan, 15 Sep 1999 (fetched): during restoration, 'two stately Wellingtonias, almost 40 metres tall' on the edge of the woods; 'nearby is an ancient gnarled sequoia, the tallest tree in the park at 41.5 metres', 'the widest girth of any tree in Ireland, being 7.65 metres in circumference at its base'. That is a 1999 newspaper claim; the estate's own page gives the largest recorded Irish giant redwood as 51 m and 8.6 m girth (so the 'widest in Ireland' claim cannot be repeated as a fact; say 'reported in 1999'). Heritage Trees register: Sequoiadendron record 554, 'Exceptional specimen trees', maiden form, 150-200 years in 2009, pin 52.47351,-7.05903 (Irish Grid conversion, about 100 m). It is the only Sequoiadendron in the Woodstock rows, so the match to the Irish Times tree is probable not proved. Age derived: register band plus 17 years; species only reached Ireland in the 1850s, so no older. Do not use the redwoodworld 1869 planting caption (not fetched). Girth is circumference at base, 1999, so not breast height. Alive: lifecheck RECENT 2026-08-30 at the neighbouring coast redwood pin (iNaturalist, same garden); this specific tree not seen after 1999. Flagged: tree-level pin unknown. Recognition line candidate: a massive, deeply fluted, red-brown gnarled trunk, taller than everything around it, at the edge of the arboretum woods."
+  },
+  {
+    "id": "wds_002",
+    "name": "The Woodstock Champion Coast Redwood",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "roughly 150 to 215 years",
+    "age_min": 150,
+    "age_max": 215,
+    "location": {
+      "address": "Woodstock Gardens & Arboretum, Inistioge, Co. Kilkenny (arboretum)",
+      "latitude": 52.47407,
+      "longitude": -7.059255,
+      "neighbourhood": "Inistioge"
+    },
+    "verified_sources": [
+      "https://www.woodstock.ie/we-are-the-champions/",
+      "https://www.woodstock.ie/about-the-gardens/",
+      "https://www.irishtimes.com/news/ancient-and-exotic-trees-found-during-the-restoration-of-victorian-gardens-1.227406"
+    ],
+    "official_register": {
+      "name": "Heritage Trees of Ireland (Tree Council of Ireland, NBDC dataset 27), records 546 and 547",
+      "url": "https://www.woodstock.ie/we-are-the-champions/"
+    },
+    "access": "Paid entry: EUR 5 per car (woodstock.ie, fetched), open daily, summer (April to September) 9am to 7.30pm, winter (October to March) 10am to 4pm; closed in yellow, orange or red wind/weather warnings.",
+    "transport": "Inistioge village about 1.5 km; Kilkenny city about 30 minutes by car. No public transport verified.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Owner (Kilkenny County Council, woodstock.ie 'We are the Champions', 2015): 'our Champion Coast redwood'; it is named among the champions beside the tallest silver fir in Ireland and the Bentham cypress. No height or girth is published for it; do not invent any. Register has TWO coast redwoods, records 546 (52.47377,-7.05919) and 547 (52.47437,-7.05932), both 'Exceptional specimen trees', maiden, 150-200 years in 2009, about 67 m apart; folded here, pin is the midpoint (Irish Grid conversions, about 100 m each), so which one is the estate's champion is unknown. Age derived from the register band plus 17 years. Alive: lifecheck RECENT 2026-08-30 at record 546 (iNaturalist observation in the garden), not necessarily this tree. Single owner source plus register: flagged, pin approximate. Recognition line candidate: a very tall, straight, deeply red-brown fibrous-barked trunk with soft feathery foliage, in the arboretum near the sequoia."
+  }
+]

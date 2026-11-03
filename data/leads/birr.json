@@ -1,0 +1,70 @@
+{
+  "city": "Birr",
+  "country": "Ireland",
+  "updated": "2026-11-03",
+  "about": "Birr Castle Demesne candidates from Heritage Trees of Ireland (2009 survey; coordinates converted from Irish Grid, about 100 m and possibly skewed: the register's point for the box hedge is ~500 m from the Formal Gardens). Delivered in data/research/birrcountryireland-verified.json: bir_001 Carroll Oak, bir_002 box hedges, bir_003 dawn redwood. Only three; the 4-tree floor for a place page is not met.",
+  "leads": [
+    {
+      "register_record": "539",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "latitude": 53.0997,
+      "longitude": -7.91649,
+      "form": "maiden",
+      "age_register": "150-200",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Hollowing, band 150-200; register only, no second source, no life evidence, no reason beyond age"
+    },
+    {
+      "register_record": "222",
+      "species": "Common Beech 'Birr Zebra' (Fagus sylvatica)",
+      "latitude": 53.10119,
+      "longitude": -7.91834,
+      "form": "maiden",
+      "age_register": "50-100",
+      "source": "Heritage Trees of Ireland, Tree Council of Ireland / Aubrey Fennell (NBDC dataset 27, CC BY 4.0), survey 2009",
+      "reason": "Cultivar with banded foliage, band 50-100; register only, nothing about it on the estate pages found, no life evidence"
+    },
+    {
+      "name": "Giant redwoods and coast redwoods (nine, about 1860s)",
+      "species": "Sequoiadendron giganteum / Sequoia sempervirens",
+      "latitude": null,
+      "longitude": null,
+      "source": "https://www.irishtimes.com/life-and-style/people/the-world-s-largest-california-redwood-grove-in-birr-1.2844039 (29 Oct 2016: nine redwoods across the demesne, probably planted around the 1860s; coast redwood by the wettest spot has the greatest girth); birrcastle.com says a coast redwood stands on the lower terrace of the Formal Gardens",
+      "reason": "No coordinates or measurements; a good depth lead (ask estate or the Tree Register of Ireland for champion figures); the Giants' Grove saplings (planted from 2017 with Crann) are young and not a veteran"
+    },
+    {
+      "name": "Himalayan juniper (champion)",
+      "species": "Juniperus",
+      "latitude": null,
+      "longitude": null,
+      "source": "https://birrcastle.com/?p=5219 (River Garden, described as a champion tree)",
+      "reason": "No coordinates, no measurements, species not given to the level of a Latin name"
+    },
+    {
+      "name": "Carrierea calycina (champion)",
+      "species": "Carrierea calycina",
+      "latitude": null,
+      "longitude": null,
+      "source": "https://www.irishtimes.com/news/in-birr-s-botanic-wonderland-1.448457 (28 May 2005, grown from Chinese seed, first flowered 2004)",
+      "reason": "Rare, but no location or measurements; a plant-collector tree rather than a veteran"
+    },
+    {
+      "name": "Magnolia delavayi, Castle Terraces (planted about 1912)",
+      "species": "Magnolia delavayi",
+      "latitude": null,
+      "longitude": null,
+      "source": "https://birrcastle.com/?p=5219 (planted by the 5th Earl of Rosse)",
+      "reason": "Shrubby evergreen, no coordinates; planting date from the owner, but nothing makes it a destination alone"
+    }
+  ],
+  "blocked": [
+    {
+      "register_record": "430",
+      "name": "Birr Castle Grey Poplar",
+      "species": "Grey Poplar (Populus x canescens)",
+      "latitude": 53.09509,
+      "longitude": -7.91793,
+      "reason": "FELLED: blew down in the storm of mid-February 2014 while Ireland's entry in European Tree of the Year; 42 m, about 200 years, the tallest of its kind in the British Isles; the fallen trunk is to be left in place and carved into a river bench (Irish Times, 15 Feb 2014, irishtimes.com/news/environment/european-tree-of-the-year-contender-blows-over-in-storms-1.1692428; also Wikipedia Birr Castle). Register record 430 (2009) predates the fall. Never ship the standing tree; a bench from the trunk is not a tree."
+    }
+  ]
+}

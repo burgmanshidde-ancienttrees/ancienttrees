@@ -1,0 +1,41 @@
+{
+  "leads": [
+    {
+      "name": "Reenadinna largest yew",
+      "species": "Common Yew (Taxus baccata)",
+      "location": "Reenadinna Yew Wood, Muckross Peninsula, Killarney National Park; wood centre about 52.0179,-9.5175 (register yew record 581)",
+      "reason": "Verify pass 2026-11-03: Ancient Yew Group tree 2020 (fetched; Tree Register visit 2010): largest yew of a small area where yews are larger, 14 m tall, 3.56 m girth at 0.5 m, 'full open crowns'. No tree-level location inside a 25 ha wood, so it cannot be pinned or found; the wood is the destination (Irish Times: yew wood at least 3,000 years as woodland, not as individual trees). Needs a GPS fix or NPWS location. A wood is not a collectible point without a spot."
+    },
+    {
+      "name": "Muckross Abbey outer yew",
+      "species": "Common Yew (Taxus baccata)",
+      "location": "Close to the Muckross Friary entrance, inside a circular stone wall",
+      "reason": "Verify pass 2026-11-03: folded into kly_001 notes (Ancient Yew tree 2018, 399 cm at 60 cm). Could be its own point if a reader fixes the spot."
+    },
+    {
+      "name": "Muckross House gardens 'champion' oak",
+      "species": "Oak (Quercus)",
+      "location": "Muckross House gardens, Killarney National Park, in front of the rock gardens",
+      "reason": "Verify pass 2026-11-03: only a search snippet (horticulturist quoting a 300-year-old champion oak) and a visitor guide; nothing fetched. No second source."
+    },
+    {
+      "name": "The Royal Oak, Lough Leane",
+      "species": "Oak (Quercus)",
+      "location": "Shore of Lough Leane, Killarney National Park",
+      "reason": "Verify pass 2026-11-03: snippet only ('one of the biggest oaks in the park'), no source fetched or coordinate."
+    },
+    {
+      "name": "Giant sequoia south of Muckross Abbey entrance",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "location": "Field south of Muckross Abbey entrance",
+      "reason": "Verify pass 2026-11-03: 140 ft, snippet only; not fetched."
+    },
+    {
+      "name": "Reenadinna strawberry trees, holly, alder (register records 73, 310, 59)",
+      "species": "Arbutus unedo / Ilex aquifolium / Alnus glutinosa",
+      "location": "Reenadinna Wood: 52.01534,-9.54408 (Arbutus 150-200 y), 52.00889,-9.54983 (Ilex 200-300 y), 52.01487,-9.52117 (Alnus 200-300 y)",
+      "reason": "Verify pass 2026-11-03: register rows only, tree-level source absent; unlikely to be found on the ground in woodland; holly and alder of 200-300 years are implausible without a measurement. Killarney is famous for its native strawberry trees (Irish Times 'Arbutus tree is a native of the Killarney Valley', not fetched) but no named specimen."
+    }
+  ],
+  "blocked": []
+}
