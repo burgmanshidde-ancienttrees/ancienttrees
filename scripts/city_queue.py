@@ -751,7 +751,7 @@ def main():
             print("VK bomen toevoegen\"). People download there and find nothing near: the US")
             print("has fewer trees than the Netherlands over a continent. From-zero research is")
             print("ON for every place in these countries, because he named them. The pace of")
-            print("40 of our own trees a day holds (preflight.py --pace). A place people")
+            print("25 of our own trees a day holds (preflight.py --pace). A place people")
             print("searched for that we do not map is a request: the nearest place gets it.\n")
             print("  city                  trees  target  supply")
             for c in first:
