@@ -1,0 +1,268 @@
+[
+  {
+    "id": "sgz_001",
+    "register_id": "rediam_745",
+    "name": "The Chaparro de las Animas",
+    "species": "Cork Oak (Quercus suber)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 520,
+    "height_m": 18.75,
+    "location": {
+      "address": "Llano de las Animas, Parque Natural Sierra de Grazalema, outside Grazalema, Cadiz",
+      "latitude": 36.743029,
+      "longitude": -5.33448,
+      "neighbourhood": "Grazalema"
+    },
+    "location_precision": "confirmed",
+    "pin_evidence": "iNaturalist research-grade Quercus suber observation 308806866 (2025-02-20, positional accuracy 4 m) at 36.7431,-5.33434 and observation 373052522 (2026-06-18, accuracy 15 m) at 36.74309,-5.33447, 7 to 14 m from the register point; I viewed both photos: the same broad, short-trunked cork oak standing alone on open grass, matching the sheet (crown about 24 m). Register point itself lands on it.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_745.pdf",
+      "https://www.sur-walks.com/agenda-dayhikes/463-grazalema-campobuches-en/2024-04-02-22-57",
+      "https://www.inaturalist.org/observations/308806866",
+      "https://www.inaturalist.org/observations/373052522"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_745.pdf",
+      "id": "rediam_745"
+    },
+    "access": "Free. Public dehesa inside the natural park, grazed by cattle and goats; the Campobuche walk starts at the tree.",
+    "transport": "About 2 km from Grazalema village on foot or by car (estimated from the map); buses run to Grazalema from Ronda and Jerez.",
+    "alive_evidence": "Two dated iNaturalist photos of the tree: 2025-02-20 and 2026-06-18 (full leaf, healthy crown).",
+    "facts": [
+      "Register sheet: total height 18.75 m, trunk 3.25 m to first branches, girth 5.20 m at 1.30 m and 6.70 m at the base, crown 24.1 m N-S by 24.6 m E-W (crown projection 465.63 sq m). Source: sheet PDF.",
+      "Sheet: the trunk is straight and warty, with big protuberances. Source: sheet PDF.",
+      "Sheet, cultural reason: the cork from this oak was traditionally sold to pay for the oil burned in lamps for the Blessed Souls (Animas Benditas) in Grazalema's churches. Source: sheet PDF.",
+      "Sheet, setting: part of a mixed dehesa of cork oaks and holm oaks on flat sandy ground with rock outcrops, grazed by cattle and goats; hawthorn, bramble and Cistus crispus around. Source: sheet PDF.",
+      "A SUR-walks day-hike page (2 April 2024 hike) calls it a huge old oak and starts the walk to Campobuche at the tree, outside Grazalema. Source: sur-walks URL.",
+      "Register criteria: size and historical-cultural interest. Park: Sierra de Grazalema Natural Park."
+    ],
+    "photo_leads": [
+      {
+        "note": "No openly licensed photo found. iNaturalist 373052522 and 373052516 (2026-06-18, user b3ugaz) are CC BY-NC (not open for us); 308806866 (2025-02-20) is all rights reserved. Could ask the observers.",
+        "url": "https://www.inaturalist.org/observations/373052522",
+        "license": "CC BY-NC"
+      }
+    ],
+    "verify_notes": "Species: the Spanish name 'chaparro' usually means holm oak, but the sheet's species line and the REDIAM entry say Quercus suber and the photos show cork-oak bark; kept as Cork Oak. Sheet says Pública. Second source for existence is the SUR-walks page plus two iNaturalist photos; Fuerte Hoteles blog (403 to me, only seen in a search snippet, not used). Girth is at 1.30 m. The register carries no age. Pin confirmed by iNaturalist GPS plus viewed photos.",
+    "curation_status": "verified",
+    "story": "The cork stripped from this oak was traditionally sold to buy oil, and the oil burned in the lamps kept for the Blessed Souls in Grazalema's churches. Hence the name, the Chaparro de las Animas, the oak of the souls. In these hills chaparro usually means a holm oak, but the Junta de Andalucia's register lists this one as a cork oak, and the bark in recent photographs agrees.\n\nIt is a broad tree rather than a tall one. The register gives 18.75 metres of height, a straight, warty trunk with big swellings that runs 3.25 metres before the first branches, and a girth of 5.20 metres at chest height and 6.70 at the base. The crown is what you notice from a distance, about 24 metres across in both directions, one dome of shade over some 465 square metres of grass.\n\nIt stands on flat sandy ground with rock outcrops, in a dehesa of cork and holm oaks that cattle and goats still graze, with hawthorn, bramble and rockrose around it. A guided walk to Campobuche, a 10.5 kilometre loop, starts at the foot of this tree on the edge of Grazalema, and walkers photographed it in full, healthy leaf in June 2026.\n\nNobody has published an age for it. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it by the crown, about 24 metres across, over a straight, warty trunk 5.20 metres round, alone on open grass. It stands on the Llano de las Animas, where the walk to Campobuche starts."
+  },
+  {
+    "id": "sgz_002",
+    "register_id": "rediam_742",
+    "name": "The Hollow Holm Oak of Los Acebuches",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 540,
+    "height_m": 12,
+    "location": {
+      "address": "Puerto de los Acebuches, Parque Natural Sierra de Grazalema, Cadiz",
+      "latitude": 36.800967,
+      "longitude": -5.387899,
+      "neighbourhood": "Grazalema"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register coordinate only. iNaturalist holm-oak observations nearby (40123100 at about 36 m, 409660437 of 2026-10-20 at about 108 m) are not shown to be this trunk. Not upgradable without a photo of the tree.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_742.pdf",
+      "https://juntadeandalucia.es/medioambiente/web/Bloques_Tematicos/Estado_Y_Calidad_De_Los_Recursos_Naturales/Flora_/pdfs_publicaciones_arboles_arboledas/cadiz/arboles_singulares_parte2.pdf"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_742.pdf",
+      "id": "rediam_742"
+    },
+    "access": "Free. Public land in the natural park beside the A-372 at the pass; the Llanos del Rabel trail that starts here needs a free permit from the El Bosque visitor centre.",
+    "transport": "About 6 km by car from Grazalema on the road toward El Bosque; no bus stop known at the pass.",
+    "alive_evidence": "No dated evidence of this trunk found. Sheet says the tree is in a pine plantation; other holm oaks at the pass are photographed on iNaturalist 2024 and 2026.",
+    "facts": [
+      "Sheet: girth 5.40 m at 1.30 m, 7.70 m at the base, total height 12.0 m, trunk 1.8 m before branching, crown 15.6 by 17.1 m. Source: sheet PDF.",
+      "Sheet: listed for size, above all the thickness of its hollow trunk, an evident sign of great age and of charcoal-making (carboneo); the girth must once have been even larger. Source: sheet PDF.",
+      "Sheet: the bark of the trunk shows filigree patterns that make it look braided. Source: sheet PDF.",
+      "Setting: near the Pinsapar, emblem of the park, in a planted maritime pine stand with white rockrose, hawthorn, Phlomis purpurea, broom and dwarf fan palm. Source: sheet PDF.",
+      "Junta de Andalucia's Cadiz catalogue lists it as item 24 for Grazalema (per a search result of that catalogue, not read in full by me). Source: catalogue PDF."
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register-only plus the Junta's own printed Cadiz catalogue (same authority). Pin approximate and no photograph in reach: it does not yet meet the findable gate; delivered so the register link and measures are kept. Distance to Grazalema is my estimate from coordinates.",
+    "curation_status": "flagged",
+    "story": "This holm oak is listed for its thickness, and the register thinks it used to be thicker. The trunk measures 5.40 metres round at chest height and 7.70 at the base, and it is hollow. The Junta de Andalucia's sheet reads that hollow as the mark of two things, great age and carboneo, the charcoal-making that once worked the oaks of these mountains. Its conclusion is that the girth was once even larger than it is now.\n\nWhat remains is a short tree for its bulk, 12 metres tall, with only 1.8 metres of trunk before it branches and a crown about 16 metres across. The sheet describes the bark as patterned like filigree, so that the trunk looks braided.\n\nIt stands at the Puerto de los Acebuches, the pass on the A-372 where the Llanos del Rabel trail begins, inside a planted stand of maritime pine with white rockrose, hawthorn, broom and dwarf fan palm underneath. The Pinsapar, the fir forest that is the emblem of the Sierra de Grazalema, is close by.\n\nEverything here comes from the register and the Junta's own Cadiz catalogue. No recent photograph of the tree has been published, and its pin is the register's point rather than a fix taken at the trunk. Nobody has dated it either. If you have stood under it, tell us what you found.",
+    "how_to_recognise": "You can recognise it by the hollow trunk, 5.40 metres round, with bark patterned like braid, a broad oak among planted maritime pines. It stands at the Puerto de los Acebuches, where the Llanos del Rabel trail starts."
+  },
+  {
+    "id": "sgz_003",
+    "register_id": "rediam_744",
+    "name": "The Wild Olive of Ocuri",
+    "species": "Wild Olive (Olea europaea var. sylvestris)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 430,
+    "height_m": 10.5,
+    "location": {
+      "address": "Roman ruins of Ocuri, Salto de la Mora, Ubrique, Cadiz",
+      "latitude": 36.68724,
+      "longitude": -5.447097,
+      "neighbourhood": "Ubrique"
+    },
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Roman city of Ocuri (forum area)",
+      "radius_m": 50
+    },
+    "pin_evidence": "Register coordinate only; no photograph of the tree found. Sheet places it beside the ruins of the old farmhouse of the 18th-century landowner who looked after the ruins.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_744.pdf",
+      "https://www.andalucia.com/province/cadiz/ubrique/roman-city-ocuri",
+      "https://www.ugr.es/universidad/noticias/foro-romano-ocuri-ubrique-trabajo-arqueologico-ugr"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_744.pdf",
+      "id": "rediam_744"
+    },
+    "access": "Guided visits only, booked in advance, Tuesday to Sunday with times by season; about 1 km on foot from the entry gate. Check the site's booking page.",
+    "transport": "About 1 km north of Ubrique on the A-374; park at the Venta Ocuris visitor centre. Ubrique is roughly 20 to 25 km from Grazalema by road.",
+    "alive_evidence": "No dated evidence for this tree. Hispanopedia (a Wikipedia mirror) says an acebuche over 700 years old stands in the old forum, unsourced; not used as an age.",
+    "facts": [
+      "Sheet: girth 4.30 m at 1.30 m, 9.00 m at the base, height 10.5 m, trunk short and straight (1.8 m), partly hollow and debarked, irregular crown 8.0 by 9.7 m. Source: sheet PDF.",
+      "Sheet: listed for trunk size and its setting among the ruins of the Roman city of Ocuri; the hollow, stripped trunk and irregular crown give it an archaic look. Source: sheet PDF.",
+      "Sheet: it grows on the hill Salto de la Mora in the Sierra de Benalfi, right by the ruins of the house of Juan Vegazo, the farmer who bought the land in the late 18th century and spent his time caring for the ruins. Source: sheet PDF.",
+      "University of Granada excavations (2024 news) identified the Roman forum of Ocuri at this hill, confirming an 18th-century hypothesis of the local scholar Juan Vegazo. Source: UGR news URL.",
+      "Visit: guided tours only; the site is about 1 km north of Ubrique. Source: andalucia.com URL."
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register-only for the tree itself (the andalucia.com and UGR pages are about the site, not the tree). Unsourced '700 years' claim in Hispanopedia not carried as age. Access: bookable guided tour counts as public. Which olive on the hill is not settled beyond the register point and the sheet's 'beside the Vegazo house ruins' clue. No photo, no confirmed pin: needs one to ship.",
+    "curation_status": "flagged",
+    "story": "This wild olive grows among the ruins of a Roman city, beside the ruined house of the man who first argued the city's forum was here. Juan Vegazo was a farmer who bought this hill above Ubrique in the late eighteenth century and spent his time looking after its ruins. In 2024 excavations by the University of Granada identified the forum of Ocuri on the hill and confirmed his hypothesis, a little over two centuries late.\n\nThe olive is an acebuche, the wild form, and an archaic-looking one. The Junta de Andalucia's register measures a girth of 4.30 metres at chest height and 9 metres at the base, on a short, straight trunk that is partly hollow and stripped of its bark, under an irregular crown. It is 10.5 metres tall and listed for that trunk and for where it stands.\n\nHow old it is, nobody has shown. A figure of over 700 years circulates online with no source behind it, and the register gives no age at all. If you know of a real estimate, tell us.\n\nOcuri can only be visited on a guided tour booked in advance, with about a kilometre on foot from the entry gate on the hill called Salto de la Mora, just north of Ubrique. No photograph of this tree has been published, so ask the guide which olive stands by the Vegazo house.",
+    "how_to_recognise": "You can recognise it by the short, partly hollow trunk stripped of bark, 9 metres round at the base, under an irregular crown. It stands among the ruins of Ocuri, beside the remains of Juan Vegazo's farmhouse.",
+    "hold": "guided visit only, booked in advance; preflight (hard rule 10) reads a booked tour as needing permission, so it waits until the site opens for free visits or Hidde rules on booked visits (2026-11-03)"
+  },
+  {
+    "id": "sgz_004",
+    "register_id": "rediam_740",
+    "name": "The Pinsapo of El Taramal",
+    "species": "Spanish Fir (Abies pinsapo)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 250,
+    "height_m": 20,
+    "location": {
+      "address": "Puerto del Quejigalejo, El Taramal, a few km from the Pinsapar de Grazalema",
+      "latitude": 36.80315,
+      "longitude": -5.4169,
+      "neighbourhood": "Sierra de Grazalema Natural Park"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register sheet coordinate; sheet says it stands at the Puerto del Quejigalejo, a few km from the Pinsapar de Grazalema. The Junta's Llanos del Rabel leaflet map shows Puerto del Quejicalejo (902 m) and El Taramal on the same ground. No GPS fix at the tree.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf",
+      "https://guiadecadiz.com/sites/default/files/rutas_entornos_naturales/grazalema/LlanosdelRabel_0.pdf"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf",
+      "id": "rediam_740"
+    },
+    "access": "Public land in the permit-controlled Pinsapar zone; neighbouring trails need a free authorisation from the El Bosque visitor centre and close in the fire season; ask there before going.",
+    "transport": "A few kilometres from Grazalema village by the road to Puerto de las Palomas; regional buses run to Grazalema from Ronda and Arcos.",
+    "alive_evidence": "None dated. Register sheet only.",
+    "recognition_facts": [
+      "20 m tall with a straight, thick trunk and a large conical crown whose lower branches carry few needles",
+      "Girth 2.50 m at 1.30 m, 5.10 m at the base",
+      "Stands at the Puerto del Quejigalejo amid dense scrub of strawberry tree, carob and holm oak, so a lone fir among broadleaf scrub rather than in a fir wood"
+    ],
+    "facts": [
+      {
+        "f": "Sheet: height 20 m, trunk 2 m, girth 2.50 m at 1.30 m, 5.10 m at base, crown 13.2 by 13.9 m; criteria size and rarity",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf"
+      },
+      {
+        "f": "Sheet: in the Iberian Peninsula the pinsapo grows naturally only in the sierras of Malaga and Cadiz",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf"
+      },
+      {
+        "f": "Sheet: surrounded by dense scrub with strawberry tree, carob and holm oak",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf"
+      },
+      {
+        "f": "Llanos del Rabel trail: 6.2 km linear, low difficulty, by track; permit required, apply to the El Bosque visitor centre",
+        "s": "https://guiadecadiz.com/sites/default/files/rutas_entornos_naturales/grazalema/LlanosdelRabel_0.pdf"
+      }
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register only; no second source names the tree. The sheet says 'Vereda del Taramal'; the trail leaflet shows El Taramal on the map but not a vereda by that name. Spelling Quejigalejo (sheet) vs Quejicalejo (leaflet map). Access is the weak point: public land, but the Pinsapar area needs a free permit and has a fire-season closure; flagged.",
+    "curation_status": "flagged",
+    "story": "A Spanish fir in a thicket of carob and strawberry tree is not where you expect to find one. This pinsapo stands at the Puerto del Quejigalejo, a few kilometres from the Pinsapar de Grazalema, the fir forest that is this park's emblem, and yet the register finds it ringed by dense scrub of strawberry tree, carob and holm oak rather than by its own kind.\n\nThe species is why it is listed at all. In the Iberian Peninsula the pinsapo grows wild only in the sierras of Malaga and Cadiz, and the Junta de Andalucia chose this one for rarity as well as size. It is 20 metres tall on a straight, thick trunk 2.50 metres round at chest height and 5.10 at the base, under a large conical crown about 13.5 metres across whose lower branches carry few needles.\n\nGetting to it is the hard part. The pass lies in the permit-controlled Pinsapar zone. The neighbouring trails need a free authorisation booked through the El Bosque visitor centre and are restricted in the fire season, roughly mid-June to mid-October, and whether the tree sits on a permitted route is something to settle with the visitor centre before you go. The register sheet is the only source that names this tree, and even the pass is spelled two ways, Quejigalejo on the sheet and Quejicalejo on the trail map.\n\nNobody has published an age. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it as a lone fir, 20 metres tall with a large conical crown, in broadleaf scrub of strawberry tree, carob and holm oak. It stands at the Puerto del Quejigalejo."
+  },
+  {
+    "id": "sgz_005",
+    "register_id": "rediam_992",
+    "name": "Encina de Los Llanos del Zurraque",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "probably over 400 years",
+    "age_min": 400,
+    "age_max": null,
+    "age_basis": "source",
+    "girth_cm": 480,
+    "height_m": 9,
+    "location": {
+      "address": "Los Llanos del Zurraque, Montejaque, Malaga side of the Sierra de Grazalema Natural Park",
+      "latitude": 36.709723,
+      "longitude": -5.311657,
+      "neighbourhood": "Montejaque"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register sheet coordinate only; sheet places it in the open dehesa of Los Llanos del Zurraque, about 920 m, reached through dense scrub. No GPS fix.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_992.pdf"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_992.pdf",
+      "id": "rediam_992"
+    },
+    "access": "Sheet says public land inside the Sierra de Grazalema Natural Park (Malaga side), but the dehesa is described as working grazing land and no path to the tree was found; treat as unconfirmed on foot and keep to rights of way.",
+    "transport": "Montejaque, about 15 km west of Ronda by road; the Zurraque pass (puerto del Zurraque) is on hiking routes leaving the village. Distance from village to tree not sourced.",
+    "alive_evidence": "None dated. Register sheet only; web search found no other mention.",
+    "recognition_facts": [
+      "Girth 4.80 m at 1.30 m with a trunk diameter over 1.50 m, but only 9 m tall",
+      "A hollow just under the fork that runs inside the trunk",
+      "Two thick main limbs make a parasol crown 16 m wide whose centre is pushed to one side",
+      "Stands in an open pasture with scattered holm and Portuguese oaks, reached after a dense scrub belt"
+    ],
+    "facts": [
+      {
+        "f": "Sheet: height 9 m, trunk 2.6 m, girth 4.80 m at 1.30 m, 6.00 m at base, crown 15.7 by 16.5 m; criteria size and age",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_992.pdf"
+      },
+      {
+        "f": "Sheet: age probably over 400 years (sheet's estimate, no method given)",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_992.pdf"
+      },
+      {
+        "f": "Sheet: trunk diameter over 1.50 m; a hollow under the fork likely runs through the trunk",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_992.pdf"
+      },
+      {
+        "f": "Sheet: two thick main limbs form a parasol crown with the centre displaced sideways",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_992.pdf"
+      }
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register only; no second source. Age is the sheet's 'probably over 400 years' with no stated method: stay vague. Paraje is in the Malaga part of the park though the sheet's park is Grazalema. Flagged for access and register-only.",
+    "curation_status": "flagged",
+    "hold": "no path to the tree found on working grazing land; a location we cannot tell a visitor how to reach does not ship (2026-11-02)"
+  }
+]

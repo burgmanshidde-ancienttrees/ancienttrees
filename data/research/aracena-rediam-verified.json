@@ -1,0 +1,67 @@
+[
+  {
+    "id": "arc_001",
+    "register_id": "rediam_1241",
+    "name": "The Tall Quejigo of the Pena de Arias Montano",
+    "species": "Portuguese Oak (Quercus faginea)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 310,
+    "height_m": 27.5,
+    "location": {
+      "address": "Under the low wall of the road up to the Pena de Arias Montano and the Ermita de Nuestra Senora de los Angeles, Alajar",
+      "latitude": 37.878348,
+      "longitude": -6.66713,
+      "neighbourhood": "Pena de Arias Montano, Alajar"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register coordinate only (Pena itself is at about 37.877,-6.668). Approximate.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf",
+      "https://www.eldiario.es/andalucia/pasaporte/leyendas-naturaleza-pena-arias-montano_1_2227242.html",
+      "https://juntadeandalucia.es/medioambiente/portal/documents/20151/a0d86e65-910b-be0b-55a9-35827f23908f"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf",
+      "id": "rediam_1241"
+    },
+    "access": "Free. Beside the public road up to the Pena de Arias Montano and its hermitage, below the roadside wall.",
+    "transport": "About 1.5 km from Alajar village by road or by the signed path; Alajar has a regional bus from Aracena.",
+    "alive_evidence": "None dated for this tree; the site is a visited pilgrimage place (eldiario.es feature; Junta trail guide).",
+    "recognition_facts": [
+      "Very tall for a quejigo: 27.5 m, with only two main limbs that rise almost vertically",
+      "Trunk 3.1 m round at 1.3 m, crown narrow and linear when in leaf (17 x 16 m)",
+      "Grows under the wall beside the road to the Pena, among exotic red gum and weeping willow and a few field elms"
+    ],
+    "facts": [
+      {
+        "fact": "Height above 27 m, notable for its height; trunk 3.10 m round at 1.30 m, 3.50 m at base",
+        "src": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf"
+      },
+      {
+        "fact": "Only two main limbs, branching almost vertically; crown linear in spring leaf",
+        "src": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf"
+      },
+      {
+        "fact": "Stands in a semi-landscaped area below the wall of the road to the Pena, with red gum, weeping willow and field elm",
+        "src": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf"
+      },
+      {
+        "fact": "The Pena is the rock outcrop where Benito Arias Montano retired; the hermitage dates from medieval times, remodelled in the 16th century; pilgrimage on 8 September",
+        "src": "https://www.eldiario.es/andalucia/pasaporte/leyendas-naturaleza-pena-arias-montano_1_2227242.html"
+      },
+      {
+        "fact": "The area holds the largest stand of Andalusian oak (quejigo) in the natural park",
+        "src": "https://juntadeandalucia.es/medioambiente/portal/documents/20151/a0d86e65-910b-be0b-55a9-35827f23908f"
+      }
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register-only for the tree (flagged). Site, access and context from the Junta trail guide and eldiario. Sheet species Quercus faginea (quejigo) in the sierra's wording; stated height 27.5 m from the sheet. No iNaturalist/Commons check done. Companion rediam_1240 (Encina de la Pena, sheet 404) not examined.",
+    "curation_status": "flagged",
+    "story": "At 27.5 metres this is a very tall quejigo, and height is what the Junta de Andalucia's register listed it for. It is a Portuguese oak, growing just below the Pena de Arias Montano. It has only two main limbs, and both rise almost straight up, so in spring leaf the register describes the crown as linear, upright rather than spreading, about 17 by 16 metres. The trunk is 3.10 metres round at chest height and 3.50 at the base.\n\nThe Pena is a rock outcrop above the village of Alajar where the scholar Benito Arias Montano retired. The hermitage of Nuestra Senora de los Angeles on top goes back to medieval times and was remodelled in the sixteenth century, and the pilgrimage to it is held every 8 September. A Junta guide to the area says it holds the largest stand of quejigo in the Sierra de Aracena natural park.\n\nThis tree's own spot is less wild. It grows in a semi-landscaped strip under the low wall of the road up to the Pena, among exotic red gum and weeping willow and a few field elms.\n\nThe register is our only source for the tree itself, and no dated photograph of it has been published. Nobody has given it an age. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it by its height, 27.5 metres, and two main limbs rising almost vertically into an upright crown. It grows under the wall of the road up to the Pena, beside red gum, weeping willow and field elms."
+  }
+]

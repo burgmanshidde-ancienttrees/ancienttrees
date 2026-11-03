@@ -1,0 +1,46 @@
+[
+  {
+    "id": "cdx_001",
+    "register_id": "rediam_38",
+    "name": "The Carob of Loma de los Escalones",
+    "species": "Carob (Ceratonia siliqua)",
+    "age_estimate": "roughly 350 to 400 years",
+    "age_min": 350,
+    "age_max": 400,
+    "age_basis": "source",
+    "girth_cm": 395,
+    "height_m": 11,
+    "location": {
+      "address": "Loma de los Escalones, beside the Canada Real Soriana, north of Cordoba",
+      "latitude": 37.965072,
+      "longitude": -4.758848,
+      "neighbourhood": "Cordoba (north, Sierra Morena foothills)"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register coordinate only. Sheet says the Canada Real Soriana drove road passes the tree. No photo or GPS observation found (iNaturalist: no records within 150 m).",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_38.pdf",
+      "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/932608/Apendice_I_ISA.pdf/6bb073cf-f5c9-26a6-83c0-4b112ed5d013"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_38.pdf",
+      "id": "rediam_38"
+    },
+    "access": "Public land (per the register) beside the Canada Real Soriana, a public drove road; the way in is unconfirmed on the ground.",
+    "transport": "Roughly 9 km north of central Cordoba (estimated from the map) in farmland; no bus data, reach it along the drove-road track.",
+    "alive_evidence": "None dated. The age figure is an estimate in the sheet, whose date is not stated.",
+    "facts": [
+      "Sheet: a male carob, listed for peculiar shape, notable size and an estimated age of about 350 to 400 years (the register's own estimate; its basis is not stated). Source: sheet PDF.",
+      "Sheet: very wide umbrella crown, 200 sq m projection, 17.4 by 14.65 m, total height 11 m. Source: sheet PDF.",
+      "Sheet: looks like a dome or vault, with the ends of the lower limbs resting on the ground. Source: sheet PDF.",
+      "Sheet: carried by two trunks from the same stool, one almost hollow and bigger; girths 3.95 m and 2.65 m at 1.30 m, 9.90 m at the base. The trunks are hidden by the dense crown and are hard to see from a distance. Source: sheet PDF.",
+      "Sheet, setting: scattered rockrose and mastic scrub with holm oak, wild olive and stone pine; the Canada Real Soriana, one of Spain's main drove roads, runs beside it; farmland. Source: sheet PDF."
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register only; the age is the register's estimate, carried as sourced, not derived by us. No vitality, photo or pin evidence. Flagged, 'register only'. Cannot ship until a photograph or confirmed pin exists. The Spanish-news query returned only the register PDF for this tree.",
+    "curation_status": "flagged",
+    "story": "This carob has grown into a vault. Its lower limbs reach down until their ends rest on the ground, and the crown, about 17 by 15 metres and only 11 metres high, closes over the trunks so completely that from a distance you cannot see them. The Junta de Andalucia's register estimates its age at about 350 to 400 years, without saying how it arrived at that, and lists it for its age, its size and its peculiar shape.\n\nUnderneath are two trunks from one stool. The bigger one is almost hollow and measures 3.95 metres round at chest height, the other 2.65, and together they spread to 9.90 metres at the base. The register records it as a male tree.\n\nThe Canada Real Soriana, one of Spain's main drove roads for livestock, runs right beside it at the Loma de los Escalones, in farmland on the Sierra Morena side of Cordoba. Around it grow scattered rockrose and mastic, holm oaks, wild olives and stone pines.\n\nIt lies roughly nine kilometres north of the city centre, on public land that the drove road reaches. Nobody has described the way in on foot, no photograph of the tree has been published, and the pin is the register's point, so this is one for walkers willing to look. If you follow the Canada Real Soriana and find it, tell us.",
+    "how_to_recognise": "You can recognise it by the dome-shaped crown whose lower limbs rest on the ground, hiding two trunks. It stands beside the Canada Real Soriana drove road at the Loma de los Escalones, north of Cordoba."
+  }
+]

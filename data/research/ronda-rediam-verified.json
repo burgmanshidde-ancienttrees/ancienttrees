@@ -1,0 +1,266 @@
+[
+  {
+    "id": "rnx_001",
+    "register_id": "rediam_938",
+    "name": "The Pinsapo of La Alcazaba",
+    "species": "Spanish Fir (Abies pinsapo)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 510,
+    "height_m": 28,
+    "location": {
+      "address": "Puerto de los Pilones, Canada del Pilar, Tolox, below Cerro de la Alcazaba",
+      "latitude": 36.676942,
+      "longitude": -5.010957,
+      "neighbourhood": "Sierra de las Nieves National Park (Tolox)"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register sheet coordinate only; sheet places it under Cerro de la Alcazaba, a few metres from the Arroyo de los Pilones, in the Puerto de los Pilones area. No GPS fix found.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_938.pdf",
+      "https://www.uma.es/media/files/Sendero_Quejigales_-_Torrecilla_-_790_Quejigales_Torrecilla.pdf"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_938.pdf",
+      "id": "rediam_938"
+    },
+    "access": "Free. Public land in the Sierra de las Nieves National Park beside the Quejigales to Torrecilla trail; older trail sheets list a park permit, recent guides none, so check current rules.",
+    "transport": "About 15 km from Ronda by mountain road to Los Quejigales (track reported closed to cars June to September), then about 1.5 hours on foot via the Canada del Cuerno.",
+    "alive_evidence": "Thin. The trail sheet UMA 790 (about 2010) and a 30 Jan 2026 trip report (elviajemehizoami.com) describe the Pilones climb through old pinsapos, but neither names this tree. Register sheet only for the individual.",
+    "recognition_facts": [
+      "Girth 5.10 m measured at 0.90 m; 6.00 m at the base, so a thick trunk for a fir",
+      "Two main limbs leave the trunk at only 0.90 m above ground, each carrying its own crown, instead of one central leader",
+      "Stands in sparse high ground with other pinsapos, a few mountain gall oaks and junipers, limestone rock around",
+      "Close under the Cerro de la Alcazaba, beside the Arroyo de los Pilones; the summit of Torrecilla is under 2 km away"
+    ],
+    "facts": [
+      {
+        "f": "Sheet height 28 m, girth 5.10 m at 0.90 m, base girth 6.00 m, crown 16 by 15 m, crown area 188.5 sq m",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_938.pdf"
+      },
+      {
+        "f": "Sheet says the oldest and most imposing pinsapos of the massif grow in this zone",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_938.pdf"
+      },
+      {
+        "f": "Trunk forks at 90 cm into two main branches each with its own crown; criteria size, age, form",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_938.pdf"
+      },
+      {
+        "f": "Puerto de los Pilones is on the Quejigales to Torrecilla trail, with views of Torrecilla and Cerro Alcazaba; a restored snow well lies just past it",
+        "s": "https://www.uma.es/media/files/Sendero_Quejigales_-_Torrecilla_-_790_Quejigales_Torrecilla.pdf"
+      },
+      {
+        "f": "Pinsapo is endemic to the Ronda massif",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_938.pdf"
+      }
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register-only for the individual tree; trail sheet and 2026 trip report establish the route and the pinsapar, not this trunk. Sheet field 'edad' empty, no age. Girth is at 0.9 m, not breast height 1.3 m. Not within the Pilones tree cluster of other REDIAM entries: quejigo and mostajo of the Canada de La Plazoleta (rnx_004) are about 1 km away. Host note: loc.wiki and wikiloc return 403 to automation.",
+    "curation_status": "flagged",
+    "story": "The Junta de Andalucia's register says the oldest and most imposing pinsapos of the whole massif grow on this ground, under the Cerro de la Alcazaba, and this is the one it measured. At 28 metres it is the tallest of the Spanish firs we list around Ronda.\n\nInstead of one leader it has two. Ninety centimetres above the ground the trunk splits into two main limbs, and each carries a crown of its own, so from below it looks like a pair of firs sharing one foot. That foot is 5.10 metres round where it forks and 6 metres at the base, thick for a fir.\n\nIt stands near the Puerto de los Pilones, a few metres from the Arroyo de los Pilones, on high, sparse limestone ground with other pinsapos, a few mountain gall oaks and junipers. The summit of Torrecilla is under two kilometres away, and a restored snow well lies just past the pass. Getting here takes about an hour and a half on foot from the Los Quejigales recreation area, up the Canada del Cuerno, and the access track to Quejigales has been reported closed to cars from June to September. Older Junta trail sheets list a park permit for this route while recent guides mention none, so check the park's current rules first.\n\nThe register is our only source for this individual tree, and it gives no age. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it by the two main limbs leaving the trunk only 90 centimetres up, each with its own crown, on a fir 28 metres tall. It stands under the Cerro de la Alcazaba, beside the Arroyo de los Pilones."
+  },
+  {
+    "id": "rnx_002",
+    "register_id": "rediam_1005",
+    "name": "The Pinsapo Moreno",
+    "species": "Spanish Fir (Abies pinsapo)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 590,
+    "height_m": 21,
+    "location": {
+      "address": "Canada de la Cuesta de los Hornillos, near Canada Bellina, Yunquera",
+      "latitude": 36.720562,
+      "longitude": -4.982341,
+      "neighbourhood": "Sierra de las Nieves National Park (Yunquera)"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register sheet coordinate only. Press places it on a route to Puerto Bellina in the Canada de la Cuesta de los Hornillos; sheet says at the foot of a path. No GPS fix found.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1005.pdf",
+      "https://www.esdiario.com/andalucia/231103/115818/ruta-bosque-pinsapos-unico-mundo.html"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1005.pdf",
+      "id": "rediam_1005"
+    },
+    "access": "Free. Public land in the Sierra de las Nieves National Park beside the Puerto Saucillo to Puerto Bellina trail; an old trail sheet lists a park permit, recent guides none.",
+    "transport": "About 40 km from Ronda to Yunquera on the A-366, then about 6 km of forest track to the Puerto del Saucillo viewpoint and on foot; Yunquera has buses from Malaga.",
+    "alive_evidence": "ESDiario, 3 Nov 2023, names it as a notable tree on a route to Puerto Bellina.",
+    "recognition_facts": [
+      "Girth 5.90 m just under the fork, among the thickest firs of the massif",
+      "Short trunk (1 m) splits into two huge main limbs rising to 21 m, shading about 227 sq m",
+      "A hollow just below the fork looks like two shoots that grew together",
+      "Stands beside a path through limestone slope with pinsapos, aleppo and maritime pines and planted Atlas cedars"
+    ],
+    "facts": [
+      {
+        "f": "Sheet: height 21 m, girth 5.90 m at 0.90 m, 7.10 m at base, crown 16.3 by 17.8 m, area 227.88 sq m",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1005.pdf"
+      },
+      {
+        "f": "Singularity is size; two main limbs rise from a short trunk; a hollow under the fork resembles two fused shoots",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1005.pdf"
+      },
+      {
+        "f": "Named as the Pinsapo Moreno in the Canada de la Cuesta de los Hornillos on a route to Puerto Bellina (Nov 2023 article)",
+        "s": "https://www.esdiario.com/andalucia/231103/115818/ruta-bosque-pinsapos-unico-mundo.html"
+      },
+      {
+        "f": "Surroundings include pinsapos, aleppo pine, maritime pine, some Scots pine and planted Atlas cedar; hawthorn is the main shrub",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1005.pdf"
+      }
+    ],
+    "photo_leads": [],
+    "verify_notes": "Two sources (register sheet plus a dated 2023 article naming it). The sheet's Latin field is garbled in the parse; species is Abies pinsapo from the sheet's text about pinsapos. The article gives the name and place, not measurements. Girth at 0.9 m.",
+    "curation_status": "verified",
+    "story": "Measured just under its fork, this pinsapo is 5.90 metres round, more than any other Spanish fir we list around Ronda, and 7.10 metres at the base. The trunk runs only a metre before it splits into two huge limbs that climb to 21 metres and shade about 228 square metres of slope. Just below the fork is a hollow, and the Junta de Andalucia's register reads the trunk as two shoots that grew together into one.\n\nIt is called the Pinsapo Moreno, and it stands at the foot of a path in the Canada de la Cuesta de los Hornillos, near the Canada Bellina above Yunquera. Around it the limestone slope holds pinsapos with Aleppo, maritime and a few Scots pines, planted Atlas cedars, and hawthorn as the main shrub. A walking feature in November 2023 still named it as one of the trees to look for on the route to Puerto Bellina.\n\nGetting there is a drive and then a walk. Yunquera is about 40 kilometres from Ronda, and a forest track of about six kilometres climbs from the village to the Puerto del Saucillo viewpoint, which has parking for about fifteen cars. The trail toward Puerto Bellina leaves from there. An old Junta trail sheet lists a park permit for this path while recent guides describe the walk without one, so check the current rules before going.\n\nNobody has published an age for it. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it by the short, thick trunk, 5.90 metres round, splitting a metre up into two huge limbs, with a hollow just below the fork. It stands beside the path in the Canada de la Cuesta de los Hornillos."
+  },
+  {
+    "id": "rnx_003",
+    "register_id": "rediam_1003",
+    "name": "The Candelabra Pinsapo",
+    "species": "Spanish Fir (Abies pinsapo)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 275,
+    "height_m": 16.5,
+    "location": {
+      "address": "Beside the path below Pico del Jarro, near Puerto Saucillo, Yunquera",
+      "latitude": 36.724121,
+      "longitude": -4.968207,
+      "neighbourhood": "Sierra de las Nieves National Park (Yunquera)"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register sheet coordinate; sources place it on the Puerto Saucillo to Puerto Bellina path roughly 0.5 km after the viewpoint (Puerto del Saucillo viewpoint is 36.7220, -4.9653 per Komoot). A Wikiloc waypoint exists but 403s automation; not used.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1003.pdf",
+      "https://www.esdiario.com/andalucia/231103/115818/ruta-bosque-pinsapos-unico-mundo.html",
+      "https://www.andalucia.org/blog/post/pinsapar-de-yunquera/",
+      "https://www.guiarepsol.com/es/viajar/vamos-de-excursion/rutas-pinsapares-andalucia/",
+      "https://www.uma.es/media/files/Sendero_Puerto_Saucillo_-_Puerto_Bellina_-_799_PuertoSaucillo_PuertoBellina.pdf"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1003.pdf",
+      "id": "rediam_1003"
+    },
+    "access": "Free. Public land in the Sierra de las Nieves National Park beside the signed Puerto Saucillo to Puerto Bellina loop; an old trail sheet lists a park permit, recent guides none.",
+    "transport": "About 40 km from Ronda to Yunquera on the A-366, then about 6 km of forest track to the Puerto del Saucillo viewpoint and 0.5 km on foot; Yunquera has buses from Malaga.",
+    "alive_evidence": "Several dated pieces: andalucia.org 6 Apr 2022, Repsol guide updated 28 Jan 2022, ESDiario 3 Nov 2023; each calls it a living singular tree. A hiker app lists a loop to it.",
+    "recognition_facts": [
+      "A thick branch leaves the trunk at 1.9 m, runs parallel to the ground for about two metres, then turns upward",
+      "Four more branches follow the same pattern one after another, forming a candelabra of upright crowns",
+      "Slim trunk (2.75 m girth) compared with other singular pinsapos: it is the shape, not the size",
+      "Grows at the side of the path under Pico del Jarro, in dense conifers with planted maritime pine, on a gentle north-east slope"
+    ],
+    "facts": [
+      {
+        "f": "Sheet: height 16.5 m, trunk 1.9 m, girth 2.75 m at 1.3 m, 4.80 m at base, crown 13.3 by 12.2 m; criterion form only",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1003.pdf"
+      },
+      {
+        "f": "Sheet: horizontal branch at 1.9 m turns vertical after two metres; four more follow in succession, forming a candelabra",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1003.pdf"
+      },
+      {
+        "f": "andalucia.org describes it as a 16 m pinsapo near Yunquera with four horizontal arms rising upward, a living natural monument",
+        "s": "https://www.andalucia.org/blog/post/pinsapar-de-yunquera/"
+      },
+      {
+        "f": "Repsol guide lists it on the Sierra de las Nieves hike with old snow pits nearby and an optional 2 km detour to Cueva del Agua",
+        "s": "https://www.guiarepsol.com/es/viajar/vamos-de-excursion/rutas-pinsapares-andalucia/"
+      },
+      {
+        "f": "Puerto Saucillo to Puerto Bellina is a 4.5 km circular, easy, signed trail of about 1.5 h through pinsapares",
+        "s": "https://www.uma.es/media/files/Sendero_Puerto_Saucillo_-_Puerto_Bellina_-_799_PuertoSaucillo_PuertoBellina.pdf"
+      },
+      {
+        "f": "The viewpoint at start looks over the Guadalhorce valley and the Sierra Prieta and Cabrilla",
+        "s": "https://www.uma.es/media/files/Sendero_Puerto_Saucillo_-_Puerto_Bellina_-_799_PuertoSaucillo_PuertoBellina.pdf"
+      }
+    ],
+    "photo_leads": [],
+    "verify_notes": "Three or more independent mentions plus the register. Repsol quotes over 20 m high; sheet says 16.5 m, andalucia.org and ESDiario 16 m: sheet used. Two nearby Yunquera entries on the same walk: rediam_1007 Majuelo de la Cueva del Agua (hawthorn, 1.05 m girth, small, not delivered) and Pinsapo Moreno (rnx_002). Trail sheet is a 2010 Consejeria de Medio Ambiente leaflet.",
+    "curation_status": "verified",
+    "story": "The Junta de Andalucia's register lists this fir for one reason only, its shape. At 1.9 metres up, a thick branch leaves the trunk, runs level with the ground for about two metres and then turns straight up into a crown of its own. Four more branches do the same, one after another, so the tree stands as a row of upright crowns on horizontal arms, the candelabra of its name.\n\nIt is not big. The trunk is 2.75 metres round at chest height and 4.80 at the base, slim beside the other singular pinsapos of these hills, and the sheet measures 16.5 metres of height. Two guides give about 16, and one puts it over 20; the register's figure is the one used here.\n\nIt is also easy to reach. It grows at the side of the signed path below the Pico del Jarro, about half a kilometre on from the Puerto del Saucillo viewpoint above Yunquera, which looks out over the Guadalhorce valley and the Sierra Prieta and Cabrilla. The full loop to Puerto Bellina is 4.5 kilometres, easy, about an hour and a half, past old snow pits, with an optional two-kilometre detour to the Cueva del Agua. Older trail sheets list a park permit and recent guides do not, so check before going.\n\nNobody has published an age. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it by the branches that run level from the trunk for about two metres and then turn straight up, five in a row. It stands beside the path below the Pico del Jarro, about 500 metres from the Saucillo viewpoint."
+  },
+  {
+    "id": "rnx_004",
+    "register_id": "rediam_878",
+    "name": "The Gall Oak of La Plazoleta",
+    "species": "Mountain Gall Oak (Quercus alpestris)",
+    "age_estimate": null,
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 480,
+    "height_m": 9,
+    "location": {
+      "address": "Canada de La Plazoleta, near Puerto de los Pilones, Tolox",
+      "latitude": 36.684109,
+      "longitude": -5.002107,
+      "neighbourhood": "Sierra de las Nieves National Park (Tolox)"
+    },
+    "location_precision": "approximate",
+    "pin_evidence": "Register sheet coordinate only. The neighbouring Mostajo (rediam_877, 36.684077,-5.002724) is about 55 m west; sheet says they stand a few metres apart beside a stream joining the Arroyo de los Pilones. No GPS fix found.",
+    "verified_sources": [
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_878.pdf",
+      "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_877.pdf",
+      "https://www.uma.es/media/files/Sendero_Quejigales_-_Torrecilla_-_790_Quejigales_Torrecilla.pdf"
+    ],
+    "official_register": {
+      "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+      "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_878.pdf",
+      "id": "rediam_878"
+    },
+    "access": "Free. Public land in the Sierra de las Nieves National Park off the Quejigales to Torrecilla trail; older trail sheets list a park permit, recent guides none, so check current rules.",
+    "transport": "About 15 km from Ronda by mountain road to Los Quejigales (track reported closed to cars June to September), then about 1.5 hours on foot via the Canada del Cuerno.",
+    "alive_evidence": "Thin. Official trail sheet (about 2010) and a 30 Jan 2026 trip report describe old gall oaks from the Puerto de los Pilones; neither names this trunk. Register sheet only.",
+    "recognition_facts": [
+      "Girth 4.80 m at 1.3 m, nearly 5 m, on a tree only 9 m tall with a clear trunk of 3 m",
+      "A whitebeam (mostajo) grows in the fork of the oak, seeded there; in season its denser foliage stands out against the oak's thinner leaves",
+      "Surrounded by other mountain gall oaks and creeping juniper; flat ground close to a mountain pass",
+      "A second singular tree, the Mostajo de La Plazoleta, lies about 55 m away beside the same stream"
+    ],
+    "facts": [
+      {
+        "f": "Sheet: height 9 m, trunk 3 m, girth 4.80 m at 1.3 m, base 5.80 m, crown 9.5 by 7.5 m; criteria rarity and size",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_878.pdf"
+      },
+      {
+        "f": "The mountain gall oak is restricted to the Sierra de las Nieves and listed as endangered in the Andalusian catalogue of threatened wild flora",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_878.pdf"
+      },
+      {
+        "f": "A whitebeam seed germinated in the oak's fork and grows there",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_878.pdf"
+      },
+      {
+        "f": "Neighbouring Mostajo: girth 3.40 m at 0.20 m, 5 m tall, lying trunk because it grew on an oak that fell",
+        "s": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_877.pdf"
+      },
+      {
+        "f": "Mountain gall oaks appear from the Puerto de los Pilones; the species was heavily damaged by charcoal burning and grazing",
+        "s": "https://www.uma.es/media/files/Sendero_Quejigales_-_Torrecilla_-_790_Quejigales_Torrecilla.pdf"
+      }
+    ],
+    "photo_leads": [],
+    "verify_notes": "Register-only for the individual; flagged. Mostajo rediam_877 (Whitebeam, Sorbus aria, 340 cm at 0.2 m, 5 m) folded into this entry as twin within about 55 m. Sheet Latin name Quercus alpestris used as given (a synonym debate with Q. canariensis/broteroi exists; not resolved). Trail permit note as for rnx_001.",
+    "curation_status": "flagged",
+    "story": "A whitebeam grows in the fork of this oak, from a seed that germinated up there, and in leaf its denser foliage stands out against the oak's thinner crown. The oak is the rarity. It is a mountain gall oak, Quercus alpestris, which the Junta de Andalucia's register describes as restricted to the Sierra de las Nieves and listed as endangered in Andalusia's catalogue of threatened flora. A Junta trail sheet adds that charcoal burning and grazing did the species heavy damage.\n\nThis one is squat and heavy, 4.80 metres round at chest height and 5.80 at the base on a tree only 9 metres tall, with three metres of clear trunk under a crown about 9 by 7.5 metres. It stands on flat ground near a mountain pass among other gall oaks and creeping juniper.\n\nAbout 55 metres away, beside the same stream that runs down to the Arroyo de los Pilones, lies its neighbour in the register, the Mostajo de La Plazoleta. That whitebeam grew on an oak that has since fallen, and its trunk now lies along the ground, 3.40 metres round near the root.\n\nGetting here means about an hour and a half on foot from Los Quejigales via the Canada del Cuerno to the Puerto de los Pilones. The access track is reported closed to cars from June to September, and older trail sheets list a park permit. Nobody has published an age. If you know one, tell us.",
+    "how_to_recognise": "You can recognise it by the whitebeam growing out of its fork, on a squat oak 4.80 metres round and only 9 metres tall. It stands by a stream near the Puerto de los Pilones, 55 metres from a fallen whitebeam lying along the ground."
+  }
+]

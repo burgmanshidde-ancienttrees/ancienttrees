@@ -15163,6 +15163,38 @@
       "tokens": 200874,
       "trees": 16,
       "note": "All 16 written, none held; Lorton ships from the Pound (pin moved there by the dispatcher), Gresford age label corrected by the dispatcher. Dispatcher (photo look, fixes, builder) about 250k more by estimate. The whole pass about 1.39M tokens for 16 trees, roughly 87k a tree. Build with scripts/build_uk_north.py."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "grazalema+alpujarras+granada+cordoba (andalucia rediam)",
+      "tokens": 163666,
+      "trees": 8,
+      "note": "REDIAM sheets pre-fetched and parsed by the dispatcher (data/research/andalucia-rediam-sheets.json), so the pass read no PDFs blind. Most rows are on private fincas; 21 to leads. Brief wrongly asked for a photo or confirmed pin, so three public trees were rejected and one was put back later."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "cazorla+aracena (andalucia rediam)",
+      "tokens": 154957,
+      "trees": 6,
+      "note": "Cazorla 5 (Felix Rodriguez de la Fuente, las Cruces, la Misa, Fuente del Oso pines; Salto de los Organos terebinth), Aracena 1 (Pena de Arias Montano oak). Huelva sheets are almost all private dehesa."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "ronda+malaga+grazalema+alpujarras (andalucia rediam)",
+      "tokens": 171040,
+      "trees": 7,
+      "note": "Ronda +4 Sierra de las Nieves pinsapos and oak, Malaga +1 (Jotron ombu), Grazalema +2 (one held: no path). Alpujarras extras all private."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "andalucia (8 places)",
+      "tokens": 244346,
+      "trees": 20,
+      "note": "20 stories and recognition lines, place fields for Sierra de Grazalema, Sierra de Cazorla, Las Alpujarras, Sierra de Aracena and the four live cities; cut once by the usage limit and resumed. Preflight then held two Grazalema trees (Ocuri olive: booked visits only; Zurraque oak: no path), so 18 ship. A translate pass for the four es overlays follows (not counted here). Dispatcher (sheet fetch and parse, one photo viewed and approved, builder, tests) about 200k by estimate. All in about 0.95M tokens, roughly 53k a tree."
     }
   ]
 }
