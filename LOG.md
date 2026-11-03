@@ -12,6 +12,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-04 session: Kauai life check after Hurricane Lowell (rung 3), all nine unknown, nothing retired
+
+**What changed in the product (once built):** the six live Kauai trees (Yamamoto and Gulick-Rowell monkeypods, Koloa baobab, Kanoa and Wilcox banyans, Tree Tunnel) say in `access` that Hurricane Lowell brought down many trees on Kauai in September 2026, that we have no word on this one since, and to check before a special trip. `verify_notes` carry what was searched.
+
+**Finding:** no report names any of our Kauai trees as fallen, and none has a dated photograph or observation after 2026-09-08 either. Searched county and HDOT updates, Civil Beat, Kauai Now, Hawaii News Now, NTBG, iNaturalist near each pin (people did observe other species within 200 m of several in October). Maluhia Road was listed closed on 09-08 with no reason given; the tunnel is hundreds of trees and regrew after Iniki. NTBG says its Kauai gardens reopened by 10-23. Held trees (Allerton figs, Poipu Road earpod, Hongwanji monkeypods): verdicts for the publish session in data/research/kauai-lowell-lifecheck-2026-11-03.md (the figs and monkeypods may go with the storm line, the earpod is the likeliest gone). A reader on Kauai would settle it.
+
 ## 2026-11-04 session: Santa Barbara (5) and San Jose (2) written and held for the pace; El Pino ruling
 
 **What changed in the product (once built):** Santa Barbara becomes a place with five trees: the 1876 Moreton Bay fig by the station, the City Hall pepper tree, the five library gums and the Alameda Park dragon tree (a free downtown walk of about 1.5 km), plus the Lotusland dragon tree by booked tour. San Jose gets two tree pages (no place page under four): the Roberto Adobe heritage fig and the Santa Clara mission olives from about 1822. Both added to `scripts/build_us_california.py`, which now holds 29 California trees; tested, preflight fails only on the pace; reverted. The Carol Highsmith photograph of the Santa Barbara fig passes Cadiz but is a TIFF: held in data/research/us-california-photos.json until a JPEG is vendored.
