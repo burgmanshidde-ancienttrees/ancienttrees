@@ -125,7 +125,6 @@ const crumbItems: [string, string | null][] = [
       <span class="profile-avatar acct-pic" id="pic-preview" aria-hidden="true"></span>
       <button type="button" id="pic-pick" class="sheet-b sheet-b--secondary set-pic-btn">Choose a photo</button>
       <input id="in-pic" type="file" accept="image/*" hidden />
-      <p class="at-sheet-fine">Optional. People who follow you see it beside your name.</p>
       <label for="in-name" class="set-edit-label">Your name</label>
       <input id="in-name" type="text" maxlength="40" autocomplete="nickname" placeholder="The name people see" />
       <p class="at-sheet-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
@@ -137,7 +136,6 @@ const crumbItems: [string, string | null][] = [
         <option value="">Don't show</option>
         {countries.map((c) => <option value={c.code}>{c.name}</option>)}
       </select>
-      <p class="at-sheet-fine">Its flag shows after your name.</p>
     </div>
     <div class="at-sheet-btns">
       <button type="button" id="save-name" class="sheet-b sheet-b--primary">Save</button>

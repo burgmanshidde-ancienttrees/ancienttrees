@@ -61,8 +61,6 @@ struct ProfileEditor: View {
                     .padding(.vertical, 4)
                 } header: {
                     Text("Your picture")
-                } footer: {
-                    Text("Optional. People who follow you see it beside your name.")
                 }
 
                 Section {
@@ -87,8 +85,6 @@ struct ProfileEditor: View {
                     .accessibilityIdentifier("profile-country")
                 } header: {
                     Text("Your country")
-                } footer: {
-                    Text("Its flag shows after your name.")
                 }
 
                 if failed {

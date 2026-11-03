@@ -99,6 +99,8 @@ rule for the save count, 2026-08-26, "pas van 1 tellen").
 
 Hidde, 2026-09-26, on the settings footer that read "3,375 trees, updated whenever you open the app. Version 1.0.1 (10) · built 8 Sep 23:05": "liever niks niet dingen neerzetten als het niet strict nodig is, legally ofzo." A line earns its place by being needed, by a person, a licence or the law, and never because it is true or because we could. The footer is now only "Version 1.0.2 (15)", last on the screen. Before adding a line of status, a count or a date, ask who needs it; if the answer is us, it goes in a log, not on the screen.
 
+**No line that explains what the screen already shows** (Hidde, 2026-11-03, on "Its flag shows after your name." under the country picker: "less is more ... stop putting random sentences when unnecessary"). A footnote that says what a control does, where its result appears, or who sees it, when the person will see that for themselves, is noise. Removed that day from Edit profile on app and web, with the picture's "People who follow you see it beside your name." A footnote stays only when it changes what somebody does (the name line: "It does not have to be your real one.").
+
 ## Before it ships
 
 `python3 scripts/copycheck.py` greps every user-facing string for these tics.
