@@ -1,0 +1,135 @@
+{
+  "leads": [
+    {
+      "name": "Eastern Plane, Quaker burial ground, Redcliffe Hill",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "location": {
+        "latitude": 51.44847,
+        "longitude": -2.59023,
+        "neighbourhood": "Redcliffe"
+      },
+      "why_not_verified": "BTF: girth 540 cm, age 200, strong lean (ST5908 7233). Access unclear: the burial ground is described as a community garden behind metal bars with the hermit's cave gated; one iNaturalist Platanus obs 2019 only. Needs an access answer and a recent photo."
+    },
+    {
+      "name": "Lombardy Poplar, St Andrews Park",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "location": {
+        "latitude": 51.47303,
+        "longitude": -2.58709,
+        "neighbourhood": "Montpelier / St Andrews"
+      },
+      "why_not_verified": "BTF: girth 530 cm, age 120 (ST5932 7506). A Bristol247 best-tree shortlist entry (read as a search snippet; page 403s) describes it as a dead tree still valued for wildlife: possibly a standing dead trunk. Needs a life check on site."
+    },
+    {
+      "name": "Black Poplar, Victoria Park",
+      "species": "Hybrid Black Poplar (Populus x canadensis)",
+      "location": {
+        "latitude": 51.44156,
+        "longitude": -2.58625,
+        "neighbourhood": "Windmill Hill"
+      },
+      "why_not_verified": "BTF: girth 500+ cm (ST5935 7156), half rotted, top truncated, 'still just alive' at the survey date; likely to be gone or a stump by now. No recent evidence of this trunk."
+    },
+    {
+      "name": "Common Beech, the Downs",
+      "species": "Common Beech (Fagus sylvatica)",
+      "location": {
+        "latitude": 51.4718,
+        "longitude": -2.61645,
+        "neighbourhood": "Durdham Down"
+      },
+      "why_not_verified": "BTF: 'magnificent' tree girth 480 cm (ST5728 7494). Single source, no more specific place than a stretch of open common; no photo or confirmed pin in reach."
+    },
+    {
+      "name": "Large-leaved Lime avenue, the Downs near Clay Pit Road",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "location": {
+        "latitude": 51.47504,
+        "longitude": -2.61562,
+        "neighbourhood": "Durdham Down"
+      },
+      "why_not_verified": "BTF: girth 480 cm, 'over 250 years', part of an avenue (ST5734 7530). Avenue tree, single source, no pin in reach."
+    },
+    {
+      "name": "Twin-trunked Sycamore, top of Bridge Valley Road",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "location": {
+        "latitude": 51.46249,
+        "longitude": -2.62683,
+        "neighbourhood": "Clifton Down"
+      },
+      "why_not_verified": "BTF: total girth 600 cm, two 350 cm trunks (ST5655 7391). Single source; the one iNaturalist sycamore record nearby is 170 m away, so no placement or life evidence."
+    },
+    {
+      "name": "Second fig on the New Cut bank, Bath Bridge roundabout",
+      "species": "Common Fig (Ficus carica)",
+      "location": {
+        "latitude": 51.44689,
+        "longitude": -2.58258,
+        "neighbourhood": "Redcliffe / Totterdown"
+      },
+      "why_not_verified": "BTF: sprawling fig on the bank of the New Cut (ST5961 7215). No age, no girth, no recent observation found at the spot."
+    },
+    {
+      "name": "Cedar of Lebanon stump (elephant carving), Bristol Zoo old site",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "location": {
+        "latitude": 51.46323,
+        "longitude": -2.62238,
+        "neighbourhood": "Clifton"
+      },
+      "why_not_verified": "BTF: original 1840 planting, felled, a sculpted stump (ST5686 7399). Not a living tree, and Bristol Zoo's Clifton site has closed to the public (not checked); no."
+    },
+    {
+      "name": "Wych Elms, Castle Park",
+      "species": "Wych Elm (Ulmus glabra)",
+      "location": {
+        "latitude": 51.45595,
+        "longitude": -2.58687,
+        "neighbourhood": "Castle Park"
+      },
+      "why_not_verified": "BTF: two 'magnificent' elms of the same girth (ST5932 7316). The Castle Park Tree Trail (Bristol Civic Society, 2017) says the council site manager planted all the park's trees over 42 years, so these are young; no girth given. Not old."
+    },
+    {
+      "name": "Cedars of Lebanon, Stoke Lodge",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "location": {
+        "latitude": 51.48483,
+        "longitude": -2.63505,
+        "neighbourhood": "Stoke Bishop"
+      },
+      "why_not_verified": "BTF: three cedars, girth 605 cm (ST5600 7640), one dead. Stoke Lodge is the Cotham School playing-field estate; public access is contested (see the BTF post on Cotham School and the Stoke Lodge trees). Not delivered on hard rule 10."
+    },
+    {
+      "name": "Eastville Park beech pollard and London Plane",
+      "species": "Common Beech (Fagus sylvatica)",
+      "location": {
+        "latitude": 51.47733,
+        "longitude": -2.55316,
+        "neighbourhood": "Eastville"
+      },
+      "why_not_verified": "BTF: huge beech pollard 520 cm, c.300 years (ST6168 7552), plane 520 cm. Public park, about 4 km out; single source and no life check; central walk took priority."
+    },
+    {
+      "name": "Clifton private gardens and halls (West Mall holm oak and others)",
+      "species": "Holm Oak (Quercus ilex)",
+      "location": {
+        "latitude": 51.4545,
+        "longitude": -2.62312,
+        "neighbourhood": "Clifton"
+      },
+      "why_not_verified": "BTF: holm oak 520 cm (ST5680 7302), Manor Hall horse chestnut 625 cm, Cornwallis House holm oak 550 cm, Merchant Venturers House copper beech and Lord Mayor's wellingtonia: communal or private gardens and halls of residence, no public access (hard rule 10)."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Wishing Tree (judged by an earlier pass)",
+      "reason": "Doubt about its state; carried over from the earlier pass, not re-checked."
+    },
+    {
+      "name": "Chesterfield Hospital sweet chestnut; Frenchay Hospital cedar; Henbury and Shirehampton golf-course oaks; Trinity College oak",
+      "reason": "Hospital grounds, private golf courses or college land with no public access; left out as the earlier pass did (BTF itself says 'private land' for several)."
+    }
+  ],
+  "note": "2026-11-03 deepen pass: source is the Bristol Tree Forum veteran survey (Richard Bland); its ST grid references are 10 m resolution and judged unreliable by an earlier pass, so pins from them are approximate. Woodland Trust Ancient Tree Inventory not used."
+}
