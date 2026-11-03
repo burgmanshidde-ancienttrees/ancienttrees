@@ -104,6 +104,27 @@
       "by": "session-4dfe2f39",
       "claimed_at": "2026-11-03T09:55:02+00:00",
       "trees_at_claim": null
+    },
+    {
+      "target": "winchester",
+      "kind": "verify",
+      "by": "session-4dfe2f39",
+      "claimed_at": "2026-11-03T09:55:05+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "oxford",
+      "kind": "verify",
+      "by": "session-4dfe2f39",
+      "claimed_at": "2026-11-03T09:55:06+00:00",
+      "trees_at_claim": 5
+    },
+    {
+      "target": "cambridge",
+      "kind": "verify",
+      "by": "session-4dfe2f39",
+      "claimed_at": "2026-11-03T09:55:06+00:00",
+      "trees_at_claim": 5
     }
   ]
 }
