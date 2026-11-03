@@ -1,0 +1,544 @@
+[
+  {
+    "id": "lyo_026",
+    "register_ids": [
+      4216
+    ],
+    "name": "The Cedars of Square Ferrié",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "location": {
+      "address": "Square Gustave-Auguste Ferrié, rue Jacques-Louis Hénon",
+      "latitude": 45.779705,
+      "longitude": 4.82518,
+      "neighbourhood": "La Croix-Rousse"
+    },
+    "commune": "Lyon 4e",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 1 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Public city square, free; the cedars stand at its entrance.",
+    "transport": "Croix-Rousse plateau, metro C to Croix-Rousse, then about 10 minutes on foot.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.82518,45.7797&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4216,
+        "species_fr": "CEDRUS LIBANI : Cèdre du Liban.",
+        "locality_fr": "Square Gustave-Auguste Ferrié, Angle rue Jacques-Louis Hénon et rue Deleuvre.",
+        "condition_fr": "Groupe de 3 grands cèdres qui marque l'entrée du square et apporte une belle identité au jardin public.",
+        "last_update": "2021-09-10"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: images dated 2020-05 to 2026-06-19 within 60 m",
+    "location_site": {
+      "name": "Square Gustave-Auguste Ferrié",
+      "radius_m": 50
+    },
+    "facts": [
+      "Register: group of 3 large Lebanon cedars marking the entrance of the square (Métropole de Lyon PLU-H)",
+      "Commons holds 'Jardin Gustave-Ferrié (Lyon) Vue en janvier 2022' etc, garden-level photos only"
+    ],
+    "verify_notes": "Group of 3 cedars at one entrance, one place to stand. Register says 'Groupe de 3 grands cèdres'. Pin is planning-map point, approximate. Ensemble acceptable as one collectible entry. Cedars of Lebanon in Lyon 19th-century plantings: no source dating THIS group, so no age.",
+    "story": "Three big Cedars of Lebanon act as the front door of Square Gustave-Auguste Ferrié. The Métropole's register of remarkable trees, which protects them under Lyon's planning rules, says the group marks the entrance to the square and gives the public garden its identity. Stand at the corner of rue Jacques-Louis Hénon and rue Deleuvre and you are looking at them.\n\nThey are best understood as a group rather than three separate trees. A cedar of Lebanon on its own spreads its branches wide and level; three planted together at an entrance make an evergreen gateway that holds its shape through every season, while the deciduous trees elsewhere in the square come and go. That is what the register is protecting, the way the trio frames the place as much as the size of any one trunk.\n\nThe register gives no measurements and no planting date for them. Nothing on record dates the group, so this page gives it no age. The register entry was last updated in September 2021, and street-level photographs from the corner run up to 2026.\n\nThe square has two more protected entries, three copper beeches and a red oak, so it rewards a slow circuit. If you know when the cedars went in, tell us.",
+    "how_to_recognise": "You can recognise them as the three big evergreen cedars together at the square's entrance. They stand at the corner of rue Jacques-Louis Hénon and rue Deleuvre in Square Gustave-Auguste Ferrié."
+  },
+  {
+    "id": "lyo_027",
+    "register_ids": [
+      4219
+    ],
+    "name": "The Copper Beeches of Square Ferrié",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "location": {
+      "address": "Square Gustave-Auguste Ferrié, corner rue Deleuvre",
+      "latitude": 45.779687,
+      "longitude": 4.824871,
+      "neighbourhood": "La Croix-Rousse"
+    },
+    "commune": "Lyon 4e",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 1 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Public city square, free.",
+    "transport": "Croix-Rousse plateau, metro C to Croix-Rousse, then about 10 minutes on foot.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.82487,45.77969&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4219,
+        "species_fr": "FAGUS SYLVATICA PURPUREA : ensemble de 3 hêtres pourpres.",
+        "locality_fr": "Square Gustave-Auguste Ferrié, Angle rue Deleuvre.",
+        "condition_fr": "Très bel ensemble compose de 3 hêtres, situé dans le square public, remarquables par leur taille et la relative rareté de cette essence dans la région lyonnaise.",
+        "last_update": "2021-09-10"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: images dated 2020-05 to 2026-06-19 within 60 m",
+    "location_site": {
+      "name": "Square Gustave-Auguste Ferrié",
+      "radius_m": 50
+    },
+    "facts": [
+      "Register: a very fine group of 3 purple beeches in the public square, remarkable for size and for the relative rarity of the species around Lyon"
+    ],
+    "verify_notes": "Register row 4219 says ensemble of 3. Same square as the cedars (4216) and red oak (4217), about 40 m apart: a writer may merge the square into one entry.",
+    "story": "Copper beeches are relatively rare around Lyon, the Métropole's register says, and Square Gustave-Auguste Ferrié has three of them together. The register protects them as a very fine group, remarkable both for their size and for that rarity, at the rue Deleuvre corner of the square.\n\nA copper beech is a beech with purple leaves, and the colour changes through the year. The new leaves open purple in spring, darken through the summer and turn coppery before they fall. Three of them side by side make a block of colour, at its strongest in late April and May when the foliage is fresh.\n\nThe register does not say how old these are, and gives no girth or height, so this page leaves the age open rather than guessing.\n\nThe register entry was last updated in September 2021, and street-level photographs taken near the corner run into 2026. The same square holds three Cedars of Lebanon at its entrance and a big red oak on the rue Hénon side. If you know how long the beeches have stood here, tell us.",
+    "how_to_recognise": "You can recognise them by their purple leaves, three beeches together, unlike anything else in the square. They stand at the rue Deleuvre corner of Square Gustave-Auguste Ferrié, near the entrance cedars.",
+    "best_time": {
+      "months": [
+        4,
+        5
+      ],
+      "kind": "fresh leaves",
+      "label": "late April and May, when the new leaves open purple"
+    }
+  },
+  {
+    "id": "lyo_028",
+    "register_ids": [
+      4217
+    ],
+    "name": "The Red Oak of Square Ferrié",
+    "species": "Northern Red Oak (Quercus rubra)",
+    "location": {
+      "address": "Square Gustave-Auguste Ferrié, rue Jacques-Louis Hénon",
+      "latitude": 45.779871,
+      "longitude": 4.825132,
+      "neighbourhood": "La Croix-Rousse"
+    },
+    "commune": "Lyon 4e",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 1 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Public city square, free; the tree stands at the street edge.",
+    "transport": "Croix-Rousse plateau, metro C to Croix-Rousse, then about 10 minutes on foot.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.82513,45.77987&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4217,
+        "species_fr": "QUERCUS RUBRA : Chêne rouge d'Amérique.",
+        "locality_fr": "Square Gustave-Auguste Ferrié, rue Jacques-Louis Hénon.",
+        "condition_fr": "Très grand et très beau sujet situé dans le square public, en bordure de voie, remarquable par sa taille et son envergure.",
+        "last_update": "2021-09-10"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: images dated 2020-05 to 2026-06-16 within 60 m",
+    "location_site": {
+      "name": "Square Gustave-Auguste Ferrié",
+      "radius_m": 50
+    },
+    "facts": [
+      "Register: a very large and fine specimen in the public square at the street edge, remarkable for its size and spread"
+    ],
+    "verify_notes": "Single tree. Fold with 4219/4216 if the square is told as one place.",
+    "story": "Square Gustave-Auguste Ferrié has an American at its edge. This northern red oak stands at the street edge on rue Jacques-Louis Hénon, and the register of remarkable trees protects it as a very large and very fine specimen, remarkable for its size and for its spread.\n\nThat spread is what you notice from the pavement. Planted at the edge of the square, its crown reaches out over the street side as well as the garden. In summer it is simply a big green oak with broad, sharply lobed leaves. In late October and November it changes character, turning a rich red for a few weeks.\n\nQuercus rubra comes from eastern North America and has been planted in European parks for a long time, but the register gives no planting date for this one and no measurements. This page gives it no age and no girth, only what the register says, that it is very large.\n\nThe register entry was last updated in September 2021, and street-level photographs near the spot run into 2026. With the three entrance cedars and the three copper beeches a few dozen metres away, the square makes a compact walk of seven protected trees. If you know this oak's age, tell us.",
+    "how_to_recognise": "You can recognise it as the single big oak at the square's street edge, its wide crown reaching over rue Jacques-Louis Hénon, red in autumn. It stands in Square Gustave-Auguste Ferrié.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "late October into November, when the leaves turn a rich red"
+    }
+  },
+  {
+    "id": "lyo_029",
+    "register_ids": [
+      4201
+    ],
+    "name": "The Hickory of the Jardin des Chartreux",
+    "species": "Hickory (Carya sp.)",
+    "location": {
+      "address": "Jardin des Chartreux, cours du Général Giraud",
+      "latitude": 45.769314,
+      "longitude": 4.824323,
+      "neighbourhood": "Pentes de la Croix-Rousse"
+    },
+    "commune": "Lyon 1er",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 1 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Public city garden, free; opening hours not confirmed.",
+    "transport": "About 10 minutes on foot from Hôtel de Ville metro (line C), up the Croix-Rousse slope.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.82432,45.76931&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4201,
+        "species_fr": "JUGLANS OVOIDA ''Hickory'' : Caryer d'Amérique.",
+        "locality_fr": "Jardin des Chartreux. Cours du Général Giraud;",
+        "condition_fr": "Grand exemplaire. Bonne santé. Arbre devenu rare dans le Grand Lyon.",
+        "last_update": "2016-06-30"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: images dated 2022-11 to 2026-01-03 within 60 m",
+    "facts": [
+      "Register: large specimen in good health; a tree that has become rare in the Grand Lyon (register spells species 'Juglans ovoida Hickory', Caryer d'Amérique)",
+      "Earlier pass left it as a lead for single source only; the bar now accepts one official register"
+    ],
+    "verify_notes": "Species uncertain: register says Juglans ovoida 'Hickory'/Caryer d'Amérique, i.e. a Carya (probably shagbark, Carya ovata). Publish as 'Hickory (Carya sp.)' and ask the reader. Pin approximate inside a garden of ~1 ha: not a one-glance site, so no location_site.",
+    "story": "The Métropole's register says trees like this one have become rare in Greater Lyon. It protects a large hickory in the Jardin des Chartreux, in good health, on the slope below the Croix-Rousse that once belonged to the Carthusian monastery the garden is named after.\n\nThe register's own label is part of the puzzle. It files the tree as Juglans ovoida, with Hickory in quotation marks and Caryer d'Amérique, American hickory, in French. That Latin mixes the walnut genus with what reads like the shagbark hickory, Carya ovata, and no accepted species carries the name as written. Hickories are close relatives of walnuts, so the slip is easy to understand, but it leaves the exact species open. This page calls it a hickory and asks you. If you can tell a shagbark from its cousins, by its bark or its nuts, let us know which it is.\n\nThe register gives no height, girth or planting date, so this page gives it no age. Its entry was last updated in June 2016, and street-level photographs near the garden run to early 2026, though none shows this trunk itself. If you find it, a photograph would settle both questions, where exactly it stands and what it is.\n\nThe garden is better known for its magnolias, cedars and horse chestnuts. By the register.s account, the hickory is the rarer find.",
+    "how_to_recognise": "You can recognise it as the garden's large hickory, a walnut relative, among the magnolias, cedars and horse chestnuts of the Jardin des Chartreux. The garden opens off cours du Général Giraud."
+  },
+  {
+    "id": "lyo_030",
+    "register_ids": [
+      4345
+    ],
+    "name": "The Weeping Blue Cedar of Square Henri Dor, Caluire",
+    "species": "Blue Weeping Atlas Cedar (Cedrus atlantica 'Glauca Pendula')",
+    "location": {
+      "address": "Square Henri Dor, rue du Docteur Henri Dor",
+      "latitude": 45.783089,
+      "longitude": 4.835148,
+      "neighbourhood": "Bissardon"
+    },
+    "commune": "Caluire-et-Cuire",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 1 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Public square, free; opening hours not confirmed.",
+    "transport": "Day trip: Caluire-et-Cuire, about 20 to 30 minutes from Lyon centre by city bus.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.83515,45.78309&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4345,
+        "species_fr": "Cedrus atlantica glauca pendula",
+        "locality_fr": "Square Henri Dor.",
+        "condition_fr": "Classement de ce cèdre en EBC ponctuel : Arbre remarquable dans le paysage, de par son essence, son port et son amplitude,très rare.",
+        "last_update": "2023-10-17"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: images dated 2020-05 to 2026-02-12 within 60 m",
+    "location_site": {
+      "name": "Square Henri Dor",
+      "radius_m": 50
+    },
+    "facts": [
+      "Register: classified as a single point because of its species, habit and amplitude, 'très rare'"
+    ],
+    "verify_notes": "Cultivar of Atlas cedar, rare. Access: the register calls it 'Square', Nominatim places it on rue du Docteur Henri Dor. Confirm it is a public square on the first reading of imagery.",
+    "story": "The Métropole calls this cedar very rare, and protects it as a single remarkable tree in the landscape for three reasons, its species, its habit and its amplitude. It is a weeping blue Atlas cedar, the cultivar Glauca Pendula, in Square Henri Dor in Caluire-et-Cuire.\n\nThe cultivar is a strange tree to meet. An ordinary Atlas cedar grows up and out in tiers. Glauca Pendula grows blue-grey needles on branches that hang straight down, so that an old one looks less like a conifer than a blue curtain. The register picks this one out for its amplitude, the sheer reach of it, which is what makes it worth crossing into Caluire for.\n\nThe register does not record its height, its spread in metres or when it was planted, and nothing else on record dates it, so this page gives it no age. The entry was last updated in October 2023, and street-level photographs near the square run into 2026.\n\nCaluire-et-Cuire sits on the plateau just north of the Croix-Rousse, and the square is in the Bissardon neighbourhood. If you visit, tell us how far its branches now reach, and if you know when it went in, tell us that too.",
+    "how_to_recognise": "You can recognise it by its blue-grey needles on branches that hang straight down, the weeping form its cultivar name describes. It stands in Square Henri Dor in Caluire-et-Cuire."
+  },
+  {
+    "id": "lyo_031",
+    "register_ids": [
+      4060,
+      4061,
+      4062
+    ],
+    "name": "The Great Planes of Quai Clemenceau, Caluire",
+    "species": "London Plane (Platanus x acerifolia)",
+    "location": {
+      "address": "Quai Georges Clemenceau, near Le Vernay",
+      "latitude": 45.808931,
+      "longitude": 4.844327,
+      "neighbourhood": "Le Vernay"
+    },
+    "commune": "Caluire-et-Cuire",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 3 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Public riverside quay, free; the trees line the roadside of a busy road.",
+    "transport": "Day trip: Caluire-et-Cuire, about 25 to 35 minutes from Lyon centre by city bus.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.84433,45.80893&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4060,
+        "species_fr": "PLATANUS ACERIFOLIA : platane.",
+        "locality_fr": "Quai Georges Clémenceau.",
+        "condition_fr": "Classement en EBC ponctuels : Arbres remarquables par leur dimension exceptionnelle (plus de 30m) et leur âge (plus de 150 ans).",
+        "last_update": "2023-10-04"
+      },
+      {
+        "id": 4061,
+        "species_fr": "PLATANUS ACERIFOLIA : platane.",
+        "locality_fr": "Quai Georges Clémenceau.",
+        "condition_fr": "Classement en EBC ponctuels : Arbres remarquables par leur dimension exceptionnelle (plus de 30m) et leur âge (plus de 150 ans).",
+        "last_update": "2023-10-04"
+      },
+      {
+        "id": 4062,
+        "species_fr": "PLATANUS ACERIFOLIA : platane.",
+        "locality_fr": "Quai Georges Clémenceau.",
+        "condition_fr": "Classement en EBC ponctuels : Arbres remarquables par leur dimension exceptionnelle (plus de 30m) et leur âge (plus de 150 ans).",
+        "last_update": "2023-10-04"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: imagery of 2020-08-04 only (no recent image found): life check thin",
+    "height_m": 30,
+    "age_estimate": "over 150 years",
+    "age_min": 150,
+    "age_basis": "source",
+    "facts": [
+      "Register: three planes remarkable for exceptional size (more than 30 m) and age (more than 150 years), Métropole de Lyon PLU-H"
+    ],
+    "verify_notes": "Rows 4060, 4061, 4062 within 30 m, folded. height_m and age (over 150 years) are the register's words, not measurements. Life check is OLD (only 2020 street imagery): flagged. Avenue-like quay row: confirm it is a compact group, else block as an avenue.",
+    "story": "The Métropole's register puts these three planes at more than 30 metres tall and more than 150 years old. It protects them along Quai Georges Clemenceau in Caluire-et-Cuire, on the Saône near Le Vernay, as remarkable for both their exceptional size and their age.\n\nThirty metres is a ten-storey building, three times over in a row along the river. The register does not give a girth, and its figures are words rather than a fresh measurement, so the honest summary is very tall and very old, by the Métropole's own account.\n\nAmong the trees on this page, few carry a written age at all. These three do, from the body that protects them.\n\nThe caution is about the present rather than the past. The register entry was last updated in October 2023, but the only street-level photographs found at the spot date from August 2020, so recent confirmation is thin. If you walk or cycle along Quai Clemenceau, tell us all three still stand, and send a photograph if you can.",
+    "how_to_recognise": "You can recognise them as three planes over 30 metres tall, close together along the roadside of Quai Georges Clemenceau. They stand on the Saône bank near Le Vernay in Caluire-et-Cuire."
+  },
+  {
+    "id": "lyo_032",
+    "register_ids": [
+      4343,
+      4344
+    ],
+    "name": "The Planes of Saint-Côme-Saint-Damien, Caluire",
+    "species": "London Plane (Platanus x acerifolia)",
+    "location": {
+      "address": "53 chemin de Fond Rose, Église Saint-Côme-Saint-Damien",
+      "latitude": 45.791532,
+      "longitude": 4.825129,
+      "neighbourhood": "Cuire le Bas"
+    },
+    "commune": "Caluire-et-Cuire",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 2 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Church forecourt, seen from chemin de Fond Rose, free.",
+    "transport": "Day trip: Caluire-et-Cuire, about 25 to 35 minutes from Lyon centre by city bus.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.82513,45.79153&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4343,
+        "species_fr": "Platanus acerifolia",
+        "locality_fr": "53 chemin de Fond Rose, Eglise St Côme/St Damien",
+        "condition_fr": "Classement des 2 platanes en EBC ponctuels pour leur taille (envergure de leur couronne), leur positionnement et leur intérêt paysager.",
+        "last_update": "2023-10-17"
+      },
+      {
+        "id": 4344,
+        "species_fr": "Platanus acerifolia",
+        "locality_fr": "53 chemin de Fond Rose, Eglise St Côme/St Damien",
+        "condition_fr": "Classement de ces 2 platanes en EBC ponctuels : arbres remarquables pour leur taille (envergure de leur couronne), leur positionnement et leur intérêt paysager.",
+        "last_update": "2023-10-17"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: no Panoramax image within 60 m: life check NONE",
+    "facts": [
+      "Register: two planes remarkable for crown spread, position and landscape interest"
+    ],
+    "verify_notes": "Two rows 20 m apart folded. No life trace found by any tool: weakest candidate; likely a lead.",
+    "story": "Two planes frame the church of Saint-Côme-Saint-Damien at 53 chemin de Fond Rose, and the Métropole protects them for the size of their crowns. The register of remarkable trees names three reasons in all, their crown spread, where they stand and what they add to the landscape.\n\nPosition matters here more than for most trees on this page. A church forecourt is a deliberate place, built to be seen and approached, and a pair of wide-crowned planes on it shapes the whole view of the building. The two register points sit about 20 metres apart, close enough to read as a pair from the road.\n\nThe register gives no height, no girth and no planting date. Nothing else on record dates them either, so this page gives them no age.\n\nThis is the least confirmed entry in Caluire-et-Cuire. The register was last updated in October 2023, and that update is the most recent sign of the trees. No street-level photograph or other recent trace of them has turned up. They may stand exactly as described, but it is fair to say plainly that nobody has shown it lately.\n\nSo this is an invitation. If you pass the church on chemin de Fond Rose, tell us whether both planes are still there, and send a photograph if you can.",
+    "how_to_recognise": "You can recognise them as the two wide-crowned planes on the forecourt of the church of Saint-Côme-Saint-Damien, about 20 metres apart. The church stands at 53 chemin de Fond Rose in Caluire-et-Cuire."
+  },
+  {
+    "id": "lyo_033",
+    "register_ids": [
+      4245,
+      4246
+    ],
+    "name": "The Unpruned Planes of Rue Pierre Termier, Collonges",
+    "species": "London Plane (Platanus x acerifolia)",
+    "location": {
+      "address": "Rue Pierre Termier",
+      "latitude": 45.811227,
+      "longitude": 4.840073,
+      "neighbourhood": "Collonges-au-Mont-d'Or"
+    },
+    "commune": "Collonges-au-Mont-d'Or",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 2 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Beside a public street, free.",
+    "transport": "Day trip: Collonges-au-Mont-d'Or, about 30 minutes from Lyon centre.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.84007,45.81123&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4245,
+        "species_fr": "PLATANUS ACERIFOLIA : platane",
+        "locality_fr": "Rue Pierre Termier",
+        "condition_fr": "Ce platane, en port naturel, jamais mutilé par des élagages depuis leur plantation, a développé une couronne d'une rare ampleur. L'espace dans lequel il est  placé permet justement ce développement exceptionnel de ce sujet (rarement visible sur la Métropole de Lyon). Cet arbre très sain a de plus, une grande espérance de vie",
+        "last_update": "2021-09-23"
+      },
+      {
+        "id": 4246,
+        "species_fr": "PLATANUS ACERIFOLIA : platane",
+        "locality_fr": "Rue PIerre Termier",
+        "condition_fr": "Ce platane, en port naturel, jamais mutilé par des élagages depuis leur plantation, a développé une couronne d'une rare ampleur. L'espace dans lequel il est  placé permet justement ce développement exceptionnel de ce sujet (rarement visible sur la Métropole de Lyon). Cet arbre très sain a de plus, une grande espérance de vie",
+        "last_update": "2021-09-23"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: imagery of 2022-10-27",
+    "facts": [
+      "Register: natural habit, never pruned since planting, crown of rare spread"
+    ],
+    "verify_notes": "Two rows 30 m apart folded. Register text is long: read it in full from register_text before use. Commune sits at the edge of the 30-minute limit.",
+    "story": "These two planes have never been pruned since the day they were planted. The Métropole's register of remarkable trees says so in as many words, and adds that a plane grown this way, in its natural shape, is rarely seen anywhere in Greater Lyon.\n\nMost city planes are cut back to fit the street around them, their crowns shaped by whoever last trimmed them. On Rue Pierre Termier in Collonges-au-Mont-d'Or, the register says, the space around these two let them do what a plane does when nobody interferes, and each has built a crown of rare breadth. It calls them very healthy and gives them a long life expectancy still ahead.\n\nThat is the reason to come. Not a famous name or a story, but the chance to see what a London plane looks like when it is left alone, two of them about 30 metres apart.\n\nThe register gives no height, girth or planting date, so this page gives them no age. Its entry was last updated in September 2021, and street-level photographs at the spot date from October 2022. Collonges is about 12 kilometres up the Saône from central Lyon, near the edge of a comfortable day trip. If you visit, tell us how wide those crowns have grown.",
+    "how_to_recognise": "You can recognise them by their crowns, broad and in natural shape, never cut back, on two planes about 30 metres apart. They stand on Rue Pierre Termier in Collonges-au-Mont-d'Or."
+  },
+  {
+    "id": "lyo_034",
+    "register_ids": [
+      4202,
+      4203
+    ],
+    "name": "The Planes of Balmont, La Duchère",
+    "species": "London Plane (Platanus x acerifolia)",
+    "location": {
+      "address": "Montée de Balmont, centre social de la Duchère",
+      "latitude": 45.784533,
+      "longitude": 4.800121,
+      "neighbourhood": "La Duchère"
+    },
+    "commune": "Lyon 9e",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 2 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Beside the Duchère social centre on a public street, free.",
+    "transport": "La Duchère, 9th arrondissement, about 20 minutes from Lyon centre by bus.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.80012,45.78453&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4202,
+        "species_fr": "PLATANUS ACERIFOLIA : platane.",
+        "locality_fr": "Montée de Balmont la Duchère - centre social.",
+        "condition_fr": "Deux très grands arbres de 35 m de haut. excellent état sanitaire. Visibles bien",
+        "last_update": "2016-06-30"
+      },
+      {
+        "id": 4203,
+        "species_fr": "PLATANUS ACERIFOLIA : platane.",
+        "locality_fr": "Montée de Balmont la Duchère - centre social.",
+        "condition_fr": "Deux très grands arbres de 35 m de haut.Excellent état sanitaire. Visibles bien",
+        "last_update": "2016-06-30"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: images dated 2021-02 to 2026-06-03 within 60 m",
+    "height_m": 35,
+    "facts": [
+      "Register: two very large trees of 35 m, excellent health, visible from far"
+    ],
+    "verify_notes": "height_m 35 is the register condition text, not measured. Rows 4202/4203 folded.",
+    "story": "Two planes beside the social centre on the Montée de Balmont stand 35 metres tall, by the Métropole's register. That is roughly a twelve-storey building, twice, on the hill of La Duchère in Lyon's 9th arrondissement.\n\nThe register entry is brief and almost entirely about size. Two very large trees, 35 metres high, in excellent health, and easy to see. The height is the register's own figure rather than a fresh survey, but even with some margin it puts them among the tallest trees on this page.\n\nWhat the register does not give is everything else. There is no girth, no planting date and no story attached to them, and nothing else on record dates them, so this page gives them no age. They are simply two enormous trees, standing at a community building rather than in a park or a square.\n\nThe register entry was last updated in June 2016, but street-level photographs taken nearby run from 2021 to June 2026, so there is good reason to expect them to be standing. If you go, tell us how they look, and if you know when they were planted, tell us that too.",
+    "how_to_recognise": "You can recognise them as two very tall planes, about 35 metres, side by side. They stand beside the Duchère social centre on the Montée de Balmont."
+  },
+  {
+    "id": "lyo_035",
+    "register_ids": [
+      4138,
+      4136
+    ],
+    "name": "The Cedars of Place de la Libération, Écully",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "location": {
+      "address": "Place de la Libération, beside the mairie",
+      "latitude": 45.775607,
+      "longitude": 4.777752,
+      "neighbourhood": "Écully centre"
+    },
+    "commune": "Écully",
+    "location_precision": "approximate",
+    "pin_source": "Métropole de Lyon PLU-H planning-map point (centroid of 2 row(s)); no OSM tree node tool reachable (Overpass blocked), no iNaturalist or Commons geotag on the trunk",
+    "access": "Public square beside the town hall, free.",
+    "transport": "Day trip: Écully, about 25 minutes from Lyon centre by bus.",
+    "curation_status": "flagged",
+    "verified_sources": [
+      "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info",
+      "https://api.panoramax.xyz/api/search?place_position=4.77775,45.77561&place_distance=0-60"
+    ],
+    "official_register": {
+      "name": "Métropole de Lyon PLU-H, arbres remarquables (espace boisé classé ponctuel)",
+      "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/plu-h-opposable-espaces-boises-classes-ponctuels/info"
+    },
+    "register_text": [
+      {
+        "id": 4138,
+        "species_fr": "CEDRUS LIBANI : cèdre du Liban.",
+        "locality_fr": "Place de la Libération jouxtant la mairie.",
+        "condition_fr": "Dans le parc d'un ancien domaine horticole.Un des plus anciens de la commune.Excellent état sanitaire.",
+        "last_update": "2016-05-18"
+      },
+      {
+        "id": 4136,
+        "species_fr": "CEDRUS ATLANTICA : glauca.",
+        "locality_fr": "Place de la libération",
+        "condition_fr": "Port et développement remarquable",
+        "last_update": "2016-05-18"
+      }
+    ],
+    "photo_candidates": [],
+    "life_check": "Panoramax street-level imagery at the spot: latest imagery 2021-02-17 only; a Commons photo of the Vélo'v station on the square is dated 2026-08-23, so the square is current",
+    "location_site": {
+      "name": "Place de la Libération",
+      "radius_m": 50
+    },
+    "facts": [
+      "Register: cedar of Lebanon in the park of a former horticultural estate, one of the oldest in the commune, excellent health",
+      "Row 4136: an Atlas cedar (Cedrus atlantica glauca) nearby, with remarkable habit and development"
+    ],
+    "verify_notes": "4138 Cedrus libani at the mairie and 4136 Atlas cedar on the same square 30 m apart, folded as a pair. Cedrus libani at Parc municipal Terver (4137, avenue du docteur Terver, 'isolated individual of great size') is a separate candidate 300 m away.",
+    "story": "The cedar beside Écully's town hall grew up in the park of an old horticultural estate, and the Métropole's register calls it one of the oldest in the commune. It is a Cedar of Lebanon, protected as a remarkable tree on Place de la Libération, and the register notes its excellent health.\n\nIt does not stand alone. About 30 metres away on the same square, a second protected cedar is an Atlas cedar of the blue-needled form, glauca, which the register picks out for its remarkable habit and development. Side by side, the two show how differently two close relatives can grow on one square.\n\nWhat the horticultural estate grew, and when the cedars went in, the register does not say. Nobody has published a planting date, so this page gives them no age, only the register's word that the Lebanon cedar is among the commune's oldest.\n\nBoth register entries were last updated in May 2016. The most recent street-level photographs at the trees are from February 2021, though a photograph of the square taken in August 2026 shows it as it is today. If you visit Écully, tell us both cedars are still there, and send a photograph of each.",
+    "how_to_recognise": "You can recognise them as two cedars about 30 metres apart, one with blue-tinged needles. They stand on Place de la Libération beside Écully's town hall; the Cedar of Lebanon is the one nearer the building."
+  }
+]

@@ -1,22 +1,6 @@
 {
   "leads": [
     {
-      "register_id": 4201,
-      "species": "American Hickory (register lists it as 'JUGLANS OVOIDA Hickory: Caryer d'Amerique', which is not a valid taxon name and is probably a corrupted register field for a Carya species, likely Carya ovata)",
-      "locality": "Jardin des Chartreux, Cours du General Giraud, 69004 Lyon",
-      "latitude": 45.769314,
-      "longitude": 4.824323,
-      "reason": "Single source only (the Metropole de Lyon PLU-H remarkable-tree register). Searched the garden's Wikipedia page, its Auvergne-Rhone-Alpes heritage dossier, Vanupied and Office du Tourisme write-ups, and general web search for a hickory/Carya/Caryer specimen in this garden: none corroborate it, and none of them name any walnut-family tree at all. About 280m from the already-published lyo_009 (Garden Trees of Jardin des Chartreux ensemble entry), inside the same garden, which is genuinely promising if a second source ever turns up: an individually locatable specimen would be a stronger entry than the current ensemble one. Also worth fixing the species field before this ever ships: 'Juglans ovoida' is not a real name."
-    },
-    {
-      "register_id": 4217,
-      "species": "Northern Red Oak (Quercus rubra)",
-      "locality": "Square Gustave-Auguste Ferrie, angle rue Jacques-Louis Henon et rue Deleuvre, 69004 Lyon",
-      "latitude": 45.779871,
-      "longitude": 4.825132,
-      "reason": "Single source only (the register). Square Ferrie itself is well documented (Ville de Lyon, ruesdelyon.net, mairie4.lyon.fr) as a public garden on the Croix-Rousse plateau, but nothing found names this specific oak, or the neighbouring cedars/beeches at the same square (register_ids 4215, 4216, 4218, 4219), individually. About 800m from lyo_008 (Parc de la Cerisaie), so worth another look if a second source surfaces; the whole square could also be considered as a compact ensemble candidate (a public square with a labelled cedar/oak/beech grouping) rather than one tree, which would need a fresh judgement call under the collectible-point rule. Re-checked 2026-08-20: fetched ruesdelyon.net's own Square Ferrie page directly, it names no individual trees or species at all, only 'une ceinture d'arbres' generically. Still single-sourced, still a lead. Re-checked again 2026-08-21 (verify pass): fetched the official lyon.fr square page directly (only size/hours/access, no tree detail), tried tribunedelyon.fr's 'arbres remarquables' feature (403 Forbidden, not retried per the two-attempts rule) and the Lyon municipal archives PDF on trees (fetched, no mention of this square or these species). Also worth flagging for whoever revisits: the square's own ruesdelyon.net page notes a 2024 renovation with paths raised and flower beds ('massifs') fenced off awaiting new plantings; this reads as bed/ground work rather than canopy tree removal, but it has not been confirmed either way that these specific cedars/beeches/oak still stand. No new second source found. Still single-sourced, still a lead."
-    },
-    {
       "register_id": null,
       "species": "Hop Hornbeam (Ostrya carpinifolia)",
       "locality": "unnamed site, 2.0 km from centre, register condition note: mature specimen, rare species, notable landscape visibility",
@@ -31,14 +15,6 @@
       "latitude": null,
       "longitude": null,
       "reason": "2026-08-20 pass: found via the guichetdusavoir.org library Q&A service (fetched directly, not from a search summary), which quotes the booklet 'Arbres remarquables du Rhone' (2000): 'Le cedre du Liban dans le parc municipal Blanchoud dans le 5e : plus de 30 metres de haut et 6,50 m de circonference (page 44).' That is one real source with a specific citation, but a park called 'Blanchoud' could not be located under that name in any current map, Ville de Lyon page or ruesdelyon.net listing searched this pass. CAUTION: a WebSearch AI summary conflated this tree with the already-published lyo_006 (Atlas Cedar of Parc de la Chapelle, 9th arrondissement, a Cedrus atlantica, not Cedrus libani), inventing a 'Blanchoud/Sabattier house' bicentennial cedar with lyo_006's own measurements (28m, 32m crown, 635cm). That invented merge was discarded; do not repeat it. The Parc de la Chapelle grounds (18 rue de la Chapelle, formerly the Sabatier property, per ruesdelyon.net fetched directly) are a distinct, already-published park with a real 6.75m-circumference Atlas cedar of its own, unrelated to this lead. Needs someone to identify the actual 'parc Blanchoud', possibly a renamed or absorbed 5th-arrondissement park, before this can be pinned or even confirmed as still standing; no age was estimated because a park could not be confirmed, let alone a coordinate. Re-checked 2026-08-21 (verify pass): plain web search for 'Blanchoud' plus Lyon 5e park/square returned nothing under that name at all, no progress. Still unlocated, still a lead."
-    },
-    {
-      "register_id": 4345,
-      "species": "Atlas Cedar, weeping blue form (Cedrus atlantica 'Glauca Pendula')",
-      "locality": "Square Henri Dor, Lyon",
-      "latitude": 45.783089,
-      "longitude": 4.835148,
-      "reason": "Single source only (the register). Searched 'square Henri Dor' Lyon cedre; results returned only unrelated squares (Henri Pensier, Ninon Vallin) and a furniture shop. No independent page naming this square or its cedar was found this pass."
     },
     {
       "register_id": null,
@@ -71,6 +47,142 @@
       "latitude": 45.757766,
       "longitude": 4.795454,
       "reason": "Single source only (the register), and the register's own condition text calls it 'Jeune magnolia de beau developpement' (young magnolia, still developing), which cuts against the genuinely-old bar on its own; no other qualifying trait (no claim of visual spectacle or history) found this pass. Recorded because it sits right next to lyo_014 in case it matures into a candidate or a reader flags it."
+    },
+    {
+      "register_id": null,
+      "species": "London Plane (Platanus x hispanica), 426 cm, 24 m",
+      "locality": "Quai Raoul Carrie, 69009 Lyon",
+      "latitude": 45.799626,
+      "longitude": 4.835879,
+      "reason": "2026-11-02 parks/inventory pass: Survey 2018 only, 250 m from the delivered 578 cm plane; second quay plane. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": null,
+      "species": "Atlas Cedar (Cedrus atlantica), 420 cm, 22 m",
+      "locality": "Rue Tramier, Ecully",
+      "latitude": 45.774442,
+      "longitude": 4.78182,
+      "reason": "2026-11-02 parks/inventory pass: Listed as Espace vert, 2023 survey; public access unclear (could be a private or institutional garden), nothing found by search. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": null,
+      "species": "Pedunculate Oak (Quercus robur), 415 cm, 22 m",
+      "locality": "Chemin du Chancelier, Ecully",
+      "latitude": 45.777627,
+      "longitude": 4.775936,
+      "reason": "2026-11-02 parks/inventory pass: Survey 2017; the street holds a former house now used as the gendarmerie, so grounds may not be public. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": null,
+      "species": "Oak (Quercus sp.), 439 cm, 26 m",
+      "locality": "Chemin des Rivieres, Tassin-la-Demi-Lune",
+      "latitude": 45.770363,
+      "longitude": 4.75902,
+      "reason": "2026-11-02 parks/inventory pass: Survey 2013 only, species not resolved, roadside verge; no recent evidence. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": null,
+      "species": "London Plane, 361 cm, 29 m",
+      "locality": "Rue Garibaldi, 69006 Lyon",
+      "latitude": 45.766436,
+      "longitude": 4.850784,
+      "reason": "2026-11-02 parks/inventory pass: Part of an avenue row of 33 trees within 55 m; avenue = blocked as collectible point, the single biggest could be a lead. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": null,
+      "species": "London Plane, 352 cm, 28 m",
+      "locality": "Quai Fulchiron, 69005 Lyon",
+      "latitude": 45.755431,
+      "longitude": 4.824324,
+      "reason": "2026-11-02 parks/inventory pass: Quay row of planes 265 to 352 cm; row, not a single standout. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": null,
+      "species": "Common Mulberry (Morus alba), 500 cm, 11 m",
+      "locality": "Chemin de Saint-Bonnet de Mure, Saint-Priest",
+      "latitude": 45.690035,
+      "longitude": 4.975836,
+      "reason": "2026-11-02 parks/inventory pass: Unusually thick old mulberry (inventory planting year 1930, an estimate), survey 2024, but it stands in Saint-Priest on a country lane about 35 minutes from Lyon; no second source found. Worth a photograph search. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": null,
+      "species": "London Plane, 433/411/374 cm, 29 to 32 m",
+      "locality": "Boulevard du 11 Novembre 1918, Villeurbanne",
+      "latitude": 45.779708,
+      "longitude": 4.860153,
+      "reason": "2026-11-02 parks/inventory pass: Boulevard planes, an avenue; four trees of 353 to 411 cm along 600 m. Not a single collectible point. Source: Metropole de Lyon street-tree inventory only."
+    },
+    {
+      "register_id": 4269,
+      "species": "London Plane",
+      "locality": "Chemin Ferrand, traffic island, Saint-Didier-au-Mont-d'Or",
+      "latitude": 45.79405,
+      "longitude": 4.81188,
+      "reason": "Register: very large bicentenary plane, in view. Panoramax 2024-2025 at spot shows a wooded lane, trunk not identified; commune at edge of day-trip range; no photo or exact pin."
+    },
+    {
+      "register_id": 4001,
+      "species": "Cedar of Lebanon",
+      "locality": "Parc de Fromente, Route de Champagne, Saint-Didier-au-Mont-d'Or",
+      "latitude": 45.80842,
+      "longitude": 4.79308,
+      "reason": "Register: very large cedars planted mid-19th c (rows 4000-4002, beech 4003, oak 4004). No Panoramax image or life trace within 60 m; park public status not shown."
+    },
+    {
+      "register_id": 4294,
+      "species": "London Plane",
+      "locality": "Impasse de Chazières, Les Hauts de Saône, Lyon 9e",
+      "latitude": 45.7809,
+      "longitude": 4.8141,
+      "reason": "Register: group of 3 planes of 35 m. Impasse (likely private residential access): access not shown."
+    },
+    {
+      "register_id": 4256,
+      "species": "Atlas Cedar",
+      "locality": "19 avenue Burdeau, Neuville-sur-Saône area",
+      "latitude": 45.87338,
+      "longitude": 4.83934,
+      "reason": "Register: cedar 20 m high, crown 20 m; stands on a private plot along the road, access not shown."
+    },
+    {
+      "register_id": 3958,
+      "species": "London Plane",
+      "locality": "Rue Henri Bouchard / rue du Prado (Fontaines area)",
+      "latitude": 45.83739,
+      "longitude": 4.83927,
+      "reason": "Register: 'pluri centenaire' plane kept in the roadway. Street tree, no life trace checked, no photo or exact pin."
+    },
+    {
+      "register_id": 3971,
+      "species": "Pedunculate Oak",
+      "locality": "Parc de Montvallon, chemin de la Croix Rampeau",
+      "latitude": 45.86606,
+      "longitude": 4.74499,
+      "reason": "Register: pluri-centenary oak seen from the neighbouring public park and road; may be private; far out (over 30 min)."
+    },
+    {
+      "register_id": 4104,
+      "species": "Osage Orange (Maclura pomifera)",
+      "locality": "Chemin du petit Revoyet",
+      "latitude": 45.71029,
+      "longitude": 4.80298,
+      "reason": "Register: very old, exceptional development, very rare adult in Grand Lyon; access and life not checked; no photo or exact pin."
+    },
+    {
+      "register_id": 4048,
+      "species": "Elm (Ulmus)",
+      "locality": "Avenues Marcel Mérieux / Jean Colomb, near the monument (Lyon west)",
+      "latitude": 45.78157,
+      "longitude": 4.70576,
+      "reason": "Register: very rare survivor of the graphiosis elms. Worth a pass: needs life check and pin; outside time box."
+    },
+    {
+      "register_id": 4166,
+      "species": "Pedunculate Oak",
+      "locality": "Chemin vert / chemin du Grand Chêne, Charbonnières area",
+      "latitude": 45.77591,
+      "longitude": 4.73868,
+      "reason": "Register: very old oak, relic of the ancient plateau forest, by the road. Not checked (outside time box)."
     }
   ],
   "blocked": [
@@ -91,6 +203,29 @@
       "species": "Cedar of Lebanon (Cedrus libani)",
       "locality": "Angle des rues Clos Savaron et Chevalier, 69004 Lyon",
       "reason": "Register's own condition text: 'implante dans un jardin d'une maison individuelle' (planted in a single house's private garden). Hard rule 10, and it is somebody's home, which does not bend under the 2026-08-13 loosening either."
+    },
+    {
+      "species": "London Plane row, 352 to 402 cm, 39 m",
+      "locality": "Rue Joannes Raclet, Jonage",
+      "latitude": 45.798903,
+      "longitude": 5.040956,
+      "reason": "Avenue of about 12 large planes (392 to 402 cm, 39 m) in Jonage, 25 km out and survey 2006; avenue, not a collectible point."
+    },
+    {
+      "register_id": 4218,
+      "species": "Cedar of Lebanon",
+      "locality": "68 rue Jacques-Louis Hénon, Lyon 4e",
+      "latitude": 45.77992,
+      "longitude": 4.82427,
+      "reason": "Register: in a private garden (north-west of Square Ferrié); not a public tree."
+    },
+    {
+      "register_id": 4262,
+      "species": "Black Pine / planes",
+      "locality": "Parc Elsa Triolet, rue du 8 mai 1945",
+      "latitude": 45.78753,
+      "longitude": 4.91928,
+      "reason": "Groups of trees with no individual remarkable reason beyond landscape presence."
     }
   ]
 }

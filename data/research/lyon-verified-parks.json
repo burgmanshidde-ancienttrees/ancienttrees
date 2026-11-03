@@ -1,0 +1,340 @@
+[
+  {
+    "name": "The Giant Plane of Place Ollier",
+    "species": "London Plane (Platanus x hispanica)",
+    "commune": "Lyon 7e Arrondissement",
+    "location": {
+      "address": "Place Ollier, 69007 Lyon",
+      "latitude": 45.752403,
+      "longitude": 4.838254,
+      "neighbourhood": "Guillotiere, 7th arrondissement"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.1969",
+    "access": "Public square, free, open at all hours",
+    "transport": "Riverside Quai Claude Bernard tram and Guillotiere metro are within about 10 minutes on foot (stop names to be confirmed by the writer from the TCL map)",
+    "girth_cm": 545,
+    "height_m": 31,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.1969"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.1969"
+    ],
+    "facts": [
+      "Girth 545 cm and 31 m tall in the Metropole's surveyed inventory (survey 10 Sep 2025). The next largest tree within 55 m is a plane of 265 cm, so this one is about twice the girth of its neighbours (inventory query, same source).",
+      "The square is a public place in the Guillotiere district; Commons has many photographs of the square but none of this trunk."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Why this trunk: it stands alone as the giant of the square; neighbouring planes are 250 to 265 cm. A girth of 545 cm in a tree the inventory dates to 1950 (about 75 years) would be an unusually fast 7 cm a year for a plane, so the real planting is probably older than the inventory year; no source says when. Do not state an age. Inventory row: girth 545 cm, total height 31 m, crown diameter 12 m, survey date 2025-09-10, inventory planting year 1950 (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2025-09-10 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Plane of Quai Raoul Carrie",
+    "species": "London Plane (Platanus x hispanica)",
+    "commune": "Lyon 9e Arrondissement",
+    "location": {
+      "address": "Quai Raoul Carrie, 69009 Lyon (Saone bank opposite the Ile Barbe)",
+      "latitude": 45.797842,
+      "longitude": 4.830423,
+      "neighbourhood": "Saint-Rambert, 9th arrondissement"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.54867",
+    "access": "Public riverside quay, free, open at all hours",
+    "transport": "Saint-Rambert / Ile Barbe area; bus or Saint-Rambert station about 10 to 15 minutes walk (stop to be confirmed)",
+    "girth_cm": 578,
+    "height_m": 26,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.54867"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.54867",
+      "https://www.visiterlyon.com/decouvrir/sites-et-monuments/sites-et-monuments-remarquables/l-ile-barbe"
+    ],
+    "facts": [
+      "Girth 578 cm and 26 m tall in the Metropole's inventory, the largest girth of any plane recorded in the whole street-tree inventory within Lyon proper (inventory query of trees at or above 300 cm).",
+      "The Ile Barbe site beside it is a classed site; the Quai Raoul Carrie path runs along the river there (visiterlyon.com Ile Barbe pages)."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Survey date is 2018, older than five years: alive is thin, say so. A second large plane (350 cm) stands about 45 m away. 250 m north on the same quay, a plane of 426 cm (survey 2018) is a separate lead. Inventory row: girth 578 cm, total height 26 m, crown diameter 26 m, survey date 2018-07-25, inventory planting year None (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2018-07-25 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Black Poplars of the Parc d'Artillerie",
+    "species": "Black Poplar (Populus nigra)",
+    "commune": "Lyon 7e Arrondissement",
+    "location": {
+      "address": "Boulevard du Parc d'Artillerie, 69007 Lyon",
+      "latitude": 45.728671,
+      "longitude": 4.842989,
+      "neighbourhood": "Gerland, 7th arrondissement"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.182158",
+    "access": "Public green space beside the boulevard, free",
+    "transport": "Tram T6 stop Challemel Lacour Artillerie is about 100 m away (stop name seen in Commons file titles geotagged there)",
+    "girth_cm": 480,
+    "height_m": 30,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.182158"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.182158"
+    ],
+    "facts": [
+      "Two black poplars side by side: 480 cm and 450 cm girth, both 30 m tall (survey 1 Mar 2023). A third black poplar 320 cm stands within 55 m.",
+      "Folded register ids: twin of the 450 cm poplar at 45.728721, 4.842999, about 6 m away."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Twins folded into one entry. Black poplars are short-lived trees, so thick old ones are less common than planes; the inventory planting year 1963 is an estimate and does not fit 480 cm easily either way, so no age is given. Check access: the strip is public green space beside the Espace Henry Vallee and the T6 tram. Inventory row: girth 480 cm, total height 30 m, crown diameter 20 m, survey date 2023-03-01, inventory planting year 1963 (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2023-03-01 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Cedars of Square Xavier de Virieu",
+    "species": "Atlas Cedar (Cedrus atlantica)",
+    "commune": "Collonges-au-Mont-d'Or",
+    "location": {
+      "address": "Square Xavier de Virieu, 69660 Collonges-au-Mont-d'Or",
+      "latitude": 45.815302,
+      "longitude": 4.84652,
+      "neighbourhood": "Collonges-au-Mont-d'Or"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.194651",
+    "access": "Public square (a 'square' in the Metropole inventory, Espace vert), free",
+    "transport": "Collonges-au-Mont-d'Or is on the Saone about 12 km north of central Lyon; bus from Vaise or Gare de Vaise (line to be confirmed), roughly 30 minutes",
+    "girth_cm": 411,
+    "height_m": 22,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.194651"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.194651"
+    ],
+    "facts": [
+      "Three Atlas Cedars of 411, 411 and 382 cm girth (22, 22 and 18 m tall), plus a plane of 370 cm and 28 m and a horse chestnut of 308 cm within 55 m (survey March and April 2026, the most recent survey date seen in the inventory).",
+      "The inventory dates the cedars to 1918, the plane to 1936 and the Ginkgo (252 cm) to 1946: a mixed ensemble in one small square."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Compact ensemble in one small square taken in at one glance: the pin is the 411 cm cedar at the listed coordinate, the others lie within 25 m. Suggest location_site {name: Square Xavier de Virieu, radius_m: 40}. Cedar 1918 is an inventory estimate, not documented. Note the Collonges town trail mentions a Cedar of Lebanon at the Jeanne d'Arc school, a different tree and not public. Inventory row: girth 411 cm, total height 22 m, crown diameter 18 m, survey date 2026-03-25, inventory planting year 1918 (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2026-03-25 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Cedar of Place de Weingarten",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "commune": "Bron",
+    "location": {
+      "address": "Place de Weingarten, 69500 Bron",
+      "latitude": 45.733541,
+      "longitude": 4.90939,
+      "neighbourhood": "Bron town centre"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.21234",
+    "access": "Public square beside the Hotel de Ville, free",
+    "transport": "Bron town centre; tram T2 serves Bron (about 25 minutes from Part-Dieu; stop to be confirmed)",
+    "girth_cm": 383,
+    "height_m": 20,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.21234"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.21234",
+      "https://www.grandlyon.com/fileadmin/user_upload/media/pdf/environnement/arbres/20180525_guidearbres_bron.pdf"
+    ],
+    "facts": [
+      "The Metropole's own Bron tree trail (guide published 25 May 2018) lists the tree at stop 23 as a 'magnifique cedre du Liban' on Place Weingarten.",
+      "Inventory: girth 383 cm, 20 m tall (survey 4 Oct 2024)."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Species conflict: the trail guide says Cedar of Lebanon (Cedrus libani), the inventory row says Atlas Cedar (Cedrus atlantica). Both are Metropole documents; species in the draft is the guide's, writer should say 'cedar' or flag. The inventory's 1850 planting year is an estimate, not documented. Two sources (guide + inventory), independent of each other in compilation. Inventory row: girth 383 cm, total height 20 m, crown diameter 23 m, survey date 2024-10-04, inventory planting year 1850 (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2024-10-04 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Plane of Place de la Rochette",
+    "species": "London Plane (Platanus x hispanica)",
+    "commune": "Caluire-et-Cuire",
+    "location": {
+      "address": "Place de la Rochette, 69300 Caluire-et-Cuire",
+      "latitude": 45.791553,
+      "longitude": 4.823348,
+      "neighbourhood": "La Rochette, Caluire-et-Cuire"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.51555",
+    "access": "Public square, free",
+    "transport": "Caluire-et-Cuire, bus from Croix-Rousse (line to be confirmed), roughly 20 minutes",
+    "girth_cm": 384,
+    "height_m": 28,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.51555"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.51555"
+    ],
+    "facts": [
+      "Girth 384 cm and 28 m tall, standing alone on the square with no other tree over 200 cm within 55 m (survey 7 Jul 2021)."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Single survey from 2021, so alive is reasonably recent. Isolated veteran, no story found in a web search. Inventory row: girth 384 cm, total height 28 m, crown diameter 24 m, survey date 2021-07-07, inventory planting year 1913 (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2021-07-07 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Plane of the Berges de Saint-Clair",
+    "species": "London Plane (Platanus x hispanica)",
+    "commune": "Caluire-et-Cuire",
+    "location": {
+      "address": "Avenue de Poumeyrol, 69300 Caluire-et-Cuire (Saint-Clair filter beds)",
+      "latitude": 45.788475,
+      "longitude": 4.859535,
+      "neighbourhood": "Saint-Clair, Caluire-et-Cuire"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.113475",
+    "access": "Public: beside the Parc des Berges de Saint-Clair path; free (Commons photographs show the path and park here)",
+    "transport": "Saint-Clair, bus from Cuire/Croix-Rousse, about 20 minutes (to be confirmed)",
+    "girth_cm": 433,
+    "height_m": 32,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.113475"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.113475"
+    ],
+    "facts": [
+      "Girth 433 cm and 32 m tall; a second plane of 302 cm stands nearby (survey 5 Jul 2021)."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Tallest of the candidates after the Collonges planes. It stands by the disused filter beds of the old Saint-Clair water works (Commons file titles, geotagged 16 m away); confirm the public path reaches it. Inventory row: girth 433 cm, total height 32 m, crown diameter 24 m, survey date 2021-07-05, inventory planting year 1945 (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2021-07-05 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Plane of Montee Saint-Sebastien",
+    "species": "London Plane (Platanus x hispanica)",
+    "commune": "Lyon 1er Arrondissement",
+    "location": {
+      "address": "Montee Saint-Sebastien, 69001 Lyon",
+      "latitude": 45.771549,
+      "longitude": 4.83579,
+      "neighbourhood": "Pentes de la Croix-Rousse, 1st arrondissement"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.2873",
+    "access": "Public pedestrian slope and green space, free (the Metropole made the montee one-way and pedestrian-priority in 2021)",
+    "transport": "Metro C Croix-Paquet is next to the Jardin Croix-Paquet at the foot of the montee, about 3 to 5 minutes",
+    "girth_cm": 368,
+    "height_m": 28,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.2873"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.2873",
+      "https://www.grandlyon.com/fileadmin/user_upload/media/pdf/espace-presse/cp/2023/20230919_cp_tribunal-montee-saint-sebastien.pdf"
+    ],
+    "facts": [
+      "Girth 368 cm and 28 m tall, the only tree over 200 cm within 55 m (survey 25 Jul 2023)."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Standing on the Croix-Rousse slope; the Jardin Croix-Paquet (6,679 m2 per visiterlyon.com) lies between the montee and rue Alsace-Lorraine. Pin is the surveyed point; nothing found that tells the tree's story. Inventory row: girth 368 cm, total height 28 m, crown diameter 26 m, survey date 2023-07-25, inventory planting year None (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2023-07-25 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Holm Oak of Rue de Boyer",
+    "species": "Holm Oak (Quercus ilex)",
+    "commune": "Lyon 5e Arrondissement",
+    "location": {
+      "address": "Rue de Boyer, 69005 Lyon",
+      "latitude": 45.759275,
+      "longitude": 4.78541,
+      "neighbourhood": "Saint-Just / Point du Jour, 5th arrondissement"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.25918",
+    "access": "Pavement of a public street, free",
+    "transport": "Metro D Gorge de Loup then bus, or Point du Jour funicular area (to be confirmed)",
+    "girth_cm": 363,
+    "height_m": 15,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.25918"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.25918"
+    ],
+    "facts": [
+      "Girth 363 cm and 15 m tall, a Holm Oak (survey 7 Jul 2004, so more than twenty years old)."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Weakest alive evidence of the set: the only survey is 2004. A holm oak of 363 cm is a large specimen for a species at its northern limit in Lyon; worth a recent-photo check before publishing. Flag strongly. Inventory row: girth 363 cm, total height 15 m, crown diameter 18 m, survey date 2004-07-07, inventory planting year None (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2004-07-07 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  },
+  {
+    "name": "The Downy Oak of Rue de la Pagere",
+    "species": "Downy Oak (Quercus pubescens)",
+    "commune": "Bron",
+    "location": {
+      "address": "Rue de la Pagere, 69500 Bron",
+      "latitude": 45.740849,
+      "longitude": 4.914544,
+      "neighbourhood": "Bron"
+    },
+    "location_precision": "confirmed",
+    "pin_source": "Metropole de Lyon street-tree inventory (surveyed point for this individual tree, Licence Ouverte), feature abr_arbres_alignement.abrarbre.56546",
+    "access": "Pavement of a public street, free",
+    "transport": "Bron; tram T2 within about 15 minutes' walk (to be confirmed)",
+    "girth_cm": 360,
+    "height_m": 18,
+    "age_estimate": "not documented",
+    "age_basis": null,
+    "official_register": {
+      "name": "Arbres d'alignement de la Metropole de Lyon (open data inventory)",
+      "url": "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.56546"
+    },
+    "verified_sources": [
+      "https://www.data.gouv.fr/datasets/arbres-dalignement-de-la-metropole-de-lyon",
+      "https://data.grandlyon.com/geoserver/metropole-de-lyon/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:abr_arbres_alignement.abrarbre&outputFormat=application/json&featureID=abr_arbres_alignement.abrarbre.56546"
+    ],
+    "facts": [
+      "Girth 360 cm and 18 m tall, a Downy Oak, with no other large tree within 55 m (survey 3 Nov 2017)."
+    ],
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "verify_notes": "Survey 2017 so alive evidence is thin. Inventory planting year 1850 is an estimate. The Metropole's Bron trail lists nothing at this street. Inventory row: girth 360 cm, total height 18 m, crown diameter 16 m, survey date 2017-11-03, inventory planting year 1850 (estimate). The inventory's planting year is the Metropole's own estimate for older trees; it is not a documented planting for this specimen and is not used as an age. Alive: the Metropole's own field survey dated 2017-11-03 recorded it standing. No Commons photograph of this trunk found (Commons geosearch within 150 m returned only street and building views). Source is the open inventory only (an official register counts as one source): flagged register only."
+  }
+]

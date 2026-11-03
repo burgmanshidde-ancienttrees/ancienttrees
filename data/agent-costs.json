@@ -14882,7 +14882,15 @@
       "target": "lyon",
       "tokens": 170983,
       "trees": 21,
-      "note": "21 stories plus the grown place text, held for the pace in data/research/lyon-verified(-2).json; builder scripts/build_lyon.py. The fr overlay still lacks the 21 trees: translate before publishing."
+      "note": "21 stories plus the grown place text, held for the pace in data/research/lyon-verified(-2).json; builder scripts/build_lyon.py."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "translate",
+      "target": "fr/lyon",
+      "tokens": 141808,
+      "trees": 21,
+      "note": "French overlay for the 21 held trees and the grown place text (title no longer counts 13), in data/research/lyon-fr-overlay.json; build_lyon.py merges it, since preflight refuses the whole deploy on a short overlay."
     },
     {
       "date": "2026-11-02",
