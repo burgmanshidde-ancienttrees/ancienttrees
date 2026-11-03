@@ -146,7 +146,17 @@ def readers_in_full(day):
     if not key:
         return "**Everything readers sent, in full**: no database key on this Mac, nothing read."
     since_iso = last_seen() or (day + "T00:00:00")
-    day = since_iso[:16].replace("T", " ") + " UTC, when you last looked" if last_seen() else day
+    # At most a week back, so a look nobody marked with --seen does not keep
+    # an App Store review on the page for weeks (Hidde, 2026-11-03: "hoe lang
+    # blijven die erin staan? ... Doe je dat een week? Dat zou op zich oké
+    # kunnen zijn").
+    week = (datetime.datetime.now(datetime.timezone.utc)
+            - datetime.timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%S")
+    capped = since_iso < week
+    if capped:
+        since_iso = week
+    day = (since_iso[:16].replace("T", " ") + (" UTC (a week back)" if capped else " UTC, when you last looked")
+           if last_seen() else day)
     since = urllib.parse.quote(since_iso)
     rows = []
     try:
@@ -300,6 +310,30 @@ code{padding:1px 4px}pre{padding:10px;overflow-x:auto}a{color:#3d6b35}ul{padding
 %(body)s</body></html>"""
 
 
+def fresh_answers(md):
+    """The two blocks his answers empty, computed now instead of read from the
+    morning's entry. An answer given in a session (`judgement.py --feedback`)
+    should take the tree off the page that day, not the next morning (Hidde,
+    2026-11-03, on the Paris trees: "volgens mij hebben ze die gisteren allemaal
+    behandeld ... die mogen dan gewoon weg hier")."""
+    try:
+        import daily_digest
+        blocks = {"**Trees readers sent, for you to inspect": daily_digest.reader_trees_to_inspect(
+                      datetime.date.today()),
+                  "**What was sent in, and what we decided": "\n".join(daily_digest.judgement_lines()).strip()}
+    except Exception as e:
+        print("fresh answers: kept the morning's blocks (%s)" % str(e)[:90])
+        return md
+    for head, new in blocks.items():
+        start = md.find(head)
+        if start < 0:
+            continue
+        end = md.find("\n\n**", start + len(head))
+        end = len(md) if end < 0 else end
+        md = md[:start] + new + md[end:]
+    return md
+
+
 def mark_seen():
     """He has looked: everything up to when that page was built is seen, and
     so is every reader photograph it counted."""
@@ -338,9 +372,14 @@ def main():
         print("DATA.md carries no day entry")
         return 1
     day = head.split(" ")[0]
+    md = fresh_answers(md)
     # An entry written before 2026-10-19 has no block for photographs on
-    # existing trees; compute it now so the page always answers that.
-    if "Photographs added to trees already live" not in md:
+    # existing trees; compute it now so the page always answers that. Only
+    # for those: the 10-19 cut took the block out of new entries on purpose,
+    # and adding it back put the same reader photographs on the page twice
+    # (Hidde, 2026-11-03: "kunnen we daar even naar kijken en wat
+    # verdubbelingen weghalen?").
+    if day < "2026-10-19" and "Photographs added to trees already live" not in md:
         try:
             import daily_digest
             extra = daily_digest.photos_on_existing_section()

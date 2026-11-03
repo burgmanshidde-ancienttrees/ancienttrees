@@ -842,12 +842,23 @@ def judgement_lines():
     # The last seven days, plus anything still open (2026-10-19, the digest cut:
     # a September verdict he never answered is not this morning's news).
     week = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
+    # Only what still needs his eye and is not already a row in the readers'
+    # trees to inspect (Hidde, 2026-11-03: "als dingen behandeld zijn ...
+    # dan hoeven ze hier dus niet meer te zijn"; the five Paris trees stood
+    # in both tables). His answer, `judgement.py --feedback`, takes a row out.
+    try:
+        import inspect_readers as ir
+        listed = {sid for sid, _j, _n in ir.selection(False)}
+    except Exception:
+        listed = set()
     rows = [j for j in doc.get("judgements", [])
-            if not j.get("verdict")
-            or (str(j.get("seen") or "")[:1].isdigit() and str(j.get("seen")) >= week)][:15]
+            if not j.get("hidde")
+            and str(j.get("id", "")).split(":", 1)[-1].lower() not in listed
+            and (not j.get("verdict")
+                 or (str(j.get("seen") or "")[:1].isdigit() and str(j.get("seen")) >= week))][:15]
     if not rows:
         return []
-    open_n = sum(1 for j in doc.get("judgements", []) if not j.get("verdict"))
+    open_n = sum(1 for j in doc.get("judgements", []) if not j.get("verdict") and not j.get("hidde"))
     out = ["", "**What was sent in, and what we decided**", "",
            "| seen | what | where | size for its species | ours | Hidde |",
            "|---|---|---|---|---|---|"]
