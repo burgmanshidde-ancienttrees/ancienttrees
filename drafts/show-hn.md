@@ -1,56 +1,107 @@
 # Show HN draft, plus the comment answers
 
-First written 2026-08-08, approved in principle by Hidde ("klinkt prima"); his HN account exists since 2026-08-09. Rewritten 2026-10-23 on his "lets do 3 then" after the Reddit practice: the numbers, the stack and the AI line were out of date (the site has accounts, a cookie bar and an app now, so "no accounts, no cookies" is false). Only he posts it, from his own account (hard rule 4; HN expects the maker in the comments).
+Written 2026-08-08, approved in principle by Hidde ("klinkt prima"); his HN
+account exists since 2026-08-09 (his step 2 that day). Only he posts it, from
+that account (hard rule 4; and HN culture
+expects the maker personally in the comments).
 
-**What Show HN is, in one paragraph.** Hacker News (news.ycombinator.com) is the discussion site of the tech world; a "Show HN" is its standing format for "I built this, have a look". A post that lands brings thousands of curious, critical visitors in a day, and the mentions that follow are the kind of authority our rankings lack. Free, one post, roughly one good shot, so it is written with care. Post on a Tuesday, Wednesday or Thursday between 14:00 and 17:00 Dutch time (US morning). Submit the URL with the title AND the first-comment text in the text field of the submit form, so the explanation sits on the post itself (2026-10-27: on the first try the separate comment from a new account went [dead] at once, so readers saw a bare link; the mail to the Hacker News moderators of 10-23 got no answer). Stay near the comments for a few hours; "fair point" and fix beats arguing. Never ask anyone to upvote (HN bans for it).
+**What Show HN is, in one paragraph.** Hacker News (news.ycombinator.com) is
+the discussion site of the tech world; a "Show HN" is its standing format for
+"I built this, have a look". A post that lands brings tens of thousands of
+curious, critical visitors in a day, and the links and mentions that follow
+are exactly the authority our rankings lack. It is free, it takes one post,
+and you get roughly one good shot at it, so the post and the comment answers
+below are written with care. Post on a Tuesday, Wednesday or Thursday,
+between 14:00 and 16:00 Dutch time (US morning). Then stay near the comments
+for a few hours: the maker answering honestly is half of what makes these
+threads go well.
 
 ## The post
 
-**Title** (under 80 characters; the plain one first):
-
-Show HN: A map of old trees worth walking to
-
-Show HN: I'm mapping the old trees worth walking to (3,800 so far)
+**Title:** Show HN: A map of 800 verified ancient trees across 91 cities
 
 **URL:** https://ancienttrees.app
 
-**First comment** (his voice; put one sentence of your own in before it goes):
+**First comment (post this yourself immediately under the submission):**
 
-This actually started in Lisbon. Travelling for work, I always had some time to kill, and strolling through the parks I was fascinated by the old jacarandas and fig trees (not that I knew the species then). They seemed ages old, planted by someone no longer living, for us to marvel at. Later I accidentally parked in front of a huge old ficus in Palermo and was blown away. I'm not a tree expert, but I am a big fan, and I wanted an easier way to find trees like these wherever I was.
+I love standing in front of very old trees, and I kept noticing that finding
+them is weirdly hard: the information is scattered across monument registers,
+local newspapers and forum threads, and half of it is wrong or dead.
 
-So this is a map of old trees worth a detour. For each one: where exactly it stands, how old it is and how sure anyone is about that, what its story is, and whether you can actually get to it. About 3,800 trees in 230 cities so far. The oldest is a chestnut on Etna that a 2022 study put at roughly 2,200 years; I still haven't seen it. Every tree is free to look at, no signup. You only need an account to save trees or tick off the ones you've visited.
+So I have been building Ancient Trees: a map of the most remarkable old trees
+of the world's cities. Around 800 trees in 91 cities so far. Every tree needs
+two independent sources for its existence, species and age (or one official
+monument register), and where sources disagree the page says so instead of
+picking a number. Locations are marked confirmed or approximate, honestly,
+because sending someone to a spot where the tree is not would be the fastest
+way to lose them. Cities with enough trees close together get a walking route
+past them.
 
-To be honest about how it was made: AI helped me set this up. The trees come from official registers of protected trees, tree societies and local papers, and AI wrote the first version of each story from those sources, which every page says. The whole idea is that it doesn't stay that way. People who know the trees correct them and add the ones I'm missing, and that has started to happen. AI was the starting point, not the product.
+Some favourites: Paris's oldest tree was planted in 1601 from seed posted out
+of the Appalachians. A mature elm in central London that Dutch elm disease
+somehow missed. Three sweet chestnuts in Arnhem called Hansel, Gretel and the
+Witch. A fig in Valencia that was planted by accident and is now the biggest
+tree in the city centre.
 
-Each tree has a story that only locals know, and that's the part I can't do alone. Which tree near you is missing?
+The stack is deliberately boring: static HTML generated by Python, MapLibre
+with OpenFreeMap tiles, no accounts, no cookies, no tracking beyond a
+cookieless counter. Photos are all openly licensed with credits.
 
-(Hidde, 2026-10-24: the AI paragraph in his own framing, "AI was just there as a starting point"; the stack and the photo share cut, "nobody cares"; the account line made honest, saving needs an account. If asked about the stack: "Astro static site, Supabase, a SwiftUI iOS app", once.)
+Happy to answer anything, and if you know a remarkable tree that is missing,
+there is a suggestion form on every page. That is honestly the thing I most
+hope comes out of posting this.
 
 ## Prepared answers for the questions that will come
 
-**"AI-generated content?"** Straight, it is the only thing that works there: the stories are written with AI from named sources and labelled on every page; the trees, pins, measurements and photos come from registers and people, not generated; readers correct them and a correction is applied the same day. "The fastest way to check is to look up a tree you already know." (They will.)
+**"Is this AI-generated?"** Be straight, it is the only strategy that works
+there: "AI does the heavy lifting on research and drafting, under rules I set:
+two independent sources per tree, no photo without a verified open licence,
+uncertainty stated in the text rather than smoothed over. I direct it and own
+every mistake, and the correction form on each page goes to a human. The
+fastest way to check the quality is to look up a tree you already know."
+(That last sentence matters: HN will do exactly that, and our verification
+rules are the reason it will hold.)
 
-**"Is the data open?"** The repo is public (github.com/burgmanshidde-ancienttrees/ancienttrees, the trees are JSON under data/cities) but there is no licence on it yet. Say that plainly; promise nothing. Whether to license the merged dataset openly is Hidde's call.
+**"Doesn't publicising exact locations endanger the trees?"** The honest
+strength: "This worried me enough that it is a hard rule: some registers
+deliberately obscure locations of vulnerable trees, and where they do, we
+never publish those trees at all, even when the spot could be worked out from
+elsewhere. What we map is trees that cities themselves signpost and monument
+registers publish. Nothing here is a secret being exposed."
 
-**"Doesn't publishing exact locations endanger the trees?"** The honest strength: where a register withholds a location, we never publish that tree, even when the spot could be worked out from elsewhere. What we map is trees that cities themselves signpost and registers publish.
+**"What's the business model?"** Honest, per the recorded no-forever-promises
+rule: "Nothing is paid today. The content (every tree, story, location) stays
+free and indexable; if it ever earns money it will be convenience features on
+top, an app, offline maps, that kind of thing. Today there are no ads, no
+tracking beyond an anonymous counter, and no selling of data."
 
-**"How do you make money?"** Not yet. The idea is a paid tier later for app extras (offline, navigation); every tree stays free to explore. Never "free forever", never "no ads ever".
+**"Why isn't the data open / where's the API?"** "The underlying registers I
+import are open data and credited per tree. Whether to publish our own merged
+dataset openly is a real question I have not decided; happy to hear arguments."
+(True, and it flags the open-data decision as Hidde's, made in his voice.)
 
-**"How sure are the ages?"** As sure as the source: the page gives the basis, and "approximately" means approximately. Where two sources disagree the page says both (the Messina fig's two girths are a good example).
+**"City X is missing / this list for my city is wrong."** "The suggestion form
+on every page is exactly for this, and submissions get verified against the
+same two-source bar. Tell me what is wrong and it gets fixed the same day."
 
-**"Why no Android?"** One person, iOS first. There is a notify-me list on the site.
+**"Why only cities?"** "Because the promise is a walk, not an expedition: the
+site is built around standing in front of a tree within an afternoon of where
+you already are. Remote giants are a different, also lovely, product."
 
-**"Where's the oldest?"** Point at a real page: the Hundred-Horse Chestnut on Etna (ancienttrees.app/santalfio), the 2,850-year olive near Lisbon.
 
-**"City X is missing / my city's list is wrong."** Thank them, ask where it stands, add it as a lead the same day. Every tip is a tree to finish, same as Reddit.
+## The Tuesday-morning pre-flight (the session runs this before he posts)
 
-## Pre-flight (the session runs this before he posts)
-
-1. Refresh the numbers in the comment against the live data (trees, cities, photo share move daily).
-2. Production check: homepage, map, two flagship cities, one tree page, the Sicily collection, all loading clean; latest deploy green.
-3. Test "Suggest a tree" end to end once, because submissions are the win the post asks for.
-4. Google Analytics is in place, so the spike measures; note the date in LOG.md.
+1. Refresh every number in the post against the live data (tree and city
+   counts move daily; run scripts/press_numbers.py and update the title and
+   first comment).
+2. Production check: homepage, map, two flagship cities, one tree page, all
+   loading clean; latest smoke run green.
+3. Test the suggestion form end to end once, because submissions are the win
+   the post explicitly asks for.
+4. Confirm the analytics break note stands so the spike measures clean.
 
 ## After it runs
 
-Record in LOG.md and OUTREACH.md: date, points, comments, visitors (GA, referrer news.ycombinator.com), submissions and accounts in the following week. A good thread becomes the "as seen on" line for press pitches.
+Whatever the outcome, record it in LOG.md and OUTREACH.md: date, points,
+comments, traffic spike from the now-clean analytics, submissions received.
+One good thread also becomes the "as seen on" line for the press pitches.
