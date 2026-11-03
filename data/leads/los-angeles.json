@@ -710,6 +710,48 @@
    "reason": "diseased and leaning, city plans removal; age disputed; do not ship.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
    "notes_file": "data/research/los-angeles-east-notes.md"
+  },
+  {
+   "name": "Moreton Bay chestnut (Castanospermum australe), OSM node 14039929117 at 34.12664",
+   "status": "lead",
+   "reason": "Moreton Bay chestnut (Castanospermum australe), OSM node 14039929117 at 34.12664,-118.11246 (carries a California Big Trees record, finding aid only): no Huntington page or news found, zero iNaturalist observations within 400 m. No independent source; lead only.",
+   "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+   "notes_file": "data/research/los-angeles-huntington-notes.md"
+  },
+  {
+   "name": "Nine Montezuma cypresses near the Lily Ponds (Huntington blog 2023-05-09)",
+   "status": "lead",
+   "reason": "a group, no individual placed; lead for a later pass if an individual is pinned.",
+   "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+   "notes_file": "data/research/los-angeles-huntington-notes.md"
+  },
+  {
+   "name": "Montezuma cypress in Rose Garden at 34.12629,-118.11443 (iNat 383080333, 2026-07-19)",
+   "status": "lead",
+   "reason": "second of the three Rose Garden cypresses; folded into lax_017 as a neighbour, not separate.",
+   "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+   "notes_file": "data/research/los-angeles-huntington-notes.md"
+  },
+  {
+   "name": "Cork oak (Quercus suber) OSM node 13762446819 at 34.12848,-118.11141, no species",
+   "status": "lead",
+   "reason": "Cork oak (Quercus suber) OSM node 13762446819 at 34.12848,-118.11141, no species source beyond OSM tag; lead.",
+   "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+   "notes_file": "data/research/los-angeles-huntington-notes.md"
+  },
+  {
+   "name": "Old oaks of the Camellia Garden (iNat 308536601, 34.12814,-118.11372",
+   "status": "lead",
+   "reason": "\"large ones, likely preexisting\"): unsourced, lead.",
+   "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+   "notes_file": "data/research/los-angeles-huntington-notes.md"
+  },
+  {
+   "name": "Copper beech, North Vista",
+   "status": "lead",
+   "reason": "acquired 1938 (Huntington blog), young; skip.",
+   "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+   "notes_file": "data/research/los-angeles-huntington-notes.md"
   }
  ],
  "blocked": [
@@ -875,6 +917,13 @@
    "reason": "campus, claim unsourced.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
    "notes_file": "data/research/los-angeles-east-notes.md"
+  },
+  {
+   "name": "Nothing new blocked.",
+   "status": "blocked",
+   "reason": "Nothing new blocked.",
+   "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+   "notes_file": "data/research/los-angeles-huntington-notes.md"
   }
  ]
 }

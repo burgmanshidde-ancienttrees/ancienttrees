@@ -1,13 +1,15 @@
-"""Build the California trees (verified and written 2026-11-02/03) into data/cities.
+"""Build the California trees (verified and written 2026-11-02/03, second pass 11-04) into data/cities.
 
 Held for the 25-a-day pace when written. The session that publishes runs:
-    python3 scripts/build_us_california.py            # appends to los-angeles and san-diego, writes oakland, glen-ellen, sebastopol
+    python3 scripts/build_us_california.py            # appends to los-angeles (+8) and san-diego (+7), writes oakland, glen-ellen, sebastopol
     python3 scripts/build_us_california.py --out DIR  # dry build elsewhere (live places read from data/cities)
 then city_names.py, preflight.py, commit by path, push.
 
 Sources in data/research/: los-angeles-verified.json (lax_014..016; lax_013 there is old and
-already live), los-angeles-east-verified.json (lax_030..032), san-diego-verified.json
-(sdg_007..011, the Coronado heritage cluster), oakland-verified.json (oak_001..004),
+already live), los-angeles-east-verified.json (lax_030..032), los-angeles-huntington-verified.json
+(lax_017..018, ticketed), san-diego-verified.json (sdg_007..011, the Coronado heritage cluster),
+san-diego-oldtown-verified.json (sdg_012 Florence Hotel fig, view-only from the sidewalk;
+sdg_013 Kensington hoop pine), oakland-verified.json (oak_001..004),
 santa-rosa-verified.json (snm_001..002 for glen-ellen, srs_001 for sebastopol; Santa Rosa
 itself yielded none). Place copy in us-california-places.json; approved photographs in
 us-california-photos.json (a held photo never ships). Los Angeles and San Diego grow, so
@@ -24,7 +26,9 @@ OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else CITIES
 SOURCES = [
     ("los-angeles-verified.json", "los-angeles"),
     ("los-angeles-east-verified.json", "los-angeles"),
+    ("los-angeles-huntington-verified.json", "los-angeles"),
     ("san-diego-verified.json", "san-diego"),
+    ("san-diego-oldtown-verified.json", "san-diego"),
     ("oakland-verified.json", "oakland"),
     ("santa-rosa-verified.json", None),  # each tree names its place
 ]
@@ -38,7 +42,7 @@ TREE_FIELDS = ["id", "name", "species", "age_estimate", "age_min", "age_max", "a
                "verified_sources", "official_register", "access", "transport", "best_time",
                "photo", "location_precision", "pin_source", "curation_status", "verify_notes",
                "paid_entry"]
-PAID = {"lax_032", "snm_001", "snm_002"}  # mission garden ticket; state park vehicle fee
+PAID = {"lax_017", "lax_018", "lax_032", "snm_001", "snm_002"}  # Huntington; mission garden ticket; state park vehicle fee
 MISSING = {"url": None, "license": None, "attribution": None, "status": "missing"}
 
 

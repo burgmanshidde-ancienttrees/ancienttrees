@@ -15603,6 +15603,30 @@
       "tokens": 95000,
       "trees": 6,
       "note": "Six Bristol stories (bri_007 to bri_012) plus intro, meta, FAQ walk entry and question_context; no language overlays existed. Tokens are an estimate, not metered."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "los-angeles (Huntington)",
+      "tokens": 131891,
+      "trees": 2,
+      "note": "Rose Garden Montezuma cypress (confirmed pin from iNaturalist cluster) and the Chinese Garden coast live oak (200 to 300 years by the Huntington's own figures). huntington.org still 429; curl on web.archive.org works where WebFetch refuses. Moreton Bay chestnut, Lily Ponds cypresses, Jungle and Desert Garden left as leads."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "san-diego (beyond Balboa Park)",
+      "tokens": 160611,
+      "trees": 2,
+      "note": "Florence Hotel fig (Historical Site 53, view-only from the sidewalk, 3 m GPS pin) and Kensington library park hoop pine (Heritage Grove 2009). Old Town and Presidio peppers unplaceable to one trunk; the Peyri pepper is at San Luis Rey, not San Diego."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "write",
+      "target": "los-angeles+san-diego (second pass)",
+      "tokens": 30000,
+      "trees": 4,
+      "note": "Dispatcher wrote the four stories and the LA/San Diego place copy changes itself (estimate), and approved a CC0 iNaturalist photograph for lax_017 after viewing. Second pass about 320k tokens for 4 trees, 80k a tree."
     }
   ]
 }

@@ -104,6 +104,62 @@
       "reason": "search found nothing; unfetchable Reader/iNaturalist journal.",
       "source": "verify pass 2026-11-02 (California, session e2f631fb)",
       "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Sixth Avenue and Laurel Street Moreton Bay fig, Balboa Park edge (~32.72541,-117",
+      "status": "lead",
+      "reason": "Sixth Avenue and Laurel Street Moreton Bay fig, Balboa Park edge (~32.72541,-117.15932, iNat 76762994 GPS 10 m, another obs 2026-07-17 nearby via lifecheck RECENT): Reader 1991 calls it one of three mature local Ficus macrophylla. Balboa Park, one source, no age; not delivered per scope.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Old Town big pepper tree beside the old Caltrans building, Taylor/Juan St (SOHO 2016, enews/0716trees.htm",
+      "status": "lead",
+      "reason": "\"very large and very old\"): no age, planter or coordinate; Caltrans moved to 4050 Taylor St in 2006, building site unclear.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Juan Street Old Town pepper trees (SOHO",
+      "status": "lead",
+      "reason": "18+ proposed for removal, \"very old\" per Bowen): an avenue, no dated specimen.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Presidio Park peppers \"oldest near the Serra cross\" (SOHO Presidio Plant Survey, sohosandiego.org/presidio/schinusmolle.htm)",
+      "status": "lead",
+      "reason": "several trees, no age, no coordinate. Full survey by Parish Rye (Presidio Park Horticulture Facebook page) not reachable; would name specimens. Jerabek plant tour (sandiegohistory.org 1962/april/plant, 1969/july) 403 to WebFetch; try via browser pane.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Whaley House yard peppers",
+      "status": "lead",
+      "reason": "SOHO quiz answer key says the Whaley children planted them; not confirmed standing, private museum grounds with ticket.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Mission San Diego de Alcala",
+      "status": "lead",
+      "reason": "olives said planted 1769 but garden olives dated 1860 by one low-quality source; no named specimen. NOTE: San Diego Magazine's Peyri pepper tree (planted 1830, 190 years on) is Mission San Luis Rey in Oceanside, not San Diego. Do not attribute it here.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Kensington library park Canary Island pines (four, 1913 photos, SOHO 2009)",
+      "status": "lead",
+      "reason": "same site as sdg_013; could be a recognise note rather than separate point.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Kensington parkway pepper trees (30 of 37 originals, c.1910, Conserve-a-Tree application 2018, SOHO 2024)",
+      "status": "lead",
+      "reason": "an avenue, not designated, litigation; blocked as an avenue but note for the writer.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
     }
   ],
   "blocked": [
@@ -147,6 +203,41 @@
       "reason": "Coronado Heritage 015 Magnolia, front yard of 928 A Ave (private home, planted ~1951).",
       "source": "verify pass 2026-11-02 (California, session e2f631fb)",
       "notes_file": "data/research/san-diego-notes.md"
+    },
+    {
+      "name": "Serra Palm, Taylor St and Presidio Dr",
+      "status": "blocked",
+      "reason": "dead, cut down 1957 aged 188 (San Diego Magazine).",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Mission Hills Sunset Boulevard fan palms (33, Kate Sessions, city Conserve A Tree status 9 April 2025)",
+      "status": "blocked",
+      "reason": "an avenue.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Kate Sessions pepper tree, Sunset Blvd Mission Hills",
+      "status": "blocked",
+      "reason": "removed 2023.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Point Loma Moreton Bay fig, Front Street (HMDB 70319)",
+      "status": "blocked",
+      "reason": "inside Naval Base Point Loma, not public.",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
+    },
+    {
+      "name": "Presidio Park horticultural history",
+      "status": "blocked",
+      "reason": "the Broell 1937 plant list mostly vanished; no individual tree named (sdhortnews 2018).",
+      "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
+      "notes_file": "data/research/san-diego-oldtown-notes.md"
     }
   ]
 }

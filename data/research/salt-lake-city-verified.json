@@ -137,6 +137,97 @@
   "verify_notes": "Source: Utah Division of Forestry, Fire and State Lands Big Tree register (objectid 145). Register-only, one source. Record: state champion, measured 2016 (162 in = 411 cm; 69 ft = 21.0 m; spread 68 ft = 20.7 m), PUBLIC_ACCESS = Y. Pin: register coordinate (40.757339, -111.849789). The record's street address (1342 W 500 S) is a WEST-side address but the coordinate is on the east bench near 1342 E; the register's own address and coordinate disagree, so the pin is marked approximate and the cemetery is not a small site (large cemetery). Alive: lifecheck NONE, measured 2016 only, so flagged. Age not documented. Do not ship without resolving address vs coordinate (fix with the cemetery's own page or imagery).",
   "story": "Utah's champion small-leaved lime has a trunk 4.11 metres round, and its crown is almost as wide as the tree is tall.\n\nThe state's big tree register, kept by the Utah Division of Forestry, Fire and State Lands, measured it in 2016: 21.0 metres tall, with a spread of 20.7 metres. In the United States this species usually goes by littleleaf linden, and this is the largest one the register knows of in the state. It stands in Mount Olivet Cemetery, and the register marks it as open to the public.\n\nThat is where the certainty ends. The register's own record disagrees with itself: its street address points to the west side of the city, while its coordinate sits on the east bench. Our pin follows the coordinate and is approximate, and in a cemetery this size that leaves you looking among a great many trees. The register's measurements are the best guide: a lime this broad, with a trunk over four metres round, should not be easy to confuse with its neighbours.\n\nThe 2016 measurement is also the last sighting we have, so we cannot promise the tree is still standing. Nobody has dated it. If you find it, tell us where exactly it stands and how it looks, and if you know when it was planted, tell us that too. Come in July, when this species carries its small, scented flowers, later than most limes.",
   "how_to_recognise": "You can recognise it by its size: a trunk 4.11 metres round and a crown about 20 metres across, the state champion of its species. It stands somewhere in Mount Olivet Cemetery; our pin is approximate.",
-  "best_time": {"months": [7], "kind": "flowers", "label": "July, when the small-leaved lime flowers and its scent carries"}
+  "best_time": {
+   "months": [
+    7
+   ],
+   "kind": "flowers",
+   "label": "July, when the small-leaved lime flowers and its scent carries"
+  }
+ },
+ {
+  "id": "slc_007",
+  "name": "The Peace Gardens Bur Oak",
+  "species": "Bur Oak (Quercus macrocarpa)",
+  "age_estimate": "not documented",
+  "girth_cm": 330,
+  "height_m": 22.6,
+  "location": {
+   "address": "International Peace Gardens, Jordan Park, 1060 S 900 W, Salt Lake City (north-east corner of the gardens)",
+   "latitude": 40.74838,
+   "longitude": -111.91955,
+   "neighbourhood": "Jordan Park / Poplar Grove"
+  },
+  "verified_sources": [
+   "https://utahurbanforest.org/amazing-trees/big-tree-directory/bur-oak-salt-lake-city",
+   "https://utahurbanforest.org/amazing-trees/big-tree-directory/northern-red-oak-salt-lake-city",
+   "https://www.internationalpeacegardens.org/visits-events-celebrations",
+   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  ],
+  "official_register": {
+   "name": "Utah Big Tree Register (Utah Community Forest Council directory, objectid 337)",
+   "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/bur-oak-salt-lake-city"
+  },
+  "access": "Free. The International Peace Gardens in Jordan Park (city-owned) list opening 7 am to 11 pm year round on their own site; flower displays May to October. Dogs on a leash.",
+  "transport": "Jordan Park, 1000 S 900 W, roughly 3 km west-southwest of Temple Square; no rail station at the gate, check UTA bus options (not verified).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Two state-champion oaks stand about 15 m apart in the NE corner of the gardens, folded into one entry: Bur Oak (register objectid 337: circumference 130 in = 330 cm, height 74 ft = 22.6 m, spread 86 ft, measured 2026, state champion status 1; coordinate 40.74838,-111.91955) and Northern Red Oak (objectid 106: 120 in = 305 cm, 83 ft = 25.3 m, spread 80 ft, measured 2026, state champion 1, nominated 2015; coordinate 40.74838,-111.91973). Owner of the ground: Salt Lake City. Both PUBLIC_ACCESS = Yes. Register-only, one source (US: one credible source is enough), flagged. Alive: both measured 2026; lifecheck RECENT only for the park generally (an iNaturalist hibiscus 2026-09-20 within 60 m), no observation of the oaks themselves. Pin is register-grade, not placed on a crown: approximate; the gardens are a walk-through garden so no location_site. Spread of the bur oak (86 ft, about 26 m) is wider than its height, a wide open crown. No age in any source; none invented. Jordan Park created 1918 (Wikipedia, citing slc.gov); no source ties the oaks to that date. Writer: do not claim either is the biggest in the park or older than the park. Heritage Tree = No for both. Unverified: whether the Peace Gardens' country plots have signage on the oaks."
+ },
+ {
+  "id": "slc_008",
+  "name": "The University of Utah Japanese Zelkova",
+  "species": "Japanese Zelkova (Zelkova serrata)",
+  "age_estimate": "not documented",
+  "girth_cm": 389,
+  "height_m": 19.2,
+  "location": {
+   "address": "University of Utah campus, grass area west/north-west of the William Stewart Building (Bld 6), Salt Lake City",
+   "latitude": 40.76345,
+   "longitude": -111.851186,
+   "neighbourhood": "University of Utah"
+  },
+  "verified_sources": [
+   "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=japanese-zelkova",
+   "https://utahurbanforest.org/amazing-trees/big-tree-directory",
+   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  ],
+  "official_register": {
+   "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer, objectid 323)",
+   "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  },
+  "access": "Free, open campus lawn; the University of Utah campus is a designated state arboretum with a self-guided tree tour (QR placards, no ticket).",
+  "transport": "University of Utah campus, about 4 km east of Temple Square; TRAX University line serves the campus (stop and walk time not verified).",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Register row objectid 323 (owner University of Utah, PUBLIC_ACCESS = Yes): circumference 153 in = 389 cm, height 63 ft = 19.2 m, spread 97 ft = 29.6 m, measured 2026, new entry updated 2026-07, state champion status 1. Second source and ground owner: University of Utah Facilities tree tour page for Japanese Zelkova (page last updated 7/29/26) says large specimens stand in the grass area west of the William Stewart Building (Bld 6) or along the south side of Student Services Building (Bld 40), and that the tree west of the Stewart Building is on the Utah Big Tree Registry. So species, location area and register listing are two-source confirmed. Register coordinate (40.76345,-111.851186) is IDENTICAL to the Lacebark Elm row objectid 325 ('west of Crocker Science Center'), so it is a shared campus point, not a trunk fix: precision approximate, a campus is not a small site. Press search summary (not fetched, unverified) said a university piece calls it the largest of its kind in Utah and planted by botanist Walter Cottam; do not use without fetching attheu.utah.edu. Alive: measured 2026-07 area; lifecheck NONE at the pin, nothing independent. No age in sources; none invented. Cluster: the lead file also lists the Chinese Cork Oak, Mongolian Oak, Lacebark Elm, German Ash, and Port Orford Cedar register rows on the same campus within ~500 m, a walkable champion walk."
+ },
+ {
+  "id": "slc_009",
+  "name": "The Murray City Arboretum Baldcypress",
+  "species": "Baldcypress (Taxodium distichum)",
+  "age_estimate": "not documented",
+  "girth_cm": 307,
+  "height_m": 20.4,
+  "location": {
+   "address": "Murray City Park arboretum, 296 E Murray Park Ave, Murray",
+   "latitude": 40.660945,
+   "longitude": -111.884259,
+   "neighbourhood": "Murray City Park"
+  },
+  "verified_sources": [
+   "https://utahurbanforest.org/amazing-trees/big-tree-directory/baldcypress-murray",
+   "https://en.wikipedia.org/wiki/Murray_City_Park",
+   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  ],
+  "official_register": {
+   "name": "Utah Big Tree Register (Utah Community Forest Council directory, objectid 121)",
+   "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/baldcypress-murray"
+  },
+  "access": "Free. Murray City Park (city-owned, 296 E Murray Park Ave) is a public park with an arboretum; park listings (Apple Maps, Yelp) give roughly 6 am to 11 pm daily (not an official city statement).",
+  "transport": "Murray City Park, about 15 km south of downtown Salt Lake City by TRAX (Murray Central, roughly 1.5 km from the park, estimated, not verified).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register row objectid 121 (owner Murray City, PUBLIC_ACCESS = Yes): circumference 121 in = 307 cm, height 67 ft = 20.4 m, spread 50 ft, measured 2026, entry updated 2026-06, nominated 2015, state champion 1, not national. Register-only; Wikipedia confirms the park has an arboretum but nothing names this tree. Flagged: register only, one source. Alive: measured 2026; lifecheck RECENT 2026-07-04 only for the area (an iNaturalist observation near the pin). Pin register-grade, park arboretum is not a small site: approximate. Baldcypress is an eastern US swamp species planted in a Utah arboretum, which is the interest. No age; none invented. Murray arboretum established Arbor Day 1961 per an ActiveRain blog (not a source), do not use. Same arboretum holds register rows for Flowering Pear, Halfelm, Black Alder, Brewer Spruce, Chinese Fringetree within ~100 m (existing open leads). Borderline worth-the-walk: the smallest girth of the three, only ship if the writer needs a Murray point."
  }
 ]

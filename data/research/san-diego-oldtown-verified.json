@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sdg_012",
+    "name": "The Florence Hotel Moreton Bay Fig",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 130 to 150 years",
+    "age_min": 130,
+    "age_max": 150,
+    "age_basis": "source",
+    "location": {
+      "address": "Grape Street between Third and Fourth Avenues (beside 1927 Fourth Avenue), Bankers Hill, San Diego",
+      "latitude": 32.72607,
+      "longitude": -117.16119,
+      "neighbourhood": "Bankers Hill"
+    },
+    "location_precision": "confirmed",
+    "verified_sources": [
+      "https://sandiegoreader.com/news/1991/jun/20/tree-saw-tomorrow",
+      "https://sandiegoreader.com/news/2008/jun/25/history-and-side-salad",
+      "https://www.inaturalist.org/observations/328436636"
+    ],
+    "access": "View from the public sidewalks of Grape Street and Fourth Avenue. The tree stands on a privately owned lot (long a parking lot) behind the Wet Stone cafe, so look from the sidewalk; a sign in front of it names it. Free.",
+    "transport": "Bus routes on Fourth/Fifth Avenues in Bankers Hill; about a 10 minute walk from the Balboa Park Laurel Street entrance.",
+    "curation_status": "flagged",
+    "recognise": "The huge fig on the Grape Street corner of the old Florence Hotel block, with a sign at its foot reading Florence Hotel Moreton Bay Fig Tree.",
+    "verify_notes": "Last vestige of the Florence Hotel (opened 1884 per Reader 2008; 1893 per Reader 1991; torn down 1948-1950, block became a parking lot). Reader 1991: planted 1895 as part of the hotel garden; City of San Diego Historical Site No. 53 since 1971; by 1991 the owner had neglected it, trunk carved with initials, a section blackened by an attempt at torching; an arborist was hired and a deed restriction required, city staff called it 'the single most protected tree in town'; one of only three mature local Ficus macrophylla then (the others in Balboa Park at Sixth and Laurel and behind the Natural History Museum); arborist Bill Nelson thought it had only 20 to 30 years left, others said 100. Reader 2008: a sign in front says 'Florence Hotel Moreton Bay Fig Tree, 1877' (131 years then); writer stood under it, 'ginormous', spreads over the lot. AGE CONFLICT: 1877 (sign, 2008) vs 1895 (Reader 1991, city landmark record); hotel itself opened 1884 so 1877 predates it; range 130 to 150 years covers both. Alive: iNaturalist observation 328436636, 2025-11-26, GPS accuracy 3 m at 32.72607,-117.16119, Ficus macrophylla, place guess 'Grape St' (photo licence CC BY-NC, not usable); lifecheck.py RECENT. A second iNat Ficus macrophylla at 32.7254,-117.1593 (obs 76762994, 2021) is a different tree, the Balboa Park fig near Sixth and Laurel (about 190 m east). Pin: confirmed from the 3 m GPS fix. Not verified: the 2020-2025 redevelopment of the Fenton Bankers Hill site (carriage house 2004 Fourth Ave, 328 Grape St); the fig was standing Nov 2025 but check it is still reachable from the sidewalk. Private lot: ships as view-only with the pin on the viewing place. One source for the landmark status (San Diego Reader 1991), flagged. No girth or height published.",
+    "how_to_recognise": "The huge fig spreading over the old Florence Hotel lot on the Grape Street side, with a sign at its foot reading Florence Hotel Moreton Bay Fig Tree.",
+    "story": "A hotel stood here once, and this fig is what is left of it. The Florence Hotel opened in Bankers Hill in the 1880s or 1890s, depending on the account, and was torn down around 1948 to 1950. The block became a parking lot, and the fig from the hotel garden stayed. A sign at its foot says 1877, which would make the tree older than the hotel. The San Diego Reader, writing in 1991, gave 1895, the date the city's landmark record uses. Somewhere between 130 and 150 years, then.\n\nThe city made it Historical Site No. 53 in 1971, and being a landmark did not keep it safe. By 1991 initials had been carved into its trunk and part of it was blackened where someone had tried to set it alight. An arborist was brought in, a deed restriction followed, and city staff called it the single most protected tree in town. One arborist that year gave it twenty or thirty more years. It was still standing, and still spreading over the lot, in November 2025.\n\nThe fig is on private ground, so this is one to look at from the sidewalk on Grape Street or Fourth Avenue. The land around it has been redeveloped in recent years and we have not seen how that changed the view from the street; tell us if it has. Balboa Park's Laurel Street entrance is about ten minutes' walk away."
+  },
+  {
+    "id": "sdg_013",
+    "name": "The Kensington Hoop Pine",
+    "species": "Hoop Pine (Araucaria cunninghamii)",
+    "age_estimate": "over a century",
+    "age_min": 110,
+    "age_max": 116,
+    "age_basis": "source",
+    "location": {
+      "address": "Kensington Library Park, 4121 Adams Avenue, San Diego",
+      "latitude": 32.76303,
+      "longitude": -117.10686,
+      "neighbourhood": "Kensington"
+    },
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Kensington Library Park",
+      "radius_m": 50
+    },
+    "verified_sources": [
+      "https://www.sohosandiego.org/reflections/2009-1/trees.htm",
+      "https://www.sohosandiego.org/enews/0323kensingtontrees.htm",
+      "https://kpbs.org/events/2023/11/24/annual-holiday-tree-lighting-in-kensington-park"
+    ],
+    "access": "Free, open public park lawn around the Normal Heights-Kensington library (library opening hours apply inside only).",
+    "transport": "Bus along Adams Avenue (Kensington); roughly a 15 minute drive or bus ride from Balboa Park.",
+    "curation_status": "flagged",
+    "recognise": "The very tall conifer on the corner of the park, strung with lights every December; four older Canary Island pines flank the former pond site.",
+    "verify_notes": "Heritage Grove: the City of San Diego Community Forest Advisory Board voted unanimously on 14 January 2009 to designate the Kensington library park trees as a Heritage Grove and Landmark trees (SOHO 2009 article; SOHO March-April 2023 newsletter via obrag.org repeats it). Kensington Park was subdivided in 1910 (lot sales opened 25 Nov 1910); SOHO 2023: nine original trees remain in the park around the library, planted 1910 by the developers: Canary Island pines, Canary Island palms, a deodar cedar, a Catalina Island cherry and a hoop pine. SOHO 2009: historic 1913 images show the hoop pine 'in the same position that it occupies today'; four Canary Island pines (Pinus canariensis), two each side of the former goldfish pond, also still stand. 1962 library expansion removed some originals; architect Richard Lareau left roofline cutouts for two Canary Island pines. SOHO 2023 describes the hoop pine as 'a very tall tree on the corner of the park', lit every December; KPBS lists the annual Kensington Park tree lighting (Friday 24 Nov 2023, 4121 Adams Ave) but does not name the species. Age basis: 1913 photograph plus 1910 subdivision; no planting year for this specimen stated, so age is 'over a century' (110 to 116). The two SOHO pages are one organisation, the official designation is the second leg. No girth or height published. Pin: park-level, no tree coordinate found (no iNaturalist, OSM tree node or Commons geotag for it); small named site, approximate. Not checked: which exact corner (Terrace Drive end vs Adams Avenue end); the listed 'tall hoop pine' may not be the lit tree in every year. Alive: SOHO 2023 describes the trees as surviving; no dated photograph in hand.",
+    "how_to_recognise": "The very tall conifer on a corner of the small park around the Kensington library; four Canary Island pines stand two on each side of the former pond site.",
+    "story": "When Kensington was laid out as a new subdivision in 1910, its developers planted a park around what is now the neighbourhood library. Nine of those first trees are still here, and a photograph from 1913 already shows this hoop pine in the same spot it stands in today. Hoop pine is an Araucaria from the rainforests of eastern Australia, and here it has grown into the very tall tree on the corner of the park.\n\nIt has had company from the start: four Canary Island pines, two on each side of the old goldfish pond, along with Canary Island palms, a deodar cedar and a Catalina Island cherry. When the library was enlarged in 1962 some of the original trees were lost, and the architect, Richard Lareau, cut openings in the roofline so that two of the Canary Island pines could stay. In 2009 the City's Community Forest Advisory Board voted unanimously to make the whole group a Heritage Grove.\n\nEvery December the neighbourhood holds a tree lighting in the park, and the preservation group SOHO describes the tall hoop pine as the tree that is lit. We could not pin the trunk itself, so the map point marks the park; a reader's photograph from beside it would settle which corner. The park is free and open, and only the library keeps opening hours."
+  }
+]

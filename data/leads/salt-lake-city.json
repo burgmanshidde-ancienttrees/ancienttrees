@@ -1050,6 +1050,22 @@
    ],
    "source": "Utah Division of Forestry, Fire and State Lands big tree register (state government). PUBLIC_ACCESS=No rows blocked. The layer carries owner and nominator names: NEVER copy them. Facts only.",
    "status": "open"
+  },
+  {
+   "name": "Northern Red Oak (Peace Gardens)",
+   "species": "Northern Red Oak (Quercus rubra)",
+   "lat": 40.74838,
+   "lng": -111.91973,
+   "girth_cm": 305,
+   "height_m": 25.3,
+   "sources": [
+    "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+   ],
+   "status": "folded into slc_007 (Peace Gardens Bur Oak), 15 m apart, 2026-11-03 verify pass"
+  },
+  {
+   "name": "Mt Olivet linden address",
+   "status": "note 2026-11-03: the register address '1342 W 500 S' is a typo for 1342 E 500 S (cemetery's own site and listings give East), which matches the east-bench coordinate; cemetery visiting hours 8am-8pm summer, 8am-6pm winter (mountolivetcemetery.org). Linden itself already live as slc_006."
   }
  ],
  "blocked": [

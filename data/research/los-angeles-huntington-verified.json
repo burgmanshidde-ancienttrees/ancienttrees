@@ -1,0 +1,65 @@
+[
+  {
+    "id": "lax_017",
+    "name": "The Huntington Montezuma Cypress",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "about a century",
+    "age_min": 90,
+    "age_max": 114,
+    "age_basis": "derived",
+    "location": {
+      "address": "Rose Garden, The Huntington Library, Art Museum, and Botanical Gardens, 1151 Oxford Rd, San Marino, CA 91108",
+      "latitude": 34.1263,
+      "longitude": -118.1141,
+      "neighbourhood": "San Marino"
+    },
+    "location_precision": "confirmed",
+    "verified_sources": [
+      "https://huntington.org/verso/five-must-see-trees-huntington",
+      "https://www.inaturalist.org/observations/112447434",
+      "https://www.inaturalist.org/observations/160453726"
+    ],
+    "access": "Paid entry to The Huntington (timed tickets; open daily except Tuesdays per Huntington; check huntington.org for hours and price). Rose Garden is inside the gardens.",
+    "transport": "No rail; Metro A Line Lake station or Del Mar then bus, about 25-40 min; drive 1151 Oxford Rd.",
+    "curation_status": "flagged",
+    "recognise": "One of three Montezuma cypresses in the Rose Garden, west of the Rose Garden Tea Room and near the Queensland kauri.",
+    "verify_notes": "Owner source (Huntington blog, 2023-05-09, plant collections manager Sean Lahmeyer): William Hertrich collected seed from Chapultepec Park, Mexico City in 1912, possibly from El Sargento (died 1969, trunk 50 ft still stands); Huntington holds 13 mature trees, all descendants; three in Rose Garden, nine near Lily Ponds. Huntington says these descend from trees planted by the Mexica ~1450 CE (institution's account, treat as theirs). Age is DERIVED: seed 1912 so at most ~114 yr; planting date of this specimen not documented; age_min 90 is a guess floor, not a source (travel blog said 'over 90'), so soften to 'about a century'. Which of the three is largest not confirmed by an independent source. Pin: OSM node 14039929118 (carries a California Big Trees record; finding aid only, not cited) at 34.12626,-118.11408 agrees with six independent iNaturalist GPS observations of Taxodium mucronatum 2019-2023 clustered at 34.1263,-118.1141 labelled Rose Garden/Huntington (e.g. 112447434 CC0, 2022-04-22; 160453726 2023-05-07). Alive: iNat obs 2023-05 and a different Rose Garden cypress 2026-07-19 (383080333, 34.12629,-118.11443). Do not use Big Trees girth/height (finding aid). Species name for the common name: Montezuma Cypress. Sources fetched: huntington.org via web.archive.org (direct fetch gets 429).",
+    "photo_candidates": [
+      {
+        "url": "https://www.inaturalist.org/observations/112447434",
+        "license": "CC0",
+        "author": "iNaturalist observer (see page)"
+      }
+    ],
+    "how_to_recognise": "One of three Montezuma cypresses in the Rose Garden, west of the Rose Garden Tea Room and near the Queensland kauri, with soft, feathery foliage hanging in curtains.",
+    "story": "The seed for this tree came from Mexico City. In 1912 William Hertrich, who built The Huntington's gardens, gathered Montezuma cypress seed in Chapultepec Park, possibly from El Sargento, a giant there that died in 1969 and whose fifty-foot trunk still stands. The Huntington now holds thirteen mature Montezuma cypresses, all grown from that collection: nine near the Lily Ponds and three here in the Rose Garden. In the garden's own telling, the Chapultepec trees go back to plantings made by the Mexica around 1450.\n\nIt is the same species as the Tule tree in Oaxaca, though in San Marino it has had only about a century to grow. The seed was gathered 114 years ago and this tree was planted some time after, on a date nobody seems to have written down, so its age is an estimate from the seed and not a record.\n\nWhich of the three Rose Garden cypresses is the biggest is not something we could confirm. The pin sits where visitors' GPS-tagged photographs of the species cluster, west of the Rose Garden Tea Room and close to the Queensland kauri that is also on this map. The Huntington charges for entry, and the Rose Garden is inside."
+  },
+  {
+    "id": "lax_018",
+    "name": "The Chinese Garden Live Oak",
+    "species": "Coast Live Oak (Quercus agrifolia)",
+    "age_estimate": "roughly 200 to 300 years",
+    "age_min": 200,
+    "age_max": 300,
+    "age_basis": "source",
+    "location": {
+      "address": "Liu Fang Yuan (Garden of Flowing Fragrance), The Huntington, 1151 Oxford Rd, San Marino, CA 91108",
+      "latitude": 34.1283,
+      "longitude": -118.1157,
+      "neighbourhood": "San Marino"
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://huntington.org/verso/five-must-see-trees-huntington",
+      "https://web.archive.org/web/2025/https://huntington.org/news/news-release-expanded-chinese-garden-huntington-open-oct-9",
+      "https://huntington.org/videos-and-recorded-programs/protecting-our-ancient-coast-live-oak"
+    ],
+    "access": "Paid entry to The Huntington (check huntington.org for hours and price); the Chinese Garden is inside.",
+    "transport": "No rail; Metro A Line Lake station then bus, about 25-40 min; drive 1151 Oxford Rd.",
+    "curation_status": "flagged",
+    "recognise": "Low, open, spreading oak with remnants of two former trunks and upright limbs that are resprouts, in the Chinese Garden.",
+    "verify_notes": "Owner sources only (one source, US bar). Huntington blog 2023-05-09: 'one of the oldest trees at The Huntington', estimated 200 years old; Tim Thibault (curator of woody plant materials): remnants of two former trunks, first life lasted about half its age, then damaged or burned, main upright limbs are resprouts; undersides of large limbs produce compression wood. Huntington Chinese Garden expansion release (2020): a coast live oak 'estimated to be at least 300 years old', framing the Courtyard of Assembled Worthies/Flowery Brush Library area (north section); not stated to be the same tree, but the 2023 blog calls it 'the ancient Coast Live Oak in the Chinese Garden'. Figures conflict (200 vs 300+): stated as a range. Huntington video 'Protecting Our Ancient Coast Live Oak' (2023-01-17) says the garden preserved its old coast live oaks. Exact trunk not placed: no GPS found; Chinese Garden is a walk-through garden so no location_site. Coordinate is the north part of the garden (garden entrance nodes 34.1276,-118.1162 and 34.1284,-118.1153); approximate. Artist Tang Qingnian made a portrait of it (2019 residency). Alive: 2023 blog/video; 2020 release photo.",
+    "how_to_recognise": "A low, open, spreading oak in the northern part of the Chinese Garden, wider than it is tall, with the stumps of two old trunks at its base and upright limbs that grew back from them.",
+    "story": "This oak was growing long before anyone built a Chinese garden around it. The Huntington calls it one of the oldest trees on its grounds, though its own figures differ: about 200 years in a 2023 account by its garden staff, at least 300 in the 2020 announcement of the garden's expansion. Either way it is older than The Huntington itself, and older than Los Angeles' oldest documented tree, the fan palm in Exposition Park.\n\nIt has lived twice. According to Tim Thibault, the Huntington's curator of woody plants, the oak's first life lasted roughly half its age, until it was damaged or burned. What stands now grew back from that. The remnants of two former trunks are still at the base, and the main upright limbs are resprouts that rose from them. Its big horizontal limbs carry their own weight by laying down compression wood on their undersides.\n\nWhen the Huntington enlarged Liu Fang Yuan, the Garden of Flowing Fragrance, it kept its old coast live oaks, and in 2019 the visiting artist Tang Qingnian made a portrait of this one. Look in the northern part of the garden for a low, open crown that spreads wider than it stands tall. We have no exact pin for the trunk, so the map point marks that part of the garden. The Huntington charges for entry, and the Chinese Garden is inside."
+  }
+]
