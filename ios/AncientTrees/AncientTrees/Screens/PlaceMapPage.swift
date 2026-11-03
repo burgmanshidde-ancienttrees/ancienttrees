@@ -208,7 +208,12 @@ struct PlaceMapPage: View {
                         AmbassadorWantedRow(place: title, seated: catalogue.facets.seated(city: slug))
                     }
                 }
-                ForEach(inTown) { t in card(t) }
+                // LAZY, because a country opens here too (2026-11-03): the
+                // Netherlands is 567 cards, and building them all at once on
+                // a phone is the freeze this app has had twice already.
+                LazyVStack(alignment: .leading, spacing: 18) {
+                    ForEach(inTown) { t in card(t) }
+                }
                 // A DAY TRIP AWAY, on the website's word (Hidde approved the
                 // Copenhagen mockup 2026-09-27, and found it missing here on
                 // 2026-10-01). The city's own trees first, then one group per

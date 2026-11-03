@@ -503,7 +503,10 @@ struct ContentView: View {
                 ContentUnavailableView("That tree is gone", systemImage: "leaf")
             }
         case .country(let name):
-            CountryView(country: name, catalogue: cat, origin: origin)
+            // A COUNTRY IS ITS MAP TOO (Hidde, 2026-11-03: "the intended
+            // country page is already live when you click on expand map -
+            // just go straight there"), as a city has been since 10-17.
+            PlaceMapPage(place: .country(name), catalogue: cat)
         case .species(let name):
             SpeciesView(commonName: name, catalogue: cat, origin: origin)
         case .city(let slug):
