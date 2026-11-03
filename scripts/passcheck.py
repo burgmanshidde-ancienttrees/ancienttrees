@@ -1300,11 +1300,14 @@ def print_blocklist():
     # 2026-08-08 addition using host/noted/symptom); normalize rather than
     # pick one, since a third addition should not break this a second time.
     def desc(v):
+        if isinstance(v, str):
+            return v
         return v.get("behaviour") or v.get("symptom") or ""
     for h, v in sorted(hosts.items(), key=lambda kv: 0 if "hang" in desc(kv[1]) else 1):
         d = desc(v)
         mark = "!!" if "hang" in d else "  "
-        print(f" {mark} {h}: {d}. {v['workaround']}")
+        tail = "" if isinstance(v, str) else f" {v.get('workaround', '')}"
+        print(f" {mark} {h}: {d}.{tail}")
     print("    Every fetch: curl -m 20 (or timeout= on urllib). A hang burns the "
           "window; a refusal costs a second.")
 
