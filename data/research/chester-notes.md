@@ -1,0 +1,1 @@
+Chester 2026-11-03: searched Grosvenor Park, Overleigh Cemetery, cathedral precinct, Ancient Yew Group diocese list. No named veteran with a sourced girth or age found. Chester is thin: zero verified, prefix reserved cht. Overleigh and Farndon are leads only.

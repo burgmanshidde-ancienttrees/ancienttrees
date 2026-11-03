@@ -1,0 +1,3 @@
+# Welsh yews and Snowdonia: pass notes (2026-11-03)
+
+Method: Ancient Yew Group database pages (facts only: girth, grid ref, notes) plus a second source each (Wikipedia, Wondermondo, the church's own site, National Park page). Girths are 1998-99 visits, trees have grown since. Grid refs converted with pyproj (EPSG:27700), site-level so `approximate` with `location_site`. Age claims are recorded per source, no crown asserted. Dead end: Bodnant's champion coast redwood fell in Storm Arwen. Snowdonia yews are modest (under 4 m girth). Search summaries used as pointers only; figures above were seen on fetched pages except where noted in verify_notes.

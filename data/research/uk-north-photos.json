@@ -1,0 +1,15 @@
+{
+  "note": "Photo verdicts for the northern England and Wales pass, judged by looking at the pixels on 2026-11-03 (Cadiz standard). Approved ones go on the tree as its lead photo when scripts/build_uk_north.py runs; held ones never ship.",
+  "approved": {
+    "dfy_001": {"url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/The_Defynnog_Yew_trees%2C_Powys%2C_Wales.jpg", "license": "CC BY 4.0", "attribution": "Rosser1954", "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Defynnog_Yew_trees,_Powys,_Wales.jpg", "width": 4896, "height": 3672, "taken_month": "2023-11", "why": "whole crown in daylight across the churchyard, file titled for the Defynnog Yew"},
+    "dsc_001": {"url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Discoed_church_and_ancient_yew_-_geograph-2444805.jpg", "license": "CC BY-SA 2.0", "attribution": "Peter Evans", "attribution_url": "https://commons.wikimedia.org/wiki/File:Discoed_church_and_ancient_yew_-_geograph-2444805.jpg", "width": 1280, "height": 960, "taken_month": "2011-06", "why": "the leaning trunk and full crown beside St Michael's, the only big yew there"},
+    "pml_001": {"url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Ancient_yew_tree%2C_St_Melangell%27s_Church%2C_Pennant_Melangell%2C_Wales.jpg", "license": "CC BY 4.0", "attribution": "Rosser1954", "attribution_url": "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree,_St_Melangell%27s_Church,_Pennant_Melangell,_Wales.jpg", "width": 5152, "height": 3864, "taken_month": "2024-08", "why": "hollow fluted trunk fills the frame, church railings at right"},
+    "mtd_001": {"url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/The_ancient_yew_tree_in_St_Martin%27s_Churchyard%2C_Martindale_-_geograph.org.uk_-_5899353.jpg", "license": "CC BY-SA 2.0", "attribution": "Marathon", "attribution_url": "https://commons.wikimedia.org/wiki/File:The_ancient_yew_tree_in_St_Martin%27s_Churchyard,_Martindale_-_geograph.org.uk_-_5899353.jpg", "width": 4000, "height": 3000, "taken_month": "2018-08", "why": "trunk and spreading crown with berries; geotag on the churchyard"},
+    "blt_001": {"url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Ancient_yew_tree%2C_Beltingham_Churchyard_-_geograph.org.uk_-_2129027.jpg", "license": "CC BY-SA 2.0", "attribution": "Oliver Dixon", "attribution_url": "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree,_Beltingham_Churchyard_-_geograph.org.uk_-_2129027.jpg", "width": 480, "height": 640, "taken_month": "2010-10", "why": "banded, propped trunk fills the frame; geotag on the churchyard"}
+  },
+  "held": {
+    "gfd_001": "Commons 1464989 (John S Turner): the caption says only that this 'may be' the 1,600-year tree; Gresford has several yews, so possibly the wrong trunk",
+    "nvn_001": "Commons 7317434 (Jeff Gogarty) is titled 'A Bleeding Yew': Nevern has an avenue of yews, and nothing says this is the one that bleeds",
+    "bwd_001": "verify pass: Geograph 3492314 does not show the yews; candidate Geograph 1272415 is a distant view, not looked at yet"
+  }
+}

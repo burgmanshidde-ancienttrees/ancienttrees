@@ -1,0 +1,35 @@
+{
+  "leads": [
+    {
+      "id": "shf_L1",
+      "name": "Chatsworth Alder",
+      "species": "Black Alder (Alnus glutinosa)",
+      "reason": "Unplaced: next to the Chatsworth cricket pitch near the River Derwent (Queen's Green Canopy 70 Ancient Trees list, rfs.org.uk PDF; a Guardian Country Diary calls it probably among the oldest alders, hollow trunk). Tree of National Special Interest. No coordinate, no photo found; paid estate park, Chatsworth is Derbyshire and about 45+ min from Sheffield by bus (not verified). Find the pitch coordinate and a geograph photo before shipping.",
+      "source_urls": [
+        "https://rfs.org.uk/wp-content/uploads/2022/05/QGC-70-Ancient-Trees-List.pdf",
+        "https://www.inkl.com/news/country-diary-the-wondrous-black-alder-lives-fast-and-dies-young"
+      ]
+    },
+    {
+      "id": "shf_L2",
+      "name": "Chatsworth Estate yew, Stand Wood",
+      "species": "Yew (Taxus baccata)",
+      "reason": "Single source (Ancient Yew Group tree 2070, 458 cm girth at ground, visited 2005, male tree, on the purple trail near a sharp right-hand bend in Stand Wood). No coordinate, 2005 observation only.",
+      "source_urls": [
+        "https://ancient-yew.org/yew_trees/chatsworth-estate-2070"
+      ]
+    },
+    {
+      "id": "shf_L3",
+      "name": "Western Road war memorial trees",
+      "reason": "Avenue of street trees, not a single collectible point; council said all identified for replacement would be retained (search summary only). Blocked as avenue.",
+      "status": "blocked"
+    },
+    {
+      "id": "shf_L4",
+      "name": "Sheffield Botanical Gardens oldest trees",
+      "reason": "Search found no named tree, species, age or girth. Needs Tree Register or garden-trust source."
+    }
+  ],
+  "blocked": []
+}

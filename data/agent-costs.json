@@ -15107,6 +15107,54 @@
       "tokens": 167497,
       "trees": 4,
       "note": "4 approved (lax_016 Commons, sdg_010 and oak_002 iNaturalist CC BY, snm_002 Commons CC0), oak_003 held (cannot tell which plaza oak), 13 with no usable open-licence photo. All California in about 1.6M tokens with the dispatcher, roughly 90k a tree."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "manchester+liverpool+chester",
+      "tokens": 113005,
+      "trees": 1,
+      "note": "Only lvp_003 (Speke Hall yews, NT, approximate). Manchester nothing named with girth and pin (Heaton Park eucalyptus, Dunham Massey to leads); Chester thin, two leads. NT pages answer a bot check."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "leeds+york+ripon",
+      "tokens": 261243,
+      "trees": 1,
+      "note": "Includes a 97k first run that hit the usage limit on 11-02 before any search. Only rip_002 (Studley Royal pollard chestnut, one NT source). Fountains yews to leads: access unsettled. Leeds and York nothing; Shire Oak fell 1941; the AYG 'Leeds' yew is in Kent."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "sheffield+yorkshire-lone",
+      "tokens": 234150,
+      "trees": 2,
+      "note": "Includes a 94k first run lost to the usage limit. shf_001 Chelsea Road Elm, shf_002 Vernon Oak (street-tree campaign trees, approximate). Yorkshire lone trees nothing; thestar and yorkshirepost behind Cloudflare."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "borrowdale+keswick+durham+newcastle",
+      "tokens": 175138,
+      "trees": 3,
+      "note": "Martindale yew, Lorton yew (view-only from the Pound), Beltingham yew (Northumberland lone tree). Borrowdale photo stays held; Crosthwaite and Patterdale yews lost; Durham nothing."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "cardiff+wales-yews",
+      "tokens": 154077,
+      "trees": 9,
+      "note": "Cardiff crd_005-007 from the Bute Park champion table (register only); six churchyard yews (Defynnog, Discoed, Pennant Melangell, Llanerfyl, Gresford, Nevern) from the Ancient Yew Group plus a second source each. Bodnant's champion redwood fell in 2021."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "uk-north 16 (lvp/crd/shf/rip/dfy/dsc/pml/lef/gfd/nvn/mtd/ltn/blt) + 13 place blocks",
+      "tokens": 200874,
+      "trees": 16,
+      "note": "All 16 written, none held; Lorton ships from the Pound (pin moved there by the dispatcher), Gresford age label corrected by the dispatcher. Dispatcher (photo look, fixes, builder) about 250k more by estimate. The whole pass about 1.39M tokens for 16 trees, roughly 87k a tree. Build with scripts/build_uk_north.py."
     }
   ]
 }

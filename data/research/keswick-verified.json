@@ -1,0 +1,81 @@
+[
+  {
+    "id": "mtd_001",
+    "name": "The Martindale Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "estimates vary, 700 to 2,000 years",
+    "age_min": 700,
+    "age_max": 2000,
+    "girth_cm": 592,
+    "location": {
+      "address": "Old St Martin's Church, Martindale, Penrith, Cumbria CA10 2NG (churchyard, NE of the church)",
+      "latitude": 54.55775,
+      "longitude": -2.8764,
+      "neighbourhood": "Martindale, Ullswater valley"
+    },
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_trees/martindale-777/",
+      "https://facultyonline.churchofengland.org/CHR/ChurchDetails.aspx?id=2197",
+      "https://nationalchurchestrust.org/node/1535",
+      "https://en.wikipedia.org/wiki/St_Martin%27s_Church,_Martindale"
+    ],
+    "access": "Free. Old St Martin's is a small open churchyard at the end of the Martindale valley road; no entry needed.",
+    "transport": "No bus. Take the Ullswater Steamers boat to Howtown pier, then walk about 2.5 km up the valley road; check sailings, which are reduced in winter. By car, about 15 minutes from Pooley Bridge.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Old St Martin's churchyard, Martindale",
+      "radius_m": 30
+    },
+    "curation_status": "ai_generated",
+    "official_register": {
+      "name": "Ancient Yew Group database, tree 777 (Martindale)",
+      "url": "https://www.ancient-yew.org/yew_trees/martindale-777/"
+    },
+    "photo_candidate": {
+      "file_page": "https://commons.wikimedia.org/wiki/File:The_ancient_yew_tree_in_St_Martin%27s_Churchyard,_Martindale_-_geograph.org.uk_-_5899353.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/The_ancient_yew_tree_in_St_Martin%27s_Churchyard%2C_Martindale_-_geograph.org.uk_-_5899353.jpg",
+      "license": "CC BY-SA 2.0",
+      "author": "Geograph contributor (see file page)",
+      "why_this_trunk": "title names the ancient yew in St Martin's churchyard; Commons geotag 54.55775,-2.87640 matches the church pin. Second candidate: File:Under the ancient yew tree in St Martin's Churchyard, Martindale - geograph 5899368"
+    },
+    "story": "Estimates of this yew's age run from 700 years to 2,000, and the Ancient Yew Group, which keeps the record, simply lists both ends. It leans towards the lower end, because the tree is really two trunks, joined only for the first few feet. The Church of England's heritage record repeats a figure of about 1,300 years. Nobody has a method that settles it.\n\nWhat stands in the churchyard of old St Martin's is easier to describe. A female yew, its two trunks measured together at 5.92 metres round in 2002. One is a hollow shell with a thickened rim; the other, nearer the church, is covered in twiggy growth. A branch about six feet up dips all the way to the ground, and the crown hangs over a building beside it.\n\nThe church site is documented from 1220. The local story says the yew supplied longbows for Agincourt, which the National Churches Trust calls probable but not proven. The first time it appears in print is 1839, when William Ford called it a picturesque yew-tree, and the yew group now calls this one of the finest churchyard yew settings in England. A 2018 survey found the crown in normal health, with some dead branches on the south side.\n\nThe church sits at the end of the Martindale road, well away from any town. That remoteness is most of its charm.",
+    "how_to_recognise": "You can recognise it by its two trunks joined at the base, one a hollow shell, and a low branch that dips to the ground. It stands north-east of old St Martin's Church, Martindale."
+  },
+  {
+    "id": "ltn_001",
+    "name": "The Lorton Yew (Pride of Lorton Vale)",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "at least 1,000 years (local sources; girth suggests less)",
+    "age_min": 500,
+    "age_max": 1200,
+    "girth_cm": 495,
+    "location": {
+      "address": "The Pound, by the bridge over Whit Beck, High Lorton, Cockermouth, Cumbria CA13 9TY (public viewing place; the yew stands on private ground beside it)",
+      "latitude": 54.6178,
+      "longitude": -3.3,
+      "neighbourhood": "High Lorton, Lorton Vale"
+    },
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_trees/lorton-vale-1137",
+      "https://cockermouth.org.uk/dms-showpage.php?tid=530",
+      "https://en.wikipedia.org/wiki/Lorton,_Cumbria",
+      "https://treenotes.blogspot.com/2007/04/yew-tree-of-lorton-vale.html",
+      "https://lorton-pc.gov.uk/wp-content/uploads/2024/04/lortonhistoryandvillagetrail.pdf"
+    ],
+    "access": "View only. The yew stands on private ground behind Yew Tree Hall; see it from the Pound, the public open space by Whit Beck at the bridge in High Lorton, where it has an interpretation board. Free. Please keep to the public space and rights of way.",
+    "transport": "The seasonal Honister Rambler bus (77/77A) from Keswick serves Lorton, roughly Easter to early November, with no winter service; check the timetable. By car, about 10 minutes from Cockermouth.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "The Pound by Whit Beck, High Lorton",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "official_register": {
+      "name": "Ancient Yew Group database, tree 1137 (Lorton Vale)",
+      "url": "https://www.ancient-yew.org/yew_trees/lorton-vale-1137"
+    },
+    "story": "In 1653 George Fox, the founder of the Quakers, came to Lorton and noted a yew so full of people that he feared they would break it down. Wordsworth called the same tree the pride of Lorton Vale in his poem Yew-Trees, and walked Coleridge out to see it in 1799. It is still here, behind the old malt house that is now the village hall, on the bank of Hope Beck.\n\nIt is much smaller than the tree those men saw. A county history of 1816 gave the trunk as 27 feet round, about 8.2 metres. In the 19th century a storm broke it in half, and the wood of the fallen part was made into the Mayor's Chair in Cockermouth. When the Ancient Yew Group measured what remains in 2002, it was 4.95 metres round, a hollow, broken female tree slowly losing branches.\n\nIts age is disputed. Local sources say at least a thousand years, and the parish's own village history, from the old girth, suggests about 1,200. The yew group's rule of thumb would put a trunk of today's size nearer 500 or 600. Estimates differ, and the storm makes the old measurement hard to use.\n\nThe tree stands on private ground. See it from the Pound, the small public green by Whit Beck at the bridge in High Lorton, where it has its own interpretation board. A daughter tree, planted in 2004, grows at Crossgates, on the road between Low and High Lorton.",
+    "how_to_recognise": "You can recognise it as the hollow, broken yew on the bank of Hope Beck behind Yew Tree Hall. View it from the Pound, the public green by Whit Beck, where its interpretation board stands.",
+    "pin_source": "OSM bridge over Whit Beck (way centre 54.61779,-3.30001), the Pound's position per the Lorton parish village trail (2024)"
+  }
+]

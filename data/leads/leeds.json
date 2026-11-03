@@ -1,0 +1,46 @@
+{
+ "leads": [
+  {
+   "name": "Temple Newsam sweet chestnut 'thought to be 350 years old'",
+   "reason": "Only a Secret Leeds forum post (anonymous, same thread says oldest tree on Leeds council land until Oct 2002), no council, estate or register source, no coordinate. Yorkshire Gardens Trust letter says oak, lime, beech, sweet chestnut historically on the estate. Needs a Leeds Museums or council source and a pin.",
+   "sources": [
+    "https://www.secretleeds.com/viewtopic.php?p=60774"
+   ]
+  },
+  {
+   "name": "Roundhay Park veteran oaks and one ancient oak (Sept 2025 Yorkshire Gardens Trust tree-planting letter); a veteran oak 4.13 m girth at 1.5 m in the HDNS visit of 14 July 2020",
+   "reason": "Survivors of ancient field boundaries per YGT; no coordinate for any single tree, HDNS gives no location. No pin, no recognition line in reach.",
+   "sources": [
+    "https://yorkshiregardenstrust.org.uk/sites/yorkshiregardenstrust.org.uk/files/responses/YGTLetRoundhayParkTreePlanting0925.pdf",
+    "https://www.hdns.org.uk/?p=6944"
+   ]
+  },
+  {
+   "name": "Harewood House champion trees (Japanese oak planted by Queen Alexandra 8 July 1908; Eucryphia, magnolia, London plane)",
+   "reason": "Harewood's own site says Yorkshire champion and perhaps British Isles champion, awaiting confirmation. Planted specimens, not ancient; paid estate; no coordinates; not 'Tree Register entry' seen. 8 miles north of Leeds city. Low priority.",
+   "sources": [
+    "https://harewood.org/?p=1819"
+   ]
+  },
+  {
+   "name": "Meanwood Park yew",
+   "reason": "A blog says it is a broad, low climbing yew and not ancient. Not pursued.",
+   "sources": []
+  },
+  {
+   "name": "Bramham Park / Kirkstall Abbey / Golden Acre / Adel and Whitkirk churchyards",
+   "reason": "One search each found no named veteran tree with a figure or pin; Ancient Yew Group database has no Leeds (West Yorkshire) pages (its 'Leeds' record, 854 cm, is Leeds in Kent, do not use). Empty after one pass.",
+   "sources": []
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Shire Oak (Headingley)",
+   "reason": "Blown down in 1941 per Wikipedia; dead."
+  },
+  {
+   "name": "Ancient Yew Group 'Leeds' 563 (854 cm)",
+   "reason": "Is Leeds, Kent (St Nicholas churchyard), not Leeds, Yorkshire."
+  }
+ ]
+}

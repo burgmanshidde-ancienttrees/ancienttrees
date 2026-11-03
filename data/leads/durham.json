@@ -1,0 +1,35 @@
+{
+ "city": "Durham",
+ "country": "United Kingdom",
+ "about": "County Durham leads, 2026-11-03 northern England verify pass.",
+ "leads": [
+  {
+   "name": "Brancepeth yew (St Brandon's churchyard)",
+   "species": "European Yew (Taxus baccata)",
+   "girth_cm": 340,
+   "place": "Brancepeth Castle and St Brandon, NZ2248137695, about 8 km SW of Durham",
+   "source": "AYG 'Yews in County Durham' (Graham Wilkinson, 1995-96): male, 11 ft 2 in (340 cm) at base",
+   "reason": "1995 survey only, modest girth, no age claim; below the 'worth the walk' floor. Recheck if a source gives age or a story."
+  },
+  {
+   "name": "Chester-le-Street St Mary and St Cuthbert yews",
+   "species": "European Yew (Taxus baccata)",
+   "girth_cm": 219,
+   "place": "Chester-le-Street, NZ2760451318",
+   "source": "AYG County Durham survey 1995/99: female 16 ft east of the church, 7 ft 2 in at base",
+   "reason": "small girth, nothing remarkable."
+  },
+  {
+   "name": "Durham University Botanic Garden specimen trees (monkey puzzle etc.)",
+   "place": "Durham University Botanic Garden, south edge of Durham",
+   "source": "Wikipedia and Parks & Gardens UK mention 19th-century specimen trees and a 'magnificent' monkey puzzle",
+   "reason": "no named individual tree, age or girth in any source seen; no pin."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Durham Cathedral precinct and Wear banks",
+   "reason": "searched for a named veteran: no source names one. Nothing to verify."
+  }
+ ]
+}

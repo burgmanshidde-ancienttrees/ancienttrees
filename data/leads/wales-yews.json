@@ -1,0 +1,72 @@
+{
+ "leads": [
+  {
+   "name": "Bodnant Garden champion trees",
+   "species": "various (Wales and UK Champions)",
+   "location": {
+    "address": "Bodnant Garden, Tal-y-Cafn, Conwy LL28 5RE (NT, paid)",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Walk-through garden; Tree Register champions (about 40 UK and 130 Wales per a search summary, not a fetched page). The named Wales Champion 51 m coast redwood was uprooted in Storm Arwen (Nov 2021, North Wales Pioneer article quoting National Trust): dead, never ship. A 35 m giant sequoia planted 1890 is cited only by a Countryfile summary; no pin or second source. Needs a Tree Register or NT page naming a surviving individual tree.",
+   "source": "https://www.northwalespioneer.co.uk/news/19754580.storm-arwen-50-trees-including-rare-specimens-uprooted-bodnant-garden-damage-huge-blow/"
+  },
+  {
+   "name": "Llanrwst churchyard yew (St Grwst)",
+   "species": "Yew (Taxus baccata)",
+   "location": {
+    "address": "St Grwst, Llanrwst",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "AYG lists one notable yew 396 cm at 90 cm; not remarkable enough.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/llanrwst/"
+  },
+  {
+   "name": "Llanfair Talhaiarn yew (St Mary)",
+   "species": "Yew (Taxus baccata)",
+   "location": {
+    "address": "St Mary's, Llanfair Talhaiarn, Conwy",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "AYG notable yew 395 cm at 130 cm; poet Talhaiarn is buried beneath the 'grand old yew' (1872 engraving). Modest girth, no pin.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/llanfair-talhaiarn/"
+  },
+  {
+   "name": "Capel Garmon yews",
+   "species": "Yew (Taxus baccata)",
+   "location": {
+    "address": "St Garmon, Capel Garmon",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Only on AYG's younger-yews list (some near 12 ft girth): not remarkable.",
+   "source": "https://www.ancient-yew.org/userfiles/file/Conwy%20younger%20yews%20September%202018.pdf"
+  },
+  {
+   "name": "Mamhilad yews (St Illtyd)",
+   "species": "Yew (Taxus baccata)",
+   "location": {
+    "address": "Mamhilad, near Pontypool",
+    "latitude": 51.72518,
+    "longitude": -3.00703
+   },
+   "reason": "AYG: 1799 Coxe recorded 12 yews; 1873 report of a 29 ft 4 in girth yew; a site with a lost yew (visited 2014). Worth a pass for current girths from the 2025 site file (Mamhilad-2025.pdf), not fetched.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/mamhilad/"
+  },
+  {
+   "name": "Llanfaredd yew (St Mary)",
+   "species": "Yew (Taxus baccata)",
+   "location": {
+    "address": "St Mary's, Llanfaredd, Builth Wells",
+    "latitude": 52.14708,
+    "longitude": -3.36143
+   },
+   "reason": "AYG ancient 7m+ tree 96, 922 cm at 60 cm (1998), west of church; only AYG plus a Geograph photo (Bill Nicholls, CC BY-SA 2.0, geograph 3710020), no second source or life check (lifecheck NONE).",
+   "source": "https://www.ancient-yew.org/yew_tree_database/llanfaredd/"
+  }
+ ],
+ "blocked": [],
+ "notes": "2026-11-03 Welsh yews and Snowdonia pass. Delivered six in wales-yews-verified.json. Not reached: Strata Florida, Llanfihangel-nant-Melan, Bettws Newydd, Corwen, Overton-on-Dee, Plas Newydd, Gwydir Uchaf. ancient-yew.org/yew_tree_database/<slug>/ pages fetch fine with curl; the overton-on-dee slug 404s."
+}

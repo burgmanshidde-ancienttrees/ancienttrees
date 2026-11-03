@@ -1,0 +1,4 @@
+# Keswick / Lake District, 2026-11-03 (northern England verify pass)
+Id prefix kes. Shipped: kes_001 Martindale Yew (Ullswater valley, NOT near Keswick), kes_002 Lorton Yew (view-only, flagged, thin life evidence). Fewer than four and neither is in Keswick itself, so no Keswick place page; they are lone tree pages. (If the Borrowdale yew's page grows, Lorton could join it as nearby Lake District yews.)
+Rejected/blocked: Crosthwaite yews (lost), Patterdale churchyard yew (lost), Crow Park oaks (felled 1748). Leads: Thornythwaite Fell yew 610 cm (no pin), Grasmere St Oswald's yews (notable not ancient, planting claim doubted by AYG), Muncaster yew 455 cm (1997 record).
+Not searched: Wray Castle, Sizergh, Levens Hall (topiary, judged not a tree page), Seathwaite beyond the yews; no source surfaced a named tree.

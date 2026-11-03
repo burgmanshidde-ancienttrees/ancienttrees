@@ -1,0 +1,43 @@
+[
+ {
+  "id": "blt_001",
+  "name": "The Beltingham Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "said to be at least 900 years",
+  "age_min": 500,
+  "age_max": 900,
+  "girth_cm": 521,
+  "location": {
+   "address": "St Cuthbert's churchyard, Beltingham, Bardon Mill, Hexham, Northumberland",
+   "latitude": 54.97,
+   "longitude": -2.3303,
+   "neighbourhood": "Beltingham, South Tyne valley"
+  },
+  "verified_sources": [
+   "https://www.ancient-yew.org/yew_trees/beltingham-79/",
+   "https://www.ancient-yew.org/yew_tree_database/beltingham/",
+   "https://www.hexham-courant.co.uk/news/18674609.ancient-yew-makes-mark-woodland-trust-competition/"
+  ],
+  "access": "Free. Open churchyard of St Cuthbert's, Beltingham.",
+  "transport": "Train on the Tyne Valley line from Newcastle to Bardon Mill, about 50 minutes, then roughly 1 km on foot across the South Tyne. A day trip from Newcastle rather than a city walk.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "St Cuthbert's churchyard, Beltingham",
+   "radius_m": 40
+  },
+  "curation_status": "flagged",
+  "official_register": {
+   "name": "Ancient Yew Group database, tree 79 (Beltingham)",
+   "url": "https://www.ancient-yew.org/yew_trees/beltingham-79/"
+  },
+  "photo_candidate": {
+   "file_page": "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree,_Beltingham_Churchyard_-_geograph.org.uk_-_2129027.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Ancient_yew_tree%2C_Beltingham_Churchyard_-_geograph.org.uk_-_2129027.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Oliver Dixon",
+   "why_this_trunk": "title 'Ancient yew tree, Beltingham Churchyard'; Commons geotag 54.97008,-2.33035 sits on the churchyard pin; photographed 2010-10-24. Others: geograph 1863241 (Andrew Curtis), 2028962 and 2028984 (Mike Quinn, 'old yew tree in graveyard')"
+  },
+  "story": "This yew is held together with metal straps. Two bands, one at about three feet and one at about seven, wrap a twisted, hollow trunk in the churchyard of St Cuthbert's at Beltingham, binding two living fragments to what is left of the decaying original. It is a male tree, 5.21 metres round when the Ancient Yew Group measured it in 2002.\n\nThe local paper, the Hexham Courant, says it is said to be at least 900 years old, without naming who said so. Treat that as a village figure rather than a measurement. The church beside it dates from around 1500, the yew group thinks the site is likely much older, and the first written mention of the yew comes from parish records of 1828. Its girth fits a tree several centuries old without proving any particular number.\n\nIn 2020 it made the Woodland Trust's shortlist of ten for England's Tree of the Year, one of only two entries from the North East. The other was the Shoe Tree in Heaton, Newcastle, which is a very different sort of local celebrity.\n\nBeltingham is a hamlet on the south bank of the South Tyne, a few minutes from Bardon Mill, close to Hadrian's Wall country. Two more yews share the churchyard, one of them 4.83 metres round, but the strapped one north-east of the church is the one to find.",
+  "how_to_recognise": "You can recognise it by the metal straps binding its twisted, hollow trunk at about three and seven feet. It stands north-east of St Cuthbert's Church in Beltingham churchyard."
+ }
+]

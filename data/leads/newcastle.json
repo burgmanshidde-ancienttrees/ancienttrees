@@ -1,0 +1,40 @@
+{
+ "city": "Newcastle",
+ "country": "United Kingdom",
+ "about": "Newcastle and Tyne and Wear leads, 2026-11-03 northern England verify pass.",
+ "leads": [
+  {
+   "name": "Ancient Pear, Heaton Park",
+   "species": "Pear (Pyrus communis)",
+   "place": "Heaton Park, Newcastle, on the main path SW past the Sambuca's Pavilion area, bowling green on the right, interpretation board a few paces on",
+   "source": "commonbynature.com/2026/05/20/newcastle-tree-walks-heaton-park (James Common, 20 May 2026), 'predates the 1879 donation'",
+   "reason": "single blog source, no age or girth, no coordinate found. Needs the park interpretation board text or a council page as second source, plus a pin."
+  },
+  {
+   "name": "Turkey Oak by the Banqueting Hall, Jesmond Dene",
+   "species": "Turkey Oak (Quercus cerris)",
+   "place": "Jesmond Dene, beside the Banqueting Hall (54.99,-1.59 area)",
+   "source": "sitelines.newcastle.gov.uk/SMR/5005 (Tyne and Wear HER): planted 1884 at the opening by the Prince and Princess of Wales, 'still survives'",
+   "reason": "one source (the council HER, an official record), documented planting date for this specimen (1884, so about 140 years); no pin, no girth, not yet shown to be big. Candidate for a later pass: it is a specimen with a documented planter, but a 140-year Turkey Oak may not clear 'worth the walk'."
+  },
+  {
+   "name": "The King (famous oak) at Gibside",
+   "species": "Oak (Quercus sp.)",
+   "place": "Gibside, Rowlands Gill (National Trust)",
+   "source": "1808 archive catalogue entry (National Archives Discovery) mentions a valuation of 'a famous oak tree called The King'",
+   "reason": "no evidence it still stands; Long Walk avenue itself is an avenue (blocked as a collectible point). Ask NT only via a later pass."
+  },
+  {
+   "name": "Heaton's Shoe Tree",
+   "place": "Heaton Park / Heaton, Newcastle",
+   "source": "Chronicle 2020 and inkl: Tree of the Year shortlist",
+   "reason": "not researched: species and position unknown this pass, and a shoe tree's draw is a custom, not an old tree."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Town Moor trees",
+   "reason": "open common with mostly new planting (12,000 trees planned); no individual veteran identified."
+  }
+ ]
+}

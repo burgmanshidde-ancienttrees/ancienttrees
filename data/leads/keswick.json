@@ -1,0 +1,44 @@
+{
+ "city": "Keswick",
+ "country": "United Kingdom",
+ "about": "Lake District leads from the 2026-11-03 northern England verify pass.",
+ "leads": [
+  {
+   "name": "Thornythwaite Fell yew",
+   "species": "European Yew (Taxus baccata)",
+   "girth_cm": 610,
+   "place": "Thornythwaite Fell above Thorneythwaite Farm, Borrowdale",
+   "source": "https://www.ancient-yew.org/yew_trees/thornythwaite-fell-5263/ (2003 Michael Graham; 2024 Paul Greenwood and Bryony Smith, girth 610 cm around two fragments)",
+   "reason": "no coordinate published in AYG, no exact pin in reach; described as inaccessible fell tree. No photo or exact pin in reach. Strong deepen candidate for Borrowdale if a position surfaces."
+  },
+  {
+   "name": "Wordsworth's yews, St Oswald's Grasmere",
+   "species": "European Yew (Taxus baccata)",
+   "place": "St Oswald's churchyard, Grasmere (54.4575,-3.0237)",
+   "source": "https://www.ancient-yew.org/yew_tree_database/grasmere/ (8 notable yews, girths 249 to 399 cm, Tim Hills 2014); church website per search says Wordsworth planted eight",
+   "reason": "a group of 'notable' not ancient yews; AYG doubts the planting claim (too thick for 1800s planting if Wordsworth's). Single trunk not identified. Possible ensemble entry if a source names the yew by his grave."
+  },
+  {
+   "name": "Muncaster Castle yew",
+   "species": "European Yew (Taxus baccata)",
+   "girth_cm": 455,
+   "place": "Muncaster Castle grounds, Ravenglass (54.3547,-3.3809)",
+   "source": "https://www.ancient-yew.org/yew_trees/muncaster-2768 (1997 visit, 455 cm at 3 ft, female, on small mound)",
+   "reason": "1997 record only, no position inside the paid grounds, no life check."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Crosthwaite churchyard yews",
+   "reason": "AYG lists Crosthwaite (St Kentigern) as a lost yew site, c1824 record; no living tree."
+  },
+  {
+   "name": "Patterdale churchyard yew",
+   "reason": "AYG tree 775 marked Lost; 1808 etching only."
+  },
+  {
+   "name": "Crow Park / Friar's Crag oaks",
+   "reason": "sources say the ancient oaks were felled (1748); no named veteran survives."
+  }
+ ]
+}
