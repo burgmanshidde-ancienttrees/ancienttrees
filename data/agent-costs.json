@@ -15003,6 +15003,38 @@
       "tokens": 177707,
       "trees": 5,
       "note": "Southern Italy MASAF run, two rounds of one agent (the resumed run reported 178k in all, the first 155k):Giganti della Sila (FAI, temporarily closed), Gariglione fir and beech, Santa Maria del Bosco fir, San Pietro plane; 4 forest trees held as indistinguishable, Celico chestnut private."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "santa-cruz-de-tenerife",
+      "tokens": 154951,
+      "trees": 9,
+      "note": "Santa Cruz municipal register (CC BY): Plaza del Príncipe and San Francisco figs, García Sanabria kapok, tamarind, banyan, two dragons, La Granja red gum and ombú; all pins approximate (Overpass down every attempt). Palmetum young, Viera y Clavijo closed since 2023, baobab planted ~2000; leads in data/leads/santa-cruz-de-tenerife.json."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "tenerife",
+      "tokens": 200746,
+      "trees": 5,
+      "note": "Cabildo catalogue scouted: ~300 entries, CC0 by the site-wide aviso legal, one page per tree, no dataset (OPEN_DATA_SURVEY.md). Drago de San Antonio, Drago del Cristo, Pino de Buen Paso, Pino del Señor (4 confirmed pins), Hijuela del Botánico drago; about two thirds of the dragos private, Drago de San Francisco dead March 2026."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "photo-judge",
+      "target": "santa-cruz-de-tenerife+tenerife",
+      "tokens": 219285,
+      "trees": 4,
+      "note": "48 images viewed over two runs (the first hit the session limit); approved sct_002, sct_008, tfe_005, tfe_006. Santa Cruz candidates were mostly monuments, church interiors and bandstands."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "santa-cruz-de-tenerife+tenerife",
+      "tokens": 179666,
+      "trees": 14,
+      "note": "14 stories with recognition lines, Santa Cruz place fields and the Tenerife place text rewritten for nine trees; dispatcher translated the five new trees and place text into the es overlay. Held for the pace, build with scripts/build_tenerife.py. All in about 0.85M tokens with the dispatcher, roughly 61k a tree."
     }
   ]
 }

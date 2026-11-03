@@ -1,0 +1,455 @@
+[
+  {
+    "id": "sct_001",
+    "name": "Indian Laurel Figs of Plaza del Príncipe",
+    "species": "Indian Laurel Fig (Ficus microcarpa)",
+    "age_estimate": "about 160 years",
+    "age_min": 150,
+    "age_max": 165,
+    "age_basis": "source",
+    "height_m": 20,
+    "location": {
+      "address": "Plaza del Principe de Asturias, Santa Cruz de Tenerife",
+      "latitude": 28.468257,
+      "longitude": -16.250429,
+      "neighbourhood": "Centro"
+    },
+    "verified_sources": [
+      "https://diariodeavisos.elespanol.com/2018/03/paseo-la-excelencia-vegetal-santa-cruz/",
+      "https://diariodeavisos.elespanol.com/2018/03/reclaman-una-intervencion-urgente-los-arboles-la-plaza-san-francisco/",
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "FIC_MIC-1 and FIC_MIC-2 (two crowns 15 m apart, folded)",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free, open city-centre square, always accessible; pedestrian streets.",
+    "transport": "Pedestrian city centre, about 3 minutes (170 m) on foot from Plaza de la Candelaria.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Plaza del Principe de Asturias",
+      "radius_m": 50
+    },
+    "curation_status": "ai_generated",
+    "verify_notes": "Register rows FIC_MIC-1 (28.468257,-16.250429) and FIC_MIC-2 (28.468141,-16.250331) folded; two crowns about 15 m apart. Municipal catalogue (Martin Osorio and Wildpret, presented 2018) per Diario de Avisos: the laurels of Plaza del Principe were planted in 1864 and now measure 20 m, among the tallest in the urban area; the same press report says they need special protection (pets urinating, children playing) and the authors asked for urgent action. Tenerife Weekly (2022) lists the laurel of the Indies of Plaza del Principe on the singular-tree route. Two press pieces give 1864; the register carries no age. Age is the press-reported planting date, so 160 years is source-based. Plaza itself was laid out 1857 (WebTenerife) so planting 1864 is plausible, but only press says so. Species: register Ficus microcarpa; iNaturalist Ficus microcarpa observation 18 m away (2024-10-01, casual): https://www.inaturalist.org/observations/245039429. Alive: lifecheck RECENT 2025-09-27 near here. Council states Rambla laurels (different trees, Rambla end) are dying and being replaced (Tenerife Weekly 2024-10-03), not these. Small square taken in at one glance, so location_site; distinguishing: the large crowns on the Calle del Castillo side near the fountain/templete, from register coordinates only. Recognition from sources: tallest trees on the square, aerial roots.",
+    "photo_candidates": [
+      {
+        "title": "File:Canaries Tenerife Santa Cruz Plaza Del Principe Asturias 02092015 - panoramio.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Canaries_Tenerife_Santa_Cruz_Plaza_Del_Principe_Asturias_02092015_-_panoramio.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:Templete, Plaza del Príncipe de Asturias.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Templete,_Plaza_del_Príncipe_de_Asturias.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:Plaza del Príncipe de Asturias 3.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Plaza_del_Príncipe_de_Asturias_3.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photo_verdict": "Seven files viewed (three queued, four geotag search): the bandstand, a statue, a pandanus or a dim palm-filled view is the subject in each; the laurel figs only show at the frame edges.",
+    "story": "The square was seven years old when these figs went in. Plaza del Príncipe was laid out in 1857, and the two Indian laurel figs that now shade it were planted in 1864, according to the municipal catalogue of singular trees presented by the botanists Martín Osorio and Wildpret in 2018, as the local press reported it. The city's own register lists both trees but records no age, so that date rests on the catalogue as quoted in print. About 160 years later they stand 20 metres tall, among the tallest trees anywhere in the urban area of Santa Cruz.\n\nThe two crowns stand about 15 metres apart, and aerial roots hang from them, the habit of a fig that turns roots into extra trunks wherever they reach soil. Ficus microcarpa is planted all over the city, and the council says most of its laurels are past their hundredth year.\n\nThe catalogue's authors did not write a love letter to these two. They asked for special protection and urgent action, naming pets relieving themselves against the trunks and children playing on them. Along the Rambla, at the other end of town, the council has been replacing laurels that are dying; these are not among them.\n\nThe square is free and always open, about three minutes on foot from Plaza de la Candelaria, and it makes the obvious first stop on a walk past the old trees of the centre.",
+    "how_to_recognise": "You can recognise them as the tallest trees on the square, two broad fig crowns about 15 metres apart with aerial roots hanging down. They stand on the Calle del Castillo side, near the bandstand."
+  },
+  {
+    "id": "sct_002",
+    "name": "Moreton Bay Figs of Plaza de San Francisco",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "over a century",
+    "age_min": 110,
+    "age_max": 160,
+    "age_basis": "source",
+    "girth_cm": 1427,
+    "location": {
+      "address": "Plaza de San Francisco, Santa Cruz de Tenerife",
+      "latitude": 28.46806,
+      "longitude": -16.24902,
+      "neighbourhood": "Centro"
+    },
+    "verified_sources": [
+      "https://diariodeavisos.elespanol.com/2018/03/paseo-la-excelencia-vegetal-santa-cruz/",
+      "https://diariodeavisos.elespanol.com/2018/03/reclaman-una-intervencion-urgente-los-arboles-la-plaza-san-francisco/",
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "FIC_MACR-1, -2, -3, -4 (four figs in a row, folded)",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free, open city-centre square beside the Iglesia de San Francisco.",
+    "transport": "Pedestrian city centre, about 5 minutes (300 m) on foot from Plaza de la Candelaria.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Plaza de San Francisco",
+      "radius_m": 50
+    },
+    "curation_status": "ai_generated",
+    "verify_notes": "Register rows FIC_MACR-1..4 folded (28.468353/-16.248961, 28.468186/-16.249006, 28.468008/-16.249032, 28.467838/-16.249062), four figs in a row about 20 m apart. Municipal catalogue per Diario de Avisos 2018: the figs of Plaza de San Francisco were already planted in 1914; the single biggest Ficus macrophylla of the plaza has 14.27 m girth at the base (largest girth after the cardon of El Chorrillo, 35.2 m); the catalogue authors asked for urgent action: fence them and remove the artificial lawn that surrounds them, bikes were parked on them, vandalism. girth_cm 1427 is the largest of the four and a base measurement (buttressed), not chest height; which of the four is not stated. Age: planted by 1914 means at least about 110 years; upper bound is conservative guess not sourced, so treat age as over a century. Species Ficus macrophylla stated in catalogue summary and register. Alive: lifecheck RECENT 2026-05-15 (iNaturalist observations 9 to 13 m from the pins, Ficus, casual): https://www.inaturalist.org/observations/362078230 and https://www.inaturalist.org/observations/346635794. Tenerife Weekly route piece: the fig tree in Bahia Moreton in the Plaza de San Francisco. Catalogue counts seven Ficus macrophylla across Santa Cruz; the other three (FIC_MACR-5/6 in Parque Garcia Sanabria, -7 Viera y Clavijo area) are elsewhere. One collectible point: one plaza, one place to stand.",
+    "photo_candidates": [
+      {
+        "title": "File:Canaries Tenerife Santa Cruz Plaza San Francisco Tribunal - panoramio.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Canaries_Tenerife_Santa_Cruz_Plaza_San_Francisco_Tribunal_-_panoramio.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:Canaries Tenerife Santa Cruz Plaza San Francisco Tribunal 01092015 - panoramio.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Canaries_Tenerife_Santa_Cruz_Plaza_San_Francisco_Tribunal_01092015_-_panoramio.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:Santa Cruz de Tenerife, Spain - panoramio (48).jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Santa_Cruz_de_Tenerife,_Spain_-_panoramio_(48).jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Santa_Cruz_de_Tenerife%2C_Spain_-_panoramio_%2849%29.jpg",
+      "license": "CC BY 3.0",
+      "attribution": "karel291",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Santa_Cruz_de_Tenerife,_Spain_-_panoramio_(49).jpg",
+      "status": "approved"
+    },
+    "photo_verdict": "One of the plaza's figs, its buttressed trunk and hanging aerial roots filling the frame on the artificial lawn the catalogue mentions, by the La Rebotica corner; geotag 9 m from register row FIC_MACR-1; light OK. Crown only as underside canopy.",
+    "story": "One of these four figs measures 14.27 metres round at the base, and in all of Santa Cruz only the cardón of El Chorrillo, at 35.2 metres, has recorded a bigger girth. That comes from the municipal catalogue of singular trees, presented in 2018. The catalogue gives the number but not the trunk, so which of the four is the record holder is something you will have to judge standing in the square. The figure is taken at the base, where a Moreton Bay fig spreads into buttresses, so it is not a chest-height measurement either.\n\nThe four stand in a row about 20 metres apart beside the Iglesia de San Francisco. The same catalogue says they were already planted by 1914, which makes them more than a century old; how much more, nobody has published. They are four of the seven Moreton Bay figs the catalogue counts across the city.\n\nA century in a busy square has not been gentle. The catalogue's authors asked for urgent action, starting with a fence around the trunks and the removal of the artificial lawn laid around them. They reported bicycles parked against the roots, and vandalism.\n\nThe square is free and open, about five minutes on foot from Plaza de la Candelaria and a short walk from the laurel figs of Plaza del Príncipe.",
+    "how_to_recognise": "You can recognise them as four big figs in a row, about 20 metres apart, with buttressed trunks and hanging aerial roots over a patch of artificial lawn. They stand beside the Iglesia de San Francisco."
+  },
+  {
+    "id": "sct_003",
+    "name": "Kapok of Parque García Sanabria",
+    "species": "Kapok (Ceiba pentandra)",
+    "location": {
+      "address": "Parque Garcia Sanabria, Santa Cruz de Tenerife",
+      "latitude": 28.473244,
+      "longitude": -16.253828,
+      "neighbourhood": "Centro"
+    },
+    "verified_sources": [
+      "https://diariodeavisos.elespanol.com/2018/04/en-el-corazon-del-garcia-sanabria/",
+      "https://es.wikipedia.org/wiki/Parque_Garc%C3%ADa_Sanabria",
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "CEI_PEN-2",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free public park, open daily (park hours not checked).",
+    "transport": "Edge of the city centre, about 12 minutes (1 km) on foot from Plaza de la Candelaria; the Rambla de Santa Cruz borders the park.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register CEI_PEN-2 (28.473244,-16.253827). Botanist Wolfredo Wildpret (catalogue co-author) on the park walk with Diario de Avisos (2018): at the end of the 50 m path of the first stretch, the ceiba is \"another of the great wonders\" of the park and, with the ceiba of Parque Viera y Clavijo, one of the two trees of greatest volume in the city; he relays that Perez de Paz suspected a masonic meaning because four palms were planted around it like columns. Spanish Wikipedia lists Ceiba pentandra among the largest and oldest specimens of the park. No girth, height or planting date found. The park was built 1926 (Wikipedia) but no source dates this tree, so no age is stated (no bridge claim). Species: register; iNaturalist Ceiba pentandra within 22 m (2024-07-31, casual): https://www.inaturalist.org/observations/232881291. Alive: lifecheck RECENT 2026-10-29. Flag: register plus a botanist walk article (one article), no dimensions. Park not small, pin approximate (a register coordinate, park-level reading).",
+    "photo_candidates": [
+      {
+        "title": "File:Paseo marcos guimerá peraza.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Paseo_marcos_guimerá_peraza.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photo_verdict": "Five files viewed: a cactus garden with dragon trees, then concrete and stone sculptures; no kapok shown.",
+    "story": "Four palms were planted around this kapok like the columns of a temple, and at least one botanist suspected that was the idea. Wolfredo Wildpret, co-author of the city's catalogue of singular trees, walked the park with the newspaper Diario de Avisos in 2018 and passed on a theory of his colleague Pérez de Paz, who saw a masonic meaning in the arrangement. Nobody has proved it, and nobody has disproved it.\n\nWildpret called the ceiba another of the great wonders of Parque García Sanabria, and counted it, with the ceiba of Parque Viera y Clavijo, as one of the two trees of greatest volume in Santa Cruz. Spanish Wikipedia lists it among the largest and oldest specimens in the park. Kapok is a tropical tree, the source of the silky fibre once used to stuff life jackets and mattresses.\n\nWhat nobody has published is a number. There is no recorded girth, no height and no planting date. The park opened in 1926, but that is the park's date, not the tree's, and no source says the kapok went in with it. If you know when it was planted, or have measured it, tell us.\n\nThe park is free, on the edge of the city centre where the Rambla runs past it, about twelve minutes on foot from Plaza de la Candelaria.",
+    "how_to_recognise": "You can recognise it by the four palms planted around it like columns. It stands at the end of the first 50-metre stretch of path in Parque García Sanabria."
+  },
+  {
+    "id": "sct_004",
+    "name": "Old Tamarind of Parque García Sanabria",
+    "species": "Tamarind (Tamarindus indica)",
+    "location": {
+      "address": "Parque Garcia Sanabria, Santa Cruz de Tenerife",
+      "latitude": 28.471747,
+      "longitude": -16.255051,
+      "neighbourhood": "Centro"
+    },
+    "verified_sources": [
+      "https://diariodeavisos.elespanol.com/2018/04/en-el-corazon-del-garcia-sanabria/",
+      "https://es.wikipedia.org/wiki/Parque_Garc%C3%ADa_Sanabria",
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "TAM_IND-2",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free public park, open daily (park hours not checked).",
+    "transport": "Edge of the city centre, about 12 minutes (1 km) on foot from Plaza de la Candelaria.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register TAM_IND-2 (28.471747,-16.255051). Diario de Avisos 2018 walk with Wildpret: he shows \"the most veteran of the whole park\", an old tamarind, and recalls the fruit being sold as sweets from the grandfather cart at the park side; Diario de Avisos also says a tamarind of the park is among the singular trees. He suggests a carob nearby may predate the park, when the land was farmed; the tamarind itself is not dated. Spanish Wikipedia: among the biggest and oldest specimens in the city. Park built 1926; no planting date for this tree, so age empty. Three register tamarinds exist (TAM_IND-1 far north-east at 28.4869,-16.2369, TAM_IND-3 at Viera y Clavijo); this row is the one in the park. Alive: lifecheck RECENT 2026-08-20. Flag: the register row cannot be tied to the tree Wildpret showed with certainty; both are in the park and only one tamarind is listed there.",
+    "photo_candidates": [],
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photo_verdict": "Two geotagged files viewed (search, none queued): both are sculptures in the park; no tamarind shown.",
+    "story": "The botanist who co-wrote Santa Cruz's catalogue of singular trees called an old tamarind the most veteran tree in the whole of Parque García Sanabria. Wolfredo Wildpret said so on a walk through the park with Diario de Avisos in 2018, and he remembered something better than a measurement. Its pods used to be sold as sweets from a cart at the side of the park, the cart people called the grandfather's.\n\nThere is one honest gap. The city register lists exactly one tamarind in the park, and this is it, but no source ties that register entry to the tree Wildpret pointed at in so many words. It is very probably the same tree. Probably is the right word.\n\nNobody has dated it either. The park opened in 1926, and Wildpret suggested that a carob nearby may be older than the park itself, from the years when the land was still farmed. He made no such claim for the tamarind. Spanish Wikipedia counts it among the biggest and oldest trees in the city, which is as far as the record goes. If you know its age, tell us.\n\nTamarind is a tropical tree grown for those brown, sticky, sweet-sour pods, which still end up in sweets around the world.\n\nThe park is free, at the edge of the city centre, about twelve minutes on foot from Plaza de la Candelaria.",
+    "how_to_recognise": "You can recognise it by the fine, feathery leaves and brown pods of a tamarind, the only one the city lists in the park. It stands about 100 metres south of the park's banyan."
+  },
+  {
+    "id": "sct_005",
+    "name": "Banyan of Parque García Sanabria",
+    "species": "Indian Banyan (Ficus benghalensis)",
+    "location": {
+      "address": "Parque Garcia Sanabria, Santa Cruz de Tenerife",
+      "latitude": 28.472657,
+      "longitude": -16.255028,
+      "neighbourhood": "Centro"
+    },
+    "verified_sources": [
+      "https://es.wikipedia.org/wiki/Parque_Garc%C3%ADa_Sanabria",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "FIC_BEG-1",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free public park, open daily (park hours not checked).",
+    "transport": "Edge of the city centre, about 12 minutes (1 km) on foot from Plaza de la Candelaria.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register FIC_BEG-1 (28.472657,-16.255028), register only for the species; Spanish Wikipedia says the park holds a Ficus collection donated by the Jardin de Aclimatacion de La Orotava, with some of the biggest and oldest trees in the city, and the park lists Ficus macrophylla with hanging roots by the bamboo path (Diario de Avisos 2018). No source found naming this banyan, no age, no girth. Alive: lifecheck RECENT 2026-02-28 (iNaturalist near the pin; casual observations 23 to 35 m away are other taxa, so species not corroborated). Flag: register only, species unconfirmed by a second source; photo candidates not judged and may show the neighbouring figs.",
+    "photo_candidates": [
+      {
+        "title": "File:At At Santa Cruz de Tenerife 2023 106.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_At_Santa_Cruz_de_Tenerife_2023_106.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:At At Santa Cruz de Tenerife 2023 105.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_At_Santa_Cruz_de_Tenerife_2023_105.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photo_verdict": "Two files viewed: a bronze sculpture by a pond and the pond itself; no banyan as subject.",
+    "story": "Parque García Sanabria's figs were a gift. According to Spanish Wikipedia, the park's collection of Ficus came from the Jardín de Aclimatación de La Orotava, the eighteenth-century garden at Puerto de la Cruz that also grows El Gran Ficus, and that collection includes some of the biggest and oldest trees in the city. Whether this banyan arrived with the gift, no source says.\n\nIt is on the city's register of singular trees as Ficus benghalensis, the banyan of India, a fig famous for dropping roots from its branches that thicken into pillars until one tree reads as a grove. That register entry is, for now, the whole of its paperwork. No second source names this tree, gives its girth or says when it was planted, and in a park with several kinds of fig a second opinion on the species would be welcome. If you know your figs, or know the tree, tell us.\n\nDo not mistake it for its neighbours. The park also keeps Moreton Bay figs with hanging roots beside the bamboo path, and they look the part just as well. The park opened in 1926, but the banyan's own start date is unknown, and the park's opening is no substitute for it.\n\nIt stands about 100 metres north of the park's old tamarind and a little west of the great kapok, so the three make a short loop. The park is free, about twelve minutes on foot from Plaza de la Candelaria.",
+    "how_to_recognise": "You can recognise it by the large, leathery oval leaves of a banyan. It stands about 100 metres north of the park's old tamarind and about 130 metres west of the kapok ringed by four palms."
+  },
+  {
+    "id": "sct_006",
+    "name": "Dragon Tree of Plaza del Chicharro",
+    "species": "Dragon Tree (Dracaena draco)",
+    "location": {
+      "address": "Plaza del Chicharro, Santa Cruz de Tenerife",
+      "latitude": 28.467616,
+      "longitude": -16.250793,
+      "neighbourhood": "Centro"
+    },
+    "verified_sources": [
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "DRA_DRA_dr-4",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free, open city-centre square.",
+    "transport": "City centre, about 4 minutes (330 m) on foot from Plaza de la Candelaria.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Plaza del Chicharro",
+      "radius_m": 40
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Register DRA_DRA_dr-4 (28.467616,-16.250793). Tenerife Weekly (2022): the route of singular trees names the dragon tree in the Plaza del Chicharro; the catalogue lists seven dragon trees in the municipality. No age, girth, height or planting date found anywhere. The register is the tree-level source; iNaturalist Dracaena draco observations 4 to 16 m from the pin (2023 to 2026, casual): https://www.inaturalist.org/observations/353315066, https://www.inaturalist.org/observations/331021419. Alive: iNaturalist 2026-04-25. Small square taken in at one glance; the plaza has the Chicharro monument (Commons files geotagged 1 m away). Flag: register plus route listing, no dimensions or age.",
+    "photo_candidates": [
+      {
+        "title": "File:At Santa Cruz de Tenerife 2019 084.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Santa_Cruz_de_Tenerife_2019_084.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:At Santa Cruz de Tenerife 2019 083.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Santa_Cruz_de_Tenerife_2019_083.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:At Tenerife 2022 329.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2022_329.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photo_verdict": "Three files viewed: the Chicharro fish monument is the subject and hides the dragon tree's trunk in each.",
+    "story": "Santa Cruz lists only seven dragon trees in its catalogue of singular trees, and this one shares a small square with a monument to a fish. Plaza del Chicharro is named for the chicharro, and the fish sculpture stands right beside the tree, close enough that it can hide the trunk from the wrong side of the square.\n\nThe tree is on the city's register and on the municipal route of singular trees, and that is most of what is written about it. There is no recorded height, no girth and no planting date. With this species the gap has a reason beyond missing paperwork. A dragon tree lays down no annual rings, so nobody can count years in its trunk. The island's Cabildo estimates the age of its listed dragon trees by counting the levels at which the crown has forked instead, and nobody has published that count for this one. If you have counted, or know when it was planted, tell us.\n\nDracaena draco is a native of the Canary Islands, and the island's monumental dragons stand in Icod de los Vinos, Tacoronte and La Orotava. This is the city's quieter version, a few minutes from the laurel figs of Plaza del Príncipe and the Moreton Bay figs of Plaza de San Francisco, which makes it an easy stop between the two.\n\nThe square is free and open, about four minutes on foot from Plaza de la Candelaria.",
+    "how_to_recognise": "You can recognise it by the dragon tree's stout trunk forking into a crown of sword-shaped leaves. It stands right beside the Chicharro monument, the fish sculpture in this small square."
+  },
+  {
+    "id": "sct_007",
+    "name": "Dragon Tree by the Iglesia de la Concepción",
+    "species": "Dragon Tree (Dracaena draco)",
+    "location": {
+      "address": "Calle Santo Domingo, Iglesia de Nuestra Senora de la Concepcion, Santa Cruz de Tenerife",
+      "latitude": 28.464795,
+      "longitude": -16.248726,
+      "neighbourhood": "Centro"
+    },
+    "verified_sources": [
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares",
+      "https://www.inaturalist.org/observations/179531299"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "DRA_DRA_dr-5",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free, open street and church surroundings.",
+    "transport": "City centre, about 5 minutes (400 m) on foot from Plaza de la Candelaria.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Plaza de la Iglesia / Iglesia de la Concepcion",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Register DRA_DRA_dr-5 (28.464795,-16.248727), beside the Concepcion church bell tower (Commons geotagged 7 m). Tenerife Weekly 2022: the fourth singular-tree route covers the Guimera Theatre and the Church of La Concepcion, naming the dragon tree, the Australian pine (CAS_EQU-1), the crest plant (EUP_LAC-1) and the Indian laurels (FIC_MIC-3/4, same square) around the church. iNaturalist research-grade Dracaena draco 6 m from the pin (2023-08-21, accuracy 23 m): https://www.inaturalist.org/observations/179531299. Alive: lifecheck RECENT 2026-09-03. No age or dimensions anywhere. Flag: register plus route listing. Square ring includes the two Indian laurels FIC_MIC-3/4 and the casuarina, possible companion trees if the writer wants a small group; catalogue says the church laurels are century-old centenarians only in general (the council says most Santa Cruz laurels are centenarian).",
+    "photo_candidates": [
+      {
+        "title": "File:At Tenerife 2026 674.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2026_674.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:At Tenerife 2026 675.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2026_675.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photo_verdict": "Four Mike Peel files near the pin viewed, all church interiors (nave, altar, pulpit); no dragon tree.",
+    "story": "A dragon tree from the Canaries' own flora stands at the foot of a church bell tower in the island's capital. The fourth route of the municipal walk, as Tenerife Weekly described it in 2022, runs between the Teatro Guimerá and the church and names four things around the square. There is this dragon tree, an Australian pine, a crested Euphorbia and a pair of Indian laurel figs.\n\nIt is one of seven dragon trees the city catalogue lists. Beyond its place on the register and the route, nobody has published a height, a girth or a planting date. That is not unusual for the species. A dragon tree lays down no annual rings, so its years cannot be counted in the trunk, and the island's Cabildo estimates the age of its listed dragons by counting how many times the crown has forked. For this one, nobody has counted in print. If you know its age, or when it was planted, tell us.\n\nThe square repays a few minutes beyond the dragon. The two Indian laurel figs share it, and the council says most of the city's laurels are past their hundredth year, though nobody has dated these two in particular.\n\nThe church surroundings are free and open, about five minutes on foot from Plaza de la Candelaria, and about 400 metres from the Moreton Bay figs of Plaza de San Francisco.",
+    "how_to_recognise": "You can recognise it by the dragon tree's stout trunk forking into a crown of sword-shaped leaves. It stands beside the bell tower of the Iglesia de la Concepción, with two laurel figs and an Australian pine in the same square."
+  },
+  {
+    "id": "sct_008",
+    "name": "River Red Gum of Parque de La Granja",
+    "species": "River Red Gum (Eucalyptus camaldulensis)",
+    "girth_cm": 920,
+    "location": {
+      "address": "Parque de La Granja, Santa Cruz de Tenerife",
+      "latitude": 28.464499,
+      "longitude": -16.26512,
+      "neighbourhood": "Salud-La Salle"
+    },
+    "verified_sources": [
+      "https://diariodeavisos.elespanol.com/2018/03/paseo-la-excelencia-vegetal-santa-cruz/",
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "EUC_CAM-1",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free public park.",
+    "transport": "About 1.2 km (15 minutes on foot) west of Plaza de la Candelaria; city buses serve the area.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register EUC_CAM-1 (28.464499,-16.265120). Diario de Avisos 2018 on the catalogue: the red gum of Parque de La Granja has 9.2 m \"at the base\" and 10.25 m \"in the trunk\" (a transcription oddity: trunk larger than base; the girth recorded here is the 9.2 m figure, unverified which measurement is which), is among the largest girths of the municipality and, with the Plaza del Principe laurels, is the tallest tree of the urban area (laurels 20 m; the red gum height itself not given). Tenerife Weekly 2022: La Granja route holds the red eucalyptus along with the ombu and gum arabic. Alive: lifecheck RECENT 2023-11-20 (older, flag). Species from register. Sanity: a 9-10 m girth red gum is large but plausible. The park was closed for works in some years; access not rechecked. Flag: one press figure with internal inconsistency, alive evidence 2023.",
+    "photo_candidates": [
+      {
+        "title": "File:At Tenerife 2019 689.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2019_689.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:At Santa Cruz de Tenerife 2019 012.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Santa_Cruz_de_Tenerife_2019_012.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Eucalipto_rojo%2C_%C3%A1rbol_singular%2C_Parque_La_Granja.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Mentxuwiki",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Eucalipto_rojo,_%C3%A1rbol_singular,_Parque_La_Granja.jpg",
+      "status": "approved"
+    },
+    "photo_verdict": "Whole red gum in sun, pale multi-stemmed trunk in a stone ring with its sign post, crown filling the frame; titled \"Eucalipto rojo, arbol singular, Parque La Granja\" (only one register red gum there); geotag about 100 m off the register pin, the name settles it; light OK.",
+    "story": "An Australian gum tree shares the title of tallest tree in urban Santa Cruz with a pair of figs planted in 1864. The municipal catalogue of singular trees, as Diario de Avisos reported it in 2018, names this river red gum in Parque de La Granja alongside the laurel figs of Plaza del Príncipe as the tallest in the urban area. The figs are given 20 metres. The gum's own height is not given, which leaves the comparison to your eye.\n\nIts girth is a small puzzle. The same report records 9.2 metres at the base and 10.25 metres in the trunk, which is the wrong way round for most trees, so one of the two figures is probably a slip in transcription. Either way it has one of the largest girths in the municipality.\n\nThe trunk is pale and divides into several stems, and it stands in a stone ring with a sign beside it. The route of singular trees through La Granja pairs it with an ombú from South America and a gum arabic tree. Nobody has published when it was planted or how old it is; if you know, tell us. The most recent dated sighting we can point to is from 2023, and a report from anyone who has stood under it since is welcome.\n\nThe park is free, about fifteen minutes on foot west of Plaza de la Candelaria, and city buses serve the area.",
+    "how_to_recognise": "You can recognise it by the pale trunk dividing into several stems, set in a stone ring with a sign beside it. It is the only river red gum the city lists in Parque de La Granja, about 140 metres from the ombú."
+  },
+  {
+    "id": "sct_009",
+    "name": "Ombú of Parque de La Granja",
+    "species": "Ombu (Phytolacca dioica)",
+    "location": {
+      "address": "Parque de La Granja, Santa Cruz de Tenerife",
+      "latitude": 28.463404,
+      "longitude": -16.264436,
+      "neighbourhood": "Salud-La Salle"
+    },
+    "verified_sources": [
+      "https://tenerifeweekly.com/2022/04/11/discovering-the-singular-trees-of-santa-cruz",
+      "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares",
+      "https://www.inaturalist.org/observations/318152778"
+    ],
+    "official_register": {
+      "name": "Arboles singulares, Ayuntamiento de Santa Cruz de Tenerife (open data, CC BY)",
+      "id": "PHY_DIO-1",
+      "url": "https://www.santacruzdetenerife.es/opendata/dataset/arboles-singulares"
+    },
+    "access": "Free public park.",
+    "transport": "About 1.2 km (15 minutes on foot) west of Plaza de la Candelaria.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register PHY_DIO-1 (28.463404,-16.264436). Tenerife Weekly 2022 (Cepsa Foundation press release on the singular-tree route): La Granja route runs from the ombu of South America to gum arabic and Australian red eucalyptus. iNaturalist Phytolacca dioica 8 m from the pin (2025-10-02, casual, accuracy 4 m): https://www.inaturalist.org/observations/318152778, which also serves as alive evidence and corroborates the pin to tree level but not at research grade. No age or girth. Flag: register plus route listing.",
+    "photo_candidates": [
+      {
+        "title": "File:At Tenerife 2019 690.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2019_690.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      },
+      {
+        "title": "File:At Santa Cruz de Tenerife 2019 013.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:At_Santa_Cruz_de_Tenerife_2019_013.jpg",
+        "note": "geotagged near the register pin; trunk not judged"
+      }
+    ],
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "photo_verdict": "Two files viewed: Washingtonia palms in front of a domed building; no ombu.",
+    "story": "The ombú looks like the oldest thing in any park it stands in, and botanically it is barely a tree. Phytolacca dioica is a giant herb from the South American pampas, with soft, water-filled wood rather than timber, and a base that swells and spreads with age until the trunk seems to melt into the ground. It grows fast, which is why a big one can look far older than it is.\n\nThis one is on the route of singular trees through Parque de La Granja. A 2022 description of the walk, from the Cepsa Foundation that backed it, runs from the ombú of South America to a gum arabic tree and the Australian red gum that shares the title of tallest tree in urban Santa Cruz. The city's register lists the ombú among its singular trees, and an iNaturalist observer recorded it, a few metres from the register's pin, in October 2025.\n\nThat is the extent of the written record. Nobody has published a girth, a height or a planting date for it, and for a species this deceptive no guess from its looks would be worth printing. If you know when it went in, tell us.\n\nThe red gum stands about 140 metres away, so the two make a single stop. The park is free, about fifteen minutes on foot west of Plaza de la Candelaria, at the far western end of a walk past the old trees of the centre.",
+    "how_to_recognise": "You can recognise it by the ombú's swollen base, spreading into the ground in folds and buttresses. It is the only ombú the city lists in Parque de La Granja, about 140 metres from the red gum in its stone ring."
+  }
+]

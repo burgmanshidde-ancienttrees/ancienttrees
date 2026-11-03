@@ -3,17 +3,17 @@
     {
       "name": "Drago de Igueste de Candelaria",
       "species": "Canary Islands Dragon Tree (Dracaena draco)",
-      "reason": "Confirmed to exist and to carry municipal protection status (listed on tenerife.es's own arboles-monumentales portal and mentioned by candelaria.es for the Igueste district), but no age, height or girth figure found this pass, and no second independent source beyond the Cabildo listing. candelaria.es itself failed to fetch (self-signed certificate error). Worth a second pass with a direct visit to candelaria.es via browser or a search of local Tenerife press."
+      "reason": "Confirmed to exist and to carry municipal protection status (listed on tenerife.es's own arboles-monumentales portal and mentioned by candelaria.es for the Igueste district), but no age, height or girth figure found this pass, and no second independent source beyond the Cabildo listing. candelaria.es itself failed to fetch (self-signed certificate error). Worth a second pass with a direct visit to candelaria.es via browser or a search of local Tenerife press. UPDATE 2026-11-02: tenerife.es ficha page timed out twice this pass; retry https://www.tenerife.es/w/drago-de-igueste-de-candelaria (the /w/<slug> pages are fetchable with a normal browser User-Agent and carry a Google Maps short link whose 7-decimal coordinate is tree-level)."
     },
     {
       "name": "El Almacigo (Pistacia atlantica singular specimen), El Sauzal",
       "species": "Pistacia atlantica",
-      "reason": "tenerife.es's own arboles-monumentales portal names 'El Almacigo, El Sauzal' as a designated monumental tree, but no page giving its specific age, height or exact address was found this pass; general species background (can exceed 1000 years) was found but not tied to this specimen. A different, better documented Almacigo exists in Arona (9m tall) per a general search, not the same tree."
+      "reason": "tenerife.es's own arboles-monumentales portal names 'El Almacigo, El Sauzal' as a designated monumental tree, but no page giving its specific age, height or exact address was found this pass; general species background (can exceed 1000 years) was found but not tied to this specimen. A different, better documented Almacigo exists in Arona (9m tall) per a general search, not the same tree. UPDATE 2026-11-02: ficha https://www.tenerife.es/w/el-almacigo: El Sauzal, urbanizacion Los Perales, PRIVATE land, 6 m tall, 120 cm perimeter, municipal protection, in an abandoned farm plot on the Barranco de Los Perales edge: private and small, do not ship."
     },
     {
       "name": "Sabina de la finca 'La Sabina', Buenavista del Norte",
       "species": "Juniperus (sabina)",
-      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet."
+      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet. UPDATE 2026-11-02: ficha https://www.tenerife.es/w/sabina-de-la-finca-la-sabina-: insular protection, about 400 years, PRIVATE finca, workers allow approach only to the base behind a 3 m wall: blocked on access (hard rule 10)."
     },
     {
       "name": "Palmera del Conde de las 7 fuentes, Buenavista del Norte",
@@ -23,18 +23,94 @@
     {
       "name": "Pino Canario 'Pino del Senor', Arafo",
       "species": "Canary Pine (Pinus canariensis)",
-      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet."
+      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet. UPDATE 2026-11-02: verified as tfe_008 in data/research/tenerife-verified.json."
     },
     {
       "name": "Pino Derrengado, Arico",
       "species": "Canary Pine (Pinus canariensis)",
-      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet. Note the same portal also separately lists a 'Pinos de Tea del Horno del Buey' cluster in Arico, which reads as a stand/ensemble rather than one collectible point, so it was not pursued as a candidate."
+      "reason": "Named on tenerife.es's monumental-tree portal but not researched further this pass; no age/dimensions/coordinates found yet. Note the same portal also separately lists a 'Pinos de Tea del Horno del Buey' cluster in Arico, which reads as a stand/ensemble rather than one collectible point, so it was not pursued as a candidate. UPDATE 2026-11-02: Cabildo ficha https://www.tenerife.es/w/pino-derrengado gives public land, insular protection, 500 m, height 4 m, perimeter 640 cm, on Carretera General del Sur km 59.100 opposite the Las Casitas junction (Luis Delgado area), crown flagged by wind to the SW; Tenerife Weekly 2021 says it sits in the El Bueno hamlet, hemmed in by power lines, and was a 2022 Spanish Tree of the Year candidate. No usable coordinate (the Cabildo Maps link is rounded to 28.2,-16.53), no OSM node, no Commons file, no recent photo: no photo or exact pin in reach."
     },
     {
       "name": "Palmeral de El Sauzal",
       "species": "Phoenix canariensis (Canary palm grove)",
       "reason": "Named on tenerife.es's monumental-tree portal but reads as a grove/ensemble rather than one collectible point with one obvious place to stand; would need a specific named individual palm within it to qualify, not pursued this pass."
+    },
+    {
+      "name": "Drago de San Miguel de Geneto (La Laguna)",
+      "species": "Dragon Tree (Dracaena draco)",
+      "reason": "Cabildo ficha https://www.tenerife.es/w/drago-de-san-miguel-de-geneto: municipal protection, public land, 10 m, 600 cm perimeter, beside the San Miguel de Geneto road opposite the Santa Rosa de Lima school, in the yard of an old hacienda beside the Germobanco Agricola de la Macaronesia, visible from the road. Cabildo Maps link 28.4777131,-16.3183947. Single source, lifecheck NONE, and unclear whether the yard is open (visible from road only): no alive check, access doubtful."
+    },
+    {
+      "name": "Dragon Tree of the Hijuela del Botanico (La Orotava), see tfe_009",
+      "species": "Dragon Tree (Dracaena draco)",
+      "reason": "Delivered as tfe_009 with an approximate pin; listed here too in case the dispatcher holds it for lack of photo or exact pin."
+    },
+    {
+      "name": "Til de los Pavos (La Orotava forest)",
+      "species": "Ocotea foetens (til), per name",
+      "reason": "OSM natural=tree node (28.3582898,-16.587631, natural_monument, note 'Centenarian tree') only; no Cabildo ficha found at /w/til-de-los-pavos, no second source, no size or age."
+    },
+    {
+      "name": "El Patriarca (Canary cedar, Juniperus cedrus), Las Canadas side",
+      "species": "Juniperus cedrus",
+      "reason": "OSM natural=tree node only (28.2690195,-16.5868306, natural_monument); no Cabildo ficha under the guessed slug and no second source found this pass. Worth a pass: likely in Teide National Park / Corona Forestal and would be a fine single-tree walk if sourced."
+    },
+    {
+      "name": "Drago de la Plaza de la Junta Suprema and Drago del Adelantado (La Laguna)",
+      "species": "Dragon Tree (Dracaena draco)",
+      "reason": "OSM nodes only (28.4909497,-16.3190064 with a Commons photo; 28.4876285,-16.3134853). No catalogue ficha or age found. Diario de Avisos Aug 2026 reports the two dragos in front of the Cathedral are only about 60 years old and one fell on 15 Aug 2026, and a historic drago on private land at the La Laguna entrance (calle Marzuca) was felled in Nov 2025, so La Laguna dragos need a fresh life check; the Seminario and calle del Agua dragos named by Spanish Wikipedia were not found in any source with data."
+    },
+    {
+      "name": "Drago de La Culata (Santiago del Teide)",
+      "species": "Dragon Tree (Dracaena draco)",
+      "reason": "OSM node only (28.363591,-16.7583894, natural_monument); no ficha found, no size, age or second source."
+    },
+    {
+      "name": "Pino de la Catadura (El Rosario)",
+      "species": "Canary Pine (Pinus canariensis)",
+      "reason": "Cabildo ficha: public, 15 m, 520 cm, 1165 m a.s.l. at a forest track junction, burned in the 1995 fire; found only as OSM node + ficha, no recent photo or alive check, reachable only by forest tracks (Ovejeros, Bailadero): not pursued, could be revisited as a lead with a pin (OSM 28.4199171,-16.3907037)."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "name": "Drago de San Francisco (Realejo Bajo, Los Realejos)",
+      "reason": "Dead: Spanish Wikipedia (Los Realejos) records it as gone since March 2026. OSM still carries a node (28.3833782,-16.5870274); remove nothing here, just never ship."
+    },
+    {
+      "name": "Drago de Sietefuentes / Las Siete Fuentes (Los Realejos)",
+      "reason": "Cabildo ficha: 13.6 m, 600 cm, 220-250 years, but PRIVATE land in an abandoned finca off the TF-5 km 41 (Maps shows an abandoned house): not publicly accessible."
+    },
+    {
+      "name": "Castanero de las Siete Pernadas (La Orotava, Aguamansa)",
+      "reason": "Cabildo ficha: chestnut 16 m, 1340 cm perimeter, municipal protection, one of the biggest in the Canaries, but on the private finca of the Arroyo family reached from a track opposite the Aguamansa Centro Ambiental (Maps 28.35983,-16.4927636): private, no stated public access. Worth a Hidde ask if the family or Cabildo can confirm viewing."
+    },
+    {
+      "name": "Dragos de la Finca El Rincon (La Orotava)",
+      "reason": "Cabildo ficha shows PRIVATE land (four dragos fused into one crown); not publicly accessible."
+    },
+    {
+      "name": "Dragos de Arico el Nuevo",
+      "reason": "Cabildo ficha: PRIVATE, growing in the yards of adjacent houses (about 200 and 225 years, 10 m, 600 cm): private homes."
+    },
+    {
+      "name": "Drago del Barrio de El Guincho (Garachico)",
+      "reason": "Cabildo ficha: private land beside an old house in the finca La Adelfa, 7 m, 276 cm, visible from the TF-142 only: private and small."
+    },
+    {
+      "name": "Drago de la Finca El Drago (Teno Alto, Buenavista)",
+      "reason": "Cabildo ficha: PRIVATE finca, lost branches in 2019; no height or girth."
+    },
+    {
+      "name": "Drago de la Hacienda de Los Ruices (Buenavista)",
+      "reason": "Cabildo ficha: PRIVATE abandoned orchard of the Hacienda de Taco, partly hidden by a palm."
+    },
+    {
+      "name": "Pino de la Pelota (Arico)",
+      "reason": "Cabildo ficha says PRIVATE land at 2175 m on the Arico-Las Canadas track; not a confirmed public place."
+    },
+    {
+      "name": "Sabina de la Maleza (Buenavista)",
+      "reason": "Cabildo ficha: PRIVATE abandoned orchard, regional protection, 8 m, 360 cm; not accessible."
+    }
+  ]
 }
