@@ -1,0 +1,47 @@
+{
+  "leads": [
+    {
+      "name": "Winchester Cathedral Close London planes (two, 27 m, over 200 years)",
+      "latitude": 51.061,
+      "longitude": -1.3137,
+      "reason": "Only source is a tree-care contractor's page (climberswaytreecare.co.uk/winchester-cathedral) saying two 27 m London planes in the cathedral grounds are each over 200 years old after aerial inspections; no second source, no location within the Close, no recognition line possible. Cathedral Close is open to walk through (Visit Winchester tree trail starts in the outer close).",
+      "precision": "approximate"
+    },
+    {
+      "name": "Cathedral Close lime, bull bay and tulip tree",
+      "latitude": 51.0608,
+      "longitude": -1.314,
+      "reason": "Visit Winchester tree trail (visitwinchester.co.uk/blog/winchester-in-bloom) names a small-leaved lime near the pedestrian entrance, a bull bay on the grass and a tulip tree in the Close; no ages or sizes, so no reason to walk to them yet. The trail PDF (Tree-Trail.pdf, 2.6 MB) has the stop list but could not be read here (no PDF tool); read it in a browser session.",
+      "precision": "approximate"
+    },
+    {
+      "name": "Abbey Gardens handkerchief tree, Judas tree and Japanese cedar",
+      "latitude": 51.0615,
+      "longitude": -1.3085,
+      "reason": "Visit Winchester tree trail names a large handkerchief tree, a Judas tree outside the City Mill and a Japanese cedar; planted specimens (handkerchief tree introduced 1900s), no age or girth source. Free public gardens. Needs sizes from the trail PDF.",
+      "precision": "approximate"
+    },
+    {
+      "name": "Winchester Cathedral yew, south side near west end",
+      "latitude": 51.0603,
+      "longitude": -1.3143,
+      "reason": "Ancient-yew.org lists a notable yew at the cathedral (396 cm girth at 50 cm, seen from the close) but the record is credited ATI/Woodland Trust data (ATI closed to us until April 2027), so NOT used; re-source from another survey later. Grid ref in that record SU4815329248.",
+      "precision": "approximate"
+    },
+    {
+      "name": "Hospital of St Cross Master's Garden London plane and yew",
+      "latitude": 51.0455,
+      "longitude": -1.303,
+      "reason": "NGS garden entry mentions a large London plane by the pond and a yew in the quadrangle; no size or age; paid entry. Church of England heritage database records no ancient/veteran trees for St Cross. Ancient-yew.org Hampshire inventory (Peter Norton) mentions a historic St Cross churchyard yew once among England's largest and 26 yews in the churchyard, but the PDF was not read, so nothing recorded (SU476277).",
+      "precision": "approximate"
+    },
+    {
+      "name": "Cathedral Close beech (large, buttressed roots, near the railings along the tree-covered walk)",
+      "latitude": 51.062,
+      "longitude": -1.313,
+      "reason": "Only a spiritual blog (gaiamethod.com, 2025) describes it; not a source. Look for a real source or a size.",
+      "precision": "approximate"
+    }
+  ],
+  "blocked": []
+}

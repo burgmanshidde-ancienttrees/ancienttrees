@@ -1,0 +1,37 @@
+{
+ "leads": [
+  {
+   "name": "Emmanuel College Oriental Plane",
+   "species": "Oriental Plane (Platanus orientalis)",
+   "latitude": 52.2012,
+   "longitude": 0.1233,
+   "reason": "Fellows' Garden described by the college as private; no source says visitors may enter or see it. Age uncertain: 1986 girth measure suggested planted c.1836, parks & gardens says 1835, Historic England probably early C19. Needs an access source (college visitor page, contact/get-in-touch) before it ships. Coordinate approximate (college grounds).",
+   "sources": [
+    "https://www.emma.cam.ac.uk/explore/gardens",
+    "https://parksandgardens.org/places/emmanuel-college-cambridge-fellows-garden"
+   ]
+  },
+  {
+   "name": "Botanic Garden Tulip Tree (Tree Register champion)",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "latitude": 52.19361,
+   "longitude": 0.12722,
+   "reason": "Garden says Tree Register champion but no location, size or page found; need the Tree Register figures."
+  },
+  {
+   "name": "Botanic Garden Cedars (Main Walk crossroads)",
+   "species": "Atlas Cedar (Cedrus atlantica)",
+   "latitude": 52.19361,
+   "longitude": 0.12722,
+   "reason": "Cedar of Lebanon split in 2018 and was removed; the Atlas cedar opposite is original 1840s planting per garden, but no measurements; replacement is young. Lead only."
+  },
+  {
+   "name": "Botanic Garden Single-leaf Nut Pine",
+   "species": "Single-leaf Nut Pine (Pinus monophylla)",
+   "latitude": 52.19361,
+   "longitude": 0.12722,
+   "reason": "Champion, 11.8 m, Old Pinetum, one of earliest plantings, but no date or girth; garden page only. Lead."
+  }
+ ],
+ "blocked": []
+}

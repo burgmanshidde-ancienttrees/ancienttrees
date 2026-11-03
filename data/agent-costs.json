@@ -4,6 +4,46 @@
     "2026-11-03": [
       {
         "date": "2026-11-03",
+        "kind": "verify",
+        "target": "windsor",
+        "tokens": 130887,
+        "trees": 0,
+        "note": "0 verified: Great Park oaks have no placeable trunk with a second source; King Offa's Oak, Royal Lodge and Home Park private; Conqueror's and Signing Oaks to leads (a Geograph tag search is the next angle). Stop this angle."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "verify",
+        "target": "canterbury+winchester",
+        "tokens": 179109,
+        "trees": 0,
+        "note": "5 verified and held for the pace: Canterbury's four baobab planes (all flagged), Mottisfont's great plane (moved out of Winchester to its own place). Winchester itself 0, six leads without sizes."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "verify",
+        "target": "stratford-upon-avon+oxford",
+        "tokens": 164363,
+        "trees": 0,
+        "note": "3 verified and held: New Place and Hall's Croft mulberries, Balliol mulberry (oxf_006). Worcester catalpa blocked (guided tours only); Magdalen plane may be gone."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "verify",
+        "target": "cambridge",
+        "tokens": 126403,
+        "trees": 0,
+        "note": "4 Botanic Garden trees verified and held (cam_006 to cam_009, garden-centroid pins); colleges and Grantchester not reached after a session limit."
+      },
+      {
+        "date": "2026-11-03",
+        "kind": "write",
+        "target": "canterbury+cambridge+oxford+stratford-upon-avon+mottisfont",
+        "tokens": 167566,
+        "trees": 0,
+        "note": "12 written, 0 held, 1 Geograph photo approved (cbt_001). Held for the pace; scripts/build_uk_south.py publishes them, preflight dry run fails only on pace. Whole pass about 768k tokens, about 64k per tree."
+      },
+      {
+        "date": "2026-11-03",
         "kind": "write",
         "target": "gran-canaria+azores+angra-do-heroismo+sintra+algarve-east (READY leads and held written trees)",
         "tokens": 130000,

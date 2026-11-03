@@ -1,0 +1,36 @@
+{
+ "leads": [
+  {
+   "name": "Mulberry, New Place Great Garden",
+   "species": "Mulberry (Morus sp.)",
+   "latitude": 52.1893,
+   "longitude": -1.7081,
+   "location_precision": "approximate",
+   "reason": "PROMOTED to sua_001 in data/research/stratford-upon-avon-verified.json (SBT page, 'around 270 years'). The earlier note about an 1862 planting was wrong: 1862 is the date of a chair. The 1969 Peggy Ashcroft mulberry in the same garden is a second tree of the same site, not a separate point (split in 2013)."
+  },
+  {
+   "name": "Cedar of Lebanon (from Mount Ararat, 1870s), Holy Trinity churchyard",
+   "species": "Cedar of Lebanon (Cedrus libani)",
+   "latitude": 52.1859,
+   "longitude": -1.7074,
+   "location_precision": "approximate",
+   "reason": "Only a search-result summary of Our Warwickshire HER record (ourwarwickshire.org.uk catalogue_her/holy-trinity-churchyard-stratford, which returned 403 to automation) mentions a cedar donated in the 1870s plus yews. Not seen on the page, so a pointer only. Needs the record read in a browser, a second source and a life check. Search summary only so far; the cedar donated 1870s is a planting claim, not an age of this tree."
+  },
+  {
+   "name": "Veteran oaks and lime avenue, Charlecote Park (day trip, about 6 km east of Stratford)",
+   "species": "English Oak (Quercus robur)",
+   "latitude": 52.2,
+   "longitude": -1.6108,
+   "location_precision": "approximate",
+   "reason": "Warwickshire World / Leamington Courier report a volunteer veteran-tree walk and an ancient oak 'favourite of visitors' (search summary only, article body not read: 403). No girth, age or single trunk located. Needs the National Trust tree-walk leaflet naming trunks. Transport: no direct train; local bus, check before labelling."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Lime avenue, Holy Trinity churchyard",
+   "latitude": 52.1859,
+   "longitude": -1.7074,
+   "reason": "An avenue, not one collectible point; one blog says it was replanted in the early 1990s."
+  }
+ ]
+}

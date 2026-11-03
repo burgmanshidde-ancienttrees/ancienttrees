@@ -1,0 +1,93 @@
+{
+  "leads": [
+    {
+      "name": "Conqueror's Oak (King's Oak), Windsor Great Park",
+      "species": "English Oak (Quercus robur)",
+      "latitude": null,
+      "longitude": null,
+      "reason": "No current girth or fix seen on a fetched page. Wikipedia places it in Cranbourne Park; old texts give conflicting girth (26 ft at 3 ft; 38 ft) and age 1,000 to 1,200 years. Needs a second source, a coordinate and an access check (Cranbourne Gate side is open, but King Offa's Oak nearby is in a private area).",
+      "sources_seen": [
+        "https://en.wikipedia.org/wiki/Windsor_Great_Park",
+        "https://englandspuzzle.com/windsor-great-parks-famous-oak-trees/"
+      ]
+    },
+    {
+      "name": "Signing Oak, Windsor Great Park",
+      "species": "English Oak (Quercus robur)",
+      "latitude": null,
+      "longitude": null,
+      "reason": "Queen's Green Canopy '70 Ancient Trees' page says 900 years old, Windsor Great Park. No girth, no location, no access statement. Needs a second source and a position. A search snippet of a Sketchfab model page gives about 1,000 years and 9.94 m girth with hollow trunk (not a source).",
+      "sources_seen": [
+        "https://shop.queensgreencanopy.org/ancient-trees-and-ancient-woodland/70-ancient-trees/"
+      ]
+    },
+    {
+      "name": "Old pollard oak at Forest Gate, Windsor Great Park",
+      "species": "English Oak (Quercus robur)",
+      "latitude": null,
+      "longitude": null,
+      "reason": "Only a search snippet of a British Library album catalogue (19th-century, 26 ft 10 in at 5 ft, probable age 800 years); not a fetched page, and no evidence it still stands. Needs a modern source and a position.",
+      "sources_seen": [
+        "https://searcharchives.bl.uk/catalog/032-003302279"
+      ]
+    },
+    {
+      "name": "Pollard oak on Smith's Lawn, Windsor Great Park",
+      "species": "English Oak (Quercus robur)",
+      "latitude": null,
+      "longitude": null,
+      "reason": "Same British Library snippet (31 ft 9 in at 5 ft, probable age 800 years), not fetched, 19th-century, no position; Smith's Lawn is a Guards Polo area, access not checked.",
+      "sources_seen": [
+        "https://searcharchives.bl.uk/catalog/032-003302279"
+      ]
+    },
+    {
+      "name": "Savill Garden / Valley Gardens / Chapel Wood champion trees",
+      "species": "various",
+      "latitude": null,
+      "longitude": null,
+      "reason": "Tree Register (2021 news) says nearly 400 champions, most open to visitors, but no individual tree with figures was found. Next: TROBI champion records by name, or the garden's own tree trail. Garden is paid entry (Savill) / free (Valley Gardens within the open park).",
+      "sources_seen": [
+        "https://www.treeregister.org/news/story/autumn-news-2021/"
+      ]
+    }
+  ],
+  "blocked": [
+    {
+      "name": "King Offa's Oak",
+      "reason": "Private area of the estate, no public access (Wikipedia, search results). Hard rule 10. Facts for the record only: pollarded Pedunculate Oak, girth 11.18 m (1998), height 16.5 m (2017), claimed 1,300 to 1,500 years.",
+      "sources_seen": [
+        "https://en.wikipedia.org/wiki/King_Offa%27s_Oak"
+      ]
+    },
+    {
+      "name": "Herne's Oak, Home Park, Windsor",
+      "reason": "Home Park is private, no general public access; current tree is a 20th-century replacement of the legendary oak (planting story conflicting). Not a public tree and not ancient.",
+      "sources_seen": [
+        "https://en.wikipedia.org/wiki/Home_Park,_Windsor",
+        "https://berkshirehistory.com/legends/herne03.html"
+      ]
+    },
+    {
+      "name": "Pin Oak, Home Park (Tree Register champion, 29.5 m x 424 cm)",
+      "reason": "High-security area of Home Park, private.",
+      "sources_seen": [
+        "https://www.treeregister.org/news/story/autumn-news-2021/"
+      ]
+    },
+    {
+      "name": "Royal Lodge champions (Dawyck Beech, Magnolia kobus, Nothofagus)",
+      "reason": "Private grounds of Royal Lodge.",
+      "sources_seen": [
+        "https://www.treeregister.org/news/story/autumn-news-2021/"
+      ]
+    },
+    {
+      "name": "King George VI Coronation Grove oaks, Windsor Great Park",
+      "reason": "Grove planted 19 June 1937, not a collectible single tree and not ancient (plaque on Geograph 7918227, SU 9726 7160).",
+      "sources_seen": [
+        "https://www.geograph.org.uk/photo/7918227"
+      ]
+    }
+  ]
+}

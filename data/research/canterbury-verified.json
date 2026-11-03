@@ -1,0 +1,190 @@
+[
+  {
+    "id": "cbt_001",
+    "name": "Westgate Gardens Baobab Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 200 years",
+    "age_min": 150,
+    "age_max": 250,
+    "age_basis": "source",
+    "girth_cm": 760,
+    "height_m": null,
+    "location": {
+      "address": "Westgate Gardens, beside Tower House, Canterbury CT1 2DD",
+      "latitude": 51.280795,
+      "longitude": 1.0743062,
+      "neighbourhood": "St Mildred's"
+    },
+    "verified_sources": [
+      "https://www.parksandgardens.org/places/westgate-gardens-canterbury",
+      "https://www.canterbury.co.uk/attractions/westgate-gardens-140830/",
+      "https://www.canterbury-archaeology.org.uk/plane-tree",
+      "https://www.kentonline.co.uk/canterbury/news/secrets-behind-ancient-baobabs-210788/",
+      "https://www.openstreetmap.org/node/11951524381",
+      "https://commons.wikimedia.org/wiki/Category:Platanus_orientalis_by_Tower_House,_Canterbury"
+    ],
+    "access": "Free. Westgate Gardens is a public park beside the River Stour; no entry fee. Opening hours not confirmed in sources seen.",
+    "transport": "About 5 minutes' walk from Canterbury West station; 8 minutes from Canterbury East.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "recognise": "The enormous swollen, bulging trunk beside Tower House at the river end of the gardens; it is the biggest of the knobbly plane trees, with a sign on the ground naming it an Oriental Plane.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Ancient_tree_by_Tower_House_-_geograph.org.uk_-_2908424.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Oast House Archive",
+      "attribution_url": "https://www.geograph.org.uk/profile/10354",
+      "status": "approved"
+    },
+    "photo_candidates": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Platanus_orientalis_by_Tower_House%2C_Canterbury_2024-12-29.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Platanus_orientalis_by_Tower_House,_Canterbury_2024-12-29.jpg",
+        "license": "CC0",
+        "attribution": "Andy Li",
+        "attribution_url": "",
+        "why_this_trunk": "Commons category 'Platanus orientalis by Tower House, Canterbury', 2024-12-29; same tree as the OSM node. Pixels not yet viewed."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Ancient_tree_by_Tower_House_-_geograph.org.uk_-_2908424.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Ancient_tree_by_Tower_House_-_geograph.org.uk_-_2908424.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Oast House Archive",
+        "attribution_url": "https://www.geograph.org.uk/photo/2908424",
+        "why_this_trunk": "Titled 'Ancient tree by Tower House' (Geograph 2012). Pixels not yet viewed."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Platanus_orientalis_-_Westgate_Gardens_Canterbury_GB.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Platanus_orientalis_-_Westgate_Gardens_Canterbury_GB.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "PastorP56",
+        "attribution_url": "",
+        "why_this_trunk": "Named for the species in Westgate Gardens, 2017; caption gives circumference about 10 m. Pixels not yet viewed."
+      }
+    ],
+    "verify_notes": "Alive: OSM natural=tree node 11951524381 with species=Platanus orientalis and survey:date 2024-06-01 (lat/lon above, placed on the trunk); Commons photos dated 2024-12-29; Visit Canterbury and CHAS describe it as standing. Age: Visit Canterbury and Parks & Gardens say about 200 years ('over 200'); the Westgate Gardens trust tree trail calls it the largest and believed oldest of its kind in the UK (a local claim, no champion register seen, do not claim UK oldest as fact). Girth: Parks & Gardens gives a 7.6 m (25 ft) wide trunk; a Commons caption (PastorP56, 2017) says circumference about 10 m; recorded 760 cm as the cited figure, conflict stated. Species naming is contested: CHAS calls it Oriental Plane, plaque at the Cathedral says Oriental plane; the Natural History Museum identification service (via the Baobab Planes blog) calls it a 'baobab plane', a London plane form with swollen trunk, possibly viral; KentOnline says planted as London planes. Kept as Oriental Plane (Commons/OSM/CHAS). Local theory (KentOnline, Sadie Palmer, enthusiast report) that it is the parent of the seven baobab planes in the city, and that nurseryman William Masters (1796-1874) planted them; unproven. Folklore: trunk rumoured to have swallowed a bench. Single-cluster partner of cbt_002 to cbt_005. SPECIES DISPUTED: CHAS (Feb 2014 update) quotes the Natural History Museum identification service concluding the Canterbury baobab planes are a clone of the London Plane (Platanus x hispanica) with a viral infection; OSM node and Commons category say Platanus orientalis; Cathedral plaque says Oriental plane. Recorded as London Plane per NHM; flagged for the species conflict only, existence/pin/life are solid. SPECIES DISPUTED: CHAS (Feb 2014 update) quotes the Natural History Museum identification service concluding the Canterbury baobab planes are a clone of the London Plane (Platanus x hispanica) with a viral infection; OSM node and Commons category say Platanus orientalis; Cathedral plaque says Oriental plane. Recorded as London Plane per NHM; flagged for the species conflict only, existence, pin and life are solid.",
+    "story": "Canterbury has a plane tree that people keep comparing to an African baobab, and nobody quite agrees what it is. The trunk beside Tower House in Westgate Gardens bulges out like a barrel, 7.6 metres round by the figure Parks and Gardens gives and closer to ten by one photographer's caption on Wikimedia Commons.\n\nThe sign on the ground calls it an Oriental Plane, and so does the city's archaeological society. The Natural History Museum's identification service, asked about Canterbury's swollen planes in 2014, concluded they are a clone of the London Plane carrying a viral infection. The sources still differ, and both names are in use.\n\nVisit Canterbury and Parks and Gardens put it at about 200 years old. The gardens' own tree trail calls it the largest and probably the oldest of its kind in the country, a local claim that no national register we have seen backs up. Local theory goes further still, holding that this is the parent of the city's other baobab planes, all planted by the nurseryman William Masters, who lived from 1796 to 1874. Nobody has proved it.\n\nNor has anybody proved the rumour that the trunk once swallowed a bench. Standing beside it, you can see how that story got started. The gardens run along the River Stour, free to enter, five minutes on foot from Canterbury West.",
+    "how_to_recognise": "You can recognise it by the trunk, swollen like a barrel and the biggest of the knobbly planes here, with a sign on the ground naming it an Oriental Plane. It stands beside Tower House at the river end of Westgate Gardens.",
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Platanus_orientalis_by_Tower_House%2C_Canterbury_2024-12-29.jpg",
+        "license": "CC0",
+        "attribution": "Andy Li",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Onthewings",
+        "status": "approved"
+      }
+    ]
+  },
+  {
+    "id": "cbt_002",
+    "name": "Canterbury Castle Baobab Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 150 to 200 years",
+    "age_min": 140,
+    "age_max": 210,
+    "age_basis": "source",
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Canterbury Castle, Castle Row / Gas Street, Canterbury CT1 2PR",
+      "latitude": 51.2758,
+      "longitude": 1.0748,
+      "neighbourhood": "St Mildred's"
+    },
+    "verified_sources": [
+      "https://www.canterbury-archaeology.org.uk/trees-via-street-scenes",
+      "https://www.kentonline.co.uk/canterbury/news/secrets-behind-ancient-baobabs-210788/",
+      "http://elmparadise.blogspot.com/2017/05/the-baobab-planes-of-canterbury.html"
+    ],
+    "access": "Free. The castle ruins and their grounds are a public open space beside Gas Street; not checked for opening hours.",
+    "transport": "About 5 minutes' walk from Canterbury West station.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "The knobbly, swollen-trunked plane at the north-east corner of the castle ruin, beside Gas Street.",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "photo_candidates": [],
+    "verify_notes": "Position is the castle's north-east corner as CHAS and the Baobab Planes blog describe it, placed from the castle centre point (OSM way 121814606, 51.27566, 1.07458); not a tree fix. Photos on CHAS street-scenes page (images 5 and 6). Species: CHAS first called these Oriental Planes (the Cathedral plaque says 'Oriental plane'); the Natural History Museum identification service (Feb 2014, quoted by CHAS) concluded they are a clone of the London Plane (Platanus x hispanica) with a viral infection, common name Baobab Plane. Recorded under the repo's London Plane name; species disputed. Age: no archive record; plaque at the Cathedral tree says supplied in the 1820s by nurseryman William Masters, but a CHAS member says the plaque rests on the CHAS website text, not archives; KentOnline: planted more than 150 years ago; blog estimate mid-19th century. Broad range kept. Alive: CHAS pages (live 2026) and KentOnline Aug 2019 list it as standing; no dated 2024+ photo seen, so flagged. Part of a set of seven baobab planes across Canterbury (CHAS) that forms a cross on the map (a theory by Sadie Palmer; unproven).",
+    "story": "Mark Canterbury's seven baobab planes on a map and, by one local theory, they form a cross. This is one of the arms, a knobbly, swollen-trunked plane at the north-east corner of the castle ruins, beside Gas Street. The theory belongs to the local enthusiast Sadie Palmer, and nobody has shown that the pattern was planned rather than a coincidence of where planes happened to be put.\n\nWhat is not in doubt is the trunk. Like its relatives in Westgate Gardens and the cathedral precincts, it bulges as though something inside were pushing outward. The city's archaeological society first called these trees Oriental Planes; in 2014 the Natural History Museum's identification service told them the set is a clone of the London Plane with a viral infection. The sources still disagree on the name.\n\nNo archive records when it went in. KentOnline says the baobab planes were planted more than 150 years ago, and a tree blog that toured them guesses the middle of the 19th century, so the range here stays wide.\n\nThe most recent accounts of it standing are the archaeological society's pages and a 2019 newspaper piece. If you walk past and it is gone, or still very much there, tell us. The castle grounds are free and five minutes from Canterbury West.",
+    "how_to_recognise": "You can recognise it by the knobbly, swollen trunk, unlike any ordinary plane. It stands at the north-east corner of the castle ruins, beside Gas Street."
+  },
+  {
+    "id": "cbt_003",
+    "name": "Cathedral Precincts Baobab Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 150 to 200 years",
+    "age_min": 140,
+    "age_max": 210,
+    "age_basis": "source",
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Canterbury Cathedral precincts, near the Memorial Garden and Son of Man statue, Canterbury CT1 2EH",
+      "latitude": 51.2791,
+      "longitude": 1.0836,
+      "neighbourhood": "Cathedral Quarter"
+    },
+    "verified_sources": [
+      "https://www.canterbury-archaeology.org.uk/trees-via-street-scenes",
+      "https://www.kentonline.co.uk/canterbury/news/secrets-behind-ancient-baobabs-210788/",
+      "http://elmparadise.blogspot.com/2017/05/the-baobab-planes-of-canterbury.html"
+    ],
+    "access": "Paid entry: the precincts and cathedral are ticketed (canterbury-cathedral.org); the cathedral's grounds page places the plane just outside the Memorial Garden. Check current ticket terms.",
+    "transport": "About 12 minutes' walk from Canterbury East or West station.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "The plane with a plaque naming it an Oriental plane, just outside the Memorial Garden near the Son of Man statue, with a swollen trunk and bulging bark.",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "photo_candidates": [],
+    "verify_notes": "Position is approximate, from the Baobab Planes blog (south-east of the cathedral) and the cathedral grounds page; precincts are large, so no small-site claim. Cathedral Archive recognises Masters for planting it (KentOnline). Species: CHAS first called these Oriental Planes (the Cathedral plaque says 'Oriental plane'); the Natural History Museum identification service (Feb 2014, quoted by CHAS) concluded they are a clone of the London Plane (Platanus x hispanica) with a viral infection, common name Baobab Plane. Recorded under the repo's London Plane name; species disputed. Age: no archive record; plaque at the Cathedral tree says supplied in the 1820s by nurseryman William Masters, but a CHAS member says the plaque rests on the CHAS website text, not archives; KentOnline: planted more than 150 years ago; blog estimate mid-19th century. Broad range kept. Alive: CHAS pages (live 2026) and KentOnline Aug 2019 list it as standing; no dated 2024+ photo seen, so flagged. Part of a set of seven baobab planes across Canterbury (CHAS) that forms a cross on the map (a theory by Sadie Palmer; unproven).",
+    "location_site": null,
+    "story": "The plaque on this plane names a date and a nurseryman, and the evidence behind it may be a website. It says the tree is an Oriental plane, supplied in the 1820s by William Masters, a Canterbury nurseryman who lived from 1796 to 1874. The Cathedral Archive credits Masters with planting it, according to KentOnline. But a member of the city's archaeological society has said the plaque's wording rests on text from the society's own website rather than on any archive record.\n\nSo the 1820s date is a claim, not a fact. KentOnline puts the baobab planes at more than 150 years old and one tree blog suggests the middle of the 19th century. The species is contested too. The plaque says Oriental; the Natural History Museum's identification service, consulted in 2014, concluded that Canterbury's swollen planes are a clone of the London Plane carrying a viral infection.\n\nWhatever its name, the trunk explains the nickname, swollen and bulging like a baobab's. It stands in the cathedral precincts just outside the Memorial Garden, near the Son of Man statue, one of seven such planes scattered across the city. The precincts are ticketed, so check the cathedral's current terms before you go. It is about twelve minutes on foot from either station.",
+    "how_to_recognise": "You can recognise it by the plaque naming it an Oriental plane and by the swollen, bulging trunk. It stands just outside the Memorial Garden in the cathedral precincts, near the Son of Man statue.",
+    "paid_entry": true
+  },
+  {
+    "id": "cbt_004",
+    "name": "Old Dover Road Baobab Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 150 to 200 years",
+    "age_min": 140,
+    "age_max": 210,
+    "age_basis": "source",
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Old Dover Road near Vernon Place, Canterbury CT1 3HG",
+      "latitude": 51.2748,
+      "longitude": 1.084,
+      "neighbourhood": "Longport"
+    },
+    "verified_sources": [
+      "https://www.canterbury-archaeology.org.uk/trees-via-street-scenes",
+      "https://www.kentonline.co.uk/canterbury/news/secrets-behind-ancient-baobabs-210788/",
+      "http://elmparadise.blogspot.com/2017/05/the-baobab-planes-of-canterbury.html"
+    ],
+    "access": "Free. A street tree on the public footway beside a bus stop.",
+    "transport": "Old Dover Road bus stop at the tree; about 10 minutes' walk from Canterbury East station.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "The swollen plane next to the bus stop on Old Dover Road, a short walk from Vernon Place.",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "photo_candidates": [],
+    "verify_notes": "Position is approximate: Vernon Place geocodes to 51.27518, 1.08377 (Nominatim); the tree stands on Old Dover Road close by per the Baobab Planes blog ('next to a bus stop'). Not a tree fix; a visitor should check the exact stretch. Species: CHAS first called these Oriental Planes (the Cathedral plaque says 'Oriental plane'); the Natural History Museum identification service (Feb 2014, quoted by CHAS) concluded they are a clone of the London Plane (Platanus x hispanica) with a viral infection, common name Baobab Plane. Recorded under the repo's London Plane name; species disputed. Age: no archive record; plaque at the Cathedral tree says supplied in the 1820s by nurseryman William Masters, but a CHAS member says the plaque rests on the CHAS website text, not archives; KentOnline: planted more than 150 years ago; blog estimate mid-19th century. Broad range kept. Alive: CHAS pages (live 2026) and KentOnline Aug 2019 list it as standing; no dated 2024+ photo seen, so flagged. Part of a set of seven baobab planes across Canterbury (CHAS) that forms a cross on the map (a theory by Sadie Palmer; unproven).",
+    "story": "One of Canterbury's oddest trees is a street tree, standing on the pavement of Old Dover Road next to a bus stop. Most people who pass it are waiting for the bus. It is one of the city's seven baobab planes, named for trunks that swell outward like the African tree.\n\nWhat exactly it is remains disputed. The city's archaeological society first called the set Oriental Planes, and the plaque on the cathedral's tree still does. In 2014 the Natural History Museum's identification service concluded they are a clone of the London Plane with a viral infection. Both names circulate.\n\nNobody has found a record of the planting. KentOnline says the baobab planes went in more than 150 years ago, and a tree blog that went looking for all seven places them in the middle of the 19th century. Both are estimates.\n\nThe pin is placed near Vernon Place, so look along that stretch for the bus stop and the swollen trunk beside it. The last published accounts of it standing date from 2019 and the society's current pages; tell us if you find it changed. It is about ten minutes on foot from Canterbury East.",
+    "how_to_recognise": "You can recognise it by the swollen, bulging trunk on the public footway. It stands next to the bus stop on Old Dover Road, a short walk from Vernon Place."
+  }
+]

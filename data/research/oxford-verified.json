@@ -1,0 +1,52 @@
+[
+  {
+    "id": "oxf_006",
+    "name": "The Balliol Black Mulberry",
+    "species": "Black Mulberry (Morus nigra)",
+    "age_estimate": "over 400 years",
+    "age_min": 400,
+    "age_max": 420,
+    "age_basis": "source",
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Garden Quad, Balliol College, Broad Street, Oxford OX1 3BJ",
+      "latitude": 51.7541,
+      "longitude": -1.2557,
+      "neighbourhood": "City centre"
+    },
+    "verified_sources": [
+      "https://www.moruslondinium.org/map/832-Balliol-Garden-Quad-1609",
+      "https://moruslondinium.org/research/2023-autumn-2",
+      "https://www.balliol.ox.ac.uk/visit-balliol/visitor-information"
+    ],
+    "access": "Paid entry to Balliol College, 10am to 5pm or dusk, adults 6 GBP, concessions 3 GBP (college visitor page, fetched 2026-11-03); closed at times for college events, telephone 01865 277777 on the day; groups limited in term time.",
+    "transport": "City centre, Broad Street; about 10 minutes' walk from Oxford railway station, 5 minutes from Carfax bus stops.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Garden Quad, Balliol College",
+      "radius_m": 40
+    },
+    "curation_status": "flagged",
+    "recognise": "In the south-east corner of the Garden Quad beside the gardeners' sheds: a low, hollow, mostly collapsed old trunk that still leafs and fruits, with a notice saying it was planted around 1609. Two younger scion mulberries stand elsewhere in the same quad.",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "photo_candidates": [],
+    "verify_notes": "Morus Londinium (The Conservation Foundation / Tree Register Mulberry survey) site record 832: 'Oldest M Nigra in Oxford?', OS grid SP 51316 06511, 400+ year-old Morus nigra in the SE corner of the Garden Quad by the gardeners' sheds; a notice claims planted around 1609 as part of James I's silk initiative; 'mostly collapsed and hollow but still producing leaves and fruit' (observed 29/11/2023). Survey notes 5 mulberries at Balliol in total: two others in Garden Quad and two in the Fellows' Garden, said to be scions of this tree; one trailing branch appears to be layering. Same project's 2023 research post (18 Dec 2023, 'Balliol mulberries revisited'): Balliol claims the oldest black mulberry in the city, planted around 1609-11; the tree is 'hanging on with just a few slim slivers of its original bole'; still fruits plenty; origin of scions. Age is the college's own claim as relayed by the survey (the notice text itself was not seen), flagged accordingly. The survey record gives 'largest girth 300' for the site but states 'no meaningful girth' for this tree, so girth is left empty. Alive: observed Nov 2023, two sources; no newer observation seen. Merton College also has a black mulberry of about the same date (not examined). Not the same tree as oxf_003 (white mulberry in the Botanic Garden, 51.7507,-1.2475). Pin from the survey's OS grid reference, converted by hand to the Balliol Garden Quad; approximate, small named site.",
+    "story": "Almost nothing is left of this trunk, and the tree still fruits plenty. Balliol's black mulberry is down to a few thin slivers of its original wood, hollow and mostly collapsed in the south-east corner of the Garden Quad, yet the mulberry surveyors who visited in November 2023 found it in leaf and bearing fruit.\n\nA notice beside it says it was planted around 1609, as part of James I's attempt to give England a silk industry by planting mulberries for silkworms. The college claims it as the oldest black mulberry in Oxford, planted somewhere between 1609 and 1611. That date is the college's claim, and no planting record has been published to back it. Merton College has a black mulberry said to be of about the same age, so the city's crown is not settled.\n\nIf the date holds, the tree was some thirty years old when Charles I made Oxford his capital in the Civil War.\n\nIt has also made sure of its future. Balliol has five mulberries, and the four younger ones, two elsewhere in this quad and two in the Fellows' Garden, are said to be scions of this tree. One of its trailing branches appears to be rooting where it touches the ground.\n\nThe college is open to paying visitors most days.",
+    "how_to_recognise": "You can recognise it by the low, hollow, mostly collapsed trunk that still leafs and fruits, with a notice saying it was planted around 1609. It stands in the south-east corner of the Garden Quad, by the gardeners' sheds.",
+    "best_time": {
+      "months": [
+        7,
+        8
+      ],
+      "kind": "fruit",
+      "label": "July and August, when the old wreck of a trunk is still heavy with dark fruit"
+    },
+    "paid_entry": true
+  }
+]

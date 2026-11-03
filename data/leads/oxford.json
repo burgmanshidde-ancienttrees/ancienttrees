@@ -35,12 +35,53 @@
    "location_precision": "approximate",
    "reason": "Commons geograph photo (CC BY-SA 2.0, ceridwen, geograph 735624) describes it as a magnificent old tree overshadowing the church entrance, with condition anxieties in 2008. Photo is from about 2008 and the tree is not shown to be alive now. Needs a recent alive check (lifecheck.py) and a second source. Same churchyard as oxf_001 Iffley Yew; could be a twin entry there.",
    "write_pass_2026_11_01": "Held as a lead by the write pass 2026-11-01: last evidence of life is a photo from about 2008 and there is no second source."
+  },
+  {
+   "name": "The Magdalen Plane, New Building lawn, Magdalen College",
+   "species": "London Plane (Platanus x hispanica)",
+   "latitude": 51.7513,
+   "longitude": -1.2416,
+   "location_precision": "approximate",
+   "reason": "Magdalen Flora and Fauna page (florafauna.magd.ox.ac.uk/magdalen-grounds, via search summary; the page itself fetched empty): planted 1801 by Henry Philpotts, 'close to 100 ft high, 25 ft girth at last measurement' (about 762 cm), plaque said to descend from the 1666 Botanic Garden hybrid. Past tense in the text and no recent sighting: alive NOT confirmed, may have fallen. Check with a dated photo before use; paid college entry."
+  },
+  {
+   "name": "Giant sequoias and coast redwoods, Harcourt Arboretum (Nuneham Courtenay)",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "latitude": 51.6873,
+   "longitude": -1.24,
+   "location_precision": "approximate",
+   "reason": "Day trip with paid entry (University arboretum, about 6 GBP). Only a redwood-finder page and redwoodworld.co.uk (fragmentary table, 271 ft in 2006, lightning-topped) found; no single named tree, no planting date, no Tree Register page seen. Needs the Tree Register champion entry or an arboretum guide naming one trunk."
+  },
+  {
+   "name": "Japanese Pagoda Tree planted 1888, University Parks",
+   "species": "Pagoda Tree (Styphnolobium japonicum)",
+   "latitude": 51.76,
+   "longitude": -1.252,
+   "location_precision": "approximate",
+   "reason": "University Parks 'Trees of the Parks' (parks.ox.ac.uk) mentions a pagoda tree planted 1888 per a search summary only; page not read, no tree ID or coordinate. The Parks' Arboretum Explorer map has tree IDs: read it in a browser to get the coordinate and girth. Free public park."
+  },
+  {
+   "name": "Balliol Fellows' Garden mulberry scions",
+   "species": "Black Mulberry (Morus nigra)",
+   "latitude": 51.7543,
+   "longitude": -1.2558,
+   "location_precision": "approximate",
+   "reason": "Scions of the Garden Quad tree (oxf_006); Fellows' Garden is not clearly on the visitor route. Not separate points."
   }
  ],
  "blocked": [
   {
    "name": "Tolkien's black pine (original)",
    "reason": "Known dead, felled 2014."
+  },
+  {
+   "name": "Catalpa speciosa champion, Worcester College gardens",
+   "species": "Northern Catalpa (Catalpa speciosa)",
+   "latitude": 51.7545,
+   "longitude": -1.264,
+   "girth_cm": 376,
+   "height_m": 22.8,
+   "reason": "Planted 1913, UK and Ireland champion, 22.8 m x 3.76 m girth at 1.5 m, remeasured Nov 2018 (Worcester College gardeners' blog wocogaga.blogspot.com/2018/12/three-champion-trees-in-gardens.html). Blocked on access: the college's own visit page (worc.ox.ac.uk/?p=738) admits only applicants, old members and OX1/OX2 residents free 12.30-4pm; tourists only on a guided tour by the Oxford Guild of Tour Guides. Reopen if the college admits the public. Other Worcester champions: Dawn Redwood 27 m x 3.19 m, Chinese Parasol Tree 7.6 m x 0.48 m."
   }
  ]
 }
