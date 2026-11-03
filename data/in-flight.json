@@ -69,6 +69,41 @@
       "by": "session-97f93d4c",
       "claimed_at": "2026-11-03T09:54:43+00:00",
       "trees_at_claim": 16
+    },
+    {
+      "target": "tacoma",
+      "kind": "verify",
+      "by": "session-5b19b32c",
+      "claimed_at": "2026-11-03T09:54:48+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "vancouver-washington",
+      "kind": "verify",
+      "by": "session-5b19b32c",
+      "claimed_at": "2026-11-03T09:54:55+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "windsor",
+      "kind": "verify",
+      "by": "session-4dfe2f39",
+      "claimed_at": "2026-11-03T09:55:01+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "canterbury",
+      "kind": "verify",
+      "by": "session-4dfe2f39",
+      "claimed_at": "2026-11-03T09:55:01+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "stratford-upon-avon",
+      "kind": "verify",
+      "by": "session-4dfe2f39",
+      "claimed_at": "2026-11-03T09:55:02+00:00",
+      "trees_at_claim": null
     }
   ]
 }
