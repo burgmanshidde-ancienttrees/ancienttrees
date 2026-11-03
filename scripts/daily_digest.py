@@ -1810,8 +1810,23 @@ def product_section(today):
                     one = ("an " if what[:1] in "aeiou" else "a ") + what
                     parts.append((one if n == 1 else "%d %ss" % (n, what))
                                  + (" for %s" % city if city else ""))
-                ATTENTION.append("%s arrived %s (%d total)"
-                                 % (" and ".join(parts) or "a submission", _ago(since), total))
+                # The total names what it counts. It was every submission of
+                # every kind behind "an ambassador request for Pamplona", so
+                # the line read as 56 ambassador requests beside 56 accounts
+                # (Hidde, 2026-11-03: "het lijkt me sterk dat het beide 56
+                # is"). One kind arrived: that kind's own total.
+                fresh_kinds = {r.get("kind") or "feedback" for r in fresh}
+                if len(fresh_kinds) == 1:
+                    k = fresh_kinds.pop()
+                    k_total = sum(1 for r in allrows if (r.get("kind") or "feedback") == k
+                                  or (k in ("tree", "city") and r.get("kind") in ("tree", "city")))
+                    k_word = {"ambassador": "ambassador requests", "tree": "trees sent",
+                              "city": "trees sent"}.get(k, "%s reports" % k)
+                    in_all = "%d %s in all" % (k_total, k_word)
+                else:
+                    in_all = "%d submissions of every kind in all" % total
+                ATTENTION.append("%s arrived %s (%s)"
+                                 % (" and ".join(parts) or "a submission", _ago(since), in_all))
             out.append("- %-12s %d total (%d trees sent, %d feedback), newest %s" % (
                 label + ":", total, trees_n, total - trees_n, _ago(since)))
             continue
@@ -1850,7 +1865,7 @@ def product_section(today):
             # Counted, not "an account": 2026-10-24 opened six and the line
             # still said one.
             n = recent[since]
-            ATTENTION.append("%s opened %s (%d total)" % (
+            ATTENTION.append("%s opened %s (%d accounts in all)" % (
                 "an account was" if n == 1 else "%d accounts were" % n, _ago(since), acc))
         out.append("- %-12s %d total, newest %s" % ("Accounts:", acc, _ago(since)))
     except Exception as e:
