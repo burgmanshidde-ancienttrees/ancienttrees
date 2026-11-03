@@ -60,6 +60,28 @@ MOVED = [
     "drafts/woodland-trust-reply.md",
     "drafts/app-review-2.1-reply.md",
     "drafts/app-review-notes-field.txt",
+    # 2026-11-03: dated mail drafts that carried an address, caught by qa when
+    # Hidde said "push alle uncommited stuff"
+    "drafts/lisbon-ten-mails.md",
+    "drafts/lisbon-ten.md",
+    "drafts/mail-pamplona-belasko-2026-10-29.md",
+    "drafts/northern-woodlands-2026-10-28.md",
+    "drafts/reply-fred-van-holland-2026-10-27.md",
+    "drafts/reply-james-kearney-2026-10-2*.md",
+    "drafts/reply-jerry-bull-2026-1*.md",
+    "drafts/reply-john-beetham-2026-10-24.md",
+    "drafts/reply-john-beetham-2026-10-25.md",
+    "drafts/reply-laura-parrack-2026-10-27.md",
+    "drafts/reply-luisa-carta-2026-10-25.md",
+    "drafts/reply-michael-roe-cammo-2026-11-0*.md",
+    "drafts/reply-miguel-portugal-icnf-2026-10-27.md",
+    "drafts/reply-mikel-belasko-2026-10-29.md",
+    "drafts/reply-paulo-calvos-2026-10-2*.md",
+    "drafts/reply-pere-vives-amicsjbb-2026-11-01.md",
+    "drafts/reply-pere-vives-photos-2026-11-02.md",
+    "drafts/reply-sjaan-openbomenkaart-2026-10-31.md",
+    "drafts/reply-tatiana-verona-ferrara-2026-11-03.md",
+    "drafts/reply-veronika-willhalm-*2026-11-0*.md",
 ]
 
 

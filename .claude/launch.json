@@ -2,6 +2,14 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "about-noike",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/9c7a543c-51e4-4dee-9c4f-0da936126388/scratchpad/serve.py"
+      ],
+      "port": 8794
+    },
+    {
       "name": "site-dist",
       "runtimeExecutable": "python3",
       "runtimeArgs": [
@@ -10,10 +18,161 @@
       "port": 8971
     },
     {
+      "name": "about-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/about-mock/serve.py"
+      ],
+      "port": 8781
+    },
+    {
+      "name": "event-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/eb467426-f121-4028-afbc-227df70a78e1/scratchpad/serve_event.py"
+      ],
+      "port": 8792
+    },
+    {
+      "name": "stack-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/fac0be48-1d09-4e53-b26e-15419179d9d3/scratchpad/stack-mock/serve.py",
+        "8793"
+      ],
+      "port": 8793
+    },
+    {
+      "name": "pin-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/pin-mock/serve.py"
+      ],
+      "port": 8795
+    },
+    {
+      "name": "profile-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/profile-mock/serve.py"
+      ],
+      "port": 8796
+    },
+    {
+      "name": "sheet-spacing",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/sheet-spacing/serve.py"
+      ],
+      "port": 8797
+    },
+    {
       "name": "inspect",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/serve_inspect.py"],
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/serve_inspect.py"
+      ],
       "port": 8766
+    },
+    {
+      "name": "season-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/6c7c6866-6b12-4db8-b09a-a3a27e473c3c/scratchpad/season-mock/serve.py",
+        "8798"
+      ],
+      "port": 8798
+    },
+    {
+      "name": "tree-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/0ed3baa4-cef1-444a-846b-dccedc70e4a3/scratchpad/tree-mock/serve.py",
+        "8799"
+      ],
+      "port": 8799
+    },
+    {
+      "name": "cluster-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/b1523375-863a-4c56-b13a-bcb9b5af7408/scratchpad/mock/serve.py",
+        "8801"
+      ],
+      "port": 8801
+    },
+    {
+      "name": "pop-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/32fee4a6-cdc1-4d9e-b335-decaa61db0e2/scratchpad/popmock/serve.py"
+      ],
+      "port": 8802
+    },
+    {
+      "name": "card-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde--claude-spares-spare-ZFl9jZ/e61dd0b7-2a78-40b3-833b-898117bc7db0/scratchpad/cardmock/serve.py",
+        "8803"
+      ],
+      "port": 8803
+    },
+    {
+      "name": "sheet-peek-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/sheet-peek-mock/serve.py"
+      ],
+      "port": 8804
+    },
+    {
+      "name": "sheet-proxy",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/sheet-proxy/serve.py"
+      ],
+      "port": 8805
+    },
+    {
+      "name": "empty-place-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde--claude-spares-spare-csGNPl/38cb30e3-8ddf-46b5-9101-5e19553a9cff/scratchpad/empty-place/serve.py"
+      ],
+      "port": 8806
+    },
+    {
+      "name": "amb-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/amb-mock/serve.py"
+      ],
+      "port": 8807
+    },
+    {
+      "name": "four-seasons",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/four-seasons/serve.py"
+      ],
+      "port": 8808
+    },
+    {
+      "name": "map-search",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/map-search/serve.py"
+      ],
+      "port": 8809
+    },
+    {
+      "name": "ugc-mock",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/32fee4a6-cdc1-4d9e-b335-decaa61db0e2/scratchpad/ugcmock/serve.py"
+      ],
+      "port": 8803
     }
   ]
 }

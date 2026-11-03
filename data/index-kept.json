@@ -76,19 +76,19 @@
   },
   "munich": {
    "impressions": 206,
-   "kept_trees": 31,
+   "kept_trees": 34,
    "trees": 63,
    "place_page": true
   },
   "new-york": {
    "impressions": 188,
    "kept_trees": 8,
-   "trees": 28,
+   "trees": 29,
    "place_page": true
   },
   "edinburgh": {
    "impressions": 173,
-   "kept_trees": 5,
+   "kept_trees": 6,
    "trees": 16,
    "place_page": true
   },
@@ -101,7 +101,7 @@
   "dublin": {
    "impressions": 168,
    "kept_trees": 4,
-   "trees": 17,
+   "trees": 19,
    "place_page": true
   },
   "brisbane": {
@@ -112,8 +112,8 @@
   },
   "paris": {
    "impressions": 163,
-   "kept_trees": 12,
-   "trees": 32,
+   "kept_trees": 14,
+   "trees": 58,
    "place_page": true
   },
   "malaga": {
@@ -155,13 +155,13 @@
   "pamplona": {
    "impressions": 125,
    "kept_trees": 0,
-   "trees": 14,
+   "trees": 25,
    "place_page": true
   },
   "porto": {
    "impressions": 124,
-   "kept_trees": 17,
-   "trees": 27,
+   "kept_trees": 16,
+   "trees": 29,
    "place_page": true
   },
   "prague": {
@@ -209,7 +209,7 @@
   "madrid": {
    "impressions": 93,
    "kept_trees": 11,
-   "trees": 17,
+   "trees": 18,
    "place_page": true
   },
   "arnhem": {
@@ -244,8 +244,8 @@
   },
   "montreal": {
    "impressions": 90,
-   "kept_trees": 1,
-   "trees": 13,
+   "kept_trees": 2,
+   "trees": 14,
    "place_page": true
   },
   "sintra": {
@@ -419,7 +419,7 @@
   "coimbra": {
    "impressions": 56,
    "kept_trees": 0,
-   "trees": 5,
+   "trees": 6,
    "place_page": true
   },
   "beijing": {
@@ -443,13 +443,13 @@
   "madeira": {
    "impressions": 55,
    "kept_trees": 1,
-   "trees": 10,
+   "trees": 11,
    "place_page": true
   },
   "san-francisco": {
    "impressions": 55,
    "kept_trees": 3,
-   "trees": 11,
+   "trees": 12,
    "place_page": true
   },
   "seoul": {
@@ -520,7 +520,7 @@
   },
   "las-vegas": {
    "impressions": 41,
-   "kept_trees": 3,
+   "kept_trees": 6,
    "trees": 11,
    "place_page": true
   },
@@ -529,6 +529,12 @@
    "kept_trees": 4,
    "trees": 16,
    "place_page": true
+  },
+  "sequoia-national-park": {
+   "impressions": 35,
+   "kept_trees": 1,
+   "trees": 7,
+   "place_page": false
   },
   "oslo": {
    "impressions": 34,
@@ -557,7 +563,7 @@
   "frankfurt": {
    "impressions": 23,
    "kept_trees": 4,
-   "trees": 23,
+   "trees": 28,
    "place_page": true
   },
   "schenklengsfeld": {

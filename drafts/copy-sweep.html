@@ -1,0 +1,361 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copy sweep</title>
+<style>
+:root{--bg:#faf8f3;--ink:#22201b;--mute:#6b665c;--old:#a3402f;--new:#2f6b3a;--line:#e4dfd3;--flag:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1a17;--ink:#ece8df;--mute:#a39d90;--old:#e08a78;--new:#8fcf98;--line:#35322c;--flag:#e0b050}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 16px}
+h1{font-size:26px;margin:0 0 8px} p{color:var(--mute);margin:0 0 20px}
+table{width:100%;border-collapse:collapse} td{border-top:1px solid var(--line);padding:14px 8px;vertical-align:top}
+.n{color:var(--mute);width:28px;font-variant-numeric:tabular-nums}
+.where{font-size:13px;color:var(--mute);margin-bottom:4px}
+.old{color:var(--old);text-decoration:line-through;text-decoration-thickness:1px}
+.new{color:var(--new);margin-top:4px}
+.why{font-size:13px;color:var(--mute);margin-top:4px}
+.flag{font-size:13px;color:var(--flag);margin-top:4px}
+tr.medium .n::after{content:" ·";}
+</style></head><body><main>
+<h1>Crooked sentences in the product</h1>
+<p>68 sentences, the 30 most certain first. Red is live now, green is the proposal. Numbers with a dot are less certain. Every change goes into all seven languages; app strings ship with the next build.</p>
+<table><tr class="high">
+<td class="n">1</td>
+<td><div class="where">app · Account.swift</div>
+<div class="old">Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you.</div>
+<div class="new">We check every vote, correction and tip, and your account lets us tell you what came of it.</div>
+<div class="why">passive, &#x27;X is how Y&#x27; construction</div></td></tr><tr class="high">
+<td class="n">2</td>
+<td><div class="where">app · Entitlement.swift</div>
+<div class="old">A drawn badge for every species, city and country you have stood in front of.</div>
+<div class="new">A drawn badge for every species, city and country you collect.</div>
+<div class="why">nobody stands in front of a country; roundabout phrase</div></td></tr><tr class="high">
+<td class="n">3</td>
+<td><div class="where">app · Collect.swift</div>
+<div class="old">You add a tree here by photographing it. Tap the camera and stand in front of one.</div>
+<div class="new">You can add a tree here by photographing it with the camera button.</div>
+<div class="why">statement for an offer, steps in the wrong order</div></td></tr><tr class="high">
+<td class="n">4</td>
+<td><div class="where">app · Collect.swift</div>
+<div class="old">You can start your collection by photographing any tree, whether we map it or not.</div>
+<div class="new">You can start your collection by photographing any tree.</div>
+<div class="why">explains our side (PRODUCT_COPY rule 6&#x27;s own bad example)</div></td></tr><tr class="high">
+<td class="n">5</td>
+<td><div class="where">app · CollectSheet.swift</div>
+<div class="old">We cannot read where your photograph was taken, so drag the map until the pin sits on the tree. Allowing photos would place it for you.</div>
+<div class="new">We cannot read where your photograph was taken, so drag the map until the pin sits on the tree. If you allow access to your photos, we can place it for you.</div>
+<div class="why">dangling gerund, unclear &#x27;it&#x27;</div></td></tr><tr class="high">
+<td class="n">6</td>
+<td><div class="where">app · CollectSheet.swift</div>
+<div class="old">Our own pin is rough for some of these, so we cannot tell you which is which. Pick one if you know, and say you are not sure if you do not.</div>
+<div class="new">Our pin is rough for some of these, so we cannot tell you which is which. Pick one if you know, or say you are not sure.</div>
+<div class="why">tangled double negative</div></td></tr><tr class="high">
+<td class="n">7</td>
+<td><div class="where">app · Contribute.swift</div>
+<div class="old">Sending needs a free account. It keeps the trees you send, so you can see what happened to each one.</div>
+<div class="new">You need an account to send a tree, so you can see what happened to each one you sent.</div>
+<div class="why">abstract subject, &#x27;It&#x27; has no clear referent</div></td></tr><tr class="high">
+<td class="n">8</td>
+<td><div class="where">app · Home.swift</div>
+<div class="old">New trees go on every week, and there are still cities where we have only a handful. You can add one by photographing it and filling in what you know.</div>
+<div class="new">You can add a tree by photographing it and filling in what you know.</div>
+<div class="why">passive builder-speak about our catalogue before the offer</div></td></tr><tr class="high">
+<td class="n">9</td>
+<td><div class="where">app · PermissionRecovery.swift</div>
+<div class="old">You will see the old trees nearest you, how far each one is, and the map will open where you are standing.</div>
+<div class="new">You will see the old trees nearest you and how far each one is, and the map opens where you are standing.</div>
+<div class="why">list breaks its own parallel</div></td></tr><tr class="high">
+<td class="n">10</td>
+<td><div class="where">app · PlacePin.swift</div>
+<div class="old">Zoom in as far as you like. The button wakes up once you have moved it.</div>
+<div class="new">Zoom in as far as you like. You can send it once you have moved the map.</div>
+<div class="why">cute verb, &#x27;it&#x27; reads as the button (same string as web pinZoom)</div></td></tr><tr class="high">
+<td class="n">11</td>
+<td><div class="where">web · i18n.ts · pinZoom</div>
+<div class="old">Zoom in as far as you like. The button wakes up once you have moved it.</div>
+<div class="new">Zoom in as far as you like. You can send it once you have moved the map.</div>
+<div class="why">cute verb, &#x27;it&#x27; reads as the button</div></td></tr><tr class="high">
+<td class="n">12</td>
+<td><div class="where">web · i18n.ts · photoCanGoHere</div>
+<div class="old">If you have one you took yourself, it can go here.</div>
+<div class="new">If you took one yourself, you can add it here.</div>
+<div class="why">passive, nobody acts</div></td></tr><tr class="high">
+<td class="n">13</td>
+<td><div class="where">web · i18n.ts · havePhotographedLine</div>
+<div class="old">If yours shows it better than the picture above, it can take its place, or stand beside it.</div>
+<div class="new">If yours shows the tree better, we can put it in place of the picture above, or beside it.</div>
+<div class="why">three &#x27;it&#x27;s with shifting referents</div></td></tr><tr class="high">
+<td class="n">14</td>
+<td><div class="where">web · i18n.ts · approxNote</div>
+<div class="old">The pin marks the right spot roughly, not the tree itself. It stands here, but we have not confirmed the precise position on the ground yet.</div>
+<div class="new">The pin is close to the tree but not on its trunk, so look around this spot.</div>
+<div class="why">&#x27;It stands here&#x27; unclear, builder-speak about confirming</div></td></tr><tr class="high">
+<td class="n">15</td>
+<td><div class="where">web · i18n.ts · researchedRemotely</div>
+<div class="old">This page was researched from a distance. If you know this tree, you know things we do not.</div>
+<div class="new">If you know this tree, you can tell us what we got wrong or left out.</div>
+<div class="why">passive builder-speak, aphoristic second line</div></td></tr><tr class="high">
+<td class="n">16</td>
+<td><div class="where">web · i18n.ts · ifOlderTree</div>
+<div class="old">If you know an older tree in {c}, or see a mistake here, tell us and we correct it.</div>
+<div class="new">If you know an older tree in {c}, or see a mistake here, tell us and we&#x27;ll correct it.</div>
+<div class="why">Dutch tense calque (&#x27;we correct it&#x27;)</div></td></tr><tr class="high">
+<td class="n">17</td>
+<td><div class="where">web · i18n.ts · citiesDescription</div>
+<div class="old">Every city on the map, by country: the remarkable old trees of each, verified, with their stories and exact spots.</div>
+<div class="new">Every city on the map, by country, with its remarkable old trees, their stories and where to find them.</div>
+<div class="why">colon reveal, stacked tail, &#x27;exact&#x27; overclaims approximate pins</div><div class="flag">Title or meta in Google: changes during recovery are your call</div></td></tr><tr class="high">
+<td class="n">18</td>
+<td><div class="where">web · i18n.ts · exploreWhatBody</div>
+<div class="old">{t} trees in {p} places across {c} countries, every one checked against at least two independent sources before it went on. Each pin opens a tree with its age, its species, why it is worth standing in front of, and directions from where you are.</div>
+<div class="new">{t} trees in {p} places across {c} countries. Each pin opens a tree with its age, its species, why it is worth the walk, and directions from where you are.</div>
+<div class="why">process claim (and not true of reader and register trees), roundabout phrase</div></td></tr><tr class="high">
+<td class="n">19</td>
+<td><div class="where">web · i18n.ts · exploreWalksBody</div>
+<div class="old">A map of scattered pins is a list. What makes an afternoon is trees close enough to walk between, so these are the places where the whole set fits in one stroll:</div>
+<div class="new">In these places the trees are close enough to walk past all of them in one afternoon:</div>
+<div class="why">aphorism opener, &#x27;What makes X is Y&#x27; construction</div></td></tr><tr class="high">
+<td class="n">20</td>
+<td><div class="where">web · i18n.ts · exploreNotBody</div>
+<div class="old">Every pin says how precise it is. A tree marked approximate means we know the park but not the trunk, and the page says so rather than sending you to a spot where the tree is not. Trees on private land are left off entirely, as are trees whose own register hides their position, because the people who protect them have a reason. Nothing here is a bulk street-tree inventory: a tree earns a pin by being remarkable, not by existing.</div>
+<div class="new">Every pin says how precise it is. A tree marked approximate means we know the park but not the trunk, and its page says so. We leave off trees on private land, and trees whose location is kept secret to protect them. A tree gets a pin because it is remarkable.</div>
+<div class="why">defining by denying, passive, machinery (&#x27;register&#x27;, &#x27;inventory&#x27;), closing moral</div></td></tr><tr class="high">
+<td class="n">21</td>
+<td><div class="where">web · i18n.ts · homeFindBody</div>
+<div class="old">The map finds the remarkable old trees closest to where you are standing, and points you at the nearest one with a walk time and directions to your phone.</div>
+<div class="new">You see the remarkable old trees closest to where you are standing, with a walk time and directions to the nearest one.</div>
+<div class="why">machinery as subject, &#x27;directions to your phone&#x27; garbled</div></td></tr><tr class="high">
+<td class="n">22</td>
+<td><div class="where">web · i18n.ts · homeCollectBody</div>
+<div class="old">Check in at the tree and watch your collection grow: trees, cities, species. Rarer and older trees count for more, and badges for a finished city are on their way.</div>
+<div class="new">Check in at each tree and watch your collection grow by trees, cities and species.</div>
+<div class="why">colon list tail, promises badges that are not there</div></td></tr><tr class="high">
+<td class="n">23</td>
+<td><div class="where">web · signin-strings.ts · SIGNIN.en.subFeedback</div>
+<div class="old">Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you.</div>
+<div class="new">We check every vote, correction and tip, and your account lets us tell you what came of it.</div>
+<div class="why">passive, &#x27;X is how Y&#x27; construction</div></td></tr><tr class="high">
+<td class="n">24</td>
+<td><div class="where">web · contribute.astro</div>
+<div class="old">Research from a distance finds the famous trees. It misses the one on the corner that everyone in the neighbourhood walks past, the one with the story attached, the one that is only obvious if you live there. That gap is why this page exists.</div>
+<div class="new">You know the trees we miss: the one on the corner everyone in the neighbourhood walks past, the one with a story only people who live there know.</div>
+<div class="why">builder-speak about our research, rule-of-three, closing moral</div></td></tr><tr class="high">
+<td class="n">25</td>
+<td><div class="where">web · contribute.astro</div>
+<div class="old">Everything sent in gets checked against independent sources, and the location gets verified, because a wrong pin is worse than a missing tree. Confirmed trees get their own page. What cannot be confirmed waits instead of going live half-true. We do not publish your name anywhere on the site, and we do not need it to accept a tree.</div>
+<div class="new">We check every tree you send, and the location above all, because a wrong pin is worse than a missing tree. We do not publish your name anywhere on the site, and you don&#x27;t need to give it.</div>
+<div class="why">passive where we act, explains our process, no longer true for reader photos with GPS</div></td></tr><tr class="high">
+<td class="n">26</td>
+<td><div class="where">web · contribute.astro</div>
+<div class="old">Sending needs a free account. It keeps the trees you send, so you can see what happened to each one.</div>
+<div class="new">You need an account to send a tree, so you can see what happened to each one you sent.</div>
+<div class="why">abstract subject, &#x27;It&#x27; has no clear referent, &#x27;free&#x27; promise</div></td></tr><tr class="high">
+<td class="n">27</td>
+<td><div class="where">web · privacy.astro</div>
+<div class="old">If you can be recognised in a photograph we published, tell us and we take it off.</div>
+<div class="new">If you can be recognised in a photograph we published, tell us and we&#x27;ll take it off.</div>
+<div class="why">Dutch tense calque</div></td></tr><tr class="high">
+<td class="n">28</td>
+<td><div class="where">web · sources.astro</div>
+<div class="old">Something credited wrongly, or missing? Tell us and we correct it.</div>
+<div class="new">Something credited wrongly, or missing? Tell us and we&#x27;ll correct it.</div>
+<div class="why">Dutch tense calque</div></td></tr><tr class="high">
+<td class="n">29</td>
+<td><div class="where">web · support.astro</div>
+<div class="old">Tell us and we fix it, usually the same day.</div>
+<div class="new">Tell us and we&#x27;ll fix it, usually the same day.</div>
+<div class="why">Dutch tense calque</div></td></tr><tr class="high">
+<td class="n">30</td>
+<td><div class="where">web · support.astro</div>
+<div class="old">Every submission is verified against two independent sources before it goes on the map.</div>
+<div class="new">We check every tree you send before it goes on the map.</div>
+<div class="why">passive process claim, no longer true (a reader&#x27;s photo with GPS is the source)</div></td></tr><tr class="medium">
+<td class="n">31</td>
+<td><div class="where">app · ContentView.swift</div>
+<div class="old">None of our trees is within fifty kilometres of here.</div>
+<div class="new">None of our trees is within fifty kilometres of you.</div>
+<div class="why">&#x27;of here&#x27; is clumsy</div></td></tr><tr class="medium">
+<td class="n">32</td>
+<td><div class="where">app · Account.swift</div>
+<div class="old">Your account is how we reach you about the list.</div>
+<div class="new">We use your account to write to you about the list.</div>
+<div class="why">&#x27;X is how Y&#x27; construction</div></td></tr><tr class="medium">
+<td class="n">33</td>
+<td><div class="where">app · Entitlement.swift</div>
+<div class="old">Photograph a tree nobody has photographed yet, and offer it for its page.</div>
+<div class="new">Photograph a tree nobody has photographed yet, and your photo can go on its page.</div>
+<div class="why">&#x27;offer it for its page&#x27; is crooked</div></td></tr><tr class="medium">
+<td class="n">34</td>
+<td><div class="where">app · AmbassadorBadge.swift</div>
+<div class="old">You are one of the first users of Ancient Trees. This badge is only for them.</div>
+<div class="new">This badge is only for the first people to use Ancient Trees, and you are one of them.</div>
+<div class="why">&#x27;them&#x27; points back awkwardly</div></td></tr><tr class="medium">
+<td class="n">35</td>
+<td><div class="where">app · AmbassadorBadge.swift</div>
+<div class="old">An ambassador helps make this list as good as it can be.</div>
+<div class="new">An ambassador helps us get the trees of this place right.</div>
+<div class="why">vague abstract padding</div></td></tr><tr class="medium">
+<td class="n">36</td>
+<td><div class="where">app · Collect.swift</div>
+<div class="old">You can collect it by photographing it while you stand there. Trees, species and places fill your collection, and the years they have seen add up.</div>
+<div class="new">You can collect it by photographing it while you stand there. Each tree adds to your trees, species and places, and its years to your total.</div>
+<div class="why">ornamental second sentence</div></td></tr><tr class="medium">
+<td class="n">37</td>
+<td><div class="where">app · CollectSheet.swift</div>
+<div class="old">Trees standing close together catch us out too. Telling us is more useful than a guess.</div>
+<div class="new">Trees standing close together catch us out too, so just say if you are not sure.</div>
+<div class="why">aphoristic second line, gerund subject</div></td></tr><tr class="medium">
+<td class="n">38</td>
+<td><div class="where">app · MergeChooser.swift</div>
+<div class="old">Your photos move to its page and this copy goes from your trees.</div>
+<div class="new">Your photos move to its page, and this copy leaves your trees.</div>
+<div class="why">&#x27;goes from&#x27; is a calque, nobody acts</div></td></tr><tr class="medium">
+<td class="n">39</td>
+<td><div class="where">app · Paywall.swift</div>
+<div class="old">Plus is not open yet. We are building it, and this is the list.</div>
+<div class="new">Plus is not open yet. This is what we are building for it.</div>
+<div class="why">&#x27;this is the list&#x27; has no clear referent</div></td></tr><tr class="medium">
+<td class="n">40</td>
+<td><div class="where">app · PlacePin.swift</div>
+<div class="old">Sending needs a free account, so we can tell you what your correction changed.</div>
+<div class="new">You need an account to send this, so we can tell you what your correction changed.</div>
+<div class="why">abstract subject, &#x27;free&#x27; promise (same as web pinNeedsAccount)</div></td></tr><tr class="medium">
+<td class="n">41</td>
+<td><div class="where">app · Profile.swift</div>
+<div class="old">We delete your email address and your collection. This cannot be undone.</div>
+<div class="new">We will delete your email address and your collection. You cannot undo this.</div>
+<div class="why">Dutch present for future in a confirm step</div></td></tr><tr class="medium">
+<td class="n">42</td>
+<td><div class="where">app · TreeDetail.swift</div>
+<div class="old">Your photograph goes with it. What you have already sent us stays sent.</div>
+<div class="new">Your photograph goes with it. Anything you already sent us stays with us.</div>
+<div class="why">&#x27;stays sent&#x27; is crooked</div></td></tr><tr class="medium">
+<td class="n">43</td>
+<td><div class="where">app · TreeDetail.swift</div>
+<div class="old">You&#x27;ve added this tree. We&#x27;re taking a look at it, and once it&#x27;s verified, we will add it to our map.</div>
+<div class="new">You&#x27;ve added this tree. We&#x27;ll check it and then add it to our map.</div>
+<div class="why">passive &#x27;it&#x27;s verified&#x27;, padded</div></td></tr><tr class="medium">
+<td class="n">44</td>
+<td><div class="where">app · WalkMode.swift</div>
+<div class="old">Its trees are not in this copy of the map. Try again after the app has updated.</div>
+<div class="new">This walk&#x27;s trees are not on your map yet. Try again after the app updates.</div>
+<div class="why">machinery (&#x27;this copy of the map&#x27;)</div></td></tr><tr class="medium">
+<td class="n">45</td>
+<td><div class="where">web · collection-rank.ts</div>
+<div class="old">Age not established. Tell us if you know it.</div>
+<div class="new">We don&#x27;t know its age yet. Tell us if you do.</div>
+<div class="why">passive officialese</div></td></tr><tr class="medium">
+<td class="n">46</td>
+<td><div class="where">web · i18n.ts · ambassadorAskBody</div>
+<div class="old">An ambassador helps make this list as good as it can be.</div>
+<div class="new">An ambassador helps us get the trees of this place right.</div>
+<div class="why">vague abstract padding</div></td></tr><tr class="medium">
+<td class="n">47</td>
+<td><div class="where">web · i18n.ts · waitlistSent</div>
+<div class="old">You are on the list. We&#x27;ll let you know the day it opens.</div>
+<div class="new">You are on the list. We&#x27;ll let you know the day the Android app is out.</div>
+<div class="why">&#x27;it opens&#x27; has no referent (an app is released, not opened)</div></td></tr><tr class="medium">
+<td class="n">48</td>
+<td><div class="where">web · i18n.ts · pinNeedsAccount</div>
+<div class="old">Sending needs a free account, so we can tell you what your correction changed.</div>
+<div class="new">You need an account to send this, so we can tell you what your correction changed.</div>
+<div class="why">abstract subject, &#x27;free&#x27; promise</div></td></tr><tr class="medium">
+<td class="n">49</td>
+<td><div class="where">web · i18n.ts · noPhotoLicence</div>
+<div class="old">Nobody has published a photograph of this tree under a licence we can use.</div>
+<div class="new">We don&#x27;t have a photograph of this tree yet.</div>
+<div class="why">explains our side (licensing machinery)</div></td></tr><tr class="medium">
+<td class="n">50</td>
+<td><div class="where">web · i18n.ts · exploreDescription</div>
+<div class="old">The interactive map of every verified ancient tree on the site, each pin a tree worth standing in front of.</div>
+<div class="new">A map of remarkable old trees, each pin a tree worth the walk.</div>
+<div class="why">builder-speak (&#x27;verified&#x27;, &#x27;on the site&#x27;), roundabout ending</div><div class="flag">Title or meta in Google: changes during recovery are your call</div></td></tr><tr class="medium">
+<td class="n">51</td>
+<td><div class="where">web · i18n.ts · exploreIslandsBody</div>
+<div class="old">An island is a different kind of day. The trees sit a drive apart rather than a walk, and what you get for the distance is a tree that grows nowhere else: dragon trees, laurel forest that outlived the Ice Age, pines that reach heights the mainland never manages.</div>
+<div class="new">On an island the trees are a drive apart rather than a walk, but some grow nowhere else: dragon trees, laurel forest that outlived the Ice Age, pines taller than any on the mainland.</div>
+<div class="why">aphorism opener, roundabout &#x27;what you get for the distance is&#x27;</div></td></tr><tr class="medium">
+<td class="n">52</td>
+<td><div class="where">web · i18n.ts · homeTitle</div>
+<div class="old">Ancient Trees: remarkable old trees near you, mapped</div>
+<div class="new">Ancient Trees: remarkable old trees near you</div>
+<div class="why">dangling &#x27;mapped&#x27;</div><div class="flag">Title or meta in Google: changes during recovery are your call</div></td></tr><tr class="medium">
+<td class="n">53</td>
+<td><div class="where">web · i18n.ts · homeDescription</div>
+<div class="old">Find the remarkable old trees around you, each with its story, its sources, its exact spot and directions from where you stand.</div>
+<div class="new">Find the remarkable old trees around you, each with its story and directions from where you are.</div>
+<div class="why">list padding, &#x27;exact spot&#x27; overclaims</div><div class="flag">Title or meta in Google: changes during recovery are your call</div></td></tr><tr class="medium">
+<td class="n">54</td>
+<td><div class="where">web · i18n.ts · homeSub</div>
+<div class="old">Made for people who love being outside. Find remarkable old trees nearby, explore a few of them in an afternoon, read the story behind each one, and tick off the trees you visit.</div>
+<div class="new">Find remarkable old trees nearby, walk past a few of them in an afternoon, read the story behind each one, and tick off the ones you visit.</div>
+<div class="why">category-label opener fragment</div></td></tr><tr class="medium">
+<td class="n">55</td>
+<td><div class="where">web · i18n.ts · homeWalkBody</div>
+<div class="old">Only the most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.</div>
+<div class="new">The most remarkable trees, linked into one afternoon walk, each with its story and the month it looks its best.</div>
+<div class="why">subjectless fragment, padded tail</div></td></tr><tr class="medium">
+<td class="n">56</td>
+<td><div class="where">web · signin-strings.ts · SIGNIN.en.subAmbassador</div>
+<div class="old">Your account is how we reach you about the list.</div>
+<div class="new">We use your account to write to you about the list.</div>
+<div class="why">&#x27;X is how Y&#x27; construction</div></td></tr><tr class="medium">
+<td class="n">57</td>
+<td><div class="where">web · account.astro</div>
+<div class="old">Links work once and briefly, to keep your account safe. One tap gets you a fresh one.</div>
+<div class="new">To keep your account safe, a sign-in link works once and only for a short time. You can ask for a new one below.</div>
+<div class="why">&#x27;work once and briefly&#x27; is crooked, abstract subject</div></td></tr><tr class="medium">
+<td class="n">58</td>
+<td><div class="where">web · account.astro</div>
+<div class="old">You are one of the first users of Ancient Trees. This badge is only for them.</div>
+<div class="new">This badge is only for the first people to use Ancient Trees, and you are one of them.</div>
+<div class="why">&#x27;them&#x27; points back awkwardly</div></td></tr><tr class="medium">
+<td class="n">59</td>
+<td><div class="where">web · account.astro</div>
+<div class="old">You add a tree here by photographing it in the app, or by telling us about one.</div>
+<div class="new">You can add a tree by photographing it in the app, or by telling us about one.</div>
+<div class="why">statement where an offer is meant</div></td></tr><tr class="medium">
+<td class="n">60</td>
+<td><div class="where">web · settings.astro</div>
+<div class="old">We delete your email address and your collection. This cannot be undone.</div>
+<div class="new">We will delete your email address and your collection. You cannot undo this.</div>
+<div class="why">Dutch present for future in a confirm step</div></td></tr><tr class="medium">
+<td class="n">61</td>
+<td><div class="where">web · app.astro</div>
+<div class="old">Every ancient tree, in your pocket</div>
+<div class="new">Explore remarkable old trees around you</div>
+<div class="why">cliche, overclaims &#x27;every&#x27;</div></td></tr><tr class="medium">
+<td class="n">62</td>
+<td><div class="where">web · app.astro</div>
+<div class="old">Open it wherever you happen to be and it finds the remarkable old trees within walking distance, strings the good ones into one afternoon, and tells you what you are standing in front of when you get there. Every tree you visit is one you keep.</div>
+<div class="new">Wherever you are, you see the remarkable old trees within walking distance, a walk past the best of them, and the story of each one when you get there. Every tree you visit joins your collection.</div>
+<div class="why">app as subject, roundabout phrase, aphorism ending</div></td></tr><tr class="medium">
+<td class="n">63</td>
+<td><div class="where">web · app.astro</div>
+<div class="old">Stand in front of one we do not have yet, photograph it, and it joins the map.</div>
+<div class="new">Photograph a tree we do not have yet and send it to us for the map.</div>
+<div class="why">roundabout, overpromises (a sent tree is checked first)</div></td></tr><tr class="medium">
+<td class="n">64</td>
+<td><div class="where">web · collections.astro</div>
+<div class="old">Cities organise these trees by place. Collections organise them by what makes them worth the trip: age, strangeness, the stories they carry. Each one is hand-curated, and every entry links to a verified tree with its own map and directions. More collections are added as the map grows.</div>
+<div class="new">Collections group the trees by what makes them worth the trip: age, strangeness, the stories they carry. Every tree in them has its own map and directions.</div>
+<div class="why">builder-speak (&#x27;hand-curated&#x27;, &#x27;verified&#x27;), passive promise at the end</div></td></tr><tr class="medium">
+<td class="n">65</td>
+<td><div class="where">web · press.astro</div>
+<div class="old">... each verified against at least two independent sources or an official monument register, ... The project publishes openly, uses openly licensed photography with credits, and treats an honest &quot;approximately&quot; as better than false precision.</div>
+<div class="new">... each with its sources, its story, its location and, where trees stand close enough, a walking route past them. Photographs are openly licensed, and a location we are not sure of is marked approximate.</div>
+<div class="why">verification claim no longer true for reader trees, aphoristic closing line</div></td></tr><tr class="medium">
+<td class="n">66</td>
+<td><div class="where">web · species.astro</div>
+<div class="old">Cities group these trees by place; collections group them by theme. This page groups them by what they actually are. A London plane in Barcelona and a London plane in Warsaw are the same tree living two different lives, and reading them side by side tells you something a city page cannot: how long the species lives, what it does in autumn, and which cities planted it when.</div>
+<div class="new">Here the trees are grouped by species. Side by side, a London plane in Barcelona and one in Warsaw show how long the species lives, what it does in autumn, and which cities planted it when.</div>
+<div class="why">explains our page structure, aphorism, colon reveal</div></td></tr><tr class="medium">
+<td class="n">67</td>
+<td><div class="where">web · terms.astro</div>
+<div class="old">They are written to be read, not to be survived.</div>
+<div class="new">They are written in plain English.</div>
+<div class="why">&#x27;not X&#x27; aphorism</div><div class="flag">Terms text: your call</div></td></tr><tr class="medium">
+<td class="n">68</td>
+<td><div class="where">web · terms.astro</div>
+<div class="old">The reason is the map itself: a tree page that loses its picture is a worse page for everybody who comes after, ... What does not stay is you.</div>
+<div class="new">We keep it because a tree page that loses its picture is worse for everybody who comes after, ... Your name and the link to your account do not stay.</div>
+<div class="why">colon reveal, aphorism</div><div class="flag">Terms text: your call</div></td></tr></table></main></body></html>
