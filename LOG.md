@@ -12,6 +12,17 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: un albero al giorno's two trees on the Padua page
+
+What changed on the site (Padua, from the mail of 2026-11-03 by the author of the blog un albero al giorno, already a source on the sophoras page; he named two trees, sent two posts and wrote "Vi autorizzo a scaricare e pubblicare le foto che vi servono"):
+- **New: the Canova Cypress of the Eremitani** (pad_013), the cypress behind the apse of the Chiesa degli Eremitani, planted for Canova's 1807 urn by the Diocese of Padua's account (the blog thinks it was older), survived the bombing of 11 March 1944 without its outer bark. About 15 m tall, 2 m round (the blogger's tape), more than 200 years (diocese). Blocked since 2026-08-23 because the garden is closed; it ships as a view-only tree, seen from the street over the railing, which is where his photograph stands. Pin approximate on Piazza Eremitani beside the apse.
+- **New: the Plane of the Certosa di Vigodarzere** (pad_014), MASAF 01/L892/PD/05, 625 cm girth, 32 m, alone in a field beside the abandoned Certosa, a day trip 6 km north labelled Vigodarzere. Register pin, approximate. No age anywhere; the story asks.
+- Both lead photographs are his, licence "Used with permission from un albero al giorno; credit required", credit linked to each post, looked at (plane OK, cypress WEAK under a grey sky, the tree plainly the subject). The mail's two attachments were Google Maps screenshots of the locations, not photographs, so the pictures come from his posts. He offered higher-resolution files from his archive.
+- Padua intro, meta and FAQ rewritten for the two trees in English and Italian; both trees translated into the IT overlay. The cypress left the blocked list in data/leads/padova.json.
+
+Sources: the two blog posts, the MASAF register row, the Diocese of Padua's March 2025 press release on "Il Canova mai visto", the FAI page on the Certosa. Nothing was mailed.
+Breakage, not ours: preflight still fails on AmbassadorLine.astro (in HEAD); qa.py --source-only fails locally only because nightly.yml needs the yaml module.
+
 ## 2026-11-03 session: the Sintra ambassador's mail, two pins fixed, first photographs, two new trees
 
 What changed on the site (Sintra, from the ambassador's mail of 2026-11-03 with six photographs and four dropped map pins; her name stays out of the repo):

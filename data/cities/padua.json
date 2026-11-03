@@ -2,8 +2,8 @@
   "city": "Padua",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Padua's oldest trees mostly answer to a university. The Orto Botanico, founded in 1545 as the world's first university botanical garden, still holds seven of the plantings that made it famous, including a dwarf palm Goethe wrote a book around and Italy's first Himalayan cedar. A magnolia grows sideways in a cloister behind the Basilica di Sant'Antonio, two planes and a sideways hackberry share a public park a mile away, and a pair of pagoda trees mark a university courtyard that has stood since the 1300s. Every one of them sits inside a walk of just over a kilometre.",
-  "meta_description": "Padua's oldest trees ring a 1545 university botanical garden, a saint's cloister and a public park, all inside a walk of just over a kilometre.",
+  "intro": "Padua's oldest trees mostly answer to a university. The Orto Botanico, founded in 1545 as the world's first university botanical garden, holds seven of them, including a dwarf palm Goethe wrote a book around. A magnolia grows sideways in the Sant'Antonio cloister, two planes and a hackberry share a public park, pagoda trees mark a medieval university courtyard, and a cypress planted for a Canova urn came through the 1944 bombing of the Eremitani church. Six kilometres north, a plane six metres round stands alone beside an abandoned monastery on the Brenta.",
+  "meta_description": "Padua's oldest trees ring a 1545 botanical garden, a saint's cloister, a park and a bombed church, with a giant plane by a monastery 6 km north.",
   "question_meta": "Padua's oldest tree is the Goethe Palm, a dwarf fan palm in the Orto Botanico planted in 1585, about 440 years old.",
   "question_answer": "Padua's oldest tree is the Goethe Palm (Palma di San Pietro), a dwarf fan palm in the city's Orto Botanico, planted in 1585 and roughly 440 years old. It grows inside a purpose-built octagonal glasshouse on Via Orto Botanico, a five-minute walk from the Basilica di Sant'Antonio, and it is one of the oldest potted or planted specimens still alive anywhere in the garden. The next oldest confirmed age on this page is the Oriental Plane in the same garden, at roughly 345 years.",
   "question_context": "The Orto Botanico di Padua, a UNESCO World Heritage site since 1997, was founded in 1545 as the first university botanical garden in the world, and the Goethe Palm is one of the few plantings still alive from anywhere near its early centuries. Johann Wolfgang von Goethe saw it on his 1786 Italian journey and used it in his botanical writing on plant metamorphosis, which is why it carries his name alongside its older local one, the Palm of Saint Peter. Dwarf palms have no patience for Veneto frost, so the garden raised an octagonal glasshouse around this single shrub, and it still grows inside it, a five-minute walk from the Basilica di Sant'Antonio. Padua's other old trees are younger and more ordinary in comparison: a garden magnolia, a pair of park planes, a hackberry the city protected for its shape rather than its size. None of them come close to the palm's four and a half centuries under glass.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can you walk between Padua's oldest trees?",
-      "a": "Mostly. The Orto Botanico and the Basilica di Sant'Antonio cloister sit within a few hundred metres of each other. Parco Treves is about a kilometre north of the garden, and Piazza Capitaniato, near the university's historic centre, closes a loop of just over a kilometre across the whole list."
+      "a": "Mostly. The Orto Botanico and the Basilica di Sant'Antonio cloister sit within a few hundred metres of each other. Parco Treves is about a kilometre north of the garden, and Piazza Capitaniato, near the university's historic centre, closes a loop of just over a kilometre across the whole list. The Eremitani cypress adds about half a kilometre to the north-east of Piazza Capitaniato. The one exception is the plane at the Certosa di Vigodarzere, about 6 km north on the Brenta, a bike ride or a longer walk along the river embankment."
     },
     {
       "q": "Do they cost anything to see?",
-      "a": "The Orto Botanico charges admission, which covers the Goethe Palm, the plane, the ginkgo, the 1786 magnolia, the Himalayan cedar, a Japanese cedar reportedly planted in 1850 and a second ginkgo elsewhere in the grounds. Parco Treves and Piazza Capitaniato are free, open public ground; the magnolia in the Sant'Antonio cloister needs the basilica's museum ticket."
+      "a": "The Orto Botanico charges admission, which covers the Goethe Palm, the plane, the ginkgo, the 1786 magnolia, the Himalayan cedar, a Japanese cedar reportedly planted in 1850 and a second ginkgo elsewhere in the grounds. Parco Treves and Piazza Capitaniato are free, open public ground; the magnolia in the Sant'Antonio cloister needs the basilica's museum ticket. The Eremitani cypress is seen free from the street, and the Vigodarzere plane from the lane beside the Certosa."
     },
     {
       "q": "Which has the best story?",
@@ -522,6 +522,92 @@
         "kind": "autumn colour"
       },
       "how_to_recognise": "You can recognise it by being the second, lesser known ginkgo in the garden, a grafted female branch on a male trunk, 3 metres round. It stands a stone's throw from the famous 1750 ginkgo in Padua's Orto Botanico."
+    },
+    {
+      "id": "pad_013",
+      "name": "The Canova Cypress of the Eremitani",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "more than 200 years (planted for Canova's urn in 1807, by the diocese's account)",
+      "age_min": 200,
+      "age_max": null,
+      "age_basis": "source",
+      "girth_cm": 200,
+      "height_m": 15,
+      "location": {
+        "address": "Piazza Eremitani, beside the apse of the Chiesa degli Eremitani, 35121 Padova",
+        "latitude": 45.41023,
+        "longitude": 11.88026,
+        "neighbourhood": "Eremitani"
+      },
+      "verified_sources": [
+        "https://unalberoalgiorno.blog/2025/01/16/il-cipresso-del-canova/",
+        "https://ufficiostampa.diocesipadova.it/wp-content/uploads/sites/19/2025/03/03_-CS2_ilcanovamaivisto2.pdf"
+      ],
+      "access": "View only. The cypress grows in a small walled garden behind the apse that is not open to visitors, and a high wall hides the trunk; the crown is seen from the street beside the apse, over the railing. Visitors leaving the church's Ovetari chapel see it beside the apse.",
+      "transport": "About 1 km walk south of Padova railway station along Corso del Popolo and Corso Garibaldi",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The cypress behind the apse of the Eremitani church has outlived the monument it was planted to shade. In late summer 1807 a cinerary urn carved by Antonio Canova for Countess Louise von Callenberg reached Padua and was set in a small cemetery here, and the Diocese of Padua says this cypress was planted for it. The Paduan tree blog un albero al giorno thinks the tree was probably standing already.\n\nOn 11 March 1944 American bombs mutilated the church and took most of Mantegna's frescoes in its Ovetari chapel, and Canova's monument was lost. The urn was counted among the losses until it was found in the church's rectory, two years before it went on show for the first time in 2025. The cypress stayed. Its trunk has lost the outer, stringy bark a cypress normally wears, and it leans east, both of which the blog's author reads as the work of the blast.\n\nBy his own tape it is about 15 metres tall and two metres round, and the diocese puts it at more than 200 years. An 1831 illustration by Pietro Chevalier and a later watercolour by Bartolomeo Belzoni in the city library show it already tall, and in 2024 Michele Armelin gave it a book of its own. A high wall hides the trunk today, so look for the dark spire against the brick apse from the street.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/pad_013-the-canova-cypress-of-the-eremitani.jpg",
+        "license": "Used with permission from un albero al giorno; credit required",
+        "source": "mail",
+        "attribution": "un albero al giorno",
+        "attribution_url": "https://unalberoalgiorno.blog/2025/01/16/il-cipresso-del-canova/",
+        "status": "approved",
+        "width": 750,
+        "height": 500,
+        "note": "Permission in writing by mail on 2026-11-03 from the author of un albero al giorno ('Vi autorizzo a scaricare e pubblicare le foto che vi servono'), in answer to our mails of 2026-10-30 and 2026-11-02; the two mail attachments were Google Maps location screenshots, not photographs, so the photograph is taken from his post (po-1-24gen25.jpg, January 2025). Looked at 2026-11-03: the cypress from the street, the brick apse and bell tower of the Eremitani beside it, a garden railing in front; the tree is the subject and survives the centre crop. photo_light WEAK (grey winter sky). He offered higher-resolution files from his archive.",
+        "taken_month": 1
+      },
+      "how_to_recognise": "You can recognise it by its dark, narrow crown rising beside the brick apse of the Eremitani church, as tall as the nave wall and leaning slightly east, its trunk hidden behind a high garden wall.",
+      "verify_notes": "Two sources. un albero al giorno (2025 post, updated after a visit): small garden facing the apse, monument by Canova from 1803 to Countess von Callenberg, tree 'quasi certamente anteriore', monument destroyed in the bombing of 11 March 1944, bark missing and lean east read as blast effects, girth about 2 m and height about 15 m measured by the author, a high wall hides the trunk. Diocese of Padua press release (March 2025, exhibition 'Il Canova mai visto'): the urn arrived late summer 1807 and was placed in a small cemetery behind the apse 'dove venne piantato appositamente quel cipresso che ancora oggi esiste'; tree more than 200 years old, being entered in the tree census; the urn, thought destroyed in 1944, was found in the rectory. The two disagree on whether the tree predates the urn; the story states both. Previously blocked in data/leads/padova.json (2026-08-23) for hard rule 10: the garden itself is closed. Shipped 2026-11-03 as a view-only tree: the author's photograph is taken from the street over the railing, and the diocese says visitors leaving the Ovetari chapel see the cypress beside the apse. Pin is the earlier lead coordinate on Piazza Eremitani beside the apse (approximate). Not yet in the national register.",
+      "pin_source": "lead coordinate, data/leads/padova.json (approximate, street beside the apse)"
+    },
+    {
+      "id": "pad_014",
+      "name": "The Plane of the Certosa di Vigodarzere",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 625,
+      "height_m": 32,
+      "location": {
+        "address": "Beside the Certosa di Vigodarzere, Via Certosa, 35010 Vigodarzere (PD)",
+        "latitude": 45.455794,
+        "longitude": 11.862775,
+        "neighbourhood": "Certosa di Vigodarzere, Vigodarzere (6 km north of Padua)"
+      },
+      "verified_sources": [
+        "https://unalberoalgiorno.blog/2020/10/04/platano-monumentale-certosa-di-vigodarzere/",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://fondoambiente.it/luoghi/certosa-di-vigodarzere"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), codice AMI, no. 01/L892/PD/05",
+        "url": null
+      },
+      "access": "The plane stands in a cultivated field beside the Certosa di Vigodarzere, which is private, abandoned and cannot be visited. See it from the lane round the Certosa and the field edge, and keep off the crop.",
+      "transport": "Day trip in Vigodarzere, about 6 km north of central Padua. On foot or by bike, cross the Brenta bridge into Vigodarzere and follow the cycle path on top of the river embankment upstream for under half an hour, then take the track on the right to the Certosa (un albero al giorno's route). Bus and train connections not verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Six and a quarter metres round and 32 metres tall, by Italy's national register of monumental trees, this London plane stands by itself in a ploughed field in a bend of the Brenta, with an empty Carthusian monastery for company. Work on the Certosa di Vigodarzere began in 1534 under Andrea Moroni, who also directed the building of Santa Giustina in Padua, and Carthusian monks lived here from 1560. A decree of the Venetian Republic closed the house in 1768, and the buildings went on to be a country villa, a farm, a barracks in the First World War and a powder store in the Second, according to the FAI. Today the complex is abandoned and cannot be visited, says the Paduan tree blog un albero al giorno, whose author photographed the plane here.\n\nThe walk out is part of the reward. He describes crossing the Brenta bridge into Vigodarzere and following the cycle path along the top of the embankment upstream for under half an hour, then turning off on a track towards the Certosa. Round the buildings run a double row of old hornbeams and an avenue of limes towards the river, and then the plane appears out in the field. In the aerial pictures he took in the autumn of 2020 the whole crown had turned yellow.\n\nNobody has published an age for it. If you know when it was planted, tell us.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/pad_014-the-plane-of-the-certosa-di-vigodarzere.jpg",
+        "license": "Used with permission from un albero al giorno; credit required",
+        "source": "mail",
+        "attribution": "un albero al giorno",
+        "attribution_url": "https://unalberoalgiorno.blog/2020/10/04/platano-monumentale-certosa-di-vigodarzere/",
+        "status": "approved",
+        "width": 900,
+        "height": 600,
+        "note": "Permission in writing by mail on 2026-11-03 from the author of un albero al giorno ('Vi autorizzo a scaricare e pubblicare le foto che vi servono'); the mail attachments were Google Maps location screenshots, so the photograph is taken from his post (portamento-1-ott20.jpg, October 2020). Looked at 2026-11-03: the whole plane in full leaf, alone in the field, filling the frame under a blue and white sky; photo_light OK. The register pin and the field match his aerial pictures of the tree beside the Certosa. He offered higher-resolution files from his archive.",
+        "taken_month": 10
+      },
+      "how_to_recognise": "You can recognise it by the one huge plane standing alone in the open field beside the Certosa di Vigodarzere, its crown far broader than anything around it.",
+      "verify_notes": "Official register: MASAF Elenco degli alberi monumentali d'Italia, scheda 01/L892/PD/05, comune Vigodarzere, locality 'Certosa di Vigodarzere - Lungargine Brenta', Platanus acerifolia, girth 625 cm, height 32 m, pin 45.455794, 11.862775 (data/registers/italy-masaf.json). un albero al giorno (2020 post, photographed alive October and November 2020) gives the same girth and height, the walking route and the Certosa's state ('triste stato di abbandono, non si può visitare'). Certosa history from the FAI page. No source gives an age. Day trip: about 5.6 km in a straight line from central Padua, labelled with its real place.",
+      "pin_source": "MASAF register coordinates (approximate)"
     }
   ]
 }
