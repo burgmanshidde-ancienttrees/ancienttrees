@@ -1269,7 +1269,10 @@ PACE_PER_DAY = None
 # again and he asked whether 15 was too careful): steady growth, not the
 # ~40 a day of the burst before the demotion. Own trees only; a reader's tree
 # never waits for the pace.
-PACE_HARD_CAP = 25
+# 40 since 2026-11-03 (Hidde, "Ja, naar 40", turning the queue to the US and
+# the UK where people download and find nothing near). New trees without a
+# photograph carry the googlebot noindex, so the index does not grow with them.
+PACE_HARD_CAP = 40
 
 
 def check_publishing_pace(at_push=False):
