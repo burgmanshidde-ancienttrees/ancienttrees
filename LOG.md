@@ -12,6 +12,18 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: the Sintra ambassador's mail, two pins fixed, first photographs, two new trees
+
+What changed on the site (Sintra, from the ambassador's mail of 2026-11-03 with six photographs and four dropped map pins; her name stays out of the repo):
+- **The Fern Cork Oak** (sin_002): our iNaturalist photograph showed another tree, she wrote; it is off the page. Her photograph is the lead, a look up into the fern-covered crown in the strip. Pin moved to her pin on the main road (38.796150,-9.395652), which matches the ICNF record's own point within metres; confirmed.
+- **The Plane Tree of Parque da Liberdade** (sin_003): its first photographs, hers (lead plus a closer shot of the base). Pin moved across the hockey rink to her pin (38.795642,-9.385905), again matching ICNF's point; confirmed.
+- **New: the Moreton Bay Fig of Parque da Liberdade** (sin_007), from her photograph of a visibly big tree and her pin (38.795342,-9.385847). No register entry or age anywhere; the story says so and asks readers.
+- **New: the Sweet Chestnut of Caminho dos Frades** (sin_008), ICNF KNJ1/061, classified 1945, about 800 years by the register, 9.6 m girth at chest height (1989). It was blocked since July as private land and possibly dying after its crown was cut back in February 2025 (Agroportal/Lusa). Her photograph shows it in leaf from the public lane, so it ships as a view-only tree with the pin on the lane (38.799069,-9.399571).
+- Sintra's oldest tree is now the chestnut, not the cork oak: the oldest-tree page, the FAQ, the meta and the cork oak's story ("Sintra's oldest documented tree") were rewritten in English and Portuguese, and both new trees were translated into the PT overlay.
+
+All four photographs are a contributor's photographs sent by mail: up at once, uncredited, in the Montreal mtl_015 shape. gigantesverdes.pt gave nothing searchable without a session. Nothing was mailed.
+Breakage, not ours: preflight fails on site/src/components/AmbassadorLine.astro (typed text, already in HEAD). qa.py needs a built site, so CI checks it.
+
 ## 2026-11-03 session: app, your own tree's photo size, the Want to visit message, the freeze
 
 - **Your own tree's page now opens its photograph at the same size as ours** (Hidde: "die pagina's moeten gewoon hetzelfde zijn"). The hero read its shape only from the feed, so a tree of yours fell back to a fixed 300 points; it now reads the shape from your picture by heroFrame's rule (3:2 landscape, own shape up to 4:5). Not seen rendered: the simulator keeps no own trees while signed out.
