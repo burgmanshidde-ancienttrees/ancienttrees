@@ -1,0 +1,288 @@
+[
+ {
+  "id": "nyc_031",
+  "name": "The Osage Orange of Marcus Garvey Park",
+  "species": "Osage Orange (Maclura pomifera)",
+  "girth_cm": 463,
+  "location": {
+   "address": "Southwest corner of Marcus Garvey Park, Harlem, Manhattan",
+   "latitude": 40.803836,
+   "longitude": -73.945305,
+   "neighbourhood": "Harlem"
+  },
+  "verified_sources": [
+   "https://www.6sqft.com/the-great-trees-of-nyc-parks-updates-list-for-the-first-time-in-40-years/",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Maclura pomifera, dbh 58 in, Full/Good, record updated 2026-05-07)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 addition, id 108)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=108"
+  },
+  "access": "Free; public city park",
+  "transport": "Subway 2/3 at 125th St (Lenox Av), a short walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "2024 Great Trees addition (6sqft names it: unique twisting trunk, featured in art exhibitions). Parks listing as seen in search results (page itself 405/bot-blocked to curl): trunk diameter 58 in, SW corner of the park, wraparound trunk; referenced in Susan Stair's public art piece Tree Reflections (shown at Conference House Park, Staten Island). Pin: the only Maclura pomifera >=55 in dbh in the park in the Parks forestry points, dbh 58 equals the Great Tree figure, so pin treated as the tree; girth_cm = 58 in diameter x pi. Alive: forestry record updated 2026-05-07, condition Good; designated Oct 2024. Planting date and age not documented. Flagged: Parks page not fetched directly.",
+  "photo_candidate": null,
+  "age_estimate": "not documented"
+ },
+ {
+  "id": "nyc_032",
+  "name": "The American Elm of Mapes Park",
+  "species": "American Elm (Ulmus americana)",
+  "girth_cm": 495,
+  "location": {
+   "address": "Mapes Park, near East 180th Street and Mapes Avenue, Bronx",
+   "latitude": 40.846883,
+   "longitude": -73.885916,
+   "neighbourhood": "West Farms / Bronx Park South"
+  },
+  "verified_sources": [
+   "https://www.6sqft.com/the-great-trees-of-nyc-parks-updates-list-for-the-first-time-in-40-years/",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Ulmus americana, dbh 62 in, Full/Good, updated 2026-02-20)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 addition, id 71)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=71"
+  },
+  "access": "Free; public city park",
+  "transport": "Subway 2/5 at East 180th St, a few minutes' walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "2024 Great Trees addition. 6sqft: the elm inspired the neighbourhood to push for its preservation during the park renovations. Parks listing (seen in search results, page bot-blocked): trunk diameter 62 in, Community Board 6, Community Parks Initiative project credited with community members working to protect it; the 2021 Mapes ballfield reconstruction was a Community Parks Initiative job. Pin: the only American elm >=30 in dbh in the park, dbh 62 equals the Great Tree figure. Alive: forestry record updated 2026-02-20, condition Good. Height not found. A 62 in trunk is large for an urban American elm (Dutch elm disease survivor). Flagged: Parks page not fetched directly.",
+  "photo_candidate": null,
+  "age_estimate": "not documented"
+ },
+ {
+  "id": "nyc_033",
+  "name": "The Sycamore of Morningside Park",
+  "species": "American Sycamore (Platanus occidentalis)",
+  "girth_cm": 383,
+  "location": {
+   "address": "Morningside Park, beside a path fork just north of the West 120th Street entrance, Manhattan",
+   "latitude": 40.808763,
+   "longitude": -73.95666,
+   "neighbourhood": "Morningside Heights"
+  },
+  "verified_sources": [
+   "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Platanus occidentalis, dbh 48 in, Full/Good, record dated 2017-04-19)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 addition, id 107)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=107"
+  },
+  "access": "Free; public city park (steep slope park; stay on paths)",
+  "transport": "Subway 1 at 116th St-Columbia University or B/C at 116th St, about 10 minutes' walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "West Side Rag (fetched): the only new Manhattan addition in the Oct 2024 list, an American sycamore just north of West 120th Street in Morningside Park. Parks listing (search result, page bot-blocked): trunk diameter 48 in, next to a path fork north of the W 120th St entrance. Pin: the only American sycamore >=20 in dbh in the park in the forestry points, dbh 48 equals the Great Tree figure; plain-sycamore (Platanus occidentalis) is distinct from the London planes around it. Alive: Great Tree designation Oct 2024; forestry record itself dated 2017 (Good), so no fresh independent observation. Height not found. Age not documented. Flagged.",
+  "photo_candidate": null,
+  "age_estimate": "not documented"
+ },
+ {
+  "id": "nyc_034",
+  "name": "The Weeping Willow of the Creative Little Garden",
+  "species": "Weeping Willow (Salix babylonica)",
+  "girth_cm": 335,
+  "location": {
+   "address": "Creative Little Garden, 530 East 6th Street, East Village, Manhattan",
+   "latitude": 40.724549,
+   "longitude": -73.982658,
+   "neighbourhood": "East Village"
+  },
+  "verified_sources": [
+   "https://villageview.nyc/2024/12/04/great-trees-of-new-york-city/",
+   "https://www.6sqft.com/the-great-trees-of-nyc-parks-updates-list-for-the-first-time-in-40-years/",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Salix babylonica, dbh 42 in, Full/Fair, updated 2026-07-05)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 addition, id 102)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=102"
+  },
+  "access": "Community garden run by volunteers; open only at posted garden hours, check before going (hours not verified)",
+  "transport": "L train to 1st Av or F to 2nd Av, about 10 minutes' walk",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Creative Little Garden",
+   "radius_m": 50
+  },
+  "curation_status": "flagged",
+  "verify_notes": "Village View (fetched, Dec 2024): willow over six stories tall, canopy about 40 ft, trunk diameter 37 in, on a blue stone patio; after a 1970s fire the city cleared a tenement and designated the lot for community gardening, opened 1978, volunteer-run from the start. Parks listing (search result): same 37 in, 530 E 6th St, planted 1978 on an abandoned lot as a community effort, lost a major branch some years ago (snippet only). DISCREPANCY: Parks forestry points hold a weeping willow at the pin with dbh 42 in (updated 2026-07-05, Fair), i.e. 5 in more than the 2024 listing; girth_cm uses 42. The pin is the forestry point about 80 m from Nominatim's geocode of 530 E 6th St, hence approximate with a small named site. Another willow (dbh 41, El Jardin del Paraiso) stands about 450 m east: do not confuse. Flagged.",
+  "photo_candidate": null,
+  "age_estimate": "not documented"
+ },
+ {
+  "id": "nyc_035",
+  "name": "The Dawn Redwood of the Liz Christy Garden",
+  "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+  "age_estimate": "about 45 years",
+  "age_min": 40,
+  "age_max": 50,
+  "age_basis": "source",
+  "girth_cm": 239,
+  "height_m": 30,
+  "location": {
+   "address": "Liz Christy Community Garden, Bowery and East Houston Street, Manhattan",
+   "latitude": 40.724089,
+   "longitude": -73.991825,
+   "neighbourhood": "NoHo / East Village"
+  },
+  "verified_sources": [
+   "https://villageview.nyc/2024/12/04/great-trees-of-new-york-city/",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Metasequoia glyptostroboides, dbh 30 in, Full/Good, record 2019-09-12)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 list)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees"
+  },
+  "access": "Community garden run by volunteers; open at posted garden hours only (hours not verified, the garden's own site failed a certificate check); visible from Houston Street",
+  "transport": "B/D/F/M at Broadway-Lafayette St or 6 at Bleecker St, about 5 minutes' walk",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Liz Christy Community Garden",
+   "radius_m": 40
+  },
+  "curation_status": "flagged",
+  "verify_notes": "Village View (fetched): dawn redwood planted in 1981 by Tessa Huxley, about 100 ft tall, visible along Houston Street from Avenue B to Greene Street; Huxley recalled scraping the top of the subway tunnel digging the hole; noticeably cooler beneath it. Garden is the city's first community garden (Liz Christy, 1973: not checked here). Age is a documented planting date (45 years). Pin: the only dawn redwood in the surrounding forestry points, dbh 30 in, record dated 2019; kept approximate because only one source gives the height and the Parks page was not fetched. The Parks Great Trees page id unknown (no page reached). Flagged.",
+  "photo_candidate": null
+ },
+ {
+  "id": "nyc_036",
+  "name": "The White Ash of Van Cortlandt Park",
+  "species": "White Ash (Fraxinus americana)",
+  "girth_cm": 479,
+  "height_m": 25,
+  "location": {
+   "address": "East side of the entrance to the cross-country trail, Van Cortlandt Park, Bronx",
+   "latitude": 40.89141,
+   "longitude": -73.891211,
+   "neighbourhood": "Van Cortlandt Park"
+  },
+  "verified_sources": [
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Fraxinus americana, dbh 60 in, Full/Fair, updated 2026-05-31)",
+   "https://en.wikipedia.org/wiki/User:Found5dollar/Great_Trees_of_New_York_City (draft that transcribes the Parks entry: 82.8 ft, 56.6 in, 60.5 ft spread; not an authority)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (1985 list, id 23)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=23"
+  },
+  "access": "Free; public city park",
+  "transport": "Subway 1 to Van Cortlandt Park-242nd St, about 15 minutes' walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "One of the original 1985 Great Trees (White Ash at Van Cortlandt Park; Parks id 23). Parks figures as transcribed in the wiki draft: 82.82 ft tall, 56.6 in trunk diameter in the original measure; Parks search-result snippet gives about 83 ft and 60 in today. A white ash this big is rare since emerald ash borer: the forestry record (updated 2026-05-31, condition Fair) is the live evidence. Pin: forestry point, dbh 60 equals the current Parks figure; the other ash within 100 m (40 in) does not match. Height 25 m = 82.8 ft from the 1985 figure. A cloned sapling of this tree stands at the south end of the Parade Ground (do not confuse). Near the Van Cortlandt House Museum cluster (nyc_010 red horse chestnut). Flagged: Parks page not fetched directly; wiki draft is not an authority.",
+  "photo_candidate": null,
+  "age_estimate": "not documented"
+ },
+ {
+  "id": "nyc_037",
+  "name": "The American Elm of Crotona Park",
+  "species": "American Elm (Ulmus americana)",
+  "girth_cm": 415,
+  "location": {
+   "address": "Crotona Park, near the Claremont Parkway entrance on Crotona Park East, Bronx",
+   "latitude": 40.835789,
+   "longitude": -73.895264,
+   "neighbourhood": "Crotona Park"
+  },
+  "verified_sources": [
+   "https://www.6sqft.com/the-great-trees-of-nyc-parks-updates-list-for-the-first-time-in-40-years/",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Ulmus americana, dbh 52 in, Full/Fair, updated 2026-07-20)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 addition, id 68)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=68"
+  },
+  "access": "Free; public city park",
+  "transport": "Bronx subway 2/5 serves the park's east side; check the exact stop",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "2024 Great Trees addition (6sqft names it in a photo caption only). Parks listing (search result, bot-blocked): American elm, 52 in trunk, north side near the Claremont Parkway / Crotona Park East entrance. The forestry point with dbh 52 (the only elm >=50 in the park) lies at the stated coordinates, but I could not geocode the Claremont Parkway entrance to prove it matches 'north side', so the pin is approximate. Alive: forestry record updated 2026-07-20 (Fair). Height and age not found. Flagged.",
+  "photo_candidate": null,
+  "age_estimate": "not documented"
+ },
+ {
+  "id": "nyc_038",
+  "name": "The Weeping Willow of El Jardin del Paraiso",
+  "species": "Weeping Willow (Salix sp.)",
+  "girth_cm": 327,
+  "location": {
+   "address": "El Jardin del Paraiso community garden, East 5th Street, Lower East Side, Manhattan",
+   "latitude": 40.72399,
+   "longitude": -73.977299,
+   "neighbourhood": "Alphabet City"
+  },
+  "verified_sources": [
+   "https://villageview.nyc/2024/12/04/great-trees-of-new-york-city/",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Salix spp., dbh 41 in, Full/Fair, updated 2025-04-15)"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 addition, id 105)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=105"
+  },
+  "access": "Community garden; open only at posted garden hours, check before going (hours not verified)",
+  "transport": "L train to 1st Av, about 12 minutes' walk",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "El Jardin del Paraiso",
+   "radius_m": 50
+  },
+  "curation_status": "flagged",
+  "verify_notes": "Village View (fetched): willow in the Lower East Side's largest community garden, climbed by schoolchildren from the nearby New Amsterdam School; Liz Christy planted it 'years ago' per the article (no date, treat as unsourced); New School community-gardening class held there since 2011. No height or diameter in the article. The forestry point (Salix spp., dbh 41) is the only large willow within the garden's block; I could not read the Parks page for its diameter or confirm the point sits inside the garden fence, hence approximate. Sits about 450 m from nyc_034: a two-garden walk. Flagged.",
+  "photo_candidate": null,
+  "age_estimate": "not documented"
+ },
+ {
+  "id": "nyc_039",
+  "name": "The Elms of the Heather Garden Promenade",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "over a century",
+  "age_min": 100,
+  "age_max": 130,
+  "age_basis": "source",
+  "girth_cm": 471,
+  "location": {
+   "address": "Stan Michels Promenade above the Heather Garden, Fort Tryon Park, Manhattan",
+   "latitude": 40.861512,
+   "longitude": -73.933159,
+   "neighbourhood": "Washington Heights"
+  },
+  "verified_sources": [
+   "https://forttryonpark.org/american-elm-trees/",
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: two American elms near the promenade, dbh 59 in updated 2026-09-02 and 54 in updated 2024-08-06, both Full/Good)"
+  ],
+  "access": "Free; public city park",
+  "transport": "A train to 190th St, then a short walk; or 1 train to 191st St",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Fort Tryon Park Trust (fetched): elms described as 100+ years old, planted widely in the early 1900s; the Trust pays to inoculate 48 elms against Dutch elm disease every other year; many original elms already died. The most-cited tree is the large elm at the northern end of the Stan Michels Promenade whose low branches reach into the Heather Garden (the Trust's search-snippet text says the Heather Garden opened 1935, promenade lined with American elms). No source names a single tree or gives its size. The two biggest American elms in the park's forestry points are 59 in and 54 in about 70 m apart along the promenade, but I could not prove which is the 'northern end' elm, so the pin is one of them and approximate; girth_cm uses 59 in diameter x pi. Age 'over a century' is the Trust's 100+ year-old wording for the stock, not a date for this tree. Entry is a small group of two. Flagged.",
+  "photo_candidate": null
+ },
+ {
+  "id": "nyc_040",
+  "name": "The Ginkgo of the Cloisters Lawn",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "girth_cm": 415,
+  "location": {
+   "address": "South end of the Cloisters Lawn, Fort Tryon Park, Manhattan",
+   "latitude": 40.863428,
+   "longitude": -73.93281,
+   "neighbourhood": "Washington Heights"
+  },
+  "verified_sources": [
+   "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Ginkgo biloba, dbh 52 in, Full/Good, updated 2025-02-19)",
+   "NYC Parks Great Trees listing, seen only as a search-result snippet: ginkgo at the south end of the Cloisters Lawn, 48 in trunk diameter"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (2024 list; entry id not found)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees"
+  },
+  "access": "Free; the lawn is public park (the Cloisters museum itself is separate and ticketed)",
+  "transport": "A train to 190th St then bus or walk through the park, or 1 train to 191st St; about 15 minutes' walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Parks Great Trees (snippet, page bot-blocked): ginkgo, south end of the Cloisters Lawn, 48 in diameter. Forestry points hold two ginkgos >=20 in in the park: 52 in at this pin and 50 in about 450 m south near the Heather Garden; the pin is the one nearest the Cloisters Lawn, not proven identical, so approximate (the 4 in gap is normal growth or measure difference). Alive: record updated 2025-02-19, Good. Age and planting date not documented. Flagged: register page not fetched.",
+  "photo_candidate": null
+ }
+]

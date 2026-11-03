@@ -1,0 +1,8 @@
+# New York 3 verify pass (2026-11-02)
+
+Key technique: the NYC Parks Great Trees site (nycgovparks.org/facilities/great-trees?id=N, N 0 to 189, 119 entries) 405s/202s to curl and WebFetch, but loads in the Browser pane; a same-origin fetch() of each ?id= page returns text with `lat ... lon ... Tree Map ID`, borough, species, trunk diameter, designation year, location. Every Great Tree has a coordinate. 29 delivered (nyc_070 to nyc_098; 091-093, 097, 098 approximate: garden or cemetery entries without a Tree Map ID); the rest of Brooklyn, Queens and SI entries are in new-york-3-rejects.json as leads. Bronx and Manhattan entries not examined.
+Pins marked confirmed: Parks' own tree-point plus Tree Map ID (the forestry inventory's individual tree id). Four decimals in the page (about 10 m).
+Not done: Green-Wood, BBG, Queens Botanical, Kissena grove, Moravian Cemetery (time went to the register). The 2015 street tree census DBH column has gross errors (425 in oaks), unusable as a size source.
+Possible overlap with another pass at nyc_031 to 069: none seen in new-york-verified.json at time of writing (only nyc_031 Saratoga).
+Unchecked: bus routes and SIR walking distances in `transport` are by straight-line from remembered station positions; the writer should say "check route".
+Second session 2026-11-03 added BBG pawpaw/parasol/winterberry, Prospect Park pagoda and English elm, Ridge Blvd elm, Kissena parrotia, Maple Grove beeches. Still undone: Green-Wood (own tree finder), Queens Botanical, Moravian Cemetery, Dawn redwood 151 Willow St (Parks id=1; house frontage, left as lead), Katsura 15 Shore Rd (Parks id=54; Douglaston house, lead). photo_candidate: none recorded for any tree (no photo hunt).

@@ -1,0 +1,92 @@
+[
+ {
+  "candidate": "Lincoln Memorial Elm (held lead)",
+  "reason": "no pin: NPS point among many elms; no geotagged Commons tree file found; OSM has no tagged tree there",
+  "coordinate": "38.88819,-77.04888"
+ },
+ {
+  "candidate": "Theodore Roosevelt Island Bald Cypress (held lead)",
+  "reason": "no pin: several cypresses along the boardwalk; not retried beyond the earlier pass",
+  "coordinate": "38.89481,-77.06083"
+ },
+ {
+  "candidate": "Congressional Cemetery Swamp White Oak (held lead)",
+  "reason": "still no pin: OSM bbox around the cemetery has no tagged trees; Commons geosearch (400 m) returns only graves and cenotaphs; arboretum page gives species, 'over 120 years' (1913 photographs), Tree Walk stop 1, no position",
+  "coordinate": "38.88265,-76.97888"
+ },
+ {
+  "candidate": "Congressional Cemetery Southern Magnolias (Tree Walk stop 5)",
+  "reason": "no pin; several trees 'near the chapel, LGBTQ+ section intersection, cenotaphs'; young in 1913 photographs; a cluster, not one tree",
+  "coordinate": "38.8812,-76.9788"
+ },
+ {
+  "candidate": "Rock Creek Park Willow Oak, Rock Creek Trail Exercise Course (Casey Trees 2023: 250 in circumference, 79.61 in DBH, staff-measured)",
+  "reason": "real and big but no pin: the course is a 1.5 mile trail with many stations; OSM has one fitness_station node (38.92146,-77.05170) and about 25 untagged tree nodes around it; none identifies the oak. A GPS fix or geotagged photo would free it",
+  "coordinate": "about 38.9215,-77.0517"
+ },
+ {
+  "candidate": "Union Square bur oak, U.S. Capitol Grounds (AOC April 2026: 64 in DBH, 75 ft, 113 ft spread, 'officially the biggest tree on the Capitol Grounds')",
+  "reason": "AOC blog 'Going on a Tree Hunt' read via Wayback; says 'in a clearing south of the tall ones' near the Reflecting Pool and past the Grant Memorial; no coordinate and possibly the same tree as published wdc_001 (2006 survey 165 in girth); cannot be separated without a position",
+  "coordinate": "about 38.8894,-77.0126"
+ },
+ {
+  "candidate": "Capitol Square NE tulip tree (AOC 61 in DBH, 85 ft)",
+  "reason": "very likely the tree already published as wdc_013 (largest Olmsted tuliptree, Capitol Square); not a new tree",
+  "coordinate": "38.892,-77.0065"
+ },
+ {
+  "candidate": "Summerhouse Japanese pagoda tree (AOC 63 in DBH)",
+  "reason": "AOC itself says it has two codominant stems and has been heavily pruned; no pin",
+  "coordinate": "about 38.8897,-77.0098"
+ },
+ {
+  "candidate": "Wych elm, Capitol Grounds (AOC 69 in DBH)",
+  "reason": "AOC says the crown is heavily reduced; no pin",
+  "coordinate": "unknown"
+ },
+ {
+  "candidate": "1717 Rhode Island Ave NW willow oak (inventory DBH 85 in)",
+  "reason": "data error: the same record has crown area about 936 sq ft and crown height about 33 ft, impossible for an 85 in willow oak",
+  "coordinate": "38.90636,-77.03934"
+ },
+ {
+  "candidate": "700 block Madison Place NW American elm (inventory DBH 59 in, NPS)",
+  "reason": "the record is flagged Retired by an arborist on 2021-02-01 (to stop it appearing in his searches), last condition 2021; no recent life check",
+  "coordinate": "38.89904,-77.03524"
+ },
+ {
+  "candidate": "Hearst Park willow oaks (inventory DBH 59 to 62 in, three trunks within about 40 m, 3700 block Idaho Ave NW)",
+  "reason": "an ensemble inside a large park with no small named site; the biggest (61.9 in) is rated Fair with basal decay and fruiting bodies; no single trunk to point to",
+  "coordinate": "38.9393,-77.0710"
+ },
+ {
+  "candidate": "Oak Hill Cemetery arbor tour (3001 R St NW)",
+  "reason": "cemetery's Georgetown Garden Club PDF is a numbered species tour with no ages, girths or coordinates; 'few trees date to the founding'; mentions several large old ginkgos, a large sourwood and a lacebark pine only as species notes",
+  "coordinate": "38.9137,-77.0585"
+ },
+ {
+  "candidate": "Washington National Cathedral Glastonbury thorn, Senior Circle near St. Albans School entrance",
+  "reason": "real and alive (All Hallows Guild page; SDNQ 2024 says planted 1901 from the Glastonbury original, one source for the date) but no coordinate for Senior Circle in OSM or Nominatim; small tree; keep as a lead for a pin",
+  "coordinate": "about 38.930,-77.071"
+ },
+ {
+  "candidate": "Washington National Cathedral Bishop's Garden Atlas cedars (planted 1902 per Heavers 2019 paper, brought from Palestine as stand-ins for Lebanon cedars)",
+  "reason": "single scholarly source seen only as a search summary, not fetched; no pin",
+  "coordinate": "about 38.9305,-77.0715"
+ },
+ {
+  "candidate": "Smithsonian Gardens tree collection / tree map",
+  "reason": "gardens.si.edu returned a Cloudflare 500 'temporarily unavailable' on three tries (host to retry later); the known Smithsonian Witness Elm is already wdc_015",
+  "coordinate": "unknown"
+ },
+ {
+  "candidate": "Northampton Street white oak and the 2101 Constitution Ave heritage stand",
+  "reason": "dead or removed (the 2101 Constitution Ave stand is recorded as removed 2026-10); private ground",
+  "coordinate": "38.8925,-77.0480"
+ },
+ {
+  "candidate": "DC inventory records with implausible DBH (3830 Livingston St red maple 1471 in, 51 Kennedy St maple 873 in, 1829 Irving St mulberry 813 in, 749 Upsal St elm 288 in, Canal St catalpa 275 in, 820 8th St NE pin oak 116 in)",
+  "reason": "typing errors in the inventory; ignore",
+  "coordinate": "various"
+ }
+]

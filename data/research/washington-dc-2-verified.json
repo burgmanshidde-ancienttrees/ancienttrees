@@ -1,0 +1,292 @@
+[
+ {
+  "id": "wdc_026",
+  "name": "The T Street Champion Linden",
+  "species": "American Linden (Tilia americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 442,
+  "location": {
+   "address": "3819 T St NW, Washington, DC (street tree, public sidewalk)",
+   "latitude": 38.915376,
+   "longitude": -77.075032,
+   "neighbourhood": "Burleith / Georgetown"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105903234&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 18456-380-3005-0216-000; condition: Excellent, assessed 2026-10-07; owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105903234&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk, viewable from the pavement at any hour.",
+  "transport": "No Metro within about 1.5 km. Nearest is Foggy Bottom-GWU (about 2 km); Georgetown and Wisconsin Avenue buses are the usual approach.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable: the DC inventory tags this tree \"City Tree champion of its genus\", i.e. the arborist rates it the best linden in the city's care (the record gives no contest or measurement list behind the wording); DBH 55.4 in (about 141 cm; girth about 442 cm computed from DBH). LiDAR crown fields in the same record: crown height about 73 ft, crown area about 4,050 sq ft. Alive: arborist condition entry \"Excellent\" dated 2026-10-07. Pin: the inventory GPS point for FACILITYID 18456-380-3005-0216-000 (tree box); the nearest neighbours within 20 m are a silver maple of 35 in and small trees, so this is the dominant crown at the address. ONE SOURCE (the owner of the tree, DDOT UFD); the \"champion\" wording is the arborist note, not a published contest. Age: not documented; no planting date in the record. Species per inventory (Tilia americana). Access: public sidewalk. Photo: none found (Commons geosearch 60 m: no file). Recognition line (from the record only): The street linden at 3819 T St NW, tagged in the city inventory as the champion of its genus.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_027",
+  "name": "The Hardy Park Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 512,
+  "location": {
+   "address": "Hardy Park (DC Parks and Recreation), Foxhall / Palisades side of Georgetown, Washington, DC",
+   "latitude": 38.909649,
+   "longitude": -77.084977,
+   "neighbourhood": "Foxhall / Palisades (Ward 3)"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106075713&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2026-05-14 (pruned and injected against Dutch elm disease, 2025 and 2026 notes); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106075713&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park tree; open park hours.",
+  "transport": "No Metro nearby; about 3 km from Foggy Bottom-GWU. Georgetown buses and a short ride from M Street.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 64.2 in (about 163 cm; girth about 512 cm computed from DBH), among the two largest American elms recorded on public ground in the inventory (with the 38th Street Elm, wdc_028); crown area in the record about 6,600 sq ft (about 615 m2), a wide open-grown crown. Alive and cared for: condition \"Good\" 2026-05-14, notes \"Pruned 3/25; inject1\" (the elm is injected, the standard Dutch elm disease treatment). Pin: inventory GPS point (record created 2019-09-04), neighbours within 20 m are two small Kwanzan cherries (13 to 14 in) and a redbud, so the elm is the one big crown there. ONE SOURCE (DDOT UFD inventory; the owner of the ground is DPR). Age not documented. Photo: none found (Commons geosearch 60 m). Recognition line (from the record only): A very large open-grown elm in Hardy Park, towering over the park's small cherries and redbud.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_028",
+  "name": "The 38th Street Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 508,
+  "location": {
+   "address": "2716 38th St NW, Washington, DC (street tree, public sidewalk)",
+   "latitude": 38.925619,
+   "longitude": -77.074686,
+   "neighbourhood": "Glover Park"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105990005&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 10380-270-3001-0016-000; condition: Good, assessed 2026-05-28 (pruned 3/26, injected); owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105990005&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk.",
+  "transport": "No Metro within 1.5 km; Wisconsin Avenue buses serve Glover Park; Foggy Bottom-GWU is about 3 km.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 63.7 in (about 162 cm; girth about 508 cm computed from DBH), one of the three or four largest American elms in the DC inventory. LiDAR crown fields: crown height about 78 ft, area about 2,600 sq ft. Alive: \"Good\" 2026-05-28, \"Pruned 3/26; inject1\". Pin: inventory GPS point, FACILITYID 10380-270-3001-0016-000, a tree-box street tree; nearest neighbours are a 24 in scarlet oak and small trees. ONE SOURCE (DDOT UFD). Age not documented. Photo: none found. Recognition line (from the record only): A huge elm on 38th Street NW, far larger than the neighbouring street trees.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_029",
+  "name": "The Constitution Avenue Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 453,
+  "location": {
+   "address": "2200 block of Constitution Ave NW, Washington, DC (street tree beside the Mall at 23rd Street)",
+   "latitude": 38.892248,
+   "longitude": -77.049072,
+   "neighbourhood": "Foggy Bottom / West Potomac Park edge"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105920102&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 12535-220-3005-0063-000; condition: Good, assessed 2025-05-07 (heavy prune Dec 2023); owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105920102&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public pavement beside the Mall.",
+  "transport": "Foggy Bottom-GWU Metro about 1 km (roughly 12 minutes on foot); 320 m from the Willow Oak Circle (wdc_009).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 56.8 in (about 144 cm; girth about 453 cm computed from DBH). LiDAR crown height about 84 ft, area about 3,860 sq ft. Alive: \"Good\" 2025-05-07; note \"Heavy prune Dec 2023\". Pin: inventory GPS point for FACILITYID 12535-220-3005-0063-000; a second elm of 43 in stands within about 60 m and one of 24.6 in within 20 m, so this is the largest of a row of elms: say so. Context: a private heritage-tree stand at 2101 Constitution Ave (several trunks of 48 to 73 in) was recorded as removed in Oct 2026, so this public elm is the survivor in the area; do not claim the removed trees. ONE SOURCE (DDOT UFD). Age not documented. Joins the Mall cluster (wdc_009 Willow Oak Circle, wdc_010 FDR cork trees). Recognition line (from the record only): The biggest of the elms along the north side of Constitution Avenue at 23rd Street.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_030",
+  "name": "The East Capitol Street Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 431,
+  "location": {
+   "address": "322 East Capitol St NE, Washington, DC (street tree on East Capitol Street)",
+   "latitude": 38.889889,
+   "longitude": -77.000982,
+   "neighbourhood": "Capitol Hill"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105895678&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 53191-030-3001-0316-000; condition: Fair, assessed 2026-05-26 (dieback since 2019; branch removal May 2026); owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105895678&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk.",
+  "transport": "Capitol South Metro about 0.8 km, Union Station about 1.1 km (roughly 12 to 15 minutes on foot); about 600 m from the Capitol Grounds trees (wdc_013).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 54.0 in (about 137 cm; girth about 431 cm computed from DBH). LiDAR crown height about 53 ft, area about 1,980 sq ft. The arborist note reads \"BHL may 2026; Dieback started 2019. A real thiccums!\" (BHL = broken hanging limb). Condition \"Fair\", not good: flag. Pin: inventory GPS point for FACILITYID 53191-030-3001-0316-000; neighbours within 20 m are two Princeton elms (5 and 20 in) and an American elm of 18.8 in, so this trunk is clearly the big one. ONE SOURCE (DDOT UFD). Age not documented. Verify the address phrase \"322 EAST CAPITOL ST BN\" as the inventory's own wording; the coordinate is what to trust. Recognition line (from the record only): A massive elm on East Capitol Street dwarfing the younger Princeton elms planted beside it.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_031",
+  "name": "The Volta Park Osage Orange",
+  "species": "Osage Orange (Maclura pomifera)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 456,
+  "location": {
+   "address": "Volta Park, 1500 block of 34th St NW, Georgetown, Washington, DC",
+   "latitude": 38.909841,
+   "longitude": -77.067763,
+   "neighbourhood": "Georgetown"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106069005&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 10340-155-3001-0095-000; condition: Fair, assessed 2026-08-19 (lost a 4 in branch in the January 2025 snow storm); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106069005&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park (Volta Park); open park hours.",
+  "transport": "Foggy Bottom-GWU Metro about 2 km; Georgetown buses; walkable from Dumbarton Oaks Park and Montrose Park (about 1 km) so it joins the Georgetown cluster (wdc_011, wdc_014, wdc_018).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 57.2 in (about 145 cm; girth about 456 cm computed from DBH), by a wide margin the largest Osage orange in the DC inventory: the other Osage oranges within 20 m measure 19.6 to 38.1 in. Osage orange (Maclura pomifera) rarely reaches this trunk size; sanity check: plausible for a very old specimen, but treat the figure as an arborist measurement (possibly multi-stem; the record does not say). Crown area about 950 sq ft, crown height about 63 ft. Alive: \"Fair\" 2026-08-19. Pin: inventory GPS point for FACILITYID 10340-155-3001-0095-000, among a group of Osage oranges in the park, so a visitor needs the largest of the group. ONE SOURCE (DDOT UFD). Age not documented. Flag: the record carries no stem count; the group of Osage oranges at Volta Park is itself notable. Recognition line (from the record only): The largest of the Osage oranges in Volta Park, a mature Osage orange with a trunk much heavier than those beside it.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_032",
+  "name": "The Banks Place Willow Oak",
+  "species": "Willow Oak (Quercus phellos)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 538,
+  "location": {
+   "address": "Park opposite 6112 Banks Pl NE (6201 Banks Pl NE in the inventory), Washington, DC",
+   "latitude": 38.891874,
+   "longitude": -76.913389,
+   "neighbourhood": "Northeast DC (Ward 7)"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106070398&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2025-07-24 (deadwood and clearance prune); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106070398&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park tree beside Banks Place NE.",
+  "transport": "Benning Road Metro about 2 km; Minnesota Avenue Metro about 3 km. Not walkable from the Mall cluster.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 67.4 in (about 171 cm; girth about 538 cm computed from DBH), the largest willow oak on DPR ground in the inventory list I pulled (DBH 50 in and up, public owners). LiDAR crown height about 88 ft, crown area about 5,670 sq ft (open-grown). Alive: \"Good\" 2025-07-24. Pin: inventory GPS point (record created 2018-12-24); within 20 m only honeylocusts, horse chestnuts and a hackberry of 1.5 to 2 in, i.e. newly planted trees, so the oak is the lone big crown. A second willow oak of 53.6 in (objectid 106070403) stands about 200 m east at \"Opp 6220 Banks Place NE\". ONE SOURCE (DDOT UFD). Age not documented. The Casey Trees 2023 contest reports willow oaks to 83 in DBH in DC and calls them fast growers, so age is likely well under 150 years: do not over-age it. Recognition line (from the record only): A wide willow oak standing alone in the Banks Place park, with the rest of the park planted with saplings.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_033",
+  "name": "The Lansburgh Park Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 407,
+  "location": {
+   "address": "Lansburgh Park, 1098 Delaware Ave SW, Washington, DC",
+   "latitude": 38.877835,
+   "longitude": -77.012702,
+   "neighbourhood": "Southwest"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106065328&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2026-05-26 (an 8 in limb failed in the 30 April 2021 wind storm; pop-up arboretum); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106065328&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park beside a dog park; open park hours.",
+  "transport": "Waterfront Metro about 0.5 km (walk of ~7 minutes); about 1.2 km from the Botanic Garden elm (wdc_006).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 51.0 in (about 130 cm; girth about 407 cm computed from DBH). The arborist note: \"Awesome tree; Leaning over dog park.\" LiDAR crown height about 41 ft, area about 1,710 sq ft (a lean and a lost limb; the crown is modest). Alive: \"Good\" 2026-05-26. Pin: inventory GPS point; the only neighbour within 20 m is a 2 in pawpaw, so the elm is the lone large tree. ONE SOURCE (DDOT UFD). Age not documented. Lower-ranked than the other new elms on size. Recognition line (from the record only): A large leaning elm over the dog park at Lansburgh Park.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_034",
+  "name": "The Garfield Park Zelkova",
+  "species": "Japanese Zelkova (Zelkova serrata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 408,
+  "location": {
+   "address": "Garfield Park, Capitol Hill (aligned with 146 F St SE), Washington, DC",
+   "latitude": 38.881808,
+   "longitude": -77.00437,
+   "neighbourhood": "Capitol Hill (Southeast)"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106057905&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2025-09-12 (\"very minor tip dieback; looking pretty good!\"); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106057905&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park; open park hours.",
+  "transport": "Capitol South Metro about 0.5 km (roughly 7 minutes on foot).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 51.1 in (about 130 cm; girth about 408 cm computed from DBH), the largest Japanese zelkova in the inventory list I pulled (DBH 50 in and up, public owners), by a wide margin: the other zelkovas within 20 m measure 15.7 and 18.4 in. Sanity check: a very large zelkova, plausible for a century-old park specimen, but no planting date is recorded so do not date it. LiDAR crown height about 62 ft, area about 3,700 sq ft. Alive: \"Good\" 2025-09-12. Pin: inventory GPS point; the record notes it is aligned with 146 F St SE (street frontage of the park). ONE SOURCE (DDOT UFD). Joins the Capitol Hill cluster with wdc_013 and the East Capitol Street Elm. Recognition line (from the record only): The biggest zelkova in Garfield Park, with a trunk much heavier than the other zelkovas beside it.",
+  "photo_candidate": null
+ },
+ {
+  "id": "wdc_035",
+  "name": "The Harvard Street Willow Oak",
+  "species": "Willow Oak (Quercus phellos)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 491,
+  "location": {
+   "address": "1661 Harvard St NW, Washington, DC (street tree, public sidewalk)",
+   "latitude": 38.92724,
+   "longitude": -77.039697,
+   "neighbourhood": "Mount Pleasant / Columbia Heights"
+  },
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105910332&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 14374-168-3005-0154-000; condition: Excellent, assessed 2025-06-04; owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105910332&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk.",
+  "transport": "Columbia Heights Metro about 0.7 km (roughly 9 minutes on foot).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 61.5 in (about 156 cm; girth about 491 cm computed from DBH). LiDAR crown height about 90 ft, crown area about 5,100 sq ft. Alive: condition \"Excellent\" 2025-06-04, note \"Deadwood\". Pin: inventory GPS point for FACILITYID 14374-168-3005-0154-000; within 20 m stand pin oaks of 31 and 34 in and a willow oak of 32.5 in, so this willow oak is nearly twice their diameter. ONE SOURCE (DDOT UFD). Age not documented. Recognition line (from the record only): A giant willow oak in front of 1661 Harvard Street, about twice the girth of the oaks around it.",
+  "photo_candidate": null
+ }
+]

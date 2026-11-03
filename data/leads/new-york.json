@@ -1379,6 +1379,201 @@
       "source": "Westchester County (NY) heritage trees (government). DBH in inches in the source. Real place name and true travel time from Manhattan. Facts only.",
       "status": "open",
       "verify_2026_11_01": "2026-11-01 verify pass: Westchester inventory row carries only a species code and coordinates, no size, age, name or site. Nothing to verify; not a designated tree. Not shipped."
+    },
+    {
+      "name": "Woodlawn Cemetery White Oak (oldest tree at Woodlawn, Parks id 32) and European cutleaf beech (id 25), weeping beech (24)",
+      "reason": "alive/exists per Parks listings (search snippets) and Woodlawn Conservancy arboretum page, but no coordinate in reach (cemetery trees absent from the Parks forestry points); sources conflict on the beech location (Woodbine Plot vs Manger lot); kept as leads for a pass with a cemetery map",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Wave Hill American elm (114.8 ft, 53.6 in), sugar maple, lacebark pine",
+      "reason": "1985 Great Trees per the wiki draft; ticketed garden, not a one-glance site, no tree coordinate; lead",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Corlear Avenue sycamore, W 231st St (Parks id 14)",
+      "reason": "no matching 53 in sycamore in the forestry points; no coordinate",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Kappock St osage orange; 710 W 246th St slippery elm; 2151 Newbold Ave sweetgum",
+      "reason": "stand at apartment buildings / a VFW post address, not clearly public (hard rule 10)",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Joyce Kilmer Park American linden",
+      "lat": 40.8285,
+      "lng": null,
+      "reason": "no matching large linden in forestry points (largest 29 in silver linden); cannot pin",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Stevens Institute elms and cottonwood (Hoboken, Castle Point Terrace)",
+      "lat": 40.7447,
+      "lng": null,
+      "reason": "NJDEP rows are residential addresses; search found a Wikipedia list entry only (elm 207 in girth, 90 ft) with no site or alive evidence; not verified",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Pelham Bay Park War Memorial littleleaf linden",
+      "lat": 40.8595,
+      "lng": null,
+      "reason": "no linden match in forestry points; cannot pin",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Census outliers: pin oak 120 in (40.7610,-73.9399), European hornbeam 115 in (40.7528,-73.9499), American elm 111 in (40.8218,-73.9158), ginkgo 111 in (40.7741,-73.9636), American elm 79 in (W 123rd St, 40.8096,-73.9563), Kentucky yellowwood 80 in (Mosholu Pkwy, 40.8801,-73.8846), beech 64 in (E Gun Hill Rd, 40.8610,-73.8296)",
+      "reason": "forestry-point dbh values implausible or street-side with no naming body or second source; need a field measure, not shipped",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Inwood Hill Park tulip trees, cottonwoods, American beech 57 in (40.8735,-73.9236)",
+      "lat": 40.8735,
+      "lng": null,
+      "reason": "no individual tree named by any source; Shorakkopoch tulip tree is fallen (rock marker only), Parks hiking page claim of two old cottonwoods conflicts with other sources; lead only",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Fort Tryon Siberian elm at Heather Garden south entrance (Great Tree, 29 in)",
+      "lat": 40.8588,
+      "lng": null,
+      "reason": "small trunk, no clear match among 32-39 in Siberian elms in the forestry points",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Bartow-Pell treaty elm, James Madison Tree, Anne Frank Tree, Camperdown Elm East Green",
+      "reason": "earlier leads re-read: young or ticketed or alive/identity unproven; no new evidence this pass",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-2-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Bald cypress, Flushing High School (Parks id=48)",
+      "lat": 40.7642,
+      "lng": -73.8276,
+      "reason": "School frontage on Northern Blvd; no evidence the grounds are open; six trees, not one point. Lead only.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Bald cypress, 143-66 Sanford Ave (Parks id=51)",
+      "lat": 40.7587,
+      "lng": -73.8209,
+      "reason": "Residential address, likely a front yard: hard rule 10.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Eastern cottonwood, 184 Sprague Ave SI (Parks id=66)",
+      "lat": 40.5068,
+      "lng": -74.2387,
+      "reason": "House address, access unclear; not verified public.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "American elm, Freshkills/Davis refuge (Parks id=124)",
+      "lat": 40.5925,
+      "lng": -74.1658,
+      "reason": "Lifecheck NONE and access to the refuge east of 890 Travis Ave not settled.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "American elm, 92-22 55 Ave Elmhurst (Parks id=113)",
+      "lat": 40.7375,
+      "lng": -73.8696,
+      "reason": "Lifecheck NONE; street-in-front-of-house; lead.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Red oak, 195 East 3 St Kensington (Parks id=95)",
+      "lat": 40.6471,
+      "lng": -73.978,
+      "reason": "Brooklyn Paper: stands in front of a home; sidewalk status not settled; lead.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Pin oak (twin), 351 88th St Bay Ridge (Parks id=93)",
+      "lat": 40.6217,
+      "lng": -74.03,
+      "reason": "Fronts an apartment building, owners-maintained beds; sidewalk status not settled; lead.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "American elm, 794 Quincy St (Parks id=87)",
+      "lat": 40.6895,
+      "lng": -73.928,
+      "reason": "Street tree, valid lead, not taken for time (2024 Great Tree, 38 in).",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Willow oak, 86 Herbert St (Parks id=83)",
+      "lat": 40.7203,
+      "lng": -73.9415,
+      "reason": "Street tree, valid lead, not taken for time (2024, 39 in).",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Shumard oak 385 6th Ave (id=90), weeping willow 6/15 garden (id=91), American elm W 1st St (id=94), redbud McGolrick (id=84)",
+      "lat": 40.6698,
+      "lng": -73.9822,
+      "reason": "Valid 2024 Great Trees with Parks coordinates; not taken for time; leads.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Black oak, Queens (Parks id=117)",
+      "lat": 40.6962,
+      "lng": -73.849,
+      "reason": "Parks entry has no location text or species detail; unplaceable beyond coordinate.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Swamp white oak SI (id=127) and Osage orange grove (id=65), Ginkgo (id=86)/Weeping beech (id=89) Brooklyn",
+      "lat": 40.5558,
+      "lng": -74.1526,
+      "reason": "Parks entries without any description; leads.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-3-rejects.json",
+      "status": "open"
     }
   ],
   "blocked": [

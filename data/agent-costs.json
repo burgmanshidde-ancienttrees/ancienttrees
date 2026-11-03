@@ -15331,6 +15331,54 @@
       "tokens": 128184,
       "trees": 12,
       "note": "Italian overlay for the 12 new Naples and Palermo trees, both place texts and pal_019's corrected story; merged by scripts/build_italy_south.py. Southern Italy all in: about 1.4M agent tokens plus the dispatcher for 45 trees, about 35k a tree."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "washington-dc (core)",
+      "tokens": 224194,
+      "trees": 10,
+      "note": "wdc_026-035 from the DDOT Urban Forestry tree inventory (Open Data DC): GPS pins, DBH, condition; one source each, no ages. Cemeteries, Cathedral, Capitol grounds and held leads gave nothing pinnable. 18 rejects to leads."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verify",
+      "target": "leesburg (+ Sterling)",
+      "tokens": 202314,
+      "trees": 8,
+      "note": "Loudoun County Big Tree Registry 2025; four trees in one churchyard cluster; approximate pins. 11 rejects (private lawns, golf course, dead hornbeam) to leads."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "washington-dc suburbs (MD/VA)",
+      "tokens": 400000,
+      "trees": 2,
+      "note": "Estimate across two sessions (cut by the usage limit). One tree (Alexandria sweet gum) plus the Alexandria willow oak taken from its leads (city GPS, 45-50 min out, labelled). PG County layer has no sizes, Montgomery list page empty; Fort C.F. Smith tulip poplar waits for a pin. Poor yield: the suburbs need a register with sizes, not web search."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "new-york (Manhattan, Bronx)",
+      "tokens": 400000,
+      "trees": 10,
+      "note": "Estimate across two sessions. Parks Great Trees pages bot-blocked to curl; named from press pages, pinned from NYC Parks Forestry Tree Points. Woodlawn, Wave Hill, NYBG, Pelham Bay: no coordinate."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "new-york (Brooklyn, Queens, Staten Island)",
+      "tokens": 220000,
+      "trees": 29,
+      "note": "NYC Parks Great Trees register read in the browser pane (lat/lon + Tree Map ID per entry): 24 confirmed pins. The cheapest pass of the run; Green-Wood, Queens Botanical, Moravian not reached."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "new-york (two batches) + washington-dc + leesburg",
+      "tokens": 566609,
+      "trees": 58,
+      "note": "Three Opus passes: NY A 20 (194,763), NY B 19 plus place copy (188,632), DC 12 + Leesburg 8 plus place copy (183,214); Oatlands ginkgo held (not reconfirmed alive). Builder scripts/build_us_east.py. Also wasted: one empty fork launched by mistake (164,886). Dispatcher about 250k by estimate. All in about 2.4M tokens for 58 trees, roughly 42k a tree."
     }
   ]
 }

@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Norway Maple (Virginia champion), 226 N King St",
+    "coordinate": [
+      39.11915,
+      -77.56216
+    ],
+    "reason": "county registry coordinate falls behind the houses at 226-229 N King St (OSM residential lots); no evidence it is publicly reachable; lead only"
+  },
+  {
+    "name": "Dawn redwood (Virginia champion), 820 N King St",
+    "coordinate": [
+      39.1186372,
+      -77.5629395
+    ],
+    "reason": "VT Big Tree record 3445: private front lawn of a home, viewable from street only; somebody's home"
+  },
+  {
+    "name": "Oatlands American hornbeam (state champion)",
+    "coordinate": [
+      39.04113,
+      -77.61847
+    ],
+    "reason": "VT record 1457: Loudoun forester July 2026 found it removed; dead"
+  },
+  {
+    "name": "Lowes Island American Sycamore, 127 ft x 283 in (largest in county)",
+    "coordinate": [
+      39.05932,
+      -77.33512
+    ],
+    "reason": "county flags it public, but OSM puts the Potomac Heritage Trail 59 m away beside Trump National Golf Club; may stand on the golf course; keep as lead, check on a map"
+  },
+  {
+    "name": "White Oak 90 ft x 188 in, Evergreen Mills Trail, Gleedsville",
+    "coordinate": [
+      39.0281,
+      -77.58233
+    ],
+    "reason": "county public flag, but nearest OSM way is a residential road and private service roads; trail 31 m; access unclear; lead"
+  },
+  {
+    "name": "Sassafras 37 ft x 78 in, 17501 Southern Planter Lane",
+    "coordinate": [
+      39.1333,
+      -77.5743
+    ],
+    "reason": "modest tree, Morven Park perimeter; not worth the walk beside the tulip poplar; lead"
+  },
+  {
+    "name": "Yellow Buckeye, Windmill Community Center, Ashburn Farm",
+    "coordinate": [
+      39.0331,
+      -77.4992
+    ],
+    "reason": "HOA community centre grounds, not clearly public"
+  },
+  {
+    "name": "Red Mulberry 45 ft x 218 in on W&OD Bridle Trail, Ashburn",
+    "coordinate": [
+      39.04484,
+      -77.48845
+    ],
+    "reason": "public trail but Ashburn is 25+ minutes from Leesburg; lead for a later pass"
+  },
+  {
+    "name": "Aldie American Sycamore 121 ft x 239 in, Little River Turnpike",
+    "coordinate": [
+      38.97528,
+      -77.63987
+    ],
+    "reason": "outside the 30-minute radius check; Aldie Mill area; lead for a later pass"
+  },
+  {
+    "name": "Old Methodist Cemetery ginkgo and hackberry, Cornwall St NW (Leesburg tree walk 20, 21)",
+    "coordinate": null,
+    "reason": "on the town tree walk but no size or age given; no pin; lead"
+  },
+  {
+    "name": "Leesburg Tree Walk private-yard trees (Ohio buckeye 10 Cornwall St, slippery elm, hemlock, etc.)",
+    "coordinate": null,
+    "reason": "the leaflet itself says private property"
+  }
+]

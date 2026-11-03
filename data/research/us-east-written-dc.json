@@ -1,0 +1,667 @@
+[
+ {
+  "place": "washington-dc",
+  "id": "wdc_026",
+  "name": "The T Street Champion Linden",
+  "species": "American Basswood (Tilia americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 442,
+  "location": {
+   "address": "3819 T St NW, Washington, DC (street tree, public sidewalk)",
+   "latitude": 38.915376,
+   "longitude": -77.075032,
+   "neighbourhood": "Burleith / Georgetown"
+  },
+  "location_precision": "confirmed",
+  "story": "The city's own arborists have written four words into this linden's record that no other linden in their care carries, \"City Tree champion of its genus.\" It stands in a tree box on the sidewalk outside 3819 T Street NW, on a residential block in Burleith, and by the judgement of the people who prune it, it is the best basswood Washington looks after.\n\nThe numbers behind the note are plain. The trunk measures about 141 centimetres across at chest height, which works out to roughly 4.4 metres round. Laser survey fields in the same record suggest a crown about 22 metres high, spreading over something like 375 square metres. When an arborist checked it on 7 October 2026, its condition went down as Excellent.\n\nThat is all the paperwork says, and it is worth being clear about what it is. The champion label is the inventory's own wording, an arborist's note rather than the result of a published contest, and the city's record is the only source for this tree. It carries no planting date either. Nobody has dated this linden. If you know when the trees on this stretch of T Street went in, or have an old photograph of the block, tell us.\n\nAmerican basswood is a tree of eastern woodland. Finding the city's best one growing out of a square of pavement is half the pleasure of the walk.",
+  "how_to_recognise": "You can recognise it by its size, a basswood trunk about 4.4 metres round, far heavier than the silver maple and small trees near it. It stands in the sidewalk tree box outside 3819 T St NW.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105903234&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 18456-380-3005-0216-000; condition: Excellent, assessed 2026-10-07; owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105903234&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk, viewable from the pavement at any hour.",
+  "transport": "No Metro within about 1.5 km. Nearest is Foggy Bottom-GWU (about 2 km); Georgetown and Wisconsin Avenue buses are the usual approach.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable: the DC inventory tags this tree \"City Tree champion of its genus\", i.e. the arborist rates it the best linden in the city's care (the record gives no contest or measurement list behind the wording); DBH 55.4 in (about 141 cm; girth about 442 cm computed from DBH). LiDAR crown fields in the same record: crown height about 73 ft, crown area about 4,050 sq ft. Alive: arborist condition entry \"Excellent\" dated 2026-10-07. Pin: the inventory GPS point for FACILITYID 18456-380-3005-0216-000 (tree box); the nearest neighbours within 20 m are a silver maple of 35 in and small trees, so this is the dominant crown at the address. ONE SOURCE (the owner of the tree, DDOT UFD); the \"champion\" wording is the arborist note, not a published contest. Age: not documented; no planting date in the record. Species per inventory (Tilia americana). Access: public sidewalk. Photo: none found (Commons geosearch 60 m: no file). Recognition line (from the record only): The street linden at 3819 T St NW, tagged in the city inventory as the champion of its genus."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_027",
+  "name": "The Hardy Park Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 512,
+  "location": {
+   "address": "Hardy Park (DC Parks and Recreation), Foxhall / Palisades side of Georgetown, Washington, DC",
+   "latitude": 38.909649,
+   "longitude": -77.084977,
+   "neighbourhood": "Foxhall / Palisades (Ward 3)"
+  },
+  "location_precision": "confirmed",
+  "story": "Every so often a city crew comes to Hardy Park and injects this elm, and the record of it sits in Washington's tree inventory beside the measurements. The injection is the standard defence against Dutch elm disease, the fungus that has taken most of the great American elms that once lined the streets of the eastern United States. This one is still standing, and still being looked after, pruned in 2025, inspected again in May 2026 and rated Good.\n\nIt is worth the trouble. The trunk is about 163 centimetres across at chest height, which puts its girth at roughly 5.1 metres, and it is one of the two largest American elms in the city's inventory of public street and park trees. The other is about two kilometres north on 38th Street in Glover Park. What sets this one apart is room. The record gives its crown an area of about 615 square metres, the spread of an elm that grew in the open with nothing to lean away from.\n\nEverything else in Hardy Park is small. Within twenty metres the inventory finds only two young Kwanzan cherries and a redbud, which makes the elm look even bigger than it is.\n\nThe city's record is the only source for this tree, and it gives no planting date. Nobody has put an age on it. If you know the history of Hardy Park, or remember the elm when it was younger, tell us.",
+  "how_to_recognise": "You can recognise it by its crown, a wide open-grown American elm about 5.1 metres round. It stands in Hardy Park, towering over the park's small cherries and redbud.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106075713&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2026-05-14 (pruned and injected against Dutch elm disease, 2025 and 2026 notes); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106075713&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park tree; open park hours.",
+  "transport": "No Metro nearby; about 3 km from Foggy Bottom-GWU. Georgetown buses and a short ride from M Street.",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 64.2 in (about 163 cm; girth about 512 cm computed from DBH), among the two largest American elms recorded on public ground in the inventory (with the 38th Street Elm, wdc_028); crown area in the record about 6,600 sq ft (about 615 m2), a wide open-grown crown. Alive and cared for: condition \"Good\" 2026-05-14, notes \"Pruned 3/25; inject1\" (the elm is injected, the standard Dutch elm disease treatment). Pin: inventory GPS point (record created 2019-09-04), neighbours within 20 m are two small Kwanzan cherries (13 to 14 in) and a redbud, so the elm is the one big crown there. ONE SOURCE (DDOT UFD inventory; the owner of the ground is DPR). Age not documented. Photo: none found (Commons geosearch 60 m). Recognition line (from the record only): A very large open-grown elm in Hardy Park, towering over the park's small cherries and redbud."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_028",
+  "name": "The 38th Street Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 508,
+  "location": {
+   "address": "2716 38th St NW, Washington, DC (street tree, public sidewalk)",
+   "latitude": 38.925619,
+   "longitude": -77.074686,
+   "neighbourhood": "Glover Park"
+  },
+  "location_precision": "confirmed",
+  "story": "Two American elms in northwest Washington have trunks within a centimetre and a half of each other, and they could hardly have grown up more differently. One spreads across open lawn in Hardy Park. This one grew on a sidewalk in Glover Park, outside 2716 38th Street NW, with houses on one side and traffic on the other.\n\nThe city's tree inventory measures it at about 162 centimetres across at chest height, roughly 5.1 metres round, which places it among the three or four largest American elms on the city's books. The street shows in the crown. Laser survey fields in the record give it a height of about 24 metres but a spread of only around 240 square metres, well under half the area of the Hardy Park elm. The elm went up rather than out.\n\nIt survives because it is looked after. The record notes a pruning in March 2026 and an injection, the treatment that protects American elms against Dutch elm disease, and an inspection in May 2026 rated it Good. The nearest street tree of any size is a scarlet oak of about 61 centimetres across, less than half its width.\n\nThe inventory is the only source, and it does not say when the tree was planted. Its age is unknown. If you know the story of this block, or when the elms of Glover Park went in, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, about 5.1 metres round, more than twice the width of the scarlet oak and the other street trees nearby. It stands on the sidewalk outside 2716 38th St NW.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105990005&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 10380-270-3001-0016-000; condition: Good, assessed 2026-05-28 (pruned 3/26, injected); owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105990005&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk.",
+  "transport": "No Metro within 1.5 km; Wisconsin Avenue buses serve Glover Park; Foggy Bottom-GWU is about 3 km.",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 63.7 in (about 162 cm; girth about 508 cm computed from DBH), one of the three or four largest American elms in the DC inventory. LiDAR crown fields: crown height about 78 ft, area about 2,600 sq ft. Alive: \"Good\" 2026-05-28, \"Pruned 3/26; inject1\". Pin: inventory GPS point, FACILITYID 10380-270-3001-0016-000, a tree-box street tree; nearest neighbours are a 24 in scarlet oak and small trees. ONE SOURCE (DDOT UFD). Age not documented. Photo: none found. Recognition line (from the record only): A huge elm on 38th Street NW, far larger than the neighbouring street trees."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_029",
+  "name": "The Constitution Avenue Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 453,
+  "location": {
+   "address": "2200 block of Constitution Ave NW, Washington, DC (street tree beside the Mall at 23rd Street)",
+   "latitude": 38.892248,
+   "longitude": -77.049072,
+   "neighbourhood": "Foggy Bottom / West Potomac Park edge"
+  },
+  "location_precision": "confirmed",
+  "story": "A stand of big old trees on private ground at 2101 Constitution Avenue, several of them thicker than this one, went into the city's records as removed in October 2026. This elm, on the public pavement at the western end of the Mall, is the one still standing in that corner of Foggy Bottom.\n\nIt is the largest of a row of American elms along the north side of Constitution Avenue near 23rd Street. The city's tree inventory gives it a trunk about 144 centimetres across at chest height, roughly 4.5 metres round. Its neighbours are clearly smaller. One elm about 60 metres away measures some 109 centimetres across, another within 20 metres about 62. Laser survey fields in the same record put the crown at around 26 metres high.\n\nThe tree has been through work. The record notes a heavy prune in December 2023, and at its last inspection, in May 2025, the arborist rated it Good.\n\nIt also fits a short walk. The Willow Oak Circle in Constitution Gardens is about 320 metres east, and the cork trees of the FDR Memorial are about a kilometre south.\n\nThe city's inventory is the only source, and it gives no planting date. Nobody has dated this elm. If you know when this stretch of Constitution Avenue was planted, tell us.",
+  "how_to_recognise": "You can recognise it as the biggest of the elms along the north side of Constitution Avenue at 23rd Street, about 4.5 metres round. It stands on the public pavement facing the Mall.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105920102&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 12535-220-3005-0063-000; condition: Good, assessed 2025-05-07 (heavy prune Dec 2023); owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105920102&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public pavement beside the Mall.",
+  "transport": "Foggy Bottom-GWU Metro about 1 km (roughly 12 minutes on foot); 320 m from the Willow Oak Circle (wdc_009).",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 56.8 in (about 144 cm; girth about 453 cm computed from DBH). LiDAR crown height about 84 ft, area about 3,860 sq ft. Alive: \"Good\" 2025-05-07; note \"Heavy prune Dec 2023\". Pin: inventory GPS point for FACILITYID 12535-220-3005-0063-000; a second elm of 43 in stands within about 60 m and one of 24.6 in within 20 m, so this is the largest of a row of elms: say so. Context: a private heritage-tree stand at 2101 Constitution Ave (several trunks of 48 to 73 in) was recorded as removed in Oct 2026, so this public elm is the survivor in the area; do not claim the removed trees. ONE SOURCE (DDOT UFD). Age not documented. Joins the Mall cluster (wdc_009 Willow Oak Circle, wdc_010 FDR cork trees). Recognition line (from the record only): The biggest of the elms along the north side of Constitution Avenue at 23rd Street."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_030",
+  "name": "The East Capitol Street Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 431,
+  "location": {
+   "address": "322 East Capitol St NE, Washington, DC (street tree on East Capitol Street)",
+   "latitude": 38.889889,
+   "longitude": -77.000982,
+   "neighbourhood": "Capitol Hill"
+  },
+  "location_precision": "confirmed",
+  "story": "Official records rarely have a sense of humour, but the arborist who inspected this elm in May 2026 summed it up in the city's tree inventory as \"A real thiccums!\" The trunk earns it. On East Capitol Street, a few blocks east of the Capitol, it measures about 137 centimetres across at chest height, roughly 4.3 metres round.\n\nThe same note carries the less cheerful news. The elm has been dying back since 2019, a broken hanging limb was taken down in May 2026, and the inspector rated its condition Fair rather than Good. It is a big old tree in decline, and the record says so plainly. Laser survey fields in the inventory give the crown a height of about 16 metres, modest for a trunk of this width.\n\nIts neighbours make the size easy to read. Within twenty metres stand two Princeton elms, a cultivar of American elm bred to resist Dutch elm disease, about 13 and 51 centimetres across, and a smaller American elm of about 48. None of them comes close.\n\nCapitol South Metro is about 800 metres away, and the Olmsted tuliptree on the Capitol grounds is roughly 600 metres west, so this elm fits easily into a walk around Capitol Hill. Garfield Park's big zelkova is about a kilometre south.\n\nThe inventory is the only source for this elm, and it records no planting date. Nobody has dated it. If you know when East Capitol Street's elms went in, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, about 4.3 metres round, far heavier than the Princeton elms planted beside it. It stands on the sidewalk on East Capitol Street NE, by number 322.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105895678&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 53191-030-3001-0316-000; condition: Fair, assessed 2026-05-26 (dieback since 2019; branch removal May 2026); owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105895678&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk.",
+  "transport": "Capitol South Metro about 0.8 km, Union Station about 1.1 km (roughly 12 to 15 minutes on foot); about 600 m from the Capitol Grounds trees (wdc_013).",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 54.0 in (about 137 cm; girth about 431 cm computed from DBH). LiDAR crown height about 53 ft, area about 1,980 sq ft. The arborist note reads \"BHL may 2026; Dieback started 2019. A real thiccums!\" (BHL = broken hanging limb). Condition \"Fair\", not good: flag. Pin: inventory GPS point for FACILITYID 53191-030-3001-0316-000; neighbours within 20 m are two Princeton elms (5 and 20 in) and an American elm of 18.8 in, so this trunk is clearly the big one. ONE SOURCE (DDOT UFD). Age not documented. Verify the address phrase \"322 EAST CAPITOL ST BN\" as the inventory's own wording; the coordinate is what to trust. Recognition line (from the record only): A massive elm on East Capitol Street dwarfing the younger Princeton elms planted beside it."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_031",
+  "name": "The Volta Park Osage Orange",
+  "species": "Osage Orange (Maclura pomifera)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 456,
+  "location": {
+   "address": "Volta Park, 1500 block of 34th St NW, Georgetown, Washington, DC",
+   "latitude": 38.909841,
+   "longitude": -77.067763,
+   "neighbourhood": "Georgetown"
+  },
+  "location_precision": "confirmed",
+  "story": "No Osage orange in Washington's tree inventory comes anywhere near this one. In Volta Park, on 34th Street in Georgetown, it measures about 145 centimetres across at chest height, roughly 4.6 metres round. The other Osage oranges growing around it, and there are several, run from about 50 to 97 centimetres.\n\nThat is a big trunk for the species. Osage orange is a tough, thorny tree from the south-central United States, better known for its heavy green fruit and rot-proof wood than for its size, and few grow this broad. So the figure deserves a caveat. It is an arborist's measurement in the city's own records, and those records do not say whether the trunk is a single stem or several grown together. Until somebody checks, read it as a measurement of what stands there, not a claim about a single trunk.\n\nThe tree has had its knocks. It lost a branch about ten centimetres thick in the January 2025 snowstorm, and at its last inspection, in August 2026, it was rated Fair. Laser survey fields in the record give the crown a height of about 19 metres.\n\nVolta Park is a short walk from Montrose Park and Dumbarton Oaks Park, which makes this an easy addition to a Georgetown tree walk. The city's inventory is the only source, and it gives no planting date. Nobody knows how old these Osage oranges are, or why a group of them grows here. If you do, tell us.",
+  "how_to_recognise": "You can recognise it as the largest of the group of Osage oranges in Volta Park, its trunk about 4.6 metres round and far heavier than the others beside it. It stands in Volta Park, Georgetown.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106069005&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 10340-155-3001-0095-000; condition: Fair, assessed 2026-08-19 (lost a 4 in branch in the January 2025 snow storm); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106069005&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park (Volta Park); open park hours.",
+  "transport": "Foggy Bottom-GWU Metro about 2 km; Georgetown buses; walkable from Dumbarton Oaks Park and Montrose Park (about 1 km) so it joins the Georgetown cluster (wdc_011, wdc_014, wdc_018).",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 57.2 in (about 145 cm; girth about 456 cm computed from DBH), by a wide margin the largest Osage orange in the DC inventory: the other Osage oranges within 20 m measure 19.6 to 38.1 in. Osage orange (Maclura pomifera) rarely reaches this trunk size; sanity check: plausible for a very old specimen, but treat the figure as an arborist measurement (possibly multi-stem; the record does not say). Crown area about 950 sq ft, crown height about 63 ft. Alive: \"Fair\" 2026-08-19. Pin: inventory GPS point for FACILITYID 10340-155-3001-0095-000, among a group of Osage oranges in the park, so a visitor needs the largest of the group. ONE SOURCE (DDOT UFD). Age not documented. Flag: the record carries no stem count; the group of Osage oranges at Volta Park is itself notable. Recognition line (from the record only): The largest of the Osage oranges in Volta Park, a mature Osage orange with a trunk much heavier than those beside it."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_032",
+  "name": "The Banks Place Willow Oak",
+  "species": "Willow Oak (Quercus phellos)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 538,
+  "location": {
+   "address": "Park opposite 6112 Banks Pl NE (6201 Banks Pl NE in the inventory), Washington, DC",
+   "latitude": 38.891874,
+   "longitude": -76.913389,
+   "neighbourhood": "Northeast DC (Ward 7)"
+  },
+  "location_precision": "confirmed",
+  "story": "Every other tree in this small Ward 7 park is a sapling, and the one that is not is the largest willow oak in the city's inventory of park trees. It stands across the road from 6112 Banks Place NE, in far northeast Washington, near the Maryland line.\n\nThe city's arborists measure its trunk at about 171 centimetres across at chest height, roughly 5.4 metres round. Laser survey fields in the record give it a crown about 27 metres tall spreading over some 527 square metres, a crown that has had the open ground to itself. Around it, the inventory lists young honeylocusts, horse chestnuts and a hackberry, all of them a few centimetres thick. A second, smaller willow oak, about 136 centimetres across, grows some 200 metres east along the same street.\n\nIt is not the biggest willow oak in Washington. The one in the National Arboretum, on federal ground the city's inventory does not cover, is larger again. But no willow oak the city lists on its own park ground comes close. At its last inspection, in July 2025, it was rated Good, with deadwood pruned out.\n\nWillow oaks grow fast, which is why a trunk this wide need not be very old. The city's record gives no planting date, and nobody has dated the tree. If you know the history of this park, tell us.",
+  "how_to_recognise": "You can recognise it as the one big tree in the park, a willow oak about 5.4 metres round with only young saplings around it. It stands in the park across from 6112 Banks Pl NE.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106070398&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2025-07-24 (deadwood and clearance prune); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106070398&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park tree beside Banks Place NE.",
+  "transport": "Benning Road Metro about 2 km; Minnesota Avenue Metro about 3 km. Not walkable from the Mall cluster.",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 67.4 in (about 171 cm; girth about 538 cm computed from DBH), the largest willow oak on DPR ground in the inventory list I pulled (DBH 50 in and up, public owners). LiDAR crown height about 88 ft, crown area about 5,670 sq ft (open-grown). Alive: \"Good\" 2025-07-24. Pin: inventory GPS point (record created 2018-12-24); within 20 m only honeylocusts, horse chestnuts and a hackberry of 1.5 to 2 in, i.e. newly planted trees, so the oak is the lone big crown. A second willow oak of 53.6 in (objectid 106070403) stands about 200 m east at \"Opp 6220 Banks Place NE\". ONE SOURCE (DDOT UFD). Age not documented. The Casey Trees 2023 contest reports willow oaks to 83 in DBH in DC and calls them fast growers, so age is likely well under 150 years: do not over-age it. Recognition line (from the record only): A wide willow oak standing alone in the Banks Place park, with the rest of the park planted with saplings."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_033",
+  "name": "The Lansburgh Park Elm",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 407,
+  "location": {
+   "address": "Lansburgh Park, 1098 Delaware Ave SW, Washington, DC",
+   "latitude": 38.877835,
+   "longitude": -77.012702,
+   "neighbourhood": "Southwest"
+  },
+  "location_precision": "confirmed",
+  "story": "The arborist's verdict on this elm, written straight into Washington's tree inventory, fits on one line, \"Awesome tree; Leaning over dog park.\" Both halves hold up. In Lansburgh Park in Southwest, the American elm leans out over the park's dog park, and its trunk measures about 130 centimetres across at chest height, roughly 4.1 metres round.\n\nIt has taken some punishment. In the wind storm of 30 April 2021 it lost a limb about 20 centimetres thick, and laser survey fields in the record give it a crown only about 12 metres high, modest for a trunk this wide. Even so, at its last inspection, in May 2026, the city rated it Good.\n\nIt has the park to itself. The only other tree within twenty metres, according to the inventory, is a pawpaw a few centimetres thick, so there is no mistaking which trunk the note is about.\n\nWaterfront Metro is about 500 metres away, roughly a seven-minute walk, and the Caucasian elm at the Botanic Garden is about 1.2 kilometres north, so the tree can end a walk south from the Mall.\n\nThe city's inventory is the only source, and it does not say when the elm was planted. Nobody has dated it. If you know, tell us.",
+  "how_to_recognise": "You can recognise it by the lean, a big American elm about 4.1 metres round tilting out over the dog park. It stands in Lansburgh Park with no other large tree near it.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106065328&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2026-05-26 (an 8 in limb failed in the 30 April 2021 wind storm; pop-up arboretum); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106065328&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park beside a dog park; open park hours.",
+  "transport": "Waterfront Metro about 0.5 km (walk of ~7 minutes); about 1.2 km from the Botanic Garden elm (wdc_006).",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 51.0 in (about 130 cm; girth about 407 cm computed from DBH). The arborist note: \"Awesome tree; Leaning over dog park.\" LiDAR crown height about 41 ft, area about 1,710 sq ft (a lean and a lost limb; the crown is modest). Alive: \"Good\" 2026-05-26. Pin: inventory GPS point; the only neighbour within 20 m is a 2 in pawpaw, so the elm is the lone large tree. ONE SOURCE (DDOT UFD). Age not documented. Lower-ranked than the other new elms on size. Recognition line (from the record only): A large leaning elm over the dog park at Lansburgh Park."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_034",
+  "name": "The Garfield Park Zelkova",
+  "species": "Japanese Zelkova (Zelkova serrata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 408,
+  "location": {
+   "address": "Garfield Park, Capitol Hill (aligned with 146 F St SE), Washington, DC",
+   "latitude": 38.881808,
+   "longitude": -77.00437,
+   "neighbourhood": "Capitol Hill (Southeast)"
+  },
+  "location_precision": "confirmed",
+  "story": "\"Looking pretty good!\" is not the language anyone expects from a government database, but it is what the city arborist wrote about this zelkova in September 2025. It is also an understatement. In Garfield Park, a few minutes' walk south of the Capitol, this is the largest Japanese zelkova in Washington's inventory of street and park trees.\n\nThe trunk measures about 130 centimetres across at chest height, roughly 4.1 metres round. Two other zelkovas stand within twenty metres of it, and they are about 40 and 47 centimetres across, so the old tree has well over twice their width. Laser survey fields in the record give it a crown about 19 metres tall, covering some 340 square metres of the park.\n\nZelkova is an East Asian relative of the elm, with the same vase of upswept branches, and in Japan the oldest ones are temple trees many centuries old. This one makes no such claim. The city's record gives no planting date, and nobody has dated it. If you know when Garfield Park's zelkovas were planted, tell us.\n\nCapitol South Metro is about 500 metres away. The big elm on East Capitol Street and the Olmsted tuliptree on the Capitol grounds make this an easy three-tree loop around Capitol Hill.",
+  "how_to_recognise": "You can recognise it as the biggest zelkova in Garfield Park, about 4.1 metres round and more than twice the width of the zelkovas beside it. It stands on the park's frontage facing 146 F St SE.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106057905&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record; condition: Good, assessed 2025-09-12 (\"very minor tip dieback; looking pretty good!\"); owner code: DPR (DC Department of Parks and Recreation park tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=106057905&outFields=*&f=json"
+  },
+  "access": "Free. A public DC park; open park hours.",
+  "transport": "Capitol South Metro about 0.5 km (roughly 7 minutes on foot).",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 51.1 in (about 130 cm; girth about 408 cm computed from DBH), the largest Japanese zelkova in the inventory list I pulled (DBH 50 in and up, public owners), by a wide margin: the other zelkovas within 20 m measure 15.7 and 18.4 in. Sanity check: a very large zelkova, plausible for a century-old park specimen, but no planting date is recorded so do not date it. LiDAR crown height about 62 ft, area about 3,700 sq ft. Alive: \"Good\" 2025-09-12. Pin: inventory GPS point; the record notes it is aligned with 146 F St SE (street frontage of the park). ONE SOURCE (DDOT UFD). Joins the Capitol Hill cluster with wdc_013 and the East Capitol Street Elm. Recognition line (from the record only): The biggest zelkova in Garfield Park, with a trunk much heavier than the other zelkovas beside it."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_035",
+  "name": "The Harvard Street Willow Oak",
+  "species": "Willow Oak (Quercus phellos)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 491,
+  "location": {
+   "address": "1661 Harvard St NW, Washington, DC (street tree, public sidewalk)",
+   "latitude": 38.92724,
+   "longitude": -77.039697,
+   "neighbourhood": "Mount Pleasant / Columbia Heights"
+  },
+  "location_precision": "confirmed",
+  "story": "On Harvard Street, between Columbia Heights and Mount Pleasant, one willow oak has grown to nearly twice the width of every oak around it. It stands on the sidewalk in front of 1661 Harvard Street NW, and the city's tree inventory measures its trunk at about 156 centimetres across at chest height, roughly 4.9 metres round.\n\nThe comparison is right there on the block. Within twenty metres, the inventory lists two pin oaks of about 79 and 86 centimetres and another willow oak of about 83. Same street, similar trees, and this one is in a different league. Laser survey fields in the record give it a crown about 27 metres tall spreading over some 470 square metres, enough to shade a good stretch of the street.\n\nIt is also in good health. At its last inspection, in June 2025, the arborist rated it Excellent, noting only deadwood to take out.\n\nColumbia Heights Metro is about 700 metres away, roughly a nine-minute walk. The inventory is the only source for this tree, and it records no planting date. Nobody has dated this willow oak. If you know when Harvard Street was planted, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, about 4.9 metres round and nearly twice as wide as the pin oaks and willow oak around it. It stands on the sidewalk in front of 1661 Harvard St NW.",
+  "verified_sources": [
+   "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105910332&outFields=*&f=json (DDOT Urban Forestry Division tree inventory record FACILITYID 14374-168-3005-0154-000; condition: Excellent, assessed 2025-06-04; owner code: UFA (DDOT Urban Forestry Division street tree))",
+   "https://opendata.dc.gov/datasets/urban-forestry-street-trees (DDOT Urban Forestry Division, CC BY 4.0)"
+  ],
+  "official_register": {
+   "name": "DDOT Urban Forestry Division public tree inventory (Open Data DC, CC BY 4.0)",
+   "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23/query?where=OBJECTID=105910332&outFields=*&f=json"
+  },
+  "access": "Free. A street tree on a public sidewalk.",
+  "transport": "Columbia Heights Metro about 0.7 km (roughly 9 minutes on foot).",
+  "curation_status": "flagged",
+  "verify_notes": "DBH 61.5 in (about 156 cm; girth about 491 cm computed from DBH). LiDAR crown height about 90 ft, crown area about 5,100 sq ft. Alive: condition \"Excellent\" 2025-06-04, note \"Deadwood\". Pin: inventory GPS point for FACILITYID 14374-168-3005-0154-000; within 20 m stand pin oaks of 31 and 34 in and a willow oak of 32.5 in, so this willow oak is nearly twice their diameter. ONE SOURCE (DDOT UFD). Age not documented. Recognition line (from the record only): A giant willow oak in front of 1661 Harvard Street, about twice the girth of the oaks around it."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_040",
+  "name": "Alexandria Bicentennial Sweet Gum",
+  "species": "Sweet Gum (Liquidambar styraciflua)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Alexandria National Cemetery, 1450 Wilkes Street, Alexandria, VA 22314",
+   "latitude": 38.80183,
+   "longitude": -77.0582,
+   "neighbourhood": "Old Town Alexandria (Virginia), about 30 minutes from downtown DC by Metro (Blue/Yellow Line to King St-Old Town, then about a 10 minute walk)"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Alexandria National Cemetery, below the flagpole",
+   "radius_m": 50
+  },
+  "story": "In the 1970s, as the United States prepared for its two-hundredth birthday, the City of Alexandria went looking for trees old enough to have stood through the Revolution. It found seventeen, gave each a plaque, and called them Living Witnesses of the American Revolution. By the city's own count, only two of the originals still stand on public land. This sweet gum, below the flagpole in Alexandria National Cemetery, is one of them. The other is a willow oak on the Holmes Run Trail.\n\nThe witnesses have been dropping out for decades. A local newspaper counted six of the seventeen still standing in 2004. Today the city names just two on public land.\n\nWhat the paperwork does not give is a number. No source we have seen publishes this sweet gum's girth or height, and the city's page puts no age on it. The Revolutionary title says the people who chose it believed it was alive in the 1770s, but that belief comes without a measurement behind it, so treat it as the designation it is rather than a dated fact. If you have measured the tree or know its history, tell us.\n\nThe cemetery is open daily from sunrise to sunset, and King St-Old Town Metro is about ten minutes away on foot. Visit quietly. It is a national cemetery, and the tree stands among the graves.",
+  "how_to_recognise": "You can recognise it as the sweet gum at the foot of the flagpole in Alexandria National Cemetery, the tree the city names as standing below the flag. It stands off Wilkes Street.",
+  "verified_sources": [
+   "https://www.alexandriava.gov/go/6881",
+   "http://www.connectionnewspapers.com/news/2004/mar/23/local-youth-discover-ancient-landmarks",
+   "https://www.nps.gov/nr/travel/national_cemeteries/Virginia/Alexandria_National_Cemetery.html"
+  ],
+  "official_register": {
+   "name": "City of Alexandria Bicentennial Tree Project (one of the 17 original 1970s trees)",
+   "url": "https://www.alexandriava.gov/go/6881"
+  },
+  "access": "Free. Alexandria National Cemetery is open to visitors daily from sunrise to sunset (NPS travel itinerary page); no staff on site.",
+  "transport": "King St-Old Town Metro (Blue and Yellow lines), roughly 8 to 10 minutes on foot to the cemetery on Wilkes Street.",
+  "curation_status": "flagged",
+  "verify_notes": "Single source for the tree itself (City of Alexandria page, current: calls it a surviving original Bicentennial Project tree, located below the American flag in Alexandria National Cemetery off Wilkes Street); the Connection Newspapers piece of 2004-03-23 repeats the location and says six of the original seventeen trees still stood then. The city page says only two originals remain on public land, this and the willow oak (see dc-suburbs-rejects.json, Holmes Run). No size is published by any source seen. Age: the city page gives no age; I did not fetch the other age figures a search summary mentioned (about 200 years at the 1980 designation per a cemetery document, nearly 250 per a news article), so none is recorded. Bicentennial Tree Project: 17 trees identified in the 1970s as 'Living Witnesses of the American Revolution', each with a plaque. Pin: the flagpole in the cemetery is an OSM node at 38.80183,-77.05820; the city says the tree is below the flag, so this pin is the flagpole, not the trunk; approximate. What tells it apart: the sweet gum at the foot of the flagpole hill. Alive: the city page is current and describes it as surviving; no dated photograph seen. Whether it is spectacular is unknown: no girth published, so the writer should keep it modest and rest it on the Bicentennial designation."
+ },
+ {
+  "place": "washington-dc",
+  "id": "wdc_041",
+  "name": "The Alexandria Bicentennial Willow Oak",
+  "species": "Willow Oak (Quercus phellos)",
+  "age_estimate": "about 320 years, by the City of Alexandria's estimate (likely around 1707)",
+  "age_min": 300,
+  "age_max": 330,
+  "age_basis": "source",
+  "girth_cm": 528,
+  "height_m": 35.4,
+  "location": {
+   "address": "Holmes Run Trail, opposite Beatley Central Library, about 100 yards in from the Duke Street entrance, Alexandria, VA",
+   "latitude": 38.81367,
+   "longitude": -77.11452,
+   "neighbourhood": "Holmes Run, west Alexandria (Virginia), about 45 to 50 minutes from downtown DC by Metro and bus"
+  },
+  "location_precision": "confirmed",
+  "story": "By the City of Alexandria's reckoning, this willow oak was probably a seedling around 1707, a quarter of a century before George Washington was born. When the city surveyed it in 1976 the estimate was 270 years, and the arithmetic has held since. In 1977 it was designated Alexandria's Bicentennial Tree.\n\nIt is also enormous. Measured in November 2024, the trunk is 208 inches round, about 5.3 metres, and the tree stands 116 feet tall, about 35 metres, with a crown 105 feet across. The city scored it at 350 points, the formula American big-tree registers use to add girth, height and spread together. It has not come through untouched. A large limb has gone from one side.\n\nIt is one of seventeen trees Alexandria named in the 1970s as Living Witnesses of the American Revolution, and by the city's count one of only two still standing on public land. The other is a sweet gum in Alexandria National Cemetery in Old Town.\n\nThe age is an estimate, not a ring count, and the city does not publish how it was made. On our Washington map the white oak at Travilah in Maryland is still reckoned older.\n\nGetting here takes commitment. The tree stands about 100 yards in from the Duke Street entrance to the Holmes Run Trail, opposite the Beatley Central Library, and from downtown Washington that is Metro to King St-Old Town and a bus west along Duke Street, about 45 to 50 minutes in all.",
+  "how_to_recognise": "You can recognise it by its size, a willow oak 5.3 metres round and about 35 metres tall, with a large limb missing on one side. It stands on the Holmes Run Trail about 100 yards in from Duke Street, opposite the library.",
+  "verified_sources": [
+   "https://www.alexandriava.gov/go/6881",
+   "https://www.waymarking.com/waymarks/WM136BX",
+   "http://www.connectionnewspapers.com/news/2004/mar/23/local-youth-discover-ancient-landmarks"
+  ],
+  "official_register": {
+   "name": "City of Alexandria Bicentennial Tree Project (designated Alexandria's Bicentennial Tree, 1977)",
+   "url": "https://www.alexandriava.gov/go/6881"
+  },
+  "access": "Free. A public city trail (Holmes Run Trail) in a park; the tree is about 100 yards in from the Duke Street entrance, opposite Beatley Central Library.",
+  "transport": "From downtown DC, Metro (Blue or Yellow line) to King St-Old Town, about 22 minutes, then a DASH bus west along Duke Street and a short walk, about 45 to 50 minutes in all.",
+  "curation_status": "ai_generated",
+  "verify_notes": "From data/research/dc-suburbs-rejects.json (status lead_over_distance, over the 30 minute rule; written on the dispatcher's instruction as wdc_041 with its real place and travel time stated). Willow Oak (Quercus phellos), Holmes Run Trail opposite Beatley Library, about 100 yards in from the Duke Street entrance of the park, published GPS N 38 48.820 W 077 06.871 (confirmed pin, from City of Alexandria page https://www.alexandriava.gov/go/6881 and Waymarking WM136BX), measured Nov 2024: girth 208 in (528 cm), diameter 66.5 in, height 116 ft (35.4 m), crown 105 ft, score 350, city estimate 'likely around 1707'; designated Alexandria's Bicentennial Tree 1977 (Connection Newspapers 2004-03-23), 1976 estimate 270 years; lost a large limb on one side. Free public park. City page: one of only two original Bicentennial Project trees remaining on public land (with the sweet gum, wdc_040)."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_001",
+  "name": "Japanese Chestnut at Saint John the Apostle",
+  "species": "Japanese Chestnut (Castanea crenata)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 434,
+  "height_m": 16.5,
+  "location": {
+   "address": "Saint John the Apostle Catholic Church grounds, 101 Oakcrest Manor Dr NE, Leesburg, VA 20176",
+   "latitude": 39.11885,
+   "longitude": -77.56139,
+   "neighbourhood": "Historic Leesburg"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+   "radius_m": 50
+  },
+  "story": "For a while nobody could agree what this tree was. Nominated to Virginia Tech's big-tree database in 2015, it was first listed as a European chestnut. The American Chestnut Foundation took a closer look and concluded it was a Japanese chestnut, partly because it is very old and shows no sign of chestnut blight, the disease that wiped out the American chestnut and that Asian chestnuts largely shrug off.\n\nIt grows on the grounds of Saint John the Apostle Catholic Church in Leesburg, just north of a spring house at a sharp turn of Church Street. In 2015 its trunk was 161 inches round. When the Loudoun County forester remeasured it in 2025 it had reached 171 inches, about 4.3 metres, with a height of 54 feet (16.5 metres) and a crown 55 feet across. That is a tree as wide as it is tall.\n\nWhether it is a state champion depends on whom you ask. The county's 2025 list marks it as Virginia's champion Japanese chestnut. The Virginia Tech record says it is not. The two sources disagree, and neither explains why.\n\nIt has company. A shellbark hickory stands about seven metres away, and two more county-registered trees, a silver linden and an Atlantic white cedar, are within a hundred metres on the same grounds. No source dates any of them. If you know when the chestnut was planted, or who brought it to Leesburg, tell us.",
+  "how_to_recognise": "You can recognise it by the low, wide crown of a chestnut 4.3 metres round, beside a much taller shellbark hickory seven metres away. It stands just north of the spring house at the sharp turn of Church Street.",
+  "verified_sources": [
+   "https://bigtree.cnre.vt.edu/detail.cfm?AutofieldforPrimaryKey=2457",
+   "https://www.loudoun.gov/bigtreeregistry",
+   "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+  ],
+  "official_register": {
+   "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+   "url": "https://www.loudoun.gov/bigtreeregistry"
+  },
+  "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+  "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+  "curation_status": "flagged",
+  "verify_notes": "Virginia Tech Big Tree record 2457 (nominated by Robert Vickers, 2015): Japanese chestnut, 161 in girth, 45 ft, crown 40 ft, status 'legacy', not a Virginia champion; land owner St. John the Apostle Catholic Church; GPS 39.11885,-77.56139; 'just north of a spring house at a sharp turn of Church Street, entering the grounds from the south'. Identification was hard: Virginia Tech first said Castanea sativa; The American Chestnut Foundation concluded Castanea crenata, partly because the tree is 'very aged' and shows no chestnut blight. Loudoun County registry remeasured 2025: 171 in (434 cm), 54 ft (16.5 m), crown 55 ft, marked Virginia champion in the county list (VT record says not champion, conflict between the two, not resolved). Alive: measured 2025 by the county. No age given by any source; left empty. Trees lsb_001 and lsb_004 stand about 7 m apart; lsb_001 to lsb_004 are the four registered trees on this one site. Photo candidate: none looked for. Figures from county feature layer (girth in inches 171 x 2.54), PDF cross-checked."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_002",
+  "name": "Atlantic White Cedar at Saint John the Apostle",
+  "species": "Atlantic White Cedar (Chamaecyparis thyoides)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 318,
+  "height_m": 17.7,
+  "location": {
+   "address": "Saint John the Apostle Catholic Church grounds, Church Street NE, Leesburg, VA 20176",
+   "latitude": 39.11893,
+   "longitude": -77.56081,
+   "neighbourhood": "Historic Leesburg"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+   "radius_m": 50
+  },
+  "story": "Virginia's champion Atlantic white cedar does not grow in a swamp. It grows on a church lawn in Leesburg, far inland from the coastal wetlands where its species belongs.\n\nAtlantic white cedar is a tree of the Atlantic coastal plain, a narrow evergreen of bogs and swampy ground along the Atlantic and Gulf coasts. This one stands on the grounds of Saint John the Apostle Catholic Church, on Church Street NE, and the Loudoun County Big Tree Registry measured it in 2025 at 58 feet tall (17.7 metres), with a trunk 125 inches round (about 3.2 metres) and a crown only 31 feet across. That slim shape is typical of the species. Its score of 191 points puts it at the top of Virginia's list for its kind, according to the county.\n\nHow it got here is a mystery. No source we have found says who planted it or when, and nobody has dated it. A swamp cedar on a Piedmont church lawn was almost certainly planted, and the parish or the town may remember by whom. If you know, tell us.\n\nIt is one of four registered trees on these grounds, all within about a hundred metres of each other. The others are a Japanese chestnut, a shellbark hickory and a silver linden that is itself a Virginia champion. The cedar is the evergreen among them, standing about 45 metres east of the chestnut.",
+  "how_to_recognise": "You can recognise it as the narrow evergreen among the church's big registered trees, about 3.2 metres round and 18 metres tall. It stands about 45 metres east of the Japanese chestnut on the Saint John the Apostle grounds.",
+  "verified_sources": [
+   "https://www.loudoun.gov/bigtreeregistry",
+   "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+  ],
+  "official_register": {
+   "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+   "url": "https://www.loudoun.gov/bigtreeregistry"
+  },
+  "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+  "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+  "curation_status": "flagged",
+  "verify_notes": "One source: Loudoun County Big Tree Registry 2025: 58 ft (17.7 m), 125 in girth (318 cm), crown 31 ft, 191 points, marked Virginia state champion for the species. Pin is the county's coordinate (5 decimals), about 45 m east of the chestnut; individual crown not checked on imagery, so approximate. Register only, flagged 'register only' but measured 2025. No age. A narrow-crowned evergreen native of coastal swamps, planted here on a church lawn (planting origin not documented)."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_003",
+  "name": "Silver Linden at Saint John the Apostle",
+  "species": "Silver Lime (Tilia tomentosa)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 625,
+  "height_m": 21,
+  "location": {
+   "address": "Saint John the Apostle Catholic Church grounds, Church Street NE, Leesburg, VA 20176",
+   "latitude": 39.11925,
+   "longitude": -77.56165,
+   "neighbourhood": "Historic Leesburg"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+   "radius_m": 50
+  },
+  "story": "The widest trunk on the grounds of Saint John the Apostle Catholic Church belongs to a tree from the other side of the Atlantic. This silver linden measures 246 inches round, about 6.25 metres, and the Loudoun County Big Tree Registry's 2025 list marks it as Virginia's champion of its species.\n\nThat is a remarkable girth for any linden. Silver linden is native to south-eastern Europe and western Asia, a tree planted in American towns for its shade and its leaves, dark green above and silvery white beneath, so the crown flickers pale when the wind turns them. The county measured this one at 69 feet tall (21 metres), with a crown 61 feet across, for a total of 330 points. Of the four registered trees on these grounds, it has the widest trunk by a long way. The Japanese chestnut nearby is about 4.3 metres round.\n\nNobody seems to have written down when it went in. The county gives no age and no planting date, and no other source we know of does. A linden this broad in a churchyard is the kind of tree a parish photograph or a town history might show as a sapling. If you have one, or know the story, tell us.\n\nThe tree stands towards the north of the church grounds off Church Street NE, a few minutes' walk from King Street in the middle of town. Check for services or funerals before walking in.",
+  "how_to_recognise": "You can recognise it by the trunk, about 6.25 metres round, the widest of the four registered trees on the grounds, and by leaves silvery white underneath. It stands towards the north of the Saint John the Apostle grounds.",
+  "verified_sources": [
+   "https://www.loudoun.gov/bigtreeregistry",
+   "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+  ],
+  "official_register": {
+   "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+   "url": "https://www.loudoun.gov/bigtreeregistry"
+  },
+  "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+  "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+  "curation_status": "flagged",
+  "verify_notes": "One source: Loudoun County Big Tree Registry 2025 (PDF and feature layer): 69 ft (21 m), 246 in girth (625 cm), crown 61 ft, 330 points, Virginia champion for the species. NOTE the feature layer row for this tree has its columns shifted (points shown as height); the PDF row is the correct one and is what is used. 246 in girth is large for a linden. Register only; no age; pin approximate."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_004",
+  "name": "Shellbark Hickory at Saint John the Apostle",
+  "species": "Shellbark Hickory (Carya laciniosa)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 287,
+  "height_m": 29.9,
+  "location": {
+   "address": "Saint John the Apostle Catholic Church grounds, Church Street NE, Leesburg, VA 20176",
+   "latitude": 39.11891,
+   "longitude": -77.56133,
+   "neighbourhood": "Historic Leesburg"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+   "radius_m": 50
+  },
+  "story": "Seven metres apart on the grounds of Saint John the Apostle Catholic Church stand two trees that could hardly be built more differently. One is a Japanese chestnut, short and broad. The other is this shellbark hickory, and at 98 feet (29.9 metres) it is almost twice as tall, the tallest of the four county-registered trees on the site.\n\nThe Loudoun County Big Tree Registry's 2025 measurements give it a trunk 113 inches round, about 2.9 metres, and a crown 73 feet across, for 229 points. It is not a state champion, and it does not need to be. Shellbark hickory is a native of river bottoms and rich lowland woods in the eastern United States, known for the largest nuts of any hickory and for bark that comes away in long, loose plates.\n\nTogether with the chestnut it makes one stop, and you can stand between the two and see both. The silver linden and the Atlantic white cedar complete the set within about a hundred metres.\n\nNo source gives this hickory an age or a planting date, and nobody seems to know whether it was planted at all. If you know, tell us. Check for services or funerals before walking onto the grounds.",
+  "how_to_recognise": "You can recognise it by its height, about 30 metres, twice that of the broad Japanese chestnut seven metres away. It stands near the sharp turn of Church Street on the Saint John the Apostle grounds.",
+  "verified_sources": [
+   "https://www.loudoun.gov/bigtreeregistry",
+   "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+  ],
+  "official_register": {
+   "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+   "url": "https://www.loudoun.gov/bigtreeregistry"
+  },
+  "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+  "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+  "curation_status": "flagged",
+  "verify_notes": "One source: Loudoun County Big Tree Registry 2025 (PDF row): 98 ft (29.9 m), 113 in girth (287 cm), crown 73 ft, 229 points; not marked state champion. Feature-layer row has shifted columns; PDF used. Coordinate 39.11891,-77.56133 is about 7 m from the Japanese chestnut lsb_001 (different species, two separate trunks, one place to stand; writer may treat them as one stop). Register only; no age; approximate."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_005",
+  "name": "Tulip Poplar at Morven Park",
+  "species": "Tulip Tree (Liriodendron tulipifera)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 391,
+  "height_m": 29.6,
+  "location": {
+   "address": "Morven Park, 17195 Southern Planter Lane, Leesburg, VA 20176 (near the Westmoreland Davis mansion)",
+   "latitude": 39.1417,
+   "longitude": -77.5771,
+   "neighbourhood": "Morven Park"
+  },
+  "location_precision": "approximate",
+  "story": "Ninety-seven feet is about the height of a nine-storey building, and that is how tall the Loudoun County Big Tree Registry measured this tulip tree near the mansion at Morven Park in 2025. In metres, 29.6. Its trunk is 154 inches round, about 3.9 metres, and its crown spreads 68 feet, for a total of 268 points.\n\nMorven Park is a thousand-acre estate on the north-western edge of Leesburg, once the home of Westmoreland Davis, the Virginia governor who bought it in 1903. His wife Marguerite laid out the formal boxwood gardens in 1930. Mansion tours are ticketed, but the grounds are free to walk every day from seven in the morning until six in the evening.\n\nWhat the paperwork does not tell us is how old the tree is. The Davises' arrival in 1903 and the 1930 gardens date the estate's later history, not this trunk, and no source we have seen gives a planting date or an age. A tulip tree this size could predate both, or not. Nobody knows. If you do, tell us.\n\nThe county's pin places the tree in the mansion area, but on an estate this size it is approximate, so look for a big tulip tree near the house rather than trusting the dot to the metre. Tulip trees are easy to tell apart from the rest by their square-ended leaves, shaped like the outline of a tulip.",
+  "how_to_recognise": "You can recognise it by its leaves, square-ended like a tulip's outline, on a trunk about 3.9 metres round and nearly 30 metres tall. It stands near the Westmoreland Davis mansion; the county's pin is approximate.",
+  "verified_sources": [
+   "https://www.loudoun.gov/bigtreeregistry",
+   "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List",
+   "https://www.morvenpark.org/mansion/visit/gardens-grounds/"
+  ],
+  "official_register": {
+   "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+   "url": "https://www.loudoun.gov/bigtreeregistry"
+  },
+  "access": "Morven Park grounds are open 7:00 a.m. to 6:00 p.m. daily and free to visit (the estate's own Gardens & Grounds page); mansion tours are separate and ticketed. Dogs on leash.",
+  "transport": "About 2 km north-west of downtown Leesburg; a 5 minute drive. No regular public transport found.",
+  "curation_status": "flagged",
+  "verify_notes": "Loudoun County Big Tree Registry 2025: 97 ft (29.6 m), 154 in girth (391 cm), crown 68 ft, 268 points; flagged public by the county. Pin is the county coordinate, which reverse-geocodes to the mansion area ('Gov. Westmoreland Davis Home'); which lawn tree exactly is not settled, so approximate and no small-site claim (the estate is 1,000 acres). Morven Park, former estate of Governor Westmoreland Davis (bought 1903, per the estate), formal boxwood gardens laid 1930 by Marguerite Davis (estate page). No source dates this tree; no age. A treeclimbing group pruned trees at the estate in 2024 (search result only, not used). Register + owner page = two sources for existence and access; alive from 2025 measurement."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_006",
+  "name": "Oatlands Ginkgo",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "close to 200 years, by the estate's arborist",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 511,
+  "height_m": 31.4,
+  "location": {
+   "address": "Oatlands Historic House and Gardens, 20850 Oatlands Plantation Lane, Leesburg, VA 20175",
+   "latitude": 39.04035,
+   "longitude": -77.6181,
+   "neighbourhood": "Oatlands"
+  },
+  "location_precision": "approximate",
+  "story": "The man who looks after Oatlands' trees calls this the third largest ginkgo in the United States. The Loudoun County Big Tree Registry's 2025 measurements make the claim easy to believe, with 103 feet in height (31.4 metres), a trunk 201 inches round (about 5.1 metres), and a crown 69 feet across, for 321 points. An older write-up gave it 82 feet and 185 inches. The figures differ, and the county's are the newer.\n\nIt grows behind the mansion at Oatlands, a historic house and garden south of Leesburg on Route 15. Jim Donegan, the estate's tree contractor, told Middleburg Life it is close to 200 years old. That is an arborist's estimate, and no ring count or planting record has been published to back it, so it stands as his judgement rather than a date. The national ranking is his too.\n\nThe ginkgo is the only living species of a lineage older than the dinosaurs, and it shrugs off pests and pollution in a way that has made it a favourite of city streets. This one has had room and time instead. Its neighbours at Oatlands include an American boxwood canopy and yews the same article puts at around 200 years.\n\nIn November the whole crown turns butter yellow and then drops in a day or two, which is the moment to come. The gardens and grounds are open daily from 10 a.m. to 5 p.m. with a ticket.",
+  "how_to_recognise": "You can recognise it by the fan-shaped leaves on a trunk about 5.1 metres round and over 30 metres tall. It stands behind the Oatlands mansion, inside the ticketed grounds.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the whole crown turns butter yellow and drops within days"
+  },
+  "verified_sources": [
+   "https://www.loudoun.gov/bigtreeregistry",
+   "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List",
+   "https://www.middleburglife.com/identifying-some-of-virginias-oldest-trees/",
+   "https://www.oatlands.org/plan-your-visit/"
+  ],
+  "official_register": {
+   "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+   "url": "https://www.loudoun.gov/bigtreeregistry"
+  },
+  "access": "Oatlands gardens and grounds open 10 a.m. to 5 p.m. daily with a ticket (Oatlands plan-your-visit page); the ginkgo stands behind the mansion, so it is inside the paid grounds.",
+  "transport": "5 miles south of downtown Leesburg on Route 15, about a 12 minute drive. No public transport found.",
+  "paid_entry": true,
+  "curation_status": "flagged",
+  "hold": "not confirmed alive since 2025; nearby hornbeam removed July 2026",
+  "verify_notes": "Loudoun County registry 2025 (PDF row, cols corrected): 103 ft (31.4 m), 201 in girth (511 cm), crown 69 ft, 321 points; the feature layer row is column-shifted. An older write-up of the Oatlands ginkgo (Atlas Obscura, via search result only, page 403) quoted 82 ft and 185 in; the figures differ, the 2025 county ones are used. Middleburg Life (Jim Donegan, Oatlands' tree contractor): 'third largest ginkgo in the country', 'close to 200 years old', Virginia Tech measured it (the arborist's age claim, no core cited). ALIVE CAVEAT: the county forester's July 2026 visit to Oatlands found the nearby American hornbeam (VT record 1457) REMOVED; the ginkgo was not reported removed, but nobody has confirmed it since 2025. Writer or later pass should confirm with Oatlands (703-727-0670) before publishing. Pin: registry coordinate, 'behind the mansion'; approximate. The hornbeam is dead/removed: rejected. Estate also has a 200-year-old American boxwood canopy near the picnic tables and 200-year-old yews per the same article (not individually pinned)."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_007",
+  "name": "Leesburg Heritage Tree",
+  "species": "White Oak (Quercus alba)",
+  "age_estimate": "well over 250 years, by the town",
+  "age_min": 250,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": null,
+  "location": {
+   "address": "Ida Lee Park, beside the Rust Farm House, 50 Ida Lee Drive NW, Leesburg, VA 20176",
+   "latitude": 39.12406,
+   "longitude": -77.56477,
+   "neighbourhood": "Ida Lee Park"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Rust Farm House yard, Ida Lee Park",
+   "radius_m": 50
+  },
+  "story": "Leesburg's own Tree Commission says this white oak grew from an acorn before there was a Leesburg. The town was founded in 1758, and the commission's Tree Walk of Historic Leesburg calls its Heritage Tree a fine specimen of white oak well over 250 years old.\n\nIt stands in Ida Lee Park, next to the Rust Farm House, a farmhouse from around 1859 at 50 Ida Lee Drive NW. If the town's figure is right, the oak was about a century old when the house went up beside it. The farmhouse now stands by the park's festival field.\n\nTake the age as the town's statement. The leaflet gives no ring count or measurement behind it, and we have found no published girth for the tree. The town's own America 250 page adds that the park once held several mature white oaks, and in May 2026 the town planted a Mount Vernon chestnut oak sapling beside the farmhouse. That sapling is not the Heritage Tree, so look past it for the old trunk.\n\nOne more honest caveat. The leaflet is undated, and nobody we can cite has confirmed the oak since. A local newspaper reported in January 2026 that the town's tree inventory had measured a massive white oak in Ida Lee Park, which may or may not be this one. If you have been to the farmhouse lately, or know its girth, tell us.",
+  "how_to_recognise": "You can recognise it as the big old white oak beside the Rust Farm House, not the young chestnut oak planted there in May 2026. It stands in Ida Lee Park next to the farmhouse at 50 Ida Lee Drive NW.",
+  "verified_sources": [
+   "http://web.archive.org/web/20260131192936/https://www.leesburgva.gov/home/showpublisheddocument/27422/636710590674400000",
+   "https://www.leesburgva.gov/visitors/leesburg-celebrates-america-250"
+  ],
+  "access": "Ida Lee Park is a free town park. The tree is next to the Rust Farm House beside the festival field.",
+  "transport": "About 1.2 km north-west of downtown Leesburg; roughly 15 minutes on foot. No bus checked.",
+  "curation_status": "flagged",
+  "verify_notes": "Source: the Town of Leesburg Tree Commission's 'Tree Walk of Historic Leesburg' leaflet (read through a Wayback copy): 'Leesburg Heritage Tree' is 'a fine specimen of a Northern White Oak that is well over 250 years old and grew from a seed before the Town of Leesburg was founded in 1758'; located 'next to Rust Farm House, circa 1859 (50 Ida Lee Drive NW)'. Age is the town's statement, no core or measurement cited. Pin is the farmhouse address point (39.12406,-77.56477, Nominatim/OSM), not the trunk; no tree node with species in OSM; no girth. The town's America 250 page says the park 'once' had several mature white oaks and planted a Mount Vernon chestnut oak sapling beside the farmhouse in May 2026 (do not confuse the sapling with the heritage oak). A Loudoun Times piece of 23 Jan 2026 reports the town's tree inventory measuring a 'massive white oak' at Ida Lee Park (arborist Jack Myrna; article text paywalled, not read, not necessarily the same tree). Alive: not confirmed since the leaflet (leaflet undated, archive copy Jan 2026); the 2026 article suggests a large white oak stands there. Flagged: single source, pin is a site."
+ },
+ {
+  "place": "leesburg",
+  "id": "lsb_008",
+  "name": "Shumard Oak at Algonkian Regional Park",
+  "species": "Shumard Oak (Quercus shumardii)",
+  "age_estimate": "roughly 200 years, by the county",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 467,
+  "height_m": 33.2,
+  "location": {
+   "address": "Algonkian Regional Park, Sterling, VA (NOVA Parks), off the park's trail network near Sugarland Run",
+   "latitude": 39.06111,
+   "longitude": -77.36916,
+   "neighbourhood": "Sterling / Lowes Island"
+  },
+  "location_precision": "approximate",
+  "story": "Loudoun County counts this Shumard oak among the largest trees in the whole county, and it stands not in a town square but out on the trails of Algonkian Regional Park, near Sugarland Run in Sterling. The county's caption gives it as 109 feet high, 184 inches round the trunk and about 200 years old.\n\nThe 2025 registry figures put numbers on the rest. The trunk is about 4.7 metres round, the tree 33.2 metres tall, and the crown spreads 83 feet, for 313.75 points. An older figure, quoted by The Nature Conservancy's Virginia public lands page, gave it 112 feet and 176 inches. Measurements drift between surveys, and the county's are the latest.\n\nShumard oak is a red oak of southern bottomlands and stream banks, a big, fast tree with deeply cut, bristle-tipped leaves. The 200-year figure is the county's estimate, and it does not say how it was reached, so treat it as a forester's judgement rather than a date. If it holds, the oak was a sapling in the early 1800s.\n\nThis is the far outlier on the Leesburg page. Sterling is about 20 kilometres east of downtown, 25 to 30 minutes by car on Route 7, with no useful bus. Algonkian is a NOVA Parks park and may charge for parking at busy times, so check before you go.",
+  "how_to_recognise": "You can recognise it by its size, a Shumard oak about 4.7 metres round and 33 metres tall, with bristle-tipped oak leaves. It stands just off the trails of Algonkian Regional Park near Sugarland Run; the county pin is approximate.",
+  "verified_sources": [
+   "https://www.loudoun.gov/bigtreeregistry",
+   "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List",
+   "https://www.nature.org/en-us/about-us/where-we-work/united-states/virginia/stories-in-virginia/va-public-lands/"
+  ],
+  "official_register": {
+   "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+   "url": "https://www.loudoun.gov/bigtreeregistry"
+  },
+  "access": "Algonkian Regional Park is a public NOVA Parks park on a trail network; the park charges parking/entry fees at some times (not checked). The county names this tree as one of the largest in Loudoun and flags it public.",
+  "transport": "Sterling, about 20 km east of Leesburg, 25 to 30 minutes by car on Route 7. No usable public transport from Leesburg.",
+  "curation_status": "flagged",
+  "verify_notes": "County registry page caption (fetched): 'This Shumard oak in Algonkian Regional Park is one of the largest trees in Loudoun. It is 109 feet high and 184 inches around the trunk. It's estimated to be about 200 years old.' 2025 registry: 109 ft (33.2 m), 184 in (467 cm), crown 83 ft, 313.75 points. The Nature Conservancy Virginia public-lands page (via search result, not opened) is said to give 112 ft and 176 in, older. Pin: registry coordinate 39.06111,-77.36916; OSM shows paths 26-29 m away and the Algonkian Regional Park polygon about 43 m away, so the trunk is inside or at the edge of the park; approximate. Age is the county's estimate, basis not stated. Sterling place label for the writer. Alive: 2025 measurement."
+ }
+]

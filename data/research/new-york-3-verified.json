@@ -1,0 +1,748 @@
+[
+ {
+  "id": "nyc_070",
+  "name": "The Cedar of Lebanon of Weeping Beech Park",
+  "species": "Cedar of Lebanon (Cedrus libani)",
+  "age_estimate": "not documented",
+  "girth_cm": 471,
+  "location": {
+   "address": "Margaret I. Carman Green (Weeping Beech Park), 37th Ave, Flushing",
+   "latitude": 40.7635,
+   "longitude": -73.8248,
+   "neighbourhood": "Flushing, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=47"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=47"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Flushing-Main St station (7 train, LIRR), about 0.7 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=47 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 59 in -> girth_cm 471 (pi x diameter). One official register: counts as enough; Parks entry: mid-park near the public restroom; began life in the nursery of Samuel B. Parsons, whose grounds ran through this area; canopy spread 59 ft. Register 1985 nomination, still on the 2024 relaunched list with Tree Map ID 5063634. Sits beside nyc_028 (Weeping Beech Park, pin 40.7636,-73.8242), about 50 m away: a two-tree stop. Register diameter 59 in is the 1985 measurement. iNaturalist observation 2026-06-16 within radius.",
+  "height_m": 12.7
+ },
+ {
+  "id": "nyc_071",
+  "name": "The Ginkgo of John Golden Park",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "not documented",
+  "girth_cm": 295,
+  "location": {
+   "address": "John Golden Park (Crocheron Park area), Bayside",
+   "latitude": 40.7745,
+   "longitude": -73.7678,
+   "neighbourhood": "Bayside, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=52"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=52"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Bayside station (LIRR, Port Washington branch), about 1.3 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=52 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 37 in -> girth_cm 295 (pi x diameter). One official register: counts as enough; Parks entry: behind the baseball fields near the public restroom; the Parks note says the ginkgo is long associated with William M. Tweed (Boss Tweed) who hid at the Crocheron family house after escaping Ludlow Street Jail, the property later acquired by the city. Register 1985, canopy spread 33 ft, Tree Map ID 5106720. Tweed link is the Parks note's claim only, not independently checked. iNaturalist observation 2026-07-11 within radius.",
+  "height_m": 25.0
+ },
+ {
+  "id": "nyc_072",
+  "name": "The Swamp White Oak of Bowne Park",
+  "species": "Swamp White Oak (Quercus bicolor)",
+  "age_estimate": "not documented",
+  "girth_cm": 399,
+  "location": {
+   "address": "Bowne Park, between the northwest entrance and the pond, Flushing",
+   "latitude": 40.7712,
+   "longitude": -73.8087,
+   "neighbourhood": "Flushing, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=114"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=114"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Flushing-Main St (7 train, LIRR), about 2.3 km; local bus from Main St",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=114 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 50 in -> girth_cm 399 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: 'exceptionally large tree for its kind... described as the most impressive tree in Bowne Park'; 50 in trunk diameter; Tree Map ID 5085084. Located between the NW entrance and the pond. iNaturalist 2025-08-31 within radius."
+ },
+ {
+  "id": "nyc_073",
+  "name": "The Fused Basswood of Fort Totten",
+  "species": "American Basswood (Tilia americana)",
+  "age_estimate": "not documented",
+  "girth_cm": 790,
+  "location": {
+   "address": "Fort Totten Park, Underhill Rd and Officers Dr, Bayside",
+   "latitude": 40.7922,
+   "longitude": -73.7782,
+   "neighbourhood": "Fort Totten, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=116"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=116"
+  },
+  "access": "Free, public park (Fort Totten Park); the former army post is open to walkers",
+  "transport": "Bayside station (LIRR) about 2.7 km; local bus to Fort Totten",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=116 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 99 in -> girth_cm 790 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: multi-trunk that fused together long ago, so diameter measures close to 100 in (the 99 in is a fused-stem mass, not one stem). Tree Map ID 3563690. Stands at Underhill Rd and Officers Dr. iNaturalist 2025-07-15 within radius."
+ },
+ {
+  "id": "nyc_074",
+  "name": "The Willow Oak of Steinway Street",
+  "species": "Willow Oak (Quercus phellos)",
+  "age_estimate": "not documented",
+  "girth_cm": 335,
+  "location": {
+   "address": "23-24 Steinway Street, Astoria",
+   "latitude": 40.7706,
+   "longitude": -73.909,
+   "neighbourhood": "Astoria, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=112"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=112"
+  },
+  "access": "Street tree on the public sidewalk, always viewable",
+  "transport": "Astoria Blvd station (N, W), about 0.8 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=112 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 42 in -> girth_cm 335 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: extremely large willow oak on a busy commercial and residential stretch; branches wave at trains crossing Hell Gate Bridge (Parks wording). Tree Map ID 2487740. 42 in diameter. iNaturalist 2026-09-16 within radius. Street tree: pin is the Parks tree point."
+ },
+ {
+  "id": "nyc_075",
+  "name": "The River Birch of Corporal Kennedy Street",
+  "species": "River Birch (Betula nigra)",
+  "age_estimate": "not documented",
+  "girth_cm": 455,
+  "location": {
+   "address": "35-26 Corporal Kennedy Street, Bayside",
+   "latitude": 40.7672,
+   "longitude": -73.778,
+   "neighbourhood": "Bayside, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=119"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=119"
+  },
+  "access": "Street tree on the public sidewalk, always viewable",
+  "transport": "Bayside station (LIRR), about 0.5 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=119 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 57 in -> girth_cm 455 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: very large multi-stemmed river birch, unusual at that size as a street tree; arching canopy across the street. 57 in is the stem mass of a multi-stem tree. Tree Map ID 1438330. iNaturalist 2024-08-14 within radius (alive thin but recent)."
+ },
+ {
+  "id": "nyc_076",
+  "name": "The London Planetree of Alice Austen Park",
+  "species": "London Planetree (Platanus x acerfolia)",
+  "age_estimate": "not documented",
+  "girth_cm": 431,
+  "location": {
+   "address": "Alice Austen Park, meadow south of the Alice Austen House, Rosebank",
+   "latitude": 40.6147,
+   "longitude": -74.0627,
+   "neighbourhood": "Rosebank, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=58"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=58"
+  },
+  "access": "Alice Austen Park open daily; the house museum has separate hours and a suggested donation",
+  "transport": "Staten Island Railway Clifton station, about 0.6 km; or S51/S78 bus on Bay St (check route)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=58 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 54 in -> girth_cm 431 (pi x diameter). One official register: counts as enough; Parks entry: believed to be growing around 1840 when John Austen, Alice Austen's grandfather, bought and expanded the house; scarred by lightning but alive; canopy spread 59.5 ft. Register 1985; Tree Map ID 5095107. The 1840 date is the register's 'believed'. iNaturalist 2026-07-30 within radius.",
+  "height_m": 18.7
+ },
+ {
+  "id": "nyc_077",
+  "name": "The Princess Tree of Snug Harbor",
+  "species": "Princess Tree (Paulownia tomentosa)",
+  "age_estimate": "not documented",
+  "girth_cm": 519,
+  "location": {
+   "address": "Snug Harbor Cultural Center, west side of the Veterans Memorial Hall Playhouse, Chapel Road, 1000 Richmond Terrace (Parks lists 914)",
+   "latitude": 40.6432,
+   "longitude": -74.1017,
+   "neighbourhood": "West New Brighton, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=60"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=60"
+  },
+  "access": "Grounds free, open dawn to dusk seven days a week (Snug Harbor official material via search; some buildings and the Chinese Scholar's Garden take a small fee)",
+  "transport": "Staten Island Ferry to St George, then S40 bus to Snug Harbor (route unchecked this pass)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=60 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 65 in -> girth_cm 519 (pi x diameter). One official register: counts as enough; Parks entry: royal paulownia west of the Veterans Memorial Hall Playhouse, leaves up to a foot across, purple trumpet flowers in spring; 65 in diameter in the 1985 register; Tree Map ID 5602190. Commons photo dated Aug 2026 shows the campus in current use (lifecheck RECENT). Address conflict: Parks 914, Snug Harbor 1000 Richmond Terrace.",
+  "height_m": 20.0
+ },
+ {
+  "id": "nyc_078",
+  "name": "The Willow Oak of Clove Lake",
+  "species": "Willow Oak (Quercus phellos)",
+  "age_estimate": "not documented",
+  "girth_cm": 343,
+  "location": {
+   "address": "Clove Lakes Park, shore of Clove Lake, 150 ft north of Victory Blvd near the basketball courts",
+   "latitude": 40.616,
+   "longitude": -74.1061,
+   "neighbourhood": "Sunnyside, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=63"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=63"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Bus on Victory Blvd from St George; about 3 km from the SIR",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=63 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 43 in -> girth_cm 343 (pi x diameter). One official register: counts as enough; Parks entry: a pair of willow oaks on the lake shore, leaves like a willow; canopy spread 43 ft; Tree Map ID 5594367. Same park as nyc_007 (Clove Lakes Colossus, 40.6272,-74.1218), about 1.3 km north: both on one lake walk. iNaturalist 2026-09-07 within radius. A PAIR in the register (one entry).",
+  "height_m": 25.7
+ },
+ {
+  "id": "nyc_079",
+  "name": "The Cedar of Lebanon of the Olmsted-Beil House",
+  "species": "Cedar of Lebanon (Cedrus libani)",
+  "age_estimate": "not documented",
+  "girth_cm": 367,
+  "location": {
+   "address": "Olmsted-Beil House Park, 4515 Hylan Boulevard, Great Kills area",
+   "latitude": 40.5318,
+   "longitude": -74.1579,
+   "neighbourhood": "Eltingville, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=64"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=64"
+  },
+  "access": "Free public park around the house; Parks lists it as a city park",
+  "transport": "Eltingville SIR station about 1.2 km; S55/S59 buses on Hylan Blvd (unchecked)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=64 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 46 in -> girth_cm 367 (pi x diameter). One official register: counts as enough; Parks entry: one of the trees remaining on the former farm of Frederick Law Olmsted, who farmed here 1848 to 1855 before Central Park; stands 35 ft off the left front corner of the house, three feet off the driveway; canopy spread 40.5 ft; Tree Map ID 4997115. Pin is the Parks tree point (house corner). iNaturalist 2024-05-20 within radius (alive thin but fine).",
+  "height_m": 25.0
+ },
+ {
+  "id": "nyc_080",
+  "name": "The Black Walnut Olmsted Planted",
+  "species": "Black Walnut (Juglans nigra)",
+  "age_estimate": "not documented",
+  "girth_cm": 415,
+  "location": {
+   "address": "Olmsted-Beil House Park, east of the house, 4515 Hylan Boulevard",
+   "latitude": 40.532,
+   "longitude": -74.1579,
+   "neighbourhood": "Eltingville, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=126"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=126"
+  },
+  "access": "Free public park around the house",
+  "transport": "Eltingville SIR station about 1.2 km (unchecked bus routes)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=126 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 52 in -> girth_cm 415 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: black walnut planted by Frederick Law Olmsted at the house where he lived 1848 to 1855; property has many trees planted around 1850. Parks claim only; no second source. 52 in diameter; Tree Map ID 4998269. About 25 m from the cedar (second tree at the same house)."
+ },
+ {
+  "id": "nyc_081",
+  "name": "The American Sycamore of Conference House Park",
+  "species": "American Sycamore (Platanus occidentalis)",
+  "age_estimate": "not documented",
+  "girth_cm": 519,
+  "location": {
+   "address": "Conference House Park, behind the Conference House, Tottenville",
+   "latitude": 40.5031,
+   "longitude": -74.2528,
+   "neighbourhood": "Tottenville, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=67"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=67"
+  },
+  "access": "Conference House Park free, open daily; the house museum charges a small fee in season",
+  "transport": "Tottenville SIR station about 1.1 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=67 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 65 in -> girth_cm 519 (pi x diameter). One official register: counts as enough; Parks entry: behind the Conference House (the 1776 peace conference house); sycamore with canopy spread 55 ft; 65 in diameter and 89 ft in the 1985 register; Tree Map ID 5601261. iNaturalist 2026-09-30 within radius.",
+  "height_m": 27.2
+ },
+ {
+  "id": "nyc_082",
+  "name": "The Pagoda Tree of Von Briesen Park",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "not documented",
+  "girth_cm": 383,
+  "location": {
+   "address": "Von Briesen Park, southern end where the path curves east-west, Rosebank",
+   "latitude": 40.6074,
+   "longitude": -74.0587,
+   "neighbourhood": "Rosebank, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=123"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=123"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Clifton SIR station about 0.9 km; 1.3 km from nyc_076 (a short walk from Alice Austen Park)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=123 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 48 in -> girth_cm 383 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: unusually large for its species, believed part of the original estate of Arthur Von Briesen (Legal Aid Society founder); estate donated to the city by his heirs in 1945; pendant flowers in late summer. Tree Map ID 5112528. 'Believed' is Parks' word. Same shore walk as nyc_076 (Alice Austen Park). iNaturalist 2026-08-26 within radius."
+ },
+ {
+  "id": "nyc_083",
+  "name": "The White Pine of Blue Heron Park",
+  "species": "Eastern White Pine (Pinus strobus)",
+  "age_estimate": "not documented",
+  "girth_cm": 215,
+  "location": {
+   "address": "Blue Heron Park Preserve, just southeast of the Blue Heron Nature Center",
+   "latitude": 40.5307,
+   "longitude": -74.1777,
+   "neighbourhood": "Annadale, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=125"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=125"
+  },
+  "access": "Free public park preserve, open daily",
+  "transport": "Annadale SIR station, about 1 km (unchecked)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=125 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 27 in -> girth_cm 215 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: selected for its age, about 90 ft tall, the only remaining white pine of this size in the park. Tree Map ID 5272187. iNaturalist 2026-10-25 within radius."
+ },
+ {
+  "id": "nyc_084",
+  "name": "The Catalpa of Historic Richmond Town",
+  "species": "Catalpa (Catalpa sp.)",
+  "age_estimate": "not documented",
+  "girth_cm": 375,
+  "location": {
+   "address": "Historic Richmond Town, behind the tin shop, 441 Clarke Avenue (Parks lists LaTourette Park)",
+   "latitude": 40.5713,
+   "longitude": -74.1453,
+   "neighbourhood": "Richmondtown, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=128"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=128"
+  },
+  "access": "Ticketed village (open Wednesday to Sunday per search results; check historicrichmondtown.org for hours and price)",
+  "transport": "Bus from St George (S74 to Richmond Rd, unchecked); no rail",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=128 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 47 in -> girth_cm 375 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: selected for its large size, stands at the back of the tin shop in the only historic village restoration in the city (founded 1939 by the Staten Island Historical Society, over 100 acres, more than two dozen buildings from the 17th to 20th century). Admission needed to enter the village, so ticketed. Tree Map ID 5594799. iNaturalist 2025-05-02 within radius. Genus-level species (Catalpa) per Parks."
+ },
+ {
+  "id": "nyc_085",
+  "name": "The Davis Hybrid Oak of Stuyvesant Place",
+  "species": "Swamp White Oak (Quercus x filialis)",
+  "age_estimate": "not documented",
+  "girth_cm": 343,
+  "location": {
+   "address": "Stuyvesant Place near St. George Park, St. George",
+   "latitude": 40.6442,
+   "longitude": -74.0776,
+   "neighbourhood": "St. George, Staten Island"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=122"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=122"
+  },
+  "access": "Street tree on the public sidewalk, always viewable",
+  "transport": "St. George station (SIR, Staten Island Ferry terminal), about 0.3 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=122 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 43 in -> girth_cm 343 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: hybrid of black oak and willow oak first described by Staten Island naturalist William T. Davis from Tottenville; represents the overlap of southern and northern oak ranges. Tree Map ID 593616. Species given by Parks as Quercus x filialis (Parks title 'Swamp white oak' appears to be a mislabel; the botanical name is the hybrid). iNaturalist 2025-05-29 within radius. A short walk from the ferry."
+ },
+ {
+  "id": "nyc_086",
+  "name": "The American Elm of Sunset Park",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "girth_cm": 303,
+  "location": {
+   "address": "Sunset Park, top of the hill in the central lawn",
+   "latitude": 40.6483,
+   "longitude": -74.0046,
+   "neighbourhood": "Sunset Park, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=92"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=92"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "36 St station (D, N, R), about 0.9 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=92 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 38 in -> girth_cm 303 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: its silhouette on the hill was the advertising photo for the 2023 Great Tree Search. 38 in diameter; Tree Map ID 2845121. iNaturalist 2025-09-18 within radius."
+ },
+ {
+  "id": "nyc_087",
+  "name": "The Elm of Amersfort Park",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "girth_cm": 479,
+  "location": {
+   "address": "Amersfort Park, near the Avenue J and East 39th Street entrance, Flatlands",
+   "latitude": 40.6277,
+   "longitude": -73.9389,
+   "neighbourhood": "Flatlands, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=98"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=98"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Bus on Avenue J / Flatbush Ave; no close subway (unchecked)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=98 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 60 in -> girth_cm 479 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: tall elm, 'one of many old-growth trees in Amersfort Park'. 60 in diameter; Tree Map ID 5095037. iNaturalist 2023-09-27 within radius (older, alive thin: 2023 is the last record)."
+ },
+ {
+  "id": "nyc_088",
+  "name": "The Weeping Willow of Marine Park",
+  "species": "Weeping Willow (Salix babylonica)",
+  "age_estimate": "not documented",
+  "girth_cm": 303,
+  "location": {
+   "address": "Marine Park, near Gerritsen Ballfields, southeast of Ball Field 3",
+   "latitude": 40.5923,
+   "longitude": -73.9239,
+   "neighbourhood": "Marine Park, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=99"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=99"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Bus only (B3, B41 area; unchecked)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=99 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 38 in -> girth_cm 303 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: framed by benches and a path; 38 in diameter; Tree Map ID 5309024. iNaturalist 2026-09-05 within radius."
+ },
+ {
+  "id": "nyc_089",
+  "name": "The Black Oak of Albany Avenue",
+  "species": "Black Oak (Quercus velutina)",
+  "age_estimate": "not documented",
+  "girth_cm": 375,
+  "location": {
+   "address": "1319 Albany Avenue, East Flatbush",
+   "latitude": 40.6411,
+   "longitude": -73.9378,
+   "neighbourhood": "East Flatbush, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=96"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=96"
+  },
+  "access": "Street tree on the public sidewalk, always viewable",
+  "transport": "Bus on Albany Ave; Utica Av and Nostrand stations are over 1.5 km (unchecked)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=96 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 47 in -> girth_cm 375 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: predates residential development; believed to stand where Paerdegat Woods once did (Brooklyn Paper: woods cut in the 1940s). 47 in diameter. Tree Map ID 15323672. Pairs with the Troy Avenue black oak (nyc_090), 240 m east."
+ },
+ {
+  "id": "nyc_090",
+  "name": "The Black Oak of Troy Avenue",
+  "species": "Black Oak (Quercus velutina)",
+  "age_estimate": "not documented",
+  "girth_cm": 415,
+  "location": {
+   "address": "1281 Troy Avenue, East Flatbush",
+   "latitude": 40.6411,
+   "longitude": -73.9349,
+   "neighbourhood": "East Flatbush, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=97"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 2024)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=97"
+  },
+  "access": "Street tree on the public sidewalk, always viewable",
+  "transport": "Bus on Albany Ave / Clarendon Rd (unchecked)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=97 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 52 in -> girth_cm 415 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: the other of two large black oaks believed to be remnants of the Paerdegat Woods. 52 in diameter. Tree Map ID 14299099. Pairs with nyc_089 240 m west."
+ },
+ {
+  "id": "nyc_091",
+  "name": "The Pawpaw of the Plant Family Collection",
+  "species": "Common Pawpaw (Asimina triloba)",
+  "age_estimate": "roughly 100 years",
+  "girth_cm": 80,
+  "location": {
+   "address": "Brooklyn Botanic Garden, Plant Family Collection between Daffodil Hill and Oak Circle, 990 Washington Ave",
+   "latitude": 40.6673,
+   "longitude": -73.9637,
+   "neighbourhood": "Prospect Heights, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=3"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=3"
+  },
+  "access": "Paid entry to Brooklyn Botanic Garden (check bbg.org for hours, prices and free times)",
+  "transport": "Botanic Garden (2, 3, 4, 5) or Prospect Park (B, Q) stations, about 0.4 km",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=3 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 10 in -> girth_cm 80 (pi x diameter). One official register: counts as enough; Parks entry id=3 (1985, still listed): planted 1923 per the entry page now (earlier lead noted a 1932 date on the list page; the entry page itself states 1923). Edible banana-like fruit, large umbrella-like leaves, custard-apple family; canopy spread 23.5 ft. Garden-interior pin, Parks lat/lon only, no Tree Map ID: approximate. Small tree (10 in). iNaturalist 2026-06-06 within radius. BBG owner is the ground's owner, but no BBG page checked.",
+  "height_m": 10.0,
+  "age_min": 100,
+  "age_max": 105
+ },
+ {
+  "id": "nyc_092",
+  "name": "The Chinese Parasol Tree of the Rock Garden",
+  "species": "Chinese Parasol Tree (Firmiana simplex)",
+  "age_estimate": "roughly 55 years",
+  "girth_cm": 98,
+  "location": {
+   "address": "Brooklyn Botanic Garden, south of the Rock Garden",
+   "latitude": 40.6656,
+   "longitude": -73.9637,
+   "neighbourhood": "Prospect Heights, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=5"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=5"
+  },
+  "access": "Paid entry to Brooklyn Botanic Garden (check bbg.org)",
+  "transport": "Botanic Garden (2, 3, 4, 5) or Prospect Park (B, Q) stations, about 0.5 km",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=5 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 12.25 in -> girth_cm 98 (pi x diameter). One official register: counts as enough; Parks entry id=5: sent to BBG by the US National Arboretum in 1971; canopy spread 25 ft. Garden-interior pin, no Tree Map ID: approximate. Small tree, 12.25 in. iNaturalist 2026-10-27 within radius. Beside nyc_093 and nyc_016.",
+  "height_m": 12.0,
+  "age_min": 54,
+  "age_max": 56
+ },
+ {
+  "id": "nyc_093",
+  "name": "The Winterberry of the Rock Garden",
+  "species": "Mountain Winterberry (Ilex montana)",
+  "age_estimate": "not documented",
+  "girth_cm": 219,
+  "location": {
+   "address": "Brooklyn Botanic Garden, south side of the Rock Garden",
+   "latitude": 40.6654,
+   "longitude": -73.9636,
+   "neighbourhood": "Prospect Heights, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=6"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=6"
+  },
+  "access": "Paid entry to Brooklyn Botanic Garden (check bbg.org)",
+  "transport": "Botanic Garden (2, 3, 4, 5) or Prospect Park (B, Q) stations, about 0.5 km",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=6 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 27.5 in -> girth_cm 219 (pi x diameter). One official register: counts as enough; Parks entry id=6: among the 12,000 plants advertised when BBG was founded in 1910 (Parks wording; does not say this is that specimen's age, no age given). Canopy spread 28 ft; 27.5 in diameter in 1985. Garden-interior pin, no Tree Map ID: approximate. 25 m from nyc_092.",
+  "height_m": 11.7
+ },
+ {
+  "id": "nyc_094",
+  "name": "The Pagoda Tree by the Camperdown Elm",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "not documented",
+  "girth_cm": 439,
+  "location": {
+   "address": "Prospect Park, beside the Camperdown elm south of the Boathouse",
+   "latitude": 40.6603,
+   "longitude": -73.9651,
+   "neighbourhood": "Prospect Park, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=10"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=10"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Prospect Park station (B, Q), about 0.3 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=10 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 55 in -> girth_cm 439 (pi x diameter). One official register: counts as enough; Parks entry id=10, Tree Map ID 5379435: 86 ft tall in 1985, canopy spread 62 ft, 55 in diameter. Parks note: native to eastern Asia, once planted at the graves of Japanese scholars; white flower clusters bloom early in the fall (late summer). Stands beside nyc_003 (Camperdown Elm, 40.6602,-73.9651) and nyc_029 (hornbeam, 40.6605,-73.9655): a three-tree stop. iNaturalist 2026-10-13 within radius.",
+  "height_m": 26.2
+ },
+ {
+  "id": "nyc_095",
+  "name": "The Multi-Trunk English Elm of the West Drive",
+  "species": "English Elm (Ulmus procera)",
+  "age_estimate": "not documented",
+  "girth_cm": 590,
+  "location": {
+   "address": "Prospect Park, west drive between the Garfield Entrance and Meadowport Arch",
+   "latitude": 40.6702,
+   "longitude": -73.9712,
+   "neighbourhood": "Prospect Park, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=11"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=11"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Grand Army Plaza station (2, 3), about 0.5 km on foot",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=11 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 74 in -> girth_cm 590 (pi x diameter). One official register: counts as enough; Parks entry id=11, Tree Map ID 4999341: multiple trunks; shows how the introduced English elm differs in shape from the vase-shaped American elm; 74 in diameter, 96 ft, canopy 66 ft (1985). The multi-trunk diameter is a mass, not one stem. iNaturalist 2026-05-18 within radius.",
+  "height_m": 29.2
+ },
+ {
+  "id": "nyc_096",
+  "name": "The Elm of Owl's Head Park",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "girth_cm": 375,
+  "location": {
+   "address": "72nd Street and Ridge Boulevard, near Owl's Head Park, Bay Ridge",
+   "latitude": 40.6343,
+   "longitude": -74.0296,
+   "neighbourhood": "Bay Ridge, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=13"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=13"
+  },
+  "access": "Street tree on the public sidewalk, always viewable",
+  "transport": "Bus on Ridge Blvd; R train at 77 St about 1 km (unchecked)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=13 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 47 in -> girth_cm 375 (pi x diameter). One official register: counts as enough; Parks entry id=13, Tree Map ID 3990811: escaped Dutch elm disease; selected by the community for remarkable size; 47 in diameter, 78 ft (1985). iNaturalist 2026-03-26 within radius. Next to Owl's Head Park, so a short park visit.",
+  "height_m": 23.7
+ },
+ {
+  "id": "nyc_097",
+  "name": "The Parrotia of Kissena Park",
+  "species": "Persian Parrotia (Parrotia persica)",
+  "age_estimate": "not documented",
+  "girth_cm": 128,
+  "location": {
+   "address": "Kissena Park, thirty feet south of the public restroom",
+   "latitude": 40.7471,
+   "longitude": -73.8083,
+   "neighbourhood": "Flushing, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=49"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=49"
+  },
+  "access": "Free, public park, open daily",
+  "transport": "Flushing-Main St (7 train, LIRR), about 2.7 km; local bus",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=49 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 16 in -> girth_cm 128 (pi x diameter). One official register: counts as enough; Parks entry id=49: native to Iran, rare, brown flaky bark; testament to the Samuel B. Parsons nursery introductions; canopy 44 ft. No Tree Map ID on the entry: pin approximate. Beside nyc_006 (Manchurian linden, 40.7474,-73.8093), about 90 m apart: a two-tree stop. iNaturalist 2026-09-06 within radius.",
+  "height_m": 17.2
+ },
+ {
+  "id": "nyc_098",
+  "name": "The Riis Beeches of Maple Grove Cemetery",
+  "species": "American Beech (Fagus grandifolia)",
+  "age_estimate": "roughly 120 years",
+  "girth_cm": 152,
+  "location": {
+   "address": "Maple Grove Cemetery, by the grave of Elizabeth Riis, Kew Gardens",
+   "latitude": 40.7084,
+   "longitude": -73.8219,
+   "neighbourhood": "Kew Gardens, Queens"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=55"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees of New York City (designated 1985)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=55"
+  },
+  "access": "Cemetery open to visitors (check maplegrovecemetery.org for hours)",
+  "transport": "Kew Gardens station (E, F), about 0.8 km on foot",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Source: NYC Parks Great Trees entry id=55 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 19.02 in -> girth_cm 152 (pi x diameter). One official register: counts as enough; Parks entry id=55 (two entries id=55/56 are the twin beeches at one spot, folded): planted by Jacob Riis in 1905 by the grave of his wife Elizabeth Riis (Parks note; planting date is that note only). 19 in (and a second 26.4 in) diameter in 1985. Cemetery pin, no Tree Map ID: approximate; twins fold to one entry. iNaturalist 2025-01-03 within radius (alive thin but OK). Cemetery access not checked on the cemetery's own page.",
+  "height_m": 18.7,
+  "age_min": 118,
+  "age_max": 121
+ }
+]

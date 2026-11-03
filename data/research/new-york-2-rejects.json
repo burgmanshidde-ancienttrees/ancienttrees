@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Evodia by Heckscher Playground",
+  "reason": "earlier pass: Untapped says appears removed; no alive evidence",
+  "lat": null
+ },
+ {
+  "name": "Woodlawn Cemetery White Oak (oldest tree at Woodlawn, Parks id 32) and European cutleaf beech (id 25), weeping beech (24)",
+  "reason": "alive/exists per Parks listings (search snippets) and Woodlawn Conservancy arboretum page, but no coordinate in reach (cemetery trees absent from the Parks forestry points); sources conflict on the beech location (Woodbine Plot vs Manger lot); kept as leads for a pass with a cemetery map",
+  "lat": null
+ },
+ {
+  "name": "Wave Hill American elm (114.8 ft, 53.6 in), sugar maple, lacebark pine",
+  "reason": "1985 Great Trees per the wiki draft; ticketed garden, not a one-glance site, no tree coordinate; lead",
+  "lat": null
+ },
+ {
+  "name": "Corlear Avenue sycamore, W 231st St (Parks id 14)",
+  "reason": "no matching 53 in sycamore in the forestry points; no coordinate",
+  "lat": null
+ },
+ {
+  "name": "Kappock St osage orange; 710 W 246th St slippery elm; 2151 Newbold Ave sweetgum",
+  "reason": "stand at apartment buildings / a VFW post address, not clearly public (hard rule 10)",
+  "lat": null
+ },
+ {
+  "name": "Joyce Kilmer Park American linden",
+  "reason": "no matching large linden in forestry points (largest 29 in silver linden); cannot pin",
+  "lat": 40.8285
+ },
+ {
+  "name": "Stevens Institute elms and cottonwood (Hoboken, Castle Point Terrace)",
+  "reason": "NJDEP rows are residential addresses; search found a Wikipedia list entry only (elm 207 in girth, 90 ft) with no site or alive evidence; not verified",
+  "lat": 40.7447
+ },
+ {
+  "name": "Pelham Bay Park War Memorial littleleaf linden",
+  "reason": "no linden match in forestry points; cannot pin",
+  "lat": 40.8595
+ },
+ {
+  "name": "Census outliers: pin oak 120 in (40.7610,-73.9399), European hornbeam 115 in (40.7528,-73.9499), American elm 111 in (40.8218,-73.9158), ginkgo 111 in (40.7741,-73.9636), American elm 79 in (W 123rd St, 40.8096,-73.9563), Kentucky yellowwood 80 in (Mosholu Pkwy, 40.8801,-73.8846), beech 64 in (E Gun Hill Rd, 40.8610,-73.8296)",
+  "reason": "forestry-point dbh values implausible or street-side with no naming body or second source; need a field measure, not shipped",
+  "lat": null
+ },
+ {
+  "name": "Inwood Hill Park tulip trees, cottonwoods, American beech 57 in (40.8735,-73.9236)",
+  "reason": "no individual tree named by any source; Shorakkopoch tulip tree is fallen (rock marker only), Parks hiking page claim of two old cottonwoods conflicts with other sources; lead only",
+  "lat": 40.8735
+ },
+ {
+  "name": "Fort Tryon Siberian elm at Heather Garden south entrance (Great Tree, 29 in)",
+  "reason": "small trunk, no clear match among 32-39 in Siberian elms in the forestry points",
+  "lat": 40.8588
+ },
+ {
+  "name": "Bartow-Pell treaty elm, James Madison Tree, Anne Frank Tree, Camperdown Elm East Green",
+  "reason": "earlier leads re-read: young or ticketed or alive/identity unproven; no new evidence this pass",
+  "lat": null
+ }
+]

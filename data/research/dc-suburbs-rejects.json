@@ -1,0 +1,136 @@
+[
+  {
+    "id": "wdc_041",
+    "name": "Fort C.F. Smith Tulip Poplar",
+    "species": "Tulip Poplar (Liriodendron tulipifera)",
+    "age_estimate": "likely pre-dates the Civil War",
+    "age_min": 160,
+    "age_max": null,
+    "girth_cm": 635,
+    "height_m": 42.7,
+    "location": {
+      "address": "Fort C.F. Smith Park, 2411 24th Street North, Arlington, VA 22207",
+      "latitude": 38.9019,
+      "longitude": -77.0898,
+      "neighbourhood": "Arlington (Virginia), about 35 minutes from downtown DC by Metro (Orange/Silver/Blue Line to Rosslyn, then about a 20 minute walk north-west)"
+    },
+    "verified_sources": [
+      "https://www.arlingtonva.us/Government/Programs/Sustainability/Trees/Notable-Specimen-and-Champion-Trees/Specimen-Trees",
+      "https://arlington.granicus.com/MetaViewer.php?clip_id=437&meta_id=42607"
+    ],
+    "official_register": {
+      "name": "Arlington County Specimen Tree nominations (Urban Forestry Commission)",
+      "url": "https://www.arlingtonva.us/Government/Programs/Sustainability/Trees/Notable-Specimen-and-Champion-Trees/Specimen-Trees"
+    },
+    "access": "Free. Fort C.F. Smith is an Arlington County park and historic site; the tree stands inside it, in a steep wooded ravine.",
+    "transport": "Rosslyn Metro (Orange, Silver, Blue), then about 1.6 km on foot; no direct rail.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidate": null,
+    "verify_notes": "One source, but the owner of the ground: Arlington County. The county's Specimen Trees page says: currently the largest tree measured in Arlington County, almost 21 feet in circumference and 140 feet tall, likely one of few trees at the historic park to pre-date the Civil War. The county nomination form (Owner: Arlington County, nominator Urban Forestry Commission) says the same, adds County Champion tulip poplar, and 'grows in a steep wooded ravine and may have provided shade to Union soldiers stationed at the fort'. girth_cm 635 is 'almost 21 ft' converted (21 ft = 640); height_m 42.7 is 140 ft. Neither page carries a measurement date and no age figure is given, so age_min 160 only restates 'pre-dates the Civil War' (1861-65) as a floor; no upper bound. Do not call it a state champion: a search summary claimed one for a different tree. Pin: the park centre only (Nominatim, park bbox about 250 m by 300 m); no OSM tree node and no register coordinate exist, so precision is approximate at park level and the tree is NOT findable by pin: it fails findable unless a trunk photo or the park's staff gives the spot. Recognition line to use: the biggest tree in the ravine below the fort. Alive: only an undated 'currently'. Transit: Rosslyn Metro about 12 minutes from Metro Center plus a 20 minute walk, so about 35 minutes door to door, slightly over.",
+    "status": "lead_not_findable",
+    "reason": "Verified (Arlington County is the owner and source; almost 21 ft girth, 140 ft, pre-Civil War, County Champion) but only a park-level pin and no photo, so it fails the findable rule (park is not a small site). Held here as a lead with its full record; ships the moment a trunk coordinate or photo is found. About 35 min from downtown DC (Rosslyn Metro plus 20 min walk)."
+  },
+  {
+    "name": "Alexandria Bicentennial Willow Oak (Holmes Run)",
+    "status": "lead_over_distance",
+    "lat": 38.81367,
+    "lng": -77.11452,
+    "reason": "VERIFIED but about 45 to 50 minutes from downtown DC (Metro to King St-Old Town about 22 min, then DASH bus on Duke St, then a short walk), over the 30 minute rule, so a lead not a delivery. Full data: Willow Oak (Quercus phellos), Holmes Run Trail opposite Beatley Library, about 100 yards in from the Duke Street entrance of the park, published GPS N 38 48.820 W 077 06.871 (confirmed pin, from City of Alexandria page https://www.alexandriava.gov/go/6881 and Waymarking WM136BX), measured Nov 2024: girth 208 in (528 cm), diameter 66.5 in, height 116 ft (35.4 m), crown 105 ft, score 350, city estimate 'likely around 1707'; designated Alexandria's Bicentennial Tree 1977 (Connection Newspapers 2004-03-23), 1976 estimate 270 years; lost a large limb on one side. Free public park."
+  },
+  {
+    "name": "Bluemont Park Chestnut Oak, Arlington",
+    "status": "lead",
+    "reason": "Arlington County specimen nomination: girth 15 ft 9 in, 125 ft, third largest chestnut oak in Virginia, remnant of the old forest; county-owned park but no coordinate or spot given. Fetched from arlington.granicus.com clip 437 meta 42607. No pin, no date."
+  },
+  {
+    "name": "Bluemont Park Swamp White Oak, Arlington",
+    "status": "lead",
+    "reason": "County Champion swamp white oak next to the picnic shelter (same nomination PDF); no size, no coordinate. Possible small site if a shelter coordinate is found."
+  },
+  {
+    "name": "Post Oak, 5845 N 11th St (Westover), Arlington",
+    "status": "reject",
+    "reason": "Street tree, 18 ft girth, 93 ft, State champion post oak per the nomination PDF, but this is the county's famous oldest tree that the 2012 derecho destroyed (removed 2012-07, reported by WJLA and ARLnow); dead."
+  },
+  {
+    "name": "Lee Arts Center Scarlet Oak, Arlington",
+    "status": "lead",
+    "reason": "County-owned grounds, one of the oldest trees in Westover, co-county champion, no size or coordinate in the nomination PDF."
+  },
+  {
+    "name": "Arlington National Cemetery Dwarf Hackberry, Section 8",
+    "status": "reject",
+    "reason": "State co-champion (2018 ANC news item) but a small species, 15 in diameter in 1960 plus six inches; not worth the walk."
+  },
+  {
+    "name": "UMD College Park post oak at School of Architecture",
+    "lat": 38.984708,
+    "lng": -76.947704,
+    "status": "reject",
+    "reason": "PG County champion register point only (no size in the layer). UMD Arboretum's own champion list of 15 trees has no post oak, and iNaturalist shows only a red oak and a willow oak near the point. Cannot confirm it exists or is old. Campus champions are ornamentals (Himalayan pine, parasoltree at the Memorial Chapel)."
+  },
+  {
+    "name": "Bladensburg Dueling Grounds Willow Oak (PG register)",
+    "lat": 38.9331587,
+    "lng": -76.9520799,
+    "status": "reject",
+    "reason": "Register row only, no size, no age, no second source; searches find no willow oak at Dueling Creek Natural Area (only a felled white oak at Fort Lincoln Cemetery next door). Transit also poor (bus from Cheverly Metro)."
+  },
+  {
+    "name": "Marietta Manor Dawn Redwood and Northern Pecan, Glenn Dale (PG register)",
+    "lat": 38.966919,
+    "lng": -76.7996,
+    "status": "lead",
+    "reason": "Register rows only, no size; Glenn Dale has no Metro, over an hour by bus. Dawn redwood also appears in the 2019 PG Tree Book per a search summary (not fetched, PDF URL 404s)."
+  },
+  {
+    "name": "Harmony Hall Park red maple and loblolly pine; Oxon Hill Manor Atlas Cedar (PG register)",
+    "lat": 38.79272,
+    "lng": -77.00518,
+    "status": "lead",
+    "reason": "Register rows, no sizes, no second source. Oxon Hill Manor is a county historic site but far from rail, over 45 minutes."
+  },
+  {
+    "name": "Fort Washington Park register rows (black walnut state champion, chestnut oak, red oak, chinkapin oak, bitternut hickory, raisin tree, black oak)",
+    "lat": 38.71138,
+    "lng": -77.036,
+    "status": "lead",
+    "reason": "Public NPS park but over an hour by bus from Branch Ave Metro; register rows carry no size. Black walnut at 38.71138,-77.036 is flagged state champion by the county layer."
+  },
+  {
+    "name": "Riversdale House Museum trees, Riverdale Park",
+    "status": "reject",
+    "reason": "Searches find no documented old tree; nothing to verify."
+  },
+  {
+    "name": "Hyattsville, Takoma Park, Silver Spring, Wheaton, Bethesda, Glen Echo candidates",
+    "status": "reject",
+    "reason": "No named, sized, locatable public tree found: Montgomery Forestry Board 'publicly accessible trees' data page renders empty (JS), Friends of Sligo Creek tour lists species with no sizes or coordinates (Forest Glen Rd black gum designated Bicentennial 1976 is the one to chase with a session), Linden Oak is dead (blocked already)."
+  },
+  {
+    "name": "Mount Vernon bowling green tulip poplars",
+    "status": "lead",
+    "reason": "Two tulip poplars Washington planted about 1785 are reported still standing on the bowling green (Washington University source.washu.edu 2014); a Mount Vernon horticulturist is quoted for three alive, oldest from 1766, placed by another piece along the path to the tomb. Sources unreconciled, no coordinates fetched. Transit about 60 minutes (Yellow Line to Huntington plus Fairfax Connector 101), ticketed. Needs a session."
+  },
+  {
+    "name": "Arlington National Cemetery champions: Section 35 willow oak (largest by diameter), Section 12 sawtooth oak, Section 23 yellowwood, Section 46 empress tree, Section 18 water oak",
+    "status": "lead",
+    "reason": "Open to the public daily, Arlington Cemetery Metro about 15 minutes from Metro Center. ANC state champion page https://www.arlingtoncemetery.mil/Explore/Memorial-Arboretum-and-Horticulture/Trees/State-Champion-Trees lists section numbers (yellowwood near gravesite 22794-C); a search summary calls the Section 35 willow oak the cemetery's largest by diameter. Only section-level locations, no coordinates or sizes fetched, so not findable yet. Best next target for a session: fetch that page and the 2012 state champions PDF, then pin by section map."
+  },
+  {
+    "name": "Maryland Bicentennial Trees list (DNR)",
+    "status": "reject",
+    "reason": "dnr.maryland.gov/forests/Documents/BicentennialTrees.pdf (Wayback copy) is only an introduction: 292 trees in 1976, county lists available on request from the Maryland Big Tree Program. No per-tree data to use."
+  },
+  {
+    "name": "Alexandria Christ Church churchyard",
+    "status": "reject",
+    "reason": "Search finds no documented individual tree."
+  },
+  {
+    "name": "Sligo Creek Black Gum, Forest Glen Road (Bicentennial Tree 1976)",
+    "status": "lead",
+    "reason": "Friends of Sligo Creek 2010 tour page: designated Bicentennial Tree in 1976, 'believed alive in 1776'; no coordinate, no size. Worth one session with a map."
+  }
+]

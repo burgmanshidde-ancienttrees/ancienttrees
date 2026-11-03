@@ -1,0 +1,255 @@
+[
+  {
+    "id": "lsb_001",
+    "name": "Japanese Chestnut at Saint John the Apostle",
+    "species": "Japanese Chestnut (Castanea crenata)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 434,
+    "height_m": 16.5,
+    "location": {
+      "address": "Saint John the Apostle Catholic Church grounds, 101 Oakcrest Manor Dr NE, Leesburg, VA 20176",
+      "latitude": 39.11885,
+      "longitude": -77.56139,
+      "neighbourhood": "Historic Leesburg"
+    },
+    "verified_sources": [
+      "https://bigtree.cnre.vt.edu/detail.cfm?AutofieldforPrimaryKey=2457",
+      "https://www.loudoun.gov/bigtreeregistry",
+      "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+    ],
+    "official_register": {
+      "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+      "url": "https://www.loudoun.gov/bigtreeregistry"
+    },
+    "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+    "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Virginia Tech Big Tree record 2457 (nominated by Robert Vickers, 2015): Japanese chestnut, 161 in girth, 45 ft, crown 40 ft, status 'legacy', not a Virginia champion; land owner St. John the Apostle Catholic Church; GPS 39.11885,-77.56139; 'just north of a spring house at a sharp turn of Church Street, entering the grounds from the south'. Identification was hard: Virginia Tech first said Castanea sativa; The American Chestnut Foundation concluded Castanea crenata, partly because the tree is 'very aged' and shows no chestnut blight. Loudoun County registry remeasured 2025: 171 in (434 cm), 54 ft (16.5 m), crown 55 ft, marked Virginia champion in the county list (VT record says not champion, conflict between the two, not resolved). Alive: measured 2025 by the county. No age given by any source; left empty. Trees lsb_001 and lsb_004 stand about 7 m apart; lsb_001 to lsb_004 are the four registered trees on this one site. Photo candidate: none looked for. Figures from county feature layer (girth in inches 171 x 2.54), PDF cross-checked."
+  },
+  {
+    "id": "lsb_002",
+    "name": "Atlantic White Cedar at Saint John the Apostle",
+    "species": "Atlantic White Cedar (Chamaecyparis thyoides)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 318,
+    "height_m": 17.7,
+    "location": {
+      "address": "Saint John the Apostle Catholic Church grounds, Church Street NE, Leesburg, VA 20176",
+      "latitude": 39.11893,
+      "longitude": -77.56081,
+      "neighbourhood": "Historic Leesburg"
+    },
+    "verified_sources": [
+      "https://www.loudoun.gov/bigtreeregistry",
+      "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+    ],
+    "official_register": {
+      "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+      "url": "https://www.loudoun.gov/bigtreeregistry"
+    },
+    "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+    "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "One source: Loudoun County Big Tree Registry 2025: 58 ft (17.7 m), 125 in girth (318 cm), crown 31 ft, 191 points, marked Virginia state champion for the species. Pin is the county's coordinate (5 decimals), about 45 m east of the chestnut; individual crown not checked on imagery, so approximate. Register only, flagged 'register only' but measured 2025. No age. A narrow-crowned evergreen native of coastal swamps, planted here on a church lawn (planting origin not documented)."
+  },
+  {
+    "id": "lsb_003",
+    "name": "Silver Linden at Saint John the Apostle",
+    "species": "Silver Linden (Tilia tomentosa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 625,
+    "height_m": 21,
+    "location": {
+      "address": "Saint John the Apostle Catholic Church grounds, Church Street NE, Leesburg, VA 20176",
+      "latitude": 39.11925,
+      "longitude": -77.56165,
+      "neighbourhood": "Historic Leesburg"
+    },
+    "verified_sources": [
+      "https://www.loudoun.gov/bigtreeregistry",
+      "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+    ],
+    "official_register": {
+      "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+      "url": "https://www.loudoun.gov/bigtreeregistry"
+    },
+    "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+    "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "One source: Loudoun County Big Tree Registry 2025 (PDF and feature layer): 69 ft (21 m), 246 in girth (625 cm), crown 61 ft, 330 points, Virginia champion for the species. NOTE the feature layer row for this tree has its columns shifted (points shown as height); the PDF row is the correct one and is what is used. 246 in girth is large for a linden. Register only; no age; pin approximate."
+  },
+  {
+    "id": "lsb_004",
+    "name": "Shellbark Hickory at Saint John the Apostle",
+    "species": "Shellbark Hickory (Carya laciniosa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 287,
+    "height_m": 29.9,
+    "location": {
+      "address": "Saint John the Apostle Catholic Church grounds, Church Street NE, Leesburg, VA 20176",
+      "latitude": 39.11891,
+      "longitude": -77.56133,
+      "neighbourhood": "Historic Leesburg"
+    },
+    "verified_sources": [
+      "https://www.loudoun.gov/bigtreeregistry",
+      "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List"
+    ],
+    "official_register": {
+      "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+      "url": "https://www.loudoun.gov/bigtreeregistry"
+    },
+    "access": "Church grounds and parish cemetery beside Church Street NE, Leesburg. The county flags this tree as visible or accessible from public property. Check for services or funerals before walking in; no published hours.",
+    "transport": "Downtown Leesburg; Loudoun County Transit stop Union St and King St is about a 3 minute walk (OSM stop ref 29).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Saint John the Apostle church grounds and cemetery, Church Street NE",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "One source: Loudoun County Big Tree Registry 2025 (PDF row): 98 ft (29.9 m), 113 in girth (287 cm), crown 73 ft, 229 points; not marked state champion. Feature-layer row has shifted columns; PDF used. Coordinate 39.11891,-77.56133 is about 7 m from the Japanese chestnut lsb_001 (different species, two separate trunks, one place to stand; writer may treat them as one stop). Register only; no age; approximate."
+  },
+  {
+    "id": "lsb_005",
+    "name": "Tulip Poplar at Morven Park",
+    "species": "Tulip Poplar (Liriodendron tulipifera)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 391,
+    "height_m": 29.6,
+    "location": {
+      "address": "Morven Park, 17195 Southern Planter Lane, Leesburg, VA 20176 (near the Westmoreland Davis mansion)",
+      "latitude": 39.1417,
+      "longitude": -77.5771,
+      "neighbourhood": "Morven Park"
+    },
+    "verified_sources": [
+      "https://www.loudoun.gov/bigtreeregistry",
+      "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List",
+      "https://www.morvenpark.org/mansion/visit/gardens-grounds/"
+    ],
+    "official_register": {
+      "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+      "url": "https://www.loudoun.gov/bigtreeregistry"
+    },
+    "access": "Morven Park grounds are open 7:00 a.m. to 6:00 p.m. daily and free to visit (the estate's own Gardens & Grounds page); mansion tours are separate and ticketed. Dogs on leash.",
+    "transport": "About 2 km north-west of downtown Leesburg; a 5 minute drive. No regular public transport found.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Loudoun County Big Tree Registry 2025: 97 ft (29.6 m), 154 in girth (391 cm), crown 68 ft, 268 points; flagged public by the county. Pin is the county coordinate, which reverse-geocodes to the mansion area ('Gov. Westmoreland Davis Home'); which lawn tree exactly is not settled, so approximate and no small-site claim (the estate is 1,000 acres). Morven Park, former estate of Governor Westmoreland Davis (bought 1903, per the estate), formal boxwood gardens laid 1930 by Marguerite Davis (estate page). No source dates this tree; no age. A treeclimbing group pruned trees at the estate in 2024 (search result only, not used). Register + owner page = two sources for existence and access; alive from 2025 measurement."
+  },
+  {
+    "id": "lsb_006",
+    "name": "Oatlands Ginkgo",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "close to 200 years, by the estate's arborist",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 511,
+    "height_m": 31.4,
+    "location": {
+      "address": "Oatlands Historic House and Gardens, 20850 Oatlands Plantation Lane, Leesburg, VA 20175",
+      "latitude": 39.04035,
+      "longitude": -77.6181,
+      "neighbourhood": "Oatlands"
+    },
+    "verified_sources": [
+      "https://www.loudoun.gov/bigtreeregistry",
+      "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List",
+      "https://www.middleburglife.com/identifying-some-of-virginias-oldest-trees/",
+      "https://www.oatlands.org/plan-your-visit/"
+    ],
+    "official_register": {
+      "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+      "url": "https://www.loudoun.gov/bigtreeregistry"
+    },
+    "access": "Oatlands gardens and grounds open 10 a.m. to 5 p.m. daily with a ticket (Oatlands plan-your-visit page); the ginkgo stands behind the mansion, so it is inside the paid grounds.",
+    "transport": "5 miles south of downtown Leesburg on Route 15, about a 12 minute drive. No public transport found.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Loudoun County registry 2025 (PDF row, cols corrected): 103 ft (31.4 m), 201 in girth (511 cm), crown 69 ft, 321 points; the feature layer row is column-shifted. An older write-up of the Oatlands ginkgo (Atlas Obscura, via search result only, page 403) quoted 82 ft and 185 in; the figures differ, the 2025 county ones are used. Middleburg Life (Jim Donegan, Oatlands' tree contractor): 'third largest ginkgo in the country', 'close to 200 years old', Virginia Tech measured it (the arborist's age claim, no core cited). ALIVE CAVEAT: the county forester's July 2026 visit to Oatlands found the nearby American hornbeam (VT record 1457) REMOVED; the ginkgo was not reported removed, but nobody has confirmed it since 2025. Writer or later pass should confirm with Oatlands (703-727-0670) before publishing. Pin: registry coordinate, 'behind the mansion'; approximate. The hornbeam is dead/removed: rejected. Estate also has a 200-year-old American boxwood canopy near the picnic tables and 200-year-old yews per the same article (not individually pinned)."
+  },
+  {
+    "id": "lsb_007",
+    "name": "Leesburg Heritage Tree",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "well over 250 years, by the town",
+    "age_min": 250,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Ida Lee Park, beside the Rust Farm House, 50 Ida Lee Drive NW, Leesburg, VA 20176",
+      "latitude": 39.12406,
+      "longitude": -77.56477,
+      "neighbourhood": "Ida Lee Park"
+    },
+    "verified_sources": [
+      "http://web.archive.org/web/20260131192936/https://www.leesburgva.gov/home/showpublisheddocument/27422/636710590674400000",
+      "https://www.leesburgva.gov/visitors/leesburg-celebrates-america-250"
+    ],
+    "access": "Ida Lee Park is a free town park. The tree is next to the Rust Farm House beside the festival field.",
+    "transport": "About 1.2 km north-west of downtown Leesburg; roughly 15 minutes on foot. No bus checked.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Rust Farm House yard, Ida Lee Park",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Source: the Town of Leesburg Tree Commission's 'Tree Walk of Historic Leesburg' leaflet (read through a Wayback copy): 'Leesburg Heritage Tree' is 'a fine specimen of a Northern White Oak that is well over 250 years old and grew from a seed before the Town of Leesburg was founded in 1758'; located 'next to Rust Farm House, circa 1859 (50 Ida Lee Drive NW)'. Age is the town's statement, no core or measurement cited. Pin is the farmhouse address point (39.12406,-77.56477, Nominatim/OSM), not the trunk; no tree node with species in OSM; no girth. The town's America 250 page says the park 'once' had several mature white oaks and planted a Mount Vernon chestnut oak sapling beside the farmhouse in May 2026 (do not confuse the sapling with the heritage oak). A Loudoun Times piece of 23 Jan 2026 reports the town's tree inventory measuring a 'massive white oak' at Ida Lee Park (arborist Jack Myrna; article text paywalled, not read, not necessarily the same tree). Alive: not confirmed since the leaflet (leaflet undated, archive copy Jan 2026); the 2026 article suggests a large white oak stands there. Flagged: single source, pin is a site."
+  },
+  {
+    "id": "lsb_008",
+    "name": "Shumard Oak at Algonkian Regional Park",
+    "species": "Shumard Oak (Quercus shumardii)",
+    "age_estimate": "roughly 200 years, by the county",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 467,
+    "height_m": 33.2,
+    "location": {
+      "address": "Algonkian Regional Park, Sterling, VA (NOVA Parks), off the park's trail network near Sugarland Run",
+      "latitude": 39.06111,
+      "longitude": -77.36916,
+      "neighbourhood": "Sterling / Lowes Island"
+    },
+    "verified_sources": [
+      "https://www.loudoun.gov/bigtreeregistry",
+      "https://www.loudoun.gov/DocumentCenter/View/216553/Loudoun-County-Big-Tree-Registry-List",
+      "https://www.nature.org/en-us/about-us/where-we-work/united-states/virginia/stories-in-virginia/va-public-lands/"
+    ],
+    "official_register": {
+      "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+      "url": "https://www.loudoun.gov/bigtreeregistry"
+    },
+    "access": "Algonkian Regional Park is a public NOVA Parks park on a trail network; the park charges parking/entry fees at some times (not checked). The county names this tree as one of the largest in Loudoun and flags it public.",
+    "transport": "Sterling, about 20 km east of Leesburg, 25 to 30 minutes by car on Route 7. No usable public transport from Leesburg.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "County registry page caption (fetched): 'This Shumard oak in Algonkian Regional Park is one of the largest trees in Loudoun. It is 109 feet high and 184 inches around the trunk. It's estimated to be about 200 years old.' 2025 registry: 109 ft (33.2 m), 184 in (467 cm), crown 83 ft, 313.75 points. The Nature Conservancy Virginia public-lands page (via search result, not opened) is said to give 112 ft and 176 in, older. Pin: registry coordinate 39.06111,-77.36916; OSM shows paths 26-29 m away and the Algonkian Regional Park polygon about 43 m away, so the trunk is inside or at the edge of the park; approximate. Age is the county's estimate, basis not stated. Sterling place label for the writer. Alive: 2025 measurement."
+  }
+]

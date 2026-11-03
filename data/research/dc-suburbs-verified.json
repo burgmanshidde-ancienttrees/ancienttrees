@@ -1,0 +1,35 @@
+[
+  {
+    "id": "wdc_040",
+    "name": "Alexandria Bicentennial Sweet Gum",
+    "species": "Sweet Gum (Liquidambar styraciflua)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Alexandria National Cemetery, 1450 Wilkes Street, Alexandria, VA 22314",
+      "latitude": 38.80183,
+      "longitude": -77.0582,
+      "neighbourhood": "Old Town Alexandria (Virginia), about 30 minutes from downtown DC by Metro (Blue/Yellow Line to King St-Old Town, then about a 10 minute walk)"
+    },
+    "verified_sources": [
+      "https://www.alexandriava.gov/go/6881",
+      "http://www.connectionnewspapers.com/news/2004/mar/23/local-youth-discover-ancient-landmarks",
+      "https://www.nps.gov/nr/travel/national_cemeteries/Virginia/Alexandria_National_Cemetery.html"
+    ],
+    "official_register": {
+      "name": "City of Alexandria Bicentennial Tree Project (one of the 17 original 1970s trees)",
+      "url": "https://www.alexandriava.gov/go/6881"
+    },
+    "access": "Free. Alexandria National Cemetery is open to visitors daily from sunrise to sunset (NPS travel itinerary page); no staff on site.",
+    "transport": "King St-Old Town Metro (Blue and Yellow lines), roughly 8 to 10 minutes on foot to the cemetery on Wilkes Street.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Alexandria National Cemetery, below the flagpole",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "photo_candidate": null,
+    "verify_notes": "Single source for the tree itself (City of Alexandria page, current: calls it a surviving original Bicentennial Project tree, located below the American flag in Alexandria National Cemetery off Wilkes Street); the Connection Newspapers piece of 2004-03-23 repeats the location and says six of the original seventeen trees still stood then. The city page says only two originals remain on public land, this and the willow oak (see dc-suburbs-rejects.json, Holmes Run). No size is published by any source seen. Age: the city page gives no age; I did not fetch the other age figures a search summary mentioned (about 200 years at the 1980 designation per a cemetery document, nearly 250 per a news article), so none is recorded. Bicentennial Tree Project: 17 trees identified in the 1970s as 'Living Witnesses of the American Revolution', each with a plaque. Pin: the flagpole in the cemetery is an OSM node at 38.80183,-77.05820; the city says the tree is below the flag, so this pin is the flagpole, not the trunk; approximate. What tells it apart: the sweet gum at the foot of the flagpole hill. Alive: the city page is current and describes it as surviving; no dated photograph seen. Whether it is spectacular is unknown: no girth published, so the writer should keep it modest and rest it on the Bicentennial designation."
+  }
+]
