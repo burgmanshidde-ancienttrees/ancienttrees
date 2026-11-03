@@ -440,6 +440,10 @@ struct ProfileView: View {
                      "https://apps.apple.com/app/id6806177833?action=write-review")
             }
             .brandCard()
+            // The one footnote here, because it gives a reason to tap
+            // (Hidde, 2026-11-03: his line, word for word).
+            Text("A good rating helps others find Ancient Trees.")
+                .font(.footnote).foregroundStyle(Brand.inkSoft)
         }
     }
 

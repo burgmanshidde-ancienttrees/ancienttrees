@@ -21,7 +21,7 @@ import { ageShort } from "./age-short";
 import { dayTrips, type DayTrip } from "./day-trips";
 import type { CityEntry } from "./trees";
 import { peakFor, seasonKey } from "./phenology";
-import { isSeasonal, seasonOfMonth, type Season } from "./seasons";
+import { colourMonths, isSeasonal, seasonOfMonth, type Season } from "./seasons";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText, heroFrame } from "./images";
 import { savesOf } from "./saves";
@@ -190,7 +190,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         // No `register`: the official register is shown on the website only,
         // in the tree's sources (Hidde, 2026-10-08: remove from the app).
         ...(trips.get(t.id) ? { day_trip: trips.get(t.id) } : {}),
-        photo: resolvePhoto(p, loc.latitude),
+        photo: resolvePhoto(p, loc.latitude, colourMonths(t)),
         // MORE THAN ONE PHOTOGRAPH (2026-09-12). Sent only when there IS more
         // than one, so 3000-odd single-photograph trees pay nothing for a
         // feature they do not use, and it carries the FULL set, lead first, so
@@ -204,7 +204,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         // show and how to credit it, one city wore two faces and four
         // photographs disagreed across the two surfaces.
         ...(shots.length > 1
-          ? { photos: shots.map((x) => resolvePhoto(x, loc.latitude)).filter(Boolean) }
+          ? { photos: shots.map((x) => resolvePhoto(x, loc.latitude, colourMonths(t))).filter(Boolean) }
           : {}),
         ...(p?.url && isSeasonal(t, loc.latitude) ? { seasonal: true as const } : {}),
       });
@@ -214,7 +214,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
   return out;
 }
 
-function resolvePhoto(p: ReturnType<typeof usablePhoto>, lat: number): FeedPhoto | null {
+function resolvePhoto(p: ReturnType<typeof usablePhoto>, lat: number, colour?: number[]): FeedPhoto | null {
   return p?.url
     ? {
       url: p.url,
@@ -259,7 +259,7 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>, lat: number): FeedPhoto
       // Discover's season hero shows a tree only when its photograph was
       // taken in the tree's best months (Hidde, 2026-10-13).
       taken_month: (p as any).taken_month ?? null,
-      season: seasonOfMonth((p as any).taken_month, lat),
+      season: seasonOfMonth((p as any).taken_month, lat, colour),
       }
     : null;
 }

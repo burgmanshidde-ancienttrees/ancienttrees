@@ -49,7 +49,7 @@ import { ui } from "../lib/i18n";
 import { treeSources } from "../lib/tree-sources";
 import { officialRegister } from "../lib/official-register";
 import type { Tree } from "../lib/trees";
-import { SEASONS, isSeasonal, seasonOfMonth } from "../lib/seasons";
+import { SEASONS, colourMonths, isSeasonal, seasonOfMonth } from "../lib/seasons";
 
 interface Props {
   lang: string;
@@ -166,11 +166,11 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
 // (the script at the foot), so a build from last week never names the wrong one.
 const seasonal = !noPhoto && isSeasonal(tree, loc.latitude);
 const seasonTiles = seasonal ? SEASONS.map((key) => {
-  const idx = p.shots.map((s, i) => (s?.url && seasonOfMonth(s.taken_month, loc.latitude!) === key ? i : -1)).filter((i) => i >= 0);
+  const idx = p.shots.map((s, i) => (s?.url && seasonOfMonth(s.taken_month, loc.latitude!, colourMonths(tree)) === key ? i : -1)).filter((i) => i >= 0);
   return { key, name: U.seasonNames[key], index: idx[0] ?? -1, count: idx.length };
 }) : [];
 const seasonsFilled = seasonTiles.filter((s) => s.count > 0).length;
-const leadSeason = seasonal ? seasonOfMonth(photo?.taken_month, loc.latitude!) : null;
+const leadSeason = seasonal ? seasonOfMonth(photo?.taken_month, loc.latitude!, colourMonths(tree)) : null;
 ---
 <main class:list={["content-page", "td-page", { "td-tall": tall, "td-nophoto-page": noPhoto }]}
   style={tall ? `--td-ar:${tallAr.toFixed(4)}` : undefined}>

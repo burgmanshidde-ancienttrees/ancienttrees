@@ -124,11 +124,6 @@ export const ADD_PHOTO_JS = `
   // url that lasts an hour, the route My trees uses. And the one upgrade
   // worth announcing beside the button: yours went on the page.
   var yours = document.getElementById('td-yours');
-  var LOCALE = document.documentElement.lang || 'en';
-  function dayOf(iso) {
-    try { return new Date(iso).toLocaleDateString(LOCALE, { day: 'numeric', month: 'short', year: 'numeric' }); }
-    catch (e) { return ''; }
-  }
   function paintYours(n) {
     if (!yours) return;
     yours.querySelector('.td-yours-h').textContent =
@@ -155,9 +150,9 @@ export const ADD_PHOTO_JS = `
     // Phosphor's dots-three, handed over by TreeDetail.astro; never drawn here.
     more.innerHTML = yours.getAttribute('data-more-icon') || '';
     more.addEventListener('click', function() { askDelete(fig); });
-    var cap = document.createElement('span');
-    cap.textContent = dayOf(iso);
-    fig.appendChild(a); fig.appendChild(more); fig.appendChild(cap);
+    // No date under it (Hidde, 2026-11-03: a September date under a photo
+    // the seasons row files as autumn only confused; "geen datum tonen").
+    fig.appendChild(a); fig.appendChild(more);
     if (first && row.firstChild) row.insertBefore(fig, row.firstChild); else row.appendChild(fig);
     paintYours(row.children.length);
   }

@@ -1109,20 +1109,18 @@ struct TreeDetail: View {
                         ForEach(shots) { s in
                             if let img = sightings.thumbnail(s, maxPixel: 420) {
                                 Button { viewingOwn = s } label: {
-                                    VStack(alignment: .leading, spacing: 6) {
-                                        Color.clear
-                                            .frame(width: 140, height: 140)
-                                            .overlay {
-                                                Image(uiImage: img).resizable()
-                                                    .aspectRatio(contentMode: .fill)
-                                            }
-                                            .clipShape(.rect(cornerRadius: 12))
-                                        Text(s.date.formatted(date: .abbreviated, time: .omitted))
-                                            .font(.caption).foregroundStyle(Brand.inkSoft)
-                                    }
+                                    // No date under it (Hidde, 2026-11-03:
+                                    // it fought the seasons row's label).
+                                    Color.clear
+                                        .frame(width: 140, height: 140)
+                                        .overlay {
+                                            Image(uiImage: img).resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                        }
+                                        .clipShape(.rect(cornerRadius: 12))
                                 }
                                 .buttonStyle(.plain)
-                                .accessibilityLabel("Your photograph from \(s.date.formatted(date: .long, time: .omitted))")
+                                .accessibilityLabel("Your photograph")
                             }
                         }
                     }
