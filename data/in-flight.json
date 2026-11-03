@@ -15,34 +15,6 @@
       "trees_at_claim": 4
     },
     {
-      "target": "los-angeles",
-      "kind": "write",
-      "by": "session-e2f631fb",
-      "claimed_at": "2026-11-03T08:51:56+00:00",
-      "trees_at_claim": 11
-    },
-    {
-      "target": "san-diego",
-      "kind": "write",
-      "by": "session-e2f631fb",
-      "claimed_at": "2026-11-03T08:51:57+00:00",
-      "trees_at_claim": 6
-    },
-    {
-      "target": "oakland",
-      "kind": "write",
-      "by": "session-e2f631fb",
-      "claimed_at": "2026-11-03T08:51:57+00:00",
-      "trees_at_claim": null
-    },
-    {
-      "target": "santa-rosa",
-      "kind": "write",
-      "by": "session-e2f631fb",
-      "claimed_at": "2026-11-03T08:52:00+00:00",
-      "trees_at_claim": null
-    },
-    {
       "target": "manchester",
       "kind": "verify",
       "by": "session-01ef2345",
