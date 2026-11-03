@@ -1,0 +1,50 @@
+{
+ "leads": [
+  {
+   "name": "Esther Short Park conifer grove (HT9)",
+   "note": "City register: two very large giant sequoias and several western red cedars, DBH 45+ in, 80+ ft; grove linked to 1937 GAR; park is the first public park in the Pacific Northwest (1853). Grove, not one tree; no tree coordinates. 94 untagged OSM tree nodes in the park. Could ship as an ensemble if one place to stand is named.",
+   "source": "https://cityofvancouver.us/?p=3963"
+  },
+  {
+   "name": "Old City Cemetery chestnut oak (HT24)",
+   "note": "Quercus montana, DBH 38 in, 85 ft; planted 1931 from a Mount Vernon seedling for Masons Lodge #4's 75th anniversary, Masons' section on Mill Plain Blvd. No coordinate found (Nominatim rate limited). Good story, strong candidate once pinned.",
+   "source": "https://cityofvancouver.us/?p=3963"
+  },
+  {
+   "name": "Old City Cemetery white ashes HT27-29 and green ash HT41",
+   "note": "Heritage ashes in same cemetery; DBH 28 to 37 in; no coordinates.",
+   "source": "https://cityofvancouver.us/?p=3963"
+  },
+  {
+   "name": "Officers Row bigleaf maples (HT3)",
+   "note": "Evergreen Blvd, mixed species mostly bigleaf maple, DBH 35+ in. 2008 replanting of Evergreen Blvd maples means some are young; avenue, not one collectible point.",
+   "source": "https://cityofvancouver.us/?p=3963"
+  },
+  {
+   "name": "Officers Row giant sequoia",
+   "note": "NPS landscape document mentions one giant sequoia in the Officers Row yards; no age or position found.",
+   "source": "https://www.npshistory.com/publications/fova/nr-officers-row.pdf"
+  },
+  {
+   "name": "Old Apple Tree offspring (HT13), Clark County Historical Museum",
+   "note": "Offspring of the dead Old Apple Tree, DBH 18.5 in; young.",
+   "source": "https://cityofvancouver.us/?p=3963"
+  },
+  {
+   "name": "Other city heritage trees without coordinates",
+   "note": "HT12 Oregon white oak Headache Creek Wetlands/Bagley Park 50.5 in; HT15 Oregon white oak Oakbrook Park 54.5 in; HT22/23 bigleaf maples Clearmeadows Park 55.5 and 57 in; HT11 black locust Mill Plain Elementary (school, access unverified); HT33/34 giant sequoias Ellsworth Elementary (school); HT46 deodar cedar 2001 Daniels St, HT30 oak 511 W 21st St, HT17 London plane 200 E 38th St (addresses may be private yards, access unverified). Next pass: pin these from park maps.",
+   "source": "https://cityofvancouver.us/?p=3963"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Old Apple Tree, Old Apple Tree Park (HT1)",
+   "reason": "Dead: died 25 June 2020 aged about 194 (spiral crack, decay); NPS and Columbian confirm. Root suckers nurtured as successor; stump remains. Never ship as a living tree.",
+   "source": "https://www.nps.gov/articles/000/circle-of-life-for-an-apple-tree.htm"
+  },
+  {
+   "name": "HT19/20/21 monkey puzzles and western white pine, 11418 SE Evergreen Hwy",
+   "reason": "Street address on a private-looking parcel; access unverified, do not ship without a source saying public."
+  }
+ ]
+}

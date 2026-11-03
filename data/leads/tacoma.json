@@ -1,0 +1,38 @@
+{
+ "leads": [
+  {
+   "name": "Unnamed taller Douglas fir, Point Defiance",
+   "note": "Parks Tacoma 2019 post says a local arborist found a fir that edges out the Mountaineer Tree; not named in any source seen. No coordinate."
+  },
+  {
+   "name": "Other Wright Park register trees",
+   "note": "Mockernut hickory 33 in, red maple 36 in, narrow-leaved ash 38 in, paper birch 39 in, Coliseum maple 41 in, horse chestnut 39 in, Montpelier maple 22 in, magnolia 31 in, field maple 29 in; all with register coordinates in the storymap, smaller DBH, left out of the ten."
+  },
+  {
+   "name": "Tacoma Wright Park champion tree brochure (metroparkstacoma.org/arboretum)",
+   "note": "18 state champions per a search summary; brochure not fetched. A second pass could name the champions and join them to the register."
+  },
+  {
+   "name": "Sequoia 147 in DBH, register entry with 1950 aerial note",
+   "note": "Register coordinate 47.25665,-122.49414 is in a residential area; ownership unknown, no public-ground evidence. Held."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Cedar of Lebanon, Rust Mansion",
+   "reason": "State champion per Van Pelt 2003 and on register, but on the Rust Mansion property; access not shown to be open, so private/unverified."
+  },
+  {
+   "name": "Norway maples, N Union Ave median",
+   "reason": "Four register trees in a median grove of an avenue; not one collectible point."
+  },
+  {
+   "name": "Other register trees on private lots (bigleaf maple 1910 house, tulip tree S M St, sweet gum front yard, Port Orford cedars, redwood, silver maple, Grandfather Tree)",
+   "reason": "On private or residential lots, no evidence of public access; also heritage trees are partly private-owner nominations."
+  },
+  {
+   "name": "Giant sequoia, South Park (DBH 86 in)",
+   "reason": "Street-side location unclear; coordinate 47.21277,-122.48338 not confirmed public ground; held."
+  }
+ ]
+}

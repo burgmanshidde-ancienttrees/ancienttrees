@@ -1,10 +1,51 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "name": "Barnes Creek Survivor / big Douglas-fir, Marymere Falls Trail",
+      "species": "Douglas-fir (unconfirmed)",
+      "reason": "Signed 0.9 mi NPS trail from Storm King; TreesDB community entry (86 in diameter, 223 ft) is unverified and species not seen, no coordinate at the tree. Needs a source naming the individual trunk."
+    },
+    {
+      "name": "Staircase living cedar at end of Big Cedar Trail",
+      "species": "Western Redcedar (Thuja plicata)",
+      "reason": "NPS says a smaller living cedar stands at the end of the 1,100 ft spur off Staircase Rapids Loop (nps.gov/places/000/staircase-big-cedar-tree.htm), but gives no size or coordinate. Entrance fee; Staircase Road gated in winter. Needs a measurement and a GPS fix."
+    }
+  ],
   "blocked": [
     {
       "name": "The Quinault Big Cedar",
       "species": "Western Red Cedar (Thuja plicata)",
       "reason": "DEAD. Was the largest tree in the world outside the California redwoods/sequoias (174ft tall, 62ft 8in circumference, ~15,300 cubic feet), on a trail two miles up Lake Quinault's North Shore Road. Fell/collapsed the weekend of 8 July 2016, likely from root damage caused by visitor trampling around its base, per The Daily World's own report. A roughly 20-foot stump now marks the spot. Never deliver as a collectible entry; this confirms the task brief's caution about its 2014 partial collapse -- it did not survive."
+    },
+    {
+      "name": "Staircase Big Cedar",
+      "species": "Western Redcedar (Thuja plicata)",
+      "reason": "FALLEN. NPS page: the big cedar (14 ft diameter) is down; reported fallen January 1999."
+    },
+    {
+      "name": "Hoh Big Spruce (Preston Macy tree area)",
+      "species": "Sitka Spruce (Picea sitchensis)",
+      "reason": "FELL December 2014 per a trip blog; signage and turnout remain. Not delivered."
+    },
+    {
+      "name": "Quinault champion Douglas-fir (co-champion, 281-302 ft)",
+      "species": "Douglas-fir",
+      "reason": "In Quinault Research Natural Area, off trail, no published route. Off-trail rule."
+    },
+    {
+      "name": "Duckabush grand fir (largest tree in the park, 246 ft)",
+      "species": "Grand Fir (Abies grandis)",
+      "reason": "NPS record-trees sheet puts it 1.5 mi inside the park on the Duckabush Trail, which enters the park at about 6.7 mi, so roughly 8 mi in: backcountry. No recent life check."
+    },
+    {
+      "name": "Queets Douglas-fir (former champion)",
+      "species": "Douglas-fir",
+      "reason": "2.5 mi up the Queets Trail then 0.2 mi side trail at Coal Creek: backcountry, ford-dependent, no recent life check."
+    },
+    {
+      "name": "Alaska yellow cedar, western hemlock, mountain hemlock, Engelmann spruce, Pacific silver fir, subalpine fir champions",
+      "species": "various",
+      "reason": "All 8 to 14 miles of backcountry trail or trailless (NPS record-trees sheet, Visit Port Angeles). Multi-day trips excluded."
     }
   ]
 }

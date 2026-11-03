@@ -1,0 +1,70 @@
+{
+ "leads": [
+  {
+   "name": "Hatfield Ginkgo (State Labor and Industry Building)",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": null,
+   "lon": null,
+   "reason": "one of the first Oregon Heritage Trees, NE corner of the Labor and Industry Building at Chemeketa and Summer St NE (willametteheritage.org via search); no size, no coordinate, page not fetchable; check OTE page and building grounds access",
+   "source": "https://willametteheritage.org/?p=18287"
+  },
+  {
+   "name": "Bush's Pasture Park oak groves",
+   "species": "Oregon White Oak (Quercus garryana)",
+   "lat": null,
+   "lon": null,
+   "reason": "native oak groves 'hundreds of years old' but no individual tree with age, girth or coordinate found; needs City of Salem Cultural Landscape plan or a tree inventory",
+   "source": "https://salemart.org/events/bushs-pasture-parks-oregon-white-oak-legacy-exhibition"
+  },
+  {
+   "name": "Smith-Fry house oak, SE High Street",
+   "species": "Oregon White Oak (Quercus garryana)",
+   "lat": null,
+   "lon": null,
+   "reason": "estimated about 250 years by local experts; on a house lot, public access and exact address unverified (search summary only)",
+   "source": "https://www.salemreporter.com/?p=15101"
+  },
+  {
+   "name": "Moon Tree, Capitol State Park",
+   "species": "Douglas Fir (Pseudotsuga menziesii)",
+   "lat": 44.93918,
+   "lon": -123.03168,
+   "reason": "planted 1976, young; NASA page says not doing well from crowding; coordinate 44 56.351N 123 01.901W is a hobbyist fix, approximate. Fame only, not big or old",
+   "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/salem_oregon_tree.html"
+  },
+  {
+   "name": "Governor McCall Maple, Capitol State Park",
+   "species": "Japanese Maple (Acer palmatum)",
+   "lat": null,
+   "lon": null,
+   "reason": "planted 1973, heritage tree 2009, young and size not stated",
+   "source": "https://mariontalk.com/2024/06/26/uncover-salems-history-through-its-heritage-trees"
+  },
+  {
+   "name": "Capitol State Park ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": null,
+   "lon": null,
+   "reason": "about 38 ft by 37 in circumference per a search summary only; not seen on a page; unverified",
+   "source": ""
+  },
+  {
+   "name": "Willamette Mission cottonwood grove",
+   "species": "Black Cottonwood (Populus trichocarpa)",
+   "lat": null,
+   "lon": null,
+   "reason": "Marion County heritage tree north of Salem, not Salem proper; needs a car; not researched this pass",
+   "source": "https://mariontalk.com/2024/06/26/uncover-salems-history-through-its-heritage-trees"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Oregon white oak, 1307 Marion St NE",
+   "reason": "Salem Reporter 2026-03-10: terminal fungus, set to be removed April 1 2026; presumed gone, and it stands at a private-looking address"
+  },
+  {
+   "name": "State Fairgrounds oak grove",
+   "reason": "grove, not one collectible point; open to visitors only during fairs"
+  }
+ ]
+}

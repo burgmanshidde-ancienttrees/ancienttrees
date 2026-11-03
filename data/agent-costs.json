@@ -15259,6 +15259,46 @@
       "tokens": 188990,
       "trees": 15,
       "note": "15 stories, 5 Commons/Geograph photos approved after viewing, 2 held (dusk light; a 1981 slide). Place fields for 3 new places and rewritten intros for Edinburgh and Glasgow. Held for the pace in scripts/build_uk.py. All in with dispatcher about 1.15M tokens, roughly 77k a tree."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "tacoma",
+      "tokens": 144352,
+      "trees": 10,
+      "note": "Cut by the usage limit and resumed. City of Tacoma Heritage Tree register read from its ArcGIS StoryMap JSON: eight in Wright Park, the Mountaineer Tree (Point Defiance), an American elm at UW Tacoma. Pins approximate."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "vancouver-washington",
+      "tokens": 130805,
+      "trees": 4,
+      "note": "Cut by the usage limit and rerun. City of Vancouver heritage trees: Officers Row chestnuts, John Ball Park cottonwood, Leverich Park redwood, Arnada Park walnut. The Fort Vancouver Old Apple Tree died 2020-06-25 (NPS), blocked."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "salem-oregon",
+      "tokens": 117175,
+      "trees": 2,
+      "note": "Cut by the usage limit and resumed. Waldo Park sequoia (1872, confirmed pin) and the Willamette Star Trees. Bush's Pasture oaks have no individual size or coordinate anywhere; 7 leads."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "olympic-national-park",
+      "tokens": 126299,
+      "trees": 0,
+      "note": "Cut by the usage limit and rerun. Record trees fallen (Staircase 1999, Hoh spruce 2014) or off trail/backcountry; 2 leads, 7 blocked. Live oly_001/oly_002 stories already tell their storm damage."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "tacoma+vancouver-washington+salem-oregon",
+      "tokens": 142306,
+      "trees": 16,
+      "note": "16 stories and recognition lines, 3 best_time, place fields for 3 new places. Held for the pace in scripts/build_us_northwest.py. Portland and Seattle refused as full. All in with dispatcher about 0.8M tokens, roughly 50k a tree."
     }
   ]
 }
