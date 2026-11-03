@@ -1689,6 +1689,52 @@
       "found": "2026-11-03",
       "pass": "data/research/new-york-4-rejects.json",
       "status": "open"
+    },
+    {
+      "name": "European horse chestnut, Green-Wood stop 1",
+      "lat": 40.6580775,
+      "lng": -73.9941819,
+      "reason": "Only a species blurb on the owner's map and an OSM species node; no size, age or story that makes this trunk worth the visit.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-5-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Yoshino cherry group of 5, Green-Wood",
+      "lat": 40.6570022,
+      "lng": -73.9889146,
+      "reason": "Young ornamental planting, five trees, not ancient and not a single collectible point.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-5-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Green-Wood tulip tree, the largest tree in the cemetery (110 ft, nearly 6 ft trunk diameter)",
+      "reason": "Genuinely worth a visit (owner's 2023/2025 map, stop 'Tulip Tree'), but no pin: not in OSM, Tree Finder (gardens.green-wood.com ArcGIS experience) unreachable by curl (hangs) and refused in the browser pane. Lead for a session with working access.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-5-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Green-Wood common hackberry, NY State Champion",
+      "reason": "Owner's map names it a state champion but gives no location; no pin in reach.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-5-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Green-Wood American elm, 'one of the largest still existent'; cedar of Lebanon; shagbark hickory; common persimmon; sourwood; littleleaf linden",
+      "reason": "Celebrated Tree Walk stops with species blurbs only, no pin or size in any reachable source.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-5-rejects.json",
+      "status": "open"
+    },
+    {
+      "name": "Moravian Cemetery, Staten Island: any named tree",
+      "reason": "No source names an individual old tree; searches found only generic mentions and an iNaturalist species list. Nothing to verify.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-5-rejects.json",
+      "status": "open"
     }
   ],
   "blocked": [
@@ -1732,6 +1778,14 @@
     {
       "name": "Dongan Oak, Prospect Park",
       "reason": "2026-10-01 verify pass: original boundary oak felled in 1776 (Wikipedia, Battle Pass), stump recorded 1840s; a symbolic replacement was planted Arbor Day 1890 but no source shows it survives. The Wikidata item is effectively a monument. Never ship as a living tree."
+    },
+    {
+      "name": "Northern red oak, Green-Wood Celebrated Tree Walk",
+      "lat": 40.6469337,
+      "lng": -73.986256,
+      "reason": "The map's stop text is about a red oak infected with oak wilt in 2016, the first NYC case; OSM node is generically named, so which trunk it is and whether it still stands is unknown. Possibly dead or removed.",
+      "found": "2026-11-03",
+      "pass": "data/research/new-york-5-rejects.json"
     }
   ]
 }

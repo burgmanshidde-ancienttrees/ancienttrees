@@ -38,6 +38,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 **Cost:** about 768k tokens for 12 trees, about 64k a tree; Windsor (131k for nothing) and a session limit mid-pass were the waste. One write-pass Commons request carried Hidde's address in its user-agent header; later ones did not.
 
+## 2026-11-03 session: US East round 3, New York to 97 (3 more written and held)
+
+**What changed (once built):** Green-Wood's Phoenix Ginkgo (twelve sprouts from one stump, grown into one trunk; OSM pin) and its Weeping Beech Tunnel over Larch Avenue, both from the cemetery's own Celebrated Trees Walk, and Queens Botanical Garden's blue Atlas cedars from the 1939 World's Fair at the Main Street gate. In data/research/us-east-written-ny-e.json, built by the same `python3 scripts/build_us_east.py`; dry run fails only on the pace (121 in 24 h). **Not done:** Green-Wood's tulip tree (110 ft) and its New York State champion hackberry need the cemetery's Tree Finder (gardens.green-wood.com), which hangs under curl and was refused in the browser pane; Moravian Cemetery names no tree. About 160k tokens for 3 trees.
+
 ## 2026-11-03 session: US East round 2, New York 68 to 94 (26 more written and held)
 
 **What changed (once built):** a fourth New York pass read the NYC Parks Great Trees pages in the browser pane and pinned them by Tree Map ID: Woodlawn Cemetery's white oak, Gould plot weeping beech, fern-leaved beech, umbrella pine and the black oak Parks puts near 300 years; Wave Hill's elm; two NYBG gate trees; Stuyvesant Square and Isham Park; the Saratoga Park circus-ground oak; Brooklyn and Queens street giants; the Cypress Hills National Cemetery beech. Written in data/research/us-east-written-ny-{c,d}.json; the same builder (`python3 scripts/build_us_east.py`) now also gives the live Dinosaur (nyc_025) its confirmed register pin and the city's March 2026 good-condition record, since the pass found it again as nyc_122 (not shipped twice). New York intro and meta grow to "close to a hundred". Tested: preflight fails only on the pace cap (118 in 24 h); files reverted.

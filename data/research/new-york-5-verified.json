@@ -1,0 +1,84 @@
+[
+  {
+    "id": "nyc_140",
+    "name": "The Phoenix Ginkgo",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Green-Wood Cemetery, Brooklyn (Celebrated Tree Walk stop, near the Brown family mausoleum)",
+      "latitude": 40.652205,
+      "longitude": -73.987892,
+      "neighbourhood": "Greenwood Heights / Sunset Park"
+    },
+    "verified_sources": [
+      "https://www.green-wood.com/wp-content/uploads/2025/10/ALIVE_AT_G-W_MAP_for-website-ocr.pdf",
+      "https://www.green-wood.com/wp-content/uploads/2023/11/ALIVE-AT-G-W-MAP-2023.pdf",
+      "https://www.openstreetmap.org/node/13788136944"
+    ],
+    "official_register": null,
+    "access": "Free; Green-Wood is open daily (hours at green-wood.com/hours); the Celebrated Trees Walk is on the cemetery's own visitor map",
+    "transport": "Check route: Green-Wood main entrance at Fifth Ave and 25th St; Sunset Park entrance at 36th St (subway lines and walk times not checked).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidate": null,
+    "verify_notes": "Green-Wood's own Alive at G-W visitor map (2023 and 2025 editions, Celebrated Tree Walk) describes 'The Phoenix Ginkgo' as twelve ginkgo trees that sprouted from a stump and have now inosculated (grown together) into one. Green-Wood is an ArbNet Level III accredited arboretum. Pin: OpenStreetMap natural=tree node 13788136944 named 'Phoenix Ginkgo', species Ginkgo biloba, a mapper's point on the one composite tree. Alive: lifecheck RECENT (iNaturalist 2026-04-12 within radius, not necessarily this trunk); the owner's 2025 map still lists it. Sources: owner's map (two editions, one source) plus OSM, so flagged one-source. Cause of the original stump not stated in the map text; do not invent it (the map's Sandy story belongs to a Kentucky coffee tree stump garden at another stop). Age not stated; no girth. The story is the multi-stem fusion of a sprouted stump."
+  },
+  {
+    "id": "nyc_141",
+    "name": "The Weeping Beech Tunnel at Green-Wood",
+    "species": "Weeping European Beech (Fagus sylvatica 'Pendula')",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Green-Wood Cemetery, Brooklyn (over Larch Avenue, Celebrated Tree Walk stop)",
+      "latitude": 40.6498371,
+      "longitude": -73.9881134,
+      "neighbourhood": "Greenwood Heights / Sunset Park"
+    },
+    "verified_sources": [
+      "https://www.green-wood.com/wp-content/uploads/2025/10/ALIVE_AT_G-W_MAP_for-website-ocr.pdf",
+      "https://www.green-wood.com/wp-content/uploads/2023/11/ALIVE-AT-G-W-MAP-2023.pdf",
+      "http://green-woodtrees.blogspot.com/2009/08/weeping-beech.html",
+      "https://www.openstreetmap.org/node/12609928197"
+    ],
+    "official_register": null,
+    "access": "Free; Green-Wood is open daily (hours at green-wood.com/hours); the tunnel is on a cemetery drive and path stop of the owner's Celebrated Trees Walk",
+    "transport": "Check route: Green-Wood main entrance at Fifth Ave and 25th St; Sunset Park entrance at 36th St (subway lines and walk times not checked)",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Weeping beech tunnel on Larch Avenue, Green-Wood",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "photo_candidate": null,
+    "verify_notes": "Green-Wood's own visitor map (2023 and 2025 editions) lists 'Weeping Beech Tunnel' as a group of six weeping European beeches whose cascading canopies form a tunnel, a visitor favourite. A Green-Wood tree blog (2009, a blog, a finding aid only) says the most enchanting weeping beech hangs over Larch Avenue and that you must walk or drive under the canopy to go up the road. One compact ensemble with one place to stand (the road under the canopy). Pin: OSM natural=tree node 12609928197 'Weeping Beech' (one point for six trees, so approximate, with a 50 m site). A Brooklyn guide calls it elms; the owner's map and the blog say beech, the owner wins. No planting date, girth or age in any source. Not checked: that the OSM node sits exactly on Larch Avenue (road geometry fetch failed, Overpass at capacity). What tells it apart: the canopy closes over the road."
+  },
+  {
+    "id": "nyc_142",
+    "name": "The Blue Atlas Cedars of Queens Botanical Garden",
+    "species": "Blue Atlas Cedar (Cedrus atlantica 'Glauca')",
+    "age_estimate": "over 85 years",
+    "age_min": 85,
+    "age_max": 120,
+    "location": {
+      "address": "Queens Botanical Garden, 43-50 Main Street, Flushing, Queens (Main Street entrance, either side of the tree gate sculpture)",
+      "latitude": 40.7504,
+      "longitude": -73.8288,
+      "neighbourhood": "Flushing"
+    },
+    "verified_sources": [
+      "https://queensbotanical.org/wp-content/uploads/2015/11/QBGVisitorGuide2016.pdf",
+      "https://en.wikipedia.org/wiki/Queens_Botanical_Garden"
+    ],
+    "official_register": null,
+    "access": "Garden entry is ticketed or free on some days; check queensbotanical.org for hours and prices before going. The cedars stand at the Main Street entrance (stop #1 on the garden map)",
+    "transport": "Check route: the 7 train terminates at Flushing-Main St, near the garden (walk time not checked)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo_candidate": null,
+    "verify_notes": "The garden's own visitor guide (2016 PDF) says two blue atlas cedars that frame the iconic tree gate sculpture at the Main Street entrance (#1 on the map) are original plantings taken from the 1939 World's Fair 'Gardens on Parade' site, when the garden moved to Main Street in 1961 (Wikipedia gives the move as completed with dedication 19 Oct 1963 and says THREE cedars were transplanted; the owner says two: conflict, kept both counts). Age derived from a documented specimen history: planted for the 1939 fair, so at least 85 years in the ground, possibly older nursery stock; broad range given, no girth recorded. Pin: garden coordinate from Wikipedia (40.7504, -73.8288); the entrance itself was not pinned (Nominatim and Overpass gave no entrance node), so the walker finds it by the tree gate sculpture, not by the coordinate. The garden is a walk-through garden, not a small site, so no location_site. Alive: no dated record of these cedars specifically; the 2016 guide is the latest owner statement, lifecheck RECENT only for the garden area (iNaturalist 2026-10-15). Flagged."
+  }
+]

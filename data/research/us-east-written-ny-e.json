@@ -1,0 +1,91 @@
+[
+ {
+  "place": "new-york",
+  "id": "nyc_140",
+  "name": "The Phoenix Ginkgo of Green-Wood",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "location": {
+   "address": "Green-Wood Cemetery, Brooklyn (Celebrated Trees Walk stop, near the Brown family mausoleum)",
+   "latitude": 40.652205,
+   "longitude": -73.987892,
+   "neighbourhood": "Greenwood Heights, Brooklyn"
+  },
+  "location_precision": "confirmed",
+  "pin_source": "OpenStreetMap natural=tree node 13788136944, named 'Phoenix Ginkgo'",
+  "story": "Somewhere in Green-Wood a ginkgo was cut down, and it did not stay gone. Twelve shoots came up from the stump, and over the years they have grown into one another until they read as a single tree. Green-Wood calls it the Phoenix Ginkgo and puts it on the Celebrated Trees Walk printed on the cemetery's own visitor map.\n\nThe joining has a name, inosculation. Stems that press against each other long enough grow a shared bark, and in time a shared wood, so what began as a ring of saplings becomes one trunk with many seams. Ginkgos are known for sprouting from their base, and the species is the last survivor of a plant line that was already old when dinosaurs walked.\n\nWhat the map does not say is when the first tree fell, or why. Nobody has published the girth of the fused trunk or the age of the stump beneath it, so we leave both blank. If you know, tell us.\n\nGreen-Wood is an accredited arboretum as well as a cemetery, open every day and free to walk. Look for a cluster of trunks grown into one near the Brown family mausoleum. In November the whole crown turns yellow, and the leaves come down within days.",
+  "how_to_recognise": "You can recognise it by a ring of ginkgo stems fused into one many-seamed trunk, with fan-shaped leaves, near the Brown family mausoleum.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the fan-shaped leaves turn yellow and fall within days"
+  },
+  "verified_sources": [
+   "https://www.green-wood.com/wp-content/uploads/2025/10/ALIVE_AT_G-W_MAP_for-website-ocr.pdf",
+   "https://www.green-wood.com/wp-content/uploads/2023/11/ALIVE-AT-G-W-MAP-2023.pdf",
+   "https://www.openstreetmap.org/node/13788136944"
+  ],
+  "access": "Free. Green-Wood is open daily (hours at green-wood.com/hours); the tree is a stop on the Celebrated Trees Walk on the cemetery's own visitor map.",
+  "transport": "Green-Wood's main entrance is at Fifth Avenue and 25th Street, its Sunset Park entrance at 36th Street; check the route.",
+  "curation_status": "flagged",
+  "verify_notes": "Green-Wood's own Alive at G-W visitor map (2023 and 2025 editions, Celebrated Tree Walk) describes 'The Phoenix Ginkgo' as twelve ginkgo trees that sprouted from a stump and have now inosculated (grown together) into one. Green-Wood is an ArbNet Level III accredited arboretum. Pin: OpenStreetMap natural=tree node 13788136944 named 'Phoenix Ginkgo', species Ginkgo biloba, a mapper's point on the one composite tree. Alive: lifecheck RECENT (iNaturalist 2026-04-12 within radius, not necessarily this trunk); the owner's 2025 map still lists it. Sources: owner's map (two editions, one source) plus OSM, so flagged one-source. Cause of the original stump not stated in the map text; do not invent it (the map's Sandy story belongs to a Kentucky coffee tree stump garden at another stop). Age not stated; no girth."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_141",
+  "name": "The Weeping Beech Tunnel of Green-Wood",
+  "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+  "location": {
+   "address": "Larch Avenue, Green-Wood Cemetery, Brooklyn (Celebrated Trees Walk stop)",
+   "latitude": 40.6498371,
+   "longitude": -73.9881134,
+   "neighbourhood": "Greenwood Heights, Brooklyn"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Weeping beech tunnel on Larch Avenue, Green-Wood",
+   "radius_m": 50
+  },
+  "story": "On Larch Avenue in Green-Wood the road runs into a green room. Six weeping European beeches let their branches fall to the ground on either side, their crowns close overhead, and the only way up the road is underneath them. Green-Wood lists the Weeping Beech Tunnel on its Celebrated Trees Walk and calls it a visitor favourite. A Green-Wood tree blog put it more simply in 2009, writing that to go up the road you have to walk or drive under the canopy.\n\nA weeping beech is a garden form of the European beech, propagated by grafting for the way its branches pour down instead of reaching out. Inside the curtain the light turns green and the noise of Brooklyn drops away. In winter the bare branches still hang like a frame, so the shape holds all year.\n\nNobody has published when these six were planted, how thick their trunks are or how old they are, so we leave the age blank. If you know, tell us. One Brooklyn guide calls them elms; the cemetery's own map says beech, and the smooth grey bark under the leaves agrees.\n\nGreen-Wood is open every day and free to walk.",
+  "how_to_recognise": "You can recognise it by the closed tunnel of drooping beech branches that Larch Avenue passes straight under, with smooth grey trunks behind the curtain.",
+  "verified_sources": [
+   "https://www.green-wood.com/wp-content/uploads/2025/10/ALIVE_AT_G-W_MAP_for-website-ocr.pdf",
+   "https://www.green-wood.com/wp-content/uploads/2023/11/ALIVE-AT-G-W-MAP-2023.pdf",
+   "http://green-woodtrees.blogspot.com/2009/08/weeping-beech.html",
+   "https://www.openstreetmap.org/node/12609928197"
+  ],
+  "access": "Free. Green-Wood is open daily (hours at green-wood.com/hours); the tunnel is on a cemetery road, a stop on the Celebrated Trees Walk on the cemetery's own visitor map.",
+  "transport": "Green-Wood's main entrance is at Fifth Avenue and 25th Street, its Sunset Park entrance at 36th Street; check the route.",
+  "curation_status": "flagged",
+  "verify_notes": "Green-Wood's own visitor map (2023 and 2025 editions) lists 'Weeping Beech Tunnel' as a group of six weeping European beeches whose cascading canopies form a tunnel, a visitor favourite. A Green-Wood tree blog (2009, a finding aid only) says the most enchanting weeping beech hangs over Larch Avenue and that you must walk or drive under the canopy to go up the road. One compact ensemble with one place to stand (the road under the canopy). Pin: OSM natural=tree node 12609928197 'Weeping Beech' (one point for six trees, so approximate, with a 50 m site). A Brooklyn guide calls it elms; the owner's map and the blog say beech, the owner wins. No planting date, girth or age in any source. Not checked: that the OSM node sits exactly on Larch Avenue (road geometry fetch failed)."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_142",
+  "name": "The World's Fair Cedars of Queens Botanical Garden",
+  "species": "Atlas Cedar (Cedrus atlantica 'Glauca')",
+  "age_estimate": "over 85 years",
+  "age_min": 85,
+  "age_max": 120,
+  "age_basis": "derived",
+  "location": {
+   "address": "Queens Botanical Garden, 43-50 Main Street, Flushing, Queens (Main Street entrance, either side of the tree gate sculpture)",
+   "latitude": 40.7504,
+   "longitude": -73.8288,
+   "neighbourhood": "Flushing, Queens"
+  },
+  "location_precision": "approximate",
+  "story": "When the 1939 New York World's Fair closed, not all of its gardens went to waste. Queens Botanical Garden began there, as an exhibit called Gardens on Parade, and when the garden moved to its present ground on Main Street in Flushing it brought some of the fair's trees along. The garden's own visitor guide says the two blue Atlas cedars framing the tree gate sculpture at the Main Street entrance are original plantings from that fair. Wikipedia counts three transplanted cedars; the garden says two, and we go with the garden while noting the difference.\n\nThat puts them at least 85 years in the ground, and possibly more, since they may have come to the fair as nursery trees already some years old. Nobody has published their girth or height.\n\nThe blue Atlas cedar is a silver-blue form of the cedar that grows wild in the Atlas Mountains of Morocco and Algeria. It keeps its colour through the winter, and these two have outlived the fair that put them on show by most of a century.\n\nThey are the first thing a visitor meets, stop number one on the garden map. Check queensbotanical.org for hours and admission before you go.",
+  "how_to_recognise": "You can recognise them by two silver-blue cedars standing either side of the sculpted tree gate at the Main Street entrance, stop one on the garden map.",
+  "verified_sources": [
+   "https://queensbotanical.org/wp-content/uploads/2015/11/QBGVisitorGuide2016.pdf",
+   "https://en.wikipedia.org/wiki/Queens_Botanical_Garden"
+  ],
+  "access": "Queens Botanical Garden charges admission on some days and is free on others; check queensbotanical.org for hours and prices. The cedars stand at the Main Street entrance (stop 1 on the garden map).",
+  "transport": "The 7 train ends at Flushing-Main St, near the garden; check the route.",
+  "paid_entry": true,
+  "curation_status": "flagged",
+  "verify_notes": "The garden's own visitor guide (2016 PDF) says two blue atlas cedars that frame the tree gate sculpture at the Main Street entrance (#1 on the map) are original plantings taken from the 1939 World's Fair 'Gardens on Parade' site, when the garden moved to Main Street (Wikipedia gives the move as completed with dedication 19 Oct 1963 and says THREE cedars were transplanted; the owner says two: conflict, both counts kept). Age derived from the documented history: planted for the 1939 fair, so at least 85 years in the ground, possibly older nursery stock; broad range. No girth. Pin: garden coordinate from Wikipedia (40.7504, -73.8288); the entrance itself was not pinned, so the walker finds them by the tree gate sculpture. Alive: no dated record of these cedars specifically; the 2016 guide is the latest owner statement; lifecheck RECENT for the garden area (iNaturalist 2026-10-15). Flagged."
+ }
+]
