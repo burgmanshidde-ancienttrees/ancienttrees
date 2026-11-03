@@ -10,6 +10,10 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-11-03 (night run, window from 01:58 UTC)
+
+Rung 1 empty (no photographs, no notes). Rung 2: health.py asks for a deploy dispatch (main is ahead of the live site) and a nightly knock (only 4 of 12 delivered); weekly analysis and night shift failures are the usage allowance. Rung 5, Portugal first: Sintra deepen pass (5 of 30). The ICNF register rows are all already worked, private or belong to Cascais/Lisbon. Delivered one flagged tree (sin_006, the Capuchos Convent plane, approximate pin, single source Visit Sintra, no photo) plus two leads (Monserrate Bunya pine, Capuchos ash and boxwoods) in data/leads/sintra.json. The tree is not merged and the claim stays until it expires. Sintra is a thin well for now. Cost about 82k tokens for one candidate. Stopped there: the window was short on yield, not on time.
 <!-- archive-index -->
 ## 2026-11-02 - Night run 2026-11-02 19:56 UTC ended without saying anything
 
