@@ -451,10 +451,10 @@ def main():
         nxt = next((c["city"] for c in cities if c["status"] == "pending"), "none")
         try:  # a country Hidde put first leads, as city_queue.py --next prints it
             sys.path.insert(0, str(ROOT / "scripts"))
-            from city_queue import FIRST_COUNTRY, country_first, load_source
+            from city_queue import FIRST_LABEL, country_first, load_source
             first = country_first(load_source())
             if first:
-                nxt = f"{first[0]['city']} ({FIRST_COUNTRY} first)"
+                nxt = f"{first[0]['city']} ({FIRST_LABEL} first)"
         except Exception:
             pass
         trees = approx = photos = 0

@@ -642,24 +642,28 @@ def supply_of(c):
     return (c.get("register") or 0) + (c.get("wikidata") or 0) + (c.get("ready") or 0)
 
 
-FIRST_COUNTRY = "Portugal"
+# The countries whose places lead the queue, in order. Hidde, 2026-11-03,
+# reflecting on where downloads land: "ik neig naar veel VS en VK bomen gaan
+# toevoegen". The US has 465 trees over 80 cities against 567 over 58 in the
+# Netherlands, so an American who downloads sees nothing near. It replaces
+# "Portugal first" (2026-10-29), which the Portuguese readers and searches had
+# earned; Portugal stays in SUPPLY_FOCUS. An empty tuple restores the old order.
+FIRST_COUNTRY = ("United States", "United Kingdom")
+FIRST_LABEL = " and ".join(FIRST_COUNTRY)
 
 
 def country_first(doc):
-    """Every place in FIRST_COUNTRY below target with supply, most supply first.
-
-    Hidde, 2026-10-29: "focus on portugal for now". The visitors, the site's
-    searches (Vila Nova, Oeiras, Braganca, Sintra, Porto) and five of the nine
-    open ambassador requests (Porto, Braga, Guimaraes, Sintra, Calvos) are
-    Portuguese, while Google sends almost nobody. None restores the old order.
+    """Every place in the FIRST_COUNTRY countries below target with supply,
+    first country first, most supply first within it. From-zero research is
+    on in these countries because he named them (rule 1(d)).
     """
     if not FIRST_COUNTRY:
         return []
     rows = [c for c in doc["cities"]
-            if c.get("country") == FIRST_COUNTRY
+            if c.get("country") in FIRST_COUNTRY
             and c.get("trees", 0) < max(c.get("target") or 10, 10)
             and supply_of(c) > 0]
-    rows.sort(key=lambda c: -supply_of(c))
+    rows.sort(key=lambda c: (FIRST_COUNTRY.index(c["country"]), -supply_of(c)))
     return rows
 
 
@@ -743,12 +747,12 @@ def main():
         named = {c.lower() for c in NAMED_BY_HIDDE}
         first = country_first(doc)
         if first:
-            print("FIRST, BEFORE ANYTHING BELOW: %s (Hidde, 2026-10-29: \"focus on" % FIRST_COUNTRY.upper())
-            print("portugal for now\"). The readers, the site's own searches and most open")
-            print("ambassador requests are here. From-zero research is ON for every place in")
-            print("the country, because he named it. A place people searched for that we do")
-            print("not map (the digest's 'Searched yesterday': Vila Nova, Oeiras, Braganca,")
-            print("Castelo Branco) is a request: a tree there goes into the nearest place.\n")
+            print("FIRST, BEFORE ANYTHING BELOW: %s (Hidde, 2026-11-03: \"veel VS en" % FIRST_LABEL.upper())
+            print("VK bomen toevoegen\"). People download there and find nothing near: the US")
+            print("has fewer trees than the Netherlands over a continent. From-zero research is")
+            print("ON for every place in these countries, because he named them. The pace of")
+            print("25 of our own trees a day still holds (preflight.py --pace). A place people")
+            print("searched for that we do not map is a request: the nearest place gets it.\n")
             print("  city                  trees  target  supply")
             for c in first:
                 print("  %-21s %5d %7d %7d" % (c["city"][:21], c.get("trees", 0),
