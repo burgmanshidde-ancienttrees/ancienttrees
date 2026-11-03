@@ -717,6 +717,14 @@ struct ContentView: View {
         // sitting on whatever tab it last had open.
         .onOpenURL { url in open(url) }
         .sheet(isPresented: $askingForName) { ProfileEditor().appObjects(self) }
+        // "See all" on Want to visit (and the snackbar's View) lands on My
+        // trees' LIST, never on a tree page left open there earlier with a
+        // back button over it (Hidde, 2026-11-03: "is het dan logisch dat je
+        // een vorige knop krijgt in my trees?"). The App Store and Instagram
+        // do the same: a link to a tab's own content starts at its root.
+        .onChange(of: navigator.openWantToVisit) { _, want in
+            if want { path(2).wrappedValue = [] }
+        }
         .onChange(of: navigator.selectTab) { _, new in
             // ONLY A TAB THAT EXISTS. A selection matching no tag
             // leaves the TabView showing its first page with our bar
