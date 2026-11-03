@@ -75,7 +75,9 @@ automatic, so its rate is not yet a rate. Six links in total across all groups.
 3. Bing still out-clicks Google over the full week, 33 against 11, and sent 6 to 7
    new visitors a week against 0 before.
 4. Readers: one person (reader A) photographed five Paris trees on 11-02, four went
-   live. Ambassador requests keep arriving (Pamplona, New Orleans; 56 total).
+   live. Ambassador requests keep arriving (Pamplona, New Orleans). The "56 total"
+   this line carried was every submission of every kind, not requests; the count
+   lives in `ambassador.py --requests` only (Hidde, 2026-11-03).
 5. Outreach: 364 addresses are ready and unsent (press 234, source 67, nature 9,
    guide 5, archive 9). The yield table says press and source answer at 5 to 6%,
    society, council and tourism at 15 to 17%.

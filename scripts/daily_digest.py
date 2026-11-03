@@ -4016,7 +4016,12 @@ def main():
             if t:
                 _weekly([t])
         except Exception as e:
-            _weekly(["%s: failed today (%s)." % (fn.__name__, str(e)[:90])])
+            # Name the file and line too: "name 'MARKERS' is not defined" sat
+            # in two Monday entries with nothing to go on (2026-11-03).
+            import traceback
+            tb = traceback.extract_tb(e.__traceback__)
+            where = ("%s:%d" % (os.path.basename(tb[-1].filename), tb[-1].lineno)) if tb else "?"
+            _weekly(["%s: failed today (%s at %s)." % (fn.__name__, str(e)[:90], where)])
 
     block(ambassador_requests_section, today)
     block(day_by_day_section, today)
