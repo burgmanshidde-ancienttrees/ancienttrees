@@ -25,6 +25,87 @@ event on the list is unaffected.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## Weekly analysis 2026-11-03
+
+Fourteenth weekly analysis. Compares 10-26 to 11-01 with 10-19 to 10-25, read
+from the 11-02 and 11-01 daily entries. Google's newest days are partial, so
+11-02 is shown apart. Volumes are small; nothing below is a trend unless it says so.
+
+**Scorecard**
+
+| Week | Impressions | Clicks | CTR | Avg position | Visitors (GA, new) | Directions (web) | App-CTA | App downloads (first-time) | Android waitlist total | Readers' contributions |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 10-19 to 10-25 | 296 (partial) | 10 | 3.4% | 26 to 59 | 85 | not in the entries | not in the entries | 38 | 42 | 11 |
+| 10-26 to 11-01 | 573 | 11 | 1.9% | 21 to 50, then 12.3 on 11-01 | 62 | not in the entries | not in the entries | 17 | 46 (11-01) | 8 |
+| 11-02 alone (partial) | 854 | 14 | 1.6% | 9.1 | 11 (day) | - | - | 0 | n/a | 2 |
+
+Bing, 7 days ending 10-31: 705 impressions and 33 clicks (4.7%), against 554 and 24.
+Bing index 3,428 to 3,740 pages. App return: 4 of 8 phones back within 30 days
+against 13 of 18 (small bases). Device split and per-visit ratios cannot be kept:
+`audience_section` still fails ("name 'MARKERS' is not defined", 11-01 entry), so
+no ratio is claimed.
+
+**Outreach yield** (data/mail-yield.json, mailbox read; weeks keyed by the Monday of our first mail, so the week of 10-26 is too young to judge)
+
+| Group | Mailed, week of 10-19 | Answered of those | Mailed, total | Answered, total | Rate | Linked |
+|---|---:|---:|---:|---:|---:|---:|
+| archive | 0 | 0 | 15 | 1 | 7% | 0 |
+| nature | 0 | 0 | 65 | 3 | 5% | 1 |
+| guide | 0 | 0 | 17 | 1 | 6% | 1 |
+| source | 24 | 1 | 59 | 3 | 5% | 0 |
+| press | 27 | 1 | 98 | 6 | 6% | 0 |
+| tourism | 17 | 3 | 18 | 3 | 17% | 0 |
+| garden | 0 | 0 | 97 | 11 | 11% | 0 |
+| society | 0 | 0 | 148 | 25 | 17% | 1 |
+| council | 0 | 0 | 55 | 8 | 15% | 0 |
+| other | 17 | 7 | 143 | 46 | 32% | 2 |
+
+Nature had 63 of its 65 mailed in the week of 10-26: 2 answers so far, both
+automatic, so its rate is not yet a rate. Six links in total across all groups.
+
+**What moved:**
+1. Google stepped up on its last two days: 371 impressions on 11-01 and 854 (partial)
+   on 11-02, against 24 to 55 a day for the weeks before, with position 10.1 and 9.1
+   instead of 20 to 50. Clicks 5 and 14. Two days, partial rows, the first time since the
+   09-28 demotion; not yet a recovery. Top pages in the window are still `/` and
+   Portugal, Seville, Maryland pages at 15 to 50 impressions.
+2. Everything the 10-24 Portuguese link day inflated fell back: visitors 96 to 58,
+   downloads 45 to 14, saves 19 to 2, collected 7 to 0, contributions 16 to 2. Daily
+   visitors sit at 7 to 12, the same floor as before the spike.
+3. Bing still out-clicks Google over the full week, 33 against 11, and sent 6 to 7
+   new visitors a week against 0 before.
+4. Readers: one person (reader A) photographed five Paris trees on 11-02, four went
+   live. Ambassador requests keep arriving (Pamplona, New Orleans; 56 total).
+5. Outreach: 364 addresses are ready and unsent (press 234, source 67, nature 9,
+   guide 5, archive 9). The yield table says press and source answer at 5 to 6%,
+   society, council and tourism at 15 to 17%.
+
+**Suggestions, ranked:**
+1. **[run]** Once 11-01 to 11-03 fill in, pull the query and page split of the Google
+   step-up (which pages carry the 854 impressions, how many are `site:` or operator
+   searches, which are real queries) and say in the next digest whether it holds for
+   three days. Everything else on Google waits on this one answer.
+2. **[FOR HIDDE]** Send the nature (9), guide (5) and archive (9) drafts first, the
+   order you set on 10-31. They are 23 of 364 ready addresses, while press (234) has
+   the lowest answer rate of the large groups (6% of 98). Nature produced the only
+   referral spike (wilder.pt, 10-24), and its 63 recent mails are too young to judge.
+3. **[run]** Pages at positions 5 to 7 with no clicks: berlin (21 impressions, 5.0),
+   alicante (10, 5.4), paris (15, 6.3), luxembourg-city (13, 6.1), bath (13, 6.7), where
+   the normal CTR is 4.7 to 6.9%. About 5 clicks expected from 72 impressions, 0 got.
+   Counts are small, so check title, meta and lead photograph on each for a mismatch
+   with the query, not a rewrite of the set.
+4. **[run]** Serve queries that name a page we have or a gap: "alte bäume in der nähe"
+   (4 impressions, position 8: does the German home title carry "in der Nähe"?),
+   "drago milenario" (Tenerife page, position 13, 24 impressions: photograph and
+   register link), "general sherman tree" (Sequoia, position 64 to 77 for a fifth week:
+   check the page answers it in the first line).
+5. **[sessie]** Fix `audience_section` (MARKERS undefined), failing in the Monday
+   entry two weeks running, so this scorecard has no device split or per-visit ratios.
+
+**Watch next week:** whether Google stays above about 300 impressions a day at position
+under 15 without the partial-day inflation, and whether the 10-26 outreach batch (63
+nature, 38 press, 21 source) produces answers or links beyond the 2 automatic ones.
+
 ## 2026-11-02 (previous UTC day)
 
 **Today: an ambassador request for Pamplona arrived yesterday (56 total); 3 accounts were opened yesterday (56 total).**
