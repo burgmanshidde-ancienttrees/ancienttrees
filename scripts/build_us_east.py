@@ -7,8 +7,7 @@ then city_names.py, preflight.py, commit by path, push.
 
 Sources in data/research/: us-east-written-*.json (every written tree, each with `place`:
 washington-dc, new-york or leesburg; verified in washington-dc-2-verified.json,
-dc-suburbs-verified.json, new-york-2-verified.json, new-york-3-verified.json and
-leesburg-verified.json) and us-east-places-*.json (place copy: Washington DC and New York
+dc-suburbs-verified.json, new-york-2/3/4-verified.json and leesburg-verified.json) and us-east-places-*.json (place copy: Washington DC and New York
 grow, so their intro, meta and question fields are replaced and FAQ items replaced or
 appended; Leesburg is new). Approved photographs in us-east-photos.json if it exists (a held
 photo never ships). A tree with `hold` set is skipped.
@@ -31,6 +30,20 @@ TREE_FIELDS = ["id", "name", "species", "age_estimate", "age_min", "age_max", "a
                "photo", "location_precision", "pin_source", "curation_status", "verify_notes",
                "paid_entry"]
 MISSING = {"url": None, "license": None, "attribution": None, "status": "missing"}
+# a live tree that a pass found again (nyc_122 is the Dinosaur, nyc_025): its newer record
+# goes onto the live entry instead of a second page
+UPDATES = {
+    ("new-york", "nyc_025"): {
+        "location": {"latitude": 40.8371, "longitude": -73.94},
+        "location_precision": "confirmed",
+        "pin_source": "NYC Parks Great Trees id=35 and forestry Tree Map ID 2120654 (coordinates match)",
+        "girth_cm": 511,
+        "add_sources": ["https://www.nycgovparks.org/facilities/great-trees?id=35",
+                        "https://data.cityofnewyork.us/resource/hn5i-inap.json?objectid=2120654"],
+        "story_replace": ("The most recent account of it standing that we have found dates from 2021. If you walk past, tell us it is still there.",
+                          "The city's own forestry inventory measured its trunk at 64 inches across and rated it in good condition in March 2026."),
+    },
+}
 # canonical names where a written file kept a less common one
 SPECIES = {"Japanese Zelkova (Zelkova serrata)": "Saw-leaf Zelkova (Zelkova serrata)"}
 
@@ -83,6 +96,17 @@ def main():
                 print("already in", live)
                 continue
             d["trees"] += new
+            for x in d["trees"]:
+                u = UPDATES.get((slug, x["id"]))
+                if not u:
+                    continue
+                x["location"].update(u["location"])
+                for k in ("location_precision", "pin_source", "girth_cm"):
+                    x[k] = u[k]
+                x["verified_sources"] += [s for s in u["add_sources"] if s not in x["verified_sources"]]
+                old, rep = u["story_replace"]
+                if old in x["story"]:
+                    x["story"] = x["story"].replace(old, rep)
             for k in REPLACE:
                 if p.get(k):
                     d[k] = p[k]

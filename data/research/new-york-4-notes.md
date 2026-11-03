@@ -1,0 +1,7 @@
+# New York 4 verify pass (2026-11-03)
+
+Method: in the Browser pane, same-origin fetch of nycgovparks.org/facilities/great-trees?id=0..194 (119 entries), parsing the dt/dd pairs by regex (DOMParser returns no dl). Every entry has lat/lon, including 1985 ones, but Tree Map ID only for tree-point entries. Alive check: data.cityofnewyork.us/resource/hn5i-inap.json?objectid=<Tree Map ID> (the Parks Tree Map ID equals the forestry objectid), giving condition, dbh and update date.
+Delivered 27 (nyc_110 to nyc_136): 7 Woodlawn (owner's arboretum page https://woodlawn.org/conservancy/arboretum as second source, hours 8:30 to 4:30), Wave Hill elm (maple and lacebark pine folded in; ticketed), 2 NYBG (ticketed, hours not fetched), Cypress Hills National Cemetery beech, and 16 tree-point trees with confirmed pins.
+Findings: Quincy St elm (id 87) is a Stump as of 2026-10-05: dead, rejected. Corlear sycamore (id 14) resolves via Tree Map ID 1621574 (a London planetree). Elmhurst elm (id 113) is alive, contradicting the earlier lifecheck NONE.
+Register pitfalls: Woodlawn 1985 entries 24, 26, 27 show diameter equal to height (duplicated column), 25 nearly equal; those measurements were not recorded.
+Not done (time): Green-Wood own tree list, Queens Botanical Garden, Moravian Cemetery, NYBG own tour; Wave Hill elm Dutch elm disease status text was cut off in the fetch. Transport lines are from memory, marked 'check route'. No photos hunted; photo_candidate null throughout.

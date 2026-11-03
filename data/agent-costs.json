@@ -15459,6 +15459,22 @@
       "tokens": 213309,
       "trees": 18,
       "note": "18 stories and recognition lines, place copy and FAQ fixes for Oahu, Kauai, Maui, Hilo, Hawaii. Dispatcher (briefs, claims, builder, tests) about 120k by estimate. All in about 1.08M tokens, roughly 60k a tree; Maui and Kauai passes drove the cost."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "new-york (round 4: Woodlawn, Wave Hill, NYBG, Bronx and Brooklyn Great Trees)",
+      "tokens": 168347,
+      "trees": 27,
+      "note": "NYC Parks Great Trees pages in the browser pane, alive check by Tree Map ID against the forestry points; Woodlawn Conservancy page as second source. nyc_122 turned out to be the live Dinosaur (nyc_025): its 2026 record and confirmed pin go onto nyc_025 instead. Quincy St elm now a stump."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "new-york (batches C and D) + place copy",
+      "tokens": 288319,
+      "trees": 26,
+      "note": "C 11 (146,891), D 15 plus place copy for about 94 trees (141,428). New York all in this session: 65 new trees for about 1.5M tokens, roughly 23k a tree; the browser-register route is the cheap one."
     }
   ]
 }

@@ -1,0 +1,333 @@
+[
+ {
+  "place": "new-york",
+  "id": "nyc_110",
+  "name": "The White Oak of Woodlawn",
+  "species": "White Oak (Quercus alba)",
+  "girth_cm": 512,
+  "height_m": 27,
+  "location": {
+   "address": "Woodlawn Cemetery, North Border Ave and Rutgers Ave, overlooking East 233rd Street",
+   "latitude": 40.8957,
+   "longitude": -73.8675,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "NYC Parks calls this white oak the oldest tree in Woodlawn Cemetery, and nobody has ever written down how old that is. It stands on the cemetery's north border, above East 233rd Street, and Woodlawn's own arboretum page describes a massive white oak guarding that edge.\n\nThe numbers date from 1985, when Parks named it one of New York City's Great Trees. The trunk measured 64.2 inches across, a little over five metres round. The tree stood about 90 feet tall, with a crown spreading 82 feet. Woodlawn counts 33 trees on its grounds with trunks five feet across or more, and this oak is among them.\n\nIts title now has a rival on paper. In 2024 Parks added a black oak in Woodlawn's northeast corner and estimated that one at nearly 300 years. The register gives no age for the white oak, so which of the two is really the elder is a question the list itself leaves open.\n\nWoodlawn labels its trees on the trunk and maps them on its own tree walk, which helps, because the pin here is close rather than exact. Expect to look along the north edge for the broadest oak in sight.\n\nNo age has been published for this tree. If you know one, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, 64 inches across, under a crown that spreads 82 feet. It stands on Woodlawn's north border near Rutgers Avenue, above East 233rd Street.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=32",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=32"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks: the oldest tree at Woodlawn Cemetery, 64.2 in diameter, 90.2 ft tall, canopy 82 ft, Great Tree 1985. Woodlawn's arboretum page: a massive white oak guards the north edge of the cemetery, one of 33 specimens of 5 ft diameter or more. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 1985. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_111",
+  "name": "The Weeping Beech of the Gould Plot",
+  "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+  "location": {
+   "address": "Woodlawn Cemetery, Jay Gould plot near the Gould Mausoleum",
+   "latitude": 40.8913,
+   "longitude": -73.8715,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "Jay Gould, the railroad financier, built himself a mausoleum at Woodlawn, and on his plot grew a beech the city later put on its list of Great Trees. NYC Parks named this weeping European beech in 1985 and described it simply, as twisting branches over a smooth, leathery trunk.\n\nA weeping beech is a garden form of the ordinary European beech. Its branches arch over and hang down until the crown becomes a room you can stand inside, and this one's crown spread 63.5 feet when Parks recorded it. Woodlawn's arboretum page lists a weeping European beech among the trees on its grounds with trunks five feet across or more, a club of 33.\n\nThe official register is less help on size. Its diameter and height columns for this tree carry the same figure, which cannot both be right, so the trunk and the height go unstated here.\n\nWhat the beech has watched is a cemetery growing up around it, plot by plot and mausoleum by mausoleum, with one of the grander tombs on its own patch of grass. The pin is close, not exact. Find the Gould Mausoleum on the cemetery map and the beech stands on the same plot.\n\nNobody has published when it was planted. If you know, tell us.",
+  "how_to_recognise": "You can recognise it by the twisting branches that hang down around a smooth, leathery trunk. It stands on the Jay Gould plot beside the Gould Mausoleum.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the hanging curtain of leaves turns gold and copper"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=24",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=24"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks: stands on the Jay Gould plot near the Gould Mausoleum; twisting branches, smooth leathery trunk; canopy 63.5 ft. Parks' diameter and height columns both read 53.3, a duplicated value, so no measurement is recorded. Woodlawn's page lists a weeping European beech among its 5 ft diameter specimens. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 1985. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_112",
+  "name": "The Cutleaf Beech of the Woodbine Plot",
+  "species": "Fern-leaved Beech (Fagus sylvatica 'Laciniata')",
+  "height_m": 28,
+  "location": {
+   "address": "Woodlawn Cemetery, Woodbine Plot, northeast of the Jerome Avenue entrance",
+   "latitude": 40.8883,
+   "longitude": -73.8768,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "This beech stands 91 feet tall, and the thing to look at is the leaves. A cutleaf beech is a cultivar of the ordinary European beech whose leaves are cut deep along the edges instead of left as plain ovals, and Woodlawn's arboretum page singles it out as an unusual fine-leaved form among the cemetery's biggest trees.\n\nNYC Parks named it a Great Tree in 1985, in the Woodbine Plot northeast of the Jerome Avenue entrance. Its notes compare it to the weeping beech on the Jay Gould plot elsewhere in the cemetery. The bark is the same, the drooping branches are not. Here the crown goes up rather than down, spreading 50.5 feet across at the top of that height.\n\nParks also lists a trunk diameter for it, but the figure simply repeats the height, so the trunk's true size has never made it into the register. Woodlawn counts it among its 33 trees five feet across or more.\n\nOf all the Great Trees in this cemetery it is one of the easiest to reach, a short walk from the Jerome Avenue entrance. The pin is close rather than exact, so ask for the Woodbine Plot on the cemetery map.\n\nNo planting date is known. If you have one, tell us.",
+  "how_to_recognise": "You can recognise it by the leaves, cut deep along the edges, on a smooth-barked beech 91 feet tall. It stands in the Woodbine Plot, northeast of the Jerome Avenue entrance.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=25",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=25"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks: northeast of the Jerome Avenue entrance in the Woodbine Plot; bark like the weeping beech but without the drooping form; height 91 ft, canopy 50.5 ft. Parks' diameter column (91.2 in) mirrors the height figure and is not recorded. Woodlawn's page names an unusual fine-leaved cultivar of European beech among its 5 ft specimens. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 1985. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_113",
+  "name": "The White Pine by the Jerome Avenue Gate",
+  "species": "Eastern White Pine (Pinus strobus)",
+  "location": {
+   "address": "Woodlawn Cemetery near the Jerome Avenue entrance",
+   "latitude": 40.8878,
+   "longitude": -73.8771,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "A young white pine is a tidy cone. This one is not, and that is why it made the list. When NYC Parks named it a Great Tree in 1985, the description it gave was the scraggly, twisted shape of an old white pine, a tree that has lost its symmetry and kept going.\n\nEastern white pine is the native giant of the northeastern forests, the tree the British Crown once reserved for the masts of the Royal Navy. Woodlawn's arboretum page counts this one among the cemetery's Great Trees, and its crown spread 48 feet when Parks recorded it.\n\nIt stands near the Jerome Avenue entrance, which makes it an easy first stop on a walk through the cemetery's big trees. The cutleaf beech of the Woodbine Plot stands a short way to the northeast, and the two make a fair contrast, one shaped by age, the other by a gardener's choice of cultivar. The pin is close rather than exact, so look for a pine whose crown has gone ragged and crooked.\n\nNobody has recorded its age. If you know it, tell us.",
+  "how_to_recognise": "You can recognise it by its scraggly, twisted crown, a pine that has lost its cone shape. It stands near the Jerome Avenue entrance, a short way southwest of the cutleaf beech in the Woodbine Plot.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=26",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=26"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks: scraggly twisted shape of an old white pine, canopy 48 ft. Parks' diameter and height both read 83.64, a duplicated value, so no measurement is recorded. Woodlawn's page names a native eastern white pine among its Great Trees. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 1985. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_114",
+  "name": "The Umbrella Pine of Woodlawn",
+  "species": "Japanese Umbrella Pine (Sciadopitys verticillata)",
+  "location": {
+   "address": "Woodlawn Cemetery, corner of Parkview and Chestnut Avenues, northeast of the Paterno mausoleum",
+   "latitude": 40.8911,
+   "longitude": -73.8712,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "This conifer has no close relatives anywhere on Earth. The Japanese umbrella pine is the only living species in its family, a lineage that fossils trace back to the age of the dinosaurs, and it grows wild only in the mountain forests of Japan. NYC Parks put this one on its list of Great Trees in 1985 and called it a unique conifer, which is exact.\n\nIt is not a pine at all. The name comes from the needles, long, glossy and set in whorls at the end of each shoot, like the ribs of an open umbrella. That is the detail to look for, because the tree is not large. Its crown spread 22.5 feet when Parks recorded it, a small figure beside the oaks and beeches elsewhere in the cemetery, and Woodlawn's arboretum page still names it among its Great Trees.\n\nIt stands at the corner of Parkview and Chestnut Avenues, northeast of the Paterno mausoleum, and its register coordinate falls close to the weeping beech on the Jay Gould plot, so the two make one stop. The pin is close rather than exact.\n\nWhen it was planted has never been published. If you know, tell us.",
+  "how_to_recognise": "You can recognise it by the needles, long and glossy, set in whorls like the ribs of an umbrella on a compact evergreen. It stands at the corner of Parkview and Chestnut Avenues, northeast of the Paterno mausoleum.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=27",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=27"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks: unique conifer native to Japan, canopy 22.5 ft. Parks' diameter and height both read 47.56, a duplicated value, so no measurement is recorded. Woodlawn's page names a Japanese umbrella pine among its Great Trees. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 1985. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_115",
+  "name": "The Black Oak of Woodlawn's Northeast Corner",
+  "species": "Black Oak (Quercus velutina)",
+  "age_estimate": "nearly 300 years",
+  "age_min": 250,
+  "age_max": 300,
+  "age_basis": "source",
+  "location": {
+   "address": "Woodlawn Cemetery, northeast corner",
+   "latitude": 40.8939,
+   "longitude": -73.8644,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "Woodlawn Cemetery was laid out around this oak. NYC Parks records that the black oak in the northeast corner was recognised as exceptional when the cemetery was first planned, and preserved. In 2024 Parks added it to the city's Great Trees and called it absolutely massive.\n\nWoodlawn's own arboretum page gives the number behind the adjective. The trunk measures six feet across, which puts it in the top tier of a cemetery that counts 33 trees five feet across or more. Parks estimates its age at nearly 300 years. If that estimate holds, this was a young tree when the American Revolution was fought across the Bronx, and it has stood through everything the borough became afterwards.\n\nThat leaves an awkward line in the register. Back in 1985 Parks named a white oak on the north border the oldest tree at Woodlawn, without giving it an age. Now the black oak has a figure and the white oak does not, and nobody has published a comparison of the two.\n\nFrom its corner the oak overlooks the Bronx. Black oaks are easy to pass over among the cemetery's showier beeches and maples, but a trunk six feet across is not. The pin is close rather than exact, so look for that trunk in the northeast corner.",
+  "how_to_recognise": "You can recognise it by the trunk, six feet across, on an oak that overlooks the Bronx. It stands in the northeast corner of Woodlawn Cemetery.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=81",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=81"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks (Great Tree 2024): 'absolutely massive' oak overlooking the Bronx, estimated nearly 300 years old, recognised as exceptional and preserved when Woodlawn was first laid out. Woodlawn's page: a black oak measuring six feet across its trunk. Age is Parks' estimate. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 2024. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_116",
+  "name": "The Linden of Duke Ellington's Jazz Corner",
+  "species": "Small-leaved Lime (Tilia cordata)",
+  "location": {
+   "address": "Woodlawn Cemetery, Jazz Corner, overlooking the Duke Ellington family lot",
+   "latitude": 40.8849,
+   "longitude": -73.8717,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "Duke Ellington picked his grave for the tree. NYC Parks records that when he bought a family lot at Woodlawn in 1959, he was drawn by a stately linden on the spot, and he sketched the tree into his own plan for the family memorial.\n\nThe linden is still there, and the ground around it has become more than one family's resting place. The corner around it is now known as the Jazz Corner. Miles Davis, Lionel Hampton, Max Roach, Illinois Jacquet, Clark Terry and Coleman Hawkins are all memorialised within it, so the tree a bandleader chose for his family now stands at the centre of a good part of jazz history.\n\nIn 2024 Parks added it to the city's Great Trees, one of several Woodlawn additions that year, and Woodlawn's arboretum page still names it among its specimens. Parks gives no measurements, and the tree's case was never its size. It is a littleleaf linden, the species Europeans call the small-leaved lime, and in July its small, pale flowers fill the air around the plot with scent.\n\nThe pin is close rather than exact. Ask for the Jazz Corner or the Ellington lot on the cemetery map and the linden is the tree overlooking it.\n\nHow old it was when Ellington found it is not recorded. If you know, tell us.",
+  "how_to_recognise": "You can recognise it as the linden overlooking the Duke Ellington family lot. It stands at the heart of the Jazz Corner, among the memorials to Miles Davis, Coleman Hawkins and Max Roach.",
+  "best_time": {
+   "months": [
+    7
+   ],
+   "kind": "flowers",
+   "label": "July, when the small pale flowers scent the air over the Jazz Corner"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=82",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=82"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks (2024): Duke Ellington bought a family lot in 1959, drawn by a stately linden he sketched into his memorial plan; the tree is the centre of the Jazz Corner where Miles Davis, Lionel Hampton, Max Roach, Illinois Jacquet, Clark Terry and Coleman Hawkins are memorialised. No size given. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 2024. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_117",
+  "name": "The Japanese Maple of Woodlawn",
+  "species": "Japanese Maple (Acer palmatum)",
+  "location": {
+   "address": "Woodlawn Cemetery, between Central Avenue and Spruce Avenue",
+   "latitude": 40.8934,
+   "longitude": -73.8683,
+   "neighbourhood": "Woodlawn, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "The trick with these maples was learning to leave them alone. Woodlawn holds more than 300 old Japanese maples, and NYC Parks credits the cemetery's gardeners, who planted them in the 1900s, with working out that they should not be pruned. This is the one Parks chose to stand for all of them when it added it to the city's Great Trees in 2024.\n\nWhat that restraint produced is, in Parks' words, a gnarled and sculptural tree, closer to something shaped by a sculptor than by a pair of shears. Parks also notes that it was planted as a group of four, so what reads as one tree began as several.\n\nJapanese maples are usually the small ornament at the edge of a garden. A cemetery with three hundred old ones, left to grow into their own shapes, is a different thing, and this is the place to see what the species does when nobody cuts it back. Woodlawn's arboretum page still lists it among its specimens.\n\nParks gives no measurements, and size was never the reason it was chosen. It stands between Central Avenue and Spruce Avenue. The pin is close rather than exact, so look for a gnarled maple that grew from four planted together.\n\nIts exact planting year is not recorded. If you know it, tell us.",
+  "how_to_recognise": "You can recognise it by its gnarled, sculptural shape, a Japanese maple that grew from four trees planted together. It stands between Central Avenue and Spruce Avenue.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=80",
+   "https://www.woodlawn.org/conservancy/arboretum"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=80"
+  },
+  "access": "Free to walk in; Woodlawn Cemetery grounds open daily 8:30 AM to 4:30 PM (owner's page, woodlawn.org). Trees are trunk-labelled and mapped on the Woodlawn tree walk.",
+  "transport": "4 train to Woodlawn, the end of the line, or Metro-North Harlem Line to Woodlawn; check the route and the cemetery map inside.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks (2024): gnarled sculptural tree planted as a group of four, chosen to represent over 300 old Japanese maples at Woodlawn, planted in the 1900s by gardeners who learned not to prune them. No size given. Alive: named on Woodlawn Conservancy's arboretum page as a surviving Great Tree specimen (owner of the ground, fetched 2026-11-03); Parks lists it as designated 2024. Pin is the Parks coordinate from the Great Trees page (no Tree Map ID, cemetery land is outside the forestry inventory): approximate, cemetery scale."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_118",
+  "name": "The American Elm of Wave Hill",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "around 200 years",
+  "age_min": 150,
+  "age_max": 220,
+  "age_basis": "source",
+  "girth_cm": 456,
+  "height_m": 35,
+  "location": {
+   "address": "Wave Hill, 4900 Independence Avenue, top of the lawn southeast of Wave Hill House",
+   "latitude": 40.8996,
+   "longitude": -73.9117,
+   "neighbourhood": "Riverdale, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "When the city measured this American elm in 1985, it stood 114.8 feet tall, in a species that Dutch elm disease has been cutting down across the continent for nearly a century. NYC Parks named it one of New York's Great Trees that year and recorded a trunk 57.1 inches across, about four and a half metres round, under a crown 70.5 feet wide.\n\nNobody is sure how it got here. Wave Hill estimates it began growing in the early to mid-1800s, around 200 years ago. Parks allows that the estate's owners may have planted it, or that it came up on its own as a wild seedling. If Wave Hill's estimate holds, the elm was already standing when Mark Twain rented Wave Hill House at the start of the twentieth century.\n\nIts vase shape, the classic outline of an American elm, is best seen from the arbor of the Shade Border. Parks notes it showed signs of Dutch elm disease in the 2000s. Parks still lists it, but we have not found a dated report on how it has fared since, so tell us what you see.\n\nTwo more Great Trees share the lawn and the register's coordinate. One is a sugar maple 88.6 feet tall that Parks puts at close to 200 years. The other is a lacebark pine, the species named for its patchwork bark, planted in the early 1900s.",
+  "how_to_recognise": "You can recognise it by its vase shape and its height, about 115 feet, the tallest of the three Great Trees on the lawn. It stands at the top of the lawn southeast of Wave Hill House.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=20",
+   "https://www.wavehill.org/visit"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=20"
+  },
+  "access": "Paid entry: Wave Hill is a public garden, grounds open Tuesday to Sunday 10 AM to 4:30 PM (winter hours from 1 Nov), adults $10, students and seniors $6, free Thursdays (wavehill.org/visit, fetched 2026-11-03).",
+  "paid_entry": true,
+  "transport": "Metro-North Hudson Line to Riverdale, or the Bx7 or Bx10 bus to West 252nd Street, then a walk to the garden gate; check the route.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks (1985): 114.8 ft tall, 57.1 in diameter, canopy 70.5 ft, vase-like shape best seen from the Shade Border arbor. Wave Hill estimates it began growing in the early to mid-1800s (Parks page quoting Wave Hill); possible planting by estate owners or a wild volunteer. Survivor of Dutch elm disease, showed signs in the 2000s (Parks text, cut off in fetch; treatment not read). Same lawn, same register coordinate: sugar maple (46.5 in, 88.6 ft, id 19, close to 200 years) and lacebark pine (40 in, 52.5 ft, id 21, planted early 1900s per Wave Hill, thin canopy) folded in here. Pin is the Parks lawn coordinate shared by all three, no Tree Map ID: approximate. Alive: Parks page current, garden maintained; no dated tree observation read."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_119",
+  "name": "The White Ash of the Bedford Park Gate",
+  "species": "White Ash (Fraxinus americana)",
+  "age_estimate": "about 120 years",
+  "age_min": 110,
+  "age_max": 125,
+  "age_basis": "derived",
+  "girth_cm": 375,
+  "location": {
+   "address": "New York Botanical Garden, near the Bedford Park Boulevard entrance, overlooking Conservatory Drive",
+   "latitude": 40.8657,
+   "longitude": -73.8829,
+   "neighbourhood": "Bedford Park, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "Ash trees across eastern North America have been dying by the millions, and this one, near the Bedford Park Boulevard entrance of the New York Botanical Garden, is still standing. NYC Parks calls it a rare survivor of the emerald ash borer, the beetle from Asia behind those losses, and in 2024 it put the tree on the city's list of Great Trees.\n\nIt is a big one to have come through. Parks gives the trunk as 47 inches across, close to three and three quarter metres round, and the height as at least 100 feet.\n\nIts origin is a small puzzle. Parks describes it as a remnant of New York's old hardwood forest. The Garden's own records, which Parks quotes, say it was a gift, donated in 1907 by John Finley, the Foreman of the Gardeners. Those records do not say it went into the ground that year, so the roughly 120 years since the gift are the best age on offer, counted from the gift rather than from a planting.\n\nWhatever its start, it has watched the Garden grow up around it, and it now overlooks Conservatory Drive. The pin marks the garden area rather than the exact trunk, so look for a tall ash above the drive, close to the Bedford Park Boulevard entrance.\n\nIf you know more about Finley's gift, tell us.",
+  "how_to_recognise": "You can recognise it by its height, at least 100 feet, on a white ash 47 inches across. It stands near the Bedford Park Boulevard entrance, overlooking Conservatory Drive.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=77"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=77"
+  },
+  "access": "Paid entry: New York Botanical Garden is ticketed; check nybg.org for hours and prices (not fetched this pass).",
+  "paid_entry": true,
+  "transport": "Metro-North Harlem Line to Botanical Garden, or the B or D train to Bedford Park Boulevard; check the route.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks (Great Tree 2024): 47 in diameter, at least 100 ft tall, a remnant of old New York hardwood forest; NYBG records say it was donated by the Foreman of the Gardeners, John Finley, in 1907 (age ~119 years from a documented gift; whether planted that year not stated). Rare survivor of emerald ash borer. Pin is Parks' coordinate, garden-level: approximate. Owner's own page not read; one official register."
+ },
+ {
+  "place": "new-york",
+  "id": "nyc_120",
+  "name": "The Sycamore of the Everett Garden Gate",
+  "species": "American Sycamore (Platanus occidentalis)",
+  "girth_cm": 455,
+  "location": {
+   "address": "New York Botanical Garden, just northeast of the Everett Garden Gate",
+   "latitude": 40.8598,
+   "longitude": -73.8803,
+   "neighbourhood": "Bedford Park, Bronx"
+  },
+  "location_precision": "approximate",
+  "story": "Nobody planted this sycamore, and a New Deal work crew measured it anyway. NYC Parks records that it seeded itself on the grounds of the New York Botanical Garden, and that a site-wide tree survey run by the Works Progress Administration, the Depression-era jobs programme, found its trunk 46 inches across.\n\nThat gives it a before and after. The WPA ran from 1935 to 1943, so the survey dates from those years, and the sycamore was already a large tree then. When Parks added it to the city's Great Trees in 2024, the trunk measured 57 inches across, about four and a half metres round. Eleven inches of diameter is what the decades since have added.\n\nIt stands just northeast of the Everett Garden Gate, and Parks notes that its huge branches shade the school groups who gather there. In a garden built on collected and planted trees, this one is a native that chose its own spot, the way American sycamores do along the rivers and bottomlands of the east.\n\nThe pin marks the garden area rather than the exact trunk. Look for the broad sycamore beside the Everett Garden Gate, where the groups wait.\n\nNo age has been put on it. If you know when it came up, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, 57 inches across, and the huge branches that shade the school groups. It stands just northeast of the Everett Garden Gate.",
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=78"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=78"
+  },
+  "access": "Paid entry: New York Botanical Garden is ticketed; check nybg.org for hours and prices (not fetched this pass).",
+  "paid_entry": true,
+  "transport": "Metro-North Harlem Line to Botanical Garden; check the route.",
+  "curation_status": "flagged",
+  "verify_notes": "Parks (2024): 57 in diameter, huge branches shade school groups at the Everett Garden Gate; self-seeded on the grounds; a WPA site-wide tree survey found it 46 in diameter (rest of the sentence cut in fetch). Pin: Parks coordinate, approximate. One official register."
+ }
+]
