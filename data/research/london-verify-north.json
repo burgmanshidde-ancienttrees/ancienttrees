@@ -1,0 +1,87 @@
+[
+  {
+    "id": "lon_060",
+    "name": "The St Mary Magdalene Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 250 to 300 years",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": 735,
+    "location": {
+      "address": "St Mary Magdalene Gardens, Holloway Road, Islington, London N7",
+      "latitude": 51.54806,
+      "longitude": -0.10667,
+      "neighbourhood": "Holloway"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/St_Mary_Magdalene_Gardens",
+      "https://treetree.co.uk/notable.html",
+      "https://www.islingtontribune.co.uk/article/the-hit-list-of-trees-is-growing",
+      "https://www.pressreader.com/uk/scottish-daily-mail/20191128/282252372382422"
+    ],
+    "access": "Free. Public garden on the old burial ground of St Mary Magdalene church, open 8am to dusk all year (Wikipedia, run by Islington council).",
+    "transport": "Holloway Road (Piccadilly line) is about 8 minutes' walk; the garden lies between Holloway Road and Liverpool Road.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Mary Magdalene Gardens",
+      "radius_m": 50
+    },
+    "recognise": "The largest of a small group of old London planes inside the churchyard garden between Holloway Road and Liverpool Road.",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 7.35 m at 1.5 m: treetree.co.uk entry for St Mary Magdalene Gardens N7 (single source for the figure; it sits beside Barney the Plane 8.2 m, so plausible but only one source; the page names it 'the largest among a small group of old London planes'). Age: Scottish Daily Mail 28 Nov 2019 calls it 300 years old and the CAVAT-valued 'most valuable tree in Britain' at 1.6 million pounds (page 403s; seen via search summary and Islington Tribune CAVAT coverage which says it could stay healthy another 200 years). London Gardens Trust: at least one huge tree may date from C18th. Wikipedia: one plane may date from C18th. Not on the Great Trees of London list. No TPO listed but Local Wildlife Site and Conservation Area. Alive: 2019 valuation, no recent dated observation seen (lifecheck not run, coordinate only from Wikipedia). Tree pin is at garden level; the garden is small and taken in at one glance. Not yet checked: whether the tree stands near the Holloway Road side."
+  },
+  {
+    "id": "lon_061",
+    "name": "Grimston's Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "400 years or more",
+    "age_min": 300,
+    "age_max": 500,
+    "girth_cm": 500,
+    "location": {
+      "address": "Epping Forest, at the junction of several rides just north of Connaught Water, near Chingford Plain",
+      "latitude": 51.6422378,
+      "longitude": 0.0278857,
+      "neighbourhood": "Chingford"
+    },
+    "verified_sources": [
+      "https://efht.org.uk/discover-epping-forest/about-the-forest/into-the-trees-dominant-species-and-notable-specimens/",
+      "https://www.komoot.com/highlight/409457",
+      "https://www.walkingclub.org.uk/short-walk/chingford/",
+      "https://www.openstreetmap.org/#map=19/51.6422378/0.0278857"
+    ],
+    "access": "Free. Open woodland in Epping Forest, managed by the City of London Corporation; stands at a junction of rides.",
+    "transport": "Chingford station (London Overground Weaver line, about 25 minutes from Liverpool Street), roughly a 25 minute walk across Chingford Plain.",
+    "location_precision": "confirmed",
+    "recognise": "A fine, wide oak standing alone at the junction of several rides just north of Connaught Water, once known as the Cuckoo Oak; the OSM tree node carries its name.",
+    "curation_status": "flagged",
+    "verify_notes": "Also called Bedford's Oak (after J T Bedford, City of London councillor who fought to save the Forest in the 1870s) and earlier the Cuckoo Oak; the Grimston name honours cricketer Robert Grimston (1816-1884). Sources conflict on which name is the original; EFHT treats Bedford's and Grimston's as one tree. EFHT: age 'could be at least 400 years', a landmark for at least three centuries, looks much the same in an 1870s engraving, girth around 5 m, twelve other oaks in the Forest are at least as large (so not the biggest, but the named one). Komoot highlight says about 350 years and 'Monarch of the Forest'; another komoot guide claims 750 years and over 10 m girth, rejected as implausible against EFHT. Essex Field Club archive reportedly records 12 ft 8 in (1894) and 15 ft 10 in (1988) (seen only in a search summary, page 403s, not used). Pin: OpenStreetMap natural=tree node named 'Grimston's Oak' at 51.6422378, 0.0278857, matches komoot highlight coordinate 51.6421, 0.0280. Alive: Saturday Walkers Club Chingford circular (Jul 2024) routes past it; lifecheck RECENT not found (OLD 2016 result is a different tree). Species: EFHT says only 'oak'; Pedunculate is the Forest's dominant oak, assumed, flag for the writer to say 'oak' if unsure."
+  },
+  {
+    "id": "lon_062",
+    "name": "The George Green Sweet Chestnuts",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 400,
+    "girth_cm": 600,
+    "location": {
+      "address": "George Green, Wanstead, London E11",
+      "latitude": 51.57438,
+      "longitude": 0.0275,
+      "neighbourhood": "Wanstead"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://wansteadwildlife.org.uk/index.php/the-tree-avenues",
+      "https://wansteadium.com/?p=15329",
+      "https://nominatim.openstreetmap.org/search?q=George+Green+Wanstead&format=json"
+    ],
+    "access": "Free. Open village green maintained by the Conservators of Epping Forest (City of London Corporation), by the road junction at Wanstead.",
+    "transport": "Wanstead station (Central line) is about 5 minutes' walk; George Green lies about 400 m south of the station.",
+    "location_precision": "approximate",
+    "recognise": "The four old Spanish chestnuts stand on the green itself; the biggest has a trunk about 6 m round, and the group is the remnant of the old Wanstead House estate plantings. One young chestnut planted in 1999 stands among them: ignore that one.",
+    "curation_status": "flagged",
+    "verify_notes": "Great Trees of London (Time Out Guides, 2010, p.112, via Wikipedia list): 'George Green Sweet Chestnut', probably planted early 1700s. Wanstead Wildlife survey 6 Mar 2007 (revisited 14 Oct 2008), five numbered chestnuts on George Green: tree 5 girth 6.0 m, height 18.8 m; tree 4 girth 3.9 m, height 21.1 m (tallest); tree 3 half-trunk, girth 1.6 m (half girth only), 13 m, struck by lightning 1984; tree 1 pollard, girth printed as '3.75 cm' (source typo, not used); tree 2 is a 1999 replacement for the 'tree with a postcode' (a 250-year-old chestnut felled 7 Dec 1993 for the M11 Link Road after the anti-road protest, per wansteadium.com). London Gardens Trust (via search summary, page 404s) lists three notable chestnuts (C17th-18th). Wanstead Wildlife says only a few large old trees remain from the Wanstead House avenues and calls the Bush Wood and George Green chestnuts the most significant. A Wikiwand copy of the Great Trees list says the tree survived arson attacks (hollow blocked with a wooden door); not seen on the primary page, so not stated. Conflict on age: 'early 1700s' (Great Trees) vs 'about 400 years' (garbled copy) vs 250 years for the felled one. Alive: last dated measurement 2008, Great Trees list 2010; no recent dated observation found, so flagged. Entry is the group of four old trees on the green (one collectible point). Pin is the green's centroid from Nominatim (green bbox about 200 m wide), approximate."
+  }
+]

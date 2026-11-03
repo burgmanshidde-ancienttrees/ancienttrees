@@ -217,5 +217,685 @@
     "verify_notes": "Grafting Gardeners guide: about 250 years old, 'probably planted by Capability Brown' who landscaped the area around 1773: that is an inference by the guide, not documented, do NOT carry the Brown link as fact (no bridge claims). The Lucombe cultivar was named after William Lucombe of Exeter, who grew it about 1763 (guide), so a 250-year tree is plausible. Hybrid of cork oak and Turkey oak. One search summary (not a fetched page) places it slightly south of Finchdean House on the Alton Estate; unverified. Great Trees of London lists it at 51.451337,-0.246961 (not tree-level). Historic England listing 1466474 for the Alton West landscape returned 403, so no official statement about the tree. Alive: iNaturalist observation 2026-01-28 within radius (lifecheck RECENT, may not be this exact tree). Flagged: sources are a single chain (Trees for Cities list and a guide drawing on it), access not stated.",
     "story": "This oak belongs to a variety that is barely older than it is. William Lucombe, a nurseryman in Exeter, raised the cross of a cork oak and a Turkey oak around 1763, and the hybrid still carries his name. The Grafting Gardeners guide to London's greatest trees puts this one at about 250 years old, which would make it one of the early generation.\n\nThe guide also says it was probably planted by Capability Brown, who landscaped the area around 1773. That is the guide's guess, and no record we have found backs it, so read it as a possibility rather than a pedigree.\n\nWhoever put it in, it now stands on the green between the housing blocks of the Alton Estate, at the junction of Danebury Avenue and Tangley Grove in Roehampton, and it was chosen as one of the Great Trees of London.\n\nTwo caveats. Our sources are one chain, the Great Trees list and a guide drawing on it, so the age is a single estimate, somewhere between 200 and 260 years, and nobody has published a girth or height. And the pin comes from the Great Trees list rather than from the trunk, so it is approximate; one unconfirmed account puts the tree just south of Finchdean House. No source describes a gate, but none confirms open access either. If you have stood under it, tell us.",
     "how_to_recognise": "You can recognise it by its spot on the estate green at the junction of Danebury Avenue and Tangley Grove. It stands between the housing blocks, by one unconfirmed account just south of Finchdean House."
+  },
+  {
+    "id": "lon_034",
+    "name": "The Richmond Riverside Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "height_m": 40,
+    "location": {
+      "address": "Thames towpath beside Richmond Bridge, Richmond TW9",
+      "latitude": 51.456511,
+      "longitude": -0.305169,
+      "neighbourhood": "Richmond"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_plane_tree_2026-09-20.jpg",
+      "https://www.geograph.org.uk/photo/2136891"
+    ],
+    "access": "Free. Public Thames towpath at the edge of Terrace Gardens, Richmond, open at all times.",
+    "transport": "Richmond station (District line, Overground, National Rail), about 10 minutes' walk down to the river at Richmond Bridge.",
+    "location_precision": "approximate",
+    "recognise": "Stands on the riverside path just upstream of Richmond Bridge, by the landing stages and the Thames visitor centre; it overtops every other tree on the front, a very tall straight London plane with a pale mottled trunk.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_plane_tree_2026-09-20.jpg",
+        "licence": "CC BY 4.0",
+        "author": "Matt Brown",
+        "note": "dated 2026-09-20, geotag 51.456511,-0.305169, file named after the tree"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_Plane_-_geograph.org.uk_-_2136891.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Eirian Evans",
+        "note": "2010, title names the tree"
+      }
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "On the Great Trees of London list (Trees for Cities, 1987 storm legacy, extended 2008; Wikipedia list gives it as 'over 40 metres in height, one of the tallest London planes in the UK', citing the Great Trees of London Map by Paul Wood). Single naming source for the height, not independently measured, so height_m is 'over 40' from that list only. Alive: Commons photo of the plane dated 2026-09-20 geotagged at the tree. Pin: Wikipedia coordinate 51.456465,-0.304728; photo geotag 51.456511,-0.305169 (camera position, 30 m apart) so approximate. Earlier lead (2026-10-14) was held for no girth; no longer a gate. Species per list: 'London plane'. Age not documented.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Richmond_Riverside_plane_tree_2026-09-20.jpg",
+      "license": "CC BY 4.0",
+      "attribution": "Matt Brown, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_plane_tree_2026-09-20.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 4032,
+      "height": 3024,
+      "taken_month": 9
+    },
+    "story": "Over forty metres tall, by the reckoning of the Great Trees of London map, this plane would rank among the tallest of its kind anywhere in Britain. That figure comes from one list rather than a tape or a laser, so treat it as a claim worth testing with your own neck. Stand on the Thames towpath just upstream of Richmond Bridge and the case largely makes itself. Nothing else on the riverside front comes close, and the straight, pale, mottled trunk carries its crown well clear of every other tree along the water.\n\nIt belongs to the Great Trees of London, the roll of the capital's remarkable trees that Trees for Cities started in the years after the great storm of 1987 and widened in 2008. The list describes it in terms of height, and on this stretch of river height is the whole show.\n\nThe London plane is the city's own tree, the hybrid that shrugged off soot and hard pruning and took the city's name with it. What nobody has published for this one is a planting date, an age or a girth. If you know when it went in, or you have put a tape round it, tell us.\n\nThe towpath is open at all hours and costs nothing. Walk down from Richmond station to the landing stages by the bridge, then look up.",
+    "how_to_recognise": "You can recognise it by its height: a very tall, straight London plane with a pale mottled trunk that overtops every other tree on the front. It stands on the riverside path just upstream of Richmond Bridge, by the landing stages."
+  },
+  {
+    "id": "lon_035",
+    "name": "The Harlington Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "at least 1,000 years",
+    "age_min": 900,
+    "age_max": 1500,
+    "girth_cm": 587,
+    "location": {
+      "address": "St Peter and St Paul churchyard, St Peter's Way, Harlington, Hayes UB3",
+      "latitude": 51.49235,
+      "longitude": -0.43425,
+      "neighbourhood": "Harlington"
+    },
+    "verified_sources": [
+      "https://www.stpeterandstpaul-harlington.org.uk/church-history/the-yew-tree",
+      "https://www.ancient-yew.org/yew_tree_database/harlington/",
+      "https://www.britishmuseum.org/collection/object/P_Y-5-62"
+    ],
+    "access": "Free. Open churchyard; the yew stands opposite the church's south door.",
+    "transport": "Hayes & Harlington station (Elizabeth line, National Rail), about 1.5 km on foot; bus routes not source-checked.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Peter and St Paul churchyard, Harlington",
+      "radius_m": 40
+    },
+    "recognise": "The ancient yew standing opposite the south door of the church, the one great tree of the churchyard; it was clipped into topiary shapes until about 1825.",
+    "curation_status": "flagged",
+    "verify_notes": "Church's own page: 'thought to be at least 1000 years old', stands opposite the south door, may mark the spot where Christianity was first preached; famed 18th to early 19th century for topiary, annual clipping a Whitsun festivity until about 1825. Ancient Yew Group database (record Harlington, site visited 1999, file updated 2025): ancient, girth 587 cm at the ground (their field also reads 494 for the tree id), grid ref TQ08807822, category 'Ancient 5m-7m'. British Museum print record calls it over 900 years old. A 1914 notice said probably more than 1000 years old. 1958 report said half the old yew fell in a gale (per search summary, not verified on a fetched page, so not for the page). The AYG notes the churchyard might be lost to Heathrow expansion plans. Age is the church's claim; age range 900 to 1500 is generous; leave as 'at least 1,000 years' with attribution. Alive: AYG 2025 site file exists; no dated photo checked, so flagged. Pin: church 51.4924,-0.4342 (OSM); churchyard small, tree location only given as 'opposite the south door'.",
+    "story": "Every Whitsun, until about 1825, the people of Harlington turned out to clip their churchyard yew into shape, and made a festival of it. Through the 18th and early 19th centuries the tree was famous for its topiary, and a print of it sits in the British Museum's collection. Then the shears stopped, and the yew went back to being a yew.\n\nHow old it is depends on whom you ask, and every answer is large. The church calls it at least 1,000 years old. A notice in 1914 said probably more than 1,000. The British Museum's record says over 900. None of those is a measurement, and old yews hollow out in a way that defeats ring counting, so the honest answer is a range rather than a number. The Ancient Yew Group measured it at 587 centimetres round at the ground and files it among the ancient trees.\n\nIt stands opposite the south door of St Peter and St Paul, and the church's own history says it may mark the spot where Christianity was first preached here. That is tradition rather than record, but it is an old tradition attached to an old tree.\n\nThe Ancient Yew Group also notes that Heathrow expansion plans could one day take the churchyard. For now it is free and open, about 1.5 kilometres from Hayes & Harlington station.",
+    "how_to_recognise": "You can recognise it by its size: the one great tree of the churchyard, 587 centimetres round at the ground. It stands opposite the south door of St Peter and St Paul."
+  },
+  {
+    "id": "lon_036",
+    "name": "The Chiswick House Cedars",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 280,
+    "age_max": 310,
+    "location": {
+      "address": "Chiswick House Gardens, Burlington Lane, Chiswick W4 2RP",
+      "latitude": 51.48428,
+      "longitude": -0.25961,
+      "neighbourhood": "Chiswick"
+    },
+    "verified_sources": [
+      "https://chiswickhouseandgardens.org.uk/our-story/design-nature/cedars-of-lebanon/",
+      "https://en.wikipedia.org/wiki/The_Beatles%27_cedar_tree",
+      "https://www.chiswickw4.com/info/conchg159.htm",
+      "https://www.inaturalist.org/observations/135647107"
+    ],
+    "official_register": {
+      "name": "Chiswick House and Gardens Trust: Cedars of Lebanon",
+      "url": "https://chiswickhouseandgardens.org.uk/our-story/design-nature/cedars-of-lebanon/"
+    },
+    "access": "Chiswick House Gardens are open to visitors daily, dawn to dusk (check the Trust's site for hours and any charges); the ground beneath the Beatles' cedar is roped off.",
+    "transport": "Chiswick station (South Western Railway), about 10 minutes' walk; Turnham Green (District line), about 20 minutes.",
+    "location_precision": "approximate",
+    "recognise": "The great cedars frame the house's garden front; the one filmed by the Beatles in 1966 has a low, huge limb, and stands diagonally across from the statue garden where the 'Paperback Writer' scenes were shot.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Cedar_tree,_Chiswick_House_Gardens_-_geograph.org.uk_-_2902706.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Stefan Czap",
+        "note": "title Cedar tree, Chiswick House Gardens; geotag 51.48229,-0.26073 is a camera position"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Chiswick_House_103_cedars.JPG",
+        "licence": "CC BY-SA 3.0",
+        "author": "Patche99z",
+        "note": "two large cedars from the rear of the house"
+      }
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Owner (Chiswick House and Gardens Trust): oldest trees date from the late 1720s when William Kent first worked on the garden; several came directly from Lebanon; avenue of cedars frames the house; prone to drop branches without warning, do not walk under or climb. Planting dates conflict across sources (1720, 1726 from Sutton Court, 1741, 1745), so age is broad. The Beatles' cedar was one of ten trees shortlisted for Woodland Trust Tree of the Year 2025 (BBC 2025-07-11); believed planted in the 1720s per Woodland Trust. Beatles filmed 'Rain' and 'Paperback Writer' promo films there on 20 May 1966 (Bob Whitaker cover photo for the Nowhere Man EP). Result of the 2025 award not established. Pin: no tree-level coordinate found (Friends of Chiswick House tree trail is Cloudflare-blocked from here). Chosen pin is an iNaturalist observation of Cedrus libani (2022-09-19, accuracy 8 m, https://www.inaturalist.org/observations/135647107) in the gardens; other Cedrus libani observations lie 51.4830,-0.2575 and 51.4851,-0.2627, so the cedars are spread across the grounds and the exact Beatles tree is not placed. Approximate. Walk-through garden, so no location_site. Several cedars, folded into one entry as one destination. Alive: iNaturalist Cedrus libani observations in 2025.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chiswick_House_103_cedars.JPG",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Patche99z, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Chiswick_House_103_cedars.JPG",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 3648,
+      "height": 1870,
+      "taken_month": 4
+    },
+    "story": "On 20 May 1966 the Beatles spent the day among these cedars, filming the promotional clips for 'Paperback Writer' and 'Rain'. One of them, a cedar with a huge low limb, is known as the Beatles' cedar, and in 2025 it made the Woodland Trust's shortlist of ten for Tree of the Year. Whether it won, we have not been able to establish.\n\nThe band were late arrivals. The Chiswick House and Gardens Trust, which owns the gardens, dates its oldest trees to the late 1720s, when William Kent first worked on the garden, and says several came directly from Lebanon. Other accounts put the planting at 1720, 1726, 1741 or 1745, one of them saying the trees came from Sutton Court, so the honest age is roughly three centuries with a couple of decades either way. Today an avenue of them frames the house.\n\nThis entry is the group rather than one trunk. The cedars are spread across the grounds and our pin marks the gardens, not the Beatles tree itself. To find that one, go to the statue garden where the 1966 scenes were shot and look diagonally across for the low limb.\n\nThe Trust notes that its cedars can drop branches without warning, and the ground under the famous one is roped off. The gardens are open daily, from dawn to dusk.",
+    "how_to_recognise": "You can recognise the Beatles' cedar by its huge low limb. It stands diagonally across from the statue garden where the 1966 films were shot, among the great cedars that frame the house's garden front."
+  },
+  {
+    "id": "lon_037",
+    "name": "The Maids of Honour Stone Pine",
+    "species": "Stone Pine (Pinus pinea)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Richmond Green, Richmond TW9",
+      "latitude": 51.46163,
+      "longitude": -0.30836,
+      "neighbourhood": "Richmond"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://www.inaturalist.org/observations/321717149",
+      "https://www.inaturalist.org/observations/259534301"
+    ],
+    "access": "Free. Open public green (Richmond Green), open at all times.",
+    "transport": "Richmond station (District line, Overground, National Rail), about 5 minutes' walk.",
+    "location_precision": "approximate",
+    "recognise": "A lone umbrella-shaped stone pine, the only one of its kind among the plane, lime and horse chestnut on the green, on the Maids of Honour Row side near the Old Palace gatehouse.",
+    "curation_status": "flagged",
+    "verify_notes": "On the Great Trees of London list (Trees for Cities); Wikipedia's list gives coordinate 51.461379,-0.308673 and notes the tree lost a major limb in August 2026 (cited to an Instagram post; not seen directly, so state only 'lost a limb in 2026' with care or leave out). Alive: two iNaturalist Pinus pinea observations on the green, 2025-10-18 (CC BY) at 51.46160,-0.30848 and 2025-01-25 (CC0) at 51.46167,-0.30824; lifecheck RECENT. Pin from the two observer fixes, about 30 m from the Wikipedia point, so approximate. Age and girth not found in any fetched source; do not invent. Name from the nearby Maids of Honour Row (not verified why the pine carries it).",
+    "story": "Richmond Green is plane, lime and horse chestnut country, which is what makes this tree so easy to spot. On the Maids of Honour Row side, near the gatehouse of the old palace, a single stone pine holds up a flat, dark umbrella of a crown, the shape you know from Roman skylines and Italian hillsides, standing alone on an English village green.\n\nIt is one of the Great Trees of London, the list Trees for Cities keeps of the capital's remarkable trees, and it is the only tree of its kind on the green. The name comes from the terrace of Maids of Honour Row close by, though no source we have read explains how the pine came to carry it.\n\nWhat we do not know is most of the rest. Nobody has published its age, a planting date or a girth, and we will not guess. If you know when it was planted, or have measured it, tell us.\n\nIt has had a rough year. Wikipedia's Great Trees of London list reports that the pine lost a major limb in August 2026. We have not seen the damage for ourselves, so read that as reported rather than confirmed; naturalists recorded the tree on the green in 2025. If you visit, tell us how it looks now.\n\nThe green is open public grass, free at every hour, five minutes' walk from Richmond station.",
+    "how_to_recognise": "You can recognise it by its umbrella-shaped crown, the only stone pine on a green of planes, limes and horse chestnuts. It stands alone on the Maids of Honour Row side, near the Old Palace gatehouse."
+  },
+  {
+    "id": "lon_038",
+    "name": "The Syon Park Mulberries",
+    "species": "Black Mulberry (Morus nigra)",
+    "age_estimate": "several hundred years",
+    "age_min": 300,
+    "age_max": 480,
+    "location": {
+      "address": "Syon Park, Brentford TW8 8JF",
+      "latitude": 51.4772,
+      "longitude": -0.3074,
+      "neighbourhood": "Brentford / Isleworth"
+    },
+    "verified_sources": [
+      "https://www.moruslondinium.org/map/syon-park",
+      "https://www.treeregister.org/files/resources/england-london-2017.pdf"
+    ],
+    "access": "Paid entry. Syon Park's grounds and gardens are ticketed; the orchard lies south-east of the house and the lone old mulberry stands in a fenced enclosure in the water meadow. Check syonpark.co.uk for opening days.",
+    "transport": "Syon Lane station (National Rail), about 15 to 20 minutes' walk to the park gate.",
+    "location_precision": "approximate",
+    "recognise": "Ancient, multi-stemmed mulberries in an orchard south-east of the house; the trunks have layered into rings with the central bole almost gone. One solitary old mulberry stands alone in an enclosure in the water meadow that the house's long gallery looks over, leaning and propped.",
+    "curation_status": "flagged",
+    "verify_notes": "Morus Londinium (Tree Register / London mulberry survey) site record for Syon Park, grid TQ 17646 76713 (converted to 51.4772,-0.3074; site-level reference, not a tree), 6 mulberries, tallest 8 m: several ancient multi-stemmed layering mulberries in an orchard SE of the house; a solitary ancient tree in an adjacent field towards the river, probably once part of the orchard. Percy family archives record purchase of 10 mulberries in March 1604 and 6 more in 1645 and 1646; the survey says if all survived up to 10 could be over 416 years old; it also says there is NO evidence for mulberries at Syon in 1548, so the popular claim that William Turner planted it in 1548 (Spitalfields Life blog) is a legend, not a source. 19th-century writers refer to a very old tree with branches touching the ground. Tree Register 2017 visit notes mention the remains and regrowth of an ancient black mulberry possibly the oldest surviving tree on the estate (search summary of the pdf, not read on the page, so treat as a pointer). Age is a derived, broad estimate from the archive purchase dates; 'Heritage Notable' site class. Alive: Morus Londinium record, no dated photo of the individual trunk checked. Tree-level pin not found. Replaces the Kew/Syon mulberry lead of 2026-10-14 for Syon only.",
+    "story": "In March 1604 the Percy family bought ten mulberry trees for Syon, and the purchase is still written down in their archives. Six more followed in 1645 and 1646. Morus Londinium, the survey of London's mulberries, reads those entries with care. If all ten of the first batch survived, it says, some of the trees here could be more than 416 years old.\n\nThat if matters. Nobody has dated an individual trunk, so the age here is an estimate from the purchase records, broad on purpose. What you can see is how these trees have aged. Old mulberries layer, their branches settling to the ground and rooting, and the orchard south-east of the house is now a set of multi-stemmed rings with the original central trunks almost gone. The tallest of the six stands about eight metres. Nineteenth-century writers were already describing a very old tree here with its branches down on the ground.\n\nYou may hear that the botanist William Turner planted a mulberry at Syon in 1548. The survey found no evidence of mulberries here that early, so treat that as a legend and the 1604 purchase as the record.\n\nOne more tree stands apart, alone in a fenced enclosure in the water meadow that the house's long gallery looks over, leaning and propped, probably once part of the same orchard. Syon's grounds are ticketed, so check the opening days before you go.",
+    "how_to_recognise": "You can recognise them by their shape: ancient mulberries layered into rings of stems, the central trunks almost gone. They stand in the orchard south-east of the house, with one leaning, propped tree alone in the water meadow.",
+    "best_time": {
+      "months": [
+        7,
+        8
+      ],
+      "kind": "fruit",
+      "label": "July and August, when the dark mulberries ripen and stain the ground under the old rings"
+    },
+    "paid_entry": true
+  },
+  {
+    "id": "lon_039",
+    "name": "The Harefield Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "over 500 years",
+    "age_min": 500,
+    "age_max": 1000,
+    "location": {
+      "address": "St Mary's churchyard, Church Hill, Harefield UB9",
+      "latitude": 51.5952,
+      "longitude": -0.4806,
+      "neighbourhood": "Harefield"
+    },
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_tree_database/harefield/",
+      "https://www.ancient-yew.org/London-diocese",
+      "https://www.geograph.org.uk/photo/3824607"
+    ],
+    "access": "Free. Open, public churchyard of St Mary's, south of the village.",
+    "transport": "Harefield has no station; the nearest rail is Uxbridge (Metropolitan and Piccadilly lines), then a local bus (route not source-checked).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Mary's churchyard, Harefield",
+      "radius_m": 40
+    },
+    "recognise": "The Ancient Yew Group records a single ancient yew in St Mary's churchyard; it is the old yew of the churchyard, not the younger yews around it.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Veteran_yew_tree,_Harefield_churchyard_-_geograph.org.uk_-_3824607.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Stefan Czapski",
+        "note": "2014-01-22, geotag 51.59514,-0.48050, title 'Veteran yew tree, Harefield churchyard'"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Yew_tree,_Harefield_churchyard_-_geograph.org.uk_-_3823971.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Stefan Czapski",
+        "note": "2014-01-22, geotag 51.59505,-0.48093"
+      }
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Ancient Yew Group database, Harefield St Mary, tree 3054, visited 20 Aug 2009 (site file Harefield-2020), site type churchyard, public, parochial church council; recorded earlier as 'Ancient 7m+' with no girth data; the 2022 diocese list re-classes it 'ancient 5/7m' (girth 5 to 7 m, likely above 500 years by the AYG rule). No measured girth in the fetched pages. AYG note: the church had a priest at Domesday, so presumably a church then. Single society source plus Geograph photographs, so flagged. Alive: Geograph photos dated 2014-01-22 only; lifecheck RECENT result was a nearby iNaturalist plant record, not this tree. Pin is churchyard-level (Geograph camera 51.59514,-0.48050; AYG grid TQ05338958).",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Veteran_yew_tree%2C_Harefield_churchyard_-_geograph.org.uk_-_3824607.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Stefan Czapski, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Veteran_yew_tree,_Harefield_churchyard_-_geograph.org.uk_-_3824607.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 768,
+      "height": 1024,
+      "taken_month": 1
+    },
+    "story": "Harefield already had a priest when the Domesday survey was made in 1086, which is why the Ancient Yew Group takes it that there was a church at Harefield back then. The yew in St Mary's churchyard is the one tree here the group counts as ancient.\n\nIts size is harder to pin down. The group's earlier record put it in the class of yews more than seven metres round. Its 2022 list for the Diocese of London puts it at five to seven metres instead. Under the group's own rule of thumb, a yew that size is likely more than 500 years old. Nobody has published a measured girth, so the band is wide and the age is an estimate from size, not a count of rings.\n\nNo legend comes attached to it in anything we have read. What it has is a churchyard south of the village with a church presumed there since Domesday, and by the best reckoning available more than five centuries of growth.\n\nThe most recent dated photographs we have found are from January 2014. If you visit, tell us how it is doing, and if you have a tape, tell us what it measures.\n\nThe churchyard is free and open to the public.",
+    "how_to_recognise": "You can recognise it as the one ancient yew of St Mary's churchyard, older than the younger yews around it. It stands in the churchyard south of Harefield village."
+  },
+  {
+    "id": "lon_040",
+    "name": "The Ruislip St Martin Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "over 400 years",
+    "age_min": 400,
+    "age_max": 800,
+    "girth_cm": 490,
+    "location": {
+      "address": "St Martin's churchyard, High Street, Ruislip HA4",
+      "latitude": 51.57662,
+      "longitude": -0.42616,
+      "neighbourhood": "Ruislip"
+    },
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_tree_database/ruislip",
+      "https://www.ancient-yew.org/London-diocese",
+      "https://londongardenstrust.org/conservation/inventory/site-record/?ID=HIL047"
+    ],
+    "access": "Free. Open, public churchyard of St Martin's, High Street, Ruislip.",
+    "transport": "Ruislip station (Metropolitan and Piccadilly lines), roughly 10 minutes' walk (not source-checked).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Martin's churchyard, Ruislip",
+      "radius_m": 40
+    },
+    "recognise": "The ancient yew grows to the south-east of the church, in the churchyard.",
+    "curation_status": "flagged",
+    "verify_notes": "Ancient Yew Group database, Ruislip St Martin of Tours, tree 4295, female, girth 490 cm at 50 cm height, class Ancient 4/5m (AYG rule: likely above 400 years); site file Ruislip-2019; AYG notes there has been a church on the site since Norman times and that the yew grows SE of the church. London Gardens Trust inventory has a site record for the churchyard (HIL047), not read for tree detail. Grid TQ09158759 converts to 51.57662,-0.42616. Single society source, flagged. Alive: AYG 2019 site file; Geograph photo set 'Early morning in St Martin's Churchyard' (date not read) shows the churchyard, no photo identified as the yew. Not yet seen: whether the 490 cm figure is the trunk visitors will see.",
+    "story": "There has been a church on this spot in Ruislip since Norman times, and the yew growing south-east of it has likely kept it company for more than four centuries of that. The Ancient Yew Group measured the trunk at 490 centimetres round, taken half a metre off the ground, and under its rule of thumb a yew of that size is likely more than 400 years old. That is an estimate from girth, not a count of rings, and the true figure could be a good deal older.\n\nThe group also recorded that this yew is female. Male yews scatter pollen in early spring and are done with it; female trees carry the red, fleshy cups that ripen in autumn. Come in September or October and that is the tree giving itself away.\n\nSt Martin's sits right on Ruislip's High Street, so the tree is an easy detour from the shops. The measurement we have is the group's, and we have not confirmed that the trunk you meet is the one they taped. If you visit with a tape of your own, tell us what you find.\n\nThe churchyard is free and open to the public.",
+    "how_to_recognise": "You can recognise it by its trunk, 490 centimetres round half a metre up, and in autumn by the red berries of a female yew. It stands south-east of St Martin's church, in the churchyard.",
+    "best_time": {
+      "months": [
+        9,
+        10
+      ],
+      "kind": "fruit",
+      "label": "September and October, when this female yew carries its red berries"
+    }
+  },
+  {
+    "id": "lon_041",
+    "name": "The St Mary Magdalene Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 250 to 300 years",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": 735,
+    "location": {
+      "address": "St Mary Magdalene Gardens, Holloway Road, Islington, London N7",
+      "latitude": 51.54806,
+      "longitude": -0.10667,
+      "neighbourhood": "Holloway"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/St_Mary_Magdalene_Gardens",
+      "https://treetree.co.uk/notable.html",
+      "https://www.islingtontribune.co.uk/article/the-hit-list-of-trees-is-growing",
+      "https://www.pressreader.com/uk/scottish-daily-mail/20191128/282252372382422"
+    ],
+    "access": "Free. Public garden on the old burial ground of St Mary Magdalene church, run by Islington Council, open 8am to dusk all year.",
+    "transport": "Holloway Road station (Piccadilly line), about 8 minutes' walk; the garden lies between Holloway Road and Liverpool Road.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Mary Magdalene Gardens",
+      "radius_m": 50
+    },
+    "recognise": "The largest of a small group of old London planes inside the churchyard garden between Holloway Road and Liverpool Road.",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 7.35 m at 1.5 m: treetree.co.uk entry for St Mary Magdalene Gardens N7 (single source for the figure; it sits beside Barney the Plane 8.2 m, so plausible but only one source; the page names it 'the largest among a small group of old London planes'). Age: Scottish Daily Mail 28 Nov 2019 calls it 300 years old and the CAVAT-valued 'most valuable tree in Britain' at 1.6 million pounds (page 403s; seen via search summary and Islington Tribune CAVAT coverage which says it could stay healthy another 200 years). London Gardens Trust: at least one huge tree may date from C18th. Wikipedia: one plane may date from C18th. Not on the Great Trees of London list. No TPO listed but Local Wildlife Site and Conservation Area. Alive: 2019 valuation, no recent dated observation seen (lifecheck not run, coordinate only from Wikipedia). Tree pin is at garden level; the garden is small and taken in at one glance. Not yet checked: whether the tree stands near the Holloway Road side.",
+    "story": "In 2019 this plane on Holloway Road was reported to be worth 1.6 million pounds, priced under CAVAT, a system for putting a money value on public trees. The figure made the national papers. The tree itself carried on as before, growing in an old burial ground between Holloway Road and Liverpool Road.\n\nOne survey of notable London trees records it at 7.35 metres round at chest height, the largest of a small group of old planes in the garden. That figure comes from a single source, so treat it as a good measurement rather than a settled one.\n\nIts age is less certain still. The 2019 newspaper coverage called it 300 years old. The London Gardens Trust says, more carefully, that at least one huge tree here may date from the 18th century, and Wikipedia says the same of one plane. Somewhere between two and three centuries is the honest range. Local coverage of the valuation added that it could stay healthy for another 200 years.\n\nThe garden was the burial ground of St Mary Magdalene church and is now a council park, a Local Wildlife Site inside a conservation area.\n\nIt is free, open from 8am to dusk, eight minutes from Holloway Road station.",
+    "how_to_recognise": "You can recognise it by its trunk, 7.35 metres round at chest height, the largest of the small group of old London planes in the garden. It stands in St Mary Magdalene Gardens, between Holloway Road and Liverpool Road."
+  },
+  {
+    "id": "lon_042",
+    "name": "Grimston's Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "400 years or more",
+    "age_min": 300,
+    "age_max": 500,
+    "girth_cm": 500,
+    "location": {
+      "address": "Epping Forest, at the junction of several rides just north of Connaught Water, near Chingford Plain",
+      "latitude": 51.6422378,
+      "longitude": 0.0278857,
+      "neighbourhood": "Chingford"
+    },
+    "verified_sources": [
+      "https://efht.org.uk/discover-epping-forest/about-the-forest/into-the-trees-dominant-species-and-notable-specimens/",
+      "https://www.komoot.com/highlight/409457",
+      "https://www.walkingclub.org.uk/short-walk/chingford/",
+      "https://www.openstreetmap.org/#map=19/51.6422378/0.0278857"
+    ],
+    "access": "Free. Open woodland in Epping Forest, managed by the City of London Corporation; the oak stands at a junction of rides.",
+    "transport": "Chingford station (London Overground, about 25 minutes from Liverpool Street), then roughly 25 minutes' walk across Chingford Plain.",
+    "location_precision": "confirmed",
+    "recognise": "A fine, wide oak standing alone at the junction of several rides just north of Connaught Water, once known as the Cuckoo Oak; the OSM tree node carries its name.",
+    "curation_status": "flagged",
+    "verify_notes": "Also called Bedford's Oak (after J T Bedford, City of London councillor who fought to save the Forest in the 1870s) and earlier the Cuckoo Oak; the Grimston name honours cricketer Robert Grimston (1816-1884). Sources conflict on which name is the original; EFHT treats Bedford's and Grimston's as one tree. EFHT: age 'could be at least 400 years', a landmark for at least three centuries, looks much the same in an 1870s engraving, girth around 5 m, twelve other oaks in the Forest are at least as large (so not the biggest, but the named one). Komoot highlight says about 350 years and 'Monarch of the Forest'; another komoot guide claims 750 years and over 10 m girth, rejected as implausible against EFHT. Essex Field Club archive reportedly records 12 ft 8 in (1894) and 15 ft 10 in (1988) (seen only in a search summary, page 403s, not used). Pin: OpenStreetMap natural=tree node named 'Grimston's Oak' at 51.6422378, 0.0278857, matches komoot highlight coordinate 51.6421, 0.0280. Alive: Saturday Walkers Club Chingford circular (Jul 2024) routes past it; lifecheck RECENT not found (OLD 2016 result is a different tree). Species: EFHT says only 'oak'; Pedunculate is the Forest's dominant oak, assumed, flag for the writer to say 'oak' if unsure.",
+    "story": "This oak has three names, and the sources disagree on which came first. It was the Cuckoo Oak, and it is also Bedford's Oak, after J T Bedford, the City of London councillor who fought in the 1870s to save the Forest. OpenStreetMap and the walking guides call it Grimston's Oak, after the cricketer Robert Grimston, who lived from 1816 to 1884. The Epping Forest Heritage Trust treats Bedford's and Grimston's as one and the same tree.\n\nWhatever you call it, it has been a landmark for at least three centuries. An engraving from the 1870s shows it looking much as it does now, standing alone where several forest rides meet just north of Connaught Water. The Trust puts its age at possibly 400 years or more, and its girth at around five metres. Other guides say 350 years; one claims 750 years and a trunk over ten metres round, which sits badly with the Trust's own measurement.\n\nThe Trust is also honest about rank. At least twelve other oaks in the Forest are as large or larger. This one is not the biggest, just the one with a name, or three of them. Our source calls it simply an oak; it is most likely a pedunculate oak, the Forest's common species, but if you can tell from the acorns, tell us.\n\nIt is free and open at all times, about 25 minutes' walk across Chingford Plain from Chingford station.",
+    "how_to_recognise": "You can recognise it as the wide oak, about five metres round, alone where several rides meet. It stands in Epping Forest just north of Connaught Water."
+  },
+  {
+    "id": "lon_043",
+    "name": "The George Green Sweet Chestnuts",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 400,
+    "girth_cm": 600,
+    "location": {
+      "address": "George Green, Wanstead, London E11",
+      "latitude": 51.57438,
+      "longitude": 0.0275,
+      "neighbourhood": "Wanstead"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://wansteadwildlife.org.uk/index.php/the-tree-avenues",
+      "https://wansteadium.com/?p=15329",
+      "https://nominatim.openstreetmap.org/search?q=George+Green+Wanstead&format=json"
+    ],
+    "access": "Free. Open village green by the road junction at Wanstead, maintained by the City of London Corporation as Conservators of Epping Forest.",
+    "transport": "Wanstead station (Central line), about 5 minutes' walk; George Green lies about 400 m south of the station.",
+    "location_precision": "approximate",
+    "recognise": "The four old Spanish chestnuts stand on the green itself; the biggest has a trunk about 6 m round, and the group is the remnant of the old Wanstead House estate plantings. One young chestnut planted in 1999 stands among them: ignore that one.",
+    "curation_status": "flagged",
+    "verify_notes": "Great Trees of London (Time Out Guides, 2010, p.112, via Wikipedia list): 'George Green Sweet Chestnut', probably planted early 1700s. Wanstead Wildlife survey 6 Mar 2007 (revisited 14 Oct 2008), five numbered chestnuts on George Green: tree 5 girth 6.0 m, height 18.8 m; tree 4 girth 3.9 m, height 21.1 m (tallest); tree 3 half-trunk, girth 1.6 m (half girth only), 13 m, struck by lightning 1984; tree 1 pollard, girth printed as '3.75 cm' (source typo, not used); tree 2 is a 1999 replacement for the 'tree with a postcode' (a 250-year-old chestnut felled 7 Dec 1993 for the M11 Link Road after the anti-road protest, per wansteadium.com). London Gardens Trust (via search summary, page 404s) lists three notable chestnuts (C17th-18th). Wanstead Wildlife says only a few large old trees remain from the Wanstead House avenues and calls the Bush Wood and George Green chestnuts the most significant. A Wikiwand copy of the Great Trees list says the tree survived arson attacks (hollow blocked with a wooden door); not seen on the primary page, so not stated. Conflict on age: 'early 1700s' (Great Trees) vs 'about 400 years' (garbled copy) vs 250 years for the felled one. Alive: last dated measurement 2008, Great Trees list 2010; no recent dated observation found, so flagged. Entry is the group of four old trees on the green (one collectible point). Pin is the green's centroid from Nominatim (green bbox about 200 m wide), approximate.",
+    "story": "On 7 December 1993 one of the chestnuts on George Green was cut down for the M11 Link Road. Protesters had fought for it, and it had a nickname, the tree with a postcode. It was about 250 years old. Four of its neighbours are still standing, and a young chestnut planted in 1999 stands in as its replacement.\n\nThe survivors are old. The Great Trees of London guide says the George Green chestnut was probably planted in the early 1700s, and Wanstead Wildlife counts these trees, with those in nearby Bush Wood, as the most significant of the few large trees left from the avenues of Wanstead House. Other accounts stretch the age to about 400 years, so the honest answer is roughly three centuries, perhaps more.\n\nWanstead Wildlife measured all five in 2007 and 2008. The biggest is 6.0 metres round and 18.8 metres tall. Another, 3.9 metres round, is the tallest at 21.1 metres. A third is only half a trunk, after lightning struck it in 1984, and a fourth is an old pollard. Between them they have come through lightning and a road scheme, and they still stand on the green by the road junction.\n\nThe green is free and open at all times, five minutes' walk from Wanstead station.",
+    "how_to_recognise": "You can recognise them as the four old sweet chestnuts on the green, the biggest about six metres round; the young one among them was planted in 1999. They stand on George Green, about 400 metres south of Wanstead station.",
+    "best_time": {
+      "months": [
+        10
+      ],
+      "kind": "fruit",
+      "label": "October, when the spiny chestnut cases drop on the green"
+    }
+  },
+  {
+    "id": "lon_044",
+    "name": "The Windrush Square Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Windrush Square, Effra Road, Brixton, London SW2 1JX",
+      "latitude": 51.461021,
+      "longitude": -0.115355,
+      "neighbourhood": "Brixton"
+    },
+    "verified_sources": [
+      "https://www.lambeth.gov.uk/parks/windrush-square",
+      "https://www.brixtonbuzz.com/2019/09/the-magnificent-plane-tree-in-brixtons-tate-library-gardens-windrush-square/",
+      "https://thestreettree.substack.com/p/162-windrush-plane",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free. Open public square, open 24 hours (Lambeth Council).",
+    "transport": "Brixton station (Victoria line, National Rail), about 5 minutes' walk.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "recognise": "The one huge plane standing alone at the heart of the paved square, between the Tate Library and the Ritzy cinema.",
+    "pin_source": "OSM natural=tree node 703286419 (genus Platanus, London plane), 4 m from the Great Trees of London list coordinate 51.461049,-0.115331; the only species-tagged tree within 45 m and the lone centrepiece of the square",
+    "verify_notes": "One of the Great Trees of London (added in the 2008 tranche, named in a public poll of London's 20 favourite trees, Nov 2008, per Brixton Buzz). Lambeth Council (owner) calls it 'a large mature London Plane tree at its heart'. Brixton Buzz: in the centre of Brixton for 'around a hundred years' (no source given); survived the 1940 bomb strike that wiped out Brixton Theatre; the plot was Brixton Oval, garden laid out 1905, library built 1893, redesigned 1965-66 with the plane preserved as a central feature, paved over again in the mid-late 2000s redevelopment (Windrush Square). Street Tree substack 31 Aug 2025: 'Victorian London plane', 'one of the finest planes in town' (paywalled, no figures). Alive: Substack post Aug 2025, Lambeth page current. Age is vague-sourced: 'around a hundred years' vs Victorian; kept broad, no girth found. Wikipedia list says its entry is from Paul Wood's Great Trees of London Map (2020). Lifecheck NONE (no iNat), alive from the Aug 2025 post. Photo candidates: Wikipedia list uses Commons 'Tate Plane, Brixton.jpg' (licence not yet checked).",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Tate_Plane,_Brixton.jpg",
+        "note": "named for the tree on the Great Trees list; licence/author not checked"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Tate_Plane%2C_Brixton.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Paulitzer, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Tate_Plane,_Brixton.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 1080,
+      "height": 771,
+      "taken_month": 3
+    },
+    "story": "In 1940 a bomb destroyed the Brixton Theatre. The plane tree at the centre of what is now Windrush Square came through the same strike, and since then it has come through something almost as risky for a city tree, two redesigns of the ground around it.\n\nThe plot has a long paper trail. The plot was Brixton Oval, with the Tate Library built in 1893 and a garden laid out in 1905. In 1965 and 1966 the space was redesigned with the plane kept as its central feature. In the redevelopment of the late 2000s it was paved over once more, and the plane was kept once more. Lambeth Council, which looks after the square, describes it simply as the large mature London plane at its heart.\n\nHow old it is, nobody has pinned down. A local history piece says it has stood in the centre of Brixton for around a hundred years; a 2025 tree writer calls it Victorian and one of the finest planes in town. Somewhere past a century is as far as the sources go, and no one has published a girth. If you know more, tell us.\n\nIn 2008 it joined the Great Trees of London, named in a public poll of the city's twenty favourite trees. It stands alone in the middle of a paved square between the library and the Ritzy, free and open at all hours, five minutes from Brixton station.",
+    "how_to_recognise": "You can recognise it as the one huge plane standing alone at the heart of the paved square. It stands in Windrush Square, between the Tate Library and the Ritzy cinema."
+  },
+  {
+    "id": "lon_045",
+    "name": "The Lewisham Elm",
+    "species": "European White Elm (Ulmus laevis)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Ladywell Fields, riverside path, middle field, Lewisham SE13",
+      "latitude": 51.450645,
+      "longitude": -0.024501,
+      "neighbourhood": "Ladywell"
+    },
+    "verified_sources": [
+      "https://www.ladywell-live.org/2021/03/04/famous-dutch-elm-lewishams-great-survivor-to-be-joined-by-two-saplings-grown-from-its-seeds-by-local-resident/",
+      "https://ladywellfields.blogspot.com/2016/05/ladywell-fields-tree-walk-part-3.html",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free. Public park, open at all times.",
+    "transport": "Ladywell station (Southeastern), about 5 minutes' walk.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "On the riverside path in the middle field, just after the spiral bridge from the northern field, near the dawn redwood; the only tree in the park with its own sign.",
+    "verify_notes": "One of the original 41 Great Trees of London. Thought to be the only remaining specimen in Britain of the cultivar its plaque names, and one of very few mature elms left in London after Dutch elm disease (about 20 million English elms killed, Ladywell Live 4 Mar 2021). Species disputed: the council sign says Ulmus x hollandica 'Klemmer' (Flanders elm); Wikipedia's Great Trees list, citing the Tree Register, gives European white elm (Ulmus laevis), and the Ladywell Fields blog notes some experts think so too. Species written as European White Elm, flag. Ladywell Live: the mature tree could live another 200 years; two saplings grown from its seed (collected May 2018) were agreed for planting in the park. No girth, height or age on any fetched page. Pin from the Great Trees list coordinate 51.450645,-0.024501 (no OSM tree node there), approximate. Alive: iNaturalist observation 2026-05-29 within lifecheck radius (https://www.inaturalist.org/observations/366307628), Ladywell Live 2021. Two sources are local community sites, hence flagged. Photo candidate: Wikipedia list file 'Lewisham_Dutch_Elm.jpg'.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Lewisham_Dutch_Elm.jpg",
+        "note": "the Great Trees list image; licence not checked"
+      }
+    ],
+    "story": "Dutch elm disease killed some 20 million English elms. This elm in a Lewisham park, which local reporting calls the borough's great survivor, is still standing. It is one of very few mature elms left in London, and if its plaque is right, it may be the last of its kind in Britain.\n\nThe plaque is where the argument starts. The council sign names it as a Flanders elm, Ulmus x hollandica 'Klemmer', and it is thought to be the only remaining specimen of that cultivar in Britain. The Tree Register, quoted on Wikipedia's Great Trees of London list, says it is something else, a European white elm, Ulmus laevis, and the Ladywell Fields tree walk notes that some experts agree. We list it as a European white elm and keep the question open. If you know elms well enough to settle it, tell us.\n\nWhatever it is, it was one of the original 41 Great Trees of London, and it is the only tree in Ladywell Fields with a sign of its own. Nobody has published its age, height or girth. Local reporting in 2021 said the tree could live another 200 years. A local resident had grown two saplings from seed collected in May 2018, and the council agreed they could be planted in the park.\n\nThe park is free and open at all times, five minutes from Ladywell station. Follow the riverside path into the middle field.",
+    "how_to_recognise": "You can recognise it by its sign, the only tree in the park with one. It stands on the riverside path in the middle field, just past the spiral bridge from the northern field, near the dawn redwood."
+  },
+  {
+    "id": "lon_046",
+    "name": "The Bromley Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 400 to 500 years",
+    "age_min": 400,
+    "age_max": 550,
+    "location": {
+      "address": "beside Kentish Way, next to The Glades shopping centre, Bromley BR1",
+      "latitude": 51.403414,
+      "longitude": 0.018598,
+      "neighbourhood": "Bromley"
+    },
+    "verified_sources": [
+      "https://www.bromleycivicsociety.org.uk/?p=2766",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free. Stands in public space beside Kentish Way and The Glades; seen from the pavement.",
+    "transport": "Bromley North station (Southeastern), about 8 minutes' walk; Bromley South about 12 minutes.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "A lone veteran oak on the grass beside the Kentish Way road, on the edge of The Glades shopping centre grounds.",
+    "verify_notes": "One of the original 41 Great Trees of London. Bromley Civic Society (10 Mar 2020): veteran Quercus robur, 'over 500 years old', reprieved when The Glades was built (1980s, centre opened 1991), originally on the corner of the grounds of Bromley Lodge and Love Lane, now stands at the side of Kentish Way. Age conflict: Time Out 2010 (via Wikipedia list) says about 400 years; Civic Society says over 500. Both repeated vaguely, neither measured. No girth or height found. Pin from the Great Trees list coordinate 51.403414,0.018598; OSM has natural=tree nodes within 3 to 30 m but none named, so approximate. Alive: lifecheck only OLD (2011 geograph); no 2024/25 report seen, Civic Society page 2020 and OSM tree nodes added recently around it; flagged for thin recent confirmation. Photo candidate: Wikipedia list file 'Bromley Oak (3).jpg'.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Bromley_Oak_(3).jpg",
+        "note": "Great Trees list image, licence not checked"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Bromley_Oak_%283%29.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Bromley_Oak_(3).jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 3024,
+      "height": 4032,
+      "taken_month": 5
+    },
+    "story": "When Bromley built The Glades shopping centre in the 1980s, this oak was reprieved. It now stands beside Kentish Way, a veteran on the grass at the edge of a mall that opened in 1991.\n\nIt was here long before any of that. The Bromley Civic Society says the oak first stood on the corner of the grounds of Bromley Lodge, where they met Love Lane.\n\nHow long it has stood there is disputed. The Civic Society calls it over 500 years old; the 2010 Time Out guide to the Great Trees of London says about 400. Neither figure comes with a measurement behind it, and nobody has published a girth or a height, so read it as somewhere between four and five centuries and more than a little uncertain. If you have measured it, tell us.\n\nIt is one of the original 41 Great Trees of London, chosen when the list was first drawn up, and it is a strange thing to meet among the shoppers. If the Civic Society is right, it was already growing before Henry VIII broke with Rome. Recent reports of it are thin. If you pass it, tell us how it looks.\n\nIt is free to see from the pavement, eight minutes' walk from Bromley North station.",
+    "how_to_recognise": "You can recognise it as the lone veteran oak on the grass beside the road. It stands beside Kentish Way, on the edge of The Glades shopping centre grounds."
+  },
+  {
+    "id": "lon_047",
+    "name": "The Bexley Charter Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 200 years or more",
+    "age_min": 200,
+    "age_max": 300,
+    "location": {
+      "address": "Danson Park, Danson Road, Bexleyheath DA6",
+      "latitude": 51.454882,
+      "longitude": 0.117988,
+      "neighbourhood": "Danson Park, Welling"
+    },
+    "verified_sources": [
+      "https://exploring-london.com/2024/05/15/10-significant-and-historic-london-trees3-charter-oak-of-bexley",
+      "https://en.wikipedia.org/wiki/Danson_Park",
+      "https://www.openstreetmap.org/node/1417041891",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free. Danson Park is open at all times; the oak is fenced to protect its roots and is seen from the fence.",
+    "transport": "Bexleyheath or Welling station (Southeastern), each about 20 to 25 minutes' walk to the park; buses stop at the park gates (routes not source-checked).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "recognise": "The big fenced oak in the open parkland; its enclosure keeps visitors back from the roots.",
+    "pin_source": "OSM natural=tree node 1417041891, named 'Bexley Charter Oak', denotation natural_monument, last edited 2025-04-18",
+    "verify_notes": "One of the original 41 Great Trees of London. Lord Cornwallis presented the charter making Bexley a municipal borough beneath this oak on 30 September 1937 (Wikipedia Danson Park; Exploring London); the oak appears in Bexley's coat of arms. Age: Time Out 2010 'well over 200 years', Exploring London 'around 200 years' (earlier Kent Heritage Trees survey 2015 could not measure girth because fenced; so none). Exploring London 2024: 'visibly deteriorating' in 2017, geo-injector soil decompaction treatment that extended its life. Fenced (one source says enclosed to protect its root system). OSM node (wikidata Q133894730) updated April 2025 shows it standing. Lifecheck NONE. Flagged: alive evidence is the OSM edit of April 2025 and the 2024 article, not a dated photo. Photo candidate: geograph 972257 'Bexley, the Charter Oak' (the Wikipedia list image).",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Bexley,_the_Charter_Oak_-_geograph.org.uk_-_972257.jpg",
+        "note": "title names the tree; Geograph, licence CC BY-SA 2.0 presumably, author not read"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bexley%2C_the_Charter_Oak_-_geograph.org.uk_-_972257.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Chris Downer, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Bexley,_the_Charter_Oak_-_geograph.org.uk_-_972257.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 640,
+      "height": 480,
+      "taken_month": 9
+    },
+    "story": "On 30 September 1937 Bexley became a borough under this oak. Lord Cornwallis presented the charter beneath its branches in Danson Park, hence the name. The borough's coat of arms carries an oak too.\n\nEighty years later it needed help. By 2017 the tree was visibly deteriorating, and it was given a soil treatment, decompacting the ground around its roots with a geo-injector, which by one account extended its life. Today it stands inside a fence that keeps people off the root zone, and it is seen from outside that fence.\n\nThe fence has a side effect. When a Kent heritage tree survey came through in 2015, nobody could get close enough to measure the girth, so there is no published figure. The age is loose as well. The 2010 Time Out guide to the Great Trees of London says well over 200 years; a 2024 history piece says around 200. Two centuries or a little more is the honest reading.\n\nIt was one of the original 41 Great Trees of London. OpenStreetMap mappers were still updating its record in April 2025, which is the most recent sign we have that it stands. If you visit, tell us how it looks.\n\nDanson Park is free and open at all times, about 20 to 25 minutes' walk from Bexleyheath or Welling station.",
+    "how_to_recognise": "You can recognise it by its fence, the big oak standing in its own enclosure out in the open parkland. It stands in Danson Park, Bexleyheath."
+  },
+  {
+    "id": "lon_048",
+    "name": "The Ashcombe Sweet Chestnut",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "around 300 to 400 years",
+    "age_min": 300,
+    "age_max": 450,
+    "location": {
+      "address": "Carshalton Park, Ashcombe Road side, Carshalton SM5",
+      "latitude": 51.3601,
+      "longitude": -0.162614,
+      "neighbourhood": "Carshalton"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/335884383",
+      "https://www.gigl.org.uk/?p=59063",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free. Carshalton Park is open public parkland.",
+    "transport": "Carshalton station (Southern), about 10 minutes' walk; Carshalton Beeches about 15 minutes.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "recognise": "An old sweet chestnut at the Ashcombe Road edge of Carshalton Park, among the park's group of veteran chestnuts.",
+    "pin_source": "OSM natural=tree node 335884383 named 'Ashcombe Sweet Chestnut' (status 'Great Trees of London', start_date 'before 1700', source treesforcities.org), edited 2024-05-14",
+    "verify_notes": "One of the original 41 Great Trees of London (Trees for Cities list). OSM node tagged by a mapper from Trees for Cities: start_date 'before 1700'. GiGL Local Wildlife Site record for Carshalton Park: 'a collection of veteran sweet chestnut' of some significance within the borough. Wikipedia list gives the Ashcombe chestnut at 51.359978,-0.162281 (about 30 m from the OSM node) and a separate Great Tree 'Carshalton Park Sweet Chestnut' at 51.360458,-0.163164, about 60 m from it: Time Out 2010 says that one is around 400 years old and survived arson attempts, which is why a wooden door blocks the hollow. These are two neighbouring Great Trees; folded here as one visit, the second not separately pinned (OSM has no node for it). The door-in-the-hollow detail belongs to the Carshalton Park tree per Wikipedia; do not attribute it to the Ashcombe tree. No girth or height on any page. Alive: OSM edit May 2024 only; lifecheck NONE; flagged. Photo candidate: Wikipedia list files 'Ashcombe Sweet Chestnut (3).jpg' and 'Carshalton Sweet Chestnut (15).jpg'.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ashcombe_Sweet_Chestnut_(3).jpg",
+        "note": "Great Trees list image, licence not checked"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Carshalton_Sweet_Chestnut_(15).jpg",
+        "note": "image of the neighbouring Carshalton Park chestnut"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Ashcombe_Sweet_Chestnut_%283%29.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Ashcombe_Sweet_Chestnut_(3).jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 3024,
+      "height": 4032,
+      "taken_month": 6
+    },
+    "story": "When a mapper from Trees for Cities put this chestnut on OpenStreetMap, the start date they gave it was simply 'before 1700'. It was one of the original 41 Great Trees of London, the list that charity drew up of the capital's remarkable trees, and it stands at the Ashcombe Road edge of Carshalton Park.\n\nIt is not alone. Carshalton Park holds a collection of veteran sweet chestnuts that Greenspace Information for Greater London counts as significant for the whole borough, and about 60 metres from this one stands a second Great Tree, the Carshalton Park Sweet Chestnut. That neighbour is the one with the hollow. Time Out's 2010 guide says it is around 400 years old and has survived arson attempts, and a wooden door now closes the hollow. Do not go looking for the door on the Ashcombe tree; it belongs to the other one, and our pin does not mark it separately. Treat the pair as one visit.\n\nNobody has published a girth or a height for the Ashcombe chestnut, and the 'before 1700' date comes from that single map record, so read the age as three or four centuries and loosely held. If you have measured either tree, tell us.\n\nThe most recent record we have of it standing is an OpenStreetMap edit from May 2024. If you visit, tell us how both trees look.\n\nCarshalton Park is free and open, about 10 minutes' walk from Carshalton station.",
+    "how_to_recognise": "You can recognise it as the old sweet chestnut at the Ashcombe Road edge of the park, one of its group of veteran chestnuts. It stands about 60 metres from the second Great Tree, the chestnut with a door in its hollow.",
+    "best_time": {
+      "months": [
+        10
+      ],
+      "kind": "fruit",
+      "label": "October, when the spiny chestnut cases drop under the park's veteran chestnuts"
+    }
+  },
+  {
+    "id": "lon_049",
+    "name": "The Downe Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "St Mary the Virgin churchyard, High Elms Road, Downe, Orpington BR6",
+      "latitude": 51.3357686,
+      "longitude": 0.0544106,
+      "neighbourhood": "Downe"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/12122917068",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free. Churchyard open to visitors; Down House (English Heritage, paid entry) is a short walk away.",
+    "transport": "No station in the village; nearest rail is Orpington or Bromley South, then a local bus to Downe (route not source-checked).",
+    "location_precision": "confirmed",
+    "location_site": {
+      "name": "St Mary's churchyard, Downe",
+      "radius_m": 30
+    },
+    "curation_status": "flagged",
+    "recognise": "The ancient yew south of the church porch, in the churchyard of St Mary's, Downe.",
+    "pin_source": "OSM natural=tree node 12122917068 named 'The Downe Yew' (natural_monument, 'One of the Great Trees of London')",
+    "verify_notes": "One of the original 41 Great Trees of London. Kent Archaeological Society church note (fetched in the 2026-10-19 pass) records 'one very ancient Yew tree to the south of the church porch', called 'a very fine yew' by Glynne in 1832. No girth or age on any fetched page; popular claims of a 9 m girth and 1,000+ years were seen only in search summaries and are NOT used. Age left empty, page asks the reader. Alive: lifecheck RECENT iNaturalist 2025-10-22 (https://www.inaturalist.org/observations/322386843, within radius; may be this tree), OSM node. Downe is in the London Borough of Bromley, so inside Greater London. Photo candidates on Commons category 'Downe Yew': 'Downe Yew 1.jpg' and 'Downe Yew 2.jpg' by Mx. Granger, CC0 (licence seen in Commons metadata via API); 'Detail on the Downe Yew (01-05).jpg' by Doyle of London, CC BY-SA 4.0.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Downe_Yew_1.jpg",
+        "licence": "CC0",
+        "author": "Mx. Granger"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Downe_Yew_2.jpg",
+        "licence": "CC0",
+        "author": "Mx. Granger"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Downe_Yew_1.jpg",
+      "license": "CC0",
+      "attribution": "Mx. Granger, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Downe_Yew_1.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 4096,
+      "height": 3072,
+      "taken_month": 1
+    },
+    "story": "In 1832 a visitor named Glynne, writing up St Mary's church in Downe, called its yew 'a very fine yew'. A church note published by the Kent Archaeological Society goes further and records 'one very ancient Yew tree to the south of the church porch'. It is still there, in the churchyard of the village where Charles Darwin made his home at Down House.\n\nWhat neither note gives is a number. Nobody has published a measured girth or a dated age for this tree. Bigger claims for both circulate online, but none we have found comes with a source we trust, so we leave the age blank rather than borrow one. If you know of a measurement, or you have one, tell us.\n\nWhat we can say is that it was one of the original 41 Great Trees of London, the list Trees for Cities drew up of the capital's remarkable trees, and that it appears to be alive. A naturalist's record from October 2025, made close by, may well be this tree. Downe looks like a Kent village and feels a long way from London, but it sits inside the London Borough of Bromley, which is how a country churchyard yew ends up on a list of the city's trees.\n\nThe churchyard is free and open to visitors. There is no station in the village. Take a train to Orpington or Bromley South and a local bus from there, and combine it with Down House, a short walk away.",
+    "how_to_recognise": "You can recognise it as the ancient yew just south of the church porch. It stands in the churchyard of St Mary the Virgin, Downe."
   }
 ]

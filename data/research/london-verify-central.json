@@ -1,0 +1,262 @@
+[
+  {
+    "id": "lon_086",
+    "name": "The Windrush Square Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Windrush Square, Effra Road, Brixton, London SW2 1JX",
+      "latitude": 51.461021,
+      "longitude": -0.115355,
+      "neighbourhood": "Brixton"
+    },
+    "verified_sources": [
+      "https://www.lambeth.gov.uk/parks/windrush-square",
+      "https://www.brixtonbuzz.com/2019/09/the-magnificent-plane-tree-in-brixtons-tate-library-gardens-windrush-square/",
+      "https://thestreettree.substack.com/p/162-windrush-plane",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free, open public square, open 24 hours (Lambeth Council)",
+    "transport": "Brixton station (Victoria line, National Rail), about 5 minutes' walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "recognise": "The one huge plane standing alone at the heart of the paved square, between the Tate Library and the Ritzy cinema.",
+    "pin_source": "OSM natural=tree node 703286419 (genus Platanus, London plane), 4 m from the Great Trees of London list coordinate 51.461049,-0.115331; the only species-tagged tree within 45 m and the lone centrepiece of the square",
+    "verify_notes": "One of the Great Trees of London (added in the 2008 tranche, named in a public poll of London's 20 favourite trees, Nov 2008, per Brixton Buzz). Lambeth Council (owner) calls it 'a large mature London Plane tree at its heart'. Brixton Buzz: in the centre of Brixton for 'around a hundred years' (no source given); survived the 1940 bomb strike that wiped out Brixton Theatre; the plot was Brixton Oval, garden laid out 1905, library built 1893, redesigned 1965-66 with the plane preserved as a central feature, paved over again in the mid-late 2000s redevelopment (Windrush Square). Street Tree substack 31 Aug 2025: 'Victorian London plane', 'one of the finest planes in town' (paywalled, no figures). Alive: Substack post Aug 2025, Lambeth page current. Age is vague-sourced: 'around a hundred years' vs Victorian; kept broad, no girth found. Wikipedia list says its entry is from Paul Wood's Great Trees of London Map (2020). Lifecheck NONE (no iNat), alive from the Aug 2025 post. Photo candidates: Wikipedia list uses Commons 'Tate Plane, Brixton.jpg' (licence not yet checked).",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Tate_Plane,_Brixton.jpg",
+        "note": "named for the tree on the Great Trees list; licence/author not checked"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Tate_Plane%2C_Brixton.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Paulitzer, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Tate_Plane,_Brixton.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 1080,
+      "height": 771,
+      "taken_month": 3
+    }
+  },
+  {
+    "id": "lon_087",
+    "name": "The Lewisham Elm",
+    "species": "European White Elm (Ulmus laevis)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Ladywell Fields, riverside path, middle field, Lewisham SE13",
+      "latitude": 51.450645,
+      "longitude": -0.024501,
+      "neighbourhood": "Ladywell"
+    },
+    "verified_sources": [
+      "https://www.ladywell-live.org/2021/03/04/famous-dutch-elm-lewishams-great-survivor-to-be-joined-by-two-saplings-grown-from-its-seeds-by-local-resident/",
+      "https://ladywellfields.blogspot.com/2016/05/ladywell-fields-tree-walk-part-3.html",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free, public park, open at all times",
+    "transport": "Ladywell station (Southeastern), about 5 minutes' walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "On the riverside path in the middle field, just after the spiral bridge from the northern field, near the dawn redwood; the only tree in the park with its own sign.",
+    "verify_notes": "One of the original 41 Great Trees of London. Thought to be the only remaining specimen in Britain of the cultivar its plaque names, and one of very few mature elms left in London after Dutch elm disease (about 20 million English elms killed, Ladywell Live 4 Mar 2021). Species disputed: the council sign says Ulmus x hollandica 'Klemmer' (Flanders elm); Wikipedia's Great Trees list, citing the Tree Register, gives European white elm (Ulmus laevis), and the Ladywell Fields blog notes some experts think so too. Species written as European White Elm, flag. Ladywell Live: the mature tree could live another 200 years; two saplings grown from its seed (collected May 2018) were agreed for planting in the park. No girth, height or age on any fetched page. Pin from the Great Trees list coordinate 51.450645,-0.024501 (no OSM tree node there), approximate. Alive: iNaturalist observation 2026-05-29 within lifecheck radius (https://www.inaturalist.org/observations/366307628), Ladywell Live 2021. Two sources are local community sites, hence flagged. Photo candidate: Wikipedia list file 'Lewisham_Dutch_Elm.jpg'.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Lewisham_Dutch_Elm.jpg",
+        "note": "the Great Trees list image; licence not checked"
+      }
+    ]
+  },
+  {
+    "id": "lon_088",
+    "name": "The Bromley Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 400 to 500 years",
+    "age_min": 400,
+    "age_max": 550,
+    "location": {
+      "address": "beside Kentish Way, next to The Glades shopping centre, Bromley BR1",
+      "latitude": 51.403414,
+      "longitude": 0.018598,
+      "neighbourhood": "Bromley"
+    },
+    "verified_sources": [
+      "https://www.bromleycivicsociety.org.uk/?p=2766",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free, stands in public space beside Kentish Way and The Glades; seen from the pavement",
+    "transport": "Bromley North station (Southeastern), about 8 minutes' walk; Bromley South about 12",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "recognise": "A lone veteran oak on the grass beside the Kentish Way road, on the edge of The Glades shopping centre grounds.",
+    "verify_notes": "One of the original 41 Great Trees of London. Bromley Civic Society (10 Mar 2020): veteran Quercus robur, 'over 500 years old', reprieved when The Glades was built (1980s, centre opened 1991), originally on the corner of the grounds of Bromley Lodge and Love Lane, now stands at the side of Kentish Way. Age conflict: Time Out 2010 (via Wikipedia list) says about 400 years; Civic Society says over 500. Both repeated vaguely, neither measured. No girth or height found. Pin from the Great Trees list coordinate 51.403414,0.018598; OSM has natural=tree nodes within 3 to 30 m but none named, so approximate. Alive: lifecheck only OLD (2011 geograph); no 2024/25 report seen, Civic Society page 2020 and OSM tree nodes added recently around it; flagged for thin recent confirmation. Photo candidate: Wikipedia list file 'Bromley Oak (3).jpg'.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Bromley_Oak_(3).jpg",
+        "note": "Great Trees list image, licence not checked"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Bromley_Oak_%283%29.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Bromley_Oak_(3).jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 3024,
+      "height": 4032,
+      "taken_month": 5
+    }
+  },
+  {
+    "id": "lon_089",
+    "name": "The Bexley Charter Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 200 years or more",
+    "age_min": 200,
+    "age_max": 300,
+    "location": {
+      "address": "Danson Park, Danson Road, Bexleyheath DA6",
+      "latitude": 51.454882,
+      "longitude": 0.117988,
+      "neighbourhood": "Danson Park, Welling"
+    },
+    "verified_sources": [
+      "https://exploring-london.com/2024/05/15/10-significant-and-historic-london-trees3-charter-oak-of-bexley",
+      "https://en.wikipedia.org/wiki/Danson_Park",
+      "https://www.openstreetmap.org/node/1417041891",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free, Danson Park is open at all times; the tree is fenced to protect its roots, so it is seen from the fence",
+    "transport": "Bexleyheath station (Southeastern) or Welling station, each about 20 to 25 minutes' walk to the park; buses stop at the park gates",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "recognise": "The big fenced oak in the open parkland; its enclosure keeps visitors back from the roots.",
+    "pin_source": "OSM natural=tree node 1417041891, named 'Bexley Charter Oak', denotation natural_monument, last edited 2025-04-18",
+    "verify_notes": "One of the original 41 Great Trees of London. Lord Cornwallis presented the charter making Bexley a municipal borough beneath this oak on 30 September 1937 (Wikipedia Danson Park; Exploring London); the oak appears in Bexley's coat of arms. Age: Time Out 2010 'well over 200 years', Exploring London 'around 200 years' (earlier Kent Heritage Trees survey 2015 could not measure girth because fenced; so none). Exploring London 2024: 'visibly deteriorating' in 2017, geo-injector soil decompaction treatment that extended its life. Fenced (one source says enclosed to protect its root system). OSM node (wikidata Q133894730) updated April 2025 shows it standing. Lifecheck NONE. Flagged: alive evidence is the OSM edit of April 2025 and the 2024 article, not a dated photo. Photo candidate: geograph 972257 'Bexley, the Charter Oak' (the Wikipedia list image).",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Bexley,_the_Charter_Oak_-_geograph.org.uk_-_972257.jpg",
+        "note": "title names the tree; Geograph, licence CC BY-SA 2.0 presumably, author not read"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bexley%2C_the_Charter_Oak_-_geograph.org.uk_-_972257.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Chris Downer, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Bexley,_the_Charter_Oak_-_geograph.org.uk_-_972257.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 640,
+      "height": 480,
+      "taken_month": 9
+    }
+  },
+  {
+    "id": "lon_090",
+    "name": "The Ashcombe Sweet Chestnut",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "around 300 to 400 years",
+    "age_min": 300,
+    "age_max": 450,
+    "location": {
+      "address": "Carshalton Park, Ashcombe Road side, Carshalton SM5",
+      "latitude": 51.3601,
+      "longitude": -0.162614,
+      "neighbourhood": "Carshalton"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/335884383",
+      "https://www.gigl.org.uk/?p=59063",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free, Carshalton Park is open public parkland (GiGL: free public access to all or most of the site)",
+    "transport": "Carshalton station (Southern), about 10 minutes' walk; Carshalton Beeches about 15",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "recognise": "An old sweet chestnut at the Ashcombe Road edge of Carshalton Park, among the park's group of veteran chestnuts.",
+    "pin_source": "OSM natural=tree node 335884383 named 'Ashcombe Sweet Chestnut' (status 'Great Trees of London', start_date 'before 1700', source treesforcities.org), edited 2024-05-14",
+    "verify_notes": "One of the original 41 Great Trees of London (Trees for Cities list). OSM node tagged by a mapper from Trees for Cities: start_date 'before 1700'. GiGL Local Wildlife Site record for Carshalton Park: 'a collection of veteran sweet chestnut' of some significance within the borough. Wikipedia list gives the Ashcombe chestnut at 51.359978,-0.162281 (about 30 m from the OSM node) and a separate Great Tree 'Carshalton Park Sweet Chestnut' at 51.360458,-0.163164, about 60 m from it: Time Out 2010 says that one is around 400 years old and survived arson attempts, which is why a wooden door blocks the hollow. These are two neighbouring Great Trees; folded here as one visit, the second not separately pinned (OSM has no node for it). The door-in-the-hollow detail belongs to the Carshalton Park tree per Wikipedia; do not attribute it to the Ashcombe tree. No girth or height on any page. Alive: OSM edit May 2024 only; lifecheck NONE; flagged. Photo candidate: Wikipedia list files 'Ashcombe Sweet Chestnut (3).jpg' and 'Carshalton Sweet Chestnut (15).jpg'.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ashcombe_Sweet_Chestnut_(3).jpg",
+        "note": "Great Trees list image, licence not checked"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Carshalton_Sweet_Chestnut_(15).jpg",
+        "note": "image of the neighbouring Carshalton Park chestnut"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Ashcombe_Sweet_Chestnut_%283%29.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Ashcombe_Sweet_Chestnut_(3).jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 3024,
+      "height": 4032,
+      "taken_month": 6
+    }
+  },
+  {
+    "id": "lon_091",
+    "name": "The Downe Yew",
+    "species": "English Yew (Taxus baccata)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "St Mary the Virgin churchyard, High Elms Road, Downe, Orpington BR6",
+      "latitude": 51.3357686,
+      "longitude": 0.0544106,
+      "neighbourhood": "Downe"
+    },
+    "verified_sources": [
+      "https://www.openstreetmap.org/node/12122917068",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free, churchyard open to visitors; the village is a short walk from Down House (Darwin's home, English Heritage, paid)",
+    "transport": "No station in the village: nearest rail is Orpington or Bromley South, then a local bus to Downe (route not verified)",
+    "location_precision": "confirmed",
+    "location_site": {
+      "name": "St Mary's churchyard, Downe",
+      "radius_m": 30
+    },
+    "curation_status": "flagged",
+    "recognise": "The ancient yew south of the church porch, in the churchyard of St Mary's, Downe.",
+    "pin_source": "OSM natural=tree node 12122917068 named 'The Downe Yew' (natural_monument, 'One of the Great Trees of London')",
+    "verify_notes": "One of the original 41 Great Trees of London. Kent Archaeological Society church note (fetched in the 2026-10-19 pass) records 'one very ancient Yew tree to the south of the church porch', called 'a very fine yew' by Glynne in 1832. No girth or age on any fetched page; popular claims of a 9 m girth and 1,000+ years were seen only in search summaries and are NOT used. Age left empty, page asks the reader. Alive: lifecheck RECENT iNaturalist 2025-10-22 (https://www.inaturalist.org/observations/322386843, within radius; may be this tree), OSM node. Downe is in the London Borough of Bromley, so inside Greater London. Photo candidates on Commons category 'Downe Yew': 'Downe Yew 1.jpg' and 'Downe Yew 2.jpg' by Mx. Granger, CC0 (licence seen in Commons metadata via API); 'Detail on the Downe Yew (01-05).jpg' by Doyle of London, CC BY-SA 4.0.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Downe_Yew_1.jpg",
+        "licence": "CC0",
+        "author": "Mx. Granger"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Downe_Yew_2.jpg",
+        "licence": "CC0",
+        "author": "Mx. Granger"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Downe_Yew_1.jpg",
+      "license": "CC0",
+      "attribution": "Mx. Granger, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Downe_Yew_1.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 4096,
+      "height": 3072,
+      "taken_month": 1
+    }
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "id": "lon_034",
+    "name": "The Richmond Riverside Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "height_m": 40,
+    "location": {
+      "address": "Thames towpath beside Richmond Bridge, Richmond TW9",
+      "latitude": 51.456511,
+      "longitude": -0.305169,
+      "neighbourhood": "Richmond"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_plane_tree_2026-09-20.jpg",
+      "https://www.geograph.org.uk/photo/2136891"
+    ],
+    "access": "Free, public riverside towpath and Terrace Gardens edge in Richmond; open at all times",
+    "transport": "Richmond station (District line, Overground, National Rail), about 10 minutes walk down to the river by Richmond Bridge",
+    "location_precision": "approximate",
+    "recognise": "Stands on the riverside path just upstream of Richmond Bridge, by the landing stages and the Thames visitor centre; it overtops every other tree on the front, a very tall straight London plane with a pale mottled trunk.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_plane_tree_2026-09-20.jpg",
+        "licence": "CC BY 4.0",
+        "author": "Matt Brown",
+        "note": "dated 2026-09-20, geotag 51.456511,-0.305169, file named after the tree"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_Plane_-_geograph.org.uk_-_2136891.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Eirian Evans",
+        "note": "2010, title names the tree"
+      }
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "On the Great Trees of London list (Trees for Cities, 1987 storm legacy, extended 2008; Wikipedia list gives it as 'over 40 metres in height, one of the tallest London planes in the UK', citing the Great Trees of London Map by Paul Wood). Single naming source for the height, not independently measured, so height_m is 'over 40' from that list only. Alive: Commons photo of the plane dated 2026-09-20 geotagged at the tree. Pin: Wikipedia coordinate 51.456465,-0.304728; photo geotag 51.456511,-0.305169 (camera position, 30 m apart) so approximate. Earlier lead (2026-10-14) was held for no girth; no longer a gate. Species per list: 'London plane'. Age not documented.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Richmond_Riverside_plane_tree_2026-09-20.jpg",
+      "license": "CC BY 4.0",
+      "attribution": "Matt Brown, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Richmond_Riverside_plane_tree_2026-09-20.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 4032,
+      "height": 3024,
+      "taken_month": 9
+    }
+  },
+  {
+    "id": "lon_035",
+    "name": "The Harlington Yew",
+    "species": "English Yew (Taxus baccata)",
+    "age_estimate": "at least 1,000 years",
+    "age_min": 900,
+    "age_max": 1500,
+    "girth_cm": 587,
+    "location": {
+      "address": "St Peter and St Paul churchyard, St Peter's Way, Harlington, Hayes UB3",
+      "latitude": 51.49235,
+      "longitude": -0.43425,
+      "neighbourhood": "Harlington"
+    },
+    "verified_sources": [
+      "https://www.stpeterandstpaul-harlington.org.uk/church-history/the-yew-tree",
+      "https://www.ancient-yew.org/yew_tree_database/harlington/",
+      "https://www.britishmuseum.org/collection/object/P_Y-5-62"
+    ],
+    "access": "Free, open churchyard; the yew stands opposite the south door of the church",
+    "transport": "Hayes & Harlington station (Elizabeth line / National Rail), about 1.5 km; buses not checked",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Peter and St Paul churchyard, Harlington",
+      "radius_m": 40
+    },
+    "recognise": "The ancient yew standing opposite the south door of the church, the one great tree of the churchyard; it was clipped into topiary shapes until about 1825.",
+    "curation_status": "flagged",
+    "verify_notes": "Church's own page: 'thought to be at least 1000 years old', stands opposite the south door, may mark the spot where Christianity was first preached; famed 18th to early 19th century for topiary, annual clipping a Whitsun festivity until about 1825. Ancient Yew Group database (record Harlington, site visited 1999, file updated 2025): ancient, girth 587 cm at the ground (their field also reads 494 for the tree id), grid ref TQ08807822, category 'Ancient 5m-7m'. British Museum print record calls it over 900 years old. A 1914 notice said probably more than 1000 years old. 1958 report said half the old yew fell in a gale (per search summary, not verified on a fetched page, so not for the page). The AYG notes the churchyard might be lost to Heathrow expansion plans. Age is the church's claim; age range 900 to 1500 is generous; leave as 'at least 1,000 years' with attribution. Alive: AYG 2025 site file exists; no dated photo checked, so flagged. Pin: church 51.4924,-0.4342 (OSM); churchyard small, tree location only given as 'opposite the south door'."
+  },
+  {
+    "id": "lon_036",
+    "name": "The Chiswick House Cedars",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 280,
+    "age_max": 310,
+    "location": {
+      "address": "Chiswick House Gardens, Burlington Lane, Chiswick W4 2RP",
+      "latitude": 51.48428,
+      "longitude": -0.25961,
+      "neighbourhood": "Chiswick"
+    },
+    "verified_sources": [
+      "https://chiswickhouseandgardens.org.uk/our-story/design-nature/cedars-of-lebanon/",
+      "https://en.wikipedia.org/wiki/The_Beatles%27_cedar_tree",
+      "https://www.chiswickw4.com/info/conchg159.htm",
+      "https://www.inaturalist.org/observations/135647107"
+    ],
+    "official_register": {
+      "name": "Chiswick House and Gardens Trust: Cedars of Lebanon",
+      "url": "https://chiswickhouseandgardens.org.uk/our-story/design-nature/cedars-of-lebanon/"
+    },
+    "access": "Gardens open daily to visitors (Chiswick House & Gardens Trust gives dawn-til-dusk access; check their site for hours); the ground beneath the Beatles cedar is roped off, the tree cannot be climbed",
+    "transport": "Chiswick station (South Western Railway) about 10 minutes walk; Turnham Green (District) about 20 minutes",
+    "location_precision": "approximate",
+    "recognise": "The great cedars frame the house's garden front; the one filmed by the Beatles in 1966 has a low, huge limb, and stands diagonally across from the statue garden where the 'Paperback Writer' scenes were shot.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Cedar_tree,_Chiswick_House_Gardens_-_geograph.org.uk_-_2902706.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Stefan Czap",
+        "note": "title Cedar tree, Chiswick House Gardens; geotag 51.48229,-0.26073 is a camera position"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Chiswick_House_103_cedars.JPG",
+        "licence": "CC BY-SA 3.0",
+        "author": "Patche99z",
+        "note": "two large cedars from the rear of the house"
+      }
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Owner (Chiswick House and Gardens Trust): oldest trees date from the late 1720s when William Kent first worked on the garden; several came directly from Lebanon; avenue of cedars frames the house; prone to drop branches without warning, do not walk under or climb. Planting dates conflict across sources (1720, 1726 from Sutton Court, 1741, 1745), so age is broad. The Beatles' cedar was one of ten trees shortlisted for Woodland Trust Tree of the Year 2025 (BBC 2025-07-11); believed planted in the 1720s per Woodland Trust. Beatles filmed 'Rain' and 'Paperback Writer' promo films there on 20 May 1966 (Bob Whitaker cover photo for the Nowhere Man EP). Result of the 2025 award not established. Pin: no tree-level coordinate found (Friends of Chiswick House tree trail is Cloudflare-blocked from here). Chosen pin is an iNaturalist observation of Cedrus libani (2022-09-19, accuracy 8 m, https://www.inaturalist.org/observations/135647107) in the gardens; other Cedrus libani observations lie 51.4830,-0.2575 and 51.4851,-0.2627, so the cedars are spread across the grounds and the exact Beatles tree is not placed. Approximate. Walk-through garden, so no location_site. Several cedars, folded into one entry as one destination. Alive: iNaturalist Cedrus libani observations in 2025.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chiswick_House_103_cedars.JPG",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Patche99z, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Chiswick_House_103_cedars.JPG",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 3648,
+      "height": 1870,
+      "taken_month": 4
+    }
+  },
+  {
+    "id": "lon_037",
+    "name": "The Maids of Honour Stone Pine",
+    "species": "Stone Pine (Pinus pinea)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Richmond Green, Richmond TW9",
+      "latitude": 51.46163,
+      "longitude": -0.30836,
+      "neighbourhood": "Richmond"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://www.inaturalist.org/observations/321717149",
+      "https://www.inaturalist.org/observations/259534301"
+    ],
+    "access": "Free, open public green (Richmond Green), open at all times",
+    "transport": "Richmond station (District line, Overground, National Rail), about 5 minutes walk",
+    "location_precision": "approximate",
+    "recognise": "A lone umbrella-shaped stone pine, the only one of its kind among the plane, lime and horse chestnut on the green, on the Maids of Honour Row side near the Old Palace gatehouse.",
+    "curation_status": "flagged",
+    "verify_notes": "On the Great Trees of London list (Trees for Cities); Wikipedia's list gives coordinate 51.461379,-0.308673 and notes the tree lost a major limb in August 2026 (cited to an Instagram post; not seen directly, so state only 'lost a limb in 2026' with care or leave out). Alive: two iNaturalist Pinus pinea observations on the green, 2025-10-18 (CC BY) at 51.46160,-0.30848 and 2025-01-25 (CC0) at 51.46167,-0.30824; lifecheck RECENT. Pin from the two observer fixes, about 30 m from the Wikipedia point, so approximate. Age and girth not found in any fetched source; do not invent. Name from the nearby Maids of Honour Row (not verified why the pine carries it)."
+  },
+  {
+    "id": "lon_038",
+    "name": "The Syon Park Mulberries",
+    "species": "Black Mulberry (Morus nigra)",
+    "age_estimate": "several hundred years",
+    "age_min": 300,
+    "age_max": 480,
+    "location": {
+      "address": "Syon Park, Brentford TW8 8JF",
+      "latitude": 51.4772,
+      "longitude": -0.3074,
+      "neighbourhood": "Brentford / Isleworth"
+    },
+    "verified_sources": [
+      "https://www.moruslondinium.org/map/syon-park",
+      "https://www.treeregister.org/files/resources/england-london-2017.pdf"
+    ],
+    "access": "Syon Park grounds and gardens are a paid, ticketed entry; the mulberry orchard lies south-east of the house and a separate old mulberry stands in a fenced enclosure in the water meadow towards the river; check syonpark.co.uk for days",
+    "transport": "Syon Lane station (National Rail), about 15 to 20 minutes walk to the park gate",
+    "location_precision": "approximate",
+    "recognise": "Ancient, multi-stemmed mulberries in an orchard south-east of the house; the trunks have layered into rings with the central bole almost gone. One solitary old mulberry stands alone in an enclosure in the water meadow that the house's long gallery looks over, leaning and propped.",
+    "curation_status": "flagged",
+    "verify_notes": "Morus Londinium (Tree Register / London mulberry survey) site record for Syon Park, grid TQ 17646 76713 (converted to 51.4772,-0.3074; site-level reference, not a tree), 6 mulberries, tallest 8 m: several ancient multi-stemmed layering mulberries in an orchard SE of the house; a solitary ancient tree in an adjacent field towards the river, probably once part of the orchard. Percy family archives record purchase of 10 mulberries in March 1604 and 6 more in 1645 and 1646; the survey says if all survived up to 10 could be over 416 years old; it also says there is NO evidence for mulberries at Syon in 1548, so the popular claim that William Turner planted it in 1548 (Spitalfields Life blog) is a legend, not a source. 19th-century writers refer to a very old tree with branches touching the ground. Tree Register 2017 visit notes mention the remains and regrowth of an ancient black mulberry possibly the oldest surviving tree on the estate (search summary of the pdf, not read on the page, so treat as a pointer). Age is a derived, broad estimate from the archive purchase dates; 'Heritage Notable' site class. Alive: Morus Londinium record, no dated photo of the individual trunk checked. Tree-level pin not found. Replaces the Kew/Syon mulberry lead of 2026-10-14 for Syon only."
+  },
+  {
+    "id": "lon_039",
+    "name": "The Harefield Yew",
+    "species": "English Yew (Taxus baccata)",
+    "age_estimate": "over 500 years",
+    "age_min": 500,
+    "age_max": 1000,
+    "location": {
+      "address": "St Mary's churchyard, Church Hill, Harefield UB9",
+      "latitude": 51.5952,
+      "longitude": -0.4806,
+      "neighbourhood": "Harefield"
+    },
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_tree_database/harefield/",
+      "https://www.ancient-yew.org/London-diocese",
+      "https://www.geograph.org.uk/photo/3824607"
+    ],
+    "access": "Free, open churchyard (public per the Ancient Yew Group); church is south of the village",
+    "transport": "Harefield has no station; nearest rail is Uxbridge (Metropolitan/Piccadilly) then a local bus (route not checked)",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Mary's churchyard, Harefield",
+      "radius_m": 40
+    },
+    "recognise": "The Ancient Yew Group records a single ancient yew in St Mary's churchyard; it is the old yew of the churchyard, not the younger yews around it.",
+    "photo_candidates": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Veteran_yew_tree,_Harefield_churchyard_-_geograph.org.uk_-_3824607.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Stefan Czapski",
+        "note": "2014-01-22, geotag 51.59514,-0.48050, title 'Veteran yew tree, Harefield churchyard'"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Yew_tree,_Harefield_churchyard_-_geograph.org.uk_-_3823971.jpg",
+        "licence": "CC BY-SA 2.0",
+        "author": "Stefan Czapski",
+        "note": "2014-01-22, geotag 51.59505,-0.48093"
+      }
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Ancient Yew Group database, Harefield St Mary, tree 3054, visited 20 Aug 2009 (site file Harefield-2020), site type churchyard, public, parochial church council; recorded earlier as 'Ancient 7m+' with no girth data; the 2022 diocese list re-classes it 'ancient 5/7m' (girth 5 to 7 m, likely above 500 years by the AYG rule). No measured girth in the fetched pages. AYG note: the church had a priest at Domesday, so presumably a church then. Single society source plus Geograph photographs, so flagged. Alive: Geograph photos dated 2014-01-22 only; lifecheck RECENT result was a nearby iNaturalist plant record, not this tree. Pin is churchyard-level (Geograph camera 51.59514,-0.48050; AYG grid TQ05338958).",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Veteran_yew_tree%2C_Harefield_churchyard_-_geograph.org.uk_-_3824607.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Stefan Czapski, via Wikimedia Commons",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Veteran_yew_tree,_Harefield_churchyard_-_geograph.org.uk_-_3824607.jpg",
+      "status": "approved",
+      "approved_by": "viewing pass",
+      "approved_on": "2026-11-03",
+      "width": 768,
+      "height": 1024,
+      "taken_month": 1
+    }
+  },
+  {
+    "id": "lon_040",
+    "name": "The Ruislip St Martin Yew",
+    "species": "English Yew (Taxus baccata)",
+    "age_estimate": "over 400 years",
+    "age_min": 400,
+    "age_max": 800,
+    "girth_cm": 490,
+    "location": {
+      "address": "St Martin's churchyard, High Street, Ruislip HA4",
+      "latitude": 51.57662,
+      "longitude": -0.42616,
+      "neighbourhood": "Ruislip"
+    },
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_tree_database/ruislip",
+      "https://www.ancient-yew.org/London-diocese",
+      "https://londongardenstrust.org/conservation/inventory/site-record/?ID=HIL047"
+    ],
+    "access": "Free, open churchyard (public per the Ancient Yew Group)",
+    "transport": "Ruislip station (Metropolitan/Piccadilly line), roughly 10 minutes walk (not measured)",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "St Martin's churchyard, Ruislip",
+      "radius_m": 40
+    },
+    "recognise": "The ancient yew grows to the south-east of the church, in the churchyard.",
+    "curation_status": "flagged",
+    "verify_notes": "Ancient Yew Group database, Ruislip St Martin of Tours, tree 4295, female, girth 490 cm at 50 cm height, class Ancient 4/5m (AYG rule: likely above 400 years); site file Ruislip-2019; AYG notes there has been a church on the site since Norman times and that the yew grows SE of the church. London Gardens Trust inventory has a site record for the churchyard (HIL047), not read for tree detail. Grid TQ09158759 converts to 51.57662,-0.42616. Single society source, flagged. Alive: AYG 2019 site file; Geograph photo set 'Early morning in St Martin's Churchyard' (date not read) shows the churchyard, no photo identified as the yew. Not yet seen: whether the 490 cm figure is the trunk visitors will see."
+  }
+]

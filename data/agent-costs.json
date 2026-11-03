@@ -15539,6 +15539,22 @@
       "tokens": 137461,
       "trees": 3,
       "note": "Green-Wood's Celebrated Trees Walk (own visitor map) pinned by OSM nodes: Phoenix Ginkgo, Weeping Beech Tunnel; Queens Botanical's 1939 World's Fair cedars. Green-Wood's Tree Finder hangs under curl and the browser pane refused it (its tulip tree and champion hackberry need that); Moravian names no tree. The three stories written by the dispatcher (about 25k), no write pass. New York reaches 97 once built."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "verify",
+      "target": "london (west, north, central: three passes)",
+      "tokens": 568088,
+      "trees": 16,
+      "note": "west 7 (192,119): Riverside Plane, Harlington, Harefield, Ruislip yews, Chiswick cedars, Richmond Green stone pine, Syon mulberries. north 3 (193,419): Holloway plane, Grimston's Oak (OSM-confirmed pin), George Green chestnuts; Highgate cedar, Happy Man Tree, Whitewebbs oak are felled. central 6 (182,550): Great Trees of London finds pinned by named OSM nodes (Windrush plane, Charter Oak, Ashcombe chestnut, Downe Yew). Royal Parks, Kenwood and the cemeteries give no individually sourced, placeable trunk: the expensive empty angle."
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "write",
+      "target": "london (16 trees + place copy)",
+      "tokens": 171179,
+      "trees": 16,
+      "note": "None held; yews as European Yew to match the corpus. 8 of 16 carry a Commons photo approved after viewing. Total about 739k for 16, roughly 46k a tree. Held in data/research/london-verified.json for scripts/build_uk_london.py."
     }
   ]
 }
