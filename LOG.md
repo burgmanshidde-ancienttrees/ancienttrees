@@ -12,6 +12,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: Bristol 6 to 12 for the Bristol24/7 interview; Crann prints the article
+
+- **Bristol now holds a central walk** (about 1.9 km): Queen Square's planes, the Harbour Wall Fig by Bristol Bridge (bri_008, pin confirmed by iNaturalist GPS), the Royal Fort black mulberry (bri_010, confirmed), the Brandon Hill oak (bri_009, maybe inside the park keepers' compound, the page asks), the Victoria Square cedar (bri_007); plus the Mina Road Park plane (bri_011) and a Downs horse chestnut with bleeding canker that may be felled (bri_012, the page says so). Source: the Bristol Tree Forum survey (grid refs unreliable, so approximate). Intro, meta and FAQ lead with the walk. Why now: Ursula of Bristol24/7 answered the coverage mail wanting a call; Hidde answers her himself. 12 leads in data/leads/bristol.json; bristol247.com answers curl with 403; Arnos Vale's tree-trail PDF was unreadable, so Arnos Vale is untried.
+- **Crann accepted the guest article** for its Autumn/Winter edition; PDF proof to follow. Mikel Belasko (Pamplona) will collaborate; Hidde's own reply drafted in drafts/reply-mikel-belasko-2026-11-03.md.
+- **Breakage fixed:** preflight's typed-text check refused every push after 43bf226f9, reading the JSX ternary `) : taken ? (` in AmbassadorLine.astro as English text; the check now knows that shape.
+
 ## 2026-11-03 session: un albero al giorno's two trees on the Padua page
 
 What changed on the site (Padua, from the mail of 2026-11-03 by the author of the blog un albero al giorno, already a source on the sophoras page; he named two trees, sent two posts and wrote "Vi autorizzo a scaricare e pubblicare le foto che vi servono"):
