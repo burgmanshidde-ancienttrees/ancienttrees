@@ -2468,7 +2468,10 @@ def check_no_two_language_switch():
 
 TYPED_TEXT_IS_CODE = re.compile(
     r"^(const|let|var|return|if|for|while|switch|case|else|await|import)\b"
-    r"|;\s*$|=>\s*\(?\s*$")
+    r"|;\s*$|=>\s*\(?\s*$"
+    # A JSX ternary branch, ") : taken ? (": code between two elements, not
+    # words (AmbassadorLine.astro, 2026-11-03).
+    r"|^\)?\s*:?\s*!?[\w.]+\s*\?\s*\(\s*$")
 
 
 def language_aware_components():
@@ -2498,7 +2501,10 @@ def language_aware_components():
 
 TYPED_TEXT_IS_CODE = re.compile(
     r"^(const|let|var|return|if|for|while|switch|case|else|await|import)\b"
-    r"|;\s*$|=>\s*\(?\s*$")
+    r"|;\s*$|=>\s*\(?\s*$"
+    # A JSX ternary branch, ") : taken ? (": code between two elements, not
+    # words (AmbassadorLine.astro, 2026-11-03).
+    r"|^\)?\s*:?\s*!?[\w.]+\s*\?\s*\(\s*$")
 
 
 def visible_text(body):
