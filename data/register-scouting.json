@@ -60,7 +60,8 @@
    "place": "Belfast",
    "country": "United Kingdom",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#321). One search: no heritage or notable-tree register for Belfast or Northern Ireland (a Heritage Tree designation is only a proposed Private Member's Bill, Feb 2025). Belfast City Council lists 160+ TPOs, viewer only, no download found. Open Data NI Belfast Trees CSV (OGL, 2015) is a street-tree inventory, not remarkable trees, so no import. Next angle: Belfast Botanic Gardens, Stormont and Belvoir Park veteran trees by name, each lead-checked with a second source."
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#321). One search: no heritage or notable-tree register for Belfast or Northern Ireland (a Heritage Tree designation is only a proposed Private Member's Bill, Feb 2025). Belfast City Council lists 160+ TPOs, viewer only, no download found. Open Data NI Belfast Trees CSV (OGL, 2015) is a street-tree inventory, not remarkable trees, so no import. Next angle: Belfast Botanic Gardens, Stormont and Belvoir Park veteran trees by name, each lead-checked with a second source. RETRIED 2026-11-03: still no register to import. The Belvoir Oak (Woodland Trust ATI tree 302, UK Tree of the Year finalist) is already published in data/cities/belfast.json; Botanic Gardens and Stormont veterans found nothing new in one search.",
+   "retried": "2026-11-03"
   },
   {
    "place": "Manchester",
