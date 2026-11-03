@@ -105,7 +105,7 @@ const exploreList = exploreCities(sections.map((x) => x.cslug), published, (slug
   <main class="content-page">
     <Breadcrumbs items={crumbItems} />
     <h1>{coll.data.title}</h1>
-    <div class="prose-block"><p>{coll.data.intro}</p></div>
+    <div class="prose-block" data-clamp><p>{coll.data.intro}</p></div>
     {bands.map((band) => (
       <Fragment>
         <h2>{band.heading}</h2>

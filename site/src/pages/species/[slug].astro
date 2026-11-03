@@ -117,7 +117,7 @@ const speciesOgImage = speciesFaceUrl
     <p class="answer-first">
       <Fragment set:html={latinHtml(firstSentence)} /> We map {n} of them, in {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
     </p>
-    {introRest && <div class="prose-block"><p set:html={latinHtml(introRest)} /></div>}
+    {introRest && <div class="prose-block" data-clamp><p set:html={latinHtml(introRest)} /></div>}
     {sections.map(({ city, cslug, rows }) => (
       <Fragment>
         <h2><a class="sp-citylink" href={`/${cslug}`}>{city.data.city}</a></h2>

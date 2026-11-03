@@ -287,7 +287,7 @@ const mapScript = countryMapScript(
     <p class="answer-first">
       {firstSentence} We map {total} trees in {countryCities.length} cities here.{oldestLine}
     </p>
-    <div class="prose-block"><p>{introRest}</p></div>
+    <div class="prose-block" data-clamp><p>{introRest}</p></div>
     <div class="map-embed"><div id="map" class="map"></div></div>
     {stateRows.length > 0 && (
       <Fragment>

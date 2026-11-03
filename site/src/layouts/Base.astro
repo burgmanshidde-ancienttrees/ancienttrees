@@ -662,9 +662,12 @@ window.atPaintFace = function(inNow) {
 <script is:inline define:vars={{ moreLabel: ui(lang).readMore }}>
   (function() {
     if (!window.matchMedia('(max-width: 800px)').matches) return;
-    // data-noclamp opts a block out: the About page is short and read whole
-    // (Hidde, 2026-10-14: "dont do the read more button thats weird just open all").
-    document.querySelectorAll('.content-page > .prose-block:not([data-noclamp])').forEach(function(el) {
+    // ONLY THE INTRO ABOVE THE TREES, marked data-clamp (species, park,
+    // collection, country, state). Every other page is read whole: Hidde
+    // asked twice, About on 2026-10-14 ("dont do the read more button thats
+    // weird just open all") and Privacy on 2026-11-03 ("isnt needed there
+    // just open all text"), so the default flipped from clamp to open.
+    document.querySelectorAll('.content-page > .prose-block[data-clamp]').forEach(function(el) {
       el.classList.add('prose-clamp');
       if (el.scrollHeight <= el.clientHeight + 1) { el.classList.remove('prose-clamp'); return; }
       var b = document.createElement('button');
