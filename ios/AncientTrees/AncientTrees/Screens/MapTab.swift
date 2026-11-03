@@ -148,13 +148,33 @@ struct MapTab: View {
         return catalogue.trees(of: w).map { .init(latitude: $0.lat, longitude: $0.lng) }
     }
 
+    /// THE SAME ARRAY WHILE NOTHING IT DEPENDS ON CHANGED. With a filter on,
+    /// this filtered all 4,000 trees on every redraw and handed the map a new
+    /// array each time, so SwiftUI compared the two tree by tree, field by
+    /// field: about 80 times while the sheet rose after a pin tap, which is
+    /// the frame the watchdog caught killing the app on Hidde's phone
+    /// (2026-11-03 17:42, Tree ==). An unchanged array is one pointer check.
     private var mapTrees: [Tree] {
         guard filters.isOn else { return catalogue.trees }
-        return catalogue.trees.filter {
+        let key = MapTreesKey(filters: filters, month: month, collected: collectedIds,
+                              favourites: favouriteIds, lat: focus.lat, lng: focus.lng,
+                              version: catalogue.version, count: catalogue.trees.count)
+        if memo.key == key { return memo.trees }
+        let kept = catalogue.trees.filter {
             filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
                 && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng))
         }
+        memo.key = key
+        memo.trees = kept
+        return kept
     }
+    /// A class, so remembering the result does not itself redraw the view.
+    private final class TreesMemo { var key: MapTreesKey?; var trees: [Tree] = [] }
+    private struct MapTreesKey: Equatable {
+        let filters: MapFilters, month: Int, collected: Set<String>, favourites: Set<String>
+        let lat: Double, lng: Double, version: String, count: Int
+    }
+    @State private var memo = TreesMemo()
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
     /// The ids you have collected, worked out once per redraw rather than

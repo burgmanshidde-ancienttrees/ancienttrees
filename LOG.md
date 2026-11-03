@@ -12,6 +12,16 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-03 session: app fixes from Hidde's phone test, ready for build 37
+
+**What changed in the product (all on main, app and web where both have it):** the pin-tap freeze (map updates that change nothing now cost nothing; with a filter on, the map keeps the same tree list instead of a new one per frame); your own tree's photo opens at the same size as ours; "Added to Want to visit" sits on the bar under it; See all on Want to visit lands on the list, no back button; a country opens on its map page; notes only on their own tree; no share disc on Want to visit tiles; Edit profile without footnotes; on the web, Read more only on the intro above trees (privacy, terms and every text page open whole).
+
+**Breakage, explained:** iOS CI reds today were a compile error already fixed (cdcf97dc1), a GitHub runner that never came, and the iOS 18 search test, which passes on the local iOS 18.6 simulator. The 11:01 scheduled deploy failed on two mail addresses in data/research/vallombrosa-verified.json, gone since; the 18:13 deploy passed. Every push since then cancelled the previous run, so web changes waited.
+
+**Not verified:** the freeze fix on a device in a Release build (simulator only, measured 2-4 ms per update to 0); your own tree's photo size (the simulator keeps no own trees signed out). Build 36 is in TestFlight, never released; build 35 is in the store.
+
+**For Hidde:** before build 37, run once on your phone with Release (Edit Scheme, Run, Release, Debug executable off) and tap pins on the map with and without a filter.
+
 ## 2026-11-03 session: Ireland for Crann's readers, 10 trees live (33 to 43 Irish trees)
 
 **What changed in the product:** Hidde asked for more Irish trees before Crann's Autumn/Winter edition ("Ja, start Ierland"). Ten trees in seven places, all tree pages (no place reaches four): the Carroll Oak at Birr Castle (before 1620 by the estate), the Birr box hedges (sources disagree on height and age, said so), the Birr dawn redwood from 1940s seed; the Woodstock giant sequoia and champion coast redwood at Inistioge (the 1999 "widest in Ireland" claim given beside Woodstock's own larger figure); the Squire's Walking Stick at Tullynally, Castlepollard (tallest oak claims credited to the Telegraph and Irish Times); the Emo Court yew (maybe Samuel Hayes's 1794 yew, left open); the Muckross Abbey yew at Killarney (confirmed pin, Geograph photo approved after looking); the Autograph Tree at Coole Park, Gort; a second Charleville yew at Tullamore beside the King Oak. Birr and Woodstock marked paid. Built by `python3 scripts/build_ireland.py` from data/research/{place}-verified.json and ireland-places.json; preflight clean, pace fine.
