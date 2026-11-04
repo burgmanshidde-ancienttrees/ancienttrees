@@ -23,6 +23,18 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04
+
+Web half: the last 24 hours were research data and one app tweak (PlaceMapPage), plus the earned-back switch; nothing new in site/dist to read. Re-checked the standing faults on the built site:
+
+- WARN (sixteenth review to see it) meta description prints a planting or event year as an age: `grep -rlE 'content="A (17|18|19|20)[0-9]{2}-year-old' site/dist` still finds 96 pages (e.g. /waipoua-forest/te-matua-ngahere, /kamakura/great-ginkgo-of-tsurugaoka-hachimangu). Hard rule 2, Verify (a derived age states its basis). Build the qa.py check on built HTML first, then fix the meta template.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Tenth review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Translations too.
+
+App half (iPhone SE: collect-compare, collect-describe, collect-identify, collect-intro, collect-place, collect-ticked):
+
+- NOTE APP collect-compare, -describe, -identify, -intro and -place are the same "Add a tree" sheet over a tree photograph; none shows the step its filename names. The sweep never leaves the entry sheet (probably no camera in the simulator), so five of the six screens in this rotation review nothing. A session should seed those steps or drop the names.
+- NOTE APP collect-ticked: reads well ("You found The Wilhelminalinde", "Lime, 128 years old", "Was it worth the trip?"); the title wraps to two lines on the SE, acceptable. Nothing contradicted.
+
 ## 2026-11-03
 
 Web half: the last 24 hours were data (Lyon, Andalucia, Central Italy, California, northern England and Wales, southern Thailand; Spoleto and Vallombrosa are held for the pace, so not in the build). No em dashes in the built Lyon pages sampled. Findings:
