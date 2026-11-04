@@ -99,8 +99,7 @@ struct ProfileView: View {
                 settingsCard
                 helpCard
                 aboutCard
-                signOutRow
-                deleteAccountRow
+                accountCard
                 // Last, under everything, and only the version (Hidde,
                 // 2026-09-26: "alleen versie nr helemaal onder alles").
                 version
@@ -436,14 +435,14 @@ struct ProfileView: View {
                 // RATE THE APP (Hidde, 2026-09-04): Apple's own apps, Strava,
                 // AllTrails and Komoot carry this row. A LINK, never
                 // SKStoreReviewController, which may show nothing at all.
+                // The reason to tap is the row's subtitle, as Apple's own
+                // Settings rows carry one (Hidde, 2026-11-04: "als
+                // ondertitel van rate the app"; his line, word for word).
                 link("Rate the app", "star",
-                     "https://apps.apple.com/app/id6806177833?action=write-review")
+                     "https://apps.apple.com/app/id6806177833?action=write-review",
+                     subtitle: "A good rating helps others find Ancient Trees.")
             }
             .brandCard()
-            // The one footnote here, because it gives a reason to tap
-            // (Hidde, 2026-11-03: his line, word for word).
-            Text("A good rating helps others find Ancient Trees.")
-                .font(.footnote).foregroundStyle(Brand.inkSoft)
         }
     }
 
@@ -534,16 +533,25 @@ struct ProfileView: View {
         }
     }
 
-    private func link(_ title: String, _ icon: String, _ url: String) -> some View {
+    private func link(_ title: String, _ icon: String, _ url: String,
+                      subtitle: String? = nil) -> some View {
         Link(destination: URL(string: url)!) {
             HStack(spacing: 12) {
                 Image(systemName: icon).frame(width: 20).foregroundStyle(Brand.moss)
-                Text(title).font(.callout).foregroundStyle(Brand.ink)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title).font(.callout).foregroundStyle(Brand.ink)
+                    if let subtitle {
+                        Text(subtitle).font(.footnote).foregroundStyle(Brand.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
                 Spacer()
                 Image(systemName: "arrow.up.right")
                     .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
             }
-            .padding(.horizontal, 16).frame(height: 48)
+            .padding(.horizontal, 16)
+            .padding(.vertical, subtitle == nil ? 0 : 10)
+            .frame(minHeight: 48)
             .contentShape(.rect)
         }
     }
@@ -699,7 +707,10 @@ struct ProfileView: View {
         if account.isSignedIn {
             Button { showingAccount = true } label: {
                 HStack {
-                    Text("Delete account").font(.callout).foregroundStyle(Brand.dangerText)
+                    // GREY, NOT RED (Hidde, 2026-11-04: "delete account minder
+                    // heftig"): the red is on the screen this opens, where the
+                    // button that really deletes is.
+                    Text("Delete account").font(.callout).foregroundStyle(Brand.inkSoft)
                     Spacer()
                     Image(systemName: "chevron.right")
                         .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
@@ -707,15 +718,28 @@ struct ProfileView: View {
                 .padding(.horizontal, 16).frame(height: 48)
                 .contentShape(.rect)
             }
-            // THE SAME CARD SIGN OUT SITS IN, and it was missing (Hidde,
-            // 2026-08-31: "de spacing die je hebt aangehouden voor delete
-            // account is een beetje weird"). He was right and the cause was
-            // one modifier: every other row on this page is wrapped in a
-            // brandCard, so a bare button sat flat against the margin with the
-            // stack's 18 points of air around it, aligned with nothing. A
-            // destructive control should look deliberate, not left over.
-            .brandCard()
+            .buttonStyle(.plain)
             .accessibilityIdentifier("settings-account")
+        }
+    }
+
+    /// ONE ACCOUNT GROUP (Hidde, 2026-11-04: "is het logischer als die twee
+    /// onder een kopje staan samen en delete account minder heftig is?"), as
+    /// Apple Account and Instagram do it: a heading like Help and About, Sign
+    /// out and Delete account in one card. The chevron stays the iOS rule: Sign
+    /// out asks and acts here, so none; Delete account opens a screen, so one.
+    @ViewBuilder private var accountCard: some View {
+        if account.isSignedIn {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Account").font(.eyebrow).textCase(.uppercase)
+                    .foregroundStyle(Brand.inkSoft).tracking(0.8)
+                VStack(spacing: 0) {
+                    signOutRow
+                    Divider().padding(.leading, 16)
+                    deleteAccountRow
+                }
+                .brandCard()
+            }
         }
     }
 
@@ -729,7 +753,7 @@ struct ProfileView: View {
                 .padding(.horizontal, 16).frame(height: 48)
                 .contentShape(.rect)
             }
-            .brandCard()
+            .buttonStyle(.plain)
             // ON THE BUTTON, not on the page. iOS anchors a confirmation to
             // whatever it is attached to, so attaching this to the whole screen
             // put it up near the top with an arrow pointing at nothing (Hidde,

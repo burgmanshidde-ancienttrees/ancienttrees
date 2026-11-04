@@ -33,8 +33,14 @@ struct ProfileEditor: View {
     var body: some View {
         NavigationStack {
             Form {
+                // THE PHOTO LEADS, LARGE AND CENTRED, with Change photo under
+                // it, and no headings (Hidde, 2026-11-04: "de alignment van de
+                // titel your picture your name en your country lijkt raar").
+                // Instagram, AllTrails, Strava and Apple's contact card all
+                // draw it this way; three headings over three single rows is
+                // what looked odd.
                 Section {
-                    HStack(spacing: 16) {
+                    VStack(spacing: 8) {
                         ZStack {
                             Circle().fill(Brand.moss.opacity(0.12))
                             if let preview {
@@ -45,11 +51,11 @@ struct ProfileEditor: View {
                                     .clipShape(.circle)
                             } else {
                                 Image(systemName: "person.fill")
-                                    .font(.system(size: 22))
+                                    .font(.system(size: 36))
                                     .foregroundStyle(Brand.moss.opacity(0.6))
                             }
                         }
-                        .frame(width: 64, height: 64)
+                        .frame(width: 96, height: 96)
 
                         PhotosPicker(selection: $picked, matching: .images) {
                             Text(preview == nil && profiles.me?.avatar_url == nil
@@ -58,21 +64,19 @@ struct ProfileEditor: View {
                                 .contentShape(.rect)
                         }
                     }
-                    .padding(.vertical, 4)
-                } header: {
-                    Text("Your picture")
+                    .frame(maxWidth: .infinity)
+                    .listRowBackground(Color.clear)
                 }
 
+                // One card, each row naming itself, the value on the right,
+                // as Apple's contact card. The flag after your name is iOS
+                // Settings' shape for a long choice: a row that opens a list.
                 Section {
-                    TextField("The name people see", text: $name)
-                        .textInputAutocapitalization(.words)
-                } header: {
-                    Text("Your name")
-                }
-
-                // The flag after your name. iOS Settings' own shape for a
-                // long choice: a row that opens a list (Language & Region).
-                Section {
+                    LabeledContent("Name") {
+                        TextField("The name people see", text: $name)
+                            .textInputAutocapitalization(.words)
+                            .multilineTextAlignment(.trailing)
+                    }
                     Picker("Country", selection: $country) {
                         Text("Don't show").tag(String?.none)
                         ForEach(Self.countries, id: \.code) { c in
@@ -81,10 +85,7 @@ struct ProfileEditor: View {
                     }
                     .pickerStyle(.navigationLink)
                     .accessibilityIdentifier("profile-country")
-                } header: {
-                    Text("Your country")
                 }
-
                 if failed {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("That did not save. Try again in a moment.")

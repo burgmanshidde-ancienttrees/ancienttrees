@@ -107,11 +107,13 @@ const crumbItems: [string, string | null][] = [
       <a class="set-row" href="/sources"><Fragment set:html={icon("book-open", "bold", "ic set-ic")} /><span class="set-label">Sources</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></a>
     </div>
 
-    <div class="acct-rows acct-rows-sep">
-      <button type="button" id="signout" class="set-row set-row-plain">Sign out</button>
-    </div>
+    {/* ONE ACCOUNT GROUP (Hidde, 2026-11-04, the app's Settings with it): Sign
+        out acts here, so no chevron; Delete account opens the screen that
+        explains, so it keeps one, in grey. The red waits on that screen. */}
+    <p class="acct-group">Account</p>
     <div class="acct-rows">
-      <button type="button" id="del-open" class="set-row set-row-plain set-danger">Delete account<Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></button>
+      <button type="button" id="signout" class="set-row set-row-plain">Sign out</button>
+      <button type="button" id="del-open" class="set-row set-row-plain set-quiet">Delete account<Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></button>
     </div>
   </section>
 
@@ -125,11 +127,11 @@ const crumbItems: [string, string | null][] = [
       <span class="profile-avatar acct-pic" id="pic-preview" aria-hidden="true"></span>
       <button type="button" id="pic-pick" class="sheet-b sheet-b--secondary set-pic-btn">Choose a photo</button>
       <input id="in-pic" type="file" accept="image/*" hidden />
-      <label for="in-name" class="set-edit-label">Your name</label>
+      <label for="in-name" class="set-edit-label">Name</label>
       <input id="in-name" type="text" maxlength="40" autocomplete="nickname" placeholder="The name people see" />      {/* The flag after your name (lib/countries.ts, 2026-10-16), the app's
           Country row as the web's native dropdown. Unchosen, the country you
           appear to be in; "Don't show" on top turns it off (2026-10-20). */}
-      <label for="in-country" class="set-edit-label">Your country</label>
+      <label for="in-country" class="set-edit-label">Country</label>
       <select id="in-country" class="set-edit-select">
         <option value="">Don't show</option>
         {countries.map((c) => <option value={c.code}>{c.name}</option>)}

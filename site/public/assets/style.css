@@ -976,6 +976,8 @@ a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--c
   color: var(--ink-mid); padding: 0 18px 0 0; cursor: pointer; text-align: right; }
 .set-caret { position: absolute; right: 0; width: 13px; height: 13px; pointer-events: none; }
 .set-danger { color: #B22222; }
+/* Delete account in the Account group: grey, the red is on its sheet. */
+.set-quiet { color: var(--ink-mid); }
 /* THE SWITCH (2026-10-19), iOS's own control at its own 51 by 31, which is
    what Polarsteps and Instagram put beside "Private account". The row is the
    button (role="switch"); this is only its drawing. Moss when on. */
