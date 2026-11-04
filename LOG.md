@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: the quality line in the digest
+
+- **What changed (digest):** right under his numbers, one line "Quality ● Web ● iOS ● Android": green, orange or red per platform, and when anything is orange or red a small table with only those rows (Next version, Live, Open bugs) and a reason per cell (scripts/quality.py; DATA.md says the colours in words, the digest page draws them). Inputs: deploy.yml and ios.yml on main, deploy lag past 12 h, the code review (7 days) and fresh-eyes review (1 day) being current, open BUG rows in data/code-audit.json, app crashes, website errors, an outside site-up check (uptime.yml, every 15 minutes), page speed of the ten most-seen pages (page_speed.py, weekly by due date), and Dependabot alerts (.github/dependabot.yml, weekly PRs, never merged by a run).
+- **What changed (web):** every page now reports its own script errors (site/src/lib/web-errors-js.ts): message, file and line, path without query, browser family and version, build, day; nothing about the person, nothing on the device, three a page load at most. The privacy page says so in one paragraph.
+- **What changed (reviews):** the code review is due seven days after the last `## YYYY-MM-DD code` heading, not on Mondays; the full sweep 28 days after the last `code (full)`. None is on file yet, so the next review.yml run does a full sweep.
+- For Hidde: paste supabase/web-errors.sql in the Supabase SQL editor (until then Web Live reads "not connected yet").
+- For Hidde: page speed needs a free PageSpeed Insights API key as the repository secret PSI_API_KEY (the keyless quota answered 429); until then that part is grey.
+- For Hidde: Dependabot alerts are off for the repository (Settings, Code security, Dependabot alerts); the version-update PRs work without them, the alert light stays grey.
+- **Not verified:** the Astro build (CI), the first uptime and page-speed runs, reading Dependabot alerts with the digest's token, and a real error reaching the table (the table does not exist yet). The reporter was run in JavaScriptCore with stubs: it reports our own errors and drops extension, other-origin and "Script error." ones.
+
 ## 2026-11-04 night run (second attempt): pace cap still full, Brighton register retried
 
 - The cap holds until the 2026-11-03 evening commits pass 24 h (about 18:30 UTC); the 20 written DC/NYC stories wait in data/research and the washington-dc claim stays. Brighton retry: Stanmer churchyard yew added as a lead, register stays stalled. No trees shipped.
