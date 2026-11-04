@@ -86,8 +86,8 @@
    "summary": "The map list filters and sorts every tree on every pan and drag frame.",
    "fix": "Memoise per settled region and filters.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "e3fc733cd"
   },
   {
    "id": "APP-SPEED-search-per-keystroke",
@@ -97,8 +97,8 @@
    "summary": "Search rebuilds its city list and ranks twice on every keystroke.",
    "fix": "Build once per open, rank once per query.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "e3fc733cd"
   },
   {
    "id": "APP-SPEED-my-trees-network",
@@ -108,8 +108,8 @@
    "summary": "My trees makes three requests every time the tab appears.",
    "fix": "Once per session and on refresh.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "e3fc733cd"
   },
   {
    "id": "APP-SPEED-breathing-timer",
