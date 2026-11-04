@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 daily publish (scheduled): 25 US trees live, Leesburg and Santa Barbara new
+
+- **What went live (commit a6af681b5):** Leesburg, Virginia, new place, 8 trees (lsb_001..008, build_us_east.py); Washington DC 21 -> 33 (wdc_026..035, 040, 041, build_us_east.py, with its new intro, meta and FAQ); Santa Barbara, new place, 5 trees (sbr_001..005, build_us_california.py, the Moreton Bay fig with its photo). Exactly 25 own trees, the pace cap. Copied from dry builds in out/tmp/dry_east and dry_cal, so no other place of those builders moved; leesburg and santa-barbara added to data/us-states.json. preflight 0 problems.
+- **Still waits, US first:** build_us_east.py: new-york 68 (all or nothing: its new intro says "close to a hundred"). build_us_boston.py: boston 27, salem-massachusetts 3, lexington-massachusetts 1. build_us_california.py: los-angeles 8, san-diego 7, oakland 4, glen-ellen 2, san-jose 2, sebastopol 1. build_us_northwest.py 16, build_us_live_oaks.py 9, then us_hawaii, us_deepen, us_florida_texas, us_philadelphia, us_midwest, us_southeast, the untracked us_southwest and us_empty_cities, then the UK, Iberia, France and Italy, the rest. The night run counted about 670 held trees this afternoon; at 25 a day that is roughly 26 days.
+- **Next day:** builders without `--only` are best dry-built with `--out` and copied place by place, as here (out/tmp/publish_today.py).
+- Breakage: none. The first push was refused because another session pushed seconds earlier; rebased and pushed.
+
 ## 2026-11-04 session: the app walked as a customer, Back readable on iOS 18
 
 - App, tree page: on iOS 18 the green "< Back", share and report icons sat bare on the photograph and disappeared into dark leaves (iOS 26 draws them in round glass, so only the older system). A soft fade from the page background over the top 150 points of the photograph, iOS 18 only (`barScrim` in TreeDetail.swift); the system Back and its swipe are untouched. Seen on the iPhone 16 Pro Max iOS 18.6 simulator before and after. **For Hidde: next build carries it.**
