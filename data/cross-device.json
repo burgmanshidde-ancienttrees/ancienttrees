@@ -2,6 +2,12 @@
   "_note": "Everywhere either surface keeps something, and whether it hangs under the account (so it must be on the server and reach every device) or belongs to this device. Hidde, 2026-09-11: \"alles moet cross device beschikbaar zijn wat onder je account hangt. Check of dit voor alles geldt.\" Checked by scripts/crossdevice.py, which refuses a store nobody has ruled on; it cannot tell whether the verdict is right.",
   "written": "2026-09-11",
   "stores": {
+    "recent_searches": {
+      "verdict": "account",
+      "keep": true,
+      "why": "Recent searches under the empty search field, app (Kit/RecentSearches.swift, inside MapSearch) and web (search-form.ts): what a signed-in person picked, at most five within 90 days. Table recent_searches (supabase/recent-searches.sql), read and written straight from the server; on the device only in the open screen's memory, never in UserDefaults or localStorage, so no key is written and `keep` holds this entry.",
+      "off": "Nothing, because nothing is written to the device: signed out, neither surface asks for the rows or records a pick, and the screen's in-memory copy goes with the screen. Deleting the account removes the rows by the foreign key's on delete cascade."
+    },
     "saved.entries.v1": {
       "verdict": "account",
       "why": "Hearts and ticks. Tables saves and visited, merged as a union by CloudSync on launch and on sign-in; the website reads the same two tables.",

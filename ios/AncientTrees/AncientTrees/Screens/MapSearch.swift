@@ -27,6 +27,10 @@ struct MapSearch: View {
     @State private var realPlaces: [RealPlace] = []
     @State private var answered: String?
     @Environment(Units.self) private var units
+    @Environment(Account.self) private var account
+    /// What this person picked lately, read from the account each time the
+    /// screen opens (Kit/RecentSearches.swift). Signed out it stays empty.
+    @State private var recent = RecentSearches()
 
     enum Lane: String, CaseIterable, Identifiable {
         case top, places, species, trees
@@ -68,6 +72,17 @@ struct MapSearch: View {
         // `-searchblur` (debug, with -search=) keeps the keyboard down so a
         // screenshot shows the whole result list; simctl cannot dismiss it.
         .onAppear { focused = !ProcessInfo.processInfo.arguments.contains("-searchblur") }
+        // Recent searches: the account's newest five, signed in only.
+        // `-recentdemo` (debug) fills three rows so the section can be looked
+        // at on a simulator, which cannot sign in.
+        .task {
+            if ProcessInfo.processInfo.arguments.contains("-recentdemo") {
+                recent.demo(demoRecent)
+                return
+            }
+            guard account.isSignedIn else { return }
+            await recent.load(token: await account.freshToken())
+        }
         // Apple's towns, a beat after the last keystroke so typing "Bern" is
         // one lookup and not four. Not asked when one of OUR places carries
         // the name typed: "Lisbon" is ours, and Apple has nothing to add.
@@ -185,17 +200,25 @@ struct MapSearch: View {
     /// hold, and nobody arriving knows we have Cadiz. The website answers this
     /// the same way and for the same reason.
     @ViewBuilder private var empty: some View {
+        let mine = recentRows
+        if !mine.isEmpty {
+            recentHead
+            ForEach(mine, id: \.entry.id) { r in
+                recentRow(r)
+            }
+            Divider().padding(.top, 10)
+        }
         let near = Editorial.suggestions(catalogue: catalogue, origin: origin, excluding: [], limit: 4)
         if !near.isEmpty {
             head("Near you")
             ForEach(near) { t in
-                row(t.name, "\(t.commonName) · \(t.city)", "tree") { onPick(.tree(t)); dismiss() }
+                row(t.name, "\(t.commonName) · \(t.city)", "tree") { pick(.tree(t)) }
             }
         }
         head("Places worth a trip")
         ForEach(biggestCities.prefix(6), id: \.slug) { c in
             row(c.name, "\(c.country) · \(treesLabel(c.count))", "building.2") {
-                onPick(.city(slug: c.slug, name: c.name, lat: c.lat, lng: c.lng)); dismiss()
+                pick(.city(slug: c.slug, name: c.name, lat: c.lat, lng: c.lng))
             }
         }
     }
@@ -233,19 +256,19 @@ struct MapSearch: View {
         if town == nil && showPlaces && !r.places.isEmpty {
             if lane == .top { head("Places") }
             ForEach(r.places, id: \.id) { p in
-                row(p.name, p.sub, p.icon) { onPick(p.hit); dismiss() }
+                row(p.name, p.sub, p.icon) { pick(p.hit) }
             }
         }
         if showSpecies && !r.species.isEmpty {
             if lane == .top { head("Species") }
             ForEach(r.species, id: \.self) { s in
-                row(s, speciesSub(s), "leaf") { onPick(.species(s)); dismiss() }
+                row(s, speciesSub(s), "leaf") { pick(.species(s)) }
             }
         }
         if showTrees && !r.trees.isEmpty {
             if lane == .top { head("Trees") }
             ForEach(r.trees) { t in
-                row(t.name, "\(t.commonName) · \(t.city)", "tree") { onPick(.tree(t)); dismiss() }
+                row(t.name, "\(t.commonName) · \(t.city)", "tree") { pick(.tree(t)) }
                     .accessibilityIdentifier("search-result-tree")
             }
         }
@@ -259,7 +282,7 @@ struct MapSearch: View {
             .padding(.horizontal, 16).padding(.top, 18)
         head("Places")
         ForEach([top] + realPlaces.filter { $0 != top }) { p in
-            Button { onPick(.place(name: p.name, lat: p.lat, lng: p.lng)); dismiss() } label: {
+            Button { pick(.place(name: p.name, lat: p.lat, lng: p.lng)) } label: {
                 EmptyPlaceRow(name: p.name,
                               sub: p.country.isEmpty ? "Show on the map" : "\(p.country) · show on the map",
                               icon: "mappin.and.ellipse")
@@ -269,7 +292,7 @@ struct MapSearch: View {
         }
         if let n = EmptyPlace.nearest(in: catalogue, lat: top.lat, lng: top.lng) {
             head("Nearest tree")
-            Button { onPick(.tree(n.tree)); dismiss() } label: {
+            Button { pick(.tree(n.tree)) } label: {
                 EmptyPlaceRow(name: n.tree.name,
                               sub: "\(EmptyPlace.distance(n.km, units.unit)) from \(top.name) · \(n.tree.city)",
                               icon: "tree")
@@ -346,6 +369,166 @@ struct MapSearch: View {
         let s = Array(species.prefix(p.isEmpty ? 6 : 2))
         let room = max(0, 8 - p.count - s.count)
         return (p, s, Array(trees.prefix(min(room, p.isEmpty ? 5 : 2))))
+    }
+
+    // MARK: - recent searches
+
+    /// Every pick goes through here: recorded on the account (signed in only,
+    /// what was picked and never what was typed), then handed to the caller.
+    /// The upsert is its own task so it outlives this screen's dismissal.
+    private func pick(_ hit: Hit) {
+        if account.isSignedIn, let e = entry(for: hit) {
+            let store = recent, acct = account
+            Task { await store.record(e, token: await acct.freshToken()) }
+        }
+        onPick(hit)
+        dismiss()
+    }
+
+    private func entry(for hit: Hit) -> RecentSearches.Entry? {
+        switch hit {
+        case .city(let slug, let name, _, _):
+            let c = biggestCities.first { $0.slug == slug }
+            return .init(kind: "city", ref: slug, label: name,
+                         sub: c.map { "\($0.country) · \(treesLabel($0.count))" } ?? "")
+        case .country(let name):
+            return .init(kind: "country", ref: name, label: name,
+                         sub: countries.first { $0.name == name }.map(countrySub) ?? "")
+        case .species(let s):
+            return .init(kind: "species", ref: s, label: s,
+                         sub: treesLabel(catalogue.trees(ofSpecies: s).count))
+        case .tree(let t):
+            return .init(kind: "tree", ref: t.id, label: t.name, sub: "\(t.commonName) · \(t.city)")
+        case .place(let name, let lat, let lng):
+            return .init(kind: "place", ref: String(format: "%.4f,%.4f", lat, lng), label: name,
+                         sub: "Show on the map")
+        }
+    }
+
+    private func countrySub(_ c: (name: String, count: Int, cities: Int)) -> String {
+        "\(treesLabel(c.count)) in \(c.cities) \(c.cities == 1 ? "place" : "places")"
+    }
+
+    private struct RecentRow {
+        let entry: RecentSearches.Entry
+        let name: String
+        let sub: Text
+        let hit: Hit
+    }
+
+    /// The account's rows, each read against today's catalogue so the sub
+    /// line is today's (the same line the result rows draw). A row whose city,
+    /// tree or species is no longer ours is left out.
+    private var recentRows: [RecentRow] {
+        guard !recent.rows.isEmpty else { return [] }
+        let cities = biggestCities
+        return recent.rows.compactMap { e in
+            switch e.kind {
+            case "city":
+                guard let c = cities.first(where: { $0.slug == e.ref }) else { return nil }
+                return RecentRow(entry: e, name: c.name, sub: Text("\(c.country) · \(treesLabel(c.count))"),
+                                 hit: .city(slug: c.slug, name: c.name, lat: c.lat, lng: c.lng))
+            case "country":
+                guard let c = countries.first(where: { $0.name == e.ref }) else { return nil }
+                return RecentRow(entry: e, name: c.name, sub: Text(countrySub(c)), hit: .country(c.name))
+            case "species":
+                guard allSpecies.contains(e.ref) else { return nil }
+                return RecentRow(entry: e, name: e.ref, sub: speciesSub(e.ref), hit: .species(e.ref))
+            case "tree":
+                guard let t = catalogue.tree(e.ref) else { return nil }
+                return RecentRow(entry: e, name: t.name, sub: Text("\(t.commonName) · \(t.city)"), hit: .tree(t))
+            case "place":
+                let p = e.ref.split(separator: ",").compactMap { Double($0) }
+                guard p.count == 2 else { return nil }
+                return RecentRow(entry: e, name: e.label, sub: Text(e.sub.isEmpty ? "Show on the map" : e.sub),
+                                 hit: .place(name: e.label, lat: p[0], lng: p[1]))
+            default:
+                return nil
+            }
+        }
+    }
+
+    /// The section head, as head() draws it, with Clear all at the right end
+    /// (Google Maps' and Instagram's place for it). The tap area is 44 tall
+    /// without making the head any taller.
+    private var recentHead: some View {
+        HStack(alignment: .firstTextBaseline) {
+            Text("Recent")
+                .font(.eyebrow).textCase(.uppercase).tracking(0.8)
+                .foregroundStyle(Brand.inkSoft)
+            Spacer(minLength: 8)
+            Button {
+                let store = recent, acct = account
+                Task { await store.clear(token: await acct.freshToken()) }
+            } label: {
+                Text("Clear all")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Brand.moss)
+                    .padding(.vertical, 12).padding(.leading, 12)
+                    .contentShape(.rect)
+                    .padding(.vertical, -12).padding(.leading, -12)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("recent-clear")
+        }
+        .padding(.horizontal, 16).padding(.top, 18).padding(.bottom, 6)
+    }
+
+    /// row()'s numbers exactly (14 between icon and text, the 24-wide icon at
+    /// 17, 2 between name and sub, 16 in, 56 tall), with the clock in the
+    /// grey of history and a cross at the end that removes this one.
+    private func recentRow(_ r: RecentRow) -> some View {
+        HStack(spacing: 0) {
+            Button { pick(r.hit) } label: {
+                HStack(spacing: 14) {
+                    Image(systemName: "clock.arrow.circlepath")
+                        .font(.system(size: 17))
+                        .foregroundStyle(Brand.inkSoft)
+                        .frame(width: 24)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(r.name).fontWeight(.bold)
+                            .font(.brand(16, .regular)).foregroundStyle(Brand.ink)
+                            .lineLimit(1)
+                        r.sub.font(.caption).foregroundStyle(Brand.inkSoft).lineLimit(1)
+                    }
+                    Spacer(minLength: 8)
+                }
+                .padding(.leading, 16).frame(minHeight: 56)
+                .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("recent-row")
+            Button {
+                let store = recent, acct = account, e = r.entry
+                Task { await store.remove(e, token: await acct.freshToken()) }
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Brand.inkSoft)
+                    .frame(width: 44, height: 44)
+                    .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .padding(.trailing, 2)
+            .accessibilityLabel("Remove \(r.name) from recent")
+        }
+    }
+
+    /// Three rows for `-recentdemo`, from what the catalogue holds: a country,
+    /// a city and a tree in it, the mock's Canada, Lisbon and a Lisbon tree.
+    private var demoRecent: [RecentSearches.Entry] {
+        var out: [RecentSearches.Entry] = []
+        if let k = countries.first(where: { $0.name == "Canada" }) ?? countries.first,
+           let e = entry(for: .country(k.name)) { out.append(e) }
+        let cities = biggestCities
+        if let c = cities.first(where: { $0.slug == "lisbon" }) ?? cities.first,
+           let e = entry(for: .city(slug: c.slug, name: c.name, lat: c.lat, lng: c.lng)) {
+            out.append(e)
+            let ts = catalogue.trees.filter { $0.citySlug == c.slug }
+            if let t = ts.first(where: { $0.name.localizedCaseInsensitiveContains("dragon") }) ?? ts.first,
+               let e2 = entry(for: .tree(t)) { out.append(e2) }
+        }
+        return out
     }
 
     // MARK: - the pieces
