@@ -65,6 +65,10 @@
 - **For a later look:** live phl_001's transport says trolley route 34 for Woodland Avenue; the new phl_005 says route 11 (route 11 runs on Woodland Avenue). Not changed here.
 - **Cost:** about 518k tokens (three verify passes, ~355k; one write pass, 163k) for 9 written trees, about 58k a tree, well over the 15k target: Philadelphia has no register and from-zero yield was two to five trees a pass.
 
+## 2026-11-04 session: watch the Google recovery, decide around 11-18
+
+- **Agreed with Hidde ("we moeten het gewoon in de gaten houden"):** no further change to what Google sees. Around 2026-11-18 compare two weeks of clicks on open pages against clicks on tagged pages (data/tagged-still-shown.json). Open pages holding or rising while tagged ones drop: the cuts were right, keep the slow lane. The total sliding back towards ~35 impressions a day: the tagged pages were carrying it, put faster release to Hidde, demand-cut cities first. Verified live today: the three earned pages lost the googlebot tag and are in sitemap.xml (264 urls).
+
 ## 2026-11-04 session: three pages earned their way back into Google
 
 - **What changed:** /tenerife/el-drago-milenario, /olympic-national-park/duncan-cedar and /malaga leave the googlebot noindex from the next deploy. Google kept showing them after 11-01 with clicks (43/1, 20/1, 16/1). The rule (`EARNED_BACK`, Hidde: "Ja, zet aan"): 2 clicks, or 1 click and 10 impressions since 11-01; no translations, question, listing or thin-place pages; at most 10 a week. Undo: `EARNED_BACK = False`, or take a path out of data/earned-back.json.
