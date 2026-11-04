@@ -197,7 +197,8 @@
    "summary": "The tree page's two bottom buttons swap at exactly 200 m and jump with GPS drift.",
    "fix": "A band, 150 m in and 250 m out.",
    "first_seen": "2026-11-04",
-   "status": "open"
+   "status": "fixed",
+   "fixed_in": "f934d55aa"
   },
   {
    "id": "APP-UX-one-search-rule",
