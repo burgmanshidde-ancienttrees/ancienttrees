@@ -67,7 +67,8 @@ struct CollectView: View {
     /// ships unlooked at.
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
     @State private var editingProfile = false   // -profile-edit: launchSheet below
-    @State private var findingPeople = false   // -people: launchSheet below
+    /// -people: Find people pushed on open, as -settings pushes Settings.
+    @State private var openPeople = ProcessInfo.processInfo.arguments.contains("-people")
     /// The early-adopter badge and its one-time sheet (Kit/EarlyAdopter.swift).
     /// Both come from the server on every open; nothing is kept here.
     @State private var earlyAdopter = false
@@ -369,6 +370,7 @@ struct CollectView: View {
         .onChange(of: navigator.openWantToVisit) { _, _ in takeWantToVisit() }
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
+            if openPeople { openPeople = false; navigator.push = .findPeople }
             sent = await Submission.mine(token: account.freshToken())
             // A PROFILE THAT NEVER ARRIVED IS ASKED FOR AGAIN (Hidde,
             // 2026-10-12: signed in, trees showing, but no name and no
@@ -401,8 +403,6 @@ struct CollectView: View {
         }) { EarlyAdopterSheet() }
         .launchSheet("-profile-edit", isPresented: $editingProfile)
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
-        .launchSheet("-people", isPresented: $findingPeople)
-        .sheet(isPresented: $findingPeople) { PeopleView() }
         .sheet(item: $peopleList) { which in PeopleView(source: which.source) }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
@@ -718,12 +718,10 @@ struct CollectView: View {
         .toolbar(.hidden, for: .navigationBar)
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
+            if openPeople { openPeople = false; navigator.push = .findPeople }
         }
         .sheet(isPresented: $editingProfile) {
             ProfileEditor()
-        }
-        .sheet(isPresented: $findingPeople) {
-            PeopleView()
         }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
@@ -1039,7 +1037,7 @@ struct CollectView: View {
                                     open: { navigator.push = .city($0.place_slug) })
                 }
                 Spacer(minLength: 0)
-                Button { findingPeople = true } label: {
+                Button { navigator.push = .findPeople } label: {
                     Image(systemName: "person.badge.plus")
                         .font(.system(size: 16, weight: .medium))
                         .foregroundStyle(Brand.ink)
@@ -1268,7 +1266,7 @@ struct CollectView: View {
             // the top corner of the You tab: a small icon, never a big button.
             // Same 44pt circle and hairline as the other icon buttons here.
             if account.isSignedIn {
-                Button { findingPeople = true } label: {
+                Button { navigator.push = .findPeople } label: {
                     // A plain white disc, the country chips' white, centred
                     // on the photo (2026-10-10): the outline made it one more
                     // style in the header, and grey vanished on the sheet.

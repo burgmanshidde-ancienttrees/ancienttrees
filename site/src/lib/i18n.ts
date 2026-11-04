@@ -176,6 +176,11 @@ export interface UIStrings {
    *  line saying what they are. Where the noun would be gendered the line says
    *  what they do instead, so one string serves any name. */
   ambassadorRole: (place: string) => string;
+  /** Find people's list under an empty field (2026-11-04, the app's
+   *  Suggested): its eyebrow, and the line under somebody who
+   *  photographed trees in a place you saved or collected. */
+  peopleSuggested: string;
+  peoplePhotographed: (n: number, place: string) => string;
   /** The open seat, on every city page with no named ambassador (Hidde,
    *  2026-10-04: "Tokyo is looking for an ambassador met een knop"). Name
    *  line, one grey line, the button, and what the button says once sent. */
@@ -640,6 +645,8 @@ const EN: UIStrings = {
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
   ambassadorRole: (place) => `${place} ambassador`,
+  peopleSuggested: "Suggested",
+  peoplePhotographed: (n, place) => n === 1 ? `Photographed 1 tree in ${place}` : `Photographed ${n} trees in ${place}`,
   ageYears: (n) => `${n} years`,
   seenChip: "Collected",
   seasonChip: { bloom: "In bloom", autumn: "Autumn colour", fruit: "In fruit", leaves: "Fresh leaves", catkins: "Catkins", winter: "Winter shape", peak: "In season" },
@@ -1241,6 +1248,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida la lista de ${place}`,
+    peopleSuggested: "Sugerencias",
+    peoplePhotographed: (n, place) => n === 1 ? `Fotografió 1 árbol en ${place}` : `Fotografió ${n} árboles en ${place}`,
     ageYears: (n) => `${n} años`,
     seenChip: "Coleccionado",
     seasonChip: { bloom: "En flor", autumn: "Color de otoño", fruit: "Con fruto", leaves: "Hojas nuevas", catkins: "Amentos", winter: "Silueta invernal", peak: "En temporada" },
@@ -1579,6 +1588,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cura la lista di ${place}`,
+    peopleSuggested: "Suggeriti",
+    peoplePhotographed: (n, place) => n === 1 ? `Ha fotografato 1 albero a ${place}` : `Ha fotografato ${n} alberi a ${place}`,
     ageYears: (n) => `${n} anni`,
     seenChip: "Collezionato",
     seasonChip: { bloom: "In fiore", autumn: "Colori d'autunno", fruit: "Con frutti", leaves: "Foglie nuove", catkins: "Amenti", winter: "Sagoma invernale", peak: "Di stagione" },
@@ -1917,6 +1928,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Ambassadeur van ${place}`,
+    peopleSuggested: "Voorgesteld",
+    peoplePhotographed: (n, place) => n === 1 ? `Fotografeerde 1 boom in ${place}` : `Fotografeerde ${n} bomen in ${place}`,
     ageYears: (n) => `${n} jaar`,
     seenChip: "Verzameld",
     seasonChip: { bloom: "In bloei", autumn: "Herfstkleur", fruit: "Vruchten", leaves: "Vers blad", catkins: "Katjes", winter: "Wintersilhouet", peak: "Nu op z'n mooist" },
@@ -2255,6 +2268,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Betreut die Liste für ${place}`,
+    peopleSuggested: "Vorschläge",
+    peoplePhotographed: (n, place) => n === 1 ? `Hat 1 Baum in ${place} fotografiert` : `Hat ${n} Bäume in ${place} fotografiert`,
     ageYears: (n) => `${n} Jahre`,
     seenChip: "Gesammelt",
     seasonChip: { bloom: "In Blüte", autumn: "Herbstfärbung", fruit: "Früchte", leaves: "Frisches Laub", catkins: "Kätzchen", winter: "Wintersilhouette", peak: "Jetzt am schönsten" },
@@ -2593,6 +2608,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     ambassadorRole: (place) => `Cuida da lista de ${place}`,
+    peopleSuggested: "Sugestões",
+    peoplePhotographed: (n, place) => n === 1 ? `Fotografou 1 árvore em ${place}` : `Fotografou ${n} árvores em ${place}`,
     ageYears: (n) => `${n} anos`,
     seenChip: "Colecionada",
     seasonChip: { bloom: "Em flor", autumn: "Cores de outono", fruit: "Com fruto", leaves: "Folhas novas", catkins: "Amentilhos", winter: "Silhueta de inverno", peak: "Na época" },
@@ -2931,6 +2948,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     ambassadorRole: (place) => `Veille sur la liste de ${place}`,
+    peopleSuggested: "Suggestions",
+    peoplePhotographed: (n, place) => n === 1 ? `A photographié 1 arbre à ${place}` : `A photographié ${n} arbres à ${place}`,
     ageYears: (n) => `${n} ans`,
     seenChip: "Collectionné",
     seasonChip: { bloom: "En fleurs", autumn: "Couleurs d'automne", fruit: "En fruits", leaves: "Jeunes feuilles", catkins: "Chatons", winter: "Silhouette d'hiver", peak: "De saison" },
@@ -3268,6 +3287,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     ambassadorRole: (place) => `${place}のアンバサダー`,
+    peopleSuggested: "おすすめ",
+    peoplePhotographed: (n, place) => `${place}で${n}本の木を撮影`,
     ageYears: (n) => `${n}年`,
     seenChip: "集めた",
     seasonChip: { bloom: "開花中", autumn: "紅葉", fruit: "実り", leaves: "新緑", catkins: "尾状花序", winter: "冬の樹形", peak: "見頃" },

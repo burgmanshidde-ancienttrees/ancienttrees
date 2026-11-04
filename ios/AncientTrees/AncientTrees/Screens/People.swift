@@ -25,15 +25,24 @@ struct PeopleView: View {
     /// reporting and the row itself cannot drift into two versions.
     enum Source: String { case search, followers, following }
     var source: Source = .search
+    /// Find people is a PUSHED PAGE since 2026-11-04 (Route.findPeople), the
+    /// field on top and "Suggested" under it (Hidde: "i like all your
+    /// proposals please build"; CONVENTIONS.md "The empty Find people
+    /// screen"). The two lists stay sheets with Done. The catalogue tells it
+    /// which places are yours and who the feed names as their ambassadors.
+    var catalogue: Catalogue? = nil
 
     @Environment(\.dismiss) private var dismiss
     @Environment(Account.self) private var account
     @Environment(Profiles.self) private var profiles
+    @Environment(Saved.self) private var saved
 
     @Environment(Moderation.self) private var moderation
 
     @State private var query = ""
     @State private var results: [Profiles.Profile] = []
+    /// What fills the page while the field is empty (Kit/SuggestedPeople.swift).
+    @State private var suggestions: [SuggestedPerson] = []
     @State private var followingIds: Set<String> = []
     @State private var searching = false
     /// Who the report-or-block sheet is about. One optional rather than a
@@ -119,6 +128,46 @@ struct PeopleView: View {
         followingIds = Set(ids)
     }
 
+    /// SUGGESTED, signed in only: names and the follow graph are (CLAUDE.md,
+    /// "Profiles"). Ambassadors with a public profile from the feed, your
+    /// places first, then public profiles who photographed trees there
+    /// (supabase/suggested-people.sql; without it, the ambassadors alone).
+    private func loadSuggestions() async {
+        guard source == .search, let me = account.session?.userId else { suggestions = []; return }
+        if DemoPeople.on { suggestions = DemoPeople.suggestions; return }
+        guard let cat = catalogue else { return }
+        let places = SuggestedPeople.places(of: Array(saved.entries.keys)) { cat.tree($0)?.citySlug }
+        let token = await account.freshToken()
+        var want: [String: [String]] = [:]
+        for slug in places.prefix(6) { want[slug] = cat.trees(inCity: slug).map(\.id) }
+        let shots = await profiles.photographers(in: want, token: token)
+        let names = Dictionary(cat.facets.cities.compactMap { c in c.slug.map { ($0, c.name) } },
+                               uniquingKeysWith: { a, _ in a })
+        var list = SuggestedPeople.build(
+            ambassadors: SuggestedPeople.ambassadors(in: cat.facets.cities),
+            photographers: shots, yourPlaces: places,
+            placeName: { names[$0] ?? cat.trees(inCity: $0).first?.city ?? $0 },
+            me: me, blocked: { moderation.hides($0) }, following: followingIds)
+        // The name and picture as their owner set them today; the feed's name
+        // stands when the profile cannot be read.
+        let ids = list.map(\.profile.user_id)
+        let fresh = Dictionary(await profiles.byIds(ids, token: token).map { ($0.user_id, $0) },
+                               uniquingKeysWith: { a, _ in a })
+        for i in list.indices {
+            guard let p = fresh[list[i].profile.user_id] else { continue }
+            if !p.display_name.isEmpty { list[i].profile.display_name = p.display_name }
+            list[i].profile.avatar_url = p.avatar_url
+        }
+        await profiles.loadAmbassadors(for: ids, token: token)
+        suggestions = list
+    }
+
+    /// Suggestions while the field is empty, never beside search results.
+    private var showsSuggestions: Bool {
+        source == .search && account.session != nil
+            && query.trimmingCharacters(in: .whitespaces).isEmpty && !suggestions.isEmpty
+    }
+
     /// Said plainly per list, including the case that is true today: somebody
     /// can follow you before they have chosen a display name, and then there is
     /// nothing to show but the fact that they are there. An empty search says
@@ -134,10 +183,32 @@ struct PeopleView: View {
         }
     }
 
+    /// Pushed for search, a sheet with Done for the two lists.
     var body: some View {
-        NavigationStack {
+        if source == .search {
+            page
+                .navigationTitle("Find people")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar(.visible, for: .navigationBar)
+                .accessibilityIdentifier("people-sheet")
+        } else {
+            NavigationStack {
+                page
+                    .navigationTitle(source == .followers ? "Followers" : "Following")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Done") { dismiss() }
+                        }
+                    }
+            }
+            .accessibilityIdentifier("people-sheet")
+        }
+    }
+
+    private var page: some View {
             List {
-                if visible.isEmpty && !searching, let emptyLine {
+                if visible.isEmpty && !searching && !showsSuggestions, let emptyLine {
                     // Right under the field it answers, with no rule above it
                     // (Hidde, 2026-10-12: "weirdly placed ... closer to the
                     // search area").
@@ -179,6 +250,8 @@ struct PeopleView: View {
                         }
                     }
                     .accessibilityIdentifier("people-share")
+                    // No rule between the field and the first row.
+                    .listRowSeparator(.hidden, edges: .top)
                     .sheet(isPresented: $askingPublic) {
                         BrandSheet(
                             icon: "globe.europe.africa",
@@ -197,115 +270,31 @@ struct PeopleView: View {
                     }
                     .sheet(isPresented: $editingName) { ProfileEditor() }
                 }
-                ForEach(visible, id: \.user_id) { p in
-                    HStack(spacing: 12) {
-                        // THE PERSON OPENS THEIR PROFILE (2026-10-19): picture
-                        // and name together, as Polarsteps' and Instagram's
-                        // rows do; Follow and the ellipsis stay their own.
-                        Button { dismiss(); navigator.push = .person(p.user_id) } label: {
-                        HStack(spacing: 12) {
-                        ZStack {
-                            Circle().fill(Brand.moss.opacity(0.12))
-                            if let url = p.avatar_url, let u = URL(string: url) {
-                                TreePhoto(url: u) { Color.clear }
-                                    .clipShape(.circle)
-                            } else if let first = p.display_name.first, !p.display_name.isEmpty {
-                                Text(String(first).uppercased())
-                                    .font(.brand(16, .black, relativeTo: .body))
-                                    .foregroundStyle(Brand.moss)
-                            }
+                if showsSuggestions {
+                    // SUGGESTED (2026-11-04), the eyebrow the other grouped
+                    // lists carry (MapSearch, Settings), under the share row.
+                    Section {
+                        ForEach(suggestions, id: \.profile.user_id) { s in
+                            personRow(s.profile, reason: s.reason,
+                                      seal: s.ambassador || !(profiles.placesByUser[s.profile.user_id] ?? []).isEmpty)
                         }
-                        .frame(width: 40, height: 40)
-
-                        // Somebody who has signed up and never chosen a name.
-                        // Said rather than filled in: a placeholder name would
-                        // be the one thing this project does not do.
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(p.display_name.isEmpty ? "No name yet" : p.display_name)
-                                .font(.callout)
-                                .foregroundStyle(p.display_name.isEmpty ? Brand.inkSoft : Brand.ink)
-                                .foregroundStyle(moderation.hides(p.user_id) ? Brand.inkSoft : Brand.ink)
-                            // The ambassador badge, komoot's Pioneer shape
-                            // (AmbassadorBadge.swift); nothing for almost everybody.
-                            AmbassadorBadge(places: profiles.placesByUser[p.user_id] ?? [], compact: true)
-                        }
-                        }
-                        .contentShape(.rect)
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityIdentifier("person-open")
-                        Spacer(minLength: 8)
-
-                        if moderation.hides(p.user_id) {
-                            Button("Unblock") {
-                                guard let s = account.session else { return }
-                                Task {
-                                    guard let t = await account.freshToken() else { return }
-                                    await moderation.unblock(p.user_id, me: s.userId, token: t)
-                                }
-                            }
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(Brand.moss)
-                            .buttonStyle(.plain)
-                            .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
-                            .contentShape(.rect)
-                            .accessibilityIdentifier("person-unblock")
-                        } else {
-                            // A PILL, as Strava, Polarsteps and Instagram draw it
-                            // (CONVENTIONS.md 2026-10-02): filled in the brand
-                            // colour while it says Follow, outlined once you do,
-                            // so the state reads at a glance down a list. It
-                            // was a bare word in moss, which read as a label.
-                            Button { toggle(p) } label: {
-                                let on = followingIds.contains(p.user_id)
-                                Text(followLabel(p))
-                                    .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(on ? Brand.ink : .white)
-                                    .padding(.horizontal, 14)
-                                    .frame(minWidth: 96, minHeight: 34)
-                                    .background(on ? Color.clear : Brand.moss, in: .capsule)
-                                    .overlay { if on { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) } }
-                                    .frame(minHeight: 44)
-                                    .contentShape(.rect)
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityIdentifier("person-follow")
-                        }
-
-                        // THE ELLIPSIS, and it is not decoration. From the
-                        // moment somebody can see a name and a picture another
-                        // person chose, App Store guideline 1.2 asks for a way
-                        // to report it and a way to block them, and a reviewer
-                        // checks by looking for exactly this control. Every app
-                        // with profiles puts it in the same place: trailing, on
-                        // the row or on the profile, opening a short sheet.
-                        Button { acting = p } label: {
-                            Image(systemName: "ellipsis")
-                                .font(.system(size: 15, weight: .semibold))
-                                .foregroundStyle(Brand.inkSoft)
-                                .frame(width: 44, height: 44)
-                                .contentShape(.rect)
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel("More about \(p.display_name)")
-                        .accessibilityIdentifier("person-more")
+                    } header: {
+                        Text("Suggested")
+                            .font(.eyebrow).textCase(.uppercase).tracking(0.8)
+                            .foregroundStyle(Brand.inkSoft)
+                            .accessibilityIdentifier("people-suggested")
                     }
-                    .padding(.vertical, 2)
+                } else {
+                    ForEach(visible, id: \.user_id) { p in personRow(p) }
                 }
             }
             .listStyle(.plain)
             // The search box belongs to the search list only. A followers list
             // with a "Search people" bar above it is two features in one
             // screen, and the bar would filter nothing.
+            // THE FIELD ON TOP (2026-11-04), as Strava's and AllTrails'
+            // people search: drawn under the bar always, never at the foot.
             .modifier(SearchableWhen(on: source == .search, text: $query))
-            .navigationTitle(source == .search ? "Find people"
-                             : source == .followers ? "Followers" : "Following")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Done") { dismiss() }
-                }
-            }
             // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10) for the
             // person menu, the reasons and the thanks. One sheet cannot hand
             // over to the next in the same frame, so the report waits for the
@@ -356,11 +345,12 @@ struct PeopleView: View {
                 // cannot be photographed or looked at before they ship, and a
                 // control nobody has looked at is exactly what this project
                 // keeps promising not to ship.
-                if DemoPeople.on { results = DemoPeople.all }
+                if DemoPeople.on && source != .search { results = DemoPeople.all }
                 await loadFollowing()
+                await loadSuggestions()
             }
             .onChange(of: account.session?.userId) { _, _ in
-                Task { await loadFollowing() }
+                Task { await loadFollowing(); await loadSuggestions() }
             }
             .sheet(isPresented: $signingIn) {
                 SignInSheet(reason: .general, localCount: 0)
@@ -392,7 +382,12 @@ struct PeopleView: View {
                 searching = false
             }
             .task(id: query) {
-                if DemoPeople.on || source != .search { return }
+                if source != .search { return }
+                if DemoPeople.on {
+                    // The demo people answer any name typed.
+                    results = query.trimmingCharacters(in: .whitespaces).isEmpty ? [] : DemoPeople.all
+                    return
+                }
                 if account.session == nil {
                     // Nothing to search with; the empty line says why, and a
                     // Follow tap opens the sign-in sheet.
@@ -408,8 +403,134 @@ struct PeopleView: View {
                 await profiles.loadAmbassadors(for: results.map(\.user_id), token: await account.freshToken())
                 searching = false
             }
+    }
+
+    /// One person: picture, name, a badge or the reason they are suggested,
+    /// Follow, and the ellipsis. One row for search, suggestions and the
+    /// two lists, so blocking and reporting cannot drift into two versions.
+    private func personRow(_ p: Profiles.Profile, reason: String? = nil, seal: Bool = false) -> some View {
+        HStack(spacing: 12) {
+            // THE PERSON OPENS THEIR PROFILE (2026-10-19): picture
+            // and name together, as Polarsteps' and Instagram's
+            // rows do; Follow and the ellipsis stay their own.
+            // Pushed, the profile goes on top of this page and Back
+                // returns here; from a list sheet, the sheet closes first.
+                Button {
+                    if source != .search { dismiss() }
+                    navigator.push = .person(p.user_id)
+                } label: {
+            HStack(spacing: 12) {
+            ZStack {
+                Circle().fill(Brand.moss.opacity(0.12))
+                if let url = p.avatar_url, let u = URL(string: url) {
+                    TreePhoto(url: u) { Color.clear }
+                        .clipShape(.circle)
+                } else if let first = p.display_name.first, !p.display_name.isEmpty {
+                    Text(String(first).uppercased())
+                        .font(.brand(16, .black, relativeTo: .body))
+                        .foregroundStyle(Brand.moss)
+                }
+            }
+            .frame(width: 40, height: 40)
+                // The seal on the picture, as the city page's ambassador row
+                // wears it, for a suggested ambassador.
+                .overlay(alignment: .bottomTrailing) {
+                    if seal {
+                        Image(systemName: "checkmark.seal.fill")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Brand.moss)
+                            .background(Brand.ground, in: .circle)
+                            .offset(x: 3, y: 3)
+                            .accessibilityLabel("Ambassador")
+                    }
+                }
+
+            // Somebody who has signed up and never chosen a name.
+            // Said rather than filled in: a placeholder name would
+            // be the one thing this project does not do.
+            VStack(alignment: .leading, spacing: 3) {
+                Text(p.display_name.isEmpty ? "No name yet" : p.display_name)
+                    .font(.callout)
+                    .foregroundStyle(p.display_name.isEmpty ? Brand.inkSoft : Brand.ink)
+                    .foregroundStyle(moderation.hides(p.user_id) ? Brand.inkSoft : Brand.ink)
+                // The ambassador badge, komoot's Pioneer shape
+                // (AmbassadorBadge.swift); nothing for almost everybody. A
+                // suggestion says why it is there instead, in the grey line
+                // the city page's ambassador row uses (AmbassadorRow).
+                if let reason {
+                    Text(reason)
+                        .font(.system(size: 12))
+                        .foregroundStyle(Brand.inkSoft)
+                        // Two lines rather than "Photographed 4 trees..."
+                        // beside the pill (seen in the simulator, 2026-11-04).
+                        .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
+                } else {
+                    AmbassadorBadge(places: profiles.placesByUser[p.user_id] ?? [], compact: true)
+                }
+            }
+            }
+            .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("person-open")
+            Spacer(minLength: 8)
+
+            if moderation.hides(p.user_id) {
+                Button("Unblock") {
+                    guard let s = account.session else { return }
+                    Task {
+                        guard let t = await account.freshToken() else { return }
+                        await moderation.unblock(p.user_id, me: s.userId, token: t)
+                    }
+                }
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Brand.moss)
+                .buttonStyle(.plain)
+                .frame(minWidth: 78, minHeight: 44, alignment: .trailing)
+                .contentShape(.rect)
+                .accessibilityIdentifier("person-unblock")
+            } else {
+                // A PILL, as Strava, Polarsteps and Instagram draw it
+                // (CONVENTIONS.md 2026-10-02): filled in the brand
+                // colour while it says Follow, outlined once you do,
+                // so the state reads at a glance down a list. It
+                // was a bare word in moss, which read as a label.
+                Button { toggle(p) } label: {
+                    let on = followingIds.contains(p.user_id)
+                    Text(followLabel(p))
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(on ? Brand.ink : .white)
+                        .padding(.horizontal, 14)
+                        .frame(minWidth: 96, minHeight: 34)
+                        .background(on ? Color.clear : Brand.moss, in: .capsule)
+                        .overlay { if on { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) } }
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("person-follow")
+            }
+
+            // THE ELLIPSIS, and it is not decoration. From the
+            // moment somebody can see a name and a picture another
+            // person chose, App Store guideline 1.2 asks for a way
+            // to report it and a way to block them, and a reviewer
+            // checks by looking for exactly this control. Every app
+            // with profiles puts it in the same place: trailing, on
+            // the row or on the profile, opening a short sheet.
+            Button { acting = p } label: {
+                Image(systemName: "ellipsis")
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(Brand.inkSoft)
+                    .frame(width: 44, height: 44)
+                    .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("More about \(p.display_name)")
+            .accessibilityIdentifier("person-more")
         }
-        .accessibilityIdentifier("people-sheet")
+        .padding(.vertical, 2)
     }
 
     /// Send the report, and say so. The row stays where it is: reporting is
@@ -473,7 +594,8 @@ private struct SearchableWhen: ViewModifier {
 
     func body(content: Content) -> some View {
         if on {
-            content.searchable(text: $text, prompt: "Search people")
+            content.searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always),
+                               prompt: "Search people")
         } else {
             content
         }

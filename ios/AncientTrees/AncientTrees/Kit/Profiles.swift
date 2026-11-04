@@ -413,6 +413,30 @@ public final class Profiles {
         return try? JSONDecoder().decode(PublicProfile.self, from: data)
     }
 
+    /// One person who photographed trees in one place, from
+    /// suggested_photographers() (supabase/suggested-people.sql): public
+    /// profiles only, never you, never somebody blocked either way, and a
+    /// count rather than which trees or when.
+    public struct Photographer: Decodable, Sendable, Hashable {
+        public let place: String
+        public let user_id: String
+        public let display_name: String
+        public let avatar_url: String?
+        public let trees: Int
+    }
+
+    /// Who photographed trees in these places (place slug to its tree ids).
+    /// Empty, the honest-empty rule, until Hidde pastes the SQL: Find people
+    /// then suggests the ambassadors alone.
+    public func photographers(in places: [String: [String]], token: String?) async -> [Photographer] {
+        guard !places.isEmpty, let token else { return [] }
+        struct Body: Encodable { let places: [String: [String]] }
+        guard let data = try? await send(request("rpc/suggested_photographers", "POST", token: token,
+                                                 body: try? JSONEncoder().encode(Body(places: places))))
+        else { return [] }
+        return (try? JSONDecoder().decode([Photographer].self, from: data)) ?? []
+    }
+
     private func send(_ r: URLRequest) async throws -> Data {
         let (data, response) = try await Net.data(for: r)
         let code = (response as? HTTPURLResponse)?.statusCode ?? 0

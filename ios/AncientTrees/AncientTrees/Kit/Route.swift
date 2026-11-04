@@ -81,6 +81,10 @@ public enum Route: Hashable {
     /// public, or a line saying it is private. Opened from People and from a
     /// city's ambassador row.
     case person(String)
+    /// FIND PEOPLE, pushed from My trees (Hidde, 2026-11-04: "i like all your
+    /// proposals please build"): the field on top, then Suggested. It was a
+    /// full-height sheet with white under the share row.
+    case findPeople
 
     public enum Index: String, Hashable {
         case cities, countries, species, oldest

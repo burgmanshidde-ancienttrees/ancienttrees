@@ -222,7 +222,7 @@ final class FlowWalk: XCTestCase {
                  args: ["-tab=2", "-people", "-people-demo"] + signedIn, steps: [
                 Step(name: "follow-the-first") { Self.tap($0, "person-follow") },
                 Step(name: "unfollow-again") { Self.tap($0, "person-follow") },
-                Step(name: "done") { Self.tap($0, "Done") },
+                Step(name: "back") { Self.back($0) },
             ]),
 
             Flow(name: "report-and-block",

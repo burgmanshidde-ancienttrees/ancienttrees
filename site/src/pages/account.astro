@@ -35,8 +35,27 @@ import { myTreesMapScript, mapHead } from "../lib/map";
 import { SHEET_JS } from "../lib/sheet-js";
 import { PEOPLE_JS } from "../lib/people-js";
 import { icon } from "../lib/icons";
+import { getCollection } from "astro:content";
+import { cityIsRenderable } from "../lib/trees";
+import { namedAmbassadorsFor } from "../lib/ambassadors";
+import { ui } from "../lib/i18n";
 const BOOKMARK_GHOST = icon("bookmark-simple", "bold", "ic");
 const MAP_ICON = icon("map-trifold", "bold", "ic");
+const U = ui("en");
+
+// SUGGESTED under Find people's empty field (2026-11-04, the app's
+// Kit/SuggestedPeople.swift): the ambassadors the feed already names with a
+// public profile (the same answer /api/browse.json sends the app), and every
+// place's name for the "Photographed 4 trees in Utrecht" line. The people
+// who photographed trees come from suggested_photographers() for a
+// signed-in reader only (supabase/suggested-people.sql).
+const peopleCities = (await getCollection("cities")).filter(cityIsRenderable);
+const PEOPLE_DATA = JSON.stringify({
+  ambassadors: peopleCities.flatMap((c) => namedAmbassadorsFor(c.id)
+    .filter((a) => a.profile_public && a.user_id)
+    .map((a) => ({ id: a.user_id, name: a.display_name, slug: c.id, role: U.ambassadorRole(c.data.city) }))),
+  places: Object.fromEntries(peopleCities.map((c) => [c.id, c.data.city])),
+}).replace(/</g, "\\u003c");
 
 const canonical = `${BASE_URL}/account`;
 ---
@@ -149,6 +168,14 @@ const canonical = `${BASE_URL}/account`;
       <button type="button" class="people-share" id="people-share" data-text="See the trees I have collected on Ancient Trees." data-copied="Link copied" data-name="Add a name first; it is what your public profile shows." data-settings="Settings"><span class="people-share-ic"><Fragment set:html={icon("export", "bold", "ic")} /></span>Share your profile</button>
       <p class="people-empty" id="people-empty" data-none="Couldn't find that person." data-followers="Nobody follows you yet." data-following="You do not follow anybody yet." hidden></p>
       <ul class="people-list" id="people-list" data-follow="Follow" data-following="Following" data-back="Follow back" data-noname="No name yet"></ul>
+      {/* SUGGESTED, while the field is empty (2026-11-04, the app's Find
+          people page). The row is the list's own row with the grey role
+          line of the city page's ambassador row under the name. */}
+      <div class="people-sug" id="people-sug" hidden data-photographed={U.peoplePhotographed(9999, "%place%")} data-one={U.peoplePhotographed(1, "%place%")}>
+        <p class="eyebrow people-sug-h">{U.peopleSuggested}</p>
+        <ul class="people-list" id="people-sug-list"></ul>
+      </div>
+      <script type="application/json" id="people-data" set:html={PEOPLE_DATA}></script>
     </div>
     <div class="people-step" data-step="ask" hidden>
       <span class="at-sheet-tile"><Fragment set:html={icon("globe-hemisphere-east", "bold")} /></span>

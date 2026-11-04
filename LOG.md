@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: Find people gets Suggested, on both surfaces
+
+- **What changed (app):** Find people is a pushed page from the person-plus on My trees (Route.findPeople), back button top left, search field on top, Share your profile, then "Suggested": ambassadors with a public profile (places you saved or collected first), then people with a public profile who photographed trees in those places, then the other ambassadors; one line each ("Lisbon ambassador", "Photographed 4 trees in Utrecht"), the seal on an ambassador's picture, the same Follow pill and ellipsis. Never you, never a blocked person, people you follow at the end, at most 12. Typing shows search results as before. Followers and Following stay sheets with Done. Signed out the page says "Sign in to find people." as before. Kit/SuggestedPeople.swift with SuggestedPeopleTests (5 pass); -people now pushes the page, FlowWalk's find-people flow ends with Back instead of Done.
+- **What changed (web):** the /account Find people sheet shows the same Suggested list under its empty field, from the same sources (ambassadors from data/ambassadors.json at build time, places from /api/pins.json, the reader's saves and visited through the session gate), strings in UIStrings for all eight languages (peopleSuggested, peoplePhotographed).
+- **For Hidde:** paste supabase/suggested-people.sql into Supabase (SQL editor, Run). Until then both surfaces suggest the ambassadors alone. It returns, per place, only a public profile's id, name, picture and a count of trees whose photograph is published; signed-in only.
+- **Not verified:** the web part is not rendered (no Node here; CI builds it); the photographer half has never run against the database (function not pasted).
+
 ## 2026-11-04 session: Recent searches on every search field, app and web
 
 - **What changed:** under an empty search field, a signed-in person now sees their last five picks (a city, country, species, tree or town) within 90 days, each with a clock, the grey sub line, a cross to remove it, and Clear all; below it the empty screen as before. App: Screens/MapSearch.swift (both the Map tab and Discover, through its pick), store Kit/RecentSearches.swift. Web: the one search widget (site/src/lib/search-form.ts), so home, /explore and the header search on every page; Base.astro now carries the session door (COLLECTION_JS, made safe to include twice) so the header search can ask it. Strings in all eight languages. Only picks are recorded, never typed text; signed out nothing changes on either surface.

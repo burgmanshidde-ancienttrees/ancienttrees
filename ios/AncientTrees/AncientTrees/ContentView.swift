@@ -506,6 +506,8 @@ struct ContentView: View {
             ProfileView(catalogue: cat)
         case .person(let id):
             PersonProfileView(userId: id, catalogue: cat)
+        case .findPeople:
+            PeopleView(catalogue: cat)
         case .collectionMap:
             CollectionMapPage(catalogue: cat)
         case .placeMap(let place):

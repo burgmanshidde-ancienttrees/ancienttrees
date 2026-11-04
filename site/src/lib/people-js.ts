@@ -16,11 +16,23 @@
 // Follow, the same three labels on the pill. Every write goes through the one
 // gate and the reader's own session; nothing is kept in the browser.
 //
+// SUGGESTED (2026-11-04, Hidde: "i like all your proposals please build"),
+// the app's Kit/SuggestedPeople.swift: under the empty field, ambassadors with
+// a public profile (the places you saved or collected first), then public
+// profiles who photographed trees there (rpc suggested_photographers,
+// supabase/suggested-people.sql; without it, the ambassadors alone). Never
+// you, never somebody you blocked, people you follow at the end. Gone the
+// moment you type.
+//
 // SHARE YOUR PROFILE shares /profile?u=<id>. A phone gets the browser's own
 // share sheet (Web Share), as the app gets iOS's; a computer copies the link
 // and says so in the snackbar. A private profile asks first, with the words
 // the settings page already uses.
 import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
+import { icon } from "./icons";
+
+// The seal the city page's ambassador row wears (AmbassadorLine.astro).
+const SEAL = icon("seal-check", "fill", "ic").replace(/'/g, '"');
 
 export const PEOPLE_JS = `
 <script>
@@ -68,6 +80,94 @@ export const PEOPLE_JS = `
     });
   }
 
+  // SUGGESTED. The same order as SuggestedPeople.build in the app.
+  var DATA = {};
+  try { DATA = JSON.parse((el('people-data') || {}).textContent || '{}'); } catch (e) {}
+  var sug = [], pinsCity = null;
+  function treeCities() {
+    if (pinsCity) return Promise.resolve(pinsCity);
+    return fetch('/api/pins.json').then(function(r) { return r.ok ? r.json() : []; }).catch(function() { return []; })
+      .then(function(rows) {
+        pinsCity = {};
+        rows.forEach(function(r) { pinsCity[r[0]] = r[3]; });
+        return pinsCity;
+      });
+  }
+  function reasonShot(n, place) {
+    var box = el('people-sug');
+    var t = n === 1 ? box.getAttribute('data-one') : box.getAttribute('data-photographed').replace('9999', String(n));
+    return t.replace('%place%', place);
+  }
+  function loadSuggestions() {
+    sug = [];
+    Promise.all([
+      rows('/rest/v1/saves?select=tree_id&user_id=eq.' + me),
+      rows('/rest/v1/visited?select=tree_id&user_id=eq.' + me),
+      treeCities()
+    ]).then(function(r) {
+      var city = r[2], count = {};
+      r[0].concat(r[1]).forEach(function(x) { var c = city[x.tree_id]; if (c) count[c] = (count[c] || 0) + 1; });
+      var places = Object.keys(count).sort(function(a, b) { return count[b] - count[a] || (a < b ? -1 : 1); });
+      var rank = {};
+      places.forEach(function(p, i) { rank[p] = i; });
+      var want = {};
+      places.slice(0, 6).forEach(function(p) {
+        want[p] = Object.keys(city).filter(function(id) { return city[id] === p; });
+      });
+      var shots = places.length
+        ? fetch(SB + '/rest/v1/rpc/suggested_photographers', { method: 'POST',
+            headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ places: want }) })
+            .then(function(x) { return x.ok ? x.json() : []; }).catch(function() { return []; })
+        : Promise.resolve([]);
+      return shots.then(function(ph) {
+        var amb = (DATA.ambassadors || []);
+        var mine = amb.filter(function(a) { return rank[a.slug] != null; })
+          .sort(function(a, b) { return rank[a.slug] - rank[b.slug]; });
+        var others = amb.filter(function(a) { return rank[a.slug] == null; });
+        function row(a) { return { user_id: a.id, display_name: a.name, reason: a.role, seal: true }; }
+        ph = (Array.isArray(ph) ? ph : []).sort(function(a, b) {
+          var l = rank[a.place] == null ? 1e9 : rank[a.place], q = rank[b.place] == null ? 1e9 : rank[b.place];
+          return l - q || b.trees - a.trees;
+        }).map(function(x) {
+          return { user_id: x.user_id, display_name: x.display_name, avatar_url: x.avatar_url,
+                   reason: reasonShot(x.trees, (DATA.places || {})[x.place] || x.place), seal: false };
+        });
+        var seen = {}, out = [];
+        mine.map(row).concat(ph, others.map(row)).forEach(function(p) {
+          if (p.user_id === me || blocked[p.user_id] || !p.display_name || seen[p.user_id]) return;
+          seen[p.user_id] = true; out.push(p);
+        });
+        out = out.filter(function(p) { return !following[p.user_id]; })
+          .concat(out.filter(function(p) { return following[p.user_id]; })).slice(0, 12);
+        if (!out.length) return;
+        // The name and picture as their owner set them today.
+        return rows('/rest/v1/profiles?select=user_id,display_name,avatar_url&user_id=in.('
+                    + out.map(function(p) { return p.user_id; }).join(',') + ')').then(function(ps) {
+          var byId = {};
+          ps.forEach(function(p) { byId[p.user_id] = p; });
+          out.forEach(function(p) {
+            var f = byId[p.user_id];
+            if (!f) return;
+            if (f.display_name) p.display_name = f.display_name;
+            p.avatar_url = f.avatar_url;
+          });
+          sug = out;
+          paintSuggestions();
+        });
+      });
+    });
+  }
+  function paintSuggestions() {
+    var box = el('people-sug');
+    var show = mode === 'search' && !el('people-q').value.trim() && sug.length > 0;
+    box.hidden = !show;
+    // The results list keeps its height for typing; not under suggestions.
+    el('people-list').hidden = show;
+    if (!show) return;
+    el('people-sug-list').innerHTML = sug.map(rowHtml).join('');
+  }
+
   function step(name) {
     dlg.querySelectorAll('.people-step').forEach(function(d) { d.hidden = d.getAttribute('data-step') !== name; });
   }
@@ -83,7 +183,8 @@ export const PEOPLE_JS = `
         el('people-q').value = '';
         paint([]);
         if (!dlg.open) dlg.showModal();
-        if (search) { empty(); setTimeout(function() { el('people-q').focus(); }, 50); }
+        el('people-sug').hidden = true; el('people-list').hidden = false;
+        if (search) { empty(); loadSuggestions(); setTimeout(function() { el('people-q').focus(); }, 50); }
         else list(m);
       });
     }, function() { if (window.atOpenSignIn) window.atOpenSignIn(); });
@@ -120,6 +221,7 @@ export const PEOPLE_JS = `
   el('people-q').addEventListener('input', function() {
     clearTimeout(timer);
     var q = this.value.trim();
+    paintSuggestions();
     timer = setTimeout(function() {
       if (q.length < 2) { paint([]); empty(); return; }
       rows('/rest/v1/profiles?select=user_id,display_name,avatar_url&display_name=ilike.*'
@@ -142,20 +244,26 @@ export const PEOPLE_JS = `
     others = others.filter(function(p) { return !blocked[p.user_id]; })
       .concat(others.filter(function(p) { return blocked[p.user_id]; }));
     el('people-empty').hidden = others.length > 0;
+    el('people-list').innerHTML = others.map(rowHtml).join('');
+  }
+  // One row for search, the two lists and Suggested (People.swift personRow).
+  function rowHtml(p) {
     var noName = el('people-list').getAttribute('data-noname');
-    el('people-list').innerHTML = others.map(function(p) {
-      var name = p.display_name || '';
-      var av = p.avatar_url
-        ? '<span class="people-av" style="background-image:url(' + esc(String(p.avatar_url).replace(/[()'"]/g, '')) + ')"></span>'
-        : '<span class="people-av">' + esc(name.charAt(0).toUpperCase()) + '</span>';
-      var pill = blocked[p.user_id] ? ''
-        : '<button type="button" class="people-pill' + (following[p.user_id] ? ' on' : '') + '" data-id="' + esc(p.user_id) + '" aria-pressed="' + (following[p.user_id] ? 'true' : 'false') + '">' + esc(label(p.user_id)) + '</button>';
-      return '<li class="' + (blocked[p.user_id] ? 'is-blocked' : '') + '"><a class="people-who" href="/profile?u=' + encodeURIComponent(p.user_id) + '">' + av
-        + '<span class="people-name' + (name ? '' : ' none') + '">' + esc(name || noName) + '</span></a>' + pill + '</li>';
-    }).join('');
+    var name = p.display_name || '';
+    var seal = p.seal ? '<span class="people-seal" aria-hidden="true">${SEAL}</span>' : '';
+    var av = p.avatar_url
+      ? '<span class="people-av" style="background-image:url(' + esc(String(p.avatar_url).replace(/[()'"]/g, '')) + ')">' + seal + '</span>'
+      : '<span class="people-av">' + esc(name.charAt(0).toUpperCase()) + seal + '</span>';
+    var pill = blocked[p.user_id] ? ''
+      : '<button type="button" class="people-pill' + (following[p.user_id] ? ' on' : '') + '" data-id="' + esc(p.user_id) + '" aria-pressed="' + (following[p.user_id] ? 'true' : 'false') + '">' + esc(label(p.user_id)) + '</button>';
+    var text = p.reason
+      ? '<span class="people-text"><span class="people-name">' + esc(name) + '</span><span class="people-reason">' + esc(p.reason) + '</span></span>'
+      : '<span class="people-name' + (name ? '' : ' none') + '">' + esc(name || noName) + '</span>';
+    return '<li class="' + (blocked[p.user_id] ? 'is-blocked' : '') + '"><a class="people-who" href="/profile?u=' + encodeURIComponent(p.user_id) + '">' + av
+      + text + '</a>' + pill + '</li>';
   }
 
-  el('people-list').addEventListener('click', function(e) {
+  dlg.addEventListener('click', function(e) {
     var b = e.target.closest('.people-pill');
     if (!b) return;
     var id = b.getAttribute('data-id');
@@ -173,6 +281,10 @@ export const PEOPLE_JS = `
         b.classList.toggle('on', !on);
         b.setAttribute('aria-pressed', on ? 'false' : 'true');
         b.textContent = label(id);
+        // The same person may stand in Suggested and in the results.
+        dlg.querySelectorAll('.people-pill[data-id="' + id + '"]').forEach(function(o) {
+          o.classList.toggle('on', !on); o.setAttribute('aria-pressed', on ? 'false' : 'true'); o.textContent = label(id);
+        });
         var n = el('n-following');
         if (n) n.textContent = Math.max(0, (parseInt(n.textContent, 10) || 0) + (on ? -1 : 1));
       }).catch(function() { b.disabled = false; });

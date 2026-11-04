@@ -27,6 +27,18 @@ public enum DemoPeople {
               display_name: "Sofia", avatar_url: nil),
     ]
 
+    /// -people-demo: what Find people suggests under its empty field
+    /// (2026-11-04), the design page's four rows: two ambassadors, then two
+    /// people who photographed trees in places you saved.
+    public static let suggestions: [SuggestedPerson] = [
+        .init(profile: .init(user_id: "00000000-0000-0000-0000-0000000000a4", display_name: "Hugo V.", avatar_url: nil),
+              reason: SuggestedPeople.reason(ambassadorOf: "Lisbon"), ambassador: true),
+        .init(profile: .init(user_id: "00000000-0000-0000-0000-0000000000a5", display_name: "Loic S.", avatar_url: nil),
+              reason: SuggestedPeople.reason(ambassadorOf: "Paris"), ambassador: true),
+        .init(profile: all[0], reason: SuggestedPeople.reason(photographed: 4, in: "Utrecht"), ambassador: false),
+        .init(profile: all[1], reason: SuggestedPeople.reason(photographed: 2, in: "Baarn"), ambassador: false),
+    ]
+
     /// -people-demo: Marieke's profile is public, Tom's and Sofia's private,
     /// so the sweep photographs both faces of a profile (2026-10-19).
     public static func publicProfile(_ userId: String) -> Profiles.PublicProfile? {
