@@ -40,6 +40,10 @@
 - **For a later look:** live phl_001's transport says trolley route 34 for Woodland Avenue; the new phl_005 says route 11 (route 11 runs on Woodland Avenue). Not changed here.
 - **Cost:** about 518k tokens (three verify passes, ~355k; one write pass, 163k) for 9 written trees, about 58k a tree, well over the 15k target: Philadelphia has no register and from-zero yield was two to five trees a pass.
 
+## 2026-11-04 session: three pages earned their way back into Google
+
+- **What changed:** /tenerife/el-drago-milenario, /olympic-national-park/duncan-cedar and /malaga leave the googlebot noindex from the next deploy. Google kept showing them after 11-01 with clicks (43/1, 20/1, 16/1). The rule (`EARNED_BACK`, Hidde: "Ja, zet aan"): 2 clicks, or 1 click and 10 impressions since 11-01; no translations, question, listing or thin-place pages; at most 10 a week. Undo: `EARNED_BACK = False`, or take a path out of data/earned-back.json.
+
 ## 2026-11-04 session: most of Google's recovery is on pages we tagged noindex
 
 - **Measured** (new `scripts/tagged_shown.py`, daily from data-digest.yml into data/tagged-still-shown.json, also printed by seo-diagnose.yml): from 11-01 to 11-03, 867 pages carrying the googlebot noindex earned 2,305 impressions and 31 clicks, against about 2,400 and 45 for the whole site. The tag is live (checked on /tenerife/el-drago-milenario); Google has simply not recrawled them, some for weeks, and now ranks them again. As it recrawls, this recovery will shrink by our own tag: read a fall in the digest against this file before calling it a new demotion.

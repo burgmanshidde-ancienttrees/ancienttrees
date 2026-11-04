@@ -148,7 +148,7 @@ READER_ONLY = True
 # clicks after the 11-01 recovery leaves the Google-side cuts. The rule and
 # its weekly cap live in scripts/tagged_shown.py, the pages in
 # data/earned-back.json. A thin place or a question page is never touched.
-EARNED_BACK = False
+EARNED_BACK = True  # on, Hidde 2026-11-04: "Ja, zet aan"
 
 
 _NOTED = None
