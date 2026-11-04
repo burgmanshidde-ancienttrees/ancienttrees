@@ -119,7 +119,8 @@
    "summary": "Every map repaints about once a second for a season halo that is switched off.",
    "fix": "Goes with the Season code being set aside (Hidde, 2026-11-04).",
    "first_seen": "2026-11-04",
-   "status": "open"
+   "status": "fixed",
+   "fixed_in": "18f4deaa8"
   },
   {
    "id": "APP-CUT-walks-season-plus",
@@ -129,7 +130,8 @@
    "summary": "Walks, Season and Plus are dark in the store build but their code still runs.",
    "fix": "Set the code aside; it stays in git history.",
    "first_seen": "2026-11-04",
-   "status": "open",
+   "status": "fixed",
+   "fixed_in": "18f4deaa8",
    "note": "Hidde, 2026-11-04: \"set the code aside - we will come back to this but probably completely in a new way\""
   },
   {
@@ -140,7 +142,8 @@
    "summary": "About a thousand lines nobody reaches: oldBody and its parts, CountryView, CollectionMapPage, PlaceMapPage, dead navigator mailboxes.",
    "fix": "Remove, keeping PlaceAmbassadors.",
    "first_seen": "2026-11-04",
-   "status": "open"
+   "status": "fixed",
+   "fixed_in": "18f4deaa8"
   },
   {
    "id": "APP-UX-one-add-photo",
