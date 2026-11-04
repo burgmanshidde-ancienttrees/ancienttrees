@@ -359,12 +359,12 @@ def check_no_strategy_in_workflows():
 
 
 def check_the_code_is_read_every_week():
-    """The Monday code review of the app and the website stays wired.
+    """The weekly code review of the app and the website stays wired.
 
     Hidde, 2026-11-04, after one review found bugs no screenshot could show:
     "how can we make sure that this kind of analysis is part of our system not
     me thinking to ask you". This holds the three parts in place: the step in
-    review.yml that runs BRIEF_CODE_AUDIT.md on Mondays, the brief itself, and
+    review.yml that runs BRIEF_CODE_AUDIT.md when it is due (every 7 days), the brief itself, and
     data/code-audit.json, the ledger that stops a finding being reported twice
     and that the night run's ladder reads. Removing this check needs Hidde.
     """
@@ -374,9 +374,9 @@ def check_the_code_is_read_every_week():
     brief = root / "BRIEF_CODE_AUDIT.md"
     ledger = root / "data" / "code-audit.json"
     if not wf.exists() or "BRIEF_CODE_AUDIT.md" not in wf.read_text(encoding="utf-8"):
-        out.append("review.yml no longer runs BRIEF_CODE_AUDIT.md: the Monday code review is gone")
+        out.append("review.yml no longer runs BRIEF_CODE_AUDIT.md: the weekly code review is gone")
     if not brief.exists():
-        out.append("BRIEF_CODE_AUDIT.md is missing: the Monday code review has nothing to follow")
+        out.append("BRIEF_CODE_AUDIT.md is missing: the weekly code review has nothing to follow")
     try:
         rows = json.loads(ledger.read_text(encoding="utf-8"))["findings"]
         ids = [r["id"] for r in rows]
@@ -755,6 +755,54 @@ def check_ambassador_requests_reach_hidde():
         return ["scripts/daily_digest.py no longer shows open ambassador requests among the daily "
                 "blocks (Hidde, 2026-10-25: the most important thing there is)."]
     return []
+
+
+def check_the_quality_line_stays_in_the_digest():
+    """The quality line sits under Hidde's numbers, on DATA.md and on the
+    digest page, with every input it was given.
+
+    Hidde, 2026-11-04: "I'd rather have some sort of overview and a green,
+    red, or orange light somewhere in the daily digest than more text. I
+    don't want to have to look at it if everything's green." And the same
+    afternoon, "please add the three quality lines": the site-up check, page
+    speed and the libraries' security alerts. This holds the line in the
+    digest (daily_digest.py inserts it right under the headline, show_digest.py
+    redraws it with lights), each input in scripts/quality.py, the page's
+    error reporter in Base.astro, the outside check, the speed measure and
+    Dependabot's config. Review due by date, never by weekday, rides along.
+    Removing this check needs Hidde."""
+    root = Path(__file__).resolve().parent.parent
+
+    def text(rel):
+        try:
+            return (root / rel).read_text(encoding="utf-8")
+        except OSError:
+            return ""
+    need = [
+        ("scripts/daily_digest.py", "blocks.insert(1, quality_section(today))", "the line under his numbers"),
+        ("scripts/show_digest.py", "quality_html()", "the lights on the digest page"),
+        ("scripts/quality.py", "ci_cell(\"deploy.yml\"", "the web build on main"),
+        ("scripts/quality.py", "ci_cell(\"ios.yml\"", "the iOS build on main"),
+        ("scripts/quality.py", "review_cells(today)", "the code and fresh-eyes reviews being current"),
+        ("scripts/quality.py", "bug_cell(\"WEB\"", "open web bugs"),
+        ("scripts/quality.py", "bug_cell(\"APP\"", "open app bugs"),
+        ("scripts/quality.py", "ios_live()", "app crashes"),
+        ("scripts/quality.py", "web_live()", "website errors"),
+        ("scripts/quality.py", "uptime_cell(now)", "the site-up check"),
+        ("scripts/quality.py", "speed_cell()", "page speed"),
+        ("scripts/quality.py", "security_cell(now)", "the libraries' security alerts"),
+        ("site/src/layouts/Base.astro", "<Fragment set:html={WEB_ERRORS_JS} />", "every page reporting its errors"),
+        (".github/workflows/uptime.yml", "ancienttrees.app", "the outside site-up check"),
+        (".github/workflows/page-speed.yml", "page_speed.py --if-due", "the weekly page speed measure"),
+        (".github/dependabot.yml", "package-ecosystem: \"npm\"", "security updates for the site's libraries"),
+        (".github/workflows/review.yml", "-ge 7 ]", "the code review due after seven days, not on a weekday"),
+    ]
+    out = []
+    for rel, needle, what in need:
+        if needle not in text(rel):
+            out.append("%s no longer carries %s (`%s`): the digest's quality line "
+                       "(Hidde, 2026-11-04)." % (rel, what, needle))
+    return out
 
 
 def check_app_downloads_are_their_own_block():
@@ -3516,6 +3564,7 @@ def main():
         check_a_deleted_account_keeps_its_photographs,
         check_notes_are_read_before_they_are_marked_read,
         check_ambassador_requests_reach_hidde,
+        check_the_quality_line_stays_in_the_digest,
         check_every_reader_photo_reaches_hidde,
         check_everything_sent_reaches_hidde,
         check_every_site_route_is_claimed_or_excluded,
@@ -3718,6 +3767,7 @@ def main():
     failures += check_a_deleted_account_keeps_its_photographs()
     failures += check_notes_are_read_before_they_are_marked_read()
     failures += check_ambassador_requests_reach_hidde()
+    failures += check_the_quality_line_stays_in_the_digest()
     failures += check_every_reader_photo_reaches_hidde()
     failures += check_everything_sent_reaches_hidde()
     failures += check_every_site_route_is_claimed_or_excluded()

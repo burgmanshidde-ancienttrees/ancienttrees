@@ -27,6 +27,9 @@ permissions:
   # night shift has gone silent. workflow_dispatch is the documented exception
   # to GITHUB_TOKEN's no-recursive-runs rule, so this cannot loop.
   actions: write
+  # The quality line reads open Dependabot alerts (scripts/quality.py); when
+  # the token cannot, that cell is grey and nothing fails.
+  security-events: read
 
 concurrency:
   group: data-digest

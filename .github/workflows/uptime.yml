@@ -1,0 +1,45 @@
+name: Site up
+
+# Is ancienttrees.app answering, asked from outside (Hidde, 2026-11-04, the
+# quality line: "please add the three quality lines"). Every fifteen minutes
+# GitHub fetches the home page, one tree page and the map's pin file and
+# expects a 200 and a string each must carry. The run's own green or red is
+# the record: nothing is written to the repository, so there are no commits.
+# scripts/quality.py reads the recent runs with gh for the Web "Live" light:
+# red when the last two checks failed, orange when any failed in 24 hours.
+#
+# GitHub delivers scheduled runs late and sometimes drops them; that makes
+# this a coarse watch, which is all it is for. Each fetch is retried twice so
+# one slow answer is not an outage.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: uptime
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      # The tree is the Totteridge Yew (data/cities/london.json, lon_001). If
+      # it is ever retired or renamed, change the path and its string here.
+      - name: Home page
+        run: curl -fsS -m 20 --retry 2 --retry-delay 5 https://ancienttrees.app/ -o home.html
+      - name: Home page carries its name
+        run: grep -q "Ancient Trees" home.html
+      - name: A tree page
+        run: curl -fsS -m 20 --retry 2 --retry-delay 5 https://ancienttrees.app/london/totteridge-yew -o tree.html
+      - name: The tree page carries the tree
+        run: grep -q "Totteridge" tree.html
+      - name: The map's pins
+        run: curl -fsS -m 20 --retry 2 --retry-delay 5 https://ancienttrees.app/api/pins.json -o pins.json
+      - name: The pins carry a known tree
+        run: grep -q "lon_001" pins.json

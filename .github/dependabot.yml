@@ -1,0 +1,20 @@
+# Security and version updates for the website's code libraries and for the
+# workflows' actions (Hidde, 2026-11-04, the quality line). Dependabot opens
+# pull requests; nothing merges them by itself, and the night run never does
+# (CLAUDE.md, "How runs fire"). A session reads one, lets CI build it, and
+# merges it by hand. scripts/quality.py lights orange for any open security
+# alert and red for a high or critical one older than seven days.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/site"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 2

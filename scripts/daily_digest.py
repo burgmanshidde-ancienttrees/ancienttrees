@@ -3565,6 +3565,15 @@ def app_crashes_section(_today=None):
     return "\n".join(out)
 
 
+def quality_section(_today=None):
+    """The quality line (scripts/quality.py): Web, iOS and Android, each a
+    light for the next version, what is live and the open bugs. One line
+    when nothing is orange or red, else the line and only the rows that are
+    (Hidde, 2026-11-04)."""
+    import quality
+    return quality.section()
+
+
 def urgent_crash_line(_today=None):
     """One line above the headline when a store build needs a new build now
     (Hidde, 2026-10-16: flag a crash that needs an immediate update)."""
@@ -4088,6 +4097,14 @@ def main():
         blocks.insert(0, headline_section(today))
     except Exception as e:
         blocks.insert(0, "headline_section: failed today (%s)." % str(e)[:90])
+    # Right under his numbers: one light per platform, one line when all is
+    # well (Hidde, 2026-11-04: "I don't want to have to look at it if
+    # everything's green"). scripts/quality.py; show_digest.py redraws it
+    # with real lights from the same function.
+    try:
+        blocks.insert(1, quality_section(today))
+    except Exception as e:
+        blocks.insert(1, "**Quality**: failed today (%s)." % str(e)[:90])
     # Above even the headline: a crash that needs a new build now.
     try:
         urgent = urgent_crash_line(today)

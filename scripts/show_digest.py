@@ -334,6 +334,36 @@ def fresh_answers(md):
     return md
 
 
+QUALITY_MARK = "QUALITYLINEGOESHERE"
+
+
+def quality_placeholder(md):
+    """Take the morning's quality block out and leave a marker where it
+    stood (under his numbers), so the page can draw real lights computed now.
+    An entry from before the line existed gets the marker under the numbers."""
+    start = md.find("**Quality**")
+    if start >= 0:
+        end = md.find("\n\n**", start + 1)
+        end = len(md) if end < 0 else end
+        return md[:start] + QUALITY_MARK + md[end:]
+    head = md.find("**The numbers that matter**")
+    if head < 0:
+        return QUALITY_MARK + "\n\n" + md
+    end = md.find("\n\n**", head + 1)
+    end = len(md) if end < 0 else end
+    return md[:end] + "\n\n" + QUALITY_MARK + md[end:]
+
+
+def quality_html():
+    """The lights computed now (Hidde, 2026-11-04). When that fails, one line
+    saying so, never an empty space where the line should be."""
+    try:
+        import quality
+        return quality.html(quality.assess())
+    except Exception as e:
+        return "<p><strong>Quality</strong>: could not be drawn (%s)</p>" % html.escape(str(e)[:90])
+
+
 def mark_seen():
     """He has looked: everything up to when that page was built is seen, and
     so is every reader photograph it counted."""
@@ -409,7 +439,9 @@ def main():
         print("READER WORDS NOT SHOWN: no database key (~/.ancienttrees-supabase.env); the page still says 'read it in the database'.")
     elif missing:
         print("reader words: %d shown, %d not matched in the database" % (shown, missing))
-    page = PAGE % {"day": html.escape(day), "body": render(md)}
+    md = quality_placeholder(md)
+    body = render(md).replace("<p>%s</p>" % QUALITY_MARK, quality_html(), 1)
+    page = PAGE % {"day": html.escape(day), "body": body}
     for folder, name in ((OUT, "index.html"), (PREVIEW, "digest.html")):
         try:
             os.makedirs(folder, exist_ok=True)

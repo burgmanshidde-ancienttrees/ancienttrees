@@ -50,7 +50,7 @@ concurrency:
 jobs:
   review:
     runs-on: ubuntu-latest
-    # 100 since 2026-11-04: on Mondays the code review follows the daily one.
+    # 100 since 2026-11-04: when the code review is due it follows the daily one.
     timeout-minutes: 100
     env:
       ASTRO_TELEMETRY_DISABLED: "1"
@@ -257,22 +257,37 @@ jobs:
           # than this one.
           claude_args: "--max-turns 220 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""
 
-      # The CODE behind both surfaces, Mondays only (Hidde, 2026-11-04). Its
-      # own step and its own turn cap, so it can never eat the daily review's,
-      # and its own "already done" so the afternoon cron catches a Monday
-      # morning that died. What to read and where it goes: BRIEF_CODE_AUDIT.md.
-      - name: Is it Monday and is the code review still to do
+      # The CODE behind both surfaces, weekly by due date rather than by
+      # weekday (Hidde, 2026-11-04: weekly runs that miss a Monday must not
+      # wait a week). Due when the newest "## YYYY-MM-DD code" heading in
+      # REVIEW.md is seven or more days old, or there is none; the full sweep
+      # when the newest "code (full)" heading is 28 or more days old. Both
+      # crons ask, so a missed run is caught within hours. Its own step and
+      # its own turn cap, so it can never eat the daily review's. What to
+      # read and where it goes: BRIEF_CODE_AUDIT.md.
+      - name: Is the code review due
         id: code
         run: |
-          TODAY=$(date -u +%F)
           git pull --quiet --rebase origin main || true
-          if [ "$(date -u +%u)" != "1" ]; then
-            echo "due=no" >> "$GITHUB_OUTPUT"
-          elif grep -qE "^## $TODAY code" REVIEW.md 2>/dev/null; then
-            echo "REVIEW.md already carries the code review for $TODAY"
-            echo "due=no" >> "$GITHUB_OUTPUT"
-          else
+          NOW=$(date -u +%s)
+          LAST=$(grep -oE "^## [0-9]{4}-[0-9]{2}-[0-9]{2} code" REVIEW.md 2>/dev/null | cut -c4-13 | sort | tail -1)
+          FULL=$(grep -oE "^## [0-9]{4}-[0-9]{2}-[0-9]{2} code \(full\)" REVIEW.md 2>/dev/null | cut -c4-13 | sort | tail -1)
+          # REVIEW.md keeps fourteen days (archive_logs.py); older code
+          # headings live in archive/, so read those too for the full sweep.
+          if [ -z "$FULL" ]; then
+            FULL=$(cat archive/REVIEW*.md 2>/dev/null | grep -oE "^## [0-9]{4}-[0-9]{2}-[0-9]{2} code \(full\)" | cut -c4-13 | sort | tail -1)
+          fi
+          age() { if [ -z "$1" ]; then echo 9999; else echo $(( (NOW - $(date -u -d "$1" +%s)) / 86400 )); fi; }
+          echo "newest code review: ${LAST:-none} ($(age "$LAST") days); newest full sweep: ${FULL:-none} ($(age "$FULL") days)"
+          if [ "$(age "$LAST")" -ge 7 ]; then
             echo "due=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "due=no" >> "$GITHUB_OUTPUT"
+          fi
+          if [ "$(age "$FULL")" -ge 28 ]; then
+            echo "full=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "full=no" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Review the code of the app and the website
@@ -284,7 +299,10 @@ jobs:
           prompt: |
             You are the CODE REVIEWER for Ancient Trees. Read
             BRIEF_CODE_AUDIT.md and do exactly what it says, today's date in
-            UTC. You review; you never fix. Write findings to
+            UTC. This run is a FULL SWEEP: ${{ steps.code.outputs.full }}
+            (yes means the whole app and the website's scripts, and the
+            heading reads "code (full)"; no means the last seven days only).
+            You review; you never fix. Write findings to
             data/code-audit.json and REVIEW.md as you find them and commit
             after each surface, so a run that dies late leaves half a review
             rather than none.

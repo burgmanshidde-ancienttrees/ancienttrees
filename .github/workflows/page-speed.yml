@@ -1,0 +1,49 @@
+name: Page speed
+
+# Core Web Vitals of our ten most-seen pages, through Google's PageSpeed
+# Insights API (Hidde, 2026-11-04, the quality line). Knocks daily and
+# measures only when the last measurement is seven days old, so a dropped
+# knock costs a day, never a week. scripts/page_speed.py; the result is the
+# small data/page-speed.json, committed only when it changed.
+#
+# PSI_API_KEY is optional in the script and needed in practice: the keyless
+# quota is shared worldwide and was exhausted on 2026-11-04. Without the
+# secret the step measures nothing and the light stays grey.
+
+on:
+  schedule:
+    - cron: "40 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: page-speed
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Measure when due
+        env:
+          PSI_API_KEY: ${{ secrets.PSI_API_KEY }}
+        run: python3 scripts/page_speed.py --if-due
+      - name: Commit the measurement
+        run: |
+          git config user.name "burgmanshidde-ancienttrees"
+          git config user.email "304936064+burgmanshidde-ancienttrees@users.noreply.github.com"
+          git add data/page-speed.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing new measured."
+            exit 0
+          fi
+          git commit -m "Page speed: the week's Core Web Vitals"
+          for i in 1 2 3 4 5; do
+            if git -c rebase.autoStash=true pull --rebase && git push; then exit 0; fi
+            sleep $((i * 5))
+          done
+          exit 1
