@@ -1,6 +1,6 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named or their profile is public (public true, since 2026-10-28); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": "2026-11-04T12:26Z",
+  "synced": "2026-11-04T13:39Z",
   "ambassadors": [
     {
       "user_id": "de4ed97a-01e5-42ce-83c3-28883cf6d91b",
@@ -92,6 +92,15 @@
       "public": true,
       "since": "2026-11-02",
       "display_name": "Loic S.",
+      "profile_public": true
+    },
+    {
+      "user_id": "873a220d-e03b-49ac-9bae-7061e05ee39b",
+      "place_slug": "leuven",
+      "place_name": "Leuven",
+      "public": true,
+      "since": "2026-11-04",
+      "display_name": "Violaine G.",
       "profile_public": true
     },
     {
@@ -450,6 +459,13 @@
       "place_slug": "pamplona",
       "place_name": "Pamplona",
       "date": "2026-11-02"
+    },
+    {
+      "row": 618,
+      "user_id": "p_c7e99b2bedd456c2f63d5d80",
+      "place_slug": "leuven",
+      "place_name": "Leuven",
+      "date": "2026-11-04"
     }
   ],
   "told": {
@@ -863,6 +879,16 @@
         "pam_025"
       ],
       "since": "2026-11-02",
+      "mailed": []
+    },
+    "leuven": {
+      "trees": [
+        "lvn_001",
+        "lvn_002",
+        "lvn_003",
+        "lvn_004"
+      ],
+      "since": "2026-11-04",
       "mailed": []
     }
   }
