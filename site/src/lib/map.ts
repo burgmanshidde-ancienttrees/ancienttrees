@@ -300,8 +300,27 @@ function atPinLayers(map, source, treeLayer, open, hollowExpr, hollow) {
 }`;
 export function mapScript(body: string): string {
   return `\n<script defer src="${MAPLIBRE_JS}"></script>\n<script>\n` +
-    `document.addEventListener("DOMContentLoaded", function () {\n${body}\n${COLLAPSE_ATTRIBUTION}\n});\n</script>\n`;
+    `document.addEventListener("DOMContentLoaded", function () {\n${CAN_MAP_JS}\n${body}\n${COLLAPSE_ATTRIBUTION}\n});\n</script>\n`;
 }
+
+/** Whether this browser can draw a MapLibre map at all. Without WebGL the
+ * Map constructor throws "Failed to initialize WebGL", which stopped every
+ * line after it: on a tree page, Back, Take me there and Show us where it is
+ * (web_errors, 2026-11-04, Chrome 149 on a tree page). Every map is created
+ * behind atCanMap(); a page without one keeps everything else working and
+ * its map box simply stays empty, as it did before. Asked once per page. */
+export const CAN_MAP_JS = `
+function atCanMap() {
+  if (atCanMap.v === undefined) {
+    try {
+      var c = document.createElement('canvas');
+      atCanMap.v = !!(window.WebGLRenderingContext &&
+        (c.getContext('webgl2') || c.getContext('webgl') || c.getContext('experimental-webgl')));
+    } catch (e) { atCanMap.v = false; }
+  }
+  return atCanMap.v;
+}
+`;
 
 /** MapLibre's stylesheet. The `preconnect` to unpkg.com that used to sit here
  * went with the vendoring on 2026-08-16 (see site-config.ts): warming a
@@ -315,6 +334,7 @@ export function mapHead(): string {
  * single_pin_script(), build_site.py:1203-1219. */
 export function singlePinScript(lat: number, lng: number): string {
   return mapScript(`
+if (!atCanMap()) return;
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [${lng}, ${lat}], zoom: 14.5, scrollZoom: false, ${ONE_WORLD},
@@ -402,6 +422,7 @@ var ALL = ${JSON.stringify(data)}.features;
 var TREES = { type: 'FeatureCollection', features: atMarkPiles(ALL) };
 ${filters}
 var SHEET = ${sheet ? "true" : "false"};
+if (!atCanMap()) return;
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [0, 0], zoom: 3, ${ONE_WORLD},
@@ -539,6 +560,7 @@ atMapFilters({
 });
 
 // One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
+if (!atCanMap()) return;
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [8, 48], zoom: 3.4, ${ONE_WORLD},
@@ -825,6 +847,7 @@ export function myTreesMapScript(): string {
 // An empty collection opens on the whole world, as Polarsteps' empty map
 // does, not on Europe: an Australian with no trees yet saw an empty Europe
 // (Hidde, 2026-11-01). The trees, once there, frame themselves (paint()).
+if (!atCanMap()) return;
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   bounds: [[-165, -50], [180, 70]], ${ONE_WORLD},

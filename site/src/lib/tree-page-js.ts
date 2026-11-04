@@ -37,6 +37,12 @@ var wide = window.matchMedia('(min-width: 900px)');
 // non-interactive, zoom 16; the side card has no map on these pages.
 var noPhoto = !!(hero && hero.querySelector('.td-nophoto'));
 var map = null;
+// No WebGL, no map (CAN_MAP_JS in ./map): the map's own buttons go, so
+// nothing on the page offers what it cannot do; the rest runs as always.
+if (!atCanMap()) {
+  mapEl = null;
+  document.querySelectorAll('.td-inset, .td-inset-hit, .td-side-map, .td-pin-open').forEach(function (el) { el.style.display = 'none'; });
+}
 
 function interactive(on) {
   if (!map) return;
@@ -194,7 +200,7 @@ if (pinDlg) {
     sendBtn.disabled = metres < 5;
   }
   document.addEventListener('click', function (e) {
-    if (!e.target.closest || !e.target.closest('.td-pin-open')) return;
+    if (!e.target.closest || !e.target.closest('.td-pin-open') || !atCanMap()) return;
     e.preventDefault();
     pinDlg.showModal();
     if (acct) acct.hidden = !!session();

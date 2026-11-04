@@ -193,6 +193,7 @@ atMapFilters({
 });
 // The opening frame: the cluster, not every outlier. See homeBounds().
 var HOME = ${JSON.stringify(home)};
+if (!atCanMap()) return;
 var map = new maplibregl.Map({
   container: 'map',
   style: '${MAP_STYLE}',
