@@ -44,8 +44,12 @@ import UIKit
 
 // NEW SET, 2026-10-14 (Hidde picked them from the real cover, side by side:
 // a whole tree, daylight, something for scale, over crown close-ups):
-//   hero-1  Hidde's own photograph, the camphor of Kofuji Tenmangu, Itoshima
-//           (fuk_018 on our map; his, so no credit)
+//   hero-1  Tsukazaki no Kusu (kmt_001 on our map), Higa4 on
+//           Wikimedia Commons, CC0, so no credit. Replaced Hidde's Kofuji
+//           Tenmangu photograph on 2026-11-04 (his pick, option A): that file
+//           was 1200 x 1600 stretched to a 2868 screen and read blurry. This
+//           one is cut from a 3990 x 6010 original at the screen's own
+//           1320 x 2868, not lifted (it measured 132 of 255).
 //   hero-2  Kaijun Zhu, Unsplash (the camphor with the roots, was hero-3;
 //           the one Hidde kept from the first set)
 //   hero-3  General Sherman, Eric Kilby, CC BY-SA 2.0, via Wikimedia Commons
