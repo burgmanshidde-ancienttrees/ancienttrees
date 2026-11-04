@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-10](archive/LOG-2026-10.md)
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
 ## 2026-11-04 session: the Rockface Sycamore found, photographed and re-pinned
 
 - **What changed (Edinburgh):** a Cramond Association member answered the 10-29 photo ask, walked to the Rockface Sycamore (edi_008) and sent its what3words square and photographs. Our pin was about 550 m off; it now stands on that square, confirmed by the photos' GPS tags (8 m apart). Two photos live (lead: the trunk leaning out over the walkway; strip: where it leaves the bank), credited to the Cramond Association for now. Story and recognition line no longer say "at the start of the walkway" (it stands about 600 m upriver from the village), and the colon reveal is gone, so the page can be indexed.
@@ -152,7 +161,6 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-11-04 night run (window from 06:47 UTC)
 
 No reader submissions, no tree notes. health.py: only finding is that the live site is 4h behind main (deploy dispatch due at the end of the window). Nothing new went live: the 24-hour pace is full (25 own trees between 14:54 and 19:45 UTC on 11-03, so new trees wait until about 14:54 UTC). A write pass on the UK READY leads (Winchester, Cambridge, Oxford, Canterbury, Stratford) wrote cam_010 (single-leaf nut pine) and oxf_007 (pagoda tree of West Walk), held for the pace in build_uk_south.py (14 trees now wait there). Winchester 0 of 5 (sources too thin, Woodland Trust data not used), the other 9 leads handed back with reasons. Enrichment pass on Barcelona, Edinburgh and Sintra: 1 of 9 trees improved (sin_008 best_time October, chestnut fruit), 19 gaps recorded as dead ends (nts.org.uk returns 403 to fetches). Stray untracked files from a test build (data/cities/canterbury.json, mottisfont.json, stratford-upon-avon.json) are NOT committed; `git clean` was refused, they must not be added. Sintra claim left in place (sin_006 verified, unmerged).
-<!-- archive-index -->
 ## 2026-11-03 session: US and UK outreach sourcing, 49 contacts recorded (rung 4), nothing sent
 
 **What changed:** the private outreach file (data/outreach-contacts-archive.json, gitignored, pushed with private_store.py) gained 49 hand-checked contacts: regional press 22 US and 9 UK, independent city guides 6 US and 4 UK, nature titles 5 US and 3 UK. Each address was seen on the organisation's own page, which is its `source_url`, and was checked against the send log, batch files and earlier rows (one duplicate dropped). Separately, `press_desks.py --city` ran for 24 US and UK cities with no desk on file (Washington DC, San Diego, Savannah, Miami, Spokane, Salt Lake City, the Hawaii islands, Philadelphia, Pittsburgh, Charleston, Fort Worth, Cambridge, Oxford, Cardiff, Manchester, Bristol, Brighton, Belfast, North Wales and others); that Wikidata pool is noisy and needs the usual sifting before a batch. `contacts_db.py --build`: press 653 ready, guide 23, nature 18.
