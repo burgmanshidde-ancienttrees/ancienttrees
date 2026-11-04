@@ -1,0 +1,38 @@
+{
+  "city": "Tallahassee",
+  "leads": [
+    {
+      "name": "Patriarch Oak, Azalea Drive",
+      "note": "green plaque identifies it, across from an apartment complex; WFSU 2019; no address or coordinate found; 66 Patriarch Oaks were plaqued from 1974 but no list found",
+      "reason": "no exact pin in reach"
+    },
+    {
+      "name": "Champion pondcypress, Museum of History and Natural History (Tallahassee Museum)",
+      "note": "Florida champion layer row, 30.40825,-84.34689, measured 2007, circumference 127 and height 64 with unclear units; museum is paid entry",
+      "reason": "units unverified, no life check"
+    },
+    {
+      "name": "Thomasville Big Oak, Georgia",
+      "note": "famous oak about 35 miles north; outside Tallahassee, no public transport",
+      "reason": "outside the city's day-trip bar"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "May Oak",
+      "reason": "collapsed in 1986, only a stump with a plaque remains in the Chain of Parks (WFSU 2019)"
+    },
+    {
+      "name": "Shingles Oaks (Miles Street)",
+      "reason": "removed, per WFSU 2019"
+    },
+    {
+      "name": "Canopy roads (Old St. Augustine, Miccosukee, Centerville, Old Bainbridge)",
+      "reason": "avenues, not a single collectible point"
+    },
+    {
+      "name": "Benton Oak (Boynton Still, FAMU Way)",
+      "reason": "former private backyard on a road reroute, access and survival unverified, age disputed (500 claimed, 125 max by a forester)"
+    }
+  ]
+}

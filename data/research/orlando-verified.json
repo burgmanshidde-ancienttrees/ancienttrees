@@ -1,0 +1,116 @@
+[
+ {
+  "id": "orl_001",
+  "name": "The Big Tree",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "age_estimate": "roughly 350 to 450 years",
+  "age_min": 350,
+  "age_max": 450,
+  "age_basis": "source",
+  "location": {
+   "address": "Big Tree Park, 930 N Thornton Avenue, Orlando, FL 32803",
+   "latitude": 28.5581147,
+   "longitude": -81.3658076,
+   "neighborhood": "Park Lake / Highland"
+  },
+  "verified_sources": [
+   "https://www.orlando.gov/Parks-the-Environment/Orlandos-Significant-Trees",
+   "https://ca.news.yahoo.com/withstood-hurricanes-lightning-strikes-pests-090551746.html",
+   "https://www.orlandomagazine.com/?p=2660"
+  ],
+  "official_register": {
+   "name": "City of Orlando Significant Trees tour",
+   "url": "https://www.orlando.gov/Parks-the-Environment/Orlandos-Significant-Trees"
+  },
+  "access": "Free. Small city park built around the single tree, open to the public.",
+  "transport": "Thornton Avenue north of downtown; LYNX bus stops on nearby Orange Ave / Virginia Dr (not timed by the pass); about 10 minutes by car from Lake Eola.",
+  "location_precision": "confirmed",
+  "curation_status": "verified",
+  "verify_notes": "City of Orlando (owner): 'likely between 350 and 400 years old, the oldest tree in Orlando', Big Tree Park, 930 N Thornton Avenue. USA Today network article (via Yahoo, fetched): 'over 400 years old', city Families, Parks and Recreation manager calls it the oldest of 100,000+ city-maintained trees; trunk 'as thick as 8 feet' (the article does not say diameter or girth, so no girth_cm recorded); limbs reach out over 30 feet each side; struck by lightning at least three times in the 1970s (Orlando Magazine has 1972, 'The Immortals', not fetched in detail); city put up a placard in the 1920s and bought the land about 30 years later to open the park. Archangel Ancient Tree Archive (Michigan nonprofit) climbed and sampled it in February (2024 per the article's timing, article date not shown) to clone it; city expects clones. Age sources differ (350-400 city, 400+ news): state as a range, no ring count. Pin: OpenStreetMap natural=tree node 'Big Tree' (osm node 13199683551) at 28.5581147, -81.3658076; the park is essentially the tree. Alive: lifecheck RECENT, iNaturalist observation 345565913 dated 2026-03-27 at the point. Not the same as Longwood's Big Tree Park (The Senator, fell 2012; Lady Liberty is live as lgw_001). Photo: none found openly licensed in a geosearch within 250 m on Commons (one search, rate limited after); try Commons category search by name later.",
+  "story": "Orlando looks after more than 100,000 trees, and its parks department names this live oak as the oldest of them. The city's own estimate is likely 350 to 400 years. A USA Today network report goes further and says more than 400. Neither figure comes with a ring count, so the fair answer is a range.\n\nThe tree has done some living in that time. Lightning struck it at least three times in the 1970s. Its limbs still reach out more than 30 feet on each side, and the same report puts the trunk as thick as 8 feet, without saying whether that means across or around.\n\nPeople noticed it early. The city put up a placard at the tree in the 1920s and about 30 years later bought the land and opened a park, which is why Big Tree Park on Thornton Avenue is essentially one oak and the ground beneath it. More recently the Archangel Ancient Tree Archive, a Michigan nonprofit, climbed it and took samples to clone it, and the city expects young copies of its oldest tree to come out of that work.\n\nDo not mix it up with the other Big Tree Park, in Longwood, north of the city. That park's famous Senator fell in 2012, and its neighbour Lady Liberty still stands.\n\nEntry is free. The park sits north of downtown, about ten minutes by car from Lake Eola, with LYNX buses on Orange Avenue and Virginia Drive nearby.",
+  "how_to_recognise": "You can recognise it as the single great live oak that Big Tree Park is built around, its limbs reaching more than 30 feet out on each side. It stands at 930 North Thornton Avenue, north of downtown.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "attribution_url": null,
+   "status": "missing"
+  }
+ },
+ {
+  "id": "orl_002",
+  "name": "The Mayor",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "age_estimate": "over 200 years",
+  "age_min": 200,
+  "age_max": 350,
+  "age_basis": "source",
+  "location": {
+   "address": "Orlando Loch Haven Park, 777 E Princeton Street, Orlando, FL 32803 (beside the Mennello Museum of American Art)",
+   "latitude": 28.57,
+   "longitude": -81.3673,
+   "neighborhood": "Loch Haven / Audubon Park"
+  },
+  "verified_sources": [
+   "https://www.orlando.gov/Parks-the-Environment/Orlandos-Significant-Trees",
+   "https://news.yahoo.com/timber-tour-discover-7-orlando-090000136.html",
+   "https://waymarking.com/waymarks/wm73BA_Loch_Haven_Park_Orlando_FL"
+  ],
+  "official_register": {
+   "name": "City of Orlando Significant Trees tour",
+   "url": "https://www.orlando.gov/Parks-the-Environment/Orlandos-Significant-Trees"
+  },
+  "access": "Free. Public park; the oak is on the lawn by the Mennello Museum, which has an interpretive display near the tree.",
+  "transport": "Loch Haven Park cultural campus north of downtown Orlando; LYNX stops and the SunRail Florida Hospital Health Village station are within roughly 10 to 20 minutes on foot (not timed by the pass).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "City of Orlando (owner): 'Over 200 years old, \"The Mayor\", is a Live Oak at Loch Haven Park that has survived despite limb breaks in 2008 and 1998.' Timber tour feature (Yahoo/USA Today network, fetched): 'more than 300-year-old', 'limbs hanging to the ground on all sides', an information display near the tree says Mayaca people lived in Central Florida when it was a sapling and that at roughly a third of its present height (about 50 ft) the US Constitution was ratified. Ages conflict (200+ city vs 300+ feature; one caption gives 1688); recorded as a broad range, no basis. Pin approximate: Mennello Museum point (28.5700, -81.3673) from a listing, not the tree; the tree is beside the museum, location text 'center of this park' in a travel guide. lifecheck NONE at that point, and no dated post-2008 news item on the tree found, so alive rests on the city's current page: flagged. Needs an aerial or OSM tree node before confirmed.",
+  "story": "The Mayor has its own information display, and the display thinks big. It says the Mayaca people were living in central Florida when this live oak was a sapling, and that the tree stood at about a third of its present height when the United States ratified its Constitution.\n\nThe dates underneath that are less settled than the sign suggests. The City of Orlando, which owns the park, says over 200 years. A USA Today network feature on the city's trees says more than 300, and one caption gives 1688. None of them shows how it was worked out, so the age is somewhere from two centuries upward. If anyone has dated it properly, we would like to hear.\n\nWhat the city states plainly is that it is a survivor. The Mayor broke limbs in 1998 and again in 2008 and is still on the city's list of significant trees. The limbs it kept hang down to the ground on all sides.\n\nIt stands in Loch Haven Park, the cultural campus north of downtown, on the lawn beside the Mennello Museum of American Art. Our pin marks the museum rather than the trunk, and the latest word on the tree is the city's own listing, so if you go, tell us how it is doing. Entry is free. LYNX buses and the SunRail station at Florida Hospital Health Village are roughly ten to twenty minutes away on foot.",
+  "how_to_recognise": "You can recognise it by its limbs, which hang down to the ground on all sides, and by the information display near the trunk. It stands on the lawn beside the Mennello Museum of American Art in Loch Haven Park.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "attribution_url": null,
+   "status": "missing"
+  }
+ },
+ {
+  "id": "orl_003",
+  "name": "Constitution Green Oak",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "age_estimate": "roughly 125 to 175 years",
+  "age_min": 125,
+  "age_max": 175,
+  "age_basis": "source",
+  "location": {
+   "address": "Constitution Green, 300 S Summerlin Avenue (S Eola Drive), Orlando, FL 32801",
+   "latitude": 28.5388,
+   "longitude": -81.3691,
+   "neighborhood": "Thornton Park"
+  },
+  "verified_sources": [
+   "https://www.orlando.gov/Parks-the-Environment/Orlandos-Significant-Trees",
+   "https://www.cfpublic.org/2015-03-24/intersection-constitution-green",
+   "https://www.clickorlando.com/news/historic-oak-tree-to-be-saved-by-city-of-orlando"
+  ],
+  "official_register": {
+   "name": "City of Orlando Significant Trees tour",
+   "url": "https://www.orlando.gov/Parks-the-Environment/Orlandos-Significant-Trees"
+  },
+  "access": "Free. Public green in Thornton Park, tree near the centre, branches resting on the ground.",
+  "transport": "Thornton Park, about 5 minutes on foot from Lake Eola Park; LYNX downtown routes nearby (not timed by the pass).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "City of Orlando: 'The big Live Oak at Constitution Green Park in Downtown Orlando is probably 125-175 years old', recumbent branching on one side, branches touching the ground, crown shaped by a second tree that stood opposite. WMFE/Central Florida Public Media 2015-03-24: 'by some estimates 175 years old', on the city's significant tree list; the land was then leased from a private family who wanted to sell, public campaign to save it. ClickOrlando 2015: city to save the tree and park, 'somewhere between 125 to 175 years old and experts say the only way to know how old it really is is to cut it down'; limbs reach the ground. Florida Politics headline (not readable, Cloudflare): Orlando council spends nearly 6 million to save a tree (treat as unverified detail). Pin: park centre from the OSM park polygon (osm way 69535450, 28.5388, -81.3691); park is roughly 125 m by 80 m, so approximate, not a site of 50 m. Alive: lifecheck RECENT, iNaturalist observation 173232191 dated 2023-07-16 at the point (not confirmed same trunk); city page current. Age is an expert estimate, not measured.",
+  "story": "The only sure way to learn this oak's age, experts told a local news station in 2015, would be to cut it down. Orlando chose to keep the question open.\n\nThat was the year the tree nearly lost its ground. Constitution Green, a small lawn in Thornton Park a few minutes from Lake Eola, was leased from a private family who wanted to sell, and the oak at its centre was on the city's list of significant trees. A public campaign followed, and the city announced it would save both the tree and the park.\n\nSo the age stays an estimate. The city says probably 125 to 175 years, and Central Florida Public Media reported it as 175 by some estimates. That makes it young beside Orlando's oldest oaks. The reason to come is the shape.\n\nOn one side its branches lean out and come down to rest on the grass. The city explains why. Another tree once stood opposite, and the oak grew its crown away from it, so what you see now is the outline of a neighbour that is no longer there.\n\nThe green is free and open, an easy walk from Lake Eola Park, with LYNX downtown routes close by. Our pin marks the middle of the green rather than the trunk, and the oak stands near its centre.",
+  "how_to_recognise": "You can recognise it by the branches on one side that lean out and rest on the ground, a crown shaped by a tree that once stood opposite. It is the big live oak near the centre of Constitution Green in Thornton Park.",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "attribution_url": null,
+   "status": "missing"
+  }
+ }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tlh_001",
+    "name": "Lichgate Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "roughly 175 to several hundred years",
+    "age_min": 170,
+    "age_max": 300,
+    "age_basis": "derived",
+    "girth_cm": 676,
+    "location": {
+      "address": "Lichgate on High Road, 1401 High Road, Tallahassee, FL (short wooded path from the parking area)",
+      "latitude": 30.46037,
+      "longitude": -84.31263,
+      "neighbourhood": "High Road, north Tallahassee"
+    },
+    "verified_sources": [
+      "https://blog.wfsu.org/blog-coastal-health/2019/09/live-oaks-in-tallahassee-part-1-history-age-and-exceptional-trees/",
+      "https://en.wikipedia.org/wiki/Lichgate_on_High_Road",
+      "https://www.millertreesrv.com/blog/the-lichgate-oak-and-more-do-you-know-these-scenic-tallahassee-trees",
+      "https://commons.wikimedia.org/wiki/File:Lichgate_Oak.jpg"
+    ],
+    "access": "Grounds of Lichgate on High Road (National Register site since 2006) are open to the public; Wikipedia says the property is open to the public and small groups; a listing search result (not a fetched page) says dawn to dusk, no admission fee, small parking lot on the property; cottage access is separate. Confirm hours at lichgate.com.",
+    "transport": "By car, small parking lot on the property; no public transport checked.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED on age conflict only. SPECIES: Southern live oak (WFSU, Miller Tree Service, the pictured tree). SIZE: WFSU (public radio blog, Sept 2019) reports a diameter of about 84.7 inches (about 215 cm) at an agreed measuring height, taken as DBH; girth_cm 676 is that diameter times pi, my calculation, not a published girth. Height was measured but the figure is not given on the page. AGE: WFSU gives about 172 years by a growth calculation, rounded to 175 by the forester; Miller Tree Service calls it 'several hundred years' with no basis. No ring count. Range kept broad: 170 to 300 (the 300 is an upper bound I set for the vague 'several hundred' claim, not a source figure). WFSU also notes the tree is alive as of its filming and no plaque is mentioned. PROPERTY: Lichgate cottage and garden; Jepsen bought the land in 1955, died 24 Dec 1995, a group took over care by Aug 1997, NRHP listing 31 March 2006 (Wikipedia). Wikipedia property coordinate 30.4603,-84.3119 (about 25 m from the tree). LIFE: scripts/lifecheck.py RECENT (iNaturalist observation 2026-09-20, https://www.inaturalist.org/observations/401961637); Commons photograph 2019-10-13. PIN: geotag of the Commons photograph taken under the crown at 30.46037,-84.31263, the crown dominates the frame; treated as a GPS fix at the tree, confirmed. WHICH TRUNK: the oak is the Lichgate Oak the WFSU measured; Tallahassee's other famous oaks (May Oak collapsed 1986) are not alive. One search summary claimed Live Oak Society registration; not seen on a fetched page, not recorded.",
+    "story": "A forester worked out this oak's age from its trunk and got 172 years, then rounded it to 175, because nobody believes a tree to the year. That calculation, published by the public radio station WFSU in 2019, is the only age for the Lichgate Oak that shows its working. A local tree service calls it several hundred years old and gives no basis at all, so the fair answer is somewhere from about 175 years upward, and nobody has counted a ring.\n\nThe measurement behind the estimate is solid. WFSU's team put the trunk at about 84.7 inches across, roughly 215 centimetres, which works out at close to seven metres around. Stand under it and the crown is most of what you can see.\n\nIt grows on the grounds of Lichgate on High Road, a small cottage and garden in north Tallahassee. The land was bought in 1955. Its owner died on Christmas Eve 1995, and by August 1997 a group had taken over the care of the place. In 2006 the property went on the National Register of Historic Places.\n\nTallahassee's other famous oaks are gone. The May Oak collapsed in 1986.\n\nThe grounds are open to the public, reached by a short wooded path from a small parking lot on the property. Listings give dawn to dusk with no fee, but check Lichgate's own website before you go.",
+    "how_to_recognise": "You can recognise it by its trunk, about 215 centimetres across, under a crown wide enough to fill the view. It stands on the grounds of Lichgate on High Road, a short walk along the wooded path from the parking lot.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Lichgate_Oak.jpg",
+      "license": "CC BY 4.0",
+      "attribution": "RagraKulak",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Lichgate_Oak.jpg",
+      "status": "approved",
+      "note": "Viewed: low wide shot, whole crown and trunk in leaf, daylight and colour; Cadiz standard met. Further CC BY-SA 3.0 photos by Ebyabe: File:Tallahassee FL Lichgate Oak01/02/03.jpg."
+    }
+  }
+]

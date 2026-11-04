@@ -1,0 +1,43 @@
+{
+ "city": "Orlando",
+ "leads": [
+  {
+   "id": "orl_lead_001",
+   "name": "Camphor allee, Leu Gardens",
+   "species": "Camphor Laurel (Cinnamomum camphora)",
+   "location": "1920 N Forest Ave, Orlando (paid entry)",
+   "reason": "City page says 'allee of huge camphor trees', no age or single tree; an avenue is not a collectible point. Look for one named specimen with a measurement."
+  },
+  {
+   "id": "orl_lead_002",
+   "name": "Apopka sycamore, Florida champion (pending)",
+   "species": "American Sycamore (Platanus occidentalis)",
+   "location": "Apopka City Hall, downtown Apopka (28.67283, -81.50806)",
+   "reason": "Champion layer pk 296, status PENDING, 192 in circumference, 77 ft, measured 2014; outside Orlando, not life-checked."
+  },
+  {
+   "id": "orl_lead_003",
+   "name": "Large live oaks along Central Blvd, Lake Eola Park",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "location": "Lake Eola Park, Orlando",
+   "reason": "City page names a line of large live oaks without ages or a single tree; a lead if one trunk can be picked out."
+  }
+ ],
+ "blocked": [
+  {
+   "id": "orl_blk_001",
+   "name": "The Senator (Longwood)",
+   "reason": "Fell in 2012, never ships."
+  },
+  {
+   "id": "orl_blk_002",
+   "name": "Tosohatchee WMA champions (swamp tupelo, dahoon holly rows)",
+   "reason": "Remote wildlife management area with no public trail to the individual trees, coordinates are register points deep in swamp; not a walkable tree."
+  },
+  {
+   "id": "orl_blk_003",
+   "name": "Winter Park, Greenwood Cemetery, Mead Botanical Garden",
+   "reason": "One pass each: Winter Park's own canopy is 40 to 60 year laurel oaks and recent plantings; no individually named or dated oak at Greenwood or Mead found."
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "city": "Tampa",
+ "leads": [
+  {
+   "id": "tpa_lead_001",
+   "name": "Grand Oak, Philippe Park",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "location": "Philippe Park, Safety Harbor (Pinellas County parks)",
+   "reason": "A tree-service blog says over 300 years; a travel write-up says maybe 200+; no register, no coordinate, no dated source. Needs Pinellas County Parks source and a pin."
+  },
+  {
+   "id": "tpa_lead_002",
+   "name": "Lover's Oak, Safety Harbor",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "location": "Safety Harbor",
+   "reason": "Seen only as a Waymarking listing title (wm127J6); not read. Candidate for the Safety Harbor cluster with the Baranoff Oak."
+  },
+  {
+   "id": "tpa_lead_003",
+   "name": "Lutz laurel oak, Florida champion",
+   "species": "Laurel Oak (Quercus laurifolia)",
+   "location": "18306 Swan Lake Dr, Lutz (Hillsborough)",
+   "reason": "Champion layer pk 957 (circumference 216 in, height 84 ft, 2013), but it stands between two houses on private ground; no public access."
+  }
+ ],
+ "blocked": [
+  {
+   "id": "tpa_blk_001",
+   "name": "Hillsborough County champion layer other rows",
+   "reason": "Only 3 Hillsborough rows in the FFS champion layer; two are an invasive guava test record with bad coordinates, one is the private Lutz oak. No finding aid for Tampa."
+  },
+  {
+   "id": "tpa_blk_002",
+   "name": "Tampa Heritage and Grand Tree designations",
+   "reason": "No named trees found on tampa.gov; web search found no Tampa Heritage Tree page, only a 32-inch grand tree definition in press. Confirms the data/register-scouting.json note."
+  },
+  {
+   "id": "tpa_blk_003",
+   "name": "Oaklawn Cemetery, Ybor Centennial Park, Bayshore, Hyde Park, Hillsborough River State Park",
+   "reason": "One pass each by search; no individually named or dated tree surfaced (Oaklawn results were about the cemetery's 1850 founding only)."
+  }
+ ]
+}

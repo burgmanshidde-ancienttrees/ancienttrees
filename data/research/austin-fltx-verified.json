@@ -1,0 +1,66 @@
+[
+  {
+    "id": "aus_011",
+    "name": "The Central Market Oak",
+    "species": "Texas Live Oak (Quercus fusiformis)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Central Park, behind Central Market North Lamar, 4001 North Lamar Boulevard (official record: 3820 1/2 Guadalupe St), Austin, TX 78756",
+      "latitude": 30.30595,
+      "longitude": -97.73955,
+      "neighbourhood": "The Triangle / Central Park"
+    },
+    "verified_sources": [
+      "http://web.archive.org/web/2025/https://austintreeoftheyearawards.org/winners-gallery",
+      "https://www.austinchronicle.com/arts/2020-07-31/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners",
+      "https://austin.com/10-majestic-austin-trees-that-will-inspire-you/",
+      "https://www.waymarking.com/waymarks/WMVKGY_Tree_of_the_Year_2008_Austin_TX",
+      "https://www.inaturalist.org/observations/33198349"
+    ],
+    "official_register": {
+      "name": "Austin Tree of the Year Awards (TreeFolks and City of Austin Parks and Recreation), 2008 Large Tree of the Year, winners gallery",
+      "url": "https://www.austintreeoftheyearawards.org/winners-gallery"
+    },
+    "access": "Free. Public park with gravel paths behind the Central Market North Lamar store; walk out the back of the store and take the path along the pond.",
+    "transport": "Central Market North Lamar bus stops on North Lamar Blvd, about a 5 minute walk; roughly 12 to 15 minutes by Capital Metro bus from downtown (not timed).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: trunk identity and pin. FACTS: 2008 Austin Tree of the Year, Large Tree category (official TreeFolks/City of Austin winners gallery: Escarpment live oak Quercus fusiformis, nominated by a resident, location 'Central Park, 3820 1/2 Guadalupe St., Austin 78751', gallery lists 'Does Tree Still Exist? Yes'). Program ran 2007 to 2012 under the City Parks and Recreation Urban Forestry division, revived 2022 by TreeFolks. Austin Chronicle (2020-07-31, writer visited every winner): 'We hung out under the 150-foot-wide, tentaclelike branches of an escarpment live oak, the 2008 winner, in Central Park.' austin.com listicle calls it the Yum Yum Tree / Central Market Oak, giant live oak in the park behind the store, local lore (unverified, Reddit-sourced) that Austin State Hospital patients once slipped out to meet under it, land once belonged to the State Hospital. iNaturalist 33198349 (2019-09-20, position accuracy 40 m): 'Per the sign, this Escarpment Live Oak won the City of Austin Tree of the Year award in 2008. At that time, it was 50 ft tall'; an on-site sign therefore exists. Waymarking WMVKGY (posted 2017-04-29, visited 2018-11-17) puts it at N 30 18.357 W 097 44.373 and says branches reach about 30 ft each side of the trunk; that spread (about 60 ft) CONFLICTS with the Chronicle's 150 ft, so either the waymark understates or it is a neighbouring oak. The pin is the waymark coordinate; the sign photo (iNat 33198349) sits about 50 m ESE of it, and the pond-side area holds several oaks (iNat shows Q. fusiformis, Q. virginiana, Q. shumardii, Q. stellata within 100 m), so the exact trunk is not proven: approximate. Alive: Chronicle visit 2020; waymark visit 2018; lifecheck.py RECENT 2026-06-19 (iNat nearby, not proven to be this trunk); iNat Q. fusiformis observations at the pin 2025-10 and 2026-03. No age or girth found anywhere (sign says 50 ft tall in 2008; do not quote a girth). Ownership of Central Park not settled by any source (official record names it a park; access by foot from the store is described by the austin.com and waymarking pages). Photo: Commons geosearch within 200 m returned no tree photograph; none found.",
+    "story": "Austin's Large Tree of the Year for 2008 grows behind a supermarket. Walk out the back of Central Market on North Lamar, follow the gravel path along the pond into Central Park, and you come to the Texas live oak that the city and the tree charity TreeFolks picked that year.\n\nThe award ran from 2007 to 2012 under the city's urban forestry division and was revived by TreeFolks in 2022. A sign by the tree recorded it at 50 feet tall when it won. When the Austin Chronicle visited every winner in 2020, its writer described hanging out under 150-foot-wide, tentacle-like branches. A visitors' waymark says the branches reach about 30 feet either side of the trunk, less than half that. Either the waymark undersold it or it describes a neighbour, because several oaks stand by the pond and our pin is not yet proven to be on the right trunk. The award sign is the thing to look for.\n\nSome people call it the Yum Yum Tree. A local story, with nothing written down to back it, says this land once belonged to the Austin State Hospital and that patients used to slip out to meet under the oak. Treat that as lore.\n\nNobody has published an age or a girth for it. If you know either, tell us.\n\nThe park is free. Buses stop on North Lamar about five minutes' walk away, roughly a quarter of an hour from downtown.",
+    "how_to_recognise": "You can recognise it by the Tree of the Year sign beside it, from its 2008 win, and its long, spreading branches. It stands in Central Park by the pond, reached on the gravel path from the back of Central Market North Lamar.",
+    "photo": {
+      "status": "missing"
+    }
+  },
+  {
+    "id": "aus_012",
+    "name": "The UT Tower Mesquite",
+    "species": "Honey Mesquite (Prosopis glandulosa var. glandulosa)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 140,
+    "age_basis": "source",
+    "location": {
+      "address": "University of Texas at Austin, east side of the Main Building tower near the Will C. Hogg Building, Austin, TX 78712",
+      "latitude": 30.28596,
+      "longitude": -97.73878,
+      "neighbourhood": "University of Texas campus"
+    },
+    "verified_sources": [
+      "https://facilitiesservices.utexas.edu/news/stories-stories-four-giants-forty-acres",
+      "https://biodiversity.utexas.edu/news/features/campus-biodiversity-mesquite",
+      "https://alcalde.texasexes.org/2025/01/the-way-back-speak-for-the-trees",
+      "https://www.inaturalist.org/observations/298773596"
+    ],
+    "access": "Free. Open campus grounds beside the Tower; no ticket or gate.",
+    "transport": "On the UT campus, about 10 minutes on foot from the Capitol (1 km); many Capital Metro routes stop on Guadalupe St and San Jacinto Blvd.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: species stated only to genus by the sources, pin inferred. FACTS: UT Facilities Services feature 'Four giants of the Forty Acres' (March 2023) names a Prosopis mesquite 'around the corner from the Will C. Hogg building' as one of four giant campus trees and says only a few mesquites remain around UT, though thousands once grew in Austin; no age or girth given. UT campus biodiversity page (2018-08-31) calls it one of the oldest Prosopis individuals on campus, on the east side of the Main Tower near the WCH building, and notes more mesquite stood on campus in the late 1880s. Alcalde (Texas Exes magazine, Jan 2025) calls it the 'monster mesquite' near the Tower and says it was planted around the turn of the 20th century; a 2008 Alcalde piece (not fetched) is described in a search summary only. Age therefore 'over a century' from a vague source repeated vaguely; the planting claim is the magazine's, not a dated record, and mesquite is normally self-seeded, so treat 'planted' loosely. Species: iNaturalist research-grade observations 2021-04 to 2025-07 (ids 75508818, 75705012, 76213242, 136862788, 298773596, accuracy 5 to 26 m) cluster at 30.28596, -97.73878 (about 50 m east of the Tower) and read Neltuma (Prosopis) glandulosa, honey mesquite; that identification rests on iNaturalist alone. The cluster matches the 'east side of the tower near WCH' description but no source gives a coordinate or plaque for the named tree, hence approximate. Alive: iNat observation 2025-07-17 at the cluster. Campus ground, so no location_site. No girth or height from any source. Photo: Commons geosearch within 200 m shows only building and skyline photographs; none of the tree. Constitution Oak (same UT feature, east side of the Tower, planted 1937) was NOT delivered: no coordinate, which trunk unknown, 89 years old.",
+    "story": "Thousands of mesquites once grew in Austin. Around the University of Texas only a few remain, and this one, on the east side of the Main Building's tower, is the one the university counts among the four giants of its Forty Acres.\n\nThe Texas Exes magazine, Alcalde, calls it the monster mesquite and says it was planted around the turn of the twentieth century. Take planted loosely. Mesquite usually seeds itself, and the magazine gives no record behind the date. The university's own biodiversity page says only that it is one of the oldest mesquites on campus, and notes that more of them stood on these grounds in the late 1880s. So the honest age is over a century, with no firmer number. Nobody has published a girth or a height either, and if you have one, tell us.\n\nEven the species carries a footnote. The university's pages say mesquite and stop there. The identification as honey mesquite comes from observations naturalists have logged at this spot on iNaturalist between 2021 and 2025. Those observations are also how we placed it, about 50 metres east of the tower near the Will C. Hogg Building, so the pin is close rather than exact.\n\nIt stands on open campus ground, free and ungated, about ten minutes on foot from the Texas Capitol, with Capital Metro buses on Guadalupe Street and San Jacinto Boulevard.",
+    "how_to_recognise": "You can recognise it as the big mesquite on the east side of the Main Building tower, one of only a few mesquites left on campus. It stands about 50 metres east of the tower, near the Will C. Hogg Building.",
+    "photo": {
+      "status": "missing"
+    }
+  }
+]

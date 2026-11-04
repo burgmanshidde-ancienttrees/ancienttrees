@@ -1,0 +1,38 @@
+[
+  {
+    "id": "gvl_001",
+    "name": "Cellon Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "more than 200 years (estimate)",
+    "age_min": 180,
+    "age_max": 300,
+    "age_basis": "source",
+    "girth_cm": 991,
+    "height_m": 27.7,
+    "location": {
+      "address": "Cellon Oak Park, 4100 NW 169th Place, Gainesville, FL 32653 (near LaCrosse, Alachua County)",
+      "latitude": 29.81177,
+      "longitude": -82.39082,
+      "neighbourhood": "LaCrosse (Alachua County, north of Gainesville)"
+    },
+    "verified_sources": [
+      "https://www.wcjb.com/2025/04/10/alachua-county-park-closes-protect-200-year-old-tree-lightning-strikes",
+      "https://www.wuft.org/news/2019/03/21/floridas-largest-live-oak-protected-amongst-gainesvilles-canopy-loss/",
+      "https://www.wuft.org/news/2023/10/04/floridas-champion-live-oak-tree-stands-tall-a-new-statewide-record-holder-in-alachua/"
+    ],
+    "official_register": {
+      "name": "Florida Forest Service Champion Trees register (PK 199, Florida Co-Champion Live Oak)",
+      "url": "https://ffs.fdacs.gov/ChampionTrees/Home.mvc/Detail/199"
+    },
+    "access": "Free. Alachua County park bought by the county in 1989 (WUFT 2019); a mown 10-acre lawn around a single tree, two picnic tables and a grill, no restrooms. Third-party app lists 8 AM to 7 PM daily (not the county's own page; confirm). Closed 10 to 11 April 2025 for a lightning-protection installation, reopened after (WCJB).",
+    "transport": "About 19 km north-west of central Gainesville and the University of Florida; no public transport verified. By car only as far as this pass found.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: a county park and register plus press, but no photo with a geotag and no public transport. LONG-DAY-TRIP: roughly 19 km (straight line) from UF; rule says within about 30 minutes by public transport; none found, so the writer or queue may prefer to keep it as a lone tree page. ALIVE: lifecheck RECENT 2026-10-31 (iNaturalist, https://www.inaturalist.org/observations/412314976, within about 150 m of the register point); WCJB 2025-04-10: Alachua County Parks and Open Space installed a new lightning protection system to keep lightning from killing the tree. SIZE: register 2018 measurement as seen on the register's public ArcGIS layer: circumference 390 inches (991 cm), height 91 ft (27.7 m), crown spread 171 ft; WCJB 2025: measures more than 32 feet around and about 91 feet high; WUFT 2019: 91 ft tall, circumference more than 30 ft. A 2019/2023 WUFT piece says it is the Florida co-champion; WUFT 2023: the title passed in October 2022 to a bigger-trunked live oak on private land in Alachua (36.5 ft around, 78 ft tall, crown 180 ft); Cellon Oak is about 13 ft taller. Species size check: 991 cm is 118% of the species reference of 843 cm (n=11, species_size.py). AGE: WCJB: more than 200 years old (no source named); WUFT 2019 caption: estimated planted in 1832 and calls it a 187-year-old tree; an unattributed blog says 300 to 500 years, rejected as unsupported (same blog says no way to age it without killing it). Nobody cored it. Held broad. CONDITION per blog (not a source for facts): lightning rods, cable support for a large limb. NOTE: the register spells the place Cellon, WUFT 2015 and a UF fact sheet spell it Ceylon; Cellon is the park's name. PIN: register coordinate in a single-tree park; no aerial check or geotagged photo this pass, so approximate. No Commons photo exists (searched Cellon Oak and geosearch within 400 m, none).",
+    "story": "Alachua County bought ten acres in 1989 for the sake of one tree, and the park is still just that. A mown lawn, two picnic tables, a grill and the Cellon Oak.\n\nThe Florida Forest Service's champion tree register measured it in 2018 at 390 inches around, about 9.9 metres, 91 feet tall, with a crown spreading 171 feet. The register lists it as Florida's co-champion live oak. In October 2022, WUFT reported, the title passed to a live oak on private land elsewhere in Alachua with a thicker trunk, 36.5 feet round. The Cellon Oak is still about 13 feet the taller of the two.\n\nIts age is an estimate. A 2019 WUFT caption put its planting at about 1832, a local television station says more than 200 years, and nobody has cored it. A blog's 300 to 500 years has nothing behind it.\n\nLightning is what worries the county. In April 2025 it closed the park for two days to fit a new lightning protection system, meant to keep a strike from killing the tree.\n\nYou will see the name spelled Ceylon in some older reports. Cellon is the park's own spelling. The park lies near LaCrosse, about 19 km north-west of central Gainesville and the University of Florida. We found no public transport, so plan on a car. Entry is free, a third-party listing gives the hours as 8 in the morning to 7 at night, and there are no restrooms.",
+    "how_to_recognise": "You can recognise it as the single tree the park's mown ten-acre lawn is kept around, 91 feet tall with a crown spreading 171 feet. It stands in Cellon Oak Park, near LaCrosse north-west of Gainesville.",
+    "photo": {
+      "status": "missing"
+    }
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "gld_002",
+    "name": "The Goliad Anaqua",
+    "species": "Anacua (Ehretia anacua)",
+    "age_estimate": "roughly two centuries",
+    "age_min": 150,
+    "age_max": 250,
+    "age_basis": "source",
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Goliad State Park and Historic Site, Mission Espiritu Santo de Zuniga, 108 Park Road 6, Goliad, TX 77963 (in front of the museum, near the chapel entrance)",
+      "latitude": 28.6572,
+      "longitude": -97.387,
+      "neighbourhood": "Mission Espiritu Santo, south of Goliad"
+    },
+    "location_site": {"name": "Mission Espiritu Santo museum and patio", "radius_m": 50},
+    "verified_sources": [
+      "https://tpwmagazine.com/archive/2006/jun/getaways2",
+      "https://tpwmagazine.com/archive/2023/dec/travel/",
+      "https://famoustreesoftexas.tfs.tamu.edu/goliad-anacua/",
+      "https://en.wikipedia.org/wiki/Goliad_State_Park_and_Historic_Site"
+    ],
+    "official_register": null,
+    "access": "Inside Goliad State Park and Historic Site (Texas Parks and Wildlife), which charges a day-use entrance fee (TPWD page showed $4 per person on 2026-11-04; check before going). Park hours not captured.",
+    "transport": "By car from Goliad town, about 3 km; no public transport.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: age sources are vague and disagree in wording; pin is the Famous Trees of Texas point (28.6572,-97.387, finding aid, coordinates only), park-level so approximate, but the tree is named as standing in front of the museum beside the chapel so location_site fits. Facts: (1) Texas Parks and Wildlife Magazine June 2006 (tpwd owner of the ground): 'Look for the large anaqua tree in front of the museum. The tree once stood where the patio is now located; in order to save the tree, Stripling ordered that it be dug up and moved away from the building. When the architect returned for a visit in 1981, he found the tree still shading the patio and thriving in its new location.' CCC rebuilt the mission from 1935 under architect Raiford Stripling. (2) TPW Magazine Dec 2023 (author visited, guide Kersten Berry): 'the anacua was not alive when this mission was built by the Spanish in 1749, it took root among the ruins and was later relocated by the Civilian Conservation Corps' in the 1930s. So the tree is younger than 1749 by TPW's own account, i.e. under about 280 years. (3) Famous Trees of Texas (Texas A&M Forest Service, finding aid) page says 'more than two centuries old', no size given; the 'eighteen feet in diameter' on that page is the root ball moved in the 1930s, NOT the trunk. Wikipedia's Goliad State Park article says 'nearly two centuries old' citing that same page; these two readings differ (more than 200 vs nearly 200), so age is stated as roughly two centuries, range 150 to 250, no sharpening. No girth or height found. Alive: 2023 TPW article describes it as shading the grounds; iNaturalist observation near the mission dated 2026-10-16 by lifecheck (https://www.inaturalist.org/observations/408829478, not checked to be this trunk). Species: anaqua/anacua, Ehretia anacua, a south Texas native; Famous Trees spells it Anaqua and Anacua. Not an oak; the mission's other trees not named. Two TPW pieces are one owner (TPW), plus Famous Trees; satisfies 'one credible source' in the US. Photo: none found openly licensed (Commons search for Goliad anacua returned nothing; Famous Trees picture is not open). Do not bridge to the 1749 founding.",
+    "story": "This tree has moved house once, with a root ball eighteen feet across. In the 1930s, when the Civilian Conservation Corps was rebuilding Mission Espíritu Santo, the anaqua stood where the patio is now. The architect in charge had it dug up and moved away from the building rather than lose it. When he came back to visit in 1981, Texas Parks and Wildlife's magazine reported, he found it still shading the patio and thriving in its new spot.\n\nIt was not there when the Spanish built the mission in 1749. The same magazine says the anaqua took root later, among the ruins, so by the park's own account it is younger than the mission. How much younger is vaguer. Texas A&M Forest Service's Famous Trees of Texas calls it more than two centuries old, and Wikipedia, citing that same page, says nearly two centuries. Roughly two hundred years is as close as anyone gets, and nobody has published a measurement of the trunk.\n\nIt is a south Texas native and not an oak, and you will see the name spelled both anaqua and anacua, sometimes on the same page.\n\nThe mission is part of Goliad State Park and Historic Site, about 3 km south of town by car, with no public transport. The park charges a day-use fee, listed at $4 a person in November 2026, so check before you go. Look for the large anaqua in front of the museum, beside the chapel entrance.",
+    "how_to_recognise": "You can recognise it as the large anaqua, not an oak, in front of the mission museum, shading the patio it was moved away from in the 1930s. It stands near the chapel entrance at Mission Espíritu Santo.",
+    "photo": {"status": "missing"}
+  },
+  {
+    "id": "gld_003",
+    "name": "The Baptist Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "over 160 years",
+    "age_min": 160,
+    "age_max": 250,
+    "age_basis": "source",
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "South Chilton Street at West End Street, in front of 248 S Chilton Ave, Goliad, TX 77963 (one block west of the courthouse square)",
+      "latitude": 28.666267,
+      "longitude": -97.394017,
+      "neighbourhood": "Downtown Goliad"
+    },
+    "location_site": {"name": "Founding Site of First Baptist Church marker, South Chilton Street", "radius_m": 30},
+    "verified_sources": [
+      "https://famoustreesoftexas.tfs.tamu.edu/baptist-oak/",
+      "https://www.waymarking.com/waymarks/wmZGV5_Baptist_Oak_Goliad_TX",
+      "https://historicalmarkerproject.com/markers/HM2FPB_founding-site-of-first-baptist-church-of-goliad_-.html"
+    ],
+    "official_register": null,
+    "access": "On the street edge beside a Texas Historical Commission marker, public sidewalk, free, always visible from the street.",
+    "transport": "On foot, one block from Goliad courthouse square (about 3 minutes); no public transport in Goliad.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: age is a minimum only and the current trunk is tied to the 1849 meeting by the marker and Famous Trees, not by a tree-ring or measurement. Facts: Texas Historical Commission marker no. 11896, 'Founding Site of First Baptist Church of Goliad' (erected 1999, South Chilton Street): 'A group of twelve Baptists met under an oak tree one block west of the Goliad town square on this site in May 1849'; Rev. John Freeman Hillyer officiated; first permanent building 1899 (marker text via HMdb and Historical Marker Project search snippet, page not fetched: hmdb 403). Famous Trees of Texas (Texas A&M Forest Service, finding aid) page: live oak that has 'held its ground for more than 160 years', in front of 248 South Chilton Avenue, public access, no size; on the edge of a street, 'vehicles have struck it many times', a 2011 accident caused the loss of a major limb. Waymarking WMZGV5 (user waymark, visit logged 2018-12-01): live oak, 'approximate age 160', coordinates N 28 39.976 W 097 23.641 = 28.666267,-97.394017 at the marker at the base of the tree. Famous Trees point differs by about 40 m (28.6665,-97.3936), so pin kept approximate with a 30 m site. Alive: no RECENT photo hit from lifecheck (NONE); latest evidence is the 2018 waymark visit and the 2011 limb loss note. Age bridge caution: 160 years is FTT's figure; the oak may be the 1849 tree (then about 177 years) but no source measures it. Cart War Oak is a separate tree about 150 m away (gld_001).",
+    "story": "Cars have hit this oak many times. It stands right on the edge of South Chilton Street, and an accident in 2011 cost it a major limb, according to Texas A&M Forest Service's Famous Trees of Texas. It has kept its place anyway.\n\nThe reason it has a name is a meeting. In May 1849 twelve Baptists gathered under an oak tree on this site, one block west of the Goliad town square, and the Texas Historical Commission marker that stands here, put up in 1999, calls it the founding site of the First Baptist Church of Goliad. The church had its first permanent building in 1899.\n\nWhether this is the same oak is where it gets careful. The marker and Famous Trees tie the two together, but nobody has measured the tree or counted its rings. Famous Trees says it has held its ground for more than 160 years, and a visitors' waymark gives about 160. If it were the 1849 tree it would be older than that, and no source shows that it is.\n\nThe most recent sign of life we have found is a waymark visit in 2018. If you pass, tell us it is still standing.\n\nIt is a three-minute walk from the courthouse square, beside the marker on a public sidewalk, free to see from the street. The Cart War Oak stands about 150 metres away, so the two make an easy pair.",
+    "how_to_recognise": "You can recognise it by the Texas Historical Commission marker for the founding site of First Baptist Church at its base. It stands on the street edge in front of 248 South Chilton Avenue, one block west of the courthouse square.",
+    "photo": {"status": "missing"}
+  }
+]

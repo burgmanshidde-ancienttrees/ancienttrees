@@ -83,7 +83,7 @@
   {
    "name": "The Learning Tree (2007 Austin Tree of the Year, Hampton Branch library)",
    "species": "Escarpment Live Oak (Quercus fusiformis)",
-   "reason": "2026-10-02 verify pass: named by the city's Tree of the Year list (Urban Forestry, via Austin Chronicle 2020) as a live oak behind the Hampton Branch of the Oak Hill Public Library, about a quarter mile along a walking trail, with an on-site marker. Public library nature trail, so access is plausible. NOT SHIPPED: no coordinate found (Nominatim no hit, no Commons or iNaturalist file of it, Wikidata has no entry), so neither a photograph nor a tree-level pin is in reach. Needs a reader photo with GPS or the marker text.",
+   "reason": "2026-10-02 verify pass: named by the city's Tree of the Year list (Urban Forestry, via Austin Chronicle 2020) as a live oak behind the Hampton Branch of the Oak Hill Public Library, about a quarter mile along a walking trail, with an on-site marker. Public library nature trail, so access is plausible. NOT SHIPPED: no coordinate found (Nominatim no hit, no Commons or iNaturalist file of it, Wikidata has no entry), so neither a photograph nor a tree-level pin is in reach. Needs a reader photo with GPS or the marker text. 2026-11-04: still no coordinate. Austin Public Library Hampton Branch is at 5125 Convict Hill Road (open library hours). Official gallery for 2007 not in the Wayback copy of the winners gallery (it lists 2008 onward plus 2022). A city storymap Think Trees Tour at the Hampton Branch exists (storymaps.arcgis.com/stories/bd956cd8efb14fb5af0531efab768214) but is JavaScript-rendered; a browser session could read its tree list and coordinates.",
    "sources": [
     "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/"
    ],
@@ -93,22 +93,87 @@
   {
    "name": "Zilker Park pecan (2011 Austin Tree of the Year)",
    "species": "Pecan (Carya illinoinensis)",
-   "reason": "2026-10-02 verify pass: Tree of the Year 2011, in Zilker Park (public). Chronicle writer calls it a communal pecan. NOT SHIPPED: no coordinate; the only Commons file (Pecan tree canopy zilker.jpg, CC BY 4.0) is a canopy shot not tied to this tree.",
+   "reason": "2026-10-02 verify pass: Tree of the Year 2011, in Zilker Park (public). Chronicle writer calls it a communal pecan. NOT SHIPPED: no coordinate; the only Commons file (Pecan tree canopy zilker.jpg, CC BY 4.0) is a canopy shot not tied to this tree. 2026-11-04: probably the same tree as aus_009 The Mother Pecan (official TreeFolks winners gallery: 2011 Large Tree, Zilker Metropolitan Park, 802 Azie Morton Rd.). Not a separate trunk; no action.",
    "sources": [
     "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/"
    ],
-   "status": "lead",
+   "status": "duplicate",
    "location_precision": "approximate"
   },
   {
    "name": "Central Park live oak, 3900 Guadalupe (2008 Austin Tree of the Year, Large)",
    "species": "Escarpment Live Oak (Quercus fusiformis)",
-   "reason": "2026-10-02 verify pass: named 2008 winner, 150 ft crown per the Chronicle. NOT SHIPPED: no coordinate and the 3900 Guadalupe site is a mixed-use development, so public access is unconfirmed. Texas Persimmons at Mayfield Park and Pease Park (2009/2008 small-tree winners) also named, no coordinates.",
+   "reason": "2026-10-02 verify pass: named 2008 winner, 150 ft crown per the Chronicle. NOT SHIPPED: no coordinate and the 3900 Guadalupe site is a mixed-use development, so public access is unconfirmed. Texas Persimmons at Mayfield Park and Pease Park (2009/2008 small-tree winners) also named, no coordinates. 2026-11-04: RESOLVED, delivered flagged as aus_011 in data/research/austin-fltx-verified.json (iNat sign photo, waymark coordinate, official TreeFolks gallery address). Central Park is a park behind Central Market North Lamar, access by foot from the store.",
    "sources": [
     "https://www.austinchronicle.com/arts/kevin-curtin-hung-out-with-all-of-austins-tree-of-the-year-winners-12004783/"
    ],
-   "status": "lead",
+   "status": "delivered",
    "location_precision": "approximate"
+  },
+  {
+   "name": "The Pease Cupcake Tree (2022 Story Tree, one of Austin's largest live oaks)",
+   "species": "Escarpment Live Oak (Quercus fusiformis)",
+   "status": "lead",
+   "location_precision": "approximate",
+   "location": {
+    "address": "Former Pease Elementary School, 1106 Rio Grande St, Austin, TX"
+   },
+   "reason": "2026-11-04: named by the official TreeFolks/City winners gallery (2022 Story Tree, 'one of Austin's largest Live Oaks') and by TreeFolks (Grand Champion tree, acorn propagation project, school closed after 2022 and playground students no longer play under it). NOT SHIPPED: stands on the grounds of a closed Austin ISD school; no source says the grounds are open to visitors (hard rule 10, schools need evidence) and no coordinate or photograph found. Revisit if the Pease School reuse opens the grounds, or if the tree is visible from Rio Grande St (not established).",
+   "sources": [
+    "https://treefolks.org/?p=662",
+    "http://web.archive.org/web/2025/https://austintreeoftheyearawards.org/winners-gallery"
+   ]
+  },
+  {
+   "name": "700 Year Old Live Oak, 804 E Braker Lane (1976 Tree Registry of Austin marker)",
+   "species": "Live Oak (Quercus sp.)",
+   "status": "lead",
+   "location_precision": "approximate",
+   "location": {
+    "latitude": 30.377453,
+    "longitude": -97.6751,
+    "address": "Parking lot at 804 E Braker Lane, NE corner of I-35 and Braker Lane, Austin, TX 78753"
+   },
+   "girth_cm": 478,
+   "reason": "2026-11-04: marker text (via HMDB 150715, Wayback copy; marker photographed 2020-05-29): circumference 15 ft 8 in (478 cm), diameter 5 ft, 'may be 700 years old', listed in the City of Austin's 1976 Tree Registry. NOT SHIPPED: lifecheck.py finds no recent observation (NONE), the tree stands in a commercial parking lot (hotel/sports facility site, a TownePlace Suites site plan for Braker Lane and an open 311 tree complaint on the I-35 service road in 2026 turn up in searches but are not tied to this tree), no second source, and access to the lot is not established. Worth one on-site or Street View check for whether it still stands before any shipping.",
+   "sources": [
+    "https://www.hmdb.org/m.asp?m=150715"
+   ]
+  },
+  {
+   "name": "Custer's Oak, Pease Park (the park's single named live oak)",
+   "species": "Live Oak (Quercus sp.)",
+   "status": "lead",
+   "location_precision": "approximate",
+   "location": {
+    "address": "Custer's Meadow, Pease District Park, 2nd Street area, Austin, TX"
+   },
+   "reason": "2026-11-04: City of Austin Pease Park master plan material calls it the park's single named live oak and one of several dozen 'super heritage trees', anchoring Custer's Meadow (Custer's cavalry camped on Shoal Creek winter 1865 to 1866; the tree's own age is not claimed). NOT SHIPPED: no age, girth, coordinate or photograph found; master plan PDF (services.austintexas.gov/edims/document.cfm?id=216392, 3 MB, no PDF tool here) may carry a tree survey with measurements.",
+   "sources": [
+    "https://services.austintexas.gov/edims/document.cfm?id=216392"
+   ]
+  },
+  {
+   "name": "Heron Hollow (Payton Gin) Pocket Park pecan, 2012 Community Tree honorable mention",
+   "species": "Pecan (Carya illinoinensis)",
+   "status": "lead",
+   "location_precision": "approximate",
+   "location": {
+    "latitude": 30.3578,
+    "longitude": -97.7009,
+    "address": "Heron Hollow Pocket Park, 801 Payton Gin Rd, Austin, TX 78758"
+   },
+   "reason": "2026-11-04: official winners gallery lists it, still existing, at that address; no second source, no age, no pecan found at the park by search, one 2026 iNat pecan nearby not tied to it. Honorable mention only. NOT SHIPPED: nothing to place or tell apart."
+  },
+  {
+   "name": "Constitution Oak, UT Austin (east of the Tower, planted 1937)",
+   "species": "Oak (Quercus sp.)",
+   "status": "lead",
+   "location_precision": "approximate",
+   "reason": "2026-11-04: UT Facilities Services and Daily Texan name it, planted 1937 for the Constitution's 150th anniversary; 89 years old, species not named, no coordinate, several oaks east of the Tower. Not delivered.",
+   "sources": [
+    "https://facilitiesservices.utexas.edu/news/stories-stories-four-giants-forty-acres"
+   ]
   }
  ],
  "blocked": [
@@ -243,6 +308,10 @@
    "reason": "Gone. The pecans planted at Governor Hogg's grave in the State Cemetery no longer stand, per the finding aid.",
    "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/governor-hogg-pecan/",
    "status": "blocked"
+  },
+  {
+   "name": "Texas Capitol grounds named trees (2026-11-04 sweep)",
+   "reason": "No State Preservation Board or AOC source names a standing historic tree with age or location; Washington Elm, Memorial Pecan already gone; Waterloo Park heritage oak was transplanted from the Capitol Complex in 2019 (about 60 years old per KVUE), not ancient. Do not re-research without a new source."
   }
  ],
  "notes": [
@@ -257,6 +326,10 @@
   {
    "date": "2026-09-27",
    "note": "Deepen verify pass (US-priority). Shipped 4 trees to data/research/austin-verified.json: the Littlefield Cedar (Cedrus deodara, TreeID 1046, UT Austin campus), the Durand Oak of Sir Swante Palm Park (Quercus sinuata var. sinuata, TreeID 1111, Waller Creek Greenbelt), the Sorin Oak (Quercus fusiformis, St. Edward's University, found fresh via the Austin Tree of the Year Awards rather than the registry), and the Mother Pecan (Carya illinoinensis, Zilker Park, also found via the Tree of the Year Awards). Both Littlefield Cedar and Sir Swante Palm's Durand Oak leads (TreeIDs 1046 and 1111) are removed from this file's leads list since they are now published data, not open leads. Moved to blocked: Ilex decidua TreeID 15446 (private HOA land), Chilopsis linearis TreeID 32449 (private, Display 0, and 26.8km out), Rhus virens TreeID 887 (private community, Display 0, and 27.6km out) -- all three confirmed via direct query of the full registry attribute set (PublicOrPrivate, Display, OrganizationName), which is more reliable than the coordinate-only leads this file used to carry. Also removed stale duplicate lead entries for TreeID 970, 6435, 29446, 1077 and 29445, which were already correctly present in the blocked list under identical coordinates; the leads list should not carry a second, weaker copy of an entry already blocked. Carya illinoinensis TreeID 10442 (Pflugerville) and Quercus sinuata var. breviloba TreeID 543 (Sunset Valley) got real second sources this pass (a city tourism page and a municipal environmental-services page respectively) but were NOT shipped: Pflugerville's transit time to central Austin measured at 34-54 minutes, past the day-trip boundary, the same problem as the already-recorded Kyle Auction Oak; Sunset Valley's registry coordinate reverse-geocodes to a residential-looking address that does not match its own city hall, so hard rule 10 access needs a further check before it can ship even flagged as register-plus-one-source. New lead added: the Red Bud Isle Cypress (2009 Tree of the Year), held back only because Red Bud Isle has many similar bald cypresses and no source pins which specific trunk won. The Austin Tree of the Year Awards / Austin Heritage Tree Foundation is confirmed as a real naming body for this city (per BRIEF_RESEARCH.md's 'does anybody name its trees' rule) and is worth checking again for future passes: austintreeoftheyearawards.org/winners-gallery 404s directly but the Austin Chronicle's own roundup of every winner through 2012 and austin.com's tree listicle both reproduce entries from it."
+  },
+  {
+   "date": "2026-11-04",
+   "note": "Verify pass (fltx). Delivered aus_011 Central Market Oak and aus_012 UT Tower Mesquite (both flagged, approximate) to data/research/austin-fltx-verified.json. Austin Tree of the Year winners gallery IS readable via Wayback (http://web.archive.org/web/2025/https://austintreeoftheyearawards.org/winners-gallery): 2022 winners plus 2007-2012 with addresses; the live site 404s. Remaining gallery trees: persimmons (small, skip), St. Andrew's Episcopal School oak (private school), Highland Park Elementary burr oak (school), Blunn Creek Greenbelt live oak (no coordinate), Bryker Woods Elementary oak (school), Lady Bird Johnson Wildflower Center oak (paid entry, no coordinate). Texas Big Tree Registry near Austin is exhausted (8 rows, all worked)."
   }
  ]
 }

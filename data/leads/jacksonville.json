@@ -6,9 +6,36 @@
       "register_id": "Florida Champion Tree Register (ffs.fdacs.gov/ChampionTrees), PK 1060",
       "why_not_shipped": "Found scouting Jacksonville (register-scouting.json entry, 2026-09-03) for a register to support rung 4/5 of the research workflow. Real coordinates (30.36989, -81.4855) and location text ('Next to HQ Driveway adjacent from the Curatorial Building') since Ownership Type is Public, unlike most of the register's Duval County rows, which withhold location for private trees. 29.5in circumference, 34ft height, 17ft crown spread. Not pursued to a verified entry this pass: the 'HQ' and 'Curatorial Building' have not been identified (likely a state agency or museum facility), so genuine public access is unconfirmed, and only one source exists so far. A future pass should identify the site (search the coordinates against known Jacksonville institutions), confirm walk-up access, and find a second independent source before this can verify.",
       "source": "Wayback snapshot 2023-05-02 of https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1060 (live host unreachable from this sandbox, see data/fetch-blocklist.json)"
+    },
+    {
+      "candidate": "Loblolly-bay (Gordonia lasianthus), Emeritus National Co-Champion, Florida Champion Tree Register PK 385, Theodore Roosevelt Area, Timucuan Preserve (NPS)",
+      "register_id": "Florida Champion Tree Register PK 385",
+      "why_not_shipped": "Register 2014 point 30.37364, -81.48356 on NPS land (public); 150 in circumference, 86 ft tall; title now Emeritus. A tall loblolly-bay is a reason to see it, but life not checked (lifecheck not run on this point) and the register's sibling champion at the Arboretum is reported fallen. Needs a dated sighting and the trail to it.",
+      "source": "Florida Forest Service ArcGIS champion layer, fetched 2026-11-04"
+    },
+    {
+      "candidate": "Tough Bumelia PK 1060 (update 2026-11-04)",
+      "why_not_shipped": "Point 30.36989, -81.4855 is on Fort Caroline Road in the Timucuan Preserve (Theodore Roosevelt Area / NPS Fort Caroline side), so the 'HQ' is probably NPS; not confirmed. lifecheck NONE at the point. A 75 cm girth, 10 m tough bumelia has no reason a visitor can see; leave it as a lead.",
+      "source": "Florida Forest Service ArcGIS champion layer"
+    },
+    {
+      "candidate": "Kingsley Plantation and Fort George Island live oaks, Fort Caroline, Big Talbot Island (Timucuan Preserve)",
+      "why_not_shipped": "Searched 2026-11-04: pages describe oak forests and Boneyard Beach driftwood (dead trees, not alive) but name no individual tree with a size or age. No naming body found. Needs a ranger or park source naming a trunk.",
+      "source": "search only"
+    },
+    {
+      "candidate": "Old City Cemetery, Evergreen Cemetery, Springfield, Riverside-Avondale and Memorial Park oaks, Jacksonville",
+      "why_not_shipped": "One extended and two standard searches found no named oak with a size or age in these places; Riverside and Avondale are said to have many old live oaks but nothing individual. No naming body.",
+      "source": "search only"
     }
   ],
   "notes_2026_09_03_register_scout": [
     "The Florida Champion Tree Register holds only 8 Duval County rows out of 577 statewide, and only this one has public coordinates; the rest (a Florida Champion American Elm id 32, a National Co-Champion Slash Pine id 29, two Emeritus Loblolly-Bay entries, a discontinued Live Oak and Longleaf Pine) are either private-ownership with location withheld or no longer current titleholders. This register will not supply Jacksonville's other trees; a from-zero web research pass (city parks, historic churchyards, cemeteries, per CLAUDE.md's named-places-first technique) is the route for the rest. Full scouting note in data/register-scouting.json."
+  ],
+  "blocked": [
+    {
+      "candidate": "Loblolly-bay, National Champion, City of Jacksonville Arboretum and Gardens (Florida register PK 26, 30.34707, -81.53736)",
+      "reason": "Reported fallen: First Coast News and a Florida Times-Union column (seen only as search results, both pages refused fetch) say the champion fell across a boardwalk; register already lists Emeritus status."
+    }
   ]
 }

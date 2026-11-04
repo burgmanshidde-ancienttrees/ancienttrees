@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sau_001",
+    "name": "The Old Senator",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "reputed over 600 years",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "source",
+    "location": {
+      "address": "Villa 1565, 137 San Marco Ave, St. Augustine, FL 32084 (hotel courtyard/parking lot, fenced trunk beside a marker)",
+      "latitude": 29.906083,
+      "longitude": -81.317765,
+      "neighbourhood": "North City, a few blocks north of the Historic District"
+    },
+    "verified_sources": [
+      "https://www.visitstaugustine.com/thing-to-do/old-senator-live-oak",
+      "https://www.waymarking.com/waymarks/WM2TRC_The_Old_Senator_Quercus_Virginiania",
+      "https://publichumanities.omeka.net/items/show/369",
+      "https://commons.wikimedia.org/wiki/File:%22The_Old_Senator%22_-_panoramio.jpg"
+    ],
+    "access": "Stands in the courtyard/parking lot of the Villa 1565 hotel on San Marco Ave; the destination board of Visit St. Augustine invites visitors to see it and a local tourism blog says all are welcome to see it and take pictures. No hours or fee published. Waymarking classes the land as private but the tree as publicly accessible; view from the lot, do not enter guest areas. Old Town Trolley and Red Train sightseeing tours pass it (a Red Train bench stands beside it).",
+    "transport": "Old Town Trolley Tours and Red Train tours pass the site; a few blocks (roughly 10 to 15 minutes' walk, not measured) north of the Plaza de la Constitucion and the Historic District. Hotel lot has road frontage on San Marco Ave.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: one-source-level US bar (tourism board listing, an on-site historical marker, Waymarking). Species Southern live oak: Waymarking titles it Quercus virginiana and the pictured tree has live-oak form with Spanish moss and a sabal palm growing in the crown. AGE: the on-site marker (seen in the 2010 and 2023 Commons photographs, partly legible) and Visit St. Augustine say 'well over 600 years' / 'more than 600 years'; a tourism blog says about 650; the marker links it to Ponce de Leon's 1513 landing and says it stands about 600 feet from the Fountain of Youth. No dating method is given anywhere; a live oak of this size is more likely a few hundred years. Never sharpened: stated only as 'reputed'. SIZE: Waymarking gives height 70 and girth 8 with unclear units (girth by arm reach); an Omeka item gives '21 feet long and 56 feet high' from a sign text of the 1556 hotel lot; a magazine gives 56 ft height. These do not reconcile, so no girth_cm or height_m recorded. LOCATION: pin = geotag of the 2010 Commons photograph taken at the fenced trunk (29.906083,-81.317765); Waymarking coordinate 29.906183,-81.317617 is about 15 m away; the 2023 Commons photo geotag 29.905872,-81.318436 is a camera position about 60 m west. Trunk fenced with black iron railing and marker, so individually placeable: confirmed. LIFE: scripts/lifecheck.py gives RECENT (iNaturalist observation 2026-06-28, https://www.inaturalist.org/observations/377153114); Waymarking visit logs dated 2018, 2019, 2022 and 2023; Commons photograph January 2023. Local lore (not fact): couples who kiss beneath it stay together; its longevity is credited to the nearby Fountain of Youth; a palm grows from the crown. Sources that 403d: theclio.com, hmdb.org, atlasobscura.com. Hosts blocked to fetch: none new.",
+    "story": "A sabal palm grows out of the crown of this live oak, and it is still only the second strangest thing about it. The first is the marker beside the trunk, which says the Old Senator is well over 600 years old and ties it to Ponce de León's landing in 1513.\n\nTreat that number as reputation rather than measurement. Visit St. Augustine repeats more than 600 years, a local tourism blog says about 650, and none of them says how anyone arrived at it. No ring count has been published. The sizes in circulation do not agree with each other either, and one gives no units at all, so we have left them out. What is certain is that this is a big, old live oak hung with Spanish moss, and that visitors have photographed it at this spot since at least 2010.\n\nIts setting is humbler than its legend. It stands in the courtyard and parking lot of the Villa 1565 hotel on San Marco Avenue, behind a black iron railing, about 600 feet from the Fountain of Youth by the marker's own count. Local lore credits its long life to that spring, and says couples who kiss beneath it stay together.\n\nThe land is private, but the tree is shown to visitors. Look from the lot and keep out of the guest areas. The Old Town Trolley and the Red Train both pass, and a Red Train bench stands beside it.",
+    "how_to_recognise": "You can recognise it by the black iron railing and historical marker around its trunk, and the palm growing out of its crown. It stands in the courtyard lot of the Villa 1565 hotel on San Marco Avenue, beside a Red Train bench.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/%22The_Old_Senator%22_-_panoramio.jpg",
+      "license": "CC BY-SA 3.0",
+      "attribution": "nsandin88",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:%22The_Old_Senator%22_-_panoramio.jpg",
+      "status": "approved",
+      "note": "Viewed: trunk and spreading limbs fill the frame in daylight, marker and fence visible; survives the card crop. Alternative: File:St Augustine Florida, January 2023 - Old Senator.jpg, CC BY-SA 2.0, Kevin O'Brien (close view of trunk, bright sun, less crown)."
+    }
+  }
+]

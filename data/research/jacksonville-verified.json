@@ -1,0 +1,83 @@
+[
+  {
+    "id": "jax_001",
+    "name": "Treaty Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "roughly 250 years (estimates vary)",
+    "age_min": 150,
+    "age_max": 300,
+    "age_basis": "source",
+    "girth_cm": 762,
+    "height_m": 21.3,
+    "location": {
+      "address": "Jessie Ball duPont Park, 1123 Prudential Drive, Jacksonville, FL 32207",
+      "latitude": 30.316967,
+      "longitude": -81.658033,
+      "neighbourhood": "Southbank"
+    },
+    "verified_sources": [
+      "https://sfyl.ifas.ufl.edu/media/sfylifasufledu/duval/urban-forestry/Treaty-Oak.pdf",
+      "http://www.visitjacksonville.com/directory/treaty-oak-at-jessie-ball-dupont-park-historic-parks-and-vistas/",
+      "https://en.wikipedia.org/wiki/Treaty_Oak_(Jacksonville)",
+      "https://waymarking.com/waymarks/wm2X16_Treaty_Oak_Jacksonville_FL"
+    ],
+    "official_register": null,
+    "access": "Free. City park (7 acres) on the Southbank; a boardwalk built in 1994 runs under the canopy so visitors do not walk on the roots. Opening hours not published on the pages read. A sign at the boardwalk says do not climb the tree.",
+    "transport": "Southbank of the St. Johns River, off Prudential Drive between Main Street and Flagler Street (UF/IFAS). Public transport stop not checked this pass; waymark records a parking spot a few dozen metres south of the tree.",
+    "location_precision": "confirmed",
+    "curation_status": "verified",
+    "verify_notes": "ALIVE: lifecheck RECENT, iNaturalist observation 2026-11-01 within the park (https://www.inaturalist.org/observations/412730486). SPECIES: Southern live oak, all sources. SIZE: UF/IFAS Duval County Urban Forestry fact sheet (Larry Figart): at its last measurement 70 ft tall, diameter 8 ft, crown spread 147 ft; not the largest live oak in Florida. Wikipedia (citing the downtown Jacksonville directory) and the waymark: trunk over 25 ft in circumference (= 762 cm; consistent with the 8 ft diameter), height 70 ft (21.3 m), crown 145 ft, shaded area about 190 ft across. AGE: Visit Jacksonville and the City of Jacksonville (via Wikipedia, Times-Union 2006) say estimated 250 years; the waymark says less than 200; Wikipedia says it may predate the 1820s founding of the city by Isaiah Hart. Nobody cored it; age is an estimate only, held broad. Arborists quoted in 2006 (Times-Union via Wikipedia) said it could live another 400 years. HISTORY (facts for the writer): first called the Giant Oak; in the 1930s Times-Union reporter Pat Moran wrote a treaty with native people had been signed under it to save it from developers, which gave the name Treaty Oak; sources describe the treaty story as invented. Land was Dixieland Amusement Park from 1907 (the tree was strung with lights; Babe Ruth and John Philip Sousa are said to have appeared there per Wikipedia citing a memory website, not independently checked). Garden Club and Jessie Ball duPont bought the land about 1934 (waymark); duPont trust donated to the city in 1964 with the condition that it stay a public park whose purpose includes preserving the oak; park named for her 1971 (waymark). Cables and lightning protection installed in a 1995 project. JEA has grown seedlings from its acorns since 1986 and given them out through Greenscape (Wikipedia). UF/IFAS lists the large Jacksonville oaks that once stood: Timucuan Oak (NAS Jax), Episcopal Oak, Bartram Oak, Cummer Oak, of which only the Cummer Oak and Treaty Oak remain. PIN: waymark GPS position 30.316967, -81.658033 and Wikipedia coordinate 30.3170, -81.6581 agree within about 10 m; one single-crown tree in an open lawn, so confirmed. Wikimedia photo geotag checked: none on the file. A modest alternate age figure (800 years) on route1views.com is an outlier, rejected.",
+    "story": "Treaty Oak is named after a treaty that was never signed. In the 1930s a reporter at the Florida Times-Union wrote that a treaty with native people had been agreed beneath its branches, a story meant to save the tree from developers, and later sources describe it as invented. Until then it had been called the Giant Oak.\n\nIt did need saving. From 1907 the ground around it was the Dixieland Amusement Park, and the oak was strung with lights. In about 1934 the Garden Club and a philanthropist bought the land. Her trust gave it to the city in 1964 on condition that it stay a public park whose purpose includes preserving the oak, and the park has carried her name since 1971.\n\nThe tree is about 70 feet tall, its trunk more than 25 feet around, roughly 7.6 metres, and its crown spreads about 145 feet. The age is looser. The city and Visit Jacksonville give an estimated 250 years, a visitors' waymark says under 200, and nobody has cored it. In 2006 arborists said it could live another 400.\n\nJacksonville once had five great oaks by the county's urban forestry count, and only this one and the Cummer Oak are left. Cables and lightning protection went in during 1995. A boardwalk built in 1994 runs under the canopy, so feet stay off the roots. The park, on the Southbank of the St. Johns River, is free.",
+    "how_to_recognise": "You can recognise it by the boardwalk that runs under its canopy and a crown spreading about 145 feet over an open lawn. It stands alone in Jessie Ball duPont Park on the Southbank, off Prudential Drive.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Treaty_Oak%2C_Jacksonville_Florida_%2826709370248%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Lorie Shaull",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Treaty_Oak,_Jacksonville_Florida_(26709370248).jpg",
+      "status": "approved",
+      "note": "Viewed at 960 px: whole low spreading crown and trunk fill the frame, boardwalk in front, daylight and colour, survives a centre crop. Taken 2018-03-02 (from a Flickr upload). A second photo, Jax_FL_Treaty_Oak01.jpg (Ebyabe, CC BY-SA 4.0, 2017), also viewed: whole canopy from a distance, usable as a strip photo."
+    }
+  },
+  {
+    "id": "jax_002",
+    "name": "Cummer Oak",
+    "species": "Southern Live Oak (Quercus virginiana)",
+    "age_estimate": "estimated 175 to 200 years by the museum",
+    "age_min": 125,
+    "age_max": 250,
+    "age_basis": "source",
+    "girth_cm": 640,
+    "height_m": 24.4,
+    "location": {
+      "address": "Cummer Museum of Art & Gardens, 829 Riverside Avenue, Jacksonville, FL 32204 (Italian Garden, on the St. Johns riverbank)",
+      "latitude": 30.315442,
+      "longitude": -81.676189,
+      "neighbourhood": "Riverside"
+    },
+    "verified_sources": [
+      "https://tclf.org/sites/default/files/microsites/everytree/cummeroak.html",
+      "https://www.visitjacksonville.com/directory/cummer-museum-of-art-gardens-art-gallery/",
+      "https://sfyl.ifas.ufl.edu/media/sfylifasufledu/duval/urban-forestry/Treaty-Oak.pdf"
+    ],
+    "official_register": null,
+    "access": "Paid museum entry (museum grounds and gardens, hours and price not retrieved: the museum's own pages returned 403; check cummermuseum.org). TCLF: the public can visit during museum hours.",
+    "transport": "Riverside Avenue, Riverside neighbourhood, about 4 km north-west of downtown Jacksonville. Stop not checked this pass.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Italian Garden, Cummer Gardens",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: age sources conflict and the pin is the camera position. ALIVE: lifecheck RECENT 2026-06-26 (iNaturalist observation within the gardens, https://www.inaturalist.org/observations/376870716, not proven to be this trunk); the Cultural Landscape Foundation Every Tree page and the museum's own gardens text describe it as standing; UF/IFAS Duval Extension fact sheet names the Cummer Oak as one of only two of Jacksonville's five great oaks that remain (with the Treaty Oak). SIZE (TCLF Every Tree): 80 ft tall, 138 ft crown span, circumference 21 ft at breast height (= 640 cm; the museum blog is said to give 23 to 25 ft but that page returned 403 and is NOT used). AGE: Visit Jacksonville, quoting the Cummer Gardens text: estimated to be 175 to 200 years old. TCLF gives no number but says the tree already was majestic when the Cummer family arrived in the late 1890s (so more than about 125 years). Two web pages (not fetched, not used) claim 400 to 450 years; unsupported. Held broad. HISTORY: Cummer family moved from the Midwest to the property in the late 1890s; landscape architect O.C. Simonds shaped the grounds in 1903 and enhanced the existing live oaks; Thomas Meehan and Sons designed an English Garden in 1910; Olmsted Brothers later work; Ellen Shipman's 1931 Italian Garden lies in the oak's shade; gardens listed in the National Register of Historic Places in 2010. TCLF names its greatest threats as its age and tropical storms; the museum galleries stand on pilings to protect its roots. PIN: a Wikimedia Commons photo (Cummer Museum Live Oak 1, geotag 30.315442, -81.676189) was taken from the garden terrace looking at the river with the oak's limb in the frame; the trunk stands some metres from the camera, so approximate. Small site: the Italian Garden, a walled formal garden taken in at one glance; the oak is the big one with a plaque at its base.",
+    "story": "The museum built its galleries on pilings so that they would not hurt this oak's roots. That is the order of priorities at the Cummer Museum of Art & Gardens on the St. Johns River.\n\nThe Cultural Landscape Foundation measures it at 80 feet tall, with a crown spanning 138 feet and a trunk 21 feet round at chest height, about 6.4 metres. It was already a big tree when the Cummer family moved here from the Midwest in the late 1890s. The gardens' own text estimates its age at 175 to 200 years. A couple of web pages claim 400 or more with nothing behind it, so we go with the museum's figure, which is an estimate rather than a count.\n\nThe gardens grew up around the tree. A landscape architect reshaped the grounds in 1903 and worked the existing live oaks into the plan. An English Garden followed in 1910, then work by the Olmsted Brothers, and in 1931 an Italian Garden laid out in the oak's shade. In 2010 the gardens went on the National Register of Historic Places.\n\nThe county's urban forestry office counts it as one of only two of Jacksonville's great oaks still standing, the other being the Treaty Oak. Its greatest threats, the foundation says, are its age and tropical storms.\n\nThe gardens are part of the paid museum visit and open during museum hours. Check the museum's website for times and prices before you go.",
+    "how_to_recognise": "You can recognise it as the big live oak with a plaque at its base, its crown spanning 138 feet. It stands in the Italian Garden, the walled formal garden on the riverbank at the Cummer Museum in Riverside.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/CummerGardenOak.jpg",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Bubba73",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:CummerGardenOak.jpg",
+      "status": "approved",
+      "note": "Viewed at 960 px: portrait frame, whole trunk and first limbs fill the frame, plaque at the base, Italian garden cypresses and brick wall behind, daylight and colour, 2008-05-11. Portrait format; card crop shows trunk and lower limbs, not the whole crown. Identity from the file name, the plaque and the garden setting."
+    }
+  }
+]

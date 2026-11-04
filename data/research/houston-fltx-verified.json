@@ -1,0 +1,39 @@
+[
+  {
+    "id": "hou_012",
+    "name": "The Three Sisters of Montrose",
+    "species": "Post Oak (Quercus stellata)",
+    "age_estimate": "disputed, about 160 years by one designation",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "source",
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Montrose Boulevard at West Dallas Street, entrance of Magnolia Cemetery, Houston, TX 77019",
+      "latitude": 29.75952,
+      "longitude": -95.39296,
+      "neighbourhood": "Montrose"
+    },
+    "location_site": {
+      "name": "Magnolia Cemetery entrance on Montrose Boulevard",
+      "radius_m": 50
+    },
+    "verified_sources": [
+      "https://txhtc.org/three-sisters-iconic-montrose-oak-trees-given-historic-designation/",
+      "https://khou.com/article/news/local/houston-montrose-trees-state-landmark/285-bfd5ff0d-20a4-4912-b982-8aea2e5284d0",
+      "https://www.change.org/p/save-montrose-s-live-oak-trees-preserve-our-shade-canopy/u/32764354"
+    ],
+    "official_register": null,
+    "access": "Along the public boulevard at the cemetery gate; seen from the sidewalk, free.",
+    "transport": "Not checked; Montrose Boulevard bus corridor, about 10 minutes from downtown Houston by car.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED, three weak points. (1) Age: Texas Historic Tree Coalition article (fetched in full, article dated 2024-03-12, ceremony 2024-03-03) says the trees are estimated at 160 years old and gives no basis; KHOU (search summary only, page 403 to fetch) says they stand in the entryway to Magnolia Cemetery off Montrose, the first post oaks in Houston and Southeast Texas registered as historic landmarks, and about halfway through their lifespans. Earlier pass (data/leads/houston.json) recorded search snippets of about 85 rings counted on the one that fell; I did not see that source, so no figure used. The Change.org petition update (an advocacy page opposing the Montrose TIRZ road project, partisan) says a civic-club figure questioned whether the tree was as old as certified. Do not state 160 years as fact; say 'estimated at 160 years by the coalition, disputed'. (2) Alive: the same petition update says after Hurricane Beryl (July 2024) one of the three Texas Historic Three Sisters post oaks fell over and another lost a branch; so two stand, but I found no neutral report and no dated photo after 2023-11-19 (lifecheck RECENT 2023-11-19 iNaturalist 191538831, not confirmed to be this trunk). The TxHTC page says three trees, now only two. The Montrose boulevard project could threaten the nearby live oaks, not specifically these (TxHTC says they are separate from 50+ mature oaks slated for removal). (3) Pin: OSM cemetery node coordinate, not a tree coordinate; three trunks along the boulevard, so approximate with a 50 m site (a line of trees, not a single point; this is a compact ensemble of two with one place to stand). Nominated by a Montrose resident (name not for publication). Photo: none open found.",
+    "story": "Four months after the Three Sisters were declared historic trees, Hurricane Beryl knocked one of them over. That, at least, is what Montrose campaigners reported in a petition update after the storm in July 2024. One of the three post oaks at the gate of Magnolia Cemetery fell, they wrote, and another lost a branch. We have found no neutral report to confirm it and no dated photograph since, so we count two as standing. If you have been past, tell us what you saw.\n\nThe designation came on 3 March 2024, from the Texas Historic Tree Coalition. KHOU reported that they were the first post oaks in Houston and Southeast Texas registered as historic landmarks, and only about halfway through their lifespans. The coalition put their age at an estimated 160 years without saying how it got there. Not everyone accepted that. The same petition says a local civic-club figure questioned whether the trees were as old as certified, so read the age as an estimate in dispute.\n\nThe argument around them is about roads. A project to rebuild Montrose Boulevard has put more than 50 mature live oaks along it on the list for removal. The coalition says the Sisters are not among them.\n\nYou see them from the pavement at the cemetery entrance, where Montrose Boulevard meets West Dallas Street, free, about ten minutes by car from downtown.",
+    "how_to_recognise": "You can recognise them as the post oaks at the gate of Magnolia Cemetery, two of the original three after Hurricane Beryl, by one account. They stand at the entrance on Montrose Boulevard, where it meets West Dallas Street.",
+    "photo": {
+      "status": "missing"
+    }
+  }
+]
