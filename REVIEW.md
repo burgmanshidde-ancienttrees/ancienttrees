@@ -23,6 +23,10 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 code (full)
+
+Nothing new in the code. Read this run: web scripts tree-actions-js, visited-sync-js, share-js, tree-notes-js, map-filters-js, collection-js (ids/visited); app force-unwrap and request-path scan across Screens and Kit. Not read in full: the rest of the app Screens and the larger web scripts (signin-js, add-photo-js, my-trees-js, worthit-js, profile-js, people-js, map.ts). Seen and not reported (too narrow to be sure): atPushVisited drops a tick if the visited list is still in flight (seen is null); SharedTreeView.swift:108 force-unwraps a URL built from a server filename.
+
 ## 2026-11-04
 
 Web half: the last 24 hours were research data and one app tweak (PlaceMapPage), plus the earned-back switch; nothing new in site/dist to read. Re-checked the standing faults on the built site:
