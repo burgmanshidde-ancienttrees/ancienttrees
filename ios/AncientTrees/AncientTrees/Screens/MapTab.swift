@@ -314,6 +314,9 @@ struct MapTab: View {
             }
             if case .city(let slug) = p {
                 PlaceAmbassadors(slug: slug, title: placeTitle, catalogue: catalogue)
+                // The Plus question under the ambassador, as on the website's
+                // city page (PlusAsk.astro; Hidde, 2026-11-04).
+                PlusRow(city: placeTitle)
             }
         }
         // The cards' 16 under it (appfit DRIFT and TRAIL, 2026-11-04): at 20
