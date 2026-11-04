@@ -44,7 +44,10 @@ def tree(t):
     o["verified_sources"] = [s if isinstance(s, str) else s.get("url") for s in o.get("verified_sources", [])]
     if isinstance(o.get("verify_notes"), list):
         o["verify_notes"] = " ".join(o["verify_notes"])
-    o["photo"] = dict(MISSING)
+    p = t.get("photo") or {}
+    # only a photograph somebody looked at and approved ships (photo pass 2026-11-04)
+    o["photo"] = ({k: p[k] for k in ("url", "license", "attribution", "attribution_url", "status") if p.get(k)}
+                  if p.get("status") == "approved" else dict(MISSING))
     o.setdefault("location_precision", "approximate")
     o.setdefault("curation_status", "flagged")
     if o["id"] in PAID:

@@ -32,7 +32,11 @@ TREE_FIELDS = ["id", "name", "species", "age_estimate", "age_min", "age_max", "a
 
 def tree(t):
     o = {k: t[k] for k in TREE_FIELDS if t.get(k) not in (None, "", [])}
-    o["photo"] = {"url": None, "license": None, "attribution": None, "status": "missing"}
+    p = t.get("photo") or {}
+    # only a photograph somebody looked at and approved ships (photo pass 2026-11-04)
+    o["photo"] = ({k: p[k] for k in ("url", "license", "attribution", "attribution_url", "status") if p.get(k)}
+                  if p.get("status") == "approved"
+                  else {"url": None, "license": None, "attribution": None, "status": "missing"})
     o.setdefault("curation_status", "ai_generated")
     return o
 
