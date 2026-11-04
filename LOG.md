@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: Google's jump and Bing's 11-01 spike, read
+
+- **Google:** clicks back to about 23 a day (11-02), against 45 to 60 before 09-28; average position from ~25 to ~9 from 11-01, across the whole site at once. No cut was lifted: the Google sitemap holds 261 urls (about 5,000 before the demotion). But 973 pages earned an impression in ten days, among them /de and /fr/lyon/..., which carry the googlebot noindex: Google keeps showing a tagged page until it recrawls it, so clicks per open page cannot be read from these numbers yet.
+- **Bing 11-01 (2,225 impressions, 8 clicks):** new read-only `scripts/bing_diagnose.py` and `.github/workflows/bing-diagnose.yml` (run by hand). Daily traffic is the only feed that has 11-01; Bing's query and page stats come in weekly buckets, the newest dated 10-30, so no query or page explains the spike yet. Nothing else moved: clicks normal, index growing steadily (3,740 to 3,868), biggest single query that day 18 impressions. Re-run the workflow once the bucket after 10-30 exists (from about 11-07) before reading anything into it. The digest's Bing query line sorts by clicks, so it can never show an impression spike.
+
 ## 2026-11-04 (third attempt, morning): Coimbra verify pass, one flagged tree, nothing shipped
 
 - Verify pass on Coimbra delivered one tree to data/research/coimbra-verified.json: cbr_007, the Penacova wisteria pergola (register KNJ1/314, approximate pin). Flagged: about 14 km out, over the 30-minute day-trip bound, so it ships as a Penacova tree page or not at all. Other candidates stay leads (access unknown). Coimbra is a wall for 48h.
