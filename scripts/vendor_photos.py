@@ -194,13 +194,25 @@ def write_manifest():
         with open(f, encoding="utf-8") as fh:
             city = json.load(fh)
         for t in city.get("trees", []):
-            p = t.get("photo") or {}
-            if not p.get("url"):
-                continue
-            base = "%s-%s" % (t["id"], slugify(t.get("name")))
-            widths = [w for w in KNOWN_WIDTHS if "%s-%d.jpg" % (base, w) in on_disk]
-            if widths:
-                man[p["url"]] = {"base": base, "widths": widths}
+            tree_base = "%s-%s" % (t["id"], slugify(t.get("name")))
+            # A photograph on our own domain may have its widths beside it
+            # under its OWN name (the Amics' Barcelona set, 2026-11-04); the
+            # tree's name holds the widths of the photo that was vendored first,
+            # which may now sit in the strip. Own name first, then the tree's,
+            # and each set of widths belongs to one photograph only.
+            claimed = set()
+            for p in [t.get("photo") or {}] + list(t.get("photos") or []):
+                url = (p or {}).get("url") or ""
+                if not url:
+                    continue
+                own = (url.rsplit("/", 1)[-1][:-4]
+                       if "ancienttrees.app/photos/" in url and url.endswith(".jpg") else None)
+                for base in [b for b in (own, tree_base) if b and b not in claimed]:
+                    widths = [w for w in KNOWN_WIDTHS if "%s-%d.jpg" % (base, w) in on_disk]
+                    if widths:
+                        man[url] = {"base": base, "widths": widths}
+                        claimed.add(base)
+                        break
     out = os.path.join(ROOT, "data", "photo-manifest.json")
     with open(out, "w", encoding="utf-8") as fh:
         json.dump({"_note": "Original photo URL -> the vendored copy under "
