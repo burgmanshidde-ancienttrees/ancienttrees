@@ -1,0 +1,206 @@
+[
+  {
+    "id": "msn_001",
+    "story": "This tree cost forty cents. The University of Wisconsin Arboretum bought it as a seedling in 1956, grew it on in the nursery for five years, and on 3 October 1961 moved it to the corner of the ground where the Visitor Center now stands. It has not moved since.\n\nBlack tupelo barely belongs in Wisconsin. In the wild it grows in a single county, Kenosha, in the state's south-east corner. This planted one has done well enough to become the champion of its species in the Wisconsin DNR register, at 1.61 metres round, 11.9 metres tall, with a crown about 13.5 metres across. It is one of two state champions in the Arboretum's Longenecker Horticultural Gardens.\n\nThe Arboretum later named the selection 'Carolyn', after a granddaughter of a former curator, though its own accounts differ on which granddaughter. A male tupelo was planted nearby to give it pollen. Stock grown from the tree went to the nursery trade, with royalties paid back to the Arboretum, so the forty-cent seedling has more than earned its price.\n\nThe register's curator noted it alive and well in February 2021, and a visitor photographed it in October 2026. Its age comes from paperwork rather than an estimate. Bought in 1956, it is about seventy, plus however old it was when it arrived.",
+    "name": "The Carolyn Black Tupelo",
+    "species": "Black Tupelo (Nyssa sylvatica)",
+    "age_estimate": "about 70 years",
+    "age_min": 65,
+    "age_max": 75,
+    "age_basis": "source",
+    "girth_cm": 161,
+    "height_m": 11.9,
+    "location": {
+      "address": "UW Arboretum Visitor Center, NW corner east of the gate between the north and south parking lots, Madison",
+      "latitude": 43.041354,
+      "longitude": -89.430758,
+      "neighbourhood": "Arboretum"
+    },
+    "place": "Madison, Wisconsin",
+    "place_slug": "madison",
+    "verified_sources": [
+      "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D82&outFields=*&f=json",
+      "https://arboretum.wisc.edu/news/arboretum-news/longenecker-horticultural-gardens-celebrates-ninety-years/",
+      "https://arboretum.wisc.edu/news/arboretum-news/horticultural-garden-notes-spring-2021/",
+      "https://www.inaturalist.org/observations/409608911"
+    ],
+    "official_register": {
+      "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D82&outFields=*&f=json"
+    },
+    "access": "Free. Arboretum grounds open 4 a.m. to 10 p.m.; Visitor Center 9:30-4 weekdays, 12:30-4 weekends (arboretum.wisc.edu/visit).",
+    "transport": "Free parking at the Visitor Center lots; no bus stop verified this pass.",
+    "location_precision": "approximate",
+    "pin_source": "State register nomination point, objectid 82 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+    "how_to_recognise": "You can recognise it by its deep maroon autumn colour, on a tree 11.9 metres tall. It stands at the Visitor Center's north-west corner, just east of the gate between the north and south parking lots.",
+    "photo_candidates": [],
+    "curation_status": "ai_generated",
+    "location_site": {
+      "name": "Arboretum Visitor Center forecourt",
+      "radius_m": 30
+    },
+    "verify_notes": "Arboretum's own pages: bought as a seedling in 1956 (40 cents), grown five years in the nursery, moved to this spot 3 Oct 1961; cultivar named 'Carolyn' (sources differ whether for the first or oldest granddaughter of a former curator; no name needed). One of two state champions in Longenecker Gardens. Black tupelo is native in Wisconsin to one county only (Kenosha). A male tupelo was transplanted nearby for pollen. Stock released to the nursery trade, royalties to the Arboretum. Register curator note 24 Feb 2021: alive and well. iNaturalist observation 2026-10-14 within lifecheck radius. Age is documented purchase date plus nursery years (seedling age at purchase unknown, so broad). Pin: nomination point lands at the Visitor Center NW corner as the register describes. Register figures (nomination measurement, date not in the layer): circumference 63.5 in (161 cm), height 39 ft (11.9 m), crown spread [45, 44] ft, 113.625 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk."
+  },
+  {
+    "id": "msn_002",
+    "story": "This ash is alive because somebody keeps it that way. It is one of three ash trees in the Longenecker Horticultural Gardens that the University of Wisconsin Arboretum treats against emerald ash borer, the beetle that kills ash, and it is the biggest blue ash the Wisconsin DNR champion register knows.\n\nIts paperwork is unusually complete. It grew from seed of a blue ash at the Morton Arboretum outside Chicago. The US Department of Agriculture sent the young tree to Madison in 1960, and it went into the ground in the Gardens on 4 November 1968. That makes it somewhere around sixty, older by however long it waited as nursery stock.\n\nBlue ash is a rarity this far north. Wisconsin has it wild in one county only, Waukesha. The register measured this one at 1.79 metres round and 13.4 metres tall, with a crown about 15 metres across, and with the black tupelo by the Visitor Center it is one of the Gardens' two state champions.\n\nThe tell is in the twigs, which are four-sided, square in section, as blue ash twigs are. We have not pinned down which trunk in the collection is the champion, so the square twigs are the surest guide. A visitor recorded it in September 2024.",
+    "name": "The Blue Ash of Longenecker Gardens",
+    "species": "Blue Ash (Fraxinus quadrangulata)",
+    "age_estimate": "about 60 years",
+    "age_min": 58,
+    "age_max": 66,
+    "age_basis": "source",
+    "girth_cm": 179,
+    "height_m": 13.4,
+    "location": {
+      "address": "Longenecker Horticultural Gardens ash collection, UW Arboretum, Madison",
+      "latitude": 43.043895,
+      "longitude": -89.429109,
+      "neighbourhood": "Arboretum"
+    },
+    "place": "Madison, Wisconsin",
+    "place_slug": "madison",
+    "verified_sources": [
+      "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D142&outFields=*&f=json",
+      "https://arboretum.wisc.edu/news/arboretum-news/longenecker-horticultural-gardens-celebrates-ninety-years/",
+      "https://www.inaturalist.org/observations/240655736"
+    ],
+    "official_register": {
+      "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D142&outFields=*&f=json"
+    },
+    "access": "Free. Arboretum grounds open 4 a.m. to 10 p.m. (arboretum.wisc.edu/visit); walk in from the Visitor Center.",
+    "transport": "Free parking at the Arboretum Visitor Center; no bus stop verified this pass.",
+    "location_precision": "approximate",
+    "pin_source": "State register nomination point, objectid 142 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+    "how_to_recognise": "You can recognise it by its twigs, four-sided and square in section, the mark of a blue ash. It stands in the ash collection of Longenecker Gardens, a walk in from the Visitor Center.",
+    "photo_candidates": [],
+    "curation_status": "ai_generated",
+    "location_site": {
+      "name": "Longenecker Gardens ash collection",
+      "radius_m": 30
+    },
+    "verify_notes": "Arboretum page: second of two state champions in the Gardens; grown from seed of a Morton Arboretum tree, distributed by USDA to the Arboretum 1960, planted 4 Nov 1968; one of three ash trees being treated for emerald ash borer (a stated reason it is alive). Blue ash is native in Wisconsin to Waukesha County only. Age rests on the documented planting date (tree was seedling stock in 1960-68, so range). Latest iNaturalist near pin 2024-09-08. Not checked: exact trunk among the collection; pin approximate. Register figures (nomination measurement, date not in the layer): circumference 70.5 in (179 cm), height 44 ft (13.4 m), crown spread [49, 52] ft, 127.125 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk."
+  },
+  {
+    "id": "msn_003",
+    "story": "Wisconsin's champion pin oak grows in a small memorial park on the University of Wisconsin campus, and its crown is wider than the tree is tall. The state's DNR champion register measured a trunk 3.94 metres round, a height of 25.4 metres, and a crown about 30 metres one way and 26 the other.\n\nIt is one of three oaks standing together in the centre of Camp Randall Memorial Park, the one to the south-west. The register's point falls beside the park's Civil War cannon on North Randall Avenue, so this is the park and not the stadium of the same name. The other two oaks have never been measured, and nobody can say how close they come.\n\nFor scale, the champion pin oak of the Forest Preserves of Cook County, on our Chicago page, is 3.59 metres round. This one is about a third of a metre thicker, on a shorter tree.\n\nThe register is the only written record of it, and it does not say when the tape went round. A visitor photographed an oak at this spot in June 2026. In October the leaves turn dark red to russet, which is the best time to come. Nobody has published an age. If you know when these three oaks were planted, or whether they were here before the park, tell us.",
+    "name": "The Pin Oak of Camp Randall Memorial Park",
+    "species": "Pin Oak (Quercus palustris)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 394,
+    "height_m": 25.4,
+    "location": {
+      "address": "Camp Randall Memorial Park, North Randall Avenue, Madison",
+      "latitude": 43.07038,
+      "longitude": -89.41012,
+      "neighbourhood": "South Campus"
+    },
+    "place": "Madison, Wisconsin",
+    "place_slug": "madison",
+    "verified_sources": [
+      "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2759&outFields=*&f=json",
+      "https://www.inaturalist.org/observations/372129485",
+      "https://nominatim.openstreetmap.org/ui/details.html?osmtype=N&osmid=6758175063"
+    ],
+    "official_register": {
+      "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2759&outFields=*&f=json"
+    },
+    "access": "Free, open public memorial park on the UW campus (the register note says SW tree of three in the centre of the park). Not the stadium.",
+    "transport": "Campus area, many Madison Metro routes serve Regent St and Randall Ave; nearest stop not verified.",
+    "location_precision": "approximate",
+    "pin_source": "State register nomination point, objectid 2759 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+    "how_to_recognise": "You can recognise it as the south-west tree of the three oaks in the centre of the park, 3.94 metres round. It stands near the Civil War cannon memorial on North Randall Avenue.",
+    "best_time": {"months": [10], "kind": "autumn colour", "label": "October, when the leaves turn dark red to russet"},
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "location_site": {
+      "name": "Camp Randall Memorial Park",
+      "radius_m": 30
+    },
+    "verify_notes": "Register only, one source (UW Madison is the owner of the ground). Pin falls beside the OSM memorial node 'Civil War Cannon' (N Randall Ave), which places it in the memorial park rather than inside the stadium bowl. Camp Randall was a Civil War training camp and prison camp; the park keeps its memorials (a fact for the writer to source from the park itself, not verified here). Others of the three oaks not measured. iNaturalist observation 2026-06-15 near the pin. Register figures (nomination measurement, date not in the layer): circumference 155.2 in (394 cm), height 83.2 ft (25.4 m), crown spread [99, 85] ft, 261.4 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk."
+  },
+  {
+    "id": "msn_004",
+    "story": "Ponderosa pine is a tree of the American West, and Wisconsin's champion of the species grows behind a garden building on the University of Wisconsin campus in Madison. Somebody planted it here, far from its native range. The Wisconsin DNR champion register measured it at 2.50 metres round and 19.1 metres tall, with a narrow crown about 11 metres across.\n\nIt stands at the north-west corner of Allen Centennial Garden and carries the university plant tag 56-1527. That number is tempting. A 56 at the front looks like the year 1956, and it may well be, but nothing we have read says so, which is why we give this pine no age. A tag is a filing number until somebody shows it is a date.\n\nAllen Centennial Garden is the university's public garden, free and open from dawn to dusk every day, so the pine is easy to visit. The register describes it as behind the building; look on the garden side.\n\nThe register is the only record of the tree and does not say when it was measured. A visitor photographed it in October 2026. If you know when it went in, or what that tag really means, tell us.",
+    "name": "The Ponderosa Pine of Allen Centennial Garden",
+    "species": "Ponderosa Pine (Pinus ponderosa)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": null,
+    "girth_cm": 250,
+    "height_m": 19.1,
+    "location": {
+      "address": "Allen Centennial Garden, 620 Babcock Drive, NW corner behind the building, Madison",
+      "latitude": 43.077312,
+      "longitude": -89.41328,
+      "neighbourhood": "UW-Madison campus"
+    },
+    "place": "Madison, Wisconsin",
+    "place_slug": "madison",
+    "verified_sources": [
+      "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2767&outFields=*&f=json",
+      "https://allencentennialgarden.wisc.edu/about/history/",
+      "https://www.travelwisconsin.com/listing/allen-centennial-gardens/13007/",
+      "https://www.inaturalist.org/observations/405233313"
+    ],
+    "official_register": {
+      "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2767&outFields=*&f=json"
+    },
+    "access": "Free public garden on campus, open dawn to dusk every day (Allen Centennial Garden site; Travel Wisconsin lists free admission).",
+    "transport": "Campus area, Madison Metro serves Observatory Dr and Babcock Dr area; stop not verified.",
+    "location_precision": "approximate",
+    "pin_source": "State register nomination point, objectid 2767 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+    "how_to_recognise": "You can recognise it by the university plant tag 56-1527, on a pine 19.1 metres tall. It stands at the north-west corner of Allen Centennial Garden, behind the building.",
+    "photo_candidates": [],
+    "curation_status": "flagged",
+    "location_site": {
+      "name": "Allen Centennial Garden",
+      "radius_m": 30
+    },
+    "verify_notes": "Register only for the tree; the garden's own pages confirm free dawn-to-dusk access, not this tree. Register gives the UW tag 56-1527 (tag prefix suggests a 1956 accession; that is an inference, NOT a planting date, so no age given). Ponderosa pine is native to the western US, so this is a planted specimen. iNaturalist observation 2026-10-02 near pin. Register note says behind the building: confirm it is on the garden side before listing as a walk stop. Register figures (nomination measurement, date not in the layer): circumference 98.3 in (250 cm), height 62.7 ft (19.1 m), crown spread [35, 36] ft, 170 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk."
+  },
+  {
+    "id": "msn_005",
+    "story": "When the City of Madison handed out its first Heritage Tree Awards in 2012, the prize for history went to a hackberry on a grass strip beside the street. It is also the biggest of its species in the Wisconsin DNR champion register, at 3.85 metres round and 30.2 metres tall, with a crown about 20 metres across.\n\nThe history comes from the family who nominated it. By their account the tree was planted more than a hundred years ago by the man who had the first house built in the Oakland development, in 1897. That is a family memory rather than a record, so treat 1897 as a ceiling rather than a date. If they are right, the hackberry is somewhere between about a hundred and 129 years old, and it has seen the whole neighbourhood go up around it.\n\nIt stands on the city's terrace on the Madison Street side of the corner with Oakland Avenue, in front of a private house. Look from the sidewalk; the yard behind it is somebody's home. The bark rewards a close look even from there, corky and warty, the hackberry's signature.\n\nA visitor recorded it in April 2025. The register does not say when it was measured.",
+    "name": "The Oakland Avenue Hackberry",
+    "species": "Common Hackberry (Celtis occidentalis)",
+    "age_estimate": "over a century",
+    "age_min": 100,
+    "age_max": 129,
+    "age_basis": "source",
+    "girth_cm": 385,
+    "height_m": 30.2,
+    "location": {
+      "address": "Terrace on Oakland Avenue at Madison Street, Vilas neighbourhood, Madison",
+      "latitude": 43.06658,
+      "longitude": -89.41279,
+      "neighbourhood": "Vilas"
+    },
+    "place": "Madison, Wisconsin",
+    "place_slug": "madison",
+    "verified_sources": [
+      "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D3021&outFields=*&f=json",
+      "https://www.cityofmadison.com/node/12964",
+      "https://www.inaturalist.org/observations/270280886"
+    ],
+    "official_register": {
+      "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D3021&outFields=*&f=json"
+    },
+    "access": "View only from the public street; it stands on the city terrace in front of a private house. Do not enter the property.",
+    "transport": "Madison Metro serves the Vilas and Monroe Street area; stop not verified. Street parking.",
+    "location_precision": "approximate",
+    "pin_source": "State register nomination point, objectid 3021 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+    "how_to_recognise": "You can recognise it by its corky, warty bark, on a tree 30.2 metres tall. It stands on the grass terrace at the corner of Oakland Avenue and Madison Street, on the Madison Street side.",
+    "photo_candidates": [],
+    "curation_status": "ai_generated",
+    "verify_notes": "Two sources: the state register and the City of Madison (Parks Habitat Stewardship Committee), whose first Heritage Tree Awards in 2012 gave the Historic category to this hackberry. City page carries the nominating family's account that the tree was planted over 100 years ago by the man who had the first house in the Oakland development built in 1897; that is a family account (age_max 129 from the 1897 house, an upper bound, not a planting date). House address deliberately not printed: use the street corner. Register points to the terrace on the Madison Street side. Nominatim places the pin beside a Madison St house, so pin is approximate on the corner. iNaturalist 2025-04-12 near pin (alive). Register figures (nomination measurement, date not in the layer): circumference 151.7 in (385 cm), height 99 ft (30.2 m), crown spread [62, 69] ft, 267.07 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk."
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "city": "Wisconsin (outside Milwaukee)",
+  "country": "US",
+  "note": "Pass 2026-11-04. Public Wisconsin DNR champions outside Madison and Milwaukee. 12 verified in data/research/wisconsin-verified.json, all register-based, flagged.",
+  "leads": [
+    {
+      "name": "Quaking Aspen, Plum Lake Hemlock Forest",
+      "species": "Quaking Aspen (Populus tremuloides)",
+      "latitude": 46.018179,
+      "longitude": -89.482449,
+      "register_objectid": 2902,
+      "girth_cm": 267,
+      "height_m": 28,
+      "reason": "On a public state natural area, but the tree is one of about six aspens along an unmarked footpath about 1 mile from Tramper's Trail, 20 ft off the path; no sign, nothing that tells it apart, so not findable. Alive per iNaturalist 2024-10-29."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Forest County sugar maple behind a Forest Service gate",
+      "reason": "Brief: gated, not placed on a trail. Not researched."
+    },
+    {
+      "name": "Forest County cedar with no access note",
+      "reason": "Brief: no access source. Not researched."
+    },
+    {
+      "name": "Bong Recreation Area champion (Kenosha)",
+      "reason": "Left to the Milwaukee pass as the brief says."
+    }
+  ]
+}

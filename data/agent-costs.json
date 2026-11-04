@@ -15768,6 +15768,14 @@
     },
     {
       "date": "2026-11-04",
+      "kind": "write",
+      "target": "madison+milwaukee+wisconsin+chicago",
+      "tokens": 251877,
+      "trees": 29,
+      "note": "One Opus pass: 29 stories plus 13 place blocks (12 new places, Chicago grown to 43). Whole Midwest run about 820k tokens with dispatcher for 29 trees, 28k a tree. Held for the pace in scripts/build_us_midwest.py."
+    },
+    {
+      "date": "2026-11-04",
       "kind": "verify",
       "target": "somerset-dorset-yews",
       "tokens": 126874,

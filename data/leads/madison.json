@@ -1,0 +1,45 @@
+{
+  "city": "Madison",
+  "country": "US",
+  "note": "Pass 2026-11-04. Register join (Wisconsin DNR champions) plus the Arboretum, UW and City of Madison pages. Five verified in data/research/madison-verified.json.",
+  "leads": [
+    {
+      "name": "Silver Maple, Edgewood campus",
+      "species": "Silver Maple (Acer saccharinum)",
+      "latitude": 43.06157,
+      "longitude": -89.42065,
+      "register_objectid": 2053,
+      "girth_cm": 515,
+      "height_m": 33.7,
+      "reason": "Register champion (202.9 in, 110 ft), alive per iNaturalist 2024-03-24, but the owner is a private campus school; no source shows the grounds are open to walkers. Needs an access source."
+    },
+    {
+      "name": "Bur Oak, Warner Park",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "reason": "City of Madison 2012 Heritage Tree Award, Landmark category, public park at N Sherman Ave; no coordinate, girth or which trunk found. Next pass: the city's heritage page or the Remarkable Trees of Dane County map."
+    },
+    {
+      "name": "Cottonwood grove, Yahara Place Park",
+      "species": "Eastern Cottonwood (Populus deltoides)",
+      "reason": "City of Madison 2012 Heritage Tree Award, Collection category, Lake Monona shoreline; a grove, not one collectible point unless one trunk is named."
+    },
+    {
+      "name": "Remarkable Trees of Dane County map",
+      "reason": "A public crowd-sourced map of 100+ trees (WPR article names a very large sugar maple and red oak near the state hospital, an elm at Badger Prairie County Park, a cottonwood by an elementary school); not read in this pass because the map itself is not machine-readable from here. Best next angle for Madison."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Red Oak on the Eagle Effigy Mound, Mendota Mental Health Institute",
+      "reason": "Working state hospital; a mound-marker source says permission is needed to visit the grounds (hard rule 10). Register: looked dying 2013, alive 2022 (iNaturalist 2024). Same for the large sugar maple there named by WPR."
+    },
+    {
+      "name": "Dawn Redwood, Dorsett Drive (register 1718)",
+      "reason": "Backyard of a private home; not visible as a public tree."
+    },
+    {
+      "name": "Lapham bur oak, Edgewood Drive",
+      "reason": "DNR 'Every Root an Anchor' chapter says the old bur oak stood until the early 1990s (gone)."
+    }
+  ]
+}

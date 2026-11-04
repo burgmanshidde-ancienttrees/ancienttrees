@@ -1,0 +1,72 @@
+{
+ "city": "Milwaukee",
+ "country": "US",
+ "note": "Wisconsin DNR champion register plus Lake Park Friends Tree Walk (2016) and DNR Every Root an Anchor excerpts. Pass 2026-11-04.",
+ "leads": [
+  {
+   "name": "Lake Park swamp white oak at the Locust Street turn-around",
+   "species": "Swamp White Oak (Quercus bicolor)",
+   "reason": "Lake Park Friends Tree Walk 2016 stop 31 says almost 200 years old, grass triangle behind the Locust Street turn-around; same park as mke_004/005, not delivered only to avoid a fourth near-duplicate oak; add if the page wants it, source https://lakeparkfriends.org/wp-content/uploads/2026/03/LPF-Tree-Book-2016.pdf"
+  },
+  {
+   "name": "Lake Park trail-marker white ashes near the Indian mound",
+   "species": "White Ash (Fraxinus americana)",
+   "reason": "Friends say about 200 years old and bent by Native Americans as trail markers (a legend); ash in Milwaukee County is being removed for emerald ash borer, so alive-now unknown"
+  },
+  {
+   "name": "Lake Park champion European beech near the Brick Arch Bridge",
+   "species": "European Beech (Fagus sylvatica)",
+   "reason": "2011 circ 149 in; Friends appendix may mark it CUT DOWN IN 2016 (layout ambiguous); verify on site before use"
+  },
+  {
+   "name": "Lake Park European ashes by Lake Drive",
+   "species": "European Ash (Fraxinus excelsior)",
+   "reason": "2011 circ 95 in and 86 in, once state record, EAB risk, location only 'LK Dr'; a CC0 iNaturalist observation 2025-07-11 at 43.0734,-87.8701 (297014673) is needs_id, not confirmed as this tree"
+  },
+  {
+   "name": "Whitnall Park sugar maple over 270 years old",
+   "species": "Sugar Maple (Acer saccharum)",
+   "reason": "DNR Every Root an Anchor excerpt (Whitnall Park and Boerner Gardens, 88) says near the corner of Grange Avenue and Root River Parkway Drive, Hales Corners; old book text, no coordinate, no alive confirmation; the best old-tree lead in the county, needs a modern source"
+  },
+  {
+   "name": "Oak Creek shagbark hickory (DNR champion objectid 3023)",
+   "species": "Shagbark Hickory (Carya ovata)",
+   "reason": "108 in, 105 ft; register coordinate 42.89415,-87.94296 lands beside a residential street (S 20th St), 'north of the water tower at the north end of a hardwood forest'; public land not shown, no alive evidence; no photo or exact pin in reach"
+  },
+  {
+   "name": "Boerner Botanical Gardens Scots pines",
+   "species": "Scots Pine (Pinus sylvestris)",
+   "reason": "DNR excerpt: planted about 100 years before the book, nucleus of the conifer collection on 92nd Street near College Avenue; garden is paid entry; no tree-level source or coordinate"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Shorewood European beech (DNR objectid 1996)",
+   "reason": "Private house (register gives a street address); not shown to be clearly seen from the public street; address not recorded here"
+  },
+  {
+   "name": "Bay View paperbark maple (objectid 2737)",
+   "reason": "Private front yard of a residence; only 50 in, 35 ft, not remarkable"
+  },
+  {
+   "name": "Kenosha church linden and Kenosha pecan (DNR champions)",
+   "reason": "Private property rows in register, not checked, out per brief"
+  },
+  {
+   "name": "Milwaukee Menomonee River Parkway Elm",
+   "reason": "DNR Every Root an Anchor: the record elm was lost"
+  },
+  {
+   "name": "Most Painted Tree in Wisconsin (willow, Milwaukee County)",
+   "reason": "Historic farm willow from a painter's story, location unclear in the excerpt, almost certainly gone"
+  },
+  {
+   "name": "Shorewood Tree Collection",
+   "reason": "Former sanitarium grounds subdivided in the 1990s, private lots, only a remnant"
+  },
+  {
+   "name": "Lake Park Bradford Callery pear",
+   "reason": "Former state champion lost to a storm per the Friends' book"
+  }
+ ]
+}
