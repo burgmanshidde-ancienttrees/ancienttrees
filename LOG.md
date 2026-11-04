@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 (second attempt, morning): no tree shipped, the pace is full
+
+- 111 READY leads and about 550 written trees wait, but the pace holds at exactly 25 new trees in 24 hours until about 14:54 UTC. Canterbury, Mottisfont and Stratford-upon-Avon (7 trees) stay untracked on disk for that. Nothing to merge before then.
+- Sintra enrich claim still stands (sin_006 verified, not merged); left for its owner to finish.
+- Depth rungs empty: no stuck recognition lines, no photo-less city queued, page gaps are only noindexed species and parks.
+- Sourced 3 archive contacts into the private store (Arnold Arboretum library, RBGE archives, Texas Tree Trails Dallas); only the Arnold one is mailable, the others already got mail. Nothing sent.
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-10](archive/LOG-2026-10.md)
