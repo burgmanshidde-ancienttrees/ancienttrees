@@ -28,21 +28,27 @@
    "sources": [
     "https://www.parksandgardens.org/places/memorial-park-bridge-of-allan",
     "https://stirling.gov.uk/planning-building-the-environment/the-environment/parks-in-stirling/bridge-of-allan-pullar-memorial-park"
-   ]
+   ],
+   "species": "Giant Sequoia (Sequoiadendron sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Callendar Wood veteran oaks and Wallace-legend oak, Falkirk",
    "reason": "FLS survey analysis: ancient semi-natural woodland with many veteran oaks, some about 250 years (tourism guide); no individual tree named or located.",
    "sources": [
     "https://forestryandland.gov.scot/media/lvmfatrp/06-callendar-wood-survey-analysis-concept-maps1.pdf"
-   ]
+   ],
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Mugdock yew (AYG 2696), see data/leads/glasgow.json",
    "reason": "already a lead; girth 478 cm single database row.",
    "sources": [
     "https://www.ancient-yew.org/yew_tree_database/mugdock-country-park/"
-   ]
+   ],
+   "species": "Yew (Taxus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [

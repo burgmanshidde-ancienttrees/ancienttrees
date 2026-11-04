@@ -16,7 +16,9 @@
    "lat": 30.13387,
    "lon": -91.826745,
    "source": "theclio.com caption (403 to fetch, search summary only)",
-   "reason": "age appears only in a search summary of a caption; unverified"
+   "reason": "age appears only in a search summary of a caption; unverified",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Blanchet Oak, Lafayette",
@@ -29,30 +31,40 @@
    "name": "Robbins Oak, Lafayette",
    "girth_cm": 859,
    "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
-   "reason": "28 ft 2 in; no location or access stated"
+   "reason": "28 ft 2 in; no location or access stated",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Robert Earl Sr. Oak, Lafayette",
    "girth_cm": 869,
    "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
-   "reason": "28 ft 6 in; no location or access stated"
+   "reason": "28 ft 6 in; no location or access stated",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Rhett Butler Oak, Lafayette",
    "girth_cm": 828,
    "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
-   "reason": "27 ft 2 in; no location or access stated"
+   "reason": "27 ft 2 in; no location or access stated",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Hooper O'Day Oak, Lafayette",
    "girth_cm": 775,
    "source": "https://100oaks.blog/2015/06/06/acadianas-top-10-live-oaks/",
-   "reason": "25 ft 5 in; no location or access stated"
+   "reason": "25 ft 5 in; no location or access stated",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Oldest oak right rear of the Coulon House (about 300 years)",
    "source": "search summary only",
-   "reason": "unnamed property, location not established"
+   "reason": "unnamed property, location not established",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [

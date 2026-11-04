@@ -1,17 +1,61 @@
 {
-  "city": "Baton Rouge",
-  "leads": [
-    {"name": "Magnolia Mound six front oaks (Bicentennial Oaks)", "lat": 30.426483, "lon": -91.187483, "reason": "ensemble of six oaks in front of BREC's Magnolia Mound house (c. 1791); only a Waymarking listing and a tour-guide remark that some predate the house; no girth or dated source; 2161 Nicholson Dr, site is a paid-entry museum on 16 acres"},
-    {"name": "LSU oldest oak between Manship School and Hodges Hall", "lat": null, "lon": null, "reason": "age 'over 200 years' rests on 100oaks.blog (supposedly oldest) and an unattributed 2002 Reveille line about the oak in front of the Journalism building; no girth, no pin, no registry number, no ring count"},
-    {"name": "Three old live oaks of Capitol Park near the former Pentagon Barracks site", "lat": null, "lon": null, "reason": "state report quoted only in a search summary, 'at least 100 years'; needs the report itself, a girth and a pin"},
-    {"name": "LSU Quad oaks (Oxley Oak and endowed Quad oaks)", "lat": null, "lon": null, "reason": "named only in a photo caption, no girth or age; 249 oaks endowed per 2008 Reveille but none measured"}
-  ],
-  "blocked": [
-    {"name": "Governor's Oak (Live Oak Society #2364, girth 33 ft 3 in)", "reason": "private lots on Highland Road bought by three families in 1999; the blogger needed Baton Rouge Green to find it; no public access"},
-    {"name": "Ole Glory Oak (Live Oak Society #4592, girth 28 ft 1 in)", "reason": "private property of the Sparks family on Highland Road"},
-    {"name": "Hundred Oaks / Rouse live oak, Reymond Avenue (Live Oak Society #606, 19 ft girth, about 280 years)", "reason": "private residence"},
-    {"name": "Thomas Boyd oak, State Capitol gardens", "reason": "dead: uprooted by Hurricane Gustav, September 2008 (Live Oak Society girth 20 ft 6 in); Annie Boyd oak fell 1965, Nicholson oak removed 2000"},
-    {"name": "Garden District medians oaks (Park Blvd, Cherokee St)", "reason": "avenue of oaks, not a collectible point; no named tree"},
-    {"name": "Staring Lane registered oaks (11 in Live Oak Society)", "reason": "location is private lane in south Baton Rouge, no public access shown"}
-  ]
+ "city": "Baton Rouge",
+ "leads": [
+  {
+   "name": "Magnolia Mound six front oaks (Bicentennial Oaks)",
+   "lat": 30.426483,
+   "lon": -91.187483,
+   "reason": "ensemble of six oaks in front of BREC's Magnolia Mound house (c. 1791); only a Waymarking listing and a tour-guide remark that some predate the house; no girth or dated source; 2161 Nicholson Dr, site is a paid-entry museum on 16 acres"
+  },
+  {
+   "name": "LSU oldest oak between Manship School and Hodges Hall",
+   "lat": null,
+   "lon": null,
+   "reason": "age 'over 200 years' rests on 100oaks.blog (supposedly oldest) and an unattributed 2002 Reveille line about the oak in front of the Journalism building; no girth, no pin, no registry number, no ring count",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Three old live oaks of Capitol Park near the former Pentagon Barracks site",
+   "lat": null,
+   "lon": null,
+   "reason": "state report quoted only in a search summary, 'at least 100 years'; needs the report itself, a girth and a pin",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "LSU Quad oaks (Oxley Oak and endowed Quad oaks)",
+   "lat": null,
+   "lon": null,
+   "reason": "named only in a photo caption, no girth or age; 249 oaks endowed per 2008 Reveille but none measured",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Governor's Oak (Live Oak Society #2364, girth 33 ft 3 in)",
+   "reason": "private lots on Highland Road bought by three families in 1999; the blogger needed Baton Rouge Green to find it; no public access"
+  },
+  {
+   "name": "Ole Glory Oak (Live Oak Society #4592, girth 28 ft 1 in)",
+   "reason": "private property of the Sparks family on Highland Road"
+  },
+  {
+   "name": "Hundred Oaks / Rouse live oak, Reymond Avenue (Live Oak Society #606, 19 ft girth, about 280 years)",
+   "reason": "private residence"
+  },
+  {
+   "name": "Thomas Boyd oak, State Capitol gardens",
+   "reason": "dead: uprooted by Hurricane Gustav, September 2008 (Live Oak Society girth 20 ft 6 in); Annie Boyd oak fell 1965, Nicholson oak removed 2000"
+  },
+  {
+   "name": "Garden District medians oaks (Park Blvd, Cherokee St)",
+   "reason": "avenue of oaks, not a collectible point; no named tree"
+  },
+  {
+   "name": "Staring Lane registered oaks (11 in Live Oak Society)",
+   "reason": "location is private lane in south Baton Rouge, no public access shown"
+  }
+ ]
 }

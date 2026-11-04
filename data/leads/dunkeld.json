@@ -8,7 +8,9 @@
   {
    "name": "Dunkeld Pedestal Larch",
    "reason": "Larch about 300 years old with a root 'pedestal' almost 8 m across, in woods behind Dunkeld House Hotel (hotel grounds, access to the woods not confirmed). The only locating source found was a blog that took its position from the Woodland Trust Ancient Tree Inventory (off limits) and that itself failed to find it for a long search. No pin, no access evidence.",
-   "place": "dunkeld"
+   "place": "dunkeld",
+   "species": "Larch (Larix sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Original Japanese Larches, Dunkeld House Hotel drive",
@@ -38,7 +40,9 @@
   {
    "name": "Scone Palace Pinetum and giant sequoia",
    "reason": "Palace pinetum of rare conifers collected by the 4th Earl of Mansfield; a giant sequoia is listed on monumentaltrees.com (fact lead only). No measurements or coordinates read this pass.",
-   "place": "scone"
+   "place": "scone",
+   "species": "Giant Sequoia (Sequoiadendron sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [

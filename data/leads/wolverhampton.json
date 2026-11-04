@@ -1,120 +1,138 @@
 {
-  "leads": [
-    {
-      "name": "Treebeard-like oak, Sher Brook Valley, Cannock Chase",
-      "place": "Cannock Chase",
-      "reason": "Staffordshire Live article (huge-tree-looks-just-like-6630743) seen only as a search snippet, page redirects to tollbit and was not read; no coordinate, age or measurements. Near the stepping stones among Brocton Coppice oaks.",
-      "source": "https://www.staffordshire-live.co.uk/news/local-news/huge-tree-looks-just-like-6630743"
-    },
-    {
-      "name": "Brocton Coppice ancient oaks (other trunks)",
-      "place": "Cannock Chase",
-      "reason": "Coppice holds about 600 sessile oaks per Staffordshire County Council statements (search summaries); no other individually named or located trunk found. Komoot highlight 4067914 'Ancient Oak Woodland' at 52.77215,-2.028891 is a woodland-level point, not a tree.",
-      "source": "https://www.komoot.com/highlight/4067914"
-    },
-    {
-      "name": "Tettenhall yews photograph",
-      "place": "Wolverhampton",
-      "reason": "Needs an open-licence photo of the three yews on the north side of St Michael's; unchecked Geograph views exist (Commons 7864664, 408902, 6831878)."
-    },
-    {
-      "name": "Bushbury St Mary yew remains",
-      "place": "Wolverhampton",
-      "reason": "Ancient Yew Group Staffordshire PDF notes a 1905 visit recorded yew remains; whether still alive is unknown; not checked further.",
-      "source": "https://www.ancient-yew.org/userfiles/file/Staffordshire%20-%20January%202018a.pdf"
-    },
-    {
-      "name": "Merridale Cemetery hornbeam (Jeffcock Road entrance)",
-      "place": "Wolverhampton",
-      "reason": "The Street Tree substack post 91 (10 Feb 2024, Paul Wood) calls it one of Wolverhampton's finest trees and 'very old'; post paywalled, no size, age or coordinate. Cemetery opened 1850. Lead only.",
-      "source": "https://thestreettree.substack.com/p/91-merridale-monument"
-    },
-    {
-      "name": "Boningale St Chad yew (Shropshire)",
-      "place": "Wolverhampton",
-      "reason": "AYG: 396 cm at ground, shown in a 1791 painting; about 10 miles west of Wolverhampton in Shropshire, no practical public transport verified; modest girth.",
-      "source": "https://ancient-yew.org/yew_tree_database/boningale-nr-albrighton"
-    },
-    {
-      "name": "Pendeford yew",
-      "place": "Wolverhampton",
-      "reason": "AYG: 508 cm at 122 cm, 2019, but notes say public with restricted access on a footpath/road site; no safe access statement.",
-      "source": "https://www.ancient-yew.org/yew_tree_database/pendeford/"
-    },
-    {
-      "name": "Royal Oak descendant ('Son of Royal Oak'), Boscobel House",
-      "place": "Wolverhampton",
-      "reason": "In Shropshire, English Heritage site, thought to be 2 or 3 centuries old; no public transport within 30 minutes of Wolverhampton verified; Moseley Old Hall has only a tree house inspired by the story. Candidate for a Shropshire pass.",
-      "source": "https://www.english-heritage.org.uk/visit/places/boscobel-house-and-the-royal-oak/history/"
-    },
-    {
-      "name": "Shugborough: other veteran trees and visitor-centre ancient oak",
-      "place": "Cannock Chase",
-      "reason": "A contractor news item says the new visitor centre wraps around an ancient oak; no species, girth or location confirmed.",
-      "source": "https://constructionmaguk.co.uk/obrien-contractors-wins-major-contract-with-prominent-midlands-national-trust-property/"
-    },
-    {
-      "name": "Sandwell Valley Country Park sweet chestnuts",
-      "place": "West Bromwich",
-      "reason": "A Woodland Trust visiting page (not the Ancient Tree Inventory) said some trees in Park Farm Wood and Priory Wood are over 200 years old, 'amazing sweet chestnuts'; no individual tree, no location. Not fetched.",
-      "source": "https://www.woodlandtrust.org.uk/visiting-woods/woods/sandwell-valley-country-park/"
-    },
-    {
-      "name": "Codsall Coppice LNR oak woodland (Sandwell)",
-      "place": "West Bromwich",
-      "reason": "Woodland of over 2 ha mainly oak, thought over 400 years old as woodland; a wood, not a collectible tree.",
-      "source": "https://www.visitsandwell.com/things-to-see-and-do/codsall-coppice-local-nature-reserve-p1414811"
-    },
-    {
-      "name": "Pattingham St Chad yew",
-      "place": "Wolverhampton",
-      "reason": "AYG tree 2904: Notable, 305 cm at the ground, 'large yew on the south side' in an 1846 William Salt Library drawing; photographed 2012; modest girth and no recent alive check; no transport verified.",
-      "source": "https://www.ancient-yew.org/yew_tree_database/pattingham/"
-    },
-    {
-      "name": "Penkridge Hall yews (Shropshire)",
-      "place": "Wolverhampton",
-      "reason": "AYG tree 1529: 310 cm, Notable, garden of a private house, visible from a public footpath; planting date 1590 is the owner's inference. Near Church Stretton, not Penkridge, Staffordshire; far outside the day-trip range.",
-      "source": "https://www.ancient-yew.org/yew_tree_database/penkridge/"
-    },
-    {
-      "name": "Swindon (Staffordshire) roadside yew",
-      "place": "Wolverhampton",
-      "reason": "AYG tree 6926: Ancient, 502 cm at 20 cm, grid SO8513189069, on a road junction, photographed 2023; AYG record is credited to the Ancient Tree Inventory (off limits) and the tree is by a roadside, so access unclear. Not used.",
-      "source": "https://www.ancient-yew.org/yew_tree_database/swindon-staffordshire/"
-    },
-    {
-      "name": "Komoot 'Ancient Tree in Cannock Chase' (highlight 5877116)",
-      "place": "Cannock Chase",
-      "reason": "52.771897, -2.020145, about 650 m south of the Sher Brook stepping stones; tip 3 July 2023 'at least 500 years old'. Identity versus the Treebeard oak (cnk_003) and the Groot tree unresolved; amateur remark only.",
-      "source": "https://www.komoot.com/highlight/5877116"
-    },
-    {
-      "name": "Shugborough giant redwoods (Wellingtonia) groups",
-      "place": "Cannock Chase",
-      "reason": "Redwood World lists 21+ Sequoiadendron at Shugborough (a group of 4 near the Milford gate, 8 in the arboretum); the page has a table of measurements and coordinates that was not read (truncated); planted trees, not ancient. Candidate if a measured individual is wanted.",
-      "source": "https://redwoodworld.co.uk/picturepages/milford.htm"
-    }
-  ],
-  "blocked": [
-    {
-      "name": "West Park Wolverhampton common oak and sessile oak",
-      "reason": "Planted 1897 for Victoria's Diamond Jubilee per the council tree trail page, not ancient; leads only if a reader wants them.",
-      "source": "https://wolverhampton.gov.uk/news/discover-wonders-nature-citys-hi-tech-tree-trail"
-    },
-    {
-      "name": "Wightwick Manor, Bantock Park, Oak House, Dartmouth Park trees",
-      "reason": "No individual veteran tree named in any source found; paid or park-level only."
-    },
-    {
-      "name": "Shareshill / Great Saredon yew (Staffordshire)",
-      "reason": "AYG tree 2760: lost yew site, private.",
-      "source": "https://www.ancient-yew.org/yew_tree_database/shareshill/"
-    },
-    {
-      "name": "Pendeford yew",
-      "reason": "AYG record is credited to the Woodland Trust Ancient Tree Inventory (off limits) and access is 'public but restricted'; not used.",
-      "source": "https://www.ancient-yew.org/yew_tree_database/pendeford/"
-    }
-  ]
+ "leads": [
+  {
+   "name": "Treebeard-like oak, Sher Brook Valley, Cannock Chase",
+   "place": "Cannock Chase",
+   "reason": "Staffordshire Live article (huge-tree-looks-just-like-6630743) seen only as a search snippet, page redirects to tollbit and was not read; no coordinate, age or measurements. Near the stepping stones among Brocton Coppice oaks.",
+   "source": "https://www.staffordshire-live.co.uk/news/local-news/huge-tree-looks-just-like-6630743"
+  },
+  {
+   "name": "Brocton Coppice ancient oaks (other trunks)",
+   "place": "Cannock Chase",
+   "reason": "Coppice holds about 600 sessile oaks per Staffordshire County Council statements (search summaries); no other individually named or located trunk found. Komoot highlight 4067914 'Ancient Oak Woodland' at 52.77215,-2.028891 is a woodland-level point, not a tree.",
+   "source": "https://www.komoot.com/highlight/4067914",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Tettenhall yews photograph",
+   "place": "Wolverhampton",
+   "reason": "Needs an open-licence photo of the three yews on the north side of St Michael's; unchecked Geograph views exist (Commons 7864664, 408902, 6831878).",
+   "species": "Yew (Taxus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Bushbury St Mary yew remains",
+   "place": "Wolverhampton",
+   "reason": "Ancient Yew Group Staffordshire PDF notes a 1905 visit recorded yew remains; whether still alive is unknown; not checked further.",
+   "source": "https://www.ancient-yew.org/userfiles/file/Staffordshire%20-%20January%202018a.pdf"
+  },
+  {
+   "name": "Merridale Cemetery hornbeam (Jeffcock Road entrance)",
+   "place": "Wolverhampton",
+   "reason": "The Street Tree substack post 91 (10 Feb 2024, Paul Wood) calls it one of Wolverhampton's finest trees and 'very old'; post paywalled, no size, age or coordinate. Cemetery opened 1850. Lead only.",
+   "source": "https://thestreettree.substack.com/p/91-merridale-monument",
+   "species": "Hornbeam (Carpinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Boningale St Chad yew (Shropshire)",
+   "place": "Wolverhampton",
+   "reason": "AYG: 396 cm at ground, shown in a 1791 painting; about 10 miles west of Wolverhampton in Shropshire, no practical public transport verified; modest girth.",
+   "source": "https://ancient-yew.org/yew_tree_database/boningale-nr-albrighton",
+   "species": "Yew (Taxus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Pendeford yew",
+   "place": "Wolverhampton",
+   "reason": "AYG: 508 cm at 122 cm, 2019, but notes say public with restricted access on a footpath/road site; no safe access statement.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/pendeford/"
+  },
+  {
+   "name": "Royal Oak descendant ('Son of Royal Oak'), Boscobel House",
+   "place": "Wolverhampton",
+   "reason": "In Shropshire, English Heritage site, thought to be 2 or 3 centuries old; no public transport within 30 minutes of Wolverhampton verified; Moseley Old Hall has only a tree house inspired by the story. Candidate for a Shropshire pass.",
+   "source": "https://www.english-heritage.org.uk/visit/places/boscobel-house-and-the-royal-oak/history/",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Shugborough: other veteran trees and visitor-centre ancient oak",
+   "place": "Cannock Chase",
+   "reason": "A contractor news item says the new visitor centre wraps around an ancient oak; no species, girth or location confirmed.",
+   "source": "https://constructionmaguk.co.uk/obrien-contractors-wins-major-contract-with-prominent-midlands-national-trust-property/",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Sandwell Valley Country Park sweet chestnuts",
+   "place": "West Bromwich",
+   "reason": "A Woodland Trust visiting page (not the Ancient Tree Inventory) said some trees in Park Farm Wood and Priory Wood are over 200 years old, 'amazing sweet chestnuts'; no individual tree, no location. Not fetched.",
+   "source": "https://www.woodlandtrust.org.uk/visiting-woods/woods/sandwell-valley-country-park/"
+  },
+  {
+   "name": "Codsall Coppice LNR oak woodland (Sandwell)",
+   "place": "West Bromwich",
+   "reason": "Woodland of over 2 ha mainly oak, thought over 400 years old as woodland; a wood, not a collectible tree.",
+   "source": "https://www.visitsandwell.com/things-to-see-and-do/codsall-coppice-local-nature-reserve-p1414811",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Pattingham St Chad yew",
+   "place": "Wolverhampton",
+   "reason": "AYG tree 2904: Notable, 305 cm at the ground, 'large yew on the south side' in an 1846 William Salt Library drawing; photographed 2012; modest girth and no recent alive check; no transport verified.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/pattingham/",
+   "species": "Yew (Taxus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Penkridge Hall yews (Shropshire)",
+   "place": "Wolverhampton",
+   "reason": "AYG tree 1529: 310 cm, Notable, garden of a private house, visible from a public footpath; planting date 1590 is the owner's inference. Near Church Stretton, not Penkridge, Staffordshire; far outside the day-trip range.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/penkridge/"
+  },
+  {
+   "name": "Swindon (Staffordshire) roadside yew",
+   "place": "Wolverhampton",
+   "reason": "AYG tree 6926: Ancient, 502 cm at 20 cm, grid SO8513189069, on a road junction, photographed 2023; AYG record is credited to the Ancient Tree Inventory (off limits) and the tree is by a roadside, so access unclear. Not used.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/swindon-staffordshire/",
+   "species": "Yew (Taxus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Komoot 'Ancient Tree in Cannock Chase' (highlight 5877116)",
+   "place": "Cannock Chase",
+   "reason": "52.771897, -2.020145, about 650 m south of the Sher Brook stepping stones; tip 3 July 2023 'at least 500 years old'. Identity versus the Treebeard oak (cnk_003) and the Groot tree unresolved; amateur remark only.",
+   "source": "https://www.komoot.com/highlight/5877116"
+  },
+  {
+   "name": "Shugborough giant redwoods (Wellingtonia) groups",
+   "place": "Cannock Chase",
+   "reason": "Redwood World lists 21+ Sequoiadendron at Shugborough (a group of 4 near the Milford gate, 8 in the arboretum); the page has a table of measurements and coordinates that was not read (truncated); planted trees, not ancient. Candidate if a measured individual is wanted.",
+   "source": "https://redwoodworld.co.uk/picturepages/milford.htm"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "West Park Wolverhampton common oak and sessile oak",
+   "reason": "Planted 1897 for Victoria's Diamond Jubilee per the council tree trail page, not ancient; leads only if a reader wants them.",
+   "source": "https://wolverhampton.gov.uk/news/discover-wonders-nature-citys-hi-tech-tree-trail"
+  },
+  {
+   "name": "Wightwick Manor, Bantock Park, Oak House, Dartmouth Park trees",
+   "reason": "No individual veteran tree named in any source found; paid or park-level only."
+  },
+  {
+   "name": "Shareshill / Great Saredon yew (Staffordshire)",
+   "reason": "AYG tree 2760: lost yew site, private.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/shareshill/"
+  },
+  {
+   "name": "Pendeford yew",
+   "reason": "AYG record is credited to the Woodland Trust Ancient Tree Inventory (off limits) and access is 'public but restricted'; not used.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/pendeford/"
+  }
+ ]
 }

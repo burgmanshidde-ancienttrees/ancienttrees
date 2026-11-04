@@ -667,7 +667,9 @@
    "status": "lead",
    "reason": "five oaks said to be 300 to 500 years old by the garden's own itinerary; another garden page says most oaks are 100 to 150, so ages conflict; the individual oaks are on a map image I could not read, so no tree can be pinned. Paid (general admission). Needs the map PDF at descansogardens.org/visit/plan-your-visit/maps-and-itineraries/ or a GPS fix.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-east-notes.md"
+   "notes_file": "data/research/los-angeles-east-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Mission San Gabriel grapevine \"Ramona\" (near 34.0971,-118.1071)",
@@ -681,14 +683,18 @@
    "status": "lead",
    "reason": "huntington.org returned 429 on every fetch; Huntington says it holds three Montezuma Cypresses at the Rose Garden and nine near the Lily Ponds (search summary, not fetched). No independent source read, so not delivered. Host: huntington.org (429).",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-east-notes.md"
+   "notes_file": "data/research/los-angeles-east-notes.md",
+   "species": "Cypress (Cupressus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Coast Live Oak, Chinese Garden, Huntington",
    "status": "lead",
    "reason": "Huntington blog (via search summary only) calls it one of the oldest trees there. Unfetched.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-east-notes.md"
+   "notes_file": "data/research/los-angeles-east-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "LA County Arboretum (Arcadia)",
@@ -702,21 +708,27 @@
    "status": "lead",
    "reason": "reported at risk (Colorado Boulevard guest opinion); status unknown.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-east-notes.md"
+   "notes_file": "data/research/los-angeles-east-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "McDonald Park oak, Pasadena (Bungalow Heaven)",
    "status": "lead",
    "reason": "diseased and leaning, city plans removal; age disputed; do not ship.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-east-notes.md"
+   "notes_file": "data/research/los-angeles-east-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Moreton Bay chestnut (Castanospermum australe), OSM node 14039929117 at 34.12664",
    "status": "lead",
    "reason": "Moreton Bay chestnut (Castanospermum australe), OSM node 14039929117 at 34.12664,-118.11246 (carries a California Big Trees record, finding aid only): no Huntington page or news found, zero iNaturalist observations within 400 m. No independent source; lead only.",
    "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-huntington-notes.md"
+   "notes_file": "data/research/los-angeles-huntington-notes.md",
+   "species": "Fig (Ficus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Nine Montezuma cypresses near the Lily Ponds (Huntington blog 2023-05-09)",
@@ -730,28 +742,36 @@
    "status": "lead",
    "reason": "second of the three Rose Garden cypresses; folded into lax_017 as a neighbour, not separate.",
    "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-huntington-notes.md"
+   "notes_file": "data/research/los-angeles-huntington-notes.md",
+   "species": "Cypress (Cupressus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Cork oak (Quercus suber) OSM node 13762446819 at 34.12848,-118.11141, no species",
    "status": "lead",
    "reason": "Cork oak (Quercus suber) OSM node 13762446819 at 34.12848,-118.11141, no species source beyond OSM tag; lead.",
    "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-huntington-notes.md"
+   "notes_file": "data/research/los-angeles-huntington-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Old oaks of the Camellia Garden (iNat 308536601, 34.12814,-118.11372",
    "status": "lead",
    "reason": "\"large ones, likely preexisting\"): unsourced, lead.",
    "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-huntington-notes.md"
+   "notes_file": "data/research/los-angeles-huntington-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Copper beech, North Vista",
    "status": "lead",
    "reason": "acquired 1938 (Huntington blog), young; skip.",
    "source": "verify pass 2026-11-04 (California second pass, session e2f631fb)",
-   "notes_file": "data/research/los-angeles-huntington-notes.md"
+   "notes_file": "data/research/los-angeles-huntington-notes.md",
+   "species": "Beech (Fagus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [

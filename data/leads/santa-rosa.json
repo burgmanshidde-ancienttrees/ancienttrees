@@ -1,97 +1,103 @@
 {
-  "leads": [
-    {
-      "name": "Sonoma Plaza giant sequoia, NW side by the Haraszthy monument, 38.29343,-122.457",
-      "status": "lead",
-      "reason": "Sonoma Plaza giant sequoia, NW side by the Haraszthy monument, 38.29343,-122.45782 (iNaturalist 310678585, 2025-08-31, captive). Species and place from Napa Sonoma Magazine via search plus a blog; no planting year or size. Needs a Sonoma Plaza tree tour map (Tom Rusert, Visitors Bureau) or city source.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Sonoma Plaza coast redwood, SW corner, planted 1948, dedicated to General Vallej",
-      "status": "lead",
-      "reason": "Sonoma Plaza coast redwood, SW corner, planted 1948, dedicated to General Vallejo (one blog only, ginnyprior.com). Needs a second source and a coordinate.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Sonoma Plaza palm, planted about 1910 per Sonoma Sun (2026-01-15; sonomasun.com ",
-      "status": "lead",
-      "reason": "Sonoma Plaza palm, planted about 1910 per Sonoma Sun (2026-01-15; sonomasun.com 403s to all fetchers, only the search summary seen). Species unknown.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Burbank Experiment Farm, same site as srs_001, original plantings on the Society tour",
-      "status": "lead",
-      "reason": "#5 hybrid chestnut, #6 Paradox Walnut north twin (1893), #9 multi-grafted English walnut mother tree. No individual coordinates.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Luther Burbank Home and Gardens, Santa Rosa (204 Santa Rosa Ave)",
-      "status": "lead",
-      "reason": "Paradox walnut planted 1914 east of the Carriage House per a Burbank timeline; no source says it stands today. Ask the Home and Gardens.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "SRJC Santa Rosa valley oaks",
-      "status": "lead",
-      "reason": "150 valley oaks, \"over 250 years\", in a heritage tree protection zone behind the main sign in Burbank Park (Oak Leaf, 2018). Campus, no named individual tree, public access not shown.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Lachryma Montis (Vallejo home, Sonoma)",
-      "status": "lead",
-      "reason": "historic fruit and ornamental trees mentioned, no individual tree named; the 2007 Cultural Landscape Report by California State Parks would list them.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Mission San Francisco Solano",
-      "status": "lead",
-      "reason": "courtyard olives and a pomegranate mentioned, no age or planting source.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Burbank cedar of Lebanon over his grave, 204 Santa Rosa Ave",
-      "status": "blocked",
-      "reason": "planted 1893, removed 1989 for root disease. Dead.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "\"Rosie\" heritage redwood, 721 Spring St, Santa Rosa (McDonald district)",
-      "status": "blocked",
-      "reason": "about 70 years old, private lot, city permit to remove under appeal in July 2026. Residential, not clearly public, fate unsettled.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Juilliard Park redwoods",
-      "status": "blocked",
-      "reason": "no individual tree or age source found.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Church of One Tree (Juilliard Park)",
-      "status": "blocked",
-      "reason": "a building made from one felled redwood, not a living tree.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    },
-    {
-      "name": "Jack London Ancient Redwood photo on iNaturalist is CC BY-NC",
-      "status": "blocked",
-      "reason": "not usable.",
-      "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-      "notes_file": "data/research/santa-rosa-notes.md"
-    }
-  ]
+ "leads": [
+  {
+   "name": "Sonoma Plaza giant sequoia, NW side by the Haraszthy monument, 38.29343,-122.457",
+   "status": "lead",
+   "reason": "Sonoma Plaza giant sequoia, NW side by the Haraszthy monument, 38.29343,-122.45782 (iNaturalist 310678585, 2025-08-31, captive). Species and place from Napa Sonoma Magazine via search plus a blog; no planting year or size. Needs a Sonoma Plaza tree tour map (Tom Rusert, Visitors Bureau) or city source.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md",
+   "species": "Giant Sequoia (Sequoiadendron sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Sonoma Plaza coast redwood, SW corner, planted 1948, dedicated to General Vallej",
+   "status": "lead",
+   "reason": "Sonoma Plaza coast redwood, SW corner, planted 1948, dedicated to General Vallejo (one blog only, ginnyprior.com). Needs a second source and a coordinate.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "Sonoma Plaza palm, planted about 1910 per Sonoma Sun (2026-01-15; sonomasun.com ",
+   "status": "lead",
+   "reason": "Sonoma Plaza palm, planted about 1910 per Sonoma Sun (2026-01-15; sonomasun.com 403s to all fetchers, only the search summary seen). Species unknown.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md",
+   "species": "Date Palm (Phoenix sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Burbank Experiment Farm, same site as srs_001, original plantings on the Society tour",
+   "status": "lead",
+   "reason": "#5 hybrid chestnut, #6 Paradox Walnut north twin (1893), #9 multi-grafted English walnut mother tree. No individual coordinates.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "Luther Burbank Home and Gardens, Santa Rosa (204 Santa Rosa Ave)",
+   "status": "lead",
+   "reason": "Paradox walnut planted 1914 east of the Carriage House per a Burbank timeline; no source says it stands today. Ask the Home and Gardens.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "SRJC Santa Rosa valley oaks",
+   "status": "lead",
+   "reason": "150 valley oaks, \"over 250 years\", in a heritage tree protection zone behind the main sign in Burbank Park (Oak Leaf, 2018). Campus, no named individual tree, public access not shown.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Lachryma Montis (Vallejo home, Sonoma)",
+   "status": "lead",
+   "reason": "historic fruit and ornamental trees mentioned, no individual tree named; the 2007 Cultural Landscape Report by California State Parks would list them.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "Mission San Francisco Solano",
+   "status": "lead",
+   "reason": "courtyard olives and a pomegranate mentioned, no age or planting source.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Burbank cedar of Lebanon over his grave, 204 Santa Rosa Ave",
+   "status": "blocked",
+   "reason": "planted 1893, removed 1989 for root disease. Dead.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "\"Rosie\" heritage redwood, 721 Spring St, Santa Rosa (McDonald district)",
+   "status": "blocked",
+   "reason": "about 70 years old, private lot, city permit to remove under appeal in July 2026. Residential, not clearly public, fate unsettled.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "Juilliard Park redwoods",
+   "status": "blocked",
+   "reason": "no individual tree or age source found.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "Church of One Tree (Juilliard Park)",
+   "status": "blocked",
+   "reason": "a building made from one felled redwood, not a living tree.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  },
+  {
+   "name": "Jack London Ancient Redwood photo on iNaturalist is CC BY-NC",
+   "status": "blocked",
+   "reason": "not usable.",
+   "source": "verify pass 2026-11-02 (California, session e2f631fb)",
+   "notes_file": "data/research/santa-rosa-notes.md"
+  }
+ ]
 }

@@ -1,104 +1,110 @@
 {
-  "leads": [
-    {
-      "name": "Doremus Stone Pines, E Anapamu St 300-800 blocks, 79 trees, city landmark design",
-      "status": "lead",
-      "reason": "Doremus Stone Pines, E Anapamu St 300-800 blocks, 79 trees, city landmark designated 10/7/1997 (1908 and 1929 plantings); avenue, individually designated per Independent. Possible collectible if one flagship trunk is picked; many replaced 2024-26 (KEYT 2026-03-10: 40 new stone pines).",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Fernald Eucalyptus Tree, east side of 400 block of Santa Barbara St, city landma",
-      "status": "lead",
-      "reason": "Fernald Eucalyptus Tree, east side of 400 block of Santa Barbara St, city landmark 10/7/1997, c.1890 (saved by Pearl Chase per edhat.com ?p=74103); species said lemon-scented gum; no coordinate or recent life check found.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Sugar Gum champion, park in front of Old Mission (next to Rose Garden), Eucalypt",
-      "status": "lead",
-      "reason": "Sugar Gum champion, park in front of Old Mission (next to Rose Garden), Eucalyptus cladocalyx, finding aid only (smgrowers.com list); iNat 2025-04-05 at 34.43805,-119.71290 (14 m) is nearby. Needs an independent source.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Old Mission Sycamore stump, NE side of Mission (about 34.438,-119.713), alive an",
-      "status": "lead",
-      "reason": "Old Mission Sycamore stump, NE side of Mission (about 34.438,-119.713), alive and resprouting but cut back; not a tree to visit (yankeebarbareno.com, 2026-04-02).",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Santa Barbara Botanic Garden champion Island Oak (Quercus tomentella), paid; arc",
-      "status": "lead",
-      "reason": "Santa Barbara Botanic Garden champion Island Oak (Quercus tomentella), paid; archives.sbbotanicgarden.org/node/36326 photo \"Island Oak - Champion Tree\" 2018-12-31; no age, location in garden or independent size source found.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Historic Flame Tree (Brachychiton x roseus), Parking Lot 12, State and Gutierrez",
-      "status": "lead",
-      "reason": "Historic Flame Tree (Brachychiton x roseus), Parking Lot 12, State and Gutierrez; weak and diseased in 2013, status unknown (independent.com 2013/10/10).",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Mount Calvary Monastery dragon tree (front yard, E Los Olivos St, north of Mission) and the Mission parking dragon tree",
-      "status": "lead",
-      "reason": "iNat obs near 34.4375,-119.7131 (2025-09-13, 9 m). Sbbeautiful names both among California's largest; which tree is which not settled, monastery is an institution. Possible view-only street tree under the 2026-11-04 ruling if the tree is clearly seen from the street; needs a map check.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Franceschi Park Harpephyllum caffrum champion (finding aid only).",
-      "status": "lead",
-      "reason": "Franceschi Park Harpephyllum caffrum champion (finding aid only).",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Lotusland Monterey cypress on the Great Lawn, c.130 years",
-      "status": "blocked",
-      "reason": "felled May 2017 (goodnewsnetwork.org, 2017-04-30).",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Cottage Hospital Moreton Bay Fig, 320 W Pueblo St, city landmark 2011",
-      "status": "blocked",
-      "reason": "hospital grounds, no evidence of public access.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Dragon tree at private estate Montecito and Casa del Herrero",
-      "status": "blocked",
-      "reason": "private.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Tree of Light, 100 W Carrillo St, city landmark 1977",
-      "status": "blocked",
-      "reason": "not shown to be a tree.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Goleta, Carpinteria, Stow House trees (Goleta Sycamore, Ward Holm Torrey Pine, Spanish Fir etc.)",
-      "status": "blocked",
-      "reason": "outside Santa Barbara city; separate places.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    },
-    {
-      "name": "Courthouse sunken garden",
-      "status": "blocked",
-      "reason": "no named old tree found; 1929 plantings only, one cedar already felled.",
-      "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
-      "notes_file": "data/research/santa-barbara-notes.md"
-    }
-  ]
+ "leads": [
+  {
+   "name": "Doremus Stone Pines, E Anapamu St 300-800 blocks, 79 trees, city landmark design",
+   "status": "lead",
+   "reason": "Doremus Stone Pines, E Anapamu St 300-800 blocks, 79 trees, city landmark designated 10/7/1997 (1908 and 1929 plantings); avenue, individually designated per Independent. Possible collectible if one flagship trunk is picked; many replaced 2024-26 (KEYT 2026-03-10: 40 new stone pines).",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Fernald Eucalyptus Tree, east side of 400 block of Santa Barbara St, city landma",
+   "status": "lead",
+   "reason": "Fernald Eucalyptus Tree, east side of 400 block of Santa Barbara St, city landmark 10/7/1997, c.1890 (saved by Pearl Chase per edhat.com ?p=74103); species said lemon-scented gum; no coordinate or recent life check found.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Sugar Gum champion, park in front of Old Mission (next to Rose Garden), Eucalypt",
+   "status": "lead",
+   "reason": "Sugar Gum champion, park in front of Old Mission (next to Rose Garden), Eucalyptus cladocalyx, finding aid only (smgrowers.com list); iNat 2025-04-05 at 34.43805,-119.71290 (14 m) is nearby. Needs an independent source.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md",
+   "species": "Eucalyptus (Eucalyptus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Old Mission Sycamore stump, NE side of Mission (about 34.438,-119.713), alive an",
+   "status": "lead",
+   "reason": "Old Mission Sycamore stump, NE side of Mission (about 34.438,-119.713), alive and resprouting but cut back; not a tree to visit (yankeebarbareno.com, 2026-04-02).",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Santa Barbara Botanic Garden champion Island Oak (Quercus tomentella), paid; arc",
+   "status": "lead",
+   "reason": "Santa Barbara Botanic Garden champion Island Oak (Quercus tomentella), paid; archives.sbbotanicgarden.org/node/36326 photo \"Island Oak - Champion Tree\" 2018-12-31; no age, location in garden or independent size source found.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Historic Flame Tree (Brachychiton x roseus), Parking Lot 12, State and Gutierrez",
+   "status": "lead",
+   "reason": "Historic Flame Tree (Brachychiton x roseus), Parking Lot 12, State and Gutierrez; weak and diseased in 2013, status unknown (independent.com 2013/10/10).",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Mount Calvary Monastery dragon tree (front yard, E Los Olivos St, north of Mission) and the Mission parking dragon tree",
+   "status": "lead",
+   "reason": "iNat obs near 34.4375,-119.7131 (2025-09-13, 9 m). Sbbeautiful names both among California's largest; which tree is which not settled, monastery is an institution. Possible view-only street tree under the 2026-11-04 ruling if the tree is clearly seen from the street; needs a map check.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md",
+   "species": "Dragon Tree (Dracaena sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Franceschi Park Harpephyllum caffrum champion (finding aid only).",
+   "status": "lead",
+   "reason": "Franceschi Park Harpephyllum caffrum champion (finding aid only).",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Lotusland Monterey cypress on the Great Lawn, c.130 years",
+   "status": "blocked",
+   "reason": "felled May 2017 (goodnewsnetwork.org, 2017-04-30).",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Cottage Hospital Moreton Bay Fig, 320 W Pueblo St, city landmark 2011",
+   "status": "blocked",
+   "reason": "hospital grounds, no evidence of public access.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Dragon tree at private estate Montecito and Casa del Herrero",
+   "status": "blocked",
+   "reason": "private.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Tree of Light, 100 W Carrillo St, city landmark 1977",
+   "status": "blocked",
+   "reason": "not shown to be a tree.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Goleta, Carpinteria, Stow House trees (Goleta Sycamore, Ward Holm Torrey Pine, Spanish Fir etc.)",
+   "status": "blocked",
+   "reason": "outside Santa Barbara city; separate places.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  },
+  {
+   "name": "Courthouse sunken garden",
+   "status": "blocked",
+   "reason": "no named old tree found; 1929 plantings only, one cedar already felled.",
+   "source": "verify pass 2026-11-04 (Santa Barbara and San Jose, session e2f631fb)",
+   "notes_file": "data/research/santa-barbara-notes.md"
+  }
+ ]
 }

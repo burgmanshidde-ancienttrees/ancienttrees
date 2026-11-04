@@ -110,7 +110,9 @@
    "status": "lead",
    "reason": "Cal Big Trees state champion (finding aid only); Wikimedia Commons has a Cupressus abramsiana photo at RPBG (2016) but no independent source for the individual champion tree; no iNaturalist hit within 2 km. Garden is free. Lead: no photo or exact pin in reach.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/oakland-notes.md"
+   "notes_file": "data/research/oakland-notes.md",
+   "species": "Cypress (Cupressus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Oracle Oak (Quercus x morehus), Contra Costa (37.93197,-122.13378)",
@@ -124,7 +126,9 @@
    "status": "lead",
    "reason": "Hayward area, champion; not checked, outside Oakland/Berkeley clusters.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/oakland-notes.md"
+   "notes_file": "data/research/oakland-notes.md",
+   "species": "Cherry (Prunus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Manzanita Recreation Center oak, East Oakland",
@@ -138,14 +142,18 @@
    "status": "lead",
    "reason": "Community for Lake Merritt tree guide (communityforlakemerritt.org/wp-content/uploads/2019/06/lake-merritt-tree-guide.pdf) is an image-only PDF, could not read it; a Conservancy post reports losing one of the largest oaks near the Edoff Bandstand. Lead for a session that can read the PDF.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/oakland-notes.md"
+   "notes_file": "data/research/oakland-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Mills College Bell Tower Oak (beside El Campanil, Julia Morgan)",
    "status": "lead",
    "reason": "old postcard only; campus now Northeastern, access unclear. Lead.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/oakland-notes.md"
+   "notes_file": "data/research/oakland-notes.md",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Mountain View Cemetery",
@@ -159,7 +167,9 @@
    "status": "lead",
    "reason": "groves, no individual tree sources found.",
    "source": "verify pass 2026-11-02 (California, session e2f631fb)",
-   "notes_file": "data/research/oakland-notes.md"
+   "notes_file": "data/research/oakland-notes.md",
+   "species": "Coast Redwood (Sequoia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Berkeley campus",
