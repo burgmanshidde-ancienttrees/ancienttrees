@@ -150,6 +150,14 @@ def _segment_rows(token, instance_id):
     return rows
 
 
+# The newest day Apple has reported on, any download type, set by
+# download_rows(). Apple's report processed on day D carries D-1 and D-2, so
+# the digest's yesterday is usually not in yet; a day after this one prints as
+# "not in yet", never as 0 (Hidde, 2026-11-04: "zijn de appdownloads van 11.3
+# daadwerkelijk nul, of zijn er nog geen gegevens binnen?").
+COVERED_THROUGH = None
+
+
 def download_rows(days=14):
     """Every row of the daily report for the newest `days` instances, as
     (date, row) pairs, first-time downloads only. One fetch that both the
@@ -169,11 +177,15 @@ def download_rows(days=14):
     # where Apple's own rows hold 22). So rows are keyed on the row's own Date
     # and each day is taken from the NEWEST instance that carries it, which
     # is also the one Apple restates late arrivals into.
+    global COVERED_THROUGH
     newest = {}
     for inst in instances:
         processed = inst["attributes"].get("processingDate") or ""
         per_day = {}
         for row in _segment_rows(token, inst["id"]):
+            seen = _col(row, "date", default="")
+            if seen and (COVERED_THROUGH is None or seen > COVERED_THROUGH):
+                COVERED_THROUGH = seen
             if _download_type(row) in NEW_PERSON:
                 day = _col(row, "date", default=processed)
                 per_day.setdefault(day, []).append(row)

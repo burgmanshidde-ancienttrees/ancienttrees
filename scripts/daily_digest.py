@@ -2067,6 +2067,7 @@ def day_by_day_section(today):
         "Trees sent", "Feedback", "Ambassador asks", "App photos", "Tree notes",
         "App Store reviews"))
     totals = {}  # a row whose week is not the sum of its days
+    pending = {}  # row -> days the source has not reported yet: "–", never 0
 
     def fill(name, pairs):
         c = cols[name] = collections.Counter()
@@ -2125,11 +2126,14 @@ def day_by_day_section(today):
         except Exception as e:
             print("day_by_day submissions: %s" % str(e)[:100])
     try:
-        from asc_downloads import download_rows, split_by_type
-        rows, note = download_rows(days=9)
+        import asc_downloads
+        rows, note = asc_downloads.download_rows(days=9)
         if not note:
             fill("App downloads", ((d, v.get("first-time download", 0))
-                                   for d, v in split_by_type(rows).items()))
+                                   for d, v in asc_downloads.split_by_type(rows).items()))
+            through = asc_downloads.COVERED_THROUGH
+            if through:
+                pending["App downloads"] = {d for d in days if d > through}
     except Exception as e:
         print("day_by_day downloads: %s" % str(e)[:100])
     # Written App Store reviews, a count only: DATA.md is public, the words
@@ -2180,8 +2184,12 @@ def day_by_day_section(today):
            "| | %s | **7 days** |" % " | ".join(d[5:] for d in days),
            "|---|%s---:|" % ("---:|" * len(days))]
     for k in shown:
-        out.append("| %s | %s | **%d** |" % (k, " | ".join(str(cols[k].get(d, 0)) for d in days),
+        cells = ("–" if d in pending.get(k, ()) else str(cols[k].get(d, 0)) for d in days)
+        out.append("| %s | %s | **%d** |" % (k, " | ".join(cells),
                                             totals.get(k, sum(cols[k].get(d, 0) for d in days))))
+    if any(pending.values()):
+        out.append("- – means the source has not reported that day yet (Apple's downloads "
+                   "arrive a day or two late), not zero.")
     return "\n".join(out)
 
 
