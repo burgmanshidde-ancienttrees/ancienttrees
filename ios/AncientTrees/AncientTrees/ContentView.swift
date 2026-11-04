@@ -702,6 +702,18 @@ struct ContentView: View {
         }
         .onChange(of: navigator.push) { _, new in
             guard let new else { return }
+            // A CITY OR COUNTRY IS THE MAP (Hidde, 2026-11-04: one map screen
+            // for every place): a tile or a link lands where a search does.
+            if case .city(let slug) = new {
+                navigator.push = nil
+                navigator.searchOnMap = SearchOnMap(hit: .city(slug: slug, name: slug, lat: 0, lng: 0))
+                return
+            }
+            if case .country(let name) = new {
+                navigator.push = nil
+                navigator.searchOnMap = SearchOnMap(hit: .country(name))
+                return
+            }
             path(tab).wrappedValue.append(new)
             navigator.push = nil
         }

@@ -87,6 +87,13 @@ struct MapTab: View {
     /// The town a search just flew to, so the empty card can name it while
     /// the map is still looking there (2026-10-25, EmptyPlace.swift).
     @State private var flownPlace: PlaceOnMap?
+    /// The city or country the map was sent to, by a search, a tile or a link:
+    /// the sheet then opens with its place header (Hidde, 2026-11-04: one map
+    /// screen for every place, Google Maps' place card). Cleared by the cross
+    /// in the search field, by another search, and once none of its trees is
+    /// in view any more.
+    @State private var focusPlace: FocusPlace?
+    enum FocusPlace: Equatable { case city(String), country(String) }
     @Environment(Units.self) private var units
     @Environment(Entitlement.self) private var entitlement
     @Environment(Saved.self) private var saved
@@ -275,6 +282,75 @@ struct MapTab: View {
         return Geo.km(focus, (p.lat, p.lng)) < 15 ? p.name : nil
     }
 
+    /// The trees of the place the map was sent to.
+    private var placeTrees: [Tree] {
+        switch focusPlace {
+        case .city(let slug): catalogue.trees.filter { $0.citySlug == slug }
+        case .country(let name): catalogue.trees.filter { $0.country == name }
+        case nil: []
+        }
+    }
+
+    /// The place header shows while one of the place's trees is still in view;
+    /// pan away and the map is simply the map again.
+    private var placeShown: FocusPlace? {
+        guard let p = focusPlace else { return nil }
+        let b = visibleBox
+        return placeTrees.contains { b.contains($0.lat, $0.lng) } ? p : nil
+    }
+
+    private var placeTitle: String {
+        switch focusPlace {
+        case .city(let slug): placeTrees.first?.city ?? slug
+        case .country(let name): name
+        case nil: ""
+        }
+    }
+
+    /// Google Maps' place card at the top of the sheet: the place's name, where
+    /// it is and how many trees, its share button, and for a city who looks
+    /// after it. The city page's own parts (PlaceAmbassadors, ShareTo).
+    @ViewBuilder private func placeHeader(_ p: FocusPlace) -> some View {
+        let n = placeTrees.count
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(alignment: .top, spacing: 12) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(placeTitle)
+                        .font(.brand(22, .bold, relativeTo: .title2))
+                        .foregroundStyle(Brand.ink)
+                        .lineLimit(2)
+                    Text({ () -> String in
+                        if case .city = p, let c = placeTrees.first?.country {
+                            return "\(c) · \(treesLabel(n))"
+                        }
+                        return treesLabel(n)
+                    }())
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                }
+                Spacer(minLength: 8)
+                if case .city(let slug) = p,
+                   let url = URL(string: "https://ancienttrees.app/\(slug)") {
+                    // The tree card's share circle (TreePlaceHeader).
+                    ShareLink(item: Shared.tag(url, from: "city"), subject: Text(placeTitle),
+                              message: Text("Ancient trees in \(placeTitle).")) {
+                        PlaceCircle(symbol: "square.and.arrow.up")
+                    }
+                    .buttonStyle(.plain)
+                    .countsShare("city")
+                    .accessibilityLabel("Share this city")
+                    .accessibilityIdentifier("place-header-share")
+                }
+            }
+            if case .city(let slug) = p {
+                PlaceAmbassadors(slug: slug, title: placeTitle, catalogue: catalogue)
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.bottom, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityIdentifier("map-place-header")
+    }
+
     /// The grey card, then the nearest tree we hold to the map's centre.
     @ViewBuilder private var emptyHere: some View {
         EmptyPlaceCard(place: placeInView)
@@ -426,7 +502,9 @@ struct MapTab: View {
                 // Otherwise the count, outside the scroll view: it
                 // stays visible while the list scrolls and it is the handle
                 // that makes the sheet draggable again once it has (2026-08-25).
-                if selected == nil {
+                if selected == nil, let p = placeShown {
+                    placeHeader(p)
+                } else if selected == nil {
                     countStrip
                 } else if let t = selected {
                     // Apple Maps' place row: share, name, cross. See
@@ -653,6 +731,14 @@ struct MapTab: View {
     /// handed over from Discover's (Navigator.searchOnMap): one function, so
     /// the two can never land on different screens again.
     private func take(_ hit: MapSearch.Hit) {
+                // The place header follows a city or a country; anything else
+                // clears it.
+                switch hit {
+                case .city(let slug, _, _, _): focusPlace = .city(slug)
+                case .country(let name): focusPlace = .country(name)
+                default: focusPlace = nil
+                }
+                selected = nil
                 switch hit {
                 case .city(let slug, _, let lat, let lng):
                     // STAY ON THE MAP (Hidde, 2026-08-24: "dan moet je niet een

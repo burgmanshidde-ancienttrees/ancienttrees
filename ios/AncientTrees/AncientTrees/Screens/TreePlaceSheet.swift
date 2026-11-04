@@ -87,7 +87,7 @@ struct TreePlaceHeader: View {
 /// Apple Maps' header circle: 38 drawn, a dark glyph on a pale fill, 44 to
 /// hit. Pale ink rather than surfaceMuted, which is the sheet's own ground and
 /// made the circle vanish (2026-10-19).
-private struct PlaceCircle: View {
+struct PlaceCircle: View {
     let symbol: String
     var body: some View {
         Image(systemName: symbol)
