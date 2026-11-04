@@ -11,6 +11,9 @@
 - For Hidde: page speed needs a free PageSpeed Insights API key as the repository secret PSI_API_KEY (the keyless quota answered 429); until then that part is grey.
 - For Hidde: Dependabot alerts are off for the repository (Settings, Code security, Dependabot alerts); the version-update PRs work without them, the alert light stays grey.
 - **Not verified:** the Astro build (CI), the first uptime and page-speed runs, reading Dependabot alerts with the digest's token, and a real error reaching the table (the table does not exist yet). The reporter was run in JavaScriptCore with stubs: it reports our own errors and drops extension, other-origin and "Script error." ones.
+## 2026-11-04 night run (fourth attempt): same finding, nothing shipped
+
+- Re-checked at 13:59 UTC: the washington-dc claim still stands (20 DC/NYC stories wait in data/research for the 25-a-day cap, rolls about 18:30 UTC), enrichment has nothing to do, READY leads are earlier rejects, 672 written-or-awaiting trees already exceed what the pace lets out. More research or writing now only adds to the held shelf. No trees shipped.
 ## 2026-11-04 night run (third attempt): nothing to ship before the cap rolls
 
 - Checked at 13:57 UTC: health.py green, the only open code-audit rows are UX (not a run's), the washington-dc claim stands with 20 written DC/NYC stories waiting on the 25-a-day cap (rolls about 18:30 UTC), READY leads are earlier rejects, Brighton already retried. No trees shipped; more writing buys nothing until the cap rolls.
