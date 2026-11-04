@@ -313,25 +313,44 @@
       "age_max": 150,
       "location": {
         "address": "River Almond Walkway, Cramond Foreshore, Edinburgh EH4 6NU",
-        "latitude": 55.977,
-        "longitude": -3.3,
+        "latitude": 55.973979,
+        "longitude": -3.307026,
         "neighbourhood": "Cramond"
       },
-      "story": "At the start of the River Almond Walkway in Cramond, a sycamore grows sideways out of solid rock instead of up from soil, its roots gripping a ledge on the riverbank and its trunk reaching out over the water before turning back skyward. No record gives this tree's age or planting date. What draws people to it is simply the improbability of the thing: a substantial, clearly mature tree that appears to be growing from bare stone, a trick of root systems finding cracks and pockets of soil invisible to a passerby rather than any actual defiance of biology. Cramond itself is one of the oldest inhabited spots in Scotland, settled since Mesolithic times and later the site of a Roman fort at the mouth of the River Almond, and the walkway leading past this tree follows the river past the ruins of iron and paper mills from the Industrial Revolution before reaching the Firth of Forth. The sycamore is a footnote to that longer history rather than a documented part of it, honestly flagged here as a single source, undated curiosity rather than a verified ancient specimen. It costs nothing to see and sits directly on a public path used daily by dog walkers and cyclists.",
+      "pin_source": "A local photographed the tree on 2026-11-04 and gave its what3words square (///hotel.orders.famous); the photographs' GPS tags stand 8 m from it. Was 55.977,-3.3, about 550 m off",
+      "story": "On the River Almond Walkway above Cramond, a sycamore grows sideways out of solid rock instead of up from soil, its roots gripping a ledge on the riverbank and its trunk reaching out over the water before turning back skyward. No record gives this tree's age or planting date. What draws people to it is how unlikely it looks. A substantial, clearly mature tree appears to grow from bare stone, its roots finding cracks and pockets of soil that a passerby cannot see. Cramond itself is one of the oldest inhabited spots in Scotland, settled since Mesolithic times and later the site of a Roman fort at the mouth of the River Almond, and the walkway leading past this tree follows the river past the ruins of iron and paper mills from the Industrial Revolution before reaching the Firth of Forth. The sycamore is a footnote to that longer history rather than a documented part of it, honestly flagged here as a single source, undated curiosity rather than a verified ancient specimen. It costs nothing to see and sits directly on a public path used daily by dog walkers and cyclists.",
       "verified_sources": [
         "https://www.edinburghoutdoors.org.uk/trees-story/trees-edinburgh"
       ],
       "access": "Free, public walkway",
       "transport": "Bus to Cramond village, then short walk along the River Almond Walkway",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/edi_008-the-rockface-sycamore-of-cramond.jpg",
+        "license": "Used with permission from the Cramond Association; credit required",
+        "source": "mail",
+        "attribution": "Cramond Association",
+        "status": "approved",
+        "width": 1600,
+        "height": 1200,
+        "note": "Sent by mail on 2026-11-04 by a member of the Cramond Association in answer to our photo ask of 2026-10-29, taken that morning (no name kept in the repo). Looked at 2026-11-04: the trunk leaves the bank almost level and reaches out over the walkway before its limbs turn up, the shape the story describes; daylight and colour, photo_light OK. Geotag 55.97405,-3.30690, 8 m from the what3words square in the mail. Credit set to the Association until the sender says which name they want.",
+        "taken_month": 11
       },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/edi_008-the-rockface-sycamore-of-cramond-base.jpg",
+          "license": "Used with permission from the Cramond Association; credit required",
+          "source": "mail",
+          "attribution": "Cramond Association",
+          "status": "approved",
+          "width": 1200,
+          "height": 1600,
+          "note": "Same sender and morning as the lead: the trunk where it leaves the ivy-covered bank. Geotag 55.97404,-3.30692.",
+          "taken_month": 11
+        }
+      ],
       "curation_status": "flagged",
       "notes": "Single source only, no age or planting date available anywhere. Included on visual/curiosity merit per CLAUDE.md's qualifying criteria (visually spectacular), not on age, and flagged as such throughout rather than implying verified antiquity.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           9,
@@ -340,7 +359,7 @@
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the trunk, growing sideways out of bare rock and out over the water before turning back skyward. It stands at the start of the River Almond Walkway, its roots gripping a ledge."
+      "how_to_recognise": "You can recognise it by the trunk, growing sideways out of bare rock and out over the water before turning back skyward. It stands on the River Almond Walkway, about 600 metres upriver from Cramond village, its roots gripping a ledge."
     },
     {
       "id": "edi_009",

@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: the Rockface Sycamore found, photographed and re-pinned
+
+- **What changed (Edinburgh):** a Cramond Association member answered the 10-29 photo ask, walked to the Rockface Sycamore (edi_008) and sent its what3words square and photographs. Our pin was about 550 m off; it now stands on that square, confirmed by the photos' GPS tags (8 m apart). Two photos live (lead: the trunk leaning out over the walkway; strip: where it leaves the bank), credited to the Cramond Association for now. Story and recognition line no longer say "at the start of the walkway" (it stands about 600 m upriver from the village), and the colon reveal is gone, so the page can be indexed.
+- **What changed (tooling):** outreach_inbox.py `--save-from` kept only one of two iPhone photos (both named image0.jpeg, the second overwrote the first) and could not see an inline image without a file name. Files now carry the time to the second, never overwrite, and nameless images are saved too.
+- **For Hidde:** reply drafted (drafts/reply-catriona-cramond-2026-11-04.md, not committed: it holds an address), asks which name goes under the photos. The first mail's own photo did not reach the inbox as an attachment.
+- Breakage: none.
+
 ## 2026-11-04 session: Plus waits, the drafts folder cleaned
 
 - **Decided (Hidde):** iOS release first, then Android, then Plus. A "Plus, tell me when it's ready" screen (fake door: Plus label on offline save and Start the walk, a sheet with four features, the tap counted on the server) was sketched and is parked: "ik wil ook geen plus dingen neerzetten die niet kloppen". No run builds it or shows anything Plus before he picks it up. Open questions for then: does a priceless Plus screen count as commercial for UWV, and is offline save free today (then it does not move behind Plus).

@@ -125,11 +125,26 @@ def attachment_names(msg):
     out = []
     if not msg.is_multipart():
         return out
-    for part in msg.walk():
-        fn = part.get_filename()
+    for n, part in enumerate(msg.walk()):
+        fn = part_name(part, n)
         if fn:
-            out.append(decode(fn))
+            out.append(fn)
     return out
+
+
+def part_name(part, n):
+    """A part's file name, or one made up for an inline image that has none.
+
+    Added 2026-11-04: Catriona Bruce (Cramond) sent three photographs from an
+    iPhone, one per mail, each an image with no file name in a mail with no
+    plain text. The reader saw an empty mail and kept nothing."""
+    fn = part.get_filename()
+    if fn:
+        return decode(fn)
+    ctype = part.get_content_type()
+    if ctype.startswith("image/"):
+        return f"inline-{n}.{ctype.split('/')[1].replace('jpeg', 'jpg')}"
+    return None
 
 
 def save_attachments(msg, folder, date):
@@ -140,15 +155,23 @@ def save_attachments(msg, folder, date):
     one address named with --save-from, which must already pass the sender
     filter; out/ is not committed, so nobody's files reach the public repo."""
     os.makedirs(folder, exist_ok=True)
-    stamp = (email.utils.parsedate_to_datetime(date).strftime("%Y%m%d") if date else "undated")
+    # To the second, and never over an earlier file: a phone names every
+    # photograph image0.jpeg, so two mails a minute apart wrote one file
+    # (Catriona Bruce, 2026-11-04).
+    stamp = (email.utils.parsedate_to_datetime(date).strftime("%Y%m%d-%H%M%S") if date else "undated")
     out = []
-    for part in msg.walk():
-        fn = part.get_filename()
+    for n, part in enumerate(msg.walk()):
+        fn = part_name(part, n)
         data = part.get_payload(decode=True) if fn else None
         if not data:
             continue
-        safe = "".join(c if c.isalnum() or c in ".-_" else "_" for c in decode(fn))
+        safe = "".join(c if c.isalnum() or c in ".-_" else "_" for c in fn)
         path = os.path.join(folder, f"{stamp}-{safe}")
+        k = 2
+        while os.path.exists(path):
+            stem, ext = os.path.splitext(os.path.join(folder, f"{stamp}-{safe}"))
+            path = f"{stem}-{k}{ext}"
+            k += 1
         with open(path, "wb") as f:
             f.write(data)
         out.append(path)
