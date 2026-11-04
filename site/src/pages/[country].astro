@@ -21,6 +21,18 @@ import { savesOf } from "../lib/saves";
 // pairing; this is the page paying it.
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { publishedStatePages, usStateOf } from "../lib/us-states";
+// THE COUNTRY PAGE IS A MAP (Hidde, 2026-11-04, after the app's one map screen
+// for every place): the city page's split, map full-bleed behind and the page
+// in its draggable sheet, from the city page's own parts rather than a layout
+// of its own ("city and explore share one skeleton and one sheet").
+import { mapSpecies } from "../lib/map-species";
+import MapFilters from "../components/MapFilters.astro";
+import ShareButton from "../components/ShareButton.astro";
+import PlaceRow from "../components/PlaceRow.astro";
+import { SHEET_JS } from "../lib/sheet-js";
+import { SHARE_JS } from "../lib/share-js";
+import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
+import { ui } from "../lib/i18n";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -265,6 +277,9 @@ const graph = [
   breadcrumbSchema(crumbItems, canonical),
 ];
 const headExtra = mapHead() + countryOgImage + "\n" + ldScript(graph);
+// The filter row's species chip counts by the shared species index, the one
+// the city map and /api/map-species.json use.
+const { index: spIndex } = await mapSpecies();
 const mapScript = countryMapScript(
   ranked.map((c) => ({
     slug: c.slug,
@@ -273,93 +288,121 @@ const mapScript = countryMapScript(
     markers: renderableTrees(c.city).map((t) => {
       const ts = treeSlugsForCity(c.city)[t.id];
       return { id: t.id, lat: t.location.latitude!, lng: t.location.longitude!, url: ts ? `/${c.slug}/${ts}` : undefined,
-               pr: pinPriority(Boolean(usablePhoto(t)), savesOf(t.id)) };
+               pr: pinPriority(Boolean(usablePhoto(t)), savesOf(t.id)),
+               sp: spIndex.get(speciesCommon(t)) ?? -1, paid: Boolean(t.paid_entry) };
     }),
   })),
   intro.data.map_frame,
-  intro.data.map_focus
+  intro.data.map_focus,
+  { sheet: true }
 );
 ---
-<Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
-  <main class="content-page">
-    <Breadcrumbs items={crumbItems} />
-    <h1>Ancient trees in {disp}</h1>
-    <p class="answer-first">
-      {firstSentence} We map {total} trees in {countryCities.length} cities here.{oldestLine}
-    </p>
-    <div class="prose-block" data-clamp><p>{introRest}</p></div>
-    <div class="map-embed"><div id="map" class="map"></div></div>
-    {stateRows.length > 0 && (
-      <Fragment>
-        <h2>Oldest trees by state</h2>
-        <div class="ctry-list">
-          {stateRows.map((r, i) => (
-            <a class="ctry-row" href={`/united-states/${r.slug}`}>
-              <span class="ctry-rank">{i + 1}</span>
-              <span class="ctry-body"><b>{r.st}</b><span>{nTrees(r.trees)} · {r.places} places</span></span>
-              <span class="ctry-chev" aria-hidden="true">›</span>
-            </a>
-          ))}
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra} footer={false}>
+  {/* The city page's skeleton, part for part ([city].astro): the sheet on the
+      left on a computer and over the map on a phone (sheet-js.ts), the map the
+      stage behind it. Every block of Contract G is in the sheet, in the
+      contract's order, so the served HTML holds what it always did. */}
+  <div class="split">
+    <aside class="panel" id="sheet">
+      <div class="sheet-grab">
+        <div class="panel-head">
+          <Breadcrumbs items={crumbItems} />
+          <PlaceRow shareLabel={ui("en").share} copiedLabel={ui("en").shareCopied} closeLabel={ui("en").photoClose} />
+          {/* The count line, where the city page names its country: the app's
+              place header says the same ("N trees"). */}
+          <p class="eyebrow">{nTrees(total)} · {countryCities.length} places</p>
+          <div class="page-head">
+            <h1>Ancient trees in <em>{disp}</em></h1>
+            <ShareButton url={canonical} title={`Ancient trees in ${disp}`} />
+          </div>
         </div>
-      </Fragment>
-    )}
-    {/* "Place", not "city": this list is where the single famous trees live
-        now that /cities keeps them in a section of its own (2026-09-11), and
-        the Flinders Ranges have never been a city. */}
-    <h2>Every place we map in {disp}</h2>
-    <div class="ctry-list">
-      {rows.map((r) => (
-        <a class="ctry-row" href={`/${r.slug}`}>
-          <span class="ctry-rank">{r.i}</span>
-          <Fragment set:html={r.ph} />
-          <span class="ctry-body"><b>{r.cityName}</b><span>{r.sub}</span></span>
-          <span class="ctry-chev" aria-hidden="true">›</span>
-        </a>
-      ))}
-    </div>
-    {speciesSections.length > 0 && (
-      <section class="ctry-species">
-        <h2>{speciesTotal} species grow in {disp}</h2>
-        {speciesSections.map((s) => (
-          <p class="ctry-species-row"><b>{s.g}</b>{" "}
-            {s.items.map((it, i) => (
-              <Fragment>
-                {i > 0 && <Fragment set:html=" &middot; " />}
-                {it.slug
-                  ? <a href={`/species/${it.slug}`}>{it.common}</a>
-                  : <span>{it.common}</span>}
-                <span class="ctry-species-n">{" "}{it.count}</span>
-              </Fragment>
+      </div>
+      <div class="sheet-body">
+        <div class="city-intro">
+          <p class="lede">{firstSentence} We map {total} trees in {countryCities.length} cities here.{oldestLine} {introRest}</p>
+          <button type="button" class="city-intro-more">{ui("en").readMore}</button>
+        </div>
+        <div class="ctry-sheet">
+          {stateRows.length > 0 && (
+            <Fragment>
+              <h2>Oldest trees by state</h2>
+              <div class="ctry-list">
+                {stateRows.map((r, i) => (
+                  <a class="ctry-row" href={`/united-states/${r.slug}`}>
+                    <span class="ctry-rank">{i + 1}</span>
+                    <span class="ctry-body"><b>{r.st}</b><span>{nTrees(r.trees)} · {r.places} places</span></span>
+                    <span class="ctry-chev" aria-hidden="true">›</span>
+                  </a>
+                ))}
+              </div>
+            </Fragment>
+          )}
+          {/* "Place", not "city": this list is where the single famous trees live
+              now that /cities keeps them in a section of its own (2026-09-11), and
+              the Flinders Ranges have never been a city. */}
+          <h2>Every place we map in {disp}</h2>
+          <div class="ctry-list">
+            {rows.map((r) => (
+              <a class="ctry-row" href={`/${r.slug}`}>
+                <span class="ctry-rank">{r.i}</span>
+                <Fragment set:html={r.ph} />
+                <span class="ctry-body"><b>{r.cityName}</b><span>{r.sub}</span></span>
+                <span class="ctry-chev" aria-hidden="true">›</span>
+              </a>
             ))}
-          </p>
-        ))}
-      </section>
-    )}
-    {oldestTrees.length > 0 && (
-      <Fragment>
-        {/* "we map", never a bare "the oldest trees in X". The heading this
-            replaced already said "mapped" and dropping it would have been a
-            claim about the COUNTRY rather than about our map: Taiwan's list
-            runs down to a 90 year old tree, and somebody in Taiwan knows
-            better. Same rule as never presenting a register count as a count
-            of what exists, and the same wording the global list uses. */}
-        <h2>
-          {oldestTrees.length === 1
-            ? `The oldest tree we map in ${disp}`
-            : `The ${oldestTrees.length} oldest trees we map in ${disp}`}
-        </h2>
-        {oldestTrees.map((r) => (
-          <Fragment>
-            <TreeCard tree={r.tree} citySlug={r.stat.slug} treeSlug={r.tslug} note={r.note} omitAge />
-            <p class="coll-citycta"><a href={`/${r.stat.slug}`}>{r.stat.cityName} &rarr;</a></p>
-          </Fragment>
-        ))}
-      </Fragment>
-    )}
-    {intro.data.register_note && (
-      <p class="notice">{intro.data.register_note}</p>
-    )}
-    <p class="suggest" set:html={`${collLine}See <a href="/cities">every city on the map</a>, or <a href="/explore">open the map</a> to find what is near you.`} />
-  </main>
+          </div>
+          {speciesSections.length > 0 && (
+            <section class="ctry-species">
+              <h2>{speciesTotal} species grow in {disp}</h2>
+              {speciesSections.map((s) => (
+                <p class="ctry-species-row"><b>{s.g}</b>{" "}
+                  {s.items.map((it, i) => (
+                    <Fragment>
+                      {i > 0 && <Fragment set:html=" &middot; " />}
+                      {it.slug
+                        ? <a href={`/species/${it.slug}`}>{it.common}</a>
+                        : <span>{it.common}</span>}
+                      <span class="ctry-species-n">{" "}{it.count}</span>
+                    </Fragment>
+                  ))}
+                </p>
+              ))}
+            </section>
+          )}
+          {oldestTrees.length > 0 && (
+            <Fragment>
+              {/* "we map", never a bare "the oldest trees in X". The heading this
+                  replaced already said "mapped" and dropping it would have been a
+                  claim about the COUNTRY rather than about our map: Taiwan's list
+                  runs down to a 90 year old tree, and somebody in Taiwan knows
+                  better. Same rule as never presenting a register count as a count
+                  of what exists, and the same wording the global list uses. */}
+              <h2>
+                {oldestTrees.length === 1
+                  ? `The oldest tree we map in ${disp}`
+                  : `The ${oldestTrees.length} oldest trees we map in ${disp}`}
+              </h2>
+              {oldestTrees.map((r) => (
+                <Fragment>
+                  <TreeCard tree={r.tree} citySlug={r.stat.slug} treeSlug={r.tslug} note={r.note} omitAge />
+                  <p class="coll-citycta"><a href={`/${r.stat.slug}`}>{r.stat.cityName} &rarr;</a></p>
+                </Fragment>
+              ))}
+            </Fragment>
+          )}
+        </div>
+        <div class="panel-foot">
+          {intro.data.register_note && (
+            <p class="notice">{intro.data.register_note}</p>
+          )}
+          <p class="suggest" set:html={`${collLine}See <a href="/cities">every city on the map</a>, or <a href="/explore">open the map</a> to find what is near you.`} />
+        </div>
+      </div>
+    </aside>
+    <div class="stage">
+      <MapFilters lang="en" />
+      <div id="map" class="map"></div>
+    </div>
+  </div>
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + VISITED_SYNC_JS + mapScript + SHEET_JS + SHARE_JS} />
 </Base>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + mapScript} />

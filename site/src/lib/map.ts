@@ -335,15 +335,25 @@ export interface CountryMapCity {
   slug: string;
   city: string;
   count: number;
-  /** pinPriority(): which tree gets the full pin first. */
-  markers: { lat: number; lng: number; url?: string; pr?: number; id?: string }[];
+  /** pinPriority(): which tree gets the full pin first. sp: index into
+   *  /api/map-species.json (mapSpecies()), paid: behind a ticket; both only
+   *  for the filter row. */
+  markers: { lat: number; lng: number; url?: string; pr?: number; id?: string; sp?: number; paid?: boolean }[];
 }
 
 /** Every tree in the country, drawn the way /explore and the app draw them
- *  (PINS_JS): a pin or a dot per tree, and either opens its tree. */
+ *  (PINS_JS): a pin or a dot per tree, and either opens its tree.
+ *
+ *  `sheet`: the map is the page, the city page's split with the bottom sheet
+ *  (the country page since 2026-11-04, Hidde: the website country page a map,
+ *  as the app's one map screen for every place). It then scrolls to zoom like
+ *  the city map, carries the filter row (MapFilters.astro) and frames the
+ *  country above the sheet's peek instead of behind it. Without it the map is
+ *  the embedded box it always was (the state pages). */
 export function countryMapScript(cities: CountryMapCity[],
                                  frame?: [[number, number], [number, number]],
-                                 focus?: [[number, number], [number, number]]): string {
+                                 focus?: [[number, number], [number, number]],
+                                 opts: { sheet?: boolean } = {}): string {
   // THE APP'S COUNTRY MAP (Hidde, 2026-10-04, on Italy: "deze stad preview is
   // niet echt mooi trek dit ook gelijk met app"). It was one dot per CITY with
   // its count and its name printed beside it, and in a country with forty
@@ -351,6 +361,7 @@ export function countryMapScript(cities: CountryMapCity[],
   // page draws its TreeMap instead: every tree, no labels of our own over
   // the base map's. So this is the explore map's pin style and its one rule:
   // a pin or a dot opens its tree.
+  const sheet = Boolean(opts.sheet);
   const data = {
     type: "FeatureCollection",
     features: cities.flatMap((c) => c.markers.map((m) => ({
@@ -358,21 +369,48 @@ export function countryMapScript(cities: CountryMapCity[],
       geometry: { type: "Point", coordinates: [m.lng, m.lat] },
       properties: { id: m.id ?? "", cs: "/" + c.slug, url: m.url ?? "/" + c.slug, pr: m.pr ?? 1,
                     // pinPriority puts a tree with a photograph at 0 or below.
-                    mn: miniPin(m.id ?? "", (m.pr ?? 1) <= 0) ? 1 : 0 },
+                    mn: miniPin(m.id ?? "", (m.pr ?? 1) <= 0) ? 1 : 0,
+                    ...(sheet ? { sp: m.sp ?? -1, paid: m.paid ? 1 : 0 } : {}) },
     }))),
   };
+  // The filter row, the city map's wiring (city-map-script.ts): set up before
+  // the map for the reason map-filters-js.ts gives, re-sourcing the data
+  // rather than hiding a layer, species list fetched when the chip opens.
+  const filters = sheet ? `${mapFiltersJs()}
+var SPECIES = null, SPECIES_L = null;
+function applyCountryFilters() {
+  var kept = filtersOn() ? ALL.filter(function(f) { return keepsTree(f.properties); }) : ALL;
+  var src = (typeof map !== 'undefined' && map && map.getSource) ? map.getSource('trees') : null;
+  if (src) { src.setData({ type: 'FeatureCollection', features: atMarkPiles(kept) }); }
+  atFilterCount(kept.length);
+}
+atMapFilters({
+  apply: applyCountryFilters,
+  items: function() { return ALL.map(function(f) { return { sp: f.properties.sp, c: f.geometry.coordinates }; }); },
+  ready: function(cb) {
+    if (SPECIES) { cb(); return; }
+    fetch('/api/map-species.json').then(function(r) { return r.json(); }).then(function(j) {
+      SPECIES = j.names || []; SPECIES_L = j.latin || [];
+      cb();
+    }).catch(function() {});
+  },
+  map: function() { return typeof map !== 'undefined' ? map : null; }
+});
+` : "";
   return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs()}
-var TREES = atMarkPiles(${JSON.stringify(data)}.features);
-TREES = { type: 'FeatureCollection', features: TREES };
+var ALL = ${JSON.stringify(data)}.features;
+var TREES = { type: 'FeatureCollection', features: atMarkPiles(ALL) };
+${filters}
+var SHEET = ${sheet ? "true" : "false"};
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [0, 0], zoom: 3, ${ONE_WORLD},
-  scrollZoom: false, attributionControl: false
+  scrollZoom: SHEET, attributionControl: false
 });
 map.addControl(new maplibregl.AttributionControl({compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)}}), 'top-left');
 map.addControl(new maplibregl.NavigationControl({showCompass: false}));
 var b = new maplibregl.LngLatBounds();
-TREES.features.forEach(function(f) { b.extend(f.geometry.coordinates); });
+ALL.forEach(function(f) { b.extend(f.geometry.coordinates); });
 // A country whose cities all hug one border names extra ground to show
 // (map_frame in data/countries), so Canada's map is not centred on the US.
 var FRAME = ${JSON.stringify(frame ?? null)};
@@ -382,9 +420,27 @@ if (FRAME) { b.extend(FRAME[0]); b.extend(FRAME[1]); }
 var FOCUS = ${JSON.stringify(focus ?? null)};
 if (FOCUS) { b = new maplibregl.LngLatBounds(FOCUS[0], FOCUS[1]); }
 var touched = false;
+// On a phone the sheet's peek covers the bottom of a full-bleed map, so the
+// country is framed in the part that shows: above the peek and below the
+// filter row (sheet-js.ts says where the sheet comes to rest).
+function pad() {
+  var p = { top: 36, bottom: 36, left: 36, right: 36 };
+  if (!SHEET) { return p; }
+  var el = map.getContainer(), h = el.clientHeight;
+  p.top = 64;
+  var st = window.atSheetTop ? window.atSheetTop() : null;
+  if (st !== null && st !== undefined) {
+    var top = el.getBoundingClientRect().top;
+    p.bottom = Math.max(36, Math.round(top + h - st) + 16);
+  }
+  // A padding taller than the map makes MapLibre refuse the frame.
+  if (p.top + p.bottom > h - 40) { p.top = 36; p.bottom = Math.max(36, h - 120); }
+  return p;
+}
 function fit() {
   if (touched) return;
-  map.fitBounds(b, { padding: 36, maxZoom: 9, duration: 0 });
+  var p = pad();
+  map.fitBounds(b, { padding: p, maxZoom: 9, duration: 0 });
   // On a phone held upright the width decides the zoom, so the frame sits in
   // the middle with a band of neighbour above and below it: for Canada that
   // lower band was the US and Mexico (Hidde, 2026-09-24). Slide the view north
@@ -393,7 +449,7 @@ function fit() {
   if (FRAME) {
     var h = map.getContainer().clientHeight;
     var y = map.project([FRAME[0][0], Math.min(FRAME[0][1], FRAME[1][1])]).y;
-    var dy = y - (h - 48);
+    var dy = y - (h - p.bottom - 12);
     if (dy < 0) { map.panBy([0, dy], { duration: 0 }); }
   }
 }
@@ -407,6 +463,7 @@ map.on('load', function() {
   var openCard = null;
   atPinLayers(map, 'trees', 'tree', function(p, c) { if (openCard) openCard(p, c); }, null, null);
   openCard = atCirclePinCard(map, 'trees', 'tree');
+  if (SHEET && typeof applyCountryFilters === 'function') { applyCountryFilters(); }
 });
 `);
 }

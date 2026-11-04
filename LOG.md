@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: the website country page is a map
+
+- **What changed (web):** /netherlands, /italy and every other country page (Contract G) now open as the city page does: the map full-bleed with every tree as a pin or a dot, the filter row on top (Favourites, My trees, Species, Free to visit), and the page in the city page's sheet (left panel on a computer, draggable bottom sheet on a phone). The sheet header is the city page's: the count line ("N trees · M places"), "Ancient trees in <country>" and the share button; no ambassador row. Under it, in the contract's order: the intro (clamped to three lines with Read more, like a city), the states (US), every place, the species, the ten oldest trees, the register note and the links. Nothing left the page. A tapped pin opens the one shared tree card (map-card-js.ts). The state pages keep the embedded map (countryMapScript's new `sheet` option is off for them).
+- **Not verified before push:** the Astro build (no Node here; CI builds it); the map JS was parse-checked with JavaScriptCore.
+
 ## 2026-11-04 session: Find people gets Suggested, on both surfaces
 
 - **What changed (app):** Find people is a pushed page from the person-plus on My trees (Route.findPeople), back button top left, search field on top, Share your profile, then "Suggested": ambassadors with a public profile (places you saved or collected first), then people with a public profile who photographed trees in those places, then the other ambassadors; one line each ("Lisbon ambassador", "Photographed 4 trees in Utrecht"), the seal on an ambassador's picture, the same Follow pill and ellipsis. Never you, never a blocked person, people you follow at the end, at most 12. Typing shows search results as before. Followers and Following stay sheets with Done. Signed out the page says "Sign in to find people." as before. Kit/SuggestedPeople.swift with SuggestedPeopleTests (5 pass); -people now pushes the page, FlowWalk's find-people flow ends with Back instead of Done.
