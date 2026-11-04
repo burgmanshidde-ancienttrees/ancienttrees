@@ -1654,6 +1654,9 @@ footer { border-top: 1px solid var(--cream-dark); }
    (Hidde, 2026-10-24, on the phone map). The selected pin (z 5) stays on top. */
 .pin-tree:not(.pin-mini) { z-index: 2; }
 .pin-tree.pin-mini { z-index: 1; }
+/* Restated after the two lines above, which have the same weight and used to
+   win, so the selected pin sat at z 2 beside its neighbours (2026-11-04). */
+.pin-tree.active { z-index: 5; }
 .pin-tree.pin-mini svg, .pin-tree.pin-mini .pin-got, .pin-tree.pin-mini .pin-fav, .pin-tree.pin-mini .pin-ticket,
 .pin-tree.pin-mini .pin-bits { display: none; }
 /* TREES ON ONE SPOT (2026-10-15): one bubble, the explore map's cluster drawn

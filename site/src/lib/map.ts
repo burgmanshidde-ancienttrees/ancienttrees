@@ -325,9 +325,15 @@ function atCanMap() {
 /** MapLibre's stylesheet. The `preconnect` to unpkg.com that used to sit here
  * went with the vendoring on 2026-08-16 (see site-config.ts): warming a
  * connection to a host we no longer call is a wasted DNS lookup, and our own
- * origin is already connected. */
+ * origin is already connected.
+ * The street tiles come from tiles.openfreemap.org three hops into the load
+ * (our style, then its TileJSON, then the tiles), so that connection is warmed
+ * here, once, for every map page (2026-11-04: about 100 ms on a cold visit on
+ * broadband, more on a phone). `crossorigin` because MapLibre fetches in CORS
+ * mode without credentials; a preconnect of the other kind is not reused. */
 export function mapHead(): string {
-  return `<link rel="stylesheet" href="${MAPLIBRE_CSS}">`;
+  return `<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>`
+    + `<link rel="stylesheet" href="${MAPLIBRE_CSS}">`;
 }
 
 /** A single-pin map: the tree page's own map, ported from

@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 session: two map oddities checked on the Lisbon map
+
+- Seen while walking the site as a visitor at 375px: a tapped pin looked like a plain green circle, and the streets came in about 3 s after the pins. Both came from the browser pane being hidden (a background page freezes the 0.18 s colour transition, so the icon stayed green on green, and slows the map's timers). With the pane in view the tapped pin shows its white tree and the streets draw at about 1 to 2 s.
+- Two real small things fixed on every map: the tapped pin's `z-index: 5` was overridden by the later `.pin-tree:not(.pin-mini)` rule (same weight), so it sat at 2 beside its neighbours; restated after it in style.css. And `mapHead()` now preconnects to tiles.openfreemap.org, the third hop of the map's load (style, TileJSON, tiles); about 100 ms on a cold broadband visit, more on a phone. No visible change otherwise.
+
 ## 2026-11-04 session: the Rockface Sycamore found, photographed and re-pinned
 
 - **What changed (Edinburgh):** a Cramond Association member answered the 10-29 photo ask, walked to the Rockface Sycamore (edi_008) and sent its what3words square and photographs. Our pin was about 550 m off; it now stands on that square, confirmed by the photos' GPS tags (8 m apart). Two photos live (lead: the trunk leaning out over the walkway; strip: where it leaves the bank), credited to the Cramond Association for now. Story and recognition line no longer say "at the start of the walkway" (it stands about 600 m upriver from the village), and the colon reveal is gone, so the page can be indexed.
