@@ -57,11 +57,6 @@
       "released_at": "2026-10-20T00:43:53+00:00"
     },
     {
-      "slug": "chicago",
-      "kind": "verify",
-      "released_at": "2026-10-20T01:37:38+00:00"
-    },
-    {
       "slug": "fort-worth",
       "kind": "verify",
       "released_at": "2026-10-20T07:09:59+00:00"
@@ -250,6 +245,11 @@
       "slug": "san-antonio",
       "kind": "verify",
       "released_at": "2026-11-04T08:37:11+00:00"
+    },
+    {
+      "slug": "chicago",
+      "kind": "verify",
+      "released_at": "2026-11-04T08:46:33+00:00"
     }
   ]
 }
