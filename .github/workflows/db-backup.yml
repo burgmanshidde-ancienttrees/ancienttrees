@@ -40,8 +40,11 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run=yes" >> "$GITHUB_OUTPUT"; exit 0
           fi
-          LAST=$(gh run list --workflow=db-backup.yml --status=success -L 20 \
-                 --json createdAt,databaseId --jq "[.[] | select(.databaseId != ${{ github.run_id }})][0].createdAt // empty")
+          # The newest backup KEPT, not the newest green run: a day with
+          # nothing due ends green too, and measuring from it would never
+          # make a second backup (found 2026-11-04).
+          LAST=$(gh api "repos/${{ github.repository }}/actions/artifacts?per_page=100" \
+                 --jq '[.artifacts[] | select(.name | startswith("ancienttrees-backup-")) | select(.expired | not)] | sort_by(.created_at) | last | .created_at // empty')
           if [ -z "$LAST" ]; then
             echo "no earlier good backup"; echo "run=yes" >> "$GITHUB_OUTPUT"; exit 0
           fi
