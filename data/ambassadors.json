@@ -1,7 +1,18 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named or their profile is public (public true, since 2026-10-28); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": "2026-11-02T15:30Z",
+  "synced": "2026-11-04T12:26Z",
   "ambassadors": [
+    {
+      "user_id": "de4ed97a-01e5-42ce-83c3-28883cf6d91b",
+      "place_slug": "lisbon",
+      "place_name": "Lisbon",
+      "public": true,
+      "since": "2026-10-05",
+      "display_name": "Hugo",
+      "profile_public": true,
+      "affiliation": "Quercus Lisboa",
+      "affiliation_consent": "Hidde vouched for Quercus Lisboa (2026-10-05: (their words, kept privately))"
+    },
     {
       "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
       "place_slug": "baarn",
@@ -9,15 +20,6 @@
       "public": true,
       "since": "2026-10-18",
       "display_name": "Hidde",
-      "profile_public": true
-    },
-    {
-      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
-      "place_slug": "porto",
-      "place_name": "Porto",
-      "public": true,
-      "since": "2026-10-28",
-      "display_name": "Miguel Portugal",
       "profile_public": true
     },
     {
@@ -57,12 +59,12 @@
       "profile_public": true
     },
     {
-      "user_id": "154c94b7-0841-4161-bcab-47405b9a8051",
-      "place_slug": "paris",
-      "place_name": "Paris",
+      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
+      "place_slug": "porto",
+      "place_name": "Porto",
       "public": true,
-      "since": "2026-11-02",
-      "display_name": "Loic S.",
+      "since": "2026-10-28",
+      "display_name": "Miguel Portugal",
       "profile_public": true
     },
     {
@@ -81,6 +83,15 @@
       "public": true,
       "since": "2026-11-02",
       "display_name": "Mikel B.",
+      "profile_public": true
+    },
+    {
+      "user_id": "154c94b7-0841-4161-bcab-47405b9a8051",
+      "place_slug": "paris",
+      "place_name": "Paris",
+      "public": true,
+      "since": "2026-11-02",
+      "display_name": "Loic S.",
       "profile_public": true
     },
     {
@@ -113,15 +124,17 @@
       "user_id": null,
       "place_slug": "lisbon",
       "place_name": "Lisbon",
-      "public": true,
+      "public": false,
       "since": "2026-10-05",
       "display_name": "Hugo Veríssimo",
       "source": "Quercus Lisboa, arborist; granted on Hidde's word (2026-10-05: (their words, kept privately)); Quercus Lisboa beside his name on Hidde's word",
       "affiliation": "Quercus Lisboa",
       "affiliation_consent": "Hidde vouched for Quercus Lisboa (2026-10-05: (their words, kept privately))",
       "address_hmac": [
-        "7ea8d1fadf5ba64fec89846ed3c3fd45f7aba5a4bb014d95d401746757b532e0"
-      ]
+        "7ea8d1fadf5ba64fec89846ed3c3fd45f7aba5a4bb014d95d401746757b532e0",
+        "af89cba69db03b1b3fd8a466e3c9d6e9b19de15cde35d4ae5ec6ea18dfbfd1d7"
+      ],
+      "linked_user_id": "de4ed97a-01e5-42ce-83c3-28883cf6d91b"
     },
     {
       "user_id": null,

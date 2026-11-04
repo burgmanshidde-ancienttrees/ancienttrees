@@ -296,6 +296,9 @@ def sync():
         doc0 = json.load(fh)
     linked_names = {e["linked_user_id"]: e.get("display_name") for e in doc0.get("ambassadors", [])
                     if e.get("linked_user_id")}
+    linked_affiliations = {(e["linked_user_id"], e["place_slug"]): (e["affiliation"], e.get("affiliation_consent"))
+                           for e in doc0.get("ambassadors", [])
+                           if e.get("linked_user_id") and e.get("affiliation")}
     for uid, nm in linked_names.items():
         names.setdefault(uid, nm)
         if not names.get(uid):
@@ -310,6 +313,11 @@ def sync():
             entry["display_name"] = names[r["user_id"]]
             if r["user_id"] in open_profiles:
                 entry["profile_public"] = True
+            # A mail ambassador who later signed in keeps the organisation they
+            # agreed to be named with (Hugo and Quercus Lisboa, 2026-11-04).
+            aff = linked_affiliations.get((r["user_id"], r["place_slug"]))
+            if aff:
+                entry["affiliation"], entry["affiliation_consent"] = aff
         elif entry["public"]:
             # Consented, but never set a name: nothing to print, and the page
             # says nothing rather than inventing one.
