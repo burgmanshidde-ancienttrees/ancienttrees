@@ -3323,6 +3323,13 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
   .sheet-grab .share-btn { margin-top: 0; }
   .sheet-grab .panel-head { padding: 0.4rem var(--gutter) 0.75rem; }
   .panel[data-detent] .panel-head h1 { font-size: 1.3rem; line-height: 1.25; }
+  /* THE PLACE NAME ALONE on the phone sheet, as the app's place header
+     (Hidde, 2026-11-04: "the Netherla..." was cut off). The lead words stay in
+     the heading for search engines and screen readers, hidden visually only. */
+  .panel[data-detent] .panel-head h1 .h1-lead { position: absolute; width: 1px; height: 1px;
+    overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+  .panel[data-detent] .panel-head h1 em { display: inline-block; }
+  .panel[data-detent] .panel-head h1 em::first-letter { text-transform: uppercase; }
 }
 /* The sheet's foot, read as a whole (Hidde, 2026-10-05: "kijk even naar het
    totaal"). The map-file note and the app pitch were two boxes with two

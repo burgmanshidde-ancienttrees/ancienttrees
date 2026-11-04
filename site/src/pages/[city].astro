@@ -287,7 +287,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
           <PlaceRow shareLabel={ui("en").share} copiedLabel={ui("en").shareCopied} closeLabel={ui("en").photoClose} />
           <p class="eyebrow">{country}</p>
           <div class="page-head">
-            <h1>Ancient Trees in <em>{cityName}</em></h1>
+            <h1><span class="h1-lead">Ancient Trees in </span><em>{cityName}</em></h1>
             <ShareButton url={canonical} title={`Ancient trees in ${cityName}`} />
           </div>
         </div>

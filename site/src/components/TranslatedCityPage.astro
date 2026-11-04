@@ -143,7 +143,7 @@ const cityHasQuestion = hasQuestionPage(city);
         <PlaceRow shareLabel={U.share} copiedLabel={U.shareCopied} closeLabel={U.photoClose} />
         <p class="eyebrow">{countryLabel}</p>
         <div class="page-head">
-          <h1>{U.heading("")}<em>{tr.city}</em></h1>
+          <h1><span class="h1-lead">{U.heading("")}</span><em>{tr.city}</em></h1>
           <ShareButton url={selfUrl} title={U.heading(tr.city)} label={U.share} copied={U.shareCopied} />
         </div>
       </div>
