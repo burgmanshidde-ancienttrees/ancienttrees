@@ -1,0 +1,23 @@
+name: Bing diagnose
+
+# Read-only: where Bing's impressions come from, per day, query and page.
+# Run by hand when a Bing number looks wrong (written 2026-11-04 for the
+# 11-01 jump). Prints to the log, writes nothing.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - name: Ask Bing
+        env:
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+        run: python3 scripts/bing_diagnose.py
