@@ -186,7 +186,8 @@
    "summary": "A city chip on a tree page jumps to the Map tab with no way back.",
    "fix": "Push the place map inside the current tab.",
    "first_seen": "2026-11-04",
-   "status": "open"
+   "status": "declined",
+   "note": "Hidde, 2026-11-04: \"Yes, leave it\", after the read that a pushed map in every tab would undo the same day's one-map-screen rule and that the tree page stays under the Discover tab"
   },
   {
    "id": "APP-UX-bottom-bar-200m",
