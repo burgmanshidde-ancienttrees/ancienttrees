@@ -29,7 +29,6 @@ public enum Route: Hashable {
     /// `.mine` does; this case exists for everybody else, and for you on a
     /// device that has not seen this sighting yet. See SharedTreeView.swift.
     case shared(UUID)
-    case walk(city: String, name: String)      // a walk is only unique per city
     case city(String)                          // city slug
     case collection(String)                    // collection slug
     case species(String)                       // common name
@@ -43,33 +42,6 @@ public enum Route: Hashable {
     /// with a different history, so the way back to what you were reading was
     /// gone. A pushed page keeps the trail.
     case treeMap(String)                       // tree id
-    /// YOUR OWN COLLECTION ON A REAL MAP, pushed from the cover on My trees
-    /// (Hidde, 2026-08-26: "je moet nog wel de kaart kunnen scrollen enzo").
-    ///
-    /// The cover cannot itself be draggable: a map you can pan inside a scroll
-    /// view is the gesture fight that page just lost the sheet over. Every
-    /// reference answers this the same way, a still preview that opens a map
-    /// you can move: Airbnb's listing, Google Maps' place card, Strava's
-    /// activity. Back returns to your page.
-    case collectionMap
-    /// A PLACE ON A REAL MAP, pushed from the preview on a city or a country
-    /// page, and never a jump to the Map tab (Hidde, 2026-08-27: "je wilt dat
-    /// mensen in discovery blijven ... je gaat alleen naar de kaartkant als
-    /// mensen dat in de menubar doen, nooit via dat").
-    ///
-    /// Handing somebody to the Map tab throws away the trail they arrived on:
-    /// a different stack, a different history, and no way back to the city they
-    /// were reading. Pushed, the back button is exactly where they expect it,
-    /// and the page they were on is still there. The website already works
-    /// this way.
-    case placeMap(Place)
-    /// Which place a placeMap is about. A city by its slug, a country by the
-    /// name the feed spells it with, so both can be looked up the same way the
-    /// pages themselves do.
-    public enum Place: Hashable, Codable, Sendable {
-        case city(String)
-        case country(String)
-    }
     /// The "see all" behind a shelf. Netflix, AllTrails and Airbnb all put one
     /// in the shelf header, and a shelf without one is a promise that the row
     /// you can see is everything there is (Hidde, 2026-08-21).

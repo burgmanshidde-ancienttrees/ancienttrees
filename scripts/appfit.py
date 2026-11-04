@@ -147,7 +147,7 @@ FLOATS_OVER_PAGES = ("tab-map", "tab-discover", "tab-my-trees", "tab-collect")
 # was measured: it sits 10 in from the hero photograph's bottom-right corner,
 # Airbnb's photo-and-map swap, and read as a 10 point TRAIL against the page's
 # 20. Inset from the photograph, like the pills; both hero branches carry it.
-ON_A_PHOTO = ("tree-card-seen", "tree-card-season", "tree-map-swap")
+ON_A_PHOTO = ("tree-card-seen", "tree-map-swap")
 
 
 def inside(el, types, idents=()):

@@ -63,9 +63,7 @@ final class AncientTreesUITests: XCTestCase {
     func testEveryPannableMapCarriesTheRecentreControl() throws {
         let screens: [(String, [String])] = [
             ("the map tab", ["-tab=0"]),
-            ("a city's map", ["-tab=0", "-open=citymap:aarhus"]),
             ("a tree's own map", ["-tab=0", "-open=treemap:ath_004"]),
-            ("a walk", ["-tab=0", "-open=walk:aarhus|Moesg\u{00e5}rd / H\u{00f8}jbjerg"]),
             ("the pin picker", ["-tab=0", "-open=tree:ath_004", "-placepin"]),
         ]
         for (what, args) in screens {
@@ -333,62 +331,6 @@ final class AncientTreesUITests: XCTestCase {
         }
         XCTAssertEqual(found.count, wanted.count,
                        "Explore is missing \(Set(wanted).subtracting(found))")
-    }
-
-    /// Begin is the walk verb actually happening: full screen, the route, and
-    /// a tick that advances to the next tree. It used to hand the person to
-    /// Apple Maps, which ended our part of the afternoon.
-    ///
-    /// WHAT THE TICK DOES CHANGED on 2026-08-25: it opens the camera rather
-    /// than ticking off a tap, because Hidde ruled that standing in front of a
-    /// tree is claimed with a photograph or not at all. A simulator has no
-    /// camera, so the test asserts the two halves separately: the counter reads
-    /// the collection it was given, and the control opens the collect sheet.
-    @MainActor
-    func testBeginWalksTheWalk() throws {
-        let app = XCUIApplication()
-        // Clean, like every launch: on the shared simulator a tick from an
-        // earlier test otherwise starts this walk at "1 of 7".
-        // -no-nudge because this test is about the WALK, not about the
-        // sign-in ask, and -signed-in because since 2026-08-25 collecting
-        // without an account opens that sheet instead.
-        // ams_018 is the Plantage walk's first stop, seeded as collected so the
-        // counter has something true to say.
-        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-no-nudge", "-no-cover",
-                               "-no-review-prompt", "-signed-in", "-collected=ams_018",
-                               "-begin=amsterdam|Plantage"]
-        app.launch()
-
-        XCTAssertTrue(app.otherElements["walk-mode"].waitForExistence(timeout: 14),
-                      "Begin did not open the walk")
-
-        // The counter is the walk's visible state and it has to read the
-        // collection rather than a number somebody typed. The total is read,
-        // not written down: it said 14 for two days after Amsterdam lost five
-        // trees to the ticket ruling.
-        let progress = app.staticTexts.matching(
-            NSPredicate(format: "label ENDSWITH ' seen'")).firstMatch
-        XCTAssertTrue(progress.waitForExistence(timeout: 8), "the walk shows no progress line")
-        let parts = progress.label.components(separatedBy: " ")
-        XCTAssertEqual(parts.first, "1",
-                       "the walk ignored the tree it was told is collected: \(progress.label)")
-        let total = Int(parts.count > 2 ? parts[2] : "") ?? 0
-        XCTAssertTrue(total > 1, "could not read the walk's total from \(progress.label)")
-
-        // By the words on it. An identifier on a Button whose label is an
-        // HStack of Spacers does not always survive into the query tree, and a
-        // test that cannot find the button it is about proves nothing.
-        let tick = app.buttons.matching(
-            NSPredicate(format: "label CONTAINS 'standing before it'")).firstMatch
-        XCTAssertTrue(tick.waitForExistence(timeout: 8), "no tick in the walk")
-        tick.tap()
-        XCTAssertTrue(app.descendants(matching: .any)["spot-sheet"].waitForExistence(timeout: 8),
-                      "standing before a tree did not open the camera")
-        app.buttons["spot-close"].tap()
-
-        app.buttons["walk-close"].tap()
-        XCTAssertTrue(app.buttons["Map"].waitForExistence(timeout: 8),
-                      "leaving the walk did not return to the app")
     }
 
     /// A PIN OPENS ITS TREE, asserted by tapping the map.
@@ -749,8 +691,9 @@ final class AncientTreesUITests: XCTestCase {
     /// city page: "kun je een sweep doen dat je 100% zeker bent dat plus in
     /// deze build niet wordt meegenomen". A flag is only as good as the
     /// screens that read it, and that one did not: Explore and the map both
-    /// checked Launch.walks and the city page, written from the same shelf,
-    /// never got the check. Nothing could catch it, because the screenshot
+    /// checked the walks flag and the city page, written from the same shelf,
+    /// never got the check. (The flags and the Plus code went on 2026-11-04;
+    /// the test stays, because a word can come back without a flag.) Nothing could catch it, because the screenshot
     /// sweep photographs a city page and the shelf sat below the fold.
     ///
     /// So it is asserted rather than remembered, on every screen a person can

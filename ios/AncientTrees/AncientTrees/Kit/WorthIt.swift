@@ -236,7 +236,7 @@ struct WorthItView: View {
             }
         }
         .sheet(isPresented: $signingIn) {
-            SignInSheet(reason: .feedback, localCount: 0)
+            SignInSheet(reason: .feedback)
         }
     }
 
@@ -338,7 +338,7 @@ struct WorthItButton: View {
             : "Yes, \(tree.name) was worth the visit")
         .accessibilityAddTraits(cast ? .isSelected : [])
         .sheet(isPresented: $signingIn) {
-            SignInSheet(reason: .feedback, localCount: 0)
+            SignInSheet(reason: .feedback)
         }
     }
 
@@ -468,7 +468,7 @@ struct WorthTheTripAsk: View {
             }
         }
         .accessibilityIdentifier("worth-the-trip")
-        .sheet(isPresented: $signingIn) { SignInSheet(reason: .feedback, localCount: 0) }
+        .sheet(isPresented: $signingIn) { SignInSheet(reason: .feedback) }
     }
 
     private func thumb(_ icon: String, _ value: String, _ label: String) -> some View {

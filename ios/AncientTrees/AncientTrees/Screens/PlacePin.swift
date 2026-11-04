@@ -79,7 +79,7 @@ struct PlacePin: View {
                 }
             }
             .sheet(isPresented: $signingIn) {
-                SignInSheet(reason: .feedback, localCount: 0)
+                SignInSheet(reason: .feedback)
             }
         }
     }

@@ -83,7 +83,6 @@ struct HomeView: View {
         var species: [(name: String, count: Int, photo: Tree?)] = []
         var records: [(label: String, tree: Tree, route: Route)] = []
         var lists: [(collection: TreeCollection, face: Tree)] = []
-        var walksNear: [Walk] = []
         /// Every photographed tree not already on the page, nearest first:
         /// the stream at the bottom that keeps going.
         var tail: [Tree] = []
@@ -92,7 +91,6 @@ struct HomeView: View {
     private var month: Int { Calendar.current.component(.month, from: Date()) }
 
     private var cities: [(slug: String, name: String, country: String, count: Int)] { deck.cities }
-    private var walksNear: [Walk] { deck.walksNear }
 
     /// The season's word on your half of the world (Hidde, 2026-10-09: "wat
     /// doen we met het feit dat sommige landen niet tegelijk herfst hebben").
@@ -124,11 +122,6 @@ struct HomeView: View {
             : byCity.keys.compactMap(card)
                 .filter { catalogue.face(city: $0.slug) != nil }
                 .sorted { $0.count > $1.count }
-        s.walksNear = catalogue.walks.compactMap { w -> (Walk, Double)? in
-            guard let f = catalogue.trees(of: w).first else { return nil }
-            return (w, f.distanceKm(from: origin.lat, origin.lng))
-        }
-        .sorted { $0.1 < $1.1 }.prefix(8).map(\.0)
 
         // Distance once per tree, not once per comparison.
         let ranked = catalogue.trees
@@ -823,8 +816,6 @@ struct HomeView: View {
                 }
             }
         }
-
-        if Launch.walks, !walksNear.isEmpty, location.known { walkShelf }
     }
 
     /// The stream at the bottom: every photographed tree, nearest first,
@@ -860,53 +851,6 @@ struct HomeView: View {
         let the: Set<String> = ["United States", "United Kingdom", "Netherlands",
                                 "Czech Republic", "Philippines", "Bahamas"]
         return the.contains(country) ? "the \(country)" : country
-    }
-
-    private var walkShelf: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            // EVERY walk behind Plus (Hidde, 2026-08-24: "ik zou alle
-            // wandelingen achter plus zetten"). His own pricing names curated
-            // walks as a paid feature; the free first one was my softening of
-            // it, and the subtitle promising it goes with it.
-            ShelfHeader(title: "Walks near you")
-            shelf {
-                ForEach(walksNear, id: \.name) { w in
-                    LockedRow(feature: .walkBeyondFirst, lockGlyph: false) { walkCard(w, locked: true) }
-                }
-            }
-            .padding(.bottom, 4)
-        }
-    }
-
-    private func walkCard(_ w: Walk, locked: Bool) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Text(w.name).font(.cardTitle).foregroundStyle(Brand.ink).lineLimit(2)
-                Spacer(minLength: 6)
-                if locked { Chip(text: "Plus", tint: Brand.goldInk) }
-            }
-            Text(w.city).font(.footnote).foregroundStyle(Brand.inkSoft)
-            Spacer(minLength: 0)
-            HStack(spacing: 0) {
-                stat("\(w.count)", "trees")
-                Divider().frame(height: 26)
-                stat(String(format: "%.1f", w.km), "km")
-                Divider().frame(height: 26)
-                stat("\(w.minutes)", "min")
-            }
-        }
-        .padding(14)
-        .frame(width: 230, height: 168, alignment: .topLeading)
-        .brandCard()
-    }
-
-    private func stat(_ value: String, _ unit: String) -> some View {
-        VStack(spacing: 1) {
-            Text(value).font(.brand(17, .bold, relativeTo: .headline))
-                .foregroundStyle(Brand.ink).monospacedDigit()
-            Text(unit).font(.caption2).foregroundStyle(Brand.inkSoft)
-        }
-        .frame(maxWidth: .infinity)
     }
 
     // NO SUBTITLES under the shelf titles (Hidde, 2026-10-04: "maybe less is
@@ -992,34 +936,3 @@ struct CollectionView: View {
     }
 }
 
-/// A walk, as a card on a shelf. Shared by Explore and by a city, because the
-/// two had drifted into different shapes for the same object.
-struct CityWalkCard: View {
-    let walk: Walk
-    let locked: Bool
-    /// Drawn on the map right now. The map's shelf lets you switch between a
-    /// city's walks, and a shelf you can choose from has to say which one is
-    /// chosen (2026-08-25).
-    var selected: Bool = false
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Text(walk.name).font(.cardTitle).foregroundStyle(Brand.ink).lineLimit(2)
-                Spacer(minLength: 6)
-                if locked { Chip(text: "Plus", tint: Brand.goldInk) }
-            }
-            Text("\(treesLabel(walk.count)) · \(walk.duration)")
-                .font(.caption).foregroundStyle(Brand.inkSoft)
-        }
-        .padding(14)
-        .frame(width: 220, alignment: .leading)
-        .brandCard()
-        .overlay {
-            if selected {
-                RoundedRectangle(cornerRadius: 12)
-                    .strokeBorder(Brand.moss, lineWidth: 2)
-            }
-        }
-    }
-}

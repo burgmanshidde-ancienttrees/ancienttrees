@@ -103,13 +103,6 @@ public final class Nudge {
         pending = .keepTree(treeName)
     }
 
-    /// The list has started to look like a collection.
-    public func saved(count: Int, signedIn: Bool) {
-        guard !signedIn, !quiet, count >= 3, !fired.contains("third-save") else { return }
-        mark("third-save")
-        pending = .keepCollection(count)
-    }
-
     /// A GATE rather than a nudge, and the difference is the whole reason this
     /// method is separate from the two above it.
     ///

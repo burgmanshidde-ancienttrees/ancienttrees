@@ -27,7 +27,6 @@ import CryptoKit
 
 struct SignInSheet: View {
     let reason: SignInReason
-    let localCount: Int
 
     @Environment(Account.self) private var account
     @Environment(Saved.self) private var saved

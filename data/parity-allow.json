@@ -2,6 +2,11 @@
   "_note": "Strings that live on ONE surface on purpose, read by scripts/paritycheck.py. Each entry is a decision with its reason, never a way to silence the check. Anything not listed here that is removed from the app must leave the website too, and the other way round (Hidde, 2026-09-11: 'zorg dat dit volgende keer wel gelijk app en web doet').",
   "one_surface_only": [
     {
+      "text": "A day trip away",
+      "surface": "web",
+      "reason": "The heading over a city's day-trip trees on the website's city page. In the app it lived only on PlaceMapPage, which no person could reach once every city and country became the Map tab (2026-11-04), and it left with that page the same day; the store build never showed it. The app's place sheet lists by distance and has no such group."
+    },
+    {
       "text": "A tree we are missing",
       "surface": "app",
       "reason": "Was a heading on the web /support page, removed 2026-11-01 (Hidde). In the app it is the label of a submission kind, which the web form names its own way; nothing to take out there."

@@ -59,10 +59,6 @@ import SwiftUI
 struct CollectSheet: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
-    /// Kept so older call sites and the debug launch arguments still compile;
-    /// both modes now enter the same flow, because the flow is what decides.
-    enum Mode: String { case collect, add }
-    var mode: Mode = .collect
     /// The tree somebody tapped the camera on, when there is one. Only the
     /// intro screen reads it: see CollectIntro.
     var about: String? = nil
@@ -452,7 +448,7 @@ struct CollectSheet: View {
             }.ignoresSafeArea()
         }
         .sheet(isPresented: $signingIn) {
-            SignInSheet(reason: .feedback, localCount: saved.savedCount)
+            SignInSheet(reason: .feedback)
         }
         .task {
             // Falls back to the far list's first tree, so -at= somewhere with
@@ -802,7 +798,7 @@ struct CollectSheet: View {
         //
         // The tree is not lost by this: treeId carries the link. Nothing plots
         // these on a map either, since only sightings WITHOUT a tree id are
-        // drawn (Collect.swift, CollectionMapPage.swift, both `yoursOnly`).
+        // drawn (Collect.swift, `yoursOnly`).
         sightings.record(treeId: t.id, name: t.name, lat: here.lat, lng: here.lng,
                          image: image, date: taken ?? Date(), extras: extras)
         extras = []

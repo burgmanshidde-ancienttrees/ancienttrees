@@ -365,7 +365,7 @@ struct AmbassadorWantedRow: View {
         // dismisses itself once the account is in; the tap is finished here
         // rather than swallowed, and nothing is sent until Send request.
         .sheet(isPresented: $signingIn, onDismiss: { if account.isSignedIn { confirming = true } }) {
-            SignInSheet(reason: .ambassador, localCount: 0)
+            SignInSheet(reason: .ambassador)
         }
         // WHAT THE ROLE IS, BEFORE THE YES (Hidde, 2026-10-08: "add some text
         // in an overlay both app and web that says an ambassador helps make

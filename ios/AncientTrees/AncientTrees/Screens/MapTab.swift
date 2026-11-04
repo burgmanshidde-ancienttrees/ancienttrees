@@ -64,7 +64,6 @@ struct MapTab: View {
     /// When the map was last moved on purpose, so the list's own settling
     /// cannot move it back. See fly().
     @State private var flewAt: Date?
-    @State private var askingPlus = false
     /// Debug scaffolding, same family as -spot: the search page is only
     /// reachable by tapping and simctl has no finger. `-search` opens it empty,
     /// `-search=lis` opens it with that typed.
@@ -83,7 +82,6 @@ struct MapTab: View {
     @State private var mapRegion: MKCoordinateRegion?
     @State private var moveRequest: (token: UUID, region: MKCoordinateRegion)?
     @State private var filters = MapFilters()
-    @State private var shownWalk: Walk?
     /// The town a search just flew to, so the empty card can name it while
     /// the map is still looking there (2026-10-25, EmptyPlace.swift).
     @State private var flownPlace: PlaceOnMap?
@@ -95,7 +93,6 @@ struct MapTab: View {
     @State private var focusPlace: FocusPlace?
     enum FocusPlace: Equatable { case city(String), country(String) }
     @Environment(Units.self) private var units
-    @Environment(Entitlement.self) private var entitlement
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
@@ -113,61 +110,6 @@ struct MapTab: View {
     /// Cheap to do: 1,500 annotations is nothing for MKMapView, the pins carry
     /// a clusteringIdentifier so MapKit collapses them by zoom on its own, and
     /// the set never changes so updateUIView stops churning entirely.
-    /// The walks the site planned, nearest first. The ORDER inside a city is
-    /// left exactly as /api/walks.json delivers it, because that order is a
-    /// decision rather than an accident: walk_planning.py sorts photographed
-    /// walks ahead of bigger ones, on the grounds that somebody decides from the
-    /// pictures whether an afternoon is worth it. Re-sorting here would throw
-    /// that away.
-    private var walksHere: [Walk] {
-        guard Launch.walks else { return [] }
-        // Read about ten times per redraw (shelf, chip, card); resolved once
-        // per view and catalogue (viewMemo, 2026-11-04).
-        let f = focus
-        let key = WalksKey(lat: f.lat, lng: f.lng, reach: reachKm,
-                           version: catalogue.version, count: catalogue.walks.count)
-        if viewMemo.walksKey == key { return viewMemo.walks }
-        let out = walksNear(f)
-        viewMemo.walksKey = key
-        viewMemo.walks = out
-        return out
-    }
-
-    private func walksNear(_ focus: (lat: Double, lng: Double)) -> [Walk] {
-        catalogue.walks.compactMap { w -> (Walk, Double)? in
-            // NEAREST STOP, not the first one. Judging a walk by its first tree
-            // made it flicker in and out while the list was scrolled, because
-            // scrolling the list moves the map, and a walk whose first stop
-            // left the view vanished while four of its other stops were still
-            // on screen (Hidde, 2026-08-25, in The Hague: "als ik hem naar
-            // beneden scrolle, zie ik geen walking route, als ik hem naar boven
-            // scrolle wel, dus dat gaat fout"). A walk is here when any part of
-            // it is here, which is also what somebody looking at the map means.
-            let stops = catalogue.trees(of: w)
-            guard !stops.isEmpty else { return nil }
-            let nearest = stops.map { $0.distanceKm(from: focus.lat, focus.lng) }.min()!
-            return (w, nearest)
-        }
-        // Within the VIEW, not within sixty kilometres. Standing in Amsterdam
-        // that radius swept up the whole Randstad and the shelf said "23 walks
-        // here", which is not a count of anything a person can see (Hidde,
-        // 2026-08-24: "dat zijn er veel te veel"). Floored so a street-level
-        // view still finds the walk you are standing on.
-        .filter { $0.1 < max(reachKm, 3) }
-        .sorted { $0.1 < $1.1 }
-        .map(\.0)
-    }
-
-    private var walkRoute: [CLLocationCoordinate2D] {
-        guard let w = shownWalk else { return [] }
-        // The real routed line where route_walks.py cached one, and the order
-        // the trees are visited where it did not. 78 of 179 have a real one.
-        if let shape = w.shape, shape.count > 1 {
-            return shape.map { CLLocationCoordinate2D(latitude: $0[1], longitude: $0[0]) }
-        }
-        return catalogue.trees(of: w).map { .init(latitude: $0.lat, longitude: $0.lng) }
-    }
-
     /// THE SAME ARRAY WHILE NOTHING IT DEPENDS ON CHANGED. With a filter on,
     /// this filtered all 4,000 trees on every redraw and handed the map a new
     /// array each time, so SwiftUI compared the two tree by tree, field by
@@ -276,11 +218,11 @@ struct MapTab: View {
         flewAt = Date()
     }
 
-    /// No tree in view, none of yours, no walk, no arrival and nothing
+    /// No tree in view, none of yours, no arrival and nothing
     /// selected. The sheet used to lock down here, with nothing to list; since
     /// 2026-10-25 it lists the ask to add the first tree and the nearest one.
     private var nothingInView: Bool {
-        inReach == 0 && minesInView.isEmpty && shownWalk == nil && arrived == nil
+        inReach == 0 && minesInView.isEmpty && arrived == nil
             && selected == nil && query.isEmpty
             // A filter that empties the view is not an empty place: the
             // trees are there, the filter hides them.
@@ -467,18 +409,12 @@ struct MapTab: View {
                        collected: collectedIds, favourites: favouriteIds,
                        version: catalogue.version, count: catalogue.trees.count, query: query)
     }
-    private struct WalksKey: Equatable {
-        let lat, lng, reach: Double
-        let version: String, count: Int
-    }
     /// A class, so remembering a result does not itself redraw the view.
     private final class ViewMemo {
         var listedKey: ViewKey?
         var listed: [(tree: Tree, km: Double)] = []
         var reachKey: ViewKey?
         var reach = 0
-        var walksKey: WalksKey?
-        var walks: [Walk] = []
     }
     @State private var viewMemo = ViewMemo()
 
@@ -556,7 +492,7 @@ struct MapTab: View {
         // the arrangement was argued out; My trees now uses the same one, and
         // it only stays the same if there is one of it.
         MapWithSheet(height: $sheetHeight, topItem: $topCard) {
-            TreeMap(trees: shownWalk.map { catalogue.trees(of: $0) } ?? mapTrees,
+            TreeMap(trees: mapTrees,
                     mine: mineShown.map { (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
                                            photo: sightings.thumbnail($0, maxPixel: 160)) },
                     collected: collectedIds,
@@ -577,8 +513,6 @@ struct MapTab: View {
                     // opening shot when the phone finally answers. See
                     // TreeMap.focusIsFix.
                     focusIsFix: located,
-                    route: walkRoute,
-                    routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
                     // ALWAYS BUILT, never added and removed (2026-09-04). It
                     // used to be dropped from the hierarchy at the full stop,
                     // and a stop only changes when a drag ENDS, so the control
@@ -587,9 +521,6 @@ struct MapTab: View {
                     // height instead, which is the same intention without the
                     // jump: by the time the sheet covers the map, it is gone.
                     showsRecentre: true,
-                    // Off while a walk is on screen, for the same reason as on
-                    // the walk page itself: its stops must stay countable.
-                    declutter: shownWalk == nil,
                     region: $mapRegion,
                     moveTo: moveRequest,
                     selected: $selected)
@@ -746,39 +677,10 @@ struct MapTab: View {
         // rides the sheet (MapWithSheet's parallax), exactly as on My trees,
         // and Google Maps' and Apple Maps' lists do the same. Tapping a card
         // or a pin still moves the map, because that is a choice.
-        .onChange(of: navigator.showCityOnMap) { _, new in
-            guard let slug = new else { return }
-            let here = catalogue.trees(inCity: slug)
-            navigator.showCityOnMap = nil
-            guard !here.isEmpty else { return }
-            // The city's own frame, the same arithmetic the city page's preview
-            // uses: the middle of its trees, wide enough to hold them all.
-            let lats = here.map(\.lat), lngs = here.map(\.lng)
-            let centre = CLLocationCoordinate2D(
-                latitude: (lats.min()! + lats.max()!) / 2,
-                longitude: (lngs.min()! + lngs.max()!) / 2)
-            let span = MKCoordinateSpan(
-                latitudeDelta: max(lats.max()! - lats.min()!, 0.01) * 1.4,
-                longitudeDelta: max(lngs.max()! - lngs.min()!, 0.01) * 1.4)
-            selected = nil
-            shownWalk = nil
-            filters = MapFilters()
-            query = ""
-            sheetHeight = .peek
-            moveRequest = (token: UUID(), region: MKCoordinateRegion(center: centre, span: span))
-        }
         .onChange(of: navigator.showPlaceOnMap) { _, new in
             guard let p = new else { return }
             navigator.showPlaceOnMap = nil
             showPlace(p)
-        }
-        .onChange(of: navigator.showOnMap) { _, new in
-            guard let id = new, let t = catalogue.tree(id) else { return }
-            selected = t
-            navigator.showOnMap = nil
-        }
-        .sheet(isPresented: $askingPlus) {
-            PaywallView(feature: .walkBeyondFirst)
         }
         .sheet(item: $refused) { PermissionRecovery(permission: $0) }
         .onAppear { if debugRefused { debugRefused = false; refused = .location } }
@@ -790,7 +692,6 @@ struct MapTab: View {
                                              set: { new in
                                                  filters = MapFilters()
                                                  filters.species = new
-                                                 if new != nil { shownWalk = nil }
                                              }))
         }
         // Hidden rather than merely covered while the search sheet is up: a
@@ -898,7 +799,6 @@ struct MapTab: View {
     /// empty card (or the town's trees) is what you see next.
     private func showPlace(_ p: PlaceOnMap) {
         selected = nil
-        shownWalk = nil
         filters = MapFilters()
         flownPlace = p
         fly(to: p.lat, lng: p.lng, span: EmptyPlace.spanMetres)
@@ -989,7 +889,6 @@ struct MapTab: View {
             // heads a list in iOS Settings. In the list and not in the sheet's
             // header, because the header is the grip that drags the sheet back
             // down, and a button there takes the drag (CI caught exactly that).
-            if shownWalk != nil && sheetHeight != .peek { walkCard }
             if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
             list
         }
@@ -1096,86 +995,8 @@ struct MapTab: View {
             .sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
     }
 
-    /// Put a walk on screen whole.
-    ///
-    /// Hidde, 2026-08-25: "if I press walking routes on the map screen, it would
-    /// make sense that the map zooms out to place that walk exactly in the
-    /// middle of your screen." It drew the line and left the camera wherever it
-    /// happened to be, so a walk two streets away was a green thread leaving the
-    /// corner of the screen. The bottom inset the camera now carries means the
-    /// middle it aims for is the middle of the part you can SEE, not the middle
-    /// of the map behind the sheet.
-    private func frame(_ w: Walk) {
-        let stops = catalogue.trees(of: w)
-        guard !stops.isEmpty else { return }
-        let lats = stops.map(\.lat), lngs = stops.map(\.lng)
-        let centre = CLLocationCoordinate2D(latitude: (lats.min()! + lats.max()!) / 2,
-                                            longitude: (lngs.min()! + lngs.max()!) / 2)
-        // A fifth of air around it, and a floor so a walk of one street does not
-        // arrive at maximum zoom.
-        let span = MKCoordinateSpan(
-            latitudeDelta: max((lats.max()! - lats.min()!) * 1.4, 0.004),
-            longitudeDelta: max((lngs.max()! - lngs.min()!) * 1.4, 0.004))
-        moveRequest = (token: UUID(), region: MKCoordinateRegion(center: centre, span: span))
-    }
-
-    /// The walks where the map is looking, as the shelf a city page uses.
-    ///
-    /// The sheet used to hold trees and nothing else, so a walk existed only
-    /// behind a chip that drew a line. After searching a city you want what the
-    /// city HAS, which is its walks and its trees, and that is the same shape
-    /// the city page and the website both carry.
-    @ViewBuilder private var walkShelf: some View {
-        // Shown even while a walk is drawn, because choosing a DIFFERENT one
-        // was impossible otherwise: the chip picks the first and the shelf
-        // vanished the moment it did (Hidde, 2026-08-25: "je moet namelijk de
-        // walking kunnen selecteren"). Amsterdam has three.
-        if query.isEmpty, walksHere.count > 1 || shownWalk == nil, !walksHere.isEmpty {
-            VStack(alignment: .leading, spacing: 8) {
-                Text(walksHere.count == 1 ? "1 walk here" : "\(walksHere.count) walks here")
-                    .font(.brand(17, .bold, relativeTo: .headline))
-                    .foregroundStyle(Brand.ink)
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(alignment: .top, spacing: 12) {
-                        ForEach(walksHere.prefix(6), id: \.name) { w in
-                            // Tapping SELECTS: it draws that walk on the map
-                            // and puts its card in the sheet. Free, because
-                            // looking at a route is how anybody decides whether
-                            // it is worth having, and Begin on the card below is
-                            // where Plus still stands (Hidde, 2026-08-25: make
-                            // the route available in the list, "en weer achter
-                            // plus gooien"). Before this, every card here went
-                            // straight to the paywall, so with three walks in
-                            // Amsterdam you could see the first one and no other.
-                            Button {
-                                filters = MapFilters()
-                                shownWalk = w
-                                frame(w)
-                                if sheetHeight == .peek { sheetHeight = .card }
-                            } label: {
-                                CityWalkCard(walk: w, locked: true,
-                                             selected: shownWalk?.name == w.name)
-                            }
-                            .buttonStyle(.plain)
-                        }
-                    }
-                    .padding(.bottom, 2)
-                }
-            }
-            .padding(.bottom, 4)
-        }
-    }
-
     private var list: some View {
         LazyVStack(spacing: 12) {
-                // Not at peek. The lip is a HANDLE (see countStrip): at 168
-                // points the walks row and the tops of its cards were the only
-                // thing visible, so the sheet looked like a row of controls,
-                // and a tap on one of them raised the sheet instead of opening
-                // it, which is the "one tap does nothing, the second opens the
-                // tree underneath" Hidde reported on 2026-08-25. It also ate
-                // the whole photograph the lip is meant to show.
-                if sheetHeight != .peek { walkShelf }
                 // Yours first: there are few of them and nobody else has them.
                 if query.isEmpty {
                     ForEach(minesInView) { s in
@@ -1263,7 +1084,6 @@ struct MapTab: View {
     private var filterRow: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
-                walkChip
                 // ONE chip. Collected and Yours stood next to each other here
                 // and meant almost the same thing; adding a tree collects it,
                 // so they are one set. The word is the state a pin is in,
@@ -1311,14 +1131,12 @@ struct MapTab: View {
                         nudge.require(.general) {
                             filters = MapFilters()
                             filters.collectedOnly = true
-                            shownWalk = nil
                         }
                         return
                     }
                     let want = !filters.collectedOnly
                     filters = MapFilters()
                     filters.collectedOnly = want
-                    if want { shownWalk = nil }
                 }
                 .accessibilityIdentifier("filter-mine")
 
@@ -1374,132 +1192,6 @@ struct MapTab: View {
         // .contain keeps each chip its own element with its own identifier.
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("map-filters-shelf")
-    }
-
-    /// One walk free, the rest behind Plus, which is the rule Entitlement.swift
-    /// already states: nobody buys a thing they have never felt. So the nearest
-    /// walk draws itself on the map for anybody, and asking for the next one is
-    /// what opens the ask.
-    @ViewBuilder private var walkChip: some View {
-        if !walksHere.isEmpty {
-            Button {
-                if shownWalk == nil {
-                    // ONE of the three at a time (Hidde, 2026-08-24). Not
-                    // tidiness: a walk shown WHILE the map is filtered to the
-                    // trees you have collected loses the stops you have not,
-                    // so the route on screen is not the route. Every
-                    // combination of these three is either that or a filter
-                    // nobody asked for.
-                    filters = MapFilters()
-                    shownWalk = walksHere.first
-                    if let w = walksHere.first { frame(w) }
-                    // .card, not .peek. It drew a route on the map and then
-                    // shrank the sheet to a lip, so the walk existed as a line
-                    // and nowhere else: "ik heb nu op walking routes geklikt op
-                    // de map, dan zie ik dus een walking route in Amsterdam,
-                    // maar dan zie ik hem vervolgens niet in de lijst eronder"
-                    // (Hidde, 2026-08-25). The list has to represent what the
-                    // map is showing, and .card is exactly the height of one
-                    // card, which is what this is.
-                    sheetHeight = .card
-                } else {
-                    shownWalk = nil
-                }
-            } label: {
-                // One label in both states (Hidde, 2026-08-25: "ik denk dat
-                // het filter eigenlijk walking routes moet heten... en je
-                // hoeft ook niet hide walking routes"). It said "See walking
-                // routes" and then "Hide walking routes", which is a verb a
-                // filter chip does not need: the chip is already filled when
-                // it is on, and every filter row in every app anybody has used
-                // works that way. What the 08-24 note above was right about
-                // was the PLURAL, and that survives.
-                FilterChipLabel(label: "Walking routes",
-                                icon: "figure.walk", on: shownWalk != nil)
-            }
-            .buttonStyle(.plain)
-        }
-    }
-
-    /// What the map is showing, said in the sheet, with the one thing a walk
-    /// needs pinned under it. Begin rather than Directions, and it is the only
-    /// coloured control on the screen, per the AllTrails teardown's first
-    /// finding.
-    @ViewBuilder private var walkCard: some View {
-        if let w = shownWalk {
-            VStack(alignment: .leading, spacing: 12) {
-                HStack(alignment: .firstTextBaseline) {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(w.name).font(.brand(19, .heavy, relativeTo: .title3))
-                            .foregroundStyle(Brand.ink)
-                        Text(w.city).font(.footnote).foregroundStyle(Brand.inkSoft)
-                    }
-                    Spacer()
-                    Button { shownWalk = nil } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .font(.title3).foregroundStyle(Brand.inkSoft)
-                    }
-                    .buttonStyle(.plain)
-                }
-                HStack(spacing: 0) {
-                    walkStat("\(w.count)", "trees")
-                    Divider().frame(height: 26)
-                    walkStat(String(format: "%.1f", w.km), "km")
-                    Divider().frame(height: 26)
-                    walkStat("\(w.minutes)", "min")
-                }
-                if (w.shape?.count ?? 0) <= 1 {
-                    // The same honesty the website prints, and the same reason:
-                    // a solid line between trunks claims a path nobody checked.
-                    // The fraction is a fact and facts move: 48 more walks got
-                    // a checked route on 2026-08-25, which took it from about a
-                    // half to about three quarters. Begin fetches a live route
-                    // for the rest, so this line is about the preview above it.
-                    Label("The line shows the order, not the streets.",
-                          systemImage: "info.circle")
-                        .font(.caption).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                // PREVIEW FREE, WALKING BEHIND PLUS (Hidde, 2026-08-25: "het is
-                // goed als je een preview geeft van de wandeling maar daarna als
-                // je klikt niet naar google maps gaan maar naar plus, coming soon
-                // verwijzen"). Seeing the route on the map is how anybody decides
-                // whether it is worth having; walking it is the thing his own
-                // pricing sells. Begin used to open our walk mode, whose way to
-                // the next tree is a hand-off to a maps app, so the paid feature
-                // ended in somebody else's product.
-                Button { askingPlus = true } label: {
-                    Label("Begin", systemImage: "location.fill")
-                }
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("walk-begin")
-
-                if walksHere.count > 1 {
-                    LockedRow(feature: .walkBeyondFirst, lockGlyph: false) {
-                        HStack {
-                            Text("\(walksHere.count - 1) more "
-                                 + (walksHere.count == 2 ? "walk" : "walks")
-                                 + " near here")
-                                .font(.subheadline).foregroundStyle(Brand.ink)
-                            Spacer()
-                            Chip(text: "Plus", tint: Brand.goldInk)
-                        }
-                    }
-                }
-            }
-            .padding(16)
-            .brandCard()
-            .padding(.horizontal, 16).padding(.bottom, 4)
-        }
-    }
-
-    private func walkStat(_ value: String, _ unit: String) -> some View {
-        VStack(spacing: 1) {
-            Text(value).font(.brand(17, .bold, relativeTo: .headline))
-                .foregroundStyle(Brand.ink).monospacedDigit()
-            Text(unit).font(.caption2).foregroundStyle(Brand.inkSoft)
-        }
-        .frame(maxWidth: .infinity)
     }
 
     private var topSpecies: [String] {

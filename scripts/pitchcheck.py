@@ -135,7 +135,9 @@ FENCE = re.compile(r"^```[a-z]*\n(.*?)^```", re.M | re.S)
 # tier introduces later. I had written copy from the WEBSITE and the PLANS
 # rather than from the build, and it was addressed to Apple.
 #
-# Keep this list in step with Launch.swift. A word here is not banned outright,
+# Walks, the season story and Plus were set aside from the app on 2026-11-04
+# (DECISIONS.md), so they are not in Launch.swift any more and stay on this
+# list until they come back. A word here is not banned outright,
 # because a nomination may legitimately say a thing is coming; it is flagged so
 # the claim has to be deliberate rather than absent-minded.
 HIDDEN_FEATURES = re.compile(
@@ -260,10 +262,10 @@ def check(text, label="text"):
                          m.group(0)))
         for m in HIDDEN_FEATURES.finditer(body):
             hits.append(("a feature the shipped app does not have",
-                         "walks, the season story, alerts, badges and offline sit "
-                         "behind flags in Kit/Launch.swift that are OFF for every "
-                         "real user; they are what Plus introduces. Check the "
-                         "build, not the website or the plan.",
+                         "walks, the season story, alerts, badges and offline are "
+                         "not in the app any real user has (set aside on "
+                         "2026-11-04). Check the build, not the website or the "
+                         "plan.",
                          " ".join(m.group(0).split())[:90]))
         for word, why in copy_rules.offences(body):
             hits.append(("banned in all copy", why, word))

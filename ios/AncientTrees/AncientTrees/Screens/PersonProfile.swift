@@ -63,7 +63,7 @@ struct PersonProfileView: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $signingIn) {
             // Names the person (2026-10-28), as the website's sheet does.
-            SignInSheet(reason: profile.map { .follow($0.display_name) } ?? .general, localCount: 0)
+            SignInSheet(reason: profile.map { .follow($0.display_name) } ?? .general)
         }
         .task { await load() }
     }

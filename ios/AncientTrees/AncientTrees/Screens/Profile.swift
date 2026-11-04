@@ -129,8 +129,7 @@ struct ProfileView: View {
         .sheet(isPresented: $showingAccount) { accountSheet }
         .sheet(isPresented: $showingLegal) { legalSheet }
         .sheet(isPresented: $signingIn) {
-            SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
-                        localCount: saved.savedCount)
+            SignInSheet(reason: .general)
                 .environment(account).environment(saved)
         }
     }
@@ -351,41 +350,6 @@ struct ProfileView: View {
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("profile-privacy")
-                }
-                if Launch.plus {
-                Divider().padding(.leading, 48)
-                LockedRow(feature: .seasonAlerts, lockGlyph: false) {
-                    HStack(spacing: 12) {
-                        Image(systemName: "bell").frame(width: 20).foregroundStyle(Brand.moss)
-                        Text("Season alerts").font(.callout).foregroundStyle(Brand.ink)
-                        Spacer()
-                        // "Coming soon" beside the tier, because the tier is not
-                        // open (Hidde, 2026-08-25: "bij offline maps en season
-                        // alerts mag je coming soon plus zetten"). A bare Plus
-                        // chip on a row that cannot be bought reads as a thing
-                        // you are missing out on rather than a thing being built.
-                        Text("Coming soon").font(.caption).foregroundStyle(Brand.inkSoft)
-                        Chip(text: "Plus", tint: Brand.goldInk)
-                    }
-                    .padding(.horizontal, 16).frame(height: 48)
-                }
-                Divider().padding(.leading, 48)
-                // Offline sits under Plus with the alerts, which is where he
-                // put it on 2026-08-25 ("je zou offline maps bij season alert
-                // kunnen zetten, dat het ook onder plus valt"). It is a row
-                // rather than a switch because there is nothing to switch on
-                // yet: tapping says so and counts that you asked.
-                LockedRow(feature: .offlineDownload, lockGlyph: false) {
-                    HStack(spacing: 12) {
-                        Image(systemName: "arrow.down.circle")
-                            .frame(width: 20).foregroundStyle(Brand.moss)
-                        Text("Offline maps").font(.callout).foregroundStyle(Brand.ink)
-                        Spacer()
-                        Text("Coming soon").font(.caption).foregroundStyle(Brand.inkSoft)
-                        Chip(text: "Plus", tint: Brand.goldInk)
-                    }
-                    .padding(.horizontal, 16).frame(height: 48)
-                }
                 }
                 // The "What Plus will be" row is gone (Hidde, 2026-08-25: "je
                 // mag de what is plus sectie in het profiel weghalen"). It was

@@ -26,20 +26,8 @@ import Observation
 @MainActor
 @Observable
 public final class Navigator {
-    /// A tree id somebody wants to see on the map. ContentView switches tabs on
-    /// it, MapTab selects it and clears it.
-    public var showOnMap: String?
-
-    /// A walk somebody wants to WALK, by city slug and name. The root turns it
-    /// into the full-screen Begin mode and clears it, the same shape as
-    /// showOnMap, so a walk card anywhere can start one without every screen
-    /// owning a copy of that screen.
-    public struct WalkRef: Equatable { public let city: String; public let name: String
-        public init(city: String, name: String) { self.city = city; self.name = name } }
-    public var beginWalk: WalkRef?
-
     /// A tab somebody wants to be on. Set by whoever offers the shortcut,
-    /// cleared by the root, same shape as showOnMap.
+    /// cleared by the root.
     public var selectTab: Int?
 
     /// Somewhere to PUSH on whichever tab is showing. Set by anything that
@@ -76,16 +64,6 @@ public final class Navigator {
     }
     public var snack: Snack?
 
-    /// A CITY somebody wants to see on the map, by slug. The same shape as
-    /// showOnMap and for the same reason: a city page's map preview is a way to
-    /// the map rather than a second map, and until 2026-08-25 it was neither,
-    /// because it carried allowsHitTesting(false) and nothing else (Hidde:
-    /// "dan kan ik niet op de kaart klikken... als je zoekt in de map op
-    /// Barcelona, je op de Barcelona-pagina in de map komt").
-    ///
-    /// A slug rather than a tree id, so the map frames the whole city instead
-    /// of selecting one arbitrary trunk in it.
-    public var showCityOnMap: String?
     /// A real town with none of our trees, chosen in Discover's search: the
     /// map looks at it and its sheet asks for the first tree (2026-10-25).
     var showPlaceOnMap: PlaceOnMap?

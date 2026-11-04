@@ -1,27 +1,15 @@
-// The launch switchboard. Hidde, 2026-08-26 (DECISIONS.md): the app launches
-// free with no reference to Plus anywhere, without walks and without the
-// season story, because what is held back is what Plus later introduces, and
-// what ships free can never be taken away again.
+// The launch switchboard: what a store build shows that a launch argument can
+// change, so the screenshot sweep, the layout gate and a development build can
+// still open what a user reaches only by hand.
 //
-// HIDDEN is the default and the launch state. Nothing is deleted: the walks
-// cron keeps planning routes into the feed, the phenology data keeps
-// travelling, and every screen behind these flags stays in the build, because
-// Plus inherits all of it. The -show-* arguments exist so the screenshot
-// sweep, the layout gate and a development build can still open what a user
-// cannot; flipping a flag for real users is the Plus introduction, which is
-// his call, not a build detail.
+// The walks, season and Plus flags that stood here went on 2026-11-04 with the
+// code behind them (Hidde: "set the code aside - we will come back to this but
+// probably completely in a new way"). DECISIONS.md names the files and the
+// last commit that still has them.
 
 import Foundation
 
 public enum Launch {
-    /// The walks: shelves, chips and discovery. Deep links (-open=walk, -begin)
-    /// stay live regardless, so the UI tests and the sweep keep working.
-    public static let walks = ProcessInfo.processInfo.arguments.contains("-show-walks")
-    /// The season story: the gold peaking pins and their breathing halo.
-    public static let season = ProcessInfo.processInfo.arguments.contains("-show-season")
-    /// Every Plus-labelled row and chip.
-    public static let plus = ProcessInfo.processInfo.arguments.contains("-show-plus")
-
     /// The typed email route on the sign-in sheet.
     ///
     /// HIDDEN FOR 1.0, and for a reason outside our own code. It calls
@@ -38,7 +26,7 @@ public enum Launch {
     /// all, and Google needs only a provider switch he was already going to
     /// flip. A signed-out person on iOS always has an Apple ID.
     ///
-    /// NOTHING IS DELETED, the same rule the flags above run on. sendCode,
+    /// NOTHING IS DELETED. sendCode,
     /// verify and the whole code screen stay in the build and -show-email still
     /// opens them, so the sweep and the layout gate keep seeing the screen. The
     /// day SMTP exists this is one line back.
@@ -76,7 +64,7 @@ public enum Launch {
     /// link route (Account.signInFromLink, /auth in the site's AASA) needs no
     /// digits and no SMTP, so it is what the sent screen describes.
     ///
-    /// NOTHING IS DELETED, the same rule every flag here runs on: the field,
+    /// NOTHING IS DELETED: the field,
     /// the Sign in button and Account.verify(code:) all stay in the build, and
     /// the day custom SMTP exists this is one line back rather than a rebuild.
     public static let emailCode = ProcessInfo.processInfo.arguments.contains("-show-email-code")

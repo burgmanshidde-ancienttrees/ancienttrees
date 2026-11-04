@@ -181,7 +181,7 @@ struct ContributeView: View {
                 if !account.isSignedIn { signingIn = true }
             }
             .sheet(isPresented: $signingIn) {
-                SignInSheet(reason: .feedback, localCount: 0)
+                SignInSheet(reason: .feedback)
             }
         }
     }

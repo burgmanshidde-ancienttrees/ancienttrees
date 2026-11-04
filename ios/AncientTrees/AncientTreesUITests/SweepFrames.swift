@@ -52,7 +52,6 @@ final class SweepFrames: XCTestCase {
         ("collect-voted", ["-collect", "-collect-ticked", "-collect-voted"], "collect-note-field"),
         ("collect-compare", ["-collect", "-collect-compare"], "collect-this-is-the-one"),
         ("collect-describe", ["-collect", "-collect-describe", "-signed-in"], "draft-save"),
-        ("walk-begin",   ["-begin=amsterdam|Plantage"], "walk-mode"),
         ("search",       ["-search=lis"], nil),
         // "collection-tab", matching appsweep.py. It said "yours" here and
         // "collection" there, for the same tab, which is how these two lists
@@ -68,10 +67,9 @@ final class SweepFrames: XCTestCase {
         ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),
         ("city",         ["-tab=0", "-open=city:aarhus"], nil),
-        ("city-map-full", ["-tab=0", "-open=citymap:aarhus", "-sheet=full"], nil),
+        ("city-map-full", ["-tab=0", "-open=city:aarhus", "-sheet=full"], nil),
         ("species",      ["-tab=0", "-open=species:Aleppo Pine"], nil),
         ("collection",   ["-tab=0", "-open=collection:ancient-oaks-of-europe"], nil),
-        ("walk",         ["-tab=0", "-open=walk:aarhus|Moesgård / Højbjerg"], nil),
         ("place-pin",    ["-tab=0", "-open=tree:ath_004", "-placepin"], nil),
         // A TREE YOU ADDED YOURSELF, which no list here had (2026-09-01).
         // It is the same page as the one above with a different half of it
@@ -86,7 +84,6 @@ final class SweepFrames: XCTestCase {
         ("review-ask",   ["-tab=0", "-review-ask"], nil),
         ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
         ("signin-email", ["-tab=0", "-signin", "-show-email"], "signin-sheet"),
-        ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
         ("refused",      ["-tab=0", "-refused"], "permission-recovery-location"),
         ("contribute",   ["-tab=2", "-settings", "-contribute"], "contribute-sheet"),
         ("feedback",     ["-tab=2", "-settings", "-feedback"], "contribute-sheet"),

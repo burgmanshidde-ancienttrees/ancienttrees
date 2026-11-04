@@ -29,7 +29,7 @@ row of chips runs off the edge. A layout that survives the SE survives anything.
 It is created on demand: the simulator list on this Mac has no SE by default.
 
 WHY LAUNCH ARGUMENTS RATHER THAN TAPS. simctl cannot tap. Every screen in this
-app is reachable with -tab, -open, -signin, -paywall and -contribute,
+app is reachable with -tab, -open, -signin and -contribute,
 which is debug scaffolding that exists for exactly this reason. A screen that
 cannot be opened by an argument is a screen that ships unseen, so when you add
 one, add its argument too.
@@ -214,21 +214,18 @@ def pick_subjects():
     of Bernardinai Garden".
     """
     trees = json.loads((DATA / "trees.json").read_text())["trees"]
-    walks = json.loads((DATA / "walks.json").read_text())["walks"]
     browse = json.loads((DATA / "browse.json").read_text())
 
     with_photo = [t for t in trees if t.get("photo")]
     without = [t for t in trees if not t.get("photo")]
     longest = lambda xs: max(xs, key=lambda t: len(t["name"]))
 
-    walk = walks[0]
     return {
         "tree": longest(with_photo)["id"],
         "tree_nophoto": longest(without)["id"],
         "city": trees[0]["city_slug"],
         "species": browse["species"][0]["name"],
         "collection": browse["collections"][0]["slug"],
-        "walk": f'{walk.get("city_slug") or walk.get("city")}|{walk["name"]}',
     }
 
 
@@ -263,12 +260,6 @@ def screens(sub):
         # so it had never been photographed or measured once.
         ("collect-describe", ["-collect", "-collect-describe", "-signed-in"], 6),
         ("search",        ["-search=lis"], 5),
-        # 12, not 7. This walk has no cached route, so since 2026-08-25 it
-        # asks Valhalla for one before the line can be drawn, and on the SE the
-        # old wait photographed a white screen. A blank screenshot in this
-        # folder is worse than a slow sweep: somebody goes looking for a bug
-        # that is a stopwatch.
-        ("walk-begin",    ["-begin=amsterdam|Plantage"], 12),
         # Tab 3 is the Collection and tab 4 is Profile since 2026-08-24, when
         # the bar went to five slots so the camera could have a middle.
         #
@@ -303,10 +294,9 @@ def screens(sub):
         # A city opens on its map since 2026-10-17, so "city" is the map page
         # with its sheet at half; the old separate city-map row was the same.
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 7),
-        ("city-map-full", ["-tab=0", f'-open=citymap:{sub["city"]}', "-sheet=full"], 7),
+        ("city-map-full", ["-tab=0", f'-open=city:{sub["city"]}', "-sheet=full"], 7),
         ("species",       ["-tab=0", f'-open=species:{sub["species"]}'], 5),
         ("collection",    ["-tab=0", f'-open=collection:{sub["collection"]}'], 5),
-        ("walk",          ["-tab=0", f'-open=walk:{sub["walk"]}'], 7),
         ("place-pin",     ["-tab=0", f'-open=tree:{sub["tree"]}', "-placepin"], 8),
         # A TREE YOU ADDED YOURSELF, added 2026-09-01. The end of the add
         # flow, and until now the one page in the app that no argument here
@@ -330,7 +320,6 @@ def screens(sub):
         # anyway, because a screen that stays in the build and is never looked at
         # rots, and this one comes back the day custom SMTP exists.
         ("signin-email",  ["-tab=0", "-signin", "-show-email"], 5),
-        ("paywall",       ["-tab=0", "-paywall"], 5),
         # The way back after a refusal. It cannot be reached any other way here,
         # because a simulator will not deny a permission on request from inside
         # a sweep, so without this argument the screen ships unlooked at.

@@ -1009,13 +1009,6 @@ struct TreeDetail: View {
         .buttonStyle(.plain)
     }
 
-    /// The tree, and whatever else of ours is within a few streets, because the
-    /// second most useful thing after "where is it" is "is it worth the trip on
-    /// its own or are there three more round the corner".
-    private var nearbyTrees: [Tree] {
-        catalogue.nearest(to: tree.lat, tree.lng, limit: 8, withinKm: 0.5).map(\.tree)
-    }
-
     /// The empty photograph, and it is deliberately QUIET (Hidde, 2026-08-26:
     /// "deze manier van een plaatje tonen en een knop is compleet weird").
     ///
@@ -2147,7 +2140,7 @@ struct TreeDetail: View {
                            extra: { noteFields })
             }
             .sheet(isPresented: $noteSignIn, onDismiss: { if account.isSignedIn { openNote() } }) {
-                SignInSheet(reason: .feedback, localCount: 0)
+                SignInSheet(reason: .feedback)
             }
             // No identifier on the stack: one there is inherited by every
             // child and hides the button's own (seen in SignedOutWalk).

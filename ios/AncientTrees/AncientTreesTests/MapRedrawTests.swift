@@ -4,8 +4,8 @@
 // Until then a catalogue refresh that corrected a coordinate, gave a tree its
 // first photograph (photo pins are drawn first where two collide) or fixed a
 // name reached the map only after a restart, because the redraw compared ids.
-// Your own pins compared ids too, and the route compared only its point count,
-// so two walks of the same length kept the first one's line.
+// Your own pins compared ids too. (The walk route's own test went with the
+// walks on 2026-11-04.)
 //
 // The fast path stays where it was (same array, same storage, nothing to do);
 // these tests pin the comparison behind it.
@@ -80,16 +80,5 @@ struct TheMapRedrawsWhatChanged {
         #expect(still != moved)
         #expect(still != shot)
         #expect(still == again)
-    }
-
-    @Test func twoWalksOfTheSameLengthAreTwoLines() {
-        let a = [CLLocationCoordinate2D(latitude: 1, longitude: 1),
-                 CLLocationCoordinate2D(latitude: 2, longitude: 2)]
-        let b = [CLLocationCoordinate2D(latitude: 1, longitude: 1),
-                 CLLocationCoordinate2D(latitude: 3, longitude: 3)]
-        #expect(TreeMap.sameRoute(a, true, a, true))
-        #expect(!TreeMap.sameRoute(a, true, b, true))
-        #expect(!TreeMap.sameRoute(a, true, a, false))
-        #expect(!TreeMap.sameRoute(a, true, [], true))
     }
 }

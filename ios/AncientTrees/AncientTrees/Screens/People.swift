@@ -353,7 +353,7 @@ struct PeopleView: View {
                 Task { await loadFollowing(); await loadSuggestions() }
             }
             .sheet(isPresented: $signingIn) {
-                SignInSheet(reason: .general, localCount: 0)
+                SignInSheet(reason: .general)
                     .environment(account)
             }
             .task(id: source) {

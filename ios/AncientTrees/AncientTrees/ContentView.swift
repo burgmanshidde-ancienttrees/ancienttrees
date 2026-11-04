@@ -2,15 +2,14 @@
 // 2026-08-20 evening after two earlier same-day layouts; the full reasoning
 // lives in DECISIONS.md and the reading is short: left looks (free), the
 // centre contributes (free, and it is a BUTTON rather than a place), right
-// owns (where Plus lives).
+// owns.
 //
 // Map is the tool ("I am here") and Explore is the FEED ("I am on the couch"):
 // two tabs rather than one behind a pill, which is the Komoot split and gives
 // the inspiration shelves an address instead of a toggle. Saved is gone as a
 // tab: hearts and ticks are one idea, so Collect carries both as segments.
 // Spot is the Strava/Untappd centre pattern: selecting it presents a sheet and
-// the bar stays where it was. WALK stays a filter on the map and SEASON a
-// pulse on the pins, exactly as before.
+// the bar stays where it was.
 
 import SwiftUI
 import CoreLocation
@@ -30,7 +29,6 @@ struct ContentView: View {
         s.seedWantFromLaunchArguments()
         return s
     }()
-    @State fileprivate var entitlement = Entitlement()
     /// The opening frame, on a cold start only. A `@State` on the root is
     /// exactly that: the root is built once per launch and never again when
     /// somebody comes back from the home screen.
@@ -110,16 +108,14 @@ struct ContentView: View {
     /// booleans so there is exactly one sheet modifier below.
     enum RootSheet: Identifiable, Equatable {
         case signIn(SignInReason)
-        case paywall(Feature)
         /// The centre button's sheet. A case here rather than its own boolean
         /// because SwiftUI honours one sheet modifier per view, which is the
         /// whole reason this enum exists.
-        case spot(CollectSheet.Mode)
+        case spot
         var id: String {
             switch self {
             case .signIn(let r): "signin-" + r.id
-            case .paywall(let f): "paywall-" + f.rawValue
-            case .spot(let m): "spot-" + m.rawValue
+            case .spot: "spot-collect"
             }
         }
     }
@@ -158,9 +154,7 @@ struct ContentView: View {
     }
 
     /// `-open=tree:lon_001`, `-open=city:london`, `-open=species:Pedunculate Oak`,
-    /// `-open=collection:europe`, `-open=walk:london|The City churchyards`.
-    /// The walk separator is a pipe because a walk needs two values and a
-    /// colon already separates the kind.
+    /// `-open=collection:europe`.
     static func debugRoute(_ spec: String) -> Route? {
         guard let colon = spec.firstIndex(of: ":") else { return nil }
         let kind = String(spec[spec.startIndex..<colon])
@@ -171,12 +165,6 @@ struct ContentView: View {
         case "collection": return .collection(value)
         case "species": return .species(value)
         case "country": return .country(value)
-        // The pushed place map, which is otherwise only reachable by tapping
-        // the preview on a city or a country page. Same rule as every other
-        // argument here: a screen no argument can open is a screen that ships
-        // unlooked at.
-        case "citymap": return .placeMap(.city(value))
-        case "countrymap": return .placeMap(.country(value))
         // A single tree's own map, otherwise reached only by tapping the inset
         // on its page. Added 2026-08-29 so the recentre test can reach it:
         // it was the last full map in the app no argument could open, which is
@@ -193,10 +181,6 @@ struct ContentView: View {
         // Reuses the same demo ids as "mine" so -mine-demo seeds something to
         // point at.
         case "shared": return UUID(uuidString: value).map { Route.shared($0) }
-        case "walk":
-            let parts = value.split(separator: "|", maxSplits: 1).map(String.init)
-            guard parts.count == 2 else { return nil }
-            return .walk(city: parts[0], name: parts[1])
         default: return nil
         }
     }
@@ -285,7 +269,7 @@ struct ContentView: View {
     /// uitzondering hoeft van mij niet"): reading the page on the way there
     /// is exactly when arriving is worth a word. Tapping it there collects.
     private func checkNearby() {
-        guard locationState.known, navigator.beginWalk == nil, rootSheet == nil,
+        guard locationState.known, rootSheet == nil,
               nearby == nil,
               let cat = store.catalogue,
               let hit = cat.nearest(to: origin.lat, origin.lng, limit: 50, withinKm: 0.05)
@@ -420,10 +404,10 @@ struct ContentView: View {
         // the tap, so a photograph already taken on a tree page was lost to
         // the sign-in.
         guard account.isSignedIn else {
-            nudge.require(.general) { rootSheet = .spot(.collect) }
+            nudge.require(.general) { rootSheet = .spot }
             return
         }
-        rootSheet = .spot(.collect)
+        rootSheet = .spot
     }
 
     /// One tab's navigation stack, with every destination in this app declared
@@ -448,13 +432,6 @@ struct ContentView: View {
         }
     }
 
-    /// Begin mode, built here so the TabView's own modifier chain stays inside
-    /// the type-checker's budget (it went over the moment this was inline).
-    private func walkMode(_ w: Walk, _ cat: Catalogue) -> some View {
-        WalkMode(walk: w, catalogue: cat, origin: origin)
-            .appObjects(self)
-    }
-
     /// Looked up by id at render time on purpose: the catalogue can be replaced
     /// under an open screen now that the app downloads a newer one, and a view
     /// holding a stale struct would quietly keep showing yesterday's story.
@@ -473,12 +450,6 @@ struct ContentView: View {
                 ContentUnavailableView("That tree is no longer on the map",
                                        systemImage: "tree",
                                        description: Text("It may have been removed after a correction."))
-            }
-        case .walk(let city, let name):
-            if let w = cat.walks(inCity: city).first(where: { $0.name == name }) {
-                WalkDetail(walk: w, catalogue: cat)
-            } else {
-                ContentUnavailableView("That walk is gone", systemImage: "figure.walk")
             }
         case .collection(let slug):
             if let c = cat.collections.first(where: { $0.slug == slug }) {
@@ -515,30 +486,22 @@ struct ContentView: View {
             PersonProfileView(userId: id, catalogue: cat)
         case .findPeople:
             PeopleView(catalogue: cat)
-        case .collectionMap:
-            CollectionMapPage(catalogue: cat)
-        case .placeMap(let place):
-            PlaceMapPage(place: place, catalogue: cat)
         case .treeMap(let id):
             if let t = cat.tree(id) {
                 TreeMapPage(tree: t, catalogue: cat)
             } else {
                 ContentUnavailableView("That tree is gone", systemImage: "leaf")
             }
-        case .country(let name):
-            // A COUNTRY IS ITS MAP TOO (Hidde, 2026-11-03: "the intended
-            // country page is already live when you click on expand map -
-            // just go straight there"), as a city has been since 10-17.
-            PlaceMapPage(place: .country(name), catalogue: cat)
         case .species(let name):
             SpeciesView(commonName: name, catalogue: cat, origin: origin)
-        case .city(let slug):
-            // A CITY IS ITS MAP (Hidde, 2026-10-17: "die twee paginas zijn
-            // bijna hetzelfde en met interactieve kaart veel beter"). The city
-            // page was a picture of the map over a list, and its one control
-            // pushed this page, which held the same list under a real map. The
-            // website's city page has been the map all along.
-            PlaceMapPage(place: .city(slug), catalogue: cat)
+        case .city, .country:
+            // A CITY OR A COUNTRY IS THE MAP TAB (Hidde, 2026-11-04: one map
+            // screen for every place). navigator.push sends them there, and
+            // one pushed by a NavigationLink is taken off its stack again in
+            // the same update (redirectPlace), so this page is never stood on.
+            // The pushed city page that used to be here, PlaceMapPage, was set
+            // aside the same day (DECISIONS.md).
+            Color.clear.brandGround()
         }
     }
 
@@ -788,13 +751,9 @@ struct ContentView: View {
                 navigator.selectTab = nil
             }
         }
-        .onChange(of: navigator.showCityOnMap) { _, new in
-            // Same handling as showOnMap below: pop the map's stack and
-            // go there. MapTab frames the city and clears the request.
-            if new != nil { mapPath = []; tab = 0 }
-        }
         .onChange(of: navigator.showPlaceOnMap) { _, new in
-            // The same, for a town we hold no trees in (2026-10-25).
+            // Pop the map's stack and go there, for a town we hold no trees
+            // in (2026-10-25). MapTab frames it and clears the request.
             if new != nil { mapPath = []; tab = 0 }
         }
         .onChange(of: navigator.searchOnMap) { _, new in
@@ -807,18 +766,9 @@ struct ContentView: View {
         .onChange(of: explorePath) { _, p in redirectPlace(p, 1) }
         .onChange(of: collectPath) { _, p in redirectPlace(p, 2) }
         .onChange(of: mapPath) { _, p in redirectPlace(p, 0) }
-        .onChange(of: navigator.showOnMap) { _, new in
-            // POP the map's own stack as well. The tree page you
-            // tapped the inset on is usually pushed ON the map tab, so
-            // switching to tab 0 left you looking at the same page and
-            // the little map read as a dead control (Hidde,
-            // 2026-08-21: "als ik op het kaartje klik opent hij niet").
-            if new != nil { mapPath = [] }
-            if new != nil { tab = 0 }
-        }
     }
 
-    /// The sheets and the walk cover over everything.
+    /// The sheets over everything.
     private func presented(_ cat: Catalogue) -> some View {
         routed(cat)
         // ONE sheet modifier, driven by one optional, because SwiftUI
@@ -830,10 +780,8 @@ struct ContentView: View {
             Group {
                 switch which {
                 case .signIn(let reason):
-                    SignInSheet(reason: reason, localCount: saved.savedCount)
-                case .paywall(let feature):
-                    PaywallView(feature: feature)
-                case .spot(let mode):
+                    SignInSheet(reason: reason)
+                case .spot:
                     // The tree the camera was opened from lasts exactly
                     // as long as this sheet. Without the reset, tapping
                     // the camera on Old Tjikko and then opening the
@@ -848,7 +796,7 @@ struct ContentView: View {
                     // reasonable time", 2026-09-04), while Xcode 26 on
                     // this desk compiled it fine. Same effect, and a
                     // small expression the type-checker can hold.
-                    CollectSheet(catalogue: cat, origin: origin, mode: mode,
+                    CollectSheet(catalogue: cat, origin: origin,
                                  about: navigator.collectAbout,
                                  addsPhoto: navigator.collectAddsPhoto,
                                  knownTree: navigator.collectTree,
@@ -871,25 +819,13 @@ struct ContentView: View {
             // view a sheet might contain can read any of these.
             .appObjects(self)
         }
-        // DERIVED from the request rather than mirrored into a second
-        // piece of state. The mirror version lost the launch argument
-        // every time: -begin sets the request in the same update in
-        // which the TabView first exists, and an onChange registered by
-        // that same update never sees it as a change. A binding cannot
-        // miss it, because there is nothing to miss.
-        .fullScreenCover(item: Binding(
-            get: { navigator.beginWalk.flatMap { r in
-                cat.walks(inCity: r.city).first { $0.name == r.name } } },
-            set: { if $0 == nil { navigator.beginWalk = nil } })) { w in
-            walkMode(w, cat)
-        }
         .onChange(of: nudge.pending) { _, new in
             if let new { rootSheet = .signIn(new); nudge.pending = nil }
         }
         // WHICH MAPS APP, asked once, from the ROOT. Presented here
         // rather than from the button because Take me there exists on a
-        // tree page, on the pushed map and inside walk mode, and a
-        // dialog attached to each would be three to keep in step.
+        // tree page and on the pushed map, and a dialog attached to each
+        // would be two to keep in step.
         //
         // AN ALERT, NOT A confirmationDialog, and the first version was
         // the second one. iOS 26 draws a confirmationDialog as a
@@ -1168,21 +1104,11 @@ struct ContentView: View {
                     try? await Task.sleep(for: .seconds(1))
                     reviewPrompt.pending = true
                 }
-            } else if args.contains("-paywall") {
-                rootSheet = .paywall(.walkBeyondFirst)
-            } else if let spec = args.first(where: { $0.hasPrefix("-begin=") })?.dropFirst(7) {
-                // Debug scaffolding like -spot: Begin is only reachable by
-                // tapping, and simctl has no finger. Routed through the
-                // navigator because the catalogue is not in scope here.
-                let parts = spec.split(separator: "|", maxSplits: 1).map(String.init)
-                if parts.count == 2 {
-                    navigator.beginWalk = .init(city: parts[0], name: parts[1])
-                }
             } else if args.contains("-spot") || args.contains("-add") || args.contains("-collect") {
                 // The centre button's sheet, openable without a finger.
-                rootSheet = .spot(.collect)
+                rootSheet = .spot
             } else if args.contains("-collect-tree") {
-                rootSheet = .spot(.collect)
+                rootSheet = .spot
             }
             // -map is kept as an alias for the map tab so older recipes and
             // the sweep lists keep working after the map became tab 0.
@@ -1263,17 +1189,6 @@ struct ContentView: View {
                     units.unit = remote == "mi" ? .imperial : .metric
                 }
             }
-        }
-    }
-}
-
-struct NothingNearby: View {
-    let catalogue: Catalogue
-    var body: some View {
-        ContentUnavailableView {
-            Label("No trees near you yet", systemImage: "tree")
-        } description: {
-            Text("None of our trees is within fifty kilometres of you.")
         }
     }
 }
@@ -1377,7 +1292,6 @@ extension View {
     func appObjects(_ root: ContentView) -> some View {
         self.environment(root.saved)
             .environment(root.store)
-            .environment(root.entitlement)
             .environment(root.account)
             .environment(root.nudge)
             .environment(root.reviewPrompt)

@@ -1,8 +1,6 @@
 // The map, on MapLibre since 2026-08-23, and the reason is offline rather than
-// looks. The paywall sells "Download interactive maps and routes to explore with
-// confidence, even deep in the woods", Entitlement.swift already carries
-// Feature.offlineDownload with the ask "Keep this city in your pocket", and
-// MapKit has no API for any of it: Apple's tiles cannot be pre-downloaded and
+// looks. Offline maps were the plan, and MapKit has no API for them: Apple's
+// tiles cannot be pre-downloaded and
 // their terms do not permit caching them. MapLibre can, and it renders the same
 // style file the website does, from the same OpenFreeMap tiles.
 //
@@ -11,7 +9,7 @@
 //
 // The public interface of TreeMap is deliberately UNCHANGED from the MapKit
 // version, MKCoordinateRegion included. That struct is just a centre and a span,
-// it ships with iOS, and keeping it meant MapTab, WalkMode and TreeDetail did
+// it ships with iOS, and keeping it meant MapTab and TreeDetail did
 // not have to be touched at all. Only the rendering moved.
 //
 // WHICH PINS SHOW is the thing to check first on any change here: since
@@ -83,10 +81,6 @@ struct TreeMap: UIViewRepresentable {
     /// city, a walk, your own collection. Those have their answer from the
     /// start and must never be re-aimed.
     var focusIsFix = false
-    /// A walk's line. Real when route_walks.py cached a routed shape, otherwise
-    /// the order the trees are visited, which is NOT the path a walker takes.
-    var route: [CLLocationCoordinate2D] = []
-    var routeIsReal = true
     /// The control that puts the map back: you in the middle, north at the top.
     ///
     /// ON BY DEFAULT since 2026-08-29, and that is the whole rule (Hidde: "die
@@ -357,8 +351,7 @@ struct TreeMap: UIViewRepresentable {
             context.coordinator.mapView(map, regionDidChangeAnimated: false)
         }
 
-        context.coordinator.sync(trees: trees, mine: mine, route: route,
-                                 routeIsReal: routeIsReal, declutter: declutter, on: map)
+        context.coordinator.sync(trees: trees, mine: mine, declutter: declutter, on: map)
         if let style = map.style { MapLayers.select(selected?.id, on: style) }
     }
 
@@ -472,7 +465,6 @@ struct TreeMap: UIViewRepresentable {
         let lng: Double
         let name: String
         let species: String
-        let peak: Peak?
         let paid: Bool
         let photo: Bool
         let saves: Int
@@ -485,7 +477,7 @@ struct TreeMap: UIViewRepresentable {
                          favourites: Set<String>) -> Set<TreeDrawKey> {
         Set(trees.map { t in
             TreeDrawKey(id: t.id, lat: t.lat, lng: t.lng, name: t.name,
-                        species: t.species, peak: t.peak, paid: t.paidEntry,
+                        species: t.species, paid: t.paidEntry,
                         photo: t.photo != nil, saves: t.saves ?? 0,
                         mini: t.mini == true,
                         collected: collected.contains(t.id),
@@ -508,16 +500,6 @@ struct TreeMap: UIViewRepresentable {
     ) -> Set<MineDrawKey> {
         Set(mine.map { MineDrawKey(id: $0.id, lat: $0.lat, lng: $0.lng,
                                    name: $0.name, photo: $0.photo != nil) })
-    }
-
-    /// Whether two routes draw the same line: every point, not the count, so
-    /// two walks of equal length do not keep the first one's line.
-    static func sameRoute(_ a: [CLLocationCoordinate2D], _ aReal: Bool,
-                          _ b: [CLLocationCoordinate2D], _ bReal: Bool) -> Bool {
-        guard a.count == b.count, aReal == bReal else { return false }
-        for i in a.indices where a[i].latitude != b[i].latitude
-            || a[i].longitude != b[i].longitude { return false }
-        return true
     }
 
     /// The smallest box holding every one of these, or nil when there are none.
@@ -560,8 +542,6 @@ struct TreeMap: UIViewRepresentable {
         private var styleReady = false
         private var pending: (trees: [Tree],
                               mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
-                              route: [CLLocationCoordinate2D],
-                              routeIsReal: Bool,
                               declutter: Bool)?
         private var drawnTreeIDs: Set<TreeMap.TreeDrawKey> = []
         /// The very array, saved and collected sets last drawn, so an update
@@ -570,16 +550,12 @@ struct TreeMap: UIViewRepresentable {
         private var drawnCollected: Set<String> = []
         private var drawnFavourites: Set<String> = []
         private var drawnMineIDs: Set<TreeMap.MineDrawKey> = []
-        private var drawnRoute: [CLLocationCoordinate2D] = []
-        private var drawnRouteIsReal = false
-        private var breath: Timer?
         /// The constraint that keeps the recentre control above the sheet.
         var recentreLift: NSLayoutConstraint?
         /// And the control itself, so it can fade rather than be destroyed.
         weak var recentreView: UIView?
 
         init(_ p: TreeMap) { parent = p }
-        deinit { breath?.invalidate() }
 
         // MARK: permission
 
@@ -616,22 +592,18 @@ struct TreeMap: UIViewRepresentable {
             if styleReady {
                 drawnTreeIDs = []
                 drawnMineIDs = []
-                drawnRoute = []
                 pending = (trees: parent.trees, mine: parent.mine,
-                           route: parent.route, routeIsReal: parent.routeIsReal,
                            declutter: parent.declutter)
             }
             MapLayers.install(on: style, declutter: parent.declutter)
             styleReady = true
             if let p = pending {
                 pending = nil
-                sync(trees: p.trees, mine: p.mine, route: p.route,
-                     routeIsReal: p.routeIsReal, declutter: p.declutter, on: map)
+                sync(trees: p.trees, mine: p.mine, declutter: p.declutter, on: map)
             }
             // A tree chosen before the style existed (the tree page's own map
             // opens with it selected) was aimed at no layer; aim it now.
             MapLayers.select(parent.selected?.id, on: style)
-            startBreathing(on: style)
             }
         }
 
@@ -644,48 +616,14 @@ struct TreeMap: UIViewRepresentable {
             }
         }
 
-        /// A tree having its moment right now is gold and it breathes (Hidde,
-        /// 2026-08-20: "als ze in bloei staan, zie je ze een beetje pulseren").
-        ///
-        /// On MapKit each pin was its own view and carried its own CALayer scale
-        /// animation. A style layer cannot: iconScale is a LAYOUT property in
-        /// MapLibre and layout properties do not animate, only paint ones do. So
-        /// the pin holds still and a soft halo breathes around it instead, on
-        /// circleRadius and circleOpacity, which are paint and transition
-        /// properly. It is arguably the better answer anyway, because the pin
-        /// stays exactly as readable while it happens.
-        ///
-        /// All the peaking pins breathe TOGETHER, since the animation belongs to
-        /// the layer rather than to each feature. On a screen with a handful of
-        /// them that reads as a tide rather than as noise.
-        ///
-        /// Reduce Motion turns it off, because a map covered in animation is
-        /// exactly what that setting exists for.
-        private func startBreathing(on style: MLNStyle) {
-            breath?.invalidate()
-            guard !UIAccessibility.isReduceMotionEnabled,
-                  let halo = style.layer(withIdentifier: MapLayers.live(MapLayers.haloLayer, on: style)) as? MLNCircleStyleLayer
-            else { return }
-            var out = true
-            breath = Timer.scheduledTimer(withTimeInterval: 1.15, repeats: true) { [weak halo] _ in
-                guard let halo else { return }
-                halo.circleRadius = NSExpression(forConstantValue: out ? 27 : 20)
-                halo.circleOpacity = NSExpression(forConstantValue: out ? 0.0 : 0.38)
-                out.toggle()
-            }
-            breath?.fire()
-        }
-
         // MARK: data
 
         func sync(trees: [Tree],
                   mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
-                  route: [CLLocationCoordinate2D],
-                  routeIsReal: Bool,
                   declutter: Bool,
                   on map: MLNMapView) {
             guard styleReady, let style = map.style else {
-                pending = (trees, mine, route, routeIsReal, declutter)
+                pending = (trees, mine, declutter)
                 return
             }
             // The collected set joins the identity of what is drawn: without
@@ -727,11 +665,6 @@ struct TreeMap: UIViewRepresentable {
             if wantMine != drawnMineIDs {
                 drawnMineIDs = wantMine
                 MapLayers.setMine(mine, on: style, declutter: declutter, zoom: map.zoomLevel)
-            }
-            if !TreeMap.sameRoute(route, routeIsReal, drawnRoute, drawnRouteIsReal) {
-                drawnRoute = route
-                drawnRouteIsReal = routeIsReal
-                MapLayers.setRoute(route, real: routeIsReal, on: style)
             }
             }
         }
@@ -788,7 +721,6 @@ struct TreeMap: UIViewRepresentable {
             // tap on its dot reaches the dot layer underneath.
             let treeHits = map.visibleFeatures(in: box,
                                                styleLayerIdentifiers: [MapLayers.live(MapLayers.treeLayer, on: style),
-                                                                       MapLayers.live(MapLayers.peakLayer, on: style),
                                                                        MapLayers.live(MapLayers.spreadLayer, on: style),
                                                                        MapLayers.live(MapLayers.dotLayer, on: style),
                                                                        MapLayers.live(MapLayers.farLayer, on: style),
@@ -1139,13 +1071,10 @@ enum MapStyle {
 @MainActor
 enum MapLayers {
     static let treeSource = "at-trees"
-    static let routeSource = "at-route"
     static let treeLayer = "at-trees-pin"
-    static let peakLayer = "at-trees-peak"
     /// The tapped tree, drawn again on top and bigger: Apple Maps grows the
     /// pin it is showing in the sheet (recorded 2026-10-18).
     static let selectedLayer = "at-trees-selected"
-    static let haloLayer = "at-trees-halo"
     /// The same-spot stack's bubble, the one bubble left on this map.
     static let stackLayer = "at-cluster"
     /// Every tree as a dot, under the pins: what shows where a pin did not fit.
@@ -1157,7 +1086,6 @@ enum MapLayers {
     /// that allows overlap: the dot rule would otherwise drop one of them.
     static let spreadLayer = "at-trees-spread"
     static let mineLayer = "at-mine-pin"
-    static let routeLayer = "at-route-line"
     /// The legs of a spread pile: thin lines from the real spot to each pin.
     static let legsSource = "at-stack-legs"
     static let legsLayer = "at-stack-legs-line"
@@ -1261,19 +1189,15 @@ enum MapLayers {
         // The small pin steps aside while its big one is drawn, or the two
         // read as a target (seen in the simulator, 2026-10-19).
         if let pins = style.layer(withIdentifier: live(treeLayer, on: style)) as? MLNSymbolStyleLayer {
-            pins.predicate = pinPredicate(peaking: false, without: id)
+            pins.predicate = pinPredicate(without: id)
         }
         if let far = style.layer(withIdentifier: live(farLayer, on: style)) as? MLNSymbolStyleLayer {
-            far.predicate = pinPredicate(peaking: false, without: id)
-        }
-        if let peak = style.layer(withIdentifier: live(peakLayer, on: style)) as? MLNSymbolStyleLayer {
-            peak.predicate = pinPredicate(peaking: true, without: id)
+            far.predicate = pinPredicate(without: id)
         }
     }
 
-    static func pinPredicate(peaking: Bool, without id: String?) -> NSPredicate {
-        NSPredicate(format: "at_kind == 'tree' AND peaking \(peaking ? "==" : "!=") YES AND %K != %@",
-                    idKey, id ?? "")
+    static func pinPredicate(without id: String?) -> NSPredicate {
+        NSPredicate(format: "at_kind == 'tree' AND %K != %@", idKey, id ?? "")
     }
 
     private static func state(for style: MLNStyle) -> StyleState {
@@ -1322,30 +1246,6 @@ enum MapLayers {
         // apply() is the only place a source is ever made, because a source
         // that has already existed under this identifier does not load: see the
         // note there.
-        let route = MLNShapeSource(identifier: routeSource, shape: nil, options: nil)
-        style.addSource(route)
-
-        // The walk goes UNDER the pins: a line drawn over a trunk hides the
-        // thing the line exists to join up.
-        let line = MLNLineStyleLayer(identifier: routeLayer, source: route)
-        line.lineColor = NSExpression(forConstantValue: moss.withAlphaComponent(0.9))
-        line.lineWidth = NSExpression(forConstantValue: 5)
-        line.lineCap = NSExpression(forConstantValue: "round")
-        line.lineJoin = NSExpression(forConstantValue: "round")
-        // A dashed line where we do not have a routed shape, because a solid
-        // line between trunks claims a path nobody checked. 78 of 179 walks
-        // carry a real route; the rest only carry an order.
-        line.predicate = NSPredicate(format: "real == YES")
-        style.addLayer(line)
-
-        let guessed = MLNLineStyleLayer(identifier: routeLayer + "-guessed", source: route)
-        guessed.lineColor = NSExpression(forConstantValue: moss.withAlphaComponent(0.55))
-        guessed.lineWidth = NSExpression(forConstantValue: 4)
-        guessed.lineCap = NSExpression(forConstantValue: "round")
-        guessed.lineDashPattern = NSExpression(forConstantValue: [0.5, 2.5])
-        guessed.predicate = NSPredicate(format: "real == NO")
-        style.addLayer(guessed)
-
         // The legs of a spread pile, also UNDER the pins: each line ends inside
         // the pin it leads to, so the pin itself is where it stops. A source of
         // its own, so spreading never touches the tree source's keys.
@@ -1379,27 +1279,20 @@ enum MapLayers {
     static func setTrees(_ trees: [Tree], on style: MLNStyle, declutter: Bool,
                          zoom: Double,
                          collected: Set<String> = [], favourites: Set<String> = []) {
-        let month = Calendar.current.component(.month, from: Date())
         var features: [MLNPointFeature] = []
         for t in trees {
             let f = MLNPointFeature()
             f.coordinate = .init(latitude: t.lat, longitude: t.lng)
             f.title = t.name
-            let peaking = Launch.season && (t.peak?.isNow(month) ?? false)
             // The glyph is the SPECIES, always, not a generic tree icon: a
             // ginkgo pin looks like a ginkgo before you tap it. It works for
             // every tree, because every tree carries a species while only a
-            // quarter carry a photograph. And when the species is having its
-            // moment, the pin takes the colour of that moment rather than one
-            // shared gold, computed on the server so this pin and the website's
-            // light up the same tree on the same day.
-            let colour = peaking
-                ? (UIColor(hex: t.peak?.colour) ?? UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
-                : moss
+            // quarter carry a photograph.
+            let colour = moss
             let seen = collected.contains(t.id)
             let ticket = t.paidEntry
             let loved = favourites.contains(t.id)
-            let name = imageName(species: t.commonName, peaking: peaking, colour: colour)
+            let name = imageName(species: t.commonName, colour: colour)
                 + (seen ? "-c" : "") + (ticket ? "-t" : "") + (loved ? "-f" : "")
             // Our own register of what has been added, rather than asking the
             // style whether it already has the image. That check drew exactly
@@ -1416,11 +1309,8 @@ enum MapLayers {
             }
             // Attributes must be values GeoJSON can hold: strings, numbers,
             // booleans. A UIColor in here made every feature invalid and the
-            // map drew ONE pin for fourteen hundred trees, silently. The peak
-            // colour still reaches the eye where it matters, baked into the pin
-            // image itself; the halo underneath takes one warm tone for all of
-            // them, which reads as a season rather than as a paint chart.
-            f.attributes = [idKey: t.id, "icon": name, "peaking": peaking,
+            // map drew ONE pin for fourteen hundred trees, silently.
+            f.attributes = [idKey: t.id, "icon": name,
                             countKey: 1, kindKey: "tree", "at_label": "",
                             "pr": pinPriority(hasPhoto: t.photo != nil, saves: t.saves ?? 0),
                             "mini": t.mini == true]
@@ -1477,7 +1367,7 @@ enum MapLayers {
         // identifiers, and the old set is retired once the new source reports
         // its points (or after a second, for an empty map). The double buffer
         // every map SDK's own docs give for swapping a GeoJSON source.
-        let old = (layers: [stackLayer, peakLayer, haloLayer, dotLayer, miniLayer, treeLayer, farLayer, spreadLayer, selectedLayer, mineLayer]
+        let old = (layers: [stackLayer, dotLayer, miniLayer, treeLayer, farLayer, spreadLayer, selectedLayer, mineLayer]
                     .map { live($0, on: style) },
                    source: st.liveSourceID)
         st.retired.append(old)
@@ -1668,7 +1558,6 @@ enum MapLayers {
             // subset of the others' properties made the whole source load as
             // empty: 974 features in, zero out, no error. Measured 2026-08-24.
             bubble.attributes = [countKey: ix.count, idKey: "",
-                                 "peaking": false,
                                  kindKey: "cluster", "at_label": String(ix.count),
                                  "icon": icon, "pr": 0]
             extra.append(bubble)
@@ -1799,7 +1688,7 @@ enum MapLayers {
         }
         let pins = MLNSymbolStyleLayer(identifier: live(treeLayer, on: style), source: trees)
         place(pins)
-        pins.predicate = pinPredicate(peaking: false, without: state(for: style).selectedID)
+        pins.predicate = pinPredicate(without: state(for: style).selectedID)
         if declutter {
             // The same pins, spaced wider, below farZoom.
             pins.minimumZoomLevel = Float(farZoom)
@@ -1820,24 +1709,6 @@ enum MapLayers {
         spread.iconAnchor = NSExpression(forConstantValue: "center")
         spread.predicate = NSPredicate(format: "at_kind == 'spread'")
         style.addLayer(spread)
-
-        // The halo goes UNDER the peaking pin and is the thing that breathes.
-        // Its colour follows the moment, same as the pin: a ginkgo's gold, a
-        // cherry's pink, from the same server-computed value the website uses.
-        let halo = MLNCircleStyleLayer(identifier: live(haloLayer, on: style), source: trees)
-        halo.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking == YES")
-        halo.circleColor = NSExpression(forConstantValue:
-            UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
-        halo.circleRadius = NSExpression(forConstantValue: 20)
-        halo.circleOpacity = NSExpression(forConstantValue: 0.38)
-        halo.circleRadiusTransition = MLNTransition(duration: 1.1, delay: 0)
-        halo.circleOpacityTransition = MLNTransition(duration: 1.1, delay: 0)
-        style.addLayer(halo)
-
-        let peak = MLNSymbolStyleLayer(identifier: live(peakLayer, on: style), source: trees)
-        place(peak)
-        peak.predicate = pinPredicate(peaking: true, without: state(for: style).selectedID)
-        style.addLayer(peak)
 
         // Matches nothing until a tree is selected; select(_:on:) aims it.
         let chosen = MLNSymbolStyleLayer(identifier: live(selectedLayer, on: style), source: trees)
@@ -1900,11 +1771,11 @@ enum MapLayers {
             // Not a style rule: a feature carrying a subset of the others'
             // properties makes the whole source load as empty, 974 features in
             // and zero out with no error anywhere (see cluster()). That is why
-            // a tree of yours carries `peaking` and `at_count` it has no use
+            // a tree of yours carries `at_count` it has no use
             // for, and it is why moving these into the shared source was a
             // one-line change away from emptying the entire map.
             f.attributes = [idKey: m.id.uuidString, "icon": icon,
-                            "peaking": false, countKey: 1,
+                            countKey: 1,
                             kindKey: "mine", "at_label": "", "pr": -1]
             return f
         }
@@ -1912,23 +1783,11 @@ enum MapLayers {
         redraw(on: style, zoom: zoom, declutter: declutter, force: true)
     }
 
-    static func setRoute(_ pts: [CLLocationCoordinate2D], real: Bool, on style: MLNStyle) {
-        guard let source = style.source(withIdentifier: routeSource) as? MLNShapeSource else { return }
-        guard pts.count > 1 else {
-            source.shape = MLNShapeCollectionFeature(shapes: [])
-            return
-        }
-        var coords = pts
-        let line = MLNPolylineFeature(coordinates: &coords, count: UInt(coords.count))
-        line.attributes = ["real": real]
-        source.shape = MLNShapeCollectionFeature(shapes: [line])
-    }
-
-    private static func imageName(species: String, peaking: Bool, colour: UIColor) -> String {
+    private static func imageName(species: String, colour: UIColor) -> String {
         var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
         colour.getRed(&r, green: &g, blue: &b, alpha: &a)
         let hex = String(format: "%02X%02X%02X", Int(r * 255), Int(g * 255), Int(b * 255))
-        return "at-pin-\(peaking ? "peak-" : "")\(hex)-\(species.replacingOccurrences(of: " ", with: "_"))"
+        return "at-pin-\(hex)-\(species.replacingOccurrences(of: " ", with: "_"))"
     }
 
     /// One pin, drawn once per species-and-colour and then cached by the style.

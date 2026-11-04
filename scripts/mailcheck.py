@@ -637,18 +637,26 @@ def check_no_unshipped_feature(path, body):
     flag flips the word is allowed again with no edit to this file. That is the
     whole point: a hand-kept list of forbidden words would still be forbidding
     walks a year after they shipped.
+
+    SET ASIDE IS STILL HIDDEN (2026-11-04). Walks, the season story and Plus
+    lost their flags that day because their code left the app altogether
+    (Hidde: "set the code aside - we will come back to this but probably
+    completely in a new way"). A missing flag must not read as shipped, so
+    those three stay forbidden here until a flag for them exists again.
     """
     root = pathlib.Path(__file__).resolve().parent.parent
     launch = root / "ios" / "AncientTrees" / "AncientTrees" / "Kit" / "Launch.swift"
     try:
         src = launch.read_text(encoding="utf-8")
     except Exception:
-        return []
+        src = ""
     # `public static let walks = ...contains("-show-walks")` means hidden unless
     # a debug argument is passed, which no real phone ever passes.
     pat = (r'public static let (\w+) = ProcessInfo\.processInfo'
            r'\.arguments\.contains\("-show-[\w-]+"\)')
     hidden = re.findall(pat, src)
+    flags = set(re.findall(r'public static let (\w+) =', src))
+    hidden += [f for f in ("walks", "season", "plus") if f not in flags and f not in hidden]
     # The FEATURE, never the verb (2026-10-09): "a bur oak people can walk up
     # to" and "worth a walk" promise nothing, and the bare \bwalks?\b refused
     # both. What names the feature: walks as a thing, a walking route, a walk
@@ -680,7 +688,7 @@ def check_no_unshipped_feature(path, body):
                 sentence = body[start:end if end > 0 else len(body)]
                 if LATER.search(sentence):
                     continue
-                out.append(("UNSHIPPED FEATURE (Kit/Launch.swift hides %s)" % flag,
+                out.append(("UNSHIPPED FEATURE (the app does not show %s)" % flag,
                             m.group(0),
                             (line[0].strip() if line else "")[:140] +
                             " -- the app does not show this to anybody yet, so a "

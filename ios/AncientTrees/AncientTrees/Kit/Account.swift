@@ -640,8 +640,6 @@ public enum SignInReason: Equatable, Identifiable {
 
     case general
     case keepTree(String)        // just ticked or saved this one
-    case keepCollection(Int)     // has this many and nothing backing them up
-    case seasonAlerts
     case feedback                // votes, reports and tips need the account
                                  // that lets us answer (2026-08-21 ruling)
     case ambassador              // the open seat: says what was pressed
@@ -673,13 +671,12 @@ public enum SignInReason: Equatable, Identifiable {
         // The website's heading, word for word (Hidde, 2026-10-08: "the copy
         // on the login overlay in app is really poor, is the website better?").
         // It was: it says what you get rather than what to do.
-        case .general, .keepCollection: "Keep your trees on every device"
+        case .general: "Keep your trees on every device"
         // Short on purpose. An earlier version put the tree's name in the
         // headline and "Keep The Last Elm of Stationsplein" ran the full width
         // of the phone at title size, which is a layout that only holds for the
         // short names.
         case .keepTree: "Sign in to keep this one"
-        case .seasonAlerts: "Sign in for season alerts"
         case .feedback: "Sign in to have your say"
         case .ambassador: "Sign in to apply"
         case .follow(let name): "Sign in to follow \(name)"
@@ -688,10 +685,8 @@ public enum SignInReason: Equatable, Identifiable {
 
     var detail: String {
         switch self {
-        case .general, .keepCollection, .keepTree:
+        case .general, .keepTree:
             "An account keeps what you collect and save."
-        case .seasonAlerts:
-            "We can only tell you about a tree if we know where to reach you."
         case .feedback:
             "We check every vote, correction and tip, and your account lets us tell you what came of it."
         case .ambassador:

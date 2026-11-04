@@ -14,8 +14,6 @@
     "PhotoViewer": "a photograph at full size, full screen",
     "PlacePin": "a map to drag a pin on, full screen",
     "MapSearch": "search, full screen",
-    "WalkMode": "a walk, full screen",
-    "PaywallView": "the paywall page",
     "ProfileEditor": "a form: your name and picture",
     "ContributeView": "a form: a tree, a correction or feedback",
     "PeopleView": "a page: people to follow",
@@ -24,7 +22,6 @@
     "editor": "a one-field form on your own tree (FieldEditor)",
     "accountSheet": "a page: your account and deleting it, with a field to type DELETE",
     "legalSheet": "a page of map and photo credits",
-    "walkMode": "a walk, full screen (WalkMode)",
     "MergeChooser": "a list to pick which tree a tree of yours merges into, shaped like SpeciesChooser; its confirmation is a BrandSheet"
   },
   "web": {

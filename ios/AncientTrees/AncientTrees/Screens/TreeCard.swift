@@ -163,62 +163,21 @@ struct TreeCard: View {
     // The heart lives in SaveHeart.swift now: one control, two looks, and the
     // sign-in gate and the remove confirmation written once instead of twice.
 
-    /// THE TAG ROW, the website's (TreeCard.astro, 2026-10-04): at most two
-    /// small pills top left on the photograph, the season first and "Seen"
-    /// second, clear of the heart. "Seen" is a light pill with a green tick,
-    /// no longer the filled canopy badge Hidde found "way too heavy".
+    /// THE TAG ROW, the website's (TreeCard.astro, 2026-10-04): a small pill
+    /// top left on the photograph, "Seen", clear of the heart. A light pill
+    /// with a green tick, no longer the filled canopy badge Hidde found "way
+    /// too heavy". The season chip that stood before it was set aside with
+    /// Season on 2026-11-04 (DECISIONS.md).
     @ViewBuilder private var tagRow: some View {
         let seen = saved.isVisited(tree.id)
-        if seasonChip != nil || seen {
+        if seen {
             HStack(spacing: 6) {
-                if let chip = seasonChip { chip }
-                if seen { SeenTag() }
+                SeenTag()
             }
             .padding(10)
             .padding(.trailing, 44)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         }
-    }
-
-    /// THE SEASON CHIP, the website's (phenology.ts seasonChipHtml): the
-    /// moment named in sentence case on a soft tint of its own colour, top left
-    /// on the photograph, only in the months it is true. Which chip is the
-    /// website's answer (`seasonKey` in the feed); the words and tints are this
-    /// surface's drawing of it. Behind the same season switch as the map's peak
-    /// dots, because the season is the paid feature here.
-    private var seasonChip: AnyView? {
-        guard Launch.season, let key = tree.seasonKey,
-              tree.bestTime?.isNow(Calendar.current.component(.month, from: .now)) == true
-        else { return nil }
-        // The website's chip (phenology.ts seasonChipHtml), icon and all
-        // (Hidde, 2026-10-08: "didn't we make tag redesigns for web, are they
-        // consistent? Make them"). The app had the words and tints without the
-        // glyph. The glyphs are SF Symbols tinted in the website icon's own
-        // colour, the nearest system drawing of each.
-        let look: (String, UInt32, UInt32, String, UInt32) = switch key {
-        case "bloom": ("In bloom", 0xFCE6EE, 0x9A2F57, "camera.macro", 0xE8705F)
-        case "autumn": ("Autumn colour", 0xFCEEDC, 0x8A5216, "leaf.fill", 0xD97843)
-        case "leaves": ("Fresh leaves", 0xE5F1D9, 0x355E19, "leaf.fill", 0x7FA653)
-        case "catkins": ("Catkins", 0xF2F0D0, 0x615A16, "allergens", 0xC9B458)
-        case "winter": ("Winter shape", 0xECEAE4, 0x4F4C45, "tree", 0x8C8577)
-        case "fruit": ("In fruit", 0xFBEFD3, 0x7A5A0C, "circle.fill", 0xE8A33D)
-        default: ("In season", 0xFBEFD3, 0x7A5A0C, "sparkle", 0xE8A33D)
-        }
-        return AnyView(
-            HStack(spacing: 4) {
-                Image(systemName: look.3)
-                    .font(.system(size: 11, weight: .semibold))
-                    .foregroundStyle(Color(light: look.4, dark: look.4))
-                Text(look.0)
-                    .foregroundStyle(Color(light: look.2, dark: look.2))
-            }
-            .font(.caption.weight(.semibold))
-            .padding(.leading, 8).padding(.trailing, 10).padding(.vertical, 5)
-            .background(Color(light: look.1, dark: look.1), in: .capsule)
-            .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
-            .accessibilityElement(children: .combine)
-            .accessibilityIdentifier("tree-card-season")
-        )
     }
 
     private var meta: some View {
