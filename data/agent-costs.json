@@ -1,6 +1,24 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-04": [
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "salt-lake-city",
+        "tokens": 90000,
+        "trees": 0,
+        "note": "5 University of Utah trees verified (slc_010 to slc_014) from the Utah Big Tree Register plus the campus tour, approximate pins, 3 flagged. Held for the pace."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "write",
+        "target": "salt-lake-city+cardiff+oahu+new-york-2/3/4/5",
+        "tokens": 200000,
+        "trees": 0,
+        "note": "15 stories and recognition lines (how_to_recognise), 3 best_time. Merge dry run of 18 trees (incl. slc_007 to 009) failed only the pace: 43 in 24h against 25, so none committed. Merge script was out/tmp/merge_2026_11_04.py (keep how_to_recognise as written)."
+      }
+    ],
     "2026-11-03": [
       {
         "date": "2026-11-03",

@@ -1,41 +1,5 @@
 {
  "_note": "Photographs readers sent through the app, matched to a tree we map, waiting for a viewing pass. Judge with the photo-judge agent and apply with scripts/sightings_publish.py. Rebuilt on every knock from the rows without a verdict.",
  "written": "2026-11-04",
- "queue": [
-  {
-   "sighting_id": "4b28d99e-e0f2-4572-b851-23dd79e73031",
-   "user_id": "p_26f7f501a6bb5802d7113fa8",
-   "tree_id": "edi_008",
-   "city_slug": "edinburgh",
-   "city": "Edinburgh",
-   "tree_name": "The Rockface Sycamore of Cramond",
-   "match": "app",
-   "distance_m": 10,
-   "mine": false,
-   "current_photo": "approved",
-   "current_source": "mail",
-   "tree_species": "Sycamore (Acer pseudoplatanus)",
-   "recognise": "You can recognise it by the trunk, growing sideways out of bare rock and out over the water before turning back skyward. It stands on the River Almond Walkway, about 600 metres upriver from Cramond village, its roots gripping a ledge.",
-   "tree_girth_cm": null,
-   "tree_height_m": null,
-   "story": "On the River Almond Walkway above Cramond, a sycamore grows sideways out of solid rock instead of up from soil, its roots gripping a ledge on the riverbank and its trunk reaching out over the water before turning back skyward. No record gives this tree's age or planting date. What draws people to it is how unlikely it looks. A substantial, clearly mature tree appears to grow from bare stone, its roots finding cracks and pockets of soil that a passerby cannot see. Cramond itself is one of the oldest inhabited spots in Scotland, settled since Mesolithic times and later the site of a Roman fort at the mouth of the River Almond, and the walkway leading past this tree follows the river past the r",
-   "name": "The Rockface Sycamore of Cramond",
-   "species": null,
-   "girth_cm": null,
-   "girth_hugs": null,
-   "note": "",
-   "taken_at": "2026-11-04",
-   "photo_path": "d12128fc-7d0d-4c71-ac83-0140566977c2/4B28D99E-E0F2-4572-B851-23DD79E73031.jpg",
-   "sign_path": null,
-   "sign_file": null,
-   "extra_files": [],
-   "latitude": 55.9739633333333,
-   "longitude": -3.30718333333333,
-   "file": "out/sightings/4b28d99e-e0f2-4572-b851-23dd79e73031.jpg",
-   "light": null,
-   "vouched": null,
-   "rank": 1,
-   "worth": "the tree already has one: ship this only if it is better"
-  }
- ]
+ "queue": []
 }

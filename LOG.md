@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 night run (20:40 UTC)
+
+- Rung 1: the one waiting reader photograph (edi_008, Cramond sycamore, a wide path scene) held; the Cramond Association's lead shows the trunk better. No new tree notes.
+- Rung 2: Build and deploy is green again. Postbox check and the Migrations line fail because two tables are not pasted: supabase/web-errors.sql and supabase/plus-answers.sql. For Hidde: paste both. The iOS run was still in progress, not a server matter.
+- Rung 5: Salt Lake City verify pass (5 University of Utah trees) and a write pass of 15 stories (SLC, Cardiff, Oahu, New York). A merge of 18 trees failed only the pace (43 in 24h against 25), so nothing went into data/cities. They sit written in data/research/*-verified.json and salt-lake-city stays claimed so no run writes them again. When the pace has room, merge slc_007 to slc_014, car_003, hnl_032, nyc_033/034/035/070/123/133/141/142, keeping the `how_to_recognise` field as written. So many written trees are already held that further write passes add nothing until the pace drains.
+
 ## 2026-11-04 session: the Ancient Trees Plus question, web and app
 
 - **What changed in the product:** a row "Ancient Trees Plus / Help us choose what comes next" under the ambassador on every city page (web, all eight languages, PlusAsk.astro) and on the app's city header, plus a row "Ancient Trees Plus" first in the app's Settings > Help (a row, not a card: Hidde 2026-08-25). It opens the one sheet in three steps: the open question first ("What would make it worth paying for?"), then one choice of four, shuffled per person (city walks, offline maps, seasonal alerts, a richer tree log) with "None of these" last, then "Tell me" (signed in only; signed out it opens sign-in and comes back to the step). No price, nothing sold. Designed and agreed with Hidde this session ("het ziet er eigenlijk goed uit zo bouw maar"); the survey rules (open first, one choice, shuffle, a no option, a raised hand) are in PlusAsk.astro's header and CONVENTIONS.md's paywall entry.

@@ -80,7 +80,9 @@
   "curation_status": "flagged",
   "verify_notes": "West Side Rag (fetched): the only new Manhattan addition in the Oct 2024 list, an American sycamore just north of West 120th Street in Morningside Park. Parks listing (search result, page bot-blocked): trunk diameter 48 in, next to a path fork north of the W 120th St entrance. Pin: the only American sycamore >=20 in dbh in the park in the forestry points, dbh 48 equals the Great Tree figure; plain-sycamore (Platanus occidentalis) is distinct from the London planes around it. Alive: Great Tree designation Oct 2024; forestry record itself dated 2017 (Good), so no fresh independent observation. Height not found. Age not documented. Flagged.",
   "photo_candidate": null,
-  "age_estimate": "not documented"
+  "age_estimate": "not documented",
+  "story": "When New York's parks department revised its list of Great Trees in October 2024, the first revision in about forty years, Manhattan got exactly one new entry. It was this American sycamore in Morningside Park, standing beside a fork in the path just north of the West 120th Street entrance.\n\nIts trunk is 48 inches across, about 3.8 metres round, and the city's forestry inventory rated it in good condition at its last inspection. It is also easy to overlook. New York is full of London planes, the hybrid that is the city's most common street tree, and this tree's parent species looks much like them at a glance. The plain American sycamore is the native one, the tree of eastern river valleys, and in Morningside it is the only one of its size.\n\nThe park itself is a long, steep strip of rock between Harlem below and Morningside Heights above, laid out in the late nineteenth century to deal with a cliff too sheer for streets. The sycamore grows in that park, with the Columbia campus a few blocks west on the heights and the subway a ten-minute walk away.\n\nNobody has published its height, its age or when it was planted, and the forestry record dates from 2017. If you know more, or have stood under it lately, tell us.",
+  "how_to_recognise": "You can recognise it as the one native American sycamore among the London planes, its trunk about 3.8 metres round. It stands beside the path fork just north of the West 120th Street entrance."
  },
  {
   "id": "nyc_034",
@@ -112,7 +114,9 @@
   "curation_status": "flagged",
   "verify_notes": "Village View (fetched, Dec 2024): willow over six stories tall, canopy about 40 ft, trunk diameter 37 in, on a blue stone patio; after a 1970s fire the city cleared a tenement and designated the lot for community gardening, opened 1978, volunteer-run from the start. Parks listing (search result): same 37 in, 530 E 6th St, planted 1978 on an abandoned lot as a community effort, lost a major branch some years ago (snippet only). DISCREPANCY: Parks forestry points hold a weeping willow at the pin with dbh 42 in (updated 2026-07-05, Fair), i.e. 5 in more than the 2024 listing; girth_cm uses 42. The pin is the forestry point about 80 m from Nominatim's geocode of 530 E 6th St, hence approximate with a small named site. Another willow (dbh 41, El Jardin del Paraiso) stands about 450 m east: do not confuse. Flagged.",
   "photo_candidate": null,
-  "age_estimate": "not documented"
+  "age_estimate": "not documented",
+  "story": "A fire in the 1970s left a gap on East 6th Street, and a weeping willow now taller than six storeys fills it. After the blaze the city cleared the burnt tenement and set the lot aside for community gardening. The Creative Little Garden opened in 1978 and has been run by volunteers ever since, and its willow, according to Village View's 2024 profile, spreads a canopy about 12 metres across over a blue stone patio.\n\nIn 2024 the parks department put the tree on its list of Great Trees, the first new additions in about forty years. Its measurements depend on who held the tape. The 2024 listing gives the trunk as 37 inches across. The city's forestry inventory, updated in July 2026, gives 42, about 3.35 metres round. The willow may simply have grown, or the two were measured at different heights.\n\nBy one account the willow was planted in 1978 as a community effort, the same year the garden opened. That date is reported rather than confirmed, so treat it as likely rather than settled. If you were there when it went in, tell us.\n\nFor a weeping willow in Manhattan, a tree that likes wet ground and open sky, to reach this size on a former tenement lot is the surprise. The garden opens at posted hours only, so check before going. Another big willow, in El Jardin del Paraiso, stands about 450 metres east, which makes a two-garden walk.",
+  "how_to_recognise": "You can recognise it by the weeping crown over the blue stone patio, more than six storeys high. It stands in the Creative Little Garden at 530 East 6th Street."
  },
  {
   "id": "nyc_035",
@@ -147,7 +151,16 @@
   },
   "curation_status": "flagged",
   "verify_notes": "Village View (fetched): dawn redwood planted in 1981 by Tessa Huxley, about 100 ft tall, visible along Houston Street from Avenue B to Greene Street; Huxley recalled scraping the top of the subway tunnel digging the hole; noticeably cooler beneath it. Garden is the city's first community garden (Liz Christy, 1973: not checked here). Age is a documented planting date (45 years). Pin: the only dawn redwood in the surrounding forestry points, dbh 30 in, record dated 2019; kept approximate because only one source gives the height and the Parks page was not fetched. The Parks Great Trees page id unknown (no page reached). Flagged.",
-  "photo_candidate": null
+  "photo_candidate": null,
+  "story": "When Tessa Huxley dug the hole for this tree in 1981, she scraped the top of the subway tunnel. The dawn redwood she planted in the Liz Christy Community Garden, at the Bowery and East Houston Street, now stands about 30 metres tall. You can pick it out along Houston Street from Avenue B all the way to Greene Street, a conifer rising over the low roofs, and it is noticeably cooler underneath.\n\nThe species has a stranger history than most. Dawn redwood was first described from fossils, and scientists assumed it was long extinct until living trees turned up in central China in the 1940s. Seed reached American gardens at the end of that decade. So a tree that the textbooks had buried grows here over a subway line, forty-five years after a volunteer put it in the ground.\n\nThat makes it young for a tree on New York's Great Trees list, which the parks department revised in 2024. It also makes its story unusually complete, down to the year, the gardener and what lay under the spade. For most old trees in this city, nobody wrote any of that down.\n\nThe garden is run by volunteers and opens only at posted hours, so check before going. The tree does not need the gate to be open. It is in view from Houston Street.",
+  "how_to_recognise": "You can recognise it by its height, a conifer about 30 metres tall standing over the low buildings, the only dawn redwood on the block. It stands inside the Liz Christy Community Garden at the Bowery and East Houston Street.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the needles turn a foxy reddish brown before they fall"
+  }
  },
  {
   "id": "nyc_036",

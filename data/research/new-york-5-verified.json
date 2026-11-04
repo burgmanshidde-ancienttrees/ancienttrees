@@ -35,7 +35,7 @@
   {
     "id": "nyc_141",
     "name": "The Weeping Beech Tunnel at Green-Wood",
-    "species": "Weeping European Beech (Fagus sylvatica 'Pendula')",
+    "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
     "age_estimate": "not documented",
     "age_min": null,
     "age_max": null,
@@ -61,12 +61,22 @@
     },
     "curation_status": "flagged",
     "photo_candidate": null,
-    "verify_notes": "Green-Wood's own visitor map (2023 and 2025 editions) lists 'Weeping Beech Tunnel' as a group of six weeping European beeches whose cascading canopies form a tunnel, a visitor favourite. A Green-Wood tree blog (2009, a blog, a finding aid only) says the most enchanting weeping beech hangs over Larch Avenue and that you must walk or drive under the canopy to go up the road. One compact ensemble with one place to stand (the road under the canopy). Pin: OSM natural=tree node 12609928197 'Weeping Beech' (one point for six trees, so approximate, with a 50 m site). A Brooklyn guide calls it elms; the owner's map and the blog say beech, the owner wins. No planting date, girth or age in any source. Not checked: that the OSM node sits exactly on Larch Avenue (road geometry fetch failed, Overpass at capacity). What tells it apart: the canopy closes over the road."
+    "verify_notes": "Green-Wood's own visitor map (2023 and 2025 editions) lists 'Weeping Beech Tunnel' as a group of six weeping European beeches whose cascading canopies form a tunnel, a visitor favourite. A Green-Wood tree blog (2009, a blog, a finding aid only) says the most enchanting weeping beech hangs over Larch Avenue and that you must walk or drive under the canopy to go up the road. One compact ensemble with one place to stand (the road under the canopy). Pin: OSM natural=tree node 12609928197 'Weeping Beech' (one point for six trees, so approximate, with a 50 m site). A Brooklyn guide calls it elms; the owner's map and the blog say beech, the owner wins. No planting date, girth or age in any source. Not checked: that the OSM node sits exactly on Larch Avenue (road geometry fetch failed, Overpass at capacity). What tells it apart: the canopy closes over the road.",
+    "story": "At Green-Wood the road goes under the trees, not past them. Six weeping European beeches stand together over Larch Avenue, and their branches hang down and meet until the drive runs through a tunnel of leaves. The cemetery's own visitor map lists the Weeping Beech Tunnel as a stop on its Celebrated Trees Walk and calls it a visitor favourite. A Green-Wood tree blog put it more plainly in 2009, saying you have to walk or drive under the canopy to go up the road at all.\n\nWeeping beeches grow their limbs outward and then down, so an old one becomes a room with walls of foliage. Six together over a road make a corridor. One Brooklyn guide calls them elms; the cemetery's map and its tree blog both say beech, and the owner of the ground gets the last word.\n\nGreen-Wood opened in 1838 and soon became one of the most visited places in America, with crowds coming to picnic among the graves before New York had Central Park. Its 478 acres hold Leonard Bernstein, Jean-Michel Basquiat and Boss Tweed. Entry is free and the gates open daily.\n\nNo source gives a planting date, a girth or an age for these beeches, and nobody has said whether all six went in together. If you know, tell us.",
+    "how_to_recognise": "You can recognise it by the road itself, which runs under a closed canopy of six weeping beeches whose branches hang down and meet overhead. It stands on Larch Avenue, a stop on the cemetery's Celebrated Trees Walk.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "late October into November, when the hanging leaves over the road turn gold and copper"
+    }
   },
   {
     "id": "nyc_142",
     "name": "The Blue Atlas Cedars of Queens Botanical Garden",
-    "species": "Blue Atlas Cedar (Cedrus atlantica 'Glauca')",
+    "species": "Atlas Cedar (Cedrus atlantica 'Glauca')",
     "age_estimate": "over 85 years",
     "age_min": 85,
     "age_max": 120,
@@ -86,6 +96,8 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "photo_candidate": null,
-    "verify_notes": "The garden's own visitor guide (2016 PDF) says two blue atlas cedars that frame the iconic tree gate sculpture at the Main Street entrance (#1 on the map) are original plantings taken from the 1939 World's Fair 'Gardens on Parade' site, when the garden moved to Main Street in 1961 (Wikipedia gives the move as completed with dedication 19 Oct 1963 and says THREE cedars were transplanted; the owner says two: conflict, kept both counts). Age derived from a documented specimen history: planted for the 1939 fair, so at least 85 years in the ground, possibly older nursery stock; broad range given, no girth recorded. Pin: garden coordinate from Wikipedia (40.7504, -73.8288); the entrance itself was not pinned (Nominatim and Overpass gave no entrance node), so the walker finds it by the tree gate sculpture, not by the coordinate. The garden is a walk-through garden, not a small site, so no location_site. Alive: no dated record of these cedars specifically; the 2016 guide is the latest owner statement, lifecheck RECENT only for the garden area (iNaturalist 2026-10-15). Flagged."
+    "verify_notes": "The garden's own visitor guide (2016 PDF) says two blue atlas cedars that frame the iconic tree gate sculpture at the Main Street entrance (#1 on the map) are original plantings taken from the 1939 World's Fair 'Gardens on Parade' site, when the garden moved to Main Street in 1961 (Wikipedia gives the move as completed with dedication 19 Oct 1963 and says THREE cedars were transplanted; the owner says two: conflict, kept both counts). Age derived from a documented specimen history: planted for the 1939 fair, so at least 85 years in the ground, possibly older nursery stock; broad range given, no girth recorded. Pin: garden coordinate from Wikipedia (40.7504, -73.8288); the entrance itself was not pinned (Nominatim and Overpass gave no entrance node), so the walker finds it by the tree gate sculpture, not by the coordinate. The garden is a walk-through garden, not a small site, so no location_site. Alive: no dated record of these cedars specifically; the 2016 guide is the latest owner statement, lifecheck RECENT only for the garden area (iNaturalist 2026-10-15). Flagged.",
+    "story": "These cedars were exhibits at the 1939 World's Fair. They were planted for Gardens on Parade, the fair's horticultural show in Flushing Meadows, and when Queens Botanical Garden, which grew out of that exhibit, moved to its present ground on Main Street, the cedars moved with it. The garden's own visitor guide calls them original plantings from the fair site. That puts them at least 85 years in the ground, and possibly older, since nobody recorded how old the nursery stock was in 1939.\n\nHow many came is a small mystery. The garden's guide says two, and two now frame the tree gate sculpture at the Main Street entrance. Wikipedia says three cedars were transplanted. The sources also differ on timing, the guide placing the move in 1961 and Wikipedia giving the new garden's dedication as 19 October 1963. Either way, moving a conifer of that size is a serious job, and these survived it.\n\nThe tree is the North African Atlas cedar in its blue-needled form, Glauca, which turns a whole crown silver-blue. The colour holds all year, so there is no wrong season to visit.\n\nYou meet them before anything else, since they are stop number one on the garden map. Entry is ticketed on some days and free on others, so check queensbotanical.org before you go. Nobody has published a girth for either tree. If you have measured one, tell us.",
+    "how_to_recognise": "You can recognise them by their silver-blue needles and by where they stand, one either side of the tree gate sculpture at the Main Street entrance, stop number one on the garden map."
   }
 ]
