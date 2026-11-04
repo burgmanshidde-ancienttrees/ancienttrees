@@ -175,7 +175,8 @@
    "summary": "Map filter chips clear each other instead of combining.",
    "fix": "Additive chips, an active one reopens its picker (Google Maps, Airbnb).",
    "first_seen": "2026-11-04",
-   "status": "open"
+   "status": "fixed",
+   "fixed_in": "b85270aee"
   },
   {
    "id": "APP-UX-city-chip-same-tab",
