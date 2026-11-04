@@ -76,6 +76,8 @@ def from_cities():
 def from_leads():
     for f in sorted(glob.glob(os.path.join(DATA, "leads", "*.json"))):
         d = json.load(open(f))
+        if isinstance(d, list):
+            d = {"leads": d, "city": os.path.basename(f)[:-5]}
         city, country = d.get("city", ""), d.get("country", "")
         for n, t in enumerate(d.get("leads", []), 1):
             yield {

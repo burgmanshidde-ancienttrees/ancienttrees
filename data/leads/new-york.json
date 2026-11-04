@@ -1793,6 +1793,16 @@
    "found": "2026-11-03",
    "pass": "data/research/new-york-5-rejects.json",
    "status": "open"
+  },
+  {
+   "name": "The English Elm of St. Nicholas Avenue",
+   "lat": 40.8371,
+   "lng": -73.94,
+   "species": "English Elm (Ulmus procera)",
+   "reason": "Duplicate of published nyc_025 The Dinosaur: same English elm on the east side of St. Nicholas Avenue at West 163rd Street (Parks Great Tree id=35, Tree Map ID 2120654). Its 64 in dbh, Good 2026-03-10 inventory record and the Washington 1776 fire tradition can enrich nyc_025.",
+   "found": "2026-11-04",
+   "pass": "data/research/new-york-4-verified.json",
+   "status": "duplicate"
   }
  ],
  "blocked": [

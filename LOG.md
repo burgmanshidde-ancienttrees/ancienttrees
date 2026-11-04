@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 night run (13:39 window): no new trees, the pace cap is full
+
+- **Rung picked:** 5, US/UK first. Rungs 1 to 3 were clear (no sightings, no notes, health.py green). A write pass on Washington DC and New York wrote 20 stories (5 DC: wdc_026, 027, 031, 032, 035; 15 NYC: nyc_031, 032, 036, 073, 076, 077, 079, 080, 081, 095, 121, 124, 127, 130, 140) into data/research/*-verified.json, but the merge would be 45 of our trees in 24 hours against the cap of 25, so none went into data/cities. When the cap rolls over, merge them and update the NYC (28/29 to 44) and DC (21 to 26) count promises in intro, meta_description, question_meta and faq. nyc_122 was a duplicate of nyc_025 and went to leads (its 2026 inventory record could enrich nyc_025). The 26 READY DC/NYC leads in `leads.py --ready` are earlier rejects (front yards, a school, young memorials, groves) and were skipped; leads.py misfiles them.
+- **Fix:** scripts/tree_index.py crashed on two bare-list lead files (andalucia-rediam, campania-south-2026-11-02); it now reads them. The washington-dc claim stays until the merge (release refused: wdc_017 and the written trees are not in data/cities).
+- **Backlog worth knowing:** the shelf holds many more written-but-held US/UK trees (Midwest, Florida/Texas, Philadelphia, West Country) than the pace lets out, so more writing buys nothing until the cap rolls.
+
 ## 2026-11-04 session: the website country page is a map
 
 - **What changed (web):** /netherlands, /italy and every other country page (Contract G) now open as the city page does: the map full-bleed with every tree as a pin or a dot, the filter row on top (Favourites, My trees, Species, Free to visit), and the page in the city page's sheet (left panel on a computer, draggable bottom sheet on a phone). The sheet header is the city page's: the count line ("N trees · M places"), "Ancient trees in <country>" and the share button; no ambassador row. Under it, in the contract's order: the intro (clamped to three lines with Read more, like a city), the states (US), every place, the species, the ten oldest trees, the register note and the links. Nothing left the page. A tapped pin opens the one shared tree card (map-card-js.ts). The state pages keep the embedded map (countryMapScript's new `sheet` option is off for them).

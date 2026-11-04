@@ -14016,6 +14016,14 @@
     "2026-11-04": [
       {
         "date": "2026-11-04",
+        "kind": "write",
+        "target": "washington-dc+new-york",
+        "tokens": 190000,
+        "trees": 0,
+        "note": "20 stories (5 DC, 15 NYC) written into data/research/*-verified.json, not merged because the 24h pace cap was full; one duplicate (nyc_122 = nyc_025) moved to leads. Token figure is an estimate."
+      },
+      {
+        "date": "2026-11-04",
         "kind": "photo",
         "target": "held US and UK trees (all US/UK builders)",
         "tokens": 320000,

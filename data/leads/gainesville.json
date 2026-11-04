@@ -1,238 +1,244 @@
 {
-  "city": "gainesville",
-  "leads": [
-    {
-      "name": "SOAPBERRY, Wingleaf (COMPLETE)",
-      "species": "SOAPBERRY, Wingleaf (Sapindus saponaria)",
-      "lat": 29.6428,
-      "lng": -82.3433,
-      "register_location": "UF Campus, Newell Drive, just north of Shands Hospital, east",
-      "girth_cm": 188,
-      "height_m": 23.8,
-      "register_status": "COMPLETE",
-      "measured": 1397606400000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/18"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "PLUM, Flatwoods (COMPLETE)",
-      "species": "PLUM, Flatwoods (Prunus umbellata)",
-      "lat": 29.60916,
-      "lng": -82.3041,
-      "register_location": "Paynes Prairie State Park, next to composting toilet at begi",
-      "girth_cm": 109,
-      "height_m": 7.9,
-      "register_status": "COMPLETE",
-      "measured": 1395878400000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/30"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "BLACKHAW, Rusty (COMPLETE)",
-      "species": "BLACKHAW, Rusty (Viburnum rufidulum)",
-      "lat": 29.64522,
-      "lng": -82.358,
-      "register_location": "Univ. of FL/ wooded slope, \"Harmonic Woods\" n. side of Museu",
-      "girth_cm": 25,
-      "height_m": 6.7,
-      "register_status": "COMPLETE",
-      "measured": 1366848000000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/147"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "BOXELDER (COMPLETE)",
-      "species": "BOXELDER (Acer negundo)",
-      "lat": 29.65887,
-      "lng": -82.3394,
-      "register_location": "DOT/ s.w. corner of N.W. 8th Ave. & N.W.13th St. overpass, G",
-      "girth_cm": 178,
-      "height_m": 13.7,
-      "register_status": "COMPLETE",
-      "measured": 1367193600000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/158"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "CHERRY, Black (COMPLETE)",
-      "species": "CHERRY, Black (Prunus serotina)",
-      "lat": 29.71305,
-      "lng": -82.45641,
-      "register_location": "San Felasco Hammock State Preserve/ s. of CR-232, 8 mi. n.w.",
-      "girth_cm": 328,
-      "height_m": 23.8,
-      "register_status": "COMPLETE",
-      "measured": 1459209600000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/169"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "BOXELDER (COMPLETE)",
-      "species": "BOXELDER (Acer negundo)",
-      "lat": 29.64472,
-      "lng": -82.34065,
-      "register_location": "Between Beatty Towers and Museum Road, UF campus",
-      "girth_cm": 254,
-      "height_m": 10.1,
-      "register_status": "COMPLETE",
-      "measured": 1531958400000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/419"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "ASH, White (PENDING)",
-      "species": "ASH, White (Fraxinus americana)",
-      "lat": 29.64571,
-      "lng": -82.34377,
-      "register_location": "Univ. of Florida/ e. edge of McCarty Woods, campus, Gainesvi",
-      "girth_cm": 229,
-      "height_m": 19.5,
-      "register_status": "PENDING",
-      "measured": 1393891200000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/554"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "PINE, Longleaf (PENDING)",
-      "species": "PINE, Longleaf (Pinus palustris)",
-      "lat": 29.65129,
-      "lng": -82.3438,
-      "register_location": "Univ. of FL/ s. side of Flint Hall by east entrance of Keene",
-      "girth_cm": 226,
-      "height_m": 33.5,
-      "register_status": "PENDING",
-      "measured": 1427673600000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/557"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "PINE, Spruce (PENDING)",
-      "species": "PINE, Spruce (Pinus glabra)",
-      "lat": 29.72493,
-      "lng": -82.41942,
-      "register_location": "Gainesville - NW 53rd Ave to NW 71 St. go north 3/4 mile to",
-      "girth_cm": 325,
-      "height_m": 37.2,
-      "register_status": "PENDING",
-      "measured": 1531958400000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/688"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
-    },
-    {
-      "name": "PINE, Longleaf PK 187 (UF campus, Flint Hall), update 2026-11-04",
-      "reason_2026_11_04": "UF campus grounds are public and a 2015 register measurement gives 110 ft, but girth 226 cm is 49% of the genus reference (species_size.py); no reason a visitor sees. Register status PENDING."
-    },
-    {
-      "name": "Spruce Pine (Pinus glabra) PK 1248, 1169, 1229, San Felasco Hammock Preserve area",
-      "reason_2026_11_04": "Register heights 130 ft, 117 ft, 122 ft (Florida Challengers). State preserve land, but location text is blank or a trail description and nothing makes them findable or photographable. Stay leads."
-    },
-    {
-      "name": "Cellon Oak: see data/research/gainesville-verified.json gvl_001",
-      "reason_2026_11_04": "Verified, flagged. 19 km from Gainesville with no public transport found."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "WATER-ELM (COMPLETE)",
-      "species": "WATER-ELM (Planera aquatica)",
-      "lat": 29.62,
-      "lng": -82.41,
-      "register_location": "DEAD - City of Gainesville/ Hogtown Prarie, w. of Int. 75, n",
-      "girth_cm": null,
-      "height_m": null,
-      "register_status": "COMPLETE",
-      "measured": 1459382400000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/167"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open",
-      "reason": "register location text says DEAD"
-    },
-    {
-      "name": "WILLOW, Coastal Plains (COMPLETE)",
-      "species": "WILLOW, Coastal Plains (Salix caroliniana)",
-      "lat": 29.63678,
-      "lng": -82.40803,
-      "register_location": "DEAD - City of Gainesville/ Hogtown Prarie, w. of Int. 75, n",
-      "girth_cm": null,
-      "height_m": null,
-      "register_status": "COMPLETE",
-      "measured": 1458950400000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/174"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open",
-      "reason": "register location text says DEAD"
-    },
-    {
-      "name": "OAK, Bluff (COMPLETE)",
-      "species": "OAK, Bluff (Quercus austrina)",
-      "lat": 29.64031,
-      "lng": -82.33394,
-      "register_location": "PK Young Developmental Research School 1080 SW 11th St  Gain",
-      "girth_cm": 396,
-      "height_m": 27.4,
-      "register_status": "COMPLETE",
-      "measured": 1459296000000,
-      "sources": [
-        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/183"
-      ],
-      "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open",
-      "reason": "school grounds; needs evidence the grounds are open (hard rule 10)"
-    },
-    {
-      "candidate": "Florida champion Live Oak, 12624 NW 93rd Place, Alachua (36.5 ft girth)",
-      "reason": "Private 10-acre property; owners' contact on the register; WUFT says visible only from behind a fence on the road. Not a public tree, not shipped."
-    },
-    {
-      "candidate": "Bert the Bluff Oak, UF campus",
-      "reason": "Felled 2015 for the Nexus building (WUFT, WBUR)."
-    },
-    {
-      "candidate": "Norman Hall live oak, UF campus",
-      "reason": "Felled by Hurricane Helene 2024 (WUFT, UF/IFAS 2025)."
-    },
-    {
-      "candidate": "Bicentennial Tree (longleaf pine), UF campus",
-      "reason": "Removed 2025 after a 2023 memorial service (WUFT, Alligator)."
-    },
-    {
-      "candidate": "Physics Building live oak, UF campus",
-      "reason": "Split in Hurricane Irma 2017, replaced by four young trees (search summary of Alligator and UF pages)."
-    },
-    {
-      "candidate": "Bluff Oak PK 228, PK Yonge school, 396 cm girth",
-      "reason": "School grounds, no evidence they are open (hard rule 10); kept from the older lead as blocked."
-    }
-  ]
+ "city": "gainesville",
+ "leads": [
+  {
+   "name": "SOAPBERRY, Wingleaf (COMPLETE)",
+   "species": "SOAPBERRY, Wingleaf (Sapindus saponaria)",
+   "lat": 29.6428,
+   "lng": -82.3433,
+   "register_location": "UF Campus, Newell Drive, just north of Shands Hospital, east",
+   "girth_cm": 188,
+   "height_m": 23.8,
+   "register_status": "COMPLETE",
+   "measured": 1397606400000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/18"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "PLUM, Flatwoods (COMPLETE)",
+   "species": "PLUM, Flatwoods (Prunus umbellata)",
+   "lat": 29.60916,
+   "lng": -82.3041,
+   "register_location": "Paynes Prairie State Park, next to composting toilet at begi",
+   "girth_cm": 109,
+   "height_m": 7.9,
+   "register_status": "COMPLETE",
+   "measured": 1395878400000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/30"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "BLACKHAW, Rusty (COMPLETE)",
+   "species": "BLACKHAW, Rusty (Viburnum rufidulum)",
+   "lat": 29.64522,
+   "lng": -82.358,
+   "register_location": "Univ. of FL/ wooded slope, \"Harmonic Woods\" n. side of Museu",
+   "girth_cm": 25,
+   "height_m": 6.7,
+   "register_status": "COMPLETE",
+   "measured": 1366848000000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/147"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "BOXELDER (COMPLETE)",
+   "species": "BOXELDER (Acer negundo)",
+   "lat": 29.65887,
+   "lng": -82.3394,
+   "register_location": "DOT/ s.w. corner of N.W. 8th Ave. & N.W.13th St. overpass, G",
+   "girth_cm": 178,
+   "height_m": 13.7,
+   "register_status": "COMPLETE",
+   "measured": 1367193600000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/158"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "CHERRY, Black (COMPLETE)",
+   "species": "CHERRY, Black (Prunus serotina)",
+   "lat": 29.71305,
+   "lng": -82.45641,
+   "register_location": "San Felasco Hammock State Preserve/ s. of CR-232, 8 mi. n.w.",
+   "girth_cm": 328,
+   "height_m": 23.8,
+   "register_status": "COMPLETE",
+   "measured": 1459209600000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/169"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "BOXELDER (COMPLETE)",
+   "species": "BOXELDER (Acer negundo)",
+   "lat": 29.64472,
+   "lng": -82.34065,
+   "register_location": "Between Beatty Towers and Museum Road, UF campus",
+   "girth_cm": 254,
+   "height_m": 10.1,
+   "register_status": "COMPLETE",
+   "measured": 1531958400000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/419"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "ASH, White (PENDING)",
+   "species": "ASH, White (Fraxinus americana)",
+   "lat": 29.64571,
+   "lng": -82.34377,
+   "register_location": "Univ. of Florida/ e. edge of McCarty Woods, campus, Gainesvi",
+   "girth_cm": 229,
+   "height_m": 19.5,
+   "register_status": "PENDING",
+   "measured": 1393891200000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/554"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "PINE, Longleaf (PENDING)",
+   "species": "PINE, Longleaf (Pinus palustris)",
+   "lat": 29.65129,
+   "lng": -82.3438,
+   "register_location": "Univ. of FL/ s. side of Flint Hall by east entrance of Keene",
+   "girth_cm": 226,
+   "height_m": 33.5,
+   "register_status": "PENDING",
+   "measured": 1427673600000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/557"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "PINE, Spruce (PENDING)",
+   "species": "PINE, Spruce (Pinus glabra)",
+   "lat": 29.72493,
+   "lng": -82.41942,
+   "register_location": "Gainesville - NW 53rd Ave to NW 71 St. go north 3/4 mile to",
+   "girth_cm": 325,
+   "height_m": 37.2,
+   "register_status": "PENDING",
+   "measured": 1531958400000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/688"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open"
+  },
+  {
+   "name": "PINE, Longleaf PK 187 (UF campus, Flint Hall), update 2026-11-04",
+   "reason_2026_11_04": "UF campus grounds are public and a 2015 register measurement gives 110 ft, but girth 226 cm is 49% of the genus reference (species_size.py); no reason a visitor sees. Register status PENDING.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Spruce Pine (Pinus glabra) PK 1248, 1169, 1229, San Felasco Hammock Preserve area",
+   "reason_2026_11_04": "Register heights 130 ft, 117 ft, 122 ft (Florida Challengers). State preserve land, but location text is blank or a trail description and nothing makes them findable or photographable. Stay leads.",
+   "species": "Spruce (Picea sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Cellon Oak: see data/research/gainesville-verified.json gvl_001",
+   "reason_2026_11_04": "Verified, flagged. 19 km from Gainesville with no public transport found.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "WATER-ELM (COMPLETE)",
+   "species": "WATER-ELM (Planera aquatica)",
+   "lat": 29.62,
+   "lng": -82.41,
+   "register_location": "DEAD - City of Gainesville/ Hogtown Prarie, w. of Int. 75, n",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "COMPLETE",
+   "measured": 1459382400000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/167"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "register location text says DEAD"
+  },
+  {
+   "name": "WILLOW, Coastal Plains (COMPLETE)",
+   "species": "WILLOW, Coastal Plains (Salix caroliniana)",
+   "lat": 29.63678,
+   "lng": -82.40803,
+   "register_location": "DEAD - City of Gainesville/ Hogtown Prarie, w. of Int. 75, n",
+   "girth_cm": null,
+   "height_m": null,
+   "register_status": "COMPLETE",
+   "measured": 1458950400000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/174"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "register location text says DEAD"
+  },
+  {
+   "name": "OAK, Bluff (COMPLETE)",
+   "species": "OAK, Bluff (Quercus austrina)",
+   "lat": 29.64031,
+   "lng": -82.33394,
+   "register_location": "PK Young Developmental Research School 1080 SW 11th St  Gain",
+   "girth_cm": 396,
+   "height_m": 27.4,
+   "register_status": "COMPLETE",
+   "measured": 1459296000000,
+   "sources": [
+    "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/183"
+   ],
+   "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
+   "status": "open",
+   "reason": "school grounds; needs evidence the grounds are open (hard rule 10)"
+  },
+  {
+   "candidate": "Florida champion Live Oak, 12624 NW 93rd Place, Alachua (36.5 ft girth)",
+   "reason": "Private 10-acre property; owners' contact on the register; WUFT says visible only from behind a fence on the road. Not a public tree, not shipped."
+  },
+  {
+   "candidate": "Bert the Bluff Oak, UF campus",
+   "reason": "Felled 2015 for the Nexus building (WUFT, WBUR)."
+  },
+  {
+   "candidate": "Norman Hall live oak, UF campus",
+   "reason": "Felled by Hurricane Helene 2024 (WUFT, UF/IFAS 2025)."
+  },
+  {
+   "candidate": "Bicentennial Tree (longleaf pine), UF campus",
+   "reason": "Removed 2025 after a 2023 memorial service (WUFT, Alligator)."
+  },
+  {
+   "candidate": "Physics Building live oak, UF campus",
+   "reason": "Split in Hurricane Irma 2017, replaced by four young trees (search summary of Alligator and UF pages)."
+  },
+  {
+   "candidate": "Bluff Oak PK 228, PK Yonge school, 396 cm girth",
+   "reason": "School grounds, no evidence they are open (hard rule 10); kept from the older lead as blocked."
+  }
+ ]
 }

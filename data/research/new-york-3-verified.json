@@ -99,7 +99,8 @@
   "transport": "Bayside station (LIRR) about 2.7 km; local bus to Fort Totten",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=116 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 99 in -> girth_cm 790 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: multi-trunk that fused together long ago, so diameter measures close to 100 in (the 99 in is a fused-stem mass, not one stem). Tree Map ID 3563690. Stands at Underhill Rd and Officers Dr. iNaturalist 2025-07-15 within radius."
+  "story": "Measured across the trunk, this basswood at Fort Totten comes out at 99 inches, close to the width of a single garage door. That number needs an asterisk, and NYC Parks gives it one. The tree is not one stem but several that grew side by side and fused together long ago, so the 99 inches is the width of a fused mass rather than a single trunk. Round, that works out at about 7.9 metres of wood at chest height, and a shape you will not mistake for anything else in the park. It is also a reminder that the biggest number on a list is not always the oldest tree. A fused basswood can carry a girth that a single trunk of the same age never would, and the honest reading of this one is a big, strange, many-stemmed tree of unknown age. Parks added it to the Great Trees list in 2024, when the city relaunched its roll of remarkable trees. It stands at the corner of Underhill Road and Officers Drive, on the grounds of Fort Totten in Bayside, a former army post that is now a public park open to walkers. Somebody has seen it recently. An iNaturalist record from July 2025 sits near the Parks point. Nobody has recorded when the stems first came up or when they joined. If you know the tree's history, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, several stems fused into one mass about 99 inches across. It stands at the corner of Underhill Road and Officers Drive in Fort Totten Park."
  },
  {
   "id": "nyc_074",
@@ -153,8 +154,8 @@
  },
  {
   "id": "nyc_076",
-  "name": "The London Planetree of Alice Austen Park",
-  "species": "London Planetree (Platanus x acerfolia)",
+  "name": "The London Plane of Alice Austen Park",
+  "species": "London Plane (Platanus x acerifolia)",
   "age_estimate": "not documented",
   "girth_cm": 431,
   "location": {
@@ -174,13 +175,14 @@
   "transport": "Staten Island Railway Clifton station, about 0.6 km; or S51/S78 bus on Bay St (check route)",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=58 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 54 in -> girth_cm 431 (pi x diameter). One official register: counts as enough; Parks entry: believed to be growing around 1840 when John Austen, Alice Austen's grandfather, bought and expanded the house; scarred by lightning but alive; canopy spread 59.5 ft. Register 1985; Tree Map ID 5095107. The 1840 date is the register's 'believed'. iNaturalist 2026-07-30 within radius.",
-  "height_m": 18.7
+  "height_m": 18.7,
+  "story": "Lightning has hit this plane tree and left its mark, and it is still standing in the meadow south of the Alice Austen House. NYC Parks records the scar on its Great Trees entry, along with the detail that the tree is alive in spite of it. Parks also gives it a starting point. It is believed to have been growing here around 1840, when John Austen, Alice Austen's grandfather, bought the house and set about expanding it. Believed is Parks' word, with no planting record behind it, so read 1840 as a family-era tradition rather than a date. If it holds, the tree is more than 185 years old. The measurements are from the 1985 survey that first put it on the list. The trunk was 54 inches across, about 4.3 metres round, with a crown spreading almost 60 feet over the meadow, though at about 19 metres tall it is broad rather than towering. An iNaturalist record from July 2026 places it alive. Alice Austen Park is open daily and free. The house museum has its own hours and asks a suggested donation, but the tree stands outside it, in the meadow south of the house in Rosebank, on the Staten Island shore. Von Briesen Park, with its own Great Tree, is close by along the same shore. If you know more about when it was planted, tell us.",
+  "how_to_recognise": "You can recognise it by the wide crown, spreading almost 60 feet on a trunk 54 inches across, and its lightning scar. It stands in the meadow south of the Alice Austen House in Alice Austen Park, Rosebank."
  },
  {
   "id": "nyc_077",
   "name": "The Princess Tree of Snug Harbor",
-  "species": "Princess Tree (Paulownia tomentosa)",
+  "species": "Empress Tree (Paulownia tomentosa)",
   "age_estimate": "not documented",
   "girth_cm": 519,
   "location": {
@@ -200,8 +202,9 @@
   "transport": "Staten Island Ferry to St George, then S40 bus to Snug Harbor (route unchecked this pass)",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=60 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 65 in -> girth_cm 519 (pi x diameter). One official register: counts as enough; Parks entry: royal paulownia west of the Veterans Memorial Hall Playhouse, leaves up to a foot across, purple trumpet flowers in spring; 65 in diameter in the 1985 register; Tree Map ID 5602190. Commons photo dated Aug 2026 shows the campus in current use (lifecheck RECENT). Address conflict: Parks 914, Snug Harbor 1000 Richmond Terrace.",
-  "height_m": 20.0
+  "height_m": 20.0,
+  "story": "When NYC Parks measured this tree for its first Great Trees list in 1985, the trunk came out at 65 inches across, about 5.2 metres round. It is a royal paulownia, the tree also called princess tree or empress tree, and it stands on the grounds of Snug Harbor on Staten Island, on the west side of the Veterans Memorial Hall Playhouse off Chapel Road. Parks notes two things that make it easy to pick out. The leaves can grow up to a foot across, big enough to look like a mistake, and in spring the tree carries purple trumpet-shaped flowers. Parks put its height at about 20 metres, so the trunk is the surprise rather than the crown. Snug Harbor is a cultural centre now, and its grounds are free to walk, open from dawn to dusk every day; a few buildings and the Chinese Scholar's Garden charge a small fee, but the paulownia is outside them. One honest caveat about the address. Parks lists the tree at 914 Richmond Terrace and Snug Harbor gives its own address as 1000, but both point to the same campus, and the playhouse is the landmark that matters. The measurements are forty years old. If you have seen it lately or know when it went in, tell us.",
+  "how_to_recognise": "You can recognise it by the leaves, up to a foot across, and in spring by purple trumpet flowers. It stands on the west side of the Veterans Memorial Hall Playhouse at Snug Harbor, off Chapel Road."
  },
  {
   "id": "nyc_078",
@@ -252,8 +255,9 @@
   "transport": "Eltingville SIR station about 1.2 km; S55/S59 buses on Hylan Blvd (unchecked)",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=64 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 46 in -> girth_cm 367 (pi x diameter). One official register: counts as enough; Parks entry: one of the trees remaining on the former farm of Frederick Law Olmsted, who farmed here 1848 to 1855 before Central Park; stands 35 ft off the left front corner of the house, three feet off the driveway; canopy spread 40.5 ft; Tree Map ID 4997115. Pin is the Parks tree point (house corner). iNaturalist 2024-05-20 within radius (alive thin but fine).",
-  "height_m": 25.0
+  "height_m": 25.0,
+  "story": "This cedar of Lebanon grows on the farm where Frederick Law Olmsted worked the land for seven years before he designed Central Park. Olmsted farmed here, on Staten Island, from 1848 to 1855, and NYC Parks counts the cedar as one of the trees still remaining from that farm. Parks stops short of saying who planted it or when, so we do too. It is tempting to credit Olmsted with it, and the honest answer is that nobody has. What Parks does give is a location so exact you could use it as directions. The tree stands 35 feet off the left front corner of the house and three feet off the driveway. It measures 46 inches across the trunk, about 3.7 metres round, stands about 82 feet tall and spreads its crown about 40 feet. It has been on the Great Trees list since 1985, the city's roll of its most remarkable trees, and an iNaturalist record from May 2024 places it alive. A black walnut that Parks says Olmsted planted stands about 25 metres away, so see both. The park around the house is free. Nobody has dated the cedar. If you know when it went in, tell us.",
+  "how_to_recognise": "You can recognise it by the position, 35 feet off the left front corner of the house and three feet off the driveway. It stands at Olmsted-Beil House Park, 4515 Hylan Boulevard, about 25 metres from the black walnut."
  },
  {
   "id": "nyc_080",
@@ -278,7 +282,8 @@
   "transport": "Eltingville SIR station about 1.2 km (unchecked bus routes)",
   "location_precision": "confirmed",
   "curation_status": "flagged",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=126 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 52 in -> girth_cm 415 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: black walnut planted by Frederick Law Olmsted at the house where he lived 1848 to 1855; property has many trees planted around 1850. Parks claim only; no second source. 52 in diameter; Tree Map ID 4998269. About 25 m from the cedar (second tree at the same house)."
+  "story": "Before Frederick Law Olmsted designed Central Park, he was a farmer on Staten Island, and NYC Parks says he planted this black walnut himself. Olmsted lived in the house on Hylan Boulevard from 1848 to 1855, and Parks, naming the tree a Great Tree in 2024, credits him with this one and says many of the trees on the property went in around 1850. That makes it, if Parks is right, a tree put in the ground by the man who went on to design Central Park. Take it as Parks' claim. It is the only source we have, and we have found no letter or planting record to back it, so we state it as theirs rather than as settled fact. The tree itself makes a quieter case. Its trunk measures 52 inches across, about 4.2 metres round, which is a big black walnut by any measure. It stands east of the house, about 25 metres from a cedar of Lebanon that Parks also counts among the trees left from Olmsted's farm, so the two make a single stop. The house sits in Olmsted-Beil House Park, a free public park in the Great Kills area. Nobody has measured its age directly. If you know more about what Olmsted planted here, or have seen his own notes on it, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, 52 inches across, the big walnut on the east side of the house. It stands in Olmsted-Beil House Park, 4515 Hylan Boulevard, about 25 metres from the cedar of Lebanon."
  },
  {
   "id": "nyc_081",
@@ -303,8 +308,9 @@
   "transport": "Tottenville SIR station about 1.1 km on foot",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=67 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 65 in -> girth_cm 519 (pi x diameter). One official register: counts as enough; Parks entry: behind the Conference House (the 1776 peace conference house); sycamore with canopy spread 55 ft; 65 in diameter and 89 ft in the 1985 register; Tree Map ID 5601261. iNaturalist 2026-09-30 within radius.",
-  "height_m": 27.2
+  "height_m": 27.2,
+  "story": "The house in front of this sycamore hosted a peace conference in 1776. It is the Conference House in Tottenville, on Staten Island, and NYC Parks puts this American sycamore directly behind it. Do not read that as a witness claim. Parks gives no planting date, and nothing says the tree was here for the conference. The house is the history and the tree is its neighbour today. What the register does give is size. When the tree was first listed as a Great Tree in 1985, it measured 65 inches across the trunk, about 5.2 metres round, and 89 feet tall, with a crown spreading 55 feet. Those are the figures of a tree that has had plenty of room, out on open parkland at the back of a historic house rather than on a crowded street. The tree is still there. An iNaturalist record from September 2026 sits near the Parks point, and the city keeps it in its forestry inventory. Conference House Park is free and open daily; the house museum charges a small fee in season, but the sycamore stands outside it on public parkland. Nobody has dated it. If you know when it went in, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, 65 inches across, and its crown spreading about 55 feet. It stands directly behind the Conference House in Conference House Park, Tottenville."
  },
  {
   "id": "nyc_082",
@@ -662,8 +668,9 @@
   "transport": "Grand Army Plaza station (2, 3), about 0.5 km on foot",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=11 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 74 in -> girth_cm 590 (pi x diameter). One official register: counts as enough; Parks entry id=11, Tree Map ID 4999341: multiple trunks; shows how the introduced English elm differs in shape from the vase-shaped American elm; 74 in diameter, 96 ft, canopy 66 ft (1985). The multi-trunk diameter is a mass, not one stem. iNaturalist 2026-05-18 within radius.",
-  "height_m": 29.2
+  "height_m": 29.2,
+  "story": "NYC Parks keeps this elm on its Great Trees list partly as a lesson in shape. The native American elm grows in the shape of a vase. This is an English elm, an introduced tree, and it does something else entirely. It rises on several trunks at once, and Parks chose it in 1985 to show the difference. The size is real but needs one caveat. Parks measured it at 74 inches across, about 5.9 metres round, which would make it a giant among elms, but that figure is taken across a mass of several stems rather than one trunk, so do not compare it with a single-stemmed tree. The other numbers need no caveat. It stood 96 feet tall at that survey, about 29 metres, with a crown spreading 66 feet over the West Drive, and it is still there; an iNaturalist record from May 2026 sits near the Parks point. It stands on Prospect Park's West Drive, between the Garfield entrance and Meadowport Arch, on free public parkland open daily. The Camperdown Elm near the Boathouse is in the same park for a second stop. Nobody has dated this one. If you know when it went in, tell us.",
+  "how_to_recognise": "You can recognise it by its several trunks rising together, unlike the single vase-shaped stem of an American elm. It stands beside Prospect Park's West Drive, between the Garfield entrance and Meadowport Arch."
  },
  {
   "id": "nyc_096",

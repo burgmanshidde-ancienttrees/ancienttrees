@@ -1,16 +1,18 @@
 {
-  "city": "St. Augustine",
-  "leads": [
-    {
-      "name": "Tree of Life / other named oaks",
-      "note": "searches found no St. Augustine Tree of Life; no oak found at Huguenot, Tolomato, Plaza, Castillo, Fort Matanzas or Anastasia in fetched sources; Florida champion layer has no St. Johns County rows",
-      "reason": "no photo or exact pin in reach"
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Magnolia Avenue oak canopy",
-      "reason": "an avenue of live oaks, not one collectible point; no named individual tree found"
-    }
-  ]
+ "city": "St. Augustine",
+ "leads": [
+  {
+   "name": "Tree of Life / other named oaks",
+   "note": "searches found no St. Augustine Tree of Life; no oak found at Huguenot, Tolomato, Plaza, Castillo, Fort Matanzas or Anastasia in fetched sources; Florida champion layer has no St. Johns County rows",
+   "reason": "no photo or exact pin in reach",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Magnolia Avenue oak canopy",
+   "reason": "an avenue of live oaks, not one collectible point; no named individual tree found"
+  }
+ ]
 }

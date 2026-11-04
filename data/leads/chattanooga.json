@@ -1,46 +1,50 @@
 {
-  "leads": [
-    {
-      "name": "Chattanooga Post Oak (tallest post oak recorded in the US, 112 ft, 270 points; Tennessee runner-up champion, August 2018)",
-      "reason": "lead: behind the old Quarry Golf Course clubhouse, Reads Lake Rd at Mountain Creek Rd; property sold to a developer in April 2018 and development proposed, public access was informal; check whether it still stands before use",
-      "status": "lead",
-      "source": "https://www.chattanoogan.com/2018/8/22/374901/Tallest-Post-Oak-Tree-In-U.S..aspx"
-    },
-    {
-      "name": "Overcup oak in Reflection Riding's Discovery Forest treehouse",
-      "reason": "lead: only a 1982-era Garden Club of America project page says about 100 years old; ticketed nature center; no recent source",
-      "status": "lead",
-      "source": "https://www.gcamerica.org/civicprojects/details/id/325"
-    },
-    {
-      "name": "Baylor School red oak (largest red oak in Hamilton County)",
-      "reason": "blocked: fell 30 Nov 2015 onto a school building",
-      "status": "blocked",
-      "source": "https://www.chattanoogan.com/2015/12/1/313549/Hamilton-County-s-Largest-Red-Oak-Falls.aspx"
-    },
-    {
-      "name": "Hamilton County Courthouse Osage orange (wedding tree)",
-      "reason": "blocked: fell 2012",
-      "status": "blocked",
-      "source": "https://www.timesfreepress.com/news/2012/oct/24/county-officials-consider-best-use-osage-tree/"
-    },
-    {
-      "name": "Chickamauga Battlefield witness trees",
-      "reason": "none found: park rangers say they know of no witness trees still standing (search summary of a NPS-related article); no import",
-      "status": "blocked",
-      "source": ""
-    },
-    {
-      "name": "Chattanooga Notable Trees Register (city Tree Commission)",
-      "reason": "lead: the register exists only as a private ArcGIS map (pwgis.chattanooga.gov, 403); ask the Tree Commission for the list; unlock for the city",
-      "status": "lead",
-      "source": "https://register.chattanooga.gov/pay-and-apply/permits-applications/notable-tree-location"
-    },
-    {
-      "name": "Coolidge Park, Chattanooga National Cemetery, Forest Hills Cemetery, UTC campus (Linda T. Collins Arboretum), Point Park",
-      "reason": "searched or considered, no named individual tree found; UTC brochure lists species only",
-      "status": "lead",
-      "source": "https://www.utc.edu/sites/default/files/2026-07/utc-arboretum-brochure-accessible.pdf"
-    }
-  ]
+ "leads": [
+  {
+   "name": "Chattanooga Post Oak (tallest post oak recorded in the US, 112 ft, 270 points; Tennessee runner-up champion, August 2018)",
+   "reason": "lead: behind the old Quarry Golf Course clubhouse, Reads Lake Rd at Mountain Creek Rd; property sold to a developer in April 2018 and development proposed, public access was informal; check whether it still stands before use",
+   "status": "lead",
+   "source": "https://www.chattanoogan.com/2018/8/22/374901/Tallest-Post-Oak-Tree-In-U.S..aspx",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Overcup oak in Reflection Riding's Discovery Forest treehouse",
+   "reason": "lead: only a 1982-era Garden Club of America project page says about 100 years old; ticketed nature center; no recent source",
+   "status": "lead",
+   "source": "https://www.gcamerica.org/civicprojects/details/id/325",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Baylor School red oak (largest red oak in Hamilton County)",
+   "reason": "blocked: fell 30 Nov 2015 onto a school building",
+   "status": "blocked",
+   "source": "https://www.chattanoogan.com/2015/12/1/313549/Hamilton-County-s-Largest-Red-Oak-Falls.aspx"
+  },
+  {
+   "name": "Hamilton County Courthouse Osage orange (wedding tree)",
+   "reason": "blocked: fell 2012",
+   "status": "blocked",
+   "source": "https://www.timesfreepress.com/news/2012/oct/24/county-officials-consider-best-use-osage-tree/"
+  },
+  {
+   "name": "Chickamauga Battlefield witness trees",
+   "reason": "none found: park rangers say they know of no witness trees still standing (search summary of a NPS-related article); no import",
+   "status": "blocked",
+   "source": ""
+  },
+  {
+   "name": "Chattanooga Notable Trees Register (city Tree Commission)",
+   "reason": "lead: the register exists only as a private ArcGIS map (pwgis.chattanooga.gov, 403); ask the Tree Commission for the list; unlock for the city",
+   "status": "lead",
+   "source": "https://register.chattanooga.gov/pay-and-apply/permits-applications/notable-tree-location"
+  },
+  {
+   "name": "Coolidge Park, Chattanooga National Cemetery, Forest Hills Cemetery, UTC campus (Linda T. Collins Arboretum), Point Park",
+   "reason": "searched or considered, no named individual tree found; UTC brochure lists species only",
+   "status": "lead",
+   "source": "https://www.utc.edu/sites/default/files/2026-07/utc-arboretum-brochure-accessible.pdf"
+  }
+ ]
 }

@@ -1,81 +1,93 @@
 {
-  "leads": [
-    {
-      "name": "Trees Atlanta champion, Manor Ridge Dr NW willow oak (33.8240,-84.4066)",
-      "city": "atlanta",
-      "reason": "Program says PublicAccess beside a street address; the 2026 list reports a first-place Willow Oak lost; no source of its status or public ground.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Bitsy Grant / Manor Ridge water oak (33.8239,-84.4074)",
-      "city": "atlanta",
-      "reason": "Water oak, 249.6 in, 'off Peachtree Battle': park edge unclear, no second source.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Emory Lullwater scarlet oak (33.8004,-84.3156)",
-      "city": "atlanta",
-      "reason": "Located at the President's House, private residence grounds; not public.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Emory Lullwater tulip poplar (33.7785,-84.3342)",
-      "city": "atlanta",
-      "reason": "Near 864 Lullwater Rd; address is a house, no public viewing point established.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Storza Woods tulip poplar, Atlanta Botanical Garden (33.7926,-84.3726)",
-      "city": "atlanta",
-      "reason": "Ticketed garden; no second source or exact trunk found this pass; revisit for a ticketed-garden entry.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Piedmont Park black oak (33.7842,-84.3726), pin oaks (33.7867,-84.3717 and 33.7931,-84.3712), deodar cedar near Noguchi Playscape (33.7854,-84.3778), Park Tavern willow oak 'Pancho' (33.7821,-84.3697)",
-      "city": "atlanta",
-      "reason": "Real program rows in the city's main park but only the program row corroborates each; a pin oak 'in front of the Greystone Building' is called state champion by treeinspection.com (12.5 ft girth, 83 ft; not a verified source), program row says 158 in and 82.8 ft. Needs one park or news source per tree.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Oakland Cemetery cherry laurel (city champion)",
-      "city": "atlanta",
-      "reason": "Oakland blog confirms it is the city champion cherry laurel but gives no location or size; not in the filtered lead list.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Agnes Scott College incense cedar (33.7673,-84.2929)",
-      "city": "atlanta",
-      "reason": "Atlanta Magazine April 2025 rank 1, 93.7 in, 71.9 ft, 'public access', a mystery tree more than 180 years old and the only one of its kind known in Atlanta area; campus: no evidence the grounds are open, hold for access check.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Our Lady of Perpetual Hope cherrybark oak (hospice)",
-      "city": "atlanta",
-      "reason": "Atlanta Magazine April 2025: 276 in, 102 ft, one of the largest in Atlanta, but public access only with permission from the hospice.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Westview Cemetery beech (33.7464,-84.4522), catalpa (33.7462,-84.4520) and yellow buckeye (33.7481,-84.4483)",
-      "city": "atlanta",
-      "reason": "Cemetery trees, program rows only; not researched this pass for lack of time.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    },
-    {
-      "name": "Herbert Taylor Park scarlet oak, black oak, pecan, tuliptree (33.7980,-84.3416 and nearby)",
-      "city": "atlanta",
-      "reason": "Same park as atl_001/002, program rows only; add to the park entry if a second source appears. Beech Valley Rd beeches (1263, 1275) are beside private homes.",
-      "source": "data/leads/_atlanta-champions.json",
-      "status": "lead"
-    }
-  ]
+ "leads": [
+  {
+   "name": "Trees Atlanta champion, Manor Ridge Dr NW willow oak (33.8240,-84.4066)",
+   "city": "atlanta",
+   "reason": "Program says PublicAccess beside a street address; the 2026 list reports a first-place Willow Oak lost; no source of its status or public ground.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead",
+   "species": "Willow (Salix sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Bitsy Grant / Manor Ridge water oak (33.8239,-84.4074)",
+   "city": "atlanta",
+   "reason": "Water oak, 249.6 in, 'off Peachtree Battle': park edge unclear, no second source.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead"
+  },
+  {
+   "name": "Emory Lullwater scarlet oak (33.8004,-84.3156)",
+   "city": "atlanta",
+   "reason": "Located at the President's House, private residence grounds; not public.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead"
+  },
+  {
+   "name": "Emory Lullwater tulip poplar (33.7785,-84.3342)",
+   "city": "atlanta",
+   "reason": "Near 864 Lullwater Rd; address is a house, no public viewing point established.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead",
+   "species": "Tulip Tree (Liriodendron sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Storza Woods tulip poplar, Atlanta Botanical Garden (33.7926,-84.3726)",
+   "city": "atlanta",
+   "reason": "Ticketed garden; no second source or exact trunk found this pass; revisit for a ticketed-garden entry.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead"
+  },
+  {
+   "name": "Piedmont Park black oak (33.7842,-84.3726), pin oaks (33.7867,-84.3717 and 33.7931,-84.3712), deodar cedar near Noguchi Playscape (33.7854,-84.3778), Park Tavern willow oak 'Pancho' (33.7821,-84.3697)",
+   "city": "atlanta",
+   "reason": "Real program rows in the city's main park but only the program row corroborates each; a pin oak 'in front of the Greystone Building' is called state champion by treeinspection.com (12.5 ft girth, 83 ft; not a verified source), program row says 158 in and 82.8 ft. Needs one park or news source per tree.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Oakland Cemetery cherry laurel (city champion)",
+   "city": "atlanta",
+   "reason": "Oakland blog confirms it is the city champion cherry laurel but gives no location or size; not in the filtered lead list.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead",
+   "species": "Cherry (Prunus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Agnes Scott College incense cedar (33.7673,-84.2929)",
+   "city": "atlanta",
+   "reason": "Atlanta Magazine April 2025 rank 1, 93.7 in, 71.9 ft, 'public access', a mystery tree more than 180 years old and the only one of its kind known in Atlanta area; campus: no evidence the grounds are open, hold for access check.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead",
+   "species": "Cedar (Cedrus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Our Lady of Perpetual Hope cherrybark oak (hospice)",
+   "city": "atlanta",
+   "reason": "Atlanta Magazine April 2025: 276 in, 102 ft, one of the largest in Atlanta, but public access only with permission from the hospice.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Westview Cemetery beech (33.7464,-84.4522), catalpa (33.7462,-84.4520) and yellow buckeye (33.7481,-84.4483)",
+   "city": "atlanta",
+   "reason": "Cemetery trees, program rows only; not researched this pass for lack of time.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead"
+  },
+  {
+   "name": "Herbert Taylor Park scarlet oak, black oak, pecan, tuliptree (33.7980,-84.3416 and nearby)",
+   "city": "atlanta",
+   "reason": "Same park as atl_001/002, program rows only; add to the park entry if a second source appears. Beech Valley Rd beeches (1263, 1275) are beside private homes.",
+   "source": "data/leads/_atlanta-champions.json",
+   "status": "lead"
+  }
+ ]
 }
