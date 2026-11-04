@@ -21,6 +21,9 @@ struct ContentView: View {
     /// The one-time ask for a name after a sign-in that brought none.
     @State private var askingForName = false
     @State private var askedForName = false
+    /// Loading the account runs once at a time: the launch task and the scene
+    /// turning active both start it at a cold launch (Kit/SingleFlight.swift).
+    @State private var accountLoad = SingleFlight()
     @State fileprivate var saved: Saved = {
         let s = Saved()
         s.seedFromLaunchArguments()
@@ -369,14 +372,18 @@ struct ContentView: View {
 
     private func reloadTheAccount() async {
         guard account.isSignedIn else { return }
-        let token = await account.freshToken()
-        await profiles.load(userId: account.session?.userId, token: token)
-        await nameTheAccount(token: token)
-        if let token { await moderation.load(me: account.session?.userId, token: token) }
-        await CloudSync.merge(account: account, saved: saved)
-        sightings.restorePending()
-        await SightingSync.merge(account: account, sightings: sightings)
-        await myVotes.load(account: account)
+        // One at a time: a run already under way (the launch's merge, or an
+        // earlier call) is waited for rather than doubled.
+        await accountLoad.run {
+            let token = await account.freshToken()
+            await profiles.load(userId: account.session?.userId, token: token)
+            await nameTheAccount(token: token)
+            if let token { await moderation.load(me: account.session?.userId, token: token) }
+            await CloudSync.merge(account: account, saved: saved)
+            sightings.restorePending()
+            await SightingSync.merge(account: account, sightings: sightings)
+            await myVotes.load(account: account)
+        }
     }
 
     private func forgetIfSignedOut() {
@@ -1203,18 +1210,22 @@ struct ContentView: View {
             // said so. Refreshing on launch means the app never gets there.
             if account.isSignedIn {
                 await account.refreshIfNeeded()
-                await CloudSync.merge(account: account, saved: saved)
-                // And the trees somebody added themselves, which until today
-                // lived on one phone and nowhere else (Hidde, 2026-08-27:
-                // "niemand wil een backup my trees knop, je wilt gewoon dat dit
-                // automatisch goed gaat"). Photographs included: the words on
-                // their own would bring back a list of names with no pictures,
-                // which is most of what was lost rather than all of it.
-                // ANYTHING PARKED AT THE LAST SIGN-OUT FIRST, so the merge's
-                // push carries it and the account finally gets the copy it
-                // never had. Signing back in is what these were kept for.
-                sightings.restorePending()
-                await SightingSync.merge(account: account, sightings: sightings)
+                // Through the same single flight as reloadTheAccount, which
+                // the scene turning active starts at this same moment.
+                await accountLoad.run {
+                    await CloudSync.merge(account: account, saved: saved)
+                    // And the trees somebody added themselves, which until today
+                    // lived on one phone and nowhere else (Hidde, 2026-08-27:
+                    // "niemand wil een backup my trees knop, je wilt gewoon dat dit
+                    // automatisch goed gaat"). Photographs included: the words on
+                    // their own would bring back a list of names with no pictures,
+                    // which is most of what was lost rather than all of it.
+                    // ANYTHING PARKED AT THE LAST SIGN-OUT FIRST, so the merge's
+                    // push carries it and the account finally gets the copy it
+                    // never had. Signing back in is what these were kept for.
+                    sightings.restorePending()
+                    await SightingSync.merge(account: account, sightings: sightings)
+                }
             }
             // Every later change goes the same way. Set here because this is
             // the only place that knows about both, so Sightings itself keeps

@@ -117,4 +117,16 @@ public enum WebLink {
         while out.hasSuffix("-") { out.removeLast() }
         return out
     }
+
+    /// The website's address for a path on it ("lisbon", "lisbon/walks"),
+    /// never a crash: a slug carrying a character a URL cannot hold is
+    /// escaped, and if even that fails the home page is what gets shared.
+    public static let home = URL(string: "https://ancienttrees.app/")!
+    public static func site(_ path: String) -> URL {
+        var c = URLComponents()
+        c.scheme = "https"
+        c.host = "ancienttrees.app"
+        c.path = "/" + path
+        return c.url ?? home
+    }
 }

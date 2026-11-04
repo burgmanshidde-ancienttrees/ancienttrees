@@ -461,6 +461,65 @@ struct TreeMap: UIViewRepresentable {
         return abs(coverage - aimedCoverage) > 1 && aimedCoverage <= 0
     }
 
+    /// Everything about one tree that its drawn pin reads (MapLayers.setTrees),
+    /// so a refresh that moved a pin, gave a tree its first photograph (photo
+    /// pins win a collision) or fixed a name redraws, while one that changed
+    /// nothing a pin shows does not. The ids alone missed all three until the
+    /// app was restarted (audit, 2026-11-04).
+    struct TreeDrawKey: Hashable, Sendable {
+        let id: String
+        let lat: Double
+        let lng: Double
+        let name: String
+        let species: String
+        let peak: Peak?
+        let paid: Bool
+        let photo: Bool
+        let saves: Int
+        let mini: Bool
+        let collected: Bool
+        let favourite: Bool
+    }
+
+    static func drawKeys(_ trees: [Tree], collected: Set<String>,
+                         favourites: Set<String>) -> Set<TreeDrawKey> {
+        Set(trees.map { t in
+            TreeDrawKey(id: t.id, lat: t.lat, lng: t.lng, name: t.name,
+                        species: t.species, peak: t.peak, paid: t.paidEntry,
+                        photo: t.photo != nil, saves: t.saves ?? 0,
+                        mini: t.mini == true,
+                        collected: collected.contains(t.id),
+                        favourite: favourites.contains(t.id))
+        })
+    }
+
+    /// The same for your own pins: where it stands, what it is called and
+    /// whether it has a photograph, which is what setMine draws.
+    struct MineDrawKey: Hashable, Sendable {
+        let id: UUID
+        let lat: Double
+        let lng: Double
+        let name: String
+        let photo: Bool
+    }
+
+    static func drawKeys(
+        _ mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)]
+    ) -> Set<MineDrawKey> {
+        Set(mine.map { MineDrawKey(id: $0.id, lat: $0.lat, lng: $0.lng,
+                                   name: $0.name, photo: $0.photo != nil) })
+    }
+
+    /// Whether two routes draw the same line: every point, not the count, so
+    /// two walks of equal length do not keep the first one's line.
+    static func sameRoute(_ a: [CLLocationCoordinate2D], _ aReal: Bool,
+                          _ b: [CLLocationCoordinate2D], _ bReal: Bool) -> Bool {
+        guard a.count == b.count, aReal == bReal else { return false }
+        for i in a.indices where a[i].latitude != b[i].latitude
+            || a[i].longitude != b[i].longitude { return false }
+        return true
+    }
+
     /// The smallest box holding every one of these, or nil when there are none.
     static func box(of points: [CLLocationCoordinate2D]) -> MLNCoordinateBounds? {
         guard !points.isEmpty else { return nil }
@@ -504,14 +563,15 @@ struct TreeMap: UIViewRepresentable {
                               route: [CLLocationCoordinate2D],
                               routeIsReal: Bool,
                               declutter: Bool)?
-        private var drawnTreeIDs: Set<String> = []
+        private var drawnTreeIDs: Set<TreeMap.TreeDrawKey> = []
         /// The very array, saved and collected sets last drawn, so an update
         /// that changed none of them costs nothing (see sync).
         private var drawnTrees: [Tree] = []
         private var drawnCollected: Set<String> = []
         private var drawnFavourites: Set<String> = []
-        private var drawnMineIDs: Set<String> = []
-        private var drawnRoute = 0
+        private var drawnMineIDs: Set<TreeMap.MineDrawKey> = []
+        private var drawnRoute: [CLLocationCoordinate2D] = []
+        private var drawnRouteIsReal = false
         private var breath: Timer?
         /// The constraint that keeps the recentre control above the sheet.
         var recentreLift: NSLayoutConstraint?
@@ -556,7 +616,7 @@ struct TreeMap: UIViewRepresentable {
             if styleReady {
                 drawnTreeIDs = []
                 drawnMineIDs = []
-                drawnRoute = 0
+                drawnRoute = []
                 pending = (trees: parent.trees, mine: parent.mine,
                            route: parent.route, routeIsReal: parent.routeIsReal,
                            declutter: parent.declutter)
@@ -644,17 +704,18 @@ struct TreeMap: UIViewRepresentable {
                 }
             let treesChanged = !sameTrees || parent.collected != drawnCollected
                 || parent.favourites != drawnFavourites
+            // A new array is not yet a new map: compare what the pins draw
+            // (TreeMap.drawKeys), so a refresh that moved a pin, added a
+            // photograph or fixed a name redraws and an identical one does not.
             var wantTrees = drawnTreeIDs
             if treesChanged {
-                let ids = Set(trees.map(\.id))
-                wantTrees = ids
-                    .union(parent.collected.intersection(ids).map { "c:" + $0 })
-                    .union(parent.favourites.intersection(ids).map { "f:" + $0 })
+                wantTrees = TreeMap.drawKeys(trees, collected: parent.collected,
+                                             favourites: parent.favourites)
                 drawnTrees = trees
                 drawnCollected = parent.collected
                 drawnFavourites = parent.favourites
             }
-            let wantMine = Set(mine.map { $0.id.uuidString })
+            let wantMine = TreeMap.drawKeys(mine)
             MainActor.assumeIsolated {
             if wantTrees != drawnTreeIDs {
                 drawnTreeIDs = wantTrees
@@ -667,8 +728,9 @@ struct TreeMap: UIViewRepresentable {
                 drawnMineIDs = wantMine
                 MapLayers.setMine(mine, on: style, declutter: declutter, zoom: map.zoomLevel)
             }
-            if route.count != drawnRoute {
-                drawnRoute = route.count
+            if !TreeMap.sameRoute(route, routeIsReal, drawnRoute, drawnRouteIsReal) {
+                drawnRoute = route
+                drawnRouteIsReal = routeIsReal
                 MapLayers.setRoute(route, real: routeIsReal, on: style)
             }
             }

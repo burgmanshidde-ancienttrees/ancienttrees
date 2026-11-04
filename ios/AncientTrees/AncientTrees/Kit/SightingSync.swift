@@ -59,10 +59,16 @@ enum SightingSync {
             // while the account held it all along. The retry touches the
             // picture and nothing else, because the row itself may carry an
             // edit of this phone's that has not been sent yet.
-            if let known, known.photo == nil, let file = row["photo"] as? String,
-               let data = await download(file, token: s.accessToken),
-               let img = UIImage(data: data) {
-                sightings.attachPhoto(id, image: img)
+            // ONCE: `known` is the snapshot from before this retry, so the
+            // picture below would be fetched a second time for a row that is
+            // also newer on the account (audit, 2026-11-04).
+            var askedForPicture = false
+            if let known, known.photo == nil, let file = row["photo"] as? String {
+                askedForPicture = true
+                if let data = await download(file, token: s.accessToken),
+                   let img = UIImage(data: data) {
+                    sightings.attachPhoto(id, image: img)
+                }
             }
             if known != nil,
                !takeRemote(remoteUpdated: stamp(row["updated_at"]),
@@ -93,7 +99,7 @@ enum SightingSync {
             // only correcting and whose picture is already on the phone: it is
             // the same photograph, and the local file is the original.
             var picture: UIImage? = nil
-            if known?.photo == nil, let file = row["photo"] as? String,
+            if !askedForPicture, known?.photo == nil, let file = row["photo"] as? String,
                let data = await download(file, token: s.accessToken) {
                 picture = UIImage(data: data)
             }

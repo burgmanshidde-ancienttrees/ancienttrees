@@ -138,7 +138,7 @@ struct WalkDetail: View {
         // it is where this walk is listed. Sending that is honest and it works
         // for somebody without the app, which is the whole point of sharing.
         .toolbar {
-            ShareTo(url: URL(string: "https://ancienttrees.app/\(walk.citySlug)/walks")!,
+            ShareTo(url: WebLink.site("\(walk.citySlug)/walks"),
                     subject: walk.name,
                     message: "\(walk.name): \(trees.count) ancient trees in \(walk.city), on foot.",
                     label: "Share these walks", from: "walks")
