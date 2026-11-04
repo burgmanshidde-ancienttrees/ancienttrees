@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 night run (third attempt, 20:55 UTC): nothing shipped, pace cap full
+
+- Pulled, checked claims (only salt-lake-city stands, kept on purpose: its 18 stories are written and wait in data/research). READY leads are earlier rejects or thin. The 25-tree daily publish (a6af681b5) went out at 19:42 UTC, so the cap has room again about 19:42 UTC on 2026-11-05. More research or writing now only lengthens the held shelf (hundreds of written trees). Next run with room: merge slc_007 to slc_014, car_003, hnl_032 and the NYC set, then the held US/UK builders (`--max N`).
+
 ## 2026-11-04 night run (20:40 UTC)
 
 - Rung 1: the one waiting reader photograph (edi_008, Cramond sycamore, a wide path scene) held; the Cramond Association's lead shows the trunk better. No new tree notes.
