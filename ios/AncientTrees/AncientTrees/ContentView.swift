@@ -80,6 +80,20 @@ struct ContentView: View {
         }
     }
 
+    /// When the newest page on a stack is a city or a country, it becomes the
+    /// map framed on that place instead (see the onChange of each path).
+    private func redirectPlace(_ p: [Route], _ id: Int) {
+        guard let last = p.last else { return }
+        let hit: MapSearch.Hit
+        switch last {
+        case .city(let slug): hit = .city(slug: slug, name: slug, lat: 0, lng: 0)
+        case .country(let name): hit = .country(name)
+        default: return
+        }
+        path(id).wrappedValue.removeLast()
+        navigator.searchOnMap = SearchOnMap(hit: hit)
+    }
+
     private func clearPath(_ id: Int) {
         switch id {
         case 0: mapPath = []
@@ -778,6 +792,12 @@ struct ContentView: View {
             // And for a city or country found in Discover's search.
             if new != nil { mapPath = []; tab = 0 }
         }
+        // A city or a country pushed by a NavigationLink lands on a stack
+        // without passing navigator.push: take it off and send it to the map,
+        // so every way in is the one map screen (2026-11-04).
+        .onChange(of: explorePath) { _, p in redirectPlace(p, 1) }
+        .onChange(of: collectPath) { _, p in redirectPlace(p, 2) }
+        .onChange(of: mapPath) { _, p in redirectPlace(p, 0) }
         .onChange(of: navigator.showOnMap) { _, new in
             // POP the map's own stack as well. The tree page you
             // tapped the inset on is usually pushed ON the map tab, so
@@ -1110,7 +1130,12 @@ struct ContentView: View {
             // screen that ships unseen.
             if let spec = args.first(where: { $0.hasPrefix("-open=") })?.dropFirst(6),
                let route = Self.debugRoute(String(spec)) {
-                path(tab).wrappedValue = [route]
+                // A city or a country goes through the same door a tap uses,
+                // so it lands on the map (onChange of navigator.push).
+                switch route {
+                case .city, .country: navigator.push = route
+                default: path(tab).wrappedValue = [route]
+                }
             }
             // -snack shows "Added to Want to visit" a beat after launch, so
             // its place over each screen can be looked at without a finger.
