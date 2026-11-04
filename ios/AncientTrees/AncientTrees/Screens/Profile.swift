@@ -68,6 +68,7 @@ struct ProfileView: View {
     /// by tapping a card on this screen.
     @State private var contributing = false   // -contribute: launchSheet below
     @State private var givingFeedback = false   // -feedback: launchSheet below
+    @State private var askingPlus = false       // -plusask: launchSheet below
     @State private var editingProfile = false
     /// Privacy settings, pushed from its row (-privacy opens it for the sweep).
     @State private var showingPrivacy = false
@@ -122,6 +123,8 @@ struct ProfileView: View {
         .sheet(isPresented: $contributing) { ContributeView() }
         .launchSheet("-feedback", isPresented: $givingFeedback)
         .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
+        .launchSheet("-plusask", isPresented: $askingPlus)
+        .sheet(isPresented: $askingPlus) { PlusQuestionSheet(city: "", openedFrom: "settings") }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
         .sheet(item: $refusedPermission) { PermissionRecovery(permission: $0) }
         // The paywall still opens, from the locked rows themselves; it no
@@ -377,6 +380,28 @@ struct ProfileView: View {
             Text("Help").font(.eyebrow).textCase(.uppercase)
                 .foregroundStyle(Brand.inkSoft).tracking(0.8)
             VStack(spacing: 0) {
+                // THE PLUS QUESTION (Hidde, 2026-11-04): a row, the way a
+                // promise belongs in Settings (2026-08-25), first in Help
+                // because it asks for help choosing. PlusAsk.swift.
+                Button {
+                    Measure.event("plus-open", ["from": "settings"])
+                    askingPlus = true
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "sparkles").frame(width: 20)
+                            .foregroundStyle(Brand.moss)
+                        Text("Ancient Trees Plus").font(.callout)
+                            .foregroundStyle(Brand.ink)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("profile-plus")
+                Divider().padding(.leading, 48)
                 // HIS ASK, 2026-08-26: a general feedback button. The open
                 // answers are the material the Plus line gets designed from
                 // (drafts/PLUS_THINKING.md).
