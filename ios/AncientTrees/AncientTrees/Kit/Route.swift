@@ -57,6 +57,10 @@ public enum Route: Hashable {
     /// proposals please build"): the field on top, then Suggested. It was a
     /// full-height sheet with white under the share row.
     case findPeople
+    /// YOUR FOLLOWERS OR WHO YOU FOLLOW, pushed from the counts on My trees
+    /// like Find people beside them (Hidde, 2026-11-04: "build this"; Strava,
+    /// Polarsteps). They were a sheet with Done. true is followers.
+    case followList(followers: Bool)
 
     public enum Index: String, Hashable {
         case cities, countries, species, oldest

@@ -28,7 +28,7 @@ struct PeopleView: View {
     /// Find people is a PUSHED PAGE since 2026-11-04 (Route.findPeople), the
     /// field on top and "Suggested" under it (Hidde: "i like all your
     /// proposals please build"; CONVENTIONS.md "The empty Find people
-    /// screen"). The two lists stay sheets with Done. The catalogue tells it
+    /// screen"). The two lists are pushed too since the same day. The catalogue tells it
     /// which places are yours and who the feed names as their ambassadors.
     var catalogue: Catalogue? = nil
 
@@ -183,27 +183,14 @@ struct PeopleView: View {
         }
     }
 
-    /// Pushed for search, a sheet with Done for the two lists.
+    /// Pushed, all three (the two lists since 2026-11-04, Route.followList).
     var body: some View {
-        if source == .search {
-            page
-                .navigationTitle("Find people")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar(.visible, for: .navigationBar)
-                .accessibilityIdentifier("people-sheet")
-        } else {
-            NavigationStack {
-                page
-                    .navigationTitle(source == .followers ? "Followers" : "Following")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Done") { dismiss() }
-                        }
-                    }
-            }
+        page
+            .navigationTitle(source == .search ? "Find people"
+                             : source == .followers ? "Followers" : "Following")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar(.visible, for: .navigationBar)
             .accessibilityIdentifier("people-sheet")
-        }
     }
 
     private var page: some View {
@@ -414,9 +401,8 @@ struct PeopleView: View {
             // and name together, as Polarsteps' and Instagram's
             // rows do; Follow and the ellipsis stay their own.
             // Pushed, the profile goes on top of this page and Back
-                // returns here; from a list sheet, the sheet closes first.
+                // returns here.
                 Button {
-                    if source != .search { dismiss() }
                     navigator.push = .person(p.user_id)
                 } label: {
             HStack(spacing: 12) {

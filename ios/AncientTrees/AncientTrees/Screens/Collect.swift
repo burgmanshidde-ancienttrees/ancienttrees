@@ -76,14 +76,6 @@ struct CollectView: View {
     /// below); nothing is kept on the device.
     @State private var earlyAdopter = false
     @State private var showingEarlyAdopter = false   // -earlyadoptersheet: launchSheet below
-    /// Which list of people is open, if any. An enum rather than two booleans,
-    /// so both cannot be true at once.
-    private enum PeopleList: String, Identifiable {
-        case followers, following
-        var id: String { rawValue }
-        var source: PeopleView.Source { self == .followers ? .followers : .following }
-    }
-    @State private var peopleList: PeopleList?
     // -sheet=full opens the sheet as the page, so the screen sweep can
     // photograph the Polarsteps transition here as well as on the map tab
     // (Hidde, 2026-10-02: "this transition should also be on the map page and
@@ -365,7 +357,6 @@ struct CollectView: View {
         }) { EarlyAdopterSheet() }
         .launchSheet("-profile-edit", isPresented: $editingProfile)
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
-        .sheet(item: $peopleList) { which in PeopleView(source: which.source) }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .general)
                 .environment(account).environment(saved)
@@ -963,7 +954,7 @@ struct CollectView: View {
                             // hit-test-only trick, because contentShape everywhere
                             // else in this codebase enlarges an already-44 frame,
                             // it does not fake one.
-                            Button { peopleList = .followers } label: {
+                            Button { navigator.push = .followList(followers: true) } label: {
                                 (Text("\(profiles.followers)").fontWeight(.semibold).foregroundStyle(Brand.ink)
                                     + Text(" followers"))
                                     // The 44 INSIDE the button, so the button
@@ -978,7 +969,7 @@ struct CollectView: View {
                             // overhangs the row instead of pushing the lanes
                             // 30 points down (2026-10-10, the spacing pass).
                             .padding(.vertical, -12)
-                            Button { peopleList = .following } label: {
+                            Button { navigator.push = .followList(followers: false) } label: {
                                 (Text("\(profiles.following)").fontWeight(.semibold).foregroundStyle(Brand.ink)
                                     + Text(" following"))
                                     // The 44 INSIDE the button, so the button

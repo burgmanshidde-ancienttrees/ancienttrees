@@ -486,6 +486,8 @@ struct ContentView: View {
             PersonProfileView(userId: id, catalogue: cat)
         case .findPeople:
             PeopleView(catalogue: cat)
+        case .followList(let followers):
+            PeopleView(source: followers ? .followers : .following, catalogue: cat)
         case .treeMap(let id):
             if let t = cat.tree(id) {
                 TreeMapPage(tree: t, catalogue: cat)
