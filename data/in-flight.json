@@ -69,6 +69,48 @@
       "by": "session-f7ee8c1b",
       "claimed_at": "2026-11-04T08:19:21+00:00",
       "trees_at_claim": null
+    },
+    {
+      "target": "bath",
+      "kind": "verify",
+      "by": "session-d0c4e604",
+      "claimed_at": "2026-11-04T08:19:43+00:00",
+      "trees_at_claim": 5
+    },
+    {
+      "target": "bristol",
+      "kind": "verify",
+      "by": "session-d0c4e604",
+      "claimed_at": "2026-11-04T08:19:44+00:00",
+      "trees_at_claim": 12
+    },
+    {
+      "target": "westonbirt",
+      "kind": "verify",
+      "by": "session-d0c4e604",
+      "claimed_at": "2026-11-04T08:20:14+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "wells",
+      "kind": "verify",
+      "by": "session-d0c4e604",
+      "claimed_at": "2026-11-04T08:20:17+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "exeter",
+      "kind": "verify",
+      "by": "session-d0c4e604",
+      "claimed_at": "2026-11-04T08:20:20+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "somerset-dorset-yews",
+      "kind": "verify",
+      "by": "session-d0c4e604",
+      "claimed_at": "2026-11-04T08:20:23+00:00",
+      "trees_at_claim": null
     }
   ]
 }
