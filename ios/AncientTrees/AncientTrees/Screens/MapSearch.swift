@@ -302,7 +302,7 @@ struct MapSearch: View {
         }
     }
 
-    private struct Place {
+    struct Place {
         let id: String
         let name: String
         let sub: String
@@ -313,7 +313,19 @@ struct MapSearch: View {
     /// The website's hierarchy, in Swift. Countries whose name starts with the
     /// query come first, then cities, then species, and trees only once the
     /// query is four characters or more and matches the start of a word.
+    /// Worked out once per query and lane, and read back by every place that
+    /// asks (the result list and the town card) until either changes.
     private var ranked: (places: [Place], species: [String], trees: [Tree]) {
+        let idx = index   // first: a new catalogue clears the remembered result
+        let key = RankedKey(query: query, lane: lane, lat: origin.lat, lng: origin.lng)
+        if cache.rankedKey == key { return cache.ranked }
+        let out = rank(idx)
+        cache.rankedKey = key
+        cache.ranked = out
+        return out
+    }
+
+    private func rank(_ idx: SearchIndex) -> (places: [Place], species: [String], trees: [Tree]) {
         let q = Self.fold(query)
         guard q.count >= 2 else { return ([], [], []) }
 
@@ -349,11 +361,7 @@ struct MapSearch: View {
 
         var trees: [Tree] = []
         if q.count >= 4 || lane == .trees {
-            trees = catalogue.trees.filter {
-                let n = Self.fold($0.name)
-                return n.hasPrefix(q) || n.contains(" " + q)
-            }
-            trees = Editorial.rank(trees, origin: origin)
+            trees = Editorial.rank(idx.treesNamed(q), origin: origin)
         }
         // Eight rows, the website's budget: places first, two species, and
         // trees only in whatever room is left.
@@ -388,7 +396,7 @@ struct MapSearch: View {
     private func entry(for hit: Hit) -> RecentSearches.Entry? {
         switch hit {
         case .city(let slug, let name, _, _):
-            let c = biggestCities.first { $0.slug == slug }
+            let c = index.cityBySlug[slug]
             return .init(kind: "city", ref: slug, label: name,
                          sub: c.map { "\($0.country) · \(treesLabel($0.count))" } ?? "")
         case .country(let name):
@@ -421,11 +429,10 @@ struct MapSearch: View {
     /// tree or species is no longer ours is left out.
     private var recentRows: [RecentRow] {
         guard !recent.rows.isEmpty else { return [] }
-        let cities = biggestCities
         return recent.rows.compactMap { e in
             switch e.kind {
             case "city":
-                guard let c = cities.first(where: { $0.slug == e.ref }) else { return nil }
+                guard let c = index.cityBySlug[e.ref] else { return nil }
                 return RecentRow(entry: e, name: c.name, sub: Text("\(c.country) · \(treesLabel(c.count))"),
                                  hit: .city(slug: c.slug, name: c.name, lat: c.lat, lng: c.lng))
             case "country":
@@ -607,7 +614,7 @@ struct MapSearch: View {
     }
 
     /// Case and accents folded, so Cadiz finds Cádiz and Zurich finds Zürich.
-    private static func fold(_ s: String) -> String {
+    static func fold(_ s: String) -> String {
         s.folding(options: [.diacriticInsensitive, .caseInsensitive], locale: .current)
     }
 
@@ -623,28 +630,76 @@ struct MapSearch: View {
         var id: String { slug }
     }
 
-    private var biggestCities: [CityRow] {
-        var out: [CityRow] = []
-        for (slug, ts) in catalogue.citiesWithTrees {
-            let n = Double(ts.count)
-            var la = 0.0, ln = 0.0
-            for t in ts { la += t.lat; ln += t.lng }
-            out.append(CityRow(slug: slug, name: ts[0].city, country: ts[0].country,
-                               count: ts.count, lat: la / n, lng: ln / n))
-        }
-        // The most VISITED first, as the website sorts it (Hidde, 2026-09-26:
-        // "niet met de meeste bomen maar de meest bezochte pagina's"). The
-        // figure is the website's, sent in browse.json; tree count breaks ties.
-        let pop = { (slug: String) in catalogue.facets.popularity(city: slug) }
-        return out.sorted { (pop($0.slug), $0.count) > (pop($1.slug), $1.count) }
-    }
-
-    private var countries: [(name: String, count: Int, cities: Int)] {
-        catalogue.countriesWithTrees.map {
-            (name: $0.key, count: $0.value.count, cities: Set($0.value.map(\.citySlug)).count)
-        }
-        .sorted { $0.count > $1.count }
-    }
-
+    // BUILT ONCE PER CATALOGUE, not once per read (2026-11-04). These were
+    // computed properties, so every keystroke rebuilt a centre for every city
+    // and sorted them several times over (the ranking, the exact-name check,
+    // the recent rows and the empty state each asked), and from four letters
+    // folded every tree name again. The search screen now builds them the
+    // first time it is drawn and reads them back after.
+    private var biggestCities: [CityRow] { index.cities }
+    private var countries: [(name: String, count: Int, cities: Int)] { index.countries }
     private var allSpecies: [String] { catalogue.speciesNames }
+
+    private var index: SearchIndex { cache.index(for: catalogue) }
+
+    /// Everything the search reads from the catalogue that does not depend
+    /// on what was typed.
+    struct SearchIndex {
+        let cities: [CityRow]
+        let cityBySlug: [String: CityRow]
+        let countries: [(name: String, count: Int, cities: Int)]
+        /// Every tree with its name folded, in catalogue order.
+        let foldedNames: [(tree: Tree, folded: String)]
+
+        init(_ catalogue: Catalogue) {
+            var out: [CityRow] = []
+            for (slug, ts) in catalogue.citiesWithTrees {
+                let n = Double(ts.count)
+                var la = 0.0, ln = 0.0
+                for t in ts { la += t.lat; ln += t.lng }
+                out.append(CityRow(slug: slug, name: ts[0].city, country: ts[0].country,
+                                   count: ts.count, lat: la / n, lng: ln / n))
+            }
+            // The most VISITED first, as the website sorts it (Hidde, 2026-09-26:
+            // "niet met de meeste bomen maar de meest bezochte pagina's"). The
+            // figure is the website's, sent in browse.json; tree count breaks ties.
+            let pop = { (slug: String) in catalogue.facets.popularity(city: slug) }
+            cities = out.sorted { (pop($0.slug), $0.count) > (pop($1.slug), $1.count) }
+            cityBySlug = Dictionary(cities.map { ($0.slug, $0) }, uniquingKeysWith: { a, _ in a })
+            countries = catalogue.countriesWithTrees.map {
+                (name: $0.key, count: $0.value.count, cities: Set($0.value.map(\.citySlug)).count)
+            }
+            .sorted { $0.count > $1.count }
+            foldedNames = catalogue.trees.map { (tree: $0, folded: MapSearch.fold($0.name)) }
+        }
+
+        /// Trees whose name starts with the query or has a word that does,
+        /// in catalogue order. `q` is already folded.
+        func treesNamed(_ q: String) -> [Tree] {
+            foldedNames.filter { $0.folded.hasPrefix(q) || $0.folded.contains(" " + q) }.map(\.tree)
+        }
+    }
+
+    /// A class, so filling it while drawing changes nothing SwiftUI watches
+    /// (the map's TreesMemo pattern).
+    final class SearchCache {
+        private var built: SearchIndex?
+        private var builtFor: (version: String, count: Int)?
+        var rankedKey: RankedKey?
+        var ranked: (places: [Place], species: [String], trees: [Tree]) = ([], [], [])
+
+        func index(for catalogue: Catalogue) -> SearchIndex {
+            if let b = built, let k = builtFor,
+               k.version == catalogue.version, k.count == catalogue.trees.count { return b }
+            let b = SearchIndex(catalogue)
+            built = b
+            builtFor = (catalogue.version, catalogue.trees.count)
+            rankedKey = nil
+            return b
+        }
+    }
+    struct RankedKey: Equatable {
+        let query: String, lane: Lane, lat: Double, lng: Double
+    }
+    @State private var cache = SearchCache()
 }

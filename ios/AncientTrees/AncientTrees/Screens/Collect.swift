@@ -62,6 +62,9 @@ struct CollectView: View {
     /// 2026-09-23 neither surface read the second one back (see
     /// Submission.mine).
     @State private var sent: [Submission.Sent] = []
+    /// Who the server answers above were asked for, after how many sends, and
+    /// when. Held in memory only, for this session (hard rule 11).
+    @State private var serverLoad: (who: String?, sends: Int, at: Date)?
     /// Debug scaffolding, the same family as -tab and -contribute: the sweep
     /// cannot tap a gear, and a screen no argument can open is a screen that
     /// ships unlooked at.
@@ -70,7 +73,8 @@ struct CollectView: View {
     /// -people: Find people pushed on open, as -settings pushes Settings.
     @State private var openPeople = ProcessInfo.processInfo.arguments.contains("-people")
     /// The early-adopter badge and its one-time sheet (Kit/EarlyAdopter.swift).
-    /// Both come from the server on every open; nothing is kept here.
+    /// Both come from the server (once per account and session, see the task
+    /// below); nothing is kept on the device.
     @State private var earlyAdopter = false
     @State private var showingEarlyAdopter = false   // -earlyadoptersheet: launchSheet below
     /// Which list of people is open, if any. An enum rather than two booleans,
@@ -368,24 +372,41 @@ struct CollectView: View {
             }
         }
         .onChange(of: navigator.openWantToVisit) { _, _ in takeWantToVisit() }
-        .task {
+        // Keyed on WHO is signed in, so a sign-in or a sign-out while this tab
+        // is open asks the server again at once.
+        .task(id: account.isSignedIn ? (account.session?.userId ?? "") : nil) {
             if openSettings { openSettings = false; navigator.push = .profile }
             if openPeople { openPeople = false; navigator.push = .findPeople }
-            sent = await Submission.mine(token: account.freshToken())
             // A PROFILE THAT NEVER ARRIVED IS ASKED FOR AGAIN (Hidde,
             // 2026-10-12: signed in, trees showing, but no name and no
             // followers). The account load runs once at launch and on sign
             // in; when that one read failed, the header stayed nameless
-            // until the next launch. Opening My trees asks again.
+            // until the next launch. Opening My trees asks again. (No request
+            // once it has arrived: profiles.meLoaded.)
             if account.isSignedIn, !profiles.meLoaded {
                 await profiles.load(userId: account.session?.userId,
                                     token: await account.freshToken())
             }
+            // ONCE PER ACCOUNT, not on every visit (2026-11-04). This task
+            // restarts each time the tab appears, and each time it sent two
+            // more requests for answers that rarely change. It asks again for
+            // another account (the id above), after a submission was sent
+            // from this phone (Submission.sentCount), when the last answer
+            // did not fully arrive, and once it is ten minutes old, so a
+            // verdict on a tip still shows up without a relaunch.
+            let who = account.isSignedIn ? (account.session?.userId ?? "") : nil
+            if let last = serverLoad, last.who == who, last.sends == Submission.sentCount,
+               Date().timeIntervalSince(last.at) < 600 {
+                return
+            }
+            let sends = Submission.sentCount
+            sent = await Submission.mine(token: account.freshToken())
             // The badge from the server's created_at and the feed's cutoff;
             // the sheet once per account, the flag the website also writes.
             // -earlyadopter draws the badge for the sweep; -earlyadoptersheet
             // also opens the sheet (launchSheet below).
             let args = ProcessInfo.processInfo.arguments
+            var complete = true
             if args.contains("-earlyadopter") || args.contains("-earlyadoptersheet") {
                 earlyAdopter = true
             } else if account.isSignedIn, let token = await account.freshToken(),
@@ -394,6 +415,11 @@ struct CollectView: View {
                 if s.hasBadge, !s.seenSheet { showingEarlyAdopter = true }
             } else {
                 earlyAdopter = false
+                // Signed in with no answer is a failed read, not a "no".
+                if account.isSignedIn { complete = false }
+            }
+            if complete && !Task.isCancelled {
+                serverLoad = (who: who, sends: sends, at: Date())
             }
         }
         .launchSheet("-earlyadoptersheet", isPresented: $showingEarlyAdopter)
@@ -515,8 +541,8 @@ struct CollectView: View {
                 mine: mineShown.map {
                     (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
                      photo: sightings.thumbnail($0, maxPixel: 160)) },
-                collected: Set(saved.collected.map(\.treeId)),
-                favourites: Set(saved.favourites.map(\.treeId)),
+                collected: saved.collectedIds,
+                favourites: saved.favouriteIds,
                 // Your own tree selects too, the same step as ours (2026-10-20).
                     onSelectMine: { id in
                         guard let m = sightings.all.first(where: { $0.id == id }) else { return }

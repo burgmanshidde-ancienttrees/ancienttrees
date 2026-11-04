@@ -176,8 +176,15 @@ public enum Submission {
     private static func post(_ body: [String: Any], token: String?) async -> Bool {
         // No token is not an error here: a submission is accepted on the
         // publishable key, and Supa.request falls back to it.
-        await Supa.post(path, token: token, body: body, prefer: "return=minimal")
+        let ok = await Supa.post(path, token: token, body: body, prefer: "return=minimal")
+        if ok { await MainActor.run { sentCount += 1 } }
+        return ok
     }
+
+    /// How many submissions this phone has sent in this session. My trees
+    /// keeps the server's list of your tips for the session and reads this to
+    /// know when to ask for it again (Collect.swift, 2026-11-04). Memory only.
+    @MainActor public private(set) static var sentCount = 0
 }
 
 extension Submission {

@@ -121,7 +121,20 @@ struct MapTab: View {
     /// that away.
     private var walksHere: [Walk] {
         guard Launch.walks else { return [] }
-        return catalogue.walks.compactMap { w -> (Walk, Double)? in
+        // Read about ten times per redraw (shelf, chip, card); resolved once
+        // per view and catalogue (viewMemo, 2026-11-04).
+        let f = focus
+        let key = WalksKey(lat: f.lat, lng: f.lng, reach: reachKm,
+                           version: catalogue.version, count: catalogue.walks.count)
+        if viewMemo.walksKey == key { return viewMemo.walks }
+        let out = walksNear(f)
+        viewMemo.walksKey = key
+        viewMemo.walks = out
+        return out
+    }
+
+    private func walksNear(_ focus: (lat: Double, lng: Double)) -> [Walk] {
+        catalogue.walks.compactMap { w -> (Walk, Double)? in
             // NEAREST STOP, not the first one. Judging a walk by its first tree
             // made it flicker in and out while the list was scrolled, because
             // scrolling the list moves the map, and a walk whose first stop
@@ -186,12 +199,10 @@ struct MapTab: View {
     private var month: Int { Calendar.current.component(.month, from: Date()) }
     /// The ids you have collected, worked out once per redraw rather than
     /// asked per tree while filtering fifteen hundred of them.
-    private var collectedIds: Set<String> {
-        Set(saved.entries.values.filter { $0.visitedAt != nil }.map(\.treeId))
-    }
-    private var favouriteIds: Set<String> {
-        Set(saved.favourites.map(\.treeId))
-    }
+    /// Since 2026-11-04 the store keeps both sets and rebuilds them only when
+    /// an entry changes, so the many reads per redraw cost a lookup each.
+    private var collectedIds: Set<String> { saved.collectedIds }
+    private var favouriteIds: Set<String> { saved.favouriteIds }
     /// The point the list is about: where the map is looking once it has been
     /// moved, and where you are standing until then.
     private var focus: (lat: Double, lng: Double) {
@@ -285,8 +296,10 @@ struct MapTab: View {
     /// The trees of the place the map was sent to.
     private var placeTrees: [Tree] {
         switch focusPlace {
-        case .city(let slug): catalogue.trees.filter { $0.citySlug == slug }
-        case .country(let name): catalogue.trees.filter { $0.country == name }
+        // The catalogue's own index: the same trees in the same order as
+        // filtering the whole list, without the scan on every read.
+        case .city(let slug): catalogue.trees(inCity: slug)
+        case .country(let name): catalogue.trees(inCountry: name)
         case nil: []
         }
     }
@@ -385,23 +398,89 @@ struct MapTab: View {
         // YOUR OWN TREES COUNT TOO (Hidde, 2026-09-27: "it says 2 trees while
         // it's clearly 3"). They are pins on this map and cards in the list
         // below it, so a count that leaves them out disagrees with the screen.
+        // Ours are counted once per settled view (viewMemo); yours are a
+        // handful and are counted live.
+        let key = viewKey
+        let ours: Int
+        if viewMemo.reachKey == key {
+            ours = viewMemo.reach
+        } else {
+            ours = Self.oursInReach(catalogue.trees, region: mapRegion, focus: focus,
+                                    filters: filters, month: month,
+                                    collected: key.collected, favourites: key.favourites)
+            viewMemo.reachKey = key
+            viewMemo.reach = ours
+        }
         guard let r = mapRegion else {
-            return catalogue.trees.filter {
-                filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
-                    && $0.distanceKm(from: focus.lat, focus.lng) <= 6
-            }.count + mineShown.filter { Geo.km(focus, ($0.lat, $0.lng)) <= 6 }.count
+            return ours + mineShown.filter { Geo.km(focus, ($0.lat, $0.lng)) <= 6 }.count
         }
         let latMin = r.center.latitude - r.span.latitudeDelta / 2
         let latMax = r.center.latitude + r.span.latitudeDelta / 2
         let lngMin = r.center.longitude - r.span.longitudeDelta / 2
         let lngMax = r.center.longitude + r.span.longitudeDelta / 2
-        return catalogue.trees.filter {
-            $0.lat >= latMin && $0.lat <= latMax && $0.lng >= lngMin && $0.lng <= lngMax
-                && filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
-        }.count + mineShown.filter {
+        return ours + mineShown.filter {
             $0.lat >= latMin && $0.lat <= latMax && $0.lng >= lngMin && $0.lng <= lngMax
         }.count
     }
+
+    /// How many of OUR trees are under the view: the rectangle once the map
+    /// has a region, six kilometres around the focus before it does. A pure
+    /// function of its inputs, so it can be remembered (see viewMemo).
+    static func oursInReach(_ trees: [Tree], region: MKCoordinateRegion?,
+                            focus: (lat: Double, lng: Double),
+                            filters: MapFilters, month: Int,
+                            collected: Set<String>, favourites: Set<String>) -> Int {
+        guard let r = region else {
+            return trees.filter {
+                filters.keeps($0, month: month, collected: collected, favourites: favourites)
+                    && $0.distanceKm(from: focus.lat, focus.lng) <= 6
+            }.count
+        }
+        let latMin = r.center.latitude - r.span.latitudeDelta / 2
+        let latMax = r.center.latitude + r.span.latitudeDelta / 2
+        let lngMin = r.center.longitude - r.span.longitudeDelta / 2
+        let lngMax = r.center.longitude + r.span.longitudeDelta / 2
+        return trees.filter {
+            $0.lat >= latMin && $0.lat <= latMax && $0.lng >= lngMin && $0.lng <= lngMax
+                && filters.keeps($0, month: month, collected: collected, favourites: favourites)
+        }.count
+    }
+
+    /// EVERYTHING the list and the count depend on. Every pan, every frame of
+    /// a sheet drag and every 20 m of GPS redraws this screen, and the list
+    /// used to filter and sort all 4,000 trees each time (and the count
+    /// filter them again). Now they are worked out once per value of this
+    /// key and read back while it holds, the TreesMemo pattern above.
+    private struct ViewKey: Equatable {
+        let hasRegion: Bool
+        let minLat, maxLat, minLng, maxLng: Double
+        let focusLat, focusLng: Double
+        let filters: MapFilters, month: Int
+        let collected: Set<String>, favourites: Set<String>
+        let version: String, count: Int, query: String
+    }
+    private var viewKey: ViewKey {
+        let b = visibleBox, f = focus
+        return ViewKey(hasRegion: mapRegion != nil,
+                       minLat: b.minLat, maxLat: b.maxLat, minLng: b.minLng, maxLng: b.maxLng,
+                       focusLat: f.lat, focusLng: f.lng, filters: filters, month: month,
+                       collected: collectedIds, favourites: favouriteIds,
+                       version: catalogue.version, count: catalogue.trees.count, query: query)
+    }
+    private struct WalksKey: Equatable {
+        let lat, lng, reach: Double
+        let version: String, count: Int
+    }
+    /// A class, so remembering a result does not itself redraw the view.
+    private final class ViewMemo {
+        var listedKey: ViewKey?
+        var listed: [(tree: Tree, km: Double)] = []
+        var reachKey: ViewKey?
+        var reach = 0
+        var walksKey: WalksKey?
+        var walks: [Walk] = []
+    }
+    @State private var viewMemo = ViewMemo()
 
     private var listed: [(tree: Tree, km: Double)] {
         // WHAT IS ON SCREEN, and nothing else (Hidde, 2026-08-26, twice in a
@@ -424,26 +503,44 @@ struct MapTab: View {
         // The rectangle comes from the map's own region, so panning and
         // zooming change it by definition and the list cannot drift away from
         // what the eye sees.
-        let box = visibleBox
-        let near = catalogue.trees
+        //
+        // Remembered per settled view (viewMemo, 2026-11-04): read several
+        // times per redraw, worked out once per change of what it depends on.
+        let key = viewKey
+        if viewMemo.listedKey == key { return viewMemo.listed }
+        let out = Self.listedTrees(catalogue.trees, box: visibleBox, focus: focus,
+                                   filters: filters, month: month,
+                                   collected: key.collected, favourites: key.favourites,
+                                   query: query)
+        viewMemo.listedKey = key
+        viewMemo.listed = out
+        return out
+    }
+
+    /// The list's trees for one view, a pure function of its inputs.
+    private static func listedTrees(_ trees: [Tree], box: Box, focus: (lat: Double, lng: Double),
+                                    filters: MapFilters, month: Int,
+                                    collected: Set<String>, favourites: Set<String>,
+                                    query: String) -> [(tree: Tree, km: Double)] {
+        guard query.isEmpty else {
+            let q = query.lowercased()
+            return trees
+                .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
+                          || $0.species.lowercased().contains(q) }
+                .filter { filters.keeps($0, month: month, collected: collected, favourites: favourites)
+                            && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng)) }
+                .prefix(40)
+                .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
+        }
+        let near = trees
             .filter { box.contains($0.lat, $0.lng) }
-            .filter { filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds) }
+            .filter { filters.keeps($0, month: month, collected: collected, favourites: favourites) }
             .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
             .filter { filters.keepsDistance($0.1) }
             .sorted { $0.1 < $1.1 }
             .prefix(60)
             .map { (tree: $0.0, km: $0.1) }
-        guard !query.isEmpty else {
-            return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
-        }
-        let q = query.lowercased()
-        return catalogue.trees
-            .filter { $0.name.lowercased().contains(q) || $0.city.lowercased().contains(q)
-                      || $0.species.lowercased().contains(q) }
-            .filter { filters.keeps($0, month: month, collected: collectedIds, favourites: favouriteIds)
-                        && filters.keepsDistance($0.distanceKm(from: focus.lat, focus.lng)) }
-            .prefix(40)
-            .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
+        return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
     }
 
     /// The sighting behind the selected pin when it is one of yours, and only
@@ -651,7 +748,7 @@ struct MapTab: View {
         // or a pin still moves the map, because that is a choice.
         .onChange(of: navigator.showCityOnMap) { _, new in
             guard let slug = new else { return }
-            let here = catalogue.trees.filter { $0.citySlug == slug }
+            let here = catalogue.trees(inCity: slug)
             navigator.showCityOnMap = nil
             guard !here.isEmpty else { return }
             // The city's own frame, the same arithmetic the city page's preview
@@ -750,7 +847,7 @@ struct MapTab: View {
                     // this one. The map holds its place and simply looks at the
                     // city; its trees and its walks arrive in the sheet
                     // underneath, which is what a city IS here.
-                    let ts = catalogue.trees.filter { $0.citySlug == slug }
+                    let ts = catalogue.trees(inCity: slug)
                     if let first = ts.first {
                         var minLat = first.lat, maxLat = first.lat
                         var minLng = first.lng, maxLng = first.lng
@@ -772,7 +869,7 @@ struct MapTab: View {
                     // showed you Barcelona and nothing else: a country is a
                     // question about spread, and the answer is the whole
                     // spread.
-                    let ts = catalogue.trees.filter { $0.country == name }
+                    let ts = catalogue.trees(inCountry: name)
                     if let first = ts.first {
                         var minLat = first.lat, maxLat = first.lat
                         var minLng = first.lng, maxLng = first.lng

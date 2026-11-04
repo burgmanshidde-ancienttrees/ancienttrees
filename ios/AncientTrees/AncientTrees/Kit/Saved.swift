@@ -71,7 +71,26 @@ public final class Saved {
     /// read each other's collection.
     private let defaults: UserDefaults
 
-    public private(set) var entries: [String: Entry] = [:]
+    public private(set) var entries: [String: Entry] = [:] {
+        didSet { idSetsCache = nil }
+    }
+
+    /// The ids you have collected and the ids on Want to visit, built once per
+    /// change to `entries` rather than once per read. The map read each of
+    /// these eight or nine times per redraw and rebuilt the set every time
+    /// (2026-11-04). Reading `entries` first keeps a view that asks for these
+    /// subscribed to the store, cached or not.
+    public var collectedIds: Set<String> { idSets.collected }
+    public var favouriteIds: Set<String> { idSets.favourites }
+    @ObservationIgnored private var idSetsCache: (collected: Set<String>, favourites: Set<String>)?
+    private var idSets: (collected: Set<String>, favourites: Set<String>) {
+        let e = entries
+        if let c = idSetsCache { return c }
+        let c = (collected: Set(e.values.filter { $0.visitedAt != nil }.map(\.treeId)),
+                 favourites: Set(e.values.filter { $0.favourite }.map(\.treeId)))
+        idSetsCache = c
+        return c
+    }
 
     /// Called with every deliberate change so the cloud half can follow, set by
     /// ContentView because this type has no business knowing about an account.
