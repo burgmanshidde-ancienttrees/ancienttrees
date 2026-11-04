@@ -15816,6 +15816,22 @@
     },
     {
       "date": "2026-11-04",
+      "kind": "write",
+      "target": "bath+bristol+wells+glastonbury",
+      "tokens": 217699,
+      "trees": 18,
+      "note": "18 stories, 0 held, Magog photograph found and approved (Geograph). Glastonbury's oldest moves to Magog. Place fields in data/research/uk-west-places-a.json."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "write",
+      "target": "westonbirt+cotswolds+somerset-dorset-yews+exeter+dartmoor",
+      "tokens": 254084,
+      "trees": 23,
+      "note": "23 stories, Meavy Oak held (no evidence it stands after 2019), 8 Geograph photographs approved, 1 held. Place fields for 19 places in data/research/uk-west-places-b.json."
+    },
+    {
+      "date": "2026-11-04",
       "kind": "verify",
       "target": "st-augustine+tallahassee (us florida texas)",
       "tokens": 148620,

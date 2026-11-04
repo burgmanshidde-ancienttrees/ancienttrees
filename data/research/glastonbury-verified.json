@@ -1,0 +1,70 @@
+[
+  {
+    "id": "gls_002",
+    "name": "Magog, the Surviving Oak of Gog and Magog",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "none",
+    "location": {
+      "address": "Edge of Wick Farm, eastern foot of Glastonbury Tor, near Stone Down Lane, Glastonbury",
+      "latitude": 51.1508,
+      "longitude": -2.6857,
+      "neighbourhood": "Wick, east of Glastonbury Tor"
+    },
+    "verified_sources": [
+      "https://newsletters.glastonburyconservation.org.uk/139/trees-gog.php",
+      "https://newsletters.glastonburyconservation.org.uk/117/gog+magog.php",
+      "https://greatbritishlife.co.uk/magazines/somerset/24465416.majestic-ancient-oak-yew-trees-across-somerset",
+      "https://en.wikipedia.org/wiki/Oaks_of_Avalon"
+    ],
+    "access": "Free to see. The oaks stand at the edge of Wick Farm beside the lane and footpath below Stone Down, at the eastern foot of Glastonbury Tor. They are on farmland, so view them from the path and do not go into the fields.",
+    "transport": "No railway station in Glastonbury; local bus to the town centre, then roughly 40 to 50 minutes' walk east past the foot of the Tor (about 2.5 km)",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "story": "Gog is dead, and Magog is hanging on. The two oaks at the foot of Stone Down, east of Glastonbury Tor, are the last of an ancient avenue or grove of oaks that once stood here. In 1906 the rest were felled to make farmland. One of the felled trees was reported at the time to be eleven feet across with more than 2,000 rings, a figure nobody can check now that the wood is gone.\n\nThe two that were spared carry the names of the legendary giants Gog and Magog, though even the Glastonbury Conservation Society admits nobody is sure which is which. What it can say is that the tree on the right, if you stand with the Tor behind you, still comes into green leaf every spring. Thirty years ago, the Society notes, the other oak looked much the healthier of the two. Now it is dead, its remains scarred by an accidental candle fire in April 2017, and the Woodland Trust's writer called the living one close to the end of her life in 2024.\n\nHow old Magog is, nobody knows. Popular accounts range from about a thousand years to more than two thousand. No girth has been published and no one has dated the living tree, so we leave the age open. If you have measured it, tell us.\n\nThe pair stand on farmland at the edge of Wick Farm. They are seen from the lane and footpath beside them.",
+    "how_to_recognise": "You can recognise it as the living one of the pair, the oak on the right when you stand with the Tor behind you; its partner is a dead, fire-scarred hulk. They stand at the edge of Wick Farm below Stone Down.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Wrinkled_but_living_-_geograph.org.uk_-_7371041.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Neil Owen, via Geograph and Wikimedia Commons",
+      "attribution_url": "https://www.geograph.org.uk/photo/7371041",
+      "status": "approved",
+      "width": 3000,
+      "height": 4000,
+      "taken_month": 12
+    }
+  },
+  {
+    "id": "gls_003",
+    "name": "The Yews of Chalice Well",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "age_basis": "none",
+    "girth_cm": 305,
+    "location": {
+      "address": "Chalice Well Gardens, 85-89 Chilkwell Street, Glastonbury BA6 8DD",
+      "latitude": 51.14444,
+      "longitude": -2.70583,
+      "neighbourhood": "Chilkwell, foot of Chalice Hill"
+    },
+    "verified_sources": [
+      "https://www.ancient-yew.org/yew_trees/chalice-well-glastonbury-2312/",
+      "https://www.ancient-yew.org/wp-content/uploads/2023/05/Somerset-non-churcyard.pdf"
+    ],
+    "access": "Paid entry to Chalice Well Gardens (run by the Chalice Well Trust, open to visitors; current hours and prices on chalicewell.org.uk, site not fetched)",
+    "transport": "No railway station in Glastonbury; local bus to the High Street, then about 15 minutes' walk along Chilkwell Street",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "location_site": {
+      "name": "Chalice Well Gardens, south end near the Holy Thorn",
+      "radius_m": 50
+    },
+    "story": "In 1961, digging beneath Chalice Well, excavators found the stump of a yew still in the ground where it had grown. Professor R.D. Preston of Leeds dated it to early Roman times, around 300 AD. The Ancient Yew Group, which records Britain's old yews, suggests it may have been an ancestor of the yews that grow beside the well today. That stump is long dead, and it says nothing about the age of the living trees. It does show that a yew grew at this spring in Roman Britain.\n\nThe living yews are harder to pin down. The largest are a pair of male yews at the south end of the garden, near the Holy Thorn, which the Yew Group measured in 2006 at between eight and ten feet round. No one has published an age for them. If you know more, tell us.\n\nThe garden's most photographed yew is a different tree. It splits into two stems close to the ground and joins up again at about six feet, leaving an opening between, and it goes by the name of the Yoni tree, after a female symbol, although the Yew Group points out that the tree itself is male. On the eastern edge of the garden stands another old yew whose two trunks have grown back together.\n\nChalice Well is a garden around a spring at the foot of Chalice Hill, run by the Chalice Well Trust, with paid entry.",
+    "how_to_recognise": "You can recognise the pair as the largest yews in the garden, two male trees 8 to 10 feet round. They stand at the south end of Chalice Well Gardens near the Holy Thorn; the yew that splits low and rejoins is a different tree.",
+    "paid_entry": true
+  }
+]

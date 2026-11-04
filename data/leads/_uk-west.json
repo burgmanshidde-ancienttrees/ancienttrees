@@ -1,0 +1,440 @@
+{
+  "note": "Candidates and rejects met by the West of England verify passes of 2026-11-04 (Bath, Wells, Glastonbury, Bristol, Westonbirt, Cotswolds, Somerset and Dorset churchyard yews, Exeter, Dartmoor). Each carries its reason. Woodland Trust Ancient Tree Inventory never used.",
+  "leads": [
+    {
+      "candidate": "Prince of Wales Oak / Cedar of Lebanon, Sydney Gardens (earlier rejects)",
+      "city": "bath",
+      "reason": "Cedar of Lebanon now has height 29 m and girth 3.6 m from the B&NES 2021 Sydney Gardens Tree Trail but still no planting date; folded into bat_009 notes as part of the railway trio. Prince of Wales Oak not revisited (no new source).",
+      "lat": 51.3862,
+      "lon": -2.3499,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Cedar of Lebanon and Blue Atlas Cedar, Sydney Gardens",
+      "city": "bath",
+      "reason": "Same trio as bat_009; Cedar of Lebanon 29 m, girth 3.6 m; Blue Atlas Cedar 24 m, girth 3.4 m. Could be its own entry if the writer wants a tree per page; no planting date.",
+      "lat": 51.3862,
+      "lon": -2.3499,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Second London Plane, Sydney Gardens (left of Holburne Museum entrance)",
+      "city": "bath",
+      "reason": "14 m, girth 5.21 m per the 2021 trail; second plane, no age; lead only.",
+      "lat": 51.3862,
+      "lon": -2.3499,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Coastal Redwood, Sydney Gardens",
+      "city": "bath",
+      "reason": "19 m, girth 2.95 m; no date; second redwood in Bath, bat_004 already covers one.",
+      "lat": 51.3862,
+      "lon": -2.3499,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Princess Victoria's Zelkova, Royal Victoria Park",
+      "city": "bath",
+      "reason": "Named in a Big Issue list; almost certainly bat_001 (Caucasian Elm = Zelkova carpinifolia) already live, not checked further.",
+      "lat": 51.3857,
+      "lon": -2.3673,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Royal Victoria Park champion trees (TROBI)",
+      "city": "bath",
+      "reason": "No champion entry found by search; Tree Register database not fetchable; Hanman 1857 manual on BHL could name planted specimens (not mined). No new tree verified.",
+      "lat": null,
+      "lon": null,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Prior Park veteran trees (beyond bat_005 yews)",
+      "city": "bath",
+      "reason": "Woodland Trust says many veteran trees; no individual tree named in any open source found.",
+      "lat": 51.3658,
+      "lon": -2.3457,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Batheaston St John churchyard yew and Larkhall St Saviour yew",
+      "city": "bath",
+      "reason": "AYG 2016 surveys: Batheaston yew girth 10 ft 9 in at 3 ft (about 3.3 m), Larkhall female yew 8 ft 1.5 in; Batheaston is outside Bath (about 3 km), Larkhall inside; neither verified beyond a search summary; Lansdown St Stephen has no yew.",
+      "lat": null,
+      "lon": null,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Grafted yews, Bishop's Palace Wells (AYG 6616)",
+      "city": "wells",
+      "reason": "Ancient Yew Group record quotes the Head Gardener (natural graft of male and female yew, 'few visitors notice'); no position within the 14 acres, no girth, no age: cannot be told apart or placed. Lead only.",
+      "lat": 51.209,
+      "lon": -2.643,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Cathedral Green cedars, Wells",
+      "city": "wells",
+      "reason": "Planning papers mention two cedars (trees 11 and 12) at Chain Gate; no age, no girth, no source naming them.",
+      "lat": 51.21,
+      "lon": -2.6445,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Black walnut and Chinese tulip tree, Bishop's Palace",
+      "city": "wells",
+      "reason": "Only seen in an English Garden magazine summary (Readly), page not fetched; Palace page itself lists Mulberry, Tulip, Indian Bean.",
+      "lat": 51.2092,
+      "lon": -2.643,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "St Cuthbert's churchyard and Cathedral cloister yews, Wells",
+      "city": "wells",
+      "reason": "No yew record found for either in AYG sources checked (diocese PDF excerpt covers only Chewton Mendip to Middle Chinnock).",
+      "lat": null,
+      "lon": null,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Holy Thorn in Glastonbury Abbey grounds",
+      "city": "glastonbury",
+      "reason": "Reading University page: a descendant survives at the abbey; the 1930s tree died 1991 (per gls_001 text), current one is a younger replacement, no date or size; paid entry. Lead only.",
+      "lat": 51.1452,
+      "lon": -2.716,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "candidate": "Gog (dead oak)",
+      "city": "glastonbury",
+      "reason": "Dead since about 1990s-2010s, fire 2017; folded into gls_002 as the dead twin, never a separate entry.",
+      "lat": 51.1508,
+      "lon": -2.6857,
+      "pass": "uk-west verify 2026-11-04 (bath)"
+    },
+    {
+      "name": "Leigh Woods veteran oak pollard (NT stage 1)",
+      "lat": 51.4543,
+      "lon": -2.6415,
+      "reason": "NT says about 400 years old, just past the first blue way-marker; no coordinates beyond the trail start (approx.), no girth: lead for a GPS fix",
+      "source": "nationaltrust.org.uk Leigh Woods veteran tree walk",
+      "coordinate_note": "area-level, approximate",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Leigh Woods Stags-head Oak",
+      "lat": 51.4555,
+      "lon": -2.643,
+      "reason": "NT stage 4, hollow stags-head veteran on the boundary track; coordinates only approximate (area, not tree), no measurements",
+      "source": "nationaltrust.org.uk Leigh Woods veteran tree walk",
+      "coordinate_note": "area-level, approximate",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Leigh Woods Monolith Beech and Layering Yew",
+      "lat": 51.4555,
+      "lon": -2.643,
+      "reason": "NT stages 5 and 6; beech reduced to a monolith (fungus), yew behind it layers; no coordinates or girth, approximate area only",
+      "source": "nationaltrust.org.uk Leigh Woods veteran tree walk",
+      "coordinate_note": "area-level, approximate",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Arnos Vale weeping horse chestnut",
+      "lat": 51.44229,
+      "lon": -2.56641,
+      "reason": "BTF only (ST6073 7163), no girth or age, unusual rather than old; entry is free per Bristol City Council but no second source",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Manor Hall horse chestnut, York Place Clifton",
+      "lat": 51.45483,
+      "lon": -2.6119,
+      "reason": "BTF girth 625 cm, 450 years, much the oldest in the city, but in the grounds of a university hall of residence; not clearly visible from public ground",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Cornwallis House holm oak, Clifton",
+      "lat": 51.4529,
+      "lon": -2.6208,
+      "reason": "Private grounds, BTF says no public access (visible only)",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Victory Park Brislington twin oaks",
+      "lat": 51.43746,
+      "lon": -2.54218,
+      "reason": "BTF only: two oaks 580 cm, perhaps 380 years (ST6241 7108, ST6254 7081), in hedges; no second source, two trees 300 m apart",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Oldbury Court north-edge oak",
+      "lat": 51.49202,
+      "lon": -2.52612,
+      "reason": "BTF only: 570 cm, 380 years, in woods above the Frome gorge (ST6357 7714); steep woodland, hard to find, single source",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Kings Weston Lane planes (three pollarded)",
+      "lat": 51.49718,
+      "lon": -2.6626,
+      "reason": "BTF: three giant planes 600 cm cut to about six metres, not visibly impressive any more; ensemble, poor collectible",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Riding for the Disabled ancient pollard oaks, Blaise (ST5576 7885, ST5589 7891)",
+      "lat": 51.50684,
+      "lon": -2.63882,
+      "reason": "BTF: footpath access across RDA fields; no girth, two trees, access by footpath only",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Badocks Wood five-trunk horse chestnut",
+      "lat": 51.49749,
+      "lon": -2.60484,
+      "reason": "BTF only: 550 cm total over five trunks (ST5811 7779), single source, no age",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Snuff Mills weeping small-leaved lime and weeping horse chestnut",
+      "lat": 51.48849,
+      "lon": -2.53198,
+      "reason": "BTF only: weeping limbs towards the river, 290 cm horse chestnut, unusual rather than old; single source",
+      "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Bishops Knoll Austrian black pine and coast redwood",
+      "lat": 51.4741,
+      "lon": -2.645,
+      "reason": "Woodland Trust names both, no measurements, no position",
+      "source": "woodlandtrust.org.uk/visiting-woods/woods/bishops-knoll/",
+      "coordinate_note": "area-level, approximate",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Bishops Knoll Wood pollard oaks (northern edge, one thought 700 years)",
+      "lat": 51.47551,
+      "lon": -2.64644,
+      "reason": "Woodland Trust: small number at northern edge and Old Sneed Park; BTF Bramble Lane line of pollards (ST5520 7537, 690 cm, 700 years) partly on private land; not placeable on public ground",
+      "source": "woodlandtrust.org.uk; BTF",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Stoke Lodge cedars",
+      "lat": 51.4848,
+      "lon": -2.6351,
+      "reason": "Already in data/leads/bristol.json: school-contested playing fields; not re-researched",
+      "source": "data/leads/bristol.json",
+      "coordinate_note": "area-level, approximate",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Trinity College oak (Stoke Park Road)",
+      "lat": 51.47714,
+      "lon": -2.62674,
+      "reason": "BTF: technically private, easily seen; on already blocked list, not re-researched",
+      "source": "data/leads/bristol.json",
+      "pass": "uk-west verify 2026-11-04 (bristol)"
+    },
+    {
+      "name": "Westonbirt Three Sisters giant redwoods (planted 1861)",
+      "lat": 51.609,
+      "lon": -2.213,
+      "reason": "no coordinate: only a Friends of Westonbirt quiz mentions them near Down Gate, planted 1861 for Holford's daughters; single secondary source",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Westonbirt Holford Ride incense cedar group and Mitchell Drive largest cedar",
+      "lat": null,
+      "lon": null,
+      "reason": "no photo or exact pin in reach; group of mainly 1910 plantings (FOWA tree of the month Jan 2018); ensemble",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Westonbirt Japanese bush spruce (UK champion, Specimen Avenue, over 27 m)",
+      "lat": null,
+      "lon": null,
+      "reason": "no photo or exact pin in reach; FOWA Nov 2023 only",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Westonbirt Erman's birch champion (24.2 m, 120 cm diameter, 2006)",
+      "lat": null,
+      "lon": null,
+      "reason": "no coordinate; figure seen only in a search summary of a forum thread",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Westonbirt Lime Avenue head redwood grove (17 giant redwoods)",
+      "lat": 51.6099,
+      "lon": -2.2108,
+      "reason": "blocked: grove of 17 (Redwood World trees 35-51), ensemble not one collectible point; tallest of the Old Arboretum redwoods, tree 26 at 44.6 m (51.61005, -2.2071) is a possible later single entry",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Westonbirt Dawn Redwoods (tallest in British Isles per Redwood World)",
+      "lat": 51.6092,
+      "lon": -2.2103,
+      "reason": "heights in Redwood World table 28.8 m and 27 m do not match the 'tallest' claim in its text; unresolved",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Westonbirt School yew (Ancient Yew Group 3470)",
+      "lat": null,
+      "lon": null,
+      "reason": "school grounds, access not evidenced",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Cold Aston (Aston Blank) churchyard yew",
+      "lat": 51.9,
+      "lon": -1.8,
+      "reason": "AYG 442 cm at 30 cm, Ancient 4-5 m; not pursued, time; page ancient-yew.org/yew_tree_database/cold-aston-aston-blank/",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Great Witcombe, Compton Abdale, Cheltenham-area churchyard yews",
+      "lat": null,
+      "lon": null,
+      "reason": "AYG girth grid 12 ft 4 in to 14 ft 8 in (under 450 cm), too small to rank",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Batsford Arboretum, Sezincote, Cirencester Park, Chipping Campden",
+      "lat": null,
+      "lon": null,
+      "reason": "not researched in this pass (time); no named individual trees located",
+      "pass": "uk-west verify 2026-11-04 (cotswolds)"
+    },
+    {
+      "name": "Melbury Sampford yew",
+      "place": {
+        "slug": "melbury-sampford",
+        "city": "Melbury Sampford",
+        "county": "Dorset"
+      },
+      "reason": "blocked: grounds of Melbury House chapel, no longer open to the public since 2012 (AYG note); girth unrecorded",
+      "source": "https://www.ancient-yew.org/yew_tree_database/melbury-sampford/",
+      "grid_ref": "ST577060",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "West Milton yew",
+      "place": {
+        "slug": "west-milton",
+        "city": "West Milton",
+        "county": "Dorset"
+      },
+      "reason": "blocked: churchyard held by owners of the adjacent house, tower only remains, no parking; AYG photographed from adjoining field. 528cm at 30cm",
+      "source": "https://www.ancient-yew.org/yew_tree_database/west-milton/",
+      "grid_ref": "SY5031896344",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "Kingstone yew",
+      "place": {
+        "slug": "kingstone",
+        "city": "Kingstone",
+        "county": "Somerset"
+      },
+      "reason": "lead: AYG 752cm at 5cm, public churchyard, ESE of church; not processed in this pass, single source",
+      "source": "https://www.ancient-yew.org/yew_tree_database/kingstone/",
+      "grid_ref": "ST37871363",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "Bicknoller yew",
+      "place": {
+        "slug": "bicknoller",
+        "city": "Bicknoller",
+        "county": "Somerset"
+      },
+      "reason": "lead: AYG 786cm at 45cm, S side, public; not processed, single source",
+      "source": "https://www.ancient-yew.org/yew_tree_database/bicknoller/",
+      "grid_ref": "ST11073941",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "Dunster yew",
+      "place": {
+        "slug": "dunster",
+        "city": "Dunster",
+        "county": "Somerset"
+      },
+      "reason": "lead: AYG 808cm at ground, fragmented yew on west side of St George's; not processed, single source",
+      "source": "https://www.ancient-yew.org/yew_tree_database/dunster/",
+      "grid_ref": "SS99034366",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "Elworthy yew",
+      "place": {
+        "slug": "elworthy",
+        "city": "Elworthy",
+        "county": "Somerset"
+      },
+      "reason": "lead: AYG 894cm at narrowest, Churches Conservation Trust church (free), churchyard overgrown 2015; not processed",
+      "source": "https://www.ancient-yew.org/yew_tree_database/elworthy/",
+      "grid_ref": "ST08283496",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "Withycombe yew",
+      "place": {
+        "slug": "withycombe",
+        "city": "Withycombe",
+        "county": "Somerset"
+      },
+      "reason": "lead: AYG 683cm at 5cm, SE of St Nicholas; not processed",
+      "source": "https://www.ancient-yew.org/yew_tree_database/withycombe/",
+      "grid_ref": "ST01524130",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "Stoke Abbott yew",
+      "place": {
+        "slug": "stoke-abbott",
+        "city": "Stoke Abbott",
+        "county": "Dorset"
+      },
+      "reason": "lead: AYG 503cm at 90cm, public, Conservation Area; smaller than others, not processed",
+      "source": "https://www.ancient-yew.org/yew_tree_database/stoke-abbott/",
+      "grid_ref": "ST4536300594",
+      "pass": "uk-west verify 2026-11-04 (yews)"
+    },
+    {
+      "name": "Northernhay Gardens veteran trees",
+      "place": "Exeter",
+      "reason": "no veteran or champion tree named on any fetched page; trees replanted c. 1664 and the elm avenue was lost to Dutch elm disease (exetertrees.uk)",
+      "pass": "uk-west verify 2026-11-04 (devon)"
+    },
+    {
+      "name": "Rougemont Gardens giant redwood",
+      "place": "Exeter",
+      "reason": "exetertrees.uk only says 'a Giant redwood'; no size, age or coordinate seen",
+      "pass": "uk-west verify 2026-11-04 (devon)"
+    },
+    {
+      "name": "University of Exeter Streatham champion trees (Reed Hall, Queen's Drive Arboretum)",
+      "place": "Exeter",
+      "reason": "university says 70 to 120 champions but the tree-by-tree PDF guides were unreadable here; public access to the grounds not stated on fetched pages; no single tree identified; needs the Tree Trail PDF text read in a session",
+      "pass": "uk-west verify 2026-11-04 (devon)"
+    },
+    {
+      "name": "Killerton and Haldon champion trees",
+      "place": "Devon",
+      "reason": "no angle reached in this pass; not searched",
+      "pass": "uk-west verify 2026-11-04 (devon)"
+    }
+  ]
+}

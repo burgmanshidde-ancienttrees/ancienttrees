@@ -1,0 +1,119 @@
+[
+ {
+  "name": "Leigh Woods veteran oak pollard (NT stage 1)",
+  "lat": 51.4543,
+  "lon": -2.6415,
+  "reason": "NT says about 400 years old, just past the first blue way-marker; no coordinates beyond the trail start (approx.), no girth: lead for a GPS fix",
+  "source": "nationaltrust.org.uk Leigh Woods veteran tree walk",
+  "coordinate_note": "area-level, approximate"
+ },
+ {
+  "name": "Leigh Woods Stags-head Oak",
+  "lat": 51.4555,
+  "lon": -2.643,
+  "reason": "NT stage 4, hollow stags-head veteran on the boundary track; coordinates only approximate (area, not tree), no measurements",
+  "source": "nationaltrust.org.uk Leigh Woods veteran tree walk",
+  "coordinate_note": "area-level, approximate"
+ },
+ {
+  "name": "Leigh Woods Monolith Beech and Layering Yew",
+  "lat": 51.4555,
+  "lon": -2.643,
+  "reason": "NT stages 5 and 6; beech reduced to a monolith (fungus), yew behind it layers; no coordinates or girth, approximate area only",
+  "source": "nationaltrust.org.uk Leigh Woods veteran tree walk",
+  "coordinate_note": "area-level, approximate"
+ },
+ {
+  "name": "Arnos Vale weeping horse chestnut",
+  "lat": 51.44229,
+  "lon": -2.56641,
+  "reason": "BTF only (ST6073 7163), no girth or age, unusual rather than old; entry is free per Bristol City Council but no second source",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/"
+ },
+ {
+  "name": "Manor Hall horse chestnut, York Place Clifton",
+  "lat": 51.45483,
+  "lon": -2.6119,
+  "reason": "BTF girth 625 cm, 450 years, much the oldest in the city, but in the grounds of a university hall of residence; not clearly visible from public ground",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+ },
+ {
+  "name": "Cornwallis House holm oak, Clifton",
+  "lat": 51.4529,
+  "lon": -2.6208,
+  "reason": "Private grounds, BTF says no public access (visible only)",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+ },
+ {
+  "name": "Victory Park Brislington twin oaks",
+  "lat": 51.43746,
+  "lon": -2.54218,
+  "reason": "BTF only: two oaks 580 cm, perhaps 380 years (ST6241 7108, ST6254 7081), in hedges; no second source, two trees 300 m apart",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+ },
+ {
+  "name": "Oldbury Court north-edge oak",
+  "lat": 51.49202,
+  "lon": -2.52612,
+  "reason": "BTF only: 570 cm, 380 years, in woods above the Frome gorge (ST6357 7714); steep woodland, hard to find, single source",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+ },
+ {
+  "name": "Kings Weston Lane planes (three pollarded)",
+  "lat": 51.49718,
+  "lon": -2.6626,
+  "reason": "BTF: three giant planes 600 cm cut to about six metres, not visibly impressive any more; ensemble, poor collectible",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+ },
+ {
+  "name": "Riding for the Disabled ancient pollard oaks, Blaise (ST5576 7885, ST5589 7891)",
+  "lat": 51.50684,
+  "lon": -2.63882,
+  "reason": "BTF: footpath access across RDA fields; no girth, two trees, access by footpath only",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+ },
+ {
+  "name": "Badocks Wood five-trunk horse chestnut",
+  "lat": 51.49749,
+  "lon": -2.60484,
+  "reason": "BTF only: 550 cm total over five trunks (ST5811 7779), single source, no age",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/"
+ },
+ {
+  "name": "Snuff Mills weeping small-leaved lime and weeping horse chestnut",
+  "lat": 51.48849,
+  "lon": -2.53198,
+  "reason": "BTF only: weeping limbs towards the river, 290 cm horse chestnut, unusual rather than old; single source",
+  "source": "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/"
+ },
+ {
+  "name": "Bishops Knoll Austrian black pine and coast redwood",
+  "lat": 51.4741,
+  "lon": -2.645,
+  "reason": "Woodland Trust names both, no measurements, no position",
+  "source": "woodlandtrust.org.uk/visiting-woods/woods/bishops-knoll/",
+  "coordinate_note": "area-level, approximate"
+ },
+ {
+  "name": "Bishops Knoll Wood pollard oaks (northern edge, one thought 700 years)",
+  "lat": 51.47551,
+  "lon": -2.64644,
+  "reason": "Woodland Trust: small number at northern edge and Old Sneed Park; BTF Bramble Lane line of pollards (ST5520 7537, 690 cm, 700 years) partly on private land; not placeable on public ground",
+  "source": "woodlandtrust.org.uk; BTF"
+ },
+ {
+  "name": "Stoke Lodge cedars",
+  "lat": 51.4848,
+  "lon": -2.6351,
+  "reason": "Already in data/leads/bristol.json: school-contested playing fields; not re-researched",
+  "source": "data/leads/bristol.json",
+  "coordinate_note": "area-level, approximate"
+ },
+ {
+  "name": "Trinity College oak (Stoke Park Road)",
+  "lat": 51.47714,
+  "lon": -2.62674,
+  "reason": "BTF: technically private, easily seen; on already blocked list, not re-researched",
+  "source": "data/leads/bristol.json"
+ }
+]
