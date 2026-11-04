@@ -215,14 +215,3 @@ App half (collect-describe, collect-identify, collect-intro, collect-place, coll
 - NOTE APP: collect-identify, the Wilhelminalinde row ends "Just off the Kalverstraat beside the Amsterdam Museum, 2.5..." so the line is cut inside a figure and the reader cannot tell what 2.5 was; end the clamp on a word or drop the trailing number.
 - NOTE APP: collect-ticked reads "You found The Wilhelminalinde" with a capital mid-sentence ("the Wilhelminalinde"), and "Lime, 128 years old" is a bare figure for a tree whose age is a planting date (Verify: state the basis; "planted 1898" or "about 128 years").
 
-## 2026-10-20
-
-Web half: read /freiburg (count now 8, intro "Seven are natural monuments; the eighth is a reader's find" agrees with the list), the new Schönberg Beech page (reader find, no sender name, no em dashes) and the moved Kam Tin Tree House. Two findings.
-
-- NOTE /hong-kong/kam-tin-tree-house (title, meta): "100 Year Old Tree" / "A 100-year-old" takes the low end of the data's 100 to 150 and the source's "over 100 years" (Verify: never sharpen a vague source). "Over 100 years old" matches the body.
-- NOTE /hong-kong/kam-tin-tree-house (species vs story): the species line says "Indian Laurel Fig (Ficus microcarpa)" while the story calls it "a Chinese banyan", two names for one tree on one page (hard rule 9, one canonical common name). Say "Indian Laurel Fig" or explain once that it is the banyan.
-
-## 2026-10-20 (app half)
-
-- WARN APP: collect-compare, collect-describe, collect-identify, collect-intro, collect-place and collect-ticked are six screenshots of the same "Add a tree" sheet over different background photographs. None shows the screen its name promises (compare, describe, identify, intro, place, ticked), so either the sweep never navigates past the sheet or the flow is not reachable; the collect flow was not seen tonight and appsweep's `--check-lists` would not notice.
-

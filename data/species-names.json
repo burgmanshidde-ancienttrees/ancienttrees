@@ -3065,6 +3065,44 @@
    }
   },
   {
+   "common": "Common Box",
+   "latin": "Buxus sempervirens",
+   "names": {
+    "en": [
+     "Boxwood",
+     "Common Boxwood",
+     "European box",
+     "Holaaaaaa"
+    ],
+    "nl": [
+     "Buxus"
+    ],
+    "de": [
+     "Buchsbaum",
+     "Buchsstrauch",
+     "Gewöhnlicher Buchsbaum"
+    ],
+    "es": [
+     "Alarquez",
+     "Alazquez",
+     "Boj comun",
+     "Box comun"
+    ],
+    "it": [
+     "Bosso comune"
+    ],
+    "fr": [
+     "Buis toujours vert"
+    ],
+    "pt": [
+     "Buxo"
+    ],
+    "ja": [
+     "セイヨウツゲ"
+    ]
+   }
+  },
+  {
    "common": "Common Camellia",
    "latin": "Camellia japonica",
    "names": {
@@ -14577,6 +14615,22 @@
    }
   },
   {
+   "common": "Nebrodi Fir",
+   "latin": "Abies nebrodensis",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Sicilian Fir"
+    ],
+    "de": [
+     "Nebrodi-Tanne"
+    ],
+    "it": [
+     "Abete dei Nèbrodi"
+    ]
+   }
+  },
+  {
    "common": "Algerian Fir",
    "latin": "Abies numidica",
    "mapped": false,
@@ -16580,6 +16634,21 @@
    }
   },
   {
+   "common": "Rainbow Eucalyptus",
+   "latin": "Eucalyptus deglupta",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Indonesian gum",
+     "Mindanao gum",
+     "rainbow tree"
+    ],
+    "ja": [
+     "レインボーユーカリ"
+    ]
+   }
+  },
+  {
    "common": "Red Flowering Gum",
    "latin": "Eucalyptus ficifolia",
    "mapped": false
@@ -16692,6 +16761,44 @@
    "names": {
     "en": [
      "burningbush"
+    ]
+   }
+  },
+  {
+   "common": "Spindle",
+   "latin": "Euonymus europaeus",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Common spindle tree",
+     "European Spindletree",
+     "European spindle",
+     "European spindle tree"
+    ],
+    "nl": [
+     "Euonymys eoropeaus",
+     "Wilde kardinaalsmuts"
+    ],
+    "de": [
+     "Europäisches Pfaffenhütchen",
+     "Gemeines Pfaffenhütchen",
+     "Gewöhnlicher Spindelstrauch",
+     "Gewöhnliches Pfaffenhütchen"
+    ],
+    "es": [
+     "Arbol madari catuba",
+     "Boj montes",
+     "Bonete del cura",
+     "Bonete turco"
+    ],
+    "it": [
+     "berretta del prete",
+     "evonimo",
+     "fusaggine"
+    ],
+    "fr": [
+     "Fusain d'Europe",
+     "fusain deurope"
     ]
    }
   },
@@ -17244,6 +17351,11 @@
    }
   },
   {
+   "common": "Chilean Laurel/Tepa",
+   "latin": "Laureliopsis philippiana",
+   "mapped": false
+  },
+  {
    "common": "Glossy Privet",
    "latin": "Ligustrum lucidum",
    "mapped": false,
@@ -17742,6 +17854,19 @@
    }
   },
   {
+   "common": "Southern Beech",
+   "latin": "Nothofagus betuloides",
+   "mapped": false,
+   "names": {
+    "de": [
+     "Magellan-Südbuche"
+    ],
+    "ja": [
+     "カバノハミナミブナ"
+    ]
+   }
+  },
+  {
    "common": "Swamp Tupelo",
    "latin": "Nyssa biflora",
    "mapped": false,
@@ -17976,6 +18101,28 @@
    "common": "Himalayan Pine",
    "latin": "Pinus griffithi",
    "mapped": false
+  },
+  {
+   "common": "Single-leaf Nut Pine",
+   "latin": "Pinus monophylla",
+   "mapped": false,
+   "names": {
+    "en": [
+     "One-leaved Nut Pine",
+     "Single Leaf Pinyon Pine",
+     "Single-leaf Pinyon",
+     "singleleaf pinyon"
+    ],
+    "de": [
+     "Einblättrige Kiefer"
+    ],
+    "it": [
+     "Pino ad ago singolo"
+    ],
+    "ja": [
+     "アメリカヒトツバマツ"
+    ]
+   }
   },
   {
    "common": "Montezuma Pine",
@@ -18898,6 +19045,19 @@
    }
   },
   {
+   "common": "Chestnut-leaved Oak",
+   "latin": "Quercus castaneifolia",
+   "mapped": false,
+   "names": {
+    "de": [
+     "Kastanienblättrige Eiche"
+    ],
+    "es": [
+     "Roble persa"
+    ]
+   }
+  },
+  {
    "common": "Canyon Live Oak",
    "latin": "Quercus chrysolepis",
    "mapped": false,
@@ -19688,6 +19848,19 @@
    }
   },
   {
+   "common": "Himalayan Hemlock",
+   "latin": "Tsuga dumosa",
+   "mapped": false,
+   "names": {
+    "de": [
+     "Himalaya-Hemlocktanne"
+    ],
+    "fr": [
+     "Pruche de l'Himalaya"
+    ]
+   }
+  },
+  {
    "common": "Western Hemlock",
    "latin": "Tsuga heterophylla",
    "mapped": false,
@@ -19869,6 +20042,11 @@
   {
    "common": "Ficus macrophylla",
    "latin": "Villa di",
+   "mapped": false
+  },
+  {
+   "common": "various",
+   "latin": "Wales and",
    "mapped": false
   },
   {

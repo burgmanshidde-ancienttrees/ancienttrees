@@ -1,22 +1,22 @@
 {
  "_note": "Per outreach group: addresses mailed, how many answered (a human reply, out-of-office left out), how many link to us. 'weeks' is keyed by the Monday of the week of our FIRST mail, so a week's answers keep arriving for weeks after. Counts only, no addresses. Built by scripts/outreach_yield.py.",
- "built": "2026-11-03",
+ "built": "2026-11-04",
  "mailbox_read": true,
  "total": {
   "archive": {
-   "mailed": 15,
+   "mailed": 24,
    "answered": 1,
    "only_auto": 1,
    "linked": 0
   },
   "nature": {
-   "mailed": 65,
+   "mailed": 72,
    "answered": 3,
    "only_auto": 2,
    "linked": 1
   },
   "guide": {
-   "mailed": 17,
+   "mailed": 22,
    "answered": 1,
    "only_auto": 0,
    "linked": 1
@@ -29,7 +29,7 @@
   },
   "press": {
    "mailed": 98,
-   "answered": 6,
+   "answered": 7,
    "only_auto": 1,
    "linked": 0
   },
@@ -52,23 +52,47 @@
    "linked": 1
   },
   "council": {
-   "mailed": 55,
-   "answered": 8,
+   "mailed": 57,
+   "answered": 9,
    "only_auto": 2,
    "linked": 0
   },
   "other": {
-   "mailed": 143,
-   "answered": 46,
+   "mailed": 146,
+   "answered": 48,
    "only_auto": 2,
    "linked": 2
   }
  },
  "weeks": {
   "2026-11-02": {
-   "other": {
+   "archive": {
+    "mailed": 9,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "nature": {
+    "mailed": 7,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "guide": {
+    "mailed": 5,
+    "answered": 0,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "council": {
     "mailed": 2,
     "answered": 1,
+    "only_auto": 0,
+    "linked": 0
+   },
+   "other": {
+    "mailed": 5,
+    "answered": 3,
     "only_auto": 0,
     "linked": 0
    }
@@ -100,7 +124,7 @@
    },
    "press": {
     "mailed": 38,
-    "answered": 0,
+    "answered": 1,
     "only_auto": 0,
     "linked": 0
    },
