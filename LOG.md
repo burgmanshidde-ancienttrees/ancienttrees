@@ -67,6 +67,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Done (checked 2026-11-04):** supabase/suggested-people.sql is pasted; suggested_photographers answers over the API. Before that, both surfaces suggested the ambassadors alone. It returns, per place, only a public profile's id, name, picture and a count of trees whose photograph is published; signed-in only.
 - **Not verified:** the web part is not rendered (no Node here; CI builds it); the photographer half has never run against the database (function not pasted).
 
+## 2026-11-04 session: build 38 (1.0.4) archived for upload
+
+- **What changed:** build 38 is in the Organizer, made by scripts/release.py from 3c86087ee with the bundled catalogue refreshed. It carries every app change since build 35 (1.0.3, on sale since 2026-10-16), including today's fixes that build 37 missed: the swipe freeze over a pin's card, filter chips that add up, the Collect band, Find people with Suggested, the search field's cross. App Store Connect holds build 35, so 36 and 37 were never uploaded; 38 replaces them. Both SQL files it uses (recent-searches, suggested-people) are pasted.
+- **Not verified:** the map freeze fixes on a device in a Release build (simulator only).
+- **For Hidde:** run once on your phone (Release) and tap and swipe pins, then Organizer, Archives, build 38, Distribute App, App Store Connect.
+
 ## 2026-11-04 session: Recent searches on every search field, app and web
 
 - **What changed:** under an empty search field, a signed-in person now sees their last five picks (a city, country, species, tree or town) within 90 days, each with a clock, the grey sub line, a cross to remove it, and Clear all; below it the empty screen as before. App: Screens/MapSearch.swift (both the Map tab and Discover, through its pick), store Kit/RecentSearches.swift. Web: the one search widget (site/src/lib/search-form.ts), so home, /explore and the header search on every page; Base.astro now carries the session door (COLLECTION_JS, made safe to include twice) so the header search can ask it. Strings in all eight languages. Only picks are recorded, never typed text; signed out nothing changes on either surface.
