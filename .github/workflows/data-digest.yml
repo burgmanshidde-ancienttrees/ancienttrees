@@ -108,6 +108,14 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: python3 scripts/tree_saves.py
 
+      # Website errors are kept 90 days, no longer (supabase/web-errors.sql);
+      # test rows a session left go too.
+      - name: Prune old website errors
+        continue-on-error: true
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python3 scripts/web_errors.py --prune
+
       # The species dictionary, so a species published today answers to its
       # other names tomorrow. Asks Wikidata only for what is new; a failed
       # fetch keeps the committed names.

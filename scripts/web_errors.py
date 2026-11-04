@@ -3,6 +3,8 @@
 
     python3 scripts/web_errors.py           every error type of the last 8 days
     python3 scripts/web_errors.py --light   only the quality line's verdict
+    python3 scripts/web_errors.py --prune   delete rows past 90 days and test rows
+                                            (daily, data-digest.yml)
 
 Every page posts its script errors to the Supabase `web_errors` table
 (site/src/lib/web-errors-js.ts, supabase/web-errors.sql; Hidde, 2026-11-04,
@@ -36,6 +38,7 @@ from inbox import SUPA, load_key  # noqa: E402
 
 RED_PAGES = 3
 RED_REPORTS = 5
+KEEP_DAYS = 90  # the privacy promise in supabase/web-errors.sql and CLAUDE.md
 
 
 def fetch(key, days=8):
@@ -106,7 +109,37 @@ def light():
     return "green", ("no new errors" + (", %d known type(s) still firing" % firing if firing else ""))
 
 
+def delete(key, where):
+    """DELETE rows matching a PostgREST filter; returns how many went."""
+    req = urllib.request.Request(SUPA + "/rest/v1/web_errors?" + where, method="DELETE",
+                                 headers={"apikey": key, "Authorization": "Bearer " + key,
+                                          "Prefer": "return=representation"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return len(json.load(r))
+
+
+def prune(key):
+    """Rows older than KEEP_DAYS go, and any row a test left (message starts TEST web_errors)."""
+    cut = (datetime.datetime.now(datetime.timezone.utc)
+           - datetime.timedelta(days=KEEP_DAYS)).isoformat()
+    old = delete(key, "created_at=lt." + urllib.parse.quote(cut))
+    tests = delete(key, "message=like." + urllib.parse.quote("TEST web_errors*"))
+    return old, tests
+
+
 def main():
+    if "--prune" in sys.argv:
+        key = load_key()
+        if not key:
+            print("web_errors: SUPABASE_SERVICE_KEY not set")
+            return 1
+        try:
+            old, tests = prune(key)
+        except urllib.error.HTTPError as e:
+            print("web_errors: prune failed (HTTP %d)" % e.code)
+            return 1
+        print("web_errors: removed %d row(s) older than %d days, %d test row(s)" % (old, KEEP_DAYS, tests))
+        return 0
     if "--light" in sys.argv:
         print("%s: %s" % light())
         return 0
