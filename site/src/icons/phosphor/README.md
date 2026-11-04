@@ -11,6 +11,7 @@ platforms only). `bold` matches SF Symbols' regular weight best at UI sizes.
 | App (SF Symbol)                    | Web (Phosphor)          |
 |------------------------------------|-------------------------|
 | square.and.arrow.up                | export                  |
+| clock.arrow.circlepath (recent)    | clock-counter-clockwise |
 | exclamationmark.bubble             | flag (no bubble-with-! in Phosphor) |
 | arrow.turn.up.right                | arrow-bend-up-right     |
 | camera / camera.fill               | camera / camera fill    |

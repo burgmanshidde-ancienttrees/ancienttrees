@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: Recent searches on every search field, app and web
+
+- **What changed:** under an empty search field, a signed-in person now sees their last five picks (a city, country, species, tree or town) within 90 days, each with a clock, the grey sub line, a cross to remove it, and Clear all; below it the empty screen as before. App: Screens/MapSearch.swift (both the Map tab and Discover, through its pick), store Kit/RecentSearches.swift. Web: the one search widget (site/src/lib/search-form.ts), so home, /explore and the header search on every page; Base.astro now carries the session door (COLLECTION_JS, made safe to include twice) so the header search can ask it. Strings in all eight languages. Only picks are recorded, never typed text; signed out nothing changes on either surface.
+- **Looked at:** the app search screen with -recentdemo and signed out (iPhone 17 Pro simulator); the web widget in a harness against stubs, desktop and 375px phone header: rows, remove, record on pick, Clear all, signed out (no request), missing table (no section).
+- **Not verified:** a real round trip with Supabase, since the table does not exist until the SQL is pasted; the Astro build (CI).
+- For Hidde: paste supabase/recent-searches.sql into the Supabase SQL editor once; until then neither surface shows the section.
+
+
 ## 2026-11-04 session: photographs for the held US and UK trees, 29 approved, nothing published
 
 - **What changed:** 29 open-licence photographs, each looked at on a contact sheet, now sit where the builders read them, so these trees go live with a picture when the daily publish reaches them. US 14: New York 5 (Morningside sycamore, Van Cortlandt white ash, Weeping Beech Park cedar, Isham Park ginkgo, property-line white oak; in data/research/us-east-photos.json, new), Santa Barbara Moreton Bay fig, Kauai Allerton figs, Tyler Arboretum sequoia, Miami Bayside banyan, Salem Waldo Park tree, Tacoma Mountaineer Tree, Madison Oakland Ave hackberry, Tucson Engineering cork oak, Boulder Naropa sycamores. UK 15: London 4 (Harlington Yew, Maids of Honour pine, Grimston's Oak, George Green chestnuts), Glasgow Covenanters Oak, Mottisfont plane, Welsh and Cheshire yews 4 (Bettws Newydd, Nevern bleeding yew, Gresford, Speke Hall Adam and Eve), Castlewellan redwoods, Crom yews, Somerset and Dorset yews 3 (Compton Dundon, Lytchett Matravers, Wimborne St Giles). Held trees with a photo: US 13 -> 27 of 309 (4% -> 9%), UK 41 -> 56 of 138 (30% -> 41%).

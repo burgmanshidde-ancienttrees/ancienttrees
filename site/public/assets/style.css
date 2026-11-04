@@ -1212,6 +1212,23 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
 /* The header bar sets nowrap for its own row; a sentence in the dropdown wraps. */
 .ats-drop .ats-empty, .ats-drop .ats-card { white-space: normal; }
 .ats-card a.addphoto-btn, .exc-ask a.addphoto-btn { text-decoration: none; }
+/* RECENT SEARCHES under the empty field (2026-11-04, drafts/design-2026-11-04
+   section 2): the head with Clear all at its right end, then rows of the
+   .ats-row numbers with a clock in front and a cross behind. */
+.ats-head-rec { display: flex; align-items: baseline; }
+.ats-clear { margin-left: auto; border: 0; background: none; padding: 0; cursor: pointer;
+  font-family: var(--sans); font-size: 12.5px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--moss); }
+.ats-drop .ats-rec { display: flex; align-items: center; }
+.ats-drop .ats-rec .ats-row { flex: 1; min-width: 0; display: flex; flex-direction: row; align-items: center; gap: 10px; }
+.ats-drop .ats-rec .ats-row .ats-ic { display: inline-flex; flex: none; width: 22px; justify-content: center; color: var(--ink-light); }
+.ats-drop .ats-rec .ats-row .ats-ic svg { width: 18px; height: 18px; }
+.ats-drop .ats-rec .ats-row .ats-rec-t { display: block; min-width: 0; color: var(--ink); font-size: inherit; }
+.ats-drop .ats-rec .ats-row .ats-rec-t b, .ats-drop .ats-rec .ats-row .ats-rec-t span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ats-x { flex: none; width: 40px; height: 40px; margin-right: calc(1.1rem - 13px); border: 0; border-radius: 999px; background: none;
+  color: var(--ink-light); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ats-x svg { width: 14px; height: 14px; }
+.ats-x:hover { background: #F1EFE8; }
+.ats-sep { height: 1px; background: var(--cream-dark); margin: 6px 0 2px; }
 .exc-ask { margin: 0 0 12px; }
 /* Country page: the ranked-list form (Hidde, 2026-08-01, the PictureThis
    Top-50 pattern): rank numeral, photo, name, one honest sub-line, chevron. */
@@ -3686,6 +3703,12 @@ body:has(form.hero-search) .nav-search, body:has(form.ex-search) .nav-search { d
   .nav-search .ats-drop .ats-head { padding: 14px var(--gutter) 4px; }
   .nav-search .ats-drop .ats-empty { padding: 14px var(--gutter); }
   .nav-search .ats-drop .ats-card { margin: 12px var(--gutter) 6px; }
+  /* A recent row keeps the clock beside the name; the rule line moves to the
+     row so it runs under the cross too. */
+  .nav-search .ats-drop .ats-rec { border-bottom: 1px solid var(--cream-dark); }
+  .nav-search .ats-drop .ats-rec .ats-row { flex-direction: row; align-items: center; gap: 10px; border-bottom: 0; }
+  .nav-search .ats-drop .ats-x { margin-right: calc(var(--gutter) - 13px); }
+  .nav-search .ats-drop .ats-sep { display: none; }
 }
 
 /* THE TREE PAGE REBUILT, 2026-10-24 (Hidde: "bouw alles"; CONVENTIONS.md

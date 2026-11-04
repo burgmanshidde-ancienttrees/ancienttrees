@@ -562,6 +562,9 @@ export interface UIStrings {
   nearestTree: string;
   kmFrom: string;
   searchNoMatch: string;
+  searchRecent: string;
+  searchClearAll: string;
+  searchRemoveRecent: string;
   notesEmptyAsk: string;
   noteWrite: string;
   noteEditMine: string;
@@ -902,6 +905,9 @@ const EN: UIStrings = {
   nearestTree: "Nearest tree",
   kmFrom: "{km} km from {place}",
   searchNoMatch: "Nothing matches “{q}”. Check the spelling, or try a town nearby.",
+  searchRecent: "Recent",
+  searchClearAll: "Clear all",
+  searchRemoveRecent: "Remove {name} from recent",
   notesEmptyAsk: "Did you visit the tree? Leave a note for the next visitor.",
   noteWrite: "Write a note",
   noteEditMine: "Edit your note",
@@ -976,6 +982,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearestTree: "Árbol más cercano",
     kmFrom: "a {km} km de {place}",
     searchNoMatch: "Nada coincide con «{q}». Revisa la ortografía o prueba con un pueblo cercano.",
+    searchRecent: "Recientes",
+    searchClearAll: "Borrar todo",
+    searchRemoveRecent: "Quitar {name} de recientes",
     notesEmptyAsk: "¿Has visitado el árbol? Deja una nota para el próximo visitante.",
     noteWrite: "Escribir una nota",
     noteEditMine: "Editar tu nota",
@@ -1311,6 +1320,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearestTree: "Albero più vicino",
     kmFrom: "a {km} km da {place}",
     searchNoMatch: "Nessun risultato per «{q}». Controlla l'ortografia o prova un paese vicino.",
+    searchRecent: "Recenti",
+    searchClearAll: "Cancella tutto",
+    searchRemoveRecent: "Rimuovi {name} dai recenti",
     notesEmptyAsk: "Hai visitato l'albero? Lascia una nota per il prossimo visitatore.",
     noteWrite: "Scrivi una nota",
     noteEditMine: "Modifica la tua nota",
@@ -1646,6 +1658,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearestTree: "Dichtstbijzijnde boom",
     kmFrom: "{km} km van {place}",
     searchNoMatch: "Niets gevonden voor ‘{q}’. Controleer de spelling, of probeer een plaats in de buurt.",
+    searchRecent: "Recent",
+    searchClearAll: "Alles wissen",
+    searchRemoveRecent: "{name} uit recent verwijderen",
     notesEmptyAsk: "Ben je bij de boom geweest? Laat een notitie achter voor de volgende bezoeker.",
     noteWrite: "Schrijf een notitie",
     noteEditMine: "Bewerk je notitie",
@@ -1981,6 +1996,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearestTree: "Nächster Baum",
     kmFrom: "{km} km von {place}",
     searchNoMatch: "Keine Treffer für „{q}“. Prüfen Sie die Schreibweise oder versuchen Sie einen Ort in der Nähe.",
+    searchRecent: "Zuletzt gesucht",
+    searchClearAll: "Alle löschen",
+    searchRemoveRecent: "{name} aus dem Verlauf entfernen",
     notesEmptyAsk: "Warst du am Baum? Hinterlass eine Notiz für den nächsten Besucher.",
     noteWrite: "Notiz schreiben",
     noteEditMine: "Deine Notiz bearbeiten",
@@ -2316,6 +2334,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearestTree: "Árvore mais próxima",
     kmFrom: "a {km} km de {place}",
     searchNoMatch: "Nada corresponde a «{q}». Verifique a ortografia ou tente uma localidade próxima.",
+    searchRecent: "Recentes",
+    searchClearAll: "Limpar tudo",
+    searchRemoveRecent: "Remover {name} dos recentes",
     notesEmptyAsk: "Visitou a árvore? Deixe uma nota para o próximo visitante.",
     noteWrite: "Escrever uma nota",
     noteEditMine: "Editar a sua nota",
@@ -2651,6 +2672,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearestTree: "Arbre le plus proche",
     kmFrom: "à {km} km de {place}",
     searchNoMatch: "Aucun résultat pour « {q} ». Vérifiez l’orthographe ou essayez une ville voisine.",
+    searchRecent: "Récents",
+    searchClearAll: "Tout effacer",
+    searchRemoveRecent: "Retirer {name} des récents",
     notesEmptyAsk: "Vous avez vu l'arbre ? Laissez une note au prochain visiteur.",
     noteWrite: "Écrire une note",
     noteEditMine: "Modifier votre note",
@@ -2986,6 +3010,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     nearestTree: "いちばん近い木",
     kmFrom: "{place}から{km} km",
     searchNoMatch: "「{q}」に一致するものはありません。綴りを確認するか、近くの町で試してください。",
+    searchRecent: "最近の検索",
+    searchClearAll: "すべて消去",
+    searchRemoveRecent: "{name}を履歴から削除",
     notesEmptyAsk: "この木を訪れましたか？次に訪れる人にメモを残しましょう。",
     noteWrite: "メモを書く",
     noteEditMine: "メモを編集",

@@ -19,6 +19,7 @@ import { isNoindexed, noindexScope, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import { icon } from "../lib/icons";
 import { searchForm, searchWidgetJs } from "../lib/search-form";
+import { COLLECTION_JS } from "../lib/collection-js";
 // My trees in the phone sheet, the app's tab and leaf. The desktop account
 // menu is gone since 2026-10-28: the face links to the profile, whose gear
 // holds Settings.
@@ -643,6 +644,9 @@ window.atPaintFace = function(inNow) {
 <SignInModal lang={lang} />
 <Fragment set:html={SIGNIN_JS} />
 <Fragment set:html={OVERLAY_SHEET_JS} />
+{/* The search field reads the account's recent searches through the one
+    session door (2026-11-04); a page that already carries it keeps its copy. */}
+{AUTH_ENABLED && <Fragment set:html={COLLECTION_JS} />}
 <Fragment set:html={searchWidgetJs(lang)} />
 <script is:inline>
 // The phone search opens with the field ready to type in.

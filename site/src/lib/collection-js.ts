@@ -41,7 +41,10 @@ const BM_ON = icon("bookmark-simple", "fill", "heart hi-on");
 
 export const COLLECTION_JS = `
 <script>
-window.atCollection = (function() {
+// Included by a page's own scripts AND by Base.astro (for the search field's
+// recent searches, 2026-11-04), so the first copy wins and a second is a no-op:
+// one session check per page, never two doors.
+window.atCollection = window.atCollection || (function() {
   var SB = '${SUPABASE_URL}', KEY = '${SUPABASE_KEY}';
   // In memory for the life of this page only. Deliberately not sessionStorage:
   // that is storage too, and the rule is the rule.

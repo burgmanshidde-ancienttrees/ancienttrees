@@ -4,6 +4,7 @@
 // /search-index.json, so home and /explore cannot drift apart.
 import { ui } from "./i18n";
 import { icon } from "./icons";
+import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
 
 export function searchForm(ctx: string, inputId: string, formClass: string, withButton = false, placeholder = "Search a city or tree"): string {
   const ico = withButton
@@ -29,11 +30,78 @@ export function searchWidgetJs(lang = "en"): string {
     title: U.emptyPlaceTitle, ask: U.emptyPlaceAsk, add: U.addTree, onMap: U.placeOnMap,
     nearest: U.nearestTree, kmFrom: U.kmFrom, none: U.searchNoMatch,
     explore: lang === "en" ? "/explore" : `/${lang}/explore`,
+    recent: U.searchRecent, clearAll: U.searchClearAll, removeRecent: U.searchRemoveRecent,
   };
   return `
 <script>
 (function() {
   var STR = ${JSON.stringify(S)};
+  // RECENT SEARCHES (Hidde, 2026-11-04: "i like all your proposals please
+  // build"; drafts/design-2026-11-04 section 2). The account's last five
+  // picks within 90 days, under the empty field, a cross per row and Clear
+  // all, the Google Maps and Instagram convention. Table recent_searches
+  // (supabase/recent-searches.sql), the rows the app's MapSearch reads and
+  // writes too. Signed in only and through the one session door
+  // (atCollection.gate): nothing is kept in the browser, only in this page's
+  // memory, shared by every search field on it. A missing table (404/400)
+  // answers with no rows and so no section.
+  var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
+  var CLOCK = '${icon("clock-counter-clockwise", "bold")}', XI = '${icon("x", "bold")}';
+  var REC = { rows: null, asked: false, s: null, paint: [] };
+  function recHeaders(s, json) {
+    var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
+    if (json) { h['Content-Type'] = 'application/json'; h['Prefer'] = 'resolution=merge-duplicates,return=minimal'; }
+    return h;
+  }
+  function recRepaint() { REC.paint.forEach(function(f) { try { f(); } catch (e) {} }); }
+  function recLoad() {
+    if (REC.asked) return;
+    REC.asked = true;
+    var c = window.atCollection;
+    if (!c || !c.gate) { REC.rows = []; return; }
+    c.gate(function(s) {
+      REC.s = s;
+      var since = new Date(Date.now() - 90 * 864e5).toISOString();
+      fetch(SB + '/rest/v1/recent_searches?select=kind,key,label,sub&searched_at=gte.' + encodeURIComponent(since) +
+            '&order=searched_at.desc&limit=5', { headers: recHeaders(s) })
+        .then(function(r) { return r.ok ? r.json() : []; })
+        .then(function(a) { REC.rows = Array.isArray(a) ? a : []; recRepaint(); })
+        .catch(function() { REC.rows = []; });
+    }, function() { REC.rows = []; });
+  }
+  function recSession() {
+    var c = window.atCollection;
+    return REC.s && c && c.session ? c.session() : null;
+  }
+  // A pick: to the top here at once, then upserted. keepalive, because a
+  // pick usually leaves the page in the same moment.
+  function recRecord(kind, key, label, sub) {
+    var s = recSession();
+    if (!s || !kind || !key) return;
+    REC.rows = (REC.rows || []).filter(function(r) { return !(r.kind === kind && r.key === key); });
+    REC.rows.unshift({ kind: kind, key: key, label: label, sub: sub });
+    REC.rows = REC.rows.slice(0, 5);
+    try {
+      fetch(SB + '/rest/v1/recent_searches?on_conflict=user_id,kind,key', { method: 'POST', keepalive: true,
+        headers: recHeaders(s, true),
+        body: JSON.stringify({ kind: kind, key: key, label: label, sub: sub, searched_at: new Date().toISOString() }) })
+        .catch(function() {});
+    } catch (e) {}
+  }
+  function recRemove(kind, key) {
+    var s = recSession();
+    REC.rows = (REC.rows || []).filter(function(r) { return !(r.kind === kind && r.key === key); });
+    if (!s) return;
+    fetch(SB + '/rest/v1/recent_searches?kind=eq.' + encodeURIComponent(kind) + '&key=eq.' + encodeURIComponent(key),
+          { method: 'DELETE', headers: recHeaders(s) }).catch(function() {});
+  }
+  function recClear() {
+    var s = recSession();
+    REC.rows = [];
+    if (!s) return;
+    // RLS keeps the delete to this person's rows; PostgREST wants a filter.
+    fetch(SB + '/rest/v1/recent_searches?kind=not.is.null', { method: 'DELETE', headers: recHeaders(s) }).catch(function() {});
+  }
   // Every .at-search on the page gets wired, so a second placement (a header
   // bar, the AllTrails pattern) needs no new script.
   Array.prototype.forEach.call(document.querySelectorAll('form.at-search'), setup);
@@ -55,6 +123,10 @@ export function searchWidgetJs(lang = "en"): string {
     return s;
   }
   function escT(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function escA(s) { return escT(String(s == null ? '' : s)).replace(/"/g, '&quot;'); }
+  // What a row is, for recent searches: its kind and the key both surfaces
+  // share (city slug, country name, species name, tree id, "lat,lng").
+  function rk(kind, key) { return ' data-rk="' + kind + '" data-rv="' + escA(key) + '"'; }
   function load() {
     if (IDX || loading) return;
     loading = true;
@@ -168,7 +240,8 @@ export function searchWidgetJs(lang = "en"): string {
       // 2026-11-01: "interessanter om op de kaart te komen", as Airbnb does).
       // A city still opens its page, which is itself a map with the walk.
       var href = r.kind === 'country' ? STR.explore + '#country=' + encodeURIComponent(r.it.country) : '/' + r.it.u;
-      return head + '<a class="ats-row"' + pk + ' href="' + href + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
+      var key = r.kind === 'country' ? r.it.country : r.kind === 'city' ? r.it.u : r.kind === 'species' ? r.it.n : r.it.i;
+      return head + '<a class="ats-row"' + pk + rk(r.kind, key) + ' href="' + href + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
     }).join('');
   }
   // A town we hold no tree for: the grey card of an empty notes section (the
@@ -198,12 +271,15 @@ export function searchWidgetJs(lang = "en"): string {
     var ourOther = res.filter(function(r) { return r.kind !== 'city' && r.kind !== 'country'; });
     html += '<div class="ats-head">Places</div>' + hits.map(function(p) {
       return row(p[0], escT(PL.k[p[2]]) + ' &middot; ' + escT(STR.onMap),
-                 STR.explore + '#@' + p[3] + ',' + p[4] + ',' + encodeURIComponent(p[0]));
+                 STR.explore + '#@' + p[3] + ',' + p[4] + ',' + encodeURIComponent(p[0]), null,
+                 rk('place', (+p[3]).toFixed(4) + ',' + (+p[4]).toFixed(4)));
     }).join('');
     if (top[5] >= 0) {
       var t = PL.t[top[5]];
+      var known = IDX.t.filter(function(x) { return x.u === t[2]; })[0];
       html += '<div class="ats-head">' + escT(STR.nearest) + '</div>' +
-              row(t[0], escT(fill(STR.kmFrom, {km: top[6], place: top[0]})) + ' &middot; ' + escT(t[1]), '/' + t[2]);
+              row(t[0], escT(fill(STR.kmFrom, {km: top[6], place: top[0]})) + ' &middot; ' + escT(t[1]), '/' + t[2],
+                  null, known ? rk('tree', known.i) : '');
     }
     return html + listHtml(ourOther, null);
   }
@@ -215,28 +291,63 @@ export function searchWidgetJs(lang = "en"): string {
   // visitor to already know what we hold, and nobody arriving knows we have
   // Cadiz. Order is theirs too: what you looked at last, then where you are,
   // then somewhere to start.
-  // WHAT YOU LOOKED AT LAST IS GONE (2026-09-02). It was three rows of
-  // history kept in localStorage, and Hidde's rule leaves the browser holding
-  // nothing but the session token. The rest of the empty state is unchanged
-  // and is the half that was doing the work anyway: cities near you, then
-  // somewhere to start. An account-backed history is a real feature and can
-  // be built the day it is asked for; a browser-local one is exactly the kind
-  // of thing this rule is about.
-  function recents() { return []; }
-  function remember() {}
-  function row(name, sub, url, cls) {
-    return '<a class="ats-row' + (cls ? ' ' + cls : '') + '" href="' + url + '">' +
+  // WHAT YOU LOOKED AT LAST, on the account (2026-11-04). The browser-local
+  // three rows of 2026-09-02 stay gone: the browser holds nothing but the
+  // session token, and these rows live in recent_searches. Each is read
+  // against today's index, so its sub line is today's and a place that is no
+  // longer ours drops out.
+  function recents() {
+    if (!REC.rows || !IDX) return [];
+    var out = [];
+    REC.rows.forEach(function(r) {
+      var it, h;
+      if (r.kind === 'city') {
+        it = IDX.c.filter(function(c) { return c.u === r.key; })[0];
+        if (it) h = { n: it.city, s: it.n + (it.n === 1 ? ' tree' : ' trees') + ' &middot; ' + escT(it.country), u: '/' + it.u,
+                      pk: ' data-pk="city" data-pv="' + escA(it.u) + '"' };
+      } else if (r.kind === 'country') {
+        it = IDX.k.filter(function(k) { return k.country === r.key; })[0];
+        if (it) h = { n: it.country, s: it.cities + ' cities &middot; ' + it.n + ' trees',
+                      u: STR.explore + '#country=' + encodeURIComponent(it.country),
+                      pk: ' data-pk="country" data-pv="' + escA(it.country) + '"' };
+      } else if (r.kind === 'species') {
+        it = IDX.s.filter(function(s) { return s.n === r.key; })[0];
+        if (it) h = { n: it.n, s: (it.lh ? it.lh + ' &middot; ' : '') + it.count + ' mapped', u: '/' + it.u };
+      } else if (r.kind === 'tree') {
+        it = IDX.t.filter(function(t) { return t.i === r.key; })[0];
+        if (it) h = { n: it.n, s: escT(it.c), u: '/' + it.u };
+      } else if (r.kind === 'place') {
+        var ll = String(r.key).split(',');
+        if (ll.length === 2 && r.label) h = { n: r.label, s: escT(r.sub || STR.onMap),
+          u: STR.explore + '#@' + ll[0] + ',' + ll[1] + ',' + encodeURIComponent(r.label) };
+      }
+      if (h) { h.kind = r.kind; h.key = r.key; out.push(h); }
+    });
+    return out;
+  }
+  function row(name, sub, url, cls, attrs) {
+    return '<a class="ats-row' + (cls ? ' ' + cls : '') + '"' + (attrs || '') + ' href="' + url + '">' +
            '<b>' + escT(name) + '</b><span>' + sub + '</span></a>';
   }
+  function recentHtml(rec) {
+    return '<div class="ats-head ats-head-rec">' + escT(STR.recent) +
+      '<button type="button" class="ats-clear">' + escT(STR.clearAll) + '</button></div>' +
+      rec.map(function(r) {
+        return '<div class="ats-rec"><a class="ats-row"' + (r.pk || '') + rk(r.kind, r.key) + ' href="' + r.u + '">' +
+          '<span class="ats-ic">' + CLOCK + '</span>' +
+          '<span class="ats-rec-t"><b>' + escT(r.n) + '</b><span>' + r.s + '</span></span></a>' +
+          '<button type="button" class="ats-x"' + rk(r.kind, r.key) + ' aria-label="' +
+          escA(STR.removeRecent.replace('{name}', r.n)) + '">' + XI + '</button></div>';
+      }).join('') + '<div class="ats-sep"></div>';
+  }
+  REC.paint.push(function() { if (document.activeElement === input && !input.value.trim()) showEmpty(); });
   function showEmpty() {
     load();
+    recLoad();
     if (!IDX) return;
     var html = '';
     var rec = recents();
-    if (rec.length) {
-      html += '<div class="ats-head">Recent</div>';
-      html += rec.map(function(r) { return row(r.n, escT(r.s || ''), r.u); }).join('');
-    }
+    if (rec.length) html += recentHtml(rec);
     html += '<div class="ats-head">Near you</div>' +
             row('Trees near me', 'open the map at your location', '/explore#near', 'ats-near');
     // The most VISITED pages, not the deepest (Hidde, 2026-09-26): the v field is
@@ -247,7 +358,8 @@ export function searchWidgetJs(lang = "en"): string {
     }).slice(0, 5);
     html += '<div class="ats-head">Start here</div>';
     html += top.map(function(c) {
-      return row(c.city, c.n + (c.n === 1 ? ' tree' : ' trees') + ' &middot; ' + escT(c.country), '/' + c.u);
+      return row(c.city, c.n + (c.n === 1 ? ' tree' : ' trees') + ' &middot; ' + escT(c.country), '/' + c.u,
+                 null, rk('city', c.u));
     }).join('');
     drop.innerHTML = html;
     drop.hidden = false;
@@ -291,15 +403,15 @@ export function searchWidgetJs(lang = "en"): string {
     drop.innerHTML = html;
     drop.hidden = false;
     rows = Array.prototype.slice.call(drop.querySelectorAll('.ats-row'));
-    rows.forEach(function(a) {
-      a.addEventListener('click', function() {
-        var b = a.querySelector('b'), sp = a.querySelector('span');
-        remember(b ? b.textContent : '', sp ? sp.textContent : '', a.getAttribute('href'));
-      });
-    });
   }
   function go(row) {
     lastEmpty = null;
+    // Only what was picked is recorded, never what was typed.
+    var kind = row.getAttribute('data-rk');
+    if (kind) {
+      var nb = row.querySelector('b'), sb = row.querySelector('b + span');
+      recRecord(kind, row.getAttribute('data-rv'), nb ? nb.textContent : '', sb ? sb.textContent : '');
+    }
     at.track('search-' + ctx, norm(input.value.trim()).slice(0, 60));
     // On the map a place stays on the map (Airbnb, and our app): the map
     // frames it and the field keeps its name. Anywhere else, and for a
@@ -329,6 +441,16 @@ export function searchWidgetJs(lang = "en"): string {
     else if (e.key === 'Escape') { hide(); }
   });
   drop.addEventListener('mousedown', function(e) {
+    // The cross on a recent row, and Clear all: the field keeps focus and
+    // the empty state redraws without them.
+    var x = e.target.closest ? e.target.closest('.ats-x, .ats-clear') : null;
+    if (x) {
+      e.preventDefault();
+      if (x.classList.contains('ats-clear')) recClear();
+      else recRemove(x.getAttribute('data-rk'), x.getAttribute('data-rv'));
+      showEmpty();
+      return;
+    }
     var b = e.target.closest ? e.target.closest('.ats-go') : null;
     if (b) {
       e.preventDefault();
