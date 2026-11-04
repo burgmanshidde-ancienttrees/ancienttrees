@@ -144,6 +144,11 @@ DEMAND_CUT = 50
 # names them, so the depth lanes keep working there). False returns to the
 # demand cut.
 READER_ONLY = True
+# Earned back (Hidde, 2026-11-04): a tagged page Google kept showing with
+# clicks after the 11-01 recovery leaves the Google-side cuts. The rule and
+# its weekly cap live in scripts/tagged_shown.py, the pages in
+# data/earned-back.json. A thin place or a question page is never touched.
+EARNED_BACK = False
 
 
 _NOTED = None
@@ -496,6 +501,15 @@ def main():
     # reads the committed list instead (a page on it last time and off it now
     # is entering), which is the moment qa.py's own burst check is blind.
     # Raising RELEASE_PER_BUILD or emptying data/noindex.json by hand needs Hidde.
+    if EARNED_BACK:
+        try:
+            earned = set(json.load(open(os.path.join(ROOT, "data", "earned-back.json"))).get("pages") or {})
+        except (OSError, ValueError):
+            earned = set()
+        if earned:
+            for k in ("weak_trees", "strict_cut", "reader_cut"):
+                groups[k] = [u for u in groups[k] if u[len(BASE):] not in earned]
+            print(f"earned back: {len(earned)} page(s) Google showed with clicks leave the Google-side cuts")
     offlist = {u for v in groups.values() for u in v}
     if live:
         entering = {u for u in indexable if u not in offlist and u not in live}

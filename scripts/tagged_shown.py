@@ -29,7 +29,62 @@ from seo_diagnose import q, token  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data", "tagged-still-shown.json")
+EARNED = os.path.join(ROOT, "data", "earned-back.json")
 SINCE = "2026-11-01"
+
+# EARNED BACK (Hidde, 2026-11-04: "Ja, bouw de regel"). A tagged page Google
+# keeps showing with clicks has answered the question the cut asked, so it
+# leaves the noindex list: 2 clicks since SINCE, or 1 click and 10
+# impressions. One click alone is luck (24 of the first 31 clicks fell on
+# pages with under five impressions). Never a translation or a question
+# page: machine translation at scale is what Google's scaled-content policy
+# names, and a question page repeats its city's FAQ. The list only grows, so
+# a page that came back does not go dark again the day it stops being
+# tagged; thin_pages.py reads it (EARNED_BACK) and the release lane still
+# meters what enters. Removing a page from data/earned-back.json undoes it.
+EARNED_CLICKS = 2
+EARNED_ONE_CLICK_IMPRESSIONS = 10
+LANGS = {"de", "es", "fr", "it", "ja", "nl", "pt"}
+QSLUGS = {"oldest-tree", "aeltester-baum", "arbol-mas-antiguo", "arbre-le-plus-vieux",
+          "albero-piu-antico", "saiko-rei-no-ki", "oudste-boom", "arvore-mais-antiga"}
+
+
+LISTINGS = {"species", "parks", "collections", "united-states", "countries"}
+EARNED_PER_WEEK = 10  # a creep guard: the rule never becomes a way back for a group
+
+
+def may_earn(p):
+    seg = [x for x in p["path"].split("/") if x]
+    if not seg or seg[0] in LANGS or seg[0] in LISTINGS or seg[-1] in QSLUGS:
+        return False
+    return p["clicks"] >= EARNED_CLICKS or (
+        p["clicks"] >= 1 and p["impressions"] >= EARNED_ONE_CLICK_IMPRESSIONS)
+
+
+def record_earned(pages, today):
+    try:
+        with open(EARNED) as f:
+            doc = json.load(f)
+    except (OSError, ValueError):
+        doc = {}
+    earned = doc.get("pages") or {}
+    week_ago = (datetime.date.fromisoformat(today) - datetime.timedelta(days=7)).isoformat()
+    room = EARNED_PER_WEEK - sum(1 for v in earned.values() if v.get("date", "") > week_ago)
+    new = []
+    for p in pages:  # most clicks first, so the cap keeps the strongest
+        if len(new) >= room:
+            break
+        if p["path"] not in earned and may_earn(p):
+            earned[p["path"]] = {"date": today, "impressions": p["impressions"], "clicks": p["clicks"]}
+            new.append(p["path"])
+    with open(EARNED, "w") as f:
+        json.dump({"generated": "scripts/tagged_shown.py",
+                   "rule": "2 clicks since %s, or 1 click and %d impressions; never a translation, "
+                           "a question page or a listing page; at most %d a week (Hidde, 2026-11-04)"
+                           % (SINCE, EARNED_ONE_CLICK_IMPRESSIONS, EARNED_PER_WEEK),
+                   "pages": dict(sorted(earned.items()))}, f, indent=1, ensure_ascii=False)
+        f.write("\n")
+    return new
 
 
 def tagged_paths():
@@ -72,6 +127,8 @@ def main():
     print("tagged_shown: %d tagged pages shown since %s, %d impressions, %d clicks (Google through %s)"
           % (len(ordered), SINCE, sum(p["impressions"] for p in ordered),
              sum(p["clicks"] for p in ordered), newest))
+    new = record_earned(ordered, datetime.date.today().isoformat())
+    print("earned back today: %d (%s)" % (len(new), ", ".join(new) or "none"))
     return 0
 
 
