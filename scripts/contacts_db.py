@@ -30,6 +30,7 @@ import os
 import re
 import sys
 import time
+import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -71,7 +72,8 @@ def load(path, default):
 
 
 def norm(a):
-    a = (a or "").strip().lower().replace("mailto:", "")
+    # %20 and friends come in from scraped mailto links ("%20%20cgrinstead@...").
+    a = urllib.parse.unquote(a or "").strip().lower().replace("mailto:", "").strip()
     return a if EMAIL.match(a) and not JUNK.search(a) else ""
 
 
@@ -101,6 +103,54 @@ def guess_segment(c):
     if c.get("_from") == "source":
         return "source"
     return "other"
+
+
+# Press rows the scraper (press_desks.py) found get a hold unless they look like
+# a regional newsroom in a focus country (Hidde, 2026-11-04, "doe beide", after
+# the 631 ready press rows proved to be mostly sales inboxes, sport and business
+# titles, capitals and countries we do not work in). The hold survives rebuilds
+# like a hand-set one; `--set <email> hold=` clears it for a desk a person checked.
+# Rows a person or a source pass found (source, archive files) are never held here.
+FOCUS = {"United States", "United Kingdom", "Japan", "France", "Spain", "Portugal", "Italy",
+         "Germany", "Netherlands", "Belgium", "Luxembourg", "Austria", "Switzerland", "Ireland",
+         "Denmark", "Norway", "Sweden", "Australia", "Canada"}  # FOCUS_COUNTRIES in passcheck.py
+CAPITALS = {"london", "paris", "madrid", "lisbon", "rome", "berlin", "amsterdam", "brussels",
+            "vienna", "bern", "copenhagen", "oslo", "stockholm", "dublin", "tokyo",
+            "washington-dc", "canberra", "ottawa", "luxembourg", "new-york"}
+DESK = re.compile(r"news|nieuws|desk|redac|redaz|redak|redaction|cronaca|editor|tips|"
+                  r"^city|(trib|gtr)city|metro|local|lokal|^stadt|noticias|actu|nouvelles", re.I)
+NOT_DESK = re.compile(r"^(ad|ads|adinfo|abo|abos|advert|sales|verkoop|vente|ventas|marketing|"
+                      r"letters?|cartas|leitores|lettori|leserbriefe|events?|custserv|service|"
+                      r"subscri|assine|privacy|legal|jobs|hr|billing)\b|bot@|dsa-|bizdev|"
+                      r"familyannouncements|enquiries|anfragen|artseditor|sport|letterstoeditor|"
+                      r"publiceditor|proxy|motor|^[a-z]+\.[a-z]+$", re.I)  # last: firstname.lastname
+OFF_TOPIC = re.compile(r"sport|deportiv|business|finanz|financ|econom|negócios|tech|luftfahrt|"
+                       r"aviation|politico|education|student|university|college|vanguard|"
+                       r"concordian|stute|felix|\bstage\b|genius|bezige bij|verlag|books|"
+                       r"futurezone|mirrorpix|ebsco|caixin|bild\b|stern|"
+                       # campus papers, trade and niche titles, nationals filed under a city
+                       r"daily texan|crimson|cougar|daily aztec|paisano|hurricane|farrago|luhze|"
+                       r"horizon weekly|health|outbreak|hollywood|church|daily dot|affaritaliani|"
+                       r"sole 24|corriere della sera|globe and mail|avvenire|nu\.nl|open\.online|"
+                       r"\bopen\b|bilanci|preu|aktiv|sonntagsblatt|mirror-spectator|pacific citizen|"
+                       r"siglo xxi", re.I)
+
+
+def press_hold(r):
+    if r.get("segment") != "press" or r.get("found_in") != ["press_desks"]:
+        return None
+    local = r["email"].split("@")[0]
+    if r.get("country") not in FOCUS:
+        return "outside the focus countries"
+    if (r.get("city") or "") in CAPITALS:
+        return "a capital's desk; regional desks only"
+    if OFF_TOPIC.search(r.get("org") or "") or OFF_TOPIC.search(r["email"]):
+        return "not a paper that would write about trees (sport, business, student, trade)"
+    if NOT_DESK.search(local) or len(local) > 30:
+        return "a sales, letters or service inbox"
+    if not DESK.search(local):
+        return "not a newsroom address (a reporter's own inbox or a general one)"
+    return None
 
 
 def lang_of(c):
@@ -220,6 +270,11 @@ def build():
         else:
             st = "ready"
         r["status"] = st
+        if "hold" not in prev or prev.get("hold_auto"):  # a hand-set hold (or a cleared "") stays
+            r.pop("hold", None)
+            why = press_hold(r) if st == "ready" else None
+            if why:
+                r["hold"], r["hold_auto"] = why, True
 
     # An organisation is one contact, whatever address we found for it: a second
     # address of a domain or site we already wrote to is not a fresh one
@@ -243,15 +298,23 @@ def build():
 
 
 def status(doc):
+    # "ready" counts only what a batch can draw on; a ready address with a hold
+    # (a reason it should not be mailed: off-focus, a sales inbox, a reporter's
+    # own address) is its own column, so the pool is never read as bigger than
+    # it is (Hidde, 2026-11-04, the 631 press rows that were mostly noise).
     rows = doc["contacts"].values()
-    states = ("ready", "mailed", "org_mailed", "replied", "linked", "declined", "ambassador", "do_not_contact")
+    states = ("ready", "held", "mailed", "org_mailed", "replied", "linked", "declined", "ambassador", "do_not_contact")
+
+    def state(r):
+        return "held" if r["status"] == "ready" and r.get("hold") else r["status"]
+
     print(f"{len(doc['contacts'])} addresses, built {doc['built']}\n")
     print(f"{'segment':10}" + "".join(f"{s[:10]:>12}" for s in states))
     for seg in SEGMENTS:
-        cnt = [sum(1 for r in rows if r["segment"] == seg and r["status"] == s) for s in states]
+        cnt = [sum(1 for r in rows if r["segment"] == seg and state(r) == s) for s in states]
         if sum(cnt):
             print(f"{seg:10}" + "".join(f"{n:>12}" for n in cnt))
-    tot = [sum(1 for r in rows if r["status"] == s) for s in states]
+    tot = [sum(1 for r in rows if state(r) == s) for s in states]
     print(f"{'total':10}" + "".join(f"{n:>12}" for n in tot))
 
 
@@ -285,6 +348,8 @@ def main():
             doc["contacts"][e][k] = v
             if k == "segment":
                 doc["contacts"][e]["segment_manual"] = True
+            if k == "hold":  # a person's word on the hold; the press rule no longer touches it
+                doc["contacts"][e].pop("hold_auto", None)
         json.dump(doc, open(DB, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         return 0
     doc = build() if (a.build or not os.path.exists(DB)) else load(DB, {})
