@@ -14012,6 +14012,16 @@
         "photos_approved": 2,
         "note": "73 verdicts: 2 approved (ber_059 oak, leaves zoomed at full size; wdc_015 Smithsonian elm), 1 held (nyc_022), 70 rejected (cupcakes, kestrels, buildings, other trees); sweep is near exhausted for the roster"
       }
+    ],
+    "2026-11-04": [
+      {
+        "date": "2026-11-04",
+        "kind": "write",
+        "target": "winchester+cambridge+oxford+canterbury+stratford-upon-avon (READY leads)",
+        "tokens": 120000,
+        "trees": 0,
+        "note": "14 READY leads read, 2 verified from the owner's own pages and written, held for the pace (25/25 in 24 h): cam_010 single-leaf nut pine (CUBG, champion 11.8 m, storm 2000) and oxf_007 pagoda tree of West Walk (University Parks no. 14302, planted 1888, 3.43 m girth 2025), appended to cambridge/oxford-verified.json for build_uk_south.py, intros grown and trimmed under 100 words. Winchester 0 of 5 (one-source trail, ATI-only yew, no sizes): no city. Canterbury 2 and Stratford 1 fail access or sourcing; Cambridge tulip tree and Atlas cedar, Oxford Harcourt and Balliol scions held. Leads annotated."
+      }
     ]
   },
   "passes": [

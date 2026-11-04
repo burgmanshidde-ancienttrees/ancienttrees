@@ -48,5 +48,50 @@
       "label": "July and August, when the old wreck of a trunk is still heavy with dark fruit"
     },
     "paid_entry": true
+  },
+  {
+    "id": "oxf_007",
+    "name": "The Pagoda Tree of West Walk",
+    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+    "age_estimate": "planted 1888",
+    "age_min": 137,
+    "age_max": 138,
+    "age_basis": "source",
+    "girth_cm": 343,
+    "height_m": null,
+    "location": {
+      "address": "West Walk, University Parks, Parks Road, Oxford OX1 3RF",
+      "latitude": 51.76,
+      "longitude": -1.252,
+      "neighbourhood": "University Parks"
+    },
+    "verified_sources": [
+      "https://www.parks.ox.ac.uk/trees-of-the-parks"
+    ],
+    "official_register": {
+      "name": "University Parks, Trees of the Parks (University of Oxford), no. 14302",
+      "url": "https://www.parks.ox.ac.uk/trees-of-the-parks"
+    },
+    "access": "Free, open access. University Parks open daily at 7.45am and close at sunset or just before (parks.ox.ac.uk).",
+    "transport": "20 min walk from Oxford railway station",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "photo": {
+      "url": "",
+      "license": "",
+      "attribution": "",
+      "status": "missing"
+    },
+    "photo_candidates": [],
+    "verify_notes": "Owner source, fetched 2026-11-04 (parks.ox.ac.uk/trees-of-the-parks, section West Walk): 'Japanese Pagoda Tree (14302) Styphnolobium japonicum ... native to China. This tree was planted in 1888 making it one of the oldest specimens in the Parks. In 1936 its girth was recorded as 6ft 6ins (1.98m), and in 2025 we measured it at 11ft 2ins (3.43m). It produces creamy yellow flowers in July which are the source of the transparent pigment Imperial Yellow.' Owner of the ground plus a 2025 measurement (life check). One source, flagged as single-source. Pin is the lead's Parks point (51.76, -1.252), NOT the tree: the Arboretum Explorer (universityofoxford.ezyportal.com/Trees) is a JS app with no readable endpoint, Overpass timed out twice. Access and transport copied from live oxf_005 (same park). Write pass 2026-11-04.",
+    "story": "In 1936 someone put a tape round this tree and wrote down six feet six inches. In 2025 the University Parks measured it again and got eleven feet two, or 3.43 metres. That is nearly a metre and a half of new trunk in 89 years, and the tree was already 48 years old when the first figure was taken.\n\nIt is a Japanese pagoda tree, a species native to China despite its name, and the Parks record its planting in 1888. That makes it one of the oldest specimens in the University Parks by their own account, and it carries the number 14302 on their published list of trees.\n\nIts moment is July, when it flowers in creamy yellow. Those flowers are the source of a transparent pigment known as Imperial Yellow, a grand name to attach to a tree on a park walk.\n\nThe planting date comes from the Parks' records rather than an estimate, so the age is as firm as these things get, well over a century, with two measurements 89 years apart to show its progress.\n\nIt stands on West Walk in the University Parks. Entry is free, the gates open at 7.45 in the morning and close at or just before sunset, and our pin marks the Parks rather than the trunk, so look for the walk and the tree's number.",
+    "how_to_recognise": "You can recognise it as the Japanese pagoda tree on West Walk, 3.43 metres round, number 14302 on the Parks' own tree list. It stands in University Parks; our pin marks the park, not the trunk.",
+    "best_time": {
+      "months": [
+        7
+      ],
+      "kind": "flowers",
+      "label": "July, when it flowers in creamy yellow, the source of the pigment Imperial Yellow"
+    }
   }
 ]

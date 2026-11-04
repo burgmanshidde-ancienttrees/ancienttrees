@@ -50,7 +50,7 @@
    "latitude": 51.6873,
    "longitude": -1.24,
    "location_precision": "approximate",
-   "reason": "Day trip with paid entry (University arboretum, about 6 GBP). Only a redwood-finder page and redwoodworld.co.uk (fragmentary table, 271 ft in 2006, lightning-topped) found; no single named tree, no planting date, no Tree Register page seen. Needs the Tree Register champion entry or an arboretum guide naming one trunk."
+   "reason": "Day trip with paid entry (University arboretum, about 6 GBP). Only a redwood-finder page and redwoodworld.co.uk (fragmentary table, 271 ft in 2006, lightning-topped) found; no single named tree, no planting date, no Tree Register page seen. Needs the Tree Register champion entry or an arboretum guide naming one trunk. Held as a lead by the write pass 2026-11-04: no single named trunk and no planting date; not researched this pass."
   },
   {
    "name": "Japanese Pagoda Tree planted 1888, University Parks",
@@ -58,7 +58,7 @@
    "latitude": 51.76,
    "longitude": -1.252,
    "location_precision": "approximate",
-   "reason": "University Parks 'Trees of the Parks' (parks.ox.ac.uk) mentions a pagoda tree planted 1888 per a search summary only; page not read, no tree ID or coordinate. The Parks' Arboretum Explorer map has tree IDs: read it in a browser to get the coordinate and girth. Free public park."
+   "reason": "University Parks 'Trees of the Parks' (parks.ox.ac.uk) mentions a pagoda tree planted 1888 per a search summary only; page not read, no tree ID or coordinate. The Parks' Arboretum Explorer map has tree IDs: read it in a browser to get the coordinate and girth. Free public park. PROMOTED to oxf_007 in data/research/oxford-verified.json by the write pass 2026-11-04 (parks.ox.ac.uk Trees of the Parks, West Walk no. 14302: planted 1888, girth 1.98 m in 1936 and 3.43 m in 2025)."
   },
   {
    "name": "Balliol Fellows' Garden mulberry scions",
@@ -66,7 +66,7 @@
    "latitude": 51.7543,
    "longitude": -1.2558,
    "location_precision": "approximate",
-   "reason": "Scions of the Garden Quad tree (oxf_006); Fellows' Garden is not clearly on the visitor route. Not separate points."
+   "reason": "Scions of the Garden Quad tree (oxf_006); Fellows' Garden is not clearly on the visitor route. Not separate points. Held as a lead by the write pass 2026-11-04: scions of oxf_006, not separate points, Fellows' Garden access unconfirmed."
   }
  ],
  "blocked": [

@@ -1,46 +1,50 @@
 {
-  "leads": [
-    {
-      "name": "St Gregory's baobab planes (two)",
-      "latitude": 51.285,
-      "longitude": 1.0925,
-      "reason": "Two baobab planes east of St Gregory's church (now Christ Church University music centre), Northgate; a Find a Grave note says new signs said the University no longer permits public access; no current statement. Position is not a fix. Sources: CHAS street-scenes page, KentOnline 2019.",
-      "precision": "unknown"
-    },
-    {
-      "name": "Beer Cart Lane / Furley Page baobab plane",
-      "latitude": 51.279,
-      "longitude": 1.0805,
-      "reason": "Baobab plane behind Furley Page solicitors, St Margaret's Street; on private ground, only glimpsed from the car-park entrance (CHAS, Baobab Planes blog). Not accessible. Approximate position.",
-      "precision": "approximate"
-    },
-    {
-      "name": "Cathedral Archdeaconry black mulberry",
-      "latitude": 51.279,
-      "longitude": 1.0845,
-      "reason": "Ancient black mulberry in the Archdeaconry garden, tradition says descended from the tree where Becket's knights left armour; no measured or dated age (a garden blog says no more than about a century); garden opens only on NGS/special days, so access fails. Source: Canterbury tree strategy 2024-40 mentions an ancient black mulberry; BPT post.",
-      "precision": "approximate"
-    },
-    {
-      "name": "Archdeaconry garden yew",
-      "latitude": 51.279,
-      "longitude": 1.0845,
-      "reason": "Large yew dominating the Archdeaconry garden (visitor blog of NGS opening); private garden with occasional opening; no measurement. Canterbury tree strategy says ancient yews of national significance exist in the district, not located.",
-      "precision": "approximate"
-    }
-  ],
-  "blocked": [
-    {
-      "name": "St Lawrence Lime, St Lawrence Ground",
-      "latitude": 51.26758,
-      "longitude": 1.09279,
-      "reason": "Fell in high winds January 2005 (Cricinfo, Kent Cricket, Wikipedia); replacement sapling planted March 2005, left outside the boundary rope; not an old tree. Also ground is a ticketed cricket venue."
-    },
-    {
-      "name": "Chilham churchyard yew",
-      "latitude": 51.2421,
-      "longitude": 0.9984,
-      "reason": "Dead: fatally damaged in the Great Storm of 15 October 1987; plaque says it survived 1300 years; only stump remains (Friends of St Mary's Chilham, Alamy plaque caption). Approximate position."
-    }
-  ]
+ "leads": [
+  {
+   "name": "St Gregory's baobab planes (two)",
+   "latitude": 51.285,
+   "longitude": 1.0925,
+   "reason": "Two baobab planes east of St Gregory's church (now Christ Church University music centre), Northgate; a Find a Grave note says new signs said the University no longer permits public access; no current statement. Position is not a fix. Sources: CHAS street-scenes page, KentOnline 2019. Held as a lead by the write pass 2026-11-04: access unconfirmed (signs reportedly say the University no longer permits public access) and the position is not a fix.",
+   "precision": "unknown",
+   "species": "Baobab (Adansonia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Beer Cart Lane / Furley Page baobab plane",
+   "latitude": 51.279,
+   "longitude": 1.0805,
+   "reason": "Baobab plane behind Furley Page solicitors, St Margaret's Street; on private ground, only glimpsed from the car-park entrance (CHAS, Baobab Planes blog). Not accessible. Approximate position.",
+   "precision": "approximate"
+  },
+  {
+   "name": "Cathedral Archdeaconry black mulberry",
+   "latitude": 51.279,
+   "longitude": 1.0845,
+   "reason": "Ancient black mulberry in the Archdeaconry garden, tradition says descended from the tree where Becket's knights left armour; no measured or dated age (a garden blog says no more than about a century); garden opens only on NGS/special days, so access fails. Source: Canterbury tree strategy 2024-40 mentions an ancient black mulberry; BPT post. Held as a lead by the write pass 2026-11-04: access does not clear (Archdeaconry garden opens on NGS or special days only) and the age is tradition against a blog's 'about a century'.",
+   "precision": "approximate",
+   "species": "Mulberry (Morus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Archdeaconry garden yew",
+   "latitude": 51.279,
+   "longitude": 1.0845,
+   "reason": "Large yew dominating the Archdeaconry garden (visitor blog of NGS opening); private garden with occasional opening; no measurement. Canterbury tree strategy says ancient yews of national significance exist in the district, not located.",
+   "precision": "approximate"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "St Lawrence Lime, St Lawrence Ground",
+   "latitude": 51.26758,
+   "longitude": 1.09279,
+   "reason": "Fell in high winds January 2005 (Cricinfo, Kent Cricket, Wikipedia); replacement sapling planted March 2005, left outside the boundary rope; not an old tree. Also ground is a ticketed cricket venue."
+  },
+  {
+   "name": "Chilham churchyard yew",
+   "latitude": 51.2421,
+   "longitude": 0.9984,
+   "reason": "Dead: fatally damaged in the Great Storm of 15 October 1987; plaque says it survived 1300 years; only stump remains (Friends of St Mary's Chilham, Alamy plaque caption). Approximate position."
+  }
+ ]
 }
