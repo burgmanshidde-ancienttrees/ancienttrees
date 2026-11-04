@@ -3103,7 +3103,11 @@ def check_tick_has_its_wiring():
                 no_sync.append(rel)
             if "atPaintSeen" not in html:
                 no_handler.append(rel)
-        if "save-btn" in html and "atPaintSaves" not in html:
+        # A heart in the MARKUP, not the words inside a script: Base carries
+        # COLLECTION_JS on every page since 2026-11-04 (recent searches), and
+        # its card template holds the class as a string.
+        markup = re.sub(r"<script\b[^>]*>.*?</script>", "", html, flags=re.S | re.I)
+        if "save-btn" in markup and "atPaintSaves" not in html:
             heart_no_handler.append(rel)
     for bad, what in ((no_dialog, "the sign-in dialog"),
                       (no_sync, "visited-sync-js (atPushVisited)"),

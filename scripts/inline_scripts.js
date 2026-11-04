@@ -60,7 +60,19 @@ function check(file) {
     const attrs = m[1] || "";
     const body = m[2].trim();
     if (!body) continue;
+    // Data islands are not code either (application/json, 2026-11-04: Find
+    // people's ambassador list on /account): JSON.parse them instead.
     if (/type\s*=\s*["']?application\/ld\+json/i.test(attrs)) continue;
+    if (/type\s*=\s*["']?application\/json/i.test(attrs)) {
+      try { JSON.parse(body); } catch (e) {
+        failures++;
+        const why = "a JSON data block: " + String(e.message).split("\n")[0];
+        const rel = path.relative(dist, file);
+        if (seen.has(why)) seen.get(why).count++;
+        else seen.set(why, { first: rel, count: 1 });
+      }
+      continue;
+    }
     scripts++;
     try {
       // A module is parsed differently; nothing here ships as one, and if that
