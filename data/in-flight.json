@@ -13,6 +13,41 @@
       "by": "session-d48a5547",
       "claimed_at": "2026-11-04T08:12:52+00:00",
       "trees_at_claim": 4
+    },
+    {
+      "target": "jacksonville",
+      "kind": "verify",
+      "by": "session-11832dd4",
+      "claimed_at": "2026-11-04T08:13:50+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "tampa",
+      "kind": "verify",
+      "by": "session-11832dd4",
+      "claimed_at": "2026-11-04T08:13:50+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "austin",
+      "kind": "verify",
+      "by": "session-11832dd4",
+      "claimed_at": "2026-11-04T08:13:51+00:00",
+      "trees_at_claim": 10
+    },
+    {
+      "target": "san-antonio",
+      "kind": "verify",
+      "by": "session-11832dd4",
+      "claimed_at": "2026-11-04T08:13:51+00:00",
+      "trees_at_claim": 5
+    },
+    {
+      "target": "st-augustine",
+      "kind": "verify",
+      "by": "session-11832dd4",
+      "claimed_at": "2026-11-04T08:13:57+00:00",
+      "trees_at_claim": null
     }
   ]
 }
