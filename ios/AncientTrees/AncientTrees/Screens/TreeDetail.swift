@@ -701,6 +701,9 @@ struct TreeDetail: View {
             // tap: -collectsheet opens it in whichever state the tree is in.
             if ProcessInfo.processInfo.arguments.contains("-collectsheet") { choosingCollect = true }
         }
+        .onChange(of: kmAway, initial: true) { _, d in
+            nearTree = Self.staysNear(was: nearTree, km: d)
+        }
     }
 
     /// The photograph, or the species drawn, edge to edge. AllTrails leads every
@@ -2471,7 +2474,17 @@ struct TreeDetail: View {
         return tree.distanceKm(from: o.lat, o.lng)
     }
 
-    private var standingHere: Bool { (kmAway ?? .infinity) <= 0.2 }
+    /// A BAND, NOT A LINE (Hidde, 2026-11-04: "Yes, build it"): Collect
+    /// takes over within 200 m as before and gives way again only past 250 m,
+    /// so a fix wandering 20 to 50 m near the line cannot swap the big button
+    /// under somebody's thumb. Apple's region checks keep the same margin.
+    @State private var nearTree = false
+    private var standingHere: Bool { nearTree }
+
+    static func staysNear(was: Bool, km: Double?) -> Bool {
+        guard let d = km else { return false }
+        return d <= 0.2 || (was && d <= 0.25)
+    }
 
     private var takeMeThereLabel: String {
         guard let d = kmAway else { return "Take me there" }
