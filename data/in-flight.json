@@ -48,6 +48,27 @@
       "by": "session-11832dd4",
       "claimed_at": "2026-11-04T08:13:57+00:00",
       "trees_at_claim": null
+    },
+    {
+      "target": "milwaukee",
+      "kind": "verify",
+      "by": "session-f7ee8c1b",
+      "claimed_at": "2026-11-04T08:19:10+00:00",
+      "trees_at_claim": null
+    },
+    {
+      "target": "chicago",
+      "kind": "verify",
+      "by": "session-f7ee8c1b",
+      "claimed_at": "2026-11-04T08:19:16+00:00",
+      "trees_at_claim": 38
+    },
+    {
+      "target": "madison",
+      "kind": "verify",
+      "by": "session-f7ee8c1b",
+      "claimed_at": "2026-11-04T08:19:21+00:00",
+      "trees_at_claim": null
     }
   ]
 }
