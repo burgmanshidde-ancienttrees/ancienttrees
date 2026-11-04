@@ -93,7 +93,13 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
         // difference between falling back to the stop and pinning a control to
         // the bottom of the screen for a frame. PlacePin already made this
         // distinction and this view did not.
-        .onPreferenceChange(SheetVisibleHeightKey.self) { livePoints = $0 > 0 ? $0 : nil }
+        // Under half a point is not a move: the map and the sheet otherwise
+        // trade sub-pixel heights for ever (the freeze of 2026-11-04).
+        .onPreferenceChange(SheetVisibleHeightKey.self) { v in
+            let next: CGFloat? = v > 0 ? v : nil
+            if let n = next, let l = livePoints, abs(n - l) < 0.5 { return }
+            livePoints = next
+        }
     }
 }
 

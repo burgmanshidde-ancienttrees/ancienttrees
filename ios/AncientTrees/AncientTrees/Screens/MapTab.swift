@@ -303,6 +303,10 @@ struct MapTab: View {
         .padding(.horizontal, 20)
         .padding(.bottom, 10)
         .frame(maxWidth: .infinity, alignment: .leading)
+        // .contain first: an identifier on a bare container is stamped on
+        // every control inside it, so the ambassador seat and the share
+        // circle lost their own and SignedOutWalk could not find the seat.
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("map-place-header")
     }
 

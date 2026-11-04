@@ -442,16 +442,25 @@ struct BottomSheet<Header: View, Content: View>: View {
                     .contentShape(.rect)
                     // Everything above the scroll view, measured from the
                     // sheet's own top: see headerDepth.
+                    // A POINT OF SLACK (2026-11-04, Hidde's freeze after a
+                    // swipe over a pin's card on iOS 26). This measure feeds
+                    // the fitted card stop, the stop moves the frame, and the
+                    // frame moves this measure: two values a fraction of a
+                    // pixel apart took turns for ever and the main thread
+                    // never got out of layout. Under a point is not a change.
                     .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named("sheet")).maxY } action: {
-                        headerDepth = max(90, $0)
-                        headerBottom = $0 - top * progress
+                        let depth = max(90, $0)
+                        if abs(depth - headerDepth) >= 1 { headerDepth = depth }
+                        let bottom = $0 - top * progress
+                        if abs(bottom - headerBottom) >= 1 { headerBottom = bottom }
                     }
 
                 ScrollView {
                     content
                         .frame(maxWidth: .infinity, alignment: .top)
                         .onGeometryChange(for: CGFloat.self) { $0.size.height } action: {
-                            contentHeight = $0
+                            // The same point of slack as headerBottom above.
+                            if abs($0 - contentHeight) >= 1 { contentHeight = $0 }
                         }
                 }
                 // ROOM AT THE END OF THE LIST, not a shorter list.

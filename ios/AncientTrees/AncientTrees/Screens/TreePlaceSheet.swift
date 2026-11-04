@@ -156,10 +156,20 @@ struct TreePlaceBody: View {
     var body: some View {
         // No heart on your own tree: it is in your collection already, the
         // rule the tree page keeps too.
-        Button(action: onOpen) {
-            TreeCard(tree: tree, showHeart: ownPhoto == nil && !isOwn, ownPhoto: ownPhoto, showText: false)
-        }
-            .buttonStyle(.plain)
+        // A TAP, NOT A BUTTON (Hidde, 2026-11-04: "zodra ik hierover scroll,
+        // loopt hij vast"). A Button fires when the finger lifts inside it, so
+        // a swipe over this card opened the tree while the sheet was still
+        // moving under the finger; on iOS 26 that push froze the app in a
+        // layout loop between the sheet and the map. tapUnlessDragged fires
+        // only when the finger stayed still, as SheetLink does for the list.
+        TreeCard(tree: tree, showHeart: ownPhoto == nil && !isOwn, ownPhoto: ownPhoto, showText: false)
+            .tapUnlessDragged(onOpen)
+            // One element with the button trait, as SheetLink makes of a list
+            // card, so VoiceOver and the UI tests still find one "place-card"
+            // button.
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAction(.default, onOpen)
             .accessibilityIdentifier("place-card")
             .padding(.horizontal, 16)
     }

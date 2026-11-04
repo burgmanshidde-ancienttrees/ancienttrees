@@ -1077,10 +1077,16 @@ struct ContentView: View {
             // screen that ships unseen.
             if let spec = args.first(where: { $0.hasPrefix("-open=") })?.dropFirst(6),
                let route = Self.debugRoute(String(spec)) {
-                // A city or a country goes through the same door a tap uses,
-                // so it lands on the map (onChange of navigator.push).
+                // A city or a country lands on the map the way a search does.
+                // Not through navigator.push: at launch its onChange is not
+                // listening yet, so the app stayed on the opening map
+                // (SignedOutWalk's ambassador seat tests, 2026-11-04). The map
+                // tab's .task takes a waiting searchOnMap after its first frame.
                 switch route {
-                case .city, .country: navigator.push = route
+                case .city(let slug):
+                    navigator.searchOnMap = SearchOnMap(hit: .city(slug: slug, name: slug, lat: 0, lng: 0))
+                case .country(let name):
+                    navigator.searchOnMap = SearchOnMap(hit: .country(name))
                 default: path(tab).wrappedValue = [route]
                 }
             }
