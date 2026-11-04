@@ -1,0 +1,82 @@
+{
+  "leads": [
+    {
+      "name": "Bicentennial Oak of Vanderbilt",
+      "reason": "blocked: bur oak fell 12 Nov 2022 (TUFC page); never ship",
+      "status": "blocked",
+      "source": "https://tufc.com/project/bicentennial-oak-of-vanderbilt/"
+    },
+    {
+      "name": "Vanderbilt Japanese zelkova (Tennessee champion, planted by Bishop McTyeire)",
+      "reason": "blocked: uprooted in a storm in March 2023 (Bioimages 4-145 remarks; ring count about 150 years)",
+      "status": "blocked",
+      "source": "http://bioimages.vanderbilt.edu/vanderbilt/4-145"
+    },
+    {
+      "name": "Cockrill Springs Oak, Centennial Park",
+      "reason": "blocked: original bur oak lost 1966 to 1972; the tree there is a 1971 replacement, young",
+      "status": "blocked",
+      "source": "https://tufc.com/project/cockrill-springs-oak-of-nashville/"
+    },
+    {
+      "name": "Chickasaw Treaty Oak",
+      "reason": "blocked: fell June 1956",
+      "status": "blocked",
+      "source": "https://tufc.com/project/chickasaw-treaty-oak/"
+    },
+    {
+      "name": "Battle Creek Black Oak",
+      "reason": "blocked: removed as a hazard in 2009",
+      "status": "blocked",
+      "source": "https://tufc.com/project/battle-creek-black-oak/"
+    },
+    {
+      "name": "Witness Tree of Richland Country Club (bur oak, Granny White Pike)",
+      "reason": "private club land, no public access",
+      "status": "blocked",
+      "source": "https://tufc.com/project/witness-tree-of-richland-country-club/"
+    },
+    {
+      "name": "Belle Meade Country Club bur oaks (one a Bicentennial Tree)",
+      "reason": "private club land; Belle Meade Historic Site (ticketed) has no tree inventory found",
+      "status": "blocked",
+      "source": "https://gatheringgrowth.org/trees-of-significance/the-oaks-of-belle-meade"
+    },
+    {
+      "name": "Sycamore Valley Overlook Oak (white oak, Historic Tree 2012)",
+      "reason": "no location, shelters a private 1830s home; outside Davidson County area; no public access found",
+      "status": "lead",
+      "source": "https://tufc.com/project/sycamore-valley-overlook-oak/"
+    },
+    {
+      "name": "September elm at Warner Parks Nature Center entrance (reported national champion, 135 in circ, 83 ft)",
+      "reason": "lead: only source is an undated Vanderbilt page; TUFC champion list now shows the September elm champion in Williamson County; check alive and size with Metro Parks before use",
+      "status": "lead",
+      "source": "https://www.vanderbilt.edu/trees/?p=135"
+    },
+    {
+      "name": "Franklin trees: Wise Old Oak (bur oak over 350 yrs), Old Town Bur Oak, Franklin Grove Shumard Oak, Carnton Osage Orange",
+      "reason": "lead: Williamson County, about 20 miles south, outside the 30-minute public-transport rule; church/museum grounds; revisit as a Franklin place",
+      "status": "lead",
+      "source": "https://tufc.com/project/wise-old-oak/"
+    },
+    {
+      "name": "Vanderbilt: sugarberry Divinity courtyard (DBH 146 cm), willow oak near 21st Ave crosswalk (DBH 117), Furman Shumard oak (128), Peabody esplanade red oak (118), further magnolias",
+      "reason": "lead: field-verified positions and DBH in the arboretum database (measured 2014), not yet verified further; same 600 m campus cluster; add if the Vanderbilt cluster needs depth",
+      "status": "lead",
+      "source": "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv"
+    },
+    {
+      "name": "Hermitage grounds: Jackson-era oaks, hickories and the arboretum (19 oak species)",
+      "reason": "lead: Hermitage Arboretum Wikipedia article names no individual trees; ask the Hermitage for a tree list",
+      "status": "lead",
+      "source": "https://en.wikipedia.org/wiki/Hermitage_Arboretum"
+    },
+    {
+      "name": "Cheekwood, Travellers Rest, Radnor Lake, Shelby Park, Mount Olivet, Fort Negley",
+      "reason": "not searched this pass (no naming body found for individual trees); no result",
+      "status": "lead",
+      "source": ""
+    }
+  ]
+}

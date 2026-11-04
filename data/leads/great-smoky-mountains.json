@@ -3,7 +3,7 @@
     {
       "name": "Third, larger tulip poplar near the Roman Columns",
       "species": "Tulip Tree (Liriodendron tulipifera)",
-      "note": "Reported by a trip-report source as 'nearby' the Roman Columns (gsm_002) at Ramsey Cascades mile 2.6 and 'even larger', but not separately measured or pinned. RECHECKED 2026-09-26: fetched five independent hiking-guide pages directly; all describe the giant tulip poplars at mile 2.6 as one grove/viewing spot (one source explicitly says 'three tulip poplars' together) with no source giving this tree a separately locatable position or measurement. Still unresolved; stays a lead.",
+      "note": "Reported by a trip-report source as 'nearby' the Roman Columns (gsm_002) at Ramsey Cascades mile 2.6 and 'even larger', but not separately measured or pinned. RECHECKED 2026-09-26: fetched five independent hiking-guide pages directly; all describe the giant tulip poplars at mile 2.6 as one grove/viewing spot (one source explicitly says 'three tulip poplars' together) with no source giving this tree a separately locatable position or measurement. Still unresolved; stays a lead. 2026-11-04 pass: 'Roman Columns' name appears in no fetched source; the three poplars are delivered as one ensemble (gsm_002). This lead is folded in.",
       "sources": [
         "blog search summary, not independently fetched this pass"
       ]
@@ -11,7 +11,7 @@
     {
       "name": "Largest Ramsey Cascades tulip poplar, over 7ft diameter",
       "species": "Tulip Tree (Liriodendron tulipifera)",
-      "note": "Multiple sources describe an unnamed tulip poplar on the Ramsey Cascades trail at over 7 feet in diameter (roughly 670cm circumference), 'the largest tree you will see', somewhere in the old-growth cove beyond the foot log crossing. No mile marker or coordinate found this pass; may or may not be one of the Roman Columns pair, or the same tree as the lead above. RECHECKED 2026-09-26: still no distinguishing mile marker or measurement found via direct fetch. Stays a lead.",
+      "note": "Multiple sources describe an unnamed tulip poplar on the Ramsey Cascades trail at over 7 feet in diameter (roughly 670cm circumference), 'the largest tree you will see', somewhere in the old-growth cove beyond the foot log crossing. No mile marker or coordinate found this pass; may or may not be one of the Roman Columns pair, or the same tree as the lead above. RECHECKED 2026-09-26: still no distinguishing mile marker or measurement found via direct fetch. Stays a lead. 2026-11-04: same trees as gsm_002 (smliv.com 2024: the 'king' at least 7 ft in diameter). Folded in.",
       "sources": [
         "https://www.cabinsusagatlinburg.com/smoky-mountains-information/post/0/45/163/ramsey-cascades-trail-.php"
       ]
@@ -19,7 +19,7 @@
     {
       "name": "Albright Grove eastern hemlocks",
       "species": "Eastern Hemlock (Tsuga canadensis)",
-      "note": "Multiple sources describe large old hemlocks (5+ ft wide trunks) at Albright Grove, but the hemlock woolly adelgid has killed enormous numbers of Smokies hemlocks since the 2000s and at least one source notes 'huge hemlocks splintered, fell, and remained where they lay' in this same grove. No specific currently-alive, individually locatable hemlock confirmed this pass; needs a recent (post-2020) source before any hemlock could be delivered as an entry. RECHECKED 2026-09-26: found a 2023 article on the trail and NPS's ongoing adelgid mitigation, but still no source naming a specific standing, locatable hemlock. Stays blocked-leaning.",
+      "note": "Multiple sources describe large old hemlocks (5+ ft wide trunks) at Albright Grove, but the hemlock woolly adelgid has killed enormous numbers of Smokies hemlocks since the 2000s and at least one source notes 'huge hemlocks splintered, fell, and remained where they lay' in this same grove. No specific currently-alive, individually locatable hemlock confirmed this pass; needs a recent (post-2020) source before any hemlock could be delivered as an entry. RECHECKED 2026-09-26: found a 2023 article on the trail and NPS's ongoing adelgid mitigation, but still no source naming a specific standing, locatable hemlock. Stays blocked-leaning. 2026-11-04: the Albright giant tulip tree is delivered as gsm_001. The alive hemlock (5+ ft wide, lowest branch 35 ft, near mile 3) is in appvoices 2019 only, unlocatable; still no post-2020 source.",
       "sources": [
         "https://www.ilovetrees.net/albright-grove/",
         "https://appvoices.org/2019/10/11/giants-of-the-smokies/"
@@ -30,10 +30,30 @@
       "species": "Mixed (tulip tree, eastern hemlock, others)",
       "note": "A 0.75-mile self-guided loop at the Chimneys Picnic Area with a numbered-stop brochure and old-growth cove hardwood forest, but no individually named or measured giant tree found in the sources checked this pass, and no PDF of the self-guiding booklet located. RECHECKED 2026-09-26: NPS's own trail page and two trip-report blogs give general forest-ecology description only, no standout individual tree. Worth a follow-up pass specifically to find or request the brochure content.",
       "sources": []
+    },
+    {
+      "name": "Big Poplars of Caldwell Fork and the hollow poplar on Boogerman Trail (Cataloochee, NC)",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "note": "2026-11-04: signed 'Big Poplars' spur off Caldwell Fork Trail near the Rough Fork junction, one huge poplar a couple hundred feet off the trail; Boogerman Trail has a grove of about ten poplars 6 ft+ in diameter and a hollow one before the Robert Palmer homesite (friendsofthesmokies.org 2017). No mile, size or coordinate found. blueridgemountainlife.com (updated 2026-07-02) says Caldwell Fork Trail, the access, is closed after Helene with creeks to wade. Do not ship until NPS reopens it and a mile marker or GPS is found.",
+      "sources": [
+        "https://friendsofthesmokies.org/blog/classic-hike-sept-2017-boogerman-trail",
+        "https://blueridgemountainlife.com/boogerman-trail-cataloochee-valley/"
+      ]
+    },
+    {
+      "name": "Cocke County champion red maple (off Maddron Bald Trail)",
+      "species": "Red Maple (Acer rubrum)",
+      "note": "2026-11-04: the 2026-09 pass's source (American Forests 'Go See a Champion') could not be re-found by search; a tngenweb page cited is unrelated. The structured data never reached disk. Not delivered; needs the American Forests / UT champion record re-fetched."
+    },
+    {
+      "name": "Sag Branch Giant tulip tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "note": "ENTS 2004, 167.7 ft, 7.08 ft diameter, off-trail drainage. No public access found; not shippable."
     }
   ],
   "blocked": [],
   "note_2026_09_26": "A fourth tree, gsm_003 The Cocke County Champion Red Maple (off Maddron Bald Trail), was verified and delivered this pass from a source not previously in this leads file (American Forests' 'Go See a Champion' article, corroborated by the University of Tennessee's state champion-tree register). That brings the place to 3 verified trees, still one short of the 4-tree floor; none of the four leads above resolved into a deliverable fourth tree this pass.",
   "note_2026_09_26_pass2": "A second pass this same day found the place its 4th and 5th verified trees via two genuinely new angles neither documented lead touched: Cataloochee (gsm_004, The Big Poplars of Caldwell Fork, a signed spur trail off Caldwell Fork Trail near its Rough Fork Trail junction, not previously researched in this file, which only covered the Greenbrier/Cosby side of the park) and Cades Cove (gsm_005, The Pearl Harbor Tree, a historically-significant sweetgum planted 7 December 1941, found via the \"does anybody NAME its trees\" technique applied to Cades Cove rather than more champion-register searching). Champion-register angles tried and unhelpful for a 4th/5th tree specifically: the NPS Park Science 1998 article (irma.nps.gov/DataStore/DownloadFile/615556) lists 22 national champions by species and measurement but gives NO locations at all, so none of its entries (including a 165ft eastern hemlock, likely dead now given adelgid losses since the 2000s) could be delivered; Eastern Native Tree Society (nativetreesociety.org) remains unreachable directly AND has no Wayback snapshot for its GSMNP tall-trees page, but WebSearch snippets surfaced one intact fact worth recording as a future lead: ENTS measured the \"Sag Branch Giant\"/\"Sag Branch Tuliptree\" at 167.7ft tall, 7.08ft diameter, calling it possibly the largest-volume tulip tree known anywhere, in April 2004; no accessible trail location was found for it this pass (Sag Branch suggests a remote, likely off-trail drainage) and it was not pursued further given the time budget. Worth a dedicated future pass with more time.",
-  "place_now_has_5_verified_trees_ready_for_writing": true
+  "place_now_has_5_verified_trees_ready_for_writing": false,
+  "note_2026_11_04": "Rebuilt pass: gsm_001 Albright Grove giant tulip tree, gsm_002 Ramsey Cascades giant tulip poplars, gsm_003 Pearl Harbor Tree delivered in data/research/great-smoky-mountains-verified.json (all flagged, approximate pins). Three trees, one short of the 4-tree floor; the earlier gsm_003 red maple and gsm_004 Big Poplars could not be re-verified (see leads). Cove Hardwood Nature Trail: still no individually measured tree. Overpass blocked from this machine; trail pins from Nominatim way geometry."
 }

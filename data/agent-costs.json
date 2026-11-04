@@ -15853,6 +15853,54 @@
       "tokens": 207798,
       "trees": 15,
       "note": "15 stories and recognition lines, 7 new places, Austin/Houston/Goliad place text revised; held for the pace, build with scripts/build_us_florida_texas.py. Dispatcher about 90k more, estimated. All in about 1.18M tokens, roughly 79k a tree."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "atlanta (us southeast)",
+      "tokens": 168048,
+      "trees": 11,
+      "note": "Trees Atlanta champion program points as finding aid plus a source each; all pins approximate, ten flagged. Herbert Taylor Park and Atlanta Memorial Park clusters."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "asheville (us southeast)",
+      "tokens": 141399,
+      "trees": 4,
+      "note": "Treasured White Oak (GreenWorks) plus three Biltmore trees behind the ticket; Riverside Cemetery and NC Arboretum gave no named tree. Botanical Gardens birch and A-B Tech Treasured Trees left as leads."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "great-smoky-mountains (us southeast)",
+      "tokens": 152135,
+      "trees": 3,
+      "note": "Albright Grove tulip tree, Ramsey Cascades poplars, Pearl Harbor Tree; trail pins approximate. Caldwell Fork closed after Helene, hemlocks still unsourced, Cocke County maple not re-found."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "nashville+chattanooga (us southeast)",
+      "tokens": 199375,
+      "trees": 9,
+      "note": "Nashville 8 (five Vanderbilt with confirmed pins from the arboretum database, three Tennessee Urban Forestry Council registry); Chattanooga 1 (Bonny Oaks Willow Oak), cht_002 held as lead quality."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "write",
+      "target": "atlanta+great-smoky-mountains+chattanooga (us southeast)",
+      "tokens": 161785,
+      "trees": 15,
+      "note": "15 stories and recognition lines, place copy for three new places; held for the pace in scripts/build_us_southeast.py."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "write",
+      "target": "nashville+asheville (us southeast)",
+      "tokens": 167550,
+      "trees": 12,
+      "note": "12 stories, 4 best_time, place copy for two new places; dropped verify_notes from these entries. All in about 0.99M agent tokens for 27 trees, roughly 37k a tree, plus about 60k dispatcher."
     }
   ]
 }
