@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 night run (second attempt): pace cap still full, Brighton register retried
+
+- The cap holds until the 2026-11-03 evening commits pass 24 h (about 18:30 UTC); the 20 written DC/NYC stories wait in data/research and the washington-dc claim stays. Brighton retry: Stanmer churchyard yew added as a lead, register stays stalled. No trees shipped.
+
 ## 2026-11-04 night run (13:39 window): no new trees, the pace cap is full
 
 - **Rung picked:** 5, US/UK first. Rungs 1 to 3 were clear (no sightings, no notes, health.py green). A write pass on Washington DC and New York wrote 20 stories (5 DC: wdc_026, 027, 031, 032, 035; 15 NYC: nyc_031, 032, 036, 073, 076, 077, 079, 080, 081, 095, 121, 124, 127, 130, 140) into data/research/*-verified.json, but the merge would be 45 of our trees in 24 hours against the cap of 25, so none went into data/cities. When the cap rolls over, merge them and update the NYC (28/29 to 44) and DC (21 to 26) count promises in intro, meta_description, question_meta and faq. nyc_122 was a duplicate of nyc_025 and went to leads (its 2026 inventory record could enrich nyc_025). The 26 READY DC/NYC leads in `leads.py --ready` are earlier rejects (front yards, a school, young memorials, groves) and were skipped; leads.py misfiles them.
