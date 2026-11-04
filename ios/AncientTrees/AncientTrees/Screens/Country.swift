@@ -116,7 +116,7 @@ struct CountryView: View {
                     .font(.brand(20, .heavy)).foregroundStyle(Brand.ink)
                     .padding(.horizontal, 20)
                 ForEach(cities, id: \.slug) { c in
-                    NavigationLink(value: Route.city(c.slug)) {
+                    PlaceLink(route: .city(c.slug)) {
                         HStack {
                             Text(c.name).font(.brand(16, .bold)).foregroundStyle(Brand.ink)
                             Spacer()

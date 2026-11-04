@@ -42,6 +42,19 @@ struct SearchOnMap: Equatable {
     static func == (a: Self, b: Self) -> Bool { a.id == b.id }
 }
 
+/// A tile or row that opens a city or a country: straight to the map framed on
+/// it, through navigator.push, never a NavigationLink, whose push drew the old
+/// page for a moment before the map took over (Hidde, 2026-11-04: "do 2").
+struct PlaceLink<Label: View>: View {
+    let route: Route
+    @ViewBuilder let label: () -> Label
+    @Environment(Navigator.self) private var navigator
+
+    var body: some View {
+        Button { navigator.push = route } label: { label() }
+    }
+}
+
 enum EmptyPlace {
     /// Zoom 11 or so: a town and the country lanes around it.
     static let spanMetres: Double = 20_000

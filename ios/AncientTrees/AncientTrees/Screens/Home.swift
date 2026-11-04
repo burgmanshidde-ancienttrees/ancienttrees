@@ -796,7 +796,7 @@ struct HomeView: View {
         if !deck.countries.isEmpty {
             section("Tree countries", more: .index(.countries)) {
                 placeRow(Array(deck.countries.prefix(14)), id: \.name) { c in
-                    NavigationLink(value: Route.country(c.name)) {
+                    PlaceLink(route: .country(c.name)) {
                         placeCard(c.name, treesLabel(c.count), cover: c.photo)
                     }
                     .buttonStyle(.plain)
@@ -921,7 +921,7 @@ struct HomeView: View {
     private var cityShelf: some View {
         section("Our favourite tree cities", more: .index(.cities)) {
             placeRow(Array(cities.prefix(14)), id: \.slug) { c in
-                NavigationLink(value: Route.city(c.slug)) {
+                PlaceLink(route: .city(c.slug)) {
                     placeCard(c.name, treesLabel(c.count), cover: catalogue.face(city: c.slug))
                 }
                 .buttonStyle(.plain)

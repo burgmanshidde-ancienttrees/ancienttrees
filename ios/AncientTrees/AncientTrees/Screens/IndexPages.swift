@@ -45,7 +45,7 @@ struct IndexView: View {
             .filter { matches($0.name) || matches($0.country) }
             .sorted { $0.count > $1.count }
         return ForEach(all, id: \.slug) { c in
-            NavigationLink(value: Route.city(c.slug)) {
+            PlaceLink(route: .city(c.slug)) {
                 row(c.name, c.country, c.count)
             }
             .buttonStyle(.plain)
@@ -59,7 +59,7 @@ struct IndexView: View {
             .filter { matches($0.name) }
             .sorted { $0.count > $1.count }
         return ForEach(all, id: \.name) { c in
-            NavigationLink(value: Route.country(c.name)) {
+            PlaceLink(route: .country(c.name)) {
                 row(c.name, "\(c.cities) \(c.cities == 1 ? "place" : "places")", c.count)
             }
             .buttonStyle(.plain)
