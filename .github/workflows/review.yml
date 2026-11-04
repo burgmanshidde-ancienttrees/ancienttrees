@@ -50,7 +50,8 @@ concurrency:
 jobs:
   review:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # 100 since 2026-11-04: on Mondays the code review follows the daily one.
+    timeout-minutes: 100
     env:
       ASTRO_TELEMETRY_DISABLED: "1"
     steps:
@@ -255,3 +256,36 @@ jobs:
           # that matters, because a cap is a cap and one day will be busier
           # than this one.
           claude_args: "--max-turns 220 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""
+
+      # The CODE behind both surfaces, Mondays only (Hidde, 2026-11-04). Its
+      # own step and its own turn cap, so it can never eat the daily review's,
+      # and its own "already done" so the afternoon cron catches a Monday
+      # morning that died. What to read and where it goes: BRIEF_CODE_AUDIT.md.
+      - name: Is it Monday and is the code review still to do
+        id: code
+        run: |
+          TODAY=$(date -u +%F)
+          git pull --quiet --rebase origin main || true
+          if [ "$(date -u +%u)" != "1" ]; then
+            echo "due=no" >> "$GITHUB_OUTPUT"
+          elif grep -qE "^## $TODAY code" REVIEW.md 2>/dev/null; then
+            echo "REVIEW.md already carries the code review for $TODAY"
+            echo "due=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "due=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Review the code of the app and the website
+        if: steps.code.outputs.due == 'yes'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_bots: "github-actions[bot]"
+          prompt: |
+            You are the CODE REVIEWER for Ancient Trees. Read
+            BRIEF_CODE_AUDIT.md and do exactly what it says, today's date in
+            UTC. You review; you never fix. Write findings to
+            data/code-audit.json and REVIEW.md as you find them and commit
+            after each surface, so a run that dies late leaves half a review
+            rather than none.
+          claude_args: "--max-turns 160 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""

@@ -358,6 +358,41 @@ def check_no_strategy_in_workflows():
     return out
 
 
+def check_the_code_is_read_every_week():
+    """The Monday code review of the app and the website stays wired.
+
+    Hidde, 2026-11-04, after one review found bugs no screenshot could show:
+    "how can we make sure that this kind of analysis is part of our system not
+    me thinking to ask you". This holds the three parts in place: the step in
+    review.yml that runs BRIEF_CODE_AUDIT.md on Mondays, the brief itself, and
+    data/code-audit.json, the ledger that stops a finding being reported twice
+    and that the night run's ladder reads. Removing this check needs Hidde.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    wf = root / ".github" / "workflows" / "review.yml"
+    brief = root / "BRIEF_CODE_AUDIT.md"
+    ledger = root / "data" / "code-audit.json"
+    if not wf.exists() or "BRIEF_CODE_AUDIT.md" not in wf.read_text(encoding="utf-8"):
+        out.append("review.yml no longer runs BRIEF_CODE_AUDIT.md: the Monday code review is gone")
+    if not brief.exists():
+        out.append("BRIEF_CODE_AUDIT.md is missing: the Monday code review has nothing to follow")
+    try:
+        rows = json.loads(ledger.read_text(encoding="utf-8"))["findings"]
+        ids = [r["id"] for r in rows]
+        bad = [r.get("id", "?") for r in rows
+               if r.get("surface") not in ("APP", "WEB")
+               or r.get("kind") not in ("BUG", "SPEED", "UX", "CUT", "CODE")
+               or r.get("status") not in ("open", "fixed", "declined")]
+        if bad:
+            out.append("data/code-audit.json: rows with an unknown surface, kind or status: %s" % ", ".join(bad[:5]))
+        if len(ids) != len(set(ids)):
+            out.append("data/code-audit.json: a finding id appears twice")
+    except (OSError, ValueError, KeyError, TypeError):
+        out.append("data/code-audit.json is missing or unreadable: the code review's ledger")
+    return out
+
+
 def check_app_crashes_reach_a_person():
     """The app's crash reports are read, flagged and acted on, every day.
 
@@ -3502,6 +3537,7 @@ def main():
         check_hidden_means_hidden,
         check_an_organisation_beside_a_name_was_asked_for,
         check_app_crashes_reach_a_person,
+        check_the_code_is_read_every_week,
         check_every_map_shows_pins_the_same_way,
         check_every_map_shows_one_world,
         check_one_tree_card_on_every_map,
@@ -3535,6 +3571,7 @@ def main():
     failures += check_no_reader_traces_in_the_repo()
     failures += check_served_photos_carry_no_location()
     failures += check_app_crashes_reach_a_person()
+    failures += check_the_code_is_read_every_week()
     failures += check_every_gate_asks_the_server()
     failures += check_a_user_id_is_not_read_from_the_stored_session()
     failures += check_icons_are_drawn()

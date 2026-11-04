@@ -1,0 +1,206 @@
+{
+ "_note": "The weekly code review's findings for the app and the website (BRIEF_CODE_AUDIT.md). Rows are never deleted; status is open, fixed (with fixed_in) or declined (with Hidde's words). The review reads this first so nothing is reported twice.",
+ "findings": [
+  {
+   "id": "APP-APP-BUG-map-redraw-ids-only",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:646",
+   "summary": "A corrected pin, new photo or fixed name reaches the map only after a restart: the redraw compares tree ids only.",
+   "fix": "Redraw when the drawn fields differ, keeping the same-array fast path.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-BUG-own-pins-and-route",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:655",
+   "summary": "Own pins compare ids only and the route only its point count.",
+   "fix": "Compare coordinates, photo presence and route identity.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-BUG-account-load-twice",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/ContentView.swift:1039",
+   "summary": "The account may load twice at cold launch, running two merges at once.",
+   "fix": "One in-flight load task.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-BUG-photo-downloaded-twice",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Kit/SightingSync.swift:46",
+   "summary": "A photo can download twice in one merge.",
+   "fix": "Download once.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-BUG-map-style-offline",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:1063",
+   "summary": "The map style always loads from the web; a cold start without signal may draw no map.",
+   "fix": "Bundle the style, refresh from the web.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-BUG-sheet-during-dismiss",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/ContentView.swift:414",
+   "summary": "After sign-in the camera sheet is presented while the sign-in sheet is still closing.",
+   "fix": "Present after the first sheet has gone.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-BUG-url-force-unwrap",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Screens/Walks.swift:141",
+   "summary": "Two share URLs are force-unwrapped from a slug.",
+   "fix": "Optional URL.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-SPEED-map-list-every-redraw",
+   "surface": "APP",
+   "kind": "SPEED",
+   "file": "ios/AncientTrees/AncientTrees/Screens/MapTab.swift:406",
+   "summary": "The map list filters and sorts every tree on every pan and drag frame.",
+   "fix": "Memoise per settled region and filters.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-SPEED-search-per-keystroke",
+   "surface": "APP",
+   "kind": "SPEED",
+   "file": "ios/AncientTrees/AncientTrees/Screens/MapSearch.swift:626",
+   "summary": "Search rebuilds its city list and ranks twice on every keystroke.",
+   "fix": "Build once per open, rank once per query.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-SPEED-my-trees-network",
+   "surface": "APP",
+   "kind": "SPEED",
+   "file": "ios/AncientTrees/AncientTrees/Screens/Collect.swift:371",
+   "summary": "My trees makes three requests every time the tab appears.",
+   "fix": "Once per session and on refresh.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "a session's agent is fixing it, 2026-11-04"
+  },
+  {
+   "id": "APP-APP-SPEED-breathing-timer",
+   "surface": "APP",
+   "kind": "SPEED",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:574",
+   "summary": "Every map repaints about once a second for a season halo that is switched off.",
+   "fix": "Goes with the Season code being set aside (Hidde, 2026-11-04).",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  },
+  {
+   "id": "APP-APP-CUT-walks-season-plus",
+   "surface": "APP",
+   "kind": "CUT",
+   "file": "ios/AncientTrees/AncientTrees/Kit/Launch.swift",
+   "summary": "Walks, Season and Plus are dark in the store build but their code still runs.",
+   "fix": "Set the code aside; it stays in git history.",
+   "first_seen": "2026-11-04",
+   "status": "open",
+   "note": "Hidde, 2026-11-04: \"set the code aside - we will come back to this but probably completely in a new way\""
+  },
+  {
+   "id": "APP-APP-CODE-dead-screens",
+   "surface": "APP",
+   "kind": "CODE",
+   "file": "ios/AncientTrees/AncientTrees/Screens/Collect.swift:595",
+   "summary": "About a thousand lines nobody reaches: oldBody and its parts, CountryView, CollectionMapPage, PlaceMapPage, dead navigator mailboxes.",
+   "fix": "Remove, keeping PlaceAmbassadors.",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  },
+  {
+   "id": "APP-APP-UX-one-add-photo",
+   "surface": "APP",
+   "kind": "UX",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:2381",
+   "summary": "Three Add a photo buttons and a separate Collect route for one act.",
+   "fix": "One camera action in the bottom bar (Google Maps, iNaturalist).",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  },
+  {
+   "id": "APP-APP-UX-follower-lists-pushed",
+   "surface": "APP",
+   "kind": "UX",
+   "file": "ios/AncientTrees/AncientTrees/Screens/Collect.swift:406",
+   "summary": "Followers and Following open as a sheet while Find people is a page.",
+   "fix": "Push them, as Instagram and Strava.",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  },
+  {
+   "id": "APP-APP-UX-chips-combine",
+   "surface": "APP",
+   "kind": "UX",
+   "file": "ios/AncientTrees/AncientTrees/Screens/MapTab.swift:1199",
+   "summary": "Map filter chips clear each other instead of combining.",
+   "fix": "Additive chips, an active one reopens its picker (Google Maps, Airbnb).",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  },
+  {
+   "id": "APP-APP-UX-city-chip-same-tab",
+   "surface": "APP",
+   "kind": "UX",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:977",
+   "summary": "A city chip on a tree page jumps to the Map tab with no way back.",
+   "fix": "Push the place map inside the current tab.",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  },
+  {
+   "id": "APP-APP-UX-bottom-bar-200m",
+   "surface": "APP",
+   "kind": "UX",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:2481",
+   "summary": "The tree page's two bottom buttons swap at exactly 200 m and jump with GPS drift.",
+   "fix": "A band, 150 m in and 250 m out.",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  },
+  {
+   "id": "APP-APP-UX-one-search-rule",
+   "surface": "APP",
+   "kind": "UX",
+   "file": "ios/AncientTrees/AncientTrees/Screens/Home.swift:362",
+   "summary": "The same search result does different things in Discover and on the map.",
+   "fix": "One rule per result type.",
+   "first_seen": "2026-11-04",
+   "status": "open"
+  }
+ ]
+}
