@@ -21,8 +21,8 @@
 // a public profile (the places you saved or collected first), then public
 // profiles who photographed trees there (rpc suggested_photographers,
 // supabase/suggested-people.sql; without it, the ambassadors alone). Never
-// you, never somebody you blocked, people you follow at the end. Gone the
-// moment you type.
+// you, never somebody you blocked, never somebody you follow. Gone the
+// moment you type; loaded again every time the sheet opens.
 //
 // SHARE YOUR PROFILE shares /profile?u=<id>. A phone gets the browser's own
 // share sheet (Web Share), as the app gets iOS's; a computer copies the link
@@ -138,8 +138,9 @@ export const PEOPLE_JS = `
           if (p.user_id === me || blocked[p.user_id] || !p.display_name || seen[p.user_id]) return;
           seen[p.user_id] = true; out.push(p);
         });
-        out = out.filter(function(p) { return !following[p.user_id]; })
-          .concat(out.filter(function(p) { return following[p.user_id]; })).slice(0, 12);
+        // Somebody you follow leaves the list (Instagram; Hidde, 2026-11-04);
+        // a Follow tapped here keeps its row until the sheet opens again.
+        out = out.filter(function(p) { return !following[p.user_id]; }).slice(0, 12);
         if (!out.length) return;
         // The name and picture as their owner set them today.
         return rows('/rest/v1/profiles?select=user_id,display_name,avatar_url&user_id=in.('

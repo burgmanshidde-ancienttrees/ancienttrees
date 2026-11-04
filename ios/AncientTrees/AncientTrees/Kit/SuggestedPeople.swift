@@ -10,8 +10,9 @@
 //      places you saved or collected first;
 //   2. public profiles who photographed trees in those places, from
 //      suggested_photographers() (supabase/suggested-people.sql).
-// Never you, never somebody you blocked, and people you already follow go to
-// the end rather than the top. Pure, so the order has a test.
+// Never you, never somebody you blocked, never somebody you already follow
+// (Instagram drops them so the next person moves up; Hidde, 2026-11-04).
+// Pull down on Find people to load it again. Pure, so the order has a test.
 
 import Foundation
 
@@ -63,7 +64,7 @@ public enum SuggestedPeople {
 
     /// The list, in order: ambassadors of your places, people who photographed
     /// trees there, then the other ambassadors; one row per person; never
-    /// you or a blocked person; anybody you follow moved to the end.
+    /// you, a blocked person or anybody you follow.
     public static func build(ambassadors: [Ambassador],
                              photographers: [Profiles.Photographer],
                              yourPlaces: [String],
@@ -95,8 +96,9 @@ public enum SuggestedPeople {
             guard id != me, !blocked(id), !p.profile.display_name.isEmpty, seen.insert(id).inserted else { continue }
             out.append(p)
         }
-        let fresh = out.filter { !following.contains($0.profile.user_id) }
-        let followed = out.filter { following.contains($0.profile.user_id) }
-        return Array((fresh + followed).prefix(limit))
+        // Somebody you follow leaves the list, so the next person moves up
+        // (Instagram; Hidde, 2026-11-04). A Follow tapped here keeps its row
+        // until the list loads again.
+        return Array(out.filter { !following.contains($0.profile.user_id) }.prefix(limit))
     }
 }

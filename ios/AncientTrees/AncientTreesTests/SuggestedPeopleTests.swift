@@ -34,8 +34,8 @@ final class SuggestedPeopleTests: XCTestCase {
         XCTAssertEqual(ids.filter { $0 == "a-lisbon" }.count, 1)
     }
 
-    func testPeopleYouFollowGoToTheEnd() {
-        XCTAssertEqual(build(following: ["a-lisbon"]).map(\.profile.user_id).last, "a-lisbon")
+    func testPeopleYouFollowLeaveTheList() {
+        XCTAssertEqual(build(following: ["a-lisbon"]).map(\.profile.user_id), ["p-marieke", "p-tom", "a-paris"])
     }
 
     func testReasons() {

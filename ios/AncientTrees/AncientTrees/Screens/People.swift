@@ -276,6 +276,14 @@ struct PeopleView: View {
                 }
             }
             .listStyle(.plain)
+            // PULL TO REFRESH on Find people (Hidde, 2026-11-04, "dat doen ze
+            // toch ook bij insta"): who you follow and Suggested load again,
+            // so a new photographer in your places shows up and somebody you
+            // just followed makes room. iOS's own control, as Instagram's.
+            .modifier(RefreshableWhen(on: source == .search) {
+                await loadFollowing()
+                await loadSuggestions()
+            })
             // The search box belongs to the search list only. A followers list
             // with a "Search people" bar above it is two features in one
             // screen, and the bar would filter nothing.
@@ -574,6 +582,16 @@ struct PeopleView: View {
 /// `.searchable` cannot be applied conditionally inline without changing the
 /// view's identity, which drops the list's scroll position and its focus. A
 /// modifier that branches inside `body` keeps one identity.
+/// Pull to refresh on Find people only; the two lists keep still.
+private struct RefreshableWhen: ViewModifier {
+    let on: Bool
+    let action: () async -> Void
+
+    func body(content: Content) -> some View {
+        if on { content.refreshable { await action() } } else { content }
+    }
+}
+
 private struct SearchableWhen: ViewModifier {
     let on: Bool
     @Binding var text: String
