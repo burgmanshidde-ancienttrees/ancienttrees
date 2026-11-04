@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: most of Google's recovery is on pages we tagged noindex
+
+- **Measured** (new `scripts/tagged_shown.py`, daily from data-digest.yml into data/tagged-still-shown.json, also printed by seo-diagnose.yml): from 11-01 to 11-03, 867 pages carrying the googlebot noindex earned 2,305 impressions and 31 clicks, against about 2,400 and 45 for the whole site. The tag is live (checked on /tenerife/el-drago-milenario); Google has simply not recrawled them, some for weeks, and now ranks them again. As it recrawls, this recovery will shrink by our own tag: read a fall in the digest against this file before calling it a new demotion.
+- **Decided with Hidde:** change nothing for now, measure; releasing pages that proved themselves is the release lane's job later. His question on the plan's downside is answered in the session; no switch flipped.
+
 ## 2026-11-04 session: Google's jump and Bing's 11-01 spike, read
 
 - **Google:** clicks back to about 23 a day (11-02), against 45 to 60 before 09-28; average position from ~25 to ~9 from 11-01, across the whole site at once. No cut was lifted: the Google sitemap holds 261 urls (about 5,000 before the demotion). But 973 pages earned an impression in ten days, among them /de and /fr/lyon/..., which carry the googlebot noindex: Google keeps showing a tagged page until it recrawls it, so clicks per open page cannot be read from these numbers yet.
