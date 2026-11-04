@@ -144,4 +144,14 @@ final class SignedOutWalk: XCTestCase {
         let app = launch(["-tab=2", "-open=profile:me", "-contribute"])
         expectSignIn(app, after: "-contribute")
     }
+
+    func testPlusTellMeAsks() {
+        // The Plus question's last step (PlusAsk.swift, 2026-11-04): answering
+        // needs no account, "Tell me" does. -plusask opens the sheet from
+        // Settings, -plusthanks starts it on that step.
+        let app = launch(["-tab=2", "-open=profile:me", "-plusask", "-plusthanks"])
+        XCTAssertTrue(app.descendants(matching: .any)["plus-sheet"].firstMatch.waitForExistence(timeout: 10),
+                      "-plusask did not open the Plus question")
+        tap(app, "plus-tellme"); expectSignIn(app, after: "plus-tellme")
+    }
 }

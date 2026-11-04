@@ -3,6 +3,7 @@
   "app": {
     "BrandSheet": "the one sheet itself",
     "AmbassadorApplySheet": "two BrandSheet steps, the explainer and the receipt",
+    "PlusQuestionSheet": "four BrandSheet steps of the Plus question: the open question, one choice, Tell me, the receipt (PlusAsk.swift, 2026-11-04)",
     "EarlyAdopterSheet": "a BrandSheet, one step: what the early-adopter badge is, shown once per account",
     "PermissionRecovery": "a BrandSheet, wrapped so three call sites share the words",
     "collectChoice": "the tree page's collect sheet, three BrandSheet states",
