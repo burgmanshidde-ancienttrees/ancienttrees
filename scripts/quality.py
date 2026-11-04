@@ -31,6 +31,10 @@ folder exists), and three rows:
   Open bugs     open BUG rows per surface in data/code-audit.json (APP is the
                 iOS app, WEB the website), and how many are older than 7 days.
 
+And one item that is not per platform, "Backup": the newest run of
+db-backup.yml that kept an artifact (green under 8 days, orange 8 to 14, red
+past 14, or red when the secrets are not set yet).
+
 Lights: green fine; orange late or being fixed (a check overdue up to twice
 its maximum age, a deploy 12 to 24 hours behind, an open bug, a crash fix
 waiting for the store); red needs a person (CI red on main, a deploy stuck
@@ -315,6 +319,64 @@ def security_cell(now):
     return "orange", "%d open library security alert(s)" % len(alerts)
 
 
+BACKUP_NOT_SET = "SUPABASE_DB_URL or BACKUP_PASSPHRASE is not set"
+
+
+def backup_cell(now):
+    """db-backup.yml, the weekly encrypted database backup (Hidde,
+    2026-11-04). Not per platform: its own item in the line. A run that was
+    not due ends green without making anything, so a backup is a successful
+    run that kept an artifact. Green under 8 days, orange 8 to 14, red past
+    14 or when the newest run failed because the secrets are not set."""
+    gh = _gh()
+    rows = None
+    if gh:
+        try:
+            out = subprocess.run([gh, "run", "list", "--workflow", "db-backup.yml", "-L", "30",
+                                  "--json", "databaseId,conclusion,status,createdAt"],
+                                 capture_output=True, text=True, timeout=60, cwd=ROOT)
+            rows = json.loads(out.stdout or "[]") if out.returncode == 0 else None
+        except Exception:
+            rows = None
+    if rows is None:
+        return "grey", "backup state unknown"
+    done = [r for r in rows if r.get("status") == "completed"
+            and r.get("conclusion") not in ("cancelled", "skipped", "", None)]
+    if done and done[0]["conclusion"] != "success":
+        try:
+            log = subprocess.run([gh, "run", "view", str(done[0]["databaseId"]), "--log-failed"],
+                                 capture_output=True, text=True, timeout=90, cwd=ROOT).stdout
+        except Exception:
+            log = ""
+        if BACKUP_NOT_SET in log:
+            return "red", "Hidde's one-time setup in BACKUP_RESTORE.md"
+        failed = "last backup run failed"
+    else:
+        failed = ""
+    last = None
+    for r in [r for r in done if r["conclusion"] == "success"][:10]:
+        try:
+            out = subprocess.run([gh, "api", "repos/{owner}/{repo}/actions/runs/%s/artifacts" % r["databaseId"],
+                                  "--jq", ".total_count"], capture_output=True, text=True, timeout=60, cwd=ROOT)
+            if out.returncode == 0 and int(out.stdout.strip() or 0) > 0:
+                last = _when(r["createdAt"])
+                break
+        except Exception:
+            continue
+    if last is None:
+        if failed:
+            return "red", failed + ", no backup on file"
+        return "grey", "no backup made yet (unknown)"
+    days = (now - last).total_seconds() / 86400
+    if days > 14:
+        return "red", "last backup %.0f days ago" % days + ("; " + failed if failed else "")
+    if days >= 8:
+        return "orange", "last backup %.0f days ago" % days + ("; " + failed if failed else "")
+    if failed:
+        return "orange", failed
+    return "green", ""
+
+
 # ---------------------------------------------------------------- the line
 
 def android_exists():
@@ -343,6 +405,9 @@ def assess(now=None):
     }
     why = "no checks wired yet" if android_exists() else "not live yet"
     q["android"] = {k: ("grey", why) for k, _ in ROWS}
+    q["backup"] = backup_cell(now)
+    if q["backup"][0] == "grey" and re.search(UNKNOWN, q["backup"][1]):
+        UNREAD.append(q["backup"][1])
     q["_unread"] = list(UNREAD)
     return q
 
@@ -367,18 +432,31 @@ def _tail(q):
     return "nothing wrong seen; not read: " + "; ".join(n)
 
 
+def _bad_rows(q):
+    return [(k, label) for k, label in ROWS
+            if any(q[p][k][0] in ("orange", "red") for p in PLATFORMS)]
+
+
+def _backup(q):
+    return q.get("backup") or ("grey", "backup unknown")
+
+
 def markdown(q):
     """The block DATA.md carries. Plain words for the colours: DATA.md is text."""
     heads = ", ".join("%s %s" % (NAMES[p], "not live yet" if q[p]["next"][1] == "not live yet"
                                  else overall(q, p)) for p in PLATFORMS)
-    bad = [(k, label) for k, label in ROWS
-           if any(q[p][k][0] in ("orange", "red") for p in PLATFORMS)]
-    if not bad:
+    bc, br = _backup(q)
+    heads += ", Backup %s" % bc
+    bad = _bad_rows(q)
+    backup_bad = bc in ("orange", "red")
+    if not bad and not backup_bad:
         tail = _tail(q)
         return "**Quality**: %s. %s." % (heads, tail[0].upper() + tail[1:])
-    out = ["**Quality**: %s." % heads, "",
-           "| | %s |" % " | ".join(NAMES[p] for p in PLATFORMS),
-           "|---|%s|" % "|".join("---" for _ in PLATFORMS)]
+    out = ["**Quality**: %s.%s" % (heads, (" Backup: %s." % br) if backup_bad else "")]
+    if not bad:
+        return out[0]
+    out += ["", "| | %s |" % " | ".join(NAMES[p] for p in PLATFORMS),
+            "|---|%s|" % "|".join("---" for _ in PLATFORMS)]
     for k, label in bad:
         cells = []
         for p in PLATFORMS:
@@ -397,16 +475,21 @@ def _dot(colour, size=11):
 def html(q):
     """The same block for the digest page, with real lights."""
     import html as _h
+    bc, br = _backup(q)
     heads = "&nbsp;&nbsp;".join("%s%s" % (_dot(overall(q, p)), NAMES[p]) for p in PLATFORMS)
-    bad = [(k, label) for k, label in ROWS
-           if any(q[p][k][0] in ("orange", "red") for p in PLATFORMS)]
+    heads += "&nbsp;&nbsp;&nbsp;%sBackup" % _dot(bc)
+    bad = _bad_rows(q)
+    backup_bad = bc in ("orange", "red")
     style = 'style="margin:10px 0 6px;font-size:15px"'
-    if not bad:
+    if not bad and not backup_bad:
         return '<p %s><strong>Quality</strong>&nbsp;&nbsp;%s&nbsp;&nbsp;%s</p>' % (
             style, heads, _h.escape(_tail(q)))
-    out = ['<p %s><strong>Quality</strong>&nbsp;&nbsp;%s</p>' % (style, heads),
-           "<table><thead><tr><th></th>%s</tr></thead><tbody>" % "".join(
-               "<th>%s</th>" % NAMES[p] for p in PLATFORMS)]
+    line = '<p %s><strong>Quality</strong>&nbsp;&nbsp;%s%s</p>' % (
+        style, heads, ("&nbsp;&nbsp;Backup: %s" % _h.escape(br)) if backup_bad else "")
+    if not bad:
+        return line
+    out = [line, "<table><thead><tr><th></th>%s</tr></thead><tbody>" % "".join(
+        "<th>%s</th>" % NAMES[p] for p in PLATFORMS)]
     for k, label in bad:
         tds = []
         for p in PLATFORMS:

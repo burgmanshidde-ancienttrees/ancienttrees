@@ -791,6 +791,8 @@ def check_the_quality_line_stays_in_the_digest():
         ("scripts/quality.py", "uptime_cell(now)", "the site-up check"),
         ("scripts/quality.py", "speed_cell()", "page speed"),
         ("scripts/quality.py", "security_cell(now)", "the libraries' security alerts"),
+        ("scripts/quality.py", "backup_cell(now)", "the database backup"),
+        (".github/workflows/db-backup.yml", "pg_dump", "the weekly database backup"),
         ("site/src/layouts/Base.astro", "<Fragment set:html={WEB_ERRORS_JS} />", "every page reporting its errors"),
         (".github/workflows/uptime.yml", "ancienttrees.app", "the outside site-up check"),
         (".github/workflows/page-speed.yml", "page_speed.py --if-due", "the weekly page speed measure"),
