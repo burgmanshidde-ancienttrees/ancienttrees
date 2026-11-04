@@ -170,6 +170,7 @@ struct TreeDetail: View {
                     // layout pass: the freeze on Hidde's phone is the reason
                     // to keep per-frame work this small.
                     hero
+                        .overlay(alignment: .top) { barScrim }
                         .visualEffect { content, proxy in
                             content.offset(y: -min(0, proxy.frame(in: .scrollView).minY) * 0.5)
                         }
@@ -717,6 +718,31 @@ struct TreeDetail: View {
     /// trunk is the one thing on a card that is not the tree. A CC BY or BY-SA
     /// licence obliges a credit and this is it, in the ordinary place a caption
     /// goes, which is also what every image search and Wikipedia's own apps do.
+    /// THE BAR'S BUTTONS STAY READABLE ON iOS 18 (2026-11-04, a customer walk
+    /// on an iOS 18.6 phone: the green "< Back" and the share and report
+    /// icons sat bare on the photograph and vanished into dark leaves). iOS 26
+    /// draws each bar button in its own round glass circle, so this is only
+    /// for the older system: a soft fade from the page's own background at
+    /// the top of the photograph to clear, the way Photos and Maps keep their
+    /// bar legible over a picture. The system Back and its swipe stay as
+    /// they are.
+    @ViewBuilder private var barScrim: some View {
+        if #available(iOS 26, *) {
+            EmptyView()
+        } else {
+            // Near-solid down to just below the buttons (they sit about 80
+            // points down), then gone, so the photograph keeps its top third.
+            LinearGradient(stops: [
+                .init(color: Color(.systemBackground).opacity(0.92), location: 0),
+                .init(color: Color(.systemBackground).opacity(0.8), location: 0.6),
+                .init(color: Color(.systemBackground).opacity(0), location: 1),
+            ], startPoint: .top, endPoint: .bottom)
+                .frame(height: 150)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
+        }
+    }
+
     @ViewBuilder private var hero: some View {
         if showingMap {
             // The swap's other face: the same box, the same corners, the map

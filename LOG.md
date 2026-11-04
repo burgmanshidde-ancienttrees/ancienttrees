@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 session: the app walked as a customer, Back readable on iOS 18
+
+- App, tree page: on iOS 18 the green "< Back", share and report icons sat bare on the photograph and disappeared into dark leaves (iOS 26 draws them in round glass, so only the older system). A soft fade from the page background over the top 150 points of the photograph, iOS 18 only (`barScrim` in TreeDetail.swift); the system Back and its swipe are untouched. Seen on the iPhone 16 Pro Max iOS 18.6 simulator before and after. **For Hidde: next build carries it.**
+- Checked and not bugs: the rating question came early because this simulator had already opened three trees in earlier sessions (ReviewPrompt's rule, Hidde 2026-09-04); the search bar opens on the first tap (the simulator's screenshot lagged); "At their best now" showed green summer photographs from Amsterdam because those trees' own photographs are summer ones, from Lisbon it shows autumn Porto and Buçaco.
+- Found, not changed (a product call): the app decodes 179 walks from the feed (Lisbon has three: 46, 28 and 5 minutes) but no screen shows them, while the website says the app lets you follow a walk.
+
 ## 2026-11-04 session: two map oddities checked on the Lisbon map
 
 - Seen while walking the site as a visitor at 375px: a tapped pin looked like a plain green circle, and the streets came in about 3 s after the pins. Both came from the browser pane being hidden (a background page freezes the 0.18 s colour transition, so the icon stayed green on green, and slows the map's timers). With the pane in view the tapped pin shows its white tree and the streets draw at about 1 to 2 s.
