@@ -1426,21 +1426,51 @@ struct MapTab: View {
                 // 2026-08-22). A word that changes under your eyes is a nice
                 // trick on a field you are typing in and a distraction on a
                 // button you are only reading.
-                Text(Search.placeholder)
+                // A place you picked keeps its name in the field, as Google
+                // Maps and Apple Maps do; the cross at the end leaves it
+                // (Hidde, 2026-11-04: "the cross sounds good build it").
+                Text(focusPlace == nil ? Search.placeholder : placeTitle)
                     .font(.system(size: 16, weight: .medium))
-                    .foregroundStyle(Brand.inkSoft)
+                    .foregroundStyle(focusPlace == nil ? Brand.inkSoft : Brand.ink)
+                    .lineLimit(1)
                 Spacer(minLength: 0)
+                if focusPlace != nil { Color.clear.frame(width: 28, height: 28) }
             }
             .padding(.horizontal, 16).frame(height: 50)
             .background(Brand.surface, in: .capsule)
             .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
-            .shadow(color: .black.opacity(0.10), radius: 8, y: 2)
-            .padding(.horizontal, 16)
-            .padding(.top, 6)
             .contentShape(.capsule)
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier(id)
+        .overlay(alignment: .trailing) {
+            if focusPlace != nil {
+                Button(action: leavePlace) {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 11, weight: .bold))
+                        .foregroundStyle(Brand.inkSoft)
+                        .frame(width: 24, height: 24)
+                        .background(Brand.surfaceMuted, in: .circle)
+                        .frame(width: 44, height: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .padding(.trailing, 6)
+                .accessibilityLabel("Clear")
+                .accessibilityIdentifier("map-search-clear")
+            }
+        }
+        .shadow(color: .black.opacity(0.10), radius: 8, y: 2)
+        .padding(.horizontal, 16)
+        .padding(.top, 6)
+    }
+
+    /// The cross in the field: the place goes, and the map goes back to where
+    /// it opened (your own area, or the default when location is off).
+    private func leavePlace() {
+        focusPlace = nil
+        selected = nil
+        fly(to: origin.lat, lng: origin.lng, span: 3000)
     }
 
 }
