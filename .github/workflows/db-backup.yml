@@ -1,0 +1,115 @@
+name: Database backup
+
+# The free Supabase plan keeps no backup we can restore (Hidde, 2026-11-04:
+# "ok lets do option 1"). Once a week: the whole database with pg_dump and
+# every stored file (avatars, readers' photographs), in one archive ENCRYPTED
+# with Hidde's passphrase, because this repository is public and its artifacts
+# can be downloaded by anyone signed in to GitHub. Kept 90 days.
+#
+# Runs every day but only works when the last good backup is 6+ days old, so a
+# day GitHub skips is caught the next day instead of the next week.
+#
+# Restore: BACKUP_RESTORE.md.
+
+on:
+  schedule:
+    - cron: "40 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: db-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Is a backup due
+        id: due
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=yes" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          LAST=$(gh run list --workflow=db-backup.yml --status=success -L 20 \
+                 --json createdAt,databaseId --jq "[.[] | select(.databaseId != ${{ github.run_id }})][0].createdAt // empty")
+          if [ -z "$LAST" ]; then
+            echo "no earlier good backup"; echo "run=yes" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          AGE=$(( ( $(date -u +%s) - $(date -u -d "$LAST" +%s) ) / 86400 ))
+          echo "last good backup $AGE day(s) ago"
+          if [ "$AGE" -ge 6 ]; then echo "run=yes" >> "$GITHUB_OUTPUT"; else echo "run=no" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Check the secrets are there
+        if: steps.due.outputs.run == 'yes'
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          PASS: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          if [ -z "$DB_URL" ] || [ -z "$PASS" ]; then
+            echo "::error::SUPABASE_DB_URL or BACKUP_PASSPHRASE is not set (BACKUP_RESTORE.md, setup)"
+            exit 1
+          fi
+
+      - name: Install pg_dump 17
+        if: steps.due.outputs.run == 'yes'
+        run: |
+          sudo install -d /usr/share/postgresql-common/pgdg
+          sudo curl -fsS -m 60 -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc https://www.postgresql.org/media/keys/ACCC4CF8.asc
+          echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list > /dev/null
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq postgresql-client-17
+          /usr/lib/postgresql/17/bin/pg_dump --version
+
+      - name: Dump the database
+        if: steps.due.outputs.run == 'yes'
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          mkdir -p backup
+          # Roles, schema and data of everything Supabase lets the project
+          # owner read: public (our tables), auth (accounts), storage
+          # (the file index). Plain SQL, so a restore needs nothing but psql.
+          /usr/lib/postgresql/17/bin/pg_dump "$DB_URL" --no-owner --no-privileges \
+            --schema=public --schema=auth --schema=storage \
+            --file=backup/database.sql
+          echo "database.sql: $(du -h backup/database.sql | cut -f1)"
+          grep -c "^COPY " backup/database.sql | xargs echo "tables with data:"
+
+      - name: Copy the stored files
+        if: steps.due.outputs.run == 'yes'
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python3 scripts/backup_storage.py backup/storage
+
+      - name: Pack and encrypt
+        if: steps.due.outputs.run == 'yes'
+        env:
+          PASS: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          STAMP=$(date -u +%F)
+          tar -czf "ancienttrees-$STAMP.tar.gz" backup
+          gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 \
+              --symmetric --cipher-algo AES256 -o "ancienttrees-$STAMP.tar.gz.gpg" \
+              "ancienttrees-$STAMP.tar.gz" <<< "$PASS"
+          rm -rf backup "ancienttrees-$STAMP.tar.gz"
+          ls -lh "ancienttrees-$STAMP.tar.gz.gpg"
+          echo "STAMP=$STAMP" >> "$GITHUB_ENV"
+
+      - name: Keep it 90 days
+        if: steps.due.outputs.run == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ancienttrees-backup-${{ env.STAMP }}
+          path: ancienttrees-*.tar.gz.gpg
+          retention-days: 90
+          if-no-files-found: error
