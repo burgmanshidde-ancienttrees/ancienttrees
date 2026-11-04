@@ -1,0 +1,56 @@
+[
+  {
+    "id": "phl_020",
+    "name": "The Weeping European Beech at Morris Arboretum",
+    "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+    "age_estimate": "over a century",
+    "age_min": 117,
+    "age_max": 200,
+    "location": {
+      "address": "Morris Arboretum & Gardens of the University of Pennsylvania, 100 E Northwestern Ave, Philadelphia, PA 19118",
+      "latitude": 40.0882721,
+      "longitude": -75.2212804,
+      "neighbourhood": "Chestnut Hill"
+    },
+    "verified_sources": [
+      "https://morrisarboretum.org/gardens-trees/great-trees",
+      "https://www.morrisarboretum.org/blog/morris-hidden-gems"
+    ],
+    "verify_notes": "Morris Arboretum (the ground's owner) lists it among its Great Trees: native to Europe, planted by the Morrises before 1909 (so at least about 117 years; the planting date is the page's, no upper bound given, age_max is a loose bound, not sourced). Branches droop and root where they touch the ground so new rings of trees form as the original dies; smooth grey elephant-hide bark, red to golden autumn colour, small sap-feeder holes from birds in the trunk. A staff member in the Morris 'hidden gems' post says its trunks are rooted layers of one original mother tree and a dead log in the middle is the original's remains. Location: across the way from George Rickey's kinetic sculpture 'Two Lines' (site of the former Morris mansion, near the main entrance); no coordinate published, pin at arboretum level only, no OSM tree node found (Overpass returned nothing). recognise: a ring of weeping beech trunks around a dead central log, opposite the Two Lines sculpture. Alive: the Morris pages describe it in the present tense, no dated observation; lifecheck at the arboretum RECENT (2025-08-11, generic). Flag: one source (owner), no dated tree-specific alive evidence, pin approximate. No Commons or iNaturalist photo identity checked. Do not bridge 'before 1909' to a specific year.",
+    "access": "Paid entry to Morris Arboretum; open daily, check morrisarboretum.org for hours and the free-with-admission Great Trees tour dates.",
+    "transport": "SEPTA Chestnut Hill West line to Chestnut Hill West station, then about 15 to 20 minutes on foot or by SEPTA bus; the Meadowbrook Avenue pedestrian gate is on the Fort Washington side.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "The tree that started this weeping beech is dead, and it is still lying in the middle. What stands around it is the same tree, rooted again.\n\nWeeping beeches let their branches hang to the ground, and where a branch touches soil it can put down roots and send up a trunk of its own. Over a century at Morris Arboretum that has turned one planting into a ring. A member of the arboretum's staff has written that the trunks you see are rooted layers of a single mother tree, and that the dead log at the centre is what is left of her.\n\nThe Morris family planted it before 1909, on the estate that became the arboretum. That makes it at least about 117 years old. How long before 1909 it went in, nobody has said.\n\nUp close the bark is smooth and grey, the elephant hide the arboretum compares it to, and dotted with small holes where sap-feeding birds have drilled for a drink. In autumn the leaves turn from red to gold. The arboretum counts it among its Great Trees.\n\nIt grows across from George Rickey's kinetic sculpture Two Lines, which stands on the site of the old Morris mansion near the main entrance. Entry to the arboretum is paid, and the pin marks the arboretum rather than the ring, so head for the sculpture.",
+    "how_to_recognise": "You can recognise it as a ring of weeping beech trunks around a dead central log. It stands across from George Rickey's kinetic sculpture Two Lines, near the main entrance.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "October and November, when the hanging leaves turn from red to gold"
+    }
+  },
+  {
+    "id": "phl_021",
+    "name": "The Tatar Wingceltis at Morris Arboretum",
+    "species": "Tatar Wingceltis (Pteroceltis tatarinowii)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Morris Arboretum & Gardens of the University of Pennsylvania, 100 E Northwestern Ave, Philadelphia, PA 19118",
+      "latitude": 40.0882721,
+      "longitude": -75.2212804,
+      "neighbourhood": "Chestnut Hill"
+    },
+    "verified_sources": [
+      "https://morrisarboretum.org/gardens-trees/great-trees"
+    ],
+    "verify_notes": "Morris Arboretum lists it among its Great Trees in the Morris Pond cluster: one of the rarest plants in its collection and one of the largest of its species outside China (the arboretum's claim, no measurement published; no girth or height recorded). Yellow autumn colour, gray-brown peeling bark. No planting date. Pin approximate at arboretum level; Morris Pond cluster is its only location hint. recognise: peeling gray-brown bark on a tree beside Morris Pond, grouped with the dwarf white pine, Cilician fir, trident maple and Chinese elm the same page lists there. Alive: present-tense owner page only; no dated observation. Flag: one source, no photo identity, location only to the pond area. Weak on findability; writer should treat as a candidate to drop if no Morris Pond coordinate appears.",
+    "access": "Paid entry to Morris Arboretum; open daily, check morrisarboretum.org for hours and the free-with-admission Great Trees tour dates.",
+    "transport": "SEPTA Chestnut Hill West line to Chestnut Hill West station, then about 15 to 20 minutes on foot or by SEPTA bus; the Meadowbrook Avenue pedestrian gate is on the Fort Washington side.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "hold": "too hard to find: only a pond-cluster hint"
+  }
+]

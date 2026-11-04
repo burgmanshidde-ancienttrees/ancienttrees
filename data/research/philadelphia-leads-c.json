@@ -1,0 +1,60 @@
+[
+ {
+  "name": "Bender Oak, Scott Arboretum",
+  "species": "Oak (Quercus x benderii)",
+  "lat": 39.9019,
+  "lng": -75.3547,
+  "reason": "Taken down for safety after decline (Swarthmore Phoenix 2007, trunk to become a sculpture); gone",
+  "sources": [
+   "https://swarthmorephoenix.com/2007/09/06/the-bender-oak"
+  ]
+ },
+ {
+  "name": "Pendant Silver Linden, Scott Arboretum",
+  "species": "Silver linden (Tilia tomentosa 'Petiolaris')",
+  "lat": 39.9019,
+  "lng": -75.3547,
+  "reason": "Destroyed in the April 2025 storm per the Inquirer",
+  "sources": [
+   "https://www.inquirer.com/life/outdoors/swarthmore-scott-arboretum-storm-damage-trees-20250411.html"
+  ]
+ },
+ {
+  "name": "Swarthmore dawn redwoods (222 Cornell Ave, 31 Oberlin Ave)",
+  "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+  "lat": 39.9019,
+  "lng": -75.3547,
+  "reason": "Private yards, not public",
+  "sources": [
+   "https://swarthmoreanarchives.com/articles/content/2021-1-15/distinguished-trees-of-swarthmore"
+  ]
+ },
+ {
+  "name": "Haverford College original oaks (swamp white oak on Lloyd Green, bur oak at Lutnick Library, bur oak Founders-Barclay)",
+  "species": "Quercus bicolor / Quercus macrocarpa",
+  "lat": 40.0116,
+  "lng": -75.299,
+  "reason": "Promising (Carvill 1834 plan, swamp white oak 'at least 189 years' per Haverford) but haverford.edu returns 403/Cloudflare to automation so figures were seen only in search summaries, not on a fetched page; no pin or lifecheck (NONE). Needs a session with a browser; likely 20 min from Center City by Paoli/Thorndale line, unverified",
+  "sources": [
+   "https://www.haverford.edu/node/83196"
+  ]
+ },
+ {
+  "name": "Haverford Ryan Pinetum champions (willow oak 210 in girth, loblolly pine, hinoki cypress)",
+  "species": "Quercus phellos / Pinus taeda",
+  "lat": 40.0116,
+  "lng": -75.299,
+  "reason": "Champion figures only in a search summary, haverford.edu blocked; no pin",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Haverford_College_Arboretum"
+  ]
+ },
+ {
+  "name": "Longwood Gardens, Barnes, Jenkins, Andalusia",
+  "species": "various",
+  "lat": 39.8712,
+  "lng": -75.6748,
+  "reason": "Not researched: no specific named very old tree identified and Longwood by transit is well over 30 minutes",
+  "sources": []
+ }
+]

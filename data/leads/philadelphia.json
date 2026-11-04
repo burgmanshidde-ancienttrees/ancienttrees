@@ -1127,5 +1127,216 @@
    "status": "open"
   }
  ],
- "blocked": []
+ "blocked": [
+  {
+   "name": "Bartram's Garden Lady Petre pear",
+   "species": "Pear (Pyrus communis 'Lady Petre')",
+   "lat": 39.9327,
+   "lng": -75.2125,
+   "reason": "no source fetched that says a surviving old tree stands; 1735 vs 1760 date conflict in historic texts only",
+   "sources": [
+    "https://www.bartramsgarden.org/botanic-garden/"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "Woodlands English elm snags",
+   "species": "English Elm (Ulmus procera)",
+   "lat": 39.9472,
+   "lng": -75.2031,
+   "reason": "all seven died of Dutch elm disease by 2017 per owner; dead",
+   "sources": [
+    "https://woodlands-phila.squarespace.com/trees"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "Woodlands hedge maple",
+   "species": "Hedge Maple (Acer campestre)",
+   "lat": 39.9472,
+   "lng": -75.2031,
+   "reason": "named champion only in Penn Today 2012; location and current status not found",
+   "sources": [
+    "https://penntoday.upenn.edu/2012-03-15/features/tapping-history-philly%E2%80%99s-trees"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "Washington Square Moon Tree",
+   "species": "American Sycamore (Platanus occidentalis)",
+   "lat": 39.9467,
+   "lng": -75.153,
+   "reason": "original died 2008/2009, clone died and removed 2019; gone",
+   "sources": [
+    "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/philadelphia_tree.html"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "Laurel Hill West weeping beech and weeping pagoda tree",
+   "species": "Fagus sylvatica Pendula / Styphnolobium japonicum Pendula",
+   "lat": 40.0039,
+   "lng": -75.23,
+   "reason": "champions are at Laurel Hill West in Bala Cynwyd, outside Philadelphia",
+   "sources": [
+    "https://laurelhillphl.com/arboretum/notable-trees-collection-highlights/"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "Bartram Oak",
+   "species": "Bartram Oak (Quercus x heterophylla)",
+   "lat": 39.9327,
+   "lng": -75.2125,
+   "reason": "planted 1939 per Parks & Rec; young, not old or remarkable yet",
+   "sources": [
+    "https://phila.gov/2021-12-15-parks-rec-presents-five-notable-trees-worth-checking-out"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "Franklinia at 42nd and Spruce",
+   "species": "Franklinia alatamaha",
+   "lat": 39.9505,
+   "lng": -75.2085,
+   "reason": "only a blog finding aid; no owner source, no exact spot",
+   "sources": [
+    "https://phillytrees.blogspot.com/p/notable-trees-list.html"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "Woodlands London plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "lat": 39.9472,
+   "lng": -75.2031,
+   "reason": "only a blog mention of a champion; no location or second source",
+   "sources": [
+    "https://woodlands-phila.squarespace.com/trees"
+   ],
+   "pass": "2026-11-04 verify pass a"
+  },
+  {
+   "name": "The Great Beech (Andorra, Wissahickon)",
+   "species": "European Beech (Fagus sylvatica)",
+   "lat": 40.0815,
+   "lng": -75.233,
+   "reason": "Pennsylvania champion (2006), 257 in circumference, 105 ft spread, 102.5 ft tall in 2017, planted 1853 to 1862 by Richard Wistar, but WHYY 3 June 2021 says it is dying: only one branch in leaf in May 2021, mostly a snag, with a root sprout 'Baby Beech' as successor; no later source found, so alive status unconfirmed. Near Wissahickon Environmental Center (OSM centre 40.0811985,-75.2339045, pin approximate). Free, trail access. Revisit if a 2024+ source shows it standing or the successor named.",
+   "sources": [
+    "https://fow.org/up-at-the-tree-house-meadows-great-beech/",
+    "https://whyy.org/articles/a-certified-champion-phillys-great-beech-is-dying-over-150-years-after-it-was-planted",
+    "https://phila.gov/2021-12-15-parks-rec-presents-five-notable-trees-worth-checking-out"
+   ],
+   "pass": "2026-11-04 verify pass b"
+  },
+  {
+   "name": "Awbury Arboretum state champions (English holly, lacebark pine, hop-hornbeam, ginkgo, American elm)",
+   "species": "various",
+   "lat": 40.0519339,
+   "lng": -75.1709963,
+   "reason": "NW Local paper (28 Apr 2021) gives Pennsylvania champion scores for Awbury trees (English holly 103 pts new state champion, lacebark pine 128, hop-hornbeam 133, ginkgo 297, American elm 291) but no per-tree location or measurements; the Awbury Heritage Tree Tour PDF (awbury.org/project/heritage-tree-tour) could not be read (binary fetch). No pin, no recognition clue: needs a session to read the PDF map. Free.",
+   "sources": [
+    "https://nwlocalpaper.com/trees-are-the-champions",
+    "https://awbury.org/project/heritage-tree-tour"
+   ],
+   "pass": "2026-11-04 verify pass b"
+  },
+  {
+   "name": "Greek fir at Morris Arboretum",
+   "species": "Greek Fir (Abies cephalonica)",
+   "lat": 40.0882721,
+   "lng": -75.2212804,
+   "reason": "Morris Great Trees page calls it a state champion; no size, no location, no planting date on that page (a University of Arkansas extension post says planted 1932, a secondary source). No pin or recognition clue in reach.",
+   "sources": [
+    "https://morrisarboretum.org/gardens-trees/great-trees"
+   ],
+   "pass": "2026-11-04 verify pass b"
+  },
+  {
+   "name": "Cliveden, Wyck, Stenton, Grumblethorpe, Loudoun old trees",
+   "species": "various",
+   "lat": 40.0425,
+   "lng": -75.1726,
+   "reason": "Searches found no source naming a specific old tree at these houses (Cliveden arboretum page names none, free whenever gates open); no candidate.",
+   "sources": [
+    "https://cliveden.org/arboretum/"
+   ],
+   "pass": "2026-11-04 verify pass b"
+  },
+  {
+   "name": "Bender Oak, Scott Arboretum",
+   "species": "Oak (Quercus x benderii)",
+   "lat": 39.9019,
+   "lng": -75.3547,
+   "reason": "Taken down for safety after decline (Swarthmore Phoenix 2007, trunk to become a sculpture); gone",
+   "sources": [
+    "https://swarthmorephoenix.com/2007/09/06/the-bender-oak"
+   ],
+   "pass": "2026-11-04 verify pass c"
+  },
+  {
+   "name": "Pendant Silver Linden, Scott Arboretum",
+   "species": "Silver linden (Tilia tomentosa 'Petiolaris')",
+   "lat": 39.9019,
+   "lng": -75.3547,
+   "reason": "Destroyed in the April 2025 storm per the Inquirer",
+   "sources": [
+    "https://www.inquirer.com/life/outdoors/swarthmore-scott-arboretum-storm-damage-trees-20250411.html"
+   ],
+   "pass": "2026-11-04 verify pass c"
+  },
+  {
+   "name": "Swarthmore dawn redwoods (222 Cornell Ave, 31 Oberlin Ave)",
+   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+   "lat": 39.9019,
+   "lng": -75.3547,
+   "reason": "Private yards, not public",
+   "sources": [
+    "https://swarthmoreanarchives.com/articles/content/2021-1-15/distinguished-trees-of-swarthmore"
+   ],
+   "pass": "2026-11-04 verify pass c"
+  },
+  {
+   "name": "Haverford College original oaks (swamp white oak on Lloyd Green, bur oak at Lutnick Library, bur oak Founders-Barclay)",
+   "species": "Quercus bicolor / Quercus macrocarpa",
+   "lat": 40.0116,
+   "lng": -75.299,
+   "reason": "Promising (Carvill 1834 plan, swamp white oak 'at least 189 years' per Haverford) but haverford.edu returns 403/Cloudflare to automation so figures were seen only in search summaries, not on a fetched page; no pin or lifecheck (NONE). Needs a session with a browser; likely 20 min from Center City by Paoli/Thorndale line, unverified",
+   "sources": [
+    "https://www.haverford.edu/node/83196"
+   ],
+   "pass": "2026-11-04 verify pass c"
+  },
+  {
+   "name": "Haverford Ryan Pinetum champions (willow oak 210 in girth, loblolly pine, hinoki cypress)",
+   "species": "Quercus phellos / Pinus taeda",
+   "lat": 40.0116,
+   "lng": -75.299,
+   "reason": "Champion figures only in a search summary, haverford.edu blocked; no pin",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haverford_College_Arboretum"
+   ],
+   "pass": "2026-11-04 verify pass c"
+  },
+  {
+   "name": "Longwood Gardens, Barnes, Jenkins, Andalusia",
+   "species": "various",
+   "lat": 39.8712,
+   "lng": -75.6748,
+   "reason": "Not researched: no specific named very old tree identified and Longwood by transit is well over 30 minutes",
+   "sources": [],
+   "pass": "2026-11-04 verify pass c"
+  },
+  {
+   "name": "The Tatar Wingceltis at Morris Arboretum",
+   "species": "Tatar Wingceltis (Pteroceltis tatarinowii)",
+   "lat": 40.0882721,
+   "lng": -75.2212804,
+   "reason": "verified but too hard to find: only a pond-cluster hint, no pin; full entry in data/research/philadelphia-verified-b.json",
+   "sources": [
+    "https://morrisarboretum.org/gardens-trees/great-trees"
+   ],
+   "pass": "2026-11-04 verify pass b"
+  }
+ ]
 }

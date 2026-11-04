@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: Philadelphia +5 and Media (Tyler Arboretum) 3, written and held for the pace
+
+- **What waits:** `python3 scripts/build_us_philadelphia.py` appends phl_005..009 to Philadelphia (4 -> 9: Bartram yellowwood, Woodlands zelkova, Laurel Hill cutleaf linden, Hobson Street scholar tree, Washington Square sycamore; all free, so the paid share drops from 3 of 4 to 3 of 9) and writes a new place media-pennsylvania (Tyler Arboretum's giant sequoia, Painter ginkgo, Painter cedar of Lebanon in decline; paid, an hour or more by transit, so not a Philadelphia day trip; under four, so no place page in Google). Tested in place: preflight fails only on pace; city_names leaves Media unresolved (disambiguation page), which preflight accepts. Reverted. Nothing published.
+- **Held in the script:** phl_020, Morris Arboretum's weeping beech, written but held because it would put Philadelphia at 4 of 10 behind a ticket; add it once more free trees land. phl_021 wingceltis is a lead (no findable spot).
+- **Weak:** every pin approximate (Overpass unreachable all pass), every tree one source, no photographs found yet. phl_004 (weeping hemlock) confirmed alive in Morris's April 2024 post; its story is right.
+- **Dead ends, do not repeat:** Woodlands English elms (all dead), Washington Square Moon Tree and its clone (gone), Bartram Lady Petre pear (no source it stands), Germantown historic houses (no named tree), Scott Arboretum's Bender oak (down 2007) and pendant silver linden (lost 2025). Andorra Great Beech in the Wissahickon was dying in 2021, check before writing. Haverford's original oaks look good but haverford.edu blocks fetches: a browser session.
+- **For a later look:** live phl_001's transport says trolley route 34 for Woodland Avenue; the new phl_005 says route 11 (route 11 runs on Woodland Avenue). Not changed here.
+- **Cost:** about 518k tokens (three verify passes, ~355k; one write pass, 163k) for 9 written trees, about 58k a tree, well over the 15k target: Philadelphia has no register and from-zero yield was two to five trees a pass.
+
 ## 2026-11-04 session: most of Google's recovery is on pages we tagged noindex
 
 - **Measured** (new `scripts/tagged_shown.py`, daily from data-digest.yml into data/tagged-still-shown.json, also printed by seo-diagnose.yml): from 11-01 to 11-03, 867 pages carrying the googlebot noindex earned 2,305 impressions and 31 clicks, against about 2,400 and 45 for the whole site. The tag is live (checked on /tenerife/el-drago-milenario); Google has simply not recrawled them, some for weeks, and now ranks them again. As it recrawls, this recovery will shrink by our own tag: read a fall in the digest against this file before calling it a new demotion.

@@ -14016,6 +14016,38 @@
     "2026-11-04": [
       {
         "date": "2026-11-04",
+        "kind": "verify",
+        "target": "philadelphia (west + center city)",
+        "tokens": 120085,
+        "trees": 0,
+        "note": "5 verified and held (phl_005..009): Bartram yellowwood, Woodlands zelkova, Laurel Hill cutleaf linden, Hobson St scholar tree, Washington Square sycamore. All free, approximate, one source. Woodlands elms all dead, Moon Tree and clone gone, Lady Petre pear unconfirmed. Overpass unreachable."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "philadelphia (northwest: morris, wissahickon, germantown)",
+        "tokens": 118496,
+        "trees": 0,
+        "note": "2 at Morris (phl_020 weeping beech held for paid share, phl_021 wingceltis held: unfindable). phl_004 alive (Apr 2024). Free sites named nothing placeable; Andorra Great Beech dying since 2021. Stop the Germantown houses angle."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "philadelphia day trips (tyler, scott, haverford)",
+        "tokens": 116601,
+        "trees": 0,
+        "note": "3 at Tyler Arboretum, Media (mdp_001..003), over 30 min by transit so its own place. Scott Bender oak gone 2007, pendant linden lost 2025 storm. Haverford blocks fetches; its old oaks need a browser session."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "write",
+        "target": "philadelphia+media-pennsylvania",
+        "tokens": 163140,
+        "trees": 0,
+        "note": "9 stories (phl_005..009, phl_020, mdp_001..003) plus place copy in us-philadelphia-places.json; held in scripts/build_us_philadelphia.py for the pace."
+      },
+      {
+        "date": "2026-11-04",
         "kind": "write",
         "target": "winchester+cambridge+oxford+canterbury+stratford-upon-avon (READY leads)",
         "tokens": 120000,
