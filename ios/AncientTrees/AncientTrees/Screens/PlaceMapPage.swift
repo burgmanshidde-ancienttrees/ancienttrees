@@ -197,6 +197,11 @@ struct PlaceMapPage: View {
                         }
                     }
                     }
+                    // The names fill the row, so the empty seat stands at its
+                    // right end whether or not the person has a profile to open
+                    // (Hidde, 2026-11-04: Lisbon's plus sat right after Hugo's
+                    // name). The website's .ambassadors { flex: 1 }.
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     if !named.isEmpty {
                         AmbassadorWantedRow(place: title, seated: true, iconOnly: true)
                     }
