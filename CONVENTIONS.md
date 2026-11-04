@@ -590,6 +590,12 @@ becomes the chip's invisible tap layer rather than the chip itself.
 
 Read from the products and from our own app, 2026-09-12; the anatomy from
 FilterChip.swift, 2026-09-17.
+
+**The chips add up (2026-11-04, Hidde: "build this").** In the app, Want to
+visit and Collected cleared every other chip; the website's never did. Now each
+chip changes only itself on both surfaces, as Google Maps' and Airbnb's do. The
+species chip still turns off when tapped while on (2026-08-25 ruling, both
+surfaces); reopening its list instead was proposed and dropped.
 ## Porting a control to another language (2026-09-12)
 
 Not a new interaction, so no reference lookup was owed: the worth-it control's

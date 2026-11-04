@@ -1111,16 +1111,14 @@ struct MapTab: View {
                 // back on an unfiltered map having been asked for nothing.
                 FilterChip(label: "Want to visit", icon: "bookmark",
                            on: filters.favouritesOnly) {
+                    // THE CHIPS ADD UP (Hidde, 2026-11-04: "build this"):
+                    // each one changes only itself, as Google Maps', Airbnb's
+                    // and our website's do. It used to clear the other chips.
                     guard account.isSignedIn else {
-                        nudge.require(.general) {
-                            filters = MapFilters()
-                            filters.favouritesOnly = true
-                        }
+                        nudge.require(.general) { filters.favouritesOnly = true }
                         return
                     }
-                    let want = !filters.favouritesOnly
-                    filters = MapFilters()
-                    filters.favouritesOnly = want
+                    filters.favouritesOnly.toggle()
                 }
                 .accessibilityIdentifier("filter-favourites")
                 // "My trees" here too, so the map and the page agree about
@@ -1128,15 +1126,10 @@ struct MapTab: View {
                 FilterChip(label: "Collected", icon: "checkmark.seal",
                            on: filters.collectedOnly) {
                     guard account.isSignedIn else {
-                        nudge.require(.general) {
-                            filters = MapFilters()
-                            filters.collectedOnly = true
-                        }
+                        nudge.require(.general) { filters.collectedOnly = true }
                         return
                     }
-                    let want = !filters.collectedOnly
-                    filters = MapFilters()
-                    filters.collectedOnly = want
+                    filters.collectedOnly.toggle()
                 }
                 .accessibilityIdentifier("filter-mine")
 
