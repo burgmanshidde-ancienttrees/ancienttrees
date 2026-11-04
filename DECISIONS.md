@@ -1,5 +1,9 @@
 # Decisions
 
+## 2026-11-04: the held queue publishes itself every day, US and UK first
+
+About 400 trees were written and held for the 25-a-day pace after two days of runs, and nothing published them unless a session did. Asked whether waiting made sense when Google does not index them anyway, the session advised keeping the cap while the first recovery signs hold (crawled pages still show growth, and 400 pages in days is the shape of late September), but publishing every day so the queue drains. Hidde: "ja publiceer elke dag vanzelf". A scheduled task on his Mac (`publish-held-trees-daily`, 20:35 local) publishes up to 25 a day within `check_publishing_pace()`, US and UK builders first, logs what went live and what waits, and says when the queue is empty. The cap itself is unchanged.
+
 ## 2026-11-04: a front-garden tree clearly seen from the street ships, view-only
 
 El Pino, the Bunya pine in East Los Angeles (lax_013), was live with "view only from Folsom Street", while data/leads/los-angeles.json blocked the same tree as a private front yard under hard rule 10's "not somebody's home", which RULINGS.md (2026-09-01) called the clause that does not bend. Asked which was wrong, Hidde: "als el pino goed te zien is boeie". Ruling: a tree in a private garden ships when it is clearly visible from public ground, with the pin on the public viewing spot and an `access` line that says to look from the street and not to enter. What does not change: a tree you can only reach by stepping onto the lot, ring a bell for or see over a hedge is still out, and a location its source withholds stays withheld. Earlier front-garden blocks (the Seven Sisters Oak in Mandeville, the Hamerenne oak, Coronado's two private heritage trees) may return as leads when a source shows they are well seen from the street.
