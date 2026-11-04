@@ -28,3 +28,11 @@ jobs:
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
           SC_PATH: ${{ inputs.path }}
         run: python3 scripts/seo_diagnose.py
+      - name: Tagged pages Google still shows
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+        run: |
+          python3 scripts/tagged_shown.py
+          cat data/tagged-still-shown.json
