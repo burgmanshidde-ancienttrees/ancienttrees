@@ -25,5 +25,39 @@
     "curation_status": "flagged",
     "story": "In October 2018 storm Leslie tore through Coimbra's botanical garden, brought down twelve trees in the upper garden and left this fig, in the words of the garden's director, damaged in the crown and badly deformed. It is still standing. Visitors' photographs of it keep arriving, the latest from October 2026.\n\nThe crown is why anyone worried. António Gouveia, the director, called the tree very emblematic of the garden for the reach of that canopy, about a hundred metres round. The tree rises to about 20 metres beside the Estufa Grande, the garden's great glasshouse, and its branches travel much further sideways than up.\n\nIt is a Moreton Bay fig, an Australian species that in its home forests can start life as a seedling in another tree's branches, which is where the strangler name comes from. Coimbra has two famous ones. The other grows at Quinta das Lágrimas, about a kilometre and a half away across the Mondego, and was Portugal's Tree of the Year in 2025.\n\nIts age rests on a single line. A Portuguese forestry site says it is thought to have been planted by the gardener Francisco Cabral in 1877, which would make it roughly 150 years old. No second source we found repeats the date, so read it as the garden's account rather than a record. If you know more, tell us.\n\nParts of the garden have been under refurbishment and the entry terms were not confirmed, so check before you go.",
     "how_to_recognise": "You can recognise it by the crown, about 100 metres round on a fig about 20 metres tall, misshapen since storm Leslie in 2018. It stands beside the Estufa Grande, the garden's great glasshouse."
+  },
+  {
+    "id": "cbr_007",
+    "name": "The Wisteria Pergola of Penacova",
+    "species": "Chinese Wisteria (Wisteria sinensis)",
+    "age_estimate": "roughly 100 years",
+    "age_min": 90,
+    "age_max": 115,
+    "girth_cm": 230,
+    "height_m": 3.25,
+    "location": {
+      "address": "Terreiro de Penacova (Pergola Raul Lino), beside the town hall, 3360 Penacova",
+      "latitude": 40.2701,
+      "longitude": -8.2807,
+      "neighbourhood": "Penacova town centre, above the Mondego"
+    },
+    "verified_sources": [
+      "https://jfpenacova.pt/patrimonio-cultural-edificado/",
+      "https://geocatalogo.icnf.pt/metadados/arv_class.html",
+      "https://www.inaturalist.org/observations/368613542"
+    ],
+    "official_register": {
+      "name": "ICNF Arvoredo de Interesse Publico, processo KNJ1/314 (glicinia n.1)",
+      "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+    },
+    "access": "Public terrace on the main terreiro of Penacova, between the town hall and the neoclassical court building; a belvedere over the Mondego. No ticket or hours published on the fetched Junta page; treated as open public ground.",
+    "transport": "Penacova is a separate town about 14 km from Coimbra (about 23 min by car). Public transport is a bus of roughly 45 to 60 minutes with few departures a day (rome2rio/moovit listings seen in search, not fetched). OUTSIDE the 30-minute day-trip bound: should ship, if at all, as a Penacova tree page, not as part of the Coimbra walk.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Pergola Raul Lino, Terreiro de Penacova",
+      "radius_m": 30
+    },
+    "curation_status": "flagged",
+    "verify_notes": "SOURCES: (1) ICNF register KNJ1/314 'glicinia n.1', Terreiro de Penacova, classified DR n.81 II Serie 07/04/1997: girth 2.3 m, height 3.25 m, crown 3.8 m, age_register 97 measured 2015 (so roughly 108 by 2026). Register is the national authority; no vitality field. (2) Junta de Freguesia de Penacova page, fetched 2026-11-04: the Raul Lino pergola is 'uma agradavel varanda ... coberta por velhas cepas de glicinias que, na Primavera, exalam um perfume inconfundivel', at one side of the main terreiro between the camara and the neoclassical building housing the courts. Search listings (not fetched) say the pergola was given to Penacova in 1918 by the Sociedade de Propaganda de Portugal and marked its centenary in 2018; that agrees with the register age (97 in 2015 implies about 1918), but no fetched page says the vines were planted with the pergola, so the age stays broad. Older 2009 compilation blog (venerablesarboles) gives 1.95 m girth, 89 years: earlier vintage, not independent. ALIVE: iNaturalist observation 2026-06-05 at the coordinate (lifecheck RECENT). PIN: register coordinate 40.2701,-8.2807 lands on the Posto de Turismo beside the terreiro (Nominatim, per earlier pass), so approximate; the site is a single pergola taken in at a glance, small named site. FOLDED: glicinia n.2 (KNJ1/315, register girth 0.1 m, age 11, likely a data error or a young replacement vine) folded into this entry. REMARKABLE: a wisteria is a liana, so girth 2.3 m is a multi-stem mass of old stumps ('cepas') forming a roof, 3.25 m high; the draw is the pergola in spring bloom and scent, with a river viewpoint. Best time is wisteria flowering (spring; peak month to be confirmed by a phenology source). Nearby, same register: a coast redwood at Quinta de Santo Antonio (KNJ1/511), private quinta, access unknown, not delivered."
   }
 ]

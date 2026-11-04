@@ -1,0 +1,112 @@
+{
+  "city": "Stratford-upon-Avon",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Stratford-upon-Avon's two old mulberries both grow in gardens of the Shakespeare family. The one at New Place, where the poet's last home stood, is believed to have grown from a cutting of the mulberry he is said to have planted, which was felled in 1756; the Shakespeare Birthplace Trust puts it at around 270 years. The other, in the garden of Hall's Croft, where his daughter Susanna lived, grows almost sideways through a flower bed. Both stand in ticketed Trust gardens a short walk apart in the Old Town.",
+  "meta_description": "Two old mulberries in Stratford-upon-Avon, one at New Place believed grown from a cutting of Shakespeare's own tree, one growing sideways at Hall's Croft.",
+  "question_meta": "The New Place mulberry, around 270 years old by the Shakespeare Birthplace Trust's estimate, is the oldest tree we map in Stratford-upon-Avon.",
+  "question_answer": "The oldest tree we map in Stratford-upon-Avon is the black mulberry in the Great Garden at New Place, around 270 years old by the Shakespeare Birthplace Trust's estimate. The Trust believes it grew from a cutting of the mulberry Shakespeare is said to have planted, which was felled in 1756. It stands in a ticketed garden on Chapel Street in the Old Town.",
+  "question_context": "Shakespeare's mulberry is one of the most retold tree stories in England, and almost every part of it is tradition. The poet is said to have planted a mulberry at New Place, his last home in Stratford. In 1756 the Reverend Francis Gastrell cut it down. The wood did not go to waste: a chair dated 1862 is said to have been made from it. What grows in the Great Garden today is a black mulberry the Shakespeare Birthplace Trust believes was raised from a cutting of the felled tree, and its estimate of around 270 years fits a cutting taken soon after 1756. The Trust's blog described it in 2013 as a venerable and massive tree still bearing fruit, and the Trust now harvests the fruit for a New Place Mulberry Gin Liqueur. A younger mulberry in the same garden was planted by Dame Peggy Ashcroft in 1969 and split in 2013. Across the Old Town, the garden of Hall's Croft holds a third mulberry whose trunk runs almost horizontally through a flower bed. Nobody has published its age, and the most recent account of it dates from 2013.",
+  "hero_tree_id": "sua_001",
+  "oldest_tree_id": "sua_001",
+  "faq": [
+    {
+      "q": "Is the New Place mulberry Shakespeare's own tree?",
+      "a": "Not the tree itself, which was felled in 1756. The Shakespeare Birthplace Trust believes the mulberry in the Great Garden grew from a cutting of it, and puts its age at around 270 years. The link is tradition rather than proof."
+    },
+    {
+      "q": "Can you visit the mulberries?",
+      "a": "Yes, both stand in Shakespeare Birthplace Trust gardens with paid entry, New Place on Chapel Street and Hall's Croft near Holy Trinity Church. Check the Trust's site for hours and prices."
+    },
+    {
+      "q": "When does the New Place mulberry fruit?",
+      "a": "In July and August. The Trust harvests the fruit for its New Place Mulberry Gin Liqueur."
+    },
+    {
+      "q": "What is unusual about the Hall's Croft mulberry?",
+      "a": "Its trunk grows almost horizontally through a flower bed. The Shakespeare Birthplace Trust's blog noted in 2013 that old mulberries tend to lean and split with age."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sua_001",
+      "name": "The New Place Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "roughly 270 years",
+      "age_min": 250,
+      "age_max": 300,
+      "age_basis": "source",
+      "location": {
+        "address": "Great Garden, Shakespeare's New Place, Chapel Street, Stratford-upon-Avon CV37 6EP",
+        "latitude": 52.1892,
+        "longitude": -1.7076,
+        "neighbourhood": "Old Town"
+      },
+      "location_site": {
+        "name": "Great Garden, New Place",
+        "radius_m": 50
+      },
+      "story": "Shakespeare's own mulberry was cut down in 1756, and this one may be its child. The Shakespeare Birthplace Trust, which looks after the site of his last home at New Place, believes the black mulberry in the Great Garden grew from a cutting of the tree the poet is said to have planted, felled that year by the Reverend Francis Gastrell. Both halves of that sentence are tradition. The Trust says believed, and so do we.\n\nThe Trust puts the tree at around 270 years old, which fits a cutting taken soon after the felling. Its blog called it, in 2013, a venerable and massive tree still bearing fruit, and it still earns its keep. The Trust harvests the mulberries for a New Place Mulberry Gin Liqueur.\n\nThe felled tree did not disappear either. Its wood became souvenirs, among them a chair dated 1862 that is said to have been made from it. One tradition ended up as furniture, the other is still growing in the garden where it began.\n\nA second, younger mulberry shares the garden, planted by the actor Dame Peggy Ashcroft in 1969. It split in 2013. New Place is ticketed and about ten minutes on foot from Stratford-upon-Avon station.",
+      "verified_sources": [
+        "https://www.shakespeare.org.uk/explore-shakespeare/blogs/gardens-shakespeares-new-place-july/",
+        "https://theshakespeareblog.com/2013/08/shakespeares-mulberries/",
+        "https://stratfordobserver.co.uk/?p=49732"
+      ],
+      "access": "Paid entry to Shakespeare's New Place (Shakespeare Birthplace Trust); the tree stands in the Great Garden. Check shakespeare.org.uk for current hours and prices.",
+      "transport": "Old Town, about 10 minutes' walk from Stratford-upon-Avon station.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "fruit",
+        "label": "July and August, when the dark mulberries ripen and the Trust harvests them"
+      },
+      "how_to_recognise": "You can recognise it as the larger, older of the two mulberries in the Great Garden, a massive trunk that still bears fruit. The younger one nearby was planted by Dame Peggy Ashcroft in 1969.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Owner of the ground (Shakespeare Birthplace Trust) 'Plant of the month' page for New Place: Morus nigra (Black Mulberry), location Great Garden, 'Age: believed to be around 270yrs old', believed grown from a cutting of the tree Shakespeare planted, which the Rev. Francis Gastrell felled in 1756; harvested fruit used for a New Place Mulberry Gin Liqueur; the other mulberry was planted by Dame Peggy Ashcroft in 1969. The page carries no date seen; 'around 270 years' is the Trust's own figure (so planted about 1750s-1760s, which fits a scion after the 1756 felling). SBT blog 2013 (theshakespeareblog.com/2013/08/shakespeares-mulberries/): the scion is 'a venerable and massive tree, still bearing fruit'; Ashcroft's 1969 tree split in 2013. Stratford Observer 20 Nov 2017: photo caption 'the mulberry tree which stands today in the Great Garden at New Place'. The link to Shakespeare's own tree is tradition, not proven: the Trust says 'believed'. A search-engine summary claimed an '1862 planting' for this tree; that was wrong (1862 is the year of a chair said to be made from the old tree's wood, Stratford Observer 2017). Unused. No girth or height seen. Alive: SBT fruit use and 2017 photo; no dated 2024-26 observation seen, so recent life not independently confirmed.",
+      "paid_entry": true
+    },
+    {
+      "id": "sua_002",
+      "name": "The Hall's Croft Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "location": {
+        "address": "Hall's Croft garden, Old Town, Stratford-upon-Avon CV37 6BG",
+        "latitude": 52.1873,
+        "longitude": -1.7046,
+        "neighbourhood": "Old Town"
+      },
+      "location_site": {
+        "name": "Hall's Croft garden",
+        "radius_m": 40
+      },
+      "story": "The mulberry at Hall's Croft grows sideways. Its trunk runs almost horizontally through a bed of flowers in the garden of the house where Shakespeare's daughter Susanna lived with her husband, the physician John Hall. The Shakespeare Birthplace Trust, which owns the house, wrote in 2013 that once supported it would take on the character of the much older mulberries at New Place.\n\nLeaning is what old mulberries do. The same post quotes the Royal Horticultural Society's advice that they lean and split with age. Whether this one has since been given its supports, nobody has published.\n\nThat 2013 post is the only account of the tree we have found. It does not give its age, its girth or even its species, though black mulberry, the kind at New Place, is the likely answer. Nobody has dated it. If you visit, tell us what you find, how far it leans now, and whether it fruits.\n\nIt shares the town with the New Place mulberry, which the Trust believes grew from a cutting of Shakespeare's own, a short walk away through the Old Town. Hall's Croft is ticketed, near Holy Trinity Church, about twelve minutes on foot from the station.",
+      "verified_sources": [
+        "https://theshakespeareblog.com/2013/08/shakespeares-mulberries/"
+      ],
+      "access": "Paid entry to Hall's Croft (Shakespeare Birthplace Trust); check shakespeare.org.uk for current hours and prices.",
+      "transport": "Old Town, about 12 minutes' walk from Stratford-upon-Avon station, near Holy Trinity Church.",
+      "how_to_recognise": "You can recognise it by the trunk running almost horizontally across a flower bed. It stands in the garden of Hall's Croft, near Holy Trinity Church.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Single source, the Shakespeare Birthplace Trust's Shakespeare Blog (2013): the mulberry at Hall's Croft 'appears to be growing horizontally among a bed of flowers' and, once supported, will take on the character of the older New Place trees; the same post notes the RHS advice that old mulberries lean and split. The post does not give species (assumed Morus nigra, as at New Place, not stated for this tree), age, girth or exact position. Alive: 2013 only, no later observation seen. Flagged: one source, species assumed, no recent life check. Owner of the ground is the source. Pin is the garden, approximate.",
+      "paid_entry": true
+    }
+  ]
+}

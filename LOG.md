@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 (third attempt, morning): Coimbra verify pass, one flagged tree, nothing shipped
+
+- Verify pass on Coimbra delivered one tree to data/research/coimbra-verified.json: cbr_007, the Penacova wisteria pergola (register KNJ1/314, approximate pin). Flagged: about 14 km out, over the 30-minute day-trip bound, so it ships as a Penacova tree page or not at all. Other candidates stay leads (access unknown). Coimbra is a wall for 48h.
+- New hosts refusing fetches: cm-coimbra.pt (403), visitregiaodecoimbra.pt (firewall), descla.pt (empty).
+- Pace still full until about 14:54 UTC, so no writing or merging of new trees. Sintra claim released (forced; sin_006 is still verified and unmerged).
+
 ## 2026-11-04 (second attempt, morning): no tree shipped, the pace is full
 
 - 111 READY leads and about 550 written trees wait, but the pace holds at exactly 25 new trees in 24 hours until about 14:54 UTC. Canterbury, Mottisfont and Stratford-upon-Avon (7 trees) stay untracked on disk for that. Nothing to merge before then.

@@ -157,11 +157,6 @@
       "released_at": "2026-10-31T19:56:06+00:00"
     },
     {
-      "slug": "coimbra",
-      "kind": "verify",
-      "released_at": "2026-11-01T19:52:22+00:00"
-    },
-    {
       "slug": "san-francisco",
       "kind": "verify",
       "released_at": "2026-11-02T01:21:52+00:00"
@@ -240,6 +235,11 @@
       "slug": "boston",
       "kind": "verify",
       "released_at": "2026-11-03T20:03:49+00:00"
+    },
+    {
+      "slug": "coimbra",
+      "kind": "verify",
+      "released_at": "2026-11-04T07:10:40+00:00"
     }
   ]
 }
