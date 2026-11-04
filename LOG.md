@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-04 session: Plus waits, the drafts folder cleaned
+
+- **Decided (Hidde):** iOS release first, then Android, then Plus. A "Plus, tell me when it's ready" screen (fake door: Plus label on offline save and Start the walk, a sheet with four features, the tap counted on the server) was sketched and is parked: "ik wil ook geen plus dingen neerzetten die niet kloppen". No run builds it or shows anything Plus before he picks it up. Open questions for then: does a priceless Plus screen count as commercial for UWV, and is offline save free today (then it does not move behind Plus).
+- **What changed (drafts):** 43 reply drafts from conversations before 2026-10-21 that never went out moved to archive/drafts-stale/ (Hidde: "weggooien"); the session-start brief lists about half as many open drafts.
+- Breakage: none.
+
 ## 2026-11-04 session: the quality line in the digest
 
 - **What changed (digest):** right under his numbers, one line "Quality ● Web ● iOS ● Android": green, orange or red per platform, and when anything is orange or red a small table with only those rows (Next version, Live, Open bugs) and a reason per cell (scripts/quality.py; DATA.md says the colours in words, the digest page draws them). Inputs: deploy.yml and ios.yml on main, deploy lag past 12 h, the code review (7 days) and fresh-eyes review (1 day) being current, open BUG rows in data/code-audit.json, app crashes, website errors, an outside site-up check (uptime.yml, every 15 minutes), page speed of the ten most-seen pages (page_speed.py, weekly by due date), and Dependabot alerts (.github/dependabot.yml, weekly PRs, never merged by a run).
