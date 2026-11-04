@@ -164,7 +164,8 @@
    "summary": "Followers and Following open as a sheet while Find people is a page.",
    "fix": "Push them, as Instagram and Strava.",
    "first_seen": "2026-11-04",
-   "status": "open"
+   "status": "fixed",
+   "fixed_in": "fa5fc8f77"
   },
   {
    "id": "APP-UX-chips-combine",
