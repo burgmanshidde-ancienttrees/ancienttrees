@@ -316,7 +316,10 @@ struct MapTab: View {
                 PlaceAmbassadors(slug: slug, title: placeTitle, catalogue: catalogue)
             }
         }
-        .padding(.horizontal, 20)
+        // The cards' 16 under it (appfit DRIFT and TRAIL, 2026-11-04): at 20
+        // the name, the share circle and the ambassador row sat four points
+        // inside every card below them.
+        .padding(.horizontal, 16)
         .padding(.bottom, 10)
         .frame(maxWidth: .infinity, alignment: .leading)
         // .contain first: an identifier on a bare container is stamped on
