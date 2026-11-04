@@ -337,7 +337,14 @@
       },
       "girth_cm": 960,
       "height_m": 13.5,
-      "verify_notes": "Proposed by the Sintra ambassador's mail of 2026-11-03 (thread 'Looking after Sintra'; name kept out of the repo) with her photograph of 2026-11-02 and a Google Maps dropped pin (maps.app.goo.gl/9Xbo73qUbVNEybto7, resolving to 38.799069,-9.399571, on Caminho dos Frades per Nominatim). ICNF register id 275, KNJ1/061, 'Quinta do Castanheiro - Caminho dos Frades', D.G. n.º 70 II Série 26/03/1945, girth 10.2 m at the base and 9.6 m at 1.30 m, height 13.5 m, age 800, last measured 1989; register point 38.79910,-9.39960, about 3 m from her pin. Agroportal/Lusa 2025-02-18: GAAS complaint to the PGR about an unauthorised cut ('totalmente rolado e desconfigurado'), only the trunk and four young shoots left, age more than 600, estate's reason the wall and heavy limbs. This tree was blocked in data/leads/sintra.json since 2026-07-28 for private land and an open vitality question; her photograph answers both: leaves on it in November 2026, and a view from the public lane (hard rule 10: view-only trees ship with the pin on the viewing place). Whether the green crown in the frame is entirely this tree's regrowth cannot be settled from one photograph, so the story says green growth stands above it, not more."
+      "verify_notes": "Proposed by the Sintra ambassador's mail of 2026-11-03 (thread 'Looking after Sintra'; name kept out of the repo) with her photograph of 2026-11-02 and a Google Maps dropped pin (maps.app.goo.gl/9Xbo73qUbVNEybto7, resolving to 38.799069,-9.399571, on Caminho dos Frades per Nominatim). ICNF register id 275, KNJ1/061, 'Quinta do Castanheiro - Caminho dos Frades', D.G. n.º 70 II Série 26/03/1945, girth 10.2 m at the base and 9.6 m at 1.30 m, height 13.5 m, age 800, last measured 1989; register point 38.79910,-9.39960, about 3 m from her pin. Agroportal/Lusa 2025-02-18: GAAS complaint to the PGR about an unauthorised cut ('totalmente rolado e desconfigurado'), only the trunk and four young shoots left, age more than 600, estate's reason the wall and heavy limbs. This tree was blocked in data/leads/sintra.json since 2026-07-28 for private land and an open vitality question; her photograph answers both: leaves on it in November 2026, and a view from the public lane (hard rule 10: view-only trees ship with the pin on the viewing place). Whether the green crown in the frame is entirely this tree's regrowth cannot be settled from one photograph, so the story says green growth stands above it, not more.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "chestnuts in spiny burs, ripe and gatherable in October",
+        "kind": "fruit"
+      }
     }
   ]
 }
