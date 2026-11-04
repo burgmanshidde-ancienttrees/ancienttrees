@@ -383,7 +383,7 @@ def check_the_code_is_read_every_week():
         bad = [r.get("id", "?") for r in rows
                if r.get("surface") not in ("APP", "WEB")
                or r.get("kind") not in ("BUG", "SPEED", "UX", "CUT", "CODE")
-               or r.get("status") not in ("open", "fixed", "declined")]
+               or r.get("status") not in ("open", "fixed", "declined", "not_a_bug")]
         if bad:
             out.append("data/code-audit.json: rows with an unknown surface, kind or status: %s" % ", ".join(bad[:5]))
         if len(ids) != len(set(ids)):

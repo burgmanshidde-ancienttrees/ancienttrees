@@ -2,84 +2,84 @@
  "_note": "The weekly code review's findings for the app and the website (BRIEF_CODE_AUDIT.md). Rows are never deleted; status is open, fixed (with fixed_in) or declined (with Hidde's words). The review reads this first so nothing is reported twice.",
  "findings": [
   {
-   "id": "APP-APP-BUG-map-redraw-ids-only",
+   "id": "APP-BUG-map-redraw-ids-only",
    "surface": "APP",
    "kind": "BUG",
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:646",
    "summary": "A corrected pin, new photo or fixed name reaches the map only after a restart: the redraw compares tree ids only.",
    "fix": "Redraw when the drawn fields differ, keeping the same-array fast path.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "9cf743ebf"
   },
   {
-   "id": "APP-APP-BUG-own-pins-and-route",
+   "id": "APP-BUG-own-pins-and-route",
    "surface": "APP",
    "kind": "BUG",
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:655",
    "summary": "Own pins compare ids only and the route only its point count.",
    "fix": "Compare coordinates, photo presence and route identity.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "9cf743ebf"
   },
   {
-   "id": "APP-APP-BUG-account-load-twice",
+   "id": "APP-BUG-account-load-twice",
    "surface": "APP",
    "kind": "BUG",
    "file": "ios/AncientTrees/AncientTrees/ContentView.swift:1039",
    "summary": "The account may load twice at cold launch, running two merges at once.",
    "fix": "One in-flight load task.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "9cf743ebf"
   },
   {
-   "id": "APP-APP-BUG-photo-downloaded-twice",
+   "id": "APP-BUG-photo-downloaded-twice",
    "surface": "APP",
    "kind": "BUG",
    "file": "ios/AncientTrees/AncientTrees/Kit/SightingSync.swift:46",
    "summary": "A photo can download twice in one merge.",
    "fix": "Download once.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "9cf743ebf"
   },
   {
-   "id": "APP-APP-BUG-map-style-offline",
+   "id": "APP-BUG-map-style-offline",
    "surface": "APP",
    "kind": "BUG",
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:1063",
    "summary": "The map style always loads from the web; a cold start without signal may draw no map.",
    "fix": "Bundle the style, refresh from the web.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "not_a_bug",
+   "why": "MapLibre keeps the style in its own cache and uses it offline after the first load; only a first launch with no signal draws no map, and then no tiles are on the phone either"
   },
   {
-   "id": "APP-APP-BUG-sheet-during-dismiss",
+   "id": "APP-BUG-sheet-during-dismiss",
    "surface": "APP",
    "kind": "BUG",
    "file": "ios/AncientTrees/AncientTrees/ContentView.swift:414",
    "summary": "After sign-in the camera sheet is presented while the sign-in sheet is still closing.",
    "fix": "Present after the first sheet has gone.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "not_a_bug",
+   "why": "the callback fires from nudge.sheetGone() after the sign-in sheet has gone, the existing chaining pattern"
   },
   {
-   "id": "APP-APP-BUG-url-force-unwrap",
+   "id": "APP-BUG-url-force-unwrap",
    "surface": "APP",
    "kind": "BUG",
    "file": "ios/AncientTrees/AncientTrees/Screens/Walks.swift:141",
    "summary": "Two share URLs are force-unwrapped from a slug.",
    "fix": "Optional URL.",
    "first_seen": "2026-11-04",
-   "status": "open",
-   "note": "a session's agent is fixing it, 2026-11-04"
+   "status": "fixed",
+   "fixed_in": "9cf743ebf"
   },
   {
-   "id": "APP-APP-SPEED-map-list-every-redraw",
+   "id": "APP-SPEED-map-list-every-redraw",
    "surface": "APP",
    "kind": "SPEED",
    "file": "ios/AncientTrees/AncientTrees/Screens/MapTab.swift:406",
@@ -90,7 +90,7 @@
    "note": "a session's agent is fixing it, 2026-11-04"
   },
   {
-   "id": "APP-APP-SPEED-search-per-keystroke",
+   "id": "APP-SPEED-search-per-keystroke",
    "surface": "APP",
    "kind": "SPEED",
    "file": "ios/AncientTrees/AncientTrees/Screens/MapSearch.swift:626",
@@ -101,7 +101,7 @@
    "note": "a session's agent is fixing it, 2026-11-04"
   },
   {
-   "id": "APP-APP-SPEED-my-trees-network",
+   "id": "APP-SPEED-my-trees-network",
    "surface": "APP",
    "kind": "SPEED",
    "file": "ios/AncientTrees/AncientTrees/Screens/Collect.swift:371",
@@ -112,7 +112,7 @@
    "note": "a session's agent is fixing it, 2026-11-04"
   },
   {
-   "id": "APP-APP-SPEED-breathing-timer",
+   "id": "APP-SPEED-breathing-timer",
    "surface": "APP",
    "kind": "SPEED",
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:574",
@@ -122,7 +122,7 @@
    "status": "open"
   },
   {
-   "id": "APP-APP-CUT-walks-season-plus",
+   "id": "APP-CUT-walks-season-plus",
    "surface": "APP",
    "kind": "CUT",
    "file": "ios/AncientTrees/AncientTrees/Kit/Launch.swift",
@@ -133,7 +133,7 @@
    "note": "Hidde, 2026-11-04: \"set the code aside - we will come back to this but probably completely in a new way\""
   },
   {
-   "id": "APP-APP-CODE-dead-screens",
+   "id": "APP-CODE-dead-screens",
    "surface": "APP",
    "kind": "CODE",
    "file": "ios/AncientTrees/AncientTrees/Screens/Collect.swift:595",
@@ -143,7 +143,7 @@
    "status": "open"
   },
   {
-   "id": "APP-APP-UX-one-add-photo",
+   "id": "APP-UX-one-add-photo",
    "surface": "APP",
    "kind": "UX",
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:2381",
@@ -153,7 +153,7 @@
    "status": "open"
   },
   {
-   "id": "APP-APP-UX-follower-lists-pushed",
+   "id": "APP-UX-follower-lists-pushed",
    "surface": "APP",
    "kind": "UX",
    "file": "ios/AncientTrees/AncientTrees/Screens/Collect.swift:406",
@@ -163,7 +163,7 @@
    "status": "open"
   },
   {
-   "id": "APP-APP-UX-chips-combine",
+   "id": "APP-UX-chips-combine",
    "surface": "APP",
    "kind": "UX",
    "file": "ios/AncientTrees/AncientTrees/Screens/MapTab.swift:1199",
@@ -173,7 +173,7 @@
    "status": "open"
   },
   {
-   "id": "APP-APP-UX-city-chip-same-tab",
+   "id": "APP-UX-city-chip-same-tab",
    "surface": "APP",
    "kind": "UX",
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:977",
@@ -183,7 +183,7 @@
    "status": "open"
   },
   {
-   "id": "APP-APP-UX-bottom-bar-200m",
+   "id": "APP-UX-bottom-bar-200m",
    "surface": "APP",
    "kind": "UX",
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:2481",
@@ -193,7 +193,7 @@
    "status": "open"
   },
   {
-   "id": "APP-APP-UX-one-search-rule",
+   "id": "APP-UX-one-search-rule",
    "surface": "APP",
    "kind": "UX",
    "file": "ios/AncientTrees/AncientTrees/Screens/Home.swift:362",

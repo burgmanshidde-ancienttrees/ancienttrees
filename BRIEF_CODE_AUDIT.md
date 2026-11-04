@@ -27,7 +27,7 @@ Verify every finding by reading the code; leave out what you are not sure of. Th
 
 ## Where it goes
 
-1. data/code-audit.json, one object per finding in `findings`: `{"id": "<SURFACE>-<KIND>-<short-slug>", "surface": "APP|WEB", "kind": "BUG|SPEED|UX|CUT|CODE", "file": "path:line", "summary": "<one sentence>", "fix": "<one sentence>", "first_seen": "YYYY-MM-DD", "status": "open"}`. Never delete a row; a session or run sets `status` to `fixed` (with `fixed_in`, the commit) or `declined` (with Hidde's words).
+1. data/code-audit.json, one object per finding in `findings`: `{"id": "<SURFACE>-<KIND>-<short-slug>", "surface": "APP|WEB", "kind": "BUG|SPEED|UX|CUT|CODE", "file": "path:line", "summary": "<one sentence>", "fix": "<one sentence>", "first_seen": "YYYY-MM-DD", "status": "open"}`. Never delete a row; a session or run sets `status` to `fixed` (with `fixed_in`, the commit), `not_a_bug` (with `why`, after reading the code) or `declined` (with Hidde's words).
 2. REVIEW.md, at the top, under `## YYYY-MM-DD code`: one line per new finding, its id, file and summary. Nothing new: the heading and "Nothing new in the code."
 3. LOG.md, one line at the top of today's entry (create the `## YYYY-MM-DD` heading if there is none), only when there is at least one new UX or CUT finding: `For Hidde: code review, <n> interaction proposal(s) and <m> thing(s) to cut wait for your word (REVIEW.md, <date> code).` Bugs, speed and code need no word from him.
 4. Commit those files only, message `Code review: <n> new finding(s)`, and push (`git pull --rebase` and push again when main moved).
