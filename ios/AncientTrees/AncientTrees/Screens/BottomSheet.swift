@@ -145,6 +145,19 @@ extension EnvironmentValues {
     }
 }
 
+private struct MapTopCoverKey: EnvironmentKey {
+    static let defaultValue: CGFloat = 0
+}
+
+extension EnvironmentValues {
+    /// How far controls floating over a map's top reach down, in points; the
+    /// map keeps that strip out of its framing (TreeMap.settle).
+    var mapTopCover: CGFloat {
+        get { self[MapTopCoverKey.self] }
+        set { self[MapTopCoverKey.self] = newValue }
+    }
+}
+
 private struct SheetLiftKey: EnvironmentKey {
     static let defaultValue: SheetHeight? = nil
 }

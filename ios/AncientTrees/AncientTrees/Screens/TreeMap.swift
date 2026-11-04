@@ -125,6 +125,10 @@ struct TreeMap: UIViewRepresentable {
     /// a moving thumb is worse than a map that opened slightly wrong, and that
     /// is already written down in settle().
     @Environment(\.sheetPoints) private var livePoints
+    /// How far the controls floating over the top of this map reach down
+    /// (the map tab's search field and chips), so a place is framed in what
+    /// is left to see. Zero where nothing floats over the map.
+    @Environment(\.mapTopCover) var topCover
 
     /// How much of this map the sheet in front of it is covering.
     private var sheetCoverage: SheetHeight? { sheetLift ?? inheritedLift }
@@ -329,6 +333,11 @@ struct TreeMap: UIViewRepresentable {
 
         if let move = moveTo, context.coordinator.moved != move.token {
             context.coordinator.moved = move.token
+            // A DELIBERATE MOVE OWNS THE CAMERA, as a finger does (2026-11-04,
+            // on the SE: Cadiz picked a moment after launch, then the GPS fix
+            // arrived and the opening shot pulled the map back to Amsterdam).
+            context.coordinator.userMoved = true
+            context.coordinator.lastMove = (move.region, Date())
             map.setVisibleCoordinateBounds(Self.bounds(move.region), animated: true)
         }
 
@@ -538,6 +547,12 @@ struct TreeMap: UIViewRepresentable {
         var parent: TreeMap
         var centred: String?
         var moved: UUID?
+        /// The last deliberate move and when it was asked for. MapLibre drops a
+        /// camera animation the moment the content inset changes, and a place
+        /// picked in the search raises the sheet in the same breath, so a move
+        /// cut short by an inset change within a few seconds is flown again
+        /// (2026-11-04, Lisbon picked on the SE and the map staying home).
+        var lastMove: (region: MKCoordinateRegion, at: Date)?
 
         private var styleReady = false
         private var pending: (trees: [Tree],
@@ -835,8 +850,19 @@ struct TreeMap: UIViewRepresentable {
             // grew would re-aim the camera on release, which is the jump that
             // made the drag feel clunky.
             let bottom = min(coverage, SheetHeight.half.points(in: map.bounds.height))
-            if abs(map.contentInset.bottom - bottom) > 1 {
-                map.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
+            // AND THE TOP (Hidde, 2026-11-04: the United States opened with
+            // its north under the search field and chips). The same content
+            // inset, measured from the controls floating over the map, so a
+            // place is framed between them and the sheet. Capped at a third of
+            // the map so a tall chip row cannot squeeze the viewport shut.
+            let topCover = min(parent.topCover, map.bounds.height / 3)
+            if abs(map.contentInset.bottom - bottom) > 1 || abs(map.contentInset.top - topCover) > 1 {
+                map.contentInset = UIEdgeInsets(top: topCover, left: 0, bottom: bottom, right: 0)
+                // The inset change just cancelled any camera flight; finish a
+                // deliberate one into the new viewport (see lastMove).
+                if let m = lastMove, Date().timeIntervalSince(m.at) < 4 {
+                    map.setVisibleCoordinateBounds(TreeMap.bounds(m.region), animated: true)
+                }
             }
 
             // AND NOW AIM, with an inset that is finally real.

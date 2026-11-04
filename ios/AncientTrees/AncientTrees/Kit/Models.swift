@@ -410,6 +410,9 @@ public struct BrowseFacet: Codable, Hashable, Sendable, Identifiable {
     /// trees would frame an ocean: France's Martinique, Spain's Tenerife,
     /// Hawaii. Decided on the website (data/countries map_focus). Countries only.
     public let focus: [[Double]]?
+    /// The country has its own page on the website (/<slug>), decided there by
+    /// the same rule that builds the page. Countries only; absent means no page.
+    public var page: Bool? = nil
     /// How visited a city's page is (search clicks, then impressions), so the
     /// empty search offers the places people go to. Cities only.
     public let popularity: Int?
@@ -509,6 +512,11 @@ public struct BrowseFacets: Sendable {
     public func intro(species commonName: String) -> String? { speciesByName[commonName]?.intro }
     public func scientific(species commonName: String) -> String? { speciesByName[commonName]?.scientific }
     public func intro(country name: String) -> String? { countryByName[name]?.intro }
+    /// The country's own web address, only when the website has a page there.
+    public func pageURL(country name: String) -> URL? {
+        guard let f = countryByName[name], f.page == true, let slug = f.slug else { return nil }
+        return URL(string: "https://ancienttrees.app/\(slug)")
+    }
     /// The mainland box a country map opens on, as south-west and north-east
     /// corners, or nil to frame the trees themselves.
     public func focus(country name: String)

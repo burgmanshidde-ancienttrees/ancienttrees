@@ -1216,6 +1216,19 @@ the Greece page): on /explore a country or city row moves the map
 `/explore#country=<name>`. A city still opens its page, which is itself a map
 with the walk and the page Google sends people to.
 
+**How the app's map opens on a picked place (Hidde, 2026-11-04, "Yes, build
+it", after a before-and-after of the United States, Japan and Cadiz):** Apple
+Maps and Google Maps lift their sheet to a middle stop for a picked place, with
+its name, count and share at the top, and frame the place in the part of the
+map you can see. So: the sheet rises one stop (peek to card), never lowers; the
+place is framed between the floating search field and chips and the sheet (the
+map's content inset, `mapTopCover`); a country uses the website's mainland box
+(`map_focus`), else the middle 96 percent of its trees; under a place's header
+the list holds that place's trees only; a country with its own web page
+(`page` in browse.json, the [country].astro rule) has the city's share circle.
+A deliberate move owns the camera like a finger, and an inset change within
+four seconds of one flies it again (MapLibre drops a flight on an inset change).
+
 ---
 
 ## A sheet that asks for one thing

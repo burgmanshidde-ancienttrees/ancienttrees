@@ -74,6 +74,8 @@ struct MapTab: View {
     @State private var topCard: String?
     /// Where the floating search field ends, from the top of the screen.
     @State private var searchBottom: CGFloat = 0
+    /// The bottom of the search field and chip row over the map, in points.
+    @State private var chromeBottom: CGFloat = 0
     @State private var pickingSpecies = false   // -species: launchSheet below
     @State private var searching = ProcessInfo.processInfo.arguments
         .contains { $0 == "-search" || $0.hasPrefix("-search=") }
@@ -283,6 +285,20 @@ struct MapTab: View {
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 }
                 Spacer(minLength: 8)
+                // A COUNTRY SHARES TOO (Hidde, 2026-11-04: "Japan ook deelbaar,
+                // net zoals een stad"), but only where the website has its page:
+                // the feed says which (BrowseFacet.page).
+                if case .country(let name) = p,
+                   let url = catalogue.facets.pageURL(country: name) {
+                    ShareLink(item: Shared.tag(url, from: "country"), subject: Text(placeTitle),
+                              message: Text("Ancient trees in \(placeTitle).")) {
+                        PlaceCircle(symbol: "square.and.arrow.up")
+                    }
+                    .buttonStyle(.plain)
+                    .countsShare("country")
+                    .accessibilityLabel("Share this country")
+                    .accessibilityIdentifier("place-header-share")
+                }
                 if case .city(let slug) = p,
                    let url = URL(string: "https://ancienttrees.app/\(slug)") {
                     // The tree card's share circle (TreePlaceHeader).
@@ -422,6 +438,14 @@ struct MapTab: View {
     }
     @State private var viewMemo = ViewMemo()
 
+    /// The list as the sheet draws it: under a place's header only that
+    /// place's trees, otherwise everything in view.
+    private var listedHere: [(tree: Tree, km: Double)] {
+        guard focusPlace != nil else { return listed }
+        let ids = Set(placeTrees.map(\.id))
+        return listed.filter { ids.contains($0.tree.id) }
+    }
+
     private var listed: [(tree: Tree, km: Double)] {
         // WHAT IS ON SCREEN, and nothing else (Hidde, 2026-08-26, twice in a
         // row: "zodra je scrolt in je map moet je resultaat goed meescrollen"
@@ -529,6 +553,7 @@ struct MapTab: View {
                     moveTo: moveRequest,
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
+                .environment(\.mapTopCover, chromeBottom)
         } header: {
                 // No count while a tree is selected: its card is the sheet.
                 // Otherwise the count, outside the scroll view: it
@@ -606,6 +631,11 @@ struct MapTab: View {
                     VStack(spacing: 8) {
                         whereChip
                         filterRow
+                    }
+                    // How far down the field and the chips reach, so the map
+                    // frames a place in what is left to see (TreeMap mapTopCover).
+                    .onGeometryChange(for: CGFloat.self) { $0.frame(in: .global).maxY } action: {
+                        if abs($0 - chromeBottom) >= 1 { chromeBottom = $0 }
                     }
                 // LEAVES WITH THE MAP (2026-10-02, the Polarsteps transition):
                 // this chrome controls the map, and once the sheet is the page
@@ -740,6 +770,15 @@ struct MapTab: View {
                 case .country(let name): focusPlace = .country(name)
                 default: focusPlace = nil
                 }
+                // A PLACE RAISES THE LIST ONE STOP, NEVER LOWERS IT (Hidde,
+                // 2026-11-04: "het lijkt me logisch dat die lijst standaard wat
+                // hoger zit"). Apple Maps and Google Maps lift their sheet to a
+                // middle stop for a picked place, so its name, count, share and
+                // first card are in view; a sheet you raised yourself stays.
+                switch hit {
+                case .city, .country: if sheetHeight == .peek { sheetHeight = .card }
+                default: break
+                }
                 selected = nil
                 switch hit {
                 case .city(let slug, _, let lat, let lng):
@@ -774,19 +813,28 @@ struct MapTab: View {
                     // showed you Barcelona and nothing else: a country is a
                     // question about spread, and the answer is the whole
                     // spread.
+                    // THE COUNTRY ITSELF, FRAMED WHERE YOU CAN SEE IT (Hidde,
+                    // 2026-11-04, the United States opening on the west coast
+                    // and Mexico). The website's mainland box when it has one
+                    // (data/countries map_focus, in the feed), else the middle
+                    // 96 percent of its trees, so one island far out cannot
+                    // pull the frame into the ocean. Capped at 6,000 km, wide
+                    // enough for the US mainland the old 2,500 km cap cut off.
                     let ts = catalogue.trees(inCountry: name)
-                    if let first = ts.first {
-                        var minLat = first.lat, maxLat = first.lat
-                        var minLng = first.lng, maxLng = first.lng
-                        for t in ts {
-                            minLat = min(minLat, t.lat); maxLat = max(maxLat, t.lat)
-                            minLng = min(minLng, t.lng); maxLng = max(maxLng, t.lng)
+                    if !ts.isEmpty {
+                        let minLat, maxLat, minLng, maxLng: Double
+                        if let f = catalogue.facets.focus(country: name) {
+                            (minLat, maxLat, minLng, maxLng) = (f.sw.lat, f.ne.lat, f.sw.lng, f.ne.lng)
+                        } else {
+                            let lats = ts.map(\.lat).sorted(), lngs = ts.map(\.lng).sorted()
+                            let lo = Int(Double(ts.count - 1) * 0.02), hi = Int(Double(ts.count - 1) * 0.98)
+                            (minLat, maxLat, minLng, maxLng) = (lats[lo], lats[hi], lngs[lo], lngs[hi])
                         }
                         let cLat = (minLat + maxLat) / 2, cLng = (minLng + maxLng) / 2
                         let latM = (maxLat - minLat) * 111_320
                         let lngM = (maxLng - minLng) * 111_320 * cos(cLat * .pi / 180)
                         fly(to: cLat, lng: cLng,
-                            span: max(20_000, min(max(latM, lngM) * 1.25, 2_500_000)))
+                            span: max(20_000, min(max(latM, lngM) * 1.15, 6_000_000)))
                     }
                 case .species(let name):
                     filters.species = name
@@ -1007,7 +1055,10 @@ struct MapTab: View {
                         SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
                     }
                 }
-                ForEach(listed, id: \.tree.id) { hit in
+                // Under a place's header, that place's trees only: the United
+                // States listed a tree in Mexico City first because Mexico was
+                // in view (2026-11-04).
+                ForEach(listedHere, id: \.tree.id) { hit in
                     // SheetLink, not NavigationLink: see BottomSheet.swift. A
                     // link inside a sheet opens on release even when the drag
                     // that released it was raising the sheet.
@@ -1017,7 +1068,7 @@ struct MapTab: View {
                 }
                 if nothingInView {
                     emptyHere
-                } else if listed.isEmpty && minesInView.isEmpty {
+                } else if listedHere.isEmpty && minesInView.isEmpty {
                     Text(query.isEmpty
                          ? (lookingAtYou
                             ? "No tree of ours within fifty kilometres."

@@ -30,7 +30,7 @@
 import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../../lib/trees";
 import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
-import { groupTreesBySpecies } from "../../lib/species";
+import { COUNTRY_MIN_CITIES, groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey, parkTitle } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 import { namedAmbassadorsFor, placeHasAmbassador } from "../../lib/ambassadors";
@@ -159,6 +159,10 @@ export async function GET() {
       // its trees would frame an ocean (Martinique, Tenerife, Hawaii). An
       // answer rather than a rule, so the app opens on the same ground.
       ...(c.data.map_focus ? { focus: c.data.map_focus } : {}),
+      // The country has its own page at /<slug>, the rule [country].astro
+      // builds by, so the app's share button links only to pages that exist
+      // (Hidde, 2026-11-04: "Japan ook deelbaar, net zoals een stad").
+      ...(inCountry.length >= COUNTRY_MIN_CITIES ? { page: true } : {}),
     };
   }).filter((c) => c.count > 0);
 

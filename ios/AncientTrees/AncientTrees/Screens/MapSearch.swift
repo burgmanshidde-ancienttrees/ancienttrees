@@ -119,14 +119,19 @@ struct MapSearch: View {
     /// trees stay listed under it.
     private var cardTown: RealPlace? {
         guard answered == query, !realPlaces.isEmpty else { return nil }
+        // NEVER "NO TREES" FOR A PLACE OF OURS (2026-11-04): Apple answered
+        // "CadizCadiz" with Cádiz, and the card said nothing was mapped there.
+        let towns = realPlaces.filter { !oursIsNamed($0.name) }
+        guard !towns.isEmpty else { return nil }
         let r = ranked
-        if r.places.isEmpty && r.species.isEmpty && r.trees.isEmpty { return realPlaces[0] }
-        // OUR PLACES FIRST (Hidde, 2026-11-04: "barce" showed a town of that
-        // name and hid Barcelona). Apple's town takes the card only when none
-        // of our places matches what was typed; otherwise the list shows ours.
-        if !r.places.isEmpty { return nil }
+        if r.places.isEmpty && r.species.isEmpty && r.trees.isEmpty { return towns[0] }
         let q = Self.fold(query.trimmingCharacters(in: .whitespaces))
-        return realPlaces.first { Self.fold($0.name) == q }
+        // OUR PLACES FIRST WHEN THE NAME BEGINS WITH WHAT WAS TYPED (Hidde,
+        // 2026-11-04: "barce" found a town called Barce and hid Barcelona).
+        // A place that matched only in passing (Brno through Bërno) still
+        // gives way to a town typed in full, the Bern case above.
+        if r.places.contains(where: { Self.fold($0.name).hasPrefix(q) }) { return nil }
+        return towns.first { Self.fold($0.name) == q }
     }
 
     // MARK: - the field
