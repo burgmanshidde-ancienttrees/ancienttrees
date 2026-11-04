@@ -247,6 +247,23 @@ hard paywall keeps only the paying ones active after week one. This is law 3
 in PRODUCT_IA.md and the 2026-08-26 ruling, now with the references written
 down beside them.
 
+**Addendum 2026-11-04: what log apps sell.** Hidde asked for something better
+than walks, offline and season (season push stays free for everyone, as the
+reason to come back). The closest references are apps where people log things
+they experienced, and they sell depth on your own log, never the logging:
+- Letterboxd (films): Pro about USD 19 a year, yearly and all-time stats pages
+  and a Year in Review; Patron about USD 49 adds profile customisation, more
+  stats, a listing in the Patrons directory, early access.
+  https://apps.apple.com/gb/app/id1054271011
+- Untappd Insiders (beer check-ins): USD 54.99 a year, statistics by month,
+  year and all time, exclusive badges, export of your history.
+  https://help.untappd.com/hc/en-us/articles/4409476745492 and
+  https://help.untappd.com/hc/en-us/articles/4410037497748
+- Geocaching Premium (find a physical thing, log it): USD 29.99 a year, all
+  caches including Premium Member Only ones, filters, lists, milestones. The one
+  reference that walls content, and its finders keep logging.
+  https://apps.apple.com/ca/app/geocaching/id329541503
+
 ---
 
 ## A photograph of the sign beside a tree (2026-09-24)

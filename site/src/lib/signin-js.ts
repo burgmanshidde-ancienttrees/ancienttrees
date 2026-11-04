@@ -147,6 +147,8 @@ export const SIGNIN_JS = `
     // this on DOMContentLoaded and reopens the confirm step (AmbassadorLine).
     if (want.kind === 'ambassador') { window.atPendingAmbassador = want.city || true; return; }
     if (want.kind === 'filter') { window.atPendingFilter = want.filter; return; }
+    // The Plus question's "Tell me" (PlusAsk.astro reads it on DOMContentLoaded).
+    if (want.kind === 'plus') { window.atPendingPlus = true; return; }
     // Follow: /profile reads this once it knows who is signed in.
     if (want.kind === 'follow') { window.atPendingFollow = want.user; return; }
     if (!want.tree) return;
@@ -439,6 +441,11 @@ export const SIGNIN_JS = `
         // the tap.
         localStorage.setItem('ancienttrees_pending',
           JSON.stringify({ kind: 'ambassador', city: want.city, at: Date.now() }));
+      } else if (want && want.kind === 'plus') {
+        // "Tell me" on the Plus question (2026-11-04): the page they land back
+        // on reopens that step; nothing is pressed for them.
+        localStorage.setItem('ancienttrees_pending',
+          JSON.stringify({ kind: 'plus', city: want.city || '', at: Date.now() }));
       } else if (want && want.kind === 'follow' && want.user) {
         // Follow on somebody's profile (2026-10-28): who, so the profile
         // they land back on follows them, as a save is finished after it.

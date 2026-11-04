@@ -1,0 +1,203 @@
+---
+/* THE ANCIENT TREES PLUS QUESTION, under the ambassador on every city page.
+ *
+ * Hidde, 2026-11-04, after a session working out what a paid tier could be:
+ * "het ziet er eigenlijk goed uit zo bouw maar". Nothing is sold and no price
+ * is shown; it asks.
+ *
+ * Convention (CONVENTIONS.md, "Where the paywall sits ...", addendum
+ * 2026-11-04): a fake-door question measures interest, a click on "Tell me"
+ * measures a raised hand. How the three steps are built, from the survey
+ * literature looked up that day:
+ *   1. The OPEN question first, before any option is shown, so nobody copies
+ *      our list (anchoring). The field may stay empty.
+ *   2. ONE choice of four, shuffled for every person (position bias), with
+ *      "None of these" always last, so a no is an answer too. The order shown
+ *      is stored with the answer.
+ *   3. "Tell me": the only step that asks for an account, because it is the
+ *      only one we answer. Signed out it opens the sign-in sheet and the step
+ *      comes back after it, as the ambassador seat does.
+ * The row copies the ambassador row (avatar circle, name, one line, chevron),
+ * and the sheet is THE ONE SHEET (Sheet.astro). The app draws the same from
+ * Screens/PlusAsk.swift.
+ *
+ * Where answers go: supabase/plus-answers.sql. plus_answers is anonymous (no
+ * account, no session, no IP), plus_waitlist holds the account ids that
+ * pressed Tell me. scripts/plus_answers.py reads both. Nothing is kept in the
+ * browser.
+ */
+import { icon } from "../lib/icons";
+import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import Sheet from "./Sheet.astro";
+import { ui } from "../lib/i18n";
+
+interface Props { lang?: string; city: string }
+const { lang = "en", city } = Astro.props as Props;
+const U = ui(lang);
+const OPTS = ["walks", "offline", "season", "log"] as const;
+---
+<div class="plus-bar" data-city={city} data-lang={lang} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
+  <button type="button" class="plus-row">
+    <span class="plus-avatar" aria-hidden="true"><Fragment set:html={icon("sparkle", "fill")} /></span>
+    <span class="plus-text">
+      <span class="plus-name">{U.plusRowTitle}</span>
+      <span class="plus-line">{U.plusRowLine}</span>
+    </span>
+    <Fragment set:html={icon("caret-right", "bold", "ic plus-chev")} />
+  </button>
+</div>
+<Sheet lang={lang} class="plus-dialog" id="plus-dialog" aria-labelledby="plus-title">
+  <div class="plus-step" data-step="idea">
+    <span class="at-sheet-tile"><Fragment set:html={icon("sparkle", "fill")} /></span>
+    <h3 class="at-sheet-h" id="plus-title">{U.plusRowTitle}</h3>
+    <p class="at-sheet-p">{U.plusAskBody}</p>
+    <textarea class="plus-idea" maxlength="600" rows="4" placeholder={U.plusIdeaPh} aria-label={U.plusAskBody}></textarea>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--primary plus-next">{U.plusNext}</button>
+    </div>
+  </div>
+  <div class="plus-step" data-step="choice" hidden>
+    <h3 class="at-sheet-h plus-choice-h">{U.plusChoiceTitle}</h3>
+    <div class="plus-opts" role="radiogroup" aria-label={U.plusChoiceTitle}>
+      {OPTS.map((k) => (
+        <label class="plus-opt" data-key={k}><input type="radio" name="plus-choice" value={k} />{U.plusOptions[k]}</label>
+      ))}
+      <label class="plus-opt plus-opt-none" data-key="none"><input type="radio" name="plus-choice" value="none" />{U.plusNone}</label>
+    </div>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--primary plus-send" disabled>{U.plusSend}</button>
+    </div>
+  </div>
+  <div class="plus-step" data-step="thanks" hidden>
+    <span class="at-sheet-tile"><Fragment set:html={icon("check", "bold")} /></span>
+    <h3 class="at-sheet-h">{U.plusThanksTitle}</h3>
+    <p class="at-sheet-p">{U.plusThanksBody}</p>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--primary plus-tell">{U.plusTellMe}</button>
+      <button type="button" class="sheet-b sheet-b--secondary plus-skip">{U.plusNoThanks}</button>
+    </div>
+  </div>
+  <div class="plus-step" data-step="listed" hidden>
+    <span class="at-sheet-tile"><Fragment set:html={icon("check", "bold")} /></span>
+    <h3 class="at-sheet-h">{U.plusOnListTitle}</h3>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--primary plus-done">{U.plusDone}</button>
+    </div>
+  </div>
+</Sheet>
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function() {
+  var bar = document.querySelector('.plus-bar');
+  var dlg = document.getElementById('plus-dialog');
+  if (!bar || !dlg) return;
+  var C = window.atCollection;
+  var SB = bar.getAttribute('data-sb'), KEY = bar.getAttribute('data-key');
+  var city = bar.getAttribute('data-city'), lang = bar.getAttribute('data-lang');
+  var steps = dlg.querySelectorAll('.plus-step');
+  var idea = dlg.querySelector('.plus-idea');
+  var box = dlg.querySelector('.plus-opts');
+  var send = dlg.querySelector('.plus-send');
+  var tell = dlg.querySelector('.plus-tell');
+  var shown = '';
+  function track(n, v) { try { if (window.at && at.track) at.track(n, v); } catch (e) {} }
+  function show(name) { steps.forEach(function(s) { s.hidden = s.getAttribute('data-step') !== name; }); }
+  function close() { if (dlg.open) dlg.close(); }
+  // Fisher-Yates over the four; "None of these" stays last.
+  function shuffle() {
+    var none = box.querySelector('.plus-opt-none');
+    var opts = Array.prototype.slice.call(box.querySelectorAll('.plus-opt:not(.plus-opt-none)'));
+    for (var i = opts.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = opts[i]; opts[i] = opts[j]; opts[j] = t; }
+    opts.forEach(function(o) { box.insertBefore(o, none); });
+    shown = opts.map(function(o) { return o.getAttribute('data-key'); }).join(',');
+  }
+  function open(step) {
+    if (step !== 'thanks') {
+      idea.value = '';
+      box.querySelectorAll('input').forEach(function(r) { r.checked = false; });
+      box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.remove('is-on'); });
+      send.disabled = true; shuffle();
+    }
+    tell.disabled = false;
+    show(step || 'idea');
+    dlg.showModal();
+  }
+  bar.querySelector('.plus-row').addEventListener('click', function() { track('plus-open', 'city'); open('idea'); });
+  dlg.querySelector('.plus-next').addEventListener('click', function() { show('choice'); });
+  box.addEventListener('change', function(e) {
+    box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.toggle('is-on', o.contains(e.target) && e.target.checked); });
+    send.disabled = !box.querySelector('input:checked');
+  });
+  send.addEventListener('click', function() {
+    var picked = box.querySelector('input:checked');
+    if (!picked) return;
+    send.disabled = true;
+    // Anonymous on purpose: the publishable key alone, never the session.
+    fetch(SB + '/rest/v1/plus_answers', {
+      method: 'POST',
+      headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+      body: JSON.stringify({ surface: 'web', lang: lang, city: city, opened_from: 'city', choice: picked.value,
+                             idea: (idea.value || '').trim().slice(0, 600), shown_order: shown })
+    }).catch(function() {});
+    track('plus-answer', picked.value);
+    show('thanks');
+  });
+  function onList() {
+    var s = C && C.session();
+    if (!s) return;
+    tell.disabled = true;
+    fetch(SB + '/rest/v1/plus_waitlist', {
+      method: 'POST',
+      headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token, 'Content-Type': 'application/json', 'Prefer': 'resolution=ignore-duplicates,return=minimal' },
+      body: '{}'
+    }).then(function(r) {
+      if (r.status === 401 || r.status === 403) { C.forget(); close(); if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback', { kind: 'plus', city: city }); return; }
+      // 409: already on the list from another device, which is the same answer.
+      if (r.ok || r.status === 409) { track('plus-tellme', 'web'); show('listed'); }
+      else tell.disabled = false;
+    }).catch(function() { tell.disabled = false; });
+  }
+  tell.addEventListener('click', function() {
+    if (!C) return;
+    C.gate(onList, function() {
+      close();
+      if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback', { kind: 'plus', city: city });
+    });
+  });
+  dlg.querySelector('.plus-skip').addEventListener('click', close);
+  dlg.querySelector('.plus-done').addEventListener('click', close);
+  // Back from signing in with "Tell me" still to press: reopen that step, never
+  // press it on their behalf.
+  if (window.atPendingPlus && C) {
+    window.atPendingPlus = null;
+    C.gate(function() { open('thanks'); }, function() {});
+  }
+});
+</script>
+
+<style>
+  /* The ambassador row's numbers (AmbassadorLine.astro): 32px avatar, 10px
+     gap, 14px name, 12px line, 16px chevron, 44px tall. */
+  .plus-bar { margin-top: 8px; }
+  .plus-row { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px;
+    padding: 0; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; color: inherit; }
+  .plus-avatar { flex: none; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--moss-light); color: var(--moss); }
+  .plus-avatar :global(svg) { width: 16px; height: 16px; fill: var(--moss); }
+  .plus-text { flex: 1; display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
+  .plus-name { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .plus-line { font-size: 12px; color: var(--ink-mid); }
+  .plus-row :global(.plus-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
+  @media (hover: hover) { .plus-row:hover .plus-name { text-decoration: underline; } }
+
+  .plus-idea { display: block; width: 100%; height: 104px; box-sizing: border-box; margin: 0 0 20px;
+    padding: 14px 16px; border: 1px solid var(--cream-dark); border-radius: 16px; background: var(--surface);
+    font: inherit; font-size: 16px; color: var(--ink); resize: none; }
+  .plus-idea::placeholder { color: var(--ink-light); }
+  .plus-choice-h { margin-bottom: 20px; }
+  .plus-opts { display: flex; flex-direction: column; gap: 8px; margin: 0 0 20px; text-align: left; }
+  .plus-opt { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid var(--cream-dark);
+    border-radius: 16px; font-size: 15px; line-height: 20px; color: var(--ink); cursor: pointer; }
+  .plus-opt input { width: 20px; height: 20px; margin: 0; flex: none; accent-color: var(--moss); }
+  .plus-opt.is-on { border-color: var(--ink); background: var(--surface); }
+  .plus-opt-none { color: var(--ink-mid); }
+</style>

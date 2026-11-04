@@ -33,6 +33,7 @@ import { SHEET_JS } from "../lib/sheet-js";
 import { SHARE_JS } from "../lib/share-js";
 import { hreflangForCity, QUESTION_SLUG, ui, cityTranslation, cityHref, type CityTranslation } from "../lib/i18n";
 import AmbassadorLine from "./AmbassadorLine.astro";
+import PlusAsk from "./PlusAsk.astro";
 import { namedAmbassadorsFor, placeHasAmbassador } from "../lib/ambassadors";
 import { getCollection } from "astro:content";
 import { cityIsRenderable } from "../lib/trees";
@@ -153,6 +154,7 @@ const cityHasQuestion = hasQuestionPage(city);
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
         <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={city.data.city} seated={placeHasAmbassador(cslug)} />
+        <PlusAsk lang={lang} city={city.data.city} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <a class="passport-save" href="/account#saved">{U.seeCollection}</a>

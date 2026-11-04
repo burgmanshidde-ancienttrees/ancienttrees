@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 session: the Ancient Trees Plus question, web and app
+
+- **What changed in the product:** a row "Ancient Trees Plus / Help us choose what comes next" under the ambassador on every city page (web, all eight languages, PlusAsk.astro) and on the app's city header, plus a row "Ancient Trees Plus" first in the app's Settings > Help (a row, not a card: Hidde 2026-08-25). It opens the one sheet in three steps: the open question first ("What would make it worth paying for?"), then one choice of four, shuffled per person (city walks, offline maps, seasonal alerts, a richer tree log) with "None of these" last, then "Tell me" (signed in only; signed out it opens sign-in and comes back to the step). No price, nothing sold. Designed and agreed with Hidde this session ("het ziet er eigenlijk goed uit zo bouw maar"); the survey rules (open first, one choice, shuffle, a no option, a raised hand) are in PlusAsk.astro's header and CONVENTIONS.md's paywall entry.
+- **Where answers go:** supabase/plus-answers.sql. `plus_answers` is anonymous (no account, session or IP); `plus_waitlist` holds only the account ids that pressed Tell me (deleted with the account). Read with `python3 scripts/plus_answers.py`: a ranking, not a rate; the ideas word for word; ends at 100 answers or six weeks. Not in the digest (a new block needs Hidde's yes).
+- **For Hidde: paste supabase/plus-answers.sql into the Supabase SQL editor.** Until then the sheet works and says thank you, but nothing is stored.
+- **For Hidde: the next app build carries the Plus row** (branch plus-question-app, merged). Seen on the iPhone 17 Pro simulator: city row under Hugo in Lisbon, all three steps, Settings row. Not run: appsweep on both phones, and the web build is CI-only (no Node here), so the web half was checked as code, not rendered.
+- Known gap: signed_out_controls_ask() cannot reach "Tell me" (it sits two steps inside the sheet), so the harness does not cover it; the gate itself is atCollection.gate, as the ambassador seat's.
+
 ## 2026-11-04 daily publish (scheduled): 25 US trees live, Leesburg and Santa Barbara new
 
 - **What went live (commit a6af681b5):** Leesburg, Virginia, new place, 8 trees (lsb_001..008, build_us_east.py); Washington DC 21 -> 33 (wdc_026..035, 040, 041, build_us_east.py, with its new intro, meta and FAQ); Santa Barbara, new place, 5 trees (sbr_001..005, build_us_california.py, the Moreton Bay fig with its photo). Exactly 25 own trees, the pace cap. Copied from dry builds in out/tmp/dry_east and dry_cal, so no other place of those builders moved; leesburg and santa-barbara added to data/us-states.json. preflight 0 problems.
