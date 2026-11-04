@@ -28,6 +28,7 @@ to print.
 import datetime
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.parse
@@ -53,7 +54,10 @@ def fetch(key, days=8):
 
 
 def _when(iso):
-    return datetime.datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    # Postgres drops trailing zeros ("18:16:34.58474"); Python before 3.11
+    # only reads 3 or 6 fraction digits, so pad the fraction to six.
+    iso = re.sub(r"\.(\d{1,6})", lambda m: "." + m.group(1).ljust(6, "0"), iso.replace("Z", "+00:00"))
+    return datetime.datetime.fromisoformat(iso)
 
 
 def group(rows, now=None):
