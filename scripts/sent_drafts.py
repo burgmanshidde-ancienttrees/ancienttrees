@@ -139,7 +139,10 @@ def batch_tags(path):
     if stem.endswith("-preview"):
         stem = stem[:-len("-preview")]
     tags = {stem}
-    if stem.startswith("batch-press-"):          # batch-press-2026-10-30-preview.md
+    # batch-press-2026-10-30-preview.md logs as press-2026-10-30. Every group
+    # does: batch-nature-guide-2026-11-05-preview.md and batch-source-... read
+    # "0 of 12" on 11-05 though all had gone on 11-04, when only press stripped.
+    if stem.startswith("batch-"):
         tags.add(stem[len("batch-"):])
     for name in sorted(tags):
         twin = os.path.join(ROOT, "drafts", "batches", name + ".json")
