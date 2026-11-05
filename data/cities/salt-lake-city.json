@@ -271,6 +271,266 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "slc_008",
+      "name": "The University of Utah Japanese Zelkova",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "not documented",
+      "girth_cm": 389,
+      "height_m": 19.2,
+      "location": {
+        "address": "University of Utah campus, grass area west/north-west of the William Stewart Building (Bld 6), Salt Lake City",
+        "latitude": 40.76345,
+        "longitude": -111.851186,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=japanese-zelkova",
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer, objectid 323)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free, open campus lawn; the University of Utah campus is a designated state arboretum with a self-guided tree tour (QR placards, no ticket).",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; TRAX University line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register row objectid 323 (owner University of Utah, PUBLIC_ACCESS = Yes): circumference 153 in = 389 cm, height 63 ft = 19.2 m, spread 97 ft = 29.6 m, measured 2026, new entry updated 2026-07, state champion status 1. Second source and ground owner: University of Utah Facilities tree tour page for Japanese Zelkova (page last updated 7/29/26) says large specimens stand in the grass area west of the William Stewart Building (Bld 6) or along the south side of Student Services Building (Bld 40), and that the tree west of the Stewart Building is on the Utah Big Tree Registry. So species, location area and register listing are two-source confirmed. Register coordinate (40.76345,-111.851186) is IDENTICAL to the Lacebark Elm row objectid 325 ('west of Crocker Science Center'), so it is a shared campus point, not a trunk fix: precision approximate, a campus is not a small site. Press search summary (not fetched, unverified) said a university piece calls it the largest of its kind in Utah and planted by botanist Walter Cottam; do not use without fetching attheu.utah.edu. Alive: measured 2026-07 area; lifecheck NONE at the pin, nothing independent. No age in sources; none invented. Cluster: the lead file also lists the Chinese Cork Oak, Mongolian Oak, Lacebark Elm, German Ash, and Port Orford Cedar register rows on the same campus within ~500 m, a walkable champion walk.",
+      "story": "This zelkova is ten metres wider than it is tall. Utah's big tree register measured it in 2026 at 19.2 metres high, on a trunk 389 centimetres round, with a crown spreading 29.6 metres, and lists it as the state champion of its species.\n\nThat breadth is the species doing what it does when nothing is in the way. A zelkova typically sends many upright limbs out from a short trunk, fanning like the ribs of a vase, and on an open lawn they keep going. Saw-leaf zelkova comes from Japan, Korea and China. In America it was promoted as a street tree to stand in for the elms that disease killed, so most you meet are young and narrow. This one has had room.\n\nIt grows on the University of Utah campus, which is a designated state arboretum. The university's own self-guided tree tour sends you to the grass west of the William Stewart Building and says the tree there is on the state register. QR placards on the tour stand in for a guide, and there is no ticket.\n\nThe register lists several other state champions within a few hundred metres on the same campus, among them a Chinese cork oak, a Mongolian oak and a lacebark elm, so the zelkova can be the first stop of a short walk rather than the only one.\n\nNo source gives a planting date. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, almost 30 metres across, far wider than the tree is tall. It stands on the grass west of the William Stewart Building, the spot the campus tree tour names.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_009",
+      "name": "The Murray City Arboretum Baldcypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "not documented",
+      "girth_cm": 307,
+      "height_m": 20.4,
+      "location": {
+        "address": "Murray City Park arboretum, 296 E Murray Park Ave, Murray",
+        "latitude": 40.660945,
+        "longitude": -111.884259,
+        "neighbourhood": "Murray City Park"
+      },
+      "verified_sources": [
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory/baldcypress-murray",
+        "https://en.wikipedia.org/wiki/Murray_City_Park",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Utah Community Forest Council directory, objectid 121)",
+        "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/baldcypress-murray"
+      },
+      "access": "Free. Murray City Park (city-owned, 296 E Murray Park Ave) is a public park with an arboretum; park listings (Apple Maps, Yelp) give roughly 6 am to 11 pm daily (not an official city statement).",
+      "transport": "Murray City Park, about 15 km south of downtown Salt Lake City by TRAX (Murray Central, roughly 1.5 km from the park, estimated, not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register row objectid 121 (owner Murray City, PUBLIC_ACCESS = Yes): circumference 121 in = 307 cm, height 67 ft = 20.4 m, spread 50 ft, measured 2026, entry updated 2026-06, nominated 2015, state champion 1, not national. Register-only; Wikipedia confirms the park has an arboretum but nothing names this tree. Flagged: register only, one source. Alive: measured 2026; lifecheck RECENT 2026-07-04 only for the area (an iNaturalist observation near the pin). Pin register-grade, park arboretum is not a small site: approximate. Baldcypress is an eastern US swamp species planted in a Utah arboretum, which is the interest. No age; none invented. Murray arboretum established Arbor Day 1961 per an ActiveRain blog (not a source), do not use. Same arboretum holds register rows for Flowering Pear, Halfelm, Black Alder, Brewer Spruce, Chinese Fringetree within ~100 m (existing open leads). Borderline worth-the-walk: the smallest girth of the three, only ship if the writer needs a Murray point.",
+      "story": "Utah's biggest bald cypress is a swamp tree living in one of the driest states in the country. The species belongs to the wetlands of the American Southeast, the river bottoms and bayous where it grows with its feet in standing water. This one grows in the arboretum of Murray City Park, south of Salt Lake City, on ordinary park ground.\n\nIt seems not to mind. The state's big tree register, which first listed it in 2015, measured it in 2026 at 20.4 metres tall, on a trunk 307 centimetres round, with a crown about 15 metres across, and ranks it the champion of its species in Utah. That is a modest tree by the standards of a Louisiana bayou and a remarkable one for a city park at the foot of the Wasatch.\n\nThe other thing it does is less expected of a conifer. A bald cypress is deciduous. In autumn its soft needles turn copper red and then the whole tree drops them, so through the winter it stands bare, which is where the name comes from.\n\nThe arboretum holds several other trees on the same state register within about a hundred metres, among them a Chinese fringetree, a Brewer spruce and a black alder, so a slow lap of it takes in more than one champion. The park is owned by the city and free to enter.\n\nNobody has recorded when the cypress was planted, and the register gives no age. If you know, tell us.",
+      "how_to_recognise": "You can recognise it in autumn, when its needles turn copper red and fall, which no spruce or pine does. It stands in the arboretum of Murray City Park, about 20 metres tall on a trunk 307 centimetres round.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the needles turn copper red before the whole tree drops them"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_010",
+      "name": "The University of Utah Chinese Cork Oak",
+      "species": "Oriental Cork Oak (Quercus variabilis)",
+      "age_estimate": "not documented",
+      "girth_cm": 196,
+      "height_m": 19.8,
+      "location": {
+        "address": "University of Utah campus, south of the John R. Park Building (Bld 1), Salt Lake City",
+        "latitude": 40.764415,
+        "longitude": -111.848618,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=cork-oak",
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer, objectid 108)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register row objectid 108 (owner University of Utah, PUBLIC_ACCESS = Yes): circumference 77 in = 196 cm, height 65 ft = 19.8 m, spread 60 ft = 18.3 m, measured 2026, state champion status 1 (not national, not heritage). Ground owner's tree tour page (last updated 7/29/26): Tour page: 'Rare. Unique specimen. The tree south of the Park Building (Bld 1) is on the Utah Big Tree Registry.' Species has very thick, ridged, corky bark (tour page). Alive: lifecheck RECENT, iNaturalist observation 2026-08-24 at the pin (https://www.inaturalist.org/observations/394172141), not confirmed to be this trunk; register measured 2026-07 update. Register coordinate 40.764415,-111.848618 is a point near the described spot, not a trunk fix: approximate. No age in any source; none invented. Campus walk: Park Building south group (ash, Mongolian oak, cork oak, European hornbeam lead) lies within ~40 m; zelkova slc_008 and lacebark elm ~110 m to the south-west.",
+      "story": "The university's own tree tour calls this oak a unique specimen, and the state agrees it is the biggest of its kind in Utah. The Utah Big Tree Register measured it in 2026 at 19.8 metres tall, on a trunk 196 centimetres round, with a crown about 18 metres across, and lists it as the state champion.\n\nThe species is an East Asian oak, and the thing to look at is the bark. It grows thick, ridged and corky, soft enough in look to explain the name, although the cork of wine bottles comes from a different oak in the western Mediterranean. Seeing one this size in a high, dry desert valley is the surprise. Salt Lake City is not where anyone would expect an oak from China, Korea and Japan to reach state-record size.\n\nIt stands on the University of Utah campus, south of the John R. Park Building. Within about 40 metres stand two more state champions, a German ash and a Mongolian oak, so the lawn south of the Park Building holds three record trees in a few steps. A saw-leaf zelkova and a lacebark elm, champions too, stand about 110 metres to the south-west.\n\nOur pin is the register's point near the spot, not a fix on the trunk, so read the bark to be sure. Nobody has published when it was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by the bark, thick, ridged and corky, on a trunk about 2 metres round. It stands south of the John R. Park Building, within 40 metres of the champion German ash and Mongolian oak.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_011",
+      "name": "The University of Utah German Ash",
+      "species": "German Ash (Fraxinus holotricha)",
+      "age_estimate": "not documented",
+      "girth_cm": 254,
+      "height_m": 16.5,
+      "location": {
+        "address": "University of Utah campus, south of the John R. Park Building (Bld 1), Salt Lake City",
+        "latitude": 40.764329,
+        "longitude": -111.848548,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=german-ash",
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer, objectid 42)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register row objectid 42 (owner University of Utah, PUBLIC_ACCESS = Yes): circumference 100 in = 254 cm, height 54 ft = 16.5 m, spread 55 ft = 16.8 m, measured 2026, state champion status 1 (not national, not heritage). Ground owner's tree tour page (last updated 7/29/26): Tour page: 'Rare. Only specimen. The tree south of the Park Building (Bld 1) is on the Utah Big Tree Registry.' Naming conflict to flag: the register lists Fraxinus holotricha as 'German Ash'; the tour page uses the same label and says native to south-east Europe. The species is usually called Balkan or Hairy ash, so the name is the register's label. Alive: measured 2026. Register coordinate 40.764329,-111.848548 is a point near the described spot, not a trunk fix: approximate. No age in any source; none invented. Campus walk: Park Building south group (ash, Mongolian oak, cork oak, European hornbeam lead) lies within ~40 m; zelkova slc_008 and lacebark elm ~110 m to the south-west.",
+      "story": "The University of Utah has exactly one of these ashes, and it is the biggest in the state. The campus tree tour calls it rare and the only specimen, and the Utah Big Tree Register lists it as state champion, measured in 2026 at 16.5 metres tall on a trunk 254 centimetres round, with a crown nearly 17 metres across.\n\nThe name needs a footnote. The register and the tour both call it German ash, but Fraxinus holotricha is a tree of south-east Europe, as the tour itself says, and most references call it Balkan ash or hairy ash. We use the register's label so the two match, and the Latin name settles which tree is meant.\n\nWhat makes the stop worth it is the company. The ash stands on the lawn south of the John R. Park Building, and within about 40 metres grow two more state champions, an Oriental cork oak with thick corky bark and a Mongolian oak. Three record trees from three corners of Eurasia, on one patch of grass in a desert city, a few steps apart. A champion saw-leaf zelkova and a lacebark elm stand about 110 metres to the south-west if you want to keep walking.\n\nThe grounds are open and there is no ticket. Our pin is the register's point near the spot rather than a fix on the trunk. Nobody has recorded when it was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it as the stoutest of the three champions south of the John R. Park Building, its trunk 254 centimetres round. The corky-barked cork oak and the slimmer Mongolian oak stand within 40 metres.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_012",
+      "name": "The University of Utah Mongolian Oak",
+      "species": "Mongolian Oak (Quercus mongolica)",
+      "age_estimate": "not documented",
+      "girth_cm": 152,
+      "height_m": 13.1,
+      "location": {
+        "address": "University of Utah campus, south of the John R. Park Building (Bld 1), Salt Lake City",
+        "latitude": 40.76439,
+        "longitude": -111.848852,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=mongolian-oak",
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer, objectid 102)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register row objectid 102 (owner University of Utah, PUBLIC_ACCESS = Yes): circumference 60 in = 152 cm, height 43 ft = 13.1 m, spread 43 ft = 13.1 m, measured 2026, state champion status 1 (not national, not heritage). Ground owner's tree tour page (last updated 7/29/26): Tour page: 'Rare. Only specimen. The tree south of the Park Building (Bld 1) is on the Utah Big Tree Registry.' Slow growing (tour page). Modest girth (152 cm); worth the stop only as part of the Park Building group. Alive: measured 2026. Register coordinate 40.764390,-111.848852 is a point near the described spot, not a trunk fix: approximate. No age in any source; none invented. Campus walk: Park Building south group (ash, Mongolian oak, cork oak, European hornbeam lead) lies within ~40 m; zelkova slc_008 and lacebark elm ~110 m to the south-west.",
+      "story": "This is the smallest of the champions on the University of Utah lawn, and it still holds a state record. The Utah Big Tree Register measured it in 2026 at 13.1 metres tall, on a trunk 152 centimetres round, with a crown exactly as wide as the tree is high, and lists it as the largest Mongolian oak in Utah. The campus tree tour calls it rare and the only specimen on the grounds.\n\nThe size is the story in reverse. Mongolian oak is a tree of north-east Asia, from Siberia's far east through northern China, Korea and Japan, and the tour describes it as slow growing. A trunk that reads as ordinary next to a city park oak is, for this species in this place, as big as anyone has found.\n\nOn its own it would not justify the trip. As part of a group it does. It stands south of the John R. Park Building, and within about 40 metres grow two more state champions, an Oriental cork oak with thick, corky bark and the campus's single German ash. A champion zelkova and lacebark elm stand about 110 metres to the south-west. Five records in a ten-minute walk, all on open grounds with no ticket.\n\nOur pin is the register's point near the spot, not a fix on the trunk. Nobody has published when it was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it as the smallest of the three champions south of the John R. Park Building, its trunk 152 centimetres round and its crown about 13 metres across, as wide as it is tall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_013",
+      "name": "The University of Utah Lacebark Elm",
+      "species": "Lacebark Elm (Ulmus parvifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 259,
+      "height_m": 23.2,
+      "location": {
+        "address": "University of Utah campus, west of the George Thomas Building (Bld 5) / Crocker Science Center area, Salt Lake City",
+        "latitude": 40.76345,
+        "longitude": -111.851186,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=chinese-elm",
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer, objectid 325)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register row objectid 325 (owner University of Utah, PUBLIC_ACCESS = Yes): circumference 102 in = 259 cm, height 76 ft = 23.2 m, spread 60 ft = 18.3 m, measured 2026, state champion status 1 (not national, not heritage). Ground owner's tree tour page (last updated 7/29/26): Tour page: 'The tree west of the George Thomas Building (Bld 5) is on the Utah Big Tree Registry.' Bark exfoliates in mottled patches of gray-green, orange and brown (tour page). Location conflict: the register says west of the Crocker Science Center, the tour says west of the George Thomas Building. Register coordinate is IDENTICAL to the zelkova slc_008 (objectid 323), so it is a shared campus point; two big trees may stand within metres or the point is a placeholder. lifecheck NONE at the pin. Height 76 ft = 23.2 m is large for the species (tour page: 40 to 50 ft typical). Register coordinate 40.763450,-111.851186 is a point near the described spot, not a trunk fix: approximate. No age in any source; none invented. Campus walk: Park Building south group (ash, Mongolian oak, cork oak, European hornbeam lead) lies within ~40 m; zelkova slc_008 and lacebark elm ~110 m to the south-west.",
+      "story": "Lacebark elms usually stop at 12 to 15 metres. This one, by the state's measure, is 23.2. The Utah Big Tree Register recorded it in 2026 at that height, on a trunk 259 centimetres round, with a crown about 18 metres across, and lists it as the state champion of its species. The University of Utah's own tree tour gives 40 to 50 feet as typical, so the register's figure is half again as tall as the species is supposed to grow.\n\nThe bark is the reason to look closely. It flakes away in patches, leaving a mottled trunk of grey-green, orange and brown, which is where the name comes from. The tree is native to China, Korea and Japan, and is often sold as Chinese elm.\n\nWhere exactly it stands needs a caveat. The register places it west of the Crocker Science Center; the campus tour says west of the George Thomas Building. The register's coordinate is also identical to the one it gives for the champion saw-leaf zelkova, so it is a shared campus point rather than a fix on either trunk. Both sources agree on the area, and the two big trees may stand within metres of each other. The mottled bark is how you tell them apart.\n\nThree more champions, a cork oak, a German ash and a Mongolian oak, grow about 110 metres to the north-east, south of the Park Building. Nobody has dated this elm. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the bark, flaking in mottled patches of grey-green, orange and brown. It stands west of the George Thomas Building, the spot the campus tree tour gives; the register says west of the Crocker Science Center.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_014",
+      "name": "The University of Utah Port Orford Cedar",
+      "species": "Port Orford Cedar (Chamaecyparis lawsoniana)",
+      "age_estimate": "not documented",
+      "girth_cm": 239,
+      "height_m": 22.6,
+      "location": {
+        "address": "University of Utah campus, west of the William Stewart Building, 270 S 1400 E, Salt Lake City",
+        "latitude": 40.763882,
+        "longitude": -111.851652,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=lawson-falsecypress",
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer, objectid 151)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register row objectid 151 (owner University of Utah, PUBLIC_ACCESS = Yes): circumference 94 in = 239 cm, height 74 ft = 22.6 m, spread 51 ft = 15.5 m, measured 2018, state champion status 1 (not national, not heritage). Ground owner's tree tour page (last updated 7/29/26): Tour page lists the species as Lawson Falsecypress, 'Uncommon. Can be found west of George Thomas Building (Bld 5)', and does NOT mention the registry for this tree. Register only for this specific specimen; measured 2018 (not updated 2026), so girth and height are 8 years old. Alive: lifecheck RECENT, iNaturalist observation 2025-07-30 at the pin (https://www.inaturalist.org/observations/302362330), not confirmed to be this trunk. Evergreen, so it reads in winter when the others are bare. Register coordinate 40.763882,-111.851652 is a point near the described spot, not a trunk fix: approximate. No age in any source; none invented. Campus walk: Park Building south group (ash, Mongolian oak, cork oak, European hornbeam lead) lies within ~40 m; zelkova slc_008 and lacebark elm ~110 m to the south-west.",
+      "story": "A tree from the fog belt of the Pacific coast has grown into a state record in the Utah desert. Port Orford cedar is native to a narrow strip of south-west Oregon and north-west California, where sea mist keeps it wet most of the year. The Utah Big Tree Register lists this one on the University of Utah campus as the largest in the state, at 22.6 metres tall on a trunk 239 centimetres round, with a crown about 15.5 metres across.\n\nThose numbers are from 2018. The register has not remeasured it since, unlike the other campus champions it updated in 2026, so the figures are eight years old.\n\nThe sources also differ in what they know. The campus tree tour lists the species under its other name, Lawson falsecypress, calls it uncommon and sends you west of the George Thomas Building, but it does not mention the state register for this tree. The register is the one source for the record. Despite the name it is not a true cedar but a cypress relative, with flat sprays of scale leaves.\n\nIn winter it earns the detour twice over. The campus champions around it, the zelkova, the lacebark elm, the oaks and the ash by the Park Building, are all deciduous, and this is the one still green when the rest are bare.\n\nNobody has recorded when it was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it as the evergreen among the campus champions, a conifer about 22 metres tall with flat sprays of scale leaves. It stands west of the George Thomas Building, the spot the campus tree tour gives.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

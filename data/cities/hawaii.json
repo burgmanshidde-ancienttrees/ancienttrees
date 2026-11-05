@@ -240,6 +240,90 @@
         "url": null
       },
       "height_m": 22.6
+    },
+    {
+      "id": "haw_007",
+      "name": "The Royal Banyan of Hulihee Palace",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "about 140 years",
+      "age_min": 136,
+      "age_max": 146,
+      "age_basis": "source",
+      "location": {
+        "address": "Hulihee Palace, 75-5718 Ali'i Drive, Kailua-Kona, HI 96740",
+        "latitude": 19.63944,
+        "longitude": -155.99444,
+        "neighbourhood": "Kailua Village"
+      },
+      "verified_sources": [
+        "https://bigislandnow.com/2022/08/04/our-kuleana-daughters-of-hawaii-working-to-ensure-royal-banyan-tree-continues-to-watch-over-kona/",
+        "https://imagesofoldhawaii.com/along-alii-drive/",
+        "https://dlnr.hawaii.gov/dsp/parks/hawaii/hulihee-palace/"
+      ],
+      "access": "Free to see from Ali'i Drive and the palace lawn; the palace interior needs paid admission by reservation. No source mentions a fee for the grounds.",
+      "transport": "Hele-On buses serve Kailua-Kona along Ali'i Drive; the palace is about 10 minutes on foot from Kailua Pier, and about 15 minutes by car from Kona airport.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Hulihee Palace front lawn",
+        "radius_m": 50
+      },
+      "how_to_recognise": "You can recognise it as the big banyan on the front lawn of Hulihee Palace, facing Ali'i Drive. It stands across the road from Mokuaikaua Church.",
+      "curation_status": "flagged",
+      "facts": [
+        "Cutting from the banyan at Iolani Palace (itself from a seedling from an Indian tree given to King Kalakaua), planted in the 1880s at Hulihee Palace by Queen Kapiolani, hence 'Royal' Banyan. Big Island Now 2022: https://bigislandnow.com/2022/08/04/our-kuleana-daughters-of-hawaii-working-to-ensure-royal-banyan-tree-continues-to-watch-over-kona/",
+        "Images of Old Hawaii: in 1882 Queen Kapiolani brought four trees to Kona; two reportedly banyan cuttings from Iolani Palace, one planted at Hulihee Palace. https://imagesofoldhawaii.com/along-alii-drive/",
+        "Daughters of Hawaii (palace caretakers since 1925) fund its upkeep; 2022 appeal says it needs trimming and an extended maintenance programme.",
+        "The Burgess Moreton Bay fig, planted from the same 1882 gift, fell in Oct 2025 (blocked lead); this banyan was the survivor of the group in town."
+      ],
+      "verify_notes": "Alive: Big Island Now Aug 2022 (tree standing, maintenance fundraising); the only after-2022 check is that no loss was reported when the Burgess fig fell Oct 2025. Two sources agree on 1880s/1882 planting by Queen Kapiolani; ages 136-146 years is the documented planting range, nothing sharper. Pin: Wikipedia palace coordinate (19.63944,-155.99444), approximate; the tree is in front of the palace so the small-site radius is 50 m. May be the register row 1205 (Indian Banyan, girth 2301 cm in the register, 19.64,-155.99, no locality text) but the register gives no locality, so NOT asserted. Girth not recorded here for that reason. Conflict: Images of Old Hawaii says 1882; BIN says 1880s. Not a Moreton Bay fig.",
+      "story": "This banyan is a cutting of a king's tree. Big Island Now, reporting in 2022, traces it to the banyan at Iolani Palace in Honolulu, itself grown from a seedling of an Indian tree given to King Kalakaua, and says Queen Kapiolani planted it here at Hulihee Palace in the 1880s. That lineage is why Kona calls it the Royal Banyan.\n\nImages of Old Hawaii gives the year as 1882 and adds the detail of the delivery. The queen brought four trees to Kona that year, two of them reportedly banyan cuttings from Iolani Palace, and one went into the ground at Hulihee. The two sources agree on the queen and the decade and differ only on how precise to be, so its age sits somewhere between about 136 and 146 years.\n\nIt has outlasted at least one of its travelling companions. A Moreton Bay fig in town, planted from the same 1882 gift, fell in October 2025, and nobody reported any harm to this tree.\n\nThe palace's caretakers, the Daughters of Hawaii, have looked after the house since 1925 and pay for the banyan's upkeep. In 2022 they appealed for funds, saying the tree needed trimming and a longer maintenance programme.\n\nThe palace interior is ticketed. The tree is on the front lawn facing Ali'i Drive, and you can see it from the street for nothing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "haw_008",
+      "name": "The Kailua Pier Banyan",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 120,
+      "age_basis": "source",
+      "location": {
+        "address": "Beside Kailua Pier, Ali'i Drive, Kailua-Kona, HI 96740",
+        "latitude": 19.6395,
+        "longitude": -155.9972,
+        "neighbourhood": "Kailua Village"
+      },
+      "verified_sources": [
+        "https://imagesofoldhawaii.com/along-alii-drive/",
+        "https://www.kona-kohala.com/news/details/kvbid-launches-guided-walking-tours-of-historic-kailua-village"
+      ],
+      "access": "Free. Beside Kailua Pier on the public waterfront. The free Historic Walking Tour of Kailua Village starts at the tree at 9:30am on Wednesdays when a cruise ship is in (announced March 2024).",
+      "transport": "Hele-On buses run to Kailua-Kona; the pier is the village centre, and Hulihee Palace is about 7 minutes away on foot.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Kailua Pier entrance",
+        "radius_m": 50
+      },
+      "how_to_recognise": "You can recognise it as the large banyan right by the entrance to Kailua Pier, where the village walking tour begins. It stands next to the King Kamehameha hotel.",
+      "curation_status": "flagged",
+      "facts": [
+        "Images of Old Hawaii: in 1906 the Maguire family transplanted one of the Kapiolani banyan cuttings; it now stands near the entrance to Kailua Pier. https://imagesofoldhawaii.com/along-alii-drive/",
+        "Kona-Kohala Chamber, 18 March 2024: the Historic Walking Tour begins at the banyan tree (a gift from Queen Kapiolani) adjacent to Kailua Pier. https://www.kona-kohala.com/news/details/kvbid-launches-guided-walking-tours-of-historic-kailua-village",
+        "Same lineage as the Hulihee Palace Royal Banyan (haw_007): both from the 1882 Kapiolani cuttings."
+      ],
+      "verify_notes": "Alive: Chamber page March 2024 treats it as the tour's start point. Age: 1906 transplant is one source (Images of Old Hawaii), so the tree is at least about 120 years since transplant but was already a cutting-grown tree; age_min 100 / max 120 states only the transplant, not true age. Species: source calls it a banyan cutting from Iolani Palace, taken as Indian Banyan; page 2024 says 'banyan', flagged. Pin is the Kamakahonu/pier area (Wikipedia 19.63900,-155.99759) nudged; no tree-level source, approximate.",
+      "story": "This banyan has moved house at least once. Images of Old Hawaii, a local history site, records that in 1906 a Kona family transplanted one of the banyan cuttings Queen Kapiolani had brought to the town in 1882, and that the tree now stands near the entrance to Kailua Pier. That makes it a sibling of the Royal Banyan on the lawn of Hulihee Palace, about seven minutes' walk along Ali'i Drive, both grown from the same royal gift.\n\nThe transplant is the one date anyone has, so the tree is at least 120 years in this spot and was already growing somewhere else before that. How long before, nobody has said. That account rests on a single source.\n\nThe town treats it as its starting line. In March 2024 the Kona-Kohala Chamber announced a free Historic Walking Tour of Kailua Village that begins at the banyan beside the pier, describing the tree as a gift from Queen Kapiolani, and runs on Wednesdays when a cruise ship is in.\n\nIt stands in the middle of the village, next to the King Kamehameha hotel, at the foot of the pier. Nobody has published its girth or height. If you know them, or know where the tree stood before 1906, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

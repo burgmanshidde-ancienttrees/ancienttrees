@@ -1274,6 +1274,80 @@
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 58/H501/RM/12",
         "url": null
       }
+    },
+    {
+      "id": "rom_032",
+      "name": "The Holm Oak of Piazza Gregoriopoli",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 95 years (by residents' account)",
+      "age_min": 80,
+      "age_max": 130,
+      "age_basis": "derived",
+      "girth_cm": 360,
+      "height_m": 18,
+      "masaf_code": "72/H501/RM/12",
+      "location": {
+        "address": "Piazza Gregoriopoli 1, Ostia Antica, Rome",
+        "latitude": 41.760265,
+        "longitude": 12.302623,
+        "neighbourhood": "Ostia Antica (borgo)"
+      },
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Piazza Gregoriopoli",
+        "radius_m": 30
+      },
+      "pin_source": "MASAF register coordinate (41.760194, 12.302611) and the RAMI page coordinate (41.760265, 12.302623), 8 m apart; both in the square, no tree-level fix",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/18013-leccio-ostia-antica-leccio-roma-rm-lazio",
+        "https://canaledieci.it/2022/03/29/ostia-antica-leccio-secolare-piazza-grogoriopoli-rifa-look/",
+        "https://www.romatoday.it/zone/ostia/nuove-aree-scolastiche-albero-monumentale.html",
+        "https://www.ilfaroonline.it/2022/02/09/ostia-antica-mutilato-un-leccio-secolare-cittadini-sul-piede-di-guerra/452740/"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "72/H501/RM/12",
+        "url": "https://ilregistrodeglialberi.it/18013-leccio-ostia-antica-leccio-roma-rm-lazio"
+      },
+      "access": "Free, in an open public square of the Ostia Antica borgo, at all times. The excavations (separate ticket) are not needed to see the tree.",
+      "transport": "Roma-Lido (Metromare) from Piramide to Ostia Antica station, about 25 minutes with trains every 15 to 20, then about 10 minutes on foot to the borgo; allow 35 to 40 minutes from central Rome. Station works may change times.",
+      "curation_status": "flagged",
+      "verify_notes": "Two independent kinds of source: MASAF national register (sheet 72, girth 3.60 m at 130 cm, height 18 m, measured and registered 04/03/2026, health 'sufficiente') and local news. Canale Dieci 29/03/2022: Municipio X gardens service removed dead limbs from the 'leccio centenario'; Il Faro Online 09/02/2022: residents protested loss of the largest limb, Municipio said it had become dangerous. RomaToday 09/04/2026: one of three Municipio X trees granted the monumental title in October 2025 on a citizens' nomination. Alive: healthy rating and measurement in March 2026, pruning 2022. Age: no measured age. Residents say it was planted 21 April 1930 at the inauguration of the Ostia Antica gardens (now Parco dei Ravennati and Giardino Filippo Iaia), with three coevals; oral account only, so the age is a loose derived figure. A square redevelopment plan was announced in 2022 to make the oak its emblem; status unchecked. No photo found (Commons geosearch 250 m and text search, iNaturalist 250 m: none). OSM unchecked, Overpass unreachable. Pin is approximate; findable via small site plus recognition facts. Earlier rejection as 40 minutes out was too pessimistic.",
+      "recognition_facts": [
+        "It is the biggest tree rooted in Piazza Gregoriopoli itself (register note: 'the most imposing individual in the square'), reached by turning off Viale dei Romagnoli into the square.",
+        "The square is the small open piazza of the old walled borgo, roughly 100 m east of the Castello di Giulio II and the church of Sant'Aurea by coordinates; the oak is a large evergreen with a broad crown that was lightened of dead limbs in 2022.",
+        "A single stem (register: not multi-stemmed) with a girth of 3.60 m, about 18 m tall, standing among younger trees in the square."
+      ],
+      "facts_for_story": [
+        {
+          "fact": "Residents say it was planted on 21 April 1930, when the then head of government inaugurated the Ostia Antica gardens, with three coevals nearby (oral account).",
+          "url": "https://canaledieci.it/2022/03/29/ostia-antica-leccio-secolare-piazza-grogoriopoli-rifa-look/"
+        },
+        {
+          "fact": "Girth 3.60 m, height 18 m, measured 4 March 2026; health rated sufficient.",
+          "url": "https://ilregistrodeglialberi.it/18013-leccio-ostia-antica-leccio-roma-rm-lazio"
+        },
+        {
+          "fact": "In 2022 residents' committees fought for its care and for monumental status; the Municipio X gardens service removed its dead limbs.",
+          "url": "https://canaledieci.it/2022/03/29/ostia-antica-leccio-secolare-piazza-grogoriopoli-rifa-look/"
+        },
+        {
+          "fact": "Granted the national monumental-tree title in October 2025 after a citizens' nomination backed by Municipio X, one of three in the municipio.",
+          "url": "https://www.romatoday.it/zone/ostia/nuove-aree-scolastiche-albero-monumentale.html"
+        },
+        {
+          "fact": "The register note says residents shelter under its crown in hot summers.",
+          "url": "https://ilregistrodeglialberi.it/18013-leccio-ostia-antica-leccio-roma-rm-lazio"
+        }
+      ],
+      "story": "This oak became a national monument because the neighbours asked. In October 2025 Italy granted it the monumental-tree title on a citizens' nomination backed by Municipio X, one of three trees in the municipio to get it, and a measurement in March 2026 put it at 3.60 metres round and 18 metres tall, its health rated sufficient.\n\nThe campaign started with a loss. In February 2022 residents of the Ostia Antica borgo protested when the oak's largest limb came off; the municipio said it had become dangerous. A month later the gardens service removed the dead wood, and residents' committees kept pressing for its care and for the title it now holds. The register note says people shelter under its crown in hot summers, which explains the attachment better than any plaque.\n\nIts age rests on memory. Residents say it was planted on 21 April 1930, when the head of government of the day inaugurated the gardens of Ostia Antica, with three others of the same age nearby. Nobody has put that in writing beyond their account, so read it as roughly 95 years, by local tradition.\n\nIt is the biggest tree in the little square of the walled borgo, a short walk from the Castello di Giulio II and the excavations. The ruins need a ticket; the oak does not. The Roma-Lido line from Piramide reaches Ostia Antica in about 25 minutes.",
+      "how_to_recognise": "You can recognise it as the biggest tree rooted in Piazza Gregoriopoli, a single-stemmed evergreen oak 3.6 metres round with a broad crown. It stands in the small square of the old borgo, off Viale dei Romagnoli.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "hero_tree_id": "rom_001"

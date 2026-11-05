@@ -1428,6 +1428,197 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "chi_040",
+      "story": "This sycamore holds a crown 30 metres wide on a trunk only 2.42 metres round, and the Forest Preserves of Cook County rank it third among the sycamores on their land. They measured it on 7 December 2023 at 34.1 metres tall, 112 feet, with the crown about 30.5 metres one way and 24 the other.\n\nSet it beside the county champion at Riverside Lawn, also on this page, and the two look like different ideas of the same tree. The champion is 41.5 metres tall on a trunk 3.91 metres round. This one gives up seven metres of height and a metre and a half of girth, and still spreads nearly as wide. Further north, the state champion sycamore of Wisconsin in downtown Fond du Lac is 6.48 metres round, well over twice this trunk.\n\nIt stands in McClaughrey Springs Woods, about half a kilometre from the second-ranked white oak there, which is heavier in the trunk than the county's champion white oak. The black walnut with the widest crown on this page is about 1.5 kilometres away in Swallow Cliff Woods, so the three make a good morning in the south-west preserves.\n\nThe register is the only source and gives no age. A visitor recorded a tree beside it in October 2026, which suggests, but does not prove, that this one is still standing. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by its crown, about 30 metres across, on a slim trunk 2.42 metres round and 34.1 metres tall. It stands at the register's point in McClaughrey Springs Woods.",
+      "name": "The Third-Ranked Sycamore of McClaughrey Springs Woods",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 242,
+      "height_m": 34.1,
+      "location": {
+        "address": "McClaughrey Springs Woods, Forest Preserves of Cook County, Illinois",
+        "latitude": 41.678015,
+        "longitude": -87.845273,
+        "neighbourhood": "McClaughrey Springs Woods"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D49&outFields=*&f=json",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register",
+        "url": "https://fpdcc.com/nature/champion-tree-register/"
+      },
+      "access": "Public forest preserve, free; the register lists Public_Access = Yes. Hours not checked for this site.",
+      "transport": "Not verified. Forest Preserves site; check Metra or Pace routes before going.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Forest Preserves of Cook County Champion Tree Register (owner of the ground), objectid 49: rank #3 sycamore in the county, circumference 95.4 in (242 cm), height 112 ft (34.1 m), measured 2023-12-07, crown spread 100 by 78 ft, score 229.65, Public_Access = Yes. Coordinates are the register's GNSS fix at the tree. Units read from the field names and sanity-checked (girth/height plausible for the species). No age in the register; none derived. Register only, one source (US: one credible source is enough). Life check RECENT: iNaturalist observation within the radius dated 2026-10-06 (https://www.inaturalist.org/observations/406624527), not confirmed to be this trunk. Height 34.1 m is exceptional for a sycamore among the Cook County champions; the Riverside Lawn sycamore (chi_024) is 41.5 m but 391 cm round. Nearby trees we hold: chi_012 The White Oak of McClaughrey Springs Woods about 0.5 km; chi_033 The Second-Ranked Black Walnut of Swallow Cliff Woods 1.5 km.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "chi_041",
+      "story": "The second-best black cherry in Cook County is 5.4 metres taller than the best. The Forest Preserves of Cook County measured this one in Swallow Cliff Woods on 24 July 2023 at 34.7 metres, 114 feet, which makes it the tallest black cherry on our map. Their champion at Camp Ground Road Woods stops at 29.3 metres, and Wisconsin's state champion, by the Kettle Moraine forest headquarters, at 32.\n\nIt loses on the trunk. This one is 2.41 metres round; the champion is 3.35, almost a metre more. The county scores a tree by adding its girth in inches, its height in feet and a quarter of its crown, and those 37 inches of trunk outweigh 18 feet of height. This cherry's crown is slim as well, about 13 metres one way and under 9 the other, so it reads as a tall, narrow tree rather than a broad one.\n\nSwallow Cliff Woods holds more of this page. The second-ranked black walnut, whose crown is the widest here, stands about half a kilometre away, and the county's champion shagbark hickory is in the same preserve.\n\nThe register is the only source, and it gives no age. We found no recent photograph, but the register's measurement is from 2023 and the record was updated in December 2025.",
+      "name": "The Second-Ranked Black Cherry of Swallow Cliff Woods",
+      "species": "Black Cherry (Prunus serotina)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 241,
+      "height_m": 34.7,
+      "location": {
+        "address": "Swallow Cliff Woods, Forest Preserves of Cook County, Illinois",
+        "latitude": 41.680928,
+        "longitude": -87.863698,
+        "neighbourhood": "Swallow Cliff Woods"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D52&outFields=*&f=json",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register",
+        "url": "https://fpdcc.com/nature/champion-tree-register/"
+      },
+      "access": "Public forest preserve, free; the register lists Public_Access = Yes. Hours not checked for this site.",
+      "transport": "Not verified. Forest Preserves site; check Metra or Pace routes before going.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its height, 34.7 metres on a slim trunk 2.41 metres round, under a narrow crown about 13 by 9 metres. It stands at the register's point in Swallow Cliff Woods.",
+      "verify_notes": "Forest Preserves of Cook County Champion Tree Register (owner of the ground), objectid 52: rank #2 black cherry in the county, circumference 94.8 in (241 cm), height 114 ft (34.7 m), measured 2023-07-24, crown spread 43.6 by 28.2 ft, score 217.775, Public_Access = Yes. Coordinates are the register's GNSS fix at the tree. Units read from the field names and sanity-checked (girth/height plausible for the species). No age in the register; none derived. Register only, one source (US: one credible source is enough). Life check NONE (no recent geotagged photo or observation in reach); register measured 2023-07-24 and edited 2025-12, so recent. At 34.7 m this is taller than the county champion black cherry already held (chi_031, Camp Ground Road Woods); check the register for that tree before the writer compares them. Nearby trees we hold: chi_033 The Second-Ranked Black Walnut of Swallow Cliff Woods about 0.5 km.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "chi_042",
+      "story": "This white pine has a thicker trunk than the county's champion and is almost ten metres shorter. The Forest Preserves of Cook County measured it in Swallow Cliff Woods on 1 August 2023 at 2.82 metres round and 19.5 metres tall, 64 feet, and ranked it third among the white pines on their land.\n\nThe champion, at Busse Forest North on this page, is 2.63 metres round and 29.3 metres tall. This tree is about 19 centimetres thicker and wider in the crown too, about 20 metres one way and 16 the other against the champion's 16 by 10. It is a squat, broad pine where the champion is a tall, slim one, and the county's scoring, which counts height in feet and girth in inches, rewards the champion's ten metres.\n\nWhite pine is rare in Cook County, which makes two of them on one page a small event. They are not the biggest of their kind we know. In the Nicolet National Forest in northern Wisconsin, the state register records a white pine 47.9 metres tall, more than twice this one's height.\n\nSwallow Cliff Woods holds more of this page within a short walk. The second-ranked black walnut is about 400 metres away. The register is the only source, and it gives no age; someone recorded a tree nearby in May 2026.",
+      "name": "The Third-Ranked Eastern White Pine of Swallow Cliff Woods",
+      "species": "Eastern White Pine (Pinus strobus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 282,
+      "height_m": 19.5,
+      "location": {
+        "address": "Swallow Cliff Woods, Forest Preserves of Cook County, Illinois",
+        "latitude": 41.67465,
+        "longitude": -87.8603,
+        "neighbourhood": "Swallow Cliff Woods"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D53&outFields=*&f=json",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register",
+        "url": "https://fpdcc.com/nature/champion-tree-register/"
+      },
+      "access": "Public forest preserve, free; the register lists Public_Access = Yes. Hours not checked for this site.",
+      "transport": "Not verified. Forest Preserves site; check Metra or Pace routes before going.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as a broad, low white pine, 19.5 metres tall on a trunk 2.82 metres round, with a crown about 20 metres across. It stands at the register's point in Swallow Cliff Woods.",
+      "verify_notes": "Forest Preserves of Cook County Champion Tree Register (owner of the ground), objectid 53: rank #3 white pine in the county, circumference 111 in (282 cm), height 64 ft (19.5 m), measured 2023-08-01, crown spread 65 by 51.5 ft, score 189.56, Public_Access = Yes. Coordinates are the register's GNSS fix at the tree. Units read from the field names and sanity-checked (girth/height plausible for the species). No age in the register; none derived. Register only, one source (US: one credible source is enough). Life check RECENT: iNaturalist observation within the radius dated 2026-05-26 (https://www.inaturalist.org/observations/365535400), not confirmed to be this tree. White pine is rare in Cook County; the Busse Forest North champion is chi_036. Nearby trees we hold: chi_033 The Second-Ranked Black Walnut of Swallow Cliff Woods about 0.4 km.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "chi_043",
+      "story": "Cook County ranks this pin oak only third, and it is taller than the champion. The Forest Preserves of Cook County record it in Schiller Woods at 29.3 metres, 96 feet, on a trunk 2.79 metres round, with a crown about 19 metres one way and 16 the other.\n\nAll three of the county's top pin oaks are now on this page, and they rank in an order you would not guess by eye. The champion at Rolling Knolls is the shortest of them at 29 metres, but it is 3.59 metres round with a crown about 26 metres across, and the county's score adds trunk, height and crown together. The second, at St. Paul Woods, is the tallest at 31.7. This one sits in between on height and last on girth, which is where it loses. For a pin oak of real bulk, the Wisconsin state champion in Madison's Camp Randall Memorial Park is 3.94 metres round.\n\nIn October the leaves turn dark red to russet, the pin oak's best season. Schiller Woods also holds the American elm on this page, about 800 metres away, so the two make a short walk along the preserve.\n\nThe register is the only source and gives no age. It also carries no measurement date, though the record was last updated in April 2025, and we found no recent photograph of this tree. If you have seen it, tell us.",
+      "name": "The Third-Ranked Pin Oak of Schiller Woods",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 279,
+      "height_m": 29.3,
+      "location": {
+        "address": "Schiller Woods, Forest Preserves of Cook County, Illinois",
+        "latitude": 41.958867,
+        "longitude": -87.848379,
+        "neighbourhood": "Schiller Woods"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D242&outFields=*&f=json",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register",
+        "url": "https://fpdcc.com/nature/champion-tree-register/"
+      },
+      "access": "Public forest preserve, free; the register lists Public_Access = Yes. Hours not checked for this site.",
+      "transport": "Not verified. Forest Preserves site; check Metra or Pace routes before going.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its height, 29.3 metres on a trunk 2.79 metres round, under a crown about 19 by 16 metres. It stands at the register's point in Schiller Woods.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the leaves turn dark red to russet"
+      },
+      "verify_notes": "Forest Preserves of Cook County Champion Tree Register (owner of the ground), objectid 242: rank #3 pin oak in the county, circumference 109.9 in (279 cm), height 96 ft (29.3 m), no measurement date in the record (record edited 2025-04), crown spread 62 by 53 ft, score 220.275, Public_Access = Yes. Coordinates are the register's GNSS fix at the tree. Units read from the field names and sanity-checked (girth/height plausible for the species). No age in the register; none derived. Register only, one source (US: one credible source is enough). Life check NONE (no recent geotagged photo or observation in reach); record last edited 2025-04. The American Elm of Schiller Woods (chi_026) stands about 0.8 km away, so the two make a short walk; Rolling Knolls pin oak is chi_017 and St. Paul Woods chi_039. Nearby trees we hold: chi_026 The American Elm of Schiller Woods about 0.8 km; chi_005 Red Pine of Indian Boundary 2.2 km.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "chi_044",
+      "story": "The oak Northwestern University's landscape architect chose as her favourite on campus is neither the tallest nor the widest. What it may have is age. In the university's magazine in 2018 she put this bur oak at perhaps 250 years, which would mean it was already growing in the 1770s, and a student nature magazine repeated the figure in 2022.\n\nHer reasoning is in its branches. They grow out horizontally, and she reads that as a sign that it is one of the last survivors of the oak savanna that covered the south end of the campus before the university was built. That is a judgement by someone who has looked after these grounds since 1984, not a ring count, so we keep the age broad, somewhere between 200 and 300 years.\n\nThe campus has lost its great trees before. The Old Oak, a white oak near University Hall, died in 1904 at an estimated 500 years or more, by the same magazine's account. If the landscape architect is right, this bur oak is among the last of the trees that were here before the campus.\n\nIt stands on the university's grounds just east of 1835 Hinman, a student residence, across Sheridan Road from Fisk Hall in Evanston. Nobody has published its girth or height. The CTA Purple Line and Metra both run to Evanston from the Loop, with stops at Foster and Davis, and from either it is a walk to Sheridan Road.",
+      "name": "The Old Bur Oak by 1835 Hinman, Northwestern University",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 200,
+      "age_max": 300,
+      "age_basis": "source",
+      "girth_cm": null,
+      "height_m": null,
+      "place": "Evanston (day trip from Chicago)",
+      "day_trip": true,
+      "location": {
+        "address": "Just east of 1835 Hinman (student residence), across Sheridan Road from Fisk Hall, Northwestern University, Evanston, Illinois",
+        "latitude": 42.04998,
+        "longitude": -87.6745,
+        "neighbourhood": "Northwestern University, Evanston"
+      },
+      "verified_sources": [
+        "https://magazine.northwestern.edu/features/roots-northwesterns-oaks",
+        "https://www.inournaturemag.com/all/2022/12/16/a-visual-guide-to-northwesterns-trees"
+      ],
+      "access": "Northwestern's Evanston campus grounds beside Sheridan Road; access not confirmed from a published university policy (flagged).",
+      "transport": "Not verified by timetable: Evanston is reached by CTA Purple Line or Metra UP-North from the Loop; nearest stops are Foster (Purple) and Davis (Purple, Metra), walk to Sheridan Road at Hinman and travel time not timed by us.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its branches, which grow out sideways rather than up. It stands just east of 1835 Hinman, across Sheridan Road from Fisk Hall.",
+      "verify_notes": "Northwestern Magazine, Fall 2018 (the owner of the ground): the university's landscape architect, in post since 1984, names a bur oak just east of 1835 Hinman, across Sheridan Road from Fisk Hall, as her favourite oak and 'one of the oldest, perhaps 250 years'; she believes it is one of the last survivors of the original oak savanna at the south end of the campus because its branches grow horizontally. A 2022 student nature magazine piece (In Our Nature, likely derived from the same source) repeats 'roughly 250 years' and adds it is 'not the tallest nor the widest oak' on campus. Age is an estimate by the grounds keeper, not cored; recorded as stated, range kept broad. No girth or height in either source. Pin is the OSM building 1835 Hinman (42.04998,-87.67544) shifted slightly east toward Sheridan Road: approximate, NOT a tree fix; no OSM tree node reachable (Overpass unreachable at the time). Alive: described in the present tense in 2018 and 2022; lifecheck NONE for the tree itself (RECENT hit was a park photo 30 m away). One credible source plus a derived repeat, flagged one source. Context: the campus Old Oak, a white oak near University Hall, died in 1904 at an estimated 500+ years (same magazine), and a private-garden bur oak in Evanston dated at about 600 years by the city arborist (2013 Patch article) is on private land and not shippable. Findability: the recognition line must lean on 'just east of 1835 Hinman, across Sheridan Road from Fisk Hall' and horizontal branching.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

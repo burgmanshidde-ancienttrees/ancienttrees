@@ -345,6 +345,40 @@
         "label": "chestnuts in spiny burs, ripe and gatherable in October",
         "kind": "fruit"
       }
+    },
+    {
+      "id": "sin_006",
+      "name": "The Plane Tree of the Capuchos Convent Yard",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Convento dos Capuchos, Estrada dos Capuchos / EN 247-3, 2705-177 Colares",
+        "latitude": 38.78439,
+        "longitude": -9.43814,
+        "neighbourhood": "Serra de Sintra, Colares"
+      },
+      "verified_sources": [
+        "https://visitsintra.travel/en/visit/monuments/capuchos-convent",
+        "https://slowtravelblog.com/convent-of-the-capuchos/"
+      ],
+      "access": "Paid entry. The Convento dos Capuchos is a Parques de Sintra monument; opening times and prices at https://www.parquesdesintra.pt/en/plan-your-visit/opening-times-and-prices/.",
+      "transport": "On the Sintra to Colares road in the Serra de Sintra, well outside the town centre; reached by bus or car.",
+      "paid_entry": true,
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Convent yard, Convento dos Capuchos",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Species string normalised to the site's canonical London Plane (Platanus x acerifolia); the one source says plane tree, Platanus x hispanica in the verify pass. ONE SOURCE, FLAGGED. Visit Sintra (Camara Municipal de Sintra tourism site, fetched) lists as 'notable isolated specimens cultivated by Man' the leafy plane tree covering the convent yard, the old ash tree in the entrance patio, and unusually large boxwood along the paths. The same page calls the convent forest, with its old oaks, probably the most important example of Sintra's old-growth mountain woods. Convent built 1560 (Visit Sintra), abandoned by 1834. Page GPS for the convent: 38 47 03.8 N, 9 26 17.3 W = 38.78439, -9.43814; this is the monument point, not the trunk, so approximate with a small named site. CONFLICT: Slow Travel Blog and Portugalwander say the Courtyard of the Crosses (first space a visitor enters, three crosses for Golgotha) is centred on a large tree without naming species; one personal blog says a cork oak. Unresolved whether the Courtyard of the Crosses is the 'convent yard' with the plane tree or the 'entrance patio' with the ash. No girth, height or age found anywhere, so none given; the page asks the reader. Alive: lifecheck.py RECENT, iNaturalist observation 2026-10-04 within range (https://www.inaturalist.org/observations/407010157), which is not confirmed to be this tree. Species is not seen on any second page. Ground managed by Parques de Sintra; owner-page corroboration looked for and not found naming the tree.",
+      "story": "In a convent built into one of Sintra's oldest woods, this plane is one of the few trees somebody planted. The municipal tourism site names three notable specimens at the Capuchos Convent cultivated by people, the leafy plane that covers the convent yard, an old ash in the entrance patio and boxwood grown unusually large along the paths. Around them is the forest, and the same page calls its old oaks probably the most important example of the old mountain woods of Sintra.\n\nThe convent went up in 1560 and was abandoned by 1834. Nobody has recorded when the plane went in, and no girth, height or age for it has been published anywhere, so its age is an open question. If you know, tell us.\n\nThe species also rests on that one page. Visitors describe a large tree at the centre of the Courtyard of the Crosses, the first space you walk into, where three crosses stand for Golgotha. They do not name it, and one blog calls that tree a cork oak. Whether the Courtyard of the Crosses is the yard with the plane or the patio with the ash, no source says. If you stand there, a photograph would answer it.\n\nThe convent is a Parques de Sintra monument with paid entry, so check the opening times and prices before you go. It lies on the road from Sintra to Colares in the Serra de Sintra, well outside the town, by bus or car.",
+      "how_to_recognise": "You can recognise it by the leafy crown that covers the convent yard. It stands inside the Capuchos Convent; the old ash is in the entrance patio, and large boxwood lines the paths."
     }
   ]
 }

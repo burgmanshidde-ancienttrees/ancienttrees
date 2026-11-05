@@ -205,6 +205,202 @@
       "location_precision": "approximate",
       "paid_entry": true,
       "how_to_recognise": "Not one trunk but a colonnade about thirty metres high, its aerial roots set into columns you walk in among rather than around."
+    },
+    {
+      "id": "tfe_005",
+      "name": "Drago de San Antonio",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "roughly 225 years",
+      "age_min": 200,
+      "age_max": 250,
+      "girth_cm": 830,
+      "height_m": 18,
+      "location": {
+        "address": "Plaza José Manuel Cabrera, Calle del Amparo, Icod de los Vinos",
+        "latitude": 28.36536,
+        "longitude": -16.72058,
+        "neighbourhood": "Icod de los Vinos"
+      },
+      "verified_sources": [
+        "https://www.tenerife.es/w/drago-de-san-antonio",
+        "https://www.openstreetmap.org/node/2556557059",
+        "https://commons.wikimedia.org/wiki/Category:Drago_de_San_Antonio",
+        "https://www.wikidata.org/wiki/Q135580408"
+      ],
+      "official_register": {
+        "name": "Cabildo de Tenerife, catalogue of monumental trees (insular protection)",
+        "url": "https://www.tenerife.es/w/drago-de-san-antonio"
+      },
+      "access": "Free. A public plaza (Plaza José Manuel Cabrera) on Calle del Amparo, uphill from the Drago Milenario, next to the health centre; no entry fee, always open.",
+      "transport": "On foot from central Icod de los Vinos, a few minutes uphill from the Drago Milenario park; Icod is roughly 20 km west of Puerto de la Cruz and a car is the realistic way to reach the town.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Register-based (Cabildo catalogue: insular protection, public land). Cabildo gives height 18 m (OSM node says 16 m, Wikidata 16 m), perimeter 830 cm, 8 m of clean trunk and 5 m of branches, six branches from the first fork, 14-15 branching levels so age estimated 225 years (branch counting, so broad). Peculiarity per Cabildo: it stands after very deep cuts: a near-horizontal uncovered cut on the south side, two wedge-shaped cuts on the north filled with concrete and stones, propped by four tensor cables at the first fork; base rot on the SE face with insect attack; epiphytic Ficus microcarpa growing on it. Cabildo history note: about 35 years before the record, the landowner (D. Antonio Perez, who wanted to build there) had a man start cutting it with a chainsaw, halfway through someone stopped him. Vandal fire at the base on 10 Feb 2022, put out in time, a cement patch covers it. Cabildo describes the state as lamentable, held up by cables. Pin: Cabildo's own Google Maps link (28.3653575,-16.7205928) agrees within about 5 m with the OSM natural=tree node (28.3653617,-16.7205843, tagged with Wikidata Q135580408 and a 'monument=tree' tag) and with Commons photos geotagged 28.36531,-16.72055 taken 6 July 2025, so confirmed. Alive: Commons photos 6 July 2025 and an iNaturalist observation dated 2026-10-24 found nearby by lifecheck (RECENT; not checked that it is this trunk). Not to be confused with the Drago Milenario (tfe_001) ~200 m away. Only one named source other than OSM-derived entries; 'register only' plus recent photos.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/ESP_Tenerife%2C_Icod_de_los_Vinos%2C_Plaza_Jos%C3%A9_Manuel_Cabrera_0005.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "-wuppertaler",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:ESP_Tenerife,_Icod_de_los_Vinos,_Plaza_Jos%C3%A9_Manuel_Cabrera_0005.jpg",
+        "status": "approved"
+      },
+      "photo_verdict": "Whole Drago de San Antonio under a blue sky, umbrella crown and the steel collar with its tensor cables at the first fork (as the Cabildo record describes); filename names Plaza Jose Manuel Cabrera; light OK. Six other files: distant, trunk close-up, crown-only or WEAK light.",
+      "story": "Somebody once took a chainsaw to this dragon tree, and somebody else stopped him halfway through. The Cabildo de Tenerife's record tells it plainly. The owner of the land, who wanted to build there, had a man start cutting, and the cut was abandoned part of the way in. The record dates that to about 35 years before it was written.\n\nThe tree carries the evidence. There is a near-horizontal open cut on its south side and two wedge-shaped cuts on the north filled with concrete and stones. Four tensor cables hold it together at the first fork. On 10 February 2022 a vandal lit a fire at its base, which was put out in time and is now covered by a cement patch. The Cabildo calls its state lamentable, and lists rot at the base and an Indian laurel fig growing on it as an epiphyte.\n\nIt is still enormous. The Cabildo gives 18 metres of height, where other records say 16, and a perimeter of 8.3 metres, with eight metres of clean trunk before six branches leave the first fork. Dragon trees grow no annual rings, so the Cabildo counts the levels at which the crown has forked, 14 or 15 here, and puts it at roughly 225 years, a broad estimate.\n\nIt stands free to visit in Plaza José Manuel Cabrera on Calle del Amparo, a few minutes uphill from the Drago Milenario and in its shadow in every sense but the literal one.",
+      "how_to_recognise": "You can recognise it by the steel collar and four tensor cables at its first fork, and the cement patch at its base. It stands in Plaza José Manuel Cabrera on Calle del Amparo, next to the health centre."
+    },
+    {
+      "id": "tfe_006",
+      "name": "Drago del Cristo",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "roughly 200 to 230 years",
+      "age_min": 200,
+      "age_max": 230,
+      "girth_cm": 430,
+      "height_m": 11,
+      "location": {
+        "address": "Plaza Oscar Dominguez, at the edge of Tacoronte on the road towards Tejina (Carretera General Tejina-Tacoronte)",
+        "latitude": 28.48172,
+        "longitude": -16.41056,
+        "neighbourhood": "Tacoronte"
+      },
+      "verified_sources": [
+        "https://www.tenerife.es/w/drago-del-cristo",
+        "https://es.wikipedia.org/wiki/Tacoronte_(capital_municipal)",
+        "https://es.wikipedia.org/wiki/Tacoronte",
+        "https://www.openstreetmap.org/node/1350827899",
+        "https://commons.wikimedia.org/wiki/Category:Drago_Centenario_Tacoronte"
+      ],
+      "official_register": {
+        "name": "Cabildo de Tenerife, catalogue of monumental trees (insular protection)",
+        "url": "https://www.tenerife.es/w/drago-del-cristo"
+      },
+      "access": "Free. Stands in a public plaza (Plaza Oscar Dominguez) at the exit of Tacoronte town towards Tejina, always open.",
+      "transport": "At the edge of Tacoronte town on the road towards Tejina, in the north of Tenerife; a car is the realistic way, public bus times not checked.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Cabildo catalogue: height 11 m, perimeter 430 cm, public land, insular protection, 12 branching levels so age estimated 200-230 years (branch counting, broad). Spanish Wikipedia (Tacoronte pages, citing an older Cabildo page) gives 11.5 m and a 6.2 m perimeter with the same 200-230 years: GIRTH CONFLICT 430 vs 620 cm (probably different heights of measurement or an older record), recorded 430 from the current Cabildo ficha. Cabildo notes on its decline: houses built around it from the 1975 photos on, the ravine channelled, a 1 m wall built round the base with soil covering the base of the trunk; the crown grew heavy and unbalanced and a part split off on 28 May 1991 (the ficha even suggests transplanting it). Wikipedia calls it centenarian and one of the municipality's monumental trees in the Plaza Oscar Dominguez. Pin: Cabildo's Google Maps link (28.4817158,-16.4105617), OSM natural=tree node 'Drago' (28.4817206,-16.4105845) and a Commons photo geotagged 28.481655,-16.41064 titled 'Drago Centenario Tacoronte' (taken 2023-04-11) all within about 10 m: confirmed. Alive: Commons photos 2023-04-11 (lifecheck RECENT 2023). Not seen since: check a newer photo if the page is built. The decline notes mean a reader may find it propped or altered.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/At_Tenerife_2023_359.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Mike Peel",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2023_359.jpg",
+        "status": "approved"
+      },
+      "photo_verdict": "Drago del Cristo whole, a dense rosette crown above the rusted steel collar round its base, geotagged about 10 m from the Cabildo pin and titled Drago Centenario Tacoronte; light OK.",
+      "story": "Its own protection record suggests moving it. The Cabildo de Tenerife's file on the Drago del Cristo reads like a case history of a tree the town grew up around. Photographs from 1975 onward show houses going up beside it. The ravine next to it was channelled. A wall about a metre high was built round the base and filled with soil, burying the foot of the trunk. The crown grew heavy and lopsided, and on 28 May 1991 part of it split away. The file goes as far as raising the idea of transplanting it.\n\nIt is still standing in Plaza Óscar Domínguez, at the edge of Tacoronte on the road to Tejina. Spanish Wikipedia calls it one of the town's monumental trees. The Cabildo gives 11 metres of height and a perimeter of 4.3 metres. Wikipedia, citing an older Cabildo page, gives 11.5 metres and 6.2 metres round. Both may be right, measured at different heights or years, but nobody has said which.\n\nThe age comes from the crown, because dragon trees grow no annual rings. The Cabildo counts twelve levels of forking and puts it at roughly 200 to 230 years, which places its seedling years around the end of the eighteenth century, give or take.\n\nThe most recent dated photographs are from April 2023, and given its history a visitor may find it propped or altered. If you have seen it since, tell us. The plaza is free and always open.",
+      "how_to_recognise": "You can recognise it by the dense rosette crown above a rusted steel collar round the base. It stands in Plaza Óscar Domínguez, at the edge of Tacoronte on the road towards Tejina."
+    },
+    {
+      "id": "tfe_007",
+      "name": "Pino de Buen Paso",
+      "species": "Canary Pine (Pinus canariensis)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 500,
+      "age_max": 600,
+      "girth_cm": 413,
+      "height_m": 13.1,
+      "location": {
+        "address": "Plaza del Pino, Barrio de Buen Paso, Icod de los Vinos",
+        "latitude": 28.37951,
+        "longitude": -16.68246,
+        "neighbourhood": "Buen Paso, Icod de los Vinos"
+      },
+      "verified_sources": [
+        "https://www.tenerife.es/w/pino-de-buen-paso",
+        "https://diariodeavisos.elespanol.com/2020/10/la-virgen-de-la-pandemia/",
+        "https://www.openstreetmap.org/node/2556160157"
+      ],
+      "official_register": {
+        "name": "Cabildo de Tenerife, catalogue of monumental trees (regional protection)",
+        "url": "https://www.tenerife.es/w/pino-de-buen-paso"
+      },
+      "access": "Free. A landscaped public plaza in Buen Paso, always open; the base is ringed by a volcanic-stone wall and a heptagonal railing, so the trunk is viewed from outside.",
+      "transport": "Buen Paso is a hillside barrio of Icod de los Vinos, a few kilometres east of the Drago Milenario in the hills above Icod; a car is the realistic way, bus times not checked.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Cabildo catalogue: regional protection, public land, height 13.1 m, perimeter 413 cm, age about 600 years because there are references to its existence 500 years ago. Surrounded at the base by a volcanic stone wall and a heptagonal railing 2 m a side, in a landscaped plaza with a commemorative plaque (dated 25-7-1974) and three crosses (calvario) on the north side. The plaque says that by tradition the first mass in Icod was said here by the chaplain of the Adelantado's troops about 1496 (traditional claim; Diario de Avisos 2020 treats it only as a possibility per historian Lorenzo Santana Rodriguez, who says a mass could have been held there on one of Lugo's expeditions: do not state as fact). Described as very 'forrado', short thick branches, leaning west, with the Teide behind. Second source: Diario de Avisos 2020 describes a centuries-old pine with three crosses at its base beside the parish house and a few metres from the Buen Paso hermitage (references to the hermitage from 1518). Pin: Cabildo Google Maps link (28.3795058,-16.6824639) and OSM natural=tree node 'Pino de Buen Paso' (28.3795063,-16.6824689, note 'age > 500 years') coincide within 1 m: confirmed. ALIVE is thin: lifecheck NONE, newest evidence is the 2020 article; flagged, say so. Age is the Cabildo's documentary estimate, treat as broad.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photo_verdict": "No Commons file near the pin or under the name; nothing to view.",
+      "story": "A plaque at the foot of this pine says the first mass in Icod was celebrated here, around 1496, by the chaplain of the conquering Adelantado's troops. That is the tradition, and the plaque dates from 1974. The historian Lorenzo Santana Rodríguez, asked by Diario de Avisos in 2020, would go only as far as saying that a mass could have been held here during one of Alonso Fernández de Lugo's expeditions. Possible, then, rather than proven.\n\nThe tree's age rests on paper rather than rings. The Cabildo de Tenerife puts it at about 600 years because written references to it go back roughly five centuries, and records it as a regionally protected tree, 13.1 metres tall and 4.13 metres round. It is not tall for a Canary pine. It is short and thick in the branch, leans to the west, and on a clear day has Teide behind it.\n\nThe setting carries the history. A wall of volcanic stone and a seven-sided railing, two metres to a side, ring the base, so you see the trunk from outside. On the north side stand three crosses, a calvario, beside the parish house and a few metres from the Buen Paso hermitage, which is documented from 1518.\n\nThe most recent account of it standing that we know of is that 2020 article, so if you have seen it since, tell us. The plaza in the hillside barrio of Buen Paso, above Icod de los Vinos, is free and always open.",
+      "how_to_recognise": "You can recognise it by the seven-sided railing and volcanic-stone wall round its base, with three crosses on the north side. It stands in Plaza del Pino in Buen Paso, a few metres from the hermitage."
+    },
+    {
+      "id": "tfe_008",
+      "name": "Pino del Señor",
+      "species": "Canary Pine (Pinus canariensis)",
+      "age_estimate": "several centuries",
+      "location": {
+        "address": "Capilla del Señor del Pino, Calle Mario Marrero Fariña 10, Barrio del Carmen, Arafo",
+        "latitude": 28.34058,
+        "longitude": -16.4156,
+        "neighbourhood": "Arafo"
+      },
+      "height_m": 18,
+      "verified_sources": [
+        "https://www.tenerife.es/w/pino-canario-pino-del-se%C3%B1or",
+        "https://es.wikipedia.org/wiki/Arafo",
+        "https://www.webtenerife.co.uk/tenerife/the-island/municipalities/arafo/places-interest/capilla-senor-pino/",
+        "https://nominatim.openstreetmap.org/search?q=Capilla+del+Se%C3%B1or+del+Pino+Arafo&format=json"
+      ],
+      "official_register": {
+        "name": "Cabildo de Tenerife, catalogue of monumental trees (insular protection)",
+        "url": "https://www.tenerife.es/w/pino-canario-pino-del-se%C3%B1or"
+      },
+      "access": "Free. Beside the street at the old cemetery site next to a petrol station; the chapel shelters the base of the trunk, and the crown rises through its roof. Chapel opening hours not published in the sources found; the tree is seen from the street.",
+      "transport": "In the town of Arafo, on Calle Mario Marrero Farina; Arafo lies on the south-east side of Tenerife between Candelaria and Guimar; a car is the realistic way, bus times not checked.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Cabildo catalogue: insular protection, public land, 490 m a.s.l., height 18 m, no girth recorded (0 in the record, omitted). Stands at the old cemetery of Arafo where a calvario (three crosses) existed from early 18th century at the foot of the 'antiquisimo pino que data de antes de la conquista' (Cabildo history field; vague, not sharpened: no age figure given). In the second half of the 19th century a local put a found image of the Crucified at the foot of the old tree, the 'Senor del Pino', venerated by the town, so the pine is popularly the 'Pino del Senor'. Spanish Wikipedia (Arafo) adds that the chapel incorporates the base of the trunk inside and the tree rises through the roof (citing Octavio Rodriguez Delgado's article on the chapel; not read, PDF). WebTenerife: Arafo has an ancient pine from before the conquest at the chapel. A ULPGC botanic-garden document mentions an Arafo 'pino del Calvario' that survived the Guimar volcano, probably this tree (unconfirmed, do not state). Pin: OSM way 'Capilla del Senor del Pino' (28.3405766,-16.4155979, footprint about 4 m across); trunk is inside/under the chapel per sources so the chapel centroid is on the trunk: confirmed on that basis, flagged. The Cabildo's own Maps link is rounded (28.33,-16.39), ignore it. ALIVE is thin: lifecheck NONE, no dated photo or news found; the Cabildo and Wikipedia (accessed Oct 2026) still describe it as standing. Flagged.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photo_verdict": "No Commons file near the pin or under the name; nothing to view.",
+      "story": "In Arafo a chapel stands around the foot of a pine, and the tree carries on up through its roof. According to Spanish Wikipedia, citing the historian Octavio Rodríguez Delgado, the Capilla del Señor del Pino takes the base of the trunk inside its walls, while the tree stands 18 metres tall.\n\nThe pine has been a place of devotion for three centuries. Early in the eighteenth century a calvario, three crosses, stood at its foot on what was then the town's cemetery. In the second half of the nineteenth century a local man placed a found image of the crucified Christ at its base. The town took the image to heart as the Señor del Pino, the Lord of the Pine, and the tree became the Pino del Señor, the Pine of the Lord.\n\nHow old is it? The Cabildo de Tenerife's record calls it a very ancient pine dating from before the conquest, and the island's tourist board says much the same. Neither gives a figure, and none is offered here. If you know of a measurement or a document that dates it, tell us.\n\nThe setting is plainer than the story. It stands on the site of the old cemetery, with a petrol station next door. No recent dated photograph has turned up, so a report from anyone who has seen it lately is welcome. The chapel's opening hours are not published, but the tree is seen from the street, free.",
+      "how_to_recognise": "You can recognise it by the chapel built around the foot of its trunk, with the crown rising through the roof. It stands on Calle Mario Marrero Fariña in Arafo, next to a petrol station."
+    },
+    {
+      "id": "tfe_009",
+      "name": "Dragon Tree of the Hijuela del Botánico",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "not documented",
+      "girth_cm": 600,
+      "height_m": 11.5,
+      "location": {
+        "address": "Hijuela del Botánico, Calle Tomás Pérez s/n, behind the town hall, La Orotava",
+        "latitude": 28.38908,
+        "longitude": -16.5241,
+        "neighbourhood": "La Orotava"
+      },
+      "verified_sources": [
+        "https://www.tenerife.es/w/drago-de-la-hijuela-del-jard%C3%ADn-bot%C3%A1nico",
+        "https://www.webtenerife.co.uk/what-see/gardens-and-parks/hijuela-botanico/",
+        "https://laorotava.es/turismo/?p=1003945"
+      ],
+      "official_register": {
+        "name": "Cabildo de Tenerife, catalogue of monumental trees (municipal protection)",
+        "url": "https://www.tenerife.es/w/drago-de-la-hijuela-del-jard%C3%ADn-bot%C3%A1nico"
+      },
+      "access": "Free. Municipal garden behind La Orotava town hall; opening hours differ between sources (one gives 9:00 to 14:00 all year, a 2026 blog gives 9:00 to 18:00 weekdays and 10:00 to 15:00 weekends and holidays): confirm with the Ayuntamiento.",
+      "transport": "In the historic centre of La Orotava, on foot from the town hall; La Orotava adjoins Puerto de la Cruz on the north coast; bus times not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Cabildo catalogue: municipal protection, public land, 370 m a.s.l., height 11.5 m, perimeter 600 cm; no age figure (the ficha gives only the garden history: built on the initiative of the 6th Marques de Villanueva del Prado, Alfonso de Nava y Grimon, as a complement to the Jardin de Aclimatacion de La Orotava, today the Jardin Botanico of Puerto de la Cruz). WebTenerife names 'a beautiful dragon tree' in the garden, which was built in 1788 (garden date, NOT the tree's, no bridge claim); other trees named there: horse-chestnuts, flame trees, sapotes, bunya pines. A travel guide says a dragon of about 200 years is the protagonist (blog, not a source). Pin: Cabildo's Google Maps link (28.3890788,-16.524097), 7 decimals but no independent check, so approximate; the garden is a walk-through garden, not a one-glance site, so no location_site. Alive: lifecheck RECENT only for the garden (iNaturalist 2026-06-03 at the spot, not necessarily this tree); no dated photo of the dragon found. Not findable without a photograph on its own: dispatcher to decide. Do not confuse with the historical Franchy dragon of La Orotava, felled by wind in 1867.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photo_verdict": "Five files viewed: Mike Peel's geotagged shot is the trunk and roots only, crown cut off (bark-level framing); the Loser files show a flowering Cordyline, not this dragon tree; one garden bed.",
+      "story": "La Orotava's most famous dragon tree, the Franchy dragon, was brought down by wind in 1867. This one is still standing, six metres round the trunk and 11.5 metres tall in the Hijuela del Botánico, a garden behind the town hall, under municipal protection on the Cabildo de Tenerife's list of monumental trees.\n\nThe garden's name means the little daughter of the Botánico. It was created in 1788 on the initiative of Alfonso de Nava y Grimón, sixth Marqués de Villanueva del Prado, as an offshoot of the Jardín de Aclimatación de La Orotava, the royal garden down the hill in Puerto de la Cruz that also grows El Gran Ficus. The Hijuela has horse-chestnuts, flame trees, sapotes and bunya pines, and the island's tourist board singles out this dragon among them.\n\nThe garden's founding date is not the tree's. No source gives a planting date or an age for it, and dragon trees grow no annual rings to count. One travel blog puts it at about 200 years, a figure nobody has backed with a source. If you know more, tell us.\n\nEntry is free. Opening hours differ between sources, from mornings only all year to longer weekday hours, so check with the Ayuntamiento before you go. It is a short walk from the town hall in the historic centre, and La Orotava adjoins Puerto de la Cruz on the north coast.",
+      "how_to_recognise": "You can recognise it as the dragon tree among the garden's horse-chestnuts, flame trees and bunya pines, 11.5 metres tall on a trunk six metres round. It stands in the Hijuela del Botánico, behind the town hall."
     }
   ],
   "kind": "island"

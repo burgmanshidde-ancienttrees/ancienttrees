@@ -240,6 +240,274 @@
         "name": "Palm Canyon wooden footbridge and the steps down into Palm Canyon",
         "radius_m": 40.0
       }
+    },
+    {
+      "id": "sdg_012",
+      "name": "The Florence Hotel Moreton Bay Fig",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 130 to 150 years",
+      "age_min": 130,
+      "age_max": 150,
+      "age_basis": "source",
+      "location": {
+        "address": "Grape Street between Third and Fourth Avenues (beside 1927 Fourth Avenue), Bankers Hill, San Diego",
+        "latitude": 32.72607,
+        "longitude": -117.16119,
+        "neighbourhood": "Bankers Hill"
+      },
+      "location_precision": "confirmed",
+      "verified_sources": [
+        "https://sandiegoreader.com/news/1991/jun/20/tree-saw-tomorrow",
+        "https://sandiegoreader.com/news/2008/jun/25/history-and-side-salad",
+        "https://www.inaturalist.org/observations/328436636"
+      ],
+      "access": "View from the public sidewalks of Grape Street and Fourth Avenue. The tree stands on a privately owned lot (long a parking lot) behind the Wet Stone cafe, so look from the sidewalk; a sign in front of it names it. Free.",
+      "transport": "Bus routes on Fourth/Fifth Avenues in Bankers Hill; about a 10 minute walk from the Balboa Park Laurel Street entrance.",
+      "curation_status": "flagged",
+      "recognise": "The huge fig on the Grape Street corner of the old Florence Hotel block, with a sign at its foot reading Florence Hotel Moreton Bay Fig Tree.",
+      "verify_notes": "Last vestige of the Florence Hotel (opened 1884 per Reader 2008; 1893 per Reader 1991; torn down 1948-1950, block became a parking lot). Reader 1991: planted 1895 as part of the hotel garden; City of San Diego Historical Site No. 53 since 1971; by 1991 the owner had neglected it, trunk carved with initials, a section blackened by an attempt at torching; an arborist was hired and a deed restriction required, city staff called it 'the single most protected tree in town'; one of only three mature local Ficus macrophylla then (the others in Balboa Park at Sixth and Laurel and behind the Natural History Museum); arborist Bill Nelson thought it had only 20 to 30 years left, others said 100. Reader 2008: a sign in front says 'Florence Hotel Moreton Bay Fig Tree, 1877' (131 years then); writer stood under it, 'ginormous', spreads over the lot. AGE CONFLICT: 1877 (sign, 2008) vs 1895 (Reader 1991, city landmark record); hotel itself opened 1884 so 1877 predates it; range 130 to 150 years covers both. Alive: iNaturalist observation 328436636, 2025-11-26, GPS accuracy 3 m at 32.72607,-117.16119, Ficus macrophylla, place guess 'Grape St' (photo licence CC BY-NC, not usable); lifecheck.py RECENT. A second iNat Ficus macrophylla at 32.7254,-117.1593 (obs 76762994, 2021) is a different tree, the Balboa Park fig near Sixth and Laurel (about 190 m east). Pin: confirmed from the 3 m GPS fix. Not verified: the 2020-2025 redevelopment of the Fenton Bankers Hill site (carriage house 2004 Fourth Ave, 328 Grape St); the fig was standing Nov 2025 but check it is still reachable from the sidewalk. Private lot: ships as view-only with the pin on the viewing place. One source for the landmark status (San Diego Reader 1991), flagged. No girth or height published.",
+      "how_to_recognise": "The huge fig spreading over the old Florence Hotel lot on the Grape Street side, with a sign at its foot reading Florence Hotel Moreton Bay Fig Tree.",
+      "story": "A hotel stood here once, and this fig is what is left of it. The Florence Hotel opened in Bankers Hill in the 1880s or 1890s, depending on the account, and was torn down around 1948 to 1950. The block became a parking lot, and the fig from the hotel garden stayed. A sign at its foot says 1877, which would make the tree older than the hotel. The San Diego Reader, writing in 1991, gave 1895, the date the city's landmark record uses. Somewhere between 130 and 150 years, then.\n\nThe city made it Historical Site No. 53 in 1971, and being a landmark did not keep it safe. By 1991 initials had been carved into its trunk and part of it was blackened where someone had tried to set it alight. An arborist was brought in, a deed restriction followed, and city staff called it the single most protected tree in town. One arborist that year gave it twenty or thirty more years. It was still standing, and still spreading over the lot, in November 2025.\n\nThe fig is on private ground, so this is one to look at from the sidewalk on Grape Street or Fourth Avenue. The land around it has been redeveloped in recent years and we have not seen how that changed the view from the street; tell us if it has. Balboa Park's Laurel Street entrance is about ten minutes' walk away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sdg_013",
+      "name": "The Kensington Hoop Pine",
+      "species": "Hoop Pine (Araucaria cunninghamii)",
+      "age_estimate": "over a century",
+      "age_min": 110,
+      "age_max": 116,
+      "age_basis": "source",
+      "location": {
+        "address": "Kensington Library Park, 4121 Adams Avenue, San Diego",
+        "latitude": 32.76303,
+        "longitude": -117.10686,
+        "neighbourhood": "Kensington"
+      },
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Kensington Library Park",
+        "radius_m": 50
+      },
+      "verified_sources": [
+        "https://www.sohosandiego.org/reflections/2009-1/trees.htm",
+        "https://www.sohosandiego.org/enews/0323kensingtontrees.htm",
+        "https://kpbs.org/events/2023/11/24/annual-holiday-tree-lighting-in-kensington-park"
+      ],
+      "access": "Free, open public park lawn around the Normal Heights-Kensington library (library opening hours apply inside only).",
+      "transport": "Bus along Adams Avenue (Kensington); roughly a 15 minute drive or bus ride from Balboa Park.",
+      "curation_status": "flagged",
+      "recognise": "The very tall conifer on the corner of the park, strung with lights every December; four older Canary Island pines flank the former pond site.",
+      "verify_notes": "Heritage Grove: the City of San Diego Community Forest Advisory Board voted unanimously on 14 January 2009 to designate the Kensington library park trees as a Heritage Grove and Landmark trees (SOHO 2009 article; SOHO March-April 2023 newsletter via obrag.org repeats it). Kensington Park was subdivided in 1910 (lot sales opened 25 Nov 1910); SOHO 2023: nine original trees remain in the park around the library, planted 1910 by the developers: Canary Island pines, Canary Island palms, a deodar cedar, a Catalina Island cherry and a hoop pine. SOHO 2009: historic 1913 images show the hoop pine 'in the same position that it occupies today'; four Canary Island pines (Pinus canariensis), two each side of the former goldfish pond, also still stand. 1962 library expansion removed some originals; architect Richard Lareau left roofline cutouts for two Canary Island pines. SOHO 2023 describes the hoop pine as 'a very tall tree on the corner of the park', lit every December; KPBS lists the annual Kensington Park tree lighting (Friday 24 Nov 2023, 4121 Adams Ave) but does not name the species. Age basis: 1913 photograph plus 1910 subdivision; no planting year for this specimen stated, so age is 'over a century' (110 to 116). The two SOHO pages are one organisation, the official designation is the second leg. No girth or height published. Pin: park-level, no tree coordinate found (no iNaturalist, OSM tree node or Commons geotag for it); small named site, approximate. Not checked: which exact corner (Terrace Drive end vs Adams Avenue end); the listed 'tall hoop pine' may not be the lit tree in every year. Alive: SOHO 2023 describes the trees as surviving; no dated photograph in hand.",
+      "how_to_recognise": "The very tall conifer on a corner of the small park around the Kensington library; four Canary Island pines stand two on each side of the former pond site.",
+      "story": "When Kensington was laid out as a new subdivision in 1910, its developers planted a park around what is now the neighbourhood library. Nine of those first trees are still here, and a photograph from 1913 already shows this hoop pine in the same spot it stands in today. Hoop pine is an Araucaria from the rainforests of eastern Australia, and here it has grown into the very tall tree on the corner of the park.\n\nIt has had company from the start: four Canary Island pines, two on each side of the old goldfish pond, along with Canary Island palms, a deodar cedar and a Catalina Island cherry. When the library was enlarged in 1962 some of the original trees were lost, and the architect, Richard Lareau, cut openings in the roofline so that two of the Canary Island pines could stay. In 2009 the City's Community Forest Advisory Board voted unanimously to make the whole group a Heritage Grove.\n\nEvery December the neighbourhood holds a tree lighting in the park, and the preservation group SOHO describes the tall hoop pine as the tree that is lit. We could not pin the trunk itself, so the map point marks the park; a reader's photograph from beside it would settle which corner. The park is free and open, and only the library keeps opening hours.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sdg_007",
+      "name": "The Torrey Pine at Coronado Library",
+      "species": "Torrey Pine (Pinus torreyana)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 130,
+      "age_basis": "source",
+      "location": {
+        "address": "Coronado Public Library, 640 Orange Ave, Coronado, CA",
+        "latitude": 32.69125,
+        "longitude": -117.17699,
+        "neighbourhood": "Coronado"
+      },
+      "location_precision": "confirmed",
+      "verified_sources": [
+        "https://coronadotimes.com/news/2022/04/21/earth-day-activity-visit-all-15-heritage-trees-in-coronado/",
+        "https://www.inaturalist.org/observations/249046846",
+        "https://www.inaturalist.org/observations/9186036"
+      ],
+      "official_register": {
+        "name": "City of Coronado Heritage Trees list (as reproduced by Coronado Times, 2022)",
+        "url": "https://www.coronado.ca.us/DocumentCenter/View/3582/Heritage-Trees-Listing-PDF"
+      },
+      "access": "Free. Stands near the front entrance of the Coronado Public Library, viewable from the public walkway at any time.",
+      "transport": "Coronado sits across the bay from downtown San Diego (ferry from the Broadway Pier to the Ferry Landing, or bus over the Coronado Bridge; roughly 15 to 30 minutes, not checked against a timetable). Library is on Orange Avenue, downtown Coronado.",
+      "curation_status": "ai_generated",
+      "recognise": "The Torrey pine beside the library's front entrance, with the two taller Norfolk Island pines flanking the doors.",
+      "verify_notes": "Day-trip edge: this is Coronado, a separate city across the bay; label it as Coronado. The city's own Heritage Tree list is the naming body (15 trees); public-space ones only delivered, private-yard ones kept as leads. The city PDF itself 403s to curl and WebFetch; the Coronado Times article reproduces the list and credits the City, and was read via a web.archive.org copy (live page 403s). City Heritage Tree Serial 002, designated 3 April 2008. City text: typical of the Torreys planted about a century ago in a city-wide programme under Parks Superintendent Louis C. Bandel, 'assisted by Kate Sessions'; Coronado Torreys grow to more than 50 ft. Alive: iNaturalist observations at the library on 2017-12-17 (5 m accuracy) and 2024-10-25 (9 m), both casual grade, coordinates 32.69116,-117.17700 and 32.69125,-117.17699; the Heritage Tree label is read from the city text, not the iNat species ID. Pin is a GPS fix at the library entrance but two other conifers stand there, so the Torrey is picked by species in the iNat records. One city source plus two iNat fixes: flagged one source. Tree 001 (Palm Park) is the city's Official Tree since 2006. Kate Sessions link is only the City's wording, do not enlarge it.",
+      "story": "Coronado keeps an official list of fifteen heritage trees, and the Torrey pine outside its public library is serial 002 on it. The city designated it on 3 April 2008, and its own description of the tree is really a description of a whole town's planting.\n\nAbout a century ago, Coronado planted Torrey pines in a city-wide programme under Louis C. Bandel, its Parks Superintendent, 'assisted by Kate Sessions' in the city's own words. This tree is called typical of those plantings. Coronado's Torreys, the city adds, grow to more than 50 feet. No measurement has been published for this one, and the century is the city's round figure rather than a recorded planting date.\n\nWhat makes the library a good place to start is the company. The library entrance carries three heritage conifers at once. This Torrey pine stands near the front doors, and the two taller Norfolk Island pines planted in 1909 for the opening of the Spreckels Library flank them.\n\nCoronado is its own city, across the bay from downtown San Diego, so treat it as a short day trip. The ferry from the Broadway Pier or a bus over the Coronado Bridge gets you here in roughly 15 to 30 minutes; check the timetable. The library is on Orange Avenue in the middle of town, and the tree is free to see from the public walkway at any hour.",
+      "how_to_recognise": "You can recognise it as the Torrey pine by the library's front entrance, shorter than the two Norfolk Island pines that flank the doors. It stands outside Coronado Public Library on Orange Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sdg_008",
+      "name": "The 1909 Library Pines of Coronado",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "about 117 years",
+      "age_min": 115,
+      "age_max": 120,
+      "age_basis": "source",
+      "location": {
+        "address": "Coronado Public Library, 640 Orange Ave, Coronado, CA",
+        "latitude": 32.69099,
+        "longitude": -117.1772,
+        "neighbourhood": "Coronado"
+      },
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Coronado Public Library entrance",
+        "radius_m": 30
+      },
+      "verified_sources": [
+        "https://coronadotimes.com/news/2022/04/21/earth-day-activity-visit-all-15-heritage-trees-in-coronado/",
+        "https://coronadohistory.org/blog/trees-are-architecture-too-07082020/",
+        "https://www.inaturalist.org/observations/53986552"
+      ],
+      "official_register": {
+        "name": "City of Coronado Heritage Trees list (as reproduced by Coronado Times, 2022)",
+        "url": "https://www.coronado.ca.us/DocumentCenter/View/3582/Heritage-Trees-Listing-PDF"
+      },
+      "access": "Free. Two trees either side of the library's main entrance, viewable from the public walkway at any time.",
+      "transport": "Coronado sits across the bay from downtown San Diego (ferry from the Broadway Pier to the Ferry Landing, or bus over the Coronado Bridge; roughly 15 to 30 minutes, not checked against a timetable). Library is on Orange Avenue, downtown Coronado.",
+      "curation_status": "ai_generated",
+      "recognise": "The matched pair of tall Norfolk Island pines on either side of the library's main entrance.",
+      "verify_notes": "Day-trip edge: this is Coronado, a separate city across the bay; label it as Coronado. The city's own Heritage Tree list is the naming body (15 trees); public-space ones only delivered, private-yard ones kept as leads. The city PDF itself 403s to curl and WebFetch; the Coronado Times article reproduces the list and credits the City, and was read via a web.archive.org copy (live page 403s). City Heritage Tree Serials 012 and 013 (folded into one entry, a matched pair at one spot), both designated 6 Oct 2016, both 'planted in 1909 with the opening of the Spreckels Library'; Coronado Historical Association blog independently ties the two Norfolk pines on the library grounds to 1909 (it names no planter). City text says the species reaches about 100 ft at maturity (no measured height for these). Alive: one iNaturalist observation of a Norfolk Island pine at the library, 2020-07-22, 32.69099,-117.17720 (10 m accuracy, casual). Pin is the library entrance, approximate; use the small-site rule. Photo candidate: that iNat photo is CC BY-NC, not usable.",
+      "story": "These two Norfolk Island pines went into the ground the year the library they guard opened its doors. That was 1909, and the library was the new Spreckels Library. More than a century later they still stand either side of its main entrance.\n\nTwo sources date them independently. The City of Coronado's Heritage Tree list, which designated both on 6 October 2016 as serials 012 and 013, says they were planted with the library's opening. The Coronado Historical Association ties the pair on the library grounds to 1909 as well, without naming who planted them. That makes them about 117 years old, a firmer date than the round century the city gives its Torrey pines.\n\nThe city notes that the species reaches about 100 feet at maturity. Nobody has published a measured height for these two, so that figure describes the species rather than this pair.\n\nYou see them together from one spot on the walkway. Near the same entrance stands a Torrey pine, another of the city's fifteen heritage trees, so the library gives you three in one stop.\n\nCoronado is a separate city across the bay from downtown San Diego. Take the ferry from the Broadway Pier or a bus over the Coronado Bridge, roughly 15 to 30 minutes; check the timetable. The library is on Orange Avenue, and both pines are free to see from the public walkway at any time.",
+      "how_to_recognise": "You can recognise them as the matched pair of tall Norfolk Island pines, one on each side of the library's main entrance. They stand at the front of Coronado Public Library on Orange Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sdg_009",
+      "name": "The Rotary Plaza Star Pine",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "about 90 years",
+      "age_min": 85,
+      "age_max": 95,
+      "age_basis": "source",
+      "location": {
+        "address": "Rotary Plaza, Orange Ave / Olive Ave area, Coronado, CA",
+        "latitude": 32.68498,
+        "longitude": -117.18002,
+        "neighbourhood": "Coronado"
+      },
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Rotary Plaza",
+        "radius_m": 30
+      },
+      "verified_sources": [
+        "https://coronadotimes.com/news/2022/04/21/earth-day-activity-visit-all-15-heritage-trees-in-coronado/",
+        "https://www.inaturalist.org/observations/362490347"
+      ],
+      "official_register": {
+        "name": "City of Coronado Heritage Trees list (as reproduced by Coronado Times, 2022)",
+        "url": "https://www.coronado.ca.us/DocumentCenter/View/3582/Heritage-Trees-Listing-PDF"
+      },
+      "access": "Free. Public plaza; the tree is the town's living Christmas tree, lit each December.",
+      "transport": "Coronado sits across the bay from downtown San Diego (ferry from the Broadway Pier to the Ferry Landing, or bus over the Coronado Bridge; roughly 15 to 30 minutes, not checked against a timetable).",
+      "curation_status": "flagged",
+      "recognise": "The single tall Norfolk Island pine in Rotary Plaza that is dressed as Coronado's Christmas tree.",
+      "verify_notes": "Day-trip edge: this is Coronado, a separate city across the bay; label it as Coronado. The city's own Heritage Tree list is the naming body (15 trees); public-space ones only delivered, private-yard ones kept as leads. The city PDF itself 403s to curl and WebFetch; the Coronado Times article reproduces the list and credits the City, and was read via a web.archive.org copy (live page 403s). City Heritage Tree Serial 003, designated 3 April 2008. City text: 'transplanted to this location by Supt. Bandel in 1936', funded by Coronado Rotarians, 'has since served as the City's living Christmas tree'. Age derived from the 1936 transplant date (age of the tree before moving unknown, so 'about 90 years' is a floor). Alive: one iNaturalist observation 2021-11-27 at 32.68498,-117.18002 (5 m, casual); Rotary Park centroid from Nominatim 32.68556,-117.18029. Last dated sighting 2021, so flagged for life (Christmas-tree role described as ongoing in the 2022 city text). Rotary Plaza exact address not confirmed: OSM names it Rotary Park. Pin approximate.",
+      "story": "Coronado's Christmas tree has been the same living pine since 1936. That year Louis C. Bandel, the city's Parks Superintendent, moved this Norfolk Island pine to Rotary Plaza with money from the town's Rotarians, and in the city's words it has served as Coronado's living Christmas tree ever since. Each December it is lit again.\n\nThe City of Coronado put it on its Heritage Tree list on 3 April 2008, as serial 003. The transplant is the only date anyone has. It was moved here, not planted here, so it had already been growing somewhere else, for how long nobody recorded. About 90 years is therefore a floor, not an estimate, and the true figure is higher by however long it grew somewhere else first.\n\nOne honest caution. The most recent dated sighting we could find is a visitor's record from November 2021, and the city's description from 2022 still speaks of the Christmas tree role as ongoing. We have no reason to think it has gone, but if you visit, tell us it is still standing.\n\nCoronado is a separate city across the bay from downtown San Diego, a short day trip by the ferry from the Broadway Pier or a bus over the Coronado Bridge, roughly 15 to 30 minutes; check the timetable. The plaza sits off Orange Avenue near Olive Avenue, and the tree is free to see at any hour. Online maps label it Rotary Park.",
+      "how_to_recognise": "You can recognise it as the single tall Norfolk Island pine that Coronado dresses as its Christmas tree each December. It stands in Rotary Plaza, off Orange Avenue near Olive Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sdg_010",
+      "name": "The Torrey Pine of Cronan Park",
+      "species": "Torrey Pine (Pinus torreyana)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 130,
+      "age_basis": "source",
+      "location": {
+        "address": "Sixth Street at Pomona Avenue, Coronado, CA",
+        "latitude": 32.68961,
+        "longitude": -117.17147,
+        "neighbourhood": "Coronado"
+      },
+      "location_precision": "confirmed",
+      "verified_sources": [
+        "https://coronadotimes.com/news/2022/04/21/earth-day-activity-visit-all-15-heritage-trees-in-coronado/",
+        "https://www.inaturalist.org/observations/258977018",
+        "https://www.inaturalist.org/observations/128909650"
+      ],
+      "official_register": {
+        "name": "City of Coronado Heritage Trees list (as reproduced by Coronado Times, 2022)",
+        "url": "https://www.coronado.ca.us/DocumentCenter/View/3582/Heritage-Trees-Listing-PDF"
+      },
+      "access": "Free. A tree in the small triangular public park at Sixth Street and Pomona Avenue, viewable at any time.",
+      "transport": "Coronado sits across the bay from downtown San Diego (ferry from the Broadway Pier to the Ferry Landing, or bus over the Coronado Bridge; roughly 15 to 30 minutes, not checked against a timetable).",
+      "curation_status": "ai_generated",
+      "recognise": "The big Torrey pine in the small triangular park at the Sixth Street and Pomona Avenue corner.",
+      "verify_notes": "Day-trip edge: this is Coronado, a separate city across the bay; label it as Coronado. The city's own Heritage Tree list is the naming body (15 trees); public-space ones only delivered, private-yard ones kept as leads. The city PDF itself 403s to curl and WebFetch; the Coronado Times article reproduces the list and credits the City, and was read via a web.archive.org copy (live page 403s). City Heritage Tree Serial 004, designated 5 May 2011. City text: 'grand tree, similar to serials 001 and 002 Torreys', dominates the small triangular park named for Medal of Honor recipient William Cronan (bosun mate aboard USS Bennington, exploded in San Diego harbour 1905). Age: city says the Coronado Torreys were planted about a century ago (that sentence is for serial 002 and 004 is called 'similar'): vague, kept broad. Alive: iNaturalist research-grade Torrey pine 2025-01-19 at 32.68961,-117.17147 (5 m) and CC BY observation 2022-07-31 at 32.68963,-117.17151, both by different observers at the Pomona Avenue/6th Street spot (Nominatim places Pomona Avenue at 32.688,-117.172). Pin is a published GPS fix on a single tree on the traffic island: confirmed. Photo candidate: https://www.inaturalist.org/observations/128909650 (CC BY, user conboy, 3 photos).",
+      "story": "This Torrey pine has a park almost to itself, and the park has a sailor's name. Cronan Park is a small triangle of public ground at Sixth Street and Pomona Avenue, and the City of Coronado's heritage list says the tree dominates it, a grand Torrey in the same mould as the city's official tree in Palm Park and the one outside the library.\n\nThe name belongs to William Cronan, a Medal of Honor recipient who served as a bosun's mate aboard the USS Bennington when the ship exploded in San Diego harbour in 1905.\n\nThe city put the pine on its Heritage Tree list on 5 May 2011, as serial 004. Its age is the soft part. The city says Coronado's Torreys were planted about a century ago, but that sentence is written for the library tree, and this one is only called similar. Over a century is a fair reading, and nobody has published a planting year or a measurement for it.\n\nCoronado is a separate city across the bay from downtown San Diego, a short day trip by the ferry from the Broadway Pier or a bus over the Coronado Bridge, roughly 15 to 30 minutes; check the timetable. The pin here is a visitor's GPS fix on the tree itself. It is free to see at any hour.",
+      "how_to_recognise": "You can recognise it as the big Torrey pine that dominates the small triangular park. It stands at the corner of Sixth Street and Pomona Avenue in Coronado.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sdg_011",
+      "name": "Coronado's Official Tree, Palm Park",
+      "species": "Torrey Pine (Pinus torreyana)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 130,
+      "age_basis": "source",
+      "location": {
+        "address": "Palm Park, Palm Avenue, Coronado, CA",
+        "latitude": 32.69869,
+        "longitude": -117.18041,
+        "neighbourhood": "Coronado Ferry Landing"
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://coronadotimes.com/news/2022/04/21/earth-day-activity-visit-all-15-heritage-trees-in-coronado/",
+        "https://www.inaturalist.org/observations/258975846"
+      ],
+      "official_register": {
+        "name": "City of Coronado Heritage Trees list (as reproduced by Coronado Times, 2022)",
+        "url": "https://www.coronado.ca.us/DocumentCenter/View/3582/Heritage-Trees-Listing-PDF"
+      },
+      "access": "Free. Public park, open to walk through.",
+      "transport": "Coronado sits across the bay from downtown San Diego (ferry from the Broadway Pier to the Ferry Landing, or bus over the Coronado Bridge; roughly 15 to 30 minutes, not checked against a timetable). Palm Park is a short walk from the Ferry Landing stop.",
+      "curation_status": "flagged",
+      "recognise": "The Torrey pine in Palm Park, recognised by the City Council as Coronado's Official Tree.",
+      "verify_notes": "Day-trip edge: this is Coronado, a separate city across the bay; label it as Coronado. The city's own Heritage Tree list is the naming body (15 trees); public-space ones only delivered, private-yard ones kept as leads. The city PDF itself 403s to curl and WebFetch; the Coronado Times article reproduces the list and credits the City, and was read via a web.archive.org copy (live page 403s). City Heritage Tree Serial 001, designated 3 April 2008, recognised as the city's Official Tree in 2006; city text: 'planted early in the twentieth century under the supervision of Louis C. Bandel', Parks Superintendent for forty years. Alive: iNaturalist research-grade Torrey pine 2025-01-19 at 32.69869,-117.18041 inside Palm Park (5 m). City says Palm Park is at Palm Avenue and Third Street; Nominatim puts Palm Park at 32.6990,-117.1804 near the Ferry Landing, consistent with the iNat fix. Only one Torrey seen in iNat records for the park, but the fix is not tied to the heritage label, so approximate and flagged one source. Photos on that iNat record carry no open licence code.",
+      "story": "Coronado has an official tree, and it is not a species but a single Torrey pine in Palm Park. The City Council recognised it as the city's Official Tree in 2006, and on 3 April 2008 it became serial 001, the first of fifteen on Coronado's Heritage Tree list.\n\nThe city's account says it was planted early in the twentieth century under the supervision of Louis C. Bandel, who served as Parks Superintendent for forty years. Bandel's name runs through the list. The Torrey outside the library came from his city-wide planting programme, and in 1936 he moved the pine that is now Coronado's Christmas tree into Rotary Plaza. No planting year and no measurement have been published, so over a century is the honest figure.\n\nOne caution on finding it. The city places Palm Park at Palm Avenue and Third Street, and a visitor's GPS record from January 2025 puts a Torrey pine inside the park. It is the only Torrey in the visitor records for the park, which makes it very likely the official tree, but the record is not tied to the heritage label, so our pin is marked approximate.\n\nCoronado is a separate city across the bay from downtown San Diego. The ferry from the Broadway Pier takes roughly 15 to 30 minutes (check the timetable), and the park is a short walk from where it lands. It is free and open to walk through.",
+      "how_to_recognise": "You can recognise it as the Torrey pine in Palm Park, the one the City Council named Coronado's Official Tree. It stands in the park at Palm Avenue and Third Street, near the Ferry Landing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

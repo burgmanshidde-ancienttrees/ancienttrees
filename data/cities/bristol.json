@@ -498,6 +498,340 @@
       "pin_source": "Bristol Tree Forum veteran survey grid reference ST 5712 7574 (converted, approximate)",
       "how_to_recognise": "You can recognise it by the trunk, five metres round, the largest horse chestnut on the Downs. It stands beside Saville Road on the edge of Durdham Down.",
       "girth_cm": 500
+    },
+    {
+      "id": "bri_013",
+      "name": "The Parish Yew, Leigh Woods",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 460,
+      "location": {
+        "address": "Parish wall, Leigh Woods National Nature Reserve, near the National Trust reserve office, Valley Road, Bristol BS8 3PL",
+        "latitude": 51.45988,
+        "longitude": -2.64205,
+        "neighbourhood": "Leigh Woods"
+      },
+      "verified_sources": [
+        "https://www.nationaltrust.org.uk/visit/bath-bristol/leigh-woods/leigh-woods-veteran-tree-walk",
+        "https://www.ancient-yew.org/yew_tree_database/leigh-woods-1"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Leigh Woods (1)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/leigh-woods-1"
+      },
+      "access": "Free. Leigh Woods is open woodland run by the National Trust; the veteran tree walk (1 mile, 30 to 45 minutes, easy) starts at the North Road entrance, grid ref ST555730; roadside parking on North Road.",
+      "transport": "Bus 357, 358 or 359 along the A369, nearest stop about 100 m from North Road, then about 10 minutes on foot to the tree. Clifton Down station 2.6 km.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Parish wall by the NT reserve office, Leigh Woods",
+        "radius_m": 50
+      },
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the trunk bulging around the stones of the old parish wall, with stretches of wall removed either side and woodchip over the roots. It stands beside the surfaced path near the reserve office.",
+      "story": "This yew is slowly eating a wall. It grows in a gap in the old stone parish boundary that runs through Leigh Woods, and its trunk has bulged out around the stones and swallowed part of them. The National Trust, which looks after the woods, eventually stopped arguing with it. It took away short stretches of wall on either side to give the tree room, and laid woodchip around its roots.\n\nThe Trust puts it at approximately 500 years old and calls it one of the oldest trees in Leigh Woods. That is the Trust's estimate rather than a ring count. The Ancient Yew Group, which keeps a database of Britain's old yews, measured the trunk at 4.6 metres round in 2004 and classes it as ancient, without offering an age of its own.\n\nIt is also what foresters call a maiden tree. Many old trees in working woods were pollarded or coppiced, cut back so they would regrow as a crop of poles. The Trust says this one never was. Whatever happened to the wood around it, the yew has been left to grow in its own shape for its whole life.\n\nA parish wall is built to mark a line for good. Here the wall is the thing that had to give way. The tree is stage 2 of the Trust's veteran tree walk, about ten minutes from the North Road entrance.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_014",
+      "name": "The Nightingale Valley Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": 675,
+      "location": {
+        "address": "Nightingale Valley, beside Brislington Brook and its weir, Brislington, Bristol",
+        "latitude": 51.44121,
+        "longitude": -2.54827,
+        "neighbourhood": "Brislington"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://avonstories.com/2018/09/20/brislington-brook-july-2018/",
+        "https://www.bristol247.com/news-and-features/features/vote-now-for-bristols-best-tree/"
+      ],
+      "access": "Free. Public woodland path along Brislington Brook (Nightingale Valley); the trunk can be seen from the path by the weir. Paths can be muddy; no hours.",
+      "transport": "Bristol Temple Meads about 4 km; nearest rail stop St Anne's Park about 600 m north-west by the brook path (computed from coordinates, not checked on a timetable).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the bricked-up opening in its vast hollow trunk, 6.75 metres round. It stands beside the weir on Brislington Brook in Nightingale Valley, seen from the woodland path.",
+      "story": "Somebody bricked this tree up. The London plane beside the weir in Nightingale Valley is hollow, and people had taken to lighting fires inside it, so the open trunk was filled in with brickwork to stop them. It worked. The plane is still alive, and the brick patch has become the easiest way to tell it from everything else along Brislington Brook.\n\nIt is a big tree to have survived that. The Bristol Tree Forum measured the trunk at 6.75 metres round, says the crown fills the little valley of the brook, and estimates it at about 250 years old. That age is the Forum's own estimate from the size, not a planting date. The Forum also thinks the tree was probably associated with nearby Brislington House, though it gives no record of who planted it or when.\n\nA walker who wrote up the brook path in 2018 passed on the local view that this is the oldest plane in Bristol. Nobody has published the measurements to settle it, so take that as what people round here say rather than a fact we can stand behind. It would not be a surprising title. The other big planes the city is known for, in Queen Square and Mina Road Park, were planted around the 1880s.\n\nThe brook path can be muddy after rain. The whole trunk can be seen from the path by the weir, with no need to leave it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_015",
+      "name": "The Monterey Cypress at Bishops Knoll",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 150,
+      "age_max": 170,
+      "girth_cm": 710,
+      "location": {
+        "address": "Bishops Knoll Wood, Bramble Lane, Stoke Bishop, Bristol BS9 1JH",
+        "latitude": 51.47389,
+        "longitude": -2.64527,
+        "neighbourhood": "Stoke Bishop"
+      },
+      "verified_sources": [
+        "https://www.woodlandtrust.org.uk/visiting-woods/woods/bishops-knoll/",
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+      ],
+      "access": "Free. Woodland Trust wood, open access; main entrance on Bramble Lane (public road with pavement, wide gate). A public footpath crosses the site; some uneven steps. No car park, a few spaces on Bramble Lane.",
+      "transport": "Nearest bus stop Julian Road, 1 km walk on pavement (Woodland Trust).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the Victorian iron railings still standing round its trunk, which is over seven metres in girth. It stands inside Bishops Knoll Wood, among the old grounds of the demolished Knoll mansion.",
+      "story": "The house whose garden this cypress grew up in has been gone for half a century, and its railings have not. Bishops Knoll Wood was once the grounds of The Knoll, a mansion built in the late 19th century for Peter Prankerd and demolished in the 1970s. The Monterey cypress still stands inside the Victorian ironwork that was put round it, a fence guarding a garden that no longer exists.\n\nIt has grown into what the Bristol Tree Forum calls a colossal specimen. The Forum measured the trunk at 7.1 metres round, and the Woodland Trust, which now owns the wood, gives it a girth of over seven metres.\n\nThe Forum's age is a piece of reasoning rather than a record. Monterey cypress reached Britain in 1839, and the Forum argues this one cannot have gone in earlier than 1860, which puts it somewhere around 150 to 170 years old. Nobody has a planting date.\n\nThe species has a second claim on British gardens. The Forum points out that Monterey cypress is one parent of the Leyland cypress, the fast-growing conifer behind so many garden hedges. This is what one side of that family looks like when it is left alone for a century and a half.\n\nThe wood is free to walk into from Bramble Lane. A giant coast redwood and a vast Austrian black pine stand in the same old grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_016",
+      "name": "The Bundle-planted Sessile Oak, Bishops Knoll",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 600 to 700 years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 700,
+      "location": {
+        "address": "Bishops Knoll Wood, Bramble Lane entrance, Stoke Bishop, Bristol BS9 1JH",
+        "latitude": 51.47408,
+        "longitude": -2.64426,
+        "neighbourhood": "Stoke Bishop"
+      },
+      "verified_sources": [
+        "https://www.woodlandtrust.org.uk/visiting-woods/woods/bishops-knoll/",
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+      ],
+      "access": "Free. Woodland Trust wood, open access, entrance on Bramble Lane; the oak is the first big tree on entering (Woodland Trust).",
+      "transport": "Nearest bus stop Julian Road, 1 km walk on pavement (Woodland Trust).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the several fused stems that make one broad trunk, seven metres round. It stands close to the Bramble Lane entrance among apple and other fruit trees, partly screened by young ash.",
+      "story": "This oak may be six trees pretending to be one. The Woodland Trust thinks it was planted as a bundle, six or so young oaks set in a single hole, which over the centuries fused into one trunk. That would explain why it is so portly, seven metres round. The Bristol Tree Forum agrees it may have been a bundle planting, noting that its several stems do not appear to grow from an old pollard cut, the other usual reason an oak ends up with many trunks.\n\nHow old it is depends on whom you ask. The Woodland Trust, which owns the wood, says it could be as much as 600 years old and probably dates from the medieval deer park that once covered this ground. The Forum puts it at 700. Both are estimates from the size of a tree whose size may be the work of six. Either way it was growing here centuries before The Knoll, the Victorian mansion whose grounds became this wood, and long before the Monterey cypress a short walk away.\n\nThe two sources also disagree on how easy it is to spot. The Trust describes it looming through apple and other fruit trees as the first thing to catch the eye when you come in from Bramble Lane. The Forum says it is disguised by young ash trees and not easy to find. Look near the entrance, among the fruit trees, for a broad oak made of several fused stems.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_017",
+      "name": "The Blaise Meadow Sweet Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 550 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 700,
+      "location": {
+        "address": "Meadow off Henbury Road, Blaise Castle Estate, Henbury, Bristol BS10 7QS",
+        "latitude": 51.50411,
+        "longitude": -2.64454,
+        "neighbourhood": "Henbury"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/",
+        "https://en.wikipedia.org/wiki/Blaise_Castle_Estate"
+      ],
+      "access": "Free. Blaise Castle Estate is a council-owned public park (Wikipedia); meadow off Henbury Road. No opening hours found.",
+      "transport": "Bus to Henbury / Blaise Castle area; not checked. About 7 km north-west of the centre (computed).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the vast horizontal limbs spreading from a trunk seven metres round. It stands in the meadow off Henbury Road on the Blaise Castle Estate, beside a sycamore that grows on five trunks.",
+      "story": "If the Bristol Tree Forum's estimate is right, this chestnut was already around 300 years old when Humphry Repton came to Blaise to design the parkland. The Forum puts it at about 550 years, with a trunk seven metres round, and describes its vast horizontal branches reaching out across the meadow off Henbury Road.\n\nThat age is the Forum's own figure, worked out from a tree nobody has dated, and we have found no second written source for this particular chestnut. A girth of seven metres is in keeping with a sweet chestnut several centuries old, but treat 550 as an estimate. On the Forum's figure it would have been growing here through the late medieval centuries, the Civil War, and the years after 1789, when the banker John Scandrett Harford bought the estate and had Repton reshape the grounds into the Picturesque park that is now free for anyone to walk.\n\nThe chestnut does not have the meadow to itself, and its neighbours are part of the reason to come. The Forum lists a sycamore beside it that grows on five trunks, each about 2.8 metres round and seven metres around all together, and the stump of an old common lime that has rotted down and thrown up a thicket of thin new trunks from its base. Three trees in one field, each refusing to grow the way a tree in a textbook does.\n\nIf you know more about its history, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_018",
+      "name": "The Wellingtonias by the Lower Pond, Combe Dingle",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 150 to 170 years",
+      "age_min": 150,
+      "age_max": 170,
+      "girth_cm": 710,
+      "location": {
+        "address": "Combe Dingle, by the lower pond on the Trym, Blaise Castle Estate, Bristol BS10",
+        "latitude": 51.4973,
+        "longitude": -2.63955,
+        "neighbourhood": "Coombe Dingle"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+      ],
+      "access": "Free. Within the public Blaise Castle Estate (council-owned, Wikipedia); on the slope beside the stream near the lower pond.",
+      "transport": "Not checked; Coombe Dingle suburb adjoins the estate. About 6.5 km north-west of the centre (computed).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise them as two very tall giant sequoias standing together, the thicker one, 7.1 metres round, on the stream side. They stand on the slope beside the stream near the lower pond in Combe Dingle.",
+      "story": "Two Californian giants stand thirty metres apart at the bottom of a Bristol valley, beside a stream and a small pond. The thicker of the pair measures 7.1 metres round, which makes it, according to the Bristol Tree Forum, the largest of the three Wellingtonias on the Blaise Castle Estate. Its partner, about 30 metres away, is 6 metres round.\n\nWellingtonia is the British name for the giant sequoia, the species of the biggest trees on Earth in the Sierra Nevada, and in Britain it is a newcomer. The Forum's account is that seed reached the Veitch nursery in 1855. It dates the smaller of these two at about 150 years. That is an estimate from the species' arrival, not a planting record, so the pair are best thought of as somewhere between 150 and 170 years old.\n\nThat makes them young by the standards of this list, and by the standards of their own species, which can live for thousands of years in California. Here, beside the lower pond on the Trym, they are a century and a half into that. The third of the estate's Wellingtonias, 33 metres tall, stands near the house, about 900 metres away.\n\nWe have only the Forum's survey for these trees. If you know more about who planted them, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_019",
+      "name": "The Oldbury Court Sweet Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 300,
+      "age_max": 450,
+      "girth_cm": 590,
+      "location": {
+        "address": "Oldbury Court Estate, Fishponds, Bristol BS16",
+        "latitude": 51.48888,
+        "longitude": -2.52479,
+        "neighbourhood": "Fishponds"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://en.wikipedia.org/wiki/Oldbury_Court_Estate"
+      ],
+      "access": "Free. Oldbury Court Estate is a public park beside the River Frome (Wikipedia).",
+      "transport": "Fishponds, about 4.8 km north-east of the centre (Wikipedia); bus not checked.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by standing alone in the middle of a wide grassy area, a clean trunk 5.9 metres round under a broad head of branches. It stands in the open centre of Oldbury Court Estate.",
+      "story": "One tree runs this park. The Bristol Tree Forum says this sweet chestnut dominates Oldbury Court, a massive veteran standing on its own in the middle of a wide stretch of grass, with a clean trunk 5.9 metres round and a fine head of branches above it. In a park of big trees, it is the one you see first.\n\nThe Forum estimates it at about 400 years old. That is the Forum's figure, from a tree that has never been dated, and we have only its survey for this particular chestnut, so take the number as a careful guess rather than a record. On that estimate it would have been growing here since the early 1600s, long before Oldbury Court became a public park in Fishponds and before Humphry Repton, the landscape designer, was brought in to advise on the grounds.\n\nSweet chestnuts are not native to Britain. Nobody has left a record of how this one came to stand here. Its neighbours give a sense of the place. The Forum also lists two big oaks on the northern edge of the estate, above the gorge of the River Frome, at around 380 years old.\n\nIf you know its history, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_020",
+      "name": "The Hermitage Wood Horse Chestnuts, Stoke Park",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 550,
+      "location": {
+        "address": "Hermitage Wood, Stoke Park, Stoke Gifford / Bristol BS16",
+        "latitude": 51.49379,
+        "longitude": -2.55279,
+        "neighbourhood": "Stoke Park"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/"
+      ],
+      "access": "Free. Hermitage Wood lies in Stoke Park, a public park; BTF does not state hours. Access not independently checked.",
+      "transport": "Not checked; Stoke Park is about 5 km north-east of the centre (computed).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it as the biggest of three old horse chestnuts, 5.5 metres round, the largest trees in Hermitage Wood. It stands on the eastern edge of the wood in Stoke Park.",
+      "story": "The biggest trees in Hermitage Wood are not the native oaks or ash you might expect, but three horse chestnuts, a species from the Balkans. The Bristol Tree Forum records all three as veterans. The largest, on the eastern edge of the wood, is 5.5 metres round. The other two, 5.05 and 5 metres, stand in a corner of the wood and on the northern edge of the main path, all within about 300 metres of each other.\n\nThe Forum thinks they were probably planted for aesthetic reasons, and that they are probably about 300 years old. That age is the Forum's guess, and we could not find a second source to confirm it. If it holds, they would be old for their kind, a species that only reached Britain in the 17th century.\n\nThe wood sits inside Stoke Park, a public park on the north-eastern edge of Bristol. Nobody has published who planted them, or exactly when.\n\nThey are at their best in May, when the big leaves are fresh and the trees carry their upright spikes of white flowers, and again in autumn when the conkers come down. If you know more about the trio, tell us.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when all three chestnuts carry their upright spikes of white flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_021",
+      "name": "The Kings Weston Deodar",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 430,
+      "location": {
+        "address": "Beside Kings Weston House, Kings Weston Lane, Bristol BS11 0UT",
+        "latitude": 51.49377,
+        "longitude": -2.66067,
+        "neighbourhood": "Kings Weston"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/",
+        "https://en.wikipedia.org/wiki/Kings_Weston_House"
+      ],
+      "access": "Free to see from the parkland around the house (the Kings Weston estate parkland is open; the house itself is a conference and wedding venue). Opening hours not stated.",
+      "transport": "Not checked; Kings Weston is about 7 km north-west of the centre (computed).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the huge limb that leaves the trunk almost at ground level and runs out sideways. It stands beside Kings Weston House, a deodar cedar 4.3 metres round.",
+      "age_basis": "none",
+      "story": "Most cedars hold their great limbs well above your head. This one throws a huge branch out sideways almost at ground level, from so low on the trunk that the limb starts where most trees are still all trunk. The Bristol Tree Forum picked it as one of twenty remarkable Bristol trees that hold no national record, and that branch is the reason.\n\nThe tree is a deodar, the Himalayan cedar, with a trunk 4.3 metres round, and it grows right beside Kings Weston House. Sir John Vanbrugh designed it for Edward Southwell in the early 18th century, and it was remodelled between 1845 and 1850. Whether the cedar is as old as that remodelling, no source we have found says, and the Forum gives no age. So it stays undated here, and if you know when it was planted, tell us.\n\nThe parkland around the house is open to walk through, and the cedar can be seen from it. The house itself is a wedding and conference venue rather than a museum. The Oak of Kings Weston, older than Vanbrugh's house, stands in the same estate and makes the pair worth one walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bri_022",
+      "name": "The Snuff Mills Quarry-edge Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Edge of the former quarry cliff, Snuff Mills park, Frome Valley, Bristol BS16",
+        "latitude": 51.48684,
+        "longitude": -2.53988,
+        "neighbourhood": "Stapleton"
+      },
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/20-remarkable-trees-that-are-not-champions/",
+        "https://en.wikipedia.org/wiki/Snuff_Mills"
+      ],
+      "access": "Free. Snuff Mills is a public riverside park on the Frome (Wikipedia). The tree is on the edge of the path above the quarry cliff, and seen from the lower path in winter.",
+      "transport": "Not checked; Stapleton, about 5 km north-east of the centre (computed).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by its position, a squat old oak right on the lip of the old quarry cliff at the edge of the upper path. In winter it shows from the lower path by the river.",
+      "story": "This oak grows on the lip of a sheer drop. Snuff Mills was quarried once, and the old quarry face along the Frome valley is now a vertical cliff. The oak stands right at its top edge, beside the path, with nothing much between its roots and the air. The Bristol Tree Forum, which put it on its list of twenty remarkable Bristol trees that hold no national record, says simply that it defies gravity.\n\nThe Forum calls it very ancient and squat, which is about all anyone has written down. There is no published girth and no age, not even a rough estimate, and we have found no second source for this particular tree. If you know how old it is, or have measured it, tell us.\n\nWhat the Forum does say is where to look. In summer the oak is one tree among many along the top path. In winter, with the leaves down, it shows from the lower path along the river, a low, broad shape hunched on the very edge of the cliff above you. That is the view worth coming for, and it needs no scrambling.\n\nSnuff Mills is a public riverside park on the Frome in Stapleton, free and open to walk. A small-leaved lime with weeping branches grows on the riverbank a few hundred metres along the river, listed by the same survey.",
+      "best_time": {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "winter, when the bare oak shows from the lower path, hunched on the edge of the quarry cliff"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

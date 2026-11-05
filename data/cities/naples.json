@@ -987,6 +987,294 @@
         "name": "Alberi monumentali della Campania (Regione Campania)",
         "url": "https://agricoltura.regione.campania.it/foreste/monum/scheda_163.html"
       }
+    },
+    {
+      "id": "nap_025",
+      "name": "The Plane of the Molosiglio Gardens",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "probably early 19th century",
+      "age_min": 150,
+      "age_max": 220,
+      "age_basis": "source",
+      "girth_cm": 430,
+      "height_m": 35,
+      "location": {
+        "address": "Giardini del Molosiglio, Via Ammiraglio Ferdinando Acton, 80132 Napoli",
+        "latitude": 40.83467,
+        "longitude": 14.25131,
+        "neighbourhood": "Molosiglio, between Piazza del Plebiscito and the port"
+      },
+      "location_site": {
+        "name": "Giardini del Molosiglio",
+        "radius_m": 50
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_16.html",
+        "https://www.inaturalist.org/observations/282754419"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 01/F839/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free. Public seafront garden (Giardini del Molosiglio), open air, no gate hours found.",
+      "transport": "Walk of about 10 minutes from Piazza del Plebiscito; Municipio metro (line 1) is about 5 minutes away.",
+      "curation_status": "flagged",
+      "verify_notes": "MASAF 430 cm, 35 m. Campania regional register scheda 16 (last update 2 Jan 2020) places it in the Molosiglio gardens at 40.834722,14.251389, species Platanus acerifolia, height 30 m, says it probably dates from the first half of the 19th century when the port-side area was laid out, and kept its typical form despite the urban setting. Its girth there reads '48 cm', plainly a typo (MASAF 430). Alive: iNaturalist observation 2025-05-20 (Platanus, cultivated, place Via Giardini del Molosiglio) at 40.834858,14.251322, about 20 m from the register point; photo (viewed, not stored, not open licence) shows a very tall plane beside a green fence of a children's play area. Age: source says probably first half of 19th century, not a dated planting for this tree, so left as a vague range. Recognise: the plane stands next to the green fence of the playground inside the gardens, a tall trunk with a high crown. Pin approximate (register point, one iNaturalist fix within ~20 m).",
+      "story": "Campania's regional register of monumental trees gives this plane a trunk 48 centimetres round. The national register says 4.3 metres, which anyone standing beside it will find easier to believe. The regional figure is a slip of the keyboard, not a sapling.\n\nThe two registers also disagree on height, by a margin that still leaves it towering: 35 metres in the national list, 30 in the regional one. Either way it stands high above the children's play area it shades, in the Giardini del Molosiglio, the seafront garden between Piazza del Plebiscito and the port.\n\nThis strip of ground was laid out when the harbour side of the city was reorganised, and the regional register says the plane probably dates from the first half of the 19th century, from that laying out. It is an estimate, not a planting record, so read it as somewhere between a century and a half and two centuries rather than a birthday.\n\nWhat the register singles out is the shape. City planes are usually cut back or squeezed by buildings into lopsided crowns, and the register notes that this one has kept the tall, typical form of its species despite growing in the middle of a city. A naturalist photographed it in May 2025, still standing over the green fence of the playground. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by its height, a tall trunk with a high crown above everything around it, right beside the green fence of the children's play area in the Giardini del Molosiglio.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nap_026",
+      "name": "The Ombu of Piazza degli Artisti",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 350,
+      "height_m": 10,
+      "location": {
+        "address": "Piazza degli Artisti, 80129 Napoli",
+        "latitude": 40.84812,
+        "longitude": 14.22831,
+        "neighbourhood": "Vomero"
+      },
+      "location_site": {
+        "name": "Piazza degli Artisti",
+        "radius_m": 50
+      },
+      "location_precision": "confirmed",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.inaturalist.org/observations/337114023",
+        "https://www.inaturalist.org/observations/238213971"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 38/F839/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free. Public square in the Vomero, open at all hours.",
+      "transport": "In the Vomero; Vanvitelli station (line 1) is the nearest metro, a short walk (distance not measured).",
+      "curation_status": "flagged",
+      "verify_notes": "MASAF 350 cm, 10 m (ombu trunks spread wide and low, so girth is large against height). Alive and placed: two iNaturalist observations, 2024-08-27 (place Piazza degli Artisti) and 2026-02-02 (Phytolacca dioica), at 40.84805,14.22821 and 40.84803,14.22838, within about 10 m of the register point. The 2026 photo (viewed, licence cc-by-nc so NOT usable) shows a swollen multi-stemmed buttressed base on a lawn with an information plaque on a stand beside it, lit at night. Single tree in the square, so the pin is confirmed by GPS fix plus the photographed tree; the one register record in the piazza is the only ombu there. Species is native to the Pampa; sap is toxic. No age source. Recognise: the very broad swollen root-flare and several pale trunks, the information plaque on its stand beside it.",
+      "story": "This tree is three and a half metres round and only ten metres tall. The ombu comes from the grasslands of the Pampa, in South America, and it grows wide and low rather than up. That is why the national register of monumental trees records such odd proportions for it here, 350 centimetres of girth under a modest crown.\n\nIt is the only ombu in Piazza degli Artisti, a residential square in the Vomero, the hill district above the old city. It stands on a lawn, and the base is the spectacle. Several pale stems rise from a root flare so broad and swollen that it looks poured rather than grown. An information plaque stands on a post beside it, and after dark the tree is lit.\n\nNaples has a second, larger ombu down in Posillipo, on Via Manzoni, where it stands directly on the pavement. This one has a square to itself, which makes it the easier of the two to step back from and take in whole. Naturalists photographed it in August 2024 and again in February 2026, so it is very much alive.\n\nThe sap of the ombu is toxic, so it is a tree for looking at rather than handling. Nobody has published when this one was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by the very broad swollen root flare and several pale trunks rising from it, with an information plaque on a stand beside it, the one tree on the lawn of Piazza degli Artisti.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nap_027",
+      "name": "The Camphor of the Miano Cemetery",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 454,
+      "height_m": 30,
+      "location": {
+        "address": "Cimitero di Miano, Via del Cimitero 1, 80145 Napoli",
+        "latitude": 40.88904,
+        "longitude": 14.25549,
+        "neighbourhood": "Miano"
+      },
+      "location_site": {
+        "name": "Miano cemetery entrance",
+        "radius_m": 50
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_26.html"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 11/F839/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Municipal cemetery of Miano, open to visitors; opening hours not found, so check before going (cemeteries here normally open mornings).",
+      "transport": "Miano is in the north of the city, off the metro network; take a city bus or a taxi from the Capodimonte side.",
+      "curation_status": "flagged",
+      "verify_notes": "MASAF 454 cm, 30 m; Campania regional scheda 26 (updated 2 Jan 2020) agrees exactly (454 cm, 30 m, GPS 40.889043,14.255495). Scheda says the cemetery was one of the public works started by Joachim Murat during his stay in Naples (1809) and links the tree's age to that date; that is a bridge from the cemetery's founding to the tree, so age stays empty here: the source implies roughly 200 years but never dates the tree itself. Earlier lead was held for access; resolved: it is a municipal cemetery (public ground), not a private plot. No dated sighting found: iNaturalist and Commons empty within 150 m. Flagged: no recent sighting. Recognise: a very tall camphor with a broad crown by the cemetery entrance at Via del Cimitero 1 (address-level only; stand at the entrance and look for the largest evergreen).",
+      "story": "The cemetery this camphor shades was one of the public works Joachim Murat started during his stay in Naples, around 1809, when he ruled the city as king. The camphor by its entrance is now 30 metres tall, with a trunk 4.54 metres round.\n\nBoth of Italy's registers of monumental trees list it, and for once they agree to the centimetre, national and regional alike. The regional register goes further and ties the tree's age to Murat's founding of the cemetery, which would make it around two hundred years old. That is a reasonable guess and nothing more, because the record dates the cemetery, not the tree. Nobody has counted rings or found a planting record, so we leave its age open.\n\nCamphor trees are evergreen, with a dense crown that stays dark green through the winter, which suits a cemetery. This one stands at the Cimitero di Miano, in the northern outskirts of the city, a long way from the camphors of Capodimonte that most visitors come to see. Naples's most famous camphor, in the Garden of the Princes up there, is almost twice as wide.\n\nNo recent photograph of this one has been published, so if you visit, tell us how it looks.",
+      "how_to_recognise": "You can recognise it as the largest evergreen at the entrance of the Cimitero di Miano on Via del Cimitero, a very tall camphor with a broad, rounded crown.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nap_028",
+      "name": "The Moreton Bay Fig of the Mostra d'Oltremare",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 600,
+      "height_m": 20,
+      "location": {
+        "address": "Mostra d'Oltremare, Viale John Fitzgerald Kennedy 54, 80125 Napoli",
+        "latitude": 40.82218,
+        "longitude": 14.18633,
+        "neighbourhood": "Fuorigrotta"
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.napolike.it/la-mostra-d-oltremare-a-napoli-riapre-al-pubblico-orari-del-parco",
+        "https://mostradoltremare.it/wp-content/uploads/2024/03/Regolamento-Parco-Monumentale.pdf"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 21/F839/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "The monumental park of the Mostra d'Oltremare opens daily from 7:00 to sunset; the park's 2016 regulation set a day ticket of 1 euro. All or part of the park can close for trade fairs, so check mostradoltremare.it before going.",
+      "transport": "Campi Flegrei station (line 2 and Cumana) is next to the Mostra, about 5 minutes' walk.",
+      "curation_status": "flagged",
+      "verify_notes": "MASAF 600 cm, 20 m, the fattest registered tree in the park. Sources: MASAF and the Mostra's park regulation/Napolike for access. Alive: no dated sighting found (iNaturalist empty for Ficus within 150 m, Commons geosearch returned nothing relevant); flagged. Pin approximate, MASAF coordinate inside a large park. A group of Canary palms nearby is registered as an 'insieme omogeneo' and is blocked. Recognise: an enormous fig with buttress roots and a dense evergreen crown, in the park about 130 m from tipu 24 (nap_029).",
+      "story": "Six metres round. No tree in the park of the Mostra d'Oltremare has a fatter trunk on Italy's national register of monumental trees. It belongs to a Moreton Bay fig, an Australian species that grows wide as much as tall, and this one reaches 20 metres over a base spread out by buttress roots.\n\nThe Mostra d'Oltremare, the Overseas Exhibition, is a fairground in Fuorigrotta, in the west of the city, with a monumental park around its pavilions. The register lists several of the park's trees. A group of Canary palms is registered together as a single ensemble, and a tipu tree, a South American legume with a wide, low crown, grows about 130 metres from the fig. Of all of them, the fig carries the most wood.\n\nMoreton Bay figs are evergreen, so the dense, dark crown looks much the same in January as in July, and there is no wrong season for it. The park's hours and the trade-fair calendar matter more than the weather, since the Mostra can close all or part of the grounds for events.\n\nTwo honest caveats. Nobody has dated the tree, and no recent published photograph of it has turned up, so the register is the latest word on it. If you have been, tell us how it looks, and if you know when it was planted, tell us that too.",
+      "how_to_recognise": "You can recognise it by the enormous buttress roots and dense evergreen crown, the fattest trunk in the park, about 130 metres from the low, wide-crowned tipu tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nap_029",
+      "name": "The Tipu Tree of the Mostra d'Oltremare",
+      "species": "Tipu Tree (Tipuana tipu)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 320,
+      "height_m": 14,
+      "location": {
+        "address": "Mostra d'Oltremare, Viale John Fitzgerald Kennedy 54, 80125 Napoli",
+        "latitude": 40.82158,
+        "longitude": 14.18499,
+        "neighbourhood": "Fuorigrotta"
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.napolike.it/la-mostra-d-oltremare-a-napoli-riapre-al-pubblico-orari-del-parco"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 24/F839/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Same as the Moreton Bay fig: the park opens daily from 7:00 to sunset, with a small day ticket under the 2016 regulation, and can close for trade fairs. Check mostradoltremare.it.",
+      "transport": "Campi Flegrei station, about 7 minutes' walk.",
+      "curation_status": "flagged",
+      "verify_notes": "MASAF 320 cm, 14 m; register only, no dated sighting, flagged. Species per MASAF (Tipu tree; confirm on site, the register lists it only by that name). Pin approximate. Recognise: a wide low crown with pinnate leaves, yellow-orange flowers in early summer, near the fig nap_028.",
+      "story": "For a few weeks in early summer this tree turns yellow. The tipu, a South American tree with feathery, pinnate leaves, covers its wide crown in yellow-orange flowers, and in the park of the Mostra d'Oltremare that is the moment it outshines the much bigger fig 130 metres away.\n\nThe rest of the year it is a quieter thing, 14 metres tall with a trunk 3.2 metres round, which is a lot of trunk for a tree that height. Tipus grow broad rather than tall, spreading into a low, umbrella-like canopy, and Italy's national register of monumental trees lists this one among the park's veterans.\n\nIt grows in Fuorigrotta, in the west of Naples, in the monumental park that surrounds the pavilions of the Mostra d'Oltremare, the city's old Overseas Exhibition grounds and now a fairground. The park opens from early morning to sunset, but it can close in whole or in part for trade fairs, so the flowering and the fair calendar have to line up.\n\nThe register is so far the only published record of this tree. It names the species and gives the measurements, and it says nothing of age. No recent photograph of it has been published either. If you see it in flower, or know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the wide, low crown of feathery pinnate leaves, yellow-orange with flowers in early summer, standing near the huge buttressed Moreton Bay fig.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "early summer, when the low crown fills with yellow-orange flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nap_030",
+      "name": "The Plane of the Pheasantry, Capodimonte",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.87645,
+        "longitude": 14.24929,
+        "neighbourhood": "Capodimonte"
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.museionline.info/napoli-musei-e-monumenti/real-bosco-di-capodimonte"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 53/F839/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free. The Real Bosco di Capodimonte park is free to enter (the museum charges, the park does not); park hours run from 7:00 to between 17:00 and 19:00 depending on the season, so check capodimonte.cultura.gov.it.",
+      "transport": "Bus C63 to Capodimonte, or about 20 minutes uphill from Museo Nazionale metro.",
+      "curation_status": "flagged",
+      "verify_notes": "MASAF 53/F839: 430 cm, 35 m at 40.87645,14.24929. This is the same tree as the existing lead 'The Plane of the Pheasantry' (regional scheda 250 at 40.876389,14.249167 gives 170 cm and 25 m, age 200 years, in a circular plot west of the pheasantry reached from the Porta Miano): a 2.5x girth conflict, so girth and height are left empty here; the writer should state both figures. No dated sighting of this plane; iNaturalist within 150 m only returned herbs. Not the plane on the Scale della Principessa Jolanda that lightning destroyed in August 2022. Flagged. Recognise: an isolated plane in a circular plot, west of the pheasantry building, reached from the Porta Miano gate.",
+      "story": "Italy's two official registers agree this plane exists and stands in the same circle of ground at Capodimonte. They do not agree on how big it is. The national register gives a trunk 4.3 metres round and a height of 35 metres. The Campania regional register gives 1.7 metres and 25. That is a difference of two and a half times in girth, too large to be a tape held at a different height, and nobody has published which figure is right.\n\nThe regional record adds the one thing the national list leaves out, an age of 200 years. It is that register's estimate alone, and given the confusion over the measurements, treat it as a claim rather than a fact.\n\nThe tree itself is easy to place. It stands alone in a circular plot just west of the pheasantry, the Fagianeria, in the Real Bosco di Capodimonte, the old Bourbon hunting estate on the hill above the city. The nearest way in is the Porta Miano gate on the park's northern side.\n\nIt is not the plane that stood on the staircase of the Principessa Jolanda gardens, which lightning destroyed in August 2022. This one is still on the register and still in its circle. Go with a tape measure if you like, and tell us which register was right.",
+      "how_to_recognise": "You can recognise it as the plane standing alone in a circular plot just west of the pheasantry building, a short walk in from the Porta Miano gate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nap_031",
+      "name": "The Podocarpus of Capodimonte",
+      "species": "Buddhist Pine (Podocarpus macrophyllus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 300,
+      "height_m": 20,
+      "location": {
+        "address": "Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.87486,
+        "longitude": 14.24922,
+        "neighbourhood": "Capodimonte"
+      },
+      "location_precision": "approximate",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.museionline.info/napoli-musei-e-monumenti/real-bosco-di-capodimonte"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 54/F839/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free. The Real Bosco di Capodimonte park is free to enter (the museum charges, the park does not); park hours run from 7:00 to between 17:00 and 19:00 depending on the season, so check capodimonte.cultura.gov.it.",
+      "transport": "Bus C63 to Capodimonte, or about 20 minutes uphill from Museo Nazionale metro.",
+      "curation_status": "flagged",
+      "verify_notes": "MASAF 300 cm, 20 m; register only, no dated sighting, flagged. A second Podocarpus (242 cm, Piazza Cavour) is already live as nap_019 and one fallen Podocarpus lies near it; this one is a different tree in the Bosco, about 175 m south of the pheasantry plane. Pin approximate. Recognise: evergreen conifer with long leathery needles, at the north-west of the park near the Porta Miano side.",
+      "story": "Naples already has a famous podocarpus, standing in Piazza Cavour with a fallen companion beside it. This one, in the Real Bosco di Capodimonte, is the fatter of the two. Italy's national register of monumental trees gives it a trunk three metres round, against 2.42 metres for the tree in the square, and a height of 20 metres.\n\nPodocarpus macrophyllus comes from East Asia, and it does not look like the conifers most Europeans know. Instead of short needles it carries long, narrow, leathery leaves, dark green all year, which makes a tree this size easy to mistake for a broadleaf until you look closely.\n\nIt grows in the north-west of the Bosco, the former Bourbon hunting estate on the hill above the city, towards the Porta Miano gate and about 175 metres south of the old plane in its circle by the pheasantry. Most of Capodimonte's better-known trees grow around the Garden of the Princes and the royal orchard. Coming in from Porta Miano, this one and the plane make a short walk of their own.\n\nThe register is so far the only published record of it. There is no recent photograph and no age. If you find it, tell us how it looks, and if you know when it was planted, tell us that too.",
+      "how_to_recognise": "You can recognise it by its long, leathery, dark green needles on a trunk three metres round, an evergreen conifer in the north-west of the park, about 175 metres south of the pheasantry plane.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

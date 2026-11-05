@@ -1121,6 +1121,83 @@
         "name": "Albero monumentale d'Italia (MASAF), no. 54/D612/FI/09, 55/D612/FI/09, 56/D612/FI/09",
         "url": null
       }
+    },
+    {
+      "id": "flo_028",
+      "name": "The Wisteria of Via Pisana",
+      "species": "Chinese Wisteria (Wisteria sinensis)",
+      "masaf_code": "59/D612/FI/09",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "age_basis": "source",
+      "girth_cm": 200,
+      "height_m": 5,
+      "location": {
+        "address": "Via Pisana 130-132, forecourt of the Esselunga at Piazza Pier Vettori, Florence",
+        "latitude": 43.772217,
+        "longitude": 11.232589,
+        "neighbourhood": "Porta San Frediano / Pier Vettori"
+      },
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Esselunga forecourt, Piazza Pier Vettori",
+        "radius_m": 50
+      },
+      "pin_source": "MASAF register point, inside a single supermarket forecourt; no photograph geotag found.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "59/D612/FI/09",
+        "url": "https://ilregistrodeglialberi.it/14410-glicine-glicine-firenze-fi-toscana"
+      },
+      "recognition_facts": [
+        "It stands in the car-park forecourt of the Esselunga supermarket on Via Pisana, right by the Piazza Pier Vettori roundabout, where trolleys and bicycles crowd round it",
+        "Next to it is the old Villa Capponi Tempi; the wisteria is the last survivor of the long pergola that once sheltered walkers from the villa to the Arno",
+        "One thick main trunk about 2 m round climbs up into a very wide, tangled crown, 5 m tall; it flowers briefly in mid-April"
+      ],
+      "access": "Free to see in the supermarket forecourt, open during shop hours; no ticket and no door to pass. Villa Capponi Tempi itself is not open.",
+      "transport": "About 1.3 km west of Santa Maria Novella station, roughly 20 minutes on foot, at the Piazza Pier Vettori roundabout on Via Pisana; city buses and the tram serve the area.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/14410-glicine-glicine-firenze-fi-toscana",
+        "https://www.ascuoladaglialberi.net/firenze/",
+        "https://ambiente.comune.fi.it/dalle-redazioni/aggiornato-lelenco-degli-alberi-monumentali",
+        "https://www.055firenze.it/art/240408/Glicine-Firenze-dove-cercarlo-tra-giardini-angoli-nascosti"
+      ],
+      "curation_status": "flagged",
+      "verify_notes": "Existence: MASAF 59/D612/FI/09 (5 m tall, no girth in the register); RAMI record 14410 (health 'buona', accessible, last updated 2025-10-14, 'Locale' relevance); the comune of Florence lists it among its private monumental trees at Via Pisana 130/132 (seen via search description only); ascuoladaglialberi.net (read on the page): 'the magnificent wisteria of about 200 years, main trunk 2 m in circumference, a great crown' in the Esselunga piazzale, 'the testimony of a garden and a nineteenth century villa'. 055firenze.it (read) mentions wisteria near the Esselunga of Piazza Pier Vettori. CONFLICT on age: the blog gives about 200 years and a 19th-century villa; the RAMI field note says the last of a long wisteria pergola of an old villa (the text mixes in 16th-century claims for the villa; not used). Age broad 150 to 250, from the blog only, flagged. Girth 200 cm is the blog's figure, not the register's. A wisteria is a climbing vine, labelled as such. Alive: RAMI 2025 health 'buona'. Pin approximate within the forecourt; no photo found (Commons search throttled, iNaturalist nothing within 150 m).",
+      "facts_for_story": [
+        {
+          "fact": "About 200 years old by a Florence tree-guide's account, trunk about 2 m round with a great crown, survivor of a villa garden now a supermarket forecourt.",
+          "url": "https://www.ascuoladaglialberi.net/firenze/"
+        },
+        {
+          "fact": "Remnant of the long wisteria pergola of Villa Capponi Tempi, which once sheltered ladies walking toward the Arno.",
+          "url": "https://ilregistrodeglialberi.it/14410-glicine-glicine-firenze-fi-toscana"
+        },
+        {
+          "fact": "Listed by the comune of Florence among its monumental trees on private land; MASAF 59/D612/FI/09, 5 m tall.",
+          "url": "https://ambiente.comune.fi.it/dalle-redazioni/aggiornato-lelenco-degli-alberi-monumentali"
+        },
+        {
+          "fact": "Florence's wisteria flower briefly, mostly mid-April.",
+          "url": "https://www.055firenze.it/art/240408/Glicine-Firenze-dove-cercarlo-tra-giardini-angoli-nascosti"
+        }
+      ],
+      "story": "One of Florence's registered monumental trees grows in a supermarket car park. It is a Chinese wisteria in the forecourt of the Esselunga on Via Pisana, with trolleys and bicycles parked round a main trunk about 2 metres in circumference, and the Comune of Florence lists it among the city's monumental trees on private land.\n\nIt is the last piece of something much longer. A field note in Il Registro degli Alberi, a volunteer tree register, describes it as the remnant of the wisteria pergola of Villa Capponi Tempi, which once sheltered ladies walking from the villa towards the Arno. A Florence tree guide calls it about 200 years old and the testimony of a 19th-century villa and garden. Neither source dates the planting, and the villa's own history is told in different ways, so take the age as somewhere between 150 and 250 years.\n\nA wisteria is a climbing vine rather than a tree, and the register measures this one at just 5 metres tall. What it lacks in height it makes up in spread, a wide, tangled crown over the parking bays. Its health was rated good in 2025.\n\nThe flowering is brief. Florence's wisteria bloom mostly in mid-April, and this one has about a week of colour before the leaves take over. Come then. It is about 1.3 kilometres west of Santa Maria Novella station, roughly 20 minutes on foot, at the Piazza Pier Vettori roundabout. Villa Capponi Tempi itself is not open.",
+      "how_to_recognise": "You can recognise it by one thick trunk about 2 metres round under a wide, tangled crown, with trolleys and bikes parked around it. It stands in the Esselunga car park on Via Pisana, by the Piazza Pier Vettori roundabout.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "mid-April, for about a week of wisteria bloom"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

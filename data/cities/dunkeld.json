@@ -61,6 +61,284 @@
       "photos": [],
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "dnk_002",
+      "place": "dunkeld",
+      "name": "The Birnam Oak",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 500 to 600 years",
+      "age_min": 500,
+      "age_max": 600,
+      "girth_cm": 700,
+      "height_m": 27,
+      "location": {
+        "address": "Riverside path on the south bank of the River Tay, Birnam, Perth and Kinross",
+        "latitude": 56.56134,
+        "longitude": -3.5757,
+        "neighbourhood": "Birnam"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Birnam_Oak",
+        "https://www.internationaloaksociety.org/content/oaks-dunkeld",
+        "https://hiddenscotland.com/listings/birnam-oak",
+        "https://www.britainexpress.com/scotland/Tayside/countryside/birnam-oak.htm",
+        "https://www.openstreetmap.org/node/3639903710"
+      ],
+      "access": "Free, any time (Hidden Scotland). On the riverside path along the south bank of the Tay a few minutes' walk from Birnam village; Dunkeld walkers cross the river by the Telford bridge and follow the path east (Walkhighlands route via search summary).",
+      "transport": "Dunkeld and Birnam railway station serves both villages; the path starts a few minutes' walk from Birnam village. Distances not measured by this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/The_Birnam_Oak_%28geograph_7532835%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Ralph Greig, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "approved",
+        "attribution_url": "https://www.geograph.org.uk/photo/7532835"
+      },
+      "pin_source": "OpenStreetMap natural=tree node 3639903710 (name The Birnam Oak, wikidata Q4916880, last edited 2025-07-31); agrees within about 40 m with Wikidata Q4916880 (56.5609,-3.5766) and Geograph subject points.",
+      "verify_notes": "Last recognised survivor of Birnam Wood in Shakespeare's Macbeth, by local tradition; the tree itself is far younger than the 11th-century Macbeth. Wikipedia: trunk 5.5 m wide (Wikipedia calls this width, not girth), age 'around 600 years' from girth, so already mature if Shakespeare visited Perthshire with strolling players in 1589 (Britain Express, 'believed', not documented). Forestry and Land Scotland lists it among Scotland's most famous oaks (per Wikipedia). International Oak Society (Shaun Haddock, 2016): girth 7 m, height 27 m, hollow trunk recently worked on by specialists. OSM tag diameter=7000 (mm; roughly 7 m girth or diameter, unclear which; use girth 7 m as IOS gives). Hidden Scotland: first few metres of the trunk hollow, mossy bark, riverside path; lowest long branches held on wooden props (Britain Express: held upright by timber props). Sources differ: trunk 5.5 m wide (Wikipedia) versus girth 7 m (IOS); not a conflict if 5.5 m is the diameter, but written as 'wide'. Growing on low-lying ground behind flood levees; Britain Express (via search summary only, not read on the fetched page) mentions flood damage to roots in 2016 (Storm Desmond); treat as unverified. ALIVE: dated Geograph photo 2023-07-01 (Ralph Greig); OSM node edited 2025-07-31, after Storm Eowyn (Jan 2025); no report of storm damage found. Age is a size-derived estimate, no record exists. Nearby: the Birnam Sycamore (dnk_003) about 40 m away on the same path, a separate lead for the same stand; Niel Gow's Oak (dnk_001) is across the Tay on the Inver Walk.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, about 7 metres round, and the long lower limbs resting on timber props. It stands beside the riverside path on the Tay's south bank, a few steps from the Birnam Sycamore.",
+      "story": "In Macbeth, the king is safe until Birnam Wood comes to Dunsinane. This oak is said to be the last tree of that wood still standing, which is a better story than it is history. The real Macbeth died in the 11th century, and this tree is far younger.\n\nNot young, though. Estimates from its size put it at roughly 500 to 600 years. The International Oak Society gives the trunk as 7 metres round and the tree as 27 metres tall, while Wikipedia describes the trunk as 5.5 metres wide, which may be the same trunk measured across rather than around. Either way it was already a sizeable oak if, as is believed but not documented, Shakespeare passed through Perthshire with a company of players in 1589.\n\nThe age shows. The first few metres of the trunk are hollow, the bark is thick with moss, and the long lower limbs reach so far out that they now rest on timber props. Specialists had recently worked on the hollow trunk when the Oak Society visited in 2016. It grows on low ground behind the Tay's flood banks, was photographed in full leaf in July 2023 and was still on the map in 2025.\n\nIt stands on the riverside path on the south bank of the Tay, a few minutes from Birnam village, free at any hour. A few steps along the same path is a sycamore that local tourist literature calls an oak."
+    },
+    {
+      "id": "dnk_003",
+      "place": "dunkeld",
+      "name": "The Birnam Sycamore",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 800,
+      "location": {
+        "address": "Riverside path on the south bank of the River Tay, Birnam, Perth and Kinross",
+        "latitude": 56.56134,
+        "longitude": -3.57619,
+        "neighbourhood": "Birnam"
+      },
+      "verified_sources": [
+        "https://www.internationaloaksociety.org/content/oaks-dunkeld",
+        "https://hiddenscotland.com/listings/birnam-oak",
+        "https://www.openstreetmap.org/node/8847679508",
+        "https://commons.wikimedia.org/wiki/File:The_Birnam_Sycamore_-_geograph.org.uk_-_1242513.jpg"
+      ],
+      "access": "Free, any time. Same riverside path as the Birnam Oak, a few steps further along.",
+      "transport": "As the Birnam Oak: Dunkeld and Birnam railway station serves the villages; distances not measured by this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/The_Birnam_Sycamore_-_geograph.org.uk_-_1242513.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Gordon Hatton, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "approved",
+        "attribution_url": "https://www.geograph.org.uk/photo/1242513"
+      },
+      "pin_source": "OpenStreetMap natural=tree node 8847679508 (name The Young Pretender, description 'Very large sycamore, adjacent to the Birnam Oak', edited 2025-07-31). Wikidata Q123168239 gives 56.5614,-3.57614, within 10 m.",
+      "verify_notes": "Known locally as 'the Young Pretender'. Local tourist literature calls it an oak, but it is an Acer pseudoplatanus (International Oak Society, 2016, which gives girth about 8 m). Hidden Scotland: about 300 years old, girth 8 m, lowest branches so long and heavy they rest on wooden props. OSM diameter 7 m on the node (conflicting measure; girth 8 m per IOS and Hidden Scotland, OSM figure unclear whether girth or diameter). Age is a tourism-source estimate only ('about 300 years'), no measurement behind it that I could read; the search summary also mentioned a 2016 ultrasound survey finding it hollow but I did not read that on a page, so it is not recorded as fact. ALIVE: OSM node edited 2025-07-31 (after Storm Eowyn); Commons photo 'Birnam Sycamore + Birnam Oak' exists but is from 2006, Geograph 2009; no 2023+ photo of this tree itself seen, so flagged 'alive evidence thin'. Two independent sources agree on girth and approximate age (IOS, Hidden Scotland) but they may share tourism origin. Stands about 40 m from the Birnam Oak (dnk_002) on the same path; writer may pair them.",
+      "how_to_recognise": "You can recognise it by the massive trunk, about 8 metres round, and the heavy low branches resting on wooden props. It stands on the riverside path a few steps from the Birnam Oak, the broader of the two.",
+      "story": "Local tourist literature calls this tree an oak. It is a sycamore, and by the International Oak Society's own figures it is a metre rounder than the famous Birnam Oak a few steps along the same path.\n\nThe Society, which knows its oaks, recorded the girth at about 8 metres in 2016. Hidden Scotland gives the same 8 metres and puts the tree at about 300 years old. That age is a tourism estimate, not a count of rings, and the two sources may share the same local information, so read it as a rough guide. A map record gives a 7 metre figure without saying whether it means round or across.\n\nLocally it goes by the Young Pretender, which suits a tree that has spent its life standing next to a more famous one and being mistaken for it. Like its neighbour, it carries its age in its lower limbs, grown so long and heavy that they now rest on wooden props.\n\nThe newest photographs we have found of it are from 2009, and the map record was last updated in 2025. We believe it still stands. If you walk the path, tell us what you find.\n\nIt is free and open at any hour, on the riverside path along the south bank of the Tay at Birnam, so a visit to one tree is a visit to both."
+    },
+    {
+      "id": "dnk_004",
+      "place": "dunkeld",
+      "name": "The Parent Larch",
+      "species": "European Larch (Larix decidua)",
+      "age_estimate": "about 285 years (planted 1738)",
+      "age_min": 280,
+      "age_max": 290,
+      "location": {
+        "address": "Behind Dunkeld Cathedral, Cathedral grounds / Dunkeld House estate edge, Dunkeld, Perth and Kinross",
+        "latitude": 56.5652,
+        "longitude": -3.5911,
+        "neighbourhood": "Dunkeld Cathedral"
+      },
+      "verified_sources": [
+        "https://www.highlandperthshire.org/allnature-wildlife/3330-Grounds-of-Dunkeld-Hilton-House",
+        "https://www.geograph.org.uk/photo/5605370",
+        "https://heritagetreesofscotland.substack.com/p/8-the-parent-larch",
+        "https://en.wikipedia.org/wiki/James_Murray,_2nd_Duke_of_Atholl"
+      ],
+      "access": "Free to walk up to; stands in the grounds of Dunkeld Cathedral (Church of Scotland choir, ruined nave in Historic Environment Scotland care). A small car park lies inside the cathedral grounds; the Substack visitor found its gates open on a visit but suspected closure after services, so on foot is safer.",
+      "transport": "Dunkeld town centre is close by on foot; distance not measured by this pass. Dunkeld and Birnam railway station serves the village.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Dunkeld Cathedral grounds",
+        "radius_m": 50
+      },
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%27Parent_Larch%27_at_Dunkeld_-_geograph.org.uk_-_5605370.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "M J Richardson, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "approved",
+        "attribution_url": "https://www.geograph.org.uk/photo/5605370"
+      },
+      "pin_source": "Photographers' positions at 56.5652,-3.5911 (Commons geotags for Geograph 5605370 and 5605350, and Geograph 1141684 at 56.56539,-3.59137); Geograph subject points are only 100 m precision, so the tree itself is not individually pinned.",
+      "verify_notes": "Perth and Kinross Countryside Trust 'Big Tree Country' text (highlandperthshire.org): the Parent Larch stands behind Dunkeld Cathedral and is the sole survivor of a group of European larches planted in 1738; seed from it raised later Atholl plantings, and it is adjacent to the Kennel Bank larches (grown from its seed plus 11 original Japanese larches of 1785, which hybridised into the Dunkeld larch). Geograph caption (2017): only surviving of five European larch seedlings brought from Europe in 1738 for the Duke of Atholl, nicknamed 'Mother of Millions', source of over 14 million larches. DISPUTED: Trees and Shrubs Online (search result, not read) says the claim that these were the first larches planted in Britain is wrong; Wikipedia credits the 2nd Duke with the first European larch in GB from trees received from the Menzies of Culdares. Heritage Trees of Scotland (a 2026 blog, used only for the visit) says the five saplings came from the Tyrol via Menzies of Culdares. Superlative claims ('first', '14 million') should be stated as tradition or avoided. No girth or height found. 27 million conifers planted by the Planting Dukes 1738-1830 (Big Tree Country). ALIVE: blog visit with photographs in February and May 2026 (posted 2026-05-29) shows it standing; iNaturalist observation 2026-09-14 near the spot (lifecheck RECENT, not confirmed to be this tree). Cathedral grounds are a churchyard-type small named site. Neighbour: the Dunkeld Douglas (dnk_005) a few metres away in Cathedral Grove.",
+      "how_to_recognise": "You can recognise it as the lone, gnarled old larch with an unusual silhouette. It stands in the grounds behind Dunkeld Cathedral, close to the clock tower above the Tay, a few metres from the thick, topless Dunkeld Douglas Fir.",
+      "story": "Its nickname is Mother of Millions. One photographer's caption credits this single larch with being the seed source for more than 14 million others. Nobody can check that number, but the principle is on record. Seed from this tree raised later plantings across the Atholl estates.\n\nIt is the sole survivor of a group of European larches planted here in 1738 for the Duke of Atholl. One account says there were five seedlings, brought from the Tyrol through the Menzies of Culdares. The family became known as the Planting Dukes, and between 1738 and 1830 they put some 27 million conifers into the Perthshire hills.\n\nYou will also read that these were the first larches in Britain. Wikipedia credits the 2nd Duke with the country's first European larch, but the claim is disputed, so we leave that crown unclaimed.\n\nThe family line did not stop with the plantations. On the Kennel Bank next to it, larches grown from its seed stood alongside Japanese larches, and the two crossed to give the hybrid now known as the Dunkeld larch.\n\nThe tree itself is a gnarled old larch with an unusual silhouette, standing behind Dunkeld Cathedral near the clock tower, and a visitor photographed it standing in May 2026. The cathedral grounds are free to walk into. The gates have been found open, but they may close after services, so arriving on foot is the safer plan.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the larch needles turn gold before they fall"
+      }
+    },
+    {
+      "id": "dnk_005",
+      "place": "dunkeld",
+      "name": "The Dunkeld Douglas Fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 160,
+      "age_max": 190,
+      "girth_cm": 700,
+      "height_m": 30,
+      "location": {
+        "address": "Cathedral Grove, Dunkeld Cathedral grounds / Dunkeld House estate, Dunkeld, Perth and Kinross",
+        "latitude": 56.5652,
+        "longitude": -3.5911,
+        "neighbourhood": "Dunkeld Cathedral"
+      },
+      "verified_sources": [
+        "https://www.highlandperthshire.org/allnature-wildlife/3330-Grounds-of-Dunkeld-Hilton-House",
+        "https://heritagetreesofscotland.substack.com/p/9-the-dunkeld-douglas"
+      ],
+      "access": "Free to walk up to; in Dunkeld Cathedral grounds, a few metres from the Parent Larch. Same gate and car park note as dnk_004.",
+      "transport": "Dunkeld town centre is close by on foot; distance not measured by this pass.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Dunkeld Cathedral grounds",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Perth and Kinross Countryside Trust text says the Dunkeld House grounds hold the largest-girth Douglas fir in Britain (a record claim, source of the measurement not shown on that page). The Heritage Trees of Scotland blog (visit with photographs, posted 2026-06-05, so alive) gives girth over 7 m, about 30 m tall after losing its top, thought about 180 years old and planted as a gift to the Duke of Atholl in 1846 (blog claim; 1846 planting date and the 'UK largest girth' wording are from that blog and need a second source before the writer uses them as fact); it is an oddly topped, deeply fissured tree in Cathedral Grove. NOTE the blog took its leads from the Woodland Trust Ancient Tree Inventory; I did not use or read that. Cathedral Grove lost many trees to the December 2011 storm (blog) and is being replanted with rare conifers under the Perthshire Conifer Conservation Programme. FLAGGED: single weak source for exact numbers; no pin on the individual trunk; no photograph located (Commons search returned nothing). Stands within a few metres of the Parent Larch (dnk_004).",
+      "how_to_recognise": "You can recognise it as the thickest conifer trunk in Cathedral Grove, more than 7 metres round, with deeply fissured bark and its top gone at about 30 metres. It stands a few metres from the Parent Larch behind Dunkeld Cathedral.",
+      "story": "The Perth and Kinross Countryside Trust says the grounds of Dunkeld House hold the Douglas fir with the largest girth in Britain. The Trust does not say who measured it or when, so treat the record as a claim. A tree blogger who visited in 2026 put this trunk at more than 7 metres round.\n\nIt has paid for that bulk with its top. The same visitor gives it as about 30 metres tall since it lost its crown, an oddly topped tree with deeply fissured bark. The blog also says it is about 180 years old and was planted in 1846 as a gift to the Duke of Atholl. That is one source, and we have not found a second, so read the date as likely rather than settled.\n\nIts neighbours have had a harder time. Cathedral Grove, the stand of conifers behind Dunkeld Cathedral, lost many trees in a storm in December 2011, and it is being replanted with rare conifers under the Perthshire Conifer Conservation Programme. This fir came through, and it was still standing when the blogger photographed it in 2026.\n\nIt grows a few metres from the Parent Larch, the sole survivor of the larches planted here in 1738, so one short stop covers both. They are free to walk up to in the cathedral grounds. We have no photograph of this one yet, and if you take one, we would like to see it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "dnk_006",
+      "place": "scone",
+      "name": "The Douglas Fir at Scone Palace",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "raised from seed sent in 1826",
+      "age_min": 180,
+      "age_max": 200,
+      "location": {
+        "address": "Scone Palace grounds, Old Scone, Perth, Perth and Kinross",
+        "latitude": 56.42303,
+        "longitude": -3.43454,
+        "neighbourhood": "Scone"
+      },
+      "verified_sources": [
+        "https://www.scone-palace.co.uk/gardens",
+        "https://www.geograph.org.uk/photo/2536180",
+        "https://www.geograph.org.uk/photo/8042479"
+      ],
+      "access": "Paid entry to Scone Palace gardens and grounds; opening times and prices on scone-palace.co.uk (Opening Times and Tickets pages not read by this pass).",
+      "transport": "Scone Palace lies just outside Perth; the Scone Palace website lists public transport options (not read by this pass).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/The_Famous_Scone_Palace_Douglas_Fir_-_geograph.org.uk_-_8042479.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Iain Lees, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "approved",
+        "attribution_url": "https://www.geograph.org.uk/photo/8042479"
+      },
+      "pin_source": "Geograph subject location of photo 2536180 (10 m precision): 56:25.3821N 3:26.0726W = 56.42303,-3.43454; Commons geotag of the same photo (camera) 56.42294,-3.43470. Pinetum Douglas firs also stand in the grounds, so this is not tied to the trunk.",
+      "verify_notes": "Scone Palace's own gardens page: among the finest trees at Scone is a giant Douglas Fir, prized for its size and because it was raised from the first seed sent home from North America in 1826 by David Douglas, who was born in the village of Scone in 1799 and worked as an under-gardener in the palace grounds before going to Glasgow Botanic Gardens and then the Royal Horticultural Society. Date conflict: National Tree Collections of Scotland (search snippet, host has a certificate fault, not read) and Wikipedia give 1827 for Douglas's introduction of the species; 1826 is the date for the seed per the palace. The page says 'raised from' that seed, not the planting year, so age is a bracket from the seed date, not a measurement. No girth or height found from a source I could read (Tree Register entry not found; the Tree Register is not an off-limits source but I did not locate one). ALIVE: Geograph photo 2025-05-10 titled 'The Famous Scone Palace Douglas Fir' (Iain Lees) plus 2011 photo. Two independent sources agree on identity (palace site and Geograph caption). Palace is the owner of the ground. Other trees at Scone worth a look but not verified here: the Pinetum of rare conifers collected by the 4th Earl of Mansfield in the 19th century, and a giant sequoia listed on monumentaltrees.com (fact lead only).",
+      "how_to_recognise": "You can recognise it as the very tall Douglas fir known at the palace as the one raised from David Douglas's 1826 seed. It stands in the Scone Palace gardens; other Douglas firs grow in the Pinetum, so ask staff if in doubt.",
+      "story": "The Douglas fir is named after a gardener born in this village, and Scone Palace says this tree was raised from the first seed he sent home from North America. David Douglas was born in Scone in 1799 and worked as an under-gardener in the palace grounds before moving on to Glasgow Botanic Gardens and then the Royal Horticultural Society.\n\nThe palace dates that seed to 1826. Wikipedia and other references put his introduction of the species to Britain in 1827. Either way, the palace says the tree was raised from that seed, which tells you where it came from rather than the year it went into the ground. Its age is somewhere under two centuries, not a known number.\n\nThe palace prizes it for its size. What we have not found is a published girth or height from a source we could read. If you know one, tell us.\n\nIt was photographed in May 2025 and posted as the Famous Scone Palace Douglas Fir, so the tree stands and the reputation holds. It is not the only conifer of its kind here. The 4th Earl of Mansfield gathered a Pinetum of rare conifers in the same grounds in the 19th century, and Douglas firs grow there too, so ask at the palace if you are unsure which tree is the one.\n\nThe gardens and grounds of Scone Palace, just outside Perth, charge for entry, and the palace's own website gives the opening times and prices."
+    },
+    {
+      "id": "dnk_007",
+      "place": "blair-atholl",
+      "name": "The Grand Fir in Diana's Grove",
+      "species": "Grand Fir (Abies grandis)",
+      "age_estimate": "not documented",
+      "height_m": 62.7,
+      "location": {
+        "address": "Diana's Grove, Blair Castle grounds, Blair Atholl, Perth and Kinross",
+        "latitude": 56.7755,
+        "longitude": -3.8581,
+        "neighbourhood": "Blair Atholl"
+      },
+      "verified_sources": [
+        "https://www.highlandperthshire.org/allnature-wildlife/2136-Dianas-Grove-at-Blair-Castle",
+        "https://www.undiscoveredscotland.co.uk/blairatholl/blaircastlegardens/index.html",
+        "https://atholl-estates.co.uk/blair-castle/gardens/",
+        "https://heritagetreesofscotland.substack.com/p/11-dianas-grove"
+      ],
+      "access": "Castle grounds of Blair Castle and Atholl Estates. The walled Hercules Garden needs a Gardens Only or House and Gardens ticket (Atholl Estates FAQ); the same FAQ search summary gave daily opening 1 April to 30 October, 10:00 to 17:00. Whether Diana's Grove itself needs a ticket is not stated on the pages read; check atholl-estates.co.uk before the walk. Closed outside the season stated there.",
+      "transport": "Blair Castle is about 1 km from Blair Atholl village and railway station (distance not measured by this pass); the village is on the Highland Main Line.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Diana's Grove",
+        "radius_m": 50
+      },
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/File:Champion_tree,_Diana%27s_Grove,_Blair_Castle_-_geograph.org.uk_-_3936383.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Mike Pennington (geograph.org.uk/photo/3936383), taken 2014-04-03",
+        "status": "held"
+      },
+      "pin_source": "Grove centre from Commons geotags of Geograph photos in Diana's Grove (56.7752 to 56.7759, -3.8581); the exact fir is not pinned, so the grove is the small named site (two acres).",
+      "verify_notes": "Highland Perthshire (Perthshire tourism body) and Undiscovered Scotland, both: Grand Fir officially measured for the Tree Registry in February 2009 at 62.70 m, then the UK's second tallest tree; the grove also has the tallest Japanese Larch in the UK at 44 m and the tallest Red Fir in the UK at 39 m (a 2026 blog visit says 41 m red fir and 63.5 m grand fir, a different measurement, not independent). The tallest in Britain has since moved on (a Douglas fir at Ardentinny at 68.4 m per the Perth and Kinross Countryside Trust article, found via search, not fetched), so 'second tallest' is dated to 2009; the 2009 claim should be stated with its year or dropped. Undiscovered Scotland: grove laid out under the 2nd Duke of Atholl (he spent three years laying out the gardens before 1740), some of the first European larch planted in the country were here, then North American firs; the 7th Duke introduced Japanese larch in 1884; the great storm of 1893 blew down many trees and destroyed the Diana statue, the 7th Duke replaced it and replanted, so the trees seen today are mainly his. The blog says the trees were planted between 1871 and 1895 (not confirmed by the other pages; the 1871 start is unverified). Statue of Diana in the centre with paths radiating, one aligned with the castle front door; Banvie Burn runs through, two 18th-century bridges lead to the ruined St Bride's Kirk (Atholl Estates). ALIVE: blog visit with photographs, 3rd weekend of May 2026 (posted 2026-07-04) describes it standing; Geograph 2014 photo 'Champion tree, Diana's Grove'. Which trunk is the grand fir: not pinned; recognise from height and the interpretation, ask the estate. One collectible point: the grove, one place to stand. AGE: no source dates this tree; the grove was replanted after the 1893 storm (Undiscovered Scotland) but that does not date this fir, so age left empty. PHOTO HELD (writing pass 2026-11-03): Geograph 3936383 \"Champion tree\" shows a tall trunk with a bare, needle-less crown in April, which reads as a larch (the grove also holds the UK champion Japanese larch), not the evergreen grand fir; possibly the wrong trunk.",
+      "how_to_recognise": "You can recognise it as the tallest conifer in the grove, a grand fir over 60 metres among straight, limbed-up trunks. It stands in Diana's Grove, the two acres around the statue of Diana beside the Banvie Burn.",
+      "story": "When it was measured for the Tree Register in February 2009, this grand fir stood 62.70 metres tall, which made it the second tallest tree in the United Kingdom at the time. The ranking belongs to 2009, since taller trees have been measured since. A visitor in 2026 gave it as 63.5 metres.\n\nIt shares a two-acre grove with other record holders. The same local tourism pages list the UK's tallest Japanese larch here at 44 metres and its tallest red fir at 39 metres.\n\nThe grove is older than its trees. The 2nd Duke of Atholl laid out these gardens before 1740, and some of the first European larches in the country grew here, followed by North American firs. The 7th Duke brought in Japanese larch in 1884. Then the great storm of 1893 blew down many trees and destroyed the statue of Diana at the centre. The Duke replaced the statue and replanted, so most of what stands today is his. Nobody has dated this fir in particular. If you know when it went in, tell us.\n\nPaths radiate from Diana, one lined up with the castle's front door, and the Banvie Burn runs through, crossed by two 18th-century bridges towards the ruined St Bride's Kirk. The grove is in the Blair Castle grounds, which keep a season from April to October. Whether the grove itself needs a ticket is not clear, so check with Atholl Estates before you go."
+    },
+    {
+      "id": "dnk_008",
+      "place": "meikleour",
+      "name": "The Meikleour Beech Hedge",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "planted in 1745",
+      "age_min": 270,
+      "age_max": 285,
+      "height_m": 30,
+      "location": {
+        "address": "A93 Perth to Blairgowrie road, Meikleour, Perth and Kinross",
+        "latitude": 56.5335,
+        "longitude": -3.364,
+        "neighbourhood": "Meikleour"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Meikleour_Beech_Hedges",
+        "https://www.ourheritageblairrattray.scot/timeline/beech-hedge-meikleour"
+      ],
+      "access": "Free, seen from the public A93 road alongside it, all year (Wikipedia). It is the estate boundary hedge on private land, so view from the road verge; parking not verified by this pass.",
+      "transport": "Roadside on the A93 about 4 miles south of Blairgowrie (Our Heritage Blairgowrie and Rattray). No railway; bus provision not checked by this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Meikleour_Beech_Hedge_-_geograph.org.uk_-_5816728.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "G Laird, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "approved",
+        "attribution_url": "https://www.geograph.org.uk/photo/5816728"
+      },
+      "pin_source": "Commons geotags of Geograph camera positions along the A93, 56.5307 to 56.5379, -3.3615 to -3.3642; midpoint used. The hedge is a line about 530 m long, so no single-tree pin exists.",
+      "verify_notes": "Linear feature, not a single tree: flagged for the 'one collectible point' rule (an avenue or wood is blocked; this is a record-holding hedge viewed from one road, so the selection call is Hidde's). Wikipedia: planted autumn 1745 by Jean Mercer and her husband Robert Murray Nairne on the Marquess of Lansdowne's Meikleour estate; Guinness World Records lists it as the tallest and longest hedge, 30 m high and 530 m long; local tradition (Wikipedia, Our Heritage Blairgowrie and Rattray) says the planters left to fight at Culloden and never returned, so the hedge was left to grow tall. Elwes and Henry (1906, quoted on Wikipedia): 580 yards long, stems planted about 18 inches apart, average height 95 feet, girth at 3 feet 18 to 36 inches (these are stems, not a girth for one tree). Trimmed about every ten years; the most recent trim was in late 2019, the first in almost 20 years (both pages). ALIVE: no source from 2023 onward read; lifecheck NONE; photos only to 2018; search turned up 2026 Tripadvisor listings but not a read page. Flagged: alive evidence thin. Records on the nature of 'tallest in the world' rest on the Guinness listing; state with source.",
+      "how_to_recognise": "You can recognise it as the wall of beech about 30 metres high, trimmed flat on its road face. It runs for about 530 metres beside the A93 at Meikleour, south of Blairgowrie; the pin marks the middle of its length.",
+      "story": "Guinness World Records lists this as the tallest and longest hedge in the world. It is European beech, about 30 metres high and 530 metres long, running beside the A93 at Meikleour. Jean Mercer and her husband, Robert Murray Nairne, planted it on the Meikleour estate in the autumn of 1745.\n\nWhy it grew so tall is the part people remember. Local tradition says the men who planted it left to fight at Culloden and never came back, so nobody cut it, and the hedge went up instead of out. That is a tradition rather than a record, and the sources say so.\n\nIn 1906 the tree writers Elwes and Henry described it running 580 yards, its stems planted about 18 inches apart and averaging 95 feet in height. Those are figures for a row of trees, not for one trunk, and that is what this is, a line of beeches grown so close together that they read as a single wall.\n\nIt is still a hedge in the gardening sense. It is trimmed roughly every ten years, and the most recent trim, in late 2019, was the first in almost two decades. The newest photographs we have found are from 2018. We have no reason to think anything has changed, but if you pass, tell us how it looks.\n\nIt grows on private estate land and is seen from the public road, free and in every season. Autumn is when the wall turns copper.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the 30 metre wall of beech turns copper and russet"
+      }
     }
   ]
 }

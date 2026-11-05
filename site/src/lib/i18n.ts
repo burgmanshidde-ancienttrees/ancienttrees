@@ -15,6 +15,7 @@ import path from "node:path";
 import { DATA } from "./data-dir";
 import { BASE_URL } from "./schema";
 import { cityHasQuestionPage } from "./question-page";
+import { renderableTrees } from "./trees";
 
 export interface TreeTranslation {
   name: string;
@@ -3701,7 +3702,10 @@ export async function translatedCityPaths(lang: string, allCities: CityLike[]) {
     const city = allCities.find((c) => c.id === slug);
     if (!city) throw new Error(`data/i18n/${lang}/${slug}.json has no matching English city file`);
     const tr = cityTranslation(lang, slug)!;
-    const ids = (city.data.trees ?? []).map((t: { id: string }) => t.id);
+    // The trees the translated page shows (renderableTrees): an app-only tree
+    // (lib/app-first, 2026-11-05) is on no page in any language yet, so it
+    // needs no overlay entry until a reader adds to it.
+    const ids = renderableTrees(city as any).map((t: { id: string }) => t.id);
     for (const id of ids) {
       if (!tr.trees[id]) throw new Error(`${lang}/${slug}: no translation for ${id}; the English city grew past the overlay`);
     }

@@ -240,6 +240,192 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "gcn_006",
+      "name": "Sabina de Tirma",
+      "species": "Canary Juniper (Juniperus turbinata ssp. canariensis)",
+      "age_estimate": "roughly 400 to 500 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 440,
+      "height_m": 16,
+      "location": {
+        "address": "Casas de Tirma, Finca de Tirma, beside the Barranco de las Casillas (Los Pilones), Parque Natural de Tamadaba, Agaete",
+        "latitude": 28.0333841,
+        "longitude": -15.7266875,
+        "neighbourhood": "Tirma, Agaete"
+      },
+      "verified_sources": [
+        "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/sabina-de-tirma",
+        "https://www.inaturalist.org/observations/256910071",
+        "OpenStreetMap node 5301140203 (natural=tree, denotation=natural_monument)"
+      ],
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares de Gran Canaria, Cabildo de Gran Canaria (ficha: Sabina de Tirma, Agaete, public, visitable, access normal)",
+        "url": "https://custodiadelterritorio.grancanaria.com/web/custodia-del-territorio/-/sabina-de-tirma"
+      },
+      "access": "Public land inside the Parque Natural de Tamadaba (ficha: Publico, Visitable, access Normal). Reached by the GC-216 mountain road; the Cabildo's marked footpath S-94 (Portada de Tirma, La Marquesa, El Risco de Agaete) starts in the area. No opening hours or fee published for the Casas de Tirma; precise last stretch on foot not established.",
+      "transport": "No practical public transport. By car about 1h15 from Las Palmas via Agaete or via Artenara on the GC-216, to the Tirma forest houses; the tree is at the Casas de Tirma beside the barranco.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Cabildo ficha (fetched 2026-11-02): ficha text says one of the largest and oldest sabinas in the Canaries, 16 m tall, age could reach 400 to 500 years, basal perimeter 4 m (ficha table: perimeter at 1.30 m 4.40 m, base diameter 1.90 m, diameter at 1.30 m 1.40 m), three thick trunks, one torn and now propped on a wall built by estate workers in 1995. Oral tradition: a raven came to drink at the slope and left the seed that grew into the tree. Cabildo geographer census (Cabrera Mujica) counts about 300 wild sabinas on the island. PIN: three coordinates within about 11 m agree: ficha 28.03348,-15.72668; OSM natural=tree node 5301140203 at 28.0333841,-15.7266875 (denotation natural_monument, unnamed); iNaturalist observation 256910071 Juniperus canariensis 2024-12-31 at 28.0334625,-15.7266426. OSM node used. Confirmed. ALIVE: iNaturalist 2024-12-31 (less than two years ago, same trunk by coordinate). Sources: one official register plus an observation; register age is the Cabildo's estimate. Flagged: no second descriptive source found (web search found nothing independent on this tree); access last stretch and hours not verified (OSM access tags not read, Overpass mirror timed out twice). Almacigos de Tirma (mastic trees) stand at the same site per the earlier pass; iNaturalist 2024-12-31 has Pistacia atlantica 35 to 40 m from the sabina. Ficha height 16 m, girth 440 cm at 1.30 m (figure from the Cabildo, use as is).",
+      "story": "A raven planted this juniper, if you ask the people of Tirma. By their oral tradition the bird came down to drink on the slope and left behind the seed. The Cabildo's catalogue of singular trees sticks to measurements, and calls it one of the largest and oldest sabinas in the Canary Islands.\n\nIt stands 16 metres tall at the Casas de Tirma, beside the Barranco de las Casillas in the Parque Natural de Tamadaba, high above Agaete. The trunk is 4.40 metres round at chest height. The catalogue estimates that it could reach 400 to 500 years, and that estimate is the only one there is.\n\nIt grows as three thick trunks. One of them tore away from the others, and in 1995 the workers on the estate built a wall to hold it up. It is propped on that wall now.\n\nTrees like this are scarce on Gran Canaria. A census by the Cabildo's geographers counts about 300 wild sabinas left on the whole island. A mastic tree, one of the almácigos de Tirma, grows about 35 metres away.\n\nThere is no practical bus. By car it is about an hour and a quarter from Las Palmas on the GC-216 mountain road, through Agaete or Artenara, to the forest houses at Tirma. The Cabildo's marked footpath S-94 starts in the same area. No hours are published for the Casas de Tirma, so plan the last stretch on foot from a map before you set out.",
+      "how_to_recognise": "You can recognise it by its three thick trunks, one of them torn away and propped on a wall built in 1995. It stands at the Casas de Tirma, beside the Barranco de las Casillas.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gcn_007",
+      "name": "Rubber figs of Parque de San Telmo",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 150 to 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 327,
+      "height_m": 14,
+      "location": {
+        "address": "Parque de San Telmo, Triana, Las Palmas de Gran Canaria",
+        "latitude": 28.10831,
+        "longitude": -15.41716,
+        "neighbourhood": "Triana"
+      },
+      "verified_sources": [
+        "https://lpgcsostenible.laspalmasgc.es/wp-content/uploads/2025/02/Catalogo_arboles_LPGC.pdf (ficha ARB-068, pp. 204-205 of the document; the Ayuntamiento's Catalogo de arboles singulares y conjuntos arboreos, December 2024)",
+        "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      ],
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares y Conjuntos Arboreos de Las Palmas de Gran Canaria, Ayuntamiento (ficha ARB-068, public garden square; the three figs also belong to conjunto CON-02, Parque de San Telmo)",
+        "url": "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      },
+      "access": "Free, public garden square (ficha: titularidad publica, plaza ajardinada), open at all times as far as sources say; no hours published.",
+      "transport": "San Telmo is the city's central bus (guagua) station area, next to the park; Triana shopping street is beside it. Flat, city centre.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Ficha ARB-068 (PDF fetched 2026-11-02): Ficus macrophylla, 3 specimens, the oldest of the species in the park. Heights 11 / 12 / 14 m; trunk perimeters 3.00 + 1.90 / 2.17 + 2.45 / 3.27 m (multi-stem, so girth_cm 327 is the single largest stem only); base perimeters 4.00 / 5.00 / 2.00 m; crown diameters 20 / 17 / 19 m, projections 315 / 240 / 295 m2; age estimate '+- 150/200 years' (authors' estimate); criterion historical and landscape. Ficha says they may come from the 1840 project for the new alameda-paseo in northern Triana (planos de Domingo Rancel), 'quizas', so planting date NOT stated; do not bridge. Ficha advises a stability study of the branches because the area is heavily used. Photos in ficha September 2020 only. Ficha coordinate (UTM 28N X459024.83 Y3109271.20, converted) = 28.10831,-15.41716, ONE coordinate for three trees, so pin approximate at the group; Commons geotags in the park (GC Las Palmas San Telmo R01/R02) are at 18 m but are park-level. ALIVE: lifecheck OLD (Commons 2012); only the ficha photographs (2020) and the catalogue's own fieldwork (published December 2024) support it. Flagged for alive-recency and register-only. Not verified by a second source. The same park conjunto CON-02 also lists a Lagunaria patersonia ARB-093 (14 m, 2.60 m, +-75/100 years, 28.10926,-15.41711), a Phoenix reclinata ARB-150 and a pica-pica; a recognise-line writer should say which of the three figs is biggest (14 m, 3.27 m stem).",
+      "story": "Three figs, each with a crown up to 20 metres wide, shade the park beside the main bus station of Las Palmas. They are Moreton Bay figs, a species from eastern Australia, and the city's catalogue of singular trees names them the oldest of their kind in the Parque de San Telmo.\n\nThe catalogue's authors estimate them at roughly 150 to 200 years. They wonder, with a careful \"perhaps\", whether the figs go back to the 1840 plan for a new promenade in the north of Triana, drawn by Domingo Rancel. Nobody has recorded when they were actually planted.\n\nThey are listed together as one group, and it is worth standing under all three. Their heights run 11, 12 and 14 metres and their crowns spread 20, 17 and 19 metres. Two of them split into a pair of stems, and the base of one is 5 metres round.\n\nThe park is heavily used, and for that reason the catalogue recommends a study of how stable the big branches are. If you walk through and find them changed, tell us.\n\nSan Telmo sits at the north end of Triana, the old shopping street, with the city's central guagua station beside it. Entry is free and the ground is flat. From here the walk south into Vegueta passes the Árbol del Responso, an ombu on Juan de Quesada and a dragon tree by a covered fountain.",
+      "how_to_recognise": "You can recognise the biggest of the three by its single trunk, 3.27 metres round, rising to 14 metres. They stand together in the Parque de San Telmo, the oldest figs in the park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gcn_008",
+      "name": "Arbol del Responso",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 125 to 150 years",
+      "age_min": 125,
+      "age_max": 150,
+      "girth_cm": 380,
+      "height_m": 10,
+      "location": {
+        "address": "Plaza Nuestra Senora de Los Reyes (roundabout), Vegueta, Las Palmas de Gran Canaria",
+        "latitude": 28.09596,
+        "longitude": -15.41507,
+        "neighbourhood": "Vegueta"
+      },
+      "verified_sources": [
+        "https://lpgcsostenible.laspalmasgc.es/wp-content/uploads/2025/02/Catalogo_arboles_LPGC.pdf (ficha ARB-070, pp. 208-209 of the document; Ayuntamiento catalogue, December 2024)",
+        "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      ],
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares y Conjuntos Arboreos de Las Palmas de Gran Canaria, Ayuntamiento (ficha ARB-070, public roundabout)",
+        "url": "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      },
+      "access": "Free, public roundabout garden on a street square; can be seen from the pavement at all times. Traffic roundabout, so view from the edge.",
+      "transport": "Vegueta, about 10 to 15 min on foot south of the Plaza de Santa Ana cathedral square; city buses stop in Vegueta (lines not checked). About 1.5 km on foot from Parque de San Telmo.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Ficha ARB-070 (PDF fetched 2026-11-02): Ficus macrophylla, known as 'Arbol del Responso'; height 10.20 m, trunk 1.80 m clear, perimeter at trunk 3.80 m (girth_cm 380), base perimeter 4.10 m, crown 11.70 m (107 m2), age estimate +-125/150 years (authors' estimate); criterion historical, cultural, landscape. History per ficha: around 1833 the British colony asked the council for land to bury its dead, so the Vegueta cemetery took in other faiths; Protestant rites were held at an enormous Indian laurel on the road to the cemetery (the 'responso' tree). In 2002 urban works 'moved' this historic fig about a hundred metres, ending the traditional use (the ficha says moved; whether a transplant of the live tree or a replacement is not stated, so keep wording as the ficha has it). Ficha photograph May 2023. Coordinate: UTM 28N X459225.69 Y3107901.84 converted = 28.09596,-15.41507, a surveyed single-tree coordinate (the survey of Vegueta-Triana by MDT Topografia); pin confirmed from the register's own tree-level survey, not independently cross-checked (no OSM name, no iNaturalist or tree-specific Commons geotag found). Alive: ficha photograph May 2023 (about 3.5 years), catalogue field work to 2024/25; lifecheck not run on this tree. Flagged: register only, alive evidence over two years old, ficha says the tree was moved in 2002 (age counts the tree, not the spot). Mid-list of the Vegueta-Triana walk, about 1.5 km from San Telmo.",
+      "story": "This fig is named after a funeral prayer. The responso is the short prayer said over the dead, and for the Protestants of Las Palmas it was said under a great tree on the road to the cemetery.\n\nThe story, as the city's catalogue of singular trees tells it, begins around 1833, when the British colony asked the council for ground to bury its dead. The Vegueta cemetery was opened to other faiths, and Protestant rites were held at an enormous tree on the way there. That tree became the Árbol del Responso.\n\nIn 2002 street works moved this historic fig about a hundred metres, and the old custom ended with the move. The catalogue estimates the fig now standing in the Plaza Nuestra Señora de Los Reyes at roughly 125 to 150 years, an estimate by its own authors, so whether this is the tree of the first Protestant funerals is a question the record does not answer. If you know, tell us.\n\nWhat you see today is a Moreton Bay fig 10.20 metres tall, with a trunk 3.80 metres round that runs clear for 1.80 metres before it branches, and a crown nearly 12 metres across. It grows in the garden of a traffic roundabout, so look from the pavement at the edge rather than crossing to it.\n\nIt is about 10 to 15 minutes on foot south of the cathedral square of Santa Ana, and about 1.5 kilometres from the figs of San Telmo.",
+      "how_to_recognise": "You can recognise it as the big fig in the roundabout garden, 3.80 metres round with a clear trunk of 1.80 metres. It stands in the Plaza Nuestra Señora de Los Reyes, in Vegueta.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gcn_009",
+      "name": "Ombu of Juan de Quesada",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "roughly 100 to 125 years",
+      "age_min": 100,
+      "age_max": 125,
+      "girth_cm": 240,
+      "height_m": 10,
+      "location": {
+        "address": "Calle Juan de Quesada, 1, side bed of the street, Vegueta, Las Palmas de Gran Canaria",
+        "latitude": 28.1015,
+        "longitude": -15.41592,
+        "neighbourhood": "Vegueta"
+      },
+      "verified_sources": [
+        "https://lpgcsostenible.laspalmasgc.es/wp-content/uploads/2025/02/Catalogo_arboles_LPGC.pdf (ficha ARB-154, pp. 394-395 of the document; Ayuntamiento catalogue, December 2024)",
+        "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      ],
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares y Conjuntos Arboreos de Las Palmas de Gran Canaria, Ayuntamiento (ficha ARB-154; also part of conjunto CON-01 Juan de Quesada)",
+        "url": "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      },
+      "access": "Free, public pavement bed beside the street, visible at all times.",
+      "transport": "Vegueta, a few minutes on foot from the Plaza de Santa Ana; about 800 m on foot from Parque de San Telmo.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Ficha ARB-154 (PDF fetched 2026-11-02): Phytolacca dioica, ombu or 'bellasombra', from South America; height 10 m, clear trunk 3 m, trunk perimeter 2.40 m (girth_cm 240), base perimeter 6.00 m (the swollen buttress base), crown 10 m (83 m2); age estimate +-100/125 years (authors' estimate); criterion historical, landscape and sociocultural; in a side bed of the street. Ficha story: in the 1950s the city's chief gardener Juan Gonzalez ('Juanito Ficus') removed many big trees of the city for damage to roads and pavements but kept a few, this one acting as a landscape marker for the area; Kunkel (1969) also cites it; it needs its base freed of asphalt. Ficha photographs 2014, October 2018 and October 2020. Coordinate: UTM 28N X459144.02 Y3108516.49 converted = 28.10150,-15.41592, a surveyed single-tree coordinate; lifecheck RECENT hit (iNaturalist 2024-01-18) is a eucalyptus 16 m away, not this tree, so no independent alive proof. Pin confirmed from the register tree-level survey only. Flagged: register only, last dated photograph October 2020. Other Vegueta trees within 100 m on the same street (Conjunto Juan de Quesada CON-01): a 40 m Araucaria columnaris ARB-001 (private garden), Syzygium cumini ARB-170, Washingtonia ARB-173.",
+      "story": "In the 1950s the head gardener of Las Palmas cut down many of the city's big trees, and this one he chose to keep. Juan González, remembered by the nickname Juanito Ficus, took out trees that were breaking up roads and pavements, the city's catalogue of singular trees records, but spared a few. This ombu was one, kept as a landmark for the street.\n\nThe ombu comes from South America, and in Spanish it also goes by bellasombra, beautiful shade. Its trunk is 2.40 metres round, but the swollen foot it stands on measures 6 metres. It rises 10 metres to a crown about as wide.\n\nThe catalogue's authors estimate it at roughly 100 to 125 years. Kunkel already cited it in his work of 1969. The same catalogue says the base needs to be freed of the asphalt around it. If you pass and find it changed, tell us.\n\nIt grows in a side bed of Calle Juan de Quesada, in Vegueta, a few minutes on foot from the Plaza de Santa Ana and about 800 metres from the Parque de San Telmo. The same short street holds other catalogued trees, among them a 40 metre araucaria in a private garden.",
+      "how_to_recognise": "You can recognise it by the swollen base, 6 metres round, below a trunk of 2.40 metres. It stands in the side bed of Calle Juan de Quesada at number 1, in Vegueta.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gcn_010",
+      "name": "Drago of the Plaza del Espiritu Santo",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 90,
+      "age_max": 110,
+      "girth_cm": 170,
+      "height_m": 8,
+      "location": {
+        "address": "Plaza del Espiritu Santo, garden around the hermitage and fountain, Vegueta, Las Palmas de Gran Canaria",
+        "latitude": 28.09988,
+        "longitude": -15.4164,
+        "neighbourhood": "Vegueta"
+      },
+      "verified_sources": [
+        "https://lpgcsostenible.laspalmasgc.es/wp-content/uploads/2025/02/Catalogo_arboles_LPGC.pdf (ficha ARB-042, pp. 144-145 of the document; Ayuntamiento catalogue, December 2024)",
+        "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      ],
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares y Conjuntos Arboreos de Las Palmas de Gran Canaria, Ayuntamiento (ficha ARB-042, public garden)",
+        "url": "https://lpgcsostenible.laspalmasgc.es/catalogo-de-arboles-singulares-y-conjuntos-arboreos-de-las-palmas-de-gran-canaria/"
+      },
+      "access": "Free, public historic plaza in Vegueta around the Ermita del Espiritu Santo and its covered fountain; garden visible from the square.",
+      "transport": "Vegueta, about 5 to 10 min on foot from the cathedral square (Plaza de Santa Ana); about 900 m on foot from Parque de San Telmo.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Ficha ARB-042 (PDF fetched 2026-11-02): Dracaena draco, height 7.80 m, clear trunk 4.40 m, trunk perimeter 1.70 m (girth_cm 170), base 2.20 m, crown 4.30 m; age +-100 years from 6 branchings; criterion dendrometric, aesthetic and special location. Ficha: since 2017 the tree has a support system to keep it from falling over as it leans more and more, which the ficha says should be reviewed. Plaza: covered monumental fountain (1862) by the Gran Canaria artist Manuel Ponce de Leon Falcon, reformed in 1993; a small garden with palms 'like an oasis' hides the hermitage (Lola de la Torre, 1956, quoted in the ficha). Ficha photographs May 2023, November 2020, 1927 (FEDAC) and May 2012. Same plaza: Washingtonia robusta ARB-174 (23.2 m, 1.40 m, +-100/125 years) at 28.09993,-15.41629, 10 m away. Coordinate: UTM 28N X459096.33 Y3108337.00 converted = 28.09988,-15.41640; Commons geotags of the fountain and plaza within 9 to 19 m, so the plaza is placed, and the register coordinate is a surveyed single-tree point: pin confirmed on the register survey. Flagged: register only, last dated photograph May 2023 (3.5 years); lifecheck gave no hit on this tree (iNaturalist RECENT nearby was a schefflera 5 m away, not used). Not a drago that is old by island standards (the island's oldest are 230 to 300 years); worth the stop because it is on the Vegueta walk, in a square with a monumental fountain.",
+      "story": "This dragon tree leans, and since 2017 it has had help staying up. The city's catalogue of singular trees records a support system fitted that year to keep it from falling over as its tilt grows, and says the props should be reviewed.\n\nBy the island's standards it is young. Gran Canaria's oldest dragos, at Gáldar, Pino Santo and Arucas, are put at 230 to 300 years. This one has branched six times, which the catalogue reads as about 100 years. It is 7.80 metres tall, with a trunk 1.70 metres round that runs clear for 4.40 metres before the first fork and a small crown about 4 metres across.\n\nThe reason to stop is the square around it. The Plaza del Espíritu Santo, in Vegueta, holds a small hermitage and a covered monumental fountain of 1862 by the Gran Canaria artist Manuel Ponce de León Falcón, restored in 1993. Writing in 1956, Lola de la Torre described the garden of palms here as being like an oasis that hides the hermitage. A Mexican fan palm 23 metres tall stands about 10 metres from the drago.\n\nIt is five to ten minutes on foot from the cathedral square of Santa Ana and about 900 metres from the Parque de San Telmo, which makes it an easy stop on a walk through Vegueta's old trees. The garden is free and can be seen from the square.",
+      "how_to_recognise": "You can recognise it by the lean and the supports holding it, on a trunk that runs clear for 4.40 metres. It stands in the garden of the Plaza del Espíritu Santo, about 10 metres from a 23 metre fan palm.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

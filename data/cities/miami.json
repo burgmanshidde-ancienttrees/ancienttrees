@@ -270,6 +270,140 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "mia_009",
+      "name": "Fairchild's 1938 Baobab",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "about 88 years",
+      "age_min": 85,
+      "age_max": 90,
+      "location": {
+        "address": "Fairchild Tropical Botanic Garden, 10901 Old Cutler Road, Coral Gables, FL 33156",
+        "latitude": 25.6773,
+        "longitude": -80.2755,
+        "neighbourhood": "Coral Gables / Old Cutler Road"
+      },
+      "verified_sources": [
+        "https://fairchildgarden.org/visit/the-gardens-early-plantings/",
+        "https://fairchildgarden.org/visit/tickets-hours/",
+        "https://api.inaturalist.org/v1/observations?taxon_name=Adansonia+digitata&lat=25.676&lng=-80.274&radius=1"
+      ],
+      "access": "Paid entry to the garden, open daily 10am to 5pm except 25 December; adults $24.95, seniors $17.95, students $15.95, child 6-17 $11.95 (fairchildgarden.org tickets page fetched 2026-11-03); parking free; members free.",
+      "transport": "By car or Uber about 25 min from Miami; Old Cutler Road, no direct rail stop (Metrorail Douglas Road or University then rideshare). Not walkable from a station.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "SOURCE: Fairchild Tropical Botanic Garden (owner of the ground) 'The Garden's Early Plantings' page: 11 tree species were planted by distinguished botanists at the inauguration on 23 March 1938 (article by Georgia Tasker, The Tropical Garden, 2013); of those 11 plantings only one survives, the baobab Dr David Fairchild planted, located near the Sunken Garden in the Montgomery Palmetum. The same page adds that the largest baobab in the garden stands near the NE corner of the Phillips-Atwater Gatehouse and was planted in 1938 from Dade County Nursery material. So there are TWO baobabs with 1938 provenance: the founder's tree (Sunken Garden/Palmetum) and the biggest one (gatehouse). Wikipedia (Fairchild Tropical Botanic Garden) also says a giant African baobab collected and planted by Fairchild still grows there; A search snippet linking the Sunken Garden baobab to the 1927 Utowana expedition was NOT seen on a fetched page: not recorded. ALIVE: iNaturalist has repeated Adansonia digitata observations at one spot 25.6772-25.6774,-80.2755 on 2018-04-28, 2019-04-06, 2022-04-30, 2023-03-13, 2025-01-12 and 2025-06-07 (all casual grade, accuracy 4-8 m, so cultivated; not confirmed which of the two trees; the cluster is the best pin but it is not established that it is the founder's or the gatehouse baobab). Pin approximate at garden level, writer should say 'two baobabs, ask which'. No girth or height on any fetched page; do not invent. Commons has CC BY-SA 3.0 photo 'Adansonia digitata in Fairchild Tropical Botanic Garden.JPG' (Nolege, 2011, not geotagged) as a pointer only; no photo hunt done. Single source (owner) per US rule: flagged 'one source'. Paid entry counts against the city's paid share (Vizcaya, Deering etc already heavy).",
+      "story": "Eleven trees were planted at the opening of Fairchild Tropical Botanic Garden, and one of them is still alive. On 23 March 1938, at the garden's inauguration, distinguished botanists planted eleven species of tree. The garden's own history of its early plantings says only one of the eleven survives, the baobab planted by David Fairchild himself, the plant explorer the garden is named after.\n\nThat makes it about 88 years old here, dated from the ceremony rather than from a seed, and the garden places it near the Sunken Garden in the Montgomery Palmetum.\n\nThere is a complication, and the garden supplies it. The same page says the largest baobab in the garden stands near the north-east corner of the Phillips-Atwater Gatehouse, and that it too went in during 1938, from Dade County Nursery stock. So the garden has two baobabs from its founding year, the founder's tree and the biggest one, in two different places. Our pin marks where naturalists have photographed a baobab again and again since 2018, but nobody has said which of the two that is. Ask at the garden which baobab is Fairchild's, and see both if you can.\n\nA baobab is an African tree that stores water in a swollen trunk and drops its leaves in the dry season. Neither tree has a published girth or height. Entry to the garden is paid and it is open daily from 10 am to 5 pm, except on Christmas Day.",
+      "how_to_recognise": "You can recognise it by the swollen trunk of a baobab near the Sunken Garden in the Montgomery Palmetum. The garden's largest baobab, also from 1938, is a different tree by the Phillips-Atwater Gatehouse.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_010",
+      "name": "The Banyan of Miami Beach Botanical Garden",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Miami Beach Botanical Garden, 2000 Convention Center Drive, Miami Beach, FL 33139",
+        "latitude": 25.7958,
+        "longitude": -80.1358,
+        "neighbourhood": "Miami Beach, beside the Convention Center"
+      },
+      "verified_sources": [
+        "https://worldsensorium.com/a-garden-of-passion-and-compassion-miami-beach-botanical-garden/",
+        "https://www.mbgarden.org/visit",
+        "https://api.inaturalist.org/v1/observations?taxon_name=Ficus+benghalensis&lat=25.7945&lng=-80.1357&radius=0.4"
+      ],
+      "access": "Free entry (mbgarden.org/visit: 'always free'). Opening days conflict on the garden's own page (Tuesday to Sunday 9am to 5pm in the header and footer; Tuesday through Friday in the guidelines block); closed major holidays. Entrances at 2000 Convention Center Drive and 19th Street.",
+      "transport": "Bus or walk in Miami Beach: Convention Center Drive, about 5 to 10 min walk from the Lincoln Road end; no rail. (Walking time not verified on a fetched page.)",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Miami Beach Botanical Garden",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "verify_notes": "CLAIM, one source (US bar): Susan Askew of the Miami Beach Garden Conservancy (the nonprofit that runs the garden for the city) says in an interview published by World Sensorium (Plantings issue 11, May 2022): 'The large Banyan tree that you saw in the garden is the only serving [sic, surviving] original tree in the garden. It was part of Carl Fisher's golf course and was likely there before that.' The garden is city-owned, managed by the Conservancy since its incorporation in 1997, on the site of Fisher's former golf course; the same interview says in the 1930s Fisher went bankrupt and the city took over the area. No planting date, girth or height on any fetched page: age empty, do not infer one from the golf course (no bridge claim; the source itself says only 'likely there before'). The page asks the reader. Species Ficus benghalensis is the caption in the same interview. ALIVE: iNaturalist Ficus benghalensis records in the garden on 2022-01-15 (CC BY-NC photo, 25.79581,-80.13574), 2024-02-25 and 2024-10-26 (all casual, 4 m accuracy); not stated that they are THE original banyan, but only one banyan is described. Pin: garden level (centroid from iNat points), approximate; the garden is a small named site, under 100 m across, but the recognition is 'the large banyan' only. Lifecheck script returned NONE (its sources lack it). The three other trees in the Miami Beach Botanical Garden were not examined. Fine Gardening GPOD page confirms a banyan exists in the garden only as a plant caption, no size. Hours: header says Tue-Sun, guidelines block says Tue-Fri; flag for the writer to say 'open most days, check the garden'.",
+      "story": "The big banyan in the Miami Beach Botanical Garden is older than the garden. Susan Askew of the Miami Beach Garden Conservancy, the nonprofit that runs the garden for the city, said in a 2022 interview that it is the only surviving original tree here. It was part of Carl Fisher's golf course, she said, and was likely there before that.\n\nFisher was the developer behind early Miami Beach, and this ground beside today's Convention Center was one of his golf courses. In the same interview Askew tells how he went bankrupt in the 1930s and the city took the land over. The garden grew up on it later, and the Conservancy has managed it since it was incorporated in 1997. Golf course, city land, garden. The banyan stayed put through all three.\n\nA banyan is a fig from India that lowers roots from its branches. Where they reach the ground they thicken into new trunks, so an old tree slowly becomes a small grove of its own, standing on its own pillars.\n\nHow old this one is, nobody has said. Askew's account puts it on the site before the golf course and goes no further, and no planting date, girth or height has been published. If you know more, tell us.\n\nEntry is free. The garden's own page gives different opening days in different places, so it is open most days, but check before you go.",
+      "how_to_recognise": "You can recognise it as the large banyan, the one tree the garden says survives from before it was a garden. It stands inside the Miami Beach Botanical Garden on Convention Center Drive.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_011",
+      "name": "The Kampong's Fallen and Risen Baobab",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "about 98 years from seed",
+      "age_min": 90,
+      "age_max": 98,
+      "location": {
+        "address": "The Kampong (National Tropical Botanical Garden), 4013 South Douglas Road, Coconut Grove, Miami, FL",
+        "latitude": 25.7149,
+        "longitude": -80.2503,
+        "neighbourhood": "Coconut Grove"
+      },
+      "verified_sources": [
+        "https://ntbg.org/news/raising-giants-baobabs-at-the-kampong/",
+        "https://ntbg.org/stories/the-baobab-as-humanitys-tree-of-life/",
+        "https://ntbg.org/gardens/kampong/"
+      ],
+      "access": "Paid, reservations encouraged for parking. Open Tuesday to Saturday 9:00am to 4:30pm, last entry 3:00pm (ntbg.org/gardens/kampong, fetched 2026-11-03; closed 3 to 6 April 2026). Self-guided or guided tours; $2 discounts for walkers, cyclists, rideshare and 33133 residents. Ticket price not found on the fetched page.",
+      "transport": "Coconut Grove; Metrorail Douglas Road or Coconut Grove station then a bus or short ride (not verified); the garden offers a discount to those who walk, bike or use rideshare.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "SOURCE (owner of the ground, two pages): NTBG 'Raising Giants – Baobabs at The Kampong' by Larry Schokman, Director Emeritus (28 June 2019): the seed of the Kampong's biggest baobab, Adansonia digitata, was collected by David Fairchild in Dar es Salaam, Tanzania, on 9 April 1928 and planted at the USDA Chapman Field in Miami, where it stood until Hurricane Cleo blew it down on 29 August 1964. Catherine Hauberg Sweeney, owner of the Kampong (she bought it in 1963), rescued it from destruction and had it planted at the Kampong, likely the first time a mature baobab of that size had been transplanted. Hurricane Wilma knocked it down again on 24 October 2005; staff, volunteers, tree climbers, a backhoe and the largest crane that would fit replanted it with donors' help; afterwards it sheds its leaves for about half the former 8 to 10 weeks and fruits more than before. Hurricane Irma (10 Sept 2017) felled it a third time, by the domino effect of falling trees; the article says the top third of the canopy would be trimmed before it was uprighted. NTBG 'The Baobab as Humanity's Tree of Life' (page footer copyright 2025, article date not shown): the tree 'was felled by three hurricanes: Cleo (1964), Wilma (2005), and Irma (2017) and now grows horizontally, thriving at The Kampong' (photo caption by Brian Sidoti). So the ALIVE source is the garden itself, recent but undated; writer should say 'lies on its side and still grows', per NTBG. The two pages agree on the three hurricanes but the 2019 page says it was to be uprighted and the later one says it grows horizontally: do not claim it stands upright. Seed collected 1928, so the tree is at most about 98 years old (derived from the documented seed date, not a planting date; the Chapman Field planting year is not on the fetched page; the transplant was 1964). Visitor listings give '80' and '100' years, ignored. No girth, no height on any fetched page (the page gives only the Madagascar baobab's 22 ft height): none recorded. Other baobabs (five species, all under 15 years old at the time of the 2019 article) are not part of this entry. PIN: no tree-level coordinate; the Kampong is a garden of several acres and no source places the tree on its map: approximate. Commons geotags for Kampong plants (GuavaVietnameseGiant Kampong, 25.71492,-80.25045) place the garden; Wikipedia's coordinates for The Kampong (25.71472,-80.24972) agree within 80 m. The earlier lead for the Kampong's Kaffir Orange (data/leads/miami.json) is separate. Paid entry adds to the city's paid share. One source family (NTBG, two pages): flagged 'one source'.",
+      "story": "Three hurricanes have knocked this baobab flat, and it is still growing, on its side. The National Tropical Botanical Garden, which owns The Kampong, says it was felled by Cleo in 1964, Wilma in 2005 and Irma in 2017, and that it now grows horizontally and thrives.\n\nIt started as a seed David Fairchild collected in Dar es Salaam, Tanzania, on 9 April 1928. That makes it at most about 98 years old, counted from the seed. It was raised at the USDA's Chapman Field station in Miami and stood there until Cleo blew it down on 29 August 1964.\n\nThat should have been the end. Catherine Hauberg Sweeney, who had bought The Kampong the year before, rescued the fallen tree and had it planted here, which the garden believes was likely the first time a mature baobab that size had been transplanted. In October 2005 Wilma pushed it over again, and staff, volunteers, tree climbers, a backhoe and the largest crane that would fit put it back. Afterwards, by the garden's account, it dropped its leaves for only about half its old eight to ten weeks and fruited more than before. In September 2017 Irma brought it down a third time, toppled by other trees falling onto it. Today, the garden says, it grows lying down.\n\nNo girth or height has been published, and the garden has not placed it on a map, so ask for it when you arrive. Entry is paid, Tuesday to Saturday.",
+      "how_to_recognise": "You can recognise it as the big baobab lying on its side and still growing, the one the garden says three hurricanes brought down. It lies somewhere in The Kampong's grounds, so ask the staff to point you to it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_012",
+      "name": "The Bayside Banyan",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Bayside Marketplace, 401 Biscayne Boulevard, Miami, FL 33132",
+        "latitude": 25.7782,
+        "longitude": -80.1871,
+        "neighbourhood": "Downtown Miami, Bayfront"
+      },
+      "verified_sources": [
+        "https://www.waymarking.com/waymarks/WM8HXM_Bayside_Banyan_Tree_Miami_FL",
+        "https://www.inaturalist.org/observations/306853689",
+        "https://www.inaturalist.org/observations/349290981",
+        "https://www.inaturalist.org/observations/240261968"
+      ],
+      "access": "Free; outdoor public waterfront walkway at the Bayside Marketplace entrance. Marketplace opening hours not verified on a fetched page.",
+      "transport": "Downtown Miami: Metromover Bayfront Park or College/Bayside station, about 5 min walk (Metromover station name not verified on a fetched page); the Marketplace sits beside Bayfront Park.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "WEAK SOURCES, deliver flagged. Waymarking.com 'Exceptional Trees' waymark WM8HXM (posted 2010-04-06, user-submitted, a finding aid, not an authority): Ficus benghalensis at Bayside Marketplace, N 25 46.691 W 080 11.234 (= 25.77818, -80.18723), height 75 ft (22.9 m) 'reliable source' (the poster's own statement), girth entry '20' without units (ignored), 'about 100 years old' with 'Age: 100' (an informal figure, not a documented planting; tourist listings say 100 to 110; none seen on a fetched page except Waymarking). No official tree record, no news item, no city page found; Wikipedia's Bayside Marketplace article (fetched) does not mention the tree. LOCATION: the waymark's coordinate is the poster's GPS position at the tree; iNaturalist Ficus benghalensis observations cluster at 25.7782,-80.1870 (positional accuracy 3 to 15 m: 2023-04-23, 2024-08-29, 2025-02-05, 2025-06-19, 2025-08-16 (two), 2026-04-10) and agree within 15 m, so a single banyan at the marketplace entrance; pin marked confirmed on that GPS plus the iNat cluster, though the tree is not shown tagged as 'the' tree on a map. ALIVE: iNaturalist observation 2026-04-10 (accuracy 554 m, so weakest), 2025-08-16 (5 m), both in the cluster. Age: do not use 100; the page should ask the reader. The 22.9 m height is the waymark poster's figure, not a measurement: the writer should not state it as fact (not delivered as height_m). Why walk to it: free, on the downtown waterfront next to Bayfront Park, a big banyan with aerial roots; nothing else documented. Photo pass 2026-11-04 (approved): iNaturalist observation of Ficus benghalensis 9 m from our pin at Bayside; the banyan's aerial-root curtain fills the frame with walkers below, daylight.",
+      "story": "The big banyan at the entrance to Bayside Marketplace has no official paperwork at all. We found no city tree record and no news story about it, and the marketplace's encyclopedia entry never mentions it. What it has instead is a crowd of witnesses. Naturalists have logged a banyan on this spot again and again since 2023, most recently in 2026, their GPS fixes agreeing to within about 15 metres, and a visitor recorded it as an exceptional tree back in 2010.\n\nThat visitor also wrote down a height and an age. Nothing behind either figure has turned up, so we leave both out rather than pass them on as fact. If you know when this tree was planted, or what stood here before the marketplace, tell us.\n\nWhat you can check for yourself is a big banyan with aerial roots, standing on the downtown waterfront beside Bayfront Park. The species is the national tree of India, where a single old banyan can spread on its prop roots until it covers the ground of a small wood.\n\nIt costs nothing to see and it needs no car. Metromover stops serve Bayfront Park, a few minutes' walk away, and the tree stands on the public walkway rather than inside the shops.",
+      "how_to_recognise": "You can recognise it as the big banyan with aerial roots at the Bayside Marketplace entrance, on the public waterfront walkway at 401 Biscayne Boulevard, beside Bayfront Park.",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/428030290/original.jpeg",
+        "license": "CC BY 4.0",
+        "attribution": "Frank Dietze",
+        "attribution_url": "https://www.inaturalist.org/observations/240261968",
+        "status": "approved"
+      }
     }
   ]
 }

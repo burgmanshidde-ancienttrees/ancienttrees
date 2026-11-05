@@ -545,6 +545,1075 @@
         "label": "late April, when the Endicott Pear is covered in white blossom",
         "kind": "flowers"
       }
+    },
+    {
+      "id": "bos_030",
+      "name": "The Parasol Beech from Kew",
+      "species": "Twisted Beech (Fagus sylvatica 'Tortuosa')",
+      "age_estimate": "roughly 140 years since it arrived",
+      "age_min": 141,
+      "age_max": 170,
+      "age_basis": "derived",
+      "girth_cm": 292,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.2978873,
+        "longitude": -71.1213137,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/parasol-beech/",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 2420*A (mapped individual plant), queried 2026-11-03",
+      "accession": "2420*A",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by its shape, a low dome of twisted branches tumbling back to the ground instead of a tall trunk. A second, slimmer parasol beech stands about 80 metres north-west, off Beech Path.",
+      "verify_notes": "Accession 2420*A, graft received 1885 from the Royal Botanic Gardens, Kew; per the Arboretum's plant page it is one of only three plants left from Kew's exchange of more than 900 accessions in the Arboretum's first twenty years (the others are Spiraea prunifolia 3138 and Philadelphus x maximus 6601). Lineage descends from a twisted beech in a forest at Remilly, France (indirect wild origin). GIS: condition Alive, last checked 2021-03-12, DBH 93.1 cm measured 2017-10-24 (girth = DBH x pi), grid 38-SW, flagged significant specimen. Twin to note: accession 14599*A (graft 1888, also Kew, DBH 79.5 cm, condition Fair 2017-10-19, 42.2982734,-71.1222443, about 80 m north-west, the one the plant page says stands right off Beech Path) is a separate tree; not folded. Handmade bracing supports the heavy pendulous shoots on the 1888 tree per the plant page. Height not recorded. Age is time since accession, the grafted tree may be a few years older. Plant page says wild parasol beeches can pass 300 years.",
+      "story": "Kew sent the Arnold Arboretum more than 900 plants in its first twenty years, and the Arboretum counts three of them still alive. This beech is one. It arrived in 1885 as a graft, from a line of twisted beeches that goes back to a wild tree in a forest at Remilly, in France. The other two survivors of the Kew exchange are a spiraea and a mock orange.\n\nA parasol beech does not grow up so much as over. Its branches twist and tumble back towards the ground, building a low dome rather than a trunk with a crown on top. The Arboretum's inventory measured the trunk at 93 centimetres across in 2017, about 2.9 metres round, and recorded the tree alive in 2021.\n\nIts age is counted from the day it arrived, so roughly 140 years, and the grafted wood can be a few years older than that. Nobody has written down how tall it is. The Arboretum notes that parasol beeches in the wild can pass 300 years, so by the standard of its own kind this one is not yet old.\n\nAbout 80 metres to the north-west, just off Beech Path, stands a second parasol beech from Kew, received in 1888 and a little slimmer, its heavy shoots held up by handmade bracing.",
+      "best_time": {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "winter, when the leaves are off and every twist in the branches shows"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_031",
+      "name": "The Hunnewell Golden Larches",
+      "species": "Golden Larch (Pseudolarix amabilis)",
+      "age_estimate": "about 130 years in the ground",
+      "age_min": 129,
+      "age_max": 150,
+      "age_basis": "derived",
+      "girth_cm": 310,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.2969015,
+        "longitude": -71.1283706,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/golden-larch",
+        "https://arboretum.harvard.edu/stories/outstanding-plants-of-the-arnold-arboretum-pseudolarix-amabilis",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate; the pair stands by Bussey Brook below Hemlock Hill Road, towards the Walter Street Gate.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 16779*A and 16779*B (mapped individual plant), queried 2026-11-03",
+      "accession": "16779*A and 16779*B",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise them by the needles, soft spiral rosettes on short spurs that turn gold and drop in late autumn. They stand as a pair about 15 metres apart by Bussey Brook, seen from Hemlock Hill Road.",
+      "verify_notes": "Two trees folded into one entry, 16779*A (DBH 82.6 cm, 42.2967513 -71.1283143) and 16779*B (DBH 98.8 cm, 42.2969015 -71.1283706), about 15 m apart, both condition Good, last checked 2023-10-24, grid 40-SW, flagged significant specimens. Both grown from seed received 29 Jan 1896 from H. H. Hunnewell's Pinetum, Wellesley, taken from the Hunnewell tree he had bought as a seedling in a four-inch pot from Veitch and Sons in 1866 (Arboretum plant page). Species first collected by Robert Fortune in 1853 in what is now Zhejiang. Arnoldia 40(5), 1980 (Koller) measured 16779*A at about 40 ft tall, 45 ft wide, 1 ft 9 in d.b.h. in Oct 1980 in a grove of six golden larches along Bussey Brook near the Walter Street Gate, and the Hunnewell parent at about 55 ft. A different pair, accession 3656 (from Veitch, 1891), stands in the same grove. Plant page: seen from Hemlock Hill Road. Golden larch is deciduous: needles turn gold in late autumn. Height now not recorded.",
+      "story": "Their parent tree came in a four-inch pot. In 1866 H. H. Hunnewell bought a golden larch seedling from the Veitch nursery and planted it in his pinetum at Wellesley. Thirty years later, in January 1896, the Arnold Arboretum received seed from that tree, and these two grew from it.\n\nThe species was first collected only in 1853, by the Scottish plant hunter Robert Fortune, in what is now Zhejiang in eastern China. It is a conifer that behaves like a hardwood. The soft needles sit in spiral rosettes on short spurs, and in late autumn they turn a clear gold and fall, leaving the tree bare all winter.\n\nThe two stand about 15 metres apart by Bussey Brook, in a grove of golden larches that also holds an older pair bought directly from Veitch in 1891. In 1980 the Arboretum's journal Arnoldia measured the slimmer of these two at about 12 metres tall and nearly 14 wide, and the Hunnewell parent at about 17. The current inventory records no height. The inventory now gives trunks of 83 and 99 centimetres across, about 3.1 metres round for the larger, and found both in good health in 2023.\n\nTheir age is counted from the day the seed arrived, about 130 years. They can be seen from Hemlock Hill Road.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late autumn, when the needles turn clear gold before they fall"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_032",
+      "name": "The 1874 Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "about 150 years since the seed arrived",
+      "age_min": 151,
+      "age_max": 170,
+      "age_basis": "derived",
+      "girth_cm": 286,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.3013805,
+        "longitude": -71.1253963,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/stories/fall-feasting",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths to Valley Road.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 1181*B (mapped individual plant), queried 2026-11-03",
+      "accession": "1181*B",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise the grove by five black walnuts of one age standing together on Valley Road. This is the one numbered 1181*B in the Arboretum's records.",
+      "verify_notes": "Accession 1181 arrived as seed in 1874 from the Harvard Botanic Garden, Cambridge, two years after the Arboretum was founded; five members of the accession stand on Valley Road in the black walnut grove, with 'cathedral-like canopies' per the Arboretum's Fall Feasting story. Entry is 1181*B: GIS condition Good, last checked 2021-03-02, DBH 90.9 cm measured 2017-06-14, grid 19-NW, flagged significant specimen. Siblings not individually assessed. Height not recorded.",
+      "story": "The Arnold Arboretum was two years old when the seed of this walnut arrived. It came in 1874 from the Harvard Botanic Garden in Cambridge, the university's older garden on the other side of the Charles, and it is an early entry in a catalogue that now runs past 30,000 records.\n\nIt did not come alone. Five trees from that one batch of seed still stand together on Valley Road, and the Arboretum describes their canopies as cathedral-like. This is the one the inventory files as 1181*B. It measured 91 centimetres across the trunk in 2017, about 2.9 metres round, and was recorded in good condition in 2021, which is enough to say it is healthy and not enough to say it is the biggest. Its four siblings have not been measured one by one, and nobody has recorded a height for any of them.\n\nIts age is counted from the year the seed arrived, so a little over 150 years. If you have stood in the grove and know which of the five is the largest, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_033",
+      "name": "Wilson's Chinese Beech",
+      "species": "Chinese Beech (Fagus engleriana)",
+      "age_estimate": "about 120 years since it arrived",
+      "age_min": 115,
+      "age_max": 140,
+      "age_basis": "derived",
+      "girth_cm": 250,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.2941994,
+        "longitude": -71.1297925,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://www.treesandshrubsonline.org/articles/fagus/fagus-engleriana/",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 7416*B (mapped individual plant), queried 2026-11-03",
+      "accession": "7416*B",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by its accession number, 7416*B, in the Arboretum's records. It is one of two Chinese beeches from Wilson's 1907 collection that both carry the number 7416.",
+      "verify_notes": "Accession 7416*B, plant received 9 Mar 1911 from E. H. Wilson, collected wild in China (collection date 31 May 1907, western Hubei; Wilson no. W 703 per Trees and Shrubs Online). Arboretum GIS: condition Good, last checked 2021-08-25, DBH 79.6 cm measured 2021-07-14, grid 53-NW, flagged centenarian record. Trees and Shrubs Online says two original trees remain at the Arnold Arboretum in good condition (the 7416 plants). Height not recorded.",
+      "story": "The collection date on this beech is 31 May 1907, in the wild in western Hubei. The date it reached the Arnold Arboretum is 9 March 1911, nearly four years later, and the record does not say where it spent the time in between. It arrived as a living plant from Ernest Henry Wilson under his field number 703, wild-collected rather than raised in a nursery.\n\nTrees and Shrubs Online, the reference work on temperate trees in cultivation, says two of those original Wilson beeches survive at the Arboretum in good condition. Both carry the accession number 7416. This is the one filed as 7416*B.\n\nIt is not a giant. The inventory measured its trunk at about 80 centimetres across in July 2021, roughly 2.5 metres round, and recorded no height. What it has is provenance. The species carries the name of the German botanist Adolf Engler. This tree carries a wild Chinese origin, a known collector and a known day, and it has been growing on the same ground for more than a century, which is why the Arboretum flags it in its list of centenarians.\n\nIts age is counted from its arrival in 1911, so about 115 years. How old the plant was when Wilson collected it is not recorded.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_034",
+      "name": "Sargent's Japanese Castor Aralia",
+      "species": "Castor Aralia (Kalopanax septemlobus)",
+      "age_estimate": "about 130 years since the seed arrived",
+      "age_min": 129,
+      "age_max": 150,
+      "age_basis": "derived",
+      "girth_cm": 287,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.2932462,
+        "longitude": -71.129428,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://www.treesandshrubsonline.org/articles/kalopanax/kalopanax-septemlobus/",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 12453*A (mapped individual plant), queried 2026-11-03",
+      "accession": "12453*A",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by its company, a konara oak and a needle juniper collected on the same 1892 Japan trip. It is the castor aralia numbered 12453*A in the Arboretum's records.",
+      "verify_notes": "Accession 12453*A, seed collected wild in Japan and received 12 Dec 1892 by the Arboretum's director Charles Sprague Sargent, who collected it himself (GIS collector field: Sargent, C. S.; Trees and Shrubs Online gives seed collected on his first Japan expedition of 1892, citing Port 2014). GIS: condition Good, last checked 2021-07-14, DBH 91.5 cm measured the same day, grid 53-SE, wild-collected origin known. Nearby wild-collected neighbours from the same 1892 trip: Konara oak 16823*B and Japan needle juniper 14866*A. Height not recorded.",
+      "story": "The director of the Arnold Arboretum gathered the seed of this tree himself. In 1892 Charles Sprague Sargent made his first collecting expedition to Japan, and the Arboretum's own record names him, not a hired collector or a nursery, as the source of this castor aralia. The wild seed was logged in Jamaica Plain on 12 December that year.\n\nIt has company from the same trip. Two of its neighbours were also collected in the wild on Sargent's 1892 trip, a konara oak and a Japanese needle juniper, so this corner of the grounds holds three living souvenirs of one journey, still standing close together more than 130 years on.\n\nThe castor aralia is an East Asian tree, wild in Japan, and this one has grown into a big one. The inventory measured its trunk at 91.5 centimetres across in July 2021, about 2.9 metres round, and recorded it in good condition. Nobody has written down its height.\n\nIts age is counted from the day the seed arrived, so about 130 years. Because it came as seed rather than as a young plant, that arrival date sits closer to the tree's real age than it would for a tree that arrived as a graft or a nursery plant of unknown years. If you have photographed it in flower or know more of its story, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_035",
+      "name": "The Sapporo Japanese Elm",
+      "species": "Japanese Elm (Ulmus davidiana var. japonica)",
+      "age_estimate": "about 130 years since the seed arrived",
+      "age_min": 130,
+      "age_max": 150,
+      "age_basis": "derived",
+      "girth_cm": 289,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.3011931,
+        "longitude": -71.122735,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Ulmus_davidiana_var._japonica",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 4119*H (mapped individual plant), queried 2026-11-03",
+      "accession": "4119*H",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its accession number, 4119*H, in the Arboretum's records, at grid square 20-SE. It is a Japanese elm with a trunk about 2.9 metres round, measured in 2017.",
+      "verify_notes": "Accession 4119*H, seed received 31 Aug 1895 from the Agricultural College, Sapporo, Japan (GIS source field). Wikipedia's article on the variety says it was introduced to the Arnold Arboretum in 1895 as seed sent from Sapporo by Professor Kingo Miyabe (secondary source; the GIS source field names the college). GIS: condition Good, last checked 2017-10-03, DBH 92.1 cm measured same day, grid 20-SE, flagged significant specimen. Same Sapporo Agricultural College link as the Sapporo katsuras already on the site (bos_008). Last check is six years old; flagged for that reason.",
+      "story": "Two sources tell the start of this elm's life slightly differently. The Arnold Arboretum's inventory says the seed came from the Agricultural College at Sapporo, in Japan, and arrived on 31 August 1895. Wikipedia's article on the Japanese elm says the variety reached the Arboretum that same year as seed sent from Sapporo by Professor Kingo Miyabe. They may well describe the same packet from two angles, but neither source joins them, so we leave both standing.\n\nThe Japanese elm is a variety of David's elm, and the tree that grew from that 1895 seed had a trunk 92 centimetres across when it was measured in October 2017, about 2.9 metres round, and was listed as a significant specimen of the collection. No height is on record.\n\nThat 2017 visit is also the last time the inventory says anyone checked on it, when it was in good condition. That is nine years without a written check, so how it stands today is not confirmed. If you walk past it, a photograph and a word on how it looks would settle it.\n\nIts age is counted from the day the seed arrived, about 130 years. This is one of two Sapporo stories in these grounds, the other belonging to the katsuras.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_036",
+      "name": "The Cedar of Lebanon at the Arborway End",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "about 80 years since it was planted",
+      "age_min": 79,
+      "age_max": 110,
+      "age_basis": "derived",
+      "girth_cm": 313,
+      "height_m": 22.5,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.3072679,
+        "longitude": -71.1210545,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station and walk in from the Forest Hills Gate, or enter at the Arborway end of the Arboretum, which is closer to this tree.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 271-47*A (mapped individual plant), queried 2026-11-03",
+      "accession": "271-47*A",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as a Cedar of Lebanon about 22 metres tall with a trunk about 3.1 metres round. It stands at the northern Arborway end of the grounds, numbered 271-47*A in the Arboretum's records.",
+      "verify_notes": "Accession 271-47*A, plant received 1 May 1947 from the Antitoxin Laboratory, Jamaica Plain (GIS source field), cultivated origin. GIS: condition Good, last checked 2019-10-28, DBH 99.6 cm and height 22.46 m both measured 2022-09-20, grid 3-NW (northern end near the Arborway), flagged significant specimen. Plant was received as a nursery tree of unknown size so the tree can be older than the accession by some years. One source (the Arboretum record); flagged one source.",
+      "story": "The source column on this cedar's record does not name a nursery or a plant collector. It names the Antitoxin Laboratory in Jamaica Plain, which handed the Arnold Arboretum a Cedar of Lebanon on 1 May 1947. Why a laboratory had a cedar to give away, the record does not say.\n\nWhat the record does give is unusually exact. In September 2022 the Arboretum measured the tree at 22.46 metres tall, with a trunk 99.6 centimetres across, about 3.1 metres round. It is listed as a significant specimen of the collection and was in good condition at its last check, in 2019. It stands at the northern end of the grounds, near the Arborway.\n\nIts age is about 80 years in the ground, counted from the day it arrived. It came as a nursery tree of unknown size, so it may be some years older than that. Where it grew before 1947 is not recorded.\n\nEverything here rests on a single source, the Arboretum's own inventory. If you know the laboratory's side of the story, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_037",
+      "name": "The Engelmann Black Oak",
+      "species": "Black Oak (Quercus velutina)",
+      "age_estimate": "about 140 years since the graft arrived",
+      "age_min": 143,
+      "age_max": 170,
+      "age_basis": "derived",
+      "girth_cm": 292,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.299552,
+        "longitude": -71.123608,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 1887*A (mapped individual plant), queried 2026-11-03",
+      "accession": "1887*A",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its accession number, 1887*A, in the Arboretum's records, at grid square 32-NW. It is a black oak with a trunk about 2.9 metres round.",
+      "verify_notes": "Accession 1887*A, graft received 21 Feb 1883 from Dr George Engelmann, St Louis; GIS record note: 'Taken by Dr. G. Engelmann from the tree described by him [note from card]' (the Arboretum's own accession card; which tree he had described is not stated in anything I could fetch). Condition Fair, last checked 2017-10-18, DBH 92.8 cm measured 2012-08-01, grid 32-NW, flagged centenarian record. Fair condition, last check 2017: flagged. One source only (the Arboretum record). The 'grafted' status means the tree is a clone of Engelmann's tree, not a seedling.",
+      "story": "This oak is a clone of a tree a botanist once described, and its record does not say which tree that was. In February 1883 the Arnold Arboretum received a graft from Dr George Engelmann, the St Louis physician and botanist. A note from the Arboretum's accession card, copied into its records, says that it was taken by Engelmann from the tree described by him.\n\nA graft is a cutting joined onto a rootstock, so the oak growing here is genetically the same individual as Engelmann's original, wherever that stood. The card does not say where, and no source we have identifies it. If you work on Engelmann's papers and recognise the tree, we would very much like to hear.\n\nThe clone has done well by its own measure. The inventory gave its trunk as 92.8 centimetres across in 2012, about 2.9 metres round, and lists it among the Arboretum's centenarians, more than 140 years after the graft arrived. Its condition was recorded as fair in 2017, the last check on file, and no height has been measured. That fair rating and the nine-year gap mean nobody has confirmed how it is doing now.\n\nAll of this comes from one source, the Arboretum's record of the tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_038",
+      "name": "Sargent's Geneseo Bur Oak",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "about 145 years since the acorns arrived",
+      "age_min": 146,
+      "age_max": 175,
+      "age_basis": "derived",
+      "girth_cm": 306,
+      "location": {
+        "address": "Arnold Arboretum, Jamaica Plain, Boston MA 02130",
+        "latitude": 42.3004485,
+        "longitude": -71.1249283,
+        "neighbourhood": "Jamaica Plain"
+      },
+      "verified_sources": [
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Arnold Arboretum of Harvard University living collections database (BG-BASE) via Arboretum plant inventory GIS",
+        "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0"
+      },
+      "access": "Free, open every day from dawn to dusk (Arnold Arboretum of Harvard University, public grounds, no ticket). Dogs on lead; stay on paths and lawns.",
+      "transport": "Orange Line or commuter rail to Forest Hills station, then a short walk to the Arboretum's Forest Hills Gate and in along the paths.",
+      "location_precision": "confirmed",
+      "pin_source": "Arnold Arboretum plant inventory GIS, point for accession 16847*M (mapped individual plant), queried 2026-11-03",
+      "accession": "16847*M",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as the bur oak in a cluster of three big oaks within 40 metres, beside a chestnut oak and a black oak of the same years. It is numbered 16847*M in the Arboretum's records.",
+      "verify_notes": "Accession 16847*M, seed received 8 Jan 1880, collected wild by C. S. Sargent at the Geneseo Valley (GIS locality; presumably New York, not stated), origin known, (grid 25-NE). Condition Alive, last checked 2020-01-22, DBH 97.3 cm measured 2017-10-17. Next to chestnut oak 16352*F (1879, DBH 95) and black oak 16893*A (1882, DBH 98): three of the oldest big oaks in one 40 m cluster. One source only (the Arboretum record): flagged.",
+      "story": "Three oaks that reached the Arnold Arboretum between 1879 and 1882 stand within 40 metres of each other here, each with a trunk close to a metre across. This bur oak is the one grown from acorns that Charles Sprague Sargent, the Arboretum's director, gathered in the wild. The record gives the place as the Geneseo Valley, probably the one in New York, though it does not name the state. The seed was logged in Jamaica Plain on 8 January 1880.\n\nIts neighbours are a chestnut oak received in 1879 and a black oak from 1882. All three are among the oldest large oaks in the collection, and they have grown up side by side for well over a century.\n\nThe bur oak measured 97.3 centimetres across the trunk in October 2017, a little over 3 metres round, and was last recorded alive in January 2020. No height is on file. Its age is counted from the day the acorns arrived, about 145 years, and because it came as seed rather than as a nursery plant, that figure sits close to its real age.\n\nEverything specific here comes from one source, the Arboretum's own record, and the inventory has not reported on the tree since 2020. If you have seen it lately, tell us how it looks.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_046",
+      "name": "The Bagheera Fountain Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "possibly over 150 years",
+      "age_min": 150,
+      "age_max": 170,
+      "age_basis": "source",
+      "girth_cm": 570,
+      "height_m": null,
+      "location": {
+        "address": "Public Garden, beside the Bagheera Fountain on the Lagoon Path, Boston",
+        "latitude": 42.3541832,
+        "longitude": -71.0692825,
+        "neighbourhood": "Beacon Hill"
+      },
+      "verified_sources": [
+        "https://friendsofthepublicgarden.org/2019/09/17/tree-blog-the-beeches-september-17-2019/",
+        "https://data.boston.gov/dataset/bprd-trees",
+        "https://nominatim.openstreetmap.org/ui/details.html?osmtype=N&osmid=4408379864"
+      ],
+      "official_register": {
+        "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+        "url": "https://data.boston.gov/dataset/bprd-trees"
+      },
+      "access": "Public park, free, open daily (Boston Parks hours apply).",
+      "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min. Charles/MGH (Red) 8 min.",
+      "location_precision": "approximate",
+      "pin_source": "City inventory point id 56199 (European beech, DBH 71.4 in), 10 m from the OSM node of Bagheera Fountain (42.3541423,-71.0691591). Tree-level coordinate, but identity as the Friends' tree is inferred from fountain proximity and being by far the largest beech in the Garden (next 60 in, 45.6 in).",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the smooth grey stems reaching right over the path and the Bagheera panther fountain, with a cable in the crown. It stands on the Lagoon Path, the biggest beech in the Garden.",
+      "verify_notes": "Friends of the Public Garden (2019): 14 beeches in the Garden, some from the original 1870s plantings; one venerable specimen reaches out over the pathway and over the Bagheera fountain, a large branch has rooted in the bed beyond and is cabled to its multi-stemmed main trunk; 'may be over 150 years old'; in decline with significant interior rot, the Friends are working to prolong its life and may reduce crown weight. Inventory DBH 71.4 in (181 cm), girth computed as DBH x pi = about 570 cm; it is a multi-stem so treat as a combined figure. Inventory shows no height. Decline since 2019: ALIVE as of the inventory (2026-11-03) but I could not find a post-2019 statement on its condition, so flagged. A cabled tree in decline may be removed; check condition before publishing. Sources: Friends are the Parks' care partner of the Boston Parks Dept; two independent sources for existence (Friends text, city inventory). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+      "story": "One of this beech's branches grew so long that it put down roots of its own in the flower bed beyond the path. The Friends of the Public Garden, who care for the Garden's trees alongside the city, described it in 2019 as a venerable specimen reaching out over the walkway and over the Bagheera fountain, with that rooted limb cabled back to its many-stemmed trunk to keep the whole thing together.\n\nThe Garden holds fourteen beeches, and the Friends say some of them date from its original plantings in the 1870s. Of this one they wrote that it may be over 150 years old, which is an estimate, not a planting record. It is by far the biggest beech in the Garden. The city's tree inventory gives its stems a combined 71 inches across, where the next largest beech is 60.\n\nAge has a cost. In the same 2019 note the Friends reported that the tree was in decline, with significant rot inside, and that they were working to prolong its life, possibly by taking weight off the crown. No public word on its health has followed since. The city inventory still lists it, and that is the latest record we have. If you visit and it has changed, tell us.\n\nIt stands on the Lagoon Path, over the fountain with the panther, a few minutes' walk from Arlington station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_047",
+      "name": "The Public Garden Pagoda Tree",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 498,
+      "height_m": 21.9,
+      "location": {
+        "address": "Public Garden, west side near the Arlington Street path, Boston",
+        "latitude": 42.3551559,
+        "longitude": -71.0715408,
+        "neighbourhood": "Back Bay"
+      },
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://data.boston.gov/dataset/bprd-trees"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state big tree list), Japanese pagodatree, Boston Public Garden, state rank 2",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Public park, free, open daily (Boston Parks hours apply).",
+      "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+      "location_precision": "confirmed",
+      "pin_source": "City inventory point id 56140 (Japanese pagodatree, DBH 62 in = circumference 195 in) matches the DCR record (circumference 196 in, 72 ft, measured 2023-01-19); the only pagoda tree of this size in the Garden. Match by species and size.",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the broad spreading crown of fine compound leaves over a thick fissured trunk, almost five metres round. It stands on the Arlington Street side, about 45 metres from the dawn redwood.",
+      "verify_notes": "DCR Legacy Tree record: circumference 196 in (498 cm), height 72 ft (21.9 m), crown spread recorded as 0 (corrupt/blank, ignored), measured 2023-01-19, second largest in Massachusetts. City inventory DBH 62 in (157 cm). No planting date found, age left empty. Different tree from bos_004 (dawn redwood, 45 m away). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+      "story": "Only one Japanese pagoda tree in Massachusetts is bigger than this one. The state's register measured it in January 2023 at 196 inches round, almost five metres, and 72 feet tall, and ranked it second of its kind in the Commonwealth. The city's own inventory of Public Garden trees agrees on the trunk, and has no other pagoda tree in the Garden anywhere near its size.\n\nThe tree does its best work late in the year. Pagoda trees flower in late summer, sending out sprays of cream blossom in August, when almost nothing else in bloom is a tree. On the Arlington Street side, this broad, spreading crown becomes one of the few things in flower overhead.\n\nThe Garden's west side keeps good company. The dawn redwood planted here in 1963 stands about 45 metres away, and a short walk takes in the Garden's biggest ginkgo and its biggest bur oak, all three within about 40 metres of each other. Three of the Garden's biggest trees in one corner, and it costs nothing to walk through.\n\nNobody has published a planting date for the pagoda tree. Its trunk is thick and deeply fissured, which tells you it is old without telling you how old. If you know, tell us.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when sprays of cream flowers open and almost no other tree is in bloom"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_048",
+      "name": "The Public Garden Rock Elm",
+      "species": "Rock Elm (Ulmus thomasii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 287,
+      "height_m": null,
+      "location": {
+        "address": "Public Garden, near the tool shed, Boston",
+        "latitude": 42.3550491,
+        "longitude": -71.069313,
+        "neighbourhood": "Beacon Hill"
+      },
+      "verified_sources": [
+        "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/",
+        "https://data.boston.gov/dataset/bprd-trees",
+        "https://arboretum.harvard.edu/arnoldia-stories/ulmus-thomasii-the-hard-elm-thats-hard-to-find/"
+      ],
+      "official_register": {
+        "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+        "url": "https://data.boston.gov/dataset/bprd-trees"
+      },
+      "access": "Public park, free, open daily (Boston Parks hours apply).",
+      "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+      "location_precision": "confirmed",
+      "pin_source": "City inventory point id 56185, the only Ulmus thomasii among about 1,500 tree records in the Common, Public Garden and Commonwealth Avenue Mall; Friends call it the lone specimen in the three parks. Species is unique so identity is not in doubt.",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it as the one rock elm in the Common, the Garden and the Mall, an elm about 2.9 metres round. It stands near the Public Garden's tool shed.",
+      "verify_notes": "Friends of the Public Garden (2020): the rock elm near the tool shed is the lone specimen of its species in the Common, Garden and Mall. City inventory DBH 36 in (91 cm), girth computed about 287 cm. Species is rare in cultivation (Arnold Arboretum article is species-only background, not this tree). Age unknown. python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+      "story": "Among the roughly 1,500 trees the city has recorded on Boston Common, in the Public Garden and along the Commonwealth Avenue Mall, there is exactly one rock elm, and it stands near the Public Garden's tool shed. The Friends of the Public Garden call it the lone specimen of its species in all three parks, and the city's inventory agrees.\n\nRock elm is a North American tree that is rare in cultivation, even in North America. Harvard's Arnold Arboretum titled an article on it \"the hard elm that's hard to find\", and the title holds up. Seeing one in the middle of a city park is the exception, not the rule, and this one has no relatives nearby to give it away.\n\nThis one is a good size, 36 inches across in the city's records, about 2.9 metres round. That is not huge by the standards of the Garden's beeches and oaks, and it does not need to be. Its distinction is the species, not the girth. Walk past it without knowing and it reads as one more elm among the hundreds in these parks.\n\nNobody has published when it was planted, or why a gardener chose a rock elm for the Public Garden in the first place. If you know either part of that story, tell us. The Bagheera beech and the Garden's lagoon are a short walk away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_049",
+      "name": "The Last American Elm of the Common",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 367,
+      "height_m": null,
+      "location": {
+        "address": "Boston Common, Railroad Mall just west of the Visitor Information Center, Boston",
+        "latitude": 42.3550224,
+        "longitude": -71.0640335,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/",
+        "https://data.boston.gov/dataset/bprd-trees"
+      ],
+      "official_register": {
+        "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+        "url": "https://data.boston.gov/dataset/bprd-trees"
+      },
+      "access": "Public park, free, open daily; Visitor Information Center beside it is the staffed stop.",
+      "transport": "Park Street (Red and Green Lines) 3 to 5 min walk.",
+      "location_precision": "approximate",
+      "pin_source": "City inventory point id 900093173, the only large (DBH 46 in) tree recorded as plain American elm on the Common (all other American elms there are DBH 2 to 23 in); fits the Friends' description 'Railroad Mall, just west of the Visitor Information Center'. Identity inferred from description plus size, so approximate.",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as the one large American elm on Railroad Mall, 3.7 metres round, among the Common's many English elms. It stands just west of the Visitor Information Center.",
+      "verify_notes": "Friends of the Public Garden (2020): 'the last true, non-hybridized, American Elm on the Common', on Railroad Mall just west of the Visitor Information Center; only about a quarter of the three parks' trees are elms, just over 400, down from thousands before Dutch elm disease; American elm is the Massachusetts state tree. Inventory DBH 46 in (117 cm), girth about 367 cm. Age not given anywhere; leave empty. python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+      "story": "Boston Common is full of elms and, according to the people who look after them, has exactly one true American elm left. The Friends of the Public Garden describe it as the last true, non-hybridized American elm on the Common, standing on Railroad Mall just west of the Visitor Information Center.\n\nThat matters because of what happened to the rest. American elm is the state tree of Massachusetts, and before Dutch elm disease the three downtown parks held thousands of elms. The Friends now count just over 400 elms across the Common, the Garden and the Commonwealth Avenue Mall, about a quarter of all their trees.\n\nThe city's tree inventory backs up the Friends' claim in its own way. It lists other trees on the Common as American elm, but none larger than 23 inches across. This one is 46, about 3.7 metres round, which puts it in a different class from anything else of its kind on the Common.\n\nNobody has published an age for it, and no planting date survives in the records. If you know it, tell us. The best view is from the Mall itself, looking up into the vase of branches, the shape that lets you pick an American elm out from the English elms around it. It has outlived thousands of elms in these parks, which is reason enough to stop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_050",
+      "name": "The Franklin Square White Oak",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 344,
+      "height_m": 20.7,
+      "location": {
+        "address": "Franklin Square Park, Boston",
+        "latitude": 42.3387146,
+        "longitude": -71.0724945,
+        "neighbourhood": "South End"
+      },
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://data.boston.gov/dataset/bprd-trees"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program, white oak, Franklin Square Park, state rank 18",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Public park (a historic South End square), free.",
+      "transport": "Silver Line SL4 and SL5 buses run along Washington Street beside the square; Massachusetts Avenue station (Orange Line) is about 1 km west, roughly 15 minutes on foot.",
+      "location_precision": "confirmed",
+      "pin_source": "City inventory point id 59060 (white oak, DBH 45 in), the only white oak in Franklin Sq; DCR record circumference 135.5 in (DBH 43 in) measured 2021 grows to the inventory figure. Match by species and size, 12 m from the geocoded square centre.",
+      "curation_status": "ai_generated",
+      "how_to_recognise": "You can recognise it by the lobed leaves with rounded tips and pale scaly bark, the only white oak in the square. It stands among the rows of littleleaf lindens in Franklin Square.",
+      "verify_notes": "DCR Legacy Tree: white oak, Franklin Square Park, circumference 135.5 in (344 cm), height 68 ft (20.7 m), measured 2021-03-15, state rank 18. Inventory DBH 45 in. The square also holds a large American elm (inventory id 59078, DBH 55 in, 42.3387718,-71.0732117) not in the DCR list: second candidate for a later pass. python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+      "story": "The only white oak in Franklin Square stands among rows of littleleaf lindens, and Massachusetts ranks it eighteenth of its species in the whole state. The register measured it in March 2021 at 135.5 inches round, about 3.4 metres, and 68 feet tall. The city's later inventory has the trunk a little wider still, at 45 inches across.\n\nEighteenth sounds modest, but the list covers the whole Commonwealth, and this tree earned its place in a city square in the South End, on Washington Street, with houses on every side.\n\nBoston's best-known white oak, on Peters Hill in the Arnold Arboretum, has been core-sampled and dated to the early 1800s. This one has never been dated, and nothing published gives a planting year. Its girth makes it a mature tree, but girth alone does not give an honest age for an oak in a city square. If you know when it went in, tell us.\n\nFranklin Square has one more big tree worth a look on the same visit, an American elm about 55 inches across that is not on the state list.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_051",
+      "name": "The Public Garden Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 429,
+      "height_m": null,
+      "location": {
+        "address": "Public Garden, west side, Boston",
+        "latitude": 42.3547478,
+        "longitude": -71.071579,
+        "neighbourhood": "Back Bay"
+      },
+      "verified_sources": [
+        "https://data.boston.gov/dataset/bprd-trees",
+        "https://friendsofthepublicgarden.org/2016/10/14/meet-the-trees-ginkgo-biloba/"
+      ],
+      "official_register": {
+        "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+        "url": "https://data.boston.gov/dataset/bprd-trees"
+      },
+      "access": "Public park, free, open daily (Boston Parks hours apply).",
+      "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+      "location_precision": "confirmed",
+      "pin_source": "City inventory point id 56146, the largest ginkgo of the 15 ginkgos recorded in the Garden and Common (DBH 53.8 in; next 39.4 in). Register tree coordinate.",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the fan-shaped two-lobed leaves on the biggest ginkgo in the Garden, about 4.3 metres round. It stands on the west side, about 10 metres from the bur oak and near the pagoda tree.",
+      "verify_notes": "One city source for size (inventory DBH 53.8 in, girth about 429 cm); Friends article gives the species' history in the parks (13 on the Common, 8 in the Garden) but not this tree, so FLAGGED one source. Age not documented. NOT the 1835 Joy Street ginkgo: the Common's largest ginkgo is only 22 in DBH and none stands near the Joy Street steps, so that 1835 tree is probably gone (kept as a lead, unconfirmed). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+      "story": "For most of the year this is a big tree in a garden full of big trees. For a day or two in November it is the one everybody stops for. Ginkgos turn butter gold all at once, then let go of nearly every leaf in a single drop, and a crown this size leaves a carpet of yellow fans across the lawn on the Garden's west side.\n\nIt is the largest ginkgo the city has recorded in the Public Garden and on Boston Common, 53.8 inches across, about 4.3 metres round, against 39.4 for the next one down. That figure comes from the city's tree inventory alone. No register or published account gives this tree's size or history, so treat the measurement as one good source rather than a settled fact.\n\nGinkgo has been planted in these parks for a long time, and the Friends of the Public Garden have written about the species in these parks. None of that writing dates this particular tree, and neither does anything else published. If you know when it went in, tell us.\n\nIt stands a few metres from the Garden's biggest bur oak and about 45 metres from the state's second-largest pagoda tree, so one short loop on the Arlington Street side covers all three. Come in November for the gold, or in August, when the pagoda tree is in flower and the ginkgo is a plain green giant beside it.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns butter gold and drops in a day or two"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_052",
+      "name": "The Public Garden Bur Oak",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 424,
+      "height_m": null,
+      "location": {
+        "address": "Public Garden, west side, Boston",
+        "latitude": 42.3548546,
+        "longitude": -71.0716019,
+        "neighbourhood": "Back Bay"
+      },
+      "verified_sources": [
+        "https://data.boston.gov/dataset/bprd-trees"
+      ],
+      "official_register": {
+        "name": "City of Boston Parks and Recreation Department tree inventory (BPRD Trees, open data, PDDL)",
+        "url": "https://data.boston.gov/dataset/bprd-trees"
+      },
+      "access": "Public park, free, open daily (Boston Parks hours apply).",
+      "transport": "Arlington (Green Line) 3 min walk; Boylston (Green) 5 min.",
+      "location_precision": "confirmed",
+      "pin_source": "City inventory point id 56147, the largest of six bur oaks in the Garden (DBH 53.1 in; next 41.4 in). Register tree coordinate.",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the big deeply lobed leaves and acorns in fringed cups, the broadest of the Garden's six bur oaks. It stands on the west side, about 10 metres from the big ginkgo.",
+      "verify_notes": "One source only (city inventory DBH 53.1 in, girth about 424 cm), flagged one source. No age or planting date found. Grouped walk: pagoda tree, ginkgo and bur oak stand within about 40 m of each other (ids 56140, 56146, 56147). python3 scripts/lifecheck.py 2026-11-03: RECENT iNaturalist observation within the radius (not proven to be this trunk). City inventory file regenerated 2026-11-03.",
+      "story": "Macrocarpa means big fruit, and this oak's acorns sit in cups edged with a shaggy fringe. It is the broadest of the Public Garden's six bur oaks, 53.1 inches across in the city's tree inventory, about 4.2 metres round. The next one down is 41.4.\n\nThat inventory is the only record of this tree's size. No register lists it and nothing published gives its history, so the figure stands on one good source. It is still a big oak by any standard for a city garden, and it has a lot of company. The Garden's biggest ginkgo stands about ten metres away and the state's second-largest Japanese pagoda tree a little further on, so this corner of the Arlington Street side packs three of the Garden's largest trees into a space you can cross in a minute.\n\nBur oak is a North American species, and its big, deeply lobed leaves are almost as distinctive as the acorns, which come down under the crown in autumn.\n\nNobody has published when this tree was planted, and its girth alone is not an honest guide to the age of an oak in a city garden. If you know its story, tell us. It is a three-minute walk from Arlington station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_053",
+      "name": "The Dilboy Field Swamp White Oak",
+      "species": "Swamp White Oak (Quercus bicolor)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": null,
+      "girth_cm": 434,
+      "height_m": 16.6,
+      "location": {
+        "address": "Dilboy Field tennis courts, Alewife Brook Parkway, Somerville",
+        "latitude": 42.4096525,
+        "longitude": -71.1313953,
+        "neighbourhood": "West Somerville"
+      },
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program, swamp white oak, Dilboy Tennis Courts, Alewife Brook Parkway, Somerville, state rank 4",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Public park (Dilboy Field, Alewife Brook Greenway), free.",
+      "transport": "Davis (Red Line) or Medford/Tufts (Green Line), each roughly 1.5 km away, about 20 minutes on foot; buses run along Alewife Brook Parkway.",
+      "location_precision": "approximate",
+      "pin_source": "Nominatim centroid of Dilboy Field only; the register names the tennis courts, tree not individually placed.",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the very wide trunk, 4.34 metres round, and two-tone leaves, green above and silvery below. It stands by the Dilboy Field tennis courts on the Alewife Brook Parkway.",
+      "verify_notes": "DCR record: circumference 171 in (434 cm), height 54.6 ft (16.6 m), measured 2019-12-12 (nearly seven years old, vitality unrecorded): FLAGGED 'register only'. Pin is park level; no tree coordinate found in any open source. Swamp white oak at 434 cm is an exceptional girth for the species (low height suggests a broad open-grown crown). Alive check: lifecheck RECENT 2023-08-19 only, within the park. Dilboy Field is a public memorial park. ",
+      "story": "Fourth place in Massachusetts for swamp white oak belongs to a tree beside the tennis courts at Dilboy Field, in West Somerville. The state measured it in December 2019 at 171 inches round, about 4.34 metres, and only 54.6 feet tall. For a tree that wide, that is short, and it gives the oak a squat, heavy build.\n\nThe Latin name, bicolor, describes the leaves, which are green on top and silvery underneath. It is the easiest way to tell it from other oaks nearby.\n\nDilboy Field is a public memorial park on the Alewife Brook Parkway, and the register places the tree at its tennis courts without giving a closer position. The pin on this page marks the park, not the trunk, so walk the edge of the courts and look for the widest oak you can find.\n\nThe state's measurement is nearly seven years old and the register does not record the tree's condition. The most recent sign of it is a 2023 nature-app record from within the park, which may or may not be this tree. So treat this one as a tree to confirm. If you visit, tell us whether it still stands and send a photograph, which would settle both the pin and the question. Nobody has dated it either, so any history you know is welcome too.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_014",
+      "name": "The Fountain Avenue Katsura",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "not documented",
+      "girth_cm": 461,
+      "height_m": 23.2,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Lime and Fountain, section 29-A)",
+        "latitude": 42.372319,
+        "longitude": -71.141122,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-08-26); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its size: it is the largest katsura in the cemetery, 4.61 metres round. It stands where Lime and Fountain avenues meet, near Auburn Lake, about 40 metres from the huge red oak.",
+      "verify_notes": "DCR Legacy list has a Mount Auburn katsura at 177 in circumference, 71.5 ft, measured 2022-08-03 (address only 'Mount Auburn Cemetery'). Cemetery inventory's biggest katsura: DBH 57.75 in (=181 in circumference), 76 ft, measured 2026-09-29; sizes agree within 3 percent so treated as the same tree, flagged as an inference, not stated by either source. Age not documented; katsura of this girth are old for the species in New England but no planting date found. PINS: the coordinate is the cemetery's own mapped tree position (inventory section N16, avenue pair 'Lime/Fountain'); not verified against a visible crown. Last inventory check 2026-08-26, measured 2026-09-29, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "Mount Auburn Cemetery keeps a mapped inventory of its trees, and its biggest katsura comes out at 4.61 metres round. The cemetery's own plant inventory measured it again in September 2026 at 57.75 inches across the trunk and about 23 metres tall, the largest katsura anywhere in its records.\n\nMassachusetts keeps a list of its biggest trees, and in 2022 the state measured a katsura in this cemetery at 177 inches round and 71.5 feet tall. The list gives no address beyond the cemetery's name. This tree comes within three percent of those figures, so it is very probably the same one, though neither record says so in as many words.\n\nKatsura is planted for its autumn. In October the round leaves turn pink and yellow, and once they are down they give off a smell of burnt sugar that tends to reach you before the tree does. The cemetery opened in 1831, but nobody has put a date on this tree. The inventory gives no planting year. If you know when it went in, tell us.\n\nIt stands on the east side of the cemetery, in the section where Lime Avenue meets Fountain Avenue, close to Auburn Lake and about 40 metres from the great red oak of the same corner.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the leaves turn pink and yellow and smell of burnt sugar once they fall"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_015",
+      "name": "The Moss Path Scarlet Oak",
+      "species": "Scarlet Oak (Quercus coccinea)",
+      "age_estimate": "pre-1831, before the cemetery",
+      "girth_cm": 407,
+      "height_m": 31.7,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Moss Path Area, section 56-C)",
+        "latitude": 42.370972,
+        "longitude": -71.144459,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/",
+        "https://www.inaturalist.org/observations/402151836"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2025-05-14); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its height, about 32 metres, and a trunk 4.07 metres round, recorded as older than the cemetery. It stands by Moss Path; the other big scarlet oak is at Mimosa and Heliotrope paths.",
+      "verify_notes": "Cemetery inventory: DBH 51 in (=406 cm girth), 104 ft, checked alive 2025-05-14, received-year 1831 with provenance code W (wild), i.e. recorded as pre-dating the cemetery's 1831 founding. Independent: iNaturalist observation 402151836 (2026-09-20, 42.37095,-71.14459, research grade) by a visitor says 'largest I've ever seen of this species... known to pre-date 1831 and is therefore wild, not a planting' and that cemetery staff reviewed the ID. DCR Legacy list has a Mount Auburn scarlet oak state champion at 153 in, 88 ft (2022-08-03); inventory has another scarlet oak at Mimosa/Heliotrope DBH 49.75 in, 95 ft, so which one is the DCR tree is not settled: state only that the register lists a champion scarlet oak in the cemetery. PINS: the coordinate is the cemetery's own mapped tree position (inventory section K12, avenue pair 'Moss Path Area'); not verified against a visible crown. Last inventory check 2025-05-14, measured 2026-04-28, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "This scarlet oak is older than the cemetery around it. When Mount Auburn opened in 1831, it was already growing here, and the cemetery's plant inventory still files it that way, as received in 1831 and of wild origin. Every lot, monument and avenue in this corner was laid out around a tree nobody planted.\n\nHow much older than 1831 it is, nobody knows. The record only says it was here first, which makes it at least 195 years old and possibly a good deal more. A visitor who logged it on iNaturalist in September 2026 described it the same way, as pre-dating the cemetery and therefore wild, and noted that cemetery staff had checked the identification.\n\nThe inventory puts the trunk at 51 inches across, about 4.07 metres round, and the height at 104 feet, close to 32 metres. Massachusetts lists a champion scarlet oak somewhere in Mount Auburn, measured in 2022 at 153 inches round and 88 feet tall. Whether that is this tree is not settled. A second big scarlet oak, by Mimosa and Heliotrope paths, is nearly the same size, and the state record names only the cemetery.\n\nWhat is settled is that this one was standing before the first burial here, and that it has watched the whole of Mount Auburn grow up around it. It stands by Moss Path.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_016",
+      "name": "The Hazel Avenue Cedar of Lebanon",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "not documented",
+      "girth_cm": 273,
+      "height_m": 21.6,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Hazel and Indian, section 23-C)",
+        "latitude": 42.374114,
+        "longitude": -71.144611,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-07-28); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as the only large cedar of Lebanon in the cemetery's inventory, an evergreen about 22 metres tall. It stands between Hazel Avenue and Indian Ridge Path, about 30 metres from the big Norway spruce.",
+      "verify_notes": "Cemetery inventory: Cedrus libani ssp. stenocoma, DBH 34.25 in (=87 cm diameter, 273 cm girth), 71 ft, checked alive 2026-07-28. DCR champion list: Mount Auburn Cedar of Lebanon state champion, circumference 104 in (=33.1 in diameter), 68 ft, 2022-08-03. Size and height agree within 4 percent and it is the only Cedar of Lebanon in the large-tree query; treated as the champion, flagged as inference. Evergreen, good in winter. PINS: the coordinate is the cemetery's own mapped tree position (inventory section R12, avenue pair 'Hazel/Indian'); not verified against a visible crown. Last inventory check 2026-07-28, measured 2026-09-08, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "Massachusetts lists its champion cedar of Lebanon in this cemetery and gives no more of an address than that. The state measured it in 2022 at 104 inches round and 68 feet tall, then wrote \"Mount Auburn Cemetery\" and left it at that.\n\nThe cemetery's own plant inventory narrows it down. Among its large trees there is one cedar of Lebanon, between Hazel Avenue and Indian Ridge Path, measured at 34.25 inches across the trunk, about 2.73 metres round, and 71 feet tall. Those figures sit within four percent of the state's, so this is almost certainly the champion. Neither record makes the match itself, so take it as a strong likelihood rather than a certainty.\n\nThe inventory names it as the subspecies stenocoma. It is an evergreen, which makes it one of the few trees on this hill that looks the same in January as in June, and a fair reason to come in winter, when the crowns around it are bare.\n\nNobody has dated it, and the inventory gives no planting year. If you know when it went in, tell us. About 30 metres away on Indian Ridge Path stands the cemetery's biggest Norway spruce, which makes a two-evergreen detour of it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_017",
+      "name": "The Pilgrim Path Nikko Fir",
+      "species": "Nikko Fir (Abies homolepis)",
+      "age_estimate": "not documented",
+      "girth_cm": 307,
+      "height_m": 23.5,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Pilgrim and Spruce, section 16-E)",
+        "latitude": 42.371325,
+        "longitude": -71.147099,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2025-10-07); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it as a big evergreen fir, about 23 metres tall and 3.07 metres round, the only Nikko fir among the cemetery's large trees. It stands between Pilgrim Path and Spruce Avenue.",
+      "verify_notes": "Cemetery inventory: DBH 38.5 in (=98 cm diameter, 307 cm girth), 77 ft, checked alive 2025-10-07. DCR champion Nikko fir at Mount Auburn: 119.5 in circumference (=38.0 in diameter), 75.5 ft, 2022-08-03: match within 2 percent, only one Nikko fir in the query, flagged as inference. Fir native to central Japan, so a champion of a rare species. PINS: the coordinate is the cemetery's own mapped tree position (inventory section L8, avenue pair 'Pilgrim/Spruce'); not verified against a visible crown. Last inventory check 2025-10-07, measured 2025-10-07, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "Nikko fir grows wild in central Japan, and the biggest one Massachusetts has on record grows between two cemetery paths in Cambridge. The state recorded its champion in Mount Auburn in 2022 at 119.5 inches round and 75.5 feet tall, and the cemetery's own plant inventory has exactly one Nikko fir that fits.\n\nThat one stands between Pilgrim Path and Spruce Avenue. The inventory, last checked in October 2025, gives it a trunk 38.5 inches across, about 3.07 metres round, and a height of 77 feet, a shade over 23 metres. The two sets of figures agree within two percent. The state does not name the spot, so the pairing rests on species and size, which is as strong as this kind of match gets without a tag on the trunk.\n\nNikko fir is not a common sight outside Japan, and a champion of a rare species is a different thing from a champion oak. There may simply be few rivals. It is still a big conifer by any measure, and as an evergreen it looks much the same in every month you could visit.\n\nMount Auburn opened in 1831, and some 870 of the trees it has mapped since are 30 inches across or more. This is one of them. Nobody has published when it was planted. If you know, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_018",
+      "name": "The Anemone Path Zelkova",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "not documented",
+      "girth_cm": 391,
+      "height_m": 25.6,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Anemone and Mound, section 53-G)",
+        "latitude": 42.370318,
+        "longitude": -71.145469,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2025-04-11); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the crown, recorded by the state as about 28 metres wide, far broader than anything near it. It stands by Anemone Path and Mound Avenue; it is the largest zelkova in the cemetery.",
+      "verify_notes": "Cemetery inventory: largest of its zelkovas, DBH 49 in measured at 2 ft (=154 in circumference), 84 ft, checked alive 2025-04-11. DCR champion Japanese zelkova at Mount Auburn: 166 in circumference, 70.4 ft, crown spread 93 ft, 2022-08-03. Girth 7 percent off, but it is the largest zelkova in the inventory; DBH taken at 2 ft vs register at breast height explains some of it. Flagged as inference. PINS: the coordinate is the cemetery's own mapped tree position (inventory section J10, avenue pair 'Anemone/Mound'); not verified against a visible crown. Last inventory check 2025-04-11, measured 2025-10-01, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "The champion zelkova of Massachusetts has a crown 93 feet across, wider than the state measured the tree to be tall. That was in 2022, when the register recorded a Japanese zelkova in Mount Auburn Cemetery at 166 inches round, 70.4 feet high and 93 feet from one side of the crown to the other. Japanese zelkova is the register's name for the saw-leaf zelkova.\n\nThe register gives no spot within the cemetery. The cemetery's own plant inventory points to this tree by Anemone Path and Mound Avenue, its largest zelkova, at 49 inches across and 84 feet tall. The trunk figures do not quite agree, about seven percent apart, and the inventory measured at two feet off the ground where the state measured at chest height, which accounts for some of it. So this is very likely the champion, and not proven to be.\n\nWhat you can see for yourself is the spread. A crown nearly 28 metres wide throws a pool of summer shade over a good stretch of the lots beneath it. In autumn the leaves turn yellow to rusty orange, varying from tree to tree.\n\nNobody has dated it. The inventory gives no planting year, and the cemetery has been planting since 1831. If you know when this one went in, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_019",
+      "name": "The Willow Pond Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "not documented",
+      "girth_cm": 395,
+      "height_m": 28.3,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Willow Pond and Azalea, section 42-F)",
+        "latitude": 42.368586,
+        "longitude": -71.146797,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-09-11); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the soft feathery needles, which turn reddish brown and drop in autumn, unlike the evergreens around it. It stands beside Willow Pond near Azalea Path, about 25 metres from the tall Himalayan pine.",
+      "verify_notes": "Cemetery inventory: DBH 49.5 in (=157 in circumference), 93 ft, checked alive 2026-09-24, year recorded 1950. DCR Legacy list: Mount Auburn dawn redwood 156 in circumference, 90 ft, 2022-02-08 (listed city Cambridge). Match within 1 percent in girth and 3 percent in height; there are bigger redwoods on Rosebay Avenue (55.5 in DBH) not in the register, so this one is the register tree by size, flagged as inference. Dawn redwood was only described from China in 1941-44, so this is a very early American planting if the 1950 year is a planting date (inventory field not labelled planting; do not state). PINS: the coordinate is the cemetery's own mapped tree position (inventory section F9, avenue pair 'Willow Pond\\Azalea'); not verified against a visible crown. Last inventory check 2026-09-11, measured 2026-09-24, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "The dawn redwood on the Massachusetts big-tree list is not even the largest dawn redwood in Mount Auburn. The state measured one here in February 2022 at 156 inches round and 90 feet tall, and the cemetery's own plant inventory has a tree beside Willow Pond that matches it within one percent on girth and three on height. Over on Rosebay Avenue, though, the inventory has dawn redwoods bigger still, at 55.5 inches across against this one's 49.5, and none of them is on the state list.\n\nSo the champion is a champion of the register rather than of the ground, which says more about who got measured than about the trees. The pairing with this pond-side trunk rests on its size, since the state names only the cemetery.\n\nIt is a big tree all the same, about 3.95 metres round and 28 metres tall by the inventory's September 2026 figures. Dawn redwood is a deciduous conifer. It loses its soft needles every autumn, after they turn a reddish brown, which sets it apart from the pines and spruces around it for half the year.\n\nNobody has published when it was planted, which matters for a species science only described from living trees in the 1940s. An early date would make it one of the first in the country. If you know the story, tell us. About 25 metres away, by Sedum Path, stands the cemetery's tall Himalayan pine.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_020",
+      "name": "The Sedum Path Himalayan Pine",
+      "species": "Himalayan Pine (Pinus wallichiana)",
+      "age_estimate": "not documented",
+      "girth_cm": 261,
+      "height_m": 30.8,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Sedum and Azalea, section 42-B)",
+        "latitude": 42.368719,
+        "longitude": -71.146529,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-09-09); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by its height, about 31 metres on a slim trunk, and its long blue-green needles. It stands by Sedum Path near Azalea Path, about 25 metres from the dawn redwood at Willow Pond.",
+      "verify_notes": "Cemetery inventory: DBH 32.75 in (=104 cm, 261 cm girth), 101 ft, checked alive 2026-09-09. DCR champion Himalayan pine: 96 in circumference (=30.6 in diameter), 91.1 ft, 2022-08-03. Match within 7 percent, only one such pine in the query, flagged as inference. PINS: the coordinate is the cemetery's own mapped tree position (inventory section F9, avenue pair 'Sedum\\Azalea'); not verified against a visible crown. Last inventory check 2026-09-09, measured 2026-09-24, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "This pine stands 101 feet tall, close to 31 metres, and its species comes from the Himalaya. The cemetery's own plant inventory measured it in September 2026, with a trunk 32.75 inches across, about 2.61 metres round, which is slender for that height. It is built upward rather than outward.\n\nMassachusetts lists its champion Himalayan pine in Mount Auburn, measured in 2022 at 96 inches round and 91.1 feet tall. The state gives no position inside the cemetery, and this is the only Himalayan pine of any size in the inventory, so it is almost certainly the same tree. The figures sit about seven percent apart, and the state's height is ten feet lower, so read the champion title as very likely rather than certain.\n\nIt keeps its needles all year, so the tree you see in February is the tree you see in July. Its neighbour 25 metres away by Willow Pond is a dawn redwood, a conifer that does the opposite and stands bare from November.\n\nNobody has published a planting date for it, and the inventory gives none. If you know when it went in, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_021",
+      "name": "The Indian Ridge Norway Spruce",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "not documented",
+      "girth_cm": 449,
+      "height_m": 19.8,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Indian and Primrose, section 23-D)",
+        "latitude": 42.374447,
+        "longitude": -71.144618,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-07-28); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the trunk, far wider than any other Norway spruce in the cemetery, about 20 metres tall. It stands on Indian Ridge Path near Primrose Path, about 30 metres from the cedar of Lebanon.",
+      "verify_notes": "Cemetery inventory: DBH 56.25 in measured at 0.5 ft (=177 in circumference, a root-flare measure), 65 ft, checked alive 2026-07-28. DCR champion Norway spruce at Mount Auburn: 194 in circumference, 69.5 ft, 2022-02-08. Largest Norway spruce in the inventory by far (next 36.5 in); flagged as inference. PINS: the coordinate is the cemetery's own mapped tree position (inventory section S11, avenue pair 'Indian/Primrose'); not verified against a visible crown. Last inventory check 2026-07-28, measured 2026-09-08, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "The next biggest Norway spruce in Mount Auburn's plant inventory is 36.5 inches across. This one is 56. That gap is wide enough that the cemetery's record and the state's both point at it, even though neither says so outright.\n\nMassachusetts lists a champion Norway spruce in the cemetery, measured in February 2022 at 194 inches round and 69.5 feet tall, with no position given. The inventory's figure for this tree on Indian Ridge Path is 177 inches round, taken just six inches above the ground, across the flare of the roots, and a height of 65 feet. A measurement that low flatters any trunk, so the comparison with the other spruces is not quite like for like. Even so, nothing else in the cemetery comes close, and the champion is very probably this tree.\n\nNorway spruce is a European tree, a long way from home in a Cambridge cemetery. It is evergreen, so it looks the same in every season, and with the cedar of Lebanon about 30 metres away it makes a short winter walk of two conifers.\n\nThe inventory gives no planting year and nobody has published one. The cemetery has been planting since 1831, which bounds the question without answering it. If you know when this spruce went in, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_022",
+      "name": "The Lime Avenue Red Oak",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "pre-1831, before the cemetery",
+      "girth_cm": 545,
+      "height_m": 31.4,
+      "location": {
+        "address": "Mount Auburn Cemetery, 580 Mount Auburn St, Cambridge, MA (Lime and Fountain, section 29-A)",
+        "latitude": 42.371995,
+        "longitude": -71.141321,
+        "neighbourhood": "Mount Auburn Cemetery, Cambridge/Watertown"
+      },
+      "verified_sources": [
+        "https://flora.mountauburn.org/",
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.mountauburn.org/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program (state list; Mount Auburn rows give no tree-level address)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Mount Auburn Cemetery is open to the public daily, free; gates open about 8 am, closing time varies by season (about 5 pm in winter, 7 pm in summer); check mountauburn.org for current hours. Stay on paths and avenues, no off-path walking over lots.",
+      "transport": "MBTA bus 71 or 73 to the cemetery gate on Mount Auburn Street; about 15 to 25 min from Harvard Square.",
+      "location_precision": "approximate",
+      "pin_source": "Mount Auburn Cemetery plant inventory GIS (Flora Mount Auburn, tree-level mapped position, ArcGIS layer 'Trees', checked 2026-08-26); crown not confirmed on aerial imagery",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by sheer bulk, the widest red oak in the cemetery and about 31 metres tall. It stands where Lime and Fountain avenues meet, about 40 metres from the big katsura near Auburn Lake.",
+      "verify_notes": "Cemetery inventory: largest red oak, DBH 68 in (=173 cm; 5.7 ft diameter looks high, flagged as possibly an included-stem measure), 103 ft, checked alive 2026-08-26, received-year 1831, i.e. recorded as pre-dating the cemetery. Not in DCR rows seen in the Mount Auburn set. Single source (owner of the ground) plus life check. PINS: the coordinate is the cemetery's own mapped tree position (inventory section M16, avenue pair 'Lime/Fountain'); not verified against a visible crown. Last inventory check 2026-08-26, measured 2026-09-29, condition 'alive'. Inventory data is the cemetery's facts (existence, species, size), not text copied.",
+      "story": "Mount Auburn's plant inventory gives this red oak a trunk 68 inches across, a figure so large it may take in a second stem. Even allowing for that, it is the biggest red oak the cemetery has on record, about 31 metres tall, and it was here before the cemetery was.\n\nThe inventory files it as received in 1831 and of wild origin, which is its way of saying the tree was already growing when Mount Auburn opened that year. That makes it at least 195 years old, with no record of how much older. It stands in the section where Lime and Fountain avenues meet, and everything around it, every lot and every monument, came later.\n\nWhat it does not have is a state title. Massachusetts lists several Mount Auburn trees as champions, but no red oak among the cemetery's rows, so the only measurements here are the cemetery's own, last checked in August 2026 and measured that September. The 5.7-foot diameter is worth taking with some caution for the reason above. The height, 103 feet, needs no such hedge.\n\nIt is one of two big oaks the inventory records as older than the cemetery. The other is the scarlet oak by Moss Path, taller and slimmer. This one is the heavyweight. About 40 metres away in the same section stands the cemetery's biggest katsura.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_023",
+      "name": "The York Street London Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 480,
+      "height_m": 24.1,
+      "location": {
+        "address": "Across from 40 York Street, Cambridge, MA 02141",
+        "latitude": 42.369455,
+        "longitude": -71.092173,
+        "neighbourhood": "Wellington-Harrington, Cambridge"
+      },
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Tree Program, 2nd largest London planetree in the state",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "On the public street, free, always viewable.",
+      "transport": "MBTA Lechmere or Central Square about 10 to 15 min walk; bus 69 or 85 nearby.",
+      "location_precision": "approximate",
+      "pin_source": "Nominatim geocode of 40 York St (register says tree is across from it); street level",
+      "curation_status": "flagged",
+      "how_to_recognise": "You can recognise it by the size: a London plane about 24 metres tall with a crown just as wide, on a residential street. It stands across the road from number 40 York Street.",
+      "verify_notes": "Register only: DCR row 'Accross from 40 York St, Cambridge', circumference 189 in (=480 cm), 79 ft, crown 79.5 ft, rank 2 of the state's London planetrees, measured 2025-08-08 (recent, counts as last-seen). Pin is the 40 York St building point; the tree is on the opposite side, perhaps 20 m off. Only one source; US exemption applies (one credible government source). Not yet matched to a photo.",
+      "story": "Massachusetts gives directions to its second-largest London plane in five words, one of them misspelled. The register line reads \"Accross from 40 York St\", in Wellington-Harrington, and nobody has published a better address.\n\nThe tree behind that line is 480 centimetres round, 79 feet tall and 79.5 feet across the crown, so it is very nearly as wide as it is high, about 24 metres both ways. The state measured it in August 2025. Only one London plane in the state is bigger.\n\nIt is a street tree, not a park tree. There is no fence, no lawn and no visitor path, just a residential block in east Cambridge and a crown that spreads over it.\n\nOur pin sits on the building at number 40, because that is what can be placed. The tree is across the road from it, perhaps 20 metres off. Look for the crown, which at that width should be hard to miss on a residential street.\n\nNobody has dated it, and the register gives no planting year. If you live on York Street and know its history, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "bos_001"

@@ -2742,7 +2742,12 @@ def check_overlay_coverage():
         except Exception:
             continue
         translated = overlay.get("trees") or {}
-        missing = [t["id"] for t in city.get("trees", []) if t["id"] not in translated]
+        # An app-only tree (findable.app_only, APP FIRST 2026-11-05) is on no
+        # translated page either, so it needs no overlay entry yet; the day a
+        # reader adds to it and its page appears, it does.
+        from findable import app_only
+        missing = [t["id"] for t in city.get("trees", [])
+                   if t["id"] not in translated and not app_only(t)]
         if missing:
             out.append("%s/%s: the overlay is missing %d of %d trees (%s). A short "
                        "overlay does not degrade one page, it refuses the whole build "

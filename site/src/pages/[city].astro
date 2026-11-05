@@ -64,7 +64,9 @@ export async function getStaticPaths() {
 
   return allCities.map((city) => {
     const canonical = `${BASE_URL}/${city.id}`;
-    checkCountPromises(city.data, canonical);
+    // Counted over the trees the page shows: an app-only tree (lib/app-first,
+    // 2026-11-05) is not on it, so "six trees" stays true at six.
+    checkCountPromises({ ...city.data, trees: renderableTrees(city) }, canonical);
     const intro = city.data.intro;
     if (!intro) throw new Error(`${city.id}: city intro (60-100 words, unique) is required by Contract C`);
     const wc = intro.split(/\s+/).filter(Boolean).length;

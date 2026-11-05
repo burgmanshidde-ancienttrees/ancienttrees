@@ -115,6 +115,42 @@
         "kind": "fruit",
         "label": "October, when the spiny burrs open and the chestnuts land in the grass"
       }
+    },
+    {
+      "id": "lvp_003",
+      "name": "Adam and Eve, the Speke Hall Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 345,
+      "location": {
+        "address": "Speke Hall, Speke Hall Avenue, Liverpool L24 1XD",
+        "latitude": 53.3368,
+        "longitude": -2.87422,
+        "neighbourhood": "Speke"
+      },
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/speke-hall/",
+        "https://ancient-yew.org/yew_trees/speke-hall-2299",
+        "https://en.wikipedia.org/wiki/Speke_Hall"
+      ],
+      "access": "National Trust property, paid entry (free to members). The courtyard is inside the house grounds; opening days are seasonal, check the National Trust before you go.",
+      "transport": "Liverpool South Parkway and Hunts Cross stations are both about 2 miles (3 km) away, roughly 40 minutes on foot or a short taxi ride. Buses from the city centre reach South Parkway; there is no direct bus to the hall door.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Speke Hall courtyard",
+        "radius_m": 30
+      },
+      "curation_status": "flagged",
+      "story": "In 1712 the household at Speke Hall paid a man named Ezekiel Mason for making frames to set around the yew trees in the court. The yews are still there. Two of them fill the middle of the cobbled courtyard of this Tudor manor house on the southern edge of Liverpool, and they have names. Adam is the larger, a male tree measured at about 3.45 metres round in 2006. Eve, beside him, is female.\n\nHow old they are is a genuine disagreement. The Ancient Yew Group, which recorded the pair, says Adam's girth suggests something like 300 years, while noting that ring counts on pruned branches have been cited for much more. Wikipedia puts them at 500 years at least. So the honest band runs from roughly 300 to 500, and the one firm date is 1712, when the trees were already worth protecting.\n\nThey have had a famous visitor. Harriet Beecher Stowe came in 1853 and, in her travel book Sunny Memories of Foreign Lands, mentioned a single yew. A painting by James Campbell from the following year, now in the Walker Art Gallery, shows two large trees standing in the court, so the pair was certainly there by then.\n\nThe courtyard is inside the house grounds, which makes this a paid visit unless you are a National Trust member. The most recent record of the trees we can point to is the yew group's, so if you go, tell us how Adam and Eve are looking.",
+      "how_to_recognise": "You can recognise them as the two big yews in the middle of the cobbled courtyard, Adam the larger of the pair. They stand at the heart of Speke Hall, inside the house grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

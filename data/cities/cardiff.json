@@ -171,6 +171,128 @@
         "date": "2026-10-10",
         "moved_m": 104
       }
+    },
+    {
+      "id": "crd_005",
+      "name": "Old Man's Wood Beech, Bute Park",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 170 to 250 years",
+      "age_min": 170,
+      "age_max": 250,
+      "age_basis": "derived",
+      "girth_cm": 458,
+      "height_m": 34,
+      "location": {
+        "address": "East edge of Old Man's Wood west, just north of the Blackfriars site, Bute Park, Cardiff CF10 3ER",
+        "latitude": 51.48377,
+        "longitude": -3.18613,
+        "neighbourhood": "Bute Park"
+      },
+      "verified_sources": [
+        "https://www.cardiffparks.org.uk/trees/bute/fagus-sylvatica.php",
+        "https://www.cardiffparks.org.uk/trees/bute/index.shtml"
+      ],
+      "official_register": {
+        "name": "Bute Park tree table (cardiffparks.org.uk, Tree Register survey, tag 2056, ref 390)",
+        "url": "https://www.cardiffparks.org.uk/trees/bute/fagus-sylvatica.php"
+      },
+      "access": "Free, open public park (Bute Park), open daily.",
+      "transport": "Cardiff Queen Street station about 12 minutes on foot; Cardiff Central about 15 minutes.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The wood this beech stands in was scrub on an Ordnance Survey plan of 1851. As late as 1824, Old Man's Wood did not exist at all. The beech on its eastern edge is now 34 metres tall and was measured at 4.58 metres round in 2023, up from 4.33 seven years earlier.\n\nBute Park's own tree survey tries to date it from that girth and lands on two answers. If it grew on a good flood-plain site, it started around 1845. If its ground was only average, around 1768. The earlier date would make the tree older than the wood that now surrounds it; the later one would make it roughly the wood's own age. The survey does not choose between them, and neither do we.\n\nEither way, it came up on the private grounds of Cardiff Castle, on the flood plain of the Taff, and it has kept growing through everything since, including the decades in which those grounds became a public park. Its neighbours make the walk. The Blackfriars plane, Glamorgan's champion London plane, stands about a hundred metres south, and a second big plane beside it, so the three make one short stop rather than three separate trips.\n\nThe tag on the trunk is a black plastic plate and hard to read, so do not count on it. Look up instead. At 34 metres it is easier to find by its crown than its label, and in late October that crown turns copper.",
+      "how_to_recognise": "You can recognise it by its height, 34 metres, on the east edge of Old Man's Wood. It stands about 100 metres north of the Blackfriars planes; its tag is a black plastic plate, hard to read.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the crown turns copper and russet"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "crd_006",
+      "name": "Coopers Field Turkey Oak, Bute Park",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 413,
+      "height_m": 33,
+      "location": {
+        "address": "North end of Coopers Field, Bute Park, Cardiff",
+        "latitude": 51.4855,
+        "longitude": -3.18508,
+        "neighbourhood": "Bute Park"
+      },
+      "verified_sources": [
+        "https://www.cardiffparks.org.uk/trees/bute/quercus-cerris.php",
+        "https://www.cardiffparks.org.uk/trees/bute/index.shtml"
+      ],
+      "official_register": {
+        "name": "Bute Park tree table, Glamorgan Champion 2023 (cardiffparks.org.uk, ref 417)",
+        "url": "https://www.cardiffparks.org.uk/trees/bute/quercus-cerris.php"
+      },
+      "access": "Free, open public park (Bute Park), open daily.",
+      "transport": "Cardiff Central about 20 minutes on foot; Cardiff Queen Street a little closer.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Between 2016 and 2023 this oak put on 27 centimetres of girth, close to four centimetres a year, which is the growth of a tree nowhere near finished. It is already the champion Turkey oak of Glamorgan, named in 2023 as the largest of its kind recorded in the county, 33 metres tall and 4.13 metres round.\n\nTurkey oaks are not native here. They come from southern Europe and Asia Minor, and they grow faster than Britain's own oaks. The bark gives it away, mauve-grey and broken into squarish plates, quite unlike the deep furrows of a pedunculate oak.\n\nHow it got to Coopers Field is not on record. Andrew Pettigrew, head gardener to the third Marquess of Bute from 1873, laid out circular beds featuring Turkey oaks in this park, and it would be tidy to say this is one of his. No source says so, and the park's own survey gives the tree no age at all. If you know when it went in, tell us.\n\nWhat is certain is the setting. The oak stands at the northern end of Coopers Field by the canal side, a short walk from Cardiff Castle and the city centre. It is one of several county champions within a few minutes of each other in Bute Park, which makes an afternoon here a walk from record to record.",
+      "how_to_recognise": "You can recognise it by its mauve-grey bark broken into squarish plates, on a tree 33 metres tall. It stands at the north end of Coopers Field by the canal; the park's other big Turkey oak is at the Sunken Lawn.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "crd_007",
+      "name": "Sunken Lawn Ginkgo, Bute Park",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 336,
+      "height_m": 22,
+      "location": {
+        "address": "North east side of the Sunken Lawn, 63 m north west of Fishers Bridge, Bute Park, Cardiff",
+        "latitude": 51.4867,
+        "longitude": -3.18617,
+        "neighbourhood": "Bute Park"
+      },
+      "verified_sources": [
+        "https://www.cardiffparks.org.uk/trees/bute/ginkgo-biloba.php",
+        "https://www.cardiffparks.org.uk/trees/bute/index.shtml"
+      ],
+      "official_register": {
+        "name": "Bute Park tree table, Glamorgan Champion 2015 (cardiffparks.org.uk, tag 2416, ref 350)",
+        "url": "https://www.cardiffparks.org.uk/trees/bute/ginkgo-biloba.php"
+      },
+      "access": "Free, open public park (Bute Park), open daily.",
+      "transport": "Cardiff Central about 20 minutes on foot; Cardiff Queen Street a little closer.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "For a few days each November this tree turns the north-east side of the Sunken Lawn gold, then drops every leaf at once. It is Glamorgan's champion ginkgo, recorded in 2015 as the largest in the county and still growing hard. Its girth went from 3.02 metres in 2015 to 3.36 metres in 2023, and it stands 22 metres tall.\n\nGinkgo is the last survivor of a family of trees that was already ancient when the dinosaurs were alive. It was wild in only a few corners of China by the time temple gardeners there and in Japan took it up, and it reached European gardens in the 18th century. Bute Park has a whole avenue of them running from the castle to the Mews. This one stands apart from that avenue, near Fishers Bridge.\n\nThe park's survey records its size but not its age, and no planting date has turned up. If you know when it went in, tell us.\n\nThe rest of the year it is easy to walk past, a tall, upright crown of fan-shaped leaves on an ordinary lawn. Come in November instead. The gold lasts a short time, and when the leaves come down they come down nearly together, leaving a yellow circle on the grass around the trunk.",
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves, gold in November, on a tree 22 metres tall. It stands on the north-east side of the Sunken Lawn, about 63 metres north-west of Fishers Bridge.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns butter gold, then drops in a day or two"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

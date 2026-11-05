@@ -1179,6 +1179,832 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "nyc_031",
+      "name": "The Osage Orange of Marcus Garvey Park",
+      "species": "Osage Orange (Maclura pomifera)",
+      "girth_cm": 463,
+      "location": {
+        "address": "Southwest corner of Marcus Garvey Park, Harlem, Manhattan",
+        "latitude": 40.803836,
+        "longitude": -73.945305,
+        "neighbourhood": "Harlem"
+      },
+      "verified_sources": [
+        "https://www.6sqft.com/the-great-trees-of-nyc-parks-updates-list-for-the-first-time-in-40-years/",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Maclura pomifera, dbh 58 in, Full/Good, record updated 2026-05-07)"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees (2024 addition, id 108)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=108"
+      },
+      "access": "Free; public city park",
+      "transport": "Subway 2/3 at 125th St (Lenox Av), a short walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "age_estimate": "not documented",
+      "story": "This Osage orange in Harlem has ended up in an art exhibition. Its twisting, wraparound trunk is referenced in Tree Reflections, a public art piece by Susan Stair that was shown at Conference House Park on Staten Island, a whole borough and a ferry ride away from the tree itself. That trunk is the reason to come. The local press coverage of the 2024 Great Trees list singled out its unique twisting form, and the Parks listing describes the trunk as wrapping around itself. It measures 58 inches across, about 4.6 metres round, and the city's forestry inventory gives exactly the same figure for the only Osage orange that size in the park. The inventory found it in Good condition in May 2026. NYC Parks added it to the Great Trees list in October 2024, when the city updated its roll of remarkable trees for the first time in about forty years. The description of the trunk reaches us through press coverage of the Parks listing, so treat it as second-hand. The measurement and the location come straight from the city's own inventory. It stands at the southwest corner of Marcus Garvey Park, free public parkland in the middle of Harlem. Nobody has dated it. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the twisting trunk that wraps around itself, 58 inches across. It stands at the southwest corner of Marcus Garvey Park in Harlem.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_032",
+      "name": "The American Elm of Mapes Park",
+      "species": "American Elm (Ulmus americana)",
+      "girth_cm": 495,
+      "location": {
+        "address": "Mapes Park, near East 180th Street and Mapes Avenue, Bronx",
+        "latitude": 40.846883,
+        "longitude": -73.885916,
+        "neighbourhood": "West Farms / Bronx Park South"
+      },
+      "verified_sources": [
+        "https://www.6sqft.com/the-great-trees-of-nyc-parks-updates-list-for-the-first-time-in-40-years/",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Ulmus americana, dbh 62 in, Full/Good, updated 2026-02-20)"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees (2024 addition, id 71)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=71"
+      },
+      "access": "Free; public city park",
+      "transport": "Subway 2/5 at East 180th St, a few minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "age_estimate": "not documented",
+      "story": "When Mapes Park in the Bronx was rebuilt, the neighbours made sure this elm came through it. The press coverage of the 2024 Great Trees list says the tree inspired the neighbourhood to push for its preservation during the park renovations, and the Parks listing credits community members, working through the city's Community Parks Initiative, with protecting it. The park's ballfield was rebuilt under that same initiative in 2021. The tree the neighbours stood up for is worth the trip. Its trunk measures 62 inches across, about five metres round, which is large for an American elm growing in a city. It is also the only American elm of any real size in the park; the city's forestry inventory lists no other above 30 inches, and its 62 inch entry matches the Great Tree figure exactly. That inventory found it in Good condition in February 2026. NYC Parks added it to the Great Trees list in October 2024, putting a tree its neighbours had defended onto the city's roll of its most remarkable trees. The description reaches us through press coverage of the Parks listing, so treat the details as second-hand; the measurement and the location are the city's own. It stands in Mapes Park near East 180th Street and Mapes Avenue, free public parkland. Nobody has dated it. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 62 inches across, the one big American elm in the park. It stands in Mapes Park near East 180th Street and Mapes Avenue in the Bronx.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_033",
+      "name": "The Sycamore of Morningside Park",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "girth_cm": 383,
+      "location": {
+        "address": "Morningside Park, beside a path fork just north of the West 120th Street entrance, Manhattan",
+        "latitude": 40.808763,
+        "longitude": -73.95666,
+        "neighbourhood": "Morningside Heights"
+      },
+      "verified_sources": [
+        "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Platanus occidentalis, dbh 48 in, Full/Good, record dated 2017-04-19)"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees (2024 addition, id 107)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=107"
+      },
+      "access": "Free; public city park (steep slope park; stay on paths)",
+      "transport": "Subway 1 at 116th St-Columbia University or B/C at 116th St, about 10 minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "West Side Rag (fetched): the only new Manhattan addition in the Oct 2024 list, an American sycamore just north of West 120th Street in Morningside Park. Parks listing (search result, page bot-blocked): trunk diameter 48 in, next to a path fork north of the W 120th St entrance. Pin: the only American sycamore >=20 in dbh in the park in the forestry points, dbh 48 equals the Great Tree figure; plain-sycamore (Platanus occidentalis) is distinct from the London planes around it. Alive: Great Tree designation Oct 2024; forestry record itself dated 2017 (Good), so no fresh independent observation. Height not found. Age not documented. Flagged.",
+      "photo_candidate": null,
+      "age_estimate": "not documented",
+      "story": "When New York's parks department revised its list of Great Trees in October 2024, the first revision in about forty years, Manhattan got exactly one new entry. It was this American sycamore in Morningside Park, standing beside a fork in the path just north of the West 120th Street entrance.\n\nIts trunk is 48 inches across, about 3.8 metres round, and the city's forestry inventory rated it in good condition at its last inspection. It is also easy to overlook. New York is full of London planes, the hybrid that is the city's most common street tree, and this tree's parent species looks much like them at a glance. The plain American sycamore is the native one, the tree of eastern river valleys, and in Morningside it is the only one of its size.\n\nThe park itself is a long, steep strip of rock between Harlem below and Morningside Heights above, laid out in the late nineteenth century to deal with a cliff too sheer for streets. The sycamore grows in that park, with the Columbia campus a few blocks west on the heights and the subway a ten-minute walk away.\n\nNobody has published its height, its age or when it was planted, and the forestry record dates from 2017. If you know more, or have stood under it lately, tell us.",
+      "how_to_recognise": "You can recognise it as the one native American sycamore among the London planes, its trunk about 3.8 metres round. It stands beside the path fork just north of the West 120th Street entrance.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_034",
+      "name": "The Weeping Willow of the Creative Little Garden",
+      "species": "Weeping Willow (Salix babylonica)",
+      "girth_cm": 335,
+      "location": {
+        "address": "Creative Little Garden, 530 East 6th Street, East Village, Manhattan",
+        "latitude": 40.724549,
+        "longitude": -73.982658,
+        "neighbourhood": "East Village"
+      },
+      "verified_sources": [
+        "https://villageview.nyc/2024/12/04/great-trees-of-new-york-city/",
+        "https://www.6sqft.com/the-great-trees-of-nyc-parks-updates-list-for-the-first-time-in-40-years/",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Salix babylonica, dbh 42 in, Full/Fair, updated 2026-07-05)"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees (2024 addition, id 102)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=102"
+      },
+      "access": "Community garden run by volunteers; open only at posted garden hours, check before going (hours not verified)",
+      "transport": "L train to 1st Av or F to 2nd Av, about 10 minutes' walk",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Creative Little Garden",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Village View (fetched, Dec 2024): willow over six stories tall, canopy about 40 ft, trunk diameter 37 in, on a blue stone patio; after a 1970s fire the city cleared a tenement and designated the lot for community gardening, opened 1978, volunteer-run from the start. Parks listing (search result): same 37 in, 530 E 6th St, planted 1978 on an abandoned lot as a community effort, lost a major branch some years ago (snippet only). DISCREPANCY: Parks forestry points hold a weeping willow at the pin with dbh 42 in (updated 2026-07-05, Fair), i.e. 5 in more than the 2024 listing; girth_cm uses 42. The pin is the forestry point about 80 m from Nominatim's geocode of 530 E 6th St, hence approximate with a small named site. Another willow (dbh 41, El Jardin del Paraiso) stands about 450 m east: do not confuse. Flagged.",
+      "photo_candidate": null,
+      "age_estimate": "not documented",
+      "story": "A fire in the 1970s left a gap on East 6th Street, and a weeping willow now taller than six storeys fills it. After the blaze the city cleared the burnt tenement and set the lot aside for community gardening. The Creative Little Garden opened in 1978 and has been run by volunteers ever since, and its willow, according to Village View's 2024 profile, spreads a canopy about 12 metres across over a blue stone patio.\n\nIn 2024 the parks department put the tree on its list of Great Trees, the first new additions in about forty years. Its measurements depend on who held the tape. The 2024 listing gives the trunk as 37 inches across. The city's forestry inventory, updated in July 2026, gives 42, about 3.35 metres round. The willow may simply have grown, or the two were measured at different heights.\n\nBy one account the willow was planted in 1978 as a community effort, the same year the garden opened. That date is reported rather than confirmed, so treat it as likely rather than settled. If you were there when it went in, tell us.\n\nFor a weeping willow in Manhattan, a tree that likes wet ground and open sky, to reach this size on a former tenement lot is the surprise. The garden opens at posted hours only, so check before going. Another big willow, in El Jardin del Paraiso, stands about 450 metres east, which makes a two-garden walk.",
+      "how_to_recognise": "You can recognise it by the weeping crown over the blue stone patio, more than six storeys high. It stands in the Creative Little Garden at 530 East 6th Street.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_035",
+      "name": "The Dawn Redwood of the Liz Christy Garden",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "about 45 years",
+      "age_min": 40,
+      "age_max": 50,
+      "age_basis": "source",
+      "girth_cm": 239,
+      "height_m": 30,
+      "location": {
+        "address": "Liz Christy Community Garden, Bowery and East Houston Street, Manhattan",
+        "latitude": 40.724089,
+        "longitude": -73.991825,
+        "neighbourhood": "NoHo / East Village"
+      },
+      "verified_sources": [
+        "https://villageview.nyc/2024/12/04/great-trees-of-new-york-city/",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Metasequoia glyptostroboides, dbh 30 in, Full/Good, record 2019-09-12)"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees (2024 list)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees"
+      },
+      "access": "Community garden run by volunteers; open at posted garden hours only (hours not verified, the garden's own site failed a certificate check); visible from Houston Street",
+      "transport": "B/D/F/M at Broadway-Lafayette St or 6 at Bleecker St, about 5 minutes' walk",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Liz Christy Community Garden",
+        "radius_m": 40
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Village View (fetched): dawn redwood planted in 1981 by Tessa Huxley, about 100 ft tall, visible along Houston Street from Avenue B to Greene Street; Huxley recalled scraping the top of the subway tunnel digging the hole; noticeably cooler beneath it. Garden is the city's first community garden (Liz Christy, 1973: not checked here). Age is a documented planting date (45 years). Pin: the only dawn redwood in the surrounding forestry points, dbh 30 in, record dated 2019; kept approximate because only one source gives the height and the Parks page was not fetched. The Parks Great Trees page id unknown (no page reached). Flagged.",
+      "photo_candidate": null,
+      "story": "When Tessa Huxley dug the hole for this tree in 1981, she scraped the top of the subway tunnel. The dawn redwood she planted in the Liz Christy Community Garden, at the Bowery and East Houston Street, now stands about 30 metres tall. You can pick it out along Houston Street from Avenue B all the way to Greene Street, a conifer rising over the low roofs, and it is noticeably cooler underneath.\n\nThe species has a stranger history than most. Dawn redwood was first described from fossils, and scientists assumed it was long extinct until living trees turned up in central China in the 1940s. Seed reached American gardens at the end of that decade. So a tree that the textbooks had buried grows here over a subway line, forty-five years after a volunteer put it in the ground.\n\nThat makes it young for a tree on New York's Great Trees list, which the parks department revised in 2024. It also makes its story unusually complete, down to the year, the gardener and what lay under the spade. For most old trees in this city, nobody wrote any of that down.\n\nThe garden is run by volunteers and opens only at posted hours, so check before going. The tree does not need the gate to be open. It is in view from Houston Street.",
+      "how_to_recognise": "You can recognise it by its height, a conifer about 30 metres tall standing over the low buildings, the only dawn redwood on the block. It stands inside the Liz Christy Community Garden at the Bowery and East Houston Street.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the needles turn a foxy reddish brown before they fall"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_036",
+      "name": "The White Ash of Van Cortlandt Park",
+      "species": "White Ash (Fraxinus americana)",
+      "girth_cm": 479,
+      "height_m": 25,
+      "location": {
+        "address": "East side of the entrance to the cross-country trail, Van Cortlandt Park, Bronx",
+        "latitude": 40.89141,
+        "longitude": -73.891211,
+        "neighbourhood": "Van Cortlandt Park"
+      },
+      "verified_sources": [
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points: Fraxinus americana, dbh 60 in, Full/Fair, updated 2026-05-31)",
+        "https://en.wikipedia.org/wiki/User:Found5dollar/Great_Trees_of_New_York_City (draft that transcribes the Parks entry: 82.8 ft, 56.6 in, 60.5 ft spread; not an authority)"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees (1985 list, id 23)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=23"
+      },
+      "access": "Free; public city park",
+      "transport": "Subway 1 to Van Cortlandt Park-242nd St, about 15 minutes' walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "age_estimate": "not documented",
+      "story": "This white ash has been cloned, and its copy grows elsewhere in the same park, at the south end of Van Cortlandt Park's Parade Ground. The original is the one worth the walk. It was on NYC Parks' first Great Trees list in 1985, and it is still alive in the years of the emerald ash borer, which has made a white ash this size a rare thing to find standing at all. The numbers have grown since that first list. In 1985 it measured 56.6 inches across the trunk and 82.8 feet tall. Parks now gives about 60 inches, nearly 4.8 metres round, and the city's forestry inventory, updated in May 2026, agrees on the 60 inches. That same record grades it Fair rather than Good, so this is a survivor, not an untouched one. It stands on the east side of the entrance to Van Cortlandt Park's cross-country trail, free public parkland in the Bronx. There is a second large ash within a hundred metres, at about 40 inches, so check the trunk; the big one is half as thick again. The Red Horse Chestnut of Van Cortlandt House is in the same park, which makes a two-tree walk. Two caveats on the sources. The 1985 figures come to us through a transcription of the Parks list, not the Parks page itself, and nobody has published an age. If you know it, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, about 60 inches across, half as thick again as the 40 inch ash nearby. It stands on the east side of the entrance to the cross-country trail in Van Cortlandt Park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_070",
+      "name": "The Cedar of Lebanon of Weeping Beech Park",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "not documented",
+      "girth_cm": 471,
+      "location": {
+        "address": "Margaret I. Carman Green (Weeping Beech Park), 37th Ave, Flushing",
+        "latitude": 40.7635,
+        "longitude": -73.8248,
+        "neighbourhood": "Flushing, Queens"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=47"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 1985)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=47"
+      },
+      "access": "Free, public park, open daily",
+      "transport": "Flushing-Main St station (7 train, LIRR), about 0.7 km on foot",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Source: NYC Parks Great Trees entry id=47 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 59 in -> girth_cm 471 (pi x diameter). One official register: counts as enough; Parks entry: mid-park near the public restroom; began life in the nursery of Samuel B. Parsons, whose grounds ran through this area; canopy spread 59 ft. Register 1985 nomination, still on the 2024 relaunched list with Tree Map ID 5063634. Sits beside nyc_028 (Weeping Beech Park, pin 40.7636,-73.8242), about 50 m away: a two-tree stop. Register diameter 59 in is the 1985 measurement. iNaturalist observation 2026-06-16 within radius.",
+      "height_m": 12.7,
+      "story": "This cedar started out as stock in a nursery that once covered this corner of Flushing. The parks department's Great Trees entry says it began life in the nursery of Samuel B. Parsons, whose grounds ran through the area, and the park around it takes its name from another tree, a weeping beech.\n\nThe cedar is the less famous neighbour and the stranger shape. The register gives it a height of only 12.7 metres but a crown spreading 59 feet, about 18 metres, so it is far wider than it is tall, the flat-topped, layered build of a cedar of Lebanon that has had room to spread. Its trunk measured 59 inches across, about 4.7 metres round, when the city named it a Great Tree in 1985. That figure is four decades old, and the tree has kept the title through the 2024 revision of the list.\n\nCedar of Lebanon comes from the mountains of the eastern Mediterranean, the tree of the Lebanese flag. That one should have reached Queens through a nineteenth-century nursery catalogue is very much the Parsons story, a family that sold exotic trees to the gardens of a growing country.\n\nIt stands in the middle of the park, near the public restroom, about 50 metres from the weeping beech, so the two make one stop. The park is free and open daily. Nobody has published when it was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by its flat, layered crown, about 18 metres across on a tree under 13 metres tall. It stands in the middle of the park near the public restroom, about 50 metres from the weeping beech.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_073",
+      "name": "The Fused Basswood of Fort Totten",
+      "species": "American Basswood (Tilia americana)",
+      "age_estimate": "not documented",
+      "girth_cm": 790,
+      "location": {
+        "address": "Fort Totten Park, Underhill Rd and Officers Dr, Bayside",
+        "latitude": 40.7922,
+        "longitude": -73.7782,
+        "neighbourhood": "Fort Totten, Queens"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=116"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 2024)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=116"
+      },
+      "access": "Free, public park (Fort Totten Park); the former army post is open to walkers",
+      "transport": "Bayside station (LIRR) about 2.7 km; local bus to Fort Totten",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Measured across the trunk, this basswood at Fort Totten comes out at 99 inches, close to the width of a single garage door. That number needs an asterisk, and NYC Parks gives it one. The tree is not one stem but several that grew side by side and fused together long ago, so the 99 inches is the width of a fused mass rather than a single trunk. Round, that works out at about 7.9 metres of wood at chest height, and a shape you will not mistake for anything else in the park. It is also a reminder that the biggest number on a list is not always the oldest tree. A fused basswood can carry a girth that a single trunk of the same age never would, and the honest reading of this one is a big, strange, many-stemmed tree of unknown age. Parks added it to the Great Trees list in 2024, when the city relaunched its roll of remarkable trees. It stands at the corner of Underhill Road and Officers Drive, on the grounds of Fort Totten in Bayside, a former army post that is now a public park open to walkers. Somebody has seen it recently. An iNaturalist record from July 2025 sits near the Parks point. Nobody has recorded when the stems first came up or when they joined. If you know the tree's history, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, several stems fused into one mass about 99 inches across. It stands at the corner of Underhill Road and Officers Drive in Fort Totten Park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_076",
+      "name": "The London Plane of Alice Austen Park",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 431,
+      "location": {
+        "address": "Alice Austen Park, meadow south of the Alice Austen House, Rosebank",
+        "latitude": 40.6147,
+        "longitude": -74.0627,
+        "neighbourhood": "Rosebank, Staten Island"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=58"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 1985)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=58"
+      },
+      "access": "Alice Austen Park open daily; the house museum has separate hours and a suggested donation",
+      "transport": "Staten Island Railway Clifton station, about 0.6 km; or S51/S78 bus on Bay St (check route)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "height_m": 18.7,
+      "story": "Lightning has hit this plane tree and left its mark, and it is still standing in the meadow south of the Alice Austen House. NYC Parks records the scar on its Great Trees entry, along with the detail that the tree is alive in spite of it. Parks also gives it a starting point. It is believed to have been growing here around 1840, when John Austen, Alice Austen's grandfather, bought the house and set about expanding it. Believed is Parks' word, with no planting record behind it, so read 1840 as a family-era tradition rather than a date. If it holds, the tree is more than 185 years old. The measurements are from the 1985 survey that first put it on the list. The trunk was 54 inches across, about 4.3 metres round, with a crown spreading almost 60 feet over the meadow, though at about 19 metres tall it is broad rather than towering. An iNaturalist record from July 2026 places it alive. Alice Austen Park is open daily and free. The house museum has its own hours and asks a suggested donation, but the tree stands outside it, in the meadow south of the house in Rosebank, on the Staten Island shore. Von Briesen Park, with its own Great Tree, is close by along the same shore. If you know more about when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the wide crown, spreading almost 60 feet on a trunk 54 inches across, and its lightning scar. It stands in the meadow south of the Alice Austen House in Alice Austen Park, Rosebank.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_077",
+      "name": "The Princess Tree of Snug Harbor",
+      "species": "Empress Tree (Paulownia tomentosa)",
+      "age_estimate": "not documented",
+      "girth_cm": 519,
+      "location": {
+        "address": "Snug Harbor Cultural Center, west side of the Veterans Memorial Hall Playhouse, Chapel Road, 1000 Richmond Terrace (Parks lists 914)",
+        "latitude": 40.6432,
+        "longitude": -74.1017,
+        "neighbourhood": "West New Brighton, Staten Island"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=60"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 1985)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=60"
+      },
+      "access": "Grounds free, open dawn to dusk seven days a week (Snug Harbor official material via search; some buildings and the Chinese Scholar's Garden take a small fee)",
+      "transport": "Staten Island Ferry to St George, then S40 bus to Snug Harbor (route unchecked this pass)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "height_m": 20.0,
+      "story": "When NYC Parks measured this tree for its first Great Trees list in 1985, the trunk came out at 65 inches across, about 5.2 metres round. It is a royal paulownia, the tree also called princess tree or empress tree, and it stands on the grounds of Snug Harbor on Staten Island, on the west side of the Veterans Memorial Hall Playhouse off Chapel Road. Parks notes two things that make it easy to pick out. The leaves can grow up to a foot across, big enough to look like a mistake, and in spring the tree carries purple trumpet-shaped flowers. Parks put its height at about 20 metres, so the trunk is the surprise rather than the crown. Snug Harbor is a cultural centre now, and its grounds are free to walk, open from dawn to dusk every day; a few buildings and the Chinese Scholar's Garden charge a small fee, but the paulownia is outside them. One honest caveat about the address. Parks lists the tree at 914 Richmond Terrace and Snug Harbor gives its own address as 1000, but both point to the same campus, and the playhouse is the landmark that matters. The measurements are forty years old. If you have seen it lately or know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the leaves, up to a foot across, and in spring by purple trumpet flowers. It stands on the west side of the Veterans Memorial Hall Playhouse at Snug Harbor, off Chapel Road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_079",
+      "name": "The Cedar of Lebanon of the Olmsted-Beil House",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "not documented",
+      "girth_cm": 367,
+      "location": {
+        "address": "Olmsted-Beil House Park, 4515 Hylan Boulevard, Great Kills area",
+        "latitude": 40.5318,
+        "longitude": -74.1579,
+        "neighbourhood": "Eltingville, Staten Island"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=64"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 1985)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=64"
+      },
+      "access": "Free public park around the house; Parks lists it as a city park",
+      "transport": "Eltingville SIR station about 1.2 km; S55/S59 buses on Hylan Blvd (unchecked)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "height_m": 25.0,
+      "story": "This cedar of Lebanon grows on the farm where Frederick Law Olmsted worked the land for seven years before he designed Central Park. Olmsted farmed here, on Staten Island, from 1848 to 1855, and NYC Parks counts the cedar as one of the trees still remaining from that farm. Parks stops short of saying who planted it or when, so we do too. It is tempting to credit Olmsted with it, and the honest answer is that nobody has. What Parks does give is a location so exact you could use it as directions. The tree stands 35 feet off the left front corner of the house and three feet off the driveway. It measures 46 inches across the trunk, about 3.7 metres round, stands about 82 feet tall and spreads its crown about 40 feet. It has been on the Great Trees list since 1985, the city's roll of its most remarkable trees, and an iNaturalist record from May 2024 places it alive. A black walnut that Parks says Olmsted planted stands about 25 metres away, so see both. The park around the house is free. Nobody has dated the cedar. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the position, 35 feet off the left front corner of the house and three feet off the driveway. It stands at Olmsted-Beil House Park, 4515 Hylan Boulevard, about 25 metres from the black walnut.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_080",
+      "name": "The Black Walnut Olmsted Planted",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "not documented",
+      "girth_cm": 415,
+      "location": {
+        "address": "Olmsted-Beil House Park, east of the house, 4515 Hylan Boulevard",
+        "latitude": 40.532,
+        "longitude": -74.1579,
+        "neighbourhood": "Eltingville, Staten Island"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=126"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 2024)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=126"
+      },
+      "access": "Free public park around the house",
+      "transport": "Eltingville SIR station about 1.2 km (unchecked bus routes)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Before Frederick Law Olmsted designed Central Park, he was a farmer on Staten Island, and NYC Parks says he planted this black walnut himself. Olmsted lived in the house on Hylan Boulevard from 1848 to 1855, and Parks, naming the tree a Great Tree in 2024, credits him with this one and says many of the trees on the property went in around 1850. That makes it, if Parks is right, a tree put in the ground by the man who went on to design Central Park. Take it as Parks' claim. It is the only source we have, and we have found no letter or planting record to back it, so we state it as theirs rather than as settled fact. The tree itself makes a quieter case. Its trunk measures 52 inches across, about 4.2 metres round, which is a big black walnut by any measure. It stands east of the house, about 25 metres from a cedar of Lebanon that Parks also counts among the trees left from Olmsted's farm, so the two make a single stop. The house sits in Olmsted-Beil House Park, a free public park in the Great Kills area. Nobody has measured its age directly. If you know more about what Olmsted planted here, or have seen his own notes on it, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 52 inches across, the big walnut on the east side of the house. It stands in Olmsted-Beil House Park, 4515 Hylan Boulevard, about 25 metres from the cedar of Lebanon.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_081",
+      "name": "The American Sycamore of Conference House Park",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "not documented",
+      "girth_cm": 519,
+      "location": {
+        "address": "Conference House Park, behind the Conference House, Tottenville",
+        "latitude": 40.5031,
+        "longitude": -74.2528,
+        "neighbourhood": "Tottenville, Staten Island"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=67"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 1985)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=67"
+      },
+      "access": "Conference House Park free, open daily; the house museum charges a small fee in season",
+      "transport": "Tottenville SIR station about 1.1 km on foot",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "height_m": 27.2,
+      "story": "The house in front of this sycamore hosted a peace conference in 1776. It is the Conference House in Tottenville, on Staten Island, and NYC Parks puts this American sycamore directly behind it. Do not read that as a witness claim. Parks gives no planting date, and nothing says the tree was here for the conference. The house is the history and the tree is its neighbour today. What the register does give is size. When the tree was first listed as a Great Tree in 1985, it measured 65 inches across the trunk, about 5.2 metres round, and 89 feet tall, with a crown spreading 55 feet. Those are the figures of a tree that has had plenty of room, out on open parkland at the back of a historic house rather than on a crowded street. The tree is still there. An iNaturalist record from September 2026 sits near the Parks point, and the city keeps it in its forestry inventory. Conference House Park is free and open daily; the house museum charges a small fee in season, but the sycamore stands outside it on public parkland. Nobody has dated it. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 65 inches across, and its crown spreading about 55 feet. It stands directly behind the Conference House in Conference House Park, Tottenville.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_095",
+      "name": "The Multi-Trunk English Elm of the West Drive",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "not documented",
+      "girth_cm": 590,
+      "location": {
+        "address": "Prospect Park, west drive between the Garfield Entrance and Meadowport Arch",
+        "latitude": 40.6702,
+        "longitude": -73.9712,
+        "neighbourhood": "Prospect Park, Brooklyn"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=11"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 1985)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=11"
+      },
+      "access": "Free, public park, open daily",
+      "transport": "Grand Army Plaza station (2, 3), about 0.5 km on foot",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "height_m": 29.2,
+      "story": "NYC Parks keeps this elm on its Great Trees list partly as a lesson in shape. The native American elm grows in the shape of a vase. This is an English elm, an introduced tree, and it does something else entirely. It rises on several trunks at once, and Parks chose it in 1985 to show the difference. The size is real but needs one caveat. Parks measured it at 74 inches across, about 5.9 metres round, which would make it a giant among elms, but that figure is taken across a mass of several stems rather than one trunk, so do not compare it with a single-stemmed tree. The other numbers need no caveat. It stood 96 feet tall at that survey, about 29 metres, with a crown spreading 66 feet over the West Drive, and it is still there; an iNaturalist record from May 2026 sits near the Parks point. It stands on Prospect Park's West Drive, between the Garfield entrance and Meadowport Arch, on free public parkland open daily. The Camperdown Elm near the Boathouse is in the same park for a second stop. Nobody has dated this one. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by its several trunks rising together, unlike the single vase-shaped stem of an American elm. It stands beside Prospect Park's West Drive, between the Garfield entrance and Meadowport Arch.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_121",
+      "name": "The English Elm of Stuyvesant Square",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "not documented",
+      "girth_cm": 335,
+      "height_m": 33,
+      "location": {
+        "address": "Western gate of Stuyvesant Square Park, Second Avenue side",
+        "latitude": 40.7342,
+        "longitude": -73.9843,
+        "neighbourhood": "Stuyvesant Square, Manhattan"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=34",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json?objectid=4112206"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=34"
+      },
+      "access": "Free; public park, open daily.",
+      "transport": "L train to First Avenue or 6 to Astor Place, about 10 minutes' walk; check route (not verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "story": "This elm may be older than the park it stands in. NYC Parks thinks it was already growing here before 1836, the year Peter Gerard Stuyvesant gave this land to the city. Thought to, not known to. There is no planting record, and the claim is the register's own careful wording. If it holds, the tree was here first and the square came to it. Then there is the height. Parks measured it at 108.2 feet, about 33 metres, a tall tree by any standard and a striking one to find on a square in Manhattan. The trunk is slimmer than the height suggests, 42 inches across in the 1985 survey that first put it on the Great Trees list and 44 in the city's current forestry inventory, about 3.4 metres round. That inventory files it under Ulmus minor 'Atinia', the botanist's name for the English elm, and found it in Good condition in February 2026. For a tree that may have been standing here for close to two centuries, that is a decent report. It stands just inside the western gate, on the Second Avenue side of the square, free to visit whenever the park is open. If you know more about how old it really is, tell us.",
+      "how_to_recognise": "You can recognise it by its height, about 33 metres, on a trunk only 42 to 44 inches across. It stands just inside the western gate of Stuyvesant Square, on the Second Avenue side.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_123",
+      "name": "The Ginkgo of Isham Park",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "girth_cm": 463,
+      "height_m": 22,
+      "location": {
+        "address": "Isham Park, southeast corner at Broadway and West 211th Street",
+        "latitude": 40.8685,
+        "longitude": -73.9191,
+        "neighbourhood": "Inwood, Manhattan"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=36",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json?objectid=5096375"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=36"
+      },
+      "access": "Free; public park.",
+      "transport": "1 to 215th Street or A to Inwood-207th Street, a few minutes' walk; check route (not verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Parks (1985): one of the best-known trees in the neighbourhood; 58 in diameter, 71.3 ft. Tree Map ID 5096375: forestry point dbh 58, Excellent, coordinates match. Pin confirmed by register tree-point.",
+      "photo_candidate": null,
+      "story": "The parks department calls this ginkgo one of the best-known trees in its neighbourhood. It stands at the south-east corner of Isham Park, where Broadway meets West 211th Street, on a trunk 58 inches across, about 4.6 metres round, and about 22 metres tall. The city named it a Great Tree in 1985, and four decades later its forestry inventory records the same 58 inches and rates the tree excellent, the top grade it gives.\n\nGinkgo is the last survivor of a group of trees that was widespread when dinosaurs were alive, and it reached America only in the 1780s, as a garden curiosity in Philadelphia. Since then New Yorkers have planted it by the thousand, because it shrugs off salt, smog and compacted soil. Most of those street ginkgos are young and slim. This one shows what the species does when it is left alone in a park for a long time.\n\nIsham Park was once part of the Isham family's estate in Inwood, given to the city in the early twentieth century. The ginkgo now holds its busiest corner, beside the traffic of Broadway, a few minutes' walk from the 1 train at 215th Street and the A at Inwood-207th Street.\n\nNobody has published when it was planted, or whether it went in before or after the land became a park. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves, which turn butter yellow in autumn, on a trunk about 4.6 metres round. It stands at the south-east corner of Isham Park, at Broadway and West 211th Street.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the fan-shaped leaves turn butter yellow and drop almost together"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_124",
+      "name": "The Plane Tree of King's Bridge",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 431,
+      "height_m": 30,
+      "location": {
+        "address": "East side of Corlear Avenue just south of West 231st Street",
+        "latitude": 40.88,
+        "longitude": -73.9079,
+        "neighbourhood": "Kingsbridge, Bronx"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=14",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json?objectid=1621574"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=14"
+      },
+      "access": "Free; street tree on Corlear Avenue.",
+      "transport": "1 train to 231st Street, then a walk toward Corlear Avenue; check route (not verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "story": "Close to this street corner in the Bronx, Washington's army crossed a bridge in retreat. NYC Parks puts the tree near the site of the King's Bridge, built by Frederick Philipse in 1693, and says that Washington's troops crossed it falling back after the loss of Fort Washington on 16 November 1776. The bridge is the history here; the tree is what still stands near where it was. Even the name of the tree is a small argument. Parks listed it in 1985 as an American sycamore. The city's own forestry inventory, which carries the same coordinates and the same 54 inch trunk, records it as a London plane, the hybrid of the American sycamore and the Oriental plane. We follow the inventory, and the two are close enough kin that a reader standing underneath may want to judge for themselves. Either way it is a big tree for a side street. The trunk is 54 inches across, about 4.3 metres round, and Parks measured it at 98.4 feet tall, about 30 metres. The inventory found it in Good condition in January 2024. It stands on the east side of Corlear Avenue just south of West 231st Street, a public street tree you can walk up to at any hour. Nobody has dated it. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 54 inches across, and the height, about 30 metres. It stands on the east side of Corlear Avenue just south of West 231st Street.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_127",
+      "name": "The White Oak of the Property Line",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "not documented",
+      "girth_cm": 463,
+      "location": {
+        "address": "Van Cortlandt Park, north side of Gun Hill Road at Mosholu Parkway North",
+        "latitude": 40.8838,
+        "longitude": -73.8851,
+        "neighbourhood": "Norwood, Bronx"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=73",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json?objectid=13757084"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=73"
+      },
+      "access": "Free; park edge on Gun Hill Road opposite the Mosholu Teaching Forest.",
+      "transport": "4 train to Mosholu Parkway, a walk; check route (not verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "story": "Somebody may once have planted this white oak to mark where their land ended. That is what NYC Parks believes, saying it went in hundreds of years ago as a property-line marker, though Parks gives no date, no names and no deed, so take the hundreds of years as a belief rather than a measurement. Nobody has recorded whose boundary it was. The tree outlasted the line. Its trunk now measures 58 inches across, about 4.6 metres round, on the north side of Gun Hill Road at Mosholu Parkway North, where Van Cortlandt Park meets the traffic. It joined the Great Trees list in 2024, the city's roll of its most remarkable trees, and its route there is a story of its own. It was not put forward by a forester or a historian but by an artist-in-residence working with the NYC Urban Field Station. An artist picked this one out of a park full of trees. The city's forestry inventory last recorded it in April 2023 and called it Good, with coordinates that match the Parks listing. It stands at the park's edge across Gun Hill Road from the Mosholu Teaching Forest, so it is easy to reach on foot and free at any hour, no trail walking needed. Nobody has dated it. If you know anything about the old line it marked, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 58 inches across, at the very edge of the park beside the road. It stands on the north side of Gun Hill Road at Mosholu Parkway North, opposite the Mosholu Teaching Forest.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_130",
+      "name": "The Circus Ground Oak of Saratoga Park",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "not documented",
+      "girth_cm": 431,
+      "location": {
+        "address": "Saratoga Park, south side of the path north of the children's playground",
+        "latitude": 40.6851,
+        "longitude": -73.9196,
+        "neighbourhood": "Bedford-Stuyvesant, Brooklyn"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=88",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json?objectid=4974166"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=88"
+      },
+      "access": "Free; public park.",
+      "transport": "A or C to Utica Avenue, or J to Chauncey Street, a walk; check route (not verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "story": "Before Saratoga Park was a park, the whole block was a circus ground, and NYC Parks thinks this red oak likely dates from those days. Likely is their word, and it is worth keeping. There is no planting record and no ring count, only a tree big enough to make the idea plausible and a block with a history odd enough to make it memorable. The more recent history is better documented. When the park was renovated in 2023, the new playground was laid out around a central corridor to protect the tree, so the design bends to the oak rather than the other way round. In 2024 Parks added it to its Great Trees list, the city's roll of its most remarkable trees. The trunk measures 54 inches across, about 4.3 metres round, and the city's forestry inventory found it in Good condition in December 2025. It stands on the south side of the path just north of the children's playground, a public park tree you can walk right up to. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 54 inches across, the big oak the playground was laid out around. It stands on the south side of the path just north of the children's playground in Saratoga Park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_133",
+      "name": "The Oak Moved from Prospect Park",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "about 70 years",
+      "age_min": 65,
+      "age_max": 75,
+      "girth_cm": 399,
+      "location": {
+        "address": "195 East 3rd Street",
+        "latitude": 40.6471,
+        "longitude": -73.978,
+        "neighbourhood": "Kensington, Brooklyn"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=95",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json?objectid=1242920"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=95"
+      },
+      "access": "Free; Parks-inventoried street tree in front of a house, seen from the sidewalk.",
+      "transport": "F or G to Ditmas Avenue or Fort Hamilton Parkway, a walk; check route (not verified).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Parks (2024): per the nominator and family legend, a former Parks worker took a small oak sapling from Prospect Park and planted it here in 1958 (legend, one family source); 50 in diameter, the largest tree for many blocks. Age derived from that 1958 planting story. Tree Map ID 1242920: Good, updated 2026-07-31, coordinates match. Pin confirmed by register tree-point. Earlier lead worried it stands in front of a home; the inventory records it as a Parks street tree.",
+      "photo_candidate": null,
+      "story": "A former parks worker, the family story goes, walked out of Prospect Park in 1958 with a small oak sapling and planted it on East 3rd Street in Kensington. Today that northern red oak has a trunk 50 inches across, about four metres round, and the parks department, adding it to its Great Trees list in 2024, called it the largest tree for many blocks.\n\nThe story is a legend in the honest sense. It comes from the nominator and the family, one source, and nobody has a receipt for the sapling. But the tree fits it. A red oak planted in 1958 would be about seventy now, somewhere between 65 and 75 if the year is a little off, and red oak is among the faster-growing oaks of the eastern forest, so a trunk this thick in that time is plausible rather than miraculous.\n\nIf the legend holds, this is a piece of Prospect Park that moved a short way south. The park was laid out by Olmsted and Vaux in the 1860s, and one of its seedlings now shades a residential block instead, bigger than anything else on the street.\n\nIt stands in front of 195 East 3rd Street, and the city's forestry inventory records it as a street tree in good condition, last updated in July 2026. It is in front of somebody's house, so look from the sidewalk and let the house be. If you know more of the family story, tell us.",
+      "how_to_recognise": "You can recognise it as the largest tree for many blocks, a northern red oak about four metres round at chest height. It stands on the sidewalk in front of 195 East 3rd Street.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_140",
+      "name": "The Phoenix Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Green-Wood Cemetery, Brooklyn (Celebrated Tree Walk stop, near the Brown family mausoleum)",
+        "latitude": 40.652205,
+        "longitude": -73.987892,
+        "neighbourhood": "Greenwood Heights / Sunset Park"
+      },
+      "verified_sources": [
+        "https://www.green-wood.com/wp-content/uploads/2025/10/ALIVE_AT_G-W_MAP_for-website-ocr.pdf",
+        "https://www.green-wood.com/wp-content/uploads/2023/11/ALIVE-AT-G-W-MAP-2023.pdf",
+        "https://www.openstreetmap.org/node/13788136944"
+      ],
+      "access": "Free; Green-Wood is open daily (hours at green-wood.com/hours); the Celebrated Trees Walk is on the cemetery's own visitor map",
+      "transport": "Check route: Green-Wood main entrance at Fifth Ave and 25th St; Sunset Park entrance at 36th St (subway lines and walk times not checked).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "story": "Twelve ginkgo trees came up from one stump here, and over the years they have grown together into a single tree. Green-Wood Cemetery calls it the Phoenix Ginkgo, and the name does the explaining. Something cut or killed the original tree down to its stump, the stump refused to quit, and the twelve shoots that rose from it have since inosculated, the botanist's word for stems that touch, graft and fuse into one living body. What happened to the first tree, the cemetery does not say, and we will not guess. The story here is the comeback, not the cause. Green-Wood is an accredited arboretum as well as a burial ground, and it puts this tree on its Celebrated Trees walk, printed on its own visitor map in 2023 and again in 2025, near the Brown family mausoleum. Nobody has published a girth or an age, and a tape measure would struggle to say where one stem ends and the next begins. Come in November if you can. Ginkgos turn butter yellow in late autumn and drop their leaves within a day or two, and a dozen fused trunks turning at once is worth the timing. The cemetery is free to enter and open daily, with the hours on its website, and the Celebrated Trees walk is marked on the cemetery's visitor map. If you know when the original tree came down, tell us.",
+      "how_to_recognise": "You can recognise it by the many ginkgo stems, about a dozen, fused together into one tree. It stands on Green-Wood Cemetery's Celebrated Trees walk, near the Brown family mausoleum.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the fused crown turns butter gold"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_141",
+      "name": "The Weeping Beech Tunnel at Green-Wood",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Green-Wood Cemetery, Brooklyn (over Larch Avenue, Celebrated Tree Walk stop)",
+        "latitude": 40.6498371,
+        "longitude": -73.9881134,
+        "neighbourhood": "Greenwood Heights / Sunset Park"
+      },
+      "verified_sources": [
+        "https://www.green-wood.com/wp-content/uploads/2025/10/ALIVE_AT_G-W_MAP_for-website-ocr.pdf",
+        "https://www.green-wood.com/wp-content/uploads/2023/11/ALIVE-AT-G-W-MAP-2023.pdf",
+        "http://green-woodtrees.blogspot.com/2009/08/weeping-beech.html",
+        "https://www.openstreetmap.org/node/12609928197"
+      ],
+      "access": "Free; Green-Wood is open daily (hours at green-wood.com/hours); the tunnel is on a cemetery drive and path stop of the owner's Celebrated Trees Walk",
+      "transport": "Check route: Green-Wood main entrance at Fifth Ave and 25th St; Sunset Park entrance at 36th St (subway lines and walk times not checked)",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Weeping beech tunnel on Larch Avenue, Green-Wood",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "verify_notes": "Green-Wood's own visitor map (2023 and 2025 editions) lists 'Weeping Beech Tunnel' as a group of six weeping European beeches whose cascading canopies form a tunnel, a visitor favourite. A Green-Wood tree blog (2009, a blog, a finding aid only) says the most enchanting weeping beech hangs over Larch Avenue and that you must walk or drive under the canopy to go up the road. One compact ensemble with one place to stand (the road under the canopy). Pin: OSM natural=tree node 12609928197 'Weeping Beech' (one point for six trees, so approximate, with a 50 m site). A Brooklyn guide calls it elms; the owner's map and the blog say beech, the owner wins. No planting date, girth or age in any source. Not checked: that the OSM node sits exactly on Larch Avenue (road geometry fetch failed, Overpass at capacity). What tells it apart: the canopy closes over the road.",
+      "story": "At Green-Wood the road goes under the trees, not past them. Six weeping European beeches stand together over Larch Avenue, and their branches hang down and meet until the drive runs through a tunnel of leaves. The cemetery's own visitor map lists the Weeping Beech Tunnel as a stop on its Celebrated Trees Walk and calls it a visitor favourite. A Green-Wood tree blog put it more plainly in 2009, saying you have to walk or drive under the canopy to go up the road at all.\n\nWeeping beeches grow their limbs outward and then down, so an old one becomes a room with walls of foliage. Six together over a road make a corridor. One Brooklyn guide calls them elms; the cemetery's map and its tree blog both say beech, and the owner of the ground gets the last word.\n\nGreen-Wood opened in 1838 and soon became one of the most visited places in America, with crowds coming to picnic among the graves before New York had Central Park. Its 478 acres hold Leonard Bernstein, Jean-Michel Basquiat and Boss Tweed. Entry is free and the gates open daily.\n\nNo source gives a planting date, a girth or an age for these beeches, and nobody has said whether all six went in together. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by the road itself, which runs under a closed canopy of six weeping beeches whose branches hang down and meet overhead. It stands on Larch Avenue, a stop on the cemetery's Celebrated Trees Walk.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the hanging leaves over the road turn gold and copper"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_142",
+      "name": "The Blue Atlas Cedars of Queens Botanical Garden",
+      "species": "Atlas Cedar (Cedrus atlantica 'Glauca')",
+      "age_estimate": "over 85 years",
+      "age_min": 85,
+      "age_max": 120,
+      "location": {
+        "address": "Queens Botanical Garden, 43-50 Main Street, Flushing, Queens (Main Street entrance, either side of the tree gate sculpture)",
+        "latitude": 40.7504,
+        "longitude": -73.8288,
+        "neighbourhood": "Flushing"
+      },
+      "verified_sources": [
+        "https://queensbotanical.org/wp-content/uploads/2015/11/QBGVisitorGuide2016.pdf",
+        "https://en.wikipedia.org/wiki/Queens_Botanical_Garden"
+      ],
+      "access": "Garden entry is ticketed or free on some days; check queensbotanical.org for hours and prices before going. The cedars stand at the Main Street entrance (stop #1 on the garden map)",
+      "transport": "Check route: the 7 train terminates at Flushing-Main St, near the garden (walk time not checked)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo_candidate": null,
+      "verify_notes": "The garden's own visitor guide (2016 PDF) says two blue atlas cedars that frame the iconic tree gate sculpture at the Main Street entrance (#1 on the map) are original plantings taken from the 1939 World's Fair 'Gardens on Parade' site, when the garden moved to Main Street in 1961 (Wikipedia gives the move as completed with dedication 19 Oct 1963 and says THREE cedars were transplanted; the owner says two: conflict, kept both counts). Age derived from a documented specimen history: planted for the 1939 fair, so at least 85 years in the ground, possibly older nursery stock; broad range given, no girth recorded. Pin: garden coordinate from Wikipedia (40.7504, -73.8288); the entrance itself was not pinned (Nominatim and Overpass gave no entrance node), so the walker finds it by the tree gate sculpture, not by the coordinate. The garden is a walk-through garden, not a small site, so no location_site. Alive: no dated record of these cedars specifically; the 2016 guide is the latest owner statement, lifecheck RECENT only for the garden area (iNaturalist 2026-10-15). Flagged.",
+      "story": "These cedars were exhibits at the 1939 World's Fair. They were planted for Gardens on Parade, the fair's horticultural show in Flushing Meadows, and when Queens Botanical Garden, which grew out of that exhibit, moved to its present ground on Main Street, the cedars moved with it. The garden's own visitor guide calls them original plantings from the fair site. That puts them at least 85 years in the ground, and possibly older, since nobody recorded how old the nursery stock was in 1939.\n\nHow many came is a small mystery. The garden's guide says two, and two now frame the tree gate sculpture at the Main Street entrance. Wikipedia says three cedars were transplanted. The sources also differ on timing, the guide placing the move in 1961 and Wikipedia giving the new garden's dedication as 19 October 1963. Either way, moving a conifer of that size is a serious job, and these survived it.\n\nThe tree is the North African Atlas cedar in its blue-needled form, Glauca, which turns a whole crown silver-blue. The colour holds all year, so there is no wrong season to visit.\n\nYou meet them before anything else, since they are stop number one on the garden map. Entry is ticketed on some days and free on others, so check queensbotanical.org before you go. Nobody has published a girth for either tree. If you have measured one, tell us.",
+      "how_to_recognise": "You can recognise them by their silver-blue needles and by where they stand, one either side of the tree gate sculpture at the Main Street entrance, stop number one on the garden map.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

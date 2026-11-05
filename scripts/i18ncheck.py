@@ -97,7 +97,13 @@ def check(lang, slug):
              r"naturdenkm|mooiste|notabl|notav|not\u00e1v|singular|"
              r"monumental|monument|giganti|plus beaux|"
              r"\u672c|\u9078|\u540d\u6728|\u5de8\u6728|\u53e4\u6728")
-    n_trees = len(en.get("trees", []))
+    # The trees the pages show: an app-only tree (findable.app_only, APP FIRST
+    # 2026-11-05) is on no page in any language yet, so it is neither counted
+    # in the prose nor owed a translation until a reader adds to it.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from findable import app_only
+    en_trees = [t for t in en.get("trees", []) if not app_only(t)]
+    n_trees = len(en_trees)
     copy = " ".join(str(d.get(k) or "") for k in COUNT_FIELDS)
     # Japanese needs the opposite rule, learned 2026-09-17 when this check
     # failed three of three Japanese pages and was right about none of them.
@@ -130,7 +136,7 @@ def check(lang, slug):
 
     # Every tree the English city renders must be translated, or the page
     # silently falls back to English prose and reads as sloppiness.
-    en_ids = [t["id"] for t in en.get("trees", [])]
+    en_ids = [t["id"] for t in en_trees]
     tr = d.get("trees", {})
     for i in en_ids:
         if i not in tr:

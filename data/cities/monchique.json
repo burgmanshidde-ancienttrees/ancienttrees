@@ -136,6 +136,39 @@
       },
       "curation_status": "flagged",
       "verify_notes": "Register: classified 1993, register age 150 (measured 2006), girth 3.1 m, height 25 m, crown 23 m. Species is the Monchique oak, critically endangered in Portugal and wild only in the Serra de Monchique and the Mira basin (Barlavento, https://www.barlavento.pt/?p=249669). Alive: iNaturalist observation 2026-04-18 (https://www.inaturalist.org/observations/357454649) was found near the Pe da Cruz coordinate, not confirmed on this trunk; the EN 267 tree itself has no dated recent observation found, so flagged. Roadside access not settled; pin is the register coordinate on the road line, approximate. The second classified Monchique oak (Pomar Velho, KNJ1/320, 3.78 m girth, 28 m, classified 1997) is in leads: no recent observation, location 'Pomar Velho' only."
+    },
+    {
+      "place": "monchique",
+      "id": "mnq_004",
+      "name": "Blue gums of the Centro de Saude",
+      "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+      "age_estimate": null,
+      "girth_cm": 610,
+      "height_m": 40,
+      "location": {
+        "address": "East side of the Estrada de Saboia (EN 266), opposite the Centro de Saude, Monchique",
+        "latitude": 37.3225299,
+        "longitude": -8.5513276,
+        "neighbourhood": "Monchique"
+      },
+      "location_precision": "confirmed",
+      "pin_source": "OpenStreetMap natural=tree node 6471090226 'Eucalipto do Centro de Saude' (the 37 m tree of the pair)",
+      "story": "The larger of these two blue gums was 40 metres tall when it was measured in 2010, with a trunk 6.1 metres round at chest height. Its neighbour reached 37.6 metres and 4.9 metres round. There used to be three. On 26 January 2013, a week after storms swept across Portugal, one of the group came down. The Via Algarviana's guide to Monchique's monumental trees says the two bigger ones came through and were put forward for classification as Trees of Public Interest. That classification has not been granted so far as we can find.\n\nThey are an awkward kind of monument. Blue gums come from southern Victoria and Tasmania, and arrived in Portugal in the nineteenth century. The same guide counts 68 percent of Monchique's municipality as forest, and 80 percent of that forest as eucalyptus, much of it planted for paper pulp. Against that background, a pair grown to 40 metres beside a village road is a different thing to stand under.\n\nThey stand on the east side of the Estrada de Saboia at the edge of the village, where the road leaves for Saboia and Lisbon, opposite the Centro de Saude. The health centre's garden across the road holds camellias and hydrangeas. Nobody has published an age for them, and we have no recent photograph. If you pass, a picture would tell us both are still standing.",
+      "how_to_recognise": "You can recognise them by their height, the larger 40 metres tall with a trunk 6.1 metres round. They stand on the east side of the Estrada de Saboia, opposite the Centro de Saude, where the road leaves the village.",
+      "verified_sources": [
+        "https://viaalgarviana.org/upload_files/1/1/Rotas_Tematicas_PT/Rota-das-Arvores-Monumentais-ViaAlgarviana-PT-mobile.pdf",
+        "https://www.openstreetmap.org/node/6471090226"
+      ],
+      "access": "Beside the public road at the village exit towards Saboia, opposite the health centre; seen from the pavement, free.",
+      "transport": "At the edge of Monchique village, about ten minutes on foot from the Largo de Sao Sebastiao; the bus from Portimao to Monchique takes 40 to 50 minutes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Single written source (Via Algarviana 'Rota das Arvores Monumentais' guide, Arvores da Vila circuit, tree 2, measured 2010) plus an OpenStreetMap node tagged natural_monument (v2 edited 2026-05-23). Not on ICNF's classified list (KML fetched 2026-11-02). Alive not independently dated; stated on the page. Ensemble of two side by side, one place to stand. Ten minutes on foot from the Largo de Sao Sebastiao is derived from the distance (about 650 m by road) and stated loosely."
     }
   ]
 }
