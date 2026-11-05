@@ -12,6 +12,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: outreach check, nothing to send
+
+- The nature/guide (11), source (12) and regional press (4) batches all went on 11-04; the session-start brief said "0 of 12" because sent_drafts.py matched `batch-` previews to the send log only for press. Fixed (55e2e553b). Welsh Country and the Wiltshire Times stay held on Hidde's own word of 11-04.
+- Pere Vives (Amics del Jardí Botànic) answered how to credit the photographs: "Arxiu Associació d'Amics del Jardí Botànic", which is what the Barcelona photos already carry. No change needed.
+
 ## 2026-11-05 session: every red error now wakes the night run
 
 - health.py (where a run starts rung 2) now reads the quality line's web errors, site-up check and open BUG rows in data/code-audit.json, beside CI and app crashes it read already; a red one exits 1, so the next run fixes it without anyone asking. Dependabot alerts and the backup only print a note: they need a session or Hidde.
