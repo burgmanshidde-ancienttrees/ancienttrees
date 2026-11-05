@@ -12,6 +12,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (06:15 UTC, ninth attempt): two archive contacts sourced, no trees
+- No claims stood. Pace is full until about 19:42 UTC, so no write pass. Sourced two archive contacts for photo-less trees (OMAV Valencia, 8 trees; KNNV Utrecht, 6 trees), both addresses published on their own sites; contacts database rebuilt and pushed to the private store, nothing mailed. Nijmegen, Amsterdam and Alicante searches found no photo holders. Dependabot branches still wait for a session; this run could not query their CI.
+
 ## 2026-11-05 night run (06:08 UTC, eighth attempt): nothing shipped
 
 - Rung 1 empty (no photographs, no notes). Rung 2: Postbox check red is the old web_errors migration, which sqlcheck now shows applied; only supabase/plus-answers.sql is still unpasted (For Hidde). iOS stays red on the two RedrawMemoTests aborts (see the entry below), needs a Mac. Pace still full until about 19:42 UTC, so no write or merge.
