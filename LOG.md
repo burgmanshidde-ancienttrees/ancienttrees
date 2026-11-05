@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: a place with one tree has no page of its own
+
+- **What changed in the product:** the 445 places with one tree on the website lose their place page (a map with one pin and one card, noindexed for every engine since 10-01): `/<place>`, `/<place>/` and `/cities/<place>/` redirect to the tree. On that tree page the back arrow, the bigger-map button and the place link go to the explore map at the tree's spot (`/explore#map=15/lat/lng`), and the place name in the crumbs is plain text. Hidde, after the Lebec example: "ja dat mag". Ibiza (es) and Takeo (ja) keep theirs: a kept translation exists. Site now ~6,050 urls.
+- **How:** site/src/lib/place-page.ts (`placeHasPage`, `exploreAt`); [city].astro builds only places with a page; redirect-map writes the three stubs; TreeDetail's expand url keeps the explore hash; thin_pages.py reads `PLACE_PAGE_MIN_TREES` from the file and lists no place url for them; the kept set counts only places with a page (136).
+- **Breakage today, fixed:** four deploys in a row failed on what the shelf batch and the trim exposed (a count over app-only trees, nulls in shelf entries, four cities without a face in the app, one missing import). Nothing of today's site work was live until the deploy after 7d42ec366; check it live before calling any of it done.
+
 ## 2026-11-05 session: capitals and national press open, ten drafted; nature-guide-2026-11-06 sent
 
 - **Rule changed** (Hidde, after the second Bristol interview: "ik denk dat we wel klaar zijn voor hoofdsteden en landelijke media"): capital and national desks may be mailed. `CAPITALS_OPEN = True` in scripts/contacts_db.py (False holds them again); CLAUDE.md rung 4 and OUTREACH_STRATEGY.md's press row say so.
