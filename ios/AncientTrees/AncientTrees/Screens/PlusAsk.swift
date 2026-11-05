@@ -24,15 +24,15 @@ struct PlusRow: View {
         // ONE LINE (Hidde, 2026-11-05, direction C): the second row of the
         // place's white box, under the ambassador; the website's PlusAsk.astro
         // draws the same line.
-        // One icon column with the ambassador row above it: 30 wide, 12 to
-        // the words, so "Hugo" and this line start at the same x.
-        HStack(spacing: 12) {
+        // The website's row (style.css .city-box-row): an 18 point icon, 10
+        // to the words, 15 medium.
+        HStack(spacing: 10) {
                 Image(systemName: "sparkles")
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.moss)
-                    .frame(width: 34)
+                    .frame(width: 18)
                 Text("Help create Ancient Trees Plus")
-                    .font(.system(size: 15, weight: .medium))
+                    .font(.brand(15, .medium))
                     .foregroundStyle(Brand.ink)
                 Spacer(minLength: 8)
                 Image(systemName: "chevron.right")

@@ -350,13 +350,13 @@ struct AmbassadorWantedRow: View {
 
     /// The box's first row: one line, the seal, the ask, a chevron.
     private var slimRow: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 10) {
             Image(systemName: "checkmark.seal")
                 .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(Brand.moss)
-                .frame(width: 34)
+                .frame(width: 18)
             Text(asked ? "Request sent." : (seated ? "Become a \(place) ambassador" : "Become the \(place) ambassador"))
-                .font(.system(size: 15, weight: .medium))
+                .font(.brand(15, .medium))
                 .foregroundStyle(Brand.ink)
                 .lineLimit(2)
             Spacer(minLength: 8)
@@ -374,7 +374,7 @@ struct AmbassadorWantedRow: View {
     /// The words at the end of the named ambassador's line.
     private var linkText: some View {
         Text(asked ? "Request sent" : "Become one too")
-            .font(.system(size: 12, weight: .semibold))
+            .font(.brand(12, .semibold))
             .foregroundStyle(asked ? Brand.inkSoft : Brand.moss)
             // A bigger target without a bigger line: padding here pushed the
             // name up against the box's edge (Hidde, 2026-11-05: "hugo is

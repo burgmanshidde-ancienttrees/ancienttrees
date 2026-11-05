@@ -60,11 +60,15 @@ struct PlaceAmbassadors: View {
     /// ambassador · Become one too". The row opens their profile while it is
     /// public (2026-10-19); the green words open the ask, their own tap.
     @ViewBuilder private func personRow(_ name: String, profile: String?, last: Bool) -> some View {
-        let row = HStack(spacing: 12) {
+        // THE WEBSITE'S NUMBERS (Hidde, 2026-11-05: "the ambassador button
+        // and stuff on mobile web looks better than in app"): style.css
+        // .city-box, avatar 30 with a 13 point letter, name 14 semibold, role
+        // 12, 10 between avatar and words.
+        let row = HStack(spacing: 10) {
             Text(String(name.trimmingCharacters(in: .whitespaces).prefix(1)).uppercased())
-                .font(.system(size: 15, weight: .bold))
+                .font(.system(size: 13, weight: .bold))
                 .foregroundStyle(Brand.moss)
-                .frame(width: 34, height: 34)
+                .frame(width: 30, height: 30)
                 .background(Brand.mossTint, in: .circle)
                 .overlay(alignment: .bottomTrailing) {
                     Image(systemName: "checkmark.seal.fill")
@@ -74,13 +78,13 @@ struct PlaceAmbassadors: View {
                         .offset(x: 3, y: 3)
                 }
                 .accessibilityHidden(true)
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 3) {
                 Text(name)
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.brand(14, .semibold))
                     .foregroundStyle(Brand.ink)
                 HStack(spacing: 0) {
                     Text(last ? "\(title) ambassador · " : "\(title) ambassador")
-                        .font(.system(size: 12))
+                        .font(.brand(12, .regular))
                         .foregroundStyle(Brand.inkSoft)
                     if last {
                         AmbassadorWantedRow(place: title, seated: true, look: .link)
