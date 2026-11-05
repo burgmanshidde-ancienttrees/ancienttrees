@@ -3895,6 +3895,35 @@ def headline_section(today):
     return "\n".join(out)
 
 
+def plus_section(today):
+    """The Ancient Trees Plus question (Hidde, 2026-11-05: "zet je deze ook in
+    de daily digest?"). Counts and the ranking only: DATA.md is public, so the
+    free-text ideas stay in scripts/plus_answers.py, word for word, local."""
+    import plus_answers as pa
+    key = pa.load_key()
+    if not key:
+        return ""
+    try:
+        rows, _ = pa.get(key, "/rest/v1/plus_answers?select=created_at,choice,idea&limit=5000")
+        _, listed = pa.get(key, "/rest/v1/plus_waitlist?select=created_at&limit=1")
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return "**Plus question**: not storing answers yet; paste supabase/plus-answers.sql into Supabase."
+        raise
+    answered = [r for r in rows if r.get("choice")]
+    since = (today - datetime.timedelta(days=1)).isoformat()
+    new = sum(1 for r in answered if (r.get("created_at") or "") >= since)
+    ideas = sum(1 for r in rows if (r.get("idea") or "").strip())
+    if not answered:
+        return "**Plus question**: no answers yet."
+    count = collections.Counter(r["choice"] for r in answered)
+    out = ["**Plus question** (%d answers, %d new; %s asked to be told; %d wrote an idea, read them with "
+           "`python3 scripts/plus_answers.py`)" % (len(answered), new, listed, ideas), "",
+           "| Choice | Answers |", "|---|---:|"]
+    out += ["| %s | %d |" % (pa.LABELS.get(k, k), n) for k, n in count.most_common()]
+    return "\n".join(out)
+
+
 def build_entry(today, gsc_text):
     yday = today - datetime.timedelta(days=1)
     # The front door. Most mornings the honest answer is that nothing here
@@ -4105,6 +4134,13 @@ def main():
         blocks.insert(1, quality_section(today))
     except Exception as e:
         blocks.insert(1, "**Quality**: failed today (%s)." % str(e)[:90])
+    # The Plus question's answers, under the quality line (Hidde, 2026-11-05).
+    try:
+        plus = plus_section(today)
+        if plus:
+            blocks.insert(2, plus)
+    except Exception as e:
+        blocks.insert(2, "**Plus question**: failed today (%s)." % str(e)[:90])
     # Above even the headline: a crash that needs a new build now.
     try:
         urgent = urgent_crash_line(today)

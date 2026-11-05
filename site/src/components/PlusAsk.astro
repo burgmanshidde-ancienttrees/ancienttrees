@@ -53,7 +53,7 @@ const OPTS = ["walks", "offline", "season", "log"] as const;
     <p class="at-sheet-p">{U.plusAskBody}</p>
     <textarea class="plus-idea" maxlength="600" rows="4" placeholder={U.plusIdeaPh} aria-label={U.plusAskBody}></textarea>
     <div class="at-sheet-btns">
-      <button type="button" class="sheet-b sheet-b--primary plus-next">{U.plusNext}</button>
+      <button type="button" class="sheet-b sheet-b--primary plus-next" data-skip={U.plusSkip} data-next={U.plusNext}>{U.plusSkip}</button>
     </div>
   </div>
   <div class="plus-step" data-step="choice" hidden>
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   function open(step) {
     if (step !== 'thanks') {
-      idea.value = '';
+      idea.value = ''; label();
       box.querySelectorAll('input').forEach(function(r) { r.checked = false; });
       box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.remove('is-on'); });
       send.disabled = true; shuffle();
@@ -122,7 +122,12 @@ document.addEventListener('DOMContentLoaded', function() {
     dlg.showModal();
   }
   bar.querySelector('.plus-row').addEventListener('click', function() { track('plus-open', 'city'); open('idea'); });
-  dlg.querySelector('.plus-next').addEventListener('click', function() { show('choice'); });
+  // Skip while the field is empty, so leaving it is plainly allowed (Hidde,
+  // 2026-11-05: "ik zou hier wel op vastlopen"); Next once something is typed.
+  var next = dlg.querySelector('.plus-next');
+  function label() { next.textContent = (idea.value || '').trim() ? next.getAttribute('data-next') : next.getAttribute('data-skip'); }
+  idea.addEventListener('input', label);
+  next.addEventListener('click', function() { show('choice'); });
   box.addEventListener('change', function(e) {
     box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.toggle('is-on', o.contains(e.target) && e.target.checked); });
     send.disabled = !box.querySelector('input:checked');

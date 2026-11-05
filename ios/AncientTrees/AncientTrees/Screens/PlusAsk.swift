@@ -85,8 +85,11 @@ struct PlusQuestionSheet: View {
         switch step {
         case .idea:
             BrandSheet(icon: "sparkles", title: "Ancient Trees Plus",
-                       message: "We're working on Plus to keep Ancient Trees going. What would make it worth paying for?",
-                       buttons: [.primary("Next", id: "plus-next") { step = .choice }],
+                       message: "We're working on Plus to keep Ancient Trees going. What would you like it to do that it doesn't do yet?",
+                       // Skip while the field is empty, so leaving it is plainly
+                       // allowed (Hidde, 2026-11-05: "ik zou hier wel op vastlopen").
+                       buttons: [.primary(idea.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Skip" : "Next",
+                                          id: "plus-next") { step = .choice }],
                        extra: { ideaField })
                 .accessibilityIdentifier("plus-sheet")
         case .choice:
@@ -118,7 +121,7 @@ struct PlusQuestionSheet: View {
                 .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
                 .accessibilityIdentifier("plus-idea")
             if idea.isEmpty {
-                Text("Anything you'd like")
+                Text("I'd like to…")
                     .font(.system(size: 16))
                     .foregroundStyle(Brand.inkSoft.opacity(0.7))
                     .padding(.horizontal, 15).padding(.vertical, 16)
