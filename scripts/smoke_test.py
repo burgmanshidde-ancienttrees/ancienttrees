@@ -301,10 +301,20 @@ f.addEventListener('load', function() {
         var col = all[i];
         if (col.namespaceURI !== HTML || !vis(col) || rowish(col)) continue;
         if (LEAF[col.tagName.toUpperCase()] || inScroller(col, null)) continue;
-        var kids = [];
+        var kids = [], cr = col.getBoundingClientRect();
         for (var j = 0; j < col.children.length; j++) {
           var k = col.children[j];
-          if (k.namespaceURI === HTML && vis(k) && !centred(k)) kids.push(k);
+          if (k.namespaceURI !== HTML || !vis(k) || centred(k)) continue;
+          // A painted child that spans its column edge to edge is full-bleed
+          // media (a card's photo block over padded text, the Airbnb card):
+          // its edges ARE the column's, so nobody sees them as a gutter. The
+          // rule above already says so; this applies it inside a card too
+          // (2026-11-05, the tree page's nearby cards, first measured once the
+          // smoke test stopped landing on Aachen's redirect stub).
+          var kr = k.getBoundingClientRect();
+          var inL = cr.left + col.clientLeft, inR = inL + col.clientWidth;
+          if (paints(k) && Math.abs(kr.left - inL) <= SAME && Math.abs(kr.right - inR) <= SAME) continue;
+          kids.push(k);
         }
         if (kids.length < 2 || !stacked(kids)) continue;
         var gs = [];
