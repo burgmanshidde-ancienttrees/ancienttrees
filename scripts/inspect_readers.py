@@ -265,14 +265,13 @@ pre{white-space:pre-wrap;font:inherit;background:#f3f0e8;padding:12px;border-rad
     # folder; preview_start {name: "inspect"} serves it (.claude/launch.json).
     if os.path.isdir(os.path.dirname(PREVIEW)):
         import shutil
-        # Keep digest.html: show_digest.py runs first and shares this folder.
-        digest = os.path.join(PREVIEW, "digest.html")
-        kept = open(digest, "rb").read() if os.path.exists(digest) else None
-        shutil.rmtree(PREVIEW, ignore_errors=True)
-        os.makedirs(PREVIEW)
-        if kept is not None:
-            with open(digest, "wb") as fh:
-                fh.write(kept)
+        # Never empty the folder: show_digest.py runs first and shares it,
+        # writing digest.html and, through reader_photos.py, photos.html with
+        # its pictures. Wiping it and keeping only digest.html left the
+        # digest's "Open them all" link pointing at nothing (Hidde,
+        # 2026-11-05). Files are overwritten in place; index.html links only
+        # today's picks, so an older picture left here is never shown.
+        os.makedirs(PREVIEW, exist_ok=True)
         shutil.copy(path, PREVIEW)
         for sid, _j, _n in picks:
             src = os.path.join(OUT, sid + ".jpg")
