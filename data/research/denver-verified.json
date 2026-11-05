@@ -1,0 +1,27 @@
+[
+ {
+  "id": "dnv_001",
+  "name": "Shakespeare Elm",
+  "species": "Wych Elm (Ulmus glabra)",
+  "age_estimate": "over a century",
+  "age_min": 100,
+  "age_max": 110,
+  "age_basis": "source",
+  "location": {
+   "address": "City Park, near 17th Avenue and Colorado Boulevard, Denver, CO",
+   "latitude": 39.7475,
+   "longitude": -104.9407,
+   "neighbourhood": "City Park"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/City_Park,_Denver",
+   "https://denverbyfoot.com/city-park-urban-hiking-denver/"
+  ],
+  "access": "Free; public city park, always open.",
+  "transport": "Bus on Colorado Blvd or 17th Ave; roughly 10 min walk from the City Park Esplanade stops.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "You can recognise it by the plaque on the trunk about Shakespeare's grave at Stratford. It stands in the southeast part of City Park, near 17th Avenue and Colorado Boulevard.",
+  "story": "A plaque on this elm says it grew from a cutting taken from the tree at Shakespeare's grave in Stratford-upon-Avon. That is the plaque's claim, and Denver has repeated it for a century without anyone proving it. A local walking guide calls it the tree supposedly grown from a switch off Shakespeare's grave, which is about the right amount of doubt.\n\nThe planting date is better attested, though not by much. Wikipedia's history of City Park gives 23 April 1916, three hundred years to the day after Shakespeare died, though that part of the article carries no source. If that date is right, the tree is a little over 110 years old. The species is often given as wych elm, but we have not seen that on a source we could check, so read it as an elm.\n\nIt has outlasted everyone who planted it for that anniversary, and kept its plaque.\n\nFinding it takes a little work. Sources put it in the southeast part of City Park, near 17th Avenue and Colorado Boulevard, though one guide also mentions an approach from 14th and Colorado. Our pin is an estimate, not a fix on the trunk. Look for the plaque, and if you find it, a photograph with a location would let us put the pin where the tree is."
+ }
+]

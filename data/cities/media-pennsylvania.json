@@ -1,0 +1,149 @@
+{
+  "city": "Media",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Tyler Arboretum, outside Media in Delaware County, still keeps 21 plants that the Painter brothers set out between the 1840s and the 1860s. Three of them are here. A giant sequoia counted the largest in Pennsylvania lost its top in 1895 and grew several spires in its place. A ginkgo stands behind Lachford Hall. And the state's champion Cedar of Lebanon is in decline, by the arboretum's own account. Tyler charges admission, and from Center City Philadelphia it is well over half an hour by public transport, nearer an hour or more.",
+  "meta_description": "Three Painter-era trees at Tyler Arboretum near Media, PA: Pennsylvania's largest giant sequoia, a ginkgo and a champion Cedar of Lebanon.",
+  "question_meta": "Tyler Arboretum's giant sequoia, planted around 1856 by one account, is counted Pennsylvania's largest. Three Painter-era trees are mapped here.",
+  "question_answer": "The best-known old tree near Media is the giant sequoia at Tyler Arboretum, counted the largest in Pennsylvania by the arboretum and Wikipedia and the state champion since 1950. The Painter brothers planted it around 1856, by one account, inside a planting window the arboretum gives as the 1840s to the 1860s, so it is roughly 170 years old. In 2006 it measured 29 metres tall and 3.93 metres round.",
+  "question_context": "Tyler Arboretum keeps what survives of the trees two brothers, the Painters, planted on this ground in the middle of the nineteenth century. Of what they put in, 21 plants of 19 species survive, and the arboretum keeps them as its legacy collection, fenced to protect the roots and marked with blue tags.\n\nThe giant sequoia is the famous one. Its central leader was cut off in 1895, which is why it carries several spires, and it is treated every year against fungal disease and fitted with lightning protection. It grows above Painter Road. The ginkgo, behind Lachford Hall, has no published measurements; in November it turns yellow. The Cedar of Lebanon is listed as Pennsylvania's state champion by the Scott Arboretum and Wikipedia, and the arboretum says it is in decline. Its exact spot is not published, so ask at the entrance.\n\nNo planting year is recorded for the ginkgo or the cedar, so their ages come from the Painters' window, about 160 to 185 years. Tyler charges admission. The nearest rail is Media station on the Media/Wawa line, several kilometres off, then a taxi or local bus; allow an hour or more from Center City Philadelphia.",
+  "hero_tree_id": "mdp_001",
+  "oldest_tree_id": "mdp_001",
+  "faq": [
+    {
+      "q": "Can you get to Tyler Arboretum by public transport?",
+      "a": "Not directly. No SEPTA stop serves the gate. Take the Media/Wawa line to Media station, several kilometres away, then a taxi or local bus. From Center City Philadelphia that is well over half an hour, nearer an hour or more door to door."
+    },
+    {
+      "q": "Is Tyler Arboretum free?",
+      "a": "No. Adults pay $18, seniors $15 and ages 3 to 17 $10; under 3 is free. It is open daily, 9 am to 6 pm from April to October and 9 am to 4 pm from November to March, and closed on Thanksgiving and 24 and 25 December."
+    },
+    {
+      "q": "Where is the giant sequoia at Tyler Arboretum?",
+      "a": "Above Painter Road. Look for several spires instead of one point, the result of its top being cut off in 1895, and for the fence, blue Painter legacy tag and lightning rod."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mdp_001",
+      "name": "Tyler Arboretum Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 170 years",
+      "age_min": 160,
+      "age_max": 185,
+      "girth_cm": 393,
+      "height_m": 29,
+      "location": {
+        "address": "Tyler Arboretum, 515 Painter Road, Media, PA 19063",
+        "latitude": 39.9347,
+        "longitude": -75.4311,
+        "neighbourhood": "Media, Delaware County"
+      },
+      "story": "Somebody cut the top off this giant sequoia in 1895, and it answered by growing several new ones. The lost central leader is why it has a cluster of spires instead of the single point its species is known for.\n\nThe Painter brothers planted it on the ground that is now Tyler Arboretum, as part of a collection they built between the 1840s and the 1860s. A description of the tree on Wikimedia Commons gives the year as 1856; the arboretum itself only gives the Painters' planting window and says the sequoia may have come from Hoopes Nursery stock. So call it roughly 170 years old, give or take a decade or so.\n\nIt is counted the largest giant sequoia in Pennsylvania, and possibly in the eastern United States, by the arboretum and Wikipedia, and has held the state champion title since 1950 by the Commons account. Measured in 2006, it stood 29 metres tall and 3.93 metres round, with a crown spread of almost 11 metres. Those figures are twenty years old.\n\nIt has also had care that few trees get. The arboretum keeps it fenced to protect the roots, treats it every year against fungal disease and has fitted it with lightning protection.\n\nIt grows above Painter Road. Tyler charges admission, and it is well over half an hour from Philadelphia by public transport, so this is a day out rather than a detour.",
+      "how_to_recognise": "You can recognise it by its several spires, grown after the top was cut in 1895, and by the fence, blue Painter legacy tag and lightning rod. It stands above Painter Road.",
+      "verified_sources": [
+        "https://tylerarboretum.org/?p=20905",
+        "https://tylerarboretum.org/?p=16641",
+        "https://commons.wikimedia.org/wiki/File:Sequoiadendron_giganteum_Giant_Sequoia_Tyler_Arboretum_2000px.jpg"
+      ],
+      "official_register": {
+        "name": "Tyler Arboretum Painter Collection (arboretum's own legacy-plant list)",
+        "url": "https://tylerarboretum.org/?p=16641"
+      },
+      "access": "Paid entry: adults $18, seniors $15, ages 3-17 $10, under 3 free (tylerarboretum.org hours page, read 2026-11-04). Open daily; April to October 9 am to 6 pm, November to March 9 am to 4 pm; closed Thanksgiving, Dec 24 and 25. Specimen trees are fenced to protect roots.",
+      "transport": "No SEPTA stop at the gate and the arboretum publishes no transit directions. Nearest rail is Media station (Media/Wawa line), several kilometres away, then a taxi or local bus; realistically well over 30 minutes from Center City Philadelphia (about 1 hour or more door to door). Not a 30-minute day trip. Travel time not verified against a timetable.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sequoiadendron_giganteum_Giant_Sequoia_Tyler_Arboretum_2000px.jpg",
+        "license": "CC BY-SA 2.5",
+        "attribution": "Derek Ramsey",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Sequoiadendron_giganteum_Giant_Sequoia_Tyler_Arboretum_2000px.jpg",
+        "status": "approved",
+        "width": 2000,
+        "height": 3008
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Re-id from phl_035 (Tyler Arboretum is its own place, Media, slug media-pennsylvania). Planted by the Painter brothers; the Commons description of the 2006 photo says planted 1856 (arboretum page only says Painter plantings 1840s-1860s and that the sequoia may have come from Hoopes Nursery stock, so 1856 is one source: derived age broad). Arboretum says it grows overlooking Painter Road, is fenced, treated yearly for fungal disease and has lightning protection. Called the largest giant sequoia in Pennsylvania and possibly the eastern US (Wikipedia and arboretum material); Pennsylvania state champion since 1950 per the Commons description. 2006 measurements per Commons: height 29 m, circumference 3.93 m, spread 10.9 m (stale, 20 years; girth at unstated height). Central leader cut off in 1895, so it has several spires (Commons; a blog adds a Christmas-tree thief, unverified). Pin is the arboretum centroid (Wikipedia coordinates 39 56 05 N 75 25 52 W), NOT the tree: sequoia is somewhere along Painter Road, no tree-level coordinate found (Overpass unreachable from this machine, Commons photo not geotagged). recognise: the multi-spired giant sequoia with fence, blue Painter legacy tag and lightning rod, above Painter Road. Life: arboretum page lists it alive and in care (undated); lifecheck near arboretum RECENT 2026-06-07 but not tree-specific. Flagged: pin approximate, one-source planting year. Open licence photo identity: Commons file by Derek Ramsey, CC BY-SA 2.5 / GFDL (2006), https://commons.wikimedia.org/wiki/File:Sequoiadendron_giganteum_Giant_Sequoia_Tyler_Arboretum_2000px.jpg. Transport honestly over 30 minutes. Photo pass 2026-11-04 (approved): Commons file titled Sequoiadendron giganteum Giant Sequoia Tyler Arboretum; the whole conical sequoia fills the portrait frame, daylight (overcast).",
+      "paid_entry": true
+    },
+    {
+      "id": "mdp_002",
+      "name": "Tyler Arboretum Painter Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 160 to 185 years",
+      "age_min": 155,
+      "age_max": 190,
+      "location": {
+        "address": "Tyler Arboretum, 515 Painter Road, Media, PA 19063",
+        "latitude": 39.9347,
+        "longitude": -75.4311,
+        "neighbourhood": "Media, Delaware County"
+      },
+      "story": "Of everything the Painter brothers planted here in the middle of the nineteenth century, 21 plants of 19 species are still alive, and this ginkgo is one of them. The arboretum keeps them as its Painter legacy collection.\n\nThe brothers planted between the 1840s and the 1860s on the ground that became Tyler Arboretum. No source gives the year this particular tree went in, so its age can only be read from that window, somewhere around 160 to 185 years. That makes it a good half century younger than the ginkgo at Bartram's Garden in Philadelphia, which arrived from London in 1785.\n\nThe arboretum has fitted it with lightning protection and, like its other specimen trees, fenced it to protect the roots. No measurements have been published. If you have measured its girth, tell us.\n\nIt grows behind Lachford Hall. Ginkgoes turn a clean butter yellow in late autumn and tend to drop their leaves almost all at once, so a visit in November can catch the crown gold or the ground beneath it covered.\n\nTyler charges admission and lies well over half an hour from Center City by public transport.",
+      "how_to_recognise": "You can recognise it by the blue Painter legacy tag, the fence round its roots and the lightning protection. It stands behind Lachford Hall.",
+      "verified_sources": [
+        "https://tylerarboretum.org/?p=20905",
+        "https://tylerarboretum.org/?p=16641"
+      ],
+      "official_register": {
+        "name": "Tyler Arboretum Painter Collection (arboretum's own legacy-plant list)",
+        "url": "https://tylerarboretum.org/?p=16641"
+      },
+      "access": "Paid entry: adults $18, seniors $15, ages 3-17 $10, under 3 free (tylerarboretum.org hours page, read 2026-11-04). Open daily; April to October 9 am to 6 pm, November to March 9 am to 4 pm; closed Thanksgiving, Dec 24 and 25. Specimen trees are fenced to protect roots.",
+      "transport": "No SEPTA stop at the gate and the arboretum publishes no transit directions. Nearest rail is Media station (Media/Wawa line), several kilometres away, then a taxi or local bus; realistically well over 30 minutes from Center City Philadelphia (about 1 hour or more door to door). Not a 30-minute day trip. Travel time not verified against a timetable.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the crown turns yellow and drops almost at once"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Re-id from phl_036 (Tyler Arboretum is its own place, Media, slug media-pennsylvania). One of the 21 surviving Painter-brothers legacy plants (19 species), planted between the 1840s and 1860s per the arboretum; no tree-specific planting year, so age is derived from that window only. Grows behind Lachford Hall and has lightning protection (arboretum page). No size figures found. Pin is the arboretum centroid, not the tree; recognise: ginkgo behind Lachford Hall with blue legacy tag, fenced and lightning-protected. Alive per arboretum page (undated). One source (the owner of the ground, enough in the US). Flagged: no measurement, approximate pin. Transport well over 30 minutes from Philadelphia.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "mdp_003",
+      "name": "Tyler Arboretum Painter Cedar of Lebanon",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "roughly 160 to 185 years",
+      "age_min": 155,
+      "age_max": 190,
+      "location": {
+        "address": "Tyler Arboretum, 515 Painter Road, Media, PA 19063",
+        "latitude": 39.9347,
+        "longitude": -75.4311,
+        "neighbourhood": "Media, Delaware County"
+      },
+      "story": "Pennsylvania's champion Cedar of Lebanon is in decline, and Tyler Arboretum says so plainly. It may not be here many more years, which is the best reason to see it soon.\n\nThe Scott Arboretum's register of Pennsylvania champion trees lists a Cedar of Lebanon at Tyler, and Wikipedia agrees. Neither publishes a height or a girth, so the title stands without a number we can show you.\n\nIt is one of the Painter plantings. The Painter brothers planted a collection of trees on this ground between the 1840s and the 1860s, and of everything they put in, 21 plants survive. This cedar is one. No source gives its own planting year, so its age is that window, roughly 160 to 185 years, and every one of those years was spent a long way from the mountains of Lebanon and Turkey where its species grows wild.\n\nThe arboretum fences its specimen trees to protect the roots, and this one carries the blue tag of the Painter legacy collection. Its exact spot in the grounds is not published and the pin marks the arboretum as a whole, so ask at the entrance before you set off. If you know the spot, or have a photograph, tell us, while there is still a tree to photograph.\n\nTyler charges admission and is well over half an hour from Center City by public transport.",
+      "how_to_recognise": "You can recognise it by the blue Painter legacy tag and the fence round its roots. Its spot in the arboretum is not published, so ask at the entrance for the Painter cedar.",
+      "verified_sources": [
+        "https://tylerarboretum.org/?p=20905",
+        "https://www.scottarboretum.org/state-champion-trees/"
+      ],
+      "official_register": {
+        "name": "Tyler Arboretum Painter Collection (arboretum's own legacy-plant list)",
+        "url": "https://tylerarboretum.org/?p=16641"
+      },
+      "access": "Paid entry: adults $18, seniors $15, ages 3-17 $10, under 3 free (tylerarboretum.org hours page, read 2026-11-04). Open daily; April to October 9 am to 6 pm, November to March 9 am to 4 pm; closed Thanksgiving, Dec 24 and 25. Specimen trees are fenced to protect roots.",
+      "transport": "No SEPTA stop at the gate and the arboretum publishes no transit directions. Nearest rail is Media station (Media/Wawa line), several kilometres away, then a taxi or local bus; realistically well over 30 minutes from Center City Philadelphia (about 1 hour or more door to door). Not a 30-minute day trip. Travel time not verified against a timetable.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Re-id from phl_037 (Tyler Arboretum is its own place, Media, slug media-pennsylvania). Painter-era legacy plant (1840s-1860s window, no tree-specific year). Arboretum page says it is in decline; Scott Arboretum's champion page lists a Cedrus libani at Tyler as a Pennsylvania state champion, Wikipedia agrees (no figures anywhere). Alive but declining, may be lost soon: flagged. Exact location within the arboretum not found; pin is the arboretum centroid. recognise: blue legacy tag, fenced. Transport well over 30 minutes from Philadelphia.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

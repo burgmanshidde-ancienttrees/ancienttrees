@@ -1,0 +1,150 @@
+{
+  "city": "Salem",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Salem's biggest trees stand where the town keeps its dead and its old houses. At the gate of Harmony Grove Cemetery grows the largest cucumber magnolia in Massachusetts, by the state's champion register, 31 metres tall. In the Ropes Mansion garden on Essex Street, a copper beech planted in 1913 is living with a fungus that has stopped spreading. And in Broad Street Cemetery, the town's second-oldest burying ground, a white oak nearly four and a half metres round stands among the graves. All three are free and within two kilometres of the station.",
+  "meta_description": "Three big old trees in Salem, Massachusetts: the state's champion cucumber magnolia, the Ropes Mansion copper beech and a Broad Street white oak.",
+  "question_meta": "Salem's biggest tree is the cucumber magnolia at Harmony Grove Cemetery, the largest of its kind in Massachusetts on the state register.",
+  "question_answer": "The biggest tree in Salem by the state's register is the cucumber magnolia at the entrance of Harmony Grove Cemetery on Grove Street, first among its species in Massachusetts: 470 cm round and 31 metres tall when measured in February 2024. The only one of Salem's big trees with a known planting date is the copper beech in the Ropes Mansion garden, planted in 1913.",
+  "question_context": "Massachusetts keeps a register of its largest trees, measured in person by state foresters, and three of Salem's entries stand on ground anyone can walk onto. The cucumber magnolia at Harmony Grove Cemetery is the state champion of its kind, a native of the Appalachian forests growing far north of its usual range. The cemetery opens from 7 am, until 7 pm in summer and until sunset from October to May. The copper beech in the Ropes Mansion garden on Essex Street belongs to the Peabody Essex Museum, which opens the garden free from dawn to dusk and has roped the tree off a few steps back; the museum found a Ganoderma fungus in it and later tests showed the infection had stopped spreading. The white oak in Broad Street Cemetery, measured in January 2026 at 437 cm round, has no recorded age at all. Commuter rail from Boston's North Station reaches Salem in about 30 minutes, and the three trees lie between 600 metres and 1.5 km from the station on foot. If you know how old the oak is, or have a photograph of any of the three, tell us.",
+  "hero_tree_id": "sma_001",
+  "oldest_tree_id": "sma_002",
+  "faq": [
+    {
+      "q": "Which is the biggest tree in Salem, Massachusetts?",
+      "a": "By the state's big-tree register, the cucumber magnolia at the entrance of Harmony Grove Cemetery, 470 cm round and 31 metres tall in 2024, the largest of its species in Massachusetts."
+    },
+    {
+      "q": "Can you see Salem's big trees without paying?",
+      "a": "Yes. Harmony Grove and Broad Street cemeteries are free to walk into, and the Ropes Mansion garden is open free every day from dawn to dusk. Please keep behind the ropes around the beech."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sma_001",
+      "name": "The Harmony Grove Cucumber Magnolia",
+      "species": "Cucumber Tree Magnolia (Magnolia acuminata)",
+      "age_estimate": "not documented",
+      "girth_cm": 470,
+      "height_m": 31.1,
+      "location": {
+        "address": "Harmony Grove Cemetery, 30 Grove Street, Salem, MA 01970",
+        "latitude": 42.5241676,
+        "longitude": -70.912531,
+        "neighbourhood": "North Salem"
+      },
+      "location_site": {
+        "name": "Harmony Grove Cemetery entrance, Grove Street",
+        "radius_m": 50
+      },
+      "story": "The biggest cucumber magnolia in Massachusetts stands at a cemetery gate in Salem. The state's champion tree register ranks it first of its kind, and when the measurers came in February 2024 they recorded a trunk 470 centimetres round, a height of 31 metres and a crown spreading about 26 metres. For a tree most people walking past could not name, that is a great deal of tree.\n\nIt is also a long way from home. Cucumber magnolia belongs to the forests of the southern Appalachians and rarely grows wild in New England, so this one was planted. Nobody has recorded who planted it, or when.\n\nHarmony Grove opened around 1840, with sources split between 1839 and 1840, and the magnolia now marks the way in. It would be tempting to make the tree as old as the cemetery, but nothing we have says so, and an entrance tree can as easily have gone in decades later.\n\nWhat the record does confirm is that it was alive in 2024. The register is the only source that names it, so its age and its story remain open. If you know when it went into the ground, or who put it there, tell us.",
+      "how_to_recognise": "You can recognise it by its size, a cucumber magnolia about 31 metres tall with a trunk 4.7 metres round. It stands at the Grove Street entrance of Harmony Grove Cemetery.",
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://harmonygrovesalem.org",
+        "https://www.salem.org/cemeteries/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Champion Trees 2026 (state champion, rank 1 cucumber magnolia)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Free. Cemetery grounds open to visitors 7 am to 7 pm June to September, 7 am to sunset October to May (harmonygrovesalem.org). Tree is at the cemetery entrance on Grove Street.",
+      "transport": "MBTA commuter rail from Boston North Station to Salem, about 30 minutes, then about 1.5 km on foot west to the cemetery's Grove Street entrance.",
+      "location_precision": "approximate",
+      "pin_source": "Nominatim geocode of DCR address 30 Grove Street (building at the cemetery entrance), 2026-11-03; register note says the tree is at the entrance",
+      "curation_status": "flagged",
+      "verify_notes": "DCR champion row: Magnolia acuminata, 185 in circumference (470 cm), 102 ft (31.1 m) tall, crown spread 86 ft, rank 1 (state champion), measured 2024-02-05, note 'At entrance of Harmony Grove Cemetary'. Measurement date inside 2.5 years counts as last seen alive; register-only plus a ground-owner page for access, hence flagged 'register only'. Cucumber magnolia is a southern Appalachian species that rarely grows naturally in New England (Northborough trail document seen in search, pointer only), so this is a planted specimen. No planting date found; no age claimed. Cemetery founded 1840 per Wikipedia (Salem.org says 1839): do not bridge cemetery date to the tree. Web search found no second source naming this tree; WebSearch summary said nothing on it. Rule 10 clear: cemetery open to visitors per owner site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sma_002",
+      "name": "The Ropes Mansion Copper Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "planted 1913",
+      "age_min": 110,
+      "age_max": 115,
+      "age_basis": "source",
+      "girth_cm": 503,
+      "height_m": 23.6,
+      "location": {
+        "address": "Ropes Mansion Garden, 318 Essex Street, Salem, MA 01970",
+        "latitude": 42.5212125,
+        "longitude": -70.8997969,
+        "neighbourhood": "McIntire District"
+      },
+      "location_site": {
+        "name": "Ropes Mansion Garden",
+        "radius_m": 50
+      },
+      "story": "A pocket of water a foot deep, held in one of its branches, may be part of what is keeping this beech alive. Some years ago the Peabody Essex Museum, which looks after the Ropes Mansion garden, found a Ganoderma fungus at work in the tree. Later tests showed the infection had stopped spreading, and the museum thinks the standing water may be helping to hold it back. For now the tree does not have to come down.\n\nIt went into the garden in 1913, a year after the Salem botanist John Robinson laid the garden out, and an archival photograph shows it as a ten-year-old sapling. The museum says it was probably one of 91 woody plants that Charles Sprague Sargent of the Arnold Arboretum gave to Robinson. A local inn tells it differently, as a tree transplanted from the Arboretum that year. The two accounts are close but not the same, and neither is settled.\n\nThe state's legacy tree register lists a European beech at the Ropes Mansion with a trunk 503 centimetres round, 23.6 metres tall and a crown about 25 metres across, measured in January 2026. The museum names only one beech in the garden, so this is taken to be it.\n\nRopes and signs now ask visitors to stay a few steps back from it.",
+      "how_to_recognise": "You can recognise it by its purple leaves and the ropes and signs keeping visitors a few steps back. It is the large copper beech in the Ropes Mansion garden, behind the house on Essex Street.",
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.pem.org/blog/tree-trekking-around-pems-campus-with-our-horticulture-and-grounds-team",
+        "https://www.salem.org/listing/ropes-mansion-and-garden/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Trees 2026 (European beech, rank 14)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Free. The Ropes Mansion Garden (Peabody Essex Museum) is open to the public every day of the year, dawn to dusk, no charge (Salem.org listing). PEM has ropes and signs asking visitors to stay a few steps back from the tree.",
+      "transport": "MBTA commuter rail from Boston North Station to Salem, about 30 minutes, then about 600 metres on foot to the Ropes Mansion on Essex Street.",
+      "location_precision": "approximate",
+      "pin_source": "Nominatim geocode of DCR address (Ropes Mansion building), 2026-11-03",
+      "curation_status": "ai_generated",
+      "verify_notes": "Two sources. DCR: Fagus sylvatica, 198 in (503 cm), 77.5 ft (23.6 m), spread 81.5 ft, rank 14, measured 2026-01-08 (alive this year). PEM (owner of the garden) blog on its arboretum certification: 'the 100-year-old copper beech tree at the Ropes Mansion', 'planted in 1913', 'visible as a ten-year-old sapling in an archival photograph', 'probably given to John Robinson by Charles Sprague Sargent, the first director of the Arnold Arboretum, as part of a gift of 91 woody plants'. About four years before the post it had a Ganoderma (gianoderma in the post) fungal infection; this year tests showed the fungus stopped progressing; it does not currently have to come down. A branch holds a foot-deep pocket of water that may hold back the fungus. Garden laid out in 1912 by Salem botanist John Robinson. Salem Inn gives a different story (transplanted from the Arnold Arboretum in 1913); PEM says probably a gift from Sargent; not settled. PEM also gives conflicting ages (100-year-old vs 'at least 120' in a search snippet that was not seen on the fetched page, so ignore). Assumption to flag: the DCR row 'Beech, European, Ropes Mansion, 318 Essex St' is taken to be this copper beech; PEM names only one beech there but does not cite the register. Blog date uncertain, photo captioned 2024.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sma_003",
+      "name": "The Broad Street Cemetery White Oak",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "not documented",
+      "girth_cm": 437,
+      "height_m": 17.4,
+      "location": {
+        "address": "Broad Street Cemetery, Broad Street, Salem, MA 01970",
+        "latitude": 42.5182515,
+        "longitude": -70.8990538,
+        "neighbourhood": "South Salem"
+      },
+      "location_site": {
+        "name": "Broad Street Cemetery",
+        "radius_m": 50
+      },
+      "story": "Salem's second-oldest burying ground holds a white oak nearly four and a half metres round, and no record says how long it has been there. The state's legacy tree register measured it in January 2026 at 437 centimetres around the trunk and placed it thirteenth among the white oaks on its list for Massachusetts.\n\nIt is not a tall tree. At 17.4 metres it is stout rather than lofty, with a crown about 19 metres wide, the shape you would expect of an oak that grew up in the open. The register places it towards the centre of the cemetery, a small ground of under three acres across the road from the Pickering House.\n\nThe Broad Street Cemetery dates from 1655, which makes an obvious story tempting. Nothing we have says the oak is anywhere near that old, and the cemetery's founding tells us nothing about when the tree took root. Girth alone is a poor clock for an open-grown oak, and no planting date has turned up.\n\nSo the honest answer is that its age is unknown. If you know more, from a family record, an old photograph of the cemetery or a local history, tell us.",
+      "how_to_recognise": "You can recognise it as the big white oak among the headstones, about 4.4 metres round and broader than it is tall. It stands towards the centre of the small Broad Street Cemetery.",
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program",
+        "https://www.salem.org/cemeteries/",
+        "https://historyofmassachusetts.org/broad-street-cemetery-salem/"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Trees 2026 (white oak, rank 13)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "Free; a city-owned historic burying ground (second-oldest in Salem, 2.69 acres per Find a Grave) listed by Destination Salem as a place to visit, across from the Pickering House. Posted hours not found.",
+      "transport": "MBTA commuter rail from Boston North Station to Salem, about 30 minutes, then about 1 km on foot south to Broad Street.",
+      "location_precision": "approximate",
+      "pin_source": "Nominatim geocode of the cemetery polygon centroid, 2026-11-03; register location text 'towards the center'",
+      "curation_status": "flagged",
+      "verify_notes": "DCR: Quercus alba, 172 in (437 cm), 57 ft (17.4 m), spread 63.75 ft, rank 13, measured 2026-01-08 (alive this year), location text 'Broad St Cemetery, towards the center'. The ground is small (2.69 acres), so the small-site rule fits. Register only plus a Salem.org page for access: flagged 'register only'. Cemetery established 1655 (Salem.org); do NOT bridge this to the oak's age. No age basis; leave to the reader. Stout rather than tall (17 m) for a 437 cm white oak, which fits an open-grown crown. Public access not stated in words by any page; inferred from Salem.org listing it as a cemetery to visit and from guided tours (Salem Historical Society 2019 listing seen in search).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

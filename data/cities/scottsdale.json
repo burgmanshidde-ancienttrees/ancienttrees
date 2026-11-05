@@ -1,0 +1,65 @@
+{
+  "city": "Scottsdale",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Scottsdale's oldest trees were planted by the man the town is named after. In 1896 Chaplain Winfield Scott set a row of olives around his citrus grove as a windbreak. The citrus is gone, but about 25 of the olives were still counted in 2010, along the Drinkwater Boulevard median and four on Second Street, in front of the Civic Center in Old Town. In 2011 they were named an Arizona Centennial Witness Tree.",
+  "meta_description": "Winfield Scott's olives, planted in 1896 as a windbreak around his citrus grove, still stand at Second Street and Drinkwater Boulevard, Scottsdale.",
+  "question_meta": "Scottsdale's oldest mapped trees are Winfield Scott's olives, planted in 1896 around his citrus grove in what is now Old Town.",
+  "question_answer": "The oldest trees we map in Scottsdale are the olives Chaplain Winfield Scott, the town's founder, planted in 1896 as a windbreak around his citrus grove. That makes them about 130 years old. The Scottsdale Historical Society says a few still stand along Civic Center, and a 2025 article confirms they are still there.",
+  "question_context": "The olives grow on public street medians in Old Town, free to see at any hour. A 2010 account counted about 25 survivors, most forming the median of Drinkwater Boulevard between Second Street and Osborn Road, with four still on Second Street near Drinkwater, in front of the Scottsdale Civic Center. The four on Second Street are the place to stand: they mark the edge of the grove Scott planted. When a hospital was built nearby, its ambulance entrance went in between two of the original trees. In 2011 the olives were named an Arizona Centennial Witness Tree, meaning they were already standing when Arizona became a state in 1912. Nobody has published measurements of their trunks, so we cannot tell you which one is the biggest. Scottsdale is about 30 to 45 minutes from downtown Phoenix by bus, and Old Town is easy to walk once you are there.",
+  "hero_tree_id": "sct_001",
+  "oldest_tree_id": "sct_001",
+  "faq": [
+    {
+      "q": "Who planted the olive trees in Old Town Scottsdale?",
+      "a": "Chaplain Winfield Scott, the town's founder, in 1896, as a windbreak around his citrus grove."
+    },
+    {
+      "q": "Where exactly are Winfield Scott's olives?",
+      "a": "Four stand on the Second Street median near Drinkwater Boulevard, in front of the Civic Center. More line the Drinkwater Boulevard median between Second Street and Osborn Road."
+    },
+    {
+      "q": "Is it free to see them?",
+      "a": "Yes. They grow on public street medians and can be seen at any time."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sct_001",
+      "name": "Winfield Scott's Olive Trees",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "about 130 years",
+      "age_min": 125,
+      "age_max": 135,
+      "age_basis": "source",
+      "location": {
+        "address": "Second Street at Drinkwater Boulevard, Old Town Scottsdale (in front of Scottsdale Civic Center / Town offices)",
+        "latitude": 33.49117,
+        "longitude": -111.92193,
+        "neighbourhood": "Old Town, Scottsdale"
+      },
+      "location_site": {
+        "name": "Four surviving olives on the Second Street median at Drinkwater Blvd",
+        "radius_m": 50
+      },
+      "story": "The man who founded Scottsdale planted these olives in 1896, and when a hospital was built here later, its ambulance entrance went in between two of them. Chaplain Winfield Scott set the trees around the edge of his citrus grove as a windbreak. The Scottsdale Historical Society says the grove ran between what are now Scottsdale Road and Second Street, and that a few of his olives still stand along Civic Center.\n\nThe citrus is long gone. The olives stayed. A 2010 account counted about 25 of the last of them, most forming the median of Drinkwater Boulevard between Second Street and Osborn Road, with four still on Second Street near Drinkwater. In 2011 they were named an Arizona Centennial Witness Tree, a tree that was already standing when Arizona became a state in 1912. A 2025 article in Edible Phoenix confirms they are still there.\n\nThat makes them about 130 years old. They have watched a farming settlement become the streets of Old Town.\n\nStand at the four on Second Street, near Drinkwater in front of the Civic Center, and you are looking at trees the town's founder planted with his own grove. Nobody has measured their trunks for publication, so we cannot tell you which of the four is the biggest. If you can, tell us.",
+      "how_to_recognise": "You can recognise them as the old, gnarled olives in the median of Second Street near Drinkwater Boulevard, beside the Civic Center. More of Scott's olives line the Drinkwater median.",
+      "verified_sources": [
+        "https://www.waymarking.com/waymarks/WM9GJK_Winfield_Scotts_Olive_Tree_Scottsdale_Arizona",
+        "https://scottsdalehistory.org/page-18189",
+        "https://ediblephoenix.ediblecommunities.com/things-do/old-town-scottsdales-olive-legacy",
+        "https://dffm.az.gov/node/362"
+      ],
+      "access": "Free, on public street medians in the Civic Center area; walkable at any time.",
+      "transport": "Scottsdale, about 30 to 45 minutes from downtown Phoenix by Valley Metro bus (verify route), then Old Town trolley/walk; nearest stop Civic Center / Drinkwater area.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

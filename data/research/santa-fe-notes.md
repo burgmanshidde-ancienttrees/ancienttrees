@@ -1,0 +1,4 @@
+# Santa Fe verify pass 2026-11-04
+Naming body: none found. No heritage tree list; Municipal Tree Board inventory covers parks only (downtown/historic district being added from 2025; contact Jessie Esparza, Tree Board). NM Big Tree database (EMNRD 2020 PDF, curl ok): Santa Fe County rows are private or dead; Bernalillo rows saved to data/research/nm-bigtree-bernalillo.md.
+Hosts: pressreader.com and santafenewmexican.com 403/429 to WebFetch; wikipedia API rate-limited; overpass skipped as told.
+Result: 3 flagged trees (sfn_001 to sfn_003), below the floor of 4: Santa Fe needs one more verified tree or ships as lone tree pages. Best next angle: Santa Fe New Mexican 'Trees under assault' 2019-08-12 (pressreader, 403) for named Plaza trees; Municipal Tree Board inventory; Capitol Art Foundation tree list.

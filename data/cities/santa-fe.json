@@ -1,0 +1,135 @@
+{
+  "city": "Santa Fe",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Santa Fe's oldest tree that we map is a horse chestnut on Canyon Road, planted between about 1865 and 1880 and now well past the usual lifespan of its kind. On the Plaza, a massive elm shades the courtyard behind the Palace of the Governors, beside a cottonwood the king and queen of Spain planted in 1987. On the State Capitol grounds stands a Douglas-fir grown from a seed that orbited the Moon, lost for decades and identified again in 2019.",
+  "meta_description": "Santa Fe's old trees: the El Zaguán horse chestnut on Canyon Road, the Palace courtyard elm, and the Moon tree on the State Capitol grounds.",
+  "question_meta": "Santa Fe's oldest mapped tree is the horse chestnut in the El Zaguán garden on Canyon Road, planted around 1865 to 1880.",
+  "question_answer": "The oldest tree we map in Santa Fe is the horse chestnut in the El Zaguán garden at 545 Canyon Road, somewhere between 145 and 160 years old. The Historic Santa Fe Foundation, which owns the garden, says Maria Jesusita Johnson planted it with a partner tree around 1880; a 2013 newspaper report put the planting around the end of the Civil War. Its partner died in 2013.",
+  "question_context": "All three trees are within walking distance of the Plaza. The horse chestnut is about 15 minutes east, on Canyon Road, in the garden of El Zaguán, a house the Historic Santa Fe Foundation keeps with shop and exhibit hours; the foundation does not publish garden hours or an entry fee, so check before you go. About half its roots run under the street, and drought has stressed it. It flowers in May. The Palace of the Governors courtyard is on the north side of the Plaza, two minutes away; the elm there is known to us only from a state museum photo caption, which calls it a Chinese elm more than 100 years old, and in New Mexico that name often means Siberian elm. Whether you need a museum ticket to reach the courtyard we have not confirmed. The Moon tree is about ten minutes south-west, on the open grounds of the Roundhouse. NASA says the tree identified in 2019 is believed to be the right one, and a recent visitor places it as the middle of three firs below a concrete balcony.",
+  "hero_tree_id": "sfn_001",
+  "oldest_tree_id": "sfn_001",
+  "faq": [
+    {
+      "q": "Where is the Moon tree in Santa Fe?",
+      "a": "On the New Mexico State Capitol grounds, in a grassy area north of the Roundhouse. Its plaque disappeared, and the tree was identified again in 2019, so it is believed rather than proven to be the Moon tree."
+    },
+    {
+      "q": "Can I visit the El Zaguán garden?",
+      "a": "The house at 545 Canyon Road keeps shop and exhibit hours. The Historic Santa Fe Foundation does not publish separate garden hours or a fee, so check with them before you go."
+    },
+    {
+      "q": "When is the horse chestnut in flower?",
+      "a": "In May, when white flower candles stand upright over the crown."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sfn_001",
+      "name": "El Zaguán horse chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 145 to 160 years",
+      "age_min": 140,
+      "age_max": 165,
+      "age_basis": "derived",
+      "location": {
+        "address": "El Zaguán garden, 545 Canyon Road, Santa Fe, NM 87501",
+        "latitude": 35.68226,
+        "longitude": -105.93002,
+        "neighbourhood": "Canyon Road, Historic East Side"
+      },
+      "location_site": {
+        "name": "El Zaguán garden (Historic Santa Fe Foundation)",
+        "radius_m": 30
+      },
+      "story": "Horse chestnuts usually live 80 to 100 years. The one in the El Zaguán garden on Canyon Road is past 140, according to the Historic Santa Fe Foundation, which owns the house and garden.\n\nThere were two. The foundation says Maria Jesusita Johnson planted a pair around 1880. A 2013 report in the Santa Fe New Mexican, quoting the foundation's director at the time, put the planting earlier, around the end of the Civil War, about 1865. We give both, which puts it somewhere between 145 and 160 years old. One of the pair died in 2013. This is the survivor.\n\nIt has a hard life for its age. The foundation names drought and a warming climate, and points to the asphalt of Canyon Road over its roots. About half of them run under the street. A tree planted in a garden now has a street on top of half its roots.\n\nCome in May if you can, when white flower candles stand up across the crown. The house at 545 Canyon Road keeps shop and exhibit hours, but the foundation does not publish garden hours or an entry fee, so check before you go. Nobody has published its height or girth. If you measure it, or photograph it, tell us how it is doing.",
+      "how_to_recognise": "You can recognise it as the one horse chestnut left in the El Zaguán garden at 545 Canyon Road; its partner died in 2013. Its roots run under the street.",
+      "verified_sources": [
+        "https://www.historicsantafe.org/545-hsff-blog/2024/10/14/el-zaguns-european-horse-chestnut-tree",
+        "https://www.santafenewmexican.com/news/local_news/el-zagu-n-horse-chestnut-trees-succumb-to-stress/article_90a7920d-06b1-5adb-9bcd-0951b573e04a.html"
+      ],
+      "access": "Garden of the Historic Santa Fe Foundation's El Zaguán at 545 Canyon Road; the HSFF page lists shop and exhibit hours (Mon-Tue noon-5, Wed-Sat 10-5). Garden hours and admission not stated on the pages fetched: check before visiting. Half the roots run under Canyon Road.",
+      "transport": "Canyon Road, about 15 minutes' walk east of the Plaza (about 1 km)",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when white flower candles stand upright over the crown"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sfn_002",
+      "name": "Palace Courtyard Chinese elm",
+      "species": "Lacebark Elm (Ulmus parvifolia)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "age_basis": "source",
+      "location": {
+        "address": "Palace Courtyard, Palace of the Governors / New Mexico History Museum, 105 W Palace Ave, Santa Fe, NM 87501",
+        "latitude": 35.68792,
+        "longitude": -105.93841,
+        "neighbourhood": "Downtown, Plaza"
+      },
+      "location_site": {
+        "name": "Palace of the Governors courtyard",
+        "radius_m": 30
+      },
+      "story": "A king and queen planted the second tree in this courtyard. The first was already old. That, at least, is how the New Mexico Department of Cultural Affairs captions its photograph of the Palace Courtyard, naming a massive Chinese elm thought to be more than 100 years old, and a tall cottonwood planted by King Juan Carlos I and Queen Sofia of Spain during their visit in 1987.\n\nThe courtyard sits behind the Palace of the Governors, the adobe seat of government on Santa Fe's Plaza since the early 1600s, and next to the New Mexico History Museum. The elm is the one that shades it, and the one you come for.\n\nA caveat on the name. The caption is our only source, and in New Mexico the common street elm is the Siberian elm, which is often called Chinese elm. Nobody has confirmed which of the two this is, so read it as an elm, with the museum's word for the species. Its age is an estimate too, more than a century by the museum's reckoning, without a planting record.\n\nThe courtyard is part of a state museum campus. We have not confirmed whether you need a museum ticket to reach it, so check the New Mexico History Museum's hours before you go. If you know when the elm went in, tell us.",
+      "how_to_recognise": "You can recognise it as the massive elm shading the courtyard behind the Palace of the Governors. It stands beside the tall cottonwood Spain's king and queen planted in 1987.",
+      "verified_sources": [
+        "https://media.newmexicoculture.org/photo-library/institution/file/detail/795/19"
+      ],
+      "access": "Interior courtyard of the Palace of the Governors campus (New Mexico History Museum, a state museum); museum admission and hours not verified in this pass: check nmhistorymuseum.org.",
+      "transport": "On the north side of the Santa Fe Plaza, about 2 minutes' walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sfn_003",
+      "name": "Capitol Moon Tree",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "about 50 years",
+      "age_min": 48,
+      "age_max": 50,
+      "age_basis": "derived",
+      "location": {
+        "address": "New Mexico State Capitol (Roundhouse) grounds, 490 Old Santa Fe Trail, Santa Fe, NM 87501",
+        "latitude": 35.6823,
+        "longitude": -105.9397,
+        "neighbourhood": "Capitol District"
+      },
+      "story": "This Douglas-fir grew from a seed that orbited the Moon, and for decades nobody knew which tree it was. The seed flew on Apollo 14 in 1971. On 22 July 1976, at a Bicentennial ceremony, Governor Jerry Apodaca, Clara Apodaca, Land Commissioner Phil Lucero and State Forester Raymond Gallegos planted the two-foot seedling on the grounds of the New Mexico State Capitol, the round building Santa Fe calls the Roundhouse.\n\nThen the bronze plaque disappeared, and with it the tree's identity. According to NASA's record of the Moon trees, the exact spot was thought lost until August 2019, when Clara Apodaca, state officials and a naturalist walked the grounds and identified a tree in a grassy area north of the Capitol. NASA says it is believed to be the Moon tree. It was then 50 to 60 feet tall.\n\nBelieved is the right word. A visitor who went looking in early 2026 wrote that the mapped point was wrong and that the tree is the middle one of three firs just below a concrete balcony. They could not confirm the species, because they found no cones. We pass that on as their account.\n\nThe grounds are open and free. If you find a tree there with a label, or know the spot from the 2019 visit, tell us which one it is.",
+      "how_to_recognise": "You can recognise it, according to a 2026 visitor, as the middle of three firs just below a concrete balcony, in the grassy area north of the Roundhouse. Its bronze plaque has gone.",
+      "verified_sources": [
+        "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/santa_fe_tree.html",
+        "https://shallowsky.com/blog/travel/moontree-santafe.html"
+      ],
+      "access": "Free, open grounds of the State Capitol (Clay Buchanan Memorial Gardens); grounds hours not verified.",
+      "transport": "About 10 minutes' walk south-west of the Plaza (about 800 m)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

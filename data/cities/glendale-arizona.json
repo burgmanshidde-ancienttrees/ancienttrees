@@ -1,0 +1,64 @@
+{
+  "city": "Glendale",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Glendale, Arizona, keeps some of the oldest date palms in the state at Sahuaro Ranch Park. In 1891 the ranch's second superintendent, Harry W. Adams, planted about twenty date seedlings beside the Main House to test whether dates could be grown commercially. The City of Glendale calls it one of the oldest date groves in Arizona. The ranch, with its 1886 Main House, is on the National Register of Historic Places and free to visit.",
+  "meta_description": "Sahuaro Ranch's 1891 date palms in Glendale, Arizona, planted beside the Main House as an experiment, in a free historic park.",
+  "question_meta": "Glendale's oldest mapped trees are the date palms by the Main House at Sahuaro Ranch, planted in 1891.",
+  "question_answer": "The oldest trees we map in Glendale are the date palms close to the Main House at Sahuaro Ranch Park, planted in 1891 by the ranch's second superintendent, Harry W. Adams. That makes them about 135 years old. The city does not say how many of the original twenty survive or which palms they are.",
+  "question_context": "Sahuaro Ranch Park is at 9802 North 59th Avenue, free and open from 6 a.m. to sunset daily, except during some special events. The historic ranch at its heart includes the Main House, built in 1886, and the whole ranch is on the National Register of Historic Places. The palms worth seeking out are the ones close to the Main House. Do not confuse them with the larger, orderly date grove east of the ranch houses: that was planted later by Richard W. Smith, who owned the ranch after 1927. The 1891 planting began as an experiment in commercial date growing, and the city still calls it one of the oldest date groves in Arizona. None of the old palms carries a label we know of, so you are looking at the oldest palms by the house rather than one named tree. If you know which of them are the 1891 survivors, tell us. From downtown Phoenix, Glendale is roughly 45 minutes to an hour by bus.",
+  "hero_tree_id": "glz_001",
+  "oldest_tree_id": "glz_001",
+  "faq": [
+    {
+      "q": "Is Sahuaro Ranch Park free?",
+      "a": "Yes. It is open from 6 a.m. to sunset daily, and admission is free except during certain special events."
+    },
+    {
+      "q": "Which date palms are the old ones?",
+      "a": "The ones close to the Main House. The large grove east of the ranch houses was planted after 1927 and is not the 1891 planting."
+    },
+    {
+      "q": "Who planted the first date palms at Sahuaro Ranch?",
+      "a": "Harry W. Adams, the ranch's second superintendent, planted about twenty seedlings in 1891 to test commercial date growing."
+    }
+  ],
+  "trees": [
+    {
+      "id": "glz_001",
+      "name": "Sahuaro Ranch 1891 Date Palms",
+      "species": "Date Palm (Phoenix dactylifera)",
+      "age_estimate": "about 135 years",
+      "age_min": 125,
+      "age_max": 135,
+      "age_basis": "source",
+      "location": {
+        "address": "Sahuaro Ranch Park, 9802 N 59th Ave, Glendale, AZ (near the Main House)",
+        "latitude": 33.53861,
+        "longitude": -112.18639,
+        "neighbourhood": "Sahuaro Ranch Park, Glendale"
+      },
+      "location_site": {
+        "name": "Historic Sahuaro Ranch Main House yard",
+        "radius_m": 50
+      },
+      "story": "Some of the date palms by the Main House at Sahuaro Ranch were planted in 1891, which the City of Glendale calls one of the oldest date groves in Arizona. They began as an experiment. Harry W. Adams, the ranch's second superintendent, planted about twenty seedlings that year to test whether dates could be grown commercially.\n\nThe ranch was already a working farm by then. Its Main House was built in 1886, and the whole ranch is now on the National Register of Historic Places. The palms have stood through a change of owner after 1927 and through Glendale growing out to surround the ranch.\n\nOne thing to know before you go. The big, orderly date grove east of the ranch houses is not the 1891 planting. That grove was put in later by Richard W. Smith, who owned the ranch after 1927. The 1891 palms are the ones close to the Main House. The city does not say how many of the original twenty survive or which trunks they are, so you are looking at the oldest palms near the house rather than at a labelled tree.\n\nSahuaro Ranch Park is free and open from 6 a.m. to sunset. If you know which palms are the 1891 survivors, tell us.",
+      "how_to_recognise": "You can recognise them as the tall date palms close to the Main House of the historic ranch, not the large grove east of the ranch houses, which was planted after 1927.",
+      "verified_sources": [
+        "https://www.glendaleaz.gov/Play/Parks-and-Recreation/Parks-Trails/Regional-Parks/Sahuaro-Ranch-Park/Historic-Sahuaro-Ranch",
+        "https://www.glendaleaz.gov/Play/Parks-and-Recreation/Parks-Trails/Regional-Parks/Sahuaro-Ranch-Park/Historic-Sahuaro-Ranch/Crops",
+        "https://en.wikipedia.org/wiki/Sahuaro_Ranch"
+      ],
+      "access": "Free park, open 6 a.m. to sunset daily; admission free except during certain special events (City of Glendale).",
+      "transport": "Glendale, roughly 45 to 60 minutes from downtown Phoenix by Valley Metro bus (route not verified); a day trip beyond the ~30 min rule, flagged.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

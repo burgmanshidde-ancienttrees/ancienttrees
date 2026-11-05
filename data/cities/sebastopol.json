@@ -1,0 +1,64 @@
+{
+  "city": "Sebastopol",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Sebastopol keeps what is left of Luther Burbank's Gold Ridge Experiment Farm, a three-acre remnant saved in the 1970s. Its oldest tree is a Royal Hybrid Black Walnut that Burbank planted in 1885, the year he bought the land, as a witness tree on the property line. It is stop number one on the farm's self-guided tour, free from dawn to dusk.",
+  "meta_description": "Luther Burbank's Royal walnut, planted in 1885 as a boundary marker on his Gold Ridge Experiment Farm in Sebastopol, free to visit daily.",
+  "question_meta": "Sebastopol's oldest mapped tree is Luther Burbank's Royal Hybrid Black Walnut, planted in 1885 on his Gold Ridge Experiment Farm.",
+  "question_answer": "The oldest tree we map in Sebastopol is the Royal Hybrid Black Walnut on Luther Burbank's Gold Ridge Experiment Farm, planted in 1885, about 140 years ago. The historical society that runs the farm calls it the oldest tree on the grounds; it went in as a witness tree marking the property line, and Burbank introduced the Royal walnut in 1893.",
+  "question_context": "Burbank bought this land in 1885, and what survives is a three-acre remnant the Society saved in the 1970s. The farm is run by the Western Sonoma County Historical Society on land owned by the City of Sebastopol, about a mile's walk west of Main Street. It is free and open daily from dawn to dusk, with docent tours by appointment for a small fee. The walnut is stop number one on the Society's self-guided tour, and other original Burbank plantings follow along the route, including a hybrid chestnut and a Paradox walnut. The Royal is a cross between the California black walnut and an eastern walnut, and a Society member has said it once produced a ton of nuts in a season. Nobody has published its height or girth, and the newest evidence that it stands is the Society's current tour rather than a dated photograph, so tell us how it looks if you visit.",
+  "hero_tree_id": "srs_001",
+  "oldest_tree_id": "srs_001",
+  "faq": [
+    {
+      "q": "Is the Luther Burbank Experiment Farm free?",
+      "a": "Yes, open daily from dawn to dusk. Docent tours are by appointment for a small fee."
+    },
+    {
+      "q": "What is a witness tree?",
+      "a": "A tree planted or kept to mark a property line. The Society says Burbank's Royal walnut went in for that purpose in 1885."
+    },
+    {
+      "q": "Where is the farm?",
+      "a": "On Bodega Avenue in Sebastopol, about a mile's walk west of Main Street. The walnut is the first stop on the self-guided tour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "srs_001",
+      "name": "Burbank's Royal Walnut",
+      "species": "Royal Hybrid Black Walnut (Juglans 'Royal')",
+      "age_estimate": "planted 1885, about 140 years",
+      "age_min": 135,
+      "age_max": 145,
+      "age_basis": "source",
+      "location": {
+        "address": "Luther Burbank Experiment Farm, 7781 Bodega Ave, Sebastopol, CA 95472 (county tourism and Wikipedia print 7777)",
+        "latitude": 38.39667,
+        "longitude": -122.83472,
+        "neighbourhood": "Gold Ridge, Sebastopol"
+      },
+      "location_site": {
+        "name": "Luther Burbank Experiment Farm (three-acre remnant)",
+        "radius_m": 50
+      },
+      "story": "The oldest tree on Luther Burbank's experiment farm was planted to mark a boundary. The Western Sonoma County Historical Society, which runs the farm, dates its Royal Hybrid Black Walnut to 1885, the year Burbank bought the land, and says it went in as a witness tree, a living marker on the property line.\n\nIt became more than a marker. The Royal is a cross between the California black walnut and an eastern walnut, and Burbank introduced it in 1893. The Society calls it an original planting from before the farm's restoration and the oldest tree on the grounds, and one of its members has told the county tourism office that it once produced a ton of nuts in a season.\n\nWhat survives of the farm is a three-acre remnant the Society saved in the 1970s, now on land owned by the City of Sebastopol. This walnut is stop number one on the Society's self-guided tour, and the hybrid chestnut and Paradox walnut further along the route are Burbank originals too.\n\nTwo honest gaps. Nobody has published its height or girth, and the newest evidence that it stands is the Society's own current tour, not a dated photograph. If you visit, tell us how it looks.\n\nThe farm is free and open daily from dawn to dusk, about a mile's walk west of Main Street. Docent tours run by appointment for a small fee.",
+      "how_to_recognise": "You can recognise it as stop number one on the farm's self-guided tour, the Royal Hybrid Black Walnut that marked the old property line. It stands in the Luther Burbank Experiment Farm.",
+      "verified_sources": [
+        "https://www.wschs.org/luther-burbank-experiment-farm-self-guided-tour/",
+        "https://www.sonomacounty.com/farms-farmers-markets/visit-luther-burbank-experiment-farm/"
+      ],
+      "access": "Free, open daily dawn to dusk (Western Sonoma County Historical Society, on land owned by the City of Sebastopol). Walk in on the self-guided tour; the walnut is its first stop. Guided tours and the cottage are extras, not needed to see the tree.",
+      "transport": "About a 1 mile walk west of Main Street in Sebastopol; bus link from Santa Rosa not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "The Society that runs the farm: stop #1 on its self-guided tour is the Royal Hybrid Black Walnut, marked as an original planting from before restoration, a Burbank introduction (1893), hybrid of California black walnut and eastern walnut, 'the oldest tree on the Farm (1885)', planted as a 'witness tree', a property line marker; a heavy producer. County tourism page quotes a Society member that it once produced a ton of nuts a season, and elsewhere quotes the caretaker as 'getting weaker, because it's old, but still spectacular' (second hand through a search summary for the second quote, so treat as unconfirmed). Nearby on the same tour, also original Burbank plantings: #5 hybrid chestnut (huge, per the same member), #6 Paradox Walnut north twin (introduced 1893), #9 multi-grafted English walnut 'mother' tree; these could be added as separate entries if the dispatcher wants a cluster, but no individual coordinates were found. Pin is the farm centre (Wikipedia 38.39667,-122.83472), not the tree, hence approximate with a 50 m site. No girth or height. Alive evidence is the Society's current tour page and county page (undated) and a 2021 visitor blog repeating the numbered map; no dated photo of this tree found, so flagged. Burbank bought the farm in 1885; the Society saved the three-acre remnant in the 1970s. Burbank's Santa Rosa Cedar of Lebanon over his grave was removed in 1989 (root disease): do not use it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

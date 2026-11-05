@@ -1,0 +1,400 @@
+{
+  "city": "Tucson",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Tucson's oldest planted trees are a row of olives a professor put in on 1 April 1895, on the University of Arizona campus, as a trial of which varieties would grow here. The campus is a free outdoor arboretum, and a walk across it takes in a cork oak from before 1940, a sycamore grown from a seed that went to the Moon, a baobab and a calabash tree that fruits from its trunk. West of downtown, Phina's Tree, a river red gum, was called the city's largest tree by a 2009 sign.",
+  "meta_description": "Tucson's old trees: the 1895 Olive Walk, a Moon tree, a baobab and a cork oak on the University of Arizona campus, and Phina's Tree on Congress Street.",
+  "question_meta": "Tucson's oldest mapped trees are the Olive Walk on the University of Arizona campus, a row of olives planted on 1 April 1895.",
+  "question_answer": "The oldest trees we map in Tucson are the olives of the Olive Walk on the University of Arizona campus, planted on 1 April 1895 by Robert Forbes, head of the Agricultural Experiment Station, which makes them more than 125 years old. Forbes gave the date himself in a 1934 talk, and the campus arboretum's records agree. The oldest single tree we can date with a sourced year is the African sumac between Maricopa and Yuma Halls, planted in 1928 from seed collected in South Africa in 1919.",
+  "question_context": "Most of these trees stand on the University of Arizona campus, whose grounds are a designated arboretum and free to walk at any hour. Start at the Olive Walk, just north of Old Main, where gnarled olives line an east-west path for about 200 metres. Old Main is also where you find the date palm Iraqi students gave in 1955 in honour of Dean Eckert. South of the Engineering Building, a cork oak planted before 1940 stands a few steps from the campus's original floss silk tree, which flowers pink in October and November. Further east are the Moon tree sycamore by the Kuiper building, the calabash at the Main Library and the baobab at the Administration Building, both young but rare: the arboretum says the calabash is the only one of its size in Tucson. The live oak at the south end of the Park Avenue Green Belt is the largest of its kind in the city. Off campus, about three kilometres west on Congress Street, Phina's Tree, a river red gum, measured 95 feet tall on a 2009 city sign.",
+  "hero_tree_id": "tus_010",
+  "oldest_tree_id": "tus_010",
+  "faq": [
+    {
+      "q": "Is the University of Arizona campus arboretum free?",
+      "a": "Yes. The trees stand on the open campus grounds, with no entry fee and no permission needed."
+    },
+    {
+      "q": "What is the Olive Walk?",
+      "a": "A row of olive trees just north of Old Main, planted on 1 April 1895 as a variety trial by Robert Forbes. More than twelve cultivars survive in their original places."
+    },
+    {
+      "q": "Is there a Moon tree in Tucson?",
+      "a": "Yes. A sycamore east of the Kuiper Sciences Building on the University of Arizona campus grew from a seed flown on Apollo 14 in 1971. A plaque from 1976 tells its story."
+    },
+    {
+      "q": "Where is Phina's Tree?",
+      "a": "On the south side of West Congress Street, just west of the freeway and the Santa Cruz River, about three kilometres west of the campus. A 2009 city sign called it Tucson's largest tree."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tus_001",
+      "name": "Largest Southern Live Oak in Tucson",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 70 years",
+      "age_min": 65,
+      "age_max": 75,
+      "age_basis": "source",
+      "location": {
+        "address": "Park Avenue Green Belt, south end, University of Arizona campus",
+        "latitude": 32.231082,
+        "longitude": -110.956656,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "The biggest southern live oak in Tucson is about seventy years old, which says more about how fast this species can grow than about how long it has stood. The University of Arizona's Campus Arboretum, which looks after it, says Steve Fazio planted it around 1950. The arboretum's own tree map records an install date nearer 1957. Both come from the same owner, and neither is obviously wrong, so the honest age is roughly seventy, give or take a few years.\n\nIt stands at the south end of the Park Avenue Green Belt, an evergreen oak that keeps its leaves through the Tucson winter. In 2002 it was named a Great Tree of Arizona, and the arboretum lists it both as a university heritage tree and on its register of the state's magnificent trees, as the largest of its kind in the city.\n\nIt has spent its whole life on a working campus, shading seventy years of students cutting across the green belt between classes.\n\nWhat nobody has published is how big it actually is. The arboretum's certificates carry no girth or height that we could read, so the largest live oak in Tucson is, for now, largest without a number. If you stand under it with a tape measure, tell us what you find.",
+      "how_to_recognise": "You can recognise it as the big evergreen oak at the south end of the Park Avenue Green Belt, the largest southern live oak in Tucson according to the campus arboretum.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://www.arboretum.arizona.edu/great-trees-arizona",
+        "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_002",
+      "name": "Engineering Cork Oak",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "over 85 years",
+      "age_min": 85,
+      "age_max": 110,
+      "age_basis": "source",
+      "location": {
+        "address": "South side of the Engineering Building, University of Arizona campus",
+        "latitude": 32.232508,
+        "longitude": -110.95347,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "This tree was in the ground on the University of Arizona campus before 1940, and its bark is the same stuff that stops a wine bottle. This is a cork oak, the Mediterranean species whose thick, spongy outer bark is stripped for cork in Portugal and Spain. Here nobody harvests it, so the cork has simply kept building.\n\nThe Campus Arboretum says it was planted before 1940, which makes it more than 85 years old, and calls it the largest cork oak on campus. It was named a Great Tree of Arizona in 2004 and is listed as a university heritage tree. The arboretum does not give a firmer planting year, and we have not sharpened it. Before 1940 is all the record says.\n\nIt stands on the south side of the Engineering Building, which means it has watched generations of engineering students go in and out of the same doors. Its neighbour a few steps away is the floss silk tree, the campus's original, so the two make one short stop with two very different trunks, one thick with soft cork, the other green and studded with thorns.\n\nNo girth or height has been published. The age is the arboretum's, the size is still an open question, and if you know either better, tell us.",
+      "how_to_recognise": "You can recognise it by the thick, fissured cork bark, the only cork oak of this size on campus. It stands on the south side of the Engineering Building, a few steps from the floss silk tree.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://www.arboretum.arizona.edu/great-trees-arizona",
+        "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/719133791/original.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Cheng-Te Hsu",
+        "attribution_url": "https://www.inaturalist.org/observations/392412540",
+        "status": "approved",
+        "width": 1542,
+        "height": 2048
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Photo pass 2026-11-04 (approved): iNaturalist observation of Quercus suber 4 m from our pin; the cork-barked trunk and crown fill the frame against the brick Engineering building, daylight."
+    },
+    {
+      "id": "tus_003",
+      "name": "Engineering Floss Silk Tree",
+      "species": "Silk Floss Tree (Ceiba speciosa)",
+      "age_estimate": "roughly 75 years",
+      "age_min": 70,
+      "age_max": 80,
+      "age_basis": "source",
+      "location": {
+        "address": "South of the Engineering Building, University of Arizona campus",
+        "latitude": 32.232558,
+        "longitude": -110.953421,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "The University of Arizona's records call this the original floss silk tree of the campus, and the Campus Arboretum's heritage list calls it the largest in Tucson. Another floss silk tree was moved to the Bio West area in 1984; this is the one that has stood here all along.\n\nThe trunk is the reason to come. A floss silk tree, native to South America, grows a green, swollen trunk studded with thick prickles, more like something from a cactus garden than a shade tree. In autumn the crown fills with large pink flowers with cream centres.\n\nThe arboretum says it was reportedly planted in the late 1940s or early 1950s, so it is roughly 75 years old, and it was named a Great Tree of Arizona in 2003. Its records use the older name Chorisia insignis, which you may still see on a label; botanists now call it Ceiba speciosa.\n\nIt stands just south of the Engineering Building, close to the campus's largest cork oak, which makes this corner a good place to see two trunks that look nothing like what most people expect bark to be. No height or girth has been published, so if you measure it, tell us.",
+      "how_to_recognise": "You can recognise it by the swollen green trunk studded with thick prickles, and by pink flowers in autumn. It stands just south of the Engineering Building, near the cork oak.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://www.arboretum.arizona.edu/great-trees-arizona",
+        "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "flowers",
+        "label": "October and November, when large pink flowers cover the crown"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_004",
+      "name": "Moon Tree Sycamore",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "about 55 years",
+      "age_min": 50,
+      "age_max": 60,
+      "age_basis": "derived",
+      "location": {
+        "address": "East of the Kuiper Sciences Building, University of Arizona campus",
+        "latitude": 32.232335,
+        "longitude": -110.947439,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "This sycamore grew from a seed that went to the Moon. In 1971 the Apollo 14 crew carried several hundred tree seeds in orbit around the Moon, and when they came home the seedlings were planted across the United States. The University of Arizona's Campus Arboretum says this tree is one of them, and a plaque put up in 1976 says the same.\n\nThat makes it about fifty years old, young for a campus heritage tree, and the reason to stand here is the story rather than the size. Moon trees were planted at state capitols, universities and parks in the 1970s, and many were not labelled well; some have since been lost or their identity doubted. This one has kept its plaque and its place in the arboretum's records.\n\nThere is one small dispute. The arboretum's heritage page names it an American sycamore, while its list of the state's magnificent trees records it as an Arizona sycamore, the native tree of the canyons outside town. We list it under the first, but the sources do not agree, so read it as a sycamore whose exact species is still open.\n\nIt stands east of the Kuiper Sciences Building, which suits a tree that, as a seed, went further from Earth than almost anyone reading this.",
+      "how_to_recognise": "You can recognise it by the plaque, installed in 1976, saying it grew from a seed flown to the Moon on Apollo 14. It stands east of the Kuiper Sciences Building.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_005",
+      "name": "Eckert Date Palm",
+      "species": "Date Palm (Phoenix dactylifera)",
+      "age_estimate": "roughly 70 years",
+      "age_min": 65,
+      "age_max": 80,
+      "age_basis": "source",
+      "location": {
+        "address": "East of Old Main, University of Arizona campus",
+        "latitude": 32.232076,
+        "longitude": -110.953099,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "In 1955 a group of Iraqi students gave the University of Arizona a date palm to thank one of their teachers. The tree honoured Dr Phillip Eckert, a dean on campus, and it still stands east of Old Main with an interpretive sign telling that story. The Campus Arboretum's records note it in four words, honouring Dean Eckert, 1955.\n\nIraq has grown dates for thousands of years, so the gift was not a random choice. It was a piece of home, planted in another desert.\n\nHow old the palm itself is, nobody quite knows. The gift year is documented, but a palm can be planted already grown, and the arboretum's heritage page puts it at around 75 years. Seventy or so is the honest range.\n\nIn seven decades it has watched the campus grow around Old Main, the university's first building. No height has been published for it, and nobody we could find recorded the names of the students who gave it. If you know them, tell us.",
+      "how_to_recognise": "You can recognise it as the tall date palm with an interpretive sign about the 1955 gift from Iraqi students. It stands east of Old Main.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_006",
+      "name": "Salvaged Campus Fig",
+      "species": "Common Fig (Ficus carica)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "location": {
+        "address": "East of the Gould-Simpson Building, University of Arizona campus",
+        "latitude": 32.229482,
+        "longitude": -110.954538,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "This fig has lived at two addresses. The University of Arizona's Campus Arboretum says it first grew at a private home in the 1930s, and in 1989 the tree was salvaged and moved to the campus, east of the Gould-Simpson Building. Moving a mature fig is not a small job, and somebody thought this one was worth the trouble.\n\nIt was. The arboretum now counts it among its heritage trees and lists it on its register of Arizona's magnificent trees, alongside oaks and olives with far longer pedigrees on campus.\n\nWhat the records do not say is how old it is. The 1930s date belongs to the house where it grew, not to a planting record for the tree, so it could have been young then or already established. We have not guessed. What we can say is that it outlived the garden it grew up in and found a second life among lecture halls.\n\nNobody has published its size either, or whose garden it stood in. If you know the house it came from, or have a photo of it there, tell us. That is the half of its story still missing.",
+      "how_to_recognise": "You can recognise it as the common fig east of the Gould-Simpson Building, a tree the arboretum moved here in 1989 from a private garden where it had grown since the 1930s.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_008",
+      "name": "Phina's Tree",
+      "species": "River Red Gum (Eucalyptus camaldulensis)",
+      "age_estimate": "roughly 90 to 115 years",
+      "age_min": 90,
+      "age_max": 115,
+      "age_basis": "source",
+      "girth_cm": 518,
+      "height_m": 29,
+      "location": {
+        "address": "South side of West Congress Street, just west of Interstate 10 / the Santa Cruz River, Tucson",
+        "latitude": 32.220533,
+        "longitude": -110.9829,
+        "neighbourhood": "Menlo Park"
+      },
+      "story": "In 2009 a city sign called this Tucson's largest tree, 95 feet tall and 17 feet round, about 29 metres and more than five metres of trunk. It is a river red gum, an Australian eucalyptus, standing on the south side of West Congress Street just west of the freeway and the Santa Cruz River, in the Menlo Park neighbourhood.\n\nThe same sign gave its age as approximately 90 years in 2009, which would put it a little over a century old today. Treat that as the sign's estimate rather than a planting record. Local accounts of who planted it, and when, disagree with each other. The one thing every version shares is the name, Phina's Tree.\n\nWhat is not in doubt is that it has stood beside Congress Street for about a century, while Tucson grew up and out around it. A tree this tall is easy to see from a long way off, and people still log visits to it. The most recent we found is from February 2026.\n\nIt is not on the university campus, but about three kilometres west of it, an easy addition at the start or end of a campus walk. If you know the planting story first-hand, tell us.",
+      "how_to_recognise": "You can recognise it as the very tall eucalyptus with a city sign, 95 feet high and 17 feet round in 2009. It stands on the south side of West Congress Street, just west of the freeway.",
+      "verified_sources": [
+        "https://www.waymarking.com/waymarks/wmZXH2_Largest_Tree_in_Tucson_Tucson_Arizona",
+        "https://tucson.com/news/local/article_29022791-7e29-5c76-8dc8-a63dc6e29eeb.html"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_009",
+      "name": "Campus African Sumac",
+      "species": "African Sumac (Searsia lancea)",
+      "age_estimate": "roughly 95 to 100 years",
+      "age_min": 90,
+      "age_max": 100,
+      "age_basis": "source",
+      "location": {
+        "address": "Between Maricopa and Yuma Halls, University of Arizona campus",
+        "latitude": 32.233436,
+        "longitude": -110.954771,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "The first African sumac planted in Tucson came from seed picked in South Africa in 1919. That is the University of Arizona Campus Arboretum's account. The seeds were collected that year, and the tree went into the ground on campus in 1928, between Maricopa and Yuma Halls. It was named a Great Tree of Arizona in 2003.\n\nAt close to a century old, it predates almost everything around it. Its species, a small evergreen from southern Africa with narrow leaves in threes, has since become a familiar shade tree in the desert Southwest; this one is where the arboretum says it began in Tucson.\n\nThere is a complication worth knowing before you go. The arboretum's own tree records hold two candidates. The state champion list names one accession, a little to the southwest; the record carrying the heritage and Great Tree flags, with an install date around 1930, is another. Our pin uses the second, because its flags match the 1928 story, but we have marked the location as approximate until someone confirms which of the two stands between Maricopa and Yuma.\n\nIf you walk over and can tell, from a label or a plaque, which trunk it is, tell us. That settles it.",
+      "how_to_recognise": "You can recognise it as the African sumac between Maricopa and Yuma Halls, a small evergreen with narrow leaves. Our pin is approximate: look for a label linking it to the 1928 planting.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://www.arboretum.arizona.edu/great-trees-arizona",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_010",
+      "name": "The Olive Walk",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "over 125 years",
+      "age_min": 125,
+      "age_max": 135,
+      "age_basis": "source",
+      "location": {
+        "address": "Olive Walk, west side of the University of Arizona campus, north of Old Main (centre of the row)",
+        "latitude": 32.23308,
+        "longitude": -110.955246,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "On 1 April 1895, a university professor planted a row of olive trees from Santa Barbara on the west side of the campus, and many of them are still there. Robert Forbes, the first head of Arizona's Agricultural Experiment Station, recalled the date himself in a talk in 1934. The Campus Arboretum's records give the same year, 1895, for about thirty trees along this path.\n\nThey were not planted for shade. Forbes was running a variety trial, testing which olives would grow in Tucson, and the arboretum says more than twelve cultivars survive in their original places, Mission, Manzanillo and Morailo among them. The arboretum's founding director called them among the oldest trees in Tucson. They went in while Arizona was still a territory, seventeen years before statehood.\n\nThis is a walk rather than a single tree. The row runs east and west for about 200 metres just north of Old Main, and you collect it by walking it. The trunks are gnarled, the way old olives get, and every one of them is a university heritage tree.\n\nHow many olives make up the walk depends on who is counting. The arboretum's map shows about thirty along this stretch, a 2006 study sampled 35 Forbes olives, and campus-wide there are many more. In 2006 cuttings were tested against old olives at Lotusland in Santa Barbara for a genetic link. We have not seen the result.",
+      "how_to_recognise": "You can recognise it as the line of low, gnarled olives along an east-west path just north of Old Main, about 200 metres long. Walk the row; any trunk on it is part of the 1895 planting.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-olives",
+        "https://arboretum.arizona.edu/arboretum-history-virtual-tour-european-olive",
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_011",
+      "name": "Campus Baobab",
+      "species": "Baobab (Adansonia za)",
+      "age_estimate": "about 45 years",
+      "age_min": 40,
+      "age_max": 50,
+      "age_basis": "source",
+      "location": {
+        "address": "Southwest corner of the Administration Building, University of Arizona campus",
+        "latitude": 32.232588,
+        "longitude": -110.951146,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "According to a botanist at the Missouri Botanical Garden, this is the only baobab of its species flowering anywhere in the United States. The University of Arizona's Campus Arboretum repeats that claim on its heritage list, and we repeat it here as theirs rather than ours.\n\nIts road to Tucson was long. The seeds came from Madagascar and were germinated in Virginia. The seedling then waited at the Arizona-Sonora Desert Museum in a 15-gallon pot until Warren Jones put it in the ground here around 1980. That makes it about 45 years old, young by baobab standards, and the reason to come is rarity rather than age.\n\nIt was named a Great Tree of Arizona in 2002, sponsored in honour of Elizabeth Davison, the arboretum's founding director.\n\nThen came the winter of 2011. Record freezes hit Tucson and badly damaged the tree, which the arboretum has been nursing back since. We have not seen a recent photograph, so we cannot tell you how full its crown is now. A baobab in the Sonoran Desert is always a little improbable, and this one has already survived the worst winter in its life here.\n\nIt stands at the southwest corner of the Administration Building. If you visit, tell us how it looks.",
+      "how_to_recognise": "You can recognise it as the baobab, grown from Madagascar seed, at the southwest corner of the Administration Building.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://www.arboretum.arizona.edu/great-trees-arizona",
+        "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tus_012",
+      "name": "Main Library Calabash",
+      "species": "Calabash Tree (Crescentia alata)",
+      "age_estimate": "about 50 years",
+      "age_min": 45,
+      "age_max": 55,
+      "age_basis": "source",
+      "location": {
+        "address": "Southeast side of the Main Library, University of Arizona campus",
+        "latitude": 32.230552,
+        "longitude": -110.948602,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "story": "The fruits of this tree grow straight out of the trunk, and its flowers open for bats. It is a calabash tree from the west coast of Mexico, and the University of Arizona's Campus Arboretum says it is the largest of the three on campus, with no others known anywhere in Tucson.\n\nIt began as an experiment. Warren Jones put in a small tree grown from Mexican seed in the 1970s to see whether the species could live here. It did. Then in the winter of 2011 the temperature fell to 15 degrees Fahrenheit, about minus nine Celsius, and the tree died back severely. It regrew, and the arboretum restored its structure by pruning. It had been named a Great Tree of Arizona in 2002, and it is on the arboretum's register of the state's magnificent trees.\n\nAt about fifty years old it is not ancient, and nobody has published its size. The reason to come is what it does. Its fruits hang from the trunk and the larger branches, rather than out at the tips where you would expect them, an arrangement botanists call cauliflory.\n\nIt stands on the southeast side of the Main Library, a good stop for anyone who thinks they know what a tree looks like.",
+      "how_to_recognise": "You can recognise it by the fruits growing straight from the trunk and main branches. It stands on the southeast side of the Main Library.",
+      "verified_sources": [
+        "https://arboretum.arizona.edu/university-arizona-heritage-trees",
+        "https://www.arboretum.arizona.edu/great-trees-arizona",
+        "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "Walk from the central campus around Old Main; public transport to campus not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "city": "Safety Harbor",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Safety Harbor built a park around one tree and, in March 2024, asked its voters to protect both in perpetuity. The Baranoff Oak stands in the middle of downtown, a live oak with a trunk nearly 20 feet round, said to be between 300 and 500 years old and thought to be the oldest tree in Pinellas County. It was the Safety Harbor Oak until 2004, when it became the centrepiece of the park that now carries its name. Entry is free.",
+  "meta_description": "The Baranoff Oak in Safety Harbor, Florida: a live oak said to be 300 to 500 years old, the town's vote to protect it, and how to get there from Tampa.",
+  "question_meta": "How old is the Baranoff Oak in Safety Harbor? Said to be 300 to 500 years, with no ring count. What is known, and how to reach it from Tampa.",
+  "question_answer": "Somewhere between 300 and 500 years, by the estimate WUSF and a visitors' waymark both repeat, and nobody has counted its rings. WUSF, Tampa Bay's public radio station, adds that it is thought to be the oldest tree in Pinellas County. The trunk is nearly 20 feet around, about six metres, by the waymark's figure. It stands at the centre of Baranoff Park in downtown Safety Harbor, free and open.",
+  "question_context": "A range that wide is the honest shape of a live oak's age. The species grows fast when young and slows unpredictably, and big ones are rarely cored, so most ages are estimates handed from one account to the next. The Baranoff Oak's own history is better documented than its birth. It was known as the Safety Harbor Oak until 2004, when it became the centrepiece of a new pocket park and took its present name. Being on show has not always helped it. The Tampa Bay Times once reported that an effort to showcase the tree harmed it and that arborists worked to restore it, and photographs from October 2026 show it alive, its branches spreading over the park. In March 2024 WUSF reported that voters were being asked to protect the park and the tree in perpetuity. Safety Harbor is a town of its own in Pinellas County, about 20 miles west of downtown Tampa and roughly half an hour by car. PSTA buses reach it only with a change, so for most visitors it is a short drive rather than a ride.",
+  "hero_tree_id": "shb_001",
+  "oldest_tree_id": "shb_001",
+  "faq": [
+    {
+      "q": "Is the Baranoff Oak the oldest tree in Pinellas County?",
+      "a": "It is thought to be, WUSF reported in 2024. That is a belief rather than a measured record, since nobody has counted its rings, and its age is given as 300 to 500 years."
+    },
+    {
+      "q": "How do you get to the Baranoff Oak from Tampa?",
+      "a": "By car it is about 20 miles west of downtown Tampa, roughly half an hour. PSTA buses reach Safety Harbor only with a change. The oak is in Baranoff Park in the middle of downtown."
+    },
+    {
+      "q": "Why is it called the Baranoff Oak?",
+      "a": "It took the name in 2004, when it became the centrepiece of Baranoff Park. Before that it was simply the Safety Harbor Oak."
+    }
+  ],
+  "trees": [
+    {
+      "id": "shb_001",
+      "name": "The Baranoff Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "age_basis": "source",
+      "girth_cm": 600,
+      "location": {
+        "address": "Baranoff Park, downtown Safety Harbor, FL",
+        "latitude": 27.99122,
+        "longitude": -82.68868,
+        "neighborhood": "Safety Harbor (Pinellas County), outside Tampa"
+      },
+      "story": "In March 2024 the voters of Safety Harbor were asked to protect one tree in perpetuity. The question covered the Baranoff Oak and the small park around it, in the middle of downtown, and it says a lot about how a town of this size feels about a live oak said to be between 300 and 500 years old.\n\nThat range comes from WUSF, Tampa Bay's public radio station, and from a visitors' waymark, and both give it as an estimate. Nobody has counted rings. WUSF adds that it is thought to be the oldest tree in Pinellas County. Take that at the strength it is offered, as a belief rather than a record. The waymark gives the trunk as nearly 20 feet around, about six metres.\n\nFor most of its life it was simply the Safety Harbor Oak. It took its present name in 2004, when it became the centrepiece of a new pocket park. Being the centrepiece has not always been kind to it. The Tampa Bay Times once reported that an effort to show the tree off had harmed it, and that arborists worked to restore it. Photographs taken in October 2026 show it alive, its branches spreading wide over the park.\n\nBaranoff Park is free and open, a walk-up spot in the centre of town. Safety Harbor is its own place, about 20 miles west of downtown Tampa and roughly half an hour by car. Buses reach it, but only with a change.",
+      "verified_sources": [
+        "https://www.wusf.org/politics-issues/2024-03-14/baranoff-oak-safety-harbor-largest-pinellas-county-vote-preserve",
+        "https://www.waymarking.com/waymarks/wm5RGP_The_Baranoff_Oak_Safety_Harbor_FL",
+        "https://commons.wikimedia.org/wiki/File:Baranoff_Oak_spreading_branches,_Safety_Harbor,_Florida.jpg"
+      ],
+      "official_register": {
+        "name": "Live Oak Society (registry number 4760 per a search summary, not confirmed on a fetched page)",
+        "url": "https://www.waymarking.com/waymarks/wm5RGP_The_Baranoff_Oak_Safety_Harbor_FL"
+      },
+      "access": "Free. City-owned pocket park in the middle of downtown Safety Harbor, walk-up; voters were asked in March 2024 to protect the park and tree in perpetuity (WUSF).",
+      "transport": "NOT reachable from Tampa within 30 minutes by public transport. Safety Harbor is in Pinellas County about 20 miles west of downtown Tampa, roughly 30 minutes by car; PSTA buses reach it only with a change. Label as a day trip by car, and as Safety Harbor, not Tampa.",
+      "how_to_recognise": "You can recognise it as the wide-spreading live oak the park is built around, its trunk nearly 20 feet, about six metres, round. It stands at the centre of Baranoff Park in downtown Safety Harbor.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Age: WUSF (2024-03-14, fetched) 'said to be between 300 to 500 years old, thought to be the oldest in Pinellas County'; Waymarking repeats 300 to 500 and says it was named in 2004 when it became the centrepiece of the park; before that 'the Safety Harbor Oak'. Estimates only, no ring count. Girth: Waymarking 'a trunk girth of nearly 20 feet' (about 600 cm); a Tampa-area summary quoted trunk 'nearly 20 feet in diameter' and ~800 tons, which is implausible for diameter, so girth is the reading used; the figure is from Waymarking only (a finding aid), keep as approximate. Pin: Waymarking N 27 59.473 W 082 41.321 (27.99122, -82.68868), published for the tree itself; lifecheck RECENT (iNaturalist 244121326, 2024-09-25, not confirmed same trunk). Alive: Commons photographs 'Baranoff Oak spreading branches' and 'trunk and branches' dated 2026-10-12 by a Commons user, CC BY 4.0, show a living tree. Health history: Tampa Bay Times reported earlier that an attempt to showcase the tree harmed it and arborists worked to restore it (headline only seen); the tree is alive in the Oct 2026 photographs. Namesake name varies in sources (Salem or Stephen Baranoff), omit a first name. Single dated-news source plus finding aid; flagged for transport and one-source basis. PHOTO: viewed by the dispatching session 2026-11-04 at 960 px: trunk and spreading limbs fill the frame, daylight, colour, filename names the tree; approved. Moved out of Tampa into its own place, Safety Harbor (not within 30 minutes of Tampa by public transport).",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Baranoff_Oak_spreading_branches%2C_Safety_Harbor%2C_Florida.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Taty2007 / Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Baranoff_Oak_spreading_branches,_Safety_Harbor,_Florida.jpg",
+        "status": "approved",
+        "width": 5712,
+        "height": 3594
+      }
+    }
+  ]
+}

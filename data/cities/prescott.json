@@ -1,0 +1,136 @@
+{
+  "city": "Prescott",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Prescott has two Arizona white oaks estimated at more than 300 years old, both within a few minutes' walk of the Courthouse Plaza. One, on Cortez Street, was recognised in 1976 as alive at the time of the American Revolution. The other stands in a library car park the city built around it. On the plaza itself, the Statehood Tree, a deodar cedar planted in 1910 or 1912 depending on whom you ask, doubles as the town's Christmas tree.",
+  "meta_description": "Prescott's old trees: two Arizona white oaks over 300 years old near the Courthouse Plaza, and the Statehood Tree, planted in 1910 or 1912.",
+  "question_meta": "Prescott's oldest mapped tree is the Bicentennial Tree on Cortez Street, an Arizona white oak a 1976 plate estimated at 340 years old.",
+  "question_answer": "The oldest tree we map in Prescott is the Bicentennial Tree, an Arizona white oak on Cortez Street. A brass plate added to its 1976 marker estimates it at 340 years old then; later press gives 300 or more than 350, so we put it at roughly 300 to 360. The oak by the public library is close behind, estimated by its marker at over 300 years. Neither age comes from a ring count.",
+  "question_context": "All three trees are on foot from the Courthouse Plaza, the town's public square, and free to see. The Statehood Tree stands at the plaza's northeast corner on the Gurley Street side, beside a bronze plaque on a granite boulder placed by Cub Scouts in 1960. That plaque dates the planting to 14 February 1912, Arizona's statehood day, while the Sharlot Hall Museum, citing a 1910 newspaper, says the cedar was planted on 4 July 1910. The state lists it as a witness tree. The Bicentennial Tree is about three minutes south on Cortez Street, beside the old City Hall block, and stands behind protective fencing while that block is redeveloped, so you see it from the pavement. The library oak is about six minutes away, in a small park area in the southeast corner of the library car park, reached from South Alarcon Street. A marker there says the city bought the land in 1998 and laid out the lot to keep the tree.",
+  "hero_tree_id": "pct_002",
+  "oldest_tree_id": "pct_002",
+  "faq": [
+    {
+      "q": "What is the Statehood Tree in Prescott?",
+      "a": "A deodar cedar at the northeast corner of the Courthouse Plaza, planted in 1910 or 1912; the plaque and the local museum disagree on the year. It is also the town's Christmas tree."
+    },
+    {
+      "q": "Can I get close to the Bicentennial Tree?",
+      "a": "For now you see it from the pavement on Cortez Street. It stands behind protective fencing while the old City Hall block beside it is redeveloped."
+    },
+    {
+      "q": "How old are Prescott's oak trees?",
+      "a": "Both are estimates rather than ring counts. The Cortez Street oak was put at 340 years old in 1976, and the library oak's marker says over 300."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pct_001",
+      "name": "Prescott Statehood Tree",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "over a century",
+      "age_min": 110,
+      "age_max": 116,
+      "age_basis": "source",
+      "location": {
+        "address": "Yavapai County Courthouse Plaza, 120 S Cortez St, Prescott, AZ 86303 (northeast corner of the plaza, Gurley Street side)",
+        "latitude": 34.54183,
+        "longitude": -112.46917,
+        "neighbourhood": "Downtown Prescott"
+      },
+      "location_site": {
+        "name": "Yavapai County Courthouse Plaza",
+        "radius_m": 50
+      },
+      "story": "Prescott cannot agree on when it planted its Statehood Tree, and the plaque at its foot may have the date wrong. The bronze plaque, set on a granite boulder by Prescott Cub Scouts in 1960, says the tree went in on 14 February 1912, the day Arizona became a state. The Sharlot Hall Museum disagrees. Its history column, citing the Journal Miner newspaper of June 1910, says a deodar cedar arrived by express from the Sierra Nevada that month and was planted on the Courthouse Plaza at a Fourth of July ceremony in 1910, and that the tree standing there today is that one.\n\nOther accounts muddy it further. Arizona Highways credits Boy Scouts with a 1912 cedar. A Waymarking entry calls the tree a pine planted by the Masonic Lodge. The state's register of Arizona's magnificent trees lists it as a deodar cedar and a witness tree, standing when Arizona became a state. We give it as more than a century old, planted in 1910 or 1912.\n\nWhichever year is right, it has stood at the corner of the plaza through the whole of Arizona's statehood. It is also the town's Christmas tree, lit each winter in front of the county courthouse.\n\nIt stands at the northeast corner of the plaza, on the Gurley Street side, free to visit at any hour.",
+      "how_to_recognise": "You can recognise it by the bronze plaque on a granite boulder at its foot, placed by Cub Scouts in 1960. It stands at the northeast corner of the Courthouse Plaza, on the Gurley Street side.",
+      "verified_sources": [
+        "https://archives.sharlothallmuseum.org/articles/days-past-articles/1/grand-lady-the-plaza-bandstand-is-100-years-old-part-2",
+        "https://www.waymarking.com/waymarks/WM5EMY_Prescott_Statehood_Tree",
+        "https://dffm.az.gov/node/362",
+        "https://www.arizonahighways.com/article/great-big-trees"
+      ],
+      "official_register": {
+        "name": "Arizona's Magnificent Trees (Witness/Heritage Tree AZ0019 'Deodar Cedar', nominated by City of Prescott, 2011; also AZ0055 'Prescott Deodar Cedars', Heritage, 2002)",
+        "url": "https://dffm.az.gov/node/1029"
+      },
+      "access": "Free, open at any time: the Courthouse Plaza is a public square in the middle of downtown Prescott. Also the town's Christmas tree.",
+      "transport": "On foot from anywhere downtown; Prescott has no rail; local Prescott Transit bus serves the Plaza area",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pct_002",
+      "name": "Bicentennial Tree (Cortez Street oak)",
+      "species": "Arizona White Oak (Quercus arizonica)",
+      "age_estimate": "roughly 300 to 350 years",
+      "age_min": 300,
+      "age_max": 360,
+      "age_basis": "source",
+      "location": {
+        "address": "233 S Cortez St (east side, between S Goodwin St and W Carleton St), Prescott, AZ 86303",
+        "latitude": 34.53898,
+        "longitude": -112.4688,
+        "neighbourhood": "Downtown Prescott (former City Hall block)"
+      },
+      "story": "In 1976, as the United States turned 200, arborists recognised this oak as older than the country. A marker at its foot says the International Society of Arboriculture and the National Arborist Association honoured it that year as a tree that was alive in the time of the American Revolution. A brass plate added to the marker puts it at an estimated 340 years old.\n\nThat 1976 figure would make it nearly 390 today. Later press coverage gives 300, or more than 350. None of these is a ring count, so we give a range of roughly 300 to 360 years and keep it broad. Any of them makes it one of the oldest trees you can stand beside in downtown Prescott.\n\nIt is an Arizona white oak, a slow-growing native, and it has stood on this stretch of Cortez Street since long before there was a street, a town or a territory. The state's register of Arizona's magnificent trees lists an Arizona white oak in Prescott as a witness and heritage tree, which the local paper connects to this one. Locals call it the Bicentennial Tree, the Centennial Tree or the Revolutionary Tree.\n\nThe old City Hall block beside it is being redeveloped, and the oak stands behind protective fencing, so for now you look at it from the pavement.",
+      "how_to_recognise": "You can recognise it by the 1976 marker at its foot with a brass plate reading 'Arizona White Oak estimated 340 years old'. It stands on Cortez Street beside the old City Hall block.",
+      "verified_sources": [
+        "https://www.hmdb.org/m.asp?m=18861",
+        "https://www.dcourier.com/news/developer-city-outline-measures-to-protect-historic-centennial-tree-during-old-city-hall-demolition/article_405028de-ae1a-47de-843d-8a200007dd68.html",
+        "https://www.dcourier.com/news/bicentennial-tree-is-alive-not-out-of-the-woods-yet/article_b8380e59-1c38-4846-9507-f51efd0bf365.html"
+      ],
+      "official_register": {
+        "name": "Arizona's Magnificent Trees (Witness/Heritage Tree AZ0020 'Arizona White Oak', nominated by City of Prescott, 2011; the register row has no address, so the match to this tree rests on the Courier calling it the centennial witness tree)",
+        "url": "https://dffm.az.gov/node/1029"
+      },
+      "access": "Free: stands on the public pavement edge of S Cortez Street next to the former City Hall site, currently behind protective fencing/netting during redevelopment (view from the street).",
+      "transport": "On foot from the Courthouse Plaza, about 3 minutes",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pct_003",
+      "name": "Prescott Public Library oak",
+      "species": "Arizona White Oak (Quercus arizonica)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 400,
+      "age_basis": "source",
+      "location": {
+        "address": "South of Prescott Public Library, 215 E Goodwin St, Prescott, AZ 86303 (southeast corner of the parking lot, reached from S Alarcon St)",
+        "latitude": 34.53923,
+        "longitude": -112.46618,
+        "neighbourhood": "Downtown Prescott"
+      },
+      "story": "When Prescott built a car park here, it built it around an oak. A marker by the library says the city bought the property in 1998 and laid out the parking lot so the tree could stay, in a small park area of its own in the southeast corner.\n\nThe same marker gives the reason. The tree is an Arizona white oak, estimated to be over 300 years old, and the species grows slowly and may live to 500. That estimate is the marker's alone, and nobody has published a girth or a ring count, so take over 300 as the claim rather than a measurement.\n\nIf it is right, the oak was already old when Prescott was founded in the 1860s as the capital of the new Arizona Territory. It shares the age bracket with another Arizona white oak about 250 metres west on Cortez Street, which a 1976 marker calls 340 years old. Walking between the two takes a few minutes.\n\nThe city announced a rebuild of the lot in 2024. The oak is free to visit, reached from South Alarcon Street, and if you go, tell us how it came through the works.",
+      "how_to_recognise": "You can recognise it as the one big oak in a small park area inside the library car park, in its southeast corner. A library history marker stands nearby.",
+      "verified_sources": [
+        "https://www.hmdb.org/m.asp?m=52912",
+        "https://prescott-az.gov/wp-content/uploads/2024/05/CIP-Library_Parking_Lot_Reconstruction_Press_Release-20240531.pdf"
+      ],
+      "access": "Free, public: the oak stands in a small park area inside the library's public parking lot.",
+      "transport": "On foot from the Courthouse Plaza, about 6 minutes",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

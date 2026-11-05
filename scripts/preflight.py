@@ -67,6 +67,11 @@ def check_city(path):
     # The count a reader sees: an app-only tree (findable.app_only, APP FIRST
     # 2026-11-05) is not on the city page, so the prose must not count it.
     n = sum(1 for t in d.get("trees", []) if not app_only(t))
+    # A place whose every tree is app-only has no web page; its prose is read
+    # in the app only, beside all its trees, so it counts them all (found
+    # 2026-11-05 when the daily publish opened 46 app-only US places).
+    if n == 0:
+        n = len(d.get("trees", []))
     out = []
 
     intro = (d.get("intro") or "").strip()

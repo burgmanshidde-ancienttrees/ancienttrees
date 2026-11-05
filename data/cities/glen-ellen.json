@@ -1,0 +1,99 @@
+{
+  "city": "Glen Ellen",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Two trees in Jack London State Historic Park, above the village of Glen Ellen. Jack's Oak, a coast live oak put at nearly 400 years, spreads beside the cottage where Jack and Charmian London lived, and it was nearly felled in 2013 before tests gave it more time. A walk of about 3.5 miles there and back reaches the Grandmother Tree, a redwood the park estimates at 1,800 to 2,000 years, a survivor of the giants that once surrounded Glen Ellen.",
+  "meta_description": "Two old trees in Jack London State Historic Park, Glen Ellen: the Grandmother Tree, a redwood of up to 2,000 years, and Jack's Oak by the cottage.",
+  "question_meta": "Glen Ellen's oldest tree is the Grandmother Tree, a coast redwood in Jack London State Historic Park estimated at 1,800 to 2,000 years.",
+  "question_answer": "The oldest tree in Glen Ellen is the Grandmother Tree, a coast redwood on the Ancient Redwood Trail in Jack London State Historic Park. The park estimates it at 1,800 to 2,000 years; that is its estimate, not a ring count. It is about a 3.5 mile round trip on foot from the park, with a climb of around 200 feet.",
+  "question_context": "Both trees are inside Jack London State Historic Park, which California State Parks runs with Jack London Park Partners. The park opens daily from 9 to 5. Day use is listed at $10 a car on its fees page, with $15 reported from June 2026, so check. There is no public transport to the gate; it is about five minutes by car from Glen Ellen village and twenty from Sonoma.\n\nJack's Oak is the easy one, a short walk from the Beauty Ranch car park, beside the London Cottage. London bought his first parcels here in 1905. The oak is old and weakened by fungus, and the newest sighting we have is from February 2025, so tell us how it looks if you go. A seedling from its acorns grows beside it.\n\nThe Grandmother Tree takes the afternoon. From the Lake, take the Vineyard Trail, cross Asbury Creek, and at the three-way junction with the Fern Lake Trail follow the small centre path past a picnic table and hitching posts. The park gives it a diameter of about 14 feet, though others say 14 feet around. Dogs are not allowed on the back-country trails.",
+  "hero_tree_id": "snm_001",
+  "oldest_tree_id": "snm_001",
+  "faq": [
+    {
+      "q": "How old is the Grandmother Tree?",
+      "a": "The park estimates 1,800 to 2,000 years. It is an estimate rather than a ring count, so read it as a range."
+    },
+    {
+      "q": "How long is the walk to the Grandmother Tree?",
+      "a": "About 3.5 miles there and back, moderate, with a climb of around 200 feet, on the Ancient Redwood Trail. Dogs are not allowed on the back-country trails."
+    },
+    {
+      "q": "Is Jack's Oak still standing?",
+      "a": "As of a visitor's record from February 2025, yes. It was weakened by fungal infection and nearly removed in 2013, but tests showed it could stand a while longer, and a seedling from its acorns was planted beside it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "snm_001",
+      "name": "The Grandmother Tree",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "roughly 1,800 to 2,000 years",
+      "age_min": 1800,
+      "age_max": 2000,
+      "age_basis": "source",
+      "location": {
+        "address": "Ancient Redwood Trail, Jack London State Historic Park, 2400 London Ranch Rd, Glen Ellen, CA 95442",
+        "latitude": 38.34424,
+        "longitude": -122.54197,
+        "neighbourhood": "Glen Ellen"
+      },
+      "story": "The park that keeps this redwood puts its age at 1,800 to 2,000 years. If that is right, it was well over 1,600 years old when Jack London bought his first parcels of this park's land in 1905.\n\nThat figure is the park's estimate, not a ring count, so read it as a range rather than a birthday. The same goes for its size. The park describes it as about 14 feet in diameter, while other outlets say 14 feet around, which is a very different tree.\n\nWhat is not in doubt is the setting. According to the park, redwoods surrounded Glen Ellen about two hundred years ago, and most of the giants are gone. The Grandmother Tree, as it is nicknamed, is one of the survivors, the only giant at the end of its spur trail, with a small shady bench beside it.\n\nIt is a proper walk, about 3.5 miles there and back with a climb of around 200 feet. From the Lake, turn left onto the Vineyard Trail and cross Asbury Creek. At the three-way junction with the Fern Lake Trail, take the small centre path past a picnic table and hitching posts.\n\nThe park opens daily from 9 to 5. Day use was $10 a car on the park's fees page, with a rise to $15 announced from June 2026, so check. Dogs are not allowed on the back-country trails, and you will need a car to reach the gate.",
+      "how_to_recognise": "You can recognise it as the very wide redwood beside a small shady bench, the only giant at the end of its spur. It stands past the picnic table and hitching posts, off the Fern Lake Trail junction.",
+      "verified_sources": [
+        "https://jacklondonpark.com/ancient-redwood-hiking-trail/",
+        "https://www.inaturalist.org/observations/12214547",
+        "https://jacklondonpark.com/?p=47178"
+      ],
+      "access": "Inside Jack London State Historic Park (California State Parks, run with Jack London Park Partners). Park open daily 9am-5pm; day-use entry $10 per vehicle on the park's own fees page, a June 2026 news item says $15 from 1 June 2026, so check. About 3.5 mile round trip on foot, moderate, 200 ft climb; dogs not allowed on back-country trails.",
+      "transport": "No public transport to the park gate; car from Glen Ellen village (about 5 min) or from Sonoma (about 20 min drive).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Owner of the ground (the park) gives the figures: about 14 foot diameter (about 4.3 m; park wording is 'diameter', other outlets say '14 feet around'; no girth_cm recorded because of that conflict), estimated 1,800 to 2,000 years old, nicknamed the Grandmother Tree. The park describes it as a surviving old-growth giant: redwoods once surrounded Glen Ellen about 200 years ago and most of the giants no longer exist (park events page). Directions per the park: from the Lake turn left at the Vineyard Trail, cross Asbury Creek, at the three-way intersection with Fern Lake Trail take the small centre trail past the picnic table and hitching posts. Pin from an iNaturalist observation (2018-05-05, user kimwagner) whose own note names the tree; accuracy not stated and the spot is under dense canopy, so precision kept approximate; the tree is the only giant at the end of that spur. Alive check: park still runs guided Ancient Redwood hikes (event dated 2024-11-27) and lists the trail as current. Age is the park's estimate, not a ring count. Flagged: one source plus the iNaturalist note, the second source is the same owner.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "snm_002",
+      "name": "Jack's Oak",
+      "species": "Coast Live Oak (Quercus agrifolia)",
+      "age_estimate": "about 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "age_basis": "source",
+      "location": {
+        "address": "Beside the Jack London Cottage, Beauty Ranch, Jack London State Historic Park, 2400 London Ranch Rd, Glen Ellen, CA 95442",
+        "latitude": 38.354725,
+        "longitude": -122.547114,
+        "neighbourhood": "Glen Ellen"
+      },
+      "story": "In 2013 this oak was scheduled to come down. A year earlier it had dropped a large limb across a fence, and a fungal infection had been weakening it for some time. Then lab tests showed it could stand a while longer, and instead of a felling there was a planting. A seedling grown from its acorns went into the ground beside it in a ceremony, to carry on the old tree's line.\n\nJack's Oak is the huge, spreading coast live oak beside the cottage where Jack and Charmian London lived on their ranch. London bought his first parcels of land here in 1905. Local reporting puts the oak at nearly 400 years old, so it was close to three centuries old when he arrived, and it has outlived him by more than a century. Nobody has published its girth or height. Other seedlings from its acorns went to Quarryhill Botanical Garden and to the public.\n\nIt is an old tree in decline. A 2021 walk notice promised an update on its condition, and the most recent sighting we have is a visitor's record from February 2025. If you go, tell us how it looks.\n\nIt is a short walk from the Beauty Ranch car park, inside Jack London State Historic Park. The park opens 9 to 5; day use is $10 a car on the park's fees page and reported at $15 from June 2026, so check. The cottage itself opens noon to 4.",
+      "how_to_recognise": "You can recognise it as the huge spreading coast live oak right beside the London Cottage, with a young seedling grown from its acorn planted nearby. It stands on Beauty Ranch.",
+      "verified_sources": [
+        "https://www.sonomanews.com/article/news/jacks-oak-finds-new-life-in-glen-ellen/",
+        "https://www.sonomanews.com/2021/10/03/jack-london-hikes-to-the-heritage-trees",
+        "https://www.inaturalist.org/observations/262977178"
+      ],
+      "access": "Inside Jack London State Historic Park (California State Parks). Park open daily 9am-5pm; day-use entry $10 per vehicle on the park's fees page, $15 from 1 June 2026 per a news item, so check. Short walk from the Beauty Ranch car park; the cottage is open noon-4pm.",
+      "transport": "No public transport to the park gate; car from Glen Ellen village (about 5 min) or from Sonoma (about 20 min).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Sonoma News (2 Feb 2015): the huge spreading coast live oak beside the cottage where Jack and Charmian London lived, nearly 400 years old, weakened by fungal infection; dropped a large limb across a fence in 2012 and removal was planned in 2013, then lab tests showed it could stand for a while and a seedling was planted in a ceremony to carry on its legacy (the article gives no measurements). Oct 2021 Sonoma News notice for a heritage tree walk still calls it 'the 400-year-old' Jack's Oak and promises a condition update (the update itself was not found). Alive evidence: iNaturalist observation 262977178, 23 Feb 2025, identified Coast Live Oak at 38.354725,-122.547114 with the Press Democrat article linked in the note; the Jack London Cottage (OSM way 462437537) sits at 38.35482,-122.54683, about 25 m away. Flagged because the tree was declared declining and the newest confirmation is Feb 2025; a visit-time check is wise. Jack London bought his first parcels here in 1905. Seedlings from its acorns were distributed to Quarryhill Botanical Garden and the public. No girth or height in the sources.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Tree_and_cottage_-_Jack_London%27s_Cottage_-_DSC03862.JPG",
+        "license": "CC0",
+        "attribution": "Daderot",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Tree_and_cottage_-_Jack_London%27s_Cottage_-_DSC03862.JPG",
+        "status": "approved",
+        "width": 5472,
+        "height": 3648
+      },
+      "paid_entry": true
+    }
+  ]
+}

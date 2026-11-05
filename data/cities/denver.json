@@ -1,0 +1,59 @@
+{
+  "city": "Denver",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "In City Park, Denver keeps an elm with a plaque saying it grew from a cutting of the tree at Shakespeare's grave in Stratford. Wikipedia dates the planting to 23 April 1916, three hundred years to the day after Shakespeare died, though that part of the article carries no source, and the Stratford lineage has never been proven. It stands in the southeast part of the park, near 17th Avenue and Colorado Boulevard, free to visit.",
+  "meta_description": "Denver's Shakespeare Elm in City Park, said by its plaque to come from the tree at Shakespeare's grave and dated to 1916.",
+  "question_meta": "Denver's oldest mapped tree is the Shakespeare Elm in City Park, dated to 23 April 1916.",
+  "question_answer": "The oldest tree we map in Denver is the Shakespeare Elm in City Park, a little over 110 years old if the planting date of 23 April 1916 is right. That date comes from Wikipedia's history of the park, in a passage without a source. Its plaque says it grew from a cutting of the tree at Shakespeare's grave, a claim nobody has proved.",
+  "question_context": "City Park is a free public park, open at all times, and buses run along both Colorado Boulevard and 17th Avenue. The elm stands in the southeast part of the park, near the corner of 17th Avenue and Colorado Boulevard, though one walking guide also describes an approach from 14th and Colorado. Our pin is an estimate of that corner rather than a fix on the trunk, so look for the plaque on the trunk. It reads that the scion it was grown from was taken from the tree at Shakespeare's grave at Stratford-on-Avon. A local guide calls it the elm supposedly grown from a switch off the grave, which is the right amount of doubt. The species is often given as wych elm, but we have not seen that on a source we could check, so we call it an elm. If you find it, a photograph taken at the trunk would let us put the pin in the right place.",
+  "hero_tree_id": "dnv_001",
+  "oldest_tree_id": "dnv_001",
+  "faq": [
+    {
+      "q": "Where is the Shakespeare Elm in Denver?",
+      "a": "In the southeast part of City Park, near 17th Avenue and Colorado Boulevard. Look for the plaque on the trunk."
+    },
+    {
+      "q": "Did the Shakespeare Elm really come from Shakespeare's grave?",
+      "a": "That is what its plaque says. Nobody has proved it, and a local guide calls it a tree supposedly grown from a switch off the grave."
+    },
+    {
+      "q": "Is City Park free?",
+      "a": "Yes. It is a public city park, open at all times."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dnv_001",
+      "name": "Shakespeare Elm",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 110,
+      "age_basis": "source",
+      "location": {
+        "address": "City Park, near 17th Avenue and Colorado Boulevard, Denver, CO",
+        "latitude": 39.7475,
+        "longitude": -104.9407,
+        "neighbourhood": "City Park"
+      },
+      "story": "A plaque on this elm says it grew from a cutting taken from the tree at Shakespeare's grave in Stratford-upon-Avon. That is the plaque's claim, and Denver has repeated it for a century without anyone proving it. A local walking guide calls it the tree supposedly grown from a switch off Shakespeare's grave, which is about the right amount of doubt.\n\nThe planting date is better attested, though not by much. Wikipedia's history of City Park gives 23 April 1916, three hundred years to the day after Shakespeare died, though that part of the article carries no source. If that date is right, the tree is a little over 110 years old. The species is often given as wych elm, but we have not seen that on a source we could check, so read it as an elm.\n\nIt has outlasted everyone who planted it for that anniversary, and kept its plaque.\n\nFinding it takes a little work. Sources put it in the southeast part of City Park, near 17th Avenue and Colorado Boulevard, though one guide also mentions an approach from 14th and Colorado. Our pin is an estimate, not a fix on the trunk. Look for the plaque, and if you find it, a photograph with a location would let us put the pin where the tree is.",
+      "how_to_recognise": "You can recognise it by the plaque on the trunk about Shakespeare's grave at Stratford. It stands in the southeast part of City Park, near 17th Avenue and Colorado Boulevard.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/City_Park,_Denver",
+        "https://denverbyfoot.com/city-park-urban-hiking-denver/"
+      ],
+      "access": "Free; public city park, always open.",
+      "transport": "Bus on Colorado Blvd or 17th Ave; roughly 10 min walk from the City Park Esplanade stops.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

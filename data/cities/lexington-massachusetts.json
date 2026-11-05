@@ -1,0 +1,55 @@
+{
+  "city": "Lexington",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Lexington's largest measured tree is a sycamore on Massachusetts Avenue in East Lexington, 28 metres tall with a crown about 30 metres across, ranked tenth among the American sycamores on the state's big-tree register. It stands in the front garden of a private house beside a historic house sign, so it is seen from the pavement and not visited. No age is recorded. If you know more about it, or about another old tree in Lexington that anyone can walk to, tell us.",
+  "meta_description": "The Morell House sycamore on Massachusetts Avenue, Lexington: 28 metres tall and 485 cm round, on the state's big-tree register. Seen from the street.",
+  "question_meta": "Lexington's largest registered tree is an American sycamore at 627 Massachusetts Avenue, 485 cm round, seen from the pavement.",
+  "question_answer": "The largest tree in Lexington on the Massachusetts big-tree register is an American sycamore in front of 627 Massachusetts Avenue in East Lexington, measured in August 2025 at 485 cm round and 28 metres tall. It stands on private ground and is seen from the public pavement only.",
+  "question_context": "Massachusetts keeps a register of its largest trees, measured in person by state foresters and ranked within each species. The East Lexington sycamore is tenth on the state's list of American sycamores: 485 cm round, 28 metres tall and with a crown about 30 metres wide when measured in August 2025. It stands in the front garden of 627 Massachusetts Avenue, beside the sign of a historic house, and the house is a private home, so look from the pavement and do not go onto the grounds. American sycamores are easy to pick out in any season by their bark, which flakes away in patches to leave the upper trunk and branches pale, almost white. The register gives no age for the tree, and no source we have found says when it was planted. The MBTA 62 and 76 buses run along Massachusetts Avenue from Alewife station on the Red Line. If you know the tree's history, tell us.",
+  "hero_tree_id": "lxg_001",
+  "oldest_tree_id": "lxg_001",
+  "faq": [
+    {
+      "q": "Can you visit the Lexington sycamore?",
+      "a": "Only from the pavement. It stands in the front garden of a private house at 627 Massachusetts Avenue; look from the street and do not enter the grounds."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lxg_001",
+      "name": "The Morell House Sycamore",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "not documented",
+      "girth_cm": 485,
+      "height_m": 28.3,
+      "location": {
+        "address": "627 Massachusetts Avenue, Lexington, MA 02420 (front of house, beside the house sign)",
+        "latitude": 42.4282575,
+        "longitude": -71.2052403,
+        "neighbourhood": "East Lexington"
+      },
+      "story": "This sycamore is 28 metres tall and its crown is wider still, about 30 metres from side to side. The state's legacy tree register measured it in August 2025 with a trunk 485 centimetres round and ranked it tenth among the American sycamores on its Massachusetts list. It stands in the front garden of 627 Massachusetts Avenue in East Lexington, beside the sign of a historic house that maps name after Obadiah Parker and N. Ambrose Morell.\n\nThe house is a private home, so this is a tree to look at from the pavement. The register's note puts it at the front of the house, next to the house sign on the main road, which means it should be plain from the street. Stay on the public side and do not go onto the grounds.\n\nLexington is a town where a great deal is dated to 1775, and it would be easy to hang this tree on that year. Nothing we have connects it to 1775 or to any other date. Its age is not recorded, and a trunk this size, on its own, does not settle it.\n\nThe register is the only source for this tree, and its view from the street rests on the register's description rather than on a photograph. If you pass it and can confirm it, or know its history, tell us.",
+      "how_to_recognise": "You can recognise it by its size, a sycamore 28 metres tall with a crown about 30 metres wide. It stands in front of 627 Massachusetts Avenue, beside the historic house sign, seen from the pavement.",
+      "verified_sources": [
+        "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      ],
+      "official_register": {
+        "name": "Massachusetts DCR Legacy Trees 2026 (American sycamore, rank 10)",
+        "url": "https://www.mass.gov/guides/massachusetts-legacy-tree-program"
+      },
+      "access": "View-only from the public pavement on Massachusetts Avenue; the house is a private address, do not enter the grounds.",
+      "transport": "MBTA Red Line to Alewife, then bus 62 or 76 along Massachusetts Avenue into East Lexington; the tree is in front of number 627.",
+      "location_precision": "approximate",
+      "pin_source": "Nominatim geocode of the DCR address (Obadiah Parker - N. Ambrose Morell House building), 2026-11-03; pin belongs on the street in front",
+      "curation_status": "flagged",
+      "verify_notes": "One source: DCR Legacy row, Platanus occidentalis (the register cell is garbled 'Platanus┬áoccidentalis'), 191 in (485 cm), 93 ft (28.3 m), crown spread 100 ft, rank 10, measured 2025-08-08 (alive last year). Register note: 'next to Morell-Dana house sign', location text '627 Massachusetts Avenue ... front of house'. OSM geocode names the building 'Obadiah Parker - N. Ambrose Morell House' (a historic inventory house). Street visibility is inferred from the register note (front of house, beside a sign facing the road), not seen on imagery; if a reviewer can confirm on street-level imagery, drop the flag. House is private: no walking in. Another Lexington DCR row (European beech, 237 in, rank 5, 2025) has location withheld (null): not usable. No age basis. Nothing ties it to 1775.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

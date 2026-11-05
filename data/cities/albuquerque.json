@@ -1,0 +1,65 @@
+{
+  "city": "Albuquerque",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The oldest trees on the University of New Mexico campus were planted by its students. Around 1905, President William G. Tight led faculty and students into the Sandia Mountains to collect ponderosa pines, and planted them beside Hodgin Hall, the university's first building. Tight Grove still stands at the corner of Central Avenue and University Boulevard, around a Lobo sculpture, and is listed on the National Register together with the hall.",
+  "meta_description": "Tight Grove at the University of New Mexico: ponderosa pines students carried from the Sandia Mountains around 1905, beside Hodgin Hall.",
+  "question_meta": "Albuquerque's oldest mapped trees are Tight Grove at the University of New Mexico, planted between 1905 and 1908.",
+  "question_answer": "The oldest trees we map in Albuquerque are those of Tight Grove, beside Hodgin Hall at the University of New Mexico, planted by President William G. Tight with faculty and students. A university history page gives 1905; the National Register nomination for Hodgin Hall gives 1908. Either way the grove is more than 115 years old, though nobody has said how many of its trees are originals.",
+  "question_context": "Tight Grove is the patch of pines and grass around a Lobo sculpture on the southwest corner of the main campus, directly beside Hodgin Hall, the Pueblo Revival building at Central Avenue and University Boulevard. It is open campus ground, free and with no posted hours; the university's grounds are a state-designated arboretum. Buses along Central Avenue stop a few minutes' walk away. The two sources disagree on more than the year. The university history page speaks only of ponderosa pines collected in the Sandia Mountains, while the National Register nomination says Tight and the student body planted Rio Grande Valley cottonwoods as well as mountain ponderosa, and that the grove was later named in his honour. Treat the grove as one place to stand rather than one tree. Groves get replanted over a century, and we have not seen a record of which trunks are first-generation, so if you know, tell us.",
+  "hero_tree_id": "abq_001",
+  "oldest_tree_id": "abq_001",
+  "faq": [
+    {
+      "q": "What is Tight Grove?",
+      "a": "A grove of pines and grass beside Hodgin Hall at the University of New Mexico, planted by President William G. Tight with faculty and students in 1905 or 1908, and named after him."
+    },
+    {
+      "q": "Is Tight Grove open to visitors?",
+      "a": "Yes. It is on the open university campus at Central Avenue and University Boulevard, free and with no posted hours."
+    },
+    {
+      "q": "What trees are in Tight Grove?",
+      "a": "Ponderosa pines collected in the Sandia Mountains, and according to the National Register nomination also Rio Grande Valley cottonwoods."
+    }
+  ],
+  "trees": [
+    {
+      "id": "abq_001",
+      "name": "Tight Grove, University of New Mexico",
+      "species": "Ponderosa Pine (Pinus ponderosa) and Rio Grande Cottonwood (Populus deltoides subsp. wislizeni)",
+      "age_estimate": "over a century",
+      "age_min": 115,
+      "age_max": 125,
+      "age_basis": "source",
+      "location": {
+        "address": "Southwest corner of main campus beside Hodgin Hall, 1889 Central Ave NE, Albuquerque, NM 87131",
+        "latitude": 35.08167,
+        "longitude": -106.62541,
+        "neighbourhood": "University of New Mexico / Nob Hill"
+      },
+      "location_site": {
+        "name": "Tight Grove beside Hodgin Hall",
+        "radius_m": 50
+      },
+      "story": "The oldest trees on the University of New Mexico campus were carried down from the mountains by its students. Around 1905, President William G. Tight took faculty and students up into the Sandia Mountains, collected ponderosa pines, and planted them in a grove beside the university's first building, Hodgin Hall. The grove now carries his name.\n\nThe two sources disagree on the details. A university history page gives 1905 and speaks of ponderosas only. The National Register nomination for Hodgin Hall gives 1908 and says Tight and the student body planted Rio Grande Valley cottonwoods as well as mountain ponderosa. Either way the grove is more than 115 years old, and it was listed on the National Register together with the building it shades.\n\nIt has stood at the corner of Central Avenue and University Boulevard while Route 66 ran past on Central and Albuquerque grew from a railroad town into New Mexico's largest city. Whether every tree in it is one of the originals, nobody has said; groves get replanted, and we have not seen a record of which trunks are first-generation.\n\nThis is one place to stand rather than one tree. Today Tight Grove is the patch of pines and grass around a Lobo sculpture on the southwest corner of main campus, beside the Pueblo Revival walls of Hodgin Hall. It is open campus ground and free.",
+      "how_to_recognise": "You can recognise it as the grove of pines and grass around a Lobo sculpture on the southwest corner of main campus. It stands directly beside Hodgin Hall, at Central and University.",
+      "verified_sources": [
+        "https://timeline.unm.edu/item/arbor-days-roots-in-the-university-of-new-mexico.html",
+        "https://npgallery.nps.gov/GetAsset/306f2cb6-7d94-4c7a-9570-f3bea4ae61db",
+        "https://www.dailylobo.com/article/2011/09/unm_strengthens_its_roots",
+        "https://sustainability.unm.edu/campus/arboretum.html"
+      ],
+      "access": "Free. Open campus grounds of the University of New Mexico (state-designated arboretum since 1994, ArbNet Level I; trees on public display per sustainability.unm.edu). No entry fee or hours stated for the grounds.",
+      "transport": "On Central Ave NE at the university's west edge; ABQ RIDE Central Ave routes stop nearby (not checked against a timetable). Walk of a few minutes from the stop.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

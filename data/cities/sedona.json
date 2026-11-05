@@ -1,0 +1,76 @@
+{
+  "city": "Sedona",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Seven miles north of Sedona in Oak Creek Canyon, Slide Rock State Park keeps the apple orchard Frank Pendley started in 1912. Apples were the Pendley family's cash crop, and the homestead became a state park in 1987. The orchard, nearly 300 trees by the park's count, is still tended, and in April the whole planting is in blossom. Not every tree dates from 1912; the age belongs to the orchard as a whole.",
+  "meta_description": "The Pendley apple orchard at Slide Rock State Park, planted from 1912 on a homestead in Oak Creek Canyon, seven miles north of Sedona.",
+  "question_meta": "Sedona's oldest mapped trees are the Pendley apple orchard at Slide Rock State Park, first planted in 1912.",
+  "question_answer": "The oldest trees we map near Sedona are those of the Pendley apple orchard at Slide Rock State Park, in Oak Creek Canyon, where Frank Pendley made his first plantings in 1912. That makes the orchard more than a century old. The park does not say how many of today's nearly 300 trees are originals, so the age is the orchard's rather than any one tree's.",
+  "question_context": "Slide Rock State Park is about seven miles north of Sedona on US 89A, and there is no public transport, so you drive. The park charges an entry fee and on busy days admits by vehicle, so check Arizona State Parks' page for the current fee and hours before you set out. In early November 2026 floods closed the road and the park, which is another reason to check. The orchard stands on the old Pendley homestead inside the park. Frank Pendley established his first plantings in 1912, apples became the family's cash crop, and the land became a state park in 1987. In 2007 Arizona State Parks took the orchard's care back into its own hands, and it is still tended as a working orchard. Treat it as one place to stand rather than a single tree: the trees vary in age, and no source says which are the 1912 originals. April is the time to see it at its best, when the orchard blossoms.",
+  "hero_tree_id": "sdn_001",
+  "oldest_tree_id": "sdn_001",
+  "faq": [
+    {
+      "q": "Is there an entry fee for Slide Rock State Park?",
+      "a": "Yes. It is a paid state park, and on busy days entry is by vehicle. Check Arizona State Parks for the current fee and hours."
+    },
+    {
+      "q": "How old is the Slide Rock apple orchard?",
+      "a": "Frank Pendley made his first plantings in 1912, so the orchard is more than a century old. Not every tree in it is original."
+    },
+    {
+      "q": "Can I get to Slide Rock by public transport?",
+      "a": "No. It is a drive of about seven miles north of Sedona on US 89A."
+    },
+    {
+      "q": "When does the orchard blossom?",
+      "a": "In April."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sdn_001",
+      "name": "Pendley Apple Orchard, Slide Rock",
+      "species": "Apple (Malus domestica)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 114,
+      "age_basis": "source",
+      "location": {
+        "address": "Slide Rock State Park, 6871 N US-89A, Sedona, AZ 86336 (Oak Creek Canyon, about 7 miles north of Sedona)",
+        "latitude": 34.94435,
+        "longitude": -111.7528,
+        "neighbourhood": "Oak Creek Canyon"
+      },
+      "location_site": {
+        "name": "Pendley homestead orchard, Slide Rock State Park",
+        "radius_m": 50
+      },
+      "story": "Frank Pendley planted his first apple trees in Oak Creek Canyon in 1912, and the orchard has stood on his homestead ever since. Apples were the Pendley family's cash crop. Today the homestead is Slide Rock State Park, and the orchard, nearly 300 trees by the park's count, is still worked.\n\nThis is an orchard, not a single tree, and the honest thing to say is that not every tree in it dates from 1912. The park does not say how many of the original plantings survive, so the age belongs to the orchard rather than to any one trunk you stand beside.\n\nThe homestead became a state park in 1987, and in 2007 Arizona State Parks took the orchard's care back into its own hands. So the orchard has seen this stretch of canyon turn from a family farm into a state park, and it still flowers every spring.\n\nCome in April, when the blossom is out, and you see the whole planting at once. The park charges an entry fee, and there is no public transport from Sedona; it is a drive of about seven miles north on US 89A. Floods closed the road and the park in early November 2026, so check the park's page before you set out.",
+      "how_to_recognise": "You can recognise it as the rows of apple trees on the old Pendley homestead inside Slide Rock State Park, an orchard of nearly 300 trees.",
+      "verified_sources": [
+        "https://azstateparks.com/slide-rock/explore/apple-orchard",
+        "https://azstateparks.com/slide-rock/explore/park-history",
+        "https://en.wikipedia.org/wiki/Slide_Rock_State_Park"
+      ],
+      "access": "Paid entry to Slide Rock State Park (state park fee, entry by vehicle on busy days; the park page warned on 3 Nov 2026 that flooding closed SR 89A and the park that day). Visitors can pick apples at harvest per park pages. Check azstateparks.com for fee and hours.",
+      "transport": "No public transport to the park from Sedona; drive 7 miles north on US-89A",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "April, when the orchard is in blossom"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}
