@@ -12,6 +12,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: what Google shows again goes back in Google, daily
+
+- **What changed:** a page carrying our googlebot noindex that Google showed 3 times since 11-01 now leaves the Google-side cuts, checked every morning by scripts/tagged_shown.py (Hidde: "zolang google weer impressies heeft op paginas voegen we die ook toe"; he chose 3+ over every page shown). Was 2 clicks, or 1 click and 10 impressions, 10 a week; now 250 a week, the release lane's 70 per build sets the pace. Still never a translation, question, listing or thin-place page.
+- **Why:** of about 1,200 pages Google uses since the 11-01 recovery, 942 carry our tag (2,634 impressions and 50 clicks of roughly 3,100 and 80, so ~85%); open in the sitemap were 268. Each recrawl would take one away.
+- **Today:** 179 pages in data/earned-back.json (173 new), 165 enter Google: 70 with the next deploy, 95 in the builds after. Translations wait (17 clicks, but machine translation at scale is what the policy names); second step after 11-18.
+- Undo: take paths out of data/earned-back.json, or `EARNED_BACK = False` in thin_pages.py.
+
 ## 2026-11-05 session: outreach check, nothing to send
 
 - The nature/guide (11), source (12) and regional press (4) batches all went on 11-04; the session-start brief said "0 of 12" because sent_drafts.py matched `batch-` previews to the send log only for press. Fixed (55e2e553b). Welsh Country and the Wiltshire Times stay held on Hidde's own word of 11-04.

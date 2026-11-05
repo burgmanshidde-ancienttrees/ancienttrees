@@ -1,20 +1,790 @@
 {
  "generated": "scripts/tagged_shown.py",
- "rule": "2 clicks since 2026-11-01, or 1 click and 10 impressions; never a translation, a question page or a listing page; at most 10 a week (Hidde, 2026-11-04)",
+ "rule": "3 impressions or 2 clicks since 2026-11-01, or 1 click and 10 impressions; never a translation, a question page or a listing page; at most 250 a week (Hidde, 2026-11-04; 3 impressions from 2026-11-05)",
  "pages": {
+  "/aarhus/happy-pig-den-glade-gris": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/alicante": {
+   "date": "2026-11-05",
+   "impressions": 8,
+   "clicks": 0
+  },
+  "/alishan/sianglin-sacred-tree": {
+   "date": "2026-11-05",
+   "impressions": 20,
+   "clicks": 0
+  },
+  "/amsterdam/lomanstraat-cathedral-of-trees": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/antwerp": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/asago/itoi-no-okatsura-the-great-katsura-of-itoi": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/athens": {
+   "date": "2026-11-05",
+   "impressions": 10,
+   "clicks": 0
+  },
+  "/austin/old-baldy": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/bath": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/bath/plane-tree-of-abbey-green": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/bath/plane-trees-of-the-circus": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 1
+  },
+  "/beijing": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/belfast/peace-tree-of-woodvale-park": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/berlin/ginkgo-of-schlosspark-britz": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/berlin/swamp-cypress-of-charlottenburg": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/boise": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/bologna": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/boston/newtons-apple-tree-at-mit": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/boston/shaw-memorial-elms": {
+   "date": "2026-11-05",
+   "impressions": 9,
+   "clicks": 0
+  },
+  "/brighton": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/brisbane/banyan-tree-of-city-botanic-gardens": {
+   "date": "2026-11-05",
+   "impressions": 11,
+   "clicks": 0
+  },
+  "/brisbane/silky-oak": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/bristol": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/brzoza": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/budapest": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/busan": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/cadiz/floss-silk-tree-of-parque-genoves": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/cagliari/ficus-of-piazza-matteotti": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/cambridge": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/cambridge/milton-mulberry": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/cambridge/newtons-apple-tree": {
+   "date": "2026-11-05",
+   "impressions": 14,
+   "clicks": 0
+  },
+  "/catania": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/chapel-hill-north-carolina/davie-poplar": {
+   "date": "2026-11-05",
+   "impressions": 9,
+   "clicks": 0
+  },
+  "/charleston/angel-oak": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/chicago": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/chishang/takeshi-kaneshiro-tree": {
+   "date": "2026-11-05",
+   "impressions": 18,
+   "clicks": 0
+  },
+  "/christchurch/avon-river-poplars": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/coimbra": {
+   "date": "2026-11-05",
+   "impressions": 8,
+   "clicks": 0
+  },
+  "/coimbra/karri-knight": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/cologne": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/concoret/guillotin-oak-chene-a-guillotin": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/copenhagen/skovfogedegen": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/croatia": {
+   "date": "2026-11-05",
+   "impressions": 8,
+   "clicks": 0
+  },
+  "/cyprus": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/derby/boab-prison-tree": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/dublin/addisons-walk": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/dublin/champion-planes-of-new-square": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/dublin/hungry-tree": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/edinburgh/handkerchief-tree-by-caledonian-hall": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/estry": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/flinders-ranges/cazneaux-tree": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/fortingall/fortingall-yew": {
+   "date": "2026-11-05",
+   "impressions": 9,
+   "clicks": 0
+  },
+  "/fukuoka/ayasugi-of-kashii-shrine": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/fukuoka/flying-plum-of-dazaifu-tenmangu": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
   "/fukuoka/married-ginkgos-of-kushida": {
    "date": "2026-11-05",
    "impressions": 12,
    "clicks": 1
+  },
+  "/fulufjallet/old-tjikko": {
+   "date": "2026-11-05",
+   "impressions": 41,
+   "clicks": 0
+  },
+  "/gdansk/ginkgo-of-park-oliwski": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/genoa": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/germany": {
+   "date": "2026-11-05",
+   "impressions": 12,
+   "clicks": 0
+  },
+  "/ghent": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/gliniak": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/gliniak/wszebora": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/greece": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/hainich-national-park": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/henrykow-lubanski/cis-henrykowski-the-henrykow-yew": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/higashi-hiroshima/meoto-sugi-of-fukujo-ji": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/higashimiyoshi/great-camphor-of-kamo": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/hong-kong": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/hong-kong/camphor-of-she-shan-tsuen": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 1
+  },
+  "/horaiji/kasa-sugi": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/ibiza": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/istanbul": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/ito/yamamomo-of-renchakuji": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/jaegerspris-nordskov/kongeegen-the-king-oak": {
+   "date": "2026-11-05",
+   "impressions": 8,
+   "clicks": 0
+  },
+  "/kagoshima/cycad-where-sperm-was-first-discovered": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/kagoshima/great-camphor-of-kamo": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/kanazawa": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/kauai": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/kaunas": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/kyoto/grand-ginkgo-of-goo-shrine": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 1
+  },
+  "/kyoto/inverted-ginkgo-of-nishi-honganji": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/limmersdorf/tanzlinde-limmersdorf": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/lohja/paavolas-oak": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/london/barney-the-plane": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/london/mulberry-of-charlton-house": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/london/old-lions-of-kew": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/london/sweet-chestnut-of-greenwich-park": {
+   "date": "2026-11-05",
+   "impressions": 9,
+   "clicks": 0
+  },
+  "/los-angeles/beverly-hills-moreton-bay-fig": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/luxembourg-city/ginkgo-of-place-dargent": {
+   "date": "2026-11-05",
+   "impressions": 11,
+   "clicks": 0
+  },
+  "/luxembourg-city/sycamore-of-hollerich": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/madeira/douglas-fir-of-queimadas": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/madeira/dragon-tree-grove-of-neves": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/madrid": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
   },
   "/malaga": {
    "date": "2026-11-04",
    "impressions": 16,
    "clicks": 1
   },
+  "/monterey/lone-cypress": {
+   "date": "2026-11-05",
+   "impressions": 14,
+   "clicks": 0
+  },
+  "/montreal/mcgill-law-ginkgo": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/munich/oak-of-maria-eich-strasse": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/nago/nago-no-hinpun-gajumaru": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/nagoya/great-camphor-of-yakushiji": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/nara": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/netherlands": {
+   "date": "2026-11-05",
+   "impressions": 21,
+   "clicks": 0
+  },
+  "/new-orleans/anseman-oak": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 1
+  },
+  "/new-york": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/new-york/hangmans-elm": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/new-york/queens-giant": {
+   "date": "2026-11-05",
+   "impressions": 10,
+   "clicks": 0
+  },
+  "/new-york/red-horse-chestnut-of-van-cortlandt-house": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/nice/first-canary-island-date-palm-of-france": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/nihonmatsu/sugisawa-no-o-sugi-sugisawas-great-cedar": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/oahu/hitachi-tree": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/oahu/sinclair-cannonball-tree": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
   "/olympic-national-park/duncan-cedar": {
    "date": "2026-11-04",
    "impressions": 20,
+   "clicks": 1
+  },
+  "/palermo/falcone-tree": {
+   "date": "2026-11-05",
+   "impressions": 8,
+   "clicks": 0
+  },
+  "/palermo/fig-of-villa-tasca": {
+   "date": "2026-11-05",
+   "impressions": 15,
+   "clicks": 0
+  },
+  "/palo-alto/el-palo-alto": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/paris/second-robinier": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/paris/sophora-by-the-lake": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/pelham/comfort-maple": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/perth": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/perth/moreton-bay-fig-tree-royal-perth-hospital": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/philadelphia": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/porto/coast-redwood-of-the-botanical-garden": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/prague": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/prague/ash-of-strahov-garden": {
+   "date": "2026-11-05",
+   "impressions": 12,
+   "clicks": 0
+  },
+  "/prague/beethoven-plane": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/prague/elm-of-ruzova-street": {
+   "date": "2026-11-05",
+   "impressions": 10,
+   "clicks": 0
+  },
+  "/prague/elm-of-zatory": {
+   "date": "2026-11-05",
+   "impressions": 9,
+   "clicks": 0
+  },
+  "/prague/field-maple-of-the-seminary-garden": {
+   "date": "2026-11-05",
+   "impressions": 10,
+   "clicks": 0
+  },
+  "/prague/ginkgo-of-stromovka": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/prague/oak-of-cisarsky-ostrov": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/prague/oak-of-dienzenhofer-gardens": {
+   "date": "2026-11-05",
+   "impressions": 12,
+   "clicks": 0
+  },
+  "/prague/oak-of-u-malvazinky": {
+   "date": "2026-11-05",
+   "impressions": 12,
+   "clicks": 0
+  },
+  "/prague/plane-of-kampa": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/prague/plane-of-kinsky-garden": {
+   "date": "2026-11-05",
+   "impressions": 11,
+   "clicks": 0
+  },
+  "/prague/twin-beech-of-hvezda": {
+   "date": "2026-11-05",
+   "impressions": 11,
+   "clicks": 0
+  },
+  "/san-diego": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/san-francisco": {
+   "date": "2026-11-05",
+   "impressions": 11,
+   "clicks": 0
+  },
+  "/sao-paulo/figueira-das-lagrimas-fig-tree-of-tears": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/sapporo": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/seattle/volunteer-park-giant-sequoia": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/seoul": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/seoul/banghak-dong-ginkgo": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 1
+  },
+  "/seoul/munmyo-ginkgo": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/sequoia-national-park/president": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/sequoia-national-park/washington-tree": {
+   "date": "2026-11-05",
+   "impressions": 22,
+   "clicks": 0
+  },
+  "/seville/fan-palm-of-the-cenador-del-leon": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/seville/grapefruit-of-the-cartuja-monastery": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/shingu/sacred-nagi-of-kumano-hayatama-taisha": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/shokawa": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/singapore": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/singapore/banyan-of-tiong-bahru-park": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/singapore/baobab-of-melati-gate": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/singapore/bodhi-tree-of-pearls-hill": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/singapore/chengal-pasir-of-cluny-park-way": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/singapore/nemesu-of-the-rainforest": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/singapore/nutmegs-of-the-economic-garden": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/singapore/penaga-laut-of-the-botany-centre": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/singapore/tembusu-of-lawn-e": {
+   "date": "2026-11-05",
+   "impressions": 6,
    "clicks": 1
   },
   "/south-korea": {
@@ -22,15 +792,110 @@
    "impressions": 42,
    "clicks": 1
   },
+  "/stockholm/bellmanseken": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/switzerland": {
+   "date": "2026-11-05",
+   "impressions": 11,
+   "clicks": 0
+  },
+  "/taiwan": {
+   "date": "2026-11-05",
+   "impressions": 15,
+   "clicks": 0
+  },
+  "/takayama": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/takayama/great-ginkgo-of-hida-kokubunji": {
+   "date": "2026-11-05",
+   "impressions": 18,
+   "clicks": 0
+  },
+  "/takeo/takeo-no-okusu-the-great-camphor-of-takeo": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/tenerife": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
   "/tenerife/el-drago-milenario": {
    "date": "2026-11-04",
    "impressions": 43,
    "clicks": 1
   },
+  "/tillamook": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
+  "/tokyo": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/tokyo/ginkgo-of-the-sperm-discovery": {
+   "date": "2026-11-05",
+   "impressions": 17,
+   "clicks": 0
+  },
+  "/tokyo/himalayan-cedar-of-yanaka": {
+   "date": "2026-11-05",
+   "impressions": 7,
+   "clicks": 0
+  },
+  "/tokyo/meoto-kusu": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
+  },
+  "/tokyo/three-hundred-year-pine": {
+   "date": "2026-11-05",
+   "impressions": 6,
+   "clicks": 0
+  },
+  "/tokyo/ueno-toshogu-camphor": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/tokyo/yogo-no-matsu": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/tokyo/zenpukuji-ginkgo": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 1
+  },
+  "/toronto": {
+   "date": "2026-11-05",
+   "impressions": 4,
+   "clicks": 0
+  },
+  "/trieste/horse-chestnut-of-via-nazionale": {
+   "date": "2026-11-05",
+   "impressions": 3,
+   "clicks": 0
+  },
   "/venice": {
    "date": "2026-11-05",
    "impressions": 11,
    "clicks": 1
+  },
+  "/york/cut-leaved-hornbeam": {
+   "date": "2026-11-05",
+   "impressions": 5,
+   "clicks": 0
   }
  }
 }

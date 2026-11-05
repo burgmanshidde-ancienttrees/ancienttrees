@@ -42,22 +42,33 @@ SINCE = "2026-11-01"
 # a page that came back does not go dark again the day it stops being
 # tagged; thin_pages.py reads it (EARNED_BACK) and the release lane still
 # meters what enters. Removing a page from data/earned-back.json undoes it.
+# Widened 2026-11-05 (Hidde: "zolang google weer impressies heeft op paginas
+# voegen we die ook toe", choosing 3+ impressions over every page shown): a
+# page Google keeps showing 3 times since SINCE has been read and approved by
+# Google after the recovery, so our tag would only take away what Google gave
+# back. Daily, so a page that reaches 3 later is added later. 176 English tree
+# and place pages qualified that day; the release lane still lets at most 70
+# into Google per build.
 EARNED_CLICKS = 2
 EARNED_ONE_CLICK_IMPRESSIONS = 10
+EARNED_IMPRESSIONS = 3
 LANGS = {"de", "es", "fr", "it", "ja", "nl", "pt"}
 QSLUGS = {"oldest-tree", "aeltester-baum", "arbol-mas-antiguo", "arbre-le-plus-vieux",
           "albero-piu-antico", "saiko-rei-no-ki", "oudste-boom", "arvore-mais-antiga"}
 
 
 LISTINGS = {"species", "parks", "collections", "united-states", "countries"}
-EARNED_PER_WEEK = 10  # a creep guard: the rule never becomes a way back for a group
+# A creep guard: the rule never becomes a way back for a whole group. 10 on
+# 2026-11-04; 250 from 2026-11-05 with the 3-impression rule (Hidde), the
+# per-build pace is the release lane's 70.
+EARNED_PER_WEEK = 250
 
 
 def may_earn(p):
     seg = [x for x in p["path"].split("/") if x]
     if not seg or seg[0] in LANGS or seg[0] in LISTINGS or seg[-1] in QSLUGS:
         return False
-    return p["clicks"] >= EARNED_CLICKS or (
+    return p["clicks"] >= EARNED_CLICKS or p["impressions"] >= EARNED_IMPRESSIONS or (
         p["clicks"] >= 1 and p["impressions"] >= EARNED_ONE_CLICK_IMPRESSIONS)
 
 
@@ -79,8 +90,8 @@ def record_earned(pages, today):
             new.append(p["path"])
     with open(EARNED, "w") as f:
         json.dump({"generated": "scripts/tagged_shown.py",
-                   "rule": "2 clicks since %s, or 1 click and %d impressions; never a translation, "
-                           "a question page or a listing page; at most %d a week (Hidde, 2026-11-04)"
+                   "rule": "3 impressions or 2 clicks since %s, or 1 click and %d impressions; never a translation, "
+                           "a question page or a listing page; at most %d a week (Hidde, 2026-11-04; 3 impressions from 2026-11-05)"
                            % (SINCE, EARNED_ONE_CLICK_IMPRESSIONS, EARNED_PER_WEEK),
                    "pages": dict(sorted(earned.items()))}, f, indent=1, ensure_ascii=False)
         f.write("\n")

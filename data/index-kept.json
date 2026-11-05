@@ -4,7 +4,7 @@
  "cities": {
   "singapore": {
    "impressions": 359,
-   "kept_trees": 5,
+   "kept_trees": 12,
    "trees": 34,
    "place_page": true
   },
@@ -22,13 +22,13 @@
   },
   "barcelona": {
    "impressions": 284,
-   "kept_trees": 14,
-   "trees": 56,
+   "kept_trees": 20,
+   "trees": 58,
    "place_page": true
   },
   "seville": {
    "impressions": 259,
-   "kept_trees": 9,
+   "kept_trees": 11,
    "trees": 44,
    "place_page": true
   },
@@ -58,19 +58,19 @@
   },
   "palermo": {
    "impressions": 216,
-   "kept_trees": 10,
+   "kept_trees": 11,
    "trees": 22,
    "place_page": true
   },
   "oahu": {
    "impressions": 213,
-   "kept_trees": 5,
+   "kept_trees": 6,
    "trees": 21,
    "place_page": true
   },
   "tokyo": {
    "impressions": 209,
-   "kept_trees": 16,
+   "kept_trees": 17,
    "trees": 22,
    "place_page": true
   },
@@ -82,14 +82,14 @@
   },
   "new-york": {
    "impressions": 188,
-   "kept_trees": 8,
+   "kept_trees": 6,
    "trees": 29,
    "place_page": true
   },
   "edinburgh": {
    "impressions": 173,
-   "kept_trees": 6,
-   "trees": 16,
+   "kept_trees": 9,
+   "trees": 21,
    "place_page": true
   },
   "brussels": {
@@ -100,19 +100,19 @@
   },
   "dublin": {
    "impressions": 168,
-   "kept_trees": 4,
+   "kept_trees": 2,
    "trees": 19,
    "place_page": true
   },
   "brisbane": {
    "impressions": 163,
-   "kept_trees": 3,
+   "kept_trees": 2,
    "trees": 20,
    "place_page": true
   },
   "paris": {
    "impressions": 163,
-   "kept_trees": 14,
+   "kept_trees": 12,
    "trees": 58,
    "place_page": true
   },
@@ -130,7 +130,7 @@
   },
   "london": {
    "impressions": 147,
-   "kept_trees": 25,
+   "kept_trees": 21,
    "trees": 32,
    "place_page": true
   },
@@ -148,7 +148,7 @@
   },
   "cadiz": {
    "impressions": 125,
-   "kept_trees": 4,
+   "kept_trees": 3,
    "trees": 5,
    "place_page": true
   },
@@ -160,19 +160,19 @@
   },
   "porto": {
    "impressions": 124,
-   "kept_trees": 16,
+   "kept_trees": 15,
    "trees": 29,
    "place_page": true
   },
   "prague": {
    "impressions": 119,
-   "kept_trees": 21,
+   "kept_trees": 12,
    "trees": 30,
    "place_page": true
   },
   "cagliari": {
    "impressions": 116,
-   "kept_trees": 1,
+   "kept_trees": 0,
    "trees": 14,
    "place_page": true
   },
@@ -226,7 +226,7 @@
   },
   "austin": {
    "impressions": 91,
-   "kept_trees": 3,
+   "kept_trees": 2,
    "trees": 10,
    "place_page": true
   },
@@ -250,8 +250,8 @@
   },
   "sintra": {
    "impressions": 87,
-   "kept_trees": 3,
-   "trees": 5,
+   "kept_trees": 6,
+   "trees": 7,
    "place_page": true
   },
   "florence": {
@@ -298,7 +298,7 @@
   },
   "copenhagen": {
    "impressions": 75,
-   "kept_trees": 41,
+   "kept_trees": 40,
    "trees": 49,
    "place_page": true
   },
@@ -362,21 +362,15 @@
    "trees": 11,
    "place_page": true
   },
-  "takeo": {
-   "impressions": 65,
-   "kept_trees": 1,
-   "trees": 1,
-   "place_page": false
-  },
   "fukuoka": {
    "impressions": 64,
-   "kept_trees": 11,
+   "kept_trees": 9,
    "trees": 18,
    "place_page": true
   },
   "monterey": {
    "impressions": 64,
-   "kept_trees": 2,
+   "kept_trees": 1,
    "trees": 3,
    "place_page": true
   },
@@ -430,19 +424,13 @@
   },
   "boston": {
    "impressions": 55,
-   "kept_trees": 2,
+   "kept_trees": 0,
    "trees": 13,
    "place_page": true
   },
-  "fulufjallet": {
-   "impressions": 55,
-   "kept_trees": 1,
-   "trees": 1,
-   "place_page": false
-  },
   "madeira": {
    "impressions": 55,
-   "kept_trees": 1,
+   "kept_trees": 0,
    "trees": 11,
    "place_page": true
   },
@@ -454,7 +442,7 @@
   },
   "seoul": {
    "impressions": 54,
-   "kept_trees": 5,
+   "kept_trees": 3,
    "trees": 8,
    "place_page": true
   },
@@ -490,7 +478,7 @@
   },
   "kyoto": {
    "impressions": 51,
-   "kept_trees": 11,
+   "kept_trees": 10,
    "trees": 18,
    "place_page": true
   },
@@ -518,16 +506,40 @@
    "trees": 16,
    "place_page": true
   },
+  "toronto": {
+   "impressions": 47,
+   "kept_trees": 0,
+   "trees": 6,
+   "place_page": true
+  },
+  "cambridge": {
+   "impressions": 44,
+   "kept_trees": 0,
+   "trees": 5,
+   "place_page": true
+  },
   "las-vegas": {
    "impressions": 41,
    "kept_trees": 6,
    "trees": 11,
    "place_page": true
   },
+  "philadelphia": {
+   "impressions": 38,
+   "kept_trees": 0,
+   "trees": 4,
+   "place_page": true
+  },
   "kagoshima": {
    "impressions": 37,
    "kept_trees": 4,
    "trees": 16,
+   "place_page": true
+  },
+  "perth": {
+   "impressions": 37,
+   "kept_trees": 0,
+   "trees": 6,
    "place_page": true
   },
   "sequoia-national-park": {
@@ -542,10 +554,22 @@
    "trees": 4,
    "place_page": true
   },
+  "bristol": {
+   "impressions": 33,
+   "kept_trees": 0,
+   "trees": 12,
+   "place_page": true
+  },
   "bucaco": {
    "impressions": 31,
    "kept_trees": 3,
    "trees": 18,
+   "place_page": true
+  },
+  "boise": {
+   "impressions": 30,
+   "kept_trees": 0,
+   "trees": 4,
    "place_page": true
   },
   "manchester": {
@@ -554,9 +578,21 @@
    "trees": 5,
    "place_page": true
   },
+  "sapporo": {
+   "impressions": 28,
+   "kept_trees": 0,
+   "trees": 6,
+   "place_page": true
+  },
+  "cologne": {
+   "impressions": 25,
+   "kept_trees": 0,
+   "trees": 5,
+   "place_page": true
+  },
   "charleston": {
    "impressions": 23,
-   "kept_trees": 1,
+   "kept_trees": 0,
    "trees": 3,
    "place_page": true
   },
@@ -572,10 +608,34 @@
    "trees": 1,
    "place_page": false
   },
+  "bologna": {
+   "impressions": 21,
+   "kept_trees": 0,
+   "trees": 12,
+   "place_page": true
+  },
+  "catania": {
+   "impressions": 20,
+   "kept_trees": 0,
+   "trees": 4,
+   "place_page": true
+  },
   "miyazaki": {
    "impressions": 20,
    "kept_trees": 1,
    "trees": 8,
+   "place_page": true
+  },
+  "olympic-national-park": {
+   "impressions": 19,
+   "kept_trees": 1,
+   "trees": 4,
+   "place_page": false
+  },
+  "genoa": {
+   "impressions": 18,
+   "kept_trees": 0,
+   "trees": 13,
    "place_page": true
   },
   "nuremberg": {
@@ -593,6 +653,18 @@
   "freiburg": {
    "impressions": 17,
    "kept_trees": 1,
+   "trees": 8,
+   "place_page": true
+  },
+  "padua": {
+   "impressions": 17,
+   "kept_trees": 2,
+   "trees": 14,
+   "place_page": true
+  },
+  "ghent": {
+   "impressions": 16,
+   "kept_trees": 0,
    "trees": 8,
    "place_page": true
   },
@@ -614,6 +686,12 @@
    "trees": 32,
    "place_page": true
   },
+  "kauai": {
+   "impressions": 10,
+   "kept_trees": 0,
+   "trees": 6,
+   "place_page": true
+  },
   "regensburg": {
    "impressions": 10,
    "kept_trees": 1,
@@ -631,6 +709,12 @@
    "kept_trees": 1,
    "trees": 1,
    "place_page": false
+  },
+  "antwerp": {
+   "impressions": 0,
+   "kept_trees": 0,
+   "trees": 10,
+   "place_page": true
   },
   "baarn": {
    "impressions": 0,
@@ -661,6 +745,12 @@
    "kept_trees": 1,
    "trees": 1,
    "place_page": false
+  },
+  "brighton": {
+   "impressions": 0,
+   "kept_trees": 0,
+   "trees": 6,
+   "place_page": true
   },
   "calvos": {
    "impressions": 0,
@@ -728,6 +818,12 @@
    "trees": 1,
    "place_page": false
   },
+  "kaunas": {
+   "impressions": 0,
+   "kept_trees": 0,
+   "trees": 10,
+   "place_page": true
+  },
   "koenigslutter": {
    "impressions": 0,
    "kept_trees": 1,
@@ -774,6 +870,12 @@
    "impressions": 0,
    "kept_trees": 1,
    "trees": 5,
+   "place_page": true
+  },
+  "san-diego": {
+   "impressions": 0,
+   "kept_trees": 0,
+   "trees": 6,
    "place_page": true
   },
   "takachiho": {
