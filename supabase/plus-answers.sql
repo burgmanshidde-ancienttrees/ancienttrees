@@ -45,6 +45,29 @@ create table if not exists public.plus_answers (
   build text not null default '' check (char_length(build) <= 40)
 );
 
+-- UPGRADE FROM THE FIRST VERSION (pasted 2026-11-05 at 10:00 with a single
+-- `choice` column; the two-choice change that morning edited the create above,
+-- which "if not exists" skips on a table that is already there, so every new
+-- answer was refused for a missing `choices`). Moves the old answers across and
+-- drops the old column. Does nothing on a table made from the file as it is now.
+alter table public.plus_answers add column if not exists choices text[];
+do $$
+begin
+  if exists (select 1 from information_schema.columns
+             where table_schema = 'public' and table_name = 'plus_answers'
+               and column_name = 'choice') then
+    update public.plus_answers set choices = array[choice] where choices is null;
+    alter table public.plus_answers drop column choice;
+  end if;
+end $$;
+alter table public.plus_answers alter column choices set not null;
+alter table public.plus_answers drop constraint if exists plus_answers_choices_check;
+alter table public.plus_answers add constraint plus_answers_choices_check check (
+  cardinality(choices) between 1 and 2
+  and choices <@ array['walks', 'offline', 'season', 'log', 'none']::text[]
+  and (not ('none' = any(choices)) or cardinality(choices) = 1)
+);
+
 alter table public.plus_answers enable row level security;
 
 drop policy if exists "anybody may answer the plus question" on public.plus_answers;

@@ -12,6 +12,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: build 39 (1.0.4) archived for upload; the Plus answers table needed an upgrade
+
+- **What changed:** build 39 is in the Organizer, made by scripts/release.py from fda0199ad with the bundled catalogue refreshed (4,046 trees, 357 walks). It adds to build 38: Back, share and report readable over a tree's photograph on iOS 18, the map's place header aligned with its cards, and the Plus question (open question, up to two choices, Tell me). 38 was never uploaded; 39 replaces it.
+- **Plus answers were being refused:** the table was pasted on 2026-11-05 at 10:00 with one `choice` column; the two-choice change that morning edited the CREATE in place, which `if not exists` skips, so every answer since then (web and app, which send `choices`) failed with a 400. supabase/plus-answers.sql now carries an upgrade block (adds `choices`, moves the one test answer, drops `choice`); safe to paste again.
+- **Not verified:** the Release build on a device; Plus answers arriving after the upgrade is pasted.
+- **For Hidde:** paste supabase/plus-answers.sql once more; then run build 39 on your phone and Organizer, Archives, build 39, Distribute App, App Store Connect.
+
 ## 2026-11-05 session: iOS CI green again (two crashing unit tests)
 
 - ios.yml was red since 2026-11-04 13:42: `testTheStoredIdSetsFollowEveryChange` and `testTheCityAndCountryIndexMatchFilteringTheWholeList` (RedrawMemoTests, added with the redraw speed-up) "crashed with signal abrt". Reproduced on the iOS 18.6 simulator: SIGABRT when the test's `Saved` was released, "pointer being freed was not allocated" in `swift_task_deinitOnExecutorMainActorBackDeploy` from `Saved.__deallocating_deinit`, under an XCTest invocation; the second test only fell with the crashed process.
