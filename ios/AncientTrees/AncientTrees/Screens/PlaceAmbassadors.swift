@@ -60,7 +60,7 @@ struct PlaceAmbassadors: View {
     /// ambassador · Become one too". The row opens their profile while it is
     /// public (2026-10-19); the green words open the ask, their own tap.
     @ViewBuilder private func personRow(_ name: String, profile: String?, last: Bool) -> some View {
-        let row = HStack(spacing: 10) {
+        let row = HStack(spacing: 12) {
             Text(String(name.trimmingCharacters(in: .whitespaces).prefix(1)).uppercased())
                 .font(.system(size: 13, weight: .bold))
                 .foregroundStyle(Brand.moss)

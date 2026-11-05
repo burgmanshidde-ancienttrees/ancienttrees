@@ -1236,12 +1236,32 @@ struct TreeDetail: View {
             // district line is superseded. The district, plain grey because it
             // has no page; without one the city stands in, so the line never
             // shows a lone thumb. The website's tree page draws the same.
+            //
+            // THE CITY TOO (Hidde, 2026-11-05, on the Groenesteeg Beech: "waarom
+            // staat Leiden nergens, alleen onderaan? lijkt me logisch om bovenaan
+            // ook te hebben voor Groenoord, en op alle detailpagina's"): the app
+            // has no breadcrumb above the title, as the website does, so the
+            // district alone left the city unsaid. "Groenoord, Leiden", the way
+            // Google Maps writes a place, the city the link.
             if let district = Self.placeDistrict(neighbourhood: tree.neighbourhood, city: tree.city) {
-                Text(district)
-                    .foregroundStyle(Brand.inkSoft)
-                    .lineLimit(1)
-                    .truncationMode(.tail)
-                    .frame(minHeight: 44)
+                HStack(spacing: 0) {
+                    Text("\(district), ")
+                        .foregroundStyle(Brand.inkSoft)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
+                    Button { navigator.push = .city(tree.citySlug) } label: {
+                        Text(tree.city)
+                            .underline()
+                            .lineLimit(1)
+                            .frame(minHeight: 44)
+                            .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                    .foregroundStyle(Brand.ink)
+                    .layoutPriority(1)
+                    .accessibilityLabel("See every tree in \(tree.city)")
+                }
+                .frame(minHeight: 44)
             } else {
                 Button { navigator.push = .city(tree.citySlug) } label: {
                     Text(tree.city)

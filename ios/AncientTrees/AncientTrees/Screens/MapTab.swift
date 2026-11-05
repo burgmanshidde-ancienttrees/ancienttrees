@@ -318,6 +318,11 @@ struct MapTab: View {
         // inside every card below them.
         .padding(.horizontal, 16)
         .padding(.bottom, 10)
+        // CLOSER TO THE GRABBER (Hidde, 2026-11-05: "Lisbon en de share button
+        // kunnen hoger t.o.v. de list dragger"): the grabber row is 44 tall for
+        // the page's chevron, which left 29 points of air above the name.
+        // Google Maps sets a place's name about 12 under its handle.
+        .padding(.top, -16)
         .frame(maxWidth: .infinity, alignment: .leading)
         // .contain first: an identifier on a bare container is stamped on
         // every control inside it, so the ambassador seat and the share
@@ -705,6 +710,8 @@ struct MapTab: View {
                 .accessibilityIdentifier("back-to-map")
             }
         }
+        // The snackbar goes above the pill, 70 + 44 + 12 (RootSnackLift).
+        .preference(key: RootSnackLift.self, value: sheetHeight == .full ? 126 : nil)
         .task {
             if let id = debugSelect, let t = catalogue.tree(id) {
                 selected = t

@@ -35,6 +35,7 @@ struct ContentView: View {
     @State private var showingCover = !ProcessInfo.processInfo.arguments.contains("-no-cover")
     /// The height of a pushed page's docked bar, which the snackbar sits on.
     @State private var snackLift: CGFloat?
+    @State private var rootSnackLift: CGFloat?
     /// Reporting and blocking, which the social half cannot ship without.
     @State fileprivate var moderation = Moderation()
     /// What this account has already said about a tree, read from the account
@@ -656,8 +657,12 @@ struct ContentView: View {
         // a country page with no bar under it (Hidde, 2026-11-03: "gewoon
         // een beetje gek hoog"). Material 3's placement, CONVENTIONS.md.
         .onPreferenceChange(SnackLift.self) { snackLift = $0 }
+        .onPreferenceChange(RootSnackLift.self) { rootSnackLift = $0 }
         .overlay(alignment: .bottom) {
-            SnackBar(lift: path(tab).wrappedValue.isEmpty ? 92 : (snackLift ?? 0) + 12)
+            // The map tab's root only: another tab's root has nothing floating.
+            SnackBar(lift: path(tab).wrappedValue.isEmpty
+                     ? ((tab == 0 ? rootSnackLift : nil) ?? 92)
+                     : (snackLift ?? 0) + 12)
         }
         .overlay(alignment: .top) { nearbyBannerOverlay }
         .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)

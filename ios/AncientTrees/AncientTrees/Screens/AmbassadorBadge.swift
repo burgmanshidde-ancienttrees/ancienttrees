@@ -350,11 +350,11 @@ struct AmbassadorWantedRow: View {
 
     /// The box's first row: one line, the seal, the ask, a chevron.
     private var slimRow: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 12) {
             Image(systemName: "checkmark.seal")
                 .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(Brand.moss)
-                .frame(width: 24)
+                .frame(width: 30)
             Text(asked ? "Request sent." : (seated ? "Become a \(place) ambassador" : "Become the \(place) ambassador"))
                 .font(.system(size: 15, weight: .medium))
                 .foregroundStyle(Brand.ink)

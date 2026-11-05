@@ -24,11 +24,13 @@ struct PlusRow: View {
         // ONE LINE (Hidde, 2026-11-05, direction C): the second row of the
         // place's white box, under the ambassador; the website's PlusAsk.astro
         // draws the same line.
-        HStack(spacing: 10) {
+        // One icon column with the ambassador row above it: 30 wide, 12 to
+        // the words, so "Hugo" and this line start at the same x.
+        HStack(spacing: 12) {
                 Image(systemName: "sparkles")
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.moss)
-                    .frame(width: 24)
+                    .frame(width: 30)
                 Text("Help create Ancient Trees Plus")
                     .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(Brand.ink)
