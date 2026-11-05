@@ -1809,11 +1809,25 @@ enum MapLayers {
         redraw(on: style, zoom: zoom, declutter: declutter, force: true)
     }
 
+    /// The shape per species name, worked out once (4,000 trees, a few
+    /// hundred names, about fifteen shapes).
+    private static var shapeOf: [String: String] = [:]
+
     private static func imageName(species: String, colour: UIColor) -> String {
         var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
         colour.getRed(&r, green: &g, blue: &b, alpha: &a)
         let hex = String(format: "%02X%02X%02X", Int(r * 255), Int(g * 255), Int(b * 255))
-        return "at-pin-\(hex)-\(species.replacingOccurrences(of: " ", with: "_"))"
+        // By the species' SHAPE (SpeciesIcons.archetype): the pin is the
+        // shape in a circle, so every oak shares one image. It was one image
+        // per species name, a few hundred drawn on the main thread whenever a
+        // new feed brought new names, which is the hold Hidde felt coming
+        // back to the app (2026-11-05: "dan heeft de app even nodig").
+        let shape = shapeOf[species] ?? {
+            let k = SpeciesIcons.archetype(for: species)
+            shapeOf[species] = k
+            return k
+        }()
+        return "at-pin-\(hex)-\(shape)"
     }
 
     /// One pin, drawn once per species-and-colour and then cached by the style.
@@ -2119,13 +2133,16 @@ enum SpeciesGlyph {
     private static var cache: [String: UIImage] = [:]
 
     static func image(for commonName: String) -> UIImage? {
-        if let hit = cache[commonName] { return hit }
+        // Keyed by SHAPE, not by name: a few hundred species share about
+        // fifteen shapes, and each name drew its own copy (2026-11-05).
+        let key = SpeciesIcons.archetype(for: commonName)
+        if let hit = cache[key] { return hit }
         let renderer = ImageRenderer(content:
             SpeciesMark(species: commonName, color: .white)
                 .frame(width: 22, height: 22))
         renderer.scale = UIScreen.main.scale
         guard let img = renderer.uiImage?.withRenderingMode(.alwaysTemplate) else { return nil }
-        cache[commonName] = img
+        cache[key] = img
         return img
     }
 }

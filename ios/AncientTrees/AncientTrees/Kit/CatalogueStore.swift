@@ -178,7 +178,15 @@ public final class CatalogueStore {
         else { return }
 
         let before = catalogue?.trees.count ?? 0
-        write(trees: treeData, walks: walkData, species: speciesData, browse: browseData)
+        // OFF THE MAIN THREAD, like the decode (2026-11-05: the app held for a
+        // moment on every return, and twelve megabytes written atomically on
+        // the main actor was part of it).
+        if let dir = downloads {
+            await Task.detached(priority: .utility) {
+                Self.writeFiles(to: dir, trees: treeData, walks: walkData,
+                                species: speciesData, browse: browseData)
+            }.value
+        }
         catalogue = fresh
         lastAdded = max(0, fresh.trees.count - before)
     }
@@ -219,8 +227,8 @@ public final class CatalogueStore {
                          facets: BrowseFacets(feed: bf), version: tf.version)
     }
 
-    private func write(trees: Data, walks: Data, species: Data?, browse: Data?) {
-        guard let dir = downloads else { return }
+    nonisolated private static func writeFiles(to dir: URL, trees: Data, walks: Data,
+                                               species: Data?, browse: Data?) {
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         // .atomic so a kill mid-write leaves the previous file rather than half
         // a file, which is the same reasoning as rule 2 one level down.

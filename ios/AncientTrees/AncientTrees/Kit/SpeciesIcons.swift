@@ -46,6 +46,18 @@ public enum SpeciesIcons {
         ("oak", ["oak"]),
     ]
 
+    /// Which of the shapes a species is drawn with ("broadleaf" when none
+    /// matches). Hundreds of species share about fifteen shapes, so a drawing
+    /// keyed by this is made once per shape, not once per name (the pins that
+    /// held the main thread on a return to the app, 2026-11-05).
+    public static func archetype(for species: String) -> String {
+        let name = species.lowercased()
+        for (key, needles) in archetypes where needles.contains(where: { name.contains($0) }) {
+            if icons[key] != nil { return key }
+        }
+        return "broadleaf"
+    }
+
     public static func fragment(for species: String) -> String {
         let name = species.lowercased()
         for (key, needles) in archetypes where needles.contains(where: { name.contains($0) }) {
