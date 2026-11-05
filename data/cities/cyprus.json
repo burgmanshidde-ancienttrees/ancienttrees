@@ -210,14 +210,12 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Register CY-FD-32: Sycamore Fig (Ficus sycomorus, Greek Συκομουριά/Τουμπεζιά), Ayia Napa, girth 7.05 m, height 26 m, age 608 (register age carried to about 2012, so roughly 620 now), proclaimed 2004-01-30. Register has no coordinate; identification as the monastery fig is INFERRED from species, village and age (600 years in every visitor source) - flagged. Girth/height are register figures only. Sources agree: over 600 years old, 'in front of the southern gates' of the monastery (dom.com.cy, article 2023-08-04, page updated 2026); apsida.cut.ac.cy: 'believed to be over 600 years old', 'just outside the entrance'; visitfamagusta (2025) calls it believed to be the oldest tree in Cyprus (a claim, not verified, contradicted elsewhere). Legend: planted by a Venetian noblewoman from Famagusta who took refuge in the cave and founded the monastery (a Russian guide says an abbess). Russian guide: 3 to 4 people to encircle trunk (visitor estimate). Alive: 2023 and 2025 visitor/tourism pages and a Nov 2025 visitor review of the monastery describe it present; no tree-specific dated photo seen. Pin: Commons file coordinate 34.988785,33.999384 (Flickr geotag by R. Stehn, scan of a 1983 photo, captioned '600 Jahre alte Platane vor dem Suedtor') lies just south of the OSM monastery relation bbox (34.98897 to 34.98951, 33.99913 to 33.99985), consistent with the south gate; photographer-placed, so approximate. Open-licence photo of the actual tree: File:356Zypern Platane Ayia Napa Kloster (14191488083).jpg, CC BY-SA 2.0, Ruediger Stehn (1983 scan; old, check it is still how it looks). OTHER REGISTER FIGS: CY-FD-44 (girth 341 cm, 18 m, 256 yrs, proclaimed 2006) and CY-FD-45 (452 cm, 18 m, 356 yrs, 2006) are two more sycamore figs in Ayia Napa, proclaimed in a later batch; no source found says where they stand, so NOT folded into this entry. They could be younger figs near the monastery but that is unverified. Check current museum opening before a visit. Writing pass 2026-11-02: verify id lar_001, reassigned to cyp_005."
+      "location_precision": "approximate"
     },
     {
       "id": "cyp_006",
       "name": "The lone juniper of Cape Greco",
       "species": "Phoenician Juniper (Juniperus phoenicea)",
-      "age_estimate": null,
       "age_min": null,
       "age_max": null,
       "age_basis": null,
@@ -246,8 +244,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "notes": "No register entry; no measurement; no age source (komoot title says 'Ancient', page gives no age; do not state an age). Described as a solitary old tree in the middle of an open field (commercial.cy, article dated 2026-08-18, a favourite wedding-photo spot), 'one of the biggest and most frequently photographed trees in Cyprus' (tripaligner, promotional, unverified superlative), 'Tree of Cape Greco, Tree of Life' (plizio, updated Oct 2026), windswept lone juniper. Species Juniperus phoenicea comes from the komoot highlight title only (user-edited); other sites say 'juniper'; flagged. Alive: komoot tips dated 2022-10-27, 2023-09-23, 2024-08-23, and the 2026 commercial.cy piece. Coordinates: komoot URL 34.972721,34.058749 and plizio 34.972744,34.058717 agree (about 3 m apart). Coordinator 2026-11-02: Commons File:Tree_of_Cape_Greco_(Juniper_Tree,_The_Tree_of_Life),_Cyprus_01.jpg (2023-03-09) carries a GPS geotag 34.972769, 34.058739, agreeing with komoot/plizio to a few metres; the 420 m-off point was the Commons category's, not a photo's. Pin set to 34.97277, 34.05874, confirmed. Verify file had age_basis 'derived' with no age; set to null since there is no age. Writing pass 2026-11-02: verify id lar_002, reassigned to cyp_006."
+      "location_precision": "confirmed"
     },
     {
       "id": "cyp_007",
@@ -290,8 +287,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Register CY-FD-20: Olive, Anglisides, girth 10.35 m, height 6 m, age 708 (carried to about 2012), proclaimed 2004-01-30; note olive trunks are hollow/split and the register girth is a trunk perimeter. Ages conflict: register and e-villages 'more than 700 years, probably the oldest olive in Cyprus'; Cyprus Mail 2004-02-05 'almost 1,000 years', trunk 'four metres wide', hollow interior about 3 m2 fits 10 people, trunk split early and widened with stacked bricks, Forestry Dept had just proposed it for protection; the register proclamation the same month fits. Site: cyprusfoodmuseum.com / VisitCyprus list 'one of the oldest olive trees of Cyprus, est. 700 years' in the Olive Museum yard. That the museum tree is the register tree is inferred (same village, same age) - flagged. Pin is the OSM 'Olive tree museum' way (34.85398-34.85434, 33.46536-33.46564), not the trunk. Alive evidence is thin: no dated recent photo or report found (e-villages and museum pages undated); flagged for that. A separate komoot highlight '850-Year-Old Olive Tree' (34.831547,33.394633, about 7 km west, no tips) is a different location and unverified - lead only. Writing pass 2026-11-02: verify id lar_003, reassigned to cyp_007. The 'probably the oldest olive in Cyprus' claim is NOT used: the Xyliatos olive (cyp_002) already carries that crown on our page."
+      "location_precision": "approximate"
     },
     {
       "id": "cyp_008",
@@ -330,8 +326,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "notes": "Alive: iNaturalist research-grade observation 344757666 (2026-03-23, Aleppo Oak, GPS accuracy 3 m, place Laneia; photos CC BY-NC so NOT usable by us, open iNat photo not a licence we may take). Observer description: girth at breast height 8.4 m. The pin 34.826804,32.911240 matches the official All About Limassol guide 'View on Map' pin (34.826678,32.911031), about 25 m apart: two independent sources, so confirmed. Sources: (1) guide (article dated 2023-05-24): protected oak over 800 years, in a quiet spot north of the village, trunk 8.4 m, height 26 m, big hollow on the east side, 'sibling' of the legendary Royal Oak that fell (lt. 1997 per some sources) whose remaining part is also pictured; (2) International Oak Society trip report 2026: lists the Lania oak among three famous large Cyprus oaks, trunk diameter 270 cm (270 x pi = 8.5 m, agrees with 8.4 m girth); author did not visit it himself. CONFLICT: Department of Forests register CY-FD-16 gives girth 6.10 m, height 7 m, age about 608 (carried to about 2012) and species only 'oak': this likely records a different measurement or perhaps the Royal Oak remnant; girth_cm uses 840 (two independent sources), register 610 noted. height_m omitted (26 m guide vs 7 m register). Age: register ~600 plus years since, guide 800+; stated broad. Royal Oak legend: Henry of France rested under it. Flag: access unverified. Writing pass 2026-11-02: verify id cyl_001, reassigned to cyp_008; species normalised from 'Cyprus Oak' to the canonical 'Aleppo Oak' for Quercus infectoria (iNaturalist's name; 'Cyprus oak' usually means Quercus alnifolia); age_basis set to source (register and guide)."
+      "location_precision": "confirmed"
     },
     {
       "id": "cyp_009",
@@ -372,8 +367,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Register CY-FD-14: girth 6.80 m, height 10 m, age 1,508 (carried to about 2012, so 'about 1,500'), proclaimed 2004. Cyprus Post stamp page independently gives Pistacia atlantica, girth 6.80 m, height 10 m, about 1,500 years, protected 2004 (it probably reuses Forestry data, so counts weakly as independent). All About Limassol guide: Mt Atlas mastic tree, 10 m, dedicated to St George per locals, considered one of the oldest Pistacia atlantica in the world, photo by Agni Tsouloupa. Cyprus Alive: village of the old Pistacia atlantica (Tremithia); tree in the courtyard of the old school built 1911, over 1,500 years. Locals call it Tremithos of Ai Yorkos. Cyprus Mail archive says an Anglisides (Larnaca) olive is the oldest living native tree; the terebinth is not native, so claims differ. Age is an estimate: one botanical source (wildflowers.co.il) says no Pistacia atlantica has been dated beyond about 600 years and trunk size inflates guesses, so age_min/max kept broad (1000 to 1600) and the writer must say 'estimated'. Alive: no dated observation found within the last few years; cyprus-faq.com page updated about 5 months ago treats it as standing; lifecheck NONE at the village centre. Pin is the OSM village node, NOT the tree. No Commons file found. Flag: register-only plus tourism sources, spot approximate, no recent dated photo seen. Writing pass 2026-11-02: verify id cyl_002, reassigned to cyp_009; name shortened from 'The Terebinth of Apesia (Tremithia of Agios Georgios)' to fit under 60 characters (local name kept in story and recognition line); age_basis set to source. Crown claimed: the greatest age the Department of Forests register gives any tree (CY-FD-14, 1,508, highest in data/registers/cyprus-forests.json), NOT 'oldest tree in Cyprus' outright, since the Xyliatos olive page carries a council figure of about 1,700."
+      "location_precision": "approximate"
     },
     {
       "id": "cyp_010",
@@ -417,8 +411,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Register CY-FD-48 (Lagoudera, Δρυς): girth 455 cm, height 16 m, age 700 (round estimate carried to ~2012; declared registers rows are village-only, no coordinate); proclaimed 2011-01-28 per data/registers/cyprus-forests.json. Species per the Department of Forests' trail leaflet (Stavros tou Agiasmati - Panagia tou Araka, four-fold flyer, moa.gov.cy): 'a century-old oak (Quercus infectoria subsp. veneris), aged about 800 years... declared a nature monument... under the management and care of the Forestry Department'. Register species is only 'Δρυς' (oak), the leaflet settles it as Quercus infectoria subsp. veneris. Age sources disagree mildly: register 700 and visitcyprus trail page 'At the entrance of the Panagia tou Araka church you will find a 700 year old oak tree'; the Forests leaflet and ix-andromeda 'dated in the time of the construction of the Monastery, 800 years ago' (monastery founded 1192 per Komoot tip, which is not tree evidence). Quote broad: 700 to 800 years. POSITION CONFLICT: visitcyprus and the leaflet say at the entrance/in the church yard; ix-andromeda says 'a hundred metres south' of the monastery. Hence site-level, approximate; church coordinate 34.9654,33.0070 (Komoot highlight map centre) / 34.9656,33.0068 (visitcyprus trail GPS start at the church). ALIVE: thin. lifecheck at the church returns RECENT (2025-10-18) but only for the church; no dated photo of the oak itself found; a University of Edinburgh collection holds a 1992 photograph of the tree (geos.ed.ac.uk ifa_item1 item=46782, not fetched). Leaflet printed 2012 (P.I.O. 47/2012). Flagged: needs a dated recent photo; Department of Forests inspects its monument trees yearly. Witnessed: the Byzantine painted church (UNESCO 1985, frescoes 1192). No Commons photo of the trunk found. Writing pass 2026-11-02: verify id tro_001, reassigned to cyp_010; species normalised from 'Valonia Oak' to the canonical 'Aleppo Oak' (Valonia oak is Quercus ithaburensis subsp. macrolepis, a different tree)."
+      "location_precision": "approximate"
     },
     {
       "id": "cyp_011",
@@ -452,8 +445,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
-      "notes": "Not in the CY-FD outside-forest register (it is inside the state forest), so NO register_id. Sources, all seen on fetched pages: (1) visitcyprus.com Artemis trail page (Cyprus Tourism Organisation listing of the Department of Forests' nature trails): 'two perennial black pine trees (Pinus nigra subsp. pallasiana) that are around 500 years old'; it does not say which two or give girth or position. (2) Department of Forests flyer 'Trees Nature Monuments of Cyprus' (2012): Troodos black pines above 1,600 m are 'aged between 500 - 1000 years', dozens survive; general, not this tree. (3) Komoot (user tips, 2022 tour): highlight 'Ancient Black Pine, Troodos National Forest Park' at waypoint 1, 388 m from start: 'Very imposing pine with a huge trunk - compared to the other pine trees nearby'; another waypoint tip (6.03 km of 7.16 km loop) 'unbelievable 500 years old' (user content, not a source). (4) Commons photographs by Fry72 (CC BY-SA 4.0), taken 2023-03-08 with a geotag of 34.928899, 32.871073 (File 04), category 'Giant Black Pine, Troodos', 'Famous trees in Cyprus'; the brief's point 34.929439, 32.871075 lies about 60 m from that geotag. (5) Coordinator 2026-11-02: the Department of Forests' sign at the tree, photographed in File:Giant_Black_Pine_(Pinus_nigra),_Troodos,_Cyprus_01.jpg (2023-03-08), says in English that this giant black pine (Pinus nigra ssp. pallasiana) is more than 500 years old, was a young tree when Magellan was exploring at the beginning of the 16th century, that a fairly large number of such protected trees grow on the highest parts of the Troodos National Forest Park, and that the oldest is about 1,000 years; signed Forestry Department. This ties the 500-year figure to this trunk, so the identification flag is dropped and curation_status moved from flagged to ai_generated. No girth or height found anywhere; none recorded. ALIVE: photographed 2023-03-08 (Commons) and in a Medic Tree Mapping 2025 category; Komoot 2022. Pin approximate because two geotags 60 m apart and the photographer's position is not the trunk; a hiker with GPS at the tree would make it confirmed. PHOTO: open licence Commons files of this trunk exist: File:Giant Black Pine (Pinus nigra), Troodos, Cyprus 01.jpg to 05.jpg (all Fry72, CC BY-SA 4.0); photo field left to the builder. Writing pass 2026-11-02: verify id tro_002, reassigned to cyp_011; age_estimate text 'roughly 500 years' changed to the sign's 'more than 500 years' (age_min/max unchanged)."
+      "location_precision": "approximate"
     },
     {
       "id": "cyp_012",
@@ -492,14 +484,12 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Register CY-FD-19 (Pano Platres, Δρυς): girth_cm 140, height 20 m, age 208 (round estimate carried to ~2012), proclaimed 2004-01-30. The register's 140 cm looks like a DIAMETER mislabelled as girth: the International Oak Society report (trip late April to early May 2026, tree visited early in the trip, exact date not given) measures diameter 160 cm, circumference 505 cm, canopy spread 30 m, estimated height over 25 m, species Quercus infectoria subsp. veneris, nicknamed 'Cyprus 505', 'a perfectly vital oak, showing no signs of breakage or any form of decline'. girth_cm 505 and height 25 taken from that report (one observer's tape/estimate, not a register); the register's own 140 and 20 conflict. IDENTITY: IOS says only 'Pano Platres', end of a lane beside a property boundary; Evendo ('200 years old Oak tree', plus code VVP7+H2F, lat 34.8864494 lon 32.8625445) puts a 200-year oak by a dirt road 1.5 km east of Platres. Same village, same one register oak, same lane description: very probably one tree, but no source ties them explicitly and the register has no coordinate. Hotel/Trip.com pages claim '700 years old Oak tree' near Platres (unverified, not used). AGE: register 200-ish is a round official figure; a 505 cm girth Valonia oak could be older; do not sharpen, quote 'over two centuries'. ALIVE: April/May 2026 (IOS). Pin: Evendo's coordinate, approximate (listing coordinate, not a GPS at the trunk). No Commons photo checked. Writing pass 2026-11-02: verify id tro_003, reassigned to cyp_012; species normalised from 'Valonia Oak' to the canonical 'Aleppo Oak'."
+      "location_precision": "approximate"
     },
     {
       "id": "cyp_013",
       "name": "The Agia Solomoni wishing tree",
       "species": "Terebinth (Pistacia terebinthus)",
-      "age_estimate": null,
       "age_min": null,
       "age_max": null,
       "age_basis": null,
@@ -532,14 +522,12 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Flagged: age and girth not documented anywhere seen. Species: cyprusalive.com says 'a huge Terebinth tree above the catacomb' (no pistachio mention; Cyprus terebinths are sometimes P. atlantica, not settled). Tradition (all three pages): visitors hang coloured rags and cloth on its branches as offerings to Saint Solomoni; cyprusalive says many believe it cures eye problems, visitcyprus says it is believed to have curative powers; also called the Hankie or Wishing tree. It grows out of the stone catacomb complex directly above the entrance. ALIVE: Commons photos dated 2023-03-04 (Agia Solomoni Catacombs, Pafos, Kypr 01 and 02, CC BY-SA 4.0) show the multi-stemmed trunk, bare in March, loaded with rags, standing; viewed. PIN: Commons geotags (34.76168, 32.41247 and neighbours within 40 m, many files) cluster on the site; visitcyprus lists 34.761092, 32.424012 which is about 1.1 km east and wrong in longitude, ignore. Coordinator 2026-11-02: pin moved to the geotag of File:Agia_Solomoni_Catacombs,_Pafos,_Kypr_09.jpg (the full tree), 34.761349, 32.412362; kept approximate with the 30 m site (photographer's position, not given as confirmed). Site is one small fenced catacomb court, the tree is the only large tree over it. lifecheck RECENT hit was an unrelated pine, not used. Not in the Forestry Department register. SECOND SOURCE: wotanland.blogspot.com, post dated 2024-07-11, visit July 2024 (earlier visit 2022), calls it a terebinth (Pistacia terebinthus), a large tree overhanging a wall on Fabrika Hill by the cave entrances, tied with hundreds of strips of cloth, scarves, masks and sometimes small padlocks; masonry built around the bole; confirms alive in July 2024. Same blog says the public areas are littered and graffitied and the spring entrance is roped off (the tree itself is visible from outside the fence). Species is two-source (cyprusalive, wotanland), age undocumented. Writing pass 2026-11-02: verify id pap_001, reassigned to cyp_013; photo field left to the builder."
+      "location_precision": "approximate"
     },
     {
       "id": "cyp_014",
       "name": "Aphrodite's Oak",
       "species": "Aleppo Oak (Quercus infectoria subsp. veneris)",
-      "age_estimate": null,
       "age_min": null,
       "age_max": null,
       "age_basis": null,
@@ -566,8 +554,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "notes": "Flagged: age undocumented, access/trailhead details thin. Identity: the Commons category 'Famous Quercus Infectoria, Neo Chorio' (geotag 35.059178, 32.326401; photos by Fry72, 2023-03-07, CC BY-SA 4.0, File:Famous Quercus Infectoria, Néo Chōrió, Cyprus 01 to 05.jpg) and the komoot highlight 'Aphrodite's Oak and Water Fountain' (35.05925, 32.326217) are the same tree, 16 m apart (not viewed). Independent sources: International Oak Society trip report, April-May 2026, calls the 'Aphrodite and Adonis oak' Q. infectoria subsp. veneris, trunk diameter 201 cm, canopy spread 28 m, standing alone in Mediterranean scrubland, intact branches, 'excellent vitality', 'the most impressive oak I encountered in Cyprus', at the fork of the Aphrodite and Adonis trails. girth_cm 631 is diameter 201 cm times pi (circumference at unstated height, from a trip report, not an official register). ALIVE: IOS report spring 2026; komoot tip 2026-10-10 'ancient oak with a very large trunk diameter at the junction of the Aphrodite and Adonis trail'; Commons 2023. AGE: no source. A komoot comment says 'French tree, 800 years old' (2022, unverified, almost certainly garbled, not usable). Not in the Forestry Department register as far as the register's village names show (Neo Chorio absent). PIN: lone tree at a trail junction, two independent coordinates (Commons geotag, komoot) within 16 m agree, so one clear crown; confirmed. Commons photo of the actual trunk: File:Famous Quercus Infectoria, Néo Chōrió, Cyprus 01.jpg (CC BY-SA 4.0, 2023-03-07). Writing pass 2026-11-02: verify id pap_002, reassigned to cyp_014; photo field left to the builder."
+      "location_precision": "confirmed"
     },
     {
       "id": "cyp_015",
@@ -612,8 +599,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Flagged: register figures may belong to the other Simou entry; coordinates are the village's, not the tree's. REGISTER: Simou has two Forestry Department terebinths, CY-FD-26 (girth 615 cm, height 16 m, age 1008 yrs, proclaimed 2004-01-30) and CY-FD-73 (454 cm, 16 m, 500 yrs, proclaimed 2011-01-28). The one in the square is probably CY-FD-26, because yurtsincyprus calls the square tree 'over 1000 year old', but no source links the register id to the square tree, so girth 615 and height 16 are likely not certain; CY-FD-73 may stand elsewhere in the village (unchecked, lead). Register ages are round estimates carried to about 2012. Sources: yurtsincyprus.com says it is a Pistacia atlantica in Simou Village Square, over 1000 years old, with Panagia Chryseleousa church (built 1949) 'dominates the square and the village skyline'; Cyprus Mail restaurant review (2023-08-17) calls it a 'protected Pistacia Atlantica tree', 'colossal', complete shade, 'said to be the oldest tree in Cyprus', taverna O Tremythas on the same square, diners sit at tables outside under it, so alive in summer 2023; Wikipedia Simou says a tree in the village is said to be the oldest in Cyprus (cites terrabook, weak). The claim 'oldest in Cyprus' competes with Apesia (about 1,500 years, Cyprus Post centennial stamp, girth 6.8 m), do not repeat it for Simou. Age min/max reflect register 1008 vs 500 for the two Simou trees and the tourist 'over 1000'. PIN: Wikipedia village coordinates 34.94139, 32.50472 (village of about 170 people, the square is in the centre); tree-level position unknown. Terebinth in Cyprus is locally called tremithos. Not viewed; no Commons photo found (Commons search was rate-limited). Writing pass 2026-11-02: verify id pap_003, reassigned to cyp_015; official_register id set to CY-FD-26 (the probable match, flagged above) with the data.gov.cy dataset url; age_basis set to source. The 'oldest tree in Cyprus' claim is not repeated."
+      "location_precision": "approximate"
     }
   ]
 }
