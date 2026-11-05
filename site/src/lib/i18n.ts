@@ -255,7 +255,6 @@ export interface UIStrings {
   plusPickTwo: string;
   /** The four options, keyed as the database stores them; shown shuffled. */
   plusOptions: { walks: string; offline: string; season: string; log: string };
-  plusNone: string;
   /** "Something else", then a field (Hidde, 2026-11-05). */
   plusOther: string;
   plusOtherPh: string;
@@ -739,7 +738,6 @@ const EN: UIStrings = {
   plusChoiceTitle: "Which would you want most?",
   plusPickTwo: "Pick up to two.",
   plusOptions: { walks: "Recommended tree walks for a city trip", offline: "Download offline maps", season: "Seasonal alerts when trees are at their best", log: "A richer log of every tree you've collected" },
-  plusNone: "None of these",
   plusOther: "Something else",
   plusOtherPh: "What would you want?",
   plusSend: "Send",
@@ -1363,7 +1361,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusChoiceTitle: "¿Qué querrías más?",
     plusPickTwo: "Elige hasta dos.",
     plusOptions: { walks: "Paseos de árboles recomendados para una escapada urbana", offline: "Descargar mapas sin conexión", season: "Avisos de temporada cuando los árboles están en su mejor momento", log: "Un registro más completo de cada árbol que has coleccionado" },
-    plusNone: "Ninguna de estas",
     plusOther: "Otra cosa",
     plusOtherPh: "¿Qué te gustaría?",
     plusSend: "Enviar",
@@ -1724,7 +1721,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusChoiceTitle: "Cosa vorresti di più?",
     plusPickTwo: "Scegline fino a due.",
     plusOptions: { walks: "Passeggiate tra gli alberi consigliate per un viaggio in città", offline: "Scaricare mappe offline", season: "Avvisi stagionali quando gli alberi danno il meglio", log: "Un diario più ricco di ogni albero che hai collezionato" },
-    plusNone: "Nessuna di queste",
     plusOther: "Qualcos'altro",
     plusOtherPh: "Cosa vorresti?",
     plusSend: "Invia",
@@ -2085,7 +2081,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusChoiceTitle: "Wat zou je het liefst willen?",
     plusPickTwo: "Kies er maximaal twee.",
     plusOptions: { walks: "Aanbevolen bomenwandelingen voor een stedentrip", offline: "Offline kaarten downloaden", season: "Seizoensmeldingen als bomen op hun mooist zijn", log: "Een rijker logboek van elke boom die je verzamelde" },
-    plusNone: "Geen van deze",
     plusOther: "Iets anders",
     plusOtherPh: "Wat zou je willen?",
     plusSend: "Versturen",
@@ -2446,7 +2441,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusChoiceTitle: "Was hättest du am liebsten?",
     plusPickTwo: "Wähle bis zu zwei.",
     plusOptions: { walks: "Empfohlene Baumspaziergänge für eine Städtereise", offline: "Offline-Karten herunterladen", season: "Saisonhinweise, wenn Bäume am schönsten sind", log: "Ein reicheres Logbuch aller Bäume, die du gesammelt hast" },
-    plusNone: "Nichts davon",
     plusOther: "Etwas anderes",
     plusOtherPh: "Was hättest du gern?",
     plusSend: "Senden",
@@ -2807,7 +2801,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusChoiceTitle: "O que mais gostaria de ter?",
     plusPickTwo: "Escolha até duas.",
     plusOptions: { walks: "Passeios de árvores recomendados para uma escapadinha urbana", offline: "Descarregar mapas offline", season: "Alertas de estação quando as árvores estão no seu melhor", log: "Um registo mais rico de cada árvore que colecionou" },
-    plusNone: "Nenhuma destas",
     plusOther: "Outra coisa",
     plusOtherPh: "O que gostaria?",
     plusSend: "Enviar",
@@ -3168,7 +3161,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusChoiceTitle: "Que voudriez-vous le plus ?",
     plusPickTwo: "Choisissez-en deux au maximum.",
     plusOptions: { walks: "Des promenades d'arbres conseillées pour un séjour en ville", offline: "Télécharger des cartes hors ligne", season: "Des alertes de saison quand les arbres sont à leur plus beau", log: "Un carnet plus riche de chaque arbre que vous avez collectionné" },
-    plusNone: "Aucune de ces options",
     plusOther: "Autre chose",
     plusOtherPh: "Qu'aimeriez-vous ?",
     plusSend: "Envoyer",
@@ -3528,7 +3520,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusChoiceTitle: "いちばん欲しいのはどれですか？",
     plusPickTwo: "2つまで選べます。",
     plusOptions: { walks: "街歩きにおすすめの巨樹散歩コース", offline: "オフラインマップのダウンロード", season: "木がいちばん美しい時期のお知らせ", log: "集めたすべての木の、より充実した記録" },
-    plusNone: "どれも違う",
     plusOther: "その他",
     plusOtherPh: "どんな機能がほしいですか？",
     plusSend: "送信",

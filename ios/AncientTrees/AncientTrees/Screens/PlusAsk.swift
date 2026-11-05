@@ -62,7 +62,7 @@ struct PlusQuestionSheet: View {
     @State private var idea = ""
     /// What "Something else" says (Hidde, 2026-11-05).
     @State private var otherText = ""
-    /// Up to two (Hidde, 2026-11-05: "max 2 invullen is goed"); "none" alone.
+    /// Up to two (Hidde, 2026-11-05: "max 2 invullen is goed").
     @State private var choices: [String] = []
     @State private var order: [(key: String, label: String)] = PlusAnswers.options.shuffled()
     @State private var signingIn = false
@@ -152,14 +152,13 @@ struct PlusQuestionSheet: View {
                     .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
                     .accessibilityIdentifier("plus-other-text")
             }
-            optionRow("none", "None of these", quiet: true)
         }
         .padding(.top, 20)
     }
 
     private func optionRow(_ key: String, _ label: String, quiet: Bool = false) -> some View {
         let on = choices.contains(key)
-        let full = !on && choices.count >= 2 && key != "none" && !choices.contains("none")
+        let full = !on && choices.count >= 2
         return Button { toggle(key) } label: {
             HStack(spacing: 12) {
                 Image(systemName: on ? "checkmark.circle.fill" : "circle")
@@ -184,12 +183,11 @@ struct PlusQuestionSheet: View {
         .accessibilityIdentifier("plus-option-\(key)")
     }
 
-    /// "None of these" stands alone: ticking it clears the others, ticking
-    /// another clears it; at two the rest wait greyed out (as the website).
+    /// Up to two; at two the rest wait greyed out (as the website). "None of
+    /// these" left with "Something else" (Hidde, 2026-11-05: "6 options are
+    /// too much").
     private func toggle(_ key: String) {
         if let i = choices.firstIndex(of: key) { choices.remove(at: i); return }
-        if key == "none" { choices = ["none"]; return }
-        choices.removeAll { $0 == "none" }
         if choices.count < 2 { choices.append(key) }
     }
 
