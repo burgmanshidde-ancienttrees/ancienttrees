@@ -25,6 +25,7 @@ import { DATA } from "./data-dir";
 import { slugify, legacySlugify } from "./slug";
 import { cityHasQuestionPage, QUESTION_PAGE_MIN_TREES } from "./question-page";
 import { treeIsAppOnly } from "./app-first";
+import { placeHasPage } from "./place-page";
 import { QUESTION_SLUG, translatedLanguages, languagesForCity } from "./i18n";
 
 const BASE_URL = "https://ancienttrees.app";
@@ -419,6 +420,18 @@ export function buildRedirectStubs(): RedirectStub[] {
   const publishedSet = new Set(published);
 
   for (const slug of published) {
+    // A place with one tree has no page (lib/place-page, Hidde 2026-11-05):
+    // /<place>, /<place>/ and the old /cities/<place>/ all go to the tree.
+    const webTrees = readCityTrees(slug);
+    if (!placeHasPage(slug, webTrees.length) && webTrees.length === 1) {
+      const treeSlug = slugify(webTrees[0].name);
+      const canonical = `${BASE_URL}/${slug}/${treeSlug}`;
+      const title = "Moved: this tree";
+      stubs.push({ outputPath: `${slug}.html`, targetRelative: `${slug}/${treeSlug}`, canonical, title });
+      stubs.push({ outputPath: `${slug}/index.html`, targetRelative: treeSlug, canonical, title });
+      stubs.push({ outputPath: `cities/${slug}/index.html`, targetRelative: `../../${slug}/${treeSlug}`, canonical, title });
+      continue;
+    }
     const canonical = `${BASE_URL}/${slug}`;
     const title = `Moved: Ancient Trees in ${cityName(slug)}`;
     stubs.push({ outputPath: `cities/${slug}/index.html`, targetRelative: `../../${slug}`, canonical, title });

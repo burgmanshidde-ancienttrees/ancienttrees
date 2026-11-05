@@ -40,6 +40,7 @@ import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor, nearbyCitiesFor, cityCentre } from "../lib/other-cities";
 import { publishedStatePages, usStateOf } from "../lib/us-states";
 import { hreflangForCity, ui } from "../lib/i18n";
+import { placeHasPage } from "../lib/place-page";
 import LanguagePicker from "../components/LanguagePicker.astro";
 
 function esc(s: string): string {
@@ -63,7 +64,10 @@ export async function getStaticPaths() {
   // which is also how every state page is reached from below.
   const statePages = publishedStatePages(allCities, await getCollection("states"), (c) => renderableTrees(c).length);
 
-  return allCities.map((city) => {
+  // A place with one tree on the web has no page (lib/place-page, 2026-11-05):
+  // it redirects to the tree. allCities stays whole for the props below, so
+  // nearby-place lists and counts still see every place.
+  return allCities.filter((city) => placeHasPage(city.id, renderableTrees(city).length)).map((city) => {
     const canonical = `${BASE_URL}/${city.id}`;
     // Counted over the trees the page shows: an app-only tree (lib/app-first,
     // 2026-11-05) is not on it, so "six trees" stays true at six.

@@ -246,6 +246,16 @@ def question_pages_off():
         return False
 
 
+def place_page_min_trees():
+    """PLACE_PAGE_MIN_TREES from site/src/lib/place-page.ts, read as text."""
+    try:
+        with open(os.path.join(ROOT, "site", "src", "lib", "place-page.ts"), encoding="utf-8") as fh:
+            m = re.search(r"^export const PLACE_PAGE_MIN_TREES = (\d+);", fh.read(), re.M)
+            return int(m.group(1)) if m else 1
+    except OSError:
+        return 1
+
+
 def translations_kept():
     """The (lang, city) pairs whose overlay the build renders
     (data/translations-kept.json, Hidde 2026-11-05: 'de website hard
@@ -371,6 +381,11 @@ def main():
         langs_real = [lang for lang in LANGS if slug in translated[lang]]
         total_pages += (1 + has_q + n) * (1 + len(langs_real))
         city_urls = [f"{BASE}/{slug}"] + [f"{BASE}/{lang}/{slug}" for lang in langs_real]
+        # A place with one tree and no built translation has no page
+        # (site/src/lib/place-page.ts, Hidde 2026-11-05): /<place> is a
+        # redirect to the tree, so it is on no list.
+        if n < place_page_min_trees() and not langs_real:
+            city_urls = []
         q_urls = ([f"{BASE}/{slug}/{QSLUG['en']}"] + [f"{BASE}/{lang}/{slug}/{QSLUG[lang]}" for lang in langs_real]) if has_q else []
         indexable |= set(city_urls) | set(q_urls)
         for ts in tslugs:
@@ -462,7 +477,7 @@ def main():
         #     when one of its trees holds reader content, roster or not.
         if READER_ONLY:
             if any(reader_content(t) for t in trees):
-                groups["strict_cut"] = [u for u in groups["strict_cut"] if u != city_urls[0]]
+                groups["strict_cut"] = [u for u in groups["strict_cut"] if not city_urls or u != city_urls[0]]
             else:
                 groups["reader_cut"] += city_urls
         # 3. Question pages: ~45 percent template shared with every other
@@ -618,7 +633,8 @@ def main():
         d = json.load(open(path))
         trees = [t for t in d.get("trees") or [] if renderable(t)]
         n_kept = sum(1 for t in trees if f"/{slug}/{slugify(t['name'])}" not in paths_before)
-        place_kept = f"/{slug}" not in paths_before
+        # A place with no page (one tree, place-page.ts) is not "kept": it has no page in Google.
+        place_kept = f"/{slug}" not in paths_before and len(trees) >= place_page_min_trees()
         if n_kept or place_kept:
             kept[slug] = {"impressions": roster_imps.get(slug, 0), "kept_trees": n_kept,
                           "trees": len(trees), "place_page": place_kept}

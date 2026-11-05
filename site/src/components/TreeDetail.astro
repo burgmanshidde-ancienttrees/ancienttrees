@@ -118,7 +118,9 @@ const spCommon = m ? m[1] : p.species;
 // always went to the App Store. AllTrails does the same with its link domains.
 const openUrl = `${OPEN_APP_URL}?tree=${encodeURIComponent(tree.id)}`;
 const google = `https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}&travelmode=walking`;
-const expandUrl = `${p.cityUrl}#tree=${encodeURIComponent(tree.id)}`;
+// A one-tree place's cityUrl is already the explore map at this tree
+// (lib/place-page, 2026-11-05), which carries its own #map= hash.
+const expandUrl = p.cityUrl.includes("#") ? p.cityUrl : `${p.cityUrl}#tree=${encodeURIComponent(tree.id)}`;
 const movedTemplate = U.pinMoved(987654).replace("987654", "{m}");
 const visibleCrumbs = p.crumbs.slice(0, -1);
 // A PORTRAIT OR SQUARE LEAD on a desktop stands beside the facts at its own

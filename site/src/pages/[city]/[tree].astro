@@ -23,6 +23,7 @@ import { mapHead } from "../../lib/map";
 import { treePageScript } from "../../lib/tree-page-js";
 import TreeDetail from "../../components/TreeDetail.astro";
 import { hreflangForCity, ui } from "../../lib/i18n";
+import { placeHasPage, exploreAt } from "../../lib/place-page";
 import { placeDistrict } from "../../lib/place-line";
 
 function esc(s: string): string {
@@ -114,6 +115,11 @@ const tslug = tslugs[tree.id];
 const loc = tree.location;
 const age = ageToken(tree);
 const canonical = `${BASE_URL}/${cslug}/${tslug}`;
+// A place with one tree has no page of its own (lib/place-page, Hidde
+// 2026-11-05: "ja dat mag"): back and "bigger map" go to the explore map at
+// this tree, and the place name in the crumbs is text, not a link.
+const placePage = placeHasPage(cslug, allTrees.length);
+const cityUrl = placePage ? `/${cslug}` : exploreAt(loc.latitude!, loc.longitude!);
 
 // A tree named directly after its species ("The Amur Cork Tree", species
 // "Amur Cork Tree (Phellodendron amurense)") makes any candidate that joins
@@ -156,7 +162,7 @@ const countryUrl = countryPages.has(country) ? `${BASE_URL}/${countryPages.get(c
 const crumbItems: [string, string | null][] = [
   ["Home", BASE_URL],
   [country, countryUrl],
-  [cityName, `${BASE_URL}/${cslug}`],
+  [cityName, placePage ? `${BASE_URL}/${cslug}` : null],
   [tree.name, null],
 ];
 
@@ -265,7 +271,7 @@ const scripts = treePageScript(loc.latitude!, loc.longitude!, tree.id) + WORTHIT
     district={district}
     country={country}
     countryUrl={countryUrl ? `/${countryPages.get(country)}` : null}
-    cityName={cityName} cityUrl={`/${cslug}`} crumbs={crumbItems} canonical={canonical}
+    cityName={cityName} cityUrl={cityUrl} crumbs={crumbItems} canonical={canonical}
     parkName={parkPage ? (parkPage.name || parkPage.park) : null}
     parkUrl={parkPage ? `/parks/${parkPage.slug}` : null}
     nearNotes={nearNotes}
