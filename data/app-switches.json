@@ -1,0 +1,4 @@
+{
+ "note": "Switches the app and the website read without a new release (Hidde, 2026-11-05: \"kunnen we deze vragenlijst uit de app halen zonder een release\"). The website reads this at build time (site/src/lib/switches.ts); the app reads it from /api/version.json on every launch and every return to the app (Kit/AppSwitches.swift). Set a switch to false and deploy the website: the next launch of every installed app follows. plus_ask: the Ancient Trees Plus question (city pages, Settings).",
+ "plus_ask": true
+}

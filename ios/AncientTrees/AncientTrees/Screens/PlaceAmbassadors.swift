@@ -21,8 +21,11 @@ struct PlaceAsksBox: View {
     var body: some View {
         VStack(spacing: 0) {
             PlaceAmbassadors(slug: slug, title: title, catalogue: catalogue)
-            Rectangle().fill(Brand.hairline).frame(height: 1)
-            PlusRow(city: title)
+            // Off from the server without a release (Kit/AppSwitches.swift).
+            if AppSwitches.shared.plusAsk {
+                Rectangle().fill(Brand.hairline).frame(height: 1)
+                PlusRow(city: title)
+            }
         }
         .background(Brand.surface, in: .rect(cornerRadius: 14))
         .overlay {

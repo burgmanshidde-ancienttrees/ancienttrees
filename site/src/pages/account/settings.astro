@@ -23,6 +23,9 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { BASE_URL } from "../../lib/schema";
 import Sheet from "../../components/Sheet.astro";
 import PlusAsk from "../../components/PlusAsk.astro";
+import { switchOn } from "../../lib/switches";
+// The Plus row follows data/app-switches.json, as the app does.
+const plusOn = switchOn("plus_ask");
 import { icon } from "../../lib/icons";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
@@ -101,7 +104,7 @@ const crumbItems: [string, string | null][] = [
     <div class="acct-rows">
       {/* The Plus question, first in Help as in the app's Settings (Hidde,
           2026-11-05: "bouw ook"); PlusAsk below carries the sheet. */}
-      <button type="button" class="set-row plus-row" data-from="settings"><Fragment set:html={icon("sparkle", "fill", "ic set-ic")} /><span class="set-label">Ancient Trees Plus</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></button>
+{plusOn && (      <button type="button" class="set-row plus-row" data-from="settings"><Fragment set:html={icon("sparkle", "fill", "ic set-ic")} /><span class="set-label">Ancient Trees Plus</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></button>)}
       <a class="set-row" href="/contribute?kind=feedback"><Fragment set:html={icon("chat-circle", "bold", "ic set-ic")} /><span class="set-label">Send feedback</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></a>    </div>
 
     <p class="acct-group">About</p>

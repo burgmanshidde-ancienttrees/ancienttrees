@@ -989,7 +989,10 @@ struct ContentView: View {
         }
         // A launch with no signal reads nothing; coming back to the app with
         // one tries again, once, if the profile never arrived.
+        .task { await AppSwitches.shared.refresh() }
         .onChange(of: scenePhase) { _, phase in
+            // Switches from the server, at every return (Kit/AppSwitches.swift).
+            if phase == .active { Task { await AppSwitches.shared.refresh() } }
             if phase == .active, account.isSignedIn, !profiles.meLoaded {
                 Task { await reloadTheAccount() }
             }

@@ -383,6 +383,7 @@ struct ProfileView: View {
                 // THE PLUS QUESTION (Hidde, 2026-11-04): a row, the way a
                 // promise belongs in Settings (2026-08-25), first in Help
                 // because it asks for help choosing. PlusAsk.swift.
+                if AppSwitches.shared.plusAsk {
                 Button {
                     Measure.event("plus-open", ["from": "settings"])
                     askingPlus = true
@@ -402,6 +403,7 @@ struct ProfileView: View {
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("profile-plus")
                 Divider().padding(.leading, 48)
+                }
                 // HIS ASK, 2026-08-26: a general feedback button. The open
                 // answers are the material the Plus line gets designed from
                 // (drafts/PLUS_THINKING.md).

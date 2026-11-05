@@ -30,6 +30,7 @@ import { icon } from "../lib/icons";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import Sheet from "./Sheet.astro";
 import { ui } from "../lib/i18n";
+import { switchOn } from "../lib/switches";
 
 interface Props {
   lang?: string; city: string;
@@ -38,9 +39,12 @@ interface Props {
   row?: boolean;
 }
 const { lang = "en", city, row = true } = Astro.props as Props;
+// Off in data/app-switches.json: no row, no sheet (lib/switches.ts).
+const on = switchOn("plus_ask");
 const U = ui(lang);
 const OPTS = ["walks", "offline", "season", "log"] as const;
 ---
+{on && (<Fragment>
 {row && (
 <div class="plus-bar">
   {/* ONE LINE in the city page's white box, under the ambassador (direction
@@ -221,6 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+</Fragment>)}
 
 <style>
   /* SPACING (Hidde, 2026-11-05: "sommige dingen staan te dicht op elkaar").

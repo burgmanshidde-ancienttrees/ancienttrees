@@ -6,6 +6,7 @@ import { getCollection } from "astro:content";
 import { cityIsInFeed } from "../../lib/trees";
 import { feedTrees, feedVersion } from "../../lib/app-feed";
 import { EARLY_ADOPTER_UNTIL } from "../../lib/early-adopter";
+import { switches } from "../../lib/switches";
 // EVERY FEED THE APP DOWNLOADS, not just the trees.
 //
 // The version was a hash of the tree data alone, so a change to any other feed
@@ -48,5 +49,8 @@ export async function GET() {
     // means every account does (lib/early-adopter.ts). The app reads it here
     // on every launch, so moving the date never needs a new build.
     early_adopter_until: EARLY_ADOPTER_UNTIL,
+    // What the app shows or hides without a new build (data/app-switches.json,
+    // lib/switches.ts; Kit/AppSwitches.swift reads it).
+    switches: switches(),
   }), { headers: { "Content-Type": "application/json" } });
 }
