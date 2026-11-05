@@ -29,7 +29,7 @@
 // quietly disagree with the website's.
 import { getCollection } from "astro:content";
 import { cityIsInFeed, feedTreesOf, slugify, type CityEntry } from "../../lib/trees";
-import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
+import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePhoto, faceTreesOf } from "../../lib/images";
 import { COUNTRY_MIN_CITIES, groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey, parkTitle } from "../../lib/parks";
 import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
