@@ -203,7 +203,37 @@ def main():
         section("Search appearance", lambda: by(["searchAppearance"]))
         return
 
+    def open_against_tagged():
+        # 2026-11-05, the second fall: did it hit the pages we keep open as
+        # hard as the ~940 tagged pages Google still showed? Same fall on both
+        # means a site-level judgement; tagged only means Google read our tag.
+        import json as _json
+        import os as _os
+        root = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+        with open(_os.path.join(root, "data", "noindex.json")) as f:
+            nd = _json.load(f)
+        tagged = {p.rstrip("/") or "/" for p in (nd.get("paths", []) if isinstance(nd, dict) else nd)}
+        rows = q(access, {"startDate": (today - datetime.timedelta(days=9)).isoformat(),
+                          "endDate": end, "dimensions": ["date", "page"], "rowLimit": 25000,
+                          "dataState": "all"})
+        per = {}
+        for r in rows:
+            day, url = r["keys"]
+            path = urllib.parse.urlparse(url).path.rstrip("/") or "/"
+            k = "tagged" if path in tagged else "open"
+            d = per.setdefault(day, {"open": [0, 0, 0], "tagged": [0, 0, 0]})
+            d[k][0] += int(r["impressions"])
+            d[k][1] += int(r["clicks"])
+            d[k][2] += 1
+        print("| Day | Open impr | Open clicks | Open pages | Tagged impr | Tagged clicks | Tagged pages |")
+        print("|---|---:|---:|---:|---:|---:|---:|")
+        for day in sorted(per):
+            o, t = per[day]["open"], per[day]["tagged"]
+            print("| %s | %d | %d | %d | %d | %d | %d |" % (day, o[0], o[1], o[2], t[0], t[1], t[2]))
+        print("\nTagged = on data/noindex.json as committed now, not as it stood that day.")
+
     print("# SEO diagnosis, %s" % today.isoformat())
+    section("0. Open against tagged pages, day by day", open_against_tagged)
     section("1. Day by day, final against fresh data", days)
     section("2a. By country", lambda: split_by("country"))
     section("2b. By device", lambda: split_by("device", 3))
