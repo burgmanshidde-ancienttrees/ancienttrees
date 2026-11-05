@@ -19,6 +19,20 @@ public final class AppSwitches {
     /// The Ancient Trees Plus question: the row on a city and in Settings.
     public private(set) var plusAsk = true
 
+    /// This install answered the Plus question, so its rows go (Hidde,
+    /// 2026-11-05: "ja dit mag je wel lokkaal opslaan"; data/cross-device.json
+    /// plus.answered.v1). The one flag here that is the device's, not the
+    /// server's.
+    public private(set) var plusAnswered = UserDefaults.standard.bool(forKey: "plus.answered.v1")
+
+    /// Show the Plus question: switched on and not yet answered here.
+    public var showPlus: Bool { plusAsk && !plusAnswered }
+
+    public func markPlusAnswered() {
+        plusAnswered = true
+        UserDefaults.standard.set(true, forKey: "plus.answered.v1")
+    }
+
     public func refresh() async {
         // -plusoff draws the app as a switched-off feed would, for a look
         // without touching the server.

@@ -128,6 +128,16 @@
     "at_consent": {
       "verdict": "device",
       "why": "This browser's answer to the cookie bar (ConsentBar.astro, 2026-10-12). Consent to cookies is given per browser by law and by convention, and it is asked before anybody has signed in; an account-wide copy would carry a yes to a browser that was never asked."
+    },
+    "plus.answered.v1": {
+      "verdict": "device",
+      "why": "Whether this install answered the Ancient Trees Plus question, so its row on a city and in Settings goes away after the answer (Hidde, 2026-11-05: \"ja dit mag je wel lokkaal opslaan\", on \"should the help create ancient trees plus thing go away once a user has answered it?\"). Device by his word: the answer itself is anonymous (plus_answers has no account), so there is nothing on the server to hang it under, and like reviewPrompt.fired it is a question asked once per install. App: Screens/PlusAsk.swift.",
+      "off": "Nothing: a flag on this install, gone with the app; a new install asks again."
+    },
+    "at_plus_answered": {
+      "verdict": "device",
+      "why": "Whether this install answered the Ancient Trees Plus question, so its row on a city and in Settings goes away after the answer (Hidde, 2026-11-05: \"ja dit mag je wel lokkaal opslaan\", on \"should the help create ancient trees plus thing go away once a user has answered it?\"). Device by his word: the answer itself is anonymous (plus_answers has no account), so there is nothing on the server to hang it under, and like reviewPrompt.fired it is a question asked once per install. Website: components/PlusAsk.astro, localStorage.",
+      "off": "Nothing: cleared with the browser's site data; a new browser asks again."
     }
   }
 }

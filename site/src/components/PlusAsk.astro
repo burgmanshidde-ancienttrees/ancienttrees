@@ -140,6 +140,17 @@ document.addEventListener('DOMContentLoaded', function() {
     show(step || 'idea');
     dlg.showModal();
   }
+  // ANSWERED HERE: the rows go (Hidde, 2026-11-05: "ja dit mag je wel lokkaal
+  // opslaan"; data/cross-device.json at_plus_answered). The app keeps the same
+  // flag on its install.
+  function answered() { try { return localStorage.getItem('at_plus_answered') === '1'; } catch (e) { return false; } }
+  function hideRows() {
+    document.querySelectorAll('.plus-row').forEach(function(r) {
+      var bar = r.closest('.plus-bar'); (bar || r).hidden = true;
+    });
+  }
+  if (answered()) hideRows();
+  dlg.addEventListener('close', function() { if (answered()) hideRows(); });
   document.querySelectorAll('.plus-row').forEach(function(r) {
     r.addEventListener('click', function() { from = r.getAttribute('data-from') || 'city'; track('plus-open', from); open('idea'); });
   });
@@ -189,6 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
       body: JSON.stringify(row)
     }).catch(function() {});
     track('plus-answer', picked.join(','));
+    try { localStorage.setItem('at_plus_answered', '1'); } catch (e) {}
     show('thanks');
   });
   function onList() {
@@ -233,6 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
      scoped class, which left 4px over the field and 8 under the choice title;
      :global(.plus-dialog) wins back the 20 the sheet uses between its parts,
      and the buttons keep their own margin above them. */
+  :global(.plus-bar[hidden]), :global(.plus-row[hidden]) { display: none !important; }
   :global(.plus-dialog) .plus-idea { margin: 20px 0 0; }
   :global(.plus-dialog) .plus-pick { margin-bottom: 20px; }
   :global(.plus-dialog) .plus-opts { margin: 0; }

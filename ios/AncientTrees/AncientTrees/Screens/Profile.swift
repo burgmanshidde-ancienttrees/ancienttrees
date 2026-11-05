@@ -383,7 +383,7 @@ struct ProfileView: View {
                 // THE PLUS QUESTION (Hidde, 2026-11-04): a row, the way a
                 // promise belongs in Settings (2026-08-25), first in Help
                 // because it asks for help choosing. PlusAsk.swift.
-                if AppSwitches.shared.plusAsk {
+                if AppSwitches.shared.showPlus {
                 Button {
                     Measure.event("plus-open", ["from": "settings"])
                     askingPlus = true

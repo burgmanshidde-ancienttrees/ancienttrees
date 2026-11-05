@@ -198,6 +198,8 @@ struct PlusQuestionSheet: View {
         let other = picked.contains("other") ? otherText : ""
         Measure.event("plus-answer", ["choice": picked.joined(separator: ",")])
         Task { await PlusAnswers.answer(choices: picked, idea: text, other: other, shownOrder: shown, city: city, openedFrom: from) }
+        // Answered here: the rows go once this sheet closes (AppSwitches).
+        AppSwitches.shared.markPlusAnswered()
         step = .thanks
     }
 

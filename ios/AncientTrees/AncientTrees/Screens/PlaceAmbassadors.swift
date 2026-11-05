@@ -22,7 +22,7 @@ struct PlaceAsksBox: View {
         VStack(spacing: 0) {
             PlaceAmbassadors(slug: slug, title: title, catalogue: catalogue)
             // Off from the server without a release (Kit/AppSwitches.swift).
-            if AppSwitches.shared.plusAsk {
+            if AppSwitches.shared.showPlus {
                 Rectangle().fill(Brand.hairline).frame(height: 1)
                 PlusRow(city: title)
             }
