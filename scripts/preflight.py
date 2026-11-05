@@ -74,6 +74,15 @@ def check_city(path):
         n = len(d.get("trees", []))
     out = []
 
+    # The content schema (site/src/content.config) refuses anything else and the
+    # whole deploy dies on it; found 2026-11-05 when "verified" in Atlanta,
+    # Nashville, Tampa, Jacksonville and Orlando stopped three builds.
+    for t in d.get("trees", []):
+        cs = t.get("curation_status")
+        if cs not in ("ai_generated", "hidde_approved", "flagged"):
+            out.append("%s/%s: curation_status %r is not one of ai_generated|hidde_approved|flagged, the build refuses it"
+                       % (slug, t.get("id"), cs))
+
     intro = (d.get("intro") or "").strip()
     if not intro:
         out.append("%s: no intro, Contract C requires 60-100 words" % slug)
