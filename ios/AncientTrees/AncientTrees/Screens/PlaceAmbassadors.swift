@@ -62,9 +62,9 @@ struct PlaceAmbassadors: View {
     @ViewBuilder private func personRow(_ name: String, profile: String?, last: Bool) -> some View {
         let row = HStack(spacing: 12) {
             Text(String(name.trimmingCharacters(in: .whitespaces).prefix(1)).uppercased())
-                .font(.system(size: 13, weight: .bold))
+                .font(.system(size: 15, weight: .bold))
                 .foregroundStyle(Brand.moss)
-                .frame(width: 30, height: 30)
+                .frame(width: 34, height: 34)
                 .background(Brand.mossTint, in: .circle)
                 .overlay(alignment: .bottomTrailing) {
                     Image(systemName: "checkmark.seal.fill")
@@ -74,7 +74,7 @@ struct PlaceAmbassadors: View {
                         .offset(x: 3, y: 3)
                 }
                 .accessibilityHidden(true)
-            VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(name)
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.ink)

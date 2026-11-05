@@ -30,7 +30,7 @@ struct PlusRow: View {
                 Image(systemName: "sparkles")
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.moss)
-                    .frame(width: 30)
+                    .frame(width: 34)
                 Text("Help create Ancient Trees Plus")
                     .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(Brand.ink)

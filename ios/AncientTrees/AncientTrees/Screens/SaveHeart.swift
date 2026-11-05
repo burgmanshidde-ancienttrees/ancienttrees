@@ -119,8 +119,9 @@ struct SnackLift: PreferenceKey {
 
 /// How high a tab's ROOT wants the snackbar, when something floats where it
 /// would land: the map tab's "Map" pill at the full list (Hidde, 2026-11-05:
-/// "added to want to visit is awkwardly placed here"). Material 3 sets a
-/// snackbar above a floating button, never over it. Nil means the usual 92.
+/// "added to want to visit is awkwardly placed here", then "should
+/// temporarily replace the map button"): the pill steps aside while the
+/// snackbar shows, and the snackbar takes its spot. Nil means the usual 92.
 struct RootSnackLift: PreferenceKey {
     static let defaultValue: CGFloat? = nil
     static func reduce(value: inout CGFloat?, nextValue: () -> CGFloat?) {

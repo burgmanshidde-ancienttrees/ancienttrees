@@ -685,7 +685,10 @@ struct MapTab: View {
         // points off the bottom, entirely behind the tab bar, existing and
         // invisible and swallowing the tap meant for the sheet.
         .overlay(alignment: .bottom) {
-            if sheetHeight == .full {
+            // The snackbar takes the pill's place while it shows (Hidde,
+            // 2026-11-05: "added to wishlist should temporarily replace the map
+            // button? this is chaos"): one thing floats at a time.
+            if sheetHeight == .full && navigator.snack == nil {
                 Button {
                     withAnimation(.spring(duration: 0.28)) { sheetHeight = .peek }
                 } label: {
@@ -710,8 +713,9 @@ struct MapTab: View {
                 .accessibilityIdentifier("back-to-map")
             }
         }
-        // The snackbar goes above the pill, 70 + 44 + 12 (RootSnackLift).
-        .preference(key: RootSnackLift.self, value: sheetHeight == .full ? 126 : nil)
+        // The snackbar stands where the pill stood, 70 up (RootSnackLift).
+        .preference(key: RootSnackLift.self, value: sheetHeight == .full ? 70 : nil)
+        .animation(.easeOut(duration: 0.2), value: navigator.snack == nil)
         .task {
             if let id = debugSelect, let t = catalogue.tree(id) {
                 selected = t

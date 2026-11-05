@@ -354,7 +354,7 @@ struct AmbassadorWantedRow: View {
             Image(systemName: "checkmark.seal")
                 .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(Brand.moss)
-                .frame(width: 30)
+                .frame(width: 34)
             Text(asked ? "Request sent." : (seated ? "Become a \(place) ambassador" : "Become the \(place) ambassador"))
                 .font(.system(size: 15, weight: .medium))
                 .foregroundStyle(Brand.ink)
@@ -376,8 +376,10 @@ struct AmbassadorWantedRow: View {
         Text(asked ? "Request sent" : "Become one too")
             .font(.system(size: 12, weight: .semibold))
             .foregroundStyle(asked ? Brand.inkSoft : Brand.moss)
-            .padding(.vertical, 6)
-            .contentShape(.rect)
+            // A bigger target without a bigger line: padding here pushed the
+            // name up against the box's edge (Hidde, 2026-11-05: "hugo is
+            // still weirdly placed").
+            .contentShape(.rect.inset(by: -10))
     }
 
     private var row: some View {
