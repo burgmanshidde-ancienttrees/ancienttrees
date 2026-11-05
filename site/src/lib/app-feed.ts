@@ -29,7 +29,7 @@ import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditNam
 import { savesOf } from "./saves";
 import { BASE_URL } from "./schema";
 import { latinRanges } from "./latin";
-import { isHighlight } from "./highlights";
+import { highlightRanks } from "./highlights";
 
 /** The feed is read by an app on somebody's phone, which has no page to
  * resolve a relative path against. thumbUrl() returns "/photos/..." for the
@@ -135,6 +135,8 @@ export interface FeedTree {
    * (Hidde, 2026-11-05). The rule lives once in lib/highlights.ts, which the
    * website's city page reads too; sent only when true. */
   highlight?: true;
+  /** Its place in the shelf, 0 first; sent with `highlight`. */
+  highlight_rank?: number;
 }
 
 export interface FeedPhoto {
@@ -157,6 +159,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
     // The app gets every tree with a story and a pin, app-only ones included
     // (./app-first): the website's renderableTrees would leave those out.
     const trips = dayTrips(city.data.city, feedTreesOf(city) as any);
+    const ranks = highlightRanks(city.id, feedTreesOf(city) as any);
     for (const t of feedTreesOf(city)) {
       const loc = t.location ?? ({} as any);
       if (loc.latitude == null || loc.longitude == null) continue;
@@ -226,7 +229,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         ...(miniPin(t.id, Boolean(p?.url)) ? { mini: true as const } : {}),
         // A Highlight of its place (lib/highlights.ts), the same answer the
         // website's city page draws.
-        ...(isHighlight(t) ? { highlight: true as const } : {}),
+        ...(ranks.has(t.id) ? { highlight: true as const, highlight_rank: ranks.get(t.id)! } : {}),
       });
     }
   }

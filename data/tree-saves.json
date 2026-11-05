@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-05",
- "note": "Readers' Want to go saves per tree, counts only, our own accounts left out. Written by scripts/tree_saves.py; read by lib/saves.ts and the app feed.",
+ "note": "What readers did with each tree, counts only, our own accounts left out: Want to go saves, standing Worth the visit votes, visible notes. Written by scripts/tree_saves.py; read by lib/saves.ts, lib/highlights.ts and the app feed.",
  "saves": {
   "sev_002": 2,
   "alv_001": 1,
@@ -18,6 +18,7 @@
   "cly_001": 1,
   "edi_002": 1,
   "erd_001": 1,
+  "fri_001": 1,
   "gie_002": 1,
   "gth_001": 1,
   "kag_014": 1,
@@ -49,5 +50,18 @@
   "the_001": 1,
   "vir_001": 1,
   "vir_002": 1
- }
+ },
+ "worth": {
+  "ams_001": 1,
+  "lis_015": 1,
+  "lis_026": 1,
+  "lis_027": 1,
+  "lis_030": 1,
+  "par_031": 1,
+  "par_033": 1,
+  "rbn_001": 1,
+  "sev_009": 1,
+  "utr_002": 1
+ },
+ "notes": {}
 }

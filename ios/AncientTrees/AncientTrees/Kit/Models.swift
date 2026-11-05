@@ -250,6 +250,10 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// sent only when true; an older snapshot without the field falls back to
     /// "has a photograph", which is today's rule.
     public var highlight: Bool? = nil
+    /// Its place on the shelf, 0 first (lib/highlights.ts ranks by readers'
+    /// votes, notes, photographs and saves, ambassadors' picks first, at most
+    /// ten). Nil in an older snapshot.
+    public var highlightRank: Int? = nil
     public var isHighlight: Bool { highlight ?? (photo != nil) }
     public struct DayTrip: Codable, Hashable, Sendable {
         public let place: String
@@ -270,6 +274,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case seasonal
         case mini
         case highlight
+        case highlightRank = "highlight_rank"
         case access, story, url, precision, photo, photos, peak
         case recogniseRaw = "how_to_recognise"
         case paidEntryRaw = "paid_entry"

@@ -10,7 +10,7 @@
 // component renders it; data/i18n/<lang>/<slug>.json supplies only text, and
 // ui(lang) supplies the chrome labels with English fallback per key.
 import TreeCard from "./TreeCard.astro";
-import { isHighlight } from "../lib/highlights";
+import { highlightsOf } from "../lib/highlights";
 import { splitForPage } from "../lib/day-trips";
 import LanguagePicker from "./LanguagePicker.astro";
 import ShareButton from "./ShareButton.astro";
@@ -60,7 +60,7 @@ const trees = renderableTrees(city);
 const split = splitForPage(city.data.city, trees as any);
 // Highlights first, then every tree as a row, as the English city page
 // (direction C, Hidde, 2026-11-05; lib/highlights.ts).
-const highlights = trees.filter(isHighlight);
+const highlights = highlightsOf(cslug, trees);
 const tslugs = treeSlugsForCity(city);
 const selfUrl = `${BASE_URL}/${lang}/${cslug}`;
 // A fallback page is the English text on a second URL, so it points its

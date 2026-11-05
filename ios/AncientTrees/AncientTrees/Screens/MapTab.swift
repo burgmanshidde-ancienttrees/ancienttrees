@@ -1065,7 +1065,11 @@ struct MapTab: View {
             PlaceAsksBox(slug: slug, title: placeTitle, catalogue: catalogue)
                 .padding(.bottom, 6)
         }
-        let highlights = listedHere.filter { $0.tree.isHighlight }
+        // The server's order and its ten (lib/highlights.ts); an older feed
+        // without ranks keeps the list's order and stops at ten too.
+        let highlights = Array(listedHere.filter { $0.tree.isHighlight }
+            .sorted { ($0.tree.highlightRank ?? Int.max) < ($1.tree.highlightRank ?? Int.max) }
+            .prefix(10))
         if !highlights.isEmpty {
             SheetSectionHead(title: "Highlights")
             ScrollView(.horizontal) {

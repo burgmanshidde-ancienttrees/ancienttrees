@@ -23,7 +23,7 @@ import { arm } from "../lib/copy-test";
 import { submitLink, ageToken } from "../lib/tree-copy";
 import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
-import { isHighlight } from "../lib/highlights";
+import { highlightsOf } from "../lib/highlights";
 import { splitForPage } from "../lib/day-trips";
 import ShareButton from "../components/ShareButton.astro";
 import PlaceRow from "../components/PlaceRow.astro";
@@ -102,7 +102,7 @@ const split = splitForPage(city.data.city, trees as any);
 // DIRECTION C (Hidde, 2026-11-05): the photographed trees first as
 // Highlights, then every tree as a row. One rule, lib/highlights.ts, which
 // the app reads from the feed too.
-const highlights = trees.filter(isHighlight);
+const highlights = highlightsOf(cslug, trees);
 // Contract B v1.18: a one-tree place has no question page to link to.
 const cityHasQuestion = hasQuestionPage(city);
 const canonical = `${BASE_URL}/${cslug}`;
