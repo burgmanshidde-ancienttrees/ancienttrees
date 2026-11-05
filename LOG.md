@@ -12,6 +12,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (23:09 window): rung 2, deploy repaired
+
+- **Rung 1:** no photographs waiting; one tree note ("Test" on bcn_012), marked seen.
+- **Rung 2:** every deploy since the 22:45 daily publish failed at content sync: `curation_status: "verified"` is not in the schema (ai_generated|hidde_approved|flagged). Seven trees across Atlanta, Nashville, Tampa, Jacksonville and Orlando set to `flagged`, matching their siblings. Preflight now refuses any other value (`check_city`), so the next push breaks before the deploy does. Preflight 0 problems; pushed as cc20cae98.
+- **Not done:** `gh workflow run deploy.yml` returned 403 from this runner, so the live site stays behind main until the next scheduled or hand-dispatched build. Postbox check failure (8h ago) and the dropped knocks (6 of 12) not looked at; the window was spent on the build.
+- **For Hidde:** none beyond dispatching deploy.yml if the next scheduled build does not pick it up.
+
 ## 2026-11-05 session: deploy green again, ahead of the Guardian
 
 - **Context:** Joe Pinner (Guardian environment desk, Scott Trust bursary, profile checked live) asked for an interview after today's national press batch mail to environment.desk; Hidde's reply is drafts/reply-joe-guardian-2026-11-05.md, call 2026-11-06 12:00 UK.
