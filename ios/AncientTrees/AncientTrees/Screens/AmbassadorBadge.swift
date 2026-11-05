@@ -269,10 +269,11 @@ struct AmbassadorWantedRow: View {
                     .font(.system(size: 14, weight: .bold))
                     .foregroundStyle(Brand.ink)
                     .fixedSize(horizontal: false, vertical: true)
-                Text(asked ? "Request sent." : "Help us improve this list.")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
+                if asked {
+                    Text("Request sent.")
+                        .font(.system(size: 12))
+                        .foregroundStyle(Brand.inkSoft)
+                }
             }
             Spacer(minLength: 8)
             if !asked {
