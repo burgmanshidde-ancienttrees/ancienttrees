@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (seventh attempt): looked at the iOS failure, nothing shipped
+
+- No claims stood; 112 READY leads are the same rejects; pace still full until about 19:42 UTC, so no write pass.
+- iOS app workflow (red since 2026-11-04): two unit tests crash with signal abrt on both the 20:36 push run and the 22:24 scheduled run, on iOS 18 and the main job: `testTheCityAndCountryIndexMatchFilteringTheWholeList` and `testTheStoredIdSetsFollowEveryChange`, both in RedrawMemoTests.swift, added by e3fc733cd (the speed commit). The third test in that file passes. The app builds. The cause is not visible from the source on Linux (the Tree JSON decode, Catalogue indexes and Saved id-set cache all read correctly), so I made no blind edit. A session with a Mac should run RedrawMemoTests and read the crash report; the common suspect is the `Saved` idSets getter mutating its cache, or the suite-scoped UserDefaults in test 2. Not a crash in shipped use as far as the log shows, since these are tests only.
+- Dependabot branches (supabase-js 2.118.0, astro 7.4.4) still wait for a session to merge by hand.
+
 ## 2026-11-05 night run (sixth attempt): nothing shipped, pace still full
 
 - No claims stood. The 112 READY leads are the same earlier rejects or thin ones. The 25-a-day pace is full until about 19:42 UTC, and 18 written trees (slc_007..014, car_003, hnl_032, nyc_*) wait to merge then, so I dispatched no write pass. Dependabot branches (supabase-js 2.118.0, astro 7.4.4) still wait for a session to build and merge them by hand. The iOS workflow shows FAILED for 2026-11-04 and was not looked at in this attempt.
