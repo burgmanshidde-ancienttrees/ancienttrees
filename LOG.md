@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: every red error now wakes the night run
+
+- health.py (where a run starts rung 2) now reads the quality line's web errors, site-up check and open BUG rows in data/code-audit.json, beside CI and app crashes it read already; a red one exits 1, so the next run fixes it without anyone asking. Dependabot alerts and the backup only print a note: they need a session or Hidde.
+- Found at once: a new web error spreading, "Failed to initialize WebGL" from maplibre on 16 pages in a day (browsers without WebGL, the map cannot start). The next run takes it at rung 2.
+- Still red and not touched here: iOS app (newest ios.yml run 11h ago) and Postbox check (19h ago).
+
 ## 2026-11-05 session: build 39 (1.0.4) archived for upload; the Plus answers table needed an upgrade
 
 - **What changed:** build 39 is in the Organizer, made by scripts/release.py from fda0199ad with the bundled catalogue refreshed (4,046 trees, 357 walks). It adds to build 38: Back, share and report readable over a tree's photograph on iOS 18, the map's place header aligned with its cards, and the Plus question (open question, up to two choices, Tell me). 38 was never uploaded; 39 replaces it.

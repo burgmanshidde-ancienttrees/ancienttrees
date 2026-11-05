@@ -778,6 +778,45 @@ def main():
     except Exception as e:
         unknown.append(f"app crashes ({e.__class__.__name__})")
 
+    # THE REST OF THE DIGEST'S QUALITY LINE (Hidde, 2026-11-05: "wordt die
+    # vervolgens ook automatisch aangepakt?", and "voor alle errors buiten web
+    # ook"). CLAUDE.md made red web errors and open BUG rows rung-2 work on
+    # 11-04, but a run starts rung 2 here, and this file never read them, so
+    # they sat red in the digest with nothing picking them up. CI on main and
+    # app crashes are read above; this adds what the run can fix itself. The
+    # cells that need a session or Hidde (Dependabot alerts, the backup setup)
+    # stay notes, or this would exit 1 every night for work no run may do.
+    try:
+        import quality
+        now = datetime.datetime.now(datetime.timezone.utc)
+        checks = [
+            ("Web errors", quality.web_live(),
+             "Red web error (python3 scripts/web_errors.py for the pages and "
+             "lines): fix it in site/src with a test where the logic allows, "
+             "never a visible change: "),
+            ("Site up", quality.uptime_cell(now),
+             "The site is not answering from outside (uptime.yml): "),
+        ]
+        for surface in ("WEB", "APP"):
+            colour, reason = quality.bug_cell(surface, now.date())[:2]
+            checks.append((
+                "Open %s bugs" % surface.lower(),
+                ("red" if colour != "green" else "green", reason),
+                "Open BUG row(s) in data/code-audit.json (%s): fix with a test, "
+                "never a visible change, set the row fixed with the commit: " % surface))
+        for label, (colour, reason), act in checks:
+            print(f"  {label:20s} {('ok' if colour == 'green' else colour.upper()):10s} "
+                  f"{reason}")
+            if colour == "red":
+                problems.append(act + reason)
+            elif colour == "grey" and reason:
+                unknown.append(label.lower())
+        for colour, reason in (quality.security_cell(now), quality.backup_cell(now)):
+            if colour == "red":
+                notes.append("Needs a session or Hidde, not a run: " + reason)
+    except Exception as e:
+        unknown.append(f"quality line ({e.__class__.__name__})")
+
     # APPLE'S WEB SECRET EXPIRES, and that is the whole reason this check
     # exists. Sign in with Apple on the WEB authenticates us with a JWT we sign
     # ourselves, and Apple caps its life at six months. The day it lapses the
