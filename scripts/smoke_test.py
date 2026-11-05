@@ -917,11 +917,16 @@ def main():
         print(f"SMOKE: no build under {DIST}, run (cd site && npx astro build) first")
         return 1
 
-    # pick a served city and tree page from what the build produced
+    # pick a served city and tree page from what the build produced. A place
+    # with one tree on the web has no page since 2026-11-05 (place-page.ts
+    # PLACE_PAGE_MIN_TREES): its .html is a redirect stub to the tree, which
+    # failed every smoke test that afternoon on Aachen, so stubs are skipped.
+    def _real(p):
+        return 'http-equiv="refresh"' not in p.read_text(encoding="utf-8", errors="ignore")[:2000]
     city = next(p for p in sorted(DIST.glob("*.html"))
-                if (DIST / p.stem).is_dir() and p.stem not in ("app", "plus"))
+                if (DIST / p.stem).is_dir() and p.stem not in ("app", "plus") and _real(p))
     tree = next(p for p in sorted((DIST / city.stem).glob("*.html"))
-                if p.name != "index.html" and "oldest-tree" not in p.name)
+                if p.name != "index.html" and "oldest-tree" not in p.name and _real(p))
 
     with socket.socket() as s:
         s.bind(("127.0.0.1", 0))

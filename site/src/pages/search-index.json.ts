@@ -2,11 +2,9 @@
 // home and /explore. Ported from the search_index block in main(),
 // build_site.py:5872-5894.
 //
-// Deliberately uses UNFILTERED trees (d["trees"], not renderableTrees) for
-// both city tree counts and the "t" rows, matching a pre-existing Python
-// quirk rather than fixing it mid-migration: a city or tree missing a
-// story/location still gets a search row pointing at a URL that may not
-// exist. The live widget already tolerates this in production.
+// City tree counts and the "t" rows use renderableTrees since 2026-11-05: an
+// unfiltered row pointed at a URL that may not exist, and under APP FIRST
+// that was 230 of them.
 import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees, slugify } from "../lib/trees";
 import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
@@ -52,9 +50,14 @@ export async function GET() {
     const d = entry.data;
     const alt = searchNames[entry.id];
     const v = popularity.get(entry.id);
-    c.push({ city: d.city, country: d.country, n: d.trees.length, u: entry.id,
+    // Only trees with a web page (renderableTrees): an app-only tree (APP
+    // FIRST, lib/app-first.ts) in this index is a search result that opens a
+    // page that does not exist, and qa's app-first check fails the deploy on
+    // it (2026-11-05, every deploy that afternoon).
+    const shown = renderableTrees(entry);
+    c.push({ city: d.city, country: d.country, n: shown.length, u: entry.id,
              ...(alt && alt.length ? { a: alt } : {}), ...(v ? { v } : {}) });
-    for (const tree of d.trees) {
+    for (const tree of shown) {
       t.push({ n: tree.name, c: d.city, u: `${entry.id}/${slugify(tree.name)}`, i: tree.id });
     }
   }
