@@ -1,0 +1,113 @@
+{
+  "city": "Monroe, Wisconsin",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Monroe has two of Wisconsin's champion trees standing a few steps apart at Greenwood Cemetery. In front of the cemetery office grows a white fir, a western species planted far from home, 25.6 metres tall with blue-grey needles. Just west of the same office stands a tulip tree 28.2 metres tall, the biggest of its kind in the state register. Neither has a published age, so Monroe's case is size, and the convenience of two records in one stop. Monroe is about 45 minutes by car south-west of Madison.",
+  "meta_description": "Two Wisconsin champion trees side by side at Greenwood Cemetery in Monroe: a western white fir and a 28-metre tulip tree.",
+  "question_meta": "No tree we map in Monroe has a published age. The biggest is the Greenwood Cemetery tulip tree, Wisconsin's champion at 28.2 metres.",
+  "question_answer": "No tree we map in Monroe, Wisconsin has a published age. The biggest is the tulip tree just west of the Greenwood Cemetery office, which Wisconsin's champion register ranks first of its species, 3.18 metres round and 28.2 metres tall.",
+  "question_context": "Both of Monroe's record trees stand by the office of Greenwood Cemetery, and both are known from one source only, the Wisconsin DNR champion tree register. That register records girth, height and crown, adds them into a score, and says nothing about age, so neither the tulip tree nor the white fir can be dated from it. The white fir is a western tree, which means somebody planted it here, but the register does not say who or when. The tulip tree is the taller and the heavier of the two, 28.2 metres tall and 3.18 metres round against the fir's 25.6 and 2.62. Its leaves are cut off square at the tip, and in October they turn a clear yellow, which makes autumn the time to come. The register does not record when it measured either tree, so the figures may be some years old. Greenwood is a working cemetery owned by its association; visit in daylight. If you know when either tree was planted, tell us.",
+  "hero_tree_id": "mnw_002",
+  "oldest_tree_id": "mnw_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Monroe, Wisconsin?",
+      "a": "Nobody has published an age for either tree we map in Monroe. The biggest is the Greenwood Cemetery tulip tree, the Wisconsin champion of its species at 28.2 metres tall."
+    },
+    {
+      "q": "Where are Monroe's champion trees?",
+      "a": "Both are at Greenwood Cemetery, by the cemetery office. The white fir stands in front of the office and the tulip tree just west of it."
+    },
+    {
+      "q": "When is the best time to see them?",
+      "a": "October, when the tulip tree's leaves turn a clear yellow. The white fir keeps its blue-grey needles all year."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mnw_001",
+      "name": "The White Fir at Greenwood Cemetery",
+      "species": "White Fir (Abies concolor)",
+      "age_estimate": "not documented",
+      "girth_cm": 262,
+      "height_m": 25.6,
+      "location": {
+        "address": "Greenwood Cemetery, in front of the cemetery office, Monroe",
+        "latitude": 42.593193,
+        "longitude": -89.624768,
+        "neighbourhood": "Monroe"
+      },
+      "location_site": {
+        "name": "Greenwood Cemetery office",
+        "radius_m": 30
+      },
+      "story": "A fir from the American West has become Wisconsin's champion of its kind in front of a small-town cemetery office. The Wisconsin DNR champion register measured this white fir at Greenwood Cemetery in Monroe at 2.62 metres round and 25.6 metres tall, with a crown about 20 metres one way and 17 the other.\n\nWhite fir is a western species, so somebody planted this one. The register does not say who or when, and we have found nothing that does. What gives it away is the colour of its needles, a soft blue-grey that is the white fir's own.\n\nIt does not stand alone. Just west of the same office grows the register's champion tulip tree, 28.2 metres tall, so one short stop in Monroe gives you two of the state's record trees within a few steps of each other. The fir is the shorter and the slimmer of the pair, and the only one that keeps its colour through the winter.\n\nThe register is the only source for either tree, and it does not record when they were measured. Greenwood is a working cemetery run by its association; come in daylight. If you know when the fir was planted, tell us.",
+      "how_to_recognise": "You can recognise it by its blue-grey needles, on a fir 25.6 metres tall. It stands in front of the Greenwood Cemetery office, with the champion tulip tree just to the west.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2342&outFields=*&f=json"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2342&outFields=*&f=json"
+      },
+      "access": "Cemetery grounds, open to walkers (cemetery association grounds; hours not found, so daytime visit only).",
+      "transport": "In town, Monroe is about 45 minutes by car south-west of Madison; park at the cemetery office. No public transport verified.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 2342 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only. Western species planted here. Greenwood Cemetery Association is the ground owner (register address 1907 29th Ave is the office). Twin of mnw_002 (tulip tree just west of the office): one stop. Register figures (nomination measurement, date not in the layer): circumference 103 in (262 cm), height 84 ft (25.6 m), crown spread [65, 55] ft, 202 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mnw_002",
+      "name": "The Tulip Tree at Greenwood Cemetery",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "not documented",
+      "girth_cm": 318,
+      "height_m": 28.2,
+      "location": {
+        "address": "Greenwood Cemetery, just west of the cemetery office, Monroe",
+        "latitude": 42.59295,
+        "longitude": -89.6249,
+        "neighbourhood": "Monroe"
+      },
+      "location_site": {
+        "name": "Greenwood Cemetery office",
+        "radius_m": 30
+      },
+      "story": "The biggest tulip tree in the Wisconsin DNR champion register grows beside a cemetery office in Monroe, and it stands 28.2 metres tall. The register measured a trunk 3.18 metres round and a crown about 17 metres across, just west of the Greenwood Cemetery office. In front of the same office stands a second state champion, a white fir, so the two are one stop.\n\nThe leaves are the giveaway, cut off square at the tip where most leaves come to a point, so each one looks like a saddle. In late spring the tree flowers, green and orange cups shaped like tulips, but they open high in the crown and are easy to miss from the ground. Autumn is the season to come. The leaves turn a clear, even yellow, one of the most reliable autumn displays of any tree.\n\nAs with the fir, the register is the only record. It gives no measurement date and no age, and we found no one who has written about either tree. The cemetery is in town, about 45 minutes by car south-west of Madison; visit in daylight and keep to the paths. If you know when these two were planted, tell us.",
+      "how_to_recognise": "You can recognise it by its saddle-shaped leaves, on a tree 28.2 metres tall. It stands just west of the Greenwood Cemetery office, beside the champion white fir.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2949&outFields=*&f=json"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2949&outFields=*&f=json"
+      },
+      "access": "Cemetery grounds, open to walkers (hours not found, daytime only).",
+      "transport": "In town, about 45 minutes by car south-west of Madison; park at the cemetery office. No public transport verified.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the leaves turn a clear yellow"
+      },
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 2949 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only. Same stop as mnw_001; the writer can treat the two as one stop. Register figures (nomination measurement, date not in the layer): circumference 125 in (318 cm), height 92.4 ft (28.2 m), crown spread [54, 56] ft, 231.15 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "city": "Eagle, Wisconsin",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Near Eagle, by the headquarters of the Kettle Moraine State Forest, stands Wisconsin's champion black cherry, 32 metres tall with a trunk 2.74 metres round and a crown about 20 metres across. The state register says to park at the headquarters lot and use the walking paths. Its coordinates are rounded, so the building is the best guide. It is about 50 minutes by car south-west of Milwaukee, and a vehicle admission sticker is likely needed in the state forest.",
+  "meta_description": "Wisconsin's champion black cherry, 32 metres tall, grows by the Kettle Moraine State Forest headquarters near Eagle.",
+  "question_meta": "No tree we map near Eagle has a published age. The biggest is Kettle Moraine's black cherry, Wisconsin's champion at 32 metres.",
+  "question_answer": "No tree we map near Eagle, Wisconsin has a published age. The biggest is the black cherry by the Kettle Moraine State Forest headquarters, which Wisconsin's champion register ranks first of its species, 32 metres tall and 2.74 metres round.",
+  "question_context": "The Kettle Moraine black cherry is a register tree, known from the Wisconsin DNR champion list and nothing else we found. The register names it only as near the Kettle Moraine headquarters, in Waukesha County; we read that as the Southern Unit's headquarters near Eagle, which the register itself does not confirm, and its coordinates carry only three decimals, so our pin is loose. The register gives it a height of 32 metres, 105 feet, a trunk 2.74 metres round and a crown about 20 metres across in both directions, close to a circle. That height matters more than the girth here. The champion black cherry of Chicago's forest preserves is thicker, 3.35 metres round, but 29.3 metres tall, while a second-ranked one in Swallow Cliff Woods reaches 34.7. Champion registers score the whole tree, so the tallest does not always win. The register gives no measurement date and no age. If you have seen the tree, or know how old it is, tell us.",
+  "hero_tree_id": "ekw_001",
+  "oldest_tree_id": "ekw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Eagle, Wisconsin?",
+      "a": "Nobody has published an age for the tree we map near Eagle. The biggest is the black cherry by the Kettle Moraine State Forest headquarters, Wisconsin's champion of its species."
+    },
+    {
+      "q": "How do you find the Kettle Moraine black cherry?",
+      "a": "The state register says to park at the headquarters lot and use the walking paths; the tree is near the headquarters building. Our pin is approximate."
+    },
+    {
+      "q": "Do you need to pay to visit?",
+      "a": "A vehicle admission sticker is likely needed for cars in the Kettle Moraine State Forest. We have not confirmed it for this lot."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ekw_001",
+      "name": "The Kettle Moraine Headquarters Black Cherry",
+      "species": "Black Cherry (Prunus serotina)",
+      "age_estimate": "not documented",
+      "girth_cm": 274,
+      "height_m": 32.0,
+      "location": {
+        "address": "Near the Kettle Moraine State Forest Southern Unit headquarters building, near Eagle",
+        "latitude": 42.874,
+        "longitude": -88.522,
+        "neighbourhood": "Kettle Moraine State Forest"
+      },
+      "story": "This black cherry stands 32 metres tall, 105 feet, beside the headquarters of the Kettle Moraine State Forest, and the Wisconsin DNR champion register ranks it the biggest of its species in the state. The register measured a trunk 2.74 metres round and a crown about 20 metres across in both directions, close to a circle.\n\nSet it beside its rivals across the Illinois line. The champion black cherry of the Chicago forest preserves, on our Chicago page, is thicker at 3.35 metres round but shorter at 29.3 metres. A second-ranked cherry in Swallow Cliff Woods reaches 34.7 metres. Champion registers on both sides of the border score the whole tree, trunk, height and crown together, so the tallest does not always win.\n\nThe register's directions are simple. Park at the headquarters lot and use the walking paths. Its coordinates are rounded, so our pin is loose and the building is your best guide. The register names only the Kettle Moraine headquarters; we read that as the Southern Unit's, near Eagle, which the register itself does not confirm. A vehicle admission sticker is likely needed for cars in the state forest.\n\nThe register is the only source for this tree, with no measurement date and no age. If you have seen it, or know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by its dark plated bark and its height, 32 metres on a trunk 2.74 metres round. It stands near the Kettle Moraine State Forest headquarters building.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D3005&outFields=*&f=json"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D3005&outFields=*&f=json"
+      },
+      "access": "State forest grounds; the register says use the headquarters parking lot and walking paths. A vehicle admission sticker is likely required for cars (not confirmed this pass).",
+      "transport": "Rural, about 50 minutes by car south-west of Milwaukee, near Eagle. No public transport.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 3005 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only, coordinate given with only 3 decimals (rounded), so pin is loose. Headquarters is the Southern Unit (not confirmed in the register row, which just says the Kettle Moraine headquarters; Waukesha County). Kettle Moraine itself is not in the Milwaukee pass list as far as the brief says. Register figures (nomination measurement, date not in the layer): circumference 108 in (274 cm), height 105 ft (32.0 m), crown spread [66, 65] ft, 229.375 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

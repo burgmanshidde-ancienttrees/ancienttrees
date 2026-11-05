@@ -1,0 +1,181 @@
+{
+  "city": "Vancouver, Washington",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Vancouver, Washington keeps two American chestnuts on the lawn of the 1878 O. O. Howard House on Officers Row, a species the city estimates is down to 300 to 500 mature trees after chestnut blight. Historical photographs suggest they grew from seed before 1890. Three more city heritage trees stand in neighbourhood parks: a black cottonwood in John Ball Park whose spring leaves scent the air, a coast redwood about six metres round beside the Burnt Bridge Creek trail, and a huge black walnut at the dead end of G Street in Arnada Park.",
+  "meta_description": "Vancouver, WA heritage trees: rare American chestnuts on Officers Row, a scented cottonwood, a broad coast redwood and the Arnada Park black walnut.",
+  "question_meta": "Two American chestnuts at the O. O. Howard House, likely grown before 1890, are Vancouver, Washington's oldest mapped trees. Free on Officers Row.",
+  "question_answer": "The oldest trees mapped in Vancouver, Washington are two American chestnuts flanking the O. O. Howard House on Officers Row, which the city believes, from historical photographs, were grown from seed before 1890. None of the city's other heritage trees on this page has a recorded age.",
+  "question_context": "All four stops here come from the City of Vancouver's Heritage Tree Program, and all are free. The Howard House chestnuts are the reason to come. They stand one at each end of the 1878 house in the Vancouver National Historic Reserve, about a kilometre and a half east of Esther Short Park; the west tree is the larger, 27 metres tall. The city and The Historic Trust run guided tree walks along Officers Row.\n\nThe other three are neighbourhood landmarks. In John Ball Park, in the Hough neighbourhood, a black cottonwood 32 metres tall is among the largest trees in that part of town, and in spring its leaves give off a scent the city says carries for hundreds of feet. On the eastern edge of Leverich Park, cyclists on the Burnt Bridge Creek trail pass under a coast redwood with a trunk roughly six metres round. At the south end of Arnada Park, where G Street dead-ends, stands a black walnut 27 metres tall. Pins for the three park trees sit at each park's centre, so use the directions in each entry to find the trunk.",
+  "hero_tree_id": "vwa_001",
+  "oldest_tree_id": "vwa_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vancouver, Washington?",
+      "a": "The oldest mapped here are the two American chestnuts at the O. O. Howard House on Officers Row. The city reads historical photographs as showing they were grown from seed before 1890, which makes them more than 135 years old."
+    },
+    {
+      "q": "Why are the Officers Row chestnuts special?",
+      "a": "Chestnut blight wiped out the American chestnut across the eastern United States from the early 1900s. The city estimates only 300 to 500 mature trees remain."
+    },
+    {
+      "q": "Is this Vancouver in Canada?",
+      "a": "No. These trees are in Vancouver, Washington, in the United States, and every one is on the City of Vancouver's own heritage tree list."
+    },
+    {
+      "q": "Do I need a ticket to see these trees?",
+      "a": "No. The chestnuts stand on the grounds of the Howard House in the public Vancouver National Historic Reserve, and the other three are in free city parks."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vwa_001",
+      "name": "American Chestnuts at the O. O. Howard House",
+      "species": "American Chestnut (Castanea dentata)",
+      "age_estimate": "over 135 years",
+      "age_min": 135,
+      "age_max": 200,
+      "age_basis": "source",
+      "girth_cm": 423,
+      "height_m": 27,
+      "location": {
+        "address": "O. O. Howard House, Evergreen Blvd, Officers Row, Vancouver, WA 98661",
+        "latitude": 45.6281,
+        "longitude": -122.6643,
+        "neighbourhood": "Vancouver National Historic Reserve / Officers Row"
+      },
+      "location_site": {
+        "name": "Lawn of the O. O. Howard House, Officers Row",
+        "radius_m": 50
+      },
+      "story": "The City of Vancouver estimates that only 300 to 500 mature American chestnuts remain, and two of them flank a single house on Officers Row. Chestnut blight wiped the species out across the eastern United States from the early 1900s. These two, one at each end of the 1878 Italianate O. O. Howard House, came through.\n\nThe city's heritage register lists them separately. The west tree is the larger, 53 inches across at chest height, about 4.2 metres round, and 27 metres tall with a crown spreading about 21 metres. The east tree is 41 inches across, about 3.3 metres round, 19 metres tall and about 15 metres wide.\n\nNobody recorded the day they went in. The city reads historical photographs as showing they were likely grown from seed before 1890, which makes them more than 135 years old on that reading. That is an estimate from old pictures, not a planting record, so treat the age as a floor rather than a figure.\n\nThey are still very much alive. Naturalists have photographed chestnuts at the Howard House as recently as 2026, and the city and The Historic Trust run guided tree walks along Officers Row. Only the city register documents the pair in detail. The house sits in the Vancouver National Historic Reserve, free to wander, about a kilometre and a half east of Esther Short Park. One visit covers both.",
+      "verified_sources": [
+        "https://cityofvancouver.us/?p=3963",
+        "https://www.inaturalist.org/observations/335527575",
+        "https://www.inaturalist.org/observations/394795623"
+      ],
+      "official_register": {
+        "name": "City of Vancouver Heritage Tree Program (Urban Forestry), HT35 and HT36",
+        "url": "https://cityofvancouver.us/?p=3963"
+      },
+      "access": "Free; the trees stand on the grounds of the Howard House on Officers Row, part of the public Vancouver National Historic Reserve. The City of Vancouver and The Historic Trust run guided Officers Row tree walks.",
+      "transport": "C-TRAN local buses serve downtown Vancouver; specific route and stop not verified. About 1.5 km east of Esther Short Park.",
+      "how_to_recognise": "You can recognise them as the two big chestnuts flanking the O. O. Howard House, one at each end; the west one is the larger, about 27 metres tall. They stand on the house's lawn on Officers Row.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Two American chestnuts, one on the west and one on the east side of the 1878 Italianate Howard House (city register HT35 and HT36, folded into one entry). City register: DBH 53 in and 41 in (girth about 423 cm and 327 cm by diameter x pi), height 90 ft and 62 ft (27 m, 19 m), spread 70 and 50 ft. City says likely grown from seed before 1890 per historical photos; no exact planting date, so age is 'over 135 years' (basis: city's before-1890 reading, broad). Rare because chestnut blight wiped out the species in eastern US from early 1900s; city estimates only 300 to 500 mature American chestnuts remain. Alive: iNaturalist observations of Castanea at the house dated 2026-01-20 (C. dentata, 'Evergreen Blvd at Howard House'), 2024-10-05 and 2026-08-26, GPS about 45.6281,-122.6646 (west) and 45.6280,-122.6640 (east), 4 to 9 m accuracy; these sit about 50 m apart, consistent with a tree each side of the house. Kept approximate because the obs are not tied to the register IDs by a source. To tell apart: one big chestnut flanks each end of the Howard House; the west one is the larger (53 in). The 2021 iNat obs labels one C. sativa, likely misID. One source (city) plus iNat life check: flagged one source.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "vwa_002",
+      "name": "John Ball Park Black Cottonwood",
+      "species": "Black Cottonwood (Populus trichocarpa)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 534,
+      "height_m": 32,
+      "location": {
+        "address": "John Ball Park, Vancouver, WA (Hough neighborhood)",
+        "latitude": 45.6379,
+        "longitude": -122.6802,
+        "neighbourhood": "Hough"
+      },
+      "story": "In spring you can smell this cottonwood before you reach it. The City of Vancouver's heritage register says its scented new foliage carries for hundreds of feet, and that the leaves rustle loudly enough to hear. It is a black cottonwood in John Ball Park, in the Hough neighbourhood, and the city counts it among the largest trees in that part of town.\n\nThe numbers back that up. The register gives it a trunk 67 inches across at chest height, about 5.3 metres round when worked out from the diameter, a height of 106 feet, about 32 metres, and a crown spreading some 23 metres. The city describes it as the backdrop to the whole park, and the crown is the thing to look for.\n\nWhat nobody has recorded is its age. There is no planting date and no estimate on the register. If you know how long it has stood here, tell us.\n\nThe city re-inspects its heritage trees every five years and still lists this one, though no recent dated photograph of it has turned up. Its exact spot in the park is not published, and the pin sits at the middle of the park rather than at the trunk. That matters less than it might. Look for the biggest crown in John Ball Park, and in spring, follow your nose.",
+      "verified_sources": [
+        "https://cityofvancouver.us/?p=3963"
+      ],
+      "official_register": {
+        "name": "City of Vancouver Heritage Tree Program (Urban Forestry), HT38",
+        "url": "https://cityofvancouver.us/?p=3963"
+      },
+      "access": "Free; public city park.",
+      "transport": "C-TRAN local bus to the Hough neighborhood; route not verified.",
+      "how_to_recognise": "You can recognise it as the biggest crown in John Ball Park, a black cottonwood about 32 metres tall with a trunk about 5.3 metres round. In spring its leaves are scented and rustle audibly.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "City register HT38: DBH 67 in (girth about 534 cm), height 106 ft (about 32 m), spread 75 ft. City describes it as one of the largest trees in the neighborhood and a backdrop to the park; scented spring foliage is noticeable from hundreds of feet and the leaves rustle audibly. No age or planting date given; do not invent one. Exact position within the park not published; pin is the park centroid (Nominatim), approximate. OSM has 56 untagged natural=tree nodes in the park, none identified. Alive: city programme re-inspects heritage trees every five years and still lists it; no dated independent observation found (lifecheck NONE). Flagged: one source, no dated life evidence. The biggest crown in the park is the thing to look for.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "vwa_003",
+      "name": "Leverich Park Coast Redwood",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 606,
+      "height_m": 24,
+      "location": {
+        "address": "Eastern edge of Leverich Park near Burnt Bridge Creek, Vancouver, WA",
+        "latitude": 45.6527,
+        "longitude": -122.6611,
+        "neighbourhood": "West Minnehaha"
+      },
+      "story": "This coast redwood carries a trunk roughly six metres round under a crown less than eight metres wide. The City of Vancouver's heritage register gives its trunk as 76 inches across at chest height, roughly six metres round, on a tree only 80 feet high, about 24 metres, with a crown just 25 feet across, under eight metres. That is a narrow crown on a very broad base.\n\nCoast redwoods grow wild a long way south of Washington, so somebody planted this one. Nobody recorded when, and the register gives no age, so the honest answer is that it is unknown. If you know when it went in, tell us.\n\nIt stands on the eastern edge of Leverich Park, beside the Burnt Bridge Creek trail, and it has become part of how people use the place. The city notes that cyclists ride under its branches past what it calls a unique trunk, and that disc golfers use it as a landmark on their course.\n\nOne caution about the map. The pin sits at the middle of the park, not at the tree, and the redwood is on the east side by the creek trail. Head for the trail and look for the trunk that cyclists pass beneath.",
+      "verified_sources": [
+        "https://cityofvancouver.us/?p=3963"
+      ],
+      "official_register": {
+        "name": "City of Vancouver Heritage Tree Program (Urban Forestry), HT42",
+        "url": "https://cityofvancouver.us/?p=3963"
+      },
+      "access": "Free; public city park, beside the Burnt Bridge Creek trail.",
+      "transport": "C-TRAN local bus to Minnehaha area; route not verified.",
+      "how_to_recognise": "You can recognise it by its trunk, roughly six metres round, under a narrow crown only about eight metres across. It stands on the eastern edge of Leverich Park, beside the Burnt Bridge Creek trail.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "City register HT42: DBH 76 in (girth about 606 cm), height 80 ft (24 m), spread only 25 ft. Stands on the eastern edge of Leverich Park, beside the Burnt Bridge Creek recreation corridor; city says cyclists ride under its branches past its 'unique trunk' and disc golfers use it as a landmark. No age given. Coast redwoods are far from native range here (Washington), so a planted tree. Pin is park centroid, so approximate; the tree is on the park's east side, not at the centroid. Life: lifecheck found an iNaturalist observation 2026-10-11 within the park radius, not necessarily this tree. Flagged: one source. Ignore the Waymarking and disc-golf pages as sources.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "vwa_004",
+      "name": "Arnada Park Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 443,
+      "height_m": 27,
+      "location": {
+        "address": "South perimeter of Arnada Park, dead end of G Street, Vancouver, WA",
+        "latitude": 45.6395,
+        "longitude": -122.6649,
+        "neighbourhood": "Arnada"
+      },
+      "story": "Arnada Park ends at a black walnut. At the dead end of G Street, on the park's south side, stands a tree the City of Vancouver calls a prominent neighbourhood landmark, and it is big enough that a 2011 heritage tree bike ride stopped to look at it.\n\nThe city's heritage register gives it a trunk 55.5 inches across at chest height, about 4.4 metres round when worked out from that diameter. It is 90 feet tall, about 27 metres, and its crown spreads some 23 metres. The BikePortland recap of that 2011 ride describes a huge black walnut at the south end of the park, a second, independent account of the same tree.\n\nNobody has published its age or a planting date. A tree of this size has not appeared overnight, but how long it has stood here is a question we cannot yet answer, so we leave it open. If you know, tell us.\n\nThe city keeps it on its heritage list, though no recent dated photograph has turned up to confirm it. The pin sits at the centre of the park rather than at the trunk. To find it, walk to the end of G Street, where the street stops at the park, and look for the huge walnut on the south perimeter.",
+      "verified_sources": [
+        "https://cityofvancouver.us/?p=3963",
+        "https://bikeportland.org/2011/06/21/pedalpalooza-recap-vancouver-heritage-tree-ride-55206"
+      ],
+      "official_register": {
+        "name": "City of Vancouver Heritage Tree Program (Urban Forestry), HT14",
+        "url": "https://cityofvancouver.us/?p=3963"
+      },
+      "access": "Free; public city park.",
+      "transport": "C-TRAN local bus to Arnada; route not verified. Park is about 1.5 km north-east of Esther Short Park.",
+      "how_to_recognise": "You can recognise it as the huge black walnut, about 27 metres tall, where G Street dead-ends at the park. It stands on the south perimeter of Arnada Park.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "City register HT14: DBH 55.5 in (girth about 443 cm), height 90 ft (27 m), spread 75 ft. City places it on the south perimeter of Arnada Park at the dead end of G Street and calls it a prominent neighbourhood landmark. A 2011 BikePortland ride recap (a Heritage Tree bike ride stop) independently describes a huge black walnut at the south end of Arnada Park. No age. Pin is park centroid, so approximate; look for the huge walnut at the G Street dead end on the south side. Distinct from HT47, another black walnut at 1904 H St (likely a private yard, not delivered). Alive: city programme still lists it; no dated recent observation (lifecheck gave an unrelated RECENT near the park).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

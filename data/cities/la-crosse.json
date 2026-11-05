@@ -1,0 +1,65 @@
+{
+  "city": "La Crosse",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "La Crosse named a trail after a tree. The Cottonwood Trail through the La Crosse River Marsh takes its name from an eastern cottonwood 7.92 metres round and 29.6 metres tall, the champion of its species in Wisconsin's state register. The marsh trails start from Myrick Park, a city park about ten minutes' drive from downtown, and the Cottonwood Trail is unpaved and free. The tree has no published age, but a visitor recorded it standing at the end of October 2026.",
+  "meta_description": "La Crosse's Cottonwood Trail is named after its tree: an eastern cottonwood 7.92 metres round in the La Crosse River Marsh, Wisconsin's champion.",
+  "question_meta": "No tree we map in La Crosse has a published age. The biggest is the cottonwood the Cottonwood Trail is named after, 7.92 metres round.",
+  "question_answer": "No tree we map in La Crosse has a published age. The biggest is the Cottonwood Trail Giant in the La Crosse River Marsh, an eastern cottonwood 7.92 metres round and 29.6 metres tall, which Wisconsin's champion register ranks first of its species and which gave the Cottonwood Trail its name.",
+  "question_context": "The Wisconsin DNR champion register scores a tree by adding its trunk in inches, its height in feet and a quarter of its crown, and the La Crosse cottonwood comes to 432 points, the highest score of any Wisconsin tree we map. It earns them almost entirely through its trunk, 312 inches round. The register's history note records that the public trail passing the tree is named after it. What the register does not record is the tree's age, or when it was measured, and nobody else we found has published either. A visitor recorded it at the spot at the end of October 2026, so it is standing. The marsh trails start from Myrick Park, a city park, and the Cottonwood Trail is unpaved; nobody gives the distance from the entrance to the tree, but a loop of about two kilometres runs through this part of the marsh. If you know how old it is, tell us.",
+  "hero_tree_id": "lcx_001",
+  "oldest_tree_id": "lcx_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in La Crosse?",
+      "a": "Nobody has published an age for the tree we map in La Crosse. The biggest is the Cottonwood Trail Giant, an eastern cottonwood 7.92 metres round in the La Crosse River Marsh."
+    },
+    {
+      "q": "How do you get to the Cottonwood Trail Giant?",
+      "a": "Walk in from Myrick Park, where the La Crosse River Marsh trails begin, and follow the unpaved Cottonwood Trail. The tree stands beside the trail that is named after it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The trail is a free public trail in the La Crosse River Marsh, reached from a city park."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lcx_001",
+      "name": "The Cottonwood Trail Giant",
+      "species": "Eastern Cottonwood (Populus deltoides)",
+      "age_estimate": "not documented",
+      "girth_cm": 792,
+      "height_m": 29.6,
+      "location": {
+        "address": "Cottonwood Trail, La Crosse River Marsh, reached from Myrick Park, La Crosse",
+        "latitude": 43.828308,
+        "longitude": -91.225987,
+        "neighbourhood": "La Crosse River Marsh"
+      },
+      "story": "La Crosse named a trail after this tree. The Cottonwood Trail through the La Crosse River Marsh takes its name from the giant beside it, an eastern cottonwood that the Wisconsin DNR champion register measures at 7.92 metres round. That is a waist of nearly eight metres, on a tree 29.6 metres tall with a crown about 30 metres one way and 25 the other.\n\nThe register scores a tree by adding its trunk in inches, its height in feet and a quarter of its crown, and this cottonwood comes to 432 points. For scale, the two cottonwoods on our Chicago page, both from the forest preserves there, are under six metres round, though both are taller than this one.\n\nYou reach it on foot. The marsh trails start from Myrick Park, a city park about ten minutes' drive from downtown, and the Cottonwood Trail is unpaved. Neither the register nor anyone else we found gives the distance from the park entrance to the tree; a loop of about two kilometres runs through this part of the marsh.\n\nNobody has dated it, and the register does not say when it was measured. It is recently seen, though. A visitor recorded it at the spot at the end of October 2026. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 7.92 metres round, on a cottonwood 29.6 metres tall. It stands beside the Cottonwood Trail in the La Crosse River Marsh, the trail named after it.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2997&outFields=*&f=json",
+        "https://www.cityoflacrosse.org/Your-Government/Departments/Parks-Recreation-Forestry/Parks/Find-a-Park/Myrick-Park",
+        "https://www.inaturalist.org/observations/411401926"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2997&outFields=*&f=json"
+      },
+      "access": "Free public trail in the La Crosse River Marsh; the trail starts from Myrick Park (city park). Unpaved.",
+      "transport": "In the city of La Crosse; Myrick Park is about a 10 minute drive from downtown; bus stop not verified.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 2997 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register history field: the public trail passing this giant cottonwood is named for it (Cottonwood Trail) in the La Crosse Marsh. City page confirms marsh trails are reached from Myrick Park. iNaturalist observation 2026-10-28 near pin (alive, recent). Best-sized find of the pass: 312 in circumference, the register's champion at 432 points. Distance along the trail from the Myrick Park entrance not measured (a komoot loop of about 1.3 miles exists); pin is the nomination point. Register figures (nomination measurement, date not in the layer): circumference 312 in (792 cm), height 97 ft (29.6 m), crown spread [100, 83] ft, 432 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "city": "Nashville",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Nashville's most storied oak stood through a Civil War battle, and its oldest dated trees line Andrew Jackson's carriage drive, planted in 1838. Between them sits a university campus that is a registered arboretum, where five big trees make a short walk, from a ginkgo a bishop is said to have brought from Asia to a pair of oaks at one doorway. Add the two oaks that outlived William Edmondson's home in Edgehill, and these are eight trees, seven of them free to visit.",
+  "meta_description": "Nashville's remarkable trees, from the Battle of Nashville Oak and Andrew Jackson's 1838 cedars to a five-tree walk across Vanderbilt's arboretum.",
+  "question_meta": "The oldest dated trees on Nashville's list are the Hermitage carriage drive cedars, planted in 1838. The Battle of Nashville Oak was already large in 1864.",
+  "question_answer": "The oldest dated trees on this Nashville list are the six eastern red cedars along the old carriage drive at the Hermitage, Andrew Jackson's home, which the state tree register dates to an 1838 planting, about 190 years ago. The Battle of Nashville Oak may be as old or older, since the register records it as already a large tree during the battle in December 1864, but nobody has published its age.",
+  "question_context": "Nashville's old trees are better documented by events than by tape measures. The cedars at the Hermitage were planted in 1838 for a carriage drive laid out by Jackson's daughter-in-law, Sarah York Jackson, and the painter Ralph Earl; tornadoes in 1923 and 1998 took many of the originals, and six remain. South of downtown, in the small Battle of Nashville Monument Park, an oak that the Tennessee Urban Forestry Council names a Historic Tree stood on the Noel Place farm when Federal cannon fire hit the farmhouse in 1864. Even its species is argued over: the register says chinkapin oak, the Battle of Nashville Trust says basket oak. In Edgehill, two Shumard oaks of about a hundred years, by the register's estimate, are the last original features of the homesite of William Edmondson, the sculptor who in 1937 became the first African American given a solo show at the Museum of Modern Art. The Vanderbilt trees are the biggest on the list rather than the oldest. A willow oak, a southern red oak and a southern magnolia there each top four metres round, measured by the university arboretum in 2014, and none of the five has a published planting date.",
+  "hero_tree_id": "nsh_003",
+  "oldest_tree_id": "nsh_008",
+  "faq": [
+    {
+      "q": "Can you walk around Vanderbilt to see the trees?",
+      "a": "Yes. Vanderbilt's campus is open to walk through and is a registered arboretum, and the five trees on this list stand within about 600 metres of each other, so they make one short walk. They are the willow oak by the Divinity School steps, the southern red oak at Godchaux Hall, Galloway's Ginkgo near Kirkland Hall, the magnolia in front of Buttrick Hall and Big Al at Cole Hall. WeGo buses run along West End Avenue and 21st Avenue South at the edge of campus; check wegotransit.com for routes."
+    },
+    {
+      "q": "Do you need a ticket to see the Hermitage cedars?",
+      "a": "Yes. The carriage drive cedars stand inside the grounds of the Hermitage, which charges for entry, about 30 dollars for an adult on its own admission page, and is open from 9 am to 5 pm with the last ticket at 4 pm. It is about 12 miles east of downtown, and the simplest way there is by car. Check thehermitage.com before you go. Every other tree on this list is free."
+    },
+    {
+      "q": "Where exactly is the Battle of Nashville Oak?",
+      "a": "In Battle of Nashville Monument Park, a small public park of about two and a half acres where Battlefield Drive, Granny White Pike and Clifton Lane meet, about six miles south of downtown. Look for the oak beside the tall monument. The park is listed as open from dawn to dusk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nsh_001",
+      "name": "Vanderbilt Willow Oak by the Divinity School steps",
+      "species": "Willow Oak (Quercus phellos)",
+      "girth_cm": 424,
+      "height_m": 31.7,
+      "location": {
+        "address": "By the steps from the Central Library corner to the Divinity School, Vanderbilt University, 21st Ave S, Nashville, TN 37203",
+        "latitude": 36.146045,
+        "longitude": -86.800507,
+        "neighbourhood": "Vanderbilt / Midtown"
+      },
+      "story": "The leaves say willow and the buds say oak, and on the steps up to Vanderbilt's Divinity School you can check both without leaving the path. This willow oak grows in the corner where the Central Library meets a retaining wall, and its lower branches reach out over that wall at about the height of anyone walking up the stairs. The leaves are narrow and plain, the shape that gave the species its name. The giveaway sits at the tips of the twigs, where the buds come in a tight cluster, as they do on every oak.\n\nSize is the reason to stop. When the university arboretum measured it in 2014, the trunk was 135 centimetres across at chest height, a little over four metres round, and the crown spread 29 metres from side to side. Its height was estimated at just under 32 metres. Those numbers put it in a four-way tie for the largest tree in the whole arboretum and a three-way tie for the tallest, on a campus that is a registered arboretum in its own right.\n\nThe figures are a decade old. Nothing has reported the tree lost since, but nobody has dated it either. The arboretum kept its tape measurements, not its planting year, so if you know when this oak went into the ground, tell us.",
+      "how_to_recognise": "You can recognise it by the narrow, willow-like leaves on branches that hang over the retaining wall, oak buds clustered at the twig tips. It stands in the corner by the Central Library, beside the steps up to the Divinity School.",
+      "verified_sources": [
+        "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv",
+        "http://bioimages.vanderbilt.edu/vanderbilt/6-188"
+      ],
+      "official_register": {
+        "name": "Vanderbilt University Arboretum (ArbNet Morton Register), field-verified measured-trees database",
+        "url": "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv"
+      },
+      "access": "Free; Vanderbilt's campus is open to walk through (a Morton Register arboretum). Outdoors, no ticket.",
+      "transport": "WeGo Public Transit buses serve West End Avenue and 21st Avenue South at the campus edge (route numbers not verified here; check wegotransit.com).",
+      "location_precision": "confirmed",
+      "curation_status": "verified",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nsh_002",
+      "name": "Southern Red Oak at Godchaux Hall",
+      "species": "Southern Red Oak (Quercus falcata)",
+      "girth_cm": 415,
+      "height_m": 32.0,
+      "location": {
+        "address": "In front of Godchaux Hall (nursing building), 21st Ave S, Vanderbilt University, Nashville, TN 37203",
+        "latitude": 36.144793,
+        "longitude": -86.800025,
+        "neighbourhood": "Vanderbilt / Peabody"
+      },
+      "story": "The best view of this oak is from a footbridge. Walk onto the pedestrian bridge on the side of MRB III nearest 21st Avenue South and the crown of Vanderbilt's only southern red oak opens out right in front of you, 27 metres across, at a height you would normally need a ladder for.\n\nOn the ground it is easier to miss. The tree grows on the strip between Godchaux Hall's parking lot and 21st Avenue, not the address you would expect for one of the biggest trees on campus. Yet the arboretum's 2014 tape gave it a trunk 132 centimetres across at chest height, about 4.15 metres round, and a rough estimate of 32 metres tall. That ties it for the tallest tree in the arboretum and puts it among the handful sharing the title of largest.\n\nHow old is it? The arboretum thinks it was probably planted soon after the university opened in 1873, which would make it one of the first generation of trees on the grounds. That is the arboretum's best guess, not a record, and no planting date for this particular trunk has been found. If the guess is right, the oak has stood here for nearly the university's whole life and ended up with a parking lot for a garden.\n\nThe measurements are from 2014, and nothing has reported the tree lost since.",
+      "how_to_recognise": "You can recognise it by the only southern red oak on campus, a crown 27 metres wide. It stands between Godchaux Hall's parking lot and 21st Avenue South; the clearest view is from the MRB III footbridge.",
+      "verified_sources": [
+        "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv",
+        "http://bioimages.vanderbilt.edu/vanderbilt/6-60",
+        "https://www.vanderbilt.edu/arboretum/noteworthy-trees/"
+      ],
+      "official_register": {
+        "name": "Vanderbilt University Arboretum (ArbNet Morton Register), field-verified measured-trees database",
+        "url": "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv"
+      },
+      "access": "Free; Vanderbilt's campus is open to walk through (a Morton Register arboretum). Outdoors, no ticket.",
+      "transport": "WeGo Public Transit buses serve West End Avenue and 21st Avenue South at the campus edge (route numbers not verified here; check wegotransit.com).",
+      "location_precision": "confirmed",
+      "curation_status": "verified",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nsh_003",
+      "name": "Galloway's Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "girth_cm": 314,
+      "height_m": 18.0,
+      "location": {
+        "address": "Between Kirkland Hall and Barnard Hall, tucked into the corner of the E. Bronson Ingram College, Vanderbilt University, Nashville, TN 37203",
+        "latitude": 36.148559,
+        "longitude": -86.803091,
+        "neighbourhood": "Vanderbilt"
+      },
+      "story": "A bishop is said to have carried this tree home from Asia. That is the story in The Trees of Vanderbilt, the university's own tree book, as its arboretum quotes it. Bishop Charles Galloway, one of the early figures of the university, brought the ginkgo back in the early 1900s. It stands between Kirkland Hall and Barnard Hall, tucked into a corner of E. Bronson Ingram College, and it carries his name.\n\nIt is the largest ginkgo in the arboretum. In 2014 the trunk measured a metre across at chest height, a little over three metres round, under a crown 23.5 metres wide and 18 metres high. Nothing has reported it lost since.\n\nThe book gives a journey, not a planting year. Treat the early 1900s as the arboretum's account of where the tree came from rather than a dated record of when it went in. Nobody has counted its rings or published a date for this trunk, so if you know more, tell us.\n\nIt is a male. Female ginkgos drop fleshy seeds that smell strongly in autumn, and Galloway's tree spares the path that. What it does do, usually in November, is turn its whole crown butter gold and then let the leaves go in a day or two. That is the week to come, when a tree that crossed an ocean, by the book's account, lights up the corner of a student college.",
+      "how_to_recognise": "You can recognise it by the fan-shaped leaves on the largest ginkgo on campus, a metre-wide trunk. It stands between Kirkland Hall and Barnard Hall, in the corner of E. Bronson Ingram College.",
+      "verified_sources": [
+        "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv",
+        "http://bioimages.vanderbilt.edu/vanderbilt/2-101",
+        "https://www.vanderbilt.edu/arboretum/noteworthy-trees/"
+      ],
+      "official_register": {
+        "name": "Vanderbilt University Arboretum (ArbNet Morton Register), field-verified measured-trees database",
+        "url": "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv"
+      },
+      "access": "Free; Vanderbilt's campus is open to walk through (a Morton Register arboretum). Outdoors, no ticket.",
+      "transport": "WeGo Public Transit buses serve West End Avenue and 21st Avenue South at the campus edge (route numbers not verified here; check wegotransit.com).",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns butter gold and drops within a day or two"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "verified",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nsh_004",
+      "name": "Buttrick Hall Southern Magnolia",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "girth_cm": 423,
+      "height_m": 25.0,
+      "location": {
+        "address": "In front of Buttrick Hall, second tree north of the entry walk, Vanderbilt University, Nashville, TN 37203",
+        "latitude": 36.146058,
+        "longitude": -86.802075,
+        "neighbourhood": "Vanderbilt"
+      },
+      "story": "Three southern magnolias stand in front of Buttrick Hall, and the one to look for has a trunk 53 inches across. That is 134.5 centimetres at chest height, about 4.2 metres round, the figure Vanderbilt's arboretum recorded for it, with a height of 25 metres and a crown 18 metres wide.\n\nThe arboretum calls it probably the largest magnolia on campus, and the word probably is theirs for a reason. Not every magnolia in the arboretum has been measured, so the claim stands until a bigger one turns up. Among the three outside Buttrick it is clearly the largest, and it is the second tree north of the entry walk.\n\nA southern magnolia keeps its leaves all year, so this is a tree that looks much the same in January as in July, dark and glossy. The exception is early summer. Through May and June it opens huge fragrant white flowers, up to 30 centimetres across, a few at a time rather than all at once, for six weeks or more. In September and October the seed pods split to show rose-red seeds hanging on silky threads.\n\nNo planting date has been published for this trunk, and the arboretum's tape says nothing about age, so how old it is remains an open question. If you know the story, tell us.",
+      "how_to_recognise": "You can recognise it by the largest of the three big evergreen magnolias in front of Buttrick Hall, a trunk 53 inches across. It is the second tree north of the entry walk.",
+      "verified_sources": [
+        "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv",
+        "http://bioimages.vanderbilt.edu/vanderbilt/7-5"
+      ],
+      "official_register": {
+        "name": "Vanderbilt University Arboretum (ArbNet Morton Register), field-verified measured-trees database",
+        "url": "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv"
+      },
+      "access": "Free; Vanderbilt's campus is open to walk through (a Morton Register arboretum). Outdoors, no ticket.",
+      "transport": "WeGo Public Transit buses serve West End Avenue and 21st Avenue South at the campus edge (route numbers not verified here; check wegotransit.com).",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "May and June, when huge fragrant white flowers open a few at a time"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "verified",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nsh_005",
+      "name": "Big Al, the Shumard Oak of Cole Hall",
+      "species": "Shumard Oak (Quercus shumardii)",
+      "girth_cm": 283,
+      "location": {
+        "address": "In front of Cole Hall, Vanderbilt University, Nashville, TN 37203",
+        "latitude": 36.146593,
+        "longitude": -86.804201,
+        "neighbourhood": "Vanderbilt"
+      },
+      "story": "Big Al is the smaller of the two. A pair of large Shumard oaks flanks the entry sidewalk to Cole Hall, and the one on the right as you walk up has the name, a write-up on page 62 of The Trees of Vanderbilt and, by the arboretum's reckoning, probably the only name any tree on campus carries. But the arboretum's tape measured both. Big Al came out at 90 centimetres across at chest height, about 2.8 metres round. Its unnamed twin across the path measured 104.\n\nSo the visit is really two trees at one doorway. They frame the entrance like a pair of gateposts, and the walk to the door runs straight between their trunks. Stand on the path and you can judge for yourself whether the tape or the nickname got it right.\n\nNobody recorded Big Al's height in the arboretum database, and nobody has published a planting date for either oak. Where the name came from is not explained in the records either. Whoever first called it Big Al, and why the bigger tree on the other side of the path was left without a name, is exactly the kind of thing a reader might know. If that is you, tell us.\n\nThe measurements date from 2014, and nothing has reported either tree lost since.",
+      "how_to_recognise": "You can recognise it by its place on the right of Cole Hall's entry sidewalk as you walk up, one of a matching pair of oaks. Its unnamed twin on the left is slightly larger.",
+      "verified_sources": [
+        "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv",
+        "http://bioimages.vanderbilt.edu/vanderbilt/7-223",
+        "https://www.vanderbilt.edu/arboretum/noteworthy-trees/"
+      ],
+      "official_register": {
+        "name": "Vanderbilt University Arboretum (ArbNet Morton Register), field-verified measured-trees database",
+        "url": "https://raw.githubusercontent.com/vanderbilt-arboretum/database/master/measured-trees.csv"
+      },
+      "access": "Free; Vanderbilt's campus is open to walk through (a Morton Register arboretum). Outdoors, no ticket.",
+      "transport": "WeGo Public Transit buses serve West End Avenue and 21st Avenue South at the campus edge (route numbers not verified here; check wegotransit.com).",
+      "location_precision": "confirmed",
+      "curation_status": "verified",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nsh_006",
+      "name": "Battle of Nashville Oak",
+      "species": "Chinkapin Oak (Quercus muehlenbergii)",
+      "location": {
+        "address": "Battle of Nashville Monument Park, Battlefield Drive at Granny White Pike, Nashville, TN 37204",
+        "latitude": 36.1146,
+        "longitude": -86.7926,
+        "neighbourhood": "Oak Hill / Granny White Pike"
+      },
+      "story": "This oak was already a big tree when the Battle of Nashville was fought across its farm on 15 and 16 December 1864. That is the Tennessee Urban Forestry Council's account. Its register describes a large oak on the Noel Place farm, documented as such through the years, and named it a Historic Tree in 1999.\n\nThe farm was in the thick of the fighting. Federal cannon fire damaged the Noel house, and Confederate troops built breastworks across the land. Today the oak stands in Battle of Nashville Monument Park, a small public park of about two and a half acres bounded by Battlefield Drive, Granny White Pike and Clifton Lane, close to the tall monument to the battle.\n\nWhich oak it is depends on whom you ask. The register lists it as a chinkapin oak. The Battle of Nashville Trust calls it a basket oak, a different species, and the Nashville Historical Newsletter reports that other experts have identified it as a chinkapin rather than a chestnut oak. We follow the register and say so. A reader who knows their oak leaves could settle it.\n\nNobody has published its age, girth or height, so the register's word that it was large in 1864 is the only clock it has. Our pin marks the middle of the park, not the trunk. Look for the oak beside the monument.",
+      "how_to_recognise": "You can recognise it by its place beside the tall Battle of Nashville monument. It stands in the small park where Battlefield Drive, Granny White Pike and Clifton Lane meet.",
+      "verified_sources": [
+        "https://tufc.com/project/battle-of-nashville-oak/",
+        "https://battleofnashvilletrust.org/?p=134",
+        "https://nashvillehistoricalnewsletter.com/tag/battle-of-nashville-monument/",
+        "https://nashvillesites.org/records/battle-of-nashville-monument-park"
+      ],
+      "official_register": {
+        "name": "Tennessee Urban Forestry Council Landmark, Historic & Heritage Tree Registry (Historic Tree, 1999)",
+        "url": "https://tufc.com/project/battle-of-nashville-oak/"
+      },
+      "access": "Free; the monument park is a small public park (about 2.5 acres) open dawn to dusk per Nashville Sites listing (hours from a third-party city-history site; not checked against Tennessee Historical Commission).",
+      "transport": "No public transport verified; the park is on Granny White Pike about 6 miles south of downtown. WeGo service to this exact spot not verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nsh_007",
+      "name": "William Edmondson Homesite Shumard Oaks",
+      "species": "Shumard Oak (Quercus shumardii)",
+      "age_estimate": "about a century",
+      "age_min": 90,
+      "age_max": 120,
+      "age_basis": "source",
+      "girth_cm": 305,
+      "height_m": 19.8,
+      "location": {
+        "address": "1434 14th Avenue South, Nashville, TN 37212 (Edgehill Community Memorial Park / William Edmondson Homesite)",
+        "latitude": 36.1401,
+        "longitude": -86.7899,
+        "neighbourhood": "Edgehill"
+      },
+      "story": "Two oaks are all that is left of the home where William Edmondson carved his way into the Museum of Modern Art. The Tennessee Urban Forestry Council, which named them Historic Trees in 2019, says these Shumard oaks flanked the front yard of his home and are its only remaining original features.\n\nEdmondson was born around 1874 to formerly enslaved parents. From 1931 he carved limestone sculptures in his backyard here in Edgehill, and in 1937 he became the first African American artist given a solo exhibition at MoMA. He died in 1951. Urban renewal cleared his house and those of his neighbours. The oaks stayed.\n\nThe land itself nearly went. In 2018 the city announced plans to sell the property, a coalition formed, and after a public outcry the sale was dropped. A friends group has since planted more than fifty trees on the site with the Nashville Tree Foundation, so the two veterans now have company.\n\nThe register gives them about a hundred years, the nominator's estimate in 2019 rather than a ring count, and records a height of 65 feet (19.8 metres), a girth of 10 feet (about three metres) and a crown 35 feet wide. Our pin is approximate. Walk to the park and look for the two oaks near the old frontage.",
+      "how_to_recognise": "You can recognise them by their pairing, two large Shumard oaks near the old front of the homesite, about 10 feet round by the register's figure. They stand in Edgehill Community Memorial Park on 14th Avenue South.",
+      "verified_sources": [
+        "https://tufc.com/project/william-edmondson-homesite-trees-35/",
+        "https://www.civicdesigncenter.org/the-impact/projects/william-edmondson-homesite",
+        "https://hyperallergic.com/448072/william-edmondson-former-home-park-nashville-sale/"
+      ],
+      "official_register": {
+        "name": "Tennessee Urban Forestry Council Landmark, Historic & Heritage Tree Registry (Historic Trees #35, 2019)",
+        "url": "https://tufc.com/project/william-edmondson-homesite-trees-35/"
+      },
+      "access": "Free; public park land owned by Metro Nashville Public Schools per TUFC (Edgehill Community Memorial Park, with community gardens). Hours not published in sources read; 'Metro city sale halted 2018-19' per Hyperallergic/Civic Design Center.",
+      "transport": "No bus stop verified; Edgehill is about 1.5 miles south-west of downtown.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nsh_008",
+      "name": "The Hermitage Carriage Drive Cedars",
+      "species": "Eastern Red Cedar (Juniperus virginiana)",
+      "age_estimate": "about 190 years",
+      "age_min": 180,
+      "age_max": 200,
+      "age_basis": "source",
+      "location": {
+        "address": "The Hermitage, 4580 Rachel's Lane, Nashville, TN 37076 (old carriage entrance drive)",
+        "latitude": 36.21497,
+        "longitude": -86.61297,
+        "neighbourhood": "Hermitage"
+      },
+      "story": "A portrait painter helped plan this driveway. In 1838 Ralph Earl and Andrew Jackson's daughter-in-law, Sarah York Jackson, laid out a new carriage entrance to the Hermitage, Jackson's home east of Nashville, and lined it with eastern red cedars. Six of those cedars still stand along the old drive.\n\nThey are survivors in the plain sense. Tornadoes in 1923 and 1998 brought down many of the original trees, and the Tennessee Urban Forestry Council, which named the six a Landmark Tree in 2015, describes them as the oldest remaining of the 1838 planting. Read as a planting date for the row, that makes them about 190 years old. The register is the only published source for that, so treat it as its account rather than a ring count. The earliest photograph that shows them is a 1905 picture of the mansion.\n\nThe register also keeps a guest list. Theodore Roosevelt, Franklin Roosevelt, Lyndon Johnson and Ronald Reagan all came up this drive under these trees, by its account, which puts four presidents beneath one row of cedars.\n\nThe Hermitage charges for entry, about 30 dollars for an adult on its own admission page, and opens from 9 am to 5 pm with the last ticket at 4. There is no measurement for any single cedar, and our pin marks the mansion. Walk the old entrance drive and you will find the row.",
+      "how_to_recognise": "You can recognise them by the row, six eastern red cedars lining the old carriage entrance drive to the mansion. They stand inside the paid Hermitage grounds, along the drive that leads up to the house.",
+      "verified_sources": [
+        "https://tufc.com/project/carriage-drive-cedars/",
+        "https://thehermitage.com/admission-tickets"
+      ],
+      "official_register": {
+        "name": "Tennessee Urban Forestry Council Landmark, Historic & Heritage Tree Registry (Landmark Tree, 2015)",
+        "url": "https://tufc.com/project/carriage-drive-cedars/"
+      },
+      "access": "Paid entry to The Hermitage (about $30 adult per its admission page; third-party sources conflict); open 9 am to 5 pm, last ticket 4 pm per the official site. Check thehermitage.com.",
+      "transport": "The Hermitage is about 12 miles east of downtown Nashville; no public transport verified, drive or rideshare.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "city": "Salem, Oregon",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Salem's oldest mapped tree has a park to itself. Judge William Waldo planted a giant sequoia from seed in 1872, sold his land to the city on condition the tree be kept, and in 1936 the plot became Waldo Park, about 12 by 20 feet, with Summer Street narrowed to make room. Under a kilometre away, across State Street from the Capitol, five more giant sequoias planted by Willamette University's class of 1942 form a star when seen from the centre of their ring.",
+  "meta_description": "Salem's giant sequoias: the 1872 Waldo Park tree in the city's smallest park, and Willamette University's five Star Trees across from the Capitol.",
+  "question_meta": "The Waldo Park sequoia, planted in 1872, is Salem's oldest mapped tree. Free at any hour on the corner of Summer and Union.",
+  "question_answer": "The oldest tree mapped in Salem, Oregon is the giant sequoia in Waldo Park, planted from seed by Judge William Waldo in 1872 and standing in a park about 12 by 20 feet on the corner of Summer and Union. The Star Trees at Willamette University, five sequoias planted in 1942, are the other stop.",
+  "question_context": "Both of Salem's trees on this page are giant sequoias, both are Oregon Heritage Trees, and both are free to see in downtown Salem. The Waldo Park tree stands at Summer Street and Union Street, about ten minutes on foot from the Salem Transit Center. It is about 85 feet tall with a trunk about 22 feet round, and it has recovered from 1957, when decay took its top and several limbs. The city declared its plot a park in 1936 after the American War Mothers lobbied for it, and calls it Salem's smallest.\n\nThe Star Trees stand at the State Street edge of Willamette University, directly opposite the Oregon State Capitol. The class of 1942 gave them as a centennial gift, planted in a ring so they form a star from the centre. The state gives them about 154 feet; a local report says about 160. They are lit for a public tree lighting every holiday season, and they can be seen from the public street.",
+  "hero_tree_id": "slo_001",
+  "oldest_tree_id": "slo_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Salem, Oregon?",
+      "a": "The giant sequoia in Waldo Park, planted from seed by Judge William Waldo in 1872. It stands at the corner of Summer Street and Union Street."
+    },
+    {
+      "q": "Is Waldo Park really Salem's smallest park?",
+      "a": "It is called that. The plot is roughly 12 by 20 feet, holds the one sequoia and two benches, and has been a city park since 1936."
+    },
+    {
+      "q": "What are the Star Trees?",
+      "a": "Five giant sequoias given to Willamette University by the class of 1942 as a centennial gift, planted so that they form a star when seen from the centre of their ring. They stand across State Street from the Capitol."
+    },
+    {
+      "q": "Can I visit the trees at night?",
+      "a": "Waldo Park is open 24 hours. The Star Trees can be seen from the public street and sidewalk, and every holiday season they are lit for a public tree lighting."
+    }
+  ],
+  "trees": [
+    {
+      "id": "slo_001",
+      "name": "Waldo Park Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "planted 1872",
+      "age_min": 150,
+      "age_max": 155,
+      "age_basis": "source",
+      "girth_cm": 671,
+      "height_m": 26,
+      "location": {
+        "address": "605 Summer Street NE (corner of Summer and Union), Salem, OR 97301",
+        "latitude": 44.9436544,
+        "longitude": -123.0279065,
+        "neighbourhood": "Downtown Salem"
+      },
+      "story": "Salem narrowed a street to make room for this tree, and the park it stands in measures about 12 by 20 feet. Waldo Park, on the corner of Summer and Union, holds one giant sequoia, two benches and nothing else, and it is called the city's smallest park.\n\nJudge William Waldo planted the sequoia from seed in 1872, on his own land, then outside the city limits. When he sold the property to the city, he made a condition that the tree be kept. In 1936, after the American War Mothers lobbied for it, the City Council declared the little plot a park. Summer Street itself was narrowed to make room for the tree.\n\nThe tree has not had an easy century and a half. In 1957 decay destroyed its top and several limbs, and a truckload of dead wood was hauled away. The crown grew back. Today it stands about 85 feet tall, roughly 26 metres, by the counts of the Oregon Heritage Tree Program and a 2026 local report; Wikipedia gives 82 feet. Its trunk is about 22 feet round, some 6.7 metres, on a measurement of unknown date. The state named it an Oregon Heritage Tree in 1998.\n\nIt is still alive, photographed by naturalists in 2026, and it is free to visit at any hour. Sit on one of the benches and look up at a conifer towering over the downtown houses around it.",
+      "verified_sources": [
+        "https://oregontic.com/?p=6407",
+        "https://mariontalk.com/2026/01/26/finding-waldo-the-giant-story-of-salems-smallest-park/",
+        "https://en.wikipedia.org/wiki/Waldo_Park",
+        "https://www.openstreetmap.org/node/11825809707"
+      ],
+      "official_register": {
+        "name": "Oregon Heritage Tree Program (Oregon Travel Experience), dedicated 1998-04-08",
+        "url": "https://oregontic.com/?p=6407"
+      },
+      "access": "Free, open 24 hours. Stands in Waldo Park, a 12 by 20 foot city park on a street corner with two benches.",
+      "transport": "Downtown Salem, about 10 minutes walk from Salem Transit Center (Cherriots routes; stop not route-checked).",
+      "how_to_recognise": "You can recognise it as the only tree on a tiny corner plot with two benches and ivy at its base, a giant sequoia towering over the houses. It stands at the corner of Summer Street and Union Street.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "- Planted 1872 by Judge William Waldo from seed on his property then outside city limits (OTE, Wikipedia, MarionTalk agree). Waldo sold the property to the city on condition the tree be kept. City Council declared the plot a city park 1936-06-15 after American War Mothers lobbied; roughly 0.005 acre, called Salem's smallest park. Summer Street was narrowed to make room for the tree.\n- 1957: decay destroyed the top and several limbs; a truckload of dead wood removed; the crown regrew (MarionTalk, Jan 2026).\n- Size: OTE gives about 85 ft and 22 ft circumference (671 cm; OTE measurement date unknown); MarionTalk 2026 about 85 ft; Wikipedia 82 ft. OSM node carries height 85'.\n- Pin: OSM tree node 11825809707 sits on the one-tree park; Wikipedia coordinate 44.94363,-123.02791 agrees within ~10 m. Confirmed.\n- Alive: lifecheck.py returned RECENT 2026-09-26 (iNaturalist observation 404928547) and MarionTalk Jan 2026 says living.\n- Tell-apart: the only large tree on a tiny fenced-free corner plot with two benches, bed of ivy at the base, at Union and Summer; a conifer towering over downtown houses.\n- Age basis is a documented planting date for this specimen. Photo pass 2026-11-04 (approved): Commons file titled Waldo Park redwood tree near car Salem Oregon; the sequoia fills the portrait frame on its street-corner lot, daylight.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Waldo_Park_redwood_tree_near_car_Salem_Oregon.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Andrew Parodi",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Waldo_Park_redwood_tree_near_car_Salem_Oregon.JPG",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "slo_002",
+      "name": "Star Trees of Willamette University",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "planted 1942",
+      "age_min": 80,
+      "age_max": 85,
+      "age_basis": "source",
+      "girth_cm": 660,
+      "height_m": 47,
+      "location": {
+        "address": "900 State Street, Salem, OR 97301 (Willamette University, opposite the Capitol)",
+        "latitude": 44.9376894,
+        "longitude": -123.031239,
+        "neighbourhood": "Capitol Mall / Willamette University"
+      },
+      "location_site": {
+        "name": "Star Trees circle, Willamette University, State Street",
+        "radius_m": 40
+      },
+      "story": "Stand in the middle of this circle and five giant sequoias form a star around you. The class of 1942 gave them to Willamette University as a centennial gift, planted so that the pattern shows from the centre, and they now stand at the State Street edge of the campus, directly across from the Oregon State Capitol.\n\nIn about eighty years they have grown tall. The Oregon Heritage Tree Program gives them about 154 feet, roughly 47 metres, and a circumference of 21 feet 8 inches, about 6.6 metres; a 2024 local report says about 160 feet. The state does not say whether those figures belong to the largest of the five or describe the group, or when they were measured, so read them as the size of the ensemble rather than of any one trunk. The state named them Oregon Heritage Trees in 2003.\n\nThe class that gave them graduated in the middle of the Second World War, and the trees have stood across from the seat of state government ever since. Every holiday season they are strung with lights for a public tree lighting.\n\nThey are alive, photographed by naturalists in June 2026, and free to see from the public street and sidewalk. You do not need to enter any building. Walk to the corner of campus facing the Capitol, find the ring of five, and step into the middle.",
+      "verified_sources": [
+        "https://oregontic.com/?p=6393",
+        "https://mariontalk.com/2024/06/26/uncover-salems-history-through-its-heritage-trees",
+        "https://www.openstreetmap.org/node/1178226921"
+      ],
+      "official_register": {
+        "name": "Oregon Heritage Tree Program (Oregon Travel Experience), dedicated 2003-04-11",
+        "url": "https://oregontic.com/?p=6393"
+      },
+      "access": "Free. Stand at the State Street edge of the campus, visible from the public street and sidewalk; strung with lights each holiday season for a public tree lighting.",
+      "transport": "Across State Street from the Oregon State Capitol; walkable from downtown Salem (Cherriots routes not checked).",
+      "how_to_recognise": "You can recognise them as five very tall giant sequoias planted in a ring, lit with holiday lights each December. They stand at the corner of the Willamette campus directly across State Street from the Capitol grounds.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "- Five giant sequoias, a centennial gift of the class of 1942 to Willamette University, planted so they form a star seen from the circle's centre (MarionTalk). One collectible point: compact ensemble, one place to stand.\n- OTE: about 154 ft tall, circumference 21 ft 8 in (660 cm); OTE does not say whether that is the largest tree or an average, and gives no date of measurement. MarionTalk says about 160 ft. Said to be the tallest giant sequoias on any US college campus (OTE text per search summary only; not seen on fetched page, do not repeat as fact without checking).\n- Pin: OSM node 1178226921 'The Star Trees' is one node for the group, so approximate; site radius ~40 m, a little over the 30 to 50 m limit guideline, treat as approximate site.\n- Alive: lifecheck.py RECENT 2026-06-12 (iNaturalist observation 370919016). Flagged because two sources describe the group with no per-tree data.\n- Tell-apart: five very tall sequoias in a ring at the corner of campus directly across State Street from the Capitol grounds; lit with holiday lights each December.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

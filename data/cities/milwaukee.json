@@ -1,0 +1,235 @@
+{
+  "city": "Milwaukee",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Milwaukee's biggest trees grow on its East Side and in its parks. A street elm 4.91 metres round on North Prospect Avenue is one of the largest American elms left in Wisconsin, seemingly untouched by Dutch elm disease. Lake Park, planned by the Olmsted firm from 1889, keeps oaks its Friends put at 190 to over 200 years old, and a rare English elm. McGovern Park holds the state's champion chinkapin oak, and Forest Home Cemetery a southern overcup oak a long way from home. Every one is free.",
+  "meta_description": "Milwaukee's remarkable trees: a 4.91-metre street elm, Lake Park oaks older than the park, and state champion oaks in McGovern Park and Forest Home.",
+  "question_meta": "Milwaukee's oldest tree we map is Lake Park's big white oak, over 200 years old by the park Friends' estimate. Its story, and the others we map.",
+  "question_answer": "The oldest tree we map in Milwaukee is the big white oak in the Locust Street ravine of Lake Park, which the Lake Park Friends estimated in 2016 at over 200 years old. Close behind are two swamp white oaks just south of the park's tennis courts, put at about 190 years by the same tree walk.",
+  "question_context": "Milwaukee's oldest trees may be the ones a park was built around. Lake Park sits on ground where, by the Friends' history, Gustav Lueddemann kept the northern forest intact from 1849, and the Olmsted firm began planning the park in 1889. The Friends' printed tree walk dates the park's remnants of native forest to before 1835, and it estimates its biggest white oak at over 200 years and a pair of swamp white oaks at about 190. Those are their estimates, not ring counts, and the book is from 2016, so we say both. Elsewhere the city's record trees are dated by nobody. The Prospect Avenue elm, the McGovern Park chinkapin oak and the overcup oak in Forest Home Cemetery are champions in Wisconsin's state register, which measures girth, height and crown and never asks how old a tree is. A big tree is not automatically an old one, and for the elm nobody has published a figure. If you know one, tell us.",
+  "hero_tree_id": "mke_001",
+  "oldest_tree_id": "mke_004",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Milwaukee?",
+      "a": "The oldest we map is the big white oak in Lake Park's Locust Street ravine, estimated by the Lake Park Friends in 2016 at over 200 years old. It is their estimate, not a ring count, and no source since has confirmed it."
+    },
+    {
+      "q": "Is the Prospect Avenue elm the largest American elm in Wisconsin?",
+      "a": "It may be. A state tree hunter told Wisconsin Public Radio in 2024 it is the champion or co-champion with a Waukesha elm of about the same size, and Urban Milwaukee calls it believed to be the largest surviving American elm in the state. An older list names a Wauwatosa elm instead, so we call it a state champion."
+    },
+    {
+      "q": "Are Milwaukee's remarkable trees free to visit?",
+      "a": "Yes. Lake Park and McGovern Park are public parks, the Prospect Avenue elm is a street tree seen from the sidewalk, and Forest Home Cemetery is open daily for self-guided visits from 7.30am to 7pm."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mke_001",
+      "name": "The Prospect Avenue Elm",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "not documented",
+      "girth_cm": 491,
+      "height_m": 29,
+      "location": {
+        "address": "Street tree at the corner of N Prospect Avenue and E Webster Place, Milwaukee",
+        "latitude": 43.06504,
+        "longitude": -87.88068,
+        "neighbourhood": "East Side"
+      },
+      "story": "One of the biggest American elms in Wisconsin is a street tree. It grows in the strip between sidewalk and road at the corner of North Prospect Avenue and East Webster Place, where the Wisconsin DNR champion register measured a trunk 4.91 metres round, a height of 29 metres and a crown about 39 metres one way and 30 the other. The city's public works department owns it.\n\nWhether it is the biggest is an open question. A state tree hunter told Wisconsin Public Radio in 2024 that it is the champion, or perhaps co-champion with an elm of about the same size in Waukesha. Urban Milwaukee says it is believed to be the largest surviving American elm in the state. An older list names a different tree, a Wauwatosa street elm measured in 2007. We call it a state champion and leave the crown there.\n\nWhat makes it worth the walk is that it is here at all. A short film from the National Association of State Foresters follows a retired urban forester to a large, healthy elm in Milwaukee, seemingly untouched by Dutch elm disease, and the register names this tree as the one in the film.\n\nNobody has published its age. Urban Milwaukee photographed it standing in September 2024. Look from the sidewalk; the house beside it is private.",
+      "how_to_recognise": "You can recognise it by the crown, about 39 metres wide, over a trunk 4.91 metres round. It stands on the street edge at the corner of North Prospect Avenue and East Webster Place.",
+      "verified_sources": [
+        "https://urbanmilwaukee.com/?p=220192",
+        "https://wpr.org/news/searching-for-wisconsins-majestic-champion-trees",
+        "https://www.stateforesters.org/newsroom/latest-tree-story-film-from-nasf-profiles-a-bonafide-tree-hunter-and-his-champion-find/",
+        "https://www.inaturalist.org/observations/60323757",
+        "https://dnr.wisconsin.gov/topic/forests/championtrees"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (objectid 2911)",
+        "url": "https://dnr.wisconsin.gov/topic/forests/championtrees"
+      },
+      "access": "Street tree between sidewalk and street on public right of way; view from the sidewalk. The adjoining property is a private house, so do not enter the yard.",
+      "transport": "MCTS buses run along N Prospect Avenue; route numbers not verified in this pass, check ridemcts.com. Walk from Lake Park is about 15 minutes.",
+      "location_precision": "confirmed",
+      "pin_source": "DNR champion layer objectid 2911 (Exact location) at 43.065041,-87.880675; independently agrees with the corner of N Prospect Ave and E Webster Pl named by Urban Milwaukee and with an iNaturalist research-grade Ulmus americana at E Webster Pl (43.064917,-87.880658, 10 m accuracy, 2020-09-21).",
+      "curation_status": "flagged",
+      "verify_notes": "Register: Wisconsin DNR Champion Tree Program, owner field 'City of Milwaukee Public Works', 'a street tree and readily visible'. Circumference 193.2 in (491 cm), height 94 ft (29 m), crown 127 x 99 ft, champion points 343.7. Register history field says it features in the NASF 'Tree Hunter' short film (Tree Stories series; NASF post 2022-08-22 says the retired urban forester finds a large, healthy American elm in Milwaukee seemingly unscathed by Dutch elm disease; gives no street, size or age). WPR (2024-05-30, updated 2024-06-03): a state tree hunter calls the Milwaukee east side tree the state champion or maybe co-champion, with a Waukesha elm about the same size, growing between sidewalk and street; WPR also says the DNR champion program is on hiatus. Urban Milwaukee property page: believed to be the largest surviving American elm in Wisconsin, photos taken 2024-09-01. Wikipedia's list of elm trees gives a different Wisconsin entry (Wauwatosa street tree, 179 in, measured 2007), so 'largest' is contested and should be stated as 'among the largest' or 'a state champion elm'. Alive: iNaturalist lifecheck RECENT 2026-08-16 within the radius (not confirmed to be this trunk), Urban Milwaukee photos 2024-09, WPR 2024. Age: no source; leave empty. Do not print the house number or any owner.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mke_002",
+      "name": "The McGovern Park Chinquapin Oak",
+      "species": "Chinkapin Oak (Quercus muehlenbergii)",
+      "age_estimate": "not documented",
+      "girth_cm": 348,
+      "height_m": 25,
+      "location": {
+        "address": "McGovern Park, near W Custer Avenue at N 50th Street, Milwaukee (west side of the path going north)",
+        "latitude": 43.11608,
+        "longitude": -87.97515,
+        "neighbourhood": "McGovern Park"
+      },
+      "story": "Milwaukee is close to the northern edge of the chinkapin oak's range, and the biggest chinkapin in the Wisconsin DNR champion register grows here, in McGovern Park on the city's north-west side. The register measured a trunk 3.48 metres round and a height of 25 metres, under a crown about 31 metres one way and 28 the other. It is wider than it is tall.\n\nA travel piece about the park repeats that Wisconsin's largest chinquapin oak lives here, and adds nothing more. That leaves the register as the real record, and it is spare. It gives no measurement date and no age, and we found no recent sighting we can tie to this trunk. The state's champion programme was on hiatus in 2024, according to Wisconsin Public Radio, so the figures may be some years old.\n\nThe register's directions are pleasingly practical. Walk north on the path from the corner of North 50th Street and West Custer Avenue. The tree is on the west side of the path, with a light pole just east of it.\n\nChicago's forest preserves keep a bigger one, the county champion at National Grove, 3.72 metres round, on our Chicago page. If you have stood under this one lately, or know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by the light pole just east of the path beside it, on an oak 3.48 metres round. It stands west of the path running north from North 50th Street and West Custer Avenue.",
+      "verified_sources": [
+        "https://dnr.wisconsin.gov/topic/forests/championtrees",
+        "https://www.islands.com/2150034/mcgovern-park-milwaukee-underrated-wisconsin-gem-athletic-fields-trails-wildflowers/"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (objectid 373)",
+        "url": "https://dnr.wisconsin.gov/topic/forests/championtrees"
+      },
+      "access": "Public park on the path network, free. Park hours not verified in this pass.",
+      "transport": "MCTS bus access to the park exists but the route number was not verified (a travel article calls it about an hour from downtown); check ridemcts.com.",
+      "location_precision": "approximate",
+      "pin_source": "DNR champion layer objectid 373 (Exact location) at 43.116080,-87.975148; the access note says 'west side of path going north, light pole just east of path'. OSM reverse geocode puts it inside McGovern Park beside W Custer Ave. Not verified on a crown, so approximate.",
+      "curation_status": "flagged",
+      "verify_notes": "Register only plus one travel article. Circumference 137 in (348 cm), height 83 ft (25 m), crown 102 x 91 ft, 244 champion points. Register owner field says City of Milwaukee; McGovern Park is generally a Milwaukee County park, so ownership wording should be left out. Islands.com article (undated in fetch) says Wisconsin's largest chinquapin oak resides in McGovern Park, no more detail. Alive: no tree-specific recent evidence; lifecheck RECENT 2024-01-24 iNaturalist observation in radius, not confirmed to be this trunk. Register has no vitality field. Chinkapin oak is near the northern edge of its range here, which is the interest. No age source; the champion program is on hiatus (WPR 2024).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mke_003",
+      "name": "The Forest Home Overcup Oak",
+      "species": "Overcup Oak (Quercus lyrata)",
+      "age_estimate": "not documented",
+      "girth_cm": 259,
+      "height_m": 23,
+      "location": {
+        "address": "Forest Home Cemetery and Arboretum, 2405 W Forest Home Avenue, Milwaukee, near the Edward Schmidt monument",
+        "latitude": 43.00087,
+        "longitude": -87.93904,
+        "neighbourhood": "Forest Home Hills"
+      },
+      "story": "Overcup oak belongs to the floodplains of the South, a long way from Lake Michigan, and Wisconsin's champion grows among the graves of a Milwaukee cemetery. The Wisconsin DNR champion register gives it a trunk 2.59 metres round, a height of 23 metres and a crown about 19 metres across, and places it near the Edward Schmidt monument in Forest Home Cemetery.\n\nThe name describes the acorn. Its cup grows up and over the nut until it almost encloses it, which makes the tree easier to confirm from what lies on the ground in autumn than from anything in the crown.\n\nForest Home was laid out by Increase Lapham and is now an accredited arboretum as well as a working cemetery, with more than 2,600 trees. The gates are open daily for self-guided visits, 7.30am to 7pm. It is an active burial ground, so visit quietly.\n\nThis entry has a gap we would rather name than hide. The register is the only source for the tree, it does not date its measurement, and we found no recent photograph. The cemetery's own pages do not mention it, so we cannot tell you it is still standing. If you find it near the Schmidt monument, tell us, and the cemetery office can point you to the section.",
+      "how_to_recognise": "You can recognise it by its large acorns, their cups almost covering the nut. It stands near the Edward Schmidt monument; the cemetery office can say which section.",
+      "verified_sources": [
+        "https://dnr.wisconsin.gov/topic/forests/championtrees",
+        "https://foresthomecemetery.com/visit/arboretum/",
+        "https://www.arbnet.org/morton-register/forest-home-cemetery-and-arboretum"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (objectid 2702)",
+        "url": "https://dnr.wisconsin.gov/topic/forests/championtrees"
+      },
+      "access": "Cemetery grounds open daily for self-guided visits; gates 7:30am to 7pm per the cemetery's own page. Active cemetery, so quiet visits. Public tours need advance tickets.",
+      "transport": "MCTS bus access on W Forest Home Avenue likely but route number not verified; check ridemcts.com.",
+      "location_precision": "approximate",
+      "pin_source": "DNR champion layer objectid 2702 at 43.000874,-87.939037, which falls inside the cemetery polygon (OSM relation 11347432). The monument it references is not mapped in what I could reach, so the exact trunk is not placed.",
+      "curation_status": "flagged",
+      "verify_notes": "Register only (private_property true in the register because the cemetery is a private nonprofit; the cemetery itself states it is open daily for self-guided tours and is an ArbNet Level II accredited arboretum of 2,600+ trees, so hard rule 10 passes). Circumference 102 in (259 cm), height 74 ft (23 m), crown 64 x 62 ft, 192 points. Overcup oak is a southern floodplain species, far north of its native range in Milwaukee, which is the interest. The cemetery pages do not mention this tree and I found no recent photo; lifecheck NONE. Alive status unknown, flag. Cemetery laid out by Increase Lapham per ArbNet. The Edward Schmidt reference is the register's wording only.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mke_004",
+      "name": "The Lake Park Big White Oak",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_basis": "source",
+      "location": {
+        "address": "Lake Park, Locust Street Ravine area south of the rustic bridge, Milwaukee",
+        "latitude": 43.0712,
+        "longitude": -87.8697,
+        "neighbourhood": "Lake Park, East Side"
+      },
+      "story": "The Lake Park Friends put this white oak at over 200 years old and call it the largest white oak in the park. If they are right, it was already standing when Gustav Lueddemann kept the northern forest here intact, from 1849, and it was decades old when the Olmsted firm began planning Lake Park in 1889.\n\nThe same Friends' tree walk dates the park's remnants of native forest to before 1835, which gives a sense of how far back this ground's trees reach. Its own setting has changed. The walk describes it standing in a bed of prairie plantings, with two young offspring growing beside it, so the old tree now has company of its own making.\n\nTo find it, start at the rustic bridge in the Locust Street ravine and take the cinder path west towards the street. After about 15 metres the path turns, and the oak is on the left.\n\nEverything here comes from one source, the Friends' tree walk of 2016. The age is their estimate, not a ring count, the trunk has not been measured in print, and we have found nothing since 2016 that confirms it still stands. If you have walked past it lately, tell us.",
+      "how_to_recognise": "You can recognise it as the park's biggest white oak, in a bed of prairie plantings with two young oaks beside it. It stands on the left where the path turns, west of the rustic bridge.",
+      "verified_sources": [
+        "https://lakeparkfriends.org/wp-content/uploads/2026/03/LPF-Tree-Book-2016.pdf",
+        "https://lakeparkfriends.org/history/"
+      ],
+      "access": "Milwaukee County public park, free, open daily; hours not verified.",
+      "transport": "MCTS routes serve N Lake Drive / Prospect Ave nearby; route numbers not verified, check ridemcts.com.",
+      "location_precision": "approximate",
+      "pin_source": "Park-level pin placed in the Locust Street Ravine area from the Friends' walk text (about 50 ft from the rustic bridge on the cinder path west toward the street, then on the left at the turn of the path). No satellite fix at the trunk. iNaturalist swamp white oak observations near 43.0713,-87.8702 are other species and not this tree.",
+      "curation_status": "flagged",
+      "verify_notes": "One source: Lake Park Friends Tree Walk (9th ed., 2016), middle loop stop 16: 'magnificent tree over 200 years old and the largest White Oak in the park', now surrounded by prairie plantings with two offspring. Friends are the park's volunteer group, Milwaukee County Parks is the owner. Same book dates native-forest remnants as 180+ years (pre-1835) and says Gustav Lueddemann kept the northern forest intact from 1849; Olmsted firm planned the park from 1889. Alive: 2016 text only; no recent confirmation. Age is a Friends' estimate, not measured. Girth not given.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mke_005",
+      "name": "The Lake Park Swamp White Oaks",
+      "species": "Swamp White Oak (Quercus bicolor)",
+      "age_estimate": "about 190 years",
+      "age_min": 180,
+      "age_max": 200,
+      "age_basis": "source",
+      "location": {
+        "address": "Lake Park, just south of the tennis courts near the Lake Park Friends warming house, Milwaukee",
+        "latitude": 43.0721,
+        "longitude": -87.8701,
+        "neighbourhood": "Lake Park, East Side"
+      },
+      "story": "Two swamp white oaks beside the Lake Park tennis courts were here, by the park Friends' reckoning, before the settlers were. Their tree walk of 2016 estimated the pair at about 190 years old, which would date them to the 1820s, some sixty years before the Olmsted firm began planning this park in 1889. If so, the park was laid out around them, not the other way round.\n\nThey stand just south of the tennis courts, near the Friends' warming house, and they are the second stop on the walk's north loop, a good place to start. The book counts them as two trees and treats them as one stop, and so do we.\n\nLake Park holds at least one more of their kind. The same walk places a swamp white oak almost 200 years old in the grass triangle behind the Locust Street turn-around.\n\nAll of this rests on the Friends' book. The ages are their estimate, the trunks are not measured in print, and we have found no confirmation since 2016 that both still stand. If you play tennis here, or just walk past, tell us how they look.",
+      "how_to_recognise": "You can recognise them as a pair of large oaks standing together just south of the tennis courts. They stand beside the Lake Park Friends warming house, a stop on the Friends' north loop.",
+      "verified_sources": [
+        "https://lakeparkfriends.org/wp-content/uploads/2026/03/LPF-Tree-Book-2016.pdf"
+      ],
+      "access": "Milwaukee County public park, free, open daily; hours not verified.",
+      "transport": "MCTS routes serve N Lake Drive / Prospect Ave nearby; route numbers not verified, check ridemcts.com.",
+      "location_precision": "approximate",
+      "pin_source": "Park-level pin at the Lake Park Friends office / warming house (OSM, Nominatim 43.0720,-87.8701), which is beside the tennis courts named in the Friends' walk. No satellite fix at the trunk.",
+      "curation_status": "flagged",
+      "verify_notes": "One source: Lake Park Friends Tree Walk (2016), north loop stop 2: two large swamp white oaks just south of the tennis courts, 'estimated to be about 190 years old', said to predate settlers. A pair folded into one entry. The same book also places a swamp white oak 'almost 200 years old' at the grass triangle behind the Locust Street turn-around (stop 31), recorded as a separate lead. Alive: 2016 text only. Age is the Friends' estimate. Tree count in the pair as the book states: two.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mke_006",
+      "name": "The Lake Park English Elm",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "not documented",
+      "girth_cm": 343,
+      "height_m": 28,
+      "location": {
+        "address": "Lake Park, beside Lake Park Road near the Brick Arch Bridge on the north loop, Milwaukee",
+        "latitude": 43.0735,
+        "longitude": -87.8705,
+        "neighbourhood": "Lake Park, East Side"
+      },
+      "story": "Between 2002 and 2011 this English elm put about 36 centimetres on its girth, growing on while Dutch elm disease took most elms. The Lake Park Friends measured it both times. In 2011 they found a trunk 3.43 metres round, a height of 28 metres and a crown about 21 metres across, and called it a champion, among the largest of its species in Wisconsin.\n\nBy 2016 they had taken the champion rankings out of their tree walk altogether, on the grounds that rivals elsewhere might have overtaken their trees. That is a rare piece of modesty in a tree guide, and it is why we call this elm big rather than biggest.\n\nEnglish elm is rare in Milwaukee. This one was planted by the park, beside a horse chestnut, and it stands on the walk's north loop just before the Brick Arch Bridge, near Lake Park Road.\n\nNow the gap. Our only source is the Friends' walk of 2016, and we have found nothing since that confirms the tree still stands. The same book's champion beech near the bridge may have been cut down that very year, which is reason enough not to take an elm for granted. If you cross the Brick Arch Bridge, look to the horse chestnut and tell us whether its neighbour is still there.",
+      "how_to_recognise": "You can recognise it as the tall elm growing next to a horse chestnut, 3.43 metres round when last measured. It stands on the north loop just before the Brick Arch Bridge.",
+      "verified_sources": [
+        "https://lakeparkfriends.org/wp-content/uploads/2026/03/LPF-Tree-Book-2016.pdf"
+      ],
+      "access": "Milwaukee County public park, free, open daily; hours not verified.",
+      "transport": "MCTS routes serve N Lake Drive / Prospect Ave nearby; route numbers not verified, check ridemcts.com.",
+      "location_precision": "approximate",
+      "pin_source": "Park-level pin placed in the north part of Lake Park from the Friends' walk (park-planted next to a horsechestnut, just before the Brick Arch Bridge). No satellite fix at the trunk and could be 150 m out.",
+      "curation_status": "flagged",
+      "verify_notes": "One source: Lake Park Friends Tree Walk (2016), north loop stop 11, a 'champion, among the largest of this species in Wisconsin'; its appendix table: 2002 circ 121 in, 62 ft; remeasured 2011 circ 135 in (343 cm), height 92 ft (28 m), crown 69 ft, 244 points. The Friends removed champion rankings in 2016 because rivals may have overtaken it. English elm is rare here and Dutch elm disease has taken most elms, so survival to 2016 is notable; no confirmation since. Alive status after 2016 unknown, flag. Related: the same book's European beech champion (2011 circ 149 in) near the Brick Arch Bridge may have been cut down in 2016 (the appendix line 'CUT DOWN IN 2016' sits between the hophornbeam and beech rows, ambiguous), so it is not delivered.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

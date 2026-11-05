@@ -1,0 +1,63 @@
+{
+  "city": "Nicolet National Forest",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "In the Nicolet National Forest in Forest County, an eastern white pine stands 47.9 metres tall, 157 feet by the Wisconsin champion register, beside a gravel forest road. It is east of Forest Road 2454, Huff Creek Road, and can be seen from the road itself. The trunk is 3.96 metres round. It stands on US Forest Service land, free to visit, but remote, with no public transport, and forest roads like this one can close for the season.",
+  "meta_description": "A 47.9-metre eastern white pine, Wisconsin's champion, seen from Huff Creek Road in the Nicolet National Forest, Forest County.",
+  "question_meta": "No tree we map in the Nicolet National Forest has a published age. The biggest is the Huff Creek Road white pine, 47.9 metres tall.",
+  "question_answer": "No tree we map in the Nicolet National Forest has a published age. The biggest is the Huff Creek Road White Pine, east of Forest Road 2454 in Forest County, which Wisconsin's champion register ranks first of its species, 47.9 metres tall and 3.96 metres round.",
+  "question_context": "The Huff Creek Road pine is a register tree, and the Wisconsin DNR champion list is the only source we have for it. It records a height of 157 feet, 47.9 metres, a trunk 3.96 metres round and a crown about 16 metres one way and 15 the other, and it says the tree is visible from Huff Creek Road, to the east. The height is the register's measurement, not ours, and the register does not say when it was taken. To give that number some scale, the champion white pine of Chicago's forest preserves is 29.3 metres tall, so this one stands more than 18 metres higher. Its crown is narrow for its height, barely a third as wide as the tree is tall. The forest is US Forest Service land and free to visit, but the road is gravel and may close seasonally, and the nearest towns are some way off. Nobody has published an age for the pine. If you know it, or have seen the tree recently, tell us.",
+  "hero_tree_id": "nfw_001",
+  "oldest_tree_id": "nfw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Nicolet National Forest?",
+      "a": "Nobody has published an age for the tree we map there. The biggest is the Huff Creek Road White Pine, Wisconsin's champion eastern white pine at 47.9 metres tall."
+    },
+    {
+      "q": "Can you see the Huff Creek Road pine without hiking?",
+      "a": "Yes. The state register says it is visible from Huff Creek Road, Forest Road 2454, standing to the east of the road."
+    },
+    {
+      "q": "Is the road open all year?",
+      "a": "It is a gravel forest road, and forest roads can close for the season, so check with the Forest Service before you drive."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nfw_001",
+      "name": "The Huff Creek Road White Pine",
+      "species": "Eastern White Pine (Pinus strobus)",
+      "age_estimate": "not documented",
+      "girth_cm": 396,
+      "height_m": 47.9,
+      "location": {
+        "address": "Visible from Forest Road 2454 (Huff Creek Road), Chequamegon-Nicolet National Forest",
+        "latitude": 46.009999,
+        "longitude": -88.699868,
+        "neighbourhood": "Forest County"
+      },
+      "story": "The Wisconsin DNR champion register measured this eastern white pine at 157 feet, 47.9 metres, and you can see it from a gravel road in the Nicolet National Forest. It stands east of Forest Road 2454, Huff Creek Road, with a trunk 3.96 metres round and a crown about 16 metres one way and 15 the other.\n\nThat height is the reason to make the drive. The tallest white pine on our Chicago page, the champion of the Cook County forest preserves, is 29.3 metres. This one is more than 18 metres taller, on a trunk well over a metre thicker. Its crown is narrow for that height, barely a third as wide as the tree is tall.\n\nThe tree is on US Forest Service land and costs nothing to see. You do not need to leave the road, and we do not describe a walking route to it. Forest roads like this one can close for the season, so check before you go. There is no public transport, and the nearest towns are some way off.\n\nThe register is the only source. The height is its measurement, not ours, and it does not say when it was taken. Nobody has published an age. If you know it, or have seen the tree recently, tell us.",
+      "how_to_recognise": "You can recognise it by its height, 47.9 metres by the register, on a trunk 3.96 metres round. It stands east of Forest Road 2454, Huff Creek Road, visible from the road.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D1921&outFields=*&f=json"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D1921&outFields=*&f=json"
+      },
+      "access": "US Forest Service land, free; the register says visible from Huff Creek Road to the east (the tree is east of the road). Gravel forest road; check for seasonal closure.",
+      "transport": "Remote, no public transport; about 30 minutes by car from the nearest town (Laona or Eagle River, both unverified).",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 1921 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only. Tall for a white pine; the figure is a register measurement, not ours. Pin approximate. Note the brief asked for a tree visible from the road only, which this is; no walking route claimed. Register figures (nomination measurement, date not in the layer): circumference 156 in (396 cm), height 157 ft (47.9 m), crown spread [53, 49] ft, 325.75 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

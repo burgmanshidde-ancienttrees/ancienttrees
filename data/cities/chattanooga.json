@@ -1,0 +1,60 @@
+{
+  "city": "Chattanooga",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "A willow oak at Bonny Oaks, on the north-east side of Chattanooga, was already standing when an orphanage opened on the farm around it in 1854, by the Tennessee Urban Forestry Council's account. It grows in a small round arboretum of 55 species in front of the Dent House, built in 1840, and the arboretum is free and open every day, about 10 miles from downtown. If you know another old tree in Chattanooga worth the walk, tell us.",
+  "meta_description": "The Bonny Oaks Willow Oak in Chattanooga, a registered Historic Tree said to predate the 1854 Bonny Oaks Orphanage, in a free arboretum.",
+  "question_meta": "The Bonny Oaks Willow Oak predates the 1854 Bonny Oaks Orphanage, says the Tennessee Urban Forestry Council, which makes it over 170 years old.",
+  "question_answer": "The Bonny Oaks Willow Oak stands in Bonny Oaks Arboretum at 6183 Adamson Circle, in front of the Dent House on the north-east side of Chattanooga. The Tennessee Urban Forestry Council says it dates from before 1854, which would make it more than 170 years old; Wikipedia says over 100 years and calls it the oldest tree in the arboretum.",
+  "question_context": "The willow oak at Bonny Oaks has outlasted several owners of the ground it stands on. This was Cherokee land before Colonel Lewis Shepherd settled the area. Colonel Jarrett G. Dent built his house there in 1840, and the Dent House is now on the National Register of Historic Places and serves as the Hamilton County Agriculture Center. In 1854 the Bonny Oaks Orphanage was established on the farm to teach children agricultural skills, and the Tennessee Urban Forestry Council says the willow oak was already growing by then. In 1867 Captain C. C. Peak named the place Bonnie Oaks for the stately oaks around the homestead. The council listed the tree as a Historic Tree in 2000. Sources disagree on its age, from over 100 years in Wikipedia to over 170 by the council's account, and nobody has published its girth or height. The arboretum around it holds 55 species in a small round park on county land, free and open daily. If you go with a tape measure, tell us what you find.",
+  "hero_tree_id": "cht_001",
+  "oldest_tree_id": "cht_001",
+  "faq": [
+    {
+      "q": "Is Bonny Oaks Arboretum free to visit?",
+      "a": "Yes. It is a small round park on Hamilton County Parks land, open daily without charge, in front of the Dent House at 6183 Adamson Circle."
+    },
+    {
+      "q": "How far is the Bonny Oaks Willow Oak from downtown Chattanooga?",
+      "a": "About 10 miles, on the north-east side of the city near Lake Vista."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cht_001",
+      "name": "Bonny Oaks Willow Oak",
+      "species": "Willow Oak (Quercus phellos)",
+      "age_estimate": "over 170 years",
+      "age_min": 170,
+      "age_basis": "source",
+      "location": {
+        "address": "Bonny Oaks Arboretum, 6183 Adamson Circle, Chattanooga, TN 37416 (in front of the Dent House, now the Hamilton County Agriculture Center)",
+        "latitude": 35.073,
+        "longitude": -85.1827,
+        "neighbourhood": "Bonny Oaks / Lake Vista"
+      },
+      "story": "The Tennessee Urban Forestry Council says this willow oak was already standing when the Bonny Oaks Orphanage opened in 1854 to teach children farming on a working farm. By the council's reckoning that makes it more than 170 years old. Wikipedia, more cautiously, says over 100 years, and calls it the oldest tree in an arboretum of 55 species.\n\nThe ground has changed hands around it. It was Cherokee land before Colonel Lewis Shepherd settled the area. Colonel Jarrett G. Dent built the house behind the tree in 1840, and the Dent House is now on the National Register of Historic Places. In 1867 Captain C. C. Peak named the place Bonnie Oaks for the stately oaks around the homestead. Whether this oak was one of the trees he meant, nobody wrote down.\n\nThe council named it a Historic Tree in 2000. The Dent House is now the Hamilton County Agriculture Center, and the arboretum in front of it is a small round park on county land, free and open every day, on the north-east side of Chattanooga about 10 miles from downtown.\n\nNobody has published its girth or its height. If you go with a tape measure, tell us what you find, and if you know of other old trees in Chattanooga worth the walk, tell us about those too.",
+      "how_to_recognise": "You can recognise it by its narrow, willow-like leaves, unusual on an oak. It stands in the small round Bonny Oaks Arboretum in front of the Dent House, 6183 Adamson Circle.",
+      "verified_sources": [
+        "https://tufc.com/project/bonny-oaks-willow-oak/",
+        "https://en.wikipedia.org/wiki/Bonny_Oaks_Arboretum",
+        "https://www.timesfreepress.com/news/local/story/2015/dec/01/one-oldest-red-oak-trees-hamilton-county-has-fallen/338391/"
+      ],
+      "official_register": {
+        "name": "Tennessee Urban Forestry Council Landmark, Historic & Heritage Tree Registry (Historic Tree, 2000)",
+        "url": "https://tufc.com/project/bonny-oaks-willow-oak/"
+      },
+      "access": "Free; Bonny Oaks Arboretum is a small round park open daily without charge (Wikipedia). It sits on Hamilton County Parks land.",
+      "transport": "No public transport verified; the site is on the north-east side of Chattanooga, about 10 miles from downtown.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "TUFC register: the willow oak stands in Hamilton County on land once occupied by the Cherokee. Colonel Lewis Shepherd settled the area; Colonel Jarrett G. Dent built the Dent House (National Register) in 1840; Captain C.C. Peak named the place Bonnie Oaks in 1867 for the stately oaks around the homestead. The register says the tree dates to before 1854, when the Bonny Oaks Orphanage was established to teach agrarian skills on a working farm. Historic Tree 2000, nominated by Kelly Jackson. Tree is on Hamilton County Parks property. Age conflict: TUFC says before 1854 (so over about 170 years), Wikipedia describes the willow oak in the arboretum as over 100 years old and the oldest specimen in the 55-species collection. I record the register's date as a lower bound; stated as 'over 170 years' with a flag. The Times Free Press (Dec 2015, a story on the fall of the Baylor red oak) has the city forester calling it one of the few remaining historically significant oaks in the county (that article read via search summary only, not fetched, so that quote is unverified). Pin is the arboretum centre (Nominatim for the address 35.07306,-85.18270), not the trunk: the arboretum is a small round park so a visitor will find the largest oak. Alive: TUFC entry modified 2026-01-22; lifecheck RECENT (iNaturalist 2025-10-13 within 100 m of the arboretum, not tied to this trunk). Photo: none found on Commons by geosearch (250 m).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

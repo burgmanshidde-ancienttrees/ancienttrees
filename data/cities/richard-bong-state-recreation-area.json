@@ -1,0 +1,74 @@
+{
+  "city": "Richard Bong State Recreation Area",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "One tree brings us to Richard Bong State Recreation Area in Kenosha County, and it came from Louisiana. A farmer, John Rhodes, brought a bald cypress north in the 1800s and planted it by his farmhouse. The farm later became Bong Air Base, and the base land became this recreation area, where the cypress still stands by the access road beside a white ash, an Austrian pine and a ginkgo. A 2005 book called it well over 140 years old. The area is open 6am to 11pm and needs a vehicle admission sticker.",
+  "meta_description": "The Rhodes Bald Cypress, brought north from Louisiana in the 1800s, now stands in Richard Bong State Recreation Area, Kenosha County, Wisconsin.",
+  "question_meta": "The oldest tree we map here is the Rhodes Bald Cypress, over 160 years old by a 2005 book's reckoning, brought from Louisiana by a farmer.",
+  "question_answer": "The oldest tree we map in Richard Bong State Recreation Area is the Rhodes Bald Cypress, which a 2005 book called well over 140 years old, putting it past 160 today. John Rhodes brought it north from Estherwood, Louisiana, and planted it by his farmhouse in the mid-1800s.",
+  "question_context": "This is a southern swamp tree living a long way north. The book Every Root an Anchor, published by the Wisconsin Historical Society in 2005, tells its story: brought from Estherwood, Louisiana, planted by the Rhodes farmhouse, then 65 feet tall and 11 feet 5 inches round, and the largest bald cypress in Wisconsin. Its trunk cracked audibly in hard winters and healed over, leaving ridges. A 1962 Wisconsin Historical Society photo caption dates the transplanting to the mid-1800s. Since then the farm has become an air base and the air base a state recreation area, and the cypress has kept its place among a small group of marked champion trees by the access road. The state's champion register now gives it 3.51 metres round and 25 metres tall, figures so close to the book's that the register may carry the old measurement. We found no recent photograph, and the recreation area's own pages do not mention the tree, so if you visit, tell us it is there.",
+  "hero_tree_id": "bng_001",
+  "oldest_tree_id": "bng_001",
+  "faq": [
+    {
+      "q": "How old is the Rhodes Bald Cypress?",
+      "a": "A 2005 book, Every Root an Anchor, called it well over 140 years old, which puts it past 160 now. A 1962 Wisconsin Historical Society caption says it was transplanted from Louisiana in the mid-1800s. Nobody has published an upper limit."
+    },
+    {
+      "q": "Do you need to pay to visit Richard Bong State Recreation Area?",
+      "a": "Cars need a vehicle admission sticker, according to the Wisconsin DNR. The area is open from 6am to 11pm all year, and it is reached by car only."
+    },
+    {
+      "q": "Where in the recreation area is the cypress?",
+      "a": "East of the access road among a group of marked champion trees, with a white ash, an Austrian pine and a ginkgo. Look for the healed frost cracks ridging its trunk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bng_001",
+      "name": "The Rhodes Bald Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "over 160 years",
+      "age_min": 160,
+      "age_basis": "derived",
+      "girth_cm": 351,
+      "height_m": 25,
+      "location": {
+        "address": "Richard Bong State Recreation Area, east side of the access road among the marked champion trees, Brighton Township, Kenosha County, Wisconsin",
+        "latitude": 42.64496,
+        "longitude": -88.12943,
+        "neighbourhood": "Kansasville"
+      },
+      "story": "John Rhodes brought this bald cypress north from Estherwood, Louisiana, and planted it by his farmhouse in Kenosha County. A 1962 caption from the Wisconsin Historical Society says it came in the mid-1800s. The farm later became Bong Air Base, and that ground is now Richard Bong State Recreation Area, where the cypress stands beside the access road with a white ash, an Austrian pine and a ginkgo.\n\nBald cypress is a southern swamp tree, and Wisconsin winters let it know. The book Every Root an Anchor, published by the Wisconsin Historical Society in 2005, records that its trunk cracked audibly in hard cold and healed over each time, leaving ridges where the wounds closed.\n\nThat book called it well over 140 years old, which puts it past 160 now, and the largest of its species in the state, at 65 feet tall and 11 feet 5 inches round. The DNR champion register now gives 3.51 metres round and 25 metres tall. The trunk figure is so close to the book's that the register may simply carry the old measurement.\n\nWhat we cannot tell you is how it looks today. We found no recent photograph or sighting, and the recreation area's own pages do not mention it. That this is the Rhodes tree is our reading of its size and its companions, not something a source states outright. If you visit, tell us it is there.",
+      "how_to_recognise": "You can recognise it by the healed frost cracks ridging its trunk, 3.51 metres round. It stands east of the access road among the marked champion trees, with a white ash, an Austrian pine and a ginkgo.",
+      "verified_sources": [
+        "https://dnr.wisconsin.gov/sites/default/files/topic/ForestManagement/everyRootAnAnchor_046-RhodesBaldCypress.pdf",
+        "https://dnr.wisconsin.gov/topic/parks/richardbong/info",
+        "https://dnr.wisconsin.gov/topic/forests/championtrees"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (objectid 681)",
+        "url": "https://dnr.wisconsin.gov/topic/forests/championtrees"
+      },
+      "access": "State recreation area open 6am to 11pm year round; a vehicle admission sticker is required (DNR page). Reached by car only.",
+      "transport": "No public transport found; about 60 km south-west of downtown Milwaukee by car. Not a Milwaukee day trip by transit, so a lone tree page labelled with its real place.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the soft needles turn copper red before the tree drops them"
+      },
+      "location_precision": "approximate",
+      "pin_source": "DNR champion layer objectid 681 (Exact location) at 42.644957,-88.129425, which lies just east of Vandenboom Road (OSM service road) inside the recreation area; matches 'east side of access road in group of marked champion trees'. Identity with the Rhodes tree is inferred (size 138 in vs the book's 11 ft 5 in, companions listed), not stated by a source.",
+      "curation_status": "flagged",
+      "verify_notes": "DNR hosts the excerpt 'The Rhodes Bald Cypress, Kenosha County' from R. Bruce Allison, Every Root an Anchor (c) 2005 Wisconsin Historical Society; the excerpt says the tree is well over 140 years old (book dated 2005, so over 160 years now, a derived lower bound), planted near the farmhouse by John Rhodes (grandfather of the informant) who brought it from Estherwood, Louisiana, 65 ft tall and 11 ft 5 in (about 348 cm) around, largest of its species in the state, cracked audibly in cold winters and healed over with protrusions; the farm later became Bong Air Base and the tree with a white ash, an Austrian pine and a ginkgo is now in Richard Bong State Recreation Area. Register (nominated measurement, date not stored): 138 in (351 cm), 81 ft (25 m), crown 51 x 45 ft. Age: 'well over 140 years' as of the 2005 book gives over 160 now; the Wisconsin Historical Society 1962 photo caption says transplanted from Louisiana in the mid-1800s; no upper bound sourced, age_max empty. The 138 in register figure is nearly equal to the book's 137 in (11 ft 5 in), so the register may simply carry the old measurement; flag. Alive: no recent observation found (lifecheck NONE). The DNR park page does not mention the tree, so verify on site. Consider holding the page until a recent sighting is found.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

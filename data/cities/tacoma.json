@@ -1,0 +1,416 @@
+{
+  "city": "Tacoma",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Tacoma's oldest mapped tree is the Mountaineer Tree, a Douglas fir on Point Defiance's Big Tree Trail that the city's register says has been growing since the 1500s and stands over 200 feet. The rest of this page is a single afternoon in Wright Park, where eight heritage trees from far away share one lawn: a red oak planted for Theodore Roosevelt's 1903 visit, a giant sequoia from 1939, a European and an American chestnut 25 metres apart, and a rock elm. The tenth, an American elm, stands outside the old Japanese Language School address at UW Tacoma.",
+  "meta_description": "Ten Tacoma heritage trees: the 1500s Mountaineer fir at Point Defiance, Roosevelt's 1903 oak and two chestnuts in Wright Park, and an elm at UW Tacoma.",
+  "question_meta": "The Mountaineer Tree, a Douglas fir growing since the 1500s, is Tacoma's oldest mapped tree. Free, on Point Defiance's Big Tree Trail.",
+  "question_answer": "The oldest tree mapped in Tacoma is the Mountaineer Tree, a Douglas fir on the Big Tree Trail in Point Defiance Park that the city's Heritage Tree register says has been growing since the 1500s, roughly 400 to 500 years. For a walk past several old trees at once, go to Wright Park, where eight heritage trees stand within a few minutes of each other.",
+  "question_context": "Tacoma's trees on this page sit in three places, and none of them costs anything to visit. The oldest is the Mountaineer Tree in Point Defiance Park, a Douglas fir more than 200 feet tall with a trunk about 7.3 metres round, named in 1949 by the Tacoma branch of The Mountaineers. It stands on the Big Tree Trail, dedicated in 1955. One caveat belongs here. A local arborist has reported a bigger, unnamed fir elsewhere in the park.\n\nWright Park, in the Stadium District, holds the other eight within a short walk. The Roosevelt oak dates from 1903 and the giant sequoia from 1939; the tulip tree and the rock elm went in somewhere between the late 1800s and the early 1900s; the sugar maple, the pedunculate oak and the two chestnuts have no recorded planting date. The park labels more than 400 trees with Metro Parks signs, which is how you tell them apart, because every pin here comes from the city register's map and is approximate.\n\nThe tenth is an American elm on the Tacoma Avenue South frontage of UW Tacoma, which the register suggests could be 150 years old or more.",
+  "hero_tree_id": "tac_009",
+  "oldest_tree_id": "tac_009",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tacoma?",
+      "a": "The oldest mapped here is the Mountaineer Tree, a Douglas fir on the Big Tree Trail in Point Defiance Park. The city's Heritage Tree register says it has been growing since the 1500s; other accounts give 400 to 450 years."
+    },
+    {
+      "q": "Which trees can I see on one walk?",
+      "a": "Eight are in Wright Park, a few minutes apart: the 1903 Roosevelt oak, the 1939 giant sequoia, a tulip tree, a sugar maple, a pedunculate oak, a rock elm, and a sweet chestnut and an American chestnut about 25 metres from each other."
+    },
+    {
+      "q": "Why is the American chestnut in Wright Park unusual?",
+      "a": "Chestnut blight killed most American chestnuts in the early twentieth century, so one with a trunk about 4.2 metres round is a rarity. It stands beside a European sweet chestnut, so you can compare the two."
+    },
+    {
+      "q": "How do I find the right tree in Wright Park?",
+      "a": "Read the signs. Wright Park labels more than 400 of its trees with Metro Parks signs, and the pins on this page are the city register's map points rather than fixes at each trunk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tac_001",
+      "name": "Teddy Roosevelt Oak",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "about 120 years",
+      "age_min": 115,
+      "age_max": 125,
+      "age_basis": "source",
+      "girth_cm": 511,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.26043,
+        "longitude": -122.44794,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "Theodore Roosevelt came to Tacoma in May 1903, and the city marked the visit by planting this red oak in Wright Park. More than 120 years later it is still growing on the same ground. Because the planting date belongs to this tree, its age is a matter of record rather than an estimate from its size.\n\nNorthern red oak is native to eastern North America, and Tacoma's Heritage Tree register gives this one a trunk 64 inches across at chest height, about 1.6 metres. Worked out from that diameter, the trunk is roughly five metres round.\n\nThe oak has stood through Tacoma's entire twentieth century near the W. W. Seymour Conservatory. A 2016 report in the Tacoma Daily Index named the Roosevelt oak there, with a sign dated 1903. That sign matters, because Wright Park labels more than 400 of its trees with Metro Parks signs, and the trunk tells you when you have the right one. The city added the oak to its Heritage Tree register after the programme began in December 2023.\n\nThe pin here is the register's map point, not a fix taken at the trunk, so let the sign settle it. October is the month to come, when red oaks turn the colour that gives them their name.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree",
+        "https://tacomadailyindex.com/?p=2431366"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the leaves turn a rich red"
+      },
+      "how_to_recognise": "You can recognise it by the Metro Parks sign on the trunk naming the Roosevelt oak and the year 1903, and by a trunk about five metres round. It stands near the W. W. Seymour Conservatory.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 64 in (about 163 cm diameter), planted 1903 to commemorate President Roosevelt's May 1903 visit to Tacoma. Tacoma Daily Index (2016) independently names the Roosevelt oak near the W. W. Seymour Conservatory, sign labelled 1903. Largest DBH on the register in Wright Park. Age is documented planting date for this tree (about 123 years in 2026). Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_002",
+      "name": "Wright Park Giant Sequoia (1939)",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 87 years",
+      "age_min": 85,
+      "age_max": 90,
+      "age_basis": "source",
+      "girth_cm": 662,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.25815,
+        "longitude": -122.4479,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "Tacoma planted this giant sequoia in 1939 to mark 150 years of the United States Constitution. The city's Heritage Tree register says it was named for Sequoyah, and in less than ninety years it has grown a trunk 83 inches across at chest height. That is about 2.1 metres, or roughly 6.6 metres round, a figure worked out from the diameter rather than taped around the bark.\n\nIt went into the ground the year the Second World War began in Europe, and it has spent every year since getting wider in a park that was already half a century old when it arrived. Its planting date is documented, so its age is not a guess.\n\nWhat makes it easy to find is the company it keeps. Wright Park is above all a broadleaf collection, with oaks from two continents, two kinds of chestnut, a tulip tree, a sugar maple and an elm seldom seen in the Pacific Northwest. This conifer stands among them near the park's south edge, and in winter it keeps its green while the broadleaf trees around it stand bare.\n\nThe pin comes from the register's map point and has not been checked against the crown, so treat it as close rather than exact. Wright Park signs more than 400 of its trees, and the sign on this trunk is the final word.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "how_to_recognise": "You can recognise it as the big evergreen conifer among the park's broadleaf trees, its trunk about 6.6 metres round, with a Metro Parks sign on it. It stands near the south edge of Wright Park.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 83 in, planted 1939 to commemorate the 150th anniversary of the adoption of the US Constitution, named for Sequoyah. A giant sequoia is on the park's Champion Tree Tour per a photo caption seen in search results (not a verified page). Walk-by landmark: conifer among broadleaf collection near the south edge of the park. Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_003",
+      "name": "Wright Park Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 140,
+      "age_basis": "source",
+      "girth_cm": 559,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.25796,
+        "longitude": -122.45002,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "This tulip tree is a long way from home, and it has answered the move by growing out rather than up. The species belongs to eastern North America, and in the Pacific Northwest it tends to grow wide and short. Tacoma's Heritage Tree register gives this one a trunk 70 inches across at chest height, about 1.8 metres, which works out to roughly 5.6 metres round.\n\nNobody has pinned down the year it went in. The register says only that it was planted somewhere between the late 1800s and the early 1900s, which makes it more than a century old and possibly well over that. Wright Park itself was donated to the city in 1886, but nothing ties this tree to the park's first planting, so the honest age is the register's range. If you know more, tell us.\n\nWhatever its exact birthday, it has stood in the same corner of the park through more than a hundred Tacoma winters, getting broader every decade. In late spring it carries green and orange flowers shaped like tulips, high in the crown, and in October the leaves go a clear yellow, one of the most dependable autumn shows of any tree.\n\nThe pin comes from the register's map point rather than a fix at the trunk. Wright Park signs more than 400 of its trees, so read the label on the bark to be sure.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the leaves turn a clear yellow"
+      },
+      "how_to_recognise": "You can recognise it by the Metro Parks sign naming it a tulip tree and by its trunk, about 5.6 metres round. It stands toward the south-west of Wright Park.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 70 in, planted late 1800s to early 1900s (register wording). Park donated 1886. Do not tie it to the park founding; the register gives only the range. Eastern North American species grows wide and short in the Pacific Northwest. Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_004",
+      "name": "Wright Park Sugar Maple",
+      "species": "Sugar Maple (Acer saccharum)",
+      "age_estimate": "not documented",
+      "girth_cm": 495,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.26014,
+        "longitude": -122.45009,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "Nobody has written down when this sugar maple was planted, and its trunk is nearly five metres round. Tacoma's Heritage Tree register measures it at 62 inches across at chest height, about 1.6 metres, which puts the circumference at roughly 4.95 metres. The city added it to its register after the heritage programme began in December 2023.\n\nSugar maple is a tree of eastern North America, and it shares Wright Park with a collection of other long-distance arrivals, among them a red oak planted for Theodore Roosevelt's visit in 1903, a giant sequoia from 1939, chestnuts from two continents and a tulip tree. The park was donated to the city in 1886, but the register gives this maple no planting date at all, and a park's age is not a tree's age.\n\nSo its age is an open question. The trunk says it is not young, but how old is anyone's guess until someone finds a planting record or an old photograph. If you have one, tell us.\n\nIt stands on the west side of the park. The pin is the register's map point, not a fix at the trunk, and Wright Park labels more than 400 of its trees with Metro Parks signs, so the sign on the bark is how you know you have the right one.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "how_to_recognise": "You can recognise it by the Metro Parks sign naming it a sugar maple and by its trunk, nearly five metres round. It stands on the west side of Wright Park.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 62 in. No planting date given. Near the park's west side. Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_005",
+      "name": "Wright Park Sweet Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "not documented",
+      "girth_cm": 487,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.25846,
+        "longitude": -122.44756,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "Twenty-five metres from this European chestnut stands an American one, and the pair is the reason to stop here. This is the sweet chestnut, which Tacoma's Heritage Tree register calls by its other name, Spanish chestnut, a tree native to Europe and Asia. Its neighbour is the American chestnut, a species that blight almost wiped out in the early twentieth century.\n\nThis one is the bigger of the two. The register gives its trunk as 61 inches across at chest height, about 1.55 metres, or roughly 4.9 metres round when worked out from that diameter. The bark is the tell the register itself points to, furrowed in a net that spirals up the trunk.\n\nNo planting date is recorded, so its age is unknown. It has grown in Wright Park long enough to reach that girth, and that is as far as the evidence goes. If you know when it went in, tell us.\n\nThe two chestnuts make one stop. Stand between them and compare the signs on their trunks, because the leaves and the nuts are what separate the species. Come in October, when the spiny burs split and the chestnuts drop. The pin comes from the register's map point rather than a fix at the trunk, so the Metro Parks sign on the bark is the final word.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the chestnuts drop from their spiny burs"
+      },
+      "how_to_recognise": "You can recognise it by bark furrowed in a net that spirals up the trunk, about 4.9 metres round, and a Metro Parks sign calling it a Spanish chestnut. It stands about 25 metres from Wright Park's American chestnut.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 61 in, species is Spanish chestnut, native to Europe and Asia. Bark has the net-like spiral furrows the register describes. No planting date. Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_006",
+      "name": "Wright Park American Chestnut",
+      "species": "American Chestnut (Castanea dentata)",
+      "age_estimate": "not documented",
+      "girth_cm": 423,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.25826,
+        "longitude": -122.44749,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "An American chestnut this size is unusual anywhere now. Chestnut blight killed most of the species in the early twentieth century, and Tacoma's Heritage Tree register says as much in its own entry for this tree. This one, in Wright Park, has a trunk 53 inches across at chest height, about 1.35 metres, which works out to roughly 4.2 metres round.\n\nIt stands about 25 metres from a sweet chestnut, the European species that the park's signs call the Spanish chestnut, and the pairing is the reason to come. Two related trees from two continents, one of them a survivor of a species that blight all but erased. Side by side, you can compare the leaves and the nuts, and the signs on their trunks tell you which is which.\n\nThe register gives no planting date, so nobody can say how old it is. It reached this girth on the far side of the continent from its native range, and that is as much as the record holds. If you know when it was planted, tell us.\n\nThe city added it to the register after the heritage programme began in December 2023. The pin is the register's map point, not a fix at the trunk, so let the Metro Parks sign on the bark settle it.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "how_to_recognise": "You can recognise it by the Metro Parks sign naming it an American chestnut and a trunk about 4.2 metres round, slimmer than its neighbour. It stands about 25 metres from Wright Park's Spanish chestnut.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 53 in. An American chestnut of this size is unusual because blight killed most of the species in the early 20th century (register text). Stands next to the Spanish chestnut (tac_005), about 25 m apart, so the two are one stop; the sign on the trunk tells them apart (leaf and nut shape). Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_007",
+      "name": "Wright Park Pedunculate Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "girth_cm": 343,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.26064,
+        "longitude": -122.44973,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "Wright Park holds two oaks from opposite sides of the Atlantic, and this is the European one. It is a pedunculate oak, the species the park's register calls English oak, and its trunk measures 43 inches across at chest height on Tacoma's Heritage Tree register. That is about 1.1 metres, or roughly 3.4 metres round when worked out from the diameter.\n\nThe other oak is a short walk east, a northern red oak planted in 1903 for Theodore Roosevelt's visit to the city. Between them they show what Wright Park is, a collection of trees brought in from elsewhere, among them chestnuts from Europe and America, a tulip tree, a sugar maple, a giant sequoia and an elm rarely seen in this part of the country.\n\nThis oak is the smaller of the two, and unlike the Roosevelt oak it comes with no story attached and no planting date. Nobody has recorded when it went into the ground, so its age is a blank. The city thought it worth adding to the register after the heritage programme began in December 2023, and if you know when it was planted, tell us.\n\nIt stands at the north end of the park, near the Sixth Avenue side. The pin is the register's map point rather than a fix at the trunk, and Wright Park labels more than 400 of its trees with Metro Parks signs, so look for the one that names it.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "how_to_recognise": "You can recognise it by the Metro Parks sign calling it an English oak and a trunk about 3.4 metres round. It stands at the north end of Wright Park, near the Sixth Avenue side.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 43 in. No planting date. Near the Sixth Ave side of the park, north end. Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_008",
+      "name": "Wright Park Rock Elm",
+      "species": "Rock Elm (Ulmus thomasii)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 140,
+      "age_basis": "source",
+      "girth_cm": 303,
+      "location": {
+        "address": "Wright Park, Tacoma (Metro Parks Tacoma arboretum), 6th Ave and G St area",
+        "latitude": 47.25791,
+        "longitude": -122.44908,
+        "neighbourhood": "Hilltop / Stadium District"
+      },
+      "story": "Rock elm is a tree you seldom meet in the Pacific Northwest, and Wright Park has one on Tacoma's Heritage Tree register. The register gives its trunk as 38 inches across at chest height, about 97 centimetres, or roughly three metres round when worked out from that diameter. Of the eight Wright Park trees mapped here, it is the slimmest.\n\nIt has been in the park for more than a century. The register dates its planting only to somewhere between the late 1800s and the early 1900s, which puts its age at 100 to 140 years without narrowing it further. That range is the honest answer, and if you know better, tell us.\n\nA second source puts a rock elm in the park too. A 2016 report in the Tacoma Daily Index named one near the bowling green, among the more than 400 trees that carry Metro Parks signs. That report does not tie its sign to this exact spot, so treat the two as probably, not certainly, the same tree.\n\nIt has spent those hundred-odd years among a collection of other arrivals from far away, from a red oak planted for Theodore Roosevelt's 1903 visit to a giant sequoia from 1939. The pin here comes from the register's map point rather than a fix at the trunk, so read the signs as you walk and let the one on the bark settle it.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree",
+        "https://tacomadailyindex.com/?p=2431366"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park, open daily",
+      "transport": "Pierce Transit routes to 6th Ave / Stadium District; Tacoma Link Stadium District stop about 10 min walk",
+      "how_to_recognise": "You can recognise it by the Metro Parks sign naming it a rock elm and a slim trunk about three metres round. It stands in the southern half of Wright Park; a 2016 report placed a rock elm near the bowling green.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 38 in, planted late 1800s to early 1900s. Tacoma Daily Index 2016 names a rock elm near the bowling green, a second source for the species being in the park, though it does not tie that sign to this exact coordinate. Rock elm is uncommon in the Pacific Northwest. Source: City of Tacoma Heritage Tree register (storymap, program established Dec 2023), which lists DBH in inches and a per-tree map coordinate. Girth_cm = DBH x pi, so a computed circumference not a measured one. Designation is recent, so alive is supported by the register; no independent dated photo seen. Pin is the register's map point, not verified on the crown, hence approximate. Wright Park carries Metro Parks signs on more than 400 trees (Tacoma Daily Index 2016-01-05), so look for the sign on the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tac_009",
+      "name": "Mountaineer Tree",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "roughly 450 years",
+      "age_min": 400,
+      "age_max": 500,
+      "age_basis": "source",
+      "girth_cm": 734,
+      "height_m": 61,
+      "location": {
+        "address": "Big Tree Trail, Point Defiance Park, Tacoma",
+        "latitude": 47.3168,
+        "longitude": -122.54025,
+        "neighbourhood": "Point Defiance"
+      },
+      "story": "This Douglas fir has been growing since the 1500s, according to Tacoma's Heritage Tree register, and it now stands more than 200 feet tall, about 61 metres. The register gives its trunk as 92 inches across at chest height, about 2.3 metres, and 24 feet around, roughly 7.3 metres. Other accounts put its age at 400 to 450 years. Nobody has given an exact date, so the fair answer is somewhere between four and five centuries.\n\nIt got its name in 1949, when the Tacoma branch of The Mountaineers formally recognised it. Six years later Point Defiance dedicated the Big Tree Trail, which Eagle Scouts of Troop 27 helped to blaze. The fir stands beside that trail in a stand of old growth, and the register, written in the last few years, lists it as a living tree.\n\nOne caveat belongs here. A Parks Tacoma post says a local arborist has found another Douglas fir in Point Defiance that edges it out, a tree with no name and no sign. So this may not be the park's biggest fir. It is the one with a name, a trail and a register entry.\n\nThe pin is the register's map point at the Big Tree Trail and has not been checked against the trunk. Walk the trail and look for the sign that names it.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree",
+        "https://www.gigharbornow.org/news/arts-entertainment/mountaineer-tree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, public city park (Point Defiance), Big Tree Trail dedicated 1955; walk from the trail",
+      "transport": "Pierce Transit route 11 serves Point Defiance (about 15 to 20 min walk in the park from the Ruston Way / Pearl St entrance); verify current route",
+      "how_to_recognise": "You can recognise it by the sign naming the Mountaineer Tree and a trunk about 7.3 metres round, standing out among the old-growth stand. It stands on the Big Tree Trail in Point Defiance Park.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 92 in (about 234 cm diameter, trunk 24 ft around per register text), over 200 ft tall (register), 'growing since the 1500s'. Named 1949 when the Tacoma branch of The Mountaineers first formally recognised it. Gig Harbor Now and other secondary sources give 400 to 450 years, 200 ft, 7.5 to 8 ft diameter; one Parks Tacoma post says a local arborist found a Douglas fir that edges it out, unnamed (lead: unnamed taller fir in Point Defiance). Height_m 61 = 200 ft from the register, not measured by us. Age given vaguely by sources, so range 400 to 500 is broad. Register map coordinate is at the Big Tree Trail area of Point Defiance; I could not verify it on the crown, so approximate. Gig Harbor Now page returned 403 to fetch, its content seen only as a search summary, so the second source is weak; the register is the primary one. Big Tree Trail: Eagle Scouts Troop 27 helped blaze it (1955). Distinguish the tree by the sign naming it and its trunk size amid the old-growth stand of the trail. Photo pass 2026-11-04 (approved): iNaturalist observation of Pseudotsuga 11 m from our pin in Point Defiance; one massive deep-furrowed Douglas fir trunk fills the portrait frame, forest daylight (photo_light WEAK).",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/430200737/original.jpeg",
+        "license": "CC BY 4.0",
+        "attribution": "Ed Alverson",
+        "attribution_url": "https://www.inaturalist.org/observations/241387289",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "tac_010",
+      "name": "Nihongo Gakko Elm",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "possibly 150 years or more",
+      "age_min": 100,
+      "age_max": 160,
+      "age_basis": "derived",
+      "girth_cm": 431,
+      "location": {
+        "address": "Tacoma Ave S frontage, 1715 Tacoma Ave S, University of Washington Tacoma, Tacoma",
+        "latitude": 47.24558,
+        "longitude": -122.44261,
+        "neighbourhood": "Hilltop / UW Tacoma"
+      },
+      "story": "From 1911 to 1942 the Tacoma Japanese Language School, the Nihongo Gakko, stood at 1715 Tacoma Avenue South, and old photographs of that frontage show a mature elm. An American elm still grows at the same frontage today, now on the University of Washington Tacoma campus. Whether it is the same tree is the open question.\n\nTacoma's Heritage Tree register entry for it was written by UW Tacoma, which wants to look after it. It says the trunk suggests the elm could be 150 years old or more, and it is careful to say potentially. The register measures the trunk at 54 inches across at chest height, about 1.4 metres, or roughly 4.3 metres round when worked out from that diameter. The link to the school rests on those historic images, and the register calls it a potential connection, no more.\n\nAmerican elms of this size have become uncommon because of Dutch elm disease, which is reason enough to stop on its own. If it is the tree in the photographs, it stood outside the school for all thirty-one years the school was there. Nobody has yet shown that it is. If you know more, tell us.\n\nIt can be seen from the public sidewalk on Tacoma Avenue South. The pin comes from the register's map point, so look for the big elm at the school's old address.",
+      "verified_sources": [
+        "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59",
+        "https://cityoftacoma.org/heritagetree"
+      ],
+      "official_register": {
+        "name": "City of Tacoma Heritage Tree register (Urban Forestry)",
+        "url": "https://storymaps.arcgis.com/stories/6c97f76425e74f3da927cba63b3d9f59"
+      },
+      "access": "Free, visible from the public sidewalk on the Tacoma Ave S frontage of the UW Tacoma campus",
+      "transport": "Tacoma Link / Pierce Transit routes along Pacific Ave; a few minutes' walk from the UW Tacoma stop",
+      "how_to_recognise": "You can recognise it as the big American elm, its trunk about 4.3 metres round, on the Tacoma Avenue South frontage of UW Tacoma. It stands outside 1715 Tacoma Ave S, the old Japanese Language School address.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: DBH 54 in. Register text (written by UW Tacoma, which seeks to steward it) says the trunk suggests 150+ years, 'potentially', and that historic imagery of the Tacoma Japanese Language School (Nihongo Gakko, at 1715 Tacoma Ave S, 1911 to 1942) shows a mature tree at the same frontage. Age is a register's tentative estimate, so derived and broad. Do not claim it is the school's tree; the register only says a connection is potential. American elm survivors matter because Dutch elm disease. Register only, one source, flagged. Entry added to the register recently (late entries on the page).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

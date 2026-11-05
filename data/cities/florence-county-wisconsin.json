@@ -1,0 +1,64 @@
+{
+  "city": "Florence County, Wisconsin",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "On the Assessor's Interpretive Trail by Lost Lake in Florence County, a sign marks a tree as a basswood. Wisconsin's champion register adds that it is the biggest basswood in the state, 36.6 metres tall and 4.09 metres round. The trail starts at the east end of the lake beside the campground in the Chequamegon-Nicolet National Forest and runs through hemlocks and hardwoods past interpretive signs and a named white pine. It is free, remote and reached by car.",
+  "meta_description": "Wisconsin's champion basswood, 36.6 metres tall, on the Assessor's Interpretive Trail by Lost Lake in Florence County.",
+  "question_meta": "No tree we map in Florence County has a published age. The biggest is the Assessor's Trail basswood, Wisconsin's champion at 36.6 metres.",
+  "question_answer": "No tree we map in Florence County, Wisconsin has a published age. The biggest is the American basswood on the Assessor's Interpretive Trail by Lost Lake, which Wisconsin's champion register ranks first of its species, 36.6 metres tall and 4.09 metres round.",
+  "question_context": "Florence County's record tree comes with two sources that agree on where it is. The Wisconsin DNR champion register measures the basswood at 161 inches round, 4.09 metres, and 120 feet tall, 36.6 metres, with a crown about 21 metres across, and says a sign marks it on the trail. The US Forest Service describes the trail itself, the Assessor's Interpretive Trail at the east end of Lost Lake beside the campground, through hemlocks and hardwoods, with interpretive signs and a named tree of its own, the Assessor White Pine. Set beside the champion basswood of Chicago's forest preserves, 3.91 metres round and 24.4 metres tall, this one is a little thicker and twelve metres taller. The register gives no measurement date, and nobody has published an age for the tree. The trail is free, there is no public transport, and Florence is the nearest town to drive from. If you walk it and know the basswood's age, or see it on the way, tell us.",
+  "hero_tree_id": "flw_001",
+  "oldest_tree_id": "flw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Florence County, Wisconsin?",
+      "a": "Nobody has published an age for the tree we map there. The biggest is the basswood on the Assessor's Interpretive Trail, Wisconsin's champion of its species at 36.6 metres tall."
+    },
+    {
+      "q": "Where is the Assessor's Interpretive Trail?",
+      "a": "At the east end of Lost Lake, beside the Lost Lake Campground in the Chequamegon-Nicolet National Forest, according to the US Forest Service."
+    },
+    {
+      "q": "How do you know which tree is the champion basswood?",
+      "a": "The state register says a sign on the trail marks it as a basswood. It is 36.6 metres tall and 4.09 metres round."
+    }
+  ],
+  "trees": [
+    {
+      "id": "flw_001",
+      "name": "The Assessor's Trail Basswood",
+      "species": "American Basswood (Tilia americana)",
+      "age_estimate": "not documented",
+      "girth_cm": 409,
+      "height_m": 36.6,
+      "location": {
+        "address": "Assessor's Interpretive Trail beside Lost Lake Campground, Chequamegon-Nicolet National Forest, Florence County",
+        "latitude": 45.880545,
+        "longitude": -88.554357,
+        "neighbourhood": "Florence County"
+      },
+      "story": "A sign on a Forest Service trail in northern Wisconsin marks this tree as a basswood. The Wisconsin DNR champion register adds the rest. It ranks it the biggest basswood in the state, with a trunk 4.09 metres round, a height of 36.6 metres, 120 feet, and a crown about 21 metres across.\n\nThe tree stands on the Assessor's Interpretive Trail, which starts at the east end of Lost Lake beside the campground in the Chequamegon-Nicolet National Forest and runs through hemlocks and hardwoods past a series of interpretive signs. The same trail has a named tree of its own, the Assessor White Pine, worth looking for on the way.\n\nFor scale, the champion basswood of the Chicago forest preserves, on our Chicago page, is 3.91 metres round and 24.4 metres tall. This one is a little thicker and twelve metres taller, a basswood built for height.\n\nThe trail is free and open to walkers, and there is no public transport out here; Florence is the nearest town to drive from. The register is the only source for the tree and does not date its measurement. Nobody has published an age. If you know it, tell us.",
+      "how_to_recognise": "You can recognise it by the trail sign naming it a basswood, on a tree 36.6 metres tall and 4.09 metres round. It stands on the Assessor's Interpretive Trail by Lost Lake.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D739&outFields=*&f=json",
+        "https://www.fs.usda.gov/r09/chequamegon-nicolet/recreation/trails/assessors-interpretive-trail"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D739&outFields=*&f=json"
+      },
+      "access": "Free Forest Service interpretive trail by Lost Lake; the register says a sign marks it as a basswood.",
+      "transport": "Remote, no public transport; drive from Florence (about 25 minutes, unverified).",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 739 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register plus the US Forest Service trail page (trail at the east end of Lost Lake beside the campground, through hemlocks and hardwoods, with interpretive signs and an 'Assessor White Pine'). The pin falls on the trail area; nearby Assessor White Pine is a further lead. Basswood 161 in circumference, 120 ft. Register figures (nomination measurement, date not in the layer): circumference 161 in (409 cm), height 120 ft (36.6 m), crown spread [68, 70] ft, 298.25 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

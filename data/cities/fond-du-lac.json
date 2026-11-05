@@ -1,0 +1,64 @@
+{
+  "city": "Fond du Lac",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Wisconsin's champion sycamore grows downtown in Fond du Lac, next to the post office, and it is wider than it is tall. The state's champion register gives it a trunk 6.48 metres round, a height of 25.3 metres and a crown about 31 metres across, with the mottled white bark of its kind. It stands in the town centre rather than a park or a forest, so you can see it from the street, though its exact spot still wants confirming.",
+  "meta_description": "Wisconsin's champion sycamore stands next to the post office in downtown Fond du Lac: a trunk 6.48 metres round under a 31-metre crown.",
+  "question_meta": "No tree we map in Fond du Lac has a published age. The biggest is the downtown sycamore, Wisconsin's champion, 6.48 metres round.",
+  "question_answer": "No tree we map in Fond du Lac has a published age. The biggest is the sycamore next to the post office downtown, which Wisconsin's champion register ranks first of its species, with a trunk 6.48 metres round and a crown about 31 metres across.",
+  "question_context": "Fond du Lac's record tree is known from a single source, the Wisconsin DNR champion register, and that source is thin. It places the sycamore in the city of Fond du Lac next to the post office, without naming which post office, and it gives no measurement date and no age. A visitor recorded a sycamore near the register's point in July 2023, which is the most recent sign of life we have. What the register does give is the size. Its crown spreads about 31 metres one way and 26.5 the other on a tree 25.3 metres high, and its trunk is 6.48 metres round, well over half again as thick as the champion sycamore of Chicago's forest preserves, which is 3.91 metres round but much taller. We read the tree as one you see from the street, on the public side, but our pin is approximate. If you walk past it, tell us exactly where it stands, and if you know its age, tell us that too.",
+  "hero_tree_id": "fdw_001",
+  "oldest_tree_id": "fdw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Fond du Lac?",
+      "a": "Nobody has published an age for the tree we map in Fond du Lac. The biggest is the sycamore next to the downtown post office, Wisconsin's champion of its species."
+    },
+    {
+      "q": "Where exactly is the champion sycamore?",
+      "a": "The state register says next to the post office in the city of Fond du Lac, without naming the building. Our pin is downtown and approximate; look for mottled white bark and a crown about 31 metres across."
+    },
+    {
+      "q": "Can you visit it?",
+      "a": "It reads as a street-side tree seen from public ground, so it costs nothing to look at. Street parking is available downtown."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fdw_001",
+      "name": "The Sycamore by the Post Office",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "not documented",
+      "girth_cm": 648,
+      "height_m": 25.3,
+      "location": {
+        "address": "Next to the post office, downtown Fond du Lac",
+        "latitude": 43.776202,
+        "longitude": -88.451882,
+        "neighbourhood": "Downtown Fond du Lac"
+      },
+      "story": "Wisconsin's champion sycamore grows next to a post office in downtown Fond du Lac, and it is wider than it is tall. The Wisconsin DNR champion register measured a crown about 31 metres one way and 26.5 the other, on a tree 25.3 metres high, over a trunk 6.48 metres round. The register adds trunk inches, height in feet and a quarter of the crown, and the total comes to 361.5 points. The bark is what you notice first, mottled white.\n\nChicago's forest preserves grow their sycamores taller. The champion at Riverside Lawn on our Chicago page reaches 41.5 metres. But it is 3.91 metres round, and this downtown tree carries more than two and a half metres more around the trunk. Height is one way to be big; this one went sideways.\n\nWe should say plainly what we do not know. The register is the only source, it does not name which post office, and it does not say when it measured the tree. A visitor recorded a sycamore near the pin in July 2023. We read it as a tree on the public side, seen from the street, but its exact spot is not confirmed, and the pin is approximate. If you know the spot, or its age, tell us.",
+      "how_to_recognise": "You can recognise it by its mottled white bark and a crown about 31 metres across. It stands next to the post office in downtown Fond du Lac.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2209&outFields=*&f=json",
+        "https://www.inaturalist.org/observations/195674999"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2209&outFields=*&f=json"
+      },
+      "access": "Register says it stands in the city of Fond du Lac next to the post office; read as a public-side tree, view from the street. Not confirmed on site.",
+      "transport": "Downtown Fond du Lac; street parking. No transport verified.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 2209 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only, thin. iNaturalist observation 2023-07-30 near pin (alive). Which post office exactly is not stated; coordinate is downtown Fond du Lac. Nominatim not checked. Pin approximate, verify before publishing as findable. Register figures (nomination measurement, date not in the layer): circumference 255 in (648 cm), height 83 ft (25.3 m), crown spread [101, 87] ft, 361.5 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

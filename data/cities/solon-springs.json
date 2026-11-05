@@ -1,0 +1,64 @@
+{
+  "city": "Solon Springs",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "In Lucius Woods County Park at Solon Springs, at the south-west corner of the car park, stands Wisconsin's champion red pine, 34.2 metres tall with plated orange-brown bark. That is nearly 15 metres taller than the state champion red pine of Illinois. The park lies on Upper St. Croix Lake and is open to day visitors, with a beach, a campground and a nature trail. Solon Springs is about 35 minutes by car south-east of Superior.",
+  "meta_description": "Wisconsin's champion red pine, 34.2 metres tall, stands by the car park in Lucius Woods County Park, Solon Springs, on Upper St. Croix Lake.",
+  "question_meta": "No tree we map in Solon Springs has a published age. The biggest is the Lucius Woods red pine, Wisconsin's champion at 34.2 metres.",
+  "question_answer": "No tree we map in Solon Springs has a published age. The biggest is the red pine at the south-west corner of the car park in Lucius Woods County Park, which Wisconsin's champion register ranks first of its species, 34.2 metres tall and 2.63 metres round.",
+  "question_context": "Solon Springs' record tree is easy to reach. The Wisconsin DNR champion register puts the Lucius Woods red pine at the south-west corner of the parking lot in the middle of the park, and the register file even holds a hand-drawn map. It measured a trunk 2.63 metres round and a height of 34.2 metres, 112 feet, under a narrow crown about 12 metres across. For comparison, the state champion red pine of Illinois, on a golf course on our Chicago page, is 19.5 metres tall and 2.07 metres round. Lucius Woods is a Douglas County park on Upper St. Croix Lake, open to day visitors, and as far as we found the fees are for camping only. The register is the only source for the tree itself. It does not say when it took its measurements and does not give an age, and nobody else we found has dated it. If you camp or swim here and know more about the pine, tell us.",
+  "hero_tree_id": "ssw_001",
+  "oldest_tree_id": "ssw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Solon Springs?",
+      "a": "Nobody has published an age for the tree we map in Solon Springs. The biggest is the Lucius Woods red pine, Wisconsin's champion of its species at 34.2 metres tall."
+    },
+    {
+      "q": "Where is the champion red pine in Lucius Woods County Park?",
+      "a": "At the south-west corner of the parking lot in the middle of the park. Look for plated orange-brown bark on a tall, narrow-crowned pine."
+    },
+    {
+      "q": "Does Lucius Woods County Park charge entry?",
+      "a": "As far as we found, fees apply to camping only; the park is open to day visitors."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ssw_001",
+      "name": "The Lucius Woods Red Pine",
+      "species": "Red Pine (Pinus resinosa)",
+      "age_estimate": "not documented",
+      "girth_cm": 263,
+      "height_m": 34.2,
+      "location": {
+        "address": "Lucius Woods County Park, SW corner of the parking lot in the centre of the park, Solon Springs",
+        "latitude": 46.350658,
+        "longitude": -91.818105,
+        "neighbourhood": "Lucius Woods County Park"
+      },
+      "story": "This red pine stands 34.2 metres tall at the edge of a car park in a county park on Upper St. Croix Lake. The Wisconsin DNR champion register ranks it the biggest red pine in the state, with a trunk 2.63 metres round and a narrow crown about 12 metres across, a column rather than a spreading tree.\n\nThe comparison with Illinois is striking. The state champion red pine there, on a golf course on our Chicago page, is 19.5 metres tall and 2.07 metres round. This one is nearly 15 metres taller, and more than half a metre thicker round.\n\nLucius Woods County Park belongs to Douglas County and is open to day visitors, with a beach, a campground and a nature trail. The pine is easy to find without any of them. It stands at the south-west corner of the parking lot in the middle of the park, where the register puts it. The bark is plated and orange-brown, the red pine's colours.\n\nSolon Springs is about 35 minutes by car south-east of Superior, and there is no public transport. The register is the only source for this tree and does not date its measurement. Nobody has published an age. If you know it, tell us.",
+      "how_to_recognise": "You can recognise it by its plated orange-brown bark, on a pine 34.2 metres tall. It stands at the south-west corner of the parking lot in the middle of the park.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2802&outFields=*&f=json",
+        "https://www.travelwisconsin.com/stay/campgrounds-rv-parks/lucius-woods-county-park"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2802&outFields=*&f=json"
+      },
+      "access": "Douglas County park on Upper St. Croix Lake, open to day visitors (camping, beach, nature trail); fees for camping only as far as found.",
+      "transport": "Rural, Solon Springs is about 35 minutes by car south-east of Superior. No public transport.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 2802 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only for the tree (register has a hand-drawn map in file); Travel Wisconsin confirms the county park. The Wisconsin Blue Book 1989-90 mentions a large red pine stand in the park (snippet only, not verified). Register figures (nomination measurement, date not in the layer): circumference 103.5 in (263 cm), height 112.3 ft (34.2 m), crown spread [40.8, 40.6] ft, 225.975 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

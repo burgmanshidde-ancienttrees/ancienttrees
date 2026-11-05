@@ -132,6 +132,10 @@
     "2026-10-31": {
       "note": "Scheduled deploy failure of 05:55 was the qa photo measurement, fixed in 998eb186f; the 06:08 manual deploy succeeded (27m). Smoke skips are push-triggered skips, not failures.",
       "at": "2026-10-31T07:55:13+00:00"
+    },
+    "2026-11-05": {
+      "note": "WebGL errors: all 22 reports are from builds b421729 and f1f5d4b, both before 6289d4585 (atCanMap guard, deployed 2026-11-04 19:52 CET); none from a guarded build, the red ages out of the 24h window.",
+      "at": "2026-11-05T17:53:00+00:00"
     }
   }
 }

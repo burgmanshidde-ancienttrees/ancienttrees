@@ -1,0 +1,67 @@
+{
+  "city": "Platteville",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "On the University of Wisconsin-Platteville campus, thirty yards south of the library, Wisconsin's champion northern catalpa holds up one of its own limbs on concrete blocks. The state register gives it a trunk 6.71 metres round, measured low because it splits about a metre up, a height of 28 metres and a crown about 24 metres across. The register's curator re-measured it in August 2021 and found its foliage still full. Platteville is about an hour and a quarter by car south-west of Madison.",
+  "meta_description": "Wisconsin's champion catalpa grows south of the library at UW-Platteville, 6.71 metres round, with its big west bough propped on concrete blocks.",
+  "question_meta": "No tree we map in Platteville has a published age. The biggest is the campus catalpa, Wisconsin's champion, with a bough propped on blocks.",
+  "question_answer": "No tree we map in Platteville has a published age. The biggest is the northern catalpa thirty yards south of the library on the University of Wisconsin-Platteville campus, which Wisconsin's champion register ranks first of its species, 6.71 metres round and 28 metres tall.",
+  "question_context": "The best account of Platteville's catalpa is a short note from the state champion register's curator, dated 25 August 2021. It describes an old champion re-measured, its trunk splitting between one and one and a half metres above the ground, its foliage still full, and its large west bough supported on concrete blocks. Because of the split, the diameter was taken at 36 inches rather than at the usual height, so the register's 6.71 metres round is best read as approximate. The register gives the tree a height of 28 metres and a crown about 24 metres one way and 22.5 the other, and scores it at 375 points, but it records no age, and nobody else we found has published one. That 2021 note is also the most recent confirmation that the tree is alive. The campus lawn has no gate we know of, though we have not confirmed access. If you study or work at the university and know when the catalpa was planted, tell us.",
+  "hero_tree_id": "plw_001",
+  "oldest_tree_id": "plw_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Platteville?",
+      "a": "Nobody has published an age for the tree we map in Platteville. The biggest is the northern catalpa south of the UW-Platteville library, Wisconsin's champion of its species."
+    },
+    {
+      "q": "Why is the catalpa's branch on concrete blocks?",
+      "a": "Its large west bough is supported on concrete blocks, as the state register's curator recorded when re-measuring the tree in August 2021. The trunk splits low, between one and one and a half metres above the ground."
+    },
+    {
+      "q": "Where on campus is it?",
+      "a": "Thirty yards south of the library on the University of Wisconsin-Platteville campus."
+    }
+  ],
+  "trees": [
+    {
+      "id": "plw_001",
+      "name": "The Platteville Campus Catalpa",
+      "species": "Northern Catalpa (Catalpa speciosa)",
+      "age_estimate": "not documented",
+      "girth_cm": 671,
+      "height_m": 28.0,
+      "location": {
+        "address": "Thirty yards south of the library, University of Wisconsin-Platteville campus, Platteville",
+        "latitude": 42.7338,
+        "longitude": -90.49303,
+        "neighbourhood": "UW-Platteville campus"
+      },
+      "location_site": {
+        "name": "UW-Platteville library lawn",
+        "radius_m": 30
+      },
+      "story": "One limb of this catalpa is so heavy that it rests on concrete blocks. The tree stands thirty yards south of the library on the University of Wisconsin-Platteville campus, and the Wisconsin DNR champion register ranks it the biggest northern catalpa in the state, 6.71 metres round and 28 metres tall, with a crown about 24 metres one way and 22.5 the other.\n\nThat girth needs a footnote. The trunk splits between one and one and a half metres above the ground, so the measurers could not take it at the usual height and went round at 36 inches instead. Treat the figure as approximate; the tree is enormous either way.\n\nThe best account of it is a re-measurement note from the register's curator, dated 25 August 2021. It describes the old champion with its trunk splitting low, its foliage still full, and the big west bough held up on its blocks. Somebody, at some point, decided this limb was worth propping rather than cutting, and the tree has carried on.\n\nThat 2021 note is also the latest word we have. Nobody has published an age for the tree, and the register does not say when the original measurement was made. If you have walked past the library recently, tell us how it is doing.",
+      "how_to_recognise": "You can recognise it by the trunk splitting about a metre up and the big west bough propped on concrete blocks. It stands thirty yards south of the library.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D1144&outFields=*&f=json"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D1144&outFields=*&f=json"
+      },
+      "access": "Campus lawn, open outdoor grounds; no gate known (not confirmed).",
+      "transport": "On the UW-Platteville campus; Platteville is about 1 hour 15 minutes by car south-west of Madison. No public transport.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 1144 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register curator re-measurement note dated 25 Aug 2021: old champion re-measured, trunk splitting 3-5 ft above ground, foliage still full, large west bough supported on concrete blocks; diameter taken at 36 in because of the split (so the girth figure is a taller-than-normal measurement point; treat as approximate). That note is the nearest thing to a life check (2021). Not re-confirmed since. Register gives girth 264 in at nomination. Register figures (nomination measurement, date not in the layer): circumference 264 in (671 cm), height 92 ft (28.0 m), crown spread [78, 74] ft, 375 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

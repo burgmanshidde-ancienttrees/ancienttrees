@@ -1,0 +1,136 @@
+{
+  "city": "Poynette",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Near Poynette, the MacKenzie Environmental Education Center keeps three of Wisconsin's champion trees within a couple of hundred metres of each other: a yellow buckeye north of the office, a sweet birch with a crown nearly as wide as it is tall, and a chestnut oak growing outside its natural range. All three were planted. The centre began as the State Game Farm and took its present name in 1971. It is about 40 minutes by car north of Madison; check hours before you go.",
+  "meta_description": "Three Wisconsin champion trees in one arboretum near Poynette: a yellow buckeye, a sweet birch and a chestnut oak at the MacKenzie Center.",
+  "question_meta": "No tree we map at Poynette has a published age. The biggest is the MacKenzie Center's yellow buckeye, Wisconsin's champion.",
+  "question_answer": "No tree we map near Poynette has a published age. The biggest of the three is the yellow buckeye at the MacKenzie Environmental Education Center, west of the sidewalk and north of the office, which Wisconsin's champion register ranks first of its species, 2.26 metres round and 22.6 metres tall.",
+  "question_context": "The MacKenzie Center's arboretum is a planted collection, and its three register champions are planted trees, the chestnut oak well outside its natural range. None of the three is enormous. The buckeye is 22.6 metres tall, the birch 21.3, the oak 20.1, and their trunks run from 1.78 to 2.26 metres round. What they offer is a short walk past three state records, from the buckeye near the office west to the birch and the chestnut oak at the far side of the arboretum. The register lists the buckeye under an older botanical name, Aesculus octandra, now a synonym of Aesculus flava. It is the only source for all three trees and records neither measurement dates nor ages, and the arboretum's planting dates are not published anywhere we found. The site itself has a history, as the State Game Farm until it was renamed in 1971. Visiting hours and any fee were not confirmed, so check with the centre first. If you know when the arboretum was planted, tell us.",
+  "hero_tree_id": "pyn_003",
+  "oldest_tree_id": "pyn_003",
+  "faq": [
+    {
+      "q": "What is the oldest tree at Poynette?",
+      "a": "Nobody has published an age for any of the three trees we map at the MacKenzie Center. The biggest is the yellow buckeye north of the office, Wisconsin's champion of its species."
+    },
+    {
+      "q": "Which champion trees grow at the MacKenzie Center?",
+      "a": "Three, by the Wisconsin DNR register: a yellow buckeye north of the office, a sweet birch at the west end of the western part of the arboretum, and a chestnut oak west of the conservation exhibit. All three were planted."
+    },
+    {
+      "q": "Is the MacKenzie Center open to visitors?",
+      "a": "It is a state-run environmental education centre with a planted arboretum. We could not confirm its hours or whether there is a fee, so check with the centre before the drive."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pyn_001",
+      "name": "The MacKenzie Chestnut Oak",
+      "species": "Chestnut Oak (Quercus montana)",
+      "age_estimate": "not documented",
+      "girth_cm": 178,
+      "height_m": 20.1,
+      "location": {
+        "address": "MacKenzie Environmental Education Center arboretum, west of the conservation exhibit, near Poynette",
+        "latitude": 43.399442,
+        "longitude": -89.367662,
+        "neighbourhood": "MacKenzie Center"
+      },
+      "story": "Chestnut oak does not grow wild in Wisconsin, and the state's champion is a planted tree in an arboretum near Poynette. The Wisconsin DNR champion register ranks this one, at the MacKenzie Environmental Education Center, as the biggest of its kind in the state, at 1.78 metres round and 20.1 metres tall, with a narrow crown about 11 metres one way and under 8 the other.\n\nThose are modest numbers for a champion, and we would rather say so than dress them up. Come for an oak a long way from home, not for a giant.\n\nThe centre's history is the more surprising part. It began as the State Game Farm and took its present name in 1971, and today it is run by the state's Department of Natural Resources as an education centre with a planted arboretum.\n\nTwo more register champions stand within about 250 metres, a sweet birch a few dozen metres away and a yellow buckeye north of the office, so the three make a short walk. The register is the only source for each and gives no measurement dates. Visiting hours and any fee were not confirmed, so check with the centre before the 40-minute drive north from Madison. If you know when the arboretum was planted, tell us.",
+      "how_to_recognise": "You can recognise it as a slim oak, 1.78 metres round and 20.1 metres tall, among the arboretum's planted trees. It stands west of the conservation exhibit and south of the fence.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D349&outFields=*&f=json",
+        "https://dnr.wisconsin.gov/sites/default/files/topic/ForestManagement/everyRootAnAnchor_093-MacKenzieEnvEduCenter.pdf"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D349&outFields=*&f=json"
+      },
+      "access": "State (DNR) environmental education centre with a planted arboretum; visiting hours and any fee not confirmed this pass, check before going.",
+      "transport": "Rural, about 40 minutes by car north of Madison near Poynette; no public transport.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 349 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only for this tree. Wisconsin DNR chapter on the centre says the arboretum holds 200+ species, some of state-record size (read from a search snippet, not verified on the page). Cluster of three register champions in the arboretum (pyn_001 to 003) about 100-250 m apart; a walkable trio. Ex State Game Farm, renamed 1971. Register figures (nomination measurement, date not in the layer): circumference 70 in (178 cm), height 66 ft (20.1 m), crown spread [36, 25] ft, 143.62 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pyn_002",
+      "name": "The MacKenzie Sweet Birch",
+      "species": "Sweet Birch (Betula lenta)",
+      "age_estimate": "not documented",
+      "girth_cm": 216,
+      "height_m": 21.3,
+      "location": {
+        "address": "MacKenzie Environmental Education Center, west end of the western part of the arboretum, near Poynette",
+        "latitude": 43.399658,
+        "longitude": -89.367401,
+        "neighbourhood": "MacKenzie Center"
+      },
+      "story": "This sweet birch spreads a crown about 20 metres wide on a tree 21.3 metres tall, nearly as broad as it is high. It grows at the MacKenzie Environmental Education Center near Poynette, and the Wisconsin DNR champion register ranks it the biggest sweet birch in the state, with a trunk 2.16 metres round.\n\nSweet birch is a tree of the eastern United States, and like its two champion neighbours in this arboretum it was planted. Of the three, it has by far the widest crown. The chestnut oak, a few dozen metres away, spreads about 11 metres, the yellow buckeye about 13, and this birch about 20 one way and 17 the other.\n\nThe register places it at the west end of the western part of the arboretum, close to the oak. The buckeye stands north of the centre's office, a couple of hundred metres to the east, so the three make one short walk.\n\nThe ground has had more than one life. The centre was the State Game Farm until it was renamed in 1971, and the state's Department of Natural Resources now runs it for environmental education. The register is the only record of this tree. It gives no measurement date, and nobody has published an age. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by its broad crown, about 20 metres across on a birch 21.3 metres tall. It stands at the west end of the western part of the arboretum.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2181&outFields=*&f=json",
+        "https://dnr.wisconsin.gov/sites/default/files/topic/ForestManagement/everyRootAnAnchor_093-MacKenzieEnvEduCenter.pdf"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2181&outFields=*&f=json"
+      },
+      "access": "As pyn_001: DNR centre, hours and fee not confirmed.",
+      "transport": "Rural, about 40 minutes by car north of Madison; no public transport.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 2181 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only. Part of the trio with pyn_001 and pyn_003. Sweet birch is a planted specimen here (native to the eastern US). Register figures (nomination measurement, date not in the layer): circumference 85 in (216 cm), height 70 ft (21.3 m), crown spread [65, 55] ft, 170 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pyn_003",
+      "name": "The MacKenzie Yellow Buckeye",
+      "species": "Yellow Buckeye (Aesculus flava)",
+      "age_estimate": "not documented",
+      "girth_cm": 226,
+      "height_m": 22.6,
+      "location": {
+        "address": "MacKenzie Environmental Education Center, west part of the arboretum, west of the sidewalk and north of the office, near Poynette",
+        "latitude": 43.400127,
+        "longitude": -89.365303,
+        "neighbourhood": "MacKenzie Center"
+      },
+      "story": "Wisconsin's champion yellow buckeye is filed in the state register under a name botanists have since set aside. The Wisconsin DNR champion register lists it as Aesculus octandra, an older name now treated as a synonym of Aesculus flava. Under either name, it is the biggest of its species the register knows.\n\nIt grows at the MacKenzie Environmental Education Center near Poynette, west of the sidewalk and north of the centre's office. The register measured a trunk 2.26 metres round and a height of 22.6 metres, with a compact crown about 13 metres one way and 12 the other. That makes it the tallest and the thickest of the three register champions in this arboretum, though the sweet birch at the west end spreads far wider.\n\nLike the birch and the chestnut oak, it was planted. The centre started life as the State Game Farm and took its present name in 1971, and the arboretum the state's Department of Natural Resources keeps here is a planted collection, not a wild wood.\n\nThis is the easiest of the three to find, since it stands near the office, and a good place to start the short walk to the other two. The register is the only source for it and gives no measurement date or age. Hours and any fee were not confirmed, so check before you go. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it as a buckeye 22.6 metres tall with a compact crown about 13 metres across. It stands west of the sidewalk and north of the centre's office.",
+      "verified_sources": [
+        "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2486&outFields=*&f=json",
+        "https://dnr.wisconsin.gov/sites/default/files/topic/ForestManagement/everyRootAnAnchor_093-MacKenzieEnvEduCenter.pdf"
+      ],
+      "official_register": {
+        "name": "Wisconsin DNR Champion Tree Program, public-property champions layer (state public record)",
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/CT_Nomination_PUB_TREE_MAP_View/FeatureServer/0/query?where=OBJECTID%3D2486&outFields=*&f=json"
+      },
+      "access": "As pyn_001: DNR centre, hours and fee not confirmed.",
+      "transport": "Rural, about 40 minutes by car north of Madison; no public transport.",
+      "location_precision": "approximate",
+      "pin_source": "State register nomination point, objectid 2486 (map_display 'Exact location'); one tree coordinate, not checked against imagery",
+      "curation_status": "flagged",
+      "verify_notes": "Register only; register spells it Aesculus octandra (a synonym of Aesculus flava). Planted specimen, trio with pyn_001 and pyn_002. Register figures (nomination measurement, date not in the layer): circumference 89 in (226 cm), height 74 ft (22.6 m), crown spread [43, 40] ft, 173.37 champion points. Champion status is the state's largest-of-species record at nomination; vitality field none. Open-licence photo search (Commons geosearch 200 m) found no picture of this trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

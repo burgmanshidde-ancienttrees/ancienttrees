@@ -1,0 +1,161 @@
+{
+  "city": "Asheville",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Asheville's oldest known white oak is estimated to have taken root in 1665, and a Cherokee arrowhead was found at its base in 2007. It stands on the shared campus of the Center for Spiritual Living in West Asheville, which includes a school, and is open to visitors outside school hours. The other three trees here are champions inside the Biltmore Estate gardens, which take a paid ticket: a dawn redwood said to reach 114 feet, a katsura and a Persian ironwood. If you know a big old tree in town that anyone can walk up to, tell us.",
+  "meta_description": "Asheville's remarkable trees, from Buncombe County's oldest known white oak, estimated at 1665, to three champion trees in the Biltmore gardens.",
+  "question_meta": "The oldest tree on Asheville's list is a white oak in West Asheville estimated to have taken root in 1665, Buncombe County's oldest known white oak.",
+  "question_answer": "The oldest tree on this Asheville list is the Treasured White Oak on the grounds of the Center for Spiritual Living in West Asheville, which Explore Asheville says is estimated to have first taken root in 1665, a little over 360 years ago. Asheville GreenWorks recognised it in 2012 as the oldest known white oak in Buncombe County.",
+  "question_context": "The 1665 date for Asheville's old white oak is an estimate, and the listing that gives it does not say how it was reached. What is firmer is its record. Asheville GreenWorks named it a Buncombe County Treasured Tree in 2012, the oldest known white oak in the county; the same listing connects it to 19th-century accounts, including F. A. Sondley's writings, and says a Cherokee arrowhead was found at its base in 2007. It grows on the Community Commons of the Center for Spiritual Living, a shared campus with a school, where visitors are welcome outside school hours. The three Biltmore trees on this list have no published ages at all. The estate says its dawn redwood towers over the Azalea Garden at 114 feet and that it, the katsura in the same garden and the Persian ironwood by the Conservatory are on North Carolina's register of champion trees, but it publishes no planting dates. If you know when any of them went in, or know an old tree elsewhere in Asheville, tell us.",
+  "hero_tree_id": "avl_001",
+  "oldest_tree_id": "avl_001",
+  "faq": [
+    {
+      "q": "Can you visit Asheville's oldest white oak?",
+      "a": "Yes, outside school hours. The oak stands on the Community Commons grounds of the Center for Spiritual Living Asheville at 3 Science of Mind Way in West Asheville, a shared campus with an active school. Visitors are welcome but not during school hours, and the guidance of students and staff comes first. It is about 6 km from downtown; check ART bus routes before relying on one."
+    },
+    {
+      "q": "Do you need a ticket to see the Biltmore champion trees?",
+      "a": "Yes. The dawn redwood, the katsura and the Persian ironwood all grow in the Biltmore Estate gardens, which are inside the paid grounds, so you need an estate ticket. Opening hours change with the season; check biltmore.com. The estate is about 4 km south of downtown Asheville, and driving is the simplest way there."
+    },
+    {
+      "q": "When is the best time to see the trees at Biltmore?",
+      "a": "October and November. The dawn redwood's needles turn a foxy reddish brown before they fall, and the katsura's leaves go pink and yellow and smell of caramel once they drop. The estate features both in its autumn foliage pages."
+    }
+  ],
+  "trees": [
+    {
+      "id": "avl_001",
+      "name": "Treasured White Oak, Center for Spiritual Living",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "roughly 360 years",
+      "age_basis": "source",
+      "location": {
+        "address": "3 Science of Mind Way, Asheville, NC 28806",
+        "latitude": 35.5638,
+        "longitude": -82.6085,
+        "neighbourhood": "West Asheville (Hominy Creek Valley)"
+      },
+      "story": "In 2007 somebody found a Cherokee arrowhead at the foot of this white oak. By one estimate the tree had been growing there since 1665. Both facts come from Explore Asheville, the area's visitor bureau, whose listing does not say how the 1665 date was worked out, so read it as an estimate of a little over 360 years rather than a count of rings.\n\nIts standing is better documented. In 2012 Asheville GreenWorks recognised it as a Buncombe County Treasured Tree, the oldest known white oak in the county. The same listing ties it to 19th-century accounts, including the writings of F. A. Sondley. By that account, people were already writing about this tree in the 1800s.\n\nThe tree stands on the grounds of the Community Commons at the Center for Spiritual Living in West Asheville, a shared campus that includes an active school. Visitors are welcome outside school hours, not during them, and the guidance of students and staff comes first. The grounds also host an annual Township Tree Dedication Ceremony.\n\nNobody has published a girth or a height for it. Our pin marks the street, not the trunk, so ask on the grounds for the old white oak, and if you have measured it, tell us.",
+      "how_to_recognise": "You can recognise it by asking for the Treasured Tree, Buncombe County's oldest known white oak. It stands on the Community Commons grounds of the Center for Spiritual Living, 3 Science of Mind Way.",
+      "verified_sources": [
+        "https://www.exploreasheville.com/asheville/listing/attractions/treasured-tree-buncombe-countys-oldest-white-oak",
+        "https://cslasheville.org/treasured-tree/"
+      ],
+      "access": "Grounds of Community Commons at Center for Spiritual Living Asheville, a shared campus with an active school. Visitors welcome but not during school hours; respect students and staff guidance. Hosts events and an annual Township Tree Dedication Ceremony.",
+      "transport": "West Asheville, about 6 km from downtown; check ART route coverage (not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "avl_002",
+      "name": "Biltmore's Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "not documented",
+      "height_m": 34.7,
+      "location": {
+        "address": "Azalea Garden, Biltmore Estate, 1 Lodge St, Asheville, NC 28803",
+        "latitude": 35.538,
+        "longitude": -82.5524,
+        "neighbourhood": "Biltmore Estate"
+      },
+      "story": "Biltmore says this dawn redwood towers over its Azalea Garden at 114 feet, about 34.7 metres, and lists it on the North Carolina Forest Service Registry of Champion Trees. The estate's own article on its champion trees and their autumn foliage names it again, as one of the finest on the property.\n\nTreat those numbers as Biltmore's. The state's champion list does not publish locations, so its measurement has not been set beside the estate's, and Biltmore does not say when the 114 feet was taken.\n\nThere is a second loose end. Biltmore's writing places its champion dawn redwood in the Azalea Garden, while another account puts one between the Conservatory and the Gardener's Cottage. That may be one tree described from two directions, or two trees, and the published sources do not settle it. Our pin marks the Conservatory, within a few hundred metres of the tree, not the trunk itself.\n\nNobody has published when it was planted, either. A dawn redwood is a conifer that drops its needles each year, and in autumn they turn a foxy reddish brown before they fall, which is when the estate shows it off.\n\nSeeing it takes a Biltmore Estate ticket, since the gardens sit inside the paid grounds. If you have stood under it and know which tree is which, tell us.",
+      "how_to_recognise": "You can recognise it by its height, 114 feet by Biltmore's figure, towering over the Azalea Garden, and in autumn by needles turning reddish brown. It stands in the Azalea Garden, near the Conservatory.",
+      "verified_sources": [
+        "https://biltmore.com/photogallery/fall-color-and-forestry-at-biltmore",
+        "https://biltmore.com/blog/category/gardens-grounds/page/3"
+      ],
+      "access": "Inside Biltmore Estate gardens: paid admission, estate tickets required, open daily with seasonal hours (check biltmore.com).",
+      "transport": "About 4 km south of downtown Asheville; no regular public bus to the House, drive or shuttle (not verified).",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when the needles turn a foxy reddish brown before they fall"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "avl_003",
+      "name": "Biltmore's Champion Katsura",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Azalea Garden, Biltmore Estate, 1 Lodge St, Asheville, NC 28803",
+        "latitude": 35.538,
+        "longitude": -82.5524,
+        "neighbourhood": "Biltmore Estate"
+      },
+      "story": "Olmsted chose the species, and this one grew into a state champion. That is Biltmore's account. Its katsura stands in the heart of the Azalea Garden, sits on the North Carolina Forest Service Registry of Champion Trees and is, in the estate's words, among the larger champion trees on the property. Both the estate's 2021 article on its champion trees and their autumn foliage and its own photo gallery say that Olmsted hand-picked the species.\n\nThat is close to everything on record. Biltmore publishes no girth, no height and no planting date for this tree, and the state's champion list does not make its locations public. So the claim to a crown rests on the owner's word, which is a good word to have, but one word.\n\nWhat a katsura does reliably is put on a show in autumn. Its leaves turn pink and yellow, and once they fall they smell of caramel or burnt sugar. The estate features it in exactly that season, and that is the time to plan the visit around.\n\nThe gardens sit inside Biltmore's paid grounds, so seeing it takes an estate ticket. Our pin marks the Conservatory area of the same garden complex, not the trunk. If you have measured it, or know when it went into the ground, tell us.",
+      "how_to_recognise": "You can recognise it in autumn by its leaves, pink and yellow, with a caramel smell once they fall. It stands in the heart of the Azalea Garden at Biltmore, the estate's champion katsura.",
+      "verified_sources": [
+        "https://biltmore.com/blog/category/gardens-grounds/page/3",
+        "https://biltmore.com/photogallery/fall-color-and-forestry-at-biltmore"
+      ],
+      "access": "Inside Biltmore Estate gardens: paid admission, estate tickets required.",
+      "transport": "About 4 km south of downtown Asheville; drive (not verified).",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when the leaves turn pink and yellow and smell of caramel as they fall"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "avl_004",
+      "name": "Biltmore's Persian Ironwood",
+      "species": "Persian Ironwood (Parrotia persica)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Between the Conservatory and the Gardener's Cottage, Biltmore Estate, Asheville, NC 28803",
+        "latitude": 35.538,
+        "longitude": -82.5524,
+        "neighbourhood": "Biltmore Estate"
+      },
+      "story": "Biltmore lists this Persian ironwood among its champion trees, and then its own photo captions leave the title out. The estate's 2021 article on its champion trees places a Persian ironwood between the Conservatory and the Gardener's Cottage. Its photo gallery shows the tree next to the Conservatory and says Olmsted hand-picked the species, but does not repeat the champion claim. So read the crown as Biltmore's, made once, in the setting of that article.\n\nWhat is clear is the address. Biltmore itself uses the Conservatory as the landmark for this tree, which makes it the easiest of the estate's champions on our map to find. Our pin sits at the Conservatory, close to the real spot.\n\nPersian ironwood is a species known for its mottled bark and for red and purple colour in autumn. Biltmore publishes no girth, height or planting date for this one, and no measurement of it has been published anywhere else either, so its size is a matter of standing next to it and judging for yourself.\n\nThe gardens are inside Biltmore's paid grounds, so it takes an estate ticket to see it. If you have been and know how big it is, or when it was planted, tell us, and the next visitor will know what they are walking to.",
+      "how_to_recognise": "You can recognise it by the mottled bark Persian ironwood is known for. It stands next to Biltmore's Conservatory, on the side toward the Gardener's Cottage.",
+      "verified_sources": [
+        "https://biltmore.com/blog/category/gardens-grounds/page/3",
+        "https://biltmore.com/photogallery/fall-color-and-forestry-at-biltmore"
+      ],
+      "access": "Inside Biltmore Estate gardens: paid admission, estate tickets required.",
+      "transport": "About 4 km south of downtown Asheville; drive (not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}
