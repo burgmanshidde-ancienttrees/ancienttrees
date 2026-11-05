@@ -12,6 +12,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: the app no longer holds on a return, Plus question tidied, switches without a release
+
+- **The hold on coming back to the app** (Hidde: "als ik terugkom heeft de app even nodig"): every new feed (most deploys) made the map draw a pin image per species NAME, a few hundred, on the main thread; there are about fifteen shapes. Pins are now drawn per shape, and the 12 MB of downloaded feeds is written off the main thread. Simulator, 17 Pro: the map's tree sync from 2.15 s to 0.12 s. A 40-second walk over map, list, Discover and My trees afterwards kept the main thread busy 0.35 s in all. Needs build 40.
+- **Plus question:** "Something else" with a field (plus_answers.other_text; Hidde pasted the SQL), "None of these" gone, five options; the row on a city and in Settings goes once this phone or browser has answered (device by his word, data/cross-device.json).
+- **Switches without a release:** data/app-switches.json, read by the website at build and by the app from /api/version.json at every launch and return. plus_ask=false hides the Plus question everywhere at the next deploy.
+- **App, smaller:** "Groenoord, Leiden" under a tree's name; the city box in the website's font and numbers; the snackbar takes the Map pill's place; the place name closer to the grabber.
+- Tests: 69 of 69 (unit plus SignedOutWalk and AncientTreesUITests) on the 17 Pro. Live site checked at 375 px: Plus question with Something else.
+- Open: the map's list without a place still shows the old tall cards; only a city or country has Highlights and rows.
+
 ## 2026-11-05 session: Dorit's third mail answered; the DDG Champion Trees list tried on Munich
 
 - **Sent**: reply-dorit-2026-11-05b (BUND Naturschutz München), on his "reply to her mail your draft was fine". Yes to her offer of an article in the Baumzeitung (she asks what she needs from us), and yes to her photographs with her name (they come via Swisstransfer; their licence is "Used with permission from Dorit Zimmermann; credit required"). She sends her Munich feedback after the weekend.
