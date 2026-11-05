@@ -32,5 +32,22 @@ export const QUESTION_PAGE_MIN_TREES = 2;
  * written, which is the same line; it now reads it from here.
  */
 export function cityHasQuestionPage(renderableTreeCount: number): boolean {
+  if (QUESTION_PAGES_OFF) return false;
   return renderableTreeCount >= QUESTION_PAGE_MIN_TREES;
 }
+
+/** QUESTION PAGES OFF (Hidde, 2026-11-05: "de website hard terugtrimmen").
+ *
+ * Google took the site back on 11-04 after three days of showing it again,
+ * open and tagged pages alike: a site-level judgement, and the clean-up of
+ * October had not reached it because Google reads this site at ~145
+ * requests a day and a noindexed page still costs one of them every round.
+ * A page that does not exist costs nothing. The 439 question pages (English
+ * and seven languages) repeat their city page's FAQ, and every one of them
+ * has carried the robots noindex since 2026-10-01, so nothing a reader can
+ * find changes: the FAQ stays on the city page, and every question URL
+ * redirects to its city page (redirect-map.ts; hard rule 3, no URL dies).
+ * scripts/thin_pages.py reads this constant from the file, so the noindex
+ * list stops naming pages that no longer exist. False brings them all back
+ * on the next build; the switch is Hidde's. */
+export const QUESTION_PAGES_OFF = true;

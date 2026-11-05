@@ -23,7 +23,8 @@ import { DATA } from "./data-dir";
 // pulls in Astro content types and runs later, so the rule lives in its own
 // dependency-free module rather than in the two copies that were here before.
 import { slugify, legacySlugify } from "./slug";
-import { cityHasQuestionPage } from "./question-page";
+import { cityHasQuestionPage, QUESTION_PAGE_MIN_TREES } from "./question-page";
+import { treeIsAppOnly } from "./app-first";
 import { QUESTION_SLUG, translatedLanguages, languagesForCity } from "./i18n";
 
 const BASE_URL = "https://ancienttrees.app";
@@ -363,7 +364,9 @@ const REMOVED_TREE_SLUGS: [string, string][] = [
 
 function treeIsRenderable(t: any): boolean {
   const loc = t.location ?? {};
-  return Boolean(t.story) && loc.latitude != null && loc.longitude != null;
+  // Same gate as lib/trees.ts, which this module cannot import: a story, a
+  // pin, and not app-only (lib/app-first, 2026-11-05: in the app, no page).
+  return Boolean(t.story) && loc.latitude != null && loc.longitude != null && !treeIsAppOnly(t);
 }
 
 // Mirrors the real gate in build_city_page (build_site.py:3423): a city page
@@ -539,11 +542,31 @@ export function buildRedirectStubs(): RedirectStub[] {
   // so /<lang>/<city>/<question> has never existed for one and there is
   // nothing indexed to keep alive. Should one ever drop that far, its language
   // overlay is the event to deal with, not this stub.
+  //
+  // QUESTION PAGES OFF (question-page.ts, Hidde 2026-11-05): with the switch
+  // on, every city is in this loop. A place with two or more trees sends the
+  // question to its CITY page, whose FAQ answers it; a place with one tree
+  // keeps sending it to that tree. And the translated question URLs of a
+  // city with a built overlay, which existed and were indexed for weeks, go
+  // to the translated city page the same way.
   for (const slug of published) {
     const trees = readCityTrees(slug);
     if (cityHasQuestionPage(trees.length)) continue;
     const only = trees[0];
     if (!only) continue;
+    if (trees.length >= QUESTION_PAGE_MIN_TREES) {
+      const canonical = `${BASE_URL}/${slug}`;
+      const title = `Moved: Ancient Trees in ${cityName(slug)}`;
+      stubs.push({ outputPath: `${slug}/oldest-tree.html`, targetRelative: `../${slug}`, canonical, title });
+      stubs.push({ outputPath: `${slug}/oldest-tree/index.html`, targetRelative: `../../${slug}`, canonical, title });
+      for (const lang of languagesForCity(slug)) {
+        const q = QUESTION_SLUG[lang] ?? "oldest-tree";
+        const lc = `${BASE_URL}/${lang}/${slug}`;
+        stubs.push({ outputPath: `${lang}/${slug}/${q}.html`, targetRelative: `../${slug}`, canonical: lc, title });
+        stubs.push({ outputPath: `${lang}/${slug}/${q}/index.html`, targetRelative: `../../${slug}`, canonical: lc, title });
+      }
+      continue;
+    }
     const treeSlug = slugify(only.name);
     const canonical = `${BASE_URL}/${slug}/${treeSlug}`;
     const title = "Moved: this tree";
@@ -564,6 +587,10 @@ export function buildRedirectStubs(): RedirectStub[] {
         canonical: `${BASE_URL}/${newSlug}/oldest-tree`,
         title,
       });
+    } else {
+      // Question pages off (question-page.ts, 2026-11-05): the old question
+      // url still resolves, to the new city page (hard rule 3).
+      stubs.push({ outputPath: `${oldSlug}/oldest-tree.html`, targetRelative: `../${newSlug}`, canonical, title });
     }
     const slugs = treeSlugsForCity(newSlug);
     for (const treeSlug of Object.values(slugs)) {
@@ -657,7 +684,9 @@ export function buildRedirectStubs(): RedirectStub[] {
   for (const lang of LANGS) {
     for (const s of treeStubs) {
       const city = s.outputPath.split("/")[0];
-      if (!fs.existsSync(path.join(DATA, "i18n", lang, `${city}.json`))) continue;
+      // A built overlay only (i18n.ts overlayBuilt): a trimmed one has no
+      // tree pages in that language, the city stub above covers its urls.
+      if (!languagesForCity(city).includes(lang)) continue;
       stubs.push({
         outputPath: `${lang}/${s.outputPath}`,
         targetRelative: s.targetRelative,

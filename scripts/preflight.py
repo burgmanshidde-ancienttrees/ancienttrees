@@ -2728,9 +2728,18 @@ def check_overlay_coverage():
     it stops the site shipping.
     """
     out = []
+    # An overlay the build does not render (data/translations-kept.json,
+    # 2026-11-05) owes nothing until it is kept again.
+    try:
+        with open(os.path.join("data", "translations-kept.json"), encoding="utf-8") as fh:
+            kept_pairs = {(k["lang"], k["city"]) for k in json.load(fh).get("kept") or []}
+    except (OSError, ValueError):
+        kept_pairs = None
     for path in sorted(glob.glob("data/i18n/*/*.json")):
         lang, name = path.split(os.sep)[-2:]
         slug = name[:-5]
+        if kept_pairs is not None and (lang, slug) not in kept_pairs:
+            continue
         city_path = os.path.join("data", "cities", name)
         if not os.path.exists(city_path):
             continue

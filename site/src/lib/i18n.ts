@@ -46,11 +46,38 @@ export function translatedLanguages(): string[] {
   return fs.readdirSync(dir).filter((d) => fs.statSync(path.join(dir, d)).isDirectory());
 }
 
-/** City slugs translated into `lang`. */
+/** TRANSLATIONS TRIMMED (Hidde, 2026-11-05: "de website hard terugtrimmen").
+ *
+ * An overlay in data/i18n/<lang>/<city>.json builds only when the pair is on
+ * data/translations-kept.json: the 64 of 111 city-language pairs Google still
+ * showed between 11-01 and 11-04, after it took the site back on 11-04 with a
+ * site-level judgement our October clean-up had not reached (Google reads
+ * this site at ~145 requests a day; a noindexed page still costs a visit, a
+ * page that is not built costs nothing). Every other overlay stays on disk
+ * unbuilt, and its URLs redirect to the English pages exactly as the fallback
+ * pages have since 2026-10-09 (redirect-map.ts reads languagesForCity, so the
+ * stubs follow by themselves). This reverses the 2026-10-01 call to keep
+ * every translation, said out loud that day. Add a pair to the file to bring
+ * a city back; delete the file to bring every overlay back. */
+let keptPairs: Set<string> | null | undefined;
+function overlayBuilt(lang: string, slug: string): boolean {
+  if (keptPairs === undefined) {
+    try {
+      const doc = JSON.parse(fs.readFileSync(path.join(DATA, "translations-kept.json"), "utf-8"));
+      keptPairs = new Set<string>((doc.kept ?? []).map((k: any) => `${k.lang}/${k.city}`));
+    } catch {
+      keptPairs = null; // no file: every overlay builds, the older behaviour
+    }
+  }
+  return keptPairs === null || keptPairs.has(`${lang}/${slug}`);
+}
+
+/** City slugs translated into `lang`, and built (see overlayBuilt). */
 export function translatedCities(lang: string): string[] {
   const dir = path.join(DATA, "i18n", lang);
   if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
+  return fs.readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5))
+    .filter((slug) => overlayBuilt(lang, slug));
 }
 
 export function cityTranslation(lang: string, slug: string): CityTranslation | null {
@@ -3518,7 +3545,7 @@ export function hreflangLinks(lang: string, enPath: string, langPath: string): s
 /** Every language that has an overlay for this city. */
 export function languagesForCity(slug: string): string[] {
   return translatedLanguages()
-    .filter((l) => fs.existsSync(path.join(DATA, "i18n", l, `${slug}.json`)))
+    .filter((l) => fs.existsSync(path.join(DATA, "i18n", l, `${slug}.json`)) && overlayBuilt(l, slug))
     .sort();
 }
 

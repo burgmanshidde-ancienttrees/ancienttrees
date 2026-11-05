@@ -235,6 +235,28 @@ def renderable(t):
             and loc.get("longitude") is not None and not app_only(t))
 
 
+def question_pages_off():
+    """Read QUESTION_PAGES_OFF from site/src/lib/question-page.ts, the one
+    place the rule lives (the build reads it as code, this script as text,
+    as check_park_words_match reads parks.ts)."""
+    try:
+        with open(os.path.join(ROOT, "site", "src", "lib", "question-page.ts"), encoding="utf-8") as fh:
+            return re.search(r"^export const QUESTION_PAGES_OFF = true;", fh.read(), re.M) is not None
+    except OSError:
+        return False
+
+
+def translations_kept():
+    """The (lang, city) pairs whose overlay the build renders
+    (data/translations-kept.json, Hidde 2026-11-05: 'de website hard
+    terugtrimmen'); None when the file is absent, meaning every overlay."""
+    try:
+        with open(os.path.join(ROOT, "data", "translations-kept.json"), encoding="utf-8") as fh:
+            return {(k["lang"], k["city"]) for k in json.load(fh).get("kept") or []}
+    except (OSError, ValueError):
+        return None
+
+
 def question_evidence():
     """Question pages Search Console ever showed in a digest. Frozen at
     generation time from DATA.md and its archive, so the list does not move
@@ -304,7 +326,11 @@ def main():
                 imps[c["slug"]] = c.get("impressions_10d") or 0
     except (OSError, ValueError):
         pass
-    translated = {lang: {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(ROOT, "data", "i18n", lang, "*.json"))}
+    # Only the overlays the build renders (translations_kept, 2026-11-05): a
+    # trimmed overlay has no pages, so none of its urls belongs on any list.
+    _kept = translations_kept()
+    translated = {lang: {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(ROOT, "data", "i18n", lang, "*.json"))
+                         if _kept is None or (lang, os.path.basename(p)[:-5]) in _kept}
                   for lang in LANGS}
     q_keep = question_evidence()
     on_roster = roster()
@@ -338,7 +364,10 @@ def main():
             continue
         tslugs = [slugify(t["name"]) for t in trees]
         n = len(trees)
-        has_q = n >= 2
+        # QUESTION PAGES OFF (site/src/lib/question-page.ts, Hidde 2026-11-05):
+        # with the switch on no question page is built in any language and
+        # every question URL redirects to its city page, so none is listed.
+        has_q = n >= 2 and not question_pages_off()
         langs_real = [lang for lang in LANGS if slug in translated[lang]]
         total_pages += (1 + has_q + n) * (1 + len(langs_real))
         city_urls = [f"{BASE}/{slug}"] + [f"{BASE}/{lang}/{slug}" for lang in langs_real]

@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: the trim, no question pages and 47 of 111 translations unbuilt
+
+- **What changed in the product:** every `/<city>/oldest-tree` and its seven language twins (439 URLs, all noindexed since 10-01) now redirect to the city page, whose FAQ holds the same answer; the city and tree pages no longer link them (`QUESTION_PAGES_OFF`, site/src/lib/question-page.ts, one switch every route, link, sitemap and redirect reads). And of the 111 translated city overlays only the 64 pairs Google still showed 11-01 to 11-04 build (data/translations-kept.json, `overlayBuilt()` in i18n.ts); the other 47 stay on disk and their URLs redirect to English as the fallback pages have since 10-09. Hidde: "voor nu altijd bomen live gooien in de app en de website hard terug trimmen"; this reverses his 2026-10-01 call to keep every translation, said to him today. Bing loses the same pages.
+- **Why:** Search Console's crawl stats read ~145 requests a day, 38% discovery; a noindexed page still costs a visit every round, so the October clean-up had not reached Google when it judged the site again on 11-04. A page that is not built costs nothing. The noindex list shrinks from 7,155 to about 6,570 paths; the site from about 7,400 URLs to about 6,500.
+- **Mirrors:** thin_pages.py reads the switch from question-page.ts and the keep file; preflight's overlay check and redirect-map.ts read the keep file through `languagesForCity`; redirect-map's own tree gate now excludes app-only trees too. Undo: the switch, or a pair added to the file.
+
 ## 2026-11-05 session: the shelf goes into the app, 230 trees in 43 places, none on the website
 
 - **What changed in the product:** 230 written trees that were held for the pace are in the app from this deploy (Hidde: "kunnen we voor de app niet gelijk de hele batch klaar zetten?", and "voor nu altijd bomen live gooien in de app en de website hard terug trimmen"): Boston +27, New York +23, London +16, Cyprus and Lyon +11, Bristol and Oahu +10, Los Angeles +8, Dunkeld, Naples, Salt Lake City and San Diego +7, 31 more places. On the website nothing changes: app-only, no page, no pin, no sitemap line, counts as they were. 28 carry an approved photograph, 4 held, 197 none. The pace no longer counts an app-only tree (`check_publishing_pace`), so the shelf drains as fast as it is written.

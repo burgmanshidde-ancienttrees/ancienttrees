@@ -1,0 +1,517 @@
+{
+ "note": "Translated cities the build keeps (Hidde, 2026-11-05: 'de website hard terugtrimmen'). A city's overlay in a language builds only when the pair is listed here; every other overlay stays in data/i18n/ unbuilt and its URLs redirect to the English pages, as the fallback pages did from 2026-10-09. Listed: pairs Google still showed between 2026-11-01 and 2026-11-04 (data/tagged-still-shown.json). Add a pair to bring a translation back.",
+ "since": "2026-11-01",
+ "google_data_through": "2026-11-04",
+ "kept": [
+  {
+   "lang": "de",
+   "city": "berlin",
+   "impressions": 11
+  },
+  {
+   "lang": "de",
+   "city": "dresden",
+   "impressions": 8
+  },
+  {
+   "lang": "de",
+   "city": "graz",
+   "impressions": 11
+  },
+  {
+   "lang": "de",
+   "city": "hamburg",
+   "impressions": 8
+  },
+  {
+   "lang": "de",
+   "city": "heidelberg",
+   "impressions": 2
+  },
+  {
+   "lang": "de",
+   "city": "leipzig",
+   "impressions": 2
+  },
+  {
+   "lang": "de",
+   "city": "munich",
+   "impressions": 12
+  },
+  {
+   "lang": "de",
+   "city": "nuremberg",
+   "impressions": 7
+  },
+  {
+   "lang": "de",
+   "city": "regensburg",
+   "impressions": 1
+  },
+  {
+   "lang": "de",
+   "city": "salzburg",
+   "impressions": 9
+  },
+  {
+   "lang": "de",
+   "city": "vienna",
+   "impressions": 39
+  },
+  {
+   "lang": "de",
+   "city": "zurich",
+   "impressions": 21
+  },
+  {
+   "lang": "es",
+   "city": "alicante",
+   "impressions": 14
+  },
+  {
+   "lang": "es",
+   "city": "barcelona",
+   "impressions": 32
+  },
+  {
+   "lang": "es",
+   "city": "cadiz",
+   "impressions": 32
+  },
+  {
+   "lang": "es",
+   "city": "girona",
+   "impressions": 2
+  },
+  {
+   "lang": "es",
+   "city": "granada",
+   "impressions": 12
+  },
+  {
+   "lang": "es",
+   "city": "ibiza",
+   "impressions": 3
+  },
+  {
+   "lang": "es",
+   "city": "madrid",
+   "impressions": 29
+  },
+  {
+   "lang": "es",
+   "city": "malaga",
+   "impressions": 19
+  },
+  {
+   "lang": "es",
+   "city": "menorca",
+   "impressions": 8
+  },
+  {
+   "lang": "es",
+   "city": "mexico-city",
+   "impressions": 3
+  },
+  {
+   "lang": "es",
+   "city": "palma-de-mallorca",
+   "impressions": 9
+  },
+  {
+   "lang": "es",
+   "city": "pamplona",
+   "impressions": 9
+  },
+  {
+   "lang": "es",
+   "city": "seville",
+   "impressions": 9
+  },
+  {
+   "lang": "es",
+   "city": "tenerife",
+   "impressions": 8
+  },
+  {
+   "lang": "es",
+   "city": "valencia",
+   "impressions": 5
+  },
+  {
+   "lang": "fr",
+   "city": "bordeaux",
+   "impressions": 3
+  },
+  {
+   "lang": "fr",
+   "city": "brussels",
+   "impressions": 1
+  },
+  {
+   "lang": "fr",
+   "city": "geneva",
+   "impressions": 13
+  },
+  {
+   "lang": "fr",
+   "city": "lyon",
+   "impressions": 19
+  },
+  {
+   "lang": "fr",
+   "city": "nice",
+   "impressions": 26
+  },
+  {
+   "lang": "fr",
+   "city": "paris",
+   "impressions": 26
+  },
+  {
+   "lang": "it",
+   "city": "bologna",
+   "impressions": 1
+  },
+  {
+   "lang": "it",
+   "city": "cagliari",
+   "impressions": 15
+  },
+  {
+   "lang": "it",
+   "city": "florence",
+   "impressions": 8
+  },
+  {
+   "lang": "it",
+   "city": "milan",
+   "impressions": 14
+  },
+  {
+   "lang": "it",
+   "city": "palermo",
+   "impressions": 10
+  },
+  {
+   "lang": "it",
+   "city": "rome",
+   "impressions": 21
+  },
+  {
+   "lang": "it",
+   "city": "sardinia",
+   "impressions": 1
+  },
+  {
+   "lang": "it",
+   "city": "venice",
+   "impressions": 1
+  },
+  {
+   "lang": "ja",
+   "city": "fukuoka",
+   "impressions": 5
+  },
+  {
+   "lang": "ja",
+   "city": "kagoshima",
+   "impressions": 4
+  },
+  {
+   "lang": "ja",
+   "city": "kanazawa",
+   "impressions": 3
+  },
+  {
+   "lang": "ja",
+   "city": "kyoto",
+   "impressions": 14
+  },
+  {
+   "lang": "ja",
+   "city": "miyazaki",
+   "impressions": 4
+  },
+  {
+   "lang": "ja",
+   "city": "nagoya",
+   "impressions": 2
+  },
+  {
+   "lang": "ja",
+   "city": "nara",
+   "impressions": 2
+  },
+  {
+   "lang": "ja",
+   "city": "osaka",
+   "impressions": 14
+  },
+  {
+   "lang": "ja",
+   "city": "sapporo",
+   "impressions": 3
+  },
+  {
+   "lang": "ja",
+   "city": "takeo",
+   "impressions": 6
+  },
+  {
+   "lang": "ja",
+   "city": "tokyo",
+   "impressions": 18
+  },
+  {
+   "lang": "ja",
+   "city": "yakushima",
+   "impressions": 6
+  },
+  {
+   "lang": "nl",
+   "city": "amsterdam",
+   "impressions": 15
+  },
+  {
+   "lang": "nl",
+   "city": "arnhem",
+   "impressions": 5
+  },
+  {
+   "lang": "nl",
+   "city": "dordrecht",
+   "impressions": 1
+  },
+  {
+   "lang": "nl",
+   "city": "haarlem",
+   "impressions": 2
+  },
+  {
+   "lang": "nl",
+   "city": "nijmegen",
+   "impressions": 3
+  },
+  {
+   "lang": "nl",
+   "city": "the-hague",
+   "impressions": 2
+  },
+  {
+   "lang": "pt",
+   "city": "lisbon",
+   "impressions": 14
+  },
+  {
+   "lang": "pt",
+   "city": "madeira",
+   "impressions": 7
+  },
+  {
+   "lang": "pt",
+   "city": "porto",
+   "impressions": 10
+  },
+  {
+   "lang": "pt",
+   "city": "rio-de-janeiro",
+   "impressions": 9
+  },
+  {
+   "lang": "pt",
+   "city": "sintra",
+   "impressions": 3
+  }
+ ],
+ "not_built": [
+  {
+   "lang": "de",
+   "city": "aachen"
+  },
+  {
+   "lang": "de",
+   "city": "baldenhain"
+  },
+  {
+   "lang": "de",
+   "city": "cologne"
+  },
+  {
+   "lang": "de",
+   "city": "frankfurt"
+  },
+  {
+   "lang": "de",
+   "city": "freiburg"
+  },
+  {
+   "lang": "de",
+   "city": "hallstatt"
+  },
+  {
+   "lang": "de",
+   "city": "potsdam"
+  },
+  {
+   "lang": "de",
+   "city": "stuttgart"
+  },
+  {
+   "lang": "es",
+   "city": "buenos-aires"
+  },
+  {
+   "lang": "es",
+   "city": "cordoba"
+  },
+  {
+   "lang": "es",
+   "city": "ronda"
+  },
+  {
+   "lang": "es",
+   "city": "segovia"
+  },
+  {
+   "lang": "es",
+   "city": "tarragona"
+  },
+  {
+   "lang": "fr",
+   "city": "lausanne"
+  },
+  {
+   "lang": "fr",
+   "city": "luxembourg-city"
+  },
+  {
+   "lang": "fr",
+   "city": "nantes"
+  },
+  {
+   "lang": "fr",
+   "city": "senonches"
+  },
+  {
+   "lang": "fr",
+   "city": "strasbourg"
+  },
+  {
+   "lang": "fr",
+   "city": "venon"
+  },
+  {
+   "lang": "it",
+   "city": "bari"
+  },
+  {
+   "lang": "it",
+   "city": "bergamo"
+  },
+  {
+   "lang": "it",
+   "city": "catania"
+  },
+  {
+   "lang": "it",
+   "city": "como"
+  },
+  {
+   "lang": "it",
+   "city": "genoa"
+  },
+  {
+   "lang": "it",
+   "city": "lucca"
+  },
+  {
+   "lang": "it",
+   "city": "naples"
+  },
+  {
+   "lang": "it",
+   "city": "padua"
+  },
+  {
+   "lang": "it",
+   "city": "sorrento"
+  },
+  {
+   "lang": "it",
+   "city": "trieste"
+  },
+  {
+   "lang": "it",
+   "city": "verona"
+  },
+  {
+   "lang": "ja",
+   "city": "iga"
+  },
+  {
+   "lang": "ja",
+   "city": "kamakura"
+  },
+  {
+   "lang": "ja",
+   "city": "kanagi"
+  },
+  {
+   "lang": "ja",
+   "city": "nagano"
+  },
+  {
+   "lang": "ja",
+   "city": "otoyo"
+  },
+  {
+   "lang": "ja",
+   "city": "uda"
+  },
+  {
+   "lang": "ja",
+   "city": "yabu"
+  },
+  {
+   "lang": "nl",
+   "city": "amersfoort"
+  },
+  {
+   "lang": "nl",
+   "city": "den-bosch"
+  },
+  {
+   "lang": "nl",
+   "city": "ede"
+  },
+  {
+   "lang": "nl",
+   "city": "emmen"
+  },
+  {
+   "lang": "nl",
+   "city": "enschede"
+  },
+  {
+   "lang": "nl",
+   "city": "ghent"
+  },
+  {
+   "lang": "nl",
+   "city": "leiden"
+  },
+  {
+   "lang": "nl",
+   "city": "utrecht"
+  },
+  {
+   "lang": "pt",
+   "city": "bucaco"
+  },
+  {
+   "lang": "pt",
+   "city": "guimaraes"
+  }
+ ]
+}
