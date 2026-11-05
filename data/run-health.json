@@ -2,37 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-06T21:44:33+00:00",
-   "date": "2026-09-06",
-   "run_id": "34061965913",
-   "minutes": 83.2,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 558,
-   "denials": 82,
-   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(cd), Bash(chmod), Bash(command), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(set), Bash(until), Bash(unzstd), Bash(which), Bash(while)",
-   "ended": "success",
-   "tokens": 13390149,
-   "claims_held": [
-    "singapore",
-    "leiden"
-   ],
-   "commits": 19,
-   "cities_touched": 2,
-   "cities": [
-    {
-     "city": "salzburg",
-     "trees": 4
-    },
-    {
-     "city": "leiden",
-     "trees": 0
-    }
-   ],
-   "trees": 4,
-   "logged": true
-  },
-  {
    "started": "2026-09-06T23:09:53+00:00",
    "date": "2026-09-07",
    "run_id": "34062203352",
@@ -22180,6 +22149,30 @@
    "commits": 6,
    "cities_touched": 0,
    "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-05T06:07:56+00:00",
+   "date": "2026-11-05",
+   "run_id": "41978298050",
+   "minutes": 6.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 74,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(gh | ? | ? | ? ...), Bash(gh | ? | ?)",
+   "ended": "success",
+   "tokens": 481481,
+   "claims_held": [],
+   "commits": 5,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "santa-barbara",
+     "trees": 0
+    }
+   ],
    "trees": 0,
    "logged": true
   }
