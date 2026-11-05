@@ -12,6 +12,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (06:08 UTC, eighth attempt): nothing shipped
+
+- Rung 1 empty (no photographs, no notes). Rung 2: Postbox check red is the old web_errors migration, which sqlcheck now shows applied; only supabase/plus-answers.sql is still unpasted (For Hidde). iOS stays red on the two RedrawMemoTests aborts (see the entry below), needs a Mac. Pace still full until about 19:42 UTC, so no write or merge.
+- Rung 4 sourcing: tried Hoyt Arboretum (Portland) for an archive contact; hoytarboretum.org returns 403 to the fetch tool and search showed no published address, so nothing recorded (no guessed addresses). Archive group has 0 ready contacts, so the next session with a browser should source some.
+
 ## 2026-11-05 night run (seventh attempt): looked at the iOS failure, nothing shipped
 
 - No claims stood; 112 READY leads are the same rejects; pace still full until about 19:42 UTC, so no write pass.
