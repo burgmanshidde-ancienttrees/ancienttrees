@@ -234,6 +234,43 @@
         "kind": "flowers",
         "label": "July, when the small-leaved lime flowers and its scent carries"
       }
+    },
+    {
+      "id": "slc_007",
+      "name": "The Peace Gardens Bur Oak",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "not documented",
+      "girth_cm": 330,
+      "height_m": 22.6,
+      "location": {
+        "address": "International Peace Gardens, Jordan Park, 1060 S 900 W, Salt Lake City (north-east corner of the gardens)",
+        "latitude": 40.74838,
+        "longitude": -111.91955,
+        "neighbourhood": "Jordan Park / Poplar Grove"
+      },
+      "verified_sources": [
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory/bur-oak-salt-lake-city",
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory/northern-red-oak-salt-lake-city",
+        "https://www.internationalpeacegardens.org/visits-events-celebrations",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Utah Community Forest Council directory, objectid 337)",
+        "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/bur-oak-salt-lake-city"
+      },
+      "access": "Free. The International Peace Gardens in Jordan Park (city-owned) list opening 7 am to 11 pm year round on their own site; flower displays May to October. Dogs on a leash.",
+      "transport": "Jordan Park, 1000 S 900 W, roughly 3 km west-southwest of Temple Square; no rail station at the gate, check UTA bus options (not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Two state-champion oaks stand about 15 m apart in the NE corner of the gardens, folded into one entry: Bur Oak (register objectid 337: circumference 130 in = 330 cm, height 74 ft = 22.6 m, spread 86 ft, measured 2026, state champion status 1; coordinate 40.74838,-111.91955) and Northern Red Oak (objectid 106: 120 in = 305 cm, 83 ft = 25.3 m, spread 80 ft, measured 2026, state champion 1, nominated 2015; coordinate 40.74838,-111.91973). Owner of the ground: Salt Lake City. Both PUBLIC_ACCESS = Yes. Register-only, one source (US: one credible source is enough), flagged. Alive: both measured 2026; lifecheck RECENT only for the park generally (an iNaturalist hibiscus 2026-09-20 within 60 m), no observation of the oaks themselves. Pin is register-grade, not placed on a crown: approximate; the gardens are a walk-through garden so no location_site. Spread of the bur oak (86 ft, about 26 m) is wider than its height, a wide open crown. No age in any source; none invented. Jordan Park created 1918 (Wikipedia, citing slc.gov); no source ties the oaks to that date. Writer: do not claim either is the biggest in the park or older than the park. Heritage Tree = No for both. Unverified: whether the Peace Gardens' country plots have signage on the oaks.",
+      "story": "Two of Utah's champion oaks stand about 15 metres apart in one corner of the International Peace Gardens. The state's big tree register places both in the north-east corner of the gardens in Jordan Park, and both were measured in 2026.\n\nThis entry is the bur oak, the largest of its species the register knows of in Utah. Its trunk is 330 centimetres round and it stands 22.6 metres tall, but the figure that tells you what it looks like is the spread. The crown reaches about 26 metres across, wider than the tree is high, the shape of an oak that has had open ground on every side.\n\nIts neighbour is a northern red oak, champion of its own species, 305 centimetres round and 25.3 metres tall. So the slimmer of the pair is the taller one, and its crown is only a couple of metres narrower. Two record oaks of two species, close enough to take in from one spot on the path.\n\nBur oak is a tree of the American Midwest and the prairie edge, known for big acorns sitting in fringed, mossy-looking cups. Here it grows in a free city garden open from seven in the morning until eleven at night, with flower displays around it from May to October.\n\nJordan Park dates from 1918, but no source says when either oak was planted, and the register gives no age for them. If you know when they went in, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, about 26 metres across and wider than the tree is tall. It stands in the north-east corner of the Peace Gardens, some 15 metres from the taller, slimmer champion red oak.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

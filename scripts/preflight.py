@@ -61,9 +61,12 @@ PROMISE = [
 
 
 def check_city(path):
+    from findable import app_only
     d = json.load(open(path))
     slug = os.path.basename(path)[:-5]
-    n = len(d.get("trees", []))
+    # The count a reader sees: an app-only tree (findable.app_only, APP FIRST
+    # 2026-11-05) is not on the city page, so the prose must not count it.
+    n = sum(1 for t in d.get("trees", []) if not app_only(t))
     out = []
 
     intro = (d.get("intro") or "").strip()
@@ -1311,7 +1314,7 @@ def check_publishing_pace(at_push=False):
     if not base:
         return []
 
-    from findable import reader_added
+    from findable import reader_added, app_only
 
     def ids_from(texts):
         out = set()
@@ -1322,6 +1325,15 @@ def check_publishing_pace(at_push=False):
                 continue
             for t in d.get("trees") or []:
                 if reader_added(t):
+                    continue
+                # APP FIRST (Hidde, 2026-11-05: "kunnen we voor de app niet
+                # gelijk de hele batch klaar zetten?"): the pace exists for
+                # Google, and an app-only tree makes no page for Google to
+                # read, so it does not count. While APP_FIRST holds, every
+                # new tree of ours is app-only, so the pace counts nothing
+                # until Hidde flips it back; the number stays as the guard
+                # for that day.
+                if app_only(t):
                     continue
                 if t.get("story") and (t.get("location") or {}).get("latitude") is not None:
                     out.add(t.get("id"))
