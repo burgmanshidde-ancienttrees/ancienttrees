@@ -70,7 +70,12 @@ const OPTS = ["walks", "offline", "season", "log"] as const;
       {OPTS.map((k) => (
         <label class="plus-opt" data-key={k}><input type="checkbox" name="plus-choice" value={k} />{U.plusOptions[k]}</label>
       ))}
-      <label class="plus-opt plus-opt-none" data-key="none"><input type="checkbox" name="plus-choice" value="none" />{U.plusNone}</label>
+      {/* SOMETHING ELSE, then a field (Hidde, 2026-11-05): a survey's "Other,
+          please specify", as Google Forms draws it; the field shows once it is
+          ticked, and it counts as one of the two. The app draws the same. */}
+      <label class="plus-opt plus-opt-fixed" data-key="other"><input type="checkbox" name="plus-choice" value="other" />{U.plusOther}</label>
+      <input type="text" class="plus-other" maxlength="300" placeholder={U.plusOtherPh} aria-label={U.plusOther} hidden />
+      <label class="plus-opt plus-opt-none plus-opt-fixed" data-key="none"><input type="checkbox" name="plus-choice" value="none" />{U.plusNone}</label>
     </div>
     <div class="at-sheet-btns">
       <button type="button" class="sheet-b sheet-b--primary plus-send" disabled>{U.plusSend}</button>
@@ -111,10 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
   function track(n, v) { try { if (window.at && at.track) at.track(n, v); } catch (e) {} }
   function show(name) { steps.forEach(function(s) { s.hidden = s.getAttribute('data-step') !== name; }); }
   function close() { if (dlg.open) dlg.close(); }
-  // Fisher-Yates over the four; "None of these" stays last.
+  // Fisher-Yates over the four; "Something else" and "None of these" stay last.
+  var other = dlg.querySelector('.plus-other');
   function shuffle() {
-    var none = box.querySelector('.plus-opt-none');
-    var opts = Array.prototype.slice.call(box.querySelectorAll('.plus-opt:not(.plus-opt-none)'));
+    var none = box.querySelector('.plus-opt-fixed');
+    var opts = Array.prototype.slice.call(box.querySelectorAll('.plus-opt:not(.plus-opt-fixed)'));
     for (var i = opts.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = opts[i]; opts[i] = opts[j]; opts[j] = t; }
     opts.forEach(function(o) { box.insertBefore(o, none); });
     shown = opts.map(function(o) { return o.getAttribute('data-key'); }).join(',');
@@ -124,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
       idea.value = ''; label();
       box.querySelectorAll('input').forEach(function(r) { r.checked = false; r.disabled = false; });
       box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.remove('is-on'); });
+      other.value = ''; other.hidden = true;
       send.disabled = true; shuffle();
     }
     tell.disabled = false;
@@ -150,26 +157,33 @@ document.addEventListener('DOMContentLoaded', function() {
   // and ticking another clears it. At two, the rest wait greyed out.
   box.addEventListener('change', function(e) {
     var t = e.target;
+    if (t === other) return;
     if (t.checked) {
-      box.querySelectorAll('input').forEach(function(i) {
+      box.querySelectorAll('input[type=checkbox]').forEach(function(i) {
         if (i !== t && (t.value === 'none' || i.value === 'none')) i.checked = false;
       });
     }
     var on = box.querySelectorAll('input:checked').length;
-    box.querySelectorAll('input').forEach(function(i) { i.disabled = !i.checked && on >= MAX; });
+    box.querySelectorAll('input[type=checkbox]').forEach(function(i) { i.disabled = !i.checked && on >= MAX; });
     box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.toggle('is-on', o.querySelector('input').checked); });
+    var otherOn = !!box.querySelector('input[value="other"]:checked');
+    other.hidden = !otherOn;
+    if (otherOn && t.value === 'other' && t.checked) other.focus();
     send.disabled = on === 0;
   });
   send.addEventListener('click', function() {
-    var picked = Array.prototype.map.call(box.querySelectorAll('input:checked'), function(i) { return i.value; });
+    var picked = Array.prototype.map.call(box.querySelectorAll('input[type=checkbox]:checked'), function(i) { return i.value; });
     if (!picked.length) return;
     send.disabled = true;
     // Anonymous on purpose: the publishable key alone, never the session.
+    var row = { surface: 'web', lang: lang, city: city, opened_from: from, choices: picked,
+                idea: (idea.value || '').trim().slice(0, 600), shown_order: shown };
+    // Sent only with "Something else", so other answers never depend on it.
+    if (picked.indexOf('other') >= 0) row.other_text = (other.value || '').trim().slice(0, 300);
     fetch(SB + '/rest/v1/plus_answers', {
       method: 'POST',
       headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
-      body: JSON.stringify({ surface: 'web', lang: lang, city: city, opened_from: from, choices: picked,
-                             idea: (idea.value || '').trim().slice(0, 600), shown_order: shown })
+      body: JSON.stringify(row)
     }).catch(function() {});
     track('plus-answer', picked.join(','));
     show('thanks');
@@ -228,5 +242,10 @@ document.addEventListener('DOMContentLoaded', function() {
   .plus-opt input { width: 20px; height: 20px; margin: 0; flex: none; accent-color: var(--moss); }
   .plus-opt.is-on { border-color: var(--ink); background: var(--surface); }
   .plus-opt-none { color: var(--ink-mid); }
+  .plus-other { display: block; width: 100%; box-sizing: border-box;
+    padding: 14px 16px; border: 1px solid var(--cream-dark); border-radius: 16px; background: var(--surface);
+    font: inherit; font-size: 16px; color: var(--ink); }
+  .plus-other::placeholder { color: var(--ink-light); }
+  .plus-other[hidden] { display: none; }
   .plus-opt:has(input:disabled) { opacity: .45; cursor: default; }
 </style>

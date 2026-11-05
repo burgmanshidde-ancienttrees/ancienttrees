@@ -38,6 +38,7 @@ LABELS = {
     "offline": "Download offline maps",
     "season": "Seasonal alerts when trees are at their best",
     "log": "A richer log of every tree you've collected",
+    "other": "Something else",
     "none": "None of these",
 }
 
@@ -56,8 +57,16 @@ def main():
         print("No service key (SUPABASE_SERVICE_KEY or ~/.ancienttrees-supabase.env).")
         return 1
     try:
-        rows, _ = get(key, "/rest/v1/plus_answers?select=created_at,surface,lang,city,opened_from,choices,idea,shown_order"
-                           "&order=created_at.asc&limit=5000")
+        cols = "created_at,surface,lang,city,opened_from,choices,idea,shown_order"
+        try:
+            # other_text arrived 2026-11-05 ("Something else"); a table not yet
+            # upgraded reads without it.
+            rows, _ = get(key, f"/rest/v1/plus_answers?select={cols},other_text&order=created_at.asc&limit=5000")
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                raise
+            print("(other_text column missing: paste supabase/plus-answers.sql again)\n")
+            rows, _ = get(key, f"/rest/v1/plus_answers?select={cols}&order=created_at.asc&limit=5000")
         _, listed = get(key, "/rest/v1/plus_waitlist?select=created_at&limit=1")
     except urllib.error.HTTPError as e:
         if e.code == 404:
@@ -87,6 +96,11 @@ def main():
         print("\nTheir own words (the open question, word for word):\n")
         for r in ideas:
             print(f"- {r['created_at'][:10]} {r['surface']} {r.get('city') or ''} ({r.get('lang')}): {r['idea'].strip()}")
+    others = [r for r in rows if (r.get("other_text") or "").strip()]
+    if others:
+        print("\nSomething else, word for word:\n")
+        for r in others:
+            print(f"- {r['created_at'][:10]} {r['surface']} {r.get('city') or ''} ({r.get('lang')}): {r['other_text'].strip()}")
     return 0
 
 

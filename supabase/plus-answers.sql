@@ -37,10 +37,12 @@ create table if not exists public.plus_answers (
   -- Up to two (Hidde, 2026-11-05: "max 2 invullen is goed"); "none" stands alone.
   choices text[] not null check (
     cardinality(choices) between 1 and 2
-    and choices <@ array['walks', 'offline', 'season', 'log', 'none']::text[]
+    and choices <@ array['walks', 'offline', 'season', 'log', 'other', 'none']::text[]
     and (not ('none' = any(choices)) or cardinality(choices) = 1)
   ),
   idea text not null default '' check (char_length(idea) <= 600),
+  -- What "Something else" said (Hidde, 2026-11-05).
+  other_text text not null default '' check (char_length(other_text) <= 300),
   shown_order text not null default '' check (char_length(shown_order) <= 60),
   build text not null default '' check (char_length(build) <= 40)
 );
@@ -64,9 +66,16 @@ alter table public.plus_answers alter column choices set not null;
 alter table public.plus_answers drop constraint if exists plus_answers_choices_check;
 alter table public.plus_answers add constraint plus_answers_choices_check check (
   cardinality(choices) between 1 and 2
-  and choices <@ array['walks', 'offline', 'season', 'log', 'none']::text[]
+  and choices <@ array['walks', 'offline', 'season', 'log', 'other', 'none']::text[]
   and (not ('none' = any(choices)) or cardinality(choices) = 1)
 );
+
+-- "SOMETHING ELSE" (Hidde, 2026-11-05: "in het laatste scherm moet ook nog
+-- steeds de optie zijn something else en dat iemand dan kan gaan typen"): the
+-- key 'other' joins the list above and its words go in their own column.
+alter table public.plus_answers add column if not exists other_text text not null default '';
+alter table public.plus_answers drop constraint if exists plus_answers_other_text_check;
+alter table public.plus_answers add constraint plus_answers_other_text_check check (char_length(other_text) <= 300);
 
 alter table public.plus_answers enable row level security;
 

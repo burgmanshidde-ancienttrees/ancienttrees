@@ -58,6 +58,8 @@ struct PlusQuestionSheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var step: Step = .idea
     @State private var idea = ""
+    /// What "Something else" says (Hidde, 2026-11-05).
+    @State private var otherText = ""
     /// Up to two (Hidde, 2026-11-05: "max 2 invullen is goed"); "none" alone.
     @State private var choices: [String] = []
     @State private var order: [(key: String, label: String)] = PlusAnswers.options.shuffled()
@@ -135,6 +137,19 @@ struct PlusQuestionSheet: View {
     private var options: some View {
         VStack(spacing: 8) {
             ForEach(order, id: \.key) { o in optionRow(o.key, o.label) }
+            // SOMETHING ELSE, then a field (Hidde, 2026-11-05: "de optie
+            // something else en dat iemand dan kan gaan typen"): a survey's
+            // "Other, please specify", as Google Forms draws it; the field
+            // appears only once it is ticked. It counts as one of the two.
+            optionRow("other", "Something else")
+            if choices.contains("other") {
+                TextField("What would you want?", text: $otherText, axis: .vertical)
+                    .font(.system(size: 16))
+                    .lineLimit(1...4)
+                    .padding(.horizontal, 14).padding(.vertical, 12)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+                    .accessibilityIdentifier("plus-other-text")
+            }
             optionRow("none", "None of these", quiet: true)
         }
         .padding(.top, 20)
@@ -180,8 +195,9 @@ struct PlusQuestionSheet: View {
         guard !choices.isEmpty else { return }
         let picked = choices, shown = order.map(\.key)
         let text = idea, city = city, from = openedFrom
+        let other = picked.contains("other") ? otherText : ""
         Measure.event("plus-answer", ["choice": picked.joined(separator: ",")])
-        Task { await PlusAnswers.answer(choices: picked, idea: text, shownOrder: shown, city: city, openedFrom: from) }
+        Task { await PlusAnswers.answer(choices: picked, idea: text, other: other, shownOrder: shown, city: city, openedFrom: from) }
         step = .thanks
     }
 

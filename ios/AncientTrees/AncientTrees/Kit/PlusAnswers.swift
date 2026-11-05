@@ -18,10 +18,10 @@ public enum PlusAnswers {
 
     /// One answer, without an account. Fire and forget: a lost answer to a
     /// question costs nobody anything, a spinner would.
-    public static func answer(choices: [String], idea: String, shownOrder: [String],
+    public static func answer(choices: [String], idea: String, other: String = "", shownOrder: [String],
                               city: String, openedFrom: String) async {
         let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
-        await Supa.post("/rest/v1/plus_answers", token: nil, body: [
+        var body: [String: Any] = [
             "surface": "app",
             "lang": "en",
             "city": String(city.prefix(80)),
@@ -30,7 +30,12 @@ public enum PlusAnswers {
             "idea": String(idea.trimmingCharacters(in: .whitespacesAndNewlines).prefix(600)),
             "shown_order": shownOrder.joined(separator: ","),
             "build": build,
-        ], prefer: "return=minimal")
+        ]
+        // Sent only with "Something else", so an answer without it never
+        // depends on the column (supabase/plus-answers.sql, 2026-11-05).
+        let said = other.trimmingCharacters(in: .whitespacesAndNewlines)
+        if choices.contains("other") { body["other_text"] = String(said.prefix(300)) }
+        await Supa.post("/rest/v1/plus_answers", token: nil, body: body, prefer: "return=minimal")
     }
 
     /// "Tell me": this account on the list, once. A second press from another
