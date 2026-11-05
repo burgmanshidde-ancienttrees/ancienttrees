@@ -633,6 +633,10 @@ struct BottomSheet<Header: View, Content: View>: View {
                     .updating($dragging) { _, state, _ in state = true }
                     .onChanged { value in
                         clock.lastMove = Date()
+                        // SIDEWAYS IS THE SHELF'S (direction C, 2026-11-05):
+                        // a swipe along the Highlights shelf leaves the sheet
+                        // where it is instead of nudging it up and down.
+                        if drag == 0 && abs(value.translation.width) > abs(value.translation.height) { return }
                         // Claim the gesture only in the cases the rules above
                         // describe. Everything else belongs to the list.
                         // Nothing to list: the sheet stays where it is (Hidde,

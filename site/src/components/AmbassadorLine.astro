@@ -62,72 +62,57 @@ interface Props {
 const { people, lang = "en", place, requestCity, seated = false } = Astro.props as Props;
 const U = ui(lang);
 const taken = seated || people.length > 0;
-const openTitle = place ? (taken ? U.ambassadorJoin : U.ambassadorWanted(place)) : "";
-// The seat goes icon-only beside a named person; alone it keeps its words.
-const iconSeat = !!(place && requestCity && people.length > 0);
+const canAsk = !!(place && requestCity);
+// DIRECTION C (Hidde, 2026-11-05): the ambassador is the first row of the
+// city page's white box, Plus the second (PlusAsk.astro). Nobody named: one
+// line that opens the request, "the" ambassador for an empty place and "a"
+// second one where somebody already looks after it. A named person: their
+// row, and under the last name "{place} ambassador · Become one too", the
+// last words the link to the same request. The affiliation stays on the
+// profile (Hidde: "leaving out quercus lisboa is good"), and the dashed
+// circle of 2026-10-31 is gone with it.
+const askLabel = place ? (taken ? U.ambassadorBecomeA(place) : U.ambassadorBecomeThe(place)) : "";
 // THE NAME OPENS THE PROFILE when its owner made it public (Hidde,
-// 2026-10-19, design page frames 1 and 6): the whole row is the link
-// with a chevron, as the open seat's row already is. A private profile
-// keeps plain text, so no link ever lands on a closed page.
+// 2026-10-19): the whole row is the link with a chevron, by a stretched link
+// on the name, so "Become one too" can sit in the same row as a button of its
+// own. A private profile keeps plain text, so no link ever lands on a closed
+// page.
 ---
-{/* ONE ROW (Hidde, 2026-11-03: "become one is weird text does it even need
-    text?", and the block took too much room above the trees): the empty seat
-    sits at the end of the named person's row as a circle alone, the way
-    Google Docs puts its dashed "add people" circle at the end of the avatars.
-    The words stay for screen readers and as the tooltip. */}
-<div class:list={["ambassador-bar", { "ambassador-bar-seat": iconSeat }]}>
 {people.length > 0 && (
   <ul class="ambassadors" aria-label={U.ambassadorsLabel}>
-    {people.map((p) => {
+    {people.map((p, i) => {
       const href = profileHref(p);
-      const Row = href ? "a" : "span";
+      const last = i === people.length - 1;
       return (
-        <li>
-          <Row class={href ? "ambassador ambassador-link" : "ambassador"} href={href ?? undefined}>
-            <span class="ambassador-avatar" aria-hidden="true">
-              {p.display_name!.trim().charAt(0).toUpperCase()}
-              <Fragment set:html={icon("seal-check", "fill", "ic ambassador-seal")} />
+        <li class="city-box-row city-box-row-tall ambassador">
+          <span class="ambassador-avatar" aria-hidden="true">
+            {p.display_name!.trim().charAt(0).toUpperCase()}
+            <Fragment set:html={icon("seal-check", "fill", "ic ambassador-seal")} />
+          </span>
+          <span class="ambassador-text">
+            {href ? <a class="ambassador-name ambassador-link" href={href}>{p.display_name}</a> : <span class="ambassador-name">{p.display_name}</span>}
+            <span class="ambassador-role">
+              {U.ambassadorOf(place ?? p.place_name)}
+              {last && canAsk && (
+                <span class="ambassador-open" data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>{" · "}<button type="button" class="ambassador-apply ambassador-more"><span class="amb-label" data-done={U.ambassadorApplied}>{U.ambassadorBecomeOneToo}</span></button></span>
+              )}
             </span>
-            <span class="ambassador-text">
-              <span class="ambassador-name">{p.display_name}</span>
-              <span class="ambassador-role">{U.ambassadorRole(place ?? p.place_name)}{p.affiliation ? ` · ${p.affiliation}` : ""}</span>
-            </span>
-            {href && <Fragment set:html={icon("caret-right", "bold", "ic ambassador-chev")} />}
-          </Row>
+          </span>
+          {href && <Fragment set:html={icon("caret-right", "bold", "ic city-box-chev")} />}
         </li>
       );
     })}
   </ul>
 )}
-{place && requestCity && (
-  <div class:list={["ambassadors ambassador-open", { "ambassador-open-after": people.length !== 0 && !iconSeat }]} data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
-    {iconSeat && (
-      <button type="button" class="ambassador-apply ambassador-act ambassador-act-icon" aria-label={openTitle} title={openTitle}>
-        <span class="ambassador-seat" aria-hidden="true"><Fragment set:html={icon("plus", "bold", "ic seat-plus")} /><Fragment set:html={icon("check", "bold", "ic seat-check")} /></span>
-        <span class="ambassador-role sr-only" data-done={U.ambassadorApplied}>{openTitle}</span>
-      </button>
-    )}
-    {!iconSeat && taken && (
-      <button type="button" class="ambassador-apply ambassador-act" aria-label={openTitle}>
-        <span class="ambassador-seat" aria-hidden="true"><Fragment set:html={icon("plus", "bold", "ic")} /></span>
-        <span class="ambassador-role" data-done={U.ambassadorApplied}>{openTitle}</span>
-      </button>
-    )}
-    {!iconSeat && !taken && (
-      <button type="button" class="ambassador ambassador-apply" aria-label={`${openTitle}. ${U.ambassadorApply}`}>
-        <span class="ambassador-avatar ambassador-avatar-open" aria-hidden="true">
-          <Fragment set:html={icon("seal-check", "bold", "ic")} />
-        </span>
-        <span class="ambassador-text">
-          <span class="ambassador-name">{openTitle}</span>
-          <span class="ambassador-role" data-done={U.ambassadorApplied}>{U.ambassadorWantedLine}</span>
-        </span>
-        <Fragment set:html={icon("caret-right", "bold", "ic ambassador-chev")} />
-      </button>
-    )}
+{canAsk && people.length === 0 && (
+  <div class="ambassador-open" data-city={requestCity} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
+    <button type="button" class="city-box-row ambassador-apply" aria-label={askLabel}>
+      <Fragment set:html={icon("seal-check", "bold", "ic city-box-ic")} />
+      <span class="city-box-label amb-label" data-done={U.ambassadorApplied}>{askLabel}</span>
+      <Fragment set:html={icon("caret-right", "bold", "ic city-box-chev")} />
+    </button>
   </div>
 )}
-</div>
 {place && requestCity && (
   <Sheet lang={lang} class="amb-dialog" id="amb-dialog" aria-labelledby="amb-title">
     {/* THE ONE SHEET (components/Sheet.astro, 2026-10-10): a sheet from
@@ -164,11 +149,11 @@ const iconSeat = !!(place && requestCity && people.length > 0);
     var C = window.atCollection;
     if (!box || !C) return;
     var btn = box.querySelector('.ambassador-apply');
-    var line = box.querySelector('.ambassador-role');
+    var line = box.querySelector('.amb-label');
     var first = line.textContent;
     var city = box.getAttribute('data-city');
     var SB = box.getAttribute('data-sb'), KEY = box.getAttribute('data-key');
-    function done() { line.textContent = line.getAttribute('data-done'); if (btn.title) { btn.title = line.textContent; btn.setAttribute('aria-label', line.textContent); } btn.disabled = true; box.classList.add('ambassador-asked'); }
+    function done() { line.textContent = line.getAttribute('data-done'); if (btn.hasAttribute('aria-label')) btn.setAttribute('aria-label', line.textContent); btn.disabled = true; box.classList.add('ambassador-asked'); }
     function headers(s, json) {
       var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
       if (json) { h['Content-Type'] = 'application/json'; h['Prefer'] = 'return=minimal'; }
@@ -248,78 +233,11 @@ const iconSeat = !!(place && requestCity && people.length > 0);
       }).catch(function() { send.disabled = false; });
     });
     document.addEventListener('at:signedout', function() {
-      line.textContent = first; if (btn.title) { btn.title = first; btn.setAttribute('aria-label', first); } btn.disabled = false; box.classList.remove('ambassador-asked');
+      line.textContent = first; if (btn.hasAttribute('aria-label')) btn.setAttribute('aria-label', first); btn.disabled = false; box.classList.remove('ambassador-asked');
     });
   });
   </script>
 )}
 
-<style>
-  .ambassadors { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-  .ambassador { display: flex; align-items: center; gap: 10px; max-width: 100%; }
-  .ambassador-avatar {
-    position: relative; flex: none; width: 32px; height: 32px; border-radius: 50%;
-    display: grid; place-items: center;
-    background: var(--moss-light); color: var(--moss);
-    font-size: 14px; font-weight: 700; line-height: 1;
-  }
-  .ambassador-avatar :global(.ambassador-seal) {
-    position: absolute; right: -3px; bottom: -3px; width: 15px; height: 15px;
-    fill: var(--moss); background: var(--cream); border-radius: 50%;
-  }
-  .ambassador-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
-  .ambassador-name { font-size: 14px; font-weight: 700; color: var(--ink); }
-  .ambassador-role { font-size: 12px; color: var(--ink-mid); }
-  /* The open seat is ONE tappable row (Hidde, 2026-10-04: "just make the
-     whole thing clickable instead of adding a huge button"): the person row
-     above with a chevron, as an iOS list row or Google Maps' "Join Local
-     Guides" row reads. Once asked, the chevron goes and the grey line says
-     thanks. */
-  .ambassador-apply { width: 100%; padding: 6px 0; border: 0; background: none;
-    font: inherit; text-align: left; cursor: pointer; color: inherit; min-height: 44px; }
-  @media (hover: hover) { .ambassador-apply:not(:disabled):hover .ambassador-name { text-decoration: underline; } }
-  .ambassador-apply:disabled { cursor: default; }
-  .ambassador-apply .ambassador-text { flex: 1; }
-  .ambassador-chev { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
-  .ambassador-asked .ambassador-chev { display: none; }
-  .ambassador-apply :global(.ambassador-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
-  .ambassador-asked :global(.ambassador-chev) { display: none; }
-  /* The named row as a link (2026-10-19): the open seat's row, same chevron. */
-  .ambassador-link { min-height: 44px; text-decoration: none; color: inherit; }
-  .ambassador-link .ambassador-text { flex: 1; }
-  .ambassador-link :global(.ambassador-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
-  @media (hover: hover) { .ambassador-link:hover .ambassador-name { text-decoration: underline; } }
-  /* Under a named ambassador: a thin rule, then the quiet action line,
-     SECOND IN RANK to the person (Hidde, 2026-10-27: "in hierarchy moet dat
-     duidelijk de tweede zijn", "niet groen"). Atlas Obscura's "Make an Edit"
-     under its contributors, at the size and grey of the role line. */
-  .ambassador-open-after { margin-top: 8px; }
-  /* THE EMPTY SEAT (Hidde, 2026-10-31, mockup B): a 22px dashed circle with a
-     plus in the avatar column, under the person, as Slack and Google Docs draw
-     "add someone"; smaller than the 32px avatar, so the open seat stays second
-     to the person. No rule: the empty circle says it is the next seat. Grey
-     12px text under the name column, as the role line. */
-  .ambassador-act { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px;
-    padding: 0; border: 0; background: none; font: inherit; text-align: left;
-    cursor: pointer; color: inherit; }
-  .ambassador-act .ambassador-role { line-height: 16px; }
-  .ambassador-seat { flex: none; width: 32px; display: grid; place-items: center; }
-  .ambassador-seat::before { content: ""; grid-area: 1 / 1; width: 22px; height: 22px; border-radius: 50%;
-    border: 1.5px dashed var(--ink-mid); box-sizing: border-box; opacity: .8; }
-  .ambassador-seat :global(.ic) { grid-area: 1 / 1; width: 11px; height: 11px; fill: var(--ink-mid); }  @media (hover: hover) { .ambassador-act:not(:disabled):hover .ambassador-role { text-decoration: underline; } }
-  .ambassador-act:disabled { cursor: default; }
-  /* One row: the named person and, at its end, the empty seat alone. */
-  .ambassador-bar-seat { display: flex; align-items: center; gap: 8px; margin-top: 1rem; }
-  .ambassador-bar-seat .ambassadors { margin: 0; flex: 1; min-width: 0; }
-  .ambassador-bar-seat .ambassador-open { flex: none; }
-  .ambassador-act-icon { width: 44px; height: 44px; min-height: 44px; justify-content: center; }
-  .ambassador-act-icon .ambassador-seat { width: 44px; }
-  .ambassador-act-icon .ambassador-seat::before { width: 28px; height: 28px; }
-  .ambassador-act-icon .ambassador-seat :global(.ic) { width: 13px; height: 13px; }
-  .ambassador-act-icon .ambassador-seat :global(.seat-check) { display: none; }
-  .ambassador-asked .ambassador-act-icon .ambassador-seat :global(.seat-plus) { display: none; }
-  .ambassador-asked .ambassador-act-icon .ambassador-seat :global(.seat-check) { display: block; }
-  @media (hover: hover) { .ambassador-act-icon:not(:disabled):hover .ambassador-seat::before { border-color: var(--ink); opacity: 1; } }
-  .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
-  .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }
-</style>
+{/* The rows' numbers live in public/assets/style.css under .city-box, shared
+    with the Plus row (PlusAsk.astro), so the two rows of the box cannot drift. */}

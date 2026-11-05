@@ -92,6 +92,9 @@ export const SHEET_JS = `
 
   // --- dragging ------------------------------------------------------------
   var dragging = false, startY = 0, startOff = 0, lastY = 0, lastT = 0, vel = 0;
+  // A touch that starts on the Highlights shelf (direction C, 2026-11-05) may
+  // be a sideways scroll of the shelf: the first few pixels decide which.
+  var startX = 0, onShelf = false;
 
   function onDown(e) {
     if (!mq.matches) return;
@@ -100,6 +103,8 @@ export const SHEET_JS = `
     if (e.target.closest('.sheet-body') && body.scrollTop > 0) return;
     dragging = true;
     startY = lastY = e.touches ? e.touches[0].clientY : e.clientY;
+    startX = e.touches ? e.touches[0].clientX : e.clientX;
+    onShelf = !!(e.target.closest && e.target.closest('.tree-hl-list'));
     startOff = offsetFor(at);
     lastT = Date.now();
     vel = 0;
@@ -110,6 +115,12 @@ export const SHEET_JS = `
     if (!dragging) return;
     var y = e.touches ? e.touches[0].clientY : e.clientY;
     var dy = y - startY;
+    if (onShelf) {
+      var dx = (e.touches ? e.touches[0].clientX : e.clientX) - startX;
+      if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
+      if (Math.abs(dx) > Math.abs(dy)) { dragging = false; return; }
+      onShelf = false;
+    }
     var off = Math.max(0, Math.min(offsetFor('peek'), startOff + dy));
     // An upward pull from a body scrolled to the top should expand the sheet
     // rather than rubber-band, so the list feels like one continuous surface.
@@ -175,7 +186,8 @@ export const SHEET_JS = `
   if (intro) {
     intro.addEventListener('click', function(e) {
       if (intro.classList.contains('is-open')) return;
-      if (e.target.closest('a, .ambassadors')) return;
+      // The white box under it (ambassador, Plus) is its own pair of rows.
+      if (e.target.closest('a, .city-box')) return;
       intro.classList.add('is-open');
     });
   }

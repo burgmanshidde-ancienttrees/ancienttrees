@@ -1,15 +1,41 @@
-// The ambassador row on a place: who looks after it, and the open seat.
+// The place's white box: who looks after it, and the Plus question.
 //
-// It lived in PlaceMapPage.swift until that page was set aside on 2026-11-04
-// (every city and country is the Map tab now); the map's place header is the
-// one that draws it.
+// DIRECTION C (Hidde, 2026-11-05, "1b, link"): under the place's name one slim
+// white box, the way Google Maps and komoot keep a place's people and asks in
+// one block. Its first row is the ambassador: the named person, with a green
+// "Become one too" at the end of their line, or, with nobody named, "Become the
+// <place> ambassador". Its second row is "Help create Ancient Trees Plus". No
+// affiliation in the line (Hidde: "leaving out quercus lisboa is good"). The
+// website draws the same box (AmbassadorLine.astro, PlusAsk.astro).
+//
+// Spacing copied from the sheet's other boxes: radius 14, a hairline border,
+// rows 46 tall (58 with an avatar), 14 inside the edges.
 
 import SwiftUI
 
-/// Who looks after a city, komoot's person row, above its trees: the named
-/// ambassador (their profile opens when it is public) and the empty seat at the
-/// end of the row, or the open seat alone. One view for the city page and the
-/// map's place header (2026-11-04), so the two can never draw it differently.
+struct PlaceAsksBox: View {
+    let slug: String
+    let title: String
+    let catalogue: Catalogue
+
+    var body: some View {
+        VStack(spacing: 0) {
+            PlaceAmbassadors(slug: slug, title: title, catalogue: catalogue)
+            Rectangle().fill(Brand.hairline).frame(height: 1)
+            PlusRow(city: title)
+        }
+        .background(Brand.surface, in: .rect(cornerRadius: 14))
+        .overlay {
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .strokeBorder(Brand.hairline, lineWidth: 1)
+        }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("place-asks")
+    }
+}
+
+/// The ambassador row(s) of the box. One view for every place, so the map's
+/// place header can never draw it two ways.
 struct PlaceAmbassadors: View {
     let slug: String
     let title: String
@@ -18,41 +44,68 @@ struct PlaceAmbassadors: View {
 
     var body: some View {
         let named = catalogue.facets.ambassadors(city: slug)
-        // ONE ROW (Hidde, 2026-11-03): the empty seat sits at the end of the
-        // named person's row, the circle alone. As AmbassadorLine.astro.
-        HStack(spacing: 8) {
+        if named.isEmpty {
+            AmbassadorWantedRow(place: title, seated: catalogue.facets.seated(city: slug), look: .slim)
+        } else {
+            VStack(spacing: 0) {
+                ForEach(Array(named.enumerated()), id: \.offset) { i, a in
+                    if i > 0 { Rectangle().fill(Brand.hairline).frame(height: 1) }
+                    personRow(a.name, profile: a.profile, last: i == named.count - 1)
+                }
+            }
+        }
+    }
+
+    /// The person: initial with the badge, the name, and under it "<place>
+    /// ambassador · Become one too". The row opens their profile while it is
+    /// public (2026-10-19); the green words open the ask, their own tap.
+    @ViewBuilder private func personRow(_ name: String, profile: String?, last: Bool) -> some View {
+        let row = HStack(spacing: 10) {
+            Text(String(name.trimmingCharacters(in: .whitespaces).prefix(1)).uppercased())
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 30, height: 30)
+                .background(Brand.mossTint, in: .circle)
+                .overlay(alignment: .bottomTrailing) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(Brand.moss)
+                        .background(Brand.surface, in: .circle)
+                        .offset(x: 3, y: 3)
+                }
+                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 0) {
-                ForEach(named, id: \.self) { a in
-                    // The row opens the person's profile while it is public,
-                    // with a chevron; otherwise it stays a byline (2026-10-19).
-                    if let id = a.profile {
-                        // A tap, not a Button: the sheet header is a handle
-                        // (BottomSheet sheetTap, 2026-11-05).
-                        HStack {
-                            AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
-                            Spacer(minLength: 8)
-                            Image(systemName: "chevron.right")
-                                .font(.caption.weight(.semibold)).foregroundStyle(Brand.inkSoft)
-                        }
-                        .frame(minHeight: 44)
-                        .sheetTap { navigator.push = .person(id) }
-                        .accessibilityIdentifier("ambassador-profile")
-                    } else {
-                        AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
+                Text(name)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(Brand.ink)
+                HStack(spacing: 0) {
+                    Text(last ? "\(title) ambassador · " : "\(title) ambassador")
+                        .font(.system(size: 12))
+                        .foregroundStyle(Brand.inkSoft)
+                    if last {
+                        AmbassadorWantedRow(place: title, seated: true, look: .link)
                     }
                 }
             }
-            // The names fill the row, so the empty seat stands at its right end
-            // whether or not the person has a profile (Hidde, 2026-11-04, Lisbon).
-            .frame(maxWidth: .infinity, alignment: .leading)
-            if !named.isEmpty {
-                AmbassadorWantedRow(place: title, seated: true, iconOnly: true)
+            Spacer(minLength: 8)
+            if profile != nil {
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(Brand.inkSoft.opacity(0.6))
             }
         }
-        // The open seat alone where nobody is named; a place somebody already
-        // looks after keeps the row, asking for "an" ambassador (2026-10-27).
-        if named.isEmpty {
-            AmbassadorWantedRow(place: title, seated: catalogue.facets.seated(city: slug))
+        .padding(.horizontal, 14)
+        .frame(minHeight: 58)
+
+        if let id = profile {
+            // A tap, not a Button: the box rides the sheet (sheetTap). The
+            // "Become one too" inside keeps its own tap, which wins.
+            row.contentShape(.rect)
+                .modifier(SheetStillTap(enabled: true) { navigator.push = .person(id) })
+                .accessibilityAction(named: Text("Open \(name)'s profile")) { navigator.push = .person(id) }
+                .accessibilityIdentifier("ambassador-profile")
+        } else {
+            row.accessibilityIdentifier("ambassador-row")
         }
     }
 }

@@ -35,8 +35,13 @@ interface Props {
    *  is what the meta/story indent lines up with, so no number means no indent. */
   index?: number;
   /** "full" gives the whole story, and belongs only on the tree's own city
-   *  page. "compact" gives its first sentence. */
-  variant?: "full" | "compact";
+   *  page. "compact" gives its first sentence. "row" is the city page's list
+   *  of every tree (direction C, Hidde, 2026-11-05): a 64px square thumbnail,
+   *  name, meta, two lines of story on a desktop and the save at the end; it
+   *  keeps the whole story in the HTML, so it too belongs only on the tree's
+   *  own city page. "highlight" is a card of the city page's Highlights
+   *  (lib/highlights.ts): photograph, save on it, name and meta, no story. */
+  variant?: "full" | "compact" | "row" | "highlight";
   /** Overrides the text entirely, for a collection's own line about the tree. */
   note?: string;
   /** The city page heads its cards with h2; pages that group by city already
@@ -108,7 +113,7 @@ function firstSentence(s: string): string {
   return out.length > 200 ? out.slice(0, 197).trimEnd() + "..." : out;
 }
 
-const text = note ?? (variant === "full" ? story : firstSentence(story));
+const text = note ?? (variant === "full" || variant === "row" ? story : variant === "highlight" ? "" : firstSentence(story));
 // ONE SHAPE ON EVERY LIST (Hidde, 2026-10-04, choosing variant 3 of three
 // mockups: "versie 3 ziet er goed uit ... verwerk gelijk consistent over alle
 // lijsten"). AllTrails' list card: the photograph full width at the top with
@@ -167,9 +172,46 @@ const metaHtml = metaParts.map((s) => esc(s)).join(" &middot; ");
 // empty frame: it still says what kind of tree it is (2026-11-03, replacing the
 // photo-less row of 2026-10-04 so web and app draw the same card).
 const tileIcon = hasPhoto ? "" : speciesIcon(tree);
+// The row's thumbnail without a photograph: the species silhouette in moss on
+// the pale tint, no sentence (direction C, 2026-11-05).
+const rowIcon = variant === "row" && !hasPhoto ? speciesIcon(tree) : "";
+const isRow = variant === "row";
+const photoUrl = photo?.url ?? "";
+// A HIGHLIGHT (direction C, Hidde, 2026-11-05): the photograph with the save
+// on it, then the name and the meta line. Not a .tree-card and no id: the map
+// script pairs every .tree-card with its pin by position and #tree-N, and this
+// tree's own row further down the page is that card. The whole card is one
+// link, as every card is. A tree without a photograph is no highlight
+// (lib/highlights.ts), so this variant draws nothing for one.
+const isHighlight = variant === "highlight";
+// The row's name keeps the heading level the full card had.
+const Heading = headingLevel === 2 ? "h2" : "h3";
 ---
+{isHighlight && hasPhoto && (
+  <article class="tree-hl tree-card-link" data-tree-id={tree.id}>
+    <div class="tree-hl-photo">
+      <img {...imgSrcset(photoUrl, [250, 500], "(max-width: 800px) 220px, 200px")} alt={name} loading="lazy" />
+      <SaveHeart treeId={tree.id} treeName={name} look="card" labelSave={L.save} labelSaved={L.saved}
+                 treeUrl={href} photo={thumbUrl(photoUrl, 500)}
+                 meta={metaParts.join(" \u00b7 ") || undefined} />
+      {(chip || canTick) && (
+        <div class="tag-row">
+          {chip && <Fragment set:html={chip} />}
+          {canTick && <span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{U.seenChip}</span></span>}
+        </div>
+      )}
+    </div>
+    <p class="tree-name tree-hl-name"><a href={href}>{name}</a></p>
+    {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
+    {creditLine && (creditLink
+      ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
+      : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
+    )}
+  </article>
+)}
+{!isHighlight && (
 <article
-  class:list={["tree-card", "tree-card-link", { "tree-card-nonum": true, "tree-card-hastile": !(photo && photo.url) }]}
+  class:list={["tree-card", "tree-card-link", { "tree-card-nonum": true, "tree-card-hastile": !(photo && photo.url), "tree-card-row": isRow }]}
   id={index === undefined ? undefined : `tree-${index}`}
   data-tree-id={tree.id}
 >
@@ -207,6 +249,37 @@ const tileIcon = hasPhoto ? "" : speciesIcon(tree);
       )}
     </div>
   )}
+  {/* THE ROW (direction C, 2026-11-05). The photograph block above stays in
+      the markup, hidden in the list: a tapped pin's card is a copy of this
+      article (map-card-js.ts), and it keeps showing the one card every map
+      shows. The list itself draws the thumbnail, the text and the save. */}
+  {isRow && (
+    <div class:list={["tree-row-thumb", { "tree-row-thumb-none": !hasPhoto }]} aria-hidden="true">
+      {hasPhoto
+        ? <img {...imgSrcset(photoUrl, [250], "64px")} alt="" loading="lazy" />
+        : <svg viewBox="0 0 40 40"><Fragment set:html={rowIcon} /></svg>}
+    </div>
+  )}
+  {isRow ? (
+    <div class="tree-row-text">
+      <div class="tree-card-top">
+        <Heading class="tree-name">
+          <a href={href}>{name}</a>
+          {tree.label && <span class="tree-label">{L.treeLabels[tree.label] ?? tree.label}</span>}
+        </Heading>
+      </div>
+      {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
+      {text && <p class="tree-story" set:html={latinHtml(text)} />}
+      {creditLine && (creditLink
+        ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
+        : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
+      )}
+      {canTick && (
+        <div class="tag-row tree-row-tags"><span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{U.seenChip}</span></span></div>
+      )}
+    </div>
+  ) : (
+  <Fragment>
   <div class="tree-card-top">
     {/* NO NUMBER (Hidde, 2026-10-05: "zijn die nummers echt nodig?"). The pins
         carry none, so the number pointed at nothing and cost the title its
@@ -236,4 +309,15 @@ const tileIcon = hasPhoto ? "" : speciesIcon(tree);
     ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
     : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
   )}
+  </Fragment>
+  )}
+  {isRow && (
+    <div class="tree-row-save">
+      <SaveHeart treeId={tree.id} treeName={name} look="card" labelSave={L.save} labelSaved={L.saved}
+                 treeUrl={href}
+                 photo={photo?.url ? thumbUrl(photo.url, 500) : undefined}
+                 meta={metaParts.join(" \u00b7 ") || undefined} />
+    </div>
+  )}
 </article>
+)}

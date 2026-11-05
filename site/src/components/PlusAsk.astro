@@ -17,9 +17,9 @@
  *   3. "Tell me": the only step that asks for an account, because it is the
  *      only one we answer. Signed out it opens the sign-in sheet and the step
  *      comes back after it, as the ambassador seat does.
- * The row copies the ambassador row (avatar circle, name, one line, chevron),
- * and the sheet is THE ONE SHEET (Sheet.astro). The app draws the same from
- * Screens/PlusAsk.swift.
+ * The row is one line of the city page's white box, under the ambassador
+ * (.city-box in style.css), and the sheet is THE ONE SHEET (Sheet.astro).
+ * The app draws the same from Screens/PlusAsk.swift.
  *
  * Where answers go: supabase/plus-answers.sql. plus_answers is anonymous (no
  * account, no session, no IP), plus_waitlist holds the account ids that
@@ -43,13 +43,12 @@ const OPTS = ["walks", "offline", "season", "log"] as const;
 ---
 {row && (
 <div class="plus-bar">
-  <button type="button" class="plus-row" data-from="city">
-    <span class="plus-avatar" aria-hidden="true"><Fragment set:html={icon("sparkle", "fill")} /></span>
-    <span class="plus-text">
-      <span class="plus-name">{U.plusRowTitle}</span>
-      <span class="plus-line">{U.plusRowLine}</span>
-    </span>
-    <Fragment set:html={icon("caret-right", "bold", "ic plus-chev")} />
+  {/* ONE LINE in the city page's white box, under the ambassador (direction
+      C, Hidde, 2026-11-05); the box's numbers are .city-box in style.css. */}
+  <button type="button" class="plus-row city-box-row" data-from="city">
+    <Fragment set:html={icon("sparkle", "fill", "ic city-box-ic")} />
+    <span class="city-box-label">{U.plusRow}</span>
+    <Fragment set:html={icon("caret-right", "bold", "ic city-box-chev")} />
   </button>
 </div>
 )}
@@ -211,20 +210,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style>
-  /* The ambassador row's numbers (AmbassadorLine.astro): 32px avatar, 10px
-     gap, 14px name, 12px line, 16px chevron, 44px tall. */
-  .plus-bar { margin-top: 8px; }
-  .plus-row { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px;
-    padding: 0; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; color: inherit; }
-  .plus-avatar { flex: none; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
-    background: var(--moss-light); color: var(--moss); }
-  .plus-avatar :global(svg) { width: 16px; height: 16px; fill: var(--moss); }
-  .plus-text { flex: 1; display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
-  .plus-name { font-size: 14px; font-weight: 700; color: var(--ink); }
-  .plus-line { font-size: 12px; color: var(--ink-mid); }
-  .plus-row :global(.plus-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
-  @media (hover: hover) { .plus-row:hover .plus-name { text-decoration: underline; } }
-
   /* SPACING (Hidde, 2026-11-05: "sommige dingen staan te dicht op elkaar").
      The sheet's own rules (dialog.at-sheet .at-sheet-p, .at-sheet-h) outrank a
      scoped class, which left 4px over the field and 8 under the choice title;

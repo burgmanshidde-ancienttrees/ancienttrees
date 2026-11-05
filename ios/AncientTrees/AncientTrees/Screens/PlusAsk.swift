@@ -21,26 +21,24 @@ struct PlusRow: View {
     var body: some View {
         // A tap, not a Button: this row sits in the map's sheet header, the
         // handle a thumb raises the sheet by (BottomSheet sheetTap).
+        // ONE LINE (Hidde, 2026-11-05, direction C): the second row of the
+        // place's white box, under the ambassador; the website's PlusAsk.astro
+        // draws the same line.
         HStack(spacing: 10) {
                 Image(systemName: "sparkles")
-                    .font(.system(size: 14, weight: .semibold))
+                    .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.moss)
-                    .frame(width: 32, height: 32)
-                    .background(Brand.mossTint, in: .circle)
-                VStack(alignment: .leading, spacing: 1) {
-                    Text("Ancient Trees Plus")
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(Brand.ink)
-                    Text("Help us choose what comes next")
-                        .font(.system(size: 12))
-                        .foregroundStyle(Brand.inkSoft)
-                }
+                    .frame(width: 24)
+                Text("Help create Ancient Trees Plus")
+                    .font(.system(size: 15, weight: .medium))
+                    .foregroundStyle(Brand.ink)
                 Spacer(minLength: 8)
                 Image(systemName: "chevron.right")
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(Brand.inkSoft.opacity(0.6))
             }
-            .frame(minHeight: 44)
+            .padding(.horizontal, 14)
+            .frame(minHeight: 46)
             .sheetTap {
                 Measure.event("plus-open", ["from": "city"])
                 asking = true

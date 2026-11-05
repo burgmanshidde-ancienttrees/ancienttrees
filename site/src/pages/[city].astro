@@ -23,6 +23,7 @@ import { arm } from "../lib/copy-test";
 import { submitLink, ageToken } from "../lib/tree-copy";
 import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
+import { isHighlight } from "../lib/highlights";
 import { splitForPage } from "../lib/day-trips";
 import ShareButton from "../components/ShareButton.astro";
 import PlaceRow from "../components/PlaceRow.astro";
@@ -98,6 +99,10 @@ const trees = renderableTrees(city);
 const withWalks = hasWalksPage(city);
 // The city's own trees first, then "A day trip away" (lib/day-trips.ts).
 const split = splitForPage(city.data.city, trees as any);
+// DIRECTION C (Hidde, 2026-11-05): the photographed trees first as
+// Highlights, then every tree as a row. One rule, lib/highlights.ts, which
+// the app reads from the feed too.
+const highlights = trees.filter(isHighlight);
 // Contract B v1.18: a one-tree place has no question page to link to.
 const cityHasQuestion = hasQuestionPage(city);
 const canonical = `${BASE_URL}/${cslug}`;
@@ -299,27 +304,48 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="city-intro">
         <p class="lede">{intro}</p>
         <button type="button" class="city-intro-more">Read more</button>
-        <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} seated={placeHasAmbassador(city.id)} />
-        <PlusAsk city={cityName} />
+        {/* ONE SLIM WHITE BOX (direction C, Hidde, 2026-11-05): the ambassador
+            row, then the Plus row. .city-box in style.css. */}
+        <div class="city-box">
+          <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} seated={placeHasAmbassador(city.id)} />
+          <PlusAsk city={cityName} />
+        </div>
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <a class="passport-save" href="/account#saved">{ui("en").seeCollection}</a>
         </p>
       </div>
-      {split.inTown.map((t) => (
-        <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
-                  variant="full" headingLevel={2} canTick />
-      ))}
+      {highlights.length > 0 && (
+        <section class="city-highlights">
+          <h2 class="city-section-head">{ui("en").highlights}</h2>
+          <div class="tree-hl-list">
+            {highlights.map((t) => (
+              <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} variant="highlight" canTick />
+            ))}
+          </div>
+        </section>
+      )}
+      {/* EVERY TREE as a row, highlights included again. The rows are the
+          .tree-card list the map script pairs with its pins, in pin order. */}
+      <h2 class="city-section-head">{ui("en").allTrees(split.inTown.length)}</h2>
+      <div class="tree-rows">
+        {split.inTown.map((t) => (
+          <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
+                    variant="row" headingLevel={2} canTick />
+        ))}
+      </div>
       {split.away.length > 0 && (
         <section class="day-trips" id="day-trips">
           <h2 class="day-trips-head">{ui("en").dayTripAway}</h2>
           {split.away.map((g) => (
             <Fragment>
               <p class="day-trip-where"><strong>{g.trip.place}</strong>{ui("en").dayTripWhere(g.trip.place, g.trip.km, g.trip.dir).slice(g.trip.place.length)}</p>
-              {g.trees.map((t) => (
-                <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
-                          variant="full" headingLevel={3} canTick />
-              ))}
+              <div class="tree-rows">
+                {g.trees.map((t) => (
+                  <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
+                            variant="row" headingLevel={3} canTick />
+                ))}
+              </div>
             </Fragment>
           ))}
         </section>

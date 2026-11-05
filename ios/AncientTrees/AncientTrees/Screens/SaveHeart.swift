@@ -28,6 +28,7 @@ struct SaveHeart: View {
     enum Look {
         case onPhoto     // over a card's picture, white on a dark scrim
         case inBar       // in the tree page's action bar, a bordered circle
+        case plain       // at the end of a list row, the bare glyph (direction C)
     }
 
     let tree: Tree
@@ -88,6 +89,12 @@ struct SaveHeart: View {
                 // the photograph; the TAP TARGET is 44, which is Apple's
                 // minimum and was being missed by nine points on every card in
                 // the app. Measured by scripts/appfit.py, not noticed by eye.
+                .frame(width: 44, height: 44)
+                .contentShape(.rect)
+        case .plain:
+            Image(systemName: isSaved ? "bookmark.fill" : "bookmark")
+                .font(.system(size: 17, weight: .medium))
+                .foregroundStyle(isSaved ? Brand.moss : Brand.inkSoft)
                 .frame(width: 44, height: 44)
                 .contentShape(.rect)
         case .inBar:

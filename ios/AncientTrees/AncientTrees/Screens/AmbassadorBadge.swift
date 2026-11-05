@@ -231,6 +231,12 @@ struct AmbassadorWantedRow: View {
     /// dashed circle with a plus, as Google Docs ends its avatars with "add
     /// people". The words stay for VoiceOver. Website: AmbassadorLine.astro.
     var iconOnly = false
+    /// How it is drawn in the place's white box (direction C, Hidde,
+    /// 2026-11-05): `.slim` is the box's first row where nobody is named,
+    /// `.link` the green "Become one too" under a named ambassador ("1b,
+    /// link"). `.row` is every other place's row, as before.
+    enum Look { case row, slim, link }
+    var look: Look = .row
 
     @Environment(Account.self) private var account
     @State private var asked = false
@@ -341,11 +347,48 @@ struct AmbassadorWantedRow: View {
         .accessibilityLabel(asked ? "Request sent." : "Become an ambassador")
     }
 
+    /// The box's first row: one line, the seal, the ask, a chevron.
+    private var slimRow: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "checkmark.seal")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(Brand.moss)
+                .frame(width: 24)
+            Text(asked ? "Request sent." : (seated ? "Become a \(place) ambassador" : "Become the \(place) ambassador"))
+                .font(.system(size: 15, weight: .medium))
+                .foregroundStyle(Brand.ink)
+                .lineLimit(2)
+            Spacer(minLength: 8)
+            if !asked {
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(Brand.inkSoft.opacity(0.6))
+            }
+        }
+        .padding(.horizontal, 14)
+        .frame(minHeight: 46)
+        .contentShape(.rect)
+    }
+
+    /// The words at the end of the named ambassador's line.
+    private var linkText: some View {
+        Text(asked ? "Request sent" : "Become one too")
+            .font(.system(size: 12, weight: .semibold))
+            .foregroundStyle(asked ? Brand.inkSoft : Brand.moss)
+            .padding(.vertical, 6)
+            .contentShape(.rect)
+    }
+
     private var row: some View {
         // A tap, not a Button: the seat sits in the map's sheet header, which
         // a thumb raises the sheet by (BottomSheet sheetTap, 2026-11-05).
         Group {
-            if iconOnly { seatIcon } else if seated { seatedLine } else { openRow }
+            switch look {
+            case .slim: slimRow
+            case .link: linkText
+            case .row:
+                if iconOnly { seatIcon } else if seated { seatedLine } else { openRow }
+            }
         }
         .sheetTap(enabled: !(asked || sending), tap)
         .accessibilityHint(asked ? "" : (seated ? "Become an ambassador" : "Become the ambassador"))

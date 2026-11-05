@@ -44,6 +44,9 @@ export function ageShort(tree: any, U?: Pick<UIStrings, "ageYears">, lang = "en"
   const c = t.indexOf(","); if (c > 0) t = t.slice(0, c);
   const s = t.indexOf(";"); if (s > 0) t = t.slice(0, s);
   t = t.trim();
-  if (!t || NO_INFO.test(t) || t.length > 24) return null;
+  // A clause with no number says nothing on a card ("planting date never
+  // recorded" sat in Barcelona's list; Hidde, 2026-11-05): the age is a number
+  // or it is left out, and the tree page keeps the sentence.
+  if (!t || NO_INFO.test(t) || t.length > 24 || !/\d/.test(t)) return null;
   return t;
 }

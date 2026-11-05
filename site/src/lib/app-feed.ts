@@ -29,6 +29,7 @@ import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditNam
 import { savesOf } from "./saves";
 import { BASE_URL } from "./schema";
 import { latinRanges } from "./latin";
+import { isHighlight } from "./highlights";
 
 /** The feed is read by an app on somebody's phone, which has no page to
  * resolve a relative path against. thumbUrl() returns "/photos/..." for the
@@ -130,6 +131,10 @@ export interface FeedTree {
   seasonal?: true;
   /** Drawn as a mini pin when the map is zoomed out (lib/map.ts miniPin). */
   mini?: true;
+  /** One of its place's Highlights, the shelf above the list of every tree
+   * (Hidde, 2026-11-05). The rule lives once in lib/highlights.ts, which the
+   * website's city page reads too; sent only when true. */
+  highlight?: true;
 }
 
 export interface FeedPhoto {
@@ -219,6 +224,9 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         ...(p?.url && isSeasonal(t, loc.latitude) ? { seasonal: true as const } : {}),
         // A mini pin when the map is zoomed out (lib/map.ts miniPin).
         ...(miniPin(t.id, Boolean(p?.url)) ? { mini: true as const } : {}),
+        // A Highlight of its place (lib/highlights.ts), the same answer the
+        // website's city page draws.
+        ...(isHighlight(t) ? { highlight: true as const } : {}),
       });
     }
   }

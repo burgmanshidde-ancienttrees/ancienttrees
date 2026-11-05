@@ -12,6 +12,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: city list redrawn, direction C, web and app (Hidde: "i like option c", "1b, link")
+
+- A city's list, under its name: one white box with the ambassador (named: "Lisbon ambassador · Become one too"; nobody: "Become the Barcelona ambassador") and "Help create Ancient Trees Plus", then **Highlights** (a sideways shelf on a phone, a two-column grid on desktop), then **All n trees** as compact rows with a 64 point square. A tree without a photograph is a pale square with its species, no longer a tall green block. The affiliation left the ambassador line.
+- Highlights are data: `highlight: true` in the feed from site/src/lib/highlights.ts (today: has a photograph; later a pick, with no client change).
+- Ages on cards are a number or nothing ("planting date never recorded" and the lone trailing dot are gone, lib/age-short.ts).
+- App: "Location off · Use my location" moved from under the search field to the sheet's edge, level with the locate arrow. A swipe that raises a sheet no longer opens the row under the finger (sheet drag clock).
+- Needs build 40 for the app. Web goes live with this deploy.
+
 ## 2026-11-05 session: the trim, no question pages and 47 of 111 translations unbuilt
 
 - **What changed in the product:** every `/<city>/oldest-tree` and its seven language twins (439 URLs, all noindexed since 10-01) now redirect to the city page, whose FAQ holds the same answer; the city and tree pages no longer link them (`QUESTION_PAGES_OFF`, site/src/lib/question-page.ts, one switch every route, link, sitemap and redirect reads). And of the 111 translated city overlays only the 64 pairs Google still showed 11-01 to 11-04 build (data/translations-kept.json, `overlayBuilt()` in i18n.ts); the other 47 stay on disk and their URLs redirect to English as the fallback pages have since 10-09. Hidde: "voor nu altijd bomen live gooien in de app en de website hard terug trimmen"; this reverses his 2026-10-01 call to keep every translation, said to him today. Bing loses the same pages.

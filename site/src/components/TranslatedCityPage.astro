@@ -10,6 +10,7 @@
 // component renders it; data/i18n/<lang>/<slug>.json supplies only text, and
 // ui(lang) supplies the chrome labels with English fallback per key.
 import TreeCard from "./TreeCard.astro";
+import { isHighlight } from "../lib/highlights";
 import { splitForPage } from "../lib/day-trips";
 import LanguagePicker from "./LanguagePicker.astro";
 import ShareButton from "./ShareButton.astro";
@@ -57,6 +58,9 @@ const withWalks = hasWalksPage(city);
 const leaf = (slug: string) => (fallback ? `/${cslug}/${slug}` : `/${lang}/${cslug}/${slug}`);
 const trees = renderableTrees(city);
 const split = splitForPage(city.data.city, trees as any);
+// Highlights first, then every tree as a row, as the English city page
+// (direction C, Hidde, 2026-11-05; lib/highlights.ts).
+const highlights = trees.filter(isHighlight);
 const tslugs = treeSlugsForCity(city);
 const selfUrl = `${BASE_URL}/${lang}/${cslug}`;
 // A fallback page is the English text on a second URL, so it points its
@@ -153,35 +157,56 @@ const cityHasQuestion = hasQuestionPage(city);
       <div class="city-intro">
         <p class="lede">{tr.intro}</p>
         <button type="button" class="city-intro-more">{U.readMore}</button>
-        <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={city.data.city} seated={placeHasAmbassador(cslug)} />
-        <PlusAsk lang={lang} city={city.data.city} />
+        <div class="city-box">
+          <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={city.data.city} seated={placeHasAmbassador(cslug)} />
+          <PlusAsk lang={lang} city={city.data.city} />
+        </div>
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <a class="passport-save" href="/account#saved">{U.seeCollection}</a>
         </p>
       </div>
-      {split.inTown.map((t) => {
-        const x = tr.trees[t.id];
-        return (
-          <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
-                    variant="full" headingLevel={2} lang={lang} canTick fallback={fallback}
-                    overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
-        );
-      })}
+      {highlights.length > 0 && (
+        <section class="city-highlights">
+          <h2 class="city-section-head">{U.highlights}</h2>
+          <div class="tree-hl-list">
+            {highlights.map((t) => {
+              const x = tr.trees[t.id];
+              return (
+                <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} variant="highlight" lang={lang} canTick fallback={fallback}
+                          overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
+              );
+            })}
+          </div>
+        </section>
+      )}
+      <h2 class="city-section-head">{U.allTrees(split.inTown.length)}</h2>
+      <div class="tree-rows">
+        {split.inTown.map((t) => {
+          const x = tr.trees[t.id];
+          return (
+            <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
+                      variant="row" headingLevel={2} lang={lang} canTick fallback={fallback}
+                      overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
+          );
+        })}
+      </div>
       {split.away.length > 0 && (
         <section class="day-trips" id="day-trips">
           <h2 class="day-trips-head">{U.dayTripAway}</h2>
           {split.away.map((g) => (
             <Fragment>
               <p class="day-trip-where"><strong>{g.trip.place}</strong>{U.dayTripWhere(g.trip.place, g.trip.km, g.trip.dir).slice(g.trip.place.length)}</p>
-              {g.trees.map((t) => {
-                const x = tr.trees[t.id];
-                return (
-                  <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
-                            variant="full" headingLevel={3} lang={lang} canTick fallback={fallback}
-                            overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
-                );
-              })}
+              <div class="tree-rows">
+                {g.trees.map((t) => {
+                  const x = tr.trees[t.id];
+                  return (
+                    <TreeCard tree={t} citySlug={cslug} treeSlug={tslugs[t.id]} index={trees.indexOf(t) + 1}
+                              variant="row" headingLevel={3} lang={lang} canTick fallback={fallback}
+                              overrides={{ name: x.name, species: x.species, age: x.age_estimate, story: x.story }} />
+                  );
+                })}
+              </div>
             </Fragment>
           ))}
         </section>

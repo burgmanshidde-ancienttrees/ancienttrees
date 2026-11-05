@@ -244,6 +244,13 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// 2026-11-03). Sent only when true; nil in an older snapshot, which then
     /// shows only the full pins far out.
     public var mini: Bool? = nil
+    /// One of the place's Highlights, the shelf above "All trees" on a city
+    /// (Hidde, 2026-11-05: "at the end hopefully all have a photograph but we
+    /// can pick highlights"). Decided on the website (lib/highlights.ts) and
+    /// sent only when true; an older snapshot without the field falls back to
+    /// "has a photograph", which is today's rule.
+    public var highlight: Bool? = nil
+    public var isHighlight: Bool { highlight ?? (photo != nil) }
     public struct DayTrip: Codable, Hashable, Sendable {
         public let place: String
         public let km: Int
@@ -262,6 +269,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case seasonKey = "season_key"
         case seasonal
         case mini
+        case highlight
         case access, story, url, precision, photo, photos, peak
         case recogniseRaw = "how_to_recognise"
         case paidEntryRaw = "paid_entry"

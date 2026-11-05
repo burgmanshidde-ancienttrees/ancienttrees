@@ -209,17 +209,20 @@ export interface UIStrings {
    *  photographed trees in a place you saved or collected. */
   peopleSuggested: string;
   peoplePhotographed: (n: number, place: string) => string;
-  /** The open seat, on every city page with no named ambassador (Hidde,
-   *  2026-10-04: "Tokyo is looking for an ambassador met een knop"). Name
-   *  line, one grey line, the button, and what the button says once sent. */
-  ambassadorWanted: (place: string) => string;
-  ambassadorWantedLine: string;
-  ambassadorApply: string;
+  /** The ambassador row in the city page's white box (direction C, Hidde,
+   *  2026-11-05). Nobody yet: one line that opens the request. Somebody looks
+   *  after the place but is not named: the same row asks for "a" second one.
+   *  A named person: their name, "{place} ambassador" under it and, on the
+   *  last person, "Become one too" as the link to the same request. The last
+   *  string is what the ask says once sent. */
+  ambassadorBecomeThe: (place: string) => string;
+  ambassadorBecomeA: (place: string) => string;
+  ambassadorOf: (place: string) => string;
+  ambassadorBecomeOneToo: string;
   ambassadorApplied: string;
   ambassadorAskTitle: (place: string) => string;
-  /** The open-seat row and sheet title where somebody already looks after
-   *  the place (Hidde, 2026-10-27: a second may still sign up). */
-  ambassadorJoin: string;
+  /** The sheet title where somebody already looks after the place (Hidde,
+   *  2026-10-27: a second may still sign up). */
   ambassadorJoinTitle: (place: string) => string;
   /** The list of a place's ambassadors, for a screen reader. */
   ambassadorsLabel: string;
@@ -236,7 +239,12 @@ export interface UIStrings {
    *  ambassador on every city page, then three steps in the one sheet. Nothing
    *  is sold; the answers are anonymous (supabase/plus-answers.sql). */
   plusRowTitle: string;
-  plusRowLine: string;
+  /** The Plus row itself, one line in the city page's white box (2026-11-05). */
+  plusRow: string;
+  /** The city page's two section heads (direction C, 2026-11-05): the
+   *  photographed trees first (lib/highlights.ts), then every tree. */
+  highlights: string;
+  allTrees: (n: number) => string;
   plusAskBody: string;
   plusIdeaPh: string;
   plusNext: string;
@@ -701,12 +709,12 @@ const EN: UIStrings = {
   ageYears: (n) => `${n} years`,
   seenChip: "Collected",
   seasonChip: { bloom: "In bloom", autumn: "Autumn colour", fruit: "In fruit", leaves: "Fresh leaves", catkins: "Catkins", winter: "Winter shape", peak: "In season" },
-  ambassadorWanted: (place) => `${place} is looking for an ambassador`,
-  ambassadorWantedLine: "Help us improve this list.",
-  ambassadorApply: "Become the ambassador",
+  ambassadorBecomeThe: (place) => `Become the ${place} ambassador`,
+  ambassadorBecomeA: (place) => `Become a ${place} ambassador`,
+  ambassadorOf: (place) => `${place} ambassador`,
+  ambassadorBecomeOneToo: "Become one too",
   ambassadorApplied: "Request sent.",
   ambassadorAskTitle: (place) => `Become the ambassador for ${place}`,
-  ambassadorJoin: "Become an ambassador",
   ambassadorJoinTitle: (place) => `Become an ambassador for ${place}`,
   ambassadorsLabel: "Ambassadors",
   ambassadorAskBody: "An ambassador helps us get the trees of this place right.",
@@ -718,7 +726,9 @@ const EN: UIStrings = {
   ambassadorWriteTo: (email) => `We will write to ${email}.`,
   ambassadorDone: "Done",
   plusRowTitle: "Ancient Trees Plus",
-  plusRowLine: "Help us choose what comes next",
+  plusRow: "Help create Ancient Trees Plus",
+  highlights: "Highlights",
+  allTrees: (n) => (n === 1 ? "1 tree" : `All ${n} trees`),
   plusAskBody: "We're working on Plus to make Ancient Trees a sustainable platform. What would you like it to do that it doesn't do yet?",
   plusIdeaPh: "I'd like to…",
   plusNext: "Next",
@@ -1321,12 +1331,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ageYears: (n) => `${n} años`,
     seenChip: "Coleccionado",
     seasonChip: { bloom: "En flor", autumn: "Color de otoño", fruit: "Con fruto", leaves: "Hojas nuevas", catkins: "Amentos", winter: "Silueta invernal", peak: "En temporada" },
-    ambassadorWanted: (place) => `Se busca quien cuide la lista de ${place}`,
-    ambassadorWantedLine: "Ayúdanos a mejorar esta lista.",
-    ambassadorApply: "Quiero hacerlo",
+    ambassadorBecomeThe: (place) => `Sé el embajador de ${place}`,
+    ambassadorBecomeA: (place) => `Hazte embajador de ${place}`,
+    ambassadorOf: (place) => `Embajador de ${place}`,
+    ambassadorBecomeOneToo: "Hazte tú también",
     ambassadorApplied: "Solicitud enviada.",
     ambassadorAskTitle: (place) => `¿Quieres cuidar la lista de ${place}?`,
-    ambassadorJoin: "Cuida la lista con nosotros",
     ambassadorJoinTitle: (place) => `¿Quieres cuidar la lista de ${place}?`,
     ambassadorsLabel: "Embajadores",
     ambassadorAskBody: "Un embajador nos ayuda a acertar con los \u00e1rboles de este lugar.",
@@ -1338,7 +1348,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorWriteTo: (email) => `Te escribiremos a ${email}.`,
     ambassadorDone: "Hecho",
     plusRowTitle: "Ancient Trees Plus",
-    plusRowLine: "Ayúdanos a elegir lo que viene",
+    plusRow: "Ayuda a crear Ancient Trees Plus",
+    highlights: "Destacados",
+    allTrees: (n) => (n === 1 ? "1 árbol" : `Los ${n} árboles`),
     plusAskBody: "Estamos preparando Plus para que Ancient Trees sea una plataforma sostenible. ¿Qué te gustaría que hiciera que todavía no hace?",
     plusIdeaPh: "Me gustaría…",
     plusNext: "Siguiente",
@@ -1678,12 +1690,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ageYears: (n) => `${n} anni`,
     seenChip: "Collezionato",
     seasonChip: { bloom: "In fiore", autumn: "Colori d'autunno", fruit: "Con frutti", leaves: "Foglie nuove", catkins: "Amenti", winter: "Sagoma invernale", peak: "Di stagione" },
-    ambassadorWanted: (place) => `Cerchiamo chi curi la lista di ${place}`,
-    ambassadorWantedLine: "Aiutaci a migliorare questa lista.",
-    ambassadorApply: "Mi candido",
+    ambassadorBecomeThe: (place) => `Diventa l’ambasciatore di ${place}`,
+    ambassadorBecomeA: (place) => `Diventa ambasciatore di ${place}`,
+    ambassadorOf: (place) => `Ambasciatore di ${place}`,
+    ambassadorBecomeOneToo: "Diventalo anche tu",
     ambassadorApplied: "Richiesta inviata.",
     ambassadorAskTitle: (place) => `Vuoi curare la lista di ${place}?`,
-    ambassadorJoin: "Cura la lista con noi",
     ambassadorJoinTitle: (place) => `Vuoi curare la lista di ${place}?`,
     ambassadorsLabel: "Ambasciatori",
     ambassadorAskBody: "Un ambasciatore ci aiuta a raccontare bene gli alberi di questo posto.",
@@ -1695,7 +1707,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorWriteTo: (email) => `Ti scriveremo a ${email}.`,
     ambassadorDone: "Fatto",
     plusRowTitle: "Ancient Trees Plus",
-    plusRowLine: "Aiutaci a scegliere cosa arriva dopo",
+    plusRow: "Aiutaci a creare Ancient Trees Plus",
+    highlights: "In evidenza",
+    allTrees: (n) => (n === 1 ? "1 albero" : `Tutti i ${n} alberi`),
     plusAskBody: "Stiamo preparando Plus per fare di Ancient Trees una piattaforma sostenibile. Cosa vorresti che facesse che ancora non fa?",
     plusIdeaPh: "Vorrei…",
     plusNext: "Avanti",
@@ -2035,12 +2049,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ageYears: (n) => `${n} jaar`,
     seenChip: "Verzameld",
     seasonChip: { bloom: "In bloei", autumn: "Herfstkleur", fruit: "Vruchten", leaves: "Vers blad", catkins: "Katjes", winter: "Wintersilhouet", peak: "Nu op z'n mooist" },
-    ambassadorWanted: (place) => `${place} zoekt een ambassadeur`,
-    ambassadorWantedLine: "Help ons deze lijst te verbeteren.",
-    ambassadorApply: "Ik doe mee",
+    ambassadorBecomeThe: (place) => `Word de ambassadeur van ${place}`,
+    ambassadorBecomeA: (place) => `Word ambassadeur van ${place}`,
+    ambassadorOf: (place) => `Ambassadeur van ${place}`,
+    ambassadorBecomeOneToo: "Word er ook een",
     ambassadorApplied: "Aanvraag verstuurd.",
     ambassadorAskTitle: (place) => `Ambassadeur worden van ${place}?`,
-    ambassadorJoin: "Word ambassadeur",
     ambassadorJoinTitle: (place) => `Ambassadeur worden van ${place}?`,
     ambassadorsLabel: "Ambassadeurs",
     ambassadorAskBody: "Een ambassadeur helpt ons de bomen van deze plek goed te krijgen.",
@@ -2052,7 +2066,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorWriteTo: (email) => `We mailen je op ${email}.`,
     ambassadorDone: "Klaar",
     plusRowTitle: "Ancient Trees Plus",
-    plusRowLine: "Help ons kiezen wat er komt",
+    plusRow: "Help Ancient Trees Plus maken",
+    highlights: "Highlights",
+    allTrees: (n) => (n === 1 ? "1 boom" : `Alle ${n} bomen`),
     plusAskBody: "We werken aan Plus om Ancient Trees een duurzaam platform te maken. Wat zou je willen dat het doet wat het nu nog niet doet?",
     plusIdeaPh: "Ik zou graag…",
     plusNext: "Volgende",
@@ -2392,12 +2408,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ageYears: (n) => `${n} Jahre`,
     seenChip: "Gesammelt",
     seasonChip: { bloom: "In Blüte", autumn: "Herbstfärbung", fruit: "Früchte", leaves: "Frisches Laub", catkins: "Kätzchen", winter: "Wintersilhouette", peak: "Jetzt am schönsten" },
-    ambassadorWanted: (place) => `Wer betreut die Liste für ${place}?`,
-    ambassadorWantedLine: "Hilf uns, diese Liste zu verbessern.",
-    ambassadorApply: "Ich mache mit",
+    ambassadorBecomeThe: (place) => `Werde Botschafter für ${place}`,
+    ambassadorBecomeA: (place) => `Werde auch Botschafter für ${place}`,
+    ambassadorOf: (place) => `Botschafter für ${place}`,
+    ambassadorBecomeOneToo: "Mach mit",
     ambassadorApplied: "Anfrage gesendet.",
     ambassadorAskTitle: (place) => `Die Liste für ${place} betreuen?`,
-    ambassadorJoin: "Die Liste mitbetreuen",
     ambassadorJoinTitle: (place) => `Die Liste für ${place} betreuen?`,
     ambassadorsLabel: "Botschafter",
     ambassadorAskBody: "Ein Botschafter hilft uns, die B\u00e4ume dieses Ortes richtig darzustellen.",
@@ -2409,7 +2425,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorWriteTo: (email) => `Wir schreiben dir an ${email}.`,
     ambassadorDone: "Fertig",
     plusRowTitle: "Ancient Trees Plus",
-    plusRowLine: "Hilf uns zu wählen, was als Nächstes kommt",
+    plusRow: "Hilf mit, Ancient Trees Plus zu gestalten",
+    highlights: "Highlights",
+    allTrees: (n) => (n === 1 ? "1 Baum" : `Alle ${n} Bäume`),
     plusAskBody: "Wir arbeiten an Plus, damit Ancient Trees eine nachhaltige Plattform wird. Was sollte es können, was es noch nicht kann?",
     plusIdeaPh: "Ich würde gern…",
     plusNext: "Weiter",
@@ -2749,12 +2767,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ageYears: (n) => `${n} anos`,
     seenChip: "Colecionada",
     seasonChip: { bloom: "Em flor", autumn: "Cores de outono", fruit: "Com fruto", leaves: "Folhas novas", catkins: "Amentilhos", winter: "Silhueta de inverno", peak: "Na época" },
-    ambassadorWanted: (place) => `Procuramos quem cuide da lista de ${place}`,
-    ambassadorWantedLine: "Ajude-nos a melhorar esta lista.",
-    ambassadorApply: "Quero participar",
+    ambassadorBecomeThe: (place) => `Seja o embaixador de ${place}`,
+    ambassadorBecomeA: (place) => `Torne-se embaixador de ${place}`,
+    ambassadorOf: (place) => `Embaixador de ${place}`,
+    ambassadorBecomeOneToo: "Torne-se também",
     ambassadorApplied: "Pedido enviado.",
     ambassadorAskTitle: (place) => `Quer cuidar da lista de ${place}?`,
-    ambassadorJoin: "Cuide da lista connosco",
     ambassadorJoinTitle: (place) => `Quer cuidar da lista de ${place}?`,
     ambassadorsLabel: "Embaixadores",
     ambassadorAskBody: "Um embaixador ajuda-nos a acertar nas \u00e1rvores deste lugar.",
@@ -2766,7 +2784,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorWriteTo: (email) => `Escrevemos-lhe para ${email}.`,
     ambassadorDone: "Concluído",
     plusRowTitle: "Ancient Trees Plus",
-    plusRowLine: "Ajude-nos a escolher o que vem a seguir",
+    plusRow: "Ajude a criar o Ancient Trees Plus",
+    highlights: "Destaques",
+    allTrees: (n) => (n === 1 ? "1 árvore" : `Todas as ${n} árvores`),
     plusAskBody: "Estamos a preparar o Plus para tornar o Ancient Trees uma plataforma sustentável. O que gostaria que fizesse e ainda não faz?",
     plusIdeaPh: "Gostaria de…",
     plusNext: "Seguinte",
@@ -3106,12 +3126,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ageYears: (n) => `${n} ans`,
     seenChip: "Collectionné",
     seasonChip: { bloom: "En fleurs", autumn: "Couleurs d'automne", fruit: "En fruits", leaves: "Jeunes feuilles", catkins: "Chatons", winter: "Silhouette d'hiver", peak: "De saison" },
-    ambassadorWanted: (place) => `Qui veillera sur la liste de ${place}\u00a0?`,
-    ambassadorWantedLine: "Aidez-nous à améliorer cette liste.",
-    ambassadorApply: "Ça m'intéresse",
+    ambassadorBecomeThe: (place) => `Devenez l’ambassadeur de ${place}`,
+    ambassadorBecomeA: (place) => `Devenez ambassadeur de ${place}`,
+    ambassadorOf: (place) => `Ambassadeur de ${place}`,
+    ambassadorBecomeOneToo: "Devenez-le aussi",
     ambassadorApplied: "Demande envoyée.",
     ambassadorAskTitle: (place) => `Veiller sur la liste de ${place}\u00a0?`,
-    ambassadorJoin: "Veiller sur la liste avec nous",
     ambassadorJoinTitle: (place) => `Veiller sur la liste de ${place}\u00a0?`,
     ambassadorsLabel: "Ambassadeurs",
     ambassadorAskBody: "Un ambassadeur nous aide \u00e0 bien pr\u00e9senter les arbres de ce lieu.",
@@ -3123,7 +3143,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorWriteTo: (email) => `Nous vous écrirons à ${email}.`,
     ambassadorDone: "Terminé",
     plusRowTitle: "Ancient Trees Plus",
-    plusRowLine: "Aidez-nous à choisir la suite",
+    plusRow: "Aidez à créer Ancient Trees Plus",
+    highlights: "À découvrir",
+    allTrees: (n) => (n === 1 ? "1 arbre" : `Les ${n} arbres`),
     plusAskBody: "Nous préparons Plus pour faire d'Ancient Trees une plateforme durable. Que voudriez-vous qu'il fasse et qu'il ne fait pas encore ?",
     plusIdeaPh: "J'aimerais…",
     plusNext: "Suivant",
@@ -3462,12 +3484,12 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ageYears: (n) => `${n}年`,
     seenChip: "集めた",
     seasonChip: { bloom: "開花中", autumn: "紅葉", fruit: "実り", leaves: "新緑", catkins: "尾状花序", winter: "冬の樹形", peak: "見頃" },
-    ambassadorWanted: (place) => `${place}のアンバサダーを募集中`,
-    ambassadorWantedLine: "このリストをより良くするために力を貸してください。",
-    ambassadorApply: "応募する",
+    ambassadorBecomeThe: (place) => `${place}のアンバサダーになる`,
+    ambassadorBecomeA: (place) => `${place}のアンバサダーに加わる`,
+    ambassadorOf: (place) => `${place}のアンバサダー`,
+    ambassadorBecomeOneToo: "あなたも加わる",
     ambassadorApplied: "申請を送信しました。",
     ambassadorAskTitle: (place) => `${place}のアンバサダーになりますか？`,
-    ambassadorJoin: "アンバサダーになる",
     ambassadorJoinTitle: (place) => `${place}のアンバサダーになりますか？`,
     ambassadorsLabel: "アンバサダー",
     ambassadorAskBody: "\u30a2\u30f3\u30d0\u30b5\u30c0\u30fc\u306f\u3001\u3053\u306e\u5834\u6240\u306e\u6728\u3092\u6b63\u3057\u304f\u4f1d\u3048\u308b\u624b\u52a9\u3051\u3092\u3057\u3066\u304f\u308c\u307e\u3059\u3002",
@@ -3479,7 +3501,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorWriteTo: (email) => `${email} 宛にご連絡します。`,
     ambassadorDone: "完了",
     plusRowTitle: "Ancient Trees Plus",
-    plusRowLine: "次に何をつくるか、一緒に選んでください",
+    plusRow: "Ancient Trees Plus づくりに協力する",
+    highlights: "注目の木",
+    allTrees: (n) => (n === 1 ? "1本の木" : `${n}本の木すべて`),
     plusAskBody: "Ancient Trees を持続可能なプラットフォームにするために、Plus を準備しています。まだできないことで、できるようになってほしいことは何ですか？",
     plusIdeaPh: "こんなことができたら…",
     plusNext: "次へ",

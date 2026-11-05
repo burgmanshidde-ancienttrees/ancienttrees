@@ -273,7 +273,7 @@ struct MapTab: View {
             HStack(alignment: .top, spacing: 12) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(placeTitle)
-                        .font(.brand(22, .bold, relativeTo: .title2))
+                        .font(.brand(28, .bold, relativeTo: .title))
                         .foregroundStyle(Brand.ink)
                         .lineLimit(2)
                     Text({ () -> String in
@@ -311,12 +311,6 @@ struct MapTab: View {
                     .accessibilityLabel("Share this city")
                     .accessibilityIdentifier("place-header-share")
                 }
-            }
-            if case .city(let slug) = p {
-                PlaceAmbassadors(slug: slug, title: placeTitle, catalogue: catalogue)
-                // The Plus question under the ambassador, as on the website's
-                // city page (PlusAsk.astro; Hidde, 2026-11-04).
-                PlusRow(city: placeTitle)
             }
         }
         // The cards' 16 under it (appfit DRIFT and TRAIL, 2026-11-04): at 20
@@ -560,6 +554,15 @@ struct MapTab: View {
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
                 .environment(\.mapTopCover, chromeBottom)
+                // UNDER THE PINS, beside the locate arrow (Hidde, 2026-11-05:
+                // "the location off banner is more logical underneath the
+                // pins right?"): it rode the top of the map between the field
+                // and the chips. Now it rests on the sheet's edge on the left,
+                // level with the arrow on the right, both of them about where
+                // you are, as Google Maps keeps its location prompt down there.
+                .overlay {
+                    if !searching { RidesTheSheet { whereChip } }
+                }
         } header: {
                 // No count while a tree is selected: its card is the sheet.
                 // Otherwise the count, outside the scroll view: it
@@ -635,7 +638,6 @@ struct MapTab: View {
                             searchBottom = $0
                         }
                     VStack(spacing: 8) {
-                        whereChip
                         filterRow
                     }
                     // How far down the field and the chips reach, so the map
@@ -1054,6 +1056,47 @@ struct MapTab: View {
             .sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
     }
 
+    /// DIRECTION C under a city's or a country's name (Hidde, 2026-11-05: "i
+    /// like option c"): the white box with the ambassador and Plus (a city
+    /// only), the Highlights shelf, then every tree in view as a row. The
+    /// website's city page has the same order (TreeCard.astro "row").
+    @ViewBuilder private var placeList: some View {
+        if case .city(let slug) = placeShown {
+            PlaceAsksBox(slug: slug, title: placeTitle, catalogue: catalogue)
+                .padding(.bottom, 6)
+        }
+        let highlights = listedHere.filter { $0.tree.isHighlight }
+        if !highlights.isEmpty {
+            SheetSectionHead(title: "Highlights")
+            ScrollView(.horizontal) {
+                LazyHStack(alignment: .top, spacing: 12) {
+                    ForEach(highlights, id: \.tree.id) { hit in
+                        SheetLink(route: .tree(hit.tree.id)) { HighlightCard(tree: hit.tree) }
+                            .accessibilityIdentifier("highlight-card")
+                    }
+                }
+                .scrollTargetLayout()
+                .padding(.horizontal, 16)
+            }
+            .scrollIndicators(.hidden)
+            .scrollTargetBehavior(.viewAligned)
+            .padding(.horizontal, -16)
+            .padding(.bottom, 6)
+        }
+        if !listedHere.isEmpty {
+            SheetSectionHead(title: listedHere.count == placeTrees.count
+                             ? (listedHere.count == 1 ? "The one tree" : "All \(listedHere.count) trees")
+                             : "\(listedHere.count) trees in view")
+            LazyVStack(spacing: 0) {
+                ForEach(listedHere, id: \.tree.id) { hit in
+                    SheetLink(route: .tree(hit.tree.id)) { TreeRow(tree: hit.tree) }
+                        .accessibilityIdentifier("tree-card")
+                        .id(hit.tree.id)
+                }
+            }
+        }
+    }
+
     private var list: some View {
         LazyVStack(spacing: 12) {
                 // Yours first: there are few of them and nobody else has them.
@@ -1065,6 +1108,9 @@ struct MapTab: View {
                 // Under a place's header, that place's trees only: the United
                 // States listed a tree in Mexico City first because Mexico was
                 // in view (2026-11-04).
+                if placeShown != nil && query.isEmpty {
+                    placeList
+                } else {
                 ForEach(listedHere, id: \.tree.id) { hit in
                     // SheetLink, not NavigationLink: see BottomSheet.swift. A
                     // link inside a sheet opens on release even when the drag
@@ -1072,6 +1118,7 @@ struct MapTab: View {
                     SheetLink(route: .tree(hit.tree.id)) { TreeCard(tree: hit.tree) }
                         .accessibilityIdentifier("tree-card")
                         .id(hit.tree.id)
+                }
                 }
                 if nothingInView {
                     emptyHere
@@ -1126,12 +1173,13 @@ struct MapTab: View {
                         .foregroundStyle(Brand.moss)
                 }
                 .font(.subheadline.weight(.semibold))
-                .padding(.horizontal, 14).padding(.vertical, 8)
+                .padding(.horizontal, 14)
+                .frame(height: 44)
                 .background(.regularMaterial, in: .capsule)
                 .shadow(color: .black.opacity(0.12), radius: 6, y: 2)
-                .padding(.top, 10)
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("location-off")
         }
     }
 
@@ -1317,4 +1365,25 @@ struct MapTab: View {
         fly(to: origin.lat, lng: origin.lng, span: 3000)
     }
 
+}
+
+/// A control that rests on the sheet's top edge at the left, level with the
+/// locate arrow on the right: the same placement TreeMap computes for that
+/// arrow (recentrePlacement), from the same live sheet height, so the two ride
+/// the sheet together and fade together under it.
+private struct RidesTheSheet<Content: View>: View {
+    @Environment(\.sheetPoints) private var live
+    @ViewBuilder var content: Content
+
+    var body: some View {
+        GeometryReader { g in
+            let place = TreeMap.recentrePlacement(coverage: live ?? 0, mapHeight: g.size.height)
+            content
+                .opacity(place.alpha)
+                .allowsHitTesting(place.alpha > 0.05)
+                .padding(.leading, 12)
+                .padding(.bottom, -place.lift)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+        }
+    }
 }
