@@ -12,6 +12,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: iOS CI green again (two crashing unit tests)
+
+- ios.yml was red since 2026-11-04 13:42: `testTheStoredIdSetsFollowEveryChange` and `testTheCityAndCountryIndexMatchFilteringTheWholeList` (RedrawMemoTests, added with the redraw speed-up) "crashed with signal abrt". Reproduced on the iOS 18.6 simulator: SIGABRT when the test's `Saved` was released, "pointer being freed was not allocated" in `swift_task_deinitOnExecutorMainActorBackDeploy` from `Saved.__deallocating_deinit`, under an XCTest invocation; the second test only fell with the crashed process.
+- Fix: the file is a Swift Testing suite now, like every other test that builds a `Saved` (CollectionTests, FailureTests, UpgradeTests), same checks unchanged. Locally the three pass and the whole unit suite is green (225 of 225). The app keeps its one `Saved` for its lifetime and the store builds show no such crash (crashes.py), so nothing changes for anybody using the app.
+
 ## 2026-11-05 night run (eleventh attempt): nothing shipped
 
 - No claims stood. 112 READY leads are the same rejects and the pace is full until about 19:42 UTC, so no write pass. Four Dependabot branches stand (astro 7.4.4, supabase-js 2.118.0, deploy-pages 5, upload-pages-artifact 5); `gh` needed approval here, so their CI could not be read and none was merged. A session should read CI and merge them by hand.
