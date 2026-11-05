@@ -18,7 +18,7 @@ public enum PlusAnswers {
 
     /// One answer, without an account. Fire and forget: a lost answer to a
     /// question costs nobody anything, a spinner would.
-    public static func answer(choice: String, idea: String, shownOrder: [String],
+    public static func answer(choices: [String], idea: String, shownOrder: [String],
                               city: String, openedFrom: String) async {
         let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
         await Supa.post("/rest/v1/plus_answers", token: nil, body: [
@@ -26,7 +26,7 @@ public enum PlusAnswers {
             "lang": "en",
             "city": String(city.prefix(80)),
             "opened_from": openedFrom,
-            "choice": choice,
+            "choices": choices,
             "idea": String(idea.trimmingCharacters(in: .whitespacesAndNewlines).prefix(600)),
             "shown_order": shownOrder.joined(separator: ","),
             "build": build,

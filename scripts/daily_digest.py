@@ -3904,22 +3904,22 @@ def plus_section(today):
     if not key:
         return ""
     try:
-        rows, _ = pa.get(key, "/rest/v1/plus_answers?select=created_at,choice,idea&limit=5000")
+        rows, _ = pa.get(key, "/rest/v1/plus_answers?select=created_at,choices,idea&limit=5000")
         _, listed = pa.get(key, "/rest/v1/plus_waitlist?select=created_at&limit=1")
     except urllib.error.HTTPError as e:
         if e.code == 404:
             return "**Plus question**: not storing answers yet; paste supabase/plus-answers.sql into Supabase."
         raise
-    answered = [r for r in rows if r.get("choice")]
+    answered = [r for r in rows if r.get("choices")]
     since = (today - datetime.timedelta(days=1)).isoformat()
     new = sum(1 for r in answered if (r.get("created_at") or "") >= since)
     ideas = sum(1 for r in rows if (r.get("idea") or "").strip())
     if not answered:
         return "**Plus question**: no answers yet."
-    count = collections.Counter(r["choice"] for r in answered)
+    count = collections.Counter(c for r in answered for c in r["choices"])
     out = ["**Plus question** (%d answers, %d new; %s asked to be told; %d wrote an idea, read them with "
-           "`python3 scripts/plus_answers.py`)" % (len(answered), new, listed, ideas), "",
-           "| Choice | Answers |", "|---|---:|"]
+           "`python3 scripts/plus_answers.py`; up to two each)" % (len(answered), new, listed, ideas), "",
+           "| Choice | Picked by |", "|---|---:|"]
     out += ["| %s | %d |" % (pa.LABELS.get(k, k), n) for k, n in count.most_common()]
     return "\n".join(out)
 

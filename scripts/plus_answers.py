@@ -56,7 +56,7 @@ def main():
         print("No service key (SUPABASE_SERVICE_KEY or ~/.ancienttrees-supabase.env).")
         return 1
     try:
-        rows, _ = get(key, "/rest/v1/plus_answers?select=created_at,surface,lang,city,opened_from,choice,idea,shown_order"
+        rows, _ = get(key, "/rest/v1/plus_answers?select=created_at,surface,lang,city,opened_from,choices,idea,shown_order"
                            "&order=created_at.asc&limit=5000")
         _, listed = get(key, "/rest/v1/plus_waitlist?select=created_at&limit=1")
     except urllib.error.HTTPError as e:
@@ -64,17 +64,19 @@ def main():
             print("The plus tables are not there yet: paste supabase/plus-answers.sql into the Supabase SQL editor.")
             return 0
         raise
-    answered = [r for r in rows if r.get("choice")]
+    answered = [r for r in rows if r.get("choices")]
     print(f"Plus question: {len(answered)} answers, {listed} asked to be told when it is here.\n")
     if not answered:
         return 0
-    count = collections.Counter(r["choice"] for r in answered)
+    # Up to two per person (2026-11-05), so a column can add up to more than
+    # the number of people; "Picked by" is people, not a share of the votes.
+    count = collections.Counter(c for r in answered for c in r["choices"])
     first = collections.Counter()
     for r in answered:
         order = (r.get("shown_order") or "").split(",")
-        if order and order[0] == r["choice"]:
-            first[r["choice"]] += 1
-    print("| Choice | Answers | Of which it was shown first |")
+        if order and order[0] in r["choices"]:
+            first[order[0]] += 1
+    print("| Choice | Picked by | Of which it was shown first |")
     print("|---|---:|---:|")
     for k, n in count.most_common():
         print(f"| {LABELS.get(k, k)} | {n} | {first.get(k, 0)} |")

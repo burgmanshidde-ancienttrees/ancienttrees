@@ -5,7 +5,7 @@
 -- offline maps, seasonal alerts, a richer tree log). Nothing is sold: a row on
 -- every city page and in the app's settings asks, in three steps, what would
 -- make Plus worth paying for (open field first, so nobody copies our list),
--- which of four would come first (shuffled per person, "none of these" last),
+-- which one or two of four would come first (shuffled per person, "none of these" last),
 -- and whether to tell them when it is here.
 --
 -- TWO TABLES, because the answer and the hand that goes up are different
@@ -34,7 +34,12 @@ create table if not exists public.plus_answers (
   lang text not null default 'en' check (char_length(lang) <= 5),
   city text not null default '' check (char_length(city) <= 80),
   opened_from text not null default '' check (char_length(opened_from) <= 20),
-  choice text check (choice is null or choice in ('walks', 'offline', 'season', 'log', 'none')),
+  -- Up to two (Hidde, 2026-11-05: "max 2 invullen is goed"); "none" stands alone.
+  choices text[] not null check (
+    cardinality(choices) between 1 and 2
+    and choices <@ array['walks', 'offline', 'season', 'log', 'none']::text[]
+    and (not ('none' = any(choices)) or cardinality(choices) = 1)
+  ),
   idea text not null default '' check (char_length(idea) <= 600),
   shown_order text not null default '' check (char_length(shown_order) <= 60),
   build text not null default '' check (char_length(build) <= 40)

@@ -61,7 +61,8 @@ struct PlusQuestionSheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var step: Step = .idea
     @State private var idea = ""
-    @State private var choice: String?
+    /// Up to two (Hidde, 2026-11-05: "max 2 invullen is goed"); "none" alone.
+    @State private var choices: [String] = []
     @State private var order: [(key: String, label: String)] = PlusAnswers.options.shuffled()
     @State private var signingIn = false
     @State private var joining = false
@@ -93,7 +94,7 @@ struct PlusQuestionSheet: View {
                        extra: { ideaField })
                 .accessibilityIdentifier("plus-sheet")
         case .choice:
-            BrandSheet(title: "Which would you want most?",
+            BrandSheet(title: "Which would you want most?", message: "Pick up to two.",
                        buttons: [.primary("Send", id: "plus-send") { send() }],
                        extra: { options })
                 .accessibilityIdentifier("plus-sheet")
@@ -140,8 +141,9 @@ struct PlusQuestionSheet: View {
     }
 
     private func optionRow(_ key: String, _ label: String, quiet: Bool = false) -> some View {
-        let on = choice == key
-        return Button { choice = key } label: {
+        let on = choices.contains(key)
+        let full = !on && choices.count >= 2 && key != "none" && !choices.contains("none")
+        return Button { toggle(key) } label: {
             HStack(spacing: 12) {
                 Image(systemName: on ? "checkmark.circle.fill" : "circle")
                     .font(.system(size: 20))
@@ -159,16 +161,27 @@ struct PlusQuestionSheet: View {
             .contentShape(.rect)
         }
         .buttonStyle(.plain)
+        .opacity(full ? 0.45 : 1)
+        .disabled(full)
         .accessibilityAddTraits(on ? .isSelected : [])
         .accessibilityIdentifier("plus-option-\(key)")
     }
 
+    /// "None of these" stands alone: ticking it clears the others, ticking
+    /// another clears it; at two the rest wait greyed out (as the website).
+    private func toggle(_ key: String) {
+        if let i = choices.firstIndex(of: key) { choices.remove(at: i); return }
+        if key == "none" { choices = ["none"]; return }
+        choices.removeAll { $0 == "none" }
+        if choices.count < 2 { choices.append(key) }
+    }
+
     private func send() {
-        guard let choice else { return }
-        let shown = order.map(\.key)
+        guard !choices.isEmpty else { return }
+        let picked = choices, shown = order.map(\.key)
         let text = idea, city = city, from = openedFrom
-        Measure.event("plus-answer", ["choice": choice])
-        Task { await PlusAnswers.answer(choice: choice, idea: text, shownOrder: shown, city: city, openedFrom: from) }
+        Measure.event("plus-answer", ["choice": picked.joined(separator: ",")])
+        Task { await PlusAnswers.answer(choices: picked, idea: text, shownOrder: shown, city: city, openedFrom: from) }
         step = .thanks
     }
 

@@ -215,6 +215,8 @@ export interface UIStrings {
   /** The open step's button while the field is empty. */
   plusSkip: string;
   plusChoiceTitle: string;
+  /** Under the choice title: up to two (Hidde, 2026-11-05). */
+  plusPickTwo: string;
   /** The four options, keyed as the database stores them; shown shuffled. */
   plusOptions: { walks: string; offline: string; season: string; log: string };
   plusNone: string;
@@ -694,6 +696,7 @@ const EN: UIStrings = {
   plusNext: "Next",
   plusSkip: "Skip",
   plusChoiceTitle: "Which would you want most?",
+  plusPickTwo: "Pick up to two.",
   plusOptions: { walks: "Recommended tree walks for a city trip", offline: "Download offline maps", season: "Seasonal alerts when trees are at their best", log: "A richer log of every tree you've collected" },
   plusNone: "None of these",
   plusSend: "Send",
@@ -1313,6 +1316,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusNext: "Siguiente",
     plusSkip: "Omitir",
     plusChoiceTitle: "¿Qué querrías más?",
+    plusPickTwo: "Elige hasta dos.",
     plusOptions: { walks: "Paseos de árboles recomendados para una escapada urbana", offline: "Descargar mapas sin conexión", season: "Avisos de temporada cuando los árboles están en su mejor momento", log: "Un registro más completo de cada árbol que has coleccionado" },
     plusNone: "Ninguna de estas",
     plusSend: "Enviar",
@@ -1669,6 +1673,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusNext: "Avanti",
     plusSkip: "Salta",
     plusChoiceTitle: "Cosa vorresti di più?",
+    plusPickTwo: "Scegline fino a due.",
     plusOptions: { walks: "Passeggiate tra gli alberi consigliate per un viaggio in città", offline: "Scaricare mappe offline", season: "Avvisi stagionali quando gli alberi danno il meglio", log: "Un diario più ricco di ogni albero che hai collezionato" },
     plusNone: "Nessuna di queste",
     plusSend: "Invia",
@@ -2025,6 +2030,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusNext: "Volgende",
     plusSkip: "Overslaan",
     plusChoiceTitle: "Wat zou je het liefst willen?",
+    plusPickTwo: "Kies er maximaal twee.",
     plusOptions: { walks: "Aanbevolen bomenwandelingen voor een stedentrip", offline: "Offline kaarten downloaden", season: "Seizoensmeldingen als bomen op hun mooist zijn", log: "Een rijker logboek van elke boom die je verzamelde" },
     plusNone: "Geen van deze",
     plusSend: "Versturen",
@@ -2381,6 +2387,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusNext: "Weiter",
     plusSkip: "Überspringen",
     plusChoiceTitle: "Was hättest du am liebsten?",
+    plusPickTwo: "Wähle bis zu zwei.",
     plusOptions: { walks: "Empfohlene Baumspaziergänge für eine Städtereise", offline: "Offline-Karten herunterladen", season: "Saisonhinweise, wenn Bäume am schönsten sind", log: "Ein reicheres Logbuch aller Bäume, die du gesammelt hast" },
     plusNone: "Nichts davon",
     plusSend: "Senden",
@@ -2737,6 +2744,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusNext: "Seguinte",
     plusSkip: "Saltar",
     plusChoiceTitle: "O que mais gostaria de ter?",
+    plusPickTwo: "Escolha até duas.",
     plusOptions: { walks: "Passeios de árvores recomendados para uma escapadinha urbana", offline: "Descarregar mapas offline", season: "Alertas de estação quando as árvores estão no seu melhor", log: "Um registo mais rico de cada árvore que colecionou" },
     plusNone: "Nenhuma destas",
     plusSend: "Enviar",
@@ -3093,6 +3101,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusNext: "Suivant",
     plusSkip: "Passer",
     plusChoiceTitle: "Que voudriez-vous le plus ?",
+    plusPickTwo: "Choisissez-en deux au maximum.",
     plusOptions: { walks: "Des promenades d'arbres conseillées pour un séjour en ville", offline: "Télécharger des cartes hors ligne", season: "Des alertes de saison quand les arbres sont à leur plus beau", log: "Un carnet plus riche de chaque arbre que vous avez collectionné" },
     plusNone: "Aucune de ces options",
     plusSend: "Envoyer",
@@ -3448,6 +3457,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusNext: "次へ",
     plusSkip: "スキップ",
     plusChoiceTitle: "いちばん欲しいのはどれですか？",
+    plusPickTwo: "2つまで選べます。",
     plusOptions: { walks: "街歩きにおすすめの巨樹散歩コース", offline: "オフラインマップのダウンロード", season: "木がいちばん美しい時期のお知らせ", log: "集めたすべての木の、より充実した記録" },
     plusNone: "どれも違う",
     plusSend: "送信",

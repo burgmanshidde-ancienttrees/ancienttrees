@@ -31,13 +31,19 @@ import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import Sheet from "./Sheet.astro";
 import { ui } from "../lib/i18n";
 
-interface Props { lang?: string; city: string }
-const { lang = "en", city } = Astro.props as Props;
+interface Props {
+  lang?: string; city: string;
+  /** false: no row of its own; the page draws its own button with class
+   *  plus-row and a data-from (Settings > Help, account/settings.astro). */
+  row?: boolean;
+}
+const { lang = "en", city, row = true } = Astro.props as Props;
 const U = ui(lang);
 const OPTS = ["walks", "offline", "season", "log"] as const;
 ---
-<div class="plus-bar" data-city={city} data-lang={lang} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
-  <button type="button" class="plus-row">
+{row && (
+<div class="plus-bar">
+  <button type="button" class="plus-row" data-from="city">
     <span class="plus-avatar" aria-hidden="true"><Fragment set:html={icon("sparkle", "fill")} /></span>
     <span class="plus-text">
       <span class="plus-name">{U.plusRowTitle}</span>
@@ -46,7 +52,9 @@ const OPTS = ["walks", "offline", "season", "log"] as const;
     <Fragment set:html={icon("caret-right", "bold", "ic plus-chev")} />
   </button>
 </div>
-<Sheet lang={lang} class="plus-dialog" id="plus-dialog" aria-labelledby="plus-title">
+)}
+<Sheet lang={lang} class="plus-dialog" id="plus-dialog" aria-labelledby="plus-title"
+       data-city={city} data-lang={lang} data-sb={SUPABASE_URL} data-key={SUPABASE_KEY}>
   <div class="plus-step" data-step="idea">
     <span class="at-sheet-tile"><Fragment set:html={icon("sparkle", "fill")} /></span>
     <h3 class="at-sheet-h" id="plus-title">{U.plusRowTitle}</h3>
@@ -57,12 +65,13 @@ const OPTS = ["walks", "offline", "season", "log"] as const;
     </div>
   </div>
   <div class="plus-step" data-step="choice" hidden>
-    <h3 class="at-sheet-h plus-choice-h">{U.plusChoiceTitle}</h3>
-    <div class="plus-opts" role="radiogroup" aria-label={U.plusChoiceTitle}>
+    <h3 class="at-sheet-h">{U.plusChoiceTitle}</h3>
+    <p class="at-sheet-p plus-pick">{U.plusPickTwo}</p>
+    <div class="plus-opts" role="group" aria-label={U.plusChoiceTitle}>
       {OPTS.map((k) => (
-        <label class="plus-opt" data-key={k}><input type="radio" name="plus-choice" value={k} />{U.plusOptions[k]}</label>
+        <label class="plus-opt" data-key={k}><input type="checkbox" name="plus-choice" value={k} />{U.plusOptions[k]}</label>
       ))}
-      <label class="plus-opt plus-opt-none" data-key="none"><input type="radio" name="plus-choice" value="none" />{U.plusNone}</label>
+      <label class="plus-opt plus-opt-none" data-key="none"><input type="checkbox" name="plus-choice" value="none" />{U.plusNone}</label>
     </div>
     <div class="at-sheet-btns">
       <button type="button" class="sheet-b sheet-b--primary plus-send" disabled>{U.plusSend}</button>
@@ -87,12 +96,13 @@ const OPTS = ["walks", "offline", "season", "log"] as const;
 </Sheet>
 <script is:inline>
 document.addEventListener('DOMContentLoaded', function() {
-  var bar = document.querySelector('.plus-bar');
   var dlg = document.getElementById('plus-dialog');
-  if (!bar || !dlg) return;
+  if (!dlg) return;
   var C = window.atCollection;
-  var SB = bar.getAttribute('data-sb'), KEY = bar.getAttribute('data-key');
-  var city = bar.getAttribute('data-city'), lang = bar.getAttribute('data-lang');
+  var SB = dlg.getAttribute('data-sb'), KEY = dlg.getAttribute('data-key');
+  var city = dlg.getAttribute('data-city'), lang = dlg.getAttribute('data-lang');
+  var from = 'city';
+  var MAX = 2;   // up to two (Hidde, 2026-11-05: "max 2 invullen is goed")
   var steps = dlg.querySelectorAll('.plus-step');
   var idea = dlg.querySelector('.plus-idea');
   var box = dlg.querySelector('.plus-opts');
@@ -113,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function open(step) {
     if (step !== 'thanks') {
       idea.value = ''; label();
-      box.querySelectorAll('input').forEach(function(r) { r.checked = false; });
+      box.querySelectorAll('input').forEach(function(r) { r.checked = false; r.disabled = false; });
       box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.remove('is-on'); });
       send.disabled = true; shuffle();
     }
@@ -121,29 +131,41 @@ document.addEventListener('DOMContentLoaded', function() {
     show(step || 'idea');
     dlg.showModal();
   }
-  bar.querySelector('.plus-row').addEventListener('click', function() { track('plus-open', 'city'); open('idea'); });
+  document.querySelectorAll('.plus-row').forEach(function(r) {
+    r.addEventListener('click', function() { from = r.getAttribute('data-from') || 'city'; track('plus-open', from); open('idea'); });
+  });
   // Skip while the field is empty, so leaving it is plainly allowed (Hidde,
   // 2026-11-05: "ik zou hier wel op vastlopen"); Next once something is typed.
   var next = dlg.querySelector('.plus-next');
   function label() { next.textContent = (idea.value || '').trim() ? next.getAttribute('data-next') : next.getAttribute('data-skip'); }
   idea.addEventListener('input', label);
   next.addEventListener('click', function() { show('choice'); });
+  // Up to two; "None of these" stands alone, so ticking it clears the others
+  // and ticking another clears it. At two, the rest wait greyed out.
   box.addEventListener('change', function(e) {
-    box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.toggle('is-on', o.contains(e.target) && e.target.checked); });
-    send.disabled = !box.querySelector('input:checked');
+    var t = e.target;
+    if (t.checked) {
+      box.querySelectorAll('input').forEach(function(i) {
+        if (i !== t && (t.value === 'none' || i.value === 'none')) i.checked = false;
+      });
+    }
+    var on = box.querySelectorAll('input:checked').length;
+    box.querySelectorAll('input').forEach(function(i) { i.disabled = !i.checked && on >= MAX; });
+    box.querySelectorAll('.plus-opt').forEach(function(o) { o.classList.toggle('is-on', o.querySelector('input').checked); });
+    send.disabled = on === 0;
   });
   send.addEventListener('click', function() {
-    var picked = box.querySelector('input:checked');
-    if (!picked) return;
+    var picked = Array.prototype.map.call(box.querySelectorAll('input:checked'), function(i) { return i.value; });
+    if (!picked.length) return;
     send.disabled = true;
     // Anonymous on purpose: the publishable key alone, never the session.
     fetch(SB + '/rest/v1/plus_answers', {
       method: 'POST',
       headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
-      body: JSON.stringify({ surface: 'web', lang: lang, city: city, opened_from: 'city', choice: picked.value,
+      body: JSON.stringify({ surface: 'web', lang: lang, city: city, opened_from: from, choices: picked,
                              idea: (idea.value || '').trim().slice(0, 600), shown_order: shown })
     }).catch(function() {});
-    track('plus-answer', picked.value);
+    track('plus-answer', picked.join(','));
     show('thanks');
   });
   function onList() {
@@ -202,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
      :global(.plus-dialog) wins back the 20 the sheet uses between its parts,
      and the buttons keep their own margin above them. */
   :global(.plus-dialog) .plus-idea { margin: 20px 0 0; }
-  :global(.plus-dialog) .plus-choice-h { margin-bottom: 20px; }
+  :global(.plus-dialog) .plus-pick { margin-bottom: 20px; }
   :global(.plus-dialog) .plus-opts { margin: 0; }
   .plus-idea { display: block; width: 100%; height: 104px; box-sizing: border-box;
     padding: 14px 16px; border: 1px solid var(--cream-dark); border-radius: 16px; background: var(--surface);
@@ -214,4 +236,5 @@ document.addEventListener('DOMContentLoaded', function() {
   .plus-opt input { width: 20px; height: 20px; margin: 0; flex: none; accent-color: var(--moss); }
   .plus-opt.is-on { border-color: var(--ink); background: var(--surface); }
   .plus-opt-none { color: var(--ink-mid); }
+  .plus-opt:has(input:disabled) { opacity: .45; cursor: default; }
 </style>
