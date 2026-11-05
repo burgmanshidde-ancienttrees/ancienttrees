@@ -1086,7 +1086,7 @@ struct MapTab: View {
         if !listedHere.isEmpty {
             SheetSectionHead(title: listedHere.count == placeTrees.count
                              ? (listedHere.count == 1 ? "The one tree" : "All \(listedHere.count) trees")
-                             : "\(listedHere.count) trees in view")
+                             : "\(treesLabel(listedHere.count)) in view")
             LazyVStack(spacing: 0) {
                 ForEach(listedHere, id: \.tree.id) { hit in
                     SheetLink(route: .tree(hit.tree.id)) { TreeRow(tree: hit.tree) }
