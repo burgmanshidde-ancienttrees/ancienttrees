@@ -12,6 +12,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (tenth attempt): nothing shipped
+
+- No claims stood. 112 READY leads are the same rejects, and the pace is full until about 19:42 UTC, so no write pass. Brighton register retry was already done 2026-11-04 and is still stalled. iOS stays red on the RedrawMemoTests aborts (needs a Mac); Dependabot branches wait for a session.
+
 ## 2026-11-05 night run (06:15 UTC, ninth attempt): two archive contacts sourced, no trees
 - No claims stood. Pace is full until about 19:42 UTC, so no write pass. Sourced two archive contacts for photo-less trees (OMAV Valencia, 8 trees; KNNV Utrecht, 6 trees), both addresses published on their own sites; contacts database rebuilt and pushed to the private store, nothing mailed. Nijmegen, Amsterdam and Alicante searches found no photo holders. Dependabot branches still wait for a session; this run could not query their CI.
 
