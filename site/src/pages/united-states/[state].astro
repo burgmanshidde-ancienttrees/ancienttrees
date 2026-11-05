@@ -13,7 +13,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../../lib/trees";
 import { collectionEntries, MODES } from "../../lib/collection-rank";
 import { GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPageSlugs } from "../../lib/species";
-import { usablePhoto, cityFace, cityFaceTree, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../../lib/images";
+import { usablePhoto, cityFace, cityFaceTree, faceTreesOf, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
 import { mapHead, countryMapScript, pinPriority } from "../../lib/map";
@@ -145,7 +145,7 @@ const countLine = `We map ${nTrees(total)} across ${places.length} places in ${s
 
 const faceUrl = (() => {
   for (const c of ranked) {
-    const t = cityFaceTree({ hero_tree_id: c.city.data.hero_tree_id, face_tree_id: (c.city.data as any).face_tree_id, trees: renderableTrees(c.city) });
+    const t = cityFaceTree({ hero_tree_id: c.city.data.hero_tree_id, face_tree_id: (c.city.data as any).face_tree_id, trees: faceTreesOf(c.city) });
     const url = t ? usablePhoto(t)?.url : null;
     if (url) return url;
   }

@@ -11,7 +11,7 @@
 // face, the photograph the city page itself wears. A city that loses its last
 // photograph drops off the shelf on the next build without anybody noticing.
 import type { CollectionEntry } from "astro:content";
-import { cityFaceTree, usablePhoto } from "./images";
+import { cityFaceTree, faceTreesOf, usablePhoto } from "./images";
 import { renderableTrees } from "./trees";
 import fs from "node:fs";
 import path from "node:path";
@@ -25,7 +25,7 @@ export function favouriteCitySlugs(cities: CollectionEntry<"cities">[]): string[
   return FAVOURITE_CITIES.filter((slug) => {
     const e = bySlug.get(slug);
     if (!e) return false;
-    const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, face_tree_id: (e.data as any).face_tree_id, trees: renderableTrees(e) });
+    const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, face_tree_id: (e.data as any).face_tree_id, trees: faceTreesOf(e) });
     return Boolean(face && usablePhoto(face)?.url);
   });
 }
@@ -44,7 +44,7 @@ export function islandSlugs(cities: CollectionEntry<"cities">[]): string[] {
   return FAVOURITE_ISLANDS.filter((slug) => {
     const e = bySlug.get(slug);
     if (!e) return false;
-    const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, face_tree_id: (e.data as any).face_tree_id, trees: renderableTrees(e) });
+    const face = cityFaceTree({ hero_tree_id: e.data.hero_tree_id, face_tree_id: (e.data as any).face_tree_id, trees: faceTreesOf(e) });
     return Boolean(face && usablePhoto(face)?.url);
   });
 }

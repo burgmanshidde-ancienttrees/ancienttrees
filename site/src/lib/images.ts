@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { DATA } from "./data-dir";
+import { renderableTrees, feedTreesOf, type CityEntry as CityEntryForFace } from "./trees";
 
 // Ported from thumb_url()/img_srcset()/credit_required()/usable_photo(),
 // build_site.py:2441-2518. qa.py's image checks (full-resolution Wikimedia
@@ -595,6 +596,16 @@ export function bestFaceTree<T extends TreeLike>(trees: T[], exclude?: Set<strin
 
 /** The tree that fronts a city: its pinned hero when that photograph is big
  * enough for the box, else the best one in the city, else the hero anyway. */
+/** The trees a city's face is picked from, the same on every surface (one
+ * face per city, 2026-09-10 and 2026-09-24): the trees its web page shows,
+ * or, when none of those has a photograph, every tree the feed carries, so a
+ * city whose only photographed trees are app-only (lib/app-first,
+ * 2026-11-05) still wears one in the app, in Google and on the cards. */
+export function faceTreesOf(city: CityEntryForFace) {
+  const web = renderableTrees(city);
+  return web.some((t) => Boolean(usablePhoto(t as any)?.url)) ? web : feedTreesOf(city);
+}
+
 export function cityFaceTree<T extends TreeLike>(
   cityData: { hero_tree_id?: string | null; face_tree_id?: string | null; trees?: T[] },
 ): T | null {

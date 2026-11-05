@@ -28,15 +28,7 @@
 // which put every Small-leaved Lime in the Lime facet and made the app's counts
 // quietly disagree with the website's.
 import { getCollection } from "astro:content";
-import { cityIsInFeed, feedTreesOf, renderableTrees, slugify, type CityEntry } from "../../lib/trees";
-
-/** The trees a city's FACE is chosen from: the ones its web page shows, so
- * the app and Google wear the same tree (qa's one-face check, 2026-09-24);
- * only a city with nothing on the web yet (all app-only) picks from the feed. */
-function faceTrees(c: CityEntry) {
-  const web = renderableTrees(c);
-  return web.length ? web : feedTreesOf(c);
-}
+import { cityIsInFeed, feedTreesOf, slugify, type CityEntry } from "../../lib/trees";
 import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
 import { COUNTRY_MIN_CITIES, groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey, parkTitle } from "../../lib/parks";
@@ -83,7 +75,7 @@ export async function GET() {
     ...(popularity.get(c.id) ? { popularity: popularity.get(c.id) } : {}),
     // The city page, the map sidebar, /cities, /countries and the app all show
     // this one picture now. hero_tree_id is how a person overrides it.
-    face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, face_tree_id: (c.data as any).face_tree_id, trees: faceTrees(c) })),
+    face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, face_tree_id: (c.data as any).face_tree_id, trees: faceTreesOf(c) })),
     // The people named as this city's ambassadors, so the app's city page
     // prints the same row the website prints under the intro (2026-10-03).
     // Only those who consented to be named; the list is an ANSWER.
@@ -156,7 +148,7 @@ export async function GET() {
       .sort((a, b) => feedTreesOf(b).length - feedTreesOf(a).length
         || a.data.city.localeCompare(b.data.city));
     const face = faceId(countryFaceTree(c.data.face_tree_id,
-      inCountry.map((city) => ({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees: faceTrees(city) }))));
+      inCountry.map((city) => ({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees: faceTreesOf(city) }))));
     return {
       slug: c.data.slug ?? c.id,
       name: c.data.country,

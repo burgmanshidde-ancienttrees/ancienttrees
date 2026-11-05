@@ -10,7 +10,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, hasQuestionPage, type CityEntry } from "../lib/trees";
 import { collectionEntries } from "../lib/collection-rank";
 import { speciesCommon, speciesPageSlugs } from "../lib/species";
-import { usablePhoto, metaImageUrls, ogImageUrl, cityFaceTree } from "../lib/images";
+import { usablePhoto, metaImageUrls, ogImageUrl, cityFaceTree, faceTreesOf } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { peakFor } from "../lib/phenology";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -261,7 +261,7 @@ const listElements = trees.map((t, i) => {
 // check compared browse.json against the Swift screens and never looked at
 // what the meta tags say. Same function now, so there is one answer.
 const facePhotoUrl = (() => {
-  const t = cityFaceTree({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees });
+  const t = cityFaceTree({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees: faceTreesOf(city) });
   return t ? (usablePhoto(t)?.url ?? null) : null;
 })();
 const cityOgImage = facePhotoUrl ? `\n<meta property="og:image" content="${esc(ogImageUrl(facePhotoUrl))}">` : "";
