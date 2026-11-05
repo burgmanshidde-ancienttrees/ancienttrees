@@ -61,7 +61,7 @@ const OPTS = ["walks", "offline", "season", "log"] as const;
     <p class="at-sheet-p">{U.plusAskBody}</p>
     <textarea class="plus-idea" maxlength="600" rows="4" placeholder={U.plusIdeaPh} aria-label={U.plusAskBody}></textarea>
     <div class="at-sheet-btns">
-      <button type="button" class="sheet-b sheet-b--primary plus-next" data-skip={U.plusSkip} data-next={U.plusNext}>{U.plusSkip}</button>
+      <button type="button" class="sheet-b sheet-b--quiet plus-next" data-skip={U.plusSkip} data-next={U.plusNext}>{U.plusSkip}</button>
     </div>
   </div>
   <div class="plus-step" data-step="choice" hidden>
@@ -137,7 +137,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Skip while the field is empty, so leaving it is plainly allowed (Hidde,
   // 2026-11-05: "ik zou hier wel op vastlopen"); Next once something is typed.
   var next = dlg.querySelector('.plus-next');
-  function label() { next.textContent = (idea.value || '').trim() ? next.getAttribute('data-next') : next.getAttribute('data-skip'); }
+  // Skip is the quiet way out; green only once there is something to send on
+  // (Hidde, 2026-11-05: "design ziet er beter uit"), as the app.
+  function label() {
+    var typed = !!(idea.value || '').trim();
+    next.textContent = typed ? next.getAttribute('data-next') : next.getAttribute('data-skip');
+    next.classList.toggle('sheet-b--primary', typed);
+    next.classList.toggle('sheet-b--quiet', !typed);
+  }
   idea.addEventListener('input', label);
   next.addEventListener('click', function() { show('choice'); });
   // Up to two; "None of these" stands alone, so ticking it clears the others

@@ -534,6 +534,10 @@ struct ProfileView: View {
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
+                // A Link centres a label's wrapped lines, so "Rate the app"'s
+                // second subtitle line sat in the middle of the row (Hidde,
+                // 2026-11-05). Apple's Settings keeps a subtitle flush left.
+                .multilineTextAlignment(.leading)
                 Spacer()
                 Image(systemName: "arrow.up.right")
                     .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))

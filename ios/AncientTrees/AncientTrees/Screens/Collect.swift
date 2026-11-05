@@ -572,18 +572,17 @@ struct CollectView: View {
 
     private func laneTab(_ title: String, _ which: Lane, id: String) -> some View {
         let on = lane == which
-        return Button { lane = which } label: {
-            Text(title)
-                .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(on ? Brand.ink : Brand.inkSoft)
-                .padding(.vertical, 12)
-                .overlay(alignment: .bottom) {
-                    Rectangle().fill(on ? Brand.moss : .clear).frame(height: 2)
-                }
-                .contentShape(.rect)
-        }
-        .buttonStyle(.plain)
-        .accessibilityAddTraits(on ? [.isSelected] : [])
+        // A tap, not a Button: the tabs sit in the sheet a thumb raises
+        // (sheetTap, 2026-11-05).
+        return Text(title)
+            .font(.system(size: 16, weight: .semibold))
+            .foregroundStyle(on ? Brand.ink : Brand.inkSoft)
+            .padding(.vertical, 12)
+            .overlay(alignment: .bottom) {
+                Rectangle().fill(on ? Brand.moss : .clear).frame(height: 2)
+            }
+            .sheetTap { lane = which }
+            .accessibilityAddTraits(on ? [.isSelected] : [])
         .accessibilityIdentifier(id)
     }
 
@@ -719,16 +718,14 @@ struct CollectView: View {
         VStack(alignment: .leading, spacing: 14) {
             // No line explaining the bookmark (Hidde, 2026-10-13: the icon
             // speaks for itself).
-            Button { navigator.selectTab = 0 } label: {
-                Label("Find trees near you", systemImage: "map")
-                    .font(.brand(16, .bold))
-                    .foregroundStyle(Brand.ink)
-                    .frame(maxWidth: .infinity).frame(height: 50)
-                    .background(Brand.surface, in: .rect(cornerRadius: 12))
-                    .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(Brand.ink.opacity(0.22), lineWidth: 1) }
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("want-find-trees")
+            Label("Find trees near you", systemImage: "map")
+                .font(.brand(16, .bold))
+                .foregroundStyle(Brand.ink)
+                .frame(maxWidth: .infinity).frame(height: 50)
+                .background(Brand.surface, in: .rect(cornerRadius: 12))
+                .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(Brand.ink.opacity(0.22), lineWidth: 1) }
+                .sheetTap { navigator.selectTab = 0 }
+                .accessibilityIdentifier("want-find-trees")
         }
     }
 
@@ -765,15 +762,13 @@ struct CollectView: View {
             // out, Add a tree opens this same sheet, so the two were one
             // control drawn twice; the one that goes is the one whose label
             // describes something you cannot do yet.
-            Button { signingIn = true } label: {
-                Text("Sign in")
-                    .font(.brand(16, .bold))
-                    .foregroundStyle(Brand.surface)
-                    .frame(maxWidth: .infinity).frame(height: 48)
-                    .background(Brand.moss, in: .capsule)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("lane-signin")
+            Text("Sign in")
+                .font(.brand(16, .bold))
+                .foregroundStyle(Brand.surface)
+                .frame(maxWidth: .infinity).frame(height: 48)
+                .background(Brand.moss, in: .capsule)
+                .sheetTap { signingIn = true }
+                .accessibilityIdentifier("lane-signin")
         }
         .padding(.top, 4)
         .padding(.bottom, barDepth)
@@ -954,32 +949,24 @@ struct CollectView: View {
                             // hit-test-only trick, because contentShape everywhere
                             // else in this codebase enlarges an already-44 frame,
                             // it does not fake one.
-                            Button { navigator.push = .followList(followers: true) } label: {
-                                (Text("\(profiles.followers)").fontWeight(.semibold).foregroundStyle(Brand.ink)
-                                    + Text(" followers"))
-                                    // The 44 INSIDE the button, so the button
-                                    // itself is 44 tall (appfit measured 20
-                                    // when the frame sat outside it).
-                                    .frame(minHeight: 44)
-                                    .contentShape(.rect)
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityIdentifier("mytrees-followers")
+                            // Taps, not Buttons: this header is the sheet's
+                            // handle (BottomSheet sheetTap, 2026-11-05).
+                            (Text("\(profiles.followers)").fontWeight(.semibold).foregroundStyle(Brand.ink)
+                                + Text(" followers"))
+                                // The 44 INSIDE the control, so it is 44 tall
+                                // (appfit measured 20 when the frame sat outside).
+                                .frame(minHeight: 44)
+                                .sheetTap { navigator.push = .followList(followers: true) }
+                                .accessibilityIdentifier("mytrees-followers")
                             // 44 to hit, 20 to lay out: the touch frame
                             // overhangs the row instead of pushing the lanes
                             // 30 points down (2026-10-10, the spacing pass).
                             .padding(.vertical, -12)
-                            Button { navigator.push = .followList(followers: false) } label: {
-                                (Text("\(profiles.following)").fontWeight(.semibold).foregroundStyle(Brand.ink)
-                                    + Text(" following"))
-                                    // The 44 INSIDE the button, so the button
-                                    // itself is 44 tall (appfit measured 20
-                                    // when the frame sat outside it).
-                                    .frame(minHeight: 44)
-                                    .contentShape(.rect)
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityIdentifier("mytrees-following")
+                            (Text("\(profiles.following)").fontWeight(.semibold).foregroundStyle(Brand.ink)
+                                + Text(" following"))
+                                .frame(minHeight: 44)
+                                .sheetTap { navigator.push = .followList(followers: false) }
+                                .accessibilityIdentifier("mytrees-following")
                             // 44 to hit, 20 to lay out: the touch frame
                             // overhangs the row instead of pushing the lanes
                             // 30 points down (2026-10-10, the spacing pass).
@@ -1008,23 +995,22 @@ struct CollectView: View {
             // the top corner of the You tab: a small icon, never a big button.
             // Same 44pt circle and hairline as the other icon buttons here.
             if account.isSignedIn {
-                Button { navigator.push = .findPeople } label: {
-                    // A plain white disc, the country chips' white, centred
-                    // on the photo (2026-10-10): the outline made it one more
-                    // style in the header, and grey vanished on the sheet.
-                    // THE GEAR'S TWIN (Hidde, 2026-10-30: the two "niet
-                    // helemaal goed uitgelijnd of op elkaar afgestemd"): the
-                    // same white disc and 18 point glyph, reaching 4 into the
-                    // page margin so its circle stands on the gear's 16 point
-                    // edge, one column under it.
-                    Image(systemName: "person.badge.plus")
-                        .font(.system(size: 18, weight: .medium))
-                        .foregroundStyle(Brand.ink)
-                        .frame(width: 44, height: 44)
-                        .background(Brand.surface, in: .circle)
-                }
+                // A plain white disc, the country chips' white, centred
+                // on the photo (2026-10-10): the outline made it one more
+                // style in the header, and grey vanished on the sheet.
+                // THE GEAR'S TWIN (Hidde, 2026-10-30: the two "niet
+                // helemaal goed uitgelijnd of op elkaar afgestemd"): the
+                // same white disc and 18 point glyph, reaching 4 into the
+                // page margin so its circle stands on the gear's 16 point
+                // edge, one column under it. A tap, not a Button: the
+                // header is the sheet's handle (sheetTap, 2026-11-05).
+                Image(systemName: "person.badge.plus")
+                    .font(.system(size: 18, weight: .medium))
+                    .foregroundStyle(Brand.ink)
+                    .frame(width: 44, height: 44)
+                    .background(Brand.surface, in: .circle)
+                    .sheetTap { navigator.push = .findPeople }
                 .padding(.trailing, -4)
-                .buttonStyle(.plain)
                 .accessibilityLabel("Find people")
                 .accessibilityIdentifier("mytrees-find-people")
             }

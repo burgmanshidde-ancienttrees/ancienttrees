@@ -51,7 +51,8 @@ struct PlaceLink<Label: View>: View {
     @Environment(Navigator.self) private var navigator
 
     var body: some View {
-        Button { navigator.push = route } label: { label() }
+        // A tap, not a Button: it sits in the map's sheet (sheetTap, 2026-11-05).
+        label().sheetTap { navigator.push = route }
     }
 }
 
@@ -124,20 +125,16 @@ struct EmptyPlaceCard: View {
                     .foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
-            Button {
-                // The same deed every other "Add a tree" asks for (Discover's
-                // growing card): the root opens the camera flow.
-                navigator.collectNearby = true
-            } label: {
-                Label("Add a tree", systemImage: "camera.fill")
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(Brand.ink)
-                    .frame(maxWidth: .infinity).frame(height: 48)
-                    .background(Brand.surface, in: .capsule)
-                    .contentShape(.capsule)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("empty-place-add")
+            // The same deed every other "Add a tree" asks for (Discover's
+            // growing card): the root opens the camera flow. A tap, not a
+            // Button: this card sits in the map's sheet (sheetTap, 2026-11-05).
+            Label("Add a tree", systemImage: "camera.fill")
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(Brand.ink)
+                .frame(maxWidth: .infinity).frame(height: 48)
+                .background(Brand.surface, in: .capsule)
+                .sheetTap { navigator.collectNearby = true }
+                .accessibilityIdentifier("empty-place-add")
         }
         .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)

@@ -342,11 +342,12 @@ struct AmbassadorWantedRow: View {
     }
 
     private var row: some View {
-        Button(action: tap) {
+        // A tap, not a Button: the seat sits in the map's sheet header, which
+        // a thumb raises the sheet by (BottomSheet sheetTap, 2026-11-05).
+        Group {
             if iconOnly { seatIcon } else if seated { seatedLine } else { openRow }
         }
-        .buttonStyle(.plain)
-        .disabled(asked || sending)
+        .sheetTap(enabled: !(asked || sending), tap)
         .accessibilityHint(asked ? "" : (seated ? "Become an ambassador" : "Become the ambassador"))
         .accessibilityIdentifier("ambassador-wanted")
         .task(id: account.isSignedIn) {

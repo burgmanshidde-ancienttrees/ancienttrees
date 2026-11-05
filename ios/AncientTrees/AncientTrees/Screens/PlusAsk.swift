@@ -19,11 +19,9 @@ struct PlusRow: View {
     @State private var asking = false
 
     var body: some View {
-        Button {
-            Measure.event("plus-open", ["from": "city"])
-            asking = true
-        } label: {
-            HStack(spacing: 10) {
+        // A tap, not a Button: this row sits in the map's sheet header, the
+        // handle a thumb raises the sheet by (BottomSheet sheetTap).
+        HStack(spacing: 10) {
                 Image(systemName: "sparkles")
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(Brand.moss)
@@ -43,9 +41,10 @@ struct PlusRow: View {
                     .foregroundStyle(Brand.inkSoft.opacity(0.6))
             }
             .frame(minHeight: 44)
-            .contentShape(.rect)
-        }
-        .buttonStyle(.plain)
+            .sheetTap {
+                Measure.event("plus-open", ["from": "city"])
+                asking = true
+            }
         .accessibilityIdentifier("plus-row")
         .sheet(isPresented: $asking) { PlusQuestionSheet(city: city, openedFrom: "city") }
     }
@@ -86,11 +85,14 @@ struct PlusQuestionSheet: View {
         switch step {
         case .idea:
             BrandSheet(icon: "sparkles", title: "Ancient Trees Plus",
-                       message: "We're working on Plus to keep Ancient Trees going. What would you like it to do that it doesn't do yet?",
+                       message: "We're working on Plus to make Ancient Trees a sustainable platform. What would you like it to do that it doesn't do yet?",
                        // Skip while the field is empty, so leaving it is plainly
-                       // allowed (Hidde, 2026-11-05: "ik zou hier wel op vastlopen").
-                       buttons: [.primary(idea.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Skip" : "Next",
-                                          id: "plus-next") { step = .choice }],
+                       // allowed (Hidde, 2026-11-05: "ik zou hier wel op vastlopen"),
+                       // as the quiet way out; green only once there is
+                       // something to send on.
+                       buttons: [idea.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+                                 ? .quiet("Skip", id: "plus-next") { step = .choice }
+                                 : .primary("Next", id: "plus-next") { step = .choice }],
                        extra: { ideaField })
                 .accessibilityIdentifier("plus-sheet")
         case .choice:

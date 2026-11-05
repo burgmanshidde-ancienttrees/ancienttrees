@@ -26,17 +26,16 @@ struct PlaceAmbassadors: View {
                     // The row opens the person's profile while it is public,
                     // with a chevron; otherwise it stays a byline (2026-10-19).
                     if let id = a.profile {
-                        Button { navigator.push = .person(id) } label: {
-                            HStack {
-                                AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
-                                Spacer(minLength: 8)
-                                Image(systemName: "chevron.right")
-                                    .font(.caption.weight(.semibold)).foregroundStyle(Brand.inkSoft)
-                            }
-                            .frame(minHeight: 44)
-                            .contentShape(.rect)
+                        // A tap, not a Button: the sheet header is a handle
+                        // (BottomSheet sheetTap, 2026-11-05).
+                        HStack {
+                            AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
+                            Spacer(minLength: 8)
+                            Image(systemName: "chevron.right")
+                                .font(.caption.weight(.semibold)).foregroundStyle(Brand.inkSoft)
                         }
-                        .buttonStyle(.plain)
+                        .frame(minHeight: 44)
+                        .sheetTap { navigator.push = .person(id) }
                         .accessibilityIdentifier("ambassador-profile")
                     } else {
                         AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)

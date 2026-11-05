@@ -104,7 +104,21 @@ extension View {
     /// control works when you tap it and is inert while you drag, with no
     /// state to keep and nothing to get out of step.
     func tapUnlessDragged(_ action: @escaping () -> Void) -> some View {
-        self.contentShape(.rect).onTapGesture(perform: action)
+        self.contentShape(.rect).modifier(SheetStillTap(enabled: true, action: action))
+    }
+
+    /// A row or control INSIDE a sheet that opens something: tapUnlessDragged,
+    /// and still one button to VoiceOver and the UI tests. Hidde, 2026-11-05:
+    /// "als je de lijst omhoog scrollt op my trees of een stadspagina ... dat
+    /// hij dan alsnog denkt dat je wat inklikt": a Button fires when the
+    /// finger lifts inside it, so raising the sheet by its Plus or ambassador
+    /// row, or by the follower counts, opened them.
+    func sheetTap(enabled: Bool = true, _ action: @escaping () -> Void) -> some View {
+        self.contentShape(.rect)
+            .modifier(SheetStillTap(enabled: enabled, action: action))
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAction { if enabled { action() } }
     }
 }
 
@@ -201,6 +215,43 @@ extension EnvironmentValues {
     }
 }
 
+/// WHEN THE SHEET LAST MOVED UNDER A FINGER (2026-11-05, the Plus row on the
+/// SE). A TapGesture alone was not enough: below full height the sheet rises
+/// WITH the finger, so the row never moves relative to the finger and the tap
+/// still counts as still. The sheet's drag stamps this clock, and a tap that
+/// lands within a moment of a drag does nothing. A class, not state, so the
+/// stamp redraws nothing.
+final class SheetDragClock {
+    var lastMove = Date.distantPast
+    var justDragged: Bool { Date().timeIntervalSince(lastMove) < 0.35 }
+}
+
+private struct SheetDragClockKey: EnvironmentKey {
+    static let defaultValue = SheetDragClock()
+}
+
+extension EnvironmentValues {
+    var sheetDragClock: SheetDragClock {
+        get { self[SheetDragClockKey.self] }
+        set { self[SheetDragClockKey.self] = newValue }
+    }
+}
+
+/// The tap every sheet control uses: still finger, and the sheet did not just
+/// move.
+struct SheetStillTap: ViewModifier {
+    let enabled: Bool
+    let action: () -> Void
+    @Environment(\.sheetDragClock) private var clock
+
+    func body(content: Content) -> some View {
+        content.onTapGesture {
+            guard enabled, !clock.justDragged else { return }
+            action()
+        }
+    }
+}
+
 /// A card inside a sheet, TAPPED rather than pressed.
 ///
 /// Use this instead of NavigationLink for anything that lives in a sheet's
@@ -227,7 +278,7 @@ struct SheetLink<Content: View>: View {
     var body: some View {
         content
             .contentShape(.rect)
-            .onTapGesture { navigator.push = route }
+            .modifier(SheetStillTap(enabled: true) { navigator.push = route })
             // ONE ELEMENT, the way a NavigationLink was. Without this the card
             // stops being a single thing: its title, its species line and its
             // age each become their own element carrying the card's identifier,
@@ -282,6 +333,7 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// system tore down would make the whole list dead until the next drag,
     /// which is a worse bug than the one being fixed.
     @GestureState private var dragging = false
+    @State private var clock = SheetDragClock()
     @Environment(\.floatingBarDepth) private var barDepth
     @Environment(\.sheetPageClose) private var pageClose
     @Environment(\.sheetFullInset) private var fullInset
@@ -580,6 +632,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                 DragGesture(minimumDistance: 18)
                     .updating($dragging) { _, state, _ in state = true }
                     .onChanged { value in
+                        clock.lastMove = Date()
                         // Claim the gesture only in the cases the rules above
                         // describe. Everything else belongs to the list.
                         // Nothing to list: the sheet stays where it is (Hidde,
@@ -607,6 +660,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                         }
                     }
                     .onEnded { value in
+                        clock.lastMove = Date()
                         defer { handingOff = false }
                         guard drag != 0 else { return }
                         // WHERE THE FLICK WOULD END, not where the finger let
@@ -649,6 +703,7 @@ struct BottomSheet<Header: View, Content: View>: View {
         // would still be there. It is what lets the sheet paint the last thirty
         // points of the screen.
         .ignoresSafeArea(edges: [.top, .bottom])
+        .environment(\.sheetDragClock, clock)
         .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
     }
 }

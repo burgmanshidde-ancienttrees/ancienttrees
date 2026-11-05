@@ -994,7 +994,15 @@ struct MapTab: View {
         VStack(spacing: 10) {
             Text("You are standing in front of").font(.caption).foregroundStyle(.secondary)
             Text(t.name).font(.title3.bold()).multilineTextAlignment(.center)
-            Button {
+            // A tap, not a Button, drawn as the green pill it was: this card
+            // sits in the sheet a thumb raises (sheetTap, 2026-11-05).
+            Label(saved.isVisited(t.id) ? "Collected" : "Photograph to collect",
+                  systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "camera")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity).padding(.vertical, 13)
+                .background(saved.isVisited(t.id) ? Color(Brand.inkSoft) : Brand.canopy, in: .capsule)
+                .sheetTap {
                 // Ticking is collecting, and collecting needs the account
                 // (Hidde, 2026-08-25, on hearts working while signed out:
                 // "all these functionalities of saving stuff should only be
@@ -1015,15 +1023,8 @@ struct MapTab: View {
                 navigator.collectAbout = t.name
                 navigator.collectTree = t.id
                 navigator.collectNearby = true
-            } label: {
-                Label(saved.isVisited(t.id) ? "Collected" : "Photograph to collect",
-                      systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "camera")
-                    .font(.subheadline.weight(.semibold))
-                    .frame(maxWidth: .infinity).padding(.vertical, 13)
             }
             .accessibilityIdentifier("seen-tick")
-            .buttonStyle(.borderedProminent)
-            .tint(saved.isVisited(t.id) ? Color(Brand.inkSoft) : Brand.canopy)
             .sensoryFeedback(.success, trigger: saved.isVisited(t.id)) { _, now in now }
         }
         .padding(16)
