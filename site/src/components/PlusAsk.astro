@@ -170,11 +170,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   dlg.querySelector('.plus-skip').addEventListener('click', close);
   dlg.querySelector('.plus-done').addEventListener('click', close);
-  // Back from signing in with "Tell me" still to press: reopen that step, never
-  // press it on their behalf.
+  // Back from signing in after pressing "Tell me": the press is finished, as a
+  // save is after sign-in (signin-js landed()), and the sheet shows the receipt
+  // (Hidde, 2026-11-05: "i have to press tell me again"). The app does the same
+  // (PlusAsk.swift, join() on the sign-in sheet's dismiss).
   if (window.atPendingPlus && C) {
     window.atPendingPlus = null;
-    C.gate(function() { open('thanks'); }, function() {});
+    C.gate(function() { open('thanks'); onList(); }, function() {});
   }
 });
 </script>
@@ -194,12 +196,19 @@ document.addEventListener('DOMContentLoaded', function() {
   .plus-row :global(.plus-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
   @media (hover: hover) { .plus-row:hover .plus-name { text-decoration: underline; } }
 
-  .plus-idea { display: block; width: 100%; height: 104px; box-sizing: border-box; margin: 0 0 20px;
+  /* SPACING (Hidde, 2026-11-05: "sommige dingen staan te dicht op elkaar").
+     The sheet's own rules (dialog.at-sheet .at-sheet-p, .at-sheet-h) outrank a
+     scoped class, which left 4px over the field and 8 under the choice title;
+     :global(.plus-dialog) wins back the 20 the sheet uses between its parts,
+     and the buttons keep their own margin above them. */
+  :global(.plus-dialog) .plus-idea { margin: 20px 0 0; }
+  :global(.plus-dialog) .plus-choice-h { margin-bottom: 20px; }
+  :global(.plus-dialog) .plus-opts { margin: 0; }
+  .plus-idea { display: block; width: 100%; height: 104px; box-sizing: border-box;
     padding: 14px 16px; border: 1px solid var(--cream-dark); border-radius: 16px; background: var(--surface);
     font: inherit; font-size: 16px; color: var(--ink); resize: none; }
   .plus-idea::placeholder { color: var(--ink-light); }
-  .plus-choice-h { margin-bottom: 20px; }
-  .plus-opts { display: flex; flex-direction: column; gap: 8px; margin: 0 0 20px; text-align: left; }
+  .plus-opts { display: flex; flex-direction: column; gap: 8px; text-align: left; }
   .plus-opt { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid var(--cream-dark);
     border-radius: 16px; font-size: 15px; line-height: 20px; color: var(--ink); cursor: pointer; }
   .plus-opt input { width: 20px; height: 20px; margin: 0; flex: none; accent-color: var(--moss); }
