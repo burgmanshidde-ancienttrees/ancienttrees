@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: deploy green again, ahead of the Guardian
+
+- **Context:** Joe Pinner (Guardian environment desk, Scott Trust bursary, profile checked live) asked for an interview after today's national press batch mail to environment.desk; Hidde's reply is drafts/reply-joe-guardian-2026-11-05.md, call 2026-11-06 12:00 UK.
+- **Live now (build 04938e18, then e635e434):** the search index listed all 230 app-only trees (search results opening pages that do not exist), so qa's app-first check failed every deploy from 15:09. It now lists only trees with a web page; live search has 4,046 rows, none app-only.
+- **Smoke test green:** it picked Aachen, whose one-tree place page is now a redirect stub; stubs are skipped. The next city's tree page then showed DRIFT on the nearby cards' edge-to-edge photo block, which the rule already exempts in words; the code now does too (a painted child spanning its column is skipped).
+
 ## 2026-11-05 session: the app no longer holds on a return, Plus question tidied, switches without a release
 
 - **The hold on coming back to the app** (Hidde: "als ik terugkom heeft de app even nodig"): every new feed (most deploys) made the map draw a pin image per species NAME, a few hundred, on the main thread; there are about fifteen shapes. Pins are now drawn per shape, and the 12 MB of downloaded feeds is written off the main thread. Simulator, 17 Pro: the map's tree sync from 2.15 s to 0.12 s. A 40-second walk over map, list, Discover and My trees afterwards kept the main thread busy 0.35 s in all. Needs build 40.
