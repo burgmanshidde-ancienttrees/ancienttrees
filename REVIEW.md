@@ -23,6 +23,19 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05
+
+Web half: the last 24 hours were the Plus question (web strings in eight languages, "I'd like to…", Skip, pick up to two: consistent with each other), card bookmark CSS, earned-back pause, health.py. No em dashes anywhere in site/dist HTML. Standing faults re-checked on the built site:
+
+- WARN (seventeenth review to see it) meta description prints a planting or event year as an age: `grep -rlE 'content="A (17|18|19|20)[0-9]{2}-year-old' site/dist` still finds 96 pages (e.g. /waipoua-forest/te-matua-ngahere, /kamakura/great-ginkgo-of-tsurugaoka-hachimangu, /hong-kong/stone-wall-trees-of-forbes-street). Hard rule 2, Verify (a derived age states its basis). Build the qa.py check on built HTML first, then fix the meta template.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "Every submission is verified against independent sources before it goes live" / "We check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Eleventh review in a row. Replacement: "We check every submission before it goes live; a good photograph with a GPS fix is enough to start a page." Translations too.
+
+App half (iPhone SE: review-ask, search, signin-email, signin, species-pick, species):
+
+- NOTE APP search.png: the species row for "lis" reads "Elm, listed as Lombarts' Elm" with "Ulmus 'Lombartsii' · 1 tree"; a reader sees a common name that points at itself under another name, and a one-tree cultivar ranked above European White Elm. Same alias-list family as tree.png on 11-03. Show one name; for a session.
+- NOTE APP species.png: captured mid-transition, the Aleppo Pine page is overlaid by the launch splash tagline ("Trees worth the walk, wherever you are.") ghosting through the body text. Probably a sweep timing artefact, not shipped behaviour, but the sweep reviewed a screen no person sees; wait for the splash to leave before the shot.
+- signin, signin-email, review-ask, species-pick: read consistently ("Sign in to keep this one", "An account keeps what you collect and save", "Growing near you first"); nothing contradicted. signin-email shows the same first sheet as signin, not an email step (sweep never advances), so it reviews nothing new.
+
 ## 2026-11-04 code (full)
 
 Nothing new in the code. Read this run: web scripts tree-actions-js, visited-sync-js, share-js, tree-notes-js, map-filters-js, collection-js (ids/visited); app force-unwrap and request-path scan across Screens and Kit. Not read in full: the rest of the app Screens and the larger web scripts (signin-js, add-photo-js, my-trees-js, worthit-js, profile-js, people-js, map.ts). Seen and not reported (too narrow to be sure): atPushVisited drops a tick if the visited list is still in flight (seen is null); SharedTreeView.swift:108 force-unwraps a URL built from a server filename.
