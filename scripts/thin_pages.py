@@ -31,7 +31,7 @@ import os
 import re
 import unicodedata
 
-from findable import findable, has_photo, enriched
+from findable import findable, has_photo, enriched, app_only
 from enrich import gaps as enrich_gaps
 
 # Only a tree page WITH a photograph stays in Google's index (Hidde, 2026-10-06:
@@ -227,8 +227,12 @@ def slugify(name):
 
 
 def renderable(t):
+    """A tree with a WEB page: a story, a pin, and not app-only (findable.app_only,
+    Hidde 2026-11-05: a new tree of ours lives in the app until a reader adds
+    to it). The website's own gate is treeIsRenderable in site/src/lib/trees.ts."""
     loc = t.get("location") or {}
-    return bool(t.get("story")) and loc.get("latitude") is not None and loc.get("longitude") is not None
+    return (bool(t.get("story")) and loc.get("latitude") is not None
+            and loc.get("longitude") is not None and not app_only(t))
 
 
 def question_evidence():

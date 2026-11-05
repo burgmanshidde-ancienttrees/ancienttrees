@@ -2380,6 +2380,60 @@ def check_every_feed_field_reaches_the_app():
     return lines or ["crosscheck failed without saying why"]
 
 
+def check_an_app_only_tree_stays_off_the_web():
+    """A new tree of ours is in the app's feed and nowhere on the website
+    until a reader adds to it (Hidde, 2026-11-05, APP FIRST; the rule in
+    scripts/findable.py app_only() and site/src/lib/app-first.ts).
+
+    Two implementations of one rule, Python for the scripts and TypeScript
+    for the build, is exactly where the two drift apart with nothing going
+    red: a tree the scripts call app-only that the build still gives a page
+    is a new URL for Google to read, which is the thing the rule exists to
+    stop; a tree the build leaves out of trees.json is a tree no phone ever
+    sees. So on the built site: no page, no line in either sitemap, and its id
+    in /api/trees.json. Removing this check needs Hidde.
+    """
+    from findable import app_only, APP_FIRST
+    if not APP_FIRST or not DIST.exists():
+        return []
+    from thin_pages import slugify
+    feed = DIST / "api" / "trees.json"
+    try:
+        feed_ids = {t.get("id") for t in json.loads(feed.read_text(encoding="utf-8")).get("trees") or []}
+    except (OSError, ValueError):
+        return ["app first: %s is missing or unreadable" % feed.relative_to(ROOT)]
+    maps = ""
+    for name in ("sitemap.xml", "sitemap-bing.xml"):
+        try:
+            maps += (DIST / name).read_text(encoding="utf-8")
+        except OSError:
+            pass
+    out, n = [], 0
+    for path in sorted((ROOT / "data" / "cities").glob("*.json")):
+        slug = path.stem
+        try:
+            city = json.loads(path.read_text(encoding="utf-8"))
+        except ValueError:
+            continue
+        for t in city.get("trees") or []:
+            loc = t.get("location") or {}
+            if not (t.get("story") and loc.get("latitude") is not None and loc.get("longitude") is not None):
+                continue
+            if not app_only(t):
+                continue
+            n += 1
+            page = "/%s/%s" % (slug, slugify(t.get("name") or ""))
+            if (DIST / slug / slugify(t.get("name") or "") / "index.html").exists():
+                out.append("app first: %s (%s) is app-only but the build made %s" % (t.get("id"), t.get("name"), page))
+            if page + "<" in maps or page + "\n" in maps:
+                out.append("app first: %s is app-only but a sitemap names %s" % (t.get("id"), page))
+            if t.get("id") not in feed_ids:
+                out.append("app first: %s (%s) is app-only but missing from /api/trees.json" % (t.get("id"), t.get("name")))
+    if n:
+        print("app first: %d tree(s) in the app and not on the website" % n)
+    return out
+
+
 def check_approved_photos_reach_the_feed():
     """Every approved photograph in the data must reach the app feed.
 
@@ -3648,6 +3702,7 @@ def main():
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
     failures += check_the_noindex_split_holds()
+    failures += check_an_app_only_tree_stays_off_the_web()
     failures += check_approved_photos_reach_the_feed()
     failures += check_every_feed_field_reaches_the_app()
     failures += check_every_language_gets_the_same_controls()

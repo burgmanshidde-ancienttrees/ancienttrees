@@ -146,7 +146,12 @@ PHOTO_EXEMPT_COUNTRIES = {"Portugal"}
 # research and writing go on into data/research/ (the shelf), a reader's tree
 # still ships. Baseline: data/web-freeze-baseline.json (trees live 11-05).
 # Lifting it is Hidde's, on 2026-12-03 or when Google turns earlier.
-SUPPLY_PAUSED = True
+# SUPERSEDED the same afternoon by APP FIRST (below, Hidde: "dit is mss wel
+# de moeite omdat we dan hopelijk via de app meer bomen gefotografeerd
+# worden"): a new tree of ours ships to the app at the usual pace and gets no
+# web page until a reader adds to it, so the website freezes by structure and
+# this switch goes back off. The baseline file stays, read by app_only().
+SUPPLY_PAUSED = False
 SUPPLY_PAUSE_BASELINE = "data/web-freeze-baseline.json"
 SUPPLY_PAUSE_UNTIL = "2026-12-03"
 
@@ -168,3 +173,47 @@ def reader_added(tree):
     if (tree.get("found_by_reader") or {}).get("tip"):
         return True
     return '"sighting_id"' in blob or '"contributor_user_id"' in blob
+
+
+# APP FIRST (Hidde, 2026-11-05: "dit is mss wel de moeite omdat we dan
+# hopelijk via de app meer bomen gefotografeerd worden"). A new tree of our
+# own is in every app feed from the day it is written and gets no web page,
+# pin, card, sitemap or search-index line until a reader adds to it; then
+# the page appears, indexable under the reader cut from its first day. Google
+# took the site back on 11-04 open and tagged pages alike (site-level), and
+# 38% of its ~145 daily requests went to pages we had just made: a page that
+# does not exist costs Google nothing to read. The website's copy of this
+# rule is site/src/lib/app-first.ts (treeIsAppOnly), the same three tests;
+# thin_pages.renderable() and qa's check_an_app_only_tree_stays_off_the_web()
+# read this one. False puts every tree on the web again; Hidde's switch.
+APP_FIRST = True
+APP_FIRST_BASELINE = "data/web-freeze-baseline.json"
+_APP_FIRST = {}
+
+
+def app_only(tree):
+    """In the app, not yet on the website: not in the baseline (trees live
+    2026-11-05, which keep their pages), no reader signal (reader_added), no
+    visible reader's note (data/tree-notes-live.json)."""
+    if not APP_FIRST:
+        return False
+    if not _APP_FIRST:
+        import json as _json
+        import os as _os
+        root = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+        try:
+            with open(_os.path.join(root, APP_FIRST_BASELINE), encoding="utf-8") as fh:
+                _APP_FIRST["base"] = set(_json.load(fh).get("ids") or [])
+        except (OSError, ValueError):
+            _APP_FIRST["base"] = None
+        try:
+            with open(_os.path.join(root, "data", "tree-notes-live.json"), encoding="utf-8") as fh:
+                _APP_FIRST["noted"] = set(_json.load(fh).get("trees") or [])
+        except (OSError, ValueError):
+            _APP_FIRST["noted"] = set()
+    base = _APP_FIRST["base"]
+    if base is None or tree.get("id") in base:
+        return False
+    if reader_added(tree) or tree.get("id") in _APP_FIRST["noted"]:
+        return False
+    return True

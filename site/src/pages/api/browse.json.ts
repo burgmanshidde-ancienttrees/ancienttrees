@@ -28,7 +28,7 @@
 // which put every Small-leaved Lime in the Lime facet and made the app's counts
 // quietly disagree with the website's.
 import { getCollection } from "astro:content";
-import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../../lib/trees";
+import { cityIsInFeed, feedTreesOf, slugify, type CityEntry } from "../../lib/trees";
 import { cityFaceTree, countryFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
 import { COUNTRY_MIN_CITIES, groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey, parkTitle } from "../../lib/parks";
@@ -40,13 +40,13 @@ import { cityPopularity } from "../../lib/popularity";
 import { favouriteCitySlugs, islandSlugs, COLLECTION_MONTHS, orderForSeason } from "../../lib/favourites";
 
 export async function GET() {
-  const cities = (await getCollection("cities")).filter(cityIsRenderable);
+  const cities = (await getCollection("cities")).filter(cityIsInFeed);
 
   // Which trees exist, so a facet can carry a count and never point at nothing.
   const treesBySlug = new Map<string, any[]>();
   const idToTree = new Map<string, any>();
   for (const city of cities) {
-    const ts = renderableTrees(city);
+    const ts = feedTreesOf(city);
     treesBySlug.set(city.id, ts);
     for (const t of ts) idToTree.set(t.id, { ...t, citySlug: city.id, city: city.data.city, country: city.data.country });
   }
@@ -75,7 +75,7 @@ export async function GET() {
     ...(popularity.get(c.id) ? { popularity: popularity.get(c.id) } : {}),
     // The city page, the map sidebar, /cities, /countries and the app all show
     // this one picture now. hero_tree_id is how a person overrides it.
-    face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, face_tree_id: (c.data as any).face_tree_id, trees: renderableTrees(c) })),
+    face: faceId(cityFaceTree({ hero_tree_id: c.data.hero_tree_id, face_tree_id: (c.data as any).face_tree_id, trees: feedTreesOf(c) })),
     // The people named as this city's ambassadors, so the app's city page
     // prints the same row the website prints under the intro (2026-10-03).
     // Only those who consented to be named; the list is an ANSWER.
@@ -145,10 +145,10 @@ export async function GET() {
     // introduced by its strongest place, not by whichever tree sorted first.
     const inCountry = cities
       .filter((x) => x.data.country === c.data.country)
-      .sort((a, b) => renderableTrees(b).length - renderableTrees(a).length
+      .sort((a, b) => feedTreesOf(b).length - feedTreesOf(a).length
         || a.data.city.localeCompare(b.data.city));
     const face = faceId(countryFaceTree(c.data.face_tree_id,
-      inCountry.map((city) => ({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees: renderableTrees(city) }))));
+      inCountry.map((city) => ({ hero_tree_id: city.data.hero_tree_id, face_tree_id: (city.data as any).face_tree_id, trees: feedTreesOf(city) }))));
     return {
       slug: c.data.slug ?? c.id,
       name: c.data.country,

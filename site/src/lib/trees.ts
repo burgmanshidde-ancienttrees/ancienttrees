@@ -13,15 +13,41 @@ import { haversineKm } from "./walks";
 import { slugify, legacySlugify } from "./slug";
 export { slugify, legacySlugify };
 import { cityHasQuestionPage } from "./question-page";
+import { treeIsAppOnly } from "./app-first";
 
 export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
 export type CityData = CollectionEntry<"cities">["data"];
 export type CityEntry = CollectionEntry<"cities">;
 
-/** Ported verbatim from tree_is_renderable(), build_site.py:2275. */
-export function treeIsRenderable(t: Tree): boolean {
+/** Ported verbatim from tree_is_renderable(), build_site.py:2275: a story and
+ * a pin. This is what the APP gets (the feeds under pages/api/ that the app
+ * reads: trees, browse, walks, version). */
+export function treeIsInFeed(t: Tree): boolean {
   const loc = t.location ?? {};
   return Boolean(t.story) && loc.latitude != null && loc.longitude != null;
+}
+
+/** What the WEBSITE renders: in the feed, and not app-only (./app-first,
+ * Hidde 2026-11-05: a new tree of ours lives in the app until a reader adds
+ * to it). Every page, pin, card, sitemap and search-index line goes through
+ * this; the app's feeds go through treeIsInFeed. */
+export function treeIsRenderable(t: Tree): boolean {
+  return treeIsInFeed(t) && !treeIsAppOnly(t);
+}
+
+/** A city belongs in the app's feeds once one tree does, app-only or not. */
+export function cityIsInFeed(city: CityEntry): boolean {
+  return city.data.trees.some(treeIsInFeed);
+}
+
+export function feedTreesOf(city: CityEntry): Tree[] {
+  return city.data.trees.filter(treeIsInFeed);
+}
+
+/** The app's walks plan over every tree it has (walks.json); the website's
+ * over the trees it shows (walkableTrees). */
+export function walkableFeedTrees(city: CityEntry): Tree[] {
+  return feedTreesOf(city).filter((t) => !t.paid_entry);
 }
 
 /** Ported verbatim from slugify(), build_site.py:918. Order matters: strip

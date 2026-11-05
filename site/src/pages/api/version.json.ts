@@ -3,7 +3,7 @@
 // hundred bytes against three quarters of a megabyte, which is the whole point
 // of having two files instead of one.
 import { getCollection } from "astro:content";
-import { cityIsRenderable } from "../../lib/trees";
+import { cityIsInFeed } from "../../lib/trees";
 import { feedTrees, feedVersion } from "../../lib/app-feed";
 import { EARLY_ADOPTER_UNTIL } from "../../lib/early-adopter";
 // EVERY FEED THE APP DOWNLOADS, not just the trees.
@@ -26,7 +26,7 @@ import { GET as speciesFeed } from "./species.json";
 import { GET as walksFeed } from "./walks.json";
 
 export async function GET() {
-  const cities = (await getCollection("cities")).filter(cityIsRenderable);
+  const cities = (await getCollection("cities")).filter(cityIsInFeed);
   const trees = feedTrees(cities);
   const [browse, species, walks] = await Promise.all([
     browseFeed().then((r) => r.text()),

@@ -23,7 +23,8 @@ import type { CityEntry } from "./trees";
 import { peakFor, seasonKey } from "./phenology";
 import { colourMonths, isSeasonal, seasonOfMonth, type Season } from "./seasons";
 import { miniPin } from "./map";
-import { renderableTrees, slugify } from "./trees";
+import { feedTreesOf, slugify } from "./trees";
+import { treeIsAppOnly } from "./app-first";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText, heroFrame } from "./images";
 import { savesOf } from "./saves";
 import { BASE_URL } from "./schema";
@@ -148,8 +149,10 @@ export interface FeedPhoto {
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
   const out: FeedTree[] = [];
   for (const city of cities) {
-    const trips = dayTrips(city.data.city, renderableTrees(city) as any);
-    for (const t of renderableTrees(city)) {
+    // The app gets every tree with a story and a pin, app-only ones included
+    // (./app-first): the website's renderableTrees would leave those out.
+    const trips = dayTrips(city.data.city, feedTreesOf(city) as any);
+    for (const t of feedTreesOf(city)) {
       const loc = t.location ?? ({} as any);
       if (loc.latitude == null || loc.longitude == null) continue;
       const shots = usablePhotos(t);
@@ -189,7 +192,11 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           return Number.isFinite(g) && g > 0 ? Math.round(g) : null;
         })(),
         saves: savesOf(t.id),
-        url: `/${city.id}/${slugify(t.name)}`,
+        // An app-only tree has no page yet: its link is the city map with
+        // this tree's card open (city-map-script.ts reads #tree=<id>), so a
+        // share from the app lands somewhere true. The page's own url the
+        // day a reader adds to it.
+        url: treeIsAppOnly(t) ? `/${city.id}#tree=${t.id}` : `/${city.id}/${slugify(t.name)}`,
         // No `register`: the official register is shown on the website only,
         // in the tree's sources (Hidde, 2026-10-08: remove from the app).
         ...(trips.get(t.id) ? { day_trip: trips.get(t.id) } : {}),

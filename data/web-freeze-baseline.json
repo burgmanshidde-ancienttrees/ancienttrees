@@ -1,5 +1,5 @@
 {
- "note": "Trees live on 2026-11-05, when Hidde paused new trees of our own for four weeks (to 2026-12-03) so Google's crawl reaches the noindex clean-up before the next update: 38% of Google's ~145 daily requests went to pages we had just made. These keep their pages (hard rule 3). Read by preflight check_own_supply_is_paused(). A reader's tree is exempt.",
+ "note": "APP FIRST baseline: trees live on 2026-11-05, which keep their web pages (hard rule 3). A tree of ours not on this list, with no reader signal and no visible note, is in the app and not on the website until a reader adds to it (findable.app_only, site/src/lib/app-first.ts). Written when Hidde paused new web pages of our own (to 2026-12-03) so Google's crawl reaches the noindex clean-up before the next update: 38% of Google's ~145 daily requests went to pages we had just made. These keep their pages (hard rule 3). Read by preflight check_own_supply_is_paused(). A reader's tree is exempt.",
  "since": "2026-11-05",
  "until": "2026-12-03",
  "ids": [
