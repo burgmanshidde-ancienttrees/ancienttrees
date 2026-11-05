@@ -117,6 +117,7 @@ FOCUS = {"United States", "United Kingdom", "Japan", "France", "Spain", "Portuga
 CAPITALS = {"london", "paris", "madrid", "lisbon", "rome", "berlin", "amsterdam", "brussels",
             "vienna", "bern", "copenhagen", "oslo", "stockholm", "dublin", "tokyo",
             "washington-dc", "canberra", "ottawa", "luxembourg", "new-york"}
+CAPITALS_OPEN = True
 DESK = re.compile(r"news|nieuws|desk|redac|redaz|redak|redaction|cronaca|editor|tips|"
                   r"^city|(trib|gtr)city|metro|local|lokal|^stadt|noticias|actu|nouvelles", re.I)
 NOT_DESK = re.compile(r"^(ad|ads|adinfo|abo|abos|advert|sales|verkoop|vente|ventas|marketing|"
@@ -142,7 +143,10 @@ def press_hold(r):
     local = r["email"].split("@")[0]
     if r.get("country") not in FOCUS:
         return "outside the focus countries"
-    if (r.get("city") or "") in CAPITALS:
+    # Capitals and nationals open since 2026-11-05 (Hidde, after the second Bristol
+    # interview: "ik denk dat we wel klaar zijn voor hoofdsteden en landelijke media").
+    # False holds the capitals' desks again.
+    if not CAPITALS_OPEN and (r.get("city") or "") in CAPITALS:
         return "a capital's desk; regional desks only"
     if OFF_TOPIC.search(r.get("org") or "") or OFF_TOPIC.search(r["email"]):
         return "not a paper that would write about trees (sport, business, student, trade)"

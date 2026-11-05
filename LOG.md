@@ -12,6 +12,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: capitals and national press open, ten drafted; nature-guide-2026-11-06 sent
+
+- **Rule changed** (Hidde, after the second Bristol interview: "ik denk dat we wel klaar zijn voor hoofdsteden en landelijke media"): capital and national desks may be mailed. `CAPITALS_OPEN = True` in scripts/contacts_db.py (False holds them again); CLAUDE.md rung 4 and OUTREACH_STRATEGY.md's press row say so.
+- **Sent**: nature-guide-2026-11-06, twelve mails, on his "Verstuur". Earlier today scripts/sent_drafts.py learned that every `batch-` preview logs under its own tag, so 11-04's batches stopped reading as unsent.
+- **Drafted, waiting for his word**: press-national-2026-11-06 (gitignored, in the private store). Three Variant A: Diário de Notícias, Mensagem de Lisboa, Irish Examiner. Seven Variant B: Observador, the Guardian environment desk, Manchester Evening News, The Herald, Billy Penn, Die Presse, Belfast Live. mailcheck is clean.
+- **Data fix**: the Observador article on por_021 (São Lázaro magnolias) is about a different magnolia, in a courtyard in Ramalde. It is off the tree's sources and kept as a Porto lead.
+- Skipped, with reasons: the Boston Globe (no news desk on its own pages); De Morgen, Il Gazzettino and Público (no address in their pages); the Toronto Star, Salt Lake Tribune, Diario de Navarra and WalesOnline (no approved photo in their city).
+
 ## 2026-11-05 session: city list redrawn, direction C, web and app (Hidde: "i like option c", "1b, link")
 
 - A city's list, under its name: one white box with the ambassador (named: "Lisbon ambassador · Become one too"; nobody: "Become the Barcelona ambassador") and "Help create Ancient Trees Plus", then **Highlights** (a sideways shelf on a phone, a two-column grid on desktop), then **All n trees** as compact rows with a 64 point square. A tree without a photograph is a pale square with its species, no longer a tall green block. The affiliation left the ambassador line.
