@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (01:57 UTC): one photo vendored, nothing else open
+
+- Rung 1: reader inbox and tree notes empty. Rung 2: Postbox check and the Migrations line are red only because supabase/web-errors.sql and supabase/plus-answers.sql are not pasted (For Hidde: paste both). The iOS scheduled run (22:24 UTC) ended "TEST FAILED" with no XCTest assertion line in the log, 1h47m long, so it reads as an infra or timeout death, not a source fault; no app change made.
+- Vendored the Santa Barbara fig photograph onto our domain (95f46e3f4). No new trees: the 25-a-day pace is full until about 19:42 UTC and 18 written trees already wait. Outreach: 12 nature/guide and 5 regional press drafts already wait for Hidde, so no new batch; no contact sourcing done this window.
+
 ## 2026-11-04 night run (fourth attempt): nothing shipped, nothing left outside the pace
 
 - Checked again: reader inbox empty, enrichment has nothing to do, no stuck recognition lines. READY leads are earlier rejects or thin; the 18 written SLC/Cardiff/Oahu/NYC trees wait for pace room (about 19:42 UTC 2026-11-05) and salt-lake-city stays claimed on purpose. Page gaps left are 4 species and 3 park intros, all under the strict Google cut, so not worth a window.
