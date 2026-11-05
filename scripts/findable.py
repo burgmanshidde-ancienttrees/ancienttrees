@@ -136,7 +136,19 @@ PHOTO_EXEMPT_COUNTRIES = {"Portugal"}
 # our own beyond check_publishing_pace()'s 60. Since the 10-24 reader cut a
 # new tree without reader content carries the googlebot noindex, so Google's
 # index does not grow with them. True again pauses everything.
-SUPPLY_PAUSED = False
+# PAUSED AGAIN 2026-11-05 to 2026-12-03 (Hidde: "ok voer dit door", on the
+# four-week plan). Google showed the site again from 11-01 and took it back on
+# 11-04, open and tagged pages alike, so the judgement is site-level and our
+# clean-up has not reached it: Search Console's crawl stats read ~145
+# requests a day, 38% of them discovery of pages we had just made, and pages
+# like /lisbon last read 10-08. Every new URL of ours is one the clean-up
+# waits behind. So: no new tree of our own, no new place, for four weeks;
+# research and writing go on into data/research/ (the shelf), a reader's tree
+# still ships. Baseline: data/web-freeze-baseline.json (trees live 11-05).
+# Lifting it is Hidde's, on 2026-12-03 or when Google turns earlier.
+SUPPLY_PAUSED = True
+SUPPLY_PAUSE_BASELINE = "data/web-freeze-baseline.json"
+SUPPLY_PAUSE_UNTIL = "2026-12-03"
 
 
 def has_approved_photo(tree):

@@ -1740,12 +1740,18 @@ def check_own_supply_is_paused():
     it needs Hidde and a Search Console week that moved. Hidde lifted it on
     2026-10-25 (own trees with an approved photograph ship again); the check
     stays so setting the flag back to True pauses supply at once.
+
+    Paused again 2026-11-05 to 2026-12-03 (Hidde, the four-week plan after
+    Google took the site back on 11-04): the baseline is now
+    SUPPLY_PAUSE_BASELINE in findable.py (data/web-freeze-baseline.json,
+    trees live on 11-05), so the trees added between the two pauses keep
+    their pages.
     """
-    from findable import SUPPLY_PAUSED, reader_added
+    from findable import SUPPLY_PAUSED, SUPPLY_PAUSE_BASELINE, SUPPLY_PAUSE_UNTIL, reader_added
     if not SUPPLY_PAUSED:
         return []
     try:
-        with open(os.path.join("data", "photo-baseline.json"), encoding="utf-8") as fh:
+        with open(SUPPLY_PAUSE_BASELINE, encoding="utf-8") as fh:
             base = set(json.load(fh).get("ids", []))
     except (OSError, ValueError):
         return []
@@ -1756,10 +1762,10 @@ def check_own_supply_is_paused():
         for tree in city.get("trees", []):
             if tree.get("id") in base or reader_added(tree):
                 continue
-            out.append("%s: %s (%s) is a new tree of our own. Supply is paused while Google recovers "
-                       "(Hidde, 2026-10-22, SUPPLY_PAUSED in findable.py): keep it in data/leads/ or "
-                       "data/research/ with its photo; a reader's tree still ships."
-                       % (path, tree.get("id"), tree.get("name")))
+            out.append("%s: %s (%s) is a new tree of our own. Supply is paused until %s so Google's "
+                       "crawl reaches the clean-up (Hidde, 2026-11-05, SUPPLY_PAUSED in findable.py): "
+                       "keep it in data/leads/ or data/research/ with its photo; a reader's tree still ships."
+                       % (path, tree.get("id"), tree.get("name"), SUPPLY_PAUSE_UNTIL))
     return out
 
 

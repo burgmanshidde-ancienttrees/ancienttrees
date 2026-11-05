@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: the four-week freeze on new pages of our own (Hidde: "ok voer dit door")
+
+- **Diagnosis, measured:** the 11-04 fall hit open pages (300 to 74 impressions) and tagged pages (1,049 to 238) alike, minus 75% on both in one hour, so Google re-applied a site-level judgement; our tags played no part (new section 0 of seo-diagnose.yml). Crawl stats (Hidde's Search Console): ~145 requests a day over 90 days, 79% HTML, 38% discovery, so a third of Google's reading went to pages we had just made while /lisbon was last read 10-08 and /united-states 08-09. On that pace the noindex clean-up reaches Google early next year, after the update expected within weeks.
+- **What changed in the product:** nothing a reader sees. `SUPPLY_PAUSED = True` (findable.py): no new tree or place of our own until 2026-12-03, a reader's tree still ships; preflight and the pre-push hook refuse a new own tree against data/web-freeze-baseline.json (4,046 ids live today). The night run keeps researching and writing into data/research/, the shelf fills, and ships it at 25 a day once lifted. The pace cap stays as the guard for then.
+- **Next, Hidde's plan:** redirect the 439 question pages to their city pages and the translations Google showed nothing of since 11-01 to their English twins (~1,560 of 1,802), and drop the links to them; keep the list of ~940 pages Google itself showed (data/tagged-still-shown.json) for a two-day release when it turns; look again 2026-11-18. App-only trees (feed yes, page no) are possible but not a switch: web and app read the same browse/trees/walks feeds, so about ten web consumers would need a filter; put to Hidde.
+
 ## 2026-11-05 session: earned back paused, Google fell again from 11-04 midday
 
 - **What happened:** Search Console's 24-hour view (Hidde's screenshot, 11-05 morning) shows impressions from ~50 an hour to ~1 from 11-04 13:00 CET, site-wide within one hour, 15 hours on. Live checked: home, /seville, /lisbon, /berlin, /malaga, the Drago indexable, robots.txt open, no site-wide noindex. One hour is too fast for any tag or deploy of ours; Google confirms no update. Hourly data is preliminary: read 11-04 and 11-05 in the daily view tomorrow.
