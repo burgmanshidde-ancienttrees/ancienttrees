@@ -292,7 +292,8 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .map-pop .tree-card.tree-card-nophoto .tree-card-top { padding-top: 16px; }
 .map-pop .tree-card .tree-card-top .heart-card { margin-top: 0; }
 .map-pop .tree-card-nophoto .tree-name { padding-top: 4px; }
-.map-pop .map-pop-close svg, .map-pop .heart-card svg { width: 16px; height: 16px; }
+.map-pop .map-pop-close svg { width: 16px; height: 16px; }
+.map-pop .heart-card svg { width: 18px; height: 18px; }
 /* On a phone the card is Airbnb's mobile one (2026-10-24): the map's width
    less 16 a side, low over the map, the photograph cropped to keep the map
    above it in view. The script sets left and top, and lifts the map's own
@@ -337,7 +338,12 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .heart-card { width: 36px; height: 36px; padding: 0; justify-content: center;
   border: none; border-radius: 50%; background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18); color: var(--ink); }
-.heart-card .heart { width: 18px; height: 18px; }
+/* Two classes, so the pill's rules later in this file (.heart-btn: 12px side
+   padding, which left the icon 9px of the 36; .heart-btn .heart: 14px) no
+   longer shrink the bookmark in the round button (Hidde, 2026-11-05:
+   "het bookmark icoon in het rondje is wel heel klein"). */
+.heart-btn.heart-card { padding: 0; }
+.heart-btn.heart-card .heart { width: 20px; height: 20px; flex: none; }
 .heart-card::after { left: 50%; right: auto; width: 44px; transform: translate(-50%, -50%); }
 .tree-card-photo .heart-card { top: 10px; right: 10px; }
 .tree-card-top .heart-card { position: relative; order: 3; margin-left: auto; align-self: center;
