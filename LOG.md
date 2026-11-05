@@ -12,6 +12,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (eleventh attempt): nothing shipped
+
+- No claims stood. 112 READY leads are the same rejects and the pace is full until about 19:42 UTC, so no write pass. Four Dependabot branches stand (astro 7.4.4, supabase-js 2.118.0, deploy-pages 5, upload-pages-artifact 5); `gh` needed approval here, so their CI could not be read and none was merged. A session should read CI and merge them by hand.
+
 ## 2026-11-05 night run (tenth attempt): nothing shipped
 
 - No claims stood. 112 READY leads are the same rejects, and the pace is full until about 19:42 UTC, so no write pass. Brighton register retry was already done 2026-11-04 and is still stalled. iOS stays red on the RedrawMemoTests aborts (needs a Mac); Dependabot branches wait for a session.
