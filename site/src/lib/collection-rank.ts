@@ -322,7 +322,7 @@ export function rankedRows(
   const all: (RankRow & { keys: number[] })[] = [];
   for (const [cslug, city] of citiesBySlug) {
     const tslugs = treeSlugsForCity(city);
-    for (const t of city.data.trees) {
+    for (const t of renderableTrees(city)) {
       if (!mode.qualifies(t) || !tslugs[t.id]) continue;
       all.push({
         tree: t, citySlug: cslug, city: city.data.city, slug: tslugs[t.id],

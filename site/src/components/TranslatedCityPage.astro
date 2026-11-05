@@ -133,7 +133,7 @@ const nearby = nearbyCitiesFor(
   cityCentre(city.data),
   (await getCollection("cities"))
     .filter(cityIsRenderable)
-    .filter((e) => e.id !== cslug && e.data.trees.length > 0)
+    .filter((e) => e.id !== cslug && renderableTrees(e).length > 0)
     .map((e) => ({ slug: e.id, city: e.data.city, ...cityCentre(e.data) })),
 ).map((c) => ({ ...c, city: cityTranslation(lang, c.slug)?.city || c.city }));
 // Contract B v1.18, in every language: a one-tree place has no question page.

@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { DATA } from "./data-dir";
 import type { CityEntry, Tree } from "./trees";
-import { treeIsRenderable } from "./trees";
+import { treeIsRenderable, renderableTrees } from "./trees";
 
 // Widened 2026-09-18 while measuring our coverage of the world's best-known
 // parks (scripts/park_demand.py). Six words were missing and the gap was
@@ -163,7 +163,7 @@ export interface ParkGroup {
 export function groupTreesByPark(cities: CityEntry[]): Map<string, ParkGroup> {
   const groups = new Map<string, ParkGroup>();
   for (const city of cities) {
-    for (const t of city.data.trees) {
+    for (const t of renderableTrees(city)) {
       if (!treeIsRenderable(t)) continue;
       const name = parkKey(t);
       if (!name) continue;

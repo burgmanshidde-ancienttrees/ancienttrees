@@ -10,7 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { getCollection } from "astro:content";
-import { cityIsRenderable, slugify } from "../lib/trees";
+import { cityIsRenderable, slugify, renderableTrees } from "../lib/trees";
 import { citySearchNames } from "../lib/city-aliases";
 import { DATA } from "../lib/data-dir";
 
@@ -32,7 +32,7 @@ export async function GET() {
   }
   const trees: { n: string; c: string; u: string; lat: number; lng: number }[] = [];
   for (const e of cities) {
-    for (const t of e.data.trees) {
+    for (const t of renderableTrees(e)) {
       const lat = t.location.latitude, lng = t.location.longitude;
       if (lat == null || lng == null) continue;
       trees.push({ n: t.name, c: e.data.city, u: `${e.id}/${slugify(t.name)}`, lat, lng });

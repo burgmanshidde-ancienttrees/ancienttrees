@@ -8,7 +8,7 @@
 // story/location still gets a search row pointing at a URL that may not
 // exist. The live widget already tolerates this in production.
 import { getCollection } from "astro:content";
-import { cityIsRenderable, slugify } from "../lib/trees";
+import { cityIsRenderable, renderableTrees, slugify } from "../lib/trees";
 import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { citySearchNames } from "../lib/city-aliases";
@@ -62,7 +62,7 @@ export async function GET() {
   const k: { country: string; cities: number; n: number; u: string }[] = [];
   for (const [country, cslug] of [...countryPages.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
     const cities = allCities.filter((e) => e.data.country === country);
-    const nTrees = cities.reduce((s, e) => s + e.data.trees.length, 0);
+    const nTrees = cities.reduce((s, e) => s + renderableTrees(e).length, 0);
     k.push({ country, cities: cities.length, n: nTrees, u: cslug });
   }
 

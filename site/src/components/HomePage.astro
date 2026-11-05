@@ -135,12 +135,12 @@ const collCol =
   collections.slice(0, 7).map((c) => `<a href="/collections/${esc(c.data.slug)}" data-ev="home-dir-collection" data-detail="${esc(c.data.slug)}">${esc(c.data.title)}</a>`).join("") +
   `<a class="dir-morelink" href="/collections">${u.homeAllCollections}</a>`;
 
-// Unfiltered trees (entry.data.trees, not renderableTrees), matching the
+// Unfiltered trees (renderableTrees(entry), not renderableTrees), matching the
 // same pre-existing Python quirk kept in search-index.json.ts: build_site.py
 // 4960-4964 walks `entry["data"]["trees"]` directly.
 const oldest: { ageMax: number; name: string; citySlug: string; treeSlug: string }[] = [];
 for (const entry of renderable) {
-  for (const t of entry.data.trees) {
+  for (const t of renderableTrees(entry)) {
     if (t.age_max) oldest.push({ ageMax: t.age_max, name: t.name, citySlug: entry.id, treeSlug: slugify(t.name) });
   }
 }
@@ -175,7 +175,7 @@ const usedPhotos = new Set<string>();
 
 type AnyTree = CityEntry["data"]["trees"][number];
 const treeById = new Map<string, AnyTree>();
-for (const c of renderable) for (const t of c.data.trees) treeById.set(t.id, t);
+for (const c of renderable) for (const t of renderableTrees(c)) treeById.set(t.id, t);
 
 // A pinned face wins over any ranking, and is claimed before the shelves run
 // so no other shelf takes it first: only a person can see that a crown is bare
@@ -227,7 +227,7 @@ function firstPhoto(trees: AnyTree[]): string | null {
 /** The intrinsic width of a url we already picked, for the srcset cap. */
 const widthByUrl = new Map<string, number>();
 for (const c of renderable) {
-  for (const t of c.data.trees) {
+  for (const t of renderableTrees(c)) {
     const p = usablePhoto(t);
     if (p?.url) widthByUrl.set(p.url, photoWidth(p));
   }
@@ -310,7 +310,7 @@ for (const cs of FAVOURITE_CITIES) {
   const faceUrl = face ? usablePhoto(face)?.url : null;
   if (faceUrl && !usedPhotos.has(faceUrl)) photo = { url: faceUrl };
   if (!photo) {
-    for (const t of e.data.trees) {
+    for (const t of renderableTrees(e)) {
       const p = usablePhoto(t);
       if (p?.url && !usedPhotos.has(p.url)) {
         photo = { url: p.url };
@@ -324,7 +324,7 @@ for (const cs of FAVOURITE_CITIES) {
     `<a class="shelf-card" href="${cityHref(lang, cs)}" data-ev="home-fav" data-detail="${esc(cs)}">` +
       `<span class="shelf-ph"><img ${cardImg(photo.url, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
       `<b>${esc(e.data.city)}</b>` +
-      `<span class="shelf-meta">${esc(u.homeShelfMeta(e.data.trees.length, e.data.country))}</span></a>`,
+      `<span class="shelf-meta">${esc(u.homeShelfMeta(renderableTrees(e).length, e.data.country))}</span></a>`,
   );
 }
 // "See all >" on the heading's own line, the same words on every shelf: the
@@ -380,8 +380,8 @@ const countryCards = countryIntros
     // country with fewer than four photographed cities shows one picture.
     const urls: string[] = [];
     for (const c of cities) {
-      const hero = c.data.hero_tree_id ? c.data.trees.find((t) => t.id === c.data.hero_tree_id) : undefined;
-      const u = firstPhoto(hero ? [hero, ...c.data.trees] : c.data.trees);
+      const hero = c.data.hero_tree_id ? renderableTrees(c).find((t) => t.id === c.data.hero_tree_id) : undefined;
+      const u = firstPhoto(hero ? [hero, ...renderableTrees(c)] : renderableTrees(c));
       if (u) urls.push(u);
       if (urls.length === 4) break;
     }

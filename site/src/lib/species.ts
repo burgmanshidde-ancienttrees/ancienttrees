@@ -1,7 +1,7 @@
 // Ported from species_common()/group_trees_by_species()/check_species_names(),
 // build_site.py:941-942, 2741-2765, 2978-2997.
 import type { CityEntry, Tree } from "./trees";
-import { treeIsRenderable } from "./trees";
+import { treeIsRenderable, renderableTrees } from "./trees";
 
 export const SPECIES_MIN_TREES = 3;
 export const COUNTRY_MIN_CITIES = 3;
@@ -52,7 +52,7 @@ export interface SpeciesMember {
 export function groupTreesBySpecies(renderable: CityEntry[]): Map<string, SpeciesMember[]> {
   const idCity = new Map<string, string>();
   for (const entry of renderable) {
-    for (const t of entry.data.trees) {
+    for (const t of renderableTrees(entry)) {
       const other = idCity.get(t.id);
       if (other && other !== entry.id) {
         throw new Error(`tree id ${t.id} is used by both ${other} and ${entry.id}`);
@@ -63,7 +63,7 @@ export function groupTreesBySpecies(renderable: CityEntry[]): Map<string, Specie
 
   const groups = new Map<string, SpeciesMember[]>();
   for (const entry of renderable) {
-    for (const t of entry.data.trees.filter(treeIsRenderable)) {
+    for (const t of renderableTrees(entry).filter(treeIsRenderable)) {
       const key = speciesCommon(t);
       if (!groups.has(key)) groups.set(key, []);
       groups.get(key)!.push({ city: entry, tree: t });
@@ -77,7 +77,7 @@ export function groupTreesBySpecies(renderable: CityEntry[]): Map<string, Specie
 export function checkSpeciesNames(cities: CityEntry[]): void {
   const byLatin = new Map<string, Map<string, string[]>>();
   for (const entry of [...cities].sort((a, b) => a.id.localeCompare(b.id))) {
-    for (const t of entry.data.trees) {
+    for (const t of renderableTrees(entry)) {
       const sp = t.species ?? "";
       const m = sp.match(/\(([^)]+)\)/);
       if (!m || m.index === undefined) continue;
@@ -111,7 +111,7 @@ export function checkSpeciesNames(cities: CityEntry[]): void {
   // Ported from build_site.py's check_species_names(), origin/main e494bfa.
   const byCommon = new Map<string, Map<string, string[]>>();
   for (const entry of [...cities].sort((a, b) => a.id.localeCompare(b.id))) {
-    for (const t of entry.data.trees) {
+    for (const t of renderableTrees(entry)) {
       const sp = t.species ?? "";
       const m = sp.match(/\(([^)]+)\)/);
       const latin = m ? m[1].trim() : "";

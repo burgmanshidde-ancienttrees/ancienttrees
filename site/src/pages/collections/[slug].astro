@@ -5,7 +5,7 @@ import Base from "../../layouts/Base.astro";
 import TreeCard from "../../components/TreeCard.astro";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/trees";
+import { cityIsRenderable, treeSlugsForCity, type CityEntry, renderableTrees } from "../../lib/trees";
 import { rankedBands } from "../../lib/collection-rank";
 import { usablePhoto, imgSrcset } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
@@ -82,7 +82,7 @@ for (const band of bands) {
 }
 const sections = [...grouped.entries()].map(([cslug, entries]) => {
   const city = citiesBySlug.get(cslug)!;
-  const treesById = new Map(city.data.trees.map((t) => [t.id, t]));
+  const treesById = new Map(renderableTrees(city).map((t) => [t.id, t]));
   const rows = entries.map((e) => {
     const t = treesById.get(e.tree_id)!;
     const tslugs = treeSlugsForCity(city);
@@ -123,7 +123,7 @@ const exploreList = exploreCities(sections.map((x) => x.cslug), published, (slug
         {rows.map(({ tree: t, note, slug: tslug }) => (
           <TreeCard tree={t} citySlug={cslug} treeSlug={tslug} note={note} />
         ))}
-        <p class="coll-citycta"><a href={`/${cslug}`}>See all {city.data.trees.length} trees in {city.data.city} on the map →</a></p>
+        <p class="coll-citycta"><a href={`/${cslug}`}>See all {renderableTrees(city).length} trees in {city.data.city} on the map →</a></p>
       </Fragment>
     ))}
     <p class="suggest">

@@ -2402,6 +2402,15 @@ def check_an_app_only_tree_stays_off_the_web():
         feed_ids = {t.get("id") for t in json.loads(feed.read_text(encoding="utf-8")).get("trees") or []}
     except (OSError, ValueError):
         return ["app first: %s is missing or unreadable" % feed.relative_to(ROOT)]
+    # The website's own data files, which its maps and search read in the
+    # browser: an app-only id in any of them is a pin or a result that opens a
+    # page that does not exist (found 2026-11-05, the explore map's pins).
+    web_text = ""
+    for name in ("api/pins.json", "search-index.json", "places.json", "api/cards.json"):
+        try:
+            web_text += (DIST / name).read_text(encoding="utf-8")
+        except OSError:
+            pass
     maps = ""
     for name in ("sitemap.xml", "sitemap-bing.xml"):
         try:
@@ -2429,6 +2438,9 @@ def check_an_app_only_tree_stays_off_the_web():
                 out.append("app first: %s is app-only but a sitemap names %s" % (t.get("id"), page))
             if t.get("id") not in feed_ids:
                 out.append("app first: %s (%s) is app-only but missing from /api/trees.json" % (t.get("id"), t.get("name")))
+            if web_text and ('"%s"' % t.get("id")) in web_text:
+                out.append("app first: %s is app-only but the website's pins, cards, places or search name it"
+                           % t.get("id"))
     if n:
         print("app first: %d tree(s) in the app and not on the website" % n)
     return out

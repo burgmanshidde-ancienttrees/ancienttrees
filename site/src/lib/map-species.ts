@@ -8,7 +8,7 @@
 // Ordered by how many trees carry it, which is the only order that helps: 521
 // species exist and twelve of them cover a third of the map.
 import { getCollection } from "astro:content";
-import { cityIsRenderable } from "./trees";
+import { cityIsRenderable, renderableTrees } from "./trees";
 import { speciesCommon, speciesScientific } from "./species";
 import { sciNameHtml } from "./latin";
 
@@ -33,7 +33,7 @@ async function build(): Promise<MapSpecies> {
   const count = new Map<string, number>();
   const latin = new Map<string, string>();
   for (const entry of cities) {
-    for (const t of entry.data.trees) {
+    for (const t of renderableTrees(entry)) {
       const s = speciesCommon(t);
       if (!s) continue;
       count.set(s, (count.get(s) ?? 0) + 1);

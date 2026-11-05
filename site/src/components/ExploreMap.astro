@@ -11,7 +11,7 @@
 // assets/registers.json.ts, fetched client-side rather than inlined here.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { cityIsRenderable, slugify, distSpan, type CityEntry } from "../lib/trees";
+import { cityIsRenderable, renderableTrees, slugify, distSpan, type CityEntry } from "../lib/trees";
 import { speciesCommon } from "../lib/species";
 import { mapSpecies } from "../lib/map-species";
 import MapFilters from "./MapFilters.astro";
@@ -57,7 +57,7 @@ const { list: speciesList, index: speciesIndex, latinHtml: speciesLatinHtml } = 
 
 for (const entry of allCities) {
   const cslug = entry.id;
-  for (const t of entry.data.trees) {
+  for (const t of renderableTrees(entry)) {
     const loc = t.location;
     const sp = speciesIndex.get(speciesCommon(t));
     features.push({
@@ -86,9 +86,9 @@ for (const entry of allCities) {
 // nadenken dat alles wat je maakt ooit gaat bestaan uit miljoenen bomen."
 const FAVES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto", "rome", "palermo", "paris", "london", "barcelona"];
 const cityRows: ExploreCityRow[] = allCities
-  .filter((e) => e.data.trees.length > 0)
+  .filter((e) => renderableTrees(e).length > 0)
   .map((e) => {
-    const trees = e.data.trees;
+    const trees = renderableTrees(e);
     return {
       city: e.data.city,
       url: e.id,
@@ -112,21 +112,21 @@ const cityRows: ExploreCityRow[] = allCities
 // The section renders ONLY when islands exist, so it can never be an empty
 // promise; today that is one place.
 const islandRows = allCities
-  .filter((e) => e.data.kind === "island" && e.data.trees.length > 0)
-  .map((e) => ({ slug: e.id, city: e.data.city, n: e.data.trees.length }))
+  .filter((e) => e.data.kind === "island" && renderableTrees(e).length > 0)
+  .map((e) => ({ slug: e.id, city: e.data.city, n: renderableTrees(e).length }))
   .sort((a, b) => b.n - a.n);
 const islandsHtml = islandRows
   .map((r) => `<a href="/${r.slug}">${r.city}</a> (${r.n})`)
   .join(", ");
 const treeTotal = cityRows.reduce((s, r) => s + r.n, 0);
-const countries = [...new Set(allCities.filter((e) => e.data.trees.length > 0).map((e) => e.data.country))].sort((a, b) =>
+const countries = [...new Set(allCities.filter((e) => renderableTrees(e).length > 0).map((e) => e.data.country))].sort((a, b) =>
   a.localeCompare(b),
 );
 
 const tightest = allCities
-  .filter((e) => e.data.trees.length >= 5)
+  .filter((e) => renderableTrees(e).length >= 5)
   .map((e) => {
-    const trees = e.data.trees;
+    const trees = renderableTrees(e);
     let spread = 0;
     for (const a of trees) {
       for (const b of trees) {
