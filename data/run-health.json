@@ -2,78 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-06T23:09:53+00:00",
-   "date": "2026-09-07",
-   "run_id": "34062203352",
-   "minutes": 62.1,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 454,
-   "denials": 44,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(date), Bash(echo), Bash(for), Bash(gh), Bash(if), Bash(jobs), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(uname), Bash(wc)",
-   "ended": "success",
-   "tokens": 27005601,
-   "claims_held": [
-    "_famous-japan",
-    "_famous-canada",
-    "_famous-portugal"
-   ],
-   "commits": 28,
-   "cities_touched": 12,
-   "cities": [
-    {
-     "city": "salzburg",
-     "trees": 4
-    },
-    {
-     "city": "altrier",
-     "trees": 1
-    },
-    {
-     "city": "amerongen",
-     "trees": 1
-    },
-    {
-     "city": "apeldoorn",
-     "trees": 1
-    },
-    {
-     "city": "breukelen",
-     "trees": 1
-    },
-    {
-     "city": "laren-gelderland",
-     "trees": 1
-    },
-    {
-     "city": "brighton",
-     "trees": 0
-    },
-    {
-     "city": "freiburg",
-     "trees": 0
-    },
-    {
-     "city": "fujikawaguchiko",
-     "trees": 0
-    },
-    {
-     "city": "leiden",
-     "trees": 0
-    },
-    {
-     "city": "miyazaki",
-     "trees": 0
-    },
-    {
-     "city": "nagoya",
-     "trees": 0
-    }
-   ],
-   "trees": 9,
-   "logged": true
-  },
-  {
    "started": "2026-09-07T00:13:46+00:00",
    "date": "2026-09-07",
    "run_id": "34066574441",
@@ -22174,6 +22102,113 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-05T17:49:39+00:00",
+   "date": "2026-11-05",
+   "run_id": "42078213176",
+   "minutes": 17.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 133,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(env), Bash(pip)",
+   "ended": "success",
+   "tokens": 217609,
+   "claims_held": [
+    "new-york",
+    "gran-canaria"
+   ],
+   "commits": 12,
+   "cities_touched": 21,
+   "cities": [
+    {
+     "city": "new-york",
+     "trees": 14
+    },
+    {
+     "city": "atlanta",
+     "trees": 11
+    },
+    {
+     "city": "tacoma",
+     "trees": 10
+    },
+    {
+     "city": "nashville",
+     "trees": 8
+    },
+    {
+     "city": "milwaukee",
+     "trees": 6
+    },
+    {
+     "city": "madison",
+     "trees": 5
+    },
+    {
+     "city": "asheville",
+     "trees": 4
+    },
+    {
+     "city": "vancouver-washington",
+     "trees": 4
+    },
+    {
+     "city": "great-smoky-mountains",
+     "trees": 3
+    },
+    {
+     "city": "poynette",
+     "trees": 3
+    },
+    {
+     "city": "monroe-wisconsin",
+     "trees": 2
+    },
+    {
+     "city": "salem-oregon",
+     "trees": 2
+    },
+    {
+     "city": "chattanooga",
+     "trees": 1
+    },
+    {
+     "city": "eagle-wisconsin",
+     "trees": 1
+    },
+    {
+     "city": "florence-county-wisconsin",
+     "trees": 1
+    },
+    {
+     "city": "fond-du-lac",
+     "trees": 1
+    },
+    {
+     "city": "la-crosse",
+     "trees": 1
+    },
+    {
+     "city": "nicolet-national-forest",
+     "trees": 1
+    },
+    {
+     "city": "platteville",
+     "trees": 1
+    },
+    {
+     "city": "richard-bong-state-recreation-area",
+     "trees": 1
+    },
+    {
+     "city": "solon-springs",
+     "trees": 1
+    }
+   ],
+   "trees": 81,
    "logged": true
   }
  ],
