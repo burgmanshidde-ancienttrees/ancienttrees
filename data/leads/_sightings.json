@@ -1319,6 +1319,34 @@
    "status": "lead",
    "why": "2026-10-31, photo looked at: a sweetgum (Liquidambar) in red and yellow autumn colour by the Cantonspark balustrade. No register entry or written source; stays a lead, a best_time candidate (autumn colour) if it ever gets a page. Hidde's own (mine).",
    "seen": "2026-10-30"
+  },
+  {
+   "sighting_id": "15a3b6f1-3dd9-4ac2-bec5-bbd1c47d7613",
+   "user_id": "p_2e79bf68318b596d2c9298dc",
+   "mine": false,
+   "name": "A tree near Fribourg",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "3 cèdres de l’Atlas, dans le park du domaine de la maison de santé de Préfargier, dans la commune de Laténa, canton de Neuchâtel",
+   "latitude": 47.0038375771111,
+   "longitude": 7.01202241704521,
+   "photo": "01777e9c-5a6f-45bf-b2c0-c9a394ba2cc4/15A3B6F1-3DD9-4AC2-BEC5-BBD1C47D7613.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [
+    "out/sightings/15a3b6f1-3dd9-4ac2-bec5-bbd1c47d7613-extra-1.jpg"
+   ],
+   "nearest_published_m": null,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-11-05"
   }
  ]
 }
