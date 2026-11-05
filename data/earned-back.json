@@ -2,6 +2,11 @@
  "generated": "scripts/tagged_shown.py",
  "rule": "2 clicks since 2026-11-01, or 1 click and 10 impressions; never a translation, a question page or a listing page; at most 10 a week (Hidde, 2026-11-04)",
  "pages": {
+  "/fukuoka/married-ginkgos-of-kushida": {
+   "date": "2026-11-05",
+   "impressions": 12,
+   "clicks": 1
+  },
   "/malaga": {
    "date": "2026-11-04",
    "impressions": 16,
@@ -12,9 +17,19 @@
    "impressions": 20,
    "clicks": 1
   },
+  "/south-korea": {
+   "date": "2026-11-05",
+   "impressions": 42,
+   "clicks": 1
+  },
   "/tenerife/el-drago-milenario": {
    "date": "2026-11-04",
    "impressions": 43,
+   "clicks": 1
+  },
+  "/venice": {
+   "date": "2026-11-05",
+   "impressions": 11,
    "clicks": 1
   }
  }

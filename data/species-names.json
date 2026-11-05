@@ -486,6 +486,24 @@
    }
   },
   {
+   "common": "Atlantic White Cedar",
+   "latin": "Chamaecyparis thyoides",
+   "names": {
+    "en": [
+     "Atlantic white cypress",
+     "White Cypress",
+     "false-cypress",
+     "southern white cedar"
+    ],
+    "de": [
+     "Weiße Scheinzypresse"
+    ],
+    "ja": [
+     "ヌマヒノキ"
+    ]
+   }
+  },
+  {
    "common": "Atlas Cedar",
    "latin": "Cedrus atlantica",
    "names": {
@@ -6680,6 +6698,28 @@
    }
   },
   {
+   "common": "Japanese Chestnut",
+   "latin": "Castanea crenata",
+   "names": {
+    "de": [
+     "Japanische Kastanie"
+    ],
+    "es": [
+     "Castano japones"
+    ],
+    "fr": [
+     "Chataignier crenele",
+     "Châtaignier Japonais",
+     "Châtaignier du Japon"
+    ],
+    "ja": [
+     "くり",
+     "クリ",
+     "栗"
+    ]
+   }
+  },
+  {
    "common": "Japanese Chinquapin",
    "latin": "Castanopsis sieboldii",
    "names": {
@@ -11473,6 +11513,15 @@
    }
   },
   {
+   "common": "Shellbark Hickory",
+   "latin": "Carya laciniosa",
+   "names": {
+    "de": [
+     "Königsnuss"
+    ]
+   }
+  },
+  {
    "common": "Shingle Oak",
    "latin": "Quercus imbricaria",
    "names": {
@@ -15562,16 +15611,6 @@
    }
   },
   {
-   "common": "Shellbark Hickory",
-   "latin": "Carya laciniosa",
-   "mapped": false,
-   "names": {
-    "de": [
-     "Königsnuss"
-    ]
-   }
-  },
-  {
    "common": "mockernut hickory",
    "latin": "Carya tomentosa",
    "mapped": false,
@@ -15604,32 +15643,6 @@
     ],
     "ja": [
      "ホワイトサポテ"
-    ]
-   }
-  },
-  {
-   "common": "Weeping Japanese Chestnut",
-   "latin": "Castanea crenata",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Japanese Chestnut"
-    ],
-    "de": [
-     "Japanische Kastanie"
-    ],
-    "es": [
-     "Castano japones"
-    ],
-    "fr": [
-     "Chataignier crenele",
-     "Châtaignier Japonais",
-     "Châtaignier du Japon"
-    ],
-    "ja": [
-     "くり",
-     "クリ",
-     "栗"
     ]
    }
   },
@@ -19008,6 +19021,11 @@
    }
   },
   {
+   "common": "Tatar Wingceltis",
+   "latin": "Pteroceltis tatarinowii",
+   "mapped": false
+  },
+  {
    "common": "Buddha Coconut",
    "latin": "Pterygota alata",
    "mapped": false,
@@ -19177,6 +19195,11 @@
   {
    "common": "Live Oak",
    "latin": "Quercus virginianna",
+   "mapped": false
+  },
+  {
+   "common": "Bartram Oak",
+   "latin": "Quercus × heterophylla",
    "mapped": false
   },
   {

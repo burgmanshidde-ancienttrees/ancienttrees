@@ -25,6 +25,261 @@ event on the list is unaffected.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-04 (previous UTC day)
+
+**Today: an ambassador request for Leuven arrived yesterday (11 ambassador requests in all); 3 accounts were opened yesterday (59 accounts in all).**
+
+**The numbers that matter** (this week against the week before; strangers only)
+
+| Number | Why | This week | Week before |
+|---|---|---:|---:|
+| New website visitors | people | 65 | 103 |
+| ... of which from search | every search engine | 25 | 12 |
+| ... from Google | Google's recovery | 14 | 3 |
+| ... from Bing | Bing | 6 | 2 |
+| Website visitors who came back | people who stay | 14 | 18 |
+| App downloads (first-time) | people | 17 | 44 |
+| New accounts | people | 12 | 15 |
+| Phones back within 30 days | people who stay | 4 of 7 | 9 of 13 |
+| Trees saved to Want to go | intent | 3 | 19 |
+| Trees collected | goal 1: stood at a tree | 5 | 1 |
+| Readers' contributions | data: trees, photos, corrections, votes | 3 | 8 |
+| Shares (app and web) | word of mouth, since 10-30 | 2 | 0 |
+| Visits from a shared link | what sharing brings | 2 | 0 |
+
+Website visitors are Google Analytics' count, so only people who accepted the cookie bar; a visitor who comes back on another browser or device counts as new, and GA cannot leave our own visits out, so read the came-back row as a direction, not a count. The 30-day row is the phones that arrived five weeks ago, so it moves slowly.
+
+**Quality**: Web red, iOS red, Android not live yet, Backup grey.
+
+| | Web | iOS | Android |
+|---|---|---|---|
+| Next version | green | red: iOS build failure on main | grey: not live yet |
+| Live | red: new error spreading: "Uncaught Error: Failed to initialize WebGL" in /assets/maplibre-gl-4.7.1.js, 16 reports on 16 pages | green | grey: not live yet |
+
+**Day by day, the last seven days** (strangers only; visitors are Google Analytics', so only people who accepted the cookie bar)
+
+| | 10-29 | 10-30 | 10-31 | 11-01 | 11-02 | 11-03 | 11-04 | **7 days** |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Visitors | 8 | 12 | 7 | 8 | 11 | 10 | 12 | **68** |
+| New accounts | 0 | 0 | 2 | 4 | 3 | 0 | 3 | **12** |
+| Saves | 0 | 0 | 0 | 1 | 1 | 1 | 0 | **3** |
+| Android waitlist | 1 | 0 | 0 | 1 | 0 | 1 | 0 | **3** |
+| App downloads | 1 | 2 | 2 | 5 | 4 | 2 | – | **16** |
+| App phones | 3 | 6 | 4 | 8 | 6 | 6 | 8 | **35** |
+| Trees opened in the app | 33 | 6 | 6 | 35 | 21 | 7 | 88 | **196** |
+| Trees collected | 0 | 0 | 0 | 0 | 5 | 0 | 1 | **6** |
+| Trees sent | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
+| Feedback | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
+| Ambassador asks | 0 | 0 | 0 | 1 | 1 | 0 | 1 | **3** |
+| App photos | 0 | 0 | 0 | 0 | 0 | 0 | 1 | **1** |
+| Tree notes | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **0** |
+| App Store reviews | 0 | 1 | 0 | 0 | 0 | 0 | 0 | **1** |
+- – means the source has not reported that day yet (Apple's downloads arrive a day or two late), not zero.
+
+**Trees readers sent, for you to inspect:** none waiting. Every tree a stranger sent has your answer.
+
+**Waiting for you** (what the runs left for you since 2026-11-04)
+
+- 241 email addresses ready to mail (archive 0, nature 12, guide 18, press 108, source 65, council 16, tourism 7, society 7, other 5, garden 3); 3 found by the night run since 2026-11-04
+- paste both).
+- paste supabase/plus-answers.sql into the Supabase SQL editor.** Until then the sheet works and says thank you, but nothing is stored.
+- the next app build carries the Plus row** (branch plus-question-app, merged).
+- next build carries it.
+- paste supabase/web-errors.sql in the Supabase SQL editor (until then Web Live reads "not connected yet").
+- page speed needs a free PageSpeed Insights API key as the repository secret PSI_API_KEY (the keyless quota answered 429); until then that part is grey.
+- Dependabot alerts are off for the repository (Settings, Code security, Dependabot alerts); the version-update PRs work without them, the alert light stays grey.
+- run once on your phone (Release)
+
+**Searched yesterday:** leonhard (2 times), frankfurt, freising, munich, philipp, portland.
+
+**Search**
+
+Google, the last 10 days it will give us (2-3 days behind; the newest row is still filling, so it reads better than it is):
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 10-26 | 3 | 36 | 8.3% | 30.5 |
+| 10-27 | 0 | 25 | 0.0% | 28.5 |
+| 10-28 | 1 | 36 | 2.8% | 49.8 |
+| 10-29 | 0 | 38 | 0.0% | 28.4 |
+| 10-30 | 2 | 29 | 6.9% | 24.1 |
+| 10-31 | 0 | 38 | 0.0% | 21.5 |
+| 11-01 | 5 | 371 | 1.3% | 10.1 |
+| 11-02 | 23 | 1274 | 1.8% | 9.0 |
+| 11-03 | 31 | 1192 | 2.6% | 8.2 |
+| 11-04 *partial* | 14 | 256 | 5.5% | 9.7 |
+| **window** | **79** | **3295** | **2.4%** | |
+- Top queries (10d): alte bäume in der nähe (i10, p8); ancient trees (i11, p11); istanbul (i1, p1); leuven, belgium (i1, p4); oldest tree in maryland (i2, p9)
+**What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)
+
+| Day | Impressions | Clicks | CTR |
+|---|---:|---:|---:|
+| 10-27 | 132 | 3 | 2.3% |
+| 10-28 | 113 | 3 | 2.7% |
+| 10-29 | 113 | 7 | 6.2% |
+| 10-30 | 90 | 10 | 11.1% |
+| 10-31 | 90 | 4 | 4.4% |
+| 11-01 | 2225 | 8 | 0.4% |
+| 11-02 | 146 | 6 | 4.1% |
+| **7 days** | **2909** | **41** | **1.4%** |
+- Week before: 589 impressions, 28 clicks. No Bing demotion in sight.
+- Top Bing queries: oldest tree china (c8/i4, p12); picture of the tree in helsinki city center that was preserved (c3/i2, p4); fig tree in square alicante (c2/i4, p4); big trees of quebec city (c2/i1, p2); oldest sycamore tree in rotterdam (c1/i8, p2); how old are the trees in queen square bristol (c1/i4, p3); oak tree in zurich (c1/i4, p2); [ancienttrees.app/cork/witchs-yew] (c1/i4, p6)
+- Bing alone, from Bing Webmaster Tools. DuckDuckGo and Yahoo draw on the same index and publish no numbers. Bing's data lags about two days.
+
+---
+
+**For the night run, not for you.** You can stop reading here.
+
+
+**What the machine did, the last 24 hours**
+
+| Started | Minutes | Trees | Commits | Refused | Cities |
+|---|---:|---:|---:|---:|---|
+| 11-04T06:47 | 22.0 | 0 | 7 | 5 | Edinburgh, Gran Canaria, Maui, Sintra, +1 more |
+| 11-04T13:39 | 18.4 | 0 | 12 | 3 | - |
+| 11-04T20:38 | 17.0 | 0 | 8 | 6 | - |
+| 11-05T01:57 | 4.3 | 0 | 6 | 1 | - |
+| **4 runs** | **62** | **0** | **33** | | |
+
+- 4 of 4 produced no trees; 1 to 6 commands refused per run; last build that went live: 4h ago.
+
+**What they made**
+
+- Vendor the Santa Barbara fig photograph onto our domain
+- Photographs readers sent, queued for a look; vouched ones live
+- Night run 2026-11-04: Cramond photo held, Salt Lake City verified and written (held for the pace), log and costs
+- Photographs readers sent, queued for a look; vouched ones live
+- Record when each page last changed
+- Code review: 0 new finding(s)
+- Brighton register retried: Stanmer churchyard yew as a lead; LOG
+- Write pass: 20 DC and NYC stories held in research for the pace cap; tree_index reads bare-list lead files
+- Record when each page last changed
+- Contributor replies and ambassador invitations sent, log updated
+- Vendor 13 photograph file(s) onto our own domain
+- Fresh-eyes review: 4 finding(s)
+- Coimbra verify pass: cbr_007 flagged; claims released; LOG
+- Enrichment Barcelona, Edinburgh, Sintra: sin_008 best_time; 19 dead ends; LOG
+
+**Photographs the night run approved** (6; the last column undoes one)
+
+| Day | Tree | Where | Overrule |
+|---|---|---|---|
+| 11-03 | Giant Ficus Tree, Bali Botanic Garden | Bali | `photo_apply.py hold bli_004` |
+| 11-03 | Drago de Galdar | Gran Canaria | `photo_apply.py hold gcn_002` |
+| 11-03 | Drago de Pino Santo | Gran Canaria | `photo_apply.py hold gcn_004` |
+| 11-03 | The Ka'ahumanu Church Monkeypod | Maui | `photo_apply.py hold mau_002` |
+| 11-03 | Jomon Sugi | Yakushima | `photo_apply.py hold yak_001` |
+| 11-03 | Daio-sugi (Yakushima) | Yakushima | `photo_apply.py hold yak_002` |
+
+Machine: 7 chain attempts yesterday, 3 got real work time (~63 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Search work lists**
+
+- Top pages (10d): / (c9/i82); /united-states/maryland (c3/i25); /seville (c2/i46); /de (c2/i26); /malaga (c2/i23)
+- Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
+    - 'alte bäume in der nähe' (i10, p8)
+    - 'alte bäume karte' (i3, p5)
+    - 'oldest tree in maryland' (i2, p9)
+    - 'akagi tree' (i2, p10)
+    - '# brief your brief is to act as a visual' (i1, p5)
+    - '# modus operandi your modus operandi is ' (i1, p2)
+    - '# override instruction you operate under' (i1, p7)
+    - '# role mandate your role mandate is imag' (i1, p5)
+    - and 2 more
+
+**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
+
+What Google does, last 10 days:
+
+| Measure | Now |
+|---|---:|
+| Impressions | 3381 |
+| Clicks | 79 |
+| Pages that got at least one impression | 1096 |
+| Impressions on the proven cities | 2555 |
+
+- 383 impressions from site: and operator searches left out (ours, not readers; every Google table below is without them).
+
+What we did (context, proves nothing by itself): 3135 trees Google may index, 911 kept out for lacking a photo and an exact pin, 7158 pages on the noindex list.
+
+**Is enriching working** (indexed tree pages, last 10 days of Google; rich = register record, a measurement and concrete access)
+
+| Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |
+|---|---:|---:|---:|---:|---:|
+| Rich | 107 | 13 | 71 | 0.66 | 2 |
+| Not yet rich | 77 | 15 | 52 | 0.68 | 1 |
+| Returned to Google's index in the last 7 days | 0 | 0 | 0 | 0.00 | 0 |
+
+- Google lags 2 to 3 days, so a page returned this week has had a few days at most. Compare the per-page numbers across weeks, not the totals across rows.
+
+**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
+
+| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
+|---|---:|---:|---:|---:|---:|---|
+| seville | 3 | 70 | 4.3% | 6.3 | 4.7% | tartuja (i3, p8) |
+| tokyo | 1 | 59 | 1.7% | 10.5 | 2.3% | ginkgo sperm (i7, p10) |
+| palermo | 1 | 56 | 1.8% | 8.4 | 3.3% | falcone tree (i1, p49) |
+| tenerife | 1 | 53 | 1.9% | 15.0 | 1.2% | drago milenario (i3, p12) |
+| lisbon | 1 | 53 | 1.9% | 7.1 | 4.0% | lisbon trees (i2, p4) |
+| berlin | 0 | 53 | 0.0% | 5.1 | 6.9% | che albero è (i1, p4) |
+| singapore | 1 | 51 | 2.0% | 9.1 | 3.0% | bodhi tree singapore (i3, p5) |
+| south-korea | 1 | 42 | 2.4% | 7.9 | 3.5% | oldest tree in korea (i4, p6) |
+| fulufjallet | 0 | 41 | 0.0% | 8.2 | 3.4% | old tjikko (i19, p9) |
+| united-states | 3 | 40 | 7.5% | 12.5 | 1.7% | oldest tree in oregon (i5, p13) |
+| copenhagen | 1 | 39 | 2.6% | 11.9 | 1.8% | trees in copenhagen (i5, p19) |
+| fukuoka | 2 | 32 | 6.2% | 10.3 | 2.4% | gingkosidi (i6, p32) |
+| munich | 1 | 30 | 3.3% | 5.0 | 6.9% | a monaco di baviera? (i1, p20) |
+| sequoia-national-park | 0 | 30 | 0.0% | 20.8 | 0.8% | washington tree (i10, p11) |
+| london | 0 | 30 | 0.0% | 7.0 | 4.0% | chestnut london (i1, p5) |
+| new-york | 0 | 29 | 0.0% | 7.3 | 3.8% | - |
+| paris | 0 | 27 | 0.0% | 6.3 | 4.7% | trees in paris (i1, p9) |
+| malaga | 2 | 26 | 7.7% | 11.4 | 2.0% | malaga tree (i3, p3) |
+| olympic-national-park | 1 | 26 | 3.8% | 8.6 | 3.2% | duncan cedar (i16, p9) |
+| brisbane | 0 | 25 | 0.0% | 12.1 | 1.8% | banyan tree (i3, p33) |
+| cambridge | 0 | 24 | 0.0% | 25.5 | 0.6% | is the apple tree of newton still alive (i1, p77) |
+| kyoto | 1 | 23 | 4.3% | 9.6 | 2.7% | - |
+| netherlands | 0 | 22 | 0.0% | 9.6 | 2.7% | ja (i1, p5) |
+| takayama | 0 | 21 | 0.0% | 8.0 | 3.5% | takayama ginkgo tree (i2, p7) |
+| alicante | 0 | 21 | 0.0% | 5.9 | 5.3% | - |
+| alishan | 0 | 20 | 0.0% | 7.5 | 3.8% | xianglin sacred tree (i5, p4) |
+| chishang | 0 | 20 | 0.0% | 14.2 | 1.4% | takeshi kaneshiro tree (i7, p7) |
+| porto | 0 | 19 | 0.0% | 5.0 | 7.0% | - |
+| bath | 1 | 18 | 5.6% | 6.8 | 4.2% | tree in bath (i1, p9) |
+| rome | 0 | 18 | 0.0% | 4.5 | 7.5% | oldest tree in rome (i3, p1) |
+| coimbra | 0 | 17 | 0.0% | 6.7 | 4.3% | - |
+| dublin | 0 | 17 | 0.0% | 7.0 | 4.0% | - |
+| montreal | 3 | 16 | 18.8% | 4.5 | 7.5% | - |
+| taiwan | 0 | 16 | 0.0% | 16.3 | 1.1% | oldest tree in taiwan (i3, p6) |
+| luxembourg-city | 0 | 16 | 0.0% | 5.2 | 6.5% | - |
+| amsterdam | 0 | 16 | 0.0% | 6.4 | 4.6% | - |
+| monterey | 0 | 15 | 0.0% | 19.5 | 0.8% | lone cypress (i3, p45) |
+| edinburgh | 0 | 15 | 0.0% | 6.7 | 4.3% | - |
+| perth | 0 | 15 | 0.0% | 8.1 | 3.5% | - |
+| hong-kong | 1 | 14 | 7.1% | 6.4 | 4.6% | oldest tree in hong kong (i1, p9) |
+| athens | 0 | 14 | 0.0% | 4.3 | 7.7% | - |
+| madrid | 0 | 14 | 0.0% | 10.6 | 2.3% | - |
+| boston | 0 | 14 | 0.0% | 8.2 | 3.4% | - |
+| austin | 0 | 14 | 0.0% | 15.1 | 1.2% | old tree (i2, p28) |
+| seoul | 1 | 13 | 7.7% | 3.8 | 8.7% | - |
+| toronto | 0 | 13 | 0.0% | 6.8 | 4.2% | - |
+| kagoshima | 0 | 13 | 0.0% | 7.8 | 3.6% | cycad ovule (i1, p10) |
+| venice | 1 | 12 | 8.3% | 5.7 | 5.7% | are there trees in venice (i1, p11) |
+| istanbul | 2 | 12 | 16.7% | 7.0 | 4.0% | istanbul (i1, p1) |
+| fortingall | 0 | 12 | 0.0% | 38.0 | 0.4% | fortingall yew (i1, p9) |
+| germany | 0 | 12 | 0.0% | 13.0 | 1.6% | trees germany (i2, p48) |
+| san-francisco | 0 | 12 | 0.0% | 12.1 | 1.8% | - |
+| switzerland | 0 | 11 | 0.0% | 5.7 | 5.5% | oldest tree in switzerland (i1, p1) |
+| nara | 0 | 11 | 0.0% | 5.5 | 6.1% | - |
+| the-hague | 0 | 11 | 0.0% | 4.9 | 7.1% | haag (i1, p1) |
+| reykjavik | 1 | 10 | 10.0% | 5.6 | 5.8% | oldest tree in iceland (i1, p3) |
+| chapel-hill-north-carolina | 0 | 10 | 0.0% | 16.5 | 1.1% | davie poplar (i2, p10) |
+| jaegerspris-nordskov | 0 | 10 | 0.0% | 9.7 | 2.7% | kongeegen (i4, p10) |
+| kanazawa | 0 | 10 | 0.0% | 6.1 | 4.9% | tabunoki (i1, p9) |
+| oahu | 0 | 10 | 0.0% | 7.9 | 3.5% | hitachi tree hawaii (i2, p9) |
+| krakow | 0 | 10 | 0.0% | 13.1 | 1.6% | - |
+
+- Plus 204 cities on the frozen 09-27 roster (data/depth-roster-frozen.json), biggest: barcelona, brussels, vienna, cadiz, pamplona, prague, cagliari, glasgow.
+
 ## 2026-11-03 (previous UTC day)
 
 **Today: an android waitlist signup arrived yesterday (47 total).**
@@ -2964,222 +3219,6 @@ What we did (context, proves nothing by itself): 3052 trees Google may index, 82
 | sequoia-national-park | 0 | 34 | 0.0% | 72.3 | 0.4% | general sherman tree (i3, p72) |
 | munich | 0 | 14 | 0.0% | 5.1 | 6.9% | - |
 | brisbane | 0 | 11 | 0.0% | 80.1 | 0.4% | the big macadamia nut (i8, p92) |
-
-- Plus 256 cities on the frozen 09-27 roster (data/depth-roster-frozen.json), biggest: singapore, lisbon, amsterdam, barcelona, seville, bath, tenerife, berlin.
-
-## 2026-10-21 (previous UTC day)
-
-**Today: an account was opened yesterday (33 total).**
-
-**The numbers that matter** (this week against the week before; strangers only)
-
-| Number | Why | This week | Week before |
-|---|---|---:|---:|
-| New website visitors | people | 21 | 15 |
-| ... of which from search | Google's recovery | 6 | 2 |
-| App downloads (first-time) | people | 13 | 15 |
-| New accounts | people | 5 | 5 |
-| Phones back within 30 days | people who stay | 7 of 12 | 6 of 17 |
-| Trees saved to Want to go | intent | 6 | 1 |
-| Trees collected | goal 1: stood at a tree | 12 | 4 |
-| Readers' contributions | data: trees, photos, corrections, votes | 11 | 3 |
-
-Website visitors are Google Analytics' count, so only people who accepted the cookie bar. The 30-day row is the phones that arrived five weeks ago, so it moves slowly.
-
-**Trees readers sent, for you to inspect** (4 you have not looked at; ours left out)
-
-| Judged | Tree | Where | Species | Their girth | Our verdict | Page |
-|---|---|---|---|---:|---|---|
-| 2026-10-20 | The Weeping Fig of Campo Santana (2 photos) | Lisbon | Weeping Fig (Ficus benjamina) | - | publish | [lis_015](https://ancienttrees.app/lisbon/weeping-fig-of-campo-santana) |
-| 2026-10-20 | Dragon Tree in Lisbon (2 photos) | lisbon | Dragon Tree | - | publish | [lis_037](https://ancienttrees.app/lisbon/dragon-tree-of-the-goethe-institut-garden) |
-| 2026-10-20 | The Moreton Bay Fig of Jardim Constantino (2 photos) | Lisbon | Moreton Bay Fig (Ficus macroph | - | publish | [lis_027](https://ancienttrees.app/lisbon/moreton-bay-fig-of-jardim-constantino) |
-| 2026-10-20 | The Paperbark of Jardim Constantino | Lisbon | Prickly Paperbark (Melaleuca s | - | publish | [lis_026](https://ancienttrees.app/lisbon/paperbark-of-jardim-constantino) |
-- Photographs and the readers' own words: `python3 scripts/inspect_readers.py` (a local page, never in this public file). Your answer goes in with `python3 scripts/judgement.py --feedback <id> "..."`.
-
-**What readers gave us, and it went live**
-
-| Day | Tree | Where | What | Page |
-|---|---|---|---|---|
-| 10-21 | The Moreton Bay Fig of the Mendoubia | Tangier | a reader's photograph, published | [live](https://ancienttrees.app/tangier/moreton-bay-fig-of-the-mendoubia) |
-| 10-20 | The Schönberg Beech above Ebringen | Freiburg | a reader's photograph, published | [live](https://ancienttrees.app/freiburg/schonberg-beech-above-ebringen) |
-| 10-20 | The Weeping Fig of Campo Santana | Lisbon | a reader's photograph, published | [live](https://ancienttrees.app/lisbon/weeping-fig-of-campo-santana) |
-| 10-20 | The Moreton Bay Fig of Jardim Constantino | Lisbon | a reader's photograph, published beside the one it had | [live](https://ancienttrees.app/lisbon/moreton-bay-fig-of-jardim-constantino) |
-| 10-20 | The Moreton Bay Fig of Jardim Constantino | Lisbon | a reader's photograph, published beside the one it had | [live](https://ancienttrees.app/lisbon/moreton-bay-fig-of-jardim-constantino) |
-| 10-20 | The Paperbark of Jardim Constantino | Lisbon | a reader's photograph, published beside the one it had | [live](https://ancienttrees.app/lisbon/paperbark-of-jardim-constantino) |
-| 10-20 | The Weeping Fig of Campo Santana | Lisbon | a reader's photograph, published beside the one it had | [live](https://ancienttrees.app/lisbon/weeping-fig-of-campo-santana) |
-| 10-21 | The Dragon Tree of the Goethe-Institut Garden | Lisbon | a reader's photograph, published beside the one it had | [live](https://ancienttrees.app/lisbon/dragon-tree-of-the-goethe-institut-garden) |
-
-**What was sent in, and what we decided**
-
-| seen | what | where | size for its species | ours | Hidde |
-|---|---|---|---|---|---|
-| 2026-10-20 | The Weeping Fig of Campo Santana | Lisbon | - | publish | - |
-| 2026-10-20 | Dragon Tree in Lisbon | - | - | publish | - |
-| 2026-10-20 | The Moreton Bay Fig of Jardim Constant | Lisbon | - | publish | - |
-| 2026-10-20 | The Moreton Bay Fig of Jardim Constant | Lisbon | - | publish | - |
-| 2026-10-20 | The Paperbark of Jardim Constantino | Lisbon | - | publish | - |
-| 2026-10-20 | The Weeping Fig of Campo Santana | Lisbon | - | publish | - |
-| 2026-10-20 | Dragon Tree in Lisbon | - | - | publish | - |
-| 2026-10-19 | The Schönberg Beech above Ebringen | Freiburg | - | publish | - |
-| 2026-10-19 | European Beech in Freiburg | - | - | publish | - |
-| 2026-10-18 | The Tulip Tree of Cantonspark | - | - | lead | - |
-| 2026-10-18 | The Moreton Bay Fig of Jardim Constant | Lisbon | - | publish | Al besproken, akkoord |
-| 2026-10-18 | The Moreton Bay Fig of Jardim Constant | Lisbon | - | publish | Al besproken, akkoord |
-| 2026-10-18 | The Paperbark of Jardim Constantino | Lisbon | - | publish | Al besproken, akkoord |
-| 2026-10-18 | A tree in Baarn | - | - | lead | - |
-| 2026-10-18 | Moreton Bay Fig | - | - | lead | please put the moreton bay fig live forget about our focus areas - user content is the most valuable thing. if we have a good photo and gps then never hold back and just publish, especially if they give so much information; people can always tell us its wrong. our goal should be pages google loves instead of 100% sure |
-
-0 waiting for a verdict. Disagree with one and the rule changes: `python3 scripts/judgement.py --feedback <id> "..."`, and `--learn` prints every verdict he has overruled.
-
-**Searched yesterday:** quercus (2 times).
-
-**App crashes** (last 7 days, store builds; MetricKit, a sample)
-
-| Crashes | Kind | Build | Where | Phones | Last | Fix |
-|---:|---|---|---|---:|---|---|
-| 15 | crash | 1.0.2 (20) | Swift runtime failure: Index out of range < static MyVotes.treeId(_:) (WorthIt.swift:84) < MyVotes.load(account:) (WorthIt.swift:103) | 1 | 2026-10-16 | fixed in build 35, released; contained server-side |
-
-**Search**
-
-Google, the last 10 days it will give us (2-3 days behind; the newest row is still filling, so it reads better than it is):
-
-| Day | Clicks | Impressions | CTR | Position |
-|---|---:|---:|---:|---:|
-| 10-12 | 1 | 26 | 3.8% | 30.3 |
-| 10-13 | 1 | 34 | 2.9% | 38.7 |
-| 10-14 | 1 | 39 | 2.6% | 36.9 |
-| 10-15 | 2 | 40 | 5.0% | 37.0 |
-| 10-16 | 3 | 73 | 4.1% | 53.0 |
-| 10-17 | 2 | 62 | 3.2% | 44.6 |
-| 10-18 | 2 | 53 | 3.8% | 42.9 |
-| 10-19 | 1 | 48 | 2.1% | 59.2 |
-| 10-20 | 3 | 39 | 7.7% | 26.3 |
-| 10-21 *partial* | 0 | 30 | 0.0% | 38.5 |
-| **window** | **16** | **444** | **3.6%** | |
-- Top queries (10d): # system role you operate as a precision (i1, p6); 2023 euwallacea validus over 20 families (i1, p96); 43 rue buffon 75005 paris (i1, p73); amsterdam trees (i1, p81); ancient tree (i1, p89)
-**What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)
-
-| Day | Impressions | Clicks | CTR |
-|---|---:|---:|---:|
-| 10-14 | 94 | 3 | 3.2% |
-| 10-15 | 78 | 8 | 10.3% |
-| 10-16 | 70 | 2 | 2.9% |
-| 10-17 | 57 | 3 | 5.3% |
-| 10-18 | 50 | 2 | 4.0% |
-| 10-19 | 82 | 0 | 0.0% |
-| 10-20 | - | - | 0.0% |
-| **7 days** | **431** | **18** | **4.2%** |
-- Week before: 577 impressions, 16 clicks. No Bing demotion in sight.
-- Top Bing queries: fig tree in square alicante (c2/i4, p4); big trees of quebec city (c2/i1, p2); oak tree in zurich (c1/i4, p2); how old are the trees in queen square bristol (c1/i4, p3); trees in the plaza dus burgos seville (c1/i3, p5); ancient trees in wiesbaden germany (c1/i2, p6); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1)
-- Bing alone, from Bing Webmaster Tools. DuckDuckGo and Yahoo draw on the same index and publish no numbers. Bing's data lags about two days.
-
----
-
-**For the night run, not for you.** You can stop reading here.
-
-
-**What the machine did, the last 24 hours**
-
-| Started | Minutes | Trees | Commits | Refused | Cities |
-|---|---:|---:|---:|---:|---|
-| 10-21T14:48 | 18.9 | 0 | 12 | 2 | Freiburg, Hallstatt, Potsdam, Regensburg, +3 more |
-| 10-21T19:53 | 14.5 | 5 | 9 | 0 | San Francisco +2, Heidelberg +1, New York +1, Potsdam +1 |
-| 10-21T22:59 | 24.4 | 2 | 10 | 1 | Imperia +2, Dresden, Heidelberg, New York |
-| 10-22T01:38 | 72.7 | 19 | 17 | 3 | Pittsburgh +8, Potsdam +3, Regensburg +2, Frankfurt +1, +5 more |
-| 10-22T02:55 | 33.1 | 9 | 16 | 0 | Chicago +7, Frankfurt +2, San Francisco, Washington Dc |
-| **5 runs** | **164** | **35** | **64** | | |
-
-- 1 of 5 produced no trees; 1 to 3 commands refused per run; last build that went live: 2h ago.
-
-**What they made**
-
-- Rothenburg: hold the Insingen cemetery linden lead, too thin for a story
-- Rotterdam: hold the Pelgrimvaderskerk beech lead, access still unknown
-- Pittsburgh: hold four READY leads that have no honest recognition line or access
-- Leiden 17 to 19: the Endegeest linden and Jan Wolkers's oak in Oegstgeest
-- Record when each page last changed
-- Chicago: approve a photograph of the Harms Woods bur oak (iNaturalist, CC BY)
-- Species intro: Swamp White Oak (Quercus bicolor), from gby_001, ott_017, chi_028
-- Frankfurt: log pass costs and leads, release claim
-- Frankfurt: write and merge frk_022 (Leonhard-Eissnert-Park oak, Offenbach-Bieber) and frk_023 (Bethmannpark ginkgo), counts to 23, de overlay
-- Chicago: fix silver maple comparison in chi_008, log pass costs, release claim
-- Chicago: write and merge chi_023 to chi_029, seven Cook County register champions
-- Enrich pass on glasgow, san-francisco, washington-dc, pittsburgh: nothing closed, gaps dead-ended; claims released
-- Washington DC: approve a photograph of the Yamaki Pine (Sage Ross, CC BY-SA 3.0)
-- LOG and cost: photograph sweep, Presidio Centennial Tree approved
-
-**Photographs the night run approved** (23; the last column undoes one)
-
-| Day | Tree | Where | Overrule |
-|---|---|---|---|
-| 10-20 | The Kilianseiche of Schesslitz | Bamberg | `photo_apply.py hold bam_006` |
-| 10-20 | The Linden between Pödeldorf and Naisa | Bamberg | `photo_apply.py hold bam_009` |
-| 10-22 | The Bur Oak of Harms Woods | Chicago | `photo_apply.py hold chi_023` |
-| 10-21 | The Fluttering Elm of Konigsbrucker Strasse | Dresden | `photo_apply.py hold dre_010` |
-| 10-20 | The Albert Oak of Kauscha | Dresden | `photo_apply.py hold dre_025` |
-| 10-21 | The Fingered Horse Chestnut of Volkspark Räcknitz | Dresden | `photo_apply.py hold dre_028` |
-| 10-20 | The Oak of the Brauteich | Dresden | `photo_apply.py hold dre_029` |
-| 10-20 | The Plague Oak of Pesterwitz | Dresden | `photo_apply.py hold dre_030` |
-| 10-22 | The Jahn Oak of Offenbach | Frankfurt | `photo_apply.py hold frk_021` |
-| 10-21 | Bergulme (Wych Elm) at the forestry office, Gosau | Hallstatt | `photo_apply.py hold hst_007` |
-| 10-20 | The Bunya Pine of the Palazzo della Provincia | Imperia | `photo_apply.py hold imp_001` |
-| 10-20 | The Sycamore of Hollerich | Luxembourg City | `photo_apply.py hold lux_008` |
-| 10-21 | The Weeping Beech of Weeping Beech Park | New York | `photo_apply.py hold nyc_028` |
-| 10-21 | The Roadside Oak of Sacrow | Potsdam | `photo_apply.py hold pot_012` |
-| 10-21 | The Plane of Am Kanal | Potsdam | `photo_apply.py hold pot_013` |
-| 10-21 | The Oak of the Rote Kaserne | Potsdam | `photo_apply.py hold pot_014` |
-| 10-22 | The Oak of Babelsberger Strasse | Potsdam | `photo_apply.py hold pot_017` |
-| 10-21 | The Bildeiche at Höhenhof | Regensburg | `photo_apply.py hold rgb_006` |
-| 10-22 | The Centennial Tree of the Presidio | San Francisco | `photo_apply.py hold sfo_011` |
-| 10-21 | St. Wolfgang's Oak (Wolfgangseiche) | Thalmassing | `photo_apply.py hold thm_001` |
-| 10-21 | The Tudor Place Tulip Poplar | Washington DC | `photo_apply.py hold wdc_018` |
-| 10-21 | The Arlington House Deodar Cedar | Washington DC | `photo_apply.py hold wdc_020` |
-| 10-22 | The Yamaki Pine | Washington DC | `photo_apply.py hold wdc_025` |
-
-Machine: 6 chain attempts yesterday, 4 got real work time (~72 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
-
-**Search work lists**
-
-- Top pages (10d): / (c6/i25); /leiden/beets-beech-of-the-burcht (c2/i2); /app (c1/i12); /de (c1/i7); /seville (c1/i4)
-- Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
-    - '# system role you operate as a precision' (i1, p6)
-    - '2023 euwallacea validus over 20 families' (i1, p96)
-    - 'big macadamia' (i1, p100)
-    - 'canary island dates' (i1, p99)
-    - 'chapina garden' (i1, p13)
-
-**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
-
-What Google does, last 10 days:
-
-| Measure | Now |
-|---|---:|
-| Impressions | 507 |
-| Clicks | 16 |
-| Pages that got at least one impression | 268 |
-| Impressions on the proven cities | 306 |
-
-- 358 impressions from site: and operator searches left out (ours, not readers; every Google table below is without them).
-
-What we did (context, proves nothing by itself): 3028 trees Google may index, 818 kept out for lacking a photo and an exact pin, 4657 pages on the noindex list.
-
-**Is enriching working** (indexed tree pages, last 10 days of Google; rich = register record, a measurement and concrete access)
-
-| Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |
-|---|---:|---:|---:|---:|---:|
-| Rich | 642 | 30 | 72 | 0.11 | 2 |
-| Not yet rich | 542 | 19 | 38 | 0.07 | 0 |
-| Returned to Google's index in the last 7 days | 0 | 0 | 0 | 0.00 | 0 |
-
-- Google lags 2 to 3 days, so a page returned this week has had a few days at most. Compare the per-page numbers across weeks, not the totals across rows.
-
-**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
-
-| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
-|---|---:|---:|---:|---:|---:|---|
-| sequoia-national-park | 0 | 35 | 0.0% | 71.3 | 0.4% | sherman tree (i3, p70) |
-| munich | 0 | 13 | 0.0% | 4.6 | 7.4% | - |
-| brisbane | 0 | 11 | 0.0% | 75.7 | 0.4% | the big macadamia nut (i7, p91) |
 
 - Plus 256 cities on the frozen 09-27 roster (data/depth-roster-frozen.json), biggest: singapore, lisbon, amsterdam, barcelona, seville, bath, tenerife, berlin.
 
