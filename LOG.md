@@ -12,6 +12,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 session: earned back paused, Google fell again from 11-04 midday
+
+- **What happened:** Search Console's 24-hour view (Hidde's screenshot, 11-05 morning) shows impressions from ~50 an hour to ~1 from 11-04 13:00 CET, site-wide within one hour, 15 hours on. Live checked: home, /seville, /lisbon, /berlin, /malaga, the Drago indexable, robots.txt open, no site-wide noindex. One hour is too fast for any tag or deploy of ours; Google confirms no update. Hourly data is preliminary: read 11-04 and 11-05 in the daily view tomorrow.
+- **What changed:** the widening below is paused (Hidde: "Nee, pauzeer"). `EARNED_PAUSED = True` in scripts/tagged_shown.py adds nothing; data/earned-back.json is back to the six pages of 11-04 and 11-05 morning, so the 70 of the earlier deploy go back under the tag. False lifts the pause.
+
 ## 2026-11-05 session: what Google shows again goes back in Google, daily
 
 - **What changed:** a page carrying our googlebot noindex that Google showed 3 times since 11-01 now leaves the Google-side cuts, checked every morning by scripts/tagged_shown.py (Hidde: "zolang google weer impressies heeft op paginas voegen we die ook toe"; he chose 3+ over every page shown). Was 2 clicks, or 1 click and 10 impressions, 10 a week; now 250 a week, the release lane's 70 per build sets the pace. Still never a translation, question, listing or thin-place page.

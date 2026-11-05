@@ -49,6 +49,12 @@ SINCE = "2026-11-01"
 # back. Daily, so a page that reaches 3 later is added later. 176 English tree
 # and place pages qualified that day; the release lane still lets at most 70
 # into Google per build.
+# PAUSED the same day (Hidde, 2026-11-05: "Nee, pauzeer"): Search Console's
+# hourly view showed Google's impressions falling from ~50 an hour to ~1 from
+# 11-04 13:00 CET, site-wide in one hour. Nothing is added until he lifts it,
+# so what Google does next can be read without our own change in it; the six
+# pages earned before stay. False lifts the pause.
+EARNED_PAUSED = True
 EARNED_CLICKS = 2
 EARNED_ONE_CLICK_IMPRESSIONS = 10
 EARNED_IMPRESSIONS = 3
@@ -66,7 +72,7 @@ EARNED_PER_WEEK = 250
 
 def may_earn(p):
     seg = [x for x in p["path"].split("/") if x]
-    if not seg or seg[0] in LANGS or seg[0] in LISTINGS or seg[-1] in QSLUGS:
+    if EARNED_PAUSED or not seg or seg[0] in LANGS or seg[0] in LISTINGS or seg[-1] in QSLUGS:
         return False
     return p["clicks"] >= EARNED_CLICKS or p["impressions"] >= EARNED_IMPRESSIONS or (
         p["clicks"] >= 1 and p["impressions"] >= EARNED_ONE_CLICK_IMPRESSIONS)
