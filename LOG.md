@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-05 night run (sixth attempt): nothing shipped, pace still full
+
+- No claims stood. The 112 READY leads are the same earlier rejects or thin ones. The 25-a-day pace is full until about 19:42 UTC, and 18 written trees (slc_007..014, car_003, hnl_032, nyc_*) wait to merge then, so I dispatched no write pass. Dependabot branches (supabase-js 2.118.0, astro 7.4.4) still wait for a session to build and merge them by hand. The iOS workflow shows FAILED for 2026-11-04 and was not looked at in this attempt.
+
 ## 2026-11-05 night run (02:00 UTC, fifth attempt): nothing shipped
 
 - No claims stood. 112 READY leads exist but are earlier rejects or thin, and the 25-a-day pace is full until about 19:42 UTC, with 18 written trees (slc_007..014, car_003, hnl_032, nyc_*) already waiting to merge then. A new write pass would only add to that queue, so none was dispatched. Dependabot branches (supabase-js 2.118.0, astro 7.4.4) are left for a session to build and merge by hand.
