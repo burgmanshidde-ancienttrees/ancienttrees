@@ -281,6 +281,30 @@ def uptime_cell(now):
     return "green", ""
 
 
+def livecheck_cell(now):
+    """livecheck.yml, every hour: the live pages opened in a real Chrome
+    (scripts/pagecheck.py; Hidde, 2026-11-06, the explore crash). Red when
+    the last two runs failed (a broken page fails every run; one red run can
+    be a slow start), orange when any failed in the last 24 hours."""
+    rows = runs("livecheck.yml", limit=30)
+    if rows is None:
+        return "grey", "live page check unknown"
+    done = [r for r in rows if r.get("status") == "completed"
+            and r.get("conclusion") in ("success", "failure", "timed_out")]
+    if not done:
+        return "grey", "live page check has no finished run yet (unknown)"
+    if len(done) >= 2 and all(r["conclusion"] != "success" for r in done[:2]):
+        return "red", ("live pages crash or hang in Chrome (livecheck.yml; "
+                       "python3 scripts/pagecheck.py --live names them; "
+                       "gh workflow run rollback.yml puts back the last good build)")
+    cut = now - datetime.timedelta(hours=24)
+    failed = [r for r in done if r["conclusion"] != "success"
+              and (_when(r.get("createdAt", "")) or now) >= cut]
+    if failed:
+        return "orange", "live page check failed %d time(s) in 24h" % len(failed)
+    return "green", ""
+
+
 def speed_cell():
     try:
         import page_speed
@@ -394,7 +418,7 @@ def assess(now=None):
     q["web"] = {
         "next": combine([ci_cell("deploy.yml", "deploy", now, deploy=True), code, fresh,
                          speed_cell(), security_cell(now)]),
-        "live": combine([web_live(), uptime_cell(now)]),
+        "live": combine([web_live(), uptime_cell(now), livecheck_cell(now)]),
         "bugs": web_bugs[:2],
     }
     ios_bugs = bug_cell("APP", today)

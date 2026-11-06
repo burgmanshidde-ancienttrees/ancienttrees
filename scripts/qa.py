@@ -358,6 +358,38 @@ def check_no_strategy_in_workflows():
     return out
 
 
+def check_the_pages_run_before_they_go_live():
+    """A real Chrome opens the pages before the upload, every hour after it,
+    and a good build can be put back in minutes.
+
+    Hidde, 2026-11-06, after /explore crashed every visitor's tab while every
+    check was green ("ons platform wordt steeds groter, dit soort fouten
+    worden steeds duurder"; "doe het"): deploy.yml runs scripts/pagecheck.py
+    before "Upload site artifact", livecheck.yml runs it on the live site,
+    quality.py reads livecheck for the Web Live light, and rollback.yml
+    republishes an earlier build. Removing any part needs Hidde.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    wf = root / ".github" / "workflows"
+    deploy = (wf / "deploy.yml").read_text(encoding="utf-8") if (wf / "deploy.yml").exists() else ""
+    run_at, up_at = deploy.find("scripts/pagecheck.py"), deploy.find("Upload site artifact")
+    if run_at < 0 or up_at < 0 or run_at > up_at:
+        out.append("deploy.yml no longer runs scripts/pagecheck.py before the upload: "
+                   "a page that crashes in Chrome can go live again (2026-11-06)")
+    if not (root / "scripts" / "pagecheck.py").exists():
+        out.append("scripts/pagecheck.py is missing: nothing opens the pages in a browser before they go live")
+    live = wf / "livecheck.yml"
+    if not live.exists() or "pagecheck.py --live" not in live.read_text(encoding="utf-8"):
+        out.append("livecheck.yml no longer opens the live pages in Chrome every hour")
+    if "livecheck.yml" not in (root / "scripts" / "quality.py").read_text(encoding="utf-8"):
+        out.append("quality.py no longer reads livecheck.yml: a crashing live page would not reach the digest")
+    rb = wf / "rollback.yml"
+    if not rb.exists() or "download-artifact" not in rb.read_text(encoding="utf-8"):
+        out.append("rollback.yml is gone: putting back a good build means a full 30 to 55 minute deploy")
+    return out
+
+
 def check_the_code_is_read_every_week():
     """The weekly code review of the app and the website stays wired.
 
@@ -3649,6 +3681,7 @@ def main():
         check_workflows_carry_no_empty_expression,
         check_scripts_are_valid_python,
         check_no_strategy_in_workflows,
+        check_the_pages_run_before_they_go_live,
         check_the_digest_never_shows_bots,
         check_the_headline_never_judges_take_me_there,
         check_the_digest_page_shows_readers_words,
@@ -3853,6 +3886,7 @@ def main():
         failures.append(f"{page.relative_to(DIST)}: orphan, no page on the site links to it")
 
     failures += check_no_strategy_in_workflows()
+    failures += check_the_pages_run_before_they_go_live()
     failures += check_the_digest_never_shows_bots()
     failures += check_the_headline_never_judges_take_me_there()
     failures += check_the_digest_page_shows_readers_words()

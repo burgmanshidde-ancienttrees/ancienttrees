@@ -145,10 +145,26 @@ jobs:
       - name: Will the app still read these feeds
         run: python3 scripts/feedshape.py --dist site/dist
 
+      # DO THE PAGES RUN (Hidde, 2026-11-06). Everything above reads files;
+      # nothing ran the JavaScript, so on 2026-11-06 /explore went live in a
+      # loop that crashed every visitor's tab while every check was green.
+      # A real Chrome opens home, explore, a city, a tree, a country and more
+      # at desktop and phone width, and a crash, a hang or an error from our
+      # own scripts stops the deploy here, before the upload, so the site
+      # that works stays live. Same script and pages as livecheck.yml.
+      - name: Install the browser check
+        run: python3 -m pip install --quiet playwright==1.60.0
+
+      - name: Do the pages run in Chrome
+        run: python3 scripts/pagecheck.py
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site/dist
+          # Seven days, not the default one, so rollback.yml can put back a
+          # build from earlier in the week without rebuilding.
+          retention-days: 7
 
   deploy:
     needs: build

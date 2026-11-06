@@ -796,6 +796,10 @@ def main():
              "never a visible change: "),
             ("Site up", quality.uptime_cell(now),
              "The site is not answering from outside (uptime.yml): "),
+            ("Live pages run", quality.livecheck_cell(now),
+             "A live page crashes, hangs or throws in Chrome: put back the "
+             "last good build first (gh workflow run rollback.yml, about five "
+             "minutes), then fix on main: "),
         ]
         for surface in ("WEB", "APP"):
             colour, reason = quality.bug_cell(surface, now.date())[:2]

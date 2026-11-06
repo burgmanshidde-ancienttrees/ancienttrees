@@ -1,0 +1,81 @@
+name: Roll back the site
+
+# PUT BACK THE BUILD THAT WORKED, IN MINUTES (Hidde, 2026-11-06). A fix takes
+# a full deploy, 30 to 55 minutes of building and QA, and on 2026-11-06 the
+# explore map crashed every visitor's tab for all of that time. This skips
+# the build: it takes the site that an earlier deploy already built and
+# checked (deploy.yml keeps each upload for seven days) and publishes it
+# again, in about five minutes.
+#
+#   gh workflow run rollback.yml                  the deploy before the newest
+#   gh workflow run rollback.yml -f run_id=<id>   that deploy run's site
+#
+# Then fix forward on main as usual: the next deploy replaces the rollback.
+# A deploy already building when this runs will publish over it when it ends,
+# so cancel that one first if it carries the fault.
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "A successful deploy.yml run to put back (empty: the one before the newest)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+
+concurrency:
+  group: rollback
+  cancel-in-progress: false
+
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    outputs:
+      run_id: ${{ steps.pick.outputs.run_id }}
+    steps:
+      - name: Which build goes back
+        id: pick
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WANT: ${{ inputs.run_id }}
+        run: python3 -c "import os,json,subprocess; w=os.environ.get('WANT','').strip(); rows=json.loads(subprocess.check_output(['gh','run','list','-R',os.environ['GITHUB_REPOSITORY'],'--workflow','deploy.yml','--status','success','-L','5','--json','databaseId,displayTitle,createdAt'])); pick=w or (str(rows[1]['databaseId']) if len(rows)>1 else ''); assert pick, 'no earlier successful deploy'; print('putting back deploy run', pick, [r for r in rows if str(r['databaseId'])==pick]); open(os.environ['GITHUB_OUTPUT'],'a').write('run_id=%s\n' % pick)"
+
+  republish:
+    needs: pick
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch that build's site
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          run-id: ${{ needs.pick.outputs.run_id }}
+          github-token: ${{ github.token }}
+          path: old
+
+      - name: Unpack it
+        run: |
+          mkdir site
+          tar -xf old/artifact.tar -C site
+          test -f site/index.html
+
+      - name: Upload it again
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+          retention-days: 7
+
+  deploy:
+    needs: republish
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
