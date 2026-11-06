@@ -1372,6 +1372,9 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
    padding to match what AllTrails' own card actually measures. */
 .app-download-qr .app-getter-qr { width: 180px; height: 180px; margin: 0 auto 1rem; display: block; }
 .app-download-android .app-getter-form { justify-content: center; }
+/* In the sheet the form is a column (.at-sheet-btns), so the row rule's
+   flex-basis 12rem became a 192px-tall oval field on Android (2026-11-06). */
+.app-download-android .app-getter-form input { flex: none; }
 .app-download-android .app-getter-form[hidden] { display: none; }
 .app-download-android .app-getter-sent { font-size: 14px; color: var(--ink); }
 .appland-right h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-light); margin-bottom: 0.4rem; }
