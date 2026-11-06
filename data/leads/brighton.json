@@ -33,9 +33,53 @@
     "https://ancient-yew.org/yew_tree_database/stanmer"
    ],
    "found": "2026-11-04"
+  },
+  {
+   "name": "Stanmer Park Turkey oak (tallest oak in Brighton)",
+   "location": "Stanmer Park, Brighton",
+   "status": "lead",
+   "reason": "Council Special Trees of Stanmer Park trail no. 10: Quercus cerris, 'more than 30 metres, the tallest oak in Brighton'. No girth, age or coordinate on the fetched page (positions are in the trail app only); no photo or exact pin in reach. A park-level pin would be a 500 ha park, not a small site.",
+   "sources": ["https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/special-trees-stanmer-park"],
+   "found": "2026-11-06"
+  },
+  {
+   "name": "Stanmer Park sweet chestnut (30 m) and champion Siberian elm / Chinese ash",
+   "location": "Stanmer Park, Brighton",
+   "status": "lead",
+   "reason": "Council trail nos. 7, 8, 12: sweet chestnut 30 m high, planted 19th century; Ulmus minor x pumila planted 1965, 'British Isles height and girth champion'; Chinese ash British Isles height champion. Planted champions, not veterans, and no coordinates on the page; needs the council trail app positions or a GPS fix.",
+   "sources": ["https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/special-trees-stanmer-park"],
+   "found": "2026-11-06"
+  },
+  {
+   "name": "Stanmer Great Wood beech avenue",
+   "location": "Stanmer Great Wood, Brighton",
+   "status": "lead",
+   "reason": "Council trail no. 16: avenue of veteran beeches planted about 300 years ago along a carriage drive, storm-damaged in 1987. An avenue is not one collectible point; no individual beech named or measured.",
+   "sources": ["https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/special-trees-stanmer-park"],
+   "found": "2026-11-06"
+  },
+  {
+   "name": "Dyke Road Park champion Belgian elm (Ulmus x hollandica 'Belgica')",
+   "location": "Dyke Road Park, Brighton",
+   "status": "lead",
+   "reason": "Wikipedia (Ulmus x hollandica 'Belgica') says TROBI champion at Dyke Road Park, 17 m by 92 cm dbh in 2009 (about 290 cm girth, derived). Single secondary source, 2009 measurement, no coordinate or photo, a cultivar of modest size; alive not confirmed.",
+   "sources": ["https://en.wikipedia.org/wiki/Ulmus_%C3%97_hollandica_%27Belgica%27"],
+   "found": "2026-11-06"
+  },
+  {
+   "name": "Preston Park West Ride Jersey elm row",
+   "location": "Preston Park, Brighton",
+   "status": "lead",
+   "reason": "Search summary only (not a fetched page): row of Jersey elms about 29 m tall, about 2 m girth, planted around 1880. A row is not a collectible point; no individual named.",
+   "found": "2026-11-06"
   }
  ],
  "blocked": [
+  {
+   "name": "St Nicholas churchyard, Dyke Road",
+   "location": "St Nicholas Church, Dyke Road, Brighton",
+   "reason": "Church Heritage Record states no ancient, veteran or notable trees are connected to this church; council local-list entry names no tree. Nothing to ship; do not re-search."
+  },
   {
    "name": "Extra-Mural Cemetery yews and oaks (general)",
    "location": "Extra-Mural Cemetery, Lewes Road, Brighton",
