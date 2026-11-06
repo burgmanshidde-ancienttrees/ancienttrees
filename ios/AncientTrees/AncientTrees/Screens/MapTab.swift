@@ -1028,9 +1028,18 @@ struct MapTab: View {
     /// The searched place's spread: the box around its trees, a tenth wider
     /// each way. Nil with no search.
     private var placeSpread: Box? {
-        guard focusPlace != nil, let f = placeTrees.first else { return nil }
-        var s = f.lat, n = f.lat, w = f.lng, e = f.lng
-        for t in placeTrees { s = min(s, t.lat); n = max(n, t.lat); w = min(w, t.lng); e = max(e, t.lng) }
+        // A country with a mainland frame (the website's map_focus, the box
+        // the search flies to): that frame, so France's trees overseas do not
+        // stretch it over Baarn (Hidde's phone, 2026-11-06).
+        if case .country(let name) = focusPlace, let f = catalogue.facets.focus(country: name) {
+            return Box(minLat: f.sw.lat, maxLat: f.ne.lat, minLng: f.sw.lng, maxLng: f.ne.lng)
+        }
+        guard focusPlace != nil, !placeTrees.isEmpty else { return nil }
+        // Else the middle 96 percent of its trees, as the flight frames it,
+        // so one tree far out does not pull the box across the sea.
+        let lats = placeTrees.map(\.lat).sorted(), lngs = placeTrees.map(\.lng).sorted()
+        let lo = Int(Double(lats.count - 1) * 0.02), hi = Int(Double(lats.count - 1) * 0.98)
+        let s = lats[lo], n = lats[hi], w = lngs[lo], e = lngs[hi]
         let dl = max((n - s) * 0.1, 0.02), dg = max((e - w) * 0.1, 0.02)
         return Box(minLat: s - dl, maxLat: n + dl, minLng: w - dg, maxLng: e + dg)
     }

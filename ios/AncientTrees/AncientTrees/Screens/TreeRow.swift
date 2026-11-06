@@ -125,7 +125,7 @@ struct HighlightCard: View {
 }
 
 /// A tree only you have, as a HighlightCard: your photograph, the Seen tag,
-/// its name and "Your tree". The map list's Collected shelf (MapTab
+/// its name and its species when you gave one. The map list's Collected shelf (MapTab
 /// placeList), beside the trees of ours you collected.
 struct MineTile: View {
     let sighting: Sightings.Sighting
@@ -149,10 +149,15 @@ struct MineTile: View {
                 .foregroundStyle(Brand.ink)
                 .lineLimit(2, reservesSpace: true)
                 .padding(.top, 8)
-            Text(sighting.status == .published ? "Approved" : "Your tree")
-                .font(.system(size: 12))
-                .foregroundStyle(Brand.inkSoft)
-                .padding(.top, 3)
+            // No "Your tree" line (Hidde, 2026-11-06: under Collected it
+            // "looks weird that can go"); the species when you gave one.
+            if let sp = sighting.species, !sp.isEmpty {
+                Text(sp)
+                    .font(.system(size: 12))
+                    .foregroundStyle(Brand.inkSoft)
+                    .lineLimit(1)
+                    .padding(.top, 3)
+            }
         }
         .frame(width: 220, alignment: .leading)
         .contentShape(.rect)
