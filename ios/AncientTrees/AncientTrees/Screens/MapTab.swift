@@ -1071,6 +1071,13 @@ struct MapTab: View {
                 }
             }
         }
+        // Yours, after the searched place's trees (see list).
+        if focusPlace != nil {
+            ForEach(minesInView) { s in
+                SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
+            }
+            .padding(.top, 12)
+        }
         // The Plus question after the trees, the searched city only, while
         // its trees are in view (the box's rule above, map.ts _focusCity).
         if case .city(let slug) = focusPlace,
@@ -1082,7 +1089,10 @@ struct MapTab: View {
     private var list: some View {
         LazyVStack(spacing: 12) {
                 // Yours first: there are few of them and nobody else has them.
-                if query.isEmpty {
+                // Not while a search holds (Hidde, 2026-11-06: searching the
+                // United Kingdom led with his collected trees in Baarn, "ik
+                // wil gewoon uk zien"): then they come after the list.
+                if query.isEmpty && focusPlace == nil {
                     ForEach(minesInView) { s in
                         SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
                     }
