@@ -1,5 +1,9 @@
 # LOG
 
+## 2026-11-06 (evening session: build 40 and the map's Airbnb search)
+
+Build 40 (1.0.4) archived from ad9e052c1 by scripts/release.py and tested on Hidde's phone (iOS 27); he uploads it. In it: Discover no longer goes empty after an island tile (a NavigationLink pushed the empty place page, iOS 27 kept it); one tapped tree's card raises no further; the map's search works as Airbnb's map, app and web: a searched place shows only its pins, count and trees until you drag, zoom or tap the cross, and the cross leaves the camera where it is; the sheet's count is small and centred under the grip; a searched city's ambassador box sits under the Highlights; your own and collected trees are a "Collected" shelf under the Highlights; Discover's second row "New from visitors" (supabase/new-from-visitors.sql, pasted by Hidde; names only from public profiles, generated names show "A visitor", our own accounts left out; CLAUDE.md records that the name shows signed out, the profile asks to sign in). Web explore carries the same search and shelf (live, France checked). Not done: "New from visitors" on the web homepage; a tile shows the tree's lead photo, which is not always the visitor's own.
+
 ## 2026-11-06 (late window, second attempt)
 
 Shipped 7 app-only trees: Powerscourt's tallest Douglas fir (new place enniskerry), Hackberry of Terenzano (Florence), Ashburn red mulberry (leesburg), and four in Cardiff (crd_009, 011, 012, 013). Most "READY" leads were not: 17 were declined with reasons recorded in the lead files so `leads.py --ready` stops offering them; the 401 "awaiting a writer" figure is mostly stale research files of trees already live. San Francisco verify found nothing new (register exhausted by three passes); its claim stays until sfo_014/015 are merged or it expires (4 h). Still open: the failing scheduled workflows (deploy, iOS) were not looked at this attempt.
