@@ -196,7 +196,7 @@
     }
   },
   {
-    "id": "crd_008",
+    "id": "crd_013",
     "name": "Insole Court Cedar of Lebanon",
     "species": "Cedar of Lebanon (Cedrus libani)",
     "age_estimate": "roughly 160 years",
@@ -224,13 +224,13 @@
     "transport": "Llandaff station about 20 minutes on foot; Cardiff Central about 10 minutes by bus then a short walk (not checked, confirm locally).",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "how_to_recognise": "A large cedar on the South-west Lawn, just east of the corner steps that lead down from the Front Lawn below the house; the park's table puts it south of the house between two terraced lawns.",
-    "verify_notes": "Girth 637 cm at 1 m (April 2017), 662 cm at 1 m (November 2024); height 20 m (2015), 21 m (2017), 22 m (December 2024). Glamorgan Champion 2005. The survey's own age reasoning: on a good site its girth gives an age 'well in excess of the age of the property', and it is 'probably safe to say' it was planted about when the first section of the gardens was laid out in the early 1860s (survey's wording, not a dated planting record for this tree). Parks and Gardens UK independently describes 'a large Cedar of Lebanon tree' on the South-west Lawn just east of the corner steps (second source for existence, species, position). Alive: measured November 2024; iNaturalist observation 2026-05-23 near the pin (lifecheck RECENT, same trunk not confirmed). Insole Court is a Victorian house (Insole family) now run by a community trust; its Parks and Gardens entry calls the grounds a municipal park for general public use; the Community Garden and stable yard are NOT open, this tree is on the open lawns. Pin: OS grid reference from the survey converted OSGB36 to WGS84 (Helmert, checked against car_001's earlier conversion); a survey grid reference is not placed on a crown, so approximate."
+    "how_to_recognise": "You can recognise it as the large cedar on the South-west Lawn, its trunk 6.62 metres round. It stands just east of the corner steps that lead down from the Front Lawn below the house.",
+    "story": "Measured by its trunk alone, this cedar would be older than the house it stands below. Cardiff's tree survey says as much, and then settles on a more modest answer.\n\nThe trunk was 6.62 metres round at one metre up in November 2024, up from 6.37 metres in 2017, and the tree has climbed from 20 to 22 metres in under a decade. On a good site, the survey notes, a girth like that suggests an age well beyond the property's. Its judgement is that it is probably safe to say the cedar went in around the time the first section of the gardens was laid out, in the early 1860s. That is the surveyor's reasoning rather than a dated planting record, and it gives the tree somewhere between 140 and 200 years.\n\nInsole Court is a Victorian house built for the Insole family, now run by a community trust, with its grounds kept as a public park. The cedar has seen the place pass from a family's garden to everyone's, and in 2005 it was named the Glamorgan champion of its species.\n\nIt stands on the South-west Lawn, just east of the corner steps that lead down from the Front Lawn below the house, between two terraced lawns. The gardens are listed Grade II* on the Welsh register of historic parks and gardens. The community garden and stable yard are closed to visitors, but the lawns where the cedar grows are open."
   },
   {
     "id": "crd_009",
     "name": "Cathays Cemetery Deodar",
-    "species": "Deodar Cedar (Cedrus deodara)",
+    "species": "Himalayan Cedar (Cedrus deodara)",
     "age_estimate": "roughly 160 years",
     "age_min": 140,
     "age_max": 190,
@@ -260,8 +260,8 @@
       "name": "Cathays Cemetery chapels",
       "radius_m": 30
     },
-    "how_to_recognise": "A single big cedar in a circular bed ringed by tarmac immediately behind the twin chapels; in 2026 it lost a major limb low on its north-east side.",
-    "verify_notes": "Girth 428 cm at 0.1 m (September 2020), height 16 m. The survey notes this tree was historically labelled a Cedar of Lebanon; its needle measurements (2 to 3.6 cm) make it a deodar (survey's identification, flag if a visitor disagrees). Survey age: about 163 years in 2020 on an average site, so started c.1857, 'consistent with being planted when the cemetery was laid out' (cemetery opened 1859; a local heritage-walk blog quotes a guide that a cedar was planted at opening, not located by that source, so no bridge claim). In 2026 it lost a major limb on the north-east side (page note, so alive after that). iNaturalist observation 2026-04-27 near the pin (lifecheck RECENT). Sources: one survey page plus Cadw/Coflein for the cemetery; tree itself single-source, flagged. Same site: Austrian pine, Glamorgan Champion 2020, 410 cm girth, 21 m (ST 18093 78674, ref 623), north-west of the chapels beside the westerly curving path, a possible second stop. Pin: OS grid reference from the survey converted OSGB36 to WGS84 (Helmert, checked against car_001's earlier conversion); a survey grid reference is not placed on a crown, so approximate."
+    "how_to_recognise": "You can recognise it by the round bed ringed by tarmac it grows in, and by the gap where a major limb came off its north-east side in 2026. It stands directly behind the twin chapels.",
+    "story": "For most of its life this cedar went by the wrong name. Cardiff's tree records long called it a Cedar of Lebanon, until the surveyor measured its needles, 2 to 3.6 centimetres long, and found a deodar, the Himalayan cedar.\n\nIt stands in a round bed ringed by tarmac directly behind the twin chapels of Cathays Cemetery, which opened in 1859. The survey puts the tree at about 163 years old in 2020, working from a trunk 4.28 metres round just above the ground, and says that age is consistent with planting when the cemetery was laid out. That is the survey's reasoning rather than a planting record, so the range stays broad, somewhere between 140 and 190 years.\n\nIf the survey is right, the deodar has stood behind those chapels for almost the whole life of the cemetery, through a century and a half of Cardiff burying its dead. At 16 metres it is not tall. What it has is the spot.\n\nIt has not come through untouched. In 2026 it lost a major limb on its north-east side, and the gap is now part of how you will know it. The identification rests on that one survey, so treat it as the surveyor's call. If you know your cedars and disagree, tell us.\n\nWhile you are here, follow the curving path north-west of the chapels to an Austrian pine, 4.10 metres round and 21 metres tall, the Glamorgan champion of its kind in 2020."
   },
   {
     "id": "crd_010",
@@ -318,11 +318,19 @@
     "transport": "Cardiff Queen Street about 15 minutes on foot; Cardiff Central about 20 minutes.",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "how_to_recognise": "A 25 m deciduous conifer with a fluted, buttressed red-brown trunk on the south edge of the Sunken Lawn; feathery needles turn rust-orange in autumn and fall.",
-    "verify_notes": "Girth 270 cm (November 2015), 322 cm (March 2023); height 24 m (2015), 25 m (2023); TROBI Remarkable Tree 2023 per the park table. Species was only described from living trees in China in 1948, so this specimen is well under 80 years old (general fact, not from the page); no planting date given, leave age empty. Single survey source, flagged. Alive: iNaturalist/Commons observations 2026-09-24 near the pin (lifecheck RECENT). Commons photo geotagged about 15 m from the pin, file page for a human to judge: CC BY-SA 2.0 (geograph). Pin: OS grid reference from the survey converted OSGB36 to WGS84 (Helmert, checked against car_001's earlier conversion); a survey grid reference is not placed on a crown, so approximate.",
+    "how_to_recognise": "You can recognise it by the fluted, buttressed red-brown trunk and soft feathery needles, which turn rust-orange and drop in autumn. It stands on the south edge of the Sunken Lawn, 25 metres tall.",
     "photo_candidates": [
       "https://commons.wikimedia.org/wiki/File:Metasequoia_glyptostroboides_-_geograph.org.uk_-_8417441.jpg"
-    ]
+    ],
+    "story": "This tree belongs to a species science only met alive in 1948. The dawn redwood was known from fossils before it was described from living trees in China that year, so whoever planted this one in Bute Park did it within the last eighty years at most.\n\nIt has made good use of the time. When the park's tree survey measured it in November 2015 the trunk was 2.70 metres round. By March 2023 it was 3.22 metres, more than half a metre added in under eight years, and the crown had reached 25 metres. That same year the Tree Register listed it as a Remarkable Tree.\n\nIt stands on the south edge of the Sunken Lawn, a short walk across the grass from the Sunken Lawn ginkgo. The trunk is red-brown, fluted and buttressed at the foot, and the needles are soft and feathery. It is a conifer that behaves like an oak. In autumn the needles turn rust-orange and fall, and all winter the tree stands bare.\n\nWhat it lacks is a birthday. Nobody has recorded when it went into the ground, and the survey gives no planting date. If you know, or remember this lawn when the redwood was small, tell us.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "late October into November, when the needles turn rust-orange before they fall"
+    }
   },
   {
     "id": "crd_012",
@@ -352,7 +360,7 @@
     "transport": "Cardiff Queen Street about 25 minutes by bus then a short walk (not checked, confirm locally); Roath Park lake is a well-served bus area.",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "how_to_recognise": "A broad-trunked oak (344 cm round, only 14 m tall) on the lakeside path on the east shore, almost opposite Lakeside Drive, beside Lake Road East.",
-    "verify_notes": "Girth 344 cm, height 14 m (January 2015). The survey states an oak is shown at this spot on the 1880 and 1900 Ordnance Survey maps, so it predates the park (the lake park was made on marshland). Survey age: about 173 years in 2015 on an average site (started c.1842) or about 157 on a good site (c.1858); add the years since 2015, so roughly 168 to 184 now; recorded broadly. 2015 figures are 11 years old. Single survey source, flagged; sits among Roath Park's other champions (the park has the second most champion trees of any UK public park per bute-park.com). Alive: iNaturalist observation 2026-05-06 near the pin (lifecheck RECENT, same trunk not confirmed). Low height and a busy roadside footpath: lowest priority of the five, a modest tree, consider only as a fifth stop. Pin: OS grid reference from the survey converted OSGB36 to WGS84 (Helmert, checked against car_001's earlier conversion); a survey grid reference is not placed on a crown, so approximate."
+    "how_to_recognise": "You can recognise it by the broad trunk, 3.44 metres round, under a low crown only 14 metres tall. It stands on the lakeside path on the east shore of Roath Park Lake, almost opposite Lakeside Drive.",
+    "story": "This oak was on the map before the park was. Ordnance Survey sheets of 1880 and 1900 both show an oak at this spot on the east side of what is now Roath Park Lake, so it was already growing when the marshland here was made into a park.\n\nCardiff's tree survey measured it in January 2015 at 3.44 metres round and only 14 metres tall, a short, broad tree rather than a tall one. From that girth the survey works out about 173 years on an average site, or about 157 on a good one, which puts its start somewhere between the early 1840s and the late 1850s. Add the years since, and it is roughly 170 to 190 years old now. That is an estimate from size, not a planting record.\n\nEither way, it has watched the marsh around it turn into a lake and a public park, and the park fill up with remarkable trees. By the count of the council's park site, Roath Park now holds the second largest number of champion trees of any public park in the UK.\n\nThis oak is not the grandest of them. It stands on a busy lakeside footpath beside Lake Road East, almost opposite Lakeside Drive, a modest tree with a long memory. The figures are from 2015, so it will have put on a few centimetres since. If you measure it, tell us."
   }
 ]
