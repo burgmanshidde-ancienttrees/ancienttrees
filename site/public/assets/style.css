@@ -1422,6 +1422,8 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
    name took one line or two (Hidde, same day). */
 .nfv-card { display: flex; flex-direction: column; }
 .nfv-tree { display: block; flex: 1 0 auto; text-decoration: none; color: inherit; }
+/* Two lines at most, so one long name does not push every line in the row down. */
+.nfv-card b { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .nfv-who { display: flex; align-items: center; gap: 5px; min-height: 30px; margin-top: 3px; padding: 0;
   font: inherit; font-size: 12px; font-weight: 500; color: var(--ink-mid); text-decoration: none;
   background: none; border: 0; text-align: left; cursor: default; }
