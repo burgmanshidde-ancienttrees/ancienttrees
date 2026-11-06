@@ -41,6 +41,10 @@
    }
   },
   {
+   "common": "African Sumac",
+   "latin": "Searsia lancea"
+  },
+  {
    "common": "Akou",
    "latin": "Ficus superba var. japonica",
    "names": {
@@ -54,6 +58,10 @@
      "赤秀"
     ]
    }
+  },
+  {
+   "common": "Aleppo Oak",
+   "latin": "Quercus infectoria subsp. veneris"
   },
   {
    "common": "Aleppo Pine",
@@ -224,6 +232,22 @@
    }
   },
   {
+   "common": "American Chestnut",
+   "latin": "Castanea dentata",
+   "names": {
+    "de": [
+     "Amerikanische Kastanie"
+    ],
+    "fr": [
+     "Châtaignier américain",
+     "Châtaignier d'Amérique"
+    ],
+    "ja": [
+     "アメリカグリ"
+    ]
+   }
+  },
+  {
    "common": "American Elm",
    "latin": "Ulmus americana",
    "names": {
@@ -344,6 +368,15 @@
      "オウバク",
      "キハダ",
      "黄柏"
+    ]
+   }
+  },
+  {
+   "common": "Anacua",
+   "latin": "Ehretia anacua",
+   "names": {
+    "en": [
+     "knockaway"
     ]
    }
   },
@@ -486,6 +519,18 @@
    }
   },
   {
+   "common": "Arizona White Oak",
+   "latin": "Quercus arizonica",
+   "names": {
+    "de": [
+     "Arizona-Eiche"
+    ],
+    "es": [
+     "Encina Arizona"
+    ]
+   }
+  },
+  {
    "common": "Atlantic White Cedar",
    "latin": "Chamaecyparis thyoides",
    "names": {
@@ -542,6 +587,25 @@
      "アトラスシーダー",
      "アトラス・シダー",
      "アトラス杉"
+    ]
+   }
+  },
+  {
+   "common": "Atlas Pistachio",
+   "latin": "Pistacia atlantica",
+   "names": {
+    "en": [
+     "Baneh",
+     "Mt. Atlas mastic tree"
+    ],
+    "de": [
+     "Atlantische Pistazie"
+    ],
+    "es": [
+     "Terebinthus atlanticus"
+    ],
+    "ja": [
+     "ピスタシア・アトランティカ"
     ]
    }
   },
@@ -749,6 +813,15 @@
     ],
     "pt": [
      "álamo-bálsamo"
+    ]
+   }
+  },
+  {
+   "common": "Banuyo",
+   "latin": "Wallaceodendron celebicum",
+   "names": {
+    "pt": [
+     "Wallaceodendron"
     ]
    }
   },
@@ -1165,6 +1238,29 @@
    }
   },
   {
+   "common": "Black Cottonwood",
+   "latin": "Populus trichocarpa",
+   "names": {
+    "en": [
+     "California poplar",
+     "western balsam-poplar"
+    ],
+    "nl": [
+     "Zwarte balsempopulier",
+     "balsempopulier",
+     "haarvruchtige populier",
+     "west-amerikaanse balsempopulier"
+    ],
+    "de": [
+     "Haarfrüchtige Balsam-Pappel",
+     "Westliche Balsam-Pappel"
+    ],
+    "fr": [
+     "peuplier de l'Ouest"
+    ]
+   }
+  },
+  {
    "common": "Black Locust",
    "latin": "Robinia pseudoacacia",
    "names": {
@@ -1279,6 +1375,49 @@
    }
   },
   {
+   "common": "Black Pine",
+   "latin": "Pinus nigra subsp. pallasiana",
+   "names": {
+    "en": [
+     "European Black Pine"
+    ],
+    "nl": [
+     "Zwarte den"
+    ],
+    "de": [
+     "Schwarzkiefer",
+     "Laricio-Kiefer",
+     "Pin noir",
+     "Schwarz-Föhre"
+    ],
+    "es": [
+     "Pino salgareño",
+     "Pino Nigro",
+     "pino laricio",
+     "pino negral"
+    ],
+    "it": [
+     "Pino laricio",
+     "Pino nero",
+     "pino austriaco",
+     "pino nero calabro"
+    ],
+    "fr": [
+     "Pin noir",
+     "pin de salzmann",
+     "pin laricio",
+     "pins noirs"
+    ],
+    "pt": [
+     "Pinheiro-larício"
+    ],
+    "ja": [
+     "ヨーロッパクロマツ",
+     "ヨーローッパクロマツ"
+    ]
+   }
+  },
+  {
    "common": "Black Poplar",
    "latin": "Populus nigra",
    "names": {
@@ -1377,6 +1516,21 @@
   {
    "common": "Blakely's Red Gum",
    "latin": "Eucalyptus blakelyi"
+  },
+  {
+   "common": "Blue Ash",
+   "latin": "Fraxinus quadrangulata",
+   "names": {
+    "de": [
+     "Blau-Esche"
+    ],
+    "es": [
+     "Fresno azul"
+    ],
+    "ja": [
+     "ブルー・アッシュ"
+    ]
+   }
   },
   {
    "common": "Blue Atlas Cedar",
@@ -1853,6 +2007,37 @@
    }
   },
   {
+   "common": "Calabash Tree",
+   "latin": "Crescentia alata",
+   "names": {
+    "en": [
+     "morrito"
+    ],
+    "es": [
+     "Otophora paradoxa",
+     "Pteromischus alatus"
+    ],
+    "ja": [
+     "メキシカンカラバッシュ、ヒカロ、モロ、モリート"
+    ]
+   }
+  },
+  {
+   "common": "California Buckeye",
+   "latin": "Aesculus californica",
+   "names": {
+    "en": [
+     "California horse chestnut"
+    ],
+    "de": [
+     "Kalifornische Rosskastanie"
+    ],
+    "fr": [
+     "Pavier de Californie"
+    ]
+   }
+  },
+  {
    "common": "California Fan Palm",
    "latin": "Washingtonia filifera",
    "names": {
@@ -2074,6 +2259,16 @@
    }
   },
   {
+   "common": "Canary Juniper",
+   "latin": "Juniperus turbinata ssp. canariensis",
+   "names": {
+    "fr": [
+     "Genévrier méditerranéen",
+     "Genévrier turbiné"
+    ]
+   }
+  },
+  {
    "common": "Canary Pine",
    "latin": "Pinus canariensis",
    "names": {
@@ -2270,6 +2465,21 @@
    }
   },
   {
+   "common": "Castor Aralia",
+   "latin": "Kalopanax septemlobus",
+   "names": {
+    "en": [
+     "prickly castor oil tree"
+    ],
+    "de": [
+     "Baumaralie"
+    ],
+    "ja": [
+     "ハリギリ"
+    ]
+   }
+  },
+  {
    "common": "Catacol Whitebeam",
    "latin": "Sorbus pseudomeinichii",
    "names": {
@@ -2361,46 +2571,34 @@
   },
   {
    "common": "Cedar",
-   "latin": "Cedrus libani per baumkunde.de, Cedrus atlantica per the city of Bad Homburg; disputed, see notes",
+   "latin": "Cedrus sp.",
    "names": {
-    "en": [
-     "Cedar of Lebanon",
-     "Lebanese cedar",
-     "Lebanon Cedar"
-    ],
     "nl": [
-     "Libanese ceder",
-     "libanonceder"
+     "Ceder",
+     "cederboom",
+     "ceders"
     ],
     "de": [
-     "Libanon-Zeder",
-     "Libanonzeder"
+     "Zeder",
+     "Zedern"
     ],
     "es": [
-     "Cedro del Líbano",
-     "Cedro de Salomon",
-     "Larix cedrus",
-     "Peuce cedrus"
+     "Cedro",
+     "Cedros"
     ],
     "it": [
-     "Cedro del Libano",
-     "Cedri del Libano",
-     "Pinus cedrus"
+     "Cedro"
     ],
     "fr": [
-     "Cèdre du Liban",
-     "Cèdres du Liban"
+     "Cèdre",
+     "Cèdres"
     ],
     "pt": [
-     "Cedro da turquia",
-     "Cedro do Líbano",
-     "Cedro do atlas",
-     "Cedro do chipre"
+     "Cedro"
     ],
     "ja": [
-     "レバノンシーダー",
-     "レバノンスギ",
-     "レバノン杉"
+     "ヒマラヤスギ属",
+     "香柏"
     ]
    }
   },
@@ -2789,6 +2987,30 @@
      "カンベイジュ",
      "カンポウフウ",
      "シナサワグルミ"
+    ]
+   }
+  },
+  {
+   "common": "Chinese Wisteria",
+   "latin": "Wisteria sinensis",
+   "names": {
+    "nl": [
+     "Chinese blauwe regen",
+     "Chinese blauweregen",
+     "Witte regen"
+    ],
+    "de": [
+     "Chinesische Wisteria",
+     "Chinesischer Blauregen"
+    ],
+    "es": [
+     "Millettia chinensis"
+    ],
+    "fr": [
+     "Glycine de Chine"
+    ],
+    "ja": [
+     "シナフジ"
     ]
    }
   },
@@ -3565,6 +3787,24 @@
     ],
     "ja": [
      "コルクガシ"
+    ]
+   }
+  },
+  {
+   "common": "Corkscrew Willow",
+   "latin": "Salix matsudana 'Tortuosa'",
+   "names": {
+    "en": [
+     "Chinese willow"
+    ],
+    "nl": [
+     "Kronkelwilg"
+    ],
+    "de": [
+     "Chinesische Weide"
+    ],
+    "fr": [
+     "Saule tortueux"
     ]
    }
   },
@@ -4386,6 +4626,42 @@
     "ja": [
      "カナダツガ",
      "ツガオイル"
+    ]
+   }
+  },
+  {
+   "common": "Eastern Red Cedar",
+   "latin": "Juniperus virginiana",
+   "names": {
+    "en": [
+     "Eastern Juniper",
+     "Eastern Redcedar",
+     "Virginia cedar",
+     "Virginian cedar"
+    ],
+    "nl": [
+     "cederhoutboom"
+    ],
+    "de": [
+     "Wacholder",
+     "Bleistiftzeder",
+     "Virginischer Wacholder"
+    ],
+    "es": [
+     "Enebro de Virginia"
+    ],
+    "it": [
+     "Ginepro della Virginia"
+    ],
+    "fr": [
+     "Genevrier de Virginie",
+     "Savin"
+    ],
+    "pt": [
+     "Pencil Cedar"
+    ],
+    "ja": [
+     "エンピツビャクシン"
     ]
    }
   },
@@ -5231,6 +5507,10 @@
    "latin": "Cerasus Sato-Zakura Group 'Fudanzakura'"
   },
   {
+   "common": "German Ash",
+   "latin": "Fraxinus holotricha"
+  },
+  {
    "common": "Ghost Pine",
    "latin": "Pinus sabiniana",
    "names": {
@@ -5445,6 +5725,39 @@
     "ja": [
      "キバナフジ",
      "キングサリ"
+    ]
+   }
+  },
+  {
+   "common": "Golden Larch",
+   "latin": "Pseudolarix amabilis",
+   "names": {
+    "en": [
+     "Chinese Golden Larch",
+     "Chinese golden-larch",
+     "Golden-larch"
+    ],
+    "nl": [
+     "Goudlarix",
+     "Japanse goudlarix"
+    ],
+    "de": [
+     "Goldlärche",
+     "Goldlärchen"
+    ],
+    "es": [
+     "Falso alerce dorado"
+    ],
+    "it": [
+     "Falso Lerice",
+     "Falso larice",
+     "Pseudolarice"
+    ],
+    "fr": [
+     "Mélèze doré de Chine"
+    ],
+    "pt": [
+     "Pseudolarix"
     ]
    }
   },
@@ -5916,6 +6229,39 @@
      "ヒマラヤシーダー",
      "ヒマラヤスギ",
      "ヒマラヤ杉"
+    ]
+   }
+  },
+  {
+   "common": "Himalayan Pine",
+   "latin": "Pinus wallichiana",
+   "names": {
+    "en": [
+     "Bhutan pine",
+     "Blue Pine",
+     "Himalayan white pine"
+    ],
+    "nl": [
+     "Himalayaden",
+     "Tranenden"
+    ],
+    "de": [
+     "Tränen-Kiefer",
+     "Tränenkiefer",
+     "Wallich-Kiefer",
+     "Wallichkiefer"
+    ],
+    "es": [
+     "Pino azul",
+     "Pino azul del Himalaya",
+     "Pino de Bhutan"
+    ],
+    "fr": [
+     "Pin de l'Himalaya",
+     "Pin pleureur de l'Himalaya"
+    ],
+    "ja": [
+     "ヒマラヤゴヨウ"
     ]
    }
   },
@@ -6730,6 +7076,10 @@
      "シイ"
     ]
    }
+  },
+  {
+   "common": "Japanese Elm",
+   "latin": "Ulmus davidiana var. japonica"
   },
   {
    "common": "Japanese Fir / Momi",
@@ -7597,6 +7947,34 @@
    "latin": "Casearia grewiifolia) and Nánh (Millettia nigrescens"
   },
   {
+   "common": "Lacebark Elm",
+   "latin": "Ulmus parvifolia",
+   "names": {
+    "en": [
+     "Chinese elm"
+    ],
+    "nl": [
+     "Chinese iep",
+     "Kleinbladige iep"
+    ],
+    "de": [
+     "Chinesische Ulme"
+    ],
+    "es": [
+     "Olmo chino"
+    ],
+    "fr": [
+     "Orme de Chine"
+    ],
+    "ja": [
+     "アキニレ",
+     "イシゲヤキ",
+     "カワラゲヤキ",
+     "ヤマニレ"
+    ]
+   }
+  },
+  {
    "common": "Lacebark Pine",
    "latin": "Pinus bungeana",
    "names": {
@@ -7803,6 +8181,21 @@
   {
    "common": "Linden",
    "latin": "Tilia sp., species disputed within the register's own record: title says Littleleaf Linden, description says American Linden"
+  },
+  {
+   "common": "Loblolly Pine",
+   "latin": "Pinus taeda",
+   "names": {
+    "en": [
+     "Southern Pine"
+    ],
+    "de": [
+     "Weihrauch-Kiefer"
+    ],
+    "ja": [
+     "テーダマツ"
+    ]
+   }
   },
   {
    "common": "Lombardy Poplar",
@@ -8076,6 +8469,30 @@
    "names": {
     "it": [
      "Mandarino"
+    ]
+   }
+  },
+  {
+   "common": "Mango",
+   "latin": "Mangifera indica",
+   "names": {
+    "en": [
+     "Indian mango",
+     "common mango",
+     "mango tree",
+     "mangoso"
+    ],
+    "de": [
+     "Mangobaum"
+    ],
+    "fr": [
+     "manguier"
+    ],
+    "pt": [
+     "Mangueira"
+    ],
+    "ja": [
+     "マンゴー"
     ]
    }
   },
@@ -8445,6 +8862,21 @@
    }
   },
   {
+   "common": "Mongolian Oak",
+   "latin": "Quercus mongolica",
+   "names": {
+    "de": [
+     "Mongolische Eiche"
+    ],
+    "ja": [
+     "フモトミズナラ",
+     "ミズナラ",
+     "モウコガシワ",
+     "モンゴリナラ"
+    ]
+   }
+  },
+  {
    "common": "Monkey Puzzle",
    "latin": "Araucaria araucana",
    "names": {
@@ -8804,6 +9236,21 @@
    }
   },
   {
+   "common": "Nikko Fir",
+   "latin": "Abies homolepis",
+   "names": {
+    "nl": [
+     "Nikko zilverspar"
+    ],
+    "de": [
+     "Nikko-Tanne"
+    ],
+    "ja": [
+     "ウラジロモミ"
+    ]
+   }
+  },
+  {
    "common": "Nordmann Fir",
    "latin": "Abies nordmanniana",
    "names": {
@@ -9147,8 +9594,7 @@
     "en": [
      "oak tree",
      "oaks",
-     "the oak genus",
-     "Aleppo oak"
+     "the oak genus"
     ],
     "nl": [
      "Eik"
@@ -10203,6 +10649,40 @@
    }
   },
   {
+   "common": "Ponderosa Pine",
+   "latin": "Pinus ponderosa",
+   "names": {
+    "en": [
+     "bull pine",
+     "western yellow pine",
+     "western yellow-pine",
+     "yellow pine"
+    ],
+    "nl": [
+     "gele den",
+     "ponderosaden"
+    ],
+    "de": [
+     "Gelb-Kiefer",
+     "Gelbkiefer",
+     "Gold-Kiefer",
+     "Goldkiefer"
+    ],
+    "es": [
+     "Pino ponderoso",
+     "Pino real americano"
+    ],
+    "fr": [
+     "Pin jaune"
+    ],
+    "ja": [
+     "ポンデローサパイン",
+     "ポンデローサマツ",
+     "ポンデローサ松"
+    ]
+   }
+  },
+  {
    "common": "Pontic Oak",
    "latin": "Quercus pontica",
    "names": {
@@ -10276,6 +10756,47 @@
    "names": {
     "fr": [
      "Figuier de Port Jackson"
+    ]
+   }
+  },
+  {
+   "common": "Port Orford Cedar",
+   "latin": "Chamaecyparis lawsoniana",
+   "names": {
+    "en": [
+     "Lawson cypress",
+     "Lawson's Cypress"
+    ],
+    "nl": [
+     "Californische cipres",
+     "Californische cypres",
+     "Lawsoncipres"
+    ],
+    "de": [
+     "Lawson-Scheinzypresse",
+     "Lawsons Scheinzypresse",
+     "Oregonzeder"
+    ],
+    "es": [
+     "Cameciparis de Lawson",
+     "Cedro de Oregon",
+     "Cedro de Puerto Oxford",
+     "Falso ciprés de Lawson"
+    ],
+    "it": [
+     "Cipresso di Lawson"
+    ],
+    "fr": [
+     "Cypres de Lawson"
+    ],
+    "pt": [
+     "Camecíparis-de-lawson",
+     "cedro do Oregon",
+     "cedro do Óregão",
+     "cedro-branco"
+    ],
+    "ja": [
+     "ローソンヒノキ"
     ]
    }
   },
@@ -10538,6 +11059,20 @@
    }
   },
   {
+   "common": "Rainbow Eucalyptus",
+   "latin": "Eucalyptus deglupta",
+   "names": {
+    "en": [
+     "Indonesian gum",
+     "Mindanao gum",
+     "rainbow tree"
+    ],
+    "ja": [
+     "レインボーユーカリ"
+    ]
+   }
+  },
+  {
    "common": "Rainbow Shower Tree",
    "latin": "Cassia x nealiae 'Wilhelmina Tenney'"
   },
@@ -10701,6 +11236,34 @@
     "ja": [
      "リム (植物)",
      "リムノキ"
+    ]
+   }
+  },
+  {
+   "common": "River Birch",
+   "latin": "Betula nigra",
+   "names": {
+    "en": [
+     "Black Birch",
+     "Red Birch",
+     "Water Birch"
+    ],
+    "nl": [
+     "Rode berk",
+     "Zwarte berk"
+    ],
+    "de": [
+     "Fluss-Birke",
+     "Schwarz-Birke"
+    ],
+    "es": [
+     "Abedul de agua",
+     "Abedul fluvial",
+     "Abedul negro",
+     "Abedul negro americano"
+    ],
+    "fr": [
+     "Bouleau noir"
     ]
    }
   },
@@ -10869,6 +11432,39 @@
     ],
     "ja": [
      "セイヨウナナカマド"
+    ]
+   }
+  },
+  {
+   "common": "Royal Hybrid Black Walnut",
+   "latin": "Juglans 'Royal'",
+   "names": {
+    "en": [
+     "walnut",
+     "walnut genus",
+     "walnuts"
+    ],
+    "nl": [
+     "Walnoot",
+     "notenboom"
+    ],
+    "de": [
+     "Walnussbaum",
+     "Walnüsse"
+    ],
+    "es": [
+     "nogal",
+     "noguera",
+     "nogués"
+    ],
+    "it": [
+     "noce"
+    ],
+    "fr": [
+     "noyer"
+    ],
+    "ja": [
+     "クルミ"
     ]
    }
   },
@@ -11881,6 +12477,27 @@
    }
   },
   {
+   "common": "Single-leaf Nut Pine",
+   "latin": "Pinus monophylla",
+   "names": {
+    "en": [
+     "One-leaved Nut Pine",
+     "Single Leaf Pinyon Pine",
+     "Single-leaf Pinyon",
+     "singleleaf pinyon"
+    ],
+    "de": [
+     "Einblättrige Kiefer"
+    ],
+    "it": [
+     "Pino ad ago singolo"
+    ],
+    "ja": [
+     "アメリカヒトツバマツ"
+    ]
+   }
+  },
+  {
    "common": "Sissoo Tree",
    "latin": "Dalbergia sissoo",
    "names": {
@@ -12134,6 +12751,27 @@
     ],
     "fr": [
      "Bangalay"
+    ]
+   }
+  },
+  {
+   "common": "Southern Red Oak",
+   "latin": "Quercus falcata",
+   "names": {
+    "en": [
+     "Spanish Oak",
+     "bottomland red oak",
+     "three-lobed red oak"
+    ],
+    "de": [
+     "Sichelblättrige Eiche"
+    ],
+    "es": [
+     "Roble español",
+     "Roble rojo del Sur"
+    ],
+    "fr": [
+     "madison oak"
     ]
    }
   },
@@ -12751,6 +13389,39 @@
    }
   },
   {
+   "common": "Sycamore Fig",
+   "latin": "Ficus sycomorus",
+   "names": {
+    "en": [
+     "Sycomore",
+     "fig-mulberry"
+    ],
+    "nl": [
+     "Egyptische vijgenboom",
+     "Sycamore vijg",
+     "Sycamorevijg",
+     "Sycomore"
+    ],
+    "de": [
+     "Eselsfeige",
+     "Maulbeer-Feige",
+     "Maulbeerfeige",
+     "Sykomore"
+    ],
+    "fr": [
+     "figuier sycomore"
+    ],
+    "pt": [
+     "Figueira doida",
+     "Figueira-doida",
+     "Sicómoro"
+    ],
+    "ja": [
+     "エジプトイチジク"
+    ]
+   }
+  },
+  {
    "common": "Taiwan Fir",
    "latin": "Cunninghamia konishii"
   },
@@ -12945,6 +13616,46 @@
    }
   },
   {
+   "common": "Terebinth",
+   "latin": "Pistacia terebinthus",
+   "names": {
+    "en": [
+     "Cyprus Turpentine",
+     "Turpentine tree"
+    ],
+    "nl": [
+     "Terebint",
+     "terpentijnboom"
+    ],
+    "de": [
+     "Terpentin-Pistazie",
+     "Terpentinpistazie",
+     "Terpentinpistazien"
+    ],
+    "es": [
+     "Albotin",
+     "Arbol de Nuestra Senora",
+     "Arbol trementino",
+     "Cabra coja"
+    ],
+    "it": [
+     "terebinto"
+    ],
+    "fr": [
+     "Pistachier terebinthe",
+     "Térébinthe"
+    ],
+    "pt": [
+     "Cornalheira",
+     "Terebinto"
+    ],
+    "ja": [
+     "テレビンノキ",
+     "トクノウコウ"
+    ]
+   }
+  },
+  {
    "common": "Texas Ash",
    "latin": "Fraxinus texensis",
    "names": {
@@ -13099,6 +13810,17 @@
      "Tipuana",
      "Amendoim acácia",
      "Amendoim-acácia"
+    ]
+   }
+  },
+  {
+   "common": "Torrey Pine",
+   "latin": "Pinus torreyana",
+   "names": {
+    "en": [
+     "Del Mare Pine",
+     "Santa Rosa Island pine",
+     "Soledad Pine"
     ]
    }
   },
@@ -13911,6 +14633,39 @@
    }
   },
   {
+   "common": "White Fir",
+   "latin": "Abies concolor",
+   "names": {
+    "en": [
+     "California white fir",
+     "Colorado fir",
+     "Low's fir",
+     "Rocky Mountain white fir"
+    ],
+    "nl": [
+     "Coloradozilverspar"
+    ],
+    "de": [
+     "Colorado-Tanne",
+     "Coloradotanne",
+     "Grau-Tanne",
+     "Grautanne"
+    ],
+    "es": [
+     "abeto de Low",
+     "abeto del Colorado",
+     "pino real blanco"
+    ],
+    "fr": [
+     "Sapin bleu du Colorado",
+     "Sapin du Colorado"
+    ],
+    "ja": [
+     "コロラドモミ"
+    ]
+   }
+  },
+  {
    "common": "White Mulberry",
    "latin": "Morus alba",
    "names": {
@@ -14503,11 +15258,49 @@
    }
   },
   {
+   "common": "Yellow Bean Tree",
+   "latin": "Catalpa ovata",
+   "names": {
+    "en": [
+     "Chinese catalpa"
+    ],
+    "ja": [
+     "アメリカキササゲ",
+     "オオアメリカキササゲ",
+     "キササゲ",
+     "キササゲ属"
+    ]
+   }
+  },
+  {
    "common": "Yellow Box",
    "latin": "Eucalyptus melliodora",
    "names": {
     "en": [
      "yellow-box"
+    ]
+   }
+  },
+  {
+   "common": "Yellow Buckeye",
+   "latin": "Aesculus flava",
+   "names": {
+    "en": [
+     "Common buckeye",
+     "Sweet buckeye"
+    ],
+    "nl": [
+     "gele pavia"
+    ],
+    "de": [
+     "Gelbe Pavie",
+     "Gelbe Rosskastanie"
+    ],
+    "es": [
+     "Falso castaño amarillo"
+    ],
+    "fr": [
+     "Pavier jaune"
     ]
    }
   },
@@ -14604,40 +15397,6 @@
     ],
     "de": [
      "Kilikische Tanne"
-    ]
-   }
-  },
-  {
-   "common": "White Fir",
-   "latin": "Abies concolor",
-   "mapped": false,
-   "names": {
-    "en": [
-     "California white fir",
-     "Colorado fir",
-     "Low's fir",
-     "Rocky Mountain white fir"
-    ],
-    "nl": [
-     "Coloradozilverspar"
-    ],
-    "de": [
-     "Colorado-Tanne",
-     "Coloradotanne",
-     "Grau-Tanne",
-     "Grautanne"
-    ],
-    "es": [
-     "abeto de Low",
-     "abeto del Colorado",
-     "pino real blanco"
-    ],
-    "fr": [
-     "Sapin bleu du Colorado",
-     "Sapin du Colorado"
-    ],
-    "ja": [
-     "コロラドモミ"
     ]
    }
   },
@@ -14961,30 +15720,6 @@
    "common": "Red Horsechestnut",
    "latin": "Aesculus carnea",
    "mapped": false
-  },
-  {
-   "common": "Yellow Buckeye",
-   "latin": "Aesculus flava",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Common buckeye",
-     "Sweet buckeye"
-    ],
-    "nl": [
-     "gele pavia"
-    ],
-    "de": [
-     "Gelbe Pavie",
-     "Gelbe Rosskastanie"
-    ],
-    "es": [
-     "Falso castaño amarillo"
-    ],
-    "fr": [
-     "Pavier jaune"
-    ]
-   }
   },
   {
    "common": "Podocarpus",
@@ -15376,35 +16111,6 @@
    }
   },
   {
-   "common": "River Birch",
-   "latin": "Betula nigra",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Black Birch",
-     "Red Birch",
-     "Water Birch"
-    ],
-    "nl": [
-     "Rode berk",
-     "Zwarte berk"
-    ],
-    "de": [
-     "Fluss-Birke",
-     "Schwarz-Birke"
-    ],
-    "es": [
-     "Abedul de agua",
-     "Abedul fluvial",
-     "Abedul negro",
-     "Abedul negro americano"
-    ],
-    "fr": [
-     "Bouleau noir"
-    ]
-   }
-  },
-  {
    "common": "Water Birch",
    "latin": "Betula occidentalis",
    "mapped": false,
@@ -15647,23 +16353,6 @@
    }
   },
   {
-   "common": "American Chestnut",
-   "latin": "Castanea dentata",
-   "mapped": false,
-   "names": {
-    "de": [
-     "Amerikanische Kastanie"
-    ],
-    "fr": [
-     "Châtaignier américain",
-     "Châtaignier d'Amérique"
-    ],
-    "ja": [
-     "アメリカグリ"
-    ]
-   }
-  },
-  {
    "common": "Haitian catalpa",
    "latin": "Catalpa lingissima",
    "mapped": false
@@ -15713,48 +16402,6 @@
    }
   },
   {
-   "common": "Lawson Cypress",
-   "latin": "Chamaecyparis lawsoniana",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Lawson's Cypress",
-     "Port Orford cedar"
-    ],
-    "nl": [
-     "Californische cipres",
-     "Californische cypres",
-     "Lawsoncipres"
-    ],
-    "de": [
-     "Lawson-Scheinzypresse",
-     "Lawsons Scheinzypresse",
-     "Oregonzeder"
-    ],
-    "es": [
-     "Cameciparis de Lawson",
-     "Cedro de Oregon",
-     "Cedro de Puerto Oxford",
-     "Falso ciprés de Lawson"
-    ],
-    "it": [
-     "Cipresso di Lawson"
-    ],
-    "fr": [
-     "Cypres de Lawson"
-    ],
-    "pt": [
-     "Camecíparis-de-lawson",
-     "cedro do Oregon",
-     "cedro do Óregão",
-     "cedro-branco"
-    ],
-    "ja": [
-     "ローソンヒノキ"
-    ]
-   }
-  },
-  {
    "common": "Sawara Cypress",
    "latin": "Chamaecyparis pisifera",
    "mapped": false,
@@ -15783,11 +16430,6 @@
      "檜榁"
     ]
    }
-  },
-  {
-   "common": "Port Orford Cedar",
-   "latin": "Chameacypris lawsoniana",
-   "mapped": false
   },
   {
    "common": "Chinese Fringetree",
@@ -16529,16 +17171,6 @@
    "mapped": false
   },
   {
-   "common": "Anaqua",
-   "latin": "Ehretia anacua",
-   "mapped": false,
-   "names": {
-    "en": [
-     "knockaway"
-    ]
-   }
-  },
-  {
    "common": "Russian Olive",
    "latin": "Eleagnus angustifolia",
    "mapped": false
@@ -16643,21 +17275,6 @@
      "Deanes gum",
      "round-leaf gum",
      "roundleaf gum"
-    ]
-   }
-  },
-  {
-   "common": "Rainbow Eucalyptus",
-   "latin": "Eucalyptus deglupta",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Indonesian gum",
-     "Mindanao gum",
-     "rainbow tree"
-    ],
-    "ja": [
-     "レインボーユーカリ"
     ]
    }
   },
@@ -16885,47 +17502,8 @@
    }
   },
   {
-   "common": "Sycamore Fig",
-   "latin": "Ficus sycomorus",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Sycomore",
-     "fig-mulberry"
-    ],
-    "nl": [
-     "Egyptische vijgenboom",
-     "Sycamore vijg",
-     "Sycamorevijg",
-     "Sycomore"
-    ],
-    "de": [
-     "Eselsfeige",
-     "Maulbeer-Feige",
-     "Maulbeerfeige",
-     "Sykomore"
-    ],
-    "fr": [
-     "figuier sycomore"
-    ],
-    "pt": [
-     "Figueira doida",
-     "Figueira-doida",
-     "Sicómoro"
-    ],
-    "ja": [
-     "エジプトイチジク"
-    ]
-   }
-  },
-  {
    "common": "Triangle Fig",
    "latin": "Ficus triangularis",
-   "mapped": false
-  },
-  {
-   "common": "German Ash",
-   "latin": "Fraxinus holotricha",
    "mapped": false
   },
   {
@@ -16952,22 +17530,6 @@
    "common": "Pumpkin Ash",
    "latin": "Fraxinus profunda",
    "mapped": false
-  },
-  {
-   "common": "Blue ash",
-   "latin": "Fraxinus quadrangulata",
-   "mapped": false,
-   "names": {
-    "de": [
-     "Blau-Esche"
-    ],
-    "es": [
-     "Fresno azul"
-    ],
-    "ja": [
-     "ブルー・アッシュ"
-    ]
-   }
   },
   {
    "common": "Common Garcinia",
@@ -17260,23 +17822,6 @@
     ],
     "ja": [
      "ケードネズ"
-    ]
-   }
-  },
-  {
-   "common": "Castor-Aralia",
-   "latin": "Kalopanax septemlobus",
-   "mapped": false,
-   "names": {
-    "en": [
-     "castor aralia",
-     "prickly castor oil tree"
-    ],
-    "de": [
-     "Baumaralie"
-    ],
-    "ja": [
-     "ハリギリ"
     ]
    }
   },
@@ -17577,31 +18122,6 @@
     "es": [
      "Pyrus diversifolia",
      "Pyrus rivularis var. levipes"
-    ]
-   }
-  },
-  {
-   "common": "Mango",
-   "latin": "Mangifera indica",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Indian mango",
-     "common mango",
-     "mango tree",
-     "mangoso"
-    ],
-    "de": [
-     "Mangobaum"
-    ],
-    "fr": [
-     "manguier"
-    ],
-    "pt": [
-     "Mangueira"
-    ],
-    "ja": [
-     "マンゴー"
     ]
    }
   },
@@ -18111,33 +18631,6 @@
    }
   },
   {
-   "common": "Himalayan Pine",
-   "latin": "Pinus griffithi",
-   "mapped": false
-  },
-  {
-   "common": "Single-leaf Nut Pine",
-   "latin": "Pinus monophylla",
-   "mapped": false,
-   "names": {
-    "en": [
-     "One-leaved Nut Pine",
-     "Single Leaf Pinyon Pine",
-     "Single-leaf Pinyon",
-     "singleleaf pinyon"
-    ],
-    "de": [
-     "Einblättrige Kiefer"
-    ],
-    "it": [
-     "Pino ad ago singolo"
-    ],
-    "ja": [
-     "アメリカヒトツバマツ"
-    ]
-   }
-  },
-  {
    "common": "Montezuma Pine",
    "latin": "Pinus montezumae",
    "mapped": false,
@@ -18290,41 +18783,6 @@
    }
   },
   {
-   "common": "Ponderosa Pine",
-   "latin": "Pinus ponderosa",
-   "mapped": false,
-   "names": {
-    "en": [
-     "bull pine",
-     "western yellow pine",
-     "western yellow-pine",
-     "yellow pine"
-    ],
-    "nl": [
-     "gele den",
-     "ponderosaden"
-    ],
-    "de": [
-     "Gelb-Kiefer",
-     "Gelbkiefer",
-     "Gold-Kiefer",
-     "Goldkiefer"
-    ],
-    "es": [
-     "Pino ponderoso",
-     "Pino real americano"
-    ],
-    "fr": [
-     "Pin jaune"
-    ],
-    "ja": [
-     "ポンデローサパイン",
-     "ポンデローサマツ",
-     "ポンデローサ松"
-    ]
-   }
-  },
-  {
    "common": "Southwestern White Pine",
    "latin": "Pinus strobiformis",
    "mapped": false,
@@ -18359,26 +18817,6 @@
    "common": "Chinese Pisty",
    "latin": "Pistachia chinensis",
    "mapped": false
-  },
-  {
-   "common": "Atlas Pistachio",
-   "latin": "Pistacia atlantica",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Baneh",
-     "Mt. Atlas mastic tree"
-    ],
-    "de": [
-     "Atlantische Pistazie"
-    ],
-    "es": [
-     "Terebinthus atlanticus"
-    ],
-    "ja": [
-     "ピスタシア・アトランティカ"
-    ]
-   }
   },
   {
    "common": "Chinese Pistache",
@@ -18545,30 +18983,6 @@
      "アスペン",
      "ヨーロッパヤマナラシ",
      "ヨーロピアンアスペン"
-    ]
-   }
-  },
-  {
-   "common": "Black Cottonwood",
-   "latin": "Populus trichocarpa",
-   "mapped": false,
-   "names": {
-    "en": [
-     "California poplar",
-     "western balsam-poplar"
-    ],
-    "nl": [
-     "Zwarte balsempopulier",
-     "balsempopulier",
-     "haarvruchtige populier",
-     "west-amerikaanse balsempopulier"
-    ],
-    "de": [
-     "Haarfrüchtige Balsam-Pappel",
-     "Westliche Balsam-Pappel"
-    ],
-    "fr": [
-     "peuplier de l'Ouest"
     ]
    }
   },
@@ -19130,22 +19544,6 @@
    }
   },
   {
-   "common": "Mongolian Oak",
-   "latin": "Quercus mongolica",
-   "mapped": false,
-   "names": {
-    "de": [
-     "Mongolische Eiche"
-    ],
-    "ja": [
-     "フモトミズナラ",
-     "ミズナラ",
-     "モウコガシワ",
-     "モンゴリナラ"
-    ]
-   }
-  },
-  {
    "common": "chestnut oak",
    "latin": "Quercus prinus",
    "mapped": false
@@ -19303,26 +19701,6 @@
    "names": {
     "en": [
      "coastal plain willow"
-    ]
-   }
-  },
-  {
-   "common": "Navajo Globe Willow",
-   "latin": "Salix matsudana",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Chinese willow",
-     "corkscrew willow"
-    ],
-    "nl": [
-     "Kronkelwilg"
-    ],
-    "de": [
-     "Chinesische Weide"
-    ],
-    "fr": [
-     "Saule tortueux"
     ]
    }
   },
@@ -19946,40 +20324,6 @@
    }
   },
   {
-   "common": "Japanese Elm",
-   "latin": "Ulmus davidiana",
-   "mapped": false
-  },
-  {
-   "common": "Lacebark Elm",
-   "latin": "Ulmus parvifolia",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Chinese elm"
-    ],
-    "nl": [
-     "Chinese iep",
-     "Kleinbladige iep"
-    ],
-    "de": [
-     "Chinesische Ulme"
-    ],
-    "es": [
-     "Olmo chino"
-    ],
-    "fr": [
-     "Orme de Chine"
-    ],
-    "ja": [
-     "アキニレ",
-     "イシゲヤキ",
-     "カワラゲヤキ",
-     "ヤマニレ"
-    ]
-   }
-  },
-  {
    "common": "Slippery elm",
    "latin": "Ulmus rubra",
    "mapped": false,
@@ -20071,31 +20415,6 @@
    "common": "various",
    "latin": "Wales and",
    "mapped": false
-  },
-  {
-   "common": "Chinese Wisteria",
-   "latin": "Wisteria sinensis",
-   "mapped": false,
-   "names": {
-    "nl": [
-     "Chinese blauwe regen",
-     "Chinese blauweregen",
-     "Witte regen"
-    ],
-    "de": [
-     "Chinesische Wisteria",
-     "Chinesischer Blauregen"
-    ],
-    "es": [
-     "Millettia chinensis"
-    ],
-    "fr": [
-     "Glycine de Chine"
-    ],
-    "ja": [
-     "シナフジ"
-    ]
-   }
   },
   {
    "common": "Yellowhorn",
@@ -21433,6 +21752,26 @@
     "ja": [
      "サンザシ",
      "サンザシ属"
+    ]
+   }
+  },
+  {
+   "common": "Calabash tree",
+   "latin": "Crescentia",
+   "genus": true,
+   "names": {
+    "en": [
+     "huingo",
+     "kalebas",
+     "krabasi"
+    ],
+    "nl": [
+     "Boomkalebas",
+     "Kalebasboom",
+     "Kalebassenboom"
+    ],
+    "ja": [
+     "フクベノキ属"
     ]
    }
   },
@@ -23333,6 +23672,11 @@
      "広義のサクラ属"
     ]
    }
+  },
+  {
+   "common": "Golden larch",
+   "latin": "Pseudolarix",
+   "genus": true
   },
   {
    "common": "Douglas-fir",

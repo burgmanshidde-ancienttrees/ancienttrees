@@ -12,7 +12,7 @@
    "slug": "palermo",
    "status": "published",
    "demand_views_90d": 124310,
-   "trees": 22
+   "trees": 27
   },
   {
    "city": "Seville",
@@ -37,18 +37,18 @@
    "trees": 37
   },
   {
-   "city": "New York",
-   "country": "United States",
-   "slug": "new-york",
-   "status": "published",
-   "trees": 29
-  },
-  {
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
    "status": "published",
    "trees": 63
+  },
+  {
+   "city": "New York",
+   "country": "United States",
+   "slug": "new-york",
+   "status": "published",
+   "trees": 66
   },
   {
    "city": "Singapore",
@@ -83,18 +83,18 @@
    "trees": 21
   },
   {
-   "city": "Copenhagen",
-   "country": "Denmark",
-   "slug": "copenhagen",
-   "status": "published",
-   "trees": 49
-  },
-  {
    "city": "Paris",
    "country": "France",
    "slug": "paris",
    "status": "published",
    "trees": 58
+  },
+  {
+   "city": "Copenhagen",
+   "country": "Denmark",
+   "slug": "copenhagen",
+   "status": "published",
+   "trees": 49
   },
   {
    "city": "Malaga",
@@ -113,14 +113,6 @@
    "trees": 29
   },
   {
-   "city": "Brisbane",
-   "country": "Australia",
-   "slug": "brisbane",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 20
-  },
-  {
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -133,7 +125,7 @@
    "country": "Italy",
    "slug": "rome",
    "status": "published",
-   "trees": 31
+   "trees": 32
   },
   {
    "city": "Kyoto",
@@ -150,14 +142,15 @@
    "country": "United Kingdom",
    "slug": "london",
    "status": "published",
-   "trees": 32
+   "trees": 48
   },
   {
-   "city": "Amsterdam",
-   "country": "Netherlands",
-   "slug": "amsterdam",
+   "city": "Brisbane",
+   "country": "Australia",
+   "slug": "brisbane",
    "status": "published",
-   "trees": 27
+   "demand_views_90d": null,
+   "trees": 20
   },
   {
    "city": "Coimbra",
@@ -166,6 +159,13 @@
    "status": "published",
    "demand_views_90d": 34962,
    "trees": 6
+  },
+  {
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "slug": "amsterdam",
+   "status": "published",
+   "trees": 27
   },
   {
    "city": "Dublin",
@@ -179,7 +179,7 @@
    "country": "United States",
    "slug": "boston",
    "status": "published",
-   "trees": 13
+   "trees": 40
   },
   {
    "city": "Cambridge",
@@ -187,7 +187,7 @@
    "slug": "cambridge",
    "status": "published",
    "demand_views_90d": 97974,
-   "trees": 5
+   "trees": 10
   },
   {
    "city": "Madrid",
@@ -216,7 +216,7 @@
    "country": "United States",
    "slug": "oahu",
    "status": "published",
-   "trees": 21
+   "trees": 31
   },
   {
    "city": "Bath",
@@ -224,7 +224,7 @@
    "slug": "bath",
    "status": "published",
    "demand_views_90d": 144950,
-   "trees": 5
+   "trees": 9
   },
   {
    "city": "Bologna",
@@ -323,14 +323,7 @@
    "country": "Italy",
    "slug": "florence",
    "status": "published",
-   "trees": 27
-  },
-  {
-   "city": "Leeuwarden",
-   "country": "Netherlands",
-   "slug": "leeuwarden",
-   "status": "published",
-   "trees": 34
+   "trees": 28
   },
   {
    "city": "Milan",
@@ -345,6 +338,14 @@
    "slug": "prague",
    "status": "published",
    "trees": 30
+  },
+  {
+   "city": "Sapporo",
+   "country": "Japan",
+   "slug": "sapporo",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from the Hitozato Kyoboku giant-tree database (Environment Ministry 2007 survey, per-tree coordinates) and Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018). A young city: no shrine here predates 1869, so the old trees are either Maruyama primeval forest remnants or settler imports."
   },
   {
    "city": "Toronto",
@@ -370,20 +371,19 @@
    "trees": 33
   },
   {
+   "city": "Leeuwarden",
+   "country": "Netherlands",
+   "slug": "leeuwarden",
+   "status": "published",
+   "trees": 34
+  },
+  {
    "city": "Naples",
    "country": "Italy",
    "slug": "naples",
    "status": "published",
    "demand_views_90d": 198913,
-   "trees": 24
-  },
-  {
-   "city": "Sapporo",
-   "country": "Japan",
-   "slug": "sapporo",
-   "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from the Hitozato Kyoboku giant-tree database (Environment Ministry 2007 survey, per-tree coordinates) and Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018). A young city: no shrine here predates 1869, so the old trees are either Maruyama primeval forest remnants or settler imports."
+   "trees": 31
   },
   {
    "city": "Trieste",
@@ -432,7 +432,7 @@
    "slug": "los-angeles",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 11
+   "trees": 19
   },
   {
    "city": "New Orleans",
@@ -463,7 +463,7 @@
    "country": "United States",
    "slug": "chicago",
    "status": "published",
-   "trees": 38
+   "trees": 43
   },
   {
    "city": "Cadiz",
@@ -675,7 +675,7 @@
    "status": "published",
    "note": "MASAF cluster in the Reggia's English Garden: 41 registered trees within 3 km, 7 published, six of them within 200 m. Campania's regional register (agricoltura.regione.campania.it/foreste/monum/scheda_NNN.html) supplied the ages MASAF lacks.",
    "demand_views_90d": 14783,
-   "trees": 20
+   "trees": 24
   },
   {
    "city": "Eindhoven",
@@ -765,6 +765,14 @@
    "trees": 6
   },
   {
+   "city": "Granada",
+   "country": "Spain",
+   "slug": "granada",
+   "status": "published",
+   "demand_views_90d": 86361,
+   "trees": 9
+  },
+  {
    "city": "Galway",
    "country": "Ireland",
    "slug": "galway",
@@ -818,7 +826,7 @@
    "slug": "bristol",
    "status": "published",
    "demand_views_90d": 163983,
-   "trees": 12
+   "trees": 22
   },
   {
    "city": "Dordrecht",
@@ -864,7 +872,7 @@
    "slug": "sintra",
    "status": "published",
    "demand_views_90d": 46889,
-   "trees": 7
+   "trees": 8
   },
   {
    "city": "Sorrento",
@@ -920,14 +928,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Granada",
-   "country": "Spain",
-   "slug": "granada",
-   "status": "published",
-   "demand_views_90d": 86361,
-   "trees": 9
   },
   {
    "city": "Kuala Lumpur",
@@ -1014,7 +1014,7 @@
    "slug": "miami",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 7
+   "trees": 11
   },
   {
    "city": "Belgrade",
@@ -1040,15 +1040,6 @@
    "status": "published",
    "demand_views_90d": 65666,
    "trees": 10
-  },
-  {
-   "city": "Padua",
-   "country": "Italy",
-   "slug": "padua",
-   "status": "published",
-   "note": "Salvaged from an interrupted verification pass (RAMI, ilregistrodeglialberi.it, filled the age/health/access gap MASAF lacks). 9 trees inside a 1.25 km walk: four in the 1545 Orto Botanico (the Goethe Palm, an Oriental Plane, a grafted Ginkgo, a 1786 Magnolia), a magnolia in the Sant Antonio basilica cloister, two planes and a leaning hackberry in Parco Treves, and a folded twin-tree Sophora entry in Piazza Capitaniato. Full detail in data/research/padova-notes.md and data/leads/padova.json. Renamed from Padova to Padua 2026-08-06, hours after publication, to match the English exonym every other Italian city here uses; old URLs redirect.",
-   "demand_views_90d": 54592,
-   "trees": 14
   },
   {
    "city": "Glasgow",
@@ -1080,7 +1071,7 @@
    "slug": "houston",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 11
+   "trees": 12
   },
   {
    "city": "Apeldoorn",
@@ -1118,7 +1109,7 @@
    "status": "published",
    "note": "MASAF cluster: 20 registered trees inside 1.6 km, 6 published as one walk of about 800 m entirely inside the walls. Rest in data/leads/lucca.json.",
    "demand_views_90d": 52271,
-   "trees": 14
+   "trees": 16
   },
   {
    "city": "Maastricht",
@@ -1152,6 +1143,15 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 2
+  },
+  {
+   "city": "Padua",
+   "country": "Italy",
+   "slug": "padua",
+   "status": "published",
+   "note": "Salvaged from an interrupted verification pass (RAMI, ilregistrodeglialberi.it, filled the age/health/access gap MASAF lacks). 9 trees inside a 1.25 km walk: four in the 1545 Orto Botanico (the Goethe Palm, an Oriental Plane, a grafted Ginkgo, a 1786 Magnolia), a magnolia in the Sant Antonio basilica cloister, two planes and a leaning hackberry in Parco Treves, and a folded twin-tree Sophora entry in Piazza Capitaniato. Full detail in data/research/padova-notes.md and data/leads/padova.json. Renamed from Padova to Padua 2026-08-06, hours after publication, to match the English exonym every other Italian city here uses; old URLs redirect.",
+   "demand_views_90d": 54592,
+   "trees": 14
   },
   {
    "city": "Setubal",
@@ -1198,7 +1198,7 @@
    "slug": "bangkok",
    "status": "published",
    "demand_views_90d": 222206,
-   "trees": 5
+   "trees": 6
   },
   {
    "city": "Bari",
@@ -1245,7 +1245,7 @@
    "slug": "lyon",
    "status": "published",
    "demand_views_90d": 136951,
-   "trees": 13
+   "trees": 24
   },
   {
    "city": "Quebec City",
@@ -1294,7 +1294,7 @@
    "slug": "oxford",
    "status": "published",
    "demand_views_90d": 111583,
-   "trees": 5
+   "trees": 7
   },
   {
    "city": "Thessaloniki",
