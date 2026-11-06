@@ -89,6 +89,13 @@ def check_city(path):
             if m is not None and not (isinstance(m, int) and not isinstance(m, bool) and 1 <= m <= 12):
                 out.append("%s/%s: photo taken_month %r is not a number 1-12, the build refuses it"
                            % (slug, t.get("id"), m))
+        # Same schema: these are z.string().optional(), so a missing key is
+        # fine and a null is refused; "age_estimate": null in Bisceglie and
+        # Foresta Umbra stopped the 11-06 08:51 deploy. Leave the key out.
+        for k in ("age_estimate", "story", "access", "transport", "recognise", "name", "species"):
+            if k in t and not isinstance(t[k], str):
+                out.append("%s/%s: %s is %r, the build wants a string or no key at all"
+                           % (slug, t.get("id"), k, t[k]))
 
     intro =(d.get("intro") or "").strip()
     if not intro:
