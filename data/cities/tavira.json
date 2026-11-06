@@ -1,0 +1,69 @@
+{
+  "city": "Tavira",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Tavira's great tree is the Oliveira Real of Pedras d'el Rei, an olive classified as a Tree of Public Interest in 1984, with a hollow trunk 7.74 metres round. Portugal's forest service registers its age at more than two thousand years, a figure nobody has tested. It stands in the Pedras d'el Rei holiday village at Santa Luzia, a few kilometres southwest of the town, and Tavira's own tourist route sends visitors to it.",
+  "meta_description": "The Oliveira Real of Pedras d'el Rei near Tavira, an olive classified in 1984 with a hollow trunk 7.74 metres round.",
+  "question_meta": "Tavira's mapped tree is the Oliveira Real of Pedras d'el Rei, a classified olive at Santa Luzia that its register calls about two thousand years old.",
+  "question_answer": "The tree mapped in Tavira is the Oliveira Real of Pedras d'el Rei, an olive at Santa Luzia classified as a Tree of Public Interest in 1984. Portugal's forest service measured its trunk at 7.74 metres round in 2006 and gave it an age of 2,210 years, a claim nobody has dated.",
+  "question_context": "The Oliveira Real is on the national register of Trees of Public Interest kept by the ICNF, Portugal's forest service, classified on 2 August 1984. Its 2006 measurement gives 10.3 metres of height and a trunk 7.74 metres round; a 2007 visit by tree bloggers measured 7.8 metres, and the Tree of the Year nomination quotes 11 metres of perimeter, probably taken lower down. The age of 2,210 years is the register's figure and the nomination repeats it, but no ring count or published dating study supports it, so read it as somewhere between one and two thousand years. It was a candidate for Portugal's Tree of the Year in 2022. The trunk is hollow, split into several limbs. It stands on the Rua Jorge Amado inside the Pedras d'el Rei holiday village at Santa Luzia; Tavira municipality's route 'Os segredos e encantos da Ria Formosa' tells visitors to pass the reception, take the second street on the left and look left after about 25 metres. A second large olive, unclassified, grows nearby.",
+  "hero_tree_id": "tav_001",
+  "oldest_tree_id": "tav_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree in Tavira?",
+      "a": "The tree mapped in Tavira is the Oliveira Real of Pedras d'el Rei, an olive at Santa Luzia classified as a Tree of Public Interest in 1984. Portugal's forest service measured its trunk at 7.74 metres round in 2006 and gave it an age of 2,210 years, a claim nobody has dated."
+    },
+    {
+      "q": "Can you visit the Oliveira Real without staying at Pedras d'el Rei?",
+      "a": "Tavira municipality's own tourist route sends visitors to it: pass the reception of the Pedras d'el Rei holiday village, take the second street on the left, the Rua Jorge Amado, and the olive is about 25 metres along on the left. The route mentions no fee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tav_001",
+      "name": "Oliveira Real of Pedras d'el Rei",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "reported as about 2,000 years",
+      "age_min": 1000,
+      "age_max": 2250,
+      "age_basis": "source",
+      "girth_cm": 774,
+      "height_m": 10.3,
+      "location": {
+        "address": "Rua Jorge Amado, Aldeamento Turistico de Pedras d'el Rei, Santa Luzia, Tavira",
+        "latitude": 37.095805,
+        "longitude": -7.67801,
+        "neighbourhood": "Santa Luzia, Tavira"
+      },
+      "story": "Tavira's own tourist route sends you past a holiday resort's reception desk to see this olive. Portugal classified it a Tree of Public Interest in 1984, and when the forest service measured it in 2006 the trunk was 7.74 metres round and the tree 10.3 metres tall. The register gave it an age of 2,210 years.\n\nRead that number as a claim. The register and the 2021 Tree of the Year nomination both put it near two thousand years, and tree bloggers who visited in 2007 repeated a carbon-dating figure of about 2,000 without saying who did the dating. No ring count or published study has turned up. Somewhere between one and two thousand years is the honest version, and even the low end makes it older than the kingdom of Portugal.\n\nThe trunk is hollow and split into separate limbs, with a gap between two of them wide enough to look inside. Nominated for Portugal's Tree of the Year in 2022, it stands among the low white houses of the Pedras d'el Rei holiday village at Santa Luzia, a few kilometres southwest of Tavira. The municipal route gives the directions. Pass the reception, take the second street on the left, the Rua Jorge Amado, and it is about 25 metres along on the left. A second large olive grows nearby, unclassified and unmeasured since a 2007 visit put it near six metres round.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, 7.74 metres round and split into several limbs. It stands about 25 metres along the Rua Jorge Amado, on the left, the second street left after the resort reception.",
+      "verified_sources": [
+        "https://geocatalogo.icnf.pt/metadados/arv_class.html",
+        "https://visittavira.cm-tavira.pt/app/uploads/2024/07/Percurso_Os-segredos-e-encantos-da-Ria-Formosa.pdf",
+        "https://wilder.pt/diversoes/siga-este-roteiro-pelas-10-candidatas-a-arvore-do-ano-em-portugal",
+        "http://sombra-verde.blogspot.com/2007/07/as-oliveiras-de-pedras-del-rei.html",
+        "https://blog.algarveholidaylets.com/tree-of-the-year/",
+        "https://commons.wikimedia.org/wiki/File:Oliveira_Bi-milenar_-_Pedras_Del_Rei_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54843185074).jpg"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico KNJ1/195",
+        "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+      },
+      "access": "Inside the Pedras d'el Rei holiday village (aldeamento turistico) at Santa Luzia. Tavira municipality's own route 'Os segredos e encantos da Ria Formosa' sends visitors past the resort reception to the tree on the Rua Jorge Amado; no fee is mentioned.",
+      "transport": "A few kilometres southwest of Tavira's centre by road, past Santa Luzia; the municipal route reaches it by car on the CM1347.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Oliveira_Bi-milenar_-_Pedras_Del_Rei_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854843185074%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Vitor Oliveira, via Wikimedia Commons",
+        "attribution_url": "https://www.flickr.com/people/21446942@N00",
+        "status": "approved",
+        "taken_month": 7
+      },
+      "location_precision": "confirmed",
+      "pin_source": "Commons photographer's geotag at the trunk (Vitor Oliveira, 2025-07-10), five geotagged files within 18 m of the ICNF coordinate",
+      "curation_status": "flagged",
+      "verify_notes": "Access settled 2026-11-02: Tavira municipality's route PDF 'Os segredos e encantos da Ria Formosa' (visittavira.cm-tavira.pt, p.43, stop 9 'oliveira bimilenaria') tells visitors to pass the reception of the Aldeamento Pedras D'El Rei, take the second street left (Rua Jorge Amado) and find the olive about 25 m on the left, classified 1984; the same route's stop list names it, so the earlier 'Santa Luzia church' lead in data/leads/algarve-east.json is this tree. Photo viewed by the session 2026-11-02: trunk fills the frame, daylight, in leaf, small watermark credit in the corner; approved. Age is a register and nomination claim, see faro-verified.json notes. Flag kept for the age."
+    }
+  ]
+}
