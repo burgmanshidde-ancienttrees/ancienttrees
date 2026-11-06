@@ -71,8 +71,11 @@ LOAD_MS = 30000
 
 
 class Pages(SimpleHTTPRequestHandler):
-    """site/dist the way GitHub Pages serves it: /london is london.html or
-    london/index.html, a missing file is 404.html."""
+    """site/dist the way GitHub Pages serves it: /london is london.html
+    FIRST, and london/index.html only when there is no london.html. The
+    first deploy with this check (2026-11-06) served the folder's index
+    first, and /london never finished loading, while the live /london was
+    fine (GitHub answers it with london.html, 708 KB, checked with curl)."""
 
     def log_message(self, *a):
         pass
@@ -80,13 +83,10 @@ class Pages(SimpleHTTPRequestHandler):
     def translate_path(self, path):
         clean = path.split("?", 1)[0].split("#", 1)[0]
         p = Path(super().translate_path(clean))
-        if p.is_dir():
-            if (p / "index.html").exists():
-                return str(p / "index.html")
-            if p.with_suffix(".html").exists():
-                return str(p.with_suffix(".html"))
-        if not p.exists() and not p.suffix and p.with_suffix(".html").exists():
+        if not p.suffix and not clean.endswith("/") and p.with_suffix(".html").is_file():
             return str(p.with_suffix(".html"))
+        if p.is_dir() and (p / "index.html").is_file():
+            return str(p / "index.html")
         return str(p)
 
 
