@@ -56,7 +56,9 @@
         "license": "CC BY-SA 2.0",
         "attribution": "A J Paxton",
         "attribution_url": "https://www.geograph.org.uk/photo/7675569",
-        "status": "approved"
+        "status": "approved",
+        "width": 640,
+        "height": 640
       },
       "location_precision": "approximate",
       "curation_status": "flagged",
@@ -98,7 +100,9 @@
         "license": "CC BY-SA 2.0",
         "attribution": "David Gearing",
         "attribution_url": "https://www.geograph.org.uk/photo/1731901",
-        "status": "approved"
+        "status": "approved",
+        "width": 640,
+        "height": 480
       },
       "location_precision": "approximate",
       "curation_status": "flagged",
