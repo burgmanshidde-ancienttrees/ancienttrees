@@ -11,12 +11,16 @@
 // assets/registers.json.ts, fetched client-side rather than inlined here.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { cityIsRenderable, renderableTrees, slugify, distSpan, cityIsOnMap, mapTrees, treeHasPage, type CityEntry } from "../lib/trees";
-import { speciesCommon } from "../lib/species";
+import { cityIsRenderable, renderableTrees, slugify, distSpan, cityIsOnMap, mapTrees, treeHasPage, feedTreesOf, type CityEntry } from "../lib/trees";
+import { highlightRanks } from "../lib/highlights";
+import { placeHasPage } from "../lib/place-page";
+import { ageShort } from "../lib/age-short";
+import { SPECIES_ICONS, speciesIconKey } from "../lib/species-icons";
+import { speciesCommon, COUNTRY_MIN_CITIES } from "../lib/species";
 import { mapSpecies } from "../lib/map-species";
 import MapFilters from "./MapFilters.astro";
 import { cityFace, cityFaceSrcset, usablePhoto } from "../lib/images";
-import { mapHead, exploreMapScript, miniPin, pinPriority, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
+import { mapHead, exploreMapScript, miniPin, pinPriority, type ExploreTreeFeature, type ExploreCityRow, type ExploreListData } from "../lib/map";
 import { savesOf } from "../lib/saves";
 import { haversineKm } from "../lib/walks";
 import { searchForm, searchWidgetJs } from "../lib/search-form";
@@ -58,9 +62,13 @@ const { list: speciesList, index: speciesIndex, latinHtml: speciesLatinHtml } = 
 // Every pin, app-only trees included (lib/app-first.ts APP_ONLY_PINS,
 // 2026-11-06): an app-only tree gets no url, so its card opens no page.
 const mapCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsOnMap));
+// The list under the map (direction B, 2026-11-06): each tree's place in its
+// city's Highlights, the same ranks the app's feed sends (lib/app-feed.ts).
 for (const entry of mapCities) {
   const cslug = entry.id;
+  const hlRanks = highlightRanks(cslug, feedTreesOf(entry) as any);
   for (const t of mapTrees(entry)) {
+    const short = ageShort(t, U, lang);
     const loc = t.location;
     const sp = speciesIndex.get(speciesCommon(t));
     features.push({
@@ -78,6 +86,8 @@ for (const entry of mapCities) {
         mn: (miniPin(t.id, Boolean(usablePhoto(t))) ? 1 : 0) as 0 | 1,
         ...(t.paid_entry ? { paid: 1 as 1 } : {}),
         ...(sp === undefined ? {} : { sp }),
+        ...(hlRanks.has(t.id) ? { hl: hlRanks.get(t.id)! } : {}),
+        ...(short ? { as: short } : {}),
       },
     });
   }
@@ -177,16 +187,39 @@ const description = U.exploreDescription;
 const exploreVariants: Record<string, string> = { en: "/explore" };
 for (const l of translatedLanguages()) exploreVariants[l] = `/${l}/explore`;
 
+// The list's places: every city on the map with its name in this language,
+// its country, and its page where it has one (a place with one tree on the web
+// has none, lib/place-page.ts); every country with a page (Contract G, the
+// rule [country].astro builds by). Country pages are English only.
+const listData: ExploreListData = { places: {}, countries: {}, icons: SPECIES_ICONS,
+  speciesIcon: speciesList.map((s) => speciesIconKey(s)) };
+for (const e of mapCities) {
+  const web = cityIsRenderable(e) ? renderableTrees(e).length : 0;
+  listData.places[e.id] = {
+    n: cityLabel({ city: e.data.city, slug: e.id }),
+    k: e.data.country,
+    h: web > 0 && placeHasPage(e.id, web) ? cityHref(e.id) : "",
+  };
+}
+const citiesPerCountry = new Map<string, number>();
+for (const e of allCities) citiesPerCountry.set(e.data.country, (citiesPerCountry.get(e.data.country) ?? 0) + 1);
+for (const intro of await getCollection("countries")) {
+  if ((citiesPerCountry.get(intro.data.country) ?? 0) >= COUNTRY_MIN_CITIES) {
+    listData.countries[intro.data.country] = `/${intro.data.slug}`;
+  }
+}
+
 const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
-const mapScript = exploreMapScript(features, cityRows, speciesList, lang, speciesLatinHtml);
+const mapScript = exploreMapScript(features, cityRows, speciesList, lang, speciesLatinHtml, listData);
 const scripts = mapScript + searchWidgetJs(lang);
 ---
 <Base title={title} description={description} canonical={canonical} lang={lang} headExtra={mapHead() + hreflangSet("/explore", exploreVariants)} footer={false}>
   <div class="split">
-    {/* data-peek-row: the peek reaches into the first city of the list, cut
-        off by the screen edge, so the list reads as something to pull up
-        (sheet-js.ts, Hidde 2026-10-25). */}
-    <aside class="panel" id="sheet" data-peek-row=".exc-card">
+    {/* data-peek-row: the peek reaches into the first tree of the list (a
+        highlight, a row, or the empty map's nearest tree), cut off by the
+        screen edge, so the list reads as something to pull up (sheet-js.ts,
+        Hidde 2026-10-25). */}
+    <aside class="panel" id="sheet" data-peek-row=".tree-hl, .tree-card-row, .exc-card">
       <div class="sheet-grab">
         <div class="panel-head">
           <h1>{U.exploreHeading}</h1>

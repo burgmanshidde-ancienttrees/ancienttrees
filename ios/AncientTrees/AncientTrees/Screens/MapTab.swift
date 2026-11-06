@@ -440,6 +440,17 @@ struct MapTab: View {
         var listed: [(tree: Tree, km: Double)] = []
         var reachKey: ViewKey?
         var reach = 0
+        /// The place the view is about (viewPlace), per settled view.
+        var placeKey: ViewKey?
+        var place: ViewPlace?
+    }
+
+    /// Who owns the trees under the view: the biggest city and country by
+    /// count, out of every tree in the rectangle (not only the sixty listed).
+    struct ViewPlace {
+        let total: Int
+        let city: (slug: String, name: String, country: String, n: Int)?
+        let country: (name: String, n: Int)?
     }
     @State private var viewMemo = ViewMemo()
 
@@ -576,7 +587,7 @@ struct MapTab: View {
                 if selected == nil, let p = placeShown {
                     placeHeader(p)
                 } else if selected == nil {
-                    countStrip
+                    viewHeader
                 } else if let t = selected {
                     // Apple Maps' place row: share, name, cross. See
                     // TreePlaceSheet.swift for the measurements.
@@ -971,6 +982,80 @@ struct MapTab: View {
     /// a list down here, it says how big it is, and being unTAPPABLE it makes
     /// the lip a handle rather than a row of half-visible cards a thumb keeps
     /// opening by accident.
+    /// DIRECTION B (Hidde, 2026-11-06: "ja b klinkt goed", "bouw beide"):
+    /// the map with no place chosen names the place it is looking at, the way
+    /// Google Maps names the area under the map: the city when nearly every
+    /// tree in view belongs to it, else the country when it has a page, else
+    /// just the count. The name is a link to that place, a chevron saying so
+    /// (Settings rows, Google Maps), never a separate "Open" button. The
+    /// website's explore map uses the same share (`dominantShare` there too).
+    static let dominantShare = 0.8
+
+    private var viewPlace: (title: String, sub: String, route: Route)? {
+        let key = viewKey
+        let vp: ViewPlace
+        if viewMemo.placeKey == key, let hit = viewMemo.place {
+            vp = hit
+        } else {
+            let box = visibleBox
+            let inView = catalogue.trees.filter { box.contains($0.lat, $0.lng) }
+            let topCity = Dictionary(grouping: inView, by: \.citySlug)
+                .max(by: { $0.value.count < $1.value.count })
+                .flatMap { e in e.value.first.map { (slug: e.key, name: $0.city, country: $0.country, n: e.value.count) } }
+            let topCountry = Dictionary(grouping: inView, by: \.country)
+                .max(by: { $0.value.count < $1.value.count })
+                .map { (name: $0.key, n: $0.value.count) }
+            vp = ViewPlace(total: inView.count, city: topCity, country: topCountry)
+            viewMemo.placeKey = key
+            viewMemo.place = vp
+        }
+        guard vp.total > 0 else { return nil }
+        let need = Self.dominantShare * Double(vp.total)
+        let n = max(inReach, vp.total)
+        if let c = vp.city, Double(c.n) >= need {
+            return (c.name, "\(c.country) · \(treesLabel(n)) in view", .city(c.slug))
+        }
+        if let c = vp.country, Double(c.n) >= need, catalogue.facets.pageURL(country: c.name) != nil {
+            return (c.name, "\(treesLabel(n)) in view", .country(c.name))
+        }
+        return nil
+    }
+
+    @ViewBuilder private var viewHeader: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            if let p = viewPlace {
+                HStack(spacing: 4) {
+                    Text(p.title)
+                        .font(.brand(28, .bold, relativeTo: .title))
+                        .foregroundStyle(Brand.ink)
+                        .lineLimit(1)
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Brand.inkSoft)
+                }
+                .frame(minHeight: 44)
+                .sheetTap { navigator.push = p.route }
+                .accessibilityLabel("Open \(p.title)")
+                .accessibilityIdentifier("map-view-place")
+                Text(p.sub)
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .accessibilityIdentifier("map-count")
+            } else {
+                Text(listedHere.isEmpty ? "No trees in view" : "\(treesLabel(max(inReach, listedHere.count))) in view")
+                    .font(.brand(22, .bold, relativeTo: .title2))
+                    .foregroundStyle(Brand.ink)
+                    .frame(minHeight: 44, alignment: .leading)
+                    .accessibilityIdentifier("map-count")
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.bottom, 10)
+        // The place header's numbers (placeHeader): close under the grabber.
+        .padding(.top, -16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .contain)
+    }
+
     private var countStrip: some View {
         Text(inReach == 0
              ? "No trees in view"
@@ -1099,7 +1184,11 @@ struct MapTab: View {
             .padding(.bottom, 6)
         }
         if !listedHere.isEmpty {
-            SheetSectionHead(title: listedHere.count == placeTrees.count
+            // With no place chosen the list is everything in view, up to the
+            // sixty nearest (listed); past that it says so.
+            SheetSectionHead(title: placeShown == nil && inReach > listedHere.count
+                             ? "The \(listedHere.count) nearest"
+                             : placeShown == nil || listedHere.count == placeTrees.count
                              ? (listedHere.count == 1 ? "The one tree" : "All \(listedHere.count) trees")
                              : "\(treesLabel(listedHere.count)) in view")
             LazyVStack(spacing: 0) {
@@ -1123,7 +1212,7 @@ struct MapTab: View {
                 // Under a place's header, that place's trees only: the United
                 // States listed a tree in Mexico City first because Mexico was
                 // in view (2026-11-04).
-                if placeShown != nil && query.isEmpty {
+                if query.isEmpty && !nothingInView {
                     placeList
                 } else {
                 ForEach(listedHere, id: \.tree.id) { hit in

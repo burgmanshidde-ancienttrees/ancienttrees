@@ -3947,3 +3947,18 @@ button.city-box-row:disabled { cursor: default; }
     border-radius: 16px; overflow: hidden; }
   .panel.is-detail .tree-rows .tree-card.tree-card-row.is-open > .tree-card-photo { display: block; }
 }
+
+/* THE EXPLORE LIST (direction B, Hidde, 2026-11-06): the trees in view in the
+   city page's Highlights and rows above, which carry --gutter themselves, so
+   the panel drops its own side padding while it lists trees. The heading is
+   the mockup's: the place at 26 with a chevron, the count under it, or the
+   count alone at 22. */
+#ex-panel.ex-trees { padding: 0.9rem 0 1rem; }
+.exc-place { margin: 0 var(--gutter); font-family: var(--sans); font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; }
+.exc-place a { display: inline-flex; align-items: center; gap: 4px; color: var(--ink); text-decoration: none; }
+.exc-place span { font-size: 26px; }
+.exc-place svg { width: 22px; height: 22px; margin-top: 3px; color: var(--ink-mid); fill: currentColor; }
+.exc-place-plain span { font-size: 22px; }
+@media (hover: hover) { .exc-place a:hover span { text-decoration: underline; } }
+.exc-place-sub { margin: 2px var(--gutter) 0; font-size: 15px; color: var(--ink-mid); }
+.ex-more { margin: 4px var(--gutter) 0; font-size: 13px; color: var(--ink-mid); }

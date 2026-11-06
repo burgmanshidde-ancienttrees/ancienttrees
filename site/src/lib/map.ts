@@ -513,7 +513,35 @@ export interface ExploreTreeFeature {
      *  index rather than the name, because 3,055 copies of "Pedunculate Oak"
      *  is 45KB of the same twelve words. */
     sp?: number;
+    /** Its place in its own city's Highlights (lib/highlights.ts), 0 first:
+     *  the feed's highlight_rank, so the list under the map orders them the
+     *  way the city page and the app do. Only on a highlight. */
+    hl?: number;
+    /** The short age (age-short.ts), the second half of the row's meta line. */
+    as?: string;
   };
+}
+
+/** WHEN THE LIST UNDER THE EXPLORE MAP NAMES A PLACE (direction B, Hidde,
+ *  2026-11-06: "Ja, bouw beide"). If at least this share of the trees in view
+ *  stand in one city with a page, the list is headed by that city as a link;
+ *  else if this share stand in one country with a page, by the country; else
+ *  by the count alone. The app's map uses the same number (ios MapTab.swift,
+ *  `dominantShare`); change the two together. */
+export const DOMINANT_SHARE = 0.8;
+/** How many rows the list under the explore map draws before it says to
+ *  zoom in. The ten city cards it replaced were a cap of the same kind. */
+export const EXPLORE_LIST_MAX = 30;
+
+/** What the explore list needs beside the features: per city its name in the
+ *  page's language, country and page (empty when it has none), per country
+ *  its page, the species silhouettes once and a key per species index, and
+ *  the words. */
+export interface ExploreListData {
+  places: Record<string, { n: string; k: string; h: string }>;
+  countries: Record<string, string>;
+  icons: Record<string, string>;
+  speciesIcon: string[];
 }
 export interface ExploreCityRow {
   city: string;
@@ -530,8 +558,18 @@ export interface ExploreCityRow {
  * register layer fetched separately. Ported from the
  * inline `script` string in build_explore_page(), build_site.py:4641-4805. */
 export function exploreMapScript(features: ExploreTreeFeature[], cities: ExploreCityRow[],
-                                 species: string[] = [], lang = "en", speciesLatin: string[] = []): string {
+                                 species: string[] = [], lang = "en", speciesLatin: string[] = [],
+                                 list: ExploreListData = { places: {}, countries: {}, icons: {}, speciesIcon: [] }): string {
   const geojson = JSON.stringify({ type: "FeatureCollection", features });
+  // A counted string travels as its one-tree form and a template with {n},
+  // so the browser fills the number without a rule of its own.
+  const U = ui(lang);
+  const counted = (fn: (n: number) => string) => ({ one: fn(1), many: fn(98765).replace("98765", "{n}") });
+  const words = {
+    inView: counted(U.treesInView), all: counted(U.allTrees), highlights: U.highlights,
+    more: U.zoomForMore, app: U.readInApp, save: U.cardSave, saved: U.cardSaved,
+    credit: U.photoCredit("{c}"),
+  };
   const citiesJson = JSON.stringify(cities);
   const speciesJson = JSON.stringify(species);
   const speciesLatinJson = JSON.stringify(speciesLatin);
@@ -547,6 +585,16 @@ var EMPTY = ${JSON.stringify({ title: ui(lang).emptyPlaceTitle, here: ui(lang).e
   ic: icon("tree", "regular"), plus: icon("plus", "bold") })};
 var SPECIES = ${speciesJson};
 var SPECIES_L = ${speciesLatinJson};
+// The list under the map (renderPanel, below).
+var PLACES = ${JSON.stringify(list.places)};
+var COUNTRIES = ${JSON.stringify(list.countries)};
+var SP_ICONS = ${JSON.stringify(list.icons)};
+var SP_IC = ${JSON.stringify(list.speciesIcon)};
+var WORDS = ${JSON.stringify(words)};
+var CHEVRON = ${JSON.stringify(icon("caret-right", "bold"))};
+var BM = ${JSON.stringify(icon("bookmark-simple", "bold", "heart hi-off") + icon("bookmark-simple", "fill", "heart hi-on"))};
+// The trees the filter row keeps; the list counts only those.
+var SHOWN = DATA.features;
 // THE FILTER ROW is lib/map-filters-js.ts, shared with the city map; it is
 // wired up here, before the map, for the reason it gives.
 // FILTERING RE-SOURCES, it does not hide a layer: the same-spot piles are
@@ -557,6 +605,8 @@ function applyFilters() {
   var kept = filtersOn() ? DATA.features.filter(function(f) { return keepsTree(f.properties); }) : DATA.features;
   src.setData({ type: 'FeatureCollection', features: atMarkPiles(kept) });
   atFilterCount(kept.length);
+  SHOWN = kept;
+  renderPanel();
 }
 atMapFilters({
   apply: applyFilters,
@@ -756,38 +806,129 @@ function initTreeLayers() {
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
 
-// ---- The city chooser (Hidde, 2026-07-31, final form: "waarom kom ik
-// dan niet direct op de City Page?"). The map is where you choose; the
-// city page is the city experience, full stop. The panel lists up to ten
-// cities in view, most likely first, and every click goes straight there.
+// ---- THE TREES IN VIEW (direction B, Hidde, 2026-11-06), the city page's
+// list and the app's: a heading that names the city or country when nearly
+// every tree in view stands there (DOMINANT_SHARE), the photographed trees as
+// Highlights, then every tree as a row. It replaced the list of cities in view
+// (2026-07-31): the pins and the heading lead to the cities now. Photographs
+// come from the one card catalogue the pins' cards already read
+// (/api/cards.json, atCollection.catalogue), so the list draws first with the
+// species tiles and again once it has answered.
 var panel = document.getElementById('ex-panel');
-function fmtCard(c) {
-// The no-photo drawing is interpolated at BUILD time, so the script text that
-// ships still carries no import: one drawing for every card on the site, rather
-// than the empty beige rectangle this line used to emit (2026-09-17).
-  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '"' + (c.ph2 ? ' srcset="' + c.ph2 + '"' : '') + ' alt="" loading="lazy"></span>' : '${NO_PHOTO_CARD}';
-  return '<a class="exc-card" href="' + c.url + '">' + ph +
-         '<span class="exc-body"><b>' + c.city + '</b>' +
-         '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';
+var CARDS = null;
+var DOMINANT_SHARE = ${DOMINANT_SHARE};
+var LIST_MAX = ${EXPLORE_LIST_MAX};
+// pinPriority as the pins read it: a missing one counts as no photograph.
+function _pr(f) { var r = f.properties.pr; return r === undefined || r === null ? 1 : r; }
+function _n(w, n) { return n === 1 ? w.one : w.many.replace('{n}', String(n)); }
+function _inFocus(f) {
+  if (!FOCUS) { return false; }
+  var pl = PLACES[f.properties.cs];
+  return FOCUS.kind === 'country' ? Boolean(pl && pl.k === FOCUS.key) : f.properties.cs === FOCUS.key;
+}
+// The place the list is headed by: the searched place while the search holds
+// (Hidde, 2026-11-06, the United Kingdom search), else the one city, else the
+// one country, holding DOMINANT_SHARE of the trees in view; null for none.
+function _headPlace(trees) {
+  if (FOCUS) {
+    if (FOCUS.kind === 'country' && COUNTRIES[FOCUS.key]) { return {name: FOCUS.key, href: COUNTRIES[FOCUS.key], sub: ''}; }
+    var fp = PLACES[FOCUS.key];
+    if (FOCUS.kind !== 'country' && fp && fp.h) { return {name: fp.n, href: fp.h, sub: fp.k}; }
+  }
+  var byCity = {}, byCountry = {}, topC = null, topK = null;
+  trees.forEach(function(f) {
+    var cs = f.properties.cs, pl = PLACES[cs];
+    byCity[cs] = (byCity[cs] || 0) + 1;
+    if (!topC || byCity[cs] > byCity[topC]) { topC = cs; }
+    if (pl && pl.k) {
+      byCountry[pl.k] = (byCountry[pl.k] || 0) + 1;
+      if (!topK || byCountry[pl.k] > byCountry[topK]) { topK = pl.k; }
+    }
+  });
+  var cp = topC && PLACES[topC];
+  if (cp && cp.h && byCity[topC] >= DOMINANT_SHARE * trees.length) { return {name: cp.n, href: cp.h, sub: cp.k}; }
+  if (topK && COUNTRIES[topK] && byCountry[topK] >= DOMINANT_SHARE * trees.length) { return {name: topK, href: COUNTRIES[topK], sub: ''}; }
+  return null;
+}
+function _treeBits(f) {
+  var p = f.properties, k = (CARDS && p.id && CARDS[p.id]) || {};
+  var common = (p.sp !== undefined && p.sp !== null && SPECIES[p.sp]) || String(k.sp || '').replace(/\\s*\\(.*\\)\\s*$/, '');
+  var meta = [common, p.as || ''].filter(Boolean).map(_esc).join(' &middot; ');
+  var ic = SP_ICONS[(p.sp !== undefined && p.sp !== null && SP_IC[p.sp]) || 'broadleaf'] || '';
+  return {id: p.id || '', name: p.name || k.n || '', href: p.url ? '/' + p.url : '',
+          photo: k.p || '', credit: k.cr || '', meta: meta, metaText: [common, p.as || ''].filter(Boolean).join(' · '), ic: ic};
+}
+// The save, the card heart every list carries (SaveHeart.astro, look "card").
+function _heart(t) {
+  return '<button class="save-btn heart-btn heart-card" type="button" data-tree="' + _esc(t.id) + '"' +
+    ' data-name="' + _esc(t.name) + '" data-url="' + _esc(t.href) + '"' +
+    (t.photo ? ' data-photo="' + _esc(t.photo) + '"' : '') +
+    (t.metaText ? ' data-meta="' + _esc(t.metaText) + '"' : '') +
+    ' data-l-save="' + _esc(WORDS.save) + '" data-l-saved="' + _esc(WORDS.saved) + '"' +
+    ' aria-pressed="false" aria-label="' + _esc(WORDS.save + ' ' + t.name) + '">' + BM +
+    '<span class="sr-only">' + _esc(WORDS.save) + '</span></button>';
+}
+function _nameHtml(t) { return t.href ? '<a href="' + _esc(t.href) + '">' + _esc(t.name) + '</a>' : _esc(t.name); }
+function _creditHtml(t) { return t.credit ? '<p class="tree-card-credit">' + _esc(WORDS.credit.replace('{c}', t.credit)) + '</p>' : ''; }
+// An app-only tree (lib/app-first.ts APP_ONLY_PINS) has no page: its name is
+// no link and the row says where its story is, as its pin's card does.
+function _appHtml(t) { return t.href ? '' : '<p class="tree-meta tree-app-only"><a href="/app" data-app-download>' + _esc(WORDS.app) + '</a></p>'; }
+// A highlight, TreeCard.astro's "highlight" variant.
+function _hlHtml(f) {
+  var t = _treeBits(f);
+  return '<article class="tree-hl tree-card-link" data-tree-id="' + _esc(t.id) + '">' +
+    '<div class="tree-hl-photo">' + (t.photo ? '<img src="' + _esc(t.photo) + '" alt="' + _esc(t.name) + '" loading="lazy">' : '') + _heart(t) + '</div>' +
+    '<p class="tree-name tree-hl-name">' + _nameHtml(t) + '</p>' +
+    (t.meta ? '<p class="tree-meta">' + t.meta + '</p>' : '') + _appHtml(t) + _creditHtml(t) + '</article>';
+}
+// A row, TreeCard.astro's "row" variant: the 64px thumbnail (the species on
+// the pale tile without a photograph), name, meta, the save at the end.
+function _rowHtml(f) {
+  var t = _treeBits(f);
+  return '<article class="tree-card tree-card-link tree-card-nonum tree-card-row' + (t.photo ? '' : ' tree-card-hastile') + '" data-tree-id="' + _esc(t.id) + '">' +
+    '<div class="tree-row-thumb' + (t.photo ? '' : ' tree-row-thumb-none') + '" aria-hidden="true">' +
+      (t.photo ? '<img src="' + _esc(t.photo) + '" alt="" loading="lazy">' : '<svg viewBox="0 0 40 40">' + t.ic + '</svg>') + '</div>' +
+    '<div class="tree-row-text"><div class="tree-card-top"><h3 class="tree-name">' + _nameHtml(t) + '</h3></div>' +
+      (t.meta ? '<p class="tree-meta">' + t.meta + '</p>' : '') + _appHtml(t) + _creditHtml(t) + '</div>' +
+    '<div class="tree-row-save">' + _heart(t) + '</div></article>';
 }
 function renderPanel() {
-  if (!panel) return;
+  if (!panel || typeof map === 'undefined' || !map) return;
   var b = map.getBounds();
-  var cities = CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
-  if (FOCUS) {
-    var _f = function(c) { return (FOCUS.kind === 'country' ? c.country === FOCUS.key : c.url === FOCUS.key) ? 0 : 1; };
-    // Array.prototype.sort is stable, so each group keeps its ranking.
-    cities = cities.slice().sort(function(a, z) { return _f(a) - _f(z); });
+  var trees = SHOWN.filter(function(f) { var g = f.geometry.coordinates; return g[0] !== null && g[1] !== null && b.contains(g); });
+  if (!trees.length) { panel.classList.remove('ex-trees'); panel.innerHTML = emptyHere(); return; }
+  // Rows: the searched place first, then photograph first and readers' saves
+  // (pinPriority, the pins' own order); sort is stable, so ties keep the
+  // site's city order.
+  trees = trees.slice().sort(function(a, z) {
+    return (_inFocus(a) ? 0 : 1) - (_inFocus(z) ? 0 : 1) || _pr(a) - _pr(z);
+  });
+  var place = _headPlace(trees), count = _n(WORDS.inView, trees.length), head;
+  if (place) {
+    head = '<h2 class="exc-place"><a href="' + _esc(place.href) + '"><span>' + _esc(place.name) + '</span>' + CHEVRON + '</a></h2>' +
+      '<p class="exc-place-sub">' + _esc(place.sub ? place.sub + ' · ' + count : count) + '</p>';
+  } else {
+    head = '<h2 class="exc-place exc-place-plain"><span>' + _esc(count) + '</span></h2>';
   }
-  var anyTree = DATA.features.some(function(f) { var g = f.geometry.coordinates; return g[0] !== null && g[1] !== null && b.contains(g); });
-  if (!anyTree) { panel.innerHTML = emptyHere(); return; }
-  if (!cities.length) {
-    panel.innerHTML = '<p class="exc-empty">No mapped cities in view. Zoom out, or <a href="contribute">be the first to map one here</a>.</p>';
-    return;
+  // Highlights: photographed trees (pinPriority puts them at 0 or below),
+  // each city's own Highlights first in their rank, at most ten.
+  var hls = trees.filter(function(f) { return _pr(f) <= 0; }).sort(function(a, z) {
+    var ha = a.properties.hl, hz = z.properties.hl;
+    var na = ha === undefined || ha === null, nz = hz === undefined || hz === null;
+    return (_inFocus(a) ? 0 : 1) - (_inFocus(z) ? 0 : 1) || (na ? 1 : 0) - (nz ? 1 : 0) ||
+      (na || nz ? 0 : ha - hz) || _pr(a) - _pr(z);
+  }).slice(0, 10);
+  var html = head;
+  if (hls.length) {
+    html += '<section class="city-highlights"><h3 class="city-section-head">' + _esc(WORDS.highlights) + '</h3>' +
+      '<div class="tree-hl-list">' + hls.map(_hlHtml).join('') + '</div></section>';
   }
-  var head = cities.length === 1 ? cities[0].city : 'Cities in view';
-  panel.innerHTML = '<div class="exc-cityhead"><h2>' + head + '</h2></div>' +
-    cities.slice(0, 10).map(fmtCard).join('');
+  html += '<h3 class="city-section-head">' + _esc(_n(WORDS.all, trees.length)) + '</h3>' +
+    '<div class="tree-rows">' + trees.slice(0, LIST_MAX).map(_rowHtml).join('') + '</div>' +
+    (trees.length > LIST_MAX ? '<p class="ex-more">' + _esc(WORDS.more) + '</p>' : '');
+  panel.classList.add('ex-trees');
+  panel.innerHTML = html;
+  if (window.atPaintSaves) { window.atPaintSaves(); }
 }
 function _km(a, b) {
   var R = Math.PI / 180, h = Math.pow(Math.sin((b[1] - a[1]) * R / 2), 2) +
@@ -834,7 +975,12 @@ if (panel) panel.addEventListener('click', function(e) {
 map.on('dragstart', function() { FOCUS = null; });
 map.on('zoomstart', function(e) { if (e && e.originalEvent) { FOCUS = null; } });
 map.on('moveend', renderPanel);
-map.on('load', renderPanel);
+map.on('load', function() {
+  renderPanel();
+  // The photographs, from the catalogue the pins' cards share.
+  var C = window.atCollection;
+  if (C && C.catalogue) { C.catalogue().then(function(c) { CARDS = c || {}; renderPanel(); }); }
+});
 renderPanel();
 
 `)

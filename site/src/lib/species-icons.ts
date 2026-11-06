@@ -100,9 +100,16 @@ const SPECIES_ARCHETYPES: [string, string[]][] = [
 /** Pick the silhouette for a tree. Falls back to a broadleaf crown, which is
  * what most of these city trees actually are. */
 export function speciesIcon(tree: Tree): string {
-  const name = speciesCommon(tree).toLowerCase();
+  return SPECIES_ICONS[speciesIconKey(speciesCommon(tree))];
+}
+
+/** The silhouette's key in SPECIES_ICONS for a common name. The explore map's
+ * list draws its rows in the browser, so it ships the key per species and the
+ * drawings once, rather than a drawing per tree. */
+export function speciesIconKey(common: string): string {
+  const name = common.toLowerCase();
   for (const [key, needles] of SPECIES_ARCHETYPES) {
-    if (needles.some((n) => name.includes(n))) return SPECIES_ICONS[key];
+    if (needles.some((n) => name.includes(n))) return key;
   }
-  return SPECIES_ICONS.broadleaf;
+  return "broadleaf";
 }
