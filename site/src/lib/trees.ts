@@ -13,7 +13,7 @@ import { haversineKm } from "./walks";
 import { slugify, legacySlugify } from "./slug";
 export { slugify, legacySlugify };
 import { cityHasQuestionPage } from "./question-page";
-import { treeIsAppOnly } from "./app-first";
+import { treeIsAppOnly, APP_ONLY_PINS } from "./app-first";
 
 export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
 export type CityData = CollectionEntry<"cities">["data"];
@@ -61,6 +61,24 @@ export function cityIsRenderable(city: CityEntry): boolean {
 
 export function renderableTrees(city: CityEntry): Tree[] {
   return city.data.trees.filter(treeIsRenderable);
+}
+
+/** The trees a web MAP draws as pins (./app-first APP_ONLY_PINS, 2026-11-06):
+ * every tree with a page, plus the app-only ones, which get a pin and a card
+ * but never a page. Only the pin and card data go through this; pages,
+ * sitemaps and search stay on renderableTrees. */
+export function mapTrees(city: CityEntry): Tree[] {
+  return APP_ONLY_PINS ? city.data.trees.filter(treeIsInFeed) : renderableTrees(city);
+}
+
+/** A place with at least one pin on the web map. */
+export function cityIsOnMap(city: CityEntry): boolean {
+  return mapTrees(city).length > 0;
+}
+
+/** Has a web page of its own (the card links to it). */
+export function treeHasPage(t: Tree): boolean {
+  return treeIsRenderable(t);
 }
 
 /** Does this city publish a question page (Contract B)? The rule and the

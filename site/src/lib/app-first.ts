@@ -31,6 +31,18 @@ import { DATA } from "./data-dir";
 
 export const APP_FIRST = true;
 
+// PINS, NOT PAGES (Hidde, 2026-11-06, before the Guardian piece: "put all pins
+// live of the app only trees and let me see if that makes the total experience
+// still work"). Half of the UK was missing from the web map (131 trees on the
+// web, 122 app-only). An app-only tree now stands on every map that reads
+// /api/pins.json or the explore map's features, and a tap opens its card
+// (photo, name, species, age, place, save); the card carries no link because
+// there is no page, and says the story is in the app. Still no page, no
+// sitemap line, no search-index line: pins are data, not URLs, so Google gets
+// nothing new to crawl. qa's check_an_app_only_tree_stays_off_the_web reads
+// this switch. False takes the pins off again.
+export const APP_ONLY_PINS = true;
+
 let baseline: Set<string> | null = null;
 let noted: Set<string> | null = null;
 

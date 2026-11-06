@@ -2412,8 +2412,22 @@ def check_an_app_only_tree_stays_off_the_web():
     # The website's own data files, which its maps and search read in the
     # browser: an app-only id in any of them is a pin or a result that opens a
     # page that does not exist (found 2026-11-05, the explore map's pins).
+    # PINS, NOT PAGES (Hidde, 2026-11-06: "put all pins live of the app only
+    # trees"): with APP_ONLY_PINS on in site/src/lib/app-first.ts the map's
+    # pins and cards carry app-only trees, but a card must carry no "u" (no
+    # page to open) and search and places still never name one.
+    pins_on = bool(re.search(r"export const APP_ONLY_PINS = true",
+                             (ROOT / "site" / "src" / "lib" / "app-first.ts").read_text(encoding="utf-8")))
+    cards = {}
+    if pins_on:
+        try:
+            cards = json.loads((DIST / "api" / "cards.json").read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            cards = {}
+    web_files = ("search-index.json", "places.json") if pins_on else \
+        ("api/pins.json", "search-index.json", "places.json", "api/cards.json")
     web_text = ""
-    for name in ("api/pins.json", "search-index.json", "places.json", "api/cards.json"):
+    for name in web_files:
         try:
             web_text += (DIST / name).read_text(encoding="utf-8")
         except OSError:
@@ -2446,8 +2460,10 @@ def check_an_app_only_tree_stays_off_the_web():
             if t.get("id") not in feed_ids:
                 out.append("app first: %s (%s) is app-only but missing from /api/trees.json" % (t.get("id"), t.get("name")))
             if web_text and ('"%s"' % t.get("id")) in web_text:
-                out.append("app first: %s is app-only but the website's pins, cards, places or search name it"
-                           % t.get("id"))
+                out.append("app first: %s is app-only but the website's %s name it"
+                           % (t.get("id"), "places or search" if pins_on else "pins, cards, places or search"))
+            if pins_on and (cards.get(t.get("id")) or {}).get("u"):
+                out.append("app first: %s is app-only but its map card links to a page" % t.get("id"))
     if n:
         print("app first: %d tree(s) in the app and not on the website" % n)
     return out

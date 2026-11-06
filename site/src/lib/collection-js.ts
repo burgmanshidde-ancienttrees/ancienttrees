@@ -174,7 +174,7 @@ window.atCollection = window.atCollection || (function() {
     // more": the whole card is the link.
     var HEART = ''
       + '<button class="save-btn heart-btn heart-card" type="button" data-tree="' + esc(id) + '"'
-      + ' data-name="' + esc(c.n) + '" data-url="' + esc(c.u) + '"'
+      + ' data-name="' + esc(c.n) + '" data-url="' + esc(c.u || '') + '"'
       + ' data-l-save="Save" data-l-saved="Saved"'
       + ' aria-pressed="' + (on ? 'true' : 'false') + '"'
       + ' aria-label="' + (on ? 'Saved ' : 'Save ') + esc(c.n) + '">'
@@ -188,10 +188,15 @@ window.atCollection = window.atCollection || (function() {
                + 'sizes="(max-width: 800px) 100vw, 560px" alt="' + esc(c.n)
                + '" loading="lazy">' + HEART + tags + '</div>' : '')
       + (c.cr ? '<p class="tree-card-credit">Photo: ' + esc(c.cr) + '</p>' : '')
-      + '<div class="tree-card-top">' + (c.p ? '' : HEART) + '<h3 class="tree-name"><a href="' + esc(c.u) + '">'
-        + esc(c.n) + '</a></h3></div>'
+      // An app-only tree (cards.json "a", 2026-11-06) has a pin and this card
+      // but no page: the name is not a link, and the card says where its
+      // story is, through the one "get the app" control (data-app-download:
+      // the App Store on iOS, the Android waitlist, the QR on a laptop).
+      + '<div class="tree-card-top">' + (c.p ? '' : HEART) + '<h3 class="tree-name">'
+        + (c.u ? '<a href="' + esc(c.u) + '">' + esc(c.n) + '</a>' : esc(c.n)) + '</h3></div>'
       + (c.p ? '' : tags)
       + (meta ? '<p class="tree-meta">' + meta + '</p>' : '')
+      + (c.a ? '<p class="tree-meta tree-app-only"><a href="/app" data-app-download>Read its story in the app</a></p>' : '')
       + '</article>';
   }
 

@@ -10,7 +10,9 @@
 // unknown) and paid is 1 behind a ticket, so the city map's filter row keeps
 // the same trees as /explore's (2026-11-01).
 import { getCollection } from "astro:content";
-import { cityIsRenderable, renderableTrees } from "../../lib/trees";
+// Since 2026-11-06 the app-only trees too (lib/app-first.ts APP_ONLY_PINS):
+// a pin and a card, never a page.
+import { cityIsOnMap, mapTrees } from "../../lib/trees";
 import { usablePhoto } from "../../lib/images";
 import { miniPin, pinPriority } from "../../lib/map";
 import { savesOf } from "../../lib/saves";
@@ -18,11 +20,11 @@ import { speciesCommon } from "../../lib/species";
 import { mapSpecies } from "../../lib/map-species";
 
 export async function GET() {
-  const cities = (await getCollection("cities")).filter(cityIsRenderable);
+  const cities = (await getCollection("cities")).filter(cityIsOnMap);
   const { index } = await mapSpecies();
   const rows: [string, number, number, string, number, number, number, number][] = [];
   for (const entry of cities) {
-    for (const t of renderableTrees(entry)) {
+    for (const t of mapTrees(entry)) {
       const { longitude: x, latitude: y } = t.location;
       if (x == null || y == null) continue;
       rows.push([t.id, Math.round(x * 1e5) / 1e5, Math.round(y * 1e5) / 1e5, entry.id,

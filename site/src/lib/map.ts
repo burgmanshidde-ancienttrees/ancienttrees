@@ -801,7 +801,9 @@ function emptyHere() {
   var best = null, bd = Infinity;
   DATA.features.forEach(function(f) {
     var g = f.geometry.coordinates;
-    if (g[0] === null) { return; }
+    // An app-only tree has a pin but no page (APP_ONLY_PINS), so it is never
+    // the "nearest tree" link here.
+    if (g[0] === null || !f.properties.url) { return; }
     var d = _km(here, g);
     if (d < bd) { bd = d; best = f; }
   });

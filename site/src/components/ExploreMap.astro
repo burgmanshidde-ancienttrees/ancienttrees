@@ -11,7 +11,7 @@
 // assets/registers.json.ts, fetched client-side rather than inlined here.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { cityIsRenderable, renderableTrees, slugify, distSpan, type CityEntry } from "../lib/trees";
+import { cityIsRenderable, renderableTrees, slugify, distSpan, cityIsOnMap, mapTrees, treeHasPage, type CityEntry } from "../lib/trees";
 import { speciesCommon } from "../lib/species";
 import { mapSpecies } from "../lib/map-species";
 import MapFilters from "./MapFilters.astro";
@@ -55,9 +55,12 @@ const features: ExploreTreeFeature[] = [];
 // The species chip's list, the same on every map (lib/map-species.ts).
 const { list: speciesList, index: speciesIndex, latinHtml: speciesLatinHtml } = await mapSpecies();
 
-for (const entry of allCities) {
+// Every pin, app-only trees included (lib/app-first.ts APP_ONLY_PINS,
+// 2026-11-06): an app-only tree gets no url, so its card opens no page.
+const mapCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsOnMap));
+for (const entry of mapCities) {
   const cslug = entry.id;
-  for (const t of renderableTrees(entry)) {
+  for (const t of mapTrees(entry)) {
     const loc = t.location;
     const sp = speciesIndex.get(speciesCommon(t));
     features.push({
@@ -66,7 +69,7 @@ for (const entry of allCities) {
       properties: {
         id: t.id,
         name: t.name,
-        url: `${cslug}/${slugify(t.name)}`,
+        url: treeHasPage(t) ? `${cslug}/${slugify(t.name)}` : "",
         cs: cslug,
         city: entry.data.city,
         age: t.age_estimate ?? "",

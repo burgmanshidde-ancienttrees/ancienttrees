@@ -30,18 +30,21 @@
 // month you are reading in rather than the month we built in. The peak months
 // travel and the client compares them with today.
 import { getCollection } from "astro:content";
-import { cityIsRenderable, renderableTrees, treeSlugsForCity } from "../../lib/trees";
+// Since 2026-11-06 the app-only trees too (lib/app-first.ts APP_ONLY_PINS),
+// with no "u": there is no page to open, and the card says so (collection-js).
+import { cityIsOnMap, mapTrees, treeHasPage, treeSlugsForCity } from "../../lib/trees";
 import { usablePhoto, thumbUrl, creditRequired, creditName } from "../../lib/images";
 import { ageShort } from "../../lib/age-short";
 import { seasonKey } from "../../lib/phenology";
 
 export async function GET() {
-  const cities = (await getCollection("cities")).filter(cityIsRenderable);
+  const cities = (await getCollection("cities")).filter(cityIsOnMap);
   const out: Record<string, unknown> = {};
 
   for (const city of cities) {
     const slugs = treeSlugsForCity(city);
-    for (const tree of renderableTrees(city)) {
+    for (const tree of mapTrees(city)) {
+      const page = treeHasPage(tree);
       const photo = usablePhoto(tree);
       // The same three facts in the same order as TreeCard's meta line, joined
       // here rather than in the browser so a card cannot compose it differently.
@@ -52,7 +55,7 @@ export async function GET() {
       const credit = photo && creditRequired(photo.license) ? creditName(photo.attribution) : null;
       out[tree.id] = {
         n: tree.name,
-        u: `/${city.id}/${slugs[tree.id]}`,
+        ...(page ? { u: `/${city.id}/${slugs[tree.id]}` } : { a: 1 }),
         c: city.data.city,
         // Species and country travel as their own fields as well as inside the
         // meta line, because the profile page COUNTS them ("3 species, 1
