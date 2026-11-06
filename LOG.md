@@ -12,6 +12,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06 session: Cramond reader photo live, "embrace reader content"
+
+- **What changed:** the reader's app photo of the Rockface Sycamore of Cramond (edi_008), held on 11-04 as a wide path scene, is in the tree's strip beside the Cramond Association lead (verdict `add`; undo `sightings_publish.py --unstrip 4b28d99e-e0f2-4572-b851-23dd79e73031`).
+- **New rule (Hidde):** "we should embrace all user generated content", "as long as its sort of the tree - we can be picky later". A reader photo that roughly shows the tree goes in the strip; a weaker frame than the lead is never a hold. In CLAUDE.md (Reader input) and the photo-judge agent.
+
 ## 2026-11-06 night run (second attempt): held sets published, app only
 
 - **Published from the shelf (all written 11-02/11-04, held for a pace that does not count app-only trees):** Croatian coast 10 (Pula 2, Rab, Lun, Split, Zadar, Brac, Hvar, Cara, Orebic), Greek islands (Corfu 8, Kefalonia 1, Paros 1), Lampang 1, Thai south (Ko Pha Ngan, Kantang, Krabi, Takua Pa), Puglia (Palagiano, Vico del Gargano, Foresta Umbra, Bisceglie), Glasgow +4, Cannock Chase 3, Milton Keynes 2, Balfron 1. Preflight clean on the commit; the qa.py build check did not run (no site/dist on this runner).

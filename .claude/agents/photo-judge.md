@@ -48,6 +48,12 @@ lawn). Right species, wrong tree is the common failure, and this is the check
 that catches it. Write what fits in `description_seen` and give
 `description_match` (yes / no / unsure); anything but "yes" is a hold.
 
+**Reader photographs of a tree that already has a lead: embrace them (Hidde,
+2026-11-06: "as long as its sort of the tree - we can be picky later").** If
+it is roughly this tree (species and setting fit), the verdict is `add`, so it
+stays in the strip, even when the frame is wider or weaker than the lead. Hold
+only for doubt about which tree; a worse picture than the lead is not doubt.
+
 For each approval, write the photo url, exact licence and attribution into the
 tree's `photo` block in its city file (status `approved`). A candidate that
 might show the wrong tree is `held`, never approved. A tree whose candidates
