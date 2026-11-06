@@ -82,8 +82,15 @@ def check_city(path):
         if cs not in ("ai_generated", "hidde_approved", "flagged"):
             out.append("%s/%s: curation_status %r is not one of ai_generated|hidde_approved|flagged, the build refuses it"
                        % (slug, t.get("id"), cs))
+        # Same schema: photo.taken_month is a whole number 1-12; "2007-04"
+        # from the Wales yew pass stopped the 11-06 deploy (Astbury +8).
+        for p in [t.get("photo")] + list(t.get("photos") or []):
+            m = p.get("taken_month") if isinstance(p, dict) else None
+            if m is not None and not (isinstance(m, int) and not isinstance(m, bool) and 1 <= m <= 12):
+                out.append("%s/%s: photo taken_month %r is not a number 1-12, the build refuses it"
+                           % (slug, t.get("id"), m))
 
-    intro = (d.get("intro") or "").strip()
+    intro =(d.get("intro") or "").strip()
     if not intro:
         out.append("%s: no intro, Contract C requires 60-100 words" % slug)
     else:
