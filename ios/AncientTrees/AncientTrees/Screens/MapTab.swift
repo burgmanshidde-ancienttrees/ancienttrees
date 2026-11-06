@@ -1036,10 +1036,12 @@ struct MapTab: View {
     /// only), the Highlights shelf, then every tree in view as a row. The
     /// website's city page has the same order (TreeCard.astro "row").
     @ViewBuilder private var placeList: some View {
-        // The searched city's asks, for as long as the search holds: Google
-        // Maps keeps a searched place's card until its cross, wherever the
-        // map is moved (Hidde chose this, 2026-11-06).
-        if case .city(let slug) = focusPlace {
+        // The searched city's asks, while its trees are in view (Hidde,
+        // 2026-11-06: over an empty map the ambassador row "staat nu zielig
+        // in zn eentje"). The field keeps the search until its cross either
+        // way; only the box goes with the city.
+        if case .city(let slug) = focusPlace,
+           listedHere.contains(where: { $0.tree.citySlug == slug }) {
             PlaceAsksBox(slug: slug, title: placeTitle, catalogue: catalogue)
                 .padding(.bottom, 6)
         }
@@ -1079,8 +1081,10 @@ struct MapTab: View {
                 }
             }
         }
-        // The Plus question after the trees, the searched city only.
-        if case .city = focusPlace {
+        // The Plus question after the trees, the searched city only, while
+        // its trees are in view (the box's rule above, map.ts _focusCity).
+        if case .city(let slug) = focusPlace,
+           listedHere.contains(where: { $0.tree.citySlug == slug }) {
             PlusUnderBox(title: placeTitle).padding(.top, 16)
         }
     }

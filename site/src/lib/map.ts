@@ -827,13 +827,15 @@ function _inFocus(f) {
 }
 // The searched city's box: the ambassador row to its page's request. Nothing
 // for a country or a city without a page.
-function _focusCity() {
-  if (!FOCUS || FOCUS.kind === 'country') { return null; }
+// Only while the city's own trees are in view (Hidde, 2026-11-06: alone over
+// an empty map it "staat nu zielig in zn eentje"); the field keeps the search.
+function _focusCity(trees) {
+  if (!FOCUS || FOCUS.kind === 'country' || !trees.some(_inFocus)) { return null; }
   var pl = PLACES[FOCUS.key];
   return pl && pl.h ? pl : null;
 }
-function _boxHtml() {
-  var pl = _focusCity();
+function _boxHtml(trees) {
+  var pl = _focusCity(trees);
   if (!pl) { return ''; }
   var amb = (pl.a ? WORDS.ambA : WORDS.ambThe).replace('{p}', pl.n);
   return '<div class="city-box exc-box"><a class="city-box-row" href="' + _esc(pl.h) + '#ambassador">' + BOX_IC.amb +
@@ -843,8 +845,8 @@ function _boxHtml() {
 // Guardian piece: the first screen is the city and its trees, the ask comes
 // after them; "dan kunnen we altijd nog meer op de voorgrond zetten"). It opens
 // the one Plus sheet (PlusAsk.astro, on this page without a row of its own).
-function _plusHtml() {
-  var pl = _focusCity();
+function _plusHtml(trees) {
+  var pl = _focusCity(trees);
   if (!pl || !document.getElementById('plus-dialog')) { return ''; }
   var answered = false;
   try { answered = localStorage.getItem('at_plus_answered') === '1'; } catch (e) {}
@@ -905,7 +907,7 @@ function renderPanel() {
   trees = trees.slice().sort(function(a, z) {
     return (_inFocus(a) ? 0 : 1) - (_inFocus(z) ? 0 : 1) || _pr(a) - _pr(z);
   });
-  var head = '<h2 class="exc-place exc-place-plain"><span>' + _esc(_n(WORDS.inView, trees.length)) + '</span></h2>' + _boxHtml();
+  var head = '<h2 class="exc-place exc-place-plain"><span>' + _esc(_n(WORDS.inView, trees.length)) + '</span></h2>' + _boxHtml(trees);
   // Highlights: photographed trees (pinPriority puts them at 0 or below),
   // each city's own Highlights first in their rank, at most ten.
   var hls = trees.filter(function(f) { return _pr(f) <= 0; }).sort(function(a, z) {
@@ -921,7 +923,7 @@ function renderPanel() {
   }
   html += '<h3 class="city-section-head">' + _esc(_n(WORDS.all, trees.length)) + '</h3>' +
     '<div class="tree-rows">' + trees.slice(0, LIST_MAX).map(_rowHtml).join('') + '</div>' +
-    (trees.length > LIST_MAX ? '<p class="ex-more">' + _esc(WORDS.more) + '</p>' : '') + _plusHtml();
+    (trees.length > LIST_MAX ? '<p class="ex-more">' + _esc(WORDS.more) + '</p>' : '') + _plusHtml(trees);
   panel.classList.add('ex-trees');
   panel.innerHTML = html;
   // The hearts only: atPaintSaves refilters the map, which calls this again

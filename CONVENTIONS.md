@@ -1254,7 +1254,9 @@ searched until its cross or a new search (Airbnb's search bar; Google Maps and
 Apple Maps keep a searched place's card the same way), wherever you drag. The
 list is always every tree in view, headed by the bare count ("22 trees"), the
 searched place's own trees first while the search holds. A searched city adds
-its box (ambassador, Plus) above the Highlights until the search goes. Nothing
+its box (ambassador, Plus) above the Highlights while its trees are in view
+(Hidde, the same evening: alone over an empty map it "staat nu zielig in zn
+eentje"). Nothing
 names a place from what happens to be in view: direction B's guessed heading
 and its 80 percent share are gone, and so is the place header with its share
 circle (MapTab.swift viewHeader, map.ts renderPanel).
