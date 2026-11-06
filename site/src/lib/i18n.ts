@@ -606,6 +606,8 @@ export interface UIStrings {
   homeOldestOfAll: string;
   homeAllSpecies: (n: number) => string;
   homeFavH: string;
+  /** Discover's "New from visitors" row (Hidde, 2026-11-06). */
+  homeVisitorsH: string;
   homeOldestShelfH: string;
   homeCountriesH: string;
   homeAllCountries: string;
@@ -981,6 +983,7 @@ const EN: UIStrings = {
   homeOldestOfAll: "The oldest of all",
   homeAllSpecies: (n) => `All ${n} species`,
   homeFavH: "Our favourite tree cities",
+  homeVisitorsH: "New from visitors",
   homeOldestShelfH: "The oldest trees we map",
   homeCountriesH: "Countries",
   homeAllCountries: "All countries",
@@ -1058,6 +1061,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeOldestOfAll: "Los más viejos de todos",
     homeAllSpecies: (n) => `Las ${n} especies`,
     homeFavH: "Nuestras ciudades de árboles favoritas",
+    homeVisitorsH: "Lo nuevo de los visitantes",
     homeOldestShelfH: "Los árboles más viejos que cartografiamos",
     homeCountriesH: "Países",
     homeAllCountries: "Todos los países",
@@ -1421,6 +1425,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeOldestOfAll: "I più vecchi di tutti",
     homeAllSpecies: (n) => `Tutte le ${n} specie`,
     homeFavH: "Le nostre città di alberi preferite",
+    homeVisitorsH: "Novità dai visitatori",
     homeOldestShelfH: "Gli alberi più vecchi che mappiamo",
     homeCountriesH: "Paesi",
     homeAllCountries: "Tutti i paesi",
@@ -1784,6 +1789,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeOldestOfAll: "De oudste van allemaal",
     homeAllSpecies: (n) => `Alle ${n} soorten`,
     homeFavH: "Onze favoriete bomensteden",
+    homeVisitorsH: "Nieuw van bezoekers",
     homeOldestShelfH: "De oudste bomen die we in kaart brengen",
     homeCountriesH: "Landen",
     homeAllCountries: "Alle landen",
@@ -2147,6 +2153,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeOldestOfAll: "Die ältesten von allen",
     homeAllSpecies: (n) => `Alle ${n} Arten`,
     homeFavH: "Unsere liebsten Baumstädte",
+    homeVisitorsH: "Neu von Besuchern",
     homeOldestShelfH: "Die ältesten Bäume, die wir kartieren",
     homeCountriesH: "Länder",
     homeAllCountries: "Alle Länder",
@@ -2510,6 +2517,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeOldestOfAll: "As mais velhas de todas",
     homeAllSpecies: (n) => `Todas as ${n} espécies`,
     homeFavH: "As nossas cidades de árvores preferidas",
+    homeVisitorsH: "Novidades dos visitantes",
     homeOldestShelfH: "As árvores mais velhas que mapeamos",
     homeCountriesH: "Países",
     homeAllCountries: "Todos os países",
@@ -2873,6 +2881,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeOldestOfAll: "Les plus vieux de tous",
     homeAllSpecies: (n) => `Les ${n} espèces`,
     homeFavH: "Nos villes d'arbres préférées",
+    homeVisitorsH: "Nouveautés des visiteurs",
     homeOldestShelfH: "Les arbres les plus vieux que nous cartographions",
     homeCountriesH: "Pays",
     homeAllCountries: "Tous les pays",
@@ -3236,6 +3245,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeOldestOfAll: "すべての中で最も古い木",
     homeAllSpecies: (n) => `${n}種すべて`,
     homeFavH: "お気に入りの木の街",
+    homeVisitorsH: "訪れた人の新着",
     homeOldestShelfH: "私たちが地図に載せた最も古い木",
     homeCountriesH: "国",
     homeAllCountries: "国一覧",

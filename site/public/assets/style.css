@@ -1416,6 +1416,21 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
 .shelf-now { position: absolute; top: 10px; left: 10px; background: #F3E4C3; color: #8A6414; font-size: 10.5px; font-weight: 700; border-radius: 999px; padding: 3px 10px; }
 .shelf-card b { display: block; font-size: 15px; font-weight: 800; line-height: 1.3; }
 .shelf-meta { display: block; font-size: 12.5px; color: var(--ink-mid); margin-top: 2px; }
+/* New from visitors (2026-11-06): the shelf card plus the app's creator line,
+   a 16px avatar and the name. The card is a column and the line sits at its
+   foot, so every name in the row stands on one height whether the tree's
+   name took one line or two (Hidde, same day). */
+.nfv-card { display: flex; flex-direction: column; }
+.nfv-tree { display: block; flex: 1 0 auto; text-decoration: none; color: inherit; }
+.nfv-who { display: flex; align-items: center; gap: 5px; min-height: 30px; margin-top: 3px; padding: 0;
+  font: inherit; font-size: 12px; font-weight: 500; color: var(--ink-mid); text-decoration: none;
+  background: none; border: 0; text-align: left; cursor: default; }
+a.nfv-who, button.nfv-who { cursor: pointer; }
+a.nfv-who:hover .nfv-name, button.nfv-who:hover .nfv-name { text-decoration: underline; }
+.nfv-av { flex: none; width: 16px; height: 16px; border-radius: 50%; overflow: hidden; display: inline-flex;
+  align-items: center; justify-content: center; background: var(--moss-light); color: var(--moss); font-size: 9px; font-weight: 700; }
+.nfv-av img { width: 100%; height: 100%; object-fit: cover; }
+.nfv-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 @media (max-width: 800px) {
   .shelf { padding: 1.2rem var(--page-pad) 0.4rem; }
   .shelf-head { align-items: center; gap: 0.75rem; }

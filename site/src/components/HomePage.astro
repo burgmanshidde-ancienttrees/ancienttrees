@@ -40,8 +40,10 @@ const homeVariants = Object.fromEntries(translatedLanguages().map((l) => [l, `/$
 // actually renders, not what an unused variable suggests it might.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../lib/trees";
-import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX, cityFaceTree, faceTreesOf } from "../lib/images";
+import { cityIsRenderable, renderableTrees, slugify, mapTrees, cityIsOnMap, treeHasPage, treeSlugsForCity, type CityEntry } from "../lib/trees";
+import { usablePhoto, imgSrcset, imgSrcsetAttrs, photoWidth, MIN_CARD_PX, cityFaceTree, faceTreesOf, thumbUrl } from "../lib/images";
+import { placeHasPage, exploreAt } from "../lib/place-page";
+import { visitorsRowJs } from "../lib/visitors-row-js";
 import { speciesCommon, COUNTRY_MIN_CITIES } from "../lib/species";
 import { belongsInCityIndex } from "../lib/city-index";
 import { groupTreesByPark, parkGroupKey, parkPageIsAllowed, parkTitle } from "../lib/parks";
@@ -345,6 +347,30 @@ const favShelf =
       `<div class="shelf-row shelf-row-wide">${favCards.slice(0, 10).join("")}</div></section>`
     : "";
 
+// --- New from visitors (Hidde, 2026-11-06), the app's Discover row ---
+// The row itself is filled in the browser from the server (lib/visitors-row-js.ts);
+// here only what each tree looks like, for the trees that carry a visitor's
+// photograph. A tree without a page of its own (app-first.ts) opens its
+// place's map on its card, or the explore map where the place has no page.
+const visitorCards: Record<string, { n: string; c: string; u: string; p: string }> = {};
+for (const c of (await getCollection("cities")).filter(cityIsOnMap)) {
+  const slugs = treeSlugsForCity(c);
+  const placePage = placeHasPage(c.id, renderableTrees(c).length);
+  for (const t of mapTrees(c)) {
+    const all = [t.photo, ...((t as any).photos ?? [])];
+    if (!all.some((p: any) => p?.source === "contributor")) continue;
+    const ph = usablePhoto(t);
+    if (!ph?.url) continue;
+    const href = treeHasPage(t)
+      ? treeHref(c.id, slugs[t.id])
+      : placePage
+        ? `${cityHref(lang, c.id)}#tree=${encodeURIComponent(t.id)}`
+        : exploreAt(t.location.latitude, t.location.longitude);
+    visitorCards[t.id] = { n: t.name, c: c.data.city, u: href, p: thumbUrl(ph.url, 500) };
+  }
+}
+const visitorsData = JSON.stringify(visitorCards).replace(/</g, "\\u003c");
+
 // --- Countries, species and parks shelves ---
 // Hidde, 2026-08-21: the favourites shelf (five across, scrolling) reads
 // better than the four-card grids below it, so every shelf below the fold is
@@ -458,7 +484,7 @@ const collectedSpecies = [...lit, ...dim]
 const graph = SITE_SCHEMA;
 const headExtra = ldScript(graph);
 const heroImg = imgSrcset(HERO_PHOTO_URL, [1200, 2000, 2800], "100vw");
-const scripts = searchWidgetJs(lang);
+const scripts = searchWidgetJs(lang) + visitorsRowJs(u.noteVisitor);
 ---
 <Base title={title} description={description} canonical={canonical} lang={lang} ogType="website" headExtra={headExtra + "\n" + hreflangSet("/", homeVariants)}>
 <div class="home-hero poster">
@@ -514,6 +540,12 @@ const scripts = searchWidgetJs(lang);
 <section class="hero-sub">
   <p>{u.homeSub}</p>
 </section>
+{/* NEW FROM VISITORS: hidden until the browser has four tiles to show. */}
+<section class="shelf nfv" id="nfv" hidden>
+  <div class="shelf-head"><h2>{u.homeVisitorsH}</h2></div>
+  <div class="shelf-row shelf-row-wide"></div>
+</section>
+<script type="application/json" id="nfv-data" set:html={visitorsData}></script>
 <Fragment set:html={favShelf} />
 <section class="home-acts">
   <div class="home-act">
