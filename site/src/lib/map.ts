@@ -928,7 +928,9 @@ function renderPanel() {
     (trees.length > LIST_MAX ? '<p class="ex-more">' + _esc(WORDS.more) + '</p>' : '');
   panel.classList.add('ex-trees');
   panel.innerHTML = html;
-  if (window.atPaintSaves) { window.atPaintSaves(); }
+  // The hearts only: atPaintSaves refilters the map, which calls this again
+  // (the 2026-11-06 crash, tree-actions-js.ts paintButtons).
+  if (window.atPaintSaveButtons) { window.atPaintSaveButtons(); }
 }
 function _km(a, b) {
   var R = Math.PI / 180, h = Math.pow(Math.sin((b[1] - a[1]) * R / 2), 2) +

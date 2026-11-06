@@ -37,13 +37,21 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
   // The account's answer, held for this page only. Never written to storage.
   var mine = null;
 
-  function paint() {
+  // The hearts alone. /explore's trees list paints with this, never with
+  // paint(): paint() refilters the map, the refilter redraws that list, and
+  // the list painting with paint() again was an endless loop that crashed the
+  // tab (Chrome "Error code 5", 2026-11-06).
+  function paintButtons() {
     document.querySelectorAll('.save-btn').forEach(function(b) {
       var on = Boolean(mine && mine[b.dataset.tree]);
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
       b.querySelector('span').textContent = on
         ? (b.dataset.lSaved || 'Saved') : (b.dataset.lSave || 'Save');
     });
+  }
+  window.atPaintSaveButtons = paintButtons;
+  function paint() {
+    paintButtons();
     // The city map's pins wear the same heart (2026-09-12). One answer, two
     // paintings, so a save on a card lights its pin without a reload.
     if (window.atPaintPinFaves) window.atPaintPinFaves();
