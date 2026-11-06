@@ -634,6 +634,7 @@ map.on('moveend', function() {
 // town fills, and the sheet asks for its first tree under its name. Read after
 // the timezone guess above so the town wins.
 var PLACE = null;
+var FOCUS = null;
 // On a phone the sheet covers the lower map: the town goes in the middle of
 // what is still visible, measured the way the tree card measures it.
 function _goPlace() {
@@ -665,6 +666,10 @@ window.addEventListener('hashchange', _placeFromHash);
 // the whole spread of the country or city in view, never its page. Returns
 // false for a place this map holds no tree of, and the search then navigates.
 window.atMapPlace = function(kind, key) {
+  // The place searched for leads the list under the map until the visitor
+  // moves the map themselves (Hidde, 2026-11-06: searching United Kingdom
+  // fitted the Benelux in too, and its cities filled the ten cards).
+  FOCUS = {kind: kind, key: key};
   var slugs = {};
   CITIES.forEach(function(c) {
     if (kind === 'country' ? c.country === key : c.url === key) { slugs[c.url] = 1; }
@@ -769,6 +774,11 @@ function renderPanel() {
   if (!panel) return;
   var b = map.getBounds();
   var cities = CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
+  if (FOCUS) {
+    var _f = function(c) { return (FOCUS.kind === 'country' ? c.country === FOCUS.key : c.url === FOCUS.key) ? 0 : 1; };
+    // Array.prototype.sort is stable, so each group keeps its ranking.
+    cities = cities.slice().sort(function(a, z) { return _f(a) - _f(z); });
+  }
   var anyTree = DATA.features.some(function(f) { var g = f.geometry.coordinates; return g[0] !== null && g[1] !== null && b.contains(g); });
   if (!anyTree) { panel.innerHTML = emptyHere(); return; }
   if (!cities.length) {
@@ -819,6 +829,10 @@ if (panel) panel.addEventListener('click', function(e) {
   var a = e.target.closest ? e.target.closest('[data-ev]') : null;
   if (a) at.track(a.getAttribute('data-ev'), 'map');
 });
+// A drag or a zoom by the visitor ends the search's focus; the fit itself
+// carries no originalEvent, so it keeps it.
+map.on('dragstart', function() { FOCUS = null; });
+map.on('zoomstart', function(e) { if (e && e.originalEvent) { FOCUS = null; } });
 map.on('moveend', renderPanel);
 map.on('load', renderPanel);
 renderPanel();
