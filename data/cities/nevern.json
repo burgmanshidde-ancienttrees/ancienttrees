@@ -1,0 +1,66 @@
+{
+  "city": "Nevern",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Nevern maps one tree, and people come for the colour of it. The bleeding yew, second on the right of the avenue to St Brynach's church, weeps a dark red-brown sap from a broken stub, and the Ancient Yew Group says it draws thousands of visitors a year. The avenue itself is of no great age. The churchyard's older treasures are a carved Celtic cross of around the year 1000 and an ogham-inscribed stone. Free, near Newport, Pembrokeshire.",
+  "meta_description": "The Bleeding Yew of Nevern weeps dark red sap in St Brynach's churchyard, Pembrokeshire, beside a Celtic cross. Free to visit, near Newport.",
+  "question_meta": "Nevern's most famous tree is the Bleeding Yew in St Brynach's churchyard; its age is not documented, though the avenue is said to be 600 to 700.",
+  "question_answer": "Nevern's mapped tree is the Bleeding Yew, a European Yew (Taxus baccata) in St Brynach's churchyard near Newport, Pembrokeshire, the second yew on the right of the avenue to the church door. It weeps a dark red-brown sap from a broken stub. Its age is not documented.",
+  "question_context": "The Ancient Yew Group does not class the Nevern yews as ancient. It lists them as of no great age, included only because the bleeding yew draws thousands of visitors each year. The avenue is sometimes put at 600 to 700 years, a figure we could not trace to a firm source, and no girth has been recorded for the bleeding tree. Legends fill the gap. One ties the red sap to the Crucifixion; another says the tree will bleed until a Welsh prince rules again from Nevern Castle, on the hill above the village. The Pembrokeshire Coast National Park gives the tree its own page among its land of legends. St Brynach's has older witnesses than any of its yews. A carved Celtic cross from the late tenth or early eleventh century stands in the churchyard with the Vitalianus stone, inscribed in Latin and ogham, and the church itself dates from around 1380. Nevern is about 3 km east of Newport, with buses on the Fishguard to Cardigan road passing the turning.",
+  "hero_tree_id": "nvn_001",
+  "oldest_tree_id": "nvn_001",
+  "faq": [
+    {
+      "q": "Why does the Nevern yew bleed?",
+      "a": "It oozes a dark red-brown sap from a broken stub on its trunk. Legend gives reasons, from the Crucifixion to a lost Welsh prince; the National Park asks the same question on its page about the tree."
+    },
+    {
+      "q": "How old is the Bleeding Yew?",
+      "a": "Not documented. The avenue is sometimes put at 600 to 700 years, but the Ancient Yew Group calls these yews of no great age."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open churchyard of St Brynach's, Nevern, about 3 km from Newport, Pembrokeshire."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nvn_001",
+      "name": "Bleeding Yew of Nevern",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented, the avenue is put at roughly 600 to 700 years",
+      "age_basis": "derived",
+      "location": {
+        "address": "St Brynach's churchyard, Nevern, Newport, Pembrokeshire SA42 0NF",
+        "latitude": 52.02548,
+        "longitude": -4.79519,
+        "neighbourhood": "Nevern"
+      },
+      "location_site": {
+        "name": "St Brynach's churchyard",
+        "radius_m": 30
+      },
+      "story": "The second yew on the right as you walk up to St Brynach's church weeps a dark red-brown sap from a broken stub, and thousands of people come every year to see it. The Ancient Yew Group is blunt about the avenue it stands in. These yews are of no great age, it says, and are on its list only because of the bleeding one.\n\nWhy it bleeds is the question the Pembrokeshire Coast National Park asks on its own page about the tree, along with when it will stop. Legend has its answers. One links it to the Crucifixion. Another says it will bleed until a Welsh prince rules again from Nevern Castle, on the hill above the village.\n\nThe churchyard has older witnesses than the tree. A carved Celtic cross dates from the late tenth or early eleventh century, and the Vitalianus stone, inscribed in Latin and ogham, stands nearby. The church itself was built around 1380 on the site of St Brynach's early foundation.\n\nThe avenue is sometimes put at 600 to 700 years, a figure we could not trace to a firm source, and nobody has recorded this tree's girth. If you can add either, tell us.\n\nNothing else in the churchyard looks like it.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/nevern/",
+        "https://www.pembrokeshirecoast.wales/about-the-national-park/culture-and-heritage/land-of-legends/nevern/"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Nevern (Tim Hills, 1999)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/nevern/"
+      },
+      "access": "Free. Open churchyard of St Brynach's, Nevern.",
+      "transport": "No railway. Nevern is about 3 km east of Newport, Pembrokeshire; buses on the Fishguard to Cardigan road pass the turning, check Traveline Cymru. The coastal Poppit Rocket runs in summer.",
+      "how_to_recognise": "You can recognise it by the dark red sap running from a broken stub on its trunk. It is the second yew on the right of the avenue leading to the church door at St Brynach's.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/A_Bleeding_Yew%2C_Nevern_Churchyard_-_geograph.org.uk_-_7317434.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Jeff Gogarty",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:A_Bleeding_Yew,_Nevern_Churchyard_-_geograph.org.uk_-_7317434.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

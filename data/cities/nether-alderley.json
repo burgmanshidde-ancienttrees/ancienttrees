@@ -1,0 +1,70 @@
+{
+  "city": "Nether Alderley",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Nether Alderley's yew once had an ancient stone font standing in the grass beneath it, according to an account of 1850. It grows south-south-east of St Mary's church, opposite Nether Alderley Mill, a male tree whose trunk keeps its girth a long way up, with great rolls of wood round the stumps of old branches. The parish calls it 1,200 years old; the Ancient Yew Group gives no age. A Saxon preaching cross stands in the same grounds. Free and open.",
+  "meta_description": "The Nether Alderley yew beside St Mary's church, opposite the old mill, near Macclesfield: an 18-foot veteran the parish calls 1,200 years old.",
+  "question_meta": "Nether Alderley's oldest tree is the yew south-south-east of St Mary's church; the parish says 1,200 years, unmeasured.",
+  "question_answer": "Nether Alderley's oldest mapped tree is the male European Yew (Taxus baccata) south-south-east of St Mary's church on Church Lane, near Macclesfield in Cheshire. The parish and the church archivist call it 1,200 years old. The Ancient Yew Group gives no age, only a size class it links with trees likely above 500 years.",
+  "question_context": "The girth usually quoted, 18 feet or about 5.5 metres, comes from Allen Meredith's gazetteer in The Sacred Yew of 1994; Tim Hills of the Ancient Yew Group did not measure it when he visited in 1999. He described a trunk that holds its large girth for a considerable height, a hole about two and a half feet up showing a stem growing inside, and big rolls of wood flowing round sawn-off branches. The leafy growth was healthy that year. Two younger yews stand beside it, one tall and straight and perhaps layered from the old tree, the other a fallen and twisted female. An account of 1850 found an ancient stone font under the old yew, and the church's own history says the old font lay buried by it. In 1938 Notes and Queries called it a veteran with great spreading branches. The 1,200-year figure is on the parish page and in Macclesfield Live, without a stated basis, and Wikipedia repeats it unsourced.",
+  "hero_tree_id": "nal_001",
+  "oldest_tree_id": "nal_001",
+  "faq": [
+    {
+      "q": "How old is the Nether Alderley yew?",
+      "a": "The parish calls it 1,200 years old, without saying how that was reached. The Ancient Yew Group gives no age, and its size class suggests more than 500 years."
+    },
+    {
+      "q": "What was found under it?",
+      "a": "An account of 1850 describes an ancient stone font standing under the yew, and the church says the old font once lay buried by the tree."
+    },
+    {
+      "q": "Can you visit for free?",
+      "a": "Yes. St Mary's churchyard on Church Lane, opposite Nether Alderley Mill, is open."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nal_001",
+      "name": "Nether Alderley Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 1,000 years (the church says 1,200)",
+      "age_min": 500,
+      "age_max": 1200,
+      "girth_cm": 549,
+      "location": {
+        "address": "St Mary's churchyard, Church Lane, Nether Alderley, Macclesfield",
+        "latitude": 53.2819,
+        "longitude": -2.23893,
+        "neighbourhood": "Nether Alderley, Cheshire East"
+      },
+      "location_site": {
+        "name": "St Mary's churchyard, Nether Alderley",
+        "radius_m": 30
+      },
+      "story": "An account from 1850 found an ancient stone font standing under the old yew at St Mary's, Nether Alderley, out in the churchyard. The church's own history says the font once lay buried by the tree.\n\nThe parish calls it the 1,200-year-old yew, and the church archivist told Macclesfield Live it dates back 1,200 years. Neither says what the number rests on. The Ancient Yew Group gives it no age, only a size class of five to seven metres round, which by the Group's own reckoning usually means a tree above 500 years.\n\nThe girth is an old figure, 18 feet or about 5.5 metres, from Allen Meredith's gazetteer of 1994. Tim Hills of the Group did not measure it when he visited in 1999, but he described a male tree whose trunk holds its girth a long way up, great rolls of wood flowing round the stumps of sawn-off branches, and a hole about two and a half feet up through which a stem shows growing inside. In 1938 Notes and Queries called it a veteran with great spreading branches.\n\nTwo younger yews keep it company. One is tall and straight and may have layered from the old tree; the other has fallen and twisted. The church also points to a Saxon preaching cross in its grounds.\n\nSt Mary's is on Church Lane, opposite Nether Alderley Mill. Our latest dated record of the yew is that 1999 visit, so tell us how it looks.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/nether-alderley/",
+        "https://www.ancient-yew.org/userfiles/file/Nether%20Alderley%202019.pdf",
+        "https://www.achurchnearyou.com/church/7991/about-us/",
+        "https://www.macclesfield-live.co.uk/news/local-news/hidden-gem-is-a-treasure-2538169.amp",
+        "https://en.wikipedia.org/wiki/St_Mary%27s_Church,_Nether_Alderley"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Nether Alderley",
+        "url": "https://www.ancient-yew.org/yew_tree_database/nether-alderley/"
+      },
+      "access": "Free. Open churchyard of St Mary's on Church Lane, opposite Nether Alderley Mill.",
+      "transport": "The nearest railway station is Alderley Edge, a few kilometres away, and the A34 runs past the village. Check the local bus operator for buses.",
+      "how_to_recognise": "You can recognise it by the great rolls of wood round its sawn-off branches and a small hole low on the trunk with a stem inside. It stands south-south-east of St Mary's church, two younger yews beside it.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

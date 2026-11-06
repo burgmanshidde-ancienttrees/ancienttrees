@@ -1,0 +1,66 @@
+{
+  "city": "Broadwindsor",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Broadwindsor, between Beaminster and Crewkerne in west Dorset, has a yew of about 15 stems rising from a raised mound east of the church of St John the Baptist. A photograph from 1867, the time of the church's restoration, shows what may be a stump in its place, which suggests the tree was once cut back and came back many times over. The churchyard is open and free. The bus is infrequent, so most visitors drive.",
+  "meta_description": "Victorian restorers may have cut the Broadwindsor yew to a stump. It came back as about 15 stems on a mound east of the church, 10.34 metres round.",
+  "question_meta": "Broadwindsor's oldest tree is a multi-stemmed yew on a mound east of St John the Baptist's church, in the Ancient Yew Group's top class at 10.34 metres.",
+  "question_answer": "The oldest tree in Broadwindsor is the yew east of the church of St John the Baptist, about 15 stems on a raised mound with a combined girth of 10.34 metres at ground level. The Ancient Yew Group places it in its top class of seven metres and over. Nobody has dated it.",
+  "question_context": "The Broadwindsor yew is a puzzle the Ancient Yew Group has left open. A photograph taken in 1867, during the church's restoration, shows a stump-like tree where it stands, and the Group asks whether the yew was cut back to a stump at that time. What grows there now is a cluster of about 15 stems on a mound east of the church, counted in 1998. Wondermondo gives each trunk as between 0.9 and 1.8 metres round and the mound as about 1.2 metres high. The girth of 10.34 metres is taken round the whole mass at ground level, so it overstates any one stem, and a 1994 book gave 33 feet. The Group classes yews over seven metres as ancient, an estimate from size rather than a date. The tree is male. Its health was recorded as below average in 2015, and it was photographed again in 2024. The church of St John the Baptist dates from about 1180.",
+  "hero_tree_id": "bwr_001",
+  "oldest_tree_id": "bwr_001",
+  "faq": [
+    {
+      "q": "Why does the Broadwindsor yew have so many stems?",
+      "a": "It may have been cut back to a stump during the church's restoration in 1867 or 1868 and regrown as about 15 stems, though the Ancient Yew Group treats this as an open question."
+    },
+    {
+      "q": "Is there public transport to Broadwindsor?",
+      "a": "There is an infrequent bus; check before you travel. Most visitors drive."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bwr_001",
+      "name": "Broadwindsor Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 1500,
+      "age_basis": "derived",
+      "girth_cm": 1034,
+      "location": {
+        "address": "St John the Baptist Church, Broadwindsor, Dorset",
+        "latitude": 50.82065,
+        "longitude": -2.79951,
+        "neighbourhood": "Broadwindsor"
+      },
+      "location_site": {
+        "name": "St John the Baptist Church churchyard",
+        "radius_m": 30
+      },
+      "story": "Victorian restorers may have cut this yew down to a stump, and it answered with fifteen trunks. A photograph from 1867, the time of the church's restoration, shows something that looks like a stump where the tree stands, and the Ancient Yew Group asks the obvious question without being able to settle it. What grew back is certainly not a single trunk. In 1998 the Group counted about 15 stems rising from a raised mound east of the church, each between 0.9 and 1.8 metres round, by Wondermondo's figures.\n\nMeasured around the whole mass at ground level, it comes to 10.34 metres. That reads as a giant, but it is a girth of many stems together, so it overstates any one of them. The Group puts yews of this size in its top class, ancient at seven metres and over, and that is an estimate from size, not a date.\n\nIt is a male tree, and it has had a hard time lately. Its health was recorded as below average in 2015, and it was photographed again in 2024. The church of St John the Baptist dates from about 1180, and the mound the yew grows on stands about 1.2 metres high.\n\nIf the stump story is true, this is what a yew does when you take it to the ground. It comes back, many times over.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/broadwindsor/",
+        "https://www.wondermondo.com/yew-at-broadwindsor-church/",
+        "https://heritage.dorsetcouncil.gov.uk/Monument/MDO26743"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 301 (Tim Hills 1998)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/broadwindsor/"
+      },
+      "access": "Free. Open public churchyard; yew on a prominent mound E of the church.",
+      "transport": "Village between Beaminster and Crewkerne, Dorset; infrequent bus (check). Drive.",
+      "how_to_recognise": "You can recognise it by the cluster of about 15 stems rising together from a raised mound. It stands east of the church of St John the Baptist.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Girth 1034cm at ground (AYG tree 301); stems on mound counted: about 15 trunks in 1998, trunk circumferences 0.9 to 1.8m (Wondermondo), mound about 1.2m (Wondermondo) or 4ft (2015). Possibly cut back to a stump at the 1867/68 restoration (AYG asks the question, a photo of 1867 shows a stump-like tree). Below average health 2015, photographed 2024. Male. Church c1180. Pin: AYG grid ref ST4377702650 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; AYG class Ancient 7m+, girth 1034cm at ground (a 1994 book gave 33ft); but this is a multi-stem mass on a mound, so girth overstates one trunk."
+    }
+  ]
+}

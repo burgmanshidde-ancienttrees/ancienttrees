@@ -1,0 +1,65 @@
+{
+  "city": "Kemble",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Kemble's old yew grows only about two metres from the wall of All Saints church, and Kemble station, with direct services from London Paddington and Swindon, is about a kilometre away, so this is an ancient yew you can reach by train. The Ancient Yew Group classes it as ancient on its girth of about 4.9 metres. The churchyard is open and free.",
+  "meta_description": "Kemble's ancient churchyard yew grows two metres from All Saints and a kilometre from the station, and old records make it look larger than it is.",
+  "question_meta": "Kemble's oldest tree is the yew at All Saints church, about 4.9 metres round and several hundred years old by the Ancient Yew Group's girth bands.",
+  "question_answer": "The oldest tree in Kemble is the yew in All Saints churchyard, growing about two metres from the church. Its modern girth is about 490 centimetres, which the Ancient Yew Group classes as ancient. The age estimate from that size is broad, several hundred years, roughly 300 to 600, with no dating behind it.",
+  "question_context": "If you go back through the records, the Kemble yew seems to shrink. A Wiltshire archaeological journal gave 18 feet 6 inches, taken at six feet up, in 1894. Arthur Mee had 20 feet in 1938. Tim Hills measured 15 feet 8 in 1998 and 16 feet 1 in 2011, and Peter Norton found 16 feet 1 again at three and a half feet in 2015. The tree has not lost four feet of trunk. The older figures were taken at different heights, and on a yew the height you measure at changes the result a great deal. The modern readings agree at about 4.9 metres, and that is the figure we use. The Ancient Yew Group puts yews of four to five metres in its ancient class, and the age that implies is broad, somewhere between about 300 and 600 years. The Group's site file and photographs are dated 2026, so it is standing. It grows close to the church, about two metres from the wall.",
+  "hero_tree_id": "kmb_001",
+  "oldest_tree_id": "kmb_001",
+  "faq": [
+    {
+      "q": "Can I reach the Kemble yew by train?",
+      "a": "Yes. Kemble station, with direct trains from London Paddington and Swindon, is about a kilometre from All Saints churchyard."
+    },
+    {
+      "q": "Why do old records give a bigger girth?",
+      "a": "The 1894 and 1938 figures were measured at different heights on the trunk. Modern measurements, taken in 1998, 2011 and 2015, agree at about 4.9 metres."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kmb_001",
+      "name": "The Kemble churchyard yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "several hundred years",
+      "age_min": 300,
+      "age_max": 600,
+      "age_basis": "derived",
+      "girth_cm": 490,
+      "location": {
+        "address": "All Saints Church, Kemble, Gloucestershire GL7 6AD",
+        "latitude": 51.6715,
+        "longitude": -2.016,
+        "neighbourhood": "Kemble"
+      },
+      "location_site": {
+        "name": "All Saints churchyard, Kemble",
+        "radius_m": 30
+      },
+      "story": "On paper this yew has been shrinking for a century. In 1894 a Wiltshire archaeological journal recorded 18 feet 6 inches. In 1938 Arthur Mee gave 20 feet. Tim Hills measured 15 feet 8 in 1998, and 16 feet 1 in 2011, which Peter Norton matched in 2015. The tree has not lost four feet. The early figures were taken at different heights on the trunk, and where you hold the tape on a yew changes everything. The modern readings agree at about 4.9 metres, and that is the number we use.\n\nIt grows just two metres from the wall of All Saints, nearer the building than you would think a tree of this size could stand. The Ancient Yew Group's girth bands class a yew of this size as ancient. On that basis the estimate is broad, several hundred years, somewhere between about 300 and 600, with no dating behind it.\n\nYou can reach it without a car. Kemble station, with direct trains from London Paddington and Swindon, is about a kilometre from the churchyard, and the yew is the tree pressed against the church.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/kemble/",
+        "https://ancient-yew.org/wp-content/uploads/2024/11/Gloucestershire-girth-grid-v2.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree 531 (Ancient 4-5 m)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/kemble/"
+      },
+      "access": "Open churchyard (Ancient Yew Group lists access as public; church parochial church council ground). Free, no opening hours.",
+      "transport": "Kemble village, close to Kemble railway station (about 1 km) (direct trains from London Paddington and Swindon).",
+      "how_to_recognise": "You can recognise it by how close it grows to the church, only about two metres from the wall of All Saints. It stands in the churchyard in the middle of the village, about a kilometre from Kemble station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "AYG (Tim Hills, 28 Sep 1998): yew grows only 2 m from the building; 490 cm at 110 cm (2011 Hills); girth grid: 18 ft 6 in at 6 ft (1894, Wiltshire arch.), 20 ft (1938 Mee), 15 ft 8 in (1998 Hills), 16 ft 1 in (2011 Hills), 16 ft 1 in at 3 ft 6 in (2015 Norton). Earlier figures (1894, 1938) are larger and measured at different heights; the modern ones are consistent at about 490 cm (girth_cm 490 = AYG 2011 figure at 110 cm). AYG site file and photos dated 2026 (alive). AYG band 4-5 m = ancient; derived age broad. Source AYG with the diocese-wide grid: flagged 'one source'. Position AYG grid ST98929698 converted; approximate. Ancient Yew Group girth grid for Gloucestershire: https://ancient-yew.org/wp-content/uploads/2024/11/Gloucestershire-girth-grid-v2.pdf"
+    }
+  ]
+}

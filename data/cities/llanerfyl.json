@@ -1,0 +1,66 @@
+{
+  "city": "Llanerfyl",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Llanerfyl maps one tree: a yew in St Erfyl's churchyard that looks like four trunks standing in a ring and is reported to be a single tree, 10.67 metres around all four. Lewis's Topographical Dictionary called it one of the finest yews in Wales, and an 1872 account named it the mother yew of Montgomeryshire. Legend says it grew from St Padarn's staff. A fifth or sixth century stone found beneath it is now in the church. Free.",
+  "meta_description": "The Llanerfyl Yew in Powys: four trunks in a ring, 10.67 metres around, said to be one tree grown from St Padarn's staff. Free churchyard.",
+  "question_meta": "Llanerfyl's oldest tree is the yew in St Erfyl's churchyard, four trunks in a ring reported to be one tree; its age is not measured.",
+  "question_answer": "Llanerfyl's oldest and only mapped tree is the Llanerfyl Yew, a European Yew (Taxus baccata) in St Erfyl's churchyard on the A458 west of Welshpool. It grows as four trunks in a ring, 10.67 metres around all four. The age often quoted, about 1,400 years, rests on legend rather than measurement.",
+  "question_context": "Its trunks stand in a circle inside a low wall, three of them recorded as female and one as male, and DNA work is reported to show that the trunks are one organism. The Ancient Yew Group recorded it as a single ancient tree in 1998. It has been admired for centuries. Lewis's Topographical Dictionary of Wales called it one of the finest yew-trees in the principality, and an 1872 account named it the mother yew of Montgomeryshire. Its legend says St Padarn left his staff, Cyrwen, here in the late sixth or early seventh century, and the yew grew from it. That story is where the 1,400-year figure comes from, so we call the tree ancient and leave the number open. Something old certainly lay beneath it. In 1915 a stone inscribed in the fifth or sixth century was removed from under the yew, and it is on display inside the church. Buses along the A458 are infrequent, so most visitors come by car, about half an hour from Welshpool.",
+  "hero_tree_id": "lef_001",
+  "oldest_tree_id": "lef_001",
+  "faq": [
+    {
+      "q": "How old is the Llanerfyl Yew?",
+      "a": "Not measured. The figure of about 1,400 years comes from the legend of St Padarn's staff, so the honest answer is ancient, age unknown."
+    },
+    {
+      "q": "Is it one tree or four?",
+      "a": "It grows as four trunks in a ring, but DNA work is reported to show they are a single organism, 10.67 metres around all four."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open churchyard of St Erfyl's in the village of Llanerfyl, on the A458."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lef_001",
+      "name": "Llanerfyl Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 1,400 years (popular claim)",
+      "age_basis": "derived",
+      "girth_cm": 1067,
+      "location": {
+        "address": "St Erfyl's churchyard, Llanerfyl, Welshpool, Powys SY21 0EN",
+        "latitude": 52.67699,
+        "longitude": -3.43007,
+        "neighbourhood": "Llanerfyl"
+      },
+      "location_site": {
+        "name": "St Erfyl's churchyard",
+        "radius_m": 30
+      },
+      "story": "What looks like four yews standing in a circle is reported to be a single tree. The trunks at St Erfyl's measure 10.67 metres around all four together, and DNA work is said to show they are one organism, even though three of the stems are recorded as female and one as male.\n\nIt has been admired for a long time. Lewis's Topographical Dictionary of Wales called it one of the finest yew-trees in the principality, and an account of 1872 named it the mother yew of Montgomeryshire. Its legend is older still. St Padarn is said to have left his staff, Cyrwen, here in the late sixth or early seventh century, and the yew grew from it.\n\nThe ground beneath it held something real. In 1915 a stone inscribed in the fifth or sixth century was taken from under the tree, and it is now on display inside the church. A low wall circles the yew today.\n\nThe age you will see quoted, about 1,400 years, rests on the legend and on a blog rather than any measurement, so we call it ancient and leave the number open. If you know of better evidence, tell us. Llanerfyl is a small village on the A458 west of Welshpool, and the churchyard is the reason to stop.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/llanerfyl/",
+        "https://www.wondermondo.com/llanerfyl-yew/"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Llanerfyl (Tim Hills, 1998)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/llanerfyl/"
+      },
+      "access": "Free. Open churchyard of St Erfyl's, Llanerfyl.",
+      "transport": "Llanerfyl is on the A458 west of Welshpool, about 30 minutes by car. Buses along the A458 are few; check Traveline Cymru before relying on one.",
+      "how_to_recognise": "You can recognise it by its four trunks standing in a ring inside a low wall. It stands in St Erfyl's churchyard in the centre of Llanerfyl.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

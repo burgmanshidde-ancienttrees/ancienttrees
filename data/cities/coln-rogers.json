@@ -1,0 +1,66 @@
+{
+  "city": "Coln Rogers",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Coln Rogers is a small village in the Coln valley north-east of Cirencester, and its church of St Andrew still has Saxon walls. In the churchyard, south-west of the building, grows a yew 5.74 metres round, which the Ancient Yew Group classes as ancient. Its measurements have barely moved between two recorders fourteen years apart. There is no railway, so come by car or bike, and the churchyard is open and free.",
+  "meta_description": "Beside the partly Saxon church of St Andrew in the Coln valley grows a yew 5.74 metres round, likely over 500 years old, its girth steady for 14 years.",
+  "question_meta": "Coln Rogers' oldest tree is the yew beside St Andrew's Saxon church, 5.74 metres round and likely over 500 years old by the Ancient Yew Group's bands.",
+  "question_answer": "The oldest tree in Coln Rogers is the yew south-west of St Andrew's church. The Ancient Yew Group records it at 574 centimetres round, which places it in their ancient class, likely over 500 years old. Nobody has dated it, so that age is an estimate from size.",
+  "question_context": "St Andrew's at Coln Rogers is a Grade I church, and parts of it are Saxon, from the 11th century on Wikipedia's dating. The yew in its churchyard has been measured by two people. Tim Hills visited in September 1999 and put it between 18 feet 6 and 19 feet 10 inches. Peter Norton came in 2013 and found 18 feet 10. The Ancient Yew Group's working figure is 574 centimetres, taken 30 centimetres above the ground. Across fourteen years the tree is essentially unchanged in size, which is what you would expect of an old yew and also why the tape is a poor clock. The Group places yews of five to seven metres in its ancient category, likely more than 500 years old, and that is the band we give. The pleasure here is the pairing of a Saxon church and an ancient yew in a quiet valley, a combination that takes a little finding and rewards the drive.",
+  "hero_tree_id": "cnr_001",
+  "oldest_tree_id": "cnr_001",
+  "faq": [
+    {
+      "q": "Where is the yew at Coln Rogers?",
+      "a": "South-west of St Andrew's church, in its small churchyard. The church is Grade I and partly Saxon."
+    },
+    {
+      "q": "Can I get to Coln Rogers by public transport?",
+      "a": "There is no railway, and we found no regular bus. A car, taxi or bike from Cirencester is the practical route."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cnr_001",
+      "name": "The Coln Rogers churchyard yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "likely over 500 years",
+      "age_min": 500,
+      "age_max": 1000,
+      "age_basis": "derived",
+      "girth_cm": 574,
+      "location": {
+        "address": "St Andrew's Church, Coln Rogers, Gloucestershire GL54 3JZ",
+        "latitude": 51.7857,
+        "longitude": -1.8737,
+        "neighbourhood": "Coln Rogers"
+      },
+      "location_site": {
+        "name": "St Andrew's churchyard, Coln Rogers",
+        "radius_m": 30
+      },
+      "story": "The church beside this yew still has walls the Saxons built. St Andrew's at Coln Rogers is a small Grade I church in the Coln valley, and parts of it are Saxon, from the 11th century by Wikipedia's dating. The yew grows to its south-west, in the small churchyard.\n\nWhat is striking about the tree is how little its numbers move. Tim Hills put it at between 18 feet 6 and 19 feet 10 inches when he visited in September 1999. Peter Norton came back in 2013 and found 18 feet 10. The Ancient Yew Group's current figure is 574 centimetres at 30 centimetres off the ground. Fourteen years and two recorders, and the tree is essentially the size it was. Measuring an old yew tells you how big it is far better than how old.\n\nThat is why the age here is a band, not a date. The Group's girth classes place a yew between five and seven metres in the ancient category, likely over 500 years. Nobody has dated this one, and its exact age is a question we would like answered.\n\nWhat you get on the day is the pairing, a quiet valley church with Saxon stonework and, beside it, a yew the Group counts as ancient.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/coln-rogers/",
+        "https://ancient-yew.org/yew_trees/coln-rogers-367",
+        "https://en.wikipedia.org/wiki/Church_of_St_Andrew,_Coln_Rogers"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree 367 (Ancient 5-7 m)",
+        "url": "https://ancient-yew.org/yew_trees/coln-rogers-367"
+      },
+      "access": "Open churchyard (Ancient Yew Group lists access as public; church parochial church council ground). Free, no opening hours.",
+      "transport": "Coln Rogers, a village in the Coln valley north-east of Cirencester; no railway; car or taxi.",
+      "how_to_recognise": "You can recognise it as the large yew south-west of St Andrew's, the small Grade I church with Saxon walls. It stands in the churchyard on that side of the building.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "AYG (Tim Hills, visited 18 Sep 1999): yew grows to the SW of the church; 574 cm at 30 cm; girth grid: 18 ft 6 in to 19 ft 10 in over 1999 Hills, with 18 ft 10 in in 2013 Norton (two recorders; stable). Site file dated 2019 (alive). Parts of the church are Saxon (AYG); Wikipedia puts the Saxon church in the 11th century. Gloucestershire Places of Worship quotes Kelly's Directory 1923 describing 'a splendid old yew' (seen only in a search summary, not fetched; treat as unconfirmed). AYG band 5-7 m = ancient, likely above 500 years (derived). Source AYG only: flagged 'one source'. Position AYG grid SP08740968 converted; approximate. Ancient Yew Group girth grid for Gloucestershire: https://ancient-yew.org/wp-content/uploads/2024/11/Gloucestershire-girth-grid-v2.pdf"
+    }
+  ]
+}

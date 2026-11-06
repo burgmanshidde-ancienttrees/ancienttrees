@@ -1,0 +1,71 @@
+{
+  "city": "Lorton",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Lorton maps one tree, the yew Wordsworth called the pride of Lorton Vale. George Fox, founder of the Quakers, noted it in 1653; Coleridge was brought to see it in 1799. A storm later broke it in half, and the fallen wood became the Mayor's Chair in Cockermouth. What remains, 4.95 metres round, stands on private ground beside Hope Beck, best seen from the Pound, the village green by Whit Beck, where it has an interpretation board.",
+  "meta_description": "The Lorton Yew, Wordsworth's pride of Lorton Vale, seen from the village green in High Lorton. Storm-broken, disputed in age, free to view.",
+  "question_meta": "Lorton's oldest tree is the Lorton Yew, Wordsworth's pride of Lorton Vale; estimates of its age run from about 500 years to 1,200.",
+  "question_answer": "Lorton's oldest and only mapped tree is the Lorton Yew, a European Yew (Taxus baccata) behind Yew Tree Hall in High Lorton, near Cockermouth in Cumbria. Local sources say at least 1,000 years and the parish history suggests about 1,200, while the Ancient Yew Group's rule of thumb would put its present trunk nearer 500 or 600.",
+  "question_context": "The yew is famous for its visitors. George Fox noted it in 1653, so full of people that he feared they would break it down. Wordsworth named it the pride of Lorton Vale in his poem Yew-Trees and showed it to Coleridge in 1799. A county history of 1816 recorded the trunk at 27 feet, about 8.2 metres, but a storm in the 19th century broke the tree in half, and the wood of the fallen part was made into the Mayor's Chair in Cockermouth. In 2002 the Ancient Yew Group measured what remains at 4.95 metres, a hollow, broken female tree slowly losing branches, which is why its age is so hard to read. It stands on private ground beside Hope Beck, behind the old malt house that is now the village hall. See it from the Pound, the small public green by Whit Beck at the bridge, where the tree has its own interpretation board. A daughter tree, planted in 2004, grows at Crossgates between Low and High Lorton. The seasonal Honister Rambler bus from Keswick serves the village from spring to autumn.",
+  "hero_tree_id": "ltn_001",
+  "oldest_tree_id": "ltn_001",
+  "faq": [
+    {
+      "q": "Can you visit the Lorton Yew?",
+      "a": "You can see it, not touch it. It stands on private ground; the view is from the Pound, the public green by Whit Beck in High Lorton, where it has an interpretation board."
+    },
+    {
+      "q": "How old is the Lorton Yew?",
+      "a": "Estimates differ. Local sources say at least 1,000 years and the parish history about 1,200; the size of today's storm-broken trunk suggests nearer 500 or 600."
+    },
+    {
+      "q": "Why is it famous?",
+      "a": "Wordsworth called it the pride of Lorton Vale, George Fox noted it in 1653, and Coleridge came to see it in 1799."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ltn_001",
+      "name": "The Lorton Yew (Pride of Lorton Vale)",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "at least 1,000 years (local sources; girth suggests less)",
+      "age_min": 500,
+      "age_max": 1200,
+      "girth_cm": 495,
+      "location": {
+        "address": "The Pound, by the bridge over Whit Beck, High Lorton, Cockermouth, Cumbria CA13 9TY (public viewing place; the yew stands on private ground beside it)",
+        "latitude": 54.6178,
+        "longitude": -3.3,
+        "neighbourhood": "High Lorton, Lorton Vale"
+      },
+      "location_site": {
+        "name": "The Pound by Whit Beck, High Lorton",
+        "radius_m": 50
+      },
+      "story": "In 1653 George Fox, the founder of the Quakers, came to Lorton and noted a yew so full of people that he feared they would break it down. Wordsworth called the same tree the pride of Lorton Vale in his poem Yew-Trees, and walked Coleridge out to see it in 1799. It is still here, behind the old malt house that is now the village hall, on the bank of Hope Beck.\n\nIt is much smaller than the tree those men saw. A county history of 1816 gave the trunk as 27 feet round, about 8.2 metres. In the 19th century a storm broke it in half, and the wood of the fallen part was made into the Mayor's Chair in Cockermouth. When the Ancient Yew Group measured what remains in 2002, it was 4.95 metres round, a hollow, broken female tree slowly losing branches.\n\nIts age is disputed. Local sources say at least a thousand years, and the parish's own village history, from the old girth, suggests about 1,200. The yew group's rule of thumb would put a trunk of today's size nearer 500 or 600. Estimates differ, and the storm makes the old measurement hard to use.\n\nThe tree stands on private ground. See it from the Pound, the small public green by Whit Beck at the bridge in High Lorton, where it has its own interpretation board. A daughter tree, planted in 2004, grows at Crossgates, on the road between Low and High Lorton.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_trees/lorton-vale-1137",
+        "https://cockermouth.org.uk/dms-showpage.php?tid=530",
+        "https://en.wikipedia.org/wiki/Lorton,_Cumbria",
+        "https://treenotes.blogspot.com/2007/04/yew-tree-of-lorton-vale.html",
+        "https://lorton-pc.gov.uk/wp-content/uploads/2024/04/lortonhistoryandvillagetrail.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree 1137 (Lorton Vale)",
+        "url": "https://www.ancient-yew.org/yew_trees/lorton-vale-1137"
+      },
+      "access": "View only. The yew stands on private ground behind Yew Tree Hall; see it from the Pound, the public open space by Whit Beck at the bridge in High Lorton, where it has an interpretation board. Free. Please keep to the public space and rights of way.",
+      "transport": "The seasonal Honister Rambler bus (77/77A) from Keswick serves Lorton, roughly Easter to early November, with no winter service; check the timetable. By car, about 10 minutes from Cockermouth.",
+      "how_to_recognise": "You can recognise it as the hollow, broken yew on the bank of Hope Beck behind Yew Tree Hall. View it from the Pound, the public green by Whit Beck, where its interpretation board stands.",
+      "location_precision": "approximate",
+      "pin_source": "OSM bridge over Whit Beck (way centre 54.61779,-3.30001), the Pound's position per the Lorton parish village trail (2024)",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

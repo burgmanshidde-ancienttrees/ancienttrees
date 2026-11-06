@@ -1,0 +1,69 @@
+{
+  "city": "Bettws Newydd",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Bettws Newydd's great yew is a hollow shell 33 feet round with a second tree growing inside it. It stands beside the path on the west side of St Aeddan's, a Grade I listed church between Abergavenny and Usk, and people have been measuring it since 1877. Two more big yews share the churchyard. The church is said to stand on the site of an oratory older than AD 570. Nobody has published an age for the tree. Free and open.",
+  "meta_description": "The Bettws Newydd yew, Monmouthshire: a hollow shell about ten metres round with a younger stem growing inside it, at St Aeddan's church.",
+  "question_meta": "Bettws Newydd's oldest tree is the hollow yew west of St Aeddan's church, 33 feet round; no source gives it an age.",
+  "question_answer": "Bettws Newydd's oldest mapped tree is the great European Yew (Taxus baccata) beside the path west of St Aeddan's church, near Usk in Monmouthshire. Its hollow shell is 33 feet, about ten metres, round by the figure in The Sacred Yew of 1994, with an inner stem growing inside. No source gives it an age.",
+  "question_context": "The record of this tree goes back almost 150 years. The Gardeners' Chronicle measured 30 feet 6 inches at five feet up in 1877, Hyde and Harrison 31 feet in 1977, and Allen Meredith 33 feet at three feet up in 1983; Wondermondo gave about 10.5 metres in 2017 and calls it one of the largest yews in the UK, which is its own ranking. Inside the battered shell stands a slender column of new wood, measured by Tim Hills of the Ancient Yew Group at 6 feet 6 inches round in 2025. Two more big yews, both male, grow in the same churchyard, one leaning towards the church on the east side and one by the north wall. The yews were first noted in the Topographical Dictionary of Wales in 1848. The church probably began in the 12th century and is mostly 15th-century now; tradition places an oratory of St Aedan of Ferns here before AD 570. Storm Dennis closed the church in 2020, and it reopened in 2024.",
+  "hero_tree_id": "bwn_001",
+  "oldest_tree_id": "bwn_001",
+  "faq": [
+    {
+      "q": "How old is the Bettws Newydd yew?",
+      "a": "No source gives it an age, and the Ancient Yew Group publishes none. It has been measured since 1877, at 30 feet 6 inches then and 33 feet in 1983."
+    },
+    {
+      "q": "What is growing inside it?",
+      "a": "A slender inner stem, a column of new wood inside the hollow shell, measured at 6 feet 6 inches round in 2025."
+    },
+    {
+      "q": "Can you visit for free?",
+      "a": "Yes. St Aeddan's churchyard is open, and the yew stands beside the path on the west side of the church."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bwn_001",
+      "name": "Bettws Newydd Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "girth_cm": 1006,
+      "location": {
+        "address": "St Aeddan's churchyard, Bettws Newydd, near Usk, Monmouthshire NP15 1JN",
+        "latitude": 51.74792,
+        "longitude": -2.92527,
+        "neighbourhood": "Bettws Newydd"
+      },
+      "location_site": {
+        "name": "St Aeddan's churchyard, Bettws Newydd",
+        "radius_m": 30
+      },
+      "story": "Inside the hollow shell of the big yew at St Aeddan's stands another trunk, a column of new wood the old tree has grown within itself. Tim Hills of the Ancient Yew Group measured that inner stem at 6 feet 6 inches round in 2025. The shell around it is 33 feet, about ten metres, by the figure in The Sacred Yew of 1994.\n\nThe tape has been round it for nearly 150 years. The Gardeners' Chronicle gave 30 feet 6 inches in 1877, Hyde and Harrison 31 feet a century later, Allen Meredith 33 feet in 1983. The monument guide Wondermondo calls it one of the largest yews in the UK. That ranking is theirs.\n\nTwo more big yews share the churchyard, both male. One leans towards the church on the east side, its trunk dividing about ten feet up. The other was half lost in undergrowth by the north wall when the Group last looked.\n\nThe church is said to stand where St Aedan of Ferns had an oratory before AD 570, though nothing of that survives. The building probably began in the 12th century, most of what stands is 15th-century, and the yews were first written down in 1848. Storm Dennis closed the church in 2020; it reopened in 2024.\n\nNobody has published an age for the tree, and we will not guess one. If you know of a credible figure, tell us.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Bettws-Newydd-2025c.pdf",
+        "https://ancient-yew.org/yew_trees/bettws-newydd-281",
+        "https://en.wikipedia.org/wiki/Church_of_St_Aeddan,_Bettws_Newydd",
+        "https://www.wondermondo.com/yews-at-bettws-newydd-church/"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Bettws Newydd tree 281 (Tim Hills, 1997; revisited 2025)",
+        "url": "https://ancient-yew.org/yew_trees/bettws-newydd-281"
+      },
+      "access": "Free. Open churchyard of St Aeddan's, a Grade I listed church that reopened in 2024 after storm damage.",
+      "transport": "Rural, between Abergavenny and Usk. The nearest railway is at Abergavenny; check Traveline Cymru for buses.",
+      "how_to_recognise": "You can recognise it by the slender second stem standing inside its hollow, battered shell. It stands beside the path on the west side of St Aeddan's church.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Yew_tree_in_Betws_Newydd_churchyard_-_geograph.org.uk_-_3364824.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Jeremy Bolwell",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Yew_tree_in_Betws_Newydd_churchyard_-_geograph.org.uk_-_3364824.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

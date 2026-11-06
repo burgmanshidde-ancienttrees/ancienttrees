@@ -1,0 +1,66 @@
+{
+  "city": "Woolland",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Woolland is a hamlet in Dorset's Blackmore Vale, between Blandford Forum and Sturminster Newton, and south of its small 1855 church stands a great stout yew about 9.5 metres round near the ground. Its girth has barely changed since 1944. The church stands on an early Saxon site, and one yew writer suggested the tree may have sheltered three or four churches. There is no practical public transport, so plan to drive. The churchyard is open and free.",
+  "meta_description": "Measured at 31 feet 4 inches in 1944 and 31 feet 1 in 2012, the Woolland yew in the Blackmore Vale stands beside an 1855 church on an early Saxon site.",
+  "question_meta": "Woolland's oldest tree is the stout churchyard yew south of the 1855 church, in the Ancient Yew Group's top class at 9.47 metres round.",
+  "question_answer": "The oldest tree in Woolland is the yew south of the 1855 church, 947 centimetres round near the ground when Peter Norton measured it in 2012. The Ancient Yew Group places it in its top class of seven metres and over, an estimate from size. Nobody has dated it.",
+  "question_context": "The Woolland yew has been measured for more than seventy years. In 1944 it was measured at 31 feet 4 inches for Vaughan Cornish's book The Churchyard Yew and Immortality. In 1998 it was 31 feet at one foot up, and in 2012 Peter Norton found 947 centimetres at 30 centimetres, or 31 feet 1. Seventy years, and almost no change. The church beside it was built in 1855 on an early Saxon site. Baxter's book The Eternal Yew, as quoted by the Ancient Yew Group, suggests it may be the only yew to have sheltered three or four churches, a claim from one writer rather than a record. The Group classes yews of seven metres and over as ancient, and that is an estimate from girth, not a date. It was photographed again in 2026. Woolland itself is a small hamlet in the Blackmore Vale with no practical bus, so a car is the realistic way to get here.",
+  "hero_tree_id": "wol_001",
+  "oldest_tree_id": "wol_001",
+  "faq": [
+    {
+      "q": "Where is the yew in Woolland?",
+      "a": "South of the small church of 1855, in the open churchyard."
+    },
+    {
+      "q": "Has the Woolland yew grown since it was first measured?",
+      "a": "Barely. It was 31 feet 4 inches in 1944 and 31 feet 1 inch, or 947 centimetres, in 2012."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wol_001",
+      "name": "Woolland Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 1500,
+      "age_basis": "derived",
+      "girth_cm": 947,
+      "location": {
+        "address": "Woolland churchyard (church of 1855), Woolland, Dorset",
+        "latitude": 50.86182,
+        "longitude": -2.31938,
+        "neighbourhood": "Woolland"
+      },
+      "location_site": {
+        "name": "Woolland churchyard (church of 1855) churchyard",
+        "radius_m": 30
+      },
+      "story": "The church beside this yew was built in 1855, and the yew may have watched three or four churches come and go before it. That is the suggestion of Baxter's book The Eternal Yew, quoted by the Ancient Yew Group, which calls it possibly the only yew to have sheltered so many. It is one writer's claim, not a record. The ground it rests on is real enough. The present church stands on an early Saxon site in the Blackmore Vale.\n\nThe tree itself is a great stout yew south of that church, and it barely changes. In 1944 it was measured for Vaughan Cornish's The Churchyard Yew and Immortality at 31 feet 4 inches. In 1998 it was 31 feet at one foot up. In 2012 Peter Norton found 947 centimetres at 30 centimetres, which is 31 feet 1. Seventy years, three tapes and almost no movement, which tells you a great deal about how slowly an old yew lives.\n\nThe Ancient Yew Group puts yews of this girth in its top class, seven metres and over, an estimate from size rather than a dating. It was photographed again in 2026. Woolland is a hamlet with no practical bus, so plan to drive, and give the tree more time than the church.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/woolland/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Woolland-2019a.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 859 (Tim Hills 1998)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/woolland/"
+      },
+      "access": "Free. Open public churchyard; yew S of the church.",
+      "transport": "Hamlet in the Blackmore Vale, Dorset, between Blandford Forum and Sturminster Newton; no practical public transport found. Drive.",
+      "how_to_recognise": "You can recognise it by the sheer bulk of the trunk, over nine metres round near the ground. It stands south of the small 1855 church in Woolland churchyard.",
+      "photo": {
+        "url": "https://s0.geograph.org.uk/geophotos/04/53/24/4532427_f7b6c815.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Maurice D Budden",
+        "attribution_url": "https://www.geograph.org.uk/photo/4532427",
+        "status": "approved"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Girth 947cm at 30cm (Norton 2012); matches 1944 figure of 31ft 4in published in Vaughan Cornish, The Churchyard Yew and Immortality (so little change in 70 years). Photographed 2026 (Peter Norton). Church built 1855 on an early Saxon site. Baxter, The Eternal Yew (quoted by AYG, unverified) calls it possibly the only yew to have sheltered three or four churches. Flagged: one source family (AYG plus its quoted books). Pin: AYG grid ref ST7761806972 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; AYG class Ancient 7m+; girths 31ft 4in (1944, Gardner for Cornish) and 31ft at 1ft (1998), 947cm at 30cm (2012 Norton, 31ft 1in). Writing pass 2026-11-04: lead photo Geograph 4532427 (Maurice D Budden, 'Ancient yew tree in Woolland churchyard', 2015) approved."
+    }
+  ]
+}

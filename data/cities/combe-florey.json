@@ -1,0 +1,66 @@
+{
+  "city": "Combe Florey",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Combe Florey, a village north-west of Taunton, has two female yews in the churchyard of St Peter and St Paul. The young one grows north-west of the church. The ancient one stands south of it on the east side, 8.13 metres round near the ground, in the Ancient Yew Group's top class. The church dates from about 1300 and is Grade I. The churchyard is open and free, and the Taunton to Williton bus passes along the A358.",
+  "meta_description": "Two female yews share the churchyard at Combe Florey near Taunton, one young and one ancient, 8.13 metres round, south of a Grade I church.",
+  "question_meta": "Combe Florey's oldest tree is the ancient female yew south of St Peter and St Paul church, 8.13 metres round, in the Ancient Yew Group's top class.",
+  "question_answer": "The oldest tree in Combe Florey is the female yew south of the church of St Peter and St Paul, on its east side, 813 centimetres round five centimetres above the ground. The Ancient Yew Group places it in its top class of seven metres and over. Nobody has dated it.",
+  "question_context": "The churchyard at Combe Florey holds two yews, both female, and they make a useful pair. The ancient one stands south of the church on the east side, and the Ancient Yew Group measured it at 813 centimetres, taken five centimetres above the ground, where a yew's trunk is at its widest. Its photograph was updated in 2015. The young one grows north-west of the church. The Group puts yews over seven metres in its ancient class, an estimate from size rather than a dating, so the age stays open. The church of St Peter and St Paul dates from about 1300 and is Grade I. Female yews are the ones that carry red, fleshy cups around their seeds in autumn; male trees only shed pollen. The Ancient Yew Group is the one source for the tree itself, so its size and age band come from their record. The village lies north-west of Taunton, and the Taunton to Williton bus runs along the A358 close by.",
+  "hero_tree_id": "cfl_001",
+  "oldest_tree_id": "cfl_001",
+  "faq": [
+    {
+      "q": "Which is the ancient yew at Combe Florey?",
+      "a": "The larger yew south of the church, on its east side. A young yew grows north-west of the church."
+    },
+    {
+      "q": "Can I get to Combe Florey by bus?",
+      "a": "The Taunton to Williton bus along the A358 passes the village; check the timetable. There is no railway."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cfl_001",
+      "name": "Combe Florey Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 1500,
+      "age_basis": "derived",
+      "girth_cm": 813,
+      "location": {
+        "address": "St Peter and St Paul Church, Combe Florey, Somerset",
+        "latitude": 51.07359,
+        "longitude": -3.21385,
+        "neighbourhood": "Combe Florey"
+      },
+      "location_site": {
+        "name": "St Peter and St Paul Church churchyard",
+        "radius_m": 30
+      },
+      "story": "Combe Florey's churchyard holds two female yews, and centuries separate them. The young one grows north-west of the church of St Peter and St Paul. The old one stands south of it, on the east side, and it is the reason to come.\n\nThe Ancient Yew Group measured it at 813 centimetres, taken five centimetres off the ground, where a yew's trunk flares widest. That puts it in their top class of seven metres and over, which they treat as ancient. It is an estimate from size, not a dating, and nobody has put a year on it.\n\nThe church beside it dates from about 1300 and is Grade I. On the size estimate the yew is older still, but that is the estimate talking.\n\nFemale yews are the ones that bear the red, fleshy cups around their seeds in autumn; males only shed pollen. Here you can see the same kind of tree at two ends of its life, a short walk apart, and judge for yourself how many centuries the difference represents. Nobody has written that number down, and if you know it, tell us.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/combe-florey/",
+        "https://www.ancient-yew.org/yew_trees/combe-florey-375/",
+        "https://en.wikipedia.org/wiki/Church_of_St_Peter_%26_St_Paul,_Combe_Florey"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 375 (Tim Hills 1997)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/combe-florey/"
+      },
+      "access": "Free. Open public churchyard, yew S of the church on the east side.",
+      "transport": "Village NW of Taunton; Taunton to Williton bus along the A358 passes (check). No railway.",
+      "how_to_recognise": "You can recognise it as the larger of the two yews, over eight metres round near the ground. It stands south of the church on the east side; the young yew grows north-west.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Girth 813cm at 5cm (AYG tree 375, photo 2015). Two female yews in the churchyard: the ancient one S of the church and a young tree NW. Church c1300, Grade I. Flagged: AYG only for the yew. Pin: AYG grid ref ST15053117 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; AYG class Ancient 7m+, girth 813cm at 5cm."
+    }
+  ]
+}

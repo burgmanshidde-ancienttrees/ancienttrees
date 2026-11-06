@@ -1,0 +1,66 @@
+{
+  "city": "Hawling",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Hawling is a hamlet near Winchcombe, and the reason to come is a hollow female yew in the north-west corner of St Edward's churchyard, standing on the edge of a vertical drop to the old dairy. Three recorders have measured it across 26 years and found it barely changed, about 5.6 metres round. Arthur Mee called it gigantic in 1936; the tape says otherwise. There is no regular public transport, so plan to drive. The churchyard is open and free.",
+  "meta_description": "Arthur Mee called the Hawling yew gigantic in 1936. Three recorders since found a hollow female tree about 5.6 metres round, likely over 500 years old.",
+  "question_meta": "Hawling's oldest tree is a hollow female yew in St Edward's churchyard, about 5.6 metres round and likely over 500 years old by the Ancient Yew Group.",
+  "question_answer": "The oldest tree in Hawling is the hollow female yew in the north-west corner of St Edward's churchyard, about 564 centimetres round. The Ancient Yew Group classes a yew this size as ancient, likely over 500 years old. That age is an estimate from girth; nobody has dated the tree.",
+  "question_context": "The Hawling yew is one of the better measured trees in the Cotswolds. Allen Meredith put it at about 18 feet in 1988. Tim Hills recorded 549 centimetres at 30 centimetres up in 2003, and by 2014 the figure was between 18 feet and 18 feet 6, about 564 centimetres. Three people, 26 years and almost no change. In 1936 Arthur Mee wrote of a gigantic yew here, but Hills sees nothing to suggest it has been gigantic in recent times, so we stick to the measurements. It is a female tree with large hollow spaces and an opening on its north-west side, and Hills found it in vigorous good health in 2003. A younger female yew grows to its north-east. The church of St Edward is Grade II*, with sections from the early 13th century and a nave and chancel rebuilt in 1764. The yew stands at the edge of the churchyard where the ground drops away to the old dairy, which makes it easy to pick out.",
+  "hero_tree_id": "hwg_001",
+  "oldest_tree_id": "hwg_001",
+  "faq": [
+    {
+      "q": "Where is the yew in Hawling churchyard?",
+      "a": "In the north-west corner of St Edward's churchyard, on the edge of a vertical drop to the old dairy. A younger yew grows to its north-east."
+    },
+    {
+      "q": "Can I get to Hawling by bus?",
+      "a": "We found no regular public transport to Hawling. A car or taxi from Winchcombe is the practical way."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hwg_001",
+      "name": "The Hawling churchyard yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "likely over 500 years",
+      "age_min": 500,
+      "age_max": 1000,
+      "age_basis": "derived",
+      "girth_cm": 564,
+      "location": {
+        "address": "St Edward's Church, Hawling, near Winchcombe, Gloucestershire GL54 5SZ",
+        "latitude": 51.9049,
+        "longitude": -1.9087,
+        "neighbourhood": "Hawling"
+      },
+      "location_site": {
+        "name": "St Edward's churchyard, Hawling",
+        "radius_m": 30
+      },
+      "story": "In 1936 Arthur Mee called this a gigantic yew. Its modern recorder sees nothing to suggest it has been gigantic in recent times, and the tape backs him. Allen Meredith put it at about 18 feet in 1988. Tim Hills found 549 centimetres in 2003, and by 2014 it was 18 feet 6, about 564 centimetres. Three recorders across 26 years, and the figure has hardly moved. So we report the girth and leave the adjectives to Mee.\n\nIt is a female yew, hollow, with large spaces inside and an opening on its north-west side. Hills recorded it in vigorous good health in 2003. The Ancient Yew Group's girth bands place it in the ancient class, likely over 500 years, an estimate from size rather than a dating.\n\nThe setting is half the visit. Hawling is a hamlet near Winchcombe, and the yew stands in the north-west corner of St Edward's churchyard, right on the edge of a vertical drop down to the old dairy. The church has 13th-century sections, with a nave and chancel rebuilt in 1764. A younger female yew grows to the north-east, a reminder that the older one was once that size too.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/hawling/",
+        "https://www.ancient-yew.org/yew_trees/hawling-1461/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Hawling-2019.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree 1461 (Ancient 5-7 m)",
+        "url": "https://www.ancient-yew.org/yew_trees/hawling-1461/"
+      },
+      "access": "Open churchyard (Ancient Yew Group lists access as public; church parochial church council ground). Free, no opening hours.",
+      "transport": "Hawling, a hamlet near Winchcombe; no regular public transport found; car or taxi.",
+      "how_to_recognise": "You can recognise it by the hollow trunk with an opening on its north-west side, at the edge of a drop to the old dairy. It stands in the north-west corner of St Edward's churchyard; a younger yew grows to its north-east.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "AYG: female yew, 549 cm at 30 cm (2003 Hills); girth grid 18 ft 0 in to 18 ft 6 in in 2014 (Hills/Norton, about 564 cm; girth_cm uses 18 ft 6 in = 564 cm at 3 ft); Allen Meredith 1988: approximately 18 ft. Three independent recorders over 26 years, stable. Hills' 2019 site file: hollow on the NW side, large hollow spaces, tree 'in vigorous good health' (2003); in 1936 Mee wrote of 'a gigantic yew' but Hills sees nothing suggesting recent gigantic size (so state girth, not 'gigantic'). Site file 2019 shows revisit (alive). AYG band 5-7 m = ancient, likely above 500 years (derived). Church Grade II* (Historic England 1091850): sections early 13th century, nave and chancel rebuilt 1764. Source AYG only with Historic England for the church: flagged. Position AYG grid SP06292294 converted, approximate. Geograph 90180 shows the church (not the yew). Ancient Yew Group girth grid for Gloucestershire: https://ancient-yew.org/wp-content/uploads/2024/11/Gloucestershire-girth-grid-v2.pdf"
+    }
+  ]
+}

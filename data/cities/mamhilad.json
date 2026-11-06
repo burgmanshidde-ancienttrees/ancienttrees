@@ -1,0 +1,68 @@
+{
+  "city": "Mamhilad",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Mamhilad's yew has been measured for more than two centuries, from 25 feet round in 1799 to 31 feet 7 inches in 2017. It stands by the south porch of St Illtyd's, a split hulk with a separate tree growing up inside its hollow, and in 1880 it was called the Queen of the local yews. The Walk Wheel Cycle Trust says over 2,000 years; the Ancient Yew Group gives no age. Free, a short detour from the canal towpath.",
+  "meta_description": "The Mamhilad yew by St Illtyd's south porch near Pontypool: 9.53 metres round, measured since 1799, a short detour from the canal towpath.",
+  "question_meta": "Mamhilad's oldest tree is the hollow yew by St Illtyd's south porch, 9.53 metres round; claims of its age run past 2,000 years.",
+  "question_answer": "Mamhilad's oldest mapped tree is the female European Yew (Taxus baccata) by the south porch of St Illtyd's church, near Pontypool in Monmouthshire. Tim Hills measured it at 9.53 metres round at the ground. The Walk Wheel Cycle Trust calls it over 2,000 years old; the Ancient Yew Group gives no age.",
+  "question_context": "The paper trail is long. William Coxe recorded 25 feet in 1799, Loudon 29 feet 4 inches around 1840, Lees 30 feet 7 inches in 1851, T. H. Thomas 31 feet in 1880, Hyde 31 feet in 1929 and Mitchell 31 feet in 1959. Tim Hills of the Ancient Yew Group found 31 feet 3 inches at the ground in 1999 and again in 2014, and Peter Norton 31 feet 7 inches in 2017. Thomas called it the Queen of the local yews, if the Llanthewy tree be the King. The trunk has split into several parts from a low bole, and a separate stem grows inside the hollow, 6 feet round in Loudon's day and 10 feet when Allen Meredith measured it in 1981. A stone seat was built against the trunk by 1880. The churchyard holds eleven yews, several of them ancient or veteran. A 2008 photo caption says 2,500 years, and no source has measured an age.",
+  "hero_tree_id": "mmh_001",
+  "oldest_tree_id": "mmh_001",
+  "faq": [
+    {
+      "q": "How old is the Mamhilad yew?",
+      "a": "The Walk Wheel Cycle Trust says over 2,000 years and one photo caption 2,500. The Ancient Yew Group gives no age, so both are claims."
+    },
+    {
+      "q": "How big is it?",
+      "a": "Tim Hills measured 31 feet 3 inches, 9.53 metres, at the ground in 1999 and 2014; Peter Norton found 31 feet 7 inches in 2017."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "From the Monmouthshire and Brecon Canal towpath, National Cycle Network Route 49, a short detour along Folly Lane leads to St Illtyd's. The churchyard is free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mmh_001",
+      "name": "Mamhilad Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 2,000 years by one source; not dated by AYG",
+      "age_basis": "source",
+      "girth_cm": 953,
+      "location": {
+        "address": "St Illtyd's churchyard, Mamhilad, near Pontypool, Monmouthshire NP4 8QY",
+        "latitude": 51.72518,
+        "longitude": -3.00698,
+        "neighbourhood": "Mamhilad"
+      },
+      "location_site": {
+        "name": "St Illtyd's churchyard, Mamhilad",
+        "radius_m": 30
+      },
+      "story": "In 1880 the antiquary T. H. Thomas called the Mamhilad yew the Queen of the local yews, if the Llanthewy tree be the King. By then it had been measured for eighty years, and the record has kept going.\n\nWilliam Coxe gave it 25 feet round in 1799. Loudon recorded 29 feet 4 inches about 1840, Lees 30 feet 7 inches in 1851, the Reverend Cook 30 feet 9 inches in 1895. Tim Hills of the Ancient Yew Group found 31 feet 3 inches at the ground in 1999 and again in 2014, which is 9.53 metres, and Peter Norton 31 feet 7 inches in 2017. The tapes went round at different heights, so the early figures are rough, but they span more than two centuries.\n\nThe tree has split into several trunks from a low bole, and a separate stem grows up inside the hollow. Loudon put that inner tree at 6 feet round; Allen Meredith found 10 feet in 1981. By 1880 someone had built a stone seat against the old trunk.\n\nThe Walk Wheel Cycle Trust, which sends canal cyclists here, says the yew is over 2,000 years old, and a 2008 photo caption says 2,500. The Ancient Yew Group gives no age and nobody has measured one, so treat both as claims.\n\nIt stands by the south porch of St Illtyd's, in a churchyard of eleven yews, several more of them ancient or veteran.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Mamhilad-2025.pdf",
+        "https://ancient-yew.org/yew_trees/mamhilad-587",
+        "https://www.walkwheelcycletrust.org.uk/our-blog/national-cycle-network-route-collections/ancient-trees-on-the-national-cycle-network/",
+        "https://commons.wikimedia.org/wiki/File:St_Illtyds_Church,_Mamhilad_-_geograph.org.uk_-_817787.jpg"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Mamhilad tree 587 (Tim Hills, 2014)",
+        "url": "https://ancient-yew.org/yew_trees/mamhilad-587"
+      },
+      "access": "Free. Open churchyard of St Illtyd's, a short detour along Folly Lane from the Monmouthshire and Brecon Canal towpath.",
+      "transport": "Walkable from the Monmouthshire and Brecon Canal towpath (National Cycle Network Route 49) by a short detour along Folly Lane; about 2 miles north-east of Pontypool. Check Traveline Cymru for buses.",
+      "how_to_recognise": "You can recognise it by the hulk split into several trunks with a smaller tree growing up inside the opening, best seen from the side away from the porch. It stands right by the south porch of St Illtyd's.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

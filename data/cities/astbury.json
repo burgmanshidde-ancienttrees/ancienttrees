@@ -1,0 +1,73 @@
+{
+  "city": "Astbury",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Astbury's yew is so hollow you can see straight through the trunk, and in 1915 a local history said several people could shelter inside it at once. It leans on timber props beside the path on the north side of St Mary's church, a couple of kilometres south of Congleton. The church says tree-ring dating suggests two thousand years; a 1915 history computed at least 1,000. Nobody has recorded its girth. Free, in an open churchyard.",
+  "meta_description": "The Astbury yew near Congleton: a hollow, propped yew you can see through, beside St Mary's church. Claimed at 1,000 to 2,000 years. Free.",
+  "question_meta": "Astbury's oldest tree is the hollow, propped yew north of St Mary's church; claims of its age run from 1,000 to 2,000 years.",
+  "question_answer": "Astbury's oldest mapped tree is the hollow European Yew (Taxus baccata) on timber props beside the path north of St Mary's church, near Congleton in Cheshire. A 1915 history computed it at least 1,000 years old, and the church page says two thousand. No measured age exists.",
+  "question_context": "The tree has been dated more often than measured. Newbold's Astbury and its History of 1915 computed it at least 1,000 years old and said the trunk was completely hollow, with a hole large enough for several people to shelter inside. Morton put it in Saxon times. An excursion record of 1888 called it an ancient yew of some centuries' growth. St Mary's church page says tree-ring dating suggests two thousand years, which we give as the parish's figure, since a hollow yew has lost the rings at its centre. Tim Hills of the Ancient Yew Group, visiting in 1999, wrote that its vast old age cannot be doubted, and classed it as unmeasurable and more than seven metres round. That year it had only one branch above about 20 feet and one prop. Photographs of 2007 and 2016 show abundant foliage, with a second prop by 2016. Those 2016 photographs are the latest dated record we have.",
+  "hero_tree_id": "ast_001",
+  "oldest_tree_id": "ast_001",
+  "faq": [
+    {
+      "q": "How old is the Astbury yew?",
+      "a": "Claims range from at least 1,000 years, computed in 1915, to the church's two thousand. None is a measurement."
+    },
+    {
+      "q": "Can you see through it?",
+      "a": "Yes. The trunk is open enough to see through, and it leans on timber props beside the churchyard path."
+    },
+    {
+      "q": "Can you visit for free?",
+      "a": "Yes. It stands in the open churchyard of St Mary's, Astbury, on the north side of the church."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ast_001",
+      "name": "Astbury Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 1,000 years (estimates vary)",
+      "age_min": 800,
+      "age_max": 2000,
+      "location": {
+        "address": "St Mary's churchyard, Astbury, Congleton",
+        "latitude": 53.15086,
+        "longitude": -2.23101,
+        "neighbourhood": "Astbury, Cheshire East"
+      },
+      "location_site": {
+        "name": "St Mary's churchyard, Astbury",
+        "radius_m": 40
+      },
+      "story": "In 1915 a history of Astbury noted that its yew was so hollow that several people could shelter inside it at once. A century later the trunk is open enough to see straight through, and the tree leans on timber props beside the churchyard path.\n\nIt has been dated more often than it has been measured. Newbold's history computed it at least 1,000 years old. Morton put it in Saxon times. An excursion party in 1888 settled for an ancient yew of some centuries' growth. St Mary's own church page goes furthest, saying tree-ring dating suggests two thousand years. A hollow yew has lost the rings at its heart, so we give that as the parish's figure. Tim Hills of the Ancient Yew Group visited in 1999, wrote that its vast old age cannot be doubted, and left it there.\n\nNobody has recorded a girth either. The Group classes it as more than seven metres and unmeasurable, which is what a trunk that is mostly gap does to a tape.\n\nIn 1999 it had only one branch above about 20 feet, and one prop. By 2016 there were two. Photographs from 2007 and 2016 show plenty of green, and those are the most recent records we have, so if you visit, tell us how it looks.\n\nIt stands on the north side of St Mary's church, in a village a couple of kilometres south of Congleton.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/astbury/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Astbury-2019.pdf",
+        "https://achurchnearyou.com/church/12754/about-us",
+        "https://www.geograph.org.uk/photo/5243488",
+        "https://www.geograph.org.uk/photo/4866512"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Astbury",
+        "url": "https://www.ancient-yew.org/yew_tree_database/astbury/"
+      },
+      "access": "Free. Open churchyard of St Mary's, Astbury.",
+      "transport": "Astbury is about 2 km south of Congleton, whose railway station is on the Manchester to Stoke line. Check the local bus operator for buses from the town.",
+      "how_to_recognise": "You can recognise it by the timber props holding up its leaning, hollow trunk, open enough to see through. It stands beside the path on the north side of St Mary's church.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ancient_yew%2C_St._Mary%2C_Astbury.jpg",
+        "license": "CC0",
+        "attribution": "Poliphilo",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Ancient_yew,_St._Mary,_Astbury.jpg",
+        "width": 1600,
+        "height": 1200,
+        "taken_month": "2007-04",
+        "status": "approved"
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "city": "Martindale",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Martindale maps one tree: the twin-trunked yew in the churchyard of old St Martin's, at the end of a quiet valley road above Ullswater. Age estimates run from 700 years to 2,000, and the Ancient Yew Group calls this one of the finest churchyard yew settings in England. Local tradition says it supplied bows for Agincourt, which nobody has proved. Free, and most easily reached by boat to Howtown and a walk up the valley.",
+  "meta_description": "The Martindale Yew above Ullswater: a twin-trunked yew put at 700 to 2,000 years old in the churchyard of old St Martin's. Free to visit.",
+  "question_meta": "Martindale's oldest tree is the yew at old St Martin's Church, with estimates from 700 to 2,000 years and no settled answer.",
+  "question_answer": "Martindale's oldest and only mapped tree is the Martindale Yew, a European Yew (Taxus baccata) in the churchyard of old St Martin's Church, Martindale, in the Ullswater valley of the Lake District. Age estimates run from 700 to 2,000 years; the Ancient Yew Group leans to the lower end because it grows as two joined trunks.",
+  "question_context": "The yew stands north-east of the little church, a female tree whose two trunks are joined only for the first few feet and measured 5.92 metres round together in 2002. One trunk is a hollow shell with a thickened rim, the other is covered in twiggy growth, and a branch about six feet up dips to the ground. The Church of England's heritage record gives about 1,300 years, a figure that sits inside the wider estimate rather than settling it. The site has been documented since 1220, and the first time the tree appears in print is 1839, when William Ford called it a picturesque yew-tree. The story that it supplied longbows for Agincourt is one the National Churches Trust calls probable but not proven. A 2018 survey found the crown in normal health, with some dead branches on the south side. There is no bus. The usual way in is the Ullswater Steamers boat to Howtown pier and a walk of about 2.5 km up the valley road; by car it is about 15 minutes from Pooley Bridge.",
+  "hero_tree_id": "mtd_001",
+  "oldest_tree_id": "mtd_001",
+  "faq": [
+    {
+      "q": "How old is the Martindale Yew?",
+      "a": "Estimates run from 700 to 2,000 years. The Ancient Yew Group thinks the lower end more likely because the tree is two joined trunks; a church record gives about 1,300."
+    },
+    {
+      "q": "Did it supply bows for Agincourt?",
+      "a": "That is the local story. The National Churches Trust calls it probable but not proven."
+    },
+    {
+      "q": "How do you get there without a car?",
+      "a": "Take the Ullswater Steamers boat to Howtown pier and walk about 2.5 km up the Martindale valley road to old St Martin's."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mtd_001",
+      "name": "The Martindale Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "estimates vary, 700 to 2,000 years",
+      "age_min": 700,
+      "age_max": 2000,
+      "girth_cm": 592,
+      "location": {
+        "address": "Old St Martin's Church, Martindale, Penrith, Cumbria CA10 2NG (churchyard, NE of the church)",
+        "latitude": 54.55775,
+        "longitude": -2.8764,
+        "neighbourhood": "Martindale, Ullswater valley"
+      },
+      "location_site": {
+        "name": "Old St Martin's churchyard, Martindale",
+        "radius_m": 30
+      },
+      "story": "Estimates of this yew's age run from 700 years to 2,000, and the Ancient Yew Group, which keeps the record, simply lists both ends. It leans towards the lower end, because the tree is really two trunks, joined only for the first few feet. The Church of England's heritage record repeats a figure of about 1,300 years. Nobody has a method that settles it.\n\nWhat stands in the churchyard of old St Martin's is easier to describe. A female yew, its two trunks measured together at 5.92 metres round in 2002. One is a hollow shell with a thickened rim; the other, nearer the church, is covered in twiggy growth. A branch about six feet up dips all the way to the ground, and the crown hangs over a building beside it.\n\nThe church site is documented from 1220. The local story says the yew supplied longbows for Agincourt, which the National Churches Trust calls probable but not proven. The first time it appears in print is 1839, when William Ford called it a picturesque yew-tree, and the yew group now calls this one of the finest churchyard yew settings in England. A 2018 survey found the crown in normal health, with some dead branches on the south side.\n\nThe church sits at the end of the Martindale road, well away from any town. That remoteness is most of its charm.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_trees/martindale-777/",
+        "https://facultyonline.churchofengland.org/CHR/ChurchDetails.aspx?id=2197",
+        "https://nationalchurchestrust.org/node/1535",
+        "https://en.wikipedia.org/wiki/St_Martin%27s_Church,_Martindale"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree 777 (Martindale)",
+        "url": "https://www.ancient-yew.org/yew_trees/martindale-777/"
+      },
+      "access": "Free. Old St Martin's is a small open churchyard at the end of the Martindale valley road; no entry needed.",
+      "transport": "No bus. Take the Ullswater Steamers boat to Howtown pier, then walk about 2.5 km up the valley road; check sailings, which are reduced in winter. By car, about 15 minutes from Pooley Bridge.",
+      "how_to_recognise": "You can recognise it by its two trunks joined at the base, one a hollow shell, and a low branch that dips to the ground. It stands north-east of old St Martin's Church, Martindale.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/The_ancient_yew_tree_in_St_Martin%27s_Churchyard%2C_Martindale_-_geograph.org.uk_-_5899353.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Marathon",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:The_ancient_yew_tree_in_St_Martin%27s_Churchyard,_Martindale_-_geograph.org.uk_-_5899353.jpg",
+        "width": 4000,
+        "height": 3000,
+        "taken_month": "2018-08",
+        "status": "approved"
+      }
+    }
+  ]
+}

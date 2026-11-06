@@ -1,0 +1,59 @@
+{
+  "city": "Ripon",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Ripon's mapped tree stands in the deer park at Studley Royal, a short walk from the ruins of Fountains Abbey. It is a sweet chestnut that the National Trust calls a pre-18th-century pollard, cut back at head height for its wood, and it faces St Mary's Church, William Burges's Victorian church, across the drive. It sits on the Trust's own ancient trees walk, among chestnuts planted around 1710 and an avenue of limes, so the walk to it passes other old trees too.",
+  "meta_description": "A sweet chestnut pollard older than 1700 in the Studley Royal deer park near Ripon, opposite Burges's St Mary's Church, on the National Trust's tree walk.",
+  "question_meta": "Ripon's oldest mapped tree is a sweet chestnut pollard in the Studley Royal deer park, which the National Trust dates to before the 18th century.",
+  "question_answer": "Ripon's oldest mapped tree is the pollard sweet chestnut by St Mary's Church in the Studley Royal deer park, which the National Trust describes as a pre-18th-century pollard. It stands beside the drive opposite the church, about 4 miles from Ripon.",
+  "question_context": "Studley Royal is the National Trust estate that holds the ruins of Fountains Abbey and an 18th-century water garden, and its deer park is open to walkers. The Trust publishes an ancient trees walk through the park, and this chestnut is one of its stops. Pollarding meant cutting a tree above the reach of browsing animals so it would regrow a crop of poles, a working practice that often lengthens a tree's life, and in a deer park the height mattered. The Trust dates the hillside chestnuts nearby to around 1710 and calls this one older than that. Across the drive stands St Mary's Church, built in the 1870s to designs by William Burges, which the Trust calls his masterpiece. Everything known about the tree comes from the Trust's walk; no girth or closer age has been published, so if you visit and measure it, tell us. Reach it on foot from the Fountains Abbey visitor centre in 15 to 20 minutes, through the pedestrian gate into the deer park.",
+  "hero_tree_id": "rip_002",
+  "oldest_tree_id": "rip_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Ripon?",
+      "a": "The pollard sweet chestnut opposite St Mary's Church in the Studley Royal deer park, described by the National Trust as older than the 18th century."
+    },
+    {
+      "q": "Do you need a ticket to see it?",
+      "a": "The deer park is open to walkers, and the tree is on the Trust's public ancient trees walk. The deer park car park is pay and display, free to members; the abbey and water garden have their own entry terms."
+    },
+    {
+      "q": "How do you get there from Ripon?",
+      "a": "It is about 4 miles by footpath, or 15 to 20 minutes on foot from the Fountains Abbey visitor centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rip_002",
+      "name": "The Pollard Sweet Chestnut by St Mary's Church",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "before the 18th century",
+      "location": {
+        "address": "Drive to St Mary's Church, Studley Royal deer park, Ripon HG4 3DY",
+        "latitude": 54.11875,
+        "longitude": -1.58019,
+        "neighbourhood": "Studley Royal Deer Park"
+      },
+      "location_site": {
+        "name": "Roadway outside St Mary's Church",
+        "radius_m": 50
+      },
+      "story": "The National Trust's word for this sweet chestnut is a pre-18th-century pollard, which means a tree already standing before 1700, and one that was cut back at head height for its wood. That makes it older than the chestnuts on the hillside nearby in the deer park at Studley Royal, which the Trust dates to about 1710.\n\nPollarding was a working habit. A tree cut back above the reach of grazing animals sends up a crown of new poles, harvested every few years, and a pollard often lives far longer than a tree left alone. In a deer park the height mattered, because deer eat whatever they can reach.\n\nThe chestnut stands across the roadway from St Mary's Church, the Victorian church the Trust calls a William Burges masterpiece, so a tree already standing before 1700 and a church of the 1870s face each other over the drive. Beyond them lie the water garden and the ruins of Fountains Abbey, and a path on the Trust's ancient trees walk that passes five limes opposite Choristers House.\n\nEverything here comes from one source, the National Trust's own walk, which is a good source but a single one. Nobody has published a girth or a sharper age. If you measure it, or know more, tell us.",
+      "verified_sources": [
+        "https://www.nationaltrust.org.uk/visit/yorkshire/fountains-abbey-and-studley-royal-water-garden/fountains-abbey-ancient-trees-walk"
+      ],
+      "access": "Open to walkers. Studley Royal deer park (National Trust), entered by a pedestrian gate on the footpath from the Fountains Abbey visitor centre; the tree is on the Trust's public ancient trees walk. Deer park car park is pay and display (members free). The abbey and water garden have their own entry terms.",
+      "transport": "About 4 miles (6 km) from Ripon by footpath. From the Fountains Abbey visitor centre, 15 to 20 minutes on foot. The Ripon Roweller 139 bus runs towards Markington; check current times.",
+      "how_to_recognise": "You can recognise it as the pollarded sweet chestnut on the right of the drive as you walk down from the pedestrian gate. It stands across the roadway from St Mary's Church, before the Lime Avenue.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

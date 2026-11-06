@@ -1,0 +1,73 @@
+{
+  "city": "Llanfaredd",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Llanfaredd's great yew half hid its church when Francis Kilvert wrote about it in 1874, and it still fills the west side of St Mary's churchyard, a battered hollow trunk under a full crown. It was measured at 36 feet round in 1811 and 30 feet 3 inches in 2015, the tape going round at different heights over the years. The Church in Wales record says it is believed to be 3,000 years old; the Ancient Yew Group gives no age. Free and open.",
+  "meta_description": "The Llanfaredd yew near Builth Wells: a huge hollow trunk west of St Mary's church, in Kilvert's diary, measured since 1811. Free to visit.",
+  "question_meta": "Llanfaredd's oldest tree is the great hollow yew west of St Mary's church; one record says 3,000 years, without a source.",
+  "question_answer": "Llanfaredd's oldest mapped tree is the great European Yew (Taxus baccata) on the west side of St Mary's church, about 3 km east of Builth Wells in Powys. The Church in Wales heritage record says it is believed to be 3,000 years old but names no source, and the Ancient Yew Group gives no age.",
+  "question_context": "The tree's girth has been taken again and again: 36 feet in 1811 by the Reverend Jonathan Williams, and in 1891 and 1905; 35 feet 8 inches at three feet up by Allen Meredith in 1982; 30 feet at two feet by Tim Hills in 1998; and 30 feet 3 inches, 9.22 metres, at two feet by Paul Wood in 2015. The heights changed, so the numbers say as much about the measuring as about the tree. In 1874 Francis Kilvert wrote in his diary that the church was half hidden by its great yew. A recorder in 2000 described a complex of interlocking hollows in the lower trunk under a full crown. A smaller yew stands near the south-west entrance. The heritage record that gives the 3,000 years also says no notable trees are connected with the church, contradicting itself. The Ancient Yew Group says there is no agreement about the age of the site; some suggest something older than early medieval because of tumuli on the hill and a spring east of the church.",
+  "hero_tree_id": "llf_001",
+  "oldest_tree_id": "llf_001",
+  "faq": [
+    {
+      "q": "How old is the Llanfaredd yew?",
+      "a": "Nobody has shown its age. A Church in Wales record says it is believed to be 3,000 years old but gives no source, and the Ancient Yew Group gives no age."
+    },
+    {
+      "q": "How big is it?",
+      "a": "Paul Wood measured 30 feet 3 inches, 9.22 metres, at two feet up in 2015. Older figures of up to 36 feet were taken at other heights."
+    },
+    {
+      "q": "Can you visit for free?",
+      "a": "Yes. St Mary's churchyard is open through its lych gate and is still used for burials."
+    }
+  ],
+  "trees": [
+    {
+      "id": "llf_001",
+      "name": "Llanfaredd Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented; Church in Wales record says 'believed to be 3000 year old'",
+      "age_basis": "source",
+      "girth_cm": 922,
+      "location": {
+        "address": "St Mary's churchyard, Llanfaredd, near Builth Wells, Powys LD2 3RA",
+        "latitude": 52.14705,
+        "longitude": -3.36141,
+        "neighbourhood": "Llanfaredd"
+      },
+      "location_site": {
+        "name": "St Mary's churchyard, Llanfaredd",
+        "radius_m": 30
+      },
+      "story": "The Llanfaredd yew was measured at 36 feet round in 1811 and at 30 feet 3 inches in 2015. The tape has gone round at different heights over those two centuries, three feet up in 1982 and two in 1998, so the figures say as much about the measuring as about the tree.\n\nIn 1874 the diarist Francis Kilvert wrote that the little church was half hidden by its great yew. It still fills the west side of the churchyard, a battered trunk with a complex of interlocking hollows low down and, when a recorder looked in 2000, a full crown above them. A smaller yew stands near the south-west entrance.\n\nHow old is it? The Church in Wales heritage record says one yew here is believed to be 3,000 years old. It names no source, and the same record says elsewhere that no notable trees are connected with the church, so it contradicts itself. The Ancient Yew Group says there is no agreement even about the age of the site. Some think it early medieval. Others point to the tumuli on the hill and a spring east of the church and suggest something older. The evidence, the Group says, is yet to be found.\n\nThe church has a bell reported to date from about 1280 and was largely rebuilt in 1891. The churchyard is still used for burials, on the east side of the Wye valley about 3 km from Builth Wells.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/userfiles/file/Llanfaredd%202019.pdf",
+        "https://www.ancient-yew.org/yew_trees/llanfaredd-96/",
+        "https://heneb.org.uk/archive/cpat/Archive/churches/radnor/16848.htm",
+        "https://heritage.churchinwales.org.uk/CHR/ChurchDetails.aspx?id=4337",
+        "https://www.wondermondo.com/yew-at-llanfaredd/"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Llanfaredd tree 96 (Tim Hills, Paul Wood 2015)",
+        "url": "https://www.ancient-yew.org/yew_trees/llanfaredd-96/"
+      },
+      "access": "Free. Open churchyard of St Mary's, through the lych gate; the churchyard is still used for burials.",
+      "transport": "About 3 km east of Builth Wells, on the east side of the Wye valley. Check Traveline Cymru for buses.",
+      "how_to_recognise": "You can recognise it by its size, one huge hollow yew far bigger than the smaller one near the south-west gate. It stands on the west side of the little church of St Mary.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Yew_tree_at_St_Mary_-_geograph.org.uk_-_3710020.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Bill Nicholls",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Yew_tree_at_St_Mary_-_geograph.org.uk_-_3710020.jpg",
+        "width": 450,
+        "height": 600,
+        "taken_month": "2013-09",
+        "status": "approved"
+      }
+    }
+  ]
+}

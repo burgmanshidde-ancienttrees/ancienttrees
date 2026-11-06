@@ -1,0 +1,71 @@
+{
+  "city": "Pennant Melangell",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Pennant Melangell maps a ring of yews around the round churchyard of St Melangell's shrine church, at the head of a dead-end valley in the Berwyn hills. Six yews grow here, four of them ancient, the largest 8.71 metres round. The church puts them at 2,000 years, an estimate rather than a measurement. Burial pits at the site go back to between 1500 and 1000 BC. Free, and four miles up a lane from Llangynog.",
+  "meta_description": "Ancient yews ring the round churchyard of St Melangell's shrine church in the Berwyn hills, said to be 2,000 years old. Free, remote.",
+  "question_meta": "Pennant Melangell's oldest trees are the ancient yews around St Melangell's churchyard, which the church estimates at 2,000 years old.",
+  "question_answer": "Pennant Melangell's oldest trees are the yews ringing the circular churchyard of St Melangell's shrine church, four of them ancient, the largest 8.71 metres round. The church estimates them at about 2,000 years old, a figure the National Churches Trust repeats; it is an estimate, not a measurement.",
+  "question_context": "The churchyard is round, and that shape is old. Burial pits found at the church site have been carbon-dated to between 1500 and 1000 BC, long before the 12th-century shrine church that now stands at its centre. St Melangell, by her legend, sheltered a hunted hare under her cloak and faced down a prince and his hounds, and she is the patron saint of hares. Six yews grow around the wall, four of them large and ancient, measuring 8.71, 7.16, 6.71 and 5.44 metres in the Ancient Yew Group's records. The 2,000-year figure is the church's; others note that certificates have dated some Welsh yews to only 500 to 800 years, so the honest range is wide. Treat the ring as one place to stand rather than hunting for a single trunk. The church sits about four miles up a narrow valley road from Llangynog, with no bus or railway to the door. Buses reach Llangynog from Oswestry, and from there the walk up the valley is part of the visit.",
+  "hero_tree_id": "pml_001",
+  "oldest_tree_id": "pml_001",
+  "faq": [
+    {
+      "q": "How old are the Pennant Melangell yews?",
+      "a": "The church estimates about 2,000 years, and the National Churches Trust gives the same figure. It is an estimate; no measured age exists, and some Welsh yews certified that old have been put at 500 to 800 years."
+    },
+    {
+      "q": "Why is the churchyard round?",
+      "a": "It is an ancient enclosure. Burial pits at the site have been carbon-dated to between 1500 and 1000 BC, long before the 12th-century church."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "By car or on foot. The church is about four miles up a dead-end valley road from Llangynog; buses reach Llangynog from Oswestry."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pml_001",
+      "name": "Pennant Melangell Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 2,000 years (church's claim)",
+      "age_basis": "derived",
+      "girth_cm": 871,
+      "location": {
+        "address": "St Melangell's Church, Pennant Melangell, Llangynog, Powys SY10 0HQ",
+        "latitude": 52.82752,
+        "longitude": -3.4497,
+        "neighbourhood": "Pennant Melangell"
+      },
+      "location_site": {
+        "name": "St Melangell's churchyard",
+        "radius_m": 50
+      },
+      "story": "Burial pits found at this church site have been carbon-dated to between 1500 and 1000 BC, so the round churchyard at Pennant Melangell was a burial ground long before any yew we can see here. Today it is ringed by them. Six yews grow around the circular wall, four of them ancient, the largest 8.71 metres round at its narrowest point.\n\nThe church at the centre is the 12th-century shrine of St Melangell, at the head of a dead-end valley in the Berwyn hills. Her legend says she sheltered a hunted hare under her cloak and faced down a prince and his hounds, which is why she is the patron saint of hares, and why pilgrims still come up this valley.\n\nThe church says its yews are estimated to be 2,000 years old, and the National Churches Trust gives the same figure. Both are estimates rather than measurements. Others are more cautious, noting that certificates have dated some Welsh yews to only 500 to 800 years, so treat 2,000 as the church's figure and the honest range as wide.\n\nCome for the ring rather than one trunk. The yews, the circular wall and the small shrine church make one place to stand, and an observer for the Ancient Yew Group, visiting in 2008, called it a memorable site. Four miles up a lane from Llangynog, it is not a place you pass on the way to anywhere.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/pennant-melangell/",
+        "https://stmelangell.org/the-shrine-church-of-saint-melangell/",
+        "https://www.nationalchurchestrust.org/node/3080"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Pennant Melangell (Tim Hills, 1998)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/pennant-melangell/"
+      },
+      "access": "Free. Open churchyard of St Melangell's shrine church, at the end of a remote Berwyn valley road.",
+      "transport": "No railway or bus to the church. Buses reach Llangynog from Oswestry (check Traveline Cymru); from there it is about 4 miles (6 km) up the valley road on foot.",
+      "how_to_recognise": "You can recognise it by the yews ringing the circular churchyard wall, the largest 8.71 metres round. They stand around St Melangell's shrine church at the head of the valley above Llangynog.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Ancient_yew_tree%2C_St_Melangell%27s_Church%2C_Pennant_Melangell%2C_Wales.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Rosser1954",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Ancient_yew_tree,_St_Melangell%27s_Church,_Pennant_Melangell,_Wales.jpg",
+        "width": 5152,
+        "height": 3864,
+        "taken_month": "2024-08",
+        "status": "approved"
+      }
+    }
+  ]
+}

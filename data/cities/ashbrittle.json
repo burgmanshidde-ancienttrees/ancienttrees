@@ -1,0 +1,67 @@
+{
+  "city": "Ashbrittle",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Ashbrittle is a remote hilltop village west of Wellington in Somerset, and its yew grows on a grassy mound south-east of the church of St John the Baptist that may be a Bronze Age barrow. It measures 12.17 metres round near the ground, and in 2002 it was named one of 50 Great British Trees. There is no regular bus, so plan to drive. The churchyard is open and free.",
+  "meta_description": "Ashbrittle's yew, 12.17 metres round, grows on a mound that may be a Bronze Age barrow. One of 50 Great British Trees, with its disputed age.",
+  "question_meta": "Ashbrittle's ancient yew, 12.17 metres round, is over 1,000 years old on the Ancient Yew Group's banding. Claims of 3,000 years and more are undated.",
+  "question_answer": "The oldest tree in Ashbrittle is the yew in the churchyard of St John the Baptist, 12.17 metres round near the ground. The Ancient Yew Group's banding puts a yew this size at over 1,000 years. Popular claims of 3,000 years or more are repeated widely but rest on no dating.",
+  "question_context": "The Ashbrittle yew grows on a tumulus about one and a half metres high and fifteen metres across, south-east of the church. The mound is thought possibly to be a Bronze Age barrow, but that is unproven, and a few headstones stand around its edge. The Ancient Yew Group recorded the girth as 12.17 metres, measured five centimetres above the ground, and holds photographs of the tree from 1848, 1997 and 2014. Its age is where the stories outrun the evidence. Wikipedia repeats a belief that it is over 3,000 years old, and other claims go further. None of them comes from a dating, so we give the Group's girth band of over 1,000 years and leave the rest as folklore. The folklore is lively. Childless couples who visit its base are said to conceive within a year. In 2002 the Tree Council made it one of 50 Great British Trees for the Golden Jubilee. The Church Times reported it looking under the weather in 2015, and it was still standing then.",
+  "hero_tree_id": "asb_001",
+  "oldest_tree_id": "asb_001",
+  "faq": [
+    {
+      "q": "How old is the Ashbrittle yew?",
+      "a": "Nobody has dated it. The Ancient Yew Group's girth banding puts a yew of 12.17 metres at over 1,000 years. Claims of 3,000 years or more are popular but undated."
+    },
+    {
+      "q": "How do I get to Ashbrittle?",
+      "a": "It is a remote hilltop village west of Wellington with no railway, and we found no regular bus. Driving is the practical way."
+    }
+  ],
+  "trees": [
+    {
+      "id": "asb_001",
+      "name": "Ashbrittle Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 1,000 years, popular claims far older",
+      "age_min": 1000,
+      "age_max": 4000,
+      "age_basis": "derived",
+      "girth_cm": 1217,
+      "location": {
+        "address": "St John the Baptist Church, Ashbrittle, Somerset",
+        "latitude": 50.98368,
+        "longitude": -3.35183,
+        "neighbourhood": "Ashbrittle"
+      },
+      "location_site": {
+        "name": "St John the Baptist Church churchyard",
+        "radius_m": 30
+      },
+      "story": "The Ashbrittle yew grows on top of a mound that may be a Bronze Age burial barrow. Nobody has proved it. The mound is about one and a half metres high and fifteen across, it sits south-east of the church of St John the Baptist on its hilltop, and a few headstones stand round its edge. Whatever is underneath, the yew has claimed it.\n\nIts girth is enormous. The Ancient Yew Group recorded 12.17 metres at five centimetres off the ground,. For that size the Group's banding suggests well over 1,000 years. Wikipedia repeats a belief that it is over 3,000, and you will meet bolder figures still. None of them is a dating, and we do not repeat them as fact.\n\nIn 2002 the Tree Council chose it as one of 50 Great British Trees for the Queen's Golden Jubilee. Local folklore gives it another reputation. It says a childless couple who visit its base will conceive within a year. In 2015 the Church Times reported it looking under the weather, and it was still standing then.\n\nIt is a long way out, a hilltop village west of Wellington with no regular bus, and the drive is the price of standing next to it.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/ashbrittle/",
+        "https://en.wikipedia.org/wiki/Ashbrittle_Yew",
+        "https://www.churchtimes.co.uk/articles/2015/1-may/news/uk/oldest-tree-looks-under-the-weather"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 255 (Tim Hills 1997)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/ashbrittle/"
+      },
+      "access": "Free. Open public churchyard on a hilltop.",
+      "transport": "Remote hilltop village west of Wellington, Somerset; no railway, no regular bus found (check). Drive.",
+      "how_to_recognise": "You can recognise it by the grassy mound it grows on, about 15 metres across, with a few headstones round its edge. It stands south-east of the church of St John the Baptist.",
+      "photo": {
+        "url": "https://s0.geograph.org.uk/photos/11/97/119778_9ebc66dd.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Martin Bodman",
+        "attribution_url": "https://www.geograph.org.uk/photo/119778",
+        "status": "approved"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Girth 1217cm at 5cm (AYG tree 255, photos 1848, 1997, 2014). Grows on a tumulus (about 1.5m high, 15m across) SE of the church, thought possibly Bronze Age but unproven. One of the 50 Great British Trees chosen 2002 for the Golden Jubilee. Folklore: childless couples at its base conceive within a year. Wikipedia says believed over 3,000 years; Church Times 2015 reports it under the weather (condition check, still standing 2015). Mound edges hold a few headstones. Pin: AYG grid ref ST05202134 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; girth 1217cm at 5cm on a mound; popular claims of 3,000 to 4,000 years are undated and not repeated here as fact. Writing pass 2026-11-04: lead photo Geograph 119778 (Martin Bodman, 'Ashbrittle: the Ashbrittle Yew', 2006) approved; Geograph 6909907 (Rob Purvis, 2021) also shows it standing in 2021."
+    }
+  ]
+}

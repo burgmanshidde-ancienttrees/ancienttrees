@@ -1,0 +1,67 @@
+{
+  "city": "Farndon",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Farndon's yew has swallowed a rock about eight feet up its trunk. It stands near the north porch of St Chad's, in a village on the River Dee on the Welsh border, south of Chester. Local legend says Parliamentarian troops leaned their pikes and swords against it during the Civil War, when the church served as a barracks. It is a female tree, hollow in places under a large, healthy crown, and 6.22 metres round. Nobody has dated it. Free and open.",
+  "meta_description": "The Farndon yew at St Chad's on the Welsh border: a rock caught in its trunk and a Civil War legend of pikes leaned against it. Free to visit.",
+  "question_meta": "Farndon's oldest tree is the yew by St Chad's north porch, 6.22 metres round; no source gives it an age.",
+  "question_answer": "Farndon's oldest mapped tree is the female European Yew (Taxus baccata) near the porch on the north side of St Chad's church, about 12 km south of Chester. No source gives it an age. The Ancient Yew Group's size class places it above 500 years, and its recorders measured it at 6.22 metres round in 2010.",
+  "question_context": "Two recorders for the Ancient Yew Group, Dean Loftus and Kathy Pilling, visited on 2 October 2010 and measured 20 feet 5 inches at three feet up, noting the tree had undoubtedly been larger. They found much dead heartwood and hollows, a fluted inner stem where the sapwood shell of the original trunk has gone, signs that lower limbs were removed, and about eight feet up a rock some seven inches across that the trunk has grown around. The crown was large and healthy. The Civil War story, repeated by Britain Express and the Group, has Sir William Brereton's Parliamentarian troops resting their pikes and swords against the yew before entering the church; no record from the time has been found, so it stays a legend. St Chad's served as a barracks in the war and was rebuilt in 1658, all but the tower. The site may have been in use since Anglo-Saxon times, and the outline of the present church is 14th-century. The 2010 visit is the latest dated record.",
+  "hero_tree_id": "fdn_001",
+  "oldest_tree_id": "fdn_001",
+  "faq": [
+    {
+      "q": "How old is the Farndon yew?",
+      "a": "No source gives an age. The Ancient Yew Group's size class puts it above 500 years, and we go no further than that."
+    },
+    {
+      "q": "Is the Civil War story true?",
+      "a": "It is a local legend that Parliamentarian troops leaned their weapons against the yew. The church did serve as a barracks, but no record from the time mentions the tree."
+    },
+    {
+      "q": "Can you visit for free?",
+      "a": "Yes. St Chad's churchyard on the High Street is open, and the yew stands near the north porch."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fdn_001",
+      "name": "Farndon Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented (the Ancient Yew Group class puts it above 500 years)",
+      "age_min": 500,
+      "girth_cm": 622,
+      "location": {
+        "address": "St Chad's churchyard, High Street, Farndon, Chester",
+        "latitude": 53.08358,
+        "longitude": -2.87781,
+        "neighbourhood": "Farndon, Cheshire West and Chester"
+      },
+      "location_site": {
+        "name": "St Chad's churchyard, Farndon",
+        "radius_m": 30
+      },
+      "story": "About eight feet up its trunk, the Farndon yew has swallowed a rock some seven inches across. The Ancient Yew Group records it without saying how the stone got there.\n\nLocal legend gives the tree a part in the Civil War. Brereton's Parliamentarian troops are said to have leaned their pikes and swords against it before going into St Chad's, which served as a barracks in the war. Britain Express and the Ancient Yew Group both repeat the story. Neither cites a record from the time, so take it as the village's telling. The church was rebuilt in 1658, all but the tower.\n\nIt is a female tree near the porch on the north side. Much of its heartwood is dead and it is hollow in places, and a fluted inner stem shows where the sapwood shell of the original trunk has gone. Two recorders from the Group measured it at 20 feet 5 inches, 6.22 metres, three feet up in 2010, noted that it was undoubtedly larger once, and found a large, healthy crown.\n\nNo source gives it an age. The Group's size class puts it above 500 years, and we go no further. The site may have been in use since Anglo-Saxon times, and the outline of the present church is 14th-century.\n\nFarndon sits on the River Dee on the Welsh border, about 12 km south of Chester. Our latest record is from 2010, so a photograph would help.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/farndon/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Farndon-2019.pdf",
+        "https://britainexpress.com/counties/cheshire/churches/farndon.htm"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Farndon",
+        "url": "https://www.ancient-yew.org/yew_tree_database/farndon/"
+      },
+      "access": "Free. Open churchyard of St Chad's on the High Street.",
+      "transport": "No railway station. Farndon is on the River Dee about 12 km south of Chester; check the local bus operator for buses from Chester.",
+      "how_to_recognise": "You can recognise it by a rock about 18 centimetres across caught in its trunk, roughly eight feet up. It stands near the porch on the north side of St Chad's church.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

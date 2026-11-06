@@ -1,0 +1,72 @@
+{
+  "city": "Overton-on-Dee",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Overton-on-Dee owes its place among the Seven Wonders of Wales to the yews ringing the churchyard of St Mary the Virgin. Only a single yew among them, says the Ancient Yew Group, is of great age. It is a hollow male yew north-west of the church, broken into fragments and held together with yew props, clamps and railings. Wikipedia gives the oldest yew here 1,500 to 2,000 years; the Group gives no age. Free, in the middle of the village.",
+  "meta_description": "The yew trees of Overton-on-Dee, one of the Seven Wonders of Wales, and the propped, broken ancient yew among them. Free to visit.",
+  "question_meta": "Overton-on-Dee's oldest tree is the propped, hollow yew north-west of St Mary's church; Wikipedia says 1,500 to 2,000 years.",
+  "question_answer": "Overton-on-Dee's oldest mapped tree is the hollow male European Yew (Taxus baccata) north-west of St Mary the Virgin, in the churchyard yew ring counted among the Seven Wonders of Wales. Wikipedia puts the oldest yew here at 1,500 to 2,000 years. The Ancient Yew Group gives no age, so that figure is a claim, not a measurement.",
+  "question_context": "The wonder comes from an anonymous rhyme, probably by an English visitor in the late 18th or early 19th century, that sets the Overton yew trees beside Snowdon, Pistyll Rhaeadr, St Winefride's wells, Llangollen bridge, Wrexham steeple and Gresford bells. It means the ring of yews, not one tree, and the count has moved over the years: Edward Jones recorded 25 in 1802, John Lowe 22 in 1896, the Ancient Yew Group 23 in 1999. Queen Elizabeth II planted one in 1992. The Group says only one yew is of great age. Measured round three of its fragments it came to 15 feet 8 inches in 1999, around just two fragments 12 feet 4 inches; it is less a large tree than a very broken one. Railings went round it in 2004, and a photograph from March 2025 shows it still standing. The churchyard is a registered historic park and garden. Wikipedia's 1,500 to 2,000 years also appears in a 2007 photo caption.",
+  "hero_tree_id": "ovr_001",
+  "oldest_tree_id": "ovr_001",
+  "faq": [
+    {
+      "q": "Why are the Overton yews a wonder of Wales?",
+      "a": "An anonymous rhyme of the late 18th or early 19th century names the Overton yew trees among the Seven Wonders of Wales, alongside Snowdon and Llangollen bridge."
+    },
+    {
+      "q": "How old is the oldest Overton yew?",
+      "a": "Wikipedia says 1,500 to 2,000 years. The Ancient Yew Group gives no age, and neither figure rests on a measurement."
+    },
+    {
+      "q": "Which yew is the old one?",
+      "a": "The hollow, broken male yew north-west of the church, held together by props and clamps inside railings. The other perimeter yews are younger."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ovr_001",
+      "name": "Overton Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented by AYG; Wikipedia says 1,500 to 2,000 years for the oldest",
+      "age_basis": "source",
+      "girth_cm": 478,
+      "location": {
+        "address": "St Mary the Virgin churchyard, Overton-on-Dee, Wrexham LL13 0LE",
+        "latitude": 52.97007,
+        "longitude": -2.93481,
+        "neighbourhood": "Overton-on-Dee"
+      },
+      "location_site": {
+        "name": "St Mary's churchyard, Overton-on-Dee",
+        "radius_m": 50
+      },
+      "story": "Overton's churchyard yews are one of the Seven Wonders of Wales, and by the Ancient Yew Group's account only one of them is of great age.\n\nThe wonder comes from an anonymous rhyme, probably written by an English visitor in the late 18th or early 19th century, which sets the Overton yew trees beside Snowdon, Pistyll Rhaeadr and Llangollen bridge. It means the ring of yews round the churchyard of St Mary the Virgin, not one tree. People have counted them ever since. Edward Jones found 25 in 1802, John Lowe 22 in 1896, the Ancient Yew Group 23 in 1999. Queen Elizabeth II planted another in 1992.\n\nMost are perimeter trees of no great size. The old one is different. It is a male yew north-west of the church, hollow and broken into fragments, held together by yew props and clamps, with railings put round it in 2004. Measured round three of its fragments it came to 15 feet 8 inches in 1999. That is not a large girth for an ancient yew. It is a very broken one.\n\nWikipedia gives the oldest tree here 1,500 to 2,000 years, and the same range turns up in a photo caption of 2007. The Ancient Yew Group gives no age, and neither figure rests on a measurement, so read it as a claim. A photograph from March 2025 shows the propped tree standing.\n\nThe churchyard is a registered historic park and garden, in the middle of the village.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/userfiles/file/Overton-on-Dee-2019.pdf",
+        "https://en.wikipedia.org/wiki/Seven_Wonders_of_Wales",
+        "https://en.wikipedia.org/wiki/Overton-on-Dee",
+        "https://commons.wikimedia.org/wiki/File:Yew_Tree,_St_Mary%27s_Overton-on-Dee_-_geograph.org.uk_-_566977.jpg"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group, Overton-on-Dee site report (Tim Hills, 2019)",
+        "url": "https://www.ancient-yew.org/userfiles/file/Overton-on-Dee-2019.pdf"
+      },
+      "access": "Free. Open churchyard of St Mary the Virgin in the village centre.",
+      "transport": "No railway station in the village; check Traveline Cymru for buses.",
+      "how_to_recognise": "You can recognise it by the props and clamps holding its hollow, broken trunk together inside a ring of railings. It stands north-west of the church; the other yews round the edge of the churchyard are younger.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Yew_Tree%2C_St_Mary%27s_Overton-on-Dee_-_geograph.org.uk_-_566977.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Eirian Evans",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Yew_Tree,_St_Mary%27s_Overton-on-Dee_-_geograph.org.uk_-_566977.jpg",
+        "width": 480,
+        "height": 640,
+        "taken_month": "2007-09",
+        "status": "approved"
+      }
+    }
+  ]
+}

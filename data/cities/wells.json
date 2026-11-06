@@ -1,0 +1,113 @@
+{
+  "city": "Wells",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Wells keeps its old trees inside the grounds of the Bishop's Palace, on lawns Bishop Law laid out in 1825 and 1826 where part of the medieval Great Hall had stood. Two trees there carry their own dates. A tulip tree that the Palace puts at almost 200 years old turns gold against the ruins in autumn, and two black mulberries survive from five planted in 1897, joined in 2001 by a third, a birthday present for Bishop Bickersteth. Both stand inside the paid Palace gardens, five minutes on foot from Market Place.",
+  "meta_description": "Old trees of Wells: a tulip tree the Bishop's Palace puts at almost 200 years and two black mulberries planted in 1897, beside the Great Hall ruins.",
+  "question_meta": "The tulip tree in the Bishop's Palace gardens, almost 200 years old by the Palace's account, is the oldest tree we map in Wells.",
+  "question_answer": "The oldest tree we map in Wells is the tulip tree in the gardens of the Bishop's Palace, which the Palace says is almost 200 years old. It stands among the specimen trees on the great lawn near the ruins of the Great Hall, inside the paid Palace gardens, about five minutes' walk from Market Place.",
+  "question_context": "The Palace gardens took their present shape in 1825 and 1826, when Bishop Law remodelled them as pleasure grounds and laid out a great lawn with specimen trees where the south wall of the medieval Great Hall had been. The tulip tree's age, almost two centuries by the Palace's own account, fits that date, but no record we have found names it among Bishop Law's plantings, so the age is the owner's claim rather than a documented one. The black mulberries on the same lawns are younger and better documented. Five were planted in 1897, two of them survive at about 130 years old, and a third was added in 2001 as an 80th birthday present for Bishop Bickersteth. The gardens are Grade II registered and an RHS partner garden, run by The Palace Trust with paid entry. Wells has no railway station. Buses run from Bath and Bristol to the bus station, about five minutes on foot from the Palace gate on Market Place. Neither tree has a published girth or height. If you have measured either, tell us.",
+  "hero_tree_id": "wel_002",
+  "oldest_tree_id": "wel_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Wells?",
+      "a": "The oldest we map is the tulip tree in the Bishop's Palace gardens, which the Palace says is almost 200 years old. It stands on the great lawn near the ruins of the Great Hall."
+    },
+    {
+      "q": "How old are the mulberry trees at the Bishop's Palace?",
+      "a": "Two of the three black mulberries survive from five planted in 1897, so they are about 130 years old. The third was planted in 2001 as an 80th birthday present for Bishop Bickersteth."
+    },
+    {
+      "q": "Do you have to pay to see the trees at the Bishop's Palace?",
+      "a": "Yes. Both trees stand inside the Bishop's Palace gardens, which have paid entry. Opening days and prices are on the Palace's own website."
+    },
+    {
+      "q": "How do you get to the Bishop's Palace in Wells without a car?",
+      "a": "Wells has no railway station. Take a bus from Bath or Bristol to Wells bus station, then walk about five minutes to the Palace gate on Market Place."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wel_001",
+      "name": "The Black Mulberries of the Bishop's Palace",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "about 130 years",
+      "age_min": 125,
+      "age_max": 135,
+      "age_basis": "source",
+      "location": {
+        "address": "Palace lawns, The Bishop's Palace, Wells BA5 2PD",
+        "latitude": 51.2088,
+        "longitude": -2.6432,
+        "neighbourhood": "Wells city centre"
+      },
+      "story": "Five black mulberries were planted in the Bishop's Palace gardens in 1897. Two of them are still here, and since 2001 they have had company. A third mulberry was given to Bishop Bickersteth as a present for his 80th birthday, so the Palace now has three, an old pair and a young one.\n\nThat makes the survivors about 130 years old, a figure that comes from the documented planting date rather than an estimate, which is rarer than it sounds for a tree in an English garden. Black mulberries tend to grow into low, broad, leaning crowns that look older than they are, so a known date is the useful thing to have.\n\nThey stand on the wide lawns of the Palace gardens, laid out as pleasure grounds by Bishop Law in 1825 and 1826, with the roofless ruins of the bishops' Great Hall behind them. The gardens are a Grade II registered landscape and an RHS partner garden, and the mulberries share the lawns with other specimen trees, among them a tulip tree that the Palace says is almost 200 years old.\n\nNo girth has been published for either of the old pair. In late summer the dark fruit ripens on the branches.",
+      "verified_sources": [
+        "https://www.eghn.org/en/the-gardens-of-bishops-palace/",
+        "https://bishopspalace.org.uk/attractions/gardens/",
+        "https://www.parksandgardens.org/places/bishops-palace-the-wells"
+      ],
+      "access": "Paid entry to the Bishop's Palace and Gardens (RHS partner garden, Grade II registered, run by The Palace Trust); opening days and current prices on bishopspalace.org.uk. The trees stand inside the paid gardens.",
+      "transport": "Wells has no railway station; bus from Bath, Bristol or Wells bus station, about 5 minutes on foot to the Palace gate on Market Place",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "kind": "fruit",
+        "label": "late August into September, when the dark mulberries ripen on the old pair"
+      },
+      "how_to_recognise": "You can recognise the old pair by their low, broad crowns, two of the three black mulberries on the Palace lawns; the third, planted in 2001, is the young one. They stand on the wide lawns near the ruins of the Great Hall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "paid_entry": true
+    },
+    {
+      "id": "wel_002",
+      "name": "The Tulip Tree of the Bishop's Palace",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "almost 200 years",
+      "age_min": 170,
+      "age_max": 200,
+      "age_basis": "source",
+      "location": {
+        "address": "Palace gardens, near the Great Hall lawn, The Bishop's Palace, Wells BA5 2PD",
+        "latitude": 51.2092,
+        "longitude": -2.6436,
+        "neighbourhood": "Wells city centre"
+      },
+      "story": "By the Palace's own account, this tulip tree is almost 200 years old, a North American tree that has spent nearly two centuries growing beside the ruins of a medieval bishops' hall in Wells.\n\nThe setting was made for specimen trees. When Bishop Law remodelled the Palace gardens in 1825 and 1826, he laid out a great lawn planted with them where the south wall of the Great Hall had stood, with the ruins of the hall as its backdrop. The tulip tree's age fits that date. No record we have found names it among his plantings, though, so read the age as the owner's claim rather than a documented date.\n\nTulip trees are easy to pick out once you know the leaf. Each one is four-lobed with the tip cut off square, as if someone had taken scissors to it, a shape no native British tree has. In early summer the tree carries the cup-shaped flowers that give it its name, often high in the crown, and in autumn the whole tree turns gold and orange, which is when it stands out most clearly against the stone of the ruins.\n\nThe gardens are behind a ticket, and the Palace publishes no girth or height for the tree.",
+      "verified_sources": [
+        "https://www.eghn.org/en/the-gardens-of-bishops-palace/",
+        "https://bishopspalace.org.uk/attractions/gardens/",
+        "https://www.parksandgardens.org/places/bishops-palace-the-wells"
+      ],
+      "access": "Paid entry to the Bishop's Palace and Gardens (RHS partner garden, Grade II registered, run by The Palace Trust); opening days and current prices on bishopspalace.org.uk. The trees stand inside the paid gardens.",
+      "transport": "Wells has no railway station; bus from Bath, Bristol or Wells bus station, about 5 minutes on foot to the Palace gate on Market Place",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the squared-off leaves turn gold and orange against the ruins"
+      },
+      "how_to_recognise": "You can recognise it by its leaves, four-lobed with the tip cut off square, turning gold and orange in autumn. It stands among the specimen trees on the great lawn near the ruins of the Great Hall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "paid_entry": true
+    }
+  ]
+}

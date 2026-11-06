@@ -1,0 +1,66 @@
+{
+  "city": "Wimborne St Giles",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Wimborne St Giles lies north of Wimborne Minster in Dorset, and its churchyard sits beside the entrance to St Giles Park. The big male yew east-south-east of the church divides at about eight feet into six large limbs round a huge central branch. It first appeared in print in 1884, when Lord Shaftesbury pointed it out to The Quiver. A slimmer columnar yew grows to its south-east. The churchyard is open and free.",
+  "meta_description": "Lord Shaftesbury pointed out the Wimborne St Giles yew in 1884. Six great limbs round one central branch, 7.21 metres round, and how to find it.",
+  "question_meta": "Wimborne St Giles' oldest tree is the male yew east-south-east of St Giles church, 7.21 metres round at chest height, first recorded in 1884.",
+  "question_answer": "The oldest tree in Wimborne St Giles is the big yew east-south-east of St Giles church, 721 centimetres round at 120 centimetres up. The Ancient Yew Group places it in its ancient class of seven metres and over, an estimate from size. It was first mentioned in 1884, in the magazine The Quiver.",
+  "question_context": "This yew owes its first appearance in print to Lord Shaftesbury, who pointed it out to The Quiver in 1884. Peter Andrews measured it for the Ancient Yew Group in 2006 at 721 centimetres, taken at 120 centimetres up, close to chest height, where many churchyard yew figures are taken much nearer the ground. It is a male tree, and its shape is distinctive. At about eight feet the trunk divides into six large limbs that stand round one huge central branch. The Group classes yews over seven metres as ancient, which is an estimate from girth and not a dating. The church beside it was rebuilt in the 18th century, and the churchyard sits next to the entrance to St Giles Park. It was photographed again in 2026. One thing to watch for is the second yew. A slimmer, columnar male tree grows to the south-east, about 3.4 metres round at two feet. The ancient one is the broad, many-limbed tree east-south-east of the church.",
+  "hero_tree_id": "wsg_001",
+  "oldest_tree_id": "wsg_001",
+  "faq": [
+    {
+      "q": "Which yew is the old one at Wimborne St Giles?",
+      "a": "The broad yew east-south-east of the church, branching into six big limbs at about eight feet. The slim columnar yew to the south-east is a different, smaller tree."
+    },
+    {
+      "q": "How do I get to Wimborne St Giles?",
+      "a": "It is a village north of Wimborne Minster. A bus serves the area; check the timetable, or drive."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wsg_001",
+      "name": "Wimborne St Giles Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 1500,
+      "age_basis": "derived",
+      "girth_cm": 721,
+      "location": {
+        "address": "St Giles Church, Wimborne St Giles, Dorset",
+        "latitude": 50.90703,
+        "longitude": -1.95598,
+        "neighbourhood": "Wimborne St Giles"
+      },
+      "location_site": {
+        "name": "St Giles Church churchyard",
+        "radius_m": 30
+      },
+      "story": "This yew first appeared in print in 1884, because Lord Shaftesbury pointed it out. The magazine was The Quiver, and the churchyard sits beside the entrance to St Giles Park. More than 140 years later it is still the tree to look at in this village north of Wimborne Minster.\n\nIts shape is what sets it apart. At about eight feet up the trunk divides into six large limbs arranged round a huge central branch. Peter Andrews measured the girth at 721 centimetres at 120 centimetres up in 2006, taken near chest height, where most churchyard yew records are taken much lower.\n\nIt is a male tree. The Ancient Yew Group puts a yew of this girth in its ancient class, seven metres and over, as an estimate from size. The church beside it was rebuilt in the 18th century. The yew was photographed again in 2026.\n\nDo not confuse it with its neighbour. A second male yew grows to the south-east, slim and columnar and about 3.4 metres round. The one you want is the broad one east-south-east of the church.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/wimborne-st-giles-churchyard/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Wimborne-St-Giles-2019a.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 2183 (Peter Andrews 2006)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/wimborne-st-giles-churchyard/"
+      },
+      "access": "Free. Open public churchyard beside the entrance to St Giles Park.",
+      "transport": "Village north of Wimborne Minster, Dorset; Wilts and Dorset bus in the area (check). Drive.",
+      "how_to_recognise": "You can recognise it by the trunk splitting into six big limbs round a central branch at about eight feet. It stands east-south-east of St Giles church; the slim columnar yew to the south-east is a younger one.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Yew_tree%2C_St_Giles_Church_-_geograph.org.uk_-_2787867.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Maigheach-gheal",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Yew_tree,_St_Giles_Church_-_geograph.org.uk_-_2787867.jpg",
+        "status": "approved"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Girth 721cm at 120cm (Andrews 2006), male, branching at about 8ft with six large limbs round a huge central branch; photographed 2026 (Norton). Earliest mention 1884, The Quiver (Lord Shaftesbury pointed it out). A second, columnar male yew (343cm at 2ft) grows SE. Church rebuilt 18th century. Flagged: AYG only. Pin: AYG grid ref SU0319111952 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; AYG class Ancient 7m+, girth 721cm at 120cm. Writing pass 2026-11-04: Geograph 2787867 ('Yew tree, St Giles Church') held: a massive trunk, very likely the old yew rather than the slim columnar one, but neither title nor geotag says which of the two yews. Photo pass 2026-11-04 (approved): Commons file titled Yew tree, St Giles Church (Geograph import), 14 m from the pin; the deeply fluted trunk fills the frame beside the church wall, daylight (photo_light WEAK). The writing pass held it because two yews stand here; the other is a slim columnar tree of 343 cm, and this is a massive multi-limbed trunk, so it is the old yew."
+    }
+  ]
+}

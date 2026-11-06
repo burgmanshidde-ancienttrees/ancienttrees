@@ -1,0 +1,65 @@
+{
+  "city": "Kingston St Mary",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Kingston St Mary is a village just north of Taunton, and south-west of its Church of the Blessed Virgin Mary stands a yew that split apart long ago. Its hollow trunk has divided into four fragments that now stand as separate trunks in a ring, 10.03 metres round at the ground. Nobody has found an early written record of it. The churchyard is open and free, with a local bus from Taunton.",
+  "meta_description": "Near Taunton, the Kingston St Mary yew has split into four trunks standing in a ring 10.03 metres round, with no early record of it found anywhere.",
+  "question_meta": "Kingston St Mary's oldest tree is a split yew, four trunks in a ring 10.03 metres round, in the Ancient Yew Group's top girth class of seven metres.",
+  "question_answer": "The oldest tree in Kingston St Mary is the yew south-west of the Church of the Blessed Virgin Mary, a hollow tree split into four trunks with a ring 10.03 metres round at ground level. The Ancient Yew Group places it in its top class, seven metres and over. Nobody has dated it.",
+  "question_context": "When Tim Hills recorded this yew in 2001, the ancient trunk had long since been divided by its hollow into four fragments, which now stand as separate trunks and were full of ivy at the time. Measured round the whole ring at ground level, it came to 10.03 metres, and Wondermondo gives the same figure. Because that is the girth of a circle of fragments rather than of one stem, it describes the footprint of the old tree, not the width of any single trunk. The Ancient Yew Group classes yews of seven metres and over as ancient, with an age band starting at about 800 years. That is an estimate from size, not a dating. Unusually for a yew this big, the Group found no early reference to it at all. The church dates from about 1225, so the tree has had eight centuries of neighbours who apparently never wrote it down. Photographs were updated in 2016. If you know an older mention, in a parish history, a painting or a letter, tell us.",
+  "hero_tree_id": "ksm_001",
+  "oldest_tree_id": "ksm_001",
+  "faq": [
+    {
+      "q": "Why does the Kingston St Mary yew have four trunks?",
+      "a": "Its trunk hollowed and split into four fragments that now stand apart. The 10.03 metre girth is measured round the whole ring."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "A local bus runs from Taunton to Kingston St Mary; check the timetable. There is no railway."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ksm_001",
+      "name": "Kingston St Mary Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 1500,
+      "age_basis": "derived",
+      "girth_cm": 1003,
+      "location": {
+        "address": "Church of the Blessed Virgin Mary, Kingston St Mary, Somerset",
+        "latitude": 51.06149,
+        "longitude": -3.1105,
+        "neighbourhood": "Kingston St Mary"
+      },
+      "location_site": {
+        "name": "Church of the Blessed Virgin Mary churchyard",
+        "radius_m": 30
+      },
+      "story": "This yew broke into four pieces long ago and carried on as four trees. When Tim Hills recorded it in 2001, the ancient trunk had been split by its own hollow into separate fragments, standing apart in a ring and filled with ivy. Measured round the outside of that ring at ground level, the tree came to 10.03 metres, a figure Wondermondo repeats.\n\nThat number describes the whole circle, not a single stem, so treat it as the footprint of the old tree rather than the width of any one trunk. Yews this size fall in the Ancient Yew Group's top class, seven metres and up, which puts it in the band they call ancient. There is no dating behind it, and nobody has found an early written reference to this yew at all. For a tree of this size in a church that dates from about 1225, that silence is its own small mystery.\n\nWhat survives is a ring of trunks south-west of the Church of the Blessed Virgin Mary, in a village just north of Taunton. Photographs were updated in 2016. If you know anything older about it, a mention in a parish history or a sketch, tell us. Somebody in eight centuries of this churchyard must have noticed it.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/kingston-st-mary/",
+        "https://www.wondermondo.com/yew-at-kingston/"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 544 (Tim Hills 2001)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/kingston-st-mary/"
+      },
+      "access": "Free. Open public churchyard, yew SW of the church.",
+      "transport": "Village north of Taunton; local bus to Kingston St Mary from Taunton (check timetable). No railway.",
+      "how_to_recognise": "You can recognise it by the ring of separate trunks, fragments of one hollow yew that split apart. It stands south-west of the Church of the Blessed Virgin Mary.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Ground girth 1003cm (Hills 2001); Wondermondo gives 10.03m. Ancient trunk long since divided by a hollow into four fragments (Hills 2001) that stand as separate trunks, ivy-filled in 2001. Photo update 2016. AYG found no early reference to this yew. Church c1225. Pin: AYG grid ref ST22272971 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; ground girth 1003cm (split into fragments, so girth is of the whole ring); AYG class Ancient 7m+."
+    }
+  ]
+}

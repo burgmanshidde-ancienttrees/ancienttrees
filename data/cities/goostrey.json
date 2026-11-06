@@ -1,0 +1,70 @@
+{
+  "city": "Goostrey",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Goostrey's yew outlived the village's wooden church. When the wooden church of about 1220 was replaced by St Luke's in 1792, the builders kept the old tree by the entrance. Today it is a male yew whose heart has become a low platform of heartwood, about 25 feet round close to the ground. The parish and the church both call it about 1,200 years old, with a certificate inside the church door. Free, and the village has its own station.",
+  "meta_description": "The Goostrey yew beside St Luke's church, Cheshire: kept when the church was rebuilt in 1792, about 25 feet round, said to be 1,200 years old.",
+  "question_meta": "Goostrey's oldest tree is the yew by St Luke's south entrance; the parish says about 1,200 years, early writers at least 1,000.",
+  "question_answer": "Goostrey's oldest mapped tree is the male European Yew (Taxus baccata) just beside the south entrance of St Luke's church in Cheshire. The parish council and the church say it is about 1,200 years old, and writers in 1825 and the 1830s said at least a thousand. Neither figure is a measurement.",
+  "question_context": "In 1825 Hulbert's Museum Europaeum described a remarkably large yew at Goostrey, calculated to have stood at least a thousand years. A letter to the Gentleman's Magazine in the 1830s gave it twelve yards round and the same age. When Tim Hills of the Ancient Yew Group measured it on 10 August 1999, he found about 25 feet, 7.62 metres, close to the ground just above the spreading roots, and classed it as an exceptional ancient yew. He described the trunk as a platform of heartwood about three feet high and four and a half feet across, held together by crumbling sapwood. The present church of 1792 replaced a wooden church of about 1220, and the 18th-century rebuilders kept the yew, according to a 1992 history of St Luke's and its tree cited by Wikipedia. The church keeps a framed preservation certificate inside the door recording the tree's age. That 1999 visit is the latest dated record we have, so a recent photograph would help.",
+  "hero_tree_id": "goo_001",
+  "oldest_tree_id": "goo_001",
+  "faq": [
+    {
+      "q": "How old is the Goostrey yew?",
+      "a": "The parish council and church say about 1,200 years, and writers in 1825 and the 1830s said at least 1,000. None of these figures is a measurement."
+    },
+    {
+      "q": "Why did it survive the rebuilding of the church?",
+      "a": "When St Luke's was rebuilt in 1792, replacing a wooden church of about 1220, the builders kept the old yew, according to a 1992 history of the church."
+    },
+    {
+      "q": "Can you get there by train?",
+      "a": "Goostrey has its own station on the Crewe to Manchester line. The churchyard on Church Bank is free and open."
+    }
+  ],
+  "trees": [
+    {
+      "id": "goo_001",
+      "name": "Goostrey Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 1,000 years (the church says about 1,200)",
+      "age_min": 800,
+      "age_max": 1500,
+      "girth_cm": 762,
+      "location": {
+        "address": "St Luke's churchyard, Church Bank, Goostrey, Crewe",
+        "latitude": 53.22685,
+        "longitude": -2.33209,
+        "neighbourhood": "Goostrey, Cheshire East"
+      },
+      "location_site": {
+        "name": "St Luke's churchyard, Goostrey",
+        "radius_m": 30
+      },
+      "story": "When Goostrey rebuilt its church in the 18th century, it kept the yew. A wooden church of about 1220 gave way to the St Luke's of 1792, and the old tree by the entrance stayed where it was, as a short history of the church and its yew recorded in 1992.\n\nIt was famous already. In 1825 Hulbert's Museum Europaeum described a remarkably large yew, calculated to have stood at least a thousand years, and a letter to the Gentleman's Magazine in the 1830s gave it twelve yards round and the same thousand years. Twelve yards is 36 feet. When Tim Hills of the Ancient Yew Group measured it in 1999, he found about 25 feet close to the ground, 7.62 metres, just above the spreading roots.\n\nWhat he described was a male tree whose heart has become a platform of heartwood about three feet high and four and a half across, held together by crumbling sapwood. The Group classes it as exceptional.\n\nThe parish council speaks of the village's 1,200-year-old yew, and the church says it is believed to be around 1,200 years old, with a framed certificate inside the door recording the figure. Neither says what the number rests on, so it is the parish's figure, not a measurement.\n\nThat 1999 visit is our latest firm record of the tree, so a dated photograph from you would help. It stands just beside the south entrance of St Luke's.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/goostrey/",
+        "https://www.ancient-yew.org/userfiles/file/Goostrey%202019.pdf",
+        "https://goostreyparishcouncil.gov.uk/parish-history",
+        "https://www.achurchnearyou.com/church/12766/page/83297/view",
+        "https://en.wikipedia.org/wiki/St_Luke%27s_Church,_Goostrey"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Goostrey",
+        "url": "https://www.ancient-yew.org/yew_tree_database/goostrey/"
+      },
+      "access": "Free. Open churchyard of St Luke's, Church Bank, Goostrey.",
+      "transport": "Goostrey has its own railway station on the Crewe to Manchester line; check the walk to Church Bank on a map.",
+      "how_to_recognise": "You can recognise it by its low, broad trunk, a platform of old heartwood about a metre high. It stands just beside the south entrance of St Luke's church.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

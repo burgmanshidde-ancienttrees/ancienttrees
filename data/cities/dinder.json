@@ -1,0 +1,65 @@
+{
+  "city": "Dinder",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Dinder is a village about four kilometres east of Wells, and south-east of its church of St Michael and All Angels grows a yew 9.12 metres round at the ground. The Ancient Yew Group puts it in its top class. Its one old description, from an 1857 guide, may actually belong to the yew at Dunster. The churchyard is open and free, and a bus runs from Wells.",
+  "meta_description": "Four kilometres from Wells, the Dinder yew is 9.12 metres round at the ground, and its one old description may belong to a tree at Dunster.",
+  "question_meta": "Dinder's oldest tree is the yew south-east of St Michael and All Angels, 9.12 metres round at the ground, a short trip from Wells.",
+  "question_answer": "The oldest tree in Dinder is the yew south-east of the church of St Michael and All Angels, 912 centimetres round at ground level. The Ancient Yew Group places it in its top class of seven metres and over, which it treats as ancient. That is an estimate from girth; nobody has dated it.",
+  "question_context": "Tim Hills measured the Dinder yew at 912 centimetres at ground level in 1997, and Peter Norton photographed it in 2015. Beyond that, its written history is thin and possibly borrowed. An 1857 Guide to Minehead and Its Environs, quoted by the Ancient Yew Group, describes a yew of great age and formerly of considerable extent. The Group gives the identical sentence for the yew at Dunster, so the line probably cannot be relied on for Dinder at all. The Group classes yews over seven metres as ancient, an estimate from size rather than a date. The church of St Michael and All Angels is Grade II* and may stand on a Saxon site. Dinder is four kilometres east of Wells, close enough to fit around a visit to the city, and a bus runs between the two. If you know of an old record that names this tree and not Dunster's, tell us.",
+  "hero_tree_id": "din_001",
+  "oldest_tree_id": "din_001",
+  "faq": [
+    {
+      "q": "How far is Dinder from Wells?",
+      "a": "About four kilometres east. A bus runs from Wells; check the timetable."
+    },
+    {
+      "q": "Where is the yew in Dinder churchyard?",
+      "a": "South-east of the church of St Michael and All Angels."
+    }
+  ],
+  "trees": [
+    {
+      "id": "din_001",
+      "name": "Dinder Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 1500,
+      "age_basis": "derived",
+      "girth_cm": 912,
+      "location": {
+        "address": "St Michael and All Angels Church, Dinder, Somerset",
+        "latitude": 51.19898,
+        "longitude": -2.60929,
+        "neighbourhood": "Dinder"
+      },
+      "location_site": {
+        "name": "St Michael and All Angels Church churchyard",
+        "radius_m": 30
+      },
+      "story": "The only old description of the Dinder yew may belong to another tree. An 1857 Guide to Minehead and Its Environs, quoted by the Ancient Yew Group, describes a yew of great age and formerly of considerable extent. The trouble is that the Group gives the identical sentence for the yew at Dunster, so it probably cannot be trusted for either. Dinder's tree is left with its measurements and not much else.\n\nThe measurements are worth having. Tim Hills found 912 centimetres at ground level in 1997, which puts it in the Group's top class of yews over seven metres, ancient by their banding. That is an estimate from girth and not a date. Peter Norton photographed it in 2015.\n\nIt stands south-east of St Michael and All Angels, a Grade II* church that may stand on a Saxon site. The village is about four kilometres east of Wells, which makes this an easy add-on to a day in the cathedral city.\n\nIf you know of a better old record, something that names Dinder and not Dunster, tell us. This yew deserves a first mention of its own.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/dinder/",
+        "https://en.wikipedia.org/wiki/Church_of_St_Michael,_Dinder"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 407 (Tim Hills 1997)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/dinder/"
+      },
+      "access": "Free. Open public churchyard; yew SE of the church.",
+      "transport": "Village 4km east of Wells; bus from Wells (check). No railway.",
+      "how_to_recognise": "You can recognise it as the big yew, over nine metres round at the ground. It stands south-east of St Michael and All Angels church in Dinder.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Girth 912cm at ground (Hills 1997; photo Norton 2015). 1857 Guide to Minehead and Its Environs (quoted by AYG; AYG gives the identical sentence for Dunster, so treat as unreliable) described 'a yew of great age and formerly of considerable extent'. Church possibly Saxon site, Grade II*. Flagged: AYG register plus church Wikipedia page, which does not itself describe the yew. Pin: AYG grid ref ST57524459 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; AYG class Ancient 7m+, girth 912cm at ground."
+    }
+  ]
+}

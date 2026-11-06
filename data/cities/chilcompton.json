@@ -1,0 +1,65 @@
+{
+  "city": "Chilcompton",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Chilcompton, a village near Midsomer Norton in Somerset, has the one ancient yew the Diocese of Bath and Wells listed in this parish in 2013. It stands south-west of the church of St John the Baptist, 7.8 metres round at the root crown. The most recent photograph we know of dates from 2006, so a visitor's picture would be welcome. The churchyard is open and free, with buses from Midsomer Norton and Bath.",
+  "meta_description": "The Diocese of Bath and Wells counted one ancient yew at Chilcompton, 7.8 metres round at the root crown. Where it stands and how to reach it by bus.",
+  "question_meta": "Chilcompton's oldest tree is the yew south-west of St John the Baptist's church, 7.8 metres round, the parish's only ancient yew on the diocese list.",
+  "question_answer": "The oldest tree in Chilcompton is the yew south-west of the church of St John the Baptist, 780 centimetres round at the root crown. The Ancient Yew Group places it in its top class of seven metres and over, and the Diocese of Bath and Wells listed it as the parish's one ancient yew in 2013. Nobody has dated it.",
+  "question_context": "Tim Hills recorded the Chilcompton yew at 780 centimetres at the root crown, the point where the trunk flares into its roots, and photographed it in 2006. That girth places it in the Ancient Yew Group's top class, seven metres and over, which the Group treats as ancient. As with every age read from a tape, that is an estimate from size and not a dating. The Diocese of Bath and Wells, in its list of ancient yews, counted one ancient yew in this churchyard in 2013. The tree stands south-west of St John the Baptist, a church on the northern edge of the village. There is one gap. The latest photograph we have found is from 2006, and we have no more recent sighting. If you visit, a photograph of the tree would settle the question for everyone who comes after you. Buses run to Chilcompton from Midsomer Norton and from Bath, so this one is reachable without a car.",
+  "hero_tree_id": "chp_001",
+  "oldest_tree_id": "chp_001",
+  "faq": [
+    {
+      "q": "Is the Chilcompton yew still standing?",
+      "a": "The latest photograph we know of is from 2006 and the diocese listed it in 2013. We have no more recent sighting, so a visitor's photograph would help."
+    },
+    {
+      "q": "How do I get to Chilcompton?",
+      "a": "Buses run from Midsomer Norton and Bath; check the current timetable."
+    }
+  ],
+  "trees": [
+    {
+      "id": "chp_001",
+      "name": "Chilcompton Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 1500,
+      "age_basis": "derived",
+      "girth_cm": 780,
+      "location": {
+        "address": "St John the Baptist Church, Chilcompton, Somerset",
+        "latitude": 51.2697,
+        "longitude": -2.50745,
+        "neighbourhood": "Chilcompton"
+      },
+      "location_site": {
+        "name": "St John the Baptist Church churchyard",
+        "radius_m": 30
+      },
+      "story": "When the Diocese of Bath and Wells listed its ancient yews in 2013, Chilcompton had exactly one, and this is it. It stands south-west of the church of St John the Baptist, on the northern edge of a village near Midsomer Norton.\n\nTim Hills measured it at 780 centimetres at the root crown, where the trunk meets the roots. That is big enough for the Ancient Yew Group's top class, seven metres and over, the band they call ancient. As with any age read from a tape, it is an estimate from size and not a dating.\n\nWe should be plain about one thing. The most recent photograph we know of dates from 2006, and we have found no later record. We cannot promise you what you will find. If you visit, a photograph would settle it for everyone who comes after you.\n\nBuses run to the village from Midsomer Norton and Bath, so this is an ancient yew you can reach without a car, which in rural Somerset is not a given.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/chilcompton-churchyard/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/04/Bath-and-Wells-diocese-introduction.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 353 (Tim Hills 1997)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/chilcompton-churchyard/"
+      },
+      "access": "Free. Open public churchyard; yew SW of the church.",
+      "transport": "Village near Midsomer Norton, Somerset; bus from Midsomer Norton and Bath (check).",
+      "how_to_recognise": "You can recognise it as the big yew south-west of the church of St John the Baptist, about 7.8 metres round at its base.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Girth 780cm at root crown (AYG tree 353, photo Hills 2006). Also on the Bath and Wells diocese list of ancient yews (2013: 1 ancient). Flagged: AYG only, last photo 2006, no recent life check. Pin: AYG grid ref ST64695240 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; AYG class Ancient 7m+, girth 780cm at root crown."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "city": "Lanercost",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Lanercost's leaning yew is hollow enough to hold half a dozen people, through a small hole in its shell. It stands in the burial ground north-east of the priory church near Brampton, close beside a female yew, and has barely widened since the 1890s, a few years after a gale tore away much of its crown. The priory ruins are in English Heritage's care. No source gives either tree an age, and the last measurement was in 2002. The churchyard is free.",
+  "meta_description": "The Lanercost Priory yews near Brampton, Cumbria: a leaning hollow male and a female yew beside it, in the priory burial ground.",
+  "question_meta": "Lanercost's oldest tree is the leaning, hollow male yew in the priory burial ground; no source gives it an age.",
+  "question_answer": "Lanercost's oldest mapped tree is the leaning male European Yew (Taxus baccata) in the burial ground north-east of Lanercost Priory church, near Brampton in Cumbria. No source gives it an age. The Ancient Yew Group classes it as ancient, and it was already old and broken when John Lowe described it in the 1890s.",
+  "question_context": "A gale in November 1891 took much of the male yew's crown, and when John Lowe wrote it up for his Yew Trees of Great Britain and Ireland in 1897 it was hollow, broken at fifteen feet and forming a new head. Lowe gave 14 feet round at three feet up. Graham Wilkinson found 14 feet 8 inches in 1997, and Tim Hills of the Ancient Yew Group 14 feet 5 inches, 4.40 metres, in 2002; at the ground the lean stretches the figure to 5.44 metres. Ken Mills's Cumbrian Yew Book of 1999 says half a dozen people can get inside through a small hole in the shell. The female beside it is smaller, 11 feet 6 inches at three feet up in 2002, with a patch of old white sapwood showing and traces at her base of a lost twin trunk. Wilkinson also noted another large yew to the south, near the Prior's House. Every record so far comes from yew recorders, and the 2002 visit is the latest.",
+  "hero_tree_id": "lnc_001",
+  "oldest_tree_id": "lnc_001",
+  "faq": [
+    {
+      "q": "How old are the Lanercost yews?",
+      "a": "No source gives either tree an age. The male was already hollow and broken when John Lowe described it in 1897."
+    },
+    {
+      "q": "Which tree is the old one?",
+      "a": "The leaning male, hollow, with a small hole into its shell and a female yew close beside it, in the burial ground north-east of the priory church."
+    },
+    {
+      "q": "Can you visit for free?",
+      "a": "Yes. The churchyard is free. The priory ruins are an English Heritage site; check their opening times with English Heritage."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lnc_001",
+      "name": "Lanercost Priory Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented (hollow veteran, over 130 years on record)",
+      "girth_cm": 544,
+      "location": {
+        "address": "Lanercost Priory churchyard, Lanercost, Brampton",
+        "latitude": 54.966,
+        "longitude": -2.69521,
+        "neighbourhood": "Lanercost, Cumberland"
+      },
+      "location_site": {
+        "name": "Lanercost Priory churchyard (burial ground NE of the church)",
+        "radius_m": 40
+      },
+      "story": "Half a dozen people can fit inside the leaning yew at Lanercost, through a small hole in its hollow shell, according to Ken Mills's Cumbrian Yew Book of 1999. The tree has taken hard knocks to get there. A gale in November 1891 tore away much of its crown, and when John Lowe described it a few years later it was hollow, broken at fifteen feet and forming a new head.\n\nSince then it has hardly widened. Lowe gave it 14 feet round at three feet up in 1896 or 1897. A hundred years on, Graham Wilkinson found 14 feet 8 inches, and Tim Hills of the Ancient Yew Group 14 feet 5 inches in 2002. Taken at the ground, where the lean stretches it, the figure is 5.44 metres.\n\nIt stands in the burial ground north-east of the priory church, close beside a female yew. She has a patch of old white sapwood showing and traces at her base of a twin trunk that was lost. Wilkinson also noted another large yew to the south, near the Prior's House.\n\nThe priory ruins are in the care of English Heritage. No source gives either tree an age, and the last measurement was taken in 2002. If you visit, tell us how the pair are doing and send a photograph.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/lanercost-priory/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Lanercost-Priory-2019.pdf",
+        "https://ancient-yew.org/wp-content/uploads/2024/11/Cumbria-girth-grid-2022.pdf",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/03/Cumbria-Graham-Wilkinson.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Lanercost Priory",
+        "url": "https://www.ancient-yew.org/yew_tree_database/lanercost-priory/"
+      },
+      "access": "Free. Open churchyard of Lanercost Priory; the priory ruins are an English Heritage site; check English Heritage for their opening times.",
+      "transport": "No station in the village. Lanercost is a few miles from Brampton; check the local bus operator for buses.",
+      "how_to_recognise": "You can recognise it by its lean and the small hole into its hollow shell, with a female yew close beside it. They stand in the burial ground north-east of the priory church.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "city": "Gresford",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Gresford maps one tree: the great yew of All Saints' churchyard, 8.99 metres round and, by the Ancient Yew Group's reckoning, older than the 13th-century part of the church. Wikipedia's account of the church says it was already ancient when Richard II ordered yews planted for longbows. Thirty-three younger yews share the churchyard. The village is in the Seven Wonders of Wales rhyme for its bells, not its tree. Free, near Wrexham.",
+  "meta_description": "The Gresford Yew near Wrexham: 8.99 metres round, older than the 13th-century church beside it, among 33 younger yews. Free churchyard.",
+  "question_meta": "Gresford's oldest tree is the Gresford Yew in All Saints' churchyard, older than the church's 13th-century fabric; no measured age exists.",
+  "question_answer": "Gresford's oldest and only mapped tree is the Gresford Yew, a European Yew (Taxus baccata) in All Saints' churchyard, Gresford, near Wrexham. The Ancient Yew Group says it is certainly older than the 13th-century part of the church and measured it at 8.99 metres round in 1999. Nobody has published a measured age.",
+  "question_context": "All Saints' churchyard holds 34 yews, and only one of them is ancient by the Ancient Yew Group's standard. The other 33 are younger trees, which makes the great one easy to pick out at nearly nine metres round. The church counts its yews among its remarkable features, and Wikipedia's account of All Saints' says this tree was already ancient when Richard II ordered yews planted for longbows in the 14th century. Beyond that its age is guesswork, and round numbers attached to it are not ones we can trace to a firm source, so ancient is the honest word. Gresford appears in the old rhyme of the Seven Wonders of Wales, but for its church bells, not its yew. The village is also known for the Gresford colliery disaster of 1934, in which 266 men died underground, and the yew was already old then. Buses between Wrexham and Chester stop in Gresford, and the churchyard is open and free.",
+  "hero_tree_id": "gfd_001",
+  "oldest_tree_id": "gfd_001",
+  "faq": [
+    {
+      "q": "How old is the Gresford Yew?",
+      "a": "No measured age exists. The Ancient Yew Group says it is certainly older than the 13th-century part of All Saints' Church."
+    },
+    {
+      "q": "Is the Gresford Yew one of the Seven Wonders of Wales?",
+      "a": "No. The rhyme names Gresford's church bells. The yew stands in the same churchyard."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "Buses between Wrexham and Chester stop in Gresford, a short walk from All Saints'. The churchyard is free and open."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gfd_001",
+      "name": "Gresford Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "ancient, older than the 13th-century church (Ancient Yew Group); no measured age",
+      "age_basis": "source",
+      "girth_cm": 899,
+      "location": {
+        "address": "All Saints' churchyard, Church Street, Gresford, Wrexham LL12 8RG",
+        "latitude": 53.08792,
+        "longitude": -2.97749,
+        "neighbourhood": "Gresford"
+      },
+      "location_site": {
+        "name": "All Saints' churchyard",
+        "radius_m": 50
+      },
+      "story": "The Seven Wonders of Wales rhyme remembers Gresford for its church bells. It could have picked the yew. The Ancient Yew Group says the Gresford Yew is certainly older than the 13th-century fabric of All Saints', and it measured the trunk at 8.99 metres round in 1999.\n\nIt does not stand alone. The churchyard holds 33 younger yews, and the church lists them among its remarkable features. Wikipedia's account of the church says this one was already an ancient tree when Richard II ordered yews planted for longbows, which would make it old in the 14th century.\n\nEverything else about its age is guesswork, and we would rather say so. No one has published a measured age, and the round numbers you may hear are not ones we can trace. Ancient is the honest word, and the 13th-century church is the firmest clue.\n\nIt was already an old tree when the Gresford colliery disaster of 1934 killed 266 men underground.\n\nThe churchyard is open. Find the biggest of the yews; at nearly nine metres round, it is not hard.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/gresford/",
+        "https://en.wikipedia.org/wiki/All_Saints%27_Church,_Gresford"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Gresford (Tim Hills, 1999)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/gresford/"
+      },
+      "access": "Free. Open churchyard of All Saints', Gresford.",
+      "transport": "Buses between Wrexham and Chester stop in Gresford, a short walk from the church; check the operator's timetable. Gresford no longer has a railway station.",
+      "how_to_recognise": "You can recognise it by its size, nearly nine metres round, far bigger than any of the 33 younger yews around it. It stands in All Saints' churchyard, Gresford.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Ancient_yew_at_All_Saints%27%2C_Gresford_-_geograph.org.uk_-_1464989.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "John S Turner",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Ancient_yew_at_All_Saints%27,_Gresford_-_geograph.org.uk_-_1464989.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

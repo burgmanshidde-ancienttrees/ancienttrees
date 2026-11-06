@@ -1,0 +1,67 @@
+{
+  "city": "Lytchett Matravers",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Lytchett Matravers is a village north-west of Poole, and by the north door of its Grade I church of St Mary the Virgin stands an old yew 6.48 metres round, first recorded in a Post Office Directory of 1855. A much younger yew grows nearby and is easy to mistake for it. The churchyard is open and free, with a local bus from Poole, though driving is easier.",
+  "meta_description": "First recorded in an 1855 Post Office Directory, the Lytchett Matravers yew stands by the north door of St Mary the Virgin, probably over 600 years old.",
+  "question_meta": "Lytchett Matravers' oldest tree is the yew by the north door of St Mary the Virgin, probably over 600 years old on the Ancient Yew Group's girth classes.",
+  "question_answer": "The oldest tree in Lytchett Matravers is the yew north-west of St Mary the Virgin church, by the north door, 648 centimetres round. The Ancient Yew Group classes yews of five to seven metres as probably over 600 years old. Claims of 1,600 years are undated.",
+  "question_context": "The earliest written mention of the Lytchett Matravers yew is in the Post Office Directory of 1855. Tim Hills recorded it in 1999 at 21 feet 3 and 21 feet 10 inches just above five feet, and the Ancient Yew Group's current figure is 648 centimetres at 30 centimetres off the ground. On the Group's banding, a yew of five to seven metres is probably more than 600 years old. That is an estimate from girth. You will find bolder figures elsewhere, a blog claim of 1,600 years and a planting date of AD 590 mentioned by the National Churches Trust, but neither comes with a dating, and we do not use them. The church of St Mary the Virgin is Grade I and dates from about 1200. The yew grows on its north-west side, beside the north door. A much younger yew grows close by, 11 feet 10 inches round in 2011, big enough to be mistaken for the old one. The ancient tree is roughly twice its girth.",
+  "hero_tree_id": "lym_001",
+  "oldest_tree_id": "lym_001",
+  "faq": [
+    {
+      "q": "Which is the old yew at Lytchett Matravers?",
+      "a": "The larger yew by the north door, north-west of the church, about 6.5 metres round. A younger yew nearby is about 3.6 metres round."
+    },
+    {
+      "q": "Is the Lytchett Matravers yew 1,600 years old?",
+      "a": "That figure is a popular claim without a dating. The Ancient Yew Group's girth class puts it at probably over 600 years."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lym_001",
+      "name": "Lytchett Matravers Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 600 years",
+      "age_min": 600,
+      "age_max": 1200,
+      "age_basis": "derived",
+      "girth_cm": 648,
+      "location": {
+        "address": "St Mary the Virgin Church, Lytchett Matravers, Dorset",
+        "latitude": 50.7651,
+        "longitude": -2.09223,
+        "neighbourhood": "Lytchett Matravers"
+      },
+      "location_site": {
+        "name": "St Mary the Virgin Church churchyard",
+        "radius_m": 30
+      },
+      "story": "The first written record of this yew is in a Post Office Directory of 1855, a book printed to help people find tradesmen and addresses. It is a modest debut for a tree the Ancient Yew Group now classes as ancient.\n\nThe measurements are steady. Tim Hills recorded 21 feet 3 and 21 feet 10 just above five feet in 1999, and the Group's current figure is 648 centimetres at 30 centimetres. Yews between five and seven metres fall in its band of probably more than 600 years. That is an estimate from girth, and you will find much bolder claims online, 1,600 years or a planting in AD 590. Nobody has dated it, and we do not repeat those as fact.\n\nThe church of St Mary the Virgin is Grade I and dates from about 1200, so even the cautious estimate puts the tree in the same company as the building. It grows on the north-west side of the church, close to the north door.\n\nBring your eye for a second yew. A much younger tree grows nearby, 11 feet 10 inches round in 2011, which would be impressive anywhere else and is easily mistaken for the old one. The ancient yew is the larger, by about ten feet of girth.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/lytchett-matravers/",
+        "https://nationalchurchestrust.org/node/2299",
+        "https://en.wikipedia.org/wiki/St_Mary_the_Virgin,_Lytchett_Matravers"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree ID 579 (Tim Hills 1999)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/lytchett-matravers/"
+      },
+      "access": "Free. Open public churchyard, yew by the north door side.",
+      "transport": "Village northwest of Poole; local bus from Poole (check). Drive easier.",
+      "how_to_recognise": "You can recognise it as the larger of two yews by the north door, about 6.5 metres round against the younger yew's 3.6. It stands north-west of St Mary the Virgin church.",
+      "photo": {
+        "url": "https://live.staticflickr.com/8621/30279800626_f2297c15cc_b.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Odd Wellies",
+        "attribution_url": "https://www.flickr.com/photos/28828272@N06/30279800626",
+        "status": "approved"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Girth 648cm at 30cm (AYG tree 579); earlier 21ft 3in and 21ft 10in just above 5ft (Hills 1999). First noted in the 1855 Post Office Directory. A younger yew (11ft 10in girth in 2011) grows nearby, do not confuse. Church c1200, Grade I. Pin: AYG grid ref SY9359196171 converted to WGS84, approximate (church-yard level). Age: AYG girth class, not a dating; AYG class Ancient 5m-7m (probably 600+); blog claims of 1600 years or AD 590 (National Churches Trust) are undated popular claims, not used. Photo pass 2026-11-04 (approved): Flickr photo titled Yew tree, Lytchett Matravers Church (CC BY 2.0, via Openverse); the fluted, hollowing yew trunk fills the frame with the churchyard wall behind, daylight."
+    }
+  ]
+}

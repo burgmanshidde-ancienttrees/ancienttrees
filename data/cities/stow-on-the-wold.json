@@ -1,0 +1,67 @@
+{
+  "city": "Stow-on-the-Wold",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Stow-on-the-Wold's most photographed trees are two yews that have grown into a church door. They stand either side of the north porch of St Edward's, their trunks pressed into the stone frame, a couple of minutes' walk from the Square. Locals call it the Tolkien door, after a rumour, never confirmed, that it inspired the Doors of Durin. The churchyard is open and free, and the door is on the north side of the church.",
+  "meta_description": "Two yews have grown into the north door of St Edward's, Stow-on-the-Wold, the rumoured Tolkien door. How old they are, what is known, and where to stand.",
+  "question_meta": "The two yews at the north door of St Edward's, Stow-on-the-Wold, are about 300 years old by the civic society. The Tolkien rumour and the age dispute.",
+  "question_answer": "The best-known old trees in Stow-on-the-Wold are the two yews flanking the north door of St Edward's church, roughly 300 years old according to Stow Civic Society. In 1897 an archaeological society already called them ancient, so the age is disputed. They are free to see in the open churchyard.",
+  "question_context": "Stow Civic Society says the north porch of St Edward's was built about 300 years ago and that young yews were planted beside it to dress the entrance. Over the centuries the trunks have grown against the stonework until they form part of the doorframe itself. The trouble with that tidy date is a note from 1897, when the Birmingham and Warwickshire Archaeological Society described the two ancient yew trees which seem to embrace the entrance as curious. Ancient, in 1897, sits awkwardly with a planting barely two centuries earlier, so we give the age as a broad band of 250 to 350 years and keep the dispute in view. Both are male trees. When the Ancient Yew Group measured them in 2006 they were 196 and 201 centimetres round at four feet, slim for churchyard yews, and Thomas Pakenham included them in Meetings with Remarkable Trees. The Tolkien connection is a rumour. The civic society uses that word, and the Diocese of Gloucester calls it unconfirmed. The door does not need it.",
+  "hero_tree_id": "stw_001",
+  "oldest_tree_id": "stw_001",
+  "faq": [
+    {
+      "q": "Is the yew door at Stow-on-the-Wold really the Tolkien door?",
+      "a": "It is rumoured to have inspired the Doors of Durin in The Lord of the Rings, as Stow Civic Society puts it, but the link is unconfirmed. Nobody has documented Tolkien naming it."
+    },
+    {
+      "q": "Where exactly is the door?",
+      "a": "On the north side of St Edward's Church on Church Street, a couple of minutes' walk from the Square. The churchyard is open and free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "stw_001",
+      "name": "The north door yews of St Edward's, Stow-on-the-Wold",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "age_basis": "source",
+      "girth_cm": 201,
+      "location": {
+        "address": "St Edward's Church, Church Street, Stow-on-the-Wold, Gloucestershire GL54 1BB",
+        "latitude": 51.9303,
+        "longitude": -1.7224,
+        "neighbourhood": "Stow-on-the-Wold"
+      },
+      "location_site": {
+        "name": "St Edward's churchyard north porch",
+        "radius_m": 30
+      },
+      "story": "Nobody has proved that Tolkien ever stood at this door, and the door hardly needs him. Two yews grow tight against the north porch of St Edward's, one on each side, and over the centuries their trunks have become part of the doorframe. The stone arch sits between them like something they are holding up. Locals call it the Tolkien door, and Stow Civic Society says it is rumoured to have inspired the Doors of Durin in The Lord of the Rings. Rumoured is the honest word, and the Diocese of Gloucester calls the link unconfirmed.\n\nHow old the pair are is a real disagreement. The civic society says the porch was built about 300 years ago and young yews were planted to dress the entrance. Yet in 1897 a visiting archaeological society already called them ancient, two trees which seem to embrace the entrance. We follow the civic society and keep the band broad, roughly 250 to 350 years.\n\nThey are not huge. When the Ancient Yew Group measured them in 2006, the two male trunks were 196 and 201 centimetres round at four feet, slim by churchyard standards. Thomas Pakenham put them in Meetings with Remarkable Trees anyway, and you can see why. Plenty of churchyard yews stand beside a door. These two have grown into the frame.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/stow-on-the-wold",
+        "https://www.ancient-yew.org/yew_trees/stow-on-the-wold-2161/",
+        "https://stowcivicsociety.co.uk/tolkien-door"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, tree 2161 (Notable)",
+        "url": "https://www.ancient-yew.org/yew_trees/stow-on-the-wold-2161/"
+      },
+      "access": "Open churchyard (Ancient Yew Group lists access as public; church parochial church council ground). Free, no opening hours. The yews stand at the church's north door; the church is in the centre of the town, a few minutes from the Square.",
+      "transport": "In the centre of Stow-on-the-Wold, 2 minutes' walk from the Square. Bus links from Cheltenham and Moreton-in-Marsh (mainline station about 6 km away).",
+      "how_to_recognise": "You can recognise them by the door they frame, two yew trunks pressed against either side of the arched north door of St Edward's. They stand on the church's north side, a few minutes from the Square.",
+      "photo": {
+        "url": "https://s0.geograph.org.uk/geophotos/05/25/68/5256872_d2ef516f.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Colin Smith",
+        "attribution_url": "https://www.geograph.org.uk/photo/5256872",
+        "status": "approved"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "AYG (Tim Hills, visited 14 Jan 2006): two male yews grow close to and either side of the north door; they feature in Thomas Pakenham's Meetings with Remarkable Trees; girths at 4 ft were 6 ft 5 in and 6 ft 7 in (196 and 201 cm; girth_cm records the larger). Earliest mention 1897 (Birmingham and Warwickshire Archaeological Society): 'the two ancient yew trees which seem to embrace the entrance are curious'. Stow Civic Society: the north porch was built about 300 years ago and young yew saplings were planted to enhance the entrance; the trees now form part of the architraves of the door. CONFLICT: 1897 calls them ancient, the civic society gives about 300 years; age kept at about 300, from the civic society, broad. Famous as the 'Tolkien door' (rumoured inspiration for the Doors of Durin): Stow Civic Society says 'rumoured'; Gloucester diocese and others say unconfirmed, so state it only as a rumour. Diocese of Gloucester 2022 piece names them as the 'ancient trees' dedicated to the Queen for the Platinum Jubilee (page text not fully read: only its title, flag). Alive: AYG tree page carries photos by Jane Bridgman dated 2025. Position: AYG six-figure grid SP191258 (100 m), converted; church pin approximate. Girth is at 4 ft (122 cm) as recorded; both trunks fused with the door arch. Writing pass 2026-11-04: lead photo Geograph 5256872 (Colin Smith, 2015) approved; Geograph 8417263 (Brian Deegan, 2026-09-19) shows both yews standing but is underexposed."
+    }
+  ]
+}

@@ -2,10 +2,10 @@
   "city": "Liverpool",
   "country": "United Kingdom",
   "status": "needs_curation",
-  "intro": "Liverpool keeps its two remarkable trees in one public park in Allerton. The Allerton Oak there was voted England's Tree of the Year in 2019, taking 34 percent of more than eleven thousand votes, and went on to represent England in the European contest. It is split down the middle, hollow, and propped on metal crutches since 1907, and it still drops something like a hundred thousand acorns a year. The sweet chestnut a short walk away is almost seven metres round, with bark that spirals as it climbs. One gate, one afternoon.",
-  "meta_description": "The Allerton Oak in Calderstones Park was England's Tree of the Year in 2019. Split, hollow, propped since 1907, and still dropping acorns.",
-  "question_answer": "The oldest tree in Liverpool is the Allerton Oak in Calderstones Park, Allerton. It is everywhere called a thousand years old, though that figure is tradition rather than measurement, so the honest band runs from about 400 years to 1,000. It stands behind a protective double fence, a 15 to 20 minute walk from Mossley Hill or West Allerton station, and in 2019 it was voted England's Tree of the Year with 34 percent of more than eleven thousand votes.",
+  "intro": "Liverpool's three mapped trees split between two places. In Calderstones Park, Allerton, stands the Allerton Oak, England's Tree of the Year in 2019, split, hollow, propped on metal crutches since 1907, and still dropping acorns, with a sweet chestnut almost seven metres round a short walk away. South of the city, two yews called Adam and Eve fill the cobbled courtyard of Speke Hall, a Tudor house where frames were made to protect them in 1712.",
+  "meta_description": "The Allerton Oak, England's Tree of the Year 2019, a spiralling Calderstones chestnut, and Speke Hall's Adam and Eve yews, guarded since 1712.",
   "question_meta": "Liverpool's oldest tree is the Allerton Oak in Calderstones Park, called a thousand years old by tradition and 400 to 1,000 on the evidence.",
+  "question_answer": "The oldest tree in Liverpool is the Allerton Oak in Calderstones Park, Allerton. It is everywhere called a thousand years old, though that figure is tradition rather than measurement, so the honest band runs from about 400 years to 1,000. It stands behind a protective double fence, a 15 to 20 minute walk from Mossley Hill or West Allerton station, and in 2019 it was voted England's Tree of the Year with 34 percent of more than eleven thousand votes.",
   "question_context": "The thousand-year figure has been repeated so often that it reads like a measurement, and it is not one. No ring count is possible on a trunk this hollow, and no planting record exists, so what remains is a girth of 5.5 metres and a tree that is plainly very old. Hence the wide band: 400 years at the cautious end, a thousand at the traditional one.\n\nTwo stories are usually told to fill the gap, and neither dates the tree. The first says the local hundred court met under its branches in the Middle Ages, which is where the nickname the Law Oak comes from, though some historians think the neolithic Calderstones nearby are the likelier meeting place. The second blames the trunk's great split on the Lottie Sleigh, a ship carrying eleven tonnes of gunpowder that exploded on the Mersey on 15 February 1864 and was felt across the city. Historic Liverpool's verdict on that is simply that no one can really say. Both are good stories about the oak. Neither is evidence of its age.",
   "oldest_tree_id": "lvp_001",
   "faq": [
@@ -130,6 +130,11 @@
         "longitude": -2.87422,
         "neighbourhood": "Speke"
       },
+      "location_site": {
+        "name": "Speke Hall courtyard",
+        "radius_m": 30
+      },
+      "story": "In 1712 the household at Speke Hall paid a man named Ezekiel Mason for making frames to set around the yew trees in the court. The yews are still there. Two of them fill the middle of the cobbled courtyard of this Tudor manor house on the southern edge of Liverpool, and they have names. Adam is the larger, a male tree measured at about 3.45 metres round in 2006. Eve, beside him, is female.\n\nHow old they are is a genuine disagreement. The Ancient Yew Group, which recorded the pair, says Adam's girth suggests something like 300 years, while noting that ring counts on pruned branches have been cited for much more. Wikipedia puts them at 500 years at least. So the honest band runs from roughly 300 to 500, and the one firm date is 1712, when the trees were already worth protecting.\n\nThey have had a famous visitor. Harriet Beecher Stowe came in 1853 and, in her travel book Sunny Memories of Foreign Lands, mentioned a single yew. A painting by James Campbell from the following year, now in the Walker Art Gallery, shows two large trees standing in the court, so the pair was certainly there by then.\n\nThe courtyard is inside the house grounds, which makes this a paid visit unless you are a National Trust member. The most recent record of the trees we can point to is the yew group's, so if you go, tell us how Adam and Eve are looking.",
       "verified_sources": [
         "https://www.ancient-yew.org/yew_tree_database/speke-hall/",
         "https://ancient-yew.org/yew_trees/speke-hall-2299",
@@ -137,20 +142,17 @@
       ],
       "access": "National Trust property, paid entry (free to members). The courtyard is inside the house grounds; opening days are seasonal, check the National Trust before you go.",
       "transport": "Liverpool South Parkway and Hunts Cross stations are both about 2 miles (3 km) away, roughly 40 minutes on foot or a short taxi ride. Buses from the city centre reach South Parkway; there is no direct bus to the hall door.",
-      "location_precision": "approximate",
-      "location_site": {
-        "name": "Speke Hall courtyard",
-        "radius_m": 30
-      },
-      "curation_status": "flagged",
-      "story": "In 1712 the household at Speke Hall paid a man named Ezekiel Mason for making frames to set around the yew trees in the court. The yews are still there. Two of them fill the middle of the cobbled courtyard of this Tudor manor house on the southern edge of Liverpool, and they have names. Adam is the larger, a male tree measured at about 3.45 metres round in 2006. Eve, beside him, is female.\n\nHow old they are is a genuine disagreement. The Ancient Yew Group, which recorded the pair, says Adam's girth suggests something like 300 years, while noting that ring counts on pruned branches have been cited for much more. Wikipedia puts them at 500 years at least. So the honest band runs from roughly 300 to 500, and the one firm date is 1712, when the trees were already worth protecting.\n\nThey have had a famous visitor. Harriet Beecher Stowe came in 1853 and, in her travel book Sunny Memories of Foreign Lands, mentioned a single yew. A painting by James Campbell from the following year, now in the Walker Art Gallery, shows two large trees standing in the court, so the pair was certainly there by then.\n\nThe courtyard is inside the house grounds, which makes this a paid visit unless you are a National Trust member. The most recent record of the trees we can point to is the yew group's, so if you go, tell us how Adam and Eve are looking.",
       "how_to_recognise": "You can recognise them as the two big yews in the middle of the cobbled courtyard, Adam the larger of the pair. They stand at the heart of Speke Hall, inside the house grounds.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
+        "url": "https://s1.geograph.org.uk/geophotos/03/96/79/3967925_3d5fc486.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Ian Greig",
+        "attribution_url": "https://www.geograph.org.uk/photo/3967925",
+        "status": "approved"
+      },
+      "paid_entry": true
     }
   ]
 }

@@ -1,0 +1,62 @@
+{
+  "city": "Dartmoor",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Wistman's Wood is the oak wood Dartmoor is famous for, about 3.5 hectares of low, twisted, moss-covered oaks among granite boulders above the West Dart, north of Two Bridges. Its oldest oaks appear to be 400 to 500 years old, and most stand no taller than 4.5 metres. It is a National Nature Reserve, and visitors are asked to stay on the paths around the edge and not to enter the wood. The walk from the Two Bridges car park takes about 25 minutes.",
+  "meta_description": "Wistman's Wood on Dartmoor holds oaks 400 to 500 years old that rarely pass 4.5 metres. About 120 lichens, why it is seen from the path, and the walk in.",
+  "question_meta": "How old is Wistman's Wood? Its oldest oaks appear to be 400 to 500 years old. Why they stay so low, what grows on them, and how to see it from the path.",
+  "question_answer": "The oldest oaks in Wistman's Wood on Dartmoor appear to be 400 to 500 years old, according to Wikipedia's summary of the research. Most are no more than 4.5 metres tall. The wood covers about 3.5 hectares and is seen from the paths around its edge, since visitors are asked not to enter it.",
+  "question_context": "Wistman's Wood grows at 380 to 410 metres on the open moor in the valley of the West Dart, in three groves known as North, Middle and South. Around 1620 it was described as oaks no taller than a man could reach the top of with his head, and most still rarely exceed 4.5 metres, with a few between six and 7.6. The oldest appear to be 400 to 500 years old, and an oak felled in 1866 proved to be about 168. Wikipedia describes the trees as mainly pedunculate oak with some rowan, while one walking guide calls them sessile. What makes the wood precious is less the oaks than what lives on them and on the boulders, about 120 species of lichen among the mosses. Feet damage both, which is why Natural England and the Dartmoor National Park Authority ask visitors to keep to the paths around the edge. The wood has been a Site of Special Scientific Interest since 1964 and belongs to the Duchy of Cornwall. A 2023 plan aims to reduce grazing and foot traffic and expand the wood by 2040.",
+  "hero_tree_id": "dmr_001",
+  "oldest_tree_id": "dmr_001",
+  "faq": [
+    {
+      "q": "Can you walk into Wistman's Wood?",
+      "a": "Natural England and the Dartmoor National Park Authority ask visitors to follow the paths around the wood and not to enter it, because erosion damages the lichens and mosses. The view from the path at its edge is the way to see it."
+    },
+    {
+      "q": "How do I get to Wistman's Wood?",
+      "a": "Park at Two Bridges on the B3357, opposite the Two Bridges Hotel, and walk north for about 25 minutes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dmr_001",
+      "name": "Wistman's Wood",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "oldest oaks roughly 400 to 500 years",
+      "age_min": 400,
+      "age_max": 500,
+      "height_m": 7,
+      "location": {
+        "address": "West Dart valley, north of Two Bridges, Dartmoor National Park, Devon",
+        "latitude": 50.577,
+        "longitude": -3.961,
+        "neighbourhood": "Dartmoor"
+      },
+      "story": "Around 1620 a visitor described the oaks of Wistman's Wood as no taller than a man could reach the top of with his head. Four centuries later most of them still rarely pass 4.5 metres. They grow at 380 to 410 metres up on the open moor above the West Dart, rooted among granite boulders, low, twisted and thick with moss.\n\nThis is a wood, not a tree, and the wood is the destination. It covers about 3.5 hectares in three groves, North, Middle and South. The oldest oaks appear to be 400 to 500 years old; one felled in 1866 turned out to be about 168. Wikipedia names them mainly pedunculate oak with some rowan, while one walking guide says sessile, so the exact species is less settled than the place.\n\nWhat the boulders hold is the treasure. About 120 species of lichen grow here, and erosion from feet does real damage to them and to the mosses. That is why Natural England and the national park ask visitors to stay on the paths around the edge and not to go in. The view from the path is the visit.\n\nThe wood has been a Site of Special Scientific Interest since 1964 and is owned by the Duchy of Cornwall. A plan agreed in 2023 aims to cut grazing and foot traffic and let this rainforest spread by 2040.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Wistman's_Wood",
+        "https://www.countryfile.com/go-outdoors/walks/walk-wistmans-wood-devon",
+        "https://designatedsites.naturalengland.org.uk/SiteDetail.aspx?SiteCode=S1001201&SiteName=Wistman&countyCode=&responsiblePerson="
+      ],
+      "official_register": {
+        "name": "Natural England SSSI record (Wistman's Wood, notified 1964)",
+        "url": "https://designatedsites.naturalengland.org.uk/SiteDetail.aspx?SiteCode=S1001201&SiteName=Wistman&countyCode=&responsiblePerson="
+      },
+      "access": "National Nature Reserve on open moor, free; Natural England and the Dartmoor National Park Authority ask visitors to follow the paths around the wood and not to enter it (erosion damages the lichens and mosses). View from the path at the edge. Roughly a 25 minute walk north from the Two Bridges car park on the B3357.",
+      "transport": "Two Bridges on the B3357 (car park opposite the Two Bridges Hotel); public bus not verified.",
+      "how_to_recognise": "You can recognise it as a low, mossy wood of twisted oaks among granite boulders on the hillside above the West Dart. It is about a 25 minute walk north of the Two Bridges car park, seen from the path along its edge.",
+      "photo": {
+        "url": "https://s0.geograph.org.uk/geophotos/07/09/06/7090655_3efb94ce.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Ian Capper",
+        "attribution_url": "https://www.geograph.org.uk/photo/7090655",
+        "status": "approved"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Ensemble as the destination: one wood, one place to stand outside it. Wikipedia: 3.5 ha in North, Middle and South Groves, 380 to 410 m altitude; most oaks rarely exceed 4.5 m, a few 6 to 7.6 m, in 1997 maximum about 12 m and average about 7 m; oldest oaks appear 400 to 500 years; an oak felled in 1866 was about 168 years old. SSSI notified 1964; NNR; about 120 lichen species; owned by the Duchy of Cornwall, managed under a nature reserve agreement since 1961; 2023 plan with Natural England to reduce grazing and foot traffic and expand the rainforest by 2040 (Guardian, 3 Jul 2023). Described c. 1620 as oaks no taller than a man could touch the top of with his head. Species conflict: Wikipedia says mainly pedunculate oak with some rowan; Countryfile says sessile oak; used pedunculate per Wikipedia, check the Natural England citation. Countryfile's '6,000 years old' wood claim not used. Pin is the Wikipedia coordinate for the wood (grid ref SX612774 vs SX612772 in the same article), approximate; the viewing point on the public path was not separately fixed, so the writer must not claim a viewing coordinate. Two Bridges Hotel states no access restriction, the official bodies ask people not to enter: access line follows the official request. Alive: lifecheck RECENT 2026-05-13 (iNaturalist 361227592 at the coordinate). Photos not hunted (Commons/Geograph will have plenty). Writing pass 2026-11-04: lead photo Geograph 7090655 (Ian Capper, 2022) approved. Species kept as pedunculate: Wikipedia and a published oakwood study (archive.org biostor-129949) name Quercus robur; Countryfile's sessile is the outlier; the Natural England citation PDF was not retrievable."
+    }
+  ]
+}

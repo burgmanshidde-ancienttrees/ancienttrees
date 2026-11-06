@@ -1,0 +1,70 @@
+{
+  "city": "Defynnog",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Defynnog maps one tree, and the arguments about it are as big as the tree. The great yew of St Cynog's churchyard grows from a low mound as nine stems with a combined girth of about 11 metres. A certificate in the village says 5,000 years; Wikipedia leans to 2,000 to 3,000; the Ancient Yew Group sets a minimum of 1,300. A second yew five metres away is its genetic twin. Free, in the Brecon Beacons National Park.",
+  "meta_description": "The Defynnog Yew in a Brecon Beacons churchyard: nine stems, about 11 metres round, its age argued from 1,300 years to 5,000. Free to visit.",
+  "question_meta": "Defynnog's oldest tree is the Defynnog Yew in St Cynog's churchyard, its age disputed from a 1,300-year minimum to a claimed 5,000.",
+  "question_answer": "Defynnog's oldest and only mapped tree is the Defynnog Yew, a European Yew (Taxus baccata) in the churchyard of St Cynog's Church, near Sennybridge in Powys. Its age is disputed. A certificate signed by David Bellamy says about 5,000 years, Wikipedia calls 2,000 to 3,000 more likely, and the Ancient Yew Group sets a minimum of 1,300.",
+  "question_context": "The tree rises from a mound about eight metres across and a metre high, as nine stems with a combined girth of about 11 metres; the Ancient Yew Group measured 11.58 metres in 1998. A second yew roughly five metres west on the north side of the church has been shown by DNA to be genetically identical, perhaps grown from a branch that touched the ground and rooted, while the two yews on the south side are separate trees. Both pairs are female, and every one of them is classed as ancient. In 2014 newspapers repeated the 5,000 figure and called it Britain's oldest tree, a title several Welsh yews are given and none can prove; Llangernyw's yew, to the north, is another. St Cynog's is a Grade I listed church, mostly Norman and 15th century, with an ogham and Latin inscribed stone in its porch, and graves have been dug between the two northern yews. Look on the smaller tree for a patch of albino leaves. The TrawsCymru T6 bus between Brecon and Swansea stops in the village.",
+  "hero_tree_id": "dfy_001",
+  "oldest_tree_id": "dfy_001",
+  "faq": [
+    {
+      "q": "How old is the Defynnog Yew?",
+      "a": "Nobody knows. Claims run from a 1,300-year minimum set by the Ancient Yew Group, through Wikipedia's 2,000 to 3,000, to the 5,000 years on a 2002 certificate."
+    },
+    {
+      "q": "Is it Britain's oldest tree?",
+      "a": "That claim was made in the press in 2014, but no one has proved it, and other yews, Llangernyw among them, carry the same claim. We make it for none of them."
+    },
+    {
+      "q": "Can you visit it for free?",
+      "a": "Yes. It stands in the open churchyard of St Cynog's, and the T6 bus between Brecon and Swansea stops in Defynnog."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dfy_001",
+      "name": "Defynnog Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "disputed, 1,300 to 5,000 years",
+      "age_basis": "derived",
+      "girth_cm": 1158,
+      "location": {
+        "address": "St Cynog's churchyard, Defynnog, Sennybridge, Powys LD3 8SE",
+        "latitude": 51.93946,
+        "longitude": -3.56477,
+        "neighbourhood": "Defynnog"
+      },
+      "location_site": {
+        "name": "St Cynog's churchyard",
+        "radius_m": 30
+      },
+      "story": "A certificate signed by the botanist David Bellamy, kept at a café near this churchyard, says the great yew of Defynnog is about 5,000 years old. The people who have looked hardest are more cautious. Wikipedia reports that an investigation does not support the figure and calls 2,000 to 3,000 years more likely; one assessment gives 3,018. Toby Hindson of the Ancient Yew Group sets a minimum of 1,300 years, on the hard evidence the group holds. When the 5,000 figure reached the press in 2014, it came with the label of Britain's oldest tree. That is a claim several Welsh yews make, and we make it for none of them.\n\nWhat is not disputed is the size. The tree grows from a mound about eight metres across and a metre high, as nine stems with a combined girth of about 11 metres. A second, smaller yew about five metres west has been shown by DNA to be genetically identical, possibly grown from a drooping branch that touched the ground and rooted. Two more ancient yews stand on the south side, and those are not clones.\n\nThe church of St Cynog is mostly Norman and 15th century, and its porch holds a stone inscribed in both ogham and Latin. Graves have been dug between the two northern yews. Look closely at the smaller tree and you may find a small patch of albino leaves among the green.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/defynnog/",
+        "https://en.wikipedia.org/wiki/Defynnog_Yew"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Defynnog (Tim Hills, 1998)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/defynnog/"
+      },
+      "access": "Free. Open churchyard of St Cynog's, Defynnog, in the Brecon Beacons National Park.",
+      "transport": "The TrawsCymru T6 bus between Brecon and Swansea stops in Defynnog (Lion Inn and Tanners Arms), roughly every two hours in the daytime; check the current timetable. No railway.",
+      "how_to_recognise": "You can recognise it by the nine stems rising from a low mound about eight metres across, north of the church. A smaller yew stands about five metres west of it, its genetic twin.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/The_Defynnog_Yew_trees%2C_Powys%2C_Wales.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Rosser1954",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Defynnog_Yew_trees,_Powys,_Wales.jpg",
+        "width": 4896,
+        "height": 3672,
+        "taken_month": "2023-11",
+        "status": "approved"
+      }
+    }
+  ]
+}

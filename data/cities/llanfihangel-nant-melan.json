@@ -1,0 +1,68 @@
+{
+  "city": "Llanfihangel-nant-Melan",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Llanfihangel-nant-Melan's old yews stand in an arc on the south side of St Michael's church, on a hill-slope between New Radnor and Kington. The biggest, on a mound to the south-west, was measured at 8.11 metres at the ground, stump included. At the foot of a hollow neighbour lies a half-buried stone that the Ancient Yew Group thinks may carry pre-Norman carving, and a local tradition says the church stands inside a stone circle. The churchyard is free and open.",
+  "meta_description": "An arc of old yews at St Michael's, Llanfihangel-nant-Melan, Radnorshire: the largest 8.11 metres round, a carved stone at a neighbour's foot.",
+  "question_meta": "Llanfihangel-nant-Melan's oldest trees are the yews of St Michael's churchyard, led by a split giant on a mound; none has a recorded age.",
+  "question_answer": "Llanfihangel-nant-Melan's oldest mapped tree is the big European Yew (Taxus baccata) on a mound south-west of St Michael's church, near New Radnor in Powys. It is the largest of a close-set arc of old yews. No source gives any of them an age; the Victorian church, rebuilt in 1846, is younger than all of them.",
+  "question_context": "The Clwyd-Powys Archaeological Trust counted five mature yews on the south side of the church in 1995, with a sixth already cut down, and Reg Wheeler had recorded the loss of several others in 1982. Wheeler measured the largest at 30 feet 2 inches when it had three stems; one has since gone to a stump, and the two living stems together make about 21 feet. The Ancient Yew Group's figure of 8.11 metres at the ground includes the stump. West-south-west of it stands a half-hollow female shell, 5.08 metres round, with a stone about two feet by four half buried at its base, too heavy for one person to move. The Group thinks it may be carved and pre-Norman. A tradition recorded by the Trust says the church was set inside a stone circle, with a stone embedded in a yew trunk, and the churchyard may once have been roughly round. Little else is known of the site's origins. A gazetteer of the early 1870s already described the church as surrounded by old yew trees.",
+  "hero_tree_id": "lnm_001",
+  "oldest_tree_id": "lnm_001",
+  "faq": [
+    {
+      "q": "How old are the Llanfihangel-nant-Melan yews?",
+      "a": "No source gives them an age. They are older than the church, which was rebuilt in 1846, and the Ancient Yew Group says little is known of the site's origins."
+    },
+    {
+      "q": "Which yew is the biggest?",
+      "a": "The split, two-stemmed tree on a mound south-west of the church, 8.11 metres round at the ground including a stump, by the Ancient Yew Group's figure."
+    },
+    {
+      "q": "Can you visit for free?",
+      "a": "Yes. The churchyard is open, though the church itself has been found locked."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lnm_001",
+      "name": "Llanfihangel-nant-Melan Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "girth_cm": 811,
+      "location": {
+        "address": "St Michael's churchyard, Llanfihangel-nant-Melan, near New Radnor, Powys LD8 2TN",
+        "latitude": 52.21571,
+        "longitude": -3.20148,
+        "neighbourhood": "Llanfihangel-nant-Melan"
+      },
+      "location_site": {
+        "name": "St Michael's churchyard, Llanfihangel-nant-Melan",
+        "radius_m": 40
+      },
+      "story": "A stone about four feet long lies half buried at the foot of one of the yews here, too heavy for one person to move, and the Ancient Yew Group thinks it may carry pre-Norman carving. Local tradition goes further. It says St Michael's was set inside a stone circle, with one of the stones caught in a yew's trunk.\n\nNobody has proved that, and the Group admits little is known of the site's origins. What it can point to is a churchyard that was once roughly round, and a close-set arc of old yews on the south side of the church. The Clwyd-Powys Archaeological Trust counted five mature yews there in 1995, with a sixth already cut down, and Reg Wheeler had recorded the loss of several others in 1982.\n\nThe biggest stands to the south-west, on a mound. Wheeler measured it at 30 feet 2 inches when it still had three stems. One has since gone to a stump, and the Group's figure of 8.11 metres at the ground includes it; the two living stems together make about 21 feet. A recorder in 2015 found the foliage green and the tree growing well.\n\nThe church is younger than its trees. It was rebuilt in 1846, and a gazetteer of the early 1870s described it on its hill-slope, surrounded by old yew trees. No source gives any of them an age, so we leave that open. The church may be locked, but the churchyard is not.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Llanfihangel-Nant-Melan-2025.pdf",
+        "https://www.ancient-yew.org/yew_tree_database/llanfihangel-nant-melan/",
+        "https://heneb.org.uk/archive/cpat/Archive/churches/radnor/16855.htm",
+        "https://visionofbritain.org.uk/place/4504"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database, Llanfihangel-nant-Melan (tree 114 and 115 to 117)",
+        "url": "https://ancient-yew.org/yew_trees/llanfihangel-nant-melan-114"
+      },
+      "access": "Free. Open churchyard on a hill-slope. The church itself has been found locked.",
+      "transport": "Rural, on the road between New Radnor and Kington. Check Traveline Cymru for buses before relying on one.",
+      "how_to_recognise": "You can recognise it by its split, two-stemmed bulk on a mound south-west of the church. The hollow shell next to it, to the west-south-west, has a large stone lying at its foot.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

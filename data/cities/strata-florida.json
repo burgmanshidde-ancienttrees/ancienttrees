@@ -1,0 +1,72 @@
+{
+  "city": "Strata Florida",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Strata Florida's yew is famous for a grave it may not mark. In the churchyard of St Mary's, beside the abbey ruins, a hollow female yew inside a low stone wall carries the plaque to Dafydd ap Gwilym, the fourteenth-century poet said to be buried by a yew here. Scholars still argue whether he lies here or at Talley, and the honour once belonged to the other old yew, by the road. John Leland counted 39 great yews here in the 1530s. Free, with parking at the church.",
+  "meta_description": "A hollow yew at Strata Florida, Ceredigion, carries the plaque to the poet Dafydd ap Gwilym, said to be buried by a yew here. Free to visit.",
+  "question_meta": "Strata Florida's oldest trees are the two surviving yews of St Mary's churchyard; no source gives either one an age.",
+  "question_answer": "Strata Florida's oldest mapped tree is the Dafydd ap Gwilym Yew, a hollow female European Yew (Taxus baccata) beside St Mary's church, next to the abbey ruins in Ceredigion. No source we found gives it, or the other surviving yew, an age, and the poet's grave beside it is a tradition rather than a proven fact.",
+  "question_context": "The antiquary John Leland counted 39 great yews in this churchyard in the 1530s. Meyrick found few left in 1810, George Borrow two in 1854, and Edwin Lees three battered ones in 1874. Allen Meredith, who measured the plaque tree at over 22 feet round in 1986, thinks both survivors were among the trees Leland saw, though that is his opinion. The tradition of the grave comes from a poem by Gruffudd Gryg, a near-contemporary of Dafydd ap Gwilym, addressed to the yew above the poet's grave. Scholars are divided over whether he is buried here or at Talley, and the Ancient Yew Group says there is no evidence that either surviving yew is the one in the poem. Borrow knelt at the broken male yew by the road, which early postcards labelled as the poet's, before the memorial went to the female tree by the church path. That tree was cut back hard after storm damage in 2002 and has many green branches again.",
+  "hero_tree_id": "sfl_001",
+  "oldest_tree_id": "sfl_001",
+  "faq": [
+    {
+      "q": "How old is the Strata Florida yew?",
+      "a": "No source we found gives it an age. Allen Meredith thinks it was already a great yew when John Leland visited in the 1530s, which is his opinion rather than a measurement."
+    },
+    {
+      "q": "Is Dafydd ap Gwilym buried under it?",
+      "a": "Tradition says the poet was buried beside a yew in this churchyard, but scholars disagree whether he lies here or at Talley, and nobody can show which yew, if either, marks the grave."
+    },
+    {
+      "q": "Can you visit it for free?",
+      "a": "Yes. Enter St Mary's churchyard by the main lych-gate and follow the path to the yew left of the church. Parking outside the church is free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sfl_001",
+      "name": "Dafydd ap Gwilym Yew, Strata Florida",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "girth_cm": 670,
+      "location": {
+        "address": "St Mary's churchyard, Strata Florida (Ystrad Fflur), Pontrhydfendigaid, Ceredigion SY25 6BT",
+        "latitude": 52.27563,
+        "longitude": -3.83872,
+        "neighbourhood": "Strata Florida"
+      },
+      "location_site": {
+        "name": "St Mary's churchyard, Strata Florida",
+        "radius_m": 30
+      },
+      "story": "In the 1530s the antiquary John Leland counted 39 great yews in this churchyard. Two are left, and nobody can say which, if either, stands over the grave that made them famous.\n\nDafydd ap Gwilym, the fourteenth-century Welsh poet, is said to be buried at Strata Florida beside a yew. The tradition comes from a poem by his near-contemporary Gruffudd Gryg, addressed to the yew above the grave. Scholars are divided over whether the poet lies here at all or at Talley, and both the Ancient Yew Group and Wikipedia say there is no evidence that either surviving tree is the one in the poem.\n\nThe honour has moved anyway. In 1854 George Borrow knelt at the other yew, the broken male by the road north-east of the church, and early postcards labelled that tree as Dafydd's. Later the plaque went to the female yew beside the church path, and that is the tree visitors are sent to now.\n\nIt has had a hard two centuries. Meyrick found few yews left here in 1810, Lees three battered ones in 1874. Allen Meredith put this one at over 22 feet round in 1986, about 6.7 metres. It was cut back hard after storm damage in 2002, and the Ancient Yew Group reports many green branches since. The abbey ruins stand next door.\n\nNo source we found gives either yew an age. If you know of one, tell us.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Strata-Florida-2025.pdf",
+        "https://en.wikipedia.org/wiki/To_the_Yew_Tree_Above_Dafydd_ap_Gwilym%27s_Grave",
+        "https://coflein.gov.uk/en/site/418299",
+        "http://www.discoveringbritain.org/activities/wales/trails/strata-florida-trail"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group, Strata Florida site report (Tim Hills, 2025)",
+        "url": "https://www.ancient-yew.org/wp-content/uploads/2022/11/Strata-Florida-2025.pdf"
+      },
+      "access": "Free. Open churchyard of St Mary's, beside the abbey ruins in Cadw's care. Enter by the main lych-gate and follow the path to the yew left of the church. Free parking outside the church.",
+      "transport": "No railway. Strata Florida is near Pontrhydfendigaid, about 15 miles from Aberystwyth; check Traveline Cymru for buses. Free parking outside the church.",
+      "how_to_recognise": "You can recognise it by the low stone wall circling its hollow trunk, with the Dafydd ap Gwilym plaque at the opening. It stands left of the church as you enter by the lych-gate; the broken yew by the road is Borrow's.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Yew_tree_at_Strata_Florida_-_geograph.org.uk_-_6903020.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Philip Halling",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Yew_tree_at_Strata_Florida_-_geograph.org.uk_-_6903020.jpg",
+        "width": 1200,
+        "height": 1600,
+        "taken_month": "2021-07",
+        "status": "approved"
+      }
+    }
+  ]
+}
