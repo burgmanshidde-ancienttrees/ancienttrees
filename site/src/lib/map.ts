@@ -564,6 +564,7 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
     inView: counted(U.treesInView), all: counted(U.allTrees), highlights: U.highlights,
     more: U.zoomForMore, app: U.readInApp, save: U.cardSave, saved: U.cardSaved,
     credit: U.photoCredit("{c}"),
+    collected: U.mapFilterMine, seen: U.seenChip,
     ambThe: U.ambassadorBecomeThe("{p}"), ambA: U.ambassadorBecomeA("{p}"), plus: U.plusRow,
   };
   const citiesJson = JSON.stringify(cities);
@@ -588,6 +589,8 @@ var SP_ICONS = ${JSON.stringify(list.icons)};
 var SP_IC = ${JSON.stringify(list.speciesIcon)};
 var WORDS = ${JSON.stringify(words)};
 var CHEVRON = ${JSON.stringify(icon("caret-right", "bold", "ic city-box-chev"))};
+// The Seen badge on a collected tree's photograph (Phosphor's check-circle).
+var SEEN_MARK = ${JSON.stringify(icon("check-circle", "fill", "seen-ic"))};
 var BOX_IC = ${JSON.stringify({ amb: icon("seal-check", "bold", "ic city-box-ic"), plus: icon("sparkle", "fill", "ic city-box-ic") })};
 var BM = ${JSON.stringify(icon("bookmark-simple", "bold", "heart hi-off") + icon("bookmark-simple", "fill", "heart hi-on"))};
 // The trees the filter row keeps; the list counts only those.
@@ -816,6 +819,9 @@ if (map.isStyleLoaded()) { initTreeLayers(); }
 // species tiles and again once it has answered.
 var panel = document.getElementById('ex-panel');
 var CARDS = null;
+// The trees this account collected, from the server (atCollection.visited),
+// as a set; null signed out or until it answers.
+var VISITED = null;
 var LIST_MAX = ${EXPLORE_LIST_MAX};
 // pinPriority as the pins read it: a missing one counts as no photograph.
 function _pr(f) { var r = f.properties.pr; return r === undefined || r === null ? 1 : r; }
@@ -880,8 +886,9 @@ function _appHtml(t) { return t.href ? '' : '<p class="tree-meta tree-app-only">
 // A highlight, TreeCard.astro's "highlight" variant.
 function _hlHtml(f) {
   var t = _treeBits(f);
+  var seen = VISITED && VISITED[t.id] ? '<span class="tree-card-seen">' + SEEN_MARK + '<span>' + _esc(WORDS.seen) + '</span></span>' : '';
   return '<article class="tree-hl tree-card-link" data-tree-id="' + _esc(t.id) + '">' +
-    '<div class="tree-hl-photo">' + (t.photo ? '<img src="' + _esc(t.photo) + '" alt="' + _esc(t.name) + '" loading="lazy">' : '') + _heart(t) + '</div>' +
+    '<div class="tree-hl-photo">' + (t.photo ? '<img src="' + _esc(t.photo) + '" alt="' + _esc(t.name) + '" loading="lazy">' : '') + seen + _heart(t) + '</div>' +
     '<p class="tree-name tree-hl-name">' + _nameHtml(t) + '</p>' +
     (t.meta ? '<p class="tree-meta">' + t.meta + '</p>' : '') + _appHtml(t) + _creditHtml(t) + '</article>';
 }
@@ -922,6 +929,17 @@ function renderPanel() {
   if (hls.length) {
     html += '<section class="city-highlights"><h3 class="city-section-head">' + _esc(WORDS.highlights) + '</h3>' +
       '<div class="tree-hl-list">' + hls.map(_hlHtml).join('') + '</div></section>';
+  }
+  // COLLECTED, A SHELF LIKE THE HIGHLIGHTS (Hidde, 2026-11-06: "a section
+  // like highlights ... same tiles as highlight but then collected"), the
+  // app's too (MapTab placeList): the trees in view you collected, at most
+  // ten. They stay in the rows below as well.
+  if (VISITED) {
+    var col = trees.filter(function(f) { return VISITED[f.properties.id]; }).slice(0, 10);
+    if (col.length) {
+      html += '<section class="city-highlights"><h3 class="city-section-head">' + _esc(WORDS.collected) + '</h3>' +
+        '<div class="tree-hl-list">' + col.map(_hlHtml).join('') + '</div></section>';
+    }
   }
   // The ambassador box UNDER the Highlights (Hidde, 2026-11-06: "doe de
   // ambasadeur knop onder highlight"), as in the app.
@@ -989,6 +1007,15 @@ map.on('load', function() {
   // The photographs, from the catalogue the pins' cards share.
   var C = window.atCollection;
   if (C && C.catalogue) { C.catalogue().then(function(c) { CARDS = c || {}; renderPanel(); }); }
+  if (C && C.verify && C.visited) {
+    C.verify().then(function(ok) {
+      if (!ok) { return; }
+      C.visited().then(function(ids) {
+        if (!ids || !ids.length) { return; }
+        VISITED = {}; ids.forEach(function(id) { VISITED[id] = 1; }); renderPanel();
+      });
+    });
+  }
 });
 renderPanel();
 

@@ -124,6 +124,41 @@ struct HighlightCard: View {
     }
 }
 
+/// A tree only you have, as a HighlightCard: your photograph, the Seen tag,
+/// its name and "Your tree". The map list's Collected shelf (MapTab
+/// placeList), beside the trees of ours you collected.
+struct MineTile: View {
+    let sighting: Sightings.Sighting
+    @Environment(Sightings.self) private var sightings
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Color.clear
+                .frame(width: 220, height: 150)
+                .overlay {
+                    if let img = sightings.thumbnail(sighting, maxPixel: 600) {
+                        Image(uiImage: img).resizable().aspectRatio(contentMode: .fill)
+                    } else {
+                        Brand.surfaceMuted
+                    }
+                }
+                .clipShape(.rect(cornerRadius: 12))
+                .overlay(alignment: .topLeading) { SeenTag().padding(8) }
+            Text(sighting.name)
+                .font(.brand(15, .bold))
+                .foregroundStyle(Brand.ink)
+                .lineLimit(2, reservesSpace: true)
+                .padding(.top, 8)
+            Text(sighting.status == .published ? "Approved" : "Your tree")
+                .font(.system(size: 12))
+                .foregroundStyle(Brand.inkSoft)
+                .padding(.top, 3)
+        }
+        .frame(width: 220, alignment: .leading)
+        .contentShape(.rect)
+    }
+}
+
 /// "Highlights", "All 58 trees": the list's section heads.
 struct SheetSectionHead: View {
     let title: String

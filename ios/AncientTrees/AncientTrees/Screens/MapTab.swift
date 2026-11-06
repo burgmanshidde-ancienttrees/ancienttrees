@@ -1062,6 +1062,36 @@ struct MapTab: View {
             .padding(.horizontal, -16)
             .padding(.bottom, 6)
         }
+        // COLLECTED, A SHELF LIKE THE HIGHLIGHTS (Hidde, 2026-11-06: "maybe a
+        // section like highlights? under higliht same tiles as highlight but
+        // then collected"): the trees you added and the trees of ours you
+        // collected, in view, and while a search holds only those in that
+        // place (minesInView, listedHere). AllTrails keeps your own trails a
+        // row of their own beside the recommended ones. The word is the
+        // filter chip's (Collected). The collected trees stay in the list
+        // below too, with their tag; this is a way in, not a move.
+        let collected = Array(listedHere.filter { saved.isVisited($0.tree.id) }.prefix(10))
+        if !minesInView.isEmpty || !collected.isEmpty {
+            SheetSectionHead(title: "Collected")
+            ScrollView(.horizontal) {
+                LazyHStack(alignment: .top, spacing: 12) {
+                    ForEach(minesInView) { s in
+                        SheetLink(route: .mine(s.id)) { MineTile(sighting: s) }
+                            .accessibilityIdentifier("collected-mine")
+                    }
+                    ForEach(collected, id: \.tree.id) { hit in
+                        SheetLink(route: .tree(hit.tree.id)) { HighlightCard(tree: hit.tree) }
+                            .accessibilityIdentifier("collected-card")
+                    }
+                }
+                .scrollTargetLayout()
+                .padding(.horizontal, 16)
+            }
+            .scrollIndicators(.hidden)
+            .scrollTargetBehavior(.viewAligned)
+            .padding(.horizontal, -16)
+            .padding(.bottom, 6)
+        }
         // UNDER THE HIGHLIGHTS (Hidde, 2026-11-06: "doe de ambasadeur knop
         // onder highlight"): the best trees first, then the ask, then the
         // list. The searched city's asks, while its trees are in view (Hidde,
@@ -1098,13 +1128,8 @@ struct MapTab: View {
     private var list: some View {
         LazyVStack(spacing: 12) {
                 // Yours first: there are few of them and nobody else has them.
-                // While a search holds, only yours in that place
-                // (minesInView).
-                if query.isEmpty {
-                    ForEach(minesInView) { s in
-                        SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
-                    }
-                }
+                // Yours sit in the Collected shelf under the Highlights
+                // (placeList), no longer as big cards on top.
                 // Under a place's header, that place's trees only: the United
                 // States listed a tree in Mexico City first because Mexico was
                 // in view (2026-11-04).

@@ -1255,7 +1255,11 @@ Apple Maps keep a searched place's card the same way), wherever you drag. The
 list is always every tree in view, headed by the bare count ("22 trees",
 small and centred under the grip, Airbnb's "Over 1,000 homes"), the
 searched place's own trees first while the search holds. A searched city adds
-its ambassador box below the Highlights (Plus under the trees) while its trees are in view
+its ambassador box below the Highlights (Plus under the trees) while its trees are in view.
+Your trees are a Collected shelf under the Highlights, the same tiles: the
+trees you added and ours you collected, in view (in the searched place while a
+search holds), never big cards on top (Hidde, 2026-11-06: "a section like
+highlights ... but then collected"; AllTrails keeps your own a row apart)
 (Hidde, the same evening: alone over an empty map it "staat nu zielig in zn
 eentje"). Nothing
 names a place from what happens to be in view: direction B's guessed heading
