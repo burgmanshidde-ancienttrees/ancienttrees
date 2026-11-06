@@ -124,6 +124,28 @@ public final class Profiles {
             .first(where: { $0.hasPrefix("-country=") }) {
             myCountry = String(arg.dropFirst(9)).uppercased()
         }
+        applyDemoProfile()
+    }
+
+    /// -followers=N, -following=N, -avatar=<https url>: a lived-in demo
+    /// profile for press and store screenshots (2026-11-06, the Guardian's
+    /// picture desk: "can we give alex a country flag some followers and a
+    /// profile pic?"). Applied at init and again after load(), because the
+    /// demo account has no server row and load() would zero them. Debug
+    /// scaffolding in the family of -as= and -country=; nothing is stored.
+    private func applyDemoProfile() {
+        let args = ProcessInfo.processInfo.arguments
+        func value(_ key: String) -> String? {
+            args.first(where: { $0.hasPrefix(key) }).map { String($0.dropFirst(key.count)) }
+        }
+        guard args.contains(where: { $0.hasPrefix("-as=") }) else { return }
+        if let n = value("-followers=").flatMap(Int.init) { followers = n }
+        if let n = value("-following=").flatMap(Int.init) { following = n }
+        if let name = value("-as="), !name.isEmpty {
+            me = Profile(user_id: "00000000-0000-0000-0000-0000000000ab",
+                         display_name: name, avatar_url: value("-avatar="), units: nil)
+        }
+        if let c = value("-country="), !c.isEmpty { myCountry = c.uppercased() }
     }
 
     /// SUPA.REQUEST, not a builder of our own.
@@ -199,6 +221,7 @@ public final class Profiles {
             followers = c.followers
             following = c.following
         }
+        applyDemoProfile()
     }
 
     /// Who you were, forgotten on this phone. Called on sign-out, so the
