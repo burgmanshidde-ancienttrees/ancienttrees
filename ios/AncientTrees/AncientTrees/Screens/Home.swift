@@ -67,6 +67,8 @@ struct HomeView: View {
     /// the screen locked up. Hidde: "de app doet niks loop vast op homescherm
     /// kan niet scrollen."
     @State private var deck = Shelves()
+    /// Discover's "New from visitors" row, from the server (NewFromVisitors).
+    @State private var visitorRows: [NewFromVisitors.Row] = []
 
     struct Shelves {
         /// The season where you stand: its word, the photographed tree at its
@@ -366,6 +368,7 @@ struct HomeView: View {
         // long way, because two shelves (walks, best in your country) depend
         // on where you are. A tenth of a degree is about ten kilometres.
         .task(id: "\(catalogue.version)|\(location.known)|\(Int(origin.lat * 10))|\(Int(origin.lng * 10))") { buildShelves() }
+        .task { visitorRows = await NewFromVisitors.load(token: await account.freshToken()) }
     }
 
     /// The website leads with one tree rather than with a grid, and so does
@@ -522,6 +525,44 @@ struct HomeView: View {
     }
 
     /// A shelf of tree tiles, rounded: see shelf().
+    /// Who sent it: a small avatar and the name, one line. The name of a
+    /// public profile shows to everyone; a tap opens the profile, and signed
+    /// out it asks for a sign-in first (Hidde, 2026-11-06, the Instagram and
+    /// Pinterest way). No public profile: "A visitor", not a link.
+    @ViewBuilder private func visitorLine(_ r: NewFromVisitors.Row) -> some View {
+        let name = r.author_name ?? "A visitor"
+        let line = HStack(spacing: 5) {
+            Group {
+                if let a = r.author_avatar, let u = URL(string: a) {
+                    AsyncImage(url: u) { $0.resizable().scaledToFill() } placeholder: { Brand.moss.opacity(0.15) }
+                } else {
+                    Text(String(name.prefix(1)))
+                        .font(.system(size: 9, weight: .bold))
+                        .foregroundStyle(Brand.moss)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Brand.moss.opacity(0.15))
+                }
+            }
+            .frame(width: 16, height: 16)
+            .clipShape(.circle)
+            Text(name)
+                .font(.system(size: 12, weight: .medium))
+                .foregroundStyle(Brand.inkSoft)
+                .lineLimit(1)
+        }
+        .frame(width: Self.tileWidth, alignment: .leading)
+        if r.author_name == nil {
+            line.accessibilityElement(children: .combine)
+        } else {
+            Button {
+                if let id = r.author_id { navigator.push = .person(id) } else { nudge.require(.general) }
+            } label: { line }
+            .buttonStyle(.plain)
+            .accessibilityLabel("\(name), open profile")
+            .accessibilityIdentifier("visitor-name")
+        }
+    }
+
     private func tileShelf(_ trees: [Tree], ghosts: Int = 0) -> some View {
         shelf {
             ForEach(trees) { t in
@@ -768,6 +809,31 @@ struct HomeView: View {
     @ViewBuilder private var shelves: some View {
         if deck.best.count >= 3 {
             section("At their best now") { tileShelf(deck.best) }
+        }
+
+        // NEW FROM VISITORS (Hidde, 2026-11-06, approved in the simulator):
+        // the newest photographs visitors sent that went live, one tile per
+        // tree, the person under it on one line (Unsplash's and Pinterest's
+        // creator line). Second on the page, right under the season's trees,
+        // so a newcomer sees people adding before the cities and lists. From
+        // four tiles, so it never stands half empty (Kit/NewFromVisitors).
+        let fresh = visitorRows.compactMap { r in catalogue.tree(r.tree_id).map { (row: r, tree: $0) } }
+        if fresh.count >= NewFromVisitors.minimum {
+            section("New from visitors") {
+                shelf {
+                    ForEach(fresh, id: \.row.id) { f in
+                        VStack(alignment: .leading, spacing: 7) {
+                            NavigationLink(value: Route.tree(f.tree.id)) {
+                                CollectedTile(kind: .ours(f.tree), city: f.tree.city)
+                                    .frame(width: Self.tileWidth).clipShape(Self.tileShape)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("visitor-tile")
+                            visitorLine(f.row)
+                        }
+                    }
+                }
+            }
         }
 
         cityShelf
