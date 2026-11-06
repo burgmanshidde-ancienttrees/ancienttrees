@@ -18,7 +18,9 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 **Why.** Joe Pinner (Guardian environment desk, Scott Trust trainee) interviewed Hidde today; the piece is expected around Monday. Half the UK was missing from the web map (131 web, 122 app-only), and most mobile readers are on Android. Hidde: "put all pins live of the app only trees".
 
-**Open, Hidde's call.** Pages for app-only UK trees (122), noindexed: blocked only by the 25-a-day pace. Holding iOS 1.0.4 until after the spike (submit with manual release). Press images are in out/press/for-joe (gitignored out/).
+**Then, on his word ("lift limit once! this is exceptional curcumstance"):** every app-only UK tree got its page, 122 at once, through data/app-first-released.json (read by findable.app_only() and app-first.ts). Live and checked: 122 of 122 in search, London 48, Bristol 22 ("Twenty-two" in its intro and meta), Cambridge 10, Canterbury, Wolverhampton and Sheffield have place pages for the first time; the pages carry the googlebot noindex. APP FIRST and the 25-a-day pace hold for every other tree.
+
+**Open, Hidde's call.** Holding iOS 1.0.4 until after the spike (submit with manual release). Press images are in out/press/for-joe (gitignored out/).
 
 **Breakage.** The pins deploy collided twice with another session's deploy; a newer run carrying the same commit went live, the older one was cancelled so it could not overwrite it.
 
