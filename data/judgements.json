@@ -18,6 +18,34 @@
    "agreed": null
   },
   {
+   "id": "lead:15a3b6f1-3dd9-4ac2-bec5-bbd1c47d7613",
+   "seen": "2026-11-05",
+   "kind": "a tree we do not map",
+   "tree": "A tree near Fribourg",
+   "city": null,
+   "species": null,
+   "photo": "p_2e79bf68318b596d2c9298dc/15A3B6F1-3DD9-4AC2-BEC5-BBD1C47D7613.jpg",
+   "reader_note": "3 cèdres de l’Atlas, dans le park du domaine de la maison de santé de Préfargier, dans la commune de Laténa, canton de Neuchâtel",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null,
+   "shown": [
+    "2026-11-06"
+   ]
+  },
+  {
    "id": "sight:bf2d7d04-5191-485b-8371-73799f57cdda",
    "seen": "2026-11-02",
    "kind": "photo of a tree we map",
@@ -2638,6 +2666,26 @@
    "reason": "Not a tree submission. A home office window scene: blinds, a clock, headphones on the sill, trees visible only distantly through the glass. Nothing to research.",
    "hidde": null,
    "agreed": null
+  },
+  {
+   "id": "sight:4b28d99e-e0f2-4572-b851-23dd79e73031",
+   "seen": "2026-11-04",
+   "kind": "photo of a tree we map",
+   "tree": "The Rockface Sycamore of Cramond",
+   "city": "Edinburgh",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "photo": "https://ancienttrees.app/photos/edi_008-the-rockface-sycamore-of-cramond-4b28d99e.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 10,
+   "current_photo": "approved",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Looked at it: the leaning sycamore reaching out over the riverside path from the ivy bank, daylight and colour, geotag 10 m. Held on 11-04 as a weaker frame than the lead; now in the strip beside it.",
+   "hidde": "put it live! we should embrace all user generated content, as long as its sort of the tree - we can be picky later",
+   "agreed": true,
+   "verdict_on": "2026-11-06"
   }
  ]
 }
