@@ -728,12 +728,19 @@ window.atMapPlace = function(kind, key) {
   CITIES.forEach(function(c) {
     if (kind === 'country' ? c.country === key : c.url === key) { slugs[c.url] = 1; }
   });
-  var b = new maplibregl.LngLatBounds(), n = 0;
+  var lngs = [], lats = [];
   DATA.features.forEach(function(f) {
     var c = f.geometry.coordinates;
-    if (slugs[f.properties.cs] && c[0] !== null && c[1] !== null) { b.extend(c); n++; }
+    if (slugs[f.properties.cs] && c[0] !== null && c[1] !== null) { lngs.push(c[0]); lats.push(c[1]); }
   });
+  var n = lngs.length;
   if (!n) { return false; }
+  // The middle 96 percent of its trees, as the app frames a place, so one
+  // tree overseas does not pull the view across an ocean (France's in the
+  // Caribbean framed the whole Atlantic, 2026-11-06).
+  lngs.sort(function(a, z) { return a - z; }); lats.sort(function(a, z) { return a - z; });
+  var lo = Math.floor((n - 1) * 0.02), hi = Math.ceil((n - 1) * 0.98);
+  var b = new maplibregl.LngLatBounds([lngs[lo], lats[lo]], [lngs[hi], lats[hi]]);
   var lift = 0;
   try {
     var mr = map.getContainer().getBoundingClientRect();
