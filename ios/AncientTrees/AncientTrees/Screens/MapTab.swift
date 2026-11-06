@@ -446,6 +446,10 @@ struct MapTab: View {
         /// The place the view is about (viewPlace), per settled view.
         var placeKey: ViewKey?
         var place: ViewPlace?
+        /// The chosen place's own trees in view, per settled view and place.
+        var hereKey: ViewKey?
+        var hereFocus: FocusPlace?
+        var here: [(tree: Tree, km: Double)] = []
     }
 
     /// Who owns the trees under the view: the biggest city and country by
@@ -460,9 +464,23 @@ struct MapTab: View {
     /// The list as the sheet draws it: under a place's header only that
     /// place's trees, otherwise everything in view.
     private var listedHere: [(tree: Tree, km: Double)] {
-        guard focusPlace != nil else { return listed }
-        let ids = Set(placeTrees.map(\.id))
-        return listed.filter { ids.contains($0.tree.id) }
+        guard let p = focusPlace else { return listed }
+        // FROM THE PLACE'S OWN TREES, not the sixty nearest filtered after
+        // (Hidde, 2026-11-06: United Kingdom framed the Benelux too and the
+        // list showed only Dutch trees; the sixty nearest to a centre over the
+        // North Sea were nearly all Dutch, so the UK's own fell outside them).
+        let key = viewKey
+        if viewMemo.hereKey == key, viewMemo.hereFocus == p { return viewMemo.here }
+        // Every one of them in view: a place is a bounded list (the UK 253),
+        // drawn lazily, and its head can then say "All 253 trees" truly.
+        let out = Self.listedTrees(placeTrees, box: visibleBox, focus: focus,
+                                   filters: filters, month: month,
+                                   collected: key.collected, favourites: key.favourites,
+                                   query: query, cap: .max)
+        viewMemo.hereKey = key
+        viewMemo.hereFocus = p
+        viewMemo.here = out
+        return out
     }
 
     private var listed: [(tree: Tree, km: Double)] {
@@ -504,7 +522,7 @@ struct MapTab: View {
     private static func listedTrees(_ trees: [Tree], box: Box, focus: (lat: Double, lng: Double),
                                     filters: MapFilters, month: Int,
                                     collected: Set<String>, favourites: Set<String>,
-                                    query: String) -> [(tree: Tree, km: Double)] {
+                                    query: String, cap: Int = 60) -> [(tree: Tree, km: Double)] {
         guard query.isEmpty else {
             let q = query.lowercased()
             return trees
@@ -521,7 +539,7 @@ struct MapTab: View {
             .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
             .filter { filters.keepsDistance($0.1) }
             .sorted { $0.1 < $1.1 }
-            .prefix(60)
+            .prefix(cap)
             .map { (tree: $0.0, km: $0.1) }
         return Editorial.leadWithAPhotograph(near, photo: { $0.tree.photo != nil })
     }
