@@ -14,6 +14,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06 night run (06:46 window): rung 5, New York and the UK into the app
+
+- **Rung 1:** nothing waiting (no photographs, no tree notes).
+- **Rung 2:** Postbox check fails because supabase/plus-answers.sql (`plus_answers.other_text`) was never pasted: **For Hidde: paste supabase/plus-answers.sql into Supabase.** iOS app failed on its schedule (1h16m run, 3 in a row), not diagnosed this window. Only 5 of 12 knocks delivered.
+- **New York:** write pass on 29 verified Great Trees (new-york-2/3/4), merged via build_us_newyork_2026_11_06.py, species aligned to the canonical names (Small-leaved Lime, Weeping Beech, Wild Cherry, Fern-leaved Beech, Persian Ironwood). New York now 95. Held: nyc_085 (Parks species mislabel), nyc_094 and nyc_029 (duplicates of the Camperdown Elm). Six botanic-garden trees have paid-entry wording in access but no `paid_entry` flag (a preflight note).
+- **UK:** the written West, North and South sets held since 11-04 for the pace (the pace does not count app-only trees) merged: 42 places incl. Westonbirt, Canterbury, Stratford, Exeter, Sheffield, Wells, the Cotswold and Welsh yews. Preflight 0 problems. Five new places have no Wikipedia match for their names (Discoed, Llanfaredd, Lorton, Martindale, Wells), a look rather than a guess.
+
 ## 2026-11-05 night run (23:09 window): rung 2, deploy repaired
 
 - **Rung 1:** no photographs waiting; one tree note ("Test" on bcn_012), marked seen.
