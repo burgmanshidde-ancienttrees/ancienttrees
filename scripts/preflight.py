@@ -89,6 +89,13 @@ def check_city(path):
             if m is not None and not (isinstance(m, int) and not isinstance(m, bool) and 1 <= m <= 12):
                 out.append("%s/%s: photo taken_month %r is not a number 1-12, the build refuses it"
                            % (slug, t.get("id"), m))
+        # The app feed (feedshape.py) refuses a strip photo without a numeric
+        # width and height, after a 25-minute build; Balfron and Canterbury
+        # stopped the 11-06 09:15 deploy that way. Refuse it at the push.
+        for p in t.get("photos") or []:
+            if isinstance(p, dict) and not (isinstance(p.get("width"), int) and isinstance(p.get("height"), int)):
+                out.append("%s/%s: strip photo %s has no width/height; installed apps break on a null"
+                           % (slug, t.get("id"), (p.get("url") or "")[-60:]))
         # Same schema: these are z.string().optional(), so a missing key is
         # fine and a null is refused; "age_estimate": null in Bisceglie and
         # Foresta Umbra stopped the 11-06 08:51 deploy. Leave the key out.
