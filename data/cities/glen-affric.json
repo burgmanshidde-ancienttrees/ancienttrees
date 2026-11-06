@@ -1,0 +1,70 @@
+{
+  "city": "Glen Affric",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Glen Affric's tree is the Last Ent of Affric, a lone wych elm growing out of a mountain stream in Gleann nan Cichean, a side glen far beyond the end of the road. It is hundreds of years old, 3.8 metres round, and may be the last survivor of an ancient forest. It was Scotland's Tree of the Year in 2019. Reaching it is a long hill walk or bike ride with no waymarked path.",
+  "meta_description": "The Last Ent of Affric, Glen Affric: a lone wych elm hundreds of years old, Scotland's Tree of the Year 2019. Free, about 11 km beyond the road end.",
+  "question_meta": "Glen Affric's remarkable tree is the Last Ent of Affric, a lone wych elm hundreds of years old, about 11 km beyond the end of the road.",
+  "question_answer": "Glen Affric's notable tree is the Last Ent of Affric, a lone wych elm in Gleann nan Cichean, a side glen of Glen Affric near Cannich. Forestry and Land Scotland calls it hundreds of years old, and it was Scotland's Tree of the Year in 2019.",
+  "question_context": "The elm grows on the rocky outflow of a mountain stream, with almost no soil under the moss, and it may be the last survivor of an ancient forest. Its isolation, many miles from the next elm, is credited by Wikipedia with keeping it free of Dutch elm disease. Nobody has dated it more closely than hundreds of years. The trunk is 3.8 metres round at chest height. The name comes from Tolkien's Ents, and in 2019 Forestry and Land Scotland nominated it for Scotland's Tree of the Year, which it won in a public vote. In April 2024 the forestry body planted 35 young wych elms from the Royal Botanic Garden Edinburgh beside it, inside a deer fence, the first of about 200 planned over two years. Getting there is a commitment. Forestry and Land Scotland puts it about 11 kilometres beyond the end of the road, with no waymarked path, and the road end is itself 13 kilometres of single-track from Cannich. Plan it as a long hill walk or bike ride, and turn back after storms if the way looks unsafe.",
+  "hero_tree_id": "gaf_001",
+  "oldest_tree_id": "gaf_001",
+  "faq": [
+    {
+      "q": "Where is the Last Ent of Affric?",
+      "a": "In Gleann nan Cichean, a side glen of Glen Affric, about 11 km beyond the end of the road, according to Forestry and Land Scotland. The pin marks the tree."
+    },
+    {
+      "q": "Is there a path to the Last Ent of Affric?",
+      "a": "No waymarked path that we found. It is a long hill walk or bike ride from the Glen Affric road end; go prepared."
+    },
+    {
+      "q": "How old is the Last Ent of Affric?",
+      "a": "Hundreds of years, Forestry and Land Scotland says. Nobody has dated it more precisely."
+    },
+    {
+      "q": "Can you get to Glen Affric by public transport?",
+      "a": "Buses from Inverness reach Cannich, but we found none to the road end, 13 km further by single-track road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gaf_001",
+      "name": "Last Ent of Affric",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "hundreds of years",
+      "age_basis": "source",
+      "girth_cm": 380,
+      "location": {
+        "address": "Gleann nan Cichean (Glean nan Cìche), side spur of Glen Affric, near Cannich, Highland",
+        "latitude": 57.22138,
+        "longitude": -5.1064,
+        "neighbourhood": "Glen Affric"
+      },
+      "story": "This wych elm grows out of a mountain stream, on rock with almost no soil under the moss, and it may be the last of a forest that disappeared long ago. It stands alone in Gleann nan Cichean, a side glen of Glen Affric, and Forestry and Land Scotland, who own the ground, call it hundreds of years old. Nobody has dated it more closely than that. Its trunk is 3.8 metres round at chest height.\n\nIts loneliness has protected it. Wikipedia credits its isolation, many miles from the next elm, with keeping it free of Dutch elm disease. Somebody gave it a name from Tolkien, and in 2019 it was Scotland's Tree of the Year, nominated by Forestry and Land Scotland.\n\nIt is no longer alone. In April 2024 Forestry and Land Scotland planted 35 young wych elms from the Royal Botanic Garden Edinburgh beside it, inside a deer fence, the first of about 200 planned over two years. If they take, the last Ent will have a wood again.\n\nGetting there is the real undertaking. The tree is about 11 kilometres beyond the end of the road, Forestry and Land Scotland says, with no waymarked path to it, and the road end itself is 13 kilometres of single-track from Cannich. It is a long hill walk or bike ride. Go prepared, and turn back after storms if the way looks unsafe.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Last_Ent_of_Affric",
+        "https://forestryandland.gov.scot/blog/the-last-ent-of-affric-is-no-longer-alone",
+        "https://www.wikidata.org/wiki/Q106841524",
+        "https://www.thegreatbritainguide.com/place/last-ent-of-affric/"
+      ],
+      "official_register": {
+        "name": "Woodland Trust Tree of National Special Interest; Scotland's Tree of the Year 2019 (nominated by Forestry and Land Scotland)",
+        "url": "https://en.wikipedia.org/wiki/Last_Ent_of_Affric"
+      },
+      "access": "Forestry and Land Scotland ground, open access, but remote: FLS says it is hidden about 11 km from the end of the road (search result, FLS page itself not fetched with that figure). A long hill walk or bike ride beyond the Glen Affric road end; no waymarked path to the tree found. Check conditions, FLS asks visitors to turn back if unsafe after storms.",
+      "transport": "Glen Affric road end car park is about 8 miles (13 km) from Cannich by single-track road; no public bus found to the road end. Cannich is reached by Inverness bus (Stagecoach/Rapsons, check timetable).",
+      "how_to_recognise": "You can recognise it as the lone craggy elm rooted in the rocky outflow of a stream in Gleann nan Cichean. A fenced patch of young elms, planted beside it in 2024, stands next to it.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Wych elm on the rocky outflow of a mountain stream with almost no soil under the moss (Wikipedia). Girth 3.8 m at 1.5 m height (Wikipedia only; links Woodland Trust inventory, which this pass does not use). Age uncertain, 'hundreds of years' (FLS blog 16 Apr 2024). Probably the last survivor of an ancient forest; isolation many miles from the next elm has kept it free of Dutch elm disease. Scotland's Tree of the Year 2019, one of six finalists, public online vote, nominated by Giles Brockman of FLS. Nicknamed after Tolkien's Ents. April 2024: 35 young wych elms from the Royal Botanic Garden Edinburgh planted beside it, first of about 200 over two years, inside a deer fence (FLS). Alive as of April 2024 per FLS. Pin: Wikidata P625 57.22138, -5.1064 at 1e-5 precision, matches Wikipedia 57 13 17 N 5 06 23 W; treated as the trunk. No storm-fell report found. Press: Scotsman, Press and Journal on the 2019 award (not fetched). Two independent reads: FLS (landowner) plus Wikipedia citing the Woodland Trust award.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Wych_elm%2C_Gleann_na_C%C3%ACche_%28geograph_7210938%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Craig Wallace",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Wych_elm,_Gleann_na_C%C3%ACche_(geograph_7210938).jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

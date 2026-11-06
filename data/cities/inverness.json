@@ -1,0 +1,69 @@
+{
+  "city": "Inverness",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Our tree near Inverness is the Lord President's Oak in Culloden Wood, about five miles east of the city. It is said to have been planted around 1855, when a stone seat used by Duncan Forbes, Lord President of the Court of Session, had to be moved for the Highland railway. Forestry and Land Scotland nominated it for Scotland's Tree of the Year in 2020. The woodland trail is free.",
+  "meta_description": "The Lord President's Oak, Culloden Wood near Inverness: planted around 1855 beside a moved stone seat. Nominated for Tree of the Year 2020. Free.",
+  "question_meta": "Near Inverness, the Lord President's Oak in Culloden Wood is a 19th-century oak beside a stone seat moved for the Highland railway in 1855.",
+  "question_answer": "Our tree near Inverness is the Lord President's Oak in Culloden Wood, about five miles east of the city, on the trail to St Mary's Well. It was planted around 1855, by the wood's own account, and Forestry and Land Scotland nominated it for Scotland's Tree of the Year in 2020.",
+  "question_context": "The oak takes its name from the boulder beneath it, the Lord President's Seat. Duncan Forbes of Culloden, Lord President of the Court of Session, who died in 1747, is said to have sat on it with his wife. In 1855 the stone had to be moved for the Highland railway, and the oak was planted beside it around the same time, which puts the tree at roughly 170 years. That planting story comes from a single nomination, so read it as the wood's tradition. In 2020 Forestry and Land Scotland put the tree forward for Scotland's Tree of the Year and called it one of the most impressive in the country. It is not a veteran, and nobody has published which oak it is, sessile or pedunculate, or its girth, so a reader with a tape measure can add more than we can. A walker in 2024 described the boulder below an old tree, which is our most recent sighting. The trail also passes the Prisoners' Stone and St Mary's clootie well, and starts from the Culloden Wood car park. It is free.",
+  "hero_tree_id": "inv_001",
+  "oldest_tree_id": "inv_001",
+  "faq": [
+    {
+      "q": "Where is the Lord President's Oak?",
+      "a": "In Culloden Wood, about five miles east of Inverness, at the Lord President's Seat, a boulder just south of the railway bridge on the trail to St Mary's Well."
+    },
+    {
+      "q": "How old is the Lord President's Oak?",
+      "a": "Roughly 170 years, if the story that it was planted around 1855 holds. That date comes from a single nomination, not a planting record."
+    },
+    {
+      "q": "Is Culloden Wood free?",
+      "a": "Yes. It is a Forestry and Land Scotland woodland, walked on foot from the Culloden Wood car park."
+    },
+    {
+      "q": "Can you get to Culloden Wood by bus from Inverness?",
+      "a": "Buses run from Inverness to Culloden village, from where you walk into the wood; check the current timetable."
+    }
+  ],
+  "trees": [
+    {
+      "id": "inv_001",
+      "name": "Lord President's Oak",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "roughly 170 years",
+      "age_min": 150,
+      "age_max": 190,
+      "location": {
+        "address": "Culloden Wood, beside the Lord President's Seat stone and the bridge over the Highland railway, on the path to St Mary's Well, Inverness",
+        "latitude": 57.48229,
+        "longitude": -4.13389,
+        "neighbourhood": "Culloden Wood"
+      },
+      "location_site": {
+        "name": "Lord President's Seat stone, Culloden Wood",
+        "radius_m": 30
+      },
+      "story": "This oak was planted, by the account of the people who manage the wood, because a railway needed a stone moved. The stone was a seat used by Duncan Forbes of Culloden, Lord President of the Court of Session, and his wife. Forbes died in 1747. In 1855 the seat had to be moved for the Highland railway, and an oak was planted beside it around then. Hence the name, and an age of roughly 170 years.\n\nThe planting story comes from a single nomination, so treat it as the wood's tradition rather than a record. In 2020 Forestry and Land Scotland put the tree forward for Scotland's Tree of the Year and called it one of the most impressive in the country. The articles never say which oak it is, sessile or pedunculate, and nobody has published its girth. If you know your oaks, the acorn stalks will tell you, and we would like to hear.\n\nIt stands at the boulder still called the Lord President's Seat, just south of the bridge over the railway, on the trail to St Mary's Well. In 2024 a walker described the boulder below an old tree, without calling it an oak, which is the most recent sighting we have. The same walk passes the Prisoners' Stone and St Mary's clootie well.\n\nIt is a 19th-century tree, not a veteran, and the walk is free from the Culloden Wood car park, about five miles east of Inverness.",
+      "verified_sources": [
+        "https://www.ross-shirejournal.co.uk/news/highland-oak-in-running-for-tree-of-the-year-title-210449/",
+        "https://her.highland.gov.uk/Monument/MHG30100",
+        "https://inverness-courier.co.uk/lifestyle/active-outdoors-sombre-sights-on-woodland-walk-close-to-cul-346456"
+      ],
+      "access": "Free; Forestry and Land Scotland woodland, on the waymarked Culloden Wood Trail to St Mary's Well, on foot from the Culloden Wood car park.",
+      "transport": "Culloden Wood is about 5 miles east of Inverness; bus services run to Culloden village (check current timetable), then walk into the wood; otherwise drive.",
+      "how_to_recognise": "You can recognise it as the old oak over the Lord President's Seat, a boulder just south of the railway bridge on the Culloden Wood trail. The stone was moved here in 1855 for the Highland railway.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Nominated for Scotland's Tree of the Year 2020 by Laura McNally of Forestry and Land Scotland, hailed one of the most impressive in Scotland (Ross-shire Journal, 27 Aug 2020, fetched). Planted around 1855, said to be after the stone seat used by Duncan Forbes, Lord Culloden (1685-1747, Lord President of the Court of Session) and his wife had to be moved for the Highland railway (Ross-shire Journal 2020; Highland HER MHG30100 gives the stone moved in 1855 for the railway and the Moray Firth view story from the FLS car park board). The planting date is therefore a claim from a news nomination, not a documented record; age is derived and broad, 'roughly 170 years'. Species is not named in the articles I fetched, only 'oak': ask the reader. Girth and height not published in anything fetched. Pin: Highland HER grid reference NH 7216 4557 for the stone converted to WGS84 (57.48229, -4.13389), 4 m by 4 m; the tree stands at the stone, so a small named site, but the oak itself is not mapped: approximate. ALIVE: Inverness Courier walk piece of 1 April 2024 describes a boulder 'below an old tree' just south of the railway (does not name the tree as an oak); no storm loss found. FLS visit page 404 and the P&J article 403. Flagged: single-source planting story, species unnamed. A candidate for a reader-confirmed species and girth. Not a veteran: it is a 19th-century planting, worth the walk for the story (Culloden estate, Forbes, Tree of the Year nominee) and for the Culloden Wood walk, which also passes the Prisoners' Stone and St Mary's clootie well.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Lord_President_Seat_-_geograph.org.uk_-_1747776.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Richard Dorrell",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Lord_President_Seat_-_geograph.org.uk_-_1747776.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "city": "Gosford",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Gosford Forest Park, outside Markethill in County Armagh, has a quiet grassy arboretum, and its champion is a Himalayan fir that Northern Ireland's Forest Service book says holds the record for the greatest girth of its species, 13 feet 10 inches round. The measurement is undated and the book is the only source, so a recent sighting is welcome. It keeps company with veteran Douglas firs with craggy bark.",
+  "meta_description": "The Gosford Champion Fir, County Armagh: a Himalayan fir listed with the greatest girth of its species, 4.2 metres round. Forest park, car charge.",
+  "question_meta": "Gosford's remarkable tree is a Himalayan fir in the forest park arboretum, listed in the record books for the greatest girth of its species.",
+  "question_answer": "Gosford Forest Park's notable tree is the champion Himalayan fir, Abies spectabilis, in the arboretum near Markethill, County Armagh. Northern Ireland's Forest Service book says it is in the record books for the greatest girth of its species, 13 feet 10 inches, about 4.2 metres.",
+  "question_context": "Almost everything known about this tree comes from one source, Northern Ireland's Remarkable Trees, a Forest Service book published some time between about 2005 and 2015. It names the Himalayan fir as the arboretum's champion, gives its girth as 13 feet 10 inches, calls it extremely tall and says it was in excellent health when the book was written. It does not date the measurement and gives no height. Nobody has dated the tree. We found no report of it falling, and none confirming it stands today, which is why the entry carries a flag. The setting is described in more detail than the tree. It is a quiet, grassy arboretum with the trees well spaced, and a group of veteran Douglas firs whose bark has gone craggy and carbuncled. Our pin marks the middle of the forest park rather than the fir, so allow time to look. If you find it, a photograph and a position would help the next visitor more than anything we could add. The park is run by the Forest Service and open to the public, with a charge for cars.",
+  "hero_tree_id": "gsf_001",
+  "oldest_tree_id": "gsf_001",
+  "faq": [
+    {
+      "q": "Is Gosford Forest Park free?",
+      "a": "It is open to the public on foot, and cars pay a charge. Check the nidirect page for Gosford Forest Park before travelling."
+    },
+    {
+      "q": "Where in Gosford is the champion fir?",
+      "a": "In the arboretum. No source gives its exact position, so our pin marks the forest park, not the tree."
+    },
+    {
+      "q": "How do you get to Gosford Forest Park by bus?",
+      "a": "Ulsterbus services between Armagh and Newry call at Markethill, about 2 km from the park entrance."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gsf_001",
+      "name": "The Gosford Champion Fir",
+      "species": "Himalayan Fir (Abies spectabilis)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "girth_cm": 421,
+      "location": {
+        "address": "Gosford Forest Park arboretum, Markethill, County Armagh BT60 1GD",
+        "latitude": 54.3065,
+        "longitude": -6.5147,
+        "neighbourhood": "Markethill, County Armagh"
+      },
+      "story": "The record books give this fir the greatest girth of any of its species. It is a Himalayan fir, Abies spectabilis, and Northern Ireland's Forest Service book on remarkable trees puts it at 13 feet 10 inches round, about 4.2 metres, and calls it extremely tall. It is the champion of the Gosford arboretum, and at the time the book was written it was in excellent health.\n\nThat is almost everything anyone has written about it, and we should say what is missing. The book does not date the measurement, and it was published somewhere between about 2005 and 2015, so the figure may be twenty years old. It gives no height. Nobody has dated the tree. And we have only that one source, which is why it carries a flag. If the tree has fallen, we have not heard.\n\nWhat the book does give is a sense of the place. The arboretum is quiet and grassy, the trees well spaced, and the fir keeps company with a group of veteran Douglas firs whose bark has gone craggy and carbuncled with age.\n\nOur pin is the middle of the forest park, not the tree. If you find it, a photograph and a position would help the next visitor. The park is open to the public, with a charge for cars.",
+      "verified_sources": [
+        "http://web.archive.org/web/20251211051821/https://remarkabletrees.org/champions/an-elegant-fir-at-gosford/"
+      ],
+      "access": "NI Forest Service park, open to the public; vehicle charge applies (not fetched). Check nidirect Gosford Forest Park before travelling.",
+      "transport": "Markethill is about 2 km from the park entrance; Ulsterbus Armagh to Newry services call at Markethill.",
+      "how_to_recognise": "You can recognise it as a well-spaced, very tall fir about 4.2 metres round in the quiet, grassy arboretum. A group of veteran Douglas firs with craggy, carbuncled bark stands near it; our pin marks the park, not the tree.",
+      "location_precision": "approximate",
+      "pin_source": "Park centroid (OSM relation 5328043). The book says only 'the arboretum'. Not a pin on the tree.",
+      "curation_status": "flagged",
+      "verify_notes": "Single source: Northern Ireland's Remarkable Trees (Forest Service book, remarkabletrees.org, Wayback 2025-12 copy): the arboretum champion is Abies spectabilis, 'in the record books at the greatest girth for this species', 13 ft 10 in round (= 421 cm; measurement date not given, book published about 2005 to 2015) and 'extremely tall', in excellent health at the time of writing. Alive today not independently confirmed; no height figure. Register-only style source, flagged.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

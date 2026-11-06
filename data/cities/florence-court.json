@@ -1,0 +1,68 @@
+{
+  "city": "Florence Court",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Florence Court, a National Trust estate in Fermanagh, holds the tree every Irish yew in the world is said to descend from. It is not a tall column but a low, scraggy survivor beside a stream in a glade, cut back for two centuries of cuttings. A farmer found it as a wild seedling on the slopes of Cuilcagh before 1767, perhaps as early as 1740, and gave it to his landlord. That makes it at least about 250 years old.",
+  "meta_description": "The Florence Court Yew, Fermanagh: the scraggy tree every Irish yew is said to descend from, at least 250 years old. National Trust, paid entry.",
+  "question_meta": "Florence Court's remarkable tree is the original Irish yew, said to be the parent of every Irish yew, at least about 250 years old.",
+  "question_answer": "Florence Court's notable tree is the Florence Court Yew, the original Irish yew, said to be the parent of every Irish yew growing anywhere. It stands beside a small stream in a glade on the National Trust's Florence Court estate, south-west of Enniskillen.",
+  "question_context": "The tree began wild. A farmer, George Willis, found two upright yew seedlings on the slopes of Cuilcagh, at a rock called Carraig-na-madadh, the Rock of the Dog, and gave one to his landlord, Lord Mountflorence, later Earl of Enniskillen. Only this one survives. The date is disputed. Sources give 1740, 1760, 1764, 1767 and 1780, and the Fermanagh botanists put the collecting before 1767, which makes the planted tree at least about 250 years old. The Irish yews in churchyards everywhere are said to be cuttings of this one. It shows the cost. The botanists who know it say it survives rather than thrives, scraggy and lichen-covered, long shaded by ash and sycamore. Clearing and pruning in 1980 helped, and it was reported stable in 2010, the last dated condition report we could read. Florence Court is a National Trust property with paid entry for non-members, and Storm Eowyn damaged the Trust's estates here in January 2025.",
+  "hero_tree_id": "flc_001",
+  "oldest_tree_id": "flc_001",
+  "faq": [
+    {
+      "q": "Where is the original Irish yew?",
+      "a": "At Florence Court in County Fermanagh, about 12 km south-west of Enniskillen, beside a small stream in a glade on the National Trust estate."
+    },
+    {
+      "q": "How old is the Florence Court Yew?",
+      "a": "At least about 250 years. It was collected as a wild seedling before 1767, perhaps as early as 1740; sources disagree on the year."
+    },
+    {
+      "q": "Do you have to pay to see the Florence Court Yew?",
+      "a": "Yes, unless you are a National Trust member. Florence Court charges non-members for entry; check the current price and hours on the National Trust site before travelling."
+    },
+    {
+      "q": "Why does the Florence Court Yew look so small?",
+      "a": "It has been cut for cuttings for two centuries and was long shaded by taller trees. The botanists who know it say it survives rather than thrives."
+    }
+  ],
+  "trees": [
+    {
+      "id": "flc_001",
+      "name": "The Florence Court Irish Yew",
+      "species": "Irish Yew (Taxus baccata 'Fastigiata')",
+      "age_estimate": "over 250 years",
+      "age_min": 250,
+      "age_max": 280,
+      "age_basis": "source",
+      "location": {
+        "address": "Florence Court, Rourkefield Road, Florencecourt, Enniskillen BT92 1DJ",
+        "latitude": 54.2541069,
+        "longitude": -7.7229609,
+        "neighbourhood": "Florencecourt, Fermanagh"
+      },
+      "story": "Every Irish yew standing in a churchyard anywhere is said to be a cutting of this one, and it is not much to look at. The botanists who know it best say it survives rather than thrives. It is low, scraggy and lichen-covered, cut back for two centuries of cuttings and shaded for years by ash and sycamore.\n\nIt began as a wild plant. A farmer called George Willis found two upright yew seedlings on the slopes of Cuilcagh, at a rock known as Carraig-na-madadh, the Rock of the Dog, and gave one to his landlord, Lord Mountflorence, later Earl of Enniskillen. Of the two, only this one lives. When that happened is argued over. Sources give 1740, 1760, 1764, 1767 and 1780, and the Fermanagh botanists put the collecting before 1767, perhaps as early as 1740. That makes the planted tree at least about 250 years old, and the wild seedling older still.\n\nClearing and pruning in 1980 helped it, and in 2010 it was reported stable, with moss slowing its growth. That is also the last dated report on its condition we could read, so if you have seen it recently, tell us how it looks.\n\nIt stands beside a small stream in a glade at Florence Court, a National Trust estate with paid entry for non-members. Storm Eowyn damaged Northern Ireland's estates in January 2025, so check the Trust's page first.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Florence_Court_Yew",
+        "https://fermanagh.bsbi.org/taxus-baccata-fastigiata",
+        "https://nominatim.openstreetmap.org/ui/details.html?osmtype=N&osmid=5274376196"
+      ],
+      "access": "Paid entry: National Trust property (Florence Court); members free, non-members pay admission, current price and hours on the National Trust site (not fetched, NT site blocked us). The tree stands in a stream-side glade in the demesne, reached on foot from the house grounds. Check the NT page before travelling: Storm Eowyn (Jan 2025) damaged NI Trust estates.",
+      "transport": "No public transport worth naming; about 12 km (15 min drive) south-west of Enniskillen, Fermanagh. Ulsterbus rural services are infrequent.",
+      "how_to_recognise": "You can recognise it by how unimpressive it is, a low, scraggy, misshapen yew rather than a tall column. It stands beside a small stream in a glade at Florence Court, sheltered by laurels and taller trees.",
+      "location_precision": "confirmed",
+      "pin_source": "OSM natural=tree node 5274376196 named 'Florence Court Irish Yew' (54.2541069, -7.7229609); Wikipedia coordinate 54.2542, -7.7231 agrees within 15 m.",
+      "curation_status": "flagged",
+      "verify_notes": "Sources: Wikipedia (Florence Court Yew; custodian National Trust; date seeded 1767; two seedlings, one died, this one survives; heavy cutting and shade from ash and sycamore; 'stable' as of 2010 with moss slowing growth); BSBI Fermanagh account (original plants collected as juveniles before 1767, possibly as early as 1740; found by George Willis, farmer at Aghatirourke, Killesher parish, on the NE slopes of Cuilcagh at Carraig-na-madadh, 'The Rock of the Dog'; gave the second plant to his landlord Lord Mountflorence, later Earl of Enniskillen; the tree 'survives rather than thrives', scraggy, overgrown with lichens; clearing and pruning in 1980 helped; grows beside a small stream in a glade sheltered by laurels, on land BSBI says is managed by NI Forest Service). Dates conflict by source: 1740 / 1760 / 1764 / 1767 / 1780 appear; BSBI first record at Florencecourt by J.T. Mackay 1825. All Irish yews are said to descend from cuttings of this tree (Wikipedia: oldest Irish yew alive). Age: tree is a clone of a wild seedling taken before 1767; the planted tree is therefore at least about 250 years old, wild seedling older. Height 7.5 m is from search-summary only, NOT a seen figure; do not use. Girth not found. Flagged: single dated condition report is 2010 (Wikipedia); a search summary says the tree was selected for the Queen's Green Canopy in 2022 (Fermanagh Herald, page 403 to us, unseen). iNaturalist observation within 100 m region 2025-10-12 (weak area-level life check). Hosts: nationaltrust.org.uk (Radware challenge), fermanaghherald.com (403).",
+      "paid_entry": true,
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Yewspread1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "AWA Ferguson (Blacktav)",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Yewspread1.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

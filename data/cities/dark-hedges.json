@@ -1,0 +1,84 @@
+{
+  "city": "The Dark Hedges",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "The Dark Hedges is an avenue of beeches over the Bregagh Road near Armoy, in County Antrim, planted by the Stuart family around 1775 along the drive to Gracehill House. Game of Thrones made it famous as the King's Road. Storms have felled beeches almost every year since 2016, and the road has been closed to traffic since 2017, so you walk it. The trees stand on private land either side of the public road.",
+  "meta_description": "The Dark Hedges, County Antrim: beeches planted around 1775, thinned by storms since 2016. Free to walk; the road is closed to traffic since 2017.",
+  "question_meta": "The Dark Hedges is an avenue of beeches planted around 1775 near Armoy, closed to traffic since 2017 and thinned by storms since 2016.",
+  "question_answer": "The Dark Hedges is an avenue of beech trees arching over the Bregagh Road near Armoy in County Antrim, planted around 1775 along the drive to Gracehill House. It is free to walk, closed to traffic since 2017, and the trees stand on private land beside the road.",
+  "question_context": "The Stuart family planted about 150 beeches along the entrance road to Gracehill House around 1775, and over two and a half centuries the crowns grew together into a tunnel. After Game of Thrones filmed it as the King's Road, visitor numbers rose sharply. The storms came at the same time. Gertrude took two in 2016, Doris one in 2017, Hector one in 2018, an unnamed gale one in 2019, Arwen two in 2021, Isha three in 2024 and Eowyn two in January 2025, and others have been felled for safety. How many remain is not settled. A 2023 survey reported 86 and a more recent tally says around 75. The trees have had a preservation order since 2004 and a preservation trust since 2009. On 30 October 2017 the stretch between Ballinlea Road and Ballykenver Road was closed to all but emergency and farm vehicles, after the 2016 losses and the weight of traffic. The road is public; the land the beeches stand on is not. Look from the road and stay out of the fields. Walkers are sometimes kept out too, while tree work goes on.",
+  "hero_tree_id": "dkh_001",
+  "oldest_tree_id": "dkh_001",
+  "faq": [
+    {
+      "q": "Can you drive through the Dark Hedges?",
+      "a": "No. Bregagh Road between Ballinlea Road and Ballykenver Road has been closed to traffic since 30 October 2017, except for emergency and farm vehicles. Park at the Ballinlea Road end and walk."
+    },
+    {
+      "q": "How many trees are left at the Dark Hedges?",
+      "a": "Fewer every few years. About 150 were planted around 1775; a 2023 survey counted 86 and a later tally says around 75. Storms have taken beeches almost every year since 2016."
+    },
+    {
+      "q": "Is the Dark Hedges free?",
+      "a": "Yes. It is a public road. The beeches stand on private land beside it, so look from the road and do not go into the fields."
+    },
+    {
+      "q": "How old are the Dark Hedges?",
+      "a": "About 250 years. The avenue was planted around 1775 by the Stuart family along the drive to Gracehill House."
+    },
+    {
+      "q": "Can you get to the Dark Hedges by bus?",
+      "a": "Not easily. It is about 3 km from Armoy and 15 km from Ballymoney, and rural Translink services are infrequent. Most visitors come by car or on a coach tour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dkh_001",
+      "name": "The Dark Hedges",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "about 250 years",
+      "age_min": 230,
+      "age_max": 260,
+      "age_basis": "source",
+      "location": {
+        "address": "Bregagh Road, Armoy, Ballymoney BT53 8TU (between Ballinlea Road and Ballykenver Road)",
+        "latitude": 55.135169,
+        "longitude": -6.381941,
+        "neighbourhood": "Armoy, County Antrim"
+      },
+      "location_site": {
+        "name": "Bregagh Road avenue",
+        "radius_m": 50
+      },
+      "story": "The road through the Dark Hedges has been closed to traffic since 2017, to protect the beeches that made it famous. The Stuart family planted about 150 beeches around 1775 along the entrance drive to Gracehill House, and over two and a half centuries their crowns grew together into a tunnel over the Bregagh Road. Then Game of Thrones filmed it as the King's Road, and the coaches came.\n\nThe tunnel is thinning. Since 2016 storms have taken beeches almost every year. Gertrude took them in 2016, Doris in 2017, Hector in 2018, an unnamed gale in 2019, Arwen in 2021, three in Isha in 2024 and two more in Eowyn in January 2025. Others have been felled for safety. The count of survivors is not settled. A 2023 survey reported 86, and a more recent tally says around 75, so somewhere between the two is the honest answer. Nobody says 150 remain.\n\nThe trees have had a preservation order since 2004 and a trust of their own since 2009. On 30 October 2017 the road between Ballinlea Road and Ballykenver Road was closed to all but emergency and farm vehicles, partly because of the storm losses and the weight of traffic. You walk it now.\n\nThe beeches stand on private land beside the public road. Look from the road and stay out of the fields. Parking is at the Ballinlea Road end, and the road itself is sometimes closed to walkers too while tree work goes on.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Dark_Hedges",
+        "https://www.irishtimes.com/news/ireland/irish-news/game-of-thrones-site-in-co-antrim-may-be-closed-to-traffic-1.2754337",
+        "https://www.irishnews.com/news/northern-ireland/trees-made-famous-by-game-of-thrones-felled-by-storm-isha-PQQAQ7J2NJHYFOVO45X73ZGMRQ/",
+        "https://nominatim.openstreetmap.org/ui/details.html?osmtype=N&osmid=2393737678"
+      ],
+      "access": "Free. Public road, closed to general vehicles (traffic ban on Bregagh Road between Ballinlea Road and Ballykenver Road since 30 October 2017; emergency and agricultural vehicles exempt), so it is walked. The beeches stand on privately owned land beside the road: look from the road, do not enter the fields. Pedestrian closures happen for tree-safety works (Nov 2023). Parking at the Ballinlea Road end (OSM 'Dark Hedges Parking').",
+      "transport": "No bus to the door; about 3 km from Armoy village, 15 km from Ballymoney, on the Causeway Coast; Translink rural services to Armoy are infrequent. Many visitors come by car or coach tour.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the tunnel turns copper and russet overhead"
+      },
+      "how_to_recognise": "You can recognise it as the tunnel of interlaced beeches arching over the narrow Bregagh Road, the old drive to Gracehill House. Stand on the road and look along it; the trees are on private land either side.",
+      "location_precision": "approximate",
+      "pin_source": "OSM tourism=viewpoint node 2393737678 'The Dark Hedges' (55.135169, -6.381941); Wikipedia 55.1344, -6.3806; OSM tree_row way 441798399 spans 55.1328..55.1366. Pin is the viewing point at the avenue, one place to stand.",
+      "curation_status": "flagged",
+      "verify_notes": "Ensemble entry, one place to stand (the avenue); alive trees only. Wikipedia: planted around 1775 by the Stuart family along the entrance road to Gracehill House (built by James Stuart); about 150 originally; about 90 by 2016; a 2023 survey counted 86 with 11 in poor condition and 6 felled for safety (Irish Times 20 Nov 2023, search listing); Wikipedia lead says 'around 75' remain as of 2026 and does not reconcile with the 86. Irish News (Jan 2024): Storm Isha felled three, the Dark Hedges Preservation Trust chair Mervyn Storey; article cites roughly 150 originally; trees on privately owned land near Stranocum. STORM LOSSES per Wikipedia: Gertrude Jan 2016 (2 destroyed, 1 damaged), Doris Feb 2017 (1), Hector Jun 2018 (1), unnamed Jan 2019 (1), Arwen 27 Nov 2021 (2), Isha Jan 2024 (3), Eowyn 24 Jan 2025 (2). Tree preservation order 2004; Dark Hedges Preservation Trust founded 2009. Irish Times Aug 2016: planted in the 18th century by the Stuarts; Department for Infrastructure proposed the ban after the 2016 storm losses and heavy traffic. Age basis: planting c.1775 per Wikipedia only (documented for the avenue, not per specimen); standing trees are survivors of that planting, so about 250 years, broad. Count is unsettled, state 'roughly 75 to 90 remain' or avoid a number; do not say 150 remain. Game of Thrones King's Road location, heavy visitor numbers. Hosts: Irish Times and Irish News fetched ok; Wikipedia fetched; wikidata API rate limited.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bregagh_Rd_%28The_Dark_Hedges%29_-_geograph.org.uk_-_7069550.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "N Chadwick",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Bregagh_Rd_(The_Dark_Hedges)_-_geograph.org.uk_-_7069550.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

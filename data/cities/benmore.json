@@ -1,0 +1,69 @@
+{
+  "city": "Benmore",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Benmore Botanic Garden, north of Dunoon in Argyll, opens with an avenue of giant sequoias planted in 1863 by James Piers Patrick, an American who had bought the estate the year before. The trees now stand about 50 metres tall, but the Royal Botanic Garden Edinburgh says their crowns are thinning and has been treating the soil since 2021. Entry is paid, and the garden opens from March to October.",
+  "meta_description": "Benmore Redwood Avenue, Argyll: giant sequoias planted in 1863, now about 50 metres tall. Paid entry, open March to October.",
+  "question_meta": "Benmore's remarkable trees are its avenue of giant sequoias, planted in 1863 and about 50 m tall, just inside the botanic garden's entrance.",
+  "question_answer": "Benmore's notable trees are the giant sequoias of the Redwood Avenue, lining the original drive to Benmore House just inside the entrance of Benmore Botanic Garden, near Dunoon. They were planted in 1863 and are about 50 metres tall.",
+  "question_context": "James Piers Patrick, an American, bought the Benmore estate in 1862 and planted the avenue the following year, from seed William Lobb had brought to Britain. More than 160 years later the trees line the first stretch of any visit. The Royal Botanic Garden Edinburgh, which runs Benmore, puts them at about 50 metres; other sources say over 40 or over 45. They are struggling. The garden says the crowns are thinning, the lower branches have lost their needles and the soil is compacted, and that the trees are merely existing rather than growing. Since February 2021 it has treated the ground with geo-injection and air-lancing, and it plans a drainage raft under the grassed length of the avenue, with a public appeal for the work. The number of trees in the avenue is not settled. Figures from 49 to over 150 circulate and the garden gives none. Entry is paid, children 15 and under go free, and the garden opens daily from 1 March to 31 October. Buses run from Dunoon, about twenty minutes by ferry from Gourock.",
+  "hero_tree_id": "bmr_001",
+  "oldest_tree_id": "bmr_001",
+  "faq": [
+    {
+      "q": "How much does Benmore Botanic Garden cost?",
+      "a": "When we checked in November 2026, adults paid 12 pounds with Gift Aid and concessions 10; children 15 and under and RBGE members go free."
+    },
+    {
+      "q": "When is Benmore Botanic Garden open?",
+      "a": "Daily from 10 am to 5 pm between 1 March and 31 October. It is closed in winter and reopens on 1 March 2027."
+    },
+    {
+      "q": "How old are the Benmore redwoods?",
+      "a": "They were planted in 1863, so a little over 160 years."
+    },
+    {
+      "q": "How do you get to Benmore without a car?",
+      "a": "Take the CalMac or Western Ferries crossing from Gourock to Dunoon, about 20 minutes, then the West Coast Motors bus seven miles north on the A815."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bmr_001",
+      "name": "Benmore Redwood Avenue",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 160 years",
+      "age_min": 160,
+      "age_max": 163,
+      "age_basis": "source",
+      "height_m": 50,
+      "location": {
+        "address": "Benmore Botanic Garden, A815, Benmore, near Dunoon, Argyll PA23 8QU",
+        "latitude": 56.02639,
+        "longitude": -4.98111,
+        "neighbourhood": "Benmore"
+      },
+      "story": "An American planted this avenue of giant sequoias in 1863, a year after he bought the estate. James Piers Patrick lined the original drive to Benmore House with them, from seed William Lobb had brought to Britain, and more than 160 years later they are the first thing you walk through at Benmore Botanic Garden. They stand around 50 metres tall now, by the garden's own figure.\n\nThey are not well. The Royal Botanic Garden Edinburgh, which runs Benmore, says the crowns are thinning, the lower branches have lost their needles and the soil beneath them is compacted. In its words the trees are merely existing rather than growing. Since February 2021 the garden has treated the ground with geo-injection and air-lancing, and it plans a drainage raft under the grassed length of the avenue, with a public appeal to pay for the work.\n\nHow many trees make up the avenue is not settled. Figures from 49 to over 150 circulate and the garden gives none, so we will not either. Nobody has published their girth.\n\nThe avenue is just inside the entrance, so it is the start of any visit rather than a detour. Entry is paid, with children 15 and under free, and the garden is open daily from 1 March to 31 October. It is closed for the winter now and reopens on 1 March 2027. Buses run from Dunoon, which is twenty minutes by ferry from Gourock. Our pin marks the garden, not the avenue.",
+      "verified_sources": [
+        "https://www.rbge.org.uk/collections/living-collection/living-collection-at-benmore-botanic-garden/",
+        "https://rbge.org.uk/support-us/donate-to-the-benmore-sequoia-avenue-appeal/benmore-sequoia-avenue-appeal",
+        "https://www.rbge.org.uk/visit/benmore-botanic-garden/",
+        "https://en.wikipedia.org/wiki/Benmore_Botanic_Garden"
+      ],
+      "access": "Paid entry (RBGE): adult 12 pounds with Gift Aid, concession 10, children 15 and under free, members free. Open daily 10am to 5pm from 1 March to 31 October; closed for the season at the time of the check (4 Nov 2026), reopens 1 March 2027. The avenue is at the start of the visit, just inside the entrance.",
+      "transport": "West Coast Motors bus from Dunoon to the garden (seven miles north on the A815; check timetable); Sunday shuttle from Dunoon. Dunoon is reached by CalMac or Western Ferries from Gourock in about 20 minutes.",
+      "how_to_recognise": "You can recognise it as the double row of giant redwoods lining the original drive just inside the garden entrance. It is the first thing visitors walk through, so you cannot miss it.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Compact famous ensemble with one place to stand: the avenue of giant sequoias lining the original drive to Benmore House, right at the entrance. Planted 1863 by James Piers Patrick (an American who bought the estate in 1862), RBGE says; seed brought to Britain by William Lobb (RBGE). Height now about 50 m (RBGE; other sources say over 40 m or over 45 m). Tree count not given by RBGE (a curator says 49; another site over 150: unresolved, do not state a number). Girth not given. Condition: RBGE appeal says crowns are thinning and lower branches defoliated, soil compacted; trees are 'merely existing rather than growing'; multi-year geo-injection and air-lancing since Feb 2021, and a drainage raft planned on the grassed length of the Avenue. Alive and maintained as of the appeal page (undated). Pin is the garden coordinate from Wikipedia (56 01 35 N 4 58 52 W), not the avenue itself; avenue is at the entrance so within about 100 m: approximate. Other Benmore trees on the RBGE collection page (leads, not delivered, no locations): Douglas fir planted 1870s, 57 m, tallest at Benmore, Glen Massan Arboretum; western hemlock planted 1870s over 51 m, possibly Britain's tallest; coastal redwood planted 1872, 43.5 m; Scots pines on Golden Gates Avenue since 1820. Nominatim returns nothing for the garden name.",
+      "paid_entry": true,
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/An_Avenue_Of_Redwoods%2C_Benmore_Botanic_Gardens_-_geograph.org.uk_-_3199735.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "James T M Towill",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:An_Avenue_Of_Redwoods,_Benmore_Botanic_Gardens_-_geograph.org.uk_-_3199735.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

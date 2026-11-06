@@ -1,0 +1,66 @@
+{
+  "city": "Armagh",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Armagh's Mall is an oval public park laid out in the late 18th century and still lined with protected trees and Georgian buildings. One of its horse chestnuts, a veteran known to a neighbour since childhood as the King Tree, was shortlisted for Northern Ireland's Tree of the Year in 2019. Nobody has published which trunk it is, or its age, so the walk ends in a question for anyone local.",
+  "meta_description": "The King Tree, Armagh: a veteran horse chestnut on the Georgian Mall, shortlisted for NI Tree of the Year 2019. Free, in the city centre.",
+  "question_meta": "Armagh's remarkable tree is the King Tree, a veteran horse chestnut on the Mall, shortlisted for Northern Ireland's Tree of the Year in 2019.",
+  "question_answer": "Armagh's notable tree is the King Tree, a veteran horse chestnut on the Mall in the city centre, shortlisted for Northern Ireland's Tree of the Year in 2019. Its age has never been published, and no source says exactly which trunk on the Mall it is.",
+  "question_context": "The Mall is the long oval park at the heart of Armagh, laid out for the public in the late 18th century and framed by Georgian buildings. Its trees are protected; in 2020 the council scheduled works on 21 of them and removed a hollow lime at the Gaol end. The King Tree got its name from someone who grew up in a Georgian house across the road and has called it that since childhood. In 2019 it was nominated for the Woodland Trust's Northern Ireland Tree of the Year and made the shortlist, described as a primary veteran horse chestnut. That shortlist is the only source we have. It gives no age, girth or planting date, and it does not place the tree among its neighbours, so our pin sits in the middle of the Mall rather than on the trunk. The last confirmation that the tree stands is also from 2019. That is a gap a local can close in five minutes. If you know which chestnut it is, a photograph and a word would put the pin in the right place. The Mall is free and a few minutes from the bus station.",
+  "hero_tree_id": "arm_001",
+  "oldest_tree_id": "arm_001",
+  "faq": [
+    {
+      "q": "Where is the King Tree in Armagh?",
+      "a": "On the Mall in the centre of Armagh. No source says which of the Mall's horse chestnuts it is, so our pin marks the park, not the trunk."
+    },
+    {
+      "q": "How old is the King Tree?",
+      "a": "Nobody has published an age. It was described as a primary veteran horse chestnut when it was shortlisted in 2019."
+    },
+    {
+      "q": "Is the Mall in Armagh free?",
+      "a": "Yes. It is open public ground in the city centre, a few minutes' walk from the bus station on Dobbin Street."
+    }
+  ],
+  "trees": [
+    {
+      "id": "arm_001",
+      "name": "The King Tree",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "location": {
+        "address": "The Mall, Armagh BT61 9AA",
+        "latitude": 54.3488,
+        "longitude": -6.6494,
+        "neighbourhood": "The Mall, Armagh"
+      },
+      "story": "One of the horse chestnuts on Armagh's Mall has been called the King Tree by a neighbour since childhood. The person who named it grew up in a Georgian house across the road, and in 2019 the tree was nominated for the Woodland Trust's Northern Ireland Tree of the Year. It made the shortlist, described as a primary veteran horse chestnut.\n\nThe Mall itself is the reason it has company. The oval was laid out as a public park in the late 18th century, it is still lined with trees and surrounded by Georgian buildings, and its trees are protected. In 2020 the council scheduled works on 21 of them and removed a hollow lime at the Gaol end.\n\nWe have to be plain about the gaps. Nobody has published this tree's age, girth or planting date. Our only source is the 2019 shortlist, so the last confirmation that it stands is from that year. And no source says which trunk on the Mall it is. Our pin sits in the middle of the park, not on the tree.\n\nThat makes this a tree for somebody local. If you know which chestnut the King Tree is, or can photograph it, tell us and we will move the pin to where it belongs. In May, when the chestnuts flower, the Mall is worth the walk whichever trunk it turns out to be. It is free and open, a few minutes on foot from the bus station on Dobbin Street.",
+      "verified_sources": [
+        "https://armaghi.com/news/armagh-news/root-for-your-favourite-as-tree-of-the-year-shortlist-is-revealed/93419",
+        "https://www.newsletter.co.uk/news/ni-tree-of-the-year-root-for-your-favourite-942997"
+      ],
+      "access": "Free, public park; the Mall is open ground in the centre of Armagh city.",
+      "transport": "In Armagh city centre; a few minutes' walk from the bus station on Dobbin Street.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when white candles stand upright over the whole crown"
+      },
+      "how_to_recognise": "We cannot yet tell you which trunk it is, because no source places it among the horse chestnuts on the oval Mall. It stands somewhere on the Mall, framed by Georgian buildings, and a local who knows it can help us.",
+      "location_precision": "approximate",
+      "pin_source": "Centre of the Mall (OSM park relation 12483402). The sources say only that the tree stands on the oval, tree-lined Mall among Georgian buildings; no coordinate for the trunk.",
+      "curation_status": "flagged",
+      "verify_notes": "Shortlisted for the Woodland Trust Northern Ireland Tree of the Year 2019, listed as 'a primary veteran horse chestnut' in Armagh, nominated by Karen Edgar for Armagh City, Banbridge and Craigavon Council (armaghi.com article read; Newsletter copy confirmed in search results but behind a Cloudflare challenge, unseen). No age, girth or planting date given anywhere seen. Alive: confirmed only as of the 2019 shortlist; no recent dated report. Armagh Council notice of Aug 2020 says 21 other protected trees on the Mall get works (so the Mall trees are protected) and a hollow lime at the Gaol end was removed. Note: the Mall was laid out as a public park c.1773/1797. The Archbishop of Armagh said in 2021 that a venerable oak planted in the Mall in the 1790s remains (lead, not placed). Single-source (shortlist press); spot unplaced.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

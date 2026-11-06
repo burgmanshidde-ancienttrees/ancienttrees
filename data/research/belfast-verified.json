@@ -1,0 +1,97 @@
+[
+ {
+  "id": "bfs_006",
+  "place": "belfast",
+  "name": "Botanic Gardens Hornbeam",
+  "species": "Hornbeam (Carpinus betulus)",
+  "age_estimate": "possibly nearly 200 years",
+  "age_min": 150,
+  "age_max": 200,
+  "age_basis": "derived",
+  "location": {
+   "address": "Belfast Botanic Gardens, College Park, Belfast BT7 1LP",
+   "latitude": 54.58328,
+   "longitude": -5.93187,
+   "neighbourhood": "Queen's Quarter"
+  },
+  "story": "One of the largest hornbeams in the north of Ireland may be as old as the gardens around it. The Friends of Belfast Botanic Gardens think it could date back to their founding, when the ground was bought in 1828, and Belfast City Council's 2019 Tree of the Year nomination put its planting in and around that year. Nobody has a record of the day it went in, so read that as the gardens' belief rather than a date. It would make the tree something under two hundred years old.\n\nHornbeam is not native to Ireland, and this one has spent its life growing into a shape nobody would design. The trunk is twisted, grooved and bulged, and some branches have grown back into each other and fused, which foresters call inosculation.\n\nThere is a small dispute about what it is. The nomination that put it on the Woodland Trust's Northern Ireland shortlist called it Botanic's oriental hornbeam. The Friends' own catalogue lists only the common hornbeam, Carpinus betulus, and describes this tree as one. We follow the catalogue. If you know your hornbeams, the leaves will settle it, and we would like to hear what you find.\n\nNo girth or height has been published, so a tape measure is welcome too. The gardens are a free council park, a few minutes from Botanic station, and by the nominator's count it is one of only two hornbeams in them.",
+  "how_to_recognise": "You can recognise it by the twisted, grooved, bulging trunk, with branches that have grown back into each other. It stands in the Botanic Gardens and carries black tag no. 247 on the trunk, two to three metres up.",
+  "verified_sources": [
+   "https://fobbg.co.uk/welcome/plant-collections/trees/carpinus-betulus/",
+   "https://armaghi.com/news/armagh-news/root-for-your-favourite-as-tree-of-the-year-shortlist-is-revealed/93419"
+  ],
+  "access": "Free. Belfast Botanic Gardens is a public council park (opening hours not checked).",
+  "transport": "Botanic railway station is beside the gardens; buses on Botanic Avenue.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "paid_entry": false,
+  "recognise_facts": "Twisted, grooved, bulged trunk with inosculated (self-grafted) branches; black maintenance tag no. 247 on the trunk 2 to 3 m up.",
+  "verify_notes": "Friends of Belfast Botanic Gardens (FOBBG) tree article: 'one of the largest hornbeams in the North of Ireland and may well date back to the founding of the Gardens' (gardens bought 1828). FOBBG gives the tree's position as 54 34.997N 5 55.912W with tag no. 247 (published position of the tagged tree, to about 2 m; used as the pin). Nominated by Belfast City Council (Therese Kieran) for Woodland Trust NI Tree of the Year 2019 shortlist, described as 'Botanic's Oriental Hornbeam' with 'twists and curvy branches off a solid, bulged trunk' and planted 'in and around 1828'. CONFLICT: the nomination calls it an oriental hornbeam (Carpinus orientalis); FOBBG's catalogue lists only Carpinus betulus and describes this individual as the common hornbeam; the nominator also says only two hornbeams stand in the gardens. Species recorded as common hornbeam per FOBBG; flag. Age: no measurement; planting c.1828 is the nominator's/FOBBG's belief, not a documented planting of this specimen, so age is broad and derived from the garden's founding. Hornbeam is not native to Ireland (FOBBG). No girth or height published. Alive: FOBBG page photographed it, 2019 nomination; lifecheck at the coordinate RECENT (iNaturalist observation 2025-07-25 nearby). Not on the felled list (the Turkey oak that fell in 2021 is a different tree).",
+  "photo_candidates": []
+ },
+ {
+  "id": "bfs_007",
+  "place": "belfast",
+  "name": "Erskine House Tree",
+  "species": "Oriental Plane (Platanus orientalis)",
+  "age_estimate": "planted in the 1960s",
+  "age_min": 55,
+  "age_max": 65,
+  "age_basis": "source",
+  "location": {
+   "address": "Grounds of Erskine House, Belfast City Hospital, Lisburn Road, Belfast BT9 7AB",
+   "latitude": 54.58628,
+   "longitude": -5.94425,
+   "neighbourhood": "Queen's Quarter / Lisburn Road"
+  },
+  "story": "This plane is said to descend from the tree Hippocrates taught under on Kos. In the late 1960s a Greek kidney doctor at Belfast City Hospital, Dimitrios Oreopoulos, had seeds of the Plane Tree of Kos planted around the hospital, and Queen's University dates the gift to 1966. Years later three survivors were found. This is the one on the lawn behind Erskine House, then the nurses' home, where a steel plaque was unveiled on 30 January 1987.\n\nThe lineage is the hospital's tradition. Nobody has tested the tree's parentage, so take the line back to Kos as a story the hospital tells, not a proven fact. What is documented is the affection. In 2017 Northern Ireland voted this the Tree of the Year, and a circular bench and a second plaque for Oreopoulos have since joined it.\n\nIt is not old. At something under sixty years it is a young tree, and it is on this map for its story, not its age. No girth or height has been published.\n\nTwo honest caveats. It stands in hospital grounds, and we have not confirmed that the lawn is open to anyone who walks in, though the bench was put there for visitors, staff and students. And our pin is approximate. The last dated report of the tree is from 2024, so if you have seen it lately, tell us.",
+  "how_to_recognise": "You can recognise it by the broad young plane with deeply lobed leaves, a steel plaque from 1987 and a circular bench beside it. It stands on the lawn behind Erskine House, a former nurses' home in the City Hospital grounds.",
+  "verified_sources": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC3992091/",
+   "https://en.wikipedia.org/wiki/Belfast_City_Hospital",
+   "https://www.qub.ac.uk/News/Allnews/2017/PlaneTreeofKos.html",
+   "https://fobbg.co.uk/welcome/plant-collections/trees/platanus-orientalis/"
+  ],
+  "access": "Free. Stands on the lawn behind Erskine House in Belfast City Hospital grounds, beside a plaque and a circular bench for visitors, staff and students (per QUB 2017). Hospital grounds; access to the lawn not independently confirmed, flag.",
+  "transport": "Lisburn Road frontage of Belfast City Hospital; Botanic station is roughly a 10 to 15 minute walk.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Lawn behind Erskine House, Belfast City Hospital",
+   "radius_m": 50
+  },
+  "curation_status": "flagged",
+  "paid_entry": false,
+  "recognise_facts": "A young-looking, broad oriental plane on the lawn behind Erskine House (a former nurses' home), with a steel plaque beside it unveiled 30 January 1987 and a newer circular bench and plaque for Dr Oreopoulos; palmate deeply lobed leaves.",
+  "verify_notes": "Ulster Medical Journal 2014 (Douglas, PMC3992091): in the late 1960s Greek renal doctor Dimitrios Oreopoulos had seeds from the Plane Tree of Kos (Tree of Hippocrates) planted; three surviving trees were later found, one outside Renal I, one on the lawn behind Erskine House (then a nurses' home), one at Wakehurst House; steel plaques placed by the Erskine House and Renal I trees, the Erskine plaque unveiled 30 Jan 1987. Wikipedia's Belfast City Hospital article (cites UMJ and Belfast Live, 6 Dec 2017): named Northern Ireland's Tree of the Year 2017 by public vote. QUB news 2017 says seeds were presented in 1966 to Queen's and Erskine House. The Hippocrates lineage is tradition/provenance claimed by the hospital and Oreopoulos, not independently proven. Not ancient: roughly 55 to 60 years old; worth the visit for story and its status, not age. Pin: coordinate 54.58628,-5.94425 comes from a search-snippet source and is not tree-verified; Commons geosearch has a geotagged Cancer Research UK Centre image 34 m away; kept approximate with location_site. Alive: crowned 2017; QUB alumni pages and FOBBG describe it as a fine specimen; no felling report found; lifecheck at the coordinate returned NONE, flag alive-thin (last dated source 2017 plus 2024 Street Tree newsletter titled 'young oriental plane in Belfast', Mar 2024). No girth or height published.",
+  "photo_candidates": []
+ },
+ {
+  "id": "bfs_008",
+  "place": "belfast",
+  "name": "Botanic Gardens Oriental Plane",
+  "species": "Oriental Plane (Platanus orientalis)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "age_basis": "derived",
+  "location": {
+   "address": "Belfast Botanic Gardens, College Park, Belfast BT7 1LP",
+   "latitude": 54.58265,
+   "longitude": -5.93463,
+   "neighbourhood": "Queen's Quarter"
+  },
+  "story": "The trunk of this plane is covered in burrs, and it is older than Belfast's famous plane. The Friends of Belfast Botanic Gardens, the only source we have for it, say so plainly. The famous one is the tree at the City Hospital grown from seed of the Plane Tree of Kos in the late 1960s, the one Northern Ireland voted Tree of the Year in 2017. This one, a short walk away in the Botanic Gardens, came first and gets a fraction of the attention.\n\nThe burrs are the reason to come. Numerous knobbly swellings crowd the trunk, and the Friends compare the tree to a similarly burred oriental plane at Trinity College Dublin, which is about as much pedigree as anyone has written down. Above them the branches spread wide.\n\nNo age, girth or height has been published, and we would rather say that than guess. The gardens were founded in 1828, but nothing ties this tree to that year, so we will not date it from it. If you know when it went in, or have a tape measure and five minutes, tell us.\n\nIt is a single-source tree, which is why it carries a flag. The pin is the Friends' own published position for the tagged trunk, so it should be close. The gardens are a free council park, a few minutes from Botanic station.",
+  "how_to_recognise": "You can recognise it by the trunk crowded with knobbly burrs and the wide-spreading branches above them. It stands in Belfast Botanic Gardens and carries black maintenance tag no. 88.",
+  "verified_sources": [
+   "https://fobbg.co.uk/welcome/plant-collections/trees/platanus-orientalis/"
+  ],
+  "access": "Free. Belfast Botanic Gardens is a public council park (opening hours not checked).",
+  "transport": "Botanic railway station is beside the gardens; buses on Botanic Avenue.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "paid_entry": false,
+  "recognise_facts": "Wide-branching plane whose trunk carries numerous burrs (knobbly swellings); black maintenance tag no. 88; FOBBG compares it to a similar burred oriental plane at Trinity College Dublin.",
+  "verify_notes": "One source only: Friends of Belfast Botanic Gardens tree article gives position 54 34.959N 5 56.078W, tag no. 88 (published position of the tagged tree, about 2 m; used as the pin), describes the tree as older than the Kos-descended plane at Belfast City Hospital (that one planted late 1960s), with 'numerous burrs' on the trunk. No age, girth or height published; leave age empty. Single source, flagged. Alive: FOBBG photographed it, autumn colour photo; lifecheck at the coordinate to be re-run by the writer if needed (nearest RECENT iNaturalist record was near the hornbeam, 2025-07-25). Not nominated or registered anywhere found. Tree of Kos link is for the Belfast City Hospital tree (bfs_007), not this one.",
+  "photo_candidates": []
+ }
+]

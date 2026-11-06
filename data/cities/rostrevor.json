@@ -1,0 +1,72 @@
+{
+  "city": "Rostrevor",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Rostrevor is a village on Carlingford Lough in County Down, and Kilbroney Park above it holds Old Homer, a holm oak that grows at roughly 45 degrees. It won Northern Ireland's Tree of the Year in 2016 with more than half the vote and came sixth in Europe the next year. In 2020 the council took close to two tons off its crown to stop it falling. The park is free and open all year.",
+  "meta_description": "Old Homer, Kilbroney Park, Rostrevor: a leaning holm oak about 200 years old, Northern Ireland's Tree of the Year 2016. Free, open all year.",
+  "question_meta": "Rostrevor's remarkable tree is Old Homer, a holm oak leaning at about 45 degrees in Kilbroney Park, Northern Ireland's Tree of the Year 2016.",
+  "question_answer": "Rostrevor's notable tree is Old Homer, a holm oak that leans at roughly 45 degrees just inside the Fairy Glen entrance to Kilbroney Park. It is about 200 years old and was voted Northern Ireland's Tree of the Year in 2016.",
+  "question_context": "Old Homer took more than half the public vote in the Woodland Trust's Northern Ireland contest in 2016, and in 2017 it came sixth of sixteen in the European Tree of the Year with 7,101 votes. It was planted about 200 years ago, the Irish News reports, by the Ross family, when Kilbroney was their private estate rather than a council park. The trunk is a little under four metres round, with bark like snakeskin. The lean that makes it famous nearly ended it. In July 2020 a councillor warned that splits and cracks at the base meant it might not survive the next snowfall, and weeks later the council had the crown reduced by close to two tons and declared it saved, with a support underneath planned. One bough has since been propped. The last report on the tree itself that we found is from 2020 and early 2021, so a recent sighting is welcome. Kilbroney Park is council land, free and open every day from 9 am, and the Fairy Glen entrance is about ten minutes on foot from the village.",
+  "hero_tree_id": "kbp_001",
+  "oldest_tree_id": "kbp_001",
+  "faq": [
+    {
+      "q": "Where is Old Homer?",
+      "a": "Just inside the Fairy Glen pedestrian entrance to Kilbroney Park, Rostrevor, County Down, about ten minutes' walk from the village."
+    },
+    {
+      "q": "Why does Old Homer lean?",
+      "a": "Nobody has published why. It grows at roughly 45 degrees, and in 2020 the lean and cracks at its base led the council to remove close to two tons from the crown."
+    },
+    {
+      "q": "Is Kilbroney Park free?",
+      "a": "Yes. It is a council park, open year round from 9 am."
+    },
+    {
+      "q": "How old is Old Homer?",
+      "a": "About 200 years. The Irish News reports it was planted by the Ross family when the park was their private estate."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kbp_001",
+      "name": "Old Homer",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "about 200 years",
+      "age_min": 180,
+      "age_max": 220,
+      "age_basis": "source",
+      "girth_cm": 365,
+      "location": {
+        "address": "Kilbroney Park, Fairy Glen entrance, Shore Road, Rostrevor BT34 3BT",
+        "latitude": 54.0981,
+        "longitude": -6.1886,
+        "neighbourhood": "Rostrevor, County Down"
+      },
+      "location_site": {
+        "name": "Kilbroney Park Fairy Glen entrance",
+        "radius_m": 50
+      },
+      "story": "In the summer of 2020 the council cut close to two tons off Northern Ireland's favourite tree to stop it falling over. Old Homer is a holm oak that grows at roughly 45 degrees, just inside the Fairy Glen entrance to Kilbroney Park. In 2016 it took more than half the public vote for the Woodland Trust's Northern Ireland Tree of the Year, and in 2017 it came sixth of sixteen in the European contest, with 7,101 votes.\n\nThe lean nearly finished it. In July 2020 a local councillor warned that large splits and cracks at the base meant it might not survive the next snowfall. A few weeks later the council's grounds manager, Jonathan Ellis, had the crown reduced, and the tree was declared saved, with a support underneath planned. One bough has since been propped, Wikipedia says. We have not seen a page confirming the full support went in.\n\nIt was planted about 200 years ago, the Irish News reports, by the Ross family, when this was their private estate rather than a council park. It is a little under four metres round, with bark like snakeskin. Holm oaks are evergreen, so it looks much the same in January as in June.\n\nThe last report on the tree itself that we found dates from 2020 and early 2021, so if you have walked past it lately, tell us how it is holding up. The park is free and open year round, about ten minutes' walk from Rostrevor.",
+      "verified_sources": [
+        "https://www.irishnews.com/news/northernirelandnews/2016/12/19/news/leaning-oak-in-co-down-is-northern-ireland-s-tree-of-the-year--842316/",
+        "https://en.wikipedia.org/wiki/Kilbroney_Park",
+        "https://armaghi.com/news/newry-news/fears-majestic-tree-of-the-year-winner-may-not-survive-next-snowfall/113291",
+        "https://armaghi.com/news/newry-news/majestic-tree-of-the-year-winner-old-homer-saved-after-shedding-close-to-two-tons/114304"
+      ],
+      "access": "Free. Kilbroney Park is council-owned (Newry, Mourne and Down) and open to all, open year round from 9 am per Wikipedia; the tree is just inside the Fairy Glen pedestrian entrance, a short footpath walk from Rostrevor village. A car park is reached by the park's forest drive; no parking charge seen on a fetched page.",
+      "transport": "Rostrevor village is about 10 min on foot from the Fairy Glen entrance; bus service to Rostrevor from Newry not checked.",
+      "how_to_recognise": "You can recognise it by the lean, roughly 45 degrees, and its snakeskin-like bark, with a propped bough. It stands just inside the Fairy Glen entrance to Kilbroney Park; our pin marks the entrance, not the trunk.",
+      "location_precision": "approximate",
+      "pin_source": "OSM node 728052904 'Kilbroney Park, The Fairy Glen' (54.0981385, -6.1886486), the entrance area, not the tree. Irish News and Wikipedia place the tree just inside the Fairy Glen pedestrian entrance.",
+      "curation_status": "flagged",
+      "verify_notes": "NI Tree of the Year 2016 (Woodland Trust public vote, over half the votes; Irish News 19 Dec 2016); sixth of 16 in European Tree of the Year 2017 with 7,101 votes (Wikipedia). Planted about 200 years ago by the Ross family when the land was their private estate (Irish News). Girth nearly 12 ft (3.6 m) per Irish News and Armagh I (Wikipedia says 3.7 m); 365 cm used. Condition: Armagh I 23 Jul 2020: large splits and cracks at the base, rope-like secondary growth, councillor warned it could fall; Armagh I 8 Aug 2020: council grounds manager Jonathan Ellis did a crown reduction removing close to two tons, 'saved', support underneath planned and 'soon to be installed'; Wikipedia says one bough was recently propped. Not confirmed on a seen page that the support is installed. Alive: area iNaturalist obs 2026-07-18 (weak), last tree-specific report is Aug 2020 plus Garden News Jan 2021 (search listing); flagged for no recent tree-specific life check. Other trees in park per Wikipedia: 500-year-old sessile oak, 200-year-old Turkey oak (most photographed), 200-year-old Monterey pine, 12 redwoods planted 1880 to 1890; a lead only. Ross family: unconfirmed beyond Irish News.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

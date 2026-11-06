@@ -1,0 +1,76 @@
+{
+  "city": "Crom",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Crom is a National Trust estate on Upper Lough Erne in Fermanagh, and its famous trees are two old yews at the ruins of a castle built in 1611 and burnt in the 1760s. They are said to have marked the entrance to the old castle garden. Lord Erne is said to put them at 800 years, other guesses run from 400 to 1,000, and nobody has settled it. The larger measured 474 cm round in 2000.",
+  "meta_description": "The Crom Yews, Fermanagh: two old yews at the ruins of a 1611 castle, ages claimed from 400 to 1,000 years. National Trust estate, paid entry.",
+  "question_meta": "Crom's remarkable trees are two old yews at the ruins of Old Crom Castle, with ages claimed from 400 to 1,000 years and none proven.",
+  "question_answer": "Crom's notable trees are the Crom Yews, a pair of old yews at the ruins of Old Crom Castle on the National Trust's Crom Estate, near Newtownbutler in County Fermanagh. Their age is disputed and has never been measured.",
+  "question_context": "The old castle at Crom was built in 1611, during the Plantation of Ulster, and burnt in the early 1760s. The two yews beside its ruins are said to have marked the entrance to its garden, which is long gone. How old they are is the open question. Lord Erne is said to claim 800 years. A National Trust trail guide, by a summary we could not read in full, gives anything from 400 to 1,000, and the Trust admits the debate has run for years. We leave the age open. The earliest written mention we found is J.C. Loudon's, in 1837. The measurements come from the Tree Register of Ireland's record of 2000. The larger yew 474 cm round at 10 cm above the ground and 10.8 metres tall, the smaller 430 cm round and 14 metres tall. Photographs show branches that have rooted where they touch the ground. We found no measurement since. The estate was given to the National Trust by the 6th Earl of Erne in 1987. Some trees here are so old that access to them is restricted, so expect to look from the path.",
+  "hero_tree_id": "crm_001",
+  "oldest_tree_id": "crm_001",
+  "faq": [
+    {
+      "q": "How old are the Crom Yews?",
+      "a": "Nobody knows. Lord Erne is said to claim 800 years and other estimates run from 400 to 1,000. None of them is a measured age."
+    },
+    {
+      "q": "Can you get close to the Crom Yews?",
+      "a": "Some of Crom's oldest trees have restricted access, so plan to view them from the path at the Old Crom Castle ruins."
+    },
+    {
+      "q": "Is Crom free to visit?",
+      "a": "National Trust members get in free; non-members pay. Opening hours differ between listings, and Storm Eowyn changed some routes in 2025, so check the National Trust page first."
+    },
+    {
+      "q": "How do you get to Crom?",
+      "a": "Realistically by car. Crom is about 5 km from Newtownbutler and roughly 25 km south-east of Enniskillen, with no useful public transport."
+    }
+  ],
+  "trees": [
+    {
+      "id": "crm_001",
+      "name": "The Crom Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "said to be around 800 years",
+      "age_basis": "source",
+      "girth_cm": 474,
+      "height_m": 10.8,
+      "location": {
+        "address": "Old Crom Castle ruins, Crom Estate, Newtownbutler, Fermanagh BT92 8AJ",
+        "latitude": 54.16233,
+        "longitude": -7.44427,
+        "neighbourhood": "Crom Estate, Upper Lough Erne"
+      },
+      "location_site": {
+        "name": "Old Crom Castle ruins garden entrance",
+        "radius_m": 50
+      },
+      "story": "Two yews at Crom are said to have marked the entrance to a castle garden that has not existed since the 1760s. The old castle was built in 1611, during the Plantation of Ulster, and burnt in the early 1760s. Today they stand at the ruins on the Crom estate, on Upper Lough Erne, and the garden they once flanked is gone.\n\nNobody knows how old they are, and the claims are wide. Lord Erne is said to put them at 800 years. A National Trust trail guide, by a summary we could not read in full, gives anything from 400 to 1,000, and the Trust itself admits the debate has run for years. We leave the age open. The earliest written mention we found is J.C. Loudon's, in 1837.\n\nThe numbers that are on record come from the Tree Register of Ireland in 2000. The larger yew measured 474 cm round, taken low at 10 cm above the ground, and 10.8 metres tall. Its partner was 430 cm round and taller, at 14 metres. Photographs show branches that have rooted where they touch the ground. We found no measurement since, so treat these as figures from that 2000 record.\n\nCrom is a National Trust estate with paid entry for non-members. Some of its trees are so old that access to them is restricted, so look from the path. Hours differ between listings and Storm Eowyn changed some routes in 2025, so check first.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_trees/crom-castle-2084/",
+        "https://www.ancient-yew.org/yew_trees/crom-castle-2085/",
+        "https://en.wikipedia.org/wiki/Crom_Estate"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (from Tree Register of Ireland 2000), Crom Castle 2084 and 2085",
+        "url": "https://www.ancient-yew.org/yew_trees/crom-castle-2084/"
+      },
+      "access": "Paid entry: National Trust Crom Estate (members free; non-members pay, price on the NT site, not fetched). Estate open to the public per Wikipedia; the same page says some trees are so ancient that physical access is restricted, so view from the path. Opening hours differ between listings: confirm on the NT page. Storm Eowyn (Jan 2025) changed some routes.",
+      "transport": "No useful public transport; about 5 km from Newtownbutler, about 25 km south-east of Enniskillen by road.",
+      "how_to_recognise": "You can recognise them as the pair of big yews at the ruins of Old Crom Castle, said to mark the old garden entrance. The larger is 474 cm round near the ground, the smaller 430 cm; our pin is approximate.",
+      "location_precision": "approximate",
+      "pin_source": "Ancient Yew Group database coordinate 54.16233, -7.44427 for both yews; OSM way 704886576 'Yew Trees' (natural=wood) at 54.16213, -7.44321, about 70 m east. Pair-level, not individual crowns.",
+      "curation_status": "flagged",
+      "verify_notes": "Ancient Yew Group (citing Tree Register of Ireland 2000): two yews at Crom Castle. ID 2084 larger: girth 474 cm at 10 cm above ground, height 10.8 m, earliest mention 1837 (J.C. Loudon), category 'Ancient 4-5 m'; ID 2085 the lesser-girthed: 430 cm at 10 cm, height 14 m. Wikipedia Crom Estate: old castle built 1611 in the Plantation of Ulster, burnt early 1760s; estate given to National Trust by 6th Earl of Erne 1987; some trees so ancient physical access is restricted. AGE: only unsourced claims. Lord Erne is said to claim 800 years; National Trust says debate for many years and (per a search summary, unseen) trail guide gives 400 to 1,000 years; leave age_min/max empty. Search summary also says the pair were named among Britain's 50 greatest trees (Woodland Trust/NT, unconfirmed on a seen page). Conjoined/layered branches: AYG photos show layered rooted branches. The brief called them 'conjoined'; not confirmed on a seen page. Flagged: register-only (2000 measurement, no recent measurement), life check weak (iNaturalist observations in the estate 2026-11-01, not of the tree). Hosts: nationaltrust.org.uk (Radware), remarkabletrees.org (403). Two yews fold into one entry because they stand together.",
+      "paid_entry": true,
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Ancient_Yew_trees%2C_Crom_-_geograph.org.uk_-_2857141.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Kenneth Allen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Ancient_Yew_trees,_Crom_-_geograph.org.uk_-_2857141.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}

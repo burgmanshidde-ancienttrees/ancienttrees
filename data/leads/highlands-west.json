@@ -1,0 +1,80 @@
+{
+  "leads": [
+    {
+      "name": "Benmore Douglas fir, Glen Massan Arboretum",
+      "species": "Douglas Fir",
+      "place": "benmore",
+      "reason": "RBGE collection page: planted 1870s, 57 m, tallest at Benmore; no published coordinate or marked tree, needs a pin",
+      "source": "https://www.rbge.org.uk/collections/living-collection/living-collection-at-benmore-botanic-garden/"
+    },
+    {
+      "name": "Benmore western hemlock",
+      "species": "Western Hemlock",
+      "place": "benmore",
+      "reason": "RBGE: planted 1870s, over 51 m, possibly tallest in Britain; no coordinate, not independently confirmed",
+      "source": "https://www.rbge.org.uk/collections/living-collection/living-collection-at-benmore-botanic-garden/"
+    },
+    {
+      "name": "Plodda Falls Douglas firs",
+      "species": "Douglas Fir",
+      "place": "glen-affric",
+      "lat": 57.3,
+      "lon": -4.9,
+      "reason": "FLS: planted by Lord Tweedmouth after 1856, among tallest in Scotland, but a stand at the viewing platform with no individual measured tree; coordinate approximate, needs a named tree and height",
+      "source": "https://www.forestryandland.gov.scot/visit/plodda-falls"
+    },
+    {
+      "name": "Ardchattan Priory yew H",
+      "species": "Yew",
+      "place": "oban",
+      "lat": 56.462811,
+      "lon": -5.295195,
+      "reason": "Scotland's Yew Trees: twin-stemmed, 328 cm at 100 cm, thought planted about 1700 (heritage, under 400 years), canopy thinned by storm damage; paid entry to the priory grounds; modest, kept as lead",
+      "source": "https://scotlands-yew-trees.org/yewtree/ardchattan-priory-argyll-and-bute/"
+    },
+    {
+      "name": "Inveraray Castle champion conifers (tallest, silver fir)",
+      "species": "conifers",
+      "place": "inveraray",
+      "reason": "Search snippets only (discoverscottishgardens page 404): no tree named, no measurement seen on a fetched page",
+      "source": "https://discoverscottishgardens.org/garden/inveraray-castle-gardens/"
+    },
+    {
+      "name": "Crarae Gardens champion trees (red beech 24 m, Serbian spruce)",
+      "species": "various",
+      "place": "crarae",
+      "reason": "2024 Friends of Crarae trail, figures from a 2012 round, issuu not fetched; garden near Minard, outside this pass",
+      "source": "https://issuu.com/heartofargyll/docs/champion_tree_trail_2024"
+    },
+    {
+      "name": "Fingal's Oak, Barcaldine",
+      "species": "Oak",
+      "place": "oban",
+      "reason": "Gazetteer: 23 ft girth by 1844 and decaying; likely gone, no modern record found",
+      "source": "https://test.visionofbritain.org.uk/descriptions/111490"
+    },
+    {
+      "name": "Reelig Glen Douglas fir (66.4 m)",
+      "species": "Douglas Fir",
+      "place": "inverness",
+      "lat": 57.4,
+      "lon": -4.4,
+      "reason": "Britain's tallest per Ardkinglas page; belongs to Inverness pass, not this slug",
+      "source": "https://www.ardkinglas.com/woodland-gardens/champion-trees.html"
+    },
+    {
+      "name": "Glen Affric granny pines (200+ recorded)",
+      "species": "Scots Pine",
+      "place": "glen-affric",
+      "reason": "Woodland Trust Scotland and Trees for Life recorded 200+ veterans but no named pine, girth or coordinate published outside the ATI, which this pass does not use",
+      "source": "https://en.wikipedia.org/wiki/Glen_Affric"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Inverlochy buried oak trunks",
+      "reason": "Canmore record of dead subfossil trunks, not living trees",
+      "source": "https://canmore.org.uk/site/23721"
+    }
+  ]
+}

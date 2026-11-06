@@ -1,0 +1,69 @@
+{
+  "note": "photo-judge pass 2026-11-04 on out/tmp/nih/judge-list.json: 31 candidates viewed at pixel level, 6 approved (identity settled by file title, description or geotag), 6 held; geosearch noise skipped from the title.",
+  "approved": {
+    "flc_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Yewspread1.jpg",
+      "license": "CC BY-SA 3.0",
+      "attribution": "AWA Ferguson (Blacktav)",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Yewspread1.jpg",
+      "why": "Commons description 'Florencecourt Yew seen from (approx) NW', May 2010; whole broad shaggy yew with short red trunk fills a landscape frame; dense dark needles, yew; light WEAK (overcast sky) but colour and daylight."
+    },
+    "dkh_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bregagh_Rd_%28The_Dark_Hedges%29_-_geograph.org.uk_-_7069550.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "N Chadwick",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Bregagh_Rd_(The_Dark_Hedges)_-_geograph.org.uk_-_7069550.jpg",
+      "why": "Bregagh Road tunnel, October 2021 (recent, after the 2016 losses), geotag on the road; smooth pale grey sinuous beech trunks arching over the road, no people; centre band holds the tunnel; light OK."
+    },
+    "rlg_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Specialist_group_beneath_Reelig_Glen%27s_tallest_Douglas_Firs_-_geograph.org.uk_-_7299631.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Julian Paren",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Specialist_group_beneath_Reelig_Glen%27s_tallest_Douglas_Firs_-_geograph.org.uk_-_7299631.jpg",
+      "why": "Title names Reelig Glen's tallest Douglas firs, October 2022; two huge deeply furrowed Douglas fir trunks centred on the path beside the burn, a small group with backs turned for scale; crowns out of frame as for any 60 m fir; light OK."
+    },
+    "inv_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Lord_President_Seat_-_geograph.org.uk_-_1747776.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Richard Dorrell",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Lord_President_Seat_-_geograph.org.uk_-_1747776.jpg",
+      "why": "Description names the boulder at the foot of this oak as the Lord President Seat, bridge parapets behind match the setting; whole twisting oak, trunk and crown readable; bare (March 2010), daylight and colour; light OK."
+    },
+    "gaf_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Wych_elm%2C_Gleann_na_C%C3%ACche_%28geograph_7210938%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Craig Wallace",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Wych_elm,_Gleann_na_C%C3%ACche_(geograph_7210938).jpg",
+      "why": "Lone craggy wych elm on a stony slope in Gleann na Ciche, geotag about 25 m from our pin, June 2022 (before the 2024 planting); in leaf, crown and burred trunk fill the frame; light OK."
+    },
+    "bmr_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/An_Avenue_Of_Redwoods%2C_Benmore_Botanic_Gardens_-_geograph.org.uk_-_3199735.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "James T M Towill",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:An_Avenue_Of_Redwoods,_Benmore_Botanic_Gardens_-_geograph.org.uk_-_3199735.jpg",
+      "why": "Benmore redwood avenue, geotag on the avenue, October 2012; both rows of red fibrous buttressed sequoia trunks framing the lawn, no people; centre band holds both rows; light OK."
+    },
+    "cwl_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Giant_Redwoods_in_the_Castlewellan_Castle_Arboretum_%28geograph_2842154%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Eric Jones",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Giant_Redwoods_in_the_Castlewellan_Castle_Arboretum_(geograph_2842154).jpg",
+      "why": "Looked 2026-11-04: Commons file titled Giant Redwoods in the Castlewellan Castle Arboretum (Geograph import), 10 m from the pin; the red, fibrous sequoia trunks fill the frame, daylight."
+    },
+    "crm_001": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Ancient_Yew_trees%2C_Crom_-_geograph.org.uk_-_2857141.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Kenneth Allen",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Ancient_Yew_trees,_Crom_-_geograph.org.uk_-_2857141.jpg",
+      "why": "Looked 2026-11-04: Commons file titled Ancient Yew trees, Crom (Geograph import), 70 m from the pin; the whole low, spreading dome of the Crom yews fills the frame on the lawn, a person for scale, overcast daylight (photo_light WEAK)."
+    }
+  },
+  "held": {
+    "bfs_007": "No plausible candidate: fire hydrant cover and 1976 Ulsterbus coaches from the geosearch.",
+    "crm_001": "Ancient Yew trees, Crom (2012, geotag at the old castle) shows the yew mass small on a lawn, under half the frame and off-centre; the interior shot is a branch tangle with people as subject. Neither meets the frame standard.",
+    "kbp_001": "'2017 The Holm Oak UKN' (Kilbroney, Quercus ilex, leaning, evergreen) is plausibly Old Homer, but its geotag is about 550 m from our pin and it predates the 2020 crown work and props, so the crown shown is not what a visitor meets; backlit with sun flare. 'A magnificent oak in Kilbroney Park' is an upright deciduous tree on a lawn, not a leaning holm oak.",
+    "cwl_001": "'Giant Redwoods in the Castlewellan Castle Arboretum' shows a cluster of red sequoia trunks without crowns; nothing settles that it is the pair by the formal steps, and it reads as a trunk close-up.",
+    "cwl_003": "Only generic arboretum views; none names or shows the original Castlewellan Gold.",
+    "cwl_004": "Only generic arboretum views, and the tree's spot is itself unknown; nothing to judge."
+  }
+}

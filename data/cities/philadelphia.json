@@ -175,6 +175,183 @@
         "status": "missing"
       },
       "paid_entry": true
+    },
+    {
+      "id": "phl_005",
+      "name": "The Bartram Yellowwood",
+      "species": "American Yellowwood (Cladrastis kentukea)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 260,
+      "girth_cm": 610,
+      "height_m": 18,
+      "location": {
+        "address": "Bartram's Garden, 5400 Lindbergh Blvd, Philadelphia, PA 19143 (Kitchen Garden, east of the Bartram House)",
+        "latitude": 39.9327,
+        "longitude": -75.2125,
+        "neighbourhood": "Southwest Philadelphia (Kingsessing)"
+      },
+      "location_site": {
+        "name": "Bartram's Garden Kitchen Garden beside the house",
+        "radius_m": 50
+      },
+      "story": "In June 2010 a storm hit this yellowwood hard enough that the Inquirer wrote it up as news. It was already about two centuries old then, some 60 feet tall and 20 feet round at the middle, rotted and hollow inside, its branches held together with wire by the garden's staff. Lightning struck it; WHYY reported that the storm tore off six limbs and left one. The Inquirer put a full recovery at ten to twenty years away.\n\nThe garden now describes it as recovering, still growing and still blooming, and counts it among its oldest trees, presiding over the Kitchen Garden beside the Bartram House for more than 200 years.\n\nHow it got here is a good story with soft edges. The French plant explorer André Michaux recorded the species in central Tennessee in 1796, and the likeliest account has him gathering it there. The Inquirer has it reaching William Bartram around 1800; Wikipedia says it was possibly collected in 1796. Neither is a planting record, so the honest age is somewhere past 200 years, not a date.\n\nIt came to a garden that is now counted the oldest surviving botanic garden on the continent, and it has stood through every chapter since. A younger yellowwood grows a little farther east. This is the old one, the hollow, much-mended trunk by the house.",
+      "how_to_recognise": "You can recognise it by the trunk, old, hollow and much repaired, with wired branches. It stands in the Kitchen Garden just east of the Bartram House; the younger yellowwood farther east is not it.",
+      "verified_sources": [
+        "https://www.bartramsgarden.org/botanic-garden/",
+        "https://www.inquirer.com/philly/news/homepage/20100626_Centuries-old_trees_at_Bartram_s_struck.html",
+        "https://en.wikipedia.org/wiki/Bartram%27s_Garden"
+      ],
+      "access": "Free grounds at Bartram's Garden; Welcome Center open Thursday to Monday 9:30am to 4:30pm (garden page; admission not stated on that page, grounds are a public park)",
+      "transport": "Trolley route 11 to 49th St and Woodland Ave, or SEPTA bus 36 to 54th St and Lindbergh Blvd, then a short walk in; roughly 25 minutes from Center City",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "One source (the garden itself, plus dated news). Garden says: one of the Garden's oldest trees, has reigned over the Kitchen Garden for more than 200 years; badly damaged in a wind storm in 2010 but recovering, still growing and blooming (garden page, undated). Origin: probably gathered in Tennessee by the French plant explorer Andre Michaux (garden: observed species in central Tennessee 1796), brought to William Bartram around 1800 per the Inquirer 2010; Wikipedia says possibly collected 1796. Dates conflict, do not sharpen. Inquirer 26 June 2010: struck by lightning, about two centuries old, 60 ft tall, 20 ft around at the middle, rotted and hollow inside, staff had wired branches together, regrowth estimated 10 to 20 years (girth 610 cm and height 18 m converted from those figures, 2010 values). WHYY 2010 says the storm tore off six limbs leaving one. A younger second yellowwood stands slightly farther east (Wikipedia citing Reid 2010), so identify the OLD one beside the Kitchen Garden by the hollow, wired trunk. Pin is the garden's Kitchen Garden area from description, not the trunk; OSM Overpass unreachable. Life: no dated trunk observation; garden page undated says alive; iNaturalist RECENT 2026-08-09 near garden only. Commons has HALS drawings/photos (public domain NPS, 2014): File:AMERICAN YELLOWWOOD- Cladrastis kentukea, ON THE EAST SIDE OF THE HOUSE LOOKING NORTH ... HALS PA-1-8.tif on commons.wikimedia.org (also PA-1-9 detail). recognise: the old hollow, much-repaired yellowwood in the Kitchen Garden just east of the Bartram House.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "phl_006",
+      "name": "The Woodlands Champion Zelkova",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "The Woodlands, 4000 Woodland Ave, Philadelphia, PA 19104 (near the Hamilton Mansion)",
+        "latitude": 39.9472,
+        "longitude": -75.2031,
+        "neighbourhood": "University City, West Philadelphia"
+      },
+      "location_site": {
+        "name": "The Woodlands, lawn around the Hamilton Mansion",
+        "radius_m": 50
+      },
+      "story": "The Woodlands once had seven champion English elms around its mansion. Dutch elm disease killed every one, the last by March 2017, and four dead snags still stand there. Their relative from the Caucasus is still alive near the same mansion, and the cemetery lists it as a Pennsylvania state champion.\n\nThis ground has a long record with trees. Before it was a cemetery it was William Hamilton's estate, the place where, in 1785, he planted two of the first ginkgoes to reach North America. The Hamilton Mansion still stands, and the zelkova grows near it. The cemetery's own tree page sets a recent photograph of it beside a 1920 picture of an earlier zelkova on the grounds, which says something about how long this species has been part of the place.\n\nWhat nobody has published is a measurement or an age. No girth, no height, no planting year appears in any source we found, and even the count of champions here varies. The cemetery speaks of fifteen, a TreePhilly tour of six. Penn Today, in 2012, named the zelkova alongside an English elm and a hedge maple as the cemetery's record holders. If you know when it was planted, tell us.\n\nThe Woodlands is free during posted gate hours, a short trolley ride from Center City.",
+      "how_to_recognise": "You can recognise it from the recent photograph on the cemetery's tree page. It stands on the grounds beside the Hamilton Mansion, and the cemetery's tree finder places it.",
+      "verified_sources": [
+        "https://woodlands-phila.squarespace.com/trees",
+        "https://penntoday.upenn.edu/2012-03-15/features/tapping-history-philly%E2%80%99s-trees",
+        "https://treephilly.org/champion-trees/"
+      ],
+      "access": "Free; cemetery grounds open to visitors during posted gate hours (check The Woodlands visit page for current hours)",
+      "transport": "Trolley routes 11, 13, 34, 36 to 40th St and Woodland Ave, or 15 minutes on foot from Penn; roughly 15 minutes from Center City",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the whole crown turns orange-brown"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Owner's page (The Woodlands tree page) lists a State Champion Caucasian Zelkova near the Hamilton Mansion with a recent photo, and a 1920 photo of an earlier zelkova on the grounds. Penn Today 2012 lists the cemetery's champions as an English elm, a hedge maple and a Caucasian zelkova. A TreePhilly champion-tree event page mentions a tour of six state champions including the historic zelkova. No girth or height found on any fetched page; champion year not shown. A tree-care company blog says it may descend from a tree planted in the 1700s by William Hamilton: one unreliable source, unverified, do not state. Sister champions: the seven English elms near the mansion all died of Dutch elm disease by March 2017 (owner), four snags remain; not delivered. The cemetery says 'fifteen' champions elsewhere vs TreePhilly 'six': counts disagree. Pin is the mansion area (wiki coordinate for the site), not the trunk. Life: owner page shows a recent photo; iNaturalist RECENT 2026-04-20 within the site. recognise: the zelkova on the grounds beside the Hamilton Mansion, find it via the cemetery's tree finder / tree page. Photo identity not found (not searched deeply).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "phl_007",
+      "name": "The Laurel Hill Cutleaf Linden",
+      "species": "Large-leaved Lime 'Laciniata' (Tilia platyphyllos 'Laciniata')",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Laurel Hill Cemetery East, 3822 Ridge Ave, Philadelphia, PA 19132 (Section T, tag 473)",
+        "latitude": 40.0039,
+        "longitude": -75.1875,
+        "neighbourhood": "East Falls / Fairmount Park"
+      },
+      "story": "The cut-leaf form of the bigleaf linden is supposed to stay small. This one did not. Laurel Hill Cemetery calls it the second-largest bigleaf linden in Pennsylvania, counting the ordinary species too, and the state champion among cut-leaf trees.\n\nThe cultivar is the European bigleaf linden with its leaves remade. Where the species has a plain heart-shaped leaf, this one is irregularly lobed and cut, so the foliage looks snipped and shredded. It is normally a much smaller tree than the species it comes from. Somebody planted this one in Section T of Laurel Hill East, among the graves, and it kept growing until the cemetery put it on its list of notable trees.\n\nThat list is the only source for it, and it gives no girth, no height and no planting date. So the size claim is the cemetery's own, unmeasured as far as we can find, and the tree's age is an open question. If you know when it went in, or have measured it, tell us.\n\nLaurel Hill is large and the pin marks the cemetery, not the trunk. Go to Section T and look for tag 473, and for those ragged leaves. Entry is free; the gates open at 7am.",
+      "how_to_recognise": "You can recognise it by the leaves, irregularly lobed and cut so they look shredded, and by its tag, number 473. It stands in Section T of Laurel Hill East.",
+      "verified_sources": [
+        "https://laurelhillphl.com/arboretum/notable-trees-collection-highlights/",
+        "https://laurelhillphl.com/?p=109"
+      ],
+      "access": "Free; cemetery gates open 7am to 7pm spring to fall and 7am to 5pm fall to spring (owner page)",
+      "transport": "SEPTA bus 61 or 35 to Ridge Ave and Huntingdon St, short walk; roughly 30 minutes from Center City",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "One source, the owner (Laurel Hill Cemetery arboretum notable-trees page): tag 473, Section T, Laurel Hill East; 'second-largest bigleaf linden in the state'; 'State Champion cut-leaf cultivar'; the cultivar is usually much smaller than the species. No girth, height or age on the page. Pin is only the cemetery coordinate (wiki), trunk not placed; cemetery map section T / tag 473 needed for the exact spot. Not a small site: cemetery is large, so no location_site. Findability depends on a recognition clue: irregularly lobed, cut or shredded looking leaves, tag 473, Section T. Life: owner page current; iNaturalist RECENT 2026-07-06 within the cemetery only. The weeping beech (tag 2338) and weeping pagoda tree (tag 758) are champions at Laurel Hill West in Bala Cynwyd, outside the city, not delivered.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "phl_008",
+      "name": "The Hobson Street Scholar Tree",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "not documented",
+      "girth_cm": 472,
+      "height_m": 27,
+      "location": {
+        "address": "Hobson St across from Buist Park, 2526 Hobson St, Philadelphia, PA 19142",
+        "latitude": 39.9193,
+        "longitude": -75.2335,
+        "neighbourhood": "Elmwood, Southwest Philadelphia"
+      },
+      "story": "On Hobson Street the sidewalk bends out into the road to go round this tree, and the street gave up a parking space to let it. Philadelphia Parks & Recreation says the tree survived several development projects, and the neighbourhood was planned around it rather than the other way round. It is a scholar tree, also sold as the Japanese pagoda tree, though it is native to China.\n\nHow big is it? A blog's list of Philadelphia's notable trees gives 88 feet tall and 15.5 feet round, about 27 metres and 4.7 metres, and calls it the Pennsylvania champion of its species. That list is a pointer rather than an official register, and we could not confirm either the figures or the title anywhere else, so treat them as a good reason to go and look rather than a fact. Nobody has published its age. If you know when it was planted, tell us.\n\nThe Parks department chose it in 2021 as one of five notable trees worth seeking out in the city. It stands across from Buist Park in Elmwood, a public street tree you see from the sidewalk. Come in August, when it flowers in cream panicles while almost nothing else does.",
+      "how_to_recognise": "You can recognise it by the sidewalk, which curves out round its base and takes a parking space from the street. It stands on Hobson Street opposite Buist Park.",
+      "verified_sources": [
+        "https://phila.gov/2021-12-15-parks-rec-presents-five-notable-trees-worth-checking-out"
+      ],
+      "access": "Free; public street tree, view from the sidewalk",
+      "transport": "SEPTA trolley 36 to Elmwood Ave and 70th St area, a short walk; roughly 30 minutes from Center City",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when cream flowers cover the crown in late summer"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "One source, the owner (Philadelphia Parks & Recreation, 15 Dec 2021): on Hobson Street across from Buist Park (2526 Hobson St); survived several development projects, the neighbourhood was planned around it, and the sidewalk curves out around its base, taking a parking space. Size figures 88 ft tall and 15.5 ft circumference (converted: 27 m, 472 cm) come only from the finding aid phillytrees.blogspot.com Notable Trees List, which calls it the Pennsylvania champion on Hobson St between 67th and 68th Sts; not a source, so figures are unconfirmed and champion status unconfirmed. Pin is the Parks & Rec address geocoded by OSM Nominatim (a house lot), not the trunk. Life: Parks article of 2021 uses present tense; lifecheck NONE, no recent observation found. recognise: the large tree with the sidewalk bent around its base on Hobson St opposite Buist Park (street where curb space was given up to it).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "phl_009",
+      "name": "The Washington Square Sycamore",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "6th Street edge of Washington Square, 225 S 6th St, Philadelphia, PA 19106",
+        "latitude": 39.9467,
+        "longitude": -75.1512,
+        "neighbourhood": "Washington Square West, Center City"
+      },
+      "location_site": {
+        "name": "Washington Square, 6th Street edge",
+        "radius_m": 50
+      },
+      "story": "The famous sycamore of Washington Square is gone. The one worth walking to stands just outside the wall, on the 6th Street sidewalk, and Philadelphia Parks & Recreation calls it likely the largest sycamore in Center City.\n\nThe famous one was the square's Moon Tree, a sycamore planted in 1975 from seed that had travelled to the Moon. It died, a clone of it died too, and the clone was removed in 2019. Only a plaque remains. The big sycamore on the sidewalk outlived both.\n\nWashington Square has had shade trees since a planting programme began in 1816, but no source ties this trunk to that date. The Parks department gives no measurement and no age. All it says is that this is probably the biggest of its kind in the middle of the city, which, among the brick and the traffic, is a fair thing to be. If you know how old it is, tell us.\n\nAmerican sycamores give themselves away at a distance. The bark flakes off in patches, and the upper trunk and branches turn pale, almost white, above the darker base. In winter, bare, that pale frame is easy to pick out from the end of the block.\n\nIt is free, on a public sidewalk, open at all hours, a short walk from the Walnut-Locust stations.",
+      "how_to_recognise": "You can recognise it by its size, the biggest sycamore along this side of the square, with pale flaking bark. It stands on the 6th Street sidewalk just outside the wall of Washington Square.",
+      "verified_sources": [
+        "https://phila.gov/2021-12-15-parks-rec-presents-five-notable-trees-worth-checking-out"
+      ],
+      "access": "Free; public sidewalk at the square, open at all times",
+      "transport": "SEPTA Walnut-Locust (Broad-Ridge Spur or Market-Frankford) stations, about a 5 to 10 minute walk; in Center City",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "One source, the owner (Philadelphia Parks & Recreation, 15 Dec 2021): along 6th Street just outside the walls of Washington Square; 'likely the largest sycamore in Center City'; no measurements or age given. Park says the square's shade trees date to an 1816 planting programme but does NOT date this tree to it: do not bridge. Not the Moon Tree: the 1975 Moon Tree sycamore and its clone died (clone removed 2019 per NASA page and Inquirer 2019), only a plaque remains. Pin is a nominatim point for 225 S 6th St (building) and the 6th St edge, not the trunk. Life: Parks article of 2021 present tense; iNaturalist RECENT 2026-06-11 at the square, not this trunk. Flag: size and age unmeasured; recognise: the big sycamore on the 6th St sidewalk side of the square. Independent finding aid also names Franklinia at 42nd and Spruce 'possibly largest in the world' (blog, unconfirmed, not delivered).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

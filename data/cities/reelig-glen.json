@@ -1,0 +1,67 @@
+{
+  "city": "Reelig Glen",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Reelig Glen, a wooded glen about seven miles west of Inverness, holds two of the tallest trees in Britain. Dughall Mor, a Douglas fir measured at 62 metres in 2000, was once the tallest known. A neighbour about 55 yards away was measured at 66.4 metres in 2014 and reported as the UK's tallest tree. Every tree in the stand is over a century old, and the waymarked Tall Trees Walk is free.",
+  "meta_description": "Reelig Glen, near Inverness: Douglas firs including one measured at 66.4 metres in 2014, reported as the UK's tallest tree. Free woodland walk.",
+  "question_meta": "Reelig Glen's remarkable trees are giant Douglas firs, one measured at 66.4 m in 2014 and reported as the UK's tallest, beside the former champion.",
+  "question_answer": "Reelig Glen's notable trees are its giant Douglas firs, above all the Reelig Glen Fir, measured at 66.4 metres in 2014 and reported as the tallest tree in the UK, and Dughall Mor, about 55 yards away, which held the title before it. Wikipedia's list of superlative trees gives them 66.3 and 63.8 metres.",
+  "question_context": "Dughall Mor, Gaelic for Big Douglas, took its name from a local competition and was measured at 62 metres in 2000 and reported at 64 in 2005, when no taller tree was known in Britain. In 2014 its neighbour was measured by laser and by climbing at 66.4 metres, and the newspapers moved the title down the path. Heights this great shift with the method and the year, so read the two as a close race rather than a fixed order. The glen itself was planted from the 1800s by the Fraser family, much of it credited to James Baillie Fraser, a traveller in the Himalaya, and the Forestry Commission bought it in 1949. Every tree in the stand is over a century old, and many are around 50 metres. One list dates Dughall Mor to 1882, which we could not confirm. The catch is telling the two apart. A bark label on Dughall Mor was reported missing in 2022, and a walker that year could not be sure which trunk was which. The waymarked Tall Trees Walk is about a mile, free, from the Reelig Glen car park off the A862.",
+  "hero_tree_id": "rlg_001",
+  "oldest_tree_id": "rlg_001",
+  "faq": [
+    {
+      "q": "What is the tallest tree in Reelig Glen?",
+      "a": "The Reelig Glen Fir, a Douglas fir measured at 66.4 metres in 2014 and reported then as the tallest tree in the UK. Wikipedia's list now gives 66.3 metres."
+    },
+    {
+      "q": "Is Reelig Glen free?",
+      "a": "Yes, it is a Forestry and Land Scotland woodland and free to walk. Parking charges apply at some of their sites, so check before going."
+    },
+    {
+      "q": "How long is the walk at Reelig Glen?",
+      "a": "The waymarked Tall Trees Walk is about a mile from the car park, along the Moniack Burn."
+    },
+    {
+      "q": "Can you get to Reelig Glen by bus?",
+      "a": "Not usefully. It is about seven miles west of Inverness and most visitors drive to the car park."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rlg_001",
+      "name": "Dughall Mor and the Reelig Glen giants",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 145,
+      "height_m": 64,
+      "location": {
+        "address": "Reelig Glen, near Kirkhill, Highland (Forestry and Land Scotland; car park off the A862)",
+        "latitude": 57.45038,
+        "longitude": -4.4015,
+        "neighbourhood": "Reelig Glen"
+      },
+      "story": "Britain's tallest tree lost its title to a neighbour standing about 55 yards away. Both are Douglas firs in Reelig Glen, a wooded glen west of Inverness. The older champion is Dughall Mor, Gaelic for Big Douglas, a name it got from a local competition. It was measured at 62 metres in 2000 and reported at 64 in 2005, and for a while no tree in Britain was known to be taller. Then the Reelig Glen Fir beside it was measured at 66.4 metres in 2014, by laser and by climbing, and reported as the new tallest tree in the UK. Wikipedia's list of superlative trees now gives 66.3 for it and 63.8 for Dughall Mor, which it ranks second. Heights this great shift with method and year, so read it as a close race.\n\nThe glen was planted from the 1800s by the Fraser family, much of it credited to James Baillie Fraser, a traveller in the Himalaya. The Forestry Commission bought it in 1949. Every tree in the stand is over a century old and many are around 50 metres. One list says Dughall Mor was planted in 1882, a date we could not confirm.\n\nThe honest catch is telling them apart. A bark label on Dughall Mor was reported missing in 2022, and a walker that summer could not be sure she had found it. Our pin is approximate. The Tall Trees Walk, about a mile, is free.",
+      "verified_sources": [
+        "https://www.scottish-places.info/features/featurefirst11177.html",
+        "https://en.wikipedia.org/wiki/List_of_superlative_trees_in_the_United_Kingdom",
+        "https://gillianswalks.com/2023/01/10/reelig-glen/",
+        "https://commons.wikimedia.org/wiki/File:Tallest_tree_in_the_UK,_%27Dughall_Mhor%27_-_geograph.org.uk_-_977967.jpg"
+      ],
+      "access": "Free to walk; Forestry and Land Scotland woodland with a waymarked Tall Trees Walk (about 1 mile) from the Reelig Glen car park. Parking charges apply at some FLS sites, check before going.",
+      "transport": "No useful public transport; about 7 miles west of Inverness by the A862/A833 road, drive to the Reelig Glen car park.",
+      "how_to_recognise": "You can recognise the stand as the tallest firs in the glen, close together beside the Moniack Burn path south of the car park, near the information board. Dughall Mor and the Reelig Glen Fir stand about 55 yards apart.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Collectible point: the glen's cluster of giant Douglas firs, folding two named trees about 55 yards apart. DUGHALL MOR (Gaelic 'Big Douglas', named after a local competition): measured 62 m in 2000 (scottish-places.info), 64 m in 2005 (gillianswalks, quoting earlier reports), 63.8 m on Wikipedia's superlative list, which says planted 1882 (unsourced here, treat as claim). Once Britain's tallest tree. Neighbour 'Reelig Glen Fir': 66.3 m on Wikipedia's list (laser plus climb; Inverness Courier/Scotsman reports said 66.4 m in 2014), took the UK tallest title from Dughall Mor. A 2009 climbing forum thread disputes rankings (Argyll tree 63.79 m); not a source. Wikipedia list says Dughall Mor ranks second. Glen planted from the 1800s by the Fraser family; James Baillie Fraser (1783-1856, Himalayan traveller) credited with much of it. Forestry Commission bought the glen in 1949. All trees over 100 years old, many about 50 m. The Scotsman article was 403 (not read). Heights from fetched pages: scottish-places.info (62 m, 2000), Wikipedia list (63.8 and 66.3 m), gillianswalks (64 m in 2005, 66.4 m in 2014). PIN: only a Geograph geotag (57.45038,-4.4015, 2008, photo of the tree's Famous Tree sign) lands near the stand; photographer's point not proven on the individual trunk, so approximate, and a walk-through wood is not a small site. ALIVE: walker's blog dated 7 July 2022 describes the walk and the stand; she could not be sure she found Dughall Mor. No reports of storm loss found (searched Arwen/Eunice/Isha/Jocelyn context); lifecheck gives OLD (2008 only). Flagged: thin recent confirmation of which individual trunk. Dunkeld lead notes warn a blog mislabels Reelig as Hermitage: not repeated here, Hermitage Douglas fir is a different, fallen tree (2017).",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Specialist_group_beneath_Reelig_Glen%27s_tallest_Douglas_Firs_-_geograph.org.uk_-_7299631.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Julian Paren",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Specialist_group_beneath_Reelig_Glen%27s_tallest_Douglas_Firs_-_geograph.org.uk_-_7299631.jpg",
+        "status": "approved"
+      }
+    }
+  ]
+}
