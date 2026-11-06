@@ -214,9 +214,10 @@
   "transport": "Bronx subway 2/5 serves the park's east side; check the exact stop",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "2024 Great Trees addition (6sqft names it in a photo caption only). Parks listing (search result, bot-blocked): American elm, 52 in trunk, north side near the Claremont Parkway / Crotona Park East entrance. The forestry point with dbh 52 (the only elm >=50 in the park) lies at the stated coordinates, but I could not geocode the Claremont Parkway entrance to prove it matches 'north side', so the pin is approximate. Alive: forestry record updated 2026-07-20 (Fair). Height and age not found. Flagged.",
   "photo_candidate": null,
-  "age_estimate": "not documented"
+  "age_estimate": "not documented",
+  "story": "No other elm in Crotona Park comes close. The city's forestry survey counts this American elm at 52 inches across the trunk, roughly four metres round, and finds no second elm in the park that reaches 50. In 2024 NYC Parks put it on its list of Great Trees, the first time that list had been updated in about forty years, which puts this corner of the Bronx on the city's official roll of its finest trees. The Parks listing places it on the north side, near the entrance where Claremont Parkway meets Crotona Park East. That is about all the official record says. Nobody has published a height, and nobody has published an age, so we will not invent one. What the record does say is that the tree is alive. The forestry survey updated its entry in July 2026 and logged it in full leaf and fair condition, the bookkeeper's version of still standing and still working. One honest caveat about the map. Our pin sits on the forestry point that matches the size, the only elm that large in the park, but we could not confirm that it lines up exactly with the entrance the Parks listing names, so treat it as close rather than exact and look for the biggest elm on that side. If you know when it was planted, or have walked past it for decades, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, about four metres round, larger than any other elm in the park. It stands on the north side, near the Claremont Parkway entrance on Crotona Park East."
  },
  {
   "id": "nyc_038",
@@ -245,9 +246,10 @@
    "radius_m": 50
   },
   "curation_status": "flagged",
-  "verify_notes": "Village View (fetched): willow in the Lower East Side's largest community garden, climbed by schoolchildren from the nearby New Amsterdam School; Liz Christy planted it 'years ago' per the article (no date, treat as unsourced); New School community-gardening class held there since 2011. No height or diameter in the article. The forestry point (Salix spp., dbh 41) is the only large willow within the garden's block; I could not read the Parks page for its diameter or confirm the point sits inside the garden fence, hence approximate. Sits about 450 m from nyc_034: a two-garden walk. Flagged.",
   "photo_candidate": null,
-  "age_estimate": "not documented"
+  "age_estimate": "not documented",
+  "story": "This is a willow with a school timetable. Children from the nearby New Amsterdam School climb it, and since 2011 a New School class in community gardening has met beneath it, so this is a working tree rather than an ornament. It grows in El Jardin del Paraiso on East 5th Street, described by the local paper Village View as the neighbourhood's largest community garden, and in 2024 NYC Parks added it to its list of Great Trees. The city's forestry survey puts this one at 41 inches across the trunk, a little over three metres round, which is very large for its kind on a Manhattan block. Village View credits the planting to Liz Christy, years ago, without a year, and no other source we found dates it. So its age stays open. If you were there when it went in, tell us. Two practical notes. The garden is a community garden, not a park, so it opens only at its posted hours; check before you go. And our pin is approximate, since we could not confirm the forestry point sits inside the garden fence. Once you are at the garden gate, though, there is no other willow to mistake it for.",
+  "how_to_recognise": "You can recognise it as the big weeping willow inside El Jardin del Paraiso, a trunk a little over three metres round. It stands in the community garden on East 5th Street, the only large willow on the block."
  },
  {
   "id": "nyc_039",
@@ -272,8 +274,9 @@
   "transport": "A train to 190th St, then a short walk; or 1 train to 191st St",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "Fort Tryon Park Trust (fetched): elms described as 100+ years old, planted widely in the early 1900s; the Trust pays to inoculate 48 elms against Dutch elm disease every other year; many original elms already died. The most-cited tree is the large elm at the northern end of the Stan Michels Promenade whose low branches reach into the Heather Garden (the Trust's search-snippet text says the Heather Garden opened 1935, promenade lined with American elms). No source names a single tree or gives its size. The two biggest American elms in the park's forestry points are 59 in and 54 in about 70 m apart along the promenade, but I could not prove which is the 'northern end' elm, so the pin is one of them and approximate; girth_cm uses 59 in diameter x pi. Age 'over a century' is the Trust's 100+ year-old wording for the stock, not a date for this tree. Entry is a small group of two. Flagged.",
-  "photo_candidate": null
+  "photo_candidate": null,
+  "story": "Every other year, someone injects these elms with medicine. The Fort Tryon Park Trust pays to inoculate 48 American elms in the park against Dutch elm disease, because many of the original trees have already died. The survivors on the Stan Michels Promenade are the park's best-known. The Trust describes the park's elms as more than a hundred years old, planted widely in the early 1900s. That is a date for the planting as a whole, not a birth certificate for any one tree, so read it as over a century and probably not by much more. The promenade runs above the Heather Garden, which the Trust gives as opening in 1935, and the elms line it. The one people mention most stands at the northern end, its low branches reaching out over the garden beds. The city's forestry survey finds the two biggest American elms in the park here, 59 and 54 inches across the trunk, about 70 metres apart. The larger works out at nearly five metres round. We cannot yet say which of the two is the northern-end tree, so this entry is the pair, and our pin sits on one of them rather than a proven favourite. Both were logged in full leaf and good condition. Walk the promenade end to end and you have seen both, along with what a century of careful nursing looks like.",
+  "how_to_recognise": "You can recognise them as the two largest elms on the Stan Michels Promenade, the bigger nearly five metres round. They stand about 70 metres apart above the Heather Garden; the most-cited one is at the northern end."
  },
  {
   "id": "nyc_040",
@@ -298,7 +301,15 @@
   "transport": "A train to 190th St then bus or walk through the park, or 1 train to 191st St; about 15 minutes' walk",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "Parks Great Trees (snippet, page bot-blocked): ginkgo, south end of the Cloisters Lawn, 48 in diameter. Forestry points hold two ginkgos >=20 in in the park: 52 in at this pin and 50 in about 450 m south near the Heather Garden; the pin is the one nearest the Cloisters Lawn, not proven identical, so approximate (the 4 in gap is normal growth or measure difference). Alive: record updated 2025-02-19, Good. Age and planting date not documented. Flagged: register page not fetched.",
-  "photo_candidate": null
+  "photo_candidate": null,
+  "story": "The Cloisters charges for entry; the Great Tree on its lawn does not. This ginkgo stands at the south end of the Cloisters Lawn in Fort Tryon Park, and NYC Parks includes it in its 2024 list of Great Trees. Its trunk is around four metres round. The two measurements we have disagree slightly, 48 inches across in the Parks listing and 52 in the city's forestry survey, a gap that ordinary growth between surveys or a different tape position easily explains. Either way it is one of only two ginkgos in the park with a trunk over 20 inches; the other stands about 450 metres south, near the Heather Garden. Nobody has published when this one was planted, so its age is an open question. If you know, tell us. The forestry survey logged it alive and in good condition in February 2025. The lawn is ordinary public park, open to anyone walking through Fort Tryon, and the museum is a separate visit. Our pin sits on the forestry point nearest the lawn, which we think is the Great Tree but have not proven, so it is marked approximate. Come in November, when ginkgos turn gold all at once and then drop their leaves within a day or two.",
+  "how_to_recognise": "You can recognise it by the fan-shaped leaves and a trunk about four metres round, far bigger than any ginkgo nearby. It stands at the south end of the Cloisters Lawn, outside the museum.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the crown turns butter gold and drops in a day or two"
+  }
  }
 ]

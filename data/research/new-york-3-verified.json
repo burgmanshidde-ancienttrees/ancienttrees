@@ -434,7 +434,8 @@
   "transport": "St. George station (SIR, Staten Island Ferry terminal), about 0.3 km on foot",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=122 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 43 in -> girth_cm 343 (pi x diameter). One official register: counts as enough; Parks 2024 Great Tree: hybrid of black oak and willow oak first described by Staten Island naturalist William T. Davis from Tottenville; represents the overlap of southern and northern oak ranges. Tree Map ID 593616. Species given by Parks as Quercus x filialis (Parks title 'Swamp white oak' appears to be a mislabel; the botanical name is the hybrid). iNaturalist 2025-05-29 within radius. A short walk from the ferry."
+  "story": "This sidewalk oak is a cross between two species, and it grows a short walk from the Staten Island Ferry. NYC Parks names it Quercus x filialis, a hybrid of black oak and willow oak, first described by the Staten Island naturalist William T. Davis from Tottenville, at the island's southern tip. Parks offers it as a picture of what Staten Island is botanically, a place where the ranges of southern and northern oaks overlap. In 2024 the city made this one a Great Tree. It does not stand in a botanical garden or behind a gate. It grows on Stuyvesant Place near St. George Park, about 300 metres from the ferry terminal, so anyone already crossing the harbour can reach it in five minutes on foot. Its trunk is 43 inches across, a little over three metres round. One oddity in the paperwork. The Parks page heads the entry swamp white oak, which looks like a slip, since the botanical name on the same page describes the black and willow hybrid. The Latin is the one to trust. Nobody has published when it was planted, and the register gives no age, so that stays an open question. If you know this tree's year, or remember the block before it, tell us. Step off the ferry and, a few blocks on, you have found a small botanical argument standing on the pavement, in full view and free.",
+  "how_to_recognise": "You can recognise it by the trunk, a little over three metres round, on a street tree on Stuyvesant Place. It stands on the sidewalk near St. George Park, about 300 metres from the ferry terminal."
  },
  {
   "id": "nyc_086",
@@ -589,10 +590,11 @@
   "transport": "Botanic Garden (2, 3, 4, 5) or Prospect Park (B, Q) stations, about 0.4 km",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=3 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 10 in -> girth_cm 80 (pi x diameter). One official register: counts as enough; Parks entry id=3 (1985, still listed): planted 1923 per the entry page now (earlier lead noted a 1932 date on the list page; the entry page itself states 1923). Edible banana-like fruit, large umbrella-like leaves, custard-apple family; canopy spread 23.5 ft. Garden-interior pin, Parks lat/lon only, no Tree Map ID: approximate. Small tree (10 in). iNaturalist 2026-06-06 within radius. BBG owner is the ground's owner, but no BBG page checked.",
   "height_m": 10.0,
   "age_min": 100,
-  "age_max": 105
+  "age_max": 105,
+  "story": "Its trunk is only ten inches across, and New York has counted it among its Great Trees since 1985. This is a pawpaw, a member of the custard-apple family, and NYC Parks describes its fruit as edible and banana-like and its leaves as large and umbrella-like. A trunk you could nearly close your hands around sits on the same official roll as the city's giant elms and oaks. It stands in the Plant Family Collection of the Brooklyn Botanic Garden, between Daffodil Hill and Oak Circle, about ten metres tall with a crown a little over seven metres wide. The Parks entry gives a planting year of 1923, which makes it roughly a century old. The Parks list page has also carried 1932, and no other source we know of settles it, so treat the century as approximate, give or take a decade. Either date means the tree had already been growing in Brooklyn for half a century or more when the city first drew up its list of Great Trees, and it has stayed on that list for forty years since. Whatever earned it that place, it was not size. Come for a fruit nobody expects in Brooklyn, on a tree that has lasted. Entry to the garden is paid, with free times; check bbg.org before you go. Our pin is approximate, inside the garden, so find the collection first and the tree second.",
+  "how_to_recognise": "You can recognise it by the large, umbrella-like leaves on a small tree, about ten metres tall with a trunk only ten inches across. It stands in the Plant Family Collection, between Daffodil Hill and Oak Circle."
  },
  {
   "id": "nyc_092",
@@ -617,10 +619,11 @@
   "transport": "Botanic Garden (2, 3, 4, 5) or Prospect Park (B, Q) stations, about 0.5 km",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=5 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 12.25 in -> girth_cm 98 (pi x diameter). One official register: counts as enough; Parks entry id=5: sent to BBG by the US National Arboretum in 1971; canopy spread 25 ft. Garden-interior pin, no Tree Map ID: approximate. Small tree, 12.25 in. iNaturalist 2026-10-27 within radius. Beside nyc_093 and nyc_016.",
   "height_m": 12.0,
   "age_min": 54,
-  "age_max": 56
+  "age_max": 56,
+  "story": "This tree arrived in Brooklyn by government post. In 1971 the US National Arboretum sent it to the Brooklyn Botanic Garden, and fourteen years later, in 1985, it was on the city's first list of Great Trees. Fourteen years from arrival to the city's honour roll is fast going. It is a Chinese parasol tree, Firmiana simplex. NYC Parks records a crown about 25 feet across over a trunk only 12.25 inches thick, and a height of about twelve metres. On a tree this slim, the canopy carries the whole effect. Its age is about as well known as any tree's in the garden, since the arrival is on record, so it is a little over half a century old. Nothing older is being claimed for it, and nothing needs to be. It stands just south of the Rock Garden, which puts it in good company. The Great Tree winterberry grows about 25 metres away, and the garden's Caucasian wingnut, another Great Tree, is in the same corner, so three of the city's listed trees can be seen in a few minutes without retracing your steps. Our pin is approximate, since the register gives coordinates inside the garden but no map id for the tree. Entry to the garden is paid, with some free times; check bbg.org before you go.",
+  "how_to_recognise": "You can recognise it by a broad crown, about 25 feet across, on a slim trunk barely a foot thick. It stands just south of the Rock Garden, about 25 metres from the Great Tree winterberry."
  },
  {
   "id": "nyc_093",
@@ -645,8 +648,9 @@
   "transport": "Botanic Garden (2, 3, 4, 5) or Prospect Park (B, Q) stations, about 0.5 km",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=6 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 27.5 in -> girth_cm 219 (pi x diameter). One official register: counts as enough; Parks entry id=6: among the 12,000 plants advertised when BBG was founded in 1910 (Parks wording; does not say this is that specimen's age, no age given). Canopy spread 28 ft; 27.5 in diameter in 1985. Garden-interior pin, no Tree Map ID: approximate. 25 m from nyc_092.",
-  "height_m": 11.7
+  "height_m": 11.7,
+  "story": "When the city measured this holly in 1985, its trunk was 27.5 inches across, about 2.2 metres round. The tree is a mountain winterberry, Ilex montana, a holly, and it has been one of New York's Great Trees since that first list. NYC Parks records it at about 11.7 metres tall with a crown 28 feet wide. It stands on the south side of the Rock Garden at the Brooklyn Botanic Garden. The Parks entry ties the species to the garden's beginning, noting winterberry among the 12,000 plants the garden advertised when it was founded in 1910. Read that carefully. It says the garden had winterberries from the start. It does not say this is one of them, and no source gives this tree a planting date. So its age is open, and if anyone at the garden knows its history, we would like to hear it. The 1985 measurement is the latest the register gives, so the trunk you see today may well be larger. The tree is still on the city's list forty years on. The register pin sits inside the garden without a map id for the individual tree, so ours is approximate. The Chinese parasol tree, also a Great Tree, stands about 25 metres away, and the garden's Caucasian wingnut is in the same corner. Entry is paid, with some free times; check bbg.org.",
+  "how_to_recognise": "You can recognise it as a holly grown to tree size, about 11.7 metres tall with a crown 28 feet wide. It stands on the south side of the Rock Garden, about 25 metres from the Chinese parasol tree."
  },
  {
   "id": "nyc_094",
@@ -751,8 +755,9 @@
   "transport": "Flushing-Main St (7 train, LIRR), about 2.7 km; local bus",
   "location_precision": "approximate",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=49 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 16 in -> girth_cm 128 (pi x diameter). One official register: counts as enough; Parks entry id=49: native to Iran, rare, brown flaky bark; testament to the Samuel B. Parsons nursery introductions; canopy 44 ft. No Tree Map ID on the entry: pin approximate. Beside nyc_006 (Manchurian linden, 40.7474,-73.8093), about 90 m apart: a two-tree stop. iNaturalist 2026-09-06 within radius.",
-  "height_m": 17.2
+  "height_m": 17.2,
+  "story": "A tree native to Iran stands thirty feet south of a public restroom in Queens, and the city lists it among its Great Trees. This is a Persian parrotia, a species NYC Parks calls rare, and it grows in Kissena Park in Flushing, about 17 metres tall with a crown some 44 feet across. Parks presents it as a living record of the trees introduced by the nursery of Samuel B. Parsons, and it has been on the city's list of Great Trees since the first one, in 1985. Forty years on that list is a long run for any tree. The trunk is 16 inches across, a little over a metre round, slim beside the giant oaks and elms on the same roll. Look closely at the bark, which Parks describes as brown and flaky, the detail most worth stopping for on a tree whose size will not stop you on its own. Nobody has published a planting date, so we give it no age. If the park's history records when this one went in, or you know more about the Parsons connection, tell us. The directions on the register are refreshingly practical, and they are the best ones we have. Find the restroom and walk thirty feet south. Our pin is approximate, since the register gives no map id for the individual tree. About 90 metres away stands the park's Manchurian linden, another Great Tree, so the two make one short stop.",
+  "how_to_recognise": "You can recognise it by the brown, flaky bark on a slim trunk about 16 inches across. It stands thirty feet south of the public restroom in Kissena Park, about 90 metres from the Manchurian linden."
  },
  {
   "id": "nyc_098",
@@ -777,9 +782,10 @@
   "transport": "Kew Gardens station (E, F), about 0.8 km on foot",
   "location_precision": "approximate",
   "curation_status": "flagged",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=55 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 19.02 in -> girth_cm 152 (pi x diameter). One official register: counts as enough; Parks entry id=55 (two entries id=55/56 are the twin beeches at one spot, folded): planted by Jacob Riis in 1905 by the grave of his wife Elizabeth Riis (Parks note; planting date is that note only). 19 in (and a second 26.4 in) diameter in 1985. Cemetery pin, no Tree Map ID: approximate; twins fold to one entry. iNaturalist 2025-01-03 within radius (alive thin but OK). Cemetery access not checked on the cemetery's own page.",
   "height_m": 18.7,
   "age_min": 118,
-  "age_max": 121
+  "age_max": 121,
+  "story": "Jacob Riis planted these two beeches in 1905, beside the grave of his wife, Elizabeth. That is the whole of the record NYC Parks gives, and it is enough. Two American beeches, standing together at one grave in Maple Grove Cemetery in Kew Gardens, have been growing there for about 120 years, and since 1985 they have been on the city's list of Great Trees, entered as a pair. The planting date comes from that single Parks note. We know of no second source for it, so read 1905 as the city's word rather than a date carved anywhere. When Parks measured them in 1985, one trunk was 19 inches across and the other 26.4. The register gives a height of about 18.7 metres. Those measurements are forty years old now, and nobody has published newer ones, so if you bring a tape, tell us what you find. What these trees have witnessed is mostly the quiet business of a cemetery. More than a century of visitors walking between the stones, and a husband's memorial that kept growing long after the planting. A recent observation records the beeches still standing. The cemetery is open to visitors, but check maplegrovecemetery.org for hours before you go. Our pin is approximate, placed by the register inside the grounds, so look for the Riis grave and the two trunks beside it.",
+  "how_to_recognise": "You can recognise them as a pair of American beeches standing together at one grave, the larger trunk about 26 inches across. They stand by the grave of Elizabeth Riis in Maple Grove Cemetery."
  }
 ]

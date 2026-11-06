@@ -1,6 +1,16 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-06": [
+      {
+        "date": "2026-11-06",
+        "kind": "write",
+        "target": "new-york (new-york-2/3/4)",
+        "tokens": 190000,
+        "trees": 29,
+        "note": "29 New York stories written and merged via build_us_newyork_2026_11_06.py (APP FIRST, app-only); species aligned to canonical; nyc_085, nyc_094, nyc_029 held. Token figure estimated."
+      }
+    ],
     "2026-11-05": [
       {
         "date": "2026-11-05",
