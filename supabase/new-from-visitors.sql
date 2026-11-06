@@ -57,3 +57,6 @@ $$;
 
 revoke all on function public.new_from_visitors(int) from public;
 grant execute on function public.new_from_visitors(int) to anon, authenticated;
+
+-- Tell the API about the new function at once.
+notify pgrst, 'reload schema';
