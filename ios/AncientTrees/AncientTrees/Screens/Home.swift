@@ -530,7 +530,10 @@ struct HomeView: View {
     /// out it asks for a sign-in first (Hidde, 2026-11-06, the Instagram and
     /// Pinterest way). No public profile: "A visitor", not a link.
     @ViewBuilder private func visitorLine(_ r: NewFromVisitors.Row) -> some View {
-        let name = r.author_name ?? "A visitor"
+        // A generated name ("Green Fig 1965") reads as a tree's here: "A
+        // visitor" until they choose one (Hidde, 2026-11-06).
+        let real = r.author_name.flatMap { Profiles.isGeneratedName($0) ? nil : $0 }
+        let name = real ?? "A visitor"
         let line = HStack(spacing: 5) {
             Group {
                 if let a = r.author_avatar, let u = URL(string: a) {
@@ -551,7 +554,7 @@ struct HomeView: View {
                 .lineLimit(1)
         }
         .frame(width: Self.tileWidth, alignment: .leading)
-        if r.author_name == nil {
+        if real == nil {
             line.accessibilityElement(children: .combine)
         } else {
             Button {
