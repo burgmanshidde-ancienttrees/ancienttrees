@@ -12,12 +12,21 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+<<<<<<< Updated upstream
 ## 2026-11-05 night run (23:09 window): rung 2, deploy repaired
 
 - **Rung 1:** no photographs waiting; one tree note ("Test" on bcn_012), marked seen.
 - **Rung 2:** every deploy since the 22:45 daily publish failed at content sync: `curation_status: "verified"` is not in the schema (ai_generated|hidde_approved|flagged). Seven trees across Atlanta, Nashville, Tampa, Jacksonville and Orlando set to `flagged`, matching their siblings. Preflight now refuses any other value (`check_city`), so the next push breaks before the deploy does. Preflight 0 problems; pushed as cc20cae98.
 - **Not done:** `gh workflow run deploy.yml` returned 403 from this runner, so the live site stays behind main until the next scheduled or hand-dispatched build. Postbox check failure (8h ago) and the dropped knocks (6 of 12) not looked at; the window was spent on the build.
 - **For Hidde:** none beyond dispatching deploy.yml if the next scheduled build does not pick it up.
+
+## 2026-11-05 daily publish (scheduled, 22:45 UTC): 59 US trees into the app, 26 new places
+
+- **What went live (b7345d923), app only under APP FIRST, no web page, pin or sitemap line:** Tucson 11, Boulder 5, Oakland 4, Salem MA 3, Santa Fe 3, Prescott 3, Orlando 3, Lafayette LA 3, Media PA 3, Jacksonville, Baton Rouge, Glen Ellen, San Jose 2 each, and 13 one-tree places (Albuquerque, Denver, Flagstaff, Glendale AZ, Scottsdale, Sedona, Lexington MA, Sebastopol, La Crosse FL, Safety Harbor, St Augustine, Tallahassee, Tampa). From build_us_southwest (now committed), us_florida_texas, us_live_oaks, us_boston, us_california, us_philadelphia; new places only, copied from dry builds in out/tmp/dry/. The night run had merged the Northwest, Midwest and Southeast sets an hour before (628874b0b); its versions were kept. App-only trees do not count for the pace, so the 25 did not bind.
+- **Changed:** preflight's count promises now count every tree for a place with no web tree (its prose is read in the app beside all of them); before, every new app-only place read as "0 trees" against its intro. Six species names aligned to the live ones (Horse Chestnut, Himalayan Cedar, Silk Floss Tree, Olive, Douglas Fir, Lacebark Elm), sct_001 shortened to "Winfield Scott's Olive Trees", Scottsdale's meta trimmed.
+- **Still waits (new places, dry builds list them):** UK about 75 trees in about 70 places (uk_north and uk_west mostly single churchyard yews, uk_ni_highlands 16, uk 13, uk_south 7), Iberia 23 (Tenerife 9, Cazorla 5), Italy south 34 (Agrigento 8, Portici 5), Greece 10, Croatia 9, Thailand 5. italy_central refuses (rom_032 already live); uk_under_ten and us_empty_cities miss their place files. At this rate the UK goes next run.
+- Note: the pull's autostash of other sessions' unstaged work conflicted on data/city-aliases.json; HEAD's version was kept and city_names.py rerun. The stash entry is kept (`git stash list`), not dropped.
+- **Breakage, mine:** this publish's deploy failed on `curation_status: "verified"` (Jacksonville, Orlando, Tampa from the research files, with the night run's Atlanta and Nashville); the 23:09 night run above repaired it before this session could. Not yet confirmed green live.
 
 ## 2026-11-05 session: deploy green again, ahead of the Guardian
 
