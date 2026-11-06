@@ -1,7 +1,5 @@
 # LOG
 
-<<<<<<< Updated upstream
-
 <!-- archive-index -->
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
@@ -14,6 +12,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06 night run (second attempt): held sets published, app only
+
+- **Published from the shelf (all written 11-02/11-04, held for a pace that does not count app-only trees):** Croatian coast 10 (Pula 2, Rab, Lun, Split, Zadar, Brac, Hvar, Cara, Orebic), Greek islands (Corfu 8, Kefalonia 1, Paros 1), Lampang 1, Thai south (Ko Pha Ngan, Kantang, Krabi, Takua Pa), Puglia (Palagiano, Vico del Gargano, Foresta Umbra, Bisceglie), Glasgow +4, Cannock Chase 3, Milton Keynes 2, Balfron 1. Preflight clean on the commit; the qa.py build check did not run (no site/dist on this runner).
+- **Not published:** Wolverhampton (4 trees, id prefix `wol` clashes with Woolland: needs a new prefix), and Scone, Blair Atholl, Meikleour (build_uk.py makes them as separate places but Dunkeld already holds the same three trees and photos). The four generated files sit in out/tmp/. build_uk.py also rewrites Edinburgh, Dunkeld and Glasgow wholesale and drops later photo width/height fields, so only Glasgow's additions were kept. A rerun of the builder needs those three checked out of git afterwards.
+- **Still unmerged but written:** Ayutthaya 2, Chiang Mai, Coimbra, Cardiff, George Town, Horta 2, Kotor 2, La Palma 4, Lanzarote, Lecce, Martina Franca, Milo, Stirling, Sukhothai, Tha Maka, Vernole, Zafferana Etnea and others; no builder for them, they want a graft into the live city files.
+- **Not done:** `leads.py --ready` (106) is inflated by leads an earlier pass declined, so no write pass was dispatched on it. Verified but still unwritten: Aspromonte 2, Brindisi, Castelbuono, Chattanooga, Dartmoor, Frankfurt, Innsbruck, Isole Tremiti, Noto 2, San Francisco, Serra San Bruno 2, Taiwan.
+
 ## 2026-11-06 night run (06:46 window): rung 5, New York and the UK into the app
 
 - **Rung 1:** nothing waiting (no photographs, no tree notes).
