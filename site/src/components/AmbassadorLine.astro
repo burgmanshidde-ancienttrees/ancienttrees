@@ -215,6 +215,12 @@ const askLabel = place ? (taken ? U.ambassadorBecomeA(place) : U.ambassadorBecom
       window.atPendingAmbassador = null;
       C.gate(function() { if (!btn.disabled) open(); }, function() {});
     }
+    // FROM THE EXPLORE MAP'S BOX (map.ts, a searched city): /<city>#ambassador
+    // lands here with the request open, the same confirm step as a tap.
+    if (location.hash === '#ambassador') {
+      try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+      if (!btn.disabled) btn.click();
+    }
     dlg.querySelector('.amb-later').addEventListener('click', close);
     dlg.querySelector('.amb-done').addEventListener('click', close);
     send.addEventListener('click', function() {

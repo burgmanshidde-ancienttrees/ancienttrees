@@ -1246,6 +1246,19 @@ the list holds that place's trees only; a country with its own web page
 A deliberate move owns the camera like a finger, and an inset change within
 four seconds of one flies it again (MapLibre drops a flight on an inset change).
 
+**Airbnb's rule, app and web (Hidde, 2026-11-06, after a day of a place name
+that changed or stuck while the map moved: "zullen de airbnb interactie maar
+gewoon als standaard aan houden ... zowel voor app als web"; he chose "blijft
+tot x" after asking what the convention is).** The search field keeps what you
+searched until its cross or a new search (Airbnb's search bar; Google Maps and
+Apple Maps keep a searched place's card the same way), wherever you drag. The
+list is always every tree in view, headed by the bare count ("22 trees"), the
+searched place's own trees first while the search holds. A searched city adds
+its box (ambassador, Plus) above the Highlights until the search goes. Nothing
+names a place from what happens to be in view: direction B's guessed heading
+and its 80 percent share are gone, and so is the place header with its share
+circle (MapTab.swift viewHeader, map.ts renderPanel).
+
 ---
 
 ## A sheet that asks for one thing

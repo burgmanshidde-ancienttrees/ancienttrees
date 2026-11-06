@@ -151,8 +151,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   if (answered()) hideRows();
   dlg.addEventListener('close', function() { if (answered()) hideRows(); });
-  document.querySelectorAll('.plus-row').forEach(function(r) {
-    r.addEventListener('click', function() { from = r.getAttribute('data-from') || 'city'; track('plus-open', from); open('idea'); });
+  // ONE LISTENER FOR EVERY ROW, also the ones a page draws later (the explore
+  // map's box for a searched city, map.ts): the row may name its own city.
+  document.addEventListener('click', function(e) {
+    var r = e.target.closest ? e.target.closest('.plus-row') : null;
+    if (!r) return;
+    from = r.getAttribute('data-from') || 'city';
+    if (r.getAttribute('data-city')) city = r.getAttribute('data-city');
+    track('plus-open', from); open('idea');
   });
   // Skip while the field is empty, so leaving it is plainly allowed (Hidde,
   // 2026-11-05: "ik zou hier wel op vastlopen"); Next once something is typed.

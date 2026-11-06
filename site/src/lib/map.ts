@@ -522,13 +522,6 @@ export interface ExploreTreeFeature {
   };
 }
 
-/** WHEN THE LIST UNDER THE EXPLORE MAP NAMES A PLACE (direction B, Hidde,
- *  2026-11-06: "Ja, bouw beide"). If at least this share of the trees in view
- *  stand in one city with a page, the list is headed by that city as a link;
- *  else if this share stand in one country with a page, by the country; else
- *  by the count alone. The app's map uses the same number (ios MapTab.swift,
- *  `dominantShare`); change the two together. */
-export const DOMINANT_SHARE = 0.8;
 /** How many rows the list under the explore map draws before it says to
  *  zoom in. The ten city cards it replaced were a cap of the same kind. */
 export const EXPLORE_LIST_MAX = 30;
@@ -538,7 +531,9 @@ export const EXPLORE_LIST_MAX = 30;
  *  its page, the species silhouettes once and a key per species index, and
  *  the words. */
 export interface ExploreListData {
-  places: Record<string, { n: string; k: string; h: string }>;
+  /** a: somebody already looks after the place (placeHasAmbassador), so its
+   *  box asks for "an" ambassador rather than "the". */
+  places: Record<string, { n: string; k: string; h: string; a?: number }>;
   countries: Record<string, string>;
   icons: Record<string, string>;
   speciesIcon: string[];
@@ -569,6 +564,7 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
     inView: counted(U.treesInView), all: counted(U.allTrees), highlights: U.highlights,
     more: U.zoomForMore, app: U.readInApp, save: U.cardSave, saved: U.cardSaved,
     credit: U.photoCredit("{c}"),
+    ambThe: U.ambassadorBecomeThe("{p}"), ambA: U.ambassadorBecomeA("{p}"), plus: U.plusRow,
   };
   const citiesJson = JSON.stringify(cities);
   const speciesJson = JSON.stringify(species);
@@ -591,7 +587,8 @@ var COUNTRIES = ${JSON.stringify(list.countries)};
 var SP_ICONS = ${JSON.stringify(list.icons)};
 var SP_IC = ${JSON.stringify(list.speciesIcon)};
 var WORDS = ${JSON.stringify(words)};
-var CHEVRON = ${JSON.stringify(icon("caret-right", "bold"))};
+var CHEVRON = ${JSON.stringify(icon("caret-right", "bold", "ic city-box-chev"))};
+var BOX_IC = ${JSON.stringify({ amb: icon("seal-check", "bold", "ic city-box-ic"), plus: icon("sparkle", "fill", "ic city-box-ic") })};
 var BM = ${JSON.stringify(icon("bookmark-simple", "bold", "heart hi-off") + icon("bookmark-simple", "fill", "heart hi-on"))};
 // The trees the filter row keeps; the list counts only those.
 var SHOWN = DATA.features;
@@ -716,9 +713,9 @@ window.addEventListener('hashchange', _placeFromHash);
 // the whole spread of the country or city in view, never its page. Returns
 // false for a place this map holds no tree of, and the search then navigates.
 window.atMapPlace = function(kind, key) {
-  // The place searched for leads the list under the map until the visitor
-  // moves the map themselves (Hidde, 2026-11-06: searching United Kingdom
-  // fitted the Benelux in too, and its cities filled the ten cards).
+  // The place searched for leads the list under the map until the search
+  // field changes (Hidde, 2026-11-06: searching United Kingdom fitted the
+  // Benelux in too; then the Airbnb rule, the search holds while you drag).
   FOCUS = {kind: kind, key: key};
   var slugs = {};
   CITIES.forEach(function(c) {
@@ -806,17 +803,19 @@ function initTreeLayers() {
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
 
-// ---- THE TREES IN VIEW (direction B, Hidde, 2026-11-06), the city page's
-// list and the app's: a heading that names the city or country when nearly
-// every tree in view stands there (DOMINANT_SHARE), the photographed trees as
-// Highlights, then every tree as a row. It replaced the list of cities in view
+// ---- THE TREES IN VIEW, AIRBNB'S WAY (Hidde, 2026-11-06: "zullen de airbnb
+// interactie maar gewoon als standaard aan houden ... zowel voor app als
+// web"), the app's list too (MapTab.swift): the count of trees in view, then
+// for a searched city its box (the ambassador and Plus rows, until the search
+// field changes, as Google Maps keeps a searched place's card), the
+// photographed trees as Highlights, then every tree as a row, the searched
+// place's own first. Nothing guesses a place name from the view any more. It replaced the list of cities in view
 // (2026-07-31): the pins and the heading lead to the cities now. Photographs
 // come from the one card catalogue the pins' cards already read
 // (/api/cards.json, atCollection.catalogue), so the list draws first with the
 // species tiles and again once it has answered.
 var panel = document.getElementById('ex-panel');
 var CARDS = null;
-var DOMINANT_SHARE = ${DOMINANT_SHARE};
 var LIST_MAX = ${EXPLORE_LIST_MAX};
 // pinPriority as the pins read it: a missing one counts as no photograph.
 function _pr(f) { var r = f.properties.pr; return r === undefined || r === null ? 1 : r; }
@@ -826,29 +825,23 @@ function _inFocus(f) {
   var pl = PLACES[f.properties.cs];
   return FOCUS.kind === 'country' ? Boolean(pl && pl.k === FOCUS.key) : f.properties.cs === FOCUS.key;
 }
-// The place the list is headed by: the searched place while the search holds
-// (Hidde, 2026-11-06, the United Kingdom search), else the one city, else the
-// one country, holding DOMINANT_SHARE of the trees in view; null for none.
-function _headPlace(trees) {
-  if (FOCUS) {
-    if (FOCUS.kind === 'country' && COUNTRIES[FOCUS.key]) { return {name: FOCUS.key, href: COUNTRIES[FOCUS.key], sub: ''}; }
-    var fp = PLACES[FOCUS.key];
-    if (FOCUS.kind !== 'country' && fp && fp.h) { return {name: fp.n, href: fp.h, sub: fp.k}; }
+// The searched city's box: the ambassador row to its page's request, the Plus
+// row to the one Plus sheet (PlusAsk.astro, on this page without a row of its
+// own). Nothing for a country or a city without a page.
+function _boxHtml() {
+  if (!FOCUS || FOCUS.kind === 'country') { return ''; }
+  var pl = PLACES[FOCUS.key];
+  if (!pl || !pl.h) { return ''; }
+  var amb = (pl.a ? WORDS.ambA : WORDS.ambThe).replace('{p}', pl.n);
+  var rows = '<a class="city-box-row" href="' + _esc(pl.h) + '#ambassador">' + BOX_IC.amb +
+    '<span class="city-box-label">' + _esc(amb) + '</span>' + CHEVRON + '</a>';
+  var answered = false;
+  try { answered = localStorage.getItem('at_plus_answered') === '1'; } catch (e) {}
+  if (document.getElementById('plus-dialog') && !answered) {
+    rows += '<button type="button" class="plus-row city-box-row" data-from="explore" data-city="' + _esc(pl.n) + '">' +
+      BOX_IC.plus + '<span class="city-box-label">' + _esc(WORDS.plus) + '</span>' + CHEVRON + '</button>';
   }
-  var byCity = {}, byCountry = {}, topC = null, topK = null;
-  trees.forEach(function(f) {
-    var cs = f.properties.cs, pl = PLACES[cs];
-    byCity[cs] = (byCity[cs] || 0) + 1;
-    if (!topC || byCity[cs] > byCity[topC]) { topC = cs; }
-    if (pl && pl.k) {
-      byCountry[pl.k] = (byCountry[pl.k] || 0) + 1;
-      if (!topK || byCountry[pl.k] > byCountry[topK]) { topK = pl.k; }
-    }
-  });
-  var cp = topC && PLACES[topC];
-  if (cp && cp.h && byCity[topC] >= DOMINANT_SHARE * trees.length) { return {name: cp.n, href: cp.h, sub: cp.k}; }
-  if (topK && COUNTRIES[topK] && byCountry[topK] >= DOMINANT_SHARE * trees.length) { return {name: topK, href: COUNTRIES[topK], sub: ''}; }
-  return null;
+  return '<div class="city-box exc-box">' + rows + '</div>';
 }
 function _treeBits(f) {
   var p = f.properties, k = (CARDS && p.id && CARDS[p.id]) || {};
@@ -903,13 +896,7 @@ function renderPanel() {
   trees = trees.slice().sort(function(a, z) {
     return (_inFocus(a) ? 0 : 1) - (_inFocus(z) ? 0 : 1) || _pr(a) - _pr(z);
   });
-  var place = _headPlace(trees), count = _n(WORDS.inView, trees.length), head;
-  if (place) {
-    head = '<h2 class="exc-place"><a href="' + _esc(place.href) + '"><span>' + _esc(place.name) + '</span>' + CHEVRON + '</a></h2>' +
-      '<p class="exc-place-sub">' + _esc(place.sub ? place.sub + ' · ' + count : count) + '</p>';
-  } else {
-    head = '<h2 class="exc-place exc-place-plain"><span>' + _esc(count) + '</span></h2>';
-  }
+  var head = '<h2 class="exc-place exc-place-plain"><span>' + _esc(_n(WORDS.inView, trees.length)) + '</span></h2>' + _boxHtml();
   // Highlights: photographed trees (pinPriority puts them at 0 or below),
   // each city's own Highlights first in their rank, at most ten.
   var hls = trees.filter(function(f) { return _pr(f) <= 0; }).sort(function(a, z) {
@@ -972,10 +959,14 @@ if (panel) panel.addEventListener('click', function(e) {
   var a = e.target.closest ? e.target.closest('[data-ev]') : null;
   if (a) at.track(a.getAttribute('data-ev'), 'map');
 });
-// A drag or a zoom by the visitor ends the search's focus; the fit itself
-// carries no originalEvent, so it keeps it.
-map.on('dragstart', function() { FOCUS = null; });
-map.on('zoomstart', function(e) { if (e && e.originalEvent) { FOCUS = null; } });
+// THE SEARCH HOLDS UNTIL THE FIELD CHANGES (Airbnb's search bar, Google
+// Maps' place card, Hidde 2026-11-06): a drag or a zoom keeps it; typing in
+// the field or clearing it lets the place go. The search widget sets the
+// place's name by script, which fires no input event.
+(function() {
+  var q = document.getElementById('ex-q');
+  if (q) { q.addEventListener('input', function() { if (FOCUS) { FOCUS = null; renderPanel(); } }); }
+})();
 map.on('moveend', renderPanel);
 map.on('load', function() {
   renderPanel();

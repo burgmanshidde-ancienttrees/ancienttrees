@@ -3955,10 +3955,12 @@ button.city-box-row:disabled { cursor: default; }
    count alone at 22. */
 #ex-panel.ex-trees { padding: 0.9rem 0 1rem; }
 .exc-place { margin: 0 var(--gutter); font-family: var(--sans); font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; }
-.exc-place a { display: inline-flex; align-items: center; gap: 4px; color: var(--ink); text-decoration: none; }
 .exc-place span { font-size: 26px; }
-.exc-place svg { width: 22px; height: 22px; margin-top: 3px; color: var(--ink-mid); fill: currentColor; }
 .exc-place-plain span { font-size: 22px; }
-@media (hover: hover) { .exc-place a:hover span { text-decoration: underline; } }
-.exc-place-sub { margin: 2px var(--gutter) 0; font-size: 15px; color: var(--ink-mid); }
+/* A searched city's box on the explore list (map.ts _boxHtml): the city
+   page's .city-box, its rows drawn straight inside it. */
+.exc-box { margin: 12px var(--gutter) 0; }
+.exc-box > .city-box-row:first-child { border-top: 0; }
+a.city-box-row { text-decoration: none; }
+@media (hover: hover) { a.city-box-row:hover .city-box-label { text-decoration: underline; } }
 .ex-more { margin: 4px var(--gutter) 0; font-size: 13px; color: var(--ink-mid); }

@@ -26,6 +26,8 @@ import { haversineKm } from "../lib/walks";
 import { searchForm, searchWidgetJs } from "../lib/search-form";
 import { BASE_URL } from "../lib/schema";
 import { icon } from "../lib/icons";
+import { placeHasAmbassador } from "../lib/ambassadors";
+import PlusAsk from "./PlusAsk.astro";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { ui, translatedCities, cityTranslation, hreflangSet, translatedLanguages } from "../lib/i18n";
 import LanguagePicker from "./LanguagePicker.astro";
@@ -199,6 +201,7 @@ for (const e of mapCities) {
     n: cityLabel({ city: e.data.city, slug: e.id }),
     k: e.data.country,
     h: web > 0 && placeHasPage(e.id, web) ? cityHref(e.id) : "",
+    ...(placeHasAmbassador(e.id) ? { a: 1 } : {}),
   };
 }
 const citiesPerCountry = new Map<string, number>();
@@ -229,6 +232,8 @@ const scripts = mapScript + searchWidgetJs(lang);
       </div>
       <div class="sheet-body">
         <div id="ex-panel" aria-live="polite"></div>
+        {/* The Plus sheet for the box a searched city draws (map.ts _boxHtml). */}
+        <PlusAsk lang={lang} city="" row={false} />
         <div class="panel-foot">
           <Fragment set:html={exploreProse} />
           {/* The map has no footer (footer={false}), so the bottom of the

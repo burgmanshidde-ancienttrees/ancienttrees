@@ -93,9 +93,6 @@ struct MapTab: View {
     /// in the search field, by another search, and once none of its trees is
     /// in view any more.
     @State private var focusPlace: FocusPlace?
-    /// Whether the chosen place has been in view since it was chosen, so the
-    /// flight there does not count as leaving it.
-    @State private var placeSeen = false
     enum FocusPlace: Equatable { case city(String), country(String) }
     @Environment(Units.self) private var units
     @Environment(Saved.self) private var saved
@@ -251,87 +248,12 @@ struct MapTab: View {
         }
     }
 
-    /// The place header shows while one of the place's trees is still in view;
-    /// pan away and the map is simply the map again.
-    private var placeShown: FocusPlace? {
-        guard let p = focusPlace else { return nil }
-        let b = visibleBox
-        return placeTrees.contains { b.contains($0.lat, $0.lng) } ? p : nil
-    }
-
     private var placeTitle: String {
         switch focusPlace {
         case .city(let slug): placeTrees.first?.city ?? slug
         case .country(let name): name
         case nil: ""
         }
-    }
-
-    /// Google Maps' place card at the top of the sheet: the place's name, where
-    /// it is and how many trees, its share button, and for a city who looks
-    /// after it. The city page's own parts (PlaceAmbassadors, ShareTo).
-    @ViewBuilder private func placeHeader(_ p: FocusPlace) -> some View {
-        let n = placeTrees.count
-        VStack(alignment: .leading, spacing: 10) {
-            HStack(alignment: .top, spacing: 12) {
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(placeTitle)
-                        .font(.brand(28, .bold, relativeTo: .title))
-                        .foregroundStyle(Brand.ink)
-                        .lineLimit(2)
-                    Text({ () -> String in
-                        if case .city = p, let c = placeTrees.first?.country {
-                            return "\(c) · \(treesLabel(n))"
-                        }
-                        return treesLabel(n)
-                    }())
-                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                }
-                Spacer(minLength: 8)
-                // A COUNTRY SHARES TOO (Hidde, 2026-11-04: "Japan ook deelbaar,
-                // net zoals een stad"), but only where the website has its page:
-                // the feed says which (BrowseFacet.page).
-                if case .country(let name) = p,
-                   let url = catalogue.facets.pageURL(country: name) {
-                    ShareLink(item: Shared.tag(url, from: "country"), subject: Text(placeTitle),
-                              message: Text("Ancient trees in \(placeTitle).")) {
-                        PlaceCircle(symbol: "square.and.arrow.up")
-                    }
-                    .buttonStyle(.plain)
-                    .countsShare("country")
-                    .accessibilityLabel("Share this country")
-                    .accessibilityIdentifier("place-header-share")
-                }
-                if case .city(let slug) = p,
-                   let url = URL(string: "https://ancienttrees.app/\(slug)") {
-                    // The tree card's share circle (TreePlaceHeader).
-                    ShareLink(item: Shared.tag(url, from: "city"), subject: Text(placeTitle),
-                              message: Text("Ancient trees in \(placeTitle).")) {
-                        PlaceCircle(symbol: "square.and.arrow.up")
-                    }
-                    .buttonStyle(.plain)
-                    .countsShare("city")
-                    .accessibilityLabel("Share this city")
-                    .accessibilityIdentifier("place-header-share")
-                }
-            }
-        }
-        // The cards' 16 under it (appfit DRIFT and TRAIL, 2026-11-04): at 20
-        // the name, the share circle and the ambassador row sat four points
-        // inside every card below them.
-        .padding(.horizontal, 16)
-        .padding(.bottom, 10)
-        // CLOSER TO THE GRABBER (Hidde, 2026-11-05: "Lisbon en de share button
-        // kunnen hoger t.o.v. de list dragger"): the grabber row is 44 tall for
-        // the page's chevron, which left 29 points of air above the name.
-        // Google Maps sets a place's name about 12 under its handle.
-        .padding(.top, -16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        // .contain first: an identifier on a bare container is stamped on
-        // every control inside it, so the ambassador seat and the share
-        // circle lost their own and SignedOutWalk could not find the seat.
-        .accessibilityElement(children: .contain)
-        .accessibilityIdentifier("map-place-header")
     }
 
     /// The grey card, then the nearest tree we hold to the map's centre.
@@ -443,40 +365,32 @@ struct MapTab: View {
         var listed: [(tree: Tree, km: Double)] = []
         var reachKey: ViewKey?
         var reach = 0
-        /// The place the view is about (viewPlace), per settled view.
-        var placeKey: ViewKey?
-        var place: ViewPlace?
         /// The chosen place's own trees in view, per settled view and place.
         var hereKey: ViewKey?
         var hereFocus: FocusPlace?
         var here: [(tree: Tree, km: Double)] = []
     }
 
-    /// Who owns the trees under the view: the biggest city and country by
-    /// count, out of every tree in the rectangle (not only the sixty listed).
-    struct ViewPlace {
-        let total: Int
-        let city: (slug: String, name: String, country: String, n: Int)?
-        let country: (name: String, n: Int)?
-    }
     @State private var viewMemo = ViewMemo()
 
     /// The list as the sheet draws it: under a place's header only that
     /// place's trees, otherwise everything in view.
     private var listedHere: [(tree: Tree, km: Double)] {
         guard let p = focusPlace else { return listed }
-        // FROM THE PLACE'S OWN TREES, not the sixty nearest filtered after
-        // (Hidde, 2026-11-06: United Kingdom framed the Benelux too and the
-        // list showed only Dutch trees; the sixty nearest to a centre over the
-        // North Sea were nearly all Dutch, so the UK's own fell outside them).
+        // EVERY TREE IN VIEW, THE SEARCHED PLACE'S FIRST, for as long as the
+        // search holds (until its cross). Nothing is filtered out, so the list
+        // is never empty under trees in view; and the place's own are drawn
+        // from the place, not from the sixty nearest the centre, which over
+        // the United Kingdom were all Dutch (Hidde, 2026-11-06). The
+        // website's explore list keeps the same order (map.ts _inFocus).
         let key = viewKey
         if viewMemo.hereKey == key, viewMemo.hereFocus == p { return viewMemo.here }
-        // Every one of them in view: a place is a bounded list (the UK 253),
-        // drawn lazily, and its head can then say "All 253 trees" truly.
-        let out = Self.listedTrees(placeTrees, box: visibleBox, focus: focus,
+        let own = Self.listedTrees(placeTrees, box: visibleBox, focus: focus,
                                    filters: filters, month: month,
                                    collected: key.collected, favourites: key.favourites,
                                    query: query, cap: .max)
+        let ids = Set(own.map(\.tree.id))
+        let out = own + listed.filter { !ids.contains($0.tree.id) }
         viewMemo.hereKey = key
         viewMemo.hereFocus = p
         viewMemo.here = out
@@ -605,9 +519,7 @@ struct MapTab: View {
                 // Otherwise the count, outside the scroll view: it
                 // stays visible while the list scrolls and it is the handle
                 // that makes the sheet draggable again once it has (2026-08-25).
-                if selected == nil, let p = placeShown {
-                    placeHeader(p)
-                } else if selected == nil {
+                if selected == nil {
                     viewHeader
                 } else if let t = selected {
                     // Apple Maps' place row: share, name, cross. See
@@ -808,20 +720,6 @@ struct MapTab: View {
         // A tapped pin: TreePlaceSheet.swift's PinSelection, shared with a
         // city's map and My trees.
         .pinSelection($selected, height: $sheetHeight)
-        // A PLACE YOU LEAVE IS LET GO (Hidde, 2026-11-06, the field still
-        // saying Gran Canaria over Madeira with an empty list: "hier gaat wel
-        // wat fout niet alleen hier"). Once its trees have been in view and
-        // then all left it, the field, the cross and the list's filter go,
-        // and the map names what is in view, as Google Maps drops a searched
-        // place once you pan away from it.
-        // Not while the map is still flying there: fly() sets the target
-        // region at once and the map then reports the frames on the way,
-        // which left the place before it ever arrived (Malaga, simulator).
-        .onChange(of: placeShown != nil) { _, shown in
-            if let f = flewAt, Date().timeIntervalSince(f) < 3 { return }
-            if shown { placeSeen = true }
-            else if placeSeen { placeSeen = false; focusPlace = nil }
-        }
     }
 
     /// What a search result does to the map, from this tab's own search or
@@ -830,9 +728,6 @@ struct MapTab: View {
     private func take(_ hit: MapSearch.Hit) {
                 // The place header follows a city or a country; anything else
                 // clears it.
-                // Counted as seen: take() always flies to the place, and a
-                // pan away after the flight is what lets it go.
-                placeSeen = true
                 switch hit {
                 case .city(let slug, _, _, _): focusPlace = .city(slug)
                 case .country(let name): focusPlace = .country(name)
@@ -1020,78 +915,24 @@ struct MapTab: View {
     /// a list down here, it says how big it is, and being unTAPPABLE it makes
     /// the lip a handle rather than a row of half-visible cards a thumb keeps
     /// opening by accident.
-    /// DIRECTION B (Hidde, 2026-11-06: "ja b klinkt goed", "bouw beide"):
-    /// the map with no place chosen names the place it is looking at, the way
-    /// Google Maps names the area under the map: the city when nearly every
-    /// tree in view belongs to it, else the country when it has a page, else
-    /// just the count. The name is a link to that place, a chevron saying so
-    /// (Settings rows, Google Maps), never a separate "Open" button. The
-    /// website's explore map uses the same share (`dominantShare` there too).
-    static let dominantShare = 0.8
-
-    private var viewPlace: (title: String, sub: String, route: Route)? {
-        let key = viewKey
-        let vp: ViewPlace
-        if viewMemo.placeKey == key, let hit = viewMemo.place {
-            vp = hit
-        } else {
-            let box = visibleBox
-            let inView = catalogue.trees.filter { box.contains($0.lat, $0.lng) }
-            let topCity = Dictionary(grouping: inView, by: \.citySlug)
-                .max(by: { $0.value.count < $1.value.count })
-                .flatMap { e in e.value.first.map { (slug: e.key, name: $0.city, country: $0.country, n: e.value.count) } }
-            let topCountry = Dictionary(grouping: inView, by: \.country)
-                .max(by: { $0.value.count < $1.value.count })
-                .map { (name: $0.key, n: $0.value.count) }
-            vp = ViewPlace(total: inView.count, city: topCity, country: topCountry)
-            viewMemo.placeKey = key
-            viewMemo.place = vp
-        }
-        guard vp.total > 0 else { return nil }
-        let need = Self.dominantShare * Double(vp.total)
-        let n = max(inReach, vp.total)
-        if let c = vp.city, Double(c.n) >= need {
-            return (c.name, "\(c.country) · \(treesLabel(n)) in view", .city(c.slug))
-        }
-        if let c = vp.country, Double(c.n) >= need, catalogue.facets.pageURL(country: c.name) != nil {
-            return (c.name, "\(treesLabel(n)) in view", .country(c.name))
-        }
-        return nil
-    }
-
+    /// THE COUNT, AND NOTHING THAT GUESSES (Hidde, 2026-11-06, after a day of
+    /// a place name that changed or stuck while the map moved: "zullen de
+    /// airbnb interactie maar gewoon als standaard aan houden ... zowel voor
+    /// app als web"). Airbnb heads its map list with how many homes are in
+    /// the map area; the search field above keeps what you searched until its
+    /// cross. "22 trees", komoot's "511 routes" (Hidde chose the bare count on
+    /// 2026-10-13). CONVENTIONS.md "A place picked in the search lands on the
+    /// map".
     @ViewBuilder private var viewHeader: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            if let p = viewPlace {
-                HStack(spacing: 4) {
-                    Text(p.title)
-                        .font(.brand(28, .bold, relativeTo: .title))
-                        .foregroundStyle(Brand.ink)
-                        .lineLimit(1)
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 18, weight: .semibold))
-                        .foregroundStyle(Brand.inkSoft)
-                }
-                .frame(minHeight: 44)
-                .sheetTap { navigator.push = p.route }
-                .accessibilityLabel("Open \(p.title)")
-                .accessibilityIdentifier("map-view-place")
-                Text(p.sub)
-                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                    .accessibilityIdentifier("map-count")
-            } else {
-                Text(listedHere.isEmpty ? "No trees in view" : "\(treesLabel(max(inReach, listedHere.count))) in view")
-                    .font(.brand(22, .bold, relativeTo: .title2))
-                    .foregroundStyle(Brand.ink)
-                    .frame(minHeight: 44, alignment: .leading)
-                    .accessibilityIdentifier("map-count")
-            }
-        }
-        .padding(.horizontal, 16)
-        .padding(.bottom, 10)
-        // The place header's numbers (placeHeader): close under the grabber.
-        .padding(.top, -16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .accessibilityElement(children: .contain)
+        Text(listedHere.isEmpty ? "No trees in view" : treesLabel(max(inReach, listedHere.count)))
+            .font(.brand(22, .bold, relativeTo: .title2))
+            .foregroundStyle(Brand.ink)
+            .frame(minHeight: 44, alignment: .leading)
+            .accessibilityIdentifier("map-count")
+            .padding(.horizontal, 16)
+            .padding(.bottom, 10)
+            .padding(.top, -16)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private var countStrip: some View {
@@ -1195,7 +1036,10 @@ struct MapTab: View {
     /// only), the Highlights shelf, then every tree in view as a row. The
     /// website's city page has the same order (TreeCard.astro "row").
     @ViewBuilder private var placeList: some View {
-        if case .city(let slug) = placeShown {
+        // The searched city's asks, for as long as the search holds: Google
+        // Maps keeps a searched place's card until its cross, wherever the
+        // map is moved (Hidde chose this, 2026-11-06).
+        if case .city(let slug) = focusPlace {
             PlaceAsksBox(slug: slug, title: placeTitle, catalogue: catalogue)
                 .padding(.bottom, 6)
         }
@@ -1222,13 +1066,11 @@ struct MapTab: View {
             .padding(.bottom, 6)
         }
         if !listedHere.isEmpty {
-            // With no place chosen the list is everything in view, up to the
-            // sixty nearest (listed); past that it says so.
-            SheetSectionHead(title: placeShown == nil && inReach > listedHere.count
+            // Everything in view, up to the sixty nearest (listed) plus the
+            // searched place's own; past that it says so.
+            SheetSectionHead(title: inReach > listedHere.count
                              ? "The \(listedHere.count) nearest"
-                             : placeShown == nil || listedHere.count == placeTrees.count
-                             ? (listedHere.count == 1 ? "The one tree" : "All \(listedHere.count) trees")
-                             : "\(treesLabel(listedHere.count)) in view")
+                             : (listedHere.count == 1 ? "The one tree" : "All \(listedHere.count) trees"))
             LazyVStack(spacing: 0) {
                 ForEach(listedHere, id: \.tree.id) { hit in
                     SheetLink(route: .tree(hit.tree.id)) { TreeRow(tree: hit.tree) }

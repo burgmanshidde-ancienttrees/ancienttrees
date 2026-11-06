@@ -245,8 +245,8 @@ export interface UIStrings {
    *  photographed trees first (lib/highlights.ts), then every tree. */
   highlights: string;
   allTrees: (n: number) => string;
-  /** The explore map's list (direction B, 2026-11-06): how many trees the map
-   *  shows, the line under the place name or the heading on its own. */
+  /** The explore map's list heading (Airbnb's count, 2026-11-06): how many
+   *  trees the map shows, "22 trees". */
   treesInView: (n: number) => string;
   /** Under the explore list when it stops before every tree in view. */
   zoomForMore: string;
@@ -738,7 +738,7 @@ const EN: UIStrings = {
   plusRow: "Help create Ancient Trees Plus",
   highlights: "Highlights",
   allTrees: (n) => (n === 1 ? "1 tree" : `All ${n} trees`),
-  treesInView: (n) => (n === 1 ? "1 tree in view" : `${n} trees in view`),
+  treesInView: (n) => (n === 1 ? "1 tree" : `${n} trees`),
   zoomForMore: "Zoom in to see the rest",
   readInApp: "Read its story in the app",
   plusAskBody: "We're working on Plus to make Ancient Trees a sustainable platform. What would you like it to do that it doesn't do yet?",
@@ -1364,7 +1364,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusRow: "Ayuda a crear Ancient Trees Plus",
     highlights: "Destacados",
     allTrees: (n) => (n === 1 ? "1 árbol" : `Los ${n} árboles`),
-    treesInView: (n) => (n === 1 ? "1 árbol a la vista" : `${n} árboles a la vista`),
+    treesInView: (n) => (n === 1 ? "1 árbol" : `${n} árboles`),
     zoomForMore: "Acerca el mapa para ver el resto",
     readInApp: "Lee su historia en la app",
     plusAskBody: "Estamos preparando Plus para que Ancient Trees sea una plataforma sostenible. ¿Qué te gustaría que hiciera que todavía no hace?",
@@ -1727,7 +1727,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusRow: "Aiutaci a creare Ancient Trees Plus",
     highlights: "In evidenza",
     allTrees: (n) => (n === 1 ? "1 albero" : `Tutti i ${n} alberi`),
-    treesInView: (n) => (n === 1 ? "1 albero in vista" : `${n} alberi in vista`),
+    treesInView: (n) => (n === 1 ? "1 albero" : `${n} alberi`),
     zoomForMore: "Ingrandisci la mappa per vedere gli altri",
     readInApp: "Leggi la sua storia nell'app",
     plusAskBody: "Stiamo preparando Plus per fare di Ancient Trees una piattaforma sostenibile. Cosa vorresti che facesse che ancora non fa?",
@@ -2090,7 +2090,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusRow: "Help Ancient Trees Plus maken",
     highlights: "Highlights",
     allTrees: (n) => (n === 1 ? "1 boom" : `Alle ${n} bomen`),
-    treesInView: (n) => (n === 1 ? "1 boom in beeld" : `${n} bomen in beeld`),
+    treesInView: (n) => (n === 1 ? "1 boom" : `${n} bomen`),
     zoomForMore: "Zoom in om de rest te zien",
     readInApp: "Lees zijn verhaal in de app",
     plusAskBody: "We werken aan Plus om Ancient Trees een duurzaam platform te maken. Wat zou je willen dat het doet wat het nu nog niet doet?",
@@ -2453,7 +2453,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusRow: "Hilf mit, Ancient Trees Plus zu gestalten",
     highlights: "Highlights",
     allTrees: (n) => (n === 1 ? "1 Baum" : `Alle ${n} Bäume`),
-    treesInView: (n) => (n === 1 ? "1 Baum im Kartenausschnitt" : `${n} Bäume im Kartenausschnitt`),
+    treesInView: (n) => (n === 1 ? "1 Baum" : `${n} Bäume`),
     zoomForMore: "Zoome hinein, um die übrigen zu sehen",
     readInApp: "Lies seine Geschichte in der App",
     plusAskBody: "Wir arbeiten an Plus, damit Ancient Trees eine nachhaltige Plattform wird. Was sollte es können, was es noch nicht kann?",
@@ -2816,7 +2816,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusRow: "Ajude a criar o Ancient Trees Plus",
     highlights: "Destaques",
     allTrees: (n) => (n === 1 ? "1 árvore" : `Todas as ${n} árvores`),
-    treesInView: (n) => (n === 1 ? "1 árvore à vista" : `${n} árvores à vista`),
+    treesInView: (n) => (n === 1 ? "1 árvore" : `${n} árvores`),
     zoomForMore: "Aproxime o mapa para ver as restantes",
     readInApp: "Leia a história dela na app",
     plusAskBody: "Estamos a preparar o Plus para tornar o Ancient Trees uma plataforma sustentável. O que gostaria que fizesse e ainda não faz?",
@@ -3179,7 +3179,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusRow: "Aidez à créer Ancient Trees Plus",
     highlights: "À découvrir",
     allTrees: (n) => (n === 1 ? "1 arbre" : `Les ${n} arbres`),
-    treesInView: (n) => (n === 1 ? "1 arbre dans cette zone" : `${n} arbres dans cette zone`),
+    treesInView: (n) => (n === 1 ? "1 arbre" : `${n} arbres`),
     zoomForMore: "Zoomez pour voir les autres",
     readInApp: "Lisez son histoire dans l'app",
     plusAskBody: "Nous préparons Plus pour faire d'Ancient Trees une plateforme durable. Que voudriez-vous qu'il fasse et qu'il ne fait pas encore ?",
@@ -3541,7 +3541,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     plusRow: "Ancient Trees Plus づくりに協力する",
     highlights: "注目の木",
     allTrees: (n) => (n === 1 ? "1本の木" : `${n}本の木すべて`),
-    treesInView: (n) => (`表示中の木 ${n}本`),
+    treesInView: (n) => (`${n}本の木`),
     zoomForMore: "拡大すると残りの木が表示されます",
     readInApp: "アプリでこの木の物語を読む",
     plusAskBody: "Ancient Trees を持続可能なプラットフォームにするために、Plus を準備しています。まだできないことで、できるようになってほしいことは何ですか？",
