@@ -1425,11 +1425,18 @@ def check_one_tree_places_have_no_question_page():
     min_trees = 2
     root = Path(__file__).resolve().parent.parent
     small = {}
+    # An app-only tree (findable.app_only, APP FIRST 2026-11-05) never had a
+    # web page, so a place made only of them never had a question URL to
+    # retire; counting them asked for stubs of URLs that never existed.
+    import sys as _sys
+    _sys.path.insert(0, str(root / "scripts"))
+    from findable import app_only
     for f in sorted((root / "data" / "cities").glob("*.json")):
         doc = _json.loads(f.read_text(encoding="utf-8"))
         n = sum(1 for t in doc.get("trees", [])
                 if t.get("story") and (t.get("location") or {}).get("latitude") is not None
-                and (t.get("location") or {}).get("longitude") is not None)
+                and (t.get("location") or {}).get("longitude") is not None
+                and not app_only(t))
         if 0 < n < min_trees:
             small[f.stem] = n
     if not small:
