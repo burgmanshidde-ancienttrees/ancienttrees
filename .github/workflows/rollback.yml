@@ -64,7 +64,7 @@ jobs:
           test -f site/index.html
 
       - name: Upload it again
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site
           retention-days: 7

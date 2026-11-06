@@ -159,7 +159,7 @@ jobs:
         run: python3 scripts/pagecheck.py
 
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site/dist
           # Seven days, not the default one, so rollback.yml can put back a
