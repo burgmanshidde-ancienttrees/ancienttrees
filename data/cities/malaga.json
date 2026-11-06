@@ -374,6 +374,44 @@
       "location_precision": "confirmed",
       "how_to_recognise": "Thirteen metres on a trunk half a metre through, modest beside the park's giant figs and araucarias, and carrying its own identification label.",
       "height_m": 13
+    },
+    {
+      "id": "mlg_010",
+      "name": "The Ombu of Jotron",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "under a century",
+      "age_max": 100,
+      "age_basis": "source",
+      "girth_cm": 730,
+      "height_m": 7,
+      "location": {
+        "address": "Former garden of the Cortijo de Jotron, Montes de Malaga Natural Park",
+        "latitude": 36.827408,
+        "longitude": -4.416419,
+        "neighbourhood": "Montes de Malaga"
+      },
+      "story": "With a foot 16 metres round and a trunk of 7.30 metres at chest height, this ombu looks as if it has stood here for centuries. The Junta de Andalucia's register says it has not. The species grows fast, so despite its aged look the sheet reckons it should not be more than a century old.\n\nIt is not from here either. The ombu is native to Argentina, Uruguay and Brazil, and the story the register records is that an Argentinian brought this one. Its growth has gone into the base rather than into height. The tree is only 7 metres tall, with a crown about 13.5 by 11.5 metres, and some of its roots lie bare where they run down a bank.\n\nIt stands in what was the garden of the Cortijo de Jotron, a farmhouse in the Montes de Malaga that is now a ruin, among Aleppo pines, pomegranates and cypresses with oleander and broom beneath. The cortijo's wine press is dated 1775, which makes the tree a newcomer on an old farm.\n\nIt lies about 12 kilometres north of central Malaga inside the natural park, on public forest tracks that mountain-bike routes use. There is no bus, and no signed walking trail to it has been described, so come by car to the track and continue on foot or by bike. The register is the only source that names the tree. If you find it, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_913.pdf",
+        "https://www.komoot.com/highlight/1065337"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_913.pdf",
+        "id": "rediam_913"
+      },
+      "access": "Free. Public land in the Montes de Malaga Natural Park at the ruined Cortijo de Jotron, on forest tracks; no signed walking trail found.",
+      "transport": "About 12 km north of central Malaga by forest track; no public transport, so drive to the track and continue on foot or by bike.",
+      "how_to_recognise": "You can recognise it by the huge swollen foot, 16 metres round, on a tree only 7 metres tall, with roots running bare down a bank. It stands in the old garden of the ruined Cortijo de Jotron.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register-only for the tree; ruin is dated. Age: the sheet's 'under a century' is the sheet's own reasoning from growth rate, so age_basis 'source' but max only. The sheet attributes the introduction to an Argentinian without date: legend as the sheet tells it. A Komoot tip says the press is from 1775. A Malaga planning catalogue entry (Ficha 056, Despoblado Mozarabe de Jotron) concerns the older site there; its PDF could not be read. Ombu is a herbaceous giant sometimes called a tree; fine to list as Ombu as 12 other entries do.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
