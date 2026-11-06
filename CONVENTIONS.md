@@ -1246,6 +1246,14 @@ the list holds that place's trees only; a country with its own web page
 A deliberate move owns the camera like a finger, and an inset change within
 four seconds of one flies it again (MapLibre drops a flight on an inset change).
 
+**Superseded the same evening (Hidde: France counted 2,311 trees and drew
+Belgium's pins, "ik zou dan alleen degene in frankrijk tellen tot kruisje of
+scrollen"), now Airbnb's map exactly:** a search shows that place only (its
+pins, its count, its trees in the list) until you move the map yourself or tap
+the cross; then the field empties and the map area is everything again
+(MapTab onUserMove from MapLibre's gesture reasons; map.ts _endSearch on
+dragstart and a user zoomstart). The cross leaves the camera where it is.
+
 **Airbnb's rule, app and web (Hidde, 2026-11-06, after a day of a place name
 that changed or stuck while the map moved: "zullen de airbnb interactie maar
 gewoon als standaard aan houden ... zowel voor app als web"; he chose "blijft

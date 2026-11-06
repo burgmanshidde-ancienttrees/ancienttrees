@@ -603,6 +603,9 @@ function applyFilters() {
   var src = (typeof map !== 'undefined' && map && map.getSource) ? map.getSource('trees') : null;
   if (!src) return;
   var kept = filtersOn() ? DATA.features.filter(function(f) { return keepsTree(f.properties); }) : DATA.features;
+  // WHILE A SEARCH HOLDS, ONLY THAT PLACE (Hidde, 2026-11-06, Airbnb's map:
+  // the searched place's pins, count and list until you move the map).
+  if (typeof FOCUS !== 'undefined' && FOCUS) { kept = kept.filter(_inFocus); }
   src.setData({ type: 'FeatureCollection', features: atMarkPiles(kept) });
   atFilterCount(kept.length);
   SHOWN = kept;
@@ -720,6 +723,7 @@ window.atMapPlace = function(kind, key) {
   // field changes (Hidde, 2026-11-06: searching United Kingdom fitted the
   // Benelux in too; then the Airbnb rule, the search holds while you drag).
   FOCUS = {kind: kind, key: key};
+  applyFilters();
   var slugs = {};
   CITIES.forEach(function(c) {
     if (kind === 'country' ? c.country === key : c.url === key) { slugs[c.url] = 1; }
@@ -762,6 +766,8 @@ function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   atMarkPiles(DATA.features);
   map.addSource('trees', {type: 'geojson', data: DATA});
+  // A search that arrived before the map had its source (#country=...).
+  if (FOCUS) { applyFilters(); }
   // The season heartbeat (a pulse and a gold dot behind trees at their peak)
   // is switched off: Hidde, 2026-10-03, "its not good enough lets look at it
   // later". The 'now' property still travels in DATA, so bringing it back is
@@ -993,13 +999,23 @@ if (panel) panel.addEventListener('click', function(e) {
   var a = e.target.closest ? e.target.closest('[data-ev]') : null;
   if (a) at.track(a.getAttribute('data-ev'), 'map');
 });
-// THE SEARCH HOLDS UNTIL THE FIELD CHANGES (Airbnb's search bar, Google
-// Maps' place card, Hidde 2026-11-06): a drag or a zoom keeps it; typing in
-// the field or clearing it lets the place go. The search widget sets the
-// place's name by script, which fires no input event.
+// THE SEARCH HOLDS UNTIL YOU MOVE THE MAP (Airbnb's map, Hidde 2026-11-06:
+// "alleen degene in frankrijk tellen tot kruisje of scrollen"): a drag or a
+// zoom by the visitor, or typing in or clearing the field, ends it, and the
+// map area is everything again. The search's own fit carries no
+// originalEvent, so it keeps it. The app does the same (MapTab onUserMove).
+function _endSearch(clearField) {
+  if (!FOCUS) { return; }
+  FOCUS = null;
+  var q = document.getElementById('ex-q');
+  if (clearField && q) { q.value = ''; }
+  applyFilters();
+}
+map.on('dragstart', function() { _endSearch(true); });
+map.on('zoomstart', function(e) { if (e && e.originalEvent) { _endSearch(true); } });
 (function() {
   var q = document.getElementById('ex-q');
-  if (q) { q.addEventListener('input', function() { if (FOCUS) { FOCUS = null; renderPanel(); } }); }
+  if (q) { q.addEventListener('input', function() { _endSearch(false); }); }
 })();
 map.on('moveend', renderPanel);
 map.on('load', function() {
