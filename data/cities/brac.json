@@ -1,0 +1,66 @@
+{
+  "city": "Brač",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Brač's protected tree is an oddity rather than an ancient. In the inland village of Nerežišća, a pine about 170 centimetres tall grows out of the roof of the church of St Peter and Paul, with no roots found reaching the ground. Officials estimate it at about 120 years, with uncertainty, and Croatia declared it a natural monument in 1969 as a rare specimen. It is seen from the street, so the church need not be open.",
+  "meta_description": "The pine on the church roof in Nerežišća, Brač: about 170 cm tall, around 120 years by an official guess, protected since 1969.",
+  "question_meta": "Brač's best-known tree is a pine growing from the roof of the church of St Peter and Paul in Nerežišća.",
+  "question_answer": "Brač's best-known tree is the pine on the roof of the church of St Peter and Paul in Nerežišća, about 170 centimetres tall and protected as a natural monument since 1969. Officials estimate it at about 120 years, and say they are not sure.",
+  "question_context": "The pine is the draw because of where it grows, not its size or age. Total Croatia News reported in 2017 that it stands 170 centimetres tall on the roof of the church of St Peter and Paul, that no roots have been found reaching the ground, and that it lives on rainwater. Officials put it at about 120 years with uncertainty. One island guide identifies it as a miniature black pine. The church itself is given as about 600 years old by Total Croatia News, and as 13th or 14th century by other sources. Croatia protected the tree in 1969 as a rare specimen. Nerežišća lies inland, reached from the ferry port at Supetar by island bus or car, and the roof is visible from the street in the village centre, so there are no opening hours to worry about. The most recent dated report of the pine that we found is from 2017, so a visitor who sees it now knows more than we do.",
+  "hero_tree_id": "brh_001",
+  "oldest_tree_id": "brh_001",
+  "faq": [
+    {
+      "q": "Where is the tree on the church roof on Brač?",
+      "a": "On the church of St Peter and Paul in the centre of Nerežišća, an inland village reached from Supetar. It is seen from the street."
+    },
+    {
+      "q": "How old is the Nerežišća roof pine?",
+      "a": "About 120 years by an official estimate that admits its uncertainty. It is about 170 centimetres tall."
+    }
+  ],
+  "trees": [
+    {
+      "id": "brh_001",
+      "name": "The pine on the church roof, Nerežišća",
+      "species": "Austrian Pine (Pinus nigra)",
+      "age_estimate": "reported between about 100 and 200 years",
+      "age_min": 100,
+      "age_max": 200,
+      "age_basis": "source",
+      "height_m": 1.7,
+      "location": {
+        "address": "Roof of the church of St Peter and Paul (Sv. Petar i Pavao), centre of Nerežišća, Brač",
+        "latitude": 43.33045,
+        "longitude": 16.573754,
+        "neighbourhood": "Nerežišća"
+      },
+      "location_site": {
+        "name": "Church of St Peter and Paul, Nerežišća",
+        "radius_m": 20
+      },
+      "story": "A pine grows out of the roof of the church in Nerežišća, and nobody has found its roots reaching the ground. By Total Croatia News' account in 2017, it lives on rainwater.\n\nIt is 170 centimetres tall, about the height of a person, on the church of St Peter and Paul in the centre of this inland village on Brač. Total Croatia News puts the church at about 600 years old; other sources place it in the 13th or 14th century. Officials estimate the pine at about 120 years, and say plainly that they are not sure. One island guide calls it a miniature black pine, and an English Wikipedia caption simply shows the chapel with its bonsai tree.\n\nCroatia declared it a natural monument in 1969 as a rare specimen. This is not an ancient tree and it does not need to be. It is an oddity, a pine put at over a century old by the official guess and still shorter than most of the people who stop to look at it, and the village has kept it.\n\nYou do not need the church open to see it. The roof is visible from the street in the village centre, and Nerežišća is a short trip inland from the ferry port at Supetar.\n\nThe most recent dated report we found is from 2017. If you pass through, look up and tell us whether it is still there.",
+      "verified_sources": [
+        "https://total-croatia-news.com/?p=35493",
+        "https://myislandbrac.com/destination/nerezisca/",
+        "https://en.wikipedia.org/wiki/Nere%C5%BEi%C5%A1%C4%87a"
+      ],
+      "official_register": {
+        "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4462, protected 1969-04-06) (localId ps.4462, HR.MZOE.ZP)",
+        "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326"
+      },
+      "access": "Free: seen from the street in the centre of Nerežišća. The church does not need to be open to see the roof.",
+      "transport": "Ferry from Split to Supetar on Brač, then island bus or car inland to Nerežišća (times not confirmed).",
+      "how_to_recognise": "You can recognise it by looking up: it is the small pine, about 170 centimetres tall, growing out of the roof of the church of St Peter and Paul in the village centre.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "REGISTER: Bioportal ps.4462 'BOR NA CRKVICI U NEREŽIŠĆU', protected 1969-04-06, point 43.33045,16.573754. SECOND SOURCE: Total Croatia News 2017-05-05: pine growing from the roof of the 600-year-old St Peter and Paul church in Nerežišće, 170 cm tall, officials estimate about 120 years (uncertain), no evidence of roots reaching the ground so it lives on rainwater, declared a nature monument 1969 as a rare specimen. Species: myislandbrac.com says 'miniature black pine'; TCN says only 'pine'. English Wikipedia captions the chapel 'with bonsai tree' in the town centre. Other ages seen only in a search summary (over 100, 150 to 200, about 200 years) not on fetched pages, so the 100 to 200 range is a broad envelope of the fetched 120 and the unverified ones; do not quote 200. The municipal coat of arms shows the church with the pine (search summary only). ALIVE: last dated evidence is TCN 2017; lifecheck nearby shows other plants in 2026 but nothing for the pine itself. Flagged for alive. PIN: register point only; the church is small and in the centre, the tree on its roof, so the site is the church; approximate with location_site. It is a rooftop oddity, not an ancient tree: the draw is the oddity and its coat-of-arms status. Church age: 600 years (TCN) and 13th or 14th century (varying).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

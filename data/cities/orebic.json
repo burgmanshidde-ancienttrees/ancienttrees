@@ -1,0 +1,62 @@
+{
+  "city": "Orebić",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Above Orebić on Pelješac, about three kilometres uphill at the hamlet of Karmen, a group of cypresses surrounds the medieval church of Our Lady of Carmel, Gospa od Karmena. Croatia has protected them together as one natural monument since 1960. A walker's note calls some of them over 400 years old, a claim nobody has measured. They are not the better-known cypress stand below the Franciscan monastery, which was planted in the mid-20th century.",
+  "meta_description": "The protected cypresses of Gospa od Karmena above Orebić: a group around a medieval hill church, some said to be over 400 years old.",
+  "question_meta": "Orebić's old cypresses stand around the church of Gospa od Karmena on the hill at Karmen, protected as a group since 1960.",
+  "question_answer": "Orebić's old cypresses are the group around the medieval church of Gospa od Karmena, Our Lady of Carmel, on the hill at Karmen about three kilometres above the town. They have been protected together as a natural monument since 1960; a claim that some are over 400 years old is unmeasured.",
+  "question_context": "Two cypress stands near Orebić get confused. The protected group described here stands around the church of Gospa od Karmena at the hamlet of Karmen, on the hill above the town, and has been on Croatia's register of natural monuments since 1960 as a group of cypresses. A walker's note on komoot from 2019 calls them huge and ancient, some over 400 years old and among the oldest in Dalmatia, which is a hiker's impression rather than a measured age. The other stand, below the Franciscan monastery, is better known, and Time Out says it was planted in the middle of the 20th century. Nobody has published a count, a height or a girth for the Karmen trees. The church is reached by road or on foot by the path, about three kilometres uphill from Orebić centre, and a 2023 note says the path can be ridden on a mountain bike. We found no public transport and nothing on whether the church grounds are open. The 2023 note is the newest word on the trees.",
+  "hero_tree_id": "orb_001",
+  "oldest_tree_id": "orb_001",
+  "faq": [
+    {
+      "q": "Where are the old cypresses of Orebić?",
+      "a": "Around the church of Gospa od Karmena on the hill at Karmen, about three kilometres uphill from Orebić centre, reached by road or path."
+    },
+    {
+      "q": "Are the Karmen cypresses the same as the stand below the Franciscan monastery?",
+      "a": "No. The stand below the monastery is better known, and Time Out says it was planted in the mid-20th century. The protected old group is up at the church of Gospa od Karmena."
+    }
+  ],
+  "trees": [
+    {
+      "id": "orb_001",
+      "name": "The Cypresses of Gospa od Karmena, Orebić",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "some reportedly over 400 years",
+      "age_basis": "source",
+      "location": {
+        "address": "Church of Our Lady of Carmel (Gospa od Karmena), Selo Karmen, Podgorje, Orebić",
+        "latitude": 42.981953,
+        "longitude": 17.162753,
+        "neighbourhood": "Karmen hamlet, hill above Orebić"
+      },
+      "location_site": {
+        "name": "Hilltop around Gospa od Karmena church, Karmen",
+        "radius_m": 50
+      },
+      "story": "Above Orebić, around the medieval hilltop church of Our Lady of Carmel, stands a group of cypresses that Croatia has protected as one natural monument since 1960. A walker's note on komoot calls them huge and ancient, some over 400 years old and among the oldest in Dalmatia. That is a hiker's claim, not a measurement, and nobody has published a count, a height or a girth.\n\nBe sure which cypresses you are looking for. Lower down, below the Franciscan monastery, there is a better-known cypress stand, and Time Out says that one was planted in the middle of the 20th century. These are the others, up at the hamlet of Karmen, on the hill about three kilometres above the town.\n\nThe point of coming is the group around the church rather than any single trunk. The register protects them together, and they are best taken in together from the church hill, which is also where our pin stands.\n\nYou can reach the church by car or on foot by the path; a 2023 note adds that the path can be ridden on a mountain bike. Whether the church grounds themselves are open is not stated anywhere we found, and that same 2023 note is the newest word on the trees. If you climb up, count them for us and tell us which is the biggest.",
+      "verified_sources": [
+        "https://www.komoot.com/highlight/5071319 (community highlight, Oct 2019, coords 42.982103,17.163062)",
+        "https://nominatim.openstreetmap.org/ui/details.html?osmtype=W&osmid=200501554 (OSM church way 25 m from the register point)"
+      ],
+      "official_register": {
+        "name": "Bioportal, Registar zaštićenih područja, spomenik prirode ps.4416 OREBIĆ - SKUPINA ČEMPRESA (1960-04-11) (localId ps.4416)",
+        "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs"
+      },
+      "access": "Free to walk to: the church stands on a hill reached by path or road, with no fee or gate known. Whether the church grounds are open is not confirmed.",
+      "transport": "About 3 km uphill from Orebić centre by car or on foot by the path; no public transport found.",
+      "how_to_recognise": "You can recognise them as the group of tall cypresses around the church of Gospa od Karmena on the hill at Karmen, not the stand below the Franciscan monastery.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "ENSEMBLE: the register designates a group (skupina) of cypresses; register is the only official source. Register point 42.981953,17.162753 is 25 m from the OSM church 'Crkva Gospe od Karmena' (42.9820048,17.1629388) and 20 m from the Komoot user pin, so the group is around the church. Komoot (user text, Oct 2019): several huge ancient Mediterranean cypresses around the medieval church, some even over 400 years old, among the oldest in Dalmatia (unmeasured claim, community source, flag). Life check weak: only the 2023 Komoot access comment, no dated photo or news about the trees; flagged. NOT the 'Cempresada / Pod Gospu' cypress reserve below the Franciscan monastery (ps.4314), which Time Out says was planted mid-20th century. No girth or count found. Collectible only if Hidde accepts a church-hill group as one place to stand; register row marked publishable=false (group).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

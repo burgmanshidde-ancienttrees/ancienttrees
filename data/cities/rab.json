@@ -1,0 +1,57 @@
+{
+  "city": "Rab",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Rab's remarkable tree is a holm oak with a birthday. It was planted on the Pjaceta, the Square of Freedom, on 23 April 1921, the day the Italian military left the island, and a century later its crown shades the whole square. Many Rab families tell of an ancestor who helped plant it. It was voted Croatian Tree of the Year in 2024 and finished ninth in the European Tree of the Year in 2025.",
+  "meta_description": "Rab's Tree of Freedom: a holm oak planted on 23 April 1921 on the Pjaceta, Croatian Tree of the Year 2024. Where it stands and its story.",
+  "question_meta": "Rab's best-known tree is the Tree of Freedom, a holm oak planted on the Pjaceta on 23 April 1921.",
+  "question_answer": "Rab's best-known tree is the Tree of Freedom, a holm oak planted on the Pjaceta in Rab's old town on 23 April 1921 to mark the departure of the Italian military. It was voted Croatian Tree of the Year in 2024.",
+  "question_context": "The Tree of Freedom is about 105 years old, and unlike most ages on this map, that number is a planting date rather than an estimate. The town planted it on 23 April 1921, the day the Italian military left Rab, on the small square that takes its name, the Pjaceta or Square of Freedom. Its centenary was celebrated in 2021, by which time the crown shaded the whole square. Many families on the island keep a tradition that an ancestor took part in the planting, a story repeated on its European Tree of the Year entry. The Society of Friends of Rab nominated it for Croatian Tree of the Year, which it won in 2024, and in 2025 it represented Croatia in the European contest, finishing ninth with 12,807 votes. Nobody has published its height or girth. The square is in the old town of Rab, on the island of the same name, which is reached by ferry from the mainland; once in town, the tree is a short walk from anywhere. It is free to see at any hour.",
+  "hero_tree_id": "rab_001",
+  "oldest_tree_id": "rab_001",
+  "faq": [
+    {
+      "q": "When was Rab's Tree of Freedom planted?",
+      "a": "On 23 April 1921, to mark the departure of the Italian military from Rab. That makes it about 105 years old in 2026."
+    },
+    {
+      "q": "Where is the Tree of Freedom on Rab?",
+      "a": "On the Pjaceta, the Square of Freedom, in Rab's old town. It is the big crown that shades the whole square, free to see at any hour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rab_001",
+      "name": "Tree of Freedom, Rab",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "about 105 years, planted 23 April 1921",
+      "age_min": 104,
+      "age_max": 106,
+      "age_basis": "source",
+      "location": {
+        "address": "Pjaceta (Square of Freedom), Rab town",
+        "latitude": 44.755458,
+        "longitude": 14.760469,
+        "neighbourhood": "Rab old town"
+      },
+      "story": "This holm oak has a birthday. Rab planted it on 23 April 1921 to mark the day the Italian military left the island, and few trees on this map can be dated to the day.\n\nIt stands on the Pjaceta, the Square of Freedom, in Rab's old town. Its centenary was celebrated in 2021, and by then its crown shaded the whole square. Many Rab families still tell of an ancestor who helped plant it. That is family tradition, repeated on the tree's European Tree of the Year entry, and it would be hard to check and harder to argue with.\n\nIn 2024 it was voted Croatian Tree of the Year, nominated by the Society of Friends of Rab. In 2025 it went on to the European contest and finished ninth with 12,807 votes.\n\nAt about 105 years it is not ancient, and it does not pretend to be. Its age is a planting date rather than an estimate, which makes it one of the more trustworthy numbers you will find on an old tree. What it has witnessed is a town's whole modern century, from the day it went into the ground as a statement about who ran the island to the votes that made it the country's favourite tree.\n\nNobody has published its height or girth. If you have a tape measure and a minute, we would like to know.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2025/tree-of-freedom-in-rab-square",
+        "https://www.croatiaweek.com/the-freedom-tree-named-croatian-tree-of-the-year/",
+        "https://www.croatiaweek.com/croatias-104-year-old-freedom-tree-up-for-best-in-europe-title/"
+      ],
+      "access": "Free, always open: it shades the Pjaceta, a public square in Rab's old town.",
+      "transport": "Rab is an island reached by ferry from the mainland (route and times not confirmed); the tree is in the old town, on foot from anywhere in Rab town.",
+      "how_to_recognise": "You can recognise it by the one big evergreen crown that shades the whole of the Pjaceta, the Square of Freedom, in Rab's old town.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Documented planting: 23 April 1921, to mark the departure of the Italian military from Rab (Croatia Week, 2024-11-09). So age is real, not guessed: 105 in 2026. Croatian Tree of the Year 2024 and Croatia's entry in European Tree of the Year 2025 (ranked 9th with 12,807 votes per the contest listing in data/leads/_tree-of-the-year.json). Nominated by David Kabalin of the Society of Friends of Rab. Centennial was celebrated in 2021, by then the crown shaded the whole square; many local families keep an oral tradition of an ancestor who took part in the planting (TotY entry, to be quoted as a family tradition, not fact). Height and girth are in no source seen. Alive: dated Nov 2024 and the 2025 contest. Note the Croatia Week piece on the vote calls it 104 years old (2025) and the TotY page 105: consistent.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

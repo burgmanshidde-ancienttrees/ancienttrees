@@ -1,0 +1,66 @@
+{
+  "city": "Takua Pa",
+  "country": "Thailand",
+  "status": "needs_curation",
+  "intro": "Takua Pa, north of Khao Lak in Phang Nga, has Khlong Sang Ne, a short canal where old figs meet overhead from both banks and the community paddles visitors through the tunnel. People call it the Little Amazon. Thailand's Ministry of Culture listed the canal's fig in 2017 as a heritage tree of the land, at more than 200 years; a 2023 PPTV report says more than 100. The trip takes about an hour and a half and is booked ahead for the tide.",
+  "meta_description": "The Little Amazon at Khlong Sang Ne, Takua Pa: a tunnel of heritage figs over a canal, seen on a community paddle-boat trip north of Khao Lak.",
+  "question_meta": "Takua Pa's heritage tree is the fig tunnel of Khlong Sang Ne, the Little Amazon, more than 100 years old by PPTV and 200 by the register.",
+  "question_answer": "The best-known old trees near Takua Pa are the figs of Khlong Sang Ne, which arch over the canal to form a tunnel known as the Little Amazon. Thailand's Ministry of Culture listed them in 2017 at more than 200 years, from the community's account, while a 2023 PPTV report says more than 100. Read the age as a range.",
+  "question_context": "Khlong Sang Ne is a short canal in Bang Nai Si, Takua Pa district, Phang Nga province, north of Khao Lak. Old figs lean in from both banks and meet overhead, their roots hanging into the water among other waterside trees, and the Ministry of Culture listed the canal's fig in 2017 as a heritage tree of the land. Its record, written from the Khlong Sang Ne community's account, describes blunt-leaved weeping figs more than 200 years old, the largest over two metres round and more than 20 metres tall, in a place where fresh and salt water mix and hornbills and snakes live. A 2023 report by the broadcaster PPTV gave the tunnel more than 100 years. The figs are seen from the water: the community runs paddle-boat trips with no motors, about an hour and a half long, and PPTV advises booking ahead so the trip can be timed to the tide. Takua Pa is a little over an hour's drive from Phuket. Our pin is the register's point beside the canal, not a confirmed boat launch, so ask the community tourism group where to meet when you book.",
+  "hero_tree_id": "tkp_001",
+  "oldest_tree_id": "tkp_001",
+  "faq": [
+    {
+      "q": "How do you see the Little Amazon at Khlong Sang Ne?",
+      "a": "From a paddle boat on a trip run by the Khlong Sang Ne community, about an hour and a half long. Book ahead so the trip can be timed to the tide, and ask where the boats leave from."
+    },
+    {
+      "q": "How old are the figs of Khlong Sang Ne?",
+      "a": "Thailand's heritage tree register says more than 200 years, from the community's account; a 2023 PPTV report says more than 100. Read it as a range."
+    },
+    {
+      "q": "How far is Khlong Sang Ne from Phuket?",
+      "a": "A little over an hour's drive, by PPTV's account. It is in Bang Nai Si, Takua Pa district, north of Khao Lak."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tkp_001",
+      "name": "Fig tunnel of Khlong Sang Ne, Takua Pa",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "more than 100 years (PPTV 2023); about 200 by the register",
+      "age_min": 100,
+      "age_max": 200,
+      "age_basis": "source",
+      "girth_cm": 200,
+      "height_m": 20,
+      "location": {
+        "address": "Khlong Sang Ne, Bang Nai Si, Takua Pa, Phang Nga (community boat trips)",
+        "latitude": 8.876397,
+        "longitude": 98.342107,
+        "neighbourhood": "Bang Nai Si, Takua Pa"
+      },
+      "story": "On Khlong Sang Ne, a short canal near Takua Pa, old figs lean in from both banks and meet overhead, so the boats pass through a green tunnel with roots hanging down into the water. People here call it the Little Amazon.\n\nThailand's Ministry of Culture listed the canal's fig as a heritage tree of the land in 2017. Its record, written from what the Khlong Sang Ne community told it, describes a tunnel of blunt-leaved weeping figs more than 200 years old, the largest over two metres round and more than 20 metres tall, among waterside trees whose roots lock together along both banks. Fresh and salt water mix here, and the register names hornbills and snakes among the wildlife. A 2023 report by the broadcaster PPTV put the tunnel at more than 100 years, so read the age as a range.\n\nThe trips are run by the community in paddle boats, with no motors, and take about an hour and a half. PPTV advises booking ahead so the trip can be timed to the tide. Takua Pa lies north of Khao Lak, a little over an hour's drive from Phuket.\n\nOur pin is the register's point beside the canal, and we have not yet confirmed where the boats leave from, so ask the community tourism group when you book.",
+      "verified_sources": [
+        "Ministry of Culture Rukkha Moradok khong Phaendin 2017 list, register id 2017-25 (data/registers/thailand-rukkha.json, CC BY)",
+        "https://www.pptvhd36.com/travel/thailand/203157"
+      ],
+      "official_register": {
+        "name": "Ministry of Culture, Department of Cultural Promotion: Rukkha Moradok khong Phaendin (heritage trees of the land), 2017, no. 25",
+        "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+      },
+      "access": "Seen from the water on a community-run paddle-boat trip of about an hour and a half (PPTV, 2023); book ahead with the Khlong Sang Ne community tourism group so the trip can be timed to the tide. Paid; a visitor review gives about 250 baht a person, not confirmed. Location not verified: the pin is the register's point beside the canal, about 300 m from the Khlong Sang Ne access road, not a confirmed boat launch.",
+      "transport": "Bang Nai Si, Takua Pa district, Phang Nga, north of Khao Lak; a little over an hour's drive from Phuket (PPTV). Public transport not verified.",
+      "how_to_recognise": "You can recognise it as the tunnel of figs arching over Khlong Sang Ne, their roots hanging into the water, on the paddle-boat route at Bang Nai Si.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register 2017-25 (Thai name ไทรย้อยใบทู่, blunt-leaved weeping fig, likely Ficus microcarpa, kept at genus; largest fig of the stretch girth 2 m, height 20 m, 'over 200 years' from the community) and PPTV 2023-08-12 (fig tunnel over 100 years, community paddle boats only, about 1.5 h, book ahead for the tide, a little over an hour by car from Phuket). An ensemble seen from a boat: the boat trip is the one place to stand. Nominatim places the 'Saphan Phra - Khlong Sang Ne' road 320 m from the register pin. No Commons photo within 3 km. No individual named. Published on Hidde's word, 2026-11-03: 'de twee vetste bomen wel live zetten met de kanttekening dat we de gps nog moeten verifieren'. Single source plus caveat on the page; verify the pin with a reader's GPS or a dated photo."
+    }
+  ]
+}

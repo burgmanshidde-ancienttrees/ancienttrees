@@ -1,0 +1,67 @@
+{
+  "city": "Hvar",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Hvar's oldest tree grows in the courtyard of the Franciscan monastery, a short walk east of the main square along the quay. It is a horizontal-branched cypress, 300 to 350 years old by a 2000 scientific estimate, seven metres tall, its trunk forking into an umbrella. Tradition says the Italian painter Matteo Rosselli planted it while convalescing at the monastery; the same study notes there is no written proof. It has been protected since 1961.",
+  "meta_description": "Rosselli's cypress at Hvar's Franciscan monastery: 300 to 350 years by a 2000 study, an umbrella-shaped cypress with a painter's legend.",
+  "question_meta": "Hvar's oldest known tree is the cypress in the Franciscan monastery courtyard, 300 to 350 years old by a 2000 study.",
+  "question_answer": "Hvar's oldest known tree is the cypress in the courtyard of the Franciscan monastery, which a 2000 scientific study put at 300 to 350 years. Tour guides say 500 years, but no source supports that figure.",
+  "question_context": "The tree is known as Roselijev čempres, Rosselli's cypress, after the tradition that the Italian painter Matteo Rosselli, who lived from 1578 to 1650, planted it while recovering from an illness at the monastery. A genetic study published in Šumarski list in 2000 records the tradition and says plainly that no written proof exists. The same study describes it as the horizontal-branched form of the Mediterranean cypress, seven metres tall with no upright leader, its trunk forking two ways into an umbrella with branches seven to eight metres long. Around 2000 its trunk measured 220 centimetres round at 1.5 metres, and its heart had rotted, leaving 10 to 15 centimetres of living wood. The genetics suggested an introduced tree. It was declared a protected natural rarity in 1961. Two younger cypresses in the same courtyard were planted in 1963. The monastery lies about five to eight minutes' walk east of the main square and charges for entry; we could not confirm current hours.",
+  "hero_tree_id": "hvr_001",
+  "oldest_tree_id": "hvr_001",
+  "faq": [
+    {
+      "q": "Can you see the cypress at Hvar's Franciscan monastery?",
+      "a": "Yes, inside the monastery's garden and museum, which charge for entry. Third-party guides list roughly 3 to 10 euro; we could not confirm current opening hours."
+    },
+    {
+      "q": "Did Matteo Rosselli plant the Hvar cypress?",
+      "a": "That is the tradition and the source of its local name, but the 2000 study of the tree says no written proof exists. The study dates it to 300 to 350 years."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hvr_001",
+      "name": "Rosselli's Cypress, Hvar Franciscan Monastery",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "roughly 300 to 350 years",
+      "age_min": 300,
+      "age_max": 350,
+      "age_basis": "source",
+      "girth_cm": 220,
+      "height_m": 7,
+      "location": {
+        "address": "Franjevački samostan, Šetalište put Križa 15, Hvar",
+        "latitude": 43.167991,
+        "longitude": 16.442955,
+        "neighbourhood": "Hvar town, east end of the harbour promenade"
+      },
+      "location_site": {
+        "name": "Franciscan monastery courtyard garden, Hvar",
+        "radius_m": 30
+      },
+      "story": "Tradition says an Italian painter planted this cypress while he recovered from an illness at the monastery. The painter is Matteo Rosselli, who lived from 1578 to 1650, and the tree is still called Roselijev čempres after him. A 2000 study of the tree states plainly that no written proof of the story exists.\n\nWhat the study does give is detail. It is the horizontal-branched form of the cypress, 300 to 350 years old by the researchers' estimate, probably planted when the monastery's top terrace was laid out in the 17th century. It stands seven metres high with no leading shoot. The trunk forks two ways into an umbrella, with branches seven to eight metres long, and the authors could not say whether wind or age took the top. Around 2000 the trunk measured 220 centimetres round at 1.5 metres. Its heart has rotted, leaving 10 to 15 centimetres of living wood to carry the whole tree, and a genetic analysis suggested it was brought from elsewhere.\n\nIt was declared a protected natural rarity in 1961. Tour guides tell of 500 years and a lightning strike, and neither claim has a source.\n\nTwo younger cypresses in the same courtyard were planted in 1963 by fra Venko Gugić, probably from its seed. The monastery is also known for a 17th-century Last Supper in its refectory. Both sit behind a paid entry whose current hours we could not confirm.",
+      "verified_sources": [
+        "https://www.sumari.hr/sumlist/pdf/200002790.pdf",
+        "https://cdn1-stg2019.expeditions.com/expedition-stories/daily-expedition-reports/hvar-croatia-SC-2022-09-22",
+        "https://nominatim.openstreetmap.org/ui/details.html?osmtype=R&osmid=2135584"
+      ],
+      "official_register": {
+        "name": "Bioportal, Registar zaštićenih područja, spomenik prirode ps.4402 HVAR - ČEMPRES (localId ps.4402)",
+        "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs"
+      },
+      "access": "Paid: inside the Franciscan monastery's garden and museum. Third-party guides list roughly 3 to 10 euro; current opening hours not confirmed.",
+      "transport": "On foot, about 5 to 8 minutes east of Hvar's main square along the quay past the Arsenal. Hvar town is about 1 to 2 hours by ferry or catamaran from Split.",
+      "how_to_recognise": "You can recognise it by its shape: no upright leader, the trunk forks two ways into a flat umbrella. It stands on the west side of the courtyard terrace; the two younger cypresses there date from 1963.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register ps.4402 point (43.167991,16.442955) lies inside the OSM monastery outline (bbox 43.16805-43.16843, 16.44284-16.44329). Not a GPS fix at the trunk, so approximate with location_site; the one old tree in the courtyard. Scientific paper (Sumarski list 5-6, 2000, Cvjetan, Kajba, Pavicic, Pejic) 'Genetska analiza starog hvarskog cempresa': Cupressus sempervirens var. horizontalis, age estimated 300-350 years, planted in the west part of the courtyard terrace, probably when the top terrace was laid out in the 17th century; known as 'Roselijev cempres' because tradition says Italian painter Matteo Rosselli (1578-1650) planted it while convalescing at the monastery, but the paper says no written proof exists. Height 7 m, no vertical leader, forks in two directions giving an umbrella habit (unclear if wind broke the top or age). Girth 200 cm at base, 220 cm at 1.5 m (measured c. 1999-2000, so slightly more now). Branches 7-8 m long, 120 cm girth; heart rotted, only 10-15 cm of living tissue left. Declared protected natural rarity by the Institute for Nature Protection on 21 Sept 1961, entered in the register as natural monument (register date in our data 1948-09-05, conflict; paper says 1961). RAPD analysis suggests an introduced genotype from elsewhere. Two younger cypresses in the same courtyard were planted in 1963 by fra Venko Gugic, probably seed offspring. Tourist and cruise sources say 300 to 500 years and claim lightning split it ('struck by lightning, spreading horizontally'): those are anecdotes, not sourced, flag. Alive: described in a Sept 2022 cruise walking-tour log as the monastery's 500-year-old cypress (age figure not trusted); 2020+ mention exists but no dated photo seen. Access hours unverified.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

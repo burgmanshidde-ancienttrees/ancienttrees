@@ -1,0 +1,300 @@
+{
+  "city": "Corfu",
+  "country": "Greece",
+  "kind": "island",
+  "status": "needs_curation",
+  "intro": "Corfu's remarkable trees split into a town walk and three drives. In the old town an oak in the Liston has been pruned close to its limit, and an ombu in the People's Garden was registered purely for its strange shape. In Mon Repos park, three Moreton Bay figs stand near the tallest Aleppo pine in the Greek Tree Registry. Further out, a plane at Gastouri has a stone wall built against its trunk, a healthy giant elm shades the square at Strinylas, and at Panachori in the south an olive is reported at 21.66 metres round its base.",
+  "meta_description": "Corfu's remarkable trees: an olive 21.66 metres round at Panachori, three giant figs in Mon Repos, a rare oak in the Liston and a big elm at Strinylas.",
+  "question_meta": "No tree on Corfu has a measured age. The Saint's Olive at Panachori has the biggest trunk, and the 2,700-year figure told about it has never been tested.",
+  "question_answer": "Nobody can say which tree on Corfu is the oldest, because none of these has a measured age. The strongest candidate by size is the Saint's Olive beside the church of Agios Spyridon Panachoritis at Panachori, in the south of the island, reported at 21.66 metres round its base. A local estimate repeated in the press puts it near 2,700 years, but no study has dated it, and the 2019 declaration that protects it gives no age.",
+  "question_context": "Olives are the hardest trees to date, and Corfu's records do not help. The Panachori olive was declared a Preserved Natural Monument in 2019. Fighters from Argyrades swore oaths beside it in the war of 1716, and plague dead were buried there in 1816. The 2,700-year figure rests on a method used on Cretan olives, and no study has dated this tree. The other trees here have no ages either. The elm at Strinylas is given as about 350 years by two travel guides and 100 by a guest listing, a gap too wide to split. The Gastouri plane, the Liston oak and the Mon Repos figs have measurements from the Greek Tree Registry and no ages at all, and for the figs girth would not help, because their aerial roots fuse into new trunks and the registry warns that their size says little about age. What can be compared is size, and there the olive leads by a distance. If you know the age of any tree on this page, tell us.",
+  "hero_tree_id": "cfu_004",
+  "oldest_tree_id": "cfu_001",
+  "faq": [
+    {
+      "q": "Can you see Corfu's old trees without a car?",
+      "a": "Partly. The Liston oak, the ombu in the People's Garden and the trees in Mon Repos park are all in or near Corfu town, and Mon Repos is about 35 to 40 minutes on foot from the Spianada. Gastouri is about 10 km south, with a local bus towards the Achilleion. Strinylas, on the slopes of Mount Pantokrator, and Panachori, about 20 km south, are much easier by car."
+    },
+    {
+      "q": "Is the Liston oak in good health?",
+      "a": "No. When the Greek Tree Registry recorded it in October 2024 it had been pruned repeatedly by the municipality, its regrowth was weak, and the branches on the north and west sides were drying out. It was alive and declining."
+    },
+    {
+      "q": "Why is the Gastouri plane's girth given two ways?",
+      "a": "A stone wall has been built against the trunk. The registry measures at the top of that wall, 12.78 metres, because it is a point that can be found again. The free trunk at chest height measures 7.70 metres."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cfu_001",
+      "name": "The Saint's Olive, Panachori",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "not documented",
+      "girth_cm": 2166,
+      "location": {
+        "address": "Church of Agios Spyridon Panachoritis, Panachori, Argyrades, South Corfu",
+        "latitude": 39.43643,
+        "longitude": 19.97406,
+        "neighbourhood": "Panachori, Argyrades"
+      },
+      "location_site": {
+        "name": "Church of Agios Spyridon Panachoritis",
+        "radius_m": 50
+      },
+      "story": "Around its base this olive measures 21.66 metres, and the press coverage of its protection called it possibly the largest olive trunk in Greece. Nobody has tested that claim against the rest of the country. The number alone is reason enough to drive south.\n\nIn Panachori they call it Elia t' Agiou, the Saint's olive, after the church of Agios Spyridon Panachoritis on whose land it grows. It is three trees in one. The root base is wild olive, a grafted mother plant known locally as liastro grows from that, and the fruiting wood is lianolia, a Corfiot variety. Its oil has been sent to the University of Athens for analysis.\n\nThe tree runs through the village's history. During the Turkish-Venetian war of 1716, fighters from Argyrades swore their oaths beside it. After the plague of 1816, the dead were buried here. In 2019 the regional administration declared the tree a Preserved Natural Monument in the Government Gazette.\n\nIts age is the open question. A local estimate repeated in the press puts it near 2,700 years, using a method developed for Cretan olives, but no study has dated this tree. If you know more, tell us.\n\nTwo practical notes. The pin marks the church ground rather than the trunk, and we know of no rule about visiting, so treat it as the parish's garden. The latest record of the tree is the 2019 declaration, which makes a recent photograph from you more useful than usual.",
+      "verified_sources": [
+        "https://corfupress.com/2019/ειδησεισ/ελευθερο/koinonia/διατηρητέο-μνημείο-της-φύσης-ανακηρύ"
+      ],
+      "official_register": {
+        "name": "Preserved Natural Monument, Decentralised Administration of Peloponnese, Western Greece and Ionian, Government Gazette (FEK) B 3872/2019",
+        "url": "https://corfupress.com/2019/ειδησεισ/ελευθερο/koinonia/διατηρητέο-μνημείο-της-φύσης-ανακηρύ"
+      },
+      "access": "Stands on the land of the parish church of Agios Spyridon Panachoritis; no published opening hours or entry rule found. A church ground in a village; treat as open to walk up to, say so unconfirmed.",
+      "transport": "Panachori is a village in the Argyrades parish, about 20 km south of Corfu town; bus (KTEL) towards Argyrades, roughly 45 minutes (not verified timetable); car easier.",
+      "how_to_recognise": "You can recognise it by its trunk, reported at 21.66 metres round at the base. It stands on the land of the church of Agios Spyridon Panachoritis in the village of Panachori.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cfu_002",
+      "name": "The Plane at Empress Elisabeth's Spring, Gastouri",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "not documented",
+      "girth_cm": 1278,
+      "height_m": 12.17,
+      "location": {
+        "address": "Spring of Empress Elisabeth, about 400 m south of the Gastouri to Achilleio road, Gastouri, Corfu",
+        "latitude": 39.557792,
+        "longitude": 19.899198,
+        "neighbourhood": "Gastouri"
+      },
+      "story": "The tape that gives this plane 12.78 metres runs around stone as well as wood. Someone built a wall against the trunk, and the Greek Tree Registry measures at the top of that wall because it is a point anyone can find again. The free trunk at chest height is 7.70 metres round, which is still a serious tree by any standard.\n\nIt stands at a village spring in Gastouri, about 400 metres off the road to the Achilleion, the palace Empress Elisabeth of Austria built on the hill and finished in 1891. The spring carries her name. One travel guide says it was first called the Platanos fountain, after these planes, and that villagers renamed it for her with a marble inscription. Only that one source tells the story.\n\nFor all its bulk the tree is only 12.17 metres tall, and it is not in perfect health. When the registry recorded it in October 2024, some of the upper branches had died back, though the tree was alive. A second plane grows a few metres away, slimmer at 6.57 metres round but taller at 14.47 metres. It lost a large limb to the saw in 2023.\n\nThe two make one stop. Stand at the spring and you have both trunks in front of you, with the wall telling you which is which.\n\nNo source gives an age for either tree, and the measurements cannot settle it. If you know how old they are, tell us.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/94/",
+        "https://filoiparkon.org/en/greek-tree-registry/95/",
+        "https://www.allovergreece.com/Museum/Descr/131/en"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 94)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/94/"
+      },
+      "access": "Stands beside a village spring in an open village square (registry land type: square, access: accessible). No entry fee or hours published; treat as open, say unconfirmed.",
+      "transport": "Gastouri is about 10 km south of Corfu town; local bus towards Achilleion/Gastouri, roughly 25 to 30 minutes (not verified timetable); the spring is a short walk from the road.",
+      "how_to_recognise": "You can recognise it by the stone wall built against the base of its trunk. It stands beside the spring named for Empress Elisabeth; a slimmer, taller plane grows a few metres away.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cfu_003",
+      "name": "The Liston Oak, Corfu Town",
+      "species": "Pedunculate Oak (Quercus robur subsp. pedunculiflora)",
+      "age_estimate": "not documented",
+      "girth_cm": 410,
+      "height_m": 17.25,
+      "location": {
+        "address": "The Liston, Corfu old town",
+        "latitude": 39.624094,
+        "longitude": 19.923947,
+        "neighbourhood": "Old Town, Spianada"
+      },
+      "story": "This oak in the middle of Corfu's old town belongs to a kind that once formed wide lowland forests across Macedonia and Thrace. Little of those forests survives.\n\nIt is a hairy pedunculate oak, a subspecies of the common European oak that now grows only in a few scattered places in central and northern Greece and on two islands, Corfu and Euboea. Finding one in the pedestrian heart of the town, by the arcades of the Liston at the edge of the Spianada, is the surprise.\n\nIt is not a giant. The Greek Tree Registry measured it in October 2024 at 4.10 metres round and 17.25 metres tall. What the registry wrote about its health matters more. The municipality has pruned it again and again, most recently probably in 2021. The regrowth has been weak, and the branches on its north and west sides are drying out. It was alive at that visit, and it was declining.\n\nSo look at it as what it is. This is a city tree living on what the saws left it, a rare oak in a place built for people rather than trees. A heavy cut or a fall in the next few years would not be a shock. If you find it changed or gone, tell us and we will update this page.\n\nNo source gives its age. If you know when it was planted, we would like to hear it.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/92/"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 92)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/92/"
+      },
+      "access": "Public square beside the Liston arcade in the centre of Corfu town; always reachable on foot (registry: square, accessible).",
+      "transport": "In the centre of Corfu old town, at the edge of the Spianada; walk from anywhere in town, city buses stop at the Spianada.",
+      "how_to_recognise": "You can recognise it by its thinning crown, with drying branches on the north and west sides after years of pruning. It stands in the Liston at the edge of the Spianada, in the old town's pedestrian zone.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cfu_004",
+      "name": "The Moreton Bay Figs of Mon Repos",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not documented",
+      "girth_cm": 1136,
+      "location": {
+        "address": "Mon Repos park, Garitsa, Corfu town",
+        "latitude": 39.602484,
+        "longitude": 19.925442,
+        "neighbourhood": "Garitsa, Mon Repos"
+      },
+      "story": "The top of the biggest of these three figs cannot be seen from the ground, so the Greek Tree Registry left its height blank.\n\nWhat it could measure was the trunk, 11.36 metres round. Two more figs stand within about 40 metres, 10.60 and 8.96 metres round, 22.89 and 26.26 metres tall. Three trunks like that in one corner of a park on a Greek island are a strange sight, because the species comes from eastern Australia.\n\nThe girths need a footnote. A Moreton Bay fig lets down aerial roots from its branches. Where they reach the soil they thicken into new trunks and fuse with the original, so the measured mass is several stems grown into one. That is also why the registry warns that girth is no guide to age in this species. A fat fig is not necessarily an old one.\n\nNo source gives an age for any of the three. If you know when they were planted at Mon Repos, tell us.\n\nThe figs stand in Mon Repos park in Garitsa, south of the old town, a walk of about 35 to 40 minutes from the Spianada. The tree this page is pinned to is the widest and the southernmost of the group, and the other two are close enough to take in on the same visit. Two more of the park's tall trees, an Aleppo pine and a Norfolk Island pine, stand further north.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/105/",
+        "https://filoiparkon.org/en/greek-tree-registry/103/",
+        "https://filoiparkon.org/en/greek-tree-registry/104/"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 105)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/105/"
+      },
+      "access": "Mon Repos park is a public park in Corfu town; the registry gives access as open roughly sunrise to sunset (opening hours apply, not checked against a current notice).",
+      "transport": "Mon Repos park, Garitsa, about 2.5 to 3 km south of the old town; walk about 35 to 40 minutes from the Spianada or a short city bus or taxi ride (not verified timetable).",
+      "how_to_recognise": "You can recognise it by its trunk, 11.36 metres round, the widest of three huge figs within about 40 metres of each other. It is the southernmost of the three, in Mon Repos park.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cfu_005",
+      "name": "The Tall Aleppo Pine of Mon Repos",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "not documented",
+      "girth_cm": 408,
+      "height_m": 31.54,
+      "location": {
+        "address": "Mon Repos park, Garitsa, Corfu town",
+        "latitude": 39.607539,
+        "longitude": 19.923797,
+        "neighbourhood": "Garitsa, Mon Repos"
+      },
+      "story": "No Aleppo pine in the Greek Tree Registry stands taller than this one. When the registry measured it in September 2022, it reached 31.54 metres, on a trunk 4.08 metres round.\n\nThat is the whole claim, and it is a good one. The record here is height, not age or bulk. This is a tall tree rather than an ancient monument, and the right way to see it is as one stop on a walk through Mon Repos, the park in Garitsa south of Corfu's old town.\n\nIt stands in the northern part of the park, roughly half a kilometre north of the three giant Moreton Bay figs and under 200 metres from a Norfolk Island pine that is nearly as tall at 30.77 metres. Australian figs, a pine from a Pacific island and the tallest of Greece's registered Aleppo pines, all in the same grounds, make a better walk than any one of them alone.\n\nTwo honest caveats. The measurement dates from 2022, and the registry says nothing about the tree's health, so we cannot tell you how it looks today. And no source gives its age. If you have walked past it recently, or know when it was planted, tell us.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/14/"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 14)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/14/"
+      },
+      "access": "Mon Repos park is a public park in Corfu town; the registry gives access as open roughly sunrise to sunset (opening hours apply, not checked against a current notice).",
+      "transport": "Mon Repos park, Garitsa, about 2.5 to 3 km south of the old town; walk about 35 to 40 minutes from the Spianada or a short city bus or taxi ride (not verified timetable).",
+      "how_to_recognise": "You can recognise it by its height, 31.5 metres, taller than any other Aleppo pine in the Greek Tree Registry. It stands in the northern part of Mon Repos park, under 200 metres from the park's Norfolk Island pine.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cfu_006",
+      "name": "The Norfolk Island Pine of Mon Repos",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "not documented",
+      "girth_cm": 274,
+      "height_m": 30.77,
+      "location": {
+        "address": "Mon Repos park, Garitsa, Corfu town",
+        "latitude": 39.60636,
+        "longitude": 19.925394,
+        "neighbourhood": "Garitsa, Mon Repos"
+      },
+      "story": "Somewhere above 30 metres, this pine lost its head. The Greek Tree Registry's recorder thinks lightning probably destroyed the original top at some point, and the tree answered by growing three new leaders where one had been. Look up and you can count them.\n\nIt still stands 30.77 metres tall, measured in October 2024, on a trunk 2.74 metres round. That sounds big until you know where the species comes from. On Norfolk Island, a small island east of Australia, it can reach about 60 metres, so this one is roughly halfway to what the species manages at home. In Greece it has been planted as an ornamental on the islands and in the south.\n\nIt belongs to a walk rather than a visit of its own. The tree stands in Mon Repos park in Garitsa, south of Corfu's old town, under 200 metres from the tallest Aleppo pine in the registry and about 430 metres north of three giant Moreton Bay figs.\n\nNo source gives its age, and nothing in the record tells us when the lightning came. If you know either, tell us.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/97/"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 97)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/97/"
+      },
+      "access": "Mon Repos park is a public park in Corfu town; the registry gives access as open roughly sunrise to sunset (opening hours apply, not checked against a current notice).",
+      "transport": "Mon Repos park, Garitsa, about 2.5 to 3 km south of the old town; walk about 35 to 40 minutes from the Spianada or a short city bus or taxi ride (not verified timetable).",
+      "how_to_recognise": "You can recognise it by its crown, which carries three leaders where the original top was lost, probably to lightning. It stands in Mon Repos park, under 200 metres from the park's tall Aleppo pine.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cfu_007",
+      "name": "The Ombu of the People's Garden, Corfu Town",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "People's Garden (Kipos tou Laou), Corfu town",
+        "latitude": 39.625731,
+        "longitude": 19.925528,
+        "neighbourhood": "Old Town, Spianada"
+      },
+      "story": "The great trunk in Corfu's People's Garden is not true wood. The ombu comes from the pampas of South America and descends from herbaceous ancestors, so the bulk it builds, however large, is not timber in the way an oak's is.\n\nThat bulk is the reason it is on the map. The Greek Tree Registry did not enter it for size or age. It entered it for its shape, the kind of strange form that sets a child's imagination going. The registry recorded no girth and no height for it, which is unusual for an entry, and no source gives an age.\n\nIt stands in the People's Garden, Kipos tou Laou, beside the Spianada in the centre of Corfu town, a couple of hundred metres from the Liston and its oak. About 50 metres to the south grows a stone pine, 3.22 metres round and 20.36 metres tall, also in the registry and worth the extra steps. With the Liston oak, the three make a loop of a few minutes on foot.\n\nSo this is a curiosity rather than a record, and it should be judged as one. If you bring a tape measure, the girth would be welcome. If you know when the garden's ombu was planted, tell us that too.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/100/",
+        "https://filoiparkon.org/en/greek-tree-registry/98/"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 100)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/100/"
+      },
+      "access": "Public garden beside the Spianada, Corfu town (registry: public park, accessible); opening hours not published in the entry.",
+      "transport": "Next to the Spianada at the edge of Corfu old town; walk from anywhere in the centre.",
+      "how_to_recognise": "You can recognise it by its oddly shaped trunk, the reason it is in the registry at all. It stands in the People's Garden beside the Spianada, about 50 metres north of a 20-metre stone pine.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cfu_008",
+      "name": "The Elm of Strinylas",
+      "species": "Field Elm (Ulmus minor)",
+      "age_estimate": "not documented",
+      "girth_cm": 481,
+      "height_m": 21.68,
+      "location": {
+        "address": "Village square, Strinylas, Mount Pantokrator, North Corfu",
+        "latitude": 39.743784,
+        "longitude": 19.837452,
+        "neighbourhood": "Strinylas"
+      },
+      "story": "Dutch elm disease has killed most of Europe's big elms, and this one shades an entire village square in good health. The Greek Tree Registry recorded it in October 2024 with high vitality and called it one of the largest elms in Greece, 4.81 metres round and 21.68 metres tall.\n\nLook at the trunk before you look up. It carries a small garden of its own, polypody ferns and navelwort, a little succulent. Travel guides to the village describe the square as shaded by a gigantic elm, and for once the adjective fits.\n\nStrinylas sits on the slopes of Mount Pantokrator in the north of Corfu, 25 to 30 kilometres from Corfu town by road. A car is the realistic way up, since buses are sparse. The square is open ground, with no gate and no hours.\n\nHow old the elm is depends on who you ask. Two travel guides give about 350 years, with no basis stated, and a guest listing says 100. Neither figure is a measurement, and the gap is too wide to split, so we leave the age open. If you know the village's own account, or anything firmer, tell us.\n\nWhat is not in doubt is the size and the health. A big field elm standing in full vigour is now a rare sight anywhere in Europe.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/93/",
+        "https://greeka.com/ionian/corfu/villages/strinilas",
+        "https://allcorfu.com/strinilas.html"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 93)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/93/"
+      },
+      "access": "Stands in the open village square of Strinylas (registry: square, accessible); no entry or hours.",
+      "transport": "Strinylas sits on the slopes of Pantokrator, about 25 to 30 km north of Corfu town by road; a car is easier, bus service is sparse (not verified).",
+      "how_to_recognise": "You can recognise it by the ferns and navelwort growing on its trunk. It is the big elm that shades the village square of Strinylas, 21.7 metres tall.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

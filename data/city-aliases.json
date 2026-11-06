@@ -590,6 +590,15 @@
       "Skala",
       "Tömb"
     ],
+    "brac": [
+      "Brazza",
+      "Bračas",
+      "Brača",
+      "Pulau Brač",
+      "Brattia",
+      "Braza",
+      "Otok Brač"
+    ],
     "bracon": [
       "Arbois",
       "Arbosia"
@@ -1025,6 +1034,18 @@
       "Kordovo",
       "Kordowa",
       "Kòdou"
+    ],
+    "corfu": [
+      "Korfu",
+      "Corfou",
+      "Kérkyra",
+      "Krf",
+      "Kerkīra",
+      "Korfuzi",
+      "Corcyra",
+      "Insulo Korfu",
+      "Korfoe",
+      "Korfou"
     ],
     "cork": [
       "Korkas",
@@ -1931,6 +1952,15 @@
       "Parc d'État de Humboldt Redwoods",
       "Parque estadual de Humboldt Redwoods"
     ],
+    "hvar": [
+      "Lesina",
+      "Hvaras",
+      "Hvara",
+      "Hvari",
+      "Pulau Hvar",
+      "Pharia",
+      "Otok Hvar"
+    ],
     "ibigawa": [
       "Ibigava",
       "Ibigawa-chō"
@@ -2101,6 +2131,18 @@
     "kawazu": [
       "Kawazu Chō"
     ],
+    "kefalonia": [
+      "Céphalonie",
+      "Cefalonia",
+      "Kefalinia",
+      "Kefalonija",
+      "Kefalonya",
+      "Ceffalonia",
+      "Zefalonia",
+      "Qefalonia",
+      "Cephalonia",
+      "Cephallenia"
+    ],
     "key-west": [
       "Cayo Hueso",
       "Ki Vestas",
@@ -2256,6 +2298,9 @@
     ],
     "lafayette-louisiana": [
       "Lafajetas"
+    ],
+    "lampang": [
+      "Lampangas"
     ],
     "laren-gelderland": [
       "Laren",
@@ -3105,6 +3150,13 @@
     "oostkapelle": [
       "Oôskappel"
     ],
+    "orebic": [
+      "Sabbioncello",
+      "Gmina Orebić",
+      "Comuna Orebić",
+      "Sabium",
+      "Sabionsell"
+    ],
     "orlando": [
       "Orlando i Florida",
       "Orlandas",
@@ -3253,6 +3305,15 @@
       "Parme",
       "Parm",
       "Parmo"
+    ],
+    "paros": [
+      "Paro",
+      "Par",
+      "Párosz",
+      "Berre",
+      "Para",
+      "Nosy Paros",
+      "Nísos Páros"
     ],
     "passo-manghen": [
       "Manghenpas",
@@ -3426,6 +3487,12 @@
     "przybudki": [
       "Pžibudkai"
     ],
+    "pula": [
+      "Pola",
+      "Pulj",
+      "Pietas Iulia",
+      "Pul"
+    ],
     "quebec-city": [
       "Québec",
       "Ciutat de Quebec",
@@ -3437,6 +3504,13 @@
       "Kebeku",
       "Quebecstad",
       "Kota Quebec"
+    ],
+    "rab": [
+      "Arbe",
+      "Raba",
+      "Pulau Rab",
+      "Arba",
+      "Otok Rab"
     ],
     "radomsko": [
       "Radomskas"
@@ -4742,6 +4816,13 @@
       "Saanstêd",
       "Zaenstad"
     ],
+    "zadar": [
+      "Zara",
+      "Zadaras",
+      "Zadara",
+      "Iader",
+      "Chadra"
+    ],
     "zaragoza": [
       "Saragossa",
       "Saragosse",
@@ -4882,6 +4963,7 @@
     "bosaca": "Bošáca",
     "boston": "Boston",
     "boulder": "Boulder",
+    "brac": "Brač",
     "bracon": "Arbois",
     "braga": "Braga",
     "bratislava": "Bratislava",
@@ -4915,6 +4997,7 @@
     "cannock-chase": "Cannock Chase",
     "canterbury": "Canterbury",
     "capeni": "Baraolt",
+    "cara": "Čara",
     "cardiff": "Cardiff",
     "caserta": "Caserta",
     "castellammare-di-stabia": "Castellammare di Stabia",
@@ -4953,6 +5036,7 @@
     "coppell": "Coppell, Texas",
     "coppenbrugge": "Coppenbrügge",
     "cordoba": "Córdoba, Spain",
+    "corfu": "Corfu",
     "cork": "Cork (city)",
     "coromandel-forest-park": "Coromandel Forest Park",
     "craigends": "Craigends",
@@ -5108,6 +5192,7 @@
     "hradek-u-susice": "Hrádek (Klatovy District)",
     "hronsek": "Hronsek",
     "humboldt-redwoods-state-park": "Humboldt Redwoods State Park",
+    "hvar": "Hvar",
     "ibigawa": "Ibigawa",
     "ibiza": "Ibiza",
     "ichinohe": "Ichinohe, Iwate",
@@ -5145,6 +5230,7 @@
     "kaunas": "Kaunas",
     "kawatana": "Kawatana-Onsen Station",
     "kawazu": "Kawazu, Shizuoka",
+    "kefalonia": "Cephalonia",
     "kemble": "Kemble, Gloucestershire",
     "key-west": "Key West",
     "killarney": "Killarney",
@@ -5175,6 +5261,7 @@
     "la-crosse": "La Crosse, Wisconsin",
     "la-crosse-florida": "LaCrosse, Florida",
     "lafayette-louisiana": "Lafayette, Louisiana",
+    "lampang": "Lampang",
     "lanercost": "Lanercost",
     "laren-gelderland": "Laren, Gelderland",
     "las-vegas": "Las Vegas",
@@ -5216,6 +5303,7 @@
     "lue": "Luë",
     "luis-correia": "Luís Correia",
     "lulin": "Lulin",
+    "lun": "Lun, Croatia",
     "luxembourg-city": "Luxembourg City",
     "lyon": "Lyon",
     "lytchett-matravers": "Lytchett Matravers",
@@ -5326,6 +5414,7 @@
     "omishima": "Ōmishima Island",
     "ondategi": "Ondategi",
     "oostkapelle": "Oostkapelle",
+    "orebic": "Orebić",
     "orlando": "Orlando, Florida",
     "oroville": "Oroville, California",
     "osaka": "Osaka",
@@ -5349,6 +5438,7 @@
     "pamplona": "Pamplona",
     "paris": "Paris",
     "parma": "Parma",
+    "paros": "Paros",
     "parry-kauri-park": "Warkworth & District Museum",
     "passo-manghen": "Manghen Pass",
     "pelham": "Pelham, Ontario",
@@ -5383,7 +5473,9 @@
     "priekule": "Priekulė, Lithuania",
     "princeton-new-jersey": "Princeton, New Jersey",
     "przybudki": "Przybudki",
+    "pula": "Pula",
     "quebec-city": "Quebec City",
+    "rab": "Rab (island)",
     "radomsko": "Radomsko",
     "rambynas": "Rambynas",
     "ramsau-am-dachstein": "Ramsau am Dachstein",
@@ -5618,6 +5710,7 @@
     "ypres": "Ypres",
     "yvignac-la-tour": "Yvignac-la-Tour",
     "zaanstad": "Zaanstad",
+    "zadar": "Zadar",
     "zaragoza": "Zaragoza",
     "zehdenick": "Zehdenick",
     "zilina": "Žilina",
@@ -5647,6 +5740,7 @@
     "broadwindsor": "Broadwindsor",
     "calvos": "Calvos e Frades",
     "canicosa-de-la-sierra": "Canicosa de la Sierra",
+    "cara": "Čara",
     "chadds-ford": "Chadds Ford, Pennsylvania",
     "chiapa-de-corzo": "Chiapa de Corzo",
     "chikubushima": "Chikubushima",
@@ -5711,6 +5805,7 @@
     "lozorno": "Lozorno",
     "lue": "Luë",
     "luis-correia": "Luís Correia",
+    "lun": "Lun, Croatia",
     "lytchett-matravers": "Lytchett Matravers",
     "machov": "Machov",
     "macon": "Macon, Belgium",

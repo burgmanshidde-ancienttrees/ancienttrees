@@ -22,7 +22,7 @@
     },
     {
       "q": "Are Split's ancient trees free to visit?",
-      "a": "Yes, three of the four stand on a public promenade or in a public garden with no charge. The fourth, the Hajdukova Murva, stands on a publicly used sports ground and is viewable from the street."
+      "a": "Yes, three of the city's trees stand on a public promenade or in a public garden with no charge, and the bald cypress in Solin is free to see along the Jadro river. The fourth, the Hajdukova Murva, stands on a publicly used sports ground and is viewable from the street."
     }
   ],
   "trees": [
@@ -168,6 +168,51 @@
         "kind": "fruit"
       },
       "how_to_recognise": "You are looking for a black walnut among palms, planes and pines, which is what makes it odd here. It stands in Djardin without a plaque; its rarity is on a municipal list rather than on a sign."
+    },
+    {
+      "id": "spl_005",
+      "name": "The Bald Cypress of Solin",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "about 90 years",
+      "age_min": 80,
+      "age_max": 100,
+      "age_basis": "source",
+      "height_m": 25,
+      "location": {
+        "address": "Beside the Jadro river, Solin",
+        "latitude": 43.533632,
+        "longitude": 16.485647,
+        "neighbourhood": "Solin, Jadro river"
+      },
+      "story": "This tree's relatives grow in the swamps around the Gulf of Mexico. This one grows on the bank of a Dalmatian river. The bald cypress by the Jadro in Solin is, in the tourist board's words, a very rare specimen, and in 1996 Croatia made it a natural monument.\n\nIt is not old by the standards of this map. The Solin tourist board estimates it at about 90 years, which makes it a planting of roughly the 1930s, and gives its height as 25 metres. Who planted a North American swamp tree here, and why, is not recorded anywhere we found. Read it as what it is, a tall and unusual exotic, not an ancient one.\n\nIts address is old even if the tree is not. The Jadro fed the aqueduct that supplied Diocletian's palace in Split, and the riverbank around the cypress has been renovated as the Jadro excursion park, with a themed walking trail, Izvor života, the source of life, running through it.\n\nBald cypress is a conifer that loses its needles. In October and November they turn copper red, and then the whole tree drops them and stands bare through the winter.\n\nOur pin is the register's point by the river, and a recent sighting was logged about 30 metres away, so the exact spot may be off by that much.",
+      "verified_sources": [
+        "https://solin-info.com/en/znamenitosti/solin-danas/mocvarni-cempres",
+        "https://www.inaturalist.org/observations/339608475"
+      ],
+      "official_register": {
+        "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4724, protected 1996-04-04) (localId ps.4724, HR.MZOE.ZP)",
+        "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326"
+      },
+      "access": "Free to see along the Jadro river near the Jadro excursion park; no exact footpath to the tree is published.",
+      "transport": "Day trip from Split: Solin is about 9 km away by city bus, roughly 20 to 30 minutes (times not confirmed); the tree is by the Jadro river.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when the soft needles turn copper red before the tree drops them"
+      },
+      "how_to_recognise": "You can recognise it by its height, about 25 metres, and in winter by its bare branches, since this conifer drops its needles. It stands on the bank of the Jadro river in Solin.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "REGISTER: Bioportal ps.4724 'SOLIN - MOČVARNI ČEMPRES', spomenik prirode, 1996-04-04, point 43.533632,16.485647. SECOND SOURCE: Solin Tourist Board site solin-info.com: 'a very rare specimen' of swamp cypress by the Jadro river, 'age estimated to be 90 years and 25 meters high', protected 1996 as a natural monument, species native to swamps of the Gulf of Mexico region. So not ancient: it is a planted exotic of roughly 1930s age and rare locally; the draw is height and rarity, say so honestly. ALIVE: iNaturalist casual observation 339608475 of Taxodium distichum, 2026-02-20, 30 m from the register point (address on the observation 'Solin - Širina 2'); lifecheck found it within range. 30 m is outside the 15 m GPS bar so the pin stays approximate; register point likely at the tree on the Jadro bank. No girth. A swamp cypress age figure of 1,600 years on a Serbian botany page refers to the species, not this tree; do not use.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

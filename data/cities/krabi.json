@@ -1,0 +1,65 @@
+{
+  "city": "Krabi",
+  "country": "Thailand",
+  "status": "needs_curation",
+  "intro": "Krabi's heritage tree is a rain tree in the grounds of Wat Thammawut Saranaram, once Wat Bo Phlo, at Ban Khlong Siat in Nuea Khlong district, outside Krabi town. Thailand's Ministry of Culture listed it in 2018 and measured a trunk 8.12 metres round and about 25 metres tall. The abbot says it came up by itself before the temple was founded, more than about 200 years ago. We have not yet confirmed the tree's exact spot, so treat the pin as a pointer.",
+  "meta_description": "Krabi's heritage rain tree at Wat Thammawut Saranaram, Nuea Khlong: 8.12 metres round and more than about 200 years old by the abbot's account.",
+  "question_meta": "Krabi's oldest listed tree is the rain tree of Wat Thammawut Saranaram in Nuea Khlong, more than about 200 years old.",
+  "question_answer": "The oldest tree Thailand's heritage register lists in Krabi is the rain tree of Wat Thammawut Saranaram, in Nuea Khlong district. The abbot puts it at more than about 200 years, reasoning from the history of the temple, which the tree is said to be older than. That is an estimate, not a count of rings.",
+  "question_context": "The Ministry of Culture listed the tree in 2018 as a heritage tree of the land, from the abbot's account. He told the ministry that the tree grew up by itself and was already standing before the temple was founded, so its year is unknown. The temple, once called Wat Bo Phlo, is counted locally as the second temple founded in Krabi province, and the register reasons from that to an age of more than about 200 years. It measured a trunk 8.12 metres round and a height of about 25 metres, and notes that the present crown grew out again from the original trunk. The temple stands at Ban Khlong Siat in Pakasai subdistrict, Nuea Khlong district, outside Krabi town. We have not been able to confirm exactly where: the pin on our map is the register's own point, on the main road in Nuea Khlong, and may be a few kilometres off. Ask locally for Wat Thammawut Saranaram or for Wat Bo Phlo. Entry to the temple grounds is free; it is a working temple, so dress as for any wat.",
+  "hero_tree_id": "kbi_001",
+  "oldest_tree_id": "kbi_001",
+  "faq": [
+    {
+      "q": "Where is Krabi's heritage rain tree?",
+      "a": "In the grounds of Wat Thammawut Saranaram, once called Wat Bo Phlo, at Ban Khlong Siat in Pakasai subdistrict, Nuea Khlong district. Our pin is the register's point and has not been checked on the ground, so ask locally for the temple."
+    },
+    {
+      "q": "How big is the rain tree of Wat Thammawut Saranaram?",
+      "a": "Thailand's heritage tree register measured a trunk 8.12 metres round and a height of about 25 metres when it listed the tree in 2018."
+    },
+    {
+      "q": "Can you visit it for free?",
+      "a": "Yes. It stands in the grounds of a working temple with no entry charge. Dress modestly, as at any Thai temple."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kbi_001",
+      "name": "Rain tree of Wat Thammawut Saranaram, Nuea Khlong",
+      "species": "Rain Tree (Samanea saman)",
+      "age_estimate": "more than about 200 years, by the abbot's account",
+      "age_min": 200,
+      "age_basis": "source",
+      "girth_cm": 812,
+      "height_m": 25,
+      "location": {
+        "address": "Wat Thammawut Saranaram (formerly Wat Bo Phlo), Ban Khlong Siat, Pakasai, Nuea Khlong, Krabi",
+        "latitude": 8.054211,
+        "longitude": 99.027392,
+        "neighbourhood": "Pakasai, Nuea Khlong"
+      },
+      "story": "Nobody planted this rain tree. The abbot of Wat Thammawut Saranaram told Thailand's Ministry of Culture that it came up by itself and was already growing before the temple was founded, so nobody knows the year.\n\nThe temple was once called Wat Bo Phlo, and the abbot counts it as the second temple in Krabi province. Reasoning from that history, the register puts the tree at more than about 200 years. It listed the tree in 2018 as a heritage tree of the land and measured a trunk 8.12 metres round and about 25 metres tall. The abbot's account adds that today's crown grew out again from the original trunk.\n\nA rain tree, Samanea saman, is a shade tree from tropical America with a broad, low dome of a crown.\n\nWe have not yet confirmed exactly where it stands. The temple is at Ban Khlong Siat in Pakasai subdistrict, Nuea Khlong, and the pin on our map is the register's own point, which may lie some way off. Ask for Wat Thammawut Saranaram, or its old name, Wat Bo Phlo. It is a working temple, so dress as you would for any wat. If you find the tree, send us a photograph from beside it, so the next visitor can walk straight there.",
+      "verified_sources": [
+        "Ministry of Culture Rukkha Moradok khong Phaendin 2018 list, register id 2018-38 (data/registers/thailand-rukkha.json, CC BY; the abbot's account)",
+        "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9/resource/badf85dc-71f2-4d8e-bd3a-5415e0730c0e/download/tree2.xlsx"
+      ],
+      "official_register": {
+        "name": "Ministry of Culture, Department of Cultural Promotion: Rukkha Moradok khong Phaendin (heritage trees of the land), 2018, no. 38",
+        "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+      },
+      "access": "Temple grounds, free; a working temple, so dress and behave as at any wat. Location not verified: the pin is the register's point, which falls on the Phetkasem road in Nuea Khlong, while the temple stands at Ban Khlong Siat in Pakasai subdistrict, possibly a few kilometres away. Ask locally for Wat Thammawut Saranaram or its old name, Wat Bo Phlo.",
+      "transport": "Nuea Khlong district, outside Krabi town. Route and public transport not verified.",
+      "how_to_recognise": "You can recognise it as the great rain tree in the grounds of Wat Thammawut Saranaram, a trunk about eight metres round, at Ban Khlong Siat in Pakasai.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register 2018-38 only (girth 8.12 m, about 25 m, 'about 200-plus years' reasoned by the abbot from the temple's history; grew back from the original trunk). No second source, no dated sighting, temple not on OSM (Nominatim: none for the current or old name) or the web. Register pin reverse-geocodes to the Phetkasem road in Nuea Khlong subdistrict, while the register text puts the temple in Pakasai subdistrict. Published on Hidde's word, 2026-11-03: 'de twee vetste bomen wel live zetten met de kanttekening dat we de gps nog moeten verifieren'. Single source plus caveat on the page; verify the pin with a reader's GPS or a dated photo."
+    }
+  ]
+}

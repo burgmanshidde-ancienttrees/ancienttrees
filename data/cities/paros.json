@@ -1,0 +1,60 @@
+{
+  "city": "Paros",
+  "country": "Greece",
+  "kind": "island",
+  "status": "needs_curation",
+  "intro": "Paros's remarkable tree is a cypress 35 metres tall in the Valley of the Butterflies at Petaloudes, about 7 kilometres from Parikia. The Greek Tree Registry counts it among the largest cypresses in Greece, and 22 metres away stands a stone pine it counts among the largest of its kind. The valley is a private reserve and a Natura 2000 site, home to the jersey tiger moth, open in summer for a small fee. The cypress can also be seen from the road.",
+  "meta_description": "Paros's giant cypress, 35 metres tall in the Valley of the Butterflies at Petaloudes, one of the largest in Greece, with a big stone pine beside it.",
+  "question_meta": "No tree on Paros has a known age. The biggest is the 35-metre cypress in the Valley of the Butterflies, one of the largest cypresses in Greece.",
+  "question_answer": "No source gives an age for any tree on Paros. The biggest is the Mediterranean cypress in the Valley of the Butterflies at Petaloudes, 35 metres tall and 4.45 metres round, which the Greek Tree Registry counts among the largest cypresses in Greece.",
+  "question_context": "The cypress grows on private farmland inside the Butterflies Nature Reserve, near the monastery of Agios Arsenios, in a valley of cypresses, ivy-covered planes and wild olives. Its neighbour, a stone pine 3.3 metres round and 22 metres tall, stands 22 metres away with ivy on its trunk. The registry recorded both in August 2026 and gave no age for either, and no other source does. The reserve opens from June to September, 10:00 to 18:00 according to the registry, and charges a small fee. Out of season the gate is shut, but the cypress is visible from the road. The valley is also part of the Natura 2000 network, as the site Paros: Petaloudes, and the reserve is home to the jersey tiger moth. The registry adds that butterflies live on the ivy of the stone pine. The reserve is about 7 kilometres from Parikia, the island's main port, by bus or car. If you know how old either tree is, tell us.",
+  "hero_tree_id": "pao_001",
+  "oldest_tree_id": "pao_001",
+  "faq": [
+    {
+      "q": "Can you see the Paros cypress outside the summer season?",
+      "a": "From the road, yes. The reserve itself opens June to September, 10:00 to 18:00 according to the Greek Tree Registry, and the stone pine beside the cypress can only be seen from inside."
+    },
+    {
+      "q": "How far is the Valley of the Butterflies from Parikia?",
+      "a": "About 7 kilometres by road, near the monastery of Agios Arsenios."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pao_001",
+      "name": "The Giant Cypress of the Valley of the Butterflies",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "not documented",
+      "girth_cm": 445,
+      "height_m": 35,
+      "location": {
+        "address": "Agios Arsenios - Petaloudes (Valley of the Butterflies), Paros, about 7 km from Parikia",
+        "latitude": 37.043863,
+        "longitude": 25.129495,
+        "neighbourhood": "Petaloudes"
+      },
+      "story": "The Greek Tree Registry counts this cypress among the largest in Greece, 35 metres tall on a trunk 4.45 metres round.\n\nIt grows in the Valley of the Butterflies at Petaloudes, about 7 kilometres from Parikia, inside a private nature reserve on farmland that also lies within a Natura 2000 site. The reserve is home to the jersey tiger, which is a moth, and the valley holds cypresses, ivy-covered planes and wild olives. The valley lies close to the monastery of Agios Arsenios.\n\nTwenty-two metres away stands the cypress's companion, a stone pine 3.3 metres round and 22 metres tall, which the registry also counts among the largest of its kind in Greece. Ivy climbs its trunk, and butterflies live on the ivy leaves. The two trees share one spot, so stand between them and you have both.\n\nThe reserve charges a small fee and, according to the registry, opens from June to September, 10:00 to 18:00. Outside those months the gate is shut, but the cypress can still be seen from the road. The pine cannot, so for both trees come in season.\n\nNo source gives an age for either tree. If you know more, tell us.",
+      "verified_sources": [
+        "https://filoiparkon.org/en/greek-tree-registry/200/",
+        "https://imagine.paros.gr/en/what-to-do/body/nature/616-the-valley-of-the-butterflies.html"
+      ],
+      "official_register": {
+        "name": "Greek Tree Registry, Friends of Hellenic National Parks (entry 200)",
+        "url": "https://filoiparkon.org/en/greek-tree-registry/200/"
+      },
+      "access": "Paid entry to the Butterflies Nature Reserve (small admission fee; registry: June to September, 10:00 to 18:00). Registry also says the cypress is visible from the road. Private reserve, so closed outside season.",
+      "transport": "About 7 km from Parikia (Paros main port) by road; bus or car, real timing to confirm.",
+      "how_to_recognise": "You can recognise it by its height, 35 metres, and you can see it from the road. It stands at Petaloudes, 22 metres from a big stone pine with ivy climbing its trunk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

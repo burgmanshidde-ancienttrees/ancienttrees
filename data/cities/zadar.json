@@ -1,0 +1,61 @@
+{
+  "city": "Zadar",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Zadar's remarkable tree is a drive away. The Green Oak of Islam Latinski, about 20 km north of the city beside the old Zagreb to Zadar road, keeps its thick green leaves until about the end of February. It is a hybrid oak of unknown origin whose parents botanists have debated for decades, and a 2018 DNA study sampled it. Croatia protected it in 1957; a 2009 blog puts it at about 250 years and calls it the old Wolf's Oak.",
+  "meta_description": "The Green Oak of Islam Latinski, 20 km north of Zadar: a hybrid oak green until February, protected since 1957, its parentage still debated.",
+  "question_meta": "Near Zadar, the Green Oak of Islam Latinski is a hybrid oak that stays green until about the end of February.",
+  "question_answer": "The best-known old tree near Zadar is the Green Oak, Zeleni hrast, in Islam Latinski, about 20 km north of the city. It is a single hybrid oak that keeps its leaves green until about the end of February, protected since 1957.",
+  "question_context": "The Green Oak is known to botanists as Quercus x viridis, a hybrid whose parents have been argued over. Earlier authors proposed Turkey oak crossed with holm oak, or Turkey oak crossed with cork oak. A 2018 study in the Croatian forestry journal Šumarski list ran DNA on this tree and others and did not support holm oak as a parent, which the authors read as favouring Turkey oak and cork oak, though they word that carefully. Croatia protected the tree in 1957. Its age is not measured. A 2009 blog reports about 250 years, says it was once called Wolf's Oak and thought magical, and describes it as a boundary marker with earlier oaks of the same kind on the same spot. The most recent evidence that it stands is the 2018 study, and our pin is the register's point beside the road, not a fix on the trunk. Islam Latinski is in Posedarje municipality, roughly 20 to 25 minutes from Zadar by car; we found no confirmed bus.",
+  "hero_tree_id": "zdr_001",
+  "oldest_tree_id": "zdr_001",
+  "faq": [
+    {
+      "q": "Why is it called the Green Oak?",
+      "a": "Because it keeps thick green leaves until about the end of February, which is where the name Zeleni hrast comes from."
+    },
+    {
+      "q": "How do you get to the Green Oak from Zadar?",
+      "a": "By car, about 20 km north on the old Zagreb to Zadar road to Islam Latinski, roughly 20 to 25 minutes. It is seen from beside the road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "zdr_001",
+      "name": "Zeleni hrast, the Green Oak of Islam Latinski",
+      "species": "Green Oak (Quercus x viridis)",
+      "age_estimate": "reported at about 250 years",
+      "age_min": 150,
+      "age_max": 250,
+      "age_basis": "source",
+      "location": {
+        "address": "Islam Latinski, Posedarje municipality, beside the main road from Zagreb to Zadar",
+        "latitude": 44.194772,
+        "longitude": 15.434915,
+        "neighbourhood": "Islam Latinski"
+      },
+      "story": "This oak keeps its thick green leaves until about the end of February, which is how it got its name, and botanists have argued for decades about what it actually is.\n\nThe Green Oak of Islam Latinski is a hybrid, a single famous tree of unknown origin. Its parents are the dispute. Earlier authors proposed Turkey oak crossed with holm oak, or Turkey oak crossed with cork oak, and Jedlowski argued for the second in 1955. A 2018 DNA study in the forestry journal Šumarski list sampled this tree and did not support holm oak as a parent, which the authors took as backing the Turkey oak and cork oak view. Even that paper words its conclusion carefully, so call the parentage debated, with one favoured answer.\n\nCroatia protected it in 1957. A 2009 blog adds the rest. It puts the tree at about 250 years, says it was once called Wolf's Oak and believed to be magical, that it marked the boundary of old territorial divisions, and that earlier oaks of the same kind stood on the same spot before it. That is one writer's account of local tradition, not a measurement.\n\nTwo honest warnings. The latest evidence that it still stands is that 2018 study, and we found nothing newer. And our pin is the register's point beside the old Zagreb to Zadar road, not a fix on the trunk. If you drive past, a photograph would settle both.",
+      "verified_sources": [
+        "https://secretcroatia.blog/2009/09/11/zeleni-hrast-in-islam-latinski-the-mysterious-green-oak-of-ravni-kotari/",
+        "https://hrcak.srce.hr/clanak/297846",
+        "https://zenodo.org/record/3828366"
+      ],
+      "official_register": {
+        "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4390, protected 1957-11-07) (localId ps.4390, HR.MZOE.ZP)",
+        "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326"
+      },
+      "access": "Seen from beside the old Zagreb to Zadar road in Islam Latinski. Whether the ground around it is public is not confirmed.",
+      "transport": "By car, about 20 km north of Zadar on the old Zagreb to Zadar road, roughly 20 to 25 minutes. No bus confirmed.",
+      "how_to_recognise": "You can recognise it in winter, when it still holds thick green leaves until about the end of February. It stands beside the old Zagreb to Zadar road in Islam Latinski.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "WHAT IT IS: the register name 'ZELENI HRAST' (protected 1957-11-07, the oldest entry of the set) refers to a single famous individual oak known as the Green Oak, Quercus x viridis Trinajstić, named for keeping thick green leaves until the end of February. Sources: (1) Šumarski list 142(5-6), 2018, Temunović, Franjić, Vessella and Simeone, 'Resolving the taxonomic status of the mysterious Green oak (Quercus x viridis Trinajstić) from Croatia based on phylogenetic analysis' (DOI 10.31298/sl.142.5-6.5; abstract read via search, hrcak PDF blocked with HTTP 418 for automated fetch): a well-known individual oak of unknown origin near Zadar; earlier authors disagreed on parentage (cerris x ilex vs cerris x suber; Jedlowski 1955 proposed cerris x suber); the 16-individual DNA study did not support Q. ilex as a parent and pointed to Q. crenata, taken as confirming the cerris x suber hypothesis. The study sampled this tree, so it stood in 2018 or earlier. (2) Secret Dalmatia blog, 2009-09-11: unique hybrid of Q. cerris and Q. suber, about 250 years old, once called Wolf's Oak, believed magical, a boundary marker of old territorial divisions (Venice and the Ottomans per a second Croatian page seen only in a search summary), earlier oaks of the same species stood on the same spot. The 250-year age comes from the blog alone; keep it 'reported', do not sharpen. (3) Register ps.4390 with point 44.194772,15.434915 in Islam Latinski. PARENTAGE: not settled, the paper's own wording is hedged; write 'a hybrid whose parentage botanists have debated' and name cerris x suber only as the favoured view. ALIVE: lifecheck NONE, no 2020+ mention of the tree found (iNaturalist none within 150 m, no news). Last evidence is the 2018 paper. Flagged for alive; the paper's DNA sampling and register status are the only life evidence. PIN: register point only, no corroboration, so approximate. No girth or height from any source. Worth confirming from an aerial image before publish.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

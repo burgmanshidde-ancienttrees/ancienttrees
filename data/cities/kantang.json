@@ -1,0 +1,64 @@
+{
+  "city": "Kantang",
+  "country": "Thailand",
+  "status": "needs_curation",
+  "intro": "Kantang, a town south-west of Trang, keeps the spot where Thailand's first rubber tree was planted, by the Ministry of Culture's account in 1901. A roadside memorial with plaques stands beside a living rubber tree on Trangkhaphum Road at the entrance to the town. Visitors report the trunk has been cut back and regrown more than once, so this is the place where Thai rubber began rather than a tree from that year.",
+  "meta_description": "Thailand's first rubber tree in Kantang, Trang: a roadside memorial and living tree where rubber planting began around 1900, free to visit.",
+  "question_meta": "Kantang's best-known tree is Thailand's first rubber tree, planted around 1900 by the official account, on Trangkhaphum Road.",
+  "question_answer": "The tree Kantang is known for is Thailand's first rubber tree, on Trangkhaphum Road at the entrance to the town. Thailand's Ministry of Culture says the first seedling was planted here in 1901; a tourist guide says 1899. The trunk standing now may have regrown from the original, so its own age is unknown.",
+  "question_context": "The Ministry of Culture listed the tree as a heritage tree of the land in 2017. Its account says the governor of Trang, Phraya Ratsadanupradit, wanted rubber seedlings from Malaya and was refused, so an official, Phra Sathonsathanphitak, brought them from Indonesia and planted the first at his residence in Kantang in 1901. The governor then trained officials and spread planting through the province, which is why he is remembered as the father of Thai rubber. A tourist guide tells it differently, with seedlings from Malaya planted in 1899 by the governor himself. Both accounts put the first tree on this spot. The register measured a tree about 20 metres tall and two metres round, in the care of Kantang municipality. Visitors have reported that the trunk has been cut back and regrown more than once, so we give it no age. The memorial is a free roadside stop with plaques, open at any hour, at the entrance to Kantang, south-west of the city of Trang.",
+  "hero_tree_id": "ktg_001",
+  "oldest_tree_id": "ktg_001",
+  "faq": [
+    {
+      "q": "Is Thailand's first rubber tree still alive?",
+      "a": "A living rubber tree stands at the memorial, and the Ministry of Culture listed it in 2017. Visitors report the trunk has been cut back and regrown more than once, so it may have grown again from the original rather than being the 1901 trunk itself."
+    },
+    {
+      "q": "When was the first rubber tree planted in Thailand?",
+      "a": "The Ministry of Culture says 1901, from seedlings brought from Indonesia; a tourist guide says 1899, from Malaya. Both place it here in Kantang."
+    },
+    {
+      "q": "Does it cost anything to visit?",
+      "a": "No. It is a roadside memorial with plaques on Trangkhaphum Road, open at any hour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ktg_001",
+      "name": "The first rubber tree of Thailand, Kantang",
+      "species": "Para Rubber Tree (Hevea brasiliensis)",
+      "age_estimate": "planting site dates from 1899 to 1901",
+      "girth_cm": 200,
+      "height_m": 20,
+      "location": {
+        "address": "Trangkhaphum Road (ถนนตรังคภูมิ), roadside before the town of Kantang, Trang",
+        "latitude": 7.4096053,
+        "longitude": 99.5228351,
+        "neighbourhood": "Kantang, Trang"
+      },
+      "story": "Thailand's first rubber tree, by the official account, was planted at the edge of Kantang, and a rubber tree still grows on the spot.\n\nThe Ministry of Culture listed it in 2017 as a heritage tree of the land and tells the story this way. Phraya Ratsadanupradit, the governor of Trang, wanted rubber seedlings from Malaya and was refused. An official, Phra Sathonsathanphitak, brought them back from Indonesia instead and planted the first at his residence in Kantang in 1901. The governor then trained officials and spread planting through the province, and he is remembered as the father of Thai rubber. A tourist guide tells it differently, with seedlings from Malaya planted in 1899 by the governor himself. Both accounts put the first tree here.\n\nWhat you find now is a roadside memorial with plaques beside a living rubber tree, about 20 metres tall and two metres round by the register's 2017 measure. Visitors have reported that the trunk has been cut back and regrown more than once, so treat this as the place where it began rather than a trunk from 1901. We give it no age.\n\nIt stands on Trangkhaphum Road at the entrance to Kantang, south-west of the city of Trang, free to visit at any hour.",
+      "verified_sources": [
+        "Ministry of Culture Rukkha Moradok khong Phaendin 2017 list, register id 2017-58 (data/registers/thailand-rukkha.json, CC BY)",
+        "https://www.thaiholidayguide.com/attraction/the-first-rubber-tree-in-thailand/ (roadside marker and plaques in Kantang, free entry, planted 1899 by the governor Khaw Sim Bee; notes the tree has been cut and regrown more than once)",
+        "OpenStreetMap node 13271459613 natural=tree 'ยางพาราต้นแรกในไทย' on Trangkhaphum Road, within 5 m of the register coordinate"
+      ],
+      "official_register": {
+        "name": "Ministry of Culture, Department of Cultural Promotion: Rukkha Moradok khong Phaendin (heritage trees of the land), 2017, no. 58",
+        "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+      },
+      "access": "Free, open roadside memorial with plaques, no fee or gate (a tourist listing says open 24 hours). Cared for by Kantang municipality per the register.",
+      "transport": "Roadside at the entrance to Kantang town; a tourist guide says a short walk from Kantang railway station (not verified). Kantang is about 25 km south-west of Trang city (distance from general knowledge, not a source; train/songthaew not verified).",
+      "how_to_recognise": "You can recognise it by the roadside memorial with plaques beside the tree on Trangkhaphum Road, at the entrance to Kantang town.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Register 2017-58: 116 years, girth 2 m, height 20 m, in the care of Kantang municipality; history text says Phraya Ratsadanupradit Mahison Phakdi wanted rubber from Malaya but the British refused; Phra Sathonsathanphitak brought seedlings back from Indonesia and planted the first one at his residence in Kantang in B.E. 2444 (1901); the governor then trained officials and spread planting, hence honoured as father of Thai rubber. Sources disagree: the register says seedlings from Indonesia in 1901, the tourist guide says British Malaya in 1899 planted by the governor. Say both, flag. CAUTION on alive and original: the tourist guide reports visitors noting the trunk has been cut and regrown more than once, so it may be a regrown original or successor at the historic spot; the page should present it as the planting site and not claim a 125 year old trunk. Girth 2 m, 20 m height are register values (2017). A living rubber tree stands there now: OSM node (created recently, id in the 13.27 billion range, so 2025) names it. Pin: OSM tree node and register coordinate agree within about 5 m. Hevea trees are normally tapped for latex and live about 30 years in plantations, so a 2 m girth trunk of 116 years is unlikely to be a single unbroken stem, another reason to hedge. No Commons photo checked."
+    }
+  ]
+}

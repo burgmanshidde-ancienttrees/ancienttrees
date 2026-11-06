@@ -1,0 +1,67 @@
+{
+  "city": "Lampang",
+  "country": "Thailand",
+  "status": "needs_curation",
+  "intro": "Lampang's best-known tree stands inside Wat Phra That Lampang Luang, the walled hill temple about 18 km south-west of town. It is a khajao, the Indian elm that northern Thailand calls kao jao, listed by the Ministry of Culture as a national heritage tree and as the sacred tree paired with the city. Legend says it grew from a carrying pole pushed into the ground in the Buddha's time. The register is honest that the first tree rotted away and this clump regrew on its spot.",
+  "meta_description": "Lampang's heritage khajao at Wat Phra That Lampang Luang: a sacred Indian elm that legend says grew from a carrying pole in the Buddha's time.",
+  "question_meta": "Lampang's most famous old tree is the sacred khajao at Wat Phra That Lampang Luang, though its true age is unknown.",
+  "question_answer": "Lampang's best-known old tree is the khajao (Indian elm) inside Wat Phra That Lampang Luang, a national heritage tree on the Ministry of Culture's 2018 list. Its legend reaches back to the Buddha's time, but the register says the first tree rotted away and a new clump grew on the same spot, so no honest age can be given for the stems standing today.",
+  "question_context": "Thailand's Ministry of Culture began naming heritage trees of the land in 2017, and its 2018 list includes two khajao trees in Lampang under one entry. The one inside Wat Phra That Lampang Luang carries the older story: a Lua man brought honey, coconuts and bael fruit to the Buddha on a pole cut from a khajao, then planted the pole, which took root. People treated the tree as sacred and took pieces of its roots home as amulets. The register does not dress this up. It says the first tree dried and rotted until nothing was left, and that a new one sprouted at the same place as a large clump. So the age column's 'over 1,000 years' cannot honestly be read onto the stems a visitor sees now. The register's other khajao, in Ban Tha Thok in Lampang town, is the one villagers put at more than 1,000 years, but no second source has confirmed it yet. Until someone measures or dates either, Lampang's most famous old tree is famous for its story rather than for a proven age.",
+  "hero_tree_id": "lpg_001",
+  "oldest_tree_id": "lpg_001",
+  "faq": [
+    {
+      "q": "Where is the sacred khajao tree in Lampang?",
+      "a": "Inside the grounds of Wat Phra That Lampang Luang in Ko Kha district, about 18 km south-west of Lampang town. The Ministry of Culture's register places it at the temple but not at a spot inside the walls."
+    },
+    {
+      "q": "How old is the khajao at Wat Phra That Lampang Luang?",
+      "a": "Nobody knows. Its legend dates to the Buddha's time, but the register says the original tree rotted away and a new clump grew on the same spot."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The temple is free to enter, with donations welcome, and visitor guides give its hours as about 07:30 to 17:00 every day. Cover shoulders and knees."
+    },
+    {
+      "q": "What is a khajao tree?",
+      "a": "Khajao, or kao jao in northern Thai, is the Indian elm, Holoptelea integrifolia, a large deciduous tree of South and Southeast Asia."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lpg_001",
+      "name": "Khajao tree of Wat Phra That Lampang Luang",
+      "species": "Indian Elm (Holoptelea integrifolia)",
+      "age_estimate": "Unknown: the register says the first tree rotted away and this clump regrew on its spot",
+      "location": {
+        "address": "Wat Phra That Lampang Luang, Lampang Luang subdistrict, Ko Kha, Lampang",
+        "latitude": 18.217553,
+        "longitude": 99.388965,
+        "neighbourhood": "Ko Kha"
+      },
+      "story": "The tree at Wat Phra That Lampang Luang began, the story goes, as a carrying pole. In the time of the Buddha a Lua man shouldered a branch of khajao, the Indian elm that northern Thailand calls kao jao, with tubes of honey, coconuts and bael fruit hanging from it, and carried them here as offerings to the Buddha. When he had prayed he pushed the end of the pole into the ground, and before long it put out leaves and branches. People came to treat the tree as sacred and took pieces of its roots home to worship or to wear as amulets. Thailand's Ministry of Culture lists it among the country's heritage trees and calls it the sacred tree paired with the city of Lampang. Its entry is candid about time. The first tree dried out and rotted until nothing of it could be seen, and a new one sprouted on the same spot as a broad clump, so nobody can put an honest age on the stems standing now. The register describes two stems, one large and one small, rising apart from one base and meeting in a single crown; the smaller measured between 3.02 and 3.96 metres round and about 15 metres tall. The temple looks after it, and the exact spot inside its walls is not mapped yet, so if you find it, tell us where it stands.",
+      "verified_sources": [
+        "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9/resource/badf85dc-71f2-4d8e-bd3a-5415e0730c0e/download/tree2.xlsx",
+        "https://th.wikipedia.org/wiki/วัดพระธาตุลำปางหลวง",
+        "https://en.wikipedia.org/wiki/Wat_Phra_That_Lampang_Luang"
+      ],
+      "official_register": {
+        "name": "Ministry of Culture, Rukkha Moradok khong Phaendin (Heritage Trees) 2018",
+        "id": "2018-53",
+        "url": "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9/resource/badf85dc-71f2-4d8e-bd3a-5415e0730c0e/download/tree2.xlsx"
+      },
+      "access": "Inside the grounds of Wat Phra That Lampang Luang, a working temple: free to enter (donations welcome), open daily about 07:30 to 17:00 by two visitor guides. Dress modestly, shoulders and knees covered. The register places the tree at the temple but not at a spot inside it.",
+      "transport": "About 18 km south-west of Lampang town in Ko Kha district, roughly 25 minutes by car; a songthaew or taxi from town, no train station nearby.",
+      "how_to_recognise": "By the register, two stems of one Indian elm grow apart from a single base and join in one crown, inside the walled temple grounds.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "REGISTER ONLY, FLAGGED (verify pass 2026-11-02, corrected by the dispatching session the same day). Register 2018-53 (CC BY) Thai text, shared with 2018-52: khajao (kao jao), 'sacred tree paired with the city of Lampang'; two stems, large and small, separate at the base with crowns joined into one; small one girth 3.02 to 3.96 m, about 15 m tall (large one 'almost 35 m' girth and 60 m tall are implausible and not used). Legend: planted in the Buddha's time from a Lua man's khajao carrying pole (honey, coconut, bael) offered to the Buddha at Wat Phra That Lampang Luang; villagers took its roots to worship or wear as amulets. Register: the ORIGINAL tree dried and rotted away completely and a new tree sprouted at the same spot as a large clump. The 'over 1,000 years' in the register's age column belongs to the villagers' estimate for the Ban Tha Thok mother trees (2018-52), not to this regrowth, so no age is given here. Care of the tree: the temple. Thai Wikipedia on the temple (via a summarising tool, a pointer): a ruler had khajao planted at the relic site; a 1449 felling before the chedi was built; a tree-spirit legend. ALIVE: no dated observation found. Commons File:Lampang Luang 03.jpg, captioned 'kaChao tree' on English Wikipedia, is per its own Commons description the propped sacred bodhi tree, NOT this khajao: never use it for this tree. Species is our mapping from the Thai name ขะจาว; Holoptelea integrifolia is the standard match, no botanist source read. Pin is the register's temple coordinate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

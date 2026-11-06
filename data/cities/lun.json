@@ -1,0 +1,62 @@
+{
+  "city": "Lun",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Lun, at the northern tip of Pag, has some 24 hectares of olive groves protected as a botanical reserve since 1963, with dry-stone walls nearly two metres high between them. The oldest tree stands a metre or two from the old road at the entrance, where the marked path begins. Local experts put it at about 2,000 years from a trunk about four metres across; other local sources say more than 1,600. A newspaper caption nicknamed it Metuzalemka.",
+  "meta_description": "Lun's oldest olive on Pag, 1,600 to 2,000 years by local estimates, at the entrance to the olive gardens protected since 1963.",
+  "question_meta": "Lun's oldest olive is put at 1,600 to 2,000 years by local estimates and stands at the entrance to the Lun olive gardens.",
+  "question_answer": "The oldest olive at Lun, on Pag, is put at between 1,600 and 2,000 years by local estimates and stands beside the old road at the entrance to the olive gardens. The 2,000-year figure is arithmetic from a trunk about four metres across, not a measured date.",
+  "question_context": "The estimate of about 2,000 years comes from experts of the Lun olive cooperative and the Zagreb Faculty of Agronomy, quoted by the newspaper Novi list in 2021. They took a trunk about four metres across and a growth of about a millimetre of width a year. That is a rough method, and an old olive is often a hollow trunk of several stems, so other local sources stop at more than 1,600 years. The groves around the tree cover about 24 hectares on the northern tip of the island of Pag and were protected as a botanical reserve in 1963. Total Croatia News counts about 80,000 old olives there and around 1,500 ancient wild ones. Marked paths between high dry-stone walls let you walk the groves without a guide. An entrance fee in season has been reported, but we have not confirmed the price or hours. Our pin is approximate, at the entrance end of the groves where the oldest tree stands.",
+  "hero_tree_id": "lun_001",
+  "oldest_tree_id": "lun_001",
+  "faq": [
+    {
+      "q": "How old are the Lun olives?",
+      "a": "The oldest is put at between 1,600 and 2,000 years by local estimates, and Total Croatia News says many in the groves are believed to be over 1,500. None of these figures is a measured date."
+    },
+    {
+      "q": "Where is the oldest olive in Lun?",
+      "a": "A metre or two from the old road at the entrance to the Lun olive gardens, where the marked path into the groves begins."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lun_001",
+      "name": "Metuzalemka, the oldest olive of Lun",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "between 1,600 and 2,000 years by local estimates",
+      "age_min": 1000,
+      "age_max": 2000,
+      "age_basis": "source",
+      "girth_cm": 1257,
+      "location": {
+        "address": "Beside the old macadam road at the entrance to the Lun olive gardens, Lun, Pag",
+        "latitude": 44.65467,
+        "longitude": 14.77631,
+        "neighbourhood": "Lun olive gardens (Vrtovi lunjskih maslina), Lun"
+      },
+      "story": "The oldest olive in the groves of Lun stands a metre or two from the road, right where the marked path begins. A newspaper photo caption gave it a nickname, Metuzalemka, after Methuselah.\n\nHow old is it? Experts from the Lun olive cooperative and the Zagreb Faculty of Agronomy told the newspaper Novi list in 2021 that it is about 2,000 years old. Their working is simple. The trunk is about four metres across, and an olive like this widens by about a millimetre a year. That is arithmetic, not a measurement, and an old olive is often a hollow mass of several stems, which makes such sums generous. Other local sources say more than 1,600 years. Between 1,600 and 2,000 years, by local estimates, is as close as anyone gets. Four metres across works out to roughly twelve and a half metres round, an equally rough figure.\n\nBehind it lie some 24 hectares of olive grove on the northern tip of Pag, protected as a botanical reserve since 1963. Total Croatia News counts about 80,000 old olives there and around 1,500 ancient wild ones. Dry-stone walls nearly two metres high run between them, and the marked paths let you walk the groves without a guide.\n\nOur pin is approximate. It sits at the entrance end of the groves, where the oldest tree is said to stand, but nobody has fixed this trunk by GPS. A photograph with its location would settle it.",
+      "verified_sources": [
+        "https://www.novilist.hr/?p=572266",
+        "https://total-croatia-news.com/?p=196659",
+        "https://api.inaturalist.org/v1/observations/140818029 (olive observation, GPS accuracy 3 m, 2022-11-01, place Novalja; used only for the approximate pin)"
+      ],
+      "official_register": {
+        "name": "Croatia protected natural monuments (Spomenici prirode), ps.4708 LUN - DIVLJE MASLINE, protected 1963-03-15; a polygon (the grove), not this tree",
+        "url": "data/registers/croatia-spomenici-prirode.json localId ps.4708"
+      },
+      "access": "Walkable on marked paths between dry-stone walls, no guide needed. An entrance fee in season has been reported but price and hours are not confirmed. The oldest tree is beside the old road at the entrance.",
+      "transport": "Lun is at the northern tip of the island of Pag, in Novalja municipality, reached by road. No public transport confirmed.",
+      "how_to_recognise": "You can recognise it by a trunk about four metres across. It stands a metre or two from the old macadam road, at the entrance where the marked path into the Lun olive gardens begins.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "AGE CONFLICT: Novi list (Marinko Glavan, 2021-08-09) gives about 2,000 years, 'officially the oldest olive', an estimate by experts of the Lun olive cooperative and the Zagreb Faculty of Agronomy: trunk diameter about 4 m, trunks grow about 1 mm in width a year, so radius 2,000 mm gives about 2,000 years. That is crude arithmetic (an olive of this kind is often a hollow, multi-stem mass), not a measurement. Search summaries (not fetched pages) credit Turisticke price and an official figure with 'over 1,600 years'. Total Croatia News (2026-06) says individual trees 1,600 to 2,000 and many over 1,500, with no method. Croatia Week (summary only, page not fetched) says about two millennia. A CROSBI paper and Croatian thesis titled 'Starost stabala Lunjskih maslina' (age of the Lun olives) exist; I could not open them (dabar returned 418). Write 'between 1,600 and 2,000 years by local estimates' at most. Girth 1257 cm is the 4 m diameter times pi, a diameter statement from a newspaper, so label it a crude figure. Grove facts (TCN): about 24 hectares protected as a botanical reserve in 1963 (the register row confirms 1963-03-15), roughly 80,000 ancient olives and about 1,500 ancient wild olives; 'Metuzalemka' is the photo-caption nickname in Novi list, not an official name. Most trees are grafted; a stand of ungrafted wild olive (Olea oleaster) is a biological reserve and a 2019 genetics thesis found Pag one of two truly wild populations in Croatia (search summary only, unverified). Alive: Novi list 2021, TCN 2026, iNaturalist 2022. The register row's publishable flag is false in our register file, so the polygon was not used for any coordinate or number. One collectible point: the oldest olive at the entrance, not the grove.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
