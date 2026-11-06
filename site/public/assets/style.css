@@ -3960,6 +3960,8 @@ button.city-box-row:disabled { cursor: default; }
 .exc-place { margin: 0 var(--gutter); font-family: var(--sans); font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; }
 .exc-place span { font-size: 26px; }
 .exc-place-plain span { font-size: 22px; }
+/* The explore list's count, small and centred under the grip (map.ts). */
+.exc-count { margin: 0 var(--gutter) 4px; text-align: center; font-size: 16px; font-weight: 700; color: var(--ink-mid); }
 /* A searched city's box on the explore list (map.ts _boxHtml): the city
    page's .city-box, its rows drawn straight inside it. */
 .exc-box { margin: 12px var(--gutter) 0; }

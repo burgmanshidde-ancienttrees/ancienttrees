@@ -520,7 +520,7 @@ struct MapTab: View {
                 // stays visible while the list scrolls and it is the handle
                 // that makes the sheet draggable again once it has (2026-08-25).
                 if selected == nil {
-                    viewHeader
+                    countStrip
                 } else if let t = selected {
                     // Apple Maps' place row: share, name, cross. See
                     // TreePlaceSheet.swift for the measurements.
@@ -915,26 +915,14 @@ struct MapTab: View {
     /// a list down here, it says how big it is, and being unTAPPABLE it makes
     /// the lip a handle rather than a row of half-visible cards a thumb keeps
     /// opening by accident.
-    /// THE COUNT, AND NOTHING THAT GUESSES (Hidde, 2026-11-06, after a day of
-    /// a place name that changed or stuck while the map moved: "zullen de
-    /// airbnb interactie maar gewoon als standaard aan houden ... zowel voor
-    /// app als web"). Airbnb heads its map list with how many homes are in
-    /// the map area; the search field above keeps what you searched until its
-    /// cross. "22 trees", komoot's "511 routes" (Hidde chose the bare count on
-    /// 2026-10-13). CONVENTIONS.md "A place picked in the search lands on the
-    /// map".
-    @ViewBuilder private var viewHeader: some View {
-        Text(listedHere.isEmpty ? "No trees in view" : treesLabel(max(inReach, listedHere.count)))
-            .font(.brand(22, .bold, relativeTo: .title2))
-            .foregroundStyle(Brand.ink)
-            .frame(minHeight: 44, alignment: .leading)
-            .accessibilityIdentifier("map-count")
-            .padding(.horizontal, 16)
-            .padding(.bottom, 10)
-            .padding(.top, -16)
-            .frame(maxWidth: .infinity, alignment: .leading)
-    }
-
+    /// THE COUNT, SMALL AND CENTRED UNDER THE GRIP, AND NOTHING THAT GUESSES
+    /// (Hidde, 2026-11-06: "zullen de airbnb interactie maar gewoon als
+    /// standaard aan houden", then "die 32 trees staat los"). Airbnb heads its
+    /// map sheet with "Over 1,000 homes" in small type under the handle; the
+    /// search field above keeps what you searched until its cross. This strip
+    /// is the one he chose on 2026-10-10 and 10-13, back in place of the
+    /// large heading. CONVENTIONS.md "A place picked in the search lands on
+    /// the map".
     private var countStrip: some View {
         Text(inReach == 0
              ? "No trees in view"
@@ -1036,15 +1024,6 @@ struct MapTab: View {
     /// only), the Highlights shelf, then every tree in view as a row. The
     /// website's city page has the same order (TreeCard.astro "row").
     @ViewBuilder private var placeList: some View {
-        // The searched city's asks, while its trees are in view (Hidde,
-        // 2026-11-06: over an empty map the ambassador row "staat nu zielig
-        // in zn eentje"). The field keeps the search until its cross either
-        // way; only the box goes with the city.
-        if case .city(let slug) = focusPlace,
-           listedHere.contains(where: { $0.tree.citySlug == slug }) {
-            PlaceAsksBox(slug: slug, title: placeTitle, catalogue: catalogue)
-                .padding(.bottom, 6)
-        }
         // The server's order and its ten (lib/highlights.ts); an older feed
         // without ranks keeps the list's order and stops at ten too.
         let highlights = Array(listedHere.filter { $0.tree.isHighlight }
@@ -1066,6 +1045,17 @@ struct MapTab: View {
             .scrollTargetBehavior(.viewAligned)
             .padding(.horizontal, -16)
             .padding(.bottom, 6)
+        }
+        // UNDER THE HIGHLIGHTS (Hidde, 2026-11-06: "doe de ambasadeur knop
+        // onder highlight"): the best trees first, then the ask, then the
+        // list. The searched city's asks, while its trees are in view (Hidde,
+        // 2026-11-06: over an empty map the ambassador row "staat nu zielig
+        // in zn eentje"). The field keeps the search until its cross either
+        // way; only the box goes with the city.
+        if case .city(let slug) = focusPlace,
+           listedHere.contains(where: { $0.tree.citySlug == slug }) {
+            PlaceAsksBox(slug: slug, title: placeTitle, catalogue: catalogue)
+                .padding(.bottom, 6)
         }
         if !listedHere.isEmpty {
             // Everything in view, up to the sixty nearest (listed) plus the

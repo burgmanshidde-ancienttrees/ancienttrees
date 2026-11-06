@@ -1252,9 +1252,10 @@ gewoon als standaard aan houden ... zowel voor app als web"; he chose "blijft
 tot x" after asking what the convention is).** The search field keeps what you
 searched until its cross or a new search (Airbnb's search bar; Google Maps and
 Apple Maps keep a searched place's card the same way), wherever you drag. The
-list is always every tree in view, headed by the bare count ("22 trees"), the
+list is always every tree in view, headed by the bare count ("22 trees",
+small and centred under the grip, Airbnb's "Over 1,000 homes"), the
 searched place's own trees first while the search holds. A searched city adds
-its box (ambassador, Plus) above the Highlights while its trees are in view
+its ambassador box below the Highlights (Plus under the trees) while its trees are in view
 (Hidde, the same evening: alone over an empty map it "staat nu zielig in zn
 eentje"). Nothing
 names a place from what happens to be in view: direction B's guessed heading

@@ -907,7 +907,9 @@ function renderPanel() {
   trees = trees.slice().sort(function(a, z) {
     return (_inFocus(a) ? 0 : 1) - (_inFocus(z) ? 0 : 1) || _pr(a) - _pr(z);
   });
-  var head = '<h2 class="exc-place exc-place-plain"><span>' + _esc(_n(WORDS.inView, trees.length)) + '</span></h2>' + _boxHtml(trees);
+  // The count small and centred under the grip, Airbnb's "Over 1,000 homes"
+  // (Hidde, 2026-11-06: "die 32 trees staat los"); the app's countStrip.
+  var head = '<p class="exc-count">' + _esc(_n(WORDS.inView, trees.length)) + '</p>';
   // Highlights: photographed trees (pinPriority puts them at 0 or below),
   // each city's own Highlights first in their rank, at most ten.
   var hls = trees.filter(function(f) { return _pr(f) <= 0; }).sort(function(a, z) {
@@ -921,6 +923,9 @@ function renderPanel() {
     html += '<section class="city-highlights"><h3 class="city-section-head">' + _esc(WORDS.highlights) + '</h3>' +
       '<div class="tree-hl-list">' + hls.map(_hlHtml).join('') + '</div></section>';
   }
+  // The ambassador box UNDER the Highlights (Hidde, 2026-11-06: "doe de
+  // ambasadeur knop onder highlight"), as in the app.
+  html += _boxHtml(trees);
   html += '<h3 class="city-section-head">' + _esc(_n(WORDS.all, trees.length)) + '</h3>' +
     '<div class="tree-rows">' + trees.slice(0, LIST_MAX).map(_rowHtml).join('') + '</div>' +
     (trees.length > LIST_MAX ? '<p class="ex-more">' + _esc(WORDS.more) + '</p>' : '') + _plusHtml(trees);
