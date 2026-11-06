@@ -1,5 +1,9 @@
 # LOG
 
+## 2026-11-06 (late window, second attempt)
+
+Shipped 7 app-only trees: Powerscourt's tallest Douglas fir (new place enniskerry), Hackberry of Terenzano (Florence), Ashburn red mulberry (leesburg), and four in Cardiff (crd_009, 011, 012, 013). Most "READY" leads were not: 17 were declined with reasons recorded in the lead files so `leads.py --ready` stops offering them; the 401 "awaiting a writer" figure is mostly stale research files of trees already live. San Francisco verify found nothing new (register exhausted by three passes); its claim stays until sfo_014/015 are merged or it expires (4 h). Still open: the failing scheduled workflows (deploy, iOS) were not looked at this attempt.
+
 <!-- archive-index -->
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
