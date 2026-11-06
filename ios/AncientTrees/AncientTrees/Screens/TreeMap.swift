@@ -67,6 +67,10 @@ struct TreeMap: UIViewRepresentable {
     /// have loaded. That is the exact race the old comments here described
     /// as unobservable.
     var onMapIdle: (() -> Void)? = nil
+    /// A finger moved the map (pan, pinch, rotate, tilt), never one of our own
+    /// camera moves. The Map tab ends a search on it, Airbnb's rule (Hidde,
+    /// 2026-11-06).
+    var onUserMove: (() -> Void)? = nil
     var focus: CLLocationCoordinate2D?
     /// Whether what this map is aimed at came from the phone or from a guess.
     ///
@@ -950,7 +954,11 @@ struct TreeMap: UIViewRepresentable {
                 .gesturePan, .gesturePinch, .gestureRotate, .gestureZoomIn,
                 .gestureZoomOut, .gestureOneFingerZoom, .gestureTilt,
             ]
-            if !reason.intersection(byHand).isEmpty { userMoved = true }
+            if !reason.intersection(byHand).isEmpty {
+                userMoved = true
+                // Next tick: this can arrive inside a camera update.
+                if let f = parent.onUserMove { DispatchQueue.main.async { f() } }
+            }
         }
 
         func mapView(_ map: MLNMapView, regionDidChangeAnimated animated: Bool) {

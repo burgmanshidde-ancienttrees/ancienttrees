@@ -119,6 +119,19 @@ struct MapTab: View {
     /// the frame the watchdog caught killing the app on Hidde's phone
     /// (2026-11-03 17:42, Tree ==). An unchanged array is one pointer check.
     private var mapTrees: [Tree] {
+        // WHILE A SEARCH HOLDS, ONLY THAT PLACE'S PINS (Hidde, 2026-11-06:
+        // France showed Belgium's and the Netherlands' too; Airbnb draws only
+        // the searched place's results until you move the map).
+        guard let p = focusPlace else { return filteredTrees }
+        if viewMemo.pinFocus != p || viewMemo.pinVersion != catalogue.version || viewMemo.pinFilters != filters {
+            let ids = Set(placeTrees.map(\.id))
+            viewMemo.pinTrees = filteredTrees.filter { ids.contains($0.id) }
+            viewMemo.pinFocus = p; viewMemo.pinVersion = catalogue.version; viewMemo.pinFilters = filters
+        }
+        return viewMemo.pinTrees
+    }
+
+    private var filteredTrees: [Tree] {
         guard filters.isOn else { return catalogue.trees }
         let key = MapTreesKey(filters: filters, month: month, collected: collectedIds,
                               favourites: favouriteIds, lat: focus.lat, lng: focus.lng,
@@ -294,15 +307,20 @@ struct MapTab: View {
         // handful and are counted live.
         let key = viewKey
         let ours: Int
-        if viewMemo.reachKey == key {
+        // While a search holds, the searched place's trees only (Airbnb's
+        // count of the place's results, Hidde 2026-11-06).
+        if viewMemo.reachKey == key, viewMemo.reachFocus == focusPlace {
             ours = viewMemo.reach
         } else {
-            ours = Self.oursInReach(catalogue.trees, region: mapRegion, focus: focus,
+            ours = Self.oursInReach(focusPlace == nil ? catalogue.trees : placeTrees,
+                                    region: mapRegion, focus: focus,
                                     filters: filters, month: month,
                                     collected: key.collected, favourites: key.favourites)
             viewMemo.reachKey = key
+            viewMemo.reachFocus = focusPlace
             viewMemo.reach = ours
         }
+        if focusPlace != nil { return ours + minesInView.count }
         guard let r = mapRegion else {
             return ours + mineShown.filter { Geo.km(focus, ($0.lat, $0.lng)) <= 6 }.count
         }
@@ -365,6 +383,12 @@ struct MapTab: View {
         var listed: [(tree: Tree, km: Double)] = []
         var reachKey: ViewKey?
         var reach = 0
+        var reachFocus: FocusPlace?
+        /// The searched place's pins (mapTrees).
+        var pinFocus: FocusPlace?
+        var pinVersion = ""
+        var pinFilters: MapFilters?
+        var pinTrees: [Tree] = []
         /// The chosen place's own trees in view, per settled view and place.
         var hereKey: ViewKey?
         var hereFocus: FocusPlace?
@@ -389,8 +413,7 @@ struct MapTab: View {
                                    filters: filters, month: month,
                                    collected: key.collected, favourites: key.favourites,
                                    query: query, cap: 200)
-        let ids = Set(own.map(\.tree.id))
-        let out = own + listed.filter { !ids.contains($0.tree.id) }
+        let out = own
         viewMemo.hereKey = key
         viewMemo.hereFocus = p
         viewMemo.here = out
@@ -487,6 +510,10 @@ struct MapTab: View {
                     // the Apple Maps recording): no onSelectTree, so TreeMap
                     // writes `selected` and the sheet becomes that tree.
                     onMapIdle: { mapIdle = true },
+                    // A FINGER ENDS THE SEARCH (Hidde, 2026-11-06, Airbnb's
+                    // map: a search shows that place only, until you move the
+                    // map yourself; then the map area again, everything).
+                    onUserMove: { if focusPlace != nil { focusPlace = nil } },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     // So the map can tell a fix from Dam square and retake its
                     // opening shot when the phone finally answers. See
