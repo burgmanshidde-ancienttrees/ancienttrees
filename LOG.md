@@ -12,6 +12,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06 session: the Guardian, app-only trees as web pins, press images
+
+**What changed in the product.** Every app-only tree (568) now stands on the web maps as a pin, with a card: photo when it has one, name, species, age, place, save, and "Read its story in the app" (the one get-the-app control). Still no page, sitemap, search or places line, so Google gets nothing new to crawl (`APP_ONLY_PINS` in site/src/lib/app-first.ts, `mapTrees()` in trees.ts; qa's app-first check reads the switch). Checked live: 568 of 568 on the map, 0 cards with a page link, 0 in search; the card looked at on desktop and at 390 px. The Android waitlist sheet's email field was a 192 px oval on phones; now 45 px. App: demo switches `-followers=`, `-following=`, `-avatar=` for press and store screenshots.
+
+**Why.** Joe Pinner (Guardian environment desk, Scott Trust trainee) interviewed Hidde today; the piece is expected around Monday. Half the UK was missing from the web map (131 web, 122 app-only), and most mobile readers are on Android. Hidde: "put all pins live of the app only trees".
+
+**Open, Hidde's call.** Pages for app-only UK trees (122), noindexed: blocked only by the 25-a-day pace. Holding iOS 1.0.4 until after the spike (submit with manual release). Press images are in out/press/for-joe (gitignored out/).
+
+**Breakage.** The pins deploy collided twice with another session's deploy; a newer run carrying the same commit went live, the older one was cancelled so it could not overwrite it.
+
 ## 2026-11-06 night run (window from 13:37 UTC): rung 1, one reader photograph
 
 - Looked at the reader's two frames for the Three Atlas Cedars of Préfargier (prf_001): the first is the right tree (three joined crowns, gravel path, bench), the second is an information board. Verdict `add`; publish reported the photograph already in the strip, so nothing new went live. Preflight: 0 problems.
