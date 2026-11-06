@@ -1,43 +1,5 @@
 {
  "_note": "Photographs readers sent through the app, matched to a tree we map, waiting for a viewing pass. Judge with the photo-judge agent and apply with scripts/sightings_publish.py. Rebuilt on every knock from the rows without a verdict.",
  "written": "2026-11-06",
- "queue": [
-  {
-   "sighting_id": "15a3b6f1-3dd9-4ac2-bec5-bbd1c47d7613",
-   "user_id": "p_2e79bf68318b596d2c9298dc",
-   "tree_id": "prf_001",
-   "city_slug": "la-tene",
-   "city": "La Tène",
-   "tree_name": "The Three Atlas Cedars of Préfargier",
-   "match": "app",
-   "distance_m": 0,
-   "mine": false,
-   "current_photo": "approved",
-   "current_source": "contributor",
-   "tree_species": "Atlas Cedar (Cedrus atlantica)",
-   "recognise": "Three Atlas cedars on one open lawn beside a gravel path, their crowns joined into one broad pyramid of blue-green needles, with a bench under the nearest trunk.",
-   "tree_girth_cm": null,
-   "tree_height_m": null,
-   "story": "Three Atlas cedars stand together on one lawn in the park of the Préfargier estate, in the commune of La Tène, canton of Neuchâtel. A reader sent us their photograph and put it in one line, “3 cèdres de l’Atlas, dans le park du domaine de la maison de santé de Préfargier.”\n\nThe photograph shows why it was worth a picture. Three separate trunks rise a few metres apart and their crowns have grown into a single dark, broad pyramid, with silvery blue-green needles at the branch tips, the colour the Atlas cedar, Cedrus atlantica, is known for. It comes from the Atlas Mountains of Morocco and Algeria. A bench stands under the nearest trunk, and a walker on the gravel path beside the lawn looks sma",
-   "name": "A tree near Fribourg",
-   "species": null,
-   "girth_cm": null,
-   "girth_hugs": null,
-   "note": "3 cèdres de l’Atlas, dans le park du domaine de la maison de santé de Préfargier, dans la commune de Laténa, canton de Neuchâtel",
-   "taken_at": "2026-11-05",
-   "photo_path": "01777e9c-5a6f-45bf-b2c0-c9a394ba2cc4/15A3B6F1-3DD9-4AC2-BEC5-BBD1C47D7613.jpg",
-   "sign_path": null,
-   "sign_file": null,
-   "extra_files": [
-    "out/sightings/15a3b6f1-3dd9-4ac2-bec5-bbd1c47d7613-extra-1.jpg"
-   ],
-   "latitude": 47.0038375771111,
-   "longitude": 7.01202241704521,
-   "file": "out/sightings/15a3b6f1-3dd9-4ac2-bec5-bbd1c47d7613.jpg",
-   "light": null,
-   "vouched": null,
-   "rank": 1,
-   "worth": "the tree already has one: ship this only if it is better"
-  }
- ]
+ "queue": []
 }

@@ -1558,10 +1558,10 @@
    "name": "American elm, 794 Quincy St (Parks id=87)",
    "lat": 40.6895,
    "lng": -73.928,
-   "reason": "Street tree, valid lead, not taken for time (2024 Great Tree, 38 in).",
+   "reason": "DEAD: new-york-4-notes.md records the street-tree census status as Stump on 2026-10-05; never ship (2024 Great Tree, 38 in, now gone). Re-read 2026-11-06, census API was down so not re-fetched.",
    "found": "2026-11-03",
-   "pass": "data/research/new-york-3-rejects.json",
-   "status": "open",
+   "pass": "data/research/new-york-4-notes.md",
+   "status": "blocked",
    "species": "Elm (Ulmus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },

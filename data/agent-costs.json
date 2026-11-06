@@ -9,6 +9,14 @@
         "tokens": 190000,
         "trees": 29,
         "note": "29 New York stories written and merged via build_us_newyork_2026_11_06.py (APP FIRST, app-only); species aligned to canonical; nyc_085, nyc_094, nyc_029 held. Token figure estimated."
+      },
+      {
+        "date": "2026-11-06",
+        "kind": "verify",
+        "target": "new-york (13 READY leads)",
+        "tokens": 90000,
+        "trees": 1,
+        "note": "Most READY leads already judged by earlier passes; nyc_143 Willow Oak of Herbert Street verified, story by the session, merged via build_us_newyork_2026_11_06b.py (app-only). Quincy St elm confirmed dead and blocked. Token figure estimated."
       }
     ],
     "2026-11-05": [

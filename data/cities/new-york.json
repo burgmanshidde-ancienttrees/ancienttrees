@@ -3451,6 +3451,40 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "nyc_143",
+      "name": "Willow Oak of Herbert Street",
+      "species": "Willow Oak (Quercus phellos)",
+      "age_estimate": "not documented",
+      "girth_cm": 271,
+      "location": {
+        "address": "86 Herbert Street, East Williamsburg, Brooklyn (street tree on the sidewalk)",
+        "latitude": 40.72033361,
+        "longitude": -73.94151476,
+        "neighbourhood": "East Williamsburg"
+      },
+      "story": "Most of the Great Trees of New York City stand in parks and cemeteries. This willow oak stands on the sidewalk in front of 86 Herbert Street, in East Williamsburg, and in 2024 NYC Parks added it to the list in an update that brought 17 Brooklyn trees on board.\n\nThe city's street tree census counted it in 2015 at 34 inches across at chest height, about 2.7 metres around the trunk, alive and in good health. It is the only willow oak recorded at that address.\n\nWillow oak is a southern species, native across the south-eastern United States. It takes its name from its leaves, which are long and narrow like a willow's rather than lobed like those of the northern oaks, so it looks unlike the oaks most New Yorkers know.\n\nNo source we found gives the year it was planted, so this page gives no age. One press report calls it a weeping oak, while the census and the Parks list both say willow oak.\n\nYou can see all of it from the public pavement, and nothing is needed to get in.",
+      "how_to_recognise": "You can recognise it by its long, narrow, willow-like leaves and a trunk about 2.7 metres around. It stands on the sidewalk in front of 86 Herbert Street.",
+      "verified_sources": [
+        "https://www.brooklynpaper.com/parks-adds-17-bk-trees-great-trees-list/",
+        "https://greenpointers.com/2024/10/09/mcgolrick-park-tree-earns-nyc-parks-great-trees-of-new-york-city-designation/",
+        "https://data.cityofnewyork.us/resource/uvpi-gqnh.json?tree_id=237873"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (2024 update, id=83)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees/83"
+      },
+      "access": "Free. Street tree on the public sidewalk of Herbert Street; view from the pavement, no entry needed.",
+      "transport": "About 700 m, a ten minute walk, from the Graham Av stop on the L train.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
