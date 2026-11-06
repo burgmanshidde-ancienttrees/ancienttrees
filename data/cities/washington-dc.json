@@ -1282,6 +1282,38 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "wdc_042",
+      "name": "The Fort C.F. Smith Tulip Tree",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "older than the Civil War, by Arlington County's account; never dated more closely",
+      "age_min": 160,
+      "age_basis": "source",
+      "girth_cm": 635,
+      "height_m": 42.7,
+      "location": {
+        "address": "Fort C.F. Smith Park, 2411 24th Street North, Arlington, VA 22207",
+        "latitude": 38.9019,
+        "longitude": -77.0898,
+        "neighbourhood": "Arlington (Virginia), about 35 minutes from downtown DC by Metro (Orange/Silver/Blue Line to Rosslyn, then about a 20 minute walk north-west)"
+      },
+      "story": "The biggest tree anyone has measured in Arlington County does not stand on a lawn or a main road. It grows at the bottom of a steep wooded ravine in Fort C.F. Smith Park, a county park and historic site in north Arlington.\n\nArlington County puts it at almost 21 feet round and 140 feet tall, roughly 6.4 metres and 43 metres, and lists it as the county's champion tulip tree, the species Americans also call tulip poplar. The nomination came from the county's own Urban Forestry Commission.\n\nThe same papers say it may have given shade to Union soldiers stationed at the fort. May have is the county's phrase, and it is the honest one. Nobody has counted its rings or found a planting date. What the county does commit to is that it is likely one of the few trees in the park older than the Civil War, which puts it past 160 years, with no upper figure anyone has offered.\n\nTwo caveats. Neither county page says when the tape went round the trunk, so read the numbers as the last ones taken, not this year's. And the trunk has never been pinned. Our marker sits in the middle of a park a few hundred metres across, so the walk ends with a search for the biggest tree in the ravine below the fort. If you find it, a photograph or a GPS fix from its foot would let the next visitor walk straight there.",
+      "how_to_recognise": "You can recognise it as the biggest tree in the ravine below the fort, a tulip tree almost 21 feet round and 140 feet tall. It stands in the steep wooded ravine inside Fort C.F. Smith Park.",
+      "verified_sources": [
+        "https://www.arlingtonva.us/Government/Programs/Sustainability/Trees/Notable-Specimen-and-Champion-Trees/Specimen-Trees",
+        "https://arlington.granicus.com/MetaViewer.php?clip_id=437&meta_id=42607"
+      ],
+      "access": "Free. Fort C.F. Smith is an Arlington County park and historic site; the tree stands inside it, in a steep wooded ravine.",
+      "transport": "Rosslyn Metro (Orange, Silver and Blue lines), about 12 minutes from Metro Center, then roughly a 20 minute walk north-west to the park on 24th Street North.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated"
     }
   ]
 }
