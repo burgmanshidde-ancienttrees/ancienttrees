@@ -207,3 +207,18 @@ public struct Catalogue: Sendable {
 
     public var citySlugs: [String] { byCity.keys.sorted() }
 }
+
+// ONE STRING TO COMPARE, NOT FOUR THOUSAND TREES (2026-11-06, Instruments on
+// Hidde's phone: three hangs of six seconds each on coming back to the app,
+// two of those seconds inside `Walk ==` alone). A view that holds the
+// catalogue is diffed by SwiftUI on every update, and a struct that is not
+// Equatable is compared field by field: every tree, every walk, every facet,
+// for every such view, on every pass. The feed's version is a hash of all of
+// it (site/src/pages/api/version.json.ts), so two catalogues with the same
+// version ARE the same catalogue, and saying so makes the diff one string.
+extension Catalogue: Equatable {
+    public static func == (a: Catalogue, b: Catalogue) -> Bool {
+        a.version == b.version && a.trees.count == b.trees.count
+            && a.walks.count == b.walks.count
+    }
+}
