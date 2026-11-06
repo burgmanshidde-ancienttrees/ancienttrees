@@ -551,9 +551,21 @@ struct HomeView: View {
 
     /// A tile that opens somewhere other than its own tree: an island, a
     /// record, a list. The tag says what it opens.
-    private func tile(_ tree: Tree, _ label: String, to route: Route) -> some View {
-        NavigationLink(value: route) { CollectedTile(kind: .ours(tree), city: label).frame(width: Self.tileWidth).clipShape(Self.tileShape) }
-            .buttonStyle(.plain)
+    @ViewBuilder private func tile(_ tree: Tree, _ label: String, to route: Route) -> some View {
+        let face = CollectedTile(kind: .ours(tree), city: label).frame(width: Self.tileWidth).clipShape(Self.tileShape)
+        switch route {
+        case .city, .country:
+            // A PLACE IS THE MAP TAB, so it goes by navigator.push and never
+            // onto this stack (Hidde's phone, iOS 27, 2026-11-06: Discover,
+            // Gran Canaria, back, and Discover was empty). A NavigationLink
+            // pushed the empty place page and redirectPlace popped it in the
+            // same update; iOS 27 kept showing the page it had pushed.
+            Button { navigator.push = route } label: { face }
+                .buttonStyle(.plain)
+        default:
+            NavigationLink(value: route) { face }
+                .buttonStyle(.plain)
+        }
     }
 
     /// THE SEASON (hero H1). One photographed tree at its best near you, the

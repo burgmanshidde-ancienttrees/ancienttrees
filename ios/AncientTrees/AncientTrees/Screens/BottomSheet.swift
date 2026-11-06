@@ -337,8 +337,13 @@ struct BottomSheet<Header: View, Content: View>: View {
     @Environment(\.floatingBarDepth) private var barDepth
     @Environment(\.sheetPageClose) private var pageClose
     @Environment(\.sheetFullInset) private var fullInset
-    @Environment(\.sheetLocked) private var locked
+    @Environment(\.sheetLocked) private var listLocked
     @Environment(\.sheetCardFits) private var cardFits
+    /// ONE TAPPED TREE RAISES NO FURTHER (Hidde, 2026-11-06: "als ik een pin
+    /// aan klik met 1 boom dan moet de lijst niet verder omhoog scrolbaar
+    /// zijn"). The fitted card is the whole content, as in Apple Maps; down
+    /// still lets the tree go.
+    private var locked: Bool { listLocked || cardFits }
     /// The header's bottom and the content's height, read from the drawn
     /// frames, so a fitted card stop is the sheet's real content and nothing
     /// more (see sheetCardFits).

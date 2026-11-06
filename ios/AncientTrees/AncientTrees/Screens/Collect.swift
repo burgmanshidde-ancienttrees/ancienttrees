@@ -54,7 +54,14 @@ struct CollectView: View {
     @State private var country: String?
     /// See nearestTree. A class, so filling it while drawing changes nothing
     /// SwiftUI watches.
-    final class PlaceMemo { var tree: [UUID: Tree?] = [:] }
+    final class PlaceMemo {
+        var tree: [UUID: Tree?] = [:]
+        /// City name to country, built once per catalogue version: the
+        /// `.sent` rows looked it up by scanning every tree, for every row, on
+        /// every redraw (Instruments on Hidde's phone, 2026-11-06).
+        var countryOfCity: [String: String] = [:]
+        var countryVersion = ""
+    }
     @State private var placeMemo = PlaceMemo()
     /// Trees this account sent us through the website's form. The app's camera
     /// writes to sightings; the form writes to submissions, and until
@@ -159,7 +166,13 @@ struct CollectView: View {
         case .tree(let t, _): return t.country
         case .mine(let s): return nearestTree(s)?.country
         case .sent(let t):
-            return catalogue.trees.first { $0.city == t.city }?.country
+            if placeMemo.countryVersion != catalogue.version {
+                var m: [String: String] = [:]
+                for tree in catalogue.trees where m[tree.city] == nil { m[tree.city] = tree.country }
+                placeMemo.countryOfCity = m
+                placeMemo.countryVersion = catalogue.version
+            }
+            return placeMemo.countryOfCity[t.city]
         }
     }
 
