@@ -1,0 +1,139 @@
+{
+  "city": "Sierra de Grazalema",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Three trees in the Sierra de Grazalema carry a measured sheet in Andalusia's register of singular trees, and each is here for a different reason. A cork oak outside the village once paid, with its cork, for the oil in the lamps of Grazalema's churches. A holm oak at the Puerto de los Acebuches is hollow from age and old charcoal-making. And a lone Spanish fir stands in scrub of strawberry tree and carob near the Pinsapar, the fir forest that is the park's emblem.",
+  "meta_description": "Three singular trees of the Sierra de Grazalema: a cork oak that paid for church lamps, a hollow holm oak 5.40 metres round, a lone pinsapo.",
+  "question_meta": "Nobody has dated a tree in the Sierra de Grazalema. The register's best clue points to a hollow holm oak 5.40 metres round. Three trees, measured.",
+  "question_answer": "No tree in the Sierra de Grazalema has a published age. The strongest clue in Andalusia's register is the hollow holm oak at the Puerto de los Acebuches, 5.40 metres round at chest height, whose sheet calls its hollow trunk an evident sign of great age. It stands beside the A-372 about 6 kilometres from Grazalema, where the Llanos del Rabel trail begins.",
+  "question_context": "Andalusia publishes a measured sheet for each tree in its register of singular trees, and none of the three Grazalema sheets gives an age. What they give instead is size. The holm oak at the Puerto de los Acebuches measures 5.40 metres round at chest height and 7.70 at the base, and the register reads its hollow trunk as the mark of great age and of the charcoal-making that once worked these oaks, concluding that the girth used to be larger still. The Chaparro de las Animas, a cork oak on the edge of Grazalema, is 5.20 metres round with a crown about 24 metres across, and it is the easiest of the three to stand under, since a walk to Campobuche starts at its foot. The pinsapo of El Taramal is slimmer, 2.50 metres round and 20 metres tall, and it is listed for rarity as well as size, because in the Iberian Peninsula the Spanish fir grows wild only in the sierras of Malaga and Cadiz. Reaching it means asking at the El Bosque visitor centre about the permit zone first. If you know the age of any of the three, tell us.",
+  "hero_tree_id": "gzm_001",
+  "oldest_tree_id": "gzm_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Sierra de Grazalema?",
+      "a": "Nobody has published an age for any of these three. The hollow holm oak at the Puerto de los Acebuches, 5.40 metres round, is the one whose register sheet calls its trunk a sign of great age."
+    },
+    {
+      "q": "Which of these trees can I simply walk to?",
+      "a": "The Chaparro de las Animas, on public dehesa about 2 kilometres from Grazalema, where a walk to Campobuche starts. The hollow holm oak stands beside the A-372 at a mountain pass. The Taramal pinsapo is in the permit zone of the Pinsapar, so ask at the El Bosque visitor centre before going."
+    },
+    {
+      "q": "Do I need a permit?",
+      "a": "Around the Pinsapar, yes. Trails there, Llanos del Rabel among them, need a free authorisation from the El Bosque visitor centre and are restricted in the fire season, roughly mid-June to mid-October. The Chaparro de las Animas needs none."
+    },
+    {
+      "q": "What is a pinsapo?",
+      "a": "Abies pinsapo, the Spanish fir. In the Iberian Peninsula it grows wild only in the sierras of Malaga and Cadiz, and the Pinsapar above Grazalema, the fir forest that is the park's emblem, is one of its strongholds."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gzm_001",
+      "name": "The Chaparro de las Animas",
+      "species": "Cork Oak (Quercus suber)",
+      "girth_cm": 520,
+      "height_m": 18.75,
+      "location": {
+        "address": "Llano de las Animas, Parque Natural Sierra de Grazalema, outside Grazalema, Cadiz",
+        "latitude": 36.743029,
+        "longitude": -5.33448,
+        "neighbourhood": "Grazalema"
+      },
+      "story": "The cork stripped from this oak was traditionally sold to buy oil, and the oil burned in the lamps kept for the Blessed Souls in Grazalema's churches. Hence the name, the Chaparro de las Animas, the oak of the souls. In these hills chaparro usually means a holm oak, but the Junta de Andalucia's register lists this one as a cork oak, and the bark in recent photographs agrees.\n\nIt is a broad tree rather than a tall one. The register gives 18.75 metres of height, a straight, warty trunk with big swellings that runs 3.25 metres before the first branches, and a girth of 5.20 metres at chest height and 6.70 at the base. The crown is what you notice from a distance, about 24 metres across in both directions, one dome of shade over some 465 square metres of grass.\n\nIt stands on flat sandy ground with rock outcrops, in a dehesa of cork and holm oaks that cattle and goats still graze, with hawthorn, bramble and rockrose around it. A guided walk to Campobuche, a 10.5 kilometre loop, starts at the foot of this tree on the edge of Grazalema, and walkers photographed it in full, healthy leaf in June 2026.\n\nNobody has published an age for it. If you know one, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_745.pdf",
+        "https://www.sur-walks.com/agenda-dayhikes/463-grazalema-campobuches-en/2024-04-02-22-57",
+        "https://www.inaturalist.org/observations/308806866",
+        "https://www.inaturalist.org/observations/373052522"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_745.pdf",
+        "id": "rediam_745"
+      },
+      "access": "Free. Public dehesa inside the natural park, grazed by cattle and goats; the Campobuche walk starts at the tree.",
+      "transport": "About 2 km from Grazalema village on foot or by car (estimated from the map); buses run to Grazalema from Ronda and Jerez.",
+      "how_to_recognise": "You can recognise it by the crown, about 24 metres across, over a straight, warty trunk 5.20 metres round, alone on open grass. It stands on the Llano de las Animas, where the walk to Campobuche starts.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Species: the Spanish name 'chaparro' usually means holm oak, but the sheet's species line and the REDIAM entry say Quercus suber and the photos show cork-oak bark; kept as Cork Oak. Sheet says Pública. Second source for existence is the SUR-walks page plus two iNaturalist photos; Fuerte Hoteles blog (403 to me, only seen in a search snippet, not used). Girth is at 1.30 m. The register carries no age. Pin confirmed by iNaturalist GPS plus viewed photos.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gzm_002",
+      "name": "The Hollow Holm Oak of Los Acebuches",
+      "species": "Holm Oak (Quercus ilex)",
+      "girth_cm": 540,
+      "height_m": 12,
+      "location": {
+        "address": "Puerto de los Acebuches, Parque Natural Sierra de Grazalema, Cadiz",
+        "latitude": 36.800967,
+        "longitude": -5.387899,
+        "neighbourhood": "Grazalema"
+      },
+      "story": "This holm oak is listed for its thickness, and the register thinks it used to be thicker. The trunk measures 5.40 metres round at chest height and 7.70 at the base, and it is hollow. The Junta de Andalucia's sheet reads that hollow as the mark of two things, great age and carboneo, the charcoal-making that once worked the oaks of these mountains. Its conclusion is that the girth was once even larger than it is now.\n\nWhat remains is a short tree for its bulk, 12 metres tall, with only 1.8 metres of trunk before it branches and a crown about 16 metres across. The sheet describes the bark as patterned like filigree, so that the trunk looks braided.\n\nIt stands at the Puerto de los Acebuches, the pass on the A-372 where the Llanos del Rabel trail begins, inside a planted stand of maritime pine with white rockrose, hawthorn, broom and dwarf fan palm underneath. The Pinsapar, the fir forest that is the emblem of the Sierra de Grazalema, is close by.\n\nEverything here comes from the register and the Junta's own Cadiz catalogue. No recent photograph of the tree has been published, and its pin is the register's point rather than a fix taken at the trunk. Nobody has dated it either. If you have stood under it, tell us what you found.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_742.pdf",
+        "https://juntadeandalucia.es/medioambiente/web/Bloques_Tematicos/Estado_Y_Calidad_De_Los_Recursos_Naturales/Flora_/pdfs_publicaciones_arboles_arboledas/cadiz/arboles_singulares_parte2.pdf"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_742.pdf",
+        "id": "rediam_742"
+      },
+      "access": "Free. Public land in the natural park beside the A-372 at the pass; the Llanos del Rabel trail that starts here needs a free permit from the El Bosque visitor centre.",
+      "transport": "About 6 km by car from Grazalema on the road toward El Bosque; no bus stop known at the pass.",
+      "how_to_recognise": "You can recognise it by the hollow trunk, 5.40 metres round, with bark patterned like braid, a broad oak among planted maritime pines. It stands at the Puerto de los Acebuches, where the Llanos del Rabel trail starts.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register-only plus the Junta's own printed Cadiz catalogue (same authority). Pin approximate and no photograph in reach: it does not yet meet the findable gate; delivered so the register link and measures are kept. Distance to Grazalema is my estimate from coordinates.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gzm_003",
+      "name": "The Pinsapo of El Taramal",
+      "species": "Spanish Fir (Abies pinsapo)",
+      "girth_cm": 250,
+      "height_m": 20,
+      "location": {
+        "address": "Puerto del Quejigalejo, El Taramal, a few km from the Pinsapar de Grazalema",
+        "latitude": 36.80315,
+        "longitude": -5.4169,
+        "neighbourhood": "Sierra de Grazalema Natural Park"
+      },
+      "story": "A Spanish fir in a thicket of carob and strawberry tree is not where you expect to find one. This pinsapo stands at the Puerto del Quejigalejo, a few kilometres from the Pinsapar de Grazalema, the fir forest that is this park's emblem, and yet the register finds it ringed by dense scrub of strawberry tree, carob and holm oak rather than by its own kind.\n\nThe species is why it is listed at all. In the Iberian Peninsula the pinsapo grows wild only in the sierras of Malaga and Cadiz, and the Junta de Andalucia chose this one for rarity as well as size. It is 20 metres tall on a straight, thick trunk 2.50 metres round at chest height and 5.10 at the base, under a large conical crown about 13.5 metres across whose lower branches carry few needles.\n\nGetting to it is the hard part. The pass lies in the permit-controlled Pinsapar zone. The neighbouring trails need a free authorisation booked through the El Bosque visitor centre and are restricted in the fire season, roughly mid-June to mid-October, and whether the tree sits on a permitted route is something to settle with the visitor centre before you go. The register sheet is the only source that names this tree, and even the pass is spelled two ways, Quejigalejo on the sheet and Quejicalejo on the trail map.\n\nNobody has published an age. If you know one, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf",
+        "https://guiadecadiz.com/sites/default/files/rutas_entornos_naturales/grazalema/LlanosdelRabel_0.pdf"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf",
+        "id": "rediam_740"
+      },
+      "access": "Public land in the permit-controlled Pinsapar zone; neighbouring trails need a free authorisation from the El Bosque visitor centre and close in the fire season; ask there before going.",
+      "transport": "A few kilometres from Grazalema village by the road to Puerto de las Palomas; regional buses run to Grazalema from Ronda and Arcos.",
+      "how_to_recognise": "You can recognise it as a lone fir, 20 metres tall with a large conical crown, in broadleaf scrub of strawberry tree, carob and holm oak. It stands at the Puerto del Quejigalejo.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register only; no second source names the tree. The sheet says 'Vereda del Taramal'; the trail leaflet shows El Taramal on the map but not a vereda by that name. Spelling Quejigalejo (sheet) vs Quejicalejo (leaflet map). Access is the weak point: public land, but the Pinsapar area needs a free permit and has a fire-season closure; flagged.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

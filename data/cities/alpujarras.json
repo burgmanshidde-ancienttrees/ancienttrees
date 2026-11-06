@@ -1,0 +1,97 @@
+{
+  "city": "Las Alpujarras",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Two trees in Las Alpujarras carry a measured sheet in Andalusia's register of singular trees, and both stand beside mountain roads. A hackberry on the road from Pampaneira to Portugos is 25 metres tall and 8.30 metres round at the base, its trunk looking like two stems fused into one. Higher up, between Busquistar and Trevelez, a Pyrenean oak forks half a metre above the ground and spreads its crown over part of the road.",
+  "meta_description": "Two singular trees of Las Alpujarras: a hackberry 25 metres tall by the Pampaneira road and a Pyrenean oak whose crown hangs over the road to Trevelez.",
+  "question_meta": "No tree in Las Alpujarras has a published age. The two singular trees beside its mountain roads, and what Andalusia's register measured.",
+  "question_answer": "Nobody has published an age for either tree on this page. The bigger of the two is the hackberry at the Fuente del Portillon, 4.75 metres round at chest height and 8.30 at the base, 25 metres tall, beside the road from Pampaneira to Portugos and visible from it.",
+  "question_context": "Andalusia's register of singular trees gives each of its trees a measured sheet, and neither Alpujarras sheet records an age. Size is all there is to go on, and the two are hard to compare. The hackberry at the Fuente del Portillon was measured at the standard 1.30 metres and is 4.75 metres round there, with ivy over half its trunk. The Pyrenean oak at Las Balsas forks so low that the register measured it at 45 centimetres instead, finding 4.05 metres, so its figure cannot be set beside the hackberry's. They are different species, too, and girth alone says little about age from one species to another. What the two share is the road. Both can be seen from a public road, the hackberry from the one between Pampaneira and Portugos, the oak from the mountain road between Busquistar and Trevelez, where its crown covers part of the carriageway. Neither has a published photograph, so if you drive past, tell us what you see, and if you know how old either is, tell us that too.",
+  "hero_tree_id": "apj_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Las Alpujarras?",
+      "a": "Nobody has published an age for either tree here. The larger is the hackberry at the Fuente del Portillon, 8.30 metres round at the base."
+    },
+    {
+      "q": "Can I see them without a hike?",
+      "a": "Yes. Both stand beside public roads, the hackberry on the Pampaneira to Portugos road and the oak on the road from Busquistar to Trevelez. Stop only where it is safe to pull off."
+    },
+    {
+      "q": "Can I get there without a car?",
+      "a": "Partly. Pampaneira has a bus from Granada, and the hackberry is a few kilometres from the village along the road to Portugos. The oak at Las Balsas is best reached by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "apj_001",
+      "name": "The Hackberry of Fuente del Portillon",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "girth_cm": 475,
+      "height_m": 25,
+      "location": {
+        "address": "Fuente del Portillon, road from Pampaneira to Portugos, Granada",
+        "latitude": 36.937018,
+        "longitude": -3.367266,
+        "neighbourhood": "Pampaneira"
+      },
+      "story": "At the base this hackberry measures 8.30 metres round, and its trunk looks like two stems that fused into one over the years. The Junta de Andalucia's register listed it for that trunk, for its size and for its height of 25 metres. At chest height the girth is 4.75 metres.\n\nThree metres up, the trunk forks into two main limbs that keep dividing into an oval crown about 20 metres across, which the sheet says casts huge shade. Ivy has spread over half the trunk in a web that climbs high into the tree.\n\nIt grows beside the road between Pampaneira and Portugos in the Alpujarra, very close to the spring called the Fuente del Portillon, with other hackberries around it on sandy, gently sloping ground. This is ravine country, and the sheet notes that iron-rich spring water is common here. The land is public and the tree can be seen from the road.\n\nTwo things are missing. The register is the only source we have found for this tree, and no dated photograph of it has been published, so the pin is the register's point rather than a fix taken at the trunk. Nobody has published an age either. If you drive this road and find it, or know how old it is, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_313.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/932608/Apendice_I_ISA.pdf/6bb073cf-f5c9-26a6-83c0-4b112ed5d013"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_313.pdf",
+        "id": "rediam_313"
+      },
+      "access": "Free. Public land beside the Pampaneira to Portugos road, near the Fuente del Portillon spring; seen from the road.",
+      "transport": "On the road from Pampaneira to Portugos, a few km from Pampaneira (estimated from the map); Pampaneira has a bus from Granada.",
+      "how_to_recognise": "You can recognise it by the trunk, half covered in ivy and 8.30 metres round at the base, forking at 3 metres into two limbs. It stands beside the Pampaneira to Portugos road, near the Fuente del Portillon.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register only (the appendix is the same authority). No vitality evidence, no photograph, no pin evidence: single official source, flagged 'register only'. Does not meet the findable gate until a photo or confirmed pin turns up. Species Celtis australis stated by the sheet.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "apj_002",
+      "name": "The Roadside Oak of Las Balsas",
+      "species": "Pyrenean Oak (Quercus pyrenaica)",
+      "girth_cm": 405,
+      "height_m": 19,
+      "location": {
+        "address": "Las Balsas, mountain road between Busquistar and Trevelez / Capileira, Sierra Nevada, Granada",
+        "latitude": 36.968749,
+        "longitude": -3.280848,
+        "neighbourhood": "Busquistar"
+      },
+      "story": "The Junta de Andalucia's register says no driver on the mountain road from Busquistar to Trevelez fails to notice this oak, and that is not a figure of speech. Its crown spreads about 25 metres and covers part of the road.\n\nThe trunk is barely a trunk. Half a metre above the ground it splits in a tremendous fork, and the powerful main limbs that come out of it are arranged, in the sheet's words, like counterweights, balancing an irregular crown over the slope on one side and the tarmac on the other. Because it forks so low, the register measured its girth 45 centimetres above the ground instead of the usual 1.30 metres, and found 4.05 metres there and 4.40 at the base. It is 19 metres tall.\n\nIt is a Pyrenean oak, growing on the edge of a slope among sweet chestnuts and sparse broom at a place called Las Balsas, inside the Sierra Nevada Natural Park. The sheet names the road both as Busquistar to Trevelez and as Capileira to Trevelez.\n\nThe register is the only source for this tree, and no dated photograph of it has been published. Nobody has published an age. Pull off where it is safe to look rather than stopping on the carriageway, and if you know its history, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_334.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/932608/Apendice_I_ISA.pdf/6bb073cf-f5c9-26a6-83c0-4b112ed5d013"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_334.pdf",
+        "id": "rediam_334"
+      },
+      "access": "Free to see from public land at the road edge in Sierra Nevada Natural Park; look from a safe pull-off, not the carriageway.",
+      "transport": "On the mountain road between Busquistar and Trevelez; best reached by car.",
+      "how_to_recognise": "You can recognise it by the crown hanging over part of the road, carried on huge limbs that fork only half a metre above the ground. It stands on the slope edge at Las Balsas, among sweet chestnuts.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register only, no photo, no pin evidence, no vitality evidence. Girth measured at 0.45 m. The appendix lists it without species; species Quercus pyrenaica is from the sheet's label. Delivered flagged; cannot ship until a photograph or confirmed pin exists.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

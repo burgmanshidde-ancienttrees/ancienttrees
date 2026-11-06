@@ -1,0 +1,63 @@
+{
+  "city": "Sierra de Aracena",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "This page holds one tree from the Sierra de Aracena, a Portuguese oak, or quejigo, 27.5 metres tall, growing under the roadside wall below the Pena de Arias Montano above Alajar. Andalusia's register of singular trees lists it for its height. The Pena is the rock where the scholar Benito Arias Montano retired, crowned by a hermitage of medieval origin with a pilgrimage every 8 September, and the area around it holds the natural park's largest stand of quejigo.",
+  "meta_description": "A quejigo 27.5 metres tall below the Pena de Arias Montano at Alajar, the Sierra de Aracena's singular tree on this page, and how to reach it.",
+  "question_meta": "The Sierra de Aracena tree on this page has no published age. What Andalusia's register says about the tall quejigo of the Pena de Arias Montano.",
+  "question_answer": "No age has been published for the one tree on this page, the quejigo below the Pena de Arias Montano. Andalusia's register lists it for its height, 27.5 metres, with a trunk 3.10 metres round at chest height. It stands under the wall of the road up to the Pena, about 1.5 kilometres from Alajar.",
+  "question_context": "The quejigo, Quercus faginea, is singled out by the Junta de Andalucia's register for height rather than girth. Its 27.5 metres come from two main limbs that rise almost vertically from the trunk, so the crown, about 17 by 16 metres, is upright rather than spreading. At 3.10 metres round it is no giant by waistline, and the register gives no age. The setting is the other reason to come. The Pena de Arias Montano is a rock outcrop above Alajar where the scholar Benito Arias Montano retired. Its hermitage of Nuestra Senora de los Angeles goes back to medieval times and was remodelled in the sixteenth century, and the pilgrimage to it falls on 8 September. A Junta guide to the area says it holds the largest stand of quejigo in the natural park. This tree grows under the low wall of the road up, among exotic red gum, weeping willow and a few field elms, about 1.5 kilometres from the village by road or by the signed path. If you know its age, tell us.",
+  "hero_tree_id": "arc_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Sierra de Aracena?",
+      "a": "This page holds one tree from the sierra, and it has no published age. The tall quejigo below the Pena de Arias Montano is listed for its height, 27.5 metres."
+    },
+    {
+      "q": "How do I get to the Pena de Arias Montano?",
+      "a": "It is about 1.5 kilometres from Alajar, by road or by the signed path from the village. Alajar has a regional bus from Aracena."
+    },
+    {
+      "q": "Does it cost anything?",
+      "a": "No. The tree stands beside the public road up to the Pena, an open pilgrimage site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "arc_001",
+      "name": "The Tall Quejigo of the Pena de Arias Montano",
+      "species": "Portuguese Oak (Quercus faginea)",
+      "girth_cm": 310,
+      "height_m": 27.5,
+      "location": {
+        "address": "Under the low wall of the road up to the Pena de Arias Montano and the Ermita de Nuestra Senora de los Angeles, Alajar",
+        "latitude": 37.878348,
+        "longitude": -6.66713,
+        "neighbourhood": "Pena de Arias Montano, Alajar"
+      },
+      "story": "At 27.5 metres this is a very tall quejigo, and height is what the Junta de Andalucia's register listed it for. It is a Portuguese oak, growing just below the Pena de Arias Montano. It has only two main limbs, and both rise almost straight up, so in spring leaf the register describes the crown as linear, upright rather than spreading, about 17 by 16 metres. The trunk is 3.10 metres round at chest height and 3.50 at the base.\n\nThe Pena is a rock outcrop above the village of Alajar where the scholar Benito Arias Montano retired. The hermitage of Nuestra Senora de los Angeles on top goes back to medieval times and was remodelled in the sixteenth century, and the pilgrimage to it is held every 8 September. A Junta guide to the area says it holds the largest stand of quejigo in the Sierra de Aracena natural park.\n\nThis tree's own spot is less wild. It grows in a semi-landscaped strip under the low wall of the road up to the Pena, among exotic red gum and weeping willow and a few field elms.\n\nThe register is our only source for the tree itself, and no dated photograph of it has been published. Nobody has given it an age. If you know one, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf",
+        "https://www.eldiario.es/andalucia/pasaporte/leyendas-naturaleza-pena-arias-montano_1_2227242.html",
+        "https://juntadeandalucia.es/medioambiente/portal/documents/20151/a0d86e65-910b-be0b-55a9-35827f23908f"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf",
+        "id": "rediam_1241"
+      },
+      "access": "Free. Beside the public road up to the Pena de Arias Montano and its hermitage, below the roadside wall.",
+      "transport": "About 1.5 km from Alajar village by road or by the signed path; Alajar has a regional bus from Aracena.",
+      "how_to_recognise": "You can recognise it by its height, 27.5 metres, and two main limbs rising almost vertically into an upright crown. It grows under the wall of the road up to the Pena, beside red gum, weeping willow and field elms.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register-only for the tree (flagged). Site, access and context from the Junta trail guide and eldiario. Sheet species Quercus faginea (quejigo) in the sierra's wording; stated height 27.5 m from the sheet. No iNaturalist/Commons check done. Companion rediam_1240 (Encina de la Pena, sheet 404) not examined.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

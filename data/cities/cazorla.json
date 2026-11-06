@@ -1,0 +1,209 @@
+{
+  "city": "Sierra de Cazorla",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Four of the five trees here are pines, and in the Sierra de Cazorla they carry stories as much as size. Muleteers once marked the bark of one to tell each other they had passed. Families from the mountain farmhouses heard Sunday Mass under another, and a stone beside a third carries the name of the naturalist who filmed around it. A maritime pine reaches 27 metres near the Fuente del Oso, and two turpentine trees of unusual size grow above the Rio Borosa.",
+  "meta_description": "Five singular trees of the Sierra de Cazorla: the muleteers' pine, the pine of the Mass, the naturalist's pine, a 27-metre maritime pine, turpentine trees.",
+  "question_meta": "No tree in the Sierra de Cazorla has a published age. What Andalusia's register measures instead, and where the five singular trees stand.",
+  "question_answer": "Nobody has published an age for any tree on this page, and Andalusia's register gives none. The thickest trunk it measured at chest height here is the Pino de Felix Rodriguez de la Fuente, a Spanish black pine 4.50 metres round, beside the GR-247 forest track at the Collado de la Zarca, roughly 30 kilometres of track from Cazorla.",
+  "question_context": "The Junta de Andalucia keeps a measured sheet for each tree in its register of singular trees, and for Cazorla those sheets record size, shape and story rather than age. Girth is the nearest thing to a clue, and it has to be read with care, because the sheets measure at different heights. The Felix Rodriguez de la Fuente pine is 4.50 metres round at the standard 1.30 metres. The Pino de la Misa measures about 4.20 metres, but at 40 centimetres above the ground, because it forks so low into three limbs. The Pino de las Cruces, the end point of a waymarked 12.1 kilometre trail from the Puente de las Herrerias, has no girth or height we can give you at all. The maritime pine at the Fuente del Oso is the tallest, at 27 metres, and the turpentine trees above the Rio Borosa are a different species altogether. So this page names no oldest tree. If you know the age of any of them, or have measured the Pino de las Cruces, tell us.",
+  "hero_tree_id": "czl_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Sierra de Cazorla?",
+      "a": "Nobody has published an age for these five. The thickest trunk measured at chest height is the Pino de Felix Rodriguez de la Fuente, 4.50 metres round."
+    },
+    {
+      "q": "How do I get to the Pino de las Cruces?",
+      "a": "On foot, along the Junta's waymarked trail from the Puente de las Herrerias, 12.1 kilometres one way, rated high difficulty and about 4 hours 50 minutes each way. Allow a long day."
+    },
+    {
+      "q": "Can I reach these trees by bus?",
+      "a": "No. All five stand on forest tracks or trails inside the natural park, and none has a bus stop near it. A car, a bike or a long walk is the way in."
+    },
+    {
+      "q": "Why is it called the Pino de la Misa?",
+      "a": "Because families from the farmhouses of the Sierra once gathered under it on Sundays to celebrate Mass, when the roads to a church were too poor, according to Andalusia's register."
+    }
+  ],
+  "trees": [
+    {
+      "id": "czl_001",
+      "name": "The Pino de Felix Rodriguez de la Fuente",
+      "species": "Spanish Black Pine (Pinus nigra subsp. salzmannii)",
+      "girth_cm": 450,
+      "height_m": 24,
+      "location": {
+        "address": "Collado de la Zarca, beside the Santiago de la Espada track, Parque Natural Sierras de Cazorla, Segura y Las Villas",
+        "latitude": 37.923172,
+        "longitude": -2.823673,
+        "neighbourhood": "Collado de la Zarca (Cazorla municipality)"
+      },
+      "story": "Several episodes of El Hombre y la Tierra, the television series of the naturalist Felix Rodriguez de la Fuente, were filmed in the country around this pine in the 1970s. A stone beside the trunk now carries his name, and the Junta de Andalucia's register lists the tree under it.\n\nIt would be worth the walk without him. This is a Spanish black pine, 24 metres tall, with a straight trunk 4.50 metres round at chest height and a crown of more than twenty branches spreading about 25 by 20 metres. The register prints a base girth of 12.70 metres, a figure that probably takes in the flare of the roots. On the south side those roots lie bare, because the forest track beside the tree was cut lower than its base.\n\nIt stands at about 1,640 metres at the Collado de la Zarca, in a hollow ringed by peaks over 1,700 metres where the Guadalentin valley begins, among hawthorn, broom, common juniper and cushion thorn. The GR-247 long-distance trail passes it on the left of the track at kilometre 6.4 of its fifteenth stage, and walkers left notes on it in 2022, 2023 and 2025.\n\nNobody has published an age for it. If you know one, tell us. It is a long way from anywhere, roughly 30 kilometres of forest track from Cazorla, so check the road with the Torre del Vinagre visitor centre before setting out.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1035.pdf",
+        "http://jaenparaisointerior.es/en/routes/stage-15-forestrand-house-refuge-fuente-acero-refuge-rambla-seca",
+        "https://www.komoot.com/highlight/4363380"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1035.pdf",
+        "id": "rediam_1035"
+      },
+      "access": "Free. Public land in the natural park, on the left of the GR-247 forest track at km 6.4 of stage 15; no permit named in the stage guide.",
+      "transport": "No public transport. Roughly 30 km of forest track from Cazorla by the Torre del Vinagre side, on foot or by vehicle; check road access at the visitor centre.",
+      "how_to_recognise": "You can recognise it by the stone beside it carved with the naturalist's name, and by roots laid bare on the south side above the track. It stands on the left of the forest track at the Collado de la Zarca.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register sheet (Junta) plus Junta GR-247 stage page (km 6.4, 4.5 m girth, 24 m, left of the track) plus Komoot highlight; sheet height/girth match the stage guide. Species per sheet is Pinus nigra subsp. salzmannii (laricio/salgareno). Man's name appears only as the official tree name of a late naturalist. iNaturalist: nothing within 150 m. Commons: no file found.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "czl_002",
+      "name": "The Pino de las Cruces",
+      "species": "Spanish Black Pine (Pinus nigra subsp. salzmannii)",
+      "location": {
+        "address": "End of the Puente de las Herrerias trail, at a crossroads of old tracks, Parque Natural Sierras de Cazorla, Segura y Las Villas",
+        "latitude": 37.847608,
+        "longitude": -2.958961,
+        "neighbourhood": "Puente de las Herrerias / Cazorla-Peal de Becerro"
+      },
+      "story": "Muleteers once cut marks into the bark of this pine to tell the companions behind them that they had already passed. That is the local tradition the Junta de Andalucia's trail guide records, from a time more than half a century ago when there was no other way to leave word in these mountains.\n\nIt is an old Spanish black pine standing where old tracks of the Sierra de Cazorla meet, with Cazorla to the north, Castril to the east and Pozo Alcon to the south. An information panel now stands beside it.\n\nThe register lists it among Andalusia's singular trees, but we have no girth or height for it yet. If you have measured it, tell us. Nobody has published an age either.\n\nGetting here takes a day. The Junta's waymarked trail from the Puente de las Herrerias ends at this tree after 12.1 kilometres, rated high difficulty, about 4 hours 50 minutes each way on foot, and an old track from the LF-7092 road passes nearer. Photographs from 2013, 2015 and 2019 show it standing, and the Junta's 2022 leaflet for the route still ends here, at the pine.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1025.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/1df5e965-02dc-c9a2-478f-d270e216ed69",
+        "https://commons.wikimedia.org/wiki/File:Pino_de_las_Cruces_24J_02.jpg",
+        "https://www.komoot.com/highlight/1752617"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1025.pdf",
+        "id": "rediam_1025"
+      },
+      "access": "Free. End point of the Junta's waymarked trail from the Puente de las Herrerias (12.1 km one way, high difficulty, no authorisation needed); also near road LF-7092.",
+      "transport": "Trailhead at the Puente de las Herrerias campsite, by road from Cazorla via the A-319 and JF-7091; no bus to the bridge. Allow a long day.",
+      "how_to_recognise": "You can recognise it by the information panel beside it and the old marks in its bark. It stands at the crossroads of old tracks where the trail from the Puente de las Herrerias ends.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Pino_de_las_Cruces_24J_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Veinticuatro de Jahén, via Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Veinticuatro_de_Jah%C3%A9n",
+        "status": "approved",
+        "width": 5184,
+        "height": 3456,
+        "taken_month": 7
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register sheet PDF 404s today (Junta server), so girth and height are NOT recorded; the register entry exists in the parsed list with coordinates. Existence, species and trail corroborated by the Junta leaflet and three Commons uploads 2013-2019. Name is in the register as Pino de Las Cruces. Not checked for fire/storm damage after 2019."
+    },
+    {
+      "id": "czl_003",
+      "name": "The Pino de la Misa",
+      "species": "Spanish Black Pine (Pinus nigra subsp. salzmannii)",
+      "girth_cm": 420,
+      "height_m": 16,
+      "location": {
+        "address": "Cerrillo de los Plomos, beside the track that climbs from Puerto de las Palomas, La Iruela",
+        "latitude": 37.984835,
+        "longitude": -2.931004,
+        "neighbourhood": "Puerto de las Palomas / La Iruela"
+      },
+      "story": "On Sundays, families from the farmhouses scattered through the Sierra once gathered under this pine to hear Mass, because the roads and the transport to reach a church were too poor. That is how the Junta de Andalucia's register explains the name, the Pino de la Misa, the pine of the Mass.\n\nIt has the shape for a gathering. The trunk forks so low that the register measured it 40 centimetres off the ground, where it is about 4.20 metres round, and nearly 4.80 at the base. Three big limbs leave it there. Two rise vertically, the third twists and grows leaning toward the ground, and the thickest of them is 2.70 metres round on its own. The tree is 16 metres tall with a crown about 13 by 16 metres, a Spanish black pine on the highest part of a slope among Portuguese oaks, a few maritime pines and other black pines.\n\nIt stands at the Cerrillo de los Plomos, beside the track that climbs from the Puerto de las Palomas on the A-319 above Cazorla. One thing should be said plainly. In 2001 a fire burned the country around the pass, and we have found no dated report of this tree since; the register sheet is our only source for it. If you walk up and find it standing, tell us, and if you know its age, tell us that too.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1018.pdf"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1018.pdf",
+        "id": "rediam_1018"
+      },
+      "access": "Free. Public land in the natural park beside the track that climbs from the Puerto de las Palomas; no permit stated, path not described by a second source.",
+      "transport": "About 13 km up the A-319 from Cazorla to the pass by car or bike, then on foot along the track; no bus to the pass known.",
+      "how_to_recognise": "You can recognise it by the trunk forking just above the ground into three big limbs, two upright and one twisting down toward the ground. It stands high on the slope beside the track up from the Puerto de las Palomas.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register-only: no web page found for this tree (searches empty). Flagged. Girth measured at 0.40 m height.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "czl_004",
+      "name": "The Pino de la Fuente del Oso",
+      "species": "Maritime Pine (Pinus pinaster)",
+      "girth_cm": 335,
+      "height_m": 27,
+      "location": {
+        "address": "A few metres past the Fuente del Oso on the way to the Parador, Cazorla",
+        "latitude": 37.909485,
+        "longitude": -2.941975,
+        "neighbourhood": "Fuente del Oso, above Cazorla"
+      },
+      "story": "This pine earned its place in the Junta de Andalucia's register by height. It is a maritime pine, the pino resinero, and its top branches reach 27 metres, all crowded to one side so that the crown stands lopsided against the sky. The trunk curves slightly near the ground before it rises straight, and measures 3.35 metres round at chest height, doubling to 6.70 at the base.\n\nIt stands a few metres past the Fuente del Oso, the bear's spring, on the way up to the Parador of Cazorla, next to a small fenced plot that holds the spring among cypresses and walnuts. The tree itself is outside the fence, about 1.3 kilometres short of the Parador. The register lists a second pine about 80 metres away as its twin, numbered II.\n\nNobody has published an age for either of them. A Junta walking guide mentions a large resin pine near the start of a walk from the Fuente del Oso without saying which tree it means. If you know whether it is this one, or know how old it is, tell us.\n\nThe register is the only source for this tree, and its pin is the register's point rather than a fix taken at the trunk, so look for the crown before the trunk, 27 metres up with its weight all on one side.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1046.pdf"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1046.pdf",
+        "id": "rediam_1046"
+      },
+      "access": "Free. Public land beside the road from the Fuente del Oso to the Parador, outside the small fenced plot around the spring.",
+      "transport": "About 1.3 km below the Parador of Cazorla by the JF-7094, or from the Fuente del Oso recreation area; no bus known.",
+      "how_to_recognise": "You can recognise it by the crown, 27 metres up, with its highest branches all on one side above a slightly curved trunk. It stands just past the Fuente del Oso toward the Parador, by a fenced plot of cypresses and walnuts.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register-only, flagged. Species per sheet (Pinus pinaster, resinero). Twin rediam_1047 sheet not available. Junta guide mentions a large resin pine near the start of a Fuente del Oso walk but does not tie it to this register entry.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "czl_005",
+      "name": "The Cornicabra of the Salto de los Organos",
+      "species": "Terebinth (Pistacia terebinthus)",
+      "girth_cm": 273,
+      "height_m": 10.5,
+      "location": {
+        "address": "Slope above the Rio Borosa near the Salto de los Organos, Santiago-Pontones",
+        "latitude": 37.979497,
+        "longitude": -2.814908,
+        "neighbourhood": "Salto de los Organos, Rio Borosa"
+      },
+      "story": "Cornicabra is the local name for the turpentine tree, and the Junta de Andalucia's register lists two of unusual size on a steep, stony slope above the Rio Borosa, about 20 metres apart. This is the bigger one. Its trunk is 2.73 metres round just below the fork, 65 centimetres up, and 3.20 at the base. It splits into two heavy limbs, the upper dividing in four and the lower in three, under a round crown about 15 metres across on a tree 10.5 metres tall.\n\nIts neighbour is built differently, a stem with four shoots from the base that branches into seven main limbs, 2.20 metres round and 10 metres high. Both grow among holm oak and several kinds of pine.\n\nThe Rio Borosa trail is a waymarked walk in the Cazorla park, about seven kilometres along a track from the visitor point near Torre del Vinagre up to the hydroelectric station at the Salto de los Organos. The trees are near its far end but not on the path itself. Reaching them means a scramble across loose, stony ground, so be honest with yourself about the slope before you leave the trail.\n\nThe register is the only source that names these trees, and no dated photograph of them has been published. Nobody has given either an age. If you know one, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1014.pdf",
+        "https://www.articulo14.es/espana-por-la-igualdad/andalucia/guia-para-hacer-la-ruta-del-rio-borosa-el-corazon-acuatico-del-parque-natural-de-cazorla-20251010.html"
+      ],
+      "official_register": {
+        "name": "Arboles y arboledas singulares de Andalucia (REDIAM)",
+        "url": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1014.pdf",
+        "id": "rediam_1014"
+      },
+      "access": "Free. Public land on a steep stony slope off the Rio Borosa trail near the Salto de los Organos; not on the path, so reaching it is a scramble.",
+      "transport": "Rio Borosa trailhead at the visitor point near Torre del Vinagre, then about 7 km on foot along the track; no bus to the trailhead.",
+      "how_to_recognise": "You can recognise it by the trunk forking low into two heavy limbs under a round crown, with a similar turpentine tree 20 metres away. It stands on the stony slope above the Rio Borosa near the Salto de los Organos.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Species per sheet is Pistacia terebinthus ('cornita' in the title). Register-only for the tree; Borosa trail is a major public route (Oct 2025 guide) but it does not name the trees. Folded rediam_1015. Flagged.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

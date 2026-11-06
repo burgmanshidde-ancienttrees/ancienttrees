@@ -1,0 +1,68 @@
+{
+  "city": "San Pietro in Amantea",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "San Pietro in Amantea is a small hill village inland from Amantea on Calabria's Tyrrhenian coast, and a tree stands at the heart of its main square. U Chiuppu, as the village calls it, is an oriental plane 32 metres tall and 467 centimetres round, listed on Italy's national register of monumental trees. It shares Piazza IV Novembre with a fountain from 1900 and the church of the Madonna delle Grazie, and it is free to see at any hour.",
+  "meta_description": "U Chiuppu, the 32-metre oriental plane in the square of San Pietro in Amantea, Calabria, listed among Italy's monumental trees.",
+  "question_meta": "What is the big tree in San Pietro in Amantea? U Chiuppu, an oriental plane 32 metres tall in Piazza IV Novembre.",
+  "question_answer": "The big tree in San Pietro in Amantea is U Chiuppu, an oriental plane in Piazza IV Novembre. Italy's national register measures it at 32 metres tall and 467 centimetres round. It stands in the open square beside a fountain from 1900, free to see.",
+  "question_context": "U Chiuppu stands in Piazza IV Novembre, which locals call Mmienzu U Largu, in the historic centre of San Pietro in Amantea. Italy's national register lists it as an oriental plane, 32 metres tall and 467 centimetres round, and a Calabrian travel site describes it as almost five metres round. The same square holds U Zutittu, a fountain from 1900, and the church of the Madonna delle Grazie, so the tree, the fountain and the church make one stop. Nobody has published when the plane was planted, and the most recent record we have found of it is a 2021 map entry, so a dated photograph from a visitor would help the next person who comes. The nearest railway station is Amantea, on the Tyrrhenian line, about four kilometres to the west as the crow flies. We could not confirm a bus link, so a car or taxi from Amantea is the simplest way up. There is no gate and no ticket, since the tree stands in the open village square.",
+  "hero_tree_id": "spm_001",
+  "oldest_tree_id": "spm_001",
+  "faq": [
+    {
+      "q": "Where exactly is U Chiuppu?",
+      "a": "In Piazza IV Novembre, the main square of San Pietro in Amantea's historic centre, beside the fountain from 1900 and the church of the Madonna delle Grazie."
+    },
+    {
+      "q": "How old is U Chiuppu?",
+      "a": "Nobody has published a planting date. If you know it, or the story behind the name, tell us."
+    },
+    {
+      "q": "How do I get to San Pietro in Amantea?",
+      "a": "Take the train to Amantea on the Tyrrhenian line, then a car or taxi to the village, about four kilometres east as the crow flies."
+    }
+  ],
+  "trees": [
+    {
+      "id": "spm_001",
+      "name": "U Chiuppu, the Oriental Plane of San Pietro in Amantea",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "not documented",
+      "girth_cm": 467,
+      "height_m": 32,
+      "location": {
+        "address": "Piazza IV Novembre, San Pietro in Amantea (CS)",
+        "latitude": 39.13745,
+        "longitude": 16.11225,
+        "neighbourhood": "centro storico"
+      },
+      "location_site": {
+        "name": "Piazza IV Novembre (locally 'Mmienzu U Largu')",
+        "radius_m": 30
+      },
+      "story": "San Pietro in Amantea is a small hill village, and in the middle of its main square stands a tree 32 metres tall. The village calls it U Chiuppu. Italy's national register calls it an oriental plane, 467 centimetres round, and lists it among the country's monumental trees.\n\nThe square has two names as well. On the map it is Piazza IV Novembre, but locally it is Mmienzu U Largu, roughly the middle of the open space, and a Calabrian travel site describes the plane there as almost five metres round. The same square holds a fountain from 1900 known as U Zutittu and the church of the Madonna delle Grazie, so the tree shares its space with most of what the village has to show a visitor.\n\nOriental planes are the long-lived planes of the eastern Mediterranean, the species that shades village squares from Greece to the Caucasus, and they put on height fast when they have room. This one has had room. How long it has had it, nobody has published. If you know when U Chiuppu was planted, or the story behind its name, tell us.\n\nThe most recent record we have of it is a 2021 map entry. A dated photograph from the square would tell the next visitor it still stands.",
+      "verified_sources": [
+        "https://www.calabriaportal.com/san-pietro-in-amantea/1311-san-pietro-in-amantea.html",
+        "https://www.calabriaportal.com/natura-calabrese/alberi-monumentali-calabria.html",
+        "https://www.openstreetmap.org/node/8900606137"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 01/I108/CS/18",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free. The tree stands in the open village square in the historic centre; no entry or permission needed.",
+      "transport": "Amantea, on the Tyrrhenian railway line, is the nearest station, about 4 km west of the village as the crow flies; a car or taxi from Amantea is simplest.",
+      "how_to_recognise": "You can recognise it as the one great plane in Piazza IV Novembre, 32 metres tall and nearly 5 metres round, in the square with the 1900 fountain and the church of the Madonna delle Grazie.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: MASAF 01/I108/CS/18, Platanus orientalis, girth 467 cm, height 32 m, Piazza IV Novembre. Second source: calabriaportal.com describes 'a monumental oriental plane of almost 5 m perimeter, U Chiuppu' in the square called 'Mmienzu U Largu', and lists it among Calabria's monumental trees. A search summary also said 474 cm at 1 m height in a 2014 survey and a local tale that it sprouted from a plane-wood prop set beside a young acacia which then dried out; NEITHER was seen on a fetched page, so do not use them without a re-check. Village treats it as its symbol (a local association is named 'L'amici du chiuppu', from search summary only). Square also holds the 1900 fountain 'U Zutittu' and the church of Madonna delle Grazie (calabriaportal). PIN: OSM node 8900606137 (natural=tree, species:it platano orientale, height=32, added 2021-07-07) sits at 39.1374547,16.1122499, 2 m from the MASAF point, the only plane node in the square; kept APPROXIMATE because its height tag equals the register figure so the node may derive from the register, not independent. ALIVE: lifecheck NONE; no dated photo or news found; the OSM node (2021) is the most recent evidence; the register date for this sheet was not checked. Flag: no dated sighting in the last few years. No Commons photo found by geosearch (Commons API too busy, one attempt). A Commons file 'Platano Orientale.jpg' (CC BY-SA 4.0, 2018) turned up by text search but nothing ties it to this tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

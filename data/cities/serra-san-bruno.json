@@ -1,0 +1,67 @@
+{
+  "city": "Serra San Bruno",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Serra San Bruno, in the Serre mountains of Calabria, is known for its Carthusian monastery, and its most visited place is the sanctuary of Santa Maria del Bosco, a church among silver firs about two kilometres away. Italy's national register picks out one of those firs, 33 metres tall and 390 centimetres round, in the wood around the forecourt, Saint Bruno's small lake and the granite staircase. The sanctuary is free; the monastery itself is closed to visitors.",
+  "meta_description": "The monumental silver fir of Santa Maria del Bosco in Serra San Bruno, Calabria, 33 metres tall in the wood around the sanctuary.",
+  "question_meta": "What is the remarkable tree of Serra San Bruno? A 33-metre silver fir at the sanctuary of Santa Maria del Bosco.",
+  "question_answer": "The remarkable tree of Serra San Bruno is a silver fir at the sanctuary of Santa Maria del Bosco, listed on Italy's national register at 33 metres tall and 390 centimetres round. It stands in the fir wood around the forecourt, by Saint Bruno's lake and the granite staircase.",
+  "question_context": "Santa Maria del Bosco lies about two kilometres from the entrance of the Certosa, the Carthusian monastery of Serra San Bruno, and can be reached on foot or by car. The comune describes the sanctuary standing among secular silver firs and young beeches, with a large forecourt, the small lake of Saint Bruno and a granite staircase up to the church, and says tens of thousands of people visit in summer. The church is entered freely by its front staircase, though opening hours are not confirmed. The monastery itself is closed to visitors, but the sanctuary and its woods are not part of it. Italy's national register lists one fir here as monumental, 33 metres tall and 390 centimetres round, without describing the trunk, so the one to look for is the biggest fir around the forecourt. A fir was observed at that spot in 2021, and nothing more recent has been published. No source gives its age. If you visit and can say which fir it is, or how old it might be, tell us.",
+  "hero_tree_id": "ssb_001",
+  "oldest_tree_id": "ssb_001",
+  "faq": [
+    {
+      "q": "Can I visit the Certosa of Serra San Bruno?",
+      "a": "The monastery itself is closed to visitors. The sanctuary of Santa Maria del Bosco and its fir wood, about two kilometres away, are open and free."
+    },
+    {
+      "q": "How do I find the monumental fir?",
+      "a": "Look for the biggest silver fir around the sanctuary forecourt, by Saint Bruno's lake and the granite staircase. The register gives it 33 metres tall and 390 centimetres round."
+    },
+    {
+      "q": "How do I get to Santa Maria del Bosco?",
+      "a": "Walk or drive about two kilometres from the Certosa entrance. There is no railway; Serra San Bruno has local buses."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ssb_001",
+      "name": "Silver Fir of Santa Maria del Bosco",
+      "species": "Silver Fir (Abies alba)",
+      "age_estimate": "not documented",
+      "girth_cm": 390,
+      "height_m": 33,
+      "location": {
+        "address": "Santuario di Santa Maria del Bosco, Serra San Bruno (VV)",
+        "latitude": 38.56085,
+        "longitude": 16.316183,
+        "neighbourhood": "Bosco di Santa Maria"
+      },
+      "location_site": {
+        "name": "Santa Maria del Bosco sanctuary forecourt",
+        "radius_m": 50
+      },
+      "story": "Serra San Bruno's most visited place is a church in a fir wood, and Italy's national register picks out one of those firs as monumental. It is a silver fir 33 metres tall with a trunk 390 centimetres round, at Santa Maria del Bosco, the sanctuary in the woods about two kilometres from the town's Carthusian monastery.\n\nThe comune describes the sanctuary standing among secular silver firs and young beeches, with a large forecourt, the small lake of Saint Bruno and a granite staircase up to the church. Tens of thousands of people come in summer. Bosco means wood, and these firs are it.\n\nThe monastery itself is closed to visitors. The sanctuary and its woods are not part of the enclosure, and the church is reached freely by its front staircase.\n\nThe register gives the size but no description of the trunk, and no source dates it, so how old it is remains a question. A fir stood at this spot in a 2021 observation, but we have found nothing more recent. If you go, look for the biggest fir around the forecourt and tell us what you find.",
+      "verified_sources": [
+        "https://www.comune.serrasanbruno.vv.it/vivere-il-comune/luoghi/santuario-di-santa-maria-del-bosco/",
+        "https://www.inaturalist.org/observations/101131944"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 03/I639/VV/18",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free. The comune describes the sanctuary complex (large forecourt, Saint Bruno's small lake, granite staircase up to the church) as the main visitor draw of Serra San Bruno, tens of thousands of visitors in summer. Church entry is free by the front staircase; check opening hours before you go. The Certosa monastery itself is closed to visitors; the sanctuary and woods are not part of it.",
+      "transport": "About 2 km from the Certosa entrance on foot or by car (Certosa car park). No railway; Serra San Bruno has local buses, check the timetable.",
+      "how_to_recognise": "You can recognise it as the biggest silver fir around the sanctuary forecourt, 33 metres tall and nearly 4 metres round, in the wood by Saint Bruno's lake and the granite staircase.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register-only for the individual tree: MASAF 03/I639/VV/18, Silver Fir, 390 cm girth, 33 m, locality Santa Maria del Bosco. Second source is partial: the comune says the sanctuary stands among secular silver firs and young beeches; an iNaturalist research-grade Abies alba observation (2021-11-05, obs 101131944, not openly licensed, no accuracy given) lies about 12 m from the register point, so a fir does stand at that spot. Nothing names THIS trunk. RECOGNISE: the register point is inside the sanctuary complex, in the fir wood around the forecourt by the lake of San Bruno and the granite staircase; the biggest fir in that forecourt is the one to look for (no source describes the trunk, so the writer should not invent marks). ALIVE: 2021 iNaturalist sighting only; flag. Rule change 2026-11-02: approximate pin ships. Context: the comune page places the Dormitory of San Bruno on the far side of the sanctuary.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

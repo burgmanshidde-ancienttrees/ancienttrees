@@ -1,0 +1,67 @@
+{
+  "city": "Ragusa",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Ragusa's biggest trees are not in the town but at Donnafugata Castle, about 20 kilometres away in the countryside. In the shaded first part of the castle park stand two Moreton Bay figs, about 25 metres apart, with trunks 9.5 and 9 metres round and crowns 25 metres high by Sicily's register of monumental trees. Other figs grow in the park, but none comes close. The park is a municipal visit with its own ticket.",
+  "meta_description": "Two Moreton Bay figs more than nine metres round in the park of Donnafugata Castle, about 20 km from Ragusa. Where they stand and how to visit.",
+  "question_meta": "Ragusa's biggest trees are two Moreton Bay figs at Donnafugata Castle, 9.5 and 9 metres round. Where to find them in the park.",
+  "question_answer": "The biggest trees near Ragusa are two Moreton Bay figs in the park of Donnafugata Castle, about 20 kilometres from the town. Sicily's register gives them trunks 9.5 and 9 metres round and a height of 25 metres. They stand about 25 metres apart in the shaded first part of the park.",
+  "question_context": "Donnafugata is a castle estate in the countryside south-west of Ragusa, and its park is visited with a municipal ticket; one source gives 4 EUR for the park alone and 10 EUR with the castle and museum, and hours differ between sources, so check with the Comune di Ragusa first. The Italian Botanical Heritage guide describes the first section of the park as shaded by large figs of this species, which older guides called Ficus magnolioides. Two of them are on Sicily's register of monumental trees, at 9.5 and 9 metres round and 25 metres tall, standing on buttress roots about 25 metres apart. Visitors recorded Moreton Bay figs beside the two registered points on iNaturalist in March and June 2026, so the trees are alive and the area is right. Which crown matches which register sheet is not settled, because several figs grow there, but the size gives the two away. Nobody has published an age or a planting date for either, and we have not found a photograph; readers who visit could supply both.",
+  "hero_tree_id": "rgs_001",
+  "oldest_tree_id": "rgs_001",
+  "faq": [
+    {
+      "q": "How big are the fig trees at Donnafugata Castle?",
+      "a": "Sicily's register gives the two largest trunks of 9.5 and 9 metres round and a height of 25 metres. They are Moreton Bay figs, Ficus macrophylla, and stand about 25 metres apart."
+    },
+    {
+      "q": "Do I need a ticket to see the Donnafugata figs?",
+      "a": "Yes. The castle park is a municipal visit with its own ticket; one source gives 4 EUR for the park only. Hours differ between sources and some list Monday closing, so check with the Comune di Ragusa before going."
+    },
+    {
+      "q": "How far is Donnafugata Castle from Ragusa?",
+      "a": "About 20 kilometres, in the countryside south-west of the town. The simplest way there is by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rgs_001",
+      "name": "Moreton Bay Figs of Donnafugata Castle Park",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not documented",
+      "girth_cm": 950,
+      "height_m": 25,
+      "location": {
+        "address": "Parco del Castello di Donnafugata, Contrada Donnafugata, Ragusa",
+        "latitude": 36.88179,
+        "longitude": 14.56481,
+        "neighbourhood": "Donnafugata, about 15 km from Ragusa"
+      },
+      "story": "Two figs in the park of Donnafugata Castle have trunks more than nine metres round, and they stand only about twenty-five metres apart. Sicily's register of monumental trees gives one a girth of 9.5 metres and the other 9 metres, and puts both at 25 metres tall.\n\nThey are Moreton Bay figs, Ficus macrophylla, the Australian species that older guides called Ficus magnolioides. The Italian Botanical Heritage guide describes the first section of the park as shaded by large figs of that kind, and these two are the giants among them, standing on buttress roots that spread out across the ground before the trunks begin.\n\nDonnafugata is a castle and estate in the countryside about 20 kilometres from the town of Ragusa, and the park is visited with its own municipal ticket. Several figs grow in it, which is why our pin is approximate. Visitors have recorded Moreton Bay figs a few metres from the two registered points on iNaturalist, in March and June 2026, so the trees are alive and the area is right, but which crown belongs to which register sheet is not settled. The size should settle it on the day. Nothing else in the park comes close.\n\nNobody has published an age or a planting date for either fig. If you know when they went in, tell us. A photograph would help too, as we have not found one.",
+      "verified_sources": [
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+        "https://luoghi.italianbotanicalheritage.com/en/donnafugata-castle-and-park/",
+        "https://www.inaturalist.org/observations/371882837",
+        "https://www.inaturalist.org/observations/344859394",
+        "https://www.openstreetmap.org/node/13004387632"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheets 01/H163/RG/19 and 02/H163/RG/19, D.M. n. 5450 of 19/12/2017",
+        "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+      },
+      "access": "Paid: the castle park is a municipal visit with its own ticket (one source gives 4 EUR for the park only, 10 EUR combined with the castle and museum). Hours disagree between sources and some list Monday closing; check with the Comune di Ragusa before going.",
+      "transport": "Donnafugata is a castle estate in the countryside south-west of Ragusa, about 20 km from the town by road; easiest by car, and check locally for a seasonal bus.",
+      "how_to_recognise": "You can recognise them by their size, two figs on buttress roots about 25 metres apart in the shaded first part of the park near the entrance, far bigger than the other figs there.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Two registered figs about 25 m apart in the park: sheet 02 girth 950 cm, height 25 m and sheet 01 girth 900 cm, height 25 m; folded into one entry using the larger. Italian Botanical Heritage describes the first section of the park as shaded by large Ficus magnolioides (the old name of this species) and says the park holds roughly a hundred surviving plants (that count seen only in a search summary, not on the page fetched: do not use). Alive: iNaturalist Ficus macrophylla records at 36.88178,14.56456 on 2026-06-11 and 2026-03-24, some 20 m from the two register points (several figs stand in the park, so which one is the big one is not settled; OSM node is the register copy, fixme resurvey): pin approximate. No Commons file found. Recognise: the two huge figs with buttress roots in the first, shaded part of the park near the entrance side, far larger than the other figs there. Register plus a heritage guide and dated observations.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    }
+  ]
+}

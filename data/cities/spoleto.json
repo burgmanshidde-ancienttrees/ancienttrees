@@ -1,0 +1,270 @@
+{
+  "city": "Spoleto",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Spoleto's six registered trees sit in places the town has used for centuries: a villa park once owned by a pope, the public gardens on Viale Matteotti, a palace garden by the Roman amphitheatre, the cemetery gate, and the holm-oak wood of Monteluco, protected by a law carved in the 3rd century BC. The pick is the Cedar of Lebanon at Villa Redenta, five to six metres round depending on whose tape you trust. Five of the six stand within an easy walk of the old town; Monteluco takes half a day.",
+  "meta_description": "Six monumental trees in Spoleto, Umbria: the Villa Redenta cedar, a coast redwood by Sol LeWitt's dance floor, and the holm oak of Monteluco.",
+  "question_meta": "Where are the oldest trees in Spoleto?",
+  "question_answer": "Spoleto's oldest trees by any written account are the Cedar of Lebanon in the park of Villa Redenta, described as over 200 years old, and the holm oak at the Franciscan convent on Monteluco, which Umbria's survey calls at least a century old. The Villa Redenta park is public and free, about 1.5 kilometres north of the old town.",
+  "question_context": "Spoleto's trees are measured more carefully than they are dated. Italy's national register gives girth and height for each, and Umbria's own regional survey measured them again, often with slightly different results. The Villa Redenta cedar comes out at 5.2 metres round in one and 6.3 metres in the other. Neither records an age. The Umbrian survey uses the word secolare, which means at least a century and no more, and the only firmer figure is the park's own description of the cedar as over 200 years old. So this page gives ages only where a source does and leaves the rest open. The setting is older than any of the trees. Villa Redenta belonged to Pope Leo XII from 1824 to 1829. The Lex Spoletina, an inscription from the late 3rd century BC, forbade cutting the sacred holm-oak grove on Monteluco, and the convent oak stands inside that wood today. Most of the trees are a short walk from the old town. The plane at Palazzo Marignoli is seen over a garden wall from the lane outside, the redwood and the two cypresses are on public ground, and Monteluco is about 8 kilometres up the road.",
+  "hero_tree_id": "spo_001",
+  "oldest_tree_id": "spo_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Spoleto?",
+      "a": "The Cedar of Lebanon at Villa Redenta is described as over 200 years old, a round figure rather than a ring count. No other tree here has a firmer date."
+    },
+    {
+      "q": "Are Spoleto's monumental trees free to see?",
+      "a": "Yes. Villa Redenta's park, the Viale Matteotti gardens, the cemetery and the Monteluco wood are free, the cypress at the Ristorante dei Pini stands at the street gate, and the Palazzo Marignoli plane is seen from the public lane."
+    },
+    {
+      "q": "Can I walk between them?",
+      "a": "Five of the six are within about 1.5 kilometres of the old town. The holm oak at Monteluco is about 8 kilometres by road above the town, or roughly 4 kilometres by footpath from the Ponte delle Torri."
+    },
+    {
+      "q": "What is the Lex Spoletina?",
+      "a": "An inscription from the late 3rd century BC that fixed penalties for cutting or burning the sacred holm-oak grove of Monteluco, counted among the earliest forest protection laws."
+    }
+  ],
+  "trees": [
+    {
+      "id": "spo_001",
+      "name": "The Cedar of Villa Redenta",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_basis": "source",
+      "girth_cm": 520,
+      "height_m": 20.5,
+      "location": {
+        "address": "Parco di Villa Redenta, Via di Villa Redenta, 06049 Spoleto, behind the Doric tempietto",
+        "latitude": 42.744394,
+        "longitude": 12.741394,
+        "neighbourhood": "Villa Redenta, north of the old town"
+      },
+      "story": "The garden around this cedar once belonged to a pope. Leo XII owned Villa Redenta from 1824 until his death in 1829, one stop in a long line of owners that runs from the Martorelli through the Loccatelli to the Marignoli. Filippo Marignoli bought the place back in the 1880s and named it Redenta, the redeemed. Since 1973 its park of more than two hectares has belonged to the Province of Perugia and is open to the public, while the villa itself works as a hostel.\n\nWhen the park's trees were counted in the 1970s, the tally came to 855 broadleaves and 66 conifers, and this Cedar of Lebanon headed the list of the most valuable. The two official measurements of it disagree by more than a metre. The national register gives 5.2 metres round and 20.5 metres tall. Umbria's regional survey measured 6.3 metres round, 23 metres tall and a crown 30 metres across.\n\nThe park's own description puts it at over 200 years, a round figure rather than a count of rings. Photographs from 2013 show a broad, layered crown rising past the villa's roofline. It stands on the lawn behind the small Doric tempietto, near the Cafe House, where the park keeps two more of its veterans, a holm oak along the boundary path and a very old southern magnolia.",
+      "verified_sources": [
+        "https://www.montagneaperte.it/patriarchiverdi/cedro-del-libano-spoleto-villa-redenta/",
+        "https://www.montagneaperte.it/patriarchiverdi/spoleto-il-parco-di-villa-redenta/",
+        "https://www.apgi.it/giardino/villa-redenta/",
+        "https://it.wikipedia.org/wiki/Villa_Redenta",
+        "https://fondoambiente.it/luoghi/villa-redenta-spoleto-85709"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "01/I921/PG/10",
+        "url": "https://www.montagneaperte.it/patriarchiverdi/cedro-del-libano-spoleto-villa-redenta/"
+      },
+      "access": "Villa Redenta's park is public and free, listed as open all year from 9:30 to 18:30; those hours are not confirmed by the owner, so check before going. The villa itself is a hostel.",
+      "transport": "About 1.5 km north of the old town, roughly a 20-minute walk; from Spoleto railway station it is closer, about 10 to 15 minutes on foot.",
+      "how_to_recognise": "You can recognise it by the broad, layered crown, the biggest conifer on the lawn, reaching above the villa's roofline. It stands behind the small Doric tempietto, near the Cafe House and the villa's side wall.",
+      "location_precision": "approximate",
+      "pin_source": "MASAF register coordinate, converted. Commons photographer's camera geotags sit 30 to 55 m away (not an object geotag), the regional sheet places it behind the Tempietto. Not proven to one crown.",
+      "curation_status": "flagged",
+      "verify_notes": "Two sources: MASAF row (girth 520 cm, 20.5 m) and the Umbrian regional sheet at Patriarchi Verdi (regional list code 71, Cedrus libani, girth 6.3 m, height 23 m, crown 30 m, health good by eye, 'secolare'). CONFLICT: girth 520 cm (MASAF) vs 630 cm (regional sheet); height 20.5 vs 23 m. Writer should give the register figure and state the other, or say 'over five metres round'. The park text calls the cedar 'over 200 years old, about 20 m' (APGI, Comune); age is a source's vague figure, not a measurement. Alive: no dated recent source for this specific tree; Commons photos 2013 show it healthy; an iNaturalist observation inside the park dated 2026-04-19 proves the park is open and visited. lifecheck NONE. Flagged on liveness. Park pinned at register coordinate, approximate; if findable-by-site is needed, the tree is one of the 'most precious specimens' of a 2 ha public park, the biggest conifer behind the Tempietto. monumentaltrees.com not consulted.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Villa_Redenta%2C_cedro_del_Libano._Spoleto.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Manuelarosi, via Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Villa_Redenta,_cedro_del_Libano._Spoleto.jpg",
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
+      }
+    },
+    {
+      "id": "spo_002",
+      "name": "The Redwood of the Casina dell'Ippocastano",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "girth_cm": 400,
+      "height_m": 33,
+      "location": {
+        "address": "Giardini pubblici di viale G. Matteotti, beside the Casina dell'Ippocastano, Spoleto",
+        "latitude": 42.731211,
+        "longitude": 12.734344,
+        "neighbourhood": "Viale Matteotti public gardens"
+      },
+      "story": "Of all the trees in Spoleto's public gardens on Viale Matteotti, only this coast redwood made Umbria's regional list of monumental trees. The national register measures it at 33 metres tall and 4 metres round. The regional survey gave 30 metres and 3.8, with a crown only 9.5 metres across, and that narrow spire is what sets it apart from the cedars, stone pines, old yews and planes around it.\n\nIts neighbours are unusually well connected for a town garden. Beside it stands the Casina dell'Ippocastano, a chalet with an alpine roof that the Swiss engineer Walter Fol designed around 1880 as the gardens' meeting place. Close by is a circular dance floor from the 1930s, which the artist Sol LeWitt decorated with curved coloured lines around 2000. And from the balustrade you can see the Spoletosfera, the geodesic dome by Buckminster Fuller that was given to the city in 1967 for the Festival dei Due Mondi.\n\nThe regional survey recorded the redwood in good health, on a page that carries no date, and nobody has published when it was planted. If you know, tell us. The gardens are open to walk through, five to ten minutes on foot from the edge of the old town.",
+      "verified_sources": [
+        "https://www.montagneaperte.it/patriarchiverdi/sequoia-spoleto-viale-g-matteotti-casina-dellippocastano/",
+        "https://www.montagneaperte.it/patriarchiverdi/spoleto-i-giardini-pubblici-di-viale-matteotti/"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "04/I921/PG/10",
+        "url": "https://www.montagneaperte.it/patriarchiverdi/sequoia-spoleto-viale-g-matteotti-casina-dellippocastano/"
+      },
+      "access": "Public municipal gardens on Viale Matteotti, open to walk through and free; opening hours not published.",
+      "transport": "In town, about a 5 to 10 minute walk from the edge of the old town near Piazza della Libertà.",
+      "how_to_recognise": "You can recognise it as the tall, slim spire, about 30 metres high, among the broader cedars and pines. It stands in the middle of the gardens near the round dance floor, beside the chalet-roofed Casina dell'Ippocastano.",
+      "location_precision": "approximate",
+      "pin_source": "MASAF register coordinate; regional sheet puts it at the centre of the gardens near the rotonda. Not proven to one crown.",
+      "curation_status": "flagged",
+      "verify_notes": "Two sources: MASAF row (400 cm, 33 m) and the Umbrian regional sheet, regional list code 75 (3.8 m, 30 m, crown 9.5 m, health good by eye). Sheet says it is the only tree of the gardens on Umbria's regional list; the gardens also hold a pino strobo, cedars, stone pines, old yews and planes. Photographs checked: Commons Casina photos show the building and a cedar, not this tree. Alive evidence is weak: the regional sheet records health good by eye (Patriarchi Verdi census, undated on the page) and the MASAF row is current; no dated photo or news of this trunk, lifecheck NONE. Flagged. No photo candidate found (Commons searches empty, geosearch near this point shows none of the trunk); ships on a recognition line under the rule of 2026-11-02.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spo_003",
+      "name": "The Plane of Palazzo Marignoli",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_basis": "source",
+      "girth_cm": 380,
+      "height_m": 29.5,
+      "location": {
+        "address": "Vicolo del Quartiere (off Via dell'Anfiteatro), view of the garden of Palazzo Marignoli, Largo Fratelli Cairoli, Spoleto",
+        "latitude": 42.737688,
+        "longitude": 12.739814,
+        "neighbourhood": "Old town, near the Roman amphitheatre"
+      },
+      "story": "Nobody may walk into the garden where this plane grows, and it hardly matters. Its crown spreads about 26 metres, enough to rise over the wall of Palazzo Marignoli and fill the view from the lanes outside.\n\nThe two official records cannot agree on what it is. The national register lists an oriental plane, 29.5 metres tall. Umbria's regional sheet, filed on a report from the Comune of Spoleto, calls it Platanus hispanica, the London plane, and gives 32 metres. Both put the trunk at 3.8 metres round. The regional sheet also calls it secolare, a word that means at least a century old and promises no more. If you can tell the two planes apart by the leaf, look up and tell us which this is.\n\nThe palace has stood since the 17th century and was restored and enlarged in the mid-1800s, when the Marignoli family took it on. Filippo Marignoli, banker and politician of that century, is the same man who bought back Villa Redenta on the edge of town and renamed it. His garden still holds a second, smaller plane and an old bay laurel stool, and the surveyor who measured them needed the family's permission to get in.\n\nYou do not. Walk up Vicolo del Quartiere from Via dell'Anfiteatro, or turn left from Vicolo San Giuseppe, and look over the wall.",
+      "verified_sources": [
+        "https://www.montagneaperte.it/patriarchiverdi/platano-comune-spoleto-largo-fratelli-cairoli-palazzo-marignoli/",
+        "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "31/I921/PG/10",
+        "url": "https://www.montagneaperte.it/patriarchiverdi/platano-comune-spoleto-largo-fratelli-cairoli-palazzo-marignoli/"
+      },
+      "access": "View-only. The tree stands in the private garden of Palazzo Marignoli, which is not open, but it is seen from the public lanes outside: Vicolo del Quartiere from Via dell'Anfiteatro, or Vicolo San Giuseppe, turning left.",
+      "transport": "In the old town, a few minutes on foot from Piazza del Mercato and the Roman theatre.",
+      "how_to_recognise": "You can recognise it by the crown, about 26 metres across, rising above the garden wall of Palazzo Marignoli; the garden's other plane is smaller. You see it from Vicolo del Quartiere, off Via dell'Anfiteatro.",
+      "location_precision": "approximate",
+      "pin_source": "Viewing spot, not the trunk: the public drinking fountain on Vicolo del Quartiere (OSM node 4848007961), about 50 m south of the register point 42.738128, 12.739611 inside the closed garden (hard rule 10, view-only trees pin the viewing place).",
+      "curation_status": "flagged",
+      "verify_notes": "Two sources: MASAF (oriental plane, 380 cm, 29.5 m) and the regional sheet (Comune di Spoleto reported it; Platanus hispanica, 3.8 m, 32 m, crown 26 m, 'secolare', health good by eye). CONFLICT: species oriental plane vs P. hispanica, height 29.5 vs 32 m. Age 'secolare' (centuries or at least a century) is the sheet's vague word; age range here is a loose reading, writer should say 'old' only. Same garden holds a second plane and a bay laurel stool. Alive evidence is weak: the regional sheet records health good by eye (Patriarchi Verdi census, undated on the page) and the MASAF row is current; no dated photo or news of this trunk, lifecheck NONE. Flagged. No photo candidate found (Commons searches empty, geosearch near this point shows none of the trunk); ships on a recognition line under the rule of 2026-11-02.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spo_004",
+      "name": "The Holm Oak of the Monteluco Convent",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_basis": "source",
+      "girth_cm": 347,
+      "height_m": 14.5,
+      "location": {
+        "address": "Convento Santuario di San Francesco, Monteluco, Spoleto, beside the fountain at the convent entrance",
+        "latitude": 42.724617,
+        "longitude": 12.750944,
+        "neighbourhood": "Monteluco, hill above Spoleto"
+      },
+      "story": "Cutting wood in the grove around this oak has been against the law for more than two thousand years. The Lex Spoletina, an inscription from the late 3rd century BC, fixed the penalties for felling or burning the sacred holm-oak wood of Monteluco, and it is counted among the earliest forest protection laws anywhere.\n\nThis particular oak stands beside the small fountain at the entrance of the old Franciscan convent, and it is broad rather than tall. The national register gives 3.47 metres round and 14.5 metres high, at 780 metres above sea level. Umbria's regional survey measured 3.4 metres round, 13 metres high and a crown 15 metres across, and called it secolare, a word that means at least a century and promises no more. Nobody has dated it more closely. If you know, tell us.\n\nThe convent behind it keeps its own long record. The Franciscans took over the small church of Santa Caterina here in 1218, a date tradition ties to Saint Francis himself. It trained novices until 1946 and has been a retreat house since 1954, so admire the oak from outside and leave the house in peace.\n\nMonteluco is about 8 kilometres by road above Spoleto, or roughly 4 kilometres by footpath from the Ponte delle Torri. The wood is open to walkers. Give it half a day.",
+      "verified_sources": [
+        "https://www.montagneaperte.it/patriarchiverdi/leccio-spoleto-monteluco/",
+        "https://inaturalist.org/observations/182069122",
+        "https://coninfacciaunpodisole.it/monteluco-di-spoleto-il-bosco-sacro-e-l-eremo-di-san-francesco/",
+        "https://www.medioevoinumbria.it/edifici-storici/edifici-religiosi/convento-santuario-di-san-francesco-monteluco-di-spoleto/"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "03/I921/PG/10",
+        "url": "https://www.montagneaperte.it/patriarchiverdi/leccio-spoleto-monteluco/"
+      },
+      "access": "Free, outside the convent entrance on the public road and paths of Monteluco; the sacred wood is open to walkers. The convent is a retreat house and not open to visitors.",
+      "transport": "Monteluco is about 8 km by road above Spoleto, or about 4 km by footpath from the Ponte delle Torri. Allow half a day.",
+      "how_to_recognise": "You can recognise it by its breadth, a low holm oak about 3.4 metres round with a crown some 15 metres across, wider than the grove oaks around it. It stands right of the small fountain at the old convent's entrance.",
+      "location_precision": "approximate",
+      "pin_source": "MASAF coordinate; regional sheet places it right of the little fountain near the entrance of the old convent. iNaturalist obs 182069122 (Quercus ilex, 2023-09-06, accuracy 10 m, CC BY) lies about 30 m from the register point: supporting, not proof of this trunk. Approximate.",
+      "curation_status": "flagged",
+      "verify_notes": "Two sources: MASAF (347 cm, 14.5 m, 780 m) and the regional sheet (3.4 m, 13 m, crown 15 m, 'secolare', health good by eye). Alive weakly corroborated by a 2023 iNaturalist holm-oak observation with 10 m accuracy about 30 m away. Surrounding wood: a holm-oak grove sacred since Roman times (Lex Spoletina, late 3rd century BC, an inscription fixing penalties for cutting the grove); one source says the oaks there are 200 to 500 years old, some stools perhaps a thousand. Say 'secolare' only. Sources for the grove: coninfacciaunpodisole.it, fontecesia.it. Alive evidence is weak: the regional sheet records health good by eye (Patriarchi Verdi census, undated on the page) and the MASAF row is current; no dated photo or news of this trunk, lifecheck NONE. Flagged. No photo candidate found (Commons searches empty, geosearch near this point shows none of the trunk); ships on a recognition line under the rule of 2026-11-02.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spo_005",
+      "name": "The Cypress at the Spoleto Cemetery Gate",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_basis": "source",
+      "girth_cm": 371,
+      "height_m": 16.5,
+      "location": {
+        "address": "Cimitero monumentale di Spoleto, left of the main entrance",
+        "latitude": 42.741003,
+        "longitude": 12.742483,
+        "neighbourhood": "Cemetery, north of the old town"
+      },
+      "location_site": {
+        "name": "Spoleto cemetery entrance",
+        "radius_m": 30
+      },
+      "story": "The trunk of this cypress measures more than twice as much round as its crown measures across. Umbria's regional survey found it 3.9 metres round at chest height, 18.2 metres tall, and gave the crown a width of just 1.7 metres. The national register puts it a little smaller, at 3.71 metres round and 16.5 metres high. Either way, picture a dark column with the waist of a veteran oak.\n\nIt stands near the main entrance of Spoleto's monumental cemetery, on the left as you walk in, close enough to the gate that it is the first big tree you meet. The cemetery itself was designed by the architect Ireneo Aleandri and holds tombs of real historical and artistic interest, which is reason enough to keep walking once you have found the cypress.\n\nHow old is it? The regional sheet calls it secolare, a word that means at least a century and promises no more. Nobody has published a planting date, and the survey that found the tree in good health carries no date on its page either. If you know when it went in, or remember it from years ago, tell us.\n\nThe cemetery lies about a kilometre north of the old town, roughly 15 minutes on foot. Visit as you would any cemetery, quietly and within its opening hours.",
+      "verified_sources": [
+        "https://www.montagneaperte.it/patriarchiverdi/cipresso-comune-spoleto-cimitero-monumentale/"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "29/I921/PG/10",
+        "url": "https://www.montagneaperte.it/patriarchiverdi/cipresso-comune-spoleto-cimitero-monumentale/"
+      },
+      "access": "Public cemetery, free and open to visitors; opening hours not published. Behave as in any cemetery.",
+      "transport": "About 1 km north of the old town, roughly a 15-minute walk.",
+      "how_to_recognise": "You can recognise it as a very slim, dark spire, barely 2 metres wide, on an unusually thick trunk about 3.9 metres round. It stands close to the cemetery's main entrance, on the left as you walk in.",
+      "location_precision": "approximate",
+      "pin_source": "MASAF coordinate; regional sheet puts it within sight of the main entrance on the left. Approximate. Small named site: cemetery gate.",
+      "curation_status": "flagged",
+      "verify_notes": "Two sources: MASAF (371 cm, 16.5 m) and the regional sheet (3.9 m, 18.2 m, crown 1.7 m, 'secolare', health good by eye). Small difference in height, same tree on the register's own spot. The cemetery was designed by the architect Ireneo Aleandri (sheet). Age 'secolare' is the sheet's word; range here is a loose reading, writer says old. Alive evidence is weak: the regional sheet records health good by eye (Patriarchi Verdi census, undated on the page) and the MASAF row is current; no dated photo or news of this trunk, lifecheck NONE. Flagged. No photo candidate found (Commons searches empty, geosearch near this point shows none of the trunk); ships on a recognition line under the rule of 2026-11-02.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "spo_006",
+      "name": "The Cypress of the Ristorante dei Pini",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "girth_cm": 380,
+      "height_m": 22,
+      "location": {
+        "address": "Via Primo Maggio (MASAF names it Via 3 Settembre), at the entrance of the Ristorante dei Pini, a side street of Via Flaminia vecchia, Spoleto",
+        "latitude": 42.750053,
+        "longitude": 12.744925,
+        "neighbourhood": "North edge of Spoleto"
+      },
+      "story": "Two official lists agree on every measurement of this cypress and disagree on the name of its street. The national register places it on Via 3 Settembre. Umbria's regional survey puts it on Via Primo Maggio, at the entrance of the Ristorante dei Pini. Both give a trunk 3.8 metres round and a height of 22 metres, which makes them very likely the same tree under two addresses, though no source has explained the second street name.\n\nThe regional sheet adds a crown 5.6 metres wide, a full shape for a Mediterranean cypress, and records the tree in good health on a page that carries no date. That combination of a thick trunk and a broad, dark crown is what to look for. It is a different build from the cypress at the cemetery gate about a kilometre to the south, which is nearly as thick but barely two metres across.\n\nIt grows on the northern edge of Spoleto, in a side street off Via Flaminia vecchia, about 1.5 kilometres from the centre or roughly 20 minutes on foot. Whether the restaurant still serves is unclear, but the tree needs no booking, since it is seen from the street, at the restaurant gate.\n\nNobody has published when it was planted. If you know, or if you know which of the two street names is the right one, tell us.",
+      "verified_sources": [
+        "https://www.montagneaperte.it/patriarchiverdi/cipresso-comune-spoleto-via-primo-maggio/"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "28/I921/PG/10",
+        "url": "https://www.montagneaperte.it/patriarchiverdi/cipresso-comune-spoleto-via-primo-maggio/"
+      },
+      "access": "Free, seen from the street at the gate of the Ristorante dei Pini; no need to go in.",
+      "transport": "On the northern edge of Spoleto, about 1.5 km from the centre, roughly 20 minutes on foot.",
+      "how_to_recognise": "You can recognise it by a stout trunk about 3.8 metres round under a crown some 5.6 metres wide, fuller than a graveyard cypress. It stands at the entrance gate of the Ristorante dei Pini, off Via Flaminia vecchia.",
+      "location_precision": "approximate",
+      "pin_source": "MASAF coordinate; sheet says it is at the restaurant entrance. IDENTITY CAUTION: the regional sheet (Via Primo Maggio) and the MASAF row (Via 3 Settembre) share girth 380 cm and height 22 m, a likely match, not proven. Approximate.",
+      "curation_status": "flagged",
+      "verify_notes": "Two sources: MASAF (380 cm, 22 m) and the regional sheet (3.8 m, 22 m, crown 5.6 m, health good by eye). The street name differs (Via 3 Settembre vs Via Primo Maggio); the identical numbers suggest the same cypress, but the renaming or mislabel is unresolved. Ristorante dei Pini was not confirmed open today. Alive evidence is weak: the regional sheet records health good by eye (Patriarchi Verdi census, undated on the page) and the MASAF row is current; no dated photo or news of this trunk, lifecheck NONE. Flagged. No photo candidate found (Commons searches empty, geosearch near this point shows none of the trunk); ships on a recognition line under the rule of 2026-11-02.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

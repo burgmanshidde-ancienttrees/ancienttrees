@@ -1,0 +1,81 @@
+{
+  "city": "Monte Faito",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Monte Faito rises above Castellammare di Stabia and Vico Equense, and its beech forest once supplied the Sorrento peninsula with summer ice. At Pian del Pero, 1,167 metres up, four great beeches still line the old snow pits where winter snow was packed and stored. The Campania region presumes them about 400 years old, and the widest trunk is more than seven metres round. The trail starts free and ungated from a public road.",
+  "meta_description": "Monte Faito's four beeches of Pian del Pero, presumed 400 years old, beside the old snow pits that sent ice to the Sorrento coast.",
+  "question_meta": "What is the oldest tree on Monte Faito? Four beeches at Pian del Pero, presumed about 400 years old by the Campania region.",
+  "question_answer": "The oldest trees on Monte Faito are four beeches at Pian del Pero, which the Campania region presumes to be about 400 years old. They stand within 15 metres of each other beside the old snow pits, with trunks of 450, 620, 680 and 705 centimetres round.",
+  "question_context": "The four beeches of Pian del Pero stand at 1,167 metres in the beech forest of Monte Faito, in the Regional Park of the Monti Lattari. The Campania region describes them as four trees of about 400 years that lined the neviere, the snow pits where winter snow was packed and kept, then sent down to the Sorrento peninsula for the ice trade. The 400 years is the region's presumed age, not a ring count. The regional and national registers give trunks of 450, 620, 680 and 705 centimetres round and heights of 18 to 20 metres, and because they stand so close together we treat them as one place to stand. The path that starts there is the Sentiero dei Faggi Secolari e delle Antiche Neviere. The cable car from Castellammare di Stabia was the classic way up, but one travel guide reports it closed since April 2025 after a cable failure, so check before you go. Bus 009 from Vico Equense and the mountain road are the alternatives, and snow can close the road in winter.",
+  "hero_tree_id": "vqe_001",
+  "oldest_tree_id": "vqe_001",
+  "faq": [
+    {
+      "q": "Is the Monte Faito cable car running?",
+      "a": "One travel guide reports it closed since April 2025 after a cable failure. Check with EAV before you go, or take bus 009 from Vico Equense or drive up the mountain road."
+    },
+    {
+      "q": "When is the best time to see the beeches?",
+      "a": "Late October into November, when the beech wood turns copper. Snow can close the road in winter."
+    },
+    {
+      "q": "Do I need a ticket?",
+      "a": "No. Pian del Pero is a trailhead on a public road with no gate."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vqe_001",
+      "name": "The Beeches of Pian del Pero",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "about 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "age_basis": "source",
+      "girth_cm": 705,
+      "height_m": 20,
+      "location": {
+        "address": "Pian del Pero, Monte Faito, 80069 Vico Equense",
+        "latitude": 40.65876,
+        "longitude": 14.49133,
+        "neighbourhood": "Monte Faito"
+      },
+      "location_site": {
+        "name": "Beech grove of Pian del Pero",
+        "radius_m": 50
+      },
+      "story": "Before refrigerators, summer ice on the Sorrento peninsula came down from Monte Faito, and these four beeches stood beside the pits it was stored in. The Campania region describes them as four beeches of about 400 years that lined the old neviere, the snow pits where winter snow was packed, kept and sent down to the coast for the ice trade.\n\nThey stand at Pian del Pero, 1,167 metres up, within about 15 metres of each other, which is why we treat them as one place to stand. The regional and national registers measure their trunks at 450, 620, 680 and 705 centimetres round, with heights of 18 to 20 metres. The widest of the four is a trunk more than seven metres round.\n\nThe 400 years is the region's own presumed age, not a ring count, and we keep it as the region gives it. Hikers and guided walks still describe beeches over 400 years old on the Faito loops, but we have found no recent dated photograph of these four, so tell us what you see if you go.\n\nThe classic way up was the cable car from Castellammare di Stabia. One travel guide reports it closed since April 2025 after a cable failure, so check before you go. Bus 009 from Vico Equense and the mountain road are the alternatives.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_82.html",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_84.html",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_85.html",
+        "https://fondoambiente.it/luoghi/bosco-di-faggi-di-montefaito"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), sheet 01 to 04/L845/NA/15",
+        "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      },
+      "access": "Free. Pian del Pero is a trailhead in the beech forest of Monte Faito, in the Regional Park of the Monti Lattari, on a public road with no gate. Snow can close the road in winter. The Faito cable car was reported closed from April 2025 after a cable failure; check with EAV before you go.",
+      "transport": "Bus 009 from Vico Equense station (Circumvesuviana) or a drive up the mountain road from Castellammare di Stabia, then a short walk from Pian del Pero. The cable car from Castellammare di Stabia is the classic route when it runs.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the beech wood turns copper"
+      },
+      "how_to_recognise": "You can recognise them as four huge grey beeches standing close together beside the old snow pits at the start of the Sentiero dei Faggi Secolari e delle Antiche Neviere; the widest trunk is over 7 metres round.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "One ensemble of four old beeches standing within about 15 m of each other (one place to stand): MASAF 01 to 04: 450, 680, 705, 620 cm girth, 20 m (regional schede 82, 84, 85 read directly, 83 not read: 450, 680, 705, 620 cm, 18 to 20 m, 'age presumed 400 years'). The scheda text says they are four of about 400 years that lined the old neviere (snow pits where snow was stored and sent down to the Sorrento peninsula for the ice trade). Altitude 1167 m. 400 years is the regional register's own presumed age, kept as source-based. Girth recorded is the largest, 705 cm; the others go in the story. Alive: no dated sighting of these four beeches; recent hikers and guided walks describe 'beeches over 400 years' on the Faito loops (FAI page; a 2025 Komoot route through the neviere), which is thin, so flagged. Note: coordinates of sheets 03 and 04 are identical in the regional register, consistent with a tight group. Recognise: four huge grey beeches beside the old snow pits at the start of the trail; a path sign for the Sentiero dei Faggi Secolari e delle Antiche Neviere is the usual start. The tallest girth belongs to tree 03.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

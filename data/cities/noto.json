@@ -1,0 +1,76 @@
+{
+  "city": "Noto",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Noto's best-known tree once nearly lost its place to a view. A Norfolk Island pine 28 metres tall stands in the Villetta Ercole on Piazza XVI Maggio, beside Rosario Gagliardi's church of San Domenico, and a mayor once proposed moving it to clear the sightline. The culture minister refused, saying the tree was part of the landscape. It arrived at the end of the nineteenth century, bought from a travelling seller, and the region made it a monument of nature in 2005.",
+  "meta_description": "Noto's Norfolk Island pine: 28 metres tall beside San Domenico, bought from a travelling seller in the 1800s and saved from a mayor who wanted the view.",
+  "question_meta": "Noto's most remarkable tree is the Norfolk Island pine of the Villetta Ercole, beside San Domenico. How it got there and why it stayed.",
+  "question_answer": "Noto's most remarkable tree is the Norfolk Island pine in the Villetta Ercole on Piazza XVI Maggio, 28 metres tall by Sicily's register. It was bought from a travelling seller at the end of the nineteenth century, and it survived a mayor's plan to move it away from the front of San Domenico.",
+  "question_context": "The pine's story comes from a local culture site that cites Corrado Coppa's history of the town. The director of Noto's experimental winery bought two araucarias from a travelling seller at the end of the nineteenth century and kept them in pots beside the Casa Senatoria before they were planted in the Villetta Ercole, the small garden on Piazza XVI Maggio. One stands there today. When Noto's Late Baroque centre was being celebrated as World Heritage, the mayor proposed moving the whole tree to free the view of San Domenico, and the culture minister, Giuliano Urbani, answered that the tree was part of the landscape. Sicily's register gives it 28 metres and a girth of 3 metres and lists it for rarity and form as well as size; the culture site gives 32 metres and 3.5, and calls it once the largest Norfolk Island pine in Sicily and Italy. The region declared it a monument of nature in 2005, and Legambiente added a plaque in 2006. A 2025 photograph shows the crown visibly thin, and a care project funded by the ministry and the region is described.",
+  "hero_tree_id": "not_001",
+  "oldest_tree_id": "not_001",
+  "faq": [
+    {
+      "q": "How tall is the Norfolk Island pine in Noto?",
+      "a": "Sicily's register of monumental trees gives 28 metres and a girth of 3 metres. A local culture site gives 32 metres and 3.5, and calls it once the largest of its kind in Sicily and Italy."
+    },
+    {
+      "q": "Why was the Noto pine nearly moved?",
+      "a": "A mayor proposed digging it up, roots and all, to free the view of the church of San Domenico. The culture minister, Giuliano Urbani, answered that the tree was part of the landscape, and it stayed."
+    },
+    {
+      "q": "Is the Villetta Ercole free?",
+      "a": "Yes. It is a public garden on Piazza XVI Maggio in the old town, and the pine can also be seen from the square."
+    }
+  ],
+  "trees": [
+    {
+      "id": "not_001",
+      "name": "Norfolk Island Pine of the Villetta Ercole",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "planted in the late 19th century",
+      "age_min": 100,
+      "age_max": 150,
+      "age_basis": "source",
+      "girth_cm": 300,
+      "height_m": 28,
+      "location": {
+        "address": "Villetta Ercole, Piazza XVI Maggio, Noto",
+        "latitude": 36.8917825,
+        "longitude": 15.0680704,
+        "neighbourhood": "Noto historic centre, beside San Domenico"
+      },
+      "location_site": {
+        "name": "Villetta Ercole, Piazza XVI Maggio",
+        "radius_m": 40
+      },
+      "story": "A mayor of Noto once proposed digging this tree up, roots and all, because it blocked the view of a Baroque church. The church is San Domenico, by the architect Rosario Gagliardi, and the proposal came as Noto's Late Baroque centre was being celebrated as World Heritage. The culture minister of the day, Giuliano Urbani, answered that the tree was part of the landscape. It stayed.\n\nIt arrived by chance. A local culture site, citing Corrado Coppa's history of the town, says the director of Noto's experimental winery bought two araucarias from a travelling seller at the end of the nineteenth century. They were kept in pots beside the Casa Senatoria before being planted in the Villetta Ercole, the small garden on Piazza XVI Maggio. Only this one is there now.\n\nSicily's register of monumental trees gives it 28 metres of height and 3 metres of girth, and lists it for its rarity and its architecture as well as its size. The same culture site gives 32 metres and 3.5, and calls it once the largest Norfolk Island pine in Sicily and in Italy. The region declared it a monument of nature in 2005, and Legambiente put up a plaque in May 2006.\n\nA 2025 photograph shows it still standing over the square, its crown visibly thin. The culture site describes a care project paid for by the ministry and the region.",
+      "verified_sources": [
+        "http://lnx.valdinoto4x4.com/cultura/araucaria/",
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+        "https://www.openstreetmap.org/node/12698723036",
+        "https://commons.wikimedia.org/wiki/File:Pino_di_Norfolk_(36668).jpg"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 05/F943/SR/19, D.M. n. 5450 of 19/12/2017",
+        "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+      },
+      "access": "Free. Public garden (Villetta Ercole) on Piazza XVI Maggio in the old town of Noto; the tree can also be seen from the square.",
+      "transport": "On Piazza XVI Maggio in the centre of Noto, beside the church of San Domenico.",
+      "how_to_recognise": "You can recognise it as the tall, tiered Norfolk Island pine towering over everything in the Villetta Ercole on Piazza XVI Maggio, beside San Domenico, with a Legambiente plaque near it.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Register sheet 05: Norfolk Island Pine, girth 300 cm, height 28 m, listed for 'rarity' and 'plant architecture' as well as size. A local culture site (Val di Noto) says: 32 m tall and 3.5 m round, once the largest Norfolk pine in Sicily and Italy, entered in the regional Monuments of Nature list by Decree 7538 of 2005 (the register's 3.0 m and 28 m differ: quote the register and mention the other figure as the site's). History from the same site, citing Corrado Coppa's 'Cosette di storia netina': there were originally two araucarias, bought at the end of the 19th century by the director of Noto's experimental winery from a travelling seller, first kept in pots beside the Casa Senatoria and later planted in the Villetta Ercole. Anecdote: when Noto was being celebrated as a Late Baroque World Heritage site , the then mayor proposed moving the whole tree with its roots to free the view of Gagliardi's San Domenico; the culture minister, Giuliano Urbani, answered that the tree was part of the landscape. Legambiente put up a plaque in May 2006. The page also describes a recent care and safeguard project funded by the agriculture ministry and the Region (undated in the text fetched). Alive: Commons photo dated 2025-03-19. Pin: OSM node 12698723036 (ref:masaf 005/F943/SR/19) about 10 m from the register point, and the geotagged 2025 photograph; one clear crown on a town garden: confirmed. Planting date is 'end of the 19th century' only: do not sharpen. Flagged only because the second source is a local culture site. Recognise: the 28 to 32 m Norfolk Island pine in the Villetta Ercole garden on Piazza XVI Maggio, towering over everything around and visible from San Domenico; a Legambiente plaque (2006) stands near it.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Pino_di_Norfolk_%2836668%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ivan Ruggiero, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2423,
+        "height": 4080,
+        "taken_month": 3,
+        "note": "Looked at the pixels 2026-11-02 (session 9b29504f): the whole pine top to base in the Villetta Ercole with San Domenico at left; geotag 22 m off; crown visibly thin, shown as it is; daylight, colour (photo_light OK)"
+      }
+    }
+  ]
+}

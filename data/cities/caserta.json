@@ -2,11 +2,13 @@
   "city": "Caserta",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Caserta's remarkable trees split between three places now. Sixteen stand inside the English Garden of the Reggia, 23 hectares Maria Carolina had planted in 1786 as Italy's first landscape garden, past a cedar seven and three quarter metres round, a Douglas fir of forty metres and a plane that grew sideways. A magnolia stands free right at the palace gate on Piazza Carlo di Borbone, and three more, a Chilean monkey puzzle, a casuarina and a yew, stand free in Piazza Vanvitelli, the town's own square.",
-  "meta_description": "Caserta's monumental trees: sixteen inside the Reggia's English Garden, a cedar 7.75 m round among them, plus four free in its piazzas.",
+  "intro": "Caserta's remarkable trees spread well beyond the palace. Sixteen stand inside the English Garden of the Reggia, 23 hectares Maria Carolina had planted in 1786 as Italy's first landscape garden, past a cedar seven and three quarter metres round, a Douglas fir of forty metres and a plane that grew sideways. A bunya pine grows near the palace end of the Royal Park and a magnolia free at the palace gate. Three more stand free in Piazza Vanvitelli, two giants share the town cemetery, and a plane almost five metres round anchors the silk village of San Leucio.",
+  "meta_description": "Caserta's monumental trees: sixteen in the Reggia's English Garden, a cedar 7.75 m round among them, and free giants in town and at San Leucio.",
   "question_meta": "Caserta's oldest tree is almost certainly the yew at the Bath of Venus, already mature when it was set in place in the 1790s.",
   "question_answer": "Caserta's oldest tree is almost certainly the European yew at the Bath of Venus, in the English Garden of the Reggia. The Campania regional register calls it one of the patriarchs of the garden and records that it was already a mature tree when it was put in place at the garden's creation in the 1790s, which puts it comfortably past 250 years even though the age field on the same record says only 150. The Douglas fir and the camphor tree a few hundred metres downhill are each given about 200 years, and no tree in Caserta has been dated by counting rings.",
-  "question_context": "Every age on this page comes from one place, the Campania regional register of monumental trees, and every age on it is an eta presunta, an estimate. The national MASAF register lists the same trees with the same girths and heights but carries no age field at all, so the two agree on what stands where and only one of them says how old it is. That matters more here than in most cities, because almost nothing in this garden is native and almost nothing was planted before 1786. Maria Carolina commissioned the garden that year on the advice of Sir William Hamilton, the British ambassador in Naples, and John Andrew Graefer, the gardener sent to build it, spent a decade collecting exotics from Capri, Salento and Palermo. Under Giovanni Gussone and Nicola Terracciano it later became a working botanical garden. So most of these trees are between 150 and 240 years old, and where a register says 200 it means the first planting rather than a measurement. The park also loses trees in storms, most recently a monumental Monterey cypress in December 2019, so treat any single specimen as something to check before a long trip.",
+  "question_context": "Every age on this page comes from one place, the Campania regional register of monumental trees, and every age on it is an eta presunta, an estimate. The national MASAF register lists the same trees with the same girths and heights but carries no age field at all, and for the trees outside the Reggia, in the cemetery, San Leucio and the Royal Park, it is the only record, so those carry no age. That matters more here than in most cities, because almost nothing in the English Garden is native and almost nothing was planted before 1786. Maria Carolina commissioned the garden that year on the advice of Sir William Hamilton, the British ambassador in Naples, and John Andrew Graefer, the gardener sent to build it, spent a decade collecting exotics from Capri, Salento and Palermo. So most of these trees are between 150 and 240 years old, and where a register says 200 it means the first planting rather than a measurement. The park also loses trees in storms, most recently a monumental Monterey cypress in December 2019, so treat any single specimen as something to check before a long trip.",
+  "hero_tree_id": "cas_001",
+  "oldest_tree_id": "cas_003",
   "faq": [
     {
       "q": "What is the oldest tree in Caserta?",
@@ -14,19 +16,17 @@
     },
     {
       "q": "Do you have to pay to see them?",
-      "a": "For most of them. Sixteen stand inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee (a 3 euro park-only ticket exists but excludes the English Garden; closed Tuesdays). Four more are free: a magnolia right at the palace gate on Piazza Carlo di Borbone, and a monkey puzzle, a casuarina and a yew in Piazza Vanvitelli, the town's own square."
+      "a": "For the seventeen inside the Reggia, yes. Sixteen stand in the English Garden, covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee (a 3 euro park-only ticket exists but excludes the English Garden; closed Tuesdays), and a bunya pine grows near the palace end of the Royal Park. Seven are free: a magnolia at the palace gate on Piazza Carlo di Borbone, a monkey puzzle, a casuarina and a yew in Piazza Vanvitelli, a cedar and a camphor in the municipal cemetery, and a plane in Piazza della Seta, San Leucio."
     },
     {
       "q": "Can you walk between them?",
-      "a": "In three parts. Inside the English Garden, sixteen of the twenty trees here stand in the same stretch of the flat southern Palco and the paths just above it, with the yew and one Osage orange further up near the top of the garden; getting to the garden is the long part, roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle. A magnolia stands free right at that palace gate, on Piazza Carlo di Borbone, easy to see on the way in or out. The three free trees in Piazza Vanvitelli form their own short walk, all within fifty metres of each other in the town centre, about 2 km from the palace."
+      "a": "In parts. Inside the English Garden, most of the garden trees stand in the same stretch of the flat southern Palco and the paths just above it, with the yew and one Osage orange further up; getting there is roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle. The bunya pine and the magnolia are near the palace end. The three trees in Piazza Vanvitelli stand within fifty metres of each other in the town centre, the cemetery pair about fifteen metres apart on the east side of town, and the San Leucio plane about 3.5 km north-west of the station."
     },
     {
       "q": "Which is the strangest?",
       "a": "The sweet osmanthus. The national register credits it with 6.5 metres of trunk; the regional one explains that this is every stem added together, because the species grows as a bundle. In autumn it produces a scent of apricot from flowers a few millimetres wide."
     }
   ],
-  "hero_tree_id": "cas_001",
-  "oldest_tree_id": "cas_003",
   "trees": [
     {
       "id": "cas_001",

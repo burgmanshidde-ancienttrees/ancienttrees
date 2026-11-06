@@ -1,0 +1,156 @@
+{
+  "city": "Palazzolo Acreide",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Palazzolo Acreide's town garden holds three trees on Italy's national register, all within a short walk. The Villa Comunale was laid out between 1877 and 1881 on the site of an old holm-oak wood, and a holm oak 5.65 metres round and 24 metres tall still stands in it, called the largest in Sicily by the naturalist association Natura Sicula. Beside it grow a cypress more than seven metres round and a cedar of Lebanon over a century old. Entry is free.",
+  "meta_description": "Three registered giants in Palazzolo Acreide's free town garden: a holm oak called Sicily's largest, a 7-metre cypress and a century-old cedar of Lebanon.",
+  "question_meta": "Palazzolo Acreide's biggest tree is a holm oak 5.65 metres round in the Villa Comunale, estimated at five to six centuries. Its rivals and its neighbours.",
+  "question_answer": "Palazzolo Acreide's biggest tree is the holm oak of the Villa Comunale, 5.65 metres round and 24 metres tall. Natura Sicula, the naturalist association that measured it in 2015, calls it the largest holm oak in Sicily and estimates it at five to six centuries old. The garden is free and in the middle of town.",
+  "question_context": "All three of the town's registered trees grow in one public garden, the Villa Comunale, built between 1877 and 1881 on land a local baron gave the town. The ground was once a holm-oak wood, and a few old oaks survive on the garden's south side. The biggest of them, 5.65 metres round and 24 metres tall, is the one Natura Sicula ranks as Sicily's largest holm oak, ahead of the Ilici di Carrinu on Etna, which they give at 5.15 metres; other people have measured the Etna trees differently, so the ranking is theirs. The cypress is the stranger tree. Cypresses grow tall rather than thick, and this one is more than seven metres round, which the association says no other cypress in the national register matches; they estimate it at about three centuries. The cedar of Lebanon is younger, over a century by the association's estimate. All three ages are estimates the association does not explain, and readers who know more are welcome to tell us. In November 2023 all three were reported in good health.",
+  "hero_tree_id": "pzl_003",
+  "oldest_tree_id": "pzl_003",
+  "faq": [
+    {
+      "q": "Is the holm oak in Palazzolo Acreide the largest in Sicily?",
+      "a": "The naturalist association Natura Sicula says so, comparing its 5.65-metre girth with the 5.15 metres it gives the Ilici di Carrinu on Etna. Others have measured the Etna trees at different figures, so treat it as the association's ranking. The register confirms the 5.65 metres."
+    },
+    {
+      "q": "How old are the trees in the Villa Comunale of Palazzolo Acreide?",
+      "a": "By Natura Sicula's estimates, the holm oak is five to six centuries old, the cypress about three centuries, and the cedar of Lebanon over a century. None of the three has a planting record or a core date."
+    },
+    {
+      "q": "Is the Villa Comunale free?",
+      "a": "Yes. It is the town's public garden, laid out between 1877 and 1881. We have not found published opening hours."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pzl_001",
+      "name": "Cypress of the Villa Comunale",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "about three centuries (association estimate)",
+      "age_min": 300,
+      "age_max": 300,
+      "age_basis": "source",
+      "girth_cm": 718,
+      "height_m": 19,
+      "location": {
+        "address": "Villa Comunale, Palazzolo Acreide (SR)",
+        "latitude": 37.05838,
+        "longitude": 14.90888,
+        "neighbourhood": "Villa Comunale, Palazzolo Acreide town"
+      },
+      "story": "Cypresses are built for height, not girth, which makes this one's trunk hard to believe. It measures more than seven metres round, 7.18 by Italy's national register of monumental trees and 7.20 by the botanist of Natura Sicula, a Sicilian naturalist association that measured it in 2015.\n\nThe association says no larger cypress appears anywhere in the national register. That is their reading of the list rather than an independent ranking, but the number is the register's own, and it is hard to argue with. The tree stands nineteen metres tall in the Villa Comunale of Palazzolo Acreide, an inland hill town west of Syracuse.\n\nThe garden around it was laid out between 1877 and 1881 on land a local baron gave the town. Natura Sicula puts the cypress at about three centuries old, an estimate it does not explain. If it holds, the tree was already standing here, and old, when the garden was built around it. Nobody has published a core or a planting record to settle it.\n\nIn November 2023 the association reported the tree in good condition. It shares the garden with two other registered trees, a cedar of Lebanon and a holm oak the same association calls the largest in Sicily, so one short walk covers all three.",
+      "verified_sources": [
+        "https://www.libertasicilia.it/palazzolo-acreide-natura-sicula-giornata-degli-alberi-i-giganti-arborei-della-villa-comunale/",
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+        "https://www.openstreetmap.org/node/13004387640"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 01/G267/SR/19, D.M. n. 5450 of 19/12/2017",
+        "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+      },
+      "access": "Free. Public town garden (Villa Comunale) in Palazzolo Acreide, laid out 1877 to 1881; opening hours not published in any source seen.",
+      "transport": "In the town of Palazzolo Acreide, an inland hill town roughly 45 km west of Syracuse; by car or regional bus from Syracuse.",
+      "how_to_recognise": "You can recognise it by the trunk, more than 7 metres round, by far the thickest cypress in the Villa Comunale and about 19 metres tall.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register sheet 01: Italian Cypress, girth 718 cm, height 19 m. Natura Sicula (reported in Liberta Sicilia, 22 Nov 2023, measured by the association's botanist in 2015 for all three trees) gives girth 7.20 m, height 19 m, says no larger cypress is listed in the national register, presumed age about three centuries (an estimate by the association, unsourced beyond that). The article says the cypress is in good condition. A 7 m girth for a cypress is exceptional. Pin: the register point only (OSM node 13004387640 is tagged 'resurvey', i.e. copied from the register); the five Commons geotags are rounded to a second of arc and spread over about 70 m, so none settles which cypress. Sightings: the article (2023-11-22) and the 2018/2020 photographs; no iNaturalist record. Flagged: register plus one association article, no tree-level pin. Recognise: the tallest, thickest cypress in the Villa Comunale, 7 m round at the trunk.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cipresso_monumentale_%285%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Elyparker, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2268,
+        "height": 4032,
+        "taken_month": 9,
+        "note": "Looked at the pixels 2026-11-02 (session 9b29504f): the broad old cypress with its thick trunk fills the frame, uploader names it the villa's monumental cypress; overcast (photo_light WEAK, usable)"
+      }
+    },
+    {
+      "id": "pzl_002",
+      "name": "Cedar of Lebanon of the Villa Comunale",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "over a century (association estimate)",
+      "age_min": 100,
+      "age_basis": "source",
+      "girth_cm": 355,
+      "height_m": 14,
+      "location": {
+        "address": "Villa Comunale, Palazzolo Acreide (SR)",
+        "latitude": 37.05828,
+        "longitude": 14.90937,
+        "neighbourhood": "Villa Comunale, Palazzolo Acreide town"
+      },
+      "story": "Of the three registered trees in Palazzolo Acreide's town garden, this cedar of Lebanon is the youngest by the estimates, and it still goes back more than a century. Natura Sicula, a Sicilian naturalist association whose botanist measured all three trees in 2015, puts it at over a hundred years old.\n\nThe association goes further and wonders whether it was among the first trees planted when the Villa Comunale was finished, around 1881. That is speculation, and the association presents it as such. No planting record survives, or none has been published, so the cedar's age stays at what the association can stand behind, which is over a century.\n\nThe measurements are firmer. Italy's national register of monumental trees and the association agree on a girth of 3.55 metres and a height of fourteen. The tree grows as a single trunk with the flat, layered branches cedars of Lebanon are known for, and it is the only one of its kind in the garden. In November 2023 the association reported it in good health.\n\nIts neighbours are older and bigger. A cypress more than seven metres round and a holm oak 24 metres tall stand in the same garden, both registered. Its age is the one a planting record could still settle. If you know when it went in, tell us.",
+      "verified_sources": [
+        "https://www.libertasicilia.it/palazzolo-acreide-natura-sicula-giornata-degli-alberi-i-giganti-arborei-della-villa-comunale/",
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+        "https://www.openstreetmap.org/node/13004387648"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 02/G267/SR/19, D.M. n. 5450 of 19/12/2017",
+        "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+      },
+      "access": "Free. Public town garden (Villa Comunale) in Palazzolo Acreide, laid out 1877 to 1881; opening hours not published in any source seen.",
+      "transport": "In the town of Palazzolo Acreide, an inland hill town roughly 45 km west of Syracuse; by car or regional bus from Syracuse.",
+      "how_to_recognise": "You can recognise it by the flat, layered branches on a single trunk 3.55 metres round, the only cedar of Lebanon in the Villa Comunale.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register sheet 02: Cedar of Lebanon, girth 355 cm, height 14 m. Natura Sicula via Liberta Sicilia (22 Nov 2023; measured 2015): same figures, 'over a century' old, could be one of the first trees planted when the villa was completed (about 1881), but that is the association's speculation, not a record: no bridge claim. Single tree, good phytosanitary state per the article. Pin approximate (register point; OSM node 13004387648 is a 'resurvey' copy). Flagged. Recognise: the cedar with the flat layered branches, the only Cedar of Lebanon in the garden.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Cedro_libano_monumentale_%281%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Elyparker, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2268,
+        "height": 4032,
+        "taken_month": 9,
+        "note": "Looked at the pixels 2026-11-02 (session 9b29504f): single cedar trunk and its layered branches fill the frame, uploader names it; overcast but colour (photo_light OK)"
+      }
+    },
+    {
+      "id": "pzl_003",
+      "name": "Holm Oak of the Villa Comunale",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "five to six centuries (association estimate)",
+      "age_min": 500,
+      "age_max": 600,
+      "age_basis": "source",
+      "girth_cm": 565,
+      "height_m": 24,
+      "location": {
+        "address": "Villa Comunale, Palazzolo Acreide (SR)",
+        "latitude": 37.05769,
+        "longitude": 14.91043,
+        "neighbourhood": "Villa Comunale, Palazzolo Acreide town"
+      },
+      "story": "The town garden of Palazzolo Acreide stands where a holm-oak wood once grew, and this tree may be what is left of it. It is 5.65 metres round and 24 metres tall, and Natura Sicula, the Sicilian naturalist association that measured it in 2015, calls it the largest holm oak in Sicily.\n\nThat crown is the association's own. They compared their measurement with the Ilici di Carrinu on the slopes of Etna, which they give at 5.15 metres, and other people have measured the Etna trees at other figures. Italy's national register of monumental trees confirms the 5.65 metres and the 24 metres, so the size is not in doubt. The ranking is theirs.\n\nSo is the age. The association estimates five to six centuries, without saying how it got there. Taken at face value, that would mean the oak was growing in the wood long before anyone laid out the Villa Comunale between 1877 and 1881. A few other old holm oaks survive on the garden's south side, which fits the story of the wood without proving this tree's age.\n\nIn November 2023 the association reported the oak in excellent health. It stands in the south part of the garden, a short walk from the town's registered cypress and cedar. If you know of an older figure, or a better measurement of the Etna rival, tell us.",
+      "verified_sources": [
+        "https://www.libertasicilia.it/palazzolo-acreide-natura-sicula-giornata-degli-alberi-i-giganti-arborei-della-villa-comunale/",
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+        "https://www.openstreetmap.org/node/13004378877"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 03/G267/SR/19, D.M. n. 5450 of 19/12/2017",
+        "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+      },
+      "access": "Free. Public town garden (Villa Comunale) in Palazzolo Acreide, laid out 1877 to 1881; opening hours not published in any source seen.",
+      "transport": "In the town of Palazzolo Acreide, an inland hill town roughly 45 km west of Syracuse; by car or regional bus from Syracuse.",
+      "how_to_recognise": "You can recognise it by its size, a holm oak 5.65 metres round and about 24 metres tall in the south part of the Villa Comunale, among a few smaller old holm oaks.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register sheet 03: Holm Oak, girth 565 cm, height 24 m. Natura Sicula via Liberta Sicilia (22 Nov 2023; measured 2015): 5.65 m round, 24 m tall, called the largest holm oak in Sicily, ahead of the Ilici di Carrinu on Etna (5.15 m), age estimated five to six centuries (association estimate); the villa stands on the site of a former holm-oak wood and a few old oaks remain on its south side (possible unregistered lead, no coordinate). The article says the tree is in excellent phytosanitary condition. The 'largest in Sicily' claim is the association's own, based on comparing its own measurements, and the Etna tree has been measured by others at other values: if used, attribute it. Pin approximate. Flagged. Recognise: the huge holm oak in the south part of the garden, 5.65 m round, where the old holm-oak wood once stood.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Leccio_Palazzolo_Acreide.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Elyparker, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2268,
+        "height": 4032,
+        "taken_month": 9,
+        "note": "Looked at the pixels 2026-11-02 (session 9b29504f): the whole holm oak, trunk to crown, uploader names it; overcast (photo_light WEAK, usable)"
+      }
+    }
+  ]
+}
