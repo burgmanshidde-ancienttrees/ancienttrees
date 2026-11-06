@@ -282,11 +282,11 @@ def uptime_cell(now):
 
 
 def livecheck_cell(now):
-    """livecheck.yml, every hour: the live pages opened in a real Chrome
+    """pages-live.yml, every hour: the live pages opened in a real Chrome
     (scripts/pagecheck.py; Hidde, 2026-11-06, the explore crash). Red when
     the last two runs failed (a broken page fails every run; one red run can
     be a slow start), orange when any failed in the last 24 hours."""
-    rows = runs("livecheck.yml", limit=30)
+    rows = runs("pages-live.yml", limit=30)
     if rows is None:
         return "grey", "live page check unknown"
     done = [r for r in rows if r.get("status") == "completed"
@@ -294,7 +294,7 @@ def livecheck_cell(now):
     if not done:
         return "grey", "live page check has no finished run yet (unknown)"
     if len(done) >= 2 and all(r["conclusion"] != "success" for r in done[:2]):
-        return "red", ("live pages crash or hang in Chrome (livecheck.yml; "
+        return "red", ("live pages crash or hang in Chrome (pages-live.yml; "
                        "python3 scripts/pagecheck.py --live names them; "
                        "gh workflow run rollback.yml puts back the last good build)")
     cut = now - datetime.timedelta(hours=24)

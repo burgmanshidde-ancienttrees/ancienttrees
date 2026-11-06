@@ -25,7 +25,7 @@ Two uses, one page set:
                                                BEFORE the upload: a failure
                                                keeps the old site live)
   python3 scripts/pagecheck.py --live          https://ancienttrees.app
-                                               (livecheck.yml, every hour)
+                                               (pages-live.yml, every hour)
   python3 scripts/pagecheck.py --base URL      any other origin
 
 Needs Python Playwright (pip install playwright==1.60.0). It drives the Chrome

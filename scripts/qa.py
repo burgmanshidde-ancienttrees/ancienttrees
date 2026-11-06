@@ -365,7 +365,7 @@ def check_the_pages_run_before_they_go_live():
     Hidde, 2026-11-06, after /explore crashed every visitor's tab while every
     check was green ("ons platform wordt steeds groter, dit soort fouten
     worden steeds duurder"; "doe het"): deploy.yml runs scripts/pagecheck.py
-    before "Upload site artifact", livecheck.yml runs it on the live site,
+    before "Upload site artifact", pages-live.yml runs it on the live site,
     quality.py reads livecheck for the Web Live light, and rollback.yml
     republishes an earlier build. Removing any part needs Hidde.
     """
@@ -379,11 +379,11 @@ def check_the_pages_run_before_they_go_live():
                    "a page that crashes in Chrome can go live again (2026-11-06)")
     if not (root / "scripts" / "pagecheck.py").exists():
         out.append("scripts/pagecheck.py is missing: nothing opens the pages in a browser before they go live")
-    live = wf / "livecheck.yml"
+    live = wf / "pages-live.yml"
     if not live.exists() or "pagecheck.py --live" not in live.read_text(encoding="utf-8"):
-        out.append("livecheck.yml no longer opens the live pages in Chrome every hour")
-    if "livecheck.yml" not in (root / "scripts" / "quality.py").read_text(encoding="utf-8"):
-        out.append("quality.py no longer reads livecheck.yml: a crashing live page would not reach the digest")
+        out.append("pages-live.yml no longer opens the live pages in Chrome every hour")
+    if "pages-live.yml" not in (root / "scripts" / "quality.py").read_text(encoding="utf-8"):
+        out.append("quality.py no longer reads pages-live.yml: a crashing live page would not reach the digest")
     rb = wf / "rollback.yml"
     if not rb.exists() or "download-artifact" not in rb.read_text(encoding="utf-8"):
         out.append("rollback.yml is gone: putting back a good build means a full 30 to 55 minute deploy")

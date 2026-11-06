@@ -1,40 +1,27 @@
-name: Live pages run
-
-# Do the live pages RUN, every hour (Hidde, 2026-11-06). uptime.yml asks
-# whether the site answers; this opens the same page set as the deploy's
-# browser check (scripts/pagecheck.py) on ancienttrees.app in a real Chrome,
-# at desktop and phone width, and goes red when a tab crashes, hangs, or
-# throws an error from our own scripts. It catches what the deploy's check
-# cannot: a fault that comes with the data or a service the pages call, after
-# the build. scripts/quality.py reads these runs for the Web "Live" light and
-# health.py makes a red one rung-2 work; rollback.yml puts back the last good
-# build while the fix builds. Nothing is written to the repository.
+# The LIVE site, signed out, tapped from a runner with network (2026-10-07).
+# Hidde: "on the website i can still click on the ambassador thing without
+# logging in". Everything else measures the build; this measures what a
+# stranger's browser actually gets from ancienttrees.app, edge cache included.
+# On a button, and daily after the first deploy of the day.
+name: Live sign-in check
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "40 * * * *"
-  workflow_dispatch: {}
+    - cron: "50 6 * * *"
 
 permissions:
   contents: read
 
-concurrency:
-  group: livecheck
-  cancel-in-progress: true
-
 jobs:
-  check:
+  live:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          sparse-checkout: scripts/pagecheck.py
-          sparse-checkout-cone-mode: false
-
-      - name: Install the browser check
-        run: python3 -m pip install --quiet playwright==1.60.0
-
-      - name: Do the live pages run in Chrome
-        run: python3 scripts/pagecheck.py --live
+          node-version: 20
+      - run: npm install --no-save playwright-core
+      - name: Tap every account control on the live site with no session
+        run: node scripts/livecheck.js

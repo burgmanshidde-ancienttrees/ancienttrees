@@ -151,7 +151,7 @@ jobs:
       # A real Chrome opens home, explore, a city, a tree, a country and more
       # at desktop and phone width, and a crash, a hang or an error from our
       # own scripts stops the deploy here, before the upload, so the site
-      # that works stays live. Same script and pages as livecheck.yml.
+      # that works stays live. Same script and pages as pages-live.yml.
       - name: Install the browser check
         run: python3 -m pip install --quiet playwright==1.60.0
 
