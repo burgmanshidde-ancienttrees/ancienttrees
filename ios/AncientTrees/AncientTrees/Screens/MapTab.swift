@@ -1349,12 +1349,13 @@ struct MapTab: View {
         .padding(.top, 6)
     }
 
-    /// The cross in the field: the place goes, and the map goes back to where
-    /// it opened (your own area, or the default when location is off).
+    /// The cross in the field: the search goes and the map STAYS where you
+    /// are looking (Hidde, 2026-11-06: flying home "voelt onnatuurlijk"). Google
+    /// Maps and Apple Maps clear the search and leave the camera; the locate
+    /// button is the way home. The website's field does the same (map.ts).
     private func leavePlace() {
         focusPlace = nil
         selected = nil
-        fly(to: origin.lat, lng: origin.lng, span: 3000)
     }
 
 }
