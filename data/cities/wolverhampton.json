@@ -1,0 +1,173 @@
+{
+  "city": "Wolverhampton",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Wolverhampton's oldest trees are yews on its western and southern edges, and all of them were noticed long before anyone measured them. In Tettenhall three stand in a line beside a church that burned in 1950; they were called venerable in 1804. Codsall's churchyard yews were very ancient to a county historian in 1801. On the wooded hill above Himley Hall, a poet praised an ancient yew in 1791, and at Boningale a lone yew may be the one in a watercolour from that same year. None has a reliable age.",
+  "meta_description": "The yews of Tettenhall, Codsall, Himley Hall and Boningale, written about since 1791: Wolverhampton's oldest trees and how to reach each.",
+  "question_meta": "Nobody has dated Wolverhampton's oldest trees; the Tettenhall yews, venerable in 1804 and nearly seven metres round, are the largest.",
+  "question_answer": "Nobody has put a reliable age on any of them, so the honest answer is the best-recorded. The three yews in Tettenhall churchyard are the largest, the biggest measured at 693 centimetres round in 1999, and they were described as venerable in 1804. The yews on the hill above Himley Hall run them close, the largest about 640 centimetres round.",
+  "question_context": "Yews are the hardest trees in Britain to date. Their heartwood rots out with age, leaving nothing to count, and girth turns into age only through growth rates that vary from tree to tree. So the evidence here is the written record. In Tettenhall a magazine noted venerable yews in 1804, and in 1899 a visitor declared the great yew more than 2,000 years old, an opinion no modern survey supports. At Codsall a county historian called the churchyard yews very ancient in 1801. Above Himley Hall, a poem of 1791 praised a very ancient yew of extraordinary size on the hill, and a yew there measured 20 feet 10 inches in 1844, close to today's largest at about 21 feet. Whether they are the same tree cannot be proved. At Boningale a watercolour of 1791 shows a yew at the church, read by the Ancient Yew Group as the one standing today. Beyond those records, nobody can put a number on any of them. If you know better, tell us.",
+  "hero_tree_id": "wvh_001",
+  "oldest_tree_id": "wvh_001",
+  "faq": [
+    {
+      "q": "How big are the Tettenhall yews?",
+      "a": "The largest, nearest the church, measured 693 centimetres round at a foot off the ground in 1999, and the one furthest from the church 681 centimetres at the base. The middle one is a burnt-out hollow shell."
+    },
+    {
+      "q": "Are any of the yews 2,000 years old?",
+      "a": "A visitor claimed so for the great Tettenhall yew in 1899, but it was an opinion, not a measurement, and no modern survey supports it. None of these yews has a reliable age."
+    },
+    {
+      "q": "Can I visit the yews for free?",
+      "a": "Yes. Tettenhall, Codsall and Boningale are open parish churchyards, and Himley Park is free to walk, though Himley Hall itself charges separately."
+    },
+    {
+      "q": "Where are Himley Hall and Boningale?",
+      "a": "Himley Hall is on the Dudley edge, about 8 kilometres south-west of Wolverhampton city centre. Boningale is a Shropshire village about 10 kilometres west, near Albrighton station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wvh_001",
+      "name": "Tettenhall Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "girth_cm": 693,
+      "location": {
+        "address": "St Michael and All Angels churchyard, Upper Street, Tettenhall, Wolverhampton WV6",
+        "latitude": 52.600468,
+        "longitude": -2.1622183,
+        "neighbourhood": "Tettenhall"
+      },
+      "location_site": {
+        "name": "St Michael and All Angels churchyard, north side",
+        "radius_m": 30
+      },
+      "story": "The parish church of Tettenhall burned in 1950 and was rebuilt, keeping only its tower and porch. The three yews on the north side of the churchyard were already called venerable in 1804, so they are older than nearly everything in the building they stand beside.\n\nThe Ancient Yew Group has measured and described all three. Nearest the church is the biggest, a male whose trunk splits into four, 693 centimetres round at a foot off the ground in 1999. In 1874 the Gardener's Chronicle reported the bulkiest of the three at 24 feet. The middle one, also male, is a burnt-out hollow shell with ivy climbing into its crown, the hollow closing over above head height. The furthest, a female, is a ring of branches round the stump of the original trunk, 681 centimetres at the base. All three showed fire or smoke damage when they were surveyed in 1999.\n\nIn 1899 a visiting naturalist pronounced the great yew more than 2,000 years old. That was an opinion, not a measurement, and no modern survey has backed it. Nobody has dated these trees properly, so we leave the age open. If you know of a better estimate, tell us.\n\nThe churchyard is open and free, beside the village green in Tettenhall, a short bus ride west of Wolverhampton city centre. The ground on the north side is steep.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/tettenhall",
+        "https://ancient-yew.org/yew_trees/tettenhall-785",
+        "https://www.ancient-yew.org/userfiles/file/Tettenhall%202019.pdf",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1280742"
+      ],
+      "access": "Free. Open parish churchyard; the ground on the north side slopes steeply.",
+      "transport": "Tettenhall village, about three miles west of Wolverhampton city centre by bus; the churchyard is beside the village green.",
+      "how_to_recognise": "You can recognise them as the three old yews in a line on the steep north side of the church. The biggest, nearest the church, has a fire-scarred split trunk; the middle one is a hollow, burnt-out shell with ivy.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Ancient Yew Group (AYG) site record, visited 9 June 1999 by Tim Hills, photos 2012. Churchyard of St Michael and All Angels, Lichfield diocese, grid ref SJ89110031, coordinates 52.600468 -2.1622183 are the site-level map link, not a tree fix. Three yews in a line on the north side: two male, one female (AYG notes; the database does not assign sex per ID, except tree 3874 listed as male). Tree 784: class Ancient 7m+, closest to the church, no girth in database; the 2019 site file says the ancient male's growth area splits into four branches, a limb strains the bole, a new stem has emerged from the base, girth 22 ft 9 in at 1 ft (about 693 cm) in 1999. Tree 3874: Ancient 5-7m, middle one, slightly smaller male, 'burnt out hollow shell' on steeply sloping ground, hollow closes over above head height, ivy up into the canopy (Tim Hills, 7 April 2012); earliest mention 1804, Gentleman's Magazine. Tree 785: Ancient 5-7m, furthest from church, female, a series of branches around the truncated centre of the original tree, girth 22 ft 4 in (681 cm) at the base in 1999. Each of the three showed fire or smoke damage in 1999. History cited in the AYG file: 'venerable yew-trees' noted 1804; Gardener's Chronicle 1874 reported all three, the most bulky 24 ft in girth; in 1899 the North Staffs Field Club visit recorded a Mr Collins of Trentham pronouncing the great yew 'more than 2,000 years' old. That 2,000 year figure is a century-old opinion and is NOT adopted; no modern age basis, so age left empty. Church mostly rebuilt after a fire in 1950 (only the 1883 decorated tower and porch survive), so the yews are older than the present church. Alive: AYG photos from 2012 and a visit note for 2019 site file (copyright 2019); no photo from the last three years was seen, so flagged. Sources are one society database plus its historical citations; the churchyard is owned by the PCC. Treat the three as one collectible point (one place to stand). Girth_cm uses the larger 1999 figure for tree 784 (693 cm), 785 is 681 cm; the two are different measurement heights (1 ft vs base).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wvh_002",
+      "name": "Codsall Churchyard Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "girth_cm": 589,
+      "location": {
+        "address": "St Nicholas churchyard, Church Road, Codsall, Wolverhampton WV8",
+        "latitude": 52.633853,
+        "longitude": -2.1991334,
+        "neighbourhood": "Codsall"
+      },
+      "location_site": {
+        "name": "St Nicholas churchyard, south-east side of the church",
+        "radius_m": 30
+      },
+      "story": "In 1801 a county historian already called the Codsall yews very ancient and wondered whether they were as old as the church's 13th-century tower. In 1899 another writer went further, praising Codsall's ancient tower and its more ancient yew tree. Nobody since has put a number on them, and we will not either.\n\nThere are two, both south-east of St Nicholas church. The larger is a female, 589 centimetres round close to the ground when the Ancient Yew Group measured it in 2003. It is a tree of two distinct sides, each thick with small shoots and twiggy branches. The smaller is a male, 399 centimetres round, and it is what is left of something bigger, a sizeable fragment of the shell of a once larger tree.\n\nThe church's earliest parts are Norman, so a churchyard has stood here for a very long time. Whether the yews go back that far is the open question.\n\nThe most recent records we have are photographs from 2005. We believe both trees still stand, but if you visit, tell us what you find. The churchyard is open, a short walk from the centre of Codsall, a village on the railway line north-west of Wolverhampton with its own station.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/codsall/",
+        "https://www.ancient-yew.org/yew_trees/codsall-1517/",
+        "https://www.ancient-yew.org/userfiles/file/Codsall%202019.pdf"
+      ],
+      "access": "Free. Open churchyard.",
+      "transport": "Train from Wolverhampton to Codsall station on the Shrewsbury line, then a short walk to the church.",
+      "how_to_recognise": "You can recognise them as the two old yews south-east of the church. The larger, to the east-south-east, is a two-sided mass of twiggy growth; the smaller, to the south-east, is the remaining shell of a once larger tree.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Ancient Yew Group site record, St Nicholas Codsall, Lichfield diocese, grid ref SJ86620403, coordinates 52.633853 -2.1991334 (site-level map link). Visited 31 March 2003 by Tim Hills; 2019 site file. Two yews: tree 1516 female, Ancient 5-7m, 589 cm at 5 cm (19 ft 4 in close to the ground, 2003), grows ESE of the church, 'a tree of two distinct sides, each covered in adventitious growth and twiggy branches'; tree 1517 male, Ancient 4-5m, 399 cm (13 ft 1 in) close to the ground (2003), grows SE of the church, 'has been larger and all that remains is a sizeable fragment of its shell'. History quoted in the AYG file: 1801 History and Antiquities of Staffordshire (Rev. Stebbing Shaw) described the yews as 'very ancient' and possibly from the time of the 13th-century tower; 1899 Lynam wrote of 'its ancient tower, its more ancient yew tree'. Church earliest part Norman (AYG). Single source family (AYG with its historic citations), no independent second source and no vitality check later than 2005 photos, so flagged: alive is NOT confirmed within recent years. Churchyard is public and managed by South Staffordshire Council. Two trees within one churchyard fold into one collectible point. Weaker than Tettenhall; ship only if the place needs the count.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wvh_003",
+      "name": "The Himley Hall Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "girth_cm": 638,
+      "location": {
+        "address": "Himley Hall and Park, Himley, Dudley DY3 (Staffordshire)",
+        "latitude": 52.52216,
+        "longitude": -2.166498,
+        "neighbourhood": "Himley"
+      },
+      "story": "In 1791 a poet singled out \"a very ancient yew of extraordinary size\" on the hill beside Himley Hall, standing among old oaks. The hill still has yews among oaks. A survey in 2003 mapped nine of them and noted there may be more.\n\nWhether today's largest is the poet's tree, nobody can prove. It measures about 640 centimetres round, 21 feet, and in 1844 a writer recorded a yew here at 20 feet 10 inches. That is close enough to tempt and not enough to settle it. In 1838 the garden writer Loudon described several immense yews at Himley, one celebrated for its widely spreading head.\n\nThe biggest is largely shell now. More than half its circumference is dead sapwood, and the hollow holds four feet of humus. The others have characters of their own. One female is tall, columnar and red-barked, the branches that once overhung the house since cut. A completely hollow male grows above a badger sett. Their girths step down from 21 feet to 10.\n\nCapability Brown extended the park in the 1770s, and it now belongs to Dudley Council. Nobody has put an age on the yews, and we would rather say so than guess. Their records were updated in 2025.\n\nThe park is free to walk, on the Dudley edge about 8 kilometres south-west of Wolverhampton, with open paths through to Baggeridge Park; the hall charges separately. The yews are on the steep wooded slope above the hall.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/himley-hall/",
+        "https://www.ancient-yew.org/yew_trees/himley-hall/",
+        "https://www.ancient-yew.org/userfiles/file/Himley%20Hall.pdf",
+        "https://en.wikipedia.org/wiki/Himley_Hall",
+        "https://www.geograph.org.uk/photo/8291494"
+      ],
+      "access": "Free to walk in the park (Geograph caption, April 2026: free and open access between Himley Park and the adjoining Baggeridge Park; the hall itself is separately charged). Park owned by Dudley Council. Parking and event days may carry charges; check Dudley Council or Himley Hall.",
+      "transport": "Himley is about 8 km south-west of Wolverhampton city centre, on the Dudley edge. A public transport route and journey time were not confirmed from a fetched page; treat as a bus-plus-walk day trip, not verified.",
+      "how_to_recognise": "You can recognise them as a cluster of about nine old yews among old oaks on the steep wooded slope above the hall. The largest is hollow, about 640 centimetres round; one tall, red-barked columnar yew stands among them.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Ancient Yew Group (AYG) site record 'Himley Hall', site type parkland, access Public, owner Dudley Borough Council, grid ref SO88809160 (52.52216, -2.166498 converted OSGB36; site-level, not a tree fix). Recorded by Tim Hills 31 March 2003: nine yews mapped, 'there may be more'; approximate girths 21, 18, 17, 16, 14, 14, 11, 10, 10 ft. AYG database lists tree 1507 (638 cm at narrowest, 2-3 ft up, exactly 21 ft / 640 cm at 5 ft; more than half the circumference dead sapwood; roots spread a long way; 4 ft deep humus in the hollow), 1512 (564 cm close to ground; living wood round most of the bole), 1508 (518 cm at 60 cm, male, hollow, live wood on the path side), 1833 (488 cm at 150 cm), 1509 (488 cm), 1510 (442 cm). Tim Hills PDF 'The Yews of Himley Hall': tree 1 female, 14 ft 6 in at the ground, red-barked tall columnar, branches that overhung the house cut; tree 4 male, completely hollow above a large badger sett, about 16 ft, healthy foliage. History: a 1791 poem (Fitzgerald, 1801 Miscellaneous Poems) fixed on 'a very ancient yew of extraordinary size' on a hill near the mansion, standing among old oaks; Loudon 1838 'several immense yew trees, particularly one celebrated for its widely spreading head'; Garner 1844 yew 20 ft 10 in at 1 ft. 1791 poem and 1844 measurement match the present largest (about 21 ft) within measuring variation but identity of the 1791 tree with tree 1507 is not established; no age adopted. Drawing in the William Salt Library shows two lines of yews on the hillside above the moated manor. Alive: AYG tree pages carry photographs credited 2025 (Richard Roberts/Mike Glasson) and a site file dated 2025, so recent. Those 2025 notes on the AYG page are credited to the Woodland Trust Ancient Tree Inventory and were NOT used or cited here. Himley Hall: Wikipedia confirms Grade II* hall, park extended 1770s by Capability Brown, open to the public, owned by Dudley Metropolitan Borough Council. Park access: Geograph 8291494 (photo taken 8 April 2026) caption says free and open access between Himley and Baggeridge Parks. The yews are on a steep slope in the woodland, reached by paths; the exact trunk is not pinned. Group of nine folds into one collectible point only if the writer treats it as 'the yew slope'; best single tree is 1507. Single society database plus its historic citations plus ownership by a council; no independent modern measurement second source, so flagged.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wvh_004",
+      "name": "Boningale Churchyard Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "at least 230 years, on record",
+      "age_min": 230,
+      "girth_cm": 396,
+      "location": {
+        "address": "St Chad's churchyard, Boningale, near Albrighton, Shropshire WV7",
+        "latitude": 52.620745,
+        "longitude": -2.279577,
+        "neighbourhood": "Boningale"
+      },
+      "location_site": {
+        "name": "St Chad's churchyard, south-east of the church",
+        "radius_m": 30
+      },
+      "story": "From the road, the Boningale yew looks solid. Walk round to its north side and it is hollow, the trunk opening into a horseshoe, with the wood thickening heavily along its eastern edge.\n\nIt is a male tree, 396 centimetres round at the ground, about 13 feet, when the Ancient Yew Group visited in 2012. That is modest beside the big churchyard yews of Tettenhall and Codsall, and it stands alone here, the only yew in the churchyard.\n\nIts strongest evidence of age is a picture. A watercolour painted by the Reverend Williams in 1791, now held by Shropshire Archives, shows a yew at the church. The Ancient Yew Group reads it as this tree, which would make it more than 230 years old. Nobody has confirmed that the yew in the painting and the yew on the ground are the same, and nobody has put an estimate on its age, so the painting is a floor rather than a date. If you know more, tell us.\n\nSt Chad's is a Norman church, built in the 12th century, and the yew grows to its south-east. Our most recent first-hand description of the tree comes from that 2012 visit. We believe it still stands, and if you go, we would like to hear how it looks.\n\nThe churchyard is open and free, in a Shropshire village about 10 kilometres west of Wolverhampton. Albrighton, on the railway towards Shrewsbury, is the nearest station.",
+      "verified_sources": [
+        "https://ancient-yew.org/yew_tree_database/boningale-nr-albrighton",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Boningale-2019.pdf",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1053675",
+        "https://en.wikipedia.org/wiki/Boningale"
+      ],
+      "access": "Free. Open parish churchyard (AYG access: public); the yew is visible from the road.",
+      "transport": "Shropshire village about 10 km west of Wolverhampton city centre (straight line from the coordinates).Albrighton station is on the Wolverhampton to Shrewsbury line; the walk from the station to Boningale and the journey time were not confirmed from a fetched page, so no minutes are claimed. Likely a train-plus-walk or car day trip.",
+      "how_to_recognise": "You can recognise it as the only yew in the churchyard, solid-looking from the road but hollow on its north side, with a horseshoe-shaped trunk. It stands south-east of St Chad's Norman church.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Ancient Yew Group site record Boningale (nr Albrighton), St Chad, Lichfield diocese, churchyard, access public, owned by the Parochial Church Council, grid ref SJ81170259 (converted 52.620745, -2.279577; site level, not a tree fix), visited 7 April 2012 by Tim Hills. One yew, tree 3876, class 'V - con' (AYG veteran category), girth 396 cm at the ground; the 2019 site file says approximately 13 ft at the ground, male, viewed from the road it looks solid but the north side is hollow, horseshoe shape developing, considerable thickening on the eastern edge. It grows SE of a church that dates to Norman times (Wikipedia: built in the 12th century; Historic England lists the Church of St Chad, list entry 1053675, not re-read for the yew). The yew appears in Rev. Williams' 1791 watercolour held by Shropshire Archives (per AYG), so a yew of some size stood there in 1791; whether it is the same tree is by AYG's reading, not independently confirmed. No age estimate by AYG; age_min 230 is only the 1791 depiction (2026 minus 1791), not an age estimate. Alive: AYG photos from 2012 and a 2019 site file (the 2019 file text describes the tree as seen in 2012), so last confirmed 2012/2019; flagged. Single society record plus Historic England and Wikipedia for the church only. Modest girth. In Shropshire, outside Wolverhampton city; weaker candidate that fills the count.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
