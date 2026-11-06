@@ -2,12 +2,12 @@
   "city": "Glasgow",
   "country": "United Kingdom",
   "status": "needs_curation",
-  "oldest_tree_id": "gla_001",
-  "intro": "Glasgow's remarkable trees are civic rather than wild. A 450-year-old sycamore survived a 2025 hurricane on the strength of its own name alone, an oak was planted in 1918 as a suffrage protest turned permanent, 88 yews still stand around a demolished merchant's mansion, and a pair of Californian redwoods went almost unrecorded until a National Trust survey rediscovered them. An ash on Argyle Street arrived as a seed in holiday primroses. A train ride west in Elderslie, the Wallace Yew is seven centuries old or about three, depending on the source. All six are free to see.",
-  "meta_description": "Glasgow's most remarkable trees: the storm-damaged Darnley Sycamore, King's Park's yew grove, the 1918 Suffragette Oak, and Holmwood's twin redwoods.",
-  "question_answer": "Glasgow's oldest tree is the Darnley Sycamore, estimated at 450 to 500 years old, standing on the southern edge of the city near Darnley Primary School. Storm Eowyn tore away roughly half its crown in January 2025, but council inspectors found the trunk sound and expect it to survive for decades yet.",
+  "intro": "Glasgow's remarkable trees are civic rather than wild. A 450-year-old sycamore survived a 2025 hurricane, an oak was planted in 1918 as a suffrage protest turned permanent, and an ash on Argyle Street arrived as a seed in holiday primroses. A short trip out, the Wallace Yew stands in Elderslie, the pollarded oaks of Chatelherault's medieval hunting park include one dated to around 1440, and two yews at Motherwell's Dalzell Estate have been measured at nearly 30 metres. Most are free to see; Finlaystone, home of a yew tied to John Knox, charges admission.",
+  "meta_description": "Glasgow's remarkable trees: the Darnley Sycamore, the Suffragette Oak, Chatelherault's medieval oaks and the Dalzell yews. 10 trees, how to reach each.",
   "question_meta": "The Darnley Sycamore, 450 to 500 years old and linked to Mary Queen of Scots, is Glasgow's oldest tree, its trunk still standing after 2025 storm damage.",
+  "question_answer": "Glasgow's oldest tree is the Darnley Sycamore, estimated at 450 to 500 years old, standing on the southern edge of the city near Darnley Primary School. Storm Eowyn tore away roughly half its crown in January 2025, but council inspectors found the trunk sound and expect it to survive for decades yet.",
   "question_context": "Darnley takes its name from the personal name behind the district, which pre-dates the sycamore by centuries, but by the time Mary Stuart is said to have sat beneath it in 1565, both name and tree were already established features of the countryside south of Glasgow. The city grew out to meet the tree rather than the other way round; postwar housing now surrounds it on every side, with a fence and small plaque the only markers separating it from ordinary suburban Darnley. It has needed defending twice before: once in the early 1900s, when a resident's complaint kept a new tramline from running through it, and again in 1969, when a Barrhead schoolteacher marched primary pupils out with placards to stop a dual carriageway doing the same. Its most serious threat came from weather rather than planners: Storm Eowyn's 100mph gusts in January 2025 tore away roughly half its crown. Council arborists inspected it by hoist rather than write it off from the ground, found the trunk sound, and expect it to stand for decades yet, its recovery now as much a part of the story as its age.",
+  "oldest_tree_id": "gla_001",
   "faq": [
     {
       "q": "What is the oldest tree in Glasgow?",
@@ -262,6 +262,139 @@
         "height": 1067,
         "taken_month": 3
       }
+    },
+    {
+      "id": "gla_007",
+      "name": "The Cadzow Oaks",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "roughly 500 years or more",
+      "age_min": 500,
+      "age_max": 700,
+      "location": {
+        "address": "Cadzow oak pasture, Chatelherault Country Park, Ferniegair, Hamilton ML3 7UE",
+        "latitude": 55.75797,
+        "longitude": -4.01912,
+        "neighbourhood": "Chatelherault, Hamilton"
+      },
+      "story": "One of the oaks in this pasture has been dated to around 1440. Historic Environment Scotland, which lists the Chatelherault landscape in its inventory of designed landscapes, describes the Cadzow oaks as pollards so old they are difficult to date at all, and that one date is the firm point in the fog. Parks and Gardens UK repeats it. Most of the others are simply called ancient, and local captions say over 500 years.\n\nThey are what remains of the Hamilton High Parks, the medieval hunting forest of Cadzow on the slopes near Cadzow Castle. The oaks are the reason the ground is a Site of Special Scientific Interest. They were pollarded, cut back at head height so they regrew above the reach of grazing animals, and they still stand singly in grazed pasture, which is about as close as Scotland gets to seeing a medieval park the way it was used. Not all of them made it. Historic Environment Scotland records trees lost to intensive farming in the 20th century.\n\nWhich oak they are is less settled than you would think. One description of the site calls them pedunculate oaks, another sessile, so we list them as oak and would like to hear from anyone who has looked at the acorn stalks.\n\nChatelherault Country Park is free and open all year. The oaks were still being recorded by naturalists in September 2026.",
+      "verified_sources": [
+        "https://portal.historicenvironment.scot/designation/GDL00101",
+        "https://parksandgardens.org/places/chatelherault",
+        "https://commons.wikimedia.org/wiki/File:Cadzow_Oak_-_geograph.org.uk_-_990318.jpg",
+        "https://www.inaturalist.org/observations/397777902"
+      ],
+      "official_register": {
+        "name": "Historic Environment Scotland, Inventory of Gardens and Designed Landscapes: Chatelherault (Hamilton High Parks SSSI oaks)",
+        "url": "https://portal.historicenvironment.scot/designation/GDL00101"
+      },
+      "access": "Free. Chatelherault Country Park is open all year. The oaks stand in grazed pasture by the park paths near Cadzow Castle.",
+      "transport": "Day trip from Glasgow to Hamilton. Train to Hamilton Central, then about 2 km by road to the park, so allow for a bus, a taxi or a longer walk.",
+      "how_to_recognise": "You can recognise them as the old pollarded oaks standing singly in open grazed pasture, not in the woodland. They stand on the slope near Cadzow Castle and its earthworks in Chatelherault Country Park.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "ENSEMBLE, one place to stand: the ancient oak pasture of the Hamilton High Parks, a medieval hunting park (Cadzow Forest). Historic Environment Scotland (GDL00101): ancient pollarded oaks so old they are difficult to date, one dated to c.1440; Hamilton High Parks is an SSSI for the oaks; some trees lost to 20th-century intensive farming. Parks and Gardens UK repeats the c.1440 date and the SSSI. A South Lanarkshire leaflet and Geograph captions say 'over 500 years' (caption only, not a source). A 2014 blog claims up to 700-900 years via dendro; treat as unverified and DO NOT use. Girth not recorded in any source I could fetch (the Woodland Trust ATI holds girths but is off limits). Species given as Pedunculate Oak by the Commons file description (Rosser1954); the blog says sessile, so species is unsettled: write 'oak (Quercus robur)' with caution or use 'Oak (Quercus sp.)'. Alive: lifecheck RECENT, iNaturalist observation 2026-09-06 at the site; Geograph photos 2007 to 2021. No individual named tree; I could not pin one trunk, so the point is the pasture beside the castle earthworks. Geotags of Geograph photos cluster at 55.7575-55.7584, -4.0189 to -4.0196. Scotsman article 'Oaks rooted in 700 years of Scots history' exists but is Cloudflare-blocked (not read). The Cadzow oaks also held Scotland's famous wild white cattle herd (not verified here). Walk: the park path network is the walk; the Avon Gorge is the same park. Writing pass 2026-11-03: species set to Oak (Quercus sp.) as these notes advise (sources disagree pedunculate/sessile). Photo approved after viewing the pixels: one Cadzow oak fills the frame in summer daylight, in leaf, titled as one of the Cadzow Oaks; two small unrecognisable figures at the right edge, outside the centre crop.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/One_of_the_Cadzow_Oaks_at_Chatelherault_-_geograph.org.uk_-_3040231.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "M J Richardson, via Geograph/Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:One_of_the_Cadzow_Oaks_at_Chatelherault_-_geograph.org.uk_-_3040231.jpg",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "gla_009",
+      "name": "The Covenanters Oak",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented, called the oldest living thing in North Lanarkshire",
+      "location": {
+        "address": "Dalzell Estate, near Dalzell House, Manse Road, Motherwell ML1 2SD",
+        "latitude": 55.7724,
+        "longitude": -3.978,
+        "neighbourhood": "Dalzell Estate, Motherwell"
+      },
+      "story": "North Lanarkshire Council, which owns the ground, calls this oak probably the oldest living thing in North Lanarkshire. It is also held together with steel.\n\nIn August 2008 heavy rain brought down one of its three great scaffold limbs, and the fall tore the main stem open in a crack running from the ground to about two metres up. A firm of arborists from Perth braced it that autumn. The longer-term repair is still there. Two steel cables with nylon slings hold the crown together, and two steel props stand under it, bolted into concrete pads.\n\nNobody has given it a published age we can stand behind, and we have not settled which oak it is either. If you know, tell us. The name points to the Covenanters, the Presbyterians who held outlawed services in the open air in the 17th century, but we have not found a source that ties them to this tree, so take the name as a name.\n\nIt stands near Dalzell House, on the path between the Japanese Garden and the mansion's main entrance, a few hundred yards of walking. A walking blog updated in 2022 still describes it there. The estate is a free public park, and Jacob and Esau, two exceptionally tall yews, grow in the woods of the same estate.",
+      "verified_sources": [
+        "https://www.northlanarkshire.gov.uk/directory/parks/dalzell-estate",
+        "https://ecclesiasticalandheritageworld.co.uk/news/474-covenanters-oak-dalzell-estate-north-lanarkshire",
+        "https://www.walkingwithbrian.com/post/dalzell-estate"
+      ],
+      "access": "Free public park run by North Lanarkshire Council.",
+      "transport": "Train to Motherwell, then a walk of a kilometre or more to the Dalzell Estate.",
+      "how_to_recognise": "You can recognise it by the steel cable braces in its crown and the two steel props at its base. It stands near Dalzell House, on the path between the Japanese Garden and the mansion's main entrance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Council (North Lanarkshire, owner of the ground): near the main house, 'probably the oldest living thing in North Lanarkshire'; age and weather damage, work done to preserve it. Heritage World article: August 2008 heavy rain tore a wound in the main stem when one of three major scaffold limbs collapsed; open crack from ground to about 2 m; Aboretum Internationale (Perth) fitted emergency bracing that autumn, then a longer-term system of two steel cable braces with nylon slings and two steel props bolted into concrete pads. Walking blog (post dated 2020, updated Oct 2022) places it on the route from the Japanese Garden to the mansion, a few hundred yards, calls it a 'mighty tree', so alive as of 2020-22. lifecheck at Dalzell House: RECENT, iNaturalist 2024-01-13 (nearby, not the oak). Pin is the house, tree within a few hundred metres, approximate. Species, girth and numeric age: the only figures I saw (sessile oak, 6.7 m girth, over 800 years, royal deer park of David I) came up in search results from the Woodland Trust Ancient Tree Inventory, which is off limits, so NOT used; the Covenanter story (open-air worship under the oak during 17th century persecution, the Hamilton family hosting) appears in search summaries only and has not been seen on a fetched page: do not state it without a source. No photograph on Commons; Geograph is behind Cloudflare. Photo pass 2026-11-04 (approved): Commons file titled Covenanters' Oak (Geograph import), the propped, hollowed oak fills the frame inside its railing, daylight, in leaf. Camera 116 m from our pin, so the pin is not upgraded.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Covenanters%27_Oak_-_geograph.org.uk_-_1849231.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Elliott Simpson",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Covenanters%27_Oak_-_geograph.org.uk_-_1849231.jpg",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "gla_010",
+      "name": "Jacob and Esau, the Dalzell Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "height_m": 29.8,
+      "location": {
+        "address": "Woods below the arboretum, Dalzell Estate, Motherwell ML1 2SD",
+        "latitude": 55.7724,
+        "longitude": -3.978,
+        "neighbourhood": "Dalzell Estate, Motherwell"
+      },
+      "story": "In 2022 two climbers went up a pair of yews in a Motherwell wood with a tape measure. Jacob came out at 29.8 metres and Esau at 29.5. The Arboricultural Association's magazine, which reported the climb, says Jacob could be the tallest yew in Europe. The record it was set against, a yew at Belvoir Castle in England, stood at 28.4 metres when measured in 1987.\n\nYews are usually broad, dark and not especially tall, which is what makes this pair odd. They grow either side of a path on a riverbank, at the foot of a bowl-shaped hollow in the woods below the Dalzell Estate arboretum, close enough to count as one stop. Esau is the thicker of the two, though nobody has published its girth. Neither has a published age.\n\nThe trees are registered with the Tree Register of the British Isles. We have not found an exact position for them, and our pin marks Dalzell House rather than the trees, so head for the arboretum and go down into the woods below it. The estate is a free public park; the magazine report does not say whether the path to this spot is open to everyone, so if you get there, tell us how you found it.",
+      "verified_sources": [
+        "https://treecare.org.uk/?p=2370",
+        "https://www.northlanarkshire.gov.uk/directory/parks/dalzell-estate"
+      ],
+      "access": "Free public park run by North Lanarkshire Council. The yews stand by a path on a riverbank; public access to that exact spot is not confirmed.",
+      "transport": "Train to Motherwell, then a walk of a kilometre or more to the Dalzell Estate.",
+      "how_to_recognise": "You can recognise them as a pair of very tall yews growing either side of a path on a riverbank. They stand at the foot of a bowl-shaped hollow in the woods below the Dalzell Estate arboretum.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Treecare / Arboricultural Association magazine (ARB Magazine issue 197, summer 2022, David Treanor, with Mark Foster): Jacob measured 29.8 m, Esau 29.5 m, by tape after being climbed (Foster climbed Esau, Douglas Crawford climbed Jacob); Esau is the girthier, no girth given; 'could be the tallest in Europe'; previous record Belvoir Castle yew 28.4 m (1987). Registered with the Tree Register (TROBI). Search summaries add that the Tree Register called Jacob the tallest known yew and a national champion found 2024 at 29.8 m: only the treecare.org.uk page was actually read, the Tree Register page returned an index, and the Daily Record/Cumbernauld News story 403'd. Treat 'tallest in Europe' as a claim to quote with attribution, not fact. Superlative-collision check needed. Twin trees metres apart: one collectible point. Exact spot not found in any fetched source; pin is Dalzell House, tree within the estate, approximate. No photograph found.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "gla_011",
+      "name": "John Knox's Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 400 to 800 years, debated",
+      "age_min": 400,
+      "age_max": 800,
+      "location": {
+        "address": "Finlaystone Country Estate, Langbank, Port Glasgow, Renfrewshire PA14 6TJ",
+        "latitude": 55.928582,
+        "longitude": -4.619781,
+        "neighbourhood": "Langbank, Renfrewshire"
+      },
+      "story": "John Knox's Yew is not where John Knox stood. Around 1900, during alterations to Finlaystone House, the yew was moved about 30 metres rather than felled, and it survived the move. A tree now reckoned to be somewhere between 400 and 800 years old was shifted across the grounds and kept growing.\n\nThe Knox part of the story rests on 1556. In that year the reformer led a communion service at Finlaystone for the family of the Earl of Glencairn, which accounts of the house's history confirm. Tradition adds that he preached under this yew. Some say he planted it. Others say it was already old when he arrived, and Scotland's Yew Tree Heritage Initiative, which classes it as ancient, sides with neither. Nobody has published a girth or a height.\n\nIt grows as two stems, and its north-facing side carries a thinner, less healthy crown than the rest, possibly from storm damage since the move. The only photograph we can find was taken in 1981, so we cannot say how it looks now. If you visit, tell us.\n\nFinlaystone is a visitor estate of gardens and woodland run by a ranger service above the Clyde at Langbank. Admission fees and opening times apply, so check the estate's own site before you go.",
+      "verified_sources": [
+        "https://scotlands-yew-trees.org/yewtree/john-knoxs-yew/",
+        "https://www.ancient-yew.org/yew_trees/finlaystone-house-john-knox-yew-2344/",
+        "https://commons.wikimedia.org/wiki/File:John_Knox%27s_yew_tree,_Finlaystone_House_-_geograph.org.uk_-_5503236.jpg",
+        "https://en.wikipedia.org/wiki/Finlaystone_House"
+      ],
+      "access": "Finlaystone Country Estate, a visitor estate with paid admission and set opening times; check Finlaystone's own site before visiting.",
+      "transport": "Day trip from Glasgow to Langbank. Train on the Inverclyde line to Langbank station, then walk to the estate.",
+      "how_to_recognise": "You can recognise it by its two stems and by the thinner crown on its north-facing side. It stands in the grounds of Finlaystone House.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Scotland's Yew Trees (SYTHI) lists 55.928582,-4.619781, grid NS 36459 73717, age class ancient 400-800 years, no girth or height (the Ancient Yew Group database also holds no girth). Provenance is debated: some claim Knox planted it mid-16th century, others that it was already old; Knox is said to have preached under it and given communion to the family of the 5th Earl of Glencairn in 1556 (SYTHI; Wikipedia's Finlaystone House article confirms the 1556 communion service led by Knox but does not mention the yew). Moved about 30 m in 1900 during alterations to the house rather than felled and survived (SYTHI), so it is NOT standing where Knox stood in 1556; a presentation by Paul Greenwood (Ancient Tree Forum, seen only in a search summary, PDF too large to fetch) says the same. Condition per SYTHI: north-facing canopy thinner, possibly storm damage since the move. ALIVE: no dated recent source; the only photo is from 1981 and lifecheck is OLD, so flagged. SYTHI text is copyright, do not copy. Geograph subject geotag and SYTHI coordinate agree within about 25 m. Pin approximate (grounds of a house, individual tree not mapped). Superlative caution: do not call it the oldest yew. Photo held (writing pass 2026-11-03): a 1981 slide; the yew is clear in daylight but a group of visitors stands under it, and a 45-year-old picture cannot show the tree as it is now while its survival is unconfirmed. A recent photograph wins.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
     }
   ]
 }

@@ -1,0 +1,129 @@
+{
+  "city": "Cannock Chase",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "At Shugborough, on the edge of Cannock Chase, a yew that the National Trust calls Europe's widest has spread sideways by rooting its own branches, until its main stem is almost impossible to reach. In Brocton Coppice, the part of Staffordshire with the highest concentration of ancient and veteran trees, walkers have named two gnarled oaks after film trees, Groot and Treebeard. None of the three has a reliable age, and only Shugborough charges for entry.",
+  "meta_description": "Shugborough's sprawling yew, called Europe's widest, and the Groot and Treebeard oaks of Brocton Coppice: Cannock Chase's old trees and how to find them.",
+  "question_meta": "None of Cannock Chase's best-known old trees has a reliable age; the Groot oak of Brocton Coppice has been guessed at 500 years or more.",
+  "question_answer": "Nobody has dated any of the three properly. The Groot oak in Brocton Coppice has been guessed at 500 years or more, but only in a photographer's caption. The Great Yew of Shugborough was estimated at 250 to 300 years old in 1898, an estimate we have not been able to check.",
+  "question_context": "Brocton Coppice is the stronger answer for the Chase as a whole. It holds the highest concentration of ancient and veteran trees in Staffordshire, old oak woodland among birch, protected as a Site of Special Scientific Interest. Two of its oaks have names. The Groot Tree, gnarled enough to earn one, was photographed in 2021, described in 2023 and mapped in 2025, and its age rests on a single guess. The Treebeard Oak, up a narrow path about five minutes from the Sher Brook stepping stones, has a hollow belly and no date at all. A newspaper in 2022 said trees in the Coppice go back two or three centuries, some to the time of Henry VIII, but that describes the wood, not either trunk. Shugborough's yew is better measured but no better dated. Its crown was given a circumference of 261 feet in 1898 and about 171 metres by 1992, because its branches root where they touch the ground. A writer in 1898 thought it 250 to 300 years old. If you know a better date for any of them, tell us.",
+  "hero_tree_id": "cnk_001",
+  "oldest_tree_id": "cnk_002",
+  "faq": [
+    {
+      "q": "Is the Shugborough yew really the widest in Europe?",
+      "a": "The National Trust describes it as Europe's widest yew, and it carries that reputation. No published contest settles it, but its crown was recorded at about 171 metres round in 1992."
+    },
+    {
+      "q": "Why are the Brocton Coppice oaks called Groot and Treebeard?",
+      "a": "Walkers say their gnarled trunks look like the walking trees of Guardians of the Galaxy and The Lord of the Rings. The Groot Tree is listed under that name on photo and walking sites, and Staffordshire Live wrote up the Treebeard oak in 2022."
+    },
+    {
+      "q": "How do I find the Treebeard oak?",
+      "a": "From the Punchbowl car park near Milford, walk down to the Sher Brook stepping stones, turn right up the next main path, then right up a narrow path, bearing right at the split and climbing a steep slope. The oak is on the right, about five minutes from the stones."
+    },
+    {
+      "q": "Do I have to pay to see these trees?",
+      "a": "The Shugborough yew is inside the National Trust estate, which charges for the park and gardens. Brocton Coppice is open woodland and free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cnk_001",
+      "name": "The Great Yew of Shugborough",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "not documented",
+      "girth_cm": 373,
+      "location": {
+        "address": "Shugborough Estate, north of the house by the Temple, Milford, Stafford ST17",
+        "latitude": 52.800688,
+        "longitude": -2.0128618,
+        "neighbourhood": "Shugborough, Milford (Cannock Chase edge)"
+      },
+      "location_site": {
+        "name": "Shugborough gardens, by the Temple",
+        "radius_m": 50
+      },
+      "story": "The National Trust says Shugborough's garden holds Europe's widest yew, and the way it got wide is the story. This yew grows sideways. A visitor's ticket from 1925 already gave the reason. Its branches bend to the ground, root where they touch and send up fast young shoots, so over the years it has spread into a tangle so dense that, the Ancient Yew Group notes, its main stem is almost impossible to reach.\n\nThe measurements show the spread. In 1898 a survey gave the crown a circumference of 261 feet. By 1992 it was given as 560 feet, about 171 metres round. The trunk itself is modest by comparison, 373 centimetres round. An 1898 writer guessed the tree was then 250 to 300 years old, and a later source has suggested planting around 1700. We have not seen the evidence for either, so we leave the age open. Widest in Europe is the Trust's claim and the tree's reputation, not the result of a measured contest.\n\nIt is a female tree, and it stands by the Temple just north of the house, on the north side of the lawn known as The Flat. Shugborough is National Trust land on the edge of Cannock Chase, with paid entry to the park and gardens through the Milford Gates. The Trust still shows it to visitors as one of the garden's sights.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_trees/shugborough-2001/",
+        "https://www.ancient-yew.org/yew_tree_database/shugborough/",
+        "https://www.nationaltrust.org.uk/visit/shropshire-staffordshire/shugborough-estate"
+      ],
+      "access": "Paid entry. National Trust Shugborough Estate, entry through the Milford Gates only. On a sample date in November 2026 the garden and parkland were open 09:00 to 16:00; check the Trust's page for current hours and prices. Dogs on leads.",
+      "transport": "Train to Stafford, then a bus towards Milford; the National Trust gives 10 to 30 minutes by bus from Stafford. From Wolverhampton this is a day out rather than a quick trip.",
+      "how_to_recognise": "You can recognise it as the huge yew that grows sideways in a tangle of rooted branches instead of a single tall trunk. It stands by the Temple just north of the house, on the north side of the lawn called The Flat.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Ancient Yew Group tree 2001, class 'Notable', girth 373 cm (no measurement date or height given in database). Site Shugborough, parkland, access Public, grid ref SJ99232257, coordinates 52.800688 -2.0128618 (map link, site level); AYG says the yew stands by the Temple, just north of the house. Reputed 'Widest Tree in Europe'; the National Trust itself says its walled garden includes 'Europe's widest yew tree'. AYG notes it has grown into such a tangle that the main stem is almost impossible to reach, and describes it as a female yew that seems to grow sideways. Measurements recorded in the AYG entry: 1898 (John Lowe, Garden Magazine) girth 10 ft 2 in at 3 ft, height 42 ft, spread diameter 87 ft, circumference 261 ft, age then estimated 250 to 300 years; 1992 (Baxter, The Eternal Yew) girth 12 ft 3 in, height 71 ft, crown circumference 560 ft (about 171 m). A 1925 entry ticket attributes the wide spread to branches rooting and young shoots growing rapidly after rooting. A more recent source cited by AYG suggests a planting date around 1700; not independently seen, so no age adopted. Girth 373 cm equals 12 ft 3 in, consistent with Baxter 1992. Alive: Express and Star 28 Jan 2020 reports volunteers pruning the Great Yew (search result title only; page 403 to fetch) and the National Trust still advertises it. Superlative: 'widest in Europe' is a reputation, not a measurement; Tree Register of the British Isles reportedly records the largest crown in Britain and Ireland (seen only in a search summary, not fetched, so unverified; do not cite). Estate returned to the National Trust management in 2016 (Wikipedia). The AYG notes also say 'Staffordshire County Council finances the estate', which is out of date. Whether the tree is inside the paid-entry area or the free parkland is not stated on a fetched page; treat as paid.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "cnk_002",
+      "name": "Groot Tree, Brocton Coppice",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "possibly 500 years or more",
+      "location": {
+        "address": "Brocton Coppice, Cannock Chase, near Brocton, Stafford ST17",
+        "latitude": 52.77713,
+        "longitude": -2.02471,
+        "neighbourhood": "Brocton Coppice"
+      },
+      "story": "Walkers on Cannock Chase named this oak after Groot, the walking tree from Guardians of the Galaxy, and the old, gnarled trunk explains it. It is the sort of tree you half expect to turn round.\n\nIt grows in Brocton Coppice, which holds the highest concentration of ancient and veteran trees in Staffordshire. The Coppice is old oak woodland with birch around it, on ground that is protected for its wildlife twice over, as a Site of Special Scientific Interest and a Special Area of Conservation.\n\nHow old this one is, nobody knows. The photographer who posted it under that name in 2021 guessed 500 years or more, and that is a caption, not a survey. We have not settled the species either. One map record calls it a pedunculate oak, while the Coppice's own oaks are described as sessile, so if you know your acorns, tell us which.\n\nThe tree has been photographed in 2021, described on a walking app in 2023 and mapped in 2025, so it is very much standing. Its exact position is less certain. The records we have disagree by some tens of metres, so walk in from the Coppice Hill car park and look for the oak that looks back. Stay on the paths. Brocton Coppice is free and open.",
+      "verified_sources": [
+        "https://www.geograph.org.uk/photo/7023610",
+        "https://www.komoot.com/highlight/4432792",
+        "https://www.openstreetmap.org/node/12776476313",
+        "https://cannockchase.org.uk/discover-brocton-coppice-1/"
+      ],
+      "access": "Free. Brocton Coppice is open woodland on Cannock Chase, protected as a Site of Special Scientific Interest and Special Area of Conservation; keep to the paths and bridleways. Walks start from the Coppice Hill car park in Brocton.",
+      "transport": "Brocton is about five miles from Stafford. The Chase is mostly reached by car; public transport to the car park is not confirmed.",
+      "how_to_recognise": "You can recognise it by its gnarled, knotted trunk, which walkers say looks like Groot from Guardians of the Galaxy. It stands among the ancient oaks of Brocton Coppice, where the old oaks stand out against the birch.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Geograph photo 7023610 'Groot Tree, Brockton Coppice, Cannock Chase', Brian Deegan, CC BY-SA 2.0, taken 20 Nov 2021; his description: 'Old Oak Tree, maybe 500+ years old' (an amateur caption, not a survey). Subject grid SJ 9843 1995 = WGS84 52.77713 -2.02471, camera SJ 9844 1998. OpenStreetMap node 12776476313 (added 25 Apr 2025 by Reino Baptista) 'Groot Tree', natural=tree, dominant_taxon Quercus robur, tag fixme='exact location tbc', website pointing at the Geograph photo, so it descends from the same photograph and is NOT independent coordinate evidence; coordinates 52.7771330 -2.0247130. Komoot highlight 4432792 (Natural Monument, 4.9 from 39 ratings) 'Groot Tree', tip by Kenny dated 6 Sep 2023: 'An old tree which resembles Groot'; map link 52.77759 -2.024921 (about 40 m from the OSM point, so the exact trunk is uncertain within some tens of metres). Alive: Geograph Nov 2021, Komoot Sep 2023, OSM Apr 2025. Species: OSM says Quercus robur, but Staffordshire County Council and the Cannock Chase site describe the Coppice oaks as sessile; neither verified for this tree, so species left as Oak (Quercus sp.). Context for the writer: Brocton Coppice is a 200-acre woodland with about 600 sessile oaks and the highest concentration of ancient and veteran trees in Staffordshire (Cannock Chase heritage page and a Staffordshire County Council statement quoted in search results, with 'some over 500 years old' and 'remnant of the royal hunting forest of Cank'); illegal bike trails damaged oak roots (Staffordshire County Council, Feb 2021). The Coppice-wide numbers are from search summaries of the county council pages and the Cannock Chase heritage page text only partly seen (the fetched Cannock Chase page confirms the highest concentration of ancient and veteran trees in Staffordshire and oak mining bees, nothing on ages), so use only the highest-concentration claim as sourced. Another Treebeard-like oak in the Sher Brook Valley near the stepping stones was reported by Staffordshire Live (page not fetchable); lead only. Hard rule: this is one amateur-named trunk; the 500+ age is one caption. Ship as a lone tree page with the recognition line, not a city. Photo held (writing pass 2026-11-03): the Groot trunk is clearly visible mid-frame, but the picture is dusk-dark, photo_light POOR (underexposed, flat), and a large unrelated trunk dominates the left third. A brighter photograph wins.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cnk_003",
+      "name": "The Treebeard Oak, Sher Brook Valley",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Brocton Coppice, Sher Brook Valley above the stepping stones, Cannock Chase, near Milford, Stafford ST17",
+        "latitude": 52.77791,
+        "longitude": -2.02014,
+        "neighbourhood": "Brocton Coppice (Sher Brook Valley)"
+      },
+      "story": "Brocton Coppice has two oaks named after trees that walk in films. One is the Groot Tree. This is the other, said to look like Treebeard from The Lord of the Rings, and it hides further from the main tracks. When Staffordshire Live wrote it up in February 2022, the chairman of a local ramblers' group called it off the beaten track.\n\nThe paper's directions are the best map there is. From the Punchbowl car park just outside Milford, walk down to the stepping stones over the Sher Brook and turn right up the next main path. After about 100 yards, turn right onto a narrow path, bear right where it splits, and climb a steep slope veering slightly left. The oak is on your right, about five minutes from the stones. Our pin sits on the stepping stones, not the tree, because nobody has published a position for the trunk itself.\n\nThe article's pictures show its hollow belly. Nobody has dated it. The same article says trees in Brocton Coppice go back two or three centuries, some to the time of Henry VIII, but that is a statement about the wood, not this trunk. Even the species is unconfirmed beyond oak, so if you can tell sessile from pedunculate, tell us which.\n\nThe last dated account we have is that 2022 article. Brocton Coppice is a Site of Special Scientific Interest, free and open, so keep to the paths on the way in.",
+      "verified_sources": [
+        "https://www.staffordshire-live.co.uk/news/local-news/huge-tree-looks-just-like-6630743",
+        "https://www.openstreetmap.org/node/2687569925",
+        "https://cannockchase.org.uk/discover-brocton-coppice-1/"
+      ],
+      "access": "Free. Open woodland on Cannock Chase; Brocton Coppice is a Site of Special Scientific Interest, so keep to the paths. The tree is off the main tracks, up a narrow path and a steep incline (Staffordshire Live, 12 Feb 2022). Staffordshire Live gives Punchbowl car park, just outside Milford, as the best place to park.",
+      "transport": "Mostly reached by car; no public transport to the Chase edge was confirmed from a fetched page.",
+      "how_to_recognise": "You can recognise it as the oak that looks like Treebeard, with a hollow belly. It stands to the right of a narrow path after a steep climb, about five minutes from the Sher Brook stepping stones, off the main tracks.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Staffordshire Live (Samuel Hodgkiss, 12 Feb 2022): an oak in Sher Brook Valley, Brocton Coppice, 'five minutes walk from the stepping stones', that 'looks rather much like Treebeard'; the article's photo caption mentions 'inside the belly of the tree' (a hollow); Barry Collis, chairman of Chase Ramblers, quoted that it is not common and off the beaten track somewhat; article says trees in Brocton Coppice date back two or three centuries, some to the time of Henry VIII (a coppice-wide statement, not about this tree). Directions in the article: from the Punchbowl car park by Milford, walk down to the stepping stones, turn right up the next main path, then right up a narrow path for about 100 yards, bear right where it splits, continue up a steep incline veering slightly left, and the tree is on the right. PIN: no coordinate for the tree itself was found. The pin given is the OSM node 2687569925 'Stepping Stones' (52.77791, -2.02014, ford=stepping_stones, seen in an OSM map download); the tree is some hundred metres from that, so the pin is a reference point, not the tree. A Komoot highlight 5877116 'Ancient Tree in Cannock Chase' sits at 52.771897, -2.020145 (about 650 m south of the stepping stones; tip by Paul, 3 July 2023: 'absolutely beautiful ancient tree that must be at least 500 years old'); it is NOT confirmed to be the same tree as the Treebeard oak (more than five minutes' walk), so it was not adopted. No age adopted: the 500 years is a walker's remark. Alive: article dated 12 Feb 2022 describes it standing; no later dated photo seen for the same tree (Komoot 2023 tip is of uncertain identity), so flagged. Species 'oak' per the article only. Single news source for the tree (the second and third URLs are for the stepping-stones pin and the Coppice setting only); weaker than cnk_002. Do not mix up with the Groot Tree (cnk_002, about 400 m west at 52.77713, -2.02471).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

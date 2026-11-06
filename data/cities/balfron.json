@@ -1,0 +1,69 @@
+{
+  "city": "Balfron",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Balfron's Clachan Oak is known locally as the hanging tree. Iron hoops hold its hollow trunk together, and a local visitor guide says people were once chained to it as punishment for petty crimes. The same guide dates it to at least 1553, and local legend ties it to William Wallace and Rob Roy MacGregor, though one account doubts it is old enough for Wallace. It stands in the old part of the village, the Clachan, about 28 kilometres from Stirling, with no gate or fee reported.",
+  "meta_description": "The Clachan Oak in Balfron, the hoop-bound hanging tree said to date to at least 1553: its story, its legends and where to find it.",
+  "question_meta": "Balfron's oldest tree is the Clachan Oak, the hoop-bound hanging tree thought to date back to at least 1553.",
+  "question_answer": "The Clachan Oak is Balfron's oldest tree, thought by a local visitor guide to date back to at least 1553, which would make it more than 470 years old. Nobody has published a girth or a scientific age to confirm it.",
+  "question_context": "The oak stands in the Clachan, the old part of Balfron, and it is known locally as the hanging tree. Iron hoops hold its hollow trunk together, and a local visitor guide says people were once chained to it as punishment for petty crimes. The same guide says it is thought to date back to at least 1553 and possibly further, without saying where the date comes from, so it is the local account rather than a measurement. Legend asks more of it. Local stories tie the oak to William Wallace and to Rob Roy MacGregor, but one account thinks it unlikely the tree is old enough for Wallace, who died in 1305. It was photographed in November 2012, the hoops plain on its trunk, and again in February 2022, and an observation logged at the spot in 2025 suggests it still stands. The species is confirmed only as oak, and no girth or height has been published. If you know whether it is pedunculate or sessile, or where the 1553 date comes from, tell us.",
+  "hero_tree_id": "blf_001",
+  "oldest_tree_id": "blf_001",
+  "faq": [
+    {
+      "q": "Why is the Clachan Oak called the hanging tree?",
+      "a": "A local visitor guide says people were once chained to it as punishment for petty crimes, and the name has stuck. Iron hoops now hold its hollow trunk together."
+    },
+    {
+      "q": "Is the Clachan Oak connected to William Wallace?",
+      "a": "Local legend says so, and also links it to Rob Roy MacGregor. One account thinks the tree unlikely to be old enough for Wallace, who died in 1305."
+    },
+    {
+      "q": "Where is the Clachan Oak?",
+      "a": "In the Clachan, the old part of Balfron village in Stirlingshire, about 28 kilometres from Stirling. No gate or entry fee is reported."
+    }
+  ],
+  "trees": [
+    {
+      "id": "blf_001",
+      "name": "The Clachan Oak",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented, over 400 years by local accounts",
+      "location": {
+        "address": "The Clachan, Balfron, Stirlingshire",
+        "latitude": 56.0737,
+        "longitude": -4.3354,
+        "neighbourhood": "Balfron"
+      },
+      "story": "Balfron calls this the hanging tree. Iron hoops hold its hollow trunk together, and according to a local visitor guide, people were once chained to it as punishment for petty crimes.\n\nIt stands in the Clachan, in the village of Balfron, and the same guide says it is thought to date back to at least 1553, possibly further. That would put it past 470 years. The guide does not say where the date comes from, so read it as the local account rather than a measurement. Nobody has published a girth or a height.\n\nLegend asks more of it. Local stories tie the oak to William Wallace and to Rob Roy MacGregor. One account thinks it unlikely the tree is old enough for Wallace, who died in 1305, and that is the reading we would trust.\n\nWhat is not in doubt is that it is still here. It was photographed in November 2012, its hoops plain on the trunk, and again in February 2022, and an observation logged at the spot in 2025 suggests it stands today.\n\nWe have not confirmed the species beyond oak. If you can tell whether it is pedunculate or sessile, tell us which, and if you know where the 1553 date comes from, we would like to hear that too.\n\nIt stands in the village with no gate or fee reported. Balfron is about 28 kilometres from Stirling, so this is a trip of its own rather than a detour from the city.",
+      "verified_sources": [
+        "https://www.loch-lomond-waterfront.co.uk/things-to-do/villages-towns-cities/things-to-do-balfron",
+        "https://commons.wikimedia.org/wiki/File:The_Clachan_Oak,_Balfron_-_geograph.org.uk_-_7093467.jpg",
+        "https://commons.wikimedia.org/wiki/File:Clachan_Oak,_Balfron_-_geograph.org.uk_-_3224546.jpg",
+        "https://www.stirlingnews.co.uk/news/13572390.appeal-for-tree-history/"
+      ],
+      "access": "Standing in the village (The Clachan); no gate or entry fee reported in sources, not confirmed on the ground",
+      "transport": "Balfron village bus from Stirling, roughly 40 to 50 minutes (not verified); outside the 30 minute day-trip band",
+      "how_to_recognise": "You can recognise it by the iron hoops that hold its hollow trunk together. It stands in the Clachan, the old part of Balfron village.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Species NOT confirmed from a fetched page; 'oak' only. Age: Loch Lomond Waterfront visitor page says thought to date back to at least 1553 and possibly further; a forum post (treebuzz, not fetched, 403) reportedly says 400 to 500 years; one source says unlikely to date to Wallace's time though legend links it to Wallace and Rob Roy. Known locally as the hanging tree: iron hoops hold the hollow trunk together and people were once chained to it for petty crimes (tourism page). Stirling Observer 21 Nov 2018 article 'Ancient oak with murky past' (pressreader, 403, search summary only) calls it possibly Stirlingshire's oldest tree. Reported third in Scotland's Tree of the Year 2014 (search summary only, unverified). No girth/height found. Alive: two geograph photos geotagged 56.07358,-4.33528 (2012-11-11, Leslie Barrie) and 56.07367,-4.33544 (2022-02-10, Richard Sutcliffe); lifecheck.py RECENT 2025-05-04 (iNaturalist observation 278754573, not fetched, 403). Storm Eowyn Jan 2025 not specifically checked. Pin: camera geotags ~10 m apart, camera position not trunk, so approximate. Sole fetched written source is a tourism page: flagged. Balfron is about 28 km from Stirling, not a Stirling day trip. ID: stg_001 collided with a live Strasbourg tree (passcheck --pending), reassigned to blf_001 by the writing pass 2026-11-03. Species set to Oak (Quercus sp.) because the verify notes say only 'oak' was confirmed. Photo approved 2026-11-03: Geograph 7093467 fills the frame, blue sky, photo_light OK; the 2012 Geograph 3224546 (Leslie Barrie) shows the iron hoops clearly but crops the crown with a lamp post, kept as a further photograph.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Clachan_Oak%2C_Balfron_-_geograph.org.uk_-_7093467.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Richard Sutcliffe, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "approved",
+        "attribution_url": "https://www.geograph.org.uk/photo/7093467"
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Clachan_Oak%2C_Balfron_-_geograph.org.uk_-_3224546.jpg",
+          "license": "CC BY-SA 2.0",
+          "attribution": "Leslie Barrie, via Geograph Britain and Ireland / Wikimedia Commons",
+          "attribution_url": "https://www.geograph.org.uk/photo/3224546",
+          "status": "approved"
+        }
+      ]
+    }
+  ]
+}

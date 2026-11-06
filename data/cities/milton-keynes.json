@@ -1,0 +1,116 @@
+{
+  "city": "Milton Keynes",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Milton Keynes is a new town with old trees inside it. In Great Linford Manor Park a pollarded common lime, dated by one source to the 18th century and by another to 300 to 500 years, has its own boardwalk so visitors stay off its roots. In Howe Park Wood, recorded in the 13th century, local naturalists have named a crab apple Edna and call it the oldest of its kind in the county. Both are free to walk to.",
+  "meta_description": "The Linford Lime with its own boardwalk and Edna, the old crab apple of Howe Park Wood: the oldest trees in Milton Keynes and how to find them.",
+  "question_meta": "The oldest tree we know in Milton Keynes is the Linford Lime in Great Linford Manor Park, put at anywhere from the 18th century to 500 years old.",
+  "question_answer": "The Linford Lime in Great Linford Manor Park is the oldest tree we know of in Milton Keynes. The Parks Trust dates its planting to the 18th century, while a Heritage Open Days listing puts it at 300 to 500 years old, and nobody has published a measurement to settle it.",
+  "question_context": "The lime was pollarded long ago, cut back hard so it regrew from a thickened head, which gave it the huge base and wide shape it has now. The Parks Trust, which manages the park, has built a boardwalk underneath it to keep feet off its roots, and a Heritage Open Days event has been held to celebrate it. Its age depends on which source you read. The Trust's notable trees factsheet says it was planted in the 18th century, a photographer's caption calls it part of the park's original 18th-century landscaping, and the Heritage Open Days listing says 300 to 500 years. Without a girth or a ring count, the honest answer is somewhere from about 250 years upward. The other contender is Edna, a crab apple in the north-west corner of Howe Park Wood. Local naturalists call her the finest tree in the wood and think her the oldest of her kind in the county, and a Parks Trust factsheet says well over 100 years. On paper that makes her the younger of the two, and nobody has measured either.",
+  "hero_tree_id": "mkn_001",
+  "oldest_tree_id": "mkn_001",
+  "faq": [
+    {
+      "q": "Why is there a boardwalk under the Linford Lime?",
+      "a": "The Parks Trust built it so visitors walk over the tree's roots rather than on them, to protect them for the future."
+    },
+    {
+      "q": "Who is Edna?",
+      "a": "A crab apple in the north-west corner of Howe Park Wood, named by local naturalists, who call it the finest tree in the wood. It was alive and visited by the Milton Keynes Natural History Society in February 2025."
+    },
+    {
+      "q": "When are the trees at their best?",
+      "a": "The lime flowers in early summer, when its crown fills with bees. The crab apple blossoms in spring, around late April and May."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes. Great Linford Manor Park and Howe Park Wood are both open, free parks managed by The Parks Trust; the wood's paths can be very muddy."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mkn_001",
+      "name": "Linford Lime",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 250 to 500 years",
+      "age_min": 250,
+      "age_max": 500,
+      "age_basis": "source",
+      "location": {
+        "address": "Great Linford Manor Park, the Wilderness, beside the canal-side boardwalk, Great Linford, MK14 5AS",
+        "latitude": 52.0738341,
+        "longitude": -0.7572204,
+        "neighbourhood": "Great Linford"
+      },
+      "story": "A boardwalk now runs underneath the Linford Lime, built by The Parks Trust to keep visitors' feet off its roots.\n\nIt is a common lime that was pollarded many years ago, cut back hard so that it regrew from a thickened head, which is why its base is so huge and its shape so wide. How long ago that was, and how old the tree is, depends on which source you read. The Parks Trust's notable trees factsheet says it was planted in the 18th century, and a photographer's caption from 2023 calls it part of the park's original 18th-century landscaping. A Heritage Open Days listing for an event celebrating the tree puts it at 300 to 500 years. Both can be found in print, nobody has published a ring count or a girth, and the honest answer is somewhere from about 250 years upward.\n\nThe park is older than either figure. Great Linford's history runs back at least to Saxon times, though nothing connects the lime itself to that. The Parks Trust even named a sculpture, the Lime Leaf Chair, after the park's limes.\n\nCome in early summer, when common limes flower and the crown hums with bees. The park is free and open, and the tree stands in the part called the Wilderness, beside the walkway.",
+      "verified_sources": [
+        "https://www.openstreetmap.org/node/3997134068",
+        "https://www.theparkstrust.com/our-work/great-linford-manor-park-heritage-fund-project/",
+        "https://www.heritageopendays.org.uk/submission-event/leaf-printing-drop-in-with-artist-robin-clements.html",
+        "https://www.geograph.org.uk/photo/7455243",
+        "https://theparkstrust.com/media/3086/factsheet-notable-trees-of-mk-factsheet.pdf"
+      ],
+      "access": "Free, open public park managed by The Parks Trust; a boardwalk leads underneath the tree.",
+      "transport": "Great Linford village, MK14 5AS; public transport not confirmed.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the crown fills with bees and scent"
+      },
+      "how_to_recognise": "You can recognise it by its huge, wide pollarded base and by the boardwalk that runs underneath it. It stands beside the Wilderness walkway in Great Linford Manor Park.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Pin: OSM node 3997134068 'Veteran Lime Tree' (natural=tree), mapped by the Parks_Trust account (the ground's manager), last edited 2021-06-15, lat 52.0738341 lon -0.7572204. Geograph 7455243 (taken 2023-01-29, subject grid SP8542, ICBM 52.07377,-0.75715) and the Commons copy geotag 52.073772,-0.757438 agree within about 10 m. Alive: Geograph photo 2023-01-29 caption 'ancient Lime tree', Heritage Open Days listing for an event celebrating the tree (2025 per search listing). Age conflict: Parks Trust notable-trees factsheet (read via search extract only, PDF page itself not retrievable behind cookie wall) says planted in the 18th century; Heritage Open Days listing says 'a tree aged between 300-500 years old'; Geograph caption says 'Believed to part of the original 18th century landscaping'. Both figures kept, flagged. Parks Trust heritage project page: 'A boardwalk now leads underneath the ancient Lime Tree to protect its roots for the future', placed in the Wilderness section of the park; park history goes back at least to Saxon times (not linked to the tree). Factsheet (extract) says the tree was pollarded many years ago, hence the huge base and distinctive shape, and that it was shortlisted in 2015 for a Tree of the Year competition (factsheet wrongly credits National Trust; no independent confirmation, do not state). Girth not published. Parks Trust named the sculpture 'Lime Leaf Chair' after Linford Lime trees. Prior Stony Stratford Wesley elm is dead (see leads). Photo approved (writing pass 2026-11-03) after viewing the pixels: the bare lime stands centre frame in bright winter daylight with the boardwalk leading to it, geotag within about 10 m of the Parks Trust's own OSM node; bare not in leaf (tiebreaker only), the trunk and crown survive a centre crop.",
+      "photo": {
+        "url": "https://s0.geograph.org.uk/geophotos/07/45/52/7455243_e84cee6f.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Philip Jeffrey, via Geograph",
+        "attribution_url": "https://www.geograph.org.uk/profile/20983",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "mkn_002",
+      "name": "Edna, the Crab Apple of Howe Park Wood",
+      "species": "Wild Apple Tree (Malus sylvestris)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "location": {
+        "address": "Howe Park Wood, north-west corner, Tattenhoe, Milton Keynes (between Chaffron Way and Tattenhoe Street)",
+        "latitude": 52.0022,
+        "longitude": -0.7872,
+        "neighbourhood": "Tattenhoe"
+      },
+      "story": "The local naturalists call her Edna. The Milton Keynes Natural History Society names this crab apple the finest tree in Howe Park Wood and says it is thought to be the oldest specimen in the county, a claim it makes without saying who did the thinking.\n\nOther figures go further and are harder to pin down. A Parks Trust factsheet calls it believed to be the second oldest crab apple in the country and well over 100 years old, and a Parks Trust post calls it one of the oldest crab apples in the UK. Nobody has published a measured age or a girth, so we cannot rank it. The Parks Trust also notes two old crab apples in the wood and does not say which one is Edna.\n\nWhat is certain is that she was alive in February 2025, when the society's plant group visited what their report calls the ancient broad trunk of the named tree. Some of the group saw it from the outside path. Others walked the muddy route in.\n\nHowe Park Wood itself is old, recorded in the 13th century and possibly earlier. Edna grows in its north-west corner. Our pin marks the middle of the wood, not the tree. Come in spring, when crab apples flower.",
+      "verified_sources": [
+        "https://mknhs.org.uk/howe-park-wood/",
+        "https://mknhs.org.uk/mknhs-plant-group-howe-park-wood-23rd-february-2025-trip-report/",
+        "https://www.theparkstrust.com/parks/howe-park-wood",
+        "https://en.wikipedia.org/wiki/Howe_Park_Wood"
+      ],
+      "access": "Free. Howe Park Wood is open woodland managed by The Parks Trust; free car parks off Chaffron Way (opposite the Westcroft Centre) and off Howe Rock Place. Paths can be very muddy. Dogs on leads requested.",
+      "transport": "Several bus routes serve Westcroft District Centre, on the northern side of the wood.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "flowers",
+        "label": "late April into May, when the crab apple is in blossom"
+      },
+      "how_to_recognise": "You can recognise it by its broad, ancient trunk. It stands in the north-west corner of Howe Park Wood, off the woodland path and visible from the outside path; there may be a second old crab apple in the wood.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Coordinate is the wood's centre point from Wikipedia (52 00 08 N, 0 47 14 W), NOT the tree: pin approximate at wood level, no tree-level coordinate found (no OSM node in the wood). Three sources: MKNHS Howe Park Wood page calls it 'the finest tree' in the wood in the north-west corner and 'thought to be the oldest specimen in the county' (no claimant named); MKNHS plant group report of a 23 Feb 2025 visit refers to 'the ancient broad trunk of the named tree Edna' (so alive in Feb 2025, and some members saw it from the outside path while others walked the muddy route in); Parks Trust page says 'Notable trees include two old crab apples, a grand oak, and tall ash trees near the car park', so there may be two old crab apples, which one is Edna is not stated. Conflict not resolved: Parks Trust factsheet (extract via search only, PDF not retrievable) says 'believed to be the country's second oldest crab apple tree' and 'well over 100 years old'; a Parks Trust tree-a-day post says one of the oldest crab apples in the UK. No measured age or girth anywhere. Also noted by one search extract: veteran oaks in the wood 'dating back 400 years' (not confirmed on a fetched page); Wikipedia says only that ancient large oaks may reflect a medieval deer park. Wood recorded in the 13th century, possibly 11th.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
