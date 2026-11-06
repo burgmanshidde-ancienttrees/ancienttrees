@@ -2,9 +2,10 @@
 //
 // DIRECTION C (Hidde, 2026-11-05, "1b, link"): under the place's name one slim
 // white box, the way Google Maps and komoot keep a place's people and asks in
-// one block. Its first row is the ambassador: the named person, with a green
+// one block. Its row is the ambassador: the named person, with a green
 // "Become one too" at the end of their line, or, with nobody named, "Become the
-// <place> ambassador". Its second row is "Help create Ancient Trees Plus". No
+// <place> ambassador". "Help create Ancient Trees Plus" left the box for its
+// own under the trees on 2026-11-06 (PlusUnderBox). No
 // affiliation in the line (Hidde: "leaving out quercus lisboa is good"). The
 // website draws the same box (AmbassadorLine.astro, PlusAsk.astro).
 //
@@ -21,11 +22,6 @@ struct PlaceAsksBox: View {
     var body: some View {
         VStack(spacing: 0) {
             PlaceAmbassadors(slug: slug, title: title, catalogue: catalogue)
-            // Off from the server without a release (Kit/AppSwitches.swift).
-            if AppSwitches.shared.showPlus {
-                Rectangle().fill(Brand.hairline).frame(height: 1)
-                PlusRow(city: title)
-            }
         }
         .background(Brand.surface, in: .rect(cornerRadius: 14))
         .overlay {
@@ -34,6 +30,25 @@ struct PlaceAsksBox: View {
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("place-asks")
+    }
+}
+
+/// THE PLUS QUESTION IN ITS OWN BOX, under the place's trees (Hidde,
+/// 2026-11-06, before the Guardian piece: the first screen is the place and
+/// its trees, the ask comes after them; "dan kunnen we altijd nog meer op de
+/// voorgrond zetten"). The website draws the same under its tree list.
+struct PlusUnderBox: View {
+    let title: String
+    var body: some View {
+        // Off from the server without a release (Kit/AppSwitches.swift).
+        if AppSwitches.shared.showPlus {
+            PlusRow(city: title)
+                .background(Brand.surface, in: .rect(cornerRadius: 14))
+                .overlay {
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .strokeBorder(Brand.hairline, lineWidth: 1)
+                }
+        }
     }
 }
 

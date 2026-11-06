@@ -308,11 +308,11 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="city-intro">
         <p class="lede">{intro}</p>
         <button type="button" class="city-intro-more">Read more</button>
-        {/* ONE SLIM WHITE BOX (direction C, Hidde, 2026-11-05): the ambassador
-            row, then the Plus row. .city-box in style.css. */}
+        {/* ONE SLIM WHITE BOX (direction C, Hidde, 2026-11-05): the ambassador.
+            The Plus row has its own box under the trees (2026-11-06).
+            .city-box in style.css. */}
         <div class="city-box">
           <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={cityName} seated={placeHasAmbassador(city.id)} />
-          <PlusAsk city={cityName} />
         </div>
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
@@ -356,6 +356,10 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       )}
       <div class="panel-foot">
         <p class="subtle-suggest">Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
+        {/* THE PLUS QUESTION UNDER THE TREES (Hidde, 2026-11-06, before the
+            Guardian piece): the first screen is the city and its trees; the
+            ask comes once somebody has looked at them. */}
+        <div class="city-box plus-under"><PlusAsk city={cityName} /></div>
         {/* The word "walk" only where the app's walks feed has walks worth
             pointing at (hasWalksPage, same planner as /api/walks.json). */}
         <div class="app-pitch">

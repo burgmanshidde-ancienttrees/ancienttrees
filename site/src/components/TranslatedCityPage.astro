@@ -159,7 +159,6 @@ const cityHasQuestion = hasQuestionPage(city);
         <button type="button" class="city-intro-more">{U.readMore}</button>
         <div class="city-box">
           <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={city.data.city} seated={placeHasAmbassador(cslug)} />
-          <PlusAsk lang={lang} city={city.data.city} />
         </div>
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
@@ -213,6 +212,8 @@ const cityHasQuestion = hasQuestionPage(city);
       )}
       <div class="panel-foot">
         <p class="subtle-suggest">{U.missingOrWrong(tr.city)} <a href="/contribute?kind=tree">{U.tellUs}</a>.</p>
+        {/* The Plus question under the trees, as on the English page (2026-11-06). */}
+        <div class="city-box plus-under"><PlusAsk lang={lang} city={city.data.city} /></div>
         {/* Above the FAQ, exactly where the English
             city page puts it. Translated 2026-09-12. */}
         <div class="app-pitch">

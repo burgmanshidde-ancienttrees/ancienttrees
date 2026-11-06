@@ -1079,6 +1079,10 @@ struct MapTab: View {
                 }
             }
         }
+        // The Plus question after the trees, the searched city only.
+        if case .city = focusPlace {
+            PlusUnderBox(title: placeTitle).padding(.top, 16)
+        }
     }
 
     private var list: some View {

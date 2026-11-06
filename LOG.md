@@ -12,6 +12,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06 late session: the Plus question moves under the trees
+
+**What changed in the product.** "Help create Ancient Trees Plus" no longer sits in the white box under a city's intro, where on a phone it was the first thing after the city's name. It now has its own box under the trees: on the city page (English and every kept translation) after the "Know one we missed? Tell us" line, in /explore's list for a searched city after the last row, and in the app's map list for a searched city after the last tree. The ambassador row stays on top. Hidde, before the Guardian piece: "ja ik denk dat dit beter is dan kunnen we altijd nog meer op de voorgrond zetten als nodig", after a mockup of London on web phone, desktop and app. Answers so far: 1 (his own test), so no measurement was disturbed. The `plus_ask` switch and the answered-here flag still remove the row, and its empty box goes with it (`.plus-under` in style.css; `PlusUnderBox` in PlaceAmbassadors.swift). The app change ships with the next build.
+
 ## 2026-11-06 daily publish (scheduled task): 22 US and UK trees into the app
 
 - **What went live (311725714), app only under APP FIRST, no web page or place page:** Philadelphia +5 (phl_005..009: Bartram yellowwood, Woodlands zelkova, Laurel Hill cutleaf linden, Hobson Street scholar tree, Washington Square sycamore; build_us_philadelphia.py `--only philadelphia`). Northern Ireland estates 10 and the Highlands 6 from build_uk_ni_highlands.py (`--only` without Belfast, whose live file the builder would rewrite): Castlewellan 4, Florence Court, Crom, Dark Hedges, Rostrevor (Old Homer), Armagh (King Tree), Gosford, Ardkinglas 2, Glen Affric, Benmore, Reelig Glen, Inverness. Cardiff +1: the Bute Park Wellingtonia, car_003 in cardiff-verified.json, grafted as crd_008 (marked `published_as` there). Preflight clean; the pace counts nothing while APP FIRST holds, so the 25 was this task's own limit.

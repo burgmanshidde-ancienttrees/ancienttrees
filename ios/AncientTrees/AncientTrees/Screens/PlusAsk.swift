@@ -21,9 +21,9 @@ struct PlusRow: View {
     var body: some View {
         // A tap, not a Button: this row sits in the map's sheet header, the
         // handle a thumb raises the sheet by (BottomSheet sheetTap).
-        // ONE LINE (Hidde, 2026-11-05, direction C): the second row of the
-        // place's white box, under the ambassador; the website's PlusAsk.astro
-        // draws the same line.
+        // ONE LINE (Hidde, 2026-11-05, direction C), in its own box under the
+        // place's trees since 2026-11-06 (PlusUnderBox); the website's
+        // PlusAsk.astro draws the same line.
         // The website's row (style.css .city-box-row): an 18 point icon, 10
         // to the words, 15 medium.
         HStack(spacing: 10) {

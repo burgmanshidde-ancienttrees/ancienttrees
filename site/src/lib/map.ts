@@ -825,23 +825,32 @@ function _inFocus(f) {
   var pl = PLACES[f.properties.cs];
   return FOCUS.kind === 'country' ? Boolean(pl && pl.k === FOCUS.key) : f.properties.cs === FOCUS.key;
 }
-// The searched city's box: the ambassador row to its page's request, the Plus
-// row to the one Plus sheet (PlusAsk.astro, on this page without a row of its
-// own). Nothing for a country or a city without a page.
-function _boxHtml() {
-  if (!FOCUS || FOCUS.kind === 'country') { return ''; }
+// The searched city's box: the ambassador row to its page's request. Nothing
+// for a country or a city without a page.
+function _focusCity() {
+  if (!FOCUS || FOCUS.kind === 'country') { return null; }
   var pl = PLACES[FOCUS.key];
-  if (!pl || !pl.h) { return ''; }
+  return pl && pl.h ? pl : null;
+}
+function _boxHtml() {
+  var pl = _focusCity();
+  if (!pl) { return ''; }
   var amb = (pl.a ? WORDS.ambA : WORDS.ambThe).replace('{p}', pl.n);
-  var rows = '<a class="city-box-row" href="' + _esc(pl.h) + '#ambassador">' + BOX_IC.amb +
-    '<span class="city-box-label">' + _esc(amb) + '</span>' + CHEVRON + '</a>';
+  return '<div class="city-box exc-box"><a class="city-box-row" href="' + _esc(pl.h) + '#ambassador">' + BOX_IC.amb +
+    '<span class="city-box-label">' + _esc(amb) + '</span>' + CHEVRON + '</a></div>';
+}
+// The Plus row stands alone UNDER the trees (Hidde, 2026-11-06, before the
+// Guardian piece: the first screen is the city and its trees, the ask comes
+// after them; "dan kunnen we altijd nog meer op de voorgrond zetten"). It opens
+// the one Plus sheet (PlusAsk.astro, on this page without a row of its own).
+function _plusHtml() {
+  var pl = _focusCity();
+  if (!pl || !document.getElementById('plus-dialog')) { return ''; }
   var answered = false;
   try { answered = localStorage.getItem('at_plus_answered') === '1'; } catch (e) {}
-  if (document.getElementById('plus-dialog') && !answered) {
-    rows += '<button type="button" class="plus-row city-box-row" data-from="explore" data-city="' + _esc(pl.n) + '">' +
-      BOX_IC.plus + '<span class="city-box-label">' + _esc(WORDS.plus) + '</span>' + CHEVRON + '</button>';
-  }
-  return '<div class="city-box exc-box">' + rows + '</div>';
+  if (answered) { return ''; }
+  return '<div class="city-box exc-box plus-under"><div class="plus-bar"><button type="button" class="plus-row city-box-row" data-from="explore" data-city="' + _esc(pl.n) + '">' +
+    BOX_IC.plus + '<span class="city-box-label">' + _esc(WORDS.plus) + '</span>' + CHEVRON + '</button></div></div>';
 }
 function _treeBits(f) {
   var p = f.properties, k = (CARDS && p.id && CARDS[p.id]) || {};
@@ -912,7 +921,7 @@ function renderPanel() {
   }
   html += '<h3 class="city-section-head">' + _esc(_n(WORDS.all, trees.length)) + '</h3>' +
     '<div class="tree-rows">' + trees.slice(0, LIST_MAX).map(_rowHtml).join('') + '</div>' +
-    (trees.length > LIST_MAX ? '<p class="ex-more">' + _esc(WORDS.more) + '</p>' : '');
+    (trees.length > LIST_MAX ? '<p class="ex-more">' + _esc(WORDS.more) + '</p>' : '') + _plusHtml();
   panel.classList.add('ex-trees');
   panel.innerHTML = html;
   // The hearts only: atPaintSaves refilters the map, which calls this again
