@@ -45,9 +45,20 @@ export const APP_ONLY_PINS = true;
 
 let baseline: Set<string> | null = null;
 let noted: Set<string> | null = null;
+// Released by Hidde (data/app-first-released.json): app-only trees that get
+// their pages anyway. 2026-11-06, every app-only UK tree before the Guardian
+// piece ("lift limit once! this is exceptional curcumstance"). The same file
+// scripts/findable.py app_only() reads.
+let released: Set<string> | null = null;
 
 function load(): void {
-  if (baseline && noted) return;
+  if (baseline && noted && released) return;
+  try {
+    const doc = JSON.parse(fs.readFileSync(path.join(DATA, "app-first-released.json"), "utf-8"));
+    released = new Set<string>(doc.ids ?? []);
+  } catch {
+    released = new Set<string>();
+  }
   try {
     const doc = JSON.parse(fs.readFileSync(path.join(DATA, "web-freeze-baseline.json"), "utf-8"));
     baseline = new Set<string>(doc.ids ?? []);
@@ -79,6 +90,7 @@ export function treeIsAppOnly(t: any): boolean {
   load();
   if (!baseline) return false;
   if (baseline.has(t?.id)) return false;
+  if (released!.has(t?.id)) return false;
   if (readerSignal(t)) return false;
   if (noted!.has(t?.id)) return false;
   return true;

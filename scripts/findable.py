@@ -211,8 +211,16 @@ def app_only(tree):
                 _APP_FIRST["noted"] = set(_json.load(fh).get("trees") or [])
         except (OSError, ValueError):
             _APP_FIRST["noted"] = set()
+        # Released by Hidde (data/app-first-released.json; 2026-11-06, every
+        # app-only UK tree before the Guardian piece). Same file as
+        # site/src/lib/app-first.ts reads.
+        try:
+            with open(_os.path.join(root, "data", "app-first-released.json"), encoding="utf-8") as fh:
+                _APP_FIRST["released"] = set(_json.load(fh).get("ids") or [])
+        except (OSError, ValueError):
+            _APP_FIRST["released"] = set()
     base = _APP_FIRST["base"]
-    if base is None or tree.get("id") in base:
+    if base is None or tree.get("id") in base or tree.get("id") in _APP_FIRST["released"]:
         return False
     if reader_added(tree) or tree.get("id") in _APP_FIRST["noted"]:
         return False
