@@ -12,6 +12,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06 night run (window from 13:37 UTC): rung 1, one reader photograph
+
+- Looked at the reader's two frames for the Three Atlas Cedars of Préfargier (prf_001): the first is the right tree (three joined crowns, gravel path, bench), the second is an information board. Verdict `add`; publish reported the photograph already in the strip, so nothing new went live. Preflight: 0 problems.
+- Stopped there: this run did no enrichment, writing or scouting. The queue's next items (Bath enrichment, 106 READY leads) are untouched.
+
 ## 2026-11-06 session: the Préfargier cedars live; deploy unblocked twice
 
 - **What changed:** a reader's tree, the Three Atlas Cedars of Préfargier (La Tène, canton of Neuchâtel, prf_001), live on Hidde's yes from their app photograph, note and GPS fix (scripts/build_la_tene.py, id prefix prf since ltn is Lorton's). One tree, so no place page. Story keeps to what the photograph shows; their note quoted. Not done: submission #627's outcome and the reader's mail are left to the knock (tree_approved.py).
