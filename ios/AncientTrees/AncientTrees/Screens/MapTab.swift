@@ -93,6 +93,9 @@ struct MapTab: View {
     /// in the search field, by another search, and once none of its trees is
     /// in view any more.
     @State private var focusPlace: FocusPlace?
+    /// Whether the chosen place has been in view since it was chosen, so the
+    /// flight there does not count as leaving it.
+    @State private var placeSeen = false
     enum FocusPlace: Equatable { case city(String), country(String) }
     @Environment(Units.self) private var units
     @Environment(Saved.self) private var saved
@@ -787,6 +790,20 @@ struct MapTab: View {
         // A tapped pin: TreePlaceSheet.swift's PinSelection, shared with a
         // city's map and My trees.
         .pinSelection($selected, height: $sheetHeight)
+        // A PLACE YOU LEAVE IS LET GO (Hidde, 2026-11-06, the field still
+        // saying Gran Canaria over Madeira with an empty list: "hier gaat wel
+        // wat fout niet alleen hier"). Once its trees have been in view and
+        // then all left it, the field, the cross and the list's filter go,
+        // and the map names what is in view, as Google Maps drops a searched
+        // place once you pan away from it.
+        // Not while the map is still flying there: fly() sets the target
+        // region at once and the map then reports the frames on the way,
+        // which left the place before it ever arrived (Malaga, simulator).
+        .onChange(of: placeShown != nil) { _, shown in
+            if let f = flewAt, Date().timeIntervalSince(f) < 3 { return }
+            if shown { placeSeen = true }
+            else if placeSeen { placeSeen = false; focusPlace = nil }
+        }
     }
 
     /// What a search result does to the map, from this tab's own search or
@@ -795,6 +812,9 @@ struct MapTab: View {
     private func take(_ hit: MapSearch.Hit) {
                 // The place header follows a city or a country; anything else
                 // clears it.
+                // Counted as seen: take() always flies to the place, and a
+                // pan away after the flight is what lets it go.
+                placeSeen = true
                 switch hit {
                 case .city(let slug, _, _, _): focusPlace = .city(slug)
                 case .country(let name): focusPlace = .country(name)
