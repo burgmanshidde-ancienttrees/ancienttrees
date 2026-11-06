@@ -388,7 +388,7 @@ struct MapTab: View {
         let own = Self.listedTrees(placeTrees, box: visibleBox, focus: focus,
                                    filters: filters, month: month,
                                    collected: key.collected, favourites: key.favourites,
-                                   query: query, cap: .max)
+                                   query: query, cap: 200)
         let ids = Set(own.map(\.tree.id))
         let out = own + listed.filter { !ids.contains($0.tree.id) }
         viewMemo.hereKey = key
@@ -1014,9 +1014,25 @@ struct MapTab: View {
     /// the map and were missing from the list entirely, which made them feel
     /// like decoration rather than trees.
     private var minesInView: [Sightings.Sighting] {
-        mineShown
-            .filter { Geo.km(focus, ($0.lat, $0.lng)) <= reachKm }
-            .sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
+        let near = mineShown.filter { Geo.km(focus, ($0.lat, $0.lng)) <= reachKm }
+        // WHILE A SEARCH HOLDS, YOURS IN THAT PLACE (Hidde, 2026-11-06: the
+        // United Kingdom led with his trees in Baarn, "ik wil gewoon uk zien";
+        // then the Netherlands put the same Baarn tree below 940 others, "you
+        // havnt thought about how collected trees work everywhere"). Yours
+        // inside the searched place's spread lead the list as always; yours
+        // outside it stay pins on the map and leave the list.
+        let mine = placeSpread.map { b in near.filter { b.contains($0.lat, $0.lng) } } ?? near
+        return mine.sorted { Geo.km(focus, ($0.lat, $0.lng)) < Geo.km(focus, ($1.lat, $1.lng)) }
+    }
+
+    /// The searched place's spread: the box around its trees, a tenth wider
+    /// each way. Nil with no search.
+    private var placeSpread: Box? {
+        guard focusPlace != nil, let f = placeTrees.first else { return nil }
+        var s = f.lat, n = f.lat, w = f.lng, e = f.lng
+        for t in placeTrees { s = min(s, t.lat); n = max(n, t.lat); w = min(w, t.lng); e = max(e, t.lng) }
+        let dl = max((n - s) * 0.1, 0.02), dg = max((e - w) * 0.1, 0.02)
+        return Box(minLat: s - dl, maxLat: n + dl, minLng: w - dg, maxLng: e + dg)
     }
 
     /// DIRECTION C under a city's or a country's name (Hidde, 2026-11-05: "i
@@ -1071,13 +1087,6 @@ struct MapTab: View {
                 }
             }
         }
-        // Yours, after the searched place's trees (see list).
-        if focusPlace != nil {
-            ForEach(minesInView) { s in
-                SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
-            }
-            .padding(.top, 12)
-        }
         // The Plus question after the trees, the searched city only, while
         // its trees are in view (the box's rule above, map.ts _focusCity).
         if case .city(let slug) = focusPlace,
@@ -1089,10 +1098,9 @@ struct MapTab: View {
     private var list: some View {
         LazyVStack(spacing: 12) {
                 // Yours first: there are few of them and nobody else has them.
-                // Not while a search holds (Hidde, 2026-11-06: searching the
-                // United Kingdom led with his collected trees in Baarn, "ik
-                // wil gewoon uk zien"): then they come after the list.
-                if query.isEmpty && focusPlace == nil {
+                // While a search holds, only yours in that place
+                // (minesInView).
+                if query.isEmpty {
                     ForEach(minesInView) { s in
                         SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
                     }
