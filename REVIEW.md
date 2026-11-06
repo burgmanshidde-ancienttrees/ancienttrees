@@ -23,6 +23,15 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06
+
+Web half: the last 24 hours were app-only trees as pins (6522ad63a), vendored photos, walk routes, Android waitlist field. No em dashes found in the sampled built HTML.
+
+- WARN site/dist/explore.html:139 says "4047 trees in 785 places" and "Each pin opens a tree with its age, its species, why it is worth the walk, and directions", but api/pins.json now draws 4,615 pins (568 cards carry the app-only flag `a`:1) and those open a card with no page and no story ("Read its story in the app"). The count and the promise disagree with the map after APP_ONLY_PINS (6522ad63a). Hard rule 2 / "A decision that changes what the product does also changes what the product says". Replacement: count the pins, and say "Each pin opens a tree; some stories are in the app." Translations too. Same sweep: grep site/src for other "N trees" / "opens a tree" lines on country, state and city maps.
+- WARN (eighteenth review to see it) meta description prints a planting or event year as an age: 96 pages still match `content="A (17|18|19|20)[0-9]{2}-year-old`. Hard rule 2, Verify (a derived age states its basis).
+- WARN site/src/pages/contribute.astro:17 and :401 still say "verified against independent sources" / "check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Twelfth review in a row.
+- NOTE data/walk-routes.json (3e19fba30, +30,190 lines in one commit): routes were rebuilt because new trees turned them into straight lines. With app-only trees now pins, check walks do not route through trees that have no page.
+
 ## 2026-11-05
 
 Web half: the last 24 hours were the Plus question (web strings in eight languages, "I'd like to…", Skip, pick up to two: consistent with each other), card bookmark CSS, earned-back pause, health.py. No em dashes anywhere in site/dist HTML. Standing faults re-checked on the built site:
