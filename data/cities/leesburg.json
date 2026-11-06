@@ -335,6 +335,43 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "lsb_009",
+      "name": "The Red Mulberry of the W&OD Trail",
+      "species": "Red Mulberry (Morus rubra)",
+      "age_estimate": "not documented",
+      "girth_cm": 554,
+      "height_m": 13.7,
+      "location": {
+        "address": "W&OD Trail bridle path, Washington & Old Dominion Railroad Regional Park, Ashburn, VA",
+        "latitude": 39.04484,
+        "longitude": -77.48845,
+        "neighbourhood": "Ashburn"
+      },
+      "story": "Only five of the 32 trees on Loudoun County's Big Tree Registry have a thicker trunk than this red mulberry, and three of those five are sycamores more than twice its height. The mulberry is 218 inches round, about 5.5 metres, but only 45 feet tall, about 14 metres, with a crown some 13 metres across. The county measured all three in 2025.\n\nIt grows beside the bridle trail of the Washington and Old Dominion Railroad Regional Park in Ashburn. NOVA Parks runs the park along the former roadbed of the W&OD Railroad, a paved trail of 45 miles between Shirlington and Purcellville, with a 32-mile gravel horse trail beside it for riders.\n\nThe registry ranks trees on points, trunk inches plus height in feet plus a quarter of the crown, and height is where the mulberry loses ground. It scores 273.5, well behind the tall sycamores. On girth alone it beats the Shumard oak in Algonkian Regional Park, 33 metres tall, which the county calls one of the largest trees in Loudoun.\n\nIt is not marked as a Virginia champion. The county flags it as visible or accessible from public property, which on a public trail is the easy part.\n\nNobody has published an age for it. If you know how long it has stood here, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, about 5.5 metres round, on a mulberry only about 14 metres tall with a crown some 13 metres across. It stands beside the gravel bridle trail of the W&OD Trail in Ashburn.",
+      "verified_sources": [
+        "https://www.loudoun.gov/bigtreeregistry",
+        "https://services1.arcgis.com/MxjRokvPm7bjslyR/arcgis/rest/services/Big_Tree_with_photos/FeatureServer/0/query?where=OBJECTID%3D15&outFields=*&f=json",
+        "https://www.novaparks.com/parks/washington-and-old-dominion-railroad-regional-park"
+      ],
+      "official_register": {
+        "name": "Loudoun County Big Tree Registry (Dept of Building & Development, Forest Resources; measured 2025)",
+        "url": "https://www.loudoun.gov/bigtreeregistry"
+      },
+      "access": "Free. On the Washington & Old Dominion Railroad Regional Park (NOVA Parks), beside the gravel horse trail that runs next to the paved W&OD Trail. The county flags this tree as visible or accessible from public property.",
+      "transport": "Ashburn, about 10 km south-east of downtown Leesburg in a straight line, on the W&OD Trail itself, so you can cycle or walk the trail from Leesburg. No public transport verified.",
+      "location_precision": "approximate",
+      "pin_source": "Loudoun County Big Tree Registry coordinate (ArcGIS layer, OBJECTID 15, TreeID 37); not checked against imagery.",
+      "curation_status": "flagged",
+      "verify_notes": "Loudoun County Big Tree Registry ArcGIS layer (read 2026-11-06), OBJECTID 15, TreeID 37: Morus rubra, Red Mulberry, VA_State_Champ 0, Total_Points 273.5, Height_ft 45, Circum_in 218, Crown_avg 42, 39.04484,-77.48845, Last_Measured 2025, Public_ -1. Points check: 218 + 45 + 42/4 = 273.5, so the girth column really is inches (554 cm). Of 32 rows, five have a larger Circum_in: American sycamores 283 (127 ft), 252 (113 ft), 239 (121 ft), white oak 235 (112 ft), butternut 223 (71 ft). Shumard oak lsb_008: 184 in, 109 ft. The bridle trail placement is from the lead name ('on W&OD Bridle Trail, Ashburn', data/research/leesburg-rejects.json). NOVA Parks page (read): 45-mile paved trail Shirlington to Purcellville on the former roadbed of the W&OD Railroad; equestrians ride the adjacent 32-mile gravel horse trail. Alive: 2025 measurement. No age in any source.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

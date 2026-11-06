@@ -1175,6 +1175,46 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "flo_029",
+      "name": "The Hackberry of Terenzano",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "masaf_code": "01/D575/FI/09",
+      "age_estimate": "about 180 years, by the register",
+      "age_min": 170,
+      "age_max": 190,
+      "age_basis": "source",
+      "girth_cm": 450,
+      "height_m": 15,
+      "location": {
+        "address": "Via della Rosa 11-13, Terenzano, Compiobbi, Fiesole (FI)",
+        "latitude": 43.780597,
+        "longitude": 11.347206,
+        "neighbourhood": "Terenzano, Compiobbi (Fiesole)"
+      },
+      "story": "Italy's register of monumental trees gives the Hackberry of Terenzano 182 years, which would make it some twenty years old when Florence became the capital of Italy in 1865. It stands on a country lane in the hills east of the city, 192 metres above the sea.\n\nThe lane is Via della Rosa, in the hamlet of Terenzano near Compiobbi, in the comune of Fiesole, about seven kilometres east of the Duomo as the crow flies. When it was measured in May 2022 the trunk was 4.5 metres round at chest height and the tree 15 metres tall. The national list gives a slimmer 4.05 metres, so the two tapes do not agree.\n\nThe tree is on the national list, not just a regional one, and it earned its place on two of the register's seven criteria, its age and size and its value in the landscape. It was not listed for its shape, its rarity or any history attached to it. What you come for is a big, old hackberry standing in open country.\n\nThe 182 years is calculated from a birth year the register holds without saying where that year came from, so treat it as an estimate. Its health was rated sufficient at the last check, and the register calls it accessible.",
+      "how_to_recognise": "You can recognise it by the trunk, about 4.5 metres round, on a hackberry 15 metres tall in open country. It stands beside Via della Rosa at numbers 11 to 13, in Terenzano near Compiobbi.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/14381-bagolaro-fiesole-firenze-toscana"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF)",
+        "id": "01/D575/FI/09",
+        "url": "https://ilregistrodeglialberi.it/14381-bagolaro-fiesole-firenze-toscana"
+      },
+      "access": "Free. On Via della Rosa, a country lane at Terenzano; the register rates the tree accessible. No gate or ticket recorded; the register's address is house numbers 11 to 13, so look from the lane.",
+      "transport": "Terenzano is above Compiobbi in the comune of Fiesole, about 7 km east of the Duomo in a straight line. Regional trains towards Pontassieve stop at Compiobbi; the walk up from the station is not verified.",
+      "location_precision": "approximate",
+      "pin_source": "MASAF / RAMI register coordinate (43.7806, 11.34721); no photograph geotag found.",
+      "curation_status": "flagged",
+      "verify_notes": "RAMI record 14381 (read 2026-11-06, last updated 2025-10-14): Il Bagolaro di Terenzano, Celtis australis, national relevance, AMI 01/D575/FI/09, Via della Rosa 11-13, Terenzano - Compiobbi, Fiesole; estimated age 182 years 'calculated from the registered birth year'; health 'sufficiente'; accessibility 'accessibile'; altitude 192 m; criteria recognised: (a) age and size, (f) landscape value; girth 4.50 m at 130 cm and height 15.00 m measured 07/05/2022. MASAF list figure 405 cm, 15 m per the florence lead (not re-read). The lead also cites alberimonumentali.info for 'seen from the road in open country' and a main branch cut after a failure; not re-read, not used in the story. Age band 170-190 around the register's single figure.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

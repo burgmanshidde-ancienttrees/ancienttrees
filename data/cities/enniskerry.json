@@ -1,0 +1,56 @@
+{
+  "city": "Enniskerry",
+  "country": "Ireland",
+  "status": "needs_curation",
+  "intro": "Powerscourt, beside Enniskerry in County Wicklow, says its River Walk holds the tallest tree in Ireland, a Douglas fir of 61.5 metres. In 2013 the Irish Examiner reported it officially recognised as the tallest tree in Ireland since records began, a couple of metres above Liberty Hall in Dublin. The estate credits its Douglas firs, giant redwoods and noble firs to a tree-planting programme of 1870 and its mild climate for how fast they grew. The gardens are ticketed, and the estate does not publish where on the River Walk the tallest fir stands.",
+  "question_context": "The 61.5 metres, or 202 feet, is Powerscourt's own figure, and the Irish Examiner repeated it in November 2013 when it reported the fir officially recognised as the tallest tree in Ireland since records began. No newer published measurement has turned up, and Douglas firs keep growing, so the title is a 2013 record rather than a final one. The estate says a line of its Douglas firs, among the tallest in Ireland, is about 150 years old, and it credits the species to Viscount Powerscourt's tree-planting programme of 1870, but nobody has dated this particular trunk. The national heritage-tree register's 2009 survey records one exceptional Douglas fir on the estate, by the River Dargle about a kilometre and a half from the house, and that point is used for the pin, though the register does not say it is the River Walk tree. The gardens are ticketed; whether the River Walk sits inside the garden ticket is not stated, so ask at the entrance.",
+  "meta_description": "Powerscourt's River Walk Douglas fir at Enniskerry, Co. Wicklow: 61.5 metres, recognised in 2013 as the tallest tree in Ireland on record.",
+  "question_meta": "Enniskerry's tallest tree is the Douglas fir on Powerscourt's River Walk, 61.5 metres by the estate's figure.",
+  "question_answer": "The tallest tree at Enniskerry is a Douglas Fir (Pseudotsuga menziesii) on the River Walk of the Powerscourt Estate, 61.5 metres or 202 feet by the estate's figure. In 2013 it was reported as officially recognised as the tallest tree in Ireland since records began.",
+  "hero_tree_id": "enk_001",
+  "oldest_tree_id": "enk_001",
+  "faq": [
+    {
+      "q": "How tall is the Powerscourt Douglas fir?",
+      "a": "The estate gives 61.5 metres, or 202 feet, the figure reported in 2013 when it was recognised as the tallest tree in Ireland on record."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No. Powerscourt's gardens are ticketed, and the estate does not say whether the River Walk sits inside the garden ticket, so ask at the entrance."
+    }
+  ],
+  "trees": [
+    {
+      "id": "enk_001",
+      "name": "The Tallest Tree in Ireland, Powerscourt",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "not dated for this trunk; the estate puts its line of tall Douglas firs at about 150 years",
+      "height_m": 61.5,
+      "location": {
+        "address": "River Walk, Powerscourt Estate, Enniskerry, Co. Wicklow",
+        "latitude": 53.17121,
+        "longitude": -6.19726,
+        "neighbourhood": "Powerscourt Estate"
+      },
+      "story": "The tallest tree in Ireland, by its owner's measure, is a Douglas fir on the River Walk at Powerscourt. The estate gives it 61.5 metres, or 202 feet, and likes to point out that this tops Liberty Hall in Dublin, at 59.5 metres.\n\nIn the nineteenth century most of Powerscourt's trees were new and exotic, collected from the Americas and further afield. The estate credits its Douglas firs, Corsican pines, giant redwoods and noble firs to the Viscount Powerscourt's tree-planting programme of 1870, and its mild climate for how fast they grew. It says a line of its Douglas firs, among the tallest in Ireland, is about 150 years old.\n\nIn November 2013 the Irish Examiner reported that this fir had been officially recognised as the tallest tree in Ireland since records began, at the same 61.5 metres. We have found no newer published measurement, and Douglas firs keep growing, so read the title as a 2013 record rather than a final one.\n\nFinding this one trunk is the harder part. The estate does not publish where on the River Walk it stands, so the pin here is the national heritage-tree register's point for Powerscourt's one exceptional Douglas fir, by the River Dargle, which may or may not be the same tree. Nobody has dated this particular trunk either. If you have stood under it, or know which one it is, tell us.",
+      "how_to_recognise": "You can recognise it by its height, 61.5 metres by the estate's figure, above the other Douglas firs along the River Walk. It stands on the River Walk of the Powerscourt estate, by the River Dargle.",
+      "verified_sources": [
+        "https://web.archive.org/web/2025/https://powerscourt.com/our-garden/trees/",
+        "https://www.irishexaminer.com/news/arid-30612237.html"
+      ],
+      "access": "Paid. Powerscourt Estate's gardens are ticketed (prices not checked). The estate places the tree on its River Walk; whether that path is inside the garden ticket on a given day is not stated, so ask at the entrance.",
+      "transport": "Powerscourt Estate is beside Enniskerry village, Co. Wicklow, about 1.5 km from the house to the register point. No public transport verified; check Transport for Ireland.",
+      "paid_entry": true,
+      "location_precision": "approximate",
+      "pin_source": "Heritage Trees of Ireland record 437, the only Douglas fir 'exceptional specimen' at Powerscourt, near the Dargle at Onagh Bridge; a plausible, unproven match for the River Walk tree.",
+      "curation_status": "flagged",
+      "verify_notes": "Owner page (Wayback 2025 copy, read 2026-11-06): 'The River Walk at Powerscourt features the tallest tree in Ireland, a Douglas Fir. The tree stands at 61.5 metres, or 202 ft, towering above ... Dublin's Liberty Hall (59.5 m)'; 'a line of Douglas Fir which are among the tallest in Ireland and about 150 years old'; Douglas firs among the species from Viscount Powerscourt's tree planting programme of 1870. Irish Examiner 2013-11-05 (read 2026-11-06): 'A Douglas Fir along Powerscourt River Walk has been officially recognised as the tallest tree in Ireland since records began. The tree stands at 61.5 metres'. Register row 437 band 100-150 (2009), not tied to this tree. Other heights (56 m, 57.5 m) and an Avondale fir at 61.3 m appear only in search summaries, not used. Alive: owner page in present tense (2025); no dated photo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

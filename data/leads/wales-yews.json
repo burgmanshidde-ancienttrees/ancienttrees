@@ -52,8 +52,9 @@
     "latitude": 51.72518,
     "longitude": -3.00703
    },
-   "reason": "AYG: 1799 Coxe recorded 12 yews; 1873 report of a 29 ft 4 in girth yew; a site with a lost yew (visited 2014). Worth a pass for current girths from the 2025 site file (Mamhilad-2025.pdf), not fetched.",
-   "source": "https://www.ancient-yew.org/yew_tree_database/mamhilad/"
+   "reason": "Already published as mmh_001 in data/cities/mamhilad.json. AYG: 1799 Coxe recorded 12 yews; 1873 report of a 29 ft 4 in girth yew; a site with a lost yew (visited 2014). Worth a pass for current girths from the 2025 site file (Mamhilad-2025.pdf), not fetched.",
+   "source": "https://www.ancient-yew.org/yew_tree_database/mamhilad/",
+   "status": "published"
   },
   {
    "name": "Llanfaredd yew (St Mary)",
