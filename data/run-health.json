@@ -2,44 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-07T01:45:37+00:00",
-   "date": "2026-09-07",
-   "run_id": "34074040508",
-   "minutes": 58.9,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 409,
-   "denials": 40,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(env), Bash(file), Bash(for), Bash(git), Bash(jobs), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(source), Bash(until), Bash(while)",
-   "ended": "success",
-   "tokens": 10590737,
-   "claims_held": [
-    "_bomenbieb-netherlands"
-   ],
-   "commits": 8,
-   "cities_touched": 4,
-   "cities": [
-    {
-     "city": "itoshiro",
-     "trees": 1
-    },
-    {
-     "city": "osaka",
-     "trees": 1
-    },
-    {
-     "city": "pelham",
-     "trees": 1
-    },
-    {
-     "city": "yangpyeong",
-     "trees": 1
-    }
-   ],
-   "trees": 4,
-   "logged": true
-  },
-  {
    "started": "2026-09-07T06:13:03+00:00",
    "date": "2026-09-07",
    "run_id": "34089820487",
@@ -22171,6 +22133,506 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-06T06:46:15+00:00",
+   "date": "2026-11-06",
+   "run_id": "42176475639",
+   "minutes": 37.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 234,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(git), Bash(rm)",
+   "ended": "success",
+   "tokens": 216149,
+   "claims_held": [],
+   "commits": 15,
+   "cities_touched": 120,
+   "cities": [
+    {
+     "city": "new-york",
+     "trees": 29
+    },
+    {
+     "city": "santa-cruz-de-tenerife",
+     "trees": 9
+    },
+    {
+     "city": "agrigento",
+     "trees": 8
+    },
+    {
+     "city": "corfu",
+     "trees": 8
+    },
+    {
+     "city": "spoleto",
+     "trees": 6
+    },
+    {
+     "city": "cazorla",
+     "trees": 5
+    },
+    {
+     "city": "portici",
+     "trees": 5
+    },
+    {
+     "city": "canterbury",
+     "trees": 4
+    },
+    {
+     "city": "glasgow",
+     "trees": 4
+    },
+    {
+     "city": "ronda",
+     "trees": 4
+    },
+    {
+     "city": "vallombrosa",
+     "trees": 4
+    },
+    {
+     "city": "westonbirt",
+     "trees": 4
+    },
+    {
+     "city": "wolverhampton",
+     "trees": 4
+    },
+    {
+     "city": "cannock-chase",
+     "trees": 3
+    },
+    {
+     "city": "castellammare-di-stabia",
+     "trees": 3
+    },
+    {
+     "city": "grazalema",
+     "trees": 3
+    },
+    {
+     "city": "palazzolo-acreide",
+     "trees": 3
+    },
+    {
+     "city": "sila",
+     "trees": 3
+    },
+    {
+     "city": "alpujarras",
+     "trees": 2
+    },
+    {
+     "city": "angra-do-heroismo",
+     "trees": 2
+    },
+    {
+     "city": "benevento",
+     "trees": 2
+    },
+    {
+     "city": "exeter",
+     "trees": 2
+    },
+    {
+     "city": "granada",
+     "trees": 2
+    },
+    {
+     "city": "milton-keynes",
+     "trees": 2
+    },
+    {
+     "city": "pula",
+     "trees": 2
+    },
+    {
+     "city": "sheffield",
+     "trees": 2
+    },
+    {
+     "city": "stratford-upon-avon",
+     "trees": 2
+    },
+    {
+     "city": "wells",
+     "trees": 2
+    },
+    {
+     "city": "adlestrop",
+     "trees": 1
+    },
+    {
+     "city": "aracena",
+     "trees": 1
+    },
+    {
+     "city": "ashbrittle",
+     "trees": 1
+    },
+    {
+     "city": "astbury",
+     "trees": 1
+    },
+    {
+     "city": "balfron",
+     "trees": 1
+    },
+    {
+     "city": "beltingham",
+     "trees": 1
+    },
+    {
+     "city": "bettws-newydd",
+     "trees": 1
+    },
+    {
+     "city": "bisceglie",
+     "trees": 1
+    },
+    {
+     "city": "brac",
+     "trees": 1
+    },
+    {
+     "city": "broadwindsor",
+     "trees": 1
+    },
+    {
+     "city": "cara",
+     "trees": 1
+    },
+    {
+     "city": "chilcompton",
+     "trees": 1
+    },
+    {
+     "city": "coln-rogers",
+     "trees": 1
+    },
+    {
+     "city": "combe-florey",
+     "trees": 1
+    },
+    {
+     "city": "compton-dundon",
+     "trees": 1
+    },
+    {
+     "city": "cordoba",
+     "trees": 1
+    },
+    {
+     "city": "dartmoor",
+     "trees": 1
+    },
+    {
+     "city": "defynnog",
+     "trees": 1
+    },
+    {
+     "city": "dinder",
+     "trees": 1
+    },
+    {
+     "city": "discoed",
+     "trees": 1
+    },
+    {
+     "city": "farndon",
+     "trees": 1
+    },
+    {
+     "city": "foresta-umbra",
+     "trees": 1
+    },
+    {
+     "city": "goostrey",
+     "trees": 1
+    },
+    {
+     "city": "gresford",
+     "trees": 1
+    },
+    {
+     "city": "hawling",
+     "trees": 1
+    },
+    {
+     "city": "hvar",
+     "trees": 1
+    },
+    {
+     "city": "kantang",
+     "trees": 1
+    },
+    {
+     "city": "kefalonia",
+     "trees": 1
+    },
+    {
+     "city": "kemble",
+     "trees": 1
+    },
+    {
+     "city": "kingston-st-mary",
+     "trees": 1
+    },
+    {
+     "city": "ko-pha-ngan",
+     "trees": 1
+    },
+    {
+     "city": "krabi",
+     "trees": 1
+    },
+    {
+     "city": "lampang",
+     "trees": 1
+    },
+    {
+     "city": "lanercost",
+     "trees": 1
+    },
+    {
+     "city": "llanerfyl",
+     "trees": 1
+    },
+    {
+     "city": "llanfaredd",
+     "trees": 1
+    },
+    {
+     "city": "llanfihangel-nant-melan",
+     "trees": 1
+    },
+    {
+     "city": "lorton",
+     "trees": 1
+    },
+    {
+     "city": "lun",
+     "trees": 1
+    },
+    {
+     "city": "lytchett-matravers",
+     "trees": 1
+    },
+    {
+     "city": "malaga",
+     "trees": 1
+    },
+    {
+     "city": "mamhilad",
+     "trees": 1
+    },
+    {
+     "city": "martindale",
+     "trees": 1
+    },
+    {
+     "city": "monte-faito",
+     "trees": 1
+    },
+    {
+     "city": "mottisfont",
+     "trees": 1
+    },
+    {
+     "city": "nether-alderley",
+     "trees": 1
+    },
+    {
+     "city": "nevern",
+     "trees": 1
+    },
+    {
+     "city": "noto",
+     "trees": 1
+    },
+    {
+     "city": "orebic",
+     "trees": 1
+    },
+    {
+     "city": "overton-on-dee",
+     "trees": 1
+    },
+    {
+     "city": "painswick",
+     "trees": 1
+    },
+    {
+     "city": "palagiano",
+     "trees": 1
+    },
+    {
+     "city": "paros",
+     "trees": 1
+    },
+    {
+     "city": "pennant-melangell",
+     "trees": 1
+    },
+    {
+     "city": "rab",
+     "trees": 1
+    },
+    {
+     "city": "ragusa",
+     "trees": 1
+    },
+    {
+     "city": "ripon",
+     "trees": 1
+    },
+    {
+     "city": "san-pietro-in-amantea",
+     "trees": 1
+    },
+    {
+     "city": "serra-san-bruno",
+     "trees": 1
+    },
+    {
+     "city": "split",
+     "trees": 1
+    },
+    {
+     "city": "stow-on-the-wold",
+     "trees": 1
+    },
+    {
+     "city": "strata-florida",
+     "trees": 1
+    },
+    {
+     "city": "takua-pa",
+     "trees": 1
+    },
+    {
+     "city": "tavira",
+     "trees": 1
+    },
+    {
+     "city": "vico-del-gargano",
+     "trees": 1
+    },
+    {
+     "city": "washington-dc",
+     "trees": 1
+    },
+    {
+     "city": "wimborne-st-giles",
+     "trees": 1
+    },
+    {
+     "city": "woolland",
+     "trees": 1
+    },
+    {
+     "city": "zadar",
+     "trees": 1
+    },
+    {
+     "city": "azores",
+     "trees": 0
+    },
+    {
+     "city": "cambridge",
+     "trees": 0
+    },
+    {
+     "city": "cardiff",
+     "trees": 0
+    },
+    {
+     "city": "caserta",
+     "trees": 0
+    },
+    {
+     "city": "dunkeld",
+     "trees": 0
+    },
+    {
+     "city": "glastonbury",
+     "trees": 0
+    },
+    {
+     "city": "glen-ellen",
+     "trees": 0
+    },
+    {
+     "city": "jacksonville",
+     "trees": 0
+    },
+    {
+     "city": "kauai",
+     "trees": 0
+    },
+    {
+     "city": "lafayette-louisiana",
+     "trees": 0
+    },
+    {
+     "city": "liverpool",
+     "trees": 0
+    },
+    {
+     "city": "london",
+     "trees": 0
+    },
+    {
+     "city": "lucca",
+     "trees": 0
+    },
+    {
+     "city": "media-pennsylvania",
+     "trees": 0
+    },
+    {
+     "city": "mobile",
+     "trees": 0
+    },
+    {
+     "city": "oxford",
+     "trees": 0
+    },
+    {
+     "city": "palermo",
+     "trees": 0
+    },
+    {
+     "city": "perugia",
+     "trees": 0
+    },
+    {
+     "city": "safety-harbor",
+     "trees": 0
+    },
+    {
+     "city": "salem-oregon",
+     "trees": 0
+    },
+    {
+     "city": "st-augustine",
+     "trees": 0
+    },
+    {
+     "city": "tallahassee",
+     "trees": 0
+    },
+    {
+     "city": "tenerife",
+     "trees": 0
+    }
+   ],
+   "trees": 198,
    "logged": true
   }
  ],
