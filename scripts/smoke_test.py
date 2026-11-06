@@ -614,21 +614,32 @@ def signed_out_controls_ask(chrome, base, pages):
     dialog and changes nothing (Hidde, 2026-10-05, the sixth time: "every form
     of these interaction always forces login"). Hearts, the Seen tick, the
     worth-it vote and the ambassador button, on every page type that carries
-    them. Removing this check needs Hidde."""
-    url = "%s/__signedout.html?u=%s" % (base, ",".join(pages))
-    out = subprocess.run(
-        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
-         "--window-size=420,900", "--virtual-time-budget=%d" % (12000 * len(pages)),
-         "--dump-dom", url],
-        capture_output=True, text=True, timeout=300).stdout
-    m = re.search(r"RESULT (\[.*?\])</pre>", out, re.S)
-    if not m:
-        return ["signed out: the harness produced no result (Chrome or the pages did not run)"]
-    try:
-        rows = json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
-    except Exception:
-        return ["signed out: the harness result was unreadable"]
-    fails = []
+    them. Removing this check needs Hidde.
+
+    One Chrome per page (2026-11-06): with all pages in one Chrome, a page
+    that kept the headless clock from finishing timed the whole smoke test
+    out with a traceback and no name. Now a hang is a finding about that
+    page, and every other page is still checked."""
+    rows, fails = [], []
+    for page in pages:
+        url = "%s/__signedout.html?u=%s" % (base, page)
+        try:
+            out = subprocess.run(
+                [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+                 "--window-size=420,900", "--virtual-time-budget=12000",
+                 "--dump-dom", url],
+                capture_output=True, text=True, timeout=120).stdout
+        except subprocess.TimeoutExpired:
+            fails.append("signed out: %s did not finish in headless Chrome within 120 s" % page)
+            continue
+        m = re.search(r"RESULT (\[.*?\])</pre>", out, re.S)
+        if not m:
+            fails.append("signed out: the harness produced no result on %s (Chrome or the page did not run)" % page)
+            continue
+        try:
+            rows += json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
+        except Exception:
+            fails.append("signed out: the harness result on %s was unreadable" % page)
     # A listed control no tested page renders is a finding, not a skip
     # (2026-10-07: the Seen button sat on the list for weeks while no page
     # rendered it, and the explore chips sat on no list at all).
