@@ -12,6 +12,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-06 evening session: the explore map crashed the tab
+
+**Breakage, fixed.** Since 476ee80 (this afternoon's "the map names the place in view") /explore crashed the browser tab a few seconds after loading (Chrome "Error code 5"), on desktop and phone, anywhere on the map; Hidde hit it looking at the United Kingdom. Cause: the new trees list painted its save hearts with `atPaintSaves`, which on explore refilters the map, which redraws the list, forever. The list now paints the hearts alone (`atPaintSaveButtons`, tree-actions-js.ts). Found by pausing the live page in a debugger; the live page with the same patch stayed up at 1280 and 375 px with "United Kingdom" and its rows. The /united-kingdom page itself never crashed. db1416a2f.
+
 ## 2026-11-06 session: the Guardian, app-only trees as web pins, press images
 
 **What changed in the product.** Every app-only tree (568) now stands on the web maps as a pin, with a card: photo when it has one, name, species, age, place, save, and "Read its story in the app" (the one get-the-app control). Still no page, sitemap, search or places line, so Google gets nothing new to crawl (`APP_ONLY_PINS` in site/src/lib/app-first.ts, `mapTrees()` in trees.ts; qa's app-first check reads the switch). Checked live: 568 of 568 on the map, 0 cards with a page link, 0 in search; the card looked at on desktop and at 390 px. The Android waitlist sheet's email field was a 192 px oval on phones; now 45 px. App: demo switches `-followers=`, `-following=`, `-avatar=` for press and store screenshots.
