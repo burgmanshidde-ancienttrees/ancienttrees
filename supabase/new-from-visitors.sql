@@ -38,20 +38,32 @@ security definer
 set search_path = public, extensions
 stable
 as $$
-  select s.id, s.tree_id, s.updated_at,
-         case when p.public then p.display_name end,
-         case when p.public then p.avatar_url end,
-         case when p.public and auth.uid() is not null then s.user_id end
-  from public.sightings s
-  left join public.profiles p on p.user_id = s.user_id
-  where s.status = 'published' and s.tree_id is not null and s.photo is not null
-    and encode(digest(s.user_id::text, 'sha1'), 'hex') <> all (array[
-      'cc6a542385091392e455911c0d7e351bf0148a4b',
-      'ef98f5dbe51e86e6236031d19bdce2364272c6b6',
-      'd4e6c578be12fd0916a6277fa7bba4b482405484',
-      'a9c1498c827881dd41e3e8cd39edc1a8fbf399f9'
-    ])
-  order by s.updated_at desc
+  -- NEWEST PHOTOGRAPH FIRST, AS MANY PEOPLE AS POSSIBLE (Hidde, 2026-11-07:
+  -- "shows as many different profiles as possible", "i want the most recent
+  -- uploads"). updated_at was the wrong clock: every status write touches it,
+  -- so September's Reykjavik photographs, rewritten on 11-03, stood before
+  -- Paris and Préfargier. taken_at is the photograph's own time (the table
+  -- has no created_at). Each person's newest photograph comes first, newest
+  -- person first; their second ones only after everyone has had a turn.
+  select id, tree_id, at, author_name, author_avatar, author_id
+  from (
+    select s.id, s.tree_id, coalesce(s.taken_at, s.updated_at) as at,
+           case when p.public then p.display_name end as author_name,
+           case when p.public then p.avatar_url end as author_avatar,
+           case when p.public and auth.uid() is not null then s.user_id end as author_id,
+           row_number() over (partition by s.user_id
+                              order by coalesce(s.taken_at, s.updated_at) desc) as turn
+    from public.sightings s
+    left join public.profiles p on p.user_id = s.user_id
+    where s.status = 'published' and s.tree_id is not null and s.photo is not null
+      and encode(digest(s.user_id::text, 'sha1'), 'hex') <> all (array[
+        'cc6a542385091392e455911c0d7e351bf0148a4b',
+        'ef98f5dbe51e86e6236031d19bdce2364272c6b6',
+        'd4e6c578be12fd0916a6277fa7bba4b482405484',
+        'a9c1498c827881dd41e3e8cd39edc1a8fbf399f9'
+      ])
+  ) ranked
+  order by turn, at desc
   limit least(greatest(n, 1), 24)
 $$;
 

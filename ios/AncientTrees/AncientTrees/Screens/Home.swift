@@ -530,9 +530,11 @@ struct HomeView: View {
     /// out it asks for a sign-in first (Hidde, 2026-11-06, the Instagram and
     /// Pinterest way). No public profile: "A visitor", not a link.
     @ViewBuilder private func visitorLine(_ r: NewFromVisitors.Row) -> some View {
-        // A generated name ("Green Fig 1965") reads as a tree's here: "A
-        // visitor" until they choose one (Hidde, 2026-11-06).
-        let real = r.author_name.flatMap { Profiles.isGeneratedName($0) ? nil : $0 }
+        // A generated name ("Green Fig 1965") prints and links like any
+        // other (Hidde, 2026-11-07: "a visitor is weird that its
+        // unclickable just give the link to their made up name"; it was
+        // "A visitor" on 11-06). Only a private profile has no name.
+        let real = r.author_name
         let name = real ?? "A visitor"
         let line = HStack(spacing: 5) {
             Group {

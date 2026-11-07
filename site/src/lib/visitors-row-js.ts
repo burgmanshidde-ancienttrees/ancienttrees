@@ -8,9 +8,8 @@
 // from the server (supabase/new-from-visitors.sql, anon-readable): one tile
 // per tree, newest first, the row only from four tiles so it never stands half
 // empty. Under each tile one line: a 16px avatar and the name of a public
-// profile, else "A visitor". A generated name ("Green Fig 1965") reads as a
-// tree's, so it prints "A visitor" too (Profiles.isGeneratedName, the same
-// pattern). The name shows to everyone; a tap opens the profile, and signed
+// profile (a generated "Green Fig 1965" too, linked like any other; Hidde,
+// 2026-11-07), else "A visitor". The name shows to everyone; a tap opens the profile, and signed
 // out it asks for a sign-in first, the Instagram and Pinterest way (CLAUDE.md,
 // Privacy and accounts). The account id only comes to a signed-in caller, so
 // a signed-out page could not link the profile even if it wanted to.
@@ -34,8 +33,6 @@ export function visitorsRowJs(visitorWord: string): string {
   var MIN = ${VISITORS_MIN};
   function esc(t) { return String(t == null ? '' : t)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
-  // Profiles.isGeneratedName: "Green Fig 1965".
-  function generated(n) { return /^[A-Z][a-z]+ [A-Z][a-z]+ [0-9]{4}$/.test(n || ''); }
   function load(token) {
     return fetch(SB + '/rest/v1/rpc/new_from_visitors', {
       method: 'POST',
@@ -52,7 +49,11 @@ export function visitorsRowJs(visitorWord: string): string {
       var c = cards[r.tree_id];
       if (!c || seen[r.tree_id]) return;
       seen[r.tree_id] = 1;
-      var real = r.author_name && !generated(r.author_name) ? r.author_name : null;
+      // A generated name prints and links like any other (Hidde, 2026-11-07:
+      // "a visitor is weird that its unclickable just give the link to their
+      // made up name"); only a private profile, which has no name to give,
+      // stays "A visitor".
+      var real = r.author_name || null;
       var name = real || A_VISITOR;
       var av = r.author_avatar && real
         ? '<img src="' + esc(r.author_avatar) + '" alt="" loading="lazy">'
