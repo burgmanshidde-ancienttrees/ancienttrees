@@ -785,5 +785,95 @@
    "kind": "autumn colour",
    "label": "October and November, when the leaves turn dark red to russet"
   }
+ },
+ {
+  "id": "chi_045",
+  "name": "The Third-Ranked Sugar Maple of Bunker Hill Woods",
+  "species": "Sugar Maple (Acer saccharum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 297,
+  "height_m": 29.3,
+  "location": {
+   "address": "Bunker Hill Woods, Forest Preserves of Cook County, Niles, Illinois",
+   "latitude": 42.007998,
+   "longitude": -87.790804,
+   "neighbourhood": "Bunker Hill Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D265&outFields=*&f=json",
+   "https://fpdcc.com/nature/champion-tree-register/"
+  ],
+  "official_register": {
+   "name": "Forest Preserves of Cook County Champion Tree Register",
+   "url": "https://fpdcc.com/nature/champion-tree-register/"
+  },
+  "access": "Forest preserve, free; the register lists Public_Access = Yes. Reached from Bunker Hill Access Road (OSM). Hours and trail approach not checked (fpdcc.com is behind a bot challenge).",
+  "transport": "Not verified. Niles, north side of Chicago; check Pace bus or Metra before going.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Forest Preserves of Cook County Champion Tree Register (owner of the ground), objectid 265: rank #3 sugar maple in the county, circumference 116.92 in (297 cm), DBH 37 in, height 96 ft (29.3 m), crown spread 62 by 52 ft, score 227.2, measured 2024-08-01, Public_Access = Yes, Champion = Yes. Coordinates are the register GNSS fix at the tree. Units read from the field names and sanity-checked (girth and height plausible for the species). No age in the register; none derived. Register only, one source (US: one credible source is enough). Life check RECENT: iNaturalist observation inside the radius dated 2023-10-01 (https://www.inaturalist.org/observations/185972608), not confirmed to be this trunk. Same preserve cluster (all within about 400 m): chi_045 sugar maple, chi_046 bitternut hickory, chi_047 red maple (register ids 265, 16, 141); the preserve also holds the #1 ironwood (id 165, 12 in DBH) and two #1/#2 blue ash (ids 348, 349), small trees not delivered.",
+  "photo_candidates": []
+ },
+ {
+  "id": "chi_046",
+  "name": "The Second-Ranked Bitternut Hickory of Bunker Hill Woods",
+  "species": "Bitternut Hickory (Carya cordiformis)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 244,
+  "height_m": 24.4,
+  "location": {
+   "address": "Bunker Hill Woods, Forest Preserves of Cook County, Niles, Illinois",
+   "latitude": 42.008769,
+   "longitude": -87.79196,
+   "neighbourhood": "Bunker Hill Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D16&outFields=*&f=json",
+   "https://fpdcc.com/nature/champion-tree-register/"
+  ],
+  "official_register": {
+   "name": "Forest Preserves of Cook County Champion Tree Register",
+   "url": "https://fpdcc.com/nature/champion-tree-register/"
+  },
+  "access": "Forest preserve, free; the register lists Public_Access = Yes. Reached from Bunker Hill Access Road (OSM). Hours and trail approach not checked (fpdcc.com is behind a bot challenge).",
+  "transport": "Not verified. Niles, north side of Chicago; check Pace bus or Metra before going.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Forest Preserves of Cook County Champion Tree Register (owner of the ground), objectid 16: rank #2 bitternut hickory in the county, circumference 96.1 in (244 cm), DBH 31 in, height 80 ft (24.4 m), crown spread 46 by 47 ft, score 187.7, measured 2023-10-16, Public_Access = Yes, Champion = Yes. Coordinates are the register GNSS fix at the tree. Units read from the field names and sanity-checked (girth and height plausible for the species). No age in the register; none derived. Register only, one source (US: one credible source is enough). Life check RECENT: iNaturalist observation inside the radius dated 2026-10-24 (https://www.inaturalist.org/observations/410579289), not confirmed to be this trunk. Same preserve cluster (all within about 400 m): chi_045 sugar maple, chi_046 bitternut hickory, chi_047 red maple (register ids 265, 16, 141); the preserve also holds the #1 ironwood (id 165, 12 in DBH) and two #1/#2 blue ash (ids 348, 349), small trees not delivered.",
+  "photo_candidates": []
+ },
+ {
+  "id": "chi_047",
+  "name": "The Champion Red Maple of Bunker Hill Woods",
+  "species": "Red Maple (Acer rubrum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 279,
+  "height_m": 15.8,
+  "location": {
+   "address": "Bunker Hill Woods, Forest Preserves of Cook County, Niles, Illinois",
+   "latitude": 42.006019,
+   "longitude": -87.787536,
+   "neighbourhood": "Bunker Hill Woods"
+  },
+  "verified_sources": [
+   "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?where=OBJECTID%3D141&outFields=*&f=json",
+   "https://fpdcc.com/nature/champion-tree-register/"
+  ],
+  "official_register": {
+   "name": "Forest Preserves of Cook County Champion Tree Register",
+   "url": "https://fpdcc.com/nature/champion-tree-register/"
+  },
+  "access": "Forest preserve, free; the register lists Public_Access = Yes. Reached from Bunker Hill Access Road (OSM). Hours and trail approach not checked (fpdcc.com is behind a bot challenge).",
+  "transport": "Not verified. Niles, north side of Chicago; check Pace bus or Metra before going.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Forest Preserves of Cook County Champion Tree Register (owner of the ground), objectid 141: rank #1 red maple in the county, circumference 110 in (279 cm), DBH 35 in, height 52 ft (15.8 m), crown spread 50 by 55 ft, score 175.1, measured no date, Public_Access = Yes, Champion = Yes. Coordinates are the register GNSS fix at the tree. Units read from the field names and sanity-checked (girth and height plausible for the species). No age in the register; none derived. Register only, one source (US: one credible source is enough). Life check RECENT: iNaturalist observation inside the radius dated 2024-05-18 (https://www.inaturalist.org/observations/216620146), not confirmed to be this trunk. Same preserve cluster (all within about 400 m): chi_045 sugar maple, chi_046 bitternut hickory, chi_047 red maple (register ids 265, 16, 141); the preserve also holds the #1 ironwood (id 165, 12 in DBH) and two #1/#2 blue ash (ids 348, 349), small trees not delivered.",
+  "photo_candidates": []
  }
 ]

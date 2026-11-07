@@ -870,7 +870,8 @@
         "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0/439"
       ],
       "source": "Florida Forest Service champion tree register (government; one official register is enough for layer 1, 2026-09-28). Licence is an accuracy disclaimer only: use the facts, never republish the dataset. Units converted from inches/feet.",
-      "status": "open"
+      "status": "open",
+      "note_2026_11_07": "Register status here reads National Champion Nominee (131 in, 58 ft per search pointer) vs 333 cm/17.7 m in our row; figures conflict, no tree pin, no access page. Stays open."
     },
     {
       "name": "PARADISE-TREE (COMPLETE)",
@@ -1124,7 +1125,7 @@
     {
       "site": "Fairchild Tropical Botanic Garden (paid, $24.95)",
       "candidate": "Fairchild cannonball tree (Couroupita guianensis), planted 1938",
-      "reason": "2026-11-03 pass. Wikipedia (Fairchild Tropical Botanic Garden) calls it the most famous tropical flowering tree there, planted 1938, one of the only cannonball trees in the US; Fairchild's own page not found. One non-owner source, no pin, no alive evidence. Search also pointed to Fairchild's tallest tree (Albizia niopoides, collected by David Fairchild) and three allspice trees, none seen on a fetched page. Needs the garden's own plant records or map.",
+      "reason": "2026-11-03 pass. Wikipedia (Fairchild Tropical Botanic Garden) calls it the most famous tropical flowering tree there, planted 1938, one of the only cannonball trees in the US; Fairchild's own page not found. One non-owner source, no pin, no alive evidence. Search also pointed to Fairchild's tallest tree (Albizia niopoides, collected by David Fairchild) and three allspice trees, none seen on a fetched page. Needs the garden's own plant records or map. 2026-11-07 pass: Fairchild interpretation page (fairchildgarden.org/interpretation/mdd/couroupita-guianensis, fetched) has no planting date or location; Fairchild shop listing (search pointer only) says 1949, conflicting with 1938. Still no pin, no alive evidence.",
       "status": "open"
     },
     {
