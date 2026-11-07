@@ -107,11 +107,6 @@
       "released_at": "2026-10-30T08:07:01+00:00"
     },
     {
-      "slug": "spokane",
-      "kind": "verify",
-      "released_at": "2026-10-31T01:37:24+00:00"
-    },
-    {
       "slug": "nuremberg",
       "kind": "verify",
       "released_at": "2026-10-31T01:38:43+00:00"
@@ -255,6 +250,11 @@
       "slug": "fort-worth",
       "kind": "verify",
       "released_at": "2026-11-07T06:19:14+00:00"
+    },
+    {
+      "slug": "spokane",
+      "kind": "verify",
+      "released_at": "2026-11-07T06:20:10+00:00"
     }
   ]
 }

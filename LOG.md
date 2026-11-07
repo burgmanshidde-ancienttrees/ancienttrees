@@ -13,6 +13,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-07 (second retry window): nothing published, the shelf is dry
+
+READY is 0. Spokane has 1 unmined register candidate and Coimbra 4 (under the six-candidate floor), so no verify pass was dispatched. Spokane claimed then released (wall 48h). Coimbra not claimed; cbr_007 sits verified in data/research/coimbra-verified.json awaiting a story. Brighton register already retried 11-04 and 11-06, still stalled. Perugia translation skipped while TRANSLATIONS_OUT holds. Next: a scout of a new US or UK register, or Coimbra's cbr_007 in the next write pass.
+
 ## 2026-11-07 (retry window): READY leads held, Fort Worth verify found one thin tree
 
 All 29 READY leads were tagged SKIPPED with reasons (access, dead, no single tree, no source). Fort Worth verify delivered ftw_027 (flagged, thin alive evidence), not merged; claim released with --force, wall for 48h. Nothing new published by this attempt. Next: the staged Portuguese and German cities, or the Brighton register retry.
