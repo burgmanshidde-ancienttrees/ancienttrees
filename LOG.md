@@ -1,5 +1,9 @@
 # LOG
 
+## 2026-11-07 (write pass on READY leads): nothing published
+
+The write pass found no tree it could write honestly. Gran Canaria's six Osorio trees need a permit from the Cabildo's Servicio de Medio Ambiente, so hard rule 10 holds them unless Hidde rules that a free permit counts as bookable. The other Gran Canaria leads are remote, groups, or have no life check. In Italy, Portugal and Washington DC the READY leads were register rows or held pins, with no access source, sighting or facts beyond the numbers. All 59 are kept as leads, each with a one-line reason (`write_pass_2026_11_07`), so `leads.py --ready` dropped from 84 to 29. The 18 unwritten trees in data/research/*-verified.json are all held by earlier passes. The best candidate for a verify pass is the white fig of the Huerto de las Flores in Agaete: public, easy access, seen alive recently. The Cabildo ficha loops on redirects for WebFetch, so it needs another way in.
+
 ## 2026-11-07 (night run, 00:22 window): nothing published
 
 Rung 1 empty (no sightings, no tree notes). Rung 2: health.py exit 1 on the iOS app (scheduled run 2026-11-06 21:55, failed) and on 5 of 12 knocks delivered. The iOS failures are real layout findings from the 11-06 app work, not infrastructure: city screen on iPhone 17 Pro, `highlight-card` and an Image end 66 points past the 402pt edge (CLIPPED); explore on iPhone SE (iOS 18.6), four `visitor-name` buttons are 78 by 16, under Apple's 44 by 44 (SMALL); iOS 18 test `testEveryFlowLeavesAWayBack` could not scroll to `tree-card`. I cannot build or sweep the app on this runner, so I changed no Swift. For Hidde: next app session should fix the three before build 41.
