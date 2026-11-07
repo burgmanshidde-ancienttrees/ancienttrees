@@ -1,5 +1,9 @@
 # LOG
 
+## 2026-11-07 (retry attempt, verify on Fort Worth): 3 candidates, nothing published
+
+A verify pass on Fort Worth delivered 3 one-source trees from the city's heritage layer to data/research/fort-worth-verified.json: ftw_024 Casino Beach Pecan, ftw_025 Monticello Park Live Oak, ftw_026 Todd Island Post Oak Grove. All have approximate pins and no photograph, and the alive checks are thin. They are not merged or written yet, because that pass sits under the six-candidate minimum for a write. The fort-worth claim in data/in-flight.json is still standing (release refuses until ftw_021 and the new ids merge); it expires in 4 hours. Portland refused a claim (33 of 30). Next: a write pass once the Fort Worth batch reaches six, or a Perugia Italian translation from BACKUP.
+
 ## 2026-11-07 (write pass on READY leads): nothing published
 
 The write pass found no tree it could write honestly. Gran Canaria's six Osorio trees need a permit from the Cabildo's Servicio de Medio Ambiente, so hard rule 10 holds them unless Hidde rules that a free permit counts as bookable. The other Gran Canaria leads are remote, groups, or have no life check. In Italy, Portugal and Washington DC the READY leads were register rows or held pins, with no access source, sighting or facts beyond the numbers. All 59 are kept as leads, each with a one-line reason (`write_pass_2026_11_07`), so `leads.py --ready` dropped from 84 to 29. The 18 unwritten trees in data/research/*-verified.json are all held by earlier passes. The best candidate for a verify pass is the white fig of the Huerto de las Flores in Agaete: public, easy access, seen alive recently. The Cabildo ficha loops on redirects for WebFetch, so it needs another way in.
