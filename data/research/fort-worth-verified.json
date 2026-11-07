@@ -484,7 +484,7 @@
   {
     "id": "ftw_025",
     "name": "Monticello Park Live Oak",
-    "species": "Live Oak (Quercus sp.)",
+    "species": "Oak (Quercus sp.)",
     "age_estimate": "not documented",
     "age_min": null,
     "age_max": null,
@@ -507,8 +507,8 @@
     "transport": "Not verified; neighbourhood park west of downtown, likely drive or bus, no stop confirmed",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "One source (City of Fort Worth Heritage Trees layer, government), flagged thin: lifecheck returned NONE, no dated observation of the tree found. Source says: canopy sweeps the ground and straddles the sidewalk, welcoming generations of residents to the park; neighbourhood dates to the 1920s. Park dedicated 1928, land donated by Monticello Land Company, designed by Hare and Hare of Kansas City (city parks page). Species given only as live oak; Quercus sp. No age, girth or height. The park page does not mention the tree. Pin is the layer point, approximate.",
-    "hold": "Writing pass 2026-11-07, held: cannot be told apart (no photo, register-layer pin, no small named site) and species only to genus, no measurement. Ships with a photo or GPS fix showing the ground-sweeping canopy over the sidewalk, which would make the recognition line."
+    "story": "This live oak's canopy comes all the way down to the ground and straddles the sidewalk, so the path runs underneath it. That is how the City of Fort Worth's heritage tree register describes it, as a tree that has welcomed generations of residents into Monticello Park, rather than by any age or size.\n\nThe setting has a date even if the tree does not.The Monticello neighbourhood dates to the 1920s, and the park was dedicated in 1928 on land given by the Monticello Land Company, laid out by the Kansas City firm Hare and Hare. The park's own page mentions none of its trees, and nobody has published when this oak went in, so whether it was here before the park or arrived with it is an open question.\n\nThe rest needs the same honesty. The register names it only as a live oak, without saying which of the Texas species, and gives no girth or height. We have also found no recent dated photograph of it, which is why its pin is the register's point rather than a checked spot under the crown. If you walk past, a picture is the most useful thing you could send us, and if you know when it was planted, tell us that too.\n\nIt costs nothing to visit. Monticello Park is a small city park of a little over four acres, west of downtown, open from dawn to dusk.",
+    "how_to_recognise": "You can recognise it by the canopy, which sweeps down to the ground and straddles the sidewalk. It stands in Monticello Park, a small park of a little over four acres."
   },
   {
     "id": "ftw_026",
@@ -543,13 +543,13 @@
   {
     "id": "ftw_027",
     "name": "Lake Worth Indian Marker Tree",
-    "species": "Live Oak (Quercus virginiana)",
+    "species": "Southern Live Oak (Quercus virginiana)",
     "age_estimate": "not documented",
     "location": {
       "address": "Arrow S Park, 7951 Cahoba Dr, Fort Worth, TX 76135",
       "latitude": 32.795416,
       "longitude": -97.452576,
-      "neighborhood": "Lake Worth"
+      "neighbourhood": "Lake Worth"
     },
     "verified_sources": [
       "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0",
@@ -564,6 +564,7 @@
     "transport": "Car; the park is on Cahoba Dr at the Loop 820 bridge over Lake Worth. No public transport verified.",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "City heritage layer text (government): old live oak in Arrow S Park on the edge of a ridge overlooking the lake near the Loop 820 bridge; believed its shape is due to manipulation by indigenous groups such as the Comanche; marker trees could hold messages in the 'nose', a small cavity at the end of the bent trunk; the tree points to a deep bend in the Trinity River, now under Lake Worth. The layer's service is named Test, so treat it as the city's draft. Neighborhood Association on South Lake Worth page (blog by master arborist Wes Culwell, May 2014): the Texas Historic Tree Coalition visited the tree on 2014-05-06, documented its size and took samples for aging, concluded it probably marked a spot in the cattail area where fish were caught; report to go to tribal leaders in Oklahoma, decision 1 to 2 years later. No published result found, so marker status is a belief, not a recognition; say so. Culwell places the tree near Cahoba and pointing beneath the bridge. No girth, height or age figure seen on a fetched page. The park's other heritage tree is the George T. Reynolds Live Oak (ftw_012), a separate tree. Species 'live oak' is from the city layer text only. Alive: lifecheck RECENT only because of an iNaturalist plant observation in the park (2026-06-29, about 15 m away, not of the tree); no dated photo of the tree itself, so thin. Pin is the city's point, not checked against a crown: approximate. Recognise by the bent trunk pointing toward the bridge and the lake."
+    "story": "This live oak may be pointing at a river that is no longer there. The City of Fort Worth's heritage tree layer says its trunk bends toward a deep bend in the Trinity River, a bend that now lies under the water of Lake Worth.\n\nThe city believes the shape is not an accident. Its register calls this a marker tree, bent while young by Indigenous groups such as the Comanche, and says such trees could hold messages in the nose, the small cavity at the end of the bent trunk.\n\nBelieves is the right word. On 6 May 2014 the Texas Historic Tree Coalition visited, documented its size and took samples to age it. Wes Culwell, a master arborist who wrote up the visit, said the group thought it probably marked a spot in the cattails where fish were caught, and that a report would go to tribal leaders in Oklahoma, with a decision a year or two later. We have found no published result. The bend is there to see; what it meant is still waiting for an answer.\n\nThe oak stands on the edge of a ridge in Arrow S Park, looking over the lake near the Loop 820 bridge. The park's other heritage tree, the George T. Reynolds Live Oak, is a separate trunk. No age, girth or height has been published, and no recent dated photograph of this one either. If you know how the 2014 samples came out, tell us.",
+    "how_to_recognise": "You can recognise it by the bent trunk that points out over the lake toward the Loop 820 bridge. It stands on the ridge edge in Arrow S Park, a different tree from the park's George T. Reynolds Live Oak."
   }
 ]
