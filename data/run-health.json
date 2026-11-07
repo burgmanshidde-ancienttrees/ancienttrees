@@ -2,45 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-07T12:48:09+00:00",
-   "date": "2026-09-07",
-   "run_id": "34123834007",
-   "minutes": 87.7,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 320,
-   "denials": 48,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(iconv), Bash(ls), Bash(npx), Bash(printenv), Bash(python3), Bash(rm), Bash(test)",
-   "ended": "success",
-   "tokens": 8493585,
-   "claims_held": [
-    "_famous-taiwan",
-    "_famous-sweden"
-   ],
-   "commits": 18,
-   "cities_touched": 4,
-   "cities": [
-    {
-     "city": "leiden",
-     "trees": 6
-    },
-    {
-     "city": "berlin",
-     "trees": 1
-    },
-    {
-     "city": "brussels",
-     "trees": 0
-    },
-    {
-     "city": "lisbon",
-     "trees": 0
-    }
-   ],
-   "trees": 7,
-   "logged": true
-  },
-  {
    "started": "2026-09-07T14:17:20+00:00",
    "date": "2026-09-07",
    "run_id": "34129291834",
@@ -22591,6 +22552,27 @@
     }
    ],
    "trees": 8,
+   "logged": true
+  },
+  {
+   "started": "2026-11-07T00:22:09+00:00",
+   "date": "2026-11-07",
+   "run_id": "42317693139",
+   "minutes": 10.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 76,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 335586,
+   "claims_held": [
+    "fort-worth"
+   ],
+   "commits": 10,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
    "logged": true
   }
  ],
