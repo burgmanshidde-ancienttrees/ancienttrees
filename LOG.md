@@ -13,7 +13,9 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
-## 2026-11-07 night run (13:20 window)
+## 2026-11-07 night run (13:20 window), second attempt
+
+- Nothing new published. Coimbra verify pass found nothing: its 4 unmined candidates are already live (cbr_001 to 004) or leads; two leads added (botanic garden eucalyptus and deodar, black poplar access; uc.pt 403). Left cbr_007 (Penacova wisteria pergola, 3.25 m tall) unmerged: not a tree worth the walk; claim force-released, Coimbra is a wall for 48h. `leads.py --ready` is 0. Perugia translation claimed then released unrun, since TRANSLATIONS_OUT pauses new translation passes (BACKUP block still offers one). Brighton register retry not run (wall, verified empty within 48h). Next: staged Portuguese and German cities (guimaraes, porto, setubal, sintra, bamberg, munich).
 
 - Rungs 1 and 2: no reader photos or notes waiting. health.py: iOS app red on its schedule (UI test `tree-card` "Failed to scroll to visible", AX error, run takes 1h28m; app-side, needs a Mac session, not fixed here). Web errors orange (one ResizeObserver message, under the red threshold).
 - Rung 5, write pass on the verified shelf: 7 trees merged and app-only under APP FIRST (Fort Worth 2, Tucson 3, Chattanooga 1, New York 1), preflight 0 problems. About 15 more were held again with reasons in their verified files (can't be told apart, access not established, dead or duplicate). sgz_003 (Ocuri wild olive) is written but its access line needs "anyone can book the tour" before it can ship.
