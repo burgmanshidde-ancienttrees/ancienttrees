@@ -23,6 +23,15 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-07
+
+Web half: the last 24 hours were data (walk routes, vendored photos, 16 app-only places, Préfargier duplicate) plus the New from visitors order. No em dashes in site/dist HTML.
+
+- WARN site/dist/explore.html:281 says "4169 trees in 834 places" and "Each pin opens a tree with its age, its species, why it is worth the walk, and directions", while app-only pins open a card with no story ("Read its story in the app"). Second review to see it; the count now also disagrees with yesterday's 4047. Hard rule 2 / "a decision that changes what the product does also changes what the product says". Replacement: "Each pin opens a tree; some stories are in the app." Translations too.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "verified against independent sources" / "check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Thirteenth review in a row.
+- NOTE the standing "year printed as age" finding needs its regex narrowed: 103 pages match `content="A (17|18|19|20)[0-9]{2}-year-old`, but some are real ages (Te Matua Ngahere, "A 2000-year-old Kauri", is a sourced age, not a year). A qa check must compare against age_basis, not the digits.
+- NOTE data/walk-routes.json (3d3fe5b0e, +684): still unchecked whether walks route through app-only trees that have no page (open since 11-06).
+
 ## 2026-11-06
 
 Web half: the last 24 hours were app-only trees as pins (6522ad63a), vendored photos, walk routes, Android waitlist field. No em dashes found in the sampled built HTML.
