@@ -13,6 +13,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-07 night run (18:07 window): Salt Lake City verify, nothing published
+
+Rung 2: health.py exits 1 on the iOS scheduled run (3 failures in a row, ~1h28m each; the log shows XCUITest "Failed to scroll to visible ... tree-card" AX errors, then timeout). It needs a Mac and the app worktree, so it is a session's, not this runner's. Web errors ORANGE: one ResizeObserver loop message, benign, left alone. Rung 1 empty. Shelf: prepare.py says refill; portland refused (full). Claimed salt-lake-city (18 of 20), verify agent delivered slc_019 (Lavalle Hawthorn) and slc_020 (Red Horsechestnut), both University of Utah register trees, flagged, approximate pins, no photo, small trees. Under the six-candidate floor for a write pass, so not written; claim left in place (release refused until merged, correctly) and expires in 4 hours. Cost: about 85k tokens for 2 unpublished trees.
+
 ## 2026-11-07 night run (13:20 window), second attempt
 
 - Nothing new published. Coimbra verify pass found nothing: its 4 unmined candidates are already live (cbr_001 to 004) or leads; two leads added (botanic garden eucalyptus and deodar, black poplar access; uc.pt 403). Left cbr_007 (Penacova wisteria pergola, 3.25 m tall) unmerged: not a tree worth the walk; claim force-released, Coimbra is a wall for 48h. `leads.py --ready` is 0. Perugia translation claimed then released unrun, since TRANSLATIONS_OUT pauses new translation passes (BACKUP block still offers one). Brighton register retry not run (wall, verified empty within 48h). Next: staged Portuguese and German cities (guimaraes, porto, setubal, sintra, bamberg, munich).

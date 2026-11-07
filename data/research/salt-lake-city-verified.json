@@ -517,5 +517,59 @@
   "verify_notes": "Register row (Tree ID 241, owner South Jordan City, public access Y): circumference 115 in = 292 cm, height 33 ft = 10.1 m, spread 52 ft (16 m), measured and nominated 2019-07 by Jeran Farley, Utah state champion, not national. Register only; flagged one source. Alive: last measured 2019; lifecheck RECENT 2024-12-30 only for the area (an iNaturalist observation near the pin, not tree-specific). The register address is a trail crossing, no sub-metre locator: approximate. Wide low crown (spread exceeds height) is the notable shape. Outlier, 23 km from the other points, a lone stop; ship only if a writer wants a Jordan River point. The city facility page (sjc.utah.gov, Jordan River Trail) confirms a public 3.5 mile trail through South Jordan; the 'about 11200 S' address and Riverfront Park location were confirmed only by search summary and the register, not a fetched page. No age.",
   "story": "This willow is half again as wide as it is tall. Its crown spreads about 16 metres from a tree only 10.1 metres high, on a trunk 292 centimetres round, and on Utah's big tree register that makes it the largest peachleaf willow in the state.\n\nIt grows beside the Jordan River Parkway trail in South Jordan, about 23 kilometres south of downtown Salt Lake City, where the register places it at the trail's crossing of Midas Creek, around 11200 South near Riverfront Park. Peachleaf willow is a native of North American riverbanks, and this one stands where a creek meets the river trail.\n\nThe register is the only source for it. It was nominated and measured in July 2019, and that is the last record of anyone looking at this particular trunk. A naturalist's record near the spot from December 2024 is the latest sign of life there, but it does not name this tree. The register gives a trail crossing rather than an exact point, so expect to look along the bank rather than walk straight to it.\n\nThe trail itself is a public path owned by the city and free to use. It is far from the other trees on this page, so it makes most sense on a bike ride or a walk along the river rather than as a side trip from downtown. Nobody has recorded its age. If you know, or if you have seen it lately, tell us.",
   "how_to_recognise": "You can recognise it by its shape, a low willow about 10 metres tall with a crown some 16 metres wide, wider than it is tall. It stands beside the Jordan River Parkway trail where the trail crosses Midas Creek."
+ },
+ {
+  "id": "slc_019",
+  "name": "The University of Utah Lavalle Hawthorn",
+  "species": "Lavalle Hawthorn (Crataegus x lavallei)",
+  "girth_cm": 216,
+  "height_m": 11.9,
+  "location": {
+   "address": "University of Utah campus, Presidents' Circle, west of the John R. Park Building, Salt Lake City",
+   "latitude": 40.764766,
+   "longitude": -111.849786,
+   "neighbourhood": "University of Utah"
+  },
+  "verified_sources": [
+   "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=lavalle-hawthorn",
+   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  ],
+  "verify_notes": "Register (Utah Big Tree Register, state champion status 1, PUBLIC_ACCESS Yes, 2026 measurement per earlier lead): circumference 216 cm, height 11.9 m. Ground owner's tree tour page (fetched 2026-11-07): 'The tree in President's Circle is on the Utah Big Tree Registry'; found at the southeast part of President's Circle or south of the University Bookstore. Exfoliating trunk, white flower clusters May to June, orange-red fruit that stays on through winter (tour page). Tour page gives mature size as 15 to 25 ft, so this specimen at 39 ft is far above typical. Lifecheck RECENT: iNaturalist observation 2025-06-26 within range (https://www.inaturalist.org/observations/292920384), not confirmed to be this exact tree. Pin is register coordinate, approximate. About 100 m from the Chinese cork oak, German ash and Mongolian oak (slc_010 to slc_012), so it joins that campus cluster. Two sources (register plus owner), flagged because the exact trunk is not fixed. Age not documented.",
+  "age_estimate": "not documented",
+  "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+  "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "official_register": {
+   "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer)",
+   "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  }
+ },
+ {
+  "id": "slc_020",
+  "name": "The University of Utah Red Horsechestnut",
+  "species": "Red Horsechestnut (Aesculus x carnea)",
+  "girth_cm": 160,
+  "height_m": 8.5,
+  "location": {
+   "address": "University of Utah campus, Presidents' Circle, north of the Crocker Science Center, Salt Lake City",
+   "latitude": 40.764632,
+   "longitude": -111.850999,
+   "neighbourhood": "University of Utah"
+  },
+  "verified_sources": [
+   "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=red-horsechestnut",
+   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  ],
+  "verify_notes": "Register (Utah Big Tree Register, state champion status 1, PUBLIC_ACCESS Yes, 2026 measurement per earlier lead): circumference 160 cm, height 8.5 m (small for a horsechestnut; tour page gives mature size 30 to 40 ft, may stay smaller in Utah). Ground owner's tour page (fetched 2026-11-07): 'The tree on the south of President's Circle is on the Utah Big Tree Registry'. Location conflict: register text says north of the Crocker Science Center, tour page says south of President's Circle; pin is the register coordinate, approximate. Showy red to dark pink flower panicles in May (tour page). Lifecheck OLD (nothing recent nearby), so alive rests on the register 2026 measurement only; flagged. About 40 m from the Port Orford cedar and Lacebark elm area (slc_013, slc_014). Age not documented. Modest tree; add only to round out the campus cluster.",
+  "age_estimate": "not documented",
+  "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+  "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "official_register": {
+   "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer)",
+   "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+  }
  }
 ]
