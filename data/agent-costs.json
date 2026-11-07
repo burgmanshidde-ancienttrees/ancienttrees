@@ -1,6 +1,16 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-07": [
+      {
+        "date": "2026-11-07",
+        "kind": "photo",
+        "target": "new-york (enrich)",
+        "tokens": 66000,
+        "trees": 0,
+        "note": "Enrichment of 20 New York trees: 5 access lines (nyc_034, 035, 074, 075, 076); Green-Wood register and measurement not readable (JS tree finder); season gaps not checked, recorded as dead ends for 90 days. Token figure estimated."
+      }
+    ],
     "2026-11-06": [
       {
         "date": "2026-11-06",
