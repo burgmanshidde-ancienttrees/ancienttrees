@@ -13,6 +13,11 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-07 night run (13:20 window)
+
+- Rungs 1 and 2: no reader photos or notes waiting. health.py: iOS app red on its schedule (UI test `tree-card` "Failed to scroll to visible", AX error, run takes 1h28m; app-side, needs a Mac session, not fixed here). Web errors orange (one ResizeObserver message, under the red threshold).
+- Rung 5, write pass on the verified shelf: 7 trees merged and app-only under APP FIRST (Fort Worth 2, Tucson 3, Chattanooga 1, New York 1), preflight 0 problems. About 15 more were held again with reasons in their verified files (can't be told apart, access not established, dead or duplicate). sgz_003 (Ocuri wild olive) is written but its access line needs "anyone can book the tour" before it can ship.
+
 ## 2026-11-07 session: the digest, New from visitors, a stuck deploy
 
 - **What changed in the product.** New from visitors (web homepage, app Discover) now orders by when the photograph was taken, each person's newest first, so the first eleven tiles are eleven people (Préfargier, Cramond, Paris lead; Reykjavik was on top because status rewrites touch `updated_at`). A generated profile name ("Green Fig 1965") prints and links like any name; only a private profile says "A visitor" (Hidde: "just give the link to their made up name"). supabase/new-from-visitors.sql pasted by Hidde and checked; web checked live; the app part ships with build 41. The Préfargier cedars showed the reader's photograph twice (lead and strip): strip copy removed, and live-first now skips a sighting that is already the lead (`is_lead` in sightings_publish.py). Checked live.
