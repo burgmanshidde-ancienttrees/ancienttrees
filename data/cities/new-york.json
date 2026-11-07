@@ -3488,6 +3488,38 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "nyc_085",
+      "name": "The Davis Hybrid Oak of Stuyvesant Place",
+      "species": "Swamp White Oak (Quercus x filialis)",
+      "age_estimate": "not documented",
+      "girth_cm": 343,
+      "location": {
+        "address": "Stuyvesant Place near St. George Park, St. George",
+        "latitude": 40.6442,
+        "longitude": -74.0776,
+        "neighbourhood": "St. George, Staten Island"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=122"
+      ],
+      "official_register": {
+        "name": "NYC Parks Great Trees of New York City (designated 2024)",
+        "url": "https://www.nycgovparks.org/facilities/great-trees?id=122"
+      },
+      "access": "Street tree on the public sidewalk, always viewable",
+      "transport": "St. George station (SIR, Staten Island Ferry terminal), about 0.3 km on foot",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This sidewalk oak is a cross between two species, and it grows a short walk from the Staten Island Ferry. NYC Parks names it Quercus x filialis, a hybrid of black oak and willow oak, first described by the Staten Island naturalist William T. Davis from Tottenville, at the island's southern tip. Parks offers it as a picture of what Staten Island is botanically, a place where the ranges of southern and northern oaks overlap. In 2024 the city made this one a Great Tree. It does not stand in a botanical garden or behind a gate. It grows on Stuyvesant Place near St. George Park, about 300 metres from the ferry terminal, so anyone already crossing the harbour can reach it in five minutes on foot. Its trunk is 43 inches across, a little over three metres round. One oddity in the paperwork. The Parks page heads the entry swamp white oak, which looks like a slip, since the botanical name on the same page describes the black and willow hybrid. The Latin is the one to trust. Nobody has published when it was planted, and the register gives no age, so that stays an open question. If you know this tree's year, or remember the block before it, tell us. Step off the ferry and, a few blocks on, you have found a small botanical argument standing on the pavement, in full view and free.",
+      "how_to_recognise": "You can recognise it by the trunk, a little over three metres round, on a street tree on Stuyvesant Place. It stands on the sidewalk near St. George Park, about 300 metres from the ferry terminal.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
