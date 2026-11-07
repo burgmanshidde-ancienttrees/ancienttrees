@@ -13,6 +13,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-07 (retry window): READY leads held, Fort Worth verify found one thin tree
+
+All 29 READY leads were tagged SKIPPED with reasons (access, dead, no single tree, no source). Fort Worth verify delivered ftw_027 (flagged, thin alive evidence), not merged; claim released with --force, wall for 48h. Nothing new published by this attempt. Next: the staged Portuguese and German cities, or the Brighton register retry.
+
 ## 2026-11-07 (write pass): 21 written trees into the app, 16 new places
 
 **What went live, app only under APP FIRST (no web page or place page):** the written backlog of 11-02 to 11-04 that had no builder, now `scripts/build_backlog_2026_11_07.py`. Thailand: Ayutthaya 2 (the Buddha-head fig at Wat Mahathat, the bodhi gate of Wat Phra Ngam), Chiang Mai (the city-pillar yang na), Sukhothai (the Wat Si Chum mango), Tha Maka (the shrine in the tree hollow). George Town (the 1871 Penang baobab). Montenegro: Kotor (the Trg od Kina poplar) and Bar (the Stara Maslina, published as mtn_001). Croatia: Kaštela (the Gomilica oak). Portugal: Horta 2. Spain: La Palma 4, Lanzarote 1. Italy: Lecce, Vernole, Martina Franca, Milo (Fornazzo), Zafferana Etnea. Place copy for 11 places written this pass (data/research/backlog-places-2026-11-07.json); La Palma and Lanzarote's `recognise` lines moved to `how_to_recognise`; La Palma's dragon trees renamed Dragon Tree to match Cádiz. city_names.py run (Milo and Tha Maka unresolved). Preflight 0 problems; qa.py could not run (no site/dist here).
