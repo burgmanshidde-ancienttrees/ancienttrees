@@ -13,6 +13,13 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-07 session: the digest, New from visitors, a stuck deploy
+
+- **What changed in the product.** New from visitors (web homepage, app Discover) now orders by when the photograph was taken, each person's newest first, so the first eleven tiles are eleven people (Préfargier, Cramond, Paris lead; Reykjavik was on top because status rewrites touch `updated_at`). A generated profile name ("Green Fig 1965") prints and links like any name; only a private profile says "A visitor" (Hidde: "just give the link to their made up name"). supabase/new-from-visitors.sql pasted by Hidde and checked; web checked live; the app part ships with build 41. The Préfargier cedars showed the reader's photograph twice (lead and strip): strip copy removed, and live-first now skips a sighting that is already the lead (`is_lead` in sightings_publish.py). Checked live.
+- **Digest.** The quality block, when anything is not green, is the full table Hidde approved on 11-04 (every row with its question, a light and a word per cell, Backup a row). Hidde: "keep the quality thing like this from now on".
+- **Breakage, fixed.** Every deploy this morning failed QA on four photographs without a measured width (La Palma 3, Lanzarote 1; the Yaiza ombu's url was the Commons page, now the file). Live again.
+- **Open.** iOS: FlowWalk testEveryFlowLeavesAWayBack cannot scroll to the tree card at the bottom of the screen (iOS 18 and newest, both retries), plus layout findings on city (2) and Explore (4); likely 11-06's Discover changes; fix before build 41. Moderation gap, Hidde to decide: New from visitors shows live-first strip photographs nobody has looked at yet. Plus answers so far are tests ("test" from Rome web). Hidde asked whether "Something else" should require text; open.
+
 ## 2026-11-07 (second retry window): nothing published, the shelf is dry
 
 READY is 0. Spokane has 1 unmined register candidate and Coimbra 4 (under the six-candidate floor), so no verify pass was dispatched. Spokane claimed then released (wall 48h). Coimbra not claimed; cbr_007 sits verified in data/research/coimbra-verified.json awaiting a story. Brighton register already retried 11-04 and 11-06, still stalled. Perugia translation skipped while TRANSLATIONS_OUT holds. Next: a scout of a new US or UK register, or Coimbra's cbr_007 in the next write pass.
