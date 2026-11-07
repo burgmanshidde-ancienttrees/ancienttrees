@@ -325,6 +325,18 @@
       "ma tomo Osin",
       "Ēastūnburh"
     ],
+    "ayutthaya": [
+      "Historisch Park Ayutthaya",
+      "Geschichtspark Ayutthaya",
+      "Parc historique d'Ayutthaya",
+      "Parque histórico de Ayutthaya",
+      "Parco storico di Ayutthaya",
+      "Cidade Histórica de Ayutthaya",
+      "Park historyczny Ajutthaja",
+      "Historický park Ajutthaja",
+      "Ajutajos istorinis parkas",
+      "Ajutaja"
+    ],
     "baarn": [
       "Baern",
       "Baoren",
@@ -381,6 +393,14 @@
     ],
     "bansko": [
       "Banskas"
+    ],
+    "bar": [
+      "Antivari",
+      "Bar i Montenegro",
+      "Baras",
+      "Tivari",
+      "Antibarium",
+      "Var"
     ],
     "barcelona": [
       "Barcelone",
@@ -931,6 +951,14 @@
     ],
     "chattanooga": [
       "Čatanuga"
+    ],
+    "chiang-mai": [
+      "Čiang Mai",
+      "Csiangmaj",
+      "Čiangmajus",
+      "Čhīanmai",
+      "Txiang Mai",
+      "Chiangmay"
     ],
     "chicago": [
       "Čikaga",
@@ -1531,6 +1559,14 @@
       "Gandavum",
       "Ganti",
       "Gento"
+    ],
+    "george-town": [
+      "George Town i Penang",
+      "Džordžtaunas",
+      "Džordžtauna",
+      "Corctaun",
+      "Jorjtaun",
+      "Ĝorĝtaŭno"
     ],
     "gernika-lumo": [
       "Gernika",
@@ -2138,6 +2174,10 @@
       "Districtul Kantang",
       "Kantang Kūn"
     ],
+    "kastela": [
+      "Castelli",
+      "Castra"
+    ],
     "kasukabe": [
       "Kaszukabe",
       "Kasukabe-chhī"
@@ -2247,6 +2287,15 @@
     "kotel": [
       "Osečná"
     ],
+    "kotor": [
+      "Cattaro",
+      "Kotoras",
+      "Kotora",
+      "Kotorri",
+      "Catharum",
+      "Cater",
+      "Càtaro"
+    ],
     "krakow": [
       "Krakau",
       "Cracovie",
@@ -2325,6 +2374,9 @@
       "La Crosse",
       "LaCrosse"
     ],
+    "la-palma": [
+      "Isla de La Palma"
+    ],
     "la-tene": [
       "Yacimiento de La Tène",
       "Jaciment de La Tène"
@@ -2334,6 +2386,11 @@
     ],
     "lampang": [
       "Lampangas"
+    ],
+    "lanzarote": [
+      "Lansarotė",
+      "Insula Lanzarotta",
+      "Lanzarote Island"
     ],
     "laren-gelderland": [
       "Laren",
@@ -2362,6 +2419,11 @@
     "le-guerno": [
       "Ar Gwernoù",
       "Guerno"
+    ],
+    "lecce": [
+      "Lečė",
+      "Lupiae",
+      "Lecci"
     ],
     "leeuwarden": [
       "Ljouwert",
@@ -2677,6 +2739,11 @@
       "Manchuin",
       "Manchêtre",
       "Mankenyon"
+    ],
+    "martina-franca": [
+      "Martina Franka",
+      "Martina",
+      "Martina Franghe"
     ],
     "martinique": [
       "Le Prêcheur",
@@ -4218,6 +4285,10 @@
       "Stuagart",
       "Stuccarda"
     ],
+    "sukhothai": [
+      "Sukhothaj",
+      "Sukotay"
+    ],
     "sulechow": [
       "Sulechuvas",
       "Sulehova",
@@ -4618,6 +4689,10 @@
       "Veprē",
       "Wjeprze"
     ],
+    "vernole": [
+      "Vernulae",
+      "Ernule"
+    ],
     "verona": [
       "Vérone",
       "Werona",
@@ -4859,6 +4934,9 @@
       "Iader",
       "Chadra"
     ],
+    "zafferana-etnea": [
+      "Zafarana"
+    ],
     "zaragoza": [
       "Saragossa",
       "Saragosse",
@@ -4956,6 +5034,7 @@
     "aubers": "Aubers",
     "auckland": "Auckland",
     "austin": "Austin, Texas",
+    "ayutthaya": "Ayutthaya Historical Park",
     "azeitao": "Azeitão (São Lourenço e São Simão)",
     "baarn": "Baarn",
     "bad-blumau": "Bad Blumau",
@@ -4967,6 +5046,7 @@
     "bamberg": "Bamberg",
     "bangkok": "Bangkok",
     "bansko": "Bansko",
+    "bar": "Bar, Montenegro",
     "barcelona": "Barcelona",
     "bargischow": "Bargischow",
     "bari": "Bari",
@@ -5053,6 +5133,7 @@
     "charleston": "Charleston, South Carolina",
     "chatenay-malabry": "Châtenay-Malabry",
     "chattanooga": "Chattanooga, Tennessee",
+    "chiang-mai": "Chiang Mai",
     "chicago": "Chicago",
     "chikubushima": "Chikubushima",
     "chilcompton": "Chilcompton",
@@ -5157,6 +5238,7 @@
     "geneva": "Geneva",
     "genoa": "Genoa",
     "gent": "Ghent",
+    "george-town": "George Town, Penang",
     "gettysburg": "Gettysburg, Pennsylvania",
     "ghent": "Ghent",
     "ghisonaccia": "Ghisonaccia",
@@ -5269,6 +5351,7 @@
     "kandy": "Kandy",
     "kansas-city": "Kansas City, Missouri",
     "kantang": "Kantang district",
+    "kastela": "Kaštela",
     "kasukabe": "Kasukabe, Saitama",
     "kauai": "Kauaʻi",
     "kaunas": "Kaunas",
@@ -5291,6 +5374,7 @@
     "koriyama": "Kōriyama",
     "kos": "Kos",
     "kotel": "Osečná",
+    "kotor": "Kotor",
     "kozaki": "Kōzaki",
     "kozy": "Kozy",
     "krabi": "Krabi",
@@ -5304,15 +5388,18 @@
     "la-adrada": "La Adrada",
     "la-crosse": "La Crosse, Wisconsin",
     "la-crosse-florida": "LaCrosse, Florida",
+    "la-palma": "La Palma",
     "la-tene": "La Tène (archaeological site)",
     "lafayette-louisiana": "Lafayette, Louisiana",
     "lampang": "Lampang",
     "lanercost": "Lanercost",
+    "lanzarote": "Lanzarote",
     "laren-gelderland": "Laren, Gelderland",
     "las-vegas": "Las Vegas",
     "lausanne": "Lausanne",
     "le-guerno": "Le Guerno",
     "lebec": "Lebec, California",
+    "lecce": "Lecce",
     "leesburg": "Leesburg, Virginia",
     "leeuwarden": "Leeuwarden",
     "leggett": "Leggett, California",
@@ -5369,6 +5456,7 @@
     "mamhilad": "Mamhilad",
     "manchester": "Manchester",
     "maria-aurora": "Maria Aurora, Aurora",
+    "martina-franca": "Martina Franca",
     "martinique": "Martinique",
     "martinsville-new-jersey": "Martinsville, New Jersey",
     "matera": "Matera",
@@ -5640,6 +5728,7 @@
     "stratfield-saye": "Stratfield Saye",
     "stratford-upon-avon": "Stratford-upon-Avon",
     "stuttgart": "Stuttgart",
+    "sukhothai": "Sukhothai (city)",
     "sulechow": "Sulechów",
     "sunderland-massachusetts": "Sunderland, Massachusetts",
     "suzuka": "Suzuka, Mie",
@@ -5714,6 +5803,7 @@
     "venlo": "Venlo",
     "venon": "Grenoble",
     "vepriai": "Vepriai",
+    "vernole": "Vernole",
     "verona": "Verona",
     "veryn": "Veryn",
     "vico-del-gargano": "Vico del Gargano",
@@ -5757,6 +5847,7 @@
     "yvignac-la-tour": "Yvignac-la-Tour",
     "zaanstad": "Zaanstad",
     "zadar": "Zadar",
+    "zafferana-etnea": "Zafferana Etnea",
     "zaragoza": "Zaragoza",
     "zehdenick": "Zehdenick",
     "zilina": "Žilina",
@@ -5989,6 +6080,7 @@
     "madison": "no article within 40 km, tried Madison (Madison, no coordinates, disambiguation page); Madison, United States; search: List of United States cities by population; search: James Madison; search: Madison, Mississippi",
     "martindale": "no article within 40 km, tried Martindale (Martindale, no coordinates, disambiguation page); Martindale, United Kingdom; search: The Twits (film); search: Timeline of LGBTQ history in the United Kingdom; search: Christina Pazsitzky",
     "media-pennsylvania": "no article within 40 km, tried Media (Media, no coordinates, disambiguation page); Media, United States; search: List of United States cities by population; search: Mass media in the United States; search: News media in the United States",
+    "milo": "no article within 40 km, tried Milo (Milo, no coordinates, disambiguation page); Milo, Italy (Milo, Catania, no coordinates); search: Tina and Milo; search: Milo Manara; search: Milo Ventimiglia",
     "moffat": "no article within 40 km, tried Moffat (Moffat, no coordinates, disambiguation page); Moffat, United Kingdom; search: Steven Moffat; search: Glasgow; search: List of postcode districts in the United Kingdom",
     "mokrice": "no article within 40 km, tried Mokrice (Mokrice, no coordinates, disambiguation page); Mokrice, Czech Republic; search: Slovenia; search: World Archery; search: European Archery Championships",
     "mountain-home-state-forest": "no article within 40 km, tried Mountain Home State Forest; Mountain Home State Forest, United States; search: Mountain states; search: United States Forest Service; search: October Mountain State Forest",
@@ -6021,6 +6113,7 @@
     "tacoma": "no article within 40 km, tried Tacoma (Tacoma, no coordinates, disambiguation page); Tacoma, United States; search: List of United States cities by population; search: Tacoma; search: List of United States cities by crime rate",
     "takahama": "no article within 40 km, tried Takahama (Takahama, no coordinates, disambiguation page); Takahama, Japan; search: Japan Air Lines Flight 123; search: Takahama, Aichi; search: Kyoshi Takahama",
     "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",
+    "tha-maka": "no article within 40 km, tried Tha Maka; Tha Maka, Thailand; search: Kanchanaburi province (Kanchanaburi province, title does not match); search: Krung Thep Aphiwat Central Terminal; search: Ban Pong district (Ban Pong district, title does not match)",
     "timber-creek": "no article within 40 km, tried Timber Creek (Timber Creek, no coordinates, disambiguation page); Timber Creek, Australia; search: Breakfast Creek Hotel; search: Cedar Creek, Queensland (Logan & Gold Coast); search: Wellington Mill, Western Australia",
     "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",
     "vainiai": "no article within 40 km, tried Vainiai; Vainiai, Lithuania; search: Do Architects; search: Gilma Teodora Gylytė",

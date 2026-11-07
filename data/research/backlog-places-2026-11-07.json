@@ -1,0 +1,181 @@
+{
+  "note": "Place fields written 2026-11-07 by the write pass for places whose trees were verified and written earlier (2026-11-02 to 11-04) but never got place copy. Built by scripts/build_backlog_2026_11_07.py. Facts restate the trees' own verify_notes and stories only.",
+  "places": {
+    "ayutthaya": {
+      "city": "Ayutthaya",
+      "country": "Thailand",
+      "intro": "Two fig trees in Ayutthaya have swallowed pieces of the old capital. At Wat Mahathat, inside the Historical Park, the roots of a fig hold a sandstone Buddha's face, and nobody agrees how it got there. North of the old city island, at the ruined Wat Phra Ngam, a bodhi tree has grown over a brick gateway so completely that its trunks now frame the arch. Thailand's Ministry of Culture lists both among its Heritage Trees of the Land.",
+      "meta_description": "Ayutthaya's heritage trees: the fig holding a Buddha's head at Wat Mahathat and the bodhi grown over the gate of Wat Phra Ngam.",
+      "question_meta": "Ayutthaya's best-known tree is the fig at Wat Mahathat whose roots hold a sandstone Buddha's head; nobody has dated it.",
+      "question_answer": "The best-known old tree in Ayutthaya is the fig at Wat Mahathat whose roots hold a sandstone Buddha's head, inside the Ayutthaya Historical Park. Nobody has dated the tree, so its age is unknown. The Ministry of Culture lists it as a Heritage Tree of the Land, with a root mass 9.60 metres round and a height of 15 metres.",
+      "question_context": "The Wat Mahathat fig is the one most visitors come for. The popular account says the Buddha's head fell when the Burmese army sacked Ayutthaya in 1767 and the roots grew around it, but that is a story rather than a record, and one guide says a worker set the head in the roots around 1968 to 1970. The head itself is dated anywhere from the 14th to the 17th century. The Ministry of Culture's register calls the tree a bodhi, as does the sign on site, while travel writers call it a banyan or a strangler fig, so which fig it is remains open. The register measures the root mass at 9.60 metres round and gives no age. The second tree, at Wat Phra Ngam in Khlong Sa Bua, is a bodhi grown over and around a brick gateway, added to the heritage list in 2019 with no measurements. Travel articles say it is over 100 years old, a guess rather than a count. Wat Mahathat is inside the ticketed Historical Park, a UNESCO World Heritage site since 1991, and Wat Phra Ngam is about 2 kilometres north, with no ticket reported.",
+      "hero_tree_id": "ayu_001",
+      "oldest_tree_id": "ayu_001",
+      "faq": [
+        {"q": "How old is the Buddha head tree in Ayutthaya?", "a": "Nobody has dated it. The Ministry of Culture's register gives no age, and the popular story that the roots grew around a head fallen in 1767 is not a recorded fact."},
+        {"q": "Do you pay to see the Buddha head tree?", "a": "Yes. It stands in Wat Mahathat inside the Ayutthaya Historical Park, which charged foreign adults about 80 baht in 2026. Check the price and the hours at the gate."},
+        {"q": "Where is the tree that grew over a gate?", "a": "At the ruined Wat Phra Ngam in Khlong Sa Bua, across from the old city island and about 2 kilometres north of Wat Mahathat. Travel guides report no ticket."}
+      ]
+    },
+    "chiang-mai": {
+      "city": "Chiang Mai",
+      "country": "Thailand",
+      "intro": "Chiang Mai's oldest named tree was planted to mark the city itself. When King Kawila resettled Chiang Mai, in a reign that ran from 1782 to 1813, a yang na went into the ground beside the Inthakin, the city pillar, in the courtyard of Wat Chedi Luang. Thailand's Ministry of Culture lists it as a heritage tree, 30 metres tall and 6 metres round. A large branch fell in April 2026 and the tree still stands, about ten minutes on foot from Tha Phae Gate.",
+      "meta_description": "The yang na of Chiang Mai's city pillar at Wat Chedi Luang: planted under King Kawila, about 200 years old and 30 metres tall.",
+      "question_meta": "Chiang Mai's oldest known tree is the yang na beside the city pillar at Wat Chedi Luang, put at 200 to about 230 years.",
+      "question_answer": "The oldest known tree in Chiang Mai is the yang na, Dipterocarpus alatus, beside the Inthakin city pillar in the courtyard of Wat Chedi Luang. The Ministry of Culture gives its age as 200 years and Chiang Mai News put it at 226 in 2026, so somewhere between 200 and 230 is the honest figure.",
+      "question_context": "The tree was planted as the city pillar's partner when King Kawila resettled Chiang Mai, in a reign that ran from 1782 to 1813, and in Thai it is called a tree that marks the city. The Ministry of Culture lists it among its Heritage Trees of the Land as Yang Na Rom Mongkhon, 30 metres tall and 6 metres round, with an age of 200 years. Chiang Mai News gave 226 years in 2026 and an older count says about 210, and none of the figures comes from counting rings. In 2021 specialists judged it at risk and a rescue project was run for it. On 16 April 2026, during the Lanna new year, a large branch broke off near the shrine of the giant Kumphan with no storm blowing and hit a power pole and a parked van. Tree surgeons from the Royal Forest Department treated the wound, and the tree stands. Wat Chedi Luang was founded in the 14th century and honours the pillar each May in the Inthakin festival. Foreign visitors are usually asked for a small ticket at the gate, and modest dress is expected.",
+      "hero_tree_id": "cnx_001",
+      "oldest_tree_id": "cnx_001",
+      "faq": [
+        {"q": "How old is the yang na at Wat Chedi Luang?", "a": "About 200 years by the Ministry of Culture's register, and 226 by Chiang Mai News in 2026. Nobody has counted its rings, so read it as 200 to 230."},
+        {"q": "Did the big tree at Wat Chedi Luang fall?", "a": "No. A large branch broke off on 16 April 2026 and hit a power pole and a parked van. Royal Forest Department tree surgeons treated the wound and the tree still stands."},
+        {"q": "Do you pay to enter Wat Chedi Luang?", "a": "Foreign visitors have been asked for a small ticket at the gate; the price was not confirmed. Dress modestly, with shoulders and knees covered."}
+      ]
+    },
+    "sukhothai": {
+      "city": "Sukhothai",
+      "country": "Thailand",
+      "intro": "Sukhothai's heritage tree is a mango, and it is taller than the Buddha it stands beside. In the corner by the walled hall of Wat Si Chum, which holds the 15 metre seated Phra Achana, a mango 20 metres tall and six metres round grows in the north zone of Sukhothai Historical Park. Thailand's Ministry of Culture listed it in 2017 and gives its age as about 200 years, a figure with no ring count behind it.",
+      "meta_description": "The mango of Wat Si Chum in Sukhothai Historical Park: 20 metres tall beside a 15 metre Buddha, about 200 years by the register.",
+      "question_meta": "Sukhothai's heritage tree is the mango at Wat Si Chum, 20 metres tall and about 200 years old by the Ministry of Culture.",
+      "question_answer": "The best-known old tree in Sukhothai is the mango beside the mandapa of Wat Si Chum, in the north zone of Sukhothai Historical Park. The Ministry of Culture listed it in 2017 at 20 metres tall and six metres round, and gives its age as about 200 years.",
+      "question_context": "Wat Si Chum's walled hall, the mandapa, holds Phra Achana, a seated Buddha 15 metres tall, and the mango grows in the corner beside it. Thailand's Ministry of Culture added it to its Heritage Trees of the Land in 2017 with a height of 20 metres and a girth of six, a great deal of trunk for a fruit tree. A sign at its foot says 6.5 metres, without saying at what height that was measured. The register's age of about 200 years has no ring count behind it, so somewhere between 150 and 250 is the safer reading. Figs and crape myrtles grow close by, and the sign at the mango's foot is the surest way to pick the right trunk. Wat Si Chum lies about 2.5 kilometres north of the old city gate, in the north zone of the park, a UNESCO World Heritage site open daily from early morning to early evening. Each zone has its own ticket, and foreign visitors have been charged 100 baht, but check at the gate. New Sukhothai is about 12 kilometres east, with songthaews, tuk-tuks and bicycles for hire.",
+      "hero_tree_id": "skt_001",
+      "oldest_tree_id": "skt_001",
+      "faq": [
+        {"q": "How old is the mango tree at Wat Si Chum?", "a": "About 200 years by the Ministry of Culture's register, which gives no method, so read it as 150 to 250."},
+        {"q": "How big is the Wat Si Chum mango?", "a": "The register gives 20 metres tall and six metres round; a sign at the tree says 6.5 metres round."},
+        {"q": "Do you need a ticket to see it?", "a": "Yes. It is in the north zone of Sukhothai Historical Park, which has its own ticket. Foreign visitors have been charged 100 baht; check at the gate."}
+      ]
+    },
+    "tha-maka": {
+      "city": "Tha Maka",
+      "country": "Thailand",
+      "intro": "In Tha Maka, south-east of Kanchanaburi, a strangler fig has closed so tightly around an old brick shrine that people call the place the shrine in the tree hollow. Thailand's Ministry of Culture listed it as a heritage tree in 2017, measured at more than 27 arm-spans round, about 18 metres, and about 25 metres tall. Specialists dated the shrine's bricks to the late Ayutthaya period, which is where the register's age of at least 320 years comes from.",
+      "meta_description": "The council tree of Tha Maka, Kanchanaburi: a strangler fig wrapped round a late Ayutthaya brick shrine beside the Mae Klong river.",
+      "question_meta": "Tha Maka's heritage tree is a council fig wrapped round a brick shrine, put at 320 years or more from the age of the bricks.",
+      "question_answer": "The old tree to see in Tha Maka is the council tree, a strangler fig (Ficus altissima) that has grown round a brick shrine in Wai Niao beside the Mae Klong river. The Ministry of Culture's register puts it at least 320 years old, reasoning from the shrine's late Ayutthaya bricks.",
+      "question_context": "The tree is a council tree, a strangler fig whose branches and aerial roots have wrapped an old brick shrine, and locals call the place the shrine in the tree hollow. Thailand's Ministry of Culture listed it among its Heritage Trees of the Land in 2017. It measured the girth in arm-spans, more than 27 of them, about 18 metres, which most likely takes in the whole knot of roots and shrine rather than one trunk, and gave a height of about 25 metres. The age comes from the building. Fine Arts Department specialists dated the shrine's red and Mon bricks to the late Ayutthaya period, and the register reasons from that to a tree of at least 320 years. Bricks date a shrine, though, and the fig may have taken hold later. The local story is that river traders stopped here to pray for a safe journey. In 2018 the newspaper Thairath found the shrine busy, most of all before lottery draws. It is a working shrine with no published hours and no entry fee, in Wai Niao, Tha Maka district, south-east of Kanchanaburi town.",
+      "hero_tree_id": "tmk_001",
+      "oldest_tree_id": "tmk_001",
+      "faq": [
+        {"q": "How old is the council tree of Tha Maka?", "a": "The Ministry of Culture's register says at least 320 years, reasoned from the shrine's late Ayutthaya bricks. The fig may have taken hold after the shrine was built, so the figure dates the shrine more surely than the tree."},
+        {"q": "Is it free to visit the shrine in the tree hollow?", "a": "Yes. It is a working shrine with no entry fee and no published hours, so arrive quietly and follow the worshippers' lead."},
+        {"q": "Where is the shrine in the tree hollow?", "a": "In Wai Niao, Tha Maka district, beside the Mae Klong river, south-east of Kanchanaburi town."}
+      ]
+    },
+    "george-town": {
+      "city": "George Town",
+      "country": "Malaysia",
+      "intro": "George Town's best-documented old tree is an African baobab that a police chief planted in 1871. Captain Tristram Speedy had just arrived as Penang's superintendent of police, and the tree still stands on a fenced traffic island where Jalan Residensi meets Jalan Macalister, about 2 kilometres west of the old town. It survived a council plan to cut it down in the 1930s and a slow decline before 2020, and it is one of only three baobabs in Penang.",
+      "meta_description": "The Penang Baobab in George Town, planted in 1871 by police chief Tristram Speedy, on a fenced island at Jalan Residensi and Jalan Macalister.",
+      "question_meta": "George Town's oldest dated tree is the Penang Baobab, planted in 1871, on a traffic island at Jalan Residensi and Jalan Macalister.",
+      "question_answer": "The oldest dated tree in George Town is the Penang Baobab, an African baobab planted in 1871 by Captain Tristram Speedy, then Penang's superintendent of police, which makes it about 150 years old. It stands on a fenced traffic island where Jalan Residensi meets Jalan Macalister.",
+      "question_context": "The planting date comes from the local historian Khoo Salma Nasution, who records it in her book Streets of George Town. Speedy had just arrived in Penang as superintendent of police when the baobab went into the ground. The tree has nearly been lost twice. In the 1930s the municipal council proposed cutting it down as a hazard. People protested, the council backed off, and the tree was propped on wooden crutches instead. Much later it was dying, and by the time The Star reported on it in May 2020 it had been brought back with treatment and was flowering again twice a year, each time for about a week. It is one of only three baobabs in Penang, and trees grown from its seed stand elsewhere, including outside Penang airport. Nobody has published its girth or height. It lives inside a white picket fence with a signboard, on a traffic island about 2 kilometres west of the old town, and is seen free from the pavement, roughly ten minutes by bus or Grab from Komtar.",
+      "hero_tree_id": "gtw_001",
+      "oldest_tree_id": "gtw_001",
+      "faq": [
+        {"q": "How old is the Penang Baobab?", "a": "About 150 years. Khoo Salma Nasution's Streets of George Town records that Captain Tristram Speedy planted it in 1871."},
+        {"q": "Where is the baobab in George Town?", "a": "On a fenced traffic island at the junction of Jalan Residensi and Jalan Macalister, about 2 kilometres west of the old town. It is seen free from the pavement."},
+        {"q": "Does the Penang Baobab flower?", "a": "Yes. The Star reported in May 2020 that after treatment it was flowering again twice a year, each time for about a week."}
+      ]
+    },
+    "horta": {
+      "city": "Horta",
+      "country": "Portugal",
+      "intro": "Horta's protected trees all came from somewhere else. In the garden of Praça da República, three Norfolk Island pines, a species that grows wild on one small Pacific island, stand in flat, ruler-straight tiers. Five minutes' walk away, the Jardim Florêncio Terra keeps a group of dragon trees, monocots without annual rings whose resin dries dark red. The Azores listed both in 1984, in the regional decree that protects the town's notable trees, and neither has a published age.",
+      "meta_description": "Horta's protected trees on Faial: three Norfolk Island pines in Praça da República and the dragon trees of Jardim Florêncio Terra, both free.",
+      "question_meta": "Horta's notable trees are three Norfolk Island pines and a group of dragon trees, protected since 1984; none has a published age.",
+      "question_answer": "Horta's best-known old trees are the three Norfolk Island pines in the garden of Praça da República and the dragon trees of Jardim Florêncio Terra, both protected by a regional decree of 1 September 1984. Nobody has published an age for any of them, so which is oldest is unknown.",
+      "question_context": "Both groups were listed in the annex of the Azores decree of 1 September 1984 that protects Horta's notable trees, and the town's own regulation of 2023 lists them again, with the municipality as owner. Neither document gives a height, a girth, a planting date or a planter. The Norfolk Island pines come from one small island between New Zealand and New Caledonia. They are araucarias, cousins of the monkey puzzle, not true pines. One stands on the east side of the square and two about 35 metres west. The dragon trees are monocots, closer to asparagus and agave than to any oak, and lay down no annual rings, so their age cannot be read from the wood. The region's geodata marks five of them in the garden, inside a patch about 45 metres by 40, while the 2023 regulation lists fewer. That garden also keeps a protected Norfolk Island pine. Both places are free and in the centre of town, a few minutes from the market and the marina, and the garden's opening hours are not published.",
+      "hero_tree_id": "hrt_002",
+      "oldest_tree_id": "hrt_001",
+      "faq": [
+        {"q": "How old are the Norfolk Island pines in Horta?", "a": "Nobody has published an age. The 1984 decree and the 2023 municipal regulation protect them but give no date or size."},
+        {"q": "How many dragon trees are in Jardim Florêncio Terra?", "a": "The region's geodata marks five; the town's 2023 regulation lists fewer. If you count them, tell us."},
+        {"q": "Is it free to see Horta's protected trees?", "a": "Yes. Praça da República is an open public square, and Jardim Florêncio Terra is a free municipal garden whose hours are not published."}
+      ]
+    },
+    "kotor": {
+      "city": "Kotor",
+      "country": "Montenegro",
+      "intro": "Kotor's protected tree stands inside the walled Old Town. A black poplar in Trg od Kina, the small square of a former Franciscan monastery, was declared a natural monument by the municipal assembly in March 2021. The study behind that decision assumes it was planted around 1667, after the great earthquake, which would make it roughly 350 years old, past the 300 years the same study gives as the species' usual span. Its trunk is 5.10 metres round.",
+      "meta_description": "Kotor's black poplar in Trg od Kina, Old Town: a natural monument since 2021, put at roughly 350 years, free to see in the square.",
+      "question_meta": "Kotor's oldest protected tree is the black poplar of Trg od Kina in the Old Town, assumed planted around 1667.",
+      "question_answer": "The oldest protected tree in Kotor is the black poplar in Trg od Kina, Cinema Square, inside the walled Old Town. The study that got it declared a natural monument in 2021 assumes it was planted around 1667, after the great earthquake, so roughly 350 years is a broad figure.",
+      "question_context": "The poplar grew up in the courtyard of the Franciscan monastery of Our Lady of the Angels. The planting date of about 1667 is the protection study's assumption, tied to the rebuilding after the earthquake that struck Kotor that year, and not a written record. The monastery church was rebuilt in 1722, and in the 1950s the complex became the Boka cinema, which is why the square is still called Trg od Kina. The buildings now hold the City Gallery and the library. The same study says black poplars live to about 300 years, which puts this one past the usual span. Its trunk measures 5.10 metres round and 1.62 metres across, it rises 17 metres, and its crown spreads just over 14 metres, lopsided because dry branches have been cut away over the years. The Kotor municipal assembly declared it a natural monument in March 2021. The Old Town is a UNESCO World Heritage site, and the square is open and free, a few minutes on foot from the Sea Gate and the main bus station.",
+      "hero_tree_id": "mne_002",
+      "oldest_tree_id": "mne_002",
+      "faq": [
+        {"q": "How old is the poplar in Kotor Old Town?", "a": "Roughly 350 years, if the protection study's assumption holds that it was planted around 1667 after the great earthquake. No written record dates it."},
+        {"q": "Where is the old tree in Kotor?", "a": "In Trg od Kina, the small square of the former Franciscan monastery inside the walled Old Town, a few minutes on foot from the Sea Gate."},
+        {"q": "Is the Kotor poplar protected?", "a": "Yes. The municipal assembly declared it a natural monument in March 2021."}
+      ]
+    },
+    "bar": {
+      "city": "Bar",
+      "country": "Montenegro",
+      "intro": "Bar's Stara Maslina, the Old Olive of Mirovica, is put at more than 2,000 years, and one team of forestry scientists from Istanbul University estimated about 2,247. Olive Oil Times calls it Montenegro's oldest olive tree. Its trunk is about 10 metres round and burnt on one side, and it stands in its own small fenced park in Stari Bar, about 5 kilometres from Bar. It has been protected since 1963 and was declared a Monument of Nature in 2021.",
+      "meta_description": "Bar's Stara Maslina in Mirovica, Stari Bar: an olive put at over 2,000 years, a Monument of Nature since 2021, in its own small fenced park.",
+      "question_meta": "Bar's oldest tree is the Stara Maslina in Mirovica, an olive estimated at over 2,000 years, about 2,247 by one scientific team.",
+      "question_answer": "The oldest tree in Bar is the Stara Maslina, the Old Olive of Mirovica in Stari Bar. Forestry scientists from Istanbul University put it at about 2,247 years; other counts give 2,248 or more than 2,200, and tradition says over 2,000. Olives cannot be dated by counting rings, so a range is the honest answer.",
+      "question_context": "Estimates of the olive's age cluster above 2,000 years. The Istanbul University team's figure is about 2,247, the Serbian paper Novosti gives 2,248, and Radio Free Europe said in 2024 more than 2,200. Olives hollow out with age, so none of these comes from a full ring count. The trunk is about 10 metres round, and one side is burnt, which local folklore blames on a dropped match. The tree was first protected in 1963, under the old Yugoslavia, and declared a Monument of Nature in January 2021. In 2023 the municipality found parts of the crown drying out. The cause is still argued over, and the Bar Olive Growers Association points to high groundwater and to the concrete ring and walls built round the roots. An expert commission was formed in August 2023 and drainage works followed. The tree stands in Mirovica, Stari Bar, about 5 kilometres from Bar on the road towards Ulcinj, inside a small fenced park. A travel guide gives the entry fee as about 1 euro, and opening hours are not published.",
+      "hero_tree_id": "mtn_001",
+      "oldest_tree_id": "mtn_001",
+      "faq": [
+        {"q": "How old is the Stara Maslina in Bar?", "a": "More than 2,000 years by every estimate, and about 2,247 by a team from Istanbul University. Olives cannot be dated by counting rings, so read it as a range."},
+        {"q": "Do you pay to see the old olive of Mirovica?", "a": "Yes, a small fee. A travel guide gives about 1 euro, and one visitor paid 2. Opening hours are not published, so ask locally."},
+        {"q": "Where is the Stara Maslina?", "a": "In Mirovica, Stari Bar, about 5 kilometres from Bar on the road towards Ulcinj, inside its own small fenced park."}
+      ]
+    },
+    "milo": {
+      "city": "Milo",
+      "country": "Italy",
+      "intro": "In Fornazzo, Milo's only outlying village on the eastern slope of Etna, a Mediterranean hackberry stands in the village square with its trunk split right through and chains holding its main limbs together. Locally it is a minicucco. It is 18 metres tall and about four metres round by a 2025 survey that rated its health good, and the region lists it for its historic, cultural and religious value. Nobody has published its age.",
+      "meta_description": "Fornazzo's chained hackberry in Milo, on Etna: a split-trunk minicucco 18 metres tall in the village square, free to see beside the SP 59.",
+      "question_meta": "Milo's notable tree is the minicucco of Fornazzo, a split-trunk hackberry held by chains; nobody has published its age.",
+      "question_answer": "The best-known old tree in Milo is the minicucco of Fornazzo, a Mediterranean hackberry in the village square beside the SP 59, 18 metres tall with a split trunk held together by chains. Nobody has published its age, so how old it is remains open.",
+      "question_context": "Minicucco is the Etna name for the hackberry, Celtis australis. The Sicilian register measures this one at 3.8 metres round, and a citizen survey for the RAMI tree register found 3.96 metres in 2023 and 4.05 metres in 2025, with its health rated good. The trunk is split right through, and chains went on in past years to stop the main limbs pulling apart. The crown is about 12 metres wide. A resident told the survey that until about 1943 a carpenter's workshop stood beside the tree, and that the ground at its base then lay at least two metres lower than it does now. The region lists the tree for its historic, cultural and religious value, at what the register calls Piazza Sacro Cuore. In winter the bare crown shows the split trunk and the chains. Fornazzo lies on the eastern slope of the volcano, about 15 kilometres by road from Taormina, and the square is open at all times. Milo is also a starting point for the footpath to the Ilice di Carrinu, a holm oak estimated at roughly 700 years.",
+      "hero_tree_id": "fzz_001",
+      "oldest_tree_id": "fzz_001",
+      "faq": [
+        {"q": "How old is the Fornazzo hackberry?", "a": "Nobody has published an age for it. If you know when it was planted, tell us."},
+        {"q": "Why does the Fornazzo tree have chains?", "a": "Its trunk is split right through, and chains were fitted in past years to hold the main limbs together."},
+        {"q": "Is it free to see?", "a": "Yes. It stands in the open village square at the centre of Fornazzo, beside the provincial road SP 59."}
+      ]
+    },
+    "zafferana-etnea": {
+      "city": "Zafferana Etnea",
+      "country": "Italy",
+      "intro": "Zafferana Etnea's great tree is the Ilice di Carrinu, a holm oak at about 950 metres on Etna's eastern slope that a lava flow approached in the winter of 1950 and stopped about 100 metres short of. The Sicilian register measures its trunk at 4.9 metres round and its height at 18 metres, and local writers call it the biggest holm oak on Etna. Its age, roughly 700 years, is an estimate without a method. It is reached only on foot.",
+      "meta_description": "The Ilice di Carrinu above Zafferana Etnea: a holm oak put at about 700 years that a 1950 lava flow stopped short of, reached on foot.",
+      "question_meta": "Zafferana Etnea's oldest tree is the Ilice di Carrinu, a holm oak estimated at roughly 700 years, on Etna's eastern slope.",
+      "question_answer": "The oldest tree near Zafferana Etnea is the Ilice di Carrinu, a holm oak at about 950 metres on Etna's eastern slope. Its age is usually given as roughly 700 years, an estimate without a published method, so anywhere between 500 and 800 is the honest reading.",
+      "question_context": "The oak has two names, the Ilice di Carrinu after Carlino, a former owner of the land, and the Ilice du Pantanu after a marsh nearby that has since vanished. Between December 1950 and January 1951 Sicilian newspapers followed an arm of lava heading for it, which stopped about 100 metres short. The Sicilian register measures the trunk at 4.9 metres round and the tree at 18 metres tall. Etnanatura describes it as the last of a holm oak forest that once linked the mountain's eastern and northern slopes, and in 1982 the State Forestry Corps, listing 22,000 Italian trees of interest, put it among 150 of exceptional value. The usual age of about 700 years has no method behind it. The tree stands in Etna Park and is reached on foot by a signed path that starts 350 metres along via Spoto at Caselle, above Zafferana, about 3 to 4 kilometres out and back. One wooden gate has to be climbed over, and the last stretch past a ruined shelter is fainter. Via Scuto and the Milo side are other ways in.",
+      "hero_tree_id": "zaf_001",
+      "oldest_tree_id": "zaf_001",
+      "faq": [
+        {"q": "How old is the Ilice di Carrinu?", "a": "Roughly 700 years by the usual estimate, which comes without a method, so read it as 500 to 800."},
+        {"q": "How do you get to the Ilice di Carrinu?", "a": "On foot. A signed path starts 350 metres along via Spoto at Caselle, above Zafferana; allow about 1 hour 40 for 3 to 4 kilometres out and back."},
+        {"q": "Did lava reach the Ilice di Carrinu?", "a": "Nearly. In the winter of 1950 to 1951 a lava flow stopped about 100 metres short of it."}
+      ]
+    },
+    "kastela": {
+      "city": "Kaštela",
+      "country": "Croatia",
+      "intro": "Kaštela, the string of seven towns between Split and Trogir, protects a downy oak beside one of its oldest churches. In Kaštel Gomilica the oak grows at the side of the Romanesque church of St Cosmas and Damian, built between 1138 and 1160 over the remains of a late-antique basilica. Croatia has protected it as a natural monument since 1996, and the tourist board singles it out for its beauty and its size, though nobody has published a measurement or an age.",
+      "meta_description": "Kaštela's protected downy oak beside the 12th-century church of St Cosmas and Damian in Kaštel Gomilica, a natural monument since 1996.",
+      "question_meta": "Kaštela's protected tree is the downy oak by the church of St Cosmas and Damian in Kaštel Gomilica; its age is not recorded.",
+      "question_answer": "The protected tree to see in Kaštela is the downy oak beside the Romanesque church of St Cosmas and Damian in Kaštel Gomilica, a natural monument since 1996. Nobody has published its age, height or girth.",
+      "question_context": "The oak is entered in Croatia's register simply as the oak in Kaštel Gomilica, protected as a natural monument since 1996. Kaštela's tourist board singles it out for its beauty and its size and gives a number for neither. The church beside it is far better documented. St Cosmas and Damian was built between 1138 and 1160 over the remains of a late-antique basilica, in the Romanesque style. How long the oak has kept the church company, nobody we can find has written down. It is alive. A naturalist photographed it in November 2024 and logged it a few metres from the register's own point, which settles which tree the town means and confirms it is a downy oak. Kaštel Gomilica is one of the seven towns of Kaštela on the bay between Split and Trogir, on the local bus line that links the two, so the oak is an easy stop along the coast. No access terms are published, and the tree is seen free beside the church. If you visit, a photograph and a rough idea of its size would be welcome.",
+      "hero_tree_id": "cdl_002",
+      "oldest_tree_id": "cdl_002",
+      "faq": [
+        {"q": "Where is the old oak in Kaštela?", "a": "In Kaštel Gomilica, beside the Romanesque church of St Cosmas and Damian, built between 1138 and 1160."},
+        {"q": "How old is the Kaštel Gomilica oak?", "a": "Nobody has published an age, height or girth. It has been protected as a natural monument since 1996."},
+        {"q": "How do you get to Kaštel Gomilica?", "a": "It is on the local bus line between Split and Trogir, one of the seven towns of Kaštela along the bay."}
+      ]
+    }
+  }
+}

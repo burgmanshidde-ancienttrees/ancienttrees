@@ -1,0 +1,77 @@
+{
+  "city": "Milo",
+  "country": "Italy",
+  "intro": "In Fornazzo, Milo's only outlying village on the eastern slope of Etna, a Mediterranean hackberry stands in the village square with its trunk split right through and chains holding its main limbs together. Locally it is a minicucco. It is 18 metres tall and about four metres round by a 2025 survey that rated its health good, and the region lists it for its historic, cultural and religious value. Nobody has published its age.",
+  "meta_description": "Fornazzo's chained hackberry in Milo, on Etna: a split-trunk minicucco 18 metres tall in the village square, free to see beside the SP 59.",
+  "question_meta": "Milo's notable tree is the minicucco of Fornazzo, a split-trunk hackberry held by chains; nobody has published its age.",
+  "question_answer": "The best-known old tree in Milo is the minicucco of Fornazzo, a Mediterranean hackberry in the village square beside the SP 59, 18 metres tall with a split trunk held together by chains. Nobody has published its age, so how old it is remains open.",
+  "question_context": "Minicucco is the Etna name for the hackberry, Celtis australis. The Sicilian register measures this one at 3.8 metres round, and a citizen survey for the RAMI tree register found 3.96 metres in 2023 and 4.05 metres in 2025, with its health rated good. The trunk is split right through, and chains went on in past years to stop the main limbs pulling apart. The crown is about 12 metres wide. A resident told the survey that until about 1943 a carpenter's workshop stood beside the tree, and that the ground at its base then lay at least two metres lower than it does now. The region lists the tree for its historic, cultural and religious value, at what the register calls Piazza Sacro Cuore. In winter the bare crown shows the split trunk and the chains. Fornazzo lies on the eastern slope of the volcano, about 15 kilometres by road from Taormina, and the square is open at all times. Milo is also a starting point for the footpath to the Ilice di Carrinu, a holm oak estimated at roughly 700 years.",
+  "hero_tree_id": "fzz_001",
+  "oldest_tree_id": "fzz_001",
+  "faq": [
+    {
+      "q": "How old is the Fornazzo hackberry?",
+      "a": "Nobody has published an age for it. If you know when it was planted, tell us."
+    },
+    {
+      "q": "Why does the Fornazzo tree have chains?",
+      "a": "Its trunk is split right through, and chains were fitted in past years to hold the main limbs together."
+    },
+    {
+      "q": "Is it free to see?",
+      "a": "Yes. It stands in the open village square at the centre of Fornazzo, beside the provincial road SP 59."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "fzz_001",
+      "name": "Minicucco di Fornazzo",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "not documented",
+      "girth_cm": 405,
+      "height_m": 18,
+      "location": {
+        "address": "Piazza between Via Mongibello and Via Abate Meli (Piazza Sacro Cuore, SP 59), Fornazzo, Milo",
+        "latitude": 37.736935,
+        "longitude": 15.112207,
+        "neighbourhood": "Fornazzo, Milo, eastern slope of Mount Etna"
+      },
+      "location_site": {
+        "name": "Piazza at the centre of Fornazzo",
+        "radius_m": 50
+      },
+      "story": "The trunk of Fornazzo's hackberry is split right through, and chains hold its main limbs together. They went on in past years to stop the tree breaking apart, and it still stands in the square at the centre of the village, 18 metres tall with a crown about 12 metres wide.\n\nOn Etna it is a minicucco, the local name for the species. The measurements differ a little. The Sicilian register gives 3.8 metres round, and a citizen survey for the RAMI tree register found 3.96 metres in 2023 and 4.05 metres in 2025, with its health rated good. A resident told that survey that until about 1943 a carpenter's workshop stood beside the tree, and that the ground at its base then lay at least two metres lower than it does now. The region lists it for its historic, cultural and religious value, at what the register calls Piazza Sacro Cuore, on the provincial road SP 59.\n\nIn summer it shades the square. In winter, bare, it shows its whole frame, split trunk and chains included.\n\nNobody has published an age for it. If you know when it was planted, or what the village remembers, tell us.\n\nFornazzo is Milo's only outlying village, on the eastern slope of the volcano, about 15 km by road from Taormina. Milo is also one of the starting points for the footpath to the Ilice di Carrinu, a holm oak estimated at roughly 700 years.",
+      "verified_sources": [
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+        "https://www.etnanatura.it/paginasentiero.php?nome=Minicucco_di_Fornazzo",
+        "https://ilregistrodeglialberi.it/15744-bagolaro-di-fornazzo-bagolaro-milo-catania-sicilia",
+        "https://www.paesietneioggi.it/attualita/inaugurazione-degli-alberi-monumentali-presenti-sul-territorio-di-milo-e-dintorni/"
+      ],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF) / Regione Siciliana elenco, sheet 05/F214/CT/19, D.M. n. 5450 of 19/12/2017",
+        "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+      },
+      "access": "Free, always. Stands in an open village square at the centre of Fornazzo beside the provincial road SP 59; no entry. Etnanatura rates the visit 'easy', 10 minutes.",
+      "transport": "Fornazzo is the only frazione of Milo, about 15 km from Taormina by road (roughly 30 to 40 minutes by car); local bus from Giarre or Catania is sparse, check AST/Etna Trasporti before relying on it. Labelled day trip.",
+      "best_time": {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "December to February, when the bare crown shows the split trunk and its chains"
+      },
+      "how_to_recognise": "You can recognise it by the trunk, split right through, with chains holding its main limbs together. It is the one big tree in the village square at the centre of Fornazzo, beside the SP 59.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

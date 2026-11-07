@@ -1,0 +1,67 @@
+{
+  "city": "Sukhothai",
+  "country": "Thailand",
+  "intro": "Sukhothai's heritage tree is a mango, and it is taller than the Buddha it stands beside. In the corner by the walled hall of Wat Si Chum, which holds the 15 metre seated Phra Achana, a mango 20 metres tall and six metres round grows in the north zone of Sukhothai Historical Park. Thailand's Ministry of Culture listed it in 2017 and gives its age as about 200 years, a figure with no ring count behind it.",
+  "meta_description": "The mango of Wat Si Chum in Sukhothai Historical Park: 20 metres tall beside a 15 metre Buddha, about 200 years by the register.",
+  "question_meta": "Sukhothai's heritage tree is the mango at Wat Si Chum, 20 metres tall and about 200 years old by the Ministry of Culture.",
+  "question_answer": "The best-known old tree in Sukhothai is the mango beside the mandapa of Wat Si Chum, in the north zone of Sukhothai Historical Park. The Ministry of Culture listed it in 2017 at 20 metres tall and six metres round, and gives its age as about 200 years.",
+  "question_context": "Wat Si Chum's walled hall, the mandapa, holds Phra Achana, a seated Buddha 15 metres tall, and the mango grows in the corner beside it. Thailand's Ministry of Culture added it to its Heritage Trees of the Land in 2017 with a height of 20 metres and a girth of six, a great deal of trunk for a fruit tree. A sign at its foot says 6.5 metres, without saying at what height that was measured. The register's age of about 200 years has no ring count behind it, so somewhere between 150 and 250 is the safer reading. Figs and crape myrtles grow close by, and the sign at the mango's foot is the surest way to pick the right trunk. Wat Si Chum lies about 2.5 kilometres north of the old city gate, in the north zone of the park, a UNESCO World Heritage site open daily from early morning to early evening. Each zone has its own ticket, and foreign visitors have been charged 100 baht, but check at the gate. New Sukhothai is about 12 kilometres east, with songthaews, tuk-tuks and bicycles for hire.",
+  "hero_tree_id": "skt_001",
+  "oldest_tree_id": "skt_001",
+  "faq": [
+    {
+      "q": "How old is the mango tree at Wat Si Chum?",
+      "a": "About 200 years by the Ministry of Culture's register, which gives no method, so read it as 150 to 250."
+    },
+    {
+      "q": "How big is the Wat Si Chum mango?",
+      "a": "The register gives 20 metres tall and six metres round; a sign at the tree says 6.5 metres round."
+    },
+    {
+      "q": "Do you need a ticket to see it?",
+      "a": "Yes. It is in the north zone of Sukhothai Historical Park, which has its own ticket. Foreign visitors have been charged 100 baht; check at the gate."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "skt_001",
+      "name": "Mango Tree of Wat Si Chum",
+      "species": "Mango (Mangifera indica)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 600,
+      "height_m": 20,
+      "location": {
+        "address": "Wat Si Chum, Sukhothai Historical Park (north zone), Mueang Kao, Mueang Sukhothai District",
+        "latitude": 17.02697,
+        "longitude": 99.69332,
+        "neighbourhood": "Beside the Phra Achana mandapa, Wat Si Chum"
+      },
+      "story": "The Buddha next door is 15 metres tall. The mango beside his hall is 20.\n\nIt grows in the corner by the mandapa of Wat Si Chum, the walled hall in Sukhothai's old city that holds Phra Achana, the great seated Buddha. In 2017 Thailand's Ministry of Culture listed the mango as a heritage tree of the land, with a height of 20 metres and a girth of six, which is a great deal of trunk for a fruit tree. A sign at the tree says 6.5 metres, though nobody can tell you at what height that was measured.\n\nThe register puts its age at about 200 years. That is the register's figure, with no ring count behind it, so read it as somewhere between 150 and 250. If you know where the number came from, or have an older picture of this corner, tell us.\n\nFigs and crape myrtles grow close by, so look for the sign at its foot before you decide which trunk is the mango.\n\nWat Si Chum is in the north zone of Sukhothai Historical Park, a World Heritage site open daily from about 6:00 to 18:00, about 2.5 km north of the old city gate. Each zone has its own ticket. Foreign visitors have been charged 100 baht, but check the price at the gate. Dress modestly, as at any Buddhist site. New Sukhothai is about 12 km east, with songthaews, tuk-tuks and bicycles for hire.",
+      "verified_sources": [
+        "https://www.inaturalist.org/observations/185257170 (Mangifera indica, GPS accuracy 4 m, 2023-09-26; note says a sign at the tree gives 6.5 m circumference)",
+        "https://www.inaturalist.org/observations/230926532 (Indian mango, 'A huge one', 2024-07-22)",
+        "https://www.inaturalist.org/observations/30242916 (Mangifera indica, GPS 17 m, 2019-07-30)",
+        "Ministry of Culture Heritage Trees of the Land 2017 list, entry 'Mamuang Wat Si Chum' (data/registers/thailand-rukkha.json, 2017-38)"
+      ],
+      "official_register": {
+        "name": "Rukkha Moradok khong Phaendin (Heritage Trees of the Land), Department of Cultural Promotion, Ministry of Culture, 2017 list",
+        "url": "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9"
+      },
+      "access": "Inside Sukhothai Historical Park (World Heritage). Open daily about 06:00 to 18:00; separate ticket per zone, 100 baht for foreigners per The Longest Way Home blog (price unconfirmed on an official page, Thais pay less); check at the gate. No dress code stated for the grounds; modest dress usual at a Buddhist site.",
+      "paid_entry": true,
+      "transport": "About 2.5 km north of the old city gate and the park's central zone; songthaew, tuk-tuk or bicycle hire from New Sukhothai (the town is about 12 km east of the park).",
+      "how_to_recognise": "You can recognise it by the sign at its foot giving 6.5 metres round, and as the mango among figs and crape myrtles. It stands in the corner beside the walled mandapa of Wat Si Chum, which holds the great seated Buddha.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

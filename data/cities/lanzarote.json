@@ -1,0 +1,65 @@
+{
+  "city": "Lanzarote",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Yaiza's church has an ombú at its door, a South American species that seems to have been brought to Lanzarote by an islander returning from the Americas. The Biosphere Reserve's 2025 preliminary inventory of singular trees puts it at more than 120 years old and six metres tall, and it has been in photographs and drawings of the church since at least the early twentieth century. It stands in the public Plaza de los Remedios, free to visit at any hour.",
+  "meta_description": "The ombú at Yaiza church on Lanzarote: over 120 years old, brought from South America, and in pictures of the church for a century.",
+  "question_meta": "The ombú at Yaiza's church is over 120 years old by Lanzarote's 2025 inventory of singular trees.",
+  "question_answer": "One of Lanzarote's old trees is the ombú at the door of the Iglesia de Nuestra Señora de los Remedios in Yaiza, put at more than 120 years old by the Biosphere Reserve's 2025 preliminary inventory of singular trees. Which tree is the island's oldest is not settled; Diario de Lanzarote's report on that inventory also names a tamarisk on Alegranza and a school's araucaria as candidates.",
+  "question_context": "The ombú's age comes from the Lanzarote Biosphere Reserve's preliminary inventory of singular trees, presented in November 2025, which counts 86 singular trees among 166 elements across the island. It is a preliminary list rather than an official catalogue, and the figure of more than 120 years is an estimate, though old photographs and drawings show the tree at the church door since at least the early twentieth century. The tree is six metres tall, small for a famous tree, and its interest is its story. It is a South American species that seems to have arrived with an islander back from the Americas, many neighbours remember the parish priest resting in its shade, and it was left out when the church was protected as a monument in 1986. It stands in the public Plaza de los Remedios, open at any hour, while the church keeps parish hours. Buses between Arrecife and Playa Blanca pass through Yaiza, and the plaza is a few minutes on foot from the main street.",
+  "hero_tree_id": "lnz_001",
+  "oldest_tree_id": "lnz_001",
+  "faq": [
+    {
+      "q": "What is the tree in front of Yaiza church?",
+      "a": "An ombú (Phytolacca dioica), a South American species and Argentina's national tree, at the door of the Iglesia de Nuestra Señora de los Remedios. Lanzarote's 2025 inventory of singular trees puts it at more than 120 years old."
+    },
+    {
+      "q": "Is the Yaiza ombú the oldest tree on Lanzarote?",
+      "a": "Not as far as anyone has shown. Diario de Lanzarote's report on the 2025 inventory names a tamarisk on Alegranza and a school's araucaria as other candidates, without settling which is oldest."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lnz_001",
+      "name": "Ombu of Yaiza church",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "age_basis": "source",
+      "height_m": 6,
+      "location": {
+        "address": "Plaza de los Remedios, beside the door of the Iglesia de Nuestra Senora de los Remedios, Yaiza",
+        "latitude": 28.95232,
+        "longitude": -13.76523,
+        "neighbourhood": "Yaiza village centre"
+      },
+      "location_site": {
+        "name": "Plaza de los Remedios, Yaiza",
+        "radius_m": 30
+      },
+      "story": "For more than a century, nearly every picture of Yaiza's church has had the same tree in it. It is an ombú, a South American species, growing at the church door on the Plaza de los Remedios.\n\nBiosfera Digital calls it perhaps the most characteristic element of the facade, so much a part of the front that it appears in every photograph and illustration of the church since at least the early twentieth century. Yet when the building was protected as a monument in 1986, the tree was left out of the protection.\n\nNobody has recorded who planted it. The Lanzarote Biosphere Reserve's preliminary inventory of singular trees, presented in November 2025, says it seems to have been brought by an indiano, one of the islanders who went to South America and came back, and puts it at more than 120 years old. It is about six metres tall, a village tree rather than a giant, and many neighbours remember the parish priest, Andrés Hernández Mauricio, resting under its branches.\n\nThe ombú is native to Brazil, Uruguay, Peru and north-east Argentina, and it is Argentina's national tree. In Spanish it is also called bellasombra, beautiful shade. It is not the only one in the municipality. Biosfera Digital mentions another large ombú that has stood for decades at La Vegueta, also in Yaiza.\n\nThe building it shades is older than the tree. It began as a hermitage founded in 1699, and the present church dates from 1728.",
+      "verified_sources": [
+        "https://www.diariodelanzarote.com/noticia/%C3%A1rboles-singulares-unos-de-los-nuestros",
+        "https://www.biosferadigital.com/articulo/sin-categoria/remedios-ombu-yaisa-yaiza/20190906093420087268.html",
+        "https://www.inaturalist.org/observations/264946030",
+        "https://commons.wikimedia.org/wiki/File:Iglesia_Nuestra_Se%C3%B1ora_de_los_Remedios_%E2%80%93_Yaiza_%E2%80%93_01.jpg",
+        "https://www.flickr.com/photos/cesarjpalacios/albums/72157677057432846/ (photo catalogue entry LZYAPD01 Ombu de Yaiza, Catalogo Arboles Singulares Canarias 2016, all rights reserved, used only as proof the tree was catalogued)"
+      ],
+      "access": "Free, always open: the tree stands in the public plaza at the church door in Yaiza village. The church itself keeps parish hours.",
+      "transport": "Yaiza has bus stops in the village (Arrecife and Playa Blanca lines pass through); the plaza is a few minutes on foot from the main street. No exact timetable verified.",
+      "how_to_recognise": "You can recognise it by its many stems and buttress roots arching over the church doorway, at the west corner of the facade. It stands at the door of the Iglesia de Nuestra Señora de los Remedios on the Plaza de los Remedios, Yaiza.",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_Nuestra_Se%C3%B1ora_de_los_Remedios_%E2%80%93_Yaiza_%E2%80%93_01.jpg",
+        "license": "CC0",
+        "attribution": "Maesi64",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Maesi64",
+        "status": "found_needs_check"
+      },
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "WHICH TRUNK: the single ombu at the church door, west corner of the south-facing facade (seen in the 2021 Commons photo as the multi-stemmed tree with buttress roots arching over the doorway; on the same facade a palm stands left and a second, different tree on the right of the plaza). Photo is CC0 by Maesi64, 2021-11-10, the tree fills the left half of the frame; needs the usual pixel check for the card crop. Another photo by Lmbuga 2011-08-28 (CC BY-SA 3.0, file Church_of_the_town_of_Yaiza_..._Los_Remedios_square_Y36.jpg) shows it in dense leaf from the front. ALIVE: iNaturalist observation 264946030, 2025-03-11, Phytolacca dioica, Yaiza, GPS 28.952299,-13.765421 (positional accuracy 27 m, user's photo all rights reserved so not usable), and Diario de Lanzarote 2026-01-28 describes it in the present tense beside the church door. SOURCES: (1) Diario de Lanzarote 2026-01-28 on the Reserva de la Biosfera de Lanzarote preliminary inventory of singular trees (166 elements, 86 singular trees, authors Rafael Paredes, Famara Guadalupe, Gara Goni, presented November 2025): 'El arbol de la iglesia de Yaiza': an ombu 6 m tall next to the church door, more than 120 years old, a species typical of Argentina that seems to have been brought by an indiano; many neighbours remember the parish priest Andres Hernandez resting under its branches. (2) Biosfera Digital 2019-09-06 (Los Remedios, el ombu, Yaisa y Yaiza): maybe the most characteristic element of the facade of the ermita, so much a part of the frontispiece it appears in every photograph and illustration of the church since at least the early 20th century; the ombu is not recorded as part of the 1986 Monumento protection of the building; Phytolacca dioica, also called bellasombra; the species reached Lanzarote through the comings and goings of islanders to South America; the priest Andres Hernandez Mauricio used to rest at the ombu beside the church; another ombu of magnificent size stands for decades in La Vegueta (Yaiza). Species note: ombu is native to Brazil, Uruguay, Peru and north-east Argentina per Biosfera Digital, Argentina's national tree. Church: founded 1699 as a hermitage, present building 1728, Monumento 1986. AGE: 120+ years by the inventory is the only figure, plus photographic presence since early 1900s (so at least about 110 years); recorded as over a century, 100 to 150, not sharpened. HEIGHT 6 m per Diario (inventory), not measured by us. The tree is registered only in a preliminary inventory, not an official catalogue (the Flickr album of the 2016 Canary Islands singular-tree catalogue lists it as LZYAPD01, evidence it was catalogued then too, but no coordinates or text are public). PIN: church OSM way 255905568 centroid 28.95239,-13.76504; Commons camera geotag 28.952343,-13.765332; iNat 28.952299,-13.765421. Pin set at the west corner of the facade by reading the photo; kept approximate with location_site because no GPS was taken at the trunk. MODEST TREE: young for an ancient-trees site; its value is a South American species planted by an emigrant, a village landmark and a priest's resting place. Never use the claim 'oldest tree of Lanzarote' (Diario's phrasing was ambiguous; the same article says the Alegranza tamarisk and the school araucaria are also candidates)."
+    }
+  ]
+}

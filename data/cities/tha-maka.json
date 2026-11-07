@@ -1,0 +1,68 @@
+{
+  "city": "Tha Maka",
+  "country": "Thailand",
+  "intro": "In Tha Maka, south-east of Kanchanaburi, a strangler fig has closed so tightly around an old brick shrine that people call the place the shrine in the tree hollow. Thailand's Ministry of Culture listed it as a heritage tree in 2017, measured at more than 27 arm-spans round, about 18 metres, and about 25 metres tall. Specialists dated the shrine's bricks to the late Ayutthaya period, which is where the register's age of at least 320 years comes from.",
+  "meta_description": "The council tree of Tha Maka, Kanchanaburi: a strangler fig wrapped round a late Ayutthaya brick shrine beside the Mae Klong river.",
+  "question_meta": "Tha Maka's heritage tree is a council fig wrapped round a brick shrine, put at 320 years or more from the age of the bricks.",
+  "question_answer": "The old tree to see in Tha Maka is the council tree, a strangler fig (Ficus altissima) that has grown round a brick shrine in Wai Niao beside the Mae Klong river. The Ministry of Culture's register puts it at least 320 years old, reasoning from the shrine's late Ayutthaya bricks.",
+  "question_context": "The tree is a council tree, a strangler fig whose branches and aerial roots have wrapped an old brick shrine, and locals call the place the shrine in the tree hollow. Thailand's Ministry of Culture listed it among its Heritage Trees of the Land in 2017. It measured the girth in arm-spans, more than 27 of them, about 18 metres, which most likely takes in the whole knot of roots and shrine rather than one trunk, and gave a height of about 25 metres. The age comes from the building. Fine Arts Department specialists dated the shrine's red and Mon bricks to the late Ayutthaya period, and the register reasons from that to a tree of at least 320 years. Bricks date a shrine, though, and the fig may have taken hold later. The local story is that river traders stopped here to pray for a safe journey. In 2018 the newspaper Thairath found the shrine busy, most of all before lottery draws. It is a working shrine with no published hours and no entry fee, in Wai Niao, Tha Maka district, south-east of Kanchanaburi town.",
+  "hero_tree_id": "tmk_001",
+  "oldest_tree_id": "tmk_001",
+  "faq": [
+    {
+      "q": "How old is the council tree of Tha Maka?",
+      "a": "The Ministry of Culture's register says at least 320 years, reasoned from the shrine's late Ayutthaya bricks. The fig may have taken hold after the shrine was built, so the figure dates the shrine more surely than the tree."
+    },
+    {
+      "q": "Is it free to visit the shrine in the tree hollow?",
+      "a": "Yes. It is a working shrine with no entry fee and no published hours, so arrive quietly and follow the worshippers' lead."
+    },
+    {
+      "q": "Where is the shrine in the tree hollow?",
+      "a": "In Wai Niao, Tha Maka district, beside the Mae Klong river, south-east of Kanchanaburi town."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "tmk_001",
+      "name": "Council tree of the Shrine in the Tree Hollow, Tha Maka",
+      "species": "Council Tree (Ficus altissima)",
+      "age_estimate": "at least 320 years",
+      "age_min": 320,
+      "age_max": 400,
+      "girth_cm": 1800,
+      "height_m": 25,
+      "location": {
+        "address": "Moo 1, Tambon Wai Niao, Tha Maka District, Kanchanaburi, beside the Mae Klong river",
+        "latitude": 13.920578,
+        "longitude": 99.760672,
+        "neighbourhood": "Wai Niao, Tha Maka"
+      },
+      "location_site": {
+        "name": "Shrine in the tree hollow, Wai Niao",
+        "radius_m": 50
+      },
+      "story": "This fig has closed so tightly around a brick shrine that people in Tha Maka call the place the shrine in the tree hollow.\n\nIt is a council tree, a strangler fig, and its branches and aerial roots wrap the old building beside the Mae Klong river in Wai Niao. Thailand's Ministry of Culture listed it as a heritage tree of the land in 2017 and measured it in arm-spans, more than 27 of them, about 18 metres round. That figure most likely takes in the whole knot of roots and shrine rather than one trunk. The register gives a height of about 25 metres.\n\nThe age comes from the bricks. Fine Arts Department specialists dated the shrine's red and Mon bricks to the late Ayutthaya period, and the register reasons from that to a tree at least 320 years old. Bricks date a shrine, though, and the fig may have taken hold later.\n\nRiver traders, the local story goes, stopped here to pray for a safe journey. In 2018 the newspaper Thairath found the shrine busy with worshippers, busiest before lottery draws. That is the most recent written account of the place, so if you go, tell us how the tree looks now and whether the pin lands on the shrine.\n\nEntry is free and the shrine is a working one with no published hours, so arrive quietly and follow the worshippers' lead. Tha Maka lies south-east of Kanchanaburi town and makes a trip of its own.",
+      "verified_sources": [
+        "Ministry of Culture Rukkha Moradok khong Phaendin 2017 list, register id 2017-27 (data/registers/thailand-rukkha.json, CC BY)",
+        "https://www.thairath.co.th/content/1203513 (2018-02-15, shrine of the tree hollow, Moo 1 Wai Niao, Tha Maka, busy with worshippers)"
+      ],
+      "official_register": {
+        "name": "Ministry of Culture, Department of Cultural Promotion: Rukkha Moradok khong Phaendin (heritage trees of the land), 2017, no. 27, 'Krang Sanchao'",
+        "url": "https://data.go.th/dataset/http-tree-culture-go-th-tree2561-1"
+      },
+      "access": "Free; a working shrine open to worshippers (Thairath 2018 reports steady visitors, busiest before lottery draws). Hours not published; shrine etiquette applies. Not verified on site.",
+      "transport": "Distance and public transport not verified (Tha Maka District, south-east of Kanchanaburi town). Treat as its own place (Tha Maka), not Kanchanaburi town.",
+      "how_to_recognise": "You can recognise it by the old brick shrine its roots and branches have wrapped, the shrine in the tree hollow that locals pray at. It stands in Wai Niao, Tha Maka, beside the Mae Klong river.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "city": "George Town",
+  "country": "Malaysia",
+  "intro": "George Town's best-documented old tree is an African baobab that a police chief planted in 1871. Captain Tristram Speedy had just arrived as Penang's superintendent of police, and the tree still stands on a fenced traffic island where Jalan Residensi meets Jalan Macalister, about 2 kilometres west of the old town. It survived a council plan to cut it down in the 1930s and a slow decline before 2020, and it is one of only three baobabs in Penang.",
+  "meta_description": "The Penang Baobab in George Town, planted in 1871 by police chief Tristram Speedy, on a fenced island at Jalan Residensi and Jalan Macalister.",
+  "question_meta": "George Town's oldest dated tree is the Penang Baobab, planted in 1871, on a traffic island at Jalan Residensi and Jalan Macalister.",
+  "question_answer": "The oldest dated tree in George Town is the Penang Baobab, an African baobab planted in 1871 by Captain Tristram Speedy, then Penang's superintendent of police, which makes it about 150 years old. It stands on a fenced traffic island where Jalan Residensi meets Jalan Macalister.",
+  "question_context": "The planting date comes from the local historian Khoo Salma Nasution, who records it in her book Streets of George Town. Speedy had just arrived in Penang as superintendent of police when the baobab went into the ground. The tree has nearly been lost twice. In the 1930s the municipal council proposed cutting it down as a hazard. People protested, the council backed off, and the tree was propped on wooden crutches instead. Much later it was dying, and by the time The Star reported on it in May 2020 it had been brought back with treatment and was flowering again twice a year, each time for about a week. It is one of only three baobabs in Penang, and trees grown from its seed stand elsewhere, including outside Penang airport. Nobody has published its girth or height. It lives inside a white picket fence with a signboard, on a traffic island about 2 kilometres west of the old town, and is seen free from the pavement, roughly ten minutes by bus or Grab from Komtar.",
+  "hero_tree_id": "gtw_001",
+  "oldest_tree_id": "gtw_001",
+  "faq": [
+    {
+      "q": "How old is the Penang Baobab?",
+      "a": "About 150 years. Khoo Salma Nasution's Streets of George Town records that Captain Tristram Speedy planted it in 1871."
+    },
+    {
+      "q": "Where is the baobab in George Town?",
+      "a": "On a fenced traffic island at the junction of Jalan Residensi and Jalan Macalister, about 2 kilometres west of the old town. It is seen free from the pavement."
+    },
+    {
+      "q": "Does the Penang Baobab flower?",
+      "a": "Yes. The Star reported in May 2020 that after treatment it was flowering again twice a year, each time for about a week."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "gtw_001",
+      "name": "The Penang Baobab",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 155,
+      "location": {
+        "address": "Traffic island between Jalan Residensi (Residency Road) and Jalan Macalister, George Town",
+        "latitude": 5.422,
+        "longitude": 100.31229,
+        "neighbourhood": "Macalister Road"
+      },
+      "story": "A police chief planted this African baobab in George Town in 1871. Captain Tristram Speedy had just arrived as Penang's superintendent of police, and the tree he put in the ground is still standing, which makes it about 150 years old. The local historian Khoo Salma Nasution records the planting in her book Streets of George Town.\n\nIt almost did not see its seventieth birthday. In the 1930s the municipal council proposed cutting it down as a hazard. People protested, the council backed off, and the tree was propped up on wooden crutches instead.\n\nIt had a second close call much later. By the time The Star reported on it in May 2020, the baobab had been dying and was brought back with treatment. The paper said it was flowering again, twice a year, each time for about a week.\n\nIt is one of only three baobabs in Penang, and trees grown from its seed now stand elsewhere, including outside Penang airport. Nobody has published its girth or height. If you know them, tell us.\n\nThe tree lives on a traffic island at the junction of Jalan Residensi and Jalan Macalister, about 2 kilometres west of the old town, inside its own white picket fence with a signboard. Look from the pavement. It is free, and roughly ten minutes by bus or Grab from Komtar.",
+      "verified_sources": [
+        "https://www.penang-traveltips.com/baobab-tree.htm",
+        "https://adriancheah.com/great-penang/culture-and-heritage/261-the-upside-down-tree-penang-s-very-own-baobab",
+        "https://arecabooks.com/2015/12/09/old-trees-living-heritage-penang/",
+        "https://en.wikipedia.org/wiki/Macalister_Road,_George_Town",
+        "https://www.thestar.com.my/metro/metro-news/2020/05/29/restored-and-blooming-again"
+      ],
+      "access": "Free; stands on a fenced traffic island at the Residency Road and Macalister Road junction, viewed from the pavement",
+      "transport": "On Jalan Macalister, about 2 km west of the old town; bus and Grab, roughly 10 minutes from Komtar",
+      "how_to_recognise": "You can recognise it by the white picket fence and signboard around it, the single tree on its traffic island. It stands where Jalan Residensi meets Jalan Macalister.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Planted 1871 by Captain Tristram Speedy, newly arrived superintendent of police (sources: Khoo Salma Nasution, Streets of George Town 2007, cited on Wikipedia; Adrian Cheah; Penang Traveltips; Areca Books/news 2015 says '144-year-old'; Star May 2020 counts 149 years). Called the oldest planted tree in Malaysia (blog claim, not checked). One of only three baobabs in Penang; seed-grown descendants elsewhere incl. outside Penang airport. Age is documented planting date for this tree, so derived 'about 150'. Story: municipal council proposed cutting it in the 1930s as a hazard, public protest saved it, propped with wooden crutches (Adrian Cheah, Wikipedia). Was dying, revived with treatment, Star 2020 says it flowers twice a year, flowers last about a week. Sits in its own white picket fence with a signboard. No girth or height from any source (species figures not ours). MBPP issued identity cards to century-old trees on Macalister Road in 2013 (Areca 2015 article), but no page for this tree or serial found, so no official_register. Pin: GPS 5.422, 100.31229 published by Penang Traveltips for the single tree on the island, so confirmed. Alive: photos dated 27 Oct 2022 (Traveltips) and Star 2020; lifecheck.py NONE (no iNat observation); no 2024-2026 report found, hence flagged. Oct 2026 MBPP notice of urgent inspections on Jalan Macalister does not name the baobab. Hosts: overpass-api.de hangs (curl -m 30 exit 28).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

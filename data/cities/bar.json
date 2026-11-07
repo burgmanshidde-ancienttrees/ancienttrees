@@ -1,0 +1,66 @@
+{
+  "city": "Bar",
+  "country": "Montenegro",
+  "intro": "Bar's Stara Maslina, the Old Olive of Mirovica, is put at more than 2,000 years, and one team of forestry scientists from Istanbul University estimated about 2,247. Olive Oil Times calls it Montenegro's oldest olive tree. Its trunk is about 10 metres round and burnt on one side, and it stands in its own small fenced park in Stari Bar, about 5 kilometres from Bar. It has been protected since 1963 and was declared a Monument of Nature in 2021.",
+  "meta_description": "Bar's Stara Maslina in Mirovica, Stari Bar: an olive put at over 2,000 years, a Monument of Nature since 2021, in its own small fenced park.",
+  "question_meta": "Bar's oldest tree is the Stara Maslina in Mirovica, an olive estimated at over 2,000 years, about 2,247 by one scientific team.",
+  "question_answer": "The oldest tree in Bar is the Stara Maslina, the Old Olive of Mirovica in Stari Bar. Forestry scientists from Istanbul University put it at about 2,247 years; other counts give 2,248 or more than 2,200, and tradition says over 2,000. Olives cannot be dated by counting rings, so a range is the honest answer.",
+  "question_context": "Estimates of the olive's age cluster above 2,000 years. The Istanbul University team's figure is about 2,247, the Serbian paper Novosti gives 2,248, and Radio Free Europe said in 2024 more than 2,200. Olives hollow out with age, so none of these comes from a full ring count. The trunk is about 10 metres round, and one side is burnt, which local folklore blames on a dropped match. The tree was first protected in 1963, under the old Yugoslavia, and declared a Monument of Nature in January 2021. In 2023 the municipality found parts of the crown drying out. The cause is still argued over, and the Bar Olive Growers Association points to high groundwater and to the concrete ring and walls built round the roots. An expert commission was formed in August 2023 and drainage works followed. The tree stands in Mirovica, Stari Bar, about 5 kilometres from Bar on the road towards Ulcinj, inside a small fenced park. A travel guide gives the entry fee as about 1 euro, and opening hours are not published.",
+  "hero_tree_id": "mtn_001",
+  "oldest_tree_id": "mtn_001",
+  "faq": [
+    {
+      "q": "How old is the Stara Maslina in Bar?",
+      "a": "More than 2,000 years by every estimate, and about 2,247 by a team from Istanbul University. Olives cannot be dated by counting rings, so read it as a range."
+    },
+    {
+      "q": "Do you pay to see the old olive of Mirovica?",
+      "a": "Yes, a small fee. A travel guide gives about 1 euro, and one visitor paid 2. Opening hours are not published, so ask locally."
+    },
+    {
+      "q": "Where is the Stara Maslina?",
+      "a": "In Mirovica, Stari Bar, about 5 kilometres from Bar on the road towards Ulcinj, inside its own small fenced park."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "mtn_001",
+      "name": "Stara Maslina (Old Olive Tree of Mirovica)",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "roughly 2,000 to 2,250 years",
+      "age_min": 2000,
+      "age_max": 2250,
+      "girth_cm": 1000,
+      "location": {
+        "address": "Mirovica, Stari Bar, Bar, Montenegro (about 5 km from Bar towards Ulcinj, by the M-1 road)",
+        "latitude": 42.0801656,
+        "longitude": 19.1294078,
+        "neighbourhood": "Mirovica, Bar"
+      },
+      "story": "One team of forestry scientists from Istanbul University put this olive at about 2,247 years. That is an estimate, and other counts differ a little. The Serbian paper Novosti gives 2,248, Radio Free Europe said in 2024 more than 2,200, and tradition and the tourist pages settle for over 2,000. Olives hollow out with age and cannot be dated by counting rings, so a range is the honest answer. Olive Oil Times calls it Montenegro's oldest olive tree.\n\nThe trunk is about 10 metres round. One side of it is burnt, and local folklore blames a dropped match. It was first protected in 1963, under the old Yugoslavia, and in January 2021 it was declared a Monument of Nature.\n\nIn 2023 the municipality found parts of the crown drying out. What caused it is still argued over. The Bar Olive Growers Association points to high groundwater and to the concrete ring and walls built around the roots. An expert commission was formed in August 2023 and drainage works followed.\n\nThe Stara Maslina stands in Mirovica, in Stari Bar, about 5 kilometres from Bar on the road towards Ulcinj, inside a small fenced park. A travel guide gives the entry fee as about 1 euro, and one visitor paid 2. Opening hours are not published, so ask locally before you go. From Kotor it is a day trip of about an hour each way by road, with a local bus or taxi from Bar for the last stretch.",
+      "verified_sources": [
+        "https://www.oliveoiltimes.com/world/concrete-and-water-are-damaging-montenegros-oldest-olive-tree/132139",
+        "https://www.novosti.rs/crna-gora/vesti/1321494/bitka-stablo-starije-svega-stanje-barske-masline-stare-2-248-godina-postalo-zabrinjavajuce",
+        "https://www.rferl.org/a/montenegro-2000-years-olive-tree-threat/32786991.html",
+        "https://myguidemontenegro.com/things-to-do/old-olive-tree",
+        "https://en.wikipedia.org/wiki/Stara_Maslina",
+        "https://www.openstreetmap.org/node/2269422377",
+        "https://www.inaturalist.org/observations/410586520"
+      ],
+      "access": "Paid entry to the small fenced park around the tree, reported as about 1 euro (myguidemontenegro.com; one reviewer reports 2 euro); opening hours not published on any page seen, confirm locally.",
+      "paid_entry": true,
+      "transport": "About 5 km from Bar towards Ulcinj; local bus or taxi from Bar. From Kotor about 60 km, roughly 1 hour by road (day trip, not a walk).",
+      "how_to_recognise": "You can recognise it by the trunk, about 10 metres round, with one side burnt. It stands alone in its own small fenced park in Mirovica, Stari Bar.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Day trip from Kotor, about 1 h by road; label as Bar / Mirovica. Headline tree of Montenegro. Age: Istanbul University forestry scientists estimate about 2,247 years (Olive Oil Times); Novosti says 2,248; RFE/RL Jan 2024 says 'more than 2,200'; Wikipedia and tourist pages say 'over 2,000' (tradition). Treat as an estimate, olives hollow and cannot be ring-counted. Girth about 10 m (Novosti, myguidemontenegro); Nova.rs search snippet said 11 m, not seen on a fetched page. Protection: Novosti says protected in 1963 under the former SFRJ and in early January 2021 declared a Monument of Nature, category 'group of very old trees'; the decision text and issuing body were not found, so the official register link is not recorded (flagged: no official document seen). Condition: in 2023 the municipality found parts of the crown drying; cause argued over (high groundwater, concrete ring and walls round the roots per the Bar Olive Growers Association, Alkovic); expert commission formed Aug 2023, drainage works under way (Novosti, RFE/RL 2024). One side of the trunk burnt, folklore says by a dropped match (Wikipedia, citation needed). Pin: OSM natural=tree node 2269422377 named Stara Maslina at 42.0801656, 19.1294078, matches the Wikipedia coordinate 42 04 48 N 19 07 46 E; single enclosed tree, one clear crown. Alive: lifecheck.py reports RECENT, iNaturalist observation 2026-10-23. Entry fee reported 1 EUR by a travel guide (secondary), say 'about'.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

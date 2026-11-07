@@ -1,0 +1,67 @@
+{
+  "city": "Kaštela",
+  "country": "Croatia",
+  "intro": "Kaštela, the string of seven towns between Split and Trogir, protects a downy oak beside one of its oldest churches. In Kaštel Gomilica the oak grows at the side of the Romanesque church of St Cosmas and Damian, built between 1138 and 1160 over the remains of a late-antique basilica. Croatia has protected it as a natural monument since 1996, and the tourist board singles it out for its beauty and its size, though nobody has published a measurement or an age.",
+  "meta_description": "Kaštela's protected downy oak beside the 12th-century church of St Cosmas and Damian in Kaštel Gomilica, a natural monument since 1996.",
+  "question_meta": "Kaštela's protected tree is the downy oak by the church of St Cosmas and Damian in Kaštel Gomilica; its age is not recorded.",
+  "question_answer": "The protected tree to see in Kaštela is the downy oak beside the Romanesque church of St Cosmas and Damian in Kaštel Gomilica, a natural monument since 1996. Nobody has published its age, height or girth.",
+  "question_context": "The oak is entered in Croatia's register simply as the oak in Kaštel Gomilica, protected as a natural monument since 1996. Kaštela's tourist board singles it out for its beauty and its size and gives a number for neither. The church beside it is far better documented. St Cosmas and Damian was built between 1138 and 1160 over the remains of a late-antique basilica, in the Romanesque style. How long the oak has kept the church company, nobody we can find has written down. It is alive. A naturalist photographed it in November 2024 and logged it a few metres from the register's own point, which settles which tree the town means and confirms it is a downy oak. Kaštel Gomilica is one of the seven towns of Kaštela on the bay between Split and Trogir, on the local bus line that links the two, so the oak is an easy stop along the coast. No access terms are published, and the tree is seen free beside the church. If you visit, a photograph and a rough idea of its size would be welcome.",
+  "hero_tree_id": "cdl_002",
+  "oldest_tree_id": "cdl_002",
+  "faq": [
+    {
+      "q": "Where is the old oak in Kaštela?",
+      "a": "In Kaštel Gomilica, beside the Romanesque church of St Cosmas and Damian, built between 1138 and 1160."
+    },
+    {
+      "q": "How old is the Kaštel Gomilica oak?",
+      "a": "Nobody has published an age, height or girth. It has been protected as a natural monument since 1996."
+    },
+    {
+      "q": "How do you get to Kaštel Gomilica?",
+      "a": "It is on the local bus line between Split and Trogir, one of the seven towns of Kaštela along the bay."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "cdl_002",
+      "name": "The oak of St Cosmas and Damian, Kaštel Gomilica",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "not documented",
+      "age_basis": "source",
+      "location": {
+        "address": "By the Romanesque church of St Cosmas and Damian (Sv. Kuzma i Damjan), Kaštel Gomilica",
+        "latitude": 43.549436,
+        "longitude": 16.396721,
+        "neighbourhood": "Kaštel Gomilica"
+      },
+      "location_site": {
+        "name": "Church of St Cosmas and Damian, Kaštel Gomilica",
+        "radius_m": 30
+      },
+      "story": "Kaštela's tourist board singles out this downy oak for two things, its beauty and its size, and gives a number for neither. Croatia has protected it as a natural monument since 1996, entered in the register simply as the oak in Kaštel Gomilica.\n\nWhat stands beside it is far better documented than the tree. The Romanesque church of St Cosmas and Damian was built between 1138 and 1160 over the remains of a late-antique basilica, and the oak grows at its side. The church has a construction date, a style and a history of the building underneath it. The oak has none of those on paper. How long it has kept the church company is something nobody we can find has written down.\n\nWe do know it is alive. A naturalist photographed it in November 2024 and logged it a few metres from the register's own point, which settles which tree the town means and confirms it is a downy oak.\n\nKaštel Gomilica is one of the seven towns of Kaštela, on the local bus line between Split and Trogir, so this is an easy stop on the way along the bay.\n\nNobody has published its height, girth or age. If you visit, a photograph and a rough idea of its size would be the first of each that anyone has shared.",
+      "verified_sources": [
+        "https://kastela-info.hr/en/natural-heritage",
+        "https://www.inaturalist.org/observations/250913293",
+        "https://en.wikipedia.org/wiki/Church_of_SS_Cosmas_and_Damian,_Ka%C5%A1tel_Gomilica"
+      ],
+      "official_register": {
+        "name": "Bioportal, Registar zaštićenih područja (spomenik prirode, ps.4722, protected 1996-04-04)",
+        "url": "https://services.bioportal.hr/inspire/geos1/ps/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ps1:ProtectedSite&outputFormat=application/json&srsName=EPSG:4326 (localId ps.4722, HR.MZOE.ZP)"
+      },
+      "access": "Free to see: it stands by the Church of St Cosmas and Damian in Kaštel Gomilica. No access terms are published.",
+      "transport": "Kaštel Gomilica stop on the Split to Trogir local bus, roughly 25 to 35 minutes from Split (times not confirmed); walk from the stop not confirmed.",
+      "how_to_recognise": "You can recognise it as the large downy oak right beside the Romanesque church of St Cosmas and Damian in Kaštel Gomilica.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "REGISTER: Bioportal ps.4722 'HRAST U KAŠTEL GOMILICI', spomenik prirode, register date 1996-04-04 (one search summary of a local-heritage PDF said designated 10 December 1995 and 700 to 900 years old with a King Zvonimir legend; the PDF itself was NOT fetched, so the age, the date and the legend do not exist for us; do not use). SECOND SOURCE: kastela-info.hr/en/natural-heritage names it Quercus pubescens Willd., 'by the Romanic church of St. Kuzma and Damjan in Kaštel Gomilica', notable for beauty and size, no figures. ALIVE and PIN: iNaturalist research-grade Quercus pubescens ('Hrast medunac') observation 250913293 of 2024-11-08, 4 m from the register point (GPS accuracy 17 m); lifecheck RECENT. Register point and iNat agree within 4 m, marked confirmed; the register name gives no species, the Quercus pubescens id comes from the town page and the iNat observation. No girth or height from any fetched source. One source only gives the species, so keep flagged and ask the reader for size.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

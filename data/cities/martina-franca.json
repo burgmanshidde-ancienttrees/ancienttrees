@@ -1,0 +1,63 @@
+{
+  "city": "Martina Franca",
+  "country": "Italy",
+  "intro": "Martina Franca's named tree is the Albero del Capitano, a centuries-old holm oak, hollow at the base, in the Bosco delle Pianelle regional nature reserve. Two of the wood's signed paths lead past it, one from the visitor centre about 120 metres away, and walkers say you should go round it three times for luck. The wood is free, its paths are open at all times, and it is about 20 minutes by car from town.",
+  "meta_description": "The Albero del Capitano, a hollow centuries-old holm oak in the Bosco delle Pianelle near Martina Franca: the paths to it and how to visit.",
+  "question_meta": "The Albero del Capitano is a centuries-old holm oak in the Bosco delle Pianelle reserve near Martina Franca, 120 metres from the visitor centre.",
+  "question_answer": "The tree to see near Martina Franca is the Albero del Capitano, the Captain's Tree, a holm oak hollow at the base in the Bosco delle Pianelle regional nature reserve. The reserve calls it centuries old. Path 16 runs to it from the visitor centre on the old SS581 towards Massafra, about 120 metres, and the wood is free and open at all times.",
+  "question_context": "The Bosco delle Pianelle is a regional nature reserve of holm oak and Macedonian oak in the Murge south-west of Martina Franca, with 30 kilometres of signed paths that the reserve says are freely open. Its own path guide names two trees. The Albero del Capitano lies on paths 11 and 16, at the junction of paths 5c and 5d, and is described as a centuries-old holm oak, hollow at the base. Fortunato, on path 8, is called the biggest tree in the wood, a holm oak several centuries old spared from felling, but it has no published location yet. Puglia's register of monumental trees lists two holm oaks in the reserve, both 20 metres tall and 3.85 and 4.5 metres round, and it is not settled which entry is the Capitano. Nobody has written down who the captain was, and walkers keep a custom of circling the tree three times for luck. The visitor centre opens daily from 10:00 to 14:00. There is no public transport; by car it is about 20 minutes from Martina Franca.",
+  "hero_tree_id": "mfr_001",
+  "oldest_tree_id": "mfr_001",
+  "faq": [
+    {
+      "q": "How do you get to the Albero del Capitano?",
+      "a": "Drive to the Bosco delle Pianelle visitor centre on the old SS581 towards Massafra, about 20 minutes from Martina Franca, and follow path 16 for about 120 metres."
+    },
+    {
+      "q": "Is the Bosco delle Pianelle free?",
+      "a": "Yes. The reserve's signed paths are open at all times and free. The visitor centre opens daily from 10:00 to 14:00."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "mfr_001",
+      "name": "Albero del Capitano",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_basis": "source",
+      "height_m": 20.0,
+      "location": {
+        "address": "Bosco delle Pianelle regional nature reserve, at the junction of paths 5c and 5d, off the SS581, 74015 Martina Franca (TA)",
+        "latitude": 40.65145,
+        "longitude": 17.21964,
+        "neighbourhood": "Bosco delle Pianelle, Martina Franca"
+      },
+      "story": "In the Bosco delle Pianelle, the wood of holm oaks and Macedonian oaks south-west of Martina Franca, the tree with a name is the Albero del Capitano, the Captain's Tree. The reserve describes it as a centuries-old holm oak, hollow at the base, and routes two of its signed paths, numbers 11 and 16, past it. Path 16 starts at the visitor centre, about 120 metres away.\n\nIt comes with a custom rather than a history. Walkers say you should go round it three times for luck, by a mountain biker's note of August 2026, and nobody has written down who the captain was. If you know, tell us.\n\nPuglia's register of monumental trees lists two holm oaks in this wood, both 20 metres tall, one 3.85 and one 4.5 metres round, and it is not settled which entry is this tree; a naturalist's record from April 2026 gives 3.85. No age has been published beyond centuries.\n\nIt is not even the biggest tree here. That, by the reserve's own account, is Fortunato, a holm oak several centuries old that was spared from felling, on path 8, and nobody has yet put it on a map.\n\nThe wood is free and its 30 kilometres of signed paths are open at all times. The visitor centre on the old SS581 towards Massafra opens from 10:00 to 14:00, about 20 minutes by car from Martina Franca.",
+      "verified_sources": [
+        "http://riservaboscopianelle.it/wp/i-sentieri/",
+        "https://www.riservaboscopianelle.it/",
+        "https://www.komoot.com/highlight/5741004",
+        "https://www.inaturalist.org/observations/356403757",
+        "puglia-alberi-monumentali.json, no. 06/E986/TA/16 or 07/E986/TA/16 (Bosco delle Pianelle)"
+      ],
+      "official_register": {
+        "name": "Alberi monumentali della Puglia (Regione Puglia), Bosco delle Pianelle entries 06 and 07/E986/TA/16",
+        "url": null
+      },
+      "access": "Free. A regional nature reserve whose signed paths are open at all times; path 16 runs from the visitor centre to the tree, about 120 metres. Visitor centre daily 10:00 to 14:00.",
+      "transport": "About 20 minutes by car from Martina Franca on the old SS581 towards Massafra; no public transport found.",
+      "how_to_recognise": "You can recognise it by the trunk, hollow at the base, where paths 5c and 5d meet. It stands about 120 metres from the visitor centre along path 16.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Albero_del_capitano.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Francescodimonte, Wikimedia Commons",
+        "status": "approved",
+        "width": 1536,
+        "height": 1920,
+        "taken_month": 12
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged"
+    }
+  ]
+}

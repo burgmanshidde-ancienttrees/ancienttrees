@@ -1,0 +1,95 @@
+{
+  "city": "Horta",
+  "country": "Portugal",
+  "intro": "Horta's protected trees all came from somewhere else. In the garden of Praça da República, three Norfolk Island pines, a species that grows wild on one small Pacific island, stand in flat, ruler-straight tiers. Five minutes' walk away, the Jardim Florêncio Terra keeps a group of dragon trees, monocots without annual rings whose resin dries dark red. The Azores listed both in 1984, in the regional decree that protects the town's notable trees, and neither has a published age.",
+  "meta_description": "Horta's protected trees on Faial: three Norfolk Island pines in Praça da República and the dragon trees of Jardim Florêncio Terra, both free.",
+  "question_meta": "Horta's notable trees are three Norfolk Island pines and a group of dragon trees, protected since 1984; none has a published age.",
+  "question_answer": "Horta's best-known old trees are the three Norfolk Island pines in the garden of Praça da República and the dragon trees of Jardim Florêncio Terra, both protected by a regional decree of 1 September 1984. Nobody has published an age for any of them, so which is oldest is unknown.",
+  "question_context": "Both groups were listed in the annex of the Azores decree of 1 September 1984 that protects Horta's notable trees, and the town's own regulation of 2023 lists them again, with the municipality as owner. Neither document gives a height, a girth, a planting date or a planter. The Norfolk Island pines come from one small island between New Zealand and New Caledonia. They are araucarias, cousins of the monkey puzzle, not true pines. One stands on the east side of the square and two about 35 metres west. The dragon trees are monocots, closer to asparagus and agave than to any oak, and lay down no annual rings, so their age cannot be read from the wood. The region's geodata marks five of them in the garden, inside a patch about 45 metres by 40, while the 2023 regulation lists fewer. That garden also keeps a protected Norfolk Island pine. Both places are free and in the centre of town, a few minutes from the market and the marina, and the garden's opening hours are not published.",
+  "hero_tree_id": "hrt_002",
+  "oldest_tree_id": "hrt_001",
+  "faq": [
+    {
+      "q": "How old are the Norfolk Island pines in Horta?",
+      "a": "Nobody has published an age. The 1984 decree and the 2023 municipal regulation protect them but give no date or size."
+    },
+    {
+      "q": "How many dragon trees are in Jardim Florêncio Terra?",
+      "a": "The region's geodata marks five; the town's 2023 regulation lists fewer. If you count them, tell us."
+    },
+    {
+      "q": "Is it free to see Horta's protected trees?",
+      "a": "Yes. Praça da República is an open public square, and Jardim Florêncio Terra is a free municipal garden whose hours are not published."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "hrt_001",
+      "name": "Norfolk Island pines of Praça da República",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Jardim da Praça da República, Horta, Faial, Azores",
+        "latitude": 38.54,
+        "longitude": -28.62489,
+        "neighbourhood": "Matriz, Horta"
+      },
+      "story": "These three conifers come from one small island in the South Pacific, between New Zealand and New Caledonia, the only place on earth where the species grows wild. Norfolk Island pines are not true pines at all. They are araucarias, cousins of the monkey puzzle, and they grow like no native Azorean tree does. Each has one straight trunk, with branches set in flat, evenly spaced tiers, as if someone had drawn a tree with a ruler.\n\nThey have stood in Horta's main square long enough to be written into law. On 1 September 1984 the Azores listed all three in the annex of the regional decree that protects the town's notable trees, and Horta's own regulation of 2023 lists them again, with the municipality as their owner. Both documents say what the trees are and where. Neither says how tall they are, how thick, or who planted them.\n\nThe visit is short and free. The garden of Praça da República is an open public square in the centre of town, two minutes from the market and five from the marina. One pine stands on the square's east side; the other two stand about 35 metres to the west. Count them when you arrive. The region's own list notes that each tree's exact position still needs checking on the ground, so if you find two, or four, tell us.\n\nNobody has published an age for these trees. If you know when they went in, tell us.",
+      "verified_sources": [
+        "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779",
+        "https://www.inaturalist.org/observations/363145984",
+        "https://commons.wikimedia.org/wiki/File:Jardim_da_Pra%C3%A7a_da_Rep%C3%BAblica_-_Horta_-_Portugal_(52151645302).jpg"
+      ],
+      "official_register": {
+        "name": "Património Classificado dos Açores: Exemplares Arbóreos (Governo dos Açores, DRC/SRAAC), CC BY 4.0",
+        "url": "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779"
+      },
+      "access": "Free; municipal square garden in the centre of Horta (owner: Câmara Municipal da Horta per the register), open public square",
+      "transport": "Central Horta, 2 minutes on foot from the Mercado Municipal; about 5 minutes from the marina",
+      "how_to_recognise": "You can recognise them by their shape, one straight trunk with branches in flat, even tiers. Three stand in the square's garden, one on its east side and two about 35 metres west of it.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hrt_002",
+      "name": "Dragon trees of Jardim Florêncio Terra",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Jardim Florêncio Terra, Horta, Faial, Azores",
+        "latitude": 38.54194,
+        "longitude": -28.62645,
+        "neighbourhood": "Matriz, Horta"
+      },
+      "story": "Five dragon trees stand in one compact garden in the centre of Horta, all inside a patch about 45 metres by 40.\n\nA dragon tree is barely a tree. It is a monocot, closer kin to asparagus and agave than to any oak, and it lays down no annual rings. It grows slowly, branches only after it flowers, and so builds its crown by forking, then forking again, until the trunk carries an umbrella of stiff, sword-shaped leaves. Its resin dries dark red, the dragon's blood traded for centuries as a dye and a medicine. None of these grew wild on Faial. They were planted here as garden specimens.\n\nThey were already worth protecting in 1984, when the annex of a regional decree of 1 September listed the dragon trees of Jardim Florêncio Terra among Horta's notable trees. The two official lists do not agree on how many there are. The region's geodata marks five points in the garden; the town's 2023 regulation lists fewer. Count them and tell us which is right. The garden also holds a protected Norfolk Island pine, the same species as the three in Praça da República, five minutes' walk away.\n\nEntry is free. Opening hours are not published, so allow for a closed gate early or late in the day.\n\nNo source gives an age for any of the five, and without rings a dragon tree keeps its age to itself. If you know when they were planted, tell us.",
+      "verified_sources": [
+        "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779",
+        "https://www.openstreetmap.org/node/6440409157",
+        "https://www.inaturalist.org/observations/347271881",
+        "https://www.inaturalist.org/observations/407854373"
+      ],
+      "official_register": {
+        "name": "Património Classificado dos Açores: Exemplares Arbóreos (Governo dos Açores, DRC/SRAAC), CC BY 4.0",
+        "url": "https://sma.idea.azores.gov.pt/geonetwork/srv/api/records/0d09ba25-2b90-4576-9838-f37bea740779"
+      },
+      "access": "Free; municipal public garden (Jardim Florêncio Terra, owner Câmara Municipal da Horta per the register and regulation), opening hours not published in the sources read",
+      "transport": "Central Horta, about 5 minutes on foot from the Praça da República",
+      "how_to_recognise": "You can recognise them by their crowns, branches forking again and again into tufts of stiff, sword-shaped leaves. Five stand within about 45 metres of each other. The tall tiered conifer near them is the garden's Norfolk Island pine.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

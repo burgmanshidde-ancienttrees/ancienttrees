@@ -1,0 +1,56 @@
+{
+  "city": "Lecce",
+  "country": "Italy",
+  "intro": "Lecce's best-known old tree is not a stone pine or an olive but an ombu from the South American pampas, a soft-wooded giant that has stood on Viale Marconi for about 150 years by the count of the local press. In 2021 residents asked the city to check its health, and it is still standing, logged by naturalists every year since. It is free to see on a public street, five minutes on foot from Piazza Sant'Oronzo.",
+  "meta_description": "Lecce's old ombu on Viale Marconi, about 150 years old by local press reports: what it is and where to find it in the city centre.",
+  "question_meta": "Lecce's oldest-known city tree is the ombu of Viale Marconi, put at about 150 years and free to see near Piazza Sant'Oronzo.",
+  "question_answer": "The old tree to see in Lecce is the ombu, Phytolacca dioica, on Viale Marconi at Piazza Filippo Bottazzi, near Porta Napoli. Lecce's local press put it at about 150 years in 2021. It stands on a public street, free and always open, five minutes on foot from Piazza Sant'Oronzo.",
+  "question_context": "The ombu is a South American species with a soft, watery trunk rather than hard timber, planted in Mediterranean towns for its shade. Lecce's is not in Italy's national list or Puglia's regional list of monumental trees; it is known through the city's own press. In April 2021 a local news site described a giant tropical tree of about 150 years on Viale Marconi and reported that residents and experts had asked for a health check, and a local writer that June called it at risk, blaming water leaking from the pipes beneath it. Nobody has published a planting date, so the 150 years is the press's figure, not a measurement, and no girth or height has been recorded. The tree is still standing: naturalists have recorded it on iNaturalist most years since 2021, the latest in July 2026. Lequile, about 7 kilometres south-west, has two more ombu trees in its Piazza Europa, listed in the national register, and the Lizza dei Briganti holm oak at Pisignano is about 20 minutes away by car.",
+  "hero_tree_id": "lcc_001",
+  "oldest_tree_id": "lcc_001",
+  "faq": [
+    {
+      "q": "How old is the ombu tree in Lecce?",
+      "a": "About 150 years, by the count of Lecce's local press in 2021. Nobody has published a planting date, so the figure is an estimate, not a measurement."
+    },
+    {
+      "q": "Where is the big ombu in Lecce?",
+      "a": "On Viale Marconi at Piazza Filippo Bottazzi, near Porta Napoli, about five minutes on foot from Piazza Sant'Oronzo. It is on a public street, free and always open."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "lcc_001",
+      "name": "Ombu of Viale Marconi",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 100,
+      "age_max": 200,
+      "age_basis": "source",
+      "location": {
+        "address": "Viale Guglielmo Marconi, at Piazza Filippo Bottazzi, 73100 Lecce",
+        "latitude": 40.35131,
+        "longitude": 18.17634,
+        "neighbourhood": "Centro storico edge, near Porta Napoli"
+      },
+      "story": "The biggest living thing on Viale Marconi is, by most botanists' reckoning, not quite a tree. The ombu, Phytolacca dioica, comes from the pampas of South America and grows a soft, watery trunk instead of hard timber, and this one has stood at the corner of Piazza Filippo Bottazzi for about 150 years by the count of Lecce's local press in 2021. Nobody has published a planting date, so that figure is the newspapers' estimate, not a measurement.\n\nThat spring it nearly made the news for the wrong reason. Residents and experts asked the city for a health check, and a local writer called the tree at risk, blaming water leaking from the city pipes beneath it and too little care, and waiting on an agronomist's verdict.\n\nIt is still here. Naturalists have logged it on iNaturalist almost every year since, the latest in July 2026, close enough to the same spot to pin it to a few metres.\n\nNobody has measured its girth or height for a public record, so if you know them, tell us. It stands on a public street a short walk from Porta Napoli, free and always open, five minutes on foot from Piazza Sant'Oronzo and the baroque centre around it.",
+      "verified_sources": [
+        "https://www.pugliareporter.com/2021/04/16/lecce-quel-gigantesco-albero-tropicale-di-150-anni-che-necessita-di-attenzione-video/",
+        "https://www.cisivedeingiro.com/note-e-foto/la-phytolacca-di-lecce/",
+        "https://www.inaturalist.org/observations/325858387"
+      ],
+      "access": "Free, on a public street and square in the city centre, always open.",
+      "transport": "About 5 minutes on foot from Piazza Sant'Oronzo.",
+      "how_to_recognise": "You can recognise it as the big ombu at the corner of Viale Marconi and Piazza Filippo Bottazzi. It stands near the corner of Via Otranto and Via Cavallotti.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

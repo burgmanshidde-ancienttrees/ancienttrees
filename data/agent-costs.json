@@ -16029,6 +16029,14 @@
       "tokens": 95000,
       "trees": 4,
       "note": "Asked for 20; only 4 writable. Every other named file is already published or held (dmr_002 alive unconfirmed, cht_002 lead quality, sfo_012 duplicate of sfo_004, tus_007/013/014 held, car_001 duplicate of crd_004). Cardiff crd_009, crd_011, crd_012 and crd_013 (verified as crd_008, which is a live id). 1 best_time. Roughly 24k a tree, mostly reading the 46 KB pending list."
+    },
+    {
+      "date": "2026-11-07",
+      "kind": "write",
+      "target": "written backlog (ayutthaya, chiang-mai, sukhothai, tha-maka, george-town, horta, kotor, bar, milo, zafferana-etnea, kastela, lecce, vernole, martina-franca, la-palma, lanzarote)",
+      "tokens": 170000,
+      "trees": 21,
+      "note": "Asked to write READY leads; all 29 were register rows, OSM nodes or earlier declines with no access, life or tree-level source, so none was written and each is now tagged [SKIPPED 2026-11-07] (READY 29 to 0). Instead merged the 21 already-written, unheld trees of 11-02 to 11-04 (scripts/build_backlog_2026_11_07.py), wrote place copy for 11 new places, carried 5 recognition lines over from `recognise`, aligned one species name (Dragon Tree). About 8k a tree."
     }
   ]
 }

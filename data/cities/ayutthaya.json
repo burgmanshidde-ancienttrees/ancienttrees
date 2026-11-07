@@ -1,0 +1,104 @@
+{
+  "city": "Ayutthaya",
+  "country": "Thailand",
+  "intro": "Two fig trees in Ayutthaya have swallowed pieces of the old capital. At Wat Mahathat, inside the Historical Park, the roots of a fig hold a sandstone Buddha's face, and nobody agrees how it got there. North of the old city island, at the ruined Wat Phra Ngam, a bodhi tree has grown over a brick gateway so completely that its trunks now frame the arch. Thailand's Ministry of Culture lists both among its Heritage Trees of the Land.",
+  "meta_description": "Ayutthaya's heritage trees: the fig holding a Buddha's head at Wat Mahathat and the bodhi grown over the gate of Wat Phra Ngam.",
+  "question_meta": "Ayutthaya's best-known tree is the fig at Wat Mahathat whose roots hold a sandstone Buddha's head; nobody has dated it.",
+  "question_answer": "The best-known old tree in Ayutthaya is the fig at Wat Mahathat whose roots hold a sandstone Buddha's head, inside the Ayutthaya Historical Park. Nobody has dated the tree, so its age is unknown. The Ministry of Culture lists it as a Heritage Tree of the Land, with a root mass 9.60 metres round and a height of 15 metres.",
+  "question_context": "The Wat Mahathat fig is the one most visitors come for. The popular account says the Buddha's head fell when the Burmese army sacked Ayutthaya in 1767 and the roots grew around it, but that is a story rather than a record, and one guide says a worker set the head in the roots around 1968 to 1970. The head itself is dated anywhere from the 14th to the 17th century. The Ministry of Culture's register calls the tree a bodhi, as does the sign on site, while travel writers call it a banyan or a strangler fig, so which fig it is remains open. The register measures the root mass at 9.60 metres round and gives no age. The second tree, at Wat Phra Ngam in Khlong Sa Bua, is a bodhi grown over and around a brick gateway, added to the heritage list in 2019 with no measurements. Travel articles say it is over 100 years old, a guess rather than a count. Wat Mahathat is inside the ticketed Historical Park, a UNESCO World Heritage site since 1991, and Wat Phra Ngam is about 2 kilometres north, with no ticket reported.",
+  "hero_tree_id": "ayu_001",
+  "oldest_tree_id": "ayu_001",
+  "faq": [
+    {
+      "q": "How old is the Buddha head tree in Ayutthaya?",
+      "a": "Nobody has dated it. The Ministry of Culture's register gives no age, and the popular story that the roots grew around a head fallen in 1767 is not a recorded fact."
+    },
+    {
+      "q": "Do you pay to see the Buddha head tree?",
+      "a": "Yes. It stands in Wat Mahathat inside the Ayutthaya Historical Park, which charged foreign adults about 80 baht in 2026. Check the price and the hours at the gate."
+    },
+    {
+      "q": "Where is the tree that grew over a gate?",
+      "a": "At the ruined Wat Phra Ngam in Khlong Sa Bua, across from the old city island and about 2 kilometres north of Wat Mahathat. Travel guides report no ticket."
+    }
+  ],
+  "status": "needs_curation",
+  "trees": [
+    {
+      "id": "ayu_001",
+      "name": "Buddha Head Fig, Wat Mahathat",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "not documented",
+      "girth_cm": 960,
+      "height_m": 15,
+      "location": {
+        "address": "Wat Mahathat, Chikun Road, Ayutthaya Historical Park, Phra Nakhon Si Ayutthaya",
+        "latitude": 14.35674,
+        "longitude": 100.56825,
+        "neighbourhood": "Ayutthaya Historical Park (island city)"
+      },
+      "story": "Nobody agrees how a sandstone Buddha's head came to sit in the roots of this tree. The story most visitors hear is that the head fell when the Burmese army sacked Ayutthaya in 1767, and that the tree slowly grew around it. It is a popular account, not a recorded one. One guide says instead that a worker set the head among the roots around 1968 to 1970. The head itself is dated anywhere from the 14th to the 17th century.\n\nThe tree is just as unsettled. Thailand's Ministry of Culture lists it among its Heritage Trees of the Land as a bodhi, and so does the sign on site. Travel writers call it a banyan or a strangler fig, and naturalists who have photographed it disagree three ways. Which fig it is, nobody has settled, and nobody has dated it either. If you know, tell us.\n\nWhat is measured is the root mass. The register gives 9.60 metres round, a buttressed tangle wrapped about the face rather than one trunk, on a tree 15 metres tall.\n\nIt stands in the ruins of Wat Mahathat, opposite Wat Ratchaburana on Chikun Road, inside the Ayutthaya Historical Park, a UNESCO World Heritage site since 1991. The park ticket was about 80 baht for foreign adults in 2026, and hours run roughly 08:00 to 18:00, so check at the gate. The custom is to keep your own head lower than the Buddha's, photograph included.",
+      "verified_sources": [
+        "https://th.wikipedia.org/wiki/รุกข_มรดกของแผ่นดิน (reproduces the 2017 register table of the Department of Cultural Promotion, Ministry of Culture; source file data.go.th tree1.xlsx, 403 to curl)",
+        "https://www.inaturalist.org/observations/371483792 (GPS 3 m, 2026-03-19, Ficus benghalensis)",
+        "https://www.inaturalist.org/observations/386189607 (GPS 18 m, 2026-07-23)"
+      ],
+      "official_register": {
+        "name": "Rukkha Moradok khong Phaendin (Heritage Trees of the Land), Department of Cultural Promotion, Ministry of Culture, 2017 list, Ayutthaya entry 'Pho'",
+        "url": "https://data.go.th/dataset/5bc5f557-1786-4f92-babb-41553ed5a8f9"
+      },
+      "access": "Paid entry to the Fine Arts Department's Ayutthaya Historical Park ticket (foreign adult price reported by 2026 guides as about 80 THB, Thai nationals about 10 THB; confirm at the gate); open daily roughly 08:00 to 18:00-18:30 (hours differ between guides, no official page found); modest dress (shoulders and knees covered); viewing platform is a low rope-line, do not stand higher than the head.",
+      "paid_entry": true,
+      "transport": "Ayutthaya railway station then the 5-minute river ferry and about 2 km by tuk-tuk, bicycle or walking; Bangkok to Ayutthaya by train about 1.5 hours. Temple stands opposite Wat Ratchaburana on Chikun Road.",
+      "how_to_recognise": "You can recognise it by the stone Buddha's face held in the roots, behind a low rope line. It stands in the ruins of Wat Mahathat, opposite Wat Ratchaburana on Chikun Road.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Famous sandstone Buddha head held in the roots of a fig at Wat Mahathat. Register (2017, Ministry of Culture list, province Phra Nakhon Si Ayutthaya) records the tree as 'Pho' (bodhi, Ficus religiosa) with girth 9.60 m (a buttressed root mass around the head, not a single trunk), height 15 m, age 'not stated' (ไม่ระบุ), coordinates 14.356670,100.568247. SPECIES CONFLICT: the register and the on-site sign call it a bodhi; travel writers (Under the Banyan, Your Thai Guide) call it a banyan or strangler fig; iNaturalist identifications on the spot are split between Ficus benghalensis, Ficus rumphii and plain Ficus (none research grade), so species given as Ficus sp. and the page asks the reader. Pin: register point is about 10 m from a cluster of iNaturalist GPS fixes (3 to 5 m accuracy, 2025-02 to 2026-07) at 14.3567,100.5682, so confirmed. Alive: iNat observations 2026-03-19 and 2026-07-23; a search summary (Matichon, 2024, unfetched, Cloudflare) reports Forest Department help for a storm-damaged tree at the head in 2024, to be treated as a pointer only. AGE: none documented anywhere; one guide says the tree grew around the head over about 250 years but cites no source (not used). The head itself is dated variously from the 14th to 17th century; the popular account ties it to the 1767 sack of Ayutthaya (head fallen, roots grew round it); a Pattaya guide says a worker set the head in the roots around 1968 to 1970, which conflicts. One Thai news item calls the natural tree 'over 50 years' old (Thairath, unfetched). Do not state an age or the 1767 link as fact. Register only plus iNat sightings, so flagged. Wat Mahathat is part of the UNESCO World Heritage city (1991).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ayu_002",
+      "name": "Bodhi Tree Gate, Wat Phra Ngam",
+      "species": "Bodhi Tree (Ficus religiosa)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "location": {
+        "address": "Wat Phra Ngam, Khlong Sa Bua, Phra Nakhon Si Ayutthaya (ruined temple on the Wat Na Phra Meru to market road)",
+        "latitude": 14.37105,
+        "longitude": 100.55545,
+        "neighbourhood": "Khlong Sa Bua, north bank of the Ayutthaya old city island"
+      },
+      "location_site": {
+        "name": "Wat Phra Ngam ruined temple precinct",
+        "radius_m": 50
+      },
+      "story": "This bodhi tree has swallowed a doorway. Its roots and trunks have grown over and around a brick gateway of the ruined Wat Phra Ngam, so that the trunks now frame its arch, shaped like a lotus petal. Thai travel writers call it the gate of time.\n\nIn 2019 Thailand's Ministry of Culture added it to its list of Heritage Trees of the Land, one of 88 trees named that year. The list gives no measurements and no age. Travel articles put the tree at 100 years or more, but nobody has measured or dated it, so treat that as a guess.\n\nThe temple itself is a ruin, and a popular account says it was abandoned after Ayutthaya fell to the Burmese in 1767. That is an account, not a record, and nothing connects this tree to that date. What you see is simpler, a sacred fig, the species the Buddha is said to have sat under, wrapped around a brick doorway.\n\nWat Phra Ngam lies in Khlong Sa Bua, on the north bank across from the old city island, about 2 kilometres north of Wat Mahathat. Travel guides report no ticket, and the compound sits beside the road. Go by day, dress as you would for any temple, and take a tuk-tuk or bicycle from the island, about ten minutes. If you go, tell us how the tree looks.",
+      "verified_sources": [
+        "https://th.wikipedia.org/wiki/รุกข_มรดกของแผ่นดิน (2019 list of 88 trees, Wat Phra Ngam bodhi, province Ayutthaya; Khaosod and Department of Cultural Promotion announcement reported 2019)",
+        "https://www.khaosod.co.th/technologychaoban/techno-news/article_106633",
+        "https://www.prachachat.net/d-life/news-1422901 (403 to fetchers, search summary only)"
+      ],
+      "official_register": {
+        "name": "Rukkha Moradok khong Phaendin, Department of Cultural Promotion, Ministry of Culture, 2019 list of 88 trees",
+        "url": "https://www.khaosod.co.th/technologychaoban/techno-news/article_106633"
+      },
+      "access": "Open ruined temple compound beside the road; no ticket reported by travel guides (not confirmed on an official page); visit by day; modest dress as at any temple.",
+      "transport": "About 2 km north of Wat Mahathat; Ayutthaya has no public bus network worth the name, tuk-tuk or bicycle from the old city island, about 10 minutes.",
+      "how_to_recognise": "You can recognise it by the bodhi trunks wrapped over and around an arched brick gateway. It stands at the gate of the ruined Wat Phra Ngam in Khlong Sa Bua.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "A bodhi that has grown over and around a brick gateway (a lotus-petal-arched gate) of the abandoned Wat Phra Ngam, nicknamed 'the gate of time' by Thai travel press. Listed in the 2019 Heritage Trees of the Land (88 trees); the national table in th.wikipedia gives only the name for 2019 (no coordinates, girth or age). Register has no figures. Age: travel articles say 'at least 100 years' with no scientific basis, so age_min 100 only, not a derived age. The temple is thought abandoned at the 1767 fall of Ayutthaya (unsourced popular account); do not link tree to 1767. Pin is the OSM centroid of the archaeological site (way 744402568), not the gate; precision approximate with a small named site, recognise by the bodhi trunks embracing the arched brick gateway. ALIVE NOT CONFIRMED by a dated tree observation (lifecheck NONE; one iNat Ficus rumphii 2023-01-09 about 80 m away is not proof); only register 2019 and undated travel pages. Register only, so flagged. Recheck with a dated photo or news item before write-up.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
