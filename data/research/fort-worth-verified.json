@@ -539,5 +539,31 @@
     "curation_status": "flagged",
     "verify_notes": "GROVE, not a single trunk; flagged as an ensemble that is the destination (Todd Island, an upland island surrounded by marsh and sloughs; the trail loops around the stand). Sources: City heritage layer says 250+ years, original stand never fully logged per University of Arkansas researchers, National Natural Landmark status 1980; Friends of the Nature Center article and Wikipedia NNL list give designation 24 Nov 1980 for the refuge Cross Timbers forest; Old-Growth Forest Network page says trail has 250+ year old trees (it does not name Todd Island or the species; species post oak comes from the city layer). Texas joined the Old-Growth Forest Network via this trail on 5 May 2023 (search result, not fetched page). Age is the city figure, as a minimum. Alive: lifecheck NONE, but the refuge is a managed park with 2023 recognition. Pin is the layer point, approximate; the exact stand is on the trail loop.",
     "hold": "Writing pass 2026-11-07, held: cannot be told apart, a grove somewhere on a 3.4-mile trail loop with no photo, a register-layer pin and no named spot on Todd Island to stand at. Ships with a trail-side GPS fix or photo of the stand."
+  },
+  {
+    "id": "ftw_027",
+    "name": "Lake Worth Indian Marker Tree",
+    "species": "Live Oak (Quercus virginiana)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Arrow S Park, 7951 Cahoba Dr, Fort Worth, TX 76135",
+      "latitude": 32.795416,
+      "longitude": -97.452576,
+      "neighborhood": "Lake Worth"
+    },
+    "verified_sources": [
+      "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0",
+      "http://naslw.blogspot.com/p/lake-worth-trees.html",
+      "https://www.fortworthtexas.gov/departments/parks/parks-and-trails/arrow-s-park"
+    ],
+    "official_register": {
+      "name": "City of Fort Worth heritage trees (OBJECTID 58)",
+      "url": "https://storymaps.arcgis.com/stories/9f6ce79e10a7491aa8d29327cf389831"
+    },
+    "access": "Free. Arrow S Park is a City of Fort Worth park, open 5:00 AM to 10:00 PM daily per the city's park page; the tree is on the ridge edge near the Loop 820 bridge.",
+    "transport": "Car; the park is on Cahoba Dr at the Loop 820 bridge over Lake Worth. No public transport verified.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "City heritage layer text (government): old live oak in Arrow S Park on the edge of a ridge overlooking the lake near the Loop 820 bridge; believed its shape is due to manipulation by indigenous groups such as the Comanche; marker trees could hold messages in the 'nose', a small cavity at the end of the bent trunk; the tree points to a deep bend in the Trinity River, now under Lake Worth. The layer's service is named Test, so treat it as the city's draft. Neighborhood Association on South Lake Worth page (blog by master arborist Wes Culwell, May 2014): the Texas Historic Tree Coalition visited the tree on 2014-05-06, documented its size and took samples for aging, concluded it probably marked a spot in the cattail area where fish were caught; report to go to tribal leaders in Oklahoma, decision 1 to 2 years later. No published result found, so marker status is a belief, not a recognition; say so. Culwell places the tree near Cahoba and pointing beneath the bridge. No girth, height or age figure seen on a fetched page. The park's other heritage tree is the George T. Reynolds Live Oak (ftw_012), a separate tree. Species 'live oak' is from the city layer text only. Alive: lifecheck RECENT only because of an iNaturalist plant observation in the park (2026-06-29, about 15 m away, not of the tree); no dated photo of the tree itself, so thin. Pin is the city's point, not checked against a crown: approximate. Recognise by the bent trunk pointing toward the bridge and the lake."
   }
 ]

@@ -282,7 +282,8 @@
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
       "status": "open",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Checked 2026-11-07: city layer only ('more than 200 years' on the 9th fairway); golf course access not settled, lifecheck NONE. Stays a lead, needs access evidence."
     },
     {
       "name": "Crestwood Drive Live Oaks",
@@ -298,7 +299,8 @@
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
       "status": "open",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Checked 2026-11-07: city layer plus a neighborhood guide only; oaks stand in the middle of the street, a row not one collectible point, no alive evidence (lifecheck NONE), no individual trunk named. Stays a lead."
     },
     {
       "name": "Monticello Park Live Oak",
@@ -330,7 +332,8 @@
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
       "status": "open",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "note": "Checked 2026-11-07: the same tree as published ftw_022 (The Heritage Courtyard Live Oak, museum's Heritage Oak). Duplicate, nothing to add."
     },
     {
       "name": "Harley Live Oaks",
@@ -361,7 +364,8 @@
         "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
-      "status": "open"
+      "status": "open",
+      "note": "Checked 2026-11-07: pecan on a residential street, marker status is residents' belief in the city layer only, lifecheck not run with a hit, no second source found. Stays a lead."
     },
     {
       "name": "Carter-Riverside HS Post Oaks",
@@ -1034,7 +1038,8 @@
         "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
-      "status": "open"
+      "status": "verified",
+      "note": "verified 2026-11-07, in data/research/fort-worth-verified.json as ftw_027"
     },
     {
       "name": "Lake Country Cedar Elm",
