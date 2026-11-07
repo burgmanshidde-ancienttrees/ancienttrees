@@ -62,6 +62,13 @@ ORDER = {"grey": 0, "green": 1, "orange": 2, "red": 3}
 PLATFORMS = ("web", "ios", "android")
 NAMES = {"web": "Web", "ios": "iOS", "android": "Android"}
 ROWS = (("next", "Next version"), ("live", "Live"), ("bugs", "Open bugs"))
+# The question each row answers, as agreed with Hidde on 2026-11-04.
+QUESTIONS = {
+    "next": "can what we are building go live? (tests, review)",
+    "live": "does what people use now work? (crashes, errors, site up)",
+    "bugs": "problems found and not fixed yet",
+    "backup": "is there a fresh copy of the database?",
+}
 SURFACE = {"web": "WEB", "ios": "APP"}
 
 FRESH_EYES_DAYS = 1    # review.yml, twice a day
@@ -508,19 +515,24 @@ def html(q):
     if not bad and not backup_bad:
         return '<p %s><strong>Quality</strong>&nbsp;&nbsp;%s&nbsp;&nbsp;%s</p>' % (
             style, heads, _h.escape(_tail(q)))
-    line = '<p %s><strong>Quality</strong>&nbsp;&nbsp;%s%s</p>' % (
-        style, heads, ("&nbsp;&nbsp;Backup: %s" % _h.escape(br)) if backup_bad else "")
-    if not bad:
-        return line
+    # Anything orange or red: the whole table Hidde approved on 2026-11-04,
+    # every row with its question, every cell a light and a word, Backup as
+    # its own row (not a sentence tacked onto the line).
+    line = '<p %s><strong>Quality</strong>&nbsp;&nbsp;%s</p>' % (style, heads)
     out = [line, "<table><thead><tr><th></th>%s</tr></thead><tbody>" % "".join(
         "<th>%s</th>" % NAMES[p] for p in PLATFORMS)]
-    for k, label in bad:
+    sub = '<br><span style="color:#888;font-size:12px">%s</span>'
+    for k, label in ROWS:
         tds = []
         for p in PLATFORMS:
             c, r = q[p][k]
-            show = r if c in ("orange", "red") or (c == "grey" and r) else ""
-            tds.append("<td>%s%s</td>" % (_dot(c, 9), _h.escape(show)))
-        out.append("<tr><td>%s</td>%s</tr>" % (label, "".join(tds)))
+            word = r if c != "green" else "ok"
+            tds.append("<td>%s%s</td>" % (_dot(c, 9), _h.escape(word or c)))
+        out.append("<tr><td><strong>%s</strong>%s</td>%s</tr>" % (
+            label, sub % QUESTIONS[k], "".join(tds)))
+    out.append('<tr><td><strong>Backup</strong>%s</td><td colspan="%d">%s%s</td></tr>' % (
+        sub % QUESTIONS["backup"], len(PLATFORMS), _dot(bc, 9),
+        _h.escape(br if bc != "green" else "ok")))
     out.append("</tbody></table>")
     return "".join(out)
 
