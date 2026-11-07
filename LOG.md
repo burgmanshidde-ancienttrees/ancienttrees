@@ -13,6 +13,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-07 night run (third attempt, same window): nothing published
+
+Released the leipzig claim: its brief lists 0 candidates (no imported register covers it), so it is a wall for 48h. Munich's brief also has no coordinates or candidates (from-zero research needs Hidde's ask), so no claim. `leads.py --ready` is 0; the only unwritten verified files are Salt Lake City's two small trees (under the six-candidate floor, claim still held until it expires) and singles in other cities. Remaining ladder rungs need a Mac session (iOS schedule failures) or Hidde's word. Translation backup (Perugia, it) is blocked while TRANSLATIONS_OUT holds.
+
 ## 2026-11-07 night run (18:07 window): Salt Lake City verify, nothing published
 
 Rung 2: health.py exits 1 on the iOS scheduled run (3 failures in a row, ~1h28m each; the log shows XCUITest "Failed to scroll to visible ... tree-card" AX errors, then timeout). It needs a Mac and the app worktree, so it is a session's, not this runner's. Web errors ORANGE: one ResizeObserver loop message, benign, left alone. Rung 1 empty. Shelf: prepare.py says refill; portland refused (full). Claimed salt-lake-city (18 of 20), verify agent delivered slc_019 (Lavalle Hawthorn) and slc_020 (Red Horsechestnut), both University of Utah register trees, flagged, approximate pins, no photo, small trees. Under the six-candidate floor for a write pass, so not written; claim left in place (release refused until merged, correctly) and expires in 4 hours. Cost: about 85k tokens for 2 unpublished trees.
