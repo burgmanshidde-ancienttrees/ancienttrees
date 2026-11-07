@@ -450,5 +450,91 @@
     "story": "A road was moved to keep these live oaks. When Harley Avenue was realigned into what is now Trail Drive, the trees were slated to come out. The City Forester, a State Forester and several other city departments stepped in, and the answer was to rework the parkland at the edge of the Botanic Garden so the road could pass and the oaks could stay.\n\nThey now line the way into the Will Rogers exhibition grounds, which the city's heritage register calls a green gateway. It is a fair description of what a cluster of live oaks does to the start of a road.\n\nThe register is our only written source, and it is short on numbers. It does not say how many trees there are, how big any of them is, how old they are, or even when the road was moved. We have not picked out one trunk as the champion, so treat this as a stand you take in from the roadside rather than a single tree. If you know when Harley Avenue became Trail Drive, or have counted or measured the oaks, tell us.\n\nWhat we can say is that a naturalist logged an observation at the spot in October 2026, and that they make an easy stop on a longer walk. Trinity Park's Van Zandt live oaks are about 300 metres away.",
     "how_to_recognise": "You can recognise them as the cluster of live oaks lining the edge of Trail Drive at the Botanic Garden. They stand beside the road on the way into the Will Rogers exhibition grounds, visible from the sidewalk.",
     "not_merged_reason": "Written 2026-10-31, held only by preflight's publishing pace (25 trees of our own in 24 hours already reached). Ready to merge in the next window with room under the cap."
+  },
+  {
+    "id": "ftw_024",
+    "name": "Casino Beach Pecan",
+    "species": "Pecan (Carya illinoinensis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Casino Beach Park, 7451 Watercress Drive, Fort Worth, TX 76135",
+      "latitude": 32.819951,
+      "longitude": -97.453867,
+      "neighbourhood": "Lake Worth"
+    },
+    "verified_sources": [
+      "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0",
+      "https://storymaps.arcgis.com/stories/9f6ce79e10a7491aa8d29327cf389831",
+      "https://fortworthtexas.gov/departments/parks/parks-and-trails/casino-beach",
+      "https://www.inaturalist.org/observations/182092189"
+    ],
+    "official_register": {
+      "name": "City of Fort Worth Heritage Trees",
+      "url": "https://storymaps.arcgis.com/stories/9f6ce79e10a7491aa8d29327cf389831"
+    },
+    "access": "Free; city park open 5:00 AM to 10:00 PM daily (city parks page)",
+    "transport": "No public transit found; drive, roughly 20 minutes from downtown Fort Worth (not verified by timetable)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One source (City of Fort Worth Heritage Trees layer and story map, government): largest known pecan growing around Lake Worth, in Casino Beach Park. The park was once one of the most popular attractions in the Southwest, over 100,000 visitors a year, with bathhouse, ballroom and a midway rollercoaster (The Thriller). No girth, height or age given by source. Pin is the city layer point, not a confirmed crown. Alive: iNaturalist observation 2023-09-06 near the point (lifecheck RECENT); no tree-specific photo identity. Nearby heritage trees in same park: Casino Beach Pavilion Post Oak, Cottonwoods (32.821,-97.44919), Blackjack Oak (32.8206,-97.45366). Transit not verified."
+  },
+  {
+    "id": "ftw_025",
+    "name": "Monticello Park Live Oak",
+    "species": "Live Oak (Quercus sp.)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Monticello Park, 3505 Dorothy Lane North, Fort Worth, TX 76107",
+      "latitude": 32.758018,
+      "longitude": -97.370275,
+      "neighbourhood": "Monticello"
+    },
+    "verified_sources": [
+      "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0",
+      "https://storymaps.arcgis.com/stories/9f6ce79e10a7491aa8d29327cf389831",
+      "https://www.fortworthtexas.gov/departments/parks/parks-and-trails/monticello-park"
+    ],
+    "official_register": {
+      "name": "City of Fort Worth Heritage Trees",
+      "url": "https://storymaps.arcgis.com/stories/9f6ce79e10a7491aa8d29327cf389831"
+    },
+    "access": "Free; 4.24-acre city park open dawn to dusk (city parks page)",
+    "transport": "Not verified; neighbourhood park west of downtown, likely drive or bus, no stop confirmed",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One source (City of Fort Worth Heritage Trees layer, government), flagged thin: lifecheck returned NONE, no dated observation of the tree found. Source says: canopy sweeps the ground and straddles the sidewalk, welcoming generations of residents to the park; neighbourhood dates to the 1920s. Park dedicated 1928, land donated by Monticello Land Company, designed by Hare and Hare of Kansas City (city parks page). Species given only as live oak; Quercus sp. No age, girth or height. The park page does not mention the tree. Pin is the layer point, approximate."
+  },
+  {
+    "id": "ftw_026",
+    "name": "Todd Island Post Oak Grove",
+    "species": "Post Oak (Quercus stellata)",
+    "age_estimate": "over 250 years",
+    "age_min": 250,
+    "age_max": null,
+    "location": {
+      "address": "Cross Timbers Trail, Fort Worth Nature Center and Refuge, Fort Worth, TX 76135",
+      "latitude": 32.852838,
+      "longitude": -97.48506,
+      "neighbourhood": "Lake Worth"
+    },
+    "verified_sources": [
+      "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0",
+      "https://storymaps.arcgis.com/stories/9f6ce79e10a7491aa8d29327cf389831",
+      "https://www.oldgrowthforest.net/tx-cross-timbers-trail-fort-worth-nature-center",
+      "https://naturecenterfriends.org/not-resting-on-our-laurels/"
+    ],
+    "official_register": {
+      "name": "City of Fort Worth Heritage Trees",
+      "url": "https://storymaps.arcgis.com/stories/9f6ce79e10a7491aa8d29327cf389831"
+    },
+    "access": "Public nature refuge, reached on foot by the Cross Timbers Trail (3.37 miles round trip per Old-Growth Forest Network); admission and hours not confirmed on a fetched page, check fwnaturecenter.org",
+    "transport": "No public transit found; drive to the Cross Timbers parking lot",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "GROVE, not a single trunk; flagged as an ensemble that is the destination (Todd Island, an upland island surrounded by marsh and sloughs; the trail loops around the stand). Sources: City heritage layer says 250+ years, original stand never fully logged per University of Arkansas researchers, National Natural Landmark status 1980; Friends of the Nature Center article and Wikipedia NNL list give designation 24 Nov 1980 for the refuge Cross Timbers forest; Old-Growth Forest Network page says trail has 250+ year old trees (it does not name Todd Island or the species; species post oak comes from the city layer). Texas joined the Old-Growth Forest Network via this trail on 5 May 2023 (search result, not fetched page). Age is the city figure, as a minimum. Alive: lifecheck NONE, but the refuge is a managed park with 2023 recognition. Pin is the layer point, approximate; the exact stand is on the trail loop."
   }
 ]
