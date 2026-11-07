@@ -531,6 +531,154 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "slc_015",
+      "name": "The Murray City Arboretum Halfelm",
+      "species": "Halfelm (Hemiptelea davidii)",
+      "age_estimate": "not documented",
+      "girth_cm": 213,
+      "height_m": 12.2,
+      "location": {
+        "address": "Murray City Park arboretum, 296 E Murray Park Ave, Murray",
+        "latitude": 40.661119,
+        "longitude": -111.883036,
+        "neighbourhood": "Murray City Park"
+      },
+      "verified_sources": [
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory/halfelm-murray",
+        "https://www.deseret.com/2005/9/23/19913487/get-to-know-murray-arboretum/",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Utah Community Forest Council directory)",
+        "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/halfelm-murray"
+      },
+      "access": "Free. Murray City Park (city-owned, 296 E Murray Park Ave) is a public park with a labelled arboretum; register PUBLIC_ACCESS = Yes. Park listings give roughly 6 am to 11 pm daily (not an official city statement).",
+      "transport": "Murray City Park, about 15 km south of downtown Salt Lake City; TRAX Murray Central about 1.5 km away (estimated, not verified).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "verify_notes": "Register row (Tree ID 47, owner Murray City, public access Yes): circumference 84 in = 213 cm, height 40 ft = 12.2 m, spread 31 ft, measured 2026 by Jeran Farley, nominated 2015, entry updated 2026-06, Utah state champion, not national. Second source: Deseret News 2005-09-23 'Get to know Murray arboretum' (Larry A. Sagers, fetched): 'The most unique tree is the Halfelm, or Hemiptelea davidi. Although it is related to elm trees, it is not a true elm, so Halfelm is one word. It is native to China and Korea, and the arboretum's specimen is a near-record size for North America.' Same article: arboretum championed by Joan Hardle, dedicated as the Joan M. Hardle Memorial Arboretum in 1982, founded by the Murray Shade Tree Commission about 40 years before 2005 to show trees at mature size; maps at the parks office. Alive: measured 2026-06; lifecheck RECENT 2026-07-22 (iNaturalist near the pin, not tree-specific). Pin is the register coordinate inside the arboretum, not a small named site: approximate. No age; none invented. Twin neighbours in the arboretum within ~100 m: Flowering Pear slc_016, Black Alder slc_017, Baldcypress slc_009, Chinese Fringetree and Brewer Spruce (open leads).",
+      "story": "Halfelm is written as one word, and the spelling carries the botany. A 2005 Deseret News piece on the Murray arboretum explained that Hemiptelea davidii is related to the elms but is not a true elm, so the two halves are joined. The same piece called it the most unique tree in the arboretum and said this specimen was near record size for North America.\n\nIt is native to China and Korea, a long way from a city park south of Salt Lake City. Utah's big tree register has listed it since 2015 and measured it again in 2026, at 12.2 metres tall on a trunk 213 centimetres round, with a crown about 9.4 metres across. No halfelm in the state is listed bigger.\n\nThe arboretum around it was made for this kind of looking. According to the same article, the Murray Shade Tree Commission started it about forty years before 2005 to show people what trees look like at their mature size, and in 1982 it was dedicated as the Joan M. Hardle Memorial Arboretum, after the woman who championed it.\n\nWithin about a hundred metres stand other state champions, among them a bald cypress, a black alder and a Callery pear, so the halfelm is one stop on a short loop. The park is owned by the city and free to enter.\n\nNobody has recorded when the halfelm was planted, and the register gives no age. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by its size against its neighbours, about 12 metres tall on a trunk 213 centimetres round, shorter than the bald cypress, alder and pear around it. It stands in the Murray City Park arboretum.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_016",
+      "name": "The Murray City Arboretum Flowering Pear",
+      "species": "Callery Pear (Pyrus calleryana)",
+      "age_estimate": "not documented",
+      "girth_cm": 231,
+      "height_m": 18.6,
+      "location": {
+        "address": "Murray City Park arboretum, 296 E Murray Park Ave, Murray",
+        "latitude": 40.661119,
+        "longitude": -111.883368,
+        "neighbourhood": "Murray City Park"
+      },
+      "verified_sources": [
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory/flowering-pear-murray",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Utah Community Forest Council directory)",
+        "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/flowering-pear-murray"
+      },
+      "access": "Free. Murray City Park (city-owned, 296 E Murray Park Ave) is a public park with a labelled arboretum; register PUBLIC_ACCESS = Yes. Park listings give roughly 6 am to 11 pm daily (not an official city statement).",
+      "transport": "Murray City Park, about 15 km south of downtown Salt Lake City; TRAX Murray Central about 1.5 km away (estimated, not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register row (Tree ID 97, owner Murray City, public access Yes): circumference 91 in = 231 cm, height 61 ft = 18.6 m, spread 47 ft, measured 2026 by Jeran Farley, nominated 2001, entry updated 2026-06, Utah state champion, not national. Register only plus the ground's owner (Murray City arboretum); flagged one source. Alive: measured 2026-06. Pin is the register coordinate inside the arboretum, approximate. Species name: register says Flowering Pear, scientific name Pyrus calleryana (Callery Pear). Nominated 2001, so it has been on the register for 25 years. No age. Neighbours: slc_015 Halfelm, slc_017 Black Alder, slc_009 Baldcypress.",
+      "story": "This pear has been on Utah's list of record trees for a quarter of a century. It was nominated to the state's big tree register in 2001, and when the register measured it again in 2026 it stood 18.6 metres tall on a trunk 231 centimetres round, with a crown about 14 metres across. No Callery pear in Utah is listed bigger.\n\nThe register files it as a flowering pear, the name it is often sold under, and gives the scientific name Pyrus calleryana. It is the species that lines a great many American streets and fills them with white blossom in spring. Here, in the arboretum of Murray City Park, south of Salt Lake City, one has been left to grow into a state record.\n\nThe arboretum was set up by the Murray Shade Tree Commission to show trees at their mature size, and this one does the job. It shares the collection with several other state champions within about a hundred metres, among them a halfelm from China and Korea, a black alder and a bald cypress, so a slow lap takes in four records. The park is owned by the city and free to enter.\n\nThe register is the one source for this tree, and it records size, not age. Nobody has written down when the pear was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it in April by its white blossom, and all year by its size, about 18 metres tall on a trunk 231 centimetres round. It stands in the Murray City Park arboretum, a few dozen metres from the halfelm.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "April, when the crown turns white with pear blossom"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_017",
+      "name": "The Murray City Arboretum Black Alder",
+      "species": "Black Alder (Alnus glutinosa)",
+      "age_estimate": "not documented",
+      "girth_cm": 229,
+      "height_m": 17.1,
+      "location": {
+        "address": "Murray City Park arboretum, 296 E Murray Park Ave, Murray",
+        "latitude": 40.661265,
+        "longitude": -111.883395,
+        "neighbourhood": "Murray City Park"
+      },
+      "verified_sources": [
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory/black-alder-murray",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Utah Community Forest Council directory)",
+        "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/black-alder-murray"
+      },
+      "access": "Free. Murray City Park (city-owned, 296 E Murray Park Ave) is a public park with a labelled arboretum; register PUBLIC_ACCESS = Yes. Park listings give roughly 6 am to 11 pm daily (not an official city statement).",
+      "transport": "Murray City Park, about 15 km south of downtown Salt Lake City; TRAX Murray Central about 1.5 km away (estimated, not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register row (Tree ID 158, owner Murray City, public access Y): circumference 90 in = 229 cm, height 56 ft = 17.1 m, spread 30 ft, measured and nominated 2018-10 by Jeran Farley, Utah state champion, not national. Register only; flagged one source. Alive: last measured 2018 only; no tree-level recent observation found, so alive is thin and says so. Pin is the register coordinate inside the arboretum, approximate. European species, a wetland tree, here beside the arboretum's creek per visitor reviews (not a source). No age. Neighbours: slc_015, slc_016, slc_009.",
+      "story": "A tree of European riverbanks is the biggest of its kind in Utah. Black alder grows wild along streams and in wet woods across Europe, and this one stands in the arboretum of Murray City Park, south of Salt Lake City, a long way from any European river.\n\nUtah's big tree register nominated and measured it in October 2018, at 17.1 metres tall on a trunk 229 centimetres round, with a crown about 9 metres across. That made it the state champion for its species, a title it still holds on the register.\n\nThe honest caveat is the date. The register is the only source we have for this tree, and 2018 is the last time anyone recorded standing in front of it. The pear and the halfelm near it were remeasured in 2026; this one was not. We have no reason to think it has gone, and no recent sighting either. If you visit, tell us it is still there.\n\nThe arboretum was set up by the Murray Shade Tree Commission to show trees at their full size and was dedicated in 1982 to Joan M. Hardle, who championed it. The alder shares it with other state champions within about a hundred metres, among them a Callery pear, a halfelm and a bald cypress. The park is owned by the city and free to enter.\n\nNobody has recorded when the alder was planted, and the register gives no age. If you know, tell us.",
+      "how_to_recognise": "You can recognise it as the alder among the arboretum's state champions, about 17 metres tall on a trunk 229 centimetres round. It stands in the Murray City Park arboretum, close to the Callery pear and the halfelm.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_018",
+      "name": "The Jordan River Parkway Peachleaf Willow",
+      "species": "Peachleaf Willow (Salix amygdaloides)",
+      "age_estimate": "not documented",
+      "girth_cm": 292,
+      "height_m": 10.1,
+      "location": {
+        "address": "Jordan River Parkway trail, about 11200 S where the trail crosses Midas Creek, Riverfront Park area, South Jordan",
+        "latitude": 40.548518,
+        "longitude": -111.915604,
+        "neighbourhood": "South Jordan"
+      },
+      "verified_sources": [
+        "https://utahurbanforest.org/amazing-trees/big-tree-directory/peachleaf-willow-south-jordan",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Utah Community Forest Council directory)",
+        "url": "https://utahurbanforest.org/amazing-trees/big-tree-directory/peachleaf-willow-south-jordan"
+      },
+      "access": "Free. The tree stands on the Jordan River Parkway trail, owned by South Jordan City (register owner field; PUBLIC_ACCESS = Y). The city lists the trail as a public trail through South Jordan.",
+      "transport": "About 23 km south of downtown Salt Lake City; the nearest TRAX stop is South Jordan Parkway, roughly 2.5 km away (estimated, not verified); a car or bike on the trail is easier.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register row (Tree ID 241, owner South Jordan City, public access Y): circumference 115 in = 292 cm, height 33 ft = 10.1 m, spread 52 ft (16 m), measured and nominated 2019-07 by Jeran Farley, Utah state champion, not national. Register only; flagged one source. Alive: last measured 2019; lifecheck RECENT 2024-12-30 only for the area (an iNaturalist observation near the pin, not tree-specific). The register address is a trail crossing, no sub-metre locator: approximate. Wide low crown (spread exceeds height) is the notable shape. Outlier, 23 km from the other points, a lone stop; ship only if a writer wants a Jordan River point. The city facility page (sjc.utah.gov, Jordan River Trail) confirms a public 3.5 mile trail through South Jordan; the 'about 11200 S' address and Riverfront Park location were confirmed only by search summary and the register, not a fetched page. No age.",
+      "story": "This willow is half again as wide as it is tall. Its crown spreads about 16 metres from a tree only 10.1 metres high, on a trunk 292 centimetres round, and on Utah's big tree register that makes it the largest peachleaf willow in the state.\n\nIt grows beside the Jordan River Parkway trail in South Jordan, about 23 kilometres south of downtown Salt Lake City, where the register places it at the trail's crossing of Midas Creek, around 11200 South near Riverfront Park. Peachleaf willow is a native of North American riverbanks, and this one stands where a creek meets the river trail.\n\nThe register is the only source for it. It was nominated and measured in July 2019, and that is the last record of anyone looking at this particular trunk. A naturalist's record near the spot from December 2024 is the latest sign of life there, but it does not name this tree. The register gives a trail crossing rather than an exact point, so expect to look along the bank rather than walk straight to it.\n\nThe trail itself is a public path owned by the city and free to use. It is far from the other trees on this page, so it makes most sense on a bike ride or a walk along the river rather than as a side trip from downtown. Nobody has recorded its age. If you know, or if you have seen it lately, tell us.",
+      "how_to_recognise": "You can recognise it by its shape, a low willow about 10 metres tall with a crown some 16 metres wide, wider than it is tall. It stands beside the Jordan River Parkway trail where the trail crosses Midas Creek.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
