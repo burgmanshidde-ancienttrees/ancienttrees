@@ -620,6 +620,22 @@ def in_strip(entry):
     return None
 
 
+def is_lead(entry):
+    """True when this sighting's photograph is already the tree's lead.
+
+    The Préfargier cedars (2026-11-06): a reader's own tree went live with
+    their photograph as the lead, the sighting stayed in the queue, and the
+    next knock's live-first step saw "has a lead, not in the strip" and put
+    the same photograph in the strip under a second file name, so the page
+    showed it twice."""
+    path = os.path.join(ROOT, "data", "cities", f"{entry['city_slug']}.json")
+    city = load(path, {"trees": []})
+    for t in city.get("trees", []):
+        if t.get("id") == entry["tree_id"]:
+            return (t.get("photo") or {}).get("sighting_id") == entry["sighting_id"]
+    return False
+
+
 def unstrip(entry):
     """Take this sighting's photograph out of the strip again (a hold, a
     reject, or Hidde's overrule). Returns the url removed, or None."""
@@ -669,7 +685,7 @@ def live_first(queue, today, really):
     (2026-09-07)."""
     n = 0
     for e in queue:
-        if e.get("mine") or not has_lead(e.get("current_photo")) or in_strip(e):
+        if e.get("mine") or not has_lead(e.get("current_photo")) or in_strip(e) or is_lead(e):
             continue
         src = os.path.join(ROOT, e["file"])
         if not os.path.exists(src):
