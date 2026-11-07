@@ -2,78 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-07T20:08:23+00:00",
-   "date": "2026-09-07",
-   "run_id": "34151743190",
-   "minutes": 21.8,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 172,
-   "denials": 19,
-   "denials_source": "permission_denials: Bash(bash), Bash(curl), Bash(for), Bash(grep), Bash(if), Bash(mkdir), Bash(pip), Bash(python3)",
-   "ended": "success",
-   "tokens": 11222846,
-   "claims_held": [
-    "_famous-belgium",
-    "_bomenbieb-netherlands",
-    "_famous-taiwan"
-   ],
-   "commits": 38,
-   "cities_touched": 12,
-   "cities": [
-    {
-     "city": "berga-elster",
-     "trees": 1
-    },
-    {
-     "city": "eisolzried",
-     "trees": 1
-    },
-    {
-     "city": "pisz-forest",
-     "trees": 1
-    },
-    {
-     "city": "poleski-national-park",
-     "trees": 1
-    },
-    {
-     "city": "wuppertal",
-     "trees": 1
-    },
-    {
-     "city": "zalgiriai",
-     "trees": 1
-    },
-    {
-     "city": "beijing",
-     "trees": 0
-    },
-    {
-     "city": "girona",
-     "trees": 0
-    },
-    {
-     "city": "groningen",
-     "trees": 0
-    },
-    {
-     "city": "hobart",
-     "trees": 0
-    },
-    {
-     "city": "kaunas",
-     "trees": 0
-    },
-    {
-     "city": "modena",
-     "trees": 0
-    }
-   ],
-   "trees": 6,
-   "logged": true
-  },
-  {
    "started": "2026-09-07T21:37:14+00:00",
    "date": "2026-09-07",
    "run_id": "34163781587",
@@ -22672,6 +22600,50 @@
     }
    ],
    "trees": 21,
+   "logged": true
+  },
+  {
+   "started": "2026-11-07T13:20:45+00:00",
+   "date": "2026-11-07",
+   "run_id": "42376478015",
+   "minutes": 22.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 110,
+   "denials": 1,
+   "denials_source": "permission_denials: Bash(cd ; cat ; import ; ? ...)",
+   "ended": "success",
+   "tokens": 324383,
+   "claims_held": [],
+   "commits": 18,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "salt-lake-city",
+     "trees": 4
+    },
+    {
+     "city": "chicago",
+     "trees": 3
+    },
+    {
+     "city": "tucson",
+     "trees": 3
+    },
+    {
+     "city": "fort-worth",
+     "trees": 2
+    },
+    {
+     "city": "chattanooga",
+     "trees": 1
+    },
+    {
+     "city": "new-york",
+     "trees": 1
+    }
+   ],
+   "trees": 14,
    "logged": true
   }
  ],
