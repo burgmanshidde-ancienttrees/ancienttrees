@@ -2,104 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-07T21:37:14+00:00",
-   "date": "2026-09-07",
-   "run_id": "34163781587",
-   "minutes": 93.0,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 395,
-   "denials": 46,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Bash(sed), Bash(wc), Bash(which)",
-   "ended": "success",
-   "tokens": 51469609,
-   "claims_held": [
-    "_famous-taiwan"
-   ],
-   "commits": 11,
-   "cities_touched": 19,
-   "cities": [
-    {
-     "city": "baldenhain",
-     "trees": 1
-    },
-    {
-     "city": "bargischow",
-     "trees": 1
-    },
-    {
-     "city": "deventer",
-     "trees": 1
-    },
-    {
-     "city": "eichigt",
-     "trees": 1
-    },
-    {
-     "city": "frankenthal-sachsen",
-     "trees": 1
-    },
-    {
-     "city": "himmelsberg",
-     "trees": 1
-    },
-    {
-     "city": "horn-bremen",
-     "trees": 1
-    },
-    {
-     "city": "limmersdorf",
-     "trees": 1
-    },
-    {
-     "city": "linderhof",
-     "trees": 1
-    },
-    {
-     "city": "maastricht",
-     "trees": 1
-    },
-    {
-     "city": "neudrossenfeld",
-     "trees": 1
-    },
-    {
-     "city": "neuenrade",
-     "trees": 1
-    },
-    {
-     "city": "niedenstein",
-     "trees": 1
-    },
-    {
-     "city": "ottendorf-gaedheim",
-     "trees": 1
-    },
-    {
-     "city": "peesten",
-     "trees": 1
-    },
-    {
-     "city": "polchow",
-     "trees": 1
-    },
-    {
-     "city": "schlettau",
-     "trees": 1
-    },
-    {
-     "city": "tilburg",
-     "trees": 1
-    },
-    {
-     "city": "wilparting",
-     "trees": 1
-    }
-   ],
-   "trees": 19,
-   "logged": true
-  },
-  {
    "started": "2026-09-07T23:11:46+00:00",
    "date": "2026-09-08",
    "run_id": "34166432851",
@@ -22644,6 +22546,27 @@
     }
    ],
    "trees": 14,
+   "logged": true
+  },
+  {
+   "started": "2026-11-07T18:07:35+00:00",
+   "date": "2026-11-07",
+   "run_id": "42399642039",
+   "minutes": 5.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 68,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(cd ; cat ; import ; ? ...), Bash(cd ; for ; do ; curl ...)",
+   "ended": "success",
+   "tokens": 945304,
+   "claims_held": [
+    "salt-lake-city"
+   ],
+   "commits": 3,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
    "logged": true
   }
  ],
