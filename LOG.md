@@ -1,5 +1,10 @@
 # LOG
 
+## 2026-11-07 (night run, 00:22 window): nothing published
+
+Rung 1 empty (no sightings, no tree notes). Rung 2: health.py exit 1 on the iOS app (scheduled run 2026-11-06 21:55, failed) and on 5 of 12 knocks delivered. The iOS failures are real layout findings from the 11-06 app work, not infrastructure: city screen on iPhone 17 Pro, `highlight-card` and an Image end 66 points past the 402pt edge (CLIPPED); explore on iPhone SE (iOS 18.6), four `visitor-name` buttons are 78 by 16, under Apple's 44 by 44 (SMALL); iOS 18 test `testEveryFlowLeavesAWayBack` could not scroll to `tree-card`. I cannot build or sweep the app on this runner, so I changed no Swift. For Hidde: next app session should fix the three before build 41.
+Supply: the shelf is thin. Of the "written and ready to merge" files, the Tucson, New York 3 (nyc_085) and Oahu ones are held trees the pipeline already declines, so I did not merge them. `scout_next.py --target` says RETRY Brighton while prepare.py lists Brighton as a wall verified empty in the last 48h; I did not retry it. Nothing was claimed, written or committed apart from this entry.
+
 ## 2026-11-06 (night session: New from visitors on the web homepage)
 
 Live on ancienttrees.app: the homepage's "New from visitors" row, right under the intro line and above the favourite cities (where the app puts it, before the cities). Design shown to Hidde first and approved, with his one change: every name in the row stands on one height, so tile titles stop at two lines. Same data as the app (new_from_visitors(), one tile per tree, from four tiles), the shelf card plus a 16px avatar and the name, "A visitor" for no public profile or a generated name; a tap on a name opens the profile, signed out it opens sign-in (checked live). Heading in all eight languages. Card data is baked at build for the 48 trees with a visitor's photo, so a photo newer than the last deploy shows from the next one. Checked live at 375px and desktop, 12 tiles today.
