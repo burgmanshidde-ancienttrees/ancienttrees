@@ -9,6 +9,14 @@
         "tokens": 66000,
         "trees": 0,
         "note": "Enrichment of 20 New York trees: 5 access lines (nyc_034, 035, 074, 075, 076); Green-Wood register and measurement not readable (JS tree finder); season gaps not checked, recorded as dead ends for 90 days. Token figure estimated."
+      },
+      {
+        "date": "2026-11-07",
+        "kind": "write",
+        "target": "fort-worth, tucson, chattanooga, new-york (+ held: dartmoor, frankfurt, innsbruck, san-francisco, taiwan, noto, aspromonte, brindisi, castelbuono, isole-tremiti, serra-san-bruno, grazalema-rediam)",
+        "tokens": 120000,
+        "trees": 7,
+        "note": "4 stories written (ftw_025, ftw_027, tus_007, cht_002) and 3 already-written merged (tus_013, tus_014, nyc_085), all app-only. 17 named entries skipped on existing holds (not findable, access unproven, alive unconfirmed, duplicate, booked-tour access wording); taiwan had no tree outstanding. Species aligned to canonical for ftw_025 (Oak (Quercus sp.)) and ftw_027 (Southern Live Oak). Token figure estimated, about 17k a tree."
       }
     ],
     "2026-11-06": [
