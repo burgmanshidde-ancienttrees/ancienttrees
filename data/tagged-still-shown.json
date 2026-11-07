@@ -1,10 +1,10 @@
 {
  "generated": "scripts/tagged_shown.py",
  "since": "2026-11-01",
- "google_data_through": "2026-11-05",
+ "google_data_through": "2026-11-06",
  "tagged_pages_shown": 839,
- "impressions": 2429,
- "clicks": 42,
+ "impressions": 2434,
+ "clicks": 43,
  "pages": [
   {
    "path": "/united-states/maryland",
@@ -224,6 +224,17 @@
    ],
    "first_day": "2026-11-02",
    "last_day": "2026-11-02"
+  },
+  {
+   "path": "/new-york/elms-on-the-rocks",
+   "impressions": 3,
+   "clicks": 1,
+   "days": [
+    "2026-11-02",
+    "2026-11-05"
+   ],
+   "first_day": "2026-11-02",
+   "last_day": "2026-11-05"
   },
   {
    "path": "/seoul/banghak-dong-ginkgo",
@@ -1015,6 +1026,19 @@
    "last_day": "2026-11-04"
   },
   {
+   "path": "/es/granada",
+   "impressions": 8,
+   "clicks": 0,
+   "days": [
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-06"
+   ],
+   "first_day": "2026-11-01",
+   "last_day": "2026-11-06"
+  },
+  {
    "path": "/es/madrid/himalayan-cedar-of-the-crystal-palace",
    "impressions": 8,
    "clicks": 0,
@@ -1057,6 +1081,19 @@
    ],
    "first_day": "2026-11-01",
    "last_day": "2026-11-02"
+  },
+  {
+   "path": "/kyoto/inverted-ginkgo-of-nishi-honganji",
+   "impressions": 8,
+   "clicks": 0,
+   "days": [
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-05"
+   ],
+   "first_day": "2026-11-01",
+   "last_day": "2026-11-05"
   },
   {
    "path": "/palermo/falcone-tree",
@@ -1142,31 +1179,19 @@
    "last_day": "2026-11-03"
   },
   {
-   "path": "/es/granada",
+   "path": "/gliniak/wszebora",
    "impressions": 7,
    "clicks": 0,
    "days": [
-    "2026-11-01",
     "2026-11-02",
-    "2026-11-03"
+    "2026-11-03",
+    "2026-11-06"
    ],
-   "first_day": "2026-11-01",
-   "last_day": "2026-11-03"
+   "first_day": "2026-11-02",
+   "last_day": "2026-11-06"
   },
   {
    "path": "/istanbul",
-   "impressions": 7,
-   "clicks": 0,
-   "days": [
-    "2026-11-01",
-    "2026-11-02",
-    "2026-11-03"
-   ],
-   "first_day": "2026-11-01",
-   "last_day": "2026-11-03"
-  },
-  {
-   "path": "/kyoto/inverted-ginkgo-of-nishi-honganji",
    "impressions": 7,
    "clicks": 0,
    "days": [
@@ -1327,17 +1352,6 @@
   },
   {
    "path": "/fr/lyon/pin-de-bunge-or-pin-de-napoleon",
-   "impressions": 6,
-   "clicks": 0,
-   "days": [
-    "2026-11-02",
-    "2026-11-03"
-   ],
-   "first_day": "2026-11-02",
-   "last_day": "2026-11-03"
-  },
-  {
-   "path": "/gliniak/wszebora",
    "impressions": 6,
    "clicks": 0,
    "days": [
@@ -2631,6 +2645,17 @@
    "last_day": "2026-11-03"
   },
   {
+   "path": "/de/vienna/turkish-hazels-of-resselpark",
+   "impressions": 3,
+   "clicks": 0,
+   "days": [
+    "2026-11-02",
+    "2026-11-06"
+   ],
+   "first_day": "2026-11-02",
+   "last_day": "2026-11-06"
+  },
+  {
    "path": "/de/zurich",
    "impressions": 3,
    "clicks": 0,
@@ -3752,16 +3777,6 @@
    "last_day": "2026-11-04"
   },
   {
-   "path": "/de/vienna/turkish-hazels-of-resselpark",
-   "impressions": 2,
-   "clicks": 0,
-   "days": [
-    "2026-11-02"
-   ],
-   "first_day": "2026-11-02",
-   "last_day": "2026-11-02"
-  },
-  {
    "path": "/dublin/irelands-largest-tree-of-heaven",
    "impressions": 2,
    "clicks": 0,
@@ -4407,16 +4422,6 @@
    ],
    "first_day": "2026-11-03",
    "last_day": "2026-11-03"
-  },
-  {
-   "path": "/new-york/elms-on-the-rocks",
-   "impressions": 2,
-   "clicks": 0,
-   "days": [
-    "2026-11-02"
-   ],
-   "first_day": "2026-11-02",
-   "last_day": "2026-11-02"
   },
   {
    "path": "/nl/amsterdam/last-elm-of-stationsplein",

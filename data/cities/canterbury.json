@@ -62,7 +62,8 @@
         "attribution_url": "https://www.geograph.org.uk/profile/10354",
         "status": "approved",
         "width": 640,
-        "height": 480
+        "height": 480,
+        "taken_month": 4
       },
       "photos": [
         {
@@ -72,7 +73,8 @@
           "attribution_url": "https://commons.wikimedia.org/wiki/User:Onthewings",
           "status": "approved",
           "width": 8160,
-          "height": 6144
+          "height": 6144,
+          "taken_month": 12
         }
       ],
       "location_precision": "confirmed",
