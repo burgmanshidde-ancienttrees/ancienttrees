@@ -2,74 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-07T18:13:43+00:00",
-   "date": "2026-09-07",
-   "run_id": "34150757780",
-   "minutes": 113.1,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 540,
-   "denials": 23,
-   "denials_source": "permission_denials: Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 180603142,
-   "claims_held": [],
-   "commits": 35,
-   "cities_touched": 12,
-   "cities": [
-    {
-     "city": "berga-elster",
-     "trees": 1
-    },
-    {
-     "city": "eisolzried",
-     "trees": 1
-    },
-    {
-     "city": "pisz-forest",
-     "trees": 1
-    },
-    {
-     "city": "poleski-national-park",
-     "trees": 1
-    },
-    {
-     "city": "wuppertal",
-     "trees": 1
-    },
-    {
-     "city": "zalgiriai",
-     "trees": 1
-    },
-    {
-     "city": "beijing",
-     "trees": 0
-    },
-    {
-     "city": "girona",
-     "trees": 0
-    },
-    {
-     "city": "groningen",
-     "trees": 0
-    },
-    {
-     "city": "hobart",
-     "trees": 0
-    },
-    {
-     "city": "kaunas",
-     "trees": 0
-    },
-    {
-     "city": "modena",
-     "trees": 0
-    }
-   ],
-   "trees": 6,
-   "logged": true
-  },
-  {
    "started": "2026-09-07T20:08:23+00:00",
    "date": "2026-09-07",
    "run_id": "34151743190",
@@ -22572,6 +22504,174 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-07T06:01:45+00:00",
+   "date": "2026-11-07",
+   "run_id": "42345129338",
+   "minutes": 17.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 98,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(cd ; rm), Bash(env)",
+   "ended": "success",
+   "tokens": 325605,
+   "claims_held": [],
+   "commits": 10,
+   "cities_touched": 37,
+   "cities": [
+    {
+     "city": "la-palma",
+     "trees": 4
+    },
+    {
+     "city": "ayutthaya",
+     "trees": 2
+    },
+    {
+     "city": "horta",
+     "trees": 2
+    },
+    {
+     "city": "bar",
+     "trees": 1
+    },
+    {
+     "city": "chiang-mai",
+     "trees": 1
+    },
+    {
+     "city": "george-town",
+     "trees": 1
+    },
+    {
+     "city": "kastela",
+     "trees": 1
+    },
+    {
+     "city": "kotor",
+     "trees": 1
+    },
+    {
+     "city": "lanzarote",
+     "trees": 1
+    },
+    {
+     "city": "lecce",
+     "trees": 1
+    },
+    {
+     "city": "martina-franca",
+     "trees": 1
+    },
+    {
+     "city": "milo",
+     "trees": 1
+    },
+    {
+     "city": "sukhothai",
+     "trees": 1
+    },
+    {
+     "city": "tha-maka",
+     "trees": 1
+    },
+    {
+     "city": "vernole",
+     "trees": 1
+    },
+    {
+     "city": "zafferana-etnea",
+     "trees": 1
+    },
+    {
+     "city": "angra-do-heroismo",
+     "trees": 0
+    },
+    {
+     "city": "balfron",
+     "trees": 0
+    },
+    {
+     "city": "benmore",
+     "trees": 0
+    },
+    {
+     "city": "bettws-newydd",
+     "trees": 0
+    },
+    {
+     "city": "canterbury",
+     "trees": 0
+    },
+    {
+     "city": "castlewellan",
+     "trees": 0
+    },
+    {
+     "city": "crom",
+     "trees": 0
+    },
+    {
+     "city": "dark-hedges",
+     "trees": 0
+    },
+    {
+     "city": "florence-court",
+     "trees": 0
+    },
+    {
+     "city": "glasgow",
+     "trees": 0
+    },
+    {
+     "city": "glen-affric",
+     "trees": 0
+    },
+    {
+     "city": "gresford",
+     "trees": 0
+    },
+    {
+     "city": "inverness",
+     "trees": 0
+    },
+    {
+     "city": "mottisfont",
+     "trees": 0
+    },
+    {
+     "city": "nevern",
+     "trees": 0
+    },
+    {
+     "city": "new-york",
+     "trees": 0
+    },
+    {
+     "city": "reelig-glen",
+     "trees": 0
+    },
+    {
+     "city": "santa-cruz-de-tenerife",
+     "trees": 0
+    },
+    {
+     "city": "spoleto",
+     "trees": 0
+    },
+    {
+     "city": "vallombrosa",
+     "trees": 0
+    },
+    {
+     "city": "wimborne-st-giles",
+     "trees": 0
+    }
+   ],
+   "trees": 21,
    "logged": true
   }
  ],
