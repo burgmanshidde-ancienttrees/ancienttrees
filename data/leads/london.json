@@ -257,6 +257,17 @@
     {
       "name": "St Andrew's Church yew, Enfield",
       "reason": "Verify pass north London 2026-11-03: Waymarking and London Gardens Trust describe an ancient yew now lost; no standing ancient yew found. (The yew people mean is the Totteridge Yew, already lon_001.)"
+    },
+    {
+      "name": "The Royal Oak, Richmond Park",
+      "latitude": 51.444646,
+      "longitude": -0.283504,
+      "reason": "Write pass 2026-11-07: duplicate of lon_002 The Royal Oak (same trunk, pins 10 m apart), already live. Verify notes kept for enriching lon_002: Age is an estimate repeated by sources, not a measurement: Ancient Tree Forum 'estimated to be around 750 years old' (Royal Parks the manager), exploring-london 'more than 750', Great Trees of London list '~750 (2020)'. Age range 600 to 800 is broad on purpose. Hollow, pollarded for several hundred years, no royal connection despite the name (exploring-london). Pin: Great Trees list coordinate (51.444646,-0.283504) agrees with Ancient Tree Forum grid ref TQ193731 to about 50 m; neither is a tree-level fix so kept approximate. The tree is reported to have its own enclosure (secondary source, not seen on a primary page). No girth recorded: the only figure found (6.11 m) is from the Woodland Trust Ancient Tree Inventory, which we do not use. Alive: iNaturalist observation 2024-10-05 within radius (lifecheck RECENT, may not be this exact tree); older Great Trees entry says 2020. Flagged: age is a popular estimate; no official register page for this single tree.",
+      "verified_sources": [
+        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/",
+        "https://exploring-london.com/2024/05/22/10-significant-and-historic-london-trees4-the-royal-oak-richmond-park/",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+      ]
     }
   ]
 }
