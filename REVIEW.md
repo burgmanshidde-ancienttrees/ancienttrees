@@ -32,6 +32,13 @@ Web half: the last 24 hours were data (walk routes, vendored photos, 16 app-only
 - NOTE the standing "year printed as age" finding needs its regex narrowed: 103 pages match `content="A (17|18|19|20)[0-9]{2}-year-old`, but some are real ages (Te Matua Ngahere, "A 2000-year-old Kauri", is a sourced age, not a year). A qa check must compare against age_basis, not the digits.
 - NOTE data/walk-routes.json (3d3fe5b0e, +684): still unchecked whether walks route through app-only trees that have no page (open since 11-06).
 
+App half (iPhone SE: collect-describe, collect-identify, collect-intro, collect-place, collect-ticked, collect-voted):
+
+- NOTE APP collect-describe.png: the new-tree page opens with a blank white hero of about half the screen above "A tree in Amsterdam", and the Species row is cut by the Save tree bar so its Add control is not visible. A reader sees an empty box and a half row; a placeholder or a shorter hero would show what the page is. For a session.
+- NOTE APP collect-identify.png: "Pick the one in your photograph" and "Not sure which? Tap (i) to compare" are shown over a list of one tree, so there is nothing to pick between or compare. Say it with one candidate ("Is this the one?"). For a session.
+- NOTE APP collect-place.png: the map's "Amsterdam" place label prints straight through the drag pin's stem, so the pin tip cannot be read against the label it sits on. For a session.
+- NOTE APP collect-ticked.png / collect-voted.png: "Lime, 128 years old" is the planting age of a 1898 commemorative tree, shown without its basis (the story says "around 128"). Honest enough, but the sheet states it as the tree's age. collect-intro and the thumbs-up note field read consistently, nothing contradicted.
+
 ## 2026-11-06
 
 Web half: the last 24 hours were app-only trees as pins (6522ad63a), vendored photos, walk routes, Android waitlist field. No em dashes found in the sampled built HTML.
