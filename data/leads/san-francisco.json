@@ -181,6 +181,11 @@
       "candidate": "San Francisco deepen pass 2026-11-02: nothing new verified, third pass on an exhausted register",
       "status": "lead",
       "reason": "Brief re-read; every unmined register row was already judged by passes of 10-27 and 10-30 (private yards, or published). One new angle searched (oldest tree in San Francisco, Golden Gate Park and Presidio): returns only Uncle John's Tree (already live), the Golden Gate Park oak woodland (a woodland, no single trunk documented), the Presidio Centennial Tree (live as sfo_011) and a Telegraph Hill tea tree described only by an arborist blog (no source). Hellman Hollow cypress was removed. Lead only if tree-level sources appear. Do not dispatch another SF pass without a new named naming body."
+    },
+    {
+      "candidate": "San Francisco deepen pass 2026-11-07: nothing new verified, fourth pass on an exhausted register",
+      "status": "lead",
+      "reason": "Brief re-read; all unmined register rows already judged (private yards, published, or earlier leads). Same angle re-searched (oldest trees, Golden Gate Park, Presidio): only Uncle John, the Centennial Tree, Oak Woodlands (a woodland, no single trunk) and a removed Hellman Hollow cypress. sfrecpark.org hangs (curl -m 20, exit 28). Do not dispatch another SF pass without a new named naming body."
     }
   ],
   "blocked": [

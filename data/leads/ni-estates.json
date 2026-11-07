@@ -15,7 +15,9 @@
   {
    "place": "castle-ward",
    "name": "Castle Ward parkland oaks",
-   "reason": "Not researched in time."
+   "reason": "Not researched in time.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "place": "castlewellan",
@@ -42,7 +44,9 @@
    "name": "Castlewellan Sierra Redwood opposite the great redwood",
    "reason": "22 ft 2 in girth (book); folded into cwl_001, which tree carries it is unclear.",
    "lat": 54.26534,
-   "lon": -5.95243
+   "lon": -5.95243,
+   "species": "Coast Redwood (Sequoia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "place": "castlewellan",
@@ -70,7 +74,9 @@
    "name": "Armagh Mall venerable oak planted 1790s",
    "reason": "Archbishop's 2021 remark only (Armagh Council notice 2 Mar 2021); no species confirmation, girth or position.",
    "lat": 54.3488,
-   "lon": -6.6494
+   "lon": -6.6494,
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "place": "hillsborough",
