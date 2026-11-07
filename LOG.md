@@ -1,5 +1,9 @@
 # LOG
 
+## 2026-11-07 (third attempt): Braga verify, nothing published
+
+Pulled and checked claims first. `leads.py --ready` held 29 leads, all out of focus (Malta, Bali, Sicily, Cyprus and similar) or declined by the earlier write pass, so I wrote none. A verify pass on Braga found no new tree: the four in-city candidates are live and the two Tibães trees (brg_004, brg_005) stay held because the cerca closure is unconfirmed (host unreachable, Wayback still 2026-09-24). Braga is now a wall for 48h. Fort Worth's claim stands with 3 candidates, under the six needed for a write pass. The Perugia translation was not taken because TRANSLATIONS_OUT pauses new translation passes. Next: re-check Tibães after a Wayback snapshot dated past 7 Nov, and the Agaete fig verify.
+
 ## 2026-11-07 (retry attempt, verify on Fort Worth): 3 candidates, nothing published
 
 A verify pass on Fort Worth delivered 3 one-source trees from the city's heritage layer to data/research/fort-worth-verified.json: ftw_024 Casino Beach Pecan, ftw_025 Monticello Park Live Oak, ftw_026 Todd Island Post Oak Grove. All have approximate pins and no photograph, and the alive checks are thin. They are not merged or written yet, because that pass sits under the six-candidate minimum for a write. The fort-worth claim in data/in-flight.json is still standing (release refuses until ftw_021 and the new ids merge); it expires in 4 hours. Portland refused a claim (33 of 30). Next: a write pass once the Fort Worth batch reaches six, or a Perugia Italian translation from BACKUP.

@@ -177,11 +177,6 @@
       "released_at": "2026-11-02T19:15:10+00:00"
     },
     {
-      "slug": "braga",
-      "kind": "verify",
-      "released_at": "2026-11-03T06:14:11+00:00"
-    },
-    {
       "slug": "manchester",
       "kind": "verify",
       "released_at": "2026-11-03T09:17:01+00:00"
@@ -255,6 +250,11 @@
       "slug": "brighton",
       "kind": "verify",
       "released_at": "2026-11-06T20:23:43+00:00"
+    },
+    {
+      "slug": "braga",
+      "kind": "verify",
+      "released_at": "2026-11-07T00:32:44+00:00"
     }
   ]
 }
