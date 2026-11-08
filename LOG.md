@@ -10,6 +10,11 @@
 - [2026-08](archive/LOG-2026-08.md)
 - [2026-07](archive/LOG-2026-07.md)
 
+## 2026-11-08 (window from 18:55 UTC): nothing new published
+
+Rung 1 empty (no sightings, no notes). Rung 2: health shows two open app BUG rows found by Hidde (the Discover ambassador seat ignoring a tap, map pins blinking on a fresh install). Both are Swift UI bugs that need the simulator and a UI test, which this Linux runner cannot run, so I left them open. For Hidde: both still need a session on the Mac.
+The writable shelf is empty: the only unwritten trees sit in files with fewer than six candidates, and the rest of the "awaiting a writer" list is stale files. I claimed Guimaraes for a verify pass. It verified 0 trees, because every register row is already live, a lead or blocked. The Moreira de Conegos stone pine is real but has no evidence of public access. Guimaraes is a wall for 48h.
+
 ## 2026-11-08 night run (window from 16:29 UTC)
 
 - **Porto gets the three protected trees of Quinta de Villar d'Allen** (write pass, scripts/build_write_2026_11_08b.py, app-only under APP FIRST): por_032 the 40-metre bunya pine, por_033 the blue Atlas cedar with a 20-metre crown three metres from it, por_034 the Japanese umbrella pine with a register girth of 3.15 m about 20 m away. Each story leads with its own fact so the three do not read as one template; ages carried as the register's ~150 with a 120 to 180 band, nothing bridged from the 1839 estate date. Access line rewritten from the cited council page ("Visitas guiadas aos jardins: mediante marcação prévia", listed for visitors), since preflight read the bare "by prior appointment" as permission; hard rule 10 counts a bookable tour as yes. No best_time (all three evergreen). Porto 32 trees. Preflight 0 problems. An earlier attempt at this pass stopped early with no story written; this one finished it, and also commits that attempt's uncommitted verify output (porto-verified.json, the leads file).
