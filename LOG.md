@@ -13,6 +13,13 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-08 daily publish (scheduled task): Lyon +10 into the app, queue empty
+
+- **What went live (9b09e3009), app only under APP FIRST, no web page:** Lyon lyo_026 to lyo_035 from data/research/lyon-verified-2.json, written 11-02 to 11-04 and the last unmerged set on the shelf: Square Ferrié's cedars, copper beeches and red oak, the Jardin des Chartreux hickory (species asked of the reader), the weeping blue cedar of Square Henri Dor and the planes of Quai Clemenceau and Saint-Côme-Saint-Damien (Caluire), the unpruned planes of Collonges, the Balmont planes (La Duchère), the Écully town hall cedars. All Métropole register trees, flagged, approximate pins, no photograph, each with a recognition line. Grafted with the live intro, meta and FAQ untouched (out/tmp/graft_lyon.py); one typo fixed in the hickory story. Preflight 0 problems; the pace counts nothing while APP FIRST holds. /lyon 200; the new trees have no page of their own to check. No claims stood.
+- **Still waits:** nothing writable. The five written trees left on the shelf are held with their reasons: cbr_007 (Penacova, outside the day-trip limit, not worth the walk), cdl_001 (Mastrinka, access unproven), sgz_003 (Ocuri, access line needs "anyone can book"), hnl_024 (ticketed aquarium, fence unknown), phl_020 (paid share). Salt Lake City's slc_019/020 are verified, not written.
+- **Daily publish: queue empty.** For Hidde: the daily task "publish-held-trees-daily" can be switched off under Scheduled; new trees now reach the app straight from the night run's write passes.
+- Breakage: the first push timed out connecting to GitHub (network, not the hook); the retry went through.
+
 ## 2026-11-07 night run (third attempt, same window): nothing published
 
 Released the leipzig claim: its brief lists 0 candidates (no imported register covers it), so it is a wall for 48h. Munich's brief also has no coordinates or candidates (from-zero research needs Hidde's ask), so no claim. `leads.py --ready` is 0; the only unwritten verified files are Salt Lake City's two small trees (under the six-candidate floor, claim still held until it expires) and singles in other cities. Remaining ladder rungs need a Mac session (iOS schedule failures) or Hidde's word. Translation backup (Perugia, it) is blocked while TRANSLATIONS_OUT holds.
