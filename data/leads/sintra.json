@@ -10,7 +10,8 @@
       "lat": 38.79332,
       "lng": -9.421356,
       "status": "lead",
-      "reason": "treesandshrubsonline.org (International Dendrology Society) states 'one of 33.5m x 1.5m dbh at Quinta de Monserrate, Sintra (Portugal)', citing '(Monumental Trees 2025; Jacobson 1996)'. Checked directly (fetched, not a search summary) but the citation for this specific figure traces to Monumental Trees, and Jacobson 1996 ('North American Landscape Trees') is unlikely to independently cover a Portuguese specimen rather than the general Taxodium/US context the surrounding paragraph discusses. No second source independent of Monumental Trees found this pass (checked ISA/Lisbon's own Taxodium page and general Portuguese nursery/species pages, none mention Monserrate specifically). Does not clear the two-source bar today; would ship if a future pass finds Franco 1951-style independent botanical literature or an official Parques de Sintra page naming this specimen, the same route that worked for sin_006's kauri."
+      "reason": "treesandshrubsonline.org (International Dendrology Society) states 'one of 33.5m x 1.5m dbh at Quinta de Monserrate, Sintra (Portugal)', citing '(Monumental Trees 2025; Jacobson 1996)'. Checked directly (fetched, not a search summary) but the citation for this specific figure traces to Monumental Trees, and Jacobson 1996 ('North American Landscape Trees') is unlikely to independently cover a Portuguese specimen rather than the general Taxodium/US context the surrounding paragraph discusses. No second source independent of Monumental Trees found this pass (checked ISA/Lisbon's own Taxodium page and general Portuguese nursery/species pages, none mention Monserrate specifically). Does not clear the two-source bar today; would ship if a future pass finds Franco 1951-style independent botanical literature or an official Parques de Sintra page naming this specimen, the same route that worked for sin_006's kauri.",
+      "pass_2026_11_08": "Re-checked: WebSearch finds only the same treesandshrubsonline line (cites Monumental Trees 2025) and a Portuguese forum photo caption calling it 'Taxodio de Monserrate'; jardimformoso.blogspot.com returned HTTP 429 to curl (two attempts). Still one effective source, no official Parques de Sintra page. Stays a lead."
     },
     {
       "name": "Podocarpus neriifolius, grounds of Pena Palace",
@@ -26,7 +27,8 @@
       "lat": null,
       "lng": null,
       "status": "lead",
-      "reason": "Carried over from the 2026-09-13 note below: a travel article (viagens.sapo.pt) claims 'two enormous sequoias' near Tanque dos Frades among the first specimens from the mid-19th-century reforestation, but parquesdesintra.pt's own page for that recanto does not mention sequoias at all. No measurement, age or coordinate for either tree. Re-checked this pass (no new source found); still too thin and still conflicting on species."
+      "reason": "Carried over from the 2026-09-13 note below: a travel article (viagens.sapo.pt) claims 'two enormous sequoias' near Tanque dos Frades among the first specimens from the mid-19th-century reforestation, but parquesdesintra.pt's own page for that recanto does not mention sequoias at all. No measurement, age or coordinate for either tree. Re-checked this pass (no new source found); still too thin and still conflicting on species.",
+      "pass_2026_11_08": "Re-searched Pena sequoia in Portuguese: no result for a Pena specimen, no measurement or coordinate. Stays a lead."
     },
     {
       "name": "ICNF register rows within 20 km of Sintra, 2026-10-31 deepen pass (rows outside Sintra)",

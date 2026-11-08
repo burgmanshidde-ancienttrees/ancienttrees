@@ -13,6 +13,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-11-08 night run (window 00:57 UTC): nothing published
+
+Product: nothing changed. Rung 1 empty (no sightings waiting, no new notes). Preflight says 4 submissions have no written verdict, but `judgement.py --open` lists only rows that already carry a verdict, so I could not find them; a session should look. Rung 2: health.py exits 1 only for the scheduled iOS run (failed 11-07 20:39 after 54 min, third scheduled failure in a row; the failed assertions are in the xcresult artifact, which this Linux runner cannot open). The web error is a ResizeObserver loop notice, browser noise, orange not red.
+Shelf: READY leads 0, so I refilled with a verify pass on Sintra. It added nothing: register candidates all live, blocked or belong to Cascais/Lisbon; the Monserrate swamp cypress and Pena sequoias stay leads on one effective source (jardimformoso returned 429). Sintra is a wall for 48h, claim released.
+For Hidde: iOS scheduled runs keep failing; look at the xcresult artifact of run 42412097686.
+
 ## 2026-11-08 daily publish (scheduled task): Lyon +10 into the app, queue empty
 
 - **What went live (9b09e3009), app only under APP FIRST, no web page:** Lyon lyo_026 to lyo_035 from data/research/lyon-verified-2.json, written 11-02 to 11-04 and the last unmerged set on the shelf: Square Ferrié's cedars, copper beeches and red oak, the Jardin des Chartreux hickory (species asked of the reader), the weeping blue cedar of Square Henri Dor and the planes of Quai Clemenceau and Saint-Côme-Saint-Damien (Caluire), the unpruned planes of Collonges, the Balmont planes (La Duchère), the Écully town hall cedars. All Métropole register trees, flagged, approximate pins, no photograph, each with a recognition line. Grafted with the live intro, meta and FAQ untouched (out/tmp/graft_lyon.py); one typo fixed in the hickory story. Preflight 0 problems; the pace counts nothing while APP FIRST holds. /lyon 200; the new trees have no page of their own to check. No claims stood.

@@ -1,6 +1,16 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-08": [
+      {
+        "date": "2026-11-08",
+        "kind": "verify",
+        "target": "sintra",
+        "tokens": 73000,
+        "trees": 0,
+        "note": "Deepen pass: register candidates all live, blocked or Cascais/Lisbon; Monserrate swamp cypress and Pena sequoias stay leads (one effective source). Sintra is a wall for 48h."
+      }
+    ],
     "2026-11-07": [
       {
         "date": "2026-11-07",
