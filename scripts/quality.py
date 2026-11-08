@@ -234,7 +234,11 @@ def bug_cell(surface, today):
             ages.append(0)
     old = sum(1 for a in ages if a > BUG_ORANGE_DAYS)
     colour = "red" if max(ages) > BUG_RED_DAYS else "orange"
-    reason = "%d open" % len(open_) + (", %d older than 7 days" % old if old else "")
+    # Found by a person rather than a test (scripts/escaped.py, Hidde
+    # 2026-11-08): the number that says how often the tests let one through.
+    people = sum(1 for r in open_ if r.get("found_by") in ("hidde", "reader"))
+    reason = "%d open" % len(open_) + (", %d found by people" % people if people else "") \
+        + (", %d older than 7 days" % old if old else "")
     if colour == "red":
         reason += ", oldest %d days" % max(ages)
     return colour, reason, len(open_), old

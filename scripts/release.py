@@ -306,7 +306,17 @@ Build {build} is in your Organizer, from {head}.
 
   Window -> Organizer -> Archives -> Distribute App -> App Store Connect
 
-Uploading is yours: it is your account and the one step that reaches Apple.""")
+Uploading is yours: it is your account and the one step that reaches Apple.
+
+Before you submit it (RELEASE_CHECKLIST.md, "Every build"):
+  On your own phone, from TestFlight, five minutes, signed in:
+    1. Save a tree, close the app, open it: still saved.
+    2. Collect a tree with a photograph.
+    3. Tap "become an ambassador" on Discover: the sheet opens.
+    4. Map: pan, tap a pin, open the tree, come back.
+    5. Sign out, sign in again.
+  Anything off: escaped.py --add, and no submit.
+  At submit: Version Release -> "Release update over 7-day period using phased release".""")
     return 0
 
 

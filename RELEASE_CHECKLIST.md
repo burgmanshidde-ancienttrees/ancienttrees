@@ -200,6 +200,37 @@ App Store Connect refuses it. That is `CURRENT_PROJECT_VERSION` in the project
 file; `MARKETING_VERSION` is the 1.0 a person sees and only changes when you
 want it to.
 
+### Every build (Hidde, 2026-11-08)
+
+Written after a professional tester's read of our process: the machine walks
+are wide, and still a dead ambassador seat reached his phone on build 40. Two
+habits every app team keeps, both cheap. `release.py` prints them after every
+archive.
+
+**Red stops it first.** `release.py` refuses to archive while the newest
+finished `ios.yml` run on main is not green; only Hidde passes
+`--despite-red "<why>"`.
+
+**Five minutes on your own phone, from TestFlight, signed in**, the same five
+every time, before you press submit:
+
+1. Save a tree, close the app, open it again: still saved.
+2. Collect a tree with a photograph.
+3. Tap "become an ambassador" on Discover: the sheet opens.
+4. Map: pan, tap a pin, open the tree, come back.
+5. Sign out, sign in again.
+
+Anything off is an escaped bug: `python3 scripts/escaped.py --add APP "<what>"`,
+and the build does not go to review. When it is fixed, the test that now
+catches it is named with `--test`, or `qa.py` will not let the row close.
+
+**Phased release at submit.** App Store Connect, the version page, Version
+Release: *Release update over 7-day period using phased release*. Apple hands
+the update to 1%, 2%, 5%, 10%, 20%, 50% and then everyone over seven days, and
+it can be paused from the same page if something is wrong. A bug like the dead
+ambassador seat then meets a few people, not all of them. Someone who updates
+by hand in the App Store still gets it at once.
+
 ## The two open product calls, which are his
 
 - Whether following shows a follower anything. Today it counts and nothing else.
