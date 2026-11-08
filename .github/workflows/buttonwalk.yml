@@ -50,7 +50,8 @@ jobs:
       # carries every later run through a GitHub outage (HTTP 504 on the
       # release zip, 2026-11-08).
       - name: Keep the Swift packages between runs
-        uses: actions/cache@v4
+        id: spm
+        uses: actions/cache/restore@v4
         with:
           path: ~/Library/Caches/org.swift.swiftpm
           key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
@@ -68,6 +69,15 @@ jobs:
       - name: Fetch the packages
         run: |
           bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
 
       - name: Tap every button
         run: |

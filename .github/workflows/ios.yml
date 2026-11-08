@@ -234,7 +234,8 @@ jobs:
       # carries every later run through a GitHub outage (HTTP 504 on the
       # release zip, 2026-11-08).
       - name: Keep the Swift packages between runs
-        uses: actions/cache@v4
+        id: spm
+        uses: actions/cache/restore@v4
         with:
           path: ~/Library/Caches/org.swift.swiftpm
           key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
@@ -249,6 +250,15 @@ jobs:
       - name: Fetch the packages
         run: |
           bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
 
       - name: Build and test
         run: |
@@ -441,7 +451,8 @@ jobs:
       # carries every later run through a GitHub outage (HTTP 504 on the
       # release zip, 2026-11-08).
       - name: Keep the Swift packages between runs
-        uses: actions/cache@v4
+        id: spm
+        uses: actions/cache/restore@v4
         with:
           path: ~/Library/Caches/org.swift.swiftpm
           key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
@@ -456,6 +467,15 @@ jobs:
       - name: Fetch the packages
         run: |
           bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
 
       # The app MEASURED its own layout since 2026-08-20 and judged none of it:
       # SweepFrames printed the frames, the grep above threw them away, and the
@@ -578,7 +598,8 @@ jobs:
       # carries every later run through a GitHub outage (HTTP 504 on the
       # release zip, 2026-11-08).
       - name: Keep the Swift packages between runs
-        uses: actions/cache@v4
+        id: spm
+        uses: actions/cache/restore@v4
         with:
           path: ~/Library/Caches/org.swift.swiftpm
           key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
@@ -593,6 +614,15 @@ jobs:
       - name: Fetch the packages
         run: |
           bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
 
       # Runners often already carry an older runtime from an older Xcode, and
       # they are shared across Xcodes on one machine, so ASK BEFORE FETCHING.
