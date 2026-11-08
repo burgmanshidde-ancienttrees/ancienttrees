@@ -57,18 +57,7 @@ jobs:
       # on its own, clean between tries, up to three times.
       - name: Fetch the packages
         run: |
-          for i in 1 2 3; do
-            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts /tmp/dd/SourcePackages
-            if xcodebuild -resolvePackageDependencies \
-                 -project ios/AncientTrees/AncientTrees.xcodeproj \
-                 -scheme AncientTrees -derivedDataPath /tmp/dd; then
-              echo "packages resolved on try $i"; exit 0
-            fi
-            echo "try $i failed, waiting before the next"
-            sleep 20
-          done
-          echo "::error::could not fetch the packages (MapLibre) in three tries"
-          exit 1
+          bash scripts/ci_fetch_packages.sh
 
       - name: Tap every button
         run: |

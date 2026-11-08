@@ -12,15 +12,16 @@
 // So this opens each screen, signed out and signed in, finds every button a
 // finger can reach on it (scrolling down a few times), and for each one:
 // launches the screen fresh, waits for it to stand still, taps the button the
-// way a finger does (no coordinate fallback, no accessibility action), and
+// way a finger does (on its centre, no accessibility action), and
 // asserts that SOMETHING CHANGED: a new screen, a sheet, a different label, a
 // snackbar, or the app handing over to Safari, Maps or the share sheet. A
 // button after which the screen reads exactly as before is a dead button, and
 // every dead button is named in one failure per screen.
 //
-// What is compared is the element tree's text with its frames and addresses
-// taken out, so scrolling or an animation does not count as an answer and a
-// map settling does not either. A button that rightly changes nothing a test
+// What is compared is the element tree's text, frames rounded to whole points,
+// once the screen has stood still, so a sheet that lowers counts as an answer
+// and a map still drawing does not. The tap lands on the button's centre as a
+// finger would, whatever lies on top of it. A button that rightly changes nothing a test
 // can read goes in `quiet` with its reason; a button that would do harm with
 // a fake session (delete, sign out, block) is never tapped (`neverTap`).
 //
@@ -61,9 +62,25 @@ final class ButtonWalk: XCTestCase {
                                    "block", "remove", "unfollow"]
 
     /// Buttons that rightly change nothing this walk can read, with why.
-    /// Keyed "<identifier or label>".
-    /// It starts empty on purpose and grows only with a reason a person agreed to.
-    private static let quiet: [String: String] = [:]
+    /// Keyed "<screen>|<identifier or label>": the same button can be quiet on
+    /// one screen and must answer on another. Every entry carries its reason;
+    /// a new one needs a person to agree with it.
+    private static let quiet: [String: String] = [
+        // Your own tab, tapped while you are on it at the top, does nothing in
+        // every app with a tab bar (first walk, 2026-11-08).
+        "map|tab-map": "already on the map tab",
+        "map-full|tab-map": "already on the map tab",
+        "map-pin|tab-map": "already on the map tab",
+        "city|tab-map": "already on the map tab",
+        "city-full|tab-map": "already on the map tab",
+        "discover|tab-discover": "already on Discover, at the top",
+        "discover-cadiz|tab-discover": "already on Discover, at the top",
+        "my-trees|tab-my-trees": "already on My trees",
+        // The test pins the location with -at=, and the camera opens on it:
+        // re-centring on where it already stands moves nothing.
+        "map|map-recentre": "the camera already stands on the test's location",
+        "my-trees|map-recentre": "the camera already stands on the test's location",
+    ]
 
     override func setUpWithError() throws {
         continueAfterFailure = true
@@ -80,11 +97,15 @@ final class ButtonWalk: XCTestCase {
     }
 
     /// The screen as text: every element's type, identifier, label and value,
-    /// without frames or memory addresses, so movement is not a change.
+    /// WITH its frame, rounded to whole points. The first walk took frames
+    /// out so that motion would not count as an answer, and then flagged
+    /// every control whose answer IS motion (a sheet that lowers, a list that
+    /// jumps) as dead. Settling first (two equal readings a second apart)
+    /// keeps a map that is still drawing from counting as an answer.
     private func signature(_ app: XCUIApplication) -> String {
         if app.state != .runningForeground { return "<left the app>" }
         var s = app.debugDescription
-        s = s.replacingOccurrences(of: #"\{\{[^}]*\}, \{[^}]*\}\}"#, with: "", options: .regularExpression)
+        s = s.replacingOccurrences(of: #"(\d+)\.\d+"#, with: "$1", options: .regularExpression)
         s = s.replacingOccurrences(of: #"0x[0-9a-fA-F]+"#, with: "", options: .regularExpression)
         s = s.replacingOccurrences(of: #"pid: \d+"#, with: "", options: .regularExpression)
         return s
@@ -107,30 +128,45 @@ final class ButtonWalk: XCTestCase {
 
     private func key(_ t: Target) -> String { t.id.isEmpty ? t.label : t.id }
 
-    private func element(_ app: XCUIApplication, _ t: Target) -> XCUIElement {
-        if !t.id.isEmpty { return app.buttons[t.id].firstMatch }
-        return app.buttons.matching(NSPredicate(format: "label == %@", t.label)).firstMatch
+    /// Every button in one snapshot of the screen, with its frame. A snapshot
+    /// cannot fail halfway the way asking element by element did: the first
+    /// walk died twice on a tree card that went away between two questions
+    /// ("Failed to get matching snapshot", "Activation point invalid").
+    private func buttons(_ app: XCUIApplication) -> [(Target, CGRect)] {
+        guard let root = try? app.snapshot() else { return [] }
+        var out: [(Target, CGRect)] = []
+        var stack: [XCUIElementSnapshot] = [root]
+        while let n = stack.popLast() {
+            if n.elementType == .button, n.isEnabled, !n.frame.isEmpty {
+                out.append((Target(id: n.identifier, label: n.label), n.frame))
+            }
+            stack.append(contentsOf: n.children)
+        }
+        return out
     }
 
-    /// Can a finger reach it: its centre on the screen, then XCTest's own
-    /// hittable. Asking isHittable of an element whose centre is off screen
-    /// does not return false, it FAILS the test ("Activation point invalid",
-    /// the clipped highlight-card, 2026-11-08 first run), so the centre is
-    /// checked first.
-    private func reachable(_ e: XCUIElement, _ app: XCUIApplication) -> Bool {
-        guard e.exists else { return false }
-        let f = e.frame
+    /// Where a finger would land on this button now, if its centre is on the
+    /// screen. Tapping that point is exactly what a finger does, including
+    /// meeting whatever lies on top of it (a sheet over a filter row).
+    private func spot(_ app: XCUIApplication, _ t: Target) -> CGPoint? {
         let screen = app.windows.firstMatch.frame
-        guard !f.isEmpty, screen.contains(CGPoint(x: f.midX, y: f.midY)) else { return false }
-        return e.isHittable
+        for (b, f) in buttons(app) where b == t {
+            let c = CGPoint(x: f.midX, y: f.midY)
+            if screen.insetBy(dx: 1, dy: 1).contains(c) { return c }
+        }
+        return nil
     }
 
-    /// Every hittable button on the screen, scrolling down a few times.
+    private func tap(_ app: XCUIApplication, at p: CGPoint) {
+        app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(dx: p.x, dy: p.y)).tap()
+    }
+
+    /// Every button whose centre is on screen, scrolling down a few times.
     private func targets(_ app: XCUIApplication) -> [Target] {
         var seen: [Target] = []
+        let screen = app.windows.firstMatch.frame
         for pass in 0..<4 {
-            for b in app.buttons.allElementsBoundByIndex where reachable(b, app) {
-                let t = Target(id: b.identifier, label: b.label)
+            for (t, f) in buttons(app) where screen.contains(CGPoint(x: f.midX, y: f.midY)) {
                 if t.id.isEmpty && t.label.isEmpty { continue }
                 if !seen.contains(t) { seen.append(t) }
             }
@@ -139,22 +175,12 @@ final class ButtonWalk: XCTestCase {
         return seen
     }
 
-    /// Scroll until the button can be tapped by a finger, then tap it.
-    private func reachAndTap(_ app: XCUIApplication, _ t: Target) -> Bool {
-        let e = element(app, t)
-        for _ in 0..<5 {
-            if reachable(e, app) { e.tap(); return true }
-            app.swipeUp()
-        }
-        return false
-    }
-
-    private func walk(_ name: String, _ args: [String]) {
+    private func walk(_ name: String, _ screen: String, _ args: [String]) {
         let first = launch(args)
         _ = settled(first)
         let list = targets(first).filter { t in
             let k = (t.id + " " + t.label).lowercased()
-            return !Self.neverTap.contains { k.contains($0) } && Self.quiet[key(t)] == nil
+            return !Self.neverTap.contains { k.contains($0) } && Self.quiet["\(screen)|\(key(t))"] == nil
         }
         first.terminate()
         XCTAssertFalse(list.isEmpty, "\(name): no buttons found at all; did the screen open?")
@@ -164,13 +190,14 @@ final class ButtonWalk: XCTestCase {
         for t in list {
             let app = launch(args)
             // Reach it first (scrolling is not the answer we are looking for),
-            // then read the screen, then tap.
-            let e = element(app, t)
+            // then read the screen, then tap where a finger would.
+            var p = spot(app, t)
             var tries = 0
-            while !reachable(e, app) && tries < 5 { app.swipeUp(); tries += 1 }
-            guard reachable(e, app) else { unreachable.append(key(t)); app.terminate(); continue }
+            while p == nil && tries < 5 { app.swipeUp(); tries += 1; p = spot(app, t) }
+            guard p != nil else { unreachable.append(key(t)); app.terminate(); continue }
             let before = settled(app)
-            guard reachAndTap(app, t) else { unreachable.append(key(t)); app.terminate(); continue }
+            guard let at = spot(app, t) else { unreachable.append(key(t)); app.terminate(); continue }
+            tap(app, at: at)
             let after = settled(app)
             if after == before { dead.append(key(t)) }
             app.terminate()
@@ -185,10 +212,10 @@ final class ButtonWalk: XCTestCase {
     }
 
     func testEveryButtonAnswersSignedOut() {
-        for (name, args) in Self.screens { walk(name + " (signed out)", args) }
+        for (name, args) in Self.screens { walk(name + " (signed out)", name, args) }
     }
 
     func testEveryButtonAnswersSignedIn() {
-        for (name, args) in Self.screens { walk(name + " (signed in)", args + ["-signed-in"]) }
+        for (name, args) in Self.screens { walk(name + " (signed in)", name, args + ["-signed-in"]) }
     }
 }

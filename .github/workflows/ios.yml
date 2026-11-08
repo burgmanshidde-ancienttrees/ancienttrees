@@ -238,17 +238,7 @@ jobs:
       # build in this job reads.
       - name: Fetch the packages
         run: |
-          for i in 1 2 3; do
-            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
-            if xcodebuild -resolvePackageDependencies \
-                 -project ios/AncientTrees/AncientTrees.xcodeproj -scheme AncientTrees; then
-              echo "packages resolved on try $i"; exit 0
-            fi
-            echo "try $i failed, waiting before the next"
-            sleep 20
-          done
-          echo "::error::could not fetch the packages (MapLibre) in three tries"
-          exit 1
+          bash scripts/ci_fetch_packages.sh
 
       - name: Build and test
         run: |
@@ -445,17 +435,7 @@ jobs:
       # build in this job reads.
       - name: Fetch the packages
         run: |
-          for i in 1 2 3; do
-            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
-            if xcodebuild -resolvePackageDependencies \
-                 -project ios/AncientTrees/AncientTrees.xcodeproj -scheme AncientTrees; then
-              echo "packages resolved on try $i"; exit 0
-            fi
-            echo "try $i failed, waiting before the next"
-            sleep 20
-          done
-          echo "::error::could not fetch the packages (MapLibre) in three tries"
-          exit 1
+          bash scripts/ci_fetch_packages.sh
 
       # The app MEASURED its own layout since 2026-08-20 and judged none of it:
       # SweepFrames printed the frames, the grep above threw them away, and the
@@ -582,17 +562,7 @@ jobs:
       # build in this job reads.
       - name: Fetch the packages
         run: |
-          for i in 1 2 3; do
-            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
-            if xcodebuild -resolvePackageDependencies \
-                 -project ios/AncientTrees/AncientTrees.xcodeproj -scheme AncientTrees; then
-              echo "packages resolved on try $i"; exit 0
-            fi
-            echo "try $i failed, waiting before the next"
-            sleep 20
-          done
-          echo "::error::could not fetch the packages (MapLibre) in three tries"
-          exit 1
+          bash scripts/ci_fetch_packages.sh
 
       # Runners often already carry an older runtime from an older Xcode, and
       # they are shared across Xcodes on one machine, so ASK BEFORE FETCHING.
