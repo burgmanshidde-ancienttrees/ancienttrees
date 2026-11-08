@@ -10,11 +10,18 @@
 # step says whether the download or SwiftPM is at fault.
 #
 #   bash scripts/ci_fetch_packages.sh
+#
+# Later that morning the cause showed: GitHub itself answered the zip with
+# HTTP 504 in 0.06 s, an outage on their side. So the workflows now keep the
+# SwiftPM cache between runs (actions/cache), and the first try here uses
+# whatever that cache restored; only a retry clears it.
 set -u
 URL="https://github.com/maplibre/maplibre-native/releases/download/ios-v6.28.0/MapLibre.dynamic.xcframework.zip"
 for i in 1 2 3 4; do
-  rm -rf ~/Library/Caches/org.swift.swiftpm ~/Library/org.swift.swiftpm \
-         ~/Library/Developer/Xcode/DerivedData /tmp/dd/SourcePackages
+  if [ "$i" -gt 1 ]; then
+    rm -rf ~/Library/Caches/org.swift.swiftpm ~/Library/org.swift.swiftpm \
+           ~/Library/Developer/Xcode/DerivedData /tmp/dd/SourcePackages
+  fi
   if xcodebuild -resolvePackageDependencies \
        -project ios/AncientTrees/AncientTrees.xcodeproj -scheme AncientTrees; then
     echo "packages resolved on try $i"

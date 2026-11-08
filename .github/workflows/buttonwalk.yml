@@ -46,6 +46,16 @@ jobs:
           echo "udid=$UDID" >> "$GITHUB_OUTPUT"
           xcrun simctl list devices available | grep "$UDID"
 
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
       # The signed-in half uses the FAKE session (-signed-in) on purpose: it
       # taps everything, and on the real test account that would send real
       # ambassador requests, Plus answers and follows. The real account is

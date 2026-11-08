@@ -230,6 +230,16 @@ jobs:
             echo "::warning::no test session: the signed-in round trips will skip"
           fi
 
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
       # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
       # first try failed on several runners that morning and its own retry
       # then tripped over the half-file ("already exists in file system"), so
@@ -427,6 +437,16 @@ jobs:
           fi
           echo "Using: $(xcode-select -p)"
 
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
       # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
       # first try failed on several runners that morning and its own retry
       # then tripped over the half-file ("already exists in file system"), so
@@ -553,6 +573,16 @@ jobs:
             sudo xcode-select -s "$NEWEST/Contents/Developer" || true
           fi
           echo "Using: $(xcode-select -p)"
+
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
 
       # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
       # first try failed on several runners that morning and its own retry
