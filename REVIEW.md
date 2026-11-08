@@ -31,6 +31,12 @@ Web half: last 24 hours were data (app-only trees, Lyon +10, Chicago, Salt Lake 
 - WARN site/src/pages/contribute.astro:17 and :401 still say "verified against independent sources" / "check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Fourteenth review in a row.
 - NOTE the open question from 11-07 stands: data/walk-routes.json routing through app-only trees that have no page is still unchecked.
 
+App half (iPhone SE: collection-tab, collection-tab-full, collection, contribute, directions, early-adopter-sheet; the three collection shots read the same, so two were skimmed):
+
+- NOTE APP contribute.png: the sign-in sheet says "We check every vote, correction and tip" while the same reader-input rule is "live first, then checked" (CLAUDE.md, 2026-10-24); a photo or note is public before anyone checks it. Only the three kinds named are checked-first, so it is not false, but "We read every vote, correction and tip" would hold for all. For a session.
+- NOTE APP early-adopter-sheet.png: "you are one of them" is a claim to every viewer, and the sheet sits over a map with no sign of who is signed in; confirm it only opens for a granted badge. Nothing contradicted on screen.
+- directions.png, collection-tab.png: nothing found.
+
 ## 2026-11-07
 
 Web half: the last 24 hours were data (walk routes, vendored photos, 16 app-only places, Préfargier duplicate) plus the New from visitors order. No em dashes in site/dist HTML.
