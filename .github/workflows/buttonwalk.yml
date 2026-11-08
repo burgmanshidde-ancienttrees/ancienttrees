@@ -52,6 +52,10 @@ jobs:
       # for the round trips in SignedInRoundTrip.swift, which clean up.
       - name: Tap every button
         run: |
+          # A half-downloaded MapLibre left in the runner's SwiftPM cache made
+          # package resolution fail twice in a row ("already exists in file
+          # system", 2026-11-08) before a single button was tapped. Start clean.
+          rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
           xcodebuild test \
             -project ios/AncientTrees/AncientTrees.xcodeproj \
             -scheme AncientTrees \
