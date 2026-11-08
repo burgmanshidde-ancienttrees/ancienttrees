@@ -237,6 +237,9 @@ struct AmbassadorWantedRow: View {
     /// link"). `.row` is every other place's row, as before.
     enum Look { case row, slim, link }
     var look: Look = .row
+    /// False where the row sits on a scrolling page rather than in the map's
+    /// sheet (Discover): it is then a plain Button. See `control`.
+    var inSheet = true
 
     @Environment(Account.self) private var account
     @State private var asked = false
@@ -382,18 +385,33 @@ struct AmbassadorWantedRow: View {
             .contentShape(.rect.inset(by: -10))
     }
 
-    private var row: some View {
-        // A tap, not a Button: the seat sits in the map's sheet header, which
-        // a thumb raises the sheet by (BottomSheet sheetTap, 2026-11-05).
-        Group {
-            switch look {
-            case .slim: slimRow
-            case .link: linkText
-            case .row:
-                if iconOnly { seatIcon } else if seated { seatedLine } else { openRow }
-            }
+    @ViewBuilder private var face: some View {
+        switch look {
+        case .slim: slimRow
+        case .link: linkText
+        case .row:
+            if iconOnly { seatIcon } else if seated { seatedLine } else { openRow }
         }
-        .sheetTap(enabled: !(asked || sending), tap)
+    }
+
+    /// A tap in a sheet, a Button everywhere else. In the map's sheet header
+    /// a thumb raises the sheet by the seat, so there it is sheetTap (BottomSheet,
+    /// 2026-11-05). On Discover that tap did nothing at all on Hidde's phone
+    /// (2026-11-08, build 40, Den Bosch: "Ik kan het niet klikken"), and a row
+    /// on a scrolling page needs no sheet guard: a Button cancels itself when
+    /// the finger scrolls. Walked by AmbassadorAskWalk.
+    @ViewBuilder private var control: some View {
+        if inSheet {
+            face.sheetTap(enabled: !(asked || sending), tap)
+        } else {
+            Button(action: tap) { face }
+                .buttonStyle(.plain)
+                .disabled(asked || sending)
+        }
+    }
+
+    private var row: some View {
+        control
         .accessibilityHint(asked ? "" : (seated ? "Become an ambassador" : "Become the ambassador"))
         .accessibilityIdentifier("ambassador-wanted")
         .task(id: account.isSignedIn) {

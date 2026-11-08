@@ -1,0 +1,109 @@
+name: iOS every button answers
+
+# ButtonWalk (ios/AncientTrees/AncientTreesUITests/ButtonWalk.swift): every
+# button on every main screen, signed out and signed in, tapped by a finger,
+# must change something. Hidde, 2026-11-08, after Discover's ambassador seat
+# ignored his tap on build 40 and no test had noticed. A fresh launch per
+# button makes it too slow for ios.yml's suite, so it runs here: once a day,
+# on a push that touches the walk, and on dispatch.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ios/AncientTrees/AncientTreesUITests/ButtonWalk.swift'
+      - '.github/workflows/buttonwalk.yml'
+  schedule:
+    - cron: '20 2 * * *'
+
+concurrency:
+  group: buttonwalk-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
+
+jobs:
+  walk:
+    runs-on: macos-15
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Which Xcode
+        run: |
+          NEWEST=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$NEWEST" ]; then
+            sudo xcode-select -s "$NEWEST/Contents/Developer" || true
+          fi
+          echo "Using: $(xcode-select -p)"
+          xcodebuild -version
+
+      - name: Pick a simulator
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available | grep "iPhone" | grep -oE "[0-9A-F]{8}-([0-9A-F]{4}-){3}[0-9A-F]{12}" | tail -1)
+          if [ -z "$UDID" ]; then
+            xcodebuild -downloadPlatform iOS || true
+            UDID=$(xcrun simctl list devices available | grep "iPhone" | grep -oE "[0-9A-F]{8}-([0-9A-F]{4}-){3}[0-9A-F]{12}" | tail -1)
+          fi
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl list devices available | grep "$UDID"
+
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        id: spm
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
+      # The signed-in half uses the FAKE session (-signed-in) on purpose: it
+      # taps everything, and on the real test account that would send real
+      # ambassador requests, Plus answers and follows. The real account is
+      # for the round trips in SignedInRoundTrip.swift, which clean up.
+      # MapLibre's download failed three runs in a row on 2026-11-08 before a
+      # single button was tapped: SwiftPM's first try fails, its own retry then
+      # trips over the file the first one left ("already exists in file
+      # system"), and clearing the cache beforehand did not help. So resolve
+      # on its own, clean between tries, up to three times.
+      - name: Fetch the packages
+        run: |
+          bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+
+      - name: Tap every button
+        run: |
+          xcodebuild test \
+            -project ios/AncientTrees/AncientTrees.xcodeproj \
+            -scheme AncientTrees \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -derivedDataPath /tmp/dd \
+            -resultBundlePath /tmp/buttonwalk.xcresult \
+            -only-testing:AncientTreesUITests/ButtonWalk \
+            -parallel-testing-enabled NO \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            > /tmp/buttonwalk.log 2>&1 || true
+          grep -E "Test Case|ButtonWalk .*could not reach|error:|\*\* (TEST|BUILD)" /tmp/buttonwalk.log || true
+          if grep -q '\*\* TEST SUCCEEDED \*\*' /tmp/buttonwalk.log; then
+            echo "Every button answered."
+          else
+            echo "::error::Dead buttons or a failed build, named above."
+            exit 1
+          fi
+
+      - name: Keep the result bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: buttonwalk-${{ github.run_id }}
+          path: /tmp/buttonwalk.xcresult
+          retention-days: 7
+          if-no-files-found: ignore

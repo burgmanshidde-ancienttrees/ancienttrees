@@ -6,6 +6,20 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Build 41 and today's QA branch to main (Hidde, 2026-11-08, "zet maar ff op de backlog voor later")
+
+Everything from the 2026-11-08 session sits on branch `claude/gifted-cerf-cbp95i`, not on main: Discover's ambassador seat as a Button (AmbassadorAskWalk green), the pin blink fix, FlowWalk raising the sheet before it taps a card (green, red since 11-06), the real test account and the save round trips (web green; app's SignedInRoundTrip on its last fix, run on `b6d327f`), ButtonWalk, `release.py`'s red brake, `scripts/escaped.py`, the CI package cache, the `only` quick-run input. LOG.md 2026-11-08 has the detail.
+
+When it is picked up, in order:
+1. ~~Read the last quick run of SignedInRoundTrip.~~ **Green on `b6d327f`** (run 42482166745, 2026-11-08 13:07): on the real test account the app saves, the save survives closing and reopening, and removing it sticks. The earlier reds were the test's (it tapped a map card's heart, then a heart under the tab bar of the `-tree=` shortcut), never the app's.
+2. Open the pull request to main and merge it; one full ios.yml run on main must be green (`release.py` refuses otherwise).
+3. Add the test account's line to data/our-accounts.json (ios.yml prints it in "A real session for the test account": `python3 scripts/test_session.py --ours`); until then the digest counts apptest@ as a new account.
+4. Hidde: `release.py`, the five-minute round from TestFlight, submit with phased release (RELEASE_CHECKLIST.md "Every build").
+
+Also open from the same day, smaller: ButtonWalk's first clean results (filters under the full sheet; Rate the app, Privacy and Terms likely fine, Hidde to tap once on his phone); ButtonWalk from daily to weekly until its quiet list is trusted; the `save_failed` event in the app (needs Hidde's yes, new data); the map sheet the Airbnb way (build 42, LOG.md 2026-11-08).
+
+**Trigger: Hidde says go**, or a session he starts for build 41.
+
 ## Species recognition from a photograph, as a Plus feature (Hidde, 2026-09-11, "nu geen tijd voor")
 
 Take the photograph, get the species back. His ruling is that it is PAID and that it waits on his time rather than on evidence, so there is nothing to measure before starting; the full record is DECISIONS.md 2026-09-11.

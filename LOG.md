@@ -12,6 +12,23 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-08 session: build 41 scope, and the map sheet the Airbnb way for build 42
+
+- **Decided (Hidde, "eens"):** build 41 ships today's fixes only (Discover's ambassador seat, the pin blink, plus what other sessions readied: New from visitors, Plus under the trees). The map sheet change below is **build 42**, on its own branch, judged by Hidde in TestFlight.
+- **Build 42, the map sheet as Airbnb draws it** (Hidde's screenshots, 2026-11-08: "er zit veel loze ruimte boven in de lijst als je hem naar boven scrollt - zullen we Airbnb nadoen"): at full height the list is the page, starting right under the search field, no grip and no empty count strip; the floating "Map" pill brings the map back. This reverses his 2026-10-10 and 10-13 ruling to keep the strip at full height (its reason, the strip as the handle back down, is carried by the Map pill now). At the lowest stop only the count bar stays ("58 trees") and the tab bar hides, so the map takes the screen; a tap or swipe brings both back. Web explore drops the same empty strip in the same change. FlowWalk's map flow and ButtonWalk's sheet steps move with it.
+
+## 2026-11-08 session: the app's QA, signed in for real, every button tapped, red stops a build
+
+- **Why:** Hidde kept finding holes ("hoe staat dat er in z'n totaliteit voor", "waarom testen we in Gods naam alleen uitgelogd"). Measured with the new `scripts/app_coverage.py`: 201 named app controls, 63 named by any UI test; every "signed-in" test ran on a fake session that cannot write; the app run had been red since 11-06 and builds went out anyway.
+- **Built, on branch claude/gifted-cerf-cbp95i, through CI on GitHub's Mac runners:** ButtonWalk.swift + buttonwalk.yml (every button on 13 screens, signed out and in, must change something; daily). A real test account (`scripts/test_session.py`, apptest@ancienttrees.app, fresh random password per run, profile private, session masked and handed over as AT_TEST_SESSION, Debug builds only) and SignedInRoundTrip.swift (save a tree, reopen, still saved; remove, reopen, gone). `release.py` refuses to archive while the newest finished ios.yml run on main is not green (`--despite-red "<why>"` is Hidde's). Rules in CLAUDE.md QA.
+- **Open:** add the test account's line to data/our-accounts.json from the first run's log; make main's app run green (FlowWalk tree-card, the map sheet's ambassador seat signed out).
+
+## 2026-11-08 session: Discover's ambassador seat does not answer a tap (build 40)
+
+- **Breakage:** on Hidde's phone (build 40, iOS 27) the "Den Bosch is looking for an ambassador" row on Discover does nothing when tapped, though it shows the chevron (no request sent). It became a sheetTap (onTapGesture) instead of a Button on 11-05 (27a6c23), for the map's sheet; that is the only change to it since it worked.
+- **Fix, on branch claude/gifted-cerf-cbp95i, not built:** `AmbassadorWantedRow(inSheet: false)` on Discover is a plain Button again; the map sheet's seat keeps sheetTap. New UI test AmbassadorAskWalk: the seat on Discover (-at= Cadiz) signed out and signed in, the city sheet's seat signed in at both heights, with no coordinate-tap fallback (SignedOutWalk tapped only the sheet's seat, only signed out, and falls back to a coordinate tap, which is why no run caught it).
+- **For Hidde:** the next Mac session builds, runs AmbassadorAskWalk and merges before build 41. If the city sheet's seat fails too, sheetTap itself is broken on a real tap, and the other sheetTap rows (Plus, followers, sign-in, the seen tick, place links) need the same look; the failing FlowWalk "tree-card" step from the night runs may be the same cause.
+
 ## 2026-11-08 night run (01:03 window), short
 
 Rung 1: nothing waiting (0 photographs, no new tree notes). Rung 2: health.py exit 1 on the iOS app. Its scheduled runs fail on one UI test, `FlowWalk.testEveryFlowLeavesAWayBack`, step "open-the-first-tree" (FlowWalk.swift:135): the `tree-card` button at y 727 cannot be scrolled into view (kAXErrorCannotComplete), on iOS 26 and the iOS 18 floor alike. Not reproducible on this Linux runner, so not fixed. It may mean the sheet no longer raises on the tap, or the bigger catalogue changed the first card. For a Mac session. Web errors ORANGE: ResizeObserver loop notice, a harmless browser message, not acted on.

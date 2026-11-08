@@ -210,6 +210,27 @@
    "first_seen": "2026-11-04",
    "status": "declined",
    "note": "Hidde, 2026-11-04: \"sluiten\", after the read that places already land on the map from both searches and that a tree or species follows the screen it is searched from (the list opens pages, the map shows on the map, as AllTrails does)"
+  },
+  {
+   "id": "ESC-2026-11-08-discover-s-ambassador-seat-ignores-a-tap",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Screens/Home.swift:851",
+   "summary": "Discover's ambassador seat ignores a tap (build 40)",
+   "first_seen": "2026-11-08",
+   "status": "open",
+   "found_by": "hidde",
+   "test": "AncientTreesUITests/AmbassadorAskWalk"
+  },
+  {
+   "id": "ESC-2026-11-08-map-pins-blink-for-the-first-seconds-aft",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:1395",
+   "summary": "Map pins blink for the first seconds after a fresh install",
+   "first_seen": "2026-11-08",
+   "status": "open",
+   "found_by": "hidde"
   }
  ]
 }

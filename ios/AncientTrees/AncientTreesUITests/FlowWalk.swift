@@ -132,7 +132,21 @@ final class FlowWalk: XCTestCase {
                 Step(name: "raise-the-sheet") {
                     $0.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
                 },
-                Step(name: "open-the-first-tree") { firstCard($0)?.tap() },
+                // ON A SMALL PHONE, RAISE IT ALL THE WAY FIRST (2026-11-08).
+                // Since 11-06 the Highlights and Collected shelves sit above
+                // the list, and on the iPhone SE the first tree card starts
+                // below the half sheet (y 727 on a 667-point screen). The
+                // list scrolls only at full height, on purpose, so a finger
+                // drags the sheet up and then taps; the test asked XCTest to
+                // scroll a list that may not scroll and was red from 11-06.
+                Step(name: "open-the-first-tree") { app in
+                    let screen = app.windows.firstMatch.frame
+                    if let c = firstCard(app), c.frame.maxY > screen.maxY - 20 {
+                        drag(app, from: 0.6, to: 0.1)
+                        sleep(1)
+                    }
+                    firstCard(app)?.tap()
+                },
                 Step(name: "back-to-the-map") { back($0) },
             ]),
 

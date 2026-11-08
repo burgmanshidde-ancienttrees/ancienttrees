@@ -839,6 +839,31 @@ def check_the_quality_line_stays_in_the_digest():
     return out
 
 
+def check_an_escaped_bug_has_a_test():
+    """A bug a person found is closed only with the test that now catches it.
+
+    Hidde, 2026-11-08, after finding Discover's dead ambassador seat and the
+    blinking pins himself and asking how a professional tester would judge
+    our testing: a bug that reaches a person is a lesson about the tests, and
+    it is learned only when a test that would have caught it exists.
+    scripts/escaped.py records them in data/code-audit.json with `found_by`;
+    a row found by Hidde or a reader that is `fixed` needs `test` or
+    `no_test_reason`. Removing this check needs Hidde."""
+    path = Path(__file__).resolve().parent.parent / "data" / "code-audit.json"
+    try:
+        rows = json.loads(path.read_text(encoding="utf-8")).get("findings") or []
+    except (OSError, ValueError):
+        return []
+    out = []
+    for r in rows:
+        if r.get("found_by") in ("hidde", "reader") and r.get("status") == "fixed" \
+                and not r.get("test") and not r.get("no_test_reason"):
+            out.append("%s was found by a person and closed without a test: name the test "
+                       "that catches it now, or why no machine can (scripts/escaped.py; "
+                       "Hidde, 2026-11-08)." % r.get("id"))
+    return out
+
+
 def check_app_downloads_are_their_own_block():
     """App Store downloads is its OWN digest block, never appended to the app
     table's.
@@ -3894,6 +3919,7 @@ def main():
     failures += check_notes_are_read_before_they_are_marked_read()
     failures += check_ambassador_requests_reach_hidde()
     failures += check_the_quality_line_stays_in_the_digest()
+    failures += check_an_escaped_bug_has_a_test()
     failures += check_every_reader_photo_reaches_hidde()
     failures += check_everything_sent_reaches_hidde()
     failures += check_every_site_route_is_claimed_or_excluded()

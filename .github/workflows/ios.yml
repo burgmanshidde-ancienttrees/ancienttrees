@@ -48,6 +48,14 @@ on:
         description: 'Comma-separated test ids to run on the iOS 18 floor only'
         required: false
         default: ''
+      # THE SAME ON THE NEWEST iOS (2026-11-08, Hidde: "why does it take so
+      # long"): checking one fix ran the whole suite, 30 to 40 minutes, when
+      # the test it was about took two. Named tests only, newest simulator;
+      # the layout job still runs, the floor does not.
+      only:
+        description: 'Comma-separated test ids to run on the newest iOS only (the rest skipped)'
+        required: false
+        default: ''
 
   # TWICE A DAY, WHATEVER ELSE HAPPENS, and this is the piece that was missing.
   #
@@ -208,6 +216,58 @@ jobs:
           xcrun simctl list devices available | grep -B20 "$UDID" | grep "^-- " | tail -1
           xcrun simctl list devices available | grep "$UDID"
 
+      # A REAL SESSION on the test account (scripts/test_session.py, Hidde
+      # 2026-11-08), so the signed-in tests can prove a write reaches the
+      # server. Masked before it exists in any log; xcodebuild hands
+      # TEST_RUNNER_* variables to the test runner without the prefix. No key
+      # (a fork) means no session, and those tests skip themselves.
+      - name: A real session for the test account
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # The line data/our-accounts.json needs (a hash and a code, as that
+          # public file already holds), so the account never counts as a reader.
+          python3 scripts/test_session.py --ours || true
+          S=$(python3 scripts/test_session.py 2>/dev/null || true)
+          if [ -n "$S" ]; then
+            for part in $(echo "$S" | tr '|' ' '); do echo "::add-mask::$part"; done
+            echo "::add-mask::$S"
+            echo "TEST_RUNNER_AT_SESSION=$S" >> "$GITHUB_ENV"
+            echo "test account signed in"
+          else
+            echo "::warning::no test session: the signed-in round trips will skip"
+          fi
+
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        id: spm
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
+      # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
+      # first try failed on several runners that morning and its own retry
+      # then tripped over the half-file ("already exists in file system"), so
+      # the suite died in 24 seconds with no test run. Resolving here, cleaning
+      # between up to three tries, fills the shared SwiftPM cache every later
+      # build in this job reads.
+      - name: Fetch the packages
+        run: |
+          bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+
       - name: Build and test
         run: |
           set -o pipefail
@@ -223,6 +283,15 @@ jobs:
           # each and then "did not have a process ID": the first run whose
           # real tests all passed (2026-08-21) went red on that alone. Serial
           # costs a few minutes and measures the app instead of the runner.
+          # `only` from a dispatch: the named tests and nothing else.
+          ONLY="${{ inputs.only }}"
+          if [ -n "$ONLY" ]; then
+            WHICH=""
+            for t in $(echo "$ONLY" | tr ',' ' '); do WHICH="$WHICH -only-testing:$t"; done
+          else
+            WHICH="-skip-testing:AncientTreesUITests/SweepFrames -skip-testing:AncientTreesUITests/RefusedWalk -skip-testing:AncientTreesUITests/ButtonWalk"
+          fi
+          echo "tests: $WHICH"
           run_tests() {
             xcodebuild test \
               -project ios/AncientTrees/AncientTrees.xcodeproj \
@@ -230,8 +299,7 @@ jobs:
               -destination "id=${{ steps.sim.outputs.udid }}" \
               -derivedDataPath /tmp/dd \
               -retry-tests-on-failure -test-iterations 2 \
-              -skip-testing:AncientTreesUITests/SweepFrames \
-              -skip-testing:AncientTreesUITests/RefusedWalk \
+              $WHICH \
               -parallel-testing-enabled NO \
               CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
               > /tmp/xcodebuild.log 2>&1 || true
@@ -365,7 +433,7 @@ jobs:
       # the two, and because a refused run that dies must not take the ordinary
       # verdict with it.
       - name: What happens when somebody says no
-        if: always()
+        if: always() && (inputs.only == '' || inputs.only == null)
         run: python3 scripts/refused.py --udid "${{ steps.sim.outputs.udid }}"
 
   # THE LOOKING HALF, on its own runner beside the one above.
@@ -393,6 +461,36 @@ jobs:
             sudo xcode-select -s "$NEWEST/Contents/Developer" || true
           fi
           echo "Using: $(xcode-select -p)"
+
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        id: spm
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
+      # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
+      # first try failed on several runners that morning and its own retry
+      # then tripped over the half-file ("already exists in file system"), so
+      # the suite died in 24 seconds with no test run. Resolving here, cleaning
+      # between up to three tries, fills the shared SwiftPM cache every later
+      # build in this job reads.
+      - name: Fetch the packages
+        run: |
+          bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
 
       # The app MEASURED its own layout since 2026-08-20 and judged none of it:
       # SweepFrames printed the frames, the grep above threw them away, and the
@@ -480,7 +578,7 @@ jobs:
   # day is the right frequency for it, which is the same reasoning that gave
   # the job above its own unkillable scheduled group.
   floor:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && (inputs.only == '' || inputs.only == null))
     runs-on: macos-15
     # Measured on the scheduled run of 2026-09-02, which finished every step
     # and was killed anyway: 09:23:38 to 10:57:51 is 94 minutes against a
@@ -510,6 +608,36 @@ jobs:
             sudo xcode-select -s "$NEWEST/Contents/Developer" || true
           fi
           echo "Using: $(xcode-select -p)"
+
+      # The SwiftPM cache kept between runs, so one good MapLibre download
+      # carries every later run through a GitHub outage (HTTP 504 on the
+      # release zip, 2026-11-08).
+      - name: Keep the Swift packages between runs
+        id: spm
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
+      # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
+      # first try failed on several runners that morning and its own retry
+      # then tripped over the half-file ("already exists in file system"), so
+      # the suite died in 24 seconds with no test run. Resolving here, cleaning
+      # between up to three tries, fills the shared SwiftPM cache every later
+      # build in this job reads.
+      - name: Fetch the packages
+        run: |
+          bash scripts/ci_fetch_packages.sh
+
+      # Saved the moment the fetch works, not at the end of the job: a job that
+      # fails later (a red test) would otherwise throw a good download away.
+      - name: Save the Swift packages
+        if: steps.spm.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
 
       # Runners often already carry an older runtime from an older Xcode, and
       # they are shared across Xcodes on one machine, so ASK BEFORE FETCHING.
@@ -559,7 +687,7 @@ jobs:
               WHICH="$WHICH -only-testing:$t"
             done
           else
-            WHICH="-skip-testing:AncientTreesUITests/SweepFrames -skip-testing:AncientTreesUITests/RefusedWalk"
+            WHICH="-skip-testing:AncientTreesUITests/SweepFrames -skip-testing:AncientTreesUITests/RefusedWalk -skip-testing:AncientTreesUITests/ButtonWalk"
           fi
           echo "tests: $WHICH"
           # ITS OWN RESULT BUNDLE, outside /tmp/dd. appfit and appsweep run
