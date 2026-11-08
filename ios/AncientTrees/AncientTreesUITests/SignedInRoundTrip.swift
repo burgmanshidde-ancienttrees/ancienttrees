@@ -33,10 +33,28 @@ final class SignedInRoundTrip: XCTestCase {
         return app
     }
 
+    /// THE TREE PAGE'S OWN HEART, not the first one in the tree. The page
+    /// opens over the map, whose cards carry hearts with the same identifier;
+    /// the first run (2026-11-08) took one of those, tapped the sheet lying on
+    /// top of it and read "Save" sixteen times over. Signed out that never
+    /// showed, because every heart asks to sign in. So: hittable, centre on
+    /// screen, and the largest (the page's action-bar heart is 52 points, a
+    /// card's 44).
     private func heart(_ app: XCUIApplication) -> XCUIElement {
-        let h = app.buttons["save-heart"].firstMatch
-        XCTAssertTrue(h.waitForExistence(timeout: 20), "no save heart on the tree page")
-        return h
+        XCTAssertTrue(app.buttons["save-heart"].firstMatch.waitForExistence(timeout: 20),
+                      "no save heart on the tree page")
+        sleep(2)
+        let screen = app.windows.firstMatch.frame
+        let all = app.buttons.matching(identifier: "save-heart").allElementsBoundByIndex
+        let reachable = all.filter { e in
+            let f = e.frame
+            return !f.isEmpty && screen.contains(CGPoint(x: f.midX, y: f.midY)) && e.isHittable
+        }
+        guard let best = reachable.max(by: { $0.frame.width < $1.frame.width }) else {
+            XCTFail("\(all.count) save heart(s) on screen and none a finger can reach")
+            return all.first ?? app.buttons["save-heart"].firstMatch
+        }
+        return best
     }
 
     /// Wait until the heart says what we expect; the account's saves arrive
