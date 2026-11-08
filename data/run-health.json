@@ -2,86 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-08T06:32:47+00:00",
-   "date": "2026-09-08",
-   "run_id": "34195114342",
-   "minutes": 103.9,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 482,
-   "denials": 47,
-   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(head), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(wc)",
-   "ended": "success",
-   "tokens": 175610089,
-   "claims_held": [],
-   "commits": 17,
-   "cities_touched": 15,
-   "cities": [
-    {
-     "city": "bracon",
-     "trees": 1
-    },
-    {
-     "city": "chatenay-malabry",
-     "trees": 1
-    },
-    {
-     "city": "feternes",
-     "trees": 1
-    },
-    {
-     "city": "jauze",
-     "trees": 1
-    },
-    {
-     "city": "komjatice",
-     "trees": 1
-    },
-    {
-     "city": "magescq",
-     "trees": 1
-    },
-    {
-     "city": "nicorps",
-     "trees": 1
-    },
-    {
-     "city": "pesselieres",
-     "trees": 1
-    },
-    {
-     "city": "reaumont",
-     "trees": 1
-    },
-    {
-     "city": "aberford",
-     "trees": 0
-    },
-    {
-     "city": "aguas-de-moura",
-     "trees": 0
-    },
-    {
-     "city": "albersdorf",
-     "trees": 0
-    },
-    {
-     "city": "allouville-bellefosse",
-     "trees": 0
-    },
-    {
-     "city": "altrier",
-     "trees": 0
-    },
-    {
-     "city": "bosaca",
-     "trees": 0
-    }
-   ],
-   "trees": 9,
-   "logged": true
-  },
-  {
    "started": "2026-09-08T08:17:49+00:00",
    "date": "2026-09-08",
    "run_id": "34196390057",
@@ -21619,6 +21539,25 @@
     }
    ],
    "trees": 8,
+   "logged": true
+  },
+  {
+   "started": "2026-11-08T18:55:24+00:00",
+   "date": "2026-11-08",
+   "run_id": "42512343756",
+   "minutes": 4.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 61,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 269192,
+   "claims_held": [],
+   "commits": 3,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
    "logged": true
   }
  ],
