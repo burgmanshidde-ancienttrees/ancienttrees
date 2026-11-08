@@ -17,6 +17,14 @@
         "tokens": 73000,
         "trees": 0,
         "note": "Deepen pass: register candidates all live, blocked or Cascais/Lisbon; Monserrate swamp cypress and Pena sequoias stay leads (one effective source). Sintra is a wall for 48h."
+      },
+      {
+        "date": "2026-11-08",
+        "kind": "write",
+        "target": "porto (por_032, por_033, por_034, Quinta de Villar d'Allen)",
+        "tokens": 60000,
+        "trees": 3,
+        "note": "Second attempt; the first stopped early with no story on disk. Three stories and recognition lines, no best_time (evergreens). Access line restated from the council's visitor block so preflight's hard-rule-10 check reads the bookable tour as public. Merged by scripts/build_write_2026_11_08b.py. About 20k a tree, much of it preflight output."
       }
     ],
     "2026-11-07": [
