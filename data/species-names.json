@@ -2933,6 +2933,22 @@
    }
   },
   {
+   "common": "Chinese Pistache",
+   "latin": "Pistacia chinensis",
+   "names": {
+    "es": [
+     "Rhus argyi",
+     "Rhus gummifera"
+    ],
+    "ja": [
+     "カイジュ",
+     "カイノキ",
+     "クシノキ",
+     "トネリバハゼ"
+    ]
+   }
+  },
+  {
    "common": "Chinese Soapberry",
    "latin": "Sapindus mukorossi",
    "names": {
@@ -3943,6 +3959,18 @@
     "ja": [
      "ヨーロッパクロマツ",
      "ヨーローッパクロマツ"
+    ]
+   }
+  },
+  {
+   "common": "Council Tree",
+   "latin": "Ficus altissima",
+   "names": {
+    "en": [
+     "lofty fig"
+    ],
+    "ja": [
+     "フィカス・アルティシマ"
     ]
    }
   },
@@ -6046,6 +6074,15 @@
    }
   },
   {
+   "common": "Halfelm",
+   "latin": "Hemiptelea davidii",
+   "names": {
+    "de": [
+     "Dornulme"
+    ]
+   }
+  },
+  {
    "common": "Hall's Crabapple",
    "latin": "Malus halliana",
    "names": {
@@ -6207,6 +6244,21 @@
      "アスナロ",
      "アスナロ属",
      "ヒノキアスナロ"
+    ]
+   }
+  },
+  {
+   "common": "Hickory",
+   "latin": "Carya sp.",
+   "names": {
+    "en": [
+     "hickory tree"
+    ],
+    "fr": [
+     "Caryer"
+    ],
+    "ja": [
+     "ペカン属"
     ]
    }
   },
@@ -10394,6 +10446,15 @@
    }
   },
   {
+   "common": "Peachleaf Willow",
+   "latin": "Salix amygdaloides",
+   "names": {
+    "es": [
+     "Amerina missurica"
+    ]
+   }
+  },
+  {
    "common": "Pear",
    "latin": "Pyrus communis / Pyrus pyraster; sources disagree, see notes",
    "names": {
@@ -11440,6 +11501,39 @@
    }
   },
   {
+   "common": "Red Maple",
+   "latin": "Acer rubrum",
+   "names": {
+    "en": [
+     "Swamp Maple",
+     "soft maple",
+     "water maple"
+    ],
+    "nl": [
+     "Canadese esdoorn",
+     "rode esdoorn"
+    ],
+    "de": [
+     "Rot-Ahorn",
+     "Rotahorn"
+    ],
+    "es": [
+     "Arce rojo",
+     "Arce rojo americano"
+    ],
+    "fr": [
+     "plaine",
+     "plaine rouge",
+     "érable de Virginie",
+     "érable du Canada"
+    ],
+    "ja": [
+     "アメリカハナノキ",
+     "レッドメイプル"
+    ]
+   }
+  },
+  {
    "common": "Red Mulberry",
    "latin": "Morus rubra",
    "names": {
@@ -11694,6 +11788,10 @@
      "Felsenulme"
     ]
    }
+  },
+  {
+   "common": "Rock Fig",
+   "latin": "Ficus petiolaris"
   },
   {
    "common": "Rocky Mountain Juniper",
@@ -12798,6 +12896,10 @@
      "シルバーメイプル"
     ]
    }
+  },
+  {
+   "common": "Sinaloan Albizia",
+   "latin": "Albizia sinaloensis"
   },
   {
    "common": "Single-leaf Nut Pine",
@@ -15946,40 +16048,6 @@
    "mapped": false
   },
   {
-   "common": "Red maple",
-   "latin": "Acer rubrum",
-   "mapped": false,
-   "names": {
-    "en": [
-     "Swamp Maple",
-     "soft maple",
-     "water maple"
-    ],
-    "nl": [
-     "Canadese esdoorn",
-     "rode esdoorn"
-    ],
-    "de": [
-     "Rot-Ahorn",
-     "Rotahorn"
-    ],
-    "es": [
-     "Arce rojo",
-     "Arce rojo americano"
-    ],
-    "fr": [
-     "plaine",
-     "plaine rouge",
-     "érable de Virginie",
-     "érable du Canada"
-    ],
-    "ja": [
-     "アメリカハナノキ",
-     "レッドメイプル"
-    ]
-   }
-  },
-  {
    "common": "Tatarian Maple",
    "latin": "Acer tataricum",
    "mapped": false,
@@ -17763,20 +17831,6 @@
    }
   },
   {
-   "common": "Banyan",
-   "latin": "Ficus altissima",
-   "mapped": false,
-   "names": {
-    "en": [
-     "council tree",
-     "lofty fig"
-    ],
-    "ja": [
-     "フィカス・アルティシマ"
-    ]
-   }
-  },
-  {
    "common": "Florida Strangler Fig",
    "latin": "Ficus aurea",
    "mapped": false
@@ -17967,16 +18021,6 @@
     "ja": [
      "アイビー",
      "セイヨウキヅタ"
-    ]
-   }
-  },
-  {
-   "common": "Halfelm",
-   "latin": "Hemiptelea davidii",
-   "mapped": false,
-   "names": {
-    "de": [
-     "Dornulme"
     ]
    }
   },
@@ -19026,23 +19070,6 @@
    "mapped": false
   },
   {
-   "common": "Chinese Pistache",
-   "latin": "Pistacia chinensis",
-   "mapped": false,
-   "names": {
-    "es": [
-     "Rhus argyi",
-     "Rhus gummifera"
-    ],
-    "ja": [
-     "カイジュ",
-     "カイノキ",
-     "クシノキ",
-     "トネリバハゼ"
-    ]
-   }
-  },
-  {
    "common": "BLACKBEAD, Florida Keys",
    "latin": "Pithecellobium keyense",
    "mapped": false,
@@ -19890,16 +19917,6 @@
    "common": "Palm, Bay palmetto / Bayleaf palm / Cana rata",
    "latin": "Sabal yapa",
    "mapped": false
-  },
-  {
-   "common": "Peachleaf Willow",
-   "latin": "Salix amygdaloides",
-   "mapped": false,
-   "names": {
-    "es": [
-     "Amerina missurica"
-    ]
-   }
   },
   {
    "common": "WILLOW, Coastal Plains",
