@@ -60,12 +60,28 @@ final class SignedInRoundTrip: XCTestCase {
         }
         app.terminate()
 
-        // Save it.
+        // Save it. The first run (2026-11-08) saw the heart still reading
+        // "Save" after the tap, which is one of two things: the app did not
+        // take the test session (the tap then asks to sign in), or the save
+        // landed and the account's own list, arriving from the server a moment
+        // after launch, wrote over it, which a person tapping in the first
+        // seconds would meet too. So the tap comes straight after launch, as a
+        // person's would, and the test says which of the two it saw.
         app = launch(["-tree=ams_001"])
         h = heart(app)
         waitFor(h, saved: false, "before saving")
         h.tap()
-        waitFor(h, saved: true, "right after the tap")
+        var seen: [String] = []
+        for _ in 0..<16 {
+            seen.append(h.exists ? (h.label.hasPrefix("Saved ") ? "saved" : "save") : "gone")
+            usleep(500_000)
+        }
+        let askedToSignIn = app.descendants(matching: .any)["signin-sheet"].exists
+        XCTAssertFalse(askedToSignIn,
+                       "the tap asked to sign in: the app did not take the test session (AT_TEST_SESSION)")
+        XCTAssertFalse(seen.contains("saved") && seen.last == "save",
+                       "the save showed and was then undone, every half second after the tap: \(seen.joined(separator: " "))")
+        waitFor(h, saved: true, "right after the tap (every half second: \(seen.joined(separator: " ")))")
         sleep(8)   // let the write go out before the app is closed
         app.terminate()
 
