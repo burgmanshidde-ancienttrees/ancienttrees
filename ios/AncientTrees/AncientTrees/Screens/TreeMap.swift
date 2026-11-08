@@ -1411,6 +1411,18 @@ enum MapLayers {
         // file is read, no error is raised, and `features(matching:)` returns
         // zero. Measured, 2026-08-24.
         st.liveSourceID = "\(treeSource)-\(st.seq)-\(st.writeCount)"
+        // NO FADE DURING THE SWAP (Hidde, 2026-11-08: "knipperende pins op map
+        // app de eerste 10 seconde na download dan houdt t op"). The double
+        // buffer above keeps the old pins until the new ones are drawn, but
+        // MapLibre cross-fades symbols over 0.3 s: the new pins, identical and
+        // on the same spots, fade in while the old ones they collide with fade
+        // out, and the map dips once per swap. A fresh install swaps several
+        // times in its first seconds (bundled catalogue, fresh feed, saves),
+        // hence a few blinks and then calm. With placement transitions off the
+        // new set takes the old set's places in one frame; they come back on
+        // once the old set is gone (retireWhenDrawn), so a pan or a zoom still
+        // fades pins in and out as before.
+        style.performsPlacementTransitions = false
         let source = MLNShapeSource(identifier: st.liveSourceID, url: file, options: [:])
         style.addSource(source)
         addTreeLayers(on: style, source: source, declutter: declutter)
@@ -1452,6 +1464,8 @@ enum MapLayers {
                     if let s = style.source(withIdentifier: r.source) { style.removeSource(s) }
                 }
                 st.retired = []
+                // The swap is done: pans and zooms fade pins again (see apply).
+                style.performsPlacementTransitions = true
                 // The files no live source reads any more.
                 let tmp = FileManager.default.temporaryDirectory
                 for n in max(1, st.writeCount - 30)..<st.writeCount {
