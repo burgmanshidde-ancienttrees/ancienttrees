@@ -48,6 +48,14 @@ on:
         description: 'Comma-separated test ids to run on the iOS 18 floor only'
         required: false
         default: ''
+      # THE SAME ON THE NEWEST iOS (2026-11-08, Hidde: "why does it take so
+      # long"): checking one fix ran the whole suite, 30 to 40 minutes, when
+      # the test it was about took two. Named tests only, newest simulator;
+      # the layout job still runs, the floor does not.
+      only:
+        description: 'Comma-separated test ids to run on the newest iOS only (the rest skipped)'
+        required: false
+        default: ''
 
   # TWICE A DAY, WHATEVER ELSE HAPPENS, and this is the piece that was missing.
   #
@@ -275,6 +283,15 @@ jobs:
           # each and then "did not have a process ID": the first run whose
           # real tests all passed (2026-08-21) went red on that alone. Serial
           # costs a few minutes and measures the app instead of the runner.
+          # `only` from a dispatch: the named tests and nothing else.
+          ONLY="${{ inputs.only }}"
+          if [ -n "$ONLY" ]; then
+            WHICH=""
+            for t in $(echo "$ONLY" | tr ',' ' '); do WHICH="$WHICH -only-testing:$t"; done
+          else
+            WHICH="-skip-testing:AncientTreesUITests/SweepFrames -skip-testing:AncientTreesUITests/RefusedWalk -skip-testing:AncientTreesUITests/ButtonWalk"
+          fi
+          echo "tests: $WHICH"
           run_tests() {
             xcodebuild test \
               -project ios/AncientTrees/AncientTrees.xcodeproj \
@@ -282,9 +299,7 @@ jobs:
               -destination "id=${{ steps.sim.outputs.udid }}" \
               -derivedDataPath /tmp/dd \
               -retry-tests-on-failure -test-iterations 2 \
-              -skip-testing:AncientTreesUITests/SweepFrames \
-              -skip-testing:AncientTreesUITests/RefusedWalk \
-              -skip-testing:AncientTreesUITests/ButtonWalk \
+              $WHICH \
               -parallel-testing-enabled NO \
               CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
               > /tmp/xcodebuild.log 2>&1 || true
@@ -418,7 +433,7 @@ jobs:
       # the two, and because a refused run that dies must not take the ordinary
       # verdict with it.
       - name: What happens when somebody says no
-        if: always()
+        if: always() && (inputs.only == '' || inputs.only == null)
         run: python3 scripts/refused.py --udid "${{ steps.sim.outputs.udid }}"
 
   # THE LOOKING HALF, on its own runner beside the one above.
@@ -563,7 +578,7 @@ jobs:
   # day is the right frequency for it, which is the same reasoning that gave
   # the job above its own unkillable scheduled group.
   floor:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && (inputs.only == '' || inputs.only == null))
     runs-on: macos-15
     # Measured on the scheduled run of 2026-09-02, which finished every step
     # and was killed anyway: 09:23:38 to 10:57:51 is 94 minutes against a
