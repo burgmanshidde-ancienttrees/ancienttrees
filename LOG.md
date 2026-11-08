@@ -14,6 +14,8 @@
 
 - **Salt Lake City reaches its target of 20** (rung 5, US first): wrote and merged slc_019 (Lavalle hawthorn) and slc_020 (red horse chestnut), both on the University of Utah campus beside the champion cork oak, ash and zelkova. Both are app-only under APP FIRST. Preflight 0 problems.
 - Rungs 1 and 3 empty (no reader photos or notes waiting). Rung 2: health.py shows the two open app bugs found by people on 11-08 (ambassador seat, pin blink). Their fixes are on the merged QA branch, and only a Mac or iOS CI run can close the rows, so I left them open. The iOS app workflow's scheduled failures need a session to read the run logs.
+- **Segovia scouted** (scout_next target): premise was off, the city already has 6 trees and its Castilla y León register is imported. One new lead (El Espinar sequoia, AS-SG-22, access unconfirmed), verdict `imported` in data/register-scouting.json.
+- **For Hidde:** seg_003 (Andromeda parterre sequoia, AS-SG-09) is published, but our own blocked lead says a 2020 news report has Patrimonio Nacional felling "the Andromeda sequoia". A second search today found no such report and says four sequoias stand in that parterre, so it is unsettled which one went. Left published; a session should settle it with a dated photo or Patrimonio Nacional.
 - The shelf has no writable pile left (0 READY leads). The remaining verified files are mostly stale, as passcheck says.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.

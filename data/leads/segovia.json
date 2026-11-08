@@ -39,6 +39,25 @@
       "status": "lead",
       "why": "A general search names these as Segovia's other historic garden sites (alongside the Palacio Episcopal) in the city's own gardening tradition. None searched individually this pass; the brief flagged them as worth checking (Alcazar grounds, cathedral cloister, Casa de la Moneda) but the register cluster was the time-boxed pass's main job. Good starting point for a future in-town Segovia pass to grow past the single Plaza de la Merced cedar.",
       "source_hint": "general search, not yet fetched"
+    },
+    {
+      "name": "Sequoia de Las Campanillas (El Espinar)",
+      "species": "Sequoiadendron giganteum",
+      "register_id": "AS-SG-22",
+      "lat": 40.74268,
+      "lng": -4.141072,
+      "status": "lead",
+      "why": "Register AS-SG-22 (Junta de Castilla y Leon, designation order MAM/1156/2006): diameter 182.4 cm (girth about 5.7 m), height 28.5 m, Casa Forestal de Las Campanillas, El Espinar, about 23 km SSW of Segovia (no train; bus El Espinar-Segovia, time not checked). One of six similar sequoias at an old, near-abandoned forestry house; only this one is declared. Access: a 2011 blog and a Segovia garden blog say the enclosure is fenced and the tree is seen from outside, reached by a forest track from the asphalt; not confirmed by an official source, so concrete access and the pin (register point, one of six similar trunks, so approximate) stay open. Life check not run (no register vitality field). Needs: access statement, which of the six trunks, dated photo. Search summary measurements were not used, only the register's.",
+      "source_hint": "https://arbolessingularescyl.blogspot.com/2011/06/sequoia-de-las-campanillas.html ; https://porunasegoviamasverde.wordpress.com/2019/08/18/el-espinar-casa-forestal-de-las-campanillas/"
+    },
+    {
+      "name": "Bosque de Riofrio (Patrimonio Nacional)",
+      "species": "Quercus ilex (oak woodland)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "No named or registered individual trees found for Riofrio in search; the 640 ha holm-oak wood is a wood, not a collectible point, and access is regulated (entry about 5 EUR, marked areas only). Nothing to verify until a source names a single tree.",
+      "source_hint": "general search 2026-11-08"
     }
   ],
   "blocked": [

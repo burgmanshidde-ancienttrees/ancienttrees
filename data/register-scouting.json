@@ -1213,6 +1213,12 @@
    "country": "Thailand",
    "status": "imported",
    "note": "IMPORTED 2026-11-02 as data/registers/thailand-rukkha.json. Register: รุกข มรดกของแผ่นดิน (heritage trees of the land), Department of Cultural Promotion, Ministry of Culture; lists of 2017 (65), 2018 (63, 64 rows after one fold) and 2019 (88). Licence: data.go.th dataset 5bc5f557-1786-4f92-babb-41553ed5a8f9 ('ข้อมูลรุกขมรดก') reads 'สัญญาอนุญาต Creative Commons Attributions', access level public; CC BY, commercial reuse with attribution. data.go.th returns 403 Access Denied to this runner (curl, browser pane, WebFetch, every mirror host), so the page and both xlsx files came from Internet Archive captures (2022-05-28 page, 2025-04-25 files). 2017 and 2018 rows carry coordinates, age, girth, height and a Thai history paragraph; 2019 is names, sites and provinces only, from Thai Wikipedia (CC BY-SA) citing technologychaoban.com. 121 of 217 entries have a usable point. Traps hit: a placeholder point (20.207213, 99.940312) pasted onto 7 trees in 7 provinces, Wat Chedi Luang's point copied to Loei and Songkhla, girths of 30 to 97 m (buttress or crown spread), heights of 60 to 90 m, a year figure in a girth cell, arm-span girths, a 1,000-year age column whose own history says 100. No species field: Latin is our mapping from the Thai name. Never updated since listing, so every tree needs a life check. Several entries are private-caretaker trees, groups, or whole forests."
+  },
+  {
+   "place": "Segovia",
+   "country": "Spain",
+   "status": "imported",
+   "note": "SCOUTED 2026-11-08, NO NEW SUPPLY. Already imported (data/registers/castilla-leon-arboles-notables.json, Junta de Castilla y Leon, licence free use with attribution, commercial branch of IGCYL-NC, proof in file header) and the city is already published with 6 trees (5 from the register). 13 register rows in Segovia province: 6 published; within about 30 km only AS-SG-22 (El Espinar sequoia, about 23 km, fenced forestry house, access unconfirmed) remains, kept as a lead in data/leads/segovia.json; the other six are 34 km or more out. Riofrio wood and Guadarrama gave no named trees. Open problem for a session: AS-SG-09 is blocked as probable felled in leads yet published as seg_003 in data/cities/segovia.json. Notes in data/research/segovia-scout-2026-11-08.md."
   }
  ],
  "out_of_focus": {
