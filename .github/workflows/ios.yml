@@ -230,6 +230,26 @@ jobs:
             echo "::warning::no test session: the signed-in round trips will skip"
           fi
 
+      # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
+      # first try failed on several runners that morning and its own retry
+      # then tripped over the half-file ("already exists in file system"), so
+      # the suite died in 24 seconds with no test run. Resolving here, cleaning
+      # between up to three tries, fills the shared SwiftPM cache every later
+      # build in this job reads.
+      - name: Fetch the packages
+        run: |
+          for i in 1 2 3; do
+            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
+            if xcodebuild -resolvePackageDependencies \
+                 -project ios/AncientTrees/AncientTrees.xcodeproj -scheme AncientTrees; then
+              echo "packages resolved on try $i"; exit 0
+            fi
+            echo "try $i failed, waiting before the next"
+            sleep 20
+          done
+          echo "::error::could not fetch the packages (MapLibre) in three tries"
+          exit 1
+
       - name: Build and test
         run: |
           set -o pipefail
@@ -417,6 +437,26 @@ jobs:
           fi
           echo "Using: $(xcode-select -p)"
 
+      # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
+      # first try failed on several runners that morning and its own retry
+      # then tripped over the half-file ("already exists in file system"), so
+      # the suite died in 24 seconds with no test run. Resolving here, cleaning
+      # between up to three tries, fills the shared SwiftPM cache every later
+      # build in this job reads.
+      - name: Fetch the packages
+        run: |
+          for i in 1 2 3; do
+            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
+            if xcodebuild -resolvePackageDependencies \
+                 -project ios/AncientTrees/AncientTrees.xcodeproj -scheme AncientTrees; then
+              echo "packages resolved on try $i"; exit 0
+            fi
+            echo "try $i failed, waiting before the next"
+            sleep 20
+          done
+          echo "::error::could not fetch the packages (MapLibre) in three tries"
+          exit 1
+
       # The app MEASURED its own layout since 2026-08-20 and judged none of it:
       # SweepFrames printed the frames, the grep above threw them away, and the
       # run went green with a heading four points off the card under it. This is
@@ -533,6 +573,26 @@ jobs:
             sudo xcode-select -s "$NEWEST/Contents/Developer" || true
           fi
           echo "Using: $(xcode-select -p)"
+
+      # MAPLIBRE'S DOWNLOAD, ON ITS OWN AND RETRIED (2026-11-08). SwiftPM's
+      # first try failed on several runners that morning and its own retry
+      # then tripped over the half-file ("already exists in file system"), so
+      # the suite died in 24 seconds with no test run. Resolving here, cleaning
+      # between up to three tries, fills the shared SwiftPM cache every later
+      # build in this job reads.
+      - name: Fetch the packages
+        run: |
+          for i in 1 2 3; do
+            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
+            if xcodebuild -resolvePackageDependencies \
+                 -project ios/AncientTrees/AncientTrees.xcodeproj -scheme AncientTrees; then
+              echo "packages resolved on try $i"; exit 0
+            fi
+            echo "try $i failed, waiting before the next"
+            sleep 20
+          done
+          echo "::error::could not fetch the packages (MapLibre) in three tries"
+          exit 1
 
       # Runners often already carry an older runtime from an older Xcode, and
       # they are shared across Xcodes on one machine, so ASK BEFORE FETCHING.
