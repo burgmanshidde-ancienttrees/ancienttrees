@@ -68,7 +68,7 @@ final class SignedInRoundTrip: XCTestCase {
 
     func testASaveReachesTheServerAndComesBack() {
         // Start clean: if an earlier run left it saved, remove it first.
-        var app = launch(["-tree=ams_001"])
+        var app = launch(["-tab=0", "-open=tree:ams_001"])
         var h = heart(app)
         sleep(5)
         if h.label.hasPrefix("Saved ") {
@@ -85,7 +85,7 @@ final class SignedInRoundTrip: XCTestCase {
         // after launch, wrote over it, which a person tapping in the first
         // seconds would meet too. So the tap comes straight after launch, as a
         // person's would, and the test says which of the two it saw.
-        app = launch(["-tree=ams_001"])
+        app = launch(["-tab=0", "-open=tree:ams_001"])
         h = heart(app)
         waitFor(h, saved: false, "before saving")
         h.tap()
@@ -104,7 +104,7 @@ final class SignedInRoundTrip: XCTestCase {
         app.terminate()
 
         // A fresh launch reads the account from the server: still saved.
-        app = launch(["-tree=ams_001"])
+        app = launch(["-tab=0", "-open=tree:ams_001"])
         h = heart(app)
         waitFor(h, saved: true, "after closing and opening the app (the server kept it)")
 
@@ -114,7 +114,7 @@ final class SignedInRoundTrip: XCTestCase {
         sleep(8)
         app.terminate()
 
-        app = launch(["-tree=ams_001"])
+        app = launch(["-tab=0", "-open=tree:ams_001"])
         h = heart(app)
         sleep(5)
         waitFor(h, saved: false, "after removing and reopening (the server forgot it)")
