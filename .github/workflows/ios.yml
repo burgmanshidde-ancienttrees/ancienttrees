@@ -208,6 +208,28 @@ jobs:
           xcrun simctl list devices available | grep -B20 "$UDID" | grep "^-- " | tail -1
           xcrun simctl list devices available | grep "$UDID"
 
+      # A REAL SESSION on the test account (scripts/test_session.py, Hidde
+      # 2026-11-08), so the signed-in tests can prove a write reaches the
+      # server. Masked before it exists in any log; xcodebuild hands
+      # TEST_RUNNER_* variables to the test runner without the prefix. No key
+      # (a fork) means no session, and those tests skip themselves.
+      - name: A real session for the test account
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # The line data/our-accounts.json needs (a hash and a code, as that
+          # public file already holds), so the account never counts as a reader.
+          python3 scripts/test_session.py --ours || true
+          S=$(python3 scripts/test_session.py 2>/dev/null || true)
+          if [ -n "$S" ]; then
+            for part in $(echo "$S" | tr '|' ' '); do echo "::add-mask::$part"; done
+            echo "::add-mask::$S"
+            echo "TEST_RUNNER_AT_SESSION=$S" >> "$GITHUB_ENV"
+            echo "test account signed in"
+          else
+            echo "::warning::no test session: the signed-in round trips will skip"
+          fi
+
       - name: Build and test
         run: |
           set -o pipefail

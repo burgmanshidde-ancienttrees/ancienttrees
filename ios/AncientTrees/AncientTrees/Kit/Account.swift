@@ -212,6 +212,28 @@ public final class Account {
             state = .signedIn(email: session?.email)
             return
         }
+        #if DEBUG
+        // A REAL SESSION FOR A UI TEST (Hidde, 2026-11-08: "waarom testen we
+        // in Gods naam alleen uitgelogd", then "Ja" to a test account). The
+        // fake session above can open a sheet but every write fails, so no
+        // test could prove that saving, collecting or sending reaches the
+        // server. CI signs in the test account (data/our-accounts.json, so
+        // nothing it does counts as a reader) and hands the tokens over as
+        // AT_TEST_SESSION = "access|refresh|userId|email". Held in memory
+        // only, never written to the Keychain, and the server still checks
+        // the token on every call. Debug builds only: a store build has no
+        // such door.
+        if let raw = ProcessInfo.processInfo.environment["AT_TEST_SESSION"] {
+            let p = raw.split(separator: "|", omittingEmptySubsequences: false).map(String.init)
+            if p.count == 4, !p[0].isEmpty {
+                session = Session(accessToken: p[0], refreshToken: p[1],
+                                  expiresAt: Date().addingTimeInterval(3000),
+                                  userId: p[2], email: p[3])
+                state = .signedIn(email: p[3])
+                return
+            }
+        }
+        #endif
         // The "Check your email" step, openable without sending a mail
         // (with -signin), so it is LOOKED AT before it ships (2026-10-14).
         if ProcessInfo.processInfo.arguments.contains("-email-sent") {

@@ -112,11 +112,24 @@ final class ButtonWalk: XCTestCase {
         return app.buttons.matching(NSPredicate(format: "label == %@", t.label)).firstMatch
     }
 
+    /// Can a finger reach it: its centre on the screen, then XCTest's own
+    /// hittable. Asking isHittable of an element whose centre is off screen
+    /// does not return false, it FAILS the test ("Activation point invalid",
+    /// the clipped highlight-card, 2026-11-08 first run), so the centre is
+    /// checked first.
+    private func reachable(_ e: XCUIElement, _ app: XCUIApplication) -> Bool {
+        guard e.exists else { return false }
+        let f = e.frame
+        let screen = app.windows.firstMatch.frame
+        guard !f.isEmpty, screen.contains(CGPoint(x: f.midX, y: f.midY)) else { return false }
+        return e.isHittable
+    }
+
     /// Every hittable button on the screen, scrolling down a few times.
     private func targets(_ app: XCUIApplication) -> [Target] {
         var seen: [Target] = []
         for pass in 0..<4 {
-            for b in app.buttons.allElementsBoundByIndex where b.exists && b.isHittable {
+            for b in app.buttons.allElementsBoundByIndex where reachable(b, app) {
                 let t = Target(id: b.identifier, label: b.label)
                 if t.id.isEmpty && t.label.isEmpty { continue }
                 if !seen.contains(t) { seen.append(t) }
@@ -130,7 +143,7 @@ final class ButtonWalk: XCTestCase {
     private func reachAndTap(_ app: XCUIApplication, _ t: Target) -> Bool {
         let e = element(app, t)
         for _ in 0..<5 {
-            if e.exists && e.isHittable { e.tap(); return true }
+            if reachable(e, app) { e.tap(); return true }
             app.swipeUp()
         }
         return false
@@ -154,8 +167,8 @@ final class ButtonWalk: XCTestCase {
             // then read the screen, then tap.
             let e = element(app, t)
             var tries = 0
-            while !(e.exists && e.isHittable) && tries < 5 { app.swipeUp(); tries += 1 }
-            guard e.exists && e.isHittable else { unreachable.append(key(t)); app.terminate(); continue }
+            while !reachable(e, app) && tries < 5 { app.swipeUp(); tries += 1 }
+            guard reachable(e, app) else { unreachable.append(key(t)); app.terminate(); continue }
             let before = settled(app)
             guard reachAndTap(app, t) else { unreachable.append(key(t)); app.terminate(); continue }
             let after = settled(app)

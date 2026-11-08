@@ -46,6 +46,10 @@ jobs:
           echo "udid=$UDID" >> "$GITHUB_OUTPUT"
           xcrun simctl list devices available | grep "$UDID"
 
+      # The signed-in half uses the FAKE session (-signed-in) on purpose: it
+      # taps everything, and on the real test account that would send real
+      # ambassador requests, Plus answers and follows. The real account is
+      # for the round trips in SignedInRoundTrip.swift, which clean up.
       - name: Tap every button
         run: |
           xcodebuild test \

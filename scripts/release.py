@@ -73,6 +73,45 @@ def check_current():
     return head
 
 
+IOS_RUNS = ("https://api.github.com/repos/burgmanshidde-ancienttrees/ancienttrees/"
+            "actions/workflows/ios.yml/runs?branch=main&status=completed&per_page=20")
+
+
+def check_ci_green(head_sha, despite=None):
+    """RED STOPS A BUILD (Hidde, 2026-11-08, "Ja", after the app run had been
+    red since 11-06 and build 40 shipped a Discover ambassador seat that
+    ignored a tap). The website already cannot deploy past a failing page
+    check; the app could archive past a red suite, and nobody looked.
+
+    Reads the newest finished ios.yml run on main: the one for this very
+    commit when there is one, else the newest, and says which. Anything but
+    success stops the release, unless Hidde passes --despite-red "<why>",
+    which is printed so it lands in the log.
+    """
+    import urllib.request
+    try:
+        with urllib.request.urlopen(IOS_RUNS, timeout=20) as r:
+            runs = json.load(r).get("workflow_runs", [])
+    except Exception as e:
+        die("could not ask GitHub whether the app's tests are green (%s)." % str(e)[:80],
+            "try again with a connection, or pass --despite-red \"<why>\"")
+    if not runs:
+        die("GitHub lists no finished iOS run on main.")
+    run = next((r for r in runs if r.get("head_sha") == head_sha), runs[0])
+    same = run.get("head_sha") == head_sha
+    where = "this commit" if same else "the newest finished run (%s), not this commit" % run.get("head_sha", "")[:9]
+    if run.get("conclusion") == "success":
+        print(f"app tests green on {where}: {run.get('html_url')}")
+        return
+    if despite:
+        print(f"WARNING: app tests are {run.get('conclusion')} on {where}; "
+              f"releasing anyway because: {despite}")
+        return
+    die(f"the app's tests are {run.get('conclusion')} on {where}, so this build is not going anywhere.",
+        f"read {run.get('html_url')} and make it green first; only Hidde may "
+        f"pass --despite-red \"<why>\"")
+
+
 def uploaded_build():
     """The highest build App Store Connect already holds, or None.
 
@@ -202,9 +241,12 @@ def main():
     ap.add_argument("--build", type=int,
                     help="the build number to use, when TestFlight is ahead of the "
                          "project file (Xcode's own increment does not write back)")
+    ap.add_argument("--despite-red", metavar="WHY",
+                    help="Hidde only: archive although the app's tests on main are not green")
     args = ap.parse_args()
 
     head = check_current()
+    check_ci_green(sh("git", "rev-parse", "HEAD").stdout.strip(), args.despite_red)
     # Before anything is built: Apple refuses a closed train, and it refuses it
     # after the archive and the upload, not before.
     check_marketing_version()

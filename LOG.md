@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-08 session: the app's QA, signed in for real, every button tapped, red stops a build
+
+- **Why:** Hidde kept finding holes ("hoe staat dat er in z'n totaliteit voor", "waarom testen we in Gods naam alleen uitgelogd"). Measured with the new `scripts/app_coverage.py`: 201 named app controls, 63 named by any UI test; every "signed-in" test ran on a fake session that cannot write; the app run had been red since 11-06 and builds went out anyway.
+- **Built, on branch claude/gifted-cerf-cbp95i, through CI on GitHub's Mac runners:** ButtonWalk.swift + buttonwalk.yml (every button on 13 screens, signed out and in, must change something; daily). A real test account (`scripts/test_session.py`, apptest@ancienttrees.app, fresh random password per run, profile private, session masked and handed over as AT_TEST_SESSION, Debug builds only) and SignedInRoundTrip.swift (save a tree, reopen, still saved; remove, reopen, gone). `release.py` refuses to archive while the newest finished ios.yml run on main is not green (`--despite-red "<why>"` is Hidde's). Rules in CLAUDE.md QA.
+- **Open:** add the test account's line to data/our-accounts.json from the first run's log; make main's app run green (FlowWalk tree-card, the map sheet's ambassador seat signed out).
+
 ## 2026-11-08 session: Discover's ambassador seat does not answer a tap (build 40)
 
 - **Breakage:** on Hidde's phone (build 40, iOS 27) the "Den Bosch is looking for an ambassador" row on Discover does nothing when tapped, though it shows the chevron (no request sent). It became a sheetTap (onTapGesture) instead of a Button on 11-05 (27a6c23), for the map's sheet; that is the only change to it since it worked.

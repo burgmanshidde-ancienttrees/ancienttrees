@@ -1,0 +1,89 @@
+// SIGNED IN, FOR REAL: A WRITE REACHES THE SERVER AND COMES BACK (2026-11-08).
+//
+// Hidde: "waarom testen we in Gods naam alleen uitgelogd". Every signed-in UI
+// test so far ran on -signed-in, a session with no token, so it could see a
+// sheet open and never whether anything arrived. This one runs on the test
+// account (scripts/test_session.py; CI hands the session over as
+// AT_SESSION, xcodebuild strips the TEST_RUNNER_ prefix) and proves the round
+// trip the way a person would notice it: save a tree, close the app, open it
+// again, and the tree is still saved, which it can only be if the server kept
+// it, because nothing a person does is kept on the device (hard rule 11).
+// Then it removes the save again, and checks that too, so the account ends
+// every run as it started.
+//
+// Without a session (a laptop, a fork) it skips rather than fails.
+
+import XCTest
+
+final class SignedInRoundTrip: XCTestCase {
+    private var session: String = ""
+
+    override func setUpWithError() throws {
+        continueAfterFailure = false
+        session = ProcessInfo.processInfo.environment["AT_SESSION"] ?? ""
+        try XCTSkipIf(session.isEmpty, "no test-account session (AT_SESSION): CI only")
+    }
+
+    private func launch(_ args: [String]) -> XCUIApplication {
+        let app = XCUIApplication()
+        app.launchArguments = ["-no-location-ask"] + args
+        app.launchEnvironment["AT_TEST_SESSION"] = session
+        app.launch()
+        _ = app.staticTexts.firstMatch.waitForExistence(timeout: 30)
+        return app
+    }
+
+    private func heart(_ app: XCUIApplication) -> XCUIElement {
+        let h = app.buttons["save-heart"].firstMatch
+        XCTAssertTrue(h.waitForExistence(timeout: 20), "no save heart on the tree page")
+        return h
+    }
+
+    /// Wait until the heart says what we expect; the account's saves arrive
+    /// from the server a moment after launch.
+    private func waitFor(_ h: XCUIElement, saved: Bool, _ what: String) {
+        let want = saved ? "Saved " : "Save "
+        let p = NSPredicate(format: "label BEGINSWITH %@", want)
+        let ok = XCTWaiter().wait(for: [XCTNSPredicateExpectation(predicate: p, object: h)], timeout: 20) == .completed
+        XCTAssertTrue(ok, "\(what): the heart reads \"\(h.label)\"")
+    }
+
+    func testASaveReachesTheServerAndComesBack() {
+        // Start clean: if an earlier run left it saved, remove it first.
+        var app = launch(["-tree=ams_001"])
+        var h = heart(app)
+        sleep(5)
+        if h.label.hasPrefix("Saved ") {
+            h.tap()
+            waitFor(h, saved: false, "clearing what an earlier run left")
+            sleep(8)
+        }
+        app.terminate()
+
+        // Save it.
+        app = launch(["-tree=ams_001"])
+        h = heart(app)
+        waitFor(h, saved: false, "before saving")
+        h.tap()
+        waitFor(h, saved: true, "right after the tap")
+        sleep(8)   // let the write go out before the app is closed
+        app.terminate()
+
+        // A fresh launch reads the account from the server: still saved.
+        app = launch(["-tree=ams_001"])
+        h = heart(app)
+        waitFor(h, saved: true, "after closing and opening the app (the server kept it)")
+
+        // And remove it, so the account ends as it began.
+        h.tap()
+        waitFor(h, saved: false, "right after removing")
+        sleep(8)
+        app.terminate()
+
+        app = launch(["-tree=ams_001"])
+        h = heart(app)
+        sleep(5)
+        waitFor(h, saved: false, "after removing and reopening (the server forgot it)")
+        app.terminate()
+    }
+}
