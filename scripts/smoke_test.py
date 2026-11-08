@@ -23,12 +23,14 @@ Exit 1 on any failure; CI treats that as the site being broken (rung 2).
 """
 import argparse
 import json
+import os
 import re
 import shutil
 import socket
 import subprocess
 import sys
 import threading
+import time
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -466,6 +468,53 @@ f.addEventListener('load', function () {
 </script>"""
 
 
+SIGNEDIN_HARNESS = """<!doctype html><meta charset="utf-8"><title>signedin</title>
+<style>html,body{margin:0}iframe{width:402px;height:874px;border:0}</style>
+<iframe id="f"></iframe><pre id="r">pending</pre>
+<script>
+// SIGNED IN FOR REAL (Hidde, 2026-11-08: "ook web ingelogd testen lijkt me
+// sws terecht"). The test account's session (scripts/test_session.py),
+// planted the way the sign-in itself stores it. Save the tree, reload, and it
+// must still be saved: nothing a person does is kept in the browser, so only
+// the server can know (hard rule 11). Then take it off again and reload, so
+// the account ends as it began.
+try { localStorage.setItem('ancienttrees_session', JSON.stringify(__SESSION__)); } catch (e) {}
+var u = new URLSearchParams(location.search).get('u');
+var f = document.getElementById('f'), out = {}, phase = 0;
+function heart() { return f.contentDocument.querySelector('.save-btn'); }
+function pressed() { var b = heart(); return b ? b.getAttribute('aria-pressed') : null; }
+function reload() { f.contentWindow.location.reload(); }
+function done() { document.getElementById('r').textContent = 'RESULT ' + JSON.stringify(out); }
+f.addEventListener('load', function () {
+  setTimeout(function () {
+    phase += 1;
+    if (phase === 1) {
+      out.signedIn = f.contentDocument.documentElement.dataset.signedIn === '1';
+      out.hasHeart = Boolean(heart());
+      if (!out.hasHeart) return done();
+      out.startedPressed = pressed();
+      if (out.startedPressed === 'true') { heart().click(); setTimeout(reload, 4000); phase = 0; return; }
+      heart().click();
+      setTimeout(function () {
+        out.pressedAfterTap = pressed();
+        out.dialogAfterTap = Boolean(f.contentDocument.getElementById('signin-dialog') &&
+                                     f.contentDocument.getElementById('signin-dialog').open);
+        reload();
+      }, 4000);
+    } else if (phase === 2) {
+      out.pressedAfterReload = pressed();
+      heart() && heart().click();
+      setTimeout(reload, 4000);
+    } else {
+      out.pressedAfterRemove = pressed();
+      done();
+    }
+  }, 5000);
+});
+f.src = u;
+</script>"""
+
+
 SIGNEDOUT_HARNESS = """<!doctype html><meta charset="utf-8"><title>signedout</title>
 <style>html,body{margin:0}iframe{width:402px;height:874px;border:0}</style>
 <iframe id="f"></iframe><pre id="r">pending</pre>
@@ -708,6 +757,57 @@ def stale_session_is_refused(chrome, base, page):
         fails.append("stale session: window.atPaintNav(false) does not clear html[data-signed-in] (%s)" % page)
     if r.get("rowsKeptIcons") is False or r.get("rowsKeptIcons") == "false":
         fails.append("signed in, a menu row to /account lost its icon: the painter must rename the bar's button only (%s)" % page)
+    return fails
+
+
+def signed_in_save_round_trip(chrome, base, page):
+    """Signed in on the test account, a save reaches the server and comes back.
+
+    Hidde, 2026-11-08: "ook web ingelogd testen lijkt me sws terecht", after
+    a day showing that every account test ran signed out or on a fake session.
+    stale_session_is_refused() proves a FAKE session cannot write; this proves
+    a REAL one can: save, reload, still saved, remove, reload, gone. Needs
+    AT_WEB_SESSION ("access|refresh|userId|email", from
+    scripts/test_session.py in smoke.yml); without it, it says so and checks
+    nothing. The harness holds the token only while it runs and is deleted
+    straight after."""
+    raw = os.environ.get("AT_WEB_SESSION", "")
+    parts = raw.split("|")
+    if len(parts) != 4 or not parts[0]:
+        print("SMOKE NOTE: no test-account session (AT_WEB_SESSION), signed-in round trip skipped")
+        return []
+    session = {"access_token": parts[0], "refresh_token": parts[1],
+               "expires_at": int(time.time()) + 3000}
+    harness = DIST / "__signedin.html"
+    harness.write_text(SIGNEDIN_HARNESS.replace("__SESSION__", json.dumps(session)), encoding="utf-8")
+    try:
+        out = subprocess.run(
+            [chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+             "--window-size=420,900", "--virtual-time-budget=90000", "--dump-dom",
+             "%s/__signedin.html?u=%s" % (base, page)],
+            capture_output=True, text=True, timeout=240).stdout
+    finally:
+        harness.unlink(missing_ok=True)
+    m = re.search(r"RESULT (\{.*?\})</pre>", out, re.S)
+    if not m:
+        return ["signed in: the harness produced no result (Chrome or the page did not run)"]
+    try:
+        r = json.loads(m.group(1).replace("&quot;", '"').replace("&amp;", "&"))
+    except Exception:
+        return ["signed in: the harness result was unreadable"]
+    fails = []
+    if not r.get("signedIn"):
+        fails.append("signed in: a real session did not paint the page signed in (%s)" % page)
+    if not r.get("hasHeart"):
+        return fails + ["signed in: no save heart on %s to test with" % page]
+    if r.get("dialogAfterTap"):
+        fails.append("signed in: saving asked a signed-in account to sign in (%s)" % page)
+    if r.get("pressedAfterTap") != "true":
+        fails.append("signed in: the heart did not light on tap (%s)" % page)
+    if r.get("pressedAfterReload") != "true":
+        fails.append("signed in: the save was gone after a reload, so the server did not keep it (%s)" % page)
+    if r.get("pressedAfterRemove") != "false":
+        fails.append("signed in: removing the save did not stick after a reload (%s)" % page)
     return fails
 
 
@@ -1089,6 +1189,12 @@ setTimeout(function(){
     for line in stale:
         print("SMOKE FAIL: %s" % line)
     failures += stale
+
+    # And a REAL session can write, and the server keeps it (2026-11-08).
+    real = signed_in_save_round_trip(chrome, base, f"/{city.stem}/{tree.name}")
+    for line in real:
+        print("SMOKE FAIL: %s" % line)
+    failures += real
 
     # And signed out, every gated control on every page type asks (2026-10-05).
     # The explore map's Favourites and My trees chips too (Hidde, 2026-10-07:

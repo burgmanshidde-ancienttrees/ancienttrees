@@ -60,5 +60,23 @@ jobs:
         working-directory: site
         run: npx astro build
 
+      # The test account, signed in for real (scripts/test_session.py, Hidde
+      # 2026-11-08: "ook web ingelogd testen lijkt me sws terecht"), for the
+      # save round trip. Masked before it exists in any log; no key means the
+      # round trip says it was skipped.
+      - name: A real session for the test account
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          S=$(python3 scripts/test_session.py 2>/dev/null || true)
+          if [ -n "$S" ]; then
+            for part in $(echo "$S" | tr '|' ' '); do echo "::add-mask::$part"; done
+            echo "::add-mask::$S"
+            echo "AT_WEB_SESSION=$S" >> "$GITHUB_ENV"
+            echo "test account signed in"
+          else
+            echo "::warning::no test session: the signed-in round trip will skip"
+          fi
+
       - name: Smoke test in headless Chrome
         run: python3 scripts/smoke_test.py
