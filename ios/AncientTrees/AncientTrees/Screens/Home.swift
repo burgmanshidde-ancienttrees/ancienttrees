@@ -524,6 +524,9 @@ struct HomeView: View {
         return "\(t.city) · " + (d < 10 ? String(format: "%.1f km", d) : "\(Int(d.rounded())) km")
     }
 
+    private static let visitorLineHeight: CGFloat = 44
+    private static let visitorLineRoom: CGFloat = 28
+
     /// A shelf of tree tiles, rounded: see shelf().
     /// Who sent it: a small avatar and the name, one line. The name of a
     /// public profile shows to everyone; a tap opens the profile, and signed
@@ -556,8 +559,16 @@ struct HomeView: View {
                 .lineLimit(1)
         }
         .frame(width: Self.tileWidth, alignment: .leading)
+        // Apple's 44 points to tap, on a 16 point line: the room hangs below
+        // the name and the shelf takes it back (visitorLineRoom), so nothing
+        // moves on screen and a tap on the photograph above still opens the
+        // tree. Under the label's own element, or the system measures only
+        // the avatar and the name (appfit SMALL on iOS 18, 2026-11-07).
+        .frame(minHeight: Self.visitorLineHeight, alignment: .top)
+        .contentShape(Rectangle())
+        .accessibilityElement(children: .ignore)
         if real == nil {
-            line.accessibilityElement(children: .combine)
+            line.accessibilityLabel(name)
         } else {
             Button {
                 if let id = r.author_id { navigator.push = .person(id) } else { nudge.require(.general) }
@@ -838,6 +849,7 @@ struct HomeView: View {
                         }
                     }
                 }
+                .padding(.bottom, -Self.visitorLineRoom)
             }
         }
 
