@@ -12,6 +12,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-08 session: build 41 archived
+
+- **In the Organizer, 1.0.4 (41), from 4a8884293 with ios.yml green on that commit** (run 42484867118) and the catalogue refreshed to 4,690 trees and 407 walks. Carries branch claude/gifted-cerf-cbp95i (merged to main) and New from visitors' name at 44 points to tap (the iOS 18 floor's last SMALL; appfit 0 findings on the SE, iOS 18). The floor job does not run on a push, so it is first read on the next schedule.
+- **Not seen rendered:** the New from visitors row after that fix, it sits below the fold on the SE. Asked of Hidde's phone round.
+- **Open:** test account's line in data/our-accounts.json (BACKLOG, build 41 step 3), so the digest still counts apptest@ as new.
+- **For Hidde:** Organizer, the top 1.0.4 (41), Distribute App; TestFlight round; submit with phased release. The two 1.0.4 (40) archives of 14:14 and 14:34 are not for upload.
+
 ## 2026-11-08 session: build 41 scope, and the map sheet the Airbnb way for build 42
 
 - **Decided (Hidde, "eens"):** build 41 ships today's fixes only (Discover's ambassador seat, the pin blink, plus what other sessions readied: New from visitors, Plus under the trees). The map sheet change below is **build 42**, on its own branch, judged by Hidde in TestFlight.
