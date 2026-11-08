@@ -1,0 +1,74 @@
+{
+  "city": "Penacova",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "The protected tree on Penacova's main square is a roof. On the Terreiro, between the town hall and the courts, old wisteria vines carry the Raul Lino pergola, a terrace over the Mondego that Portugal's forest service classified as of public interest in 1997. The register put the vines at 97 years old in 2015. Spring is the time to come, when they flower.",
+  "meta_description": "The Raul Lino wisteria pergola on the Terreiro de Penacova, above the Mondego: a protected Chinese wisteria about a century old, in flower in spring.",
+  "question_meta": "Penacova's Raul Lino pergola is roofed by a protected Chinese wisteria, 97 years old by the 2015 register count.",
+  "question_answer": "The old tree on Penacova's main square is a Chinese Wisteria (Wisteria sinensis) that roofs the Raul Lino pergola on the Terreiro, beside the town hall. Portugal's forest service gave its age as 97 when it measured it in 2015.",
+  "question_context": "The age is the register's, not a planting record: the ICNF measured the vines in 2015 and recorded 97 years, which would make them about 108 now. The pergola is said to date from 1918, which fits, but no source we read says the vines went in with it. A wisteria is a climber, so the register's girth of 2.3 metres is a knot of old stems and its height of 3.25 metres is the height of the pergola it covers. The crown is 3.8 metres across. An older compilation from 2009 gave a girth of 1.95 metres and an age of 89, an earlier reading of the same vines rather than a second opinion. The state classified the wisteria as of public interest in 1997. The same register lists a second wisteria on the terrace, with a girth of 10 centimetres and an age of 11, which reads as a young replacement vine or a slip in the data, so it is folded into this entry. The vines were recorded alive in June 2026. The pergola stands between the town hall and the courts, looking out over the Mondego.",
+  "hero_tree_id": "pcv_001",
+  "oldest_tree_id": "pcv_001",
+  "faq": [
+    {
+      "q": "When does the Penacova wisteria flower?",
+      "a": "In spring. The parish council describes the old vines over the pergola giving off an unmistakable scent then."
+    },
+    {
+      "q": "How far is Penacova from Coimbra?",
+      "a": "About 14 kilometres, some 23 minutes by car. Buses are slow and infrequent, so check them first."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pcv_001",
+      "name": "The Wisteria Pergola of Penacova",
+      "species": "Chinese Wisteria (Wisteria sinensis)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 90,
+      "age_max": 115,
+      "girth_cm": 230,
+      "height_m": 3.25,
+      "location": {
+        "address": "Terreiro de Penacova (Pergola Raul Lino), beside the town hall, 3360 Penacova",
+        "latitude": 40.2701,
+        "longitude": -8.2807,
+        "neighbourhood": "Penacova town centre, above the Mondego"
+      },
+      "location_site": {
+        "name": "Pergola Raul Lino, Terreiro de Penacova",
+        "radius_m": 30
+      },
+      "story": "This protected tree is 3.25 metres tall because it is a roof. Portugal's forest service lists a Chinese wisteria of public interest on the Terreiro de Penacova, and what stands there is a pergola carried by old vines, the terrace that bears Raul Lino's name.\n\nThe register's numbers read strangely for a tree until you remember that a wisteria is a climber. Its girth of 2.3 metres is not one trunk but a knot of old stems, the cepas, as the parish council's page calls them. The crown is 3.8 metres across, and the height is simply the height of the pergola. The ICNF measured it in 2015 and gave its age as 97, which would make it about 108 now. That is the register's estimate, not a planting record. The state classified it in 1997.\n\nThe pergola stands at one side of the town's main square, between the town hall and the neoclassical building that houses the courts, and works as a balcony over the Mondego. The parish council describes a pleasant veranda covered by old wisteria vines that give off an unmistakable scent in spring. That is the visit to plan for. Out of flower it is still a shaded terrace with a view.\n\nPenacova is a town of its own, about 14 kilometres and some 23 minutes by car from Coimbra. Buses are slow and infrequent, so check them before you count on one.",
+      "how_to_recognise": "You can recognise it as the pergola itself, a roof of old wisteria stems 3.25 metres high. It stands at one side of the Terreiro de Penacova, between the town hall and the courts building, over the Mondego.",
+      "verified_sources": [
+        "https://jfpenacova.pt/patrimonio-cultural-edificado/",
+        "https://geocatalogo.icnf.pt/metadados/arv_class.html",
+        "https://www.inaturalist.org/observations/368613542"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Publico, processo KNJ1/314 (glicinia n.1)",
+        "url": "https://geocatalogo.icnf.pt/metadados/arv_class.html"
+      },
+      "access": "Public terrace on the main terreiro of Penacova, between the town hall and the neoclassical court building; a belvedere over the Mondego. No ticket or hours published on the fetched Junta page; treated as open public ground.",
+      "transport": "Penacova is a separate town about 14 km from Coimbra (about 23 min by car). Public transport is a bus of roughly 45 to 60 minutes with few departures a day (rome2rio/moovit listings seen in search, not fetched). OUTSIDE the 30-minute day-trip bound: should ship, if at all, as a Penacova tree page, not as part of the Coimbra walk.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "kind": "flowers",
+        "label": "spring, when the old vines over the pergola flower and the terrace fills with their scent"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "SOURCES: (1) ICNF register KNJ1/314 'glicinia n.1', Terreiro de Penacova, classified DR n.81 II Serie 07/04/1997: girth 2.3 m, height 3.25 m, crown 3.8 m, age_register 97 measured 2015 (so roughly 108 by 2026). Register is the national authority; no vitality field. (2) Junta de Freguesia de Penacova page, fetched 2026-11-04: the Raul Lino pergola is 'uma agradavel varanda ... coberta por velhas cepas de glicinias que, na Primavera, exalam um perfume inconfundivel', at one side of the main terreiro between the camara and the neoclassical building housing the courts. Search listings (not fetched) say the pergola was given to Penacova in 1918 by the Sociedade de Propaganda de Portugal and marked its centenary in 2018; that agrees with the register age (97 in 2015 implies about 1918), but no fetched page says the vines were planted with the pergola, so the age stays broad. Older 2009 compilation blog (venerablesarboles) gives 1.95 m girth, 89 years: earlier vintage, not independent. ALIVE: iNaturalist observation 2026-06-05 at the coordinate (lifecheck RECENT). PIN: register coordinate 40.2701,-8.2807 lands on the Posto de Turismo beside the terreiro (Nominatim, per earlier pass), so approximate; the site is a single pergola taken in at a glance, small named site. FOLDED: glicinia n.2 (KNJ1/315, register girth 0.1 m, age 11, likely a data error or a young replacement vine) folded into this entry. REMARKABLE: a wisteria is a liana, so girth 2.3 m is a multi-stem mass of old stumps ('cepas') forming a roof, 3.25 m high; the draw is the pergola in spring bloom and scent, with a river viewpoint. Best time is wisteria flowering (spring; peak month to be confirmed by a phenology source). Nearby, same register: a coast redwood at Quinta de Santo Antonio (KNJ1/511), private quinta, access unknown, not delivered.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
