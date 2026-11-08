@@ -12,6 +12,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-08 session: build 41 scope, and the map sheet the Airbnb way for build 42
+
+- **Decided (Hidde, "eens"):** build 41 ships today's fixes only (Discover's ambassador seat, the pin blink, plus what other sessions readied: New from visitors, Plus under the trees). The map sheet change below is **build 42**, on its own branch, judged by Hidde in TestFlight.
+- **Build 42, the map sheet as Airbnb draws it** (Hidde's screenshots, 2026-11-08: "er zit veel loze ruimte boven in de lijst als je hem naar boven scrollt - zullen we Airbnb nadoen"): at full height the list is the page, starting right under the search field, no grip and no empty count strip; the floating "Map" pill brings the map back. This reverses his 2026-10-10 and 10-13 ruling to keep the strip at full height (its reason, the strip as the handle back down, is carried by the Map pill now). At the lowest stop only the count bar stays ("58 trees") and the tab bar hides, so the map takes the screen; a tap or swipe brings both back. Web explore drops the same empty strip in the same change. FlowWalk's map flow and ButtonWalk's sheet steps move with it.
+
 ## 2026-11-08 session: the app's QA, signed in for real, every button tapped, red stops a build
 
 - **Why:** Hidde kept finding holes ("hoe staat dat er in z'n totaliteit voor", "waarom testen we in Gods naam alleen uitgelogd"). Measured with the new `scripts/app_coverage.py`: 201 named app controls, 63 named by any UI test; every "signed-in" test ran on a fake session that cannot write; the app run had been red since 11-06 and builds went out anyway.
