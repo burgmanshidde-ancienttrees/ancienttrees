@@ -1,0 +1,76 @@
+name: iOS every button answers
+
+# ButtonWalk (ios/AncientTrees/AncientTreesUITests/ButtonWalk.swift): every
+# button on every main screen, signed out and signed in, tapped by a finger,
+# must change something. Hidde, 2026-11-08, after Discover's ambassador seat
+# ignored his tap on build 40 and no test had noticed. A fresh launch per
+# button makes it too slow for ios.yml's suite, so it runs here: once a day,
+# on a push that touches the walk, and on dispatch.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'ios/AncientTrees/AncientTreesUITests/ButtonWalk.swift'
+      - '.github/workflows/buttonwalk.yml'
+  schedule:
+    - cron: '20 2 * * *'
+
+concurrency:
+  group: buttonwalk-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
+
+jobs:
+  walk:
+    runs-on: macos-15
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Which Xcode
+        run: |
+          NEWEST=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$NEWEST" ]; then
+            sudo xcode-select -s "$NEWEST/Contents/Developer" || true
+          fi
+          echo "Using: $(xcode-select -p)"
+          xcodebuild -version
+
+      - name: Pick a simulator
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available | grep "iPhone" | grep -oE "[0-9A-F]{8}-([0-9A-F]{4}-){3}[0-9A-F]{12}" | tail -1)
+          if [ -z "$UDID" ]; then
+            xcodebuild -downloadPlatform iOS || true
+            UDID=$(xcrun simctl list devices available | grep "iPhone" | grep -oE "[0-9A-F]{8}-([0-9A-F]{4}-){3}[0-9A-F]{12}" | tail -1)
+          fi
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl list devices available | grep "$UDID"
+
+      - name: Tap every button
+        run: |
+          xcodebuild test \
+            -project ios/AncientTrees/AncientTrees.xcodeproj \
+            -scheme AncientTrees \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -derivedDataPath /tmp/dd \
+            -resultBundlePath /tmp/buttonwalk.xcresult \
+            -only-testing:AncientTreesUITests/ButtonWalk \
+            -parallel-testing-enabled NO \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            > /tmp/buttonwalk.log 2>&1 || true
+          grep -E "Test Case|ButtonWalk .*could not reach|error:|\*\* (TEST|BUILD)" /tmp/buttonwalk.log || true
+          if grep -q '\*\* TEST SUCCEEDED \*\*' /tmp/buttonwalk.log; then
+            echo "Every button answered."
+          else
+            echo "::error::Dead buttons or a failed build, named above."
+            exit 1
+          fi
+
+      - name: Keep the result bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: buttonwalk-${{ github.run_id }}
+          path: /tmp/buttonwalk.xcresult
+          retention-days: 7
+          if-no-files-found: ignore

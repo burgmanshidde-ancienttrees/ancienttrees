@@ -232,6 +232,7 @@ jobs:
               -retry-tests-on-failure -test-iterations 2 \
               -skip-testing:AncientTreesUITests/SweepFrames \
               -skip-testing:AncientTreesUITests/RefusedWalk \
+              -skip-testing:AncientTreesUITests/ButtonWalk \
               -parallel-testing-enabled NO \
               CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
               > /tmp/xcodebuild.log 2>&1 || true
@@ -559,7 +560,7 @@ jobs:
               WHICH="$WHICH -only-testing:$t"
             done
           else
-            WHICH="-skip-testing:AncientTreesUITests/SweepFrames -skip-testing:AncientTreesUITests/RefusedWalk"
+            WHICH="-skip-testing:AncientTreesUITests/SweepFrames -skip-testing:AncientTreesUITests/RefusedWalk -skip-testing:AncientTreesUITests/ButtonWalk"
           fi
           echo "tests: $WHICH"
           # ITS OWN RESULT BUNDLE, outside /tmp/dd. appfit and appsweep run
