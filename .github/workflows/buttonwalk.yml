@@ -50,12 +50,28 @@ jobs:
       # taps everything, and on the real test account that would send real
       # ambassador requests, Plus answers and follows. The real account is
       # for the round trips in SignedInRoundTrip.swift, which clean up.
+      # MapLibre's download failed three runs in a row on 2026-11-08 before a
+      # single button was tapped: SwiftPM's first try fails, its own retry then
+      # trips over the file the first one left ("already exists in file
+      # system"), and clearing the cache beforehand did not help. So resolve
+      # on its own, clean between tries, up to three times.
+      - name: Fetch the packages
+        run: |
+          for i in 1 2 3; do
+            rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts /tmp/dd/SourcePackages
+            if xcodebuild -resolvePackageDependencies \
+                 -project ios/AncientTrees/AncientTrees.xcodeproj \
+                 -scheme AncientTrees -derivedDataPath /tmp/dd; then
+              echo "packages resolved on try $i"; exit 0
+            fi
+            echo "try $i failed, waiting before the next"
+            sleep 20
+          done
+          echo "::error::could not fetch the packages (MapLibre) in three tries"
+          exit 1
+
       - name: Tap every button
         run: |
-          # A half-downloaded MapLibre left in the runner's SwiftPM cache made
-          # package resolution fail twice in a row ("already exists in file
-          # system", 2026-11-08) before a single button was tapped. Start clean.
-          rm -rf ~/Library/Caches/org.swift.swiftpm/artifacts
           xcodebuild test \
             -project ios/AncientTrees/AncientTrees.xcodeproj \
             -scheme AncientTrees \
