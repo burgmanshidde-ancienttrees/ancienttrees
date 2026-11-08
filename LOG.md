@@ -1,5 +1,10 @@
 # LOG
 
+## 2026-11-08 night run (01:03 window), short
+
+Rung 1: nothing waiting (0 photographs, no new tree notes). Rung 2: health.py exit 1 on the iOS app. Its scheduled runs fail on one UI test, `FlowWalk.testEveryFlowLeavesAWayBack`, step "open-the-first-tree" (FlowWalk.swift:135): the `tree-card` button at y 727 cannot be scrolled into view (kAXErrorCannotComplete), on iOS 26 and the iOS 18 floor alike. Not reproducible on this Linux runner, so not fixed. It may mean the sheet no longer raises on the tap, or the bigger catalogue changed the first card. For a Mac session. Web errors ORANGE: ResizeObserver loop notice, a harmless browser message, not acted on.
+Rung 5: Sintra verify pass (claimed, run, released): 0 new trees, every unmined register row is already live, blocked or outside Sintra; Monserrate swamp cypress still has no independent source or pin. Sintra is a wall for 48h. Nothing published this window.
+
 <!-- archive-index -->
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
