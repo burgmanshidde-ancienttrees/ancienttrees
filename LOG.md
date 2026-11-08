@@ -12,6 +12,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-08 session: Discover's ambassador seat does not answer a tap (build 40)
+
+- **Breakage:** on Hidde's phone (build 40, iOS 27) the "Den Bosch is looking for an ambassador" row on Discover does nothing when tapped, though it shows the chevron (no request sent). It became a sheetTap (onTapGesture) instead of a Button on 11-05 (27a6c23), for the map's sheet; that is the only change to it since it worked.
+- **Fix, on branch claude/gifted-cerf-cbp95i, not built:** `AmbassadorWantedRow(inSheet: false)` on Discover is a plain Button again; the map sheet's seat keeps sheetTap. New UI test AmbassadorAskWalk: the seat on Discover (-at= Cadiz) signed out and signed in, the city sheet's seat signed in at both heights, with no coordinate-tap fallback (SignedOutWalk tapped only the sheet's seat, only signed out, and falls back to a coordinate tap, which is why no run caught it).
+- **For Hidde:** the next Mac session builds, runs AmbassadorAskWalk and merges before build 41. If the city sheet's seat fails too, sheetTap itself is broken on a real tap, and the other sheetTap rows (Plus, followers, sign-in, the seen tick, place links) need the same look; the failing FlowWalk "tree-card" step from the night runs may be the same cause.
+
 ## 2026-11-08 night run (01:03 window), short
 
 Rung 1: nothing waiting (0 photographs, no new tree notes). Rung 2: health.py exit 1 on the iOS app. Its scheduled runs fail on one UI test, `FlowWalk.testEveryFlowLeavesAWayBack`, step "open-the-first-tree" (FlowWalk.swift:135): the `tree-card` button at y 727 cannot be scrolled into view (kAXErrorCannotComplete), on iOS 26 and the iOS 18 floor alike. Not reproducible on this Linux runner, so not fixed. It may mean the sheet no longer raises on the tap, or the bigger catalogue changed the first card. For a Mac session. Web errors ORANGE: ResizeObserver loop notice, a harmless browser message, not acted on.

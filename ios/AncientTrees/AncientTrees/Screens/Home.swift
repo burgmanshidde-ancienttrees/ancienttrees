@@ -848,7 +848,7 @@ struct HomeView: View {
         // ambassador cta and add tree cta below each other").
         if let h = deck.here, catalogue.facets.ambassadors(city: h.slug).isEmpty,
            !catalogue.facets.seated(city: h.slug) {
-            AmbassadorWantedRow(place: h.name).padding(.horizontal, 16)
+            AmbassadorWantedRow(place: h.name, inSheet: false).padding(.horizontal, 16)
         }
 
         if deck.records.count == 3 {
