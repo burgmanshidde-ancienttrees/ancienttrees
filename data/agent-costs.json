@@ -4,6 +4,14 @@
     "2026-11-08": [
       {
         "date": "2026-11-08",
+        "kind": "write",
+        "target": "salt-lake-city",
+        "tokens": 0,
+        "trees": 2,
+        "note": "Session work, no agent: stories for slc_019 (Lavalle hawthorn) and slc_020 (red horse chestnut), the city reaches its target of 20."
+      },
+      {
+        "date": "2026-11-08",
         "kind": "verify",
         "target": "sintra",
         "tokens": 73000,

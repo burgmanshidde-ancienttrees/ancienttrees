@@ -10,6 +10,12 @@
 - [2026-08](archive/LOG-2026-08.md)
 - [2026-07](archive/LOG-2026-07.md)
 
+## 2026-11-08 night run (window from 16:29 UTC)
+
+- **Salt Lake City reaches its target of 20** (rung 5, US first): wrote and merged slc_019 (Lavalle hawthorn) and slc_020 (red horse chestnut), both on the University of Utah campus beside the champion cork oak, ash and zelkova. Both are app-only under APP FIRST. Preflight 0 problems.
+- Rungs 1 and 3 empty (no reader photos or notes waiting). Rung 2: health.py shows the two open app bugs found by people on 11-08 (ambassador seat, pin blink). Their fixes are on the merged QA branch, and only a Mac or iOS CI run can close the rows, so I left them open. The iOS app workflow's scheduled failures need a session to read the run logs.
+- The shelf has no writable pile left (0 READY leads). The remaining verified files are mostly stale, as passcheck says.
+
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 ## 2026-11-08 session: build 41 archived
