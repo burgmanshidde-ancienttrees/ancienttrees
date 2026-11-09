@@ -192,11 +192,6 @@
       "released_at": "2026-11-06T20:23:43+00:00"
     },
     {
-      "slug": "braga",
-      "kind": "verify",
-      "released_at": "2026-11-07T00:32:44+00:00"
-    },
-    {
       "slug": "san-francisco",
       "kind": "verify",
       "released_at": "2026-11-07T01:36:49+00:00"
@@ -265,6 +260,11 @@
       "slug": "guimaraes",
       "kind": "verify",
       "released_at": "2026-11-08T18:58:13+00:00"
+    },
+    {
+      "slug": "braga",
+      "kind": "verify",
+      "released_at": "2026-11-09T01:24:29+00:00"
     }
   ]
 }
