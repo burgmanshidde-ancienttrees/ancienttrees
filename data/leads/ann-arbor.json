@@ -1,0 +1,59 @@
+{
+ "city": "Ann Arbor",
+ "country": "United States",
+ "city_slug": "ann-arbor",
+ "updated": "2026-11-09",
+ "note": "Verify pass 2026-11-09 (source-led, Michigan Big Tree Register CSV export of the Michigan Botanical Society sheet, no reuse terms stated).",
+ "leads": [
+  {
+   "name": "Rackham Graduate School cucumber magnolia",
+   "species": "Cucumber Magnolia (Magnolia acuminata)",
+   "location_hint": "915 E Washington St",
+   "why_not_shipped": "City champion map only, 102 in girth, courtyard access unverified."
+  },
+  {
+   "name": "Central Campus Recreation Building purple beech",
+   "species": "Purple Beech (Fagus sylvatica)",
+   "location_hint": "401 Washtenaw Ave",
+   "why_not_shipped": "City champion map only, 150.7 in girth, 60 ft; public lawn but no second source or alive check."
+  },
+  {
+   "name": "Huron Hills Golf Course honeylocust",
+   "species": "Honeylocust (Gleditsia triacanthos)",
+   "location_hint": "3465 E Huron River Dr, #2 fairway",
+   "why_not_shipped": "Golf course, access unclear."
+  },
+  {
+   "name": "Mixtwood Pomona Park pignut hickory",
+   "species": "Pignut Hickory (Carya glabra)",
+   "location_hint": "Mixtwood Pomona Park",
+   "why_not_shipped": "City champion map only, 139 in girth, 107 ft; no exact spot."
+  },
+  {
+   "name": "Wurster Park black oak",
+   "species": "Black Oak (Quercus velutina)",
+   "location_hint": "Wurster Park",
+   "why_not_shipped": "Named by the city park page as champion; the map's black oak is at 2315 Newport Rd, a private address, so this one is not located."
+  },
+  {
+   "name": "Persimmon in front of Bethlehem United Church of Christ",
+   "species": "Common Persimmon (Diospyros virginiana)",
+   "location_hint": "423 S 4th Ave",
+   "why_not_shipped": "Small (75 in girth), church front, city and register champion, not worth the walk alone."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Tappan Oak, University of Michigan Diag",
+   "reason": "DEAD. Removed November 2021 for decay and root fungus; a sapling grown from its acorns was planted in 2025."
+  },
+  {
+   "name": "Champion trees at private addresses (e.g. American elm 506 Crest Ave, silver maple 223 Crest Ave, tulip tree 809 Oxford Rd)",
+   "reason": "Private residences, no public viewing place, hard rule 10."
+  },
+  {
+   "name": "American elm id 2243 (Washtenaw)",
+   "reason": "Location withheld by the register."
+  }
+ ]
+}

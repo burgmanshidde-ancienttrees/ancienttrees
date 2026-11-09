@@ -1,0 +1,34 @@
+[
+ {
+  "id": "kcm_005",
+  "name": "The Vaile Mansion Smoketree",
+  "species": "American Smoketree (Cotinus obovatus)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 241,
+  "height_m": 12.5,
+  "location": {
+   "address": "Vaile Mansion & Arboretum, 1500 N Liberty St, Independence, Missouri 64050",
+   "latitude": 39.10733,
+   "longitude": -94.41679,
+   "neighbourhood": "Independence (Kansas City metro)"
+  },
+  "verified_sources": [
+   "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0 (Missouri Department of Conservation champion layer, Smoke tree, Jackson County, public location Vaile Mansion, public access YES)",
+   "https://services.arcgis.com/sbDzK061dd6DNPHv/arcgis/rest/services/Independence_Missouri_Heritage_Trees_(Public)/FeatureServer/0 (City of Independence heritage tree, approved, public, category LEG, location 1500 N Liberty St)",
+   "https://www.jchs.org/jchs-e-journal/2023/3/15/gilded-age-splendor-of-vaile-mansion-endures-into-21-st-century (Jackson County Historical Society essay by a Vaile Society volunteer: grounds hold a Missouri state champion smoke tree)",
+   "https://arbnet.org/morton-register/vaile-mansion-arboretum/ (ArbNet Level I accredited arboretum, collection includes the Missouri State Champion Smoketree)"
+  ],
+  "official_register": {
+   "name": "Missouri Register of Champion Trees (Missouri Department of Conservation)",
+   "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+  },
+  "access": "Vaile Mansion is a museum run by the Victorian Society of the Vaile Mansion; tours (adults about $10) Thursday to Saturday 10 to 4 and Sunday 1 to 4, April 1 to October 31, plus holiday tours late Nov to Dec 22. No source states whether the grounds can be walked outside tour hours or without a ticket; confirm on 816-503-6700 before promising it. MDC lists public access YES. Independence is about 16 km east of downtown Kansas City.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "No source says which tree on the five-acre grounds it is. MDC marker and city register point both sit within about 60 m of each other near the mansion (MDC 39.1079,-94.4170; city 39.10733,-94.41679). A visitor can ask at the mansion; recognition line not available from sources.",
+  "photo_candidates": [],
+  "verify_notes": "MDC champion layer: Cotinus obovatus, Jackson County, circumference 95 in (241 cm), height 41 ft (12.5 m), spread 39 ft (11.9 m), Missouri points as listed, not a national champion, owner City of Independence (the layer says City of Independence; the Vaile Society manages the museum). Points are fuzzed to site level. City of Independence heritage layer (same tree, category LEG, location 1500 N Liberty St, point 39.10733,-94.41679, approved 2026; Date_Planted field carries a value that reads as c.1915 but is probably a placeholder, NOT used as an age). No age source: age left empty, page should ask the reader. Girth sanity: 241 cm is large for a smoketree, which is normally a small multi-stemmed tree (MBG: 20 to 30 ft); a multi-stem measurement at 4.5 ft is likely, unverified. Alive: the 2023 JCHS essay and the ArbNet page (about a year old) both name it as present; no dated photo seen; lifecheck NONE. Flagged: register-only plus two soft descriptions, aliveness thin, exact tree not identified on the grounds, grounds access outside tours unstated. Independence, not Kansas City proper; label with its real place. Paid share: this is a ticketed site. Also on the grounds, from the same sources: a Liberty elm from the Elm Research Institute and an allee of 30 sugar maples in two rows of 15 north of the mansion (no measurements, planting dates unsourced)."
+ }
+]

@@ -1,41 +1,49 @@
 {
-  "city": "Boise",
-  "country": "United States",
-  "city_slug": "boise",
-  "note": "Verify pass 2026-09-11. passcheck had only one Wikidata lead (an Anne Frank chestnut sapling, not chased: young, mass-distributed worldwide, not distinctively Boise) and no register. Found and used the Idaho Big Tree Program's own state-champion register (University of Idaho Extension), which is exactly the kind of naming-body BRIEF_RESEARCH.md says predicts yield. 2 trees delivered (boi_001, boi_002), below the 4-tree floor. FOLLOW-UP PASS 2026-09-11 (this pass): delivered boi_003 (Anne Frank Chestnut Sapling, reconsidered as historically-significant per this pass's brief; see data/research/boise-verify-extra.json). Checked the Idaho Big Tree Program's June 2019 registry edition (sites.stat.washington.edu/jaw/CAW/june-2019-id-registry-big-trees.pdf) as a would-be second source for the basswood and cottonwood: it is the SAME underlying University of Idaho programme/data lineage republished later, not an independent source, and gives no address for either tree beyond what the 2014 edition already had. Also checked the City of Boise's own Morris Hill Arboretum self-guided Tree Walk (a genuine 'naming body' with 47 numbered, plaqued specimens, https://www.cityofboise.org/media/4248/mh_treewalk_final.pdf) as a possible source of a 3rd/4th candidate: DEAD END, the booklet states outright 'This arboretum was planted in 2007 and the trees are young', so every specimen fails genuinely-old, and none is visually spectacular or historically significant either (ordinary young landscape specimens of common ornamental species). Do not re-check this source for Boise city trees; it could still be worth checking if this project ever wants species-identification photo references.",
-  "leads": [
-    {
-      "name": "The Idaho Champion Eastern Cottonwood",
-      "species": "Populus deltoides var. deltoides",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Idaho STATE CHAMPION eastern cottonwood per the same Idaho Big Tree Program register: 113in DBH, 361.2in (917cm, over 9m) circumference, 95ft (29m) tall, in Boise, Ada Co. Register lists the owner as 'Private' with no address, so no coordinate and no access confirmation. This would be an exceptional entry (by far the biggest girth found this pass for any Boise-area candidate) but needs both a location and a public-access answer before it can be verified further; not pursued this pass given the time box."
-    },
-    {
-      "name": "The Idaho Champion Weeping Cherry",
-      "species": "Prunus subhirtella 'pendula'",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Idaho STATE CHAMPION per the same register: 22in DBH, 69.5in circumference, 37ft tall, Boise, Ada Co., Private, nominated 2004. Small and on private land; low priority, not pursued."
-    },
-    {
-      "name": "The Idaho Champion American Basswood",
-      "species": "Tilia americana",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "CONFIRMED in the register itself this pass (Idaho's Champion Big Tree List, January 2014 edition, page 21: 30in DBH, 94in circumference, 79ft tall, 5' 1/4-crown, 178 points, 'Boise, Ada Co., Boise, Valley Shepherd Nazarene Church', nominated by T. Kennedy & K. Ricketts, 2006). BLOCKED this pass on location, not on existence: the only 'Valley Shepherd Church of the Nazarene' findable today is at 150 W Maestra St, MERIDIAN, Idaho, not Boise, and no source found (church's own site, Facebook, directories) says when it moved there or where it stood in 2006. Assuming today's Meridian address is where the 2006 champion tree stands would be exactly the 'bridge claim' BRIEF_RESEARCH.md warns against (joining 'champion tree at Valley Shepherd Church, Boise, 2006' + 'Valley Shepherd Church is now in Meridian' into 'so the tree is at 150 W Maestra St', which no source actually says). No second source (news, church site, photo) found for this specific tree in two search passes. web.archive.org is unreachable from this environment, which is the obvious next check (old snapshots of myvsn.org or a Boise address for the church pre-2010). Needs a session that can check archive.org, old phone/church directories, or call the church, before this can ship at any precision."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Anne Frank Chestnut Sapling at Idaho Anne Frank Human Rights Memorial",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "lat": 43.61259,
-      "lng": -116.2062,
-      "reason": "NOT blocked -- VERIFIED and delivered this pass as boi_003 in data/research/boise-verify-extra.json. Left here only so a future pass does not re-research it from scratch; see that file for the full record (sources, access, the unresolved 770-vs-800-S-8th-St address discrepancy between the memorial's own two official pages, and the unconfirmed exact planting year)."
-    }
-  ]
+ "city": "Boise",
+ "country": "United States",
+ "city_slug": "boise",
+ "note": "Verify pass 2026-09-11. passcheck had only one Wikidata lead (an Anne Frank chestnut sapling, not chased: young, mass-distributed worldwide, not distinctively Boise) and no register. Found and used the Idaho Big Tree Program's own state-champion register (University of Idaho Extension), which is exactly the kind of naming-body BRIEF_RESEARCH.md says predicts yield. 2 trees delivered (boi_001, boi_002), below the 4-tree floor. FOLLOW-UP PASS 2026-09-11 (this pass): delivered boi_003 (Anne Frank Chestnut Sapling, reconsidered as historically-significant per this pass's brief; see data/research/boise-verify-extra.json). Checked the Idaho Big Tree Program's June 2019 registry edition (sites.stat.washington.edu/jaw/CAW/june-2019-id-registry-big-trees.pdf) as a would-be second source for the basswood and cottonwood: it is the SAME underlying University of Idaho programme/data lineage republished later, not an independent source, and gives no address for either tree beyond what the 2014 edition already had. Also checked the City of Boise's own Morris Hill Arboretum self-guided Tree Walk (a genuine 'naming body' with 47 numbered, plaqued specimens, https://www.cityofboise.org/media/4248/mh_treewalk_final.pdf) as a possible source of a 3rd/4th candidate: DEAD END, the booklet states outright 'This arboretum was planted in 2007 and the trees are young', so every specimen fails genuinely-old, and none is visually spectacular or historically significant either (ordinary young landscape specimens of common ornamental species). Do not re-check this source for Boise city trees; it could still be worth checking if this project ever wants species-identification photo references.",
+ "leads": [
+  {
+   "name": "The Idaho Champion Eastern Cottonwood",
+   "species": "Populus deltoides var. deltoides",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Idaho STATE CHAMPION eastern cottonwood per the same Idaho Big Tree Program register: 113in DBH, 361.2in (917cm, over 9m) circumference, 95ft (29m) tall, in Boise, Ada Co. Register lists the owner as 'Private' with no address, so no coordinate and no access confirmation. This would be an exceptional entry (by far the biggest girth found this pass for any Boise-area candidate) but needs both a location and a public-access answer before it can be verified further; not pursued this pass given the time box."
+  },
+  {
+   "name": "The Idaho Champion Weeping Cherry",
+   "species": "Prunus subhirtella 'pendula'",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Idaho STATE CHAMPION per the same register: 22in DBH, 69.5in circumference, 37ft tall, Boise, Ada Co., Private, nominated 2004. Small and on private land; low priority, not pursued."
+  },
+  {
+   "name": "The Idaho Champion American Basswood",
+   "species": "Tilia americana",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "CONFIRMED in the register itself this pass (Idaho's Champion Big Tree List, January 2014 edition, page 21: 30in DBH, 94in circumference, 79ft tall, 5' 1/4-crown, 178 points, 'Boise, Ada Co., Boise, Valley Shepherd Nazarene Church', nominated by T. Kennedy & K. Ricketts, 2006). BLOCKED this pass on location, not on existence: the only 'Valley Shepherd Church of the Nazarene' findable today is at 150 W Maestra St, MERIDIAN, Idaho, not Boise, and no source found (church's own site, Facebook, directories) says when it moved there or where it stood in 2006. Assuming today's Meridian address is where the 2006 champion tree stands would be exactly the 'bridge claim' BRIEF_RESEARCH.md warns against (joining 'champion tree at Valley Shepherd Church, Boise, 2006' + 'Valley Shepherd Church is now in Meridian' into 'so the tree is at 150 W Maestra St', which no source actually says). No second source (news, church site, photo) found for this specific tree in two search passes. web.archive.org is unreachable from this environment, which is the obvious next check (old snapshots of myvsn.org or a Boise address for the church pre-2010). Needs a session that can check archive.org, old phone/church directories, or call the church, before this can ship at any precision."
+  },
+  {
+   "name": "Julia Davis Park Tree Walk: English Elm (#30), Honeylocust (#41), Catalpa (#44)",
+   "species": "Ulmus procera / Gleditsia triacanthos / Catalpa speciosa",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "City tree walk 2011 names them as heavily planted early 1900s / especially large / very large; no measurement, no coordinate, single source. No photo or exact pin in reach 2026-11-09."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Anne Frank Chestnut Sapling at Idaho Anne Frank Human Rights Memorial",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "lat": 43.61259,
+   "lng": -116.2062,
+   "reason": "NOT blocked -- VERIFIED and delivered this pass as boi_003 in data/research/boise-verify-extra.json. Left here only so a future pass does not re-research it from scratch; see that file for the full record (sources, access, the unresolved 770-vs-800-S-8th-St address discrepancy between the memorial's own two official pages, and the unconfirmed exact planting year)."
+  }
+ ]
 }

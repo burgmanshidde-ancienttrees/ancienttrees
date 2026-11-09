@@ -1,0 +1,72 @@
+[
+ {
+  "id": "ann_001",
+  "name": "Wurster Park chinkapin oak",
+  "species": "Chinkapin Oak (Quercus muehlenbergii)",
+  "age_estimate": "not documented",
+  "girth_cm": 549,
+  "height_m": 35.7,
+  "location": {
+   "address": "Wurster Park, 525 W Madison St, Ann Arbor, MI 48103 (just into the woods at the park's southwest corner)",
+   "latitude": 42.27194838,
+   "longitude": -83.75490813,
+   "neighbourhood": "Old West Side"
+  },
+  "verified_sources": [
+   "https://www.a2gov.org/parks-and-recreation/parks-and-places/wurster-park/",
+   "https://www.a2gov.org/forestry/ann-arbor-champion-trees/",
+   "https://docs.google.com/spreadsheets/d/1x0l0BRXxdGzV6kxMLtvNBb88x0jqlTJfNLpQGZtjrB8/export?format=csv",
+   "https://www.damnarbor.com/2018/02/ann-arbors-champion-trees.html"
+  ],
+  "official_register": {
+   "name": "Michigan Big Tree Register (Michigan Botanical Society)",
+   "url": "https://michiganbotanicalsociety.org/big-tree"
+  },
+  "access": "Free, public city park (5.5 acres), no fee; dogs on leash. Tree is near the southwest corner, just inside the woods.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Largest chinkapin oak in Michigan and the largest tree of any species in Ann Arbor by girth, per city park page (owner, still current 2026) and city Champion Tree Map (champion since 2020: circumference 216.032 in = 549 cm, height 117 ft = 35.7 m, crown spread 106 ft, 359.5 points). Michigan Big Tree Register id 1557 (verified 2016-06-18): 215 in, 110 ft, crown 120 ft, same tree (field note 'Wurster Park'); height differs 110 vs 117 ft. Park page also names a champion black oak in the park (not located). Pin is the city map's geocode (42.27195,-83.75491), park level; register says SW corner just into the woods, so approximate. A blog says it is the tree photographed for the Wikipedia article on chinkapin oak (blog only, unverified). Alive: named on the city park page in 2026. Photo candidate: Wikipedia/Commons image of Quercus muehlenbergii in Wurster Park (not checked for geotag or licence)."
+ },
+ {
+  "id": "ann_002",
+  "name": "West Park bur oak",
+  "species": "Bur Oak (Quercus macrocarpa)",
+  "age_estimate": "not documented",
+  "girth_cm": 520,
+  "height_m": 26.6,
+  "location": {
+   "address": "West Park, Ann Arbor, MI, in the middle of the park east of the bandshell",
+   "latitude": 42.28375158,
+   "longitude": -83.75642251,
+   "neighbourhood": "Old West Side / downtown"
+  },
+  "verified_sources": [
+   "https://www.a2gov.org/forestry/ann-arbor-champion-trees/"
+  ],
+  "access": "Free, public city park near downtown; no fee.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "One source (City of Ann Arbor Champion Tree Map, champion since 2020, the owner of the ground): bur oak, circumference 204.728 in = 520 cm, height 87.2 ft = 26.6 m, crown 121 ft, 322.2 points, 'in the middle, east of the bandshell'. Pin is the map's geocode, park level. Flagged: one source, no independent alive check since 2020; the map says champions reign two years after verification. The city's champion list is verified by the city, so register-grade."
+ },
+ {
+  "id": "ann_003",
+  "name": "West Park northern red oak",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "not documented",
+  "girth_cm": 374,
+  "height_m": 25.1,
+  "location": {
+   "address": "West Park, Ann Arbor, MI, at the Miller Ave entrance",
+   "latitude": 42.28443416,
+   "longitude": -83.75472524,
+   "neighbourhood": "Old West Side / downtown"
+  },
+  "verified_sources": [
+   "https://www.a2gov.org/forestry/ann-arbor-champion-trees/"
+  ],
+  "access": "Free, public city park; no fee.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "One source (City of Ann Arbor Champion Tree Map, champion since 2020): northern red oak, circumference 147.266 in = 374 cm, height 82.4 ft = 25.1 m, crown 89 ft, 251.9 points, 'West Park at Miller Ave entrance'. Pin is the map's geocode. Flagged: one source, no recent alive check; red oaks are oak-wilt exposed (city forestry page has an oak wilt section). Weaker visit than the bur oak 120 m away; ship only as part of one West Park stop if at all."
+ }
+]

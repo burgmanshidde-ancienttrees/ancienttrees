@@ -1,0 +1,58 @@
+[
+  {
+    "id": "scz_001",
+    "name": "The Giant",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "roughly 1,500 years",
+    "age_min": 1200,
+    "age_max": 1800,
+    "girth_cm": 1628,
+    "height_m": 83,
+    "location": {
+      "address": "Redwood Grove Loop Trail, stop 7, Henry Cowell Redwoods State Park, Felton, Santa Cruz County",
+      "latitude": 37.03571,
+      "longitude": -122.05956,
+      "neighbourhood": "Henry Cowell Redwoods State Park, Felton"
+    },
+    "verified_sources": [
+      "https://www.parks.ca.gov/pages/546/files/HenryCowell_RedwoodGroveLoopTrail2013.pdf",
+      "https://www.inaturalist.org/observations/391565595"
+    ],
+    "official_register": {
+      "name": "California State Parks, Henry Cowell Redwoods Redwood Grove Loop Trail guide",
+      "url": "https://www.parks.ca.gov/pages/546/files/HenryCowell_RedwoodGroveLoopTrail2013.pdf"
+    },
+    "access": "Stop 7 on the signed Redwood Grove self-guided loop, a short flat walk from the park's Redwood Grove day-use area (Felton, about 10 km north of Santa Cruz). State park day-use fee applies; check parks.ca.gov for hours.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "how_to_recognise": "Stop 7 on the Redwood Grove loop, the biggest trunk in the grove, a few steps from the hollow Frémont Tree (stop 8).",
+    "verify_notes": "State Parks trail guide (owner of the ground): 'The Giant' grows to 270 ft (83 m) tall and over 17 ft (5 m) wide. girth_cm 1628 is that width read as a diameter times pi (518 cm x pi), not a measured girth. Age: the guide gives a mature redwood age of over 2,000 years in general; an iNaturalist caption (2026-08-13, observer's own text, https://www.inaturalist.org/observations/391565595) says roughly 1,500 years and about 277 ft; a search summary quoted State Parks as 1,200 to 1,600 years and 282 ft for the park's tallest redwood, not fetched, so the age range is a broad hedge, unverified. Life: dated iNaturalist observation 2026-08-13 geotagged at the tree. Pin is the observer's phone fix, a few metres from the Frémont Tree (stops 7 and 8 are consecutive); both approximate. Park became state park 1953 after Cowell family donated land; grove earlier Santa Cruz County Big Trees Park (guide stop 14). One official source plus one dated observation: flagged. photo candidate: the iNaturalist observation (cc-by) is the tree's own signed photo, not checked for licence terms beyond the API field."
+  },
+  {
+    "id": "scz_002",
+    "name": "The Fremont Tree",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "not documented, an old-growth redwood",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Redwood Grove Loop Trail, stop 8, Henry Cowell Redwoods State Park, Felton, Santa Cruz County",
+      "latitude": 37.0359,
+      "longitude": -122.0595,
+      "neighbourhood": "Henry Cowell Redwoods State Park, Felton"
+    },
+    "verified_sources": [
+      "https://www.parks.ca.gov/pages/546/files/HenryCowell_RedwoodGroveLoopTrail2013.pdf",
+      "https://www.inaturalist.org/observations/391565560"
+    ],
+    "official_register": {
+      "name": "California State Parks, Henry Cowell Redwoods Redwood Grove Loop Trail guide",
+      "url": "https://www.parks.ca.gov/pages/546/files/HenryCowell_RedwoodGroveLoopTrail2013.pdf"
+    },
+    "access": "Stop 8 on the signed Redwood Grove self-guided loop; visitors can step inside the hollow base. State park day-use fee applies; check parks.ca.gov for hours.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "how_to_recognise": "A burnt-out, hollow redwood on the loop trail whose base you can walk into, stop 8, just past The Giant.",
+    "verify_notes": "State Parks trail guide stop 8: General John C. Fremont reportedly spent the night in 1846 in this burnt-out hollow redwood; asked in 1888 if he ever slept in it, he answered 'It makes a great story, let it stand.' Guide calls it a still-living tree and says you can explore the inside. Story is reported, not proven. No girth, height or age published. Life: iNaturalist observations 2022-12-04, 2025-10-14 and 2026-08-13 at the tree (https://www.inaturalist.org/observations/391565560, .../321675826, .../143780397). The three phone fixes scatter about 100 m so the pin is approximate, set at their mean. One official source plus dated observations: flagged."
+  }
+]

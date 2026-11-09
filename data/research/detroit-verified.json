@@ -1,0 +1,49 @@
+[
+ {
+  "id": "det_001",
+  "name": "Elmwood Cemetery bur oak",
+  "species": "Bur Oak (Quercus macrocarpa)",
+  "age_estimate": "roughly 280 years",
+  "age_min": 250,
+  "age_max": 310,
+  "location": {
+   "address": "Historic Elmwood Cemetery, 1200 Elmwood Ave, Detroit, MI 48207 (Bloody Run valley)",
+   "latitude": null,
+   "longitude": null,
+   "neighbourhood": "Elmwood Cemetery, east side"
+  },
+  "verified_sources": [
+   "https://elmwoodhistoriccemetery.org/foundation/tree-tours"
+  ],
+  "access": "Cemetery grounds are open to visitors (cemetery office at 1200 Elmwood Ave); free self-guided tree tour maps on the cemetery site. Confirm opening hours before going.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Owner of the ground (Historic Elmwood Cemetery and Foundation) calls it the oldest tree in its Level I ArbNet arboretum (certified 2015, first in Detroit), about 280 years old, in Bloody Run valley. Source: owner's arboretum page (accessed 2026-11-09), one source, owner is enough. No coordinate published; no pin given, cemetery is about 86 acres, so NOT a small site. Alive: the same page captions photos from Arbor Day 2025, no dated photo of this trunk seen. Needs a pin from the cemetery's tree tour map PDFs (image-only PDFs, not OCRed this pass: https://www.elmwoodhistoriccemetery.org/images/9209_elm_treetourss.pdf is the southern sections) or a reader fix. Cemetery predates much of Detroit: its valley is the Bloody Run creek (name from 1763 Pontiac battle) per site name only, not verified here."
+ },
+ {
+  "id": "det_002",
+  "name": "Elmwood Cemetery sweetgum",
+  "species": "American Sweetgum (Liquidambar styraciflua)",
+  "age_estimate": "not documented",
+  "girth_cm": 253,
+  "height_m": 23.5,
+  "location": {
+   "address": "Historic Elmwood Cemetery, 1200 Elmwood Ave, Detroit, MI 48207 (Section O, tree no. 657 per register field note)",
+   "latitude": null,
+   "longitude": null,
+   "neighbourhood": "Elmwood Cemetery"
+  },
+  "verified_sources": [
+   "https://elmwoodhistoriccemetery.org/foundation/tree-tours",
+   "https://docs.google.com/spreadsheets/d/1x0l0BRXxdGzV6kxMLtvNBb88x0jqlTJfNLpQGZtjrB8/export?format=csv"
+  ],
+  "official_register": {
+   "name": "Michigan Big Tree Register (Michigan Botanical Society)",
+   "url": "https://michiganbotanicalsociety.org/big-tree"
+  },
+  "access": "Cemetery grounds open to visitors; confirm hours with the office.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Michigan Big Tree Register id 1973, verified 2016-11-01: girth 99.6 in (253 cm), height 77 ft (23.5 m), 'Section O near 4-street intersection, #657'. Owner's page says it is Michigan's second largest sweetgum. Two sources (register + owner). Register GPS is rounded to 0.01 degree (42.35,-83.27 is wrong for the cemetery, which sits near 42.35,-83.02), so no usable coordinate: pin missing. Last measured 2016, no recent alive check. Also register 2002/2003 Lombardy poplars (3rd and 4th largest, 2016) and 2065 American elm (185 in, 110 ft, 2016) at the same cemetery: not delivered, poplars short-lived and no recent check."
+ }
+]

@@ -1,0 +1,58 @@
+{
+ "city": "cleveland",
+ "leads": [
+  {
+   "name": "Pilgrim's Sycamore (Moravian Sycamore), Independence",
+   "species": "American Sycamore (Platanus occidentalis)",
+   "status": "open",
+   "reason": "no exact pin or photo in reach: Cuyahoga Valley National Park, on the chained-off Riverview Road extension about half a mile in (Scriptype 2023, citing a CVNP volunteer report 'The Tree with Many Names'); hollow, about 82 in diameter and nearly 100 ft last measured, estimated four centuries, MCT 46.081 on the 1971 list. Alive 2023. Needs a coordinate (report or NPS) then it ships.",
+   "sources": [
+    "https://www.scriptype.com/2023/04/19/350-year-old-independence-tree-stands-test-of-time/",
+    "https://www.earlysettlers.org/files/201218%20Harbaugh%201971%20ESA%20full.pdf"
+   ]
+  },
+  {
+   "name": "Rocky River Reservation sycamore (East Branch near Berea)",
+   "species": "American Sycamore",
+   "status": "open",
+   "reason": "MCT 46.120, 131 in diameter in 1971, largest of the survey; no coordinate, alive unknown; Metroparks does not map its Moses Cleaveland trees (Freshwater 2021), only about 70 of 273 survive.",
+   "sources": [
+    "https://www.earlysettlers.org/files/201218%20Harbaugh%201971%20ESA%20full.pdf",
+    "https://www.freshwatercleveland.com/street-level/CleavelandTrees102521.aspx"
+   ]
+  },
+  {
+   "name": "Metroparks Ten Big Trees: tuliptree Garfield Park, red oak West Channel Pond Rocky River, white oak Hemlock Loop Brecksville, hophornbeam Look About Lodge South Chagrin, burr oak Astorhurst Bedford, elm near Acacia clubhouse, sycamore at Brookside ball diamonds, cottonwood Lower Fern Hill Big Creek, beech Sylvan Loop North Chagrin",
+   "status": "open",
+   "reason": "owner page names each by trail or facility with no coordinates, measurements or access; no OSM trunk nodes found (Nominatim returned nothing for the lodge, Astorhurst or Acacia). Park-level pins only; the Brookside sycamore (by the playground and ball diamonds) and the Look About Lodge hophornbeam are the most findable.",
+   "sources": [
+    "https://www.clevelandmetroparks.com/parks/visit/ten-to-explore/2021/april"
+   ]
+  },
+  {
+   "name": "Cuyahoga County Heritage Tree (white oak, Lake View Cemetery, near Garfield Memorial)",
+   "status": "blocked",
+   "reason": "planted September 2026 for America 250-Ohio; a sapling, not remarkable.",
+   "sources": [
+    "https://www.news5cleveland.com/news/local-news/meet-cuyahoga-countys-heritage-tree"
+   ]
+  },
+  {
+   "name": "Lake View Cemetery Section 42 white oak, Section 1 beech",
+   "status": "open",
+   "reason": "named by the owner as Moses Cleaveland trees (larger white oak Sect 42; beech Sect 1) with no data; fold in once the cemetery map is read for positions.",
+   "sources": [
+    "https://www.lakeviewcemetery.com/our-grounds/arboretum-and-horticulture"
+   ]
+  },
+  {
+   "name": "Holden Arboretum Manchurian Fir (Kirtland)",
+   "species": "Manchurian Fir (Abies holophylla)",
+   "status": "open",
+   "reason": "ODNR champion, 72 cm girth, 76 ft; a young specimen tree, Kirtland is far from the city by transit (not checked); Holden's Katewood black oak not looked at. Park/garden entry paid.",
+   "sources": [
+    "https://services.arcgis.com/JyZag7oO4NteHGiq/arcgis/rest/services/ODNR_Champions/FeatureServer/0"
+   ]
+  }
+ ]
+}

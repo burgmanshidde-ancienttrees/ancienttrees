@@ -1,0 +1,123 @@
+[
+ {
+  "id": "cle_001",
+  "name": "Edgewater Weeping Willow",
+  "species": "Weeping Willow (Salix babylonica)",
+  "age_estimate": "about 70 years",
+  "age_min": 55,
+  "age_max": 80,
+  "location": {
+   "address": "Edgewater Park beach, by the Edgewater Beach House pedestrian bridge, Cleveland, OH",
+   "latitude": 41.4909342,
+   "longitude": -81.739421,
+   "neighbourhood": "Edgewater / Detroit-Shoreway"
+  },
+  "verified_sources": [
+   "https://www.clevelandmetroparks.com/parks/visit/ten-to-explore/2021/april",
+   "https://www.news5cleveland.com/news/local-news/cleveland-metro/the-weeping-willow-tree-at-edgewater-is-clevelands-most-famous-tree",
+   "https://www.openstreetmap.org/node/9249098204"
+  ],
+  "access": "Free; Edgewater Park (Cleveland Metroparks Lakefront Reservation) is open to the public; the tree stands on the beach/lawn edge.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "how_to_recognise": "A lone, very broad weeping willow at the lakeshore edge of Edgewater Beach, beside the Edgewater Beach House footbridge; the most photographed single tree on the Cleveland lakefront.",
+  "photo_candidates": "none fetched; a Commons/iNat search was not done. OSM node 9249098204 carries species:wikidata Q29994594.",
+  "verify_notes": "Not ancient: a Metroparks historian dates it to about 1953 to 1958 (News 5 piece, which cites Cleveland Memory Project photos of a shrub-like tree at the spot in 1959 and 1969). Remarkable as Cleveland's most beloved tree: Metroparks lists it among its Ten Big Trees as a lakefront legend; News 5 quotes people proposing under it. Origin unknown; an ODNR forester speculates it grew from a branch washed ashore (speculation, labelled as such by the source). The land is landfill made in the 1950s from the straightening of the Cuyahoga River; the ground was Cleveland's, then ODNR's from 1978, Metroparks' since 2013. Weeping willows live 50 to 100 years per the article; lake storms can blow the top off. Pin is the OSM natural=tree node named Weeping Willow (tree-level coordinate; no aerial check done). Alive: Metroparks page of 2021 and News 5 piece (date not captured); lifecheck RECENT 2026-09-03 is nearby iNaturalist, not this tree. FLAG: a satire-looking blog (The Pierogi, 2026-03-20) says a Buc-ee's is planned at Edgewater with the willow marked for removal; unconfirmed and probably satire, no news source found, but check before writing. Height/girth: no source figure."
+ },
+ {
+  "id": "cle_002",
+  "name": "Lake View Cemetery Tulip Tree (Chapel Road)",
+  "species": "Tuliptree (Liriodendron tulipifera)",
+  "age_estimate": "over 230 years",
+  "age_min": 230,
+  "age_max": 400,
+  "girth_cm": 311,
+  "location": {
+   "address": "Lake View Cemetery, 12316 Euclid Ave, Cleveland, OH (Section 1 or 6)",
+   "latitude": 41.5136517,
+   "longitude": -81.5946028,
+   "neighbourhood": "Lake View Cemetery, University Circle / Cleveland Heights"
+  },
+  "verified_sources": [
+   "https://www.lakeviewcemetery.com/our-grounds/arboretum-and-horticulture",
+   "https://www.freshwatercleveland.com/street-level/CleavelandTrees102521.aspx",
+   "https://www.earlysettlers.org/files/201218%20Harbaugh%201971%20ESA%20full.pdf"
+  ],
+  "access": "Free; Lake View Cemetery is a public cemetery and arboretum (hours on lakeviewcemetery.com, not checked).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "One of two tall tuliptrees the cemetery calls sentries, in Sections 1 and 6; the 1971 survey placed the big one on the west side of Chapel Road beside a large beech. Marked on the cemetery's 2026 map key.",
+  "verify_notes": "Owner page: two grand tuliptrees, the tallest of the cemetery's seven Moses Cleaveland trees, stand in Sections 1 and 6 and are best seen looking up from the base. The 1971 Early Settlers survey (MCT 1946.089) calls it the largest tulip of the whole Moses Cleaveland group: 37 inches diameter in 1946, 39 inches in 1971 (girth about 311 cm from the 1971 diameter, measured 4.5 ft up, inches converted); it sits on Chapel Road, west side, near a large beech (1946.088, 30 to 32 inches). Which of the two tuliptrees 1946.089 is (Section 1 or 6) is not stated; section left open. Height: no source figure. Pin is the OSM Wade Memorial Chapel node, a reference point inside the cemetery, NOT the tree: the owner publishes sections and a keyed map PDF (lakeviewcemetery2026.pdf) but no coordinates. Age: a 'Moses Cleaveland tree' is one believed to predate 1796 (the 1946 survey qualified trees by trunk diameter); the age is the survey's belief, not a ring count, so age_min 230 only and age_max is a broad bound, not a source figure. Alive: owner page names it as present now; lifecheck RECENT 2026-03-11 (nearby iNaturalist, not the tree). Two sources: owner plus Freshwater Cleveland (2021) on the Early Settlers Association survey."
+ },
+ {
+  "id": "cle_003",
+  "name": "Lake View Cemetery Sleepy Hollow White Oak",
+  "species": "White Oak (Quercus alba)",
+  "age_estimate": "over 230 years",
+  "age_min": 230,
+  "age_max": 400,
+  "girth_cm": 320,
+  "location": {
+   "address": "Lake View Cemetery, 12316 Euclid Ave, Cleveland, OH (Section 8)",
+   "latitude": 41.5136517,
+   "longitude": -81.5946028,
+   "neighbourhood": "Lake View Cemetery, University Circle / Cleveland Heights"
+  },
+  "verified_sources": [
+   "https://www.lakeviewcemetery.com/our-grounds/arboretum-and-horticulture",
+   "https://www.freshwatercleveland.com/street-level/CleavelandTrees102521.aspx",
+   "https://www.earlysettlers.org/files/201218%20Harbaugh%201971%20ESA%20full.pdf"
+  ],
+  "access": "Free; Lake View Cemetery is a public cemetery and arboretum (hours on lakeviewcemetery.com, not checked).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "A white oak with long horizontal branches and a weathered, Sleepy Hollow look, in Section 8 near the circle at the end of Woodhill Road.",
+  "verify_notes": "Owner page: the Section 8 white oak looks straight out of Sleepy Hollow because of its weathered appearance and long horizontal branches; a larger white oak stands in Section 42 (not delivered, no data). 1971 survey (MCT 1946.087): Section 8, near the circle at the end of Woodhill Rd; 36 inches diameter in 1946, 40 in 1971 (girth about 320 cm from the 1971 diameter; 4.5 ft up). Pin is the OSM Wade Memorial Chapel node, a reference point inside the cemetery, NOT the tree: the owner publishes sections and a keyed map PDF (lakeviewcemetery2026.pdf) but no coordinates. Age: a 'Moses Cleaveland tree' is one believed to predate 1796 (the 1946 survey qualified trees by trunk diameter); the age is the survey's belief, not a ring count, so age_min 230 only and age_max is a broad bound, not a source figure. Alive: owner page names it as present now; lifecheck RECENT 2026-03-11 (nearby iNaturalist, not the tree). Two sources: owner plus Freshwater Cleveland (2021) on the Early Settlers Association survey."
+ },
+ {
+  "id": "cle_004",
+  "name": "Lake View Cemetery Moses Cleaveland Sycamore",
+  "species": "American Sycamore (Platanus occidentalis)",
+  "age_estimate": "over 230 years",
+  "age_min": 230,
+  "age_max": 400,
+  "location": {
+   "address": "Lake View Cemetery, 12316 Euclid Ave, Cleveland, OH (Section 5a)",
+   "latitude": 41.5136517,
+   "longitude": -81.5946028,
+   "neighbourhood": "Lake View Cemetery, University Circle / Cleveland Heights"
+  },
+  "verified_sources": [
+   "https://www.lakeviewcemetery.com/our-grounds/arboretum-and-horticulture",
+   "https://www.freshwatercleveland.com/street-level/CleavelandTrees102521.aspx"
+  ],
+  "access": "Free; Lake View Cemetery is a public cemetery and arboretum (hours on lakeviewcemetery.com, not checked).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "A sycamore with camouflage-like exfoliating bark in Section 5a, white in winter and brightest in spring (owner's description); marked A on the cemetery's 2026 map key.",
+  "verify_notes": "Owner page: the Section 5a sycamore is one of the cemetery's seven Moses Cleaveland trees. Freshwater Cleveland photographs a sycamore here for the 2021 survey. No measurement source. Pin is the OSM Wade Memorial Chapel node, a reference point inside the cemetery, NOT the tree: the owner publishes sections and a keyed map PDF (lakeviewcemetery2026.pdf) but no coordinates. Age: a 'Moses Cleaveland tree' is one believed to predate 1796 (the 1946 survey qualified trees by trunk diameter); the age is the survey's belief, not a ring count, so age_min 230 only and age_max is a broad bound, not a source figure. Alive: owner page names it as present now; lifecheck RECENT 2026-03-11 (nearby iNaturalist, not the tree). Two sources: owner plus Freshwater Cleveland (2021) on the Early Settlers Association survey."
+ },
+ {
+  "id": "cle_005",
+  "name": "Lake View Cemetery Cabled Black Oak",
+  "species": "Black Oak (Quercus velutina)",
+  "age_estimate": "over 230 years",
+  "age_min": 230,
+  "age_max": 400,
+  "location": {
+   "address": "Lake View Cemetery, 12316 Euclid Ave, Cleveland, OH (Section 14)",
+   "latitude": 41.5136517,
+   "longitude": -81.5946028,
+   "neighbourhood": "Lake View Cemetery, University Circle / Cleveland Heights"
+  },
+  "verified_sources": [
+   "https://www.lakeviewcemetery.com/our-grounds/arboretum-and-horticulture",
+   "https://www.freshwatercleveland.com/street-level/CleavelandTrees102521.aspx"
+  ],
+  "access": "Free; Lake View Cemetery is a public cemetery and arboretum (hours on lakeviewcemetery.com, not checked).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "how_to_recognise": "A black oak held up with cables and brace rods, in Section 14.",
+  "verify_notes": "Owner page: the Section 14 black oak is a Moses Cleaveland tree supported with cables and brace rods to extend its life. Cabling is visible to a visitor. No measurement source. Pin is the OSM Wade Memorial Chapel node, a reference point inside the cemetery, NOT the tree: the owner publishes sections and a keyed map PDF (lakeviewcemetery2026.pdf) but no coordinates. Age: a 'Moses Cleaveland tree' is one believed to predate 1796 (the 1946 survey qualified trees by trunk diameter); the age is the survey's belief, not a ring count, so age_min 230 only and age_max is a broad bound, not a source figure. Alive: owner page names it as present now; lifecheck RECENT 2026-03-11 (nearby iNaturalist, not the tree). Two sources: owner plus Freshwater Cleveland (2021) on the Early Settlers Association survey."
+ }
+]

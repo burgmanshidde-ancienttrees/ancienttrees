@@ -1,0 +1,31 @@
+{
+ "city": "des-moines",
+ "leads": [
+  {
+   "name": "The Jordan Oaks (bur oak grove at the Jordan House)",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "lat": null,
+   "lng": null,
+   "register_location": "Jordan House, 2001 Grand Ave, West Des Moines (grounds of the West Des Moines Historical Society)",
+   "girth_cm": null,
+   "height_m": null,
+   "sources": [
+    "https://publications.iowa.gov/11341/1/Famous_and_Historical_Trees_of_Iowa003.pdf (Iowa DNR 1996 booklet, entry 17: homestead grove of bur oaks from 1846, 'many still alive')",
+    "https://www.wdmhs.org/the-jordan-house/"
+   ],
+   "source": "Iowa DNR Famous and Historical Trees of Iowa 1996; no individual tree, no coordinate, no current observation",
+   "status": "open",
+   "reason": "no photo or exact pin in reach; a grove, not one tree; 1996 text, aliveness unchecked; tours Fri and Sun only"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Silver Maple, West Des Moines (former national champion, 28 ft girth)",
+   "reason": "1996 booklet says alive at a private care home; no location, no current evidence; private ground"
+  },
+  {
+   "name": "Iowa Big Tree register Polk County champions",
+   "reason": "register file not reachable (iowadnr.gov PDF 404, Wayback 429); search shows trees include private property and exact private locations are withheld"
+  }
+ ]
+}

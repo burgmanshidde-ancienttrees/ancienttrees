@@ -1,0 +1,32 @@
+[
+  {
+    "id": "lgb_001",
+    "name": "The Moreton Bay Figs of Rancho Los Alamitos",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "planted around 1890, over 130 years",
+    "age_min": 130,
+    "age_max": 140,
+    "height_m": 24,
+    "location": {
+      "address": "Rancho Los Alamitos Historic Ranch and Gardens, 6400 E Bixby Hill Rd, Long Beach",
+      "latitude": 33.77665,
+      "longitude": -118.10672,
+      "neighbourhood": "Bixby Hill, Long Beach"
+    },
+    "verified_sources": [
+      "https://tclf.org/sites/default/files/landslide/2007/fig/history3.html",
+      "https://sah-archipedia.org/buildings/CA-01-037-8008",
+      "https://www.inaturalist.org/observations/329904986"
+    ],
+    "official_register": null,
+    "access": "Inside Rancho Los Alamitos, a museum and public garden at 6400 E Bixby Hill Rd; the figs stand on the front lawn by the ranch house. Admission and opening days not confirmed in this pass, check the ranch's own site before going.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Rancho Los Alamitos front lawn",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "how_to_recognise": "A matched pair of huge fig trees on the lawn in front of the old adobe ranch house, with buttress roots spreading 50 to 60 ft across and crowns wider than the house.",
+    "verify_notes": "TCLF Landslide 2007 (Rancho Los Alamitos Foundation material): matched pair of Moreton Bay figs, eighty feet tall, crowns spreading to 120 ft, above-ground roots spanning 50 to 60 ft (2007 figures, height_m 24 from 80 ft). TCLF history page 2 (not fetched here, via search) dates planting likely 1887 to 1890 by Susan Bixby after her husband's death; SAH Archipedia (via search summary, not fetched) says 1890s; a Clio entry credits Jotham Bixby c.1880 but appears to confuse this ranch with Rancho Los Cerritos, ignored. The age range is therefore a hedge of about 130 to 140 years, not a measurement. The pair is one collectible point. Life: iNaturalist Moreton Bay fig observations at the ranch, latest 2025-12-07 (https://www.inaturalist.org/observations/329904986, cc-by-nc); pin is the observation cluster at 33.7766,-118.1067, about 60 m from the OSM museum node, approximate. Two sources (TCLF, Archipedia) on existence and age, one fetched. photo candidate: none checked. Flag: access terms."
+  }
+]

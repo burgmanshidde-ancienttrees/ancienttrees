@@ -1,0 +1,45 @@
+{
+ "city": "Detroit",
+ "country": "United States",
+ "city_slug": "detroit",
+ "updated": "2026-11-09",
+ "note": "Verify pass 2026-11-09 (source-led, Michigan Big Tree Register CSV export of the Michigan Botanical Society sheet, no reuse terms stated).",
+ "leads": [
+  {
+   "name": "Elmwood Cemetery American elm (register id 2065)",
+   "species": "American Elm (Ulmus americana)",
+   "location_hint": "Historic Elmwood Cemetery, 1200 Elmwood Ave",
+   "why_not_shipped": "185 in girth, 110 ft, verified 2016 by the register; no pin, no recent alive check."
+  },
+  {
+   "name": "Elmwood Cemetery Lombardy poplars (ids 2002, 2003)",
+   "species": "Lombardy Poplar (Populus nigra 'Italica')",
+   "location_hint": "Historic Elmwood Cemetery, tree IDs 10 and 1102",
+   "why_not_shipped": "Short-lived species, last verified 2016, no pin; the owner says third and fourth largest in Michigan."
+  },
+  {
+   "name": "Belle Isle Shumard oak, Michigan champion",
+   "species": "Shumard Oak (Quercus shumardii)",
+   "location_hint": "Northeast Belle Isle, pumpkin ash grove",
+   "why_not_shipped": "Girth over 13 ft per a DNR bulletin; no coordinate, and oak wilt removals on the island make alive status unknown."
+  },
+  {
+   "name": "Bennett Arboretum English oak and scarlet oak grove, Northville (register ids 1591, 1592, 2079)",
+   "species": "English Oak (Quercus robur)",
+   "location_hint": "Hines Drive, 0.7 mi south of 7 Mile Rd, Northville (Wayne County, about 30 km from Detroit by car, no public transport)",
+   "why_not_shipped": "Register-only, 2018, 166 in and 89 ft, not a Detroit walk; consider with Northville."
+  },
+  {
+   "name": "Lochmoor Golf Club American elm (id 1662)",
+   "species": "American Elm (Ulmus americana)",
+   "location_hint": "1018 Sunningdale Dr, Grosse Pointe Woods",
+   "why_not_shipped": "On a golf course, 243.6 in, register says may be taken down."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Register trees on private yards, Detroit Vinewood ginkgo and bald cypress (ids 2165, 2166), Grosse Pointe Farms elm 1666 in a gated community",
+   "reason": "Private land or withheld, hard rule 10."
+  }
+ ]
+}

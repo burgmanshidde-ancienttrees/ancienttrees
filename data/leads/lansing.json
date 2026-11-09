@@ -1,0 +1,49 @@
+{
+ "city": "Lansing",
+ "country": "United States",
+ "city_slug": "lansing",
+ "updated": "2026-11-09",
+ "note": "Verify pass 2026-11-09 (source-led, Michigan Big Tree Register CSV export of the Michigan Botanical Society sheet, no reuse terms stated).",
+ "leads": [
+  {
+   "name": "MSU sycamore between Agriculture Hall and Natural Sciences (register id 1503)",
+   "species": "American Sycamore (Platanus occidentalis)",
+   "location_hint": "MSU campus, East Lansing",
+   "why_not_shipped": "212 in girth, 67 ft, verified 2019; register coordinates only to 0.01 degree and no second source, no pin."
+  },
+  {
+   "name": "MSU Union English oak and Sparty white ash and Beal Gardens bald cypress (ids 1480, 2150, 2237)",
+   "species": "English Oak, White Ash, Bald Cypress",
+   "location_hint": "MSU campus",
+   "why_not_shipped": "Register-only, 2019 to 2020, no pins."
+  },
+  {
+   "name": "Mt. Hope Cemetery swamp white oak and Kentucky coffee tree (ids 1860, 2217)",
+   "species": "Swamp White Oak, Kentucky Coffeetree",
+   "location_hint": "Mt. Hope Cemetery / E Mt Hope, Lansing",
+   "why_not_shipped": "200 in and 132 in girth; register-only 2020 to 2021, no pin."
+  },
+  {
+   "name": "State Capitol grounds ginkgo (id 1878)",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "location_hint": "Directly south of the Capitol",
+   "why_not_shipped": "111.6 in, public grounds, register-only 2021, no pin; small."
+  },
+  {
+   "name": "MSU 1865 white cedars, Norway spruces planted 1865, Sherwood Forest English oak (Beal tour stops 10, 9)",
+   "species": "various",
+   "location_hint": "West Circle Dr, MSU",
+   "why_not_shipped": "Owner tour pages give planting date but no measurements or coordinates; ArcGIS inventory not matched. Worth a follow-up with the tour map PDF."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Register trees in Lansing front yards (Chinese elms, dawn redwood 2320 Mark Ave, swamp white oak 2121 S Washington Ave, bur oak Williamston)",
+   "reason": "Private residences, hard rule 10."
+  },
+  {
+   "name": "Roosevelt Elm, MSU",
+   "reason": "DEAD since 1947, per the MSU tour page."
+  }
+ ]
+}

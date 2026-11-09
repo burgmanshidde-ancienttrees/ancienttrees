@@ -1,0 +1,5 @@
+# Boise verify pass 2026-11-09 (source-led, nothing new delivered)
+
+- Source tried: City of Boise Parks, Julia Davis Park Tree Walk (cityofboise.org/media/4247/jdtreewalk.pdf, 50 numbered trees, map only, 2011). Image PDF, OCR'd. Gives species and prose, NO sizes, ages or coordinates (map is an unscaled sketch). Park dedicated 1907, 1,000+ trees. Tells: #1 Bur Oak "believed largest bur oak in Idaho" (= live boi_001); #12/#18 Kentucky coffeetree, #12 a 2007 replacement and #18 the mature one (= live boi_004); #30 English Elm, "heavily planted in the early 1900s", no size; #41 Honeylocust "especially large"; #44 Catalpa, very large; #47 Ruby Lace Honeylocust, one of few surviving, declining; #28 Northern Red Oak, #50 Swamp White Oak. None has a measurement, so none meets the bar and none can be pinned beyond park level.
+- Candidates for a later pass needing a GPS fix or the Idaho Big Tree Program entries: elm (#30), honeylocust (#41), catalpa (#44) in Julia Davis Park. Lead-level only.
+- Existing leads (cottonwood, basswood, weeping cherry) unchanged: still private or unlocated.

@@ -1,0 +1,48 @@
+[
+ {
+  "id": "lns_001",
+  "name": "The Resilient Oak",
+  "species": "White Oak (Quercus alba)",
+  "age_estimate": "roughly 375 to 400 years",
+  "age_min": 347,
+  "age_max": 400,
+  "location": {
+   "address": "MSU Campus Oval near Beaumont Tower, East Lansing, MI 48824 (beside the sidewalk)",
+   "latitude": 42.7317621574,
+   "longitude": -84.4810641806,
+   "neighbourhood": "Michigan State University campus, East Lansing"
+  },
+  "verified_sources": [
+   "https://bealbotanicalgarden.msu.edu/campus-arboretum/tree-tour/resilient-oak",
+   "https://www.wkar.org/wkar-news/2024-04-26/campus-trees-tells-msus-story-as-arboretum-celebrates-150th-anniversary",
+   "https://services.arcgis.com/uHAHKfH1Z5ye1Oe0/arcgis/rest/services/campus_trees/FeatureServer/0 (MSU campus tree inventory, accession CC0376)"
+  ],
+  "access": "Free; open campus, stands beside a public sidewalk. East Lansing is the home of MSU, about 5 km east of downtown Lansing.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Owner of the ground (MSU Beal Botanical Garden and Campus Arboretum, tour stop 8). A 20 ft section above the base had 347 annual rings after the tree blew over in a storm on 2016-07-08; the curator estimates 375 to 400 years because it grew slowly under shade. Described as a survivor of the forest that covered campus before 1855; it was topped about 100 years ago (the first-hand account of the cut and metal cap is Professor Beal's 1915 history of the college), lost roots to the sidewalk, and was named the Resilient Oak in fall 2017. What remains is a hollow, sidewalk-side trunk that keeps growing. MSU campus tree inventory CC0376 white oak, condition G, checked 2019-08-15 ('good canopy condition, cambial growth looks good'), DBH field 50.5 with no unit (do not use as girth). Alive: WKAR 2024 and MSU Today 2025 pieces say it continues to grow. Pin: inventory point 42.73176,-84.48106, which sits at Beaumont Tower area, but campus Oval has several surviving old oaks so approximate. The tour says the other oaks in the Oval are likely 'survivors' too; the worth-the-walk trunk is this one because it has dated ring evidence. Other tour trunks: Sherwood Forest English oak (stock from Nottingham, tour stop 9) and 1865 white cedars (tour stop 10), not delivered, no measurements."
+ },
+ {
+  "id": "lns_002",
+  "name": "Beal Garden dawn redwood",
+  "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+  "age_estimate": "planted in 1954",
+  "age_min": 70,
+  "age_max": 73,
+  "location": {
+   "address": "W.J. Beal Botanical Garden, W Circle Dr, Michigan State University, East Lansing, MI 48824",
+   "latitude": 42.73166,
+   "longitude": -84.48451,
+   "neighbourhood": "Michigan State University campus, East Lansing"
+  },
+  "verified_sources": [
+   "https://bealbotanicalgarden.msu.edu/campus-arboretum/tree-tour/dawn-redwood",
+   "https://msutoday.msu.edu/news/2017/11/historic-tree-to-be-substantially-trimmed",
+   "https://services.arcgis.com/uHAHKfH1Z5ye1Oe0/arcgis/rest/services/campus_trees/FeatureServer/0 (inventory CC0707)"
+  ],
+  "access": "Free; the Beal Botanical Garden is on the MSU campus and open to visitors (check garden etiquette page for hours).",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Owner of the ground (MSU Beal Botanical Garden), tour stop 1. Planted in 1954, a tree sent from the Arnold Arboretum (via its horticulturist) when Metasequoia, thought extinct and found alive in China in the 1940s, was new to collections. Lightning struck it in the 1990s; the top was removed then; a lightning arrestor was installed October 2012; MSU Today (2017-11) says more than 20 ft would come off the top again because of decay from the lightning crack, and a 2025 headline reported it still standing. Inventory accession CC0707 dawn-redwood planted about 1953 (epoch value), point 42.73166,-84.48451, DBH field 48.8 no unit (not used). Register MBT id 1465 (2019): a dawn redwood 147.6 in girth, 86 ft at Beal Gardens just east of the stairway entrance off W Circle Dr; likely the same tree but not confirmed, girth NOT recorded here. Single owner source, flagged by age not by evidence. Pin approximate (inventory point)."
+ }
+]
