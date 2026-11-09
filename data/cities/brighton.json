@@ -256,6 +256,109 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "bhm_007",
+      "name": "The Tabletop Elm, Royal Pavilion Garden",
+      "species": "Weeping Wych Elm (Ulmus glabra 'Horizontalis')",
+      "age_estimate": "roughly 120 years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Royal Pavilion Garden, Brighton BN1 1EE (by Brighton Museum, west lawn beside the Dome)",
+        "latitude": 50.82298,
+        "longitude": -0.13824,
+        "neighbourhood": "Old Town / Pavilion Garden"
+      },
+      "story": "The most photographed tree in Brighton is not the oldest elm in its own garden. Both the city's 2022 elm leaflet and Brighton and Hove Museums give it the photography title, and the same garden holds the older Brace Elm, kept whole by iron bands. This one is a weeping wych elm, known locally as the tabletop elm, and the name explains itself. Its branches reach out level from the trunk and then droop, so the crown forms a flat-topped umbrella.\n\nIts age is a small dispute. The leaflet, Great Elms of Brighton and Hove, says it was planted around the 1900s. The museums say it saw the Diamond Jubilee celebrations of 1897, which would make it a little older. So the honest band is 100 to 150 years, young by the standards of this map.\n\nThe same leaflet lists it as the East Sussex champion of its kind. Read that as the verdict of 2022, because bigger examples are said to have turned up since, and larger trees of this form are known elsewhere. Nobody has published a girth for it. The garden's own guide labels it 'Pendula', probably a difference of labelling rather than a different tree. If you have a tape and a minute, we would be glad of the number.",
+      "verified_sources": [
+        "https://bhgreenspaceforum.org.uk/wp-content/uploads/2022/04/Elm-Trees-of-Brighton-Hove_Digital-3.pdf",
+        "https://brightonmuseums.org.uk/discovery/history-stories/living-monuments-a-discovery-of-the-pavilion-elms/",
+        "https://conservationfoundation.co.uk/elm-tree/?id=308"
+      ],
+      "access": "Free. Royal Pavilion Garden is a public garden in the city centre; opening hours are published by Brighton & Hove Museums.",
+      "transport": "Brighton station, about 15 minutes on foot; buses to the Old Steine stop outside the garden.",
+      "how_to_recognise": "You can recognise it by the crown, its branches spreading level and drooping into a flat-topped umbrella. It stands on the west lawn of the Royal Pavilion Garden, beside the Dome and outside Brighton Museum.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bhm_008",
+      "name": "The Den Haag Elm, Preston Park",
+      "species": "Den Haag Elm (Ulmus 'Den Haag')",
+      "age_estimate": "about 70 years",
+      "age_min": 70,
+      "age_max": 75,
+      "girth_cm": 252,
+      "height_m": 14,
+      "location": {
+        "address": "Coronation Garden, south-east entrance, Preston Park, Brighton BN1 6SD",
+        "latitude": 50.841614,
+        "longitude": -0.14924395,
+        "neighbourhood": "Preston Park"
+      },
+      "location_site": {
+        "name": "Preston Park Coronation Garden",
+        "radius_m": 50
+      },
+      "story": "The champion of this elm for all of Britain and Ireland is only 14 metres tall. Ulmus 'Den Haag' is a small cultivar, so the biggest one in these islands is a modest tree, and it has stood in Preston Park's Coronation Garden since 1953, when it was planted for the Queen's coronation.\n\nWhat makes it worth finding is up in the crown. The 2022 leaflet Great Elms of Brighton and Hove calls it an extreme example of witch's broom, a deformity caused by a virus. The result is dense, tufted masses of twigs bunched among the ordinary branches.\n\nThe measurements are not new. The champion figures, reported on Wikipedia from the Tree Register, date from 2009, 14 metres high and 77 centimetres across. The Conservation Foundation's elm map recorded a girth of 252 centimetres in 2012. Nobody has published a dated photograph of this trunk more recently, so tell us how it looks.\n\nThe sources also differ on its spot. The elm map says the south-east entrance of the garden, and the Friends of Preston Park say the top of it. It is one short search either way. The surviving Preston Twin, planted around 1613, stands roughly 100 metres off, and a Camperdown elm with contorted branches grows in the same garden's south-west corner, so this is one stop on a short walk.",
+      "verified_sources": [
+        "https://bhgreenspaceforum.org.uk/wp-content/uploads/2022/04/Elm-Trees-of-Brighton-Hove_Digital-3.pdf",
+        "https://conservationfoundation.co.uk/elm-tree/?id=873",
+        "https://en.wikipedia.org/wiki/Ulmus_%27Den_Haag%27"
+      ],
+      "access": "Free. Preston Park is an open public park; the Coronation Garden is at its north end, a short walk from the surviving Preston Twin.",
+      "transport": "Preston Park station, a few minutes on foot; many buses along London Road.",
+      "how_to_recognise": "You can recognise it by the dense tufts of twigs, witch's broom, in a crown only 14 metres tall. It stands in Preston Park's Coronation Garden, recorded by the south-east entrance, about 100 metres from the Preston Twin.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bhm_009",
+      "name": "The Patcham Peace Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "about 225 years",
+      "age_min": 215,
+      "age_max": 235,
+      "girth_cm": 399,
+      "location": {
+        "address": "All Saints churchyard, Church Hill, Patcham, Brighton BN1 8YD",
+        "latitude": 50.866391,
+        "longitude": -0.15102088,
+        "neighbourhood": "Patcham"
+      },
+      "location_site": {
+        "name": "All Saints churchyard, Patcham",
+        "radius_m": 40
+      },
+      "story": "This yew was planted for a peace that did not last two years. The parish records of 1801, as quoted by the Ancient Yew Group, say the vicar set it at the west end of the church that year to celebrate the arrival in London of the preliminaries of peace, the first terms agreed with France in October 1801. Those terms became the Peace of Amiens the following spring, and Britain was back at war by May 1803. The tree has outlasted the treaty by more than two centuries.\n\nThat record is the only source for the planting, and it reaches us through the yew group's quotation of the parish book. If it holds, this is one of the rare yews whose age is a date rather than a guess, about 225 years.\n\nThe group's recorder visited in October 2011 and found a female tree, many-stemmed from a low trunk, 3.99 metres round at 30 centimetres from the ground. It is classed as notable rather than ancient, which is fair, since two centuries is young for a yew.\n\nAll Saints is a reason to come in its own right, one of the oldest churches in the city, with a doorway that may be Saxon. The churchyard is open in daylight. Nobody has published a recent dated photograph of this trunk, so if you go, tell us how the yew is doing.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_trees/patcham-3617/",
+        "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/special-trees-stanmer-park"
+      ],
+      "access": "Free. All Saints churchyard is open to visitors during daylight (Ancient Yew Group lists it as public access).",
+      "transport": "Patcham is about 6 km north of the seafront; buses on the A23 London Road to Patcham, then 5 minutes on foot to the church.",
+      "how_to_recognise": "You can recognise it by its many stems rising from a low trunk, about four metres round near the ground. It stands at the west end of All Saints church in Patcham.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

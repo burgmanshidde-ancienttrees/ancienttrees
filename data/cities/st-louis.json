@@ -1,0 +1,241 @@
+{
+  "city": "St. Louis",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Coal smoke, Dutch elm disease and lightning all feature in the stories of these six trees. A bald cypress at the Missouri Botanical Garden came through the smoke that killed the Garden's evergreens. A rock elm in Tower Grove Park is injected every three years to stay alive. A basswood has its own lightning conductor. At Bellefontaine Cemetery an American elm about 200 years old helped an aerospace magnate choose his grave. And in Tower Grove stands a ring of osage oranges planted so carriages could turn around.",
+  "meta_description": "Six remarkable trees in St. Louis: a former champion elm at Bellefontaine, a coal-smoke survivor and a ring of osage oranges planted for carriages.",
+  "question_meta": "The oldest tree on our St. Louis map is the American elm at Bellefontaine Cemetery, estimated at about 200 years. Where it stands, and five more.",
+  "question_answer": "The oldest tree on our St. Louis map is the American elm in Block 308 of Bellefontaine Cemetery, on Walnut, at about 200 years by St. Louis Magazine's estimate. Another account calls it older than the cemetery, founded in 1849.",
+  "question_context": "Both figures are estimates, nobody has counted its rings, and the most recent report of it standing that we can find was updated in February 2025. If you have been since, tell us. The elm was Missouri's state champion until May 2017, when a tree in the Kansas City area beat its 342 points. James S. McDonnell, the aerospace magnate, chose his burial plot partly for it. The rival for the title of oldest depends on what you count. The Missouri Botanical Garden names a bald cypress south of Shoenberg Fountain as its oldest tree, thought to be planted around 1874, while admitting that missing records mean nobody can be sure. In Tower Grove Park a group of osage oranges near the Music Stand has been called the park's oldest, with dates running from more than 150 years to the early 1900s. The park's ring of osage oranges, which is a separate planting, went in during the late nineteenth century as a turnaround for horse-drawn carriages. Bellefontaine is free and its gates lock at five in the afternoon.",
+  "hero_tree_id": "stl_004",
+  "oldest_tree_id": "stl_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in St. Louis?",
+      "a": "On this map, the American elm at Bellefontaine Cemetery, at about 200 years by one estimate and older than the cemetery's 1849 founding by another. Neither is a ring count."
+    },
+    {
+      "q": "Is the Bellefontaine elm still the Missouri champion?",
+      "a": "No. It lost the title in May 2017 to an elm in the Kansas City area, after holding the record at 342 points."
+    },
+    {
+      "q": "Do you have to pay to see these trees?",
+      "a": "Two of the six, the white basswood and the bald cypress, are inside the Missouri Botanical Garden, which charges $16 general admission and $6 for St. Louis residents. Tower Grove Park and Bellefontaine Cemetery are free."
+    },
+    {
+      "q": "Why does Tower Grove Park have a circle of osage oranges?",
+      "a": "The park's own map says the ring was planted in the late nineteenth century as a turnaround for horse-drawn carriages. It is now a stop on the park's Tree Walk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "stl_001",
+      "name": "Bellefontaine Cemetery American Elm",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "age_basis": "source",
+      "girth_cm": 528,
+      "height_m": 31,
+      "location": {
+        "address": "Bellefontaine Cemetery, 4947 W Florissant Ave, St. Louis, MO 63115 (Block 308 on Walnut, in front of the McDonnell and Maritz plots)",
+        "latitude": 38.68742,
+        "longitude": -90.22607,
+        "neighbourhood": "Bellefontaine Neighbors / North St. Louis"
+      },
+      "story": "James S. McDonnell, the aerospace magnate, chose his grave partly for this elm. It stands in Block 308 of Bellefontaine Cemetery, in front of the McDonnell and Maritz plots, and it is far larger than anything else around it.\n\nThe tree has outlived Dutch elm disease, which is more than most American elms managed. It was Missouri's state champion until May 2017, when an elm in the Kansas City area toppled its record of 342 points. A marker put up in 2010 names it Great St. Louis Tree Hunt number 9.\n\nThe numbers depend on the year. The 2010 measure gave 191 inches round, 102 feet tall and a 122-foot spread. The state's current list gives 208 inches, 528 centimetres, with the same height, 31 metres, and a spread of 127 feet.\n\nHow old it is, nobody knows closely. St. Louis Magazine has said about 200 years in one piece and older than the cemetery, founded in 1849, in another. Both are estimates.\n\nThe most recent account of it standing that we can find was updated in February 2025. If you have been since, tell us how it looks. The pin is approximate, since two published coordinates sit about 500 metres apart, so go to Block 308 on Walnut and look up.",
+      "verified_sources": [
+        "https://mdc.mo.gov/newsroom/bellefontaine-cemetery-holds-three-state-champion-trees",
+        "https://www.stlmag.com/news/arbor-day-st-louis-arboretums-tower-grove-park-bellefontaine-cemetery/",
+        "https://www.stlmag.com/history/hidden-gems-to-check-out-at-bellefontaine-cemetery-during-saturdays-beer-barons-tour",
+        "https://www.hmdb.org/m.asp?m=62186",
+        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+      ],
+      "official_register": {
+        "name": "Missouri Department of Conservation Champion Trees list (public ArcGIS layer)",
+        "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+      },
+      "access": "Free. Cemetery open daily 8:00 to 16:30, gates lock promptly at 17:00. Private cemetery, open to visitors on foot or by car along the drives.",
+      "transport": "West Florissant Ave is on Metro Transit bus lines, though most visitors drive. Calvary Cemetery adjoins to the south.",
+      "how_to_recognise": "You can recognise it by the size, over 100 feet tall and far larger than the trees around it, and the 2010 champion marker. It stands in Block 308 on Walnut, in front of the McDonnell and Maritz plots.",
+      "recognise": "You can recognise it by the size, over 100 feet tall and far larger than the trees around it, and the 2010 champion marker. It stands in Block 308 on Walnut, in front of the McDonnell and Maritz plots.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stl_002",
+      "name": "Missouri Botanical Garden White Basswood",
+      "species": "White Basswood (Tilia heterophylla)",
+      "age_estimate": "not documented",
+      "girth_cm": 401,
+      "height_m": 26.5,
+      "location": {
+        "address": "Missouri Botanical Garden, 4344 Shaw Blvd, St. Louis, MO 63110 (by the Museum Building, near Tower Grove House)",
+        "latitude": 38.61202,
+        "longitude": -90.25777,
+        "neighbourhood": "Shaw"
+      },
+      "story": "This basswood has its own lightning conductor. The Missouri Botanical Garden ran a protection system up it with a copper ground, stripped the turf from beneath it so grass would not compete with its roots, and keeps the soil from being packed down. Few people in St. Louis get that level of care.\n\nThe reason is its record. It is Missouri's state champion white basswood and, by the Garden's account, has been national champion since 2009. How big it is depends on who you ask. The Missouri Department of Conservation gives 158 inches round, 401 centimetres, and 87 feet tall, 26.5 metres, with an 84-foot crown and 266 points. The Garden's own page quotes the state at 149 inches and 103 feet. Both figures come from the same programme at different dates, and nobody has said which came last.\n\nIt stands by the Museum Building near Tower Grove House, inside the paid grounds, and a former state champion possumhaw grows right across the path from it.\n\nIts age has not been published. If you know when it went in, tell us.",
+      "verified_sources": [
+        "https://mdc.mo.gov/magazines/conservationist/2016-03/mighty-ones",
+        "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees",
+        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+      ],
+      "official_register": {
+        "name": "Missouri Department of Conservation Champion Trees list (public ArcGIS layer)",
+        "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+      },
+      "access": "Paid entry: Garden general admission $16 (ages 13 and up), St. Louis resident rate $6, members free; open 9:00 to 17:00, last entry 16:30. Tree stands inside the paid grounds.",
+      "transport": "Garden is at 4344 Shaw Blvd, about 1 km (12 min walk) from Tower Grove Park.",
+      "how_to_recognise": "You can recognise it by the trunk, 401 centimetres round on the state's figures. It stands by the Museum Building near Tower Grove House, across the path from a former champion possumhaw.",
+      "recognise": "You can recognise it by the trunk, 401 centimetres round on the state's figures. It stands by the Museum Building near Tower Grove House, across the path from a former champion possumhaw.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "stl_003",
+      "name": "Shoenberg Fountain Bald Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "age_basis": "source",
+      "location": {
+        "address": "Missouri Botanical Garden, 4344 Shaw Blvd, St. Louis, MO 63110 (just south of Shoenberg Fountain, near the Administration Building)",
+        "latitude": 38.6104,
+        "longitude": -90.2583,
+        "neighbourhood": "Shaw"
+      },
+      "story": "St. Louis coal smoke killed nearly every evergreen conifer in this garden, and this tree came through because it drops its needles every winter. The Garden credits that yearly shedding for the survival of its bald cypresses, in the decades when the city's air was killing the conifers around them.\n\nThat is how the oldest tree in the Missouri Botanical Garden got to be the oldest. Or so the Garden says, with care. After a coring project counted rings in representative trees, it named this bald cypress just south of Shoenberg Fountain as its senior resident, thought to be planted around 1874. That would make it about 150 years old and probably part of the arboretum Henry Shaw began in 1861.\n\nThe Garden is candid about the gaps. Records are missing and no one knows the oldest for sure. Another of its pages is said to name three bald cypresses along Alfred Avenue instead, probably offspring of the originals.\n\nNo girth or height has been published. It stands near the Administration Building, inside the paid grounds, and the Garden puts interpretive signs on its trees. The pin is taken from the fountain, so it is close rather than exact. For a tree that has outlived the air it grew up in, a few metres is a small uncertainty.",
+      "verified_sources": [
+        "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees",
+        "https://missouribotanicalgarden.org/media/fact-pages/trees-of-the-missouri-botanical-garden"
+      ],
+      "access": "Paid entry: Garden general admission $16 (ages 13 and up), St. Louis resident rate $6, members free; open 9:00 to 17:00, last entry 16:30.",
+      "transport": "Garden is at 4344 Shaw Blvd, about 1 km from Tower Grove Park.",
+      "how_to_recognise": "You can recognise it as a conifer that stands bare of needles in winter. It stands just south of Shoenberg Fountain, near the Administration Building.",
+      "recognise": "You can recognise it as a conifer that stands bare of needles in winter. It stands just south of Shoenberg Fountain, near the Administration Building.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "stl_004",
+      "name": "Tower Grove Park Osage-orange Circle",
+      "species": "Osage Orange (Maclura pomifera)",
+      "age_estimate": "over a century",
+      "age_min": 120,
+      "age_max": 170,
+      "age_basis": "source",
+      "location": {
+        "address": "Tower Grove Park, east side, Tree Walk stop 'Osage-orange', St. Louis, MO 63110",
+        "latitude": 38.60488,
+        "longitude": -90.24482,
+        "neighbourhood": "Tower Grove East"
+      },
+      "story": "These trees were planted so horse-drawn carriages had somewhere to turn round. Tower Grove Park's own map says the large circle of osage oranges on its east side went in during the late nineteenth century for exactly that purpose, a piece of traffic engineering that has since outlived the traffic.\n\nThe carriages are long gone and the ring is still here. The bark is knobby, like orange peel, and in autumn the branches carry green fruit the size of softballs.\n\nThe age needs some care. The park also describes a separate grouping of osage oranges near the Music Stand as arguably its oldest trees, and the Post-Dispatch put one there at more than 150 years. The park's arborist told St. Louis Magazine the same grouping was likely planted in the late 1800s or early 1900s. Those answers do not agree, and that grouping may not be this circle at all, so we give the ring a broad 120 to 170 years and leave it there.\n\nThe circle is a stop on the park's Tree Walk, along with a chestnut oak and a rock elm a short walk away. Tower Grove, laid out with Henry Shaw, holds about 6,800 trees. Only a few of them were put in to help a horse.",
+      "verified_sources": [
+        "https://www.towergroveparkmap.org/osage-orange",
+        "http://graphics.stltoday.com/apps/hidden-gems/tower-grove-park/",
+        "https://www.stlmag.com/news/arbor-day-st-louis-arboretums-tower-grove-park-bellefontaine-cemetery/"
+      ],
+      "access": "Free. Tower Grove Park is a public city park, open daily; hours at towergrovepark.org.",
+      "transport": "Tower Grove Park, Grand Blvd or Arsenal St side.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when softball-sized green fruit hang in the ring"
+      },
+      "how_to_recognise": "You can recognise it by the shape, a ring of osage oranges with knobby orange-peel bark and softball-sized green fruit in autumn. It stands on the east side of the park, a stop on the Tree Walk.",
+      "recognise": "You can recognise it by the shape, a ring of osage oranges with knobby orange-peel bark and softball-sized green fruit in autumn. It stands on the east side of the park, a stop on the Tree Walk.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stl_005",
+      "name": "Tower Grove Park Chestnut Oak",
+      "species": "Chestnut Oak (Quercus montana)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Tower Grove Park, highest point of the park, Tree Walk stop 'Chestnut Oak', St. Louis, MO 63110",
+        "latitude": 38.60417,
+        "longitude": -90.24714,
+        "neighbourhood": "Tower Grove East"
+      },
+      "story": "This oak is wider than it is tall. Tower Grove Park calls it the king of the hill, and it sits at the highest point of the park with gigantic branches pushing out well past what you would think the trunk could hold up.\n\nThe chestnut oak takes its name from its bark, which looks like that of the American chestnut. That is really all the park tells us. No girth, height or age has been published for this tree, and we have only the park's own description to go on. It is a good description, but it is one source.\n\nWhat the location does give you is a view of how the park was made. Tower Grove was designed with Henry Shaw and is an accredited arboretum now, with about 6,800 trees. This oak stands on the park's Tree Walk, about 70 metres from the old osage orange circle and 90 metres from the tall rock elm, which makes the three an easy loop.\n\nNobody has said when it was planted or whether it grew here on its own. If you know, tell us. The pin is the park's own map marker, close rather than exact.",
+      "verified_sources": [
+        "https://www.towergroveparkmap.org/chestnut-oak"
+      ],
+      "access": "Free. Public city park; hours at towergrovepark.org.",
+      "transport": "Tower Grove Park, Grand Blvd or Arsenal St side.",
+      "how_to_recognise": "You can recognise it by the spread, wider than it is tall, on gigantic branches. It stands at the highest point of Tower Grove Park on the Tree Walk, about 70 metres from the osage orange circle.",
+      "recognise": "You can recognise it by the spread, wider than it is tall, on gigantic branches. It stands at the highest point of Tower Grove Park on the Tree Walk, about 70 metres from the osage orange circle.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stl_006",
+      "name": "Tower Grove Park Rock Elm",
+      "species": "Rock Elm (Ulmus thomasii)",
+      "age_estimate": "not documented",
+      "height_m": 30.5,
+      "location": {
+        "address": "Tower Grove Park, Tree Walk stop 'Rock Elm', St. Louis, MO 63110",
+        "latitude": 38.60497,
+        "longitude": -90.24594,
+        "neighbourhood": "Tower Grove East"
+      },
+      "story": "Every three years Tower Grove Park injects this elm against the disease that would otherwise kill it. The park does not hedge about what happens if it stops. Without the treatment, Dutch elm disease would ensure certain death, in its own words, and the rock elm is as susceptible as the American elm that the disease took from so many streets.\n\nThis is the largest of the three rock elms in the park, just over 100 feet tall, about 30.5 metres. It grows in a tight skyward column. Rock elm is not a tree you meet often in a city, and this is a very good example of one. It is not the state champion, which grows on private land elsewhere in St. Louis County, and the park does not claim otherwise.\n\nNo girth or age has been published. We have the park's word for the height and for everything else here. If you know more, tell us.\n\nThe tree stands on the park's Tree Walk, about 90 metres from the chestnut oak on the hill. The pin is the park's map marker, close rather than exact. It has an appointment every three years, and for an elm that is the difference between old age and none.",
+      "verified_sources": [
+        "https://www.towergroveparkmap.org/rock-elm"
+      ],
+      "access": "Free. Public city park; hours at towergrovepark.org.",
+      "transport": "Tower Grove Park, Grand Blvd or Arsenal St side.",
+      "how_to_recognise": "You can recognise it by the form, a tight column just over 100 feet tall, the tallest elm on the Tree Walk. It stands on the park's east side, about 90 metres from the chestnut oak on the hill.",
+      "recognise": "You can recognise it by the form, a tight column just over 100 feet tall, the tallest elm on the Tree Walk. It stands on the park's east side, about 90 metres from the chestnut oak on the hill.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

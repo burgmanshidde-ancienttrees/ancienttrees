@@ -1,0 +1,64 @@
+{
+  "city": "Birmingham, Alabama",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Birmingham's tree on this map is a small one with a good reason to be here. Alabama's champion green hawthorn started along a fence row in Ware, a mining community on ground that is now Red Mountain Park, and nobody knows whether a person or a bird put it there. The Alabama Forestry Commission named it state champion in November 2025, after a volunteer from Jefferson County Greenways researched its past. It stands beside the South BMRR Trail, across from the Pollinator Garden at the far west end.",
+  "meta_description": "Alabama's champion green hawthorn, about 125 years old, grew from a fence row in the Ware mining community and now stands in Red Mountain Park.",
+  "question_meta": "The tree on our Birmingham map is a champion green hawthorn in Red Mountain Park, about 100 to 130 years old, from a mining community's fence row.",
+  "question_answer": "The tree we have mapped in Birmingham is the champion green hawthorn in Red Mountain Park, beside the South BMRR Trail across from the Pollinator Garden, at about 100 to 130 years old. It is the only one we have dated here, so it answers for itself rather than for the city.",
+  "question_context": "The two accounts of its beginning differ a little. Jefferson County Greenways says it sprouted along a fence row in the mining community of Ware around 1900, and that nobody knows whether it was planted or sown by a bird. Bham Now says it was planted in the late 1800s and gives about 125 years. Either way it dates from the years when this ground was a place where miners lived, and it was still there when the land became Red Mountain Park. The Alabama Forestry Commission named it state champion in November 2025, after a Greenways volunteer researched its history and put it forward, and Greenways calls it a living monument to a past time. A hawthorn is a small tree, thorny and many-branched, which is how you can tell it from the oaks and pines along the trail. No girth or height has been published that we can stand behind. The park charges nothing for entry or parking and opens daily from 7am; sources disagree on the closing hour, so check before you go.",
+  "hero_tree_id": "bha_001",
+  "oldest_tree_id": "bha_001",
+  "faq": [
+    {
+      "q": "Where is the champion hawthorn in Red Mountain Park?",
+      "a": "Beside the South BMRR Trail, across from the Pollinator Garden at the far west end of the trail. The park entrances are on Frankfurt Drive and Venice Road."
+    },
+    {
+      "q": "How old is the Red Mountain Park hawthorn?",
+      "a": "Roughly 100 to 130 years. One account says it sprouted around 1900, and another says it was planted in the late 1800s."
+    },
+    {
+      "q": "Is Red Mountain Park free?",
+      "a": "Yes, with no admission or parking fee, though donations are welcome. It opens daily at 7am, and sources disagree on whether it closes at 5pm or 7pm."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bha_001",
+      "name": "Red Mountain Park Champion Hawthorn",
+      "species": "Green Hawthorn (Crataegus viridis)",
+      "age_estimate": "roughly 125 years",
+      "age_min": 100,
+      "age_max": 130,
+      "age_basis": "source",
+      "location": {
+        "address": "BMRR South Trail, across from the Pollinator Garden, Red Mountain Park, Birmingham, AL 35211",
+        "latitude": 33.4454,
+        "longitude": -86.8622,
+        "neighbourhood": "Red Mountain Park (former Ware mining community)"
+      },
+      "story": "Alabama's champion green hawthorn started out along a fence row in a mining community called Ware, and nobody knows whether anyone meant to put it there. Jefferson County Greenways says it sprouted around 1900 and cannot say whether it was planted or sown by a bird. Bham Now says planted in the late 1800s, about 125 years ago. Between those two accounts you have the tree's whole recorded past.\n\nWare is a former community now, and the ground is Red Mountain Park. Greenways calls the hawthorn a living monument to a past time, which is about right for a small thorny tree still standing where the miners lived.\n\nThe Alabama Forestry Commission named it state champion in November 2025, after a Greenways volunteer researched its history and nominated it. A hawthorn is a small tree, and a champion hawthorn is a small tree that has done well. No measurement has been published that we can stand behind.\n\nIt grows beside the South BMRR Trail, across from the Pollinator Garden at the far west end of the trail, and it is a walk from either entrance. The pin marks the middle of the park rather than the tree. If you stand beside it with a phone, tell us where.",
+      "verified_sources": [
+        "https://www.jeffcogreenways.org/article/red-mountain-parks-state-champion-tree-a-living-link-to-history",
+        "https://bhamnow.com/2025/11/20/see-the-new-alabama-champion-tree-at-red-mountain-park/"
+      ],
+      "official_register": {
+        "name": "Alabama Forestry Commission Champion Tree Program (2025 list)",
+        "url": "https://forestry.alabama.gov/Pages/Management/Champion_Tree.aspx"
+      },
+      "access": "Free, no admission or parking fee (donations welcome). Daily from 7am; closing hours conflict between sources (7pm vs 5pm), check redmountainpark.org. Entrances: Frankfurt Drive (2011 Frankfurt Dr) and Venice Road (2019 Venice Rd). Tree stands beside the South BMRR trail, on foot.",
+      "transport": "By car; park entrances on Frankfurt Drive and Venice Road, Birmingham 35211, then on foot along the South BMRR Trail.",
+      "how_to_recognise": "You can recognise it by its form, a small, thorny, many-branched hawthorn rather than an oak or pine. It stands beside the South BMRR Trail, across from the Pollinator Garden at the trail's far west end.",
+      "recognise": "You can recognise it by its form, a small, thorny, many-branched hawthorn rather than an oak or pine. It stands beside the South BMRR Trail, across from the Pollinator Garden at the trail's far west end.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

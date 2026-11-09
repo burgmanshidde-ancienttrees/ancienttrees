@@ -1,0 +1,88 @@
+{
+  "city": "Huntsville, Alabama",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Both of Huntsville's trees are state champions and both are a walk away from the road, in the 538 acres of Hays Nature Preserve on the Flint River. A shellbark hickory, by the city's account the largest known in Alabama, stands 455 centimetres round on drier ground. Within a few hundred yards a water tupelo grows in an old oxbow slough, with a moss skirt on its trunk marking the usual height of the winter water. The city's trail signs lead to both, and the paths can go under after rain.",
+  "meta_description": "Two state champion trees in Huntsville's Hays Nature Preserve: Alabama's largest known shellbark hickory and a water tupelo standing in an old oxbow.",
+  "question_meta": "No age has been published for Huntsville's two mapped trees, a champion shellbark hickory and a champion water tupelo at Hays Nature Preserve.",
+  "question_answer": "Nobody has published the age of either tree on our Huntsville map. Both stand in Hays Nature Preserve, at 7153 US-431 South, and both are state champions, a shellbark hickory 455 centimetres round and a water tupelo in the old Flint River oxbow.",
+  "question_context": "Size is what can be said with some confidence, and even there the sources are thin. The City of Huntsville, which owns the preserve through its Green Team, gives the hickory as 179 inches around and 96 feet tall, with a crown averaging 74 feet, and calls it the largest known in Alabama. For the tupelo the city's trail signs give no figures at all and speak of champion trees in the plural. A retired forester who walked the slough on 3 November 2022 estimated the base of a champion at a good nine feet across at the ground, and described a moss skirt on the trunk at about navel height, marking the usual winter water line. He placed the two champions within a few hundred yards of each other, reached from the Flint River picnic area. The hickory's sign comes after the Beaver Dam on the city's list. The pins on these pages mark the preserve as a whole, so the signs are the better guide. The preserve is free, and the dirt trails can be muddy or under water.",
+  "hero_tree_id": "hsv_002",
+  "oldest_tree_id": "hsv_001",
+  "faq": [
+    {
+      "q": "How old are the champion trees at Hays Nature Preserve?",
+      "a": "No age has been published for either the shellbark hickory or the water tupelo. If you know more, tell us."
+    },
+    {
+      "q": "How do you find the champion hickory?",
+      "a": "Follow the city's trail signs, where the champion hickory comes after the Beaver Dam. It stands on drier ground just off the old oxbow slough, within a few hundred yards of the champion tupelo."
+    },
+    {
+      "q": "Can you reach the water tupelo all year?",
+      "a": "The slough floods seasonally, and the trail can be muddy or partly under water. A dry spell is the better time to go."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hsv_001",
+      "name": "Hays Nature Preserve state champion shellbark hickory",
+      "species": "Shellbark Hickory (Carya laciniosa)",
+      "age_estimate": "not documented",
+      "girth_cm": 455,
+      "height_m": 29,
+      "location": {
+        "address": "Hays Nature Preserve, 7153 US-431 S, Owens Cross Roads (Hampton Cove), Huntsville, AL 35763",
+        "latitude": 34.6456,
+        "longitude": -86.4672,
+        "neighbourhood": "Hampton Cove"
+      },
+      "story": "By the city's account the largest known shellbark hickory in Alabama grows near a slough south-east of Huntsville, and you will have to walk for it. Huntsville owns Hays Nature Preserve and gives it as 179 inches round, 455 centimetres, and 96 feet tall, 29 metres, with a crown averaging 74 feet.\n\nThose are the city's figures. An older table of state champions has a Madison County shellbark hickory with a thinner trunk and more height, which may be an earlier measure or may be another tree, and we go with the owner of the ground.\n\nThe preserve runs to 538 acres on the Flint River, and the pin on this page marks the preserve and not the tree. So use the signs. On the city's list of trail signs the champion hickory comes after the Beaver Dam, and a forester who walked it in November 2022 found it on drier ground just off the old oxbow slough, within a few hundred yards of the state champion water tupelo. The two make one walk from the Flint River picnic area.\n\nThe trails are dirt and can be muddy or partly under water, so pick a dry spell. Nobody has published its age. If you know it, or can give us a GPS fix at the trunk, tell us.",
+      "verified_sources": [
+        "https://www.huntsvilleal.gov/environment/green-team/nature-preserves/hays-nature-preserve/hays-nature-preserve-trail-description/",
+        "https://stevejonesgbh.com/?p=12406"
+      ],
+      "access": "Free public nature preserve owned by the City of Huntsville Green Team; no entry fee stated and no published hours. Dirt trails, muddy and partly flooded at times.",
+      "transport": "No public transport; drive. About 20 km south-east of downtown Huntsville.",
+      "how_to_recognise": "You can recognise it by the trunk, 455 centimetres round, and the city's champion hickory sign after the Beaver Dam on the trail. It stands on drier ground just off the old oxbow slough, near the champion tupelo.",
+      "recognise": "You can recognise it by the trunk, 455 centimetres round, and the city's champion hickory sign after the Beaver Dam on the trail. It stands on drier ground just off the old oxbow slough, near the champion tupelo.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hsv_002",
+      "name": "Hays Nature Preserve state champion water tupelo",
+      "species": "Water Tupelo (Nyssa aquatica)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Tupelo slough (old Flint River oxbow), Hays Nature Preserve, 7153 US-431 S, Huntsville, AL 35763",
+        "latitude": 34.6456,
+        "longitude": -86.4672,
+        "neighbourhood": "Hampton Cove"
+      },
+      "story": "A moss skirt around this tree's trunk records how deep the winter water usually gets, and it comes up to about your navel. The water tupelo stands in the oldest oxbow slough at Hays Nature Preserve, a bend the Flint River abandoned, and it has made its living with wet feet.\n\nThe City of Huntsville's trail signs name state champion water tupelos here, without any figures, and use the plural, so treat this as a champion rather than the only one. A retired forester who visited on 3 November 2022 described its base as a good nine feet across at the ground, buttressed and swollen. That is his estimate rather than a measurement, and we have no confirmed girth or height.\n\nA limestone ledge stands eight to ten feet above flood level nearby. The trunks shelter wood ducks, screech owls and fox squirrels, according to the city, and the flowers feed the bees behind tupelo honey. Hampton Cove golf course is visible across the slough.\n\nThe pin marks the 538-acre preserve and not the tree, so follow the signs from the Flint River picnic area. The champion shellbark hickory is within a few hundred yards. The slough floods seasonally and the path can go under with it. Nobody has dated this tree. If you can, or can give us a GPS fix, tell us.",
+      "verified_sources": [
+        "https://www.huntsvilleal.gov/environment/green-team/nature-preserves/hays-nature-preserve/hays-nature-preserve-trail-description/",
+        "https://stevejonesgbh.com/?p=12406"
+      ],
+      "access": "Free public nature preserve owned by the City of Huntsville Green Team; no entry fee stated and no published hours. The slough floods seasonally; the trail is muddy or partly under water at times.",
+      "transport": "No public transport; drive. About 20 km south-east of downtown Huntsville.",
+      "how_to_recognise": "You can recognise it by the swollen, buttressed base, a good nine feet across by one forester's estimate, with a moss line at navel height. It stands in the oldest oxbow slough, near the champion hickory.",
+      "recognise": "You can recognise it by the swollen, buttressed base, a good nine feet across by one forester's estimate, with a moss line at navel height. It stands in the oldest oxbow slough, near the champion hickory.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

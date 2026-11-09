@@ -2,29 +2,29 @@
   "city": "Indianapolis",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Indianapolis has one mapped tree so far, and it is the reason we started looking here at all. The Kile Oak is the largest bur oak in metropolitan Indianapolis and the sixth largest anywhere in the state, growing on a residential street in Irvington since roughly the 1600s or 1700s. Mae Kile would not sell her house to anyone who refused to promise to keep it, and from 1928 kept a guestbook that filled with visitors from other countries. The Irvington Historical Society still maintains the lot, fenced and marked with two bronze plaques.",
-  "meta_description": "The Kile Oak: the largest bur oak in Indianapolis, 300 to 500 years old, kept alive by one family's promise since 1928. Free to visit.",
-  "question_meta": "Indianapolis' oldest tree, and its only one on our map so far, is the Kile Oak, a bur oak estimated at 300 to 500 years old in Irvington.",
-  "question_answer": "Indianapolis' oldest tree, and its only one on our map so far, is the Kile Oak: a bur oak estimated at 300 to 500 years old, standing on a fenced preserve lot on East Beechwood Avenue in Irvington.",
-  "question_context": "The Irvington Historical Society, which has owned the lot since 1973, puts the oak's age at 300 to 400 years; other accounts widen that to 300 to 500. Nobody has narrowed it further, because nobody has cored it. What is certain is that it was already old when Rev. Oliver W. Kile, a retired Ohio evangelist and Civil War veteran, bought the lot in 1901. His daughter Mae Kile campaigned to protect it from 1926 until her death, refusing to sell the house unless a buyer promised to keep the tree, and from 1928 kept a guestbook that filled with signatures from other countries: people travelled to a residential street to look at a tree standing in somebody's yard. The Society measures it at 483 centimetres round and 87 feet tall, with a crown spreading 122 feet, naming it the largest bur oak in any Indiana metro area and the sixth largest anywhere in the state. In October 1976 it was named a Bicentennial Tree of the Year.",
+  "intro": "Three of these four trees are still standing because somebody here said no. Mae Kile would not sell her Irvington house to anyone who refused to promise to keep the bur oak. On the Near Eastside the sidewalk bends around the Temple Oak, and a neighbour's sharp eye in 2012 turned a doomed backyard into a park for the Nowland Oak, 350 metres away. The fourth tree needed no defending. A sycamore on the Statehouse lawn went round the Moon as a seed on Apollo 14.",
+  "meta_description": "Indianapolis trees worth the walk: the Kile Oak, the Temple Oak with a sidewalk bent around it, and a sycamore that orbited the Moon as a seed.",
+  "question_meta": "No Indianapolis tree has a settled claim to oldest. The Kile Oak and the Temple Oak are among the oldest, both estimated at several hundred years.",
+  "question_answer": "No tree in Indianapolis has a settled claim to be the oldest. The Kile Oak, a bur oak on East Beechwood Avenue in Irvington, and the Temple Oak, a chinkapin oak at Temple Avenue and Brookside Parkway South Drive, are among the oldest, both estimated at several hundred years.",
+  "question_context": "Neither tree has been cored or ring-counted, and each has been called the city's oldest by somebody. The Irvington Historical Society puts the Kile Oak at 300 to 400 years, and other accounts widen that to 300 to 500. It is 483 centimetres round. The Temple Oak is the larger tree at 617 centimetres, measured by the Springdale Neighborhood Association in late 2023, with age estimates between 270 and 450 years, and the neighbourhood itself says about 400. The bands overlap almost completely, so anyone who names a winner is guessing. The third old tree, the Nowland Oak in Chinquapin Oak Park, has been given anything from about 200 to over 300 years, and it stood unnoticed behind a house until 2012. It is a short walk along Brookside Parkway from the Temple Oak, which stands on a private corner lot and is seen from the public sidewalk. The city's youngest entry has the longest journey behind it, a sycamore planted on the Statehouse lawn in 1976 from a seed that flew on Apollo 14.",
   "hero_tree_id": "ind_001",
   "oldest_tree_id": "ind_001",
   "faq": [
     {
-      "q": "How old is the Kile Oak?",
-      "a": "Between 300 and 500 years, by the Irvington Historical Society's own estimate; nobody has cored it for an exact ring count."
+      "q": "What is the oldest tree in Indianapolis?",
+      "a": "Nobody can say for certain. The Kile Oak in Irvington and the Temple Oak on the Near Eastside are among the oldest, with estimates that overlap between about 300 and 450 years. Neither has been ring-counted."
     },
     {
-      "q": "Can you visit the Kile Oak?",
-      "a": "Yes. It stands on a dedicated preserve lot on East Beechwood Avenue, fenced for protection, with staffed museum hours Saturday and Sunday 1 to 4pm; the lot itself can be visited more generally."
+      "q": "Can you visit the Temple Oak?",
+      "a": "You can see it from the public sidewalk at Temple Avenue and Brookside Parkway South Drive. The tree stands on a private lot with a house, and its canopy reaches over the parkway."
     },
     {
-      "q": "Why is it called the Kile Oak?",
-      "a": "After Mae Kile, who refused to sell her family's house unless the buyer promised to protect the tree, and kept a visitor's guestbook for it from 1928 until her death."
+      "q": "Where is the Moon Tree in Indianapolis?",
+      "a": "On the east lawn of the Indiana Statehouse, about 100 feet south of the Oliver P. Morton statue and 50 feet back from North Capitol Avenue. The tree itself is unmarked, and the plaque has been moved to the south side of the building."
     },
     {
-      "q": "Is the Kile Oak still healthy?",
-      "a": "Yes, though Hurricane Helene's remnants broke some limbs in September 2024; the damage was cleared and the lot reopened."
+      "q": "Can you walk between the Temple Oak and the Nowland Oak?",
+      "a": "Yes. They stand about 350 metres apart along Brookside Parkway South Drive, and tile markers in the sidewalk link Chinquapin Oak Park to the Temple Oak and Spades Park."
     }
   ],
   "trees": [
@@ -63,6 +63,114 @@
         "height": 500
       },
       "height_m": 26.5
+    },
+    {
+      "id": "ind_002",
+      "name": "The Temple Oak",
+      "species": "Chinkapin Oak (Quercus muehlenbergii)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 270,
+      "age_max": 450,
+      "age_basis": "source",
+      "girth_cm": 617,
+      "height_m": 26.8,
+      "location": {
+        "address": "Corner of Temple Avenue and Brookside Parkway South Drive, Indianapolis, IN 46201",
+        "latitude": 39.7858,
+        "longitude": -86.1181,
+        "neighbourhood": "Springdale, Near Eastside"
+      },
+      "story": "The sidewalk on this corner has a bite taken out of it. When the city planned to straighten the walk and fell the oak in its way, the owners negotiated a cutout instead, and the concrete still bends around the trunk.\n\nThe Temple Oak is a chinkapin oak on the Near Eastside, on a private corner lot with a small house. In late 2023 the Springdale Neighborhood Association measured it at 88 feet high, 26.8 metres, and 20 feet 3 inches round, 617 centimetres, with a crown averaging 126.5 feet across. The canopy reaches out over Brookside Parkway, which is how you see it. Everything worth seeing is visible from the public sidewalk, and the lot belongs to somebody.\n\nAge is where the certainty ends. The neighbourhood says about 400 years. Experts quoted in 2014 said 300 to 400. Other estimates run from under 300 to 450, and no one has counted rings. It is among the oldest trees in Indianapolis, and locals claim it as the largest chinkapin in Marion County.\n\nIt has been hit by cars, which left scars on the bark, and in 2014 it had oak lace mites and deadwood until the neighbourhood raised money for treatment. Springdale took it as its symbol. The city wanted a straighter line, and the line lost.",
+      "verified_sources": [
+        "https://www.springdaleindy.com/the-temple-oak",
+        "https://www.wfyi.org/news/articles/neighborhood-rallies-around-temple-oak",
+        "https://weeklyview.net/?p=4844"
+      ],
+      "access": "View only, from the public sidewalk and street at the corner of Temple Avenue and Brookside Parkway South Drive; the trunk stands on a private corner lot with a small house. Do not enter the property. Free, always visible.",
+      "transport": "Near Eastside, roughly 2.5 km east of downtown Indianapolis.",
+      "how_to_recognise": "You can recognise it by the sidewalk bending in a cutout around the trunk, 617 centimetres round, and the canopy over Brookside Parkway. It stands at Temple Avenue and Brookside Parkway South Drive.",
+      "recognise": "You can recognise it by the sidewalk bending in a cutout around the trunk, 617 centimetres round, and the canopy over Brookside Parkway. It stands at Temple Avenue and Brookside Parkway South Drive.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ind_003",
+      "name": "The Nowland Oak",
+      "species": "Chinkapin Oak (Quercus muehlenbergii)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 310,
+      "age_basis": "source",
+      "location": {
+        "address": "Chinquapin Oak Park, 2319 Nowland Avenue, Indianapolis, IN 46201",
+        "latitude": 39.78595,
+        "longitude": -86.12185,
+        "neighbourhood": "Springdale, Near Eastside"
+      },
+      "location_site": {
+        "name": "Chinquapin Oak Park",
+        "radius_m": 30
+      },
+      "story": "In 2012 a neighbour noticed this oak behind a house that was about to be demolished. Only when the house came down did the size of the tree become clear.\n\nThe neighbourhood took up its cause and won a GreenSpace grant in 2016 to protect the lot, working with Keep Indianapolis Beautiful, and on 20 May 2017 it celebrated Chinquapin Oak Park, a narrow pocket of ground about 45 metres long. Tile markers set into the sidewalk tie the park to the Temple Oak, about 350 metres east, and to Spades Park.\n\nHow old it is depends on which report you read. The Weekly View said over 300 years in 2017, starting from about 1716. Keep Indianapolis Beautiful used the same 1716 date in 2018 but had said approximately 200 years in 2016. No published measurement exists, of its age or of its girth, so the honest band is 200 to 310 years.\n\nThe latest account we can find dates from 2018, the park is on the map, and we have nothing more recent about the tree's condition. If you have stood under it lately, tell us how it looks. A house hid it for a long time.",
+      "verified_sources": [
+        "https://weeklyview.net/2017/05/11/springdale-neighborhood-celebrates-new-park-for-ancient-tree",
+        "https://www.kibi.org/2018/11/30/chinquapin-oak-park/",
+        "https://www.kibi.org/2016/01/01/springdale-greenspace-at-the-nowland-oak/"
+      ],
+      "access": "Free; Chinquapin Oak Park is a small neighbourhood green space (opened May 2017, Keep Indianapolis Beautiful IPL Project GreenSpace); no published hours.",
+      "transport": "Near Eastside, roughly 2.5 km east of downtown Indianapolis.",
+      "how_to_recognise": "You can recognise it as the only large oak in the pocket park, with a tree circle and plantings around it. It stands in Chinquapin Oak Park on the north side of Nowland Avenue.",
+      "recognise": "You can recognise it as the only large oak in the pocket park, with a tree circle and plantings around it. It stands in Chinquapin Oak Park on the north side of Nowland Avenue.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ind_004",
+      "name": "The Indiana Statehouse Moon Tree",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "planted 1976",
+      "age_min": 49,
+      "age_max": 50,
+      "age_basis": "source",
+      "location": {
+        "address": "Indiana Statehouse east lawn, North Capitol Avenue side, Indianapolis, IN 46204",
+        "latitude": 39.76832,
+        "longitude": -86.16202,
+        "neighbourhood": "Downtown"
+      },
+      "story": "This sycamore went round the Moon as a seed. Astronaut Stuart Roosa carried it on Apollo 14 in February 1971, and on 9 April 1976 Governor Otis R. Bowen led the ceremony that put it in the ground on the east lawn of the Indiana Statehouse.\n\nYou would never know from standing next to it. The tree is unmarked, and its plaque has been moved to the south side of the Capitol, near the West Washington Street sidewalk, some way from the thing it describes. In 2017 the lawn gained an arboretum of 44 trees in 21 species, so there is plenty of competition. To find it, go to the Oliver P. Morton statue on the North Capitol Avenue side and walk about 100 feet south, staying about 50 feet back from the street. Those directions are NASA's, and NASA calls its own position approximate.\n\nAt about fifty years old this is a youngster by the standards of this map. It earns its place on the journey. Islands.com described it in December 2024 as towering over the Statehouse, and that is the most recent report of it we can find. No girth or height has been published. It has spent half a century on a lawn where the state's laws go in and out, and it has been further than anyone in the building.",
+      "verified_sources": [
+        "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/indianapolis_tree.html",
+        "https://www.islands.com/1740369/hidden-heart-indianapolis-rare-historical-tree-cosmic-connections/"
+      ],
+      "official_register": {
+        "name": "NASA NSSDCA Moon Trees",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/indianapolis_tree.html"
+      },
+      "access": "Free; Statehouse front lawn arboretum is public grounds in downtown Indianapolis. The tree itself is unmarked; the plaque has been moved to the south side of the Capitol near the W. Washington St sidewalk.",
+      "transport": "Downtown Indianapolis, Capitol Avenue; on foot from anywhere downtown.",
+      "how_to_recognise": "You can recognise it by position, since it has no marker: an American sycamore about 100 feet south of the Oliver P. Morton statue and 50 feet back from North Capitol Avenue, on the Statehouse east lawn.",
+      "recognise": "You can recognise it by position, since it has no marker: an American sycamore about 100 feet south of the Oliver P. Morton statue and 50 feet back from North Capitol Avenue, on the Statehouse east lawn.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
