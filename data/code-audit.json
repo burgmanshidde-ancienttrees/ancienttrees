@@ -218,9 +218,10 @@
    "file": "ios/AncientTrees/AncientTrees/Screens/Home.swift:851",
    "summary": "Discover's ambassador seat ignores a tap (build 40)",
    "first_seen": "2026-11-08",
-   "status": "open",
+   "status": "fixed",
    "found_by": "hidde",
-   "test": "AncientTreesUITests/AmbassadorAskWalk"
+   "test": "AncientTreesUITests/AmbassadorAskWalk",
+   "fixed_in": "869cec894"
   },
   {
    "id": "ESC-2026-11-08-map-pins-blink-for-the-first-seconds-aft",
@@ -229,8 +230,10 @@
    "file": "ios/AncientTrees/AncientTrees/Screens/TreeMap.swift:1395",
    "summary": "Map pins blink for the first seconds after a fresh install",
    "first_seen": "2026-11-08",
-   "status": "open",
-   "found_by": "hidde"
+   "status": "fixed",
+   "found_by": "hidde",
+   "no_test_reason": "A brief visual fade of map symbols in the first seconds after a fresh install; UI tests read the view tree, not rendered map frames. Hidde confirmed it gone on build 41, 2026-11-09.",
+   "fixed_in": "38d54ae44"
   }
  ]
 }
