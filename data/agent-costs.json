@@ -16137,6 +16137,70 @@
       "tokens": 110000,
       "trees": 3,
       "note": "Asked for 18 stories; 1 writable (gui_009). The other 16 named trees carry an earlier pass's hold that still stands (identity, life, access or duplicate); taiwan has no pending tree; the Segovia READY lead is unverified (six similar sequoias, access and life open). Merged gui_009, hnl_024 (hold lifted under hard rule 10, paid entry counts) and cbr_007 as penacova/pcv_001 (own place, outside Coimbra's day-trip bound). cdl_001 and sgz_003 stay held. About 37k a tree, mostly reading holds."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "aviemore",
+      "tokens": 126581,
+      "trees": 0,
+      "note": "From-zero Speyside: no named, placeable tree. Three leads saved, the granny pine over An Lochan Uaine the best."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "inverness",
+      "tokens": 146284,
+      "trees": 2,
+      "note": "Reelig Glen firs and the Lord President's Oak. Beauly Priory's elm fell 2023-01-05; Highland yews and the Black Isle gave nothing individual."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "ni-estates",
+      "tokens": 142753,
+      "trees": 4,
+      "note": "Florence Court Irish yew, Crom yews, Dark Hedges, Old Homer. National Trust site blocked."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "ni-estates (round 2)",
+      "tokens": 166373,
+      "trees": 6,
+      "note": "Castlewellan 4, Armagh King Tree, Gosford fir. Wayback copies of remarkabletrees.org work; Mount Stewart, Castle Ward, Tollymore stayed leads."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "belfast",
+      "tokens": 169780,
+      "trees": 3,
+      "note": "Botanic Gardens hornbeam and oriental plane, Erskine House plane. Dixon Park, Malone, Stormont and Cave Hill gave nothing with a source."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "highlands-west",
+      "tokens": 156882,
+      "trees": 4,
+      "note": "Ardkinglas 2, Last Ent of Affric, Benmore Redwood Avenue. Fort William, Oban and the Great Glen gave nothing."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "photo",
+      "target": "uk-ni-highlands",
+      "tokens": 143268,
+      "trees": 6,
+      "note": "31 candidates viewed, 6 approved, 6 held."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "write",
+      "target": "uk-ni-highlands",
+      "tokens": 100000,
+      "trees": 19,
+      "note": "19 stories and 13 place blocks (estimate: the agent died on the usage limit at its last step). Whole run about 1.15M tokens, about 60k a tree."
     }
   ]
 }

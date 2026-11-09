@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 session: Northern Ireland and Highlands run, the bookkeeping
+
+**What changed in the product:** nothing new today. The 19 trees of this run are already live: 16 app-only in the 2026-11-06 publish (311725714), plus Belfast's three (bfs_006 to 008). Castlewellan 4, Ardkinglas 2, one each at Florence Court, Crom, the Dark Hedges, Rostrevor, Armagh, Gosford, Reelig Glen, Inverness, Glen Affric and Benmore. Six have a photograph.
+**Found empty:** Aviemore, Rothiemurchus and all of Speyside: no named, placeable tree (three leads in data/leads/aviemore.json; a granny pine needs a geotagged photo of the trunk or an OSM node). Beauly Priory's elm fell on 2023-01-05. Fort William, Oban, the Great Glen, Dornoch and the Black Isle gave nothing individual. Mount Stewart, Castle Ward and Tollymore stayed leads; the Forest Service book "Northern Ireland's Remarkable Trees" (Wayback copy of remarkabletrees.org) is the angle left for them.
+**Waiting in data/research/uk-ni-highlands-places.json:** Belfast's rewritten place copy, unused while its new trees are app-only. Use it when they get pages.
+**Cost:** about 1.15M tokens for 19 trees, about 60k a tree, far over the 15k target; from-zero work in the Highlands costs that and yields little. The writing pass died on the usage limit at its last step, with everything already on disk.
+
 ## 2026-11-09 session: the Plus question starts counting at zero
 
 The three answers so far and the one "tell me" (Rome web was our own account, the two app answers could not be told apart from a test) are left out of `plus_answers.py` and the digest, Hidde: "haal deze uit de telling". They stay in the database; the list is data/plus-answers-not-counted.json, by created_at. The first real answer now reads as answer 1.

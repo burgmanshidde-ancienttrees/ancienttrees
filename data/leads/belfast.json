@@ -1,15 +1,51 @@
 {
-  "leads": [
-    {
-      "name": "The Ormeau Plane",
-      "species": "London Plane (Platanus x hispanica), per one source",
-      "reason": "A notable, informally famous plane tree in Ormeau Park (Belfast's oldest municipal park, opened 1871), described by thestreettree.substack.com as 'a charmingly grotesque... corpulent, short, gouty' specimen and 'a popular curiosity'. Full article is paywalled so no age, girth, height or exact in-park location could be extracted; only the preview snippet was readable. A second search for corroboration ('Ormeau Park plane tree girth', 'London plane Belfast park notable') turned up nothing else naming this specific tree. One source only, and a thin one at that (no numbers), so held as a lead rather than shipped. A future pass should try to read the full substack post (may need a subscription or an archive snapshot), and/or search Belfast City Council's own Ormeau Park page and any tree survey/strategy documents for a named or tagged plane."
-    },
-    {
-      "name": "Belfast Castle Estate / Cave Hill Country Park woodland",
-      "species": "mixed, unconfirmed",
-      "reason": "One of the four sites named in the brief. Woodland Trust holds a 'Belfast Castle Estate' wood entry and the estate's slopes were planted with evergreen and deciduous trees from the 1880s onward per general history sources, but no single named/individually remarkable veteran tree was found in this pass, only a general naturalised woodland roughly 140 years old at most. That is a landscape, not a collectible point per the standing rule (an avenue or a whole wood is blocked, a single named tree is not). Worth a future pass specifically searching Belfast City Council's Belfast Castle Estate management plan or tree survey for any individually named/notable specimen (a cedar, wellingtonia, or similar Victorian estate planting would be typical); none was found searching generically in the time available here."
-    }
-  ],
-  "blocked": []
+ "leads": [
+  {
+   "name": "The Ormeau Plane",
+   "species": "London Plane (Platanus x hispanica), per one source",
+   "reason": "A notable, informally famous plane tree in Ormeau Park (Belfast's oldest municipal park, opened 1871), described by thestreettree.substack.com as 'a charmingly grotesque... corpulent, short, gouty' specimen and 'a popular curiosity'. Full article is paywalled so no age, girth, height or exact in-park location could be extracted; only the preview snippet was readable. A second search for corroboration ('Ormeau Park plane tree girth', 'London plane Belfast park notable') turned up nothing else naming this specific tree. One source only, and a thin one at that (no numbers), so held as a lead rather than shipped. A future pass should try to read the full substack post (may need a subscription or an archive snapshot), and/or search Belfast City Council's own Ormeau Park page and any tree survey/strategy documents for a named or tagged plane."
+  },
+  {
+   "name": "Belfast Castle Estate / Cave Hill Country Park woodland",
+   "species": "mixed, unconfirmed",
+   "reason": "One of the four sites named in the brief. Woodland Trust holds a 'Belfast Castle Estate' wood entry and the estate's slopes were planted with evergreen and deciduous trees from the 1880s onward per general history sources, but no single named/individually remarkable veteran tree was found in this pass, only a general naturalised woodland roughly 140 years old at most. That is a landscape, not a collectible point per the standing rule (an avenue or a whole wood is blocked, a single named tree is not). Worth a future pass specifically searching Belfast City Council's Belfast Castle Estate management plan or tree survey for any individually named/notable specimen (a cedar, wellingtonia, or similar Victorian estate planting would be typical); none was found searching generically in the time available here."
+  },
+  {
+   "name": "Ormeau Park horse chestnut by the river railings",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "reason": "Guardian Country Diary (Mary Montague) describes a grand horse chestnut in Ormeau Park, said to have borne fruit for about 200 years, leaning from the Lagan beside the park railings. Seen only as a search summary (guardian, inkl and enviweb mirrors blocked or Cloudflare), no coordinate, no measurements, no second source: lead, not verified. Possible 'older tree beside the famous plane' for the Ormeau Plane lead."
+  },
+  {
+   "name": "Belvoir Park Forest four-trunked oak between the motte and the car park",
+   "species": "Oak (Quercus sp.)",
+   "lat": 54.5465,
+   "lon": -5.9065,
+   "reason": "Geograph J3469 (A. Bridge, Aug 2014, CC BY-SA 2.0) shows a conspicuous four-trunked oak between the Norman motte and the car park; coordinate approximate (grid square J3469). Only a photo caption; no age or girth; may be the already-live Belvoir Oak or a neighbour. Woodland Trust text (quoted on lordbelmont blog) says Belvoir has 270 trees of 3 m girth or more, nearly half oaks, and the original Deramore Oak is a 8.5 m girth stump (not a tree). Needs a site visit or TROBI to separate."
+  },
+  {
+   "name": "Hillsborough Castle Big Oak (Turkey oak, about 250 years) and Monterey pine (1770s)",
+   "species": "Turkey Oak (Quercus cerris)",
+   "reason": "Search summary of Historic Royal Palaces visitor map/highlights tour: Big Oak about 250 years old, shortlisted NI Tree of the Year; oldest tree in the collection a Monterey pine planted 1770s by the 1st Marquess of Downshire. PDFs could not be read here (404 and binary). About 20 km from Belfast, paid entry; belongs to the ni-estates pass. Needs the HRP page text and a coordinate."
+  },
+  {
+   "name": "Ballymenoch Oak, Holywood",
+   "species": "Turkey Oak (Quercus cerris)",
+   "reason": "Appears on a Northern Ireland Tree of the Year list as 'Turkey oak at Ballymenoch Park, Holywood'; no age, no coordinate, one snippet. Holywood is a short train ride from Belfast. Needs a proper source."
+  },
+  {
+   "name": "Stormont Estate Prince of Wales Avenue limes",
+   "species": "Red-twigged Lime (Tilia x europaea 'Pallida' or similar)",
+   "reason": "Assembly leaflet: 305 red-twigged limes planted in the 1920s. An avenue, not a collectible point; blocked-type. No individual veteran at Stormont found."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Belvoir Deramore Oak (original)",
+   "reason": "The original Great/Deramore Oak is gone; only a stump of about 8.5 m girth remains per Woodland Trust text; its name moved to another oak (likely the live Belvoir Oak)."
+  },
+  {
+   "name": "Botanic Gardens Turkey oak (Quercus cerris, East Walk)",
+   "reason": "Fell in March 2021 (FOBBG); rings dated 1831 to 2019, probably an early boundary planting. Known dead."
+  }
+ ]
 }
