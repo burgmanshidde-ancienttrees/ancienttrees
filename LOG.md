@@ -10,6 +10,14 @@
 - [2026-08](archive/LOG-2026-08.md)
 - [2026-07](archive/LOG-2026-07.md)
 
+## 2026-11-09, 01:22 window (night run)
+
+- Rung 1 clear (no photographs, no notes). Rung 2: fixed two web error types from old browsers (Safari before 14 `matchMedia.addListener`, browsers without `<dialog>.showModal`); invisible change, commit 303f6bab9. Not built or smoke-run here (no site build in this runner).
+- Open app BUG rows (Discover ambassador seat ignores a tap; map pins blink after fresh install) need a Mac to reproduce and test; left open, not guessed at.
+- Shelf: the writable pile is about 21 trees across scattered places plus one READY lead (Segovia). Braga claimed and released at once (5 leads, under the six minimum), so it is a 48h wall. Vienna verify pass: 2 trees (Prater oak vie_060, Heustadelwasser lime vie_061, access flagged), 4 leads. The claim stays until the two are written; release is refused until they are merged.
+- Health also asks for a deploy dispatch and a nightly knock (GitHub dropped 6 of 12 crons).
+- For Hidde: nothing needing him.
+
 ## 2026-11-08 (window from 18:55 UTC): nothing new published
 
 Rung 1 empty (no sightings, no notes). Rung 2: health shows two open app BUG rows found by Hidde (the Discover ambassador seat ignoring a tap, map pins blinking on a fresh install). Both are Swift UI bugs that need the simulator and a UI test, which this Linux runner cannot run, so I left them open. For Hidde: both still need a session on the Mac.

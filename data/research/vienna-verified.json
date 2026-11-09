@@ -717,5 +717,65 @@
   },
   "story": "When Vienna made this black poplar a natural monument in 2004, its crown measured about 36 metres across, very nearly as wide as the tree is tall.\n\nThe height was about 40 metres, on a trunk 5.7 metres round. The register entry, Naturdenkmal 790, put its age at no less than 100 years at the time of designation. That number was a floor, not a count of rings, so the honest statement is that it is well over a century old now and nobody has said by how much. Every figure here dates from 2004; the tree has had more than twenty years since to add to them.\n\nThose measurements matter more for this species than for most. Black poplars grow fast and live short lives by the standards of the oaks and limes elsewhere in Vienna, so a poplar that reached monument size in the Prater has already outlasted most of its kind. The Prater is a public recreation area, free and open at all hours, so there is no gate between you and it.\n\nOne honest warning. The most recent photographs we can find are three views from May 2014, and we have no newer sighting that confirms it still stands. If you walk out to it, tell us whether it is there; a photograph would settle the question for everyone after you.\n\nThe pin is approximate, taken from the city's register point rather than fixed at the trunk, so give yourself a little searching time on arrival.",
   "how_to_recognise": "You can recognise it by its size: a black poplar about 40 metres tall with a trunk 5.7 metres round and a crown some 36 metres wide. It stands in the Prater in Leopoldstadt, Naturdenkmal 790."
+ },
+ {
+  "id": "vie_060",
+  "name": "The Prater Meadow Oak (Kaiserallee)",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 185 years",
+  "age_min": 150,
+  "age_max": 200,
+  "age_basis": "derived",
+  "girth_cm": 466,
+  "location": {
+   "address": "Kaiserallee, Prater, Leopoldstadt, 1020 Wien (Naturdenkmal 867)",
+   "latitude": 48.210387,
+   "longitude": 16.408387,
+   "neighbourhood": "Leopoldstadt, 2nd district"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt",
+   "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42/MA 28)",
+   "https://commons.wikimedia.org/wiki/File:Stieleiche867.jpg"
+  ],
+  "official_register": {
+   "name": "Naturdenkmale Wien (Stadt Wien, MA 22), ND 867, register_id 3257977, designated 2024-02-06",
+   "url": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/naturdenkmaeler/bezirk-02.html"
+  },
+  "access": "Free. Stands on a meadow in the Prater public recreation area (Naherholungsraum Prater), open at all times; no gate.",
+  "transport": "Prater, near the Messe Wien grounds; U2 Messe-Prater is the nearest station (walk time not measured this pass).",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Register ND 867 (Stadt Wien, designated 2024-02-06, so a very recent designation) names a Stieleiche on a meadow at Kaiserallee, register text: the oak shapes its surroundings through its position on a meadow in the Prater recreation area. Pin: the register coordinate (48.210387, 16.408387) lies within about 1 m of a Baumkataster point (16.40838913, 48.21038245) that records Quercus robur, STAMMUMFANG 466 cm, PFLANZJAHR 1841, height class 11-15 m (a class, not metres, not recorded as height). It is by far the widest tree in the 66 Baumkataster records within about 45 m (next oak 186 cm, next widest chestnut 199 cm), so the individual trunk is identified: confirmed pin. Age: the only basis is the Baumkataster PFLANZJAHR 1841, about 185 years; city inventories often hold estimated planting years for old trees, so stated broad (150 to 200). Girth 466 cm is a Baumkataster figure, undated. Alive: Commons file Stieleiche867.jpg, CC BY-SA 4.0, taken 2026-02-20, geotag equals the register point (not independent evidence of the pin; photo not viewed this pass); iNaturalist observation 206268276 (2024-04-09) from lifecheck.py RECENT, not opened (Cloudflare). Walkable with vie_059 (Prater black poplar) and the Messe oak ND 714 (lead) in the same part of the Prater. Single source of the age (Kataster) plus the register: flagged as register plus municipal inventory, same city administration."
+ },
+ {
+  "id": "vie_061",
+  "name": "The Heustadelwasser Lime",
+  "species": "Small-leaved Lime (Tilia cordata)",
+  "age_estimate": "roughly 110 years",
+  "age_min": 90,
+  "age_max": 130,
+  "age_basis": "derived",
+  "girth_cm": 295,
+  "location": {
+   "address": "Unteres Heustadelwasser, Prater, Leopoldstadt, 1020 Wien (Naturdenkmal 868)",
+   "latitude": 48.199683,
+   "longitude": 16.435784,
+   "neighbourhood": "Leopoldstadt, 2nd district"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt",
+   "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42/MA 28)",
+   "https://commons.wikimedia.org/wiki/File:Winterlinde868.jpg"
+  ],
+  "official_register": {
+   "name": "Naturdenkmale Wien (Stadt Wien, MA 22), ND 868, register_id 3257998, designated 2024-06-20",
+   "url": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/naturdenkmaeler/bezirk-02.html"
+  },
+  "access": "Not established with a source. Register text places it in the transition zone between allotment gardens (Kleingaerten) and the Heustadelwasser water; Prater public recreation area. Whether a public path passes it was not confirmed; view from the shore side is the expectation, check before sending anyone.",
+  "transport": "Not established this pass.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register ND 868 (designated 2024-06-20): the lime is visible from a distance and shapes the transition zone between allotments and the water; girth about 3 m, height about 20 m, crown up to 18 m (register wording, Wikipedia list copying the city register). Baumkataster point (16.4357839, 48.19968728) is about 3 m from the register coordinate and records Tilia cordata, STAMMUMFANG 295 cm, PFLANZJAHR 1913, height class 16-20 m: girth and height agree with the register, only other trees nearby are birches (107 and 60 cm), so the trunk is identified: confirmed pin. Age: Baumkataster planting year 1913, about 113 years, stated broad (90 to 130); no second source for the year. Alive: Commons file Winterlinde868.jpg, CC BY-SA 4.0, taken 2026-07-24 (geotag equals register point, photo not viewed); the register itself is from 2024. FLAGGED mainly on access: the tree sits beside allotment gardens and public access to its immediate spot is unconfirmed. Overpass is dead from this environment so OSM footway tags were not read. Nominatim not tried."
  }
 ]

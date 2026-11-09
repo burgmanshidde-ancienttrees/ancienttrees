@@ -1,6 +1,16 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-09": [
+      {
+        "date": "2026-11-09",
+        "kind": "verify",
+        "target": "vienna",
+        "tokens": 90000,
+        "trees": 0,
+        "note": "Prater ND 867 oak and ND 868 lime verified (vie_060, vie_061, not yet written); rest of register private or address-only, 4 leads added."
+      }
+    ],
     "2026-11-08": [
       {
         "date": "2026-11-08",

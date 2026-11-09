@@ -799,6 +799,39 @@
    "latitude": 48.261636,
    "longitude": 16.340179,
    "why_not_yet": "[SKIPPED 2026-10-18 by the write pass] address point in Doebling with access unknown (hard rule 10); no photograph and the cadastre would not answer. Naturdenkmal 735, girth 400 cm, height about 20 m, crown 20 m, almost 130 years old (register text via de.wikipedia Doebling list). No photo on Commons, access to Schreiberweg 114 unknown, cadastre hung. Best remaining Doebling candidate if a pass can reach the cadastre and settle access."
+  },
+  {
+   "register_id": 3257843,
+   "name": "Stieleiche",
+   "species": "Quercus robur",
+   "place": "2., Messegelaende, bei Halle 18",
+   "latitude": 48.214606,
+   "longitude": 16.409363,
+   "why_not_yet": "[verify pass 2026-11-09] Naturdenkmal 714 (1984, register text: robust and of special mass), Commons photo 2014-02-25 only. Stands on the Messe Wien fairgrounds, which are not a freely open public space; no Baumkataster record within 17 m (fairground land outside city inventory). Access to the exact spot unconfirmed and no recent sighting beyond lifecheck RECENT 2023-08-31 (iNaturalist 181062970, not opened). Walkable from vie_060 (about 450 m)."
+  },
+  {
+   "register_id": 3247701,
+   "name": "Schwarzpappel",
+   "species": "Populus nigra",
+   "place": "2., Handelskai 268",
+   "latitude": 48.217423,
+   "longitude": 16.416549,
+   "why_not_yet": "[verify pass 2026-11-09] Naturdenkmal 159 (1941, register: beautiful crown), Baumkataster Populus nigra STAMMUMFANG 531 cm, height class 16-20 m about 10 m from the register point (16.41650563, 48.21746084), planting year 0 (unknown). Commons photo only 2014-03-02; lifecheck NONE; whether Handelskai 268 is public ground (Donau-side road) was not settled and Overpass is unreachable. Worth a pass with OSM or street imagery access."
+  },
+  {
+   "register_id": 3257484,
+   "name": "Esche",
+   "species": "Fraxinus excelsior",
+   "place": "2., Prater-Stemmerallee, KGA Heustadelwasser",
+   "latitude": 48.198079,
+   "longitude": 16.43784,
+   "why_not_yet": "[verify pass 2026-11-09] Naturdenkmal 430 (1955), girth 3 m, height and crown about 17 m (register text), stands inside an allotment garden colony (KGA), not open to visitors; hard rule 10, kept as a lead only in case a path is found."
+  },
+  {
+   "register_id": 0,
+   "name": "Remaining single-tree register entries with a street address, 2026-11-09 sweep",
+   "place": "Vienna, 11 to 23 districts",
+   "why_not_yet": "[verify pass 2026-11-09] About 255 unmined single-tree entries are address points (Gasse, Strasse nr.) in the outer districts (13, 14, 19, 23) with no park named; the Vienna register protects trees in private gardens, parish and school grounds, so each needs a public-ground check (Baumkataster presence is a hint: it holds city-managed public trees only). Only the Prater entries (ND 867, 868 delivered; 714, 430, 159 here) named a public recreation area. Method for the next pass: fetch each outer-district Wikipedia list as wikitext, then test Baumkataster BBOX within 15 m, and keep those with a record of the same genus."
   }
  ],
  "blocked": [
