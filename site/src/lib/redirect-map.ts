@@ -62,6 +62,9 @@ const RENAMED_CITY_SLUGS: [string, string][] = [
 // A tree that gets renamed keeps its old URL resolving.
 // Mirrors RENAMED_TREE_SLUGS, build_site.py:5276.
 const RENAMED_TREE_SLUGS: [string, string, string][] = [
+  // bcn_061 (2026-11-09): "Historic" added, a local expert pointed out the
+  // name could be read as the current botanical garden next door.
+  ["barcelona", "the-olive-of-the-botanical-garden-gate", "bcn_061"],
   // cat_001 (2026-10-23): a link posted on r/sicily with "the-" in the slug,
   // our own typo in the thread; the comment was fixed, early clicks were not.
   ["catania", "the-moreton-bay-fig-of-villa-bellini", "cat_001"],
