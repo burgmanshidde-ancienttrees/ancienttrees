@@ -15,6 +15,8 @@
 
 **App, in the next build (42):** the ambassador row on Discover opens again. On build 41 a tap reached the button and the sheet was asked for, but iOS never showed it: Discover's outer LazyVStack had thrown the row away and rebuilt it. Logged on Hidde's iPhone, confirmed fixed there with a VStack ("hij doet t nu wel"). Build 41 in the store still has the bug.
 
+**Same pattern elsewhere:** a scan of every sheet in the app found one more, the share row on Find people; its three sheets now hang on the list, not the row (simulator: the row opens its sheet). The scan reads code only and looks for this one pattern.
+
 **Testing gap:** no simulator walk showed it (Debug and Release, real test account, moving GPS, reopening). The earlier "confirmed on build 41" closure of 2026-11-09 was too early.
 
 ## 2026-11-09 session: the Mozart-Platane leads with Hannah Mayr's photograph

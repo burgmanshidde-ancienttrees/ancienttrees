@@ -239,23 +239,6 @@ struct PeopleView: View {
                     .accessibilityIdentifier("people-share")
                     // No rule between the field and the first row.
                     .listRowSeparator(.hidden, edges: .top)
-                    .sheet(isPresented: $askingPublic) {
-                        BrandSheet(
-                            icon: "globe.europe.africa",
-                            title: "Make your profile public?",
-                            message: "Anyone can then open it, with or without an account.",
-                            points: ["Your name and picture",
-                                     "The trees you collected and want to visit",
-                                     "Your badges"],
-                            buttons: [
-                                .primary("Make public", id: "public-yes") { makePublic(uid, then: url) },
-                                .quiet("Not now", id: "public-no") { askingPublic = false },
-                            ])
-                    }
-                    .sheet(item: $sharing) { item in
-                        ShareSheet(items: [Self.shareLine, item.url]).presentationDetents([.medium, .large])
-                    }
-                    .sheet(isPresented: $editingName) { ProfileEditor() }
                 }
                 if showsSuggestions {
                     // SUGGESTED (2026-11-04), the eyebrow the other grouped
@@ -290,6 +273,32 @@ struct PeopleView: View {
             // THE FIELD ON TOP (2026-11-04), as Strava's and AllTrails'
             // people search: drawn under the bar always, never at the foot.
             .modifier(SearchableWhen(on: source == .search, text: $query))
+            // ON THE LIST, NOT ON ITS ROW (2026-11-09): a list throws a row
+            // away when it scrolls off, and a sheet hung on a rebuilt row may
+            // never present on a real iPhone (Discover's ambassador row, build
+            // 41, Home.swift).
+            .sheet(isPresented: $askingPublic) {
+                if let uid = account.session?.userId {
+                    BrandSheet(
+                        icon: "globe.europe.africa",
+                        title: "Make your profile public?",
+                        message: "Anyone can then open it, with or without an account.",
+                        points: ["Your name and picture",
+                                 "The trees you collected and want to visit",
+                                 "Your badges"],
+                        buttons: [
+                            .primary("Make public", id: "public-yes") {
+                                makePublic(uid, then: Feed.base.appending(path: "profile")
+                                    .appending(queryItems: [URLQueryItem(name: "u", value: uid)]))
+                            },
+                            .quiet("Not now", id: "public-no") { askingPublic = false },
+                        ])
+                }
+            }
+            .sheet(item: $sharing) { item in
+                ShareSheet(items: [Self.shareLine, item.url]).presentationDetents([.medium, .large])
+            }
+            .sheet(isPresented: $editingName) { ProfileEditor() }
             // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10) for the
             // person menu, the reasons and the thanks. One sheet cannot hand
             // over to the next in the same frame, so the report waits for the
