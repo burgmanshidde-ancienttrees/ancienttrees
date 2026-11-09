@@ -2,7 +2,7 @@
 
 Hidde's bar of 2026-11-04: every ranked UK city at ten trees. This pass adds two elms and a
 yew to Brighton (bhm_007 to bhm_009), the Eastham Yew to Liverpool, the Bute Park Tulip
-Tree to Cardiff, and starts Windsor with the Signing Oak. Four more Cardiff trees from the same
+Tree to Cardiff, and starts Windsor with the Signing Oak and the Canadian Memorial Avenue pin oak. Four more Cardiff trees from the same
 verify pass went live with the night run of 2026-11-06. York, Stratford-upon-Avon and a further
 Windsor angle found nothing that ships (data/leads/, data/research/*-notes*).
 
@@ -30,7 +30,7 @@ SOURCES = {
     "brighton": ("brighton-verified-2.json", ["bhm_007", "bhm_008", "bhm_009"]),
     "liverpool": ("liverpool-verified.json", ["lvp_004"]),
     "cardiff": ("cardiff-verified.json", ["crd_010"]),
-    "windsor": ("windsor-verified.json", ["wsr_001"]),
+    "windsor": ("windsor-verified.json", ["wsr_001", "wsr_002"]),
 }
 PLACE_FIELDS = ["city", "country", "status", "intro", "meta_description", "question_meta",
                 "question_answer", "question_context", "hero_tree_id", "oldest_tree_id", "faq"]

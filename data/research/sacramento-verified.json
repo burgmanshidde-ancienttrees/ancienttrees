@@ -22,17 +22,18 @@
       "name": "NASA NSSDCA Moon Trees list",
       "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/sacramento_tree.html"
     },
-    "access": "Free. Capitol Park is open to the public daily; the tree stands on the lawn at the northeast corner of the Capitol building, by the security pavilion. Capitol Annex construction is under way nearby, so some paths may be fenced.",
+    "access": "Free. Capitol Park is open to the public daily; the tree stands on the lawn at the north-east corner of the Capitol, by the security pavilion. Capitol Annex construction is under way nearby, so some paths may be fenced.",
     "location_precision": "confirmed",
     "curation_status": "ai_generated",
-    "how_to_recognise": "A tall, narrow coast redwood on the lawn at the north-east corner of the Capitol, beside the security pavilion and behind the Sisters of Mercy sculpture; the only redwood there that is much taller than the rest.",
-    "verify_notes": "Coast redwood grown from a seed carried around the moon on Apollo 14 (1971, command module pilot Stuart Roosa, seeds from the US Forest Service). NASA NSSDCA: seeds collected near Soquel CA in 1966; seedling shipped 1976-04-02 from the Institute of Forest Genetics, Placerville; planted April 1976 (page gives April 20 with a question mark), about 2 ft tall then. NASA (page updated 2024-05-20): about 120 ft tall, canopy about 40 ft; says the Annex pavilion plans were designed to ensure the tree's safety. Waymarking (visitor, last visit 2021-09-26): 120 ft, canopy 40 ft, GPS 38.57698, -121.49297; NASA 38 34.616 N 121 29.581 W = 38.57693, -121.49302, within about 10 m of each other: published GPS positions, pin recorded as confirmed. State Capitol Museum tree guide (2016) p.8 lists the Moon Tree, a Coast Redwood, in Section 2 North (East). Life check: CBS Sacramento (2023, via search summary, article not fetched) reports Moon Tree and Civil War grove protected in place during the Capitol Annex project; NASA 2024 update describes it standing. No dated photo of the trunk itself seen (lifecheck.py: nothing within range; iNaturalist none). Flag: confirm the tree still stands after annex works. Sacramento's only Moon Tree, one of seven in California. height_m 37 from NASA's 120 ft. The Capitol Annex project threatened dozens of other Capitol Park trees (DGS estimate 20 to 30 affected, advocates up to 100).",
-    "photo_candidates": "none checked (no photo hunting)"
+    "how_to_recognise": "You can recognise it by its height, about 37 metres on a crown only 12 metres across. It stands on the lawn at the Capitol's north-east corner, beside the security pavilion and behind the Sisters of Mercy sculpture.",
+    "photo_candidates": "none checked (no photo hunting)",
+    "transport": "On foot in downtown Sacramento, at 10th and L Streets; bus and light rail routes not checked.",
+    "story": "This redwood went around the moon as a seed. In 1971 the command module pilot of Apollo 14 carried tree seeds supplied by the US Forest Service, and this one had been collected near Soquel in California in 1966.\n\nThe seedling was shipped from the Institute of Forest Genetics in Placerville on 2 April 1976 and planted that month in Capitol Park, about two feet tall. NASA's page gives the date as April 20, with a question mark, which is an honest thing to find on a NASA page. By NASA's 2024 update it was about 120 feet tall with a canopy of about 40.\n\nIt is Sacramento's only Moon Tree and one of seven in California. At fifty it is an infant by redwood standards, and the seed's journey is the reason to come.\n\nThe last few years have been nervy. The Capitol Annex project put dozens of the park's trees at risk, by official estimates 20 to 30 and by advocates' as many as 100. A 2023 news report said this one was protected in place, and NASA says the annex plans were designed to keep it safe. Our evidence that it still stands runs to 2024. If you visit, tell us."
   },
   {
     "id": "scm_002",
-    "name": "The Deodar Cedars of the Capitol's west front",
-    "species": "Deodar Cedar (Cedrus deodara)",
+    "name": "The Deodars of the Capitol's West Front",
+    "species": "Himalayan Cedar (Cedrus deodara)",
     "age_estimate": "planted 1872, over 150 years",
     "age_min": 150,
     "age_max": 154,
@@ -57,7 +58,8 @@
       "radius_m": 50
     },
     "curation_status": "flagged",
-    "how_to_recognise": "A row of ten tall, drooping-branched cedars on the lawn in front of the Capitol's west entrance; the largest of the ten is the state's largest deodar.",
-    "verify_notes": "State Capitol Museum tree guide (2016): ten Deodar Cedars line the west side of the Capitol; several are part of the Capitol's original twelve planted in 1872; one of the ten is the largest deodar in California (state champion; the guide takes champion data from the Cal Poly California Big Trees Registry). Which of the ten is the champion is not stated, so the pin is approximate and sits at the register champion coordinate (finding aid only, not cited), inside a 50 m radius of the west lawn. No girth or height recorded: the Cal Poly lead row's units are ambiguous (published in inches and feet, lead stores 625 and 31) and a Cal State Stanislaus figure (228 in circumference, 98 ft, seen only in a search summary) was not fetched. One official source (owner of the ground), flagged 'one source'. Life: iNaturalist observation 2026-10-15 near the register coordinate (https://www.inaturalist.org/observations/408579777), not proof it is the champion itself. Annex construction put dozens of Capitol Park trees at risk (DGS estimate 20 to 30 affected); no report of cedar removal found."
+    "how_to_recognise": "You can recognise them by the number, ten tall cedars with drooping branches in one line. They stand on the lawn in front of the Capitol's west entrance.",
+    "transport": "On foot in downtown Sacramento, along 10th Street between L and N; bus and light rail routes not checked.",
+    "story": "Somewhere in this row of ten stands the largest deodar in California, and the Capitol's own tree guide does not say which one. The State Capitol Museum's guide of 2016 gives the title to one of them, drawing on the California Big Trees Registry, and leaves you to work out the rest.\n\nThe guide also says that several of the ten belong to the Capitol's original twelve, planted in 1872. It does not say which several. That makes these trees, or some of them, more than 150 years old. Deodars are Himalayan cedars, a long way from home on a lawn in California's capital.\n\nThe row has had one recent scare. The Capitol Annex project put dozens of the park's trees at risk, 20 to 30 by the state's own estimate, though we have found no report of a cedar being removed. Someone photographed a deodar near the champion's registered position in October 2026, which suggests the row is intact without proving it.\n\nFor now they are best taken as a set, on the lawn at the west entrance. If you can tell us which is the champion, we would like to know."
   }
 ]

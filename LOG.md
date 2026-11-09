@@ -11,6 +11,15 @@
 
 <!-- archive-index -->
 
+## 2026-11-09, six source-led runs: 25 trees written and held for the app
+
+Written and waiting for the daily publish: Cleveland 5, Ann Arbor 3, Lansing 2 (East Lansing), Sacramento 2, Santa Cruz 2, ten churchyard yews in Surrey, Sussex and Hampshire, and a second Windsor tree (`python3 scripts/build_source_led_2026_11_09.py`; Windsor through build_uk_under_ten.py). Tested with city_names and preflight, 0 problems, reverted.
+
+Held: Detroit's two Elmwood Cemetery trees (no pin; tour maps are image-only PDFs), Kansas City's Vaile smoketree (cannot be told apart, access unclear). Reno, Boise and Des Moines gave nothing placeable. Long Beach's figs are already live as lax_016, marked hold.
+
+What paid: the Ancient Yew Group's find-a-yew table by county with its site-file PDFs (about 30 more 7 m+ leads with coordinates in data/research/southeast-england-yews-notes-2026-11-09.md). What did not: state champion lists alone; most rows are private land or carry no location. Transport lines on the UK yews give straight-line distances worked out from the pins, not sourced routes; US lines say routes were not checked. About 1.3M tokens, about 52k a tree.
+
+
 ## 2026-11-09, Manchester: one more pass, nothing that ships
 
 Manchester stays at 5 trees. Every Tree Register record for the area names the Woodland Trust's Ancient Tree Inventory as recorder, which is closed to us, and none is a Manchester park tree. manchester.gov.uk answers 403, so the council's rare-trees list keeps its one source and no coordinates. Rejects in data/leads/manchester.json. No further pass without someone opening the council pages in a real browser. About 119k tokens.

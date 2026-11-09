@@ -6,7 +6,6 @@
     "age_estimate": "roughly 1,500 years",
     "age_min": 1200,
     "age_max": 1800,
-    "girth_cm": 1628,
     "height_m": 83,
     "location": {
       "address": "Redwood Grove Loop Trail, stop 7, Henry Cowell Redwoods State Park, Felton, Santa Cruz County",
@@ -22,11 +21,12 @@
       "name": "California State Parks, Henry Cowell Redwoods Redwood Grove Loop Trail guide",
       "url": "https://www.parks.ca.gov/pages/546/files/HenryCowell_RedwoodGroveLoopTrail2013.pdf"
     },
-    "access": "Stop 7 on the signed Redwood Grove self-guided loop, a short flat walk from the park's Redwood Grove day-use area (Felton, about 10 km north of Santa Cruz). State park day-use fee applies; check parks.ca.gov for hours.",
+    "access": "Stop 7 on the signed Redwood Grove self-guided loop, a short flat walk from the Redwood Grove day-use area. State park day-use fee applies; check parks.ca.gov for hours.",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "how_to_recognise": "Stop 7 on the Redwood Grove loop, the biggest trunk in the grove, a few steps from the hollow Frémont Tree (stop 8).",
-    "verify_notes": "State Parks trail guide (owner of the ground): 'The Giant' grows to 270 ft (83 m) tall and over 17 ft (5 m) wide. girth_cm 1628 is that width read as a diameter times pi (518 cm x pi), not a measured girth. Age: the guide gives a mature redwood age of over 2,000 years in general; an iNaturalist caption (2026-08-13, observer's own text, https://www.inaturalist.org/observations/391565595) says roughly 1,500 years and about 277 ft; a search summary quoted State Parks as 1,200 to 1,600 years and 282 ft for the park's tallest redwood, not fetched, so the age range is a broad hedge, unverified. Life: dated iNaturalist observation 2026-08-13 geotagged at the tree. Pin is the observer's phone fix, a few metres from the Frémont Tree (stops 7 and 8 are consecutive); both approximate. Park became state park 1953 after Cowell family donated land; grove earlier Santa Cruz County Big Trees Park (guide stop 14). One official source plus one dated observation: flagged. photo candidate: the iNaturalist observation (cc-by) is the tree's own signed photo, not checked for licence terms beyond the API field."
+    "how_to_recognise": "You can recognise it by the width of the trunk, over five metres across. It stands at stop 7 on the signed Redwood Grove loop, a few steps before the hollow Fremont Tree at stop 8.",
+    "transport": "By car to Henry Cowell Redwoods State Park in Felton, about 10 km north of Santa Cruz; bus routes not checked.",
+    "story": "The Giant is 270 feet tall and more than 17 feet wide, and that is roughly all anyone official will say about it. Those two figures come from the California State Parks guide to the Redwood Grove loop, where it is stop 7. It stands in Felton, about 10 kilometres north of Santa Cruz.\n\nIts age is a harder question. A visitor's caption on a dated 2026 photograph says roughly 1,500 years and about 277 feet. The park guide offers only the general remark that a mature redwood can pass 2,000 years. A figure of 1,200 to 1,600 years has been attributed to State Parks for the tallest redwood in the park, though we have not seen the original. So a range of 1,200 to 1,800 is a hedge, and nobody we have found has dated this trunk.\n\nThe grove was Santa Cruz County Big Trees Park before the Cowell family's land gift made it a state park in 1953.\n\nThe loop is short and flat, and the hollow Fremont Tree is the very next stop. There is a day-use fee."
   },
   {
     "id": "scz_002",
@@ -52,7 +52,8 @@
     "access": "Stop 8 on the signed Redwood Grove self-guided loop; visitors can step inside the hollow base. State park day-use fee applies; check parks.ca.gov for hours.",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "how_to_recognise": "A burnt-out, hollow redwood on the loop trail whose base you can walk into, stop 8, just past The Giant.",
-    "verify_notes": "State Parks trail guide stop 8: General John C. Fremont reportedly spent the night in 1846 in this burnt-out hollow redwood; asked in 1888 if he ever slept in it, he answered 'It makes a great story, let it stand.' Guide calls it a still-living tree and says you can explore the inside. Story is reported, not proven. No girth, height or age published. Life: iNaturalist observations 2022-12-04, 2025-10-14 and 2026-08-13 at the tree (https://www.inaturalist.org/observations/391565560, .../321675826, .../143780397). The three phone fixes scatter about 100 m so the pin is approximate, set at their mean. One official source plus dated observations: flagged."
+    "how_to_recognise": "You can recognise it by the burnt-out, hollow base that you can step inside. It stands at stop 8 on the signed Redwood Grove loop, just past The Giant.",
+    "transport": "By car to Henry Cowell Redwoods State Park in Felton, about 10 km north of Santa Cruz; bus routes not checked.",
+    "story": "General John C. Fremont was asked in 1888 whether he had really slept inside this redwood, and he declined to spoil it. \"It makes a great story, let it stand,\" he said, according to the California State Parks guide to the Redwood Grove loop. So the claim that he spent a night here in 1846 remains exactly that, a good claim its own subject refused to confirm.\n\nThe tree does not need him. Fire hollowed out the base and it went on living. The park describes it as a still-living tree and invites you to explore the inside, so you can stand in the room that may or may not have housed a general. Dated observations from 2022, 2025 and 2026 show it still here.\n\nNo girth, height or age has been published for it. It is simply an old-growth redwood with a burnt heart and a better publicist than most. If you know its age, tell us.\n\nIt is stop 8 on the loop, in Henry Cowell Redwoods State Park at Felton, right after The Giant. There is a state park day-use fee."
   }
 ]
