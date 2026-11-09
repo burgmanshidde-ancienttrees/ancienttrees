@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.26 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.27 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -81,8 +81,8 @@ a reader arriving at either wants the same thing.
 | Title (≤60 chars) | `[Tree Name]: [Age] Year Old [Species] in [City]` |
 | Meta description (≤155) | Answer + hook: what it is, why it's remarkable, one click-reason |
 | H1 | Tree name (local name in parentheses if famous) |
-| Above the fold | The app's tree page (v1.21): the photograph full bleed with the map inset in its corner (single pin), then the name, the place, and one fact card: age and species (common name, as the app shows it; girth when measured, with species on its own row). The scientific name is carried by the story and the species page. Location, access and nearest station follow the story in the getting-there block. |
-| Body order | Story (150-250 words, unique) → getting there (address, recognition line, access, transport) → "Something's wrong" → "Trees nearby" (2-3 same-city trees, as photo cards) → Discover more (city, question page, species, park, country) → Open in the app as the primary action. Report and share sit above the photograph. |
+| Above the fold | The app's tree page (v1.21): the photograph full bleed with the map inset in its corner (single pin), then the name, the place, and one fact card: age and species (common name, as the app shows it; girth when measured, with species on its own row). The scientific name is carried by the story and the species page. Location and access follow the story in the getting-there block. |
+| Body order | Story (150-250 words, unique) → getting there (address, recognition line, access) → "Something's wrong" → "Trees nearby" (2-3 same-city trees, as photo cards) → Discover more (city, question page, species, park, country) → Open in the app as the primary action. Report and share sit above the photograph. |
 | Schema | TouristAttraction (name, description, geo lat/long, isAccessibleForFree) + BreadcrumbList |
 | Internal links (min) | 4 outgoing: city page, 2-3 nearby trees, city question page |
 
@@ -109,7 +109,7 @@ a reader arriving at either wants the same thing.
 | Meta description (≤155) | City hook + the strongest single tree as teaser |
 | H1 | Ancient Trees in [City] |
 | Intro | 60-100 words, unique per city: why THIS city's trees matter |
-| Body | The 10 trees, each: rank, name, species/age/neighbourhood line, story, access + transport, link to tree page → FAQ block (3-4 real questions incl. "What is the oldest tree in [City]?") → "Know a tree that belongs on this list?" + suggestion link |
+| Body | The 10 trees, each: rank, name, species/age/neighbourhood line, story, access, link to tree page → FAQ block (3-4 real questions incl. "What is the oldest tree in [City]?") → "Know a tree that belongs on this list?" + suggestion link |
 | Schema | ItemList (the 10 trees) + FAQPage + BreadcrumbList |
 | Internal links (min) | 12: all 10 tree pages, question page, 1+ collection page |
 | Ordering rule | List order is editorial. Votes are curation signal, never ranking. |
@@ -330,6 +330,7 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 
 ## CHANGELOG
 
+- **v1.27 (2026-11-09):** The nearest stop and walking time leave every page and app, approved by Hidde in session ("is dat uberhaupt echt de moeite om op te schrijven mensen gaan toch zelf wel in maps kijken", then "Ja, haal ze weg") after a Munich tree expert found both stops she checked wrong. The line was machine-written and outside verification, on 98 percent of trees. Take me there opens the route in a map app. `transport` stays in data/cities/ and is no longer shown; undo is two lines (TreeDetail.astro, app-feed.ts).
 - **v1.26 (2026-10-14):** Contract E (About) reopens in a narrow form on Hidde's instruction in session ("alleen hidde lijkt me genoeg", then "bouw"). He wrote the page himself after a tree expert answered our outreach that he could find nothing about who makes the site. First name, photograph (EXIF stripped) and the project address only; P5's Organization entity and the no-surname rule stand. qa's check_no_owner_name() allows the first name on /about and nowhere else.
 - **v1.25 (2026-10-04):** The noindex list's tree criterion (v1.23's data/noindex.json, group 4) asks whether a reader could FIND the tree rather than whether its pin is surveyed. Approved by Hidde in session ("voer dat door"), sitewide. A tree page stays indexed with a usable photograph, a confirmed pin, or a pin on a small named site (`location_site`, radius at most 50 m, a place taken in at one glance and never a park or campus) together with a recognition line. The rule lives once in scripts/findable.py, read by thin_pages.py and by preflight's refusal of new trees, so the index and the publishing gate cannot disagree.
 - **v1.24 (2026-10-01):** Contract A takes the per-tree Sources list back, approved by Hidde in session ("punt 1 klinkt als een goed idee") after Google's 09-28 demotion. v1.21 removed it as web-only noise on 09-24, four days before the drop. Google's own self-assessment asks whether content shows "clear sourcing", and its rater guidelines rate main content produced at scale with little visible effort lowest: the sources are the visible evidence that each story was checked against two independent sources. Rendered by the shared TreeDetail component, so every language gets it, below the getting-there block.

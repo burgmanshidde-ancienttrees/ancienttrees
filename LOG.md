@@ -21,6 +21,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-09, session: nearest stop and walking time off every page and app
+
+**Product:** the transport line is gone from tree pages in all languages and, through the feed, from every installed iOS and Android build. Take me there stays as the route. The data stays in data/cities/; undo is two lines. Blueprint v1.27 (Hidde: "Ja, haal ze weg").
+
 ## 2026-11-09, session: three Munich trees corrected after a local expert's review
 
 **Product:** the Krüner Eiche now says about 250 to 300 years (was about 600, against the 250 in a source we already cited), the Röth-Linde around 450 and a Nationalerbe tree since 14 October, the Englischer Garten beech 230 to 300 and no longer "older than the park". Stops corrected (Westpark, Westfriedhof, Studentenstadt), English and German, plus the Munich intro, FAQ and the oak collection note.

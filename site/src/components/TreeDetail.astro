@@ -408,15 +408,16 @@ const leadSeason = seasonal ? seasonOfMonth(photo?.taken_month, loc.latitude!, c
           2026-10-24: "the app section of getting there looks better, should
           we get that one in web as well?"). Four rows, icon left: the address,
           how to recognise it (its own row since today), access only when there
-          is something to meet (accessRow above), transport. A ticket stays
-          high in the facts card. */}
-      {(p.address || p.recognise || accessRow || p.transport) && (
+          is something to meet (accessRow above). A ticket stays high in the
+          facts card. No stop or walking time: nobody checked those lines, a
+          map app knows better (Hidde, 2026-11-09, after a Munich expert found
+          two of two wrong; v1.27). Take me there is the route. */}
+      {(p.address || p.recognise || accessRow) && (
         <section class="td-access td-section">
           <h2>{U.gettingThere}</h2>
           {p.address && <p><Fragment set:html={icon("map-pin")} /><span class="td-address">{p.address}</span></p>}
           {p.recognise && <p><Fragment set:html={icon("eye")} /><span class="which-one">{p.recognise}</span></p>}
           {accessRow && <p><Fragment set:html={icon("person-simple-walk")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.access}</span></p>}
-          {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}
         </section>
       )}
 

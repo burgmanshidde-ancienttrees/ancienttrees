@@ -74,7 +74,6 @@ One object per tree:
   "verified_sources": ["url1", "url2"],
   "official_register": {"name": "the authority's register", "url": "its page for THIS tree"},
   "access": "Free / paid entry / restricted, with days or hours where published",
-  "transport": "Nearest station or stop + walk time",
   "location_precision": "confirmed | approximate",
   "location_site": {"name": "only for a small named site", "radius_m": 30},
   "curation_status": "ai_generated | flagged",

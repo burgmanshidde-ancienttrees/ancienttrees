@@ -181,7 +181,10 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
         neighbourhood: loc.neighbourhood ?? null,
         access: t.access ?? null,
         ...(t.paid_entry ? { paid_entry: true } : {}),
-        transport: t.transport ?? null,
+        // Sent empty on purpose (Hidde, 2026-11-09, v1.27): the apps draw no
+        // transport row when it is null, so this one line takes it off every
+        // installed build. The data stays in data/cities/.
+        transport: null,
         precision: t.location_precision ?? null,
         best_time: t.best_time ?? null,
         // The season chip's key ("bloom", "autumn", ...), decided once on the
