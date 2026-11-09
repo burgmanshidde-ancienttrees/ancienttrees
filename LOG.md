@@ -11,6 +11,10 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 session: the Mozart-Platane leads with Hannah Mayr's photograph
+
+Vienna vie_005: her photograph (sent by mail, permission to use with her name) is the lead, GuentherZ's Commons photo moved to the strip. She has no account on the address we wrote to, so it is credited by name with `source: mail`, not linked as a contributor. The page counts as unique to us (`unique_photo()`). Her reply is drafted in drafts/reply-hannah-mayr-2026-11-09.md, waiting for his yes.
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-11](archive/LOG-2026-11.md)
