@@ -28,11 +28,8 @@
 // stay on the list. What drops off is a place that was never a city in the
 // first place.
 //
-// Nothing is hidden by this. A place below the line keeps its page, its map
-// pin, its search entry and its row on its country page, and /cities links to
-// every one of them in its own section, which is also what stops the five
-// places whose country has no country page from being orphaned (qa.py fails
-// the deploy on a page nothing links to).
+// A place below the line keeps its page, its map pin, its search entry and its
+// row on its country page. /cities no longer lists them (Hidde, 2026-11-09).
 import fs from "node:fs";
 import path from "node:path";
 import { DATA } from "./data-dir";
