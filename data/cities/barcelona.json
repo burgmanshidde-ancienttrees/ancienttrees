@@ -14,7 +14,7 @@
     },
     {
       "q": "Where is the best place to see old trees in Barcelona?",
-      "a": "The Jardi Botanic Historic on Montjuic, where all four of the city's officially monumental trees grow together in a single ravine, the Sot de l'Estany."
+      "a": "The Jardi Botanic Historic on Montjuic, where all four of the city's officially monumental trees grow together in a single ravine, the Sot de l'Estany. The ravine has been closed to the public since landslides in July 2026, with reopening unconfirmed for January 2028."
     },
     {
       "q": "Are Barcelona's remarkable trees free to visit?",
@@ -221,7 +221,7 @@
         "Associació Amics del Jardí Botànic, by mail 2026-11-02",
         "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
+      "access": "Closed for now: the Sot de l'Estany, the old quarry pit where this tree stands, has been shut to the public since the landslides of July 2026 and awaits repairs, so you cannot walk to this tree at present. The Amics del Jardí Botànic expect it to reopen around January 2028, though that is not confirmed. The garden's other hollow, the Sot de la Masia, can be visited. Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": "https://ancienttrees.app/photos/bcn_005-the-wingnut-of-the-sot-de-l-estany-amics.jpg",
@@ -270,7 +270,7 @@
           "note": "Was the lead until 2026-11-03, moved to the strip when the Amics' own photograph arrived (unique_photo() reads the lead only)."
         }
       ],
-      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02). 2026-11-03: pin moved 62 m to the city register's coordinate for no. 99400637930 ('Sector de l'estany'), beside the other three tall trees; the OSM node it stood on put it toward the Sot de la Masia. Still approximate.",
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02). 2026-11-03: pin moved 62 m to the city register's coordinate for no. 99400637930 ('Sector de l'estany'), beside the other three tall trees; the OSM node it stood on put it toward the Sot de la Masia. Still approximate. 2026-11-09: the Amics del Jardí Botànic wrote by mail that the Sot de l'Estany is closed to the public after the July landslides, pending works, reopening unconfirmed for January 2028; the Sot de la Masia stays open. They named this tree. Remove the closure sentences from access when it reopens.",
       "pin_source": {
         "kind": "register",
         "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
@@ -301,7 +301,7 @@
         "Associació Amics del Jardí Botànic, by mail 2026-11-02",
         "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
+      "access": "Closed for now: the Sot de l'Estany, the old quarry pit where this tree stands, has been shut to the public since the landslides of July 2026 and awaits repairs, so you cannot walk to this tree at present. The Amics del Jardí Botànic expect it to reopen around January 2028, though that is not confirmed. The garden's other hollow, the Sot de la Masia, can be visited. Free entry to the Jardí Botànic Històric, open daily 10:00 to 17:00 (Nov to Jan), to 18:00 (Feb, Mar), to 19:00 (Apr, May, Sep, Oct), to 20:00 (Jun to Aug), last entry half an hour before closing; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The museum's page carried a notice that the garden was closed for maintenance and rain-damage checks, so check before you go. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": "https://ancienttrees.app/photos/bcn_006-the-green-ash-of-the-sot-de-l-estany-amics.jpg",
@@ -326,7 +326,7 @@
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455008"
       },
       "height_m": 32,
-      "verify_notes": "2026-11-01: a local expert's mail (the garden's friends' association) says the four Sot de l'Estany trees are Barcelona's four tallest, over 33 m; quoted as their account. Height in the story corrected from 'past 24 m' to the register's 32 m. 2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02).",
+      "verify_notes": "2026-11-01: a local expert's mail (the garden's friends' association) says the four Sot de l'Estany trees are Barcelona's four tallest, over 33 m; quoted as their account. Height in the story corrected from 'past 24 m' to the register's 32 m. 2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02). 2026-11-09: the Amics del Jardí Botànic wrote by mail that the Sot de l'Estany is closed to the public after the July landslides, pending works, reopening unconfirmed for January 2028; the Sot de la Masia stays open. They named this tree. Remove the closure sentences from access when it reopens.",
       "photos": [
         {
           "url": "https://ancienttrees.app/photos/bcn_006-the-green-ash-of-the-sot-de-l-estany-with-wingnut.jpg",
@@ -1003,7 +1003,7 @@
         "Associació Amics del Jardí Botànic, by mail 2026-11-02",
         "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
+      "access": "Closed for now: the Sot de l'Estany, the old quarry pit where this tree stands, has been shut to the public since the landslides of July 2026 and awaits repairs, so you cannot walk to this tree at present. The Amics del Jardí Botànic expect it to reopen around January 2028, though that is not confirmed. The garden's other hollow, the Sot de la Masia, can be visited. Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": "https://ancienttrees.app/photos/bcn_021-the-ash-of-the-sot-de-l-estany.jpg",
@@ -1034,7 +1034,7 @@
         "date": "2026-10-09",
         "moved_m": 18
       },
-      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02). 2026-11-09: the Amics del Jardí Botànic wrote by mail that the Sot de l'Estany is closed to the public after the July landslides, pending works, reopening unconfirmed for January 2028; the Sot de la Masia stays open. They named this tree. Remove the closure sentences from access when it reopens."
     },
     {
       "id": "bcn_022",
@@ -1066,7 +1066,7 @@
         "Associació Amics del Jardí Botànic, by mail 2026-11-02",
         "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
+      "access": "Closed for now: the Sot de l'Estany, the old quarry pit where this tree stands, has been shut to the public since the landslides of July 2026 and awaits repairs, so you cannot walk to this tree at present. The Amics del Jardí Botànic expect it to reopen around January 2028, though that is not confirmed. The garden's other hollow, the Sot de la Masia, can be visited. Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": "https://ancienttrees.app/photos/bcn_022-the-sycamore-of-the-sot-de-l-estany.jpg",
@@ -1097,7 +1097,7 @@
         "date": "2026-10-09",
         "moved_m": 22
       },
-      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02). 2026-11-09: the Amics del Jardí Botànic wrote by mail that the Sot de l'Estany is closed to the public after the July landslides, pending works, reopening unconfirmed for January 2028; the Sot de la Masia stays open. They named this tree. Remove the closure sentences from access when it reopens."
     },
     {
       "id": "bcn_023",
@@ -2422,7 +2422,7 @@
         "Associació Amics del Jardí Botànic, by mail 2026-11-02",
         "Jardí Botànic Històric, jardí amagat (Àrea Metropolitana de Barcelona, 2009) and Itinerari botànic del Jardí Botànic Històric (AMB, Jardí Botànic de Barcelona and Amics del Jardí Botànic, 2017), both sent by the Amics on 2026-11-02"
       ],
-      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
+      "access": "Closed for now: the Sot de l'Estany, the old quarry pit where this tree stands, has been shut to the public since the landslides of July 2026 and awaits repairs, so you cannot walk to this tree at present. The Amics del Jardí Botànic expect it to reopen around January 2028, though that is not confirmed. The garden's other hollow, the Sot de la Masia, can be visited. Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec. The Amics del Jardí Botànic give a free guided walk of the garden on the first Sunday of every month at 12:00, by the association's own account.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": "https://ancienttrees.app/photos/bcn_055-the-hornbeam-of-the-sot-de-l-estany.jpg",
@@ -2454,7 +2454,7 @@
         "date": "2026-10-09",
         "moved_m": 1
       },
-      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02)."
+      "verify_notes": "2026-11-03: paid_entry corrected to false, the museum's own hours page reads 'Entrada gratuita'; access line gained the Amics' first-Sunday guided walk (their mail of 2026-11-02). 2026-11-09: the Amics del Jardí Botànic wrote by mail that the Sot de l'Estany is closed to the public after the July landslides, pending works, reopening unconfirmed for January 2028; the Sot de la Masia stays open. They named four trees; this hornbeam stands in the same Sot, so the closure holds for it too. Remove the closure sentences from access when it reopens."
     },
     {
       "id": "bcn_059",
