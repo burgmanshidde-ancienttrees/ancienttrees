@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 Six empty top-60 US cities: 22 trees written and held in the builder
+
+22 trees verified and written, nothing published yet: Cincinnati 8 (all Spring Grove champions), St. Louis 6 (Tower Grove Park, Bellefontaine, Missouri Botanical Garden, 2 of 6 ticketed), Indianapolis +3 to 4 (Temple Oak, Nowland Oak, Statehouse Moon Tree), Lexington, Kentucky 2, Huntsville, Alabama 2, Birmingham, Alabama 1. The bar of ten was not reached anywhere: supply ran out and nothing was padded. Slugs carry the state where the name is shared (birmingham-alabama, huntsville-alabama, lexington-kentucky). `python3 scripts/build_us_empty_cities.py` puts them in data/cities (`--only` for a slice); then city_names.py, preflight.py. Tested on main: preflight 0 problems, no new shared crown, test files reverted.
+
+Negatives: Birmingham has no named old trees online beyond the hawthorn (Bham Now says as much); Lexington's famous bur oaks are dead; Crown Hill's and Lexington Cemetery's tree-map PDFs were read by OCR and hold species walks, no sizes. Bellefontaine's elm (stl_001) was last reported standing in February 2025, and its story says so. Huntsville's Hays pins are preserve-level. About 1.21M tokens, 55k a tree.
+
+
 ## 2026-11-09, UK under ten: six more trees written and held, one verified file rescued
 
 Six trees verified on 11-04 are written and wait for the daily publish (app only): Brighton's Tabletop Elm, Den Haag Elm and Patcham Peace Yew, the Eastham Yew for Liverpool, the Nursery Lawn Tulip Tree in Cardiff, and the Signing Oak as Windsor's first tree. `python3 scripts/build_uk_under_ten.py`, tested with city_names and preflight (0 problems), reverted. Four more Cardiff trees from the same verify pass went live with the 11-06 night run.
