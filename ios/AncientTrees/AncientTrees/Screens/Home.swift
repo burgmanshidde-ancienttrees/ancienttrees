@@ -237,7 +237,12 @@ struct HomeView: View {
     var body: some View {
         ScrollViewReader { proxy in
         ScrollView {
-            LazyVStack(alignment: .leading, spacing: 30) {
+            // NOT LAZY (Hidde, 2026-11-09, build 41: the ambassador row did
+            // nothing). On a real iPhone a LazyVStack threw the row away and
+            // rebuilt it, and its .sheet then never presented: logged on his
+            // phone, signingIn went true and nothing appeared. No simulator
+            // showed it. The shelves inside are lazy themselves.
+            VStack(alignment: .leading, spacing: 30) {
                 seasonHero.id("discover-top")
                 shelves
                 growingCard
