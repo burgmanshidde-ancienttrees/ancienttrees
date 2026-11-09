@@ -11,6 +11,16 @@
 
 <!-- archive-index -->
 
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-11](archive/LOG-2026-11.md)
+- [2026-10](archive/LOG-2026-10.md)
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
 ## 2026-11-09 daily publish (scheduled task): 25 trees into the app
 
 - **What went on main (c6b78d493), app only under APP FIRST, no web page or place page:** Cincinnati 8, St. Louis 6, Indianapolis +3 (ind_002 to 004), Lexington (Kentucky) 2, Huntsville (Alabama) 2, Birmingham (Alabama) 1, Brighton +3 (bhm_007 to 009). None has a photograph yet. Preflight 0 problems; the 25 is this task's own limit, the pace counts nothing while APP FIRST holds. Done from a worktree on the newest main, because the shared checkout was 62 commits behind.
@@ -102,7 +112,6 @@ Vienna vie_005: her photograph (sent by mail, permission to use with her name) i
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
 ## 2026-11-09, session: nearest stop and walking time off every page and app
 
 **Product:** the transport line is gone from tree pages in all languages and, through the feed, from every installed iOS and Android build. Take me there stays as the route. The data stays in data/cities/; undo is two lines. Blueprint v1.27 (Hidde: "Ja, haal ze weg").
