@@ -2,15 +2,15 @@
   "city": "Munich",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Munich protects its remarkable trees by law and number: a 2021 city ordinance registers 117 Naturdenkmäler covering 200 trees, each legally protected the way a listed building would be. That bureaucratic precision sits oddly with their origins: planted by a royal count's landscape garden, grown wild in a monastery orchard, set in the ground by twelve thousand schoolchildren celebrating a war's end. Two of the trees below carry rival claims to being the city's single oldest tree, and neither is settled. Munich has not tried to force the point.",
-  "meta_description": "Munich protects 200 trees by city ordinance. Meet a 600-year-old oak, a hollow linden painted by an artist, and eight rare hackberries on a ring road.",
-  "question_answer": "Munich has no single agreed oldest tree: two different trees carry the claim from different sources. The Krüner Eiche, a pedunculate oak in Sendling-Westpark, is cited by a district citizen assembly as roughly 600 years old, which would date it to the 1420s. The Röth-Linde in Moosach, a winter linden, is separately described by local press as the city's oldest tree at 300 to 350 years. The two claims have never been reconciled against each other. Just outside the city, the Edigna Lime of Puch near Fürstenfeldbruck is older than either, with estimates running from 500 to 1,200 years.",
-  "question_meta": "Munich has two rival claims to its oldest tree, a 600-year-old oak and a 300-plus-year-old linden. Both, and the city's other protected trees, explained.",
-  "question_context": "Munich's own tally is the most precise starting point any city on this list has offered: a 2021 ordinance names 117 protected Naturdenkmäler covering 200 individual trees across the city, each with a case made for rarity, size, beauty or historical association. Age is a different matter. Ring counts require felling a tree, so every age here comes from growth models, historical association or simple local reputation, not a verified count. The Krüner Eiche's roughly 600-year figure comes from a 2017 Sendling-Westpark district citizen assembly document arguing for the oak's preservation; the Röth-Linde's 300 to 350 year figure, and its billing as Munich's oldest tree, comes from a dedicated local news feature and the tree's own German Wikipedia page. Both are treated here as the honest, sourced claims they are rather than resolved into one winner. The Krüner Eiche stands at Krüner Platz in Sendling-Westpark, an eight minute walk from Harras U-Bahn station.",
+  "intro": "Munich protects its remarkable trees by law and number: a 2021 city ordinance registers 117 Naturdenkmäler covering 200 trees, each legally protected the way a listed building would be. That bureaucratic precision sits oddly with their origins: planted by a royal count's landscape garden, grown wild in a monastery orchard, set in the ground by twelve thousand schoolchildren celebrating a war's end. The oldest of them is the Röth-Linde, around 450 years old by the city's estimate and since October 2026 one of Germany's national heritage trees.",
+  "meta_description": "Munich protects 200 trees by city ordinance. Meet a hollow linden of around 450 years, painted by an artist, and eight rare hackberries on a ring road.",
+  "question_answer": "The Röth-Linde in Moosach, a winter linden, is the strongest claim inside the city: Munich estimates it at around 450 years, and it was named a Nationalerbe tree in October 2026. The Krüner Eiche in Sendling-Westpark has been called 600 years old, in a 2017 district paper, but a tree register lists it at about 250 years and a local specialist puts it at 300 at most. Just outside the city, the Edigna Lime of Puch near Fürstenfeldbruck is older than either, with estimates running from 500 to 1,200 years.",
+  "question_meta": "Munich's oldest tree is most likely the Röth-Linde, at around 450 years. Why a 600-year-old oak probably is not, and the city's other protected trees.",
+  "question_context": "Munich's own tally is the most precise starting point any city on this list has offered: a 2021 ordinance names 117 protected Naturdenkmäler covering 200 individual trees across the city, each with a case made for rarity, size, beauty or historical association. Age is a different matter. Ring counts require felling a tree, so every age here comes from growth models, historical association or simple local reputation, not a verified count. The Röth-Linde's figure of around 450 years comes from the city itself. The Krüner Eiche's roughly 600-year figure comes from a 2017 district citizen assembly paper, against about 250 years in a tree register. Older sources, including local press and a city booklet, gave the linden 300 to 350 years; specialists now place it between 400 and 500. An unconfirmed tradition separately gives the oak a planting year of 1436, and someone who works on tree protection in Munich puts it at 300 years at most. The Krüner Eiche stands at Krüner Platz in Sendling-Westpark, about five minutes on foot from Westpark U-Bahn station.",
   "faq": [
     {
       "q": "What is the oldest tree in Munich?",
-      "a": "Two trees claim the title from different sources: the roughly 600-year-old Krüner Eiche oak in Sendling-Westpark, and the 300 to 350-year-old Röth-Linde in Moosach, separately called the city's oldest tree by local press. Neither claim has been checked against the other."
+      "a": "Most likely the Röth-Linde in Moosach, a winter linden of around 450 years by the city's estimate and a Nationalerbe tree since October 2026. The Krüner Eiche in Sendling-Westpark has been called 600 years old, but a tree register lists it at about 250."
     },
     {
       "q": "How does Munich protect its old and remarkable trees?",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Where is the best place to see protected trees in Munich?",
-      "a": "The Englischer Garten holds three trees on this list within a short walk of each other: the oldest known elms in the city, a beech over 300 years old, and a rare fern-leaved beech cultivar, all in the park's southern half near the Chinese Tower."
+      "a": "The Englischer Garten holds several trees on this list: the oldest known elms in the city and a rare fern-leaved beech cultivar near the Chinese Tower, and a protected beech of 230 to 300 years further north."
     },
     {
       "q": "Are Munich's remarkable trees free to see?",
@@ -30,9 +30,9 @@
       "id": "muc_001",
       "name": "The Röth-Linde",
       "species": "Small-leaved Lime (Tilia cordata)",
-      "age_estimate": "300-350 years",
-      "age_min": 300,
-      "age_max": 350,
+      "age_estimate": "around 450 years, by the city's estimate",
+      "age_min": 390,
+      "age_max": 500,
       "best_time": {
         "months": [
           6,
@@ -46,14 +46,15 @@
         "longitude": 11.51533,
         "neighbourhood": "Nederling, Moosach"
       },
-      "story": "A painter made this tree famous by sitting under it, and the tree has been fighting for its life ever since. Local tradition holds that the linden was planted as a peace tree after the Thirty Years' War ended in 1648, which would put its planting in the mid-17th century, though like most trees on this list its exact age rests on estimate rather than a documented planting record. By the time landscape painter Philipp Röth worked in its shade around the turn of the 20th century, the tree was already reckoned to be some 200 years old, and it now carries his name and a memorial plaque. That long life has come at a cost. A botched fungal treatment in the 1980s left the trunk hollow, and the tree today stands on eight metal crown braces and a branch support, watered and pruned as what one local report calls an intensive-care patient. Winter lindens can live a thousand years under good conditions, which makes the Röth-Linde's current state, still leafing out every spring at 23 metres tall with a trunk over six metres around, as much a story about arboriculture as about age.",
+      "story": "A painter made this tree famous by sitting under it, and the tree has been fighting for its life ever since. On 14 October 2026 it was named a Nationalerbe tree, one of Germany's national heritage trees. The city of Munich puts it at around 450 years, specialists at 400 to 500, and someone who works on tree protection in Munich at 390 or more. Local tradition holds that it was planted as a peace tree after the Thirty Years' War ended in 1648, which would make it younger than those estimates, and no planting record exists to settle it. Landscape painter Philipp Röth worked in its shade around the turn of the 20th century, and it now carries his name and a memorial plaque. That long life has come at a cost. A botched fungal treatment in the 1980s left the trunk hollow, and the tree today stands on eight metal crown braces and a branch support, watered and pruned as what one local report calls an intensive-care patient. Still it leafs out every spring, 23 metres tall, with a trunk measured at 6.45 metres round in January 2026.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/R%C3%B6th-Linde",
         "https://www.hallo-muenchen.de/hallo-serie/muenchen-aelteste-serie-aeltester-baum-roeth-linde-naturdenkmal-moosach-westfriedhof-winterlinde-91815229.html",
-        "https://de.wikipedia.org/wiki/R%C3%B6th-Linde (Stammumfang 6,24 m, Hoehe 23 m; secondary source, no authority page found)"
+        "https://de.wikipedia.org/wiki/R%C3%B6th-Linde (Stammumfang 6,24 m, Hoehe 23 m; secondary source, no authority page found)",
+        "https://www.muenchen.de/sehenswuerdigkeiten/roeth-linde-muenchen (about 450 years, 400 to 500 by specialists; 6.45 m girth, January 2026; Nationalerbe tree since 14 October 2026)"
       ],
       "access": "Free, public land, viewable from outside Gut Nederling",
-      "transport": "10 min walk from Nederlinger Straße bus stop or Moosach S-Bahn station",
+      "transport": "U1 to Westfriedhof, then west along Baldurstraße to Gut Nederling",
       "photo": {
         "url": "https://stadtgeschichte-muenchen.de/fotoarchiv/2020/04/200424_191406_6.jpg",
         "license": "Used with permission from Stadtgeschichte München (Gerhard Willhalm); credit required",
@@ -73,7 +74,7 @@
         "name": "Naturdenkmale Bayern (LfU Bayern), no. ND-01985",
         "url": null
       },
-      "girth_cm": 624,
+      "girth_cm": 645,
       "height_m": 23,
       "photos": [
         {
@@ -85,22 +86,24 @@
           "height": 262,
           "taken_month": 8
         }
-      ]
+      ],
+      "age_basis": "source",
+      "verify_notes": "Corrected 2026-11-09 after a review by someone who works on tree protection in Munich (by mail; never named). Age was 300-350 from an older city booklet and local press; the city now says about 450 (400 to 500), the reviewer at least 390. Nationalerbe status added. Transport from the city's page."
     },
     {
       "id": "muc_002",
       "name": "The Krüner Eiche",
       "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "approximately 600 years",
-      "age_min": 550,
-      "age_max": 600,
+      "age_estimate": "about 250 to 300 years, though it has been called 600",
+      "age_min": 250,
+      "age_max": 300,
       "location": {
         "address": "Krüner Platz, Sendling-Westpark, 81373 München",
         "latitude": 48.11833,
         "longitude": 11.51306,
         "neighbourhood": "Sendling-Westpark"
       },
-      "story": "This oak has outlasted the village it once stood outside, the Bavarian duchy that once ruled the land, and most of its own major branches. A 2017 recommendation from the Sendling-Westpark district's citizen assembly, arguing for the tree's protection and continued care, dates it at roughly 600 years old, which would put its origins in the 1420s, a period when Munich was still ruled directly by Wittelsbach dukes and when Duke Albrecht III married in the city in 1436. No source directly connects the tree's planting to that or any specific historical event, so any such link stays unclaimed here. What is documented is more recent damage: three major limbs have been removed over the years and a fourth broke off on its own, thinning a crown that once spread wide with the snake-like, twisting branch pattern typical of very old pedunculate oaks. A new protective fence went up around the trunk in July 2022 to keep the compacted soil at the roots from getting worse. The tree still stands at the eastern corner of the small park that carries its name, a six-century survivor now fenced off from the joggers and dog walkers who pass it daily.",
+      "story": "This oak has been called 600 years old, and it is probably less than half that. An unconfirmed tradition gives 1436 as its planting year, for the wedding of Duke Albrecht III, and in 2017 the district's citizen assembly argued for saving what it called a 600-year-old oak. The tree register at baumkunde.de lists it at about 250 years, and someone who works on tree protection in Munich puts it at 300 at most. So the ducal wedding stays a story. What the oak does carry is the record of a long and damaged life. Three large limbs were removed over the years and a fourth broke away on its own, thinning a crown of twisting, snake-like branches. When the register last recorded it, in the summer of 2022, it was still vital, 23 metres tall with a trunk 4.85 metres round, and a new fence had just gone up beside the trunk. It stands at the eastern side of the small park on Krüner Platz and is protected as a natural monument. The setting has changed a good deal since that record, we are told, so it may look different from older photographs.",
       "best_time": {
         "months": [
           9,
@@ -115,7 +118,7 @@
         "https://www.baumkunde.de/baumregister/2910-stiel_eiche_am_kruener_platz_in_muenchen/ (girth measured 14.12.2020, height 23 m)"
       ],
       "access": "Free, public park",
-      "transport": "8 min walk from Harras U-Bahn station (U3, U6)",
+      "transport": "About 5 min walk from Westpark U-Bahn station (U6)",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Stieleiche-Sendling-Westpark-1.jpg",
         "license": "CC BY-SA 4.0",
@@ -134,7 +137,9 @@
         "url": null
       },
       "girth_cm": 485,
-      "height_m": 23
+      "height_m": 23,
+      "age_basis": "source",
+      "verify_notes": "Corrected 2026-11-09 after a review by someone who works on tree protection in Munich (by mail; never named). Age was about 600 from a 2017 district assembly paper, though baumkunde.de (already cited) lists 250; the reviewer says 300 at most. Harras was about 1.7 km away and has no U3; Westpark is about 270 m by the station's Wikipedia coordinates. The reviewer says the setting has changed fundamentally but not how, so present-day description of the surroundings is taken out."
     },
     {
       "id": "muc_003",
@@ -199,15 +204,15 @@
       "id": "muc_004",
       "name": "The Beech of the Englischer Garten",
       "species": "European Beech (Fagus sylvatica)",
-      "age_estimate": "over 300 years",
-      "age_min": 300,
-      "age_max": 340,
+      "age_estimate": "between about 230 and 300 years",
+      "age_min": 230,
+      "age_max": 300,
       "best_time": {
         "months": [
           10,
           11
         ],
-        "label": "late October, when its leaves turn copper, older than the park Count Rumford built around it"
+        "label": "late October, when its leaves turn copper"
       },
       "location": {
         "address": "Englischer Garten, near Forstweg, Schwabing-Freimann, 80802 München",
@@ -215,13 +220,13 @@
         "longitude": 11.61528,
         "neighbourhood": "Schwabing-Freimann"
       },
-      "story": "This beech was already old when the park around it was new. The Englischer Garten was laid out from 1789 on the orders of Elector Karl Theodor, designed by the American-born Sir Benjamin Thompson, Count Rumford, as one of the first public parks on the European continent, open to everyone rather than reserved for a court. Most of what grows in the park today dates from that design and its later 19th century expansion, but this beech, standing between the Forstweg and Friedrich-Ludwig-von-Sckell-Weg paths near the park's second riding trail, predates the whole project, described in Munich's own natural monument register as over 300 years old and the outstanding tree of its immediate surroundings. That would put its origins in the very early 18th century or before, decades ahead of Rumford's landscaping crews, meaning the park's designers either built around an existing tree or the beech simply outgrew whatever else stood nearby before them. No individual measurement or precise felling-based age exists for it, so the three-century figure is treated here as the registered estimate it is rather than a settled fact.",
+      "story": "Nobody can say whether this beech was here before the park or was planted for it. The Englischer Garten was laid out from 1789 on the orders of Elector Karl Theodor, designed by the American-born Sir Benjamin Thompson, Count Rumford, as one of the first public parks on the European continent, open to everyone rather than reserved for a court. Munich's list of natural monuments calls this beech over 300 years old and the outstanding tree of its surroundings, which would make it older than the park. The tree register at baumkunde.de also gives about 230 years, and someone who works on tree protection in Munich puts it at 300 at most, with the possibility that it went in for the park's opening in 1792. If so, it is one of the first trees of the garden itself. It stands in the quiet northern part of the park, alone in a grass clearing between the Forstweg and the Friedrich-Ludwig-von-Sckell-Weg, near the second riding trail. It is not easy to find, so follow the map pin.",
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/7176-rotbuche_im_englischen_garten/",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen"
       ],
       "access": "Free, public park",
-      "transport": "15 min walk from Universität U-Bahn station, or bus to Nationalmuseum/Haus der Kunst",
+      "transport": "About 25 min walk from Studentenstadt U-Bahn station (U6); follow the map pin",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Naturdenkmal_Rotbuche_Englischer_Garten_M%C3%BCnchen.jpg",
         "license": "CC BY-SA 4.0",
@@ -234,7 +239,9 @@
       "curation_status": "flagged",
       "notes": "Age given only as 'over 300 years' in the city's own Naturdenkmal register (via baumkunde.de and the Wikipedia list drawing on it); no more precise figure or measurement found. Pin corrected 2026-07-27, about 1.6km, using that same Wikipedia list's per-tree coordinates (see muc_002 for the cross-check that validated this table). Photo found and approved 2026-07-28: file titled \"Naturdenkmal Rotbuche Englischer Garten München\", the photographer's own title naming this as the specific protected specimen rather than any beech in the park. Viewed directly: a single tall, mature beech standing alone in an open grass clearing, bare in winter, consistent with the Englischer Garten's open meadow sections.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the beech that predates the park itself by decades, standing between the Forstweg and Friedrich-Ludwig-von-Sckell-Weg paths near the second riding trail. It stands in the Englischer Garten."
+      "how_to_recognise": "You can recognise it as a single tall beech alone in a grass clearing, between the Forstweg and Friedrich-Ludwig-von-Sckell-Weg paths near the second riding trail. It stands in the northern Englischer Garten.",
+      "age_basis": "source",
+      "verify_notes": "Corrected 2026-11-09 after a review by someone who works on tree protection in Munich (by mail; never named). Age was 300-340, and the story said it predates the park. The city's list says over 300, baumkunde.de both over 300 and about 230, the reviewer 300 at most, possibly planted for the park's opening in 1792. Universität was about 2.4 km away; Studentenstadt is about 1.4 km by the station's Wikipedia coordinates. Pin is about 35 m from baumkunde.de's coordinates."
     },
     {
       "id": "muc_005",

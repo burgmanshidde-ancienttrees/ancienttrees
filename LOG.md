@@ -21,6 +21,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-09, session: three Munich trees corrected after a local expert's review
+
+**Product:** the Krüner Eiche now says about 250 to 300 years (was about 600, against the 250 in a source we already cited), the Röth-Linde around 450 and a Nationalerbe tree since 14 October, the Englischer Garten beech 230 to 300 and no longer "older than the park". Stops corrected (Westpark, Westfriedhof, Studentenstadt), English and German, plus the Munich intro, FAQ and the oak collection note.
+
+**Found:** the transport lines are outside verification and two of two checked were wrong; 98% of trees carry one. Hidde is weighing whether to keep them at all (SEO_GEO_BLUEPRINT.md names transport in the page body, so that is his edit). No platform error rate has been measured.
+
 ## 2026-11-08 session: Android, first working slice
 
 - **New in `android/`:** native Kotlin and Compose app on MapLibre. Reads the same feeds as the iPhone with the iPhone's bundled catalogue as floor (read from ios/.../Data, no second copy); map with pins and dots under the Airbnb rule; a tapped tree's card, then its page with story, credit, Take me there, Getting there; strings in eight languages. New product dependency beyond AndroidX and Compose: only MapLibre. Images and JSON use what Android ships.
