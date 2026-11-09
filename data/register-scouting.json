@@ -425,8 +425,8 @@
   {
    "place": "Hallstatt",
    "country": "Austria",
-   "status": "stalled",
-   "note": "2026-11-09: fetched the Upper Austria Naturdenkmaeler dataset (https://www.doris.at/service/metadaten/daten/VWNaturdenkmaeler_ETRS89TM33N.zip, INSPIRE ProtectedSite GML, EPSG:3045, 446 features, polygons with a site name and a legal Bescheid date, no species, age or girth columns). It does hold tree-named sites around Hallstatt/Bad Goisern/Bad Ischl: Eibe (Taxus baccata) at Bad Goisern parish church (2006), Eibe 2.4 km south of Hallstatt centre (1991), Dorfeibe, Eibe (1960), Tausendjaehrige Linde, Sterzen's Abendsitz 7 Linden, 3 Linden, Sommerlinde in Bachgasse (Bad Ischl). Still to do before import: record the licence proving sentence in OPEN_DATA_SURVEY.md (data.europa.eu lists it as a High Value Dataset; confirm CC BY 4.0 on the DORIS page), convert polygon centroids from EPSG:3045 (northing, easting) to WGS84 (approximate pins), then a verify pass per tree for species, age and life check. Next: write scripts/import_ooe_naturdenkmaeler.py. Stalled only on the licence line and the importer.",
+   "status": "imported",
+   "note": "2026-11-09: Upper Austria Naturdenkmaeler (CC BY 4.0, 446 polygon sites, 349 tree-named) imported by scripts/import_ooe_naturdenkmaeler.py into data/registers/ooe-naturdenkmaeler.json, publish_dots False (centroids only, approximate). Coordinate conversion checked: the Hallstatt yew lands 0.1 km from the village centre and the Bad Goisern church yew within 100 m. Hallstatt already publishes the headline monuments (Hallstatt, Obertraun, Untersee, Bad Goisern yews, Gosau beech and elm, Bad Ischl lime) from the Naturschutzbuch, so the yield here is small; the file helps other Upper Austria places (Linz, Steyr, Wels) which are unmapped.",
    "covers": [
     "Hallstatt"
    ],
