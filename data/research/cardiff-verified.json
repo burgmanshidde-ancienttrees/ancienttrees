@@ -265,7 +265,7 @@
   },
   {
     "id": "crd_010",
-    "name": "Bute Park Tulip Tree, Nursery Lawn",
+    "name": "The Nursery Lawn Tulip Tree, Bute Park",
     "species": "Tulip Tree (Liriodendron tulipifera)",
     "age_estimate": "not documented",
     "age_basis": "derived",
@@ -285,12 +285,20 @@
       "name": "Bute Park tree table, Wales Champion 2023 (cardiffparks.org.uk, tag 2395, ref 806)",
       "url": "https://www.cardiffparks.org.uk/trees/bute/liriodendron-tulipifera1.php"
     },
-    "access": "Free, open public park (Bute Park, 7:30am to 5:30pm per bute-park.com).",
+    "access": "Free. Bute Park is an open public park, 7:30am to 5:30pm according to the park's own site.",
     "transport": "Cardiff Queen Street about 15 minutes on foot; Cardiff Central about 20 minutes.",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "how_to_recognise": "A 29 m tulip tree with pale grey criss-crossing bark and saddle-shaped leaves on the east side of the Nursery Lawn, about 25 m from the Sunken Lawn ginkgo (crd_007).",
-    "verify_notes": "Girth 468 cm, height 29 m (March 2022). Wales Champion 2023. The survey lists its position as Sunken Lawn north east in the table and 'east side of the Nursery Lawn' on the page; the grid puts it about 25 m south of the ginkgo crd_007, so these are the same neighbourhood. No age given. Single survey source (survey by Owen Johnson for the Tree Register, per park pages), flagged; bute-park.com confirms the park's champion collection generally but does not name this tree. Alive: iNaturalist observation 2026-09-25 near the pin (lifecheck RECENT). Page: leaves turn yellow and gold in autumn; flowers June and July. Pin: OS grid reference from the survey converted OSGB36 to WGS84 (Helmert, checked against car_001's earlier conversion); a survey grid reference is not placed on a crown, so approximate."
+    "how_to_recognise": "You can recognise it by the saddle-shaped leaves and pale grey criss-crossing bark, on a tree 29 metres tall. It stands on the east side of the Nursery Lawn, about 25 metres south of the champion ginkgo.",
+    "story": "Two record trees stand about 25 metres apart beside Bute Park's Sunken Lawn. One is Glamorgan's champion ginkgo. The other is this tulip tree, listed in 2023 as the champion for all of Wales, 29 metres tall and 4.68 metres round when it was measured in March 2022.\n\nThe tulip tree is a North American species, and this one flowers in June and July. The leaves are the easier clue from the ground, saddle-shaped, as if someone had taken the tip off each one with scissors. In autumn they turn yellow and gold.\n\nThe title rests on a single survey, made for the Tree Register and published on the park's own pages, and those pages give two addresses for it. The table says north-east of the Sunken Lawn. The tree's own page says the east side of the Nursery Lawn. The grid reference puts both descriptions on the same patch of ground, just south of the ginkgo.\n\nWhat the survey does not give is an age. Nobody has recorded when this tree went in, so it stands here on its size alone. If you know the planting date, tell us.\n\nBute Park counts 51 champion trees in all, so this is one stop among many on an afternoon's walk behind Cardiff Castle.",
+    "best_time": {
+      "months": [
+        6,
+        7
+      ],
+      "kind": "flowers",
+      "label": "June and July, when the tulip tree is in flower"
+    }
   },
   {
     "id": "crd_011",

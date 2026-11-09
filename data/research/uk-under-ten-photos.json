@@ -1,0 +1,27 @@
+{
+  "note": "Photo verdicts for the UK under-ten run, looked at 2026-11-04. Only `approved` ever ships (scripts/build_uk_under_ten.py).",
+  "approved": {
+    "crd_011": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Metasequoia_glyptostroboides_-_geograph.org.uk_-_8417441.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Alan Hughes",
+      "attribution_url": "https://commons.wikimedia.org/wiki/File:Metasequoia_glyptostroboides_-_geograph.org.uk_-_8417441.jpg",
+      "width": 4284,
+      "height": 5712,
+      "taken_month": "2026-09",
+      "why": "a lone dawn redwood on open lawn in Bute Park, geotag about 15 m from the survey grid reference, daylight, in leaf, fills the frame"
+    }
+  },
+  "held": {
+    "wsr_001": {
+      "candidate": "https://www.geograph.org.uk/photo/934772",
+      "license": "CC BY-SA 2.0",
+      "why": "a huge hollow pollard oak in good light, geotagged about 10 m from the Tree Register grid reference, but the caption does not name the Signing Oak and the file is not on Commons (Geograph's own copy carries a stamped credit band)"
+    },
+    "lvp_004": {
+      "candidate": "https://www.geograph.org.uk/photo/4948172",
+      "license": "CC BY-SA 2.0",
+      "why": "the crown shows behind railings and a stone pillar, the trunk is hidden: fails the Cadiz frame"
+    }
+  }
+}

@@ -50,6 +50,100 @@
       "sources_seen": [
         "https://www.treeregister.org/news/story/autumn-news-2021/"
       ]
+    },
+    {
+      "name": "Giant Sequoia near the Valley Gardens cafe path",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "latitude": 51.414137,
+      "longitude": -0.596946,
+      "reason": "Tree Register 209472: girth 834 cm (2010), 'near path from cafe to Canadian Memorial Avenue', public open access, grid SU97676928 (10 m). Register only, last recorded 2010; no second source seen, lifecheck NONE, no photo candidate. Needs a second source and a photo.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/209472"
+      ]
+    },
+    {
+      "name": "Pin Oak, Canadian Memorial Avenue, Valley Gardens (height champion)",
+      "species": "Pin Oak (Quercus palustris)",
+      "latitude": 51.415906,
+      "longitude": -0.594548,
+      "reason": "Tree Register 125681: height 30.6 m, girth 283 cm (2021), height champion of Britain & Ireland per the register, public open access, 'S side, mid' of the avenue, grid SU97833694 80 (10 m). One register source; a monumentaltrees snippet lists a 103 ft pin oak in Windsor Great Park (search summary only, not fetched). Lifecheck RECENT iNaturalist 2026-08-01 within radius (identity unchecked). Needs a second source and a way to tell it from avenue neighbours.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/125681"
+      ]
+    },
+    {
+      "name": "Oak N of Snow Hill, W of the Long Walk (fine tree, no decay)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 51.449455,
+      "longitude": -0.609564,
+      "reason": "Tree Register 189544: girth 817 cm, re-recorded 2024, public open access, grid SU9671873191. Register only; nearest Commons photos are Long Walk views 38 m or more away, none of the tree. Needs a photo or second source.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/189544"
+      ]
+    },
+    {
+      "name": "'Giraffe pollard' oak opposite Rangers' Lodge",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 51.449201,
+      "longitude": -0.634584,
+      "reason": "Tree Register 202190: girth 820 cm (2009), edge of Cranbourne Chase 'almost opposite Rangers' Lodge', nickname Giraffe pollard, public open access, grid SU94987313. Register only, lifecheck NONE, no photo.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/202190"
+      ]
+    },
+    {
+      "name": "Oak by Bear's Rails Pond (hollow and burnt)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 51.452355,
+      "longitude": -0.602395,
+      "reason": "Tree Register 200498: girth 755 cm, re-recorded 2024, park SW of Bear's Rails Pond, hollow and burnt, public open access, grid SU9721073523. A Geograph photo 3546111 ('fine oak in the deer park near Bear's Rail Pond', SU 9721 7351) lies about 13 m away but is not named as this tree; needs viewing.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/200498",
+        "https://www.geograph.org.uk/photo/3546111"
+      ]
+    },
+    {
+      "name": "Oak W of Poet's Lawn (Prionus beetle evidence)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 51.440087,
+      "longitude": -0.627216,
+      "reason": "Tree Register 311595: girth 776 cm, recorded 2025, W of Poet's Lawn, public open access, grid SU9551172126. Register only, no photo.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/311595"
+      ]
+    },
+    {
+      "name": "Pollard oak E of Sheet Street Road N of Forest Lodge",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 51.445725,
+      "longitude": -0.637278,
+      "reason": "Tree Register 199913: girth 782 cm, re-recorded 2024, public open access, grid SU94807274. Geograph 3054963 'Parkland oak' lies about 20 m away (SU 9483 7275), not named as this tree.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/199913",
+        "https://www.geograph.org.uk/photo/3054963"
+      ]
+    },
+    {
+      "name": "Ancient pollard oaks in The Village (N end; Russell's Pond Farm; Queen Anne's Ride)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": 51.443927,
+      "longitude": -0.621935,
+      "reason": "Tree Register 189546 (735 cm, 2008, ancient pollard, SU95877256), 189539 (713 cm, SU95527263, in front of Russel's Pond Farm), 189534 (715 cm, SU95987340, Queen Anne's Ride). All public open access, register only, 2008. Possible small cluster around The Village; needs photos and a re-check that they stand.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/189546",
+        "https://www.treeregister.org/tree-directory/tree/189539",
+        "https://www.treeregister.org/tree-directory/tree/189534"
+      ]
+    },
+    {
+      "name": "Conqueror's Oak, Cranbourne Chase",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "latitude": null,
+      "longitude": null,
+      "reason": "A search summary says a Woodland Trust inventory record calls it a dead stump in secondary woodland and monumentaltrees lists 9.05 m girth: neither seen on a fetched page and the first is a source we do not use. Treat as probably not a visitable living tree; do not ship.",
+      "sources_seen": [
+        "https://en.wikipedia.org/wiki/Windsor_Great_Park"
+      ]
     }
   ],
   "blocked": [
@@ -87,6 +181,13 @@
       "reason": "Grove planted 19 June 1937, not a collectible single tree and not ancient (plaque on Geograph 7918227, SU 9726 7160).",
       "sources_seen": [
         "https://www.geograph.org.uk/photo/7918227"
+      ]
+    },
+    {
+      "name": "Tree Register Windsor Great Park trees marked Private (Cranbourne Chase, South Forest, Home Farm, Woodside oaks, beeches and chestnut, 700 to 920 cm)",
+      "reason": "Tree Register access field says Private for these records (e.g. 3737, 200081, 215276, 215266, 216813); hard rule 10.",
+      "sources_seen": [
+        "https://www.treeregister.org/tree-directory/tree/3737"
       ]
     }
   ]

@@ -102,8 +102,96 @@
    },
    "reason": "Girth 217 cm, 18 m (2026): not remarkable.",
    "source": "https://www.cardiffparks.org.uk/trees/bute/cedrus-atlantica1.php"
+  },
+  {
+   "name": "Bute Park Turkey Oak, Sunken Lawn edge",
+   "species": "Turkey Oak (Quercus cerris)",
+   "location": {
+    "address": "Cardiff",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Girth 396 cm, 30 m (January 2023), no champion status; near-duplicate of crd_006. Survey age: none given. Spare if a tenth tree is needed. Grid ST 17698 76947.",
+   "source": "https://www.cardiffparks.org.uk/trees/bute/quercus-cerris2.php"
+  },
+  {
+   "name": "Thompson's Park Horse Chestnut",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "location": {
+    "address": "Cardiff",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Girth 393 cm, 24 m (May 2016), upper park NW side; large but a common species with no story and one survey source. Grid ST 16068 77103 (not converted).",
+   "source": "https://www.cardiffparks.org.uk/trees/thompsonspark/aesculus-hippocastanum.php"
+  },
+  {
+   "name": "Cathays Cemetery Austrian Pine",
+   "species": "Austrian Pine (Pinus nigra)",
+   "location": {
+    "address": "Cardiff",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Glamorgan Champion 2020, 410 cm, 21 m, NW of chapels; fold into crd_009 as a second stop or keep as spare. Grid ST 18093 78674.",
+   "source": "https://www.cardiffparks.org.uk/trees/cathayscemetery/pinus-nigra-austriaca2.php"
+  },
+  {
+   "name": "Bute Park Caucasian Wingnut thicket",
+   "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+   "location": {
+    "address": "Cardiff",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Wales Champion 2015, 24 m, multi-stem suckering clump along about 55 m of canal bank in Coopers Field; a thicket not one tree, no girth. Possible 'one place to stand' ensemble but weak. Grid ST 17874 76881.",
+   "source": "https://www.cardiffparks.org.uk/trees/bute/pterocarya-fraxinifolia.php"
+  },
+  {
+   "name": "Bute Park Black Walnut",
+   "species": "Black Walnut (Juglans nigra)",
+   "location": {
+    "address": "Cardiff",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Wales Champion 2023, girth 295 cm, 27 m (2015); modest, one survey source. Grid ST 17708 76863.",
+   "source": "https://www.cardiffparks.org.uk/trees/bute/juglans-nigra.php"
+  },
+  {
+   "name": "Victoria Park Cedar of Lebanon",
+   "species": "Cedar of Lebanon (Cedrus libani)",
+   "location": {
+    "address": "Cardiff",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Multi-stem, 17 m (2015), no girth; no age. Grid ST 15469 76862. Weak.",
+   "source": "https://www.cardiffparks.org.uk/trees/victoriapark/cedrus-libani.php"
+  },
+  {
+   "name": "Cefn Onn Park champions (Jeffrey pine, Grand fir etc.)",
+   "species": "various conifers",
+   "location": {
+    "address": "Cardiff",
+    "latitude": null,
+    "longitude": null
+   },
+   "reason": "Parc Cefn Onn has a planted arboretum of Wales and Glamorgan champions (grid ST 177 840) but each is single-survey, individually undersized and far north (about 8 km); dozens of near-identical entries, not one collectible point. Park-level only.",
+   "source": "https://www.cardiffparks.org.uk/trees/cefnonn/index.shtml"
   }
  ],
- "blocked": [],
+ "blocked": [
+  {
+   "name": "Bute Park Ginkgo Avenue",
+   "reason": "Avenue, not a collectible point (single ginkgo already crd_007).",
+   "source": "https://www.cardiffparks.org.uk/bute/info/ginkgoavenue.shtml"
+  },
+  {
+   "name": "Cathays Cemetery yews at entrance and chapels",
+   "reason": "Multi-stem, 10 to 11 m, no girth, no age; not remarkable.",
+   "source": "https://www.cardiffparks.org.uk/trees/cathayscemetery/taxus-baccata1.php"
+  }
+ ],
  "notes": "Verification pass 2026-09-11. No usable open-licence Cardiff/Wales tree register exists per OPEN_DATA_SURVEY.md: the UK Ancient Tree Inventory (Woodland Trust) is DISQUALIFIED as an import source (non-commercial licence) and was not used as a source in this pass, only glimpsed in search results and deliberately not fetched or cited, consistent with 'no Woodland Trust data without written permission'. Two hosts required a browser-style User-Agent to avoid a 403 (cardiffparks.org.uk and historypoints.org); plain curl with a generic UA failed on both, noting for the fetch-blocklist. cardiffparks.org.uk's Bute Park page is an unusually rich independent source (a hand-maintained champion-tree register with OS grid references) and is worth a dedicated pass of its own rather than the partial read given here. 2026-11-03 deepen pass: crd_005 to crd_007 delivered in data/research/cardiff-verified.json. Most of the Bute Park champion table is 1947+ ornamental plantings (maples, oaks, lime cultivars): no age, not worth the walk. Old trees there are the planes, the beech, the Turkey oak, the ginkgo and the Wellingtonia. Not searched: Llandaff Cathedral, Cathays Cemetery, Roath Park, Dyffryn (time)."
 }

@@ -23,6 +23,14 @@
    "longitude": -1.6108,
    "location_precision": "approximate",
    "reason": "Warwickshire World / Leamington Courier report a volunteer veteran-tree walk and an ancient oak 'favourite of visitors' (search summary only, article body not read: 403). No girth, age or single trunk located. Needs the National Trust tree-walk leaflet naming trunks. Transport: no direct train; local bus, check before labelling."
+  },
+  {
+   "name": "Boundary oak and old mulberries, Charlecote Park",
+   "species": "English Oak (Quercus robur)",
+   "latitude": 52.2,
+   "longitude": -1.6108,
+   "location_precision": "approximate",
+   "reason": "National Trust 'Our work at Charlecote' page (nationaltrust.org.uk/visit/warwickshire/charlecote-park/our-work-at-charlecote-park) names a roughly 300-year-old boundary oak and mulberries as the estate's eldest trees, seed collected from them. Seen only in a search summary of that page; the fetched page is JS-rendered with no text. No location of the oak inside the 180-acre park, no girth. No pin, no photo, no recognition line: stays a lead. Ask the NT or find the tree-walk leaflet."
   }
  ],
  "blocked": [
@@ -31,6 +39,24 @@
    "latitude": 52.1859,
    "longitude": -1.7074,
    "reason": "An avenue, not one collectible point; one blog says it was replanted in the early 1990s."
+  },
+  {
+   "name": "Holy Trinity churchyard yews and 12 new yews",
+   "latitude": 52.1859,
+   "longitude": -1.7074,
+   "reason": "Hansard 2011 (search summary) says 12 yews newly planted plus one older yew 'several hundred years'; C of E faculty record lists no ancient/veteran/notable trees. Conflict, no individual trunk located."
+  },
+  {
+   "name": "Anne Hathaway's Cottage orchard",
+   "latitude": 52.1829,
+   "longitude": -1.7273,
+   "reason": "Parks & Gardens (fetched): standard apple trees of mixed ages in rows, an orchard since the 1800s; no individual old tree named. Orchard is not one collectible point."
+  },
+  {
+   "name": "Shakespeare's Birthplace garden yew hedge and holm oak",
+   "latitude": 52.1944,
+   "longitude": -1.7075,
+   "reason": "SBT 2023 blog (fetched) mentions only a yew hedge cut back; holm oak from a search summary, no age or source. Nothing individual."
   }
  ]
 }
