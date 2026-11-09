@@ -11,6 +11,10 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 session: Barcelona, the Sot de l'Estany is closed
+
+The Amics del Jardí Botànic wrote that the Sot de l'Estany has been shut since the July landslides, reopening unconfirmed for January 2028, and the Sot de la Masia stays open. The access line of the four trees they named (wingnut, green ash, narrow-leaved ash, sycamore) now opens with that, as does the hornbeam's, which stands in the same Sot though they did not name it; the city FAQ answer says so too. When it reopens, take the closure sentences out of access (verify_notes on each says so). Reply drafted, not sent: drafts/reply-pere-vives-2026-11-09.md.
+
 ## 2026-11-09 session: Discover's ambassador row
 
 **App, in the next build (42):** the ambassador row on Discover opens again. On build 41 a tap reached the button and the sheet was asked for, but iOS never showed it: Discover's outer LazyVStack had thrown the row away and rebuilt it. Logged on Hidde's iPhone, confirmed fixed there with a VStack ("hij doet t nu wel"). Build 41 in the store still has the bug.
