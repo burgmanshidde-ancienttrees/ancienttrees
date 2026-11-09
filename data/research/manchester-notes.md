@@ -1,2 +1,4 @@
 
 2026-11-03 pass: Heaton Park eucalyptus and Dunham Massey oaks searched; no second source, species, girth or pin. National Trust site returns a Radware bot check to curl. Nothing added to verified.
+
+2026-11-09 pass (UK under-ten run, no trees added). Tree Register champion list searched for Manchester, Heaton Park, Fletcher Moss, Wythenshawe, Platt Fields, Didsbury, Dunham Massey, Alexandra Park, Fog Lane, Southern Cemetery, Chorlton, Salford, Trafford, Stockport: only 9 records, all recorded by the Ancient Tree Inventory (closed to us) and mostly Bolton or private. Overpass API hung twice (overpass-api.de, kumi.systems). manchester.gov.uk returns 403 to curl and WebFetch (tree_discovery.pdf, woodlands page). Friends of Fletcher Moss notable trees page names species by area only, no Golden Cloud, no sizes. Geograph Heaton Park hits are sculptures. Nothing verifiable beyond the council's single-source rare-trees list, so nothing delivered.

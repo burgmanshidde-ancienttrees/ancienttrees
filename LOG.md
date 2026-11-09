@@ -11,6 +11,11 @@
 
 <!-- archive-index -->
 
+## 2026-11-09, Manchester: one more pass, nothing that ships
+
+Manchester stays at 5 trees. Every Tree Register record for the area names the Woodland Trust's Ancient Tree Inventory as recorder, which is closed to us, and none is a Manchester park tree. manchester.gov.uk answers 403, so the council's rare-trees list keeps its one source and no coordinates. Rejects in data/leads/manchester.json. No further pass without someone opening the council pages in a real browser. About 119k tokens.
+
+
 ## 2026-11-09 Six empty top-60 US cities: 22 trees written and held in the builder
 
 22 trees verified and written, nothing published yet: Cincinnati 8 (all Spring Grove champions), St. Louis 6 (Tower Grove Park, Bellefontaine, Missouri Botanical Garden, 2 of 6 ticketed), Indianapolis +3 to 4 (Temple Oak, Nowland Oak, Statehouse Moon Tree), Lexington, Kentucky 2, Huntsville, Alabama 2, Birmingham, Alabama 1. The bar of ten was not reached anywhere: supply ran out and nothing was padded. Slugs carry the state where the name is shared (birmingham-alabama, huntsville-alabama, lexington-kentucky). `python3 scripts/build_us_empty_cities.py` puts them in data/cities (`--only` for a slice); then city_names.py, preflight.py. Tested on main: preflight 0 problems, no new shared crown, test files reverted.
