@@ -2,14 +2,14 @@
   "city": "Indianapolis",
   "country": "United States",
   "city_slug": "indianapolis",
-  "note": "Verify pass 2026-09-11. passcheck's Wikidata leads were the Anne Frank sapling (not chased) and the Kile Oak (Q130425459), which verified and shipped as ind_001. No imported register. Found Indiana DNR's official Heritage Trees page, which names the Temple Oak, but could not settle its access this pass. 1 tree delivered (ind_001), well below the 4-tree floor.",
+  "note": "Verify pass 2026-09-11. passcheck's Wikidata leads were the Anne Frank sapling (not chased) and the Kile Oak (Q130425459), which verified and shipped as ind_001. No imported register. Found Indiana DNR's official Heritage Trees page, which names the Temple Oak, but could not settle its access this pass. 1 tree delivered (ind_001), well below the 4-tree floor. Deepen pass 2026-11-04: 3 delivered (ind_002 Temple Oak, ind_003 Nowland Oak, ind_004 Statehouse Moon Tree). Crown Hill tree maps are image-only PDFs (no text layer from WebFetch or zlib), so no tagged specimen could be tied to a section from the Foundation itself.",
   "leads": [
     {
       "name": "The Temple Oak",
       "species": "Chinkapin Oak (Quercus muehlenbergii)",
       "lat": 39.786,
       "lng": -86.114,
-      "status": "lead",
+      "status": "delivered 2026-11-04 as ind_002 (view-only from the corner, approximate pin)",
       "why": "Named on Indiana DNR's official state Heritage Trees register page and independently covered by WFYI (Indianapolis public radio): nearly 400 years old, almost 18ft (549cm) circumference, believed the largest Chinkapin Oak in Marion County, a well-loved neighbourhood icon that won a 2007 city 'most huggable and remarkable tree' contest and got a mayoral proclamation. NOT delivered as verified this pass because ACCESS could not be settled: it stands on what reads as a residential corner (the WFYI piece describes a family that 'moved to the property' beside it), and whether the tree itself is on public right-of-way, a front yard visible from the street, or fully private ground was not established. Per BRIEF_RESEARCH.md, when in doubt on private-land access the tree waits rather than ships. Also needs a tighter coordinate: Nominatim could not resolve the exact Temple Avenue/Brookside Parkway South Drive intersection this pass (the two streets returned non-intersecting segments), so even the approximate pin used here is a best-effort placement in the right neighbourhood rather than a real fix. Otherwise the strongest remaining Indianapolis candidate found this pass; resolving access (an OSM highway/access tag check per the Ypres technique in BRIEF_RESEARCH.md, or a direct look at the WFYI photos, would likely settle it fast) would make this a strong 2nd verified tree."
     },
     {
@@ -19,6 +19,54 @@
       "lng": null,
       "status": "lead",
       "why": "Level II accredited arboretum, over 11,000 inventoried and tagged trees. The Foundation's own Tree Map PDFs (crownhillhf.org, 2019 and 2021 editions) almost certainly name specific large/old tagged specimens but returned only binary/unparseable content to this pass's PDF-reading tool (unlike the Idaho and Pittsburgh PDFs, which parsed cleanly; this one may be image-based or differently encoded). Worth a retry with different tooling; a public cemetery-arboretum with individual tagged trees is exactly the kind of naming body BRIEF_RESEARCH.md flags as predicting yield."
+    },
+    {
+      "name": "Big Hackberry (Fall Creek, Big Hackberry Nature Trail)",
+      "species": "Common Hackberry (Celtis occidentalis)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Indianapolis Recorder (p=70787, 403/Cloudflare to curl and WebFetch, only a search snippet seen) says ROW volunteers cut a rustic free dawn-to-dusk path to what may be Indiana's largest hackberry, est. 150 to 200 years; a monumentaltrees entry puts it on the north bank of Fall Creek east of the Canal, girth 12 ft 9 in. No coordinate or trailhead seen; needs a browser session to read the article and the tinyurl route map. Not shipped: no pin, article unread."
+    },
+    {
+      "name": "Crown Hill Cemetery hornbeam (Indiana's largest American hornbeam)",
+      "species": "American Hornbeam (Carpinus caroliniana)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "IndyStar via Yahoo (7 July 2025) says Crown Hill holds Indiana's largest known hornbeam; DNR 2005 champion layer has a Crown Hill hornbeam (circ 153 in, ht 33 ft, crown 58 ft, measured 2004; implausible units for a hornbeam, treat as multi-stem or corrupt); DNR current Marion hornbeam row 184.1 in / 63.45 ft. Only a geocaching tour puts it in Section 73 (not a source). A 2009 Wabash College blog calls an 'ironwood' at Crown Hill the largest in the state (same species). Needs the Foundation's tag number or a map read in a browser. Cemetery is open and free."
+    },
+    {
+      "name": "Crown Hill European weeping beeches",
+      "species": "Weeping European Beech (Fagus sylvatica 'Pendula')",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Crown Hill Heritage Foundation Trees in Need page says its weeping beeches are among the oldest trees on the grounds and two need urgent care. 2021 tree map lists a weeping beech tag 38 in Section 87 (from a search snippet of the map, not read). No size or age. Needs a map read."
+    },
+    {
+      "name": "Benjamin Harrison House oak",
+      "species": "oak (Quercus sp.)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Wabash College blog 2009 calls it a 150-year-old oak in front of the President Benjamin Harrison Presidential Site, Indianapolis. One 2009 blog source, museum ground (ticketed), species and current state unknown."
+    },
+    {
+      "name": "Anne Frank Tree (Children's Museum of Indianapolis)",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "lat": 39.81061,
+      "lng": -86.15789,
+      "status": "lead",
+      "why": "Wikidata Q140073083. Sapling grown from the Amsterdam tree, planted 14 April 2013 in the Anne Frank Peace Park at the museum (search results, Children's Museum). Young, and whether the Peace Park is open without a museum ticket was not settled (museum page 404, AllTrails 403). Ticketed museum grounds; hold for access."
+    },
+    {
+      "name": "Crown Hill North Woods burr oak",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Indiana Forest Alliance (advocacy, search snippet; page 403) describes a burr oak thought 500 years old and about 15 ft round in the north-end old-growth remnant; per the same snippets the land was sold to the National Cemetery Administration, so access is unknown and the figure is an advocacy estimate. Not publicly walkable as far as seen."
     }
   ],
   "blocked": []

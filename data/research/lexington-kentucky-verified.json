@@ -1,0 +1,80 @@
+[
+  {
+    "id": "lxk_001",
+    "name": "Lexington Cemetery Basswood",
+    "species": "American Basswood (Tilia americana)",
+    "age_estimate": "at least 230 years",
+    "age_min": 230,
+    "age_max": 300,
+    "girth_cm": 742,
+    "height_m": 24,
+    "location": {
+      "address": "Lexington Cemetery, 833 West Main Street, Lexington, KY 40508 (just behind the Henry Clay monument)",
+      "latitude": 38.057633,
+      "longitude": -84.507617,
+      "neighbourhood": "Lexington Cemetery"
+    },
+    "verified_sources": [
+      "https://eec.ky.gov/Natural-Resources/Forestry/ky-champion-trees/Pages/default.aspx",
+      "http://www.waymarking.com/waymarks/WM1Y2H",
+      "https://lexcem.org/nature",
+      "https://www.visitlex.com/guides/post/blooms-in-the-bluegrass/"
+    ],
+    "official_register": {
+      "name": "Kentucky Champion Trees (Division of Forestry)",
+      "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-champion-trees/Documents/Basswood%20American.pdf"
+    },
+    "access": "Cemetery grounds open daily 8am to 5pm; no admission charge stated. Private non-profit cemetery open to visitors; respect burial areas.",
+    "transport": "833 West Main Street, about 1.5 km west of downtown Lexington.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "age_basis": "source",
+    "story": "A plaque at the foot of this basswood says it was alive when the United States Constitution was signed. That is the plaque's claim, dated 1987, and nobody has counted the rings to back it. Taken at face value it puts the tree at over 230 years.\n\nPlaques make large claims. This one also calls the tree the largest in the United States, while a national listing puts the largest in Montgomery County, Pennsylvania. Kentucky's own listing is plainer. It records the state champion American basswood at 292 inches round, 742 centimetres, and 78 feet tall, 23.8 metres, with a crown 73 feet across. Other sources give 101 or 102 feet for the height, and the plaque itself says 60 to 80.\n\nA waist of more than seven metres is a remarkable thing on a basswood. It stands just behind the monument over Henry Clay's grave, so the Great Compromiser lies with this tree at his back.\n\nA visitor logged it as standing in September 2025. The plaque is still the easiest way to be sure you have the right tree. Read it, and keep your own count.",
+    "how_to_recognise": "You can recognise it by the plaque at its base and the trunk, 742 centimetres round. It stands just behind the monument at Henry Clay's grave in Lexington Cemetery.",
+    "recognise": "You can recognise it by the plaque at its base and the trunk, 742 centimetres round. It stands just behind the monument at Henry Clay's grave in Lexington Cemetery.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "lxk_002",
+    "name": "McConnell Springs Bur Oak",
+    "species": "Bur Oak (Quercus macrocarpa)",
+    "age_estimate": "250 to 300 years",
+    "age_min": 250,
+    "age_max": 300,
+    "location": {
+      "address": "McConnell Springs Park, 416 Rebmann Lane, Lexington, KY 40504 (deep in the park, roughly a 1,500 ft walk from the entrance)",
+      "latitude": 38.05345,
+      "longitude": -84.53003,
+      "neighbourhood": "Cardinal Valley"
+    },
+    "verified_sources": [
+      "https://mcconnellsprings.org/?p=102",
+      "https://www.hmdb.org/m.asp?m=194587",
+      "https://lexpomo.com/?p=35782",
+      "https://www.visitlex.com/guides/post/blooms-in-the-bluegrass/"
+    ],
+    "access": "McConnell Springs Park trails open dawn to dusk daily year-round. The park page names no admission fee. Education center has separate hours.",
+    "transport": "Off Old Frankfort Pike at 416 Rebmann Lane, about 3 km northwest of downtown.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "McConnell Springs Park bur oak and its marker",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "age_basis": "source",
+    "story": "Nobody can count this oak's rings, because most of its trunk is gone. A 2022 poem on a Lexington poetry site quotes the park forester saying the trunk is mostly hollow, which leaves too few rings to read, so the age of the tree that Lexington's McConnell Springs tells everyone to go and see rests on estimates alone. The park says 300 years. The marker beside it says more than 250.\n\nEither way, it has held on through a good deal. The marker, put up by the Society of Colonial Wars with Lexington Parks and Recreation, says the tree stood witness from William McConnell's claim here in the 1700s, through the Westbrook Stock Farm of the late 1800s, to the park's creation in the 1990s. A second old bur oak fell in the ice storm of February 2003, according to a geocaching description. This is the one left.\n\nIts limbs have grown long enough to reach across the trail, and they rest on tall poles that the poem calls crutches. No girth or height has been published.\n\nThe bur oak is Lexington's official city tree, and this is about the most persuasive argument for it. It stands deep in the park, roughly a 1,500-foot walk from the entrance. The pin is the marker's, right beside the trunk.",
+    "how_to_recognise": "You can recognise it by the long limbs propped on tall poles across the trail, and the hollow trunk. It stands beside its historical marker, the only marked old oak in the park, about 1,500 feet in.",
+    "recognise": "You can recognise it by the long limbs propped on tall poles across the trail, and the hollow trunk. It stands beside its historical marker, the only marked old oak in the park, about 1,500 feet in.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]

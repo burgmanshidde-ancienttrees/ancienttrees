@@ -1,0 +1,100 @@
+{
+ "city": "Lexington, Kentucky",
+ "country": "United States",
+ "leads": [
+  {
+   "name": "Ashland blue ash pair",
+   "species": "Blue Ash (Fraxinus quadrangulata)",
+   "site": "Ashland, the Henry Clay Estate, 120 Sycamore Road",
+   "reason": "Two blue ash called nearly 300 (estate grounds page), over 300 (director to WEKU 2023) and nearly 400 (another estate page) years old and predating Clay; no source says where on the grounds they stand, no pin; grounds access unclear (tour $25, hours Tue-Sat 10-3:45, grounds-only admission not stated). Needs a location and an access answer from the estate (859-266-8581).",
+   "sources": [
+    "https://henryclay.org/visit/grounds-garden/",
+    "https://henryclay.org/?p=1366",
+    "https://www.weku.org/interviews/2023-03-14/todays-interview-henry-clays-estate-ashland-lost-at-least-15-trees-due-to-march-3-storm"
+   ]
+  },
+  {
+   "name": "Lexington Cemetery cucumbertree magnolia (KY champion)",
+   "species": "Cucumbertree (Magnolia acuminata)",
+   "site": "Lexington Cemetery",
+   "reason": "KY champion listing: circumference 176 in, height 96 ft, crown 74 ft, 'Fayette/Lexington Cemetery'. No location within 170 acres, cannot be told apart on the ground. Cemetery Tree Book PDF (lexcem.org/wp-content/uploads/2020/09/Lexington-Cemetery-Tree-Book.pdf) is image-only, could not be read here; may give section.",
+   "sources": [
+    "https://eec.ky.gov/Natural-Resources/Forestry/ky-champion-trees/Pages/default.aspx"
+   ]
+  },
+  {
+   "name": "Lexington Cemetery American smoketree (KY champion)",
+   "species": "American Smoketree (Cotinus obovatus)",
+   "site": "Lexington Cemetery",
+   "reason": "KY listing: circumference 110.53 in, height 40 ft, crown 42 ft. Modest tree, no location within the cemetery; search summaries called it national champion (unverified). Lead until the Tree Book gives a section.",
+   "sources": [
+    "https://eec.ky.gov/Natural-Resources/Forestry/ky-champion-trees/Pages/default.aspx"
+   ]
+  },
+  {
+   "name": "Ohio buckeye national champion",
+   "species": "Ohio Buckeye (Aesculus glabra)",
+   "site": "Lexington (site unnamed)",
+   "reason": "gatheringgrowth.org: 174 in, 86 ft, crowned 2017, location only 'Lexington, Kentucky'. No site, likely not public (Trees Lexington lists an Ohio buckeye at Catholic Charities, 1310 W Main, a private organisation's grounds, unconfirmed same tree).",
+   "sources": [
+    "https://www.gatheringgrowth.org/champion-trees/ohio-buckeye"
+   ]
+  },
+  {
+   "name": "Duncan Park bur oak",
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "site": "Duncan Park",
+   "reason": "Search result mentions a big bur oak near the entrance; no age, no measurement, no source fetched. Lead.",
+   "sources": []
+  },
+  {
+   "name": "St. Joe's Oak",
+   "species": "Bur Oak",
+   "site": "St. Joseph Hospital, with a parking structure built around it",
+   "reason": "Named in American Forests 'Venerable Trees of the Bluegrass' (2015-10-16); hospital grounds access and location unverified, no age.",
+   "sources": [
+    "https://www.americanforests.org/article/venerable-trees-of-the-bluegrass/"
+   ]
+  },
+  {
+   "name": "Floracliff old oaks",
+   "species": "Oaks",
+   "site": "Floracliff Nature Sanctuary",
+   "reason": "'A Tour of Floracliff's Old Oak Trees' exists but the sanctuary is entry by reservation/event and outside the city; not fetched.",
+   "sources": [
+    "https://www.floracliff.org/venue/floracliff-nature-sanctuary-90"
+   ]
+  },
+  {
+   "name": "UK campus and Arboretum",
+   "species": "various",
+   "site": "University of Kentucky / The Arboretum",
+   "reason": "Nothing old or champion found beyond a state champion red buckeye shrub (13 in); willow oaks planted late 1960s; Trees Lexington tree-of-the-month entries are not ancient. No candidate.",
+   "sources": [
+    "https://www.treeslexington.org/tree-of-the-month"
+   ]
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Schoolhouse Bur Oak (Harrodsburg Road at Military Pike)",
+   "reason": "Dead: blown over in the 4 March 2023 windstorm after 300+ years (Herald-Leader, LEX18 report of removal)."
+  },
+  {
+   "name": "Ingleside Oak",
+   "reason": "Roadside bur oak on Harrodsburg Road, probably the same tree that fell in March 2023; dead or unconfirmed, no public access."
+  },
+  {
+   "name": "South Point Park bur oak",
+   "reason": "WTVQ report: 300-year-old bur oak to be removed for safety; undated, treat as gone."
+  },
+  {
+   "name": "Gratz Park trees",
+   "reason": "Park tulip poplars were planted in the 1890s by Howard Gratz after storm damage; nothing old documented."
+  },
+  {
+   "name": "Waveland State Historic Site grounds",
+   "reason": "No tree inventory or named old tree found."
+  }
+ ]
+}

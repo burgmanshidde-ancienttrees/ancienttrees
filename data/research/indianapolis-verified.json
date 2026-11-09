@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ind_002",
+    "name": "The Temple Oak",
+    "species": "Chinkapin Oak (Quercus muehlenbergii)",
+    "age_estimate": "roughly 400 years",
+    "age_min": 270,
+    "age_max": 450,
+    "girth_cm": 617,
+    "height_m": 26.8,
+    "location": {
+      "address": "Corner of Temple Avenue and Brookside Parkway South Drive, Indianapolis, IN 46201",
+      "latitude": 39.7858,
+      "longitude": -86.1181,
+      "neighbourhood": "Springdale, Near Eastside"
+    },
+    "verified_sources": [
+      "https://www.springdaleindy.com/the-temple-oak",
+      "https://www.wfyi.org/news/articles/neighborhood-rallies-around-temple-oak",
+      "https://weeklyview.net/?p=4844"
+    ],
+    "access": "View only, from the public sidewalk and street at the corner of Temple Avenue and Brookside Parkway South Drive; the trunk stands on a private corner lot with a small house. Do not enter the property. Free, always visible.",
+    "transport": "Near Eastside, roughly 2.5 km east of downtown Indianapolis.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "age_basis": "source",
+    "story": "The sidewalk on this corner has a bite taken out of it. When the city planned to straighten the walk and fell the oak in its way, the owners negotiated a cutout instead, and the concrete still bends around the trunk.\n\nThe Temple Oak is a chinkapin oak on the Near Eastside, on a private corner lot with a small house. In late 2023 the Springdale Neighborhood Association measured it at 88 feet high, 26.8 metres, and 20 feet 3 inches round, 617 centimetres, with a crown averaging 126.5 feet across. The canopy reaches out over Brookside Parkway, which is how you see it. Everything worth seeing is visible from the public sidewalk, and the lot belongs to somebody.\n\nAge is where the certainty ends. The neighbourhood says about 400 years. Experts quoted in 2014 said 300 to 400. Other estimates run from under 300 to 450, and no one has counted rings. It is among the oldest trees in Indianapolis, and locals claim it as the largest chinkapin in Marion County.\n\nIt has been hit by cars, which left scars on the bark, and in 2014 it had oak lace mites and deadwood until the neighbourhood raised money for treatment. Springdale took it as its symbol. The city wanted a straighter line, and the line lost.",
+    "how_to_recognise": "You can recognise it by the sidewalk bending in a cutout around the trunk, 617 centimetres round, and the canopy over Brookside Parkway. It stands at Temple Avenue and Brookside Parkway South Drive.",
+    "recognise": "You can recognise it by the sidewalk bending in a cutout around the trunk, 617 centimetres round, and the canopy over Brookside Parkway. It stands at Temple Avenue and Brookside Parkway South Drive.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "ind_003",
+    "name": "The Nowland Oak",
+    "species": "Chinkapin Oak (Quercus muehlenbergii)",
+    "age_estimate": "over 200 years",
+    "age_min": 200,
+    "age_max": 310,
+    "location": {
+      "address": "Chinquapin Oak Park, 2319 Nowland Avenue, Indianapolis, IN 46201",
+      "latitude": 39.78595,
+      "longitude": -86.12185,
+      "neighbourhood": "Springdale, Near Eastside"
+    },
+    "verified_sources": [
+      "https://weeklyview.net/2017/05/11/springdale-neighborhood-celebrates-new-park-for-ancient-tree",
+      "https://www.kibi.org/2018/11/30/chinquapin-oak-park/",
+      "https://www.kibi.org/2016/01/01/springdale-greenspace-at-the-nowland-oak/"
+    ],
+    "access": "Free; Chinquapin Oak Park is a small neighbourhood green space (opened May 2017, Keep Indianapolis Beautiful IPL Project GreenSpace); no published hours.",
+    "transport": "Near Eastside, roughly 2.5 km east of downtown Indianapolis.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Chinquapin Oak Park",
+      "radius_m": 30
+    },
+    "curation_status": "flagged",
+    "age_basis": "source",
+    "story": "In 2012 a neighbour noticed this oak behind a house that was about to be demolished. Only when the house came down did the size of the tree become clear.\n\nThe neighbourhood took up its cause and won a GreenSpace grant in 2016 to protect the lot, working with Keep Indianapolis Beautiful, and on 20 May 2017 it celebrated Chinquapin Oak Park, a narrow pocket of ground about 45 metres long. Tile markers set into the sidewalk tie the park to the Temple Oak, about 350 metres east, and to Spades Park.\n\nHow old it is depends on which report you read. The Weekly View said over 300 years in 2017, starting from about 1716. Keep Indianapolis Beautiful used the same 1716 date in 2018 but had said approximately 200 years in 2016. No published measurement exists, of its age or of its girth, so the honest band is 200 to 310 years.\n\nThe latest account we can find dates from 2018, the park is on the map, and we have nothing more recent about the tree's condition. If you have stood under it lately, tell us how it looks. A house hid it for a long time.",
+    "how_to_recognise": "You can recognise it as the only large oak in the pocket park, with a tree circle and plantings around it. It stands in Chinquapin Oak Park on the north side of Nowland Avenue.",
+    "recognise": "You can recognise it as the only large oak in the pocket park, with a tree circle and plantings around it. It stands in Chinquapin Oak Park on the north side of Nowland Avenue.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "ind_004",
+    "name": "The Indiana Statehouse Moon Tree",
+    "species": "American Sycamore (Platanus occidentalis)",
+    "age_estimate": "planted 1976",
+    "age_min": 49,
+    "age_max": 50,
+    "age_basis": "source",
+    "location": {
+      "address": "Indiana Statehouse east lawn, North Capitol Avenue side, Indianapolis, IN 46204",
+      "latitude": 39.76832,
+      "longitude": -86.16202,
+      "neighbourhood": "Downtown"
+    },
+    "verified_sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/indianapolis_tree.html",
+      "https://www.islands.com/1740369/hidden-heart-indianapolis-rare-historical-tree-cosmic-connections/"
+    ],
+    "official_register": {
+      "name": "NASA NSSDCA Moon Trees",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/indianapolis_tree.html"
+    },
+    "access": "Free; Statehouse front lawn arboretum is public grounds in downtown Indianapolis. The tree itself is unmarked; the plaque has been moved to the south side of the Capitol near the W. Washington St sidewalk.",
+    "transport": "Downtown Indianapolis, Capitol Avenue; on foot from anywhere downtown.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "This sycamore went round the Moon as a seed. Astronaut Stuart Roosa carried it on Apollo 14 in February 1971, and on 9 April 1976 Governor Otis R. Bowen led the ceremony that put it in the ground on the east lawn of the Indiana Statehouse.\n\nYou would never know from standing next to it. The tree is unmarked, and its plaque has been moved to the south side of the Capitol, near the West Washington Street sidewalk, some way from the thing it describes. In 2017 the lawn gained an arboretum of 44 trees in 21 species, so there is plenty of competition. To find it, go to the Oliver P. Morton statue on the North Capitol Avenue side and walk about 100 feet south, staying about 50 feet back from the street. Those directions are NASA's, and NASA calls its own position approximate.\n\nAt about fifty years old this is a youngster by the standards of this map. It earns its place on the journey. Islands.com described it in December 2024 as towering over the Statehouse, and that is the most recent report of it we can find. No girth or height has been published. It has spent half a century on a lawn where the state's laws go in and out, and it has been further than anyone in the building.",
+    "how_to_recognise": "You can recognise it by position, since it has no marker: an American sycamore about 100 feet south of the Oliver P. Morton statue and 50 feet back from North Capitol Avenue, on the Statehouse east lawn.",
+    "recognise": "You can recognise it by position, since it has no marker: an American sycamore about 100 feet south of the Oliver P. Morton statue and 50 feet back from North Capitol Avenue, on the Statehouse east lawn.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]

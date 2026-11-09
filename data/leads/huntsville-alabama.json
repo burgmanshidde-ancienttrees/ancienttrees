@@ -1,0 +1,58 @@
+{
+ "city": "Huntsville, Alabama",
+ "country": "United States",
+ "leads": [
+  {
+   "name": "Monte Sano champion basswood (Cold Spring Loop)",
+   "species": "American Basswood (Tilia americana)",
+   "reason": "no photo or exact pin in reach: only a forester's blog (Steve Jones, 26 Oct 2022) places a state champion basswood trailside on the Cold Spring Loop, 113 ft tall, 63 ft spread, 41 in DBH at July 2016 measure with heart rot at the base; no distance, no GPS, and the post does not say state park or Land Trust preserve. Trailhead 150 Fearn St SE. Need the Alabama Forestry Commission list location.",
+   "source": "https://stevejonesgbh.com/2022/10/26/cold-spring-loop-trail/"
+  },
+  {
+   "name": "Hays Nature Preserve willow oak and Shumard oak",
+   "species": "Willow Oak / Shumard Oak",
+   "reason": "city trail page names 'a large bottomland oak' with a hollow trunk and 'one of the largest southern red oaks', no figures, no location",
+   "source": "https://www.huntsvilleal.gov/environment/green-team/nature-preserves/hays-nature-preserve/hays-nature-preserve-trail-description/"
+  },
+  {
+   "name": "Maple Hill Cemetery trees",
+   "species": "oaks, dogwoods, maples (35+ species)",
+   "reason": "no size or age per tree: the city tree trail layer (maps.huntsvilleal.gov Cemetery/CityCemeteries MapServer layer 8, needs Referer https://maps.huntsvilleal.gov/maplehilltreetrail/ and --http1.1) holds species and coordinates for every tagged tree but no girth or age; NRHP nomination mentions 'numerous historic plantings, especially oak, dogwood and maple'. Needs a person on site or a girth source to pick a trunk. Query saved at out/tmp/hsv_trees.json.",
+   "source": "https://www.huntsvilleal.gov/environment/green-team/programs/urban-forestry-and-horticulture/maple-hill-tree-trail/"
+  },
+  {
+   "name": "Oak Place (Steele-Fowler House) oak",
+   "species": "oak, unspecified",
+   "reason": "Wikipedia only mentions a sprawling oak on the grounds; no species, size, age, access unclear",
+   "source": "https://en.wikipedia.org/wiki/Oak_Place_(Huntsville,_Alabama)"
+  },
+  {
+   "name": "Alabama champion trees in Madison County owned by City of Huntsville (basswood, yellow buckeye, cucumber magnolia, swamp white oak, sassafras)",
+   "species": "various",
+   "reason": "Alabama Forestry Commission 2024/2025 PDFs list them (owner City of Huntsville) but forestry.alabama.gov refused or timed out; no locations. Ask the Alabama champion tree coordinator or the Green Team.",
+   "source": "https://www.forestry.alabama.gov/Pages/Management/Forms/Champion_Trees_2025.pdf"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Five Points white oaks, Russell St and O'Shaughnessy Ave",
+   "reason": "probably cut down: 2022 city plan to remove a 100-year-old white oak was paused for arborist review, a WHNT item 'Historic Trees Removed from Five Points' reports two white oaks removed; WAAY page now redirects. Alive not confirmed.",
+   "source": "https://whnt.com/video/historic-trees-removed-from-five-points/7793294/"
+  },
+  {
+   "name": "Huntsville Botanical Garden dogwood (120+ years)",
+   "reason": "dead, removed for age and rot",
+   "source": "https://www.alabamaheritage.com/alabama-heritage-blog/alabamas-dogwoods-and-the-huntsville-dogwood-eulogy"
+  },
+  {
+   "name": "Ashwood Circle champion willow oak",
+   "reason": "private residence, Huntsville Times archive caption, no age or access",
+   "source": "https://alabamamosaic.org/vufind/Record/ADAHamg8318"
+  },
+  {
+   "name": "Huntsville Botanical Garden southern magnolia (1985)",
+   "reason": "planted 1985 as a dedication tree, young, ticketed garden",
+   "source": "https://en.wikipedia.org/wiki/Huntsville_Botanical_Garden"
+  }
+ ]
+}
