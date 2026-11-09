@@ -3905,7 +3905,8 @@ def plus_section(today):
         return ""
     try:
         rows, _ = pa.get(key, "/rest/v1/plus_answers?select=created_at,choices,idea&limit=5000")
-        _, listed = pa.get(key, "/rest/v1/plus_waitlist?select=created_at&limit=1")
+        listed = pa.waitlist_count(key)
+        rows = pa.counted_answers(rows)
     except urllib.error.HTTPError as e:
         if e.code == 404:
             return "**Plus question**: not storing answers yet; paste supabase/plus-answers.sql into Supabase."

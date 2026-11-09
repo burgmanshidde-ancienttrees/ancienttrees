@@ -51,6 +51,25 @@ def get(key, path):
         return json.load(r), total
 
 
+def not_counted():
+    """Rows that are our own tests, by created_at (Hidde, 2026-11-09). They stay
+    in the database and leave every count here and in the digest."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "plus-answers-not-counted.json")
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def counted_answers(rows):
+    skip = set(not_counted()["answers"])
+    return [r for r in rows if r.get("created_at") not in skip]
+
+
+def waitlist_count(key):
+    skip = set(not_counted()["waitlist"])
+    rows, _ = get(key, "/rest/v1/plus_waitlist?select=created_at&limit=5000")
+    return sum(1 for r in rows if r.get("created_at") not in skip)
+
+
 def main():
     key = load_key()
     if not key:
@@ -67,7 +86,8 @@ def main():
                 raise
             print("(other_text column missing: paste supabase/plus-answers.sql again)\n")
             rows, _ = get(key, f"/rest/v1/plus_answers?select={cols}&order=created_at.asc&limit=5000")
-        _, listed = get(key, "/rest/v1/plus_waitlist?select=created_at&limit=1")
+        listed = waitlist_count(key)
+        rows = counted_answers(rows)
     except urllib.error.HTTPError as e:
         if e.code == 404:
             print("The plus tables are not there yet: paste supabase/plus-answers.sql into the Supabase SQL editor.")

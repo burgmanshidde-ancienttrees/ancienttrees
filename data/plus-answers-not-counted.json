@@ -1,0 +1,11 @@
+{
+ "_note": "Plus answers and waitlist rows left out of every count (scripts/plus_answers.py, the digest): our own tests. Hidde, 2026-11-09. The rows stay in the database.",
+ "answers": [
+  "2026-11-05T09:10:23.10423+00:00",
+  "2026-11-06T20:31:06.42408+00:00",
+  "2026-11-08T14:18:13.820191+00:00"
+ ],
+ "waitlist": [
+  "2026-11-05T09:10:33.161574+00:00"
+ ]
+}

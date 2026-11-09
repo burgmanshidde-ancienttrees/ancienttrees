@@ -11,6 +11,10 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 session: the Plus question starts counting at zero
+
+The three answers so far and the one "tell me" (Rome web was our own account, the two app answers could not be told apart from a test) are left out of `plus_answers.py` and the digest, Hidde: "haal deze uit de telling". They stay in the database; the list is data/plus-answers-not-counted.json, by created_at. The first real answer now reads as answer 1.
+
 ## 2026-11-09 session: two small fixes before the Guardian piece
 
 **What changed in the product.** The list beside the explore map fetches its photographs at once instead of after the map's last street tile, so a slow phone or a busy tile host no longer leaves grey Highlights. Readers' photographs on our own domain got 500 and 1000 px copies (47 trees, 48 missing files of each kind together 96 written, manifest rebuilt): the homepage's New from visitors row was loading masters of up to 1 MB for a 180 px tile. Hidde: "Ja, fix ze".
