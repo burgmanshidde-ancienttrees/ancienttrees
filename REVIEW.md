@@ -23,6 +23,23 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-09
+
+Web half: the last 24 hours were data (Vienna, San Francisco, Porto write pass, Upper Austria register), one web-errors fix and build 41. No em dashes in site/dist HTML. Standing findings are unchanged.
+
+- WARN site/dist/explore.html still says "Each pin opens a tree with its age, its species, why it is worth the walk, and directions from where you are" while app-only pins open a card with no story ("Read its story in the app", APP_ONLY_PINS). Fourth review. Hard rule 2 and "a decision that changes what the product does also changes what the product says". Replacement: "Each pin opens a tree; some stories are in the app." Translations too.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "verified against independent sources" / "check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Fifteenth review in a row. Replacement: "We read every submission before it is kept."
+- NOTE the open question from 11-07 stands: data/walk-routes.json routing through app-only trees that have no page is unchecked.
+- NOTE (Monday, corpus rot) CLAUDE.md's north star still says "a walk past a few" and the ladder still lists walks and Season while DECISIONS 2026-11-04 set Walks, Season and Plus aside in the app. Suggest one line under "What this is": "walks and season are dark in the app since 2026-11-04; the web keeps them".
+- NOTE (Monday, copy reading) the strings added to i18n.ts and signin-strings.ts this week were skimmed; nothing ungrammatical found. No new AI_SHAPES to suggest.
+
+App half (iPhone SE: early-adopter, explore, feedback, map-full, map-pin, map; map-full and map were skimmed, they read like map-pin):
+
+- NOTE APP feedback.png: "We check every vote, correction and tip" again (see 11-08). Live-first (2026-10-24) means photos and notes are public before a check. "We read every vote, correction and tip" holds for all. For a session.
+- NOTE APP map-pin.png: the map is on Amsterdam while the open card is "Dąb Fabrykant" with a Polish name, a tree that is not in view, behind a sheet that hides the pin it belongs to. Probably the sweep opening a tree by id; if a person can reach this (a deep link or search from far away), the map should fly to the tree.
+- NOTE APP early-adopter.png: the profile shows "Paris ambassador" over an Amsterdam map for the test account. Fixture, nothing a visitor sees.
+- explore.png: nothing found (Discover's "529 trees at their best this month · 11 within 20 km of you" is consistent with the cards below).
+
 ## 2026-11-08
 
 Web half: last 24 hours were data (app-only trees, Lyon +10, Chicago, Salt Lake City, claims). No em dashes in site/dist HTML. Standing findings are unchanged.
