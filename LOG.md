@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 session: two small fixes before the Guardian piece
+
+**What changed in the product.** The list beside the explore map fetches its photographs at once instead of after the map's last street tile, so a slow phone or a busy tile host no longer leaves grey Highlights. Readers' photographs on our own domain got 500 and 1000 px copies (47 trees, 48 missing files of each kind together 96 written, manifest rebuilt): the homepage's New from visitors row was loading masters of up to 1 MB for a 180 px tile. Hidde: "Ja, fix ze".
+
+**Spike check, nothing else needed changing.** Live pages, map, rollback and the hourly check are fine; a first explore visit is about 1 MB compressed. No real load test, on purpose: it would test GitHub's and OpenFreeMap's servers, not ours, and risks being throttled just before the piece. Not verified: OpenFreeMap's and Supabase's limits under load. A blank map in the app's browser pane is the hidden pane (it pauses drawing), not the site.
+
 ## 2026-11-09 session: /cities no longer lists places under four trees
 
 Hidde: "alles onder 'places with fewer than four trees' mag wat mij betreft weg." The section, its counts and its styles are gone from /cities (it was only on the English page). Those places keep their map pin, search entry, country-page row and page. The grid of cities is unchanged.

@@ -1025,11 +1025,21 @@ map.on('zoomstart', function(e) { if (e && e.originalEvent) { _endSearch(true); 
   if (q) { q.addEventListener('input', function() { _endSearch(false); }); }
 })();
 map.on('moveend', renderPanel);
+// The photographs, from the catalogue the pins' cards share. Not behind the
+// map's load, which waits for every street tile: on a slow phone, or with the
+// tile host busy, the list stood as grey tiles until the streets had come in.
+var _cardsAsked = false;
+function _askCards() {
+  var C = window.atCollection;
+  if (_cardsAsked || !C || !C.catalogue) { return; }
+  _cardsAsked = true;
+  C.catalogue().then(function(c) { CARDS = c || {}; renderPanel(); });
+}
+_askCards();
 map.on('load', function() {
   renderPanel();
-  // The photographs, from the catalogue the pins' cards share.
+  _askCards();
   var C = window.atCollection;
-  if (C && C.catalogue) { C.catalogue().then(function(c) { CARDS = c || {}; renderPanel(); }); }
   if (C && C.verify && C.visited) {
     C.verify().then(function(ok) {
       if (!ok) { return; }
