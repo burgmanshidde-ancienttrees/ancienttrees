@@ -16265,6 +16265,62 @@
       "tokens": 100000,
       "trees": 19,
       "note": "19 stories and 13 place blocks (estimate: the agent died on the usage limit at its last step). Whole run about 1.15M tokens, about 60k a tree."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "york",
+      "tokens": 120974,
+      "trees": 0,
+      "note": "UK under-ten verify: nothing ships, leads only."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "brighton",
+      "tokens": 151817,
+      "trees": 3,
+      "note": "UK under-ten verify: 3 flagged trees, written 2026-11-09."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "liverpool",
+      "tokens": 126797,
+      "trees": 1,
+      "note": "UK under-ten verify: Eastham Yew only."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "cardiff",
+      "tokens": 173939,
+      "trees": 5,
+      "note": "UK under-ten verify: 5 trees, 4 published by the 11-06 night run."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "stratford-upon-avon",
+      "tokens": 109155,
+      "trees": 0,
+      "note": "UK under-ten verify: nothing ships."
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "verify",
+      "target": "windsor",
+      "tokens": 145732,
+      "trees": 1,
+      "note": "UK under-ten verify: Signing Oak; other oaks are ATI-derived, left as leads."
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "write",
+      "target": "uk-under-ten",
+      "tokens": 201405,
+      "trees": 6,
+      "note": "6 stories; figure includes the 11-04 run that stopped on the weekly limit. Whole run about 1.03M tokens for 10 trees, about 103k a tree."
     }
   ]
 }

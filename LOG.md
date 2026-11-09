@@ -11,6 +11,15 @@
 
 <!-- archive-index -->
 
+## 2026-11-09, UK under ten: six more trees written and held, one verified file rescued
+
+Six trees verified on 11-04 are written and wait for the daily publish (app only): Brighton's Tabletop Elm, Den Haag Elm and Patcham Peace Yew, the Eastham Yew for Liverpool, the Nursery Lawn Tulip Tree in Cardiff, and the Signing Oak as Windsor's first tree. `python3 scripts/build_uk_under_ten.py`, tested with city_names and preflight (0 problems), reverted. Four more Cardiff trees from the same verify pass went live with the 11-06 night run.
+
+Count on main with the held trees: Glasgow 10, Cardiff 13, Brighton 9, Liverpool 4, York 6, Manchester 5, Stratford 2, Windsor 1. York and Stratford found nothing that ships on one pass each; Manchester was walled and not retried. Honest supply ran out here; the next angle is a browser on the Tree Register's county champion lists.
+
+Breakage: the 11-06 night run overwrote data/research/brighton-verified.json with an empty list while the three Brighton trees sat uncommitted in it; recovered from the agent transcript into brighton-verified-2.json. Windsor's Tree Register oaks stay leads, because those records say they were copied from the Woodland Trust inventory. city_names.py matched Windsor to Legoland; data/city-aliases.json now names it Windsor.
+
+
 ## 2026-11-09 session: Northern Ireland and Highlands run, the bookkeeping
 
 **What changed in the product:** nothing new today. The 19 trees of this run are already live: 16 app-only in the 2026-11-06 publish (311725714), plus Belfast's three (bfs_006 to 008). Castlewellan 4, Ardkinglas 2, one each at Florence Court, Crom, the Dark Hedges, Rostrevor, Armagh, Gosford, Reelig Glen, Inverness, Glen Affric and Benmore. Six have a photograph.
