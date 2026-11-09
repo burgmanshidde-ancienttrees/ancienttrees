@@ -242,8 +242,10 @@
    "file": "ios/AncientTrees/AncientTrees/Screens/AmbassadorBadge.swift",
    "summary": "Discover's ambassador row does nothing when tapped on Hidde's phone on build 41, signed in and signed out; the row shows normally with its arrow. All simulator walks open the sheet (Debug and Release, fake and real test account, moving GPS)",
    "first_seen": "2026-11-09",
-   "status": "open",
-   "found_by": "hidde"
+   "status": "fixed",
+   "found_by": "hidde",
+   "no_test_reason": "Only a physical iPhone shows it: thirteen simulator walks, Debug and Release, opened the sheet on the broken code. Confirmed by a logged tap on Hidde's phone before and after the fix.",
+   "fixed_in": "17c3afa0d"
   }
  ]
 }

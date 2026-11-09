@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 session: Discover's ambassador row
+
+**App, in the next build (42):** the ambassador row on Discover opens again. On build 41 a tap reached the button and the sheet was asked for, but iOS never showed it: Discover's outer LazyVStack had thrown the row away and rebuilt it. Logged on Hidde's iPhone, confirmed fixed there with a VStack ("hij doet t nu wel"). Build 41 in the store still has the bug.
+
+**Testing gap:** no simulator walk showed it (Debug and Release, real test account, moving GPS, reopening). The earlier "confirmed on build 41" closure of 2026-11-09 was too early.
+
 ## 2026-11-09 session: the Mozart-Platane leads with Hannah Mayr's photograph
 
 Vienna vie_005: her photograph (sent by mail, permission to use with her name) is the lead, GuentherZ's Commons photo moved to the strip. She has no account on the address we wrote to, so it is credited by name with `source: mail`, not linked as a contributor. The page counts as unique to us (`unique_photo()`). Her reply is drafted in drafts/reply-hannah-mayr-2026-11-09.md, waiting for his yes.
