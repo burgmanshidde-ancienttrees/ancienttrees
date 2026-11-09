@@ -11,6 +11,10 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 session: /cities no longer lists places under four trees
+
+Hidde: "alles onder 'places with fewer than four trees' mag wat mij betreft weg." The section, its counts and its styles are gone from /cities (it was only on the English page). Those places keep their map pin, search entry, country-page row and page. The grid of cities is unchanged.
+
 ## 2026-11-09 session: Barcelona, the Sot de l'Estany is closed
 
 The Amics del Jardí Botànic wrote that the Sot de l'Estany has been shut since the July landslides, reopening unconfirmed for January 2028, and the Sot de la Masia stays open. The access line of the four trees they named (wingnut, green ash, narrow-leaved ash, sycamore) now opens with that, as does the hornbeam's, which stands in the same Sot though they did not name it; the city FAQ answer says so too. When it reopens, take the closure sentences out of access (verify_notes on each says so). Reply drafted, not sent: drafts/reply-pere-vives-2026-11-09.md.
