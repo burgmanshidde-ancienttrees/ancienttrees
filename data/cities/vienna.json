@@ -222,14 +222,26 @@
       "access": "Free, public sidewalk",
       "transport": "5 min walk from the Rennweg tram stop (Tram O)",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/GuentherZ_Naturdenkmal_009_2010-02-26_0095_Wien03_Rennweg14_Mozartplatane.jpg",
-        "license": "CC BY 3.0",
-        "attribution": "GuentherZ, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/vie_005-the-mozart-platane-mayr.jpg",
+        "license": "Used with permission from Hannah Mayr; credit required",
+        "source": "mail",
+        "attribution": "Hannah Mayr",
         "status": "approved",
-        "width": 1071,
+        "width": 1066,
         "height": 1600,
-        "taken_month": 2
+        "note": "From her series on trees in urban settings, sent by mail on 2026-11-09 in answer to our photo ask of 2026-11-01: 'Sie können es aber gerne unter Nennung meines Namens aufnehmen, ich schicke es anbei mit.' Looked at 2026-11-09: the forked, partly hollow trunk with its plaque, the fence of the Botanical Institute and the Rennweg behind yellow site barriers, full crown in leaf, daylight and colour. Not an open licence: credit her and ask before reuse elsewhere."
       },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/GuentherZ_Naturdenkmal_009_2010-02-26_0095_Wien03_Rennweg14_Mozartplatane.jpg",
+          "license": "CC BY 3.0",
+          "attribution": "GuentherZ, via Wikimedia Commons",
+          "status": "approved",
+          "width": 1071,
+          "height": 1600,
+          "taken_month": 2
+        }
+      ],
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 9, protected since 22 December 1936. Coordinates from the Wikimedia Commons category page for this natural monument.",
       "location_precision": "confirmed",
