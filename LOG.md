@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-09 daily publish (scheduled task): 25 trees into the app
+
+- **What went on main (c6b78d493), app only under APP FIRST, no web page or place page:** Cincinnati 8, St. Louis 6, Indianapolis +3 (ind_002 to 004), Lexington (Kentucky) 2, Huntsville (Alabama) 2, Birmingham (Alabama) 1, Brighton +3 (bhm_007 to 009). None has a photograph yet. Preflight 0 problems; the 25 is this task's own limit, the pace counts nothing while APP FIRST holds. Done from a worktree on the newest main, because the shared checkout was 62 commits behind.
+- **Not checked live yet:** three deploys in a row were cancelled by newer pushes from other sessions (42685153978, 42685786418). Before any deploy carrying them: /brighton 200, /cincinnati 404, as APP FIRST wants. The 25 still need to be seen in /api/cards.json after the next deploy that finishes.
+- **Copy changed:** build_us_empty_cities.py writes "Four remarkable trees" into Indianapolis's meta and makes ind_002 the hero; preflight refused the count (the web shows only the Kile Oak). Meta now names no number, the hero stays ind_001, intro and FAQ keep the builder's four-tree text for the app. Indianapolis has no web place page at one web tree. When its trees get pages, the meta and hero can follow.
+- **Still waits, 28 trees, about two days at 25 a day:** build_uk_under_ten.py: Eastham Yew (Liverpool), Bute Park Tulip Tree (Cardiff), Windsor's two; build_source_led_2026_11_09.py: Cleveland 5, Ann Arbor 3, Lansing 2, Sacramento 2, Santa Cruz 2, ten south-east England yews. The earlier "queue empty" no longer holds, so the daily task stays on. No claims stood on today's places.
+
 ## 2026-11-09, six source-led runs: 25 trees written and held for the app
 
 Written and waiting for the daily publish: Cleveland 5, Ann Arbor 3, Lansing 2 (East Lansing), Sacramento 2, Santa Cruz 2, ten churchyard yews in Surrey, Sussex and Hampshire, and a second Windsor tree (`python3 scripts/build_source_led_2026_11_09.py`; Windsor through build_uk_under_ten.py). Tested with city_names and preflight, 0 problems, reverted.
