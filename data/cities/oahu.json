@@ -1253,6 +1253,41 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "hnl_024",
+      "name": "The Waikiki Aquarium Banyan",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "girth_cm": 2133.6,
+      "height_m": 16.5,
+      "location": {
+        "address": "Ewa (west) side of the Waikiki Aquarium, makai of Kalakaua Avenue, 2777 Kalakaua Avenue, Honolulu",
+        "latitude": 21.2657,
+        "longitude": -157.8222,
+        "neighbourhood": "Waikiki / Kapiolani Park"
+      },
+      "story": "Honolulu's tree register describes this banyan with two numbers that cannot belong to one trunk. Its girth column says 21.3 metres round. Its diameter column says 160 inches, about four metres across, and a single trunk that wide would measure under 13 metres round.\n\nThe likely answer is that the tape went around everything the tree stands on, the first trunk together with the aerial roots an Indian banyan lets down from its branches, which thicken over the years into extra legs. What you are looking at is less one trunk than a grove grown out of one, and at 16.5 metres tall it has put more into spreading than climbing.\n\nThe city assessed it in January 2017 and rated its condition good. A 2025 City Council bill restating the register puts it on the Ewa side of the Waikiki Aquarium, the side facing Ala Moana, on the ocean side of Kalakaua Avenue.\n\nWhat no source settles is which side of the aquarium's fence it grows on. The aquarium charges admission, so the tree may sit inside the ticketed grounds or just beyond them, and you should be ready for either. The Natatorium banyans, the inland one wider still, stand close by on the same stretch of shore, so one short walk takes in both.\n\nNo record gives its age. If you know when it was planted, let us know.",
+      "how_to_recognise": "You can recognise it as the big banyan on the Ala Moana side of the Waikiki Aquarium, 16.5 metres tall and over 21 metres round in the register. It stands on the ocean side of Kalakaua Avenue.",
+      "verified_sources": [
+        "https://data.honolulu.gov/d/84fd-3fzf",
+        "https://hnldoc.ehawaii.gov/hnldoc/document-download?id=26197"
+      ],
+      "official_register": {
+        "name": "City and County of Honolulu Exceptional Trees register (Act 105, Revised Ordinances of Honolulu 40-8.7)",
+        "id": "396",
+        "url": "https://data.honolulu.gov/resource/84fd-3fzf.json?register_id=396"
+      },
+      "access": "On the Ewa side of the Waikiki Aquarium, which charges admission. No source settles whether the banyan stands inside the aquarium's fence or just outside it, so expect either.",
+      "transport": "TheBus routes 8, 23 and 24 serve Monsarrat Ave at Kapiolani Park (Outdoor Circle walk guide); about 15 to 25 minutes on foot from central Waikiki.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register 396: girth 2133.6 cm (70 ft; register diameter 160 in = 407 cm disagrees, multi-stem mass), height 54 ft = 16.5 m, vitality Good, assessed 27-Jan-2017. Bill 66 (2025): 'Ewa side of Waikiki Aquarium, makai of Kalakaua Avenue' (TMK 3-1-030:003). Pin from OSM aquarium point (Nominatim 21.26567,-157.82172) moved slightly Ewa; approximate. Aquarium grounds are ticketed; whether this tree stands inside or beside the fence is unconfirmed, so flagged. Only blog/travel mentions of 'a banyan next to the aquarium' (search snippets, not fetched pages), so not used as a source. No age.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

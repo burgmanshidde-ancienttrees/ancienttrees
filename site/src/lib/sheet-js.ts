@@ -270,7 +270,7 @@ export const SHEET_JS = `
 
   // Reset cleanly when the layout crosses into the desktop split, where the
   // sheet does not exist as a concept.
-  mq.addEventListener('change', function() {
+  function onLayoutChange() {
     if (!mq.matches) {
       sheet.style.transform = '';
       sheet.removeAttribute('data-detent');
@@ -280,7 +280,10 @@ export const SHEET_JS = `
     } else {
       setDetent('peek', false);
     }
-  });
+  }
+  // Safari before 14 has addListener only.
+  if (mq.addEventListener) mq.addEventListener('change', onLayoutChange);
+  else if (mq.addListener) mq.addListener(onLayoutChange);
 
   // The peek is one header tall, so it has to be re-measured whenever the
   // header can change height: a rotation, a keyboard, a font arriving late.

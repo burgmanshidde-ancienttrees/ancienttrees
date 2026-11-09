@@ -23,6 +23,23 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-09
+
+Web half: the last 24 hours were data (Vienna, San Francisco, Porto write pass, Upper Austria register), one web-errors fix and build 41. No em dashes in site/dist HTML. Standing findings are unchanged.
+
+- WARN site/dist/explore.html still says "Each pin opens a tree with its age, its species, why it is worth the walk, and directions from where you are" while app-only pins open a card with no story ("Read its story in the app", APP_ONLY_PINS). Fourth review. Hard rule 2 and "a decision that changes what the product does also changes what the product says". Replacement: "Each pin opens a tree; some stories are in the app." Translations too.
+- WARN site/src/pages/contribute.astro:17 and :401 still say "verified against independent sources" / "check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Fifteenth review in a row. Replacement: "We read every submission before it is kept."
+- NOTE the open question from 11-07 stands: data/walk-routes.json routing through app-only trees that have no page is unchecked.
+- NOTE (Monday, corpus rot) CLAUDE.md's north star still says "a walk past a few" and the ladder still lists walks and Season while DECISIONS 2026-11-04 set Walks, Season and Plus aside in the app. Suggest one line under "What this is": "walks and season are dark in the app since 2026-11-04; the web keeps them".
+- NOTE (Monday, copy reading) the strings added to i18n.ts and signin-strings.ts this week were skimmed; nothing ungrammatical found. No new AI_SHAPES to suggest.
+
+App half (iPhone SE: early-adopter, explore, feedback, map-full, map-pin, map; map-full and map were skimmed, they read like map-pin):
+
+- NOTE APP feedback.png: "We check every vote, correction and tip" again (see 11-08). Live-first (2026-10-24) means photos and notes are public before a check. "We read every vote, correction and tip" holds for all. For a session.
+- NOTE APP map-pin.png: the map is on Amsterdam while the open card is "Dąb Fabrykant" with a Polish name, a tree that is not in view, behind a sheet that hides the pin it belongs to. Probably the sweep opening a tree by id; if a person can reach this (a deep link or search from far away), the map should fly to the tree.
+- NOTE APP early-adopter.png: the profile shows "Paris ambassador" over an Amsterdam map for the test account. Fixture, nothing a visitor sees.
+- explore.png: nothing found (Discover's "529 trees at their best this month · 11 within 20 km of you" is consistent with the cards below).
+
 ## 2026-11-08
 
 Web half: last 24 hours were data (app-only trees, Lyon +10, Chicago, Salt Lake City, claims). No em dashes in site/dist HTML. Standing findings are unchanged.
@@ -217,16 +234,4 @@ App half (iPhone SE: review-ask, search, signin-email, signin, species-pick, spe
 - NOTE APP signin-email.png is again pixel-identical to signin.png (three buttons, no email field), second night running: the email step has not been seen by any review since 10-25. A session should check the sweep taps "Continue with email".
 - NOTE APP signin sheet: "Sign in to keep this one" over a bare tree photograph with no tree named, so a person who arrived from a map or search cannot tell which "one". Fine from a tree page; worth a look from other entry points.
 - search, species-pick, species read consistently: no contradiction, no clipped photograph, counts plausible (Lisbon 37 trees, Aleppo Pine 20 on the map).
-
-## 2026-10-25
-
-Web half: last 24 hours were the Add a photo / notes-card move on the tree page (web and app), the one shared map card, digest changes and night-run logs. Read the built Totteridge yew page for the new grey photo and notes cards (present, strings match i18n.ts) and checked the built site for em dashes (none in three sampled pages). Not a Monday, so no corpus or copy audit.
-
-- WARN (sixth review to see it) meta description still prints a planting year as an age: 106 built tree pages match `description" content="...(15xx-20xx)-year-old`. Worst reading: /cork/1870-magnolia-of-fota says "A 1870-year-old Campbell's Magnolia" (the tree is named for its planting year, so it is about 156), /leiden/old-plane-of-the-plantsoen "A 1800-year-old London Plane", /seattle/wedgwood-scarlet-oak "A 1920-year-old Scarlet Oak". Also "A 1870" is ungrammatical. Hard rule 2 (never fabricate tree facts) and Verify (a derived age states its basis). Prose findings have not held this for two months and grep finds no check for it in scripts/qa.py: it needs a qa.py check on built HTML first (refuse a four-digit year from 1500 to 2025 directly before "-year-old" in any description meta), then the fix at the meta template.
-
-App half (iPhone SE: profile/Settings, refused, review-ask, search, signin-email, signin):
-- NOTE APP search ("lis"): the species row reads "Elm, listed as Lombarts' Elm" with "Ulmus 'Lombartsii'" under it. "listed as" is a data label leaking into a reader-facing species name (Hard rule 9: one canonical common name per species). Either the canonical name alone or the cultivar name; the bold run also spans "listed as Lombarts' Elm" although only "lis" matched.
-- NOTE APP signin-email.png is pixel-identical to signin.png (the three-button sheet over the same background, no email field), so the "Continue with email" step was not captured and the email screen got no look tonight. Sweep fault, not a product fault; a session should check the sweep taps the button.
-- NOTE APP Settings sign-in row: "Register and sign in to add and save trees." Two verbs for one act, and "add" sits oddly beside the 2026-10-24 live-first rule (a reader's photograph is public when sent). If photographs and notes need an account, say so in one verb ("Sign in to add and save trees"); if they do not, the line promises a gate that is not there.
-- Other four screens read fine: no contradiction, no clipped photograph, no stray count.
 

@@ -1,5 +1,14 @@
 # LOG
 
+
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-11](archive/LOG-2026-11.md)
+- [2026-10](archive/LOG-2026-10.md)
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
 <!-- archive-index -->
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
@@ -20,6 +29,39 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Gaps for the next sessions:** location and trees near me (the map opens on Europe), species shapes in the pins, the same-spot stack (one spot, two trees), brand font, walks, sign-in, collect, season, Play Store. No gradlew or wrapper jar committed; CI installs Gradle 8.14.3.
 - **For Hidde:** Android Studio only when asked for the first look; Play account and closed test stay his.
 
+
+## 2026-11-09, 07:00 window (night run)
+
+- Rung 1 clear. Rung 2: the same two open app BUG rows (Discover ambassador seat, map pin blink), still needing the Mac and simulator; left open. Health also wants a deploy dispatch (main is ahead of the live build).
+- Shelf under the write floor. Refill: San Francisco verify pass, 0 new trees (nine unmined rows already judged; Big Trees champion `ca-bigtrees-442` has no second source, stays a lead). Wall. The SF claim stays until sfo_012, 014, 015 are written.
+- Scouting RETRY, Hallstatt: fetched the Upper Austria Naturdenkmaeler INSPIRE GML (446 polygon sites, names and Bescheid dates, no species or measurements). It names real trees near Hallstatt, Bad Goisern and Bad Ischl (yews, a thousand-year lime, lime groups). Then imported the same window: licence line (CC BY 4.0, read from data.europa.eu) in OPEN_DATA_SURVEY.md, `scripts/import_ooe_naturdenkmaeler.py` (UTM33 to WGS84 checked against two known yews), `data/registers/ooe-naturdenkmaeler.json` (349 tree-named sites, `publish_dots` False, centroids approximate). Hallstatt already publishes its headline monuments, so the yield is for unmapped Upper Austria places (Linz, Steyr, Wels). The deploy dispatch was refused (HTTP 403, token cannot dispatch workflows), so main stays ahead of the live build until the next push-triggered or scheduled build.
+- For Hidde: nothing needing him.
+
+## 2026-11-09, 01:22 window (night run)
+
+- Rung 1 clear (no photographs, no notes). Rung 2: fixed two web error types from old browsers (Safari before 14 `matchMedia.addListener`, browsers without `<dialog>.showModal`); invisible change, commit 303f6bab9. Not built or smoke-run here (no site build in this runner).
+- Open app BUG rows (Discover ambassador seat ignores a tap; map pins blink after fresh install) need a Mac to reproduce and test; left open, not guessed at.
+- Shelf: the writable pile is about 21 trees across scattered places plus one READY lead (Segovia). Braga claimed and released at once (5 leads, under the six minimum), so it is a 48h wall. Vienna verify pass: 2 trees (Prater oak vie_060, Heustadelwasser lime vie_061, access flagged), 4 leads. The claim stays until the two are written; release is refused until they are merged.
+- Health also asks for a deploy dispatch and a nightly knock (GitHub dropped 6 of 12 crons).
+- For Hidde: nothing needing him.
+
+## 2026-11-08 (window from 18:55 UTC): nothing new published
+
+Rung 1 empty (no sightings, no notes). Rung 2: health shows two open app BUG rows found by Hidde (the Discover ambassador seat ignoring a tap, map pins blinking on a fresh install). Both are Swift UI bugs that need the simulator and a UI test, which this Linux runner cannot run, so I left them open. For Hidde: both still need a session on the Mac.
+The writable shelf is empty: the only unwritten trees sit in files with fewer than six candidates, and the rest of the "awaiting a writer" list is stale files. I claimed Guimaraes for a verify pass. It verified 0 trees, because every register row is already live, a lead or blocked. The Moreira de Conegos stone pine is real but has no evidence of public access. Guimaraes is a wall for 48h.
+
+## 2026-11-08 night run (window from 16:29 UTC)
+
+- **Porto gets the three protected trees of Quinta de Villar d'Allen** (write pass, scripts/build_write_2026_11_08b.py, app-only under APP FIRST): por_032 the 40-metre bunya pine, por_033 the blue Atlas cedar with a 20-metre crown three metres from it, por_034 the Japanese umbrella pine with a register girth of 3.15 m about 20 m away. Each story leads with its own fact so the three do not read as one template; ages carried as the register's ~150 with a 120 to 180 band, nothing bridged from the 1839 estate date. Access line rewritten from the cited council page ("Visitas guiadas aos jardins: mediante marcação prévia", listed for visitors), since preflight read the bare "by prior appointment" as permission; hard rule 10 counts a bookable tour as yes. No best_time (all three evergreen). Porto 32 trees. Preflight 0 problems. An earlier attempt at this pass stopped early with no story written; this one finished it, and also commits that attempt's uncommitted verify output (porto-verified.json, the leads file).
+- **Salt Lake City reaches its target of 20** (rung 5, US first): wrote and merged slc_019 (Lavalle hawthorn) and slc_020 (red horse chestnut), both on the University of Utah campus beside the champion cork oak, ash and zelkova. Both are app-only under APP FIRST. Preflight 0 problems.
+- Rungs 1 and 3 empty (no reader photos or notes waiting). Rung 2: health.py shows the two open app bugs found by people on 11-08 (ambassador seat, pin blink). Their fixes are on the merged QA branch, and only a Mac or iOS CI run can close the rows, so I left them open. The iOS app workflow's scheduled failures need a session to read the run logs.
+- **Segovia scouted** (scout_next target): premise was off, the city already has 6 trees and its Castilla y León register is imported. One new lead (El Espinar sequoia, AS-SG-22, access unconfirmed), verdict `imported` in data/register-scouting.json.
+- **For Hidde:** seg_003 (Andromeda parterre sequoia, AS-SG-09) is published, but our own blocked lead says a 2020 news report has Patrimonio Nacional felling "the Andromeda sequoia". A second search today found no such report and says four sequoias stand in that parterre, so it is unsettled which one went. Left published; a session should settle it with a dated photo or Patrimonio Nacional.
+- The shelf has no writable pile left (0 READY leads). The remaining verified files are mostly stale, as passcheck says.
+- **Three trees in, app-only under APP FIRST** (write pass, scripts/build_write_2026_11_08.py): gui_009 the stone pine on the acropolis of the Citania de Briteiros (Guimaraes, 9 trees), hnl_024 the Waikiki Aquarium banyan (Oahu, 32; its hold lifted under hard rule 10, since inside or outside the ticketed aquarium anyone can reach it, and the access line now says so), and the Penacova wisteria pergola as a new one-tree place, penacova/pcv_001 (was cbr_007, outside Coimbra's day-trip bound). Preflight 0 problems.
+- Still held, each for its earlier pass's reason, which still stands: asp_001/002, ssb_002/003, cbu_001 (register points in forest, no tell), dmr_002 (no sighting since 2019), ftw_024/026 (no tell), frk_027 and inn_007 (schoolyard and private yard), brd_001 and cdl_001 (hospital and kindergarten courtyards), not_002/003 and sgz_005 (access unknown), tmt_001 (register group), sfo_012 (duplicate of sfo_004, fold in), sgz_003 (its access line still reads as a booking that needs permission; ships once a source says the Ocuri tours are open to anyone). The Segovia El Espinar sequoia lead is not verified (six similar trunks, access and life open), so it was not written.
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 ## 2026-11-08 session: build 41 archived
 
 - **In the Organizer, 1.0.4 (41), from 4a8884293 with ios.yml green on that commit** (run 42484867118) and the catalogue refreshed to 4,690 trees and 407 walks. Carries branch claude/gifted-cerf-cbp95i (merged to main) and New from visitors' name at 44 points to tap (the iOS 18 floor's last SMALL; appfit 0 findings on the SE, iOS 18). The floor job does not run on a push, so it is first read on the next schedule.
@@ -206,162 +248,4 @@ Prepare's 7-day visits line was not in its output. No tool call was refused. Ope
 - **Italy and Spain:** build_italy_south (Agrigento 8, Palazzolo Acreide, Noto, Ragusa, Benevento, Portici, Castellammare, Monte Faito, Sila, Serra San Bruno), build_italy_central (Spoleto 6, Vallombrosa 4) and build_andalucia (Cazorla 5, Grazalema, Alpujarras, Aracena) merged, app only. The scripts' rewrite of the Granada, Malaga, Ronda, Naples and Palermo meta and FAQ was dropped (count-promise failures); their trees went in afterwards, see below. Three Andalucia files had `curation_status: verified` (set to flagged) and Cazorla's "Turpentine Tree" became Terebinth. Four more stories written (Oahu banyan, Penacova wisteria, two Tucson) but left unmerged: the Tucson pair carry an earlier hold, Penacova is outside the day-trip limit, the Waikiki banyan's ticket status is unclear.
 - **Canaries, Azores, Algarve:** Santa Cruz de Tenerife 9 (ids renamed sct_ to stz_, since Scottsdale holds sct), Angra do Heroismo 2 and Tavira 1 merged, app only. Granada 2, Malaga 1 and Ronda 4 then grafted into their live pages with the live copy untouched (the builds' grown meta and FAQ promise more trees than the web shows while the new ones are app-only; Naples, Palermo, Azores already held theirs). Not done: the Tenerife and Azores grown intros.
 - **READY leads are inflated:** a write pass over the 23 READY leads in Washington DC and New York found 22 that an earlier pass had already declined in its own words (dead, young, private, no pin, duplicate), so `leads.py --ready` overstates the writable pile. Only the Fort C.F. Smith tulip tree (wdc_042, approximate pin, no photo) shipped, Washington DC now 34. Those 22 want marking as declined in their lead files.
-
-## 2026-11-05 night run (23:09 window): rung 2, deploy repaired
-
-- **Rung 1:** no photographs waiting; one tree note ("Test" on bcn_012), marked seen.
-- **Rung 2:** every deploy since the 22:45 daily publish failed at content sync: `curation_status: "verified"` is not in the schema (ai_generated|hidde_approved|flagged). Seven trees across Atlanta, Nashville, Tampa, Jacksonville and Orlando set to `flagged`, matching their siblings. Preflight now refuses any other value (`check_city`), so the next push breaks before the deploy does. Preflight 0 problems; pushed as cc20cae98.
-- **Not done:** `gh workflow run deploy.yml` returned 403 from this runner, so the live site stays behind main until the next scheduled or hand-dispatched build. Postbox check failure (8h ago) and the dropped knocks (6 of 12) not looked at; the window was spent on the build.
-- **For Hidde:** none beyond dispatching deploy.yml if the next scheduled build does not pick it up.
-
-## 2026-11-05 daily publish (scheduled, 22:45 UTC): 59 US trees into the app, 26 new places
-
-- **What went live (b7345d923), app only under APP FIRST, no web page, pin or sitemap line:** Tucson 11, Boulder 5, Oakland 4, Salem MA 3, Santa Fe 3, Prescott 3, Orlando 3, Lafayette LA 3, Media PA 3, Jacksonville, Baton Rouge, Glen Ellen, San Jose 2 each, and 13 one-tree places (Albuquerque, Denver, Flagstaff, Glendale AZ, Scottsdale, Sedona, Lexington MA, Sebastopol, La Crosse FL, Safety Harbor, St Augustine, Tallahassee, Tampa). From build_us_southwest (now committed), us_florida_texas, us_live_oaks, us_boston, us_california, us_philadelphia; new places only, copied from dry builds in out/tmp/dry/. The night run had merged the Northwest, Midwest and Southeast sets an hour before (628874b0b); its versions were kept. App-only trees do not count for the pace, so the 25 did not bind.
-- **Changed:** preflight's count promises now count every tree for a place with no web tree (its prose is read in the app beside all of them); before, every new app-only place read as "0 trees" against its intro. Six species names aligned to the live ones (Horse Chestnut, Himalayan Cedar, Silk Floss Tree, Olive, Douglas Fir, Lacebark Elm), sct_001 shortened to "Winfield Scott's Olive Trees", Scottsdale's meta trimmed.
-- **Still waits (new places, dry builds list them):** UK about 75 trees in about 70 places (uk_north and uk_west mostly single churchyard yews, uk_ni_highlands 16, uk 13, uk_south 7), Iberia 23 (Tenerife 9, Cazorla 5), Italy south 34 (Agrigento 8, Portici 5), Greece 10, Croatia 9, Thailand 5. italy_central refuses (rom_032 already live); uk_under_ten and us_empty_cities miss their place files. At this rate the UK goes next run.
-- Note: the pull's autostash of other sessions' unstaged work conflicted on data/city-aliases.json; HEAD's version was kept and city_names.py rerun. The stash entry is kept (`git stash list`), not dropped.
-- **Breakage, mine:** this publish's deploy failed on `curation_status: "verified"` (Jacksonville, Orlando, Tampa from the research files, with the night run's Atlanta and Nashville); the 23:09 night run above repaired it before this session could. Its build then failed qa on three more things, fixed in 9d5a06a4b: the retired-question check asked stubs for 22 app-only one-tree places that never had a web page (it now counts only trees that have been on the web), three unmeasured photos (photo_res), and a reader's account id in the Fribourg sighting lead's photo path (now its code). Deploy green; live /api/trees.json carries tus_001, bld_001, oak_001, sct_001, orl_001, and /tucson is a 404 as an app-only place should be.
-
-## 2026-11-05 session: deploy green again, ahead of the Guardian
-
-- **Context:** Joe Pinner (Guardian environment desk, Scott Trust bursary, profile checked live) asked for an interview after today's national press batch mail to environment.desk; Hidde's reply is drafts/reply-joe-guardian-2026-11-05.md, call 2026-11-06 12:00 UK.
-- **Live now (build 04938e18, then e635e434):** the search index listed all 230 app-only trees (search results opening pages that do not exist), so qa's app-first check failed every deploy from 15:09. It now lists only trees with a web page; live search has 4,046 rows, none app-only.
-- **Smoke test green:** it picked Aachen, whose one-tree place page is now a redirect stub; stubs are skipped. The next city's tree page then showed DRIFT on the nearby cards' edge-to-edge photo block, which the rule already exempts in words; the code now does too (a painted child spanning its column is skipped).
-
-## 2026-11-05 night run (window from 17:49 UTC): 25 US trees in the app, a reader's cedars ready to build
-
-- **Rung 1:** a reader's photograph of three Atlas cedars at Préfargier (La Tène, Neuchâtel), GPS fix, daylight, a clear frame, seen from a public footpath. Verdict written; the tree page is built as scripts/build_la_tene.py but not run: this runner has no Pillow and `pip install` was refused, and the photo must be rotated upright first. For Hidde: nothing; the next run with Pillow runs it, then city_names.py and preflight.py.
-- **Product:** 25 new trees, app-only under APP FIRST: New York 14 NYC Parks Great Trees (52 to 66), Atlanta 11 (new place, Trees Atlanta champions). Preflight 0 problems. Held: nyc_085 (species field), nyc_094 and nyc_029 (duplicate check), nyc_031 (id clash). Then the rest of the written US batches merged with their builders (second commit, pushed, preflight 0 problems): Tacoma 10, Vancouver WA 4, Salem OR 2, Madison 5, Milwaukee 6, Wisconsin's small places 14, Nashville 8, Asheville 4, Smoky Mountains 3, Chattanooga 1, all app-only; three intros that promised a tree count were reworded, since app-only places show zero on the web.
-- **Breakage:** Postbox check fails on sqlcheck: plus_answers.other_text (supabase/plus-answers.sql) is not pasted in Supabase; Hidde said he pasted it, so re-run the paste or the check is stale. WebGL web errors: all 22 reports are from builds before the atCanMap guard; answered in health.py.
-
-## 2026-11-05 session: the app no longer holds on a return, Plus question tidied, switches without a release
-
-- **The hold on coming back to the app** (Hidde: "als ik terugkom heeft de app even nodig"): every new feed (most deploys) made the map draw a pin image per species NAME, a few hundred, on the main thread; there are about fifteen shapes. Pins are now drawn per shape, and the 12 MB of downloaded feeds is written off the main thread. Simulator, 17 Pro: the map's tree sync from 2.15 s to 0.12 s. A 40-second walk over map, list, Discover and My trees afterwards kept the main thread busy 0.35 s in all. Needs build 40.
-- **Plus question:** "Something else" with a field (plus_answers.other_text; Hidde pasted the SQL), "None of these" gone, five options; the row on a city and in Settings goes once this phone or browser has answered (device by his word, data/cross-device.json).
-- **Switches without a release:** data/app-switches.json, read by the website at build and by the app from /api/version.json at every launch and return. plus_ask=false hides the Plus question everywhere at the next deploy.
-- **App, smaller:** "Groenoord, Leiden" under a tree's name; the city box in the website's font and numbers; the snackbar takes the Map pill's place; the place name closer to the grabber.
-- Tests: 69 of 69 (unit plus SignedOutWalk and AncientTreesUITests) on the 17 Pro. Live site checked at 375 px: Plus question with Something else.
-- Open: the map's list without a place still shows the old tall cards; only a city or country has Highlights and rows.
-
-## 2026-11-05 session: Dorit's third mail answered; the DDG Champion Trees list tried on Munich
-
-- **Sent**: reply-dorit-2026-11-05b (BUND Naturschutz München), on his "reply to her mail your draft was fine". Yes to her offer of an article in the Baumzeitung (she asks what she needs from us), and yes to her photographs with her name (they come via Swisstransfer; their licence is "Used with permission from Dorit Zimmermann; credit required"). She sends her Munich feedback after the weekend.
-- **What changed in the product:** muc_066, the Hollow Lime of Obermarbach, is now a small-leaved lime, about 22 m tall. Its story in English and German explains the girth (about 11 m above today's ground, 7.3 m above the old stem base, where the sunken lane has washed the soil away) and no longer asks readers which kind of lime it is. Source: the DDG Champion Trees record 11322, photographs March 2024.
-- **The list** (Dorit's tip; championtrees.ddg-web.de, Deutsche Dendrologische Gesellschaft): 12,981 trees, records with girth, height, access and often GPS, everything (c) DDG, so it is a finding aid only. Notes: data/research/ddg-champion-trees-2026-11-05.md. **For Munich it is thin**: 77 records in the city and five surrounding districts, mostly exotics in the Nymphenburg botanical garden and the Grafrath forestry trial garden, 17 with GPS, and none of our big Munich trees. One matched (muc_066), and the Eisolzried oak was already live. 8 new leads in data/leads/munich.json (an 8.71 m lime at Weichs, the second-biggest yew in Bavaria at Hebertshausen, a 5.33 m ash by the Monopteros, Grafrath's sequoias, a national-champion wingnut in the Alter Botanischer Garten and others), each needing a second source. Bavaria holds 1,041 records, densest in Nürnberg (124), Würzburg (145 city plus district) and Coburg (59); start there if the list is used again. Harvest scripts in out/tmp/ddg_*.py.
-
-## 2026-11-05 session: a place with one tree has no page of its own
-
-- **What changed in the product:** the 445 places with one tree on the website lose their place page (a map with one pin and one card, noindexed for every engine since 10-01): `/<place>`, `/<place>/` and `/cities/<place>/` redirect to the tree. On that tree page the back arrow, the bigger-map button and the place link go to the explore map at the tree's spot (`/explore#map=15/lat/lng`), and the place name in the crumbs is plain text. Hidde, after the Lebec example: "ja dat mag". Ibiza (es) and Takeo (ja) keep theirs: a kept translation exists. Site now ~6,050 urls.
-- **How:** site/src/lib/place-page.ts (`placeHasPage`, `exploreAt`); [city].astro builds only places with a page; redirect-map writes the three stubs; TreeDetail's expand url keeps the explore hash; thin_pages.py reads `PLACE_PAGE_MIN_TREES` from the file and lists no place url for them; the kept set counts only places with a page (136).
-- **Breakage today, fixed:** four deploys in a row failed on what the shelf batch and the trim exposed (a count over app-only trees, nulls in shelf entries, four cities without a face in the app, one missing import). Nothing of today's site work was live until the deploy after 7d42ec366; check it live before calling any of it done.
-
-## 2026-11-05 session: capitals and national press open, ten drafted; nature-guide-2026-11-06 sent
-
-- **Rule changed** (Hidde, after the second Bristol interview: "ik denk dat we wel klaar zijn voor hoofdsteden en landelijke media"): capital and national desks may be mailed. `CAPITALS_OPEN = True` in scripts/contacts_db.py (False holds them again); CLAUDE.md rung 4 and OUTREACH_STRATEGY.md's press row say so.
-- **Sent**: nature-guide-2026-11-06, twelve mails, on his "Verstuur". Earlier today scripts/sent_drafts.py learned that every `batch-` preview logs under its own tag, so 11-04's batches stopped reading as unsent.
-- **Drafted, waiting for his word**: press-national-2026-11-06 (gitignored, in the private store). Three Variant A: Diário de Notícias, Mensagem de Lisboa, Irish Examiner. Seven Variant B: Observador, the Guardian environment desk, Manchester Evening News, The Herald, Billy Penn, Die Presse, Belfast Live. mailcheck is clean.
-- **Data fix**: the Observador article on por_021 (São Lázaro magnolias) is about a different magnolia, in a courtyard in Ramalde. It is off the tree's sources and kept as a Porto lead.
-- Skipped, with reasons: the Boston Globe (no news desk on its own pages); De Morgen, Il Gazzettino and Público (no address in their pages); the Toronto Star, Salt Lake Tribune, Diario de Navarra and WalesOnline (no approved photo in their city).
-
-## 2026-11-05 session: city list redrawn, direction C, web and app (Hidde: "i like option c", "1b, link")
-
-- A city's list, under its name: one white box with the ambassador (named: "Lisbon ambassador · Become one too"; nobody: "Become the Barcelona ambassador") and "Help create Ancient Trees Plus", then **Highlights** (a sideways shelf on a phone, a two-column grid on desktop), then **All n trees** as compact rows with a 64 point square. A tree without a photograph is a pale square with its species, no longer a tall green block. The affiliation left the ambassador line.
-- Highlights are data: `highlight: true` in the feed from site/src/lib/highlights.ts (today: has a photograph; later a pick, with no client change).
-- Ages on cards are a number or nothing ("planting date never recorded" and the lone trailing dot are gone, lib/age-short.ts).
-- App: "Location off · Use my location" moved from under the search field to the sheet's edge, level with the locate arrow. A swipe that raises a sheet no longer opens the row under the finger (sheet drag clock).
-- Needs build 40 for the app. Web goes live with this deploy.
-
-## 2026-11-05 session: the trim, no question pages and 47 of 111 translations unbuilt
-
-- **What changed in the product:** every `/<city>/oldest-tree` and its seven language twins (439 URLs, all noindexed since 10-01) now redirect to the city page, whose FAQ holds the same answer; the city and tree pages no longer link them (`QUESTION_PAGES_OFF`, site/src/lib/question-page.ts, one switch every route, link, sitemap and redirect reads). And of the 111 translated city overlays only the 64 pairs Google still showed 11-01 to 11-04 build (data/translations-kept.json, `overlayBuilt()` in i18n.ts); the other 47 stay on disk and their URLs redirect to English as the fallback pages have since 10-09. Hidde: "voor nu altijd bomen live gooien in de app en de website hard terug trimmen"; this reverses his 2026-10-01 call to keep every translation, said to him today. Bing loses the same pages.
-- **Why:** Search Console's crawl stats read ~145 requests a day, 38% discovery; a noindexed page still costs a visit every round, so the October clean-up had not reached Google when it judged the site again on 11-04. A page that is not built costs nothing. The noindex list shrinks from 7,155 to about 6,570 paths; the site from about 7,400 URLs to about 6,500.
-- **Mirrors:** thin_pages.py reads the switch from question-page.ts and the keep file; preflight's overlay check and redirect-map.ts read the keep file through `languagesForCity`; redirect-map's own tree gate now excludes app-only trees too. Undo: the switch, or a pair added to the file.
-
-## 2026-11-05 session: the shelf goes into the app, 230 trees in 43 places, none on the website
-
-- **What changed in the product:** 230 written trees that were held for the pace are in the app from this deploy (Hidde: "kunnen we voor de app niet gelijk de hele batch klaar zetten?", and "voor nu altijd bomen live gooien in de app en de website hard terug trimmen"): Boston +27, New York +23, London +16, Cyprus and Lyon +11, Bristol and Oahu +10, Los Angeles +8, Dunkeld, Naples, Salt Lake City and San Diego +7, 31 more places. On the website nothing changes: app-only, no page, no pin, no sitemap line, counts as they were. 28 carry an approved photograph, 4 held, 197 none. The pace no longer counts an app-only tree (`check_publishing_pace`), so the shelf drains as fast as it is written.
-- **Held back:** 316 written trees in 106 shelf files whose place has no city file yet (Wales yews, Wisconsin, Atlanta, Tucson, Tacoma, Nashville, Milwaukee, the NI estates, ...). A city file needs an intro and a FAQ (preflight), so those are the night run's rung 5 now: write the place shell, merge, app-only. Three Texas trees skipped as duplicates of live ones (txf_001/002/003 = clg_001, cpl_001, gld_001) and the Alishan No. 28 giant (24 m from alh_001) left for a look.
-- **Four counts had to learn the rule:** the build's count-promise check ([city].astro) and preflight's `check_city`, the overlay guard in i18n.ts `translatedCityPaths` and preflight's overlay check, and i18ncheck.py all counted every tree in the file; they count the trees a page shows now. The first deploy of slc_007 failed on exactly that ("copy still promises 6 trees but the city has 7").
-
-## 2026-11-05 session: APP FIRST, a new tree of ours lives in the app until a reader adds to it
-
-- **What changed in the product:** nothing yet that a reader sees; from the next own tree on, it is in the app (browse, trees, walks, version feeds) and not on the website: no page, pin, card, sitemap or search-index line. A reader's photograph, note, sighting or tip on it brings the page, indexable under the reader cut from day one. Hidde, on the four-week freeze below: "dit is mss wel de moeite omdat we dan hopelijk via de app meer bomen gefotografeerd worden". So the freeze (`SUPPLY_PAUSED`) is off again and the pace of 25 a day goes on, for the app; the website freezes by structure, and a new place of app-only trees has no place page.
-- **How:** `treeIsRenderable` (site/src/lib/trees.ts, the gate every page, pin, card, sitemap and index goes through) now excludes app-only trees; the app's feeds use the new `treeIsInFeed`/`feedTreesOf`/`cityIsInFeed`/`walkableFeedTrees`; pins.json, cards.json and map-species.json are the website's own and stay on the web gate. The rule: not in data/web-freeze-baseline.json (4,046 ids live today), no reader signal (reader_added), no visible note; `treeIsAppOnly` in site/src/lib/app-first.ts and `app_only()` in scripts/findable.py (thin_pages.renderable reads it). An app-only tree's feed `url` is `/<city>#tree=<id>` (the city map opens that card), so a share from the app lands somewhere true. qa `check_an_app_only_tree_stays_off_the_web()`: no page, no sitemap line, id in /api/trees.json.
-- **Verified:** thin_pages and crosscheck unchanged locally (no app-only tree exists yet); the build on main is the test, then one shelf tree goes live as the first app-only tree and is checked on the deployed site. Not yet covered: species.json counts and the collections in browse.json still count web trees only (minor, noted); an app user's saved app-only tree on the web profile has no page to link, which v2 can point at the city map.
-
-## 2026-11-05 session: the four-week freeze on new pages of our own (Hidde: "ok voer dit door"; superseded by APP FIRST above the same afternoon)
-
-- **Diagnosis, measured:** the 11-04 fall hit open pages (300 to 74 impressions) and tagged pages (1,049 to 238) alike, minus 75% on both in one hour, so Google re-applied a site-level judgement; our tags played no part (new section 0 of seo-diagnose.yml). Crawl stats (Hidde's Search Console): ~145 requests a day over 90 days, 79% HTML, 38% discovery, so a third of Google's reading went to pages we had just made while /lisbon was last read 10-08 and /united-states 08-09. On that pace the noindex clean-up reaches Google early next year, after the update expected within weeks.
-- **What changed in the product:** nothing a reader sees. `SUPPLY_PAUSED = True` (findable.py): no new tree or place of our own until 2026-12-03, a reader's tree still ships; preflight and the pre-push hook refuse a new own tree against data/web-freeze-baseline.json (4,046 ids live today). The night run keeps researching and writing into data/research/, the shelf fills, and ships it at 25 a day once lifted. The pace cap stays as the guard for then.
-- **Next, Hidde's plan:** redirect the 439 question pages to their city pages and the translations Google showed nothing of since 11-01 to their English twins (~1,560 of 1,802), and drop the links to them; keep the list of ~940 pages Google itself showed (data/tagged-still-shown.json) for a two-day release when it turns; look again 2026-11-18. App-only trees (feed yes, page no) are possible but not a switch: web and app read the same browse/trees/walks feeds, so about ten web consumers would need a filter; put to Hidde.
-
-## 2026-11-05 session: earned back paused, Google fell again from 11-04 midday
-
-- **What happened:** Search Console's 24-hour view (Hidde's screenshot, 11-05 morning) shows impressions from ~50 an hour to ~1 from 11-04 13:00 CET, site-wide within one hour, 15 hours on. Live checked: home, /seville, /lisbon, /berlin, /malaga, the Drago indexable, robots.txt open, no site-wide noindex. One hour is too fast for any tag or deploy of ours; Google confirms no update. Hourly data is preliminary: read 11-04 and 11-05 in the daily view tomorrow.
-- **What changed:** the widening below is paused (Hidde: "Nee, pauzeer"). `EARNED_PAUSED = True` in scripts/tagged_shown.py adds nothing; data/earned-back.json is back to the six pages of 11-04 and 11-05 morning, so the 70 of the earlier deploy go back under the tag. False lifts the pause.
-
-## 2026-11-05 session: what Google shows again goes back in Google, daily
-
-- **What changed:** a page carrying our googlebot noindex that Google showed 3 times since 11-01 now leaves the Google-side cuts, checked every morning by scripts/tagged_shown.py (Hidde: "zolang google weer impressies heeft op paginas voegen we die ook toe"; he chose 3+ over every page shown). Was 2 clicks, or 1 click and 10 impressions, 10 a week; now 250 a week, the release lane's 70 per build sets the pace. Still never a translation, question, listing or thin-place page.
-- **Why:** of about 1,200 pages Google uses since the 11-01 recovery, 942 carry our tag (2,634 impressions and 50 clicks of roughly 3,100 and 80, so ~85%); open in the sitemap were 268. Each recrawl would take one away.
-- **Today:** 179 pages in data/earned-back.json (173 new), 165 enter Google: 70 with the next deploy, 95 in the builds after. Translations wait (17 clicks, but machine translation at scale is what the policy names); second step after 11-18.
-- Undo: take paths out of data/earned-back.json, or `EARNED_BACK = False` in thin_pages.py.
-
-## 2026-11-05 session: outreach check, nothing to send
-
-- The nature/guide (11), source (12) and regional press (4) batches all went on 11-04; the session-start brief said "0 of 12" because sent_drafts.py matched `batch-` previews to the send log only for press. Fixed (55e2e553b). Welsh Country and the Wiltshire Times stay held on Hidde's own word of 11-04.
-- Pere Vives (Amics del Jardí Botànic) answered how to credit the photographs: "Arxiu Associació d'Amics del Jardí Botànic", which is what the Barcelona photos already carry. No change needed.
-
-## 2026-11-05 session: every red error now wakes the night run
-
-- health.py (where a run starts rung 2) now reads the quality line's web errors, site-up check and open BUG rows in data/code-audit.json, beside CI and app crashes it read already; a red one exits 1, so the next run fixes it without anyone asking. Dependabot alerts and the backup only print a note: they need a session or Hidde.
-- Found at once: a new web error spreading, "Failed to initialize WebGL" from maplibre on 16 pages in a day (browsers without WebGL, the map cannot start). The next run takes it at rung 2.
-- Still red and not touched here: iOS app (newest ios.yml run 11h ago) and Postbox check (19h ago).
-
-## 2026-11-05 session: build 39 (1.0.4) archived for upload; the Plus answers table needed an upgrade
-
-- **What changed:** build 39 is in the Organizer, made by scripts/release.py from fda0199ad with the bundled catalogue refreshed (4,046 trees, 357 walks). It adds to build 38: Back, share and report readable over a tree's photograph on iOS 18, the map's place header aligned with its cards, and the Plus question (open question, up to two choices, Tell me). 38 was never uploaded; 39 replaces it.
-- **Plus answers were being refused:** the table was pasted on 2026-11-05 at 10:00 with one `choice` column; the two-choice change that morning edited the CREATE in place, which `if not exists` skips, so every answer since then (web and app, which send `choices`) failed with a 400. supabase/plus-answers.sql now carries an upgrade block (adds `choices`, moves the one test answer, drops `choice`); safe to paste again.
-- **Not verified:** the Release build on a device; Plus answers arriving after the upgrade is pasted.
-- **For Hidde:** paste supabase/plus-answers.sql once more; then run build 39 on your phone and Organizer, Archives, build 39, Distribute App, App Store Connect.
-
-## 2026-11-05 session: iOS CI green again (two crashing unit tests)
-
-- ios.yml was red since 2026-11-04 13:42: `testTheStoredIdSetsFollowEveryChange` and `testTheCityAndCountryIndexMatchFilteringTheWholeList` (RedrawMemoTests, added with the redraw speed-up) "crashed with signal abrt". Reproduced on the iOS 18.6 simulator: SIGABRT when the test's `Saved` was released, "pointer being freed was not allocated" in `swift_task_deinitOnExecutorMainActorBackDeploy` from `Saved.__deallocating_deinit`, under an XCTest invocation; the second test only fell with the crashed process.
-- Fix: the file is a Swift Testing suite now, like every other test that builds a `Saved` (CollectionTests, FailureTests, UpgradeTests), same checks unchanged. Locally the three pass and the whole unit suite is green (225 of 225). The app keeps its one `Saved` for its lifetime and the store builds show no such crash (crashes.py), so nothing changes for anybody using the app.
-
-## 2026-11-05 night run (eleventh attempt): nothing shipped
-
-- No claims stood. 112 READY leads are the same rejects and the pace is full until about 19:42 UTC, so no write pass. Four Dependabot branches stand (astro 7.4.4, supabase-js 2.118.0, deploy-pages 5, upload-pages-artifact 5); `gh` needed approval here, so their CI could not be read and none was merged. A session should read CI and merge them by hand.
-
-## 2026-11-05 night run (tenth attempt): nothing shipped
-
-- No claims stood. 112 READY leads are the same rejects, and the pace is full until about 19:42 UTC, so no write pass. Brighton register retry was already done 2026-11-04 and is still stalled. iOS stays red on the RedrawMemoTests aborts (needs a Mac); Dependabot branches wait for a session.
-
-## 2026-11-05 night run (06:15 UTC, ninth attempt): two archive contacts sourced, no trees
-- No claims stood. Pace is full until about 19:42 UTC, so no write pass. Sourced two archive contacts for photo-less trees (OMAV Valencia, 8 trees; KNNV Utrecht, 6 trees), both addresses published on their own sites; contacts database rebuilt and pushed to the private store, nothing mailed. Nijmegen, Amsterdam and Alicante searches found no photo holders. Dependabot branches still wait for a session; this run could not query their CI.
-
-## 2026-11-05 night run (06:08 UTC, eighth attempt): nothing shipped
-
-- Rung 1 empty (no photographs, no notes). Rung 2: Postbox check red is the old web_errors migration, which sqlcheck now shows applied; only supabase/plus-answers.sql is still unpasted (For Hidde). iOS stays red on the two RedrawMemoTests aborts (see the entry below), needs a Mac. Pace still full until about 19:42 UTC, so no write or merge.
-- Rung 4 sourcing: tried Hoyt Arboretum (Portland) for an archive contact; hoytarboretum.org returns 403 to the fetch tool and search showed no published address, so nothing recorded (no guessed addresses). Archive group has 0 ready contacts, so the next session with a browser should source some.
-
-## 2026-11-05 night run (seventh attempt): looked at the iOS failure, nothing shipped
-
-- No claims stood; 112 READY leads are the same rejects; pace still full until about 19:42 UTC, so no write pass.
-- iOS app workflow (red since 2026-11-04): two unit tests crash with signal abrt on both the 20:36 push run and the 22:24 scheduled run, on iOS 18 and the main job: `testTheCityAndCountryIndexMatchFilteringTheWholeList` and `testTheStoredIdSetsFollowEveryChange`, both in RedrawMemoTests.swift, added by e3fc733cd (the speed commit). The third test in that file passes. The app builds. The cause is not visible from the source on Linux (the Tree JSON decode, Catalogue indexes and Saved id-set cache all read correctly), so I made no blind edit. A session with a Mac should run RedrawMemoTests and read the crash report; the common suspect is the `Saved` idSets getter mutating its cache, or the suite-scoped UserDefaults in test 2. Not a crash in shipped use as far as the log shows, since these are tests only.
-- Dependabot branches (supabase-js 2.118.0, astro 7.4.4) still wait for a session to merge by hand.
-
-## 2026-11-05 night run (sixth attempt): nothing shipped, pace still full
-
-- No claims stood. The 112 READY leads are the same earlier rejects or thin ones. The 25-a-day pace is full until about 19:42 UTC, and 18 written trees (slc_007..014, car_003, hnl_032, nyc_*) wait to merge then, so I dispatched no write pass. Dependabot branches (supabase-js 2.118.0, astro 7.4.4) still wait for a session to build and merge them by hand. The iOS workflow shows FAILED for 2026-11-04 and was not looked at in this attempt.
-
-## 2026-11-05 night run (02:00 UTC, fifth attempt): nothing shipped
-
-- No claims stood. 112 READY leads exist but are earlier rejects or thin, and the 25-a-day pace is full until about 19:42 UTC, with 18 written trees (slc_007..014, car_003, hnl_032, nyc_*) already waiting to merge then. A new write pass would only add to that queue, so none was dispatched. Dependabot branches (supabase-js 2.118.0, astro 7.4.4) are left for a session to build and merge by hand.
-
-## 2026-11-05 night run (01:57 UTC): one photo vendored, nothing else open
-
-- Rung 1: reader inbox and tree notes empty. Rung 2: Postbox check and the Migrations line are red only because supabase/web-errors.sql and supabase/plus-answers.sql are not pasted (For Hidde: paste both). The iOS scheduled run (22:24 UTC) ended "TEST FAILED" with no XCTest assertion line in the log, 1h47m long, so it reads as an infra or timeout death, not a source fault; no app change made.
-- Vendored the Santa Barbara fig photograph onto our domain (95f46e3f4). No new trees: the 25-a-day pace is full until about 19:42 UTC and 18 written trees already wait. Outreach: 12 nature/guide and 5 regional press drafts already wait for Hidde, so no new batch; no contact sourcing done this window.
 

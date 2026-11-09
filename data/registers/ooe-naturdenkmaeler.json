@@ -1,0 +1,3680 @@
+{
+ "source": "Land Oberoesterreich, Naturdenkmaeler Oberoesterreich (INSPIRE ProtectedSite)",
+ "endpoint": "https://www.doris.at/service/metadaten/daten/VWNaturdenkmaeler_ETRS89TM33N.zip",
+ "licence": "CC BY 4.0",
+ "licence_proof": "data.europa.eu dataset 50a04bcd-858a-4656-b136-f8de18d8f9c0 declares https://creativecommons.org/licenses/by/4.0/ on its distributions (read 2026-11-09).",
+ "designation": "Naturdenkmal Oberoesterreich",
+ "country": "Austria",
+ "attribution": "Land Oberoesterreich, data.ooe.gv.at",
+ "fetched": "2026-11-09",
+ "publish_dots": false,
+ "scope": "All declared monuments. Coordinates are polygon centroids (approximate). 'non_tree': true marks names with no tree word: springs, ponds, rocks, caves.",
+ "caveat": "No species, age or girth. A name may name a group (Drei Eiben, 7 Linden). publish_dots stays False until a session decides to show approximate centroids.",
+ "entries": [
+  {
+   "register_id": "ps.3AEF85A0-C955-4B21-917D-D6C913E1D602",
+   "name": "Ertleiche",
+   "legal_basis": "Bescheid vom 18.09.1951",
+   "latitude": 48.470352,
+   "longitude": 13.486803,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9523F628-D28F-4385-BB7A-099BCB369A5A",
+   "name": "Burg- oder Schlosslinde \"Schloßlinde\"",
+   "legal_basis": "Bescheid vom 08.03.1960",
+   "latitude": 48.342178,
+   "longitude": 13.97705,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2AE40F88-E7CB-4180-ABD6-398EEB798E97",
+   "name": "\"Eibe\" (Taxus baccata)",
+   "legal_basis": "Bescheid vom 22.07.1960",
+   "latitude": 47.61601,
+   "longitude": 13.653675,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EA2393C5-F0E1-41F7-8D51-472134854027",
+   "name": "Stieleiche",
+   "legal_basis": "Bescheid vom 19.04.1961",
+   "latitude": 48.160002,
+   "longitude": 13.547952,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1F6DC0CC-C674-47CA-A5A4-A39001AF18A4",
+   "name": "\"Gipfelblock\" und \"Z`klobenen Stein\"",
+   "legal_basis": "Bescheid vom 18.10.1962",
+   "latitude": 48.294777,
+   "longitude": 14.221554,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.AA1E7D3C-F03F-4839-AF63-8D10D667BA37",
+   "name": "3 Bäume im Stiftspark Wilhering",
+   "legal_basis": "Bescheid vom 11.10.1962",
+   "latitude": 48.325021,
+   "longitude": 14.18887,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A2D5744D-F2F9-41B0-9186-3A20A04BC852",
+   "name": "Ginkgobaum",
+   "legal_basis": "Bescheid vom 11.10.1962",
+   "latitude": 48.206146,
+   "longitude": 14.37827,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.489EDB5A-E814-4AE2-844F-0EAF4515D87F",
+   "name": "Schloßlinde",
+   "legal_basis": "Bescheid vom 09.10.1962",
+   "latitude": 48.276061,
+   "longitude": 14.213509,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BDF29521-C0E3-4A9B-B5F9-F3394A526405",
+   "name": "\"drei Linden\" Linden auf dem Galgenhügel",
+   "legal_basis": "Bescheid vom 14.02.1963",
+   "latitude": 48.466978,
+   "longitude": 13.821749,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.CF6AA877-CD29-455D-A998-BE915CDB39EF",
+   "name": "\"Linde\" Sommerlinde",
+   "legal_basis": "Bescheid vom 28.05.1963",
+   "latitude": 47.932483,
+   "longitude": 13.490983,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C82EA135-B1F5-42AB-95BF-7B4A02AE5B62",
+   "name": "Eibe",
+   "legal_basis": "Bescheid vom 15.06.1965",
+   "latitude": 47.81279,
+   "longitude": 13.771852,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AA1E59FE-4F64-44D9-83DE-0E7C8D37F993",
+   "name": "Trauerbuche",
+   "legal_basis": "Bescheid vom 15.03.1965",
+   "latitude": 48.047277,
+   "longitude": 14.427857,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.49AE8423-DB0A-4955-95CC-D990AE88E289",
+   "name": "Bergschulkastanie",
+   "legal_basis": "Bescheid vom 24.03.1965",
+   "latitude": 48.041066,
+   "longitude": 14.419371,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.CC076AA2-61EB-470B-9021-9CD732E0471A",
+   "name": "6 säulenförmige Stieleichen (Quercus robur Fastigiata)",
+   "legal_basis": "Bescheid vom 24.03.1965",
+   "latitude": 48.044735,
+   "longitude": 14.423255,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D60F98DA-0218-43C7-92CE-C7ECBF120CEB",
+   "name": "Friedhofslinde",
+   "legal_basis": "Bescheid vom 24.03.1965",
+   "latitude": 48.045582,
+   "longitude": 14.418219,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.921A2E5A-6DC6-4E70-9F26-DD3672A986AE",
+   "name": "\"Linde\" beim Gasthaus Hochlehen",
+   "legal_basis": "Bescheid vom 03.04.1965",
+   "latitude": 48.044106,
+   "longitude": 13.426209,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4C048B87-1CA5-4F3F-9680-8AB0B67F741D",
+   "name": "mehrstämmige Eibe",
+   "legal_basis": "Bescheid vom 25.03.1965",
+   "latitude": 48.034082,
+   "longitude": 14.417312,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.11BF362B-A39A-4CE3-A130-B559F9E8391B",
+   "name": "\"Eiche\" Weinlechnereiche in Altheim",
+   "legal_basis": "Bescheid vom 24.08.1965",
+   "latitude": 48.251631,
+   "longitude": 13.230007,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BFA6BC7D-CC6B-4835-A9E1-BAE3EF218CF9",
+   "name": "Stiblerlinde",
+   "legal_basis": "Bescheid vom 24.08.1965",
+   "latitude": 48.178532,
+   "longitude": 13.305661,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4DE9B737-8D0B-4FFD-BA61-DACDB1C00858",
+   "name": "\"Harnisch-Wand\" einschließlich dem\r\ndarüber befindliche Gletscherschliff",
+   "legal_basis": "Bescheid vom 15.12.1966",
+   "latitude": 47.805858,
+   "longitude": 13.379034,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.8F6E6C0A-F0C7-4811-96D7-3CE0EBD79F48",
+   "name": "\"6\" Linden\" Friedhofslinden",
+   "legal_basis": "Bescheid vom 17.02.1969",
+   "latitude": 48.109723,
+   "longitude": 13.791573,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6DAF6179-D0B8-47D5-88A3-A69875A661AB",
+   "name": "Kastanienallee",
+   "legal_basis": "Bescheid vom 17.02.1969",
+   "latitude": 48.066283,
+   "longitude": 13.899208,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C121BC40-20EA-466F-A8A6-B53B07E79723",
+   "name": "7 Wacholderbüsche \r\n\r\n\"Wacholderbestand\"",
+   "legal_basis": "Bescheid vom 31.10.1970",
+   "latitude": 48.490516,
+   "longitude": 13.72842,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.6C3BA83D-5006-4991-8AF5-470A8441CCDF",
+   "name": "\"Eiche\"",
+   "legal_basis": "Bescheid vom 02.02.1972",
+   "latitude": 47.886749,
+   "longitude": 13.765688,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.3993639C-22FD-4FC9-94F2-49DC9AE06A84",
+   "name": "Lindenallee in Frauschereck",
+   "legal_basis": "Bescheid vom 25.03.1974",
+   "latitude": 48.096713,
+   "longitude": 13.311464,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.94AE4A4A-2A0E-493A-81AD-AE945B80C064",
+   "name": "\"Schirmföhre\" am unteren Schableder",
+   "legal_basis": "Bescheid vom 22.04.1975",
+   "latitude": 48.315328,
+   "longitude": 14.259629,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.09C60494-4BB2-405F-B588-04C310599436",
+   "name": "\"Marienstein\" in Grein",
+   "legal_basis": "Bescheid vom 09.06.1975",
+   "latitude": 48.246362,
+   "longitude": 14.865495,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.2077F506-4F3B-405D-AEE6-04F96D70D7E4",
+   "name": "Tausendjährige Linde",
+   "legal_basis": "Bescheid vom 29.08.1975",
+   "latitude": 48.336122,
+   "longitude": 14.302548,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C84E6D10-6281-44D9-9EAA-A5A3080AD99B",
+   "name": "Tausendjährige Linde",
+   "legal_basis": "Bescheid vom 08.08.1975",
+   "latitude": 48.394876,
+   "longitude": 13.423203,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.CFE00D02-B6F9-4CDA-8247-61FB12CFBAAF",
+   "name": "Mammutbaum (Sequoiadendron giganteum)",
+   "legal_basis": "Bescheid vom 29.12.1975",
+   "latitude": 48.305675,
+   "longitude": 14.300405,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9D78DDEE-8082-412E-9027-88140890A3C6",
+   "name": "Quarzitkonglomeratvorkommen",
+   "legal_basis": "Bescheid vom 05.05.1976",
+   "latitude": 48.480526,
+   "longitude": 13.543569,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.70CE3937-BB37-448C-992F-12D1EEB40AB2",
+   "name": "2 \"Eiben\"",
+   "legal_basis": "Bescheid vom 12.08.1976",
+   "latitude": 48.308663,
+   "longitude": 14.29394,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.7FDA127B-A02C-4851-931C-11D5923F2EC4",
+   "name": "\"Wirts-Eiche\" oder \"Eiche auf der Leit`n\"",
+   "legal_basis": "Bescheid vom 22.09.1976",
+   "latitude": 48.251435,
+   "longitude": 13.191008,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8972C2EA-2393-4C27-BE65-E24361E0A990",
+   "name": "\"Eiche\"",
+   "legal_basis": "Bescheid vom 22.09.1976",
+   "latitude": 48.268142,
+   "longitude": 13.096827,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AB6B863F-24FA-426C-BF9D-37110B545294",
+   "name": "\"Linde\" Forsthoflinde",
+   "legal_basis": "Bescheid vom 27.09.1976",
+   "latitude": 47.72166,
+   "longitude": 14.324369,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A9604369-01CF-4C48-8D7F-4AFCCFED9E53",
+   "name": "\"Gruber - Stein\" Dr. Gruberstein (Granitfels mit Einschlüssen)",
+   "legal_basis": "Bescheid vom 16.02.1977",
+   "latitude": 48.309325,
+   "longitude": 14.336618,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.08B37DFB-D06E-4817-8DB9-62857375E163",
+   "name": "\"Eiche\" Stieleiche (Quercus robur)",
+   "legal_basis": "Bescheid vom 08.06.1977",
+   "latitude": 48.288477,
+   "longitude": 13.181519,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9F8CD59A-976B-454F-852B-FA34B756AE0D",
+   "name": "\"Eiche\" Stieleiche (Quercus robur)",
+   "legal_basis": "Bescheid vom 07.06.1977",
+   "latitude": 48.287324,
+   "longitude": 13.16431,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.36F3AD55-5CCD-477A-B44C-9CC901F01B06",
+   "name": "Stieleiche",
+   "legal_basis": "Bescheid vom 09.11.1977",
+   "latitude": 48.150925,
+   "longitude": 13.98711,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.5FF3F47F-A603-4F6F-9581-FFCE2E07A7B0",
+   "name": "Granitfelsengruppe \"Leopold von Buch-Denkmal\"",
+   "legal_basis": "Bescheid vom 05.10.1977",
+   "latitude": 47.918222,
+   "longitude": 14.539431,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.F56AD638-B30F-4439-8DFC-42DACEC050D2",
+   "name": "Tobra-Eiche",
+   "legal_basis": "Bescheid vom 12.01.1978",
+   "latitude": 48.225038,
+   "longitude": 14.679829,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.411BEED1-6FAB-4191-91AF-460D4A9C32E0",
+   "name": "Pießling-Ursprung",
+   "legal_basis": "Bescheid vom 19.06.1978",
+   "latitude": 47.69138,
+   "longitude": 14.275858,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.86B2A3E7-AB3D-4119-929D-A2E612E1C682",
+   "name": "\"Seerosenbestände\" am Aschachaltarm",
+   "legal_basis": "Bescheid vom 19.06.1978",
+   "latitude": 48.325585,
+   "longitude": 14.014271,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.C66AA45B-1CB4-437E-A8BA-F139C2A0610A",
+   "name": "\"Drillingseiche\" in Friedburg",
+   "legal_basis": "Bescheid vom 10.10.1978",
+   "latitude": 48.01233,
+   "longitude": 13.246002,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8A76FDCF-4FDA-400A-893F-E1B671E37B0A",
+   "name": "\"Flurbaum (Eiche)\" in Holz",
+   "legal_basis": "Bescheid vom 10.10.1978",
+   "latitude": 48.016541,
+   "longitude": 13.226897,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AC626A52-2E6D-48C6-A15F-DE38EC95FCCC",
+   "name": "\"2 Kapellenlinden\" in Teichstätt",
+   "legal_basis": "Bescheid vom 10.10.1978",
+   "latitude": 48.025825,
+   "longitude": 13.217577,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A397F256-968D-4BB3-85A3-2EA82986FC19",
+   "name": "Stieleiche",
+   "legal_basis": "Bescheid vom 10.10.1978",
+   "latitude": 48.07256,
+   "longitude": 13.147405,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.DCB17C37-4974-4F64-9167-73CECC081405",
+   "name": "\"Linde\" Grenadierlinde",
+   "legal_basis": "Bescheid vom 30.11.1978",
+   "latitude": 48.18571,
+   "longitude": 12.862441,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.723FFF56-E0A7-4B55-9CAD-0734C07AA8F7",
+   "name": "Kessel - Riesenkarstquelle",
+   "legal_basis": "Bescheid vom 30.11.1978",
+   "latitude": 47.545364,
+   "longitude": 13.663774,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.49AAED65-80E1-4CED-BE6A-48B3B8ED5F8A",
+   "name": "Riesenkarstquelle \"Hirschbrunn\"",
+   "legal_basis": "Bescheid vom 23.01.1979",
+   "latitude": 47.546788,
+   "longitude": 13.658661,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.D075CA4A-F157-4DAD-B717-B91E40D68B20",
+   "name": "Quarzitkonglomeratstein \"Mehrnbacher 40-er\"",
+   "legal_basis": "Bescheid vom 23.10.1986",
+   "latitude": 48.206568,
+   "longitude": 13.451675,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.93F48F30-2E5C-4A02-A94A-A75D87691F3A",
+   "name": "Linde bei der Schöffmannsäge",
+   "legal_basis": "Bescheid vom 20.11.1979",
+   "latitude": 47.720589,
+   "longitude": 14.335433,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BB322B18-5543-4D23-8378-508025985F7A",
+   "name": "Eiche",
+   "legal_basis": "Bescheid vom 10.12.1978",
+   "latitude": 47.950585,
+   "longitude": 13.583189,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6060595E-4648-4B1D-9874-B21DF52AA907",
+   "name": "Steinfels mit Eichenbestand",
+   "legal_basis": "Bescheid vom 08.11.1978",
+   "latitude": 48.549917,
+   "longitude": 13.904367,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6A2D5E61-3B46-46A5-933D-232DA9D39CC2",
+   "name": "Poppen-Linde",
+   "legal_basis": "Bescheid vom 08.11.1979",
+   "latitude": 48.55347,
+   "longitude": 13.879082,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FDD66362-A7EF-40E2-A042-2574E8DD7172",
+   "name": "\"Linde in Julbach\" Ortslinde",
+   "legal_basis": "Bescheid vom 08.11.1979",
+   "latitude": 48.658734,
+   "longitude": 13.867702,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.ABC7DC41-271F-45F0-B32C-D9126496AEC4",
+   "name": "Siebensesselstein",
+   "legal_basis": "Bescheid vom 29.08.1980",
+   "latitude": 48.552382,
+   "longitude": 13.90816,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.26137C09-8972-47AD-9D1C-D653843674D8",
+   "name": "Linden bei der Wimmerkapelle",
+   "legal_basis": "Bescheid vom 29.08.1980",
+   "latitude": 48.268581,
+   "longitude": 13.578081,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.128442EE-18A0-489A-9467-A8E5A1A24D6E",
+   "name": "Hausbaumlinde",
+   "legal_basis": "Bescheid vom 29.08.1980",
+   "latitude": 47.900294,
+   "longitude": 13.755838,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.621351E4-E8A0-4374-9F59-AA125CD0724E",
+   "name": "2 alte Eiben",
+   "legal_basis": "Bescheid vom 13.06.1980",
+   "latitude": 47.813425,
+   "longitude": 13.773698,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.027125CD-0E94-4C1F-9C86-7700C144732F",
+   "name": "\"Sterzen´s Abendsitz\" - 7 Linden",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.707332,
+   "longitude": 13.630387,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.520F6311-D83B-429D-B42D-A53E3AC77B5E",
+   "name": "Bergulme",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.834504,
+   "longitude": 13.689454,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A417B4E7-C1EF-49C8-8216-96FFC6FF4EE3",
+   "name": "Schloßlinden",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.905567,
+   "longitude": 13.963629,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C43E1075-C038-40B1-AC7C-72231045E84F",
+   "name": "\"Gsang-Linde\" in Viechtwang",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.916355,
+   "longitude": 13.961089,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A12610D1-8737-49A9-9C88-4BF3A8DD9C27",
+   "name": "Kirchenbauerlinde",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.917031,
+   "longitude": 13.965585,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AA8E0620-0578-4AC7-82A6-10F40632AD07",
+   "name": "\"Eibe\" Dorfeibe",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.556048,
+   "longitude": 13.689719,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A17774BF-CA99-418D-A690-CB355F254922",
+   "name": "Zimmerbauerteich",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.915838,
+   "longitude": 13.772387,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.E6BA56E6-505F-4086-B086-BB58337C0A31",
+   "name": "Bergulme",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.585563,
+   "longitude": 13.53527,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FA6C34F8-F4D8-4BF5-B451-5FD3A18E1178",
+   "name": "Blutbuche",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.586043,
+   "longitude": 13.534551,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9FBBC684-05E4-4300-A594-5319F74C91AF",
+   "name": "Buchmooslinden",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.920358,
+   "longitude": 13.782264,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A86714D2-FDBB-45F9-AABA-1962C67B6EFB",
+   "name": "Krottensee",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.9255,
+   "longitude": 13.809247,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.0FE38E1F-4721-49BD-9799-158AE0A5A7BF",
+   "name": "Eibe",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.924209,
+   "longitude": 14.036584,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6FA09C08-F268-4D8D-9350-7F5F28ED8D86",
+   "name": "\"Zötllinde\" bei der Eisenen Hand",
+   "legal_basis": "Bescheid vom 20.10.1980",
+   "latitude": 48.520054,
+   "longitude": 14.287297,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C3EBCBDA-849F-43A6-8AB2-59FA869E0DD3",
+   "name": "Wagner Linde",
+   "legal_basis": "Bescheid vom 27.08.1980",
+   "latitude": 48.521565,
+   "longitude": 14.28916,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8FF0B715-2302-4327-88C2-24DFFBFF6208",
+   "name": "\"Pilz Stein\"",
+   "legal_basis": "Bescheid vom 27.08.1980",
+   "latitude": 48.562457,
+   "longitude": 14.289095,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.AFC0DD1D-B9E3-4D75-9640-401268DE6CD9",
+   "name": "Eiche",
+   "legal_basis": "Bescheid vom 13.02.1974",
+   "latitude": 48.238403,
+   "longitude": 13.012457,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.270530E0-F81B-4D17-955A-06BCEDC94F31",
+   "name": "Bergahorn",
+   "legal_basis": "Bescheid vom 06.03.1981",
+   "latitude": 48.383269,
+   "longitude": 14.054965,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B3A687A7-1CC1-4EB6-B5FF-3B8691E5C343",
+   "name": "Sommerlinde",
+   "legal_basis": "Bescheid vom 06.03.1981",
+   "latitude": 47.918809,
+   "longitude": 13.954886,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A258E440-528E-4BD0-AB2C-575ADFE4C9AF",
+   "name": "Friedenslinde",
+   "legal_basis": "Bescheid vom 05.03.1981",
+   "latitude": 48.472503,
+   "longitude": 13.562878,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.09B1A85B-74BD-4D0E-ACBA-983CE26B2543",
+   "name": "Hauslinde",
+   "legal_basis": "Bescheid vom 11.08.1981",
+   "latitude": 48.532827,
+   "longitude": 13.588032,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2571CF3F-6497-45BE-AE70-95ED8527FDF9",
+   "name": "\"Winterlinden\" in Zwickledt",
+   "legal_basis": "Bescheid vom 11.08.1981",
+   "latitude": 48.508382,
+   "longitude": 13.47771,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4332B515-FE32-4FC4-B023-3869E641533B",
+   "name": "Bäume im Rauhgarten Bad Ischl",
+   "legal_basis": "Bescheid vom 15.09.1981",
+   "latitude": 47.708815,
+   "longitude": 13.610458,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.F91873BA-1BD2-4EA0-A735-65D4365A3297",
+   "name": "\"Tausendjährige Linde\" von Eisengattern",
+   "legal_basis": "Bescheid vom 23.10.1981",
+   "latitude": 47.952641,
+   "longitude": 13.879346,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.217EC920-D069-4D83-BE8C-5F103010AEBF",
+   "name": "Stuhlberger - Linde",
+   "legal_basis": "Bescheid vom 21.12.1981",
+   "latitude": 48.479388,
+   "longitude": 13.735759,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2740B96D-2D0B-4E08-ABCE-108CC2A179AD",
+   "name": "Winterlinde",
+   "legal_basis": "Bescheid vom 21.12.1981",
+   "latitude": 48.482283,
+   "longitude": 14.363219,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.0AC8B9CA-A84B-4D8A-8AB0-476F5AAD1C2B",
+   "name": "\"Eiche\" am Prälatenbach",
+   "legal_basis": "Bescheid vom 21.12.1981",
+   "latitude": 48.23026,
+   "longitude": 13.001809,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.3DAFE107-B80A-4DEE-95C3-030169B1A204",
+   "name": "Isabellenhoflinde \"Linde\"",
+   "legal_basis": "Bescheid vom 13.11.1981",
+   "latitude": 48.027296,
+   "longitude": 14.416399,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.7462A5CF-43C5-42C0-B304-58CD9692F386",
+   "name": "\"2 Linden\" Fischerlinden in Oberleiten",
+   "legal_basis": "Bescheid vom 10.03.1982",
+   "latitude": 48.477484,
+   "longitude": 13.740312,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.961ABE0B-046B-4C93-8F65-E9D0716D56F1",
+   "name": "200 jährige \"Eiche\"",
+   "legal_basis": "Bescheid vom 10.03.1982",
+   "latitude": 48.258206,
+   "longitude": 13.097731,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6287195F-11C2-4FC3-982A-E63DEB192A3A",
+   "name": "Dr.Vogelgesangklamm",
+   "legal_basis": "Bescheid vom 09.10.1978",
+   "latitude": 47.64348,
+   "longitude": 14.355992,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.BB210801-8256-4923-B0CD-836D01AF00EB",
+   "name": "Eiche",
+   "legal_basis": "Bescheid vom 29.06.1983",
+   "latitude": 48.339058,
+   "longitude": 14.321867,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.346BFC81-DE79-45DD-B0AB-AEBA434CC15C",
+   "name": "Hexenstein oder Einsiedlerstein am Siriuskogel",
+   "legal_basis": "Bescheid vom 01.07.1983",
+   "latitude": 47.704634,
+   "longitude": 13.622071,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.941960E4-FD04-444C-AA0C-03897310E182",
+   "name": "Kaltenbachteich",
+   "legal_basis": "Bescheid vom 05.07.1983",
+   "latitude": 47.701003,
+   "longitude": 13.6114,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.3378A873-C259-4797-8E02-6EDC8CA9A843",
+   "name": "Wackelstein",
+   "legal_basis": "Bescheid vom 21.07.1983",
+   "latitude": 48.314496,
+   "longitude": 14.764156,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.6D8FF0B5-41A7-4BC0-972B-0FD89DEF60AE",
+   "name": "Edelkastanie",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.306789,
+   "longitude": 14.299213,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.ACF48DD5-5D0F-4C39-93D7-1DC67283BD0A",
+   "name": "Rindbachfälle",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 47.803498,
+   "longitude": 13.815068,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.275B3616-0787-4314-9172-DA6644889CA6",
+   "name": "Dorflinde",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.39723,
+   "longitude": 13.749482,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.861BEA1E-9C25-47A6-A7B7-9A49955F01AE",
+   "name": "\"Pechölstein\" in Hundsdorf",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.405321,
+   "longitude": 14.593277,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.D41A1E62-4370-4803-A463-D3DECCAFBA4E",
+   "name": "Wackelstein aus Weinsberger Granit \"Schwingende Stein\"",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.279015,
+   "longitude": 14.98502,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.D784027E-FD17-4BA0-8626-BCD8F95BEFC8",
+   "name": "Bücherständer in Mönchsdorf",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.370476,
+   "longitude": 14.815956,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.FE376FDC-CE20-44EF-8BEB-7C46C24CB4F8",
+   "name": "\"Predigtstuhl\" in Gloxwald",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.232384,
+   "longitude": 14.948707,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.D506B037-17F5-4778-9C12-AD1BB18039C4",
+   "name": "Thuje",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 47.915789,
+   "longitude": 13.781223,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.1EADFEA8-F61F-4E83-B5D3-29BE7978C8B1",
+   "name": "Platane",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 47.915681,
+   "longitude": 13.780944,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1E222558-F1ED-474D-947E-E95F3A2C9E1F",
+   "name": "\"Stieleiche\" im Satoripark",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 47.916093,
+   "longitude": 13.781281,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C00CDECF-781C-4A0F-9051-3FC7A704E33A",
+   "name": "\"Rosnerstein\" (Pechölstein)",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 48.411428,
+   "longitude": 14.58428,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.5433FBCD-1CE4-4B7A-BE8A-891D724E55A6",
+   "name": "Pechölstein",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 48.314605,
+   "longitude": 14.739712,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.9E268E2C-E81C-4C8E-83B0-BEF15895A389",
+   "name": "Einsiedlermauer",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 48.333535,
+   "longitude": 14.858967,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.A4A1CB77-0122-4D43-A77C-B6452C91E456",
+   "name": "Grenzhecke",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 47.892077,
+   "longitude": 13.599422,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.949FDC12-FC5D-4324-A061-ACD2DAAF7924",
+   "name": "Gletscherschliff auf Hierlatzkalk in der Loiping Schottergrube",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 47.806637,
+   "longitude": 13.793413,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.02BA08D3-36FE-46F2-971A-43240BECC6DD",
+   "name": "Falkenstein",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 48.290068,
+   "longitude": 14.65809,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.7ADF4CE2-301E-4E3B-9352-0BD750197B12",
+   "name": "Veichl Teich",
+   "legal_basis": "Bescheid vom 13.09.1983",
+   "latitude": 47.74244,
+   "longitude": 14.316322,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.5726A75C-48E5-4CE3-AC53-A3D3E29E313B",
+   "name": "Hussenstein",
+   "legal_basis": "Bescheid vom 07.09.1983",
+   "latitude": 48.520779,
+   "longitude": 14.592584,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.419E478F-7043-4FCA-8CEB-45857F247012",
+   "name": "Rodaunerlinde",
+   "legal_basis": "Bescheid vom 27.09.1983",
+   "latitude": 48.259835,
+   "longitude": 13.659734,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BA415125-9ACE-415C-9900-A81E93B02BF0",
+   "name": "Eichengruppe",
+   "legal_basis": "Bescheid vom 13.10.1983",
+   "latitude": 48.250088,
+   "longitude": 13.757122,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B691E29F-5A65-424C-85CB-D2DCC00FD0B0",
+   "name": "Anton Wurmb - \"Linde\"",
+   "legal_basis": "Bescheid vom 12.10.1983",
+   "latitude": 48.276453,
+   "longitude": 13.725967,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A980E285-DCF5-4DEE-857B-D4E8301EF78F",
+   "name": "Kaisereiche",
+   "legal_basis": "Bescheid vom 12.10.1983",
+   "latitude": 48.344062,
+   "longitude": 13.771321,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.52B2EAF7-4268-4DD3-8FD6-F80EE800B522",
+   "name": "\"Eiche\" am Ortsweiher",
+   "legal_basis": "Bescheid vom 12.10.1983",
+   "latitude": 48.272245,
+   "longitude": 14.413268,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B65F8D08-331E-4A15-BEF8-BC731B5ABB95",
+   "name": "\"Rotföhre\" in der OKA Siedlung",
+   "legal_basis": "Bescheid vom 10.11.1983",
+   "latitude": 47.919637,
+   "longitude": 13.785319,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.8E2C5C49-00F6-42D0-889F-540B1E642E80",
+   "name": "Taborteich",
+   "legal_basis": "Bescheid vom 16.11.1983",
+   "latitude": 48.240485,
+   "longitude": 14.507582,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.54A44DB8-DFEE-4C96-A00A-1CA757F01AD4",
+   "name": "\"2 Roßkastanienbäume\" bei der Statue des Hl. Johannes v.Nepomuk",
+   "legal_basis": "Bescheid vom 10.11.1983",
+   "latitude": 48.245517,
+   "longitude": 13.803583,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.3AA072EC-B25E-4D37-896B-BB6F9C134F51",
+   "name": "Tanne",
+   "legal_basis": "Bescheid vom 23.11.1983",
+   "latitude": 48.072836,
+   "longitude": 13.324574,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.010E8658-FA12-4D18-ACFD-89BE841C4F10",
+   "name": "Jungfraustein",
+   "legal_basis": "Bescheid vom 21.11.1983",
+   "latitude": 48.433557,
+   "longitude": 13.697428,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.B2A1B1DF-B896-4802-8841-AD53FEC3BF54",
+   "name": "Hirtstein",
+   "legal_basis": "Bescheid vom 19.12.1983",
+   "latitude": 48.515244,
+   "longitude": 14.376508,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.97C4DB44-7AA4-49A5-987C-52B98B86E532",
+   "name": "Martinstein",
+   "legal_basis": "Bescheid vom 16.01.1984",
+   "latitude": 48.608193,
+   "longitude": 14.508937,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.2EE9CD54-0CB4-4353-83AA-7851EC5C191F",
+   "name": "Fadinger Linde",
+   "legal_basis": "Bescheid vom 10.01.1984",
+   "latitude": 48.389432,
+   "longitude": 13.901593,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AE600CB9-1E95-4569-9E1C-AD2FC3B185B6",
+   "name": "\"2 große Eichen\" an der Innviertler Bundesstraße",
+   "legal_basis": "Bescheid vom 24.01.1984",
+   "latitude": 48.277937,
+   "longitude": 13.726379,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B09D621E-BFF1-4686-905C-1E43E04E6936",
+   "name": "\"Eiche\" beim Försthaus in Schwertberg",
+   "legal_basis": "Bescheid vom 24.01.1984",
+   "latitude": 48.278776,
+   "longitude": 14.578285,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D9400570-137E-4C7A-813E-6C8198E51E1D",
+   "name": "Linde",
+   "legal_basis": "Bescheid vom 24.01.1984",
+   "latitude": 48.241454,
+   "longitude": 14.520594,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.15335AEE-B5D7-4FC2-AC46-736D277024F5",
+   "name": "Eibe bei der Hauskapelle der Forstverwaltung Weißenbach",
+   "legal_basis": "Bescheid vom 24.01.1984",
+   "latitude": 47.785297,
+   "longitude": 13.594102,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E146DCE7-4FC9-4AFF-969A-C4E92366DFE8",
+   "name": "Wackelstein",
+   "legal_basis": "Bescheid vom 04.01.1984",
+   "latitude": 48.410285,
+   "longitude": 14.801644,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.625E73AA-A74A-4955-8F40-883B34C64551",
+   "name": "\"Pechölstein\" beim Stoaninger in Schattau",
+   "legal_basis": "Bescheid vom 02.02.1984",
+   "latitude": 48.439359,
+   "longitude": 14.764807,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.8BDBE4B9-91BE-49F7-B902-9BA94B66B413",
+   "name": "\"Edelkastanie\" auf der Pfarrhofwiese",
+   "legal_basis": "Bescheid vom 02.02.1984",
+   "latitude": 47.832364,
+   "longitude": 13.549985,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.05E81C64-228D-4B94-8096-2BB33E580411",
+   "name": "Friedhofslinde",
+   "legal_basis": "Bescheid vom 09.02.1984",
+   "latitude": 48.184574,
+   "longitude": 13.898869,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FF02B8CA-8745-4FB3-A811-0F1B2CE0936F",
+   "name": "\"Pfarrer-Linde\" in Ternberg",
+   "legal_basis": "Bescheid vom 17.02.1984",
+   "latitude": 47.938471,
+   "longitude": 14.354113,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C01CC11C-5A85-4DF6-85E5-5B8E545321BC",
+   "name": "\"Kapellen Linde\" bei der Hubertuskapelle",
+   "legal_basis": "Bescheid vom 17.02.1984",
+   "latitude": 47.904505,
+   "longitude": 13.321878,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.ED3363FC-5410-44C5-8F78-87A87EBC1FE2",
+   "name": "\"Sommerlinde\" bei Kogl",
+   "legal_basis": "Bescheid vom 16.03.1984",
+   "latitude": 47.936281,
+   "longitude": 13.900485,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.7FDFD930-E16B-42F3-BEA6-3E48AFC48842",
+   "name": "Pechölstein",
+   "legal_basis": "Bescheid vom 16.03.1984",
+   "latitude": 48.431124,
+   "longitude": 14.764371,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.E32ED7D1-9D66-456E-A18C-9E4C6CA456C7",
+   "name": "Pechölstein",
+   "legal_basis": "Bescheid vom 16.03.1984",
+   "latitude": 48.389811,
+   "longitude": 14.705236,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.6A533506-47BC-4A5D-B595-652B272ADB32",
+   "name": "Pechölstein",
+   "legal_basis": "Bescheid vom 16.03.1984",
+   "latitude": 48.390552,
+   "longitude": 14.720498,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.577A731A-BDA2-4518-9E19-F45242588010",
+   "name": "Eibe im Sattlgai",
+   "legal_basis": "Bescheid vom 16.03.1984",
+   "latitude": 48.253297,
+   "longitude": 14.924448,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9D1254A1-EFC8-4360-96EF-138DE2C7774B",
+   "name": "Felsformation",
+   "legal_basis": "Bescheid vom 16.03.1984",
+   "latitude": 48.317898,
+   "longitude": 14.717029,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.164EF048-AD02-40EF-919A-F5F532A39852",
+   "name": "Kugeleibe",
+   "legal_basis": "Bescheid vom 05.04.1984",
+   "latitude": 48.272416,
+   "longitude": 14.901369,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.71D9A18A-8F4C-4AF9-A2CA-72BEB0A9195A",
+   "name": "2 \"Platanen\" am Marktplatz Mauthausen",
+   "legal_basis": "Bescheid vom 05.04.1984",
+   "latitude": 48.240874,
+   "longitude": 14.516906,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.DA308FCB-7253-4BF2-B2C0-90F7F85C7E89",
+   "name": "\"Efeustock\" am Kirchturm",
+   "legal_basis": "Bescheid vom 13.04.1984",
+   "latitude": 48.024975,
+   "longitude": 14.072421,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.11682B87-0DAD-4B80-8C8E-FD4853B9FCF2",
+   "name": "Blutbuche",
+   "legal_basis": "Bescheid vom 13.04.1984",
+   "latitude": 48.236608,
+   "longitude": 14.664428,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B9320BDC-CB81-485A-BA77-583877E4606A",
+   "name": "Eiche",
+   "legal_basis": "Bescheid vom 18.04.1984",
+   "latitude": 48.172137,
+   "longitude": 12.998437,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1B9EFE9F-EDA5-43F2-B3C2-9436CAC89A27",
+   "name": "\"Linde\" in Altenhof",
+   "legal_basis": "Bescheid vom 18.04.1984",
+   "latitude": 48.505359,
+   "longitude": 13.780121,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.50E802F6-3E43-46B3-ADEF-9C0E9D76BDE5",
+   "name": "\"Linde\" in Paßberg",
+   "legal_basis": "Bescheid vom 18.04.1984",
+   "latitude": 48.195212,
+   "longitude": 13.010008,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8CA8DE20-FC0F-4157-B7C4-B955B8FAECF8",
+   "name": "Eiche",
+   "legal_basis": "Bescheid vom 02.05.1984",
+   "latitude": 48.234329,
+   "longitude": 14.852404,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.264FBA55-037F-41C9-91A8-02DD923C1AAF",
+   "name": "\"Teufelskirche\" im vorderen Rettenbachtal",
+   "legal_basis": "Bescheid vom 14.05.1984",
+   "latitude": 47.786964,
+   "longitude": 14.204063,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.B3BC7815-2D49-4DB0-93C6-63E72D9342E4",
+   "name": "\"Zwei Linden\" bei der Kalvarienbergkapelle",
+   "legal_basis": "Bescheid vom 17.05.1984",
+   "latitude": 48.244224,
+   "longitude": 14.512568,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.88DB3EF8-4CF5-4242-AEEE-CC7647BE666C",
+   "name": "Leostein",
+   "legal_basis": "Bescheid vom 17.05.1984",
+   "latitude": 48.220458,
+   "longitude": 14.779989,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.1810FA4B-D8E8-4497-BB27-CAA6FA1614F8",
+   "name": "\"Schwammerling\" in der Gemeinde Rechberg",
+   "legal_basis": "Bescheid vom 06.07.1984",
+   "latitude": 48.325749,
+   "longitude": 14.702114,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.C5E6A188-342D-4FD8-88C8-1BFA17BF02C8",
+   "name": "\"Stieleiche\" in Wels",
+   "legal_basis": "Bescheid vom 20.03.1984",
+   "latitude": 48.173871,
+   "longitude": 13.987184,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A2359FF1-E6D0-408A-881A-37202935B676",
+   "name": "Rotbuche",
+   "legal_basis": "Bescheid vom 13.09.1984",
+   "latitude": 48.157946,
+   "longitude": 13.607399,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9952BAD7-956A-4C4C-88F6-925CC1D9312F",
+   "name": "Friedhofsesche",
+   "legal_basis": "Bescheid vom 22.10.1984",
+   "latitude": 47.952952,
+   "longitude": 13.586309,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C8264F4C-72F6-41C7-A983-7EED3F68CCEC",
+   "name": "Kapellen-Linde",
+   "legal_basis": "Bescheid vom 22.10.1984",
+   "latitude": 48.08653,
+   "longitude": 13.10207,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E1AB1350-8877-48FF-8E5C-68743815571A",
+   "name": "Rebensteinmauern",
+   "legal_basis": "Bescheid vom 12.12.1984",
+   "latitude": 47.96227,
+   "longitude": 14.418214,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.2EC430A8-E35F-480C-B405-86A3B2EF3C98",
+   "name": "Bärenstein",
+   "legal_basis": "Bescheid vom 13.12.1984",
+   "latitude": 48.683259,
+   "longitude": 13.984572,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.4603B230-576A-44E8-B0D1-91CDF1C3D3C3",
+   "name": "Platane",
+   "legal_basis": "Bescheid vom 13.12.1984",
+   "latitude": 48.241214,
+   "longitude": 14.518072,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.31A65C8C-DDE6-4E77-ACE6-C48277E92886",
+   "name": "Kapellenlinde",
+   "legal_basis": "Bescheid vom 21.01.1985",
+   "latitude": 48.000843,
+   "longitude": 13.575473,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E017514B-C22A-4C8C-A4CF-B7B632A65E31",
+   "name": "\"Eiche\" vor dem Bundesoberstufenrealgymnasium Linz",
+   "legal_basis": "Bescheid vom 21.01.1985",
+   "latitude": 48.307387,
+   "longitude": 14.297796,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D95A39EF-2382-4D8F-AFE9-A46E1C2C6699",
+   "name": "Pilsenfels",
+   "legal_basis": "Bescheid vom 21.01.1985",
+   "latitude": 47.928022,
+   "longitude": 14.378153,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.A0EE38AB-5A5F-4FC5-867C-B3978017D16C",
+   "name": "Maierwöger-Linden",
+   "legal_basis": "Bescheid vom 06.02.1985",
+   "latitude": 48.425098,
+   "longitude": 14.489661,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9735A825-33CA-45DB-9950-90F5CC99DDB4",
+   "name": "Eibe",
+   "legal_basis": "Bescheid vom 06.02.1985",
+   "latitude": 48.434951,
+   "longitude": 14.624454,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BEDBD4D2-7B5F-4C7A-BCAE-81139C5F9060",
+   "name": "Machtlinger - \"Linde\" in Suben",
+   "legal_basis": "Bescheid vom 09.04.1985",
+   "latitude": 48.405505,
+   "longitude": 13.425291,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D2F1685A-30D8-4C1C-A6F3-83B66F25E531",
+   "name": "Tennisplatz - \"Linde\"",
+   "legal_basis": "Bescheid vom 22.04.1985",
+   "latitude": 48.484741,
+   "longitude": 14.002558,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.18F52572-D496-4141-87BD-F06762AC7999",
+   "name": "\"Eibe\" in Attersee",
+   "legal_basis": "Bescheid vom 22.04.1985",
+   "latitude": 47.914222,
+   "longitude": 13.538069,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6310B405-AB06-46EC-9EB1-7B454C2F1ED1",
+   "name": "\"Linde\" in Hirschbach",
+   "legal_basis": "Bescheid vom 28.05.1985",
+   "latitude": 48.48847,
+   "longitude": 14.410827,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D4242E63-EED7-4EAD-A46E-47BDEE9D7AAB",
+   "name": "Zwei Platanen",
+   "legal_basis": "Bescheid vom 11.06.1985",
+   "latitude": 48.150999,
+   "longitude": 12.822752,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C8ECC6F7-1DA4-4ECB-A5C0-CE34E36664B6",
+   "name": "Eiche",
+   "legal_basis": "Bescheid vom 06.08.1985",
+   "latitude": 48.491599,
+   "longitude": 13.980757,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C31D46AA-2EF9-4927-BD44-2BFE5D442CB0",
+   "name": "\"Eibe\" in Neumarkt",
+   "legal_basis": "Bescheid vom 06.09.1985",
+   "latitude": 48.466733,
+   "longitude": 14.464936,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2CF19323-A63A-4363-B31D-305FE1840CA7",
+   "name": "\"Burglinde\" in Bad Kreuzen",
+   "legal_basis": "Bescheid vom 13.09.1985",
+   "latitude": 48.259227,
+   "longitude": 14.819704,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1B19DE9E-DAE0-486D-B8EB-F60F172D2552",
+   "name": "\"Hauseiche\" / Steinereiche",
+   "legal_basis": "Bescheid vom 13.09.1985",
+   "latitude": 48.283686,
+   "longitude": 14.845148,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4DB54BCD-F790-4F53-8A8D-408CB46F07BA",
+   "name": "Steinbruch Wolfgangstein",
+   "legal_basis": "Bescheid vom 02.09.1985",
+   "latitude": 48.063767,
+   "longitude": 14.137699,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.EBB1A8A7-9845-48DF-AB77-637F0173DAA5",
+   "name": "\"Dorflinde\" in St. Leonhard b.Fr.",
+   "legal_basis": "Bescheid vom 11.09.1985",
+   "latitude": 48.443373,
+   "longitude": 14.677802,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.379D0A9F-9A6C-401E-91DC-E31B61FAEC26",
+   "name": "Mammutbaum",
+   "legal_basis": "Bescheid vom 24.09.1985",
+   "latitude": 48.345999,
+   "longitude": 13.779273,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.968A510A-3777-4434-B7F7-E45E1E1C40E0",
+   "name": "Eiche",
+   "legal_basis": "Bescheid vom 24.09.1985",
+   "latitude": 48.486665,
+   "longitude": 14.805321,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AAE4691A-477B-4D5C-A12B-859348C35B97",
+   "name": "Linde",
+   "legal_basis": "Bescheid vom 24.09.1985",
+   "latitude": 48.639006,
+   "longitude": 14.45419,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.83A69939-1C87-4375-B209-8E60E81B0419",
+   "name": "\"Lärche\" in Rauchenödt",
+   "legal_basis": "Bescheid vom 24.09.1985",
+   "latitude": 48.530283,
+   "longitude": 14.575761,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EBF718B4-713B-4FAE-8EB3-72E23EC21D61",
+   "name": "\"Linde\" bei der Herz Jesu Kapelle in Feldkirchen",
+   "legal_basis": "Bescheid vom 02.10.1985",
+   "latitude": 48.349768,
+   "longitude": 14.052592,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FE26777D-8F2A-4563-A0D2-38AF0A5AD74C",
+   "name": "\"Ahorn\" in Unterweißenbach",
+   "legal_basis": "Bescheid vom 18.10.1985",
+   "latitude": 48.473891,
+   "longitude": 14.834539,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BD2B67C4-F74D-4244-B0D5-F84B37420D04",
+   "name": "Rumpelmayrlinde",
+   "legal_basis": "Bescheid vom 16.11.1983",
+   "latitude": 47.736146,
+   "longitude": 14.31378,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AE87D7CC-3C8C-42F2-B3EA-EFF88FF91DB6",
+   "name": "\"Linde\" in Feldkirchen",
+   "legal_basis": "Bescheid vom 29.10.1985",
+   "latitude": 48.355102,
+   "longitude": 14.059619,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A6481432-EB89-4CCD-A10B-D41F9C071EB2",
+   "name": "\"Hauslinde\" in Weyer Land",
+   "legal_basis": "Bescheid vom 29.10.1985",
+   "latitude": 47.788379,
+   "longitude": 14.64719,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.DB676AF0-83A8-4F5C-825D-1F09D7023C6E",
+   "name": "Mariathaler - \"Kapellenlinde\" in Reichraming",
+   "legal_basis": "Bescheid vom 30.10.1985",
+   "latitude": 47.885813,
+   "longitude": 14.453473,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E66EDE41-0795-4680-BB1C-D692A131B604",
+   "name": "\"Balgsetzerlinde\" in Weyer Markt",
+   "legal_basis": "Bescheid vom 21.11.1985",
+   "latitude": 47.85328,
+   "longitude": 14.652539,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.02929401-1675-4C7B-9637-FAD3056AFC9B",
+   "name": "\"3 Friedhofslinden\" in Kollerschlag",
+   "legal_basis": "Bescheid vom 02.12.1985",
+   "latitude": 48.605085,
+   "longitude": 13.842663,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.7020979C-B1C0-47EC-AF95-FE15718F21EC",
+   "name": "\"Sauzähne\" in Laussa",
+   "legal_basis": "Bescheid vom 09.12.1985",
+   "latitude": 47.938647,
+   "longitude": 14.477282,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.14E4E074-3F90-47D8-AD0D-7B503FDAEA06",
+   "name": "Thalsteinmauer",
+   "legal_basis": "Bescheid vom 09.12.1985",
+   "latitude": 47.936657,
+   "longitude": 14.449172,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.FAEA188C-9407-48C8-BDBA-16DEA1A61584",
+   "name": "Prücklerstein",
+   "legal_basis": "Bescheid vom 06.12.1985",
+   "latitude": 47.94112,
+   "longitude": 14.486237,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.C0F63601-6489-4B34-90D0-CC51B4B5C131",
+   "name": "\"Gstoanat\" in St. Florian am Inn",
+   "legal_basis": "Bescheid vom 10.12.1985",
+   "latitude": 48.414689,
+   "longitude": 13.497581,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.F325A358-52A0-4E4A-AF6B-7584113F629F",
+   "name": "Langensteinermauer",
+   "legal_basis": "Bescheid vom 10.01.1986",
+   "latitude": 47.960943,
+   "longitude": 14.436416,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.384774EB-1ECD-47C0-B453-BA90E4B0C0C7",
+   "name": "Solitär - \"Eiche\" in Pfarrkirchen i.M.",
+   "legal_basis": "Bescheid vom 17.02.1986",
+   "latitude": 48.501818,
+   "longitude": 13.824467,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.708DE878-1E6A-4828-A875-37AC1BA8B34D",
+   "name": "\"Linde\" beim Glashüttenteich",
+   "legal_basis": "Bescheid vom 07.03.1986",
+   "latitude": 48.637526,
+   "longitude": 13.975844,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.CFE16E83-0FB0-48AC-820F-729FA75E1006",
+   "name": "Donabauer \"Kapellenlinde\"",
+   "legal_basis": "Bescheid vom 21.03.1986",
+   "latitude": 48.71049,
+   "longitude": 13.861237,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6AF3D7E1-DE5B-4EDC-9E57-29B045A6B01C",
+   "name": "Lärche",
+   "legal_basis": "Bescheid vom 03.04.1986",
+   "latitude": 48.094914,
+   "longitude": 12.771605,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.59688F58-CFF0-4B5F-968C-968C9AEFB8C2",
+   "name": "Einsiedlerhöhle",
+   "legal_basis": "Bescheid vom 21.04.1986",
+   "latitude": 48.278438,
+   "longitude": 14.973794,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.00C99F2B-FF3C-424F-84C3-50571890300B",
+   "name": "2 Linden",
+   "legal_basis": "Bescheid vom 16.04.1986",
+   "latitude": 47.991133,
+   "longitude": 13.428027,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C139AD90-4312-434E-94B8-E122297D28EC",
+   "name": "\"Zederbaum\" (Zypresse) in Eitzing",
+   "legal_basis": "Bescheid vom 12.05.1986",
+   "latitude": 48.243652,
+   "longitude": 13.420088,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1AD37155-8DB8-4B84-9368-F4CD3BA79141",
+   "name": "\"Eiche\" im Stadtteil Harbach",
+   "legal_basis": "Bescheid vom 02.07.1986",
+   "latitude": 48.325548,
+   "longitude": 14.278966,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.79CC0555-2C25-4FB9-836A-A19EE88A6741",
+   "name": "Eibenmischwald am Johannisberg",
+   "legal_basis": "Bescheid vom 19.08.1986",
+   "latitude": 47.844868,
+   "longitude": 13.791464,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B2960CE1-CB7C-4BAA-B626-71806712193D",
+   "name": "\"4 Kapellenlinden\" bei der Maria Hilf Kapelle",
+   "legal_basis": "Bescheid vom 29.09.1986",
+   "latitude": 48.271553,
+   "longitude": 14.80584,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.29DE32EC-54CD-47B1-AB1F-652A35E3956B",
+   "name": "\"Hiblereiche\" in Mitterdörfl",
+   "legal_basis": "Bescheid vom 30.09.1986",
+   "latitude": 48.286201,
+   "longitude": 14.823626,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.02279046-6592-4860-B25F-315EEBE233D3",
+   "name": "Schönauer - \"Linde\"",
+   "legal_basis": "Bescheid vom 23.10.1986",
+   "latitude": 48.260815,
+   "longitude": 13.037422,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1084C6B1-1E28-4B5E-99CF-09804DFCD534",
+   "name": "Hauseiche",
+   "legal_basis": "Bescheid vom 29.09.1986",
+   "latitude": 48.081451,
+   "longitude": 12.801302,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.03CCD4AF-CFDA-47F7-9191-11AB200F1B1A",
+   "name": "2 Kapellenlinden",
+   "legal_basis": "Bescheid vom 29.09.1986",
+   "latitude": 48.075781,
+   "longitude": 12.828242,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.30429140-5B07-4120-93F9-2FD2FA908DEC",
+   "name": "2 Linden",
+   "legal_basis": "Bescheid vom 27.11.1986",
+   "latitude": 48.067672,
+   "longitude": 12.856419,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.64F3EE0B-6C4F-4CE4-ACCB-847E7A98ED0F",
+   "name": "\"Stieleiche\" - Eiche im Holz",
+   "legal_basis": "Bescheid vom 01.12.1986",
+   "latitude": 48.009653,
+   "longitude": 13.22982,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.29CEEE86-0606-4AB6-8DAA-039F79DA06B5",
+   "name": "\"Linde\" auf dem Pfarrerberg",
+   "legal_basis": "Bescheid vom 28.11.1986",
+   "latitude": 48.207781,
+   "longitude": 13.161271,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BD1296F4-41E7-4613-BE5F-84B13BD01DFA",
+   "name": "\"Winterlinde\" in Burgkirchen",
+   "legal_basis": "Bescheid vom 28.11.1986",
+   "latitude": 48.205021,
+   "longitude": 13.089895,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.50D4C104-8DC8-4531-A095-BE96E0324B55",
+   "name": "Harrer-Eiche",
+   "legal_basis": "Bescheid vom 28.11.1986",
+   "latitude": 48.20763,
+   "longitude": 13.077828,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.61C03398-9DA5-404C-8CBD-4F0949D5E148",
+   "name": "Doppel -\"Ahornbaum\" in Kirchschlag",
+   "legal_basis": "Bescheid vom 30.01.1987",
+   "latitude": 48.410641,
+   "longitude": 14.275061,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.DCE7C97E-A405-4C30-9B56-518E4FC9C109",
+   "name": "Aumüller - \"Linde\" in Steinbach",
+   "legal_basis": "Bescheid vom 12.01.1987",
+   "latitude": 48.463994,
+   "longitude": 14.092661,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2DB7129D-FEEC-45D7-AF81-E492F0F1D2C6",
+   "name": "2 Kapellenlinden",
+   "legal_basis": "Bescheid vom 29.01.1987",
+   "latitude": 48.501869,
+   "longitude": 14.086073,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.565BA09E-8F8A-4258-B927-CDEC06922034",
+   "name": "Stifterlinde",
+   "legal_basis": "Bescheid vom 09.01.1987",
+   "latitude": 48.412077,
+   "longitude": 14.281217,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D802030F-CBDA-402A-BEDE-C4B58603F435",
+   "name": "Zwillingslinde",
+   "legal_basis": "Bescheid vom 13.04.1987",
+   "latitude": 48.456571,
+   "longitude": 14.77004,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.630C5EE7-DE57-4180-8717-0BA36DC51132",
+   "name": "\"Hecke\" in Salling",
+   "legal_basis": "Bescheid vom 15.05.1987",
+   "latitude": 48.469646,
+   "longitude": 13.545032,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.15ED06AD-13AC-4D63-84EC-FFC32DE963B2",
+   "name": "Bertoldilinde",
+   "legal_basis": "Bescheid vom 11.08.1987",
+   "latitude": 48.016587,
+   "longitude": 14.394031,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4208395C-174A-4214-9F30-99C65E3367C6",
+   "name": "Drillingsahorn",
+   "legal_basis": "Bescheid vom 07.09.1987",
+   "latitude": 48.406043,
+   "longitude": 14.262573,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D905E35E-456C-4705-A553-EB2EB7BA4135",
+   "name": "Altarm der Pram",
+   "legal_basis": "Bescheid vom 10.09.1987",
+   "latitude": 48.406614,
+   "longitude": 13.549058,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.94C1A9ED-D7FB-44F8-A09A-9A088C5F011E",
+   "name": "Zeitlhuber-Linde",
+   "legal_basis": "Bescheid vom 05.10.1987",
+   "latitude": 47.978275,
+   "longitude": 14.252223,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4620E4F2-4B4A-4B69-802A-C9728519EF5D",
+   "name": "2 \"Kapellenlinden\"",
+   "legal_basis": "Bescheid vom 31.03.1988",
+   "latitude": 47.912858,
+   "longitude": 13.511057,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6BDA83C4-11D6-4F73-84E4-7811220FC08E",
+   "name": "2 Kirchenlinden",
+   "legal_basis": "Bescheid vom 06.04.1988",
+   "latitude": 47.916122,
+   "longitude": 13.53923,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EE913AE3-3EA2-489E-B3F2-0009D2D4DB41",
+   "name": "Winterlinde (Tilia cordata)",
+   "legal_basis": "Bescheid vom 22.03.1988",
+   "latitude": 47.984608,
+   "longitude": 13.433213,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A6D4DC26-9430-48E7-8445-4ECE877738A5",
+   "name": "4 Linden",
+   "legal_basis": "Bescheid vom 19.11.1987",
+   "latitude": 48.011348,
+   "longitude": 13.717213,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E6096B3D-3BE0-4E3B-AE06-612A846D88EE",
+   "name": "Schloßlinde",
+   "legal_basis": "Bescheid vom 30.06.1988",
+   "latitude": 48.000171,
+   "longitude": 13.715298,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FB003209-A6A0-4E36-AD36-9B235C0EE588",
+   "name": "Biotop im Steinbruch Weingraben",
+   "legal_basis": "Bescheid vom 20.07.1988",
+   "latitude": 48.291765,
+   "longitude": 14.443883,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.6A281A4C-A516-45B2-BE3E-96BB0DAA7AC4",
+   "name": "Kapellenlinde",
+   "legal_basis": "Bescheid vom 08.08.1988",
+   "latitude": 48.466354,
+   "longitude": 14.254624,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.061BBBDA-3CFB-49CD-BF6E-ABD84F09A242",
+   "name": "Zigeunermauer",
+   "legal_basis": "Bescheid vom 04.08.1988",
+   "latitude": 48.332548,
+   "longitude": 14.763291,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.4441674F-5E5A-42E0-B46A-B6334B7BDA82",
+   "name": "Einsiedlerstein",
+   "legal_basis": "Bescheid vom 13.01.1989",
+   "latitude": 48.319705,
+   "longitude": 14.762333,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.70CF525F-7752-4316-B15D-9AF91E7AAC9B",
+   "name": "Kataraktbereich des Laussabaches",
+   "legal_basis": "Bescheid vom 16.01.1989",
+   "latitude": 47.726798,
+   "longitude": 14.644378,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.6E89EDD8-5C72-4DEA-B111-766D8C79083D",
+   "name": "Ottnangien",
+   "legal_basis": "Bescheid vom 05.06.1989",
+   "latitude": 48.10198,
+   "longitude": 13.667726,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.0F89336E-17AF-4CDD-BA26-5350831B10F5",
+   "name": "Haselmaier-Linde",
+   "legal_basis": "Bescheid vom 22.08.1989",
+   "latitude": 48.448753,
+   "longitude": 14.142696,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.0ABA5DF9-6C66-48DE-9582-7F623033C90B",
+   "name": "\"Kastanienbaum\" in Gunskirchen",
+   "legal_basis": "Bescheid vom 15.01.1990",
+   "latitude": 48.135886,
+   "longitude": 13.95697,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B11A560F-08F8-441F-9F54-99B42AEB469B",
+   "name": "\"Kaiserlinde\" Winterlinde",
+   "legal_basis": "Bescheid vom 24.01.1990",
+   "latitude": 48.327288,
+   "longitude": 13.353747,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1CFC356D-E363-47EB-A8CD-3B28A69D953F",
+   "name": "2 Sommerlinden",
+   "legal_basis": "Bescheid vom 24.01.1990",
+   "latitude": 47.702116,
+   "longitude": 14.277514,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.3603177E-A9BD-4F86-9774-04F7C833CFDC",
+   "name": "Sommerlinde",
+   "legal_basis": "Bescheid vom 23.01.1990",
+   "latitude": 47.742997,
+   "longitude": 13.438249,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.838FA3F6-B273-44D5-B5D8-7826011859DE",
+   "name": "Zwei Eichen",
+   "legal_basis": "Bescheid vom 23.01.1990",
+   "latitude": 47.7432,
+   "longitude": 13.439434,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E61E558B-94A6-435A-B865-650F0FDC7F72",
+   "name": "Sommerlinde",
+   "legal_basis": "Bescheid vom 01.02.1990",
+   "latitude": 47.736479,
+   "longitude": 13.453172,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E91A7FEF-A103-4152-9D0E-9B31B81A5F74",
+   "name": "Drei Eiben",
+   "legal_basis": "Bescheid vom 06.03.1990",
+   "latitude": 47.740075,
+   "longitude": 13.442199,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C7C5BEAF-94DB-49C6-B98D-6E283FFCC95F",
+   "name": "\"Kaiserlinde\" in Weilbach",
+   "legal_basis": "Bescheid vom 07.03.1990",
+   "latitude": 48.275871,
+   "longitude": 13.356254,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1C622447-5A07-4BBB-9E8A-229A72F5F363",
+   "name": "Fallerbach",
+   "legal_basis": "Bescheid vom 18.09.1990",
+   "latitude": 47.973145,
+   "longitude": 14.357177,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.B83B53F4-4FA5-4433-A9C3-CECBBF5F0FFA",
+   "name": "\"Edelkastanie\" am Pöstlingberg",
+   "legal_basis": "Bescheid vom 30.10.1990",
+   "latitude": 48.324005,
+   "longitude": 14.270942,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.61FAB41C-DFDF-4808-9C4A-F31824B63321",
+   "name": "\"Linde\" Winterlinde",
+   "legal_basis": "Bescheid vom 20.09.1990",
+   "latitude": 48.553608,
+   "longitude": 14.220393,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.33C5F0FC-BA26-41DE-8092-968DD622336E",
+   "name": "\"Jubiläumseiche (Franz Josef-Eiche)\" in Kleinzell",
+   "legal_basis": "Bescheid vom 20.11.1990",
+   "latitude": 48.456165,
+   "longitude": 14.001262,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.45CB7F75-2DC0-4252-9DC9-51570AF53649",
+   "name": "Linde beim Altersheim Gneisenau",
+   "legal_basis": "Bescheid vom 21.11.1990",
+   "latitude": 48.454809,
+   "longitude": 13.987058,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8BFEDBE1-1CD5-47A0-B303-1D39AB2D0D09",
+   "name": "Franzosen-Linde",
+   "legal_basis": "Bescheid vom 21.11.1990",
+   "latitude": 47.805317,
+   "longitude": 13.464027,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.5F0902B3-34FA-4DDC-ABC2-F6039A4BFAC6",
+   "name": "\"Kapellenlinde\" beim Ruckerhof",
+   "legal_basis": "Bescheid vom 21.11.1990",
+   "latitude": 48.556834,
+   "longitude": 13.950783,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.402A9451-CFCE-4614-B847-1BEECB0F8037",
+   "name": "Pammerhöhe",
+   "legal_basis": "Bescheid vom 21.11.1990",
+   "latitude": 48.331491,
+   "longitude": 14.726459,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.51F7CDB0-E1DD-4FD1-8613-3D0187B2A86C",
+   "name": "\"Rebensteiner-Hauslinde\" in Garsten",
+   "legal_basis": "Bescheid vom 18.01.1991",
+   "latitude": 47.963473,
+   "longitude": 14.424264,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.5DE59C5A-9F8F-4E48-A250-3DA959FAF833",
+   "name": "Alte \"Eiche\" in Manning",
+   "legal_basis": "Bescheid vom 14.02.1991",
+   "latitude": 48.075966,
+   "longitude": 13.673666,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FDA69CF8-2238-4F32-94B8-C5658E0D9FE4",
+   "name": "Robinie",
+   "legal_basis": "Bescheid vom 05.03.1991",
+   "latitude": 48.050971,
+   "longitude": 12.89677,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.30F26B24-6722-47BC-A8C5-AB1F1C9D952B",
+   "name": "\"Eiche\" in Wies",
+   "legal_basis": "Bescheid vom 05.03.1991",
+   "latitude": 48.202802,
+   "longitude": 13.797522,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.F34EF40E-0559-4D86-AB53-968CBA0413A3",
+   "name": "\"Linde\" Zwillingslinde",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 48.369918,
+   "longitude": 14.197288,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.73AC9A73-3A8A-43EC-BCE5-3C7A568C5329",
+   "name": "\"Linde\" in Eidenberg",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 48.410774,
+   "longitude": 14.227584,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.880CE01D-84E6-4B69-B063-F9FFA46E51B0",
+   "name": "Eibe",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 47.563014,
+   "longitude": 13.649703,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.71100F7E-A436-4A04-AB5D-E165296EB08B",
+   "name": "\"Hauseiche\" in Abern",
+   "legal_basis": "Bescheid vom 05.03.1991",
+   "latitude": 48.055051,
+   "longitude": 13.150998,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B4F7D5B2-24D4-4004-A6A3-2987E4E6EA20",
+   "name": "Priesterbauern-Eiche",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 48.182498,
+   "longitude": 13.140507,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.5C93D676-02AC-444B-8479-435F134528B0",
+   "name": "Stechpalme",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 48.001671,
+   "longitude": 14.387511,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.8EC4599E-C59A-439F-B068-65EBACACC2AB",
+   "name": "\"Lindengruppe\" in Mittelbach",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 48.461215,
+   "longitude": 13.763582,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.679BBA73-EB0A-4EC2-89C9-6E6ADE4AA72F",
+   "name": "Winterlinde",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 48.205951,
+   "longitude": 13.271915,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.28469091-190C-4541-845C-EBE241A0920F",
+   "name": "\"Linde\" auf der Bäckerschlag-Alm",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 47.846717,
+   "longitude": 13.988448,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8FC314D6-F4C4-4849-96E3-F330FE6C10C2",
+   "name": "Stiel- \"Eiche\"",
+   "legal_basis": "Bescheid vom 04.03.1991",
+   "latitude": 48.2905,
+   "longitude": 13.432168,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C87157F5-61C3-488D-918C-5B22CA15D566",
+   "name": "\"Sommerlinde\" Linde in Weinberg",
+   "legal_basis": "Bescheid vom 21.03.1991",
+   "latitude": 48.201282,
+   "longitude": 13.815615,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.20122729-B0FA-4E4F-AF33-5CFAD4DC886D",
+   "name": "Kastanienbaumallee",
+   "legal_basis": "Bescheid vom 12.04.1991",
+   "latitude": 48.215626,
+   "longitude": 14.478275,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.42A70483-1E43-44CA-8CA4-DD9A5B02B497",
+   "name": "Mostbaumallee",
+   "legal_basis": "Bescheid vom 19.06.1989",
+   "latitude": 47.637654,
+   "longitude": 13.621858,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.913A925D-BAA8-489B-93C7-6A749378950D",
+   "name": "Linde",
+   "legal_basis": "Bescheid vom 21.05.1991",
+   "latitude": 48.230718,
+   "longitude": 14.584148,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1B33FB95-45EB-4F0F-B62E-481BCED78959",
+   "name": "\"Eiche\" im Schlosspark Ebelsberg",
+   "legal_basis": "Bescheid vom 18.07.1991",
+   "latitude": 48.24646,
+   "longitude": 14.331733,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AD60FC93-EB71-40EA-A5E4-4B58117F5D90",
+   "name": "Eichengruppe in Hagenau (3 Eichen)",
+   "legal_basis": "Bescheid vom 01.08.1991",
+   "latitude": 48.273231,
+   "longitude": 13.115534,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B9938462-5F45-46BB-9C74-F26B4BD38C1A",
+   "name": "\"Kastanie u Linde\" bei der Grüner-Kapelle",
+   "legal_basis": "Bescheid vom 31.07.1991",
+   "latitude": 48.18315,
+   "longitude": 14.710069,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.418122B3-631E-46FE-A446-C99E0304729A",
+   "name": "\"Eiche\" in Kematen",
+   "legal_basis": "Bescheid vom 26.09.1991",
+   "latitude": 48.08663,
+   "longitude": 14.16227,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.3B8734EA-D5F5-4967-B3C4-96784B2AAD2D",
+   "name": "2 \"Eichen\" in Tiefgraben",
+   "legal_basis": "Bescheid vom 01.10.1991",
+   "latitude": 47.867416,
+   "longitude": 13.338699,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.886B5E3B-62A4-4CDA-AADD-F2F344E6D8C2",
+   "name": "\"Kapellenlinden\" von Ruhsam",
+   "legal_basis": "Bescheid vom 01.10.1991",
+   "latitude": 47.970849,
+   "longitude": 13.797815,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8288889A-9C8F-4FE4-9079-EBBA2EB0D002",
+   "name": "\"Lederer Haufen\" in Mitterkirchen",
+   "legal_basis": "Bescheid vom 04.11.1991",
+   "latitude": 48.177223,
+   "longitude": 14.746886,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.2654AC02-0DCF-4ED3-84A1-B56BCE2B460D",
+   "name": "Stiel- \"Eiche\"",
+   "legal_basis": "Bescheid vom 12.11.1991",
+   "latitude": 48.225925,
+   "longitude": 13.607365,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B9CFADF3-B31E-4459-85FD-7D78C25E4BF0",
+   "name": "\"Platanengruppe\" im Schloßpark Ebelsberg",
+   "legal_basis": "Bescheid vom 12.11.1991",
+   "latitude": 48.245862,
+   "longitude": 14.329924,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FAA6854C-5CC6-4F50-A1E9-4E704F05ACD5",
+   "name": "\"Blutbuche\" im Schloßpark Ebelsberg",
+   "legal_basis": "Bescheid vom 12.11.1991",
+   "latitude": 48.245946,
+   "longitude": 14.330498,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9C2FCAD9-E694-45CC-A44D-1BAC147B7DB3",
+   "name": "Eizendorfer Haufen",
+   "legal_basis": "Bescheid vom 15.11.1991",
+   "latitude": 48.185393,
+   "longitude": 14.79296,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.C4D021F9-15CF-4B25-B7E1-93375EAE7ACE",
+   "name": "\"Kapellenlinde\" in Schauerschlag",
+   "legal_basis": "Bescheid vom 03.02.1992",
+   "latitude": 48.469666,
+   "longitude": 14.266687,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.DD456E60-65FF-4F4A-B06C-05D2685B43A0",
+   "name": "Bergahorn am Buglreut",
+   "legal_basis": "Bescheid vom 01.04.1992",
+   "latitude": 47.685078,
+   "longitude": 14.399615,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.325483D3-D62C-4FA5-8B13-721F2146BEB8",
+   "name": "\"Kastanienbaum auf Grst. 1493/6\" Roßkastanie beim Lokalbahnhof in Steyr",
+   "legal_basis": "Bescheid vom 01.04.1992",
+   "latitude": 48.03905,
+   "longitude": 14.408546,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.51180A39-8830-45DE-91A2-071F54104056",
+   "name": "\"Hauslinde\" in Großreith",
+   "legal_basis": "Bescheid vom 01.04.1992",
+   "latitude": 47.981333,
+   "longitude": 13.755427,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.94AB7273-DB73-4F0E-9716-E60CE8B42A11",
+   "name": "Segenbaum",
+   "legal_basis": "Bescheid vom 24.04.1992",
+   "latitude": 47.660178,
+   "longitude": 14.357901,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.DB5854DE-B260-42CB-A090-DE6FFCC9FA93",
+   "name": "3 \"Linden\" beim Gasthaus Pommer (Stadlerwirt)",
+   "legal_basis": "Bescheid vom 10.09.1992",
+   "latitude": 48.151579,
+   "longitude": 13.007014,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.60C47758-8A23-4AD5-BEA0-6F38FE1A36D0",
+   "name": "Gasthaus-\"Esche\" in Handenberg",
+   "legal_basis": "Bescheid vom 10.09.1992",
+   "latitude": 48.117304,
+   "longitude": 12.985595,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1B0210B1-87BF-42EF-B7F5-6E36F9826B7B",
+   "name": "Felsblock aus Flyschsandstein",
+   "legal_basis": "Bescheid vom 18.11.1992",
+   "latitude": 47.917776,
+   "longitude": 13.793209,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.33D90C1A-83AF-4748-A23B-334C64DC1D6E",
+   "name": "\"Baumgruppe\" in Diersbach",
+   "legal_basis": "Bescheid vom 18.12.1992",
+   "latitude": 48.399046,
+   "longitude": 13.560552,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.98A93A78-08C4-41F9-9366-A7B273445C05",
+   "name": "Linde bei der Volksschule in Mitterweng",
+   "legal_basis": "Bescheid vom 21.12.1992",
+   "latitude": 47.694999,
+   "longitude": 14.362909,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4463AA88-68B6-463B-80DC-5D253D345BE6",
+   "name": "Linde",
+   "legal_basis": "Bescheid vom 18.12.1992",
+   "latitude": 47.930537,
+   "longitude": 13.959881,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.486ED1BA-6AC8-4D0B-AFAC-12B2BD286101",
+   "name": "Kapellenesche",
+   "legal_basis": "Bescheid vom 18.12.1992",
+   "latitude": 48.557058,
+   "longitude": 14.089679,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.7529A00C-36FB-4656-8BEC-942187E04C0D",
+   "name": "Linde in der Gemeinde Molln",
+   "legal_basis": "Bescheid vom 18.12.1992",
+   "latitude": 47.887937,
+   "longitude": 14.269697,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AAFF5470-FE41-43F8-84F9-CCE5E86AD6D3",
+   "name": "Zwei Linden beim Koller-Kreuz",
+   "legal_basis": "Bescheid vom 21.12.1992",
+   "latitude": 48.514495,
+   "longitude": 13.627074,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E7C528B7-8D40-4BC0-BD72-E551DE1CF4BE",
+   "name": "Huebmer-Eiche",
+   "legal_basis": "Bescheid vom 08.01.1993",
+   "latitude": 47.934478,
+   "longitude": 14.09603,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.ECBF7FB2-88C8-4723-BAA3-8E373D5FE6EA",
+   "name": "\"Eichen\" 2 Stieleichen",
+   "legal_basis": "Bescheid vom 06.04.1993",
+   "latitude": 48.336576,
+   "longitude": 14.137271,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1CAEF9C7-578F-43C1-97CB-BFDDA5986F52",
+   "name": "\"Kapellenlinde\" in Liebenau",
+   "legal_basis": "Bescheid vom 06.04.1993",
+   "latitude": 48.532529,
+   "longitude": 14.810339,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E44EB766-2C31-432B-9B06-D89AA57DD3CE",
+   "name": "100-jährige Linde",
+   "legal_basis": "Bescheid vom 02.04.1993",
+   "latitude": 48.090039,
+   "longitude": 13.868918,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A3A4EA17-D076-461B-B799-52884C57414A",
+   "name": "Zwillingseibe",
+   "legal_basis": "Bescheid vom 02.04.1993",
+   "latitude": 48.363557,
+   "longitude": 14.629181,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B4B5F8A5-56CE-4E50-B2ED-ADF187ED4EF3",
+   "name": "\"2 Eichen\" in Waldegg",
+   "legal_basis": "Bescheid vom 05.04.1993",
+   "latitude": 48.276178,
+   "longitude": 14.292085,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E72282B4-8753-4974-9DF8-6079EFD87442",
+   "name": "Kugellinde",
+   "legal_basis": "Bescheid vom 02.04.1993",
+   "latitude": 48.21755,
+   "longitude": 14.815608,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4D5340DB-E3F5-40E0-B1E2-4DDD2F49490F",
+   "name": "Platanengruppe",
+   "legal_basis": "Bescheid vom 05.04.1993",
+   "latitude": 48.338033,
+   "longitude": 14.321675,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2D9E456B-F1BD-4FC9-B4F6-F7C5C91B03C6",
+   "name": "\"Roßkastanie\" in Wels",
+   "legal_basis": "Bescheid vom 14.06.1993",
+   "latitude": 48.153506,
+   "longitude": 14.008304,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.34AD2D26-EBD6-4F39-B836-C44C7F61B0A4",
+   "name": "\"Ginkgobaum\" bei der BBK Gmunden",
+   "legal_basis": "Bescheid vom 16.11.1993",
+   "latitude": 47.920831,
+   "longitude": 13.804633,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.59C95723-3CEF-47A0-9066-0F315BB4692F",
+   "name": "Kirchenlinde",
+   "legal_basis": "Bescheid vom 16.11.1993",
+   "latitude": 48.110714,
+   "longitude": 14.191451,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.ED0B9AFA-96DE-4085-9C19-C1938143FF98",
+   "name": "Bergulme und Efeu",
+   "legal_basis": "Bescheid vom 25.11.1993",
+   "latitude": 48.173994,
+   "longitude": 13.344032,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4BB0B4F2-3385-48F2-AB0E-0FCED5DA670C",
+   "name": "2 \"Linden\"",
+   "legal_basis": "Bescheid vom 13.12.1993",
+   "latitude": 48.374125,
+   "longitude": 14.367108,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4A5230E1-4741-4210-93EA-9AA91F285414",
+   "name": "Eiche auf dem Jubiläumsplatz",
+   "legal_basis": "Bescheid vom 13.12.1993",
+   "latitude": 48.091655,
+   "longitude": 13.877174,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.458D9D41-72DD-4BC3-B7BC-A08E4EC4EDC0",
+   "name": "2 Eiben",
+   "legal_basis": "Bescheid vom 03.12.1993",
+   "latitude": 48.153041,
+   "longitude": 13.346357,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.37837215-003F-494D-AEE8-5C3ED6E4B878",
+   "name": "Rotbuche",
+   "legal_basis": "Bescheid vom 13.12.1993",
+   "latitude": 48.204653,
+   "longitude": 13.48856,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.56E9CA44-7C0C-4CF6-92C3-A79D4C182CA8",
+   "name": "2 Platanen",
+   "legal_basis": "Bescheid vom 13.12.1993",
+   "latitude": 48.205134,
+   "longitude": 13.488396,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.F398815A-EC6E-4F5A-911A-54D65B171A5F",
+   "name": "\"Sommerlinde (Tilia Platyphyllos)\" in Bachgasse",
+   "legal_basis": "Bescheid vom 12.04.1994",
+   "latitude": 47.702258,
+   "longitude": 13.629544,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.CD07A6B4-56EF-40FC-89E0-98ED7C9800BE",
+   "name": "Eiche in Oberhocherenz",
+   "legal_basis": "Bescheid vom 12.04.1994",
+   "latitude": 48.228103,
+   "longitude": 14.045179,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.03A45D11-BF01-4415-B427-93A95FC85641",
+   "name": "\"Linde\" in Kastenreith",
+   "legal_basis": "Bescheid vom 05.05.1994",
+   "latitude": 47.851328,
+   "longitude": 14.639905,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BA0C685F-82B0-4526-A946-D02314546CB9",
+   "name": "Kastanienbaum",
+   "legal_basis": "Bescheid vom 16.05.1994",
+   "latitude": 48.093373,
+   "longitude": 12.972893,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.53CE22AB-0B11-4C94-AA85-71D38684B352",
+   "name": "\"300-jährige Eiche\" in Rufling",
+   "legal_basis": "Bescheid vom 16.05.1994",
+   "latitude": 48.273201,
+   "longitude": 14.211276,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A49ECBD6-2155-4D8A-AB58-A700C85AEFCB",
+   "name": "Niederterrassenböschung in Traun",
+   "legal_basis": "Bescheid vom 24.10.1994",
+   "latitude": 48.227117,
+   "longitude": 14.222366,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.15E5EF1C-5038-4291-9EDA-E1F63679AE19",
+   "name": "\"Schnurbaum\" in Schärding",
+   "legal_basis": "Bescheid vom 27.10.1994",
+   "latitude": 48.453892,
+   "longitude": 13.435612,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EFA007F9-C2FB-436A-8D6C-6B01DC45D891",
+   "name": "Eiche in Hütting",
+   "legal_basis": "Bescheid vom 02.02.1995",
+   "latitude": 48.172844,
+   "longitude": 14.685519,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.9B16F0BD-C351-48A9-AAF4-AC1212C6E270",
+   "name": "Ahörndl-Moor",
+   "legal_basis": "Bescheid vom 03.03.1995",
+   "latitude": 48.472247,
+   "longitude": 13.65825,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.EDF338CA-2BD6-40EA-A1BE-D396C6C11CD3",
+   "name": "Feuchtwiese am Riedelbach",
+   "legal_basis": "Bescheid vom 18.07.1995",
+   "latitude": 47.934964,
+   "longitude": 13.298914,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.49119A9F-82BB-48B0-9686-FDA26C791E42",
+   "name": "\"Allee\" Lindenallee im Schloßpark Walchen",
+   "legal_basis": "Bescheid vom 04.12.1995",
+   "latitude": 47.985793,
+   "longitude": 13.490011,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.03FFB7B9-088B-4D8B-9065-B94128EDACED",
+   "name": "\"Sierninger Leiten\" in der Gde. Sierning (Kuhschellenböschung 'Kreuzweg-Keltenweg')",
+   "legal_basis": "Bescheid vom 28.12.1995",
+   "latitude": 48.042794,
+   "longitude": 14.325102,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.F2EBD05E-8C5F-4376-9B3F-C3E09B4838FF",
+   "name": "\"Feldahorn\" in Kirchberg, Gde. Vöcklabruck",
+   "legal_basis": "Bescheid vom 29.10.1996",
+   "latitude": 48.000977,
+   "longitude": 13.638108,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D54D426D-0167-43C0-9211-8940C08B8C93",
+   "name": "\"alte Kastanienbaum\" in Goldwörth",
+   "legal_basis": "Bescheid vom 31.10.1996",
+   "latitude": 48.317214,
+   "longitude": 14.100413,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6580989F-C0D0-403C-9C69-CB4CA326800A",
+   "name": "\"Stieleiche\" am Europaplatz in Linz",
+   "legal_basis": "Bescheid vom 20.03.1997",
+   "latitude": 48.299619,
+   "longitude": 14.303367,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.10B27F2F-AA9A-4986-AF80-9BA9BD700B09",
+   "name": "\"Baumgruppe (3 Platanen)\" in Enns",
+   "legal_basis": "Bescheid vom 03.04.1997",
+   "latitude": 48.210531,
+   "longitude": 14.483465,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.452DB436-1E78-44ED-A4BF-21F53D658B53",
+   "name": "\"Strawiesen im Redltal\" Feuchtwiese im Redltal",
+   "legal_basis": "Bescheid vom 20.05.1997",
+   "latitude": 48.036026,
+   "longitude": 13.410252,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.24DE90F9-04C6-4CEA-B8A2-6D987DC5D7EB",
+   "name": "Pulvermühlbach in Linz/Urfahr",
+   "legal_basis": "Bescheid vom 23.05.1997",
+   "latitude": 48.331077,
+   "longitude": 14.300782,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.50C0FC89-C190-4F66-9E88-9813A88880C2",
+   "name": "Lindenallee beim Schloß Altenhof",
+   "legal_basis": "Bescheid vom 27.05.1997",
+   "latitude": 48.505051,
+   "longitude": 13.779619,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.74FE02FF-7A32-401F-BC37-30A97ABECF3E",
+   "name": "Enzianwiese in Eidenberg",
+   "legal_basis": "Bescheid vom 11.08.1998",
+   "latitude": 48.387022,
+   "longitude": 14.24492,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.7852175C-F40B-4214-A326-E92ADE5CFA0E",
+   "name": "Bergahorn",
+   "legal_basis": "Bescheid vom 16.12.1998",
+   "latitude": 47.880091,
+   "longitude": 14.271762,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.15ED2CAD-13F7-42EE-9357-3B2F77E87F7F",
+   "name": "\"250-jährige Linde\" in Haid",
+   "legal_basis": "Bescheid vom 03.02.1999",
+   "latitude": 48.437709,
+   "longitude": 14.854391,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.26D8215B-8C2E-44A1-9E83-78A9BC93EF6F",
+   "name": "\"Schustergraben\" in Langenstein",
+   "legal_basis": "Bescheid vom 10.05.1999",
+   "latitude": 48.249737,
+   "longitude": 14.483813,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.DA0C08B6-826B-4287-BC4D-E0F1EBDC8F02",
+   "name": "\"Elefantenstein\" im Naturpark",
+   "legal_basis": "Bescheid vom 13.07.1999",
+   "latitude": 48.328364,
+   "longitude": 14.731837,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.3F8A3D5A-6595-4258-965D-62BDB7AB029C",
+   "name": "\"Fuchsmauern\" im Naturpark",
+   "legal_basis": "Bescheid vom 13.07.1999",
+   "latitude": 48.327157,
+   "longitude": 14.713253,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.2CA58213-A1C0-4A71-AE66-94BFEB0739C9",
+   "name": "Pechölstein",
+   "legal_basis": "Bescheid vom 15.07.1999",
+   "latitude": 48.318004,
+   "longitude": 14.72289,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.77A1BB3E-3556-4826-9AAD-6DD69BFA5143",
+   "name": "Insel in Unterach",
+   "legal_basis": "Bescheid vom 08.10.1999",
+   "latitude": 47.800169,
+   "longitude": 13.483791,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.621DB2BA-E14A-454B-A5ED-19C8E8DAD66B",
+   "name": "\"Linde\" in Berg bei Ansfelden",
+   "legal_basis": "Bescheid vom 15.10.1999",
+   "latitude": 48.188705,
+   "longitude": 14.244179,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4A871B48-9FBA-4797-9A25-DE9B5EEF8445",
+   "name": "\"Baumreihe (bestehend aus 5 Eichen)\" in Aufham",
+   "legal_basis": "Bescheid vom 05.10.1999",
+   "latitude": 47.904209,
+   "longitude": 13.52654,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.F83BB168-E24F-4FBB-B8A1-FF8BF597DF0D",
+   "name": "\"5 Eiben auf dem Altaistberg\"",
+   "legal_basis": "Bescheid vom 15.11.1999",
+   "latitude": 48.317406,
+   "longitude": 14.524698,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.08A259D6-8937-4805-A11B-76BFD5C972AE",
+   "name": "Trauerweide im Wehrgraben",
+   "legal_basis": "Bescheid vom 15.11.1999",
+   "latitude": 48.043464,
+   "longitude": 14.415543,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.614AEF3C-54D2-4E46-8BA8-5ACE4DACFFAB",
+   "name": "\"Tuffquellen\" am linken Ufer der Laudach",
+   "legal_basis": "Bescheid vom 18.11.1999",
+   "latitude": 48.034161,
+   "longitude": 13.908173,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.4E7DEDD1-1725-47AA-9BB9-099DB225BC99",
+   "name": "\"Hainbuchenallee\" beim Schloß Neuhaus",
+   "legal_basis": "Bescheid vom 04.09.2000",
+   "latitude": 48.422617,
+   "longitude": 13.994762,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.01708E7B-0EB5-46F6-8F06-CA8086EBF3B5",
+   "name": "\"Platane\" im Volksgarten",
+   "legal_basis": "Bescheid vom 09.10.2000",
+   "latitude": 48.294596,
+   "longitude": 14.291813,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.445BFFA4-BD63-4536-8A7F-EDEBB3D20540",
+   "name": "Linde",
+   "legal_basis": "Bescheid vom 09.10.2000",
+   "latitude": 47.950955,
+   "longitude": 13.588072,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.90734822-A4F8-443B-ABE5-934BDFC73151",
+   "name": "Manzenreiter- \"Linde\"",
+   "legal_basis": "Bescheid vom 09.10.2000",
+   "latitude": 48.731027,
+   "longitude": 13.834682,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A83338A4-4F1F-469A-AB1B-2577110F8DB1",
+   "name": "Blutbuche",
+   "legal_basis": "Bescheid vom 09.10.2000",
+   "latitude": 48.199802,
+   "longitude": 14.422763,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8E8E6FF5-3E4B-4466-BB5C-A70A2AEE457E",
+   "name": "\"5 Rotbuchen\" beim Grünwald",
+   "legal_basis": "Bescheid vom 10.10.2000",
+   "latitude": 48.657409,
+   "longitude": 13.97156,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.0C6D9B3D-4828-4A43-8EB2-FC46F00C9667",
+   "name": "\"Rotbuche\" beim Schloß Eggendorf",
+   "legal_basis": "Bescheid vom 24.10.2000",
+   "latitude": 48.131125,
+   "longitude": 14.148745,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.470673C3-0269-43A8-94CE-835C53D71CB7",
+   "name": "\"Stieleiche\" Jungmayr-Eiche",
+   "legal_basis": "Bescheid vom 24.10.2000",
+   "latitude": 48.292902,
+   "longitude": 14.109203,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.55F2F84E-6FA3-439A-8989-2007178B5C30",
+   "name": "\"Kapellenlinde\" beim Lindnerhof",
+   "legal_basis": "Bescheid vom 24.10.2000",
+   "latitude": 48.409012,
+   "longitude": 13.911837,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8B7F6169-7748-49FE-8570-4019951DACE0",
+   "name": "\"Bildstocklinde\" in Buchet",
+   "legal_basis": "Bescheid vom 24.01.2001",
+   "latitude": 48.436913,
+   "longitude": 13.609053,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.F94D5E34-2F69-4406-AF19-1C75DD5A1066",
+   "name": "\"alte Linde\" in Weiketsedt",
+   "legal_basis": "Bescheid vom 24.01.2001",
+   "latitude": 48.160959,
+   "longitude": 13.451447,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8BB3F910-98DA-4B56-9ABC-E2252C6CA46F",
+   "name": "\"Platane\" in Kleinmünchen",
+   "legal_basis": "Bescheid vom 23.01.2002",
+   "latitude": 48.253527,
+   "longitude": 14.310871,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.1616AAD6-BDEE-40B2-B56F-B829032CD335",
+   "name": "\"Stieleiche\" in Urfahr",
+   "legal_basis": "Bescheid vom 15.07.2002",
+   "latitude": 48.328747,
+   "longitude": 14.338421,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E947D037-E015-4DF3-A9E5-B550BCB49EDD",
+   "name": "\"Schwarzföhre\" beim AKH",
+   "legal_basis": "Bescheid vom 01.08.2002",
+   "latitude": 48.303042,
+   "longitude": 14.304974,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.D63B346D-E61C-4E69-B17B-A09514A153DC",
+   "name": "\"Mostbirnbaum - Wildbirne (Pyrus pyraster)\" in Marchtrenk",
+   "legal_basis": "Bescheid vom 30.01.2003",
+   "latitude": 48.176449,
+   "longitude": 14.099914,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.07279887-2E19-4899-981D-C9A93C79A212",
+   "name": "\"Linde\" bei der Fatima-Kapelle in Ternberg",
+   "legal_basis": "Bescheid vom 02.07.2003",
+   "latitude": 47.946327,
+   "longitude": 14.403969,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A65F8EF4-454F-4EE0-B050-9DDBFAB399B2",
+   "name": "\"Rotbuche\" im Park der Kreuzschwesternschule in Steyr",
+   "legal_basis": "Bescheid vom 24.06.2003",
+   "latitude": 48.035553,
+   "longitude": 14.413234,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D34F4392-DB49-438E-A39D-F02B0C88B546",
+   "name": "\"2 Linden\" in der Theresientalstraße in Gmunden",
+   "legal_basis": "Bescheid vom 11.09.2003",
+   "latitude": 47.937603,
+   "longitude": 13.798657,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FE673C5C-E285-4A5D-9C4E-25B27765056A",
+   "name": "\"Weide\" beim Redlbach in Dorf",
+   "legal_basis": "Bescheid vom 10.09.2003",
+   "latitude": 48.079705,
+   "longitude": 13.483672,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.91493F86-F50D-4538-A0D3-CF46A6D3BCB2",
+   "name": "\"Rotbuche\" im alten Stadtgraben in Steyr",
+   "legal_basis": "Bescheid vom 12.09.2003",
+   "latitude": 48.037868,
+   "longitude": 14.416201,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C0046F95-B4B1-469C-99BC-166069CEEDCF",
+   "name": "\"Eiche - Quercus robur\" in Untermühl",
+   "legal_basis": "Bescheid vom 27.11.2003",
+   "latitude": 48.424667,
+   "longitude": 13.98144,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C6B810E3-0E2D-4E1E-A737-2B2FD8859C0B",
+   "name": "Alte \"Linde\" beim Anwesen Kromberg Nr.1",
+   "legal_basis": "Bescheid vom 27.11.2003",
+   "latitude": 48.319829,
+   "longitude": 13.490629,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.52798962-F023-4EFA-9E64-59DD6CF7DA47",
+   "name": "\"2 Eichen\" bei Raffeldsmühle in Fraham",
+   "legal_basis": "Bescheid vom 27.11.2003",
+   "latitude": 48.292303,
+   "longitude": 14.045713,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.32684082-A1DA-490D-9D01-17F896D32830",
+   "name": "Kalktuffquelle",
+   "legal_basis": "Bescheid vom 18.03.2004",
+   "latitude": 47.968409,
+   "longitude": 13.400502,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.AFCB8AAA-9B8E-49DC-900F-4A8E833AA038",
+   "name": "\"kugelförmige Sandsteinsphären\" in Adlwang",
+   "legal_basis": "Bescheid vom 20.12.2004",
+   "latitude": 47.982856,
+   "longitude": 14.218372,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.D7BC5968-0AD9-4F75-A25D-FF61A18E9D11",
+   "name": "\"Nussbaum\" in Eisenhub",
+   "legal_basis": "Bescheid vom 18.03.2005",
+   "latitude": 48.190458,
+   "longitude": 13.010949,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EA242362-45FE-4BD7-AD4E-5930E706B0CC",
+   "name": "\"Linde\" in Micheldorf",
+   "legal_basis": "Bescheid vom 02.12.2005",
+   "latitude": 47.875772,
+   "longitude": 14.10944,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FE21E59C-BB3F-4B89-A87D-95E8DB57762F",
+   "name": "\"Sommerlinde (Tilia platyphyllos)\" in der Lahn",
+   "legal_basis": "Bescheid vom 01.12.2005",
+   "latitude": 47.859957,
+   "longitude": 13.970331,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FFD79FCD-566F-4E8F-9113-7E356CD1972B",
+   "name": "\"Stieleiche (Quercus robur)\" in der Ing. Stern-Straße",
+   "legal_basis": "Bescheid vom 01.12.2005",
+   "latitude": 48.297513,
+   "longitude": 14.316732,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.19C8B59C-8524-4DFF-A54C-DE9F00AD21C9",
+   "name": "\"Eibe (Taxus baccata)\" bei der Pfarrkirche in Bad Goisern",
+   "legal_basis": "Bescheid vom 04.08.2006",
+   "latitude": 47.641739,
+   "longitude": 13.616248,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D8D26443-A71F-4D22-A5F7-1B46A3361F0C",
+   "name": "\"Eiche (Quercus robur)\" in Leonding",
+   "legal_basis": "Bescheid vom 04.09.2006",
+   "latitude": 48.284832,
+   "longitude": 14.263443,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.6248E81D-AFFE-4ED6-A397-CFA152DDBB16",
+   "name": "\"Winterlinde (Tilia cordata)\" beim Blumauer in Scharnstein",
+   "legal_basis": "Bescheid vom 27.08.2007",
+   "latitude": 47.899762,
+   "longitude": 13.962568,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.0C9625FC-477B-4FD8-AA04-F11AB1F03AB4",
+   "name": "\"Eiche\" in St. Marienkirchen an der Polsenz",
+   "legal_basis": "Bescheid vom 10.09.2007",
+   "latitude": 48.272134,
+   "longitude": 13.948091,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.181624CD-87AB-45E9-953B-631EE19ABB88",
+   "name": "\"Heidenstein\" in Eibenstein",
+   "legal_basis": "Bescheid vom 15.11.2007",
+   "latitude": 48.56012,
+   "longitude": 14.409895,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2272AAB5-80CE-4E24-A002-8E1E9247B5FB",
+   "name": "\"Baumgruppe - bestehend aus vier Schnurbäumen\"",
+   "legal_basis": "Bescheid vom 27.02.2008",
+   "latitude": 48.296883,
+   "longitude": 14.287277,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.73487C29-77BA-40BB-A358-67CCB668FF00",
+   "name": "\"Linde\" in Oberneukirchen",
+   "legal_basis": "Bescheid vom 11.09.2008",
+   "latitude": 48.462049,
+   "longitude": 14.229863,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.719A3E1B-392C-43E8-B87E-1A6CD2C14373",
+   "name": "Bergulme (Ulmus Glabra)\"",
+   "legal_basis": "Bescheid vom 16.07.2009",
+   "latitude": 48.000069,
+   "longitude": 13.714849,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.7023C7F7-7B7A-47D6-8CE1-5A137B14EED3",
+   "name": "Trauerweide (Salix alba tristis)",
+   "legal_basis": "Bescheid vom 10.11.2009",
+   "latitude": 48.043571,
+   "longitude": 14.413865,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.527F85B6-56DA-4BD4-A164-2AC8684C1061",
+   "name": "\"Rotbuche (Fagus sylvatica)\" in Erledt",
+   "legal_basis": "Bescheid vom 16.04.2010",
+   "latitude": 48.433671,
+   "longitude": 13.829285,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.FC5BC7E2-69D2-4825-856D-24F025D7705C",
+   "name": "\"Stieleiche (Quercus robur)\" in Mittererb",
+   "legal_basis": "Bescheid vom 03.08.2010",
+   "latitude": 48.015177,
+   "longitude": 13.262978,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.723B1394-AA30-4425-A3C8-19BF0F023F9B",
+   "name": "\"Rotbuche (Fagus sylvatica)\" am Bäckerberg",
+   "legal_basis": "Bescheid vom 21.12.2011",
+   "latitude": 47.930663,
+   "longitude": 13.977426,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D7BBD2A4-8FA5-48AF-9CC6-A9070D903EF4",
+   "name": "Traubeneiche (Quercus petraea)",
+   "legal_basis": "Bescheid vom 20.01.2012",
+   "latitude": 47.715685,
+   "longitude": 14.337096,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.D36091A2-C06F-434C-8F1A-D98B42496BC1",
+   "name": "Tausendjährige Eibe in Harterleiten",
+   "legal_basis": "Bescheid vom 16.07.2013",
+   "latitude": 48.418338,
+   "longitude": 14.54783,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C58A02FD-0151-40F2-9A1B-B71F6556DCFA",
+   "name": "\"2 Linden\" in Hiltschen",
+   "legal_basis": "Bescheid vom 13.03.2014",
+   "latitude": 48.627913,
+   "longitude": 14.463211,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.ADCC2434-30A7-4B9B-A28B-6DFF5D2CCD6D",
+   "name": "2 Linden in Haibach im Mühlkreis",
+   "legal_basis": "Bescheid vom 02.11.2015",
+   "latitude": 48.434682,
+   "longitude": 14.381222,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4DE48D23-512A-41B6-8880-865A05343C72",
+   "name": "\"Linde\" beim Sportplatz in Waizenkirchen",
+   "legal_basis": "Bescheid vom 12.11.1991",
+   "latitude": 48.333202,
+   "longitude": 13.850908,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.83E0F18C-007A-4D1E-9EE1-8CE8E7AB42F6",
+   "name": "\"2 Kirchenlinden bei der Pfarrkirche in Aspach\" bzw. Kaiser-Linden in Aspach",
+   "legal_basis": "Bescheid vom 05.03.1991",
+   "latitude": 48.185004,
+   "longitude": 13.304981,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E8F12A07-57E8-4FCD-B685-0071B2AB6619",
+   "name": "Pechölstein",
+   "legal_basis": "Bescheid vom 24.01.1984",
+   "latitude": 48.320181,
+   "longitude": 14.716426,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.38FF2937-7C2C-4156-9FAF-70C11CD1DA37",
+   "name": "Stieleiche in Dörfl",
+   "legal_basis": "Bescheid vom 25.09.2017",
+   "latitude": 48.016983,
+   "longitude": 13.638887,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.77514ACA-F29B-4559-9553-BD5A9C6DD4CD",
+   "name": "Blutbuche in Stifting",
+   "legal_basis": "Bescheid vom 07.11.1985",
+   "latitude": 48.417308,
+   "longitude": 14.886179,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.71431C08-51CB-4A29-AB73-698BAC58A747",
+   "name": "Pechölstein beim Birl",
+   "legal_basis": "Bescheid vom 09.09.1988",
+   "latitude": 48.326788,
+   "longitude": 14.736031,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.FE35957A-C0B7-4BFA-8676-EB9E03384B4A",
+   "name": "Eibe am Ortsplatz",
+   "legal_basis": "Bescheid vom 06.08.2018",
+   "latitude": 47.854711,
+   "longitude": 13.956351,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.53375A87-89C3-4F59-A8A9-363071749F10",
+   "name": "\"Rinnende Mauer\" in Molln",
+   "legal_basis": "Bescheid vom 24.03.1999",
+   "latitude": 47.906159,
+   "longitude": 14.239874,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.01050FA3-0E63-4BFD-8A7B-761D4FA693AC",
+   "name": "Konglomeratwand",
+   "legal_basis": "Bescheid vom 23.06.1980",
+   "latitude": 47.780548,
+   "longitude": 14.165758,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.EF76CE00-6910-457C-AC80-7F439AB18C5A",
+   "name": "\"Kuhschellenböschung\" beim Sportplatz Neuzeug (Brandböschung)",
+   "legal_basis": "Bescheid vom 21.11.1995",
+   "latitude": 48.042617,
+   "longitude": 14.334933,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.8E06C4FE-CEB1-45E2-A179-8E407591F8F8",
+   "name": "Winterlinde",
+   "legal_basis": "Bescheid vom 14.02.1963",
+   "latitude": 48.500263,
+   "longitude": 13.823991,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.236AEB43-FAE3-42ED-B86E-04FDCC9A44BB",
+   "name": "Buche (Fagus silvatica)",
+   "legal_basis": "Bescheid vom 15.02.1963",
+   "latitude": 48.499995,
+   "longitude": 13.823397,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.DFAF29AE-40EA-4D3C-811E-826F5C77EB1E",
+   "name": "Eichen am Kirchenhügel",
+   "legal_basis": "Bescheid vom 20.03.1963",
+   "latitude": 48.263823,
+   "longitude": 13.293831,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.BC71243D-EE9B-4438-A5EE-AF48F2F82D88",
+   "name": "2 Linden",
+   "legal_basis": "Bescheid vom 18.04.1984",
+   "latitude": 47.90838,
+   "longitude": 13.769947,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.731EC902-39E7-4FB8-8699-3D374C57A351",
+   "name": "\"Pappeln und Winterlinde\" 2 Pappeln, 1 Linde bei der Danner-Kapelle",
+   "legal_basis": "Bescheid vom 05.03.1991",
+   "latitude": 48.239975,
+   "longitude": 13.30206,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.77836B6A-D70F-48A4-8B24-93C4F00D2116",
+   "name": "\"2 Kopfweiden\" in Trensing",
+   "legal_basis": "Bescheid vom 14.10.1996",
+   "latitude": 48.044356,
+   "longitude": 13.968147,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.14BB1D09-7840-4C74-B8BF-16FC588A027D",
+   "name": "\"Lindenbaumreihe (bestehend aus 8 Sommer- und Winterlinden)\" bei der Kirche",
+   "legal_basis": "Bescheid vom 29.11.2001",
+   "latitude": 48.138621,
+   "longitude": 13.217973,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.4AE9B359-E539-4554-A995-8EB52C80A1CC",
+   "name": "Linde",
+   "legal_basis": "Bescheid vom 29.06.1983",
+   "latitude": 48.380661,
+   "longitude": 14.193365,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.AB59B956-8FD6-4D7E-86B3-6569BC883234",
+   "name": "Ginkgobaum",
+   "legal_basis": "Bescheid vom 17.04.1975",
+   "latitude": 48.306429,
+   "longitude": 14.298328,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.B3F283E5-62E6-40BD-A8A5-978BD2178345",
+   "name": "Platane (Platanus x hispanica)",
+   "legal_basis": "Bescheid vom 30.09.1975",
+   "latitude": 48.298417,
+   "longitude": 14.303473,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.F3CA2E9E-5A59-4B14-ACE5-F48542B30503",
+   "name": "\"Pechölstein\" beim Rauchschnablanwesen in Aglasberg",
+   "legal_basis": "Bescheid vom 24.01.1984",
+   "latitude": 48.427575,
+   "longitude": 14.748778,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.2E5AD6CC-D9DE-4702-9FE1-B797E339B4EE",
+   "name": "Moar-Koppler-Föhre",
+   "legal_basis": "Bescheid vom 18.04.1984",
+   "latitude": 48.26781,
+   "longitude": 14.723174,
+   "location_precision": "approximate",
+   "non_tree": true
+  },
+  {
+   "register_id": "ps.91A6061B-15BA-4EF4-AF28-C177B3344EB1",
+   "name": "Eibe",
+   "legal_basis": "Bescheid vom 25.03.1965",
+   "latitude": 48.044586,
+   "longitude": 14.424456,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EA1ED128-73C1-4E7E-80AC-EECF23E99BAA",
+   "name": "Eiche unterhalb der Burg Clam",
+   "legal_basis": "Bescheid vom 18.04.1984",
+   "latitude": 48.222465,
+   "longitude": 14.776825,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E03DA980-B057-42F8-8056-715702EB9CF7",
+   "name": "Linde in Wienerödt",
+   "legal_basis": "Bescheid vom 02.03.2021",
+   "latitude": 47.971246,
+   "longitude": 13.397786,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.804F1ACC-B9C6-4312-BA34-49186AE4181D",
+   "name": "Spitzahorn",
+   "legal_basis": "Bescheid vom 18.07.1991",
+   "latitude": 48.246314,
+   "longitude": 14.329534,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.410ABF25-0C05-4BDD-88CC-CCAF33C7E4AC",
+   "name": "1 Roßkastanie",
+   "legal_basis": "Bescheid vom 27.08.1957",
+   "latitude": 48.152397,
+   "longitude": 13.564421,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.95A85465-BC7F-41ED-884B-3DD4DAB4616C",
+   "name": "Tausendjährige Linde",
+   "legal_basis": "Bescheid vom 18.12.1980",
+   "latitude": 47.709502,
+   "longitude": 13.620299,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.33FA502D-AA0B-4FBD-96D9-8DDA64D36306",
+   "name": "\"Hainbuchen-, Linden- und Eichenallee\" in Maurachen",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.007984,
+   "longitude": 13.482818,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.3105B077-AF03-4EEE-9FF9-877A44BAD2E3",
+   "name": "Buche in Osternberg",
+   "legal_basis": "Bescheid vom 08.01.1993",
+   "latitude": 48.248715,
+   "longitude": 13.028522,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.2D1D9D47-972E-4AD9-9B28-21D9FE09270F",
+   "name": "2 Linden",
+   "legal_basis": "Bescheid vom 02.04.1993",
+   "latitude": 48.549222,
+   "longitude": 13.949945,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.C23F6B9D-B4A0-4298-AEF7-D29148D2880C",
+   "name": "Dierzer \"Eibe\"",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.306008,
+   "longitude": 14.297577,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.99A56014-479C-4805-989E-329BD9991CB4",
+   "name": "Tausendjährige Linde",
+   "legal_basis": "Bescheid vom 25.04.1977",
+   "latitude": 48.112051,
+   "longitude": 13.257883,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.F53EFA40-04C6-4B07-9CFE-A9F53853D725",
+   "name": "Zwillingsbuche",
+   "legal_basis": "Bescheid vom 10.10.1978",
+   "latitude": 48.112362,
+   "longitude": 13.258125,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.53902E75-07B7-4928-9202-AD63D88151E6",
+   "name": "Feldahorn",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.305709,
+   "longitude": 14.298262,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.19D8080E-0D22-491D-9C6C-8872F9EC5F75",
+   "name": "Ginkgo-Baum",
+   "legal_basis": "Bescheid vom 12.08.1983",
+   "latitude": 48.305333,
+   "longitude": 14.29757,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.0714E3E7-E50D-4A06-9F64-37C5E1697D84",
+   "name": "\"Fürst Eiche\" beim Weißenhof",
+   "legal_basis": "Bescheid vom 17.07.1986",
+   "latitude": 48.487209,
+   "longitude": 14.562107,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A55F79B0-1341-4344-A59B-B828DC736D13",
+   "name": "\"Rotbuche\" im Hangbereich des Christkindlweges in Steyr",
+   "legal_basis": "Bescheid vom 11.09.2003",
+   "latitude": 48.038185,
+   "longitude": 14.391741,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.3628E3B8-603C-45AE-A9E9-44BB87E82D5E",
+   "name": "Strauchbirke\"(Betula humilis)",
+   "legal_basis": "Bescheid vom 07.02.1974",
+   "latitude": 48.069807,
+   "longitude": 13.084129,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.54946AD3-0EB1-4FE2-8996-6B0E0EACF901",
+   "name": "\"1 Bergahorn und 1 Roßkastanie\" am Auberg",
+   "legal_basis": "Bescheid vom 30.06.1988",
+   "latitude": 48.313754,
+   "longitude": 14.275035,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EF042968-161B-4A0E-8057-2D03D565F9A2",
+   "name": "Mammutbaum",
+   "legal_basis": "Bescheid vom 10.10.1978",
+   "latitude": 48.105907,
+   "longitude": 13.149651,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8E100805-CAA0-472F-8C25-A21BEBCB38BB",
+   "name": "Bäume in der Bockgasse in Linz",
+   "legal_basis": "Bescheid vom 07.07.1993",
+   "latitude": 48.29294,
+   "longitude": 14.283825,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.126339ED-9A04-47B8-B3C0-40F7216F2BF4",
+   "name": "Zwei Hauslinden in der Gemeinde Hofkirchen/Trattnach",
+   "legal_basis": "Bescheid vom 18.12.1992",
+   "latitude": 48.208789,
+   "longitude": 13.736742,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.883D00CC-8DF7-4054-AE36-CB2077485D27",
+   "name": "Bäume im Park der Johannes Kepler Universität",
+   "legal_basis": "Bescheid vom 07.07.1975",
+   "latitude": 48.337247,
+   "longitude": 14.321697,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.8C13B4B3-60A0-48CB-9CA6-CEEB7B585A3A",
+   "name": "Kreuzlinden beim Schmied in der Au",
+   "legal_basis": "Bescheid vom 10.10.1978",
+   "latitude": 47.682272,
+   "longitude": 14.329407,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.0932F078-52EB-49E5-A3E1-BB58D7AD9E00",
+   "name": "Bäume und Baumgruppen bei den Kreuzwegstationen von Freistadt nach St. Peter",
+   "legal_basis": "Bescheid vom 10.09.1993",
+   "latitude": 48.513175,
+   "longitude": 14.486436,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.E6E6A8A4-2693-492B-A3F5-C050CBE97468",
+   "name": "Blutbuche",
+   "legal_basis": "Bescheid vom 17.04.1975",
+   "latitude": 48.308248,
+   "longitude": 14.289989,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.29295A48-B3BB-4B29-85C2-CA0101932CE7",
+   "name": "\"Weißpappel\" bei der Schiffsanlegestelle in Nußdorf",
+   "legal_basis": "Bescheid vom 05.04.1984",
+   "latitude": 47.880118,
+   "longitude": 13.530214,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.A9C37097-6152-4914-8840-6DE362EFB677",
+   "name": "Eibe",
+   "legal_basis": "Bescheid vom 26.03.1985",
+   "latitude": 48.431043,
+   "longitude": 14.470734,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.95BE4E8A-5833-43F5-9A87-9B8C591F3005",
+   "name": "\"Fürstlinde\" am Weißenhof",
+   "legal_basis": "Bescheid vom 17.07.1986",
+   "latitude": 48.489211,
+   "longitude": 14.563584,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.7FDC114A-B33E-4788-A0F6-241E10A3D363",
+   "name": "\"Eiche\" in Walding",
+   "legal_basis": "Bescheid vom 22.01.1987",
+   "latitude": 48.353281,
+   "longitude": 14.159972,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.EF378B1F-CF4D-4593-9C5F-E18CCD1EE309",
+   "name": "Eibe",
+   "legal_basis": "Bescheid vom 20.11.1990",
+   "latitude": 47.899797,
+   "longitude": 13.299621,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.28F1482F-4C2E-42A0-B6A6-A38F155B11A6",
+   "name": "Stieleiche in Neudorf",
+   "legal_basis": "Bescheid vom 15.12.1998",
+   "latitude": 47.956124,
+   "longitude": 13.719929,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.86363344-8E58-4B1C-9519-362CDD357F14",
+   "name": "3 \"Linden\"",
+   "legal_basis": "Bescheid vom 02.04.1993",
+   "latitude": 47.702818,
+   "longitude": 13.62939,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.ED4EC9B6-71DB-43B3-B141-575C144DFC7D",
+   "name": "Lindenallee in Mondsee",
+   "legal_basis": "Bescheid vom 31.08.1995",
+   "latitude": 47.853038,
+   "longitude": 13.352104,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.52440BC2-7247-4A9C-89FE-F2C23353E828",
+   "name": "Friedhofsesche",
+   "legal_basis": "Bescheid vom 22.10.1984",
+   "latitude": 47.953263,
+   "longitude": 13.585953,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.807742DF-D49D-4DBD-B8CE-954C728358B2",
+   "name": "\"3 Linden\" in Waxenberg",
+   "legal_basis": "Bescheid vom 24.02.1987",
+   "latitude": 48.476972,
+   "longitude": 14.190758,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.884B591A-AC1E-423B-B36A-4520D37A8A05",
+   "name": "2 Kapellenlinden",
+   "legal_basis": "Bescheid vom 06.12.1985",
+   "latitude": 48.619687,
+   "longitude": 13.888481,
+   "location_precision": "approximate"
+  },
+  {
+   "register_id": "ps.758836DF-2733-4074-993D-8EE7F7D4B6D0",
+   "name": "\"Gerichtslinde\" am Burggraben",
+   "legal_basis": "Bescheid vom 31.03.1988",
+   "latitude": 47.91689,
+   "longitude": 13.539721,
+   "location_precision": "approximate"
+  }
+ ]
+}

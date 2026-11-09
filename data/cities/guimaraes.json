@@ -359,6 +359,49 @@
         "url": null
       },
       "height_m": 39
+    },
+    {
+      "id": "gui_009",
+      "name": "The Stone Pine of Citania de Briteiros",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "over 120 years",
+      "age_min": 120,
+      "age_max": 160,
+      "girth_cm": 360,
+      "height_m": 25,
+      "location": {
+        "address": "Acropolis of the Citania de Briteiros, EN 309 km 55, Briteiros Sao Salvador, Guimaraes",
+        "latitude": 41.52736111,
+        "longitude": -8.3165,
+        "neighbourhood": "Briteiros"
+      },
+      "location_site": {
+        "name": "Acropolis of the Citania de Briteiros",
+        "radius_m": 50
+      },
+      "story": "The best evidence for this pine's age is a photograph taken by a man who died in 1899. Francisco Martins Sarmento, whose name the society that runs the Citania de Briteiros still carries, photographed the hilltop with the stone pine on it. In pictures Ilustracao Portugueza published in 1930, its crown is already broad and rounded. Guimaraes' cultural landscape atlas reads those images as making it more than 120 years old, and Portugal's forest service put it at 130 in 2020.\n\nIt stands on the acropolis of the hillfort and can be picked out from a long way off, marking Monte de Sao Romao. That is one reason the municipality asked in 2018 for it to be protected, and the state classified it as a tree of public interest in December 2021. A single trunk 3.6 metres round carries a wide, open crown on big spreading limbs. The forest service record gives a height of 25 metres and a crown 26.5 metres across. The decree that protects it gives 20 and 23. Both figures are official, so take the range.\n\nIts age is starting to tell. A 2020 university assessment advised against pruning, and only two dry lower limbs came off. Signs now mark a perimeter under the crown because branches fall.\n\nEntry is 5 euros, and the official sources disagree on opening hours, so check first. Briteiros is 15 kilometres from Guimaraes, and guides disagree on which bus gets you there.",
+      "how_to_recognise": "You can recognise it by the single trunk, 3.6 metres round, under a wide, open crown on big spreading limbs. It stands on the acropolis of the Citania de Briteiros, inside a ring of warning signs.",
+      "verified_sources": [
+        "https://reflexodigital.com/noticias/pinheiro-manso-do-topo-da-citania-de-briteiros-e-arvore-de-interesse-publico/",
+        "https://radioaltoave.sapo.pt/pinheiro-manso-da-citania-de-briteiros-classificado-de-interesse-publico/",
+        "https://www.visitguimaraes.travel/descobrir/museus-e-sitios-arqueologicos/geo_artigo/citania-de-briteiros",
+        "https://www.cm-guimaraes.pt/areas-de-intervencao/ambiente-e-sustentabilidade/urbanismo/patrimonio-e-bens-classificados/arvores-e-arvoredo-de-interesse-publico"
+      ],
+      "official_register": {
+        "name": "ICNF Arvores de Interesse Publico, AIP030880114I (Despacho n.o 12490/2021, 22 Dec 2021)",
+        "url": "https://www.cm-guimaraes.pt/areas-de-intervencao/ambiente-e-sustentabilidade/urbanismo/patrimonio-e-bens-classificados/arvores-e-arvoredo-de-interesse-publico"
+      },
+      "access": "Paid entry to the archaeological site run by the Sociedade Martins Sarmento: 5 EUR (Visit Guimaraes; some guides quote lower, older prices), 2.5 EUR reduced, free for national residents on Sundays 10:00-12:30. Hours conflict between sources: Visit Guimaraes says summer (27 Mar to 31 Oct) daily 09:30-12:30 and 14:00-18:00, winter (from 1 Nov) Tuesday to Sunday 09:30-12:30 and 14:00-17:00 (last entry 16:30); the society's own page says Tuesday to Sunday 09:30-12:30 and 14:30-17:30. Closed 1 Jan, Easter Sunday, 25 Dec. Phone +351 253 415 969. Warning signs mark a safety perimeter under the crown (falling branches).",
+      "paid_entry": true,
+      "transport": "About 15 km from Guimaraes centre. Guides give a 30 to 35 minute interurban bus from Guimaraes terminal plus a 10 to 15 minute walk from the stop; bus numbers disagree between sources (41/42, 163), and one older guide says no public transport. Check the operator before going.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

@@ -1,78 +1,79 @@
 {
-  "city": "Guimaraes",
-  "country": "Portugal",
-  "city_slug": "guimaraes",
-  "compiled": "2026-08-06",
-  "source": "data/registers/portugal-icnf.json, concelho == Guimaraes (21 entries), plus web verification",
-  "context": "Register-first pass on the Guimaraes cluster. 4 entries shipped (gui_001 to gui_004) from the historic centre, Vila Flor and Atouguia sites. Everything below either failed the collectible-point test, failed the public-access bar, sits well outside the walkable cluster, or is genuinely undated and single-sourced. See data/research/guimaraes.md for the full reasoning.",
-  "leads": [
-    {
-      "name": "The Old Trees of Santa Marinha da Costa",
-      "species": "Pedunculate Oak (Quercus robur), with Atlas Cedar, Northern Red Oak, Sweet Chestnut, Mexican Cypress and Blue Gum as companions in the same classified conjunto",
-      "lat": 41.44199999,
-      "lng": -8.275499988,
-      "status": "resolved",
-      "why": "[RESOLVED 2026-08-14, delivered as gui_005] Shipped as The Oak of Santa Marinha da Costa, the single carvalho-alvarinho at the baroque circular tank, rather than as the six-species ensemble, which has no one place to stand. Access verdict: pousadas.pt's own gardens page describes the 9-hectare park as open to hospedes e visitantes, which is the property stating its own access, so it ships with an honest line saying no hours are published and you walk in past a working hotel. The 290-year age problem was handled by leaving the age empty and saying in the story why the register figure cannot be this trunk's."
-    },
-    {
-      "name": "The Camellias of Casa de Margaride",
-      "species": "Camellia japonica L.; Camellia reticulata Lindl. (plus Ilex aquifolium, Taxus baccata, Chamaecyparis lawsoniana, Cupressus lusitanica in the same garden-conjunto entry)",
-      "lat": 41.45045833,
-      "lng": -8.276802778,
-      "status": "lead",
-      "why": "Genuinely remarkable: rare 18th/19th-century European camellia cultivars (Alba Plena, Variegata, Pompone, Elegans, Lavinia Maggi, the Portuguese 1889 cultivar 'Augusto Leal Gouveia Pinto'), one specimen won Portuguese Tree of the Year 2024, house and garden classified Monument of Public Interest 2012, trees classified 2022 (Despacho 837/2022). Four register rows here (cameleira, the garden-conjunto, pereira, diospireiro), all age 130 at last measurement. Held back only on access: this is a private aristocratic estate (now run as 'Villa Margaridi' rural tourism), and the garden is visited by guided tour led by the owner, announced periodically (e.g. via A Muralha, a local cultural association) rather than on standing public hours. Needs Hidde's call on whether bookable guided access clears hard rule 10 the way a paid attraction like Blarney does. VERIFY PASS 2026-08-16: checked em.guimaraes.pt's own directory entry for Casa de Margaride (no access/hours info at all, refers enquiries to the municipality by phone/email) and the A Muralha open-day writeup at maisguimaraes.pt, which confirms the guided visit was a single dated event (Saturday 23 March, register by email to [address removed], led by named guides), not a recurring or standing offering. Nothing found upgrades this past 'ask permission first.' Under hard rule 10's access test ('can they get in without asking anyone's permission') this still fails test 1 and stays a LEAD, not a HELD-then-shipped view-only case (there is nothing to view from outside; the camellias are inside the garden itself, not visible from the road). Still needs Hidde's call, or firmer evidence of standing public hours."
-    },
-    {
-      "name": "The Camellia of Casa da Covilha",
-      "species": "Camellia japonica L.",
-      "lat": 41.44877778,
-      "lng": -8.31525,
-      "status": "lead",
-      "why": "Register's single oldest dated tree in the whole Guimaraes set: 300 years at last measurement (2018), girth 3.6m. House and quinta (17th century, remodelled by architect Fernando Tavora in the 1970s) classified Monument of Public Interest. Same access problem as Margaride: private house in Fermentoes, guided visits organized by the family (with José Bernardo Tavora), no standing public hours found. Also 2.1km from the historic centre, a separate site rather than joining the shipped cluster. VERIFY PASS 2026-08-16: found a second independent source beyond the ICNF register (the classification decree text, quoted via labpaisagem.pt and echoed by ominho.pt/greenroofs.pt), which gives 'over 100 years old' for the camellia rather than the register's 300y/2018 figure; the two do not agree and should be reported as a range/disagreement rather than the register number alone if this ever ships. Confirmed via guimaraesagora/greenroofs coverage of Despacho 608/2020 that the house passed from Fernando Tavora (d. 2005) to his son José Bernardo Tavora, still private, still no standing public hours found anywhere searched (municipal, press, architecture-history sources). Access still fails hard rule 10 test 1. DATA FLAG: passoverde.pt's 'Camélia Casa da Covilhã' page gives coordinates 41.376168,-8.317417, which is (to five decimal places) the SAME point as this file's own Moreira de Conegos stone pine entry (41.37616667,-8.317416667), not the ICNF register's Casa da Covilha coordinate (41.44877778,-8.31525, which is 8km away and the correct site per the register and every other source describing Fermentoes). passoverde.pt's page for this tree is mislocated and must not be used as a location source; the ICNF coordinate remains the one to trust. Stays a LEAD, unshipped."
-    },
-    {
-      "name": "The Arboretum of Casa da Ribeira",
-      "species": "Pinus strobus; Sequoia sempervirens; Cupressus lusitanica; Cedrus deodara; Quercus robur; Fagus sylvatica; Liriodendron tulipifera; Liquidambar styraciflua",
-      "lat": 41.47306667,
-      "lng": -8.340383333,
-      "status": "lead",
-      "why": "8-species conjunto arboreo, classified 2020 (Despacho 6069/2020). 5.3km from the historic centre, well outside any cluster with the shipped trees and unresearched this pass. A candidate for its own future pass rather than a Guimaraes-centre addition. HELD 2026-08-14 by the write pass, and now on a stronger reason than distance: the ICNF record (AIP03083877C) types this as 'Bosque', a wood, with eight species and no girth, height or age figures at all. That fails the collectible-point test the same way Casa da Penha does, there is no single tree and no obvious place to stand. It would need one named specimen inside it, with its own measurement and its own access, before it could ship. Casa da Ribeira is also a private house at Ponte, 5.3 km out, with no access statement found."
-    },
-    {
-      "name": "Stone Pine of Rua 25 de Abril, Silvares",
-      "species": "Pinus pinea L.",
-      "lat": 41.44599999,
-      "lng": -8.338699988,
-      "status": "resolved",
-      "why": "[RESOLVED 2026-08-14, delivered as gui_006] Shipped as The Stone Pine of Silvares. Register KNJ1/608: girth 3.8 m, height 26 m, crown 26.4 m, age 100 at the 2011 measurement, classified Aviso no. 9 of 17/06/2011. Access is the easiest on the page, a public roundabout on the old ER 206. Transport: Guimaraes city bus line 082, the Silvares to Pevidem circular, 4.5 km west of the centre. Pin left approximate because the ICNF coordinate is rounded."
-    },
-    {
-      "name": "Stone Pine of Moreira de Conegos",
-      "species": "Pinus pinea L.",
-      "lat": 41.37616667,
-      "lng": -8.317416667,
-      "status": "lead",
-      "why": "HELD 2026-08-14 on access, not on distance. The tree is worth having: ICNF AIP030831110I measures it at girth 4.1 m, height 24 m and a crown 30.5 m across, six and a half metres wider than the tree is tall, age 100 at the 2019 measurement, classified by Despacho 12492/2021 of 22 December 2021. The municipality's stated reason is landscape rather than size: it stands out above the buildings and surrounding vegetation and can be picked out from a distance. Transport is workable, buses serve Moreira de Conegos with stops at the Junta de Freguesia and the Igreja, 9 km south of Guimaraes and still inside the concelho. What is missing is the one thing that does not bend: nothing found says whose ground it stands on at Megide, so the access line cannot be written and the 'is it somebody's home' test cannot be answered. ONE STREET-LEVEL OR AERIAL CHECK SETTLES IT, and if it turns out to be visible from a public road it ships as a view-only entry with the pin on the viewing place."
-    },
-    {
-      "name": "Stone Pine of Citania de Briteiros",
-      "species": "Pinus pinea L.",
-      "lat": 41.52736111,
-      "lng": -8.3165,
-      "status": "lead",
-      "why": "HELD 2026-08-14 on the day-trip boundary, and it is the best of the three pines, so this is a real loss rather than a shrug. What is now known and need not be researched again: ICNF AIP030880114I gives girth 3.6 m, height 25 m, crown 26.5 m, age 130 at the 2020 measurement; classified by Despacho 12490/2021 of 22 December 2021, applied for by the council in 2018, on grounds of longevity over 120 years and an ample crown of singular landscape value that lets Monte de Sao Romao be identified from a long way off; a University of Tras-os-Montes e Alto Douro phytosanitary and fracture-risk assessment in January 2020 advised against pruning, two dry lower branches were removed and warning signs were put up around the crown perimeter. It stands on the acropolis of the hillfort. The site is open daily except Mondays, 09:30-12:30 and 14:00-18:00 in summer, 5 euro including the Museu da Cultura Castreja. THE BLOCK IS TRANSPORT: Guimaraes' own tourism site gives 15 km from the centre and publishes no public transport route, and the only public option found anywhere is Braga bus 83 to Lageosa plus a 2 km walk. That puts it outside the roughly 30 minutes by public transport that lets an out-of-town tree sit on a city page. It belongs to Braga on the same evidence, and Braga is live with 4 trees and room, so that is where to try it next."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Casa da Penha arboretum",
-      "species": "78 species, 790 specimens (Diverso arvoredo)",
-      "lat": 41.4304,
-      "lng": -8.2657,
-      "reason": "Whole-forest inventory classified as a single conjunto (Despacho 3265/2019), not a collectible point: no single place to stand, nothing to have seen. Fails the ensemble test the same way La Rambla's plane trees did. The two named subsets nearby (Serra da Penha eucalipto and pseudotsuga, and the 'diverso arvoredo' of firs at Monte da Penha) are part of this same inventory and blocked for the same reason."
-    }
-  ],
-  "review_2026_10_31": "Second deepen pass, nothing delivered. All 15 'unmined' ICNF rows within 20 km are folded into gui_001 to gui_008 or already leads/blocked here; rows beyond 14 km belong to other concelhos (not checked). Moreira de Conegos pine: one more search (Despacho 12492/2021, Megide) found no access or ownership evidence; stays held. Margaride, Covilha, Briteiros unchanged (permission-first, permission-first, transport over 30 min). Wikidata Q98444121 (41.32126,-8.37145) is the 14.8 km Museu Arqueologico row, outside the concelho area, not pursued.",
-  "review_2026_10_29":"Verify deepen pass, nothing delivered. Register candidates are all folded into live gui_001 to gui_008 or already leads. Margaride: Guimaraes tourism camellia-garden brochure (vive.eixoatlantico.com/wp-content/uploads/2024/07/jardins_de_camelias.pdf, undated, search summary only) says open all year by appointment (visitas guiadas mediante marcacao): still permission-first, stays a lead. Trees classified Despacho 837/2022 (group plus three isolated). Briteiros pine: site is paid and public, but transport still unsettled: only a Fodor's line says Guimabus serves Briteiros several times a day with a 2.5 km uphill walk to the Citania, dicadeportugal.com calls the link indirect and infrequent; no timetable found, visitportugal.com is behind Anubis. Stays held on the 30 minute rule. Moreira de Conegos pine: no new access evidence (search found nothing; Aviso 9/2011 is the Silvares pine). The 5.4 km ICNF row at 41.47307,-8.34038 is Casa da Ribeira (already a lead, wood). Rows 14.8 km and further are by distance outside the walkable area and were not individually checked for municipality; not counted.",
-  "review_2026_08_14": "Write pass. Two promoted, three held. gui_005 is the Santa Marinha oak, split out of the six-species conjunto as one collectible point; gui_006 is the Silvares roundabout pine. Casa da Ribeira, Megide and Briteiros stay here with the reason on each, and the reasons are now specific rather than 'unresearched'. Register measurements for all three pines were pulled from data/registers/portugal-icnf.json during this pass and are recorded below, so no future pass needs to look them up again."
+ "city": "Guimaraes",
+ "country": "Portugal",
+ "city_slug": "guimaraes",
+ "compiled": "2026-08-06",
+ "source": "data/registers/portugal-icnf.json, concelho == Guimaraes (21 entries), plus web verification",
+ "context": "Register-first pass on the Guimaraes cluster. 4 entries shipped (gui_001 to gui_004) from the historic centre, Vila Flor and Atouguia sites. Everything below either failed the collectible-point test, failed the public-access bar, sits well outside the walkable cluster, or is genuinely undated and single-sourced. See data/research/guimaraes.md for the full reasoning.",
+ "leads": [
+  {
+   "name": "The Old Trees of Santa Marinha da Costa",
+   "species": "Pedunculate Oak (Quercus robur), with Atlas Cedar, Northern Red Oak, Sweet Chestnut, Mexican Cypress and Blue Gum as companions in the same classified conjunto",
+   "lat": 41.44199999,
+   "lng": -8.275499988,
+   "status": "resolved",
+   "why": "[RESOLVED 2026-08-14, delivered as gui_005] Shipped as The Oak of Santa Marinha da Costa, the single carvalho-alvarinho at the baroque circular tank, rather than as the six-species ensemble, which has no one place to stand. Access verdict: pousadas.pt's own gardens page describes the 9-hectare park as open to hospedes e visitantes, which is the property stating its own access, so it ships with an honest line saying no hours are published and you walk in past a working hotel. The 290-year age problem was handled by leaving the age empty and saying in the story why the register figure cannot be this trunk's."
+  },
+  {
+   "name": "The Camellias of Casa de Margaride",
+   "species": "Camellia japonica L.; Camellia reticulata Lindl. (plus Ilex aquifolium, Taxus baccata, Chamaecyparis lawsoniana, Cupressus lusitanica in the same garden-conjunto entry)",
+   "lat": 41.45045833,
+   "lng": -8.276802778,
+   "status": "lead",
+   "why": "Genuinely remarkable: rare 18th/19th-century European camellia cultivars (Alba Plena, Variegata, Pompone, Elegans, Lavinia Maggi, the Portuguese 1889 cultivar 'Augusto Leal Gouveia Pinto'), one specimen won Portuguese Tree of the Year 2024, house and garden classified Monument of Public Interest 2012, trees classified 2022 (Despacho 837/2022). Four register rows here (cameleira, the garden-conjunto, pereira, diospireiro), all age 130 at last measurement. Held back only on access: this is a private aristocratic estate (now run as 'Villa Margaridi' rural tourism), and the garden is visited by guided tour led by the owner, announced periodically (e.g. via A Muralha, a local cultural association) rather than on standing public hours. Needs Hidde's call on whether bookable guided access clears hard rule 10 the way a paid attraction like Blarney does. VERIFY PASS 2026-08-16: checked em.guimaraes.pt's own directory entry for Casa de Margaride (no access/hours info at all, refers enquiries to the municipality by phone/email) and the A Muralha open-day writeup at maisguimaraes.pt, which confirms the guided visit was a single dated event (Saturday 23 March, register by email to [address removed], led by named guides), not a recurring or standing offering. Nothing found upgrades this past 'ask permission first.' Under hard rule 10's access test ('can they get in without asking anyone's permission') this still fails test 1 and stays a LEAD, not a HELD-then-shipped view-only case (there is nothing to view from outside; the camellias are inside the garden itself, not visible from the road). Still needs Hidde's call, or firmer evidence of standing public hours."
+  },
+  {
+   "name": "The Camellia of Casa da Covilha",
+   "species": "Camellia japonica L.",
+   "lat": 41.44877778,
+   "lng": -8.31525,
+   "status": "lead",
+   "why": "Register's single oldest dated tree in the whole Guimaraes set: 300 years at last measurement (2018), girth 3.6m. House and quinta (17th century, remodelled by architect Fernando Tavora in the 1970s) classified Monument of Public Interest. Same access problem as Margaride: private house in Fermentoes, guided visits organized by the family (with José Bernardo Tavora), no standing public hours found. Also 2.1km from the historic centre, a separate site rather than joining the shipped cluster. VERIFY PASS 2026-08-16: found a second independent source beyond the ICNF register (the classification decree text, quoted via labpaisagem.pt and echoed by ominho.pt/greenroofs.pt), which gives 'over 100 years old' for the camellia rather than the register's 300y/2018 figure; the two do not agree and should be reported as a range/disagreement rather than the register number alone if this ever ships. Confirmed via guimaraesagora/greenroofs coverage of Despacho 608/2020 that the house passed from Fernando Tavora (d. 2005) to his son José Bernardo Tavora, still private, still no standing public hours found anywhere searched (municipal, press, architecture-history sources). Access still fails hard rule 10 test 1. DATA FLAG: passoverde.pt's 'Camélia Casa da Covilhã' page gives coordinates 41.376168,-8.317417, which is (to five decimal places) the SAME point as this file's own Moreira de Conegos stone pine entry (41.37616667,-8.317416667), not the ICNF register's Casa da Covilha coordinate (41.44877778,-8.31525, which is 8km away and the correct site per the register and every other source describing Fermentoes). passoverde.pt's page for this tree is mislocated and must not be used as a location source; the ICNF coordinate remains the one to trust. Stays a LEAD, unshipped."
+  },
+  {
+   "name": "The Arboretum of Casa da Ribeira",
+   "species": "Pinus strobus; Sequoia sempervirens; Cupressus lusitanica; Cedrus deodara; Quercus robur; Fagus sylvatica; Liriodendron tulipifera; Liquidambar styraciflua",
+   "lat": 41.47306667,
+   "lng": -8.340383333,
+   "status": "lead",
+   "why": "8-species conjunto arboreo, classified 2020 (Despacho 6069/2020). 5.3km from the historic centre, well outside any cluster with the shipped trees and unresearched this pass. A candidate for its own future pass rather than a Guimaraes-centre addition. HELD 2026-08-14 by the write pass, and now on a stronger reason than distance: the ICNF record (AIP03083877C) types this as 'Bosque', a wood, with eight species and no girth, height or age figures at all. That fails the collectible-point test the same way Casa da Penha does, there is no single tree and no obvious place to stand. It would need one named specimen inside it, with its own measurement and its own access, before it could ship. Casa da Ribeira is also a private house at Ponte, 5.3 km out, with no access statement found."
+  },
+  {
+   "name": "Stone Pine of Rua 25 de Abril, Silvares",
+   "species": "Pinus pinea L.",
+   "lat": 41.44599999,
+   "lng": -8.338699988,
+   "status": "resolved",
+   "why": "[RESOLVED 2026-08-14, delivered as gui_006] Shipped as The Stone Pine of Silvares. Register KNJ1/608: girth 3.8 m, height 26 m, crown 26.4 m, age 100 at the 2011 measurement, classified Aviso no. 9 of 17/06/2011. Access is the easiest on the page, a public roundabout on the old ER 206. Transport: Guimaraes city bus line 082, the Silvares to Pevidem circular, 4.5 km west of the centre. Pin left approximate because the ICNF coordinate is rounded."
+  },
+  {
+   "name": "Stone Pine of Moreira de Conegos",
+   "species": "Pinus pinea L.",
+   "lat": 41.37616667,
+   "lng": -8.317416667,
+   "status": "lead",
+   "why": "HELD 2026-08-14 on access, not on distance. The tree is worth having: ICNF AIP030831110I measures it at girth 4.1 m, height 24 m and a crown 30.5 m across, six and a half metres wider than the tree is tall, age 100 at the 2019 measurement, classified by Despacho 12492/2021 of 22 December 2021. The municipality's stated reason is landscape rather than size: it stands out above the buildings and surrounding vegetation and can be picked out from a distance. Transport is workable, buses serve Moreira de Conegos with stops at the Junta de Freguesia and the Igreja, 9 km south of Guimaraes and still inside the concelho. What is missing is the one thing that does not bend: nothing found says whose ground it stands on at Megide, so the access line cannot be written and the 'is it somebody's home' test cannot be answered. ONE STREET-LEVEL OR AERIAL CHECK SETTLES IT, and if it turns out to be visible from a public road it ships as a view-only entry with the pin on the viewing place."
+  },
+  {
+   "name": "Stone Pine of Citania de Briteiros",
+   "species": "Pinus pinea L.",
+   "lat": 41.52736111,
+   "lng": -8.3165,
+   "status": "resolved",
+   "why": "HELD 2026-08-14 on the day-trip boundary, and it is the best of the three pines, so this is a real loss rather than a shrug. What is now known and need not be researched again: ICNF AIP030880114I gives girth 3.6 m, height 25 m, crown 26.5 m, age 130 at the 2020 measurement; classified by Despacho 12490/2021 of 22 December 2021, applied for by the council in 2018, on grounds of longevity over 120 years and an ample crown of singular landscape value that lets Monte de Sao Romao be identified from a long way off; a University of Tras-os-Montes e Alto Douro phytosanitary and fracture-risk assessment in January 2020 advised against pruning, two dry lower branches were removed and warning signs were put up around the crown perimeter. It stands on the acropolis of the hillfort. The site is open daily except Mondays, 09:30-12:30 and 14:00-18:00 in summer, 5 euro including the Museu da Cultura Castreja. THE BLOCK IS TRANSPORT: Guimaraes' own tourism site gives 15 km from the centre and publishes no public transport route, and the only public option found anywhere is Braga bus 83 to Lageosa plus a 2 km walk. That puts it outside the roughly 30 minutes by public transport that lets an out-of-town tree sit on a city page. It belongs to Braga on the same evidence, and Braga is live with 4 trees and room, so that is where to try it next. [RESOLVED 2026-11-08, delivered as gui_009 in data/research/guimaraes-verified.json, flagged on transport.]"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Casa da Penha arboretum",
+   "species": "78 species, 790 specimens (Diverso arvoredo)",
+   "lat": 41.4304,
+   "lng": -8.2657,
+   "reason": "Whole-forest inventory classified as a single conjunto (Despacho 3265/2019), not a collectible point: no single place to stand, nothing to have seen. Fails the ensemble test the same way La Rambla's plane trees did. The two named subsets nearby (Serra da Penha eucalipto and pseudotsuga, and the 'diverso arvoredo' of firs at Monte da Penha) are part of this same inventory and blocked for the same reason."
+  }
+ ],
+ "review_2026_10_31": "Second deepen pass, nothing delivered. All 15 'unmined' ICNF rows within 20 km are folded into gui_001 to gui_008 or already leads/blocked here; rows beyond 14 km belong to other concelhos (not checked). Moreira de Conegos pine: one more search (Despacho 12492/2021, Megide) found no access or ownership evidence; stays held. Margaride, Covilha, Briteiros unchanged (permission-first, permission-first, transport over 30 min). Wikidata Q98444121 (41.32126,-8.37145) is the 14.8 km Museu Arqueologico row, outside the concelho area, not pursued.",
+ "review_2026_10_29": "Verify deepen pass, nothing delivered. Register candidates are all folded into live gui_001 to gui_008 or already leads. Margaride: Guimaraes tourism camellia-garden brochure (vive.eixoatlantico.com/wp-content/uploads/2024/07/jardins_de_camelias.pdf, undated, search summary only) says open all year by appointment (visitas guiadas mediante marcacao): still permission-first, stays a lead. Trees classified Despacho 837/2022 (group plus three isolated). Briteiros pine: site is paid and public, but transport still unsettled: only a Fodor's line says Guimabus serves Briteiros several times a day with a 2.5 km uphill walk to the Citania, dicadeportugal.com calls the link indirect and infrequent; no timetable found, visitportugal.com is behind Anubis. Stays held on the 30 minute rule. Moreira de Conegos pine: no new access evidence (search found nothing; Aviso 9/2011 is the Silvares pine). The 5.4 km ICNF row at 41.47307,-8.34038 is Casa da Ribeira (already a lead, wood). Rows 14.8 km and further are by distance outside the walkable area and were not individually checked for municipality; not counted.",
+ "review_2026_08_14": "Write pass. Two promoted, three held. gui_005 is the Santa Marinha oak, split out of the six-species conjunto as one collectible point; gui_006 is the Silvares roundabout pine. Casa da Ribeira, Megide and Briteiros stay here with the reason on each, and the reasons are now specific rather than 'unresearched'. Register measurements for all three pines were pulled from data/registers/portugal-icnf.json during this pass and are recorded below, so no future pass needs to look them up again.",
+ "review_2026_11_08": "Third deepen pass, nothing delivered. All unmined ICNF rows within 20 km fold into gui_001 to gui_009 or existing leads/blocked. Moreira de Conegos pine (AIP030831110I): search again found no access or ownership evidence (Despacho 12492/2021 attributes it to Megide, 25 m protection zone, landscape value only); passoverde.pt and oamarense.pt fetches returned an Anubis bot challenge or no usable text, nominatim denied; stays held pending a street-level check. Margaride, Covilha, Ribeira, Briteiros unchanged."
 }

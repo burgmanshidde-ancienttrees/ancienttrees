@@ -2,950 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-08T03:14:12+00:00",
-   "date": "2026-09-08",
-   "run_id": "34178346718",
-   "minutes": 118.3,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 612,
-   "denials": 50,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(mkdir), Bash(pip3), Bash(printenv), Bash(python3), Bash(rm), Bash(sudo)",
-   "ended": "success",
-   "tokens": 45698971,
-   "claims_held": [],
-   "commits": 84,
-   "cities_touched": 168,
-   "cities": [
-    {
-     "city": "helmond",
-     "trees": 6
-    },
-    {
-     "city": "dordrecht",
-     "trees": 5
-    },
-    {
-     "city": "brzoza",
-     "trees": 3
-    },
-    {
-     "city": "bosaca",
-     "trees": 2
-    },
-    {
-     "city": "santalfio",
-     "trees": 2
-    },
-    {
-     "city": "alishan",
-     "trees": 1
-    },
-    {
-     "city": "chishang",
-     "trees": 1
-    },
-    {
-     "city": "senica",
-     "trees": 1
-    },
-    {
-     "city": "stary-smokovec",
-     "trees": 1
-    },
-    {
-     "city": "stockholm",
-     "trees": 1
-    },
-    {
-     "city": "velke-borove",
-     "trees": 1
-    },
-    {
-     "city": "aga",
-     "trees": 0
-    },
-    {
-     "city": "alicante",
-     "trees": 0
-    },
-    {
-     "city": "arnhem",
-     "trees": 0
-    },
-    {
-     "city": "assen",
-     "trees": 0
-    },
-    {
-     "city": "athens",
-     "trees": 0
-    },
-    {
-     "city": "baarn",
-     "trees": 0
-    },
-    {
-     "city": "baldenhain",
-     "trees": 0
-    },
-    {
-     "city": "bangkok",
-     "trees": 0
-    },
-    {
-     "city": "barcelona",
-     "trees": 0
-    },
-    {
-     "city": "bargischow",
-     "trees": 0
-    },
-    {
-     "city": "beijing",
-     "trees": 0
-    },
-    {
-     "city": "berlin",
-     "trees": 0
-    },
-    {
-     "city": "bohunovice",
-     "trees": 0
-    },
-    {
-     "city": "bojnice",
-     "trees": 0
-    },
-    {
-     "city": "bordeaux",
-     "trees": 0
-    },
-    {
-     "city": "boston",
-     "trees": 0
-    },
-    {
-     "city": "breda",
-     "trees": 0
-    },
-    {
-     "city": "bristol",
-     "trees": 0
-    },
-    {
-     "city": "brussels",
-     "trees": 0
-    },
-    {
-     "city": "bucaco",
-     "trees": 0
-    },
-    {
-     "city": "budapest",
-     "trees": 0
-    },
-    {
-     "city": "cagliari",
-     "trees": 0
-    },
-    {
-     "city": "caserta",
-     "trees": 0
-    },
-    {
-     "city": "casta",
-     "trees": 0
-    },
-    {
-     "city": "catania",
-     "trees": 0
-    },
-    {
-     "city": "coimbra",
-     "trees": 0
-    },
-    {
-     "city": "como",
-     "trees": 0
-    },
-    {
-     "city": "cordoba",
-     "trees": 0
-    },
-    {
-     "city": "cork",
-     "trees": 0
-    },
-    {
-     "city": "dallas",
-     "trees": 0
-    },
-    {
-     "city": "delft",
-     "trees": 0
-    },
-    {
-     "city": "den-bosch",
-     "trees": 0
-    },
-    {
-     "city": "den-hout",
-     "trees": 0
-    },
-    {
-     "city": "deventer",
-     "trees": 0
-    },
-    {
-     "city": "doornenburg",
-     "trees": 0
-    },
-    {
-     "city": "dublin",
-     "trees": 0
-    },
-    {
-     "city": "edinburgh",
-     "trees": 0
-    },
-    {
-     "city": "effeltrich",
-     "trees": 0
-    },
-    {
-     "city": "eindhoven",
-     "trees": 0
-    },
-    {
-     "city": "eisolzried",
-     "trees": 0
-    },
-    {
-     "city": "florence",
-     "trees": 0
-    },
-    {
-     "city": "frydlant",
-     "trees": 0
-    },
-    {
-     "city": "gdansk",
-     "trees": 0
-    },
-    {
-     "city": "genoa",
-     "trees": 0
-    },
-    {
-     "city": "granada",
-     "trees": 0
-    },
-    {
-     "city": "graz",
-     "trees": 0
-    },
-    {
-     "city": "groningen",
-     "trees": 0
-    },
-    {
-     "city": "grybiskes",
-     "trees": 0
-    },
-    {
-     "city": "guimaraes",
-     "trees": 0
-    },
-    {
-     "city": "haarlem",
-     "trees": 0
-    },
-    {
-     "city": "heerlen",
-     "trees": 0
-    },
-    {
-     "city": "heidelberg",
-     "trees": 0
-    },
-    {
-     "city": "helsinki",
-     "trees": 0
-    },
-    {
-     "city": "higashiagatsuma",
-     "trees": 0
-    },
-    {
-     "city": "higashimiyoshi",
-     "trees": 0
-    },
-    {
-     "city": "hilvarenbeek",
-     "trees": 0
-    },
-    {
-     "city": "hiroshima",
-     "trees": 0
-    },
-    {
-     "city": "hobart",
-     "trees": 0
-    },
-    {
-     "city": "hong-kong",
-     "trees": 0
-    },
-    {
-     "city": "hoorn",
-     "trees": 0
-    },
-    {
-     "city": "horni-bradlo",
-     "trees": 0
-    },
-    {
-     "city": "hronsek",
-     "trees": 0
-    },
-    {
-     "city": "ichinohe",
-     "trees": 0
-    },
-    {
-     "city": "iwaki",
-     "trees": 0
-    },
-    {
-     "city": "iwata",
-     "trees": 0
-    },
-    {
-     "city": "jachymov",
-     "trees": 0
-    },
-    {
-     "city": "kagoshima",
-     "trees": 0
-    },
-    {
-     "city": "kanazawa",
-     "trees": 0
-    },
-    {
-     "city": "kaunas",
-     "trees": 0
-    },
-    {
-     "city": "kawago",
-     "trees": 0
-    },
-    {
-     "city": "kawazu",
-     "trees": 0
-    },
-    {
-     "city": "kintai",
-     "trees": 0
-    },
-    {
-     "city": "koriyama",
-     "trees": 0
-    },
-    {
-     "city": "krakow",
-     "trees": 0
-    },
-    {
-     "city": "kyoto",
-     "trees": 0
-    },
-    {
-     "city": "las-vegas",
-     "trees": 0
-    },
-    {
-     "city": "leiden",
-     "trees": 0
-    },
-    {
-     "city": "lipany",
-     "trees": 0
-    },
-    {
-     "city": "lisbon",
-     "trees": 0
-    },
-    {
-     "city": "london",
-     "trees": 0
-    },
-    {
-     "city": "los-angeles",
-     "trees": 0
-    },
-    {
-     "city": "lucca",
-     "trees": 0
-    },
-    {
-     "city": "lukavice",
-     "trees": 0
-    },
-    {
-     "city": "luxembourg-city",
-     "trees": 0
-    },
-    {
-     "city": "maastricht",
-     "trees": 0
-    },
-    {
-     "city": "maebashi",
-     "trees": 0
-    },
-    {
-     "city": "melbourne",
-     "trees": 0
-    },
-    {
-     "city": "minamialps",
-     "trees": 0
-    },
-    {
-     "city": "mito",
-     "trees": 0
-    },
-    {
-     "city": "miyazaki",
-     "trees": 0
-    },
-    {
-     "city": "munich",
-     "trees": 0
-    },
-    {
-     "city": "myjava",
-     "trees": 0
-    },
-    {
-     "city": "nagano",
-     "trees": 0
-    },
-    {
-     "city": "nagoya",
-     "trees": 0
-    },
-    {
-     "city": "naha",
-     "trees": 0
-    },
-    {
-     "city": "naples",
-     "trees": 0
-    },
-    {
-     "city": "new-york",
-     "trees": 0
-    },
-    {
-     "city": "nihonmatsu",
-     "trees": 0
-    },
-    {
-     "city": "nijmegen",
-     "trees": 0
-    },
-    {
-     "city": "nuremberg",
-     "trees": 0
-    },
-    {
-     "city": "oahu",
-     "trees": 0
-    },
-    {
-     "city": "osaka",
-     "trees": 0
-    },
-    {
-     "city": "oslo",
-     "trees": 0
-    },
-    {
-     "city": "oss",
-     "trees": 0
-    },
-    {
-     "city": "padua",
-     "trees": 0
-    },
-    {
-     "city": "palermo",
-     "trees": 0
-    },
-    {
-     "city": "paris",
-     "trees": 0
-    },
-    {
-     "city": "peesten",
-     "trees": 0
-    },
-    {
-     "city": "plunge",
-     "trees": 0
-    },
-    {
-     "city": "portland",
-     "trees": 0
-    },
-    {
-     "city": "porto",
-     "trees": 0
-    },
-    {
-     "city": "prague",
-     "trees": 0
-    },
-    {
-     "city": "priekule",
-     "trees": 0
-    },
-    {
-     "city": "rambynas",
-     "trees": 0
-    },
-    {
-     "city": "ramsau-bei-berchtesgaden",
-     "trees": 0
-    },
-    {
-     "city": "raudone",
-     "trees": 0
-    },
-    {
-     "city": "rimov",
-     "trees": 0
-    },
-    {
-     "city": "rogalin",
-     "trees": 0
-    },
-    {
-     "city": "roosendaal",
-     "trees": 0
-    },
-    {
-     "city": "rotterdam",
-     "trees": 0
-    },
-    {
-     "city": "salzburg",
-     "trees": 0
-    },
-    {
-     "city": "san-quirico-d-orcia",
-     "trees": 0
-    },
-    {
-     "city": "sardinia",
-     "trees": 0
-    },
-    {
-     "city": "seattle",
-     "trees": 0
-    },
-    {
-     "city": "setubal",
-     "trees": 0
-    },
-    {
-     "city": "seville",
-     "trees": 0
-    },
-    {
-     "city": "shinkamigoto",
-     "trees": 0
-    },
-    {
-     "city": "singapore",
-     "trees": 0
-    },
-    {
-     "city": "sorrento",
-     "trees": 0
-    },
-    {
-     "city": "stoutenburg",
-     "trees": 0
-    },
-    {
-     "city": "strasbourg",
-     "trees": 0
-    },
-    {
-     "city": "takahama",
-     "trees": 0
-    },
-    {
-     "city": "takayama",
-     "trees": 0
-    },
-    {
-     "city": "tatobity",
-     "trees": 0
-    },
-    {
-     "city": "the-hague",
-     "trees": 0
-    },
-    {
-     "city": "tilburg",
-     "trees": 0
-    },
-    {
-     "city": "toga",
-     "trees": 0
-    },
-    {
-     "city": "tokyo",
-     "trees": 0
-    },
-    {
-     "city": "toulouse",
-     "trees": 0
-    },
-    {
-     "city": "trencianske-stankovce",
-     "trees": 0
-    },
-    {
-     "city": "trieste",
-     "trees": 0
-    },
-    {
-     "city": "uda",
-     "trees": 0
-    },
-    {
-     "city": "untermerzbach",
-     "trees": 0
-    },
-    {
-     "city": "utrecht",
-     "trees": 0
-    },
-    {
-     "city": "valencia",
-     "trees": 0
-    },
-    {
-     "city": "velp",
-     "trees": 0
-    },
-    {
-     "city": "vienna",
-     "trees": 0
-    },
-    {
-     "city": "vorden",
-     "trees": 0
-    },
-    {
-     "city": "warsaw",
-     "trees": 0
-    },
-    {
-     "city": "washington-dc",
-     "trees": 0
-    },
-    {
-     "city": "wolfheze",
-     "trees": 0
-    },
-    {
-     "city": "yabu",
-     "trees": 0
-    },
-    {
-     "city": "yoshida",
-     "trees": 0
-    },
-    {
-     "city": "zaanstad",
-     "trees": 0
-    },
-    {
-     "city": "zalgiriai",
-     "trees": 0
-    },
-    {
-     "city": "zaragoza",
-     "trees": 0
-    },
-    {
-     "city": "nara",
-     "trees": -4
-    }
-   ],
-   "trees": 20,
-   "logged": true
-  },
-  {
-   "started": "2026-09-08T06:32:47+00:00",
-   "date": "2026-09-08",
-   "run_id": "34195114342",
-   "minutes": 103.9,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 482,
-   "denials": 47,
-   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(head), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(wc)",
-   "ended": "success",
-   "tokens": 175610089,
-   "claims_held": [],
-   "commits": 17,
-   "cities_touched": 15,
-   "cities": [
-    {
-     "city": "bracon",
-     "trees": 1
-    },
-    {
-     "city": "chatenay-malabry",
-     "trees": 1
-    },
-    {
-     "city": "feternes",
-     "trees": 1
-    },
-    {
-     "city": "jauze",
-     "trees": 1
-    },
-    {
-     "city": "komjatice",
-     "trees": 1
-    },
-    {
-     "city": "magescq",
-     "trees": 1
-    },
-    {
-     "city": "nicorps",
-     "trees": 1
-    },
-    {
-     "city": "pesselieres",
-     "trees": 1
-    },
-    {
-     "city": "reaumont",
-     "trees": 1
-    },
-    {
-     "city": "aberford",
-     "trees": 0
-    },
-    {
-     "city": "aguas-de-moura",
-     "trees": 0
-    },
-    {
-     "city": "albersdorf",
-     "trees": 0
-    },
-    {
-     "city": "allouville-bellefosse",
-     "trees": 0
-    },
-    {
-     "city": "altrier",
-     "trees": 0
-    },
-    {
-     "city": "bosaca",
-     "trees": 0
-    }
-   ],
-   "trees": 9,
-   "logged": true
-  },
-  {
-   "started": "2026-09-08T08:17:49+00:00",
-   "date": "2026-09-08",
-   "run_id": "34196390057",
-   "minutes": 92.2,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 455,
-   "denials": 55,
-   "denials_source": "permission_denials: Bash, Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(jobs), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(set), Bash(until), Bash(wait), Bash(wc)",
-   "ended": "success",
-   "tokens": 16717286,
-   "claims_held": [
-    "_famous-japan"
-   ],
-   "commits": 23,
-   "cities_touched": 21,
-   "cities": [
-    {
-     "city": "pagramantis-regional-park",
-     "trees": 4
-    },
-    {
-     "city": "bracon",
-     "trees": 1
-    },
-    {
-     "city": "chatenay-malabry",
-     "trees": 1
-    },
-    {
-     "city": "feternes",
-     "trees": 1
-    },
-    {
-     "city": "jauze",
-     "trees": 1
-    },
-    {
-     "city": "komjatice",
-     "trees": 1
-    },
-    {
-     "city": "magescq",
-     "trees": 1
-    },
-    {
-     "city": "nicorps",
-     "trees": 1
-    },
-    {
-     "city": "pesselieres",
-     "trees": 1
-    },
-    {
-     "city": "reaumont",
-     "trees": 1
-    },
-    {
-     "city": "vytogala",
-     "trees": 1
-    },
-    {
-     "city": "aberford",
-     "trees": 0
-    },
-    {
-     "city": "aguas-de-moura",
-     "trees": 0
-    },
-    {
-     "city": "albersdorf",
-     "trees": 0
-    },
-    {
-     "city": "allouville-bellefosse",
-     "trees": 0
-    },
-    {
-     "city": "altrier",
-     "trees": 0
-    },
-    {
-     "city": "bosaca",
-     "trees": 0
-    },
-    {
-     "city": "brussels",
-     "trees": 0
-    },
-    {
-     "city": "lisbon",
-     "trees": 0
-    },
-    {
-     "city": "seville",
-     "trees": 0
-    },
-    {
-     "city": "singapore",
-     "trees": 0
-    }
-   ],
-   "trees": 14,
-   "logged": true
-  },
-  {
-   "started": "2026-09-08T11:45:25+00:00",
-   "date": "2026-09-08",
-   "run_id": "34222331169",
-   "minutes": 92.0,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 498,
-   "denials": 27,
-   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(python3), Bash(rm), Bash(until)",
-   "ended": "success",
-   "tokens": 12420934,
-   "claims_held": [
-    "_famous-bulgaria"
-   ],
-   "commits": 28,
-   "cities_touched": 11,
-   "cities": [
-    {
-     "city": "aizuwakamatsu",
-     "trees": 1
-    },
-    {
-     "city": "ekero",
-     "trees": 1
-    },
-    {
-     "city": "iida",
-     "trees": 1
-    },
-    {
-     "city": "kitakata",
-     "trees": 1
-    },
-    {
-     "city": "oyodo",
-     "trees": 1
-    },
-    {
-     "city": "pajuris",
-     "trees": 1
-    },
-    {
-     "city": "radomsko",
-     "trees": 1
-    },
-    {
-     "city": "stockholm",
-     "trees": 1
-    },
-    {
-     "city": "stokaiciai",
-     "trees": 1
-    },
-    {
-     "city": "trollskogen",
-     "trees": 1
-    },
-    {
-     "city": "utrecht",
-     "trees": 0
-    }
-   ],
-   "trees": 10,
-   "logged": true
-  },
-  {
    "started": "2026-09-08T13:19:04+00:00",
    "date": "2026-09-08",
    "run_id": "34225658460",
@@ -22266,6 +21322,111 @@
    "tokens": 325119,
    "claims_held": [
     "guimaraes"
+   ],
+   "commits": 6,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-08T16:29:17+00:00",
+   "date": "2026-11-08",
+   "run_id": "42500080465",
+   "minutes": 20.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 112,
+   "denials": 2,
+   "denials_source": "permission_denials: Bash(cd ; mkdir ; cat ; import ...), Bash(rm)",
+   "ended": "success",
+   "tokens": 861557,
+   "claims_held": [],
+   "commits": 10,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "porto",
+     "trees": 3
+    },
+    {
+     "city": "salt-lake-city",
+     "trees": 2
+    },
+    {
+     "city": "guimaraes",
+     "trees": 1
+    },
+    {
+     "city": "oahu",
+     "trees": 1
+    },
+    {
+     "city": "penacova",
+     "trees": 1
+    }
+   ],
+   "trees": 8,
+   "logged": true
+  },
+  {
+   "started": "2026-11-08T18:55:24+00:00",
+   "date": "2026-11-08",
+   "run_id": "42512343756",
+   "minutes": 4.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 61,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 269192,
+   "claims_held": [],
+   "commits": 3,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-09T01:22:09+00:00",
+   "date": "2026-11-09",
+   "run_id": "42545152477",
+   "minutes": 6.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 72,
+   "denials": 3,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; ? ...), Bash(cd ; for ; do | python3 ...), Bash(cd ; sed ; ? ; python3)",
+   "ended": "success",
+   "tokens": 756248,
+   "claims_held": [
+    "vienna",
+    "segovia",
+    "stuttgart"
+   ],
+   "commits": 6,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-09T06:58:20+00:00",
+   "date": "2026-11-09",
+   "run_id": "42576259442",
+   "minutes": 7.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 123,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 680133,
+   "claims_held": [
+    "san-francisco",
+    "vienna",
+    "fort-worth"
    ],
    "commits": 6,
    "cities_touched": 0,

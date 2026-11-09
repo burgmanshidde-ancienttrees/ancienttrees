@@ -201,6 +201,8 @@ if (pinDlg) {
   }
   document.addEventListener('click', function (e) {
     if (!e.target.closest || !e.target.closest('.td-pin-open') || !atCanMap()) return;
+    // A browser without <dialog> keeps the link's own behaviour.
+    if (typeof pinDlg.showModal !== 'function') return;
     e.preventDefault();
     pinDlg.showModal();
     if (acct) acct.hidden = !!session();

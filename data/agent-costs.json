@@ -1,7 +1,49 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-09": [
+      {
+        "date": "2026-11-09",
+        "kind": "verify",
+        "target": "san-francisco",
+        "tokens": 74000,
+        "trees": 0,
+        "note": "Fifth pass on the register: nine unmined rows already judged (published or private yards). Big Trees champion ca-bigtrees-442 has no second source, stays a lead. Wall."
+      },
+      {
+        "date": "2026-11-09",
+        "kind": "scout",
+        "target": "hallstatt (Upper Austria Naturdenkmaeler)",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Session work: fetched the OOe INSPIRE GML (446 sites, polygons, names, no species); tree-named sites near Hallstatt/Bad Goisern/Bad Ischl listed in register-scouting.json. Licence line and importer still to do."
+      },
+      {
+        "date": "2026-11-09",
+        "kind": "verify",
+        "target": "vienna",
+        "tokens": 90000,
+        "trees": 0,
+        "note": "Prater ND 867 oak and ND 868 lime verified (vie_060, vie_061, not yet written); rest of register private or address-only, 4 leads added."
+      }
+    ],
     "2026-11-08": [
+      {
+        "date": "2026-11-08",
+        "kind": "verify",
+        "target": "guimaraes",
+        "tokens": 80000,
+        "trees": 0,
+        "note": "Deepen pass; all register rows already live, lead or blocked. Moreira de Conegos pine lacks access evidence. Wall for 48h."
+      },
+      {
+        "date": "2026-11-08",
+        "kind": "write",
+        "target": "salt-lake-city",
+        "tokens": 0,
+        "trees": 2,
+        "note": "Session work, no agent: stories for slc_019 (Lavalle hawthorn) and slc_020 (red horse chestnut), the city reaches its target of 20."
+      },
       {
         "date": "2026-11-08",
         "kind": "verify",
@@ -9,6 +51,14 @@
         "tokens": 73000,
         "trees": 0,
         "note": "Deepen pass: register candidates all live, blocked or Cascais/Lisbon; Monserrate swamp cypress and Pena sequoias stay leads (one effective source). Sintra is a wall for 48h."
+      },
+      {
+        "date": "2026-11-08",
+        "kind": "write",
+        "target": "porto (por_032, por_033, por_034, Quinta de Villar d'Allen)",
+        "tokens": 60000,
+        "trees": 3,
+        "note": "Second attempt; the first stopped early with no story on disk. Three stories and recognition lines, no best_time (evergreens). Access line restated from the council's visitor block so preflight's hard-rule-10 check reads the bookable tour as public. Merged by scripts/build_write_2026_11_08b.py. About 20k a tree, much of it preflight output."
       }
     ],
     "2026-11-07": [
@@ -16079,6 +16129,14 @@
       "tokens": 170000,
       "trees": 21,
       "note": "Asked to write READY leads; all 29 were register rows, OSM nodes or earlier declines with no access, life or tree-level source, so none was written and each is now tagged [SKIPPED 2026-11-07] (READY 29 to 0). Instead merged the 21 already-written, unheld trees of 11-02 to 11-04 (scripts/build_backlog_2026_11_07.py), wrote place copy for 11 new places, carried 5 recognition lines over from `recognise`, aligned one species name (Dragon Tree). About 8k a tree."
+    },
+    {
+      "date": "2026-11-08",
+      "kind": "write",
+      "target": "named list (aspromonte, brindisi, castelbuono, dartmoor, fort-worth, frankfurt, grazalema-rediam, guimaraes, innsbruck, isole-tremiti, noto, san-francisco, serra-san-bruno, taiwan, segovia lead) plus written coimbra, croatia-central-dalmatia, oahu, grazalema",
+      "tokens": 110000,
+      "trees": 3,
+      "note": "Asked for 18 stories; 1 writable (gui_009). The other 16 named trees carry an earlier pass's hold that still stands (identity, life, access or duplicate); taiwan has no pending tree; the Segovia READY lead is unverified (six similar sequoias, access and life open). Merged gui_009, hnl_024 (hold lifted under hard rule 10, paid entry counts) and cbr_007 as penacova/pcv_001 (own place, outside Coimbra's day-trip bound). cdl_001 and sgz_003 stay held. About 37k a tree, mostly reading holds."
     }
   ]
 }

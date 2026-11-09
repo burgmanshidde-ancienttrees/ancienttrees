@@ -1212,6 +1212,132 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "por_032",
+      "name": "The Bunya Pine of Quinta de Villar d'Allen",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "girth_cm": 490,
+      "height_m": 40,
+      "location": {
+        "address": "Quinta de Villar d'Allen, Rua do Freixo 194, 4300-208 Porto",
+        "latitude": 41.14363056,
+        "longitude": -8.571463889,
+        "neighbourhood": "Freixo, Campanhã"
+      },
+      "location_site": {
+        "name": "The classified tree group in the gardens of Quinta de Villar d'Allen",
+        "radius_m": 30
+      },
+      "story": "Portugal's tree register measures this bunya pine at 40 metres, taller than either of the two protected trees growing beside it. It is an Australian conifer, and it bears huge cones.\n\nThe forest service classified it as of public interest in May 2021, together with two neighbours, at the request of Porto's city council. The register gives a trunk 4.9 metres round, a crown 13.8 metres across and an age of about 150 years. It records no year for those measurements, so read the age as the register's estimate rather than a count. Somewhere between 120 and 180 years is the honest band.\n\nThe estate around it has a clearer date. In 1839 João Allen, British consul and wine merchant, bought Quinta de Villar d'Allen for a summer house and laid out an English-style landscape garden. His son Alfredo, the councillor in charge of the city's parks, helped bring about the Palácio de Cristal and moved many exotic trees from here into Cordoaria, Carregal and Passeio Alegre. Nobody wrote down which trees went in when, so this one cannot be tied to either man.\n\nThe garden still holds about 180 varieties of camellia, a lake, a glasshouse and a swan garden. It is not a walk-in park. Visits are guided and booked ahead, Monday to Saturday, through the estate on Rua do Freixo, about five kilometres east of the centre and some 275 metres from the Palácio do Freixo.",
+      "how_to_recognise": "You can recognise it as the tallest of the three protected trees here, 40 metres, with a bunya pine's huge cones. It stands about 3 metres from the wide blue cedar and some 20 metres from the umbrella pine.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/cidade-das-camelias/quinta-de-villar-dallen",
+        "https://files.diariodarepublica.pt/2s/2021/05/099000000/0010600109.pdf",
+        "https://si.icnf.pt/kml/arv_class"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Público, processo AIP130415105I",
+        "url": "https://si.icnf.pt/kml/arv_class"
+      },
+      "access": "The City of Porto lists the garden as open to the public by guided visit, booked in advance with the estate at Rua do Freixo 194. Visiting hours are Monday to Friday 08:30 to 18:00 and Saturday 09:00 to 17:00, with guided tours from 10:00 to 17:00. It is not a walk-in garden; no price is published.",
+      "transport": "Freixo, Campanhã parish, about 5 km east of central Porto; about 1.3 km straight line from Campanhã station and about 275 m from Palácio do Freixo. Travel time not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "ICNF AIP130415105I bunia-bunia: girth 4.9 m, height 40 m, crown 13.8 m, register age 150, no measurement year recorded (age is a register figure, not rederived). Tallest of the three classified trees and the one to look for; a Bunya Pine bears huge cones, so it is recognisable. Height 40 m is a register figure for an Araucaria, plausible for the species (Bunya Pines reach 30 to 45 m). A 2010 Público piece reportedly gives a 130-year-old araucaria of 40 m on the city's classified list: seen only as a search summary, not a fetched page, so not used as a source. Source: ICNF national register of trees of public interest, classified by Despacho n.º 5166/2021, Diário da República 2.ª série n.º 99, 21 May 2021, three isolated trees at Quinta de Villar d'Allen on request of the Câmara Municipal do Porto (register lists the estate under Gondomar concelho but the address Rua do Freixo 194 and the council page place it in Freixo, Porto). Register only (one official register plus the owner-side council page for the estate); register coordinates lie 3 to 22 m apart (bunya, cedar 3 m; Sciadopitys about 20 m away), so one stand point serves all three but the pin is estate-level, not a confirmed crown. Porto council page: estate founded 1839 when João Allen, British consul and wine merchant, bought it to build a summer house and an English-style landscape garden; son Alfredo Allen, city councillor for parks, helped bring the Palácio de Cristal about and moved many exotics from here into Cordoaria, Carregal and Passeio Alegre; house and estate Imóvel de Interesse Público since 2010; about 180 camellia varieties, a mata, lake, glasshouse, Jardim dos Cisnes. The estate page does not say which tree was planted when; no age is bridged from the estate date. Life check: lifecheck NONE for the pin; Commons geosearch 200 m and 400 m empty (earlier pass); alive evidence is the 2021 classification and the Sciadopitys measured 2021, plus the estate's current visitor page. Thin, so flagged. Earlier lead (data/leads/porto.json) held these three for lack of a photo or exact pin; since 2026-10-29 a findable tree ships without a photo, and the three together stand on one small site taken in at one spot. Tree-to-tree separation to keep in mind: the same family's other garden, Casa Allen in Boavista, is por_020 (different place).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "por_033",
+      "name": "The Blue Atlas Cedar of Quinta de Villar d'Allen",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "girth_cm": 430,
+      "height_m": 32.75,
+      "location": {
+        "address": "Quinta de Villar d'Allen, Rua do Freixo 194, 4300-208 Porto",
+        "latitude": 41.14365556,
+        "longitude": -8.571463889,
+        "neighbourhood": "Freixo, Campanhã"
+      },
+      "location_site": {
+        "name": "The classified tree group in the gardens of Quinta de Villar d'Allen",
+        "radius_m": 30
+      },
+      "story": "This cedar grew out rather than up. Its crown spreads 20 metres across, half as wide again as that of the 40-metre bunya pine standing three metres away.\n\nIt is the blue form of the Atlas cedar, the cultivar Glauca, and Portugal's national register measures it at 32.75 metres tall with a trunk 4.3 metres round. The register gives an age of about 150 years but no year of measurement, so take that as an estimate, with somewhere between 120 and 180 as the honest range. The two trees stand so close that one stop covers both. Different species, different shapes, one patch of ground.\n\nThe forest service classified them, with a Japanese umbrella pine nearby, in May 2021, after Porto's council asked. They grow at Quinta de Villar d'Allen, the estate João Allen, a British consul who traded in wine, bought in 1839 and turned into an English-style landscape garden. The house and grounds have been protected as a monument since 2010. His son Alfredo, who ran the city's parks as a councillor, moved many exotic trees from here into Porto's public gardens. Whether either of them planted this cedar, no source says.\n\nWhat the estate is known for now is camellias, about 180 varieties. Getting in means booking a guided visit, as the garden does not take walk-ins. The latest dated record of these trees is that 2021 classification, so if you have been round since, tell us how they look.",
+      "how_to_recognise": "You can recognise it by the blue needles of the Glauca form and a crown 20 metres across, much wider than its neighbour's. It stands about 3 metres from the 40-metre bunya pine, the taller of the pair.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/cidade-das-camelias/quinta-de-villar-dallen",
+        "https://files.diariodarepublica.pt/2s/2021/05/099000000/0010600109.pdf",
+        "https://si.icnf.pt/kml/arv_class"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Público, processo AIP130415106I",
+        "url": "https://si.icnf.pt/kml/arv_class"
+      },
+      "access": "The City of Porto lists the garden as open to the public by guided visit, booked in advance with the estate at Rua do Freixo 194. Visiting hours are Monday to Friday 08:30 to 18:00 and Saturday 09:00 to 17:00, with guided tours from 10:00 to 17:00. It is not a walk-in garden; no price is published.",
+      "transport": "Freixo, Campanhã parish, about 5 km east of central Porto; about 1.3 km straight line from Campanhã station and about 275 m from Palácio do Freixo. Travel time not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "ICNF AIP130415106I cedro-do-atlas, cultivar 'Glauca' (the blue form): girth 4.3 m, height 32.75 m, crown 20 m (a very wide crown), register age 150, no measurement year recorded. Stands about 3 m from the bunya's register point, so the two are one stop; the writer may treat them as neighbours, not twins (different species). Source: ICNF national register of trees of public interest, classified by Despacho n.º 5166/2021, Diário da República 2.ª série n.º 99, 21 May 2021, three isolated trees at Quinta de Villar d'Allen on request of the Câmara Municipal do Porto (register lists the estate under Gondomar concelho but the address Rua do Freixo 194 and the council page place it in Freixo, Porto). Register only (one official register plus the owner-side council page for the estate); register coordinates lie 3 to 22 m apart (bunya, cedar 3 m; Sciadopitys about 20 m away), so one stand point serves all three but the pin is estate-level, not a confirmed crown. Porto council page: estate founded 1839 when João Allen, British consul and wine merchant, bought it to build a summer house and an English-style landscape garden; son Alfredo Allen, city councillor for parks, helped bring the Palácio de Cristal about and moved many exotics from here into Cordoaria, Carregal and Passeio Alegre; house and estate Imóvel de Interesse Público since 2010; about 180 camellia varieties, a mata, lake, glasshouse, Jardim dos Cisnes. The estate page does not say which tree was planted when; no age is bridged from the estate date. Life check: lifecheck NONE for the pin; Commons geosearch 200 m and 400 m empty (earlier pass); alive evidence is the 2021 classification and the Sciadopitys measured 2021, plus the estate's current visitor page. Thin, so flagged. Earlier lead (data/leads/porto.json) held these three for lack of a photo or exact pin; since 2026-10-29 a findable tree ships without a photo, and the three together stand on one small site taken in at one spot. Tree-to-tree separation to keep in mind: the same family's other garden, Casa Allen in Boavista, is por_020 (different place).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "por_034",
+      "name": "The Umbrella Pine of Quinta de Villar d'Allen",
+      "species": "Japanese Umbrella Pine (Sciadopitys verticillata)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "girth_cm": 315,
+      "height_m": 20,
+      "location": {
+        "address": "Quinta de Villar d'Allen, Rua do Freixo 194, 4300-208 Porto",
+        "latitude": 41.14379167,
+        "longitude": -8.571619444,
+        "neighbourhood": "Freixo, Campanhã"
+      },
+      "location_site": {
+        "name": "The classified tree group in the gardens of Quinta de Villar d'Allen",
+        "radius_m": 30
+      },
+      "story": "Japanese umbrella pines grow slowly, and this one has a trunk 3.15 metres round. That is the national register's figure, taken in 2021, and it is very large for the species. We found no second measurement to check it against, so it stands as the register's number until someone brings a tape.\n\nSciadopitys verticillata is not a true pine. It is the only living member of its own family, native to Japan, with needles set in whorls like the spokes of an umbrella. In Portugal it is a rarity. This one is 20 metres tall with a crown almost 14 metres across, and the register put its age at 151 when it measured it. That is the most precise age of the three protected trees on this estate and still an estimate, so read it as somewhere between 120 and 180 years.\n\nThe other two, a 40-metre bunya pine and a wide blue Atlas cedar, stand together about 20 metres away. Portugal's forest service classified all three in May 2021 at the request of Porto's council.\n\nThe ground is Quinta de Villar d'Allen, which João Allen, British consul and wine merchant, bought in 1839 for a summer house and an English-style landscape garden. His son Alfredo later sent many of its exotics out into the city's public gardens. No source says when this tree arrived, or who first brought a Japanese conifer to Porto's eastern edge.\n\nVisits are guided and booked ahead, Monday to Saturday.",
+      "how_to_recognise": "You can recognise it as the smallest of the three protected trees, 20 metres tall with a trunk 3.15 metres round and needles in umbrella-like whorls. It stands about 20 metres from the bunya pine and the blue cedar.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/cidade-das-camelias/quinta-de-villar-dallen",
+        "https://files.diariodarepublica.pt/2s/2021/05/099000000/0010600109.pdf",
+        "https://si.icnf.pt/kml/arv_class"
+      ],
+      "official_register": {
+        "name": "ICNF Arvoredo de Interesse Público, processo AIP130415107I",
+        "url": "https://si.icnf.pt/kml/arv_class"
+      },
+      "access": "The City of Porto lists the garden as open to the public by guided visit, booked in advance with the estate at Rua do Freixo 194. Visiting hours are Monday to Friday 08:30 to 18:00 and Saturday 09:00 to 17:00, with guided tours from 10:00 to 17:00. It is not a walk-in garden; no price is published.",
+      "transport": "Freixo, Campanhã parish, about 5 km east of central Porto; about 1.3 km straight line from Campanhã station and about 275 m from Palácio do Freixo. Travel time not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "ICNF AIP130415107I falso-pinheiro-do-Japão: girth 3.15 m, height 20 m, crown 13.98 m, register age 151, measured 2021 (the only one of the three with a measurement year). A girth of 3.15 m is very large for a slow-growing Sciadopitys, a rarity in Portugal; I found no second source on its size and have not checked the figure against the species elsewhere, so the girth is register only. About 20 m from the bunya and cedar. Source: ICNF national register of trees of public interest, classified by Despacho n.º 5166/2021, Diário da República 2.ª série n.º 99, 21 May 2021, three isolated trees at Quinta de Villar d'Allen on request of the Câmara Municipal do Porto (register lists the estate under Gondomar concelho but the address Rua do Freixo 194 and the council page place it in Freixo, Porto). Register only (one official register plus the owner-side council page for the estate); register coordinates lie 3 to 22 m apart (bunya, cedar 3 m; Sciadopitys about 20 m away), so one stand point serves all three but the pin is estate-level, not a confirmed crown. Porto council page: estate founded 1839 when João Allen, British consul and wine merchant, bought it to build a summer house and an English-style landscape garden; son Alfredo Allen, city councillor for parks, helped bring the Palácio de Cristal about and moved many exotics from here into Cordoaria, Carregal and Passeio Alegre; house and estate Imóvel de Interesse Público since 2010; about 180 camellia varieties, a mata, lake, glasshouse, Jardim dos Cisnes. The estate page does not say which tree was planted when; no age is bridged from the estate date. Life check: lifecheck NONE for the pin; Commons geosearch 200 m and 400 m empty (earlier pass); alive evidence is the 2021 classification and the Sciadopitys measured 2021, plus the estate's current visitor page. Thin, so flagged. Earlier lead (data/leads/porto.json) held these three for lack of a photo or exact pin; since 2026-10-29 a findable tree ships without a photo, and the three together stand on one small site taken in at one spot. Tree-to-tree separation to keep in mind: the same family's other garden, Casa Allen in Boavista, is por_020 (different place).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "hero_tree_id": "por_008",

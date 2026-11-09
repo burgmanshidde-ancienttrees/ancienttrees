@@ -679,6 +679,83 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "slc_019",
+      "name": "The University of Utah Lavalle Hawthorn",
+      "species": "Lavalle Hawthorn (Crataegus x lavallei)",
+      "age_estimate": "not documented",
+      "girth_cm": 216,
+      "height_m": 11.9,
+      "location": {
+        "address": "University of Utah campus, Presidents' Circle, west of the John R. Park Building, Salt Lake City",
+        "latitude": 40.764766,
+        "longitude": -111.849786,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=lavalle-hawthorn",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register (Utah Big Tree Register, state champion status 1, PUBLIC_ACCESS Yes): circumference 216 cm, height 11.9 m. Ground owner's tree tour page (fetched 2026-11-07): 'The tree in President's Circle is on the Utah Big Tree Registry'; found at the southeast part of President's Circle or south of the University Bookstore. Exfoliating trunk, white flower clusters May to June, orange-red fruit that stays on through winter (tour page). Tour page gives mature size as 15 to 25 ft, so this specimen at 39 ft is far above typical. Lifecheck RECENT: iNaturalist observation 2025-06-26 in range, not confirmed to be this exact tree. Pin is register coordinate, approximate. About 100 m from the cork oak, German ash and Mongolian oak (slc_010 to slc_012). Two sources (register plus owner), flagged because the exact trunk is not fixed. Age not documented.",
+      "story": "A hawthorn is meant to stay a small tree, and this one did not. The University of Utah's own tree tour gives the species a mature height of 15 to 25 feet. Utah's big tree register lists this specimen at 11.9 metres, about 39 feet, on a trunk 216 centimetres round, and names it the state champion of its kind.\n\nThe Lavalle hawthorn is a hybrid, much planted along American streets and campuses for its looks across the year. The tour page lists white flower clusters in May and June, a trunk whose bark peels in strips, and orange-red fruit that hangs on through the winter, so it is one of the few trees on the lawns that still carries colour in January.\n\nThe tour places it in Presidents' Circle, in the southeast part of the loop or south of the University Bookstore, and says the tree there is on the state register. Our pin is the register's point, not a fix on the trunk, and an observation logged nearby in June 2025 shows trees standing in the area without naming this one. The grounds are open and there is no ticket.\n\nIt stands about 100 metres from the three champions south of the John R. Park Building, a cork oak, a German ash and a Mongolian oak, so it is an easy fourth stop on the campus walk. Nobody has recorded when it was planted. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by its peeling trunk and, in winter, by the orange-red fruit still on the branches. It stands in Presidents' Circle, in the southeast part or south of the University Bookstore.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "slc_020",
+      "name": "The University of Utah Red Horse Chestnut",
+      "species": "Red Horse Chestnut (Aesculus x carnea)",
+      "age_estimate": "not documented",
+      "girth_cm": 160,
+      "height_m": 8.5,
+      "location": {
+        "address": "University of Utah campus, Presidents' Circle, north of the Crocker Science Center, Salt Lake City",
+        "latitude": 40.764632,
+        "longitude": -111.850999,
+        "neighbourhood": "University of Utah"
+      },
+      "verified_sources": [
+        "https://facilities.utah.edu/tree-tour/tree-display.php?tree_name=red-horsechestnut",
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register (Division of Forestry, Fire and State Lands ArcGIS layer)",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Free. Open University of Utah campus grounds (register PUBLIC_ACCESS = Yes; the university runs a self-guided tree tour on the same grounds). No ticket.",
+      "transport": "University of Utah campus, about 4 km east of Temple Square; a TRAX line serves the campus (stop and walk time not verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register (Utah Big Tree Register, state champion status 1, PUBLIC_ACCESS Yes): circumference 160 cm, height 8.5 m (tour page gives mature size 30 to 40 ft, may stay smaller in Utah). Ground owner's tour page (fetched 2026-11-07): 'The tree on the south of President's Circle is on the Utah Big Tree Registry'. Location conflict: register text says north of the Crocker Science Center, tour page says south of President's Circle; pin is the register coordinate, approximate. Showy red to dark pink flower panicles in May (tour page). Lifecheck OLD, so alive rests on the register 2026 measurement only; flagged. About 40 m from the Port Orford cedar and lacebark elm area (slc_013, slc_014). Age not documented.",
+      "story": "The state record for a red horsechestnut belongs to a tree only 8.5 metres tall. Utah's big tree register measured it in 2026 on a trunk 160 centimetres round, and the University of Utah's tree tour says it grows on the south side of Presidents' Circle. The register's own text puts it north of the Crocker Science Center, so the two sources agree on the area and differ on the side. Our pin follows the register and is approximate.\n\nThe species is a hybrid of two horsechestnuts, one American and one European, and the tour gives its mature height as 30 to 40 feet. This specimen is just under that, a compact tree rather than a giant, and its claim to the record is that nobody in Utah has listed a bigger one.\n\nThe moment to see it is May, when it carries upright panicles of red to dark pink flowers, a colour that most horsechestnuts, which flower white, do not offer.\n\nThe register measured it in 2026 and we have no more recent sighting of this trunk, so the measurement is our evidence that it stands. The grounds are open and there is no ticket. It is within about 40 metres of the champion Port Orford cedar and lacebark elm, which makes it a quick addition to a campus walk. Nobody has recorded its age. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it in May by its red to dark pink flower panicles, on a compact tree about 8 metres tall. It stands in Presidents' Circle, near the Crocker Science Center.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the red to dark pink flower panicles open"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

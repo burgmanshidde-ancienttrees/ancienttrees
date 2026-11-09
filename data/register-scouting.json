@@ -54,7 +54,8 @@
    "place": "Brighton",
    "country": "United Kingdom",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#334). One search: no downloadable register. CPRE Sussex published a digital notable-trees map (2024, TiCL platform: Special Trees and Great Elms of Brighton & Hove) and the council has a Stanmer Park special-trees page (about 70 veteran trees mapped, ancient yew in the churchyard likely the city oldest). Licence of the TiCL map unknown, so a finding aid only. Next angle: read the council Stanmer Park page and the CPRE Special Trees walk for named trees, lead-check each with a second source; Brighton holds the National Elm Collection (champion elms are named in the Tree Register, facts only). RETRIED 2026-11-04: council page gives the Stanmer churchyard yew (5.94 m, well over 500 years) as a lead in data/leads/brighton.json; full numbered list not read, still stalled. RETRIED 2026-11-06: council Stanmer Park list read in full (17 trees, no coordinates, positions only in the trail app); Preston Twin, Brace elm, Stanmer yew and cedar already live as bhm_001 to bhm_004; Level, Hove Park, St Nicholas and Pavilion gardens give nothing new; 5 leads and 1 block added to data/leads/brighton.json. Still stalled until the council's trail positions or a GPS fix of the Stanmer Turkey oak turn up."
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#334). One search: no downloadable register. CPRE Sussex published a digital notable-trees map (2024, TiCL platform: Special Trees and Great Elms of Brighton & Hove) and the council has a Stanmer Park special-trees page (about 70 veteran trees mapped, ancient yew in the churchyard likely the city oldest). Licence of the TiCL map unknown, so a finding aid only. Next angle: read the council Stanmer Park page and the CPRE Special Trees walk for named trees, lead-check each with a second source; Brighton holds the National Elm Collection (champion elms are named in the Tree Register, facts only). RETRIED 2026-11-04: council page gives the Stanmer churchyard yew (5.94 m, well over 500 years) as a lead in data/leads/brighton.json; full numbered list not read, still stalled. RETRIED 2026-11-06: council Stanmer Park list read in full (17 trees, no coordinates, positions only in the trail app); Preston Twin, Brace elm, Stanmer yew and cedar already live as bhm_001 to bhm_004; Level, Hove Park, St Nicholas and Pavilion gardens give nothing new; 5 leads and 1 block added to data/leads/brighton.json. Still stalled until the council's trail positions or a GPS fix of the Stanmer Turkey oak turn up. RETRIED 2026-11-08: no new angle (Brighton is a 48h wall, council list already read in full); nothing changed, stays stalled.",
+   "retried": "2026-11-08"
   },
   {
    "place": "Belfast",
@@ -424,11 +425,12 @@
   {
    "place": "Hallstatt",
    "country": "Austria",
-   "status": "stalled",
-   "note": "2026-10-16: no tree-level Naturdenkmal list with coordinates for Hallstatt in web search (Land OOe publishes a 1989 printed booklet, Unsere Naturdenkmale, and a 2011 biotope report, neither with coordinates). The Upper Austria CC BY natural-monument dataset noted under Steiermark (data.europa.eu) is the route (confirmed to exist 2026-10-16 as data.europa.eu dataset land-ooe_naturdenkmaler-oberosterreich, High Value Dataset; not yet downloaded): fetch it and check for points inside Hallstatt.",
+   "status": "imported",
+   "note": "2026-11-09: Upper Austria Naturdenkmaeler (CC BY 4.0, 446 polygon sites, 349 tree-named) imported by scripts/import_ooe_naturdenkmaeler.py into data/registers/ooe-naturdenkmaeler.json, publish_dots False (centroids only, approximate). Coordinate conversion checked: the Hallstatt yew lands 0.1 km from the village centre and the Bad Goisern church yew within 100 m. Hallstatt already publishes the headline monuments (Hallstatt, Obertraun, Untersee, Bad Goisern yews, Gosau beech and elm, Bad Ischl lime) from the Naturschutzbuch, so the yield here is small; the file helps other Upper Austria places (Linz, Steyr, Wels) which are unmapped.",
    "covers": [
     "Hallstatt"
-   ]
+   ],
+   "retried": "2026-11-09"
   },
   {
    "place": "Sweden",
@@ -1213,6 +1215,12 @@
    "country": "Thailand",
    "status": "imported",
    "note": "IMPORTED 2026-11-02 as data/registers/thailand-rukkha.json. Register: รุกข มรดกของแผ่นดิน (heritage trees of the land), Department of Cultural Promotion, Ministry of Culture; lists of 2017 (65), 2018 (63, 64 rows after one fold) and 2019 (88). Licence: data.go.th dataset 5bc5f557-1786-4f92-babb-41553ed5a8f9 ('ข้อมูลรุกขมรดก') reads 'สัญญาอนุญาต Creative Commons Attributions', access level public; CC BY, commercial reuse with attribution. data.go.th returns 403 Access Denied to this runner (curl, browser pane, WebFetch, every mirror host), so the page and both xlsx files came from Internet Archive captures (2022-05-28 page, 2025-04-25 files). 2017 and 2018 rows carry coordinates, age, girth, height and a Thai history paragraph; 2019 is names, sites and provinces only, from Thai Wikipedia (CC BY-SA) citing technologychaoban.com. 121 of 217 entries have a usable point. Traps hit: a placeholder point (20.207213, 99.940312) pasted onto 7 trees in 7 provinces, Wat Chedi Luang's point copied to Loei and Songkhla, girths of 30 to 97 m (buttress or crown spread), heights of 60 to 90 m, a year figure in a girth cell, arm-span girths, a 1,000-year age column whose own history says 100. No species field: Latin is our mapping from the Thai name. Never updated since listing, so every tree needs a life check. Several entries are private-caretaker trees, groups, or whole forests."
+  },
+  {
+   "place": "Segovia",
+   "country": "Spain",
+   "status": "imported",
+   "note": "SCOUTED 2026-11-08, NO NEW SUPPLY. Already imported (data/registers/castilla-leon-arboles-notables.json, Junta de Castilla y Leon, licence free use with attribution, commercial branch of IGCYL-NC, proof in file header) and the city is already published with 6 trees (5 from the register). 13 register rows in Segovia province: 6 published; within about 30 km only AS-SG-22 (El Espinar sequoia, about 23 km, fenced forestry house, access unconfirmed) remains, kept as a lead in data/leads/segovia.json; the other six are 34 km or more out. Riofrio wood and Guadarrama gave no named trees. Open problem for a session: AS-SG-09 is blocked as probable felled in leads yet published as seg_003 in data/cities/segovia.json. Notes in data/research/segovia-scout-2026-11-08.md."
   }
  ],
  "out_of_focus": {
