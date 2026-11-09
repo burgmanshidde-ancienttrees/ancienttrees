@@ -25,6 +25,83 @@ event on the list is unaffected.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## Weekly analysis 2026-11-09
+
+Fifteenth weekly analysis. Compares 11-02 to 11-08 with 10-26 to 11-01, read from
+the 11-08 daily entry (its 7-day tables). Google's 11-08 row is partial. Volumes are
+small; nothing below is a trend unless it says so.
+
+**Scorecard**
+
+| Week | Impressions | Clicks | CTR | Avg position | Visitors (GA, new) | From Google | App downloads (first-time) | New accounts | Trees collected | Readers' contributions |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 10-26 to 11-01 | 573 | 11 | 1.9% | 21 to 50, 10.1 on 11-01 | 62 | 3 | 17 | 9 | 0 | 8 |
+| 11-02 to 11-08 | 3,616 (11-08 partial) | 93 | 2.6% | 8 to 10 on 4 days, 34 to 38 on 3 | 54 | 16 | 14 | 8 | 7 | 3 |
+
+Google by day: 1,274 and 1,192 impressions on 11-02 and 11-03, 261 on 11-04, then 23,
+35 and 34 on 11-05 to 11-07, then 797 (partial) on 11-08. Bing, 7 days to 11-05: 2,937
+impressions and 43 clicks against 676 and 28; 2,225 of the impressions fall on 11-01
+alone (0.4% CTR). Device split and per-visit ratios are not in the entry, so none is
+claimed. Android waitlist: 2 this week. Website actions ever: 800, directions 7.
+
+**Outreach yield** (data/mail-yield.json, mailbox read; weeks keyed by the Monday of our first mail; the week of 10-26 is the one old enough to read, the week of 11-02 is not)
+
+| Group | Mailed, week of 10-26 | Answered of those | Mailed, total | Answered, total | Rate | Linked |
+|---|---:|---:|---:|---:|---:|---:|
+| archive | 11 | 1 | 25 | 1 | 4% | 0 |
+| nature | 63 | 3 (2 automatic only) | 81 | 6 | 7% | 1 |
+| guide | 12 | 0 | 36 | 1 | 3% | 1 |
+| source | 21 | 2 | 59 | 4 | 7% | 0 |
+| press | 38 | 1 | 121 | 7 | 6% | 0 |
+| tourism | 0 | 0 | 18 | 3 | 17% | 0 |
+| garden | 0 | 0 | 97 | 11 | 11% | 0 |
+| society | 2 | 1 | 148 | 25 | 17% | 1 |
+| council | 1 | 0 | 58 | 9 | 16% | 0 |
+| other | 10 | 5 | 160 | 50 | 31% | 2 |
+
+The week of 11-02 added archive 10, nature 16, guide 19, press 23, council 3 and other 19
+mailed, with 7 answers so far (nature 2, other 4, council 1), too young to judge. Five
+links in all across every group.
+
+**What moved:**
+1. Google was up on 11-02 and 11-03 (about 1,200 impressions a day at position 8 to 9,
+   23 and 31 clicks), then fell to 23 to 35 a day for three days at position 34 to 38,
+   then 797 (partial) on 11-08. The week's total is 6 times the week before, but it is
+   two days and a partial one; the swing between days is the finding, not the total.
+2. Visitors from Google 16 against 3, while all new visitors are flat (54 against 62)
+   and Bing's share fell (2 against 7). Daily visitors still sit at 2 to 12.
+3. App: 14 first-time downloads against 17 (of the last 21 on record, 11 came from App
+   Store search, 6 from a web referrer, 4 from an app referrer; US 7, GB 5, NL 4). Trees
+   opened 163 on 32 phones, trees collected 7 against 0.
+4. Readers gave 3 contributions against 8 (one tree, two app photos); two ambassador
+   requests (Pamplona, Leuven). No tree waits for inspection.
+5. Quality: Web orange (a new TypeError "undefined is not a function ... addEvent" in an
+   inline script) and Backup red (Hidde's one-time setup, BACKUP_RESTORE.md). The night
+   run found no new outreach contacts in two days; 258 addresses are ready.
+
+**Suggestions, ranked:**
+1. **[run]** Fix the new web TypeError (`mq.addEvent`, 2 new error types in the quality
+   line). It is rung-2 work and it reaches every visitor the Google days bring (16 this week).
+2. **[run]** Read data/tagged-still-shown.json against the Google days and say which
+   pages carry 11-02, 11-03 and 11-08 (800 to 1,200 impressions) and which the 23 to 35
+   days, so the digest can say whether the same pages drop out and return. No page-set
+   change on this evidence: it is two days up and three down.
+3. **[run]** Spend the sourcing window on nature and guide contacts, not press. Ready
+   pool: press 135, source 65 against nature 9 and guide 9, and no new contacts in two
+   days. Guide has 1 answer in 36 mailed (3%), so source guide only for cities with
+   photographed trees, and wait for the 19 guide mails of week 11-02 to answer first.
+4. **[FOR HIDDE]** The week of 10-26 sent 63 nature mails and got 3 answers (2 of them
+   automatic). Before the next nature batch goes, decide whether it keeps the same short
+   mail; wilder.pt (10-24) is the only referral spike on file.
+5. **[sessie]** App Store search is 11 of the last 21 downloads, the largest source and
+   independent of the web demotion. Look once at the listing (name, subtitle, keywords)
+   against the search terms Apple reports, before build 41.
+
+**Watch next week:** whether Google days return to 1,000+ impressions at position
+under 10 and hold for three in a row (read beside the tagged-still-shown list), and
+whether the week-of-11-02 outreach batch (nature 16, guide 19, press 23) brings answers
+beyond automatic ones.
+
 ## 2026-11-08 (previous UTC day)
 
 **Today: an account was opened yesterday (61 accounts in all).**
