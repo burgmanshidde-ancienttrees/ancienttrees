@@ -17,6 +17,14 @@
 **Found empty:** Aviemore, Rothiemurchus and all of Speyside: no named, placeable tree (three leads in data/leads/aviemore.json; a granny pine needs a geotagged photo of the trunk or an OSM node). Beauly Priory's elm fell on 2023-01-05. Fort William, Oban, the Great Glen, Dornoch and the Black Isle gave nothing individual. Mount Stewart, Castle Ward and Tollymore stayed leads; the Forest Service book "Northern Ireland's Remarkable Trees" (Wayback copy of remarkabletrees.org) is the angle left for them.
 **Waiting in data/research/uk-ni-highlands-places.json:** Belfast's rewritten place copy, unused while its new trees are app-only. Use it when they get pages.
 **Cost:** about 1.15M tokens for 19 trees, about 60k a tree, far over the 15k target; from-zero work in the Highlands costs that and yields little. The writing pass died on the usage limit at its last step, with everything already on disk.
+## 2026-11-09 session: US Southwest run closed (31 trees, live in the app since 11-05)
+
+- **What changed in the product:** nothing new today. The daily publish of 2026-11-05 (b7345d923) already took this run's trees into the app, and a night run added the last three Tucson trees on 11-07 (c137f38ce). Tucson 14, Boulder 5, Santa Fe 3, Prescott 3, and one each in Scottsdale, Glendale, Albuquerque, Denver, Flagstaff, Sedona: 31 trees, two with a photograph so far (tus_002, bld_003). Today only the paperwork reached main: leads, notes, the register verdict and the costs.
+- **Arizona's Magnificent Trees is not importable:** the report we could read (2022, mirrored at air.arizona.edu) is a booklet of 23 highlights with no licence, no coordinates and no full list; dffm.az.gov still answers 403. Finding aid only.
+- **What yielded:** the University of Arizona arboretum's GIS (heritage and champion flags, per-tree points) and the City of Boulder's notable-tree story map. Both are worth looking for elsewhere: a campus or city GIS beats from-zero search.
+- **What did not:** Phoenix proper 0, Tubac and Tumacacori 0, Denver 1 (Fairmount's PDF is a numbered map with no key), Albuquerque 1. Salt Lake City was not touched, as asked. These cities stay under the ten-tree bar of 2026-11-04 and another from-zero pass should not run without a new angle; leads are in data/leads/.
+- **Holds overruled:** the writing pass held tus_007, tus_013 and tus_014 (young, no visible reason); the night run of 11-07 wrote and merged them anyway, which fits "a judgement about good enough never blocks publication".
+- **Breakage:** the writing pass died on the weekly usage limit on 11-04 after saving all its work, so its token count is unknown and it is not in agent-costs.json. Verification cost 1,166,027 tokens for 31 trees, about 38k a tree before writing, more than twice the 15k target. The six claims expired unreleased; none remain.
 
 ## 2026-11-09 session: the Plus question starts counting at zero
 

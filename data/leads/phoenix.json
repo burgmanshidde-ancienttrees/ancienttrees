@@ -1,0 +1,85 @@
+{
+ "leads": [
+  {
+   "id": "phx_l01",
+   "name": "ASU Tempe Arizona cypress (planted 1910, Orange St in front of Physical Education East)",
+   "species": "Arizona Cypress (Cupressus arizonica)",
+   "sources": [
+    "https://news.asu.edu/content/tree-planting-celebrate-arbor-day-tree-campus-usa-award"
+   ],
+   "reason": "ASU arboretum coordinator called it the campus's oldest documented tree; search summary of an ASU library page (not fetched, page now 404) hints it declined in summer 2024, so alive is unconfirmed; ask ASU Arboretum. Campus open grounds, light rail to Tempe"
+  },
+  {
+   "id": "phx_l02",
+   "name": "Wickenburg Jail Tree",
+   "species": "Velvet Mesquite (Prosopis velutina)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jail_tree",
+    "https://www.atlasobscura.com/places/wickenburg-jail-tree"
+   ],
+   "reason": "About 1 h by car from Phoenix, no public transport; age disputed (about 200 years per the town vs early 1900s per Yuma Sun); Arizona Heritage tree and Centennial Witness at Tegner St and US-60, public ground. Strong tree, wrong place for Phoenix; standalone page candidate with a verify pass of its own"
+  },
+  {
+   "id": "phx_l03",
+   "name": "Union Pacific Palm (Maricopa city, Centennial Witness tree)",
+   "species": "California Fan Palm (Washingtonia filifera)",
+   "sources": [
+    "search summary only"
+   ],
+   "reason": "Planted about 1910 on John Wayne Pkwy, Maricopa AZ, ~35 mi from Phoenix with no transit; summary only, not fetched"
+  },
+  {
+   "id": "phx_l04",
+   "name": "Maricopa County Magnificent Tree champions (desert ironwood, yellow palo verde, oleander, desert fern, athel, sissoo at Calle Ventura)",
+   "species": "various",
+   "sources": [
+    "https://dffm.az.gov/sites/default/files/media/2023%20Magnificent%20Tree%20Annual%20Report.pdf"
+   ],
+   "reason": "2023 report lists Maricopa national and state champions with owners' names only; no coordinates or access, probably private land; no pin in reach"
+  },
+  {
+   "id": "phx_l05",
+   "name": "Desert Botanical Garden giant cardons (planted 1939) and 37 ft boojum",
+   "species": "Cardon (Pachycereus pringlei)",
+   "sources": [
+    "https://dbg.org/?p=354244"
+   ],
+   "reason": "Cacti and succulents, not trees; paid entry garden in Papago Park; record only as a note, pins unknown"
+  },
+  {
+   "id": "phx_l06",
+   "name": "ASU Palm Walk",
+   "species": "Date Palm (Phoenix dactylifera)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Palm_Walk",
+    "https://news.asu.edu/content/trees-lining-iconic-palm-walk-turn-100-years-old"
+   ],
+   "reason": "Original 1916 to 1930 fan palms were replaced with Medjool date palms in 2016 to 2018, so the avenue is young; avenue not a collectible point"
+  },
+  {
+   "id": "phx_l07",
+   "name": "Encanto Park 100-year-old mesquite",
+   "species": "mesquite",
+   "sources": [
+    "https://shannaday.brivityidx.com/blog/encanto-park-oasis-in-the-heart-of-phoenix-az-1"
+   ],
+   "reason": "Realtor blog summary only; location in park unclear; no exact pin"
+  },
+  {
+   "id": "phx_l08",
+   "name": "Scottsdale Drinkwater Blvd median olives (about 25 remnant, beyond the four at Second St)",
+   "species": "European Olive (Olea europaea)",
+   "sources": [
+    "https://www.waymarking.com/waymarks/WM9GJK_Winfield_Scotts_Olive_Tree_Scottsdale_Arizona"
+   ],
+   "reason": "Folded into phx_001 as one ensemble; avenue-style median, not a separate point"
+  }
+ ],
+ "blocked": [
+  {
+   "id": "phx_b01",
+   "name": "Phoenix's first palm (Clara Evans, 234 W Monroe, seed from 1879)",
+   "reason": "Gone; site is now a parking lot or apartments (12News, historyadventuring.com)"
+  }
+ ]
+}

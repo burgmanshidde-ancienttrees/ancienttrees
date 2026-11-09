@@ -1,0 +1,76 @@
+{
+ "leads": [
+  {
+   "name": "Hyde Memorial State Park, Engelmann spruce 123 ft / 97 in girth, 35.7906,-105.8079",
+   "status": "lead",
+   "reason": "single volunteer measurement (Native Tree Society treesdb 317997, Elijah Whitcomb 2024-07-18, GPS 35 47.434 N -105 48.472 W), a forest tree a visitor cannot tell apart, no age; also Engelmann spruce 135.5 ft/75 in (317999), Douglas-fir 90.8 ft/104 in (318000)",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "Capitol grounds: two trios of giant sequoias, twisted juniper",
+   "status": "lead",
+   "reason": "only a blog and a tourism line (Clay Buchanan Memorial Gardens) name them; no planting year or size. Needs the Capitol Art Foundation or General Services tree list.",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "Cottonwood at the start of Canyon Road (bronze boys-climbing-a-tree statue at its base)",
+   "status": "lead",
+   "reason": "photo caption only (Jean-Michel Rendu), no age or source",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "Santa Fe Plaza cottonwoods and Santa Fe River Park aging cottonwoods",
+   "status": "lead",
+   "reason": "New Mexican 2019 says the oldest city-cared trees are on the Plaza and in the historic district but names none, no ages. City inventory (pg-cloud.com/NewMexico/?scenario=SantaFeTrees) covers parks, downtown being added in 2025; contact Municipal Tree Board.",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "El Rancho de las Golondrinas, hundred-year-old cottonwoods",
+   "status": "lead",
+   "reason": "one promotional line (TABLE magazine 2025), no individual tree",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "Randall Davey Audubon Center old fruit trees",
+   "status": "lead",
+   "reason": "2008 interview says early settlers planted fruit trees; no dates, no specific tree",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "NM Big Tree black walnut 53 ft / 120 in, Santa Fe Canyon Rd (Carol Stodgel 2005)",
+   "status": "lead",
+   "reason": "2020 NM Big Tree row, no coordinates, no access line, not seen since 2005; could be private",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Sena Plaza cottonwood 'Willy', Palace Ave",
+   "status": "blocked",
+   "reason": "about 100 years old, felled August 2019. Dead.",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "NM Big Tree rows for Santa Fe County: giant sequoia (1980), globe willow, pinyon pines (2016 champion), horse chestnut 'Dead'",
+   "status": "blocked",
+   "reason": "marked private property or dead in the 2020 database",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  },
+  {
+   "name": "El Zaguán black walnut, east courtyard",
+   "status": "blocked",
+   "reason": "died about 2008 per New Mexican 2013, milled",
+   "source": "verify pass 2026-11-04 (Santa Fe)",
+   "notes_file": "data/research/santa-fe-notes.md"
+  }
+ ]
+}

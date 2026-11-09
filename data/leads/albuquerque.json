@@ -1,0 +1,62 @@
+{
+ "leads": [
+  {
+   "name": "Richard Cordova Rio Grande Cottonwood, national champion 2013, Albuquerque",
+   "status": "lead",
+   "reason": "NM Big Tree database (2020): 84 ft, 393 in circumference, 83 ft spread, 498 pts, nominated 8/1/12, Bernalillo, listed 'Private Property - Edith'. KRWG/KUNM 2013 say it stands on Mr Cordova's land. Private; no coordinate. Lead only unless seen from public ground.",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  },
+  {
+   "name": "Ricardo Berry multi-trunked Rio Grande Cottonwood, state champion (2017 nomination), Bernalillo County",
+   "status": "lead",
+   "reason": "NM Big Tree database (2020): 68 ft, 352 in, 80 ft spread, 440 pts, 1/11/17; location 'Likely Middle Rio Grande Conservation District - GPS and detailed directions' (not in the PDF, so possibly publicly reachable bosque ditch land). Request directions from NM State Forestry (505-345-2200 ext 104) for a pin; no photo or exact pin in reach.",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  },
+  {
+   "name": "UNM largest tree: Siberian Elm over 80 ft, and UNM dawn redwood west of Scholes Hall",
+   "status": "lead",
+   "reason": "Named on UNM timeline page and in arboretum tour listings, but no coordinate or tree record readable (concept3d tour map and unm.treekeepersoftware.com are JS-rendered). Needs a browser session on the UNM Rockstar Trees tour.",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  },
+  {
+   "name": "Old Church cottonwood, Corrales (Corrales Road at the Old San Ysidro Church)",
+   "status": "lead",
+   "reason": "Corrales Comment 2022-11-29 recalls a historic cottonwood at the Old Church that dropped limbs; no age, current status or coordinate. Check if still standing.",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  },
+  {
+   "name": "Rio Grande Nature Center State Park cottonwood stands (Albuquerque, Candelaria Rd)",
+   "status": "lead",
+   "reason": "Frommer's says stands of 100-year-old cottonwoods; no survey, no individual tree. Stand not a collectible point.",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  },
+  {
+   "name": "Los Poblanos Historic Inn entrance cottonwoods, Los Ranchos de Albuquerque",
+   "status": "lead",
+   "reason": "Described as a tunnel of enormous cottonwoods lining the drive (Islands, Sunset); no age or measurement; inn grounds, public access to the drive/farm shop unclear. Avenue, not one tree.",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Albuquerque Civic Plaza Moon Tree (Douglas fir, planted 1976)",
+   "status": "blocked",
+   "reason": "dead; died around 1996 after being dug up for the Civic Plaza remodel (NASA NSSDCA moon tree page).",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  },
+  {
+   "name": "Catalpa, Redbud, Sycamore and other NM Big Tree entries in Albuquerque",
+   "status": "blocked",
+   "reason": "all listed as private property (NM Big Tree database 2020), no public access.",
+   "source": "verify pass 2026-11-04 (albuquerque)",
+   "notes_file": "data/research/albuquerque-notes.md"
+  }
+ ]
+}

@@ -3832,6 +3832,11 @@ coordinates and no licence sentence could be read. No proving sentence, so
 nothing imported. Tempe's tree inventory is CC BY 4.0 point data but is a full
 street-tree inventory, which layer 2 does not take. No Phoenix or Scottsdale
 heritage-tree dataset found.
+Re-read 2026-11-04: the 2022 report, mirrored at air.arizona.edu, is a
+highlights booklet of 23 new entries (species, county, owner in words,
+circumference, height, crown spread, an AZ id), not the full list, and carries
+no licence, copyright or reuse sentence and no coordinates. Still no proving
+sentence: a finding aid for facts only, never an import.
 
 ## Mapillary as a photo source: tried 2026-10-23, verdict "a life check, rarely a photograph"
 

@@ -1,0 +1,90 @@
+{
+ "leads": [
+  {
+   "name": "Park Avenue olive row, University of Arizona",
+   "reason": "Avenue/row: ~30 old olives (GIS accessions 759-766, 1882-1902 etc, planted late 1800s by Prof. Robert Forbes, Park Ave and N Rogers Way). Not one collectible point; possibly one marked specimen, pick via a photo. Pins in arboretum GIS.",
+   "source": "https://arboretum.arizona.edu/university-arizona-heritage-trees"
+  },
+  {
+   "name": "Campus baobab (accession 4386)",
+   "reason": "Planted c.1980 from Madagascar seed; state champion/Great Tree 2002 but young (45 yrs). Pin 32.232588,-110.951146.",
+   "source": "https://www.arboretum.arizona.edu/great-trees-arizona"
+  },
+  {
+   "name": "Campus calabash (1780) and rock fig (3137)",
+   "reason": "Small, young (1970s/1980s) champions; weak 'worth the walk'. Pins 32.230552,-110.948602 and 32.230832,-110.949596.",
+   "source": "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum"
+  },
+  {
+   "name": "Tucson Presidio fig, Territorial Courtyard, 196 N Court Ave",
+   "reason": "Possibly rooted in Soledad Jacome's patio garden, 'more than a century'; courtyard inside the paid Presidio museum, no coordinate or age figure; need pin and access hours.",
+   "source": "https://tucsonpresidio.blogspot.com/2020/07/rooted-in-tucsons-past-fig-tree-2020.html"
+  },
+  {
+   "name": "Great Mesquite (velvet mesquite, Great Trees of the Old Pueblo)",
+   "reason": "Sign says over 200 years; park not identified in anything fetched. Find location (Trees for Tucson tour list).",
+   "source": "https://tucson.com/news/science/environment/article_2051cadd-0120-5e19-b4b2-4a5081dc805e.html (not read, 429)"
+  },
+  {
+   "name": "Champion Aleppo pine, Pima County church (2021 state report AZ0102 or the 95-inch tree; report layout ambiguous)",
+   "reason": "Owner is a Tucson church, open ground unknown, no address; report text and figures misalign across pages. 2023 report names an Aleppo pine on East Richards Row (nominated J. Janecek): unplaced.",
+   "source": "out/tmp/sw/dl/az2022.txt and dffm 2023 report"
+  },
+  {
+   "name": "Tohono Chul Park honey mesquite (2019 state co-champion)",
+   "reason": "Park is paid entry; tree position and figures not seen in any fetched page (report text jumbled).",
+   "source": "https://air.arizona.edu/sites/default/files/2023-05/2022%20Magnificent%20Tree%20Annual%20Report.pdf"
+  },
+  {
+   "name": "Common fig, Pima County state champion/heritage (AZ0101, 2020)",
+   "reason": "No location published (county only).",
+   "source": "out/tmp/sw/dl/az2022.txt"
+  },
+  {
+   "name": "Mission San Xavier del Bac trees; Fort Lowell Park; Barrio Viejo",
+   "reason": "Searched: no tree with a source for age or position found.",
+   "source": "web searches 2026-11-04"
+  },
+  {
+   "name": "UA jacaranda, accession 3522",
+   "latitude": 32.230407,
+   "longitude": -110.955086,
+   "reason": "Arboretum GIS comment says 'National Register of Big Trees' but American Forests registry not confirmed and the Arizona forestry page lists jacaranda as 'No Champion'; no size, age or story found. Unconfirmed champion claim, no reason to see it.",
+   "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
+   "date": "2026-11-04"
+  },
+  {
+   "name": "UA guajillo (Berlandier's acacia), accession 8219",
+   "latitude": 32.229474,
+   "longitude": -110.953876,
+   "reason": "Arboretum GIS comment says 'National Register of Big Trees' but not confirmed on any fetched champion page; no size or story. Unconfirmed.",
+   "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
+   "date": "2026-11-04"
+  },
+  {
+   "name": "UA kapok (Ceiba aesculifolia), accession 2476",
+   "latitude": 32.22898,
+   "longitude": -110.95324,
+   "reason": "Heritage tree planted 1979 from seed Warren Jones collected in Sonora, night-blooming, bat-pollinated; no size or champion claim, young, weak reason to visit. Lead only.",
+   "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
+   "date": "2026-11-04"
+  },
+  {
+   "name": "UA golden shower (Cassia fistula), accession 1539",
+   "latitude": 32.231234,
+   "longitude": -110.952879,
+   "reason": "Heritage page: only one in Tucson, planted late 1980s, west of Nugent; rarity only, young. Lead only.",
+   "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
+   "date": "2026-11-04"
+  },
+  {
+   "name": "UA common fig, accession 3398 (installed 1950 per GIS)",
+   "latitude": 32.229621,
+   "longitude": -110.955861,
+   "reason": "GIS flags heritage but arboretum heritage page covers only the salvaged fig 1308 (tus_006); no page text for 3398 found, no story. Lead only.",
+   "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
+   "date": "2026-11-04"
+  }
+ ],
+ "blocked": []
+}

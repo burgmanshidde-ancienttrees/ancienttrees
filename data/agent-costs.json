@@ -14213,6 +14213,70 @@
       {
         "date": "2026-11-04",
         "kind": "verify",
+        "target": "tucson + tubac",
+        "tokens": 137400,
+        "trees": 9,
+        "note": "UA Campus Arboretum GIS gives per-tree points with heritage and champion flags. Tubac and Tumacacori nothing: the orchard was replanted in 2007."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "tucson follow-up (UA flagged accessions)",
+        "tokens": 122869,
+        "trees": 5,
+        "note": "tus_010..014. The jacaranda and guajillo national-champion claims rest on a GIS comment only: leads."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "sedona + flagstaff + prescott",
+        "tokens": 193575,
+        "trees": 5,
+        "note": "Prescott 3, Flagstaff 1, Sedona 1. Hotshots juniper and Skull Valley cottonwood have no pin: leads."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "santa-fe",
+        "tokens": 150781,
+        "trees": 3,
+        "note": "All flagged, all approximate. NM Big Tree rows for the county are private or dead."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "albuquerque",
+        "tokens": 146755,
+        "trees": 1,
+        "note": "Tight Grove only. The national champion cottonwood is private; bosque stands are not single trees."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "phoenix",
+        "tokens": 146350,
+        "trees": 2,
+        "note": "Phoenix proper none. One tree each in Scottsdale and Glendale, under their own place."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "denver + boulder",
+        "tokens": 174753,
+        "trees": 6,
+        "note": "Boulder 5 from the city's notable-tree story map, Denver 1."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
+        "target": "denver follow-up (Fairmount)",
+        "tokens": 93544,
+        "trees": 0,
+        "note": "Wall: one numbered map with no key, no champions, no coordinates."
+      },
+      {
+        "date": "2026-11-04",
+        "kind": "verify",
         "target": "philadelphia (northwest: morris, wissahickon, germantown)",
         "tokens": 118496,
         "trees": 0,
