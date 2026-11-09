@@ -21,6 +21,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-11-09, 07:00 window (night run)
+
+- Rung 1 clear. Rung 2: the same two open app BUG rows (Discover ambassador seat, map pin blink), still needing the Mac and simulator; left open. Health also wants a deploy dispatch (main is ahead of the live build).
+- Shelf under the write floor. Refill: San Francisco verify pass, 0 new trees (nine unmined rows already judged; Big Trees champion `ca-bigtrees-442` has no second source, stays a lead). Wall. The SF claim stays until sfo_012, 014, 015 are written.
+- Scouting RETRY, Hallstatt: fetched the Upper Austria Naturdenkmaeler INSPIRE GML (446 polygon sites, names and Bescheid dates, no species or measurements). It names real trees near Hallstatt, Bad Goisern and Bad Ischl (yews, a thousand-year lime, lime groups). Not imported: it needs the licence line in OPEN_DATA_SURVEY.md and an EPSG:3045 importer first. Both written into data/register-scouting.json as the next step.
+- For Hidde: nothing needing him.
+
 ## 2026-11-09, 01:22 window (night run)
 
 - Rung 1 clear (no photographs, no notes). Rung 2: fixed two web error types from old browsers (Safari before 14 `matchMedia.addListener`, browsers without `<dialog>.showModal`); invisible change, commit 303f6bab9. Not built or smoke-run here (no site build in this runner).

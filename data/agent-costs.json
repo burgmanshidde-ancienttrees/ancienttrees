@@ -5,6 +5,22 @@
       {
         "date": "2026-11-09",
         "kind": "verify",
+        "target": "san-francisco",
+        "tokens": 74000,
+        "trees": 0,
+        "note": "Fifth pass on the register: nine unmined rows already judged (published or private yards). Big Trees champion ca-bigtrees-442 has no second source, stays a lead. Wall."
+      },
+      {
+        "date": "2026-11-09",
+        "kind": "scout",
+        "target": "hallstatt (Upper Austria Naturdenkmaeler)",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Session work: fetched the OOe INSPIRE GML (446 sites, polygons, names, no species); tree-named sites near Hallstatt/Bad Goisern/Bad Ischl listed in register-scouting.json. Licence line and importer still to do."
+      },
+      {
+        "date": "2026-11-09",
+        "kind": "verify",
         "target": "vienna",
         "tokens": 90000,
         "trees": 0,

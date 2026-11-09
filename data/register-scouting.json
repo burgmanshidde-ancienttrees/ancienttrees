@@ -426,10 +426,11 @@
    "place": "Hallstatt",
    "country": "Austria",
    "status": "stalled",
-   "note": "2026-10-16: no tree-level Naturdenkmal list with coordinates for Hallstatt in web search (Land OOe publishes a 1989 printed booklet, Unsere Naturdenkmale, and a 2011 biotope report, neither with coordinates). The Upper Austria CC BY natural-monument dataset noted under Steiermark (data.europa.eu) is the route (confirmed to exist 2026-10-16 as data.europa.eu dataset land-ooe_naturdenkmaler-oberosterreich, High Value Dataset; not yet downloaded): fetch it and check for points inside Hallstatt.",
+   "note": "2026-11-09: fetched the Upper Austria Naturdenkmaeler dataset (https://www.doris.at/service/metadaten/daten/VWNaturdenkmaeler_ETRS89TM33N.zip, INSPIRE ProtectedSite GML, EPSG:3045, 446 features, polygons with a site name and a legal Bescheid date, no species, age or girth columns). It does hold tree-named sites around Hallstatt/Bad Goisern/Bad Ischl: Eibe (Taxus baccata) at Bad Goisern parish church (2006), Eibe 2.4 km south of Hallstatt centre (1991), Dorfeibe, Eibe (1960), Tausendjaehrige Linde, Sterzen's Abendsitz 7 Linden, 3 Linden, Sommerlinde in Bachgasse (Bad Ischl). Still to do before import: record the licence proving sentence in OPEN_DATA_SURVEY.md (data.europa.eu lists it as a High Value Dataset; confirm CC BY 4.0 on the DORIS page), convert polygon centroids from EPSG:3045 (northing, easting) to WGS84 (approximate pins), then a verify pass per tree for species, age and life check. Next: write scripts/import_ooe_naturdenkmaeler.py. Stalled only on the licence line and the importer.",
    "covers": [
     "Hallstatt"
-   ]
+   ],
+   "retried": "2026-11-09"
   },
   {
    "place": "Sweden",
