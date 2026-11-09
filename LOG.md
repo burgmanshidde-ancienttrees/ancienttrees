@@ -12,6 +12,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-08 session: Android, first working slice
+
+- **New in `android/`:** native Kotlin and Compose app on MapLibre. Reads the same feeds as the iPhone with the iPhone's bundled catalogue as floor (read from ios/.../Data, no second copy); map with pins and dots under the Airbnb rule; a tapped tree's card, then its page with story, credit, Take me there, Getting there; strings in eight languages. New product dependency beyond AndroidX and Compose: only MapLibre. Images and JSON use what Android ships.
+- **Verified:** android.yml (changes under android/ only) builds the app and passes the unit tests on Linux, including the app's parser against the live feeds and the pin numbers against lib/map.ts.
+- **Not verified:** nothing has run on a device or emulator, so the look, taps, and loading the 11.5 MB catalogue on a cheap phone are unknown.
+- **Gaps for the next sessions:** location and trees near me (the map opens on Europe), species shapes in the pins, the same-spot stack (one spot, two trees), brand font, walks, sign-in, collect, season, Play Store. No gradlew or wrapper jar committed; CI installs Gradle 8.14.3.
+- **For Hidde:** Android Studio only when asked for the first look; Play account and closed test stay his.
+
 ## 2026-11-08 session: build 41 archived
 
 - **In the Organizer, 1.0.4 (41), from 4a8884293 with ios.yml green on that commit** (run 42484867118) and the catalogue refreshed to 4,690 trees and 407 walks. Carries branch claude/gifted-cerf-cbp95i (merged to main) and New from visitors' name at 44 points to tap (the iOS 18 floor's last SMALL; appfit 0 findings on the SE, iOS 18). The floor job does not run on a push, so it is first read on the next schedule.
