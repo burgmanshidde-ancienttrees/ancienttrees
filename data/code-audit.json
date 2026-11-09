@@ -234,6 +234,16 @@
    "found_by": "hidde",
    "no_test_reason": "A brief visual fade of map symbols in the first seconds after a fresh install; UI tests read the view tree, not rendered map frames. Hidde confirmed it gone on build 41, 2026-11-09.",
    "fixed_in": "38d54ae44"
+  },
+  {
+   "id": "ESC-2026-11-09-discover-s-ambassador-row-does-nothing-w",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "ios/AncientTrees/AncientTrees/Screens/AmbassadorBadge.swift",
+   "summary": "Discover's ambassador row does nothing when tapped on Hidde's phone on build 41, signed in and signed out; the row shows normally with its arrow. All simulator walks open the sheet (Debug and Release, fake and real test account, moving GPS)",
+   "first_seen": "2026-11-09",
+   "status": "open",
+   "found_by": "hidde"
   }
  ]
 }
