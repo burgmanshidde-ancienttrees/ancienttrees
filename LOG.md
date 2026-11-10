@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 night run, second attempt
+
+- Write pass: 2 Vienna trees merged (vie_060, vie_061, app-only). 15 pending trees refused on standing holds (rule 10, no trunk named, duplicates); the 7 READY leads need a verify pass first.
+- Verify pass on Sintra: one flagged tree, sin_009 (Moreton Bay fig, Cascais, approximate pin) in data/research/sintra-verified.json, not yet written (under six candidates). The Sintra claim stands until it is merged.
+- Coimbra claim stands: cbr_007 is verified and unwritten.
+- Housekeeping: stale duplicate entries in several research files (Cardiff, Cyprus, Tenerife, Ronda) keep `passcheck.py --pending` pointing at a held shelf.
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-11](archive/LOG-2026-11.md)
