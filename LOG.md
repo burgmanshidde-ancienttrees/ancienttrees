@@ -11,6 +11,15 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 Android: Continue with Apple
+
+- Android's sign-in sheet now has the iPhone's dark "Continue with Apple" pill, first, Apple's logo at the leading edge (the website's own paths), then Google and email, 10 apart, in all eight languages (the website's words). Checked on the emulator: the sheet matches the iPhone's.
+- Route: Supabase's ordinary Apple OAuth redirect, the website's route, opened in a Custom Tab (androidx.browser, Android's own in-app browser, the iPhone's ASWebAuthenticationSession), back on ancienttrees://auth-callback. Google moved into the same Custom Tab. So an account made with Apple on an iPhone opens on Android: the web Services ID is grouped with the app, so Apple gives the same account id.
+- Configuration checked, nothing for Hidde: `authorize?provider=apple&redirect_to=ancienttrees://auth-callback` answers 302 to appleid.apple.com (Services ID app.ancienttrees.web), and ancienttrees://auth-callback is already on the redirect allow-list (the iPhone's Google route uses it).
+- Not tested end to end: that needs a real Apple ID in the Custom Tab, and the emulator's Chrome stopped at its first-run screen. The tap opening Chrome on Supabase's URL is checked. First real check: Hidde's own Apple account on an Android phone.
+- A first Apple sign-in on Android gets a generated profile name, as the website's redirect fallback does (the redirect carries no name); Edit profile changes it.
+- data/android-parity.json: Apple is off the forced list; the "Sign in" entry now names only the real difference (a Custom Tab instead of Apple's own sheet).
+
 ## 2026-11-10 daily publish (scheduled task): 25 trees into the app
 
 - **What went on main (490dc095d), app only under APP FIRST, no web page or place page:** Cleveland 5, Ann Arbor 3, Lansing 2, Sacramento 2, Santa Cruz 2 (build_source_led_2026_11_09.py), ten churchyard yews in Surrey, Sussex and Hampshire, one place each (Crowhurst, Tandridge, Wilmington, Corhampton, Stedham, Dunsfold, Charlwood, Coldwaltham, Tangmere, Itchen Abbas), and the Eastham Yew as Liverpool's lvp_004 (build_uk_under_ten.py limited to Liverpool, out/tmp/build_uk_under_ten_liverpool.py). None has a photograph. city_names and preflight 0 problems; the 25 is this task's own limit.
