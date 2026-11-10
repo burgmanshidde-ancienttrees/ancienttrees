@@ -21,6 +21,7 @@
     <string name="signin_sub_named">Inicia sesión para guardar %1$s. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.</string>
     <string name="signin_placeholder">tu@ejemplo.com</string>
     <string name="signin_send">Envíame un enlace de acceso</string>
+    <string name="signin_apple">Continuar con Apple</string>
     <string name="signin_google">Continuar con Google</string>
     <string name="signin_email">Continuar con email</string>
     <string name="signin_fine">Al continuar aceptas las &lt;a href=\"https://ancienttrees.app/terms\"&gt;Condiciones&lt;/a&gt; y la &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Privacidad&lt;/a&gt;.</string>
@@ -44,6 +45,7 @@
     <string name="problem_send">No hemos podido enviarlo ahora. Inténtalo dentro de un minuto.</string>
     <string name="problem_link">Ese enlace ya se ha usado o ha caducado. Pide uno nuevo.</string>
     <string name="problem_google">El inicio con Google no ha funcionado. Usa tu email por ahora.</string>
+    <string name="problem_apple">El inicio con Apple no ha funcionado. Usa tu email por ahora.</string>
     <!-- /sign-in -->
     <!-- collect -->
     <string name="seen_it">Coleccionar este árbol</string>

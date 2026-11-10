@@ -22,6 +22,7 @@
     <string name="signin_sub_named">Sign in to save %1$s. An account keeps what you collect, on every device you use.</string>
     <string name="signin_placeholder">you@example.com</string>
     <string name="signin_send">Email me a sign-in link</string>
+    <string name="signin_apple">Continue with Apple</string>
     <string name="signin_google">Continue with Google</string>
     <string name="signin_email">Continue with email</string>
     <string name="signin_fine">By continuing you agree to the &lt;a href=\"https://ancienttrees.app/terms\"&gt;Terms&lt;/a&gt; and the &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Privacy&lt;/a&gt; notice.</string>
@@ -45,6 +46,7 @@
     <string name="problem_send">We could not send that just now. Try again in a minute.</string>
     <string name="problem_link">That sign-in link has already been used, or it has expired. Ask for a new one.</string>
     <string name="problem_google">Google sign-in did not work. Use your email for now.</string>
+    <string name="problem_apple">Apple sign-in did not work. Use your email for now.</string>
     <!-- /sign-in -->
     <!-- collect -->
     <string name="seen_it">Collect this tree</string>

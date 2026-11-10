@@ -1,5 +1,5 @@
 // Who is signed in, decided by the server (hard rule 11). The twin of ios
-// Kit/Account.swift: an emailed sign-in link and Google, both landing on
+// Kit/Account.swift: an emailed sign-in link, Apple and Google, all landing on
 // ancienttrees://auth-callback; sign out tells the server; deletion calls the same
 // delete_user() the website and the iPhone call.
 //
@@ -41,7 +41,7 @@ sealed class SignIn {
 }
 
 /** Problems a person can act on, as resource-free codes the screens word. */
-enum class Problem { NOT_AN_EMAIL, COULD_NOT_SEND, LINK_USED, GOOGLE_OFF }
+enum class Problem { NOT_AN_EMAIL, COULD_NOT_SEND, LINK_USED, GOOGLE_OFF, APPLE_OFF }
 
 class Account(context: Context) {
     private val prefs = context.applicationContext.getSharedPreferences("auth", Context.MODE_PRIVATE)
@@ -111,14 +111,41 @@ class Account(context: Context) {
         }
     }
 
-    // MARK: Google, in the phone's browser
+    // MARK: Apple and Google, in a Custom Tab
 
-    fun openGoogle(context: Context) {
+    /** Which provider the last Custom Tab was opened for, so a refusal names the right one. */
+    private var lastProvider = "google"
+
+    fun openGoogle(context: Context) = openProvider(context, "google")
+
+    /**
+     * SIGN IN WITH APPLE ON ANDROID (2026-11-10): Supabase's ordinary Apple OAuth
+     * redirect, the route the website takes (signin-js.ts atOAuth), so an account
+     * made with Apple on an iPhone opens on an Android phone too. Apple answers
+     * Supabase, Supabase answers ancienttrees://auth-callback, the iPhone's own
+     * callback, already on the redirect allow-list. AllTrails, Airbnb and Strava
+     * offer Apple on Android the same way. The redirect carries no name, so a
+     * first Apple sign-in here gets a generated profile name, as the website's
+     * fallback does; Edit profile changes it.
+     */
+    fun openApple(context: Context) = openProvider(context, "apple")
+
+    /**
+     * A CUSTOM TAB, Android's in-app browser for sign-in (the iPhone's
+     * ASWebAuthenticationSession): the page opens over the app and the callback
+     * brings the person straight back. With no browser that does Custom Tabs, the
+     * phone's browser takes the same URL.
+     */
+    private fun openProvider(context: Context, provider: String) {
         problem = null
-        val back = URLEncoder.encode(Supa.CALLBACK, "UTF-8")
-        val url = "${Supa.URL_BASE}/auth/v1/authorize?provider=google&redirect_to=$back"
+        lastProvider = provider
+        val url = Uri.parse(authorizeUrl(provider))
         runCatching {
-            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            androidx.browser.customtabs.CustomTabsIntent.Builder().setShowTitle(true).build().apply {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }.launchUrl(context, url)
+        }.onFailure {
+            runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, url).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
         }
     }
 
@@ -134,7 +161,7 @@ class Account(context: Context) {
         if (refresh.isNullOrEmpty()) {
             if (f.containsKey("error") || f.containsKey("error_description")) {
                 state = SignIn.SignedOut
-                problem = Problem.GOOGLE_OFF
+                problem = if (lastProvider == "apple") Problem.APPLE_OFF else Problem.GOOGLE_OFF
             }
             return false
         }
@@ -215,6 +242,10 @@ class Account(context: Context) {
 
     companion object {
         private const val KEY_REFRESH = "session.refresh"
+
+        /** Supabase's authorize URL for one provider, coming back to the app's callback. */
+        fun authorizeUrl(provider: String): String =
+            "${Supa.URL_BASE}/auth/v1/authorize?provider=$provider&redirect_to=" + URLEncoder.encode(Supa.CALLBACK, "UTF-8")
 
         /** Supabase's token reply; null when it carries no tokens. */
         fun parse(body: String, now: Long = System.currentTimeMillis()): Session? = runCatching {

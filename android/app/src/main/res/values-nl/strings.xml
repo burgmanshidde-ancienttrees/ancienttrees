@@ -21,6 +21,7 @@
     <string name="signin_sub_named">Log in om %1$s te bewaren. Met een account houd je wat je verzamelt, op elk apparaat dat je gebruikt.</string>
     <string name="signin_placeholder">jij@voorbeeld.nl</string>
     <string name="signin_send">Mail me een inloglink</string>
+    <string name="signin_apple">Doorgaan met Apple</string>
     <string name="signin_google">Doorgaan met Google</string>
     <string name="signin_email">Verdergaan met e-mail</string>
     <string name="signin_fine">Als je doorgaat ga je akkoord met de &lt;a href=\"https://ancienttrees.app/terms\"&gt;Voorwaarden&lt;/a&gt; en de &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Privacyverklaring&lt;/a&gt;.</string>
@@ -44,6 +45,7 @@
     <string name="problem_send">Dat lukte nu niet. Probeer het over een minuut opnieuw.</string>
     <string name="problem_link">Die inloglink is al gebruikt of verlopen. Vraag een nieuwe aan.</string>
     <string name="problem_google">Inloggen met Google lukte niet. Gebruik voorlopig je e-mail.</string>
+    <string name="problem_apple">Inloggen met Apple lukte niet. Gebruik voorlopig je e-mail.</string>
     <!-- /sign-in -->
     <!-- collect -->
     <string name="seen_it">Deze boom verzamelen</string>

@@ -21,6 +21,7 @@
     <string name="signin_sub_named">Melde dich an, um %1$s zu speichern. Ein Konto behält, was du sammelst, auf jedem Gerät, das du benutzt.</string>
     <string name="signin_placeholder">du@beispiel.de</string>
     <string name="signin_send">Schick mir einen Anmeldelink</string>
+    <string name="signin_apple">Weiter mit Apple</string>
     <string name="signin_google">Weiter mit Google</string>
     <string name="signin_email">Weiter mit E-Mail</string>
     <string name="signin_fine">Wenn du fortfährst, stimmst du den &lt;a href=\"https://ancienttrees.app/terms\"&gt;AGB&lt;/a&gt; und der &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Datenschutzerklärung&lt;/a&gt; zu.</string>
@@ -44,6 +45,7 @@
     <string name="problem_send">Das ließ sich gerade nicht senden. Versuch es in einer Minute noch einmal.</string>
     <string name="problem_link">Dieser Anmeldelink wurde schon benutzt oder ist abgelaufen. Fordere einen neuen an.</string>
     <string name="problem_google">Die Anmeldung mit Google hat nicht geklappt. Nutze vorerst deine E-Mail.</string>
+    <string name="problem_apple">Die Anmeldung mit Apple hat nicht geklappt. Nutze vorerst deine E-Mail.</string>
     <!-- /sign-in -->
     <!-- collect -->
     <string name="seen_it">Diesen Baum sammeln</string>

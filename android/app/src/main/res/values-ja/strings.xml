@@ -20,6 +20,7 @@
     <string name="signin_sub_named">サインインすると%1$sを保存できる。アカウントがあれば、集めた木は使うどの端末にも残る。</string>
     <string name="signin_placeholder">sample@example.com</string>
     <string name="signin_send">サインインのリンクを送る</string>
+    <string name="signin_apple">Appleで続ける</string>
     <string name="signin_google">Googleで続ける</string>
     <string name="signin_email">メールで続ける</string>
     <string name="signin_fine">続けると&lt;a href=\"https://ancienttrees.app/terms\"&gt;利用規約&lt;/a&gt;と&lt;a href=\"https://ancienttrees.app/privacy\"&gt;プライバシー&lt;/a&gt;に同意したことになる。</string>
@@ -43,6 +44,7 @@
     <string name="problem_send">いま送信できませんでした。1分後にもう一度お試しください。</string>
     <string name="problem_link">このサインインリンクは使用済みか、期限切れです。新しいリンクをリクエストしてください。</string>
     <string name="problem_google">Googleでのサインインがうまくいきませんでした。今はメールをお使いください。</string>
+    <string name="problem_apple">Appleでのサインインがうまくいきませんでした。今はメールをお使いください。</string>
     <!-- /sign-in -->
     <!-- collect -->
     <string name="seen_it">この木を集める</string>

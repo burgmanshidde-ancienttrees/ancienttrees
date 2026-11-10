@@ -49,6 +49,8 @@ dependencies {
     implementation("androidx.core:core-ktx:1.16.0")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.9.4")
     implementation("androidx.exifinterface:exifinterface:1.3.7")
+    // Custom Tabs: Android's in-app browser for Apple and Google sign-in (Account.kt).
+    implementation("androidx.browser:browser:1.8.0")
     // MapLibre's attribution dialog is an AppCompat dialog.
     implementation("androidx.appcompat:appcompat:1.7.0")
 
