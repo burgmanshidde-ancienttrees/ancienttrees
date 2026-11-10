@@ -29,6 +29,14 @@ object Submission {
             token,
         )
 
+    /** Submissions.offer: a tree only you have, sent when its draft is saved. */
+    suspend fun tree(city: String, sightingId: String, locationHint: String, why: String, token: String?): Boolean =
+        post(
+            JSONObject().put("kind", "tree").put("city", city).put("tree", sightingId)
+                .put("location_hint", locationHint).put("why", why).put("page", "app:collect"),
+            token,
+        )
+
     private suspend fun post(body: JSONObject, token: String?): Boolean =
         Supa.send(PATH, token = token, body = body.toString(), prefer = "return=minimal").ok
 

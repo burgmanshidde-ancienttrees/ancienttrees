@@ -34,6 +34,21 @@ data class LaunchArgs(val args: List<String>) {
     /** -photo: the opened tree's photograph full screen (TreeDetail.swift). */
     val photo: Boolean get() = "-photo" in args
 
+    /** -collect opens the collect flow; -collect-place and the rest open its steps (Launch.swift). */
+    val collectOpen: Boolean get() = "-collect" in args || "-spot" in args || "-add" in args
+    val collect: app.ancienttrees.ui.CollectLaunch
+        get() = app.ancienttrees.ui.CollectLaunch(
+            place = "-collect-place" in args,
+            identify = "-collect-identify" in args,
+            ticked = "-collect-ticked" in args,
+            voted = "-collect-voted" in args,
+            compare = "-collect-compare" in args,
+            describe = "-collect-describe" in args,
+        )
+
+    /** -signed-in: the sweep's stand-in for an account, debug builds only; nothing is sent without a real one. */
+    val signedIn: Boolean get() = "-signed-in" in args
+
     /** A fixed position, as the iPhone's sweep stands in Athens without a real fix. */
     val at: Pair<Double, Double>?
         get() = value("-at")?.split(",")?.takeIf { it.size == 2 }?.let { p ->

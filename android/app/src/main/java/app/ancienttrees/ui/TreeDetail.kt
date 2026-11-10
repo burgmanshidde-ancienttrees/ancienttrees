@@ -75,6 +75,7 @@ import androidx.compose.material.icons.outlined.IosShare
 import androidx.compose.material.icons.outlined.LocationCity
 import androidx.compose.material.icons.outlined.LocationOff
 import androidx.compose.material.icons.outlined.PhotoCamera
+import androidx.compose.material.icons.outlined.PhotoLibrary
 import androidx.compose.material.icons.outlined.Public
 import androidx.compose.material.icons.outlined.ThumbUp
 import androidx.compose.material.icons.outlined.Visibility
@@ -153,6 +154,10 @@ class TreePageActions(
     val onGo: (SearchHit) -> Unit,
     /** Signed out: the sign-in sheet, then [then] once signed in. */
     val onNeedsSignIn: (then: () -> Unit) -> Unit,
+    /** Collect from the photo library, then the flow at the photograph (CollectSheet.kt). */
+    val onCollectFromLibrary: () -> Unit = {},
+    /** The add-photo controls: the collect flow's intro about adding a photo. */
+    val onAddPhoto: (() -> Unit)? = null,
 )
 
 /** The blue the pin's own ticket mark wears (TreeDetail.ticketBlue). */
@@ -267,7 +272,7 @@ private fun TreeDetailInner(
     LaunchedEffect(Unit) { counts.loadOnce() }
     LaunchedEffect(signedIn) { votes.load(if (signedIn) account.fresh()?.accessToken else null) }
 
-    fun startAddPhoto() = actions.onCollect()
+    fun startAddPhoto() = (actions.onAddPhoto ?: actions.onCollect)()
     fun openCollectChoice() {
         if (!signedIn) actions.onNeedsSignIn { choosingCollect = true } else choosingCollect = true
     }
@@ -364,6 +369,10 @@ private fun TreeDetailInner(
                 SheetButton(stringResource(R.string.collect_camera), SheetKind.PRIMARY, Icons.Outlined.PhotoCamera) {
                     choosingCollect = false
                     actions.onCollect()
+                },
+                SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Icons.Outlined.PhotoLibrary) {
+                    choosingCollect = false
+                    actions.onCollectFromLibrary()
                 },
             ),
         )

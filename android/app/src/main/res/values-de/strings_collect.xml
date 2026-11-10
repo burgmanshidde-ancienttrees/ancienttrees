@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cf_add_photo">Foto hinzufügen</string>
+    <string name="cf_add_tree">Baum hinzufügen</string>
+    <string name="cf_add_this_tree">Diesen Baum hinzufügen</string>
+    <string name="cf_intro_photo">Dein Foto kommt auf die Seite dieses Baums.</string>
+    <string name="cf_intro">Fotografiere einen Baum, vor dem du stehst, und füge ihn deiner Sammlung hinzu.</string>
+    <string name="cf_take">Foto aufnehmen</string>
+    <string name="cf_choose">Aus deinen Fotos wählen</string>
+    <string name="cf_discard_title">Diesen Baum verwerfen?</string>
+    <string name="cf_discard_body">Das Foto und alles, was du eingetragen hast, geht verloren.</string>
+    <string name="cf_discard">Verwerfen</string>
+    <string name="cf_keep_editing">Weiter bearbeiten</string>
+    <string name="cf_where">Wo steht er?</string>
+    <string name="cf_place_reason">Dein Foto sagt nicht, wo es aufgenommen wurde. Zieh die Karte, bis die Nadel auf dem Baum sitzt.</string>
+    <string name="cf_tree_is_here">Der Baum steht hier</string>
+    <string name="cf_which">Welcher ist es?</string>
+    <string name="cf_tap_to_compare">Nicht sicher, welcher? Tippe auf %1$s zum Vergleichen.</string>
+    <string name="cf_blurb_yours">Du hast genau hier schon einmal einen Baum hinzugefügt. Ist es derselbe, kommt dein Foto dazu.</string>
+    <string name="cf_blurb_far">Keiner unserer Bäume ist nahe deinem Foto eingezeichnet. Das sind die nächsten auf unserer Karte. Ist es einer davon, liegt unsere Nadel daneben, und dein Foto hilft uns, sie zu korrigieren.</string>
+    <string name="cf_blurb_far_query">Keiner unserer Bäume ist nahe deinem Foto eingezeichnet. Ist es einer von unseren, liegt unsere Nadel daneben, und dein Foto hilft uns, sie zu korrigieren.</string>
+    <string name="cf_blurb_rough">Unsere Nadel ist bei einigen davon ungenau, deshalb können wir nicht sagen, welcher welcher ist. Wähle einen, wenn du es weißt, oder sag, dass du unsicher bist.</string>
+    <string name="cf_blurb_device">Du stehst zwischen Bäumen, die wir kartieren. Wähle den auf deinem Foto.</string>
+    <string name="cf_blurb_photo">Dein Foto wurde bei diesen Bäumen aufgenommen. Wähle den, den du fotografiert hast, oder sag, dass es keiner davon ist.</string>
+    <string name="cf_add_new">Neuen Baum hinzufügen</string>
+    <string name="cf_none_of_these">Es ist keiner davon</string>
+    <string name="cf_not_sure">Ich weiß nicht, welcher</string>
+    <string name="cf_work_it_out">Wir finden es anhand deines Fotos heraus</string>
+    <string name="cf_compare_named">%1$s vergleichen</string>
+    <string name="cf_search">Unsere Bäume nach Namen suchen</string>
+    <string name="cf_none_called">Keiner unserer Bäume heißt so.</string>
+    <string name="cf_rough_row">Unsere Nadel für diesen ist ungenau</string>
+    <string name="cf_thanks">Danke, das hilft</string>
+    <string name="cf_unsure_message">Wir finden anhand deines Fotos heraus, welcher Baum es ist, und dein Logbuch zeigt ihn, sobald wir es wissen.</string>
+    <string name="cf_done">Fertig</string>
+    <string name="cf_unsure_foot">Dicht beieinanderstehende Bäume bringen uns auch durcheinander, also sag einfach, wenn du unsicher bist.</string>
+    <string name="cf_how_find">Wie finde ich ihn?</string>
+    <string name="cf_pin_far">Unsere Nadel ist %1$s von dort entfernt, wo du dieses Foto gemacht hast. Ist es dieser Baum, zeigt uns dein Foto, wo er wirklich steht.</string>
+    <string name="cf_this_one">Das ist er</string>
+    <string name="cf_back_to_list">Zurück zur Liste</string>
+    <string name="cf_foot_nothing">Wir haben von diesem kein Foto, keine Beschreibung und nur eine ungenaue Nadel, deshalb können wir dir nicht helfen, sicher zu sein.</string>
+    <string name="cf_foot_rough">Unsere Nadel für diesen ist ungenau: Sie markiert den Ort, nicht den Stamm.</string>
+    <string name="cf_you_found">Du hast %1$s gefunden</string>
+    <string name="cf_photo_added">Foto zu %1$s hinzugefügt</string>
+    <string name="cf_pin_thanks">Danke für den Standort. Wir prüfen ihn und versetzen unsere Nadel.</string>
+    <string name="cf_worth">Hat sich der Weg gelohnt?</string>
+    <string name="cf_worth_yes">Ja, der Weg hat sich gelohnt</string>
+    <string name="cf_worth_no">Nein, der Weg hat sich nicht gelohnt</string>
+    <string name="cf_note_hint">Hinterlasse eine Notiz: teile etwas, das die nächsten Besucher über diesen Baum lesen sollen</string>
+    <string name="cf_note_failed">Das hat nicht geklappt. Versuch es gleich noch einmal.</string>
+    <string name="cf_add_note">Notiz hinzufügen</string>
+    <string name="cf_adding">Wird hinzugefügt…</string>
+    <string name="cf_share">Diesen Baum teilen</string>
+    <string name="cf_age_old">%1$s alt</string>
+    <string name="cf_unnamed">Ein Baum, den ich gefunden habe</string>
+    <string name="cf_unplaced">Ein Baum, den ich nicht zuordnen konnte</string>
+    <string name="cf_in_city">in %1$s</string>
+    <string name="cf_near_city">bei %1$s</string>
+    <string name="cf_a_tree_at">Ein Baum %1$s</string>
+    <string name="cf_back">Zurück</string>
+    <string name="cf_save_tree">Baum speichern</string>
+    <string name="cf_age">Alter</string>
+    <string name="cf_girth">Umfang</string>
+    <string name="cf_species">Art</string>
+    <string name="cf_add">Hinzufügen</string>
+    <string name="cf_special">Was macht diesen Baum besonders?</string>
+    <string name="cf_more_photos">Weitere Fotos</string>
+    <string name="cf_q_name">Wie nennst du ihn?</string>
+    <string name="cf_q_age">Wie alt ist er ungefähr?</string>
+    <string name="cf_q_girth">Wie dick ist der Stamm im Umfang?</string>
+    <string name="cf_girth_hint">In Metern, auf Brusthöhe. Eine Umarmung sind etwa 1,5 m.</string>
+    <string name="cf_cancel">Abbrechen</string>
+    <string name="cf_save">Sichern</string>
+    <string name="cf_kind_q">Was für ein Baum ist es?</string>
+    <string name="cf_kind_search">Welche Baumart?</string>
+    <string name="cf_near_first">Was bei dir wächst zuerst</string>
+    <string name="cf_use_typed">„%1$s“ verwenden</string>
+    <string name="cf_use_typed_foot">Du kannst eine Baumart nennen, die wir noch nicht kartieren.</string>
+    <string name="cf_close">Schließen</string>
+    <string-array name="cf_compass">
+        <item>Norden</item>
+        <item>Nordosten</item>
+        <item>Osten</item>
+        <item>Südosten</item>
+        <item>Süden</item>
+        <item>Südwesten</item>
+        <item>Westen</item>
+        <item>Nordwesten</item>
+    </string-array>
+</resources>

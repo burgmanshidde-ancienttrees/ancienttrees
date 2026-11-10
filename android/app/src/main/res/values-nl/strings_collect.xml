@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cf_add_photo">Foto toevoegen</string>
+    <string name="cf_add_tree">Boom toevoegen</string>
+    <string name="cf_add_this_tree">Deze boom toevoegen</string>
+    <string name="cf_intro_photo">Je foto komt op de pagina van deze boom.</string>
+    <string name="cf_intro">Fotografeer een boom waar je voor staat en voeg hem toe aan je collectie.</string>
+    <string name="cf_take">Maak een foto</string>
+    <string name="cf_choose">Kies uit je foto\'s</string>
+    <string name="cf_discard_title">Deze boom weggooien?</string>
+    <string name="cf_discard_body">Je raakt de foto kwijt en wat je hebt ingevuld.</string>
+    <string name="cf_discard">Weggooien</string>
+    <string name="cf_keep_editing">Verder bewerken</string>
+    <string name="cf_where">Waar staat hij?</string>
+    <string name="cf_place_reason">Je foto zegt niet waar hij is gemaakt, dus sleep de kaart tot de speld op de boom staat.</string>
+    <string name="cf_tree_is_here">De boom staat hier</string>
+    <string name="cf_which">Welke is het?</string>
+    <string name="cf_tap_to_compare">Weet je niet welke? Tik op %1$s om te vergelijken.</string>
+    <string name="cf_blurb_yours">Je hebt hier eerder een boom toegevoegd. Is het dezelfde, dan komt je foto erbij.</string>
+    <string name="cf_blurb_far">Geen van onze bomen staat vlak bij je foto op de kaart. Dit zijn de dichtstbijzijnde. Is het er een van, dan klopt onze speld niet en helpt je foto ons die te verbeteren.</string>
+    <string name="cf_blurb_far_query">Geen van onze bomen staat vlak bij je foto op de kaart. Is het een van de onze, dan klopt onze speld niet en helpt je foto ons die te verbeteren.</string>
+    <string name="cf_blurb_rough">Onze speld is bij sommige hiervan ruw, dus we kunnen niet zeggen welke welke is. Kies er een als je het weet, of zeg dat je het niet zeker weet.</string>
+    <string name="cf_blurb_device">Je staat tussen bomen die wij op de kaart hebben. Kies de boom op je foto.</string>
+    <string name="cf_blurb_photo">Je foto is bij deze bomen gemaakt. Kies de boom die je fotografeerde, of zeg dat het geen van deze is.</string>
+    <string name="cf_add_new">Nieuwe boom toevoegen</string>
+    <string name="cf_none_of_these">Het is geen van deze</string>
+    <string name="cf_not_sure">Ik weet niet welke</string>
+    <string name="cf_work_it_out">We zoeken het uit aan de hand van je foto</string>
+    <string name="cf_compare_named">%1$s vergelijken</string>
+    <string name="cf_search">Zoek onze bomen op naam</string>
+    <string name="cf_none_called">Geen van onze bomen heet zo.</string>
+    <string name="cf_rough_row">Onze speld voor deze is ruw</string>
+    <string name="cf_thanks">Dank je, dat helpt</string>
+    <string name="cf_unsure_message">We zoeken aan de hand van je foto uit welke boom het is, en je logboek laat het zien zodra we het weten.</string>
+    <string name="cf_done">Klaar</string>
+    <string name="cf_unsure_foot">Bomen dicht bij elkaar zetten ons ook op het verkeerde been, dus zeg het gerust als je het niet zeker weet.</string>
+    <string name="cf_how_find">Hoe vind ik hem?</string>
+    <string name="cf_pin_far">Onze speld staat %1$s van de plek waar je deze foto maakte. Is het deze boom, dan laat je foto ons zien waar hij echt staat.</string>
+    <string name="cf_this_one">Dit is hem</string>
+    <string name="cf_back_to_list">Terug naar de lijst</string>
+    <string name="cf_foot_nothing">We hebben van deze geen foto of beschrijving en alleen een ruwe speld, dus we kunnen je niet helpen het zeker te weten.</string>
+    <string name="cf_foot_rough">Onze speld voor deze is ruw: hij geeft de plek aan, niet de stam.</string>
+    <string name="cf_you_found">Je hebt %1$s gevonden</string>
+    <string name="cf_photo_added">Foto toegevoegd aan %1$s</string>
+    <string name="cf_pin_thanks">Dank je voor de locatie. We controleren hem en verplaatsen onze speld.</string>
+    <string name="cf_worth">Was het de tocht waard?</string>
+    <string name="cf_worth_yes">Ja, de tocht waard</string>
+    <string name="cf_worth_no">Nee, niet de tocht waard</string>
+    <string name="cf_note_hint">Laat een notitie achter: deel iets wat je de volgende bezoekers over deze boom wilt laten lezen</string>
+    <string name="cf_note_failed">Dat is niet gelukt. Probeer het zo nog eens.</string>
+    <string name="cf_add_note">Notitie toevoegen</string>
+    <string name="cf_adding">Bezig…</string>
+    <string name="cf_share">Deel deze boom</string>
+    <string name="cf_age_old">%1$s oud</string>
+    <string name="cf_unnamed">Een boom die ik vond</string>
+    <string name="cf_unplaced">Een boom die ik niet kon plaatsen</string>
+    <string name="cf_in_city">in %1$s</string>
+    <string name="cf_near_city">bij %1$s</string>
+    <string name="cf_a_tree_at">Een boom %1$s</string>
+    <string name="cf_back">Terug</string>
+    <string name="cf_save_tree">Boom opslaan</string>
+    <string name="cf_age">Leeftijd</string>
+    <string name="cf_girth">Omtrek</string>
+    <string name="cf_species">Soort</string>
+    <string name="cf_add">Toevoegen</string>
+    <string name="cf_special">Wat maakt deze boom bijzonder?</string>
+    <string name="cf_more_photos">Meer foto\'s</string>
+    <string name="cf_q_name">Hoe noem jij hem?</string>
+    <string name="cf_q_age">Hoe oud is hij ongeveer?</string>
+    <string name="cf_q_girth">Hoe dik is de stam rondom?</string>
+    <string name="cf_girth_hint">In meters, op borsthoogte. Eén omhelzing is ongeveer 1,5 m.</string>
+    <string name="cf_cancel">Annuleer</string>
+    <string name="cf_save">Bewaar</string>
+    <string name="cf_kind_q">Wat voor boom is het?</string>
+    <string name="cf_kind_search">Welke soort boom?</string>
+    <string name="cf_near_first">Wat bij jou in de buurt groeit eerst</string>
+    <string name="cf_use_typed">Gebruik “%1$s”</string>
+    <string name="cf_use_typed_foot">Je kunt een soort noemen die wij nog niet op de kaart hebben.</string>
+    <string name="cf_close">Sluit</string>
+    <string-array name="cf_compass">
+        <item>noord</item>
+        <item>noordoost</item>
+        <item>oost</item>
+        <item>zuidoost</item>
+        <item>zuid</item>
+        <item>zuidwest</item>
+        <item>west</item>
+        <item>noordwest</item>
+    </string-array>
+</resources>

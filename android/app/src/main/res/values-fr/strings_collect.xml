@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cf_add_photo">Ajouter une photo</string>
+    <string name="cf_add_tree">Ajouter un arbre</string>
+    <string name="cf_add_this_tree">Ajouter cet arbre</string>
+    <string name="cf_intro_photo">Votre photo va sur la page de cet arbre.</string>
+    <string name="cf_intro">Photographiez un arbre devant lequel vous vous trouvez et ajoutez-le à votre collection.</string>
+    <string name="cf_take">Prendre une photo</string>
+    <string name="cf_choose">Choisir dans vos photos</string>
+    <string name="cf_discard_title">Abandonner cet arbre ?</string>
+    <string name="cf_discard_body">Vous perdrez la photo et ce que vous avez rempli.</string>
+    <string name="cf_discard">Abandonner</string>
+    <string name="cf_keep_editing">Continuer</string>
+    <string name="cf_where">Où se trouve-t-il ?</string>
+    <string name="cf_place_reason">Votre photo ne dit pas où elle a été prise : faites glisser la carte jusqu\'à ce que l\'épingle soit sur l\'arbre.</string>
+    <string name="cf_tree_is_here">L\'arbre est ici</string>
+    <string name="cf_which">Lequel est-ce ?</string>
+    <string name="cf_tap_to_compare">Pas sûr ? Touchez %1$s pour comparer.</string>
+    <string name="cf_blurb_yours">Vous avez déjà ajouté un arbre ici. Si c\'est le même, votre photo le rejoint.</string>
+    <string name="cf_blurb_far">Aucun de nos arbres n\'est épinglé près de votre photo. Voici les plus proches sur notre carte. Si c\'est l\'un d\'eux, notre épingle est fausse et votre photo nous aide à la corriger.</string>
+    <string name="cf_blurb_far_query">Aucun de nos arbres n\'est épinglé près de votre photo. Si c\'est l\'un des nôtres, notre épingle est fausse et votre photo nous aide à la corriger.</string>
+    <string name="cf_blurb_rough">Notre épingle est approximative pour certains, nous ne pouvons donc pas dire lequel est lequel. Choisissez-en un si vous savez, ou dites que vous n\'êtes pas sûr.</string>
+    <string name="cf_blurb_device">Vous êtes parmi des arbres que nous cartographions. Choisissez celui de votre photo.</string>
+    <string name="cf_blurb_photo">Votre photo a été prise près de ces arbres. Choisissez celui que vous avez photographié, ou dites que ce n\'est aucun d\'eux.</string>
+    <string name="cf_add_new">Ajouter un nouvel arbre</string>
+    <string name="cf_none_of_these">Ce n\'est aucun de ceux-ci</string>
+    <string name="cf_not_sure">Je ne sais pas lequel</string>
+    <string name="cf_work_it_out">Nous le trouverons grâce à votre photo</string>
+    <string name="cf_compare_named">Comparer %1$s</string>
+    <string name="cf_search">Chercher nos arbres par nom</string>
+    <string name="cf_none_called">Aucun de nos arbres ne s\'appelle ainsi.</string>
+    <string name="cf_rough_row">Notre épingle pour celui-ci est approximative</string>
+    <string name="cf_thanks">Merci, cela nous aide</string>
+    <string name="cf_unsure_message">Nous trouverons de quel arbre il s\'agit grâce à votre photo, et votre journal l\'affichera dès que nous le saurons.</string>
+    <string name="cf_done">Terminé</string>
+    <string name="cf_unsure_foot">Les arbres serrés les uns contre les autres nous piègent aussi, alors dites-le simplement si vous n\'êtes pas sûr.</string>
+    <string name="cf_how_find">Comment le trouver ?</string>
+    <string name="cf_pin_far">Notre épingle est à %1$s de l\'endroit où vous avez pris cette photo. Si c\'est cet arbre, votre photo nous montre où il se trouve vraiment.</string>
+    <string name="cf_this_one">C\'est celui-ci</string>
+    <string name="cf_back_to_list">Retour à la liste</string>
+    <string name="cf_foot_nothing">Nous n\'avons ni photo ni description de celui-ci et seulement une épingle approximative, nous ne pouvons donc pas vous aider à en être sûr.</string>
+    <string name="cf_foot_rough">Notre épingle pour celui-ci est approximative : elle marque le lieu, pas le tronc.</string>
+    <string name="cf_you_found">Vous avez trouvé %1$s</string>
+    <string name="cf_photo_added">Photo ajoutée à %1$s</string>
+    <string name="cf_pin_thanks">Merci pour l\'emplacement. Nous allons le vérifier et déplacer notre épingle.</string>
+    <string name="cf_worth">Le détour en valait-il la peine ?</string>
+    <string name="cf_worth_yes">Oui, cela valait le détour</string>
+    <string name="cf_worth_no">Non, cela ne valait pas le détour</string>
+    <string name="cf_note_hint">Laissez une note : partagez ce que vous aimeriez que les prochains visiteurs lisent sur cet arbre</string>
+    <string name="cf_note_failed">Cela n\'a pas abouti. Réessayez dans un instant.</string>
+    <string name="cf_add_note">Ajouter la note</string>
+    <string name="cf_adding">Ajout…</string>
+    <string name="cf_share">Partager cet arbre</string>
+    <string name="cf_age_old">%1$s</string>
+    <string name="cf_unnamed">Un arbre que j\'ai trouvé</string>
+    <string name="cf_unplaced">Un arbre que je n\'ai pas pu situer</string>
+    <string name="cf_in_city">à %1$s</string>
+    <string name="cf_near_city">près de %1$s</string>
+    <string name="cf_a_tree_at">Un arbre %1$s</string>
+    <string name="cf_back">Retour</string>
+    <string name="cf_save_tree">Enregistrer l\'arbre</string>
+    <string name="cf_age">Âge</string>
+    <string name="cf_girth">Circonférence</string>
+    <string name="cf_species">Espèce</string>
+    <string name="cf_add">Ajouter</string>
+    <string name="cf_special">Qu\'est-ce qui rend cet arbre spécial ?</string>
+    <string name="cf_more_photos">Plus de photos</string>
+    <string name="cf_q_name">Comment l\'appelez-vous ?</string>
+    <string name="cf_q_age">Quel âge a-t-il, à peu près ?</string>
+    <string name="cf_q_girth">Quelle est la circonférence du tronc ?</string>
+    <string name="cf_girth_hint">En mètres, à hauteur de poitrine. Une étreinte fait environ 1,5 m.</string>
+    <string name="cf_cancel">Annuler</string>
+    <string name="cf_save">Enregistrer</string>
+    <string name="cf_kind_q">Quel genre d\'arbre est-ce ?</string>
+    <string name="cf_kind_search">Quelle espèce d\'arbre ?</string>
+    <string name="cf_near_first">Ce qui pousse près de vous d\'abord</string>
+    <string name="cf_use_typed">Utiliser « %1$s »</string>
+    <string name="cf_use_typed_foot">Vous pouvez nommer une espèce que nous ne cartographions pas encore.</string>
+    <string name="cf_close">Fermer</string>
+    <string-array name="cf_compass">
+        <item>nord</item>
+        <item>nord-est</item>
+        <item>est</item>
+        <item>sud-est</item>
+        <item>sud</item>
+        <item>sud-ouest</item>
+        <item>ouest</item>
+        <item>nord-ouest</item>
+    </string-array>
+</resources>

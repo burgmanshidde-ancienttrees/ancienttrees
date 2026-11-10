@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cf_add_photo">写真を追加</string>
+    <string name="cf_add_tree">木を追加</string>
+    <string name="cf_add_this_tree">この木を追加</string>
+    <string name="cf_intro_photo">あなたの写真はこの木のページに載ります。</string>
+    <string name="cf_intro">目の前の木を撮影して、コレクションに加えましょう。</string>
+    <string name="cf_take">写真を撮る</string>
+    <string name="cf_choose">写真から選ぶ</string>
+    <string name="cf_discard_title">この木を破棄しますか？</string>
+    <string name="cf_discard_body">写真と入力した内容が失われます。</string>
+    <string name="cf_discard">破棄</string>
+    <string name="cf_keep_editing">編集を続ける</string>
+    <string name="cf_where">どこに立っていますか？</string>
+    <string name="cf_place_reason">写真に撮影場所の情報がありません。ピンが木の上に来るまで地図を動かしてください。</string>
+    <string name="cf_tree_is_here">木はここです</string>
+    <string name="cf_which">どの木ですか？</string>
+    <string name="cf_tap_to_compare">わからない場合は %1$s をタップして比べてください。</string>
+    <string name="cf_blurb_yours">以前この場所に木を追加しています。同じ木なら、写真はその木に加わります。</string>
+    <string name="cf_blurb_far">写真の近くに登録された木はありません。地図上で最も近い木を表示しています。このどれかなら、私たちのピンがずれているので、あなたの写真が修正の助けになります。</string>
+    <string name="cf_blurb_far_query">写真の近くに登録された木はありません。私たちの木のどれかなら、ピンがずれているので、あなたの写真が修正の助けになります。</string>
+    <string name="cf_blurb_rough">いくつかはピンがおおよその位置なので、どれがどれかはお伝えできません。わかればひとつ選び、わからなければそう教えてください。</string>
+    <string name="cf_blurb_device">地図に載っている木々の中にいます。写真の木を選んでください。</string>
+    <string name="cf_blurb_photo">写真はこれらの木の近くで撮影されました。撮った木を選ぶか、どれでもないと教えてください。</string>
+    <string name="cf_add_new">新しい木を追加</string>
+    <string name="cf_none_of_these">どれでもない</string>
+    <string name="cf_not_sure">どれかわからない</string>
+    <string name="cf_work_it_out">写真から私たちが判断します</string>
+    <string name="cf_compare_named">%1$sを比べる</string>
+    <string name="cf_search">名前で木を探す</string>
+    <string name="cf_none_called">その名前の木はありません。</string>
+    <string name="cf_rough_row">この木のピンはおおよその位置です</string>
+    <string name="cf_thanks">ありがとう、助かります</string>
+    <string name="cf_unsure_message">写真からどの木かを判断し、わかり次第あなたの記録に表示します。</string>
+    <string name="cf_done">完了</string>
+    <string name="cf_unsure_foot">近くに並ぶ木は私たちも迷います。わからないときは気軽に教えてください。</string>
+    <string name="cf_how_find">どうやって見つける？</string>
+    <string name="cf_pin_far">私たちのピンは撮影場所から %1$s 離れています。この木なら、写真が本当の場所を教えてくれます。</string>
+    <string name="cf_this_one">この木です</string>
+    <string name="cf_back_to_list">リストに戻る</string>
+    <string name="cf_foot_nothing">この木には写真も説明もなく、ピンもおおよそなので、確かめるお手伝いができません。</string>
+    <string name="cf_foot_rough">この木のピンはおおよそです。場所を示していて、幹ではありません。</string>
+    <string name="cf_you_found">%1$sを見つけました</string>
+    <string name="cf_photo_added">%1$sに写真を追加しました</string>
+    <string name="cf_pin_thanks">位置情報をありがとう。確認してピンを移動します。</string>
+    <string name="cf_worth">行った甲斐はありましたか？</string>
+    <string name="cf_worth_yes">はい、行った甲斐がありました</string>
+    <string name="cf_worth_no">いいえ、行った甲斐はありませんでした</string>
+    <string name="cf_note_hint">メモを残す：次に訪れる人に読んでほしいことをこの木について書いてください</string>
+    <string name="cf_note_failed">送信できませんでした。少ししてからもう一度お試しください。</string>
+    <string name="cf_add_note">メモを追加</string>
+    <string name="cf_adding">追加中…</string>
+    <string name="cf_share">この木を共有</string>
+    <string name="cf_age_old">%1$s</string>
+    <string name="cf_unnamed">見つけた木</string>
+    <string name="cf_unplaced">場所を特定できなかった木</string>
+    <string name="cf_in_city">%1$s</string>
+    <string name="cf_near_city">%1$s近く</string>
+    <string name="cf_a_tree_at">%1$sの木</string>
+    <string name="cf_back">戻る</string>
+    <string name="cf_save_tree">木を保存</string>
+    <string name="cf_age">樹齢</string>
+    <string name="cf_girth">幹回り</string>
+    <string name="cf_species">種類</string>
+    <string name="cf_add">追加</string>
+    <string name="cf_special">この木の特別なところは？</string>
+    <string name="cf_more_photos">その他の写真</string>
+    <string name="cf_q_name">何と呼びますか？</string>
+    <string name="cf_q_age">だいたい何歳ですか？</string>
+    <string name="cf_q_girth">幹回りはどのくらいですか？</string>
+    <string name="cf_girth_hint">メートルで、胸の高さで。ひと抱えは約1.5 mです。</string>
+    <string name="cf_cancel">キャンセル</string>
+    <string name="cf_save">保存</string>
+    <string name="cf_kind_q">どんな木ですか？</string>
+    <string name="cf_kind_search">木の種類は？</string>
+    <string name="cf_near_first">近くに生えているものを先に</string>
+    <string name="cf_use_typed">「%1$s」を使う</string>
+    <string name="cf_use_typed_foot">まだ地図にない種類の名前も入力できます。</string>
+    <string name="cf_close">閉じる</string>
+    <string-array name="cf_compass">
+        <item>北</item>
+        <item>北東</item>
+        <item>東</item>
+        <item>南東</item>
+        <item>南</item>
+        <item>南西</item>
+        <item>西</item>
+        <item>北西</item>
+    </string-array>
+</resources>

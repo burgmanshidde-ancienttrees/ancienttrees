@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cf_add_photo">Adicionar uma foto</string>
+    <string name="cf_add_tree">Adicionar uma árvore</string>
+    <string name="cf_add_this_tree">Adicionar esta árvore</string>
+    <string name="cf_intro_photo">A tua foto vai para a página desta árvore.</string>
+    <string name="cf_intro">Fotografa uma árvore à tua frente e adiciona-a à tua coleção.</string>
+    <string name="cf_take">Tirar uma foto</string>
+    <string name="cf_choose">Escolher das tuas fotos</string>
+    <string name="cf_discard_title">Descartar esta árvore?</string>
+    <string name="cf_discard_body">Vais perder a foto e o que preencheste.</string>
+    <string name="cf_discard">Descartar</string>
+    <string name="cf_keep_editing">Continuar a editar</string>
+    <string name="cf_where">Onde está?</string>
+    <string name="cf_place_reason">A tua foto não diz onde foi tirada, por isso arrasta o mapa até o pin ficar na árvore.</string>
+    <string name="cf_tree_is_here">A árvore está aqui</string>
+    <string name="cf_which">Qual é?</string>
+    <string name="cf_tap_to_compare">Não sabes qual? Toca em %1$s para comparar.</string>
+    <string name="cf_blurb_yours">Já adicionaste uma árvore aqui mesmo. Se for a mesma, a tua foto vai com ela.</string>
+    <string name="cf_blurb_far">Nenhuma das nossas árvores está marcada perto da tua foto. Estas são as mais próximas no nosso mapa. Se for uma delas, o nosso pin está errado e a tua foto ajuda-nos a corrigi-lo.</string>
+    <string name="cf_blurb_far_query">Nenhuma das nossas árvores está marcada perto da tua foto. Se for uma das nossas, o nosso pin está errado e a tua foto ajuda-nos a corrigi-lo.</string>
+    <string name="cf_blurb_rough">O nosso pin é aproximado em algumas, por isso não conseguimos dizer qual é qual. Escolhe uma se souberes, ou diz que não tens a certeza.</string>
+    <string name="cf_blurb_device">Estás entre árvores que mapeamos. Escolhe a da tua foto.</string>
+    <string name="cf_blurb_photo">A tua foto foi tirada perto destas árvores. Escolhe a que fotografaste, ou diz que não é nenhuma delas.</string>
+    <string name="cf_add_new">Adicionar uma árvore nova</string>
+    <string name="cf_none_of_these">Não é nenhuma destas</string>
+    <string name="cf_not_sure">Não sei qual é</string>
+    <string name="cf_work_it_out">Vamos descobrir a partir da tua foto</string>
+    <string name="cf_compare_named">Comparar %1$s</string>
+    <string name="cf_search">Procurar as nossas árvores pelo nome</string>
+    <string name="cf_none_called">Nenhuma das nossas árvores tem esse nome.</string>
+    <string name="cf_rough_row">O nosso pin desta é aproximado</string>
+    <string name="cf_thanks">Obrigado, isso ajuda</string>
+    <string name="cf_unsure_message">Vamos descobrir que árvore é a partir da tua foto, e o teu registo mostra-a assim que soubermos.</string>
+    <string name="cf_done">Feito</string>
+    <string name="cf_unsure_foot">Árvores muito juntas também nos enganam, por isso diz-nos se não tens a certeza.</string>
+    <string name="cf_how_find">Como a encontro?</string>
+    <string name="cf_pin_far">O nosso pin está a %1$s de onde tiraste esta foto. Se for esta árvore, a tua foto mostra-nos onde ela realmente está.</string>
+    <string name="cf_this_one">É esta</string>
+    <string name="cf_back_to_list">Voltar à lista</string>
+    <string name="cf_foot_nothing">Não temos foto nem descrição desta e só um pin aproximado, por isso não te podemos ajudar a ter a certeza.</string>
+    <string name="cf_foot_rough">O nosso pin desta é aproximado: marca o local, não o tronco.</string>
+    <string name="cf_you_found">Encontraste %1$s</string>
+    <string name="cf_photo_added">Foto adicionada a %1$s</string>
+    <string name="cf_pin_thanks">Obrigado pela localização. Vamos verificá-la e mover o nosso pin.</string>
+    <string name="cf_worth">Valeu a pena a viagem?</string>
+    <string name="cf_worth_yes">Sim, valeu a pena</string>
+    <string name="cf_worth_no">Não, não valeu a pena</string>
+    <string name="cf_note_hint">Deixa uma nota: partilha algo que gostarias que os próximos visitantes lessem sobre esta árvore</string>
+    <string name="cf_note_failed">Não foi enviado. Tenta outra vez daqui a pouco.</string>
+    <string name="cf_add_note">Adicionar nota</string>
+    <string name="cf_adding">A adicionar…</string>
+    <string name="cf_share">Partilhar esta árvore</string>
+    <string name="cf_age_old">%1$s</string>
+    <string name="cf_unnamed">Uma árvore que encontrei</string>
+    <string name="cf_unplaced">Uma árvore que não consegui situar</string>
+    <string name="cf_in_city">em %1$s</string>
+    <string name="cf_near_city">perto de %1$s</string>
+    <string name="cf_a_tree_at">Uma árvore %1$s</string>
+    <string name="cf_back">Voltar</string>
+    <string name="cf_save_tree">Guardar árvore</string>
+    <string name="cf_age">Idade</string>
+    <string name="cf_girth">Perímetro</string>
+    <string name="cf_species">Espécie</string>
+    <string name="cf_add">Adicionar</string>
+    <string name="cf_special">O que torna esta árvore especial?</string>
+    <string name="cf_more_photos">Mais fotos</string>
+    <string name="cf_q_name">Como lhe chamas?</string>
+    <string name="cf_q_age">Que idade tem, mais ou menos?</string>
+    <string name="cf_q_girth">Qual é o perímetro do tronco?</string>
+    <string name="cf_girth_hint">Em metros, à altura do peito. Um abraço são cerca de 1,5 m.</string>
+    <string name="cf_cancel">Cancelar</string>
+    <string name="cf_save">Guardar</string>
+    <string name="cf_kind_q">Que tipo de árvore é?</string>
+    <string name="cf_kind_search">Que tipo de árvore?</string>
+    <string name="cf_near_first">Primeiro o que cresce perto de ti</string>
+    <string name="cf_use_typed">Usar «%1$s»</string>
+    <string name="cf_use_typed_foot">Podes indicar um tipo de árvore que ainda não mapeamos.</string>
+    <string name="cf_close">Fechar</string>
+    <string-array name="cf_compass">
+        <item>norte</item>
+        <item>nordeste</item>
+        <item>este</item>
+        <item>sudeste</item>
+        <item>sul</item>
+        <item>sudoeste</item>
+        <item>oeste</item>
+        <item>noroeste</item>
+    </string-array>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The collect flow, word for word from ios Screens/CollectSheet.swift,
+     CollectIntro.swift, SpeciesChooser.swift and TreeDetail.swift (a draft). -->
+<resources>
+    <string name="cf_add_photo">Add a photo</string>
+    <string name="cf_add_tree">Add a tree</string>
+    <string name="cf_add_this_tree">Add this tree</string>
+    <string name="cf_intro_photo">Your photograph goes on this tree\'s page.</string>
+    <string name="cf_intro">Photograph a tree you are standing in front of and add it to your collection.</string>
+    <string name="cf_take">Take a photograph</string>
+    <string name="cf_choose">Choose from your photos</string>
+
+    <string name="cf_discard_title">Discard this tree?</string>
+    <string name="cf_discard_body">You will lose the photograph and what you have filled in.</string>
+    <string name="cf_discard">Discard</string>
+    <string name="cf_keep_editing">Keep editing</string>
+
+    <string name="cf_where">Where does it stand?</string>
+    <string name="cf_place_reason">Your photograph does not say where it was taken, so drag the map until the pin sits on the tree.</string>
+    <string name="cf_tree_is_here">The tree is here</string>
+
+    <string name="cf_which">Which one is it?</string>
+    <string name="cf_tap_to_compare">Not sure which? Tap %1$s to compare.</string>
+    <string name="cf_blurb_yours">You added a tree right here before. If this is the same one, your photo goes with it.</string>
+    <string name="cf_blurb_far">None of our trees is pinned near your photo. These are the closest on our map. If it is one of them, our pin is off and your photo helps us fix it.</string>
+    <string name="cf_blurb_far_query">None of our trees is pinned near your photo. If it is one of ours, our pin is off and your photo helps us fix it.</string>
+    <string name="cf_blurb_rough">Our pin is rough for some of these, so we cannot tell you which is which. Pick one if you know, or say you are not sure.</string>
+    <string name="cf_blurb_device">You are standing among trees we map. Pick the one in your photograph.</string>
+    <string name="cf_blurb_photo">Your photograph was taken near these trees. Pick the one you photographed, or say it is none of them.</string>
+    <string name="cf_add_new">Add a new tree</string>
+    <string name="cf_none_of_these">It is none of these</string>
+    <string name="cf_not_sure">I am not sure which</string>
+    <string name="cf_work_it_out">We will work it out from your photograph</string>
+    <string name="cf_compare_named">Compare %1$s</string>
+    <string name="cf_search">Search our trees by name</string>
+    <string name="cf_none_called">None of our trees is called that.</string>
+    <string name="cf_rough_row">Our pin for this one is rough</string>
+
+    <string name="cf_thanks">Thank you, that helps</string>
+    <string name="cf_unsure_message">We will work out which tree it is from your photograph, and your log will show it once we know.</string>
+    <string name="cf_done">Done</string>
+    <string name="cf_unsure_foot">Trees standing close together catch us out too, so just say if you are not sure.</string>
+
+    <string name="cf_how_find">How do I find it?</string>
+    <string name="cf_pin_far">Our pin is %1$s from where you took this photo. If it is this tree, your photo shows us where it really stands.</string>
+    <string name="cf_this_one">This is the one</string>
+    <string name="cf_back_to_list">Back to the list</string>
+    <string name="cf_foot_nothing">We have no photograph or description of this one and only a rough pin, so we cannot help you be sure.</string>
+    <string name="cf_foot_rough">Our pin for this one is rough: it marks the place, not the trunk.</string>
+
+    <string name="cf_you_found">You found %1$s</string>
+    <string name="cf_photo_added">Photo added to %1$s</string>
+    <string name="cf_pin_thanks">Thank you for the location. We will check it and move our pin.</string>
+    <string name="cf_worth">Was it worth the trip?</string>
+    <string name="cf_worth_yes">Yes, worth the trip</string>
+    <string name="cf_worth_no">No, not worth the trip</string>
+    <string name="cf_note_hint">Leave a note: share something you\'d like the next visitors to read about this tree</string>
+    <string name="cf_note_failed">That did not go through. Try again in a moment.</string>
+    <string name="cf_add_note">Add note</string>
+    <string name="cf_adding">Adding…</string>
+    <string name="cf_share">Share this tree</string>
+    <string name="cf_age_old">%1$s old</string>
+    <string-array name="cf_compass">
+        <item>north</item>
+        <item>north-east</item>
+        <item>east</item>
+        <item>south-east</item>
+        <item>south</item>
+        <item>south-west</item>
+        <item>west</item>
+        <item>north-west</item>
+    </string-array>
+
+    <string name="cf_unnamed">A tree I found</string>
+    <string name="cf_unplaced">A tree I could not place</string>
+    <string name="cf_in_city">in %1$s</string>
+    <string name="cf_near_city">near %1$s</string>
+    <string name="cf_a_tree_at">A tree %1$s</string>
+
+    <string name="cf_back">Back</string>
+    <string name="cf_save_tree">Save tree</string>
+    <string name="cf_age">Age</string>
+    <string name="cf_girth">Girth</string>
+    <string name="cf_species">Species</string>
+    <string name="cf_add">Add</string>
+    <string name="cf_special">What makes this tree special?</string>
+    <string name="cf_more_photos">More photographs</string>
+    <string name="cf_q_name">What do you call it?</string>
+    <string name="cf_q_age">How old is it, roughly?</string>
+    <string name="cf_q_girth">How far round is the trunk?</string>
+    <string name="cf_girth_hint">In metres, at chest height. One hug is about 1.5 m.</string>
+    <string name="cf_cancel">Cancel</string>
+    <string name="cf_save">Save</string>
+    <string name="cf_kind_q">What kind of tree is it?</string>
+    <string name="cf_kind_search">Which kind of tree?</string>
+    <string name="cf_near_first">Growing near you first</string>
+    <string name="cf_use_typed">Use “%1$s”</string>
+    <string name="cf_use_typed_foot">You can name a kind of tree we do not map yet.</string>
+    <string name="cf_close">Close</string>
+</resources>
