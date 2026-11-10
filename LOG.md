@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 session: Android search, tree page and draft at parity with the iPhone (parity batch 10)
+
+- **Product (Android, not in any store):** search shows your recent searches when signed in (read from and written to the account's `recent_searches`, the same rows the iPhone and the website use; a cross per row and Clear all), and a town we hold no trees in now gets the grey card, the towns and the nearest tree we hold (Bern: card, Bern in Switzerland, the Linden of Morat 27 km). The tree page's collect sheet has Remove from collected, done at once with Undo that puts the tick back on its first day, and the collected date line. A tree being added has Move the pin and Merge with another tree in its menu; MergeChooser is ported from the Swift.
+- **Library (hard list 5):** the town lookup uses Android's own `android.location.Geocoder` where the iPhone uses Apple's MKLocalSearch: a platform library, no new service.
+- **Differences left:** tree_opened is not measured on Android (no PostHog key path there yet); own-tree's menu still lacks Move the pin and Merge (the screens exist now; it needs the account passed in and the server fold).
+- **Parity:** 37 of 39 screens; map and map-full wait for build 42's sheet in the Swift. Shots in out/parity/android (search-recent, search-town, collect-sheet, collect-describe-menu, merge-chooser, merge-confirm, draft-placepin).
+
 ## 2026-11-10 session: Android directions, review ask, contribute and feedback ported from the iPhone (parity session 9)
 
 - **Product (Android, not in any store):** the last four sheets are the iPhone's, ported from Kit/Directions.swift, Kit/ReviewPrompt.swift, Screens/Contribute.swift and the BrandSheet look. Take me there asks once which maps app and remembers it on the phone, Settings has the Directions row to change it; Send feedback opens the feedback form in the app (no longer the website); the tree page's report menu uses the same form; the review question comes after three different trees looked at, at a pause, with every timing rule of the iPhone (3, 10 and 25 trees, a week apart, three asks per install, 120 days and a newer version after a Yes).

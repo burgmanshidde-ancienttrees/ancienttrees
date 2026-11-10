@@ -91,41 +91,31 @@
     "owner": null
   },
   "search": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Recent searches (signed in, kept on the server) are not ported yet.",
-      "A town we have no trees in (Apple's MKLocalSearch on the iPhone) is not looked up yet; Android says nothing matches.",
       "The on-screen keyboard shows on Android; the iPhone simulator types from the Mac's keyboard, so its shot has none. Both focus the field."
     ],
-    "owner": {
-      "session": "local_android-basis",
-      "name": "android-basis",
-      "since": "2026-11-10"
-    }
+    "notes": [
+      "Recent searches read and write recent_searches on the account, as the iPhone and the website do (account/RecentSearches.kt; -recentdemo shows three rows).",
+      "A town we hold no trees in comes from Android's own Geocoder (EmptyPlace.kt) where the iPhone asks MKLocalSearch: the grey card, the towns, the nearest tree. Checked with Bern (card, Bern in Switzerland, the Linden of Morat 27 km)."
+    ]
   },
   "tree": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "The review prompt after three trees and the tree_opened measurement are not ported (session 8).",
-      "Collect: Remove from collected (with Undo) in the collect sheet is not ported yet.",
-      "The snackbar after a bookmark: Added to Want to visit with View, Removed with Undo, as SaveHeart.swift (SnackBar.kt)."
+      "The tree_opened measurement is not sent: Android has no PostHog key path yet, so there is nothing to send it through. Nothing a person sees differs."
     ],
-    "owner": {
-      "session": "local_android-basis",
-      "name": "android-basis",
-      "since": "2026-11-10"
-    }
+    "notes": [
+      "Remove from collected sits in the collect sheet under the two photo buttons, at once with Undo (the tick back on its first day), with the collected date line, as TreeDetail.uncollectWithUndo (-collectsheet opens it).",
+      "The review prompt after three trees is Google Play's In-App Review (review-ask, ReviewAsk.kt): it agrees with review-ask's parity.",
+      "The snackbar after a bookmark: Added to Want to visit with View, Removed with Undo, as SaveHeart.swift (SnackBar.kt)."
+    ]
   },
   "tree-nophoto": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
       "As tree."
-    ],
-    "owner": {
-      "session": "local_android-basis",
-      "name": "android-basis",
-      "since": "2026-11-10"
-    }
+    ]
   },
   "signin": {
     "status": "parity",
@@ -207,16 +197,13 @@
     "differences": []
   },
   "collect-describe": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Move the pin and Merge with another tree are not in the draft's menu yet: their screens (place-pin, MergeChooser) are not ported, as on own-tree.",
       "After Save the page waits a moment for the account to hold the tree before it turns into your tree with Share: the iPhone keeps it on the phone first, Android keeps nothing a person did on the device (hard rule 11)."
     ],
-    "owner": {
-      "session": "local_android-basis",
-      "name": "android-basis",
-      "since": "2026-11-10"
-    }
+    "notes": [
+      "The ⋯ menu carries Move the pin (place-pin) and Merge with another tree (MergeChooser.kt, ported from the Swift: nearest twenty, search by name, the confirm sheet). A merge sends the photographs to our tree and ticks it; past 400 m it also sends the pin correction, as TreeDetail.merge."
+    ]
   },
   "collection-tab-full": {
     "status": "parity",
@@ -272,7 +259,7 @@
   "own-tree": {
     "status": "parity",
     "differences": [
-      "Move the pin and Merge with another tree are not in the menu yet: their screens (place-pin, MergeChooser) are not ported.",
+      "Move the pin and Merge with another tree are not in its menu yet. Both screens are ported now (PlacePin.kt, MergeChooser.kt) and sit in the draft's menu; own-tree still needs the account passed in and the server fold (Sightings.fold: tree_id and name on the sighting).",
       "Naming the species uses the map's species picker, not SpeciesChooser (species-pick, not ported).",
       "The hero keeps a 3:4 portrait shape for every photograph; the iPhone takes the photograph's own shape.",
       "Share sends the link only; the iPhone also hands on a drawn share card (ShareCard.swift)."
