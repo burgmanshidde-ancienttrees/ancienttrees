@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 Android type and icons (session android-type-icons)
+
+- **Android's text now sets in Inter and its icons are Material Symbols Rounded**, the open set and face closest to the iPhone's SF Symbols and SF Pro (Hidde: "maak het zo veel hetzelfde"). Every text goes through ui/Text.kt, which adds SF's tracking per size and weight; every icon comes from ui/Symbols.kt, generated glyph for glyph by android/generate_symbols.py. Back is the iPhone's chevron. Tab icons, the tree page's top bar, Take me there and the action bar circles are sized to the iPhone's (SF point size times 4/3).
+- Libraries: Inter 4.1 (OFL, bundled font files, subset to Latin, Greek and Cyrillic) and Material Symbols Rounded 0.48.0 (Apache 2.0, generated into Kotlin), neither touches reader data. AndroidX material-icons-extended is gone.
+- A check so it cannot drift back: `python3 scripts/android_parity.py --check`, run by qa.py on every push.
+- Icons left the forced-differences list in data/android-parity.json; DECISIONS.md 2026-11-10.
+
 ## 2026-11-10 night run, second attempt
 
 - Write pass: 2 Vienna trees merged (vie_060, vie_061, app-only). 15 pending trees refused on standing holds (rule 10, no trunk named, duplicates); the 7 READY leads need a verify pass first.

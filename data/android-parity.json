@@ -2,10 +2,6 @@
   "_note": "Per iOS screen (SweepFrames.swift names): its Android status (not-ported, in-progress, parity) and the differences still open. Read by scripts/android_parity.py. DECISIONS.md 2026-11-10.",
   "_android_forced": [
     {
-      "what": "Icons",
-      "why": "SF Symbols exist only on Apple platforms; Android uses Material Symbols, the matching glyph each time (map, search, eco leaf, photo_camera)."
-    },
-    {
       "what": "Glass behind floating bars",
       "why": "Android has no system material blur for what lies under a view; the tab bar is the ground fully opaque with a 14 percent ink wash and the map sheet a warm light grey (#F4F4F2), both measured off the iPhone's shots so nothing behind is legible."
     },
@@ -27,7 +23,7 @@
     },
     {
       "what": "Text face",
-      "why": "SF Pro, the iPhone's system face, exists only on Apple platforms; Android's own system face (Roboto) stands in at the same sizes and weights. The brand face Gabarito is the same on both."
+      "why": "SF Pro, the iPhone's system face, exists only on Apple platforms; Android sets every text in Inter (OFL), the open face closest to it, at the same sizes and weights and tracked as SF tracks per size (ui/Text.kt). The brand face Gabarito is the same on both. Icons are no longer a difference: Material Symbols Rounded, the closest open set to SF Symbols, generated glyph for glyph (DECISIONS.md 2026-11-10)."
     },
     {
       "what": "Share",
