@@ -44,4 +44,11 @@
     <string name="problem_link">このサインインリンクは使用済みか、期限切れです。新しいリンクをリクエストしてください。</string>
     <string name="problem_google">Googleでのサインインがうまくいきませんでした。今はメールをお使いください。</string>
     <!-- /sign-in -->
+    <!-- collect -->
+    <string name="seen_it">この木を集める</string>
+    <string name="seen_it_done">集めた</string>
+    <string name="collected_title">%1$sを集めました</string>
+    <string name="collect_lead">写真を撮って、あなたの木に加えましょう。</string>
+    <string name="collect_camera">写真を撮る</string>
+    <!-- /collect -->
 </resources>

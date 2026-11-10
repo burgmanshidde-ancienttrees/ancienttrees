@@ -46,4 +46,11 @@
     <string name="problem_link">That sign-in link has already been used, or it has expired. Ask for a new one.</string>
     <string name="problem_google">Google sign-in did not work. Use your email for now.</string>
     <!-- /sign-in -->
+    <!-- collect -->
+    <string name="seen_it">Collect this tree</string>
+    <string name="seen_it_done">Collected</string>
+    <string name="collected_title">You collected %1$s</string>
+    <string name="collect_lead">Take a photograph to add it to your trees.</string>
+    <string name="collect_camera">Take a photograph</string>
+    <!-- /collect -->
 </resources>

@@ -38,6 +38,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
 import app.ancienttrees.account.Account
+import app.ancienttrees.account.Collector
 import app.ancienttrees.account.Saves
 import app.ancienttrees.account.SignIn
 import app.ancienttrees.feed.Catalogue
@@ -51,6 +52,8 @@ import app.ancienttrees.map.TreeMapView
 import app.ancienttrees.ui.AccountButton
 import app.ancienttrees.ui.AccountSheet
 import app.ancienttrees.ui.AncientTreesTheme
+import app.ancienttrees.ui.CollectFailedSheet
+import app.ancienttrees.ui.CollectedSheet
 import app.ancienttrees.ui.SignInSheet
 import app.ancienttrees.ui.LocationOffChip
 import app.ancienttrees.ui.MyLocationButton
@@ -95,6 +98,14 @@ private fun openAppSettings(context: Context) {
 @Composable
 private fun App(link: Uri?, onLinkRead: () -> Unit) {
     val context = LocalContext.current
+    val store = remember { CatalogueStore(context.applicationContext) }
+    var catalogue by remember { mutableStateOf<Catalogue?>(null) }
+    var selected by remember { mutableStateOf<Tree?>(null) }
+    var open by remember { mutableStateOf<Tree?>(null) }
+    var box by remember { mutableStateOf<ViewBox?>(null) }
+    var here by remember { mutableStateOf<Here?>(null) }
+    var recentre by remember { mutableIntStateOf(0) }
+    val miles = remember { Geo.milesFor(Locale.getDefault().country) }
     val scope = rememberCoroutineScope()
     val account = remember { Account(context.applicationContext) }
     val saves = remember { Saves(account) }
@@ -105,6 +116,60 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
     var asking by remember { mutableStateOf(false) }
     var showAccount by remember { mutableStateOf(false) }
 
+    val signedIn = account.state is SignIn.SignedIn
+    // COLLECT: sign in before the camera, never after the photograph (the
+    // iPhone's rule, 2026-10-12). The photograph is proof of presence, so the
+    // camera is the only way in; where the phone stood goes with it.
+    var pendingCollect by remember { mutableStateOf<Tree?>(null) }
+    var collecting by remember { mutableStateOf<Tree?>(null) }
+    var collectedNow by remember { mutableStateOf<Tree?>(null) }
+    var collectFailed by remember { mutableStateOf(false) }
+    val shot = remember {
+        java.io.File(context.cacheDir, "photos").apply { mkdirs() }.let { java.io.File(it, "collect.jpg") }
+    }
+    val shotUri = remember {
+        androidx.core.content.FileProvider.getUriForFile(context, context.packageName + ".photos", shot)
+    }
+    val camera = rememberLauncherForActivityResult(ActivityResultContracts.TakePicture()) { ok ->
+        val t = collecting
+        val where = here
+        if (!ok || t == null || where == null) {
+            collecting = null
+            return@rememberLauncherForActivityResult
+        }
+        scope.launch {
+            val raw = runCatching { shot.readBytes() }.getOrNull()
+            shot.delete()
+            val jpeg = raw?.let { Collector.downsized(it) }
+            val landed = jpeg != null && Collector.collect(account, t.id, t.name, jpeg, where.lat, where.lng)
+            collecting = null
+            if (landed) {
+                saves.noteCollected(t.id)
+                collectedNow = t
+            } else {
+                collectFailed = true
+            }
+        }
+    }
+    fun collect(t: Tree) {
+        if (!signedIn) {
+            pendingCollect = t
+            asking = true
+            return
+        }
+        collecting = t
+        collectFailed = false
+        runCatching { camera.launch(shotUri) }.onFailure { collecting = null }
+    }
+
+    fun heart(t: Tree) {
+        if (signedIn) {
+            scope.launch { saves.toggle(t.id) }
+        } else {
+            pendingHeart = t
+            asking = true
+        }
+    }
     LaunchedEffect(Unit) { account.restore() }
     LaunchedEffect(link) {
         val uri = link ?: return@LaunchedEffect
@@ -113,7 +178,6 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
         account.handleCallback(uri)
         onLinkRead()
     }
-    val signedIn = account.state is SignIn.SignedIn
     LaunchedEffect(signedIn) {
         if (!signedIn) {
             saves.forget()
@@ -125,23 +189,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
             pendingHeart = null
             if (t.id !in saves.hearts) saves.toggle(t.id)
         }
-    }
-    fun heart(t: Tree) {
-        if (signedIn) {
-            scope.launch { saves.toggle(t.id) }
-        } else {
-            pendingHeart = t
-            asking = true
+        pendingCollect?.let { t ->
+            pendingCollect = null
+            collecting = t
+            runCatching { camera.launch(shotUri) }.onFailure { collecting = null }
         }
     }
-    val store = remember { CatalogueStore(context.applicationContext) }
-    var catalogue by remember { mutableStateOf<Catalogue?>(null) }
-    var selected by remember { mutableStateOf<Tree?>(null) }
-    var open by remember { mutableStateOf<Tree?>(null) }
-    var box by remember { mutableStateOf<ViewBox?>(null) }
-    var here by remember { mutableStateOf<Here?>(null) }
-    var recentre by remember { mutableIntStateOf(0) }
-    val miles = remember { Geo.milesFor(Locale.getDefault().country) }
 
     // LOCATION, ASKED ON THE FIRST OPEN with no screen of ours in front of it
     // (CONVENTIONS.md, "When the location question is asked", 2026-10-14). Android
@@ -223,7 +276,17 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
             }
         }
         open?.let { tree ->
-            TreeScreen(tree, hearted = tree.id in saves.hearts, onHeart = { heart(tree) }, onBack = { open = null })
+            val near = here?.let { Geo.km(it.lat, it.lng, tree.lat, tree.lng) <= Collector.REACH_KM } ?: false
+            TreeScreen(
+                tree,
+                hearted = tree.id in saves.hearts,
+                onHeart = { heart(tree) },
+                onBack = { open = null },
+                canCollect = near,
+                collected = tree.id in saves.collected,
+                collecting = collecting?.id == tree.id,
+                onCollect = { collect(tree) },
+            )
         }
         if (open == null) {
             AccountButton(
@@ -233,8 +296,14 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
             )
         }
         if (asking && !signedIn) {
-            SignInSheet(account, treeName = pendingHeart?.name, onDismiss = { asking = false; pendingHeart = null })
+            SignInSheet(
+                account,
+                treeName = (pendingHeart ?: pendingCollect)?.name,
+                onDismiss = { asking = false; pendingHeart = null; pendingCollect = null },
+            )
         }
+        collectedNow?.let { t -> CollectedSheet(t.name, onDismiss = { collectedNow = null }) }
+        if (collectFailed) CollectFailedSheet(onDismiss = { collectFailed = false })
         if (showAccount && signedIn) {
             AccountSheet(account, saved = saves.hearts.size, onDismiss = { showAccount = false })
         }

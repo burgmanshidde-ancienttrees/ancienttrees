@@ -34,6 +34,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -127,7 +128,16 @@ private fun directions(context: Context, tree: Tree) = openUrl(
 )
 
 @Composable
-fun TreeScreen(tree: Tree, hearted: Boolean, onHeart: () -> Unit, onBack: () -> Unit) {
+fun TreeScreen(
+    tree: Tree,
+    hearted: Boolean,
+    onHeart: () -> Unit,
+    onBack: () -> Unit,
+    canCollect: Boolean = false,
+    collected: Boolean = false,
+    collecting: Boolean = false,
+    onCollect: () -> Unit = {},
+) {
     val context = LocalContext.current
     Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
@@ -185,11 +195,32 @@ fun TreeScreen(tree: Tree, hearted: Boolean, onHeart: () -> Unit, onBack: () -> 
                     )
                 }
 
-                Button(
-                    onClick = { directions(context, tree) },
-                    modifier = Modifier.fillMaxWidth(),
-                ) {
-                    Text(stringResource(R.string.take_me_there))
+                // COLLECT IS THE BIG ONE when you are near enough to stand in
+                // front of it (the iPhone's tree page); directions otherwise.
+                when {
+                    collected -> {
+                        Text(
+                            "\u2713 " + stringResource(R.string.seen_it_done),
+                            fontWeight = FontWeight.SemiBold,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                        OutlinedButton(onClick = { directions(context, tree) }, modifier = Modifier.fillMaxWidth()) {
+                            Text(stringResource(R.string.take_me_there))
+                        }
+                    }
+                    canCollect -> {
+                        Button(onClick = onCollect, enabled = !collecting, modifier = Modifier.fillMaxWidth()) {
+                            Text(stringResource(R.string.seen_it))
+                        }
+                        OutlinedButton(onClick = { directions(context, tree) }, modifier = Modifier.fillMaxWidth()) {
+                            Text(stringResource(R.string.take_me_there))
+                        }
+                    }
+                    else -> {
+                        Button(onClick = { directions(context, tree) }, modifier = Modifier.fillMaxWidth()) {
+                            Text(stringResource(R.string.take_me_there))
+                        }
+                    }
                 }
 
                 Text(

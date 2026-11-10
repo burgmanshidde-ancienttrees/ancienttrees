@@ -201,3 +201,33 @@ fun AccountSheet(account: Account, saved: Int, onDismiss: () -> Unit) {
         }
     }
 }
+
+/** The payoff: the tree is in your collection. */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CollectedSheet(treeName: String, onDismiss: () -> Unit) {
+    ModalBottomSheet(onDismissRequest = onDismiss) {
+        Column(
+            Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(bottom = 24.dp).navigationBarsPadding(),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            SheetTitle(stringResource(R.string.collected_title, treeName))
+            Button(onClick = onDismiss, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.close)) }
+        }
+    }
+}
+
+/** The photograph did not reach us; nothing was kept, so the person tries again. */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CollectFailedSheet(onDismiss: () -> Unit) {
+    ModalBottomSheet(onDismissRequest = onDismiss) {
+        Column(
+            Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(bottom = 24.dp).navigationBarsPadding(),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Text(stringResource(R.string.problem_send), style = MaterialTheme.typography.bodyMedium)
+            Button(onClick = onDismiss, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.close)) }
+        }
+    }
+}
