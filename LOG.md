@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 session: Android screens linked into one app, flow walk on the emulator
+
+- **Routes:** a link from the website opens the app's own screen (WebLink.kt, the iPhone's WebLink.swift and ContentView.open): a tree's page, a city or country on the map, species and collection pages, Explore, /open?tree= and ?city=, /profile?u=, and an app-only tree's /<city>#tree=<id>; what the app has no screen for goes back to the browser. The camera in the tab bar and Discover's add-a-tree now ask to sign in BEFORE the collect sheet, as on the iPhone (Hidde, 2026-10-12: "first login than overlay"); every gate reads the server-confirmed account state.
+- **Flow walk:** android/app/src/androidTest/FlowWalk.kt, run by `python3 scripts/android_walk.py`: tabs reach every place, a tree opens and back leaves it, Want to visit and the camera ask to sign in first, a website link opens its tree. All five green on the emulator; CI compiles it.
+- **Emulator lock:** another session's `am force-stop` crashed a walk mid-run, so `scripts/emulator_lock.py` now serialises the one emulator; android_parity.py and android_walk.py take it.
+- **For Hidde, later:** links from the website open the app only once ancienttrees.app publishes `.well-known/assetlinks.json` with the Play signing key, which exists once the Play account does. Until then they open in the browser.
+
 ## 2026-11-10 session: Android places and species ported from the iPhone (parity session 8)
 
 - **Product (Android, not in any store):** a city on the map now has the iPhone's white box under its Highlights: the named ambassador with "Become one too", or "Become the <place> ambassador", which asks for an account first and then the same explainer and receipt; and "Help create Ancient Trees Plus" under the trees with the three-step question (open idea, up to two of four shuffled options or something else, then Tell me), sent to plus_answers and plus_waitlist as the iPhone does, gone once answered and switched off from the server like the iPhone (data/app-switches.json). The species page (Species.swift): mark, name, Latin in italics, how many on the map, what the species is, then its trees with photographs first; it opens from a tree page's species, from Discover's species tiles and from its See all list (before, those sent you to the map's filter). The tree page's "Approximate location" line opens the map to move the pin (PlacePin.swift), which sends a correction exactly as the iPhone does. The species chooser (SpeciesChooser.swift) with "Not on the map yet" and "Use what you typed" is now one screen for your own tree, the draft and the sweep; the map's Species filter shows each species' Latin and other names the same way.

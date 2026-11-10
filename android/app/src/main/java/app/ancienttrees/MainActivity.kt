@@ -159,6 +159,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val counts = remember { app.ancienttrees.account.VoteCounts() }
     // A place, species or tree a tree page sends to the map.
     var go by remember { mutableStateOf<Pair<Long, SearchHit>?>(null) }
+    var tab by remember { mutableIntStateOf(if (launch.tab == 1 || launch.tab == 2) launch.tab!! else 0) }
     // A species page (Species.swift), and the tree page it was opened from, which
     // back returns to: the iPhone's navigation stack two deep.
     var speciesPage by remember { mutableStateOf<String?>(null) }
@@ -255,6 +256,18 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         runCatching { camera.launch(shotUri) }.onFailure { collecting = null }
     }
 
+    // SIGN IN FIRST, THEN THE SHEET, and the sheet still opens after it (Hidde,
+    // 2026-10-12: "first login than overlay"; ContentView.openCollect). Who is
+    // signed in is the server's answer (account.state), never the phone's.
+    fun openCollect() {
+        if (signedIn) {
+            collectStart = app.ancienttrees.ui.CollectStart()
+        } else {
+            pendingAfterSignIn = { collectStart = app.ancienttrees.ui.CollectStart() }
+            asking = true
+        }
+    }
+
     fun heart(t: Tree) {
         if (signedIn) {
             scope.launch { saves.toggle(t.id) }
@@ -265,11 +278,42 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     }
     LaunchedEffect(Unit) { account.restore() }
     LaunchedEffect(Unit) { app.ancienttrees.ui.AppSwitches.refresh(launch.args) }
-    LaunchedEffect(link) {
+    // A LINK INTO THE APP: the sign-in callback, or a page of the website the app
+    // has a screen for (WebLink.kt, the iPhone's ContentView.open). Read once the
+    // catalogue is there, so a tree's path can be told from a city's.
+    var collectionLink by remember { mutableStateOf<Pair<Long, String>?>(null) }
+    LaunchedEffect(link, catalogue != null) {
         val uri = link ?: return@LaunchedEffect
         // Read first, cleared after: clearing changes this effect's key and
         // would cancel the sign-in halfway.
-        account.handleCallback(uri)
+        if (uri.scheme == "ancienttrees" || uri.path == "/auth") {
+            account.handleCallback(uri)
+            onLinkRead()
+            return@LaunchedEffect
+        }
+        val cat = catalogue ?: return@LaunchedEffect
+        val target = app.ancienttrees.feed.WebLink.parse(uri, app.ancienttrees.feed.WebLink.Lookup.of(cat))
+        when (target) {
+            is app.ancienttrees.feed.LinkTarget.TreeAt -> cat.tree(target.id)?.let { tab = 0; open = it }
+            is app.ancienttrees.feed.LinkTarget.City -> cat.trees(target.slug).firstOrNull()?.let { t ->
+                open = null; tab = 0
+                go = System.nanoTime() to app.ancienttrees.ui.SearchHit.City(target.slug, t.city, t.lat, t.lng)
+            }
+            is app.ancienttrees.feed.LinkTarget.Country -> { open = null; tab = 0; go = System.nanoTime() to app.ancienttrees.ui.SearchHit.Country(target.name) }
+            is app.ancienttrees.feed.LinkTarget.SpeciesAt -> { open = null; speciesPage = target.name }
+            is app.ancienttrees.feed.LinkTarget.Collection -> { open = null; tab = 1; collectionLink = System.nanoTime() to target.slug }
+            is app.ancienttrees.feed.LinkTarget.Person -> routes.openPerson(target.id)
+            is app.ancienttrees.feed.LinkTarget.Map -> { open = null; tab = 0 }
+            // A shared tree of a reader's: the app has no screen for it yet, so the website shows it.
+            is app.ancienttrees.feed.LinkTarget.Shared, null ->
+                runCatching {
+                    context.startActivity(Intent(Intent.ACTION_VIEW, uri).apply {
+                        addCategory(Intent.CATEGORY_BROWSABLE)
+                        // A browser, never this app again.
+                        selector = Intent(Intent.ACTION_VIEW, Uri.parse("https://"))
+                    })
+                }
+        }
         onLinkRead()
     }
     LaunchedEffect(signedIn) {
@@ -383,7 +427,6 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     var searching by remember { mutableStateOf(false) }
     val trees = catalogue?.trees.orEmpty()
     // The tabs: Map, Discover (Home.swift), and My trees (Collect.swift).
-    var tab by remember { mutableIntStateOf(if (launch.tab == 1 || launch.tab == 2) launch.tab!! else 0) }
     // Tapping Discover while on Discover scrolls back up (navigator.scrollToTop).
     var discoverTop by remember { mutableIntStateOf(0) }
     var discoverSearching by remember { mutableStateOf(false) }
@@ -442,6 +485,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 refresh = { store.refresh(catalogue?.version)?.let { catalogue = it } },
                 scrollToTop = discoverTop,
                 discoverTo = launch.args.firstOrNull { it.startsWith("-discoverto=") }?.removePrefix("-discoverto="),
+                openCollection = collectionLink,
                 act = DiscoverActions(
                     openTree = { open = it },
                     openPlace = { hit ->
@@ -456,7 +500,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         myLane = app.ancienttrees.ui.TreesLane.WANT
                         tab = 2
                     },
-                    addTree = { collectStart = app.ancienttrees.ui.CollectStart() },
+                    addTree = { openCollect() },
                     signIn = { then ->
                         pendingAfterSignIn = then
                         asking = true
@@ -663,7 +707,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         else -> Unit
                     }
                 },
-                collect = { collectStart = app.ancienttrees.ui.CollectStart() },
+                collect = { openCollect() },
                 modifier = Modifier.align(Alignment.BottomCenter),
             )
         }

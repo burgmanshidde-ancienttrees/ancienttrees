@@ -49,6 +49,7 @@ ORIGIN = "-at=52.3731,4.8922"
 # arguments go to Android; LaunchArgs.kt reads the ones it knows.
 sys.path.insert(0, str(ROOT / "scripts"))
 import appsweep  # noqa: E402
+from emulator_lock import emulator  # noqa: E402
 
 FRAMES = {name: list(args) for name, args, _ in appsweep.screens(appsweep.pick_subjects())}
 # The screens with an Android port, in the order the page shows them.
@@ -79,6 +80,12 @@ def ios(frames, build):
 
 
 def android(frames, build):
+    """The Android half, under the emulator lock: other sessions share the emulator."""
+    with emulator("android_parity"):
+        _android(frames, build)
+
+
+def _android(frames, build):
     if build:
         env = dict(os.environ, JAVA_HOME=JBR, ANDROID_HOME=str(SDK))
         r = run(["./gradlew", "-q", "assembleDebug"], cwd=ROOT / "android", env=env)

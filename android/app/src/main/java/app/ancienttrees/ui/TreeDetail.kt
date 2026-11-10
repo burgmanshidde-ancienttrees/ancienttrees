@@ -96,6 +96,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.shadow
@@ -281,7 +282,7 @@ private fun TreeDetailInner(
         if (!signedIn) actions.onNeedsSignIn { choosingCollect = true } else choosingCollect = true
     }
 
-    BoxWithConstraints(Modifier.fillMaxSize().background(brand.ground)) {
+    BoxWithConstraints(Modifier.fillMaxSize().background(brand.ground).testTag("tree-page")) {
         val pageW = maxWidth
         val pageH = maxHeight
         // heroHeight: the lead's shape across the page, stopped at 60 percent of the screen.
@@ -649,7 +650,8 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                 .shadow(2.dp, CircleShape)
                 .background(glass, CircleShape)
                 .clickable(role = Role.Button, onClick = onBack)
-                .semantics { contentDescription = back },
+                .semantics { contentDescription = back }
+                .testTag("back-to-map"),
             contentAlignment = Alignment.Center,
         ) {
             Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(20.dp))
@@ -1443,10 +1445,11 @@ private fun CreditLine(tree: Tree, shotAt: Int) {
 
 /** barCircle: 52, the surface, a hairline; the moss tint when it is on. */
 @Composable
-private fun BarCircle(icon: ImageVector, label: String, on: Boolean = false, tint: Color = Brand.colors.moss, onClick: () -> Unit) {
+private fun BarCircle(icon: ImageVector, label: String, on: Boolean = false, tint: Color = Brand.colors.moss, tag: String = "", onClick: () -> Unit) {
     val brand = Brand.colors
     Box(
         Modifier
+            .testTag(tag)
             .size(52.dp)
             .background(if (on) brand.moss.copy(alpha = 0.12f) else brand.surface, CircleShape)
             .border(1.dp, if (on) brand.moss else brand.hairline, CircleShape)
@@ -1517,6 +1520,7 @@ private fun ActionBar(
                 if (hearted) Icons.Filled.Bookmark else Icons.Outlined.BookmarkBorder,
                 save,
                 tint = if (hearted) brand.moss else brand.inkSoft,
+                tag = "tree-save",
                 onClick = onHeart,
             )
         }
