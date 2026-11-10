@@ -20,16 +20,20 @@
 // The screen that notices only raises `pending`; the ROOT draws the sheet
 // (ReviewAskHost), because the screen that notices is usually the one going away.
 //
-// FORCED ON ANDROID (data/android-parity.json): the iPhone's Yes asks Apple's own
-// rating dialog (requestReview). Android has no system rating dialog without
-// Google's Play Core review library, a new third-party dependency that needs
-// Hidde's yes, and Google's in-app review guidelines forbid asking any question
-// before that dialog, which is exactly what the Polarsteps question does. Until
-// he decides, Yes opens the app's Play Store page, where the stars are.
+// ON ANDROID Yes opens Google Play's own review card (the Play review library),
+// as the iPhone's Yes opens Apple's (Hidde, 2026-11-10: "prima doe dat"). Google's
+// guide (developer.android.com/guide/playcore/in-app-review) asks for no question
+// before the card; no enforcement case was found, so the question stays as on the
+// iPhone, behind the remote switch android_review_question (data/app-switches.json).
+// Switched off, the card comes at the same moments without the question. Google
+// decides whether the card actually shows (a quota) and never says; only when
+// the request itself fails does the Play Store page open instead.
 
 package app.ancienttrees.ui
 
+import android.app.Activity
 import android.content.Context
+import android.content.ContextWrapper
 import android.content.Intent
 import android.net.Uri
 import androidx.compose.material.icons.Icons
@@ -180,7 +184,8 @@ fun ReviewAskHost(prompt: ReviewPrompt, args: List<String>, onFeedback: () -> Un
     LaunchedEffect(prompt.pending) {
         if (prompt.pending) {
             prompt.pending = false
-            asking = true
+            // The switch off: Google's card alone, at the same moment (Google's guide).
+            if (AppSwitches.reviewQuestion) asking = true else openReviewCard(context)
         }
     }
     if (!asking) return
@@ -193,7 +198,7 @@ fun ReviewAskHost(prompt: ReviewPrompt, args: List<String>, onFeedback: () -> Un
             SheetButton(stringResource(R.string.review_yes), SheetKind.PRIMARY) {
                 prompt.answeredYes()
                 asking = false
-                openStorePage(context)
+                openReviewCard(context)
             },
             SheetButton(stringResource(R.string.review_no), SheetKind.SECONDARY) {
                 asking = false
@@ -201,6 +206,22 @@ fun ReviewAskHost(prompt: ReviewPrompt, args: List<String>, onFeedback: () -> Un
             },
         ),
     )
+}
+
+/** Google Play's review card over this screen; the Play Store page when the request fails. */
+fun openReviewCard(context: Context) {
+    val activity = context.findActivity() ?: return openStorePage(context)
+    val manager = com.google.android.play.core.review.ReviewManagerFactory.create(activity)
+    manager.requestReviewFlow().addOnCompleteListener { request ->
+        if (request.isSuccessful) manager.launchReviewFlow(activity, request.result)
+        else openStorePage(context)
+    }
+}
+
+private tailrec fun Context.findActivity(): Activity? = when (this) {
+    is Activity -> this
+    is ContextWrapper -> baseContext.findActivity()
+    else -> null
 }
 
 /** The app's page on Google Play: the Play Store app, else the web page. */

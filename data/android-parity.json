@@ -63,7 +63,7 @@
     },
     {
       "what": "Rating the app",
-      "why": "The iPhone's Yes on the review question opens Apple's own rating dialog inside the app. Android has none without Google's Play review library (a new dependency), and Google forbids asking any question before that dialog, so Yes opens the app's Play Store page instead (Hidde, 2026-11-10: keep the question, no new dependency)."
+      "why": "The iPhone's Yes opens Apple's rating dialog; Android's opens Google Play's own review card (the Play review library), the platform's equivalent."
     }
   ],
   "map": {
@@ -285,7 +285,10 @@
   },
   "review-ask": {
     "status": "parity",
-    "differences": []
+    "differences": [],
+    "notes": [
+      "The question before Google's card is kept as on the iPhone (Hidde, 2026-11-10: \"prima doe dat\"), though Google's guide asks for none; it sits behind the remote switch android_review_question in data/app-switches.json, so it can be turned off without a build if Google ever objects. Off, the card comes at the same moments without the question."
+    ]
   },
   "signin-email": {
     "status": "parity",
