@@ -537,6 +537,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 scrollToTop = discoverTop,
                 discoverTo = launch.args.firstOrNull { it.startsWith("-discoverto=") }?.removePrefix("-discoverto="),
                 openCollection = collectionLink,
+                // No ambassador row for a place you already look after (Home.swift).
+                myPlaces = profiles.myPlaces.map { it.placeName },
                 act = DiscoverActions(
                     openTree = { open = it },
                     openPlace = { hit ->

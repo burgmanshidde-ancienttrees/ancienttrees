@@ -69,11 +69,10 @@
   "map": {
     "status": "in-progress",
     "differences": [
-      "Build 42's Airbnb sheet (LOG.md 2026-11-08: only the count bar at the lowest stop, the tab bar hidden) is decided but not in the iPhone's Swift on main yet; Android follows the Swift and takes it when it lands.",
-      "Your own trees (photographed by you, not ours) are not on the Android map or in the Collected shelf yet: Android has no store for them until My trees is ported (session 4).",
-      "The snackbar after a bookmark (\"Added to Want to visit\", Undo) is not ported yet.",
+      "Waiting on iOS, not an Android gap: Build 42's Airbnb sheet (LOG.md 2026-11-08: only the count bar at the lowest stop, the tab bar hidden) is decided but not in the iPhone's Swift on main yet; Android follows the Swift and takes it when it lands.",
       "First launch reads the 11.5 MB catalogue in about ten seconds on the one-core emulator under a loaded Mac; later launches read a binary snapshot. Not yet measured on a real phone.",
-      "Under a searched city the ambassador and Plus boxes (PlaceAsksBox, PlusUnderBox) are not ported yet (sessions 5 and 6)."
+      "Under a searched city the ambassador and Plus boxes (PlaceAsksBox, PlusUnderBox) are not ported yet (sessions 5 and 6).",
+      "Your own trees stand on the map in your own photograph and lead the Collected shelf (TreeMap.setMine, MineTile); the photograph comes from the account each launch, so a new install shows the plain mine pin until it has loaded (hard rule 11)."
     ],
     "owner": null
   },
@@ -103,12 +102,9 @@
   "tree": {
     "status": "in-progress",
     "differences": [
-      "Your own tree (a tree only you have: its menu to change name, species, age, girth, move the pin, merge, remove, and Share this tree) is not ported: it belongs to My trees (session 4).",
-      "Approximate location, Show us where it is: the iPhone opens the pin picker (PlacePin.swift); Android opens the report form with The pin is in the wrong place until the picker is ported.",
-      "The city link, the species fact, the Discover more chips and the full-map button open the map on that place, species or tree; the iPhone opens the city, country, species and tree-map pages, not ported yet (session 5).",
-      "The snackbar after a bookmark (Added to Want to visit, Undo) is not ported yet (as on the map).",
       "The review prompt after three trees and the tree_opened measurement are not ported (session 8).",
-      "Collect: Remove from collected (with Undo) in the collect sheet is not ported yet."
+      "Collect: Remove from collected (with Undo) in the collect sheet is not ported yet.",
+      "The snackbar after a bookmark: Added to Want to visit with View, Removed with Undo, as SaveHeart.swift (SnackBar.kt)."
     ],
     "owner": null
   },
@@ -221,7 +217,6 @@
     "status": "in-progress",
     "differences": [
       "Ancient Trees Plus is the first row under Help, as on the iPhone (Profile.swift helpCard): it opens the city's Plus question (PlaceBox.kt PlusQuestionSheet, from PlusAsk.swift), sends the anonymous answer to plus_answers and Tell me to plus_waitlist, and the row goes once this install answered (plus.answered.v1, device) or the server's switch is off. -plusask opens it.",
-      "Send feedback opens the website's contribute page until the feedback screen (Contribute.swift, feedbackMode) is ported.",
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
       "As profile: Directions offers Google Maps and Another maps app, Rate the app opens the Play Store (forced)."
     ],
