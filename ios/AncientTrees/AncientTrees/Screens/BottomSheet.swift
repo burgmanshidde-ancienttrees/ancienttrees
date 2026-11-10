@@ -514,6 +514,10 @@ struct BottomSheet<Header: View, Content: View>: View {
                     // Polarsteps' way back from the page: a chevron-down in a
                     // light circle where its logo stood over the globe; Apple's
                     // own sheets use the same glyph for "dismiss downward".
+                    // NOT DRAWN where it is switched off (the map tab): kept
+                    // invisible it was still a 36 point button to the layout
+                    // gate once the grip row folds (appfit SMALL, build 42).
+                    if barDepth > 0 && pageClose {
                     Button {
                         withAnimation(.spring(duration: 0.28)) { height = .half }
                     } label: {
@@ -534,12 +538,9 @@ struct BottomSheet<Header: View, Content: View>: View {
                     // bottom margin.
                     .opacity(barDepth > 0 && pageClose ? progress : 0)
                     .allowsHitTesting(barDepth > 0 && pageClose && progress > 0.9)
-                    // Gone to VoiceOver and the layout gate wherever it is
-                    // switched off: on the map tab the folding grip row clips
-                    // it to 36 points, a button nobody can see or tap.
-                    .accessibilityHidden(!(barDepth > 0 && pageClose && progress > 0.9))
                     .accessibilityLabel("Back to the map")
                     .accessibilityIdentifier("sheet-page-close")
+                    }
                 }
                 .frame(maxWidth: .infinity)
                 .frame(height: 44)
@@ -564,7 +565,10 @@ struct BottomSheet<Header: View, Content: View>: View {
                         if abs($0 - headerHeight) >= 1 { headerHeight = $0 }
                     }
                     .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named("sheet")).maxY } action: {
-                        let depth = results && height == .full ? $0 : max(90, $0)
+                        // At full on a results sheet the grip is gone; the
+                        // strip just under the field stays a handle (24),
+                        // so a scrolled list still comes down from there.
+                        let depth = results && height == .full ? $0 + 24 : max(90, $0)
                         if abs(depth - headerDepth) >= 1 { headerDepth = depth }
                         let bottom = $0 - lead
                         if abs(bottom - headerBottom) >= 1 { headerBottom = bottom }
