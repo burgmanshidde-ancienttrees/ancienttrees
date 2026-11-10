@@ -5,9 +5,10 @@ package app.ancienttrees.map
 
 object SpeciesIcons {
     sealed class Part {
+        abstract val alpha: Float
         /** SVG path data in a 40 by 40 box, with rotate(angle, cx, cy) or translate(x, y). */
-        data class Shape(val d: String, val alpha: Float, val rotate: FloatArray?, val translate: FloatArray?) : Part()
-        data class Oval(val left: Float, val top: Float, val right: Float, val bottom: Float, val alpha: Float) : Part()
+        data class Shape(val d: String, override val alpha: Float, val rotate: FloatArray?, val translate: FloatArray?) : Part()
+        data class Oval(val left: Float, val top: Float, val right: Float, val bottom: Float, override val alpha: Float) : Part()
     }
 
     val icons: Map<String, List<Part>> = mapOf(
