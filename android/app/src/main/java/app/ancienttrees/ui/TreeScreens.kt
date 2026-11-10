@@ -43,7 +43,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
@@ -75,7 +74,7 @@ fun TreeCard(
             Column(Modifier.weight(1f).padding(horizontal = 12.dp, vertical = 10.dp)) {
                 Text(
                     tree.name,
-                    fontFamily = FontFamily.Serif,
+                    fontFamily = Brand,
                     fontWeight = FontWeight.Bold,
                     fontSize = 17.sp,
                     maxLines = 2,
@@ -161,7 +160,7 @@ fun TreeScreen(tree: Tree, onBack: () -> Unit) {
                 Column {
                     Text(
                         tree.name,
-                        fontFamily = FontFamily.Serif,
+                        fontFamily = Brand,
                         fontWeight = FontWeight.Bold,
                         fontSize = 26.sp,
                         lineHeight = 31.sp,

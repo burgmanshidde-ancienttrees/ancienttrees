@@ -11,6 +11,7 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
+import android.graphics.Matrix
 import android.graphics.Paint
 import android.graphics.PointF
 import android.graphics.RectF
@@ -29,6 +30,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.core.graphics.PathParser
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -62,9 +64,25 @@ private const val LAYER_DOTS = "at-dots"
 private const val LAYER_PINS = "at-pins"
 private const val LAYER_FAR = "at-pins-far"
 private const val LAYER_CHOSEN = "at-chosen"
-private const val ICON = "at-pin-default"
 private const val KEY_ID = "at_id"
-private val TAPPABLE = arrayOf(LAYER_PINS, LAYER_FAR, LAYER_DOTS, LAYER_MINI)
+private const val LAYER_STACK = "at-stack"
+private const val LAYER_SPREAD = "at-spread"
+private val TAPPABLE = arrayOf(LAYER_SPREAD, LAYER_STACK, LAYER_PINS, LAYER_FAR, LAYER_DOTS, LAYER_MINI)
+
+/** The pile spread out right now, if any: its spot and where each tree stands. */
+private class Spread(val spot: String, val at: Map<String, LatLng>)
+
+/** What the map's listeners read, so they always see the newest trees and spread. */
+private class MapHolder {
+    var trees: List<Tree> = emptyList()
+    var spots: Map<String, List<Tree>> = emptyMap()
+    var spread: Spread? = null
+    var style: Style? = null
+
+    fun redraw() {
+        style?.getSourceAs<GeoJsonSource>(SOURCE)?.setGeoJson(collection(trees, spots, spread))
+    }
+}
 private val MOSS = Color.rgb(51, 89, 51)
 
 /**
@@ -89,6 +107,7 @@ fun TreeMapView(
     val latestSelect by rememberUpdatedState(onSelect)
     val byId = remember(trees) { trees.associateBy { it.id } }
     val latestById by rememberUpdatedState(byId)
+    val holder = remember { MapHolder() }
     var ready by remember { mutableStateOf<Pair<MapLibreMap, Style>?>(null) }
 
     val mapView = remember {
@@ -102,13 +121,38 @@ fun TreeMapView(
                 map.uiSettings.isLogoEnabled = false
                 map.uiSettings.isRotateGesturesEnabled = false
                 map.setStyle(Style.Builder().fromUri(if (dark) STYLE_DARK else STYLE_LIGHT)) { style ->
-                    style.addImage(ICON, pinBitmap(context))
+                    // One image per shape, about fifteen, never one per species.
+                    for (shape in SpeciesIcons.icons.keys) {
+                        style.addImage(iconName(shape), pinBitmap(context, shape))
+                    }
+                    for (n in 2..STACK_ICONS) style.addImage(stackName(n), stackBitmap(context, n))
                     installLayers(style)
+                    holder.style = style
                     ready = map to style
                 }
                 map.addOnCameraIdleListener { latestView(viewBox(map), here(map)) }
+                // A spread stands a fixed number of points from its spot, so a
+                // pinch or a drag folds it back.
+                map.addOnCameraMoveStartedListener { reason ->
+                    if (reason == MapLibreMap.OnCameraMoveStartedListener.REASON_API_GESTURE && holder.spread != null) {
+                        holder.spread = null
+                        holder.redraw()
+                    }
+                }
                 map.addOnMapClickListener { point ->
-                    latestSelect(treeAt(map, map.projection.toScreenLocation(point), context, latestById))
+                    val at = map.projection.toScreenLocation(point)
+                    val stack = stackAt(map, at, context)
+                    if (stack != null) {
+                        holder.spread = spreadOut(map, stack, holder.spots[stack].orEmpty(), context)
+                        holder.redraw()
+                        return@addOnMapClickListener true
+                    }
+                    val tree = treeAt(map, at, context, latestById)
+                    if (tree == null && holder.spread != null) {
+                        holder.spread = null
+                        holder.redraw()
+                    }
+                    latestSelect(tree)
                     true
                 }
             }
@@ -133,8 +177,11 @@ fun TreeMapView(
     }
 
     LaunchedEffect(ready, trees) {
-        val style = ready?.second ?: return@LaunchedEffect
-        style.getSourceAs<GeoJsonSource>(SOURCE)?.setGeoJson(collection(trees))
+        if (ready == null) return@LaunchedEffect
+        holder.trees = trees
+        holder.spots = Stacks.spots(trees)
+        holder.spread = null
+        holder.redraw()
     }
 
     LaunchedEffect(ready, selected?.id) {
@@ -205,18 +252,38 @@ private fun here(map: MapLibreMap): Here? = runCatching {
     c.lastKnownLocation?.let { Here(it.latitude, it.longitude) }
 }.getOrNull()
 
-/** The same keys on every feature, always: a source with uneven properties has emptied the iPhone's map. */
-private fun collection(trees: List<Tree>): FeatureCollection =
-    FeatureCollection.fromFeatures(
-        trees.map { t ->
-            Feature.fromGeometry(Point.fromLngLat(t.lng, t.lat)).apply {
-                addStringProperty(KEY_ID, t.id)
-                addStringProperty("icon", ICON)
-                addNumberProperty("pr", PinRules.priority(t.photo != null, t.saves))
-                addBooleanProperty("mini", t.mini)
+/**
+ * The same keys on every feature, always: a source with uneven properties has
+ * emptied the iPhone's map. One feature per spot; the first tree on a shared spot
+ * carries the count, unless that pile is the one spread out.
+ */
+private fun collection(trees: List<Tree>, spots: Map<String, List<Tree>>, spread: Spread?): FeatureCollection {
+    val features = ArrayList<Feature>(trees.size)
+    for ((spot, group) in spots) {
+        if (spread != null && spread.spot == spot) {
+            for (t in group) {
+                val p = spread.at[t.id] ?: continue
+                features.add(feature(t, p.latitude, p.longitude, n = 1, spot = spot, spread = true))
             }
-        },
-    )
+        } else {
+            val head = group.first()
+            features.add(feature(head, head.lat, head.lng, n = group.size, spot = spot, spread = false))
+        }
+    }
+    return FeatureCollection.fromFeatures(features)
+}
+
+private fun feature(t: Tree, lat: Double, lng: Double, n: Int, spot: String, spread: Boolean): Feature =
+    Feature.fromGeometry(Point.fromLngLat(lng, lat)).apply {
+        addStringProperty(KEY_ID, t.id)
+        addStringProperty("icon", iconName(SpeciesIcons.archetype(t.commonName)))
+        addStringProperty("stack", if (n > 1) stackName(minOf(n, STACK_ICONS)) else "")
+        addStringProperty("spot", spot)
+        addNumberProperty("n", n)
+        addNumberProperty("pr", PinRules.priority(t.photo != null, t.saves))
+        addBooleanProperty("mini", t.mini)
+        addBooleanProperty("spread", spread)
+    }
 
 private fun installLayers(style: Style) {
     style.addSource(GeoJsonSource(SOURCE, FeatureCollection.fromFeatures(emptyList<Feature>())))
@@ -249,8 +316,38 @@ private fun installLayers(style: Style) {
         PropertyFactory.iconAnchor(Property.ICON_ANCHOR_CENTER),
         PropertyFactory.symbolSortKey(Expression.get("pr")),
     )
-    style.addLayer(pins(LAYER_PINS, PinRules.PIN_DISTANCE).apply { minZoom = PinRules.FAR_ZOOM })
-    style.addLayer(pins(LAYER_FAR, PinRules.FAR_PIN_DISTANCE).apply { maxZoom = PinRules.FAR_ZOOM })
+    // A pile's first tree is an ordinary pin until STACK_ZOOM, then its bubble.
+    val single = Expression.all(
+        Expression.eq(Expression.get("spread"), Expression.literal(false)),
+        Expression.any(
+            Expression.eq(Expression.get("n"), Expression.literal(1)),
+            Expression.lt(Expression.zoom(), Expression.literal(Stacks.STACK_ZOOM)),
+        ),
+    )
+    style.addLayer(pins(LAYER_PINS, PinRules.PIN_DISTANCE).apply { minZoom = PinRules.FAR_ZOOM; setFilter(single) })
+    style.addLayer(pins(LAYER_FAR, PinRules.FAR_PIN_DISTANCE).apply { maxZoom = PinRules.FAR_ZOOM; setFilter(single) })
+
+    style.addLayer(
+        SymbolLayer(LAYER_STACK, SOURCE).withProperties(
+            PropertyFactory.iconImage(Expression.get("stack")),
+            PropertyFactory.iconAllowOverlap(true),
+            PropertyFactory.iconAnchor(Property.ICON_ANCHOR_CENTER),
+        ).apply {
+            setFilter(
+                Expression.all(
+                    Expression.gt(Expression.get("n"), Expression.literal(1)),
+                    Expression.gte(Expression.zoom(), Expression.literal(Stacks.STACK_ZOOM)),
+                ),
+            )
+        },
+    )
+    style.addLayer(
+        SymbolLayer(LAYER_SPREAD, SOURCE).withProperties(
+            PropertyFactory.iconImage(Expression.get("icon")),
+            PropertyFactory.iconAllowOverlap(true),
+            PropertyFactory.iconAnchor(Property.ICON_ANCHOR_CENTER),
+        ).apply { setFilter(Expression.eq(Expression.get("spread"), Expression.literal(true))) },
+    )
 
     style.addLayer(
         SymbolLayer(LAYER_CHOSEN, SOURCE).withProperties(
@@ -267,16 +364,73 @@ private fun treeAt(map: MapLibreMap, at: PointF, context: Context, byId: Map<Str
     val reach = 22 * context.resources.displayMetrics.density
     val box = RectF(at.x - reach, at.y - reach, at.x + reach, at.y + reach)
     return map.queryRenderedFeatures(box, *TAPPABLE)
-        .mapNotNull { f -> if (f.hasProperty(KEY_ID)) byId[f.getStringProperty(KEY_ID)] else null }
-        .distinctBy { it.id }
-        .minByOrNull { t ->
-            val p = map.projection.toScreenLocation(LatLng(t.lat, t.lng))
-            (p.x - at.x) * (p.x - at.x) + (p.y - at.y) * (p.y - at.y)
+        .filter { f -> f.hasProperty(KEY_ID) && !(f.hasProperty("n") && f.getNumberProperty("n").toInt() > 1 && map.cameraPosition.zoom >= Stacks.STACK_ZOOM) }
+        .mapNotNull { f ->
+            val tree = byId[f.getStringProperty(KEY_ID)] ?: return@mapNotNull null
+            val g = f.geometry() as? Point ?: return@mapNotNull null
+            val p = map.projection.toScreenLocation(LatLng(g.latitude(), g.longitude()))
+            tree to (p.x - at.x) * (p.x - at.x) + (p.y - at.y) * (p.y - at.y)
         }
+        .minByOrNull { it.second }
+        ?.first
 }
 
-/** A filled disc with a white ring, 38 points across, the iPhone's default pin. */
-private fun pinBitmap(context: Context): Bitmap {
+/** The spot of a pile's bubble under a finger, or null. */
+private fun stackAt(map: MapLibreMap, at: PointF, context: Context): String? {
+    if (map.cameraPosition.zoom < Stacks.STACK_ZOOM) return null
+    val reach = 22 * context.resources.displayMetrics.density
+    val box = RectF(at.x - reach, at.y - reach, at.x + reach, at.y + reach)
+    return map.queryRenderedFeatures(box, LAYER_STACK)
+        .firstOrNull { it.hasProperty("spot") }
+        ?.getStringProperty("spot")
+}
+
+/** Spread a pile round its spot at the zoom it is tapped at. */
+private fun spreadOut(map: MapLibreMap, spot: String, trees: List<Tree>, context: Context): Spread? {
+    val head = trees.firstOrNull() ?: return null
+    val density = context.resources.displayMetrics.density
+    val centre = map.projection.toScreenLocation(LatLng(head.lat, head.lng))
+    val at = trees.zip(Stacks.spreadOffsets(trees.size)).associate { (t, o) ->
+        t.id to map.projection.fromScreenLocation(PointF(centre.x + o.first * density, centre.y + o.second * density))
+    }
+    return Spread(spot, at)
+}
+
+private const val STACK_ICONS = 99
+
+private fun stackName(n: Int) = "at-stack-$n"
+
+/** A pile's bubble: moss, white ring, the count in white, one size whatever the count. */
+private fun stackBitmap(context: Context, n: Int): Bitmap {
+    val metrics = context.resources.displayMetrics
+    val density = metrics.density
+    val size = (PinRules.PIN_SIZE * density).toInt()
+    val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
+    bitmap.density = metrics.densityDpi
+    val canvas = Canvas(bitmap)
+    val centre = size / 2f
+    val paint = Paint(Paint.ANTI_ALIAS_FLAG)
+    paint.color = MOSS
+    canvas.drawCircle(centre, centre, centre - 2 * density, paint)
+    paint.color = Color.WHITE
+    paint.style = Paint.Style.STROKE
+    paint.strokeWidth = 3 * density
+    canvas.drawCircle(centre, centre, centre - 2.5f * density, paint)
+    paint.style = Paint.Style.FILL
+    paint.textAlign = Paint.Align.CENTER
+    paint.textSize = 15 * density
+    paint.isFakeBoldText = true
+    canvas.drawText(n.toString(), centre, centre - (paint.descent() + paint.ascent()) / 2, paint)
+    return bitmap
+}
+
+private fun iconName(shape: String) = "at-pin-$shape"
+
+/**
+ * The iPhone's pin: a moss disc, a white ring, and the species silhouette in
+ * white, 20 points tall, so a ginkgo looks like a ginkgo before anyone taps it.
+ */
+private fun pinBitmap(context: Context, shape: String): Bitmap {
     val metrics = context.resources.displayMetrics
     val density = metrics.density
     val size = (PinRules.PIN_SIZE * density).toInt()
@@ -292,5 +446,26 @@ private fun pinBitmap(context: Context): Bitmap {
     paint.style = Paint.Style.STROKE
     paint.strokeWidth = 3 * density
     canvas.drawCircle(centre, centre, centre - 2.5f * density, paint)
+
+    val glyph = 20 * density
+    paint.style = Paint.Style.FILL
+    canvas.save()
+    canvas.translate((size - glyph) / 2, (size - glyph) / 2)
+    canvas.scale(glyph / 40f, glyph / 40f)
+    for (part in SpeciesIcons.icons[shape].orEmpty()) {
+        paint.alpha = (part.alpha * 255).toInt()
+        when (part) {
+            is SpeciesIcons.Part.Oval -> canvas.drawOval(RectF(part.left, part.top, part.right, part.bottom), paint)
+            is SpeciesIcons.Part.Shape -> {
+                val path = runCatching { PathParser.createPathFromPathData(part.d) }.getOrNull() ?: continue
+                val m = Matrix()
+                part.rotate?.let { m.setRotate(it[0], it[1], it[2]) }
+                part.translate?.let { m.setTranslate(it[0], it[1]) }
+                path.transform(m)
+                canvas.drawPath(path, paint)
+            }
+        }
+    }
+    canvas.restore()
     return bitmap
 }
