@@ -324,7 +324,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     LaunchedEffect(catalogue) {
         val c = catalogue ?: return@LaunchedEffect
         launch.openTree?.let { id -> c.tree(id)?.let { open = it } }
-        if (launch.signIn) asking = true
+        if (launch.signIn) {
+            // The sweep's -signin is the keep-a-tree sheet, as on the iPhone.
+            signInReason = app.ancienttrees.ui.SignInReason.KeepTree("")
+            asking = true
+        }
         if (launch.collectOpen) collectStart = app.ancienttrees.ui.CollectStart()
         // The sweep's stand-ins for an account (debug builds only, nothing sent).
         if (launch.mineDemo) myTrees.seedDemo(launch.at?.first ?: DAM_SQUARE.lat, launch.at?.second ?: DAM_SQUARE.lng)

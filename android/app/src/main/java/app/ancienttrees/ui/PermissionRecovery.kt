@@ -15,7 +15,7 @@ import android.net.Uri
 import android.provider.Settings
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Image
-import androidx.compose.material.icons.outlined.LocationOn
+import androidx.compose.material.icons.outlined.NearMe
 import androidx.compose.material.icons.outlined.PhotoCamera
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
@@ -36,7 +36,7 @@ fun PermissionRecovery(permission: Permission, onDismiss: () -> Unit, onDecline:
         title = stringResource(title),
         message = stringResource(body),
         icon = when (permission) {
-            Permission.LOCATION -> Icons.Outlined.LocationOn
+            Permission.LOCATION -> Icons.Outlined.NearMe
             Permission.CAMERA -> Icons.Outlined.PhotoCamera
             Permission.PHOTOS -> Icons.Outlined.Image
         },

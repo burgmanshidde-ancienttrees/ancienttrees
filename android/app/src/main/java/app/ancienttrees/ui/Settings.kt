@@ -45,8 +45,8 @@ import androidx.compose.material.icons.automirrored.outlined.InsertDriveFile
 import androidx.compose.material.icons.filled.UnfoldMore
 import androidx.compose.material.icons.outlined.Description
 import androidx.compose.material.icons.outlined.Lock
-import androidx.compose.material.icons.outlined.LocationOff
-import androidx.compose.material.icons.outlined.LocationOn
+import androidx.compose.material.icons.outlined.NearMe
+import androidx.compose.material.icons.outlined.NearMeDisabled
 import androidx.compose.material.icons.outlined.NorthEast
 import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.StarOutline
@@ -155,7 +155,7 @@ fun SettingsScreen(host: SettingsHost, onBack: () -> Unit, askSignOut: Boolean =
                 // LOCATION: On or Off; a tap asks when nothing was asked, opens the
                 // recovery sheet after a no, and the system's page when it is on.
                 SettingsRow(
-                    if (host.locationAllowed) Icons.Outlined.LocationOn else Icons.Outlined.LocationOff,
+                    if (host.locationAllowed) Icons.Outlined.NearMe else Icons.Outlined.NearMeDisabled,
                     stringResource(R.string.settings_location),
                     value = stringResource(if (host.locationAllowed) R.string.settings_on else R.string.settings_off),
                     tag = "profile-location",

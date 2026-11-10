@@ -414,7 +414,7 @@ private fun SearchField(query: String, onChange: (String) -> Unit) {
         decorationBox = { inner ->
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.fillMaxWidth().height(36.dp).background(brand.surfaceMuted, RoundedCornerShape(10.dp)).padding(horizontal = 8.dp),
+                modifier = Modifier.fillMaxWidth().height(40.dp).background(brand.surfaceMuted, RoundedCornerShape(50)).padding(horizontal = 12.dp),
             ) {
                 Icon(Icons.Outlined.Search, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
                 Spacer(Modifier.size(6.dp))
