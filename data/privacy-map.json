@@ -34,7 +34,7 @@
   },
   "services": {
     "Supabase": "accounts and everything stored with them",
-    "PostHog": "app use",
+    "PostHog": "app use; free plan, events kept one year (Hidde, 2026-11-10); a paid plan changes the retention and the privacy page with it",
     "Google": "Analytics after consent, sign-in with Google, the mail inbox",
     "Apple": "sign-in with Apple, MetricKit crash reports",
     "Resend": "outgoing mail (scripts/mailer.py)",
