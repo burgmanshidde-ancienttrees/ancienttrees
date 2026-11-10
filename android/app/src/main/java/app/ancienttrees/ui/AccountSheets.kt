@@ -64,7 +64,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 private fun SheetTitle(text: String) {
-    Text(text, fontFamily = Brand, fontWeight = FontWeight.Bold, fontSize = 26.sp, lineHeight = 31.sp)
+    Text(text, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 26.sp, lineHeight = 31.sp)
 }
 
 @Composable
@@ -230,7 +230,7 @@ fun AccountSheet(
                                     Spacer(Modifier.size(12.dp))
                                 }
                                 Column(Modifier.weight(1f)) {
-                                    Text(t.name, fontFamily = Brand, fontWeight = FontWeight.Bold, maxLines = 1,
+                                    Text(t.name, fontFamily = BrandFace, fontWeight = FontWeight.Bold, maxLines = 1,
                                         overflow = TextOverflow.Ellipsis)
                                     Text("${t.commonName} \u00B7 ${t.city}", style = MaterialTheme.typography.bodySmall,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1,

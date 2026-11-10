@@ -99,6 +99,8 @@ fun TreeMapView(
     recentre: Int,
     onView: (ViewBox, Here?) -> Unit,
     modifier: Modifier = Modifier,
+    /** A fixed place to open on instead of the person's fix (the parity script's -at). */
+    focus: Pair<Double, Double>? = null,
 ) {
     val latestView by rememberUpdatedState(onView)
     val context = LocalContext.current
@@ -202,6 +204,11 @@ fun TreeMapView(
             located = true
             follow(map)
         }
+    }
+    LaunchedEffect(ready, focus) {
+        val map = ready?.first ?: return@LaunchedEffect
+        val f = focus ?: return@LaunchedEffect
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(f.first, f.second), NEAR_ZOOM))
     }
     LaunchedEffect(recentre) {
         val map = ready?.first ?: return@LaunchedEffect

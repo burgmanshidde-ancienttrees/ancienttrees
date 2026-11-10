@@ -1,0 +1,86 @@
+{
+  "_note": "Per iOS screen (SweepFrames.swift names): its Android status (not-ported, in-progress, parity) and the differences still open. Read by scripts/android_parity.py. DECISIONS.md 2026-11-10.",
+  "_android_forced": [
+    {
+      "what": "Icons",
+      "why": "SF Symbols exist only on Apple platforms; Android uses Material Symbols, the matching glyph each time (map, search, eco leaf, photo_camera)."
+    },
+    {
+      "what": "Glass behind floating bars",
+      "why": "Android has no system material blur for what lies under a view; the grey glass is the ground at 92 percent with the iPhone's 6 percent ink wash."
+    },
+    {
+      "what": "Back",
+      "why": "Android's system back gesture and button close the top sheet or page, as every Android app does."
+    },
+    {
+      "what": "Permission dialogs",
+      "why": "The location and camera questions are the system's own dialogs."
+    },
+    {
+      "what": "Sign in",
+      "why": "Google instead of Apple; Sign in with Apple does not exist on Android."
+    },
+    {
+      "what": "Status and navigation bars",
+      "why": "Android's own bars at the top and bottom of the screen."
+    }
+  ],
+  "map": {
+    "status": "in-progress",
+    "differences": [
+      "Tab bar ported from TabBar.swift; the sheet above it is still Material's, not BottomSheet.swift (build 42 Airbnb sheet).",
+      "No blue dot for the person's position, and My location does not follow a new fix.",
+      "Location chip and account button are Android interim controls, not the iPhone's.",
+      "The catalogue takes several seconds to read on the emulator (org.json over 11.5 MB, about 100 MB of memory), where the iPhone opens at once."
+    ]
+  },
+  "map-full": {
+    "status": "not-ported",
+    "differences": [
+      "Sheet at full height not ported (BottomSheet.swift)."
+    ]
+  },
+  "map-pin": {
+    "status": "not-ported",
+    "differences": [
+      "Tree card not ported from TreeCard.swift."
+    ]
+  },
+  "tree": {
+    "status": "not-ported",
+    "differences": [
+      "Tree page written as a basic page; TreeDetail.swift not ported."
+    ]
+  },
+  "tree-nophoto": {
+    "status": "not-ported",
+    "differences": [
+      "As tree."
+    ]
+  },
+  "signin": {
+    "status": "not-ported",
+    "differences": [
+      "Sign-in sheet written from the website's copy; SignIn.swift not ported."
+    ]
+  },
+  "explore": {
+    "status": "not-ported",
+    "differences": [
+      "Discover (Home.swift) not ported; the tab raises the list for now."
+    ]
+  },
+  "collection-tab": {
+    "status": "not-ported",
+    "differences": [
+      "My trees (Collect.swift) not ported; the tab opens the account sheet for now."
+    ]
+  },
+  "profile": {
+    "status": "not-ported",
+    "differences": [
+      "Profile and settings (Profile.swift) not ported."
+    ]
+  }
+}

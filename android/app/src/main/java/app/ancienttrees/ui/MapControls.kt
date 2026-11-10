@@ -128,7 +128,7 @@ fun TreeList(inView: InView, here: Here?, miles: Boolean, onOpen: (Tree) -> Unit
                     Column(Modifier.weight(1f)) {
                         Text(
                             tree.name,
-                            fontFamily = Brand,
+                            fontFamily = BrandFace,
                             fontWeight = FontWeight.Bold,
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,

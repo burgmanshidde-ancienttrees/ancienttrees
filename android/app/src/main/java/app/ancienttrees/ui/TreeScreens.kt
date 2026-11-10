@@ -82,7 +82,7 @@ fun TreeCard(
             Column(Modifier.weight(1f).padding(horizontal = 12.dp, vertical = 10.dp)) {
                 Text(
                     tree.name,
-                    fontFamily = Brand,
+                    fontFamily = BrandFace,
                     fontWeight = FontWeight.Bold,
                     fontSize = 17.sp,
                     maxLines = 2,
@@ -179,7 +179,7 @@ fun TreeScreen(
                 Column {
                     Text(
                         tree.name,
-                        fontFamily = Brand,
+                        fontFamily = BrandFace,
                         fontWeight = FontWeight.Bold,
                         fontSize = 26.sp,
                         lineHeight = 31.sp,
@@ -327,7 +327,7 @@ private fun SeasonsRow(tree: Tree, month: Int, onShow: (Int) -> Unit, onAsk: (()
     val filled = tiles.count { it.first != null }
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
         Row(verticalAlignment = Alignment.Bottom) {
-            Text(stringResource(R.string.seasons_heading), fontFamily = Brand, fontWeight = FontWeight.Bold,
+            Text(stringResource(R.string.seasons_heading), fontFamily = BrandFace, fontWeight = FontWeight.Bold,
                 fontSize = 18.sp, modifier = Modifier.weight(1f))
             Text(stringResource(R.string.seasons_tally, filled), fontSize = 14.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
