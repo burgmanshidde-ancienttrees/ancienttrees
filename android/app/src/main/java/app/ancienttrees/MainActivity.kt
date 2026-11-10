@@ -10,7 +10,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.provider.Settings
+
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -52,7 +52,6 @@ import app.ancienttrees.ui.DiscoverActions
 import app.ancienttrees.ui.DiscoverScreen
 import app.ancienttrees.ui.HeroCover
 import app.ancienttrees.ui.SearchHit
-import app.ancienttrees.ui.openProfileOnWeb
 import app.ancienttrees.ui.SignInSheet
 import app.ancienttrees.ui.LocalTreeMarks
 import app.ancienttrees.ui.MapLaunch
@@ -139,12 +138,6 @@ private fun locationGranted(context: Context) = LOCATION.any {
     ContextCompat.checkSelfPermission(context, it) == PackageManager.PERMISSION_GRANTED
 }
 
-private fun openAppSettings(context: Context) {
-    context.startActivity(
-        Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.fromParts("package", context.packageName, null)),
-    )
-}
-
 @Composable
 private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchArgs.NONE) {
     val context = LocalContext.current
@@ -175,6 +168,19 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     var showAccount by remember { mutableStateOf(false) }
 
     val signedIn = account.state is SignIn.SignedIn
+    // SIGN-IN AND PROFILE (ProfilePages.kt): settings, people, a person, the editor.
+    val profiles = remember { app.ancienttrees.account.Profiles(launch.args) }
+    val moderation = remember { app.ancienttrees.ui.Moderation() }
+    val routes = remember { app.ancienttrees.ui.ProfileRoutes(launch.args) }
+    var signInReason by remember { mutableStateOf<app.ancienttrees.ui.SignInReason?>(null) }
+    var recovering by remember { mutableStateOf("-refused" in launch.args) }
+    // The early-adopter tag on My trees: the server's created_at against the feed's cutoff
+    // (EarlyAdopter.swift); -earlyadopter and -earlyadoptersheet draw it for the sweep.
+    var earlyAdopter by remember { mutableStateOf("-earlyadopter" in launch.args || "-earlyadoptersheet" in launch.args) }
+    // The sweep's -signed-in stand-in draws the signed-in screens; nothing is sent without a real session.
+    val shownSignedIn = signedIn || launch.signedIn
+    val myId = account.session?.userId ?: if (launch.signedIn) "00000000-0000-0000-0000-000000000000" else null
+    val myEmail = (account.state as? SignIn.SignedIn)?.email ?: if (launch.signedIn) "test@ancienttrees.app" else null
     // COLLECT: sign in before the camera, never after the photograph (the
     // iPhone's rule, 2026-10-12). The photograph is proof of presence, so the
     // camera is the only way in; where the phone stood goes with it.
@@ -257,7 +263,17 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         if (!signedIn) {
             saves.forget()
             myTrees.forget()
+            if (!launch.signedIn) profiles.forgetLocally()
             return@LaunchedEffect
+        }
+        scope.launch {
+            val t = account.fresh()?.accessToken
+            profiles.load(account.session?.userId, t)
+            moderation.load(account.session?.userId, t)
+            if (t != null) app.ancienttrees.account.EarlyAdopter.status(t)?.let { st ->
+                earlyAdopter = st.hasBadge
+                if (st.hasBadge && !st.seenSheet) routes.earlyAdopterSheet = true
+            }
         }
         asking = false
         saves.load()
@@ -308,7 +324,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     LaunchedEffect(catalogue) {
         val c = catalogue ?: return@LaunchedEffect
         launch.openTree?.let { id -> c.tree(id)?.let { open = it } }
-        if (launch.signIn) asking = true
+        if (launch.signIn) {
+            // The sweep's -signin is the keep-a-tree sheet, as on the iPhone.
+            signInReason = app.ancienttrees.ui.SignInReason.KeepTree("")
+            asking = true
+        }
         if (launch.collectOpen) collectStart = app.ancienttrees.ui.CollectStart()
         // The sweep's stand-ins for an account (debug builds only, nothing sent).
         if (launch.mineDemo) myTrees.seedDemo(launch.at?.first ?: DAM_SQUARE.lat, launch.at?.second ?: DAM_SQUARE.lng)
@@ -354,7 +374,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 signedIn = signedIn,
                 launch = MapLaunch(sheet = launch.sheet, select = launch.select, search = launch.search),
                 showDot = granted && fixedAt == null,
-                onUseMyLocation = { if (refused) openAppSettings(context) else ask.launch(LOCATION) },
+                // After a no, the recovery sheet first (PermissionRecovery.swift), then Settings.
+                onUseMyLocation = { if (refused) recovering = true else ask.launch(LOCATION) },
                 onNeedsSignIn = { then ->
                     pendingAfterSignIn = then
                     asking = true
@@ -391,7 +412,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         tab = 0
                         go = System.nanoTime() to SearchHit.Species(name)
                     },
-                    openPerson = { id -> openProfileOnWeb(context, id) },
+                    openPerson = { id -> routes.openPerson(id) },
                     showMap = { tab = 0 },
                     openWantToVisit = {
                         myLane = app.ancienttrees.ui.TreesLane.WANT
@@ -406,12 +427,21 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 ),
             )
         }
-        // MY TREES (Collect.swift). The gear, the name and the people controls lead
-        // to the account sheet until Profile.swift and People.swift are ported.
+        // MY TREES (Collect.swift). The gear opens Settings, your face the profile
+        // editor, the person-with-a-plus Find people, the counts the follow lists.
         if (tab == 2 && cat != null) {
             val mtSignedIn = signedIn || launch.signedIn
             CompositionLocalProvider(
                 LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+                app.ancienttrees.ui.LocalMyHeader provides app.ancienttrees.ui.MyHeader(
+                    profiles = profiles,
+                    earlyAdopter = earlyAdopter,
+                    openPlace = { slug, name ->
+                        val t = cat.trees(slug).firstOrNull()
+                        tab = 0
+                        go = System.nanoTime() to SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0)
+                    },
+                ),
             ) {
                 androidx.compose.runtime.key(myLane) {
                     app.ancienttrees.ui.MyTreesScreen(
@@ -420,20 +450,20 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         located = located,
                         granted = granted,
                         signedIn = mtSignedIn,
-                        email = (account.state as? SignIn.SignedIn)?.email,
+                        email = myEmail,
                         saves = saves,
                         mine = myTrees,
                         initialSheet = if (launch.sheetFull) app.ancienttrees.ui.SheetHeight.FULL else app.ancienttrees.ui.SheetHeight.HALF,
                         initialLane = myLane,
-                        onUseMyLocation = { if (refused) openAppSettings(context) else ask.launch(LOCATION) },
+                        onUseMyLocation = { if (refused) recovering = true else ask.launch(LOCATION) },
                         actions = app.ancienttrees.ui.MyTreesActions(
                             openTree = { open = it },
                             openMine = { openMine = it },
                             signIn = { asking = true },
-                            settings = { if (signedIn) showAccount = true else asking = true },
-                            editProfile = { if (signedIn) showAccount = true else asking = true },
-                            findPeople = { if (signedIn) showAccount = true },
-                            followList = { if (signedIn) showAccount = true },
+                            settings = { routes.openSettings() },
+                            editProfile = { if (mtSignedIn) routes.editProfile = true else asking = true },
+                            findPeople = { routes.openPeople(app.ancienttrees.ui.PeopleSource.SEARCH) },
+                            followList = { f -> routes.openPeople(if (f) app.ancienttrees.ui.PeopleSource.FOLLOWERS else app.ancienttrees.ui.PeopleSource.FOLLOWING) },
                             showMap = { tab = 0 },
                         ),
                     )
@@ -455,6 +485,40 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     },
                 )
             }
+        }
+        if (routes.showing || routes.editProfile || routes.earlyAdopterSheet) {
+            app.ancienttrees.ui.ProfilePages(
+                routes = routes,
+                settings = app.ancienttrees.ui.SettingsHost(
+                    account = account,
+                    profiles = profiles,
+                    signedIn = shownSignedIn,
+                    email = myEmail,
+                    locationAllowed = granted,
+                    locationRefused = refused,
+                    askLocation = { ask.launch(LOCATION) },
+                    signIn = { asking = true },
+                    editProfile = { routes.editProfile = true },
+                    openPrivacy = { routes.stack.add(app.ancienttrees.ui.ProfilePage.Privacy) },
+                    signedOut = { routes.clear() },
+                ),
+                people = app.ancienttrees.ui.PeopleHost(
+                    account = account,
+                    profiles = profiles,
+                    moderation = moderation,
+                    catalogue = catalogue,
+                    yourTrees = (saves.hearts + saves.collected).toList(),
+                    userId = myId,
+                    args = launch.args,
+                    signIn = { r -> signInReason = r; asking = true },
+                    editName = { routes.editProfile = true },
+                    openPerson = { routes.openPerson(it) },
+                    openTree = { open = it },
+                ),
+                onEarlyAdopterSeen = {
+                    scope.launch { account.fresh()?.accessToken?.let { app.ancienttrees.account.EarlyAdopter.markSeen(it) } }
+                },
+            )
         }
         open?.let { tree ->
             CompositionLocalProvider(
@@ -497,7 +561,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 )
             }
         }
-        if (open == null && openMine == null && !searching && !discoverSearching && draft == null) {
+        if (recovering) {
+            app.ancienttrees.ui.PermissionRecovery(app.ancienttrees.ui.Permission.LOCATION, onDismiss = { recovering = false })
+        }
+        if (open == null && openMine == null && !searching && !discoverSearching && draft == null && !routes.showing) {
             TabBar(
                 selected = tab,
                 select = { i ->
@@ -515,8 +582,9 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         if (asking && !signedIn) {
             SignInSheet(
                 account,
-                treeName = (pendingHeart ?: pendingCollect)?.name,
-                onDismiss = { asking = false; pendingHeart = null; pendingCollect = null; pendingAfterSignIn = null },
+                reason = signInReason ?: (pendingHeart ?: pendingCollect)?.name?.let { app.ancienttrees.ui.SignInReason.KeepTree(it) }
+                    ?: app.ancienttrees.ui.SignInReason.General,
+                onDismiss = { asking = false; signInReason = null; pendingHeart = null; pendingCollect = null; pendingAfterSignIn = null },
             )
         }
         androidx.compose.animation.AnimatedVisibility(

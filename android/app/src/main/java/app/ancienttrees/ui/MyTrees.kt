@@ -366,10 +366,52 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
 
 // MARK: - the header (whoYouAre, whoRow)
 
+/**
+ * Your profile as the server holds it (account/Profiles.kt) and whether the
+ * early-adopter tag shows, provided by MainActivity; the demo seed's MyProfile
+ * stands in when nothing is provided.
+ */
+class MyHeader(
+    val profiles: app.ancienttrees.account.Profiles,
+    val earlyAdopter: Boolean,
+    val openPlace: (slug: String, name: String) -> Unit,
+)
+
+val LocalMyHeader = androidx.compose.runtime.staticCompositionLocalOf<MyHeader?> { null }
+
 @Composable
 private fun WhoYouAre(signedIn: Boolean, email: String?, mine: MyTrees, actions: MyTreesActions) {
+    val header = LocalMyHeader.current
+    val p = header?.profiles
+    // YOUR TAGS ON THEIR OWN ROW, under the whole header (Collect.swift whoYouAre, spacing 12).
+    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        WhoRow(signedIn, email, mine, actions, p)
+        val places = p?.myPlaces.orEmpty()
+        val early = header?.earlyAdopter == true
+        if (signedIn && (places.isNotEmpty() || early)) {
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
+                AmbassadorBadge(places, size = 13, open = { a -> header?.openPlace?.invoke(a.placeSlug, a.placeName) })
+                if (early) EarlyAdopterBadge(13)
+            }
+        }
+    }
+}
+
+@Composable
+private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: MyTreesActions, p: app.ancienttrees.account.Profiles?) {
     val brand = Brand.colors
-    val me = mine.profile
+    val demo = mine.profile
+    val me = if (p != null) {
+        MyProfileView(
+            p.me?.displayName?.takeIf { it.isNotEmpty() } ?: demo?.displayName,
+            p.me?.avatarUrl ?: demo?.avatarUrl,
+            p.myCountry ?: demo?.country,
+            if (p.me != null || demo == null) p.followers else demo.followers,
+            if (p.me != null || demo == null) p.following else demo.following,
+        )
+    } else {
+        demo?.let { MyProfileView(it.displayName, it.avatarUrl, it.country, it.followers, it.following) }
+    }
     val tap = remember { MutableInteractionSource() }
     Row(verticalAlignment = Alignment.CenterVertically) {
         Row(Modifier.weight(1f), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(14.dp)) {
@@ -426,7 +468,7 @@ private fun WhoYouAre(signedIn: Boolean, email: String?, mine: MyTrees, actions:
                             .semantics { contentDescription = nameLabel },
                     )
                     // YOUR FLAG AFTER YOUR NAME, Polarsteps' round flag (Hidde, 2026-10-16).
-                    if (signedIn) me?.country?.let { Flag(it) }
+                    if (signedIn) me?.country?.let { CountryFlag(it) }
                 }
                 if (signedIn) {
                     Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {
@@ -456,14 +498,7 @@ private fun WhoYouAre(signedIn: Boolean, email: String?, mine: MyTrees, actions:
     }
 }
 
-/** CountryFlag: the round flag, from the two letters the profile keeps. */
-@Composable
-private fun Flag(code: String) {
-    val c = code.uppercase()
-    if (c.length != 2 || !c.all { it in 'A'..'Z' }) return
-    val flag = String(Character.toChars(0x1F1E6 + (c[0] - 'A'))) + String(Character.toChars(0x1F1E6 + (c[1] - 'A')))
-    Text(flag, fontSize = 18.sp)
-}
+private data class MyProfileView(val displayName: String?, val avatarUrl: String?, val country: String?, val followers: Int, val following: Int)
 
 /** "12 followers": the number in ink and semibold, the word soft, 44 to hit. */
 @Composable
