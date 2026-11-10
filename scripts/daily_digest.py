@@ -1131,7 +1131,9 @@ def gsc_section(gsc, under_table=None):
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
-        *recovery_lines(pages, (gsc[7] if len(gsc) > 7 else {}).get("impressions", 0)),
+        # recovery_lines() ("Google, from the new floor") left out of the
+        # digest (Hidde, 2026-11-10: "leave this section out daily digest");
+        # the day-by-day Google table above says the same.
         *enrichment_lines(pages),
         *demand_lines(pages, pairs),
     ])

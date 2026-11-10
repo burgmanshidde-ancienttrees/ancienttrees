@@ -135,21 +135,6 @@ Machine: 5 chain attempts yesterday, 2 got real work time (~18 min total). Dead-
     - '# modus operandi your modus operandi is ' (i1, p2)
     - and 7 more
 
-**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
-
-What Google does, last 10 days:
-
-| Measure | Now |
-|---|---:|
-| Impressions | 5372 |
-| Clicks | 127 |
-| Pages that got at least one impression | 1328 |
-| Impressions on the proven cities | 3966 |
-
-- 397 impressions from site: and operator searches left out (ours, not readers; every Google table below is without them).
-
-What we did (context, proves nothing by itself): 3392 trees Google may index, 1331 kept out for lacking a photo and an exact pin, 5905 pages on the noindex list.
-
 **Is enriching working** (indexed tree pages, last 10 days of Google; rich = register record, a measurement and concrete access)
 
 | Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |

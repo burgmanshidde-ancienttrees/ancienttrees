@@ -160,6 +160,15 @@ def readers_in_full(day):
     since = urllib.parse.quote(since_iso)
     rows = []
     try:
+        processed = json.load(open(os.path.join(ROOT, "data", "sightings-processed.json"))).get("done", {})
+    except (OSError, ValueError):
+        processed = {}
+    # A tree added in the app arrives twice: a submission whose `tree` is the
+    # sighting's id, and the shared sighting itself with the same photo and
+    # note. One row per tree (Hidde, 2026-11-10, the Préfargier cedars:
+    # "why is this still showing up in the daily digest double").
+    by_sighting = {}
+    try:
         for r in inbox.get("/rest/v1/submissions?select=id,created_at,kind,city,tree,page,why,"
                            "location_hint,girth_cm,photo,outcome,reply_text,user_id"
                            "&created_at=gte.%s&order=created_at.asc" % since, key) or []:
@@ -174,9 +183,20 @@ def readers_in_full(day):
                 extra.append("with a photograph")
             if r.get("reply_text"):
                 extra.append("our reply: “%s”" % r["reply_text"])
+            label, status = r.get("tree") or r.get("city") or "-", r.get("outcome") or "open"
+            sid = (r.get("tree") or "").lower()
+            done = processed.get(sid) if sid else None
+            if done:
+                # The tree went live through its sighting: say where, not "open".
+                status = photo_state({"id": sid}, processed)
+                page = tree_page(done.get("tree_id")) if done.get("tree_id") else None
+                label = done.get("tree_id") or label
+                if page:
+                    extra.append(page)
+            if sid:
+                by_sighting[sid] = len(rows)
             rows.append((r["created_at"], "%s (#%s, %s)" % (r.get("kind") or "?", r["id"], r.get("page") or "web"),
-                         r.get("tree") or r.get("city") or "-", r.get("why") or "", extra,
-                         r.get("outcome") or "open"))
+                         label, r.get("why") or "", extra, status))
     except Exception as e:
         rows.append(("", "submissions", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
     try:
@@ -195,10 +215,6 @@ def readers_in_full(day):
         # it, is shown (scripts/sighting_changes.py).
         import sighting_changes
         shown = sighting_changes.load()
-        try:
-            processed = json.load(open(os.path.join(ROOT, "data", "sightings-processed.json"))).get("done", {})
-        except (OSError, ValueError):
-            processed = {}
         pending = {}
         for r in inbox.get("/rest/v1/sightings?select=%s"
                            "&shared=eq.true&updated_at=gte.%s&order=updated_at.asc"
@@ -209,6 +225,8 @@ def readers_in_full(day):
             if state == "same":
                 continue
             pending[r["id"]] = sighting_changes.fingerprint(r)
+            if r["id"].lower() in by_sighting and state == "new":
+                continue  # the submission row above already is this tree
             page = tree_page(r["tree_id"]) if r.get("tree_id") else None
             rows.append((r["updated_at"], "app photograph" + (" (changed since you saw it)" if state == "changed" else ""),
                          r.get("tree_id") or r.get("name") or "-",
