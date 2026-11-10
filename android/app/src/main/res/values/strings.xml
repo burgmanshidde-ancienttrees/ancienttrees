@@ -16,4 +16,34 @@
         <item quantity="one">1 tree</item>
         <item quantity="other">%1$d trees</item>
     </plurals>
+    <!-- sign-in -->
+    <string name="signin_title">Keep your trees on every device</string>
+    <string name="signin_sub">An account keeps what you collect and save.</string>
+    <string name="signin_sub_named">Sign in to save %1$s. An account keeps what you collect, on every device you use.</string>
+    <string name="signin_placeholder">you@example.com</string>
+    <string name="signin_send">Email me a sign-in link</string>
+    <string name="signin_google">Continue with Google</string>
+    <string name="signin_email">Continue with email</string>
+    <string name="signin_fine">By continuing you agree to the &lt;a href=\"https://ancienttrees.app/terms\"&gt;Terms&lt;/a&gt; and the &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Privacy&lt;/a&gt; notice.</string>
+    <string name="signin_sent_title">Check your inbox</string>
+    <string name="signin_sent_1">We sent a sign-in link to\u0020</string>
+    <string name="signin_sent_2">. It works once, expires in 15 minutes, and brings you straight back here.</string>
+    <string name="signin_email_label">Email address</string>
+    <string name="want_to_go">Want to go</string>
+    <string name="account">Account</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_out_title">Sign out?</string>
+    <string name="sign_out_body">Your collection stays in your account. Sign in again on any phone and it comes back.</string>
+    <string name="delete_account">Delete account</string>
+    <string name="delete_title">Delete your account?</string>
+    <string name="delete_body">We will delete your email address and your collection. You cannot undo this.</string>
+    <string name="delete">Delete</string>
+    <string name="delete_failed">That did not work. Nothing was deleted. Try again, or write to info@ancienttrees.app and we will do it by hand.</string>
+    <string name="cancel">Cancel</string>
+    <string name="problem_not_email">That does not look like an email address.</string>
+    <string name="problem_send">We could not send that just now. Try again in a minute.</string>
+    <string name="problem_link">That sign-in link has already been used, or it has expired. Ask for a new one.</string>
+    <string name="problem_google">Google sign-in did not work. Use your email for now.</string>
+    <!-- /sign-in -->
 </resources>

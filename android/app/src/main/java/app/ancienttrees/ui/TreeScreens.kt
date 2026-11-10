@@ -28,6 +28,8 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -125,7 +127,7 @@ private fun directions(context: Context, tree: Tree) = openUrl(
 )
 
 @Composable
-fun TreeScreen(tree: Tree, onBack: () -> Unit) {
+fun TreeScreen(tree: Tree, hearted: Boolean, onHeart: () -> Unit, onBack: () -> Unit) {
     val context = LocalContext.current
     Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
@@ -232,6 +234,24 @@ fun TreeScreen(tree: Tree, onBack: () -> Unit) {
                 Icons.AutoMirrored.Filled.ArrowBack,
                 contentDescription = stringResource(R.string.back),
                 tint = Color.White,
+            )
+        }
+
+        // WANT TO GO, top right over the photograph, where Airbnb keeps the
+        // heart on a listing. Signed out, it asks to sign in first.
+        IconButton(
+            onClick = onHeart,
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .statusBarsPadding()
+                .padding(8.dp)
+                .clip(CircleShape)
+                .background(Color.Black.copy(alpha = 0.45f)),
+        ) {
+            Icon(
+                if (hearted) Icons.Filled.Favorite else Icons.Filled.FavoriteBorder,
+                contentDescription = stringResource(R.string.want_to_go),
+                tint = if (hearted) Color(0xFFE0454F) else Color.White,
             )
         }
     }

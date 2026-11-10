@@ -14,4 +14,34 @@
     <plurals name="trees_in_view">
         <item quantity="other">%1$d本の木</item>
     </plurals>
+    <!-- sign-in -->
+    <string name="signin_title">どの端末でも見られる自分の木</string>
+    <string name="signin_sub">アカウントがあれば、集めた木も保存した木も残る。</string>
+    <string name="signin_sub_named">サインインすると%1$sを保存できる。アカウントがあれば、集めた木は使うどの端末にも残る。</string>
+    <string name="signin_placeholder">sample@example.com</string>
+    <string name="signin_send">サインインのリンクを送る</string>
+    <string name="signin_google">Googleで続ける</string>
+    <string name="signin_email">メールで続ける</string>
+    <string name="signin_fine">続けると&lt;a href=\"https://ancienttrees.app/terms\"&gt;利用規約&lt;/a&gt;と&lt;a href=\"https://ancienttrees.app/privacy\"&gt;プライバシー&lt;/a&gt;に同意したことになる。</string>
+    <string name="signin_sent_title">受信トレイを確認する</string>
+    <string name="signin_sent_1">サインインのリンクを\u0020</string>
+    <string name="signin_sent_2">\u0020に送った。リンクは一度だけ使えて、15分で期限が切れ、いまいたページに戻る。</string>
+    <string name="signin_email_label">メールアドレス</string>
+    <string name="want_to_go">行きたい</string>
+    <string name="account">アカウント</string>
+    <string name="sign_in">サインイン</string>
+    <string name="sign_out">サインアウト</string>
+    <string name="sign_out_title">サインアウトしますか？</string>
+    <string name="sign_out_body">コレクションはアカウントに残ります。どの端末でも再びサインインすれば戻ります。</string>
+    <string name="delete_account">アカウントを削除</string>
+    <string name="delete_title">アカウントを削除しますか？</string>
+    <string name="delete_body">メールアドレスとコレクションを削除します。元に戻すことはできません。</string>
+    <string name="delete">削除</string>
+    <string name="delete_failed">うまくいきませんでした。何も削除されていません。もう一度試すか、info@ancienttrees.app までご連絡ください。手作業で対応します。</string>
+    <string name="cancel">キャンセル</string>
+    <string name="problem_not_email">メールアドレスの形式ではないようです。</string>
+    <string name="problem_send">いま送信できませんでした。1分後にもう一度お試しください。</string>
+    <string name="problem_link">このサインインリンクは使用済みか、期限切れです。新しいリンクをリクエストしてください。</string>
+    <string name="problem_google">Googleでのサインインがうまくいきませんでした。今はメールをお使いください。</string>
+    <!-- /sign-in -->
 </resources>

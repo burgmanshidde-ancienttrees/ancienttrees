@@ -19,7 +19,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.LocationOff
+import androidx.compose.material.icons.outlined.AccountCircle
 import androidx.compose.material.icons.filled.MyLocation
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -63,6 +65,23 @@ fun LocationOffChip(refused: Boolean, onClick: () -> Unit, modifier: Modifier = 
                 color = MaterialTheme.colorScheme.primary,
             )
         }
+    }
+}
+
+/** Top right on the map: sign in, or the account once signed in. */
+@Composable
+fun AccountButton(signedIn: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    Surface(
+        shape = CircleShape,
+        shadowElevation = 4.dp,
+        modifier = modifier.size(48.dp).clip(CircleShape).clickable(onClick = onClick),
+    ) {
+        Icon(
+            if (signedIn) Icons.Filled.AccountCircle else Icons.Outlined.AccountCircle,
+            contentDescription = stringResource(if (signedIn) R.string.account else R.string.sign_in),
+            tint = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.padding(10.dp),
+        )
     }
 }
 

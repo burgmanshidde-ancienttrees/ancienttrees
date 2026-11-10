@@ -27,6 +27,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -36,6 +37,9 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
+import app.ancienttrees.account.Account
+import app.ancienttrees.account.Saves
+import app.ancienttrees.account.SignIn
 import app.ancienttrees.feed.Catalogue
 import app.ancienttrees.feed.CatalogueStore
 import app.ancienttrees.feed.Geo
@@ -44,19 +48,32 @@ import app.ancienttrees.feed.Nearby
 import app.ancienttrees.feed.Tree
 import app.ancienttrees.feed.ViewBox
 import app.ancienttrees.map.TreeMapView
+import app.ancienttrees.ui.AccountButton
+import app.ancienttrees.ui.AccountSheet
 import app.ancienttrees.ui.AncientTreesTheme
+import app.ancienttrees.ui.SignInSheet
 import app.ancienttrees.ui.LocationOffChip
 import app.ancienttrees.ui.MyLocationButton
 import app.ancienttrees.ui.TreeCard
 import app.ancienttrees.ui.TreeList
 import app.ancienttrees.ui.TreeScreen
+import kotlinx.coroutines.launch
 import java.util.Locale
 
 class MainActivity : ComponentActivity() {
+    /** A sign-in callback (ancienttrees://auth-callback) waiting to be read. */
+    private var link by mutableStateOf<Uri?>(null)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent { AncientTreesTheme { App() } }
+        link = intent?.data
+        setContent { AncientTreesTheme { App(link, onLinkRead = { link = null }) } }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        link = intent.data
     }
 }
 
@@ -76,8 +93,47 @@ private fun openAppSettings(context: Context) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun App() {
+private fun App(link: Uri?, onLinkRead: () -> Unit) {
     val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    val account = remember { Account(context.applicationContext) }
+    val saves = remember { Saves(account) }
+    // What somebody was doing when they were asked to sign in, finished when
+    // they land ("device" in data/cross-device.json: a pending intent; held in
+    // memory only here).
+    var pendingHeart by remember { mutableStateOf<Tree?>(null) }
+    var asking by remember { mutableStateOf(false) }
+    var showAccount by remember { mutableStateOf(false) }
+
+    LaunchedEffect(Unit) { account.restore() }
+    LaunchedEffect(link) {
+        val uri = link ?: return@LaunchedEffect
+        // Read first, cleared after: clearing changes this effect's key and
+        // would cancel the sign-in halfway.
+        account.handleCallback(uri)
+        onLinkRead()
+    }
+    val signedIn = account.state is SignIn.SignedIn
+    LaunchedEffect(signedIn) {
+        if (!signedIn) {
+            saves.forget()
+            return@LaunchedEffect
+        }
+        asking = false
+        saves.load()
+        pendingHeart?.let { t ->
+            pendingHeart = null
+            if (t.id !in saves.hearts) saves.toggle(t.id)
+        }
+    }
+    fun heart(t: Tree) {
+        if (signedIn) {
+            scope.launch { saves.toggle(t.id) }
+        } else {
+            pendingHeart = t
+            asking = true
+        }
+    }
     val store = remember { CatalogueStore(context.applicationContext) }
     var catalogue by remember { mutableStateOf<Catalogue?>(null) }
     var selected by remember { mutableStateOf<Tree?>(null) }
@@ -166,6 +222,21 @@ private fun App() {
                 }
             }
         }
-        open?.let { tree -> TreeScreen(tree, onBack = { open = null }) }
+        open?.let { tree ->
+            TreeScreen(tree, hearted = tree.id in saves.hearts, onHeart = { heart(tree) }, onBack = { open = null })
+        }
+        if (open == null) {
+            AccountButton(
+                signedIn = signedIn,
+                onClick = { if (signedIn) showAccount = true else asking = true },
+                modifier = Modifier.align(Alignment.TopEnd).statusBarsPadding().padding(12.dp),
+            )
+        }
+        if (asking && !signedIn) {
+            SignInSheet(account, treeName = pendingHeart?.name, onDismiss = { asking = false; pendingHeart = null })
+        }
+        if (showAccount && signedIn) {
+            AccountSheet(account, saved = saves.hearts.size, onDismiss = { showAccount = false })
+        }
     }
 }
