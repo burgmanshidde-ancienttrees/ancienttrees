@@ -174,6 +174,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val routes = remember { app.ancienttrees.ui.ProfileRoutes(launch.args) }
     var signInReason by remember { mutableStateOf<app.ancienttrees.ui.SignInReason?>(null) }
     var recovering by remember { mutableStateOf("-refused" in launch.args) }
+    // THE REVIEW ASK (ui/ReviewAsk.kt): trees looked at, asked at a pause, drawn at the root.
+    val review = remember { app.ancienttrees.ui.ReviewPrompt.on(context, launch.args) }
+    var feedbackFromReview by remember { mutableStateOf(false) }
+    var hadTreeOpen by remember { mutableStateOf(false) }
     // The early-adopter tag on My trees: the server's created_at against the feed's cutoff
     // (EarlyAdopter.swift); -earlyadopter and -earlyadoptersheet draw it for the sweep.
     var earlyAdopter by remember { mutableStateOf("-earlyadopter" in launch.args || "-earlyadoptersheet" in launch.args) }
@@ -343,6 +347,21 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     }
 
     BackHandler(enabled = open != null) { open = null }
+    // A tree page opened counts as seen; closing it is the pause where the review ask may come.
+    LaunchedEffect(open?.id) {
+        val t = open
+        if (t != null) {
+            review.saw(t.id)
+            hadTreeOpen = true
+        } else if (hadTreeOpen) {
+            hadTreeOpen = false
+            review.consider()
+        }
+    }
+    // -directions: the which-maps-app sheet without a finger (Directions.swift).
+    LaunchedEffect(Unit) {
+        if ("-directions" in launch.args) app.ancienttrees.ui.DirectionsAsk.pending = app.ancienttrees.ui.DirectionsAsk.Pending(52.3676, 4.9041, null)
+    }
     BackHandler(enabled = openMine != null && open == null) { openMine = null }
 
     // WHERE YOU ARE: a live fix, kept up to date while the app is open, else
@@ -501,6 +520,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     editProfile = { routes.editProfile = true },
                     openPrivacy = { routes.stack.add(app.ancienttrees.ui.ProfilePage.Privacy) },
                     signedOut = { routes.clear() },
+                    signInForFeedback = { signInReason = app.ancienttrees.ui.SignInReason.Feedback; asking = true },
+                    args = launch.args,
                 ),
                 people = app.ancienttrees.ui.PeopleHost(
                     account = account,
@@ -592,6 +613,17 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             enter = androidx.compose.animation.EnterTransition.None,
             exit = androidx.compose.animation.fadeOut(androidx.compose.animation.core.tween(400)),
         ) { HeroCover { showingCover = false } }
+        // The root's two questions (ContentView.swift): which maps app, and the review ask.
+        app.ancienttrees.ui.DirectionsAskHost()
+        app.ancienttrees.ui.ReviewAskHost(review, launch.args) { feedbackFromReview = true }
+        if (feedbackFromReview) {
+            app.ancienttrees.ui.ContributeSheet(
+                account, signedIn,
+                onNeedsSignIn = { signInReason = app.ancienttrees.ui.SignInReason.Feedback; asking = true },
+                onDismiss = { feedbackFromReview = false },
+                feedbackMode = true,
+            )
+        }
         collectStart?.let { start ->
             if (cat != null) {
                 app.ancienttrees.ui.CollectSheet(
@@ -607,7 +639,16 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         needsSignIn = { then -> pendingAfterSignIn = then; asking = true },
                         askLocation = { if (!refused) ask.launch(LOCATION) },
                         send = { job -> scope.launch { if (!job()) collectFailed = true else myTrees.load(force = true) } },
-                        ticked = { saves.noteCollected(it) },
+                        ticked = { id ->
+                            // A new tick is a tree seen, the strongest kind; the ask waits two
+                            // seconds so the payoff card lands first (CollectSheet.swift).
+                            val isNew = id !in saves.collected
+                            saves.noteCollected(id)
+                            if (isNew) {
+                                review.saw(id)
+                                scope.launch { kotlinx.coroutines.delay(2000); review.consider() }
+                            }
+                        },
                         openDraft = { draft = it },
                         share = { t -> share(context, t, "collect", "${t.name}, ${t.city}.") },
                     ),

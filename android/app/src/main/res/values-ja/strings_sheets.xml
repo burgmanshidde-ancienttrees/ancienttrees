@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The remaining sheets (Directions.kt, ReviewAsk.kt, Contribute.kt), the iPhone's words. -->
+<resources>
+    <string name="directions_title">経路を開くアプリ</string>
+    <string name="directions_message">設定で変更できます。</string>
+    <string name="directions_google">Google マップ</string>
+    <string name="directions_other">ほかの地図アプリ</string>
+    <string name="directions_ask_each">毎回確認する</string>
+    <string name="settings_directions">経路</string>
+    <string name="review_title">Ancient Trees を気に入っていただけていますか？</string>
+    <string name="review_message">評価があると、ほかの木好きの人がアプリを見つけやすくなります。</string>
+    <string name="review_yes">はい</string>
+    <string name="review_no">あまり</string>
+    <string name="contribute_kind_tree">載っていない木</string>
+    <string name="contribute_kind_city">地図にしてほしい場所</string>
+    <string name="contribute_kind_correction">問題を報告</string>
+    <string name="contribute_kind_feedback">アプリへのアイデア</string>
+    <string name="contribute_where">場所</string>
+    <string name="contribute_place_or_city">場所または都市</string>
+    <string name="contribute_which_tree">どの木</string>
+    <string name="contribute_where_exactly">正確な場所（わかれば）</string>
+    <string name="feedback_title">フィードバック</string>
+    <string name="feedback_header">ご希望をお聞かせください</string>
+    <string name="feedback_placeholder">ほしい機能、そのほか何でも</string>
+</resources>

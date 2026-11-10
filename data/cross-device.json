@@ -143,6 +143,16 @@
       "verdict": "device",
       "why": "The Android app's session (android/.../account/Account.kt), the refresh token only, in the app's private SharedPreferences with backup off. A session identifies the device and never travels; at launch it is spent with the server first and only the server's yes signs anybody in (hard rule 11).",
       "off": "Sign out and account deletion remove it; the server revokes it on sign out."
+    },
+    "android:device/directions.app": {
+      "verdict": "device",
+      "why": "The Android twin of directions.app (android/.../ui/Directions.kt): which maps app Take me there opens, Google Maps or the system's chooser. Depends on what is installed on this phone.",
+      "off": "Nothing: a device setting, gone with the app; Settings changes it."
+    },
+    "android:device/reviewPrompt": {
+      "verdict": "device",
+      "why": "The Android twin of reviewPrompt.fired.v2, .last.v2, .seen.v1 and .yes.v1 (android/.../ui/ReviewAsk.kt): which review milestones this install asked, when, which trees it has seen (at most 25 ids) and the version it said yes on. Per install, like the store's own rule.",
+      "off": "Nothing: a flag on this install, gone with the app; -reset-collection clears it for the sweep."
     }
   }
 }

@@ -209,13 +209,8 @@ private fun openUrl(context: Context, url: String) {
     }
 }
 
-/**
- * Directions.walk: walking directions to the tree. The iPhone asks once whether
- * Apple or Google Maps; Android has no Apple Maps and the system opens the maps
- * app the person chose as theirs (data/android-parity.json, forced).
- */
-fun walkTo(context: Context, lat: Double, lng: Double) =
-    openUrl(context, "https://www.google.com/maps/dir/?api=1&destination=$lat,$lng&travelmode=walking")
+/** Directions.walk: walking directions to the tree, asked once at the root (ui/Directions.kt). */
+fun walkTo(context: Context, lat: Double, lng: Double) = Directions.walk(context, lat, lng)
 
 /** Pulls a view up by [top] and lets the next one in by [bottom], as SwiftUI's negative padding does. */
 private fun Modifier.pull(top: Dp, bottom: Dp): Modifier = layout { m, c ->
@@ -357,7 +352,12 @@ private fun TreeDetailInner(
 
     if (viewerAt >= 0) PhotoViewer(tree.shots, viewerAt) { viewerAt = -1 }
     reportOpening?.let { opening ->
-        ReportSheet(tree, opening, account, signedIn, actions) { reportOpening = null }
+        ContributeSheet(
+            account, signedIn,
+            onNeedsSignIn = { actions.onNeedsSignIn { } },
+            onDismiss = { reportOpening = null },
+            about = tree, opening = opening,
+        )
     }
     if (choosingCollect) {
         BrandSheet(
@@ -1516,101 +1516,3 @@ private fun ActionBar(
     }
 }
 
-// MARK: - The report form (Contribute.swift, about one tree)
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-private fun ReportSheet(tree: Tree, opening: String, account: Account, signedIn: Boolean, actions: TreePageActions, onDismiss: () -> Unit) {
-    val brand = Brand.colors
-    val scope = rememberCoroutineScope()
-    var where by remember { mutableStateOf("") }
-    var why by remember { mutableStateOf(opening + "\n") }
-    var sending by remember { mutableStateOf(false) }
-    var sent by remember { mutableStateOf(false) }
-    var failed by remember { mutableStateOf(false) }
-    LaunchedEffect(Unit) { if (!signedIn) actions.onNeedsSignIn { } }
-    ModalBottomSheet(
-        onDismissRequest = onDismiss,
-        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
-        containerColor = brand.surfaceMuted,
-    ) {
-        Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(bottom = 24.dp).navigationBarsPadding()) {
-            Row(Modifier.fillMaxWidth().height(44.dp), verticalAlignment = Alignment.CenterVertically) {
-                Text(
-                    stringResource(if (sent) R.string.done else R.string.cancel),
-                    fontSize = 17.sp,
-                    color = brand.moss,
-                    modifier = Modifier.clickable(role = Role.Button, onClick = onDismiss),
-                )
-                Text(
-                    stringResource(if (sent) R.string.sent_title else R.string.tell_us),
-                    fontSize = 17.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    color = brand.ink,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.weight(1f),
-                )
-                Spacer(Modifier.width(56.dp))
-            }
-            Spacer(Modifier.height(12.dp))
-            val group = Modifier.fillMaxWidth().background(brand.surface, RoundedCornerShape(10.dp)).padding(horizontal = 16.dp, vertical = 11.dp)
-            if (sent) {
-                Column(group, verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Icon(Icons.Filled.Verified, null, tint = brand.moss, modifier = Modifier.size(20.dp))
-                        Text(stringResource(R.string.thank_you), fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
-                    }
-                    Text(stringResource(R.string.we_read_every_tip), fontSize = 13.sp, color = brand.inkSoft)
-                }
-            } else if (!signedIn) {
-                Column(group, verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text(stringResource(R.string.report_needs_account), fontSize = 13.sp, color = brand.inkSoft)
-                    Text(
-                        stringResource(R.string.sign_in),
-                        fontSize = 16.sp,
-                        fontWeight = FontWeight.SemiBold,
-                        color = brand.moss,
-                        modifier = Modifier.clickable(role = Role.Button) { actions.onNeedsSignIn { } },
-                    )
-                }
-            } else {
-                Text(stringResource(R.string.about_this_tree).uppercase(), fontSize = 13.sp, color = brand.inkSoft, modifier = Modifier.padding(start = 16.dp, bottom = 6.dp))
-                Column(group, verticalArrangement = Arrangement.spacedBy(3.dp)) {
-                    Text(tree.name, fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
-                    Text(tree.city, fontSize = 13.sp, color = brand.inkSoft)
-                }
-                Spacer(Modifier.height(20.dp))
-                Box(group) {
-                    BasicTextField(where, { where = it }, textStyle = TextStyle(fontSize = 17.sp, color = brand.ink), cursorBrush = SolidColor(brand.moss), modifier = Modifier.fillMaxWidth())
-                    if (where.isEmpty()) Text(stringResource(R.string.where_really), fontSize = 17.sp, color = brand.inkSoft.copy(alpha = 0.6f))
-                }
-                Spacer(Modifier.height(20.dp))
-                Box(group.heightIn(min = 110.dp)) {
-                    BasicTextField(why, { why = it }, textStyle = TextStyle(fontSize = 17.sp, color = brand.ink), cursorBrush = SolidColor(brand.moss), modifier = Modifier.fillMaxWidth())
-                    if (why.isEmpty()) Text(stringResource(R.string.what_should_we_know), fontSize = 17.sp, color = brand.inkSoft.copy(alpha = 0.6f))
-                }
-                Text(stringResource(R.string.nobody_sees), fontSize = 13.sp, color = brand.inkSoft, modifier = Modifier.padding(start = 16.dp, top = 6.dp, end = 16.dp))
-                Spacer(Modifier.height(20.dp))
-                val ready = !sending && why.isNotEmpty()
-                Box(
-                    group.clickable(enabled = ready, role = Role.Button) {
-                        sending = true
-                        scope.launch {
-                            val ok = Submission.correction(tree.city, tree.name, where, why, tree.url, account.fresh()?.accessToken)
-                            sending = false
-                            if (ok) sent = true else failed = true
-                        }
-                    },
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Text(
-                        stringResource(if (sending) R.string.sending else R.string.send),
-                        fontSize = 17.sp,
-                        color = if (ready) brand.moss else brand.inkSoft.copy(alpha = 0.5f),
-                    )
-                }
-                if (failed) Text(stringResource(R.string.note_failed), fontSize = 13.sp, color = brand.dangerText, modifier = Modifier.padding(top = 6.dp))
-            }
-        }
-    }
-}
