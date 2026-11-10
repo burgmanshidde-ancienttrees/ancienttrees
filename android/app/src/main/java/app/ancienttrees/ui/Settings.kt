@@ -3,9 +3,9 @@
 // Help, About, then Account (Sign out, Delete account) last, and the version
 // under everything. No screen title in the body: the bar says Settings.
 //
-// What Android forces (data/android-parity.json): no Directions row, because
-// Android has no Apple Maps and the system opens the maps app the person made
-// theirs; Rate the app opens the Play Store rather than the App Store.
+// What Android forces (data/android-parity.json): Directions offers Google Maps
+// and Another maps app (no Apple Maps on Android, ui/Directions.kt); Rate the app
+// opens the Play Store rather than the App Store.
 
 package app.ancienttrees.ui
 
@@ -43,6 +43,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.automirrored.outlined.Chat
 import androidx.compose.material.icons.automirrored.outlined.InsertDriveFile
+import androidx.compose.material.icons.filled.TurnRight
 import androidx.compose.material.icons.filled.UnfoldMore
 import androidx.compose.material.icons.outlined.Description
 import androidx.compose.material.icons.outlined.Lock
@@ -113,6 +114,10 @@ class SettingsHost(
     val editProfile: () -> Unit,
     val openPrivacy: () -> Unit,
     val signedOut: () -> Unit,
+    /** Sign in for the feedback form (SignInSheet(reason: .feedback)). */
+    val signInForFeedback: () -> Unit = signIn,
+    /** The launch arguments: -contribute and -feedback open the form (Profile.swift launchSheet). */
+    val args: List<String> = emptyList(),
 )
 
 @Composable
@@ -132,6 +137,9 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
     var confirmingSignOut by remember { mutableStateOf(askSignOut) }
     var signingOut by remember { mutableStateOf(false) }
     var miles by remember { mutableStateOf(Units.miles(context)) }
+    var contributing by remember { mutableStateOf("-contribute" in host.args) }
+    var givingFeedback by remember { mutableStateOf("-feedback" in host.args) }
+    var directionsApp by remember { mutableStateOf(Directions.preferred(context)) }
 
     Column(Modifier.fillMaxSize().background(brand.ground).testTag("settings")) {
         PushedBar(stringResource(R.string.settings), onBack)
@@ -153,6 +161,24 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                             DropdownMenuItem(
                                 text = { Text(stringResource(if (m) R.string.units_miles else R.string.units_km), color = brand.ink) },
                                 onClick = { Units.set(context, m); miles = m; menu = false },
+                            )
+                        }
+                    }
+                }
+                RowDivider(48.dp)
+                // DIRECTIONS: which maps app Take me there opens, asked once on the
+                // first tap and changed here (Profile.swift, Hidde 2026-08-28). The two
+                // apps and nothing else: no "Ask again" (Hidde, 2026-08-29).
+                var dirMenu by remember { mutableStateOf(false) }
+                Box {
+                    SettingsRow(Icons.Filled.TurnRight, stringResource(R.string.settings_directions),
+                        value = directionsApp?.label(context) ?: stringResource(R.string.directions_ask_each),
+                        trailing = Icons.Filled.UnfoldMore, tag = "profile-directions") { dirMenu = true }
+                    DropdownMenu(expanded = dirMenu, onDismissRequest = { dirMenu = false }, modifier = Modifier.background(brand.surface)) {
+                        for (a in Directions.MapsApp.entries) {
+                            DropdownMenuItem(
+                                text = { Text(a.label(context), color = brand.ink) },
+                                onClick = { Directions.setPreferred(context, a); directionsApp = a; dirMenu = false },
                             )
                         }
                     }
@@ -185,7 +211,7 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
             // HELP: feedback and a rating.
             Group(stringResource(R.string.settings_help)) {
                 SettingsRow(Icons.AutoMirrored.Outlined.Chat, stringResource(R.string.settings_feedback), tag = "profile-feedback") {
-                    openWeb(context, "https://ancienttrees.app/contribute")
+                    givingFeedback = true
                 }
                 RowDivider(48.dp)
                 LinkRow(Icons.Outlined.StarOutline, stringResource(R.string.settings_rate), stringResource(R.string.settings_rate_sub)) {
@@ -222,6 +248,14 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
 
     if (refused) PermissionRecovery(Permission.LOCATION, onDismiss = { refused = false })
     if (showingLegal) SourcesSheet { showingLegal = false }
+    if (contributing || givingFeedback) {
+        ContributeSheet(
+            host.account, host.signedIn,
+            onNeedsSignIn = host.signInForFeedback,
+            onDismiss = { contributing = false; givingFeedback = false },
+            feedbackMode = givingFeedback,
+        )
+    }
     if (showingDelete) DeleteAccountSheet(host, onDismiss = { showingDelete = false })
     if (confirmingSignOut) {
         BrandSheet(

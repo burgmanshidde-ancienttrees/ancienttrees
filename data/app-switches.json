@@ -1,4 +1,5 @@
 {
- "note": "Switches the app and the website read without a new release (Hidde, 2026-11-05: \"kunnen we deze vragenlijst uit de app halen zonder een release\"). The website reads this at build time (site/src/lib/switches.ts); the app reads it from /api/version.json on every launch and every return to the app (Kit/AppSwitches.swift). Set a switch to false and deploy the website: the next launch of every installed app follows. plus_ask: the Ancient Trees Plus question (city pages, Settings).",
- "plus_ask": true
+ "note": "Switches the app and the website read without a new release (Hidde, 2026-11-05: \"kunnen we deze vragenlijst uit de app halen zonder een release\"). The website reads this at build time (site/src/lib/switches.ts); the app reads it from /api/version.json on every launch and every return to the app (Kit/AppSwitches.swift). Set a switch to false and deploy the website: the next launch of every installed app follows. plus_ask: the Ancient Trees Plus question (city pages, Settings). android_review_question: the Android app's 'Are you enjoying Ancient Trees?' before Google Play's review card (Hidde, 2026-11-10: \"prima doe dat\"); off, the card comes at the same moments without the question, as Google's guide asks, if Google ever objects.",
+ "plus_ask": true,
+ "android_review_question": true
 }

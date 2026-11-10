@@ -11,7 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { DATA } from "./data-dir";
 
-export type SwitchName = "plus_ask";
+export type SwitchName = "plus_ask" | "android_review_question";
 
 let cached: Record<string, unknown> | null = null;
 
@@ -31,5 +31,5 @@ export function switchOn(name: SwitchName): boolean {
 
 /** Every switch, for /api/version.json. */
 export function switches(): Record<SwitchName, boolean> {
-  return { plus_ask: switchOn("plus_ask") };
+  return { plus_ask: switchOn("plus_ask"), android_review_question: switchOn("android_review_question") };
 }

@@ -57,7 +57,8 @@ PORTED = ["map", "map-full", "map-pin", "search", "tree", "tree-nophoto", "photo
           "explore", "collection-tab", "collection-tab-full", "own-tree", "profile", "profile-signed-in",
           "profile-edit", "signin-email", "refused", "people", "early-adopter", "early-adopter-sheet",
           "collect-intro", "collect-away", "collect-place", "collect-identify", "collect-ticked", "collect-voted",
-          "collect-compare", "collect-describe", "city", "city-map-full", "place-pin", "species", "species-pick"]
+          "collect-compare", "collect-describe", "city", "city-map-full", "place-pin", "species", "species-pick",
+          "directions", "review-ask", "contribute", "feedback"]
 
 
 def run(cmd, **kw):

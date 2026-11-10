@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The remaining sheets (Directions.kt, ReviewAsk.kt, Contribute.kt), the iPhone's words. -->
+<resources>
+    <string name="directions_title">Abrir la ruta en</string>
+    <string name="directions_message">Puedes cambiarlo en Ajustes.</string>
+    <string name="directions_google">Google Maps</string>
+    <string name="directions_other">Otra app de mapas</string>
+    <string name="directions_ask_each">Preguntar cada vez</string>
+    <string name="settings_directions">Ruta</string>
+    <string name="review_title">¿Te gusta Ancient Trees?</string>
+    <string name="review_message">Una valoración ayuda a otros amantes de los árboles a encontrar la app.</string>
+    <string name="review_yes">Sí</string>
+    <string name="review_no">No mucho</string>
+    <string name="contribute_kind_tree">Un árbol que nos falta</string>
+    <string name="contribute_kind_city">Un lugar que deberíamos mapear</string>
+    <string name="contribute_kind_correction">Informar de un problema</string>
+    <string name="contribute_kind_feedback">Una idea para la app</string>
+    <string name="contribute_where">Dónde</string>
+    <string name="contribute_place_or_city">Lugar o ciudad</string>
+    <string name="contribute_which_tree">Qué árbol</string>
+    <string name="contribute_where_exactly">Dónde exactamente, si lo sabes</string>
+    <string name="feedback_title">Comentarios</string>
+    <string name="feedback_header">Cuéntanos qué te gustaría</string>
+    <string name="feedback_placeholder">Una función que te gustaría, o cualquier otra cosa</string>
+</resources>

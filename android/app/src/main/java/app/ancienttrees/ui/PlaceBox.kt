@@ -320,6 +320,9 @@ object AppSwitches {
     private const val ANSWERED = "plus.answered.v1"
     var plusAsk by mutableStateOf(true)
         private set
+    /** android_review_question: the question before Google Play's review card (ui/ReviewAsk.kt). */
+    var reviewQuestion by mutableStateOf(true)
+        private set
     private var answered by mutableStateOf<Boolean?>(null)
 
     private fun prefs(c: Context) = c.applicationContext.getSharedPreferences("device", Context.MODE_PRIVATE)
@@ -353,6 +356,7 @@ object AppSwitches {
             }.getOrNull()
         } ?: return
         plusAsk = s.optBoolean("plus_ask", true)
+        reviewQuestion = s.optBoolean("android_review_question", true)
     }
 }
 

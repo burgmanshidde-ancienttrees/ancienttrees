@@ -55,6 +55,8 @@ dependencies {
 
     // The one map engine, the same one the iPhone app and the website draw with.
     implementation("org.maplibre.gl:android-sdk:13.7.1")
+    // Google Play's in-app review card (ui/ReviewAsk.kt; Hidde, 2026-11-10: "prima doe dat").
+    implementation("com.google.android.play:review:2.0.2")
 
     testImplementation("junit:junit:4.13.2")
     // The flow walk on the emulator (FlowWalk.kt), the iPhone's FlowWalk.swift.

@@ -39,7 +39,7 @@
     },
     {
       "what": "Directions",
-      "why": "The iPhone asks once whether Apple Maps or Google Maps and remembers it; Android has no Apple Maps, so Take me there opens the walking route in the maps app the phone uses."
+      "why": "The iPhone asks once between Apple Maps and Google Maps and remembers it; Android has no Apple Maps, so its place in the same question is Another maps app, which hands the spot to Android's own chooser (a geo: link that Waze, OsmAnd and every maps app answer). Google Maps opens the same walking-route link as on the iPhone."
     },
     {
       "what": "Menus",
@@ -60,6 +60,10 @@
     {
       "what": "Settings and recovery paths",
       "why": "Open Settings lands on the app's own page in Android's Settings, and the recovery sheet's path line names Android's path; Rate the app opens the Play Store."
+    },
+    {
+      "what": "Rating the app",
+      "why": "The iPhone's Yes opens Apple's rating dialog; Android's opens Google Play's own review card (the Play review library), the platform's equivalent."
     }
   ],
   "map": {
@@ -154,9 +158,7 @@
     "status": "in-progress",
     "differences": [
       "Ancient Trees Plus is not a row yet: the Plus question sheet (PlusAsk.swift) is not ported.",
-      "Send feedback opens the website's contribute page until the feedback screen (Contribute.swift, feedbackMode) is ported.",
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
-      "No Directions row (forced: Android has no Apple Maps; Take me there opens the maps app the phone uses).",
       "Rate the app opens the Play Store page (forced)."
     ],
     "owner": null
@@ -278,14 +280,15 @@
     ]
   },
   "directions": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": []
   },
   "review-ask": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [],
-    "owner": null
+    "notes": [
+      "The question before Google's card is kept as on the iPhone (Hidde, 2026-11-10: \"prima doe dat\"), though Google's guide asks for none; it sits behind the remote switch android_review_question in data/app-switches.json, so it can be turned off without a build if Google ever objects. Off, the card comes at the same moments without the question."
+    ]
   },
   "signin-email": {
     "status": "parity",
@@ -302,14 +305,14 @@
     "owner": null
   },
   "contribute": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": [
+      "The signed-in form (the four kinds and Where) has no sweep frame on either phone; it was looked at on Android with -signed-in, not side by side."
+    ]
   },
   "feedback": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": []
   },
   "profile-edit": {
     "status": "parity",

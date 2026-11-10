@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The remaining sheets (Directions.kt, ReviewAsk.kt, Contribute.kt), the iPhone's words. -->
+<resources>
+    <string name="directions_title">Open directions in</string>
+    <string name="directions_message">You can change this in Settings.</string>
+    <string name="directions_google">Google Maps</string>
+    <string name="directions_other">Another maps app</string>
+    <string name="directions_ask_each">Ask each time</string>
+    <string name="settings_directions">Directions</string>
+    <string name="review_title">Are you enjoying Ancient Trees?</string>
+    <string name="review_message">A rating helps other tree lovers find the app.</string>
+    <string name="review_yes">Yes</string>
+    <string name="review_no">Not really</string>
+    <string name="contribute_kind_tree">A tree we are missing</string>
+    <string name="contribute_kind_city">A place we should map</string>
+    <string name="contribute_kind_correction">Report a problem</string>
+    <string name="contribute_kind_feedback">An idea for the app</string>
+    <string name="contribute_where">Where</string>
+    <string name="contribute_place_or_city">Place or city</string>
+    <string name="contribute_which_tree">Which tree</string>
+    <string name="contribute_where_exactly">Where exactly, if you can say</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_header">Tell us what you would like</string>
+    <string name="feedback_placeholder">A feature you would like, or anything else</string>
+</resources>

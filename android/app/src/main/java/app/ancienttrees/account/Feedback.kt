@@ -21,6 +21,14 @@ object Submission {
     suspend fun feedback(city: String, tree: String, why: String, token: String?): Boolean =
         post(JSONObject().put("kind", "feedback").put("city", city).put("tree", tree).put("why", why).put("page", "app"), token)
 
+    /** Submission.send: the contribute form's row (ui/Contribute.kt), every kind, the iPhone's columns. */
+    suspend fun send(kind: String, city: String, tree: String, locationHint: String, why: String, page: String?, token: String?): Boolean =
+        post(
+            JSONObject().put("kind", kind).put("city", city).put("tree", tree)
+                .put("location_hint", locationHint).put("why", why).put("page", page ?: JSONObject.NULL),
+            token,
+        )
+
     /** The report form (Contribute.swift, about one tree): a correction from that tree's page. */
     suspend fun correction(city: String, tree: String, locationHint: String, why: String, page: String, token: String?): Boolean =
         post(
