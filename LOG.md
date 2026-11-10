@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 daily publish (scheduled task): 25 trees into the app
+
+- **What went on main (490dc095d), app only under APP FIRST, no web page or place page:** Cleveland 5, Ann Arbor 3, Lansing 2, Sacramento 2, Santa Cruz 2 (build_source_led_2026_11_09.py), ten churchyard yews in Surrey, Sussex and Hampshire, one place each (Crowhurst, Tandridge, Wilmington, Corhampton, Stedham, Dunsfold, Charlwood, Coldwaltham, Tangmere, Itchen Abbas), and the Eastham Yew as Liverpool's lvp_004 (build_uk_under_ten.py limited to Liverpool, out/tmp/build_uk_under_ten_liverpool.py). None has a photograph. city_names and preflight 0 problems; the 25 is this task's own limit.
+- **Checked:** /liverpool 200, /cleveland 404, as APP FIRST wants (before the deploy that carries them). The 25 still need to be seen in the app feed after the next deploy.
+- **Still waits, 3 trees, one more day:** build_uk_under_ten.py: the Bute Park Tulip Tree (crd_010, Cardiff) and Windsor's two (wsr_001, wsr_002, a new place). Brighton's three in that builder are live already, so run it limited to cardiff and windsor. No claims stood on today's places.
+
 ## 2026-11-10 Android type and icons (session android-type-icons)
 
 - **Android's text now sets in Inter and its icons are Material Symbols Rounded**, the open set and face closest to the iPhone's SF Symbols and SF Pro (Hidde: "maak het zo veel hetzelfde"). Every text goes through ui/Text.kt, which adds SF's tracking per size and weight; every icon comes from ui/Symbols.kt, generated glyph for glyph by android/generate_symbols.py. Back (←), share and the overflow (⋮) take Android's form from the same set, per Airbnb's line. Tab icons, the tree page's top bar, Take me there and the action bar circles are sized to the iPhone's (SF point size times 4/3).
