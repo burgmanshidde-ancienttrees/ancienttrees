@@ -230,19 +230,22 @@
     "owner": null
   },
   "city": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": [
+      "The map's place header, its Highlights and Collected shelves, the white box with the ambassador row and the Plus box under the trees, ported from PlaceAmbassadors.swift, AmbassadorBadge.swift and PlusAsk.swift (PlaceBox.kt). A failed ambassador request says so on the one sheet: Android has no shared snackbar yet."
+    ]
   },
   "city-map-full": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": [
+      "As city. The faint circle under the grip is the shared MapSheet's, as on map-full (coordinator's)."
+    ]
   },
   "species": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": [
+      "SpeciesPage.kt from Species.swift: mark, name, Latin in italics, count, the species paragraph, photographed trees first then nearest. Android's back arrow in the bar (forced). Reached from a tree page's species, Discover's species tiles and its See all list."
+    ]
   },
   "collection": {
     "status": "in-progress",
@@ -256,9 +259,10 @@
     }
   },
   "place-pin": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": [
+      "PlacePin.kt from PlacePin.swift: the map moves under a fixed pin, the arrow above the card, the card's words and the disabled button until the pin moved 5 m. The crosshair is the Material map pin (PinPicker.kt, shared with collect). The map's licence credit (i) stays visible in the bottom corner. System back is Cancel (forced)."
+    ]
   },
   "own-tree": {
     "status": "parity",
@@ -270,9 +274,10 @@
     ]
   },
   "species-pick": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "parity",
+    "differences": [
+      "SpeciesChooser.kt from SpeciesChooser.swift, now also on your own tree and the draft: grouped list, matched name and Latin under each row, Not on the map yet, Use what you typed, the search field at the foot. Close is the bar's plain text as in every ported sheet (BarSheet), where iOS 26 draws a capsule. The map's Species filter (SpeciesPicker.kt) uses the same list."
+    ]
   },
   "directions": {
     "status": "parity",

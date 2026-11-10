@@ -73,3 +73,19 @@ fun Catalogue.filterSpecies(commons: List<String>, query: String): List<Pair<Str
         SpeciesSearch.hit(c, scientificName(c), otherNames[c].orEmpty(), q)?.let { Triple(i, c, it) }
     }.sortedWith(compareBy<Triple<Int, String, SpeciesHit>>({ it.third.rank }, { it.first })).map { it.second to it.third }
 }
+
+/**
+ * Kinds of tree we know by name and do not map yet, matching [query]
+ * (Catalogue.unmappedSpecies): the same hit order, a genus first when it ties.
+ */
+fun Catalogue.unmappedSpecies(query: String, limit: Int = 8): List<Pair<SpeciesNameRow, SpeciesHit>> {
+    val q = SpeciesSearch.fold(query)
+    if (q.length < 2) return emptyList()
+    return directory.mapIndexedNotNull { i, r ->
+        // A genus we already map ("Oak (Quercus sp.)") is a row above.
+        if (r.isMapped || treesOfSpecies(r.c).isNotEmpty()) return@mapIndexedNotNull null
+        SpeciesSearch.hit(r.c, r.l, r.a, q)?.let { Triple(i, r, it) }
+    }.sortedWith(
+        compareBy<Triple<Int, SpeciesNameRow, SpeciesHit>>({ it.third.rank }, { !it.second.isGenus }, { it.first }),
+    ).take(limit).map { it.second to it.third }
+}

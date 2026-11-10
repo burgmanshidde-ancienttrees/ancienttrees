@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The place and species screens (parity session 8): Species.swift, SpeciesChooser.swift,
+     SpeciesPicker.swift, PlacePin.swift, PlaceAmbassadors.swift, AmbassadorBadge.swift, PlusAsk.swift. -->
+<resources>
+    <string name="sp_on_map">%1$d on the map</string>
+    <string name="sp_any">Any species</string>
+    <string name="sp_which">Which kind of tree?</string>
+    <string name="sp_picker_title">Species</string>
+    <string name="sp_not_mapped">Not on the map yet</string>
+
+    <string name="pp_title">Where is it really?</string>
+    <string name="pp_thanks">Thank you</string>
+    <string name="pp_cancel">Cancel</string>
+    <string name="pp_done">Done</string>
+    <string name="pp_drag">Drag the map until the pin sits on the tree.</string>
+    <string name="pp_zoom">Zoom in as far as you like. You can send once you have moved the pin.</string>
+    <string name="pp_far">That is %1$d m from where we have it.</string>
+    <string name="pp_send">The tree is here</string>
+    <string name="pp_sending">Sending</string>
+    <string name="pp_sent">We will check it and move the pin.</string>
+    <string name="pp_failed">That did not go through. Try again in a moment.</string>
+    <string name="pp_account">You need an account to send this, so we can tell you what your correction changed.</string>
+
+    <string name="amb_become_the">Become the %1$s ambassador</string>
+    <string name="amb_become_a">Become a %1$s ambassador</string>
+    <string name="amb_role">%1$s ambassador</string>
+    <string name="amb_one_too">Become one too</string>
+    <string name="amb_request_sent">Request sent</string>
+    <string name="amb_title_seated">Become an ambassador for %1$s</string>
+    <string name="amb_open_profile">Open %1$s\'s profile</string>
+
+    <string name="plus_row">Help create Ancient Trees Plus</string>
+    <string name="plus_title">Ancient Trees Plus</string>
+    <string name="plus_message">We\'re working on Plus to make Ancient Trees a sustainable platform. What would you like it to do that it doesn\'t do yet?</string>
+    <string name="plus_idea_hint">I\'d like to…</string>
+    <string name="plus_skip">Skip</string>
+    <string name="plus_next">Next</string>
+    <string name="plus_choice_title">Which would you want most?</string>
+    <string name="plus_pick_two">Pick up to two.</string>
+    <string name="plus_send">Send</string>
+    <string name="plus_thanks">Thank you</string>
+    <string name="plus_tell_q">Want us to tell you when it\'s here?</string>
+    <string name="plus_tell_me">Tell me</string>
+    <string name="plus_sending">Sending</string>
+    <string name="plus_no_thanks">No thanks</string>
+    <string name="plus_listed">You\'re on the list</string>
+    <string name="plus_done">Done</string>
+    <string name="plus_opt_walks">Recommended tree walks for a city trip</string>
+    <string name="plus_opt_offline">Download offline maps</string>
+    <string name="plus_opt_season">Seasonal alerts when trees are at their best</string>
+    <string name="plus_opt_log">A richer log of every tree you\'ve collected</string>
+    <string name="plus_opt_other">Something else</string>
+    <string name="plus_other_hint">What would you want?</string>
+</resources>

@@ -154,5 +154,10 @@
       "why": "The Android twin of reviewPrompt.fired.v2, .last.v2, .seen.v1 and .yes.v1 (android/.../ui/ReviewAsk.kt): which review milestones this install asked, when, which trees it has seen (at most 25 ids) and the version it said yes on. Per install, like the store's own rule.",
       "off": "Nothing: a flag on this install, gone with the app; -reset-collection clears it for the sweep."
     }
+  },
+  "android:device/plus.answered.v1": {
+    "verdict": "device",
+    "why": "The Android twin of plus.answered.v1 (ui/PlaceBox.kt AppSwitches): whether this install answered the Ancient Trees Plus question, so its row on a city goes once answered (Hidde, 2026-11-05: \"ja dit mag je wel lokkaal opslaan\"). The answer itself is anonymous (plus_answers has no account), so there is nothing on the server to hang it under.",
+    "off": "Nothing: a flag on this install, gone with the app; a new install asks again."
   }
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The place and species screens (parity session 8): Species.swift, SpeciesChooser.swift,
+     SpeciesPicker.swift, PlacePin.swift, PlaceAmbassadors.swift, AmbassadorBadge.swift, PlusAsk.swift. -->
+<resources>
+    <string name="sp_on_map">%1$d auf der Karte</string>
+    <string name="sp_any">Jede Baumart</string>
+    <string name="sp_which">Welche Baumart?</string>
+    <string name="sp_picker_title">Baumart</string>
+    <string name="sp_not_mapped">Noch nicht auf der Karte</string>
+
+    <string name="pp_title">Wo steht er wirklich?</string>
+    <string name="pp_thanks">Danke</string>
+    <string name="pp_cancel">Abbrechen</string>
+    <string name="pp_done">Fertig</string>
+    <string name="pp_drag">Zieh die Karte, bis die Nadel auf dem Baum sitzt.</string>
+    <string name="pp_zoom">Zoom so weit hinein, wie du willst. Du kannst senden, sobald du die Nadel bewegt hast.</string>
+    <string name="pp_far">Das sind %1$d m von dort, wo wir ihn haben.</string>
+    <string name="pp_send">Der Baum steht hier</string>
+    <string name="pp_sending">Wird gesendet</string>
+    <string name="pp_sent">Wir prüfen es und versetzen die Nadel.</string>
+    <string name="pp_failed">Das hat nicht geklappt. Versuch es gleich noch einmal.</string>
+    <string name="pp_account">Zum Senden brauchst du ein Konto, damit wir dir sagen können, was deine Korrektur verändert hat.</string>
+
+    <string name="amb_become_the">Werde der Botschafter für %1$s</string>
+    <string name="amb_become_a">Werde Botschafter für %1$s</string>
+    <string name="amb_role">Botschafter für %1$s</string>
+    <string name="amb_one_too">Werde auch einer</string>
+    <string name="amb_request_sent">Anfrage gesendet</string>
+    <string name="amb_title_seated">Werde Botschafter für %1$s</string>
+    <string name="amb_open_profile">Profil von %1$s öffnen</string>
+
+    <string name="plus_row">Hilf mit, Ancient Trees Plus zu gestalten</string>
+    <string name="plus_title">Ancient Trees Plus</string>
+    <string name="plus_message">Wir arbeiten an Plus, damit Ancient Trees eine nachhaltige Plattform wird. Was soll es können, was es noch nicht kann?</string>
+    <string name="plus_idea_hint">Ich hätte gern…</string>
+    <string name="plus_skip">Überspringen</string>
+    <string name="plus_next">Weiter</string>
+    <string name="plus_choice_title">Was wäre dir am wichtigsten?</string>
+    <string name="plus_pick_two">Wähle bis zu zwei.</string>
+    <string name="plus_send">Senden</string>
+    <string name="plus_thanks">Danke</string>
+    <string name="plus_tell_q">Sollen wir dir Bescheid sagen, wenn es da ist?</string>
+    <string name="plus_tell_me">Sag mir Bescheid</string>
+    <string name="plus_sending">Wird gesendet</string>
+    <string name="plus_no_thanks">Nein danke</string>
+    <string name="plus_listed">Du bist auf der Liste</string>
+    <string name="plus_done">Fertig</string>
+    <string name="plus_opt_walks">Empfohlene Baumspaziergänge für einen Städtetrip</string>
+    <string name="plus_opt_offline">Offline-Karten herunterladen</string>
+    <string name="plus_opt_season">Saisonale Hinweise, wenn Bäume am schönsten sind</string>
+    <string name="plus_opt_log">Ein reichhaltigeres Logbuch aller Bäume, die du gesammelt hast</string>
+    <string name="plus_opt_other">Etwas anderes</string>
+    <string name="plus_other_hint">Was wünschst du dir?</string>
+</resources>

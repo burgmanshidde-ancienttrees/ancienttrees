@@ -159,6 +159,18 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val counts = remember { app.ancienttrees.account.VoteCounts() }
     // A place, species or tree a tree page sends to the map.
     var go by remember { mutableStateOf<Pair<Long, SearchHit>?>(null) }
+    // A species page (Species.swift), and the tree page it was opened from, which
+    // back returns to: the iPhone's navigation stack two deep.
+    var speciesPage by remember { mutableStateOf<String?>(null) }
+    var underSpecies by remember { mutableStateOf<Tree?>(null) }
+    // The pin map (PlacePin.swift) and the species chooser (SpeciesChooser.swift) over a tree page.
+    var placing by remember { mutableStateOf<Tree?>(null) }
+    var choosingSpeciesFor by remember { mutableStateOf<Tree?>(null) }
+    fun openSpecies(name: String) {
+        underSpecies = open
+        open = null
+        speciesPage = name
+    }
     // What somebody was doing when they were asked to sign in, finished when
     // they land ("device" in data/cross-device.json: a pending intent; held in
     // memory only here).
@@ -256,6 +268,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         }
     }
     LaunchedEffect(Unit) { account.restore() }
+    LaunchedEffect(Unit) { app.ancienttrees.ui.AppSwitches.refresh(launch.args) }
     LaunchedEffect(link) {
         val uri = link ?: return@LaunchedEffect
         // Read first, cleared after: clearing changes this effect's key and
@@ -328,6 +341,16 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     LaunchedEffect(catalogue) {
         val c = catalogue ?: return@LaunchedEffect
         launch.openTree?.let { id -> c.tree(id)?.let { open = it } }
+        launch.openTree?.let { id -> c.tree(id) }?.let { t ->
+            if (launch.placePin) placing = t
+            if (launch.speciesPick) choosingSpeciesFor = t
+        }
+        // A city lands on the map the way a search does (ContentView: navigator.searchOnMap).
+        launch.openCity?.let { slug ->
+            val t = c.trees(slug).firstOrNull()
+            go = System.nanoTime() to SearchHit.City(slug, t?.city ?: slug, t?.lat ?: 0.0, t?.lng ?: 0.0)
+        }
+        launch.openSpecies?.let { speciesPage = it }
         if (launch.signIn) {
             // The sweep's -signin is the keep-a-tree sheet, as on the iPhone.
             signInReason = app.ancienttrees.ui.SignInReason.KeepTree("")
@@ -362,6 +385,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     LaunchedEffect(Unit) {
         if ("-directions" in launch.args) app.ancienttrees.ui.DirectionsAsk.pending = app.ancienttrees.ui.DirectionsAsk.Pending(52.3676, 4.9041, null)
     }
+    BackHandler(enabled = speciesPage != null && open == null) {
+        speciesPage = null
+        open = underSpecies
+        underSpecies = null
+    }
     BackHandler(enabled = openMine != null && open == null) { openMine = null }
 
     // WHERE YOU ARE: a live fix, kept up to date while the app is open, else
@@ -383,6 +411,18 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     Box(Modifier.fillMaxSize()) {
         CompositionLocalProvider(
             LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+            app.ancienttrees.ui.LocalPlaceHost provides app.ancienttrees.ui.PlaceHost(
+                signedIn = signedIn,
+                email = (account.state as? SignIn.SignedIn)?.email,
+                token = { if (signedIn) account.fresh()?.accessToken else null },
+                signIn = { reason, then ->
+                    signInReason = reason
+                    pendingAfterSignIn = then
+                    asking = true
+                },
+                openPerson = { routes.openPerson(it) },
+                myPlaces = profiles.myPlaces.map { it.placeName },
+            ),
         ) {
             MapTab(
                 catalogue = catalogue,
@@ -427,10 +467,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         tab = 0
                         go = System.nanoTime() to hit
                     },
-                    openSpecies = { name ->
-                        tab = 0
-                        go = System.nanoTime() to SearchHit.Species(name)
-                    },
+                    // A species tile opens its page, as Home.swift's NavigationLink(Route.species).
+                    openSpecies = { name -> openSpecies(name) },
                     openPerson = { id -> routes.openPerson(id) },
                     showMap = { tab = 0 },
                     openWantToVisit = {
@@ -541,6 +579,25 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 },
             )
         }
+        speciesPage?.let { name ->
+            if (cat != null) {
+                CompositionLocalProvider(
+                    LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+                ) {
+                    app.ancienttrees.ui.SpeciesScreen(
+                        commonName = name,
+                        catalogue = cat,
+                        origin = origin,
+                        onBack = {
+                            speciesPage = null
+                            open = underSpecies
+                            underSpecies = null
+                        },
+                        onOpen = { open = it },
+                    )
+                }
+            }
+        }
         open?.let { tree ->
             CompositionLocalProvider(
                 LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
@@ -570,6 +627,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                             asking = true
                         },
                         onCollectFromLibrary = { collectFromLibrary(tree) },
+                        onSpecies = { name -> openSpecies(name) },
+                        onPlacePin = { placing = tree },
                         onAddPhoto = {
                             if (signedIn) {
                                 collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id)
@@ -582,10 +641,39 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 )
             }
         }
+        placing?.let { t ->
+            app.ancienttrees.ui.PlacePin(
+                tree = t,
+                account = account,
+                signedIn = signedIn,
+                onNeedsSignIn = { then ->
+                    signInReason = app.ancienttrees.ui.SignInReason.Feedback
+                    pendingAfterSignIn = then
+                    asking = true
+                },
+                onDismiss = { placing = null },
+            )
+        }
+        choosingSpeciesFor?.let { t ->
+            if (cat != null) {
+                // Only your own tree takes a name from it (OwnTree.kt); here it is the sweep's look.
+                val near = remember(t.id) {
+                    cat.trees.filter { app.ancienttrees.feed.Geo.km(t.lat, t.lng, it.lat, it.lng) < 3 && it.commonName.isNotEmpty() }
+                        .map { it.commonName }.distinct()
+                }
+                app.ancienttrees.ui.SpeciesChooser(
+                    catalogue = cat,
+                    nearby = near,
+                    current = t.commonName,
+                    onPick = { },
+                    onClose = { choosingSpeciesFor = null },
+                )
+            }
+        }
         if (recovering) {
             app.ancienttrees.ui.PermissionRecovery(app.ancienttrees.ui.Permission.LOCATION, onDismiss = { recovering = false })
         }
-        if (open == null && openMine == null && !searching && !discoverSearching && draft == null && !routes.showing) {
+        if (open == null && openMine == null && speciesPage == null && placing == null && !searching && !discoverSearching && draft == null && !routes.showing) {
             TabBar(
                 selected = tab,
                 select = { i ->

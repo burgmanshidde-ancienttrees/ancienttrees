@@ -239,7 +239,7 @@ Publish in English (Florence, Naples, Turin, Padua); addresses and register name
 2. No taking payments or setting prices. The paywall line he set (DECISIONS.md 2026-08-18: €19.95 a year, 7-day trial, Season Radar alerts, walks, personal log, offline) is not shown on the website until he says so.
 3. Nothing irreversible in public: no retiring indexed URLs without a redirect, no deleting data, no force-push, no giving up a domain.
 4. Never speak as Hidde or contact anyone as him. Drafts only; automated mails are signed Ancient Trees. One exception he made himself: the three ambassador mails end "Hidde / Ancient Trees" (Hidde, 2026-10-25: "better to end with my name; Hidde make it more personal").
-5. No new dependency or third-party service in the product without his yes. Gear for us (free, read-only, never touching reader data or the built site) a run may adopt and log. No accounts created, terms accepted or logins as him.
+5. **A library that makes the product better is simply used** (Hidde, 2026-11-10: "zeker dat minder beter is maar als we iets nodig hebben wat de boel beter maakt gewoon gebruiken"): fewer is better, the standard one of the platform first (Google's or Apple's own before a third party's), named with its reason in the commit and the LOG. What still needs his yes: a new third-party service that receives readers' data or costs money (it changes the privacy page, and privacycheck.py fails the push until it says so). Gear for us (free, read-only, never touching reader data or the built site) a run may adopt and log. No accounts created, terms accepted or logins as him.
 Also his alone: SEO_GEO_BLUEPRINT.md, TONE_OF_VOICE.md, the brand.
 
 ## Hard rules

@@ -277,20 +277,19 @@ private fun OwnTreeInner(
         )
     }
     if (choosingSpecies) {
-        SpeciesPicker(
+        // SpeciesChooser.swift, as the iPhone's own tree names its species.
+        SpeciesChooser(
             catalogue = catalogue,
             // nearbySpecies: ordering only, never a claim.
             nearby = remember(s.lat, s.lng) {
-                catalogue.trees.filter { Geo.km(s.lat, s.lng, it.lat, it.lng) < 3 && it.commonName.isNotEmpty() }.map { it.commonName }.toSet()
+                catalogue.trees.filter { Geo.km(s.lat, s.lng, it.lat, it.lng) < 3 && it.commonName.isNotEmpty() }.map { it.commonName }.distinct()
             },
-            selection = tree.commonName.ifEmpty { null },
+            current = tree.commonName,
             onPick = { picked ->
-                if (picked != null) {
-                    val latin = catalogue.scientificName(picked)
-                    scope.launch { mine.update(s.id, species = if (latin != null) "$picked ($latin)" else picked) }
-                }
+                val latin = if ('(' in picked) null else catalogue.scientificName(picked)
+                scope.launch { mine.update(s.id, species = if (latin != null) "$picked ($latin)" else picked) }
             },
-            onDismiss = { choosingSpecies = false },
+            onClose = { choosingSpecies = false },
         )
     }
     if (removing) {
