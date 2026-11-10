@@ -177,7 +177,6 @@ fun MapTab(
     val month = remember { Calendar.getInstance().get(Calendar.MONTH) + 1 }
 
     LaunchedEffect(searching) { onSearching(searching) }
-    // The Discover tab raises the list for now (data/android-parity.json "explore").
     LaunchedEffect(raise) { if (raise > 0) sheet.height = SheetHeight.HALF }
     LaunchedEffect(catalogue) {
         val c = catalogue ?: return@LaunchedEffect

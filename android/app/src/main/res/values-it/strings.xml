@@ -67,6 +67,65 @@
     <string name="tab_discover">Scopri</string>
     <string name="tab_my_trees">I miei alberi</string>
     <string name="collect_a_tree">Colleziona un albero</string>
+    <!-- discover -->
+    <string name="discover_search">Cerca un luogo, un albero o una specie</string>
+    <string name="discover_season_here">%1$s è qui</string>
+    <string name="discover_season_count">%1$s al loro meglio questo mese</string>
+    <string name="discover_season_near">\u0020· %1$d entro 20 km da te</string>
+    <string name="discover_at_best">Al suo meglio ora</string>
+    <string name="discover_at_best_in">Al suo meglio ora · %1$s</string>
+    <string name="discover_hero_1">Alberi che valgono la passeggiata,</string>
+    <string name="discover_hero_2">ovunque tu sia.</string>
+    <string name="discover_best">Al loro meglio ora</string>
+    <string name="discover_visitors">Nuovi dai visitatori</string>
+    <string name="discover_a_visitor">Un visitatore</string>
+    <string name="discover_cities">Le nostre città degli alberi preferite</string>
+    <string name="discover_records">I record</string>
+    <string name="discover_oldest">Il più vecchio</string>
+    <string name="discover_oldest_age">Il più vecchio · %1$s</string>
+    <string name="discover_thickest">Il più grosso</string>
+    <string name="discover_thickest_m">Il più grosso · %1$s</string>
+    <string name="discover_tallest">Il più alto</string>
+    <string name="discover_lists">Liste con un\'opinione</string>
+    <string name="discover_countries">Paesi degli alberi</string>
+    <string name="discover_find_near">Trova alberi vicino a te</string>
+    <string name="discover_want_signin">Accedi per tenere una lista degli alberi che vuoi visitare.</string>
+    <string name="discover_species">Per specie</string>
+    <string name="discover_islands">Isole degli alberi</string>
+    <string name="discover_growing_title">La mappa sta ancora crescendo</string>
+    <string name="discover_growing_body">Puoi aggiungere un albero fotografandolo e scrivendo quello che sai.</string>
+    <string name="discover_add_tree">Aggiungi un albero</string>
+    <string name="discover_more_near">Altri alberi vicino a te</string>
+    <string name="discover_more_trees">Altri alberi</string>
+    <string name="see_all">Vedi tutto</string>
+    <string name="discover_ambassador_wanted">%1$s cerca un ambasciatore</string>
+    <string name="discover_request_sent">Richiesta inviata.</string>
+    <string name="discover_amb_title">Diventa l\'ambasciatore di %1$s</string>
+    <string name="discover_amb_message">Un ambasciatore ci aiuta a raccontare bene gli alberi di questo luogo.</string>
+    <string name="discover_amb_p1">Aggiungere foto degli alberi</string>
+    <string name="discover_amb_p2">Controllare i fatti e dirci quali alberi mancano</string>
+    <string name="discover_amb_p3">Aiutare a comporre passeggiate che li toccano</string>
+    <string name="discover_apply">Candidati</string>
+    <string name="discover_sending">Invio in corso</string>
+    <string name="discover_not_now">Non ora</string>
+    <string name="discover_amb_sent_title">Richiesta inviata</string>
+    <string name="discover_amb_sent_body">Ti scriveremo presto con qualche domanda sulla lista.</string>
+    <string name="discover_amb_write_to">\u0020Scriveremo a %1$s.</string>
+    <string name="discover_done">Fatto</string>
+    <string name="discover_amb_failed">La tua richiesta non è partita. Riprova tra un momento.</string>
+    <string name="discover_index_cities">Città degli alberi</string>
+    <string name="discover_index_species">Specie</string>
+    <string name="discover_index_oldest">Gli alberi più vecchi della nostra mappa</string>
+    <string name="discover_index_search">Cerca</string>
+    <plurals name="discover_trees">
+        <item quantity="one">1 albero</item>
+        <item quantity="other">%1$d alberi</item>
+    </plurals>
+    <plurals name="discover_places">
+        <item quantity="one">1 luogo</item>
+        <item quantity="other">%1$d luoghi</item>
+    </plurals>
+    <!-- /discover -->
     <!-- tree page (TreeDetail.swift, TreeCard.swift) -->
     <string name="more">altro</string>
     <string name="photo_count">%1$d di %2$d</string>

@@ -115,13 +115,24 @@ object FeedParser {
     fun browse(json: String): Browse {
         val root = JSONObject(json)
         val (collections, a) = rows(root.optJSONArray("collections")) { o ->
-            TreeCollection(o.need("slug"), o.need("title"), o.text("intro"), o.strings("trees"))
+            TreeCollection(
+                o.need("slug"), o.need("title"), o.text("intro"), o.strings("trees"),
+                face = o.text("face"), months = o.ints("months"),
+            )
         }
         val (cities, b) = rows(root.optJSONArray("cities")) { o ->
             Facet(
                 o.text("slug"), o.need("name"), o.text("face"),
                 aka = o.strings("aka"),
                 popularity = o.number("popularity")?.toInt() ?: 0,
+                ambassadors = o.optJSONArray("ambassadors")?.let { a ->
+                    (0 until a.length()).mapNotNull { i ->
+                        val p = a.optJSONObject(i) ?: return@mapNotNull null
+                        val n = p.text("name") ?: return@mapNotNull null
+                        CityAmbassador(n, p.text("affiliation"), p.text("profile"))
+                    }
+                }.orEmpty(),
+                seated = o.flag("seated") ?: false,
             )
         }
         val (countries, c) = rows(root.optJSONArray("countries")) { o ->
@@ -140,15 +151,29 @@ object FeedParser {
             }
             Country(o.need("name"), box)
         }
+        val countryFaces = HashMap<String, String>()
+        root.optJSONArray("countries")?.let { arr ->
+            for (i in 0 until arr.length()) {
+                val o = arr.optJSONObject(i) ?: continue
+                val n = o.text("name") ?: continue
+                o.text("face")?.let { countryFaces[n] = it }
+            }
+        }
+        val speciesFaces = HashMap<String, String>()
         val sci = HashMap<String, String>()
         root.optJSONArray("species")?.let { arr ->
             for (i in 0 until arr.length()) {
                 val o = arr.optJSONObject(i) ?: continue
                 val n = o.text("name") ?: continue
                 o.text("scientific")?.takeIf { it.isNotEmpty() }?.let { sci[n] = it }
+                o.text("face")?.let { speciesFaces[n] = it }
             }
         }
-        return Browse(root.getString("version"), collections, cities, a + b + c, countries, sci)
+        return Browse(
+            root.getString("version"), collections, cities, a + b + c, countries, sci,
+            countryFaces = countryFaces, speciesFaces = speciesFaces,
+            favourites = root.strings("favourites"), islands = root.strings("islands"),
+        )
     }
 
     private fun photo(o: JSONObject?): Photo? {
@@ -166,6 +191,7 @@ object FeedParser {
             creditUrl = o.text("credit_url"),
             frame = o.number("frame"),
             season = o.text("season"),
+            takenMonth = o.number("taken_month")?.toInt(),
         )
     }
 

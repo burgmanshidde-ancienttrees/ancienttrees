@@ -78,6 +78,7 @@ object Snapshot {
         writeBoolean(p.frame != null)
         p.frame?.let { writeDouble(it) }
         opt(p.season)
+        optInt(p.takenMonth)
     }
 
     private fun DataInputStream.photo(): Photo {
@@ -91,7 +92,8 @@ object Snapshot {
         val line = opt()
         val curl = opt()
         val frame = if (readBoolean()) readDouble() else null
-        return Photo(url, license, attribution, short, thumb, hero, credit, line, curl, frame, opt())
+        val season = opt()
+        return Photo(url, license, attribution, short, thumb, hero, credit, line, curl, frame, season, optInt())
     }
 
     private fun DataOutputStream.tree(t: Tree) {

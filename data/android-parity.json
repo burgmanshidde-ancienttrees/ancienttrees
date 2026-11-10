@@ -108,9 +108,15 @@
     "owner": null
   },
   "explore": {
-    "status": "not-ported",
+    "status": "in-progress",
     "differences": [
-      "Discover (Home.swift) not ported; the tab raises the list for now."
+      "A species (a pill, By species See all, a species search hit) opens the map filtered to that species; the iPhone opens its species page, which is not ported yet.",
+      "A visitor's name, signed in, opens their public profile on the website (ancienttrees.app/profile?u=); the iPhone opens PersonProfile, not ported yet. Signed out both ask for a sign-in first.",
+      "Add a tree and Want to visit's See all go to what Android has today (the nearest tree's page, the account sheet's lanes) until Collect.swift and My trees are ported.",
+      "The lists, the oldest trees and the See all pages show their trees as rows (TreeRow), not TreeCard; TreeCard has landed from the tree page and replaces them next.",
+      "The ambassador explainer is drawn as its own sheet in Discover.kt; it moves onto BrandSheet.kt (now on main from the tree page). A failed request is a one-line sheet, not the snackbar, until a snackbar is ported.",
+      "A card face with no website choice falls back to the first photographed tree; the iPhone's fallback also weighs the photograph's size, which the Android feed reader does not read yet. The feed carries a face for every shelf today, so nothing shows this.",
+      "Pull to refresh is Material's spinner, the Android counterpart of the iPhone's refresh control (forced)."
     ],
     "owner": {
       "session": "local_8724be8d",
@@ -237,9 +243,15 @@
     "owner": null
   },
   "collection": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "in-progress",
+    "differences": [
+      "Ported with Discover (CollectionView in Home.swift): the intro and the trees, as rows (TreeRow) rather than TreeCard until the card from the tree page is swapped in."
+    ],
+    "owner": {
+      "session": "local_8724be8d",
+      "name": "Discover (main conversation)",
+      "since": "2026-11-10"
+    }
   },
   "place-pin": {
     "status": "not-ported",
@@ -335,6 +347,17 @@
         "name": "android-basis",
         "since": "2026-11-10"
       }
+    }
+  },
+  "cover": {
+    "status": "parity",
+    "differences": [
+      "Not in the sweep's frame list; checked by hand. Android asks for location half a second after the cover goes, as the iPhone does."
+    ],
+    "owner": {
+      "session": "local_8724be8d",
+      "name": "Discover (main conversation)",
+      "since": "2026-11-10"
     }
   }
 }

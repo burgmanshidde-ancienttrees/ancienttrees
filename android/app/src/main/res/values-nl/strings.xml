@@ -67,6 +67,65 @@
     <string name="tab_discover">Ontdek</string>
     <string name="tab_my_trees">Mijn bomen</string>
     <string name="collect_a_tree">Een boom verzamelen</string>
+    <!-- discover -->
+    <string name="discover_search">Zoek een plaats, een boom of een soort</string>
+    <string name="discover_season_here">%1$s is er</string>
+    <string name="discover_season_count">%1$s op hun mooist deze maand</string>
+    <string name="discover_season_near">\u0020· %1$d binnen 20 km van je</string>
+    <string name="discover_at_best">Nu op zijn mooist</string>
+    <string name="discover_at_best_in">Nu op zijn mooist · %1$s</string>
+    <string name="discover_hero_1">Bomen die de wandeling waard zijn,</string>
+    <string name="discover_hero_2">waar je ook bent.</string>
+    <string name="discover_best">Nu op hun mooist</string>
+    <string name="discover_visitors">Nieuw van bezoekers</string>
+    <string name="discover_a_visitor">Een bezoeker</string>
+    <string name="discover_cities">Onze favoriete bomensteden</string>
+    <string name="discover_records">De records</string>
+    <string name="discover_oldest">Oudste</string>
+    <string name="discover_oldest_age">Oudste · %1$s</string>
+    <string name="discover_thickest">Dikste</string>
+    <string name="discover_thickest_m">Dikste · %1$s</string>
+    <string name="discover_tallest">Hoogste</string>
+    <string name="discover_lists">Lijsten met een mening</string>
+    <string name="discover_countries">Bomenlanden</string>
+    <string name="discover_find_near">Vind bomen bij jou in de buurt</string>
+    <string name="discover_want_signin">Log in om een lijst bij te houden van bomen die je wilt bezoeken.</string>
+    <string name="discover_species">Per soort</string>
+    <string name="discover_islands">Bomeneilanden</string>
+    <string name="discover_growing_title">De kaart groeit nog</string>
+    <string name="discover_growing_body">Je kunt een boom toevoegen door hem te fotograferen en in te vullen wat je weet.</string>
+    <string name="discover_add_tree">Voeg een boom toe</string>
+    <string name="discover_more_near">Meer bomen bij jou in de buurt</string>
+    <string name="discover_more_trees">Meer bomen</string>
+    <string name="see_all">Alles</string>
+    <string name="discover_ambassador_wanted">%1$s zoekt een ambassadeur</string>
+    <string name="discover_request_sent">Verzoek verstuurd.</string>
+    <string name="discover_amb_title">Word de ambassadeur van %1$s</string>
+    <string name="discover_amb_message">Een ambassadeur helpt ons de bomen van deze plek goed te krijgen.</string>
+    <string name="discover_amb_p1">Foto\'s van de bomen toevoegen</string>
+    <string name="discover_amb_p2">De feiten nakijken en laten weten welke bomen ontbreken</string>
+    <string name="discover_amb_p3">Helpen wandelingen langs ze samen te stellen</string>
+    <string name="discover_apply">Aanmelden</string>
+    <string name="discover_sending">Versturen</string>
+    <string name="discover_not_now">Niet nu</string>
+    <string name="discover_amb_sent_title">Verzoek verstuurd</string>
+    <string name="discover_amb_sent_body">We mailen je binnenkort met een paar vragen over de lijst.</string>
+    <string name="discover_amb_write_to">\u0020We schrijven naar %1$s.</string>
+    <string name="discover_done">Klaar</string>
+    <string name="discover_amb_failed">Je verzoek is niet verstuurd. Probeer het zo nog eens.</string>
+    <string name="discover_index_cities">Bomensteden</string>
+    <string name="discover_index_species">Soorten</string>
+    <string name="discover_index_oldest">De oudste bomen op onze kaart</string>
+    <string name="discover_index_search">Zoeken</string>
+    <plurals name="discover_trees">
+        <item quantity="one">1 boom</item>
+        <item quantity="other">%1$d bomen</item>
+    </plurals>
+    <plurals name="discover_places">
+        <item quantity="one">1 plaats</item>
+        <item quantity="other">%1$d plaatsen</item>
+    </plurals>
+    <!-- /discover -->
     <!-- tree page (TreeDetail.swift, TreeCard.swift) -->
     <string name="more">meer</string>
     <string name="photo_count">%1$d van %2$d</string>

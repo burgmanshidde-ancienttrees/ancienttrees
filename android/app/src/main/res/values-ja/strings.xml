@@ -66,6 +66,65 @@
     <string name="tab_discover">見つける</string>
     <string name="tab_my_trees">私の木</string>
     <string name="collect_a_tree">木を集める</string>
+    <!-- discover -->
+    <string name="discover_search">場所、木、樹種を検索</string>
+    <string name="discover_season_here">%1$sが来ました</string>
+    <string name="discover_season_count">今月見頃の木 %1$s</string>
+    <string name="discover_season_near">\u0020· 20 km以内に%1$d本</string>
+    <string name="discover_at_best">今が見頃</string>
+    <string name="discover_at_best_in">今が見頃 · %1$s</string>
+    <string name="discover_hero_1">歩いて会いに行きたい木を、</string>
+    <string name="discover_hero_2">どこにいても。</string>
+    <string name="discover_best">今が見頃</string>
+    <string name="discover_visitors">訪問者からの新着</string>
+    <string name="discover_a_visitor">訪問者</string>
+    <string name="discover_cities">お気に入りの木の街</string>
+    <string name="discover_records">記録</string>
+    <string name="discover_oldest">最古</string>
+    <string name="discover_oldest_age">最古 · %1$s</string>
+    <string name="discover_thickest">最も太い</string>
+    <string name="discover_thickest_m">最も太い · %1$s</string>
+    <string name="discover_tallest">最も高い</string>
+    <string name="discover_lists">こだわりのリスト</string>
+    <string name="discover_countries">木の国</string>
+    <string name="discover_find_near">近くの木を探す</string>
+    <string name="discover_want_signin">ログインすると、訪ねたい木のリストを残せます。</string>
+    <string name="discover_species">樹種から</string>
+    <string name="discover_islands">木の島</string>
+    <string name="discover_growing_title">地図はまだ広がっています</string>
+    <string name="discover_growing_body">木を撮影して、知っていることを書けば追加できます。</string>
+    <string name="discover_add_tree">木を追加</string>
+    <string name="discover_more_near">近くのほかの木</string>
+    <string name="discover_more_trees">ほかの木</string>
+    <string name="see_all">すべて表示</string>
+    <string name="discover_ambassador_wanted">%1$sのアンバサダーを募集中</string>
+    <string name="discover_request_sent">申請を送りました。</string>
+    <string name="discover_amb_title">%1$sのアンバサダーになる</string>
+    <string name="discover_amb_message">アンバサダーは、この場所の木の情報を正しくする手助けをします。</string>
+    <string name="discover_amb_p1">木の写真を追加する</string>
+    <string name="discover_amb_p2">事実を確かめ、足りない木を教える</string>
+    <string name="discover_amb_p3">木をめぐる散歩道づくりを手伝う</string>
+    <string name="discover_apply">申し込む</string>
+    <string name="discover_sending">送信中</string>
+    <string name="discover_not_now">あとで</string>
+    <string name="discover_amb_sent_title">申請を送りました</string>
+    <string name="discover_amb_sent_body">リストについていくつか質問をメールでお送りします。</string>
+    <string name="discover_amb_write_to">\u0020%1$s宛てにお送りします。</string>
+    <string name="discover_done">完了</string>
+    <string name="discover_amb_failed">申請を送れませんでした。少ししてからもう一度お試しください。</string>
+    <string name="discover_index_cities">木の街</string>
+    <string name="discover_index_species">樹種</string>
+    <string name="discover_index_oldest">地図上で最も古い木</string>
+    <string name="discover_index_search">検索</string>
+    <plurals name="discover_trees">
+        <item quantity="one">1本</item>
+        <item quantity="other">%1$d本</item>
+    </plurals>
+    <plurals name="discover_places">
+        <item quantity="one">1か所</item>
+        <item quantity="other">%1$dか所</item>
+    </plurals>
+    <!-- /discover -->
     <!-- tree page (TreeDetail.swift, TreeCard.swift) -->
     <string name="more">もっと見る</string>
     <string name="photo_count">%1$d / %2$d</string>
