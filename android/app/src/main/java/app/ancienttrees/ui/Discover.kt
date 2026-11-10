@@ -8,7 +8,7 @@
 // of it here: Android copies the iPhone (DECISIONS.md 2026-11-10).
 //
 // ANDROID-FORCED DIFFERENCES (data/android-parity.json): Material Symbols for SF
-// Symbols, Roboto for SF Pro, the system back.
+// Symbols, Roboto for SF Pro, the system back, Material's pull-to-refresh spinner.
 
 package app.ancienttrees.ui
 
@@ -62,12 +62,9 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.BookmarkBorder
 import androidx.compose.material.icons.outlined.Map
 import androidx.compose.material.icons.outlined.Verified
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
-import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
-import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
@@ -133,7 +130,7 @@ class DiscoverActions(
     val openTree: (Tree) -> Unit,
     /** A city or a country: the map, framed on it (PlaceLink, never a pushed page). */
     val openPlace: (SearchHit) -> Unit,
-    /** A species: on the iPhone its own page; see data/android-parity.json. */
+    /** A species: its own page (Home.swift NavigationLink(Route.species)). */
     val openSpecies: (String) -> Unit,
     /** Somebody's public profile, signed in (Route.person). */
     val openPerson: (String) -> Unit,
@@ -178,6 +175,8 @@ fun DiscoverScreen(
     act: DiscoverActions,
     /** A collection a link asked for, with a nonce so the same link twice opens it twice. */
     openCollection: Pair<Long, String>? = null,
+    /** The places you look after (Profiles.myPlaces): their ambassador row is not yours to see. */
+    myPlaces: List<String> = emptyList(),
 ) {
     val brand = Brand.colors
     val month = remember { Calendar.getInstance().get(Calendar.MONTH) + 1 }
@@ -246,7 +245,7 @@ fun DiscoverScreen(
                 modifier = Modifier.fillMaxSize().nestedScroll(quickReturn),
             ) {
                 discoverContent(
-                    deck, catalogue, origin, located, signedIn, wantToVisit, visitorRows, email, token, act,
+                    deck, catalogue, origin, located, signedIn, wantToVisit, visitorRows, email, token, act, myPlaces,
                     open = { page = it },
                 )
                 item(key = "end") { Spacer(Modifier.height(30.dp + 90.dp)) } // clear of the floating tab bar
@@ -374,6 +373,7 @@ private fun LazyListScope.discoverContent(
     email: String?,
     token: suspend () -> String?,
     act: DiscoverActions,
+    myPlaces: List<String>,
     open: (DiscoverPage) -> Unit,
 ) {
     fun tag(t: Tree): String = tagFor(t, origin, located)
@@ -419,7 +419,7 @@ private fun LazyListScope.discoverContent(
     deck.here?.let { (slug, name) ->
         if (c.ambassadors(slug).isEmpty() && !c.seated(slug)) {
             block("ambassador") {
-                AmbassadorWantedRow(name, signedIn, email, token, act, Modifier.padding(horizontal = 16.dp))
+                AmbassadorWantedRow(name, signedIn, email, token, act, myPlaces, Modifier.padding(horizontal = 16.dp))
             }
         }
     }
@@ -948,8 +948,11 @@ private fun AmbassadorWantedRow(
     email: String?,
     token: suspend () -> String?,
     act: DiscoverActions,
+    myPlaces: List<String>,
     modifier: Modifier = Modifier,
 ) {
+    // You look after this place already, so the ask is not yours (AmbassadorBadge.swift isMine).
+    if (myPlaces.any { it.equals(place, ignoreCase = true) }) return
     val brand = Brand.colors
     val scope = rememberCoroutineScope()
     var asked by remember { mutableStateOf(false) }
@@ -991,121 +994,66 @@ private fun AmbassadorWantedRow(
         }
     }
     if (confirming) {
-        AmbassadorApplySheet(
-            place = place,
-            writeTo = email?.let { stringResource(R.string.discover_amb_write_to, it) }.orEmpty(),
-            sent = sent,
-            sending = sending,
-            onApply = {
-                sending = true
-                scope.launch {
-                    val t = token()
-                    if (t == null) {
-                        sending = false
-                        confirming = false
-                        act.signIn { confirming = true }
-                        return@launch
-                    }
-                    val ok = AmbassadorAsk.request(place, t)
-                    sending = false
-                    if (ok) {
-                        asked = true
-                        sent = true
-                    } else {
-                        confirming = false
-                        failed = true
-                    }
-                }
-            },
-            onDismiss = { confirming = false; sent = false },
-        )
+        val close = { confirming = false; sent = false }
+        // ONE SHEET WITH TWO STEPS (AmbassadorBadge.swift AmbassadorApplySheet on
+        // Kit/BrandSheet.swift): the explainer and its one button, then the receipt.
+        if (sent) {
+            BrandSheet(
+                title = stringResource(R.string.discover_amb_sent_title),
+                icon = Icons.Filled.Check,
+                message = stringResource(R.string.discover_amb_sent_body) +
+                    (email?.let { stringResource(R.string.discover_amb_write_to, it) } ?: ""),
+                onDismiss = close,
+                buttons = listOf(SheetButton(stringResource(R.string.discover_done), SheetKind.PRIMARY, action = close)),
+            )
+        } else {
+            BrandSheet(
+                title = stringResource(R.string.discover_amb_title, place),
+                icon = Icons.Outlined.Verified,
+                message = stringResource(R.string.discover_amb_message),
+                points = listOf(
+                    stringResource(R.string.discover_amb_p1),
+                    stringResource(R.string.discover_amb_p2),
+                    stringResource(R.string.discover_amb_p3),
+                ),
+                onDismiss = close,
+                buttons = listOf(
+                    SheetButton(stringResource(if (sending) R.string.discover_sending else R.string.discover_apply), SheetKind.PRIMARY) {
+                        if (sending) return@SheetButton
+                        sending = true
+                        scope.launch {
+                            // A request needs a LIVE session: no token opens the sign-in first.
+                            val t = token()
+                            if (t == null) {
+                                sending = false
+                                confirming = false
+                                act.signIn { confirming = true }
+                                return@launch
+                            }
+                            val ok = AmbassadorAsk.request(place, t)
+                            sending = false
+                            if (ok) {
+                                asked = true
+                                sent = true
+                            } else {
+                                confirming = false
+                                failed = true
+                            }
+                        }
+                    },
+                    SheetButton(stringResource(R.string.discover_not_now), SheetKind.QUIET, action = close),
+                ),
+            )
+        }
     }
     if (failed) {
-        // News, so the iPhone's snackbar; Android has no shared snackbar yet, so one line in a sheet.
-        MessageSheet(stringResource(R.string.discover_amb_failed)) { failed = false }
+        // News is the iPhone's snackbar; one line on the one sheet until Android has a shared one.
+        BrandSheet(
+            title = stringResource(R.string.discover_amb_failed),
+            onDismiss = { failed = false },
+            buttons = listOf(SheetButton(stringResource(R.string.discover_done), SheetKind.PRIMARY) { failed = false }),
+        )
     }
-}
-
-/** The ambassador explainer and its one button, then the receipt (BrandSheet). */
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-private fun AmbassadorApplySheet(
-    place: String,
-    writeTo: String,
-    sent: Boolean,
-    sending: Boolean,
-    onApply: () -> Unit,
-    onDismiss: () -> Unit,
-) {
-    val brand = Brand.colors
-    ModalBottomSheet(onDismissRequest = onDismiss, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true), containerColor = brand.surface) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(bottom = 28.dp),
-        ) {
-            Box(Modifier.size(56.dp).clip(RoundedCornerShape(14.dp)).background(brand.mossTint), contentAlignment = Alignment.Center) {
-                Icon(if (sent) Icons.Filled.Check else Icons.Outlined.Verified, null, tint = brand.moss, modifier = Modifier.size(26.dp))
-            }
-            Spacer(Modifier.height(16.dp))
-            Text(
-                if (sent) stringResource(R.string.discover_amb_sent_title) else stringResource(R.string.discover_amb_title, place),
-                fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 26.sp, color = brand.ink, textAlign = TextAlign.Center,
-                modifier = Modifier.padding(horizontal = 18.dp),
-            )
-            Text(
-                if (sent) stringResource(R.string.discover_amb_sent_body) + writeTo else stringResource(R.string.discover_amb_message),
-                fontSize = 15.sp, color = brand.inkSoft, textAlign = TextAlign.Center, modifier = Modifier.padding(top = 8.dp),
-            )
-            if (!sent) {
-                Column(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.fillMaxWidth().padding(top = 18.dp)) {
-                    for (p in listOf(R.string.discover_amb_p1, R.string.discover_amb_p2, R.string.discover_amb_p3)) {
-                        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                            Icon(Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(16.dp).padding(top = 2.dp))
-                            Text(stringResource(p), fontSize = 15.sp, color = brand.ink)
-                        }
-                    }
-                }
-            }
-            Column(verticalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.padding(top = 22.dp)) {
-                if (sent) {
-                    PrimaryButton(stringResource(R.string.discover_done), onDismiss)
-                } else {
-                    PrimaryButton(stringResource(if (sending) R.string.discover_sending else R.string.discover_apply)) { if (!sending) onApply() }
-                    QuietButton(stringResource(R.string.discover_not_now), onDismiss)
-                }
-            }
-        }
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-private fun MessageSheet(text: String, onDismiss: () -> Unit) {
-    val brand = Brand.colors
-    ModalBottomSheet(onDismissRequest = onDismiss, containerColor = brand.surface) {
-        Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-            Text(text, fontSize = 15.sp, color = brand.ink, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
-            PrimaryButton(stringResource(R.string.discover_done), onDismiss)
-        }
-    }
-}
-
-@Composable
-private fun PrimaryButton(text: String, onClick: () -> Unit) {
-    val brand = Brand.colors
-    Box(
-        Modifier.fillMaxWidth().height(48.dp).clip(CircleShape).background(brand.moss).clickable(onClick = onClick),
-        contentAlignment = Alignment.Center,
-    ) { Text(text, fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.onMoss) }
-}
-
-@Composable
-private fun QuietButton(text: String, onClick: () -> Unit) {
-    val brand = Brand.colors
-    Box(
-        Modifier.fillMaxWidth().height(44.dp).clip(CircleShape).clickable(onClick = onClick),
-        contentAlignment = Alignment.Center,
-    ) { Text(text, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.inkSoft) }
 }
 
 // MARK: - the pages behind the shelves
@@ -1147,7 +1095,7 @@ private fun CollectionPage(c: TreeCollection, catalogue: Catalogue, onBack: () -
                 item { Text(intro, fontSize = 16.sp, color = brand.inkSoft, modifier = Modifier.padding(horizontal = 16.dp).padding(top = 4.dp)) }
             }
             items(catalogue.treesOf(c), key = { it.id }) { t ->
-                Box(Modifier.padding(horizontal = 16.dp)) { TreeRow(t) { onOpen(t) } }
+                TreeCard(t, { onOpen(t) }, Modifier.padding(horizontal = 16.dp))
             }
         }
     }
@@ -1222,7 +1170,7 @@ private fun IndexPage(kind: IndexKind, c: Catalogue, act: DiscoverActions, onBac
                 IndexKind.OLDEST -> {
                     val all = c.trees.filter { (it.ageMin ?: 0) > 0 && (matches(it.name) || matches(it.city)) }
                         .sortedByDescending { it.ageMin ?: 0 }.take(120)
-                    items(all, key = { it.id }) { t -> Box(Modifier.padding(bottom = 6.dp)) { TreeRow(t) { act.openTree(t) } } }
+                    items(all, key = { it.id }) { t -> TreeCard(t, { act.openTree(t) }, Modifier.padding(bottom = 6.dp)) }
                 }
             }
         }
