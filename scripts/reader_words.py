@@ -35,7 +35,10 @@ synced by private_store.py like the rest of outreach) because they are a
 person's words and this repository is public:
 
   {"words": [{"id": "mail-2026-10-13-carta-1", "tree_id": "sar_006",
-              "date": "2026-10-13", "lang": "it", "text": "..."}]}
+              "date": "2026-10-13", "lang": "it", "text": "...",
+              "quote_ok": "2026-10-15, 'sì certo'"}]}
+
+Since 2026-11-10 a row is listed only with `quote_ok` (see mailed()).
 
 Only their own words: a passage they quote from a book is someone else's
 text and is named, never copied (Camarda in that same mail). They are listed
@@ -109,13 +112,26 @@ def notes(key):
 
 
 def mailed():
-    """Rows for words that came by mail, from the private data/outreach-words.json."""
+    """Rows for words that came by mail, from the private data/outreach-words.json.
+
+    Only words the sender agreed to see quoted (compliance audit, Hidde
+    2026-11-10: "ok vertel me wat we moeten doen voor 4 en 5 en 6"). A mail is
+    not covered by the app's terms, so the reply asks "May we put this on the
+    tree's page, without your name?" and the session that reads the yes sets
+    `quote_ok` on the row to their words or the date. Rows without it wait,
+    and are counted so nobody forgets to ask."""
     try:
         doc = json.load(open(MAILED, encoding="utf-8"))
     except (OSError, ValueError):
         return []
+    rows = [w for w in doc.get("words", []) if w.get("tree_id")]
+    waiting = [w for w in rows if not w.get("quote_ok")]
+    if waiting:
+        print("reader_words: %d sentence(s) from mails wait for the sender's yes before "
+              "they are quoted (ask in the reply, then set quote_ok in "
+              "data/outreach-words.json)" % len(waiting), file=sys.stderr)
     return [(w["tree_id"], "mail", w["id"], w.get("date", ""), w.get("text") or "")
-            for w in doc.get("words", []) if w.get("tree_id")]
+            for w in rows if w.get("quote_ok")]
 
 
 _BY_PATH, _BY_SIGHTING = {}, {}
