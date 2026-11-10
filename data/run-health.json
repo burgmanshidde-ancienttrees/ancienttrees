@@ -2,101 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-08T13:19:04+00:00",
-   "date": "2026-09-08",
-   "run_id": "34225658460",
-   "minutes": 89.3,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 318,
-   "denials": 47,
-   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
-   "ended": "success",
-   "tokens": 20101064,
-   "claims_held": [
-    "_famous-bulgaria",
-    "_famous-china"
-   ],
-   "commits": 22,
-   "cities_touched": 18,
-   "cities": [
-    {
-     "city": "deventer",
-     "trees": 2
-    },
-    {
-     "city": "arnhem",
-     "trees": 1
-    },
-    {
-     "city": "assen",
-     "trees": 1
-    },
-    {
-     "city": "borculo",
-     "trees": 1
-    },
-    {
-     "city": "ekero",
-     "trees": 1
-    },
-    {
-     "city": "emmen",
-     "trees": 1
-    },
-    {
-     "city": "giethoorn",
-     "trees": 1
-    },
-    {
-     "city": "groningen",
-     "trees": 1
-    },
-    {
-     "city": "harderwijk",
-     "trees": 1
-    },
-    {
-     "city": "heinkenszand",
-     "trees": 1
-    },
-    {
-     "city": "oostkapelle",
-     "trees": 1
-    },
-    {
-     "city": "pajuris",
-     "trees": 1
-    },
-    {
-     "city": "radomsko",
-     "trees": 1
-    },
-    {
-     "city": "rhenen",
-     "trees": 1
-    },
-    {
-     "city": "stockholm",
-     "trees": 1
-    },
-    {
-     "city": "stokaiciai",
-     "trees": 1
-    },
-    {
-     "city": "trollskogen",
-     "trees": 1
-    },
-    {
-     "city": "utrecht",
-     "trees": 1
-    }
-   ],
-   "trees": 19,
-   "logged": true
-  },
-  {
    "started": "2026-09-08T15:22:11+00:00",
    "date": "2026-09-08",
    "run_id": "34244271903",
@@ -21429,6 +21334,27 @@
     "fort-worth"
    ],
    "commits": 6,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-10T07:37:04+00:00",
+   "date": "2026-11-10",
+   "run_id": "42776484946",
+   "minutes": 4.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 64,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 388371,
+   "claims_held": [
+    "fort-worth"
+   ],
+   "commits": 4,
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
