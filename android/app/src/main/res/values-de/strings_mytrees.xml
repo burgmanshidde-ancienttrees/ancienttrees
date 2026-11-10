@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My trees and a tree of your own: Screens/Collect.swift, Screens/TreeDetail.swift (mine). -->
+<resources>
+    <string name="back_to_map">Zurück zur Karte</string>
+    <string name="mt_your_trees">Deine Bäume</string>
+    <string name="mt_signin_prompt">Registriere dich und melde dich an, um Bäume hinzuzufügen und zu speichern.</string>
+    <string name="mt_collected">Gesammelt</string>
+    <string name="mt_signin_collect">Melde dich an, um deine Baumsammlung zu beginnen.</string>
+    <string name="mt_collected_empty">Du fügst hier einen Baum hinzu, indem du ihn mit der Kamerataste fotografierst.</string>
+    <string name="mt_all">Alle %1$d</string>
+    <string name="mt_followers">Follower</string>
+    <string name="mt_following">folge ich</string>
+    <string name="mt_settings">Einstellungen</string>
+    <string name="mt_find_people">Leute finden</string>
+    <string name="mt_edit_profile">Profil bearbeiten</string>
+    <string name="mt_change_photo">Foto und Namen ändern</string>
+    <string name="mt_first_tree">Dein erster Baum ist %1$s entfernt</string>
+    <string name="mt_start_with">Fang mit diesem Baum an</string>
+    <string name="mt_mission_body">Du sammelst ihn, indem du ihn fotografierst, während du davor stehst. Jeder Baum zählt zu deinen Bäumen, Arten und Orten, und seine Jahre zu deiner Summe.</string>
+    <string name="mt_show_way">Weg zeigen</string>
+    <string name="mt_no_trees">Noch keine Bäume</string>
+    <string name="mt_no_trees_body">Du beginnst deine Sammlung, indem du irgendeinen Baum fotografierst.</string>
+    <string name="ot_gone">Dieser Baum ist nicht mehr da</string>
+    <string name="ot_add">Hinzufügen</string>
+    <string name="ot_add_age">Alter hinzufügen</string>
+    <string name="ot_add_girth">Umfang hinzufügen</string>
+    <string name="ot_add_species">Art hinzufügen</string>
+    <string name="ot_prompt_name">Wie nennst du ihn?</string>
+    <string name="ot_prompt_age">Wie alt ist er ungefähr?</string>
+    <string name="ot_prompt_girth">Wie dick ist der Stamm rundherum?</string>
+    <string name="ot_prompt_story">Was macht diesen Baum besonders?</string>
+    <string name="ot_girth_hint">In Metern, auf Brusthöhe. Eine Umarmung sind etwa 1,5 m.</string>
+    <string name="ot_save">Sichern</string>
+    <string name="ot_more">Mehr</string>
+    <string name="ot_change_name">Namen ändern</string>
+    <string name="ot_change_species">Art ändern</string>
+    <string name="ot_change_age">Alter ändern</string>
+    <string name="ot_change_girth">Umfang ändern</string>
+    <string name="ot_remove_tree">Diesen Baum entfernen</string>
+    <string name="ot_remove_title">%1$s aus deinen Bäumen entfernen?</string>
+    <string name="ot_remove_body">Dein Foto geht mit. Was du uns schon geschickt hast, bleibt bei uns.</string>
+    <string name="ot_remove">Entfernen</string>
+    <string name="ot_keep">Behalten</string>
+    <string name="ot_approved">Bestätigt</string>
+    <string name="ot_approved_body">Wir haben deinen Baum geprüft und zu Ancient Trees hinzugefügt, damit alle ihn finden.</string>
+    <string name="ot_more_photos">Weitere Fotos</string>
+    <string name="ot_more_photos_body">Optional. Ein Foto des Schilds hilft: Es nennt oft den Baum, die Art und sein Alter.</string>
+    <string name="ot_add_photo">Foto hinzufügen</string>
+    <string name="ot_share_failed">Das wurde nicht gesendet. Versuch den Link noch einmal, wenn du Empfang hast.</string>
+</resources>

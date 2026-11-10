@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My trees and a tree of your own: Screens/Collect.swift, Screens/TreeDetail.swift (mine). -->
+<resources>
+    <string name="back_to_map">地図に戻る</string>
+    <string name="mt_your_trees">あなたの木</string>
+    <string name="mt_signin_prompt">登録してサインインすると、木を追加して保存できます。</string>
+    <string name="mt_collected">コレクション</string>
+    <string name="mt_signin_collect">サインインして木のコレクションを始めましょう。</string>
+    <string name="mt_collected_empty">カメラボタンで撮影すると、ここに木が追加されます。</string>
+    <string name="mt_all">すべて %1$d</string>
+    <string name="mt_followers">フォロワー</string>
+    <string name="mt_following">フォロー中</string>
+    <string name="mt_settings">設定</string>
+    <string name="mt_find_people">人を探す</string>
+    <string name="mt_edit_profile">プロフィールを編集</string>
+    <string name="mt_change_photo">写真と名前を変更</string>
+    <string name="mt_first_tree">最初の木まであと%1$s</string>
+    <string name="mt_start_with">この木から始めましょう</string>
+    <string name="mt_mission_body">その場で撮影するとコレクションに加わります。木ごとに、あなたの木、種、場所が増え、樹齢が合計に加わります。</string>
+    <string name="mt_show_way">道順を見る</string>
+    <string name="mt_no_trees">まだ木がありません</string>
+    <string name="mt_no_trees_body">どんな木でも撮影すればコレクションが始まります。</string>
+    <string name="ot_gone">その木はなくなりました</string>
+    <string name="ot_add">追加</string>
+    <string name="ot_add_age">樹齢を追加</string>
+    <string name="ot_add_girth">幹回りを追加</string>
+    <string name="ot_add_species">種を追加</string>
+    <string name="ot_prompt_name">何と呼びますか？</string>
+    <string name="ot_prompt_age">だいたい何歳ですか？</string>
+    <string name="ot_prompt_girth">幹回りはどれくらいですか？</string>
+    <string name="ot_prompt_story">この木の特別なところは？</string>
+    <string name="ot_girth_hint">メートルで、胸の高さで。ひと抱えは約1.5 mです。</string>
+    <string name="ot_save">保存</string>
+    <string name="ot_more">その他</string>
+    <string name="ot_change_name">名前を変更</string>
+    <string name="ot_change_species">種を変更</string>
+    <string name="ot_change_age">樹齢を変更</string>
+    <string name="ot_change_girth">幹回りを変更</string>
+    <string name="ot_remove_tree">この木を削除</string>
+    <string name="ot_remove_title">%1$sをあなたの木から削除しますか？</string>
+    <string name="ot_remove_body">写真も一緒に削除されます。すでに送ってくれたものは私たちの元に残ります。</string>
+    <string name="ot_remove">削除</string>
+    <string name="ot_keep">残す</string>
+    <string name="ot_approved">承認済み</string>
+    <string name="ot_approved_body">あなたの木を確認し、Ancient Treesに追加しました。誰でも見つけられます。</string>
+    <string name="ot_more_photos">ほかの写真</string>
+    <string name="ot_more_photos_body">任意です。看板の写真があると助かります。木の名前、種、樹齢が書かれていることが多いです。</string>
+    <string name="ot_add_photo">写真を追加</string>
+    <string name="ot_share_failed">送信できませんでした。電波のあるところでもう一度リンクをお試しください。</string>
+</resources>

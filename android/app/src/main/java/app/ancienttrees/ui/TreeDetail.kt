@@ -808,10 +808,10 @@ private fun FactsBlock(tree: Tree, actions: TreePageActions, onPlace: () -> Unit
 }
 
 @Composable
-private fun Hairline() = Box(Modifier.fillMaxWidth().height(1.dp).background(Brand.colors.hairline))
+internal fun Hairline() = Box(Modifier.fillMaxWidth().height(1.dp).background(Brand.colors.hairline))
 
 @Composable
-private fun FactColumn(label: String, modifier: Modifier = Modifier, value: @Composable () -> Unit) {
+internal fun FactColumn(label: String, modifier: Modifier = Modifier, value: @Composable () -> Unit) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(2.dp)) {
         Text(label, fontSize = 13.sp, color = Brand.colors.inkSoft)
         value()
@@ -819,7 +819,7 @@ private fun FactColumn(label: String, modifier: Modifier = Modifier, value: @Com
 }
 
 @Composable
-private fun FactValue(text: String, color: Color = Brand.colors.ink) {
+internal fun FactValue(text: String, color: Color = Brand.colors.ink) {
     Text(
         text,
         fontFamily = BrandFace,
@@ -1453,7 +1453,7 @@ private fun BarCircle(icon: ImageVector, label: String, on: Boolean = false, tin
 
 /** BrandButtonStyle: the primary capsule, 48 high, as wide as the bar allows. */
 @Composable
-private fun BigButton(label: String, icon: ImageVector, modifier: Modifier = Modifier, onClick: () -> Unit) {
+internal fun BigButton(label: String, icon: ImageVector, modifier: Modifier = Modifier, onClick: () -> Unit) {
     val brand = Brand.colors
     Row(
         horizontalArrangement = Arrangement.Center,

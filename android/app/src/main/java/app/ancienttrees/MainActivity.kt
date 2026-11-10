@@ -156,6 +156,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val scope = rememberCoroutineScope()
     val account = remember { Account(context.applicationContext) }
     val saves = remember { Saves(account) }
+    // My trees' server half (account/MyTrees.kt): your own finds, tips and profile, memory only.
+    val myTrees = remember { app.ancienttrees.account.MyTrees(account) }
+    // A tree of your own, open (ContentView .mine).
+    var openMine by remember { mutableStateOf<String?>(null) }
+    var myLane by remember { mutableStateOf(if (launch.laneWant) app.ancienttrees.ui.TreesLane.WANT else app.ancienttrees.ui.TreesLane.SEEN) }
     // The tree page's thumb and reports (WorthIt.swift): memory only.
     val votes = remember { app.ancienttrees.account.MyVotes() }
     val counts = remember { app.ancienttrees.account.VoteCounts() }
@@ -251,10 +256,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     LaunchedEffect(signedIn) {
         if (!signedIn) {
             saves.forget()
+            myTrees.forget()
             return@LaunchedEffect
         }
         asking = false
         saves.load()
+        myTrees.load()
         pendingAfterSignIn?.let { f ->
             pendingAfterSignIn = null
             f()
@@ -303,6 +310,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         launch.openTree?.let { id -> c.tree(id)?.let { open = it } }
         if (launch.signIn) asking = true
         if (launch.collectOpen) collectStart = app.ancienttrees.ui.CollectStart()
+        // The sweep's stand-ins for an account (debug builds only, nothing sent).
+        if (launch.mineDemo) myTrees.seedDemo(launch.at?.first ?: DAM_SQUARE.lat, launch.at?.second ?: DAM_SQUARE.lng)
+        if (launch.collectedIds.isNotEmpty() || launch.savedIds.isNotEmpty()) saves.seed(launch.collectedIds, launch.savedIds)
+        launch.openMine?.let { openMine = it }
     }
     LaunchedEffect(Unit) {
         val started = android.os.SystemClock.elapsedRealtime()
@@ -312,6 +323,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     }
 
     BackHandler(enabled = open != null) { open = null }
+    BackHandler(enabled = openMine != null && open == null) { openMine = null }
 
     // WHERE YOU ARE: a live fix, kept up to date while the app is open, else
     // Dam square, the iPhone's first-launch-anywhere default (ContentView.origin).
@@ -322,13 +334,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     var raise by remember { mutableIntStateOf(0) }
     var searching by remember { mutableStateOf(false) }
     val trees = catalogue?.trees.orEmpty()
-    // The tabs: Map, Discover (Home.swift), and My trees, which opens your lanes
-    // until Collect.swift is ported (data/android-parity.json "collection-tab").
-    var tab by remember { mutableIntStateOf(if (launch.tab == 1) 1 else 0) }
+    // The tabs: Map, Discover (Home.swift), and My trees (Collect.swift).
+    var tab by remember { mutableIntStateOf(if (launch.tab == 1 || launch.tab == 2) launch.tab!! else 0) }
     // Tapping Discover while on Discover scrolls back up (navigator.scrollToTop).
     var discoverTop by remember { mutableIntStateOf(0) }
     var discoverSearching by remember { mutableStateOf(false) }
-    BackHandler(enabled = tab == 1 && open == null) { tab = 0 }
+    BackHandler(enabled = (tab == 1 || tab == 2) && open == null && openMine == null) { tab = 0 }
 
     Box(Modifier.fillMaxSize()) {
         CompositionLocalProvider(
@@ -382,7 +393,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     },
                     openPerson = { id -> openProfileOnWeb(context, id) },
                     showMap = { tab = 0 },
-                    openWantToVisit = { if (signedIn) showAccount = true else asking = true },
+                    openWantToVisit = {
+                        myLane = app.ancienttrees.ui.TreesLane.WANT
+                        tab = 2
+                    },
                     addTree = { collectStart = app.ancienttrees.ui.CollectStart() },
                     signIn = { then ->
                         pendingAfterSignIn = then
@@ -391,6 +405,56 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     searching = { discoverSearching = it },
                 ),
             )
+        }
+        // MY TREES (Collect.swift). The gear, the name and the people controls lead
+        // to the account sheet until Profile.swift and People.swift are ported.
+        if (tab == 2 && cat != null) {
+            val mtSignedIn = signedIn || launch.signedIn
+            CompositionLocalProvider(
+                LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+            ) {
+                androidx.compose.runtime.key(myLane) {
+                    app.ancienttrees.ui.MyTreesScreen(
+                        catalogue = cat,
+                        origin = origin,
+                        located = located,
+                        granted = granted,
+                        signedIn = mtSignedIn,
+                        email = (account.state as? SignIn.SignedIn)?.email,
+                        saves = saves,
+                        mine = myTrees,
+                        initialSheet = if (launch.sheetFull) app.ancienttrees.ui.SheetHeight.FULL else app.ancienttrees.ui.SheetHeight.HALF,
+                        initialLane = myLane,
+                        onUseMyLocation = { if (refused) openAppSettings(context) else ask.launch(LOCATION) },
+                        actions = app.ancienttrees.ui.MyTreesActions(
+                            openTree = { open = it },
+                            openMine = { openMine = it },
+                            signIn = { asking = true },
+                            settings = { if (signedIn) showAccount = true else asking = true },
+                            editProfile = { if (signedIn) showAccount = true else asking = true },
+                            findPeople = { if (signedIn) showAccount = true },
+                            followList = { if (signedIn) showAccount = true },
+                            showMap = { tab = 0 },
+                        ),
+                    )
+                }
+            }
+        }
+        openMine?.let { id ->
+            if (cat != null) {
+                app.ancienttrees.ui.OwnTree(
+                    id = id,
+                    mine = myTrees,
+                    catalogue = cat,
+                    onBack = { openMine = null },
+                    onCity = { slug, name ->
+                        val t = cat.trees(slug).firstOrNull()
+                        openMine = null
+                        tab = 0
+                        go = System.nanoTime() to SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0)
+                    },
+                )
+            }
         }
         open?.let { tree ->
             CompositionLocalProvider(
@@ -433,14 +497,14 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 )
             }
         }
-        if (open == null && !searching && !discoverSearching && draft == null) {
+        if (open == null && openMine == null && !searching && !discoverSearching && draft == null) {
             TabBar(
                 selected = tab,
                 select = { i ->
                     when (i) {
                         0 -> tab = 0
                         1 -> if (tab == 1) discoverTop++ else tab = 1
-                        2 -> if (signedIn) showAccount = true else asking = true
+                        2 -> tab = 2
                         else -> Unit
                     }
                 },
@@ -474,7 +538,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         counts = counts,
                         needsSignIn = { then -> pendingAfterSignIn = then; asking = true },
                         askLocation = { if (!refused) ask.launch(LOCATION) },
-                        send = { job -> scope.launch { if (!job()) collectFailed = true } },
+                        send = { job -> scope.launch { if (!job()) collectFailed = true else myTrees.load(force = true) } },
                         ticked = { saves.noteCollected(it) },
                         openDraft = { draft = it },
                         share = { t -> share(context, t, "collect", "${t.name}, ${t.city}.") },
@@ -492,7 +556,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     catalogue = cat,
                     onSave = { saved, city ->
                         draft = null
-                        scope.launch { if (!Collector.saveDraft(account, saved, city)) collectFailed = true }
+                        scope.launch { if (!Collector.saveDraft(account, saved, city)) collectFailed = true else myTrees.load(force = true) }
                     },
                     onDiscard = { draft = null },
                 )

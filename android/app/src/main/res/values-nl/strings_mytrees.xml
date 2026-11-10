@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My trees and a tree of your own: Screens/Collect.swift, Screens/TreeDetail.swift (mine). -->
+<resources>
+    <string name="back_to_map">Terug naar de kaart</string>
+    <string name="mt_your_trees">Jouw bomen</string>
+    <string name="mt_signin_prompt">Registreer en log in om bomen toe te voegen en te bewaren.</string>
+    <string name="mt_collected">Verzameld</string>
+    <string name="mt_signin_collect">Log in om je bomenverzameling te beginnen.</string>
+    <string name="mt_collected_empty">Je voegt hier een boom toe door hem te fotograferen met de cameraknop.</string>
+    <string name="mt_all">Alle %1$d</string>
+    <string name="mt_followers">volgers</string>
+    <string name="mt_following">volgend</string>
+    <string name="mt_settings">Instellingen</string>
+    <string name="mt_find_people">Mensen zoeken</string>
+    <string name="mt_edit_profile">Je profiel bewerken</string>
+    <string name="mt_change_photo">Je foto en naam wijzigen</string>
+    <string name="mt_first_tree">Je eerste boom is %1$s verderop</string>
+    <string name="mt_start_with">Begin met deze boom</string>
+    <string name="mt_mission_body">Je verzamelt hem door hem te fotograferen terwijl je erbij staat. Elke boom telt mee voor je bomen, soorten en plaatsen, en zijn jaren voor je totaal.</string>
+    <string name="mt_show_way">Wijs de weg</string>
+    <string name="mt_no_trees">Nog geen bomen</string>
+    <string name="mt_no_trees_body">Je begint je verzameling door een willekeurige boom te fotograferen.</string>
+    <string name="ot_gone">Die boom is weg</string>
+    <string name="ot_add">Toevoegen</string>
+    <string name="ot_add_age">Leeftijd toevoegen</string>
+    <string name="ot_add_girth">Omtrek toevoegen</string>
+    <string name="ot_add_species">Soort toevoegen</string>
+    <string name="ot_prompt_name">Hoe noem je hem?</string>
+    <string name="ot_prompt_age">Hoe oud is hij ongeveer?</string>
+    <string name="ot_prompt_girth">Hoe dik is de stam rondom?</string>
+    <string name="ot_prompt_story">Wat maakt deze boom bijzonder?</string>
+    <string name="ot_girth_hint">In meters, op borsthoogte. Eén knuffel is ongeveer 1,5 m.</string>
+    <string name="ot_save">Bewaar</string>
+    <string name="ot_more">Meer</string>
+    <string name="ot_change_name">Naam wijzigen</string>
+    <string name="ot_change_species">Soort wijzigen</string>
+    <string name="ot_change_age">Leeftijd wijzigen</string>
+    <string name="ot_change_girth">Omtrek wijzigen</string>
+    <string name="ot_remove_tree">Deze boom verwijderen</string>
+    <string name="ot_remove_title">%1$s uit je bomen verwijderen?</string>
+    <string name="ot_remove_body">Je foto gaat mee. Wat je ons al stuurde, blijft bij ons.</string>
+    <string name="ot_remove">Verwijderen</string>
+    <string name="ot_keep">Houden</string>
+    <string name="ot_approved">Goedgekeurd</string>
+    <string name="ot_approved_body">We hebben je boom bekeken en aan Ancient Trees toegevoegd, zodat iedereen hem kan vinden.</string>
+    <string name="ot_more_photos">Meer foto\'s</string>
+    <string name="ot_more_photos_body">Optioneel. Een foto van het bordje helpt: daarop staan vaak de naam, de soort en de leeftijd.</string>
+    <string name="ot_add_photo">Foto toevoegen</string>
+    <string name="ot_share_failed">Dat is niet verstuurd. Probeer de link opnieuw als je bereik hebt.</string>
+</resources>

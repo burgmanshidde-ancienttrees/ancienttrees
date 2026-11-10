@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My trees and a tree of your own: Screens/Collect.swift, Screens/TreeDetail.swift (mine). -->
+<resources>
+    <string name="back_to_map">Retour à la carte</string>
+    <string name="mt_your_trees">Tes arbres</string>
+    <string name="mt_signin_prompt">Inscris-toi et connecte-toi pour ajouter et garder des arbres.</string>
+    <string name="mt_collected">Collectés</string>
+    <string name="mt_signin_collect">Connecte-toi pour commencer ta collection d\'arbres.</string>
+    <string name="mt_collected_empty">Tu ajoutes un arbre ici en le photographiant avec le bouton appareil photo.</string>
+    <string name="mt_all">Tous %1$d</string>
+    <string name="mt_followers">abonnés</string>
+    <string name="mt_following">abonnements</string>
+    <string name="mt_settings">Réglages</string>
+    <string name="mt_find_people">Trouver des gens</string>
+    <string name="mt_edit_profile">Modifier ton profil</string>
+    <string name="mt_change_photo">Changer ta photo et ton nom</string>
+    <string name="mt_first_tree">Ton premier arbre est à %1$s</string>
+    <string name="mt_start_with">Commence par cet arbre</string>
+    <string name="mt_mission_body">Tu le collectes en le photographiant sur place. Chaque arbre s\'ajoute à tes arbres, espèces et lieux, et ses années à ton total.</string>
+    <string name="mt_show_way">Montrer le chemin</string>
+    <string name="mt_no_trees">Pas encore d\'arbres</string>
+    <string name="mt_no_trees_body">Tu commences ta collection en photographiant n\'importe quel arbre.</string>
+    <string name="ot_gone">Cet arbre n\'est plus là</string>
+    <string name="ot_add">Ajouter</string>
+    <string name="ot_add_age">Ajouter l\'âge</string>
+    <string name="ot_add_girth">Ajouter la circonférence</string>
+    <string name="ot_add_species">Ajouter l\'espèce</string>
+    <string name="ot_prompt_name">Comment l\'appelles-tu ?</string>
+    <string name="ot_prompt_age">Quel âge a-t-il, à peu près ?</string>
+    <string name="ot_prompt_girth">Quelle est la circonférence du tronc ?</string>
+    <string name="ot_prompt_story">Qu\'est-ce qui rend cet arbre spécial ?</string>
+    <string name="ot_girth_hint">En mètres, à hauteur de poitrine. Une étreinte fait environ 1,5 m.</string>
+    <string name="ot_save">Enregistrer</string>
+    <string name="ot_more">Plus</string>
+    <string name="ot_change_name">Changer le nom</string>
+    <string name="ot_change_species">Changer l\'espèce</string>
+    <string name="ot_change_age">Changer l\'âge</string>
+    <string name="ot_change_girth">Changer la circonférence</string>
+    <string name="ot_remove_tree">Retirer cet arbre</string>
+    <string name="ot_remove_title">Retirer %1$s de tes arbres ?</string>
+    <string name="ot_remove_body">Ta photo part avec lui. Ce que tu nous as déjà envoyé reste chez nous.</string>
+    <string name="ot_remove">Retirer</string>
+    <string name="ot_keep">Le garder</string>
+    <string name="ot_approved">Approuvé</string>
+    <string name="ot_approved_body">Nous avons vérifié ton arbre et l\'avons ajouté à Ancient Trees, pour que tout le monde le trouve.</string>
+    <string name="ot_more_photos">Plus de photos</string>
+    <string name="ot_more_photos_body">Facultatif. Une photo du panneau aide : il donne souvent le nom, l\'espèce et l\'âge.</string>
+    <string name="ot_add_photo">Ajouter une photo</string>
+    <string name="ot_share_failed">Ça n\'est pas parti. Réessaie le lien quand tu as du réseau.</string>
+</resources>

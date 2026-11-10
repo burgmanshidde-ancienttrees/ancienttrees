@@ -17,6 +17,19 @@ data class LaunchArgs(val args: List<String>) {
     val openTree: String? get() = value("-open")?.takeIf { it.startsWith("tree:") }?.removePrefix("tree:")
     val sheetFull: Boolean get() = "-sheet=full" in args
 
+    /** -open=mine:<id>: a tree of your own (ContentView .mine). */
+    val openMine: String? get() = value("-open")?.takeIf { it.startsWith("mine:") }?.removePrefix("mine:")
+
+    /** -mine-demo: two of your own trees, drawn, nothing sent (Sightings.seedDemo). */
+    val mineDemo: Boolean get() = "-mine-demo" in args
+
+    /** -lane=want: My trees opens on Want to visit. */
+    val laneWant: Boolean get() = "-lane=want" in args
+
+    /** -collected=<ids> and -saved=<ids>: the lanes with trees in them (Saved.seedFromLaunchArguments). */
+    val collectedIds: List<String> get() = value("-collected")?.split(",")?.filter { it.isNotBlank() }.orEmpty()
+    val savedIds: List<String> get() = value("-saved")?.split(",")?.filter { it.isNotBlank() }.orEmpty()
+
     /** -sheet=full, -sheet=half, -sheet=card, else the peek (MapTab.swift). */
     val sheet: app.ancienttrees.ui.SheetHeight
         get() = when {

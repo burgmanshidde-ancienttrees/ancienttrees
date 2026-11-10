@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My trees and a tree of your own: Screens/Collect.swift, Screens/TreeDetail.swift (mine). -->
+<resources>
+    <string name="back_to_map">Back to the map</string>
+    <string name="mt_your_trees">Your trees</string>
+    <string name="mt_signin_prompt">Register and sign in to add and save trees.</string>
+    <string name="mt_collected">Collected</string>
+    <string name="mt_signin_collect">Sign in to start your tree collection.</string>
+    <string name="mt_collected_empty">You can add a tree here by photographing it with the camera button.</string>
+    <string name="mt_all">All %1$d</string>
+    <string name="mt_followers">followers</string>
+    <string name="mt_following">following</string>
+    <string name="mt_settings">Settings</string>
+    <string name="mt_find_people">Find people</string>
+    <string name="mt_edit_profile">Edit your profile</string>
+    <string name="mt_change_photo">Change your photo and name</string>
+    <string name="mt_first_tree">Your first tree is %1$s away</string>
+    <string name="mt_start_with">Start with this tree</string>
+    <string name="mt_mission_body">You can collect it by photographing it while you stand there. Each tree adds to your trees, species and places, and its years to your total.</string>
+    <string name="mt_show_way">Show the way</string>
+    <string name="mt_no_trees">No trees yet</string>
+    <string name="mt_no_trees_body">You can start your collection by photographing any tree.</string>
+    <string name="ot_gone">That tree is gone</string>
+    <string name="ot_add">Add</string>
+    <string name="ot_add_age">Add the age</string>
+    <string name="ot_add_girth">Add the girth</string>
+    <string name="ot_add_species">Add the species</string>
+    <string name="ot_prompt_name">What do you call it?</string>
+    <string name="ot_prompt_age">How old is it, roughly?</string>
+    <string name="ot_prompt_girth">How far round is the trunk?</string>
+    <string name="ot_prompt_story">What makes this tree special?</string>
+    <string name="ot_girth_hint">In metres, at chest height. One hug is about 1.5 m.</string>
+    <string name="ot_save">Save</string>
+    <string name="ot_more">More</string>
+    <string name="ot_change_name">Change the name</string>
+    <string name="ot_change_species">Change the species</string>
+    <string name="ot_change_age">Change the age</string>
+    <string name="ot_change_girth">Change the girth</string>
+    <string name="ot_remove_tree">Remove this tree</string>
+    <string name="ot_remove_title">Remove %1$s from your trees?</string>
+    <string name="ot_remove_body">Your photograph goes with it. Anything you already sent us stays with us.</string>
+    <string name="ot_remove">Remove</string>
+    <string name="ot_keep">Keep it</string>
+    <string name="ot_approved">Approved</string>
+    <string name="ot_approved_body">We checked your tree and added it to Ancient Trees, so everybody can find it.</string>
+    <string name="ot_more_photos">More photographs</string>
+    <string name="ot_more_photos_body">Optional. A photo of the sign helps: it often names the tree, the species and its age.</string>
+    <string name="ot_add_photo">Add photo</string>
+    <string name="ot_share_failed">That did not send. Try the link again when you have signal.</string>
+</resources>
