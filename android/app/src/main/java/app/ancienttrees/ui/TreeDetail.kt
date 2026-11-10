@@ -397,7 +397,7 @@ private fun Hero(
             Modifier
                 .fillMaxWidth()
                 .height(heroHeight)
-                .clickable(interactionSource = noTap, indication = null, onClick = onFullMap),
+                .clickable(interactionSource = noTap, indication = androidx.compose.foundation.LocalIndication.current, onClick = onFullMap),
         ) {
             MapInset(tree.lat, tree.lng, side = null, height = heroHeight, modifier = Modifier.fillMaxSize())
             // THE SAME CONTROL, POINTING THE OTHER WAY: the photograph's thumbnail.
@@ -447,7 +447,7 @@ private fun Hero(
                         null,
                         Modifier
                             .fillMaxSize()
-                            .clickable(interactionSource = noTap, indication = null) { onOpenPhoto(i) },
+                            .clickable(interactionSource = noTap, indication = androidx.compose.foundation.LocalIndication.current) { onOpenPhoto(i) },
                         // The photograph this page is about skips the queue (TreePhoto urgent).
                         urgent = i == 0,
                         fallback = {
@@ -487,7 +487,7 @@ private fun Hero(
             Modifier
                 .fillMaxWidth()
                 .height(300.dp)
-                .clickable(interactionSource = noTap, indication = null, onClick = onFullMap),
+                .clickable(interactionSource = noTap, indication = androidx.compose.foundation.LocalIndication.current, onClick = onFullMap),
         ) {
             MapInset(tree.lat, tree.lng, side = null, height = 300.dp, modifier = Modifier.fillMaxSize())
             Row(
