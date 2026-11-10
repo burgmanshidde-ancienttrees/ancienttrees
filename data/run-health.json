@@ -2,50 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-08T15:22:11+00:00",
-   "date": "2026-09-08",
-   "run_id": "34244271903",
-   "minutes": 67.9,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 288,
-   "denials": 30,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(for), Bash(grep), Bash(iconv), Bash(mkdir), Bash(python3), Bash(rm), Bash(set)",
-   "ended": "success",
-   "tokens": 36532988,
-   "claims_held": [],
-   "commits": 10,
-   "cities_touched": 6,
-   "cities": [
-    {
-     "city": "lukavice",
-     "trees": 1
-    },
-    {
-     "city": "machov",
-     "trees": 1
-    },
-    {
-     "city": "nara",
-     "trees": 1
-    },
-    {
-     "city": "rudy",
-     "trees": 1
-    },
-    {
-     "city": "sulechow",
-     "trees": 1
-    },
-    {
-     "city": "bangkok",
-     "trees": 0
-    }
-   ],
-   "trees": 5,
-   "logged": true
-  },
-  {
    "started": "2026-09-08T17:39:24+00:00",
    "date": "2026-09-08",
    "run_id": "34258394664",
@@ -21358,6 +21314,42 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-11-10T12:04:24+00:00",
+   "date": "2026-11-10",
+   "run_id": "42812560044",
+   "minutes": 9.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 71,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 649710,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "fort-worth",
+     "trees": 2
+    },
+    {
+     "city": "indianapolis",
+     "trees": 1
+    },
+    {
+     "city": "tucson",
+     "trees": 1
+    },
+    {
+     "city": "vienna",
+     "trees": 1
+    }
+   ],
+   "trees": 5,
    "logged": true
   }
  ],
