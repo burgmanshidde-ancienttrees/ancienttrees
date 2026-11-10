@@ -48,6 +48,8 @@ Feeders, all code, almost no tokens:
 
 ## The groups, one ask each
 
+**Every first mail ends with a way to say no** (compliance audit, 2026-11-10): one line before the sign-off, in the mail's language, as the archive template has it ("If you would rather not hear from me again, just say so." / "Wil je liever niets meer van me horen, zeg het en ik schrijf niet meer."). A no goes into the contacts database and that address is never mailed again. `mailcheck.py` refuses a first mail without it (`opt_out_in_first_mail_hits()`).
+
 | Group | Who | The ask | Per day |
 |---|---|---|---|
 | source | sites that our tree pages cite, **and only sites a person runs** (blogs, societies, local history, tree enthusiasts; since 2026-10-20 registers, ministries and regional governments are classed council: zero of 29 answered and none would link) | **Variant A of the nature mail** (Hidde, 2026-10-29: "sounds better ja", "onthou deze benadering"; the link ask had 0 replies in 38): subject = the title of their article, "I read your article on <the tree, in their words>. We actually used it to build our map on ancient trees", our page, his agreed intro, "Would that be interesting for <site>? Very curious what you think of it", Wilder P.S. Fetch their article first: it must answer 200 and name the tree, else the site waits. Text in drafts/nature-template.md | 10 |

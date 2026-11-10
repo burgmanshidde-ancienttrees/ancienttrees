@@ -316,6 +316,51 @@ def repeated_ask_hits(text, body):
     return hits
 
 
+# How a first mail says "tell me and I stop", in the languages we write in.
+# The archive template in outreach_compose.py carries one in every language;
+# these patterns are its sentences plus the plain English variants.
+OPT_OUT = re.compile(
+    r"rather not hear|prefer not to hear|don'?t want to hear|not hear from (me|us) again|"
+    r"won'?t (write|mail) again|liever niets meer|niet meer (horen|mailen|schrijven)|"
+    r"nicht mehr (hören|schreiben)|keine (weiteren )?(mails|nachrichten)|sagen sie einfach bescheid|"
+    r"basta dizer|não (voltar|quer) .{0,30}(escrever|receber)|"
+    r"basta con decirlo|no volver[ée] a escribir|"
+    r"basta dirlo|non (le|ti) scriverò più|"
+    r"ne plus (vous|te) écrire|n'hésitez pas à me le dire et je n'écrirai plus",
+    re.I)
+
+
+def opt_out_in_first_mail_hits(path, text):
+    """Every first mail tells the person how to stop hearing from us.
+
+    Compliance audit, 2026-11-10 (Hidde: "wees een lawyer en geef ons een
+    audit", then "ja, maak ze"). A cold mail to a person rather than a desk
+    falls under the Dutch Telecommunicatiewet and GDPR article 14, and both ask
+    that somebody can say no easily; the archive template already ended "If you
+    would rather not hear from me again, just say so", the hand-written nature,
+    guide and press batches did not. So a mail with no in_reply_to and no
+    resend_reason (a first contact, as role_in_first_mail_hits reads it) must
+    carry such a line, or name why not in `no_opt_out_because`."""
+    import json
+    if not path.endswith(".json"):
+        return []
+    try:
+        mails = json.loads(text).get("mails") or []
+    except Exception:
+        return []
+    hits = []
+    for m in mails:
+        if m.get("in_reply_to") or m.get("resend_reason"):
+            continue
+        if (m.get("no_opt_out_because") or "").strip():
+            continue
+        if not OPT_OUT.search(m.get("body") or ""):
+            hits.append(("NO WAY TO SAY NO", m.get("to", "?"),
+                         "a first mail ends with one line such as \"If you would "
+                         "rather not hear from me again, just say so.\""))
+    return hits
+
+
 def role_in_first_mail_hits(path, text):
     """The ambassador role belongs in mail 2, never in a first contact.
 
@@ -555,6 +600,7 @@ def check(path):
     hits += repeated_ask_hits(text, body)
     hits += batch_address_hits(path, text)
     hits += role_in_first_mail_hits(path, text)
+    hits += opt_out_in_first_mail_hits(path, text)
     # A batch that records its possessive claims as verified (the session read
     # each recipient's why_them and owns_the_trees before writing the key) has
     # answered what this check asks; without the key the flags stand, so a

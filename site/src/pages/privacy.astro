@@ -1,41 +1,87 @@
 ---
 // Privacy page. Ported from build_privacy_page(), build_site.py:4382-4412.
+//
+// 2026-11-10, rewritten after a compliance audit (Hidde: "wees een lawyer en
+// geef ons een audit", then "ja, maak ze"). The page had fallen behind the
+// product: it still said an account without a name has no profile and that a
+// collection is shown to nobody, while since 2026-10-28 every account has a
+// profile, public profiles show Collected and Want to go to signed-in readers,
+// notes on trees are public, and Discover's "New from visitors" row names a
+// public profile beside its photograph. It also lacked what GDPR article 13
+// asks of every privacy notice: who decides, on what basis, for how long,
+// who processes the data, and the reader's rights including a complaint to
+// the Autoriteit Persoonsgegevens.
+//
+// KEEP IT TRUE: scripts/privacycheck.py fails the build when a table in
+// supabase/ or a service in data/privacy-map.json is not named here, and the
+// monthly compliance review (BRIEF_COMPLIANCE.md) reads this page against the
+// product. A change to what is stored or shown changes this page in the same
+// commit.
 import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
 
 const canonical = `${BASE_URL}/privacy`;
 ---
-<Base title="Privacy" description="What data Ancient Trees handles." canonical={canonical}>
+<Base title="Privacy" description="What data Ancient Trees handles, why, for how long, and what you can ask us." canonical={canonical}>
 <main class="content-page">
   <h1>Privacy</h1>
   <div class="prose-block">
-    <p>Ancient Trees is a small independent project. This page describes what data the site handles.</p>
+    <p>Ancient Trees is a small independent project made by Hidde, in the Netherlands. He decides what happens with the data on this page. You can reach him at <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> or with a <a href="/contribute?kind=privacy">privacy request</a>, which needs no account.</p>
+
     <h2>Browsing</h2>
-    <p>Every page works without an account. Map tiles load from OpenFreeMap and photos from Wikimedia Commons; those requests reach their servers the way any image on the web does.</p>
+    <p>Every page works without an account. The site is served by GitHub Pages, and the map tiles load from OpenFreeMap; like any web server, theirs see your IP address when your browser asks for a file. Most photographs come from our own domain, a few still from Wikimedia Commons.</p>
+
     <h2 id="cookies">Cookies and Google Analytics</h2>
     <p>On your first visit the site asks whether it may use Google Analytics. <strong>Until you press Accept, nothing is loaded from Google and no analytics cookie is set.</strong> If you accept, Google Analytics sets its own cookies (named <code>_ga</code>) and records which pages you look at, roughly where you are (country and city, from your IP address, which Google does not store), your device and browser, the page that sent you here, and which buttons you use. We use it to see how people find and use the site, and whether they come back. Google signals and ad personalisation are switched off, and we do not send Google your account, your email address or anything you have saved. Google keeps this data for 14 months and may process it outside the EU under the EU-US Data Privacy Framework.</p>
     <p>Your answer is remembered in this browser only. You can change it at any time with the <a href="#cookies" data-consent-open>Cookies</a> link at the foot of every page; declining removes the Google Analytics cookies and stops it straight away.</p>
-    <h2>With an account</h2>
-    <p>Signing in stores your email address and your tree collection. The address is used for sign-in links and account service, nothing else. This data is stored with Supabase, on servers in the EU (Frankfurt).</p>
-    <p>If you record a tree of your own in the app, that <strong>sighting is stored with your account</strong>: the photograph you take, the coordinates of the place you took it, the date, and any note you write. The photograph is stored in the same EU project. A sighting is yours and we do not show your collection to anybody. The photograph is the one thing that can travel: we may put it on the tree's page, beside the picture already there or in its place, and share it on our social media accounts, and the app says so on the screen where you take it. <strong>No name is printed beside it</strong>, yours or anybody's, so a picture on a tree page points at nothing about you. We do not publish your email address. If you delete your account a published photograph stays, and there was never a name on it to remove. If you can be recognised in a photograph we published, tell us and we'll take it off. Location is used only for this and for showing you what is nearby; nothing about where you are is sent anywhere until you record a sighting yourself.</p>
-    <p>In the app you may also set a <strong>display name and a profile picture</strong>, and you may <strong>follow other people</strong>. All three are optional and none of them exists until you create it: an account with no name has no profile at all. The name is the one people search by, so it is visible to anyone signed in; it does not have to be your real name and we would rather it was not. The picture is stored in the same EU project and is visible to anyone signed in. You may also pick a <strong>country</strong>, whose flag shows after your name; it is optional, we never guess it, and choosing None removes it. Following stores only that one account follows another. Your email address is never shown to anybody, and neither is your collection: following somebody today shows you nothing except that you follow them.</p>
-    <p>The site also counts, anonymously, which buttons get used (for example how often a directions button is clicked). These counts contain no names, no addresses, no identifiers and no cookies; they cannot be traced to anyone. If you accepted Google Analytics, the same button counts go to it as well.</p>
-    <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address, used to email you when the app is ready; a tree suggestion keeps what you wrote, including the name you optionally leave. Neither is ever shown on the site. Suggestions, corrections and votes are made from your signed-in account, and your account's email address is used only to reply about what you sent: to thank you, ask a question if we need to, and tell you what your tip changed. Nothing else. A privacy request needs no account. Want any of this removed? Use the contact address below.</p>
+    <p>The site also counts, anonymously, which buttons get used (for example how often a directions button is clicked). These counts contain no names, no addresses, no identifiers and no cookies. If you accepted Google Analytics, the same button counts go to it as well.</p>
+
+    <h2>Your account</h2>
+    <p>You sign in with a link sent to your email address, or with Google or Apple. We store your email address, and from Google or Apple the name they give us. The address is used for sign-in links and for replies about what you sent us, nothing else, and it is never shown to anybody. Your account and everything on it is stored with Supabase, on servers in the EU (Frankfurt).</p>
+    <p>With an account we also keep what you do with it: the trees you save and the trees you collect, walks you make, the places and trees you last picked from a search, the people you follow, the answers you give to a question we ask in the app, and any report or block you make.</p>
+
+    <h2>Your profile</h2>
+    <p>Every account has a profile from the start. Its name is the short form of the name Google or Apple gave us (a first name and an initial), or a generated tree name when there is none. You can change the name, add a picture and pick a country flag in Edit profile.</p>
+    <p><strong>Profiles are public unless you switch that off</strong> in Settings. A public profile can be seen by anybody signed in: your name, picture and flag, when you joined, how many people you follow and who follow you, any place you are an ambassador of, the trees you collected and the trees you want to visit. It never shows your email address or the dates you visited a tree. We may suggest a public profile to people who saved trees in a place where its owner photographed trees. A private profile is seen by you alone.</p>
+
+    <h2>What other people can see of what you send</h2>
+    <p>If you record a tree in the app, that <strong>sighting is stored with your account</strong>: the photograph, the place you took it, the date, and any note you write. We may put the photograph on the tree's page and share it on our social media accounts. On the tree's page it carries no name. In the app's and the site's list of new photographs from visitors, your name and picture show beside it when your profile is public, and "A visitor" when it is private. Before a photograph goes on the site we remove the location and camera data stored inside the file. If you share a tree you added, anybody with the link can see its photograph, its note and the day you added it.</p>
+    <p>A <strong>note you write on a tree</strong> is public on that tree's page, for everybody, with its date and with your name when your profile is public, "A visitor" when it is not. If you become an ambassador of a place, your name shows on that place's page when your profile is public.</p>
+    <p>Suggestions, corrections and votes are made from your account and are never shown on the site with your name. We may quote what you wrote about a tree on its page, without your name. Location is used only to place a tree and to show you what is nearby; nothing about where you are is sent anywhere until you record a sighting yourself.</p>
+
     <h2>Reporting somebody, and blocking them</h2>
-    <p>If a name or a picture in the app is offensive, you can report it, and you can block the person so you no longer see them. A report stores who reported whom and the reason you picked; nobody can read reports back through the app, including the person reported. A block stores only that one account has blocked another, and it is kept on our side rather than on your phone so it survives a new phone or a reinstall. We look at every report and remove what does not belong here.</p>
-    <h2>When the app or the site breaks</h2>
-    <p>The app asks iOS for a report when it has crashed or frozen, using Apple's own MetricKit, and sends it to the same EU database. That report contains what went wrong, the app version and the iOS version, and <strong>nothing that says whose phone it came from</strong>: no account, no email address, no location. It arrives at most once a day, on the next launch after the fault, and only from a real device. It is used to fix the app and for nothing else.</p>
-    <p>When a script on this site fails, the page sends the same database the error message, the file and line it came from, the page address without anything after the question mark, your browser's name and version number, and the date. Nothing that says who you are: the report holds no account, no IP address and no cookie, and nothing is kept in your browser. These reports are used to fix the site and deleted after 90 days.</p>
+    <p>If a name or a picture in the app is offensive, you can report it, and you can block the person so you no longer see them. A report stores who reported whom and the reason you picked; nobody can read reports back, including the person reported. A block stores only that one account has blocked another, kept on our side so it survives a new phone or a reinstall. We look at every report and remove what does not belong here.</p>
+
     <h2>What you do in the app</h2>
-    <p>The app records what gets used, so we can see whether it helps anybody find a tree: for example that the app was opened, that a tree was opened, saved or collected, or that directions were asked for. Each record carries the name of what happened, the app and iOS version, a random number made on your phone when the app was installed, and, <strong>while you are signed in, your account number</strong>. Never your email address, your name or your location. It goes to PostHog, an analytics service, on servers in the EU (Frankfurt). We use it to understand how people use the app, for example whether somebody who saved a tree later went to see it, and for nothing else. Signed out, nothing ties the records to an account. If you delete your account, the account number on these records no longer points to anybody.</p>
-    <h2>Contact</h2>
-    <p>Questions about any of this, or want something removed? <a href="/contribute?kind=privacy">Send a privacy request</a> and say what you want removed. It reaches the people who run this site, and nothing else is needed from you.</p>
+    <p>The app records what gets used, so we can see whether it helps anybody find a tree: for example that the app was opened, that a tree was opened, saved or collected, or that directions were asked for. Each record carries the name of what happened, the app and iOS version, a random number made on your phone when the app was installed, and, <strong>while you are signed in, your account number</strong>. Never your email address, your name or your location. It goes to PostHog, an analytics service, on servers in the EU (Frankfurt). Signed out, nothing ties the records to an account. If you delete your account, the account number on these records no longer points to anybody.</p>
+
+    <h2>When the app or the site breaks</h2>
+    <p>The app asks iOS for a report when it has crashed or frozen, using Apple's own MetricKit, and sends it to the same EU database. That report contains what went wrong, the app version and the iOS version, and <strong>nothing that says whose phone it came from</strong>. It is used to fix the app and for nothing else.</p>
+    <p>When a script on this site fails, the page sends the same database the error message, the file and line it came from, the page address without anything after the question mark, your browser's name and version number, and the date. No account, no IP address, no cookie. These reports are deleted after 90 days.</p>
+
+    <h2>Mail</h2>
+    <p>When you write to us, your mail and our reply stay in our inbox (Gmail, with forwarding through ImprovMX). Mail we send goes out through Resend, a mail service in the United States. The app waitlist keeps your email address to tell you when the app is ready.</p>
+    <p><strong>If we wrote to you first</strong>, we found your address on your own website or that of your organisation, and we keep your name, organisation, address and that page in a private list, only to write to you about Ancient Trees. Tell us you would rather not hear from us and we stop and take you off the list.</p>
+
+    <h2>Who handles the data for us</h2>
+    <p>Supabase (accounts and everything stored with them, EU), PostHog (app use, EU), Google (Analytics after you accept, sign-in with Google, and our mail inbox), Apple (sign-in with Apple and crash reports), Resend and ImprovMX (mail), GitHub (hosting the site, and an encrypted weekly backup of the database kept for 90 days) and OpenFreeMap (map tiles). Where one of them works outside the EU, it does so under the EU-US Data Privacy Framework or the European Commission's standard contractual clauses.</p>
+
+    <h2>Why we may use it</h2>
+    <p>Your account, profile, collection, sightings, notes and the mails about them: because you asked for the service, and these terms are how it works. Google Analytics: only with your consent, which you can withdraw. App use, crash and error reports, mail to people whose address their organisation publishes, and backups: our legitimate interest in running a working service and telling people about it, kept as small as the job allows. Anything we must keep by law: because the law says so.</p>
+
+    <h2>How long we keep it</h2>
+    <p>Your account and what is on it: until you delete the account. Google Analytics: 14 months. Error reports from the site: 90 days. Backups: 90 days. App use records and crash reports: as long as we need them to understand and fix the app. The waitlist: until the app is out for you, or until you ask. Our list of people we wrote to: until you ask us to stop, or until we no longer need it.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask us what we hold about you, ask us to correct it, delete it, hand it over to you, or stop using it, and you can object to anything we do on the basis of our legitimate interest. Send a <a href="/contribute?kind=privacy">privacy request</a> or mail <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>; we answer within a month. If you think we handle your data wrongly, you can also complain to the Dutch data protection authority, the <a href="https://autoriteitpersoonsgegevens.nl/en">Autoriteit Persoonsgegevens</a>, or to the one where you live.</p>
+    <p>Ancient Trees is for people aged 16 and over.</p>
 
     <h2>Deleting</h2>
-    <p>Your account page has a delete option. It removes your email address, your collection, your sightings and their photographs, your display name, your profile picture, your country, every follow in both directions, and any block or report you made. One thing is kept, and the terms say so too: a photograph of yours we had already published stays. Nothing has to come off it, because we never printed your name beside it in the first place. What is left is a picture of a tree with nothing pointing at you. We keep it because a page that loses its only photograph is worse for everybody who comes after. It comes off if somebody can be recognised in it and asks, and photographs sent before 4 October 2026 come off whenever their sender asks, because that is what we promised then.</p>
+    <p>Your account page has a delete option. It removes your email address, your collection, your sightings and their photographs, your notes, your profile with its name, picture and country, every follow in both directions, and any block or report you made. One thing is kept, and the terms say so too: a photograph of yours we had already published stays on the tree's page, with nothing left connecting it to you. We keep it because a page that loses its only photograph is worse for everybody who comes after. It comes off if somebody can be recognised in it and asks, and photographs sent before 4 October 2026 come off whenever their sender asks, because that is what we promised then.</p>
+
     <h2>Changes</h2>
     <p>When this page changes, the date below changes with it.</p>
-    <p><em>Last updated: 3 November 2026</em></p>
+    <p><em>Last updated: 10 November 2026</em></p>
   </div>
 </main>
 </Base>
