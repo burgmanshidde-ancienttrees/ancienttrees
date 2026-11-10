@@ -36,6 +36,14 @@
     {
       "what": "Species sheet",
       "why": "The Species chip's list is a system sheet on both phones: SwiftUI's .sheet on the iPhone, Material's modal bottom sheet on Android."
+    },
+    {
+      "what": "Directions",
+      "why": "The iPhone asks once whether Apple Maps or Google Maps and remembers it; Android has no Apple Maps, so Take me there opens the walking route in the maps app the phone uses."
+    },
+    {
+      "what": "Menus",
+      "why": "The report menu on a tree page is the system's own pop-up menu on both phones: SwiftUI's Menu on the iPhone, Material's dropdown menu on Android."
     }
   ],
   "map": {
@@ -56,9 +64,9 @@
     ]
   },
   "map-pin": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "As map; the share circle opens Android's share sheet (forced)."
+      "As map; the share circle opens Android's share sheet (forced). The card is now TreeCard ported whole (TreeRows.kt), its words in every language."
     ]
   },
   "search": {
@@ -70,13 +78,18 @@
     ]
   },
   "tree": {
-    "status": "not-ported",
+    "status": "in-progress",
     "differences": [
-      "Tree page written as a basic page; TreeDetail.swift not ported."
+      "Your own tree (a tree only you have: its menu to change name, species, age, girth, move the pin, merge, remove, and Share this tree) is not ported: it belongs to My trees (session 4).",
+      "Collect: the sheet offers Take a photograph only. Choose from your photos and Remove from collected (with Undo) arrive with the collect flow (session 4). Add a photo and the season tiles open the same camera collect for now.",
+      "Approximate location, Show us where it is: the iPhone opens the pin picker (PlacePin.swift); Android opens the report form with The pin is in the wrong place until the picker is ported.",
+      "The city link, the species fact, the Discover more chips and the full-map button open the map on that place, species or tree; the iPhone opens the city, country, species and tree-map pages, not ported yet (session 5).",
+      "The snackbar after a bookmark (Added to Want to visit, Undo) is not ported yet (as on the map).",
+      "The review prompt after three trees and the tree_opened measurement are not ported (session 8)."
     ]
   },
   "tree-nophoto": {
-    "status": "not-ported",
+    "status": "in-progress",
     "differences": [
       "As tree."
     ]
@@ -103,6 +116,12 @@
     "status": "not-ported",
     "differences": [
       "Profile and settings (Profile.swift) not ported."
+    ]
+  },
+  "photo-viewer": {
+    "status": "parity",
+    "differences": [
+      "Delete photo (for your own photographs) comes with My trees (session 4)."
     ]
   }
 }

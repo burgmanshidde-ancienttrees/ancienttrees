@@ -66,6 +66,14 @@ fun PhotoViewer(photos: List<Photo>, startAt: Int, onClose: () -> Unit) {
         properties = DialogProperties(usePlatformDefaultWidth = false, decorFitsSystemWindows = false),
     ) {
         BackHandler(onBack = onClose)
+        // .statusBarHidden(): the photograph has the whole screen.
+        val view = androidx.compose.ui.platform.LocalView.current
+        androidx.compose.runtime.LaunchedEffect(Unit) {
+            (view.parent as? androidx.compose.ui.window.DialogWindowProvider)?.window?.let { w ->
+                androidx.core.view.WindowCompat.getInsetsController(w, view)
+                    .hide(androidx.core.view.WindowInsetsCompat.Type.statusBars())
+            }
+        }
         var at by remember { mutableIntStateOf(startAt.coerceIn(0, photos.size - 1)) }
         var scale by remember { mutableFloatStateOf(1f) }
         var offset by remember { mutableStateOf(Offset.Zero) }

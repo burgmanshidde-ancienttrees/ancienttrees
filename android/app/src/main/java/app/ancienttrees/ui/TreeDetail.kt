@@ -220,7 +220,6 @@ private fun Modifier.pull(top: Dp, bottom: Dp): Modifier = layout { m, c ->
     layout(p.width, (p.height - t - b).coerceAtLeast(0)) { p.place(0, -t) }
 }
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun TreeDetail(
     tree: Tree,
@@ -234,6 +233,24 @@ fun TreeDetail(
     counts: VoteCounts,
     actions: TreePageActions,
     openPhotoAtStart: Boolean = false,
+) {
+    PlainText { TreeDetailInner(tree = tree, account = account, signedIn = signedIn, fix = fix, hearted = hearted, collected = collected, votes = votes, counts = counts, actions = actions, openPhotoAtStart = openPhotoAtStart) }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun TreeDetailInner(
+    tree: Tree,
+    account: Account,
+    signedIn: Boolean,
+    /** Where the phone is, only from a real fix (kmAway in the Swift). */
+    fix: Here?,
+    hearted: Boolean,
+    collected: Boolean,
+    votes: MyVotes,
+    counts: VoteCounts,
+    actions: TreePageActions,
+    openPhotoAtStart: Boolean,
 ) {
     val brand = Brand.colors
     val context = LocalContext.current
@@ -631,7 +648,7 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                 Modifier.size(48.dp, 44.dp).clickable(role = Role.Button, onClick = onShare).semantics { contentDescription = share },
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(Icons.Outlined.IosShare, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+                Icon(Icons.Outlined.IosShare, null, tint = brand.moss, modifier = Modifier.size(20.dp))
             }
             val report = stringResource(R.string.report_problem)
             Box {
@@ -639,7 +656,7 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                     Modifier.size(48.dp, 44.dp).clickable(role = Role.Button) { menu = true }.semantics { contentDescription = report },
                     contentAlignment = Alignment.Center,
                 ) {
-                    Icon(Icons.Outlined.Feedback, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+                    Icon(Icons.Outlined.Feedback, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                 }
                 DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {
                     val items = listOf(

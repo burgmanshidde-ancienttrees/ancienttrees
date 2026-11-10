@@ -59,3 +59,19 @@ fun AncientTreesTheme(content: @Composable () -> Unit) {
         MaterialTheme(colorScheme = if (dark) Dark else Light, content = content)
     }
 }
+
+/**
+ * SwiftUI's text: the font's own line height and no added tracking. Material's
+ * body style adds 0.5 sp of letter spacing and a 24 sp line, which made every
+ * ported line wider and taller than the iPhone's (tree page parity, 2026-11-10).
+ */
+@Composable
+fun PlainText(content: @Composable () -> Unit) {
+    CompositionLocalProvider(
+        androidx.compose.material3.LocalTextStyle provides androidx.compose.material3.LocalTextStyle.current.copy(
+            lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
+            letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified,
+        ),
+        content = content,
+    )
+}

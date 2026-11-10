@@ -52,7 +52,7 @@ import appsweep  # noqa: E402
 
 FRAMES = {name: list(args) for name, args, _ in appsweep.screens(appsweep.pick_subjects())}
 # The screens with an Android port, in the order the page shows them.
-PORTED = ["map", "map-full", "map-pin", "search", "tree", "tree-nophoto", "signin",
+PORTED = ["map", "map-full", "map-pin", "search", "tree", "tree-nophoto", "photo-viewer", "signin",
           "explore", "collection-tab", "profile"]
 
 

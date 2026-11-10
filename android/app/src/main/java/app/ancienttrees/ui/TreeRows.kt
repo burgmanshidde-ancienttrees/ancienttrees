@@ -317,7 +317,7 @@ fun TreeCard(
             if (showHeart) Box(Modifier.align(Alignment.TopEnd).padding(6.dp)) { SaveMark(tree, onPhoto = true) }
             if (tree.id in marks.collected) Box(Modifier.align(Alignment.TopStart).padding(10.dp)) { SeenTag() }
         }
-        if (showText) {
+        if (showText) PlainText {
             Column(Modifier.padding(horizontal = 12.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
                 Text(
                     tree.name,

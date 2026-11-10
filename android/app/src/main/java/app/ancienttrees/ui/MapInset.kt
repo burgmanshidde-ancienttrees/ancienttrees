@@ -61,7 +61,7 @@ private suspend fun snapshot(
     val key = "$lat,$lng,${widthDp.toInt()},${heightDp.toInt()},${if (dark) "d" else "l"}"
     thumbs.get(key)?.let { return it }
     MapLibre.getInstance(context)
-    val options = MapSnapshotter.Options((widthDp * density).toInt(), (heightDp * density).toInt())
+    val options = MapSnapshotter.Options(widthDp.toInt(), heightDp.toInt())
         .withPixelRatio(density)
         .withStyle(if (dark) STYLE_DARK else STYLE_LIGHT)
         .withCameraPosition(
