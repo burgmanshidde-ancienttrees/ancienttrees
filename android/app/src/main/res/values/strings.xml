@@ -222,4 +222,11 @@
     <string name="done">Done</string>
     <string name="report_needs_account">You need an account to send a tree, so you can see what happened to each one you sent.</string>
     <!-- /tree page -->
+    <!-- snack -->
+    <string name="snack_added">Added to Want to visit</string>
+    <string name="snack_removed">Removed from Want to visit</string>
+    <string name="snack_undo">Undo</string>
+    <string name="snack_view">View</string>
+    <string name="snack_signed_in">You are signed in</string>
+    <!-- /snack -->
 </resources>

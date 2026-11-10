@@ -220,4 +220,11 @@
     <string name="done">完了</string>
     <string name="report_needs_account">木を送るにはアカウントが必要です。送った木がそれぞれどうなったか確認できます。</string>
     <!-- /tree page -->
+    <!-- snack -->
+    <string name="snack_added">行きたいに追加しました</string>
+    <string name="snack_removed">行きたいから削除しました</string>
+    <string name="snack_undo">元に戻す</string>
+    <string name="snack_view">見る</string>
+    <string name="snack_signed_in">サインインしました</string>
+    <!-- /snack -->
 </resources>
