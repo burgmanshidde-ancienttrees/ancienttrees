@@ -31,6 +31,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.graphics.PathParser
+import androidx.compose.ui.graphics.asAndroidPath
+import androidx.compose.material.icons.filled.ConfirmationNumber
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -165,6 +167,7 @@ fun TreeMapView(
                     // One image per shape, about fifteen, never one per species.
                     for (shape in SpeciesIcons.icons.keys) {
                         style.addImage(iconName(shape), pinBitmap(context, shape))
+                        style.addImage(iconName(shape) + "-t", pinBitmap(context, shape, ticket = true))
                     }
                     for (n in 2..STACK_ICONS) style.addImage(stackName(n), stackBitmap(context, n))
                     installLayers(style)
@@ -432,7 +435,7 @@ private fun collection(trees: List<Tree>, spots: Map<String, List<Tree>>, spread
 private fun feature(t: Tree, lat: Double, lng: Double, n: Int, spot: String, spread: Boolean): Feature =
     Feature.fromGeometry(Point.fromLngLat(lng, lat)).apply {
         addStringProperty(KEY_ID, t.id)
-        addStringProperty("icon", iconName(SpeciesIcons.archetype(t.commonName)))
+        addStringProperty("icon", iconName(SpeciesIcons.archetype(t.commonName)) + if (t.paidEntry) "-t" else "")
         addStringProperty("stack", if (n > 1) stackName(minOf(n, STACK_ICONS)) else "")
         addStringProperty("spot", spot)
         addNumberProperty("n", n)
@@ -586,7 +589,7 @@ private fun iconName(shape: String) = "at-pin-$shape"
  * The iPhone's pin: a moss disc, a white ring, and the species silhouette in
  * white, 20 points tall, so a ginkgo looks like a ginkgo before anyone taps it.
  */
-private fun pinBitmap(context: Context, shape: String): Bitmap {
+private fun pinBitmap(context: Context, shape: String, ticket: Boolean = false): Bitmap {
     val metrics = context.resources.displayMetrics
     val density = metrics.density
     val size = (PinRules.PIN_SIZE * density).toInt()
@@ -623,8 +626,44 @@ private fun pinBitmap(context: Context, shape: String): Bitmap {
         }
     }
     canvas.restore()
+    // A TICKET, bottom left (TreeMap.pin, Hidde 2026-08-24/25): a white disc a
+    // little bigger than the collected tick, the system's ticket glyph in a light
+    // navy, never the Plus gold. Material's confirmation_number is Android's ticket.
+    if (ticket) {
+        val b = 17 * density
+        val left = 1 * density
+        val top = size - b - 1 * density
+        paint.alpha = 255
+        paint.color = Color.WHITE
+        canvas.drawCircle(left + b / 2, top + b / 2, b / 2, paint)
+        val g = 11 * density
+        canvas.save()
+        canvas.translate(left + (b - g) / 2, top + (b - g) / 2)
+        canvas.scale(g / 24f, g / 24f)
+        paint.color = TICKET_BLUE
+        ticketPath()?.let { canvas.drawPath(it, paint) }
+        canvas.restore()
+    }
     return bitmap
 }
+
+private val TICKET_BLUE = Color.rgb(46, 107, 168)
+
+/** Material's confirmation_number glyph as a path in its 24 by 24 box. */
+private fun ticketPath(): android.graphics.Path? = runCatching {
+    val out = android.graphics.Path()
+    fun add(group: androidx.compose.ui.graphics.vector.VectorGroup) {
+        for (child in group) {
+            when (child) {
+                is androidx.compose.ui.graphics.vector.VectorPath ->
+                    out.addPath(androidx.compose.ui.graphics.vector.PathParser().addPathNodes(child.pathData).toPath().asAndroidPath())
+                is androidx.compose.ui.graphics.vector.VectorGroup -> add(child)
+            }
+        }
+    }
+    add(androidx.compose.material.icons.Icons.Filled.ConfirmationNumber.root)
+    out
+}.getOrNull()
 
 
 // MARK: your own trees (TreeMap.setMine, minePin, photoPin)
