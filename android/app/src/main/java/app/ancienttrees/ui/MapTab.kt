@@ -155,6 +155,8 @@ fun MapTab(
     onShare: (Tree) -> Unit,
     onSearching: (Boolean) -> Unit,
     raise: Int,
+    /** A place or a species handed over from Discover, with a token so the same one twice still lands. */
+    place: Pair<Long, SearchHit>? = null,
 ) {
     val brand = Brand.colors
     val density = LocalDensity.current
@@ -175,7 +177,6 @@ fun MapTab(
     val month = remember { Calendar.getInstance().get(Calendar.MONTH) + 1 }
 
     LaunchedEffect(searching) { onSearching(searching) }
-    // The Discover tab raises the list for now (data/android-parity.json "explore").
     LaunchedEffect(raise) { if (raise > 0) sheet.height = SheetHeight.HALF }
     LaunchedEffect(catalogue) {
         val c = catalogue ?: return@LaunchedEffect
@@ -311,6 +312,8 @@ fun MapTab(
             }
         }
     }
+
+    LaunchedEffect(place) { place?.let { take(it.second) } }
 
     val stopCoverage = with(density) {
         when (sheet.height) {

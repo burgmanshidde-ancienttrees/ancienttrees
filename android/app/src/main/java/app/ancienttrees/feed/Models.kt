@@ -25,6 +25,8 @@ data class Photo(
     val frame: Double?,
     /** "spring", "summer", "autumn" or "winter" where the tree stands, decided on the server. */
     val season: String? = null,
+    /** The month the photograph was taken (1 to 12), where the file said (feed taken_month). */
+    val takenMonth: Int? = null,
 ) {
     val card: String get() = thumb ?: url
     val full: String get() = hero ?: url
@@ -78,6 +80,8 @@ data class Tree(
     /** The months of its one real peak (best_time), and which chip it wears then. */
     val bestMonths: List<Int> = emptyList(),
     val seasonKey: String? = null,
+    /** Girth in centimetres, from a register or plaque (feed girth_cm). */
+    val girthCm: Int? = null,
 ) {
     /** What to show: the set when the feed sent one, otherwise the lead alone. */
     val shots: List<Photo> get() = photos.ifEmpty { listOfNotNull(photo) }
@@ -143,7 +147,19 @@ data class Species(
     val bare: List<Int>,
 )
 
-data class TreeCollection(val slug: String, val title: String, val intro: String?, val trees: List<String>)
+data class TreeCollection(
+    val slug: String,
+    val title: String,
+    val intro: String?,
+    val trees: List<String>,
+    /** The tree whose photograph fronts this list, decided on the website (browse.json face). */
+    val face: String? = null,
+    /** The months the list is in season (lib/favourites.ts COLLECTION_MONTHS). */
+    val months: List<Int> = emptyList(),
+)
+
+/** One person named on a city page (Models.swift CityAmbassador). */
+data class CityAmbassador(val name: String, val affiliation: String?, val profile: String?)
 
 data class Facet(
     val slug: String?,
@@ -151,6 +167,9 @@ data class Facet(
     val face: String?,
     val aka: List<String> = emptyList(),
     val popularity: Int = 0,
+    /** Cities only: the people named as its ambassadors, and whether an unnamed one holds the seat. */
+    val ambassadors: List<CityAmbassador> = emptyList(),
+    val seated: Boolean = false,
 )
 
 /** A country, and the mainland box its map opens on when its trees would frame an ocean. */
@@ -170,6 +189,12 @@ data class Browse(
     val countries: List<Country> = emptyList(),
     /** The website's scientific name per species page (browse.json species). */
     val scientific: Map<String, String> = emptyMap(),
+    /** Faces per country and per species (browse.json countries / species `face`). */
+    val countryFaces: Map<String, String> = emptyMap(),
+    val speciesFaces: Map<String, String> = emptyMap(),
+    /** Discover's favourite cities and tree islands, in the website's order (lib/favourites.ts). */
+    val favourites: List<String> = emptyList(),
+    val islands: List<String> = emptyList(),
 )
 
 data class Catalogue(
@@ -212,4 +237,26 @@ data class Catalogue(
     fun popularity(city: String): Int = cityFacets[city]?.popularity ?: 0
     fun focus(country: String): ViewBox? = countryFacets[country]?.focus
     fun scientificName(common: String): String? = scientific[common]
+
+    val collections: List<TreeCollection> get() = browse?.collections.orEmpty()
+    val favourites: List<String> get() = browse?.favourites.orEmpty()
+    val islands: List<String> get() = browse?.islands.orEmpty()
+    fun ambassadors(city: String): List<CityAmbassador> = cityFacets[city]?.ambassadors.orEmpty()
+    fun seated(city: String): Boolean = cityFacets[city]?.seated ?: false
+    fun treesOf(c: TreeCollection): List<Tree> = c.trees.mapNotNull { byId[it] }
+
+    // CARD FACES (Catalogue.swift): the website's choice, travelling as a tree
+    // id; an older snapshot without one falls back to the first photographed tree.
+    fun faceOfCity(slug: String): Tree? =
+        cityFacets[slug]?.face?.let { byId[it] } ?: firstPhotographed(trees(slug))
+    fun faceOfCountry(name: String): Tree? =
+        browse?.countryFaces?.get(name)?.let { byId[it] } ?: firstPhotographed(treesInCountry(name))
+    fun faceOfSpecies(common: String): Tree? =
+        browse?.speciesFaces?.get(common)?.let { byId[it] } ?: firstPhotographed(treesOfSpecies(common))
+    private fun firstPhotographed(set: List<Tree>): Tree? = set.firstOrNull { it.photo != null }
+
+    /** The nearest trees within [withinKm], nearest first (Catalogue.swift nearest). */
+    fun nearest(lat: Double, lng: Double, limit: Int, withinKm: Double): List<Pair<Tree, Double>> =
+        trees.map { it to Geo.km(lat, lng, it.lat, it.lng) }.filter { it.second <= withinKm }
+            .sortedBy { it.second }.take(limit)
 }

@@ -67,4 +67,63 @@
     <string name="tab_discover">Découvrir</string>
     <string name="tab_my_trees">Mes arbres</string>
     <string name="collect_a_tree">Collectionner un arbre</string>
+    <!-- discover -->
+    <string name="discover_search">Chercher un lieu, un arbre ou une espèce</string>
+    <string name="discover_season_here">%1$s est là</string>
+    <string name="discover_season_count">%1$s au mieux de leur forme ce mois-ci</string>
+    <string name="discover_season_near">\u0020· %1$d à moins de 20 km</string>
+    <string name="discover_at_best">Au mieux de sa forme</string>
+    <string name="discover_at_best_in">Au mieux de sa forme · %1$s</string>
+    <string name="discover_hero_1">Des arbres qui valent la marche,</string>
+    <string name="discover_hero_2">où que vous soyez.</string>
+    <string name="discover_best">Au mieux de leur forme</string>
+    <string name="discover_visitors">Nouveau des visiteurs</string>
+    <string name="discover_a_visitor">Un visiteur</string>
+    <string name="discover_cities">Nos villes d\'arbres préférées</string>
+    <string name="discover_records">Les records</string>
+    <string name="discover_oldest">Le plus vieux</string>
+    <string name="discover_oldest_age">Le plus vieux · %1$s</string>
+    <string name="discover_thickest">Le plus gros</string>
+    <string name="discover_thickest_m">Le plus gros · %1$s</string>
+    <string name="discover_tallest">Le plus haut</string>
+    <string name="discover_lists">Des listes qui ont un avis</string>
+    <string name="discover_countries">Pays d\'arbres</string>
+    <string name="discover_find_near">Trouver des arbres près de vous</string>
+    <string name="discover_want_signin">Connectez-vous pour garder une liste des arbres que vous voulez voir.</string>
+    <string name="discover_species">Par espèce</string>
+    <string name="discover_islands">Îles aux arbres</string>
+    <string name="discover_growing_title">La carte grandit encore</string>
+    <string name="discover_growing_body">Vous pouvez ajouter un arbre en le photographiant et en indiquant ce que vous savez.</string>
+    <string name="discover_add_tree">Ajouter un arbre</string>
+    <string name="discover_more_near">Plus d\'arbres près de vous</string>
+    <string name="discover_more">Plus d\'arbres</string>
+    <string name="see_all">Tout voir</string>
+    <string name="discover_ambassador_wanted">%1$s cherche un ambassadeur</string>
+    <string name="discover_request_sent">Demande envoyée.</string>
+    <string name="discover_amb_title">Devenez l\'ambassadeur de %1$s</string>
+    <string name="discover_amb_message">Un ambassadeur nous aide à bien connaître les arbres de ce lieu.</string>
+    <string name="discover_amb_p1">Ajouter des photos des arbres</string>
+    <string name="discover_amb_p2">Vérifier les faits et nous dire quels arbres manquent</string>
+    <string name="discover_amb_p3">Aider à composer des balades qui passent par eux</string>
+    <string name="discover_apply">Postuler</string>
+    <string name="discover_sending">Envoi</string>
+    <string name="discover_not_now">Pas maintenant</string>
+    <string name="discover_amb_sent_title">Demande envoyée</string>
+    <string name="discover_amb_sent_body">Nous vous écrirons bientôt avec quelques questions sur la liste.</string>
+    <string name="discover_amb_write_to">\u0020Nous écrirons à %1$s.</string>
+    <string name="discover_done">OK</string>
+    <string name="discover_amb_failed">Votre demande n\'est pas partie. Réessayez dans un instant.</string>
+    <string name="discover_index_cities">Villes d\'arbres</string>
+    <string name="discover_index_species">Espèces</string>
+    <string name="discover_index_oldest">Les plus vieux arbres de notre carte</string>
+    <string name="discover_index_search">Rechercher</string>
+    <plurals name="discover_trees">
+        <item quantity="one">1 arbre</item>
+        <item quantity="other">%1$d arbres</item>
+    </plurals>
+    <plurals name="discover_places">
+        <item quantity="one">1 lieu</item>
+        <item quantity="other">%1$d lieux</item>
+    </plurals>
+    <!-- /discover -->
 </resources>

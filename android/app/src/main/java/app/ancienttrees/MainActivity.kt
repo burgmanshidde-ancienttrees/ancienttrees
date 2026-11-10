@@ -49,6 +49,11 @@ import app.ancienttrees.ui.AccountSheet
 import app.ancienttrees.ui.AncientTreesTheme
 import app.ancienttrees.ui.CollectFailedSheet
 import app.ancienttrees.ui.CollectedSheet
+import app.ancienttrees.ui.DiscoverActions
+import app.ancienttrees.ui.DiscoverScreen
+import app.ancienttrees.ui.HeroCover
+import app.ancienttrees.ui.SearchHit
+import app.ancienttrees.ui.openProfileOnWeb
 import app.ancienttrees.ui.SignInSheet
 import app.ancienttrees.ui.LocalTreeMarks
 import app.ancienttrees.ui.MapLaunch
@@ -254,7 +259,18 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         refused = !granted && activity != null &&
             !ActivityCompat.shouldShowRequestPermissionRationale(activity, Manifest.permission.ACCESS_FINE_LOCATION)
     }
-    LaunchedEffect(Unit) { if (!granted) ask.launch(LOCATION) }
+    // THE COVER (HeroCover.swift, ContentView.swift): 2.4 seconds or a tap, cold
+    // start only; the location question comes half a second after it has gone.
+    var showingCover by remember { mutableStateOf("-no-cover" !in launch.args) }
+    LaunchedEffect(Unit) {
+        if (showingCover) kotlinx.coroutines.delay(2400)
+        showingCover = false
+    }
+    LaunchedEffect(showingCover) {
+        if (showingCover) return@LaunchedEffect
+        kotlinx.coroutines.delay(500)
+        if (!granted && launch.at == null) ask.launch(LOCATION)
+    }
     // Back from Settings with location turned on.
     LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { granted = locationGranted(context) }
 
@@ -283,9 +299,19 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     var raise by remember { mutableIntStateOf(0) }
     var searching by remember { mutableStateOf(false) }
     val trees = catalogue?.trees.orEmpty()
-    // INTERIM until Discover and My trees are ported (data/android-parity.json):
-    // Discover raises the list, My trees opens your lanes.
-    val tab = 0
+    // The tabs: Map, Discover (Home.swift), and My trees, which opens your lanes
+    // until Collect.swift is ported (data/android-parity.json "collection-tab").
+    var tab by remember { mutableIntStateOf(if (launch.tab == 1) 1 else 0) }
+    // Tapping Discover while on Discover scrolls back up (navigator.scrollToTop).
+    var discoverTop by remember { mutableIntStateOf(0) }
+    var discoverSearching by remember { mutableStateOf(false) }
+    // A place picked on Discover lands on the map (PlaceLink, navigator.searchOnMap).
+    var mapPlace by remember { mutableStateOf<Pair<Long, SearchHit>?>(null) }
+    BackHandler(enabled = tab == 1 && open == null) { tab = 0 }
+    fun nearestTree() {
+        val t = trees.minByOrNull { Geo.km(origin.lat, origin.lng, it.lat, it.lng) }
+        if (t != null) open = t
+    }
 
     Box(Modifier.fillMaxSize()) {
         CompositionLocalProvider(
@@ -311,6 +337,42 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 onShare = { t -> share(context, t) },
                 onSearching = { searching = it },
                 raise = raise,
+                place = mapPlace,
+            )
+        }
+        val cat = catalogue
+        if (tab == 1 && cat != null) {
+            DiscoverScreen(
+                catalogue = cat,
+                origin = origin,
+                located = located,
+                signedIn = signedIn,
+                email = (account.state as? SignIn.SignedIn)?.email,
+                wantToVisit = saves.hearts,
+                token = { if (signedIn) account.fresh()?.accessToken else null },
+                refresh = { store.refresh(catalogue?.version)?.let { catalogue = it } },
+                scrollToTop = discoverTop,
+                discoverTo = launch.args.firstOrNull { it.startsWith("-discoverto=") }?.removePrefix("-discoverto="),
+                act = DiscoverActions(
+                    openTree = { open = it },
+                    openPlace = { hit ->
+                        tab = 0
+                        mapPlace = System.nanoTime() to hit
+                    },
+                    openSpecies = { name ->
+                        tab = 0
+                        mapPlace = System.nanoTime() to SearchHit.Species(name)
+                    },
+                    openPerson = { id -> openProfileOnWeb(context, id) },
+                    showMap = { tab = 0 },
+                    openWantToVisit = { if (signedIn) showAccount = true else asking = true },
+                    addTree = { nearestTree() },
+                    signIn = { then ->
+                        pendingAfterSignIn = then
+                        asking = true
+                    },
+                    searching = { discoverSearching = it },
+                ),
             )
         }
         open?.let { tree ->
@@ -326,20 +388,18 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 onCollect = { collect(tree) },
             )
         }
-        if (open == null && !searching) {
+        if (open == null && !searching && !discoverSearching) {
             TabBar(
                 selected = tab,
                 select = { i ->
                     when (i) {
-                        1 -> raise++
+                        0 -> tab = 0
+                        1 -> if (tab == 1) discoverTop++ else tab = 1
                         2 -> if (signedIn) showAccount = true else asking = true
                         else -> Unit
                     }
                 },
-                collect = {
-                    val t = trees.minByOrNull { Geo.km(origin.lat, origin.lng, it.lat, it.lng) }
-                    if (t != null) open = t
-                },
+                collect = { nearestTree() },
                 modifier = Modifier.align(Alignment.BottomCenter),
             )
         }
@@ -350,6 +410,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 onDismiss = { asking = false; pendingHeart = null; pendingCollect = null; pendingAfterSignIn = null },
             )
         }
+        androidx.compose.animation.AnimatedVisibility(
+            visible = showingCover,
+            enter = androidx.compose.animation.EnterTransition.None,
+            exit = androidx.compose.animation.fadeOut(androidx.compose.animation.core.tween(400)),
+        ) { HeroCover { showingCover = false } }
         collectedNow?.let { t -> CollectedSheet(t.name, onDismiss = { collectedNow = null }) }
         if (collectFailed) CollectFailedSheet(onDismiss = { collectFailed = false })
         if (showAccount && signedIn) {

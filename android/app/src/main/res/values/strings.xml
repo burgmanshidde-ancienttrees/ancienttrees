@@ -68,4 +68,63 @@
     <string name="tab_discover">Discover</string>
     <string name="tab_my_trees">My trees</string>
     <string name="collect_a_tree">Collect a tree</string>
+    <!-- discover -->
+    <string name="discover_search">Search a place, a tree or a species</string>
+    <string name="discover_season_here">%1$s is here</string>
+    <string name="discover_season_count">%1$s at their best this month</string>
+    <string name="discover_season_near">\u0020· %1$d within 20 km of you</string>
+    <string name="discover_at_best">At its best now</string>
+    <string name="discover_at_best_in">At its best now · %1$s</string>
+    <string name="discover_hero_1">Trees worth the walk,</string>
+    <string name="discover_hero_2">wherever you are.</string>
+    <string name="discover_best">At their best now</string>
+    <string name="discover_visitors">New from visitors</string>
+    <string name="discover_a_visitor">A visitor</string>
+    <string name="discover_cities">Our favourite tree cities</string>
+    <string name="discover_records">The records</string>
+    <string name="discover_oldest">Oldest</string>
+    <string name="discover_oldest_age">Oldest · %1$s</string>
+    <string name="discover_thickest">Thickest</string>
+    <string name="discover_thickest_m">Thickest · %1$s</string>
+    <string name="discover_tallest">Tallest</string>
+    <string name="discover_lists">Lists with an opinion</string>
+    <string name="discover_countries">Tree countries</string>
+    <string name="discover_find_near">Find trees near you</string>
+    <string name="discover_want_signin">Sign in to keep a list of trees you want to visit.</string>
+    <string name="discover_species">By species</string>
+    <string name="discover_islands">Tree islands</string>
+    <string name="discover_growing_title">The map is still growing</string>
+    <string name="discover_growing_body">You can add a tree by photographing it and filling in what you know.</string>
+    <string name="discover_add_tree">Add a tree</string>
+    <string name="discover_more_near">More trees near you</string>
+    <string name="discover_more">More trees</string>
+    <string name="see_all">See all</string>
+    <string name="discover_ambassador_wanted">%1$s is looking for an ambassador</string>
+    <string name="discover_request_sent">Request sent.</string>
+    <string name="discover_amb_title">Become the ambassador for %1$s</string>
+    <string name="discover_amb_message">An ambassador helps us get the trees of this place right.</string>
+    <string name="discover_amb_p1">Add photographs of the trees</string>
+    <string name="discover_amb_p2">Check the facts and tell us which trees are missing</string>
+    <string name="discover_amb_p3">Help put together walks past them</string>
+    <string name="discover_apply">Apply</string>
+    <string name="discover_sending">Sending</string>
+    <string name="discover_not_now">Not now</string>
+    <string name="discover_amb_sent_title">Request sent</string>
+    <string name="discover_amb_sent_body">We will email you soon with a few questions about the list.</string>
+    <string name="discover_amb_write_to">\u0020We will write to %1$s.</string>
+    <string name="discover_done">Done</string>
+    <string name="discover_amb_failed">Your request did not send. Please try again in a moment.</string>
+    <string name="discover_index_cities">Tree cities</string>
+    <string name="discover_index_species">Species</string>
+    <string name="discover_index_oldest">The oldest trees we map</string>
+    <string name="discover_index_search">Search</string>
+    <plurals name="discover_trees">
+        <item quantity="one">1 tree</item>
+        <item quantity="other">%1$d trees</item>
+    </plurals>
+    <plurals name="discover_places">
+        <item quantity="one">1 place</item>
+        <item quantity="other">%1$d places</item>
+    </plurals>
+    <!-- /discover -->
 </resources>
