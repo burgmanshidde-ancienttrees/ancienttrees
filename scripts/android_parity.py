@@ -93,6 +93,13 @@ def _android(frames, build):
         if r.returncode != 0:
             sys.exit("android build failed:\n" + r.stdout[-2000:] + r.stderr[-2000:])
         run([ADB, "install", "-r", str(ROOT / "android/app/build/outputs/apk/debug/app-debug.apk")])
+        # LOCATION GRANTED BEFORE ANY START (2026-11-10, Hidde watching the
+        # emulator: the system's location question stood alone over the home
+        # screen). A start without -at asks on first open, as the iPhone does;
+        # the next frame's force-stop then ends the app and leaves the system's
+        # dialog orphaned. The frames stand at a fixed place anyway.
+        for perm in ("android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION"):
+            run([ADB, "shell", "pm", "grant", PACKAGE, perm])
         # After an install the system UI restarts the app by itself a moment
         # later, without our extras (a CLEAR_TASK start from systemui, API 37):
         # let that happen before the first frame.
