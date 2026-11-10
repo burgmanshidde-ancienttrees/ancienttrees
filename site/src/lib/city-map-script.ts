@@ -624,12 +624,25 @@ updatePins();
 // still does for the map is AllTrails' web half: on a desktop, pointing at a
 // card lights its pin, without flying anywhere. The pin itself still selects.
 var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (min-width: 800px)').matches;
+var hoverIdx = {};
 document.querySelectorAll('.tree-card').forEach(function(card, idx) {
+  if (card.dataset.treeId) { hoverIdx[card.dataset.treeId] = idx; }
   if (canHover) {
     // Not while a pin's card is open: it would move the lit pin away from it.
     card.addEventListener('mouseenter', function() { if (!mapCard.isOpen()) setActive(idx, false, false); });
   }
 });
+// The Highlights photo cards above the list light their pin too (Hidde,
+// 2026-11-10: "als ik hover over de afbeeldingen in de lijst dat de pin dan
+// duidelijk wordt", Airbnb's list). They are not .tree-card, so they pair with
+// their pin by the tree's id, never by position.
+if (canHover) {
+  document.querySelectorAll('.tree-hl[data-tree-id]').forEach(function(hl) {
+    var idx = hoverIdx[hl.dataset.treeId];
+    if (idx === undefined) { return; }
+    hl.addEventListener('mouseenter', function() { if (!mapCard.isOpen()) setActive(idx, false, false); });
+  });
+}
 
 var routeCoords = ${routeCoords};
 function addWalkLayer() {

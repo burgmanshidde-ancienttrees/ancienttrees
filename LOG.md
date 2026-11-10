@@ -21,6 +21,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 session: Highlights cards light their pin; Lindenbaum U-Bahn claim softened
+
+- City page, desktop: pointing at a Highlights photo card now lights its pin, as the list cards below already did (Airbnb's list). Paired by tree id. The explore map has no card-to-pin hover at all yet (its pins are map layers); not done.
+- Frankfurt, Eschersheimer Linde: the U-Bahn bend rests on one unreferenced de.wikipedia sentence, frankfurt.de is silent. Story, FAQ, transport, recognition line, intro and meta (EN and DE) now say "by local account" or name the station instead; "under Eschersheimer Landstrasse" is gone. verify_notes records why.
+
 ## 2026-11-10 night run (07:37 UTC): nothing shipped
 
 - Rung 1 empty (no photographs or notes waiting). health.py: live site behind main, only 6 of 12 knocks delivered; dispatched a deploy at the end. Writable pile is 10 weak leads (Tucson campus accessions, a Vienna register pair), so refill: San Francisco verify pass (sixth on that register) found 0 new trees; all nine unmined rows were already judged. Wall set for 48h. Phoenix scouting retry was already retried 2026-11-04 (not importable), so nothing new there. pagegaps lists only species, park and Thailand pages, which STRICT_CUT and the trim keep out of Google, so skipped.
