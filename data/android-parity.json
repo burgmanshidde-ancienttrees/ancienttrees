@@ -55,19 +55,22 @@
       "The snackbar after a bookmark (\"Added to Want to visit\", Undo) is not ported yet.",
       "First launch reads the 11.5 MB catalogue in about ten seconds on the one-core emulator under a loaded Mac; later launches read a binary snapshot. Not yet measured on a real phone.",
       "Under a searched city the ambassador and Plus boxes (PlaceAsksBox, PlusUnderBox) are not ported yet (sessions 5 and 6)."
-    ]
+    ],
+    "owner": null
   },
   "map-full": {
     "status": "in-progress",
     "differences": [
       "As map."
-    ]
+    ],
+    "owner": null
   },
   "map-pin": {
     "status": "parity",
     "differences": [
       "As map; the share circle opens Android's share sheet (forced). The card is now TreeCard ported whole (TreeRows.kt), its words in every language."
-    ]
+    ],
+    "owner": null
   },
   "search": {
     "status": "in-progress",
@@ -75,7 +78,8 @@
       "Recent searches (signed in, kept on the server) are not ported yet.",
       "A town we have no trees in (Apple's MKLocalSearch on the iPhone) is not looked up yet; Android says nothing matches.",
       "The on-screen keyboard shows on Android; the iPhone simulator types from the Mac's keyboard, so its shot has none. Both focus the field."
-    ]
+    ],
+    "owner": null
   },
   "tree": {
     "status": "in-progress",
@@ -87,28 +91,21 @@
       "The snackbar after a bookmark (Added to Want to visit, Undo) is not ported yet (as on the map).",
       "The review prompt after three trees and the tree_opened measurement are not ported (session 8)."
     ],
-    "owner": {
-      "session": "local_4ed4a26c",
-      "name": "tree page (main conversation)",
-      "since": "2026-11-10"
-    }
+    "owner": null
   },
   "tree-nophoto": {
     "status": "in-progress",
     "differences": [
       "As tree."
     ],
-    "owner": {
-      "session": "local_4ed4a26c",
-      "name": "tree page (main conversation)",
-      "since": "2026-11-10"
-    }
+    "owner": null
   },
   "signin": {
     "status": "not-ported",
     "differences": [
       "Sign-in sheet written from the website's copy; SignIn.swift not ported."
-    ]
+    ],
+    "owner": null
   },
   "explore": {
     "status": "not-ported",
@@ -125,23 +122,219 @@
     "status": "not-ported",
     "differences": [
       "My trees (Collect.swift) not ported; the tab opens the account sheet for now."
-    ]
+    ],
+    "owner": null
   },
   "profile": {
     "status": "not-ported",
     "differences": [
       "Profile and settings (Profile.swift) not ported."
-    ]
+    ],
+    "owner": null
   },
   "photo-viewer": {
     "status": "parity",
     "differences": [
       "Delete photo (for your own photographs) comes with My trees (session 4)."
     ],
+    "owner": null
+  },
+  "collect-intro": {
+    "status": "not-ported",
+    "differences": [],
     "owner": {
-      "session": "local_4ed4a26c",
-      "name": "tree page (main conversation)",
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
       "since": "2026-11-10"
+    }
+  },
+  "collect-away": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": {
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
+      "since": "2026-11-10"
+    }
+  },
+  "collect-place": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": {
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
+      "since": "2026-11-10"
+    }
+  },
+  "collect-identify": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": {
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
+      "since": "2026-11-10"
+    }
+  },
+  "collect-ticked": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": {
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
+      "since": "2026-11-10"
+    }
+  },
+  "collect-voted": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": {
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
+      "since": "2026-11-10"
+    }
+  },
+  "collect-compare": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": {
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
+      "since": "2026-11-10"
+    }
+  },
+  "collect-describe": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": {
+      "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
+      "name": "Android parity 5: the collect flow",
+      "since": "2026-11-10"
+    }
+  },
+  "collection-tab-full": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "profile-signed-in": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "city": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "city-map-full": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "species": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "collection": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "place-pin": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "own-tree": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "species-pick": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "directions": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "review-ask": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "signin-email": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "refused": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "contribute": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "feedback": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "profile-edit": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "people": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "early-adopter": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "early-adopter-sheet": {
+    "status": "not-ported",
+    "differences": [],
+    "owner": null
+  },
+  "_shared": {
+    "_note": "Pieces every screen uses. One owner each; a screen session changes them only through its owner.",
+    "navigation": {
+      "owner": {
+        "session": "local_6b667891",
+        "name": "android-basis",
+        "since": "2026-11-10"
+      }
+    },
+    "bottom-sheet": {
+      "owner": {
+        "session": "local_6b667891",
+        "name": "android-basis",
+        "since": "2026-11-10"
+      }
+    },
+    "models": {
+      "owner": {
+        "session": "local_6b667891",
+        "name": "android-basis",
+        "since": "2026-11-10"
+      }
+    },
+    "sign-in": {
+      "owner": {
+        "session": "local_6b667891",
+        "name": "android-basis",
+        "since": "2026-11-10"
+      }
     }
   }
 }
