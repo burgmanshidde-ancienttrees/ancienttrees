@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 session: Android screens linked into one app, flow walk on the emulator
+
+- **Routes:** a link from the website opens the app's own screen (WebLink.kt, the iPhone's WebLink.swift and ContentView.open): a tree's page, a city or country on the map, species and collection pages, Explore, /open?tree= and ?city=, /profile?u=, and an app-only tree's /<city>#tree=<id>; what the app has no screen for goes back to the browser. The camera in the tab bar and Discover's add-a-tree now ask to sign in BEFORE the collect sheet, as on the iPhone (Hidde, 2026-10-12: "first login than overlay"); every gate reads the server-confirmed account state.
+- **Flow walk:** android/app/src/androidTest/FlowWalk.kt, run by `python3 scripts/android_walk.py`: tabs reach every place, a tree opens and back leaves it, Want to visit and the camera ask to sign in first, a website link opens its tree. All five green on the emulator; CI compiles it.
+- **Emulator lock:** another session's `am force-stop` crashed a walk mid-run, so `scripts/emulator_lock.py` now serialises the one emulator; android_parity.py and android_walk.py take it.
+- **For Hidde, later:** links from the website open the app only once ancienttrees.app publishes `.well-known/assetlinks.json` with the Play signing key, which exists once the Play account does. Until then they open in the browser.
 ## 2026-11-10 session: Porto's ambassador badge moves from Miguel to Carlos
 
 - **Product:** Carlos (request row 529, the Porto button on 2026-10-24) is now Porto's ambassador. Miguel keeps Guimarães, Braga, Calvos and Vales. Hidde: "Yes, swap them". Carlos asked three days before Miguel did and before the request-is-the-yes rule (2026-11-02), so his badge had never been granted; Miguel got Porto with his batch of five on 10-28.

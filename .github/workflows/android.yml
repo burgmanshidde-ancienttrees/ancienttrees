@@ -37,7 +37,7 @@ jobs:
 
       - name: Build the app and run the unit tests
         working-directory: android
-        run: ./gradlew --no-daemon assembleDebug testDebugUnitTest
+        run: ./gradlew --no-daemon assembleDebug assembleDebugAndroidTest testDebugUnitTest
 
       - name: Keep the test report
         if: always()
