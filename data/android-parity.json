@@ -141,7 +141,11 @@
     "differences": [
       "My trees (Collect.swift) not ported; the tab opens the account sheet for now."
     ],
-    "owner": null
+    "owner": {
+      "session": "android-parity-6-mytrees-cbec59",
+      "name": "android-parity-6-mytrees",
+      "since": "2026-11-10"
+    }
   },
   "profile": {
     "status": "not-ported",
@@ -202,7 +206,11 @@
   "collection-tab-full": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "android-parity-6-mytrees-cbec59",
+      "name": "android-parity-6-mytrees",
+      "since": "2026-11-10"
+    }
   },
   "profile-signed-in": {
     "status": "not-ported",
@@ -243,7 +251,11 @@
   "own-tree": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "android-parity-6-mytrees-cbec59",
+      "name": "android-parity-6-mytrees",
+      "since": "2026-11-10"
+    }
   },
   "species-pick": {
     "status": "not-ported",
