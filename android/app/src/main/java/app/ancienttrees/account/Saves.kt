@@ -17,24 +17,47 @@ class Saves(private val account: Account) {
         private set
     var collected by mutableStateOf<Set<String>>(emptySet())
         private set
+    /** When each heart was put on and each tree collected (ms), for My trees' newest-first order. */
+    var heartedAt by mutableStateOf<Map<String, Long>>(emptyMap())
+        private set
+    var collectedAt by mutableStateOf<Map<String, Long>>(emptyMap())
+        private set
 
     suspend fun load() {
         val s = account.fresh() ?: run { forget(); return }
-        hearts = Supa.rows("/rest/v1/saves?select=tree_id", s.accessToken)
-            .mapNotNull { it.optString("tree_id").ifEmpty { null } }.toSet()
-        collected = Supa.rows("/rest/v1/visited?select=tree_id", s.accessToken)
-            .mapNotNull { it.optString("tree_id").ifEmpty { null } }.toSet()
+        val saveRows = Supa.rows("/rest/v1/saves?select=tree_id,created_at", s.accessToken)
+        val visitRows = Supa.rows("/rest/v1/visited?select=tree_id,visited_at", s.accessToken)
+        heartedAt = saveRows.mapNotNull { r ->
+            r.optString("tree_id").ifEmpty { null }?.let { it to (MyTrees.stamp(r.optString("created_at")) ?: 0L) }
+        }.toMap()
+        collectedAt = visitRows.mapNotNull { r ->
+            r.optString("tree_id").ifEmpty { null }?.let { it to (MyTrees.stamp(r.optString("visited_at")) ?: 0L) }
+        }.toMap()
+        hearts = heartedAt.keys
+        collected = collectedAt.keys
     }
 
     /** A tree just collected; the server already holds the row. */
     fun noteCollected(treeId: String) {
         collected = collected + treeId
+        collectedAt = collectedAt + (treeId to System.currentTimeMillis())
+    }
+
+    /** -collected= and -saved=: the sweep's stand-ins, debug builds only, nothing sent. */
+    fun seed(collectedIds: List<String>, savedIds: List<String>) {
+        val now = System.currentTimeMillis()
+        collectedAt = collectedAt + collectedIds.mapIndexed { i, id -> id to now - i }
+        heartedAt = heartedAt + savedIds.mapIndexed { i, id -> id to now - i }
+        collected = collectedAt.keys
+        hearts = heartedAt.keys
     }
 
     /** Signed out: what this phone showed goes with the account. */
     fun forget() {
         hearts = emptySet()
         collected = emptySet()
+        heartedAt = emptyMap()
+        collectedAt = emptyMap()
     }
 
     /**
@@ -45,6 +68,7 @@ class Saves(private val account: Account) {
         val s = account.fresh() ?: return false
         val on = treeId !in hearts
         hearts = if (on) hearts + treeId else hearts - treeId
+        heartedAt = if (on) heartedAt + (treeId to System.currentTimeMillis()) else heartedAt - treeId
         val id = URLEncoder.encode(treeId, "UTF-8")
         val ok = if (on) {
             Supa.upsert(
@@ -55,7 +79,10 @@ class Saves(private val account: Account) {
         } else {
             Supa.delete("/rest/v1/saves?tree_id=eq.$id", s.accessToken)
         }
-        if (!ok) hearts = if (on) hearts - treeId else hearts + treeId
+        if (!ok) {
+            hearts = if (on) hearts - treeId else hearts + treeId
+            heartedAt = if (on) heartedAt - treeId else heartedAt + (treeId to System.currentTimeMillis())
+        }
         return ok
     }
 }

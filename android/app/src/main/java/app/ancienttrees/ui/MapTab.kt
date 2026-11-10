@@ -595,7 +595,7 @@ private fun CountStrip(inReach: Int, full: Boolean) {
 
 /** Apple Maps' place row (TreePlaceHeader): share, the name and its meta, a cross. */
 @Composable
-private fun TreePlaceHeader(tree: Tree, onShare: () -> Unit, onClose: () -> Unit) {
+internal fun TreePlaceHeader(tree: Tree, onShare: () -> Unit, onClose: () -> Unit) {
     val brand = Brand.colors
     val meta = listOfNotNull(tree.commonName.ifEmpty { null }, tree.ageShort?.ifEmpty { null } ?: tree.cardAge).joinToString(" · ")
     Row(
@@ -756,7 +756,7 @@ private fun MapPill(onClick: () -> Unit) {
 
 /** Back to you, north up (RecentreButton): a rounded square, the moss arrow. */
 @Composable
-private fun RecentreButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
+internal fun RecentreButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
     val brand = Brand.colors
     Box(
         contentAlignment = Alignment.Center,

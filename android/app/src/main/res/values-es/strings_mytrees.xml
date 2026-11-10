@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My trees and a tree of your own: Screens/Collect.swift, Screens/TreeDetail.swift (mine). -->
+<resources>
+    <string name="back_to_map">Volver al mapa</string>
+    <string name="mt_your_trees">Tus árboles</string>
+    <string name="mt_signin_prompt">Regístrate e inicia sesión para añadir y guardar árboles.</string>
+    <string name="mt_collected">Coleccionados</string>
+    <string name="mt_signin_collect">Inicia sesión para empezar tu colección de árboles.</string>
+    <string name="mt_collected_empty">Añades un árbol aquí fotografiándolo con el botón de la cámara.</string>
+    <string name="mt_all">Todos %1$d</string>
+    <string name="mt_followers">seguidores</string>
+    <string name="mt_following">siguiendo</string>
+    <string name="mt_settings">Ajustes</string>
+    <string name="mt_find_people">Buscar personas</string>
+    <string name="mt_edit_profile">Editar tu perfil</string>
+    <string name="mt_change_photo">Cambiar tu foto y tu nombre</string>
+    <string name="mt_first_tree">Tu primer árbol está a %1$s</string>
+    <string name="mt_start_with">Empieza por este árbol</string>
+    <string name="mt_mission_body">Lo coleccionas fotografiándolo mientras estás allí. Cada árbol suma a tus árboles, especies y lugares, y sus años a tu total.</string>
+    <string name="mt_show_way">Indicar el camino</string>
+    <string name="mt_no_trees">Aún no hay árboles</string>
+    <string name="mt_no_trees_body">Empiezas tu colección fotografiando cualquier árbol.</string>
+    <string name="ot_gone">Ese árbol ya no está</string>
+    <string name="ot_add">Añadir</string>
+    <string name="ot_add_age">Añadir la edad</string>
+    <string name="ot_add_girth">Añadir el perímetro</string>
+    <string name="ot_add_species">Añadir la especie</string>
+    <string name="ot_prompt_name">¿Cómo lo llamas?</string>
+    <string name="ot_prompt_age">¿Qué edad tiene, más o menos?</string>
+    <string name="ot_prompt_girth">¿Cuánto mide el tronco alrededor?</string>
+    <string name="ot_prompt_story">¿Qué hace especial a este árbol?</string>
+    <string name="ot_girth_hint">En metros, a la altura del pecho. Un abrazo son unos 1,5 m.</string>
+    <string name="ot_save">Guardar</string>
+    <string name="ot_more">Más</string>
+    <string name="ot_change_name">Cambiar el nombre</string>
+    <string name="ot_change_species">Cambiar la especie</string>
+    <string name="ot_change_age">Cambiar la edad</string>
+    <string name="ot_change_girth">Cambiar el perímetro</string>
+    <string name="ot_remove_tree">Quitar este árbol</string>
+    <string name="ot_remove_title">¿Quitar %1$s de tus árboles?</string>
+    <string name="ot_remove_body">Tu foto se va con él. Lo que ya nos enviaste se queda con nosotros.</string>
+    <string name="ot_remove">Quitar</string>
+    <string name="ot_keep">Conservarlo</string>
+    <string name="ot_approved">Aprobado</string>
+    <string name="ot_approved_body">Revisamos tu árbol y lo añadimos a Ancient Trees, para que todos puedan encontrarlo.</string>
+    <string name="ot_more_photos">Más fotos</string>
+    <string name="ot_more_photos_body">Opcional. Una foto del cartel ayuda: suele indicar el árbol, la especie y su edad.</string>
+    <string name="ot_add_photo">Añadir foto</string>
+    <string name="ot_share_failed">No se ha enviado. Vuelve a probar el enlace cuando tengas cobertura.</string>
+</resources>

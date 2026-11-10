@@ -19,6 +19,14 @@ package app.ancienttrees.ui
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material3.Icon
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.foundation.gestures.awaitEachGesture
 import androidx.compose.foundation.gestures.awaitFirstDown
 import androidx.compose.foundation.gestures.detectVerticalDragGestures
@@ -105,6 +113,13 @@ fun MapSheet(
     cardFits: Boolean = false,
     locked: Boolean = false,
     barDepth: Dp = TabBar.floatDepth,
+    /**
+     * BottomSheet's pageClose: on a root screen whose sheet reaches the top (no
+     * fixed field, so [fullInset] 0), the sheet grows a status-bar strip as it
+     * rises and the grabber turns into Polarsteps' chevron-down, which sends it
+     * back to half. Null keeps the plain grabber (the map tab).
+     */
+    pageClose: (() -> Unit)? = null,
     header: @Composable () -> Unit,
     content: @Composable () -> Unit,
 ) {
@@ -234,6 +249,9 @@ fun MapSheet(
                     }
                 },
         ) {
+            val progress = if (pageClose != null && fullInset == 0f) state.pageProgress else 0f
+            // The status-bar strip, only as far as the sheet has risen into it.
+            if (progress > 0f) Spacer(Modifier.height(with(density) { (top * progress).toDp() }))
             // The grabber row: one fixed height, the capsule what you see.
             Box(
                 Modifier
@@ -246,8 +264,26 @@ fun MapSheet(
                     Modifier
                         .padding(top = 10.dp)
                         .size(width = 40.dp, height = 5.dp)
+                        .graphicsLayer { alpha = 1f - progress }
                         .background(brand.ink.copy(alpha = 0.18f), RoundedCornerShape(50)),
                 )
+                if (pageClose != null && progress > 0f) {
+                    val back = androidx.compose.ui.res.stringResource(app.ancienttrees.R.string.back_to_map)
+                    Box(
+                        Modifier
+                            .align(Alignment.CenterStart)
+                            .padding(start = 12.dp)
+                            .size(44.dp)
+                            .graphicsLayer { alpha = progress }
+                            .clickable(enabled = progress > 0.9f, role = androidx.compose.ui.semantics.Role.Button) { pageClose() }
+                            .semantics { contentDescription = back },
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        Box(Modifier.size(36.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
+                            Icon(Icons.Filled.KeyboardArrowDown, null, tint = brand.ink, modifier = Modifier.size(22.dp))
+                        }
+                    }
+                }
             }
             Box(
                 Modifier

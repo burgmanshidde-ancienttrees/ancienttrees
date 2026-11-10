@@ -141,15 +141,16 @@
     }
   },
   "collection-tab": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [
-      "My trees (Collect.swift) not ported; the tab opens the account sheet for now."
-    ],
-    "owner": {
-      "session": "android-parity-6-mytrees-cbec59",
-      "name": "android-parity-6-mytrees",
-      "since": "2026-11-10"
-    }
+      "The map tiles may still be loading in the Android frame (screenshot timing, not layout).",
+      "Your own trees show as species pins on the map, not as your photograph in the pin (TreeMapView has no own-photo pin yet; map session's piece).",
+      "Tapping your own pin shows our card without your photograph on it (TreePlaceBody has no ownPhoto yet).",
+      "The gear, your name and photo, Find people and the follower counts open the account sheet until Profile, ProfileEditor and People are ported (android-parity-7-profile).",
+      "The ambassador and early-adopter tags under the name are not drawn yet (Badges.kt comes with the profile session).",
+      "Signed out on a small phone the sheet stays at half rather than the card stop.",
+      "The mission's location-off chip is not drawn when the location is unknown."
+    ]
   },
   "profile": {
     "status": "not-ported",
@@ -212,13 +213,11 @@
     ]
   },
   "collection-tab-full": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "android-parity-6-mytrees-cbec59",
-      "name": "android-parity-6-mytrees",
-      "since": "2026-11-10"
-    }
+    "status": "parity",
+    "differences": [
+      "The sheet at full height is 96 percent opaque on Android (MapSheet), so the map shows faintly behind the list; the iPhone's page is solid.",
+      "The white discs behind the gear and Find people vanish on the white sheet; the iPhone's sheet is a shade greyer."
+    ]
   },
   "profile-signed-in": {
     "status": "not-ported",
@@ -261,13 +260,13 @@
     "owner": null
   },
   "own-tree": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "android-parity-6-mytrees-cbec59",
-      "name": "android-parity-6-mytrees",
-      "since": "2026-11-10"
-    }
+    "status": "parity",
+    "differences": [
+      "Move the pin and Merge with another tree are not in the menu yet: their screens (place-pin, MergeChooser) are not ported.",
+      "Naming the species uses the map's species picker, not SpeciesChooser (species-pick, not ported).",
+      "The hero keeps a 3:4 portrait shape for every photograph; the iPhone takes the photograph's own shape.",
+      "Share sends the link only; the iPhone also hands on a drawn share card (ShareCard.swift)."
+    ]
   },
   "species-pick": {
     "status": "not-ported",
