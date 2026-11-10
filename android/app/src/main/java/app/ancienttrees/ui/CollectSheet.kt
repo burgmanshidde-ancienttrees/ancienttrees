@@ -69,6 +69,7 @@ import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -100,7 +101,9 @@ import androidx.compose.ui.unit.sp
 import app.ancienttrees.R
 import app.ancienttrees.account.Account
 import app.ancienttrees.account.Collector
+import app.ancienttrees.account.MyTrees
 import app.ancienttrees.account.MyVotes
+import app.ancienttrees.account.OwnSighting
 import app.ancienttrees.account.Submission
 import app.ancienttrees.account.TreeNotes
 import app.ancienttrees.account.VoteCounts
@@ -165,7 +168,29 @@ class CollectHost(
     val ticked: (String) -> Unit,
     val openDraft: (Collector.Draft) -> Unit,
     val share: (Tree) -> Unit,
+    /** Your own trees (My trees), so a second photograph of one is offered to it. */
+    val mine: MyTrees? = null,
+    /** Opens your own tree's page (navigator.push = .mine), after a photo joins it. */
+    val openMine: (String) -> Unit = {},
 )
+
+/**
+ * CollectSheet.yoursNear: a tree of yours within [SAME_TREE_METRES] of the
+ * photograph, nearest first, at most two. Within 30 metres two photographs are
+ * nearly always of the same trunk, the distance the server matches a sighting at
+ * (scripts/sightings_inbox.py, MATCH_M). YOUR OWN TREE, PHOTOGRAPHED AGAIN
+ * (Hidde, 2026-10-18: "twee losse pins voor twee foto's van 1 boom"): offered
+ * first, and picking it adds the photograph to that tree, as Google Maps adds a
+ * photo to a place you already put on the map instead of a new place.
+ */
+fun yoursNear(lat: Double, lng: Double, yours: List<OwnSighting>): List<OwnSighting> =
+    yours.map { it to Geo.km(lat, lng, it.lat, it.lng) * 1000 }
+        .filter { it.second <= SAME_TREE_METRES }
+        .sortedBy { it.second }
+        .take(2)
+        .map { it.first }
+
+const val SAME_TREE_METRES = 30.0
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -203,6 +228,7 @@ fun CollectSheet(
     } else {
         CollectRules.nearby(here.lat, here.lng, trees)
     }
+    val ownNear = host.mine?.let { yoursNear(here.lat, here.lng, it.yoursOnly) }.orEmpty()
 
     val hasWork = when (stage) {
         Stage.Intro, Stage.Unsure, is Stage.Ticked -> false
@@ -259,9 +285,25 @@ fun CollectSheet(
         query = ""
         when {
             known != null -> claim(known, image, h)
-            CollectRules.nearby(h.lat, h.lng, trees).isEmpty() && CollectRules.closest(h.lat, h.lng, trees).isEmpty() -> startDraft()
+            CollectRules.nearby(h.lat, h.lng, trees).isEmpty() && CollectRules.closest(h.lat, h.lng, trees).isEmpty() &&
+                host.mine?.let { yoursNear(h.lat, h.lng, it.yoursOnly) }.isNullOrEmpty() -> startDraft()
             else -> stage = Stage.Identify
         }
+    }
+
+    // The photograph joins the tree you already added, and its page opens.
+    fun addToYours(s: OwnSighting) {
+        val store = host.mine ?: return
+        val images = listOfNotNull(shot) + extras
+        host.send {
+            var ok = true
+            for (img in images) ok = store.addExtra(s.id, img) && ok
+            ok
+        }
+        extras = emptyList()
+        shot = null
+        onDismiss()
+        host.openMine(s.id)
     }
 
     // THE CAMERA PATH: standing there is the fix, unless the phone has none.
@@ -450,6 +492,8 @@ fun CollectSheet(
                     start = placing ?: origin,
                     trees = trees,
                     onMove = { placing = it },
+                    // Never asked is not refused: the first tap asks (RecentreButton.recentre).
+                    onLocate = { if (located) true else { host.askLocation(); false } },
                     onConfirm = {
                         val c = placing
                         val image = shot
@@ -461,10 +505,14 @@ fun CollectSheet(
                     here = here,
                     located = at != null || located,
                     candidates = candidates,
+                    ownNear = ownNear,
+                    mine = host.mine,
+                    onYours = { addToYours(it) },
                     nothingNear = nothingNear,
                     query = query,
                     onQuery = { query = it },
                     blurb = when {
+                        candidates.isEmpty() && ownNear.isNotEmpty() -> stringResource(R.string.cf_blurb_yours)
                         nothingNear -> stringResource(if (query.isBlank()) R.string.cf_blurb_far else R.string.cf_blurb_far_query)
                         candidates.any { it.precision == Precision.APPROXIMATE } -> stringResource(R.string.cf_blurb_rough)
                         fix == Fix.DEVICE -> stringResource(R.string.cf_blurb_device)
@@ -628,8 +676,17 @@ private fun CloseRow(onClose: () -> Unit) {
 // MARK: - Where does it stand
 
 @Composable
-private fun PlaceStep(start: Here, trees: List<Tree>, onMove: (Here) -> Unit, onConfirm: () -> Unit, onClose: () -> Unit) {
+private fun PlaceStep(
+    start: Here,
+    trees: List<Tree>,
+    onMove: (Here) -> Unit,
+    /** True when the map may go to the person; false when it asked instead. */
+    onLocate: () -> Boolean,
+    onConfirm: () -> Unit,
+    onClose: () -> Unit,
+) {
     val brand = Brand.colors
+    var recentre by remember { mutableIntStateOf(0) }
     Column(Modifier.fillMaxSize()) {
         CloseRow(onClose)
         Column(Modifier.padding(horizontal = 20.dp).padding(bottom = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -643,6 +700,19 @@ private fun PlaceStep(start: Here, trees: List<Tree>, onMove: (Here) -> Unit, on
                 spanMetres = 400.0,
                 onMove = onMove,
                 modifier = Modifier.fillMaxSize(),
+                recentre = recentre,
+            )
+            // THE LOCATE ARROW, as every TreeMap on the iPhone carries it
+            // (TreeMap.showsRecentre): trailing 12, and above the confirm button
+            // with the iPhone's 18 points of air (its 120 from the bottom edge
+            // less the 102 the button and the home indicator take there).
+            RecentreButton(
+                onClick = { if (onLocate()) recentre++ },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .navigationBarsPadding()
+                    .padding(end = 12.dp, bottom = 86.dp)
+                    .testTag("map-recentre"),
             )
             Box(
                 contentAlignment = Alignment.Center,
@@ -670,6 +740,9 @@ private fun IdentifyStep(
     here: Here,
     located: Boolean,
     candidates: List<Tree>,
+    ownNear: List<OwnSighting>,
+    mine: MyTrees?,
+    onYours: (OwnSighting) -> Unit,
     nothingNear: Boolean,
     query: String,
     onQuery: (String) -> Unit,
@@ -710,6 +783,11 @@ private fun IdentifyStep(
                     fontSize = 13.sp,
                     color = brand.inkSoft,
                 )
+            }
+            if (mine != null) {
+                ownNear.forEachIndexed { i, s ->
+                    OwnRow(s, here, mine, Modifier.clickable(role = Role.Button) { onYours(s) }.testTag("collect-yours-$i"))
+                }
             }
             if (nothingNear) {
                 Row(
@@ -778,6 +856,32 @@ private fun ChoiceRow(icon: androidx.compose.ui.graphics.vector.ImageVector, tin
             Text(title, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.ink)
             Text(sub, fontSize = 13.sp, color = brand.inkSoft)
         }
+    }
+}
+
+/** ownRow: a tree you added, in the same card as ours: your photograph, its name, how far. */
+@Composable
+private fun OwnRow(s: OwnSighting, here: Here, mine: MyTrees, modifier: Modifier) {
+    val brand = Brand.colors
+    Row(
+        verticalAlignment = Alignment.Top,
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(14.dp))
+            .background(brand.surface)
+            .then(modifier)
+            .padding(12.dp),
+    ) {
+        OwnPhoto(s, mine, Modifier.size(56.dp).clip(RoundedCornerShape(11.dp)), maxSide = 168) {
+            Box(Modifier.size(56.dp).clip(RoundedCornerShape(11.dp)).background(brand.surfaceMuted))
+        }
+        Spacer(Modifier.width(12.dp))
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+            Text(OwnSighting.oneLine(s.name), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.ink)
+            val metres = (Geo.km(here.lat, here.lng, s.lat, s.lng) * 1000).toInt()
+            Text(stringResource(R.string.cf_your_tree_at, CollectRules.distance(metres)), fontSize = 13.sp, color = brand.inkSoft)
+        }
+        Spacer(Modifier.width(32.dp))
     }
 }
 
