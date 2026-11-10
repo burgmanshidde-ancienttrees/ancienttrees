@@ -228,14 +228,11 @@ fun MapSheet(
                 // The iPhone's regularMaterial over the map reads as a warm light
                 // grey (#F4F4F2 measured off its shots, 2026-11-10), not white.
                 .background(
-                    // SOLID ONCE IT IS THE PAGE (BottomSheet.swift: systemBackground
-                    // at the page progress), so nothing shows through where the sheet
-                    // has become the screen (Hidde, 2026-11-10, My trees see-through).
-                    androidx.compose.ui.graphics.lerp(
-                        androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f),
-                        brand.ground,
-                        state.pageProgress.coerceIn(0f, 1f),
-                    ),
+                    // OPAQUE AT EVERY HEIGHT and the iPhone's light grey (#F5F6F5
+                    // measured at full height, #F4F4F2 over the map, 2026-11-10):
+                    // nothing shows through (Hidde: My trees see-through), and the
+                    // white discs of the gear and Find people stand out as on iOS.
+                    androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f),
                     RoundedCornerShape(topStart = corner, topEnd = corner),
                 )
                 .nestedScroll(connection)
