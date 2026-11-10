@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 session: Porto's ambassador badge moves from Miguel to Carlos
+
+- **Product:** Carlos (request row 529, the Porto button on 2026-10-24) is now Porto's ambassador. Miguel keeps Guimarães, Braga, Calvos and Vales. Hidde: "Yes, swap them". Carlos asked three days before Miguel did and before the request-is-the-yes rule (2026-11-02), so his badge had never been granted; Miguel got Porto with his batch of five on 10-28.
+- **Shown on the Porto page:** Carlos's profile still has its generated name, "Tall Ginkgo 7498", so that is what the page shows until he changes it in Edit profile.
+- Done with `ambassador.grant` / `ambassador.revoke` and a sync (data/ambassadors.json). The heads-up mails for Porto start from a fresh baseline on the next knock, so the first knock mails him nothing.
+
 ## 2026-11-10 session: Android places and species ported from the iPhone (parity session 8)
 
 - **Product (Android, not in any store):** a city on the map now has the iPhone's white box under its Highlights: the named ambassador with "Become one too", or "Become the <place> ambassador", which asks for an account first and then the same explainer and receipt; and "Help create Ancient Trees Plus" under the trees with the three-step question (open idea, up to two of four shuffled options or something else, then Tell me), sent to plus_answers and plus_waitlist as the iPhone does, gone once answered and switched off from the server like the iPhone (data/app-switches.json). The species page (Species.swift): mark, name, Latin in italics, how many on the map, what the species is, then its trees with photographs first; it opens from a tree page's species, from Discover's species tiles and from its See all list (before, those sent you to the map's filter). The tree page's "Approximate location" line opens the map to move the pin (PlacePin.swift), which sends a correction exactly as the iPhone does. The species chooser (SpeciesChooser.swift) with "Not on the map yet" and "Use what you typed" is now one screen for your own tree, the draft and the sweep; the map's Species filter shows each species' Latin and other names the same way.
