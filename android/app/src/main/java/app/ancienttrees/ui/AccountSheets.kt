@@ -5,6 +5,22 @@
 
 package app.ancienttrees.ui
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.TextOverflow
+import app.ancienttrees.feed.Tree
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -137,7 +153,13 @@ fun SignInSheet(account: Account, treeName: String?, onDismiss: () -> Unit) {
 /** Signed in: who, sign out, delete. Each step that cannot be undone asks first. */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AccountSheet(account: Account, saved: Int, onDismiss: () -> Unit) {
+fun AccountSheet(
+    account: Account,
+    hearted: List<Tree>,
+    collected: List<Tree>,
+    onOpen: (Tree) -> Unit,
+    onDismiss: () -> Unit,
+) {
     val scope = rememberCoroutineScope()
     var confirm by remember { mutableStateOf<String?>(null) }
     var failed by remember { mutableStateOf(false) }
@@ -189,7 +211,34 @@ fun AccountSheet(account: Account, saved: Int, onDismiss: () -> Unit) {
                     (account.state as? SignIn.SignedIn)?.email?.let {
                         Text(it, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
-                    Text("${stringResource(R.string.want_to_go)}: $saved", style = MaterialTheme.typography.bodyMedium)
+                    // YOUR TREES: the iPhone's two lanes, Collected and Want to
+                    // visit, plain underlined tabs, no counts (Collect.swift).
+                    var lane by remember { mutableStateOf(if (collected.isEmpty() && hearted.isNotEmpty()) 1 else 0) }
+                    Row(horizontalArrangement = Arrangement.spacedBy(24.dp)) {
+                        LaneTab(stringResource(R.string.seen_it_done), lane == 0) { lane = 0 }
+                        LaneTab(stringResource(R.string.want_to_visit), lane == 1) { lane = 1 }
+                    }
+                    val rows = if (lane == 0) collected else hearted
+                    LazyColumn(Modifier.fillMaxWidth().heightIn(max = 320.dp)) {
+                        items(rows, key = { it.id }) { t ->
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.fillMaxWidth().clickable { onOpen(t) }.padding(vertical = 8.dp),
+                            ) {
+                                t.photo?.let { p ->
+                                    RemoteImage(p.card, t.name, Modifier.size(52.dp).clip(RoundedCornerShape(10.dp)))
+                                    Spacer(Modifier.size(12.dp))
+                                }
+                                Column(Modifier.weight(1f)) {
+                                    Text(t.name, fontFamily = Brand, fontWeight = FontWeight.Bold, maxLines = 1,
+                                        overflow = TextOverflow.Ellipsis)
+                                    Text("${t.commonName} \u00B7 ${t.city}", style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1,
+                                        overflow = TextOverflow.Ellipsis)
+                                }
+                            }
+                        }
+                    }
                     OutlinedButton(onClick = { confirm = "out" }, modifier = Modifier.fillMaxWidth()) {
                         Text(stringResource(R.string.sign_out))
                     }
@@ -199,6 +248,16 @@ fun AccountSheet(account: Account, saved: Int, onDismiss: () -> Unit) {
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun LaneTab(label: String, on: Boolean, onClick: () -> Unit) {
+    Column(Modifier.clickable(onClick = onClick).padding(vertical = 6.dp)) {
+        Text(label, fontWeight = if (on) FontWeight.Bold else FontWeight.Medium,
+            color = if (on) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant)
+        Spacer(Modifier.height(4.dp))
+        Box(Modifier.height(2.dp).width(24.dp).background(if (on) MaterialTheme.colorScheme.primary else Color.Transparent))
     }
 }
 
