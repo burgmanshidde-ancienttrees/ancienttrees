@@ -33,16 +33,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.filled.AutoAwesome
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.Verified
-import androidx.compose.material.icons.outlined.Circle
-import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -164,7 +155,7 @@ private fun PersonRow(name: String, profile: String?, place: String, last: Boole
                 Text(name.trim().take(1).uppercase(), fontSize = 13.sp, fontWeight = FontWeight.Bold, color = brand.moss)
             }
             Icon(
-                Icons.Filled.Verified, null, tint = brand.moss,
+                Sym.VerifiedFill, null, tint = brand.moss,
                 modifier = Modifier.align(Alignment.BottomEnd).offset(x = 3.dp, y = 3.dp).size(13.dp).background(brand.surface, CircleShape),
             )
         }
@@ -179,7 +170,7 @@ private fun PersonRow(name: String, profile: String?, place: String, last: Boole
             }
         }
         if (profile != null) {
-            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+            Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
         }
     }
 }
@@ -229,7 +220,7 @@ private fun AmbassadorSeat(place: String, seated: Boolean, link: Boolean) {
             horizontalArrangement = Arrangement.spacedBy(10.dp),
             modifier = Modifier.fillMaxWidth().heightIn(min = 46.dp).then(tapMod).padding(horizontal = 14.dp),
         ) {
-            Icon(Icons.Outlined.Verified, null, tint = brand.moss, modifier = Modifier.width(18.dp).size(18.dp))
+            Icon(Sym.Verified, null, tint = brand.moss, modifier = Modifier.width(18.dp).size(18.dp))
             Text(
                 when {
                     asked -> stringResource(R.string.discover_request_sent)
@@ -243,7 +234,7 @@ private fun AmbassadorSeat(place: String, seated: Boolean, link: Boolean) {
                 maxLines = 2,
                 modifier = Modifier.weight(1f),
             )
-            if (!asked) Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+            if (!asked) Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
         }
     }
     if (confirming) {
@@ -251,7 +242,7 @@ private fun AmbassadorSeat(place: String, seated: Boolean, link: Boolean) {
         if (sent) {
             BrandSheet(
                 title = stringResource(R.string.discover_amb_sent_title),
-                icon = Icons.Filled.Check,
+                icon = Sym.Check,
                 message = stringResource(R.string.discover_amb_sent_body) +
                     (host.email?.let { stringResource(R.string.discover_amb_write_to, it) } ?: ""),
                 onDismiss = close,
@@ -260,7 +251,7 @@ private fun AmbassadorSeat(place: String, seated: Boolean, link: Boolean) {
         } else {
             BrandSheet(
                 title = if (seated) stringResource(R.string.amb_title_seated, place) else stringResource(R.string.discover_amb_title, place),
-                icon = Icons.Outlined.Verified,
+                icon = Sym.Verified,
                 message = stringResource(R.string.discover_amb_message),
                 points = listOf(
                     stringResource(R.string.discover_amb_p1),
@@ -401,9 +392,9 @@ private fun PlusRow(city: String) {
             .padding(horizontal = 14.dp)
             .testTag("plus-row"),
     ) {
-        Icon(Icons.Filled.AutoAwesome, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+        Icon(Sym.StarShineFill, null, tint = brand.moss, modifier = Modifier.size(18.dp))
         Text(stringResource(R.string.plus_row), fontFamily = BrandFace, fontWeight = FontWeight.Medium, fontSize = 15.sp, color = brand.ink, modifier = Modifier.weight(1f))
-        Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+        Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
     }
     if (asking) PlusQuestionSheet(city, "city") { asking = false }
 }
@@ -462,7 +453,7 @@ fun PlusQuestionSheet(city: String, openedFrom: String, onDismiss: () -> Unit) {
     when (step) {
         PlusStep.IDEA -> BrandSheet(
             title = stringResource(R.string.plus_title),
-            icon = Icons.Filled.AutoAwesome,
+            icon = Sym.StarShineFill,
             message = stringResource(R.string.plus_message),
             onDismiss = onDismiss,
             // Skip while the field is empty, so leaving it is plainly allowed; green once there is something.
@@ -513,7 +504,7 @@ fun PlusQuestionSheet(city: String, openedFrom: String, onDismiss: () -> Unit) {
                             .testTag("plus-option-$k"),
                     ) {
                         Icon(
-                            if (on) Icons.Filled.CheckCircle else Icons.Outlined.Circle, null,
+                            if (on) Sym.CheckCircleFill else Sym.Circle, null,
                             tint = if (on) brand.moss else brand.inkSoft.copy(alpha = 0.5f), modifier = Modifier.size(20.dp),
                         )
                         Text(labels[k].orEmpty(), fontSize = 15.sp, color = brand.ink, modifier = Modifier.weight(1f))
@@ -526,7 +517,7 @@ fun PlusQuestionSheet(city: String, openedFrom: String, onDismiss: () -> Unit) {
         }
         PlusStep.THANKS -> BrandSheet(
             title = stringResource(R.string.plus_thanks),
-            icon = Icons.Filled.Check,
+            icon = Sym.Check,
             message = stringResource(R.string.plus_tell_q),
             onDismiss = onDismiss,
             buttons = listOf(
@@ -539,7 +530,7 @@ fun PlusQuestionSheet(city: String, openedFrom: String, onDismiss: () -> Unit) {
         )
         PlusStep.LISTED -> BrandSheet(
             title = stringResource(R.string.plus_listed),
-            icon = Icons.Filled.Check,
+            icon = Sym.Check,
             onDismiss = onDismiss,
             buttons = listOf(SheetButton(stringResource(R.string.plus_done), SheetKind.PRIMARY, action = onDismiss)),
         )
@@ -553,7 +544,7 @@ private fun NoteField(value: String, onChange: (String) -> Unit, hint: String, m
     BasicTextField(
         value = value,
         onValueChange = onChange,
-        textStyle = TextStyle(fontSize = 16.sp, color = brand.ink),
+        textStyle = sfStyle(fontSize = 16.sp, color = brand.ink),
         cursorBrush = SolidColor(brand.moss),
         modifier = Modifier
             .fillMaxWidth()

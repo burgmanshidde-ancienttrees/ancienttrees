@@ -23,11 +23,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Bookmark
-import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.compositionLocalOf
@@ -46,7 +42,7 @@ import kotlinx.coroutines.delay
 /** What the bar says and what its one action does (Navigator.Snack). */
 data class Snack(
     val text: String,
-    val icon: ImageVector = Icons.Filled.Bookmark,
+    val icon: ImageVector = Sym.BookmarkFill,
     /** "View": My trees on Want to visit. */
     val onView: (() -> Unit)? = null,
     /** "Undo": puts back what was just removed. */
@@ -57,7 +53,7 @@ data class Snack(
 /** Any screen posts a snack through this; the app root draws it. */
 val LocalSnack = compositionLocalOf<(Snack) -> Unit> { {} }
 
-val SignedInIcon: ImageVector = Icons.Filled.CheckCircle
+val SignedInIcon: ImageVector = Sym.CheckCircleFill
 
 @Composable
 fun SnackBar(snack: Snack?, lift: Dp, viewLabel: String, undoLabel: String, dismiss: () -> Unit, modifier: Modifier = Modifier) {

@@ -42,29 +42,12 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.InlineTextContent
 import androidx.compose.foundation.text.appendInlineContent
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Help
-import androidx.compose.material.icons.automirrored.filled.Send
-import androidx.compose.material.icons.filled.AddCircle
-import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.Image
-import androidx.compose.material.icons.filled.ThumbDown
-import androidx.compose.material.icons.filled.ThumbUp
-import androidx.compose.material.icons.filled.Verified
-import androidx.compose.material.icons.outlined.Info
-import androidx.compose.material.icons.outlined.PhotoCamera
-import androidx.compose.material.icons.outlined.PhotoLibrary
-import androidx.compose.material.icons.outlined.Search
-import androidx.compose.material.icons.outlined.Share
-import androidx.compose.material.icons.outlined.ThumbDown
-import androidx.compose.material.icons.outlined.ThumbUp
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.ModalBottomSheetProperties
 import androidx.compose.material3.SheetValue
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -597,7 +580,7 @@ private fun CollectIntro(
                 .padding(top = 12.dp, bottom = 8.dp)
                 .navigationBarsPadding(),
         ) {
-            SheetIconTile(Icons.Outlined.PhotoCamera)
+            SheetIconTile(Sym.PhotoCamera)
             Spacer(Modifier.height(16.dp))
             SheetTitleText(
                 stringResource(
@@ -616,8 +599,8 @@ private fun CollectIntro(
                 modifier = Modifier.padding(horizontal = 18.dp).padding(top = 8.dp, bottom = 22.dp),
             )
             Column(verticalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.fillMaxWidth()) {
-                SheetButtonView(SheetButton(stringResource(R.string.cf_take), SheetKind.PRIMARY, Icons.Outlined.PhotoCamera, onStart), Modifier.testTag("add-start"))
-                SheetButtonView(SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Icons.Outlined.PhotoLibrary, onLibrary), Modifier.testTag("add-library"))
+                SheetButtonView(SheetButton(stringResource(R.string.cf_take), SheetKind.PRIMARY, Sym.PhotoCamera, onStart), Modifier.testTag("add-start"))
+                SheetButtonView(SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Sym.PhotoLibrary, onLibrary), Modifier.testTag("add-library"))
             }
         }
         SheetCloseButton(onClose, Modifier.align(Alignment.TopEnd).padding(top = 0.dp))
@@ -777,7 +760,7 @@ private fun IdentifyStep(
                     },
                     inlineContent = mapOf(
                         "info" to InlineTextContent(Placeholder(14.sp, 14.sp, PlaceholderVerticalAlign.TextCenter)) {
-                            Icon(Icons.Outlined.Info, null, tint = brand.inkSoft, modifier = Modifier.fillMaxSize())
+                            Icon(Sym.Info, null, tint = brand.inkSoft, modifier = Modifier.fillMaxSize())
                         },
                     ),
                     fontSize = 13.sp,
@@ -798,14 +781,14 @@ private fun IdentifyStep(
                         .background(brand.surfaceMuted, RoundedCornerShape(14.dp))
                         .padding(horizontal = 12.dp),
                 ) {
-                    Icon(Icons.Outlined.Search, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp))
+                    Icon(Sym.Search, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp))
                     Spacer(Modifier.width(8.dp))
                     Box(Modifier.weight(1f)) {
                         BasicTextField(
                             value = query,
                             onValueChange = onQuery,
                             singleLine = true,
-                            textStyle = TextStyle(fontSize = 16.sp, color = brand.ink),
+                            textStyle = sfStyle(fontSize = 16.sp, color = brand.ink),
                             cursorBrush = SolidColor(brand.moss),
                             modifier = Modifier.fillMaxWidth().testTag("collect-search"),
                         )
@@ -830,14 +813,14 @@ private fun IdentifyStep(
                             .semantics { contentDescription = label }
                             .testTag("collect-compare-$i"),
                     ) {
-                        Icon(Icons.Outlined.Info, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                        Icon(Sym.Info, null, tint = brand.moss, modifier = Modifier.size(22.dp))
                     }
                 }
             }
             HorizontalDivider(color = brand.hairline, modifier = Modifier.padding(vertical = 4.dp))
-            ChoiceRow(Icons.Filled.AddCircle, brand.moss, stringResource(R.string.cf_add_new), stringResource(R.string.cf_none_of_these), "collect-none-of-these", onNew)
+            ChoiceRow(Sym.AddCircleFill, brand.moss, stringResource(R.string.cf_add_new), stringResource(R.string.cf_none_of_these), "collect-none-of-these", onNew)
             if (candidates.isNotEmpty()) {
-                ChoiceRow(Icons.AutoMirrored.Filled.Help, brand.inkSoft, stringResource(R.string.cf_not_sure), stringResource(R.string.cf_work_it_out), "collect-not-sure", onNotSure)
+                ChoiceRow(Sym.HelpFill, brand.inkSoft, stringResource(R.string.cf_not_sure), stringResource(R.string.cf_work_it_out), "collect-not-sure", onNotSure)
             }
         }
     }
@@ -970,7 +953,7 @@ private fun ColumnScope.CompareStep(t: Tree, here: Here, located: Boolean, onThi
 
 @Composable
 private fun ColumnScope.UnsureStep(onDone: () -> Unit) {
-    SheetIconTile(Icons.AutoMirrored.Filled.Send)
+    SheetIconTile(Sym.SendFill)
     Spacer(Modifier.height(16.dp))
     SheetTitleText(stringResource(R.string.cf_thanks))
     SheetMessageText(stringResource(R.string.cf_unsure_message))
@@ -990,7 +973,7 @@ private fun ColumnScope.TickedStep(t: Tree, newFind: Boolean, pinReported: Boole
     var failed by remember { mutableStateOf(false) }
     LaunchedEffect(t.id) { notes.load(t.id, host.account.fresh()?.accessToken) }
 
-    SheetIconTile(if (newFind) Icons.Filled.Verified else Icons.Filled.Image)
+    SheetIconTile(if (newFind) Sym.VerifiedFill else Sym.ImageFill)
     Spacer(Modifier.height(16.dp))
     SheetTitleText(stringResource(if (newFind) R.string.cf_you_found else R.string.cf_photo_added, t.name))
     val age = CollectRules.ageNeedsOld(t.age)?.let { needs -> if (needs) stringResource(R.string.cf_age_old, t.age!!.trim()) else t.age!!.trim() }
@@ -1011,7 +994,7 @@ private fun ColumnScope.TickedStep(t: Tree, newFind: Boolean, pinReported: Boole
                 BasicTextField(
                     value = noteText,
                     onValueChange = { noteText = it },
-                    textStyle = TextStyle(fontSize = 16.sp, color = brand.ink),
+                    textStyle = sfStyle(fontSize = 16.sp, color = brand.ink),
                     cursorBrush = SolidColor(brand.moss),
                     modifier = Modifier.fillMaxWidth().testTag("collect-note-field"),
                 )
@@ -1042,7 +1025,7 @@ private fun ColumnScope.TickedStep(t: Tree, newFind: Boolean, pinReported: Boole
     }
     if (t.url.isNotEmpty()) {
         SheetButtonView(
-            SheetButton(stringResource(R.string.cf_share), SheetKind.SECONDARY, Icons.Outlined.Share) { host.share(t) },
+            SheetButton(stringResource(R.string.cf_share), SheetKind.SECONDARY, Sym.Share) { host.share(t) },
             Modifier.padding(top = 12.dp).testTag("collect-share"),
         )
     }
@@ -1060,10 +1043,10 @@ private fun WorthTheTripAsk(t: Tree, vote: String, host: CollectHost, modifier: 
                 val chosen = vote == value
                 val text = stringResource(label)
                 val icon = when {
-                    value == "up" && chosen -> Icons.Filled.ThumbUp
-                    value == "up" -> Icons.Outlined.ThumbUp
-                    chosen -> Icons.Filled.ThumbDown
-                    else -> Icons.Outlined.ThumbDown
+                    value == "up" && chosen -> Sym.ThumbUpFill
+                    value == "up" -> Sym.ThumbUp
+                    chosen -> Sym.ThumbDownFill
+                    else -> Sym.ThumbDown
                 }
                 Box(
                     contentAlignment = Alignment.Center,

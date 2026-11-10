@@ -11,6 +11,13 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 Android type and icons (session android-type-icons)
+
+- **Android's text now sets in Inter and its icons are Material Symbols Rounded**, the open set and face closest to the iPhone's SF Symbols and SF Pro (Hidde: "maak het zo veel hetzelfde"). Every text goes through ui/Text.kt, which adds SF's tracking per size and weight; every icon comes from ui/Symbols.kt, generated glyph for glyph by android/generate_symbols.py. Back (←), share and the overflow (⋮) take Android's form from the same set, per Airbnb's line. Tab icons, the tree page's top bar, Take me there and the action bar circles are sized to the iPhone's (SF point size times 4/3).
+- Libraries: Inter 4.1 (OFL, bundled font files, subset to Latin, Greek and Cyrillic) and Material Symbols Rounded 0.48.0 (Apache 2.0, generated into Kotlin), neither touches reader data. AndroidX material-icons-extended is gone.
+- A check so it cannot drift back: `python3 scripts/android_parity.py --check`, run by qa.py on every push.
+- Icons left the forced-differences list in data/android-parity.json; DECISIONS.md 2026-11-10.
+
 ## 2026-11-10 Android measures what people do, like the iPhone
 
 - Android now sends the iPhone's PostHog events to the same project with the same properties (account/Measure.kt, a port of Kit/Measure.swift): app_open, tab, tree_opened (tree, near), tree_saved, tree_visited, sync_failed, sighting_recorded, directions, share_tapped (map_card, tree, collect, your_photo, profile), location, plus-open, plus-answer, plus-tellme. `os` reads "Android 15" beside "iOS 26", so scripts/posthog.py and the digest count both phones with no change; a debug install says `build: debug` and the digest leaves it out as it does for Xcode installs.

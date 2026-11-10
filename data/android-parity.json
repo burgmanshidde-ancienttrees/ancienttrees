@@ -2,16 +2,16 @@
   "_note": "Per iOS screen (SweepFrames.swift names): its Android status (not-ported, in-progress, parity) and the differences still open. Read by scripts/android_parity.py. DECISIONS.md 2026-11-10.",
   "_android_forced": [
     {
-      "what": "Icons",
-      "why": "SF Symbols exist only on Apple platforms; Android uses Material Symbols, the matching glyph each time (map, search, eco leaf, photo_camera)."
-    },
-    {
       "what": "Glass behind floating bars",
       "why": "Android has no system material blur for what lies under a view; the tab bar is the ground fully opaque with a 14 percent ink wash and the map sheet a warm light grey (#F4F4F2), both measured off the iPhone's shots so nothing behind is legible."
     },
     {
       "what": "Back",
       "why": "Android's system back gesture and button close the top sheet or page, as every Android app does."
+    },
+    {
+      "what": "Back, share and overflow signs",
+      "why": "Airbnb's line (Hidde, 2026-11-10: \"Yes, Airbnb's line\"): brand, type, colour, layout and our own icons are the iPhone's; the system signs take Android's form, drawn in the same set (Material Symbols Rounded) at the iPhone's weight: back is the arrow (←) where the iPhone draws chevron.left, share is Android's three connected dots where it draws square.and.arrow.up, and the overflow menu is the vertical dots (⋮) where it draws ellipsis.circle. Source: CONVENTIONS.md, \"One app on iPhone and Android\" (2026-11-10)."
     },
     {
       "what": "Permission dialogs",
@@ -27,7 +27,7 @@
     },
     {
       "what": "Text face",
-      "why": "SF Pro, the iPhone's system face, exists only on Apple platforms; Android's own system face (Roboto) stands in at the same sizes and weights. The brand face Gabarito is the same on both."
+      "why": "SF Pro, the iPhone's system face, exists only on Apple platforms; Android sets every text in Inter (OFL), the open face closest to it, at the same sizes and weights and tracked as SF tracks per size (ui/Text.kt). The brand face Gabarito is the same on both. Icons are no longer a difference: Material Symbols Rounded, the closest open set to SF Symbols, generated glyph for glyph (DECISIONS.md 2026-11-10)."
     },
     {
       "what": "Share",

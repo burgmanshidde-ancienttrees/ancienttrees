@@ -38,29 +38,12 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.automirrored.outlined.Chat
-import androidx.compose.material.icons.automirrored.outlined.InsertDriveFile
-import androidx.compose.material.icons.filled.AutoAwesome
-import androidx.compose.material.icons.filled.TurnRight
-import androidx.compose.material.icons.filled.UnfoldMore
-import androidx.compose.material.icons.outlined.Description
-import androidx.compose.material.icons.outlined.Lock
-import androidx.compose.material.icons.outlined.NearMe
-import androidx.compose.material.icons.outlined.NearMeDisabled
-import androidx.compose.material.icons.outlined.NorthEast
-import androidx.compose.material.icons.outlined.Person
-import androidx.compose.material.icons.outlined.StarOutline
-import androidx.compose.material.icons.outlined.Straighten
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -164,9 +147,9 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
             Group(stringResource(R.string.settings_preferences)) {
                 var menu by remember { mutableStateOf(false) }
                 Box {
-                    SettingsRow(Icons.Outlined.Straighten, stringResource(R.string.settings_distances),
+                    SettingsRow(Sym.Straighten, stringResource(R.string.settings_distances),
                         value = stringResource(if (miles) R.string.units_miles else R.string.units_km),
-                        trailing = Icons.Filled.UnfoldMore) { menu = true }
+                        trailing = Sym.UnfoldMore) { menu = true }
                     DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, modifier = Modifier.background(brand.surface)) {
                         for (m in listOf(false, true)) {
                             DropdownMenuItem(
@@ -182,9 +165,9 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 // apps and nothing else: no "Ask again" (Hidde, 2026-08-29).
                 var dirMenu by remember { mutableStateOf(false) }
                 Box {
-                    SettingsRow(Icons.Filled.TurnRight, stringResource(R.string.settings_directions),
+                    SettingsRow(Sym.TurnRight, stringResource(R.string.settings_directions),
                         value = directionsApp?.label(context) ?: stringResource(R.string.directions_ask_each),
-                        trailing = Icons.Filled.UnfoldMore, tag = "profile-directions") { dirMenu = true }
+                        trailing = Sym.UnfoldMore, tag = "profile-directions") { dirMenu = true }
                     DropdownMenu(expanded = dirMenu, onDismissRequest = { dirMenu = false }, modifier = Modifier.background(brand.surface)) {
                         for (a in Directions.MapsApp.entries) {
                             DropdownMenuItem(
@@ -198,7 +181,7 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 // LOCATION: On or Off; a tap asks when nothing was asked, opens the
                 // recovery sheet after a no, and the system's page when it is on.
                 SettingsRow(
-                    if (host.locationAllowed) Icons.Outlined.NearMe else Icons.Outlined.NearMeDisabled,
+                    if (host.locationAllowed) Sym.NearMe else Sym.NearMeDisabled,
                     stringResource(R.string.settings_location),
                     value = stringResource(if (host.locationAllowed) R.string.settings_on else R.string.settings_off),
                     tag = "profile-location",
@@ -213,7 +196,7 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 val isPublic = host.profiles.myPublic
                 if (host.signedIn && isPublic != null) {
                     RowDivider(48.dp)
-                    SettingsRow(Icons.Outlined.Lock, stringResource(R.string.privacy_settings),
+                    SettingsRow(Sym.Lock, stringResource(R.string.privacy_settings),
                         value = stringResource(if (isPublic) R.string.privacy_public else R.string.privacy_only_me),
                         tag = "profile-privacy") { host.openPrivacy() }
                 }
@@ -227,28 +210,28 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 // (PlaceBox.kt PlusQuestionSheet, PlusAsk.swift); the row goes once
                 // this install answered or the server's switch is off (AppSwitches).
                 if (AppSwitches.showPlus(context)) {
-                    SettingsRow(Icons.Filled.AutoAwesome, stringResource(R.string.plus_title), tag = "profile-plus") {
+                    SettingsRow(Sym.StarShineFill, stringResource(R.string.plus_title), tag = "profile-plus") {
                         app.ancienttrees.account.Measure.event("plus-open", mapOf("from" to "settings"))
                         askingPlus = true
                     }
                     RowDivider(48.dp)
                 }
-                SettingsRow(Icons.AutoMirrored.Outlined.Chat, stringResource(R.string.settings_feedback), tag = "profile-feedback") {
+                SettingsRow(Sym.Chat, stringResource(R.string.settings_feedback), tag = "profile-feedback") {
                     givingFeedback = true
                 }
                 RowDivider(48.dp)
-                LinkRow(Icons.Outlined.StarOutline, stringResource(R.string.settings_rate), stringResource(R.string.settings_rate_sub)) {
+                LinkRow(Sym.Star, stringResource(R.string.settings_rate), stringResource(R.string.settings_rate_sub)) {
                     openWeb(context, "https://play.google.com/store/apps/details?id=" + context.packageName)
                 }
             }
 
             // ABOUT: Privacy, Terms, Sources.
             Group(stringResource(R.string.settings_about)) {
-                LinkRow(Icons.Outlined.Lock, stringResource(R.string.settings_privacy)) { openWeb(context, "https://ancienttrees.app/privacy") }
+                LinkRow(Sym.Lock, stringResource(R.string.settings_privacy)) { openWeb(context, "https://ancienttrees.app/privacy") }
                 RowDivider(48.dp)
-                LinkRow(Icons.AutoMirrored.Outlined.InsertDriveFile, stringResource(R.string.settings_terms)) { openWeb(context, "https://ancienttrees.app/terms") }
+                LinkRow(Sym.Draft, stringResource(R.string.settings_terms)) { openWeb(context, "https://ancienttrees.app/terms") }
                 RowDivider(48.dp)
-                SettingsRow(Icons.Outlined.Description, stringResource(R.string.settings_sources)) { showingLegal = true }
+                SettingsRow(Sym.Description, stringResource(R.string.settings_sources)) { showingLegal = true }
             }
 
             // ACCOUNT: Sign out, then Delete account, grey, opening the screen that explains.
@@ -337,7 +320,7 @@ private fun Identity(host: SettingsHost) {
             if (host.signedIn) {
                 Text((host.email ?: "?").take(1).uppercase(), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 24.sp, color = brand.moss)
             } else {
-                Icon(Icons.Outlined.Person, null, tint = brand.inkSoft, modifier = Modifier.size(28.dp))
+                Icon(Sym.Person, null, tint = brand.inkSoft, modifier = Modifier.size(28.dp))
             }
         }
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
@@ -352,7 +335,7 @@ private fun Identity(host: SettingsHost) {
                 Text(stringResource(R.string.signin_prompt), fontSize = 13.sp, color = brand.inkSoft)
             }
         }
-        Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+        Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
     }
 }
 
@@ -381,7 +364,7 @@ private fun SettingsRow(
     icon: ImageVector,
     title: String,
     value: String? = null,
-    trailing: ImageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+    trailing: ImageVector = Sym.ChevronRight,
     tag: String? = null,
     onClick: () -> Unit,
 ) {
@@ -404,7 +387,7 @@ private fun LinkRow(icon: ImageVector, title: String, subtitle: String? = null, 
             Text(title, fontSize = 16.sp, color = brand.ink)
             subtitle?.let { Text(it, fontSize = 13.sp, color = brand.inkSoft) }
         }
-        Icon(Icons.Outlined.NorthEast, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(14.dp))
+        Icon(Sym.NorthEast, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(14.dp))
     }
 }
 
@@ -413,7 +396,7 @@ private fun PlainRow(title: String, color: androidx.compose.ui.graphics.Color, c
     val brand = Brand.colors
     RowFrame(onClick, tag) {
         Text(title, fontSize = 16.sp, color = color, modifier = Modifier.weight(1f))
-        if (chevron) Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(16.dp))
+        if (chevron) Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(16.dp))
     }
 }
 
@@ -441,7 +424,7 @@ fun PushedBar(title: String, onBack: () -> Unit, trailing: (@Composable () -> Un
             Modifier.align(Alignment.CenterStart).size(44.dp).clickable(role = Role.Button, onClick = onBack),
             contentAlignment = Alignment.Center,
         ) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, stringResource(R.string.back), tint = brand.ink, modifier = Modifier.size(22.dp))
+            Icon(Sym.ArrowBack, stringResource(R.string.back), tint = brand.ink, modifier = Modifier.size(22.dp))
         }
         Text(
             title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, maxLines = 1,
@@ -538,7 +521,7 @@ private fun DeleteAccountSheet(host: SettingsHost, onDismiss: () -> Unit) {
                 value = typed,
                 onValueChange = { typed = it },
                 singleLine = true,
-                textStyle = TextStyle(fontSize = 16.sp, color = brand.ink),
+                textStyle = sfStyle(fontSize = 16.sp, color = brand.ink),
                 keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Characters, autoCorrectEnabled = false, imeAction = ImeAction.Done),
                 // RETURN PUTS THE KEYBOARD AWAY, so the button under it can be reached.
                 keyboardActions = KeyboardActions(onDone = { focus.clearFocus() }),

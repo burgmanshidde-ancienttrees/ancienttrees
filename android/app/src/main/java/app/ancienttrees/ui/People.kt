@@ -46,17 +46,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.MoreHoriz
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Verified
-import androidx.compose.material.icons.outlined.Check
-import androidx.compose.material.icons.outlined.Lock
-import androidx.compose.material.icons.outlined.Search
-import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -326,7 +317,7 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
                             .padding(horizontal = 20.dp, vertical = 6.dp).testTag("people-share"),
                     ) {
                         Box(Modifier.size(32.dp), contentAlignment = Alignment.Center) {
-                            Icon(Icons.Outlined.Share, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                            Icon(Sym.Share, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                         }
                         Text(stringResource(R.string.people_share), fontSize = 16.sp, color = brand.ink)
                     }
@@ -385,7 +376,7 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
             BrandSheet(
                 title = stringResource(R.string.people_thanks),
                 message = stringResource(R.string.people_thanks_body),
-                icon = Icons.Outlined.Check,
+                icon = Sym.Check,
                 onDismiss = { reporting = null },
                 buttons = listOf(SheetButton(stringResource(R.string.done), SheetKind.PRIMARY) { reporting = null }),
             )
@@ -438,7 +429,7 @@ private fun SearchField(query: String, onChange: (String) -> Unit) {
         value = query,
         onValueChange = onChange,
         singleLine = true,
-        textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+        textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
         keyboardOptions = KeyboardOptions(autoCorrectEnabled = false),
         modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(top = 4.dp, bottom = 10.dp),
         decorationBox = { inner ->
@@ -446,7 +437,7 @@ private fun SearchField(query: String, onChange: (String) -> Unit) {
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.fillMaxWidth().height(40.dp).background(brand.surfaceMuted, RoundedCornerShape(50)).padding(horizontal = 12.dp),
             ) {
-                Icon(Icons.Outlined.Search, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
+                Icon(Sym.Search, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
                 Spacer(Modifier.size(6.dp))
                 Box(Modifier.weight(1f)) {
                     if (query.isEmpty()) Text(stringResource(R.string.people_search), fontSize = 17.sp, color = brand.inkSoft.copy(alpha = 0.8f))
@@ -485,7 +476,7 @@ private fun PersonRow(
                 Avatar(p.avatarUrl, p.displayName, 40, initialSize = 16)
                 if (seal) {
                     Box(Modifier.align(Alignment.BottomEnd).offset(3.dp, 3.dp).background(brand.ground, CircleShape)) {
-                        Icon(Icons.Filled.Verified, stringResource(R.string.people_ambassador), tint = brand.moss, modifier = Modifier.size(15.dp))
+                        Icon(Sym.VerifiedFill, stringResource(R.string.people_ambassador), tint = brand.moss, modifier = Modifier.size(15.dp))
                     }
                 }
             }
@@ -521,7 +512,7 @@ private fun PersonRow(
         Box(
             Modifier.size(44.dp).clickable(role = Role.Button, onClick = onMore).semantics { contentDescription = more }.testTag("person-more"),
             contentAlignment = Alignment.Center,
-        ) { Icon(Icons.Filled.MoreHoriz, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp)) }
+        ) { Icon(Sym.MoreVert, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp)) }
     }
 }
 
@@ -554,7 +545,7 @@ fun Avatar(url: String?, name: String?, size: Int, initialSize: Int) {
         when {
             url != null -> RemoteImage(url, null, Modifier.fillMaxSize(), placeholder = false)
             first != null -> Text(first.uppercase(), fontFamily = BrandFace, fontWeight = FontWeight.Black, fontSize = initialSize.sp, color = brand.moss)
-            else -> Icon(Icons.Filled.Person, null, tint = brand.moss.copy(alpha = 0.6f), modifier = Modifier.size((size * 0.4).dp))
+            else -> Icon(Sym.PersonFill, null, tint = brand.moss.copy(alpha = 0.6f), modifier = Modifier.size((size * 0.4).dp))
         }
     }
 }
@@ -655,7 +646,7 @@ private fun PersonInner(host: PeopleHost, userId: String, onBack: () -> Unit) {
                 }
             } else if (loaded) {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically, modifier = Modifier.testTag("person-private")) {
-                    Icon(Icons.Outlined.Lock, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
+                    Icon(Sym.Lock, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
                     Text(stringResource(R.string.person_private), fontSize = 16.sp, color = brand.inkSoft)
                 }
             }

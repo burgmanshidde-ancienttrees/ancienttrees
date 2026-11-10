@@ -12,7 +12,10 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.unit.sp
 import app.ancienttrees.R
 
 private val Light = lightColorScheme(
@@ -44,6 +47,38 @@ val BrandFace = FontFamily(
     Font(R.font.gabarito_bold, FontWeight.Bold),
 )
 
+/**
+ * The text face: Inter (OFL, android/FONT-LICENSE-INTER-OFL.txt), the open face
+ * closest to SF Pro, which Apple licenses for its own platforms only. Every text
+ * that is not Gabarito sets in it, tracked as SF tracks (Text.kt).
+ */
+val TextFace = FontFamily(
+    Font(R.font.inter_regular, FontWeight.Normal),
+    Font(R.font.inter_medium, FontWeight.Medium),
+    Font(R.font.inter_semibold, FontWeight.SemiBold),
+    Font(R.font.inter_bold, FontWeight.Bold),
+)
+
+/**
+ * Material's type scale with Inter in every style and SwiftUI's line: the
+ * font's own line height and no added letter spacing (Text.kt adds SF's). The
+ * default text is SwiftUI's .body, 17.
+ */
+private val Type = androidx.compose.material3.Typography().run {
+    fun TextStyle.sf() = copy(
+        fontFamily = TextFace,
+        letterSpacing = TextUnit.Unspecified,
+        lineHeight = TextUnit.Unspecified,
+    )
+    copy(
+        displayLarge = displayLarge.sf(), displayMedium = displayMedium.sf(), displaySmall = displaySmall.sf(),
+        headlineLarge = headlineLarge.sf(), headlineMedium = headlineMedium.sf(), headlineSmall = headlineSmall.sf(),
+        titleLarge = titleLarge.sf(), titleMedium = titleMedium.sf(), titleSmall = titleSmall.sf(),
+        bodyLarge = bodyLarge.sf().copy(fontSize = 17.sp), bodyMedium = bodyMedium.sf(), bodySmall = bodySmall.sf(),
+        labelLarge = labelLarge.sf(), labelMedium = labelMedium.sf(), labelSmall = labelSmall.sf(),
+    )
+}
+
 /** The iPhone's Brand palette (BrandColors.kt, generated from Style.swift). */
 val LocalBrand = staticCompositionLocalOf { LightBrand }
 
@@ -56,7 +91,7 @@ object Brand {
 fun AncientTreesTheme(content: @Composable () -> Unit) {
     val dark = isSystemInDarkTheme()
     CompositionLocalProvider(LocalBrand provides if (dark) DarkBrand else LightBrand) {
-        MaterialTheme(colorScheme = if (dark) Dark else Light, content = content)
+        MaterialTheme(colorScheme = if (dark) Dark else Light, typography = Type, content = content)
     }
 }
 

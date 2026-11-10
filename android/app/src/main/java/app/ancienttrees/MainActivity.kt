@@ -1,5 +1,7 @@
 package app.ancienttrees
 
+import app.ancienttrees.ui.Sym
+
 import android.Manifest
 import android.annotation.SuppressLint
 import android.location.LocationListener
@@ -20,7 +22,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
-import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -771,7 +772,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                             scope.launch { saves.uncollect(tree.id) }
                             snack = app.ancienttrees.ui.Snack(
                                 uncollectedText,
-                                icon = androidx.compose.material.icons.Icons.Outlined.Verified,
+                                icon = Sym.Verified,
                                 onUndo = { scope.launch { if (tree.id !in saves.collected) saves.recollect(tree.id, at) } },
                             )
                         },
@@ -922,7 +923,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     onMerged = { t ->
                         draft = null
                         saves.noteCollected(t.id)
-                        snack = app.ancienttrees.ui.Snack(mergedText, icon = androidx.compose.material.icons.Icons.Outlined.Verified)
+                        snack = app.ancienttrees.ui.Snack(mergedText, icon = Sym.Verified)
                         scope.launch { myTrees.load(force = true) }
                     },
                     onCity = { slug, name ->

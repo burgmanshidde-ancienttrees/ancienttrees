@@ -33,13 +33,10 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Email
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -197,7 +194,7 @@ private fun Ask(account: Account, reason: SignInReason) {
                     value = address,
                     onValueChange = { address = it },
                     singleLine = true,
-                    textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+                    textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
                     cursorBrush = SolidColor(brand.moss),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email, imeAction = ImeAction.Go, autoCorrectEnabled = false),
                     keyboardActions = KeyboardActions(onGo = { send() }),
@@ -254,7 +251,7 @@ private fun CheckYourEmail(account: Account, to: String) {
         verticalArrangement = Arrangement.spacedBy(8.dp),
         modifier = Modifier.fillMaxWidth().padding(horizontal = 22.dp).padding(top = 6.dp),
     ) {
-        SheetIconTile(Icons.Filled.Email)
+        SheetIconTile(Sym.MailFill)
         Spacer(Modifier.height(8.dp))
         Text(
             stringResource(R.string.signin_check_title), fontFamily = BrandFace, fontWeight = FontWeight.Bold,

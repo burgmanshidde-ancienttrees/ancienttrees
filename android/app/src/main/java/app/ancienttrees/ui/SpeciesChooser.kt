@@ -35,12 +35,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.outlined.AddCircleOutline
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -116,7 +111,7 @@ fun SpeciesChooser(
                 SpeciesListRow(onClick = { onPick(name); onClose() }) {
                     SpeciesMark(name, brand.moss, Modifier.size(26.dp))
                     SpeciesRowName(catalogue, name, hit, modifier = Modifier.weight(1f))
-                    if (isCurrent(name)) Icon(Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                    if (isCurrent(name)) Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                     else Text("${counts[name] ?: 0}", fontSize = 15.sp, color = brand.inkSoft)
                 }
             }
@@ -131,7 +126,7 @@ fun SpeciesChooser(
                     SpeciesListRow(onClick = { onPick(row.species); onClose() }) {
                         SpeciesMark(row.c, brand.moss, Modifier.size(26.dp))
                         SpeciesRowName(catalogue, row.c, hit, latin = if (row.isGenus) row.l + " sp." else row.l, modifier = Modifier.weight(1f))
-                        if (isCurrent(row.species) || isCurrent(row.c)) Icon(Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                        if (isCurrent(row.species) || isCurrent(row.c)) Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                     }
                 }
             }
@@ -144,7 +139,7 @@ fun SpeciesChooser(
                     footer = { stringResource(R.string.cf_use_typed_foot) },
                 ) {
                     SpeciesListRow(onClick = { onPick(typed); onClose() }) {
-                        Icon(Icons.Outlined.AddCircleOutline, null, tint = brand.moss, modifier = Modifier.size(26.dp))
+                        Icon(Sym.AddCircle, null, tint = brand.moss, modifier = Modifier.size(26.dp))
                         Text(stringResource(R.string.cf_use_typed, typed), fontSize = 17.sp, color = brand.ink)
                     }
                 }
@@ -179,7 +174,7 @@ internal fun SheetSearchField(query: String, onQuery: (String) -> Unit, prompt: 
         value = query,
         onValueChange = onQuery,
         singleLine = true,
-        textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+        textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
         cursorBrush = SolidColor(brand.moss),
         modifier = modifier
             .imePadding()
@@ -197,7 +192,7 @@ internal fun SheetSearchField(query: String, onQuery: (String) -> Unit, prompt: 
                     .background(brand.surface, RoundedCornerShape(50))
                     .padding(horizontal = 16.dp),
             ) {
-                Icon(Icons.Filled.Search, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+                Icon(Sym.Search, null, tint = brand.ink, modifier = Modifier.size(20.dp))
                 Box(Modifier.weight(1f)) {
                     if (query.isEmpty()) Text(prompt, fontSize = 17.sp, color = brand.inkSoft)
                     inner()

@@ -38,16 +38,10 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.outlined.Public
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -158,7 +152,7 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
                     when {
                         p != null -> Image(p.asImageBitmap(), null, contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
                         url != null -> RemoteImage(url, null, Modifier.fillMaxSize(), placeholder = false)
-                        else -> Icon(Icons.Filled.Person, null, tint = brand.moss.copy(alpha = 0.6f), modifier = Modifier.size(44.dp))
+                        else -> Icon(Sym.PersonFill, null, tint = brand.moss.copy(alpha = 0.6f), modifier = Modifier.size(44.dp))
                     }
                 }
                 Text(
@@ -181,7 +175,7 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
                         value = name,
                         onValueChange = { name = it },
                         singleLine = true,
-                        textStyle = TextStyle(fontSize = 17.sp, color = brand.ink, textAlign = TextAlign.End),
+                        textStyle = sfStyle(fontSize = 17.sp, color = brand.ink, textAlign = TextAlign.End),
                         keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Words),
                         modifier = Modifier.weight(1f),
                         decorationBox = { inner ->
@@ -200,7 +194,7 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
                 ) {
                     Text(stringResource(R.string.editor_country), fontSize = 17.sp, color = brand.ink, modifier = Modifier.weight(1f))
                     Text(country?.let(::countryRow) ?: stringResource(R.string.editor_dont_show), fontSize = 17.sp, color = brand.inkSoft)
-                    Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+                    Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
                 }
             }
             failed?.let { why ->
@@ -241,7 +235,7 @@ private fun PickRow(label: String, on: Boolean, onClick: () -> Unit) {
         modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp).clickable(role = Role.Button, onClick = onClick).padding(horizontal = 20.dp),
     ) {
         Text(label, fontSize = 17.sp, color = brand.ink, modifier = Modifier.weight(1f))
-        if (on) Icon(Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+        if (on) Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(18.dp))
     }
 }
 
@@ -285,7 +279,7 @@ private fun PrivacyInner(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.fillMaxWidth().brandCard().heightIn(min = 48.dp).padding(horizontal = 16.dp).testTag("profile-public"),
             ) {
-                Icon(Icons.Outlined.Public, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                Icon(Sym.Public, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                 Text(stringResource(R.string.privacy_public_profile), fontSize = 16.sp, color = brand.ink, modifier = Modifier.weight(1f))
                 Switch(
                     checked = isPublic,
@@ -322,7 +316,7 @@ fun MakePublicSheet(onYes: () -> Unit, onNo: () -> Unit) {
     BrandSheet(
         title = stringResource(R.string.public_ask_title),
         message = stringResource(R.string.public_ask_body),
-        icon = Icons.Outlined.Public,
+        icon = Sym.Public,
         points = listOf(
             stringResource(R.string.public_ask_1),
             stringResource(R.string.public_ask_2),

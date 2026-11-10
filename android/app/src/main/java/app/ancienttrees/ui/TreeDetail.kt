@@ -50,41 +50,11 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.automirrored.filled.DirectionsWalk
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.automirrored.outlined.HelpOutline
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Bookmark
-import androidx.compose.material.icons.outlined.BookmarkBorder
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.ConfirmationNumber
-import androidx.compose.material.icons.filled.Eco
-import androidx.compose.material.icons.filled.OpenInFull
-import androidx.compose.material.icons.filled.PhotoCamera
-import androidx.compose.material.icons.filled.ThumbUp
-import androidx.compose.material.icons.filled.Tram
-import androidx.compose.material.icons.filled.TurnRight
-import androidx.compose.material.icons.filled.Verified
-import androidx.compose.material.icons.outlined.Cancel
-import androidx.compose.material.icons.outlined.ChatBubbleOutline
-import androidx.compose.material.icons.outlined.EditNote
-import androidx.compose.material.icons.outlined.Feedback
-import androidx.compose.material.icons.outlined.IosShare
-import androidx.compose.material.icons.outlined.LocationCity
-import androidx.compose.material.icons.outlined.LocationOff
-import androidx.compose.material.icons.outlined.PhotoCamera
-import androidx.compose.material.icons.outlined.PhotoLibrary
-import androidx.compose.material.icons.outlined.Public
-import androidx.compose.material.icons.outlined.ThumbUp
-import androidx.compose.material.icons.outlined.Visibility
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -377,18 +347,18 @@ private fun TreeDetailInner(
     }
     if (choosingCollect) {
         BrandSheet(
-            icon = if (collected) Icons.Filled.Verified else Icons.Outlined.PhotoCamera,
+            icon = if (collected) Sym.VerifiedFill else Sym.PhotoCamera,
             title = if (collected) stringResource(R.string.collected_title, tree.name) else stringResource(R.string.collect_title, tree.name),
             message = if (collected) actions.collectedAt?.let {
                 stringResource(R.string.collected_on, java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG).format(java.util.Date(it)))
             } else stringResource(R.string.collect_lead),
             onDismiss = { choosingCollect = false },
             buttons = listOf(
-                SheetButton(stringResource(R.string.collect_camera), SheetKind.PRIMARY, Icons.Outlined.PhotoCamera) {
+                SheetButton(stringResource(R.string.collect_camera), SheetKind.PRIMARY, Sym.PhotoCamera) {
                     choosingCollect = false
                     actions.onCollect()
                 },
-                SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Icons.Outlined.PhotoLibrary) {
+                SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Sym.PhotoLibrary) {
                     choosingCollect = false
                     actions.onCollectFromLibrary()
                 },
@@ -458,7 +428,7 @@ private fun Hero(
                     .semantics { contentDescription = full },
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(Icons.Filled.OpenInFull, null, tint = brand.ink, modifier = Modifier.size(16.dp))
+                Icon(Sym.OpenInFull, null, tint = brand.ink, modifier = Modifier.size(16.dp))
             }
         }
         photo != null -> Box(Modifier.fillMaxWidth().height(heroHeight)) {
@@ -573,7 +543,7 @@ private fun AddPhotoPage(onAdd: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Icon(Icons.Outlined.PhotoCamera, null, tint = brand.inkSoft.copy(alpha = 0.45f), modifier = Modifier.padding(bottom = 4.dp).size(32.dp))
+        Icon(Sym.PhotoCamera, null, tint = brand.inkSoft.copy(alpha = 0.45f), modifier = Modifier.padding(bottom = 4.dp).size(32.dp))
         Spacer(Modifier.height(6.dp))
         Text(stringResource(R.string.your_photo_here), fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
         Spacer(Modifier.height(6.dp))
@@ -614,7 +584,7 @@ private fun AddPhotoButton(onClick: () -> Unit) {
             .semantics { contentDescription = label }
             .padding(horizontal = 14.dp),
     ) {
-        Icon(Icons.Filled.PhotoCamera, null, tint = brand.onMoss, modifier = Modifier.size(16.dp))
+        Icon(Sym.PhotoCameraFill, null, tint = brand.onMoss, modifier = Modifier.size(16.dp))
         Text(stringResource(R.string.add_a_photo), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.onMoss)
     }
 }
@@ -636,7 +606,7 @@ private fun AddPhotoPill(enabled: Boolean, onClick: () -> Unit) {
             horizontalArrangement = Arrangement.spacedBy(6.dp),
             modifier = Modifier.height(36.dp).background(brand.mossTint, CircleShape).padding(horizontal = 14.dp),
         ) {
-            Icon(Icons.Outlined.PhotoCamera, null, tint = brand.moss, modifier = Modifier.size(16.dp))
+            Icon(Sym.PhotoCamera, null, tint = brand.moss, modifier = Modifier.size(16.dp))
             Text(stringResource(R.string.add_a_photo), fontSize = 14.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
         }
     }
@@ -669,7 +639,7 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                 .testTag("back-to-map"),
             contentAlignment = Alignment.Center,
         ) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+            Icon(Sym.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(22.dp))
         }
         Spacer(Modifier.weight(1f))
         Row(
@@ -681,7 +651,7 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                 Modifier.size(48.dp, 44.dp).clickable(role = Role.Button, onClick = onShare).semantics { contentDescription = share },
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(Icons.Outlined.IosShare, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                Icon(Sym.ShareSemibold, null, tint = brand.moss, modifier = Modifier.size(22.dp))
             }
             val report = stringResource(R.string.report_problem)
             Box {
@@ -689,14 +659,14 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                     Modifier.size(48.dp, 44.dp).clickable(role = Role.Button) { menu = true }.semantics { contentDescription = report },
                     contentAlignment = Alignment.Center,
                 ) {
-                    Icon(Icons.Outlined.Feedback, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                    Icon(Sym.FeedbackSemibold, null, tint = brand.moss, modifier = Modifier.size(22.dp))
                 }
                 DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {
                     val items = listOf(
-                        Triple(R.string.menu_wrong, R.string.opening_wrong, Icons.Outlined.Feedback),
-                        Triple(R.string.menu_pin, R.string.opening_pin, Icons.Outlined.LocationOff),
-                        Triple(R.string.menu_which, R.string.opening_which, Icons.AutoMirrored.Outlined.HelpOutline),
-                        Triple(R.string.menu_gone, R.string.opening_gone, Icons.Outlined.Cancel),
+                        Triple(R.string.menu_wrong, R.string.opening_wrong, Sym.Feedback),
+                        Triple(R.string.menu_pin, R.string.opening_pin, Sym.LocationOff),
+                        Triple(R.string.menu_which, R.string.opening_which, Sym.Help),
+                        Triple(R.string.menu_gone, R.string.opening_gone, Sym.Cancel),
                     )
                     for ((label, opening, icon) in items) {
                         val opens = stringResource(opening)
@@ -806,7 +776,7 @@ private fun WorthItButton(tree: Tree, votes: MyVotes, counts: VoteCounts, signed
             .semantics { contentDescription = label },
     ) {
         val tint = if (cast) brand.moss else brand.ink
-        Icon(if (cast) Icons.Filled.ThumbUp else Icons.Outlined.ThumbUp, null, tint = tint, modifier = Modifier.size(15.dp))
+        Icon(if (cast) Sym.ThumbUpFill else Sym.ThumbUp, null, tint = tint, modifier = Modifier.size(15.dp))
         counts.up(tree.id)?.let { n ->
             Text("$n", fontSize = 15.sp, color = tint, textDecoration = TextDecoration.Underline)
         }
@@ -922,7 +892,7 @@ private fun SpeciesColumn(tree: Tree, actions: TreePageActions) {
                     maxLines = 2,
                     modifier = Modifier.weight(1f, fill = false),
                 )
-                Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.moss, modifier = Modifier.size(16.dp))
+                Icon(Sym.ChevronRight, null, tint = brand.moss, modifier = Modifier.size(16.dp))
             }
         }
     }
@@ -969,7 +939,7 @@ private fun TicketBand(tree: Tree) {
             Modifier.fillMaxWidth().background(TicketBlue.copy(alpha = 0.10f)).padding(horizontal = 16.dp, vertical = 12.dp),
             horizontalArrangement = Arrangement.spacedBy(10.dp),
         ) {
-            Icon(Icons.Filled.ConfirmationNumber, null, tint = TicketBlue, modifier = Modifier.padding(top = 1.dp).size(16.dp))
+            Icon(Sym.ConfirmationNumberFill, null, tint = TicketBlue, modifier = Modifier.padding(top = 1.dp).size(16.dp))
             Column(verticalArrangement = Arrangement.spacedBy(3.dp)) {
                 Text(stringResource(R.string.ticket_needed), fontSize = 13.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
                 if (tree.access.isNotEmpty()) Text(tree.access, fontSize = 13.sp, color = brand.ink)
@@ -1069,11 +1039,11 @@ private fun SeasonsRow(tree: Tree, onOpen: (Int) -> Unit, onAdd: () -> Unit) {
                         ) {
                             if (isNow) {
                                 Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(3.dp)) {
-                                    Icon(Icons.Outlined.PhotoCamera, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                                    Icon(Sym.PhotoCamera, null, tint = brand.moss, modifier = Modifier.size(22.dp))
                                     Text(stringResource(R.string.season_now), fontSize = 12.sp, fontWeight = FontWeight.Bold, color = brand.moss)
                                 }
                             } else {
-                                Icon(Icons.Filled.Add, null, tint = brand.inkSoft.copy(alpha = 0.7f), modifier = Modifier.size(22.dp))
+                                Icon(Sym.Add, null, tint = brand.inkSoft.copy(alpha = 0.7f), modifier = Modifier.size(22.dp))
                             }
                         }
                         Text(
@@ -1088,7 +1058,7 @@ private fun SeasonsRow(tree: Tree, onOpen: (Int) -> Unit, onAdd: () -> Unit) {
         }
         if (filled == 4) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.padding(top = 2.dp)) {
-                Icon(Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(16.dp))
+                Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(16.dp))
                 Text(stringResource(R.string.seasons_all), fontSize = 14.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
             }
         }
@@ -1146,7 +1116,7 @@ private fun NotesSection(tree: Tree, account: Account, signedIn: Boolean, action
                     .padding(top = 20.dp, bottom = 16.dp),
                 verticalArrangement = Arrangement.spacedBy(4.dp),
             ) {
-                Icon(Icons.Outlined.ChatBubbleOutline, null, tint = brand.inkSoft.copy(alpha = 0.45f), modifier = Modifier.padding(bottom = 6.dp).size(24.dp))
+                Icon(Sym.ChatBubble, null, tint = brand.inkSoft.copy(alpha = 0.45f), modifier = Modifier.padding(bottom = 6.dp).size(24.dp))
                 Text(stringResource(R.string.notes_none), fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
                 Text(stringResource(R.string.notes_none_sub), fontSize = 14.sp, color = brand.inkSoft)
                 Box(Modifier.padding(top = 10.dp)) {
@@ -1209,7 +1179,7 @@ private fun NotesSection(tree: Tree, account: Account, signedIn: Boolean, action
                         value = text,
                         onValueChange = { text = it },
                         enabled = !saving,
-                        textStyle = TextStyle(fontSize = 16.sp, color = brand.ink),
+                        textStyle = sfStyle(fontSize = 16.sp, color = brand.ink),
                         cursorBrush = SolidColor(brand.moss),
                         modifier = Modifier.fillMaxWidth(),
                     )
@@ -1249,7 +1219,7 @@ private fun NoteCard(body: String, date: java.time.Instant, name: String, initia
                 when {
                     avatar != null -> RemoteImage(avatar, null, Modifier.fillMaxSize(), placeholder = false)
                     initial != null -> Text(initial.uppercase(), fontFamily = BrandFace, fontWeight = FontWeight.Black, fontSize = 12.sp, color = brand.onMoss)
-                    else -> Icon(Icons.Filled.Eco, null, tint = brand.moss, modifier = Modifier.size(14.dp))
+                    else -> Icon(Sym.EcoFill, null, tint = brand.moss, modifier = Modifier.size(14.dp))
                 }
             }
             Text(name, fontSize = 13.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, maxLines = 1, modifier = Modifier.weight(1f))
@@ -1272,7 +1242,7 @@ private fun NoteButton(onGrey: Boolean, edit: Boolean, onClick: () -> Unit) {
             .clickable(role = Role.Button, onClick = onClick)
             .padding(horizontal = 18.dp),
     ) {
-        Icon(Icons.Outlined.EditNote, null, tint = brand.ink, modifier = Modifier.size(18.dp))
+        Icon(Sym.EditSquare, null, tint = brand.ink, modifier = Modifier.size(18.dp))
         Text(stringResource(if (edit) R.string.note_edit else R.string.note_write), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
     }
 }
@@ -1283,9 +1253,9 @@ private fun NoteButton(onGrey: Boolean, edit: Boolean, onClick: () -> Unit) {
 private fun GettingThere(tree: Tree) {
     val brand = Brand.colors
     val rows = listOfNotNull(
-        tree.howToRecognise.trim().ifEmpty { null }?.let { it to Icons.Outlined.Visibility },
-        tree.access.trim().takeIf { it.isNotEmpty() && !tree.paidEntry && !Tree.accessPlainFree(it) }?.let { it to Icons.AutoMirrored.Filled.DirectionsWalk },
-        tree.transport.trim().ifEmpty { null }?.let { it to Icons.Filled.Tram },
+        tree.howToRecognise.trim().ifEmpty { null }?.let { it to Sym.Visibility },
+        tree.access.trim().takeIf { it.isNotEmpty() && !tree.paidEntry && !Tree.accessPlainFree(it) }?.let { it to Sym.DirectionsWalk },
+        tree.transport.trim().ifEmpty { null }?.let { it to Sym.Tram },
     )
     if (rows.isEmpty()) return
     Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
@@ -1369,7 +1339,7 @@ private fun WorthItView(tree: Tree, account: Account, signedIn: Boolean, votes: 
                     BasicTextField(
                         value = detail,
                         onValueChange = { detail = it },
-                        textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+                        textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
                         cursorBrush = SolidColor(brand.moss),
                         modifier = Modifier.fillMaxWidth(),
                     )
@@ -1413,9 +1383,9 @@ private fun DiscoverMore(tree: Tree, actions: TreePageActions) {
     Column(Modifier.padding(top = 4.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         Text(stringResource(R.string.discover_more), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = brand.ink, modifier = Modifier.semantics { heading() })
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            DiscoverChip(tree.city, Icons.Outlined.LocationCity) { actions.onGo(SearchHit.City(tree.citySlug, tree.city, tree.lat, tree.lng)) }
+            DiscoverChip(tree.city, Sym.LocationCity) { actions.onGo(SearchHit.City(tree.citySlug, tree.city, tree.lat, tree.lng)) }
             if (tree.country.isNotEmpty()) {
-                DiscoverChip(tree.country, Icons.Outlined.Public) { actions.onGo(SearchHit.Country(tree.country)) }
+                DiscoverChip(tree.country, Sym.Public) { actions.onGo(SearchHit.Country(tree.country)) }
             }
         }
     }
@@ -1474,7 +1444,7 @@ private fun BarCircle(icon: ImageVector, label: String, on: Boolean = false, tin
             .semantics { contentDescription = label },
         contentAlignment = Alignment.Center,
     ) {
-        Icon(icon, null, tint = tint, modifier = Modifier.size(22.dp))
+        Icon(icon, null, tint = tint, modifier = Modifier.size(26.dp)) // .title3, 20 point
     }
 }
 
@@ -1490,7 +1460,7 @@ internal fun BigButton(label: String, icon: ImageVector, modifier: Modifier = Mo
             .background(brand.moss, CircleShape)
             .clickable(role = Role.Button, onClick = onClick),
     ) {
-        Icon(icon, null, tint = brand.onMoss, modifier = Modifier.size(18.dp))
+        Icon(icon, null, tint = brand.onMoss, modifier = Modifier.size(21.dp)) // 16 semibold
         Spacer(Modifier.width(8.dp))
         Text(label, fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.onMoss, maxLines = 1)
     }
@@ -1517,15 +1487,15 @@ private fun ActionBar(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             val collectLabel = stringResource(if (collected) R.string.seen_it_done else R.string.seen_it)
-            val collectIcon = if (collected) Icons.Filled.Verified else Icons.Outlined.PhotoCamera
+            val collectIcon = if (collected) Sym.VerifiedFill else Sym.PhotoCameraSemibold
             val take = stringResource(R.string.take_me_there)
             if (standingHere) {
                 BigButton(collectLabel, collectIcon, Modifier.weight(1f), onCollect)
-                BarCircle(Icons.Filled.TurnRight, take, onClick = onDirections)
+                BarCircle(Sym.TurnRight, take, onClick = onDirections)
             } else {
                 BigButton(
                     if (kmAway != null) stringResource(R.string.take_me_there_far, farLabel(kmAway)) else take,
-                    Icons.Filled.TurnRight,
+                    Sym.TurnRightSemibold,
                     Modifier.weight(1f),
                     onDirections,
                 )
@@ -1534,7 +1504,7 @@ private fun ActionBar(
             // SaveHeart, inBar.
             val save = if (hearted) stringResource(R.string.saved_tap_remove, tree.name) else stringResource(R.string.save_tree, tree.name)
             BarCircle(
-                if (hearted) Icons.Filled.Bookmark else Icons.Outlined.BookmarkBorder,
+                if (hearted) Sym.BookmarkFill else Sym.Bookmark,
                 save,
                 tint = if (hearted) brand.moss else brand.inkSoft,
                 tag = "tree-save",

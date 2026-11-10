@@ -40,16 +40,7 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.TurnRight
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Settings
-import androidx.compose.material.icons.outlined.BookmarkBorder
-import androidx.compose.material.icons.outlined.Map
-import androidx.compose.material.icons.outlined.PersonAddAlt
-import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
@@ -360,8 +351,8 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
             .semantics { contentDescription = label },
         contentAlignment = Alignment.Center,
     ) {
-        Icon(Icons.Outlined.Settings, null, tint = brand.ink, modifier = Modifier.size(22.dp).graphicsLayer { alpha = 1f - progress })
-        Icon(Icons.Filled.Settings, null, tint = brand.ink, modifier = Modifier.size(22.dp).graphicsLayer { alpha = progress })
+        Icon(Sym.Settings, null, tint = brand.ink, modifier = Modifier.size(22.dp).graphicsLayer { alpha = 1f - progress })
+        Icon(Sym.SettingsFill, null, tint = brand.ink, modifier = Modifier.size(22.dp).graphicsLayer { alpha = progress })
     }
 }
 
@@ -440,7 +431,7 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                         fontSize = 24.sp,
                         color = brand.moss,
                     )
-                    else -> Icon(Icons.Filled.Person, null, tint = brand.moss.copy(alpha = 0.6f), modifier = Modifier.size(28.dp))
+                    else -> Icon(Sym.PersonFill, null, tint = brand.moss.copy(alpha = 0.6f), modifier = Modifier.size(28.dp))
                 }
             }
             Column {
@@ -493,7 +484,7 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                     .semantics { contentDescription = label },
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(Icons.Outlined.PersonAddAlt, null, tint = brand.ink, modifier = Modifier.size(22.dp))
+                Icon(Sym.PersonAdd, null, tint = brand.ink, modifier = Modifier.size(22.dp))
             }
         }
     }
@@ -702,7 +693,7 @@ private fun Named(name: String) {
 private fun WantGhost(modifier: Modifier = Modifier, mark: Boolean = true) {
     val brand = Brand.colors
     Box(modifier.fillMaxWidth().aspectRatio(3f / 4f).background(brand.ink.copy(alpha = 0.06f)), contentAlignment = Alignment.Center) {
-        if (mark) Icon(Icons.Outlined.BookmarkBorder, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(26.dp))
+        if (mark) Icon(Sym.Bookmark, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(26.dp))
     }
 }
 
@@ -732,7 +723,7 @@ private fun WantInvite(showMap: () -> Unit) {
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Icon(Icons.Outlined.Map, null, tint = brand.ink, modifier = Modifier.size(18.dp))
+        Icon(Sym.Map, null, tint = brand.ink, modifier = Modifier.size(18.dp))
         Spacer(Modifier.width(8.dp))
         Text(stringResource(R.string.discover_find_near), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.ink)
     }
@@ -787,7 +778,7 @@ private fun Mission(catalogue: Catalogue, origin: Here, located: Boolean, wishli
             )
             Text(stringResource(R.string.mt_mission_body), fontSize = 15.sp, color = brand.inkSoft)
             TreeCard(t, onOpen = { actions.openTree(t) })
-            SheetButtonView(SheetButton(stringResource(R.string.mt_show_way), SheetKind.SECONDARY, Icons.Filled.TurnRight) { actions.openTree(t) })
+            SheetButtonView(SheetButton(stringResource(R.string.mt_show_way), SheetKind.SECONDARY, Sym.TurnRight) { actions.openTree(t) })
         }
     } else {
         Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {

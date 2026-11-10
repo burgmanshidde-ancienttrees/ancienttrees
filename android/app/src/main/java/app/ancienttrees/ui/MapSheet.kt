@@ -21,8 +21,6 @@ import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material3.Icon
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.semantics.contentDescription
@@ -289,7 +287,7 @@ fun MapSheet(
                         contentAlignment = Alignment.Center,
                     ) {
                         Box(Modifier.size(36.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
-                            Icon(Icons.Filled.KeyboardArrowDown, null, tint = brand.ink, modifier = Modifier.size(22.dp))
+                            Icon(Sym.KeyboardArrowDown, null, tint = brand.ink, modifier = Modifier.size(22.dp))
                         }
                     }
                 }

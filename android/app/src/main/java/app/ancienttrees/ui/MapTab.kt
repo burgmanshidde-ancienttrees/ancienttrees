@@ -40,21 +40,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Close
-import androidx.compose.material.icons.filled.Map
-import androidx.compose.material.icons.filled.NearMe
-import androidx.compose.material.icons.filled.PhotoCamera
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.outlined.BookmarkBorder
-import androidx.compose.material.icons.outlined.ConfirmationNumber
-import androidx.compose.material.icons.outlined.Eco
-import androidx.compose.material.icons.outlined.IosShare
-import androidx.compose.material.icons.outlined.LocationOff
-import androidx.compose.material.icons.outlined.Park
-import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
@@ -451,7 +437,7 @@ fun MapTab(
                                     PlainResultRow(
                                         name = n.name,
                                         sub = "${far(Geo.km(focus.lat, focus.lng, n.lat, n.lng))} · ${n.city}",
-                                        icon = Icons.Outlined.Park,
+                                        icon = Sym.Park,
                                         inset = 0,
                                         onClick = { onOpen(n) },
                                     )
@@ -657,7 +643,7 @@ internal fun TreePlaceHeader(tree: Tree, onShare: () -> Unit, onClose: () -> Uni
         horizontalArrangement = Arrangement.spacedBy(12.dp),
         modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).offset(y = (-14).dp).padding(bottom = 2.dp),
     ) {
-        PlaceCircle(Icons.Outlined.IosShare, "Share ${tree.name}", onShare)
+        PlaceCircle(Sym.Share, "Share ${tree.name}", onShare)
         Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
                 tree.name,
@@ -674,7 +660,7 @@ internal fun TreePlaceHeader(tree: Tree, onShare: () -> Unit, onClose: () -> Uni
                 Text(meta, fontSize = 15.sp, color = brand.inkSoft, maxLines = 1, overflow = TextOverflow.Ellipsis)
             }
         }
-        PlaceCircle(Icons.Filled.Close, "Close", onClose)
+        PlaceCircle(Sym.Close, "Close", onClose)
     }
 }
 
@@ -710,7 +696,7 @@ private fun SearchField(place: String?, onOpen: () -> Unit, onClear: () -> Unit,
                 .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen)
                 .padding(horizontal = 16.dp),
         ) {
-            Icon(Icons.Filled.Search, null, tint = brand.ink, modifier = Modifier.size(22.dp))
+            Icon(Sym.SearchSemibold, null, tint = brand.ink, modifier = Modifier.size(22.dp))
             Text(
                 place ?: SEARCH_PLACEHOLDER,
                 fontSize = 16.sp,
@@ -733,7 +719,7 @@ private fun SearchField(place: String?, onOpen: () -> Unit, onClear: () -> Unit,
                     .semantics { contentDescription = "Clear" },
             ) {
                 Box(Modifier.size(24.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
-                    Icon(Icons.Filled.Close, null, tint = brand.inkSoft, modifier = Modifier.size(13.dp))
+                    Icon(Sym.Close, null, tint = brand.inkSoft, modifier = Modifier.size(15.dp))
                 }
             }
         }
@@ -756,10 +742,10 @@ private fun FilterRow(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         modifier = modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal = 16.dp),
     ) {
-        FilterChip("Want to visit", Icons.Outlined.BookmarkBorder, filters.favouritesOnly, onFavourites)
-        FilterChip("Collected", Icons.Outlined.Verified, filters.collectedOnly, onCollected)
-        FilterChip(filters.species ?: "Species", Icons.Outlined.Eco, filters.species != null, onSpecies)
-        FilterChip("Free to visit", Icons.Outlined.ConfirmationNumber, filters.freeOnly, onFree)
+        FilterChip("Want to visit", Sym.Bookmark, filters.favouritesOnly, onFavourites)
+        FilterChip("Collected", Sym.Verified, filters.collectedOnly, onCollected)
+        FilterChip(filters.species ?: "Species", Sym.Eco, filters.species != null, onSpecies)
+        FilterChip("Free to visit", Sym.ConfirmationNumber, filters.freeOnly, onFree)
     }
 }
 
@@ -803,7 +789,7 @@ private fun MapPill(onClick: () -> Unit) {
             .clickable(role = Role.Button, onClick = onClick)
             .padding(horizontal = 18.dp, vertical = 11.dp),
     ) {
-        Icon(Icons.Filled.Map, null, tint = brand.ink, modifier = Modifier.size(18.dp))
+        Icon(Sym.MapFill, null, tint = brand.ink, modifier = Modifier.size(18.dp))
         Text("Map", fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 15.sp, color = brand.ink)
     }
 }
@@ -821,7 +807,7 @@ internal fun RecentreButton(onClick: () -> Unit, modifier: Modifier = Modifier) 
             .clickable(role = Role.Button, onClick = onClick)
             .semantics { contentDescription = "Back to my location" },
     ) {
-        Icon(Icons.Filled.NearMe, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+        Icon(Sym.NearMeFill, null, tint = brand.moss, modifier = Modifier.size(22.dp))
     }
 }
 
@@ -839,7 +825,7 @@ private fun LocationOffChip(refused: Boolean, onClick: () -> Unit, modifier: Mod
             .clickable(role = Role.Button, onClick = onClick)
             .padding(horizontal = 14.dp),
     ) {
-        Icon(Icons.Outlined.LocationOff, null, tint = brand.ink, modifier = Modifier.size(16.dp))
+        Icon(Sym.LocationOff, null, tint = brand.ink, modifier = Modifier.size(16.dp))
         Text("Location off", fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
         Text("·", fontSize = 15.sp, color = brand.inkSoft)
         Text(if (refused) "Turn on location" else "Use my location", fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
@@ -866,7 +852,7 @@ private fun ArrivalCard(tree: Tree, collected: Boolean, onCollect: () -> Unit) {
                 .clickable(role = Role.Button, onClick = onCollect)
                 .padding(vertical = 13.dp),
         ) {
-            Icon(if (collected) Icons.Outlined.Verified else Icons.Filled.PhotoCamera, null, tint = Color.White, modifier = Modifier.size(16.dp))
+            Icon(if (collected) Sym.Verified else Sym.PhotoCameraFill, null, tint = Color.White, modifier = Modifier.size(16.dp))
             Spacer(Modifier.width(6.dp))
             Text(if (collected) "Collected" else "Photograph to collect", fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = Color.White)
         }
@@ -882,7 +868,7 @@ fun EmptyPlaceCard(place: String? = null, onAdd: () -> Unit) {
         modifier = Modifier.fillMaxWidth().background(brand.surfaceMuted, RoundedCornerShape(14.dp)).padding(16.dp),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            Icon(Icons.Outlined.Park, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(24.dp))
+            Icon(Sym.Park, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(24.dp))
             Text(if (place != null) "No trees mapped in $place yet" else "No trees mapped here yet", fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
             Text("Know an old tree here? Add the first one.", fontSize = 14.sp, color = brand.inkSoft)
         }
@@ -895,7 +881,7 @@ fun EmptyPlaceCard(place: String? = null, onAdd: () -> Unit) {
                 .background(brand.surface, RoundedCornerShape(50))
                 .clickable(role = Role.Button, onClick = onAdd),
         ) {
-            Icon(Icons.Filled.PhotoCamera, null, tint = brand.ink, modifier = Modifier.size(17.dp))
+            Icon(Sym.PhotoCameraFill, null, tint = brand.ink, modifier = Modifier.size(17.dp))
             Spacer(Modifier.width(6.dp))
             Text("Add a tree", fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
         }

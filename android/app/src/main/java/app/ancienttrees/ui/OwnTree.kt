@@ -44,27 +44,12 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.MoreHoriz
-import androidx.compose.material.icons.outlined.AddCircleOutline
-import androidx.compose.material.icons.outlined.CalendarMonth
-import androidx.compose.material.icons.outlined.Delete
-import androidx.compose.material.icons.outlined.Eco
-import androidx.compose.material.icons.outlined.Edit
-import androidx.compose.material.icons.outlined.IosShare
-import androidx.compose.material.icons.outlined.PhotoCamera
-import androidx.compose.material.icons.outlined.PhotoLibrary
-import androidx.compose.material.icons.outlined.Straighten
-import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -230,7 +215,7 @@ private fun OwnTreeInner(
         Column(Modifier.align(Alignment.BottomCenter).fillMaxWidth().background(brand.ground)) {
             Box(Modifier.fillMaxWidth().height(0.5.dp).background(brand.hairline))
             Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp).padding(top = 10.dp, bottom = 8.dp).navigationBarsPadding()) {
-                BigButton(stringResource(R.string.share_tree), Icons.Outlined.IosShare, Modifier.weight(1f)) {
+                BigButton(stringResource(R.string.share_tree), Sym.ShareSemibold, Modifier.weight(1f)) {
                     if (preparing) return@BigButton
                     preparing = true
                     scope.launch {
@@ -333,7 +318,7 @@ private fun MineStatus() {
         Modifier.fillMaxWidth().background(brand.moss.copy(alpha = 0.12f), RoundedCornerShape(10.dp)).padding(12.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
     ) {
-        Icon(Icons.Outlined.Verified, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+        Icon(Sym.Verified, null, tint = brand.moss, modifier = Modifier.size(20.dp))
         Column(verticalArrangement = Arrangement.spacedBy(3.dp)) {
             Text(stringResource(R.string.ot_approved), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
             Text(stringResource(R.string.ot_approved_body), fontSize = 13.sp, color = brand.inkSoft)
@@ -406,7 +391,7 @@ private fun AddValue(label: String, onClick: () -> Unit) {
         verticalAlignment = Alignment.Top,
         horizontalArrangement = Arrangement.spacedBy(4.dp),
     ) {
-        Icon(Icons.Outlined.AddCircleOutline, null, tint = brand.moss, modifier = Modifier.size(18.dp).padding(top = 2.dp))
+        Icon(Sym.AddCircle, null, tint = brand.moss, modifier = Modifier.size(18.dp).padding(top = 2.dp))
         Text(stringResource(R.string.ot_add), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.moss)
     }
 }
@@ -420,7 +405,7 @@ private fun Blank(label: String, onClick: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(5.dp),
     ) {
-        Icon(Icons.Outlined.AddCircleOutline, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+        Icon(Sym.AddCircle, null, tint = brand.moss, modifier = Modifier.size(18.dp))
         Text(label, fontSize = 15.sp, color = brand.moss)
     }
 }
@@ -467,13 +452,13 @@ private fun MorePhotos(s: OwnSighting, mine: MyTrees) {
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterVertically),
                     ) {
-                        Icon(Icons.Filled.Add, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                        Icon(Sym.Add, null, tint = brand.moss, modifier = Modifier.size(22.dp))
                         Text(stringResource(R.string.ot_add_photo), fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
                     }
                     DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {
                         DropdownMenuItem(
                             text = { Text(stringResource(R.string.collect_camera), color = brand.ink, fontSize = 16.sp) },
-                            trailingIcon = { Icon(Icons.Outlined.PhotoCamera, null, tint = brand.ink) },
+                            trailingIcon = { Icon(Sym.PhotoCamera, null, tint = brand.ink) },
                             onClick = {
                                 menu = false
                                 runCatching { camera.launch(shotUri) }
@@ -481,7 +466,7 @@ private fun MorePhotos(s: OwnSighting, mine: MyTrees) {
                         )
                         DropdownMenuItem(
                             text = { Text(stringResource(R.string.cf_choose), color = brand.ink, fontSize = 16.sp) },
-                            trailingIcon = { Icon(Icons.Outlined.PhotoLibrary, null, tint = brand.ink) },
+                            trailingIcon = { Icon(Sym.PhotoLibrary, null, tint = brand.ink) },
                             onClick = {
                                 menu = false
                                 library.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
@@ -509,7 +494,7 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
                 .clickable(role = Role.Button, onClick = onBack).semantics { contentDescription = back },
             contentAlignment = Alignment.Center,
         ) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+            Icon(Sym.ArrowBack, null, tint = brand.moss, modifier = Modifier.size(20.dp))
         }
         Spacer(Modifier.weight(1f))
         val more = stringResource(R.string.ot_more)
@@ -520,7 +505,7 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
                 contentAlignment = Alignment.Center,
             ) {
                 Box(Modifier.size(24.dp).border(1.6.dp, brand.moss, CircleShape), contentAlignment = Alignment.Center) {
-                    Icon(Icons.Filled.MoreHoriz, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+                    Icon(Sym.MoreVert, null, tint = brand.moss, modifier = Modifier.size(22.dp)) // overflow: Android's form
                 }
             }
             DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {
@@ -534,12 +519,12 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
                             go()
                         },
                     )
-                item(R.string.ot_change_name, Icons.Outlined.Edit) { onEdit(EditableField.NAME) }
-                item(R.string.ot_change_species, Icons.Outlined.Eco) { onSpecies() }
-                item(R.string.ot_change_age, Icons.Outlined.CalendarMonth) { onEdit(EditableField.AGE) }
-                item(R.string.ot_change_girth, Icons.Outlined.Straighten) { onEdit(EditableField.GIRTH) }
+                item(R.string.ot_change_name, Sym.Edit) { onEdit(EditableField.NAME) }
+                item(R.string.ot_change_species, Sym.Eco) { onSpecies() }
+                item(R.string.ot_change_age, Sym.CalendarMonth) { onEdit(EditableField.AGE) }
+                item(R.string.ot_change_girth, Sym.Straighten) { onEdit(EditableField.GIRTH) }
                 HorizontalDivider(color = brand.hairline)
-                item(R.string.ot_remove_tree, Icons.Outlined.Delete, danger = true) { onRemove() }
+                item(R.string.ot_remove_tree, Sym.Delete, danger = true) { onRemove() }
             }
         }
     }
@@ -590,7 +575,7 @@ private fun FieldEditor(field: EditableField, initial: String, onCancel: () -> U
             BasicTextField(
                 value = text,
                 onValueChange = { text = it },
-                textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+                textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
                 cursorBrush = SolidColor(brand.moss),
                 singleLine = field != EditableField.STORY,
                 minLines = if (field == EditableField.STORY) 4 else 1,
