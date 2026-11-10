@@ -53,7 +53,12 @@ import appsweep  # noqa: E402
 FRAMES = {name: list(args) for name, args, _ in appsweep.screens(appsweep.pick_subjects())}
 # The screens with an Android port, in the order the page shows them.
 PORTED = ["map", "map-full", "map-pin", "search", "tree", "tree-nophoto", "photo-viewer", "signin",
+<<<<<<< HEAD
           "explore", "collection-tab", "collection-tab-full", "own-tree", "profile",
+=======
+          "explore", "collection-tab", "profile", "profile-signed-in", "profile-edit", "signin-email", "refused",
+          "people", "early-adopter", "early-adopter-sheet",
+>>>>>>> d5f7b2ae3 (Android: sign-in and profile ported from the iPhone (parity session 7), work in progress)
           "collect-intro", "collect-away", "collect-place", "collect-identify", "collect-ticked", "collect-voted",
           "collect-compare", "collect-describe"]
 

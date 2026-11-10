@@ -25,6 +25,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -94,13 +95,13 @@ fun SheetButtonView(b: SheetButton, modifier: Modifier = Modifier) {
 
 /** SheetIconTile: the glyph on the moss tint, 56 square, radius 14. */
 @Composable
-fun SheetIconTile(icon: ImageVector) {
+fun SheetIconTile(icon: ImageVector, tint: Color? = null, ground: Color? = null) {
     val brand = Brand.colors
     Box(
-        Modifier.size(56.dp).background(brand.mossTint, RoundedCornerShape(14.dp)),
+        Modifier.size(56.dp).background(ground ?: brand.mossTint, RoundedCornerShape(14.dp)),
         contentAlignment = Alignment.Center,
     ) {
-        Icon(icon, null, tint = brand.moss, modifier = Modifier.size(26.dp))
+        Icon(icon, null, tint = tint ?: brand.moss, modifier = Modifier.size(26.dp))
     }
 }
 
@@ -113,6 +114,11 @@ fun BrandSheet(
     icon: ImageVector? = null,
     message: String? = null,
     footnote: String? = null,
+    /** BrandSheet.swift `points`: what a choice shows, one checked line each. */
+    points: List<String> = emptyList(),
+    /** BrandSheet.swift `tint: .gold`, the early-adopter sheet's tile. */
+    iconTint: Color? = null,
+    iconGround: Color? = null,
     extra: @Composable ColumnScope.() -> Unit = {},
 ) {
     val brand = Brand.colors
@@ -132,7 +138,7 @@ fun BrandSheet(
                     .navigationBarsPadding(),
             ) {
                 icon?.let {
-                    SheetIconTile(it)
+                    SheetIconTile(it, iconTint, iconGround)
                     Spacer(Modifier.height(16.dp))
                 }
                 Text(
@@ -154,6 +160,7 @@ fun BrandSheet(
                         modifier = Modifier.padding(top = 8.dp),
                     )
                 }
+                if (points.isNotEmpty()) SheetPoints(points)
                 extra()
                 Column(
                     verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -191,6 +198,24 @@ fun SheetCloseButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
     ) {
         Box(Modifier.size(30.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
             Icon(Icons.Filled.Close, null, tint = brand.inkSoft, modifier = Modifier.size(15.dp))
+        }
+    }
+}
+
+/** BrandSheet.swift's points: a check in moss and the line, left-aligned under the message. */
+@Composable
+private fun SheetPoints(points: List<String>) {
+    val brand = Brand.colors
+    Column(
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+        modifier = Modifier.fillMaxWidth().padding(top = 18.dp),
+    ) {
+        for (p in points) {
+            Row(verticalAlignment = Alignment.Top) {
+                Icon(androidx.compose.material.icons.Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(16.dp).padding(top = 2.dp))
+                Spacer(Modifier.width(10.dp))
+                Text(p, fontSize = 15.sp, color = brand.ink)
+            }
         }
     }
 }

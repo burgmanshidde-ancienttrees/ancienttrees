@@ -158,7 +158,7 @@ class MyTrees(private val account: Account) {
         val rows = Supa.rows("/rest/v1/sightings?select=*", s.accessToken)
         all = rows.mapNotNull(::parse).sortedByDescending { it.date }
         sent = mine(s.accessToken)
-        profile = loadProfile(s.userId, s.accessToken)
+        // Your name, face, flag and counts come from account/Profiles.kt (MainActivity loads it).
         loadedFor = s.userId
         loadedAt = System.currentTimeMillis()
         version++
@@ -362,22 +362,6 @@ class MyTrees(private val account: Account) {
         return order.mapNotNull { byKey[it] }
     }
 
-    private suspend fun loadProfile(userId: String, token: String): MyProfile {
-        val me = Supa.rows("/rest/v1/profiles?select=display_name,avatar_url,country&user_id=eq.$userId", token).firstOrNull()
-        val places = Supa.rows("/rest/v1/ambassadors?select=place_slug,place_name&user_id=eq.$userId", token)
-            .mapNotNull { r -> r.str("place_slug")?.let { it to (r.str("place_name") ?: it) } }
-        val counts = Supa.send("/rest/v1/rpc/follow_counts", token = token, body = JSONObject().put("uid", userId).toString())
-        var followers = 0
-        var following = 0
-        if (counts.ok) {
-            runCatching {
-                val first = JSONArray(counts.body).getJSONObject(0)
-                followers = first.optInt("followers", 0)
-                following = first.optInt("following", 0)
-            }
-        }
-        return MyProfile(me?.str("display_name"), me?.str("avatar_url"), me?.str("country"), followers, following, places)
-    }
 
     private suspend fun deleteObject(bucket: String, path: String, token: String) {
         Supa.send("/storage/v1/object/$bucket/$path", method = "DELETE", token = token)
