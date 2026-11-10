@@ -309,7 +309,9 @@ private fun TreeDetailInner(
                 ExpandableText(
                     storyText(tree),
                     lines = 6,
-                    style = TextStyle(fontSize = 17.sp, lineHeight = 22.sp, color = brand.ink),
+                    // SwiftUI's .body line: six lines measure 130.3 on the iPhone 17 Pro
+                    // (data/ios-frames.json), 21.7 each; 22 made the story 2 taller.
+                    style = TextStyle(fontSize = 17.sp, lineHeight = 21.7.sp, color = brand.ink),
                 )
                 NotesSection(tree, account, signedIn, actions)
                 GettingThere(tree)
@@ -606,6 +608,10 @@ private fun AddPhotoPill(enabled: Boolean, onClick: () -> Unit) {
     val label = stringResource(R.string.add_photo_label)
     Box(
         Modifier
+            // 36 in the layout, 44 to the thumb: the Swift's .padding(.vertical, 4)
+            // .contentShape(.rect).padding(.vertical, -4). Laid out at 44 it put
+            // the tree's name 8 lower than on the iPhone (android_spacing.py).
+            .pull(4.dp, 4.dp)
             .heightIn(min = 44.dp)
             .clickable(enabled = enabled, role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onClick)
             .semantics { contentDescription = label },
@@ -917,8 +923,9 @@ private fun LocationLine(onPlace: () -> Unit) {
     val label = stringResource(R.string.location_approx_label)
     val lead = stringResource(R.string.location_approx_short)
     val ask = stringResource(R.string.show_us_where)
-    Column(Modifier.padding(bottom = 4.dp)) {
-        Hairline()
+    // The hairline OVER the line's top, as the Swift's .overlay(alignment: .top):
+    // stacked above it, it pushed the line and the story 1 lower (android_spacing.py).
+    Box(Modifier.padding(bottom = 4.dp)) {
         Box(
             Modifier
                 .fillMaxWidth()
@@ -938,6 +945,7 @@ private fun LocationLine(onPlace: () -> Unit) {
                 color = brand.ink,
             )
         }
+        Hairline()
     }
 }
 

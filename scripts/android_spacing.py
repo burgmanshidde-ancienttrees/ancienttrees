@@ -119,6 +119,9 @@ def ios_from_dump(path):
                 continue
             if not (el.ident or el.label) or el.w <= 0 or el.h <= 0:
                 continue
+            # Off the side (the end of a shelf): Android cuts these, so neither counts.
+            if (el.x < 0 or el.x + el.w > s["w"]) and el.w < s["w"]:
+                continue
             if appfit.inside(el, appfit.NOT_OURS) or in_map(el):
                 continue
             # The text inside a button reports the BUTTON's frame on the
@@ -316,6 +319,9 @@ def android_nodes(xml_text, density, screen_h_dp):
                     clipped = abs(y0 - clip[0]) < 1.5 or abs(y1 - clip[1]) < 1.5
                 if y0 < 0.5 or y1 > screen_h_dp - 0.5:
                     clipped = True
+                # A card running off the side of a shelf is cut there too.
+                if (x0 < 0.5 or x1 > 401.5) and x1 - x0 < 401:
+                    clipped = True
                 if (rid or text or desc) and not clipped:
                     out.append({"id": rid, "text": text, "desc": desc,
                                 "x": round(x0, 1), "y": round(y0, 1),
@@ -333,11 +339,13 @@ def android_nodes(xml_text, density, screen_h_dp):
 # ---------------------------------------------------------------- comparing
 
 def keys_ios(e):
-    return [k for k in (("id", e["id"]), ("t", norm(e["label"]))) if k[1]]
+    # A lone separator ("·") is a glyph inside a line, not a block on the page.
+    return [k for k in (("id", e["id"]), ("t", norm(e["label"]))) if k[1] and re.search(r"\w", k[1])]
 
 
 def keys_android(n):
-    return [k for k in (("id", n["id"]), ("t", norm(n["text"])), ("t", norm(n["desc"]))) if k[1]]
+    return [k for k in (("id", n["id"]), ("t", norm(n["text"])), ("t", norm(n["desc"])))
+            if k[1] and re.search(r"\w", k[1])]
 
 
 def name_of(e):
@@ -382,8 +390,24 @@ def match(ios_els, and_nodes):
                     used.add(id(n))
                     pairs.append((ios_els[i], n))
                     break
+    pairs = [(a, touch_box(a, n)) for a, n in pairs]
     pairs.sort(key=lambda p: (p[0]["y"], p[0]["x"]))
     return pairs
+
+
+def touch_box(e, n):
+    """The drawn box of a tappable node Compose reported at its touch size.
+
+    Compose gives accessibility the TOUCH bounds of anything clickable, grown
+    evenly to Android's 48 dp minimum (SemanticsNode.touchBoundsInRoot), so a
+    44 point pill drawn exactly as on the iPhone reads as 48 here, two dp
+    higher and two lower. Found on the tree page, 2026-11-10: every pill and
+    chip "4 taller". A 48 against a smaller iPhone height is taken as the
+    iPhone's height, centred; anything not exactly 48 is measured as it is.
+    """
+    if (n["clk"] or n["cls"] == "Button") and abs(n["h"] - 48) < 0.6 and e["h"] < 47.5:
+        n = dict(n, y=round(n["y"] + (48 - e["h"]) / 2, 1), h=e["h"])
+    return n
 
 
 def compare_page(pairs, ios_h):

@@ -548,12 +548,15 @@ private fun Section(title: String, seeAll: (() -> Unit)? = null, content: @Compo
     }
 }
 
-/** Style.swift ShelfHeader: the title and See all on one line. */
+/**
+ * Style.swift ShelfHeader: the title and See all on one line, on one baseline
+ * (HStack(alignment: .firstTextBaseline)). Centred, the title sat 3 lower than
+ * on the iPhone under every shelf with a See all (android_spacing.py).
+ */
 @Composable
 fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
     val brand = Brand.colors
     Row(
-        verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
     ) {
         Text(
@@ -562,13 +565,14 @@ fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
             fontWeight = FontWeight.Bold,
             fontSize = 21.sp,
             color = brand.ink,
-            modifier = Modifier.weight(1f).semantics { heading() },
+            modifier = Modifier.weight(1f).alignByBaseline().semantics { heading() },
         )
         if (seeAll != null) {
             Row(
                 horizontalArrangement = Arrangement.spacedBy(3.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
+                    .alignByBaseline()
                     .heightIn(min = 44.dp)
                     .padding(start = 8.dp)
                     .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = seeAll),
