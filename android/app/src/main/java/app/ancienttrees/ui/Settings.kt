@@ -43,6 +43,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.automirrored.outlined.Chat
 import androidx.compose.material.icons.automirrored.outlined.InsertDriveFile
+import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.TurnRight
 import androidx.compose.material.icons.filled.UnfoldMore
 import androidx.compose.material.icons.outlined.Description
@@ -62,6 +63,8 @@ import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -140,6 +143,14 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
     var contributing by remember { mutableStateOf("-contribute" in host.args) }
     var givingFeedback by remember { mutableStateOf("-feedback" in host.args) }
     var directionsApp by remember { mutableStateOf(Directions.preferred(context)) }
+    // -plusask opens the Plus question here (Profile.swift launchSheet).
+    var askingPlus by remember { mutableStateOf("-plusask" in host.args) }
+    // "Tell me" signed out: the sign-in sheet, then back to the step (PlusAsk.swift
+    // onDismiss). Held only while this screen is open; nothing is pressed for them.
+    var afterSignIn by remember { mutableStateOf<(() -> Unit)?>(null) }
+    LaunchedEffect(host.signedIn) {
+        if (host.signedIn) afterSignIn?.let { afterSignIn = null; it() }
+    }
 
     Column(Modifier.fillMaxSize().background(brand.ground).testTag("settings")) {
         PushedBar(stringResource(R.string.settings), onBack)
@@ -210,6 +221,17 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
 
             // HELP: feedback and a rating.
             Group(stringResource(R.string.settings_help)) {
+                // THE PLUS QUESTION (Profile.swift helpCard; Hidde, 2026-11-04): a
+                // row, the way a promise belongs in Settings (2026-08-25), first in
+                // Help because it asks for help choosing. The sheet is the city's
+                // (PlaceBox.kt PlusQuestionSheet, PlusAsk.swift); the row goes once
+                // this install answered or the server's switch is off (AppSwitches).
+                if (AppSwitches.showPlus(context)) {
+                    SettingsRow(Icons.Filled.AutoAwesome, stringResource(R.string.plus_title), tag = "profile-plus") {
+                        askingPlus = true
+                    }
+                    RowDivider(48.dp)
+                }
                 SettingsRow(Icons.AutoMirrored.Outlined.Chat, stringResource(R.string.settings_feedback), tag = "profile-feedback") {
                     givingFeedback = true
                 }
@@ -255,6 +277,23 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
             onDismiss = { contributing = false; givingFeedback = false },
             feedbackMode = givingFeedback,
         )
+    }
+    if (askingPlus) {
+        CompositionLocalProvider(
+            LocalPlaceHost provides PlaceHost(
+                signedIn = host.signedIn,
+                email = host.email,
+                token = { host.account.fresh()?.accessToken },
+                signIn = { _, then ->
+                    afterSignIn = then
+                    host.signInForFeedback()
+                },
+                openPerson = { },
+                myPlaces = emptyList(),
+            ),
+        ) {
+            PlusQuestionSheet(city = "", openedFrom = "settings") { askingPlus = false }
+        }
     }
     if (showingDelete) DeleteAccountSheet(host, onDismiss = { showingDelete = false })
     if (confirmingSignOut) {
