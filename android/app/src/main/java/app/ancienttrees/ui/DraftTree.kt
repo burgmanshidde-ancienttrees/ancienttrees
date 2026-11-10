@@ -495,7 +495,6 @@ private fun DraftTopButtons(
     onMerge: (() -> Unit)?,
 ) {
     val brand = Brand.colors
-    val glass = brand.ground.copy(alpha = 0.92f)
     var menu by remember { mutableStateOf(false) }
     Row(
         Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 16.dp, vertical = 6.dp),
@@ -503,17 +502,17 @@ private fun DraftTopButtons(
     ) {
         val back = stringResource(R.string.cf_back)
         Box(
-            Modifier.size(44.dp).shadow(2.dp, CircleShape).background(glass, CircleShape)
+            Modifier.size(44.dp).softDisc()
                 .clickable(role = Role.Button, onClick = onBack).semantics { contentDescription = back }.testTag("draft-back"),
             contentAlignment = Alignment.Center,
         ) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.moss, modifier = Modifier.size(20.dp))
         }
         Spacer(Modifier.weight(1f))
         val more = stringResource(R.string.ot_more)
         Box {
             Box(
-                Modifier.size(44.dp).shadow(2.dp, CircleShape).background(glass, CircleShape)
+                Modifier.size(44.dp).softDisc()
                     .clickable(role = Role.Button) { menu = true }.semantics { contentDescription = more }.testTag("mine-menu"),
                 contentAlignment = Alignment.Center,
             ) {
@@ -640,3 +639,13 @@ private fun draftTree(d: Collector.Draft, name: String, species: String): Tree =
     saves = 0,
     mini = false,
 )
+
+/**
+ * The iPhone's toolbar buttons on your own tree and a draft: a white disc with a
+ * soft, wide shadow and no edge, the Discover search field's shadow (Compose
+ * scales shadow colour down, so these numbers give the iPhone's softness).
+ */
+@Composable
+internal fun Modifier.softDisc(): Modifier = this
+    .shadow(6.dp, CircleShape, ambientColor = androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.18f), spotColor = androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.32f))
+    .background(Brand.colors.surface, CircleShape)
