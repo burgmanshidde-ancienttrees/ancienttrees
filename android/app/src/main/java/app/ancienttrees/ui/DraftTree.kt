@@ -248,7 +248,7 @@ fun DraftTree(
                                 textDecoration = TextDecoration.Underline,
                                 maxLines = 1,
                                 modifier = if (onCity == null) Modifier else Modifier
-                                    .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) {
+                                    .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) {
                                         onCity(place.second, place.first)
                                     }
                                     .semantics { contentDescription = see }
@@ -403,7 +403,7 @@ fun DraftTree(
         )
     }
 
-    editing?.let { f ->
+    Lingering(editing) { f ->
         FieldEditor(
             prompt = stringResource(
                 when (f) {
@@ -573,7 +573,7 @@ private fun FieldEditor(prompt: String, hint: String?, initial: String, long: Bo
     var text by remember { mutableStateOf(initial) }
     val focus = remember { FocusRequester() }
     LaunchedEffect(Unit) { runCatching { focus.requestFocus() } }
-    ModalBottomSheet(onDismissRequest = onCancel, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true), containerColor = brand.ground) {
+    AppSheet(onDismissRequest = onCancel, containerColor = brand.ground) {
         Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(bottom = 16.dp).navigationBarsPadding(), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(stringResource(R.string.cf_cancel), fontSize = 17.sp, color = brand.moss, modifier = Modifier.clickable(role = Role.Button, onClick = onCancel).padding(8.dp))

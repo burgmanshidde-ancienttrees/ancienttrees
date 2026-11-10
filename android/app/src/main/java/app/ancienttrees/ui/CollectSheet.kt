@@ -61,6 +61,8 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.togetherWith
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.SolidColor
@@ -447,7 +449,7 @@ fun CollectSheet(
         skipPartiallyExpanded = true,
         confirmValueChange = { v -> if (v == SheetValue.Hidden && workNow) { confirmingDiscard = true; false } else true },
     )
-    ModalBottomSheet(
+    AppSheet(
         onDismissRequest = {
             if (workNow) {
                 confirmingDiscard = true
@@ -462,8 +464,22 @@ fun CollectSheet(
         modifier = Modifier.testTag("spot-sheet"),
     ) {
         val tall = stage == Stage.Place || stage == Stage.Identify
-        Box(if (tall) Modifier.fillMaxHeight() else Modifier) {
-            when (val s = stage) {
+        // A STEP CHANGES WITH SWIFTUI'S .snappy (CollectSheet.swift withAnimation(.snappy)):
+        // the old step fades out, the new one in, and the sheet grows or shrinks to it.
+        Box(
+            (if (tall) Modifier.fillMaxHeight() else Modifier)
+                .animateContentSize(Motion.snappy()),
+        ) {
+            androidx.compose.animation.AnimatedContent(
+                targetState = stage,
+                transitionSpec = {
+                    (androidx.compose.animation.fadeIn(Motion.snappy()) togetherWith
+                        androidx.compose.animation.fadeOut(Motion.snappy()))
+                        .using(androidx.compose.animation.SizeTransform(clip = false) { _, _ -> Motion.snappy() })
+                },
+                label = "collect-step",
+            ) { s ->
+            when (s) {
                 Stage.Intro -> CollectIntro(
                     about = start.about,
                     addsPhoto = start.addsPhoto,
@@ -540,6 +556,7 @@ fun CollectSheet(
                         else -> Unit
                     }
                 }
+            }
             }
         }
     }
@@ -706,8 +723,10 @@ private fun PlaceStep(
                     .navigationBarsPadding()
                     .fillMaxWidth()
                     .height(48.dp)
-                    .background(brand.moss, RoundedCornerShape(50))
+                    .clip(RoundedCornerShape(50))
                     .clickable(role = Role.Button, onClick = onConfirm)
+                    // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
+                    .background(brand.moss, RoundedCornerShape(50))
                     .testTag("collect-place-confirm"),
             ) {
                 Text(stringResource(R.string.cf_tree_is_here), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.onMoss)

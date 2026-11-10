@@ -41,6 +41,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
@@ -122,7 +123,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
                             .height(50.dp)
                             .clickable(
                                 interactionSource = remember { MutableInteractionSource() },
-                                indication = null,
+                                indication = androidx.compose.foundation.LocalIndication.current,
                                 role = Role.Tab,
                             ) { select(i) }
                             .semantics { this.selected = on }
@@ -159,11 +160,13 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
             modifier = Modifier
                 .size(58.dp)
                 .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.10f), spotColor = Color.Black.copy(alpha = 0.10f))
+                // The ripple stays inside the disc (Airbnb's line, 2026-11-10).
+                .clip(CircleShape)
+                .clickable(role = Role.Button, onClick = collect)
                 .background(glass, CircleShape)
                 .background(wash, CircleShape)
                 .border(0.5.dp, edge, CircleShape)
                 .testTag("tab-collect")
-                .clickable(role = Role.Button, onClick = collect)
                 .semantics { contentDescription = collectLabel },
         ) {
             Icon(Sym.PhotoCameraFillSemibold, contentDescription = null, tint = brand.ink, modifier = Modifier.size(28.dp))

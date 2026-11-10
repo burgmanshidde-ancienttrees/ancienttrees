@@ -151,7 +151,7 @@ fun SaveMark(tree: Tree, onPhoto: Boolean) {
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .size(44.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, role = Role.Button) { marks.onSave(tree) }
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button) { marks.onSave(tree) }
             .semantics { contentDescription = label },
     ) {
         if (onPhoto) {
@@ -196,7 +196,7 @@ fun TreeRow(tree: Tree, onOpen: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .fillMaxWidth()
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen)
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen)
             .padding(vertical = 10.dp),
     ) {
         Box(Modifier.size(64.dp)) {
@@ -245,7 +245,7 @@ fun HighlightCard(tree: Tree, onOpen: () -> Unit) {
     Column(
         Modifier
             .width(220.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen),
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen),
     ) {
         Box(Modifier.size(220.dp, 150.dp).clip(RoundedCornerShape(12.dp)).background(leafTile())) {
             tree.photo?.let { RemoteImage(it.card, null, Modifier.fillMaxSize()) }
@@ -279,7 +279,7 @@ fun MineTile(s: app.ancienttrees.account.OwnSighting, mine: app.ancienttrees.acc
     Column(
         Modifier
             .width(220.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen),
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen),
     ) {
         Box(Modifier.size(220.dp, 150.dp).clip(RoundedCornerShape(12.dp)).background(brand.surfaceMuted)) {
             OwnPhoto(s, mine, Modifier.fillMaxSize(), maxSide = 600) { Box(Modifier.fillMaxSize().background(brand.surfaceMuted)) }
@@ -330,7 +330,7 @@ fun TreeCard(
             .clip(shape)
             .background(brand.surface)
             .border(1.dp, brand.hairline, shape)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen),
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen),
     ) {
         Box(Modifier.fillMaxWidth().height(190.dp).background(leafTile())) {
             val photo = tree.photo

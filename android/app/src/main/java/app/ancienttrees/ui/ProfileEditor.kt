@@ -262,7 +262,6 @@ private fun PrivacyInner(
     val brand = Brand.colors
     val scope = rememberCoroutineScope()
     var confirming by remember { mutableStateOf(false) }
-    BackHandler(onBack = onBack)
     val isPublic = profiles.myPublic ?: false
     fun setPublic(on: Boolean) {
         val uid = userId ?: return

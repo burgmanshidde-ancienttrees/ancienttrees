@@ -1,6 +1,7 @@
 package app.ancienttrees.account
 
-import app.ancienttrees.ui.ProfilePage
+import app.ancienttrees.ui.Nav
+import app.ancienttrees.ui.Page
 import app.ancienttrees.ui.ProfileRoutes
 import app.ancienttrees.ui.flagEmoji
 import org.junit.Assert.assertEquals
@@ -35,12 +36,29 @@ class ProfilesTest {
     }
 
     @Test fun theSweepsLaunchArgumentsOpenTheSameScreens() {
-        val r = ProfileRoutes(listOf("-tab=2", "-settings", "-privacy"))
-        assertEquals(listOf(ProfilePage.Settings, ProfilePage.Privacy), r.stack.toList())
+        // The profile pages live on the tab's own stack (Pages.kt), as Route.settings does.
+        val nav = Nav(2)
+        val r = ProfileRoutes(listOf("-tab=2", "-settings", "-privacy"), nav)
+        assertEquals(listOf<Page>(Page.Settings, Page.Privacy), nav.stack.map { it.page })
         r.back()
-        assertEquals(listOf(ProfilePage.Settings), r.stack.toList())
-        assertTrue(ProfileRoutes(listOf("-profile-edit")).editProfile)
-        assertFalse(ProfileRoutes(emptyList()).showing)
+        assertEquals(listOf<Page>(Page.Settings), nav.stack.map { it.page })
+        assertTrue(r.showing)
+        assertTrue(ProfileRoutes(listOf("-profile-edit"), Nav(0)).editProfile)
+        assertFalse(ProfileRoutes(emptyList(), Nav(0)).showing)
+    }
+
+    @Test fun eachTabKeepsItsOwnHistory() {
+        val nav = Nav(1)
+        nav.push(Page.TreePage("ath_004"))
+        nav.tab = 0
+        nav.push(Page.Species("Olive"))
+        nav.tab = 1
+        assertEquals(Page.TreePage("ath_004"), nav.top)
+        nav.clear(0)
+        assertEquals(1, nav.stacks[1].size)
+        nav.push(Page.Settings, onTab = 2)
+        ProfileRoutes(emptyList(), nav).clear()
+        assertTrue(nav.stacks[2].isEmpty())
     }
 
     @Test fun theDemoAccountWearsItsBadgeAndFlag() {
