@@ -21,6 +21,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 session: compliance audit, privacy page and terms brought up to date, weekly compliance light
+
+- Privacy page rewritten to what the product does: every account has a profile, public unless switched off, and what a public profile shows (Collected and Want to go included); notes on trees and the "new from visitors" row are public with a public profile's name; shared links; suggested people. Added what GDPR article 13 requires and the page lacked: who decides, why we may use each kind of data, how long we keep it, who handles it (Supabase, PostHog, Google, Apple, Resend, ImprovMX, GitHub, OpenFreeMap), rights and the Autoriteit Persoonsgegevens, 16 and over.
+- Terms: 16 and over, profiles public by default, notes public, a name beside a photo in the visitors row; the false "nothing beside it says who took it, ever" and "your collection is shown to nobody" are gone.
+- Photo credits on the website: the photographer's name links to the source page (Commons, iNaturalist, Geograph, or attribution_url) and the licence label to its deed (CreditLine.astro). CC 2.0 and 3.0 give no grace period for a missing link, which is what claim agencies invoice.
+- First outreach mails must end with a way to say no: mailcheck refuses one without it, and OUTREACH_STRATEGY.md says so. The batches of 11-01 to 11-06 had none.
+- So this stops depending on Hidde asking: scripts/privacycheck.py on every push (a new table needs its privacy sentence), a weekly compliance review in review.yml (BRIEF_COMPLIANCE.md), and a compliance part in the Next version light of Web and iOS (quality.py). The light is orange now, on purpose: six points wait for Hidde in data/compliance.json.
+- For Hidde: compliance, 6 points wait for your word (data/compliance.json): the 33 accounts made public on 10-29, public by default at sign-up, your full name or KvK on the privacy page, PostHog without consent, mailed photos live before the yes, mail sentences quoted without asking.
+
 ## 2026-11-10 session: Android, the map opens where you are
 
 - **New in `android/` (PR 13):** location asked on the first open with no screen of ours before it; a "Location off · Use my location" chip while it is off (Settings after a refusal); a my-location button above the sheet; a bottom sheet listing the trees in view with the count (the website's treesInView), nearest first with distance in km or miles by region, as iOS and web write it. Strings in eight languages. New: androidx material-icons-extended (AndroidX); location through MapLibre's engine on Android's own location, no Play services.

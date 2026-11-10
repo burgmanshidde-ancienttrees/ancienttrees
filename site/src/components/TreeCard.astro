@@ -19,7 +19,8 @@
 // park and collection pages would put the same paragraphs on four URLs, which
 // SEO_GEO_BLUEPRINT.md's P3 forbids and Google reads as thin duplication.
 // Hence one component, one look, two text lengths.
-import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText, creditLinkParts } from "../lib/images";
+import CreditLine from "./CreditLine.astro";
+import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText } from "../lib/images";
 import { ui } from "../lib/i18n";
 import { seasonChip } from "../lib/phenology";
 import { ageShort } from "../lib/age-short";
@@ -97,9 +98,6 @@ const story = overrides?.story ?? tree.story ?? "";
 const photo = usablePhoto(tree);
 // The photographer's name as a link when the record asks for it (attribution_url).
 const creditLine = photo && creditRequired(photo.license) ? creditText(photo.attribution, photo.license) : null;
-const creditLink = creditLine && photo?.attribution_url
-  ? { href: photo.attribution_url, ...creditLinkParts(U.photoCredit(creditLine), photo.attribution, photo.license) }
-  : null;
 // The href is functional rather than cosmetic, so it generalises properly:
 // English lives at the root, every other language under its own prefix.
 const href = lang === "en" || fallback ? `/${citySlug}/${treeSlug}` : `/${lang}/${citySlug}/${treeSlug}`;
@@ -203,10 +201,7 @@ const Heading = headingLevel === 2 ? "h2" : "h3";
     </div>
     <p class="tree-name tree-hl-name"><a href={href}>{name}</a></p>
     {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
-    {creditLine && (creditLink
-      ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
-      : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
-    )}
+    {creditLine && photo && <p class="tree-card-credit"><CreditLine line={U.photoCredit(creditLine)} photo={photo} /></p>}
   </article>
 )}
 {!isHighlight && (
@@ -270,10 +265,7 @@ const Heading = headingLevel === 2 ? "h2" : "h3";
       </div>
       {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
       {text && <p class="tree-story" set:html={latinHtml(text)} />}
-      {creditLine && (creditLink
-        ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
-        : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
-      )}
+      {creditLine && photo && <p class="tree-card-credit"><CreditLine line={U.photoCredit(creditLine)} photo={photo} /></p>}
       {canTick && (
         <div class="tag-row tree-row-tags"><span class="tree-card-seen" data-tree={tree.id} hidden><Fragment set:html={SEEN_MARK} /><span>{U.seenChip}</span></span></div>
       )}
@@ -305,10 +297,7 @@ const Heading = headingLevel === 2 ? "h2" : "h3";
   {/* The credit closes the card rather than sitting between the photograph
       and the title, where it split the picture from its name (2026-10-04,
       the Barcelona list). The licence asks for the credit, not its place. */}
-  {creditLine && (creditLink
-    ? <p class="tree-card-credit">{creditLink.before}<a href={creditLink.href} rel="noopener">{creditLink.name}</a>{creditLink.after}</p>
-    : <p class="tree-card-credit">{U.photoCredit(creditLine)}</p>
-  )}
+  {creditLine && photo && <p class="tree-card-credit"><CreditLine line={U.photoCredit(creditLine)} photo={photo} /></p>}
   </Fragment>
   )}
   {isRow && (
