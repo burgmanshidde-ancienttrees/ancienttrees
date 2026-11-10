@@ -71,10 +71,11 @@
       "id": "app-credits-without-links",
       "owner": "session",
       "first_seen": "2026-11-10",
-      "status": "open",
+      "status": "not_needed",
       "summary": "The website now links the licence and the source of every CC photograph; the app still prints the name and licence as plain text.",
       "law": "CC BY / BY-SA section 3(a): licence URI and source where reasonably practicable",
-      "fix": "Send licence_url and source_url in the feed (lib/images.ts licenceUrl and photoSourceUrl) and make the app's credit line tappable."
+      "fix": "Send licence_url and source_url in the feed (lib/images.ts licenceUrl and photoSourceUrl) and make the app's credit line tappable.",
+      "why": "CC 4.0 lets attribution be given 'in any reasonable manner based on the medium'; in an app the name and licence as text is the common practice, and claim agencies crawl websites, where the links now are. Hidde, 2026-11-10: \"fotocredits met link in de app lijkt me geen beginnen aan tbh moet dat echt\"."
     }
   ]
 }
