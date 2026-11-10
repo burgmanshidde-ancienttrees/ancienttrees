@@ -2,8 +2,8 @@
   "city": "Frankfurt",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the twenty-eight trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: ginkgos in Rödelheim and the Bethmannpark, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach, four oaks, one planted around 1590.",
-  "meta_description": "Frankfurt's Naturdenkmal trees: the lime the U-Bahn curves around, a yew moved by steam roller in 1907, and an oak planted around 1590 in Offenbach.",
+  "intro": "Frankfurt named a U-Bahn station after a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the twenty-eight trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: ginkgos in Rödelheim and the Bethmannpark, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach, four oaks, one planted around 1590.",
+  "meta_description": "Frankfurt's Naturdenkmal trees: the lime that named a U-Bahn station, a yew moved by steam roller in 1907, and an oak planted around 1590 in Offenbach.",
   "question_answer": "Frankfurt's oldest tree is probably the Senckenberg Yew in the Palmengarten, roughly 400 years old: it was already about 300 when two steam rollers moved it across the city in 1907, and local tradition has it planted before the Thirty Years War. The oldest on the city's register with a dated record is the Eschersheimer Linde, a large-leaved lime from the end of the 17th century beside Lindenbaum U-Bahn station. The Schwanheim oaks rival both, a group the city dates to up to 500 years without dating any single trunk.",
   "question_meta": "The Senckenberg Yew in the Palmengarten, roughly 400 years old and moved across Frankfurt by steam roller in 1907, is probably the city's oldest tree.",
   "question_context": "Frankfurt dates most of its protected trees through a municipal register, which makes the answer checkable and modest. The Senckenberg Yew is the exception: its roughly 400 years rest on an estimate of about 300 at its move in 1907 and a tradition that it was planted before the Thirty Years War, and it is not on the register. The Eschersheimer Linde, from the end of the 17th century, is the oldest tree on the register with a dated record; nobody cored it, so its age is a period rather than a year. The Schwanheim oaks may be older than both: the city gives the group up to 500 years, the register as mirrored on Wikipedia 600 to 1,000, and no single trunk is dated. Offenbach's August Reiss Oak, planted around 1590, is older still, but it stands across the city line. Younger, and dated: the Goethe Ginkgo of about 1750, a copper beech of 1815, a plane of about 1820, a weeping beech of 1845, the Sossenheim peace oak of 1871, and a dawn redwood of about 1950. The eight-stemmed lime in Gruneburgpark and the Ostpark red oak have no age at all. If you know either, tell us.",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Why does the U-Bahn curve at Lindenbaum?",
-      "a": "Because the lime was there first and the city kept it. The station carries the tree's name, and the line bends slightly where it stands."
+      "a": "By local account, to spare the lime, which had stood there for close to three centuries when the line opened in 1968. The line takes a slight bend where the tree stands, and the station is named after the street Am Lindenbaum, which is named after the tree."
     }
   ],
   "trees": [
@@ -40,7 +40,7 @@
         "longitude": 8.660833,
         "neighbourhood": "Eschersheim"
       },
-      "story": "Frankfurt bent a subway line rather than lose this lime. The U-Bahn under Eschersheimer Landstrasse curves slightly where the tree stands, the station beside it is called Lindenbaum, and so is the street. That is a lot of infrastructure named after one large-leaved lime.\n\nIt went in at the end of the 17th century as a landmark on what was then an open road out of the city, and it was the smaller of a pair. Locals called it the Kleine Linde, because a bigger Grosse Linde stood nearby until a storm brought that one down in 1923. Around five metres round and some 25 metres tall, it has been a protected natural monument since 1937.\n\nBeing a landmark on a road that turned into a city has cost it. The street was paved, the ground around it sealed, and the roots began to suffocate. It got tree surgery in 1955 and again in 1974, drainage in 1968, and by 1984 the city was pumping water and air into the soil around it to keep it alive. Frankfurt has now spent seventy years on life support for a tree it could have removed in an afternoon.\n\nIt stands directly on the public street, so there is nothing to pay and nothing to enter. Get off at Lindenbaum station and it is right there, which is the whole point of the name.",
+      "story": "The U-Bahn along Eschersheimer Landstrasse takes a slight bend where this lime stands, and by local account it was laid that way to spare the tree. The station beside it is called Lindenbaum, and so is the street. That is a lot of infrastructure named after one large-leaved lime.\n\nIt went in at the end of the 17th century as a landmark on what was then an open road out of the city, and it was the smaller of a pair. Locals called it the Kleine Linde, because a bigger Grosse Linde stood nearby until a storm brought that one down in 1923. Around five metres round and some 25 metres tall, it has been a protected natural monument since 1937.\n\nBeing a landmark on a road that turned into a city has cost it. The street was paved, the ground around it sealed, and the roots began to suffocate. It got tree surgery in 1955 and again in 1974, drainage in 1968, and by 1984 the city was pumping water and air into the soil around it to keep it alive. Frankfurt has now spent seventy years on life support for a tree it could have removed in an afternoon.\n\nIt stands directly on the public street, so there is nothing to pay and nothing to enter. Get off at Lindenbaum station and it is right there, which is the whole point of the name.",
       "best_time": {
         "months": [
           6
@@ -56,7 +56,7 @@
         "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eschersheimer-linde"
       ],
       "access": "Free, standing directly on the public street (Eschersheimer Landstraße), always visible",
-      "transport": "Lindenbaum U-Bahn station (U1/U2/U3/U8) right beside it; the subway curves around the tree",
+      "transport": "Lindenbaum U-Bahn station (U1/U2/U3/U8) right beside it; the line bends slightly here, by local account around the tree",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "photo": {
@@ -68,12 +68,13 @@
         "height": 4000,
         "taken_month": 9
       },
-      "how_to_recognise": "You can recognise it by standing right on the public street, the subway line beneath it curved to spare it. It stands on Eschersheimer Landstraße, at Lindenbaum station.",
+      "how_to_recognise": "You can recognise it by standing right on the public street beside the U-Bahn line. It stands on Eschersheimer Landstraße, at Lindenbaum station.",
       "official_register": {
         "name": "Naturdenkmale der Stadt Frankfurt am Main (ND 011), no. ND 011",
         "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/eschersheimer-linde"
       },
-      "height_m": 25
+      "height_m": 25,
+      "verify_notes": "2026-11-10: the U-Bahn bend 'wegen des Baumes' rests on one unreferenced sentence in de.wikipedia (Eschersheimer Linde); frankfurt.de says nothing about it. Written as local account, never as fact. Station named after the street Am Lindenbaum, which the article says is named after the tree."
     },
     {
       "id": "frk_002",
