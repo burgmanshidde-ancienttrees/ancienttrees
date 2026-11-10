@@ -10,6 +10,16 @@
 
 package app.ancienttrees.ui
 
+import androidx.compose.material.icons.automirrored.outlined.MergeType
+
+import androidx.compose.material.icons.outlined.PinDrop
+
+import app.ancienttrees.account.Submission
+
+import app.ancienttrees.feed.Geo
+
+import app.ancienttrees.feed.Tree
+
 import android.graphics.BitmapFactory
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -126,6 +136,8 @@ fun DraftTree(
     account: Account? = null,
     mine: MyTrees? = null,
     onCity: ((slug: String, name: String) -> Unit)? = null,
+    /** Merged into one of ours (MergeChooser): the tick and "Trees merged" are the root's. */
+    onMerged: ((Tree) -> Unit)? = null,
 ) {
     val brand = Brand.colors
     val context = LocalContext.current
@@ -141,6 +153,8 @@ fun DraftTree(
     var choosingSpecies by remember { mutableStateOf(false) }
     var confirmingDiscard by remember { mutableStateOf(false) }
     var removing by remember { mutableStateOf(false) }
+    var placing by remember { mutableStateOf(false) }
+    var merging by remember { mutableStateOf(false) }
     var saving by remember { mutableStateOf(false) }
     var saveFailed by remember { mutableStateOf(false) }
     var savedId by remember { mutableStateOf<String?>(null) }
@@ -335,6 +349,8 @@ fun DraftTree(
             onEdit = { editing = it },
             onSpecies = { choosingSpecies = true },
             onRemove = { removing = true },
+            onMovePin = { placing = true },
+            onMerge = if (account != null && onMerged != null) ({ merging = true }) else null,
         )
 
         // SAVE, on a tree still being added: the bar at the foot. After it the
@@ -348,6 +364,48 @@ fun DraftTree(
         }
     }
     if (saveFailed) CollectFailedSheet(onDismiss = { saveFailed = false })
+    // MOVE THE PIN (TreeDetail's mine-menu): the same full-screen map as on ours.
+    if (placing && account != null) {
+        PlacePin(
+            tree = draftTree(draft, name, species),
+            account = account,
+            signedIn = true,
+            onNeedsSignIn = { },
+            onDismiss = { placing = false },
+        )
+    }
+    // MERGE WITH ANOTHER TREE (TreeDetail.merge): the photographs go to that tree
+    // of ours and it is ticked, instantly; further than 400 m it is also the pin
+    // correction CollectSheet.reportPin sends.
+    if (merging && account != null) {
+        MergeChooser(
+            catalogue = catalogue,
+            lat = draft.lat,
+            lng = draft.lng,
+            onMerge = { t ->
+                scope.launch {
+                    val jpeg = draft.jpeg
+                    val ok = if (jpeg != null) {
+                        Collector.collect(account, t.id, t.name, jpeg, draft.lat, draft.lng, extras, draft.taken)
+                    } else {
+                        Collector.tick(account, t.id)
+                    }
+                    val metres = (Geo.km(draft.lat, draft.lng, t.lat, t.lng) * 1000).toInt()
+                    if (ok && metres > 400) {
+                        Submission.correction(
+                            t.city, t.name,
+                            String.format(java.util.Locale.ROOT, "%.6f, %.6f (%s)", draft.lat, draft.lng, draft.fixNote.ifEmpty { "where the person's own tree stands" }),
+                            "A tree the person added, merged into this one $metres m from the published position. " +
+                                "Our pin was ${if (t.precision == app.ancienttrees.feed.Precision.CONFIRMED) "marked confirmed" else "marked approximate"}.",
+                            t.url, account.fresh()?.accessToken,
+                        )
+                    }
+                    if (ok) onMerged?.invoke(t) else saveFailed = true
+                }
+            },
+            onClose = { merging = false },
+        )
+    }
     if (removing) {
         BrandSheet(
             title = stringResource(R.string.ot_remove_title, name),
@@ -426,9 +484,16 @@ fun DraftTree(
     }
 }
 
-/** OwnTree's top row on a draft: back that asks, and the ⋯ menu (no Move the pin or Merge yet). */
+/** OwnTree's top row on a draft: back that asks, and the ⋯ menu (TreeDetail's mine-menu). */
 @Composable
-private fun DraftTopButtons(onBack: () -> Unit, onEdit: (Field) -> Unit, onSpecies: () -> Unit, onRemove: () -> Unit) {
+private fun DraftTopButtons(
+    onBack: () -> Unit,
+    onEdit: (Field) -> Unit,
+    onSpecies: () -> Unit,
+    onRemove: () -> Unit,
+    onMovePin: () -> Unit,
+    onMerge: (() -> Unit)?,
+) {
     val brand = Brand.colors
     val glass = brand.ground.copy(alpha = 0.92f)
     var menu by remember { mutableStateOf(false) }
@@ -471,6 +536,9 @@ private fun DraftTopButtons(onBack: () -> Unit, onEdit: (Field) -> Unit, onSpeci
                 item(R.string.ot_change_species, Icons.Outlined.Eco) { onSpecies() }
                 item(R.string.ot_change_age, Icons.Outlined.CalendarMonth) { onEdit(Field.AGE) }
                 item(R.string.ot_change_girth, Icons.Outlined.Straighten) { onEdit(Field.GIRTH) }
+                item(R.string.ot_move_pin, Icons.Outlined.PinDrop) { onMovePin() }
+                // A draft is neither ours nor folded into ours yet, so it may merge.
+                if (onMerge != null) item(R.string.ot_merge, Icons.AutoMirrored.Outlined.MergeType) { onMerge() }
                 HorizontalDivider(color = brand.hairline)
                 item(R.string.ot_remove_tree, Icons.Outlined.Delete, danger = true) { onRemove() }
             }
@@ -546,3 +614,29 @@ private fun FieldEditor(prompt: String, hint: String?, initial: String, long: Bo
         }
     }
 }
+
+/** The draft as a tree, for the pin map (Sightings.asTree). */
+private fun draftTree(d: Collector.Draft, name: String, species: String): Tree = Tree(
+    id = "mine-" + d.id,
+    name = name,
+    species = species,
+    age = null,
+    ageShort = null,
+    lat = d.lat,
+    lng = d.lng,
+    city = d.place.orEmpty(),
+    citySlug = "",
+    country = "",
+    neighbourhood = "",
+    access = "",
+    paidEntry = false,
+    transport = "",
+    story = "",
+    storyLatin = emptyList(),
+    howToRecognise = "",
+    url = "",
+    precision = app.ancienttrees.feed.Precision.CONFIRMED,
+    photo = null,
+    saves = 0,
+    mini = false,
+)

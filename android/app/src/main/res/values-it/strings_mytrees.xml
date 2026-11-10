@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">Facoltativo. Una foto del cartello aiuta: spesso indica l\'albero, la specie e l\'età.</string>
     <string name="ot_add_photo">Aggiungi foto</string>
     <string name="ot_share_failed">Non è partito. Riprova il link quando hai campo.</string>
+    <string name="ot_move_pin">Sposta il segnaposto</string>
+    <string name="ot_merge">Unisci a un altro albero</string>
+    <string name="mg_title">Unisci a</string>
+    <string name="mg_search">Cerca alberi per nome</string>
+    <string name="mg_none">Nessuno dei nostri alberi si chiama così.</string>
+    <string name="mg_confirm_title">Unire a %1$s?</string>
+    <string name="mg_confirm_body">Le tue foto passano alla sua pagina e questa copia esce dai tuoi alberi.</string>
+    <string name="mg_confirm">Unisci alberi</string>
+    <string name="mg_done">Alberi uniti</string>
 </resources>

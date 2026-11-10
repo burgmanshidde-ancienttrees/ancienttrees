@@ -280,6 +280,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val addedText = androidx.compose.ui.res.stringResource(R.string.snack_added)
     val removedText = androidx.compose.ui.res.stringResource(R.string.snack_removed)
     val uncollectedText = androidx.compose.ui.res.stringResource(R.string.uncollected)
+    val mergedText = androidx.compose.ui.res.stringResource(R.string.mg_done)
     val signedInText = androidx.compose.ui.res.stringResource(R.string.snack_signed_in)
 
     fun heart(t: Tree) {
@@ -873,6 +874,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     // Saved here, then the page stays as your tree with Share (TreeDetail.swift, mine).
                     account = account,
                     mine = myTrees,
+                    onMerged = { t ->
+                        draft = null
+                        saves.noteCollected(t.id)
+                        snack = app.ancienttrees.ui.Snack(mergedText, icon = androidx.compose.material.icons.Icons.Outlined.Verified)
+                        scope.launch { myTrees.load(force = true) }
+                    },
                     onCity = { slug, name ->
                         val t = cat.trees(slug).firstOrNull()
                         draft = null

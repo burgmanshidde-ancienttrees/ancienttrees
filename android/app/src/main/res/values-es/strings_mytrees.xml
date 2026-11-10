@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">Opcional. Una foto del cartel ayuda: suele indicar el árbol, la especie y su edad.</string>
     <string name="ot_add_photo">Añadir foto</string>
     <string name="ot_share_failed">No se ha enviado. Vuelve a probar el enlace cuando tengas cobertura.</string>
+    <string name="ot_move_pin">Mover el pin</string>
+    <string name="ot_merge">Unir con otro árbol</string>
+    <string name="mg_title">Unir con</string>
+    <string name="mg_search">Buscar árboles por nombre</string>
+    <string name="mg_none">Ninguno de nuestros árboles se llama así.</string>
+    <string name="mg_confirm_title">¿Unir con %1$s?</string>
+    <string name="mg_confirm_body">Tus fotos pasan a su página y esta copia sale de tus árboles.</string>
+    <string name="mg_confirm">Unir árboles</string>
+    <string name="mg_done">Árboles unidos</string>
 </resources>
