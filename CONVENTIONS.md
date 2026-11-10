@@ -4090,3 +4090,14 @@ What we take: a row of four labelled tiles in Airbnb's shape, Spring Summer Autu
 ## Recent searches under the empty search field (2026-11-04)
 
 Google Maps, Instagram and Apple Maps all list recent picks under an empty field, newest first, a cross per row and a way to clear them all, tied to the account (from memory, drafts/design-2026-11-04 section 2; Hidde approved it: "i like all your proposals please build"). Ours: a Recent head with Clear all at its right end, at most five rows, a clock in front (SF Symbol clock.arrow.circlepath, Phosphor clock-counter-clockwise), the name and the grey sub line the result rows draw, an x behind; under it the empty screen as before. Only what was picked is recorded (city, country, species, tree, real town), never typed text; signed in only, kept in table recent_searches and nowhere on the device (hard rule 11), so signed out the screen is unchanged; older than 90 days is never shown. Same table and keys on both surfaces: Kit/RecentSearches.swift with Screens/MapSearch.swift, and site/src/lib/search-form.ts for every search field on the website.
+
+## One app on iPhone and Android: what is the same, what follows the phone (2026-11-10)
+
+Hidde: "waarom zijn alle lettertypes en iconen anders maak het zo veel hetzelfde", then "hoe gaan concurrenten hier mee om". Looked up:
+- **Airbnb's Design Language System** (airbnb.design/building-a-visual-language; design.google/library/airbnb-invites-you-in): one set of phone components for iOS and Android, so one visual language, including replacing Android's left navigation drawer with the bottom tab bar both platforms now share. Explicitly kept per platform: "conventions on important elements like navigation, system iconography, contextual actions, and interactions". Their map button has a shadow on Android and is flat on iOS (UXPin's comparison).
+- **Instagram, YouTube**: a brand's own glyph (Instagram's paper plane for share) is the same on both; a standard system sign (share, overflow ⋮, back) takes the platform's form (medium.com/@berryverylucky, the share icon by platform).
+- **AllTrails**: no reliable side-by-side found.
+
+What we take, pending Hidde's word on the system signs: brand, type, colour, layout, cards, sheets, tab bar and all motion as the iPhone's; back, share and the overflow menu, and the system's own reflexes (Android's overscroll stretch, a clipped ripple), in Android's form.
+
+Lesson for the parity file: a difference listed as forced by Android needs a source. Two were not forced: Sign in with Apple (the website already signs in with Apple over a plain OAuth redirect) and glass behind bars (Android 12+ blurs).
