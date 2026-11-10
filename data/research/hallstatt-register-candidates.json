@@ -1,0 +1,56 @@
+[
+ {
+  "register_id": "ps.880CE01D-84E6-4B69-B063-F9FFA46E51B0",
+  "name": "Eibe",
+  "legal_basis": "Bescheid vom 04.03.1991",
+  "latitude": 47.563014,
+  "longitude": 13.649703,
+  "location_precision": "approximate",
+  "register": "ooe-naturdenkmaeler",
+  "km_from_centre": 0.12,
+  "near_published": {
+   "metres": 2.3,
+   "id": "hst_001",
+   "name": "The Hallstatt Boat Landing Yew",
+   "species": "European Yew (Taxus baccata)"
+  }
+ },
+ {
+  "register_id": "ps.49AAED65-80E1-4CED-BE6A-48B3B8ED5F8A",
+  "name": "Riesenkarstquelle \"Hirschbrunn\"",
+  "legal_basis": "Bescheid vom 23.01.1979",
+  "latitude": 47.546788,
+  "longitude": 13.658661,
+  "location_precision": "approximate",
+  "non_tree": true,
+  "register": "ooe-naturdenkmaeler",
+  "km_from_centre": 1.84
+ },
+ {
+  "register_id": "ps.723FFF56-E0A7-4B55-9CAD-0734C07AA8F7",
+  "name": "Kessel - Riesenkarstquelle",
+  "legal_basis": "Bescheid vom 30.11.1978",
+  "latitude": 47.545364,
+  "longitude": 13.663774,
+  "location_precision": "approximate",
+  "non_tree": true,
+  "register": "ooe-naturdenkmaeler",
+  "km_from_centre": 2.16
+ },
+ {
+  "register_id": "ps.AA8E0620-0578-4AC7-82A6-10F40632AD07",
+  "name": "\"Eibe\" Dorfeibe",
+  "legal_basis": "Bescheid vom 18.12.1980",
+  "latitude": 47.556048,
+  "longitude": 13.689719,
+  "location_precision": "approximate",
+  "register": "ooe-naturdenkmaeler",
+  "km_from_centre": 3.13,
+  "near_published": {
+   "metres": 1.7,
+   "id": "hst_002",
+   "name": "The Obertraun Dorfeibe",
+   "species": "European Yew (Taxus baccata)"
+  }
+ }
+]

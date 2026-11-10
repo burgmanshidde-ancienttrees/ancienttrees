@@ -4330,6 +4330,47 @@
    }
   },
   {
+   "common": "Den Haag Elm",
+   "latin": "Ulmus 'Den Haag'",
+   "names": {
+    "en": [
+     "elm",
+     "elms"
+    ],
+    "nl": [
+     "Iep",
+     "iepen",
+     "olm"
+    ],
+    "de": [
+     "Ulme",
+     "Ulmen"
+    ],
+    "es": [
+     "Olmo",
+     "الدردار"
+    ],
+    "it": [
+     "Olmo",
+     "olmi"
+    ],
+    "fr": [
+     "Orme",
+     "ormes"
+    ],
+    "pt": [
+     "Negrilho",
+     "Ulmeiro"
+    ],
+    "ja": [
+     "にれ",
+     "ニレ",
+     "ニレ属",
+     "楡"
+    ]
+   }
+  },
+  {
    "common": "Desert Willow",
    "latin": "Chilopsis linearis",
    "names": {
@@ -6043,6 +6084,10 @@
      "ビロードトネリコ"
     ]
    }
+  },
+  {
+   "common": "Green Hawthorn",
+   "latin": "Crataegus viridis"
   },
   {
    "common": "Green Oak",
@@ -12304,6 +12349,10 @@
    }
   },
   {
+   "common": "September Elm",
+   "latin": "Ulmus serotina"
+  },
+  {
    "common": "Serbian Spruce",
    "latin": "Picea omorika",
    "names": {
@@ -14639,6 +14688,21 @@
    "latin": "Citrus x sinensis 'Washington'"
   },
   {
+   "common": "Water Tupelo",
+   "latin": "Nyssa aquatica",
+   "names": {
+    "en": [
+     "cottongum",
+     "large tupelo",
+     "tupelo-gum",
+     "tupelogum"
+    ],
+    "fr": [
+     "Tupelo aquatique"
+    ]
+   }
+  },
+  {
    "common": "Weeping Ash",
    "latin": "Fraxinus excelsior 'Pendula'",
    "names": {
@@ -14936,6 +15000,46 @@
    }
   },
   {
+   "common": "Weeping Wych Elm",
+   "latin": "Ulmus glabra 'Horizontalis'",
+   "names": {
+    "en": [
+     "Scots Elm",
+     "Wych Elm",
+     "mountain elm"
+    ],
+    "nl": [
+     "Ruwe iep",
+     "Bergiep"
+    ],
+    "de": [
+     "Bergulme",
+     "Berg-Ulme"
+    ],
+    "es": [
+     "Olmo de montana",
+     "Olmo de monte",
+     "Olmo montano",
+     "olmo escocés"
+    ],
+    "it": [
+     "Olmo montano"
+    ],
+    "fr": [
+     "Orme blanc",
+     "Orme de montagne",
+     "Orme des montagne",
+     "orme des montagnes"
+    ],
+    "pt": [
+     "Olmo"
+    ],
+    "ja": [
+     "セイヨウハルニレ"
+    ]
+   }
+  },
+  {
    "common": "Weeping willow hybrid",
    "latin": "Salix x pendulina 'Lasipalatski'"
   },
@@ -15052,6 +15156,10 @@
      "ホワイト・アッシュ"
     ]
    }
+  },
+  {
+   "common": "White Basswood",
+   "latin": "Tilia heterophylla"
   },
   {
    "common": "White Fig and Banyan Fig",
@@ -15842,6 +15950,26 @@
     ],
     "de": [
      "Kilikische Tanne"
+    ]
+   }
+  },
+  {
+   "common": "Manchurian Fir",
+   "latin": "Abies holophylla",
+   "mapped": false,
+   "names": {
+    "en": [
+     "Needle Fir"
+    ],
+    "nl": [
+     "Mandsjoerijse zilverspar",
+     "Mantsjoerijse zilverspar"
+    ],
+    "de": [
+     "Mandschurische Tanne"
+    ],
+    "es": [
+     "Abeto de Manchuria"
     ]
    }
   },
@@ -16693,6 +16821,20 @@
     ],
     "fr": [
      "Charme d'Amérique"
+    ]
+   }
+  },
+  {
+   "common": "Pignut Hickory",
+   "latin": "Carya glabra",
+   "mapped": false,
+   "names": {
+    "de": [
+     "Ferkelnuss"
+    ],
+    "fr": [
+     "Caryer des Pourceaux",
+     "Caryer glabre"
     ]
    }
   },
@@ -19257,6 +19399,11 @@
    }
   },
   {
+   "common": "Velvet Mesquite",
+   "latin": "Prosopis velutina",
+   "mapped": false
+  },
+  {
    "common": "Cherry Plum",
    "latin": "Prunus cerasifera",
    "mapped": false,
@@ -20568,11 +20715,6 @@
      "アカニレ"
     ]
    }
-  },
-  {
-   "common": "September Elm",
-   "latin": "Ulmus serotina",
-   "mapped": false
   },
   {
    "common": "Oregon Myrtle, California Bay",
