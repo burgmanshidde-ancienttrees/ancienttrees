@@ -21,6 +21,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-11-10 night run (18:37 window): nothing shipped, shelf dry
+
+Rungs 1 and 2 clear: no sightings waiting, and health.py clear apart from an orange web-error type ("maplibregl is not defined", inline script). The refill step sent a verify agent to Coimbra and it found 0 trees. The four unmined register candidates were already live or leads. The council's Anexo VII tree list (Edital 198/2023) came back as a PDF this runner cannot read, noted on the Quinta das Lágrimas lead. The seven READY leads were already worked earlier today, so there was no write pass. Phoenix scouting was retried with no new angle reachable here, so it stays stalled with "retried" set to 2026-11-10. The Coimbra claim was left in place because cbr_007 sits verified but unmerged. Preflight reports 0 problems, but it also lists 4 reader submissions with no written verdict (`python3 scripts/judgement.py --open`), which I did not look at. For Hidde: nothing. A session with a PDF text tool could mine Anexo VII for Coimbra trees.
+
 ## 2026-11-10 session: Android search, tree page and draft at parity with the iPhone (parity batch 10)
 
 - **Product (Android, not in any store):** search shows your recent searches when signed in (read from and written to the account's `recent_searches`, the same rows the iPhone and the website use; a cross per row and Clear all), and a town we hold no trees in now gets the grey card, the towns and the nearest tree we hold (Bern: card, Bern in Switzerland, the Linden of Morat 27 km). The tree page's collect sheet has Remove from collected, done at once with Undo that puts the tick back on its first day, and the collected date line. A tree being added has Move the pin and Merge with another tree in its menu; MergeChooser is ported from the Swift.

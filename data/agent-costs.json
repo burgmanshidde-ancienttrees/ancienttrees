@@ -4,6 +4,14 @@
     "2026-11-10": [
       {
         "date": "2026-11-10",
+        "kind": "verify",
+        "target": "coimbra",
+        "tokens": 60000,
+        "trees": 0,
+        "note": "No new tree: the 4 unmined register candidates were already live or leads. Edital 198/2023 Anexo VII fetched via archive but unreadable without a PDF tool. Token count is an estimate."
+      },
+      {
+        "date": "2026-11-10",
         "kind": "write",
         "target": "fort-worth + tucson + vienna + indianapolis (READY leads in st-louis, windsor, segovia held)",
         "tokens": 120000,
