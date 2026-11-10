@@ -19,7 +19,7 @@
     },
     {
       "what": "Sign in",
-      "why": "Google instead of Apple; Sign in with Apple does not exist on Android."
+      "why": "Continue with Apple and Continue with Google open in a Custom Tab, Supabase's ordinary OAuth redirect, the website's route; the iPhone shows Apple's own sheet for Apple and ASWebAuthenticationSession for Google. Same pills, words, order and account."
     },
     {
       "what": "Status and navigation bars",
@@ -118,8 +118,9 @@
   },
   "signin": {
     "status": "parity",
-    "differences": [
-      "Continue with Apple is not there (forced: Sign in with Apple does not exist on Android); Google and email are the iPhone's pills, sizes and order."
+    "differences": [],
+    "notes": [
+      "Continue with Apple is the iPhone's dark pill, first, Apple's logo at the leading edge, then Google and email, 10 apart. Apple goes through Supabase's Apple OAuth redirect in a Custom Tab (Account.openApple), returning on ancienttrees://auth-callback, so an account made with Apple on an iPhone opens here. A first Apple sign-in on Android gets a generated profile name, as the website's redirect fallback does: the redirect carries no name."
     ],
     "owner": null
   },

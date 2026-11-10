@@ -36,4 +36,11 @@ class AccountTest {
         assertTrue(Session("a", "r", now + 120_000, "u", null).isFresh)
         assertTrue(!Session("a", "r", now + 30_000, "u", null).isFresh)
     }
+
+    /** Apple the website's way: Supabase's authorize redirect, back on the iPhone's own callback. */
+    @Test fun appleGoesThroughSupabasesRedirectToTheAppsCallback() {
+        val u = Account.authorizeUrl("apple")
+        assertTrue(u.startsWith(Supa.URL_BASE + "/auth/v1/authorize?provider=apple&"))
+        assertTrue(u.endsWith("redirect_to=ancienttrees%3A%2F%2Fauth-callback"))
+    }
 }

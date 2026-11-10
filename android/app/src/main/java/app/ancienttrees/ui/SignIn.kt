@@ -3,10 +3,10 @@
 // one line, the sign-in pills of one size 10 apart, a red line when something went
 // wrong, and the terms in one line. The cross in the corner closes it.
 //
-// Forced difference (data/android-parity.json): no "Continue with Apple" on
-// Android. The iPhone's dark Apple pill is the one thing missing; Google keeps its
-// cream pill and opens in the phone's browser and comes back
-// on ancienttrees://auth-callback (Account.kt), so no sign-in library is added.
+// The iPhone's three pills in its order: the dark "Continue with Apple" first, then
+// Google's cream pill, then email. Apple and Google open in a Custom Tab and come
+// back on ancienttrees://auth-callback (Account.kt), so no sign-in library is
+// added; the iPhone's Apple sheet is Apple's own, which Android does not have.
 
 package app.ancienttrees.ui
 
@@ -36,6 +36,8 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.LocalContentColor
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
@@ -111,6 +113,7 @@ private fun problemText(p: Problem): String = stringResource(
         Problem.COULD_NOT_SEND -> R.string.problem_send
         Problem.LINK_USED -> R.string.problem_link
         Problem.GOOGLE_OFF -> R.string.problem_google
+        Problem.APPLE_OFF -> R.string.problem_apple
     },
 )
 
@@ -181,6 +184,10 @@ private fun Ask(account: Account, reason: SignInReason) {
         }
         // 10 apart, where Hidde stopped complaining (SignIn.swift, 2026-10-09).
         Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            // A custom Sign in with Apple button, as the iPhone's (SignIn.swift; Apple's HIG
+            // allows their logo, "Continue with Apple", black or white): loud, first.
+            SignInPill(stringResource(R.string.signin_apple), loud = true, enabled = !working, tag = "signin-apple",
+                mark = { Icon(AppleLogo, null, Modifier.size(18.dp), tint = LocalContentColor.current) }) { account.openApple(context) }
             SignInPill(stringResource(R.string.signin_google), loud = false, enabled = !working, tag = "signin-google",
                 mark = { Image(GoogleG, null, Modifier.size(18.dp)) }) { account.openGoogle(context) }
             if (!emailOpen) {
@@ -331,8 +338,21 @@ fun SignInPill(
             title, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 17.sp, color = fg, maxLines = 1,
             modifier = Modifier.padding(horizontal = 50.dp),
         )
-        if (mark != null) Box(Modifier.align(Alignment.CenterStart).padding(start = 22.dp).size(18.dp)) { mark() }
+        if (mark != null) Box(Modifier.align(Alignment.CenterStart).padding(start = 22.dp).size(18.dp)) {
+            CompositionLocalProvider(LocalContentColor provides fg) { mark() }
+        }
     }
+}
+
+/** Apple's logo, the same paths the website's Apple button draws (SignInPanel.astro), on a 24 grid. */
+private val AppleLogo: ImageVector by lazy {
+    fun p(d: String) = PathParser().parsePathString(d).toNodes()
+    ImageVector.Builder("AppleLogo", 18.dp, 18.dp, 24f, 24f).apply {
+        addPath(p("M17.05 12.04c-.02-2.4 1.96-3.55 2.05-3.6-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.91-.43 7.22 1.2 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.46 0 1.87.78 3.14.76 1.3-.02 2.12-1.18 2.91-2.34.92-1.34 1.3-2.64 1.32-2.71-.03-.01-2.53-.97-2.55-3.85z"),
+            fill = SolidColor(Color.Black))
+        addPath(p("M14.72 4.7c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.63-2.8 1.43-.61.71-1.15 1.85-1.01 2.94 1.07.08 2.15-.54 2.82-1.34z"),
+            fill = SolidColor(Color.Black))
+    }.build()
 }
 
 /** The four-colour G, Google's own asset geometry (GoogleButton.swift), in an 18 x 18 box. */

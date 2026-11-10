@@ -21,6 +21,7 @@
     <string name="signin_sub_named">Connectez-vous pour enregistrer %1$s. Un compte conserve ce que vous collectionnez, sur tous les appareils que vous utilisez.</string>
     <string name="signin_placeholder">vous@exemple.com</string>
     <string name="signin_send">Envoyez-moi un lien de connexion</string>
+    <string name="signin_apple">Continuer avec Apple</string>
     <string name="signin_google">Continuer avec Google</string>
     <string name="signin_email">Continuer avec l\'e-mail</string>
     <string name="signin_fine">En continuant, vous acceptez les &lt;a href=\"https://ancienttrees.app/terms\"&gt;Conditions&lt;/a&gt; et la &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Confidentialité&lt;/a&gt;.</string>
@@ -44,6 +45,7 @@
     <string name="problem_send">Impossible de l\'envoyer pour l\'instant. Réessayez dans une minute.</string>
     <string name="problem_link">Ce lien de connexion a déjà servi ou a expiré. Demandez-en un nouveau.</string>
     <string name="problem_google">La connexion avec Google n\'a pas fonctionné. Utilisez votre e-mail pour l\'instant.</string>
+    <string name="problem_apple">La connexion avec Apple n\'a pas fonctionné. Utilisez votre e-mail pour l\'instant.</string>
     <!-- /sign-in -->
     <!-- collect -->
     <string name="seen_it">Collectionner cet arbre</string>
