@@ -153,9 +153,10 @@ fun ContributeSheet(
                 Spacer(Modifier.width(72.dp))
             }
             // The Form's own inset under an inline bar.
-            Spacer(Modifier.height(32.dp))
-            val group = Modifier.fillMaxWidth().background(brand.surface, RoundedCornerShape(10.dp))
-            val cell = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 11.dp)
+            Spacer(Modifier.height(48.dp))
+            // iOS 26's grouped rows: 52 tall, the group's corners round at 20.
+            val group = Modifier.fillMaxWidth().background(brand.surface, RoundedCornerShape(20.dp))
+            val cell = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 15.dp)
 
             @Composable
             fun Header(text: String) = Text(
@@ -194,7 +195,7 @@ fun ContributeSheet(
                         fontSize = 16.sp,
                         fontWeight = FontWeight.SemiBold,
                         color = brand.moss,
-                        modifier = Modifier.fillMaxWidth().heightIn(min = 44.dp)
+                        modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)
                             .clickable(role = Role.Button, onClick = onNeedsSignIn).testTag("contribute-signin")
                             .then(cell),
                     )
@@ -215,7 +216,7 @@ fun ContributeSheet(
                             ContributeKind.entries.forEachIndexed { i, k ->
                                 if (i > 0) Divider()
                                 Row(
-                                    Modifier.fillMaxWidth().heightIn(min = 44.dp)
+                                    Modifier.fillMaxWidth().heightIn(min = 52.dp)
                                         .clickable(role = Role.RadioButton) { kind = k }
                                         .padding(horizontal = 16.dp).testTag("contribute-kind-${k.raw}"),
                                     verticalAlignment = Alignment.CenterVertically,
