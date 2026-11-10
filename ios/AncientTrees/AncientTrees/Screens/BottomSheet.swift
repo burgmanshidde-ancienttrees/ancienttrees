@@ -534,6 +534,10 @@ struct BottomSheet<Header: View, Content: View>: View {
                     // bottom margin.
                     .opacity(barDepth > 0 && pageClose ? progress : 0)
                     .allowsHitTesting(barDepth > 0 && pageClose && progress > 0.9)
+                    // Gone to VoiceOver and the layout gate wherever it is
+                    // switched off: on the map tab the folding grip row clips
+                    // it to 36 points, a button nobody can see or tap.
+                    .accessibilityHidden(!(barDepth > 0 && pageClose && progress > 0.9))
                     .accessibilityLabel("Back to the map")
                     .accessibilityIdentifier("sheet-page-close")
                 }
