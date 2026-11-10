@@ -131,18 +131,39 @@ def _android(frames, build):
 def page(frames):
     status = json.loads(STATUS.read_text()) if STATUS.exists() else {}
     forced = status.get("_android_forced", [])
+    # scripts/android_spacing.py's measurement, when one was made: the vertical
+    # gaps and heights that differ from the iPhone's by more than 2.
+    sp_path = OUT / "spacing.json"
+    spacing = json.loads(sp_path.read_text()) if sp_path.exists() else {}
+    table = []
     rows = []
     for name in frames:
         s = status.get(name, {})
         diffs = "".join(f"<li>{html.escape(d)}</li>" for d in s.get("differences", [])) or "<li>none listed</li>"
+        sp = spacing.get(name)
+        if not sp:
+            cell, sp_html = "not measured", ""
+        elif "error" in sp:
+            cell, sp_html = sp["error"], ""
+        else:
+            over = sp["differences"]
+            cell = (f"{sp['failing']} failing, " if sp["failing"] else "") + f"{len(over)} over 2 of {sp['measured']}"
+            sp_html = "".join(
+                f"<li>{'<b>' if r['fails'] else ''}{r['diff']:+g}{'</b>' if r['fails'] else ''} "
+                f"{html.escape(r['what'])} (iPhone {r['ios']:g}, Android {r['android']:g})"
+                f"{' allowed: ' + html.escape(r['allowed']) if r.get('allowed') else ''}</li>" for r in over) or "<li>all within 2</li>"
+            sp_html = f"<h3>Vertical spacing</h3><ul>{sp_html}</ul>"
+        table.append(f"<tr><td><a href=\"#{html.escape(name)}\">{html.escape(name)}</a></td>"
+                     f"<td>{html.escape(s.get('status', 'not-ported'))}</td><td>{html.escape(cell)}</td></tr>")
         rows.append(f"""
-<section>
+<section id="{html.escape(name)}">
   <h2>{html.escape(name)} <span class="st {html.escape(s.get('status', 'not-ported'))}">{html.escape(s.get('status', 'not-ported'))}</span></h2>
   <div class="pair">
     <figure><img src="ios/{name}.png" alt=""><figcaption>iPhone</figcaption></figure>
     <figure><img src="android/{name}.png" alt=""><figcaption>Android</figcaption></figure>
   </div>
   <h3>Open differences</h3><ul>{diffs}</ul>
+  {sp_html}
 </section>""")
     forced_html = "".join(f"<li><b>{html.escape(f['what'])}</b>: {html.escape(f['why'])}</li>" for f in forced)
     (OUT / "index.html").write_text(f"""<!doctype html><meta charset="utf-8">
@@ -154,11 +175,13 @@ h1{{font-size:26px}} h2{{font-size:20px;margin-top:40px}} h3{{font-size:15px;mar
 .pair{{display:flex;gap:16px}} figure{{margin:0;flex:1}} img{{width:100%;border:1px solid #E6E6E6;border-radius:12px}}
 figcaption{{text-align:center;color:#5C6350;font-size:13px}}
 .st{{font-size:12px;padding:2px 8px;border-radius:99px;background:#F2F2F2;vertical-align:middle}}
+table{{border-collapse:collapse;font-size:14px}} td,th{{padding:3px 10px;border-bottom:1px solid #E6E6E6;text-align:left}}
 .st.parity{{background:#EDF3E3;color:#4A6B2A}} .st.not-ported{{background:#FBE9E7;color:#B22222}}
 </style>
 <h1>Android next to iPhone</h1>
 <p>Each screen in the same state on both phones. A difference without a reason is a bug.</p>
 <h3>What Android itself forces</h3><ul>{forced_html}</ul>
+<table><tr><th>Screen</th><th>Status</th><th>Vertical spacing (android_spacing.py)</th></tr>{''.join(table)}</table>
 {''.join(rows)}
 """)
     print(f"page: {OUT / 'index.html'}")

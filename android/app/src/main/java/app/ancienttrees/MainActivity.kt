@@ -17,6 +17,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Box
@@ -82,7 +84,14 @@ class MainActivity : ComponentActivity() {
         setContent {
             // A new set of launch arguments starts the screen afresh (debug builds only).
             androidx.compose.runtime.key(launch) {
-                AncientTreesTheme { App(link, onLinkRead = { link = null }, launch = launch) }
+                // Test tags as resource ids, so UI Automator names an element as
+                // the iPhone's accessibilityIdentifier does (scripts/android_spacing.py).
+                @OptIn(androidx.compose.ui.ExperimentalComposeUiApi::class)
+                androidx.compose.foundation.layout.Box(
+                    androidx.compose.ui.Modifier.semantics { testTagsAsResourceId = true },
+                ) {
+                    AncientTreesTheme { App(link, onLinkRead = { link = null }, launch = launch) }
+                }
             }
         }
     }

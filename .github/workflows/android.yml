@@ -9,10 +9,14 @@ on:
     paths:
       - 'android/**'
       - '.github/workflows/android.yml'
+      - 'scripts/android_spacing.py'
+      - 'data/ios-frames.json'
   pull_request:
     paths:
       - 'android/**'
       - '.github/workflows/android.yml'
+      - 'scripts/android_spacing.py'
+      - 'data/ios-frames.json'
   workflow_dispatch:
 
 concurrency:
@@ -110,4 +114,49 @@ jobs:
         with:
           name: android-walk-report
           path: android/app/build/reports/androidTests/connected
+          retention-days: 7
+
+  # THE IPHONE'S VERTICAL SPACING (scripts/android_spacing.py; Hidde,
+  # 2026-11-10: "the vertical spacing feels different on certain pages - make
+  # sure that design really are alike"). Every ported screen opened with the
+  # iPhone's own launch arguments on a 1080 by 2400 phone set to 402 dp wide,
+  # its UI Automator tree held against the iPhone 17 Pro's frames in
+  # data/ios-frames.json: a gap or height more than 4 off fails, unless
+  # data/android-parity.json gives that gap a reason.
+  spacing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: android-debug-apk
+          path: apk
+
+      - name: Let the emulator use the processor's virtualisation
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Measure every ported screen
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          target: google_apis
+          profile: pixel_6
+          cores: 4
+          ram-size: 4096M
+          disable-animations: true
+          script: python3 scripts/android_spacing.py --ci --apk apk/app-debug.apk
+
+      - name: Keep the measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-spacing
+          path: out/parity
           retention-days: 7
