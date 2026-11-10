@@ -35,10 +35,10 @@ GLYPHS = {
     # line"; CONVENTIONS.md "One app on iPhone and Android"): back is the arrow,
     # share Android's share, the overflow menu the vertical dots. They come from
     # this same set, which is Android's own.
-    "ArrowBack": ("arrow_back", False, 400, True),  # chevron.left on the iPhone
+    "ArrowBack": ("arrow_back", False, 600, True),  # chevron.left on the iPhone, semibold
     "Share": ("share", False, 400, False),  # square.and.arrow.up on the iPhone
     "ShareSemibold": ("share", False, 600, False),
-    "MoreVert": ("more_vert", False, 400, False),  # ellipsis.circle / ellipsis on the iPhone
+    "MoreVert": ("more_vert", False, 600, False),  # ellipsis.circle on the iPhone, 17 semibold
     "ChevronRight": ("chevron_right", False, 400, True),  # chevron.right
     "KeyboardArrowDown": ("keyboard_arrow_down", False, 400, False),  # chevron.down
     "UnfoldMore": ("unfold_more", False, 400, False),  # chevron.up.chevron.down

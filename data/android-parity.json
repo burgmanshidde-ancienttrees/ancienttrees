@@ -7,7 +7,11 @@
     },
     {
       "what": "Back",
-      "why": "Android's system back gesture and button close the top sheet or page, as every Android app does. The sign itself is Android's too: back is the arrow (←), share is Android's share glyph and the overflow menu the vertical dots (⋮), each from Material Symbols Rounded (Hidde, 2026-11-10, \"Yes, Airbnb's line\")."
+      "why": "Android's system back gesture and button close the top sheet or page, as every Android app does."
+    },
+    {
+      "what": "Back, share and overflow signs",
+      "why": "Airbnb's line (Hidde, 2026-11-10: \"Yes, Airbnb's line\"): brand, type, colour, layout and our own icons are the iPhone's; the system signs take Android's form, drawn in the same set (Material Symbols Rounded) at the iPhone's weight: back is the arrow (←) where the iPhone draws chevron.left, share is Android's three connected dots where it draws square.and.arrow.up, and the overflow menu is the vertical dots (⋮) where it draws ellipsis.circle. Source: CONVENTIONS.md, \"One app on iPhone and Android\" (2026-11-10)."
     },
     {
       "what": "Permission dialogs",

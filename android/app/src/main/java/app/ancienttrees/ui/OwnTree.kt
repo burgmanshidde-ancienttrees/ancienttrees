@@ -215,7 +215,7 @@ private fun OwnTreeInner(
         Column(Modifier.align(Alignment.BottomCenter).fillMaxWidth().background(brand.ground)) {
             Box(Modifier.fillMaxWidth().height(0.5.dp).background(brand.hairline))
             Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp).padding(top = 10.dp, bottom = 8.dp).navigationBarsPadding()) {
-                BigButton(stringResource(R.string.share_tree), Sym.Share, Modifier.weight(1f)) {
+                BigButton(stringResource(R.string.share_tree), Sym.ShareSemibold, Modifier.weight(1f)) {
                     if (preparing) return@BigButton
                     preparing = true
                     scope.launch {
