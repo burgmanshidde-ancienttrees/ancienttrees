@@ -33,7 +33,10 @@ android {
     }
 }
 
-kotlin { jvmToolchain(17) }
+// Bytecode for Java 17, built by whichever JDK runs Gradle (Android Studio's
+// own 21 or 25, or CI's 17). No toolchain demand: a demand for an exact JDK the
+// Mac does not have is what stopped the first sync (2026-11-10).
+kotlin { compilerOptions { jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17) } }
 
 dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2025.12.00")
