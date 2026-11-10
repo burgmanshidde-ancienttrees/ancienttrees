@@ -9,6 +9,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         applicationId = "app.ancienttrees.android"
         minSdk = 26
         targetSdk = 36
@@ -56,6 +57,15 @@ dependencies {
     implementation("org.maplibre.gl:android-sdk:13.7.1")
 
     testImplementation("junit:junit:4.13.2")
+    // The flow walk on the emulator (FlowWalk.kt), the iPhone's FlowWalk.swift.
+    androidTestImplementation(composeBom)
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    // 3.7 and 1.7 or later: older Espresso calls InputManager.getInstance, gone on Android 37.
+    androidTestImplementation("androidx.test.ext:junit:1.3.0")
+    androidTestImplementation("androidx.test:runner:1.7.0")
+    androidTestImplementation("androidx.test:core:1.7.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
     // Android has org.json built in; a test on the build machine needs a copy.
     testImplementation("org.json:json:20250107")
 }

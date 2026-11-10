@@ -49,6 +49,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -71,6 +72,9 @@ object TabBar {
 }
 
 private data class TabItem(val title: Int, val outline: ImageVector, val filled: ImageVector)
+
+/** The iPhone's accessibility identifiers, so the walk names the same controls. */
+private val TAB_TAGS = listOf("tab-map", "tab-discover", "tab-my-trees")
 
 private val ITEMS = listOf(
     TabItem(R.string.tab_map, Icons.Outlined.Map, Icons.Filled.Map),
@@ -126,7 +130,8 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
                                 indication = null,
                                 role = Role.Tab,
                             ) { select(i) }
-                            .semantics { this.selected = on },
+                            .semantics { this.selected = on }
+                            .testTag(TAB_TAGS[i]),
                     ) {
                         Icon(
                             if (on) item.filled else item.outline,
@@ -158,6 +163,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
                 .background(glass, CircleShape)
                 .background(wash, CircleShape)
                 .border(0.5.dp, edge, CircleShape)
+                .testTag("tab-collect")
                 .clickable(role = Role.Button, onClick = collect)
                 .semantics { contentDescription = collectLabel },
         ) {

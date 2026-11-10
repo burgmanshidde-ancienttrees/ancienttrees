@@ -28,6 +28,17 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="ancienttrees" android:host="auth-callback" />
             </intent-filter>
+            <!-- The website's pages the app has a screen for (the iPhone's universal
+                 links). Android opens them here only once ancienttrees.app publishes
+                 .well-known/assetlinks.json with the Play signing key; until then the
+                 browser keeps them. A page the app has no screen for goes back to the browser. -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="ancienttrees.app" />
+            </intent-filter>
         </activity>
         <provider
             android:name="androidx.core.content.FileProvider"

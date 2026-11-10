@@ -176,6 +176,8 @@ fun DiscoverScreen(
     scrollToTop: Int,
     discoverTo: String?,
     act: DiscoverActions,
+    /** A collection a link asked for, with a nonce so the same link twice opens it twice. */
+    openCollection: Pair<Long, String>? = null,
 ) {
     val brand = Brand.colors
     val month = remember { Calendar.getInstance().get(Calendar.MONTH) + 1 }
@@ -187,6 +189,7 @@ fun DiscoverScreen(
     var visitorRows by remember { mutableStateOf<List<NewFromVisitors.Row>>(emptyList()) }
     LaunchedEffect(signedIn) { visitorRows = NewFromVisitors.load(token()) }
     var page by remember { mutableStateOf<DiscoverPage?>(null) }
+    LaunchedEffect(openCollection) { openCollection?.let { page = DiscoverPage.Collection(it.second) } }
     var searching by remember { mutableStateOf(false) }
     LaunchedEffect(searching) { act.searching(searching) }
 

@@ -61,6 +61,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
@@ -252,7 +253,7 @@ private fun MyTreesInner(
     val mapTrees = visited + ownAsTrees.values.map { it.asTree() }
     val navBottom = WindowInsets.navigationBars.getBottom(density).toFloat()
 
-    Box(Modifier.fillMaxSize().background(Brand.colors.ground)) {
+    Box(Modifier.fillMaxSize().background(Brand.colors.ground).testTag("collection-tab")) {
         TreeMapView(
             trees = mapTrees,
             selected = selected,
