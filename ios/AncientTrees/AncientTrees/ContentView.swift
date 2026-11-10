@@ -541,10 +541,13 @@ struct ContentView: View {
         // under a bar nobody can see. This has an else, so the
         // inset never disappears, and it swaps the bar out rather
         // than dimming it, so nothing invisible is left behind.
-        if showing {
+        // Hidden while the map tab's list is down to its count bar: the map
+        // takes the screen, as on Airbnb (Navigator.mapTakesScreen, build 42).
+        if showing && !(tab == 0 && navigator.mapTakesScreen) {
             TabBar(selected: tab,
                    select: { tabSelection.wrappedValue = $0 },
                    collect: { openCollect() })
+            .transition(.move(edge: .bottom).combined(with: .opacity))
         } else {
             Color.clear.frame(height: 0)
         }
@@ -651,6 +654,7 @@ struct ContentView: View {
         // applies its automatic .fill inside the tab item, underneath
         // an environment set on the TabView itself.
         .safeAreaInset(edge: .bottom, spacing: 0) { tabBarInset }
+        .animation(.spring(duration: 0.28), value: navigator.mapTakesScreen)
         // Above the tab bar on a tab's root, above the page's own docked bar
         // on a pushed page that has one (SnackLift), and otherwise near the
         // foot. It sat 92 up everywhere, which floated it over the middle of

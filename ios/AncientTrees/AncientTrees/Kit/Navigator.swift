@@ -38,6 +38,11 @@ public final class Navigator {
     /// Set together with selectTab = 2, cleared by Collect when it switches.
     public var openWantToVisit = false
 
+    /// THE MAP TAKES THE SCREEN (Hidde, 2026-11-08, Airbnb, build 42): the map
+    /// tab's list is down to its count bar, so the root hides the tab bar
+    /// until a tap or a swipe brings the list back. Set by MapTab only.
+    public var mapTakesScreen = false
+
     /// THE ONE-LINE CONFIRMATION at the bottom of the screen (Hidde,
     /// 2026-10-10: "when pressing the bookmark sign a confirmation ... this
     /// tree was added to want to visit list would be nice"). Airbnb's "Saved

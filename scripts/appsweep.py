@@ -239,6 +239,8 @@ def screens(sub):
     plan = [
         ("map",           ["-tab=0"], 7),
         ("map-full",      ["-tab=0", "-sheet=full"], 7),
+        # The list at its count bar, no tab bar (build 42, Airbnb).
+        ("map-bar",       ["-tab=0", "-sheet=bar"], 7),
         # A TAPPED PIN, the sheet as that tree (2026-10-20). Photographed and
         # measured because four rounds of it reached Hidde misaligned before
         # anything had checked its edges ("how can we prevent you in the

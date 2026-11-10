@@ -222,7 +222,11 @@ const scripts = mapScript + searchWidgetJs(lang);
         highlight, a row, or the empty map's nearest tree), cut off by the
         screen edge, so the list reads as something to pull up (sheet-js.ts,
         Hidde 2026-10-25). */}
-    <aside class="panel" id="sheet" data-peek-row=".tree-hl, .tree-card-row, .exc-card">
+    {/* data-results: a results list over a map, Airbnb's (Hidde, 2026-11-08,
+        build 42, the app's sheetResults): at full height the sheet is the
+        page under the bar, with no grip and no count, and the Map pill below
+        is the way back down. */}
+    <aside class="panel" id="sheet" data-results data-peek-row=".tree-hl, .tree-card-row, .exc-card">
       <div class="sheet-grab">
         <div class="panel-head">
           <h1>{U.exploreHeading}</h1>
@@ -245,6 +249,8 @@ const scripts = mapScript + searchWidgetJs(lang);
         </div>
       </div>
     </aside>
+    {/* Shown on a phone only while the sheet is at full height (style.css). */}
+    <button type="button" class="sheet-map-pill" id="sheet-map-pill"><Fragment set:html={icon("map-trifold")} /><span>{U.mapPill}</span></button>
     <div class="stage">
       <MapFilters lang={lang} />
       <div id="map" class="map"></div>

@@ -52,6 +52,8 @@ struct MapTab: View {
     /// The gesture itself is still asserted, by the test that is about it.
     /// 0 at the half stop, 1 when the sheet is the page (SheetPageProgressKey).
     @State private var pageProgress: CGFloat = 0
+    /// The count strip's own height, so it can fold at full (countStrip).
+    @State private var countHeight: CGFloat = 0
     @State private var sheetHeight: SheetHeight =
         // -sheet=half as well as -sheet=full, since 2026-08-27: the App Store
         // screenshot of the map wants the shape a person actually uses, a card
@@ -59,7 +61,8 @@ struct MapTab: View {
         // photograph.
         ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full
             : (ProcessInfo.processInfo.arguments.contains("-sheet=half") ? .half
-               : (ProcessInfo.processInfo.arguments.contains("-sheet=card") ? .card : .peek))
+               : (ProcessInfo.processInfo.arguments.contains("-sheet=card") ? .card
+                  : (ProcessInfo.processInfo.arguments.contains("-sheet=bar") ? .bar : .peek)))
     @State private var query = ""
     /// When the map was last moved on purpose, so the list's own settling
     /// cannot move it back. See fly().
@@ -635,6 +638,15 @@ struct MapTab: View {
         // The page's chevron would sit under the field; this screen has the
         // "Map" button at the foot of the list for the way back instead.
         .environment(\.sheetPageClose, false)
+        // AIRBNB'S RESULTS LIST (Hidde, 2026-11-08, build 42): at full the
+        // list is the page under the field, no grip and no count; at the
+        // lowest stop only the count bar stays and the tab bar steps away.
+        .environment(\.sheetResults, true)
+        .onChange(of: sheetHeight, initial: true) { _, h in
+            navigator.mapTakesScreen = h == .bar
+        }
+        .onDisappear { navigator.mapTakesScreen = false }
+        .onAppear { navigator.mapTakesScreen = sheetHeight == .bar }
         // The list, pulled all the way up, stops under the search field
         // rather than running beneath it (Google Maps; Hidde, 2026-10-12).
         .environment(\.sheetFullInset, searchBottom > 0 ? searchBottom + 10 : 0)
@@ -661,7 +673,9 @@ struct MapTab: View {
             // button? this is chaos"): one thing floats at a time.
             if sheetHeight == .full && navigator.snack == nil {
                 Button {
-                    withAnimation(.spring(duration: 0.28)) { sheetHeight = .peek }
+                    // DOWN TO THE COUNT BAR, the map's whole screen (Airbnb's
+                    // Map pill, Hidde 2026-11-08, build 42).
+                    withAnimation(.spring(duration: 0.28)) { sheetHeight = .bar }
                 } label: {
                     Label("Map", systemImage: "map.fill")
                         .font(.brand(15, .bold))
@@ -766,7 +780,7 @@ struct MapTab: View {
                 // middle stop for a picked place, so its name, count, share and
                 // first card are in view; a sheet you raised yourself stays.
                 switch hit {
-                case .city, .country: if sheetHeight == .peek { sheetHeight = .card }
+                case .city, .country: if sheetHeight == .peek || sheetHeight == .bar { sheetHeight = .card }
                 default: break
                 }
                 selected = nil
@@ -844,7 +858,7 @@ struct MapTab: View {
         filters = MapFilters()
         flownPlace = p
         fly(to: p.lat, lng: p.lng, span: EmptyPlace.spanMetres)
-        if sheetHeight == .peek { sheetHeight = .card }
+        if sheetHeight == .peek || sheetHeight == .bar { sheetHeight = .card }
     }
 
     /// The cross: the list comes back at the height it had, the pin shrinks.
@@ -931,7 +945,7 @@ struct MapTab: View {
             // heads a list in iOS Settings. In the list and not in the sheet's
             // header, because the header is the grip that drags the sheet back
             // down, and a button there takes the drag (CI caught exactly that).
-            if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
+            if let t = arrived, sheetHeight != .peek, sheetHeight != .bar { arrivalCard(t) }
             list
         }
     }
@@ -968,8 +982,6 @@ struct MapTab: View {
             // A 2026-10-12 change showed it at full height again; Hidde,
             // 2026-10-13, still did not want it there, so the 10-10 ruling
             // stands: the words go (kept in layout, hidden), the strip stays.
-            .opacity(sheetHeight == .full ? 0 : 1)
-            .accessibilityHidden(sheetHeight == .full)
             .frame(maxWidth: .infinity)
             // The grip row above already carries its own air (Hidde,
             // 2026-10-20: the grip stays as it is on every sheet), so the
@@ -978,6 +990,19 @@ struct MapTab: View {
             // itself starts flush under this strip).
             .padding(.bottom, 11)
             .accessibilityIdentifier("map-count")
+            // AT FULL HEIGHT THE STRIP GOES, words and room alike (Hidde,
+            // 2026-11-08, Airbnb, build 42: "er zit veel loze ruimte boven in
+            // de lijst"). This reverses his 2026-10-10 and 10-13 rulings that
+            // kept it as the grip back down; the floating Map pill is that
+            // handle now. It folds with the sheet frame by frame, as the grip
+            // above it does (BottomSheet `fold`), so nothing jumps on release.
+            .onGeometryChange(for: CGFloat.self) { $0.size.height } action: {
+                if $0 > 0, abs($0 - countHeight) >= 1 { countHeight = $0 }
+            }
+            .frame(height: countHeight > 0 ? countHeight * (1 - pageProgress) : nil, alignment: .top)
+            .opacity(1 - pageProgress)
+            .clipped()
+            .accessibilityHidden(sheetHeight == .full)
     }
 
     /// The moment the whole product exists for, surfaced where the user already
