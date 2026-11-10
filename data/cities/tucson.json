@@ -492,6 +492,36 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "tus_015",
+      "name": "The Sonoran Seed Pochote",
+      "species": "Pochote (Ceiba aesculifolia)",
+      "age_estimate": "planted 1979",
+      "age_min": 46,
+      "age_max": 47,
+      "age_basis": "source",
+      "location": {
+        "address": "University of Arizona campus (Campus Arboretum accession 2476), Tucson, AZ",
+        "latitude": 32.22898,
+        "longitude": -110.95324,
+        "neighbourhood": "University of Arizona campus"
+      },
+      "verified_sources": [
+        "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4"
+      ],
+      "access": "Free: on the open University of Arizona campus grounds (outdoor, no entry fee or permission needed).",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree began as a seed in Sonora. Warren Jones collected it in the Mexican state to the south, and in 1979 it went into the ground on the University of Arizona campus, where the Campus Arboretum now lists it as a heritage tree.\n\nIts species, Ceiba aesculifolia, keeps unusual hours. The arboretum records it as night-blooming and pollinated by bats, which means its flowers do their work after the lecture halls have emptied. The arboretum's map calls it a kapok, and gives the botanical name alongside.\n\nBy the standards of this page it is young, about 46 years old by its planting date. What earns it a place is the journey and the company. It was carried north as a seed, raised here, and grown into one of the trees the university has chosen to look after. Its genus has another member on the campus, the original floss silk tree south of the Engineering Building, about 400 metres away, so the two make a short walk between relatives planted a generation apart.\n\nThe arboretum gives no height, no girth and no flowering month for it. If you have seen it in bloom, tell us when, and if you have measured the trunk, tell us that too. The campus is open and free to walk.",
+      "how_to_recognise": "You can recognise it as the Ceiba aesculifolia the arboretum records as accession 2476. It stands about 130 metres southeast of the salvaged fig east of the Gould-Simpson Building.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
