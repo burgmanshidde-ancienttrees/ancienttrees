@@ -155,10 +155,11 @@
     ]
   },
   "profile": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Ancient Trees Plus is not a row yet: the Plus question sheet (PlusAsk.swift) is not ported.",
+      "Ancient Trees Plus is the first row under Help, as on the iPhone (Profile.swift helpCard): it opens the city's Plus question (PlaceBox.kt PlusQuestionSheet, from PlusAsk.swift), sends the anonymous answer to plus_answers and Tell me to plus_waitlist, and the row goes once this install answered (plus.answered.v1, device) or the server's switch is off. -plusask opens it.",
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
+      "Directions offers Google Maps and Another maps app (no Apple Maps on Android, forced).",
       "Rate the app opens the Play Store page (forced)."
     ],
     "owner": null
@@ -222,10 +223,10 @@
   "profile-signed-in": {
     "status": "in-progress",
     "differences": [
-      "Ancient Trees Plus is not a row yet: the Plus question sheet (PlusAsk.swift) is not ported.",
+      "Ancient Trees Plus is the first row under Help, as on the iPhone (Profile.swift helpCard): it opens the city's Plus question (PlaceBox.kt PlusQuestionSheet, from PlusAsk.swift), sends the anonymous answer to plus_answers and Tell me to plus_waitlist, and the row goes once this install answered (plus.answered.v1, device) or the server's switch is off. -plusask opens it.",
       "Send feedback opens the website's contribute page until the feedback screen (Contribute.swift, feedbackMode) is ported.",
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
-      "As profile: no Directions row, Rate the app opens the Play Store (forced)."
+      "As profile: Directions offers Google Maps and Another maps app, Rate the app opens the Play Store (forced)."
     ],
     "owner": null
   },
@@ -323,9 +324,9 @@
     "owner": null
   },
   "people": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Pull to refresh on Find people is not added yet.",
+      "Pull to refresh on Find people loads who you follow and Suggested again (Material's pull to refresh, People.swift RefreshableWhen); Followers and Following keep still, as on the iPhone.",
       "Blocked people are held in memory and read back from the server's blocks table; the iPhone also keeps the list on the phone (hard rule 11 on Android).",
       "Share your profile opens Android's share sheet (forced)."
     ],

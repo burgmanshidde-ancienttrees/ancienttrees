@@ -37,6 +37,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -165,6 +167,7 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
     var reporting by remember { mutableStateOf<Profiles.Profile?>(null) }
     var reported by remember { mutableStateOf(false) }
     var askingPublic by remember { mutableStateOf(false) }
+    var refreshing by remember { mutableStateOf(false) }
 
     suspend fun token() = if (demo) null else host.account.fresh()?.accessToken
     suspend fun loadFollowing() {
@@ -289,7 +292,18 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
             onBack,
         )
         if (source == PeopleSource.SEARCH) SearchField(query) { query = it }
-        LazyColumn(contentPadding = PaddingValues(bottom = 90.dp)) {
+        // PULL TO REFRESH on Find people (People.swift RefreshableWhen; Hidde,
+        // 2026-11-04, "dat doen ze toch ook bij insta"): who you follow and
+        // Suggested load again. Followers and Following keep still.
+        RefreshableWhen(on = source == PeopleSource.SEARCH, refreshing = refreshing, onRefresh = {
+            scope.launch {
+                refreshing = true
+                loadFollowing()
+                loadSuggestions()
+                refreshing = false
+            }
+        }) {
+        LazyColumn(contentPadding = PaddingValues(bottom = 90.dp), modifier = Modifier.fillMaxSize()) {
             if (visible.isEmpty() && !searching && !showsSuggestions && emptyLine != null) {
                 item {
                     Text(emptyLine, fontSize = 15.sp, color = brand.inkSoft, modifier = Modifier.padding(start = 20.dp, end = 20.dp, top = 4.dp, bottom = 12.dp))
@@ -332,6 +346,7 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
                         onFollow = { toggle(p) }, onMore = { acting = p })
                 }
             }
+        }
         }
     }
 
@@ -400,6 +415,17 @@ private fun block(host: PeopleHost, p: Profiles.Profile, scope: kotlinx.coroutin
     scope.launch {
         val t = host.account.fresh()?.accessToken ?: return@launch
         if (host.moderation.hides(p.userId)) host.moderation.unblock(p.userId, me, t) else host.moderation.block(p.userId, me, t)
+    }
+}
+
+/** Pull to refresh on Find people only (People.swift RefreshableWhen); the two lists keep still. */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun RefreshableWhen(on: Boolean, refreshing: Boolean, onRefresh: () -> Unit, content: @Composable () -> Unit) {
+    if (on) {
+        PullToRefreshBox(isRefreshing = refreshing, onRefresh = onRefresh, modifier = Modifier.fillMaxSize()) { content() }
+    } else {
+        content()
     }
 }
 
