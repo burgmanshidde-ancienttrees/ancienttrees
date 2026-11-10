@@ -127,12 +127,9 @@
     "owner": null
   },
   "explore": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "A species (a pill, By species See all, a species search hit) opens the map filtered to that species; the iPhone opens its species page, which is not ported yet.",
-      "Want to visit's See all goes to the account sheet's lanes until My trees is ported.",
-      "The lists, the oldest trees and the See all pages show their trees as rows (TreeRow), not TreeCard; TreeCard has landed from the tree page and replaces them next.",
-      "The ambassador explainer is drawn as its own sheet in Discover.kt; it moves onto BrandSheet.kt (now on main from the tree page). A failed request is a one-line sheet, not the snackbar, until a snackbar is ported.",
+      "A failed ambassador request says so in a one-line BrandSheet, where the iPhone shows the snackbar: Android has no shared snackbar yet (as city).",
       "A card face with no website choice falls back to the first photographed tree; the iPhone's fallback also weighs the photograph's size, which the Android feed reader does not read yet. The feed carries a face for every shelf today, so nothing shows this.",
       "Pull to refresh is Material's spinner, the Android counterpart of the iPhone's refresh control (forced)."
     ],
@@ -248,9 +245,9 @@
     ]
   },
   "collection": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Ported with Discover (CollectionView in Home.swift): the intro and the trees, as rows (TreeRow) rather than TreeCard until the card from the tree page is swapped in."
+      "CollectionView in Home.swift: the intro, then every tree as the shared TreeCard. The back arrow in the bar and the system back are Android's (forced)."
     ],
     "owner": {
       "session": "local_8724be8d",
