@@ -51,4 +51,21 @@
     <string name="collect_lead">写真を撮って、あなたの木に加えましょう。</string>
     <string name="collect_camera">写真を撮る</string>
     <!-- /collect -->
+    <!-- seasons -->
+    <string name="seasons_heading">四季</string>
+    <string name="seasons_tally">%1$d/4</string>
+    <string name="season_now">今</string>
+    <string name="seasons_all">四季すべての写真があります</string>
+    <string name="season_spring">春</string>
+    <string name="season_summer">夏</string>
+    <string name="season_autumn">秋</string>
+    <string name="season_winter">冬</string>
+    <string name="season_chip_bloom">開花中</string>
+    <string name="season_chip_autumn">紅葉</string>
+    <string name="season_chip_fruit">実り</string>
+    <string name="season_chip_leaves">新緑</string>
+    <string name="season_chip_catkins">尾状花序</string>
+    <string name="season_chip_winter">冬の樹形</string>
+    <string name="season_chip_peak">見頃</string>
+    <!-- /seasons -->
 </resources>

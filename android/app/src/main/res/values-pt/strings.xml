@@ -52,4 +52,21 @@
     <string name="collect_lead">Tira uma fotografia para a juntar às tuas árvores.</string>
     <string name="collect_camera">Tirar uma fotografia</string>
     <!-- /collect -->
+    <!-- seasons -->
+    <string name="seasons_heading">Estações</string>
+    <string name="seasons_tally">%1$d de 4</string>
+    <string name="season_now">Agora</string>
+    <string name="seasons_all">Fotografada nas quatro estações</string>
+    <string name="season_spring">Primavera</string>
+    <string name="season_summer">Verão</string>
+    <string name="season_autumn">Outono</string>
+    <string name="season_winter">Inverno</string>
+    <string name="season_chip_bloom">Em flor</string>
+    <string name="season_chip_autumn">Cores de outono</string>
+    <string name="season_chip_fruit">Com fruto</string>
+    <string name="season_chip_leaves">Folhas novas</string>
+    <string name="season_chip_catkins">Amentilhos</string>
+    <string name="season_chip_winter">Silhueta de inverno</string>
+    <string name="season_chip_peak">Na época</string>
+    <!-- /seasons -->
 </resources>

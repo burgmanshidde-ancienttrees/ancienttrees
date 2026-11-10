@@ -52,4 +52,21 @@
     <string name="collect_lead">Mach ein Foto, um ihn zu deinen Bäumen hinzuzufügen.</string>
     <string name="collect_camera">Foto aufnehmen</string>
     <!-- /collect -->
+    <!-- seasons -->
+    <string name="seasons_heading">Jahreszeiten</string>
+    <string name="seasons_tally">%1$d von 4</string>
+    <string name="season_now">Jetzt</string>
+    <string name="seasons_all">In allen vier Jahreszeiten fotografiert</string>
+    <string name="season_spring">Frühling</string>
+    <string name="season_summer">Sommer</string>
+    <string name="season_autumn">Herbst</string>
+    <string name="season_winter">Winter</string>
+    <string name="season_chip_bloom">In Blüte</string>
+    <string name="season_chip_autumn">Herbstfärbung</string>
+    <string name="season_chip_fruit">Früchte</string>
+    <string name="season_chip_leaves">Frisches Laub</string>
+    <string name="season_chip_catkins">Kätzchen</string>
+    <string name="season_chip_winter">Wintersilhouette</string>
+    <string name="season_chip_peak">Jetzt am schönsten</string>
+    <!-- /seasons -->
 </resources>

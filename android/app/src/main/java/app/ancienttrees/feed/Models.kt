@@ -23,6 +23,8 @@ data class Photo(
     val creditLine: String?,
     val creditUrl: String?,
     val frame: Double?,
+    /** "spring", "summer", "autumn" or "winter" where the tree stands, decided on the server. */
+    val season: String? = null,
 ) {
     val card: String get() = thumb ?: url
     val full: String get() = hero ?: url
@@ -63,7 +65,20 @@ data class Tree(
     val photo: Photo?,
     val saves: Int,
     val mini: Boolean,
+    /** Every photograph, lead first; the feed sends it only when there is more than one. */
+    val photos: List<Photo> = emptyList(),
+    /** The tree goes through the seasons, so its page shows the Seasons row. */
+    val seasonal: Boolean = false,
+    /** The months of its one real peak (best_time), and which chip it wears then. */
+    val bestMonths: List<Int> = emptyList(),
+    val seasonKey: String? = null,
 ) {
+    /** What to show: the set when the feed sent one, otherwise the lead alone. */
+    val shots: List<Photo> get() = photos.ifEmpty { listOfNotNull(photo) }
+
+    /** At its best in this month (1 to 12). */
+    fun atBest(month: Int): Boolean = month in bestMonths
+
     val commonName: String get() = species.substringBefore("(").trim()
 
     /** Only when there is something to meet: the same test as the website's and the iPhone's. */

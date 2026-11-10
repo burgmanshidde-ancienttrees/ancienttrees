@@ -52,4 +52,21 @@
     <string name="collect_lead">Maak een foto om hem aan je bomen toe te voegen.</string>
     <string name="collect_camera">Maak een foto</string>
     <!-- /collect -->
+    <!-- seasons -->
+    <string name="seasons_heading">Seizoenen</string>
+    <string name="seasons_tally">%1$d van 4</string>
+    <string name="season_now">Nu</string>
+    <string name="seasons_all">Gefotografeerd in alle vier seizoenen</string>
+    <string name="season_spring">Lente</string>
+    <string name="season_summer">Zomer</string>
+    <string name="season_autumn">Herfst</string>
+    <string name="season_winter">Winter</string>
+    <string name="season_chip_bloom">In bloei</string>
+    <string name="season_chip_autumn">Herfstkleur</string>
+    <string name="season_chip_fruit">Vruchten</string>
+    <string name="season_chip_leaves">Vers blad</string>
+    <string name="season_chip_catkins">Katjes</string>
+    <string name="season_chip_winter">Wintersilhouet</string>
+    <string name="season_chip_peak">Nu op z\'n mooist</string>
+    <!-- /seasons -->
 </resources>
