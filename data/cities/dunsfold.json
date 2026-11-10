@@ -1,0 +1,68 @@
+{
+  "city": "Dunsfold",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Dunsfold's yew has concrete in it. The hollow trunk beside the south porch of the 13th-century church of St Mary and All Saints shows signs of being filled in, and yet growth from six places suggests it is renewing itself. In 1911 the Victoria County History called it probably one of the most ancient trees in Surrey. Visitors reach the churchyard through a small tunnel of yew, and it costs nothing.",
+  "meta_description": "The Dunsfold Yew in Surrey: a hollow trunk filled with concrete by the south porch of a 13th-century church, entered through a yew tunnel.",
+  "question_meta": "Dunsfold's oldest tree is the concrete-filled yew at St Mary and All Saints, 7.52 m round; probably over 800 years old by girth, undated.",
+  "question_answer": "Dunsfold's oldest and only mapped tree is the Dunsfold Yew, a European Yew (Taxus baccata) close to the south porch of St Mary and All Saints in Surrey. It measured 7.52 metres near the ground in 1998. The Ancient Yew Group's size class says probably over 800 years, an estimate, and it has not been dated.",
+  "question_context": "There are two age claims in this churchyard and they are about different things. The Victoria County History of 1911 thought the old yew probably one of the most ancient trees in the county, without saying how ancient. A plaque on a newer yew nearby says that a yew has stood close to the door for 700 years, which is a claim about the spot and not about either trunk. The survey's size class is the third voice, and it says probably over 800 years, from girth alone. The tape has been steady: 23 feet in 1903, 24 feet 6 inches at three feet in 1955, 24 feet 9 inches at the base in 1998, and 24 feet 8 inches near the ground in 2013, the newest dated evidence we have. The trunk has been infilled with concrete, which the survey worried was a weight on the tree. New growth from six points suggests the old yew is renewing itself. The church dates from the 13th century.",
+  "hero_tree_id": "dnf_001",
+  "oldest_tree_id": "dnf_001",
+  "faq": [
+    {
+      "q": "Why is there concrete in the Dunsfold Yew?",
+      "a": "Its hollow trunk shows evidence of being infilled with concrete. Nothing we have read says when or by whom."
+    },
+    {
+      "q": "Is it 700 years old?",
+      "a": "That figure comes from a plaque on a newer yew and says a yew has stood near the door for 700 years. The old tree itself has not been dated."
+    },
+    {
+      "q": "How do you find it?",
+      "a": "Enter the churchyard through the small yew tunnel. The old yew stands close to the south porch."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dnf_001",
+      "name": "Dunsfold Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 752,
+      "location": {
+        "address": "St Mary and All Saints' Church, Dunsfold, Surrey",
+        "latitude": 51.117662,
+        "longitude": -0.575083,
+        "neighbourhood": "Dunsfold"
+      },
+      "location_site": {
+        "name": "St Mary and All Saints' Church churchyard",
+        "radius_m": 30
+      },
+      "story": "At some point somebody filled this yew with concrete. The evidence is there in the hollow trunk beside the south porch of St Mary and All Saints, and the Ancient Yew Group's survey worried that the weight was bearing on the tree.\n\nIt seems to have carried on regardless. Growth from six separate places suggests the old trunk is renewing itself. The Victoria County History of 1911 called it probably one of the most ancient trees in the county, and that was a century before the survey arrived.\n\nThe number on site belongs to a plaque, and the plaque is on a different tree. A newer yew nearby states that a yew has stood near the door for 700 years. We have no date for either.\n\nThe tape reads steadily. It was 23 feet round in 1903, 24 feet 6 inches at three feet up in 1955, 7.52 metres just above the ground in 1998, and 24 feet 8 inches near the ground in 2013. That last visit is the newest dated evidence we have. At this girth the survey's class suggests probably over 800 years, an estimate and no more.\n\nThe church is 13th century, and the way into its churchyard is a small tunnel of yew.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/dunsfold/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Dunsfold-2019.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/dunsfold/"
+      },
+      "access": "Free. It stands in the public churchyard of St Mary and All Saints, Dunsfold, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Witley station is about 6 km to the north-west in a straight line, further by lane. Check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the hollow trunk filled in with concrete, with new growth from several points. It stands close to the south porch of St Mary and All Saints; a small yew tunnel forms the churchyard entrance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

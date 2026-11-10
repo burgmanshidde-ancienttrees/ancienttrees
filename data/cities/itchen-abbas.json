@@ -1,0 +1,69 @@
+{
+  "city": "Itchen Abbas",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Itchen Abbas maps a yew that may appear in a Saxon charter of 939, a claim made in a 1994 book that we have not been able to confirm from the charter. What is certain is more recent. The Ancient Yew Group has returned to this gnarled tree repeatedly up to 2024. It stands on a mound east of St John the Baptist's church, beside the River Itchen near Winchester, and the churchyard is free.",
+  "meta_description": "The Itchen Abbas Yew near Winchester: on a mound by the River Itchen, said to appear in a Saxon charter of 939, re-measured up to 2024.",
+  "question_meta": "Itchen Abbas's oldest tree is the yew by St John the Baptist's church; said to be in a charter of 939, by girth probably over 800 years.",
+  "question_answer": "Itchen Abbas's oldest and only mapped tree is the Itchen Abbas Yew, a European Yew (Taxus baccata) on a mound east of St John the Baptist's church in Hampshire. The Ancient Yew Group's size class says probably over 800 years, an estimate. A 1994 book says a Saxon charter of 939 records it, which we could not confirm.",
+  "question_context": "The charter is the prize and also the problem. The Sacred Yew, published in 1994, says a Saxon charter of 939 records this tree. We have not seen that on a primary source, so it stays a claim, though if true it would make the yew more than a thousand years old. The firmer record starts in 1839, the first year in the Ancient Yew Group's history file. The survey measured 7.77 metres at 45 centimetres in April 1999, and the group has returned in 2010, 2011, from 2017 to 2019, and in 2023 and 2024. At the latest visit the tree was in fairly good condition. Its huge side limbs have been removed, the crown is lower than in old photographs, and the lower branches are hollow. Another yew, a male nine feet round at one foot, stands on the path to the porch and should not be confused with it. The church has late 11th-century origins, and the present building is Victorian.",
+  "hero_tree_id": "iab_001",
+  "oldest_tree_id": "iab_001",
+  "faq": [
+    {
+      "q": "Is the Itchen Abbas Yew in a Saxon charter?",
+      "a": "A 1994 book says a charter of 939 records it. We have not been able to confirm that from the charter itself."
+    },
+    {
+      "q": "Which yew is the old one?",
+      "a": "The gnarled tree on the mound east of the church, beside the river. A smaller male yew stands on the path to the porch."
+    },
+    {
+      "q": "Is it still alive?",
+      "a": "Yes. The Ancient Yew Group photographed it in 2024 and found it in fairly good condition."
+    }
+  ],
+  "trees": [
+    {
+      "id": "iab_001",
+      "name": "Itchen Abbas Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 777,
+      "location": {
+        "address": "St John the Baptist's Church, Itchen Abbas, Hampshire",
+        "latitude": 51.091216,
+        "longitude": -1.237733,
+        "neighbourhood": "Itchen Abbas"
+      },
+      "location_site": {
+        "name": "St John the Baptist's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "A book of 1994 says this yew is recorded in a Saxon charter of 939. We have not seen that charter or a transcript of it, so treat it as a claim. If it holds, the tree is more than a thousand years old.\n\nThe evidence we can stand on is newer and closer to hand. The Ancient Yew Group's survey measured 7.77 metres at 45 centimetres in April 1999, and the group has been back repeatedly since, in 2010, 2011, from 2017 to 2019, and in 2023 and 2024. Its written history in the group's files runs from 1839.\n\nThe last visit found it in fairly good condition, though the tree is not the shape it was. Huge side limbs have been removed, the lower branches are hollow, and the crown is lower than it appears in old photographs. It stands on a mound east of the church, beside the River Itchen. Another yew, a male of nine feet at one foot up, stands on the path to the porch.\n\nThe church has late 11th-century origins and a Victorian present. The tree's own age is not recorded. The survey's size class says probably over 800 years, an estimate from girth that neither confirms the charter nor rules it out.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/itchen-abbas/",
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Itchen-Abbas-2010-to-2024-Peter-Norton-1.pdf",
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Itchen-Abbas-1839-to-1999-Tim-Hills.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/itchen-abbas/"
+      },
+      "access": "Free. It stands in the public churchyard of St John the Baptist, Itchen Abbas, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Winchester station is about 6 km to the south-west in a straight line, further by road. Itchen Abbas is on the B3047; check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the gnarled trunk with huge side limbs removed and a reduced crown, graves around its base. It stands east of the church on the mound beside the River Itchen, not the smaller male on the porch path.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

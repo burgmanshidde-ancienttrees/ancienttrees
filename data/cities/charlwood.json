@@ -1,0 +1,68 @@
+{
+  "city": "Charlwood",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Charlwood, in Surrey just west of Gatwick, maps one tree: a yew that an account of 1850 already called decayed. It is a hollow shell with burned inner walls and a gap four feet wide, sparse on the west side and healthy on the east when last recorded in 2013. It grows south-east of St Nicholas's church, built about 1080, in a churchyard inside a conservation area. Free to walk into.",
+  "meta_description": "The Charlwood Yew in Surrey: a fire-blackened hollow shell near Gatwick, called decayed in 1850 and still growing when measured in 2013.",
+  "question_meta": "Charlwood's oldest tree is the hollow yew at St Nicholas's church, 7.21 metres round; probably over 800 years old by girth, undated.",
+  "question_answer": "Charlwood's oldest and only mapped tree is the Charlwood Yew, a European Yew (Taxus baccata) south-east of St Nicholas's church in Surrey. It measured 7.21 metres at 90 centimetres in 1999. The Ancient Yew Group's size class says probably over 800 years, an estimate, and a badly damaged shell makes that loose.",
+  "question_context": "What survives of this old yew is a shell standing beside a church of about 1080, with slivers of new wood inside it and much fire damage on the inner walls. The entrance is four feet wide and was once netted with wire. In 2013 the foliage was sparse on the west side and healthy on the east, so the tree is partly dead and partly vigorous. Its record is short and argumentative. An 1850 account called it a decayed yew-tree on the south side of the church. A guide of 1936, The King's England, gave 28 feet round, a figure the Ancient Yew Group's survey judged to be a mistake. The survey's own tape read 23 feet 8 inches in 1999 and 23 feet 5 inches at three and a half feet in May 2013, which is the newest dated evidence for the tree. The churchyard of St Nicholas's lies in a conservation area.",
+  "hero_tree_id": "chw_001",
+  "oldest_tree_id": "chw_001",
+  "faq": [
+    {
+      "q": "How old is the Charlwood Yew?",
+      "a": "It has not been dated. At 7.21 metres it just falls within the Ancient Yew Group's class of probably over 800 years."
+    },
+    {
+      "q": "What happened to its inside?",
+      "a": "The hollow shell shows much fire damage on its inner walls. We have found no record of the cause."
+    },
+    {
+      "q": "When was it last recorded?",
+      "a": "In May 2013, when it was re-measured, with sparse foliage on the west and healthy growth on the east."
+    }
+  ],
+  "trees": [
+    {
+      "id": "chw_001",
+      "name": "Charlwood Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 721,
+      "location": {
+        "address": "St Nicholas's Church, Charlwood, Surrey",
+        "latitude": 51.155718,
+        "longitude": -0.227568,
+        "neighbourhood": "Charlwood"
+      },
+      "location_site": {
+        "name": "St Nicholas's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "An account of 1850 dismissed this as a decayed yew-tree. It was still growing 163 years later, when the last dated measurement was taken.\n\nDecayed is fair. It is a hollow shell with slivers of new wood inside, its inner walls badly burned, open through a gap four feet wide that was once netted with wire. In 2013 the foliage was sparse on the west side and healthy on the east, a tree alive on one flank.\n\nA 1936 guide, The King's England, gave it 28 feet round. The Ancient Yew Group's survey judged that a mistake, and its own tape read 23 feet 8 inches in 1999 and 23 feet 5 inches in 2013. Those are 7.21 and 7.14 metres, close to the line where the survey's class says probably over 800 years. It is an estimate from size, and a shell this damaged makes any size hard to read.\n\nIt grows south-east of St Nicholas's, a church built about 1080, in a churchyard inside a conservation area. The newest dated evidence for the tree is that 2013 visit, so a current photograph would be useful.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/charlwood/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Charlwood-2019.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/charlwood/"
+      },
+      "access": "Free. It stands in the public churchyard of St Nicholas's, Charlwood, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Gatwick Airport station is about 5 km to the east in a straight line, further by road. Check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the single large hollowed trunk, its shell open through a gap four feet wide and blackened by fire inside. It stands south-east of St Nicholas's church.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

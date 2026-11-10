@@ -1,0 +1,68 @@
+{
+  "city": "Wilmington",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Wilmington, under the Long Man hill figure on the South Downs, maps a yew that is one tree and looks like two. Its hollow trunks lean apart from a single massive base on props and chains, north of the 12th-century church of St Mary and St Peter. In 1850 a villager of 85 said it had not changed in 75 years. It measures 9.15 metres round, and the churchyard is free to walk into.",
+  "meta_description": "The Wilmington Yew below the Long Man in East Sussex: two hollow trunks leaning apart from one base, on props and chains, 9.15 metres round.",
+  "question_meta": "Wilmington's oldest tree is the twin-trunked yew at St Mary and St Peter; probably over 800 years old, an estimate from its 9.15 m girth.",
+  "question_answer": "Wilmington's oldest and only mapped tree is the Wilmington Yew, a European Yew (Taxus baccata) north of the church of St Mary and St Peter in East Sussex. It is two hollow trunks on one base, 9.15 metres round. The Ancient Yew Group's size class says probably over 800 years, which is an estimate.",
+  "question_context": "Whether this counts as one tree or two has an answer, and the answer is the base. A 1997 Sussex tree book described the two trunks as the healed halves of a single stem, and the common base is why the Ancient Yew Group's survey gives the pair one figure. Each trunk was about 16 feet round in 1999, both fluted and hollow, and they slant away from each other so far that props and chains now hold them up. An 1848 topographical dictionary gave six yards round at two feet up. Two years later the Sussex Archaeological Collections called it one of the greatest antiquities of the place and printed the word of a villager of 85, who had known it for 75 years without seeing any change. The survey re-measured it in 2015, its newest dated record. Girth is a looser guide than usual on a split stem, so the age class should be read loosely too. Above the church, on the hill, is the Long Man of Wilmington.",
+  "hero_tree_id": "wmg_001",
+  "oldest_tree_id": "wmg_001",
+  "faq": [
+    {
+      "q": "Is the Wilmington Yew one tree or two?",
+      "a": "One. Its two trunks rise from a single massive base, and a 1997 Sussex tree book called them the healed halves of one stem."
+    },
+    {
+      "q": "How do you find it?",
+      "a": "It stands north of the church of St Mary and St Peter, recognisable by two leaning hollow trunks with props and chains."
+    },
+    {
+      "q": "What is the hill figure above the church?",
+      "a": "The Long Man of Wilmington. The church and the yew lie below it, and the churchyard is free to walk into."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wmg_001",
+      "name": "Wilmington Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 915,
+      "location": {
+        "address": "St Mary and St Peter's Church, Wilmington, East Sussex",
+        "latitude": 50.817397,
+        "longitude": 0.190608,
+        "neighbourhood": "Wilmington"
+      },
+      "location_site": {
+        "name": "St Mary and St Peter's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "In 1850 a villager aged 85 said this yew had not changed in the 75 years they had known it. The Sussex Archaeological Collections printed the remark that year and called the tree one of the greatest antiquities of the place.\n\nIt looks like two trees and is counted as one. Two hollow, fluted trunks, each about 16 feet round in 1999, slant apart in opposite directions from a single massive base. A 1997 Sussex tree book described them as the healed halves of a single stem, and the common base is why the Ancient Yew Group's survey gives one figure for the pair, 9.15 metres. A dictionary of 1848 had it at six yards round at two feet up.\n\nThe halves no longer manage alone. Props and chains hold them, under a spreading, windswept crown. The survey was back to re-measure in 2015, the newest dated record of it.\n\nNobody has dated the tree. Yews of seven metres and more are classed as probably over 800 years old, which is an estimate from girth and nothing firmer, and a twin stem makes even that loose. North of it stands a 12th-century church, and above both, cut into the hillside, the Long Man of Wilmington.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/wilmington-sussex/",
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Wilmington-2025.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/wilmington-sussex/"
+      },
+      "access": "Free. It stands in the public churchyard of St Mary and St Peter, Wilmington, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Berwick station, on the line between Lewes and Eastbourne, is about 3 km to the north-west in a straight line. Check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the two big hollow trunks leaning in opposite directions from one massive base, held by props and chains. It stands north of the church of St Mary and St Peter.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

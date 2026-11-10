@@ -1,0 +1,122 @@
+{
+  "city": "Ann Arbor",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Ann Arbor measures its trees and publishes the scores. Its Champion Tree Map names a chinkapin oak in Wurster Park as the largest of its species in Michigan and the biggest tree of any species in town by girth, 549 centimetres round. In West Park a bur oak has a crown wider than the tree is tall, and a northern red oak stands at the Miller Avenue entrance about 120 metres away. All three stand in free city parks, and nobody has published an age for any of them.",
+  "meta_description": "Ann Arbor's champion oaks: Michigan's largest chinkapin in Wurster Park, and a West Park bur oak with a crown wider than it is tall.",
+  "question_meta": "No age is published for Ann Arbor's great trees. The biggest is the Wurster Park chinkapin oak, 549 cm round and Michigan's largest.",
+  "question_answer": "No tree we map in Ann Arbor has a published age, so nobody can honestly name the oldest. The biggest is the Chinkapin Oak (Quercus muehlenbergii) in Wurster Park, the largest of its species in Michigan and, at 549 centimetres round, the largest tree of any species in the city by girth.",
+  "question_context": "What Ann Arbor has instead of dates is a scoreboard. The city's Champion Tree Map, verified by the city itself, gives the Wurster Park oak 359.5 points, from a circumference of 549 centimetres, a height of 35.7 metres and a crown of 106 feet. The Michigan Big Tree Register measured the same trunk in 2016 at 215 inches round but put the height at 110 feet against the city's 117, so treat the height as a range. You will find it just inside the woods at the south-west corner of the park, at 525 W Madison Street. West Park, near downtown, holds two more champions from the same map. A bur oak in the middle of the park, east of the bandshell, scored 322.2, with a trunk 520 centimetres round and a crown of 121 feet on a height of 87.2. The northern red oak at the Miller Avenue entrance scored 251.9. Those West Park figures date from 2020, and we have found no independent report since. If you know the age of any of these oaks, tell us.",
+  "hero_tree_id": "ann_001",
+  "oldest_tree_id": "ann_001",
+  "faq": [
+    {
+      "q": "What is the biggest tree in Ann Arbor?",
+      "a": "By girth, the chinkapin oak in Wurster Park, 549 centimetres round. The city's park page also names it the largest chinkapin oak in Michigan."
+    },
+    {
+      "q": "Where exactly is the Wurster Park oak?",
+      "a": "Just inside the woods at the park's south-west corner. The park is at 525 W Madison Street in the Old West Side and is free."
+    },
+    {
+      "q": "How are Ann Arbor's champion trees chosen?",
+      "a": "The city scores them on its Champion Tree Map, which gives each tree a points total alongside its circumference, height and crown spread. A champion holds its title for two years after verification."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ann_001",
+      "name": "The Chinkapin Oak of Wurster Park",
+      "species": "Chinkapin Oak (Quercus muehlenbergii)",
+      "age_estimate": "not documented",
+      "girth_cm": 549,
+      "height_m": 35.7,
+      "location": {
+        "address": "Wurster Park, 525 W Madison St, Ann Arbor, MI 48103 (just into the woods at the park's southwest corner)",
+        "latitude": 42.27194838,
+        "longitude": -83.75490813,
+        "neighbourhood": "Old West Side"
+      },
+      "story": "The largest chinkapin oak in Michigan stands a few steps into a neighbourhood wood, in a park of five and a half acres. The city of Ann Arbor says so on the park's own page, and goes further. By girth, this is the biggest tree of any species in town.\n\nThe city's Champion Tree Map has it at 549 centimetres round and 35.7 metres tall, with 359.5 points, the score that decides who holds a title. The Michigan Big Tree Register measured the same trunk in 2016 at 215 inches round, almost exactly the city's figure, but put the height at 110 feet against the city's 117 and the crown at 120 feet against 106. Four years apart, and not in agreement, which is worth knowing before anyone quotes you a number.\n\nA local blog says this is the tree shown in Wikipedia's article on the species. We have not been able to confirm that. The park also holds a champion black oak, which we have not located.\n\nNobody has published an age for this oak. If you know how old it is, tell us.",
+      "verified_sources": [
+        "https://www.a2gov.org/parks-and-recreation/parks-and-places/wurster-park/",
+        "https://www.a2gov.org/forestry/ann-arbor-champion-trees/",
+        "https://docs.google.com/spreadsheets/d/1x0l0BRXxdGzV6kxMLtvNBb88x0jqlTJfNLpQGZtjrB8/export?format=csv",
+        "https://www.damnarbor.com/2018/02/ann-arbors-champion-trees.html"
+      ],
+      "official_register": {
+        "name": "Michigan Big Tree Register (Michigan Botanical Society)",
+        "url": "https://michiganbotanicalsociety.org/big-tree"
+      },
+      "access": "Free, public city park of 5.5 acres. The oak is near the south-west corner, just inside the woods. Dogs on leash.",
+      "transport": "Wurster Park is at 525 W Madison St in the Old West Side; bus routes not checked.",
+      "how_to_recognise": "You can recognise it by the trunk, about 5.5 metres round, the thickest of any tree on Ann Arbor's champion list. It stands just inside the woods at the south-west corner of Wurster Park.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ann_002",
+      "name": "The Bur Oak of West Park",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "not documented",
+      "girth_cm": 520,
+      "height_m": 26.6,
+      "location": {
+        "address": "West Park, Ann Arbor, MI, in the middle of the park east of the bandshell",
+        "latitude": 42.28375158,
+        "longitude": -83.75642251,
+        "neighbourhood": "Old West Side / downtown"
+      },
+      "story": "This oak is wider than it is tall, by about ten metres. Ann Arbor's Champion Tree Map gives it a crown of 121 feet on a height of 87.2 feet, which makes it more shade than height.\n\nThe trunk measures 520 centimetres round. On the city's points system that comes to 322.2, enough to make it the champion of its species in town since 2020. The city's largest tree by girth, the chinkapin oak in Wurster Park, a little over a kilometre south, is only 29 centimetres thicker round.\n\nThe map is the only source we have for this tree, and it comes from the city, which owns the ground and does the measuring. The same map says a champion reigns for two years after verification, and we have found no independent report on this oak since 2020, so treat its title as the last one on record.\n\nYou will find it in the middle of the park, east of the bandshell, about 120 metres from the red oak at the Miller Avenue entrance. Nobody has published its age. If you know it, tell us.",
+      "verified_sources": [
+        "https://www.a2gov.org/forestry/ann-arbor-champion-trees/"
+      ],
+      "access": "Free, public city park near downtown.",
+      "transport": "West Park is close to downtown Ann Arbor; bus routes not checked.",
+      "how_to_recognise": "You can recognise it by the crown, about 37 metres across and wider than the tree is tall, over a trunk 5.2 metres round. It stands in the middle of West Park, east of the bandshell.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ann_003",
+      "name": "The Red Oak of West Park",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "not documented",
+      "girth_cm": 374,
+      "height_m": 25.1,
+      "location": {
+        "address": "West Park, Ann Arbor, MI, at the Miller Ave entrance",
+        "latitude": 42.28443416,
+        "longitude": -83.75472524,
+        "neighbourhood": "Old West Side / downtown"
+      },
+      "story": "Ann Arbor keeps score of its trees, and this one came in at 251.9 points. That made it the city's champion northern red oak in 2020, with a trunk 374 centimetres round, a height of 25.1 metres and a crown of 89 feet, all from the city's Champion Tree Map.\n\nIt is the junior partner in West Park. The bur oak about 120 metres away in the middle of the park scored 322.2, and if you have only ten minutes you should go and stand under that one first. But you will walk past this tree to get there if you come in from Miller Avenue, which is the best reason to stop and look up.\n\nRed oaks carry a risk that the city's forestry office takes seriously enough to give a section of its web page to, the fungal disease called oak wilt. The map is our only source for this tree and we have found no report on it since 2020, so if you pass it and it is gone or ailing, we want to know.\n\nNobody has published an age for it either. If you know it, tell us.",
+      "verified_sources": [
+        "https://www.a2gov.org/forestry/ann-arbor-champion-trees/"
+      ],
+      "access": "Free, public city park near downtown.",
+      "transport": "West Park is close to downtown Ann Arbor, at the Miller Ave entrance; bus routes not checked.",
+      "how_to_recognise": "You can recognise it by the trunk, about 3.7 metres round, and by where it stands. It is the big red oak at the Miller Avenue entrance to West Park, the first champion you reach from that side.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "city": "Stedham",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Stedham, just west of Midhurst, maps a yew that has grown over its own repairs. Steel wire put in to hold the hollow, outward-leaning trunk is now sunk inside new wood, and branches pour out of the top of the bole. An account of 1815 already called it very remarkable, hollow and flourishing. It grows south-west of St James's church, whose tower is dated 1673, in a free churchyard in West Sussex.",
+  "meta_description": "The Stedham Yew in West Sussex: a hollow, leaning trunk that has swallowed the steel wire meant to hold it, measured since 1815.",
+  "question_meta": "Stedham's oldest tree is the hollow yew at St James's church, 8.97 metres round; probably over 800 years old, an estimate from girth.",
+  "question_answer": "Stedham's oldest and only mapped tree is the Stedham Yew, a European Yew (Taxus baccata) south-west of St James's church in West Sussex. It measured 8.97 metres at the ground in 1999. The Ancient Yew Group's size class says probably over 800 years, an estimate, and nobody has dated it.",
+  "question_context": "Much the same number has been written about this tree for two centuries. An account of 1815 gave 28 feet round a yard up, and called the yew hollow with a flourishing head. It was 28 feet 6 inches in 1880 and 28 feet in 1952, then 30 feet 9 inches at two feet in 1983. The survey found 29 feet 6 inches at the ground in 1999, and 29 feet 5 inches in January 2012 with the tape running over an undulating base. The heights vary, so these are best read as a long plateau and not as a measure of growth. A 1997 record gives 11 metres of height. The hollow trunk leans outward, and the steel wire once used to hold it has been enveloped by new wood, as has the dead timber crossing the hollow. St James's has a tower of 1673 and one window that looks Norman. The newest dated evidence for the tree is from January 2012.",
+  "hero_tree_id": "sdm_001",
+  "oldest_tree_id": "sdm_001",
+  "faq": [
+    {
+      "q": "How old is the Stedham Yew?",
+      "a": "It has never been dated. Its size puts it in the Ancient Yew Group's class of probably over 800 years."
+    },
+    {
+      "q": "What is the wire in the trunk?",
+      "a": "Steel wire was put in to hold the hollow, leaning trunk together, and new wood has since grown around it."
+    },
+    {
+      "q": "When was it last recorded?",
+      "a": "The newest dated evidence we have is from January 2012, so a recent photograph would be welcome."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sdm_001",
+      "name": "Stedham Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 897,
+      "location": {
+        "address": "St James's Church, Stedham, West Sussex",
+        "latitude": 50.996319,
+        "longitude": -0.770186,
+        "neighbourhood": "Stedham"
+      },
+      "location_site": {
+        "name": "St James's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "Stedham's yew has swallowed the steel wire that was put in to hold it together. The wire is now enveloped in new wood, and the dead timber crossing the hollow has been grown over as well.\n\nIt has been hollow for at least two centuries. An account of 1815 called it a very remarkable yew of great height, 28 feet round a yard up, hollow, with a flourishing head. The figures since then barely stir: 28 feet 6 inches in 1880, 28 feet in 1952, 29 feet 6 inches at the ground when the Ancient Yew Group's survey came in 1999, and 29 feet 5 inches in January 2012. The heights differ and the tape ran over an undulating base, so treat them as neighbours and not as a growth curve. A 1997 record gives its height as 11 metres.\n\nThe trunk leans outward, and branches pour from the top of the bole. It grows south-west of St James's, whose tower is dated 1673 and which keeps one Norman-looking window.\n\nThe survey classes yews of seven metres and more as probably over 800 years old. That is an estimate from girth, and no one has dated this one. The newest dated evidence we have is from 2012, so if you go, tell us how it looks.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/stedham/",
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Stedham-2025a.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/stedham/"
+      },
+      "access": "Free. It stands in the public churchyard of St James's, Stedham, in the care of the parish church. No ticket or gate fee.",
+      "transport": "No railway. Stedham is just west of Midhurst, off the A272; check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the hollow, outward-leaning trunk with old steel wire sunk into the wood, and a big crown pouring from the top. It stands south-west of St James's church.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

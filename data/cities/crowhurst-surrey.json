@@ -1,0 +1,69 @@
+{
+  "city": "Crowhurst",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Crowhurst, in the Surrey lanes near Lingfield, maps one tree: a yew with a door in it. Around 1820 the vicar had the door fitted and put a bench and table inside the hollow, and in 1825 a choir sang in there. A seven-pound cannonball turned up in the trunk. The tree is 10.03 metres round and still alive by a photograph of September 2024. It stands at St George's church, free to visit.",
+  "meta_description": "The Crowhurst Yew in Surrey: 10.03 metres round, with a door in its hollow trunk, a cannonball in its past and a choir that once sang inside.",
+  "question_meta": "Crowhurst's oldest tree is the yew at St George's church, 10.03 metres round; probably over 800 years old, an estimate from its girth.",
+  "question_answer": "Crowhurst's oldest and only mapped tree is the Crowhurst Yew, a European Yew (Taxus baccata) east-north-east of St George's church in Surrey. The Ancient Yew Group's size class puts yews this big at probably over 800 years old. That is an estimate from its girth of 10.03 metres, and nobody has dated the tree.",
+  "question_context": "The paper trail is better than the dating. A parish record says the yew was ten yards round in the time of Charles I, and by 1850 it measured ten yards and nine inches at five feet up. The survey's tape read 10.03 metres in 1999 and again in 2013, so the trunk has added less than a metre in nearly four hundred years, if the early figures can be trusted. Around 1820 the vicar had a door fitted to the hollow and placed a bench and table inside, room for ten to fourteen people, and a newspaper reported a choir singing in it in 1825. A seven-pound cannonball, supposed to date from the Civil War, was found in or embedded in the trunk. The roof of the hollow had fallen in by 1850. In 1999 the survey noted two gaps in the bole, much dead wood and a chain swallowed by new growth. There is a second Crowhurst in East Sussex with its own old yew, so check which one you are heading for.",
+  "hero_tree_id": "csr_001",
+  "oldest_tree_id": "csr_001",
+  "faq": [
+    {
+      "q": "How old is the Crowhurst Yew?",
+      "a": "It has never been dated. Its girth puts it in the Ancient Yew Group's class of probably over 800 years, and a parish record shows it was already ten yards round under Charles I."
+    },
+    {
+      "q": "Is there really a door in the tree?",
+      "a": "Yes. A vicar had one fitted around 1820, and the 1999 survey found it still in place, four feet high."
+    },
+    {
+      "q": "Which Crowhurst is this?",
+      "a": "The one in Surrey, near Lingfield. Crowhurst in East Sussex is a different village with a different yew."
+    }
+  ],
+  "trees": [
+    {
+      "id": "csr_001",
+      "name": "Crowhurst Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 1003,
+      "location": {
+        "address": "St George's Church, Crowhurst, Surrey",
+        "latitude": 51.209332,
+        "longitude": -0.01047,
+        "neighbourhood": "Crowhurst"
+      },
+      "location_site": {
+        "name": "St George's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "Around 1820 the vicar of Crowhurst had a door fitted to this yew and put a bench and a table inside it. The hollow was said to seat ten to fourteen people, and in 1825 the Stamford Mercury reported a choir singing in there.\n\nThe tree held a stranger surprise. A seven-pound cannonball was found in or embedded in the trunk, supposed to date from the Civil War, though nobody can say how it got there.\n\nCrowhurst's paper trail starts unusually early. A parish record says the yew was ten yards round in the time of Charles I, which is about 9.1 metres. The Ancient Yew Group's survey taped it at 10.03 metres at about four feet up in 1999, and a re-measurement in 2013 gave the same figure. Under a metre in nearly four centuries, if the old yards can be trusted.\n\nIt has paid for its fame. The roof of the hollow had fallen in by 1850. The 1999 survey found two gaps in the bole, much dead wood, a chain swallowed by new growth and the door, four feet high, still in place. A photograph from September 2024 shows it alive.\n\nNobody has dated it. The survey treats yews of seven metres and more as probably over 800 years old, an estimate from size alone. The earliest parts of St George's are 12th century.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/crowhurst-surrey/",
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Crowhurst-surrey-2025.pdf",
+        "https://commons.wikimedia.org/wiki/File:The_ancient_yew_in_Crowhurst_Churchyard_-_geograph.org.uk_-_7894661.jpg"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/crowhurst-surrey/"
+      },
+      "access": "Free. It stands in the public churchyard of St George's, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Crowhurst has no station. Lingfield station is about 4 km to the south in a straight line and Hurst Green about 4 km to the north, both further by lane. Check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the low door, four feet high, in its hollow trunk, and by the chains and props. It stands east-north-east of St George's church, near the east end.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

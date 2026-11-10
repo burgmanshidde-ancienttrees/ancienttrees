@@ -1,0 +1,68 @@
+{
+  "city": "Corhampton",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Corhampton in the Meon Valley maps one tree, and the church beside it owns its portrait. An early 18th-century watercolour is the first record of this tall female yew, whose branches reach across the churchyard path and root where they touch the ground. Fifteen props once held it, and one remains. The church is late Saxon, founded in 1020 on an artificial mound and dedicated to nobody. Free to visit, on the A32 in Hampshire.",
+  "meta_description": "The Corhampton Yew in Hampshire: a tall female yew with rooting branches, painted in the early 1700s, beside a Saxon church founded in 1020.",
+  "question_meta": "Corhampton's oldest tree is the female yew at its Saxon church, about 7.3 metres round; probably over 800 years old by girth, undated.",
+  "question_answer": "Corhampton's oldest and only mapped tree is the Corhampton Yew, a female European Yew (Taxus baccata) in the churchyard of the Saxon church in Hampshire. It measured 7.32 metres near the ground in 1998. The Ancient Yew Group's size class says probably over 800 years, an estimate from girth, and its newest dated record is 2011.",
+  "question_context": "The first record of this yew is a painting, and it came long before any tape. An early 18th-century watercolour owned by the church is its earliest record, and travel writers praised it again in 1865 and 1897. It has a clean, visible bole, with a large leading branch and a second one dividing at about seven feet. Those branches have spread across the path and taken root where they meet the ground, and the fifteen props that used to carry them are down to one. Measurements stay close together: 7.32 metres near the ground in 1998, 7.11 metres at 1.1 metres in 1999, and 7.16 metres at 1.4 metres in 2011. That last figure is the newest dated evidence for the tree, so a visitor's photograph would be useful. The foliage was healthy and green when the survey saw it in 1999. The church itself was founded in 1020 on an artificial mound and has no dedication.",
+  "hero_tree_id": "cmh_001",
+  "oldest_tree_id": "cmh_001",
+  "faq": [
+    {
+      "q": "How old is the Corhampton Yew?",
+      "a": "Nobody has dated it. At just over seven metres round it falls in the Ancient Yew Group's class of probably over 800 years, which is an estimate."
+    },
+    {
+      "q": "How old is Corhampton church?",
+      "a": "It is late Saxon, founded in 1020, built on an artificial mound and without a dedication to any saint."
+    },
+    {
+      "q": "Is the yew still alive?",
+      "a": "The newest dated evidence we have is a measurement from 2011. If you visit, we would like to hear how it is."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cmh_001",
+      "name": "Corhampton Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 732,
+      "location": {
+        "address": "Corhampton Church, Corhampton, Hampshire",
+        "latitude": 50.979067,
+        "longitude": -1.132461,
+        "neighbourhood": "Corhampton"
+      },
+      "location_site": {
+        "name": "Corhampton Church churchyard",
+        "radius_m": 30
+      },
+      "story": "The church beside this yew owns its portrait. An early 18th-century watercolour is the earliest record of the tree, and travel writers were praising it again in 1865 and 1897.\n\nIt is a tall female with an unusually clean bole, and it has spread far past the trunk. Big branches reach across the churchyard path and take root where they touch the ground. A large leading branch and a second one divide at about seven feet. Fifteen props once held the crown up. One remains.\n\nThe measurements are close to one another for once, 7.32 metres near the ground in 1998 and 7.16 metres at 1.4 metres up in 2011. That 2011 re-measurement is the newest dated evidence we have, so a recent photograph would be welcome. Foliage was healthy and green when the Ancient Yew Group's survey saw it in 1999.\n\nThe church is a late Saxon building, founded in 1020 on an artificial mound, and it has no dedication to any saint. Its age is documented. The tree's is not. At this size the survey's girth class says probably over 800 years, which is an estimate, and only just inside the class at that.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/corhampton/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/02/Corhampton2020.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/corhampton/"
+      },
+      "access": "Free. It stands in the public churchyard of Corhampton Church, in the care of the parish church. No ticket or gate fee.",
+      "transport": "No railway in the Meon Valley. Corhampton is on the A32 between Alton and Fareham; check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the clean, tall bole and the big branches that reach across the path and root in the ground, with one prop left. It stands in the churchyard of the Saxon church at Corhampton.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

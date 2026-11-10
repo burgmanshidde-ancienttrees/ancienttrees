@@ -1,0 +1,68 @@
+{
+  "city": "Coldwaltham",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Coldwaltham, on the edge of the Arun valley in West Sussex, maps a yew that has collected large claims. A gazetteer gave it 3,000 years, which the Ancient Yew Group calls unsupported, and a notice beside it says it is among the twelve oldest. Measured, it is 10.49 metres round near the ground, completely hollow, with two straight fluted branches rising from the shell. It stands north-west of St Giles's church, free to visit.",
+  "meta_description": "The Coldwaltham Yew in West Sussex: 10.49 metres round, completely hollow, regarded as the county's senior yew, its 3,000-year claim unsupported.",
+  "question_meta": "Coldwaltham's oldest tree is the hollow yew at St Giles's church; a 3,000-year claim is unsupported, its girth class says over 800.",
+  "question_answer": "Coldwaltham's oldest and only mapped tree is the Coldwaltham Yew, a female European Yew (Taxus baccata) north-west of St Giles's church in West Sussex. A gazetteer's 3,000 years is called unsupported by the Ancient Yew Group, whose size class says probably over 800. It has not been dated.",
+  "question_context": "The tape gives better evidence than the claims do. It read 34 feet 5 inches, 10.49 metres, at fifteen centimetres off the ground in 1999, and the same 34 feet 5 inches on a return visit in 2012, with 30 feet 9 inches at three feet up. In 1955 it was 35 feet at the ground. A 1997 record gives a height of 14 metres and a diameter of 296 centimetres. A published book on the trees of Sussex regards it as the county's senior veteran yew. A notice at the churchyard places it among the twelve oldest, which the group considers possible but which appears on no list. It is a female, and completely hollow, with major cavities at the base and many nails hammered into the bole. Two straight fluted branches rise from what remains, and a central branch is closing around old growth. The crown was thinner in 2012 than in 1999, and 2012 is the newest dated evidence. The Norman church was rebuilt in the 19th century.",
+  "hero_tree_id": "cwh_001",
+  "oldest_tree_id": "cwh_001",
+  "faq": [
+    {
+      "q": "Is the Coldwaltham Yew 3,000 years old?",
+      "a": "That figure comes from a gazetteer and the Ancient Yew Group calls it unsupported. The tree has not been dated, and its size class says probably over 800 years."
+    },
+    {
+      "q": "Is it the oldest yew in Sussex?",
+      "a": "A book on the trees of Sussex regards it as the county's senior veteran yew. Nobody has proved it by dating."
+    },
+    {
+      "q": "Is it healthy?",
+      "a": "It is completely hollow, and its crown was thinner in 2012 than in 1999. That 2012 visit is the newest dated evidence we have."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cwh_001",
+      "name": "Coldwaltham Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 1049,
+      "location": {
+        "address": "St Giles's Church, Coldwaltham, West Sussex",
+        "latitude": 50.93888,
+        "longitude": -0.545398,
+        "neighbourhood": "Coldwaltham"
+      },
+      "location_site": {
+        "name": "St Giles's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "A gazetteer once gave this yew 3,000 years, and the Ancient Yew Group calls that figure unsupported. A notice at the tree claims a place among the twelve oldest yews, which the group says is possible but unlisted. A published book on the trees of Sussex goes a step less far and regards it as the county's senior veteran yew.\n\nThe measured facts are impressive enough. It was 10.49 metres round fifteen centimetres off the ground in 1999, 34 feet 5 inches by the tape. A second visit in 2012 got the identical 34 feet 5 inches, and 30 feet 9 inches at three feet up. A 1997 record makes it 14 metres tall.\n\nInside there is nothing left. It is completely hollow, with major cavities at the base, and many nails have been hammered into the bole over the years. Two straight fluted branches rise from what remains, a central branch is closing around old growth, and one large limb has been removed. It is a female.\n\nThe crown was thinner in 2012 than in 1999, and 2012 is the newest dated evidence we have. If you go, tell us how it looks. By the survey's girth class it is probably over 800 years old, an estimate from size. The Norman church beside it was rebuilt in the 19th century.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/coldwaltham/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/03/Coldwaltham-2019.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/coldwaltham/"
+      },
+      "access": "Free. It stands in the public churchyard of St Giles's, Coldwaltham, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Pulborough station is about 3 km to the north-east in a straight line, further by road. Check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the very large, completely hollow bole with two straight fluted branches rising from it, and a notice naming it among the oldest yews. It stands north-west of St Giles's church.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

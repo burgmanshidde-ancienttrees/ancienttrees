@@ -1,0 +1,69 @@
+{
+  "city": "Tandridge",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Tandridge's mapped tree has been given up for dead twice. The yew at the west end of St Peter's church was reported dying in 1831 and again in 1850, and sources of the next century found it recovered. It is a split, hollow mass with younger yews around it, probably layered from the parent, under a canopy once put at 250 feet across. The churchyard is free, a short distance from Oxted in Surrey.",
+  "meta_description": "The Tandridge Yew in Surrey: a split, hollow giant at St Peter's church, twice reported dying in the 1800s and still standing in 2021.",
+  "question_meta": "Tandridge's oldest tree is the split yew at St Peter's church; its girth class says probably over 800 years, an estimate and not a date.",
+  "question_answer": "Tandridge's oldest and only mapped tree is the Tandridge Yew, a European Yew (Taxus baccata) at the west end of St Peter's church in Surrey. By the Ancient Yew Group's size class it is probably over 800 years old, an estimate. Its 10.92 metres was taken at ground level on a split, multi-stem mass.",
+  "question_context": "That big number needs its small print. The survey took 10.92 metres in 1999 only five centimetres off the ground, around a fluted mass of several stems, so it cannot be compared with a yew measured at chest height. Older figures taken five feet up run from about 30 feet in 1850 to between 32 and 37 feet across the years 1880 to 1999. The main stem fractured long ago, and in 1890 two great lateral trunks were measured at 10 feet and 13 feet 4 inches. Fire or smoke has darkened the cavity. Reports in 1831 and 1850 had the tree dying; sources from 1936 and 1958 describe a strong recovery, and a 1936 account gave its canopy a circle of 250 feet. The younger yews close by were probably layered from the parent, and the survey lists a second notable yew here with no measurements. St Peter's has Norman fabric at its earliest. A dated photograph from September 2021 shows the old tree standing.",
+  "hero_tree_id": "tdr_001",
+  "oldest_tree_id": "tdr_001",
+  "faq": [
+    {
+      "q": "How big is the Tandridge Yew?",
+      "a": "The survey recorded 10.92 metres at ground level around a split, multi-stem mass. Figures taken five feet up have run between about 30 and 37 feet since 1850."
+    },
+    {
+      "q": "Was it really dying?",
+      "a": "It was reported dying in 1831 and in 1850. Sources from 1936 and 1958 say it recovered strongly."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Nobody has dated it. The Ancient Yew Group's size class says probably over 800 years, which is an estimate."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tdr_001",
+      "name": "Tandridge Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 1092,
+      "location": {
+        "address": "St Peter's Church, Tandridge, Surrey",
+        "latitude": 51.242977,
+        "longitude": -0.032373,
+        "neighbourhood": "Tandridge"
+      },
+      "location_site": {
+        "name": "St Peter's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "This yew was reported dying in 1831, and again in 1850. Sources from 1936 and 1958 describe a tree that had recovered strongly, and a photograph from 2021 shows it still standing at the west end of St Peter's.\n\nHow big it is depends on where you hold the tape. The Ancient Yew Group's survey recorded 10.92 metres in 1999, but that figure was taken five centimetres off the ground, around a fluted, split mass of several stems, so it is not a trunk measurement in the usual sense. Taken five feet up, older figures run from about 30 feet in 1850 to between 32 and 37 feet across the years 1880 to 1999.\n\nThe main stem fractured long ago, leaving two great lateral trunks that an 1890 account measured at 10 feet and 13 feet 4 inches. The cavity inside is darkened by fire or smoke. It is tall as well as stout, with many straight fluted branches, and a 1936 source gave the circle of its canopy as 250 feet.\n\nThe younger yews around it were probably layered from the parent, which would make this a small family gathered round one wreck. The size class puts it at probably over 800 years, an estimate and not a date. The earliest parts of the church are Norman.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/tandridge-churchyard/",
+        "https://www.ancient-yew.org/wp-content/uploads/2022/11/Tandridge-2025.pdf",
+        "https://commons.wikimedia.org/wiki/File:Ancient_Yew_tree,_Tandridge_-_geograph.org.uk_-_7296752.jpg"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/tandridge-churchyard/"
+      },
+      "access": "Free. It stands in the public churchyard of St Peter's, Tandridge, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Oxted station is about 2.5 km to the north-east in a straight line, further by lane. Check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the huge hollow, split trunk mass under a vast spreading crown, with younger yews growing around it. It stands at the west end of St Peter's church.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

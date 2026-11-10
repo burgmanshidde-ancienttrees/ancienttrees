@@ -1,0 +1,102 @@
+{
+  "city": "Sacramento",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Both of Sacramento's trees here stand around the State Capitol, and they could hardly differ more. On the north-east lawn is a coast redwood grown from a seed carried around the moon on Apollo 14 and planted in 1976, the city's only Moon Tree. On the west front, ten Himalayan cedars line the lawn, several from an original planting of 1872, and one of them is the largest deodar in California. The Capitol's guide does not say which. Capitol Park is free and open daily.",
+  "meta_description": "Capitol Park's Moon Tree, a redwood whose seed went round the moon on Apollo 14, and the deodar cedars planted at Sacramento's Capitol from 1872.",
+  "question_meta": "Sacramento's oldest mapped trees are the deodar cedars on the Capitol's west front, several planted in 1872, over 150 years ago.",
+  "question_answer": "Sacramento's oldest mapped trees are the Himalayan Cedars (Cedrus deodara) on the west side of the State Capitol, several of them from an original twelve planted in 1872, which makes them more than 150 years old. The State Capitol Museum's guide does not say which of the ten standing today date from that planting.",
+  "question_context": "The same guide says one of the cedars is California's largest deodar, drawing on the California Big Trees Registry, and again declines to say which. You can take them as a set on the lawn at the west entrance. The building has a younger and stranger neighbour on its north-east side. In 1971 Apollo 14 carried tree seeds around the moon, and this coast redwood grew from one of them, collected near Soquel in 1966. It was planted in April 1976 at about two feet tall, and NASA's 2024 update has it near 120 feet. It is the city's only Moon Tree and one of seven in California. Capitol Park has had a difficult few years, as the Capitol Annex project put dozens of its trees at risk, 20 to 30 by the state's estimate and up to 100 by advocates' count. We have found no report of a cedar being removed, and our evidence that the Moon Tree still stands runs to 2024. Annex works may fence off some paths, so allow time to walk round.",
+  "hero_tree_id": "scm_001",
+  "oldest_tree_id": "scm_002",
+  "faq": [
+    {
+      "q": "Where is the Moon Tree in Sacramento?",
+      "a": "On the lawn at the north-east corner of the California State Capitol, beside the security pavilion near 10th and L Streets."
+    },
+    {
+      "q": "Which cedar at the Capitol is the state champion?",
+      "a": "The Capitol's tree guide says one of the ten on the west front is California's largest deodar, without saying which."
+    },
+    {
+      "q": "Is the Moon Tree still alive?",
+      "a": "NASA described it as standing in a 2024 update, the latest evidence we have. A 2023 report said it was being protected during the Capitol Annex works."
+    }
+  ],
+  "trees": [
+    {
+      "id": "scm_001",
+      "name": "The Capitol Park Moon Tree",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "planted 1976",
+      "age_min": 49,
+      "age_max": 50,
+      "height_m": 37,
+      "location": {
+        "address": "North side of the California State Capitol, beside the northeast security pavilion, 10th and L Streets, Sacramento",
+        "latitude": 38.57695,
+        "longitude": -121.493,
+        "neighbourhood": "Capitol Park, Downtown"
+      },
+      "story": "This redwood went around the moon as a seed. In 1971 the command module pilot of Apollo 14 carried tree seeds supplied by the US Forest Service, and this one had been collected near Soquel in California in 1966.\n\nThe seedling was shipped from the Institute of Forest Genetics in Placerville on 2 April 1976 and planted that month in Capitol Park, about two feet tall. NASA's page gives the date as April 20, with a question mark, which is an honest thing to find on a NASA page. By NASA's 2024 update it was about 120 feet tall with a canopy of about 40.\n\nIt is Sacramento's only Moon Tree and one of seven in California. At fifty it is an infant by redwood standards, and the seed's journey is the reason to come.\n\nThe last few years have been nervy. The Capitol Annex project put dozens of the park's trees at risk, by official estimates 20 to 30 and by advocates' as many as 100. A 2023 news report said this one was protected in place, and NASA says the annex plans were designed to keep it safe. Our evidence that it still stands runs to 2024. If you visit, tell us.",
+      "verified_sources": [
+        "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/sacramento_tree.html",
+        "https://www.waymarking.com/waymarks/WM8XEJ_Capitol_Park_Moon_Tree_Sacramento_CA",
+        "https://capitolmuseum.ca.gov/images/pdf/CapitolParkTreeBooklet.pdf (via web.archive.org, State Capitol Museum Capitol Park Tree Guide, updated 2016-09-01, p.8)"
+      ],
+      "official_register": {
+        "name": "NASA NSSDCA Moon Trees list",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees/sacramento_tree.html"
+      },
+      "access": "Free. Capitol Park is open to the public daily; the tree stands on the lawn at the north-east corner of the Capitol, by the security pavilion. Capitol Annex construction is under way nearby, so some paths may be fenced.",
+      "transport": "On foot in downtown Sacramento, at 10th and L Streets; bus and light rail routes not checked.",
+      "how_to_recognise": "You can recognise it by its height, about 37 metres on a crown only 12 metres across. It stands on the lawn at the Capitol's north-east corner, beside the security pavilion and behind the Sisters of Mercy sculpture.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "scm_002",
+      "name": "The Deodars of the Capitol's West Front",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "planted 1872, over 150 years",
+      "age_min": 150,
+      "age_max": 154,
+      "location": {
+        "address": "West side of the California State Capitol, 10th Street between L and N, Sacramento",
+        "latitude": 38.57714,
+        "longitude": -121.49437,
+        "neighbourhood": "Capitol Park, Downtown"
+      },
+      "location_site": {
+        "name": "Capitol west lawn",
+        "radius_m": 50
+      },
+      "story": "Somewhere in this row of ten stands the largest deodar in California, and the Capitol's own tree guide does not say which one. The State Capitol Museum's guide of 2016 gives the title to one of them, drawing on the California Big Trees Registry, and leaves you to work out the rest.\n\nThe guide also says that several of the ten belong to the Capitol's original twelve, planted in 1872. It does not say which several. That makes these trees, or some of them, more than 150 years old. Deodars are Himalayan cedars, a long way from home on a lawn in California's capital.\n\nThe row has had one recent scare. The Capitol Annex project put dozens of the park's trees at risk, 20 to 30 by the state's own estimate, though we have found no report of a cedar being removed. Someone photographed a deodar near the champion's registered position in October 2026, which suggests the row is intact without proving it.\n\nFor now they are best taken as a set, on the lawn at the west entrance. If you can tell us which is the champion, we would like to know.",
+      "verified_sources": [
+        "https://capitolmuseum.ca.gov/images/pdf/CapitolParkTreeBooklet.pdf (via web.archive.org, State Capitol Museum Capitol Park Tree Guide, updated 2016-09-01, pp.3, 6, 7)",
+        "https://annex.assembly.ca.gov/sites/annex.assembly.ca.gov/files/Capitol%20Tree%20Map.pdf (adapted from California State Parks Capitol Park Tree Listing, 2016-01-14)"
+      ],
+      "official_register": {
+        "name": "California State Capitol Museum, Capitol Park Tree Guide",
+        "url": "https://capitolmuseum.ca.gov/images/pdf/CapitolParkTreeBooklet.pdf"
+      },
+      "access": "Free. Capitol Park is open to the public; the cedars line the lawn at the west entrance of the Capitol.",
+      "transport": "On foot in downtown Sacramento, along 10th Street between L and N; bus and light rail routes not checked.",
+      "how_to_recognise": "You can recognise them by the number, ten tall cedars with drooping branches in one line. They stand on the lawn in front of the Capitol's west entrance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

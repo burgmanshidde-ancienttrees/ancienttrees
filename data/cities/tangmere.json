@@ -1,0 +1,68 @@
+{
+  "city": "Tangmere",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Tangmere's yew outlived its own replacement. In the 1760s it was declared dead and another was planted in its place, and the new tree failed while the old one came back. It is a stout female, south of St Andrew's church near Chichester, with a leaning section held by chains carrying the main branch. In 1885 the Church Builder called it the finest in all the country round. The churchyard is free.",
+  "meta_description": "The Tangmere Yew in West Sussex: declared dead in the 1760s and replaced, then outlived its replacement. A female yew, 8.08 metres round.",
+  "question_meta": "Tangmere's oldest tree is the yew at St Andrew's church, written off in the 1760s; probably over 800 years old by girth, undated.",
+  "question_answer": "Tangmere's oldest and only mapped tree is the Tangmere Yew, a female European Yew (Taxus baccata) south of St Andrew's church in West Sussex. It measured 8.08 metres at 30 centimetres in 1999. The Ancient Yew Group's size class says probably over 800 years, which is an estimate, and its newest dated record is 2011.",
+  "question_context": "It takes some nerve for a tree to be replaced and then recover, and that is what the record says happened here. In the 1760s the yew was reported dead and another was planted in its place. The replacement failed, and the old yew came back. By the next century it was admired in print. The Illustrated London News carried it in February 1846, and the Church Builder of 1885 called it the finest in all the country round. A figure of 20 feet at a yard up was published in 1848. A letter of 1988 gave 24 feet 8 inches at three feet, and a re-measurement in 2011 gave 24 feet 4 inches at the same height. Below three feet the trunk's own growth distorts the reading. A 1997 record makes it 12 metres tall. New wood is being laid down on the inner surface, and a chained, leaning section now carries the main branch. A Saxon church on the site was replaced about 1100.",
+  "hero_tree_id": "tgm_001",
+  "oldest_tree_id": "tgm_001",
+  "faq": [
+    {
+      "q": "Was the Tangmere Yew really declared dead?",
+      "a": "Yes. In the 1760s it was reported dead and another yew was planted to replace it. The new tree failed and the old one recovered."
+    },
+    {
+      "q": "How old is it?",
+      "a": "It has not been dated. Its girth places it in the Ancient Yew Group's class of probably over 800 years, an estimate."
+    },
+    {
+      "q": "When was it last recorded?",
+      "a": "The newest dated evidence we have is a re-measurement in 2011."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tgm_001",
+      "name": "Tangmere Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": 2000,
+      "age_basis": "derived",
+      "girth_cm": 808,
+      "location": {
+        "address": "St Andrew's Church, Tangmere, West Sussex",
+        "latitude": 50.848218,
+        "longitude": -0.720956,
+        "neighbourhood": "Tangmere"
+      },
+      "location_site": {
+        "name": "St Andrew's Church churchyard",
+        "radius_m": 30
+      },
+      "story": "In the 1760s this yew was declared dead, and another was planted to take its place. The replacement failed. The old yew recovered.\n\nEighty years later it had an audience. The Illustrated London News featured it in February 1846, and in 1885 the Church Builder called it the finest in all the country round. It had been measured at 20 feet at a yard up in 1848, and by 1988 the same height gave 24 feet 8 inches. A re-measurement in 2011 found 24 feet 4 inches at three feet. A yew that loses four inches in 23 years says more about tapes than about yews. Lower down the trunk's growth distorts every reading. The Ancient Yew Group's survey recorded 8.08 metres at 30 centimetres in 1999.\n\nIt is a female, 12 metres tall in a 1997 record, and the survey called it a fine healthy one. A leaning section held by chains carries the main branch, and new wood is being laid down on the inner surface, a slow way of rebuilding from within.\n\nThe girth class says probably over 800 years, an estimate rather than a date. A Saxon church here was replaced about 1100. The newest dated evidence for the tree is 2011, so an up-to-date photograph would be welcome.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_tree_database/tangmere/",
+        "https://www.ancient-yew.org/wp-content/uploads/2024/03/Tangmere-2019.pdf"
+      ],
+      "official_register": {
+        "name": "Ancient Yew Group database (Tim Hills 1997 to 2004 survey, Peter Norton re-measurements)",
+        "url": "https://www.ancient-yew.org/yew_tree_database/tangmere/"
+      },
+      "access": "Free. It stands in the public churchyard of St Andrew's, Tangmere, in the care of the parish church. No ticket or gate fee.",
+      "transport": "Chichester station is about 5 km to the west-south-west in a straight line, further by road. Tangmere lies just north of the A27; check Traveline for buses.",
+      "how_to_recognise": "You can recognise it by the stout trunk of a female yew and the leaning section held by chains that carries the main branch. It stands south of St Andrew's church.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
