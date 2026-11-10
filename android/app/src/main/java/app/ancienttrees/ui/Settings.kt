@@ -21,6 +21,7 @@ import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -115,7 +116,12 @@ class SettingsHost(
 )
 
 @Composable
-fun SettingsScreen(host: SettingsHost, onBack: () -> Unit, askSignOut: Boolean = false) {
+fun SettingsScreen(host: SettingsHost, onBack: () -> Unit, askSignOut: Boolean = false) = PlainText {
+    SettingsInner(host, onBack, askSignOut)
+}
+
+@Composable
+private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Boolean) {
     val brand = Brand.colors
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
@@ -381,16 +387,18 @@ fun BarSheet(
     leading: Pair<String, () -> Unit>? = null,
     trailing: Pair<String, () -> Unit>?,
     trailingEnabled: Boolean = true,
+    /** The large detent with the grouped grey ground, as a Form sheet on the iPhone. */
+    grouped: Boolean = false,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val brand = Brand.colors
     ModalBottomSheet(
         onDismissRequest = onDismiss,
         sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
-        containerColor = brand.ground,
+        containerColor = if (grouped) brand.surfaceMuted else brand.ground,
         dragHandle = null,
     ) {
-        Column(Modifier.fillMaxWidth().navigationBarsPadding()) {
+        Column(Modifier.fillMaxWidth().let { if (grouped) it.fillMaxHeight(0.94f) else it }.navigationBarsPadding()) {
             Box(Modifier.fillMaxWidth().height(56.dp)) {
                 leading?.let { (label, act) ->
                     Text(label, fontSize = 17.sp, color = brand.moss, modifier = Modifier.align(Alignment.CenterStart)
@@ -403,7 +411,8 @@ fun BarSheet(
                             .clickable(enabled = trailingEnabled, role = Role.Button, onClick = act).padding(horizontal = 16.dp, vertical = 12.dp))
                 }
             }
-            content()
+            val column = this
+            PlainText { column.content() }
         }
     }
 }

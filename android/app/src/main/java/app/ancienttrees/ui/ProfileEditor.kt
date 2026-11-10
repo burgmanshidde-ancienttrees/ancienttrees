@@ -143,10 +143,11 @@ fun ProfileEditorSheet(account: Account, profiles: Profiles, onDismiss: () -> Un
         leading = stringResource(R.string.cancel) to onDismiss,
         trailing = stringResource(if (saving) R.string.editor_saving else R.string.editor_save) to { save() },
         trailingEnabled = !saving && name.isNotBlank(),
+        grouped = true,
     ) {
         Column(
             verticalArrangement = Arrangement.spacedBy(20.dp),
-            modifier = Modifier.fillMaxWidth().background(brand.surfaceMuted.copy(alpha = 0.5f)).verticalScroll(rememberScrollState())
+            modifier = Modifier.fillMaxWidth().verticalScroll(rememberScrollState())
                 .padding(horizontal = 16.dp).padding(top = 16.dp, bottom = 32.dp).testTag("profile-editor"),
         ) {
             // THE PHOTO LEADS, LARGE AND CENTRED, with Change photo under it.
@@ -247,6 +248,16 @@ private fun PickRow(label: String, on: Boolean, onClick: () -> Unit) {
 /** PrivacySettings.swift: the one switch, its line, and a way to see what others see. */
 @Composable
 fun PrivacySettingsScreen(
+    account: Account,
+    profiles: Profiles,
+    userId: String?,
+    onBack: () -> Unit,
+    editName: () -> Unit,
+    openPerson: (String) -> Unit,
+) = PlainText { PrivacyInner(account, profiles, userId, onBack, editName, openPerson) }
+
+@Composable
+private fun PrivacyInner(
     account: Account,
     profiles: Profiles,
     userId: String?,

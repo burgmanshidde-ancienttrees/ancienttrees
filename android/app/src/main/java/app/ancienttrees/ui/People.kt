@@ -146,7 +146,10 @@ class PeopleHost(
 private data class Suggestion(val profile: Profiles.Profile, val reason: String, val ambassador: Boolean)
 
 @Composable
-fun FindPeopleScreen(host: PeopleHost, source: PeopleSource, onBack: () -> Unit) {
+fun FindPeopleScreen(host: PeopleHost, source: PeopleSource, onBack: () -> Unit) = PlainText { FindPeopleInner(host, source, onBack) }
+
+@Composable
+private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -> Unit) {
     val brand = Brand.colors
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
@@ -536,7 +539,10 @@ fun Avatar(url: String?, name: String?, size: Int, initialSize: Int) {
  * all read the same: "This profile is private."
  */
 @Composable
-fun PersonProfileScreen(host: PeopleHost, userId: String, onBack: () -> Unit) {
+fun PersonProfileScreen(host: PeopleHost, userId: String, onBack: () -> Unit) = PlainText { PersonInner(host, userId, onBack) }
+
+@Composable
+private fun PersonInner(host: PeopleHost, userId: String, onBack: () -> Unit) {
     val brand = Brand.colors
     val scope = rememberCoroutineScope()
     BackHandler(onBack = onBack)

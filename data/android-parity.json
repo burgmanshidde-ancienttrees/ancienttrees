@@ -56,13 +56,16 @@
     {
       "what": "Sending a collect",
       "why": "The iPhone keeps a copy on the phone and sends it in the background; Android keeps nothing on the phone (hard rule 11), so it sends at once and says so when it did not arrive."
+    },
+    {
+      "what": "Settings and recovery paths",
+      "why": "Open Settings lands on the app's own page in Android's Settings, and the recovery sheet's path line names Android's path; Rate the app opens the Play Store."
     }
   ],
   "map": {
     "status": "in-progress",
     "differences": [
       "Build 42's Airbnb sheet (LOG.md 2026-11-08: only the count bar at the lowest stop, the tab bar hidden) is decided but not in the iPhone's Swift on main yet; Android follows the Swift and takes it when it lands.",
-      "Location refused: the iPhone shows its recovery sheet (PermissionRecovery.swift) before Settings; Android opens the app's settings directly. Not ported yet.",
       "Your own trees (photographed by you, not ours) are not on the Android map or in the Collected shelf yet: Android has no store for them until My trees is ported (session 4).",
       "The snackbar after a bookmark (\"Added to Want to visit\", Undo) is not ported yet.",
       "First launch reads the 11.5 MB catalogue in about ten seconds on the one-core emulator under a loaded Mac; later launches read a binary snapshot. Not yet measured on a real phone.",
@@ -113,21 +116,16 @@
     "owner": null
   },
   "signin": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [
-      "Sign-in sheet written from the website's copy; SignIn.swift not ported."
+      "Continue with Apple is not there (forced: Sign in with Apple does not exist on Android); Google and email are the iPhone's pills, sizes and order."
     ],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "owner": null
   },
   "explore": {
     "status": "in-progress",
     "differences": [
       "A species (a pill, By species See all, a species search hit) opens the map filtered to that species; the iPhone opens its species page, which is not ported yet.",
-      "A visitor's name, signed in, opens their public profile on the website (ancienttrees.app/profile?u=); the iPhone opens PersonProfile, not ported yet. Signed out both ask for a sign-in first.",
       "Want to visit's See all goes to the account sheet's lanes until My trees is ported.",
       "The lists, the oldest trees and the See all pages show their trees as rows (TreeRow), not TreeCard; TreeCard has landed from the tree page and replaces them next.",
       "The ambassador explainer is drawn as its own sheet in Discover.kt; it moves onto BrandSheet.kt (now on main from the tree page). A failed request is a one-line sheet, not the snackbar, until a snackbar is ported.",
@@ -153,15 +151,15 @@
     ]
   },
   "profile": {
-    "status": "not-ported",
+    "status": "in-progress",
     "differences": [
-      "Profile and settings (Profile.swift) not ported."
+      "Ancient Trees Plus is not a row yet: the Plus question sheet (PlusAsk.swift) is not ported.",
+      "Send feedback opens the website's contribute page until the feedback screen (Contribute.swift, feedbackMode) is ported.",
+      "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
+      "No Directions row (forced: Android has no Apple Maps; Take me there opens the maps app the phone uses).",
+      "Rate the app opens the Play Store page (forced)."
     ],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "owner": null
   },
   "photo-viewer": {
     "status": "parity",
@@ -220,13 +218,14 @@
     ]
   },
   "profile-signed-in": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "status": "in-progress",
+    "differences": [
+      "Ancient Trees Plus is not a row yet: the Plus question sheet (PlusAsk.swift) is not ported.",
+      "Send feedback opens the website's contribute page until the feedback screen (Contribute.swift, feedbackMode) is ported.",
+      "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
+      "As profile: no Directions row, Rate the app opens the Play Store (forced)."
+    ],
+    "owner": null
   },
   "city": {
     "status": "not-ported",
@@ -284,22 +283,18 @@
     "owner": null
   },
   "signin-email": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "status": "parity",
+    "differences": [
+      "As signin: the iPhone's -show-email draws the same sheet; Continue with email opens the field and Email me a sign-in link, then Check your email with Open Gmail or Open Mail chosen by the address."
+    ],
+    "owner": null
   },
   "refused": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "status": "parity",
+    "differences": [
+      "The path line names Android's own Settings path (Settings › Apps › Ancient Trees › Permissions › Location), and Open Settings lands on the app's own page there (forced)."
+    ],
+    "owner": null
   },
   "contribute": {
     "status": "not-ported",
@@ -312,40 +307,33 @@
     "owner": null
   },
   "profile-edit": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "status": "parity",
+    "differences": [
+      "The flag is the system's flag emoji in a circle; the iPhone fills the circle with the website's flat flag (flag-icons). Same on My trees and a person's profile.",
+      "The editor is a full-height bottom sheet with Cancel and Save in its bar (the iPhone's Form sheet); the country list opens as a second sheet rather than a pushed list."
+    ],
+    "owner": null
   },
   "people": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "status": "in-progress",
+    "differences": [
+      "Pull to refresh on Find people is not added yet.",
+      "Blocked people are held in memory and read back from the server's blocks table; the iPhone also keeps the list on the phone (hard rule 11 on Android).",
+      "Share your profile opens Android's share sheet (forced)."
+    ],
+    "owner": null
   },
   "early-adopter": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "status": "parity",
+    "differences": [
+      "The tags row (Paris ambassador, Early adopter) matches; the rest of the frame is My trees (collection-tab) and its differences are listed there."
+    ],
+    "owner": null
   },
   "early-adopter-sheet": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [],
-    "owner": {
-      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
-      "name": "android-parity-7-profile",
-      "since": "2026-11-10"
-    }
+    "owner": null
   },
   "_shared": {
     "_note": "Pieces every screen uses. One owner each; a screen session changes them only through its owner.",

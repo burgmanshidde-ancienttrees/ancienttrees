@@ -133,7 +133,7 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
         containerColor = brand.ground,
         modifier = Modifier.testTag("signin-sheet"),
     ) {
-        Box {
+        PlainText { Box {
             Column(
                 verticalArrangement = Arrangement.spacedBy(18.dp),
                 modifier = Modifier
@@ -152,7 +152,7 @@ fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
                 }
             }
             SheetCloseButton({ account.dismissProblem(); onDismiss() }, Modifier.align(Alignment.TopEnd))
-        }
+        } }
     }
 }
 
