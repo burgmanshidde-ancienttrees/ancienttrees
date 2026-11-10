@@ -272,6 +272,7 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
     }
 
     fun shareProfile(uid: String) {
+        app.ancienttrees.account.Measure.event("share_tapped", mapOf("where" to "profile"))
         val url = "https://ancienttrees.app/profile?u=$uid&utm_source=share&utm_medium=app&utm_campaign=profile"
         val send = Intent(Intent.ACTION_SEND).apply {
             type = "text/plain"
