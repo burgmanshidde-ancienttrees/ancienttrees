@@ -26,10 +26,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
@@ -165,7 +162,7 @@ fun PhotoViewer(photos: List<Photo>, startAt: Int, onClose: () -> Unit) {
                         .clickable(role = Role.Button, onClick = onClose)
                         .semantics { contentDescription = close },
                 ) {
-                    Icon(Icons.Filled.Close, null, tint = Color.White, modifier = Modifier.size(18.dp))
+                    Icon(Sym.Close, null, tint = Color.White, modifier = Modifier.size(20.dp))
                 }
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,

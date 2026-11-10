@@ -42,15 +42,11 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.Verified
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -168,7 +164,7 @@ fun ContributeSheet(
             fun Field(value: String, onChange: (String) -> Unit, hint: String, modifier: Modifier = cell) = Box(modifier) {
                 BasicTextField(
                     value, onChange,
-                    textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+                    textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
                     cursorBrush = SolidColor(brand.moss),
                     modifier = Modifier.fillMaxWidth(),
                 )
@@ -181,7 +177,7 @@ fun ContributeSheet(
             when {
                 sent -> Column(group.then(cell), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Icon(Icons.Filled.Verified, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                        Icon(Sym.VerifiedFill, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                         Text(stringResource(R.string.thank_you), fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
                     }
                     Text(stringResource(R.string.we_read_every_tip), fontSize = 13.sp, color = brand.inkSoft)
@@ -222,7 +218,7 @@ fun ContributeSheet(
                                     verticalAlignment = Alignment.CenterVertically,
                                 ) {
                                     Text(stringResource(k.label), fontSize = 17.sp, color = brand.ink, modifier = Modifier.weight(1f))
-                                    if (kind == k) Icon(Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+                                    if (kind == k) Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(18.dp))
                                 }
                             }
                         }

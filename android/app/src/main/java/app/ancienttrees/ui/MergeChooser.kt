@@ -19,9 +19,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.outlined.MergeType
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -99,7 +96,7 @@ fun MergeChooser(
 
     confirming?.let { t ->
         BrandSheet(
-            icon = Icons.AutoMirrored.Outlined.MergeType,
+            icon = Sym.Merge,
             title = stringResource(R.string.mg_confirm_title, t.name),
             message = stringResource(R.string.mg_confirm_body),
             onDismiss = { confirming = null },

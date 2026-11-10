@@ -34,18 +34,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Cancel
-import androidx.compose.material.icons.filled.Close
-import androidx.compose.material.icons.outlined.History
-import androidx.compose.material.icons.outlined.PinDrop
-import androidx.compose.material.icons.outlined.Apartment
-import androidx.compose.material.icons.outlined.Eco
-import androidx.compose.material.icons.outlined.Park
-import androidx.compose.material.icons.outlined.Public
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -197,14 +186,14 @@ fun MapSearch(
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier.size(44.dp).clickable(onClick = onBack).semantics { contentDescription = "Back to the map" },
-            ) { Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(22.dp)) }
+            ) { Icon(Sym.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(22.dp)) }
             Box(Modifier.weight(1f)) {
                 if (query.isEmpty()) Text(SEARCH_PLACEHOLDER, fontSize = 17.sp, fontWeight = FontWeight.Medium, color = brand.inkSoft, maxLines = 1)
                 BasicTextField(
                     value = query,
                     onValueChange = { query = it },
                     singleLine = true,
-                    textStyle = TextStyle(fontSize = 17.sp, fontWeight = FontWeight.Medium, color = brand.ink),
+                    textStyle = sfStyle(fontSize = 17.sp, fontWeight = FontWeight.Medium, color = brand.ink),
                     cursorBrush = SolidColor(brand.ink),
                     keyboardOptions = KeyboardOptions(autoCorrectEnabled = false, imeAction = ImeAction.Search),
                     modifier = Modifier.fillMaxWidth().focusRequester(focus),
@@ -214,7 +203,7 @@ fun MapSearch(
                 Box(
                     contentAlignment = Alignment.Center,
                     modifier = Modifier.size(44.dp).clickable { query = "" }.semantics { contentDescription = "Clear" },
-                ) { Icon(Icons.Filled.Cancel, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp)) }
+                ) { Icon(Sym.CancelFill, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp)) }
             }
         }
         if (query.length >= 2) {
@@ -265,7 +254,7 @@ fun MapSearch(
                     for (r in mine) item(key = "recent-" + r.entry.id) {
                         Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth().testTag("recent-row")) {
                             Box(Modifier.weight(1f)) {
-                                PlainResultRow(r.name, r.sub, Icons.Outlined.History, onClick = { pick(r.hit) }, iconTint = brand.inkSoft)
+                                PlainResultRow(r.name, r.sub, Sym.History, onClick = { pick(r.hit) }, iconTint = brand.inkSoft)
                             }
                             Box(
                                 contentAlignment = Alignment.Center,
@@ -274,7 +263,7 @@ fun MapSearch(
                                     .size(44.dp)
                                     .clickable { scope.launch { recent.remove(r.entry, who.token()) } }
                                     .semantics { contentDescription = "Remove ${r.name} from recent" },
-                            ) { Icon(Icons.Filled.Close, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp)) }
+                            ) { Icon(Sym.Close, null, tint = brand.inkSoft, modifier = Modifier.size(19.dp)) }
                         }
                     }
                     item { Box(Modifier.padding(top = 10.dp).fillMaxWidth().height(0.5.dp).background(brand.hairline)) }
@@ -285,12 +274,12 @@ fun MapSearch(
                     .take(4)
                 if (near.isNotEmpty()) {
                     item { Head("Near you") }
-                    for (t in near) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Icons.Outlined.Park, query) { pick(SearchHit.OneTree(t)) } }
+                    for (t in near) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Sym.Park, query) { pick(SearchHit.OneTree(t)) } }
                 }
                 item { Head("Places worth a trip") }
                 for (c in index.cities.take(6)) {
                     item {
-                        ResultRow(c.name, "${c.country} · ${treesLabel(c.count)}", Icons.Outlined.Apartment, query) {
+                        ResultRow(c.name, "${c.country} · ${treesLabel(c.count)}", Sym.Apartment, query) {
                             pick(SearchHit.City(c.slug, c.name, c.lat, c.lng))
                         }
                     }
@@ -317,7 +306,7 @@ fun MapSearch(
                             PlainResultRow(
                                 pl.name,
                                 if (pl.country.isEmpty()) "Show on the map" else "${pl.country} · show on the map",
-                                Icons.Outlined.PinDrop,
+                                Sym.PinDrop,
                                 onClick = { pick(SearchHit.Place(pl.name, pl.lat, pl.lng)) },
                             )
                         }
@@ -326,7 +315,7 @@ fun MapSearch(
                         item { Head("Nearest tree") }
                         item {
                             Box(Modifier.testTag("empty-place-nearest")) {
-                                PlainResultRow(t.name, "${EmptyPlace.distance(km)} from ${town.name} · ${t.city}", Icons.Outlined.Park, onClick = { pick(SearchHit.OneTree(t)) })
+                                PlainResultRow(t.name, "${EmptyPlace.distance(km)} from ${town.name} · ${t.city}", Sym.Park, onClick = { pick(SearchHit.OneTree(t)) })
                             }
                         }
                     }
@@ -349,7 +338,7 @@ fun MapSearch(
                 }
                 if (showTrees && r.trees.isNotEmpty()) {
                     if (lane == Lane.TOP) item { Head("Trees") }
-                    for (t in r.trees) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Icons.Outlined.Park, query) { pick(SearchHit.OneTree(t)) } }
+                    for (t in r.trees) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Sym.Park, query) { pick(SearchHit.OneTree(t)) } }
                 }
             }
             item { Spacer(Modifier.height(24.dp)) }
@@ -365,7 +354,7 @@ private fun rank(c: Catalogue, idx: SearchIndex, query: String, lane: Lane, orig
     val places = ArrayList<PlaceRow>()
     for (k in idx.countries) {
         if (fold(k.name).startsWith(q)) {
-            places.add(PlaceRow("k:" + k.name, k.name, "${treesLabel(k.count)} in ${k.cities} ${if (k.cities == 1) "place" else "places"}", Icons.Outlined.Public, SearchHit.Country(k.name)))
+            places.add(PlaceRow("k:" + k.name, k.name, "${treesLabel(k.count)} in ${k.cities} ${if (k.cities == 1) "place" else "places"}", Sym.Public, SearchHit.Country(k.name)))
         }
     }
     fun startsAWord(name: String) = name.startsWith(q) || name.contains(" $q")
@@ -373,7 +362,7 @@ private fun rank(c: Catalogue, idx: SearchIndex, query: String, lane: Lane, orig
         val n = fold(city.name)
         val other = c.aka(city.slug).any { startsAWord(fold(it)) }
         if (startsAWord(n) || fold(city.country).startsWith(q) || n.contains(q) || other) {
-            places.add(PlaceRow("c:" + city.slug, city.name, "${city.country} · ${treesLabel(city.count)}", Icons.Outlined.Apartment, SearchHit.City(city.slug, city.name, city.lat, city.lng)))
+            places.add(PlaceRow("c:" + city.slug, city.name, "${city.country} · ${treesLabel(city.count)}", Sym.Apartment, SearchHit.City(city.slug, city.name, city.lat, city.lng)))
         }
     }
     val species = c.filterSpecies(c.speciesNames, query)
@@ -438,7 +427,7 @@ private fun SpeciesResultRow(c: Catalogue, name: String, hit: SpeciesHit, query:
     PlainResultRow(
         name = name,
         sub = "",
-        icon = Icons.Outlined.Eco,
+        icon = Sym.Eco,
         onClick = onClick,
         title = {
             Text(highlighted(name, query), fontFamily = BrandFace, fontSize = 16.sp, color = brand.ink, maxLines = 1, overflow = TextOverflow.Ellipsis)

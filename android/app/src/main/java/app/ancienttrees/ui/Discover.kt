@@ -53,17 +53,7 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.PhotoCamera
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.outlined.BookmarkBorder
-import androidx.compose.material.icons.outlined.Map
-import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -350,7 +340,7 @@ private fun SearchField(onClick: () -> Unit) {
             .padding(horizontal = 16.dp)
             .semantics { contentDescription = "explore-search" },
     ) {
-        Icon(Icons.Filled.Search, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+        Icon(Sym.SearchSemibold, null, tint = brand.ink, modifier = Modifier.size(22.dp))
         Text(
             stringResource(R.string.discover_search),
             fontSize = 16.sp,
@@ -591,7 +581,7 @@ fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
                     .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = seeAll),
             ) {
                 Text(stringResource(R.string.see_all), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
-                Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.moss, modifier = Modifier.size(14.dp))
+                Icon(Sym.ChevronRight, null, tint = brand.moss, modifier = Modifier.size(14.dp))
             }
         }
     }
@@ -631,7 +621,7 @@ private fun TileShelf(trees: List<Tree>, tag: (Tree) -> String, onOpen: (Tree) -
 
 @Composable
 private fun GhostMark() {
-    Icon(Icons.Outlined.BookmarkBorder, null, tint = Brand.colors.inkSoft.copy(alpha = 0.45f), modifier = Modifier.size(26.dp))
+    Icon(Sym.Bookmark, null, tint = Brand.colors.inkSoft.copy(alpha = 0.45f), modifier = Modifier.size(26.dp))
 }
 
 /** CollectedTile.swift (.ours): a photograph in a 3:4 tile and its tag, nothing else. */
@@ -843,7 +833,7 @@ private fun WantToVisitFull(mine: List<Tree>, tag: (Tree) -> String, act: Discov
         TileShelf(mine.take(3), tag, act.openTree, ghosts = maxOf(0, 3 - mine.size))
         // A SHORT LIST STILL INVITES MORE (Hidde, 2026-10-12).
         if (mine.size < 3) {
-            SecondaryButton(stringResource(R.string.discover_find_near), Icons.Outlined.Map, Modifier.padding(horizontal = 16.dp), act.showMap)
+            SecondaryButton(stringResource(R.string.discover_find_near), Sym.Map, Modifier.padding(horizontal = 16.dp), act.showMap)
         }
     }
 }
@@ -863,7 +853,7 @@ private fun WantToVisitEmpty(signedIn: Boolean, act: DiscoverActions) {
             }
         }
         if (signedIn) {
-            SecondaryButton(stringResource(R.string.discover_find_near), Icons.Outlined.Map, Modifier.padding(horizontal = 16.dp), act.showMap)
+            SecondaryButton(stringResource(R.string.discover_find_near), Sym.Map, Modifier.padding(horizontal = 16.dp), act.showMap)
         } else {
             Text(
                 stringResource(R.string.discover_want_signin),
@@ -934,7 +924,7 @@ private fun GrowingCard(addTree: () -> Unit) {
     ) {
         Text(stringResource(R.string.discover_growing_title), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 19.sp, color = brand.ink)
         Text(stringResource(R.string.discover_growing_body), fontSize = 15.sp, color = brand.inkSoft)
-        SecondaryButton(stringResource(R.string.discover_add_tree), Icons.Filled.PhotoCamera, onClick = addTree)
+        SecondaryButton(stringResource(R.string.discover_add_tree), Sym.PhotoCameraFill, onClick = addTree)
     }
 }
 
@@ -986,14 +976,14 @@ private fun AmbassadorWantedRow(
                     style = Stroke(w, pathEffect = PathEffect.dashPathEffect(floatArrayOf(3.dp.toPx(), 3.dp.toPx()))),
                 )
             }
-            Icon(Icons.Outlined.Verified, null, tint = moss, modifier = Modifier.size(16.dp))
+            Icon(Sym.Verified, null, tint = moss, modifier = Modifier.size(16.dp))
         }
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(1.dp)) {
             Text(stringResource(R.string.discover_ambassador_wanted, place), fontSize = 14.sp, fontWeight = FontWeight.Bold, color = brand.ink)
             if (asked) Text(stringResource(R.string.discover_request_sent), fontSize = 12.sp, color = brand.inkSoft)
         }
         if (!asked) {
-            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
+            Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
         }
     }
     if (confirming) {
@@ -1003,7 +993,7 @@ private fun AmbassadorWantedRow(
         if (sent) {
             BrandSheet(
                 title = stringResource(R.string.discover_amb_sent_title),
-                icon = Icons.Filled.Check,
+                icon = Sym.Check,
                 message = stringResource(R.string.discover_amb_sent_body) +
                     (email?.let { stringResource(R.string.discover_amb_write_to, it) } ?: ""),
                 onDismiss = close,
@@ -1012,7 +1002,7 @@ private fun AmbassadorWantedRow(
         } else {
             BrandSheet(
                 title = stringResource(R.string.discover_amb_title, place),
-                icon = Icons.Outlined.Verified,
+                icon = Sym.Verified,
                 message = stringResource(R.string.discover_amb_message),
                 points = listOf(
                     stringResource(R.string.discover_amb_p1),
@@ -1071,7 +1061,7 @@ private fun PageBar(title: String, onBack: () -> Unit) {
             contentAlignment = Alignment.Center,
         ) {
             Icon(
-                Icons.AutoMirrored.Filled.ArrowBack,
+                Sym.ArrowBack,
                 stringResource(R.string.back), tint = brand.ink, modifier = Modifier.size(22.dp),
             )
         }
@@ -1126,7 +1116,7 @@ private fun IndexPage(kind: IndexKind, c: Catalogue, act: DiscoverActions, onBac
             value = search,
             onValueChange = { search = it },
             singleLine = true,
-            textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+            textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
             cursorBrush = androidx.compose.ui.graphics.SolidColor(brand.moss),
             modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp).fillMaxWidth(),
             decorationBox = { inner ->
@@ -1135,7 +1125,7 @@ private fun IndexPage(kind: IndexKind, c: Catalogue, act: DiscoverActions, onBac
                     horizontalArrangement = Arrangement.spacedBy(6.dp),
                     modifier = Modifier.fillMaxWidth().height(36.dp).background(brand.surfaceMuted, RoundedCornerShape(10.dp)).padding(horizontal = 8.dp),
                 ) {
-                    Icon(Icons.Filled.Search, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
+                    Icon(Sym.Search, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp))
                     Box(Modifier.weight(1f)) {
                         if (search.isEmpty()) Text(stringResource(R.string.discover_index_search), fontSize = 17.sp, color = brand.inkSoft)
                         inner()
@@ -1203,7 +1193,7 @@ private fun IndexRow(title: String, subtitle: String, count: Int, onClick: () ->
             Text(subtitle, fontSize = 12.sp, color = brand.inkSoft, maxLines = 1)
         }
         Text("$count", fontSize = 15.sp, color = brand.inkSoft)
-        Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(16.dp))
+        Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(16.dp))
     }
 }
 
@@ -1225,7 +1215,7 @@ private fun SpeciesIndexRow(name: String, count: Int, onClick: () -> Unit) {
         SpeciesMark(name, brand.moss, Modifier.size(30.dp))
         Text(name, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.ink, maxLines = 1, modifier = Modifier.weight(1f))
         Text("$count", fontSize = 15.sp, color = brand.inkSoft)
-        Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(16.dp))
+        Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(16.dp))
     }
 }
 

@@ -10,10 +10,7 @@
 package app.ancienttrees.ui
 
 import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -76,7 +73,7 @@ fun SpeciesPicker(
                 }) {
                     SpeciesMark(name, brand.moss, Modifier.size(26.dp))
                     SpeciesRowName(catalogue, name, hit, modifier = Modifier.weight(1f))
-                    if (selection == name) Icon(Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                    if (selection == name) Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                     else Text("${counts[name] ?: 0}", fontSize = 15.sp, color = brand.inkSoft)
                 }
             }

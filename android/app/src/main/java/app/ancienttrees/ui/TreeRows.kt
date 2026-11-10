@@ -25,12 +25,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Bookmark
-import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.outlined.BookmarkBorder
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.remember
@@ -161,11 +156,11 @@ fun SaveMark(tree: Tree, onPhoto: Boolean) {
     ) {
         if (onPhoto) {
             Box(Modifier.size(33.dp).background(Color.Black.copy(alpha = 0.38f), CircleShape), contentAlignment = Alignment.Center) {
-                Icon(if (on) Icons.Filled.Bookmark else Icons.Outlined.BookmarkBorder, null, tint = Color.White, modifier = Modifier.size(17.dp))
+                Icon(if (on) Sym.BookmarkFill else Sym.Bookmark, null, tint = Color.White, modifier = Modifier.size(17.dp))
             }
         } else {
             Icon(
-                if (on) Icons.Filled.Bookmark else Icons.Outlined.BookmarkBorder,
+                if (on) Sym.BookmarkFill else Sym.Bookmark,
                 null,
                 tint = if (on) brand.moss else brand.inkSoft,
                 modifier = Modifier.size(22.dp),
@@ -187,7 +182,7 @@ fun SeenTag() {
             .border(1.dp, Color.Black.copy(alpha = 0.06f), RoundedCornerShape(50))
             .padding(horizontal = 10.dp, vertical = 5.dp),
     ) {
-        Icon(Icons.Filled.CheckCircle, null, tint = brand.canopy, modifier = Modifier.size(13.dp))
+        Icon(Sym.CheckCircleFill, null, tint = brand.canopy, modifier = Modifier.size(13.dp))
         Text(stringResource(R.string.seen_it_done), fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = brand.canopy)
     }
 }
@@ -218,7 +213,7 @@ fun TreeRow(tree: Tree, onOpen: () -> Unit) {
                     Modifier.align(Alignment.BottomEnd).offset(4.dp, 4.dp).size(18.dp).background(Color.White, CircleShape),
                     contentAlignment = Alignment.Center,
                 ) {
-                    Icon(Icons.Filled.CheckCircle, stringResource(R.string.seen_it_done), tint = brand.canopy, modifier = Modifier.size(18.dp))
+                    Icon(Sym.CheckCircleFill, stringResource(R.string.seen_it_done), tint = brand.canopy, modifier = Modifier.size(18.dp))
                 }
             }
         }

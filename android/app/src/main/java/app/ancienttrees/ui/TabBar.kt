@@ -27,6 +27,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
@@ -34,16 +35,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Eco
-import androidx.compose.material.icons.filled.Map
-import androidx.compose.material.icons.filled.PhotoCamera
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.outlined.Eco
-import androidx.compose.material.icons.outlined.Map
-import androidx.compose.material.icons.outlined.Search
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
@@ -77,9 +69,9 @@ private data class TabItem(val title: Int, val outline: ImageVector, val filled:
 private val TAB_TAGS = listOf("tab-map", "tab-discover", "tab-my-trees")
 
 private val ITEMS = listOf(
-    TabItem(R.string.tab_map, Icons.Outlined.Map, Icons.Filled.Map),
-    TabItem(R.string.tab_discover, Icons.Outlined.Search, Icons.Filled.Search),
-    TabItem(R.string.tab_my_trees, Icons.Outlined.Eco, Icons.Filled.Eco),
+    TabItem(R.string.tab_map, Sym.Map, Sym.MapFill),
+    TabItem(R.string.tab_discover, Sym.Search, Sym.Search),
+    TabItem(R.string.tab_my_trees, Sym.Eco, Sym.EcoFill),
 )
 
 @Composable
@@ -136,12 +128,16 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
                             .semantics { this.selected = on }
                             .testTag(TAB_TAGS[i]),
                     ) {
-                        Icon(
-                            if (on) item.filled else item.outline,
-                            contentDescription = null,
-                            tint = if (on) brand.ink else brand.inkSoft.copy(alpha = 0.8f),
-                            modifier = Modifier.size(24.dp),
-                        )
+                        // SF 21 point in a 24 high frame: a symbol of the set reads as
+                        // large as an SF Symbol at four thirds of its point size.
+                        Box(Modifier.height(24.dp), contentAlignment = Alignment.Center) {
+                            Icon(
+                                if (on) item.filled else item.outline,
+                                contentDescription = null,
+                                tint = if (on) brand.ink else brand.inkSoft.copy(alpha = 0.8f),
+                                modifier = Modifier.requiredSize(28.dp),
+                            )
+                        }
                         Spacer(Modifier.height(3.dp))
                         Text(
                             title,
@@ -170,7 +166,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
                 .clickable(role = Role.Button, onClick = collect)
                 .semantics { contentDescription = collectLabel },
         ) {
-            Icon(Icons.Filled.PhotoCamera, contentDescription = null, tint = brand.ink, modifier = Modifier.size(24.dp))
+            Icon(Sym.PhotoCameraFillSemibold, contentDescription = null, tint = brand.ink, modifier = Modifier.size(28.dp))
         }
     }
 }

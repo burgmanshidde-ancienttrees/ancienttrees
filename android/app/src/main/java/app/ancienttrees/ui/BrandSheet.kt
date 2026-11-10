@@ -24,13 +24,9 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -197,7 +193,7 @@ fun SheetCloseButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
             .semantics { contentDescription = label },
     ) {
         Box(Modifier.size(30.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
-            Icon(Icons.Filled.Close, null, tint = brand.inkSoft, modifier = Modifier.size(15.dp))
+            Icon(Sym.Close, null, tint = brand.inkSoft, modifier = Modifier.size(17.dp))
         }
     }
 }
@@ -212,7 +208,7 @@ private fun SheetPoints(points: List<String>) {
     ) {
         for (p in points) {
             Row(verticalAlignment = Alignment.Top) {
-                Icon(androidx.compose.material.icons.Icons.Filled.Check, null, tint = brand.moss, modifier = Modifier.size(16.dp).padding(top = 2.dp))
+                Icon(Sym.Check, null, tint = brand.moss, modifier = Modifier.size(16.dp).padding(top = 2.dp))
                 Spacer(Modifier.width(10.dp))
                 Text(p, fontSize = 15.sp, color = brand.ink)
             }

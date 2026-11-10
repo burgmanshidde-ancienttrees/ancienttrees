@@ -3319,6 +3319,17 @@ def check_no_personal_address():
     return out
 
 
+def check_android_sets_inter_and_material_symbols():
+    """Android's text sets in Inter and its icons come from Material Symbols
+    Rounded, never Roboto or Material Icons again (Hidde, 2026-11-10: "waarom
+    zijn alle lettertypes en iconen anders maak het zo veel hetzelfde"). The
+    rule lives in scripts/android_parity.py check_type_and_icons(). Removing
+    this needs Hidde."""
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import android_parity
+    return android_parity.check_type_and_icons()
+
+
 def check_icons_are_drawn():
     """The ratchet check from 2026-09-12: no emoji standing in for an icon.
 
@@ -3791,6 +3802,7 @@ def main():
         check_people_s_addresses_stay_out_of_the_repo,
         check_every_gate_asks_the_server,
         check_icons_are_drawn,
+        check_android_sets_inter_and_material_symbols,
         check_css_braces_balance,
         check_hidden_means_hidden,
         check_an_organisation_beside_a_name_was_asked_for,

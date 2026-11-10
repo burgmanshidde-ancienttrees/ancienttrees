@@ -36,8 +36,6 @@ import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
 import android.net.Uri
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -190,7 +188,7 @@ fun ReviewAskHost(prompt: ReviewPrompt, args: List<String>, onFeedback: () -> Un
     }
     if (!asking) return
     BrandSheet(
-        icon = Icons.Outlined.FavoriteBorder,
+        icon = Sym.Favorite,
         title = stringResource(R.string.review_title),
         message = stringResource(R.string.review_message),
         onDismiss = { asking = false },

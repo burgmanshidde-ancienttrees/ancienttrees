@@ -11,8 +11,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Place
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -65,7 +63,7 @@ fun PinPicker(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.align(Alignment.Center).offset(y = (-20).dp),
         ) {
-            Icon(Icons.Filled.Place, null, tint = Brand.colors.moss, modifier = Modifier.size(38.dp))
+            Icon(Sym.LocationOnFill, null, tint = Brand.colors.moss, modifier = Modifier.size(38.dp))
             Box(Modifier.offset(y = (-4).dp).size(6.dp).shadow(2.dp, CircleShape).background(Brand.colors.moss, CircleShape))
         }
     }

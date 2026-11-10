@@ -10,9 +10,7 @@
 
 package app.ancienttrees.ui
 
-import androidx.compose.material.icons.automirrored.outlined.MergeType
 
-import androidx.compose.material.icons.outlined.PinDrop
 
 import app.ancienttrees.account.Submission
 
@@ -31,16 +29,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.MoreHoriz
-import androidx.compose.material.icons.filled.Verified
-import androidx.compose.material.icons.outlined.CalendarMonth
-import androidx.compose.material.icons.outlined.Delete
-import androidx.compose.material.icons.outlined.Eco
-import androidx.compose.material.icons.outlined.Edit
-import androidx.compose.material.icons.outlined.PhotoCamera
-import androidx.compose.material.icons.outlined.PhotoLibrary
-import androidx.compose.material.icons.outlined.Straighten
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.runtime.rememberCoroutineScope
@@ -70,16 +58,10 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.outlined.AddCircleOutline
-import androidx.compose.material.icons.outlined.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.material3.Text
 import androidx.compose.material3.VerticalDivider
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
@@ -169,7 +151,7 @@ fun DraftTree(
         OwnTree(savedId!!, saved, catalogue, onBack = onDiscard, onCity = { slug, n -> onCity?.invoke(slug, n) })
         savedName?.let { n ->
             BrandSheet(
-                icon = Icons.Filled.Verified,
+                icon = Sym.VerifiedFill,
                 // The name under the title, not in it: "You added A tree in
                 // Amsterdam" reads wrong. No "with your photograph".
                 title = stringResource(R.string.cf_added_title),
@@ -281,7 +263,7 @@ fun DraftTree(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.heightIn(min = 44.dp).clickable(role = Role.Button) { editing = Field.STORY },
                     ) {
-                        Icon(Icons.Outlined.AddCircleOutline, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+                        Icon(Sym.AddCircle, null, tint = brand.moss, modifier = Modifier.size(18.dp))
                         Spacer(Modifier.width(5.dp))
                         Text(stringResource(R.string.cf_special), fontSize = 15.sp, color = brand.moss)
                     }
@@ -312,13 +294,13 @@ fun DraftTree(
                                     horizontalAlignment = Alignment.CenterHorizontally,
                                     verticalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterVertically),
                                 ) {
-                                    Icon(Icons.Filled.Add, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                                    Icon(Sym.Add, null, tint = brand.moss, modifier = Modifier.size(22.dp))
                                     Text(stringResource(R.string.ot_add_photo), fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
                                 }
                                 DropdownMenu(expanded = tileMenu, onDismissRequest = { tileMenu = false }, containerColor = brand.surface) {
                                     DropdownMenuItem(
                                         text = { Text(stringResource(R.string.collect_camera), color = brand.ink, fontSize = 16.sp) },
-                                        trailingIcon = { Icon(Icons.Outlined.PhotoCamera, null, tint = brand.ink) },
+                                        trailingIcon = { Icon(Sym.PhotoCamera, null, tint = brand.ink) },
                                         onClick = {
                                             tileMenu = false
                                             runCatching { extraCamera.launch(shotUri) }
@@ -326,7 +308,7 @@ fun DraftTree(
                                     )
                                     DropdownMenuItem(
                                         text = { Text(stringResource(R.string.cf_choose), color = brand.ink, fontSize = 16.sp) },
-                                        trailingIcon = { Icon(Icons.Outlined.PhotoLibrary, null, tint = brand.ink) },
+                                        trailingIcon = { Icon(Sym.PhotoLibrary, null, tint = brand.ink) },
                                         onClick = {
                                             tileMenu = false
                                             extraLibrary.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
@@ -358,7 +340,7 @@ fun DraftTree(
         Column(Modifier.align(Alignment.BottomCenter).fillMaxWidth().background(brand.ground)) {
             HorizontalDivider(color = brand.hairline)
             SheetButtonView(
-                SheetButton(stringResource(if (saving) R.string.cf_adding else R.string.cf_save_tree), SheetKind.PRIMARY, Icons.Filled.Check) { save() },
+                SheetButton(stringResource(if (saving) R.string.cf_adding else R.string.cf_save_tree), SheetKind.PRIMARY, Sym.Check) { save() },
                 Modifier.padding(horizontal = 20.dp, vertical = 10.dp).navigationBarsPadding().testTag("draft-save"),
             )
         }
@@ -506,7 +488,7 @@ private fun DraftTopButtons(
                 .clickable(role = Role.Button, onClick = onBack).semantics { contentDescription = back }.testTag("draft-back"),
             contentAlignment = Alignment.Center,
         ) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+            Icon(Sym.ArrowBack, null, tint = brand.moss, modifier = Modifier.size(20.dp))
         }
         Spacer(Modifier.weight(1f))
         val more = stringResource(R.string.ot_more)
@@ -517,7 +499,7 @@ private fun DraftTopButtons(
                 contentAlignment = Alignment.Center,
             ) {
                 Box(Modifier.size(24.dp).border(1.6.dp, brand.moss, CircleShape), contentAlignment = Alignment.Center) {
-                    Icon(Icons.Filled.MoreHoriz, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+                    Icon(Sym.Pending, null, tint = brand.moss, modifier = Modifier.size(22.dp)) // ellipsis.circle, 17 semibold
                 }
             }
             DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {
@@ -531,15 +513,15 @@ private fun DraftTopButtons(
                             go()
                         },
                     )
-                item(R.string.ot_change_name, Icons.Outlined.Edit) { onEdit(Field.NAME) }
-                item(R.string.ot_change_species, Icons.Outlined.Eco) { onSpecies() }
-                item(R.string.ot_change_age, Icons.Outlined.CalendarMonth) { onEdit(Field.AGE) }
-                item(R.string.ot_change_girth, Icons.Outlined.Straighten) { onEdit(Field.GIRTH) }
-                item(R.string.ot_move_pin, Icons.Outlined.PinDrop) { onMovePin() }
+                item(R.string.ot_change_name, Sym.Edit) { onEdit(Field.NAME) }
+                item(R.string.ot_change_species, Sym.Eco) { onSpecies() }
+                item(R.string.ot_change_age, Sym.CalendarMonth) { onEdit(Field.AGE) }
+                item(R.string.ot_change_girth, Sym.Straighten) { onEdit(Field.GIRTH) }
+                item(R.string.ot_move_pin, Sym.PinDrop) { onMovePin() }
                 // A draft is neither ours nor folded into ours yet, so it may merge.
-                if (onMerge != null) item(R.string.ot_merge, Icons.AutoMirrored.Outlined.MergeType) { onMerge() }
+                if (onMerge != null) item(R.string.ot_merge, Sym.Merge) { onMerge() }
                 HorizontalDivider(color = brand.hairline)
-                item(R.string.ot_remove_tree, Icons.Outlined.Delete, danger = true) { onRemove() }
+                item(R.string.ot_remove_tree, Sym.Delete, danger = true) { onRemove() }
             }
         }
     }
@@ -573,7 +555,7 @@ private fun FactColumn(label: String, value: String?, modifier: Modifier, onClic
         Text(label, fontSize = 13.sp, color = brand.inkSoft)
         if (value == null) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Outlined.AddCircleOutline, null, tint = brand.moss, modifier = Modifier.size(15.dp))
+                Icon(Sym.AddCircle, null, tint = brand.moss, modifier = Modifier.size(15.dp))
                 Spacer(Modifier.width(4.dp))
                 Text(stringResource(R.string.cf_add), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.moss)
             }
@@ -603,7 +585,7 @@ private fun FieldEditor(prompt: String, hint: String?, initial: String, long: Bo
                     value = text,
                     onValueChange = { text = it },
                     singleLine = !long,
-                    textStyle = TextStyle(fontSize = 17.sp, color = brand.ink),
+                    textStyle = sfStyle(fontSize = 17.sp, color = brand.ink),
                     cursorBrush = SolidColor(brand.moss),
                     modifier = Modifier.fillMaxWidth().focusRequester(focus),
                 )

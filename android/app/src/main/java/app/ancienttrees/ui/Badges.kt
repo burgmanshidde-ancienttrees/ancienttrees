@@ -17,11 +17,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AutoAwesome
-import androidx.compose.material.icons.filled.Verified
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -65,7 +61,7 @@ fun AmbassadorBadge(
                 .background(brand.moss.copy(alpha = 0.12f), RoundedCornerShape(50))
                 .padding(top = 3.dp, bottom = 3.dp, start = 7.dp, end = 9.dp),
         ) {
-            Icon(Icons.Filled.Verified, null, tint = brand.moss, modifier = Modifier.size((size + 2).dp))
+            Icon(Sym.VerifiedFill, null, tint = brand.moss, modifier = Modifier.size((size + 2).dp))
             Text(
                 ambassadorLabel(places.map { it.placeName }, compact), color = brand.moss, fontSize = size.sp,
                 fontWeight = FontWeight.Medium, maxLines = 1, overflow = TextOverflow.Ellipsis,
@@ -94,7 +90,7 @@ fun EarlyAdopterBadge(size: Int = 12) {
             .background(brand.gold.copy(alpha = 0.18f), RoundedCornerShape(50))
             .padding(top = 3.dp, bottom = 3.dp, start = 7.dp, end = 9.dp),
     ) {
-        Icon(Icons.Filled.AutoAwesome, null, tint = brand.goldInk, modifier = Modifier.size((size + 1).dp))
+        Icon(Sym.StarShineFill, null, tint = brand.goldInk, modifier = Modifier.size((size + 1).dp))
         Text(stringResource(R.string.early_adopter), color = brand.goldInk, fontSize = size.sp, fontWeight = FontWeight.Medium, maxLines = 1)
     }
 }
@@ -105,7 +101,7 @@ fun EarlyAdopterSheet(onDismiss: () -> Unit) {
     BrandSheet(
         title = stringResource(R.string.early_title),
         message = stringResource(R.string.early_body),
-        icon = Icons.Filled.AutoAwesome,
+        icon = Sym.StarShineFill,
         iconTint = Brand.colors.goldInk,
         iconGround = Brand.colors.gold.copy(alpha = 0.18f),
         onDismiss = onDismiss,

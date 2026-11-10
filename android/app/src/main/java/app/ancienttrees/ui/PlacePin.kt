@@ -30,11 +30,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Verified
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
@@ -157,7 +154,7 @@ fun PlacePin(
         ) {
             if (sent) {
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Icon(Icons.Filled.Verified, null, tint = brand.ink, modifier = Modifier.size(18.dp))
+                    Icon(Sym.VerifiedFill, null, tint = brand.ink, modifier = Modifier.size(18.dp))
                     Text(stringResource(R.string.pp_sent), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
                 }
             } else {

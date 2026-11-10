@@ -6,6 +6,8 @@
 
 package app.ancienttrees.map
 
+import app.ancienttrees.ui.Sym
+
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
@@ -32,7 +34,6 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.graphics.PathParser
 import androidx.compose.ui.graphics.asAndroidPath
-import androidx.compose.material.icons.filled.ConfirmationNumber
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -578,7 +579,8 @@ private fun stackBitmap(context: Context, n: Int): Bitmap {
     paint.style = Paint.Style.FILL
     paint.textAlign = Paint.Align.CENTER
     paint.textSize = 15 * density
-    paint.isFakeBoldText = true
+    // Inter Bold, the text face (ui/Theme.kt), never the system's Roboto.
+    paint.typeface = androidx.core.content.res.ResourcesCompat.getFont(context, app.ancienttrees.R.font.inter_bold)
     canvas.drawText(n.toString(), centre, centre - (paint.descent() + paint.ascent()) / 2, paint)
     return bitmap
 }
@@ -661,7 +663,7 @@ private fun ticketPath(): android.graphics.Path? = runCatching {
             }
         }
     }
-    add(androidx.compose.material.icons.Icons.Filled.ConfirmationNumber.root)
+    add(Sym.ConfirmationNumberFill.root)
     out
 }.getOrNull()
 
