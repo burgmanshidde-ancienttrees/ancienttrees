@@ -16,6 +16,7 @@ You review; you never fix product or copy. Write only REVIEW.md, data/compliance
 
 - **Privacy (GDPR, the Dutch Telecommunicatiewet)**: personal data shown to more people than before, a default that opens rather than closes, data kept without a stated period, a new processor (a service that receives reader data), tracking on a device without consent, anything a deleted account leaves behind other than what the terms name.
 - **Copyright and database rights**: a photograph without a recorded open licence or written permission, a credit that drops the author, licence or source the licence asks for, text copied from a source rather than written from it, a register imported without a licence verdict in OPEN_DATA_SURVEY.md, anything from monumentaltrees.com beyond a fact.
+- **Given photos and words**: a photo someone mailed us that went up without their yes (qa refuses one without `permission`; check the week's new ones are real yeses, not filled in to pass), a sentence from a mail quoted on a page without `quote_ok` in data/outreach-words.json.
 - **Mail**: a first mail without a way to say no (mailcheck refuses it; check that the drafted batches pass), an address not published by its owner, a person mailed again after saying no.
 - **Promises**: copy that promises what the product does not do, or "free forever"-type claims (CLAUDE.md, What this is).
 - **Children and safety**: anything that invites a reader onto private land or to harm a tree (hard rule 10, the stories rule).

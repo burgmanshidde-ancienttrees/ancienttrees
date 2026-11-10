@@ -858,6 +858,45 @@ def check_the_privacy_page_names_what_we_store():
     return ["%s (compliance audit, 2026-11-10)" % p for p in privacycheck.problems()]
 
 
+def check_a_given_photo_records_the_yes():
+    """A photograph somebody gave us by mail goes up only with their yes on file.
+
+    Compliance audit, 2026-11-10: a mailed photo used to go up at once and the
+    reply asked afterwards (2026-10-14), so for a while we published without
+    the maker's permission. Hidde agreed to narrow it ("ja punt 5 doen en
+    moeten we kritisch blijven dat we dat blijven doen"): it goes up at once
+    when the mail itself says we may use it, otherwise on the yes. Either way
+    the photo record carries `permission`: {"words": "<their sentence>",
+    "date": "YYYY-MM-DD"}. A photograph from the app is covered by the terms
+    and is not this check's business; photos live on 2026-11-10 are in
+    data/gift-photo-baseline.json. Removing this check needs Hidde."""
+    root = Path(__file__).resolve().parent.parent
+    try:
+        base = set(json.loads((root / "data" / "gift-photo-baseline.json").read_text(encoding="utf-8"))["urls"])
+    except (OSError, ValueError, KeyError):
+        base = set()
+    gift = ("provided by", "with permission", "by permission")
+    out = []
+    for p in sorted((root / "data" / "cities").glob("*.json")):
+        try:
+            trees = json.loads(p.read_text(encoding="utf-8")).get("trees") or []
+        except ValueError:
+            continue
+        for t in trees:
+            for ph in [t.get("photo") or {}] + (t.get("photos") or []):
+                lic = (ph.get("license") or "").lower()
+                if not ph.get("url") or ph["url"] in base or not any(g in lic for g in gift):
+                    continue
+                if ph.get("source") == "contributor" or "ancient trees app" in lic:
+                    continue
+                perm = ph.get("permission") or {}
+                if not ((perm.get("words") or "").strip() and perm.get("date")):
+                    out.append("%s/%s: a photograph given to us carries no `permission` "
+                               "{words, date}; put the sender's own yes on it, or take it "
+                               "down until they say yes (compliance, 2026-11-10)" % (p.stem, t.get("id")))
+    return out
+
+
 def check_an_escaped_bug_has_a_test():
     """A bug a person found is closed only with the test that now catches it.
 
@@ -3734,6 +3773,7 @@ def main():
         check_ambassador_requests_reach_hidde,
         check_the_quality_line_stays_in_the_digest,
         check_the_privacy_page_names_what_we_store,
+        check_a_given_photo_records_the_yes,
         check_every_reader_photo_reaches_hidde,
         check_everything_sent_reaches_hidde,
         check_every_site_route_is_claimed_or_excluded,
@@ -3940,6 +3980,7 @@ def main():
     failures += check_ambassador_requests_reach_hidde()
     failures += check_the_quality_line_stays_in_the_digest()
     failures += check_the_privacy_page_names_what_we_store()
+    failures += check_a_given_photo_records_the_yes()
     failures += check_an_escaped_bug_has_a_test()
     failures += check_every_reader_photo_reaches_hidde()
     failures += check_everything_sent_reaches_hidde()
