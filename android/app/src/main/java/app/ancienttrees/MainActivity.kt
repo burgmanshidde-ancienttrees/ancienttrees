@@ -301,7 +301,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             asking = true
         }
     }
-    LaunchedEffect(Unit) { account.restore() }
+    LaunchedEffect(Unit) {
+        // The test account's session from an instrumented test, debug builds only.
+        if (launch.testSession?.let { account.useTestSession(it) } != true) account.restore()
+    }
     LaunchedEffect(Unit) { app.ancienttrees.ui.AppSwitches.refresh(launch.args) }
     // A LINK INTO THE APP: the sign-in callback, or a page of the website the app
     // has a screen for (WebLink.kt, the iPhone's ContentView.open). Read once the

@@ -246,6 +246,26 @@
    "found_by": "hidde",
    "no_test_reason": "Only a physical iPhone shows it: thirteen simulator walks, Debug and Release, opened the sheet on the broken code. Confirmed by a logged tap on Hidde's phone before and after the fix.",
    "fixed_in": "17c3afa0d"
+  },
+  {
+   "id": "ESC-2026-11-10-android-my-trees-and-the-profile-page-ar",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "android/app/src/main/java/app/ancienttrees/ui/MapSheet.kt",
+   "summary": "Android: My trees and the profile page are see-through, the map shows behind the header and the tiles, where the iPhone's sheet turns opaque as it rises",
+   "first_seen": "2026-11-10",
+   "status": "open",
+   "found_by": "hidde"
+  },
+  {
+   "id": "ESC-2026-11-10-android-collected-tiles-in-my-trees-show",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "android/app/src/main/java/app/ancienttrees/ui/MyTrees.kt",
+   "summary": "Android: Collected tiles in My trees show the drawn placeholder tree instead of the tree's photograph (iOS CollectedTile shows the photo)",
+   "first_seen": "2026-11-10",
+   "status": "open",
+   "found_by": "hidde"
   }
  ]
 }

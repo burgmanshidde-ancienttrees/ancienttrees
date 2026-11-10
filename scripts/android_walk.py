@@ -24,11 +24,31 @@ SDK = pathlib.Path.home() / "Library" / "Android" / "sdk"
 JBR = "/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 
 
+def test_session():
+    """The test account's session (scripts/test_session.py), or "" without the service key."""
+    env = dict(os.environ)
+    # On the Mac the service key lives in ~/.ancienttrees-supabase.env (never in the repo).
+    keys = pathlib.Path.home() / ".ancienttrees-supabase.env"
+    if "SUPABASE_SERVICE_KEY" not in env and keys.exists():
+        for line in keys.read_text().splitlines():
+            k, _, v = line.strip().removeprefix("export ").partition("=")
+            if k and v:
+                env.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "test_session.py")], capture_output=True, text=True, env=env)
+    line = r.stdout.strip().splitlines()[-1] if r.returncode == 0 and r.stdout.strip() else ""
+    return line if line.count("|") == 3 else ""
+
+
 def main():
     env = dict(os.environ, JAVA_HOME=JBR, ANDROID_HOME=str(SDK))
+    # SIGNED IN FOR REAL (SignedInRoundTrip.kt): the test account, never a fake.
+    session = test_session()
+    print("signed-in round trip: " + ("on the test account" if session else "skipped, no service key"))
+    cmd = ["./gradlew", "-q", "connectedDebugAndroidTest"]
+    if session:
+        cmd.append("-Pandroid.testInstrumentationRunnerArguments.AT_SESSION=" + session)
     with emulator("android_walk"):
-        r = subprocess.run(["./gradlew", "-q", "connectedDebugAndroidTest"], cwd=ROOT / "android",
-                           env=env, capture_output=True, text=True)
+        r = subprocess.run(cmd, cwd=ROOT / "android", env=env, capture_output=True, text=True)
     failed = 0
     for f in glob.glob(str(ROOT / "android/app/build/outputs/androidTest-results/connected/debug/TEST-*.xml")):
         s = open(f).read()

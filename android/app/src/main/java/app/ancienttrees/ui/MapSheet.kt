@@ -227,7 +227,17 @@ fun MapSheet(
                 .shadow(10.dp, RoundedCornerShape(topStart = corner, topEnd = corner), ambientColor = Color.Black.copy(alpha = 0.12f), spotColor = Color.Black.copy(alpha = 0.12f))
                 // The iPhone's regularMaterial over the map reads as a warm light
                 // grey (#F4F4F2 measured off its shots, 2026-11-10), not white.
-                .background(androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f), RoundedCornerShape(topStart = corner, topEnd = corner))
+                .background(
+                    // SOLID ONCE IT IS THE PAGE (BottomSheet.swift: systemBackground
+                    // at the page progress), so nothing shows through where the sheet
+                    // has become the screen (Hidde, 2026-11-10, My trees see-through).
+                    androidx.compose.ui.graphics.lerp(
+                        androidx.compose.ui.graphics.lerp(brand.ground, brand.surfaceMuted, 0.8f),
+                        brand.ground,
+                        state.pageProgress.coerceIn(0f, 1f),
+                    ),
+                    RoundedCornerShape(topStart = corner, topEnd = corner),
+                )
                 .nestedScroll(connection)
                 // At peek every finger belongs to the sheet: a still tap raises
                 // it to half and opens nothing underneath.

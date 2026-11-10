@@ -113,6 +113,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
@@ -1445,11 +1446,13 @@ private fun CreditLine(tree: Tree, shotAt: Int) {
 
 /** barCircle: 52, the surface, a hairline; the moss tint when it is on. */
 @Composable
-private fun BarCircle(icon: ImageVector, label: String, on: Boolean = false, tint: Color = Brand.colors.moss, tag: String = "", onClick: () -> Unit) {
+private fun BarCircle(icon: ImageVector, label: String, on: Boolean = false, tint: Color = Brand.colors.moss, tag: String = "", saved: Boolean? = null, onClick: () -> Unit) {
     val brand = Brand.colors
     Box(
         Modifier
             .testTag(tag)
+            // Saved or not, as a screen reader hears it (and the round trip reads it).
+            .then(if (saved != null) Modifier.semantics { selected = saved } else Modifier)
             .size(52.dp)
             .background(if (on) brand.moss.copy(alpha = 0.12f) else brand.surface, CircleShape)
             .border(1.dp, if (on) brand.moss else brand.hairline, CircleShape)
@@ -1521,6 +1524,7 @@ private fun ActionBar(
                 save,
                 tint = if (hearted) brand.moss else brand.inkSoft,
                 tag = "tree-save",
+                saved = hearted,
                 onClick = onHeart,
             )
         }

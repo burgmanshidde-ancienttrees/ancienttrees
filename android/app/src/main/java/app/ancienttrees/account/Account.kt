@@ -56,6 +56,25 @@ class Account(context: Context) {
 
     // MARK: launch
 
+    /**
+     * A REAL SESSION FOR A TEST (Account.swift's AT_TEST_SESSION; Hidde,
+     * 2026-11-08 and 2026-11-10: "can you test with actual test accounts").
+     * "access|refresh|userId|email" from scripts/test_session.py, on the test
+     * account apptest@ancienttrees.app (ours, never a reader). Held in memory
+     * only, never written to the phone, and the server still checks the token on
+     * every call. Only a debuggable build reads it (MainActivity checks).
+     */
+    fun useTestSession(raw: String): Boolean {
+        val p = raw.split("|")
+        if (p.size != 4 || p[0].isEmpty()) return false
+        testing = true
+        session = Session(p[0], p[1], System.currentTimeMillis() + 50 * 60_000L, p[2], p[3])
+        state = SignIn.SignedIn(p[3])
+        problem = null
+        return true
+    }
+
+
     /** Spend the stored token with the server; only its yes signs anybody in. */
     suspend fun restore() {
         val stored = prefs.getString(KEY_REFRESH, null)
@@ -177,8 +196,12 @@ class Account(context: Context) {
         return if (r.ok) parse(r.body) else null
     }
 
+    /** True while signed in through [useTestSession]: nothing is written to the phone. */
+    private var testing = false
+
     private fun store(s: Session) {
         session = s
+        if (testing) { state = SignIn.SignedIn(s.email); problem = null; return }
         state = SignIn.SignedIn(s.email)
         problem = null
         prefs.edit().putString(KEY_REFRESH, s.refreshToken).apply()
