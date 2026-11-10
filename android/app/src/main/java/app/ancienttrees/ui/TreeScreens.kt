@@ -192,23 +192,7 @@ fun TreeScreen(
                     )
                 }
 
-                // AT ITS BEST NOW: the chip the website and the iPhone show
-                // while the tree's one real peak is on.
                 val month = remember { java.util.Calendar.getInstance().get(java.util.Calendar.MONTH) + 1 }
-                if (tree.atBest(month)) {
-                    seasonChip(tree.seasonKey)?.let { chip ->
-                        Text(
-                            chip,
-                            fontWeight = FontWeight.SemiBold,
-                            fontSize = 13.sp,
-                            color = Color(0xFF10160A),
-                            modifier = Modifier
-                                .clip(RoundedCornerShape(50))
-                                .background(Color(0xFFD9A13F))
-                                .padding(horizontal = 10.dp, vertical = 4.dp),
-                        )
-                    }
-                }
 
                 // The one warning this product must never soften.
                 if (tree.precision == Precision.APPROXIMATE) {
@@ -318,18 +302,6 @@ fun TreeScreen(
             )
         }
     }
-}
-
-@Composable
-private fun seasonChip(key: String?): String? = when (key) {
-    "bloom" -> stringResource(R.string.season_chip_bloom)
-    "autumn" -> stringResource(R.string.season_chip_autumn)
-    "fruit" -> stringResource(R.string.season_chip_fruit)
-    "leaves" -> stringResource(R.string.season_chip_leaves)
-    "catkins" -> stringResource(R.string.season_chip_catkins)
-    "winter" -> stringResource(R.string.season_chip_winter)
-    "peak" -> stringResource(R.string.season_chip_peak)
-    else -> null
 }
 
 @Composable
