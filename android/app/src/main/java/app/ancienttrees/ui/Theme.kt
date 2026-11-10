@@ -7,6 +7,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -36,13 +38,24 @@ private val Dark = darkColorScheme(
 )
 
 /** The display face, Gabarito, as on the iPhone and the website (OFL, android/FONT-LICENSE-OFL.txt). */
-val Brand = FontFamily(
+val BrandFace = FontFamily(
     Font(R.font.gabarito_regular, FontWeight.Normal),
     Font(R.font.gabarito_medium, FontWeight.Medium),
     Font(R.font.gabarito_bold, FontWeight.Bold),
 )
 
+/** The iPhone's Brand palette (BrandColors.kt, generated from Style.swift). */
+val LocalBrand = staticCompositionLocalOf { LightBrand }
+
+object Brand {
+    val colors: BrandColors
+        @Composable get() = LocalBrand.current
+}
+
 @Composable
 fun AncientTreesTheme(content: @Composable () -> Unit) {
-    MaterialTheme(colorScheme = if (isSystemInDarkTheme()) Dark else Light, content = content)
+    val dark = isSystemInDarkTheme()
+    CompositionLocalProvider(LocalBrand provides if (dark) DarkBrand else LightBrand) {
+        MaterialTheme(colorScheme = if (dark) Dark else Light, content = content)
+    }
 }

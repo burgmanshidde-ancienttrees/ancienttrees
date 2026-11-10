@@ -57,6 +57,7 @@ import app.ancienttrees.ui.CollectedSheet
 import app.ancienttrees.ui.SignInSheet
 import app.ancienttrees.ui.LocationOffChip
 import app.ancienttrees.ui.MyLocationButton
+import app.ancienttrees.ui.TabBar
 import app.ancienttrees.ui.TreeCard
 import app.ancienttrees.ui.TreeList
 import app.ancienttrees.ui.TreeScreen
@@ -71,7 +72,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         link = intent?.data
-        setContent { AncientTreesTheme { App(link, onLinkRead = { link = null }) } }
+        val launch = LaunchArgs.from(intent, applicationInfo)
+        setContent { AncientTreesTheme { App(link, onLinkRead = { link = null }, launch = launch) } }
     }
 
     override fun onNewIntent(intent: Intent) {
@@ -80,7 +82,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-private val PEEK = 96.dp
+/** The sheet's lowest stop: its count bar plus the floating tab bar under it. */
+private val PEEK = 96.dp + TabBar.floatDepth
 
 private val LOCATION = arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
 
@@ -96,14 +99,14 @@ private fun openAppSettings(context: Context) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun App(link: Uri?, onLinkRead: () -> Unit) {
+private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchArgs.NONE) {
     val context = LocalContext.current
     val store = remember { CatalogueStore(context.applicationContext) }
     var catalogue by remember { mutableStateOf<Catalogue?>(null) }
     var selected by remember { mutableStateOf<Tree?>(null) }
     var open by remember { mutableStateOf<Tree?>(null) }
     var box by remember { mutableStateOf<ViewBox?>(null) }
-    var here by remember { mutableStateOf<Here?>(null) }
+    var here by remember { mutableStateOf<Here?>(launch.at?.let { Here(it.first, it.second) }) }
     var recentre by remember { mutableIntStateOf(0) }
     val miles = remember { Geo.milesFor(Locale.getDefault().country) }
     val scope = rememberCoroutineScope()
@@ -211,6 +214,16 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
     // Back from Settings with location turned on.
     LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { granted = locationGranted(context) }
 
+    val sheet = rememberBottomSheetScaffoldState()
+    // The parity script's launch arguments: the iPhone's own (LaunchArgs.kt).
+    val fixedAt = launch.at
+    LaunchedEffect(catalogue) {
+        val c = catalogue ?: return@LaunchedEffect
+        launch.openTree?.let { id -> c.trees.firstOrNull { it.id == id }?.let { open = it } }
+        launch.select?.let { id -> c.trees.firstOrNull { it.id == id }?.let { selected = it } }
+        if (launch.sheetFull) sheet.bottomSheetState.expand()
+        if (launch.signIn) asking = true
+    }
     LaunchedEffect(Unit) {
         catalogue = store.load()
         store.refresh(catalogue?.version)?.let { catalogue = it }
@@ -222,7 +235,9 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
 
     val trees = catalogue?.trees.orEmpty()
     val inView = remember(trees, box, here) { Nearby.inView(trees, box, here) }
-    val sheet = rememberBottomSheetScaffoldState()
+    // INTERIM until Discover and My trees are ported (data/android-parity.json):
+    // Discover raises the list, My trees opens your lanes.
+    val tab = 0
 
     Box(Modifier.fillMaxSize()) {
         BottomSheetScaffold(
@@ -237,7 +252,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
                     trees = trees,
                     selected = selected,
                     onSelect = { selected = it },
-                    locationOn = granted,
+                    locationOn = granted && fixedAt == null,
+                    focus = fixedAt,
                     recentre = recentre,
                     onView = { b, h ->
                         box = b
@@ -289,6 +305,21 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
             )
         }
         if (open == null) {
+            TabBar(
+                selected = tab,
+                select = { i ->
+                    when (i) {
+                        1 -> scope.launch { sheet.bottomSheetState.expand() }
+                        2 -> if (signedIn) showAccount = true else asking = true
+                        else -> scope.launch { sheet.bottomSheetState.partialExpand() }
+                    }
+                },
+                collect = {
+                    val t = selected ?: inView.trees.firstOrNull()
+                    if (t != null) open = t
+                },
+                modifier = Modifier.align(Alignment.BottomCenter),
+            )
             AccountButton(
                 signedIn = signedIn,
                 onClick = { if (signedIn) showAccount = true else asking = true },
