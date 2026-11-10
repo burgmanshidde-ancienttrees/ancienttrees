@@ -525,6 +525,8 @@ export interface UIStrings {
   exploreTitle: string;
   exploreDescription: string;
   exploreHeading: string;
+  /** The floating pill on /explore's phone sheet at full height that drops the list back to the map (Airbnb's "Map"; the app's back-to-map pill, build 42). */
+  mapPill: string;
   exploreNote: string;
   exploreWhatH: string;
   exploreWhatBody: (trees: number, places: number, countries: number) => string;
@@ -924,6 +926,7 @@ const EN: UIStrings = {
   exploreTitle: "Ancient Tree Map: every remarkable old tree, one map",
   exploreDescription: "The interactive map of every verified ancient tree on the site, each pin a tree worth standing in front of.",
   exploreHeading: "The ancient tree map",
+  mapPill: "Map",
   exploreNote: "Every pin is a tree worth the walk. Find one near you, or somewhere you are going.",
   exploreWhatH: "What is on this map",
   exploreWhatBody: (t, p, c) => `${t} trees in ${p} places across ${c} countries. Each pin opens a tree with its age, its species, why it is worth the walk, and directions from where you are.`,
@@ -1122,6 +1125,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     exploreTitle: "Mapa de árboles históricos del mundo",
     exploreDescription: "El mapa interactivo de todos los árboles históricos verificados del sitio, cada marcador un árbol ante el que merece la pena plantarse.",
     exploreHeading: "El mapa de árboles históricos",
+    mapPill: "Mapa",
     exploreNote: "Cada marcador es un árbol que merece el paseo. Encuentra uno cerca de ti, o donde vayas a ir.",
     exploreWhatH: "Qué hay en este mapa",
     exploreWhatBody: (t, p, c) => `${t} árboles en ${p} lugares de ${c} países. Cada marcador abre un árbol con su edad, su especie, por qué merece el paseo y cómo llegar desde donde estás.`,
@@ -1486,6 +1490,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     exploreTitle: "Mappa degli alberi monumentali del mondo",
     exploreDescription: "La mappa interattiva di tutti gli alberi monumentali verificati del sito, ogni segnaposto un albero davanti a cui vale la pena fermarsi.",
     exploreHeading: "La mappa degli alberi monumentali",
+    mapPill: "Mappa",
     exploreNote: "Ogni segnaposto è un albero che vale la camminata. Trovane uno vicino a te, o dove stai andando.",
     exploreWhatH: "Che cosa c'è su questa mappa",
     exploreWhatBody: (t, p, c) => `${t} alberi in ${p} luoghi di ${c} paesi. Ogni segnaposto apre un albero con la sua età, la specie, il motivo per cui vale la passeggiata e le indicazioni da dove sei.`,
@@ -1850,6 +1855,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     exploreTitle: "Kaart met monumentale bomen wereldwijd",
     exploreDescription: "De interactieve kaart van alle geverifieerde monumentale bomen op de site, elke speld een boom om voor te gaan staan.",
     exploreHeading: "De kaart met monumentale bomen",
+    mapPill: "Kaart",
     exploreNote: "Elke speld is een boom die de wandeling waard is. Zoek er een bij jou in de buurt, of op de plek waar je heen gaat.",
     exploreWhatH: "Wat er op deze kaart staat",
     exploreWhatBody: (t, p, c) => `${t} bomen op ${p} plekken in ${c} landen. Elke speld opent een boom met zijn leeftijd, zijn soort, waarom hij de wandeling waard is, en de route vanaf waar je nu bent.`,
@@ -2214,6 +2220,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     exploreTitle: "Karte alter Bäume weltweit",
     exploreDescription: "Die interaktive Karte aller geprüften alten Bäume auf dieser Seite, jede Markierung ein Baum, vor dem es sich zu stehen lohnt.",
     exploreHeading: "Die Karte der alten Bäume",
+    mapPill: "Karte",
     exploreNote: "Jede Markierung ist ein Baum, der den Weg lohnt. Finden Sie einen in Ihrer Nähe, oder dort, wo Sie hinfahren.",
     exploreWhatH: "Was auf dieser Karte steht",
     exploreWhatBody: (t, p, c) => `${t} Bäume an ${p} Orten in ${c} Ländern. Jede Markierung öffnet einen Baum mit seinem Alter, seiner Art, dem Grund, warum sich der Weg lohnt, und der Route von Ihrem Standort aus.`,
@@ -2578,6 +2585,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     exploreTitle: "Mapa de árvores antigas de todo o mundo",
     exploreDescription: "O mapa interativo de todas as árvores antigas verificadas do site, cada marcador uma árvore diante da qual vale a pena estar.",
     exploreHeading: "O mapa das árvores antigas",
+    mapPill: "Mapa",
     exploreNote: "Cada marcador é uma árvore que vale a caminhada. Encontre uma perto de si, ou no sítio para onde vai.",
     exploreWhatH: "O que está neste mapa",
     exploreWhatBody: (t, p, c) => `${t} árvores em ${p} lugares de ${c} países. Cada marcador abre uma árvore com a idade, a espécie, a razão por que vale o passeio e o caminho a partir de onde está.`,
@@ -2942,6 +2950,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     exploreTitle: "Carte des arbres remarquables du monde",
     exploreDescription: "La carte interactive de tous les arbres remarquables vérifiés du site, chaque point un arbre devant lequel il vaut la peine de s'arrêter.",
     exploreHeading: "La carte des arbres remarquables",
+    mapPill: "Carte",
     exploreNote: "Chaque point est un arbre qui vaut le déplacement. Trouvez-en un près de vous, ou là où vous allez.",
     exploreWhatH: "Ce qu'il y a sur cette carte",
     exploreWhatBody: (t, p, c) => `${t} arbres dans ${p} lieux répartis sur ${c} pays. Chaque point ouvre un arbre avec son âge, son espèce, la raison pour laquelle il vaut le détour et l'itinéraire depuis l'endroit où vous êtes.`,
@@ -3306,6 +3315,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     exploreTitle: "古木の地図：見に行く価値のある木を一枚の地図に",
     exploreDescription: "裏づけを取った古木と名木をすべて載せた地図です。ピンの一つひとつが、足を運んで見上げる価値のある木です。",
     exploreHeading: "古木の地図",
+    mapPill: "地図",
     exploreNote: "どのピンも、歩いて見に行く価値のある木です。近くの一本も、これから行く街の一本も探せます。",
     exploreWhatH: "この地図に載っているもの",
     exploreWhatBody: (t, p, c) => `${c}か国${p}か所の${t}本。ピンを開くと、その木の樹齢、樹種、歩いて見に行く価値のある理由、そして現在地からの行き方が出ます。`,

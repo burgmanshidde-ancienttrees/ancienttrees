@@ -220,6 +220,16 @@ export const SHEET_JS = `
     if (e.target.closest('.sheet-back')) { closeTree(); }
   });
 
+  // THE MAP PILL (/explore, data-results; Hidde 2026-11-08, build 42): at
+  // full height the list is the page and this floating pill is the way back
+  // to the map, as on Airbnb and in the app (MapTab back-to-map).
+  var pill = document.getElementById('sheet-map-pill');
+  if (pill) pill.addEventListener('click', function() {
+    if (!mq.matches) return;
+    closeTree();
+    setDetent('peek');
+  });
+
   // The map script already marks a card active when its pin is tapped, and
   // when the card itself is tapped (city-map-script.ts). On a phone that card
   // is inside this sheet, so the same tap should also promote it to the detail

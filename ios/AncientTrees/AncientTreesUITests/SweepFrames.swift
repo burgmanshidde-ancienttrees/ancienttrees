@@ -41,6 +41,9 @@ final class SweepFrames: XCTestCase {
         // that exists in the tree whether or not it is on top of the sheet
         // (2026-08-25).
         ("map-full",     ["-tab=0", "-sheet=full"], nil),
+        // The list down to its count bar and the tab bar gone (build 42,
+        // Airbnb's collapsed list).
+        ("map-bar",      ["-tab=0", "-sheet=bar"], nil),
         // A tapped pin: the sheet as that tree (2026-10-20, appsweep.py).
         ("map-pin",      ["-tab=0", "-select=ath_004"], nil),
         ("explore",      ["-tab=1"], nil),

@@ -3972,6 +3972,32 @@ button.city-box-row:disabled { cursor: default; }
 .exc-place-plain span { font-size: 22px; }
 /* The explore list's count, small and centred under the grip (map.ts). */
 .exc-count { margin: 0 var(--gutter) 4px; text-align: center; font-size: 16px; font-weight: 700; color: var(--ink-mid); }
+/* THE RESULTS SHEET AT FULL HEIGHT (Hidde, 2026-11-08, Airbnb, build 42; the
+   app's BottomSheet sheetResults). On /explore the sheet then is the page:
+   it reaches the bar, its corners square, the grip and the count go, so the
+   list starts right under the search field; the floating Map pill takes the
+   grip's old job as the way back down. Numbers from the app's pill (MapTab
+   back-to-map): 15 bold, 18 a side, 44 tall, 8 between glyph and word. */
+.sheet-map-pill { display: none; }
+@media (max-width: 800px) {
+  .panel[data-results] { height: calc(100svh - var(--header-h)); }
+  .panel[data-results][data-detent="full"] { border-radius: 0; box-shadow: none; }
+  .panel[data-results][data-detent="full"] .sheet-grab::before { height: 0; margin: 0; }
+  .panel[data-results][data-detent="full"] .sheet-grab .panel-head { padding-top: 1rem; }
+  .panel[data-results][data-detent="full"] .exc-count { display: none; }
+  /* No strip of air where the count stood: the first heading keeps its own
+     24 above it, 37 under the field in all, as the app's 39. */
+  .panel[data-results][data-detent="full"] #ex-panel { padding-top: 0; }
+  .panel[data-results][data-detent="full"] .sheet-body { padding-bottom: calc(5rem + env(safe-area-inset-bottom)); }
+  :root[data-sheet="full"] .sheet-map-pill { display: inline-flex; }
+  .sheet-map-pill { position: fixed; left: 50%; transform: translateX(-50%); z-index: 30;
+    bottom: calc(24px + env(safe-area-inset-bottom)); align-items: center; gap: 8px;
+    min-height: 44px; padding: 0 18px; border: 0; border-radius: 999px; cursor: pointer;
+    font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--ink);
+    background: rgba(247,244,238,0.92); backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+  .sheet-map-pill .ic { width: 18px; height: 18px; }
+}
 /* A searched city's box on the explore list (map.ts _boxHtml): the city
    page's .city-box, its rows drawn straight inside it. */
 .exc-box { margin: 12px var(--gutter) 0; }

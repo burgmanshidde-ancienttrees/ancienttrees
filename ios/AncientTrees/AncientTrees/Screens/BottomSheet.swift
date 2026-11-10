@@ -35,10 +35,16 @@ import SwiftUI
 import UIKit
 
 enum SheetHeight: CaseIterable {
-    case peek, card, half, full
+    case bar, peek, card, half, full
 
     func points(in total: CGFloat) -> CGFloat {
         switch self {
+        // AIRBNB'S COLLAPSED LIST (Hidde, 2026-11-08, build 42): the grip and
+        // the count, nothing else, and the tab bar steps away so the map takes
+        // the screen. Only on a sheet that asks for it (sheetResults); the
+        // sheet measures its own header for the real stop, this is the
+        // fallback until it has.
+        case .bar: 80
         // Tall enough to clear the floating tab bar AND still show a whole
         // card. At 160 the tab bar ate most of it and the first tree card was
         // sliced in half, which is what the sheet is entirely for.
@@ -339,6 +345,8 @@ struct BottomSheet<Header: View, Content: View>: View {
     @Environment(\.sheetFullInset) private var fullInset
     @Environment(\.sheetLocked) private var listLocked
     @Environment(\.sheetCardFits) private var cardFits
+    /// A results list over a map, Airbnb's (sheetResults).
+    @Environment(\.sheetResults) private var results
     /// ONE TAPPED TREE RAISES NO FURTHER (Hidde, 2026-11-06: "als ik een pin
     /// aan klik met 1 boom dan moet de lijst niet verder omhoog scrolbaar
     /// zijn"). The fitted card is the whole content, as in Apple Maps; down
@@ -348,6 +356,8 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// frames, so a fitted card stop is the sheet's real content and nothing
     /// more (see sheetCardFits).
     @State private var headerBottom: CGFloat = 0
+    /// The header's own height, for the bar stop (sheetResults).
+    @State private var headerHeight: CGFloat = 0
     @State private var contentHeight: CGFloat = 0
     /// Whether the list inside is scrolled to its very top. The handoff downward
     /// is only allowed from there, because taking the gesture mid-list would
@@ -438,20 +448,28 @@ struct BottomSheet<Header: View, Content: View>: View {
             // A screen with a field fixed over the top (the map tab's search)
             // stops the sheet just below it, as Google Maps does, instead of
             // letting the list become the page under the field (2026-10-12).
-            let page = visible + top - fullInset
+            // A results sheet becomes the whole page again, under the field
+            // as well (Airbnb: no map left behind the search at the top);
+            // its list starts below the field through `lead` instead.
+            let page = visible + top - (results ? 0 : fullInset)
             // A FITTED CARD STOP (Hidde, 2026-10-20, a tapped pin: "er is veel
             // leegte tussen menu en de boom kaart"): the header, the content
             // and the same end room the list keeps clear of the floating bar,
             // never taller than half. Until both are measured, the fixed stop.
             let fitted = headerBottom + contentHeight + barDepth + 8
             let stop: (SheetHeight) -> CGFloat = { s in
+                // The bar is the grip and the header as drawn, plus a breath.
+                // From the header's own SIZE, never its position: a frame
+                // this short can push the header up, and a position read
+                // back from it shrank the bar further each pass (the SE).
+                if s == .bar, headerHeight > 0 { return 44 + headerHeight + 6 }
                 if s == .card, cardFits, contentHeight > 0 {
                     return min(fitted, SheetHeight.half.points(in: visible))
                 }
                 return s.points(in: visible)
             }
             let target = height == .full ? page : stop(height)
-            let h = min(max(target - drag, 90), page)
+            let h = min(max(target - drag, min(90, stop(.bar))), page)
             // 0 at the half stop, 1 at the page: what the corners, the handle,
             // the chevron and the chrome over the map all follow frame by
             // frame, so the change is one movement under the finger rather than
@@ -459,10 +477,26 @@ struct BottomSheet<Header: View, Content: View>: View {
             let halfPts = SheetHeight.half.points(in: visible)
             // Below a fixed field the sheet stays a card all the way up: no
             // squared corners, no chevron, no status-bar strip.
-            let progress = fullInset > 0 ? 0 : pageProgress
+            let progress = fullInset > 0 && !results ? 0 : pageProgress
+            // AT FULL HEIGHT THE LIST IS THE PAGE (Hidde, 2026-11-08, Airbnb,
+            // build 42): on a results sheet the grip row folds away as the
+            // sheet rises past half, so the list starts right under the field
+            // floating over it. The floating Map pill is the handle back down,
+            // which is what the grip was kept for (his 2026-10-10 and 10-13
+            // rulings, reversed by this one).
+            let fold = results ? pageProgress : 0
+            // What sits above the grip as the sheet becomes the page: the
+            // status bar, or on a results sheet everything down to the foot of
+            // the field floating over it, so the list starts right under it.
+            let lead = results ? fullInset * fold : top * progress
+            // AT THE BAR ONLY THE COUNT SHOWS (Airbnb's collapsed list): the
+            // list under it fades in as the sheet rises to the peek, frame by
+            // frame with the finger, so a drag up still reveals it smoothly.
+            let barPts = stop(.bar), peekPts = stop(.peek)
+            let listShown = results ? max(0, min(1, (h - barPts) / max(peekPts - barPts, 1))) : 1
             VStack(spacing: 0) {
                 // The status-bar strip, only as far as the sheet has risen into it.
-                Color.clear.frame(height: top * progress)
+                Color.clear.frame(height: lead)
                 // The grabber is the one handle that always works, including
                 // when the content below it is scrolling, because it sits
                 // outside the scroll view. So it gets a real target rather than
@@ -505,6 +539,10 @@ struct BottomSheet<Header: View, Content: View>: View {
                 }
                 .frame(maxWidth: .infinity)
                 .frame(height: 44)
+                // Folded on a results sheet at full height (see `fold`).
+                .frame(height: 44 * (1 - fold), alignment: .top)
+                .opacity(1 - fold)
+                .clipped()
                 .contentShape(.rect)
 
                 header
@@ -518,15 +556,19 @@ struct BottomSheet<Header: View, Content: View>: View {
                     // frame moves this measure: two values a fraction of a
                     // pixel apart took turns for ever and the main thread
                     // never got out of layout. Under a point is not a change.
+                    .onGeometryChange(for: CGFloat.self) { $0.size.height } action: {
+                        if abs($0 - headerHeight) >= 1 { headerHeight = $0 }
+                    }
                     .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named("sheet")).maxY } action: {
-                        let depth = max(90, $0)
+                        let depth = results && height == .full ? $0 : max(90, $0)
                         if abs(depth - headerDepth) >= 1 { headerDepth = depth }
-                        let bottom = $0 - top * progress
+                        let bottom = $0 - lead
                         if abs(bottom - headerBottom) >= 1 { headerBottom = bottom }
                     }
 
                 ScrollView {
                     content
+                        .opacity(listShown)
                         .frame(maxWidth: .infinity, alignment: .top)
                         .onGeometryChange(for: CGFloat.self) { $0.size.height } action: {
                             // The same point of slack as headerBottom above.
@@ -566,7 +608,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                 // touch becomes a drag, the control under it stops being
                 // pressed. The drag gesture below only begins after 18 points,
                 // so a real tap never reaches this and a real drag always does.
-                .allowsHitTesting(height != .peek && !dragging)
+                .allowsHitTesting(height != .peek && height != .bar && !dragging)
                 // At peek the content is a PREVIEW, not a control panel. Every
                 // finger that lands here belongs to the sheet, so a swipe up
                 // raises it instead of half-raising it and opening whatever
@@ -575,12 +617,12 @@ struct BottomSheet<Header: View, Content: View>: View {
                 // te klikken. Als ik omhoog swipe moet het ding omhoog komen
                 // en dan pas moet ik erop kunnen klikken"). Google Maps and
                 // Apple Maps both do exactly this.
-                .allowsHitTesting(height != .peek)
+                .allowsHitTesting(height != .peek && height != .bar)
                 .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y } action: { _, y in
                     atTop = y <= 1
                 }
             }
-            .frame(height: h + bottom)
+            .frame(height: h + bottom, alignment: .top)
             .coordinateSpace(.named("sheet"))
             // MEASURED, NOT COMPUTED, and this is the other half of the button
             // that jumps (Hidde, 2026-09-13, and 2026-09-04 before it).
@@ -610,10 +652,18 @@ struct BottomSheet<Header: View, Content: View>: View {
                 }
             )
             .overlay {
-                if height == .peek && !locked {
+                if (height == .peek || height == .bar) && !locked {
                     Color.clear
                         .contentShape(.rect)
                         .onTapGesture { withAnimation(.spring(duration: 0.28)) { height = .half } }
+                        // AT THE BAR THIS IS THE WAY BACK, with the tab bar
+                        // gone: one button to VoiceOver and the UI tests.
+                        .accessibilityElement()
+                        .accessibilityHidden(height != .bar)
+                        .accessibilityAddTraits(.isButton)
+                        .accessibilityLabel("Show the list")
+                        .accessibilityAction { withAnimation(.spring(duration: 0.28)) { height = .half } }
+                        .accessibilityIdentifier("sheet-show-list")
                 }
             }
             .frame(maxWidth: .infinity)
@@ -685,7 +735,9 @@ struct BottomSheet<Header: View, Content: View>: View {
                         // The card stop belongs to a tapped tree. Without one it
                         // sat 16 points under half and caught every small drag
                         // down from the list.
-                        let stops = SheetHeight.allCases.filter { $0 != .card || cardFits }
+                        let stops = SheetHeight.allCases.filter {
+                            ($0 != .card || cardFits) && ($0 != .bar || results)
+                        }
                         let next = stops.min {
                             abs(($0 == .full ? page : stop($0)) - settled)
                                 < abs(($1 == .full ? page : stop($1)) - settled)
@@ -775,7 +827,19 @@ extension EnvironmentValues {
         get { self[SheetCardFitsKey.self] }
         set { self[SheetCardFitsKey.self] = newValue }
     }
+    var sheetResults: Bool {
+        get { self[SheetResultsKey.self] }
+        set { self[SheetResultsKey.self] = newValue }
+    }
 }
+
+/// A RESULTS LIST OVER A MAP, drawn the way Airbnb draws its own (Hidde,
+/// 2026-11-08, build 42; CONVENTIONS.md "A results list over a map, Airbnb's
+/// way"). Two things change: at full height the grip folds away so the list is
+/// the page, and a lowest stop, .bar, holds only the grip and the header (the
+/// count), below which the screen hides its tab bar. The map tab sets it; My
+/// trees keeps the stops it has.
+private struct SheetResultsKey: EnvironmentKey { static let defaultValue = false }
 
 /// True when the card stop should be exactly as tall as what the sheet holds,
 /// which is what a tapped pin wants (PinSelection). Apple's sheets call this a

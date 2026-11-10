@@ -42,6 +42,8 @@ final class ButtonWalk: XCTestCase {
     private static let screens: [(String, [String])] = [
         ("map",           ["-tab=0"]),
         ("map-full",      ["-tab=0", "-sheet=full"]),
+        // The list down to its count bar, no tab bar (build 42).
+        ("map-bar",       ["-tab=0", "-sheet=bar"]),
         ("map-pin",       ["-tab=0", "-select=ath_004"]),
         ("discover",      ["-tab=1"]),
         // Discover where a city has an open ambassador seat: Cadiz.
@@ -79,6 +81,7 @@ final class ButtonWalk: XCTestCase {
         // The test pins the location with -at=, and the camera opens on it:
         // re-centring on where it already stands moves nothing.
         "map|map-recentre": "the camera already stands on the test's location",
+        "map-bar|map-recentre": "the camera already stands on the test's location",
         "my-trees|map-recentre": "the camera already stands on the test's location",
     ]
 

@@ -131,7 +131,7 @@ struct PinSelection: ViewModifier {
                 }
             }
             .onChange(of: height) { _, new in
-                if new == .peek, selected != nil {
+                if new == .peek || new == .bar, selected != nil {
                     before = nil
                     selected = nil
                 }

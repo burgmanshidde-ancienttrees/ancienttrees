@@ -150,6 +150,26 @@ final class FlowWalk: XCTestCase {
                 Step(name: "back-to-the-map") { back($0) },
             ]),
 
+            // AIRBNB'S WAY DOWN AND BACK (Hidde, 2026-11-08, build 42). At full
+            // the list is the page and the floating Map pill is the handle;
+            // it drops the list to its count bar and the tab bar steps away,
+            // so the map has the screen. A tap on the bar brings both back.
+            Flow(name: "map-pill-and-back", args: ["-tab=0", "-sheet=full"], steps: [
+                Step(name: "tap-the-map-pill") { app in
+                    Self.tap(app, "back-to-map")
+                    sleep(1)
+                    XCTAssertTrue(app.buttons["sheet-show-list"].waitForExistence(timeout: 5),
+                                  "the Map pill did not bring the list down to its count bar")
+                    XCTAssertFalse(app.buttons["tab-map"].exists,
+                                   "the tab bar stayed with the list at its count bar")
+                },
+                Step(name: "tap-the-count-bar") { app in
+                    Self.tap(app, "sheet-show-list")
+                    XCTAssertTrue(app.buttons["tab-map"].waitForExistence(timeout: 5),
+                                  "a tap on the count bar did not bring the tab bar back")
+                },
+            ]),
+
             // The camera in the bar is the app's one deed, and it is gated.
             // A gate that leaves you nowhere is worse than no gate.
             Flow(name: "collect-gate", args: ["-tab=0"], steps: [
@@ -379,6 +399,9 @@ final class FlowWalk: XCTestCase {
     /// counts, a sheet's own dismissal counts.
     private static func hasAWayBack(_ app: XCUIApplication) -> Bool {
         if app.buttons["tab-map"].exists { return true }
+        // The map's list down to its count bar hides the tab bar (build 42,
+        // Airbnb); the bar itself is the way back.
+        if app.buttons["sheet-show-list"].exists { return true }
         let bar = app.navigationBars.firstMatch
         if bar.exists, bar.buttons.count > 0 { return true }
         // "Back to the map" is the search screen's arrow, its one way out.
