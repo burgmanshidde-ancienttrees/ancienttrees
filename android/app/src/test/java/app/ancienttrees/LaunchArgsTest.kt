@@ -15,4 +15,17 @@ class LaunchArgsTest {
         assertTrue(a.signIn)
         assertNull(LaunchArgs(listOf("-open=city:aarhus")).openTree)
     }
+
+    @Test fun aSplitPositionIsPutBackTogether() {
+        assertEquals(listOf("-tab=0", "-at=52.3731,4.8922"), LaunchArgs.normalise(listOf("-tab=0", "-at=52.3731", "4.8922")))
+        assertEquals(listOf("-at=52.3731,4.8922"), LaunchArgs.normalise(listOf("-at=52.3731\\,4.8922")))
+    }
+
+    @Test fun theSheetAndTheSearchAreRead() {
+        assertEquals(app.ancienttrees.ui.SheetHeight.HALF, LaunchArgs(listOf("-sheet=half")).sheet)
+        assertEquals(app.ancienttrees.ui.SheetHeight.PEEK, LaunchArgs(emptyList()).sheet)
+        assertEquals("lis", LaunchArgs(listOf("-search=lis")).search)
+        assertEquals("", LaunchArgs(listOf("-search")).search)
+        assertNull(LaunchArgs(emptyList()).search)
+    }
 }

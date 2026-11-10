@@ -39,20 +39,21 @@ JBR = "/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 PACKAGE = "app.ancienttrees.android"
 ACTIVITY = PACKAGE + "/app.ancienttrees.MainActivity"
 IOS_DEVICE = "iPhone 17 Pro"
+# appsweep.py stands every frame at Dam square unless the frame names its own
+# place, so the Android frame does too.
+ORIGIN = "-at=52.3731,4.8922"
 
-# name -> the iPhone's launch arguments, copied from SweepFrames.swift. The same
+# name -> the iPhone's launch arguments, taken from appsweep.py itself (which
+# picks real subject trees out of the bundled feed: the longest name with a
+# photograph, and so on), so both phones open the very same state. The same
 # arguments go to Android; LaunchArgs.kt reads the ones it knows.
-FRAMES = {
-    "map": ["-tab=0"],
-    "map-full": ["-tab=0", "-sheet=full"],
-    "map-pin": ["-tab=0", "-select=ath_004"],
-    "tree": ["-tab=0", "-open=tree:ath_004"],
-    "tree-nophoto": ["-tab=0", "-open=tree:vln_010"],
-    "signin": ["-tab=0", "-signin"],
-    "explore": ["-tab=1"],
-    "collection-tab": ["-tab=2"],
-    "profile": ["-tab=2", "-settings"],
-}
+sys.path.insert(0, str(ROOT / "scripts"))
+import appsweep  # noqa: E402
+
+FRAMES = {name: list(args) for name, args, _ in appsweep.screens(appsweep.pick_subjects())}
+# The screens with an Android port, in the order the page shows them.
+PORTED = ["map", "map-full", "map-pin", "search", "tree", "tree-nophoto", "signin",
+          "explore", "collection-tab", "profile"]
 
 
 def run(cmd, **kw):
@@ -81,10 +82,28 @@ def android(frames, build):
         if r.returncode != 0:
             sys.exit("android build failed:\n" + r.stdout[-2000:] + r.stderr[-2000:])
         run([ADB, "install", "-r", str(ROOT / "android/app/build/outputs/apk/debug/app-debug.apk")])
+        # After an install the system UI restarts the app by itself a moment
+        # later, without our extras (a CLEAR_TASK start from systemui, API 37):
+        # let that happen before the first frame.
+        run([ADB, "shell", "am", "start", "-W", "-n", ACTIVITY])
+        time.sleep(10)
     for name in frames:
         run([ADB, "shell", "am", "force-stop", PACKAGE])
-        run([ADB, "shell", "am", "start", "-n", ACTIVITY, "--esa", "args", ",".join(FRAMES[name])])
-        time.sleep(20)  # the catalogue takes seconds to read on the emulator
+        args = FRAMES[name]
+        if not any(a.startswith("-at=") for a in args):
+            args = args + [ORIGIN]
+        # am splits --esa on commas; a comma inside one argument (-at=lat,lng)
+        # is written \, and the whole list quoted for the device's shell.
+        joined = ",".join(a.replace(",", "\\,") for a in args)
+        run([ADB, "logcat", "-c"])
+        run([ADB, "shell", "am", "start", "-W", "-n", ACTIVITY, "--esa", "args", "'" + joined + "'"])
+        # Until the app says its catalogue is read (MainActivity logs it), then
+        # time for the tiles and the photographs.
+        for _ in range(90):
+            if "catalogue" in run([ADB, "logcat", "-d", "-s", "AncientTrees"]).stdout:
+                break
+            time.sleep(1)
+        time.sleep(8)
         png = subprocess.run([ADB, "exec-out", "screencap", "-p"], capture_output=True)
         (OUT / "android" / f"{name}.png").write_bytes(png.stdout)
 
@@ -132,7 +151,7 @@ def main():
     ap.add_argument("--no-android", action="store_true")
     ap.add_argument("--no-build", action="store_true")
     a = ap.parse_args()
-    frames = a.only or list(FRAMES)
+    frames = a.only or [f for f in PORTED if f in FRAMES]
     for d in ("ios", "android"):
         (OUT / d).mkdir(parents=True, exist_ok=True)
     if not a.no_android:

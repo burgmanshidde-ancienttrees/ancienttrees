@@ -54,10 +54,28 @@ object FeedParser {
 
     fun version(json: String): String = JSONObject(json).getString("version")
 
-    fun trees(json: String): Parsed<Tree> {
-        val root = JSONObject(json)
-        val (trees, skipped) = rows(root.optJSONArray("trees"), ::tree)
-        return Parsed(root.getString("version"), trees, skipped)
+    fun trees(json: String): Parsed<Tree> = trees(java.io.StringReader(json))
+
+    /** Row by row (RowScanner): the catalogue is read without ever holding it whole. */
+    fun trees(reader: java.io.Reader): Parsed<Tree> {
+        val scanned = RowScanner.scan(reader, "trees")
+        // Rows are independent: read them on every core, each slice in order.
+        val rows = scanned.rows
+        val cores = Runtime.getRuntime().availableProcessors().coerceIn(1, 8)
+        val slice = (rows.size + cores - 1) / cores
+        val parts = arrayOfNulls<List<Tree?>>(cores)
+        val threads = (0 until cores).map { k ->
+            Thread {
+                val from = k * slice
+                val to = minOf(rows.size, from + slice)
+                parts[k] = (from until to).map { i -> runCatching { tree(JSONObject(rows[i])) }.getOrNull() }
+            }.also { it.start() }
+        }
+        threads.forEach { it.join() }
+        val all = parts.flatMap { it.orEmpty() }
+        val out = all.filterNotNull()
+        val skipped = all.size - out.size
+        return Parsed(scanned.version ?: throw IllegalArgumentException("missing version"), out, skipped)
     }
 
     fun walks(json: String): Parsed<Walk> {
@@ -81,15 +99,56 @@ object FeedParser {
         return Parsed(root.getString("version"), species, skipped)
     }
 
+    /** Every other name a species we map goes by (species.json `names`, rows c/l/a/m/g): search only. */
+    fun otherNames(json: String): Map<String, List<String>> {
+        val a = JSONObject(json).optJSONArray("names") ?: return emptyMap()
+        val out = HashMap<String, MutableList<String>>()
+        for (i in 0 until a.length()) {
+            val o = a.optJSONObject(i) ?: continue
+            val c = o.text("c") ?: continue
+            if (o.flag("m") == false || o.flag("g") == true) continue
+            out.getOrPut(c) { ArrayList() }.addAll(o.strings("a"))
+        }
+        return out
+    }
+
     fun browse(json: String): Browse {
         val root = JSONObject(json)
         val (collections, a) = rows(root.optJSONArray("collections")) { o ->
             TreeCollection(o.need("slug"), o.need("title"), o.text("intro"), o.strings("trees"))
         }
         val (cities, b) = rows(root.optJSONArray("cities")) { o ->
-            Facet(o.text("slug"), o.need("name"), o.text("face"))
+            Facet(
+                o.text("slug"), o.need("name"), o.text("face"),
+                aka = o.strings("aka"),
+                popularity = o.number("popularity")?.toInt() ?: 0,
+            )
         }
-        return Browse(root.getString("version"), collections, cities, a + b)
+        val (countries, c) = rows(root.optJSONArray("countries")) { o ->
+            val f = o.optJSONArray("focus")
+            val box = if (f != null && f.length() == 2) {
+                val sw = f.optJSONArray(0)
+                val ne = f.optJSONArray(1)
+                if (sw != null && ne != null && sw.length() == 2 && ne.length() == 2) {
+                    // [[west, south], [east, north]] on the wire.
+                    ViewBox(south = sw.getDouble(1), west = sw.getDouble(0), north = ne.getDouble(1), east = ne.getDouble(0))
+                } else {
+                    null
+                }
+            } else {
+                null
+            }
+            Country(o.need("name"), box)
+        }
+        val sci = HashMap<String, String>()
+        root.optJSONArray("species")?.let { arr ->
+            for (i in 0 until arr.length()) {
+                val o = arr.optJSONObject(i) ?: continue
+                val n = o.text("name") ?: continue
+                o.text("scientific")?.takeIf { it.isNotEmpty() }?.let { sci[n] = it }
+            }
+        }
+        return Browse(root.getString("version"), collections, cities, a + b + c, countries, sci)
     }
 
     private fun photo(o: JSONObject?): Photo? {
@@ -129,6 +188,10 @@ object FeedParser {
             species = o.need("species"),
             age = o.text("age"),
             ageShort = o.text("age_short"),
+            ageMin = o.number("age_min")?.toInt(),
+            ageMax = o.number("age_max")?.toInt(),
+            highlight = o.flag("highlight"),
+            highlightRank = o.number("highlight_rank")?.toInt(),
             lat = lat,
             lng = lng,
             city = o.need("city"),
@@ -175,8 +238,13 @@ object FeedParser {
     }
 
     /** All four feeds into one catalogue. Trees and walks must read; species and browse may fail alone. */
-    fun catalogue(trees: String, walks: String, species: String?, browse: String?): Catalogue {
-        val t = trees(trees)
+    fun catalogue(trees: String, walks: String, species: String?, browse: String?): Catalogue =
+        catalogue(java.io.StringReader(trees), walks, species, browse)
+
+    fun catalogue(trees: java.io.Reader, walks: String, species: String?, browse: String?): Catalogue =
+        catalogue(trees(trees), walks, species, browse)
+
+    fun catalogue(t: Parsed<Tree>, walks: String, species: String?, browse: String?): Catalogue {
         val w = walks(walks)
         check(t.rows.isNotEmpty()) { "no readable trees" }
         return Catalogue(
@@ -185,6 +253,7 @@ object FeedParser {
             walks = w.rows,
             species = species?.let { runCatching { species(it).rows }.getOrNull() }.orEmpty(),
             browse = browse?.let { runCatching { browse(it) }.getOrNull() },
+            otherNames = species?.let { runCatching { otherNames(it) }.getOrNull() }.orEmpty(),
         )
     }
 }

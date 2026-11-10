@@ -28,15 +28,42 @@ class CatalogueStore(private val context: Context) {
         return bundled(name)
     }
 
-    suspend fun load(): Catalogue? = withContext(Dispatchers.Default) {
+    /** The trees file as a stream: 11.5 MB is read row by row, never held whole (RowScanner). */
+    private fun stream(name: String, bundledOnly: Boolean = false): java.io.Reader {
+        val f = File(downloads, name)
+        if (!bundledOnly && f.exists()) return f.bufferedReader()
+        return context.assets.open(name).bufferedReader()
+    }
+
+    private val snapshot = File(context.filesDir, "snapshot/trees.bin")
+
+    /** Which trees file a snapshot was made from: the download, or this build's bundled copy. */
+    private fun sourceKey(): String {
+        val f = File(downloads, TREES)
+        if (f.exists()) return "dl:${f.length()}:${f.lastModified()}"
+        val built = runCatching { context.packageManager.getPackageInfo(context.packageName, 0).lastUpdateTime }.getOrDefault(0L)
+        return "apk:$built"
+    }
+
+    suspend fun load(): Catalogue? = withContext(Dispatchers.IO) {
         try {
-            FeedParser.catalogue(read(TREES)!!, read(WALKS)!!, read(SPECIES), read(BROWSE))
+            val key = sourceKey()
+            val kept = Snapshot.read(snapshot, key)
+            val parsed = kept?.let { Parsed(it.first, it.second, 0) }
+                ?: stream(TREES).use { FeedParser.trees(it) }.also { p ->
+                    // For the next launch; this one goes on without waiting.
+                    Thread { Snapshot.write(snapshot, key, p.version, p.rows) }.start()
+                }
+            FeedParser.catalogue(parsed, read(WALKS)!!, read(SPECIES), read(BROWSE))
         } catch (_: Throwable) {
             // A download that no longer reads would fail on every launch, because
             // the version has not changed and nothing would replace it.
             downloads.deleteRecursively()
+            snapshot.delete()
             runCatching {
-                FeedParser.catalogue(bundled(TREES)!!, bundled(WALKS)!!, bundled(SPECIES), bundled(BROWSE))
+                stream(TREES, bundledOnly = true).use {
+                    FeedParser.catalogue(it, bundled(WALKS)!!, bundled(SPECIES), bundled(BROWSE))
+                }
             }.getOrNull()
         }
     }

@@ -43,6 +43,10 @@ import org.maplibre.android.location.modes.CameraMode
 import org.maplibre.android.location.modes.RenderMode
 import org.maplibre.android.camera.CameraUpdateFactory
 import org.maplibre.android.geometry.LatLng
+import org.maplibre.android.geometry.LatLngBounds
+import kotlin.math.PI
+import kotlin.math.cos
+import kotlin.math.ln
 import org.maplibre.android.maps.MapLibreMap
 import org.maplibre.android.maps.MapView
 import org.maplibre.android.maps.Style
@@ -78,6 +82,16 @@ private class MapHolder {
     var spots: Map<String, List<Tree>> = emptyMap()
     var spread: Spread? = null
     var style: Style? = null
+    var userMoved = false
+    var aimed = false
+    var aimedCoverage = 0f
+    var aimedWithFix = false
+    var padTop = 0.0
+    var padBottom = 0.0
+    /** The last deliberate move and when, so a sheet that rises after it does not undo it. */
+    var lastMove: Pair<(MapLibreMap) -> Unit, Long>? = null
+    /** The tree the camera last went to. */
+    var centred: String? = null
 
     fun redraw() {
         style?.getSourceAs<GeoJsonSource>(SOURCE)?.setGeoJson(collection(trees, spots, spread))
@@ -85,24 +99,40 @@ private class MapHolder {
 }
 private val MOSS = Color.rgb(51, 89, 51)
 
+/** Somewhere to GO, with its own token so the same request is applied once (TreeMap moveTo). */
+data class MoveRequest(val token: Long, val box: ViewBox)
+
 /**
- * [locationOn]: the person has said yes, so the blue dot shows and the map goes
- * to them once. [recentre] counts presses of the my-location button.
- * [onView] hears where the map now looks and, when known, where the person is.
+ * The map tab's map, the twin of ios Screens/TreeMap.swift.
+ *
+ * [origin] is where the person is, else Dam square (ContentView.origin), and
+ * [located] says whether it is a real fix: the opening shot is retaken once when
+ * a guess turns into a fix, and never after a finger moved the map
+ * (TreeMap.shouldAim). [dot]: the person has said yes, so the blue dot shows.
+ * [recentre] counts presses of the locate control: follow the person, north up.
+ * [topCover] and [bottomCover] are px of the map hidden under the search field
+ * and under the sheet's stop (capped at half): the camera aims into what is left.
  */
 @Composable
 fun TreeMapView(
     trees: List<Tree>,
     selected: Tree?,
     onSelect: (Tree?) -> Unit,
-    locationOn: Boolean,
+    origin: Here,
+    located: Boolean,
+    dot: Boolean,
     recentre: Int,
-    onView: (ViewBox, Here?) -> Unit,
+    onView: (ViewBox) -> Unit,
     modifier: Modifier = Modifier,
-    /** A fixed place to open on instead of the person's fix (the parity script's -at). */
-    focus: Pair<Double, Double>? = null,
+    topCover: Float = 0f,
+    bottomCover: Float = 0f,
+    moveTo: MoveRequest? = null,
+    onUserMove: () -> Unit = {},
+    /** A selection that should not move the camera (the launch argument). */
+    quietSelect: String? = null,
 ) {
     val latestView by rememberUpdatedState(onView)
+    val latestUserMove by rememberUpdatedState(onUserMove)
     val context = LocalContext.current
     val lifecycle = LocalLifecycleOwner.current.lifecycle
     val dark = isSystemInDarkTheme()
@@ -111,6 +141,7 @@ fun TreeMapView(
     val latestById by rememberUpdatedState(byId)
     val holder = remember { MapHolder() }
     var ready by remember { mutableStateOf<Pair<MapLibreMap, Style>?>(null) }
+    val latestSelected by rememberUpdatedState(selected)
 
     val mapView = remember {
         MapLibre.getInstance(context)
@@ -118,10 +149,13 @@ fun TreeMapView(
             view.onCreate(null)
             view.getMapAsync { map ->
                 map.setMinZoomPreference(PinRules.WORLD_MIN_ZOOM)
-                map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(50.0, 10.0), 3.0))
+                // A first paint on the origin, so the map never shows the Atlantic.
+                map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(origin.lat, origin.lng), openingZoom()))
                 // No logo; the OpenFreeMap credit stays, it is the price of the tiles.
                 map.uiSettings.isLogoEnabled = false
+                // NO ROTATION (Hidde, 2026-08-25): every label is a name to read.
                 map.uiSettings.isRotateGesturesEnabled = false
+                map.uiSettings.isCompassEnabled = false
                 map.setStyle(Style.Builder().fromUri(if (dark) STYLE_DARK else STYLE_LIGHT)) { style ->
                     // One image per shape, about fifteen, never one per species.
                     for (shape in SpeciesIcons.icons.keys) {
@@ -132,13 +166,19 @@ fun TreeMapView(
                     holder.style = style
                     ready = map to style
                 }
-                map.addOnCameraIdleListener { latestView(viewBox(map), here(map)) }
-                // A spread stands a fixed number of points from its spot, so a
-                // pinch or a drag folds it back.
+                // NOT while a tree is selected: the sheet rising would report a
+                // region every frame and rebuild the list under a card (2026-10-20).
+                map.addOnCameraIdleListener { if (latestSelected == null) latestView(viewBox(map)) }
                 map.addOnCameraMoveStartedListener { reason ->
-                    if (reason == MapLibreMap.OnCameraMoveStartedListener.REASON_API_GESTURE && holder.spread != null) {
-                        holder.spread = null
-                        holder.redraw()
+                    if (reason == MapLibreMap.OnCameraMoveStartedListener.REASON_API_GESTURE) {
+                        holder.userMoved = true
+                        latestUserMove()
+                        // A spread stands a fixed number of points from its spot,
+                        // so a pinch or a drag folds it back.
+                        if (holder.spread != null) {
+                            holder.spread = null
+                            holder.redraw()
+                        }
                     }
                 }
                 map.addOnMapClickListener { point ->
@@ -154,6 +194,7 @@ fun TreeMapView(
                         holder.spread = null
                         holder.redraw()
                     }
+                    // A pin SELECTS; a tap on the map itself lets the tree go.
                     latestSelect(tree)
                     true
                 }
@@ -187,32 +228,88 @@ fun TreeMapView(
     }
 
     LaunchedEffect(ready, selected?.id) {
-        val style = ready?.second ?: return@LaunchedEffect
+        val (map, style) = ready ?: return@LaunchedEffect
         (style.getLayer(LAYER_CHOSEN) as? SymbolLayer)?.setFilter(
             Expression.eq(Expression.get(KEY_ID), Expression.literal(selected?.id ?: "")),
         )
+        val sel = selected
+        if (sel == null) {
+            // A tree was just let go: say once what is in view now.
+            if (holder.centred != null) latestView(viewBox(map))
+            holder.centred = null
+            return@LaunchedEffect
+        }
+        if (holder.centred == sel.id || sel.id == quietSelect) {
+            holder.centred = sel.id
+            return@LaunchedEffect
+        }
+        holder.centred = sel.id
+        // Centred at the zoom it already had, never zoomed in (Apple Maps leaves
+        // the neighbours on screen); only a map zoomed out past a city comes in.
+        val zoom = maxOf(map.cameraPosition.zoom, zoomFor(20_000.0))
+        val redo: (MapLibreMap) -> Unit = {
+            it.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(sel.lat, sel.lng), zoom), 300)
+        }
+        holder.lastMove = redo to System.currentTimeMillis()
+        redo(map)
+    }
+
+    // THE CONTENT INSET: the camera aims into the strip a person can see,
+    // between the field and chips over the top and the sheet under it.
+    LaunchedEffect(ready, topCover, bottomCover) {
+        val map = ready?.first ?: return@LaunchedEffect
+        val h = mapView.height.toFloat()
+        val topPx = minOf(topCover, h / 3).toDouble()
+        map.moveCamera(CameraUpdateFactory.paddingTo(0.0, topPx, 0.0, bottomCover.toDouble()))
+        holder.padTop = topPx
+        holder.padBottom = bottomCover.toDouble()
+        // The inset change cancels a flight in progress: finish a deliberate one
+        // into the new viewport (TreeMap lastMove, four seconds).
+        holder.lastMove?.let { (redo, at) ->
+            if (System.currentTimeMillis() - at < 4_000) redo(map)
+        }
+        // AND NOW AIM, with an inset that is finally real (TreeMap.settle).
+        if (shouldAim(holder, bottomCover, located)) {
+            holder.aimed = true
+            holder.aimedCoverage = bottomCover
+            holder.aimedWithFix = located
+            map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(origin.lat, origin.lng), openingZoom()))
+        }
+    }
+    // A guess turned into a fix: one more shot, unless a finger moved the map.
+    LaunchedEffect(ready, located, origin) {
+        val map = ready?.first ?: return@LaunchedEffect
+        if (shouldAim(holder, bottomCover, located)) {
+            holder.aimed = true
+            holder.aimedCoverage = bottomCover
+            holder.aimedWithFix = located
+            map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(origin.lat, origin.lng), openingZoom()))
+            latestView(viewBox(map))
+        }
+    }
+
+    LaunchedEffect(ready, moveTo?.token) {
+        val map = ready?.first ?: return@LaunchedEffect
+        val m = moveTo ?: return@LaunchedEffect
+        // A DELIBERATE MOVE OWNS THE CAMERA, as a finger does.
+        holder.userMoved = true
+        val redo: (MapLibreMap) -> Unit = { fit(it, m.box, holder, animate = true) }
+        holder.lastMove = redo to System.currentTimeMillis()
+        redo(map)
     }
 
     // THE BLUE DOT, only once the person has said yes: switching it on is what
-    // would otherwise make the system ask. The first fix brings the map to them;
-    // after that the map is theirs until they press my location.
-    var located by remember { mutableStateOf(false) }
-    LaunchedEffect(ready, locationOn) {
+    // would otherwise make the system ask.
+    LaunchedEffect(ready, dot) {
         val (map, style) = ready ?: return@LaunchedEffect
-        if (!locationOn || located) return@LaunchedEffect
-        if (startLocation(map, style, context)) {
-            located = true
-            follow(map)
-        }
+        if (dot) startLocation(map, style, context)
     }
-    LaunchedEffect(ready, focus) {
-        val map = ready?.first ?: return@LaunchedEffect
-        val f = focus ?: return@LaunchedEffect
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(f.first, f.second), NEAR_ZOOM))
-    }
+    // Back to you, AND north to the top: following, so the map keeps up with
+    // every new fix until a finger moves it (Apple Maps' follow mode).
     LaunchedEffect(recentre) {
-        val map = ready?.first ?: return@LaunchedEffect
-        if (recentre > 0 && located) follow(map)
+        val (map, style) = ready ?: return@LaunchedEffect
+        if (recentre == 0) return@LaunchedEffect
+        if (startLocation(map, style, context)) follow(map)
     }
 
     // The credit stands clear of the system's navigation bar.
@@ -226,38 +323,64 @@ fun TreeMapView(
     AndroidView(factory = { mapView }, modifier = modifier)
 }
 
-private const val NEAR_ZOOM = 14.0
+/** The box into the strip between the field and the sheet. */
+private fun fit(map: MapLibreMap, box: ViewBox, h: MapHolder, animate: Boolean) {
+    val bounds = LatLngBounds.from(box.north, box.east, box.south, box.west)
+    val pos = map.getCameraForLatLngBounds(bounds, intArrayOf(0, h.padTop.toInt(), 0, h.padBottom.toInt())) ?: return
+    val update = CameraUpdateFactory.newCameraPosition(pos)
+    if (animate) map.animateCamera(update, 600) else map.moveCamera(update)
+}
+
+/** Three shots at most, never after a finger (TreeMap.shouldAim). */
+private fun shouldAim(h: MapHolder, coverage: Float, hasFix: Boolean): Boolean {
+    if (h.userMoved) return false
+    if (!h.aimed) return true
+    if (h.centred != null) return false
+    if (hasFix && !h.aimedWithFix) return true
+    return kotlin.math.abs(coverage - h.aimedCoverage) > 1 && h.aimedCoverage <= 0
+}
+
+/**
+ * MapKit's metres across into MapLibre's zoom (TreeMap.zoom(forMeters:)), on
+ * 512-point tiles, at the iPhone's defaults (latitude 52, a 375 point width), so
+ * both phones open at the same zoom.
+ */
+fun zoomFor(metres: Double, latitude: Double = 52.0, width: Double = 375.0): Double {
+    val perPoint = (40_075_017.0 / 512.0) * cos(latitude * PI / 180)
+    return (ln(perPoint * width / maxOf(metres, 1.0)) / ln(2.0)).coerceIn(1.0, 20.0)
+}
+
+/** The map tab's first look: four kilometres across. */
+private fun openingZoom() = zoomFor(4000.0)
 
 @SuppressLint("MissingPermission")
 private fun startLocation(map: MapLibreMap, style: Style, context: Context): Boolean = runCatching {
     val component = map.locationComponent
-    component.activateLocationComponent(
-        LocationComponentActivationOptions.builder(context, style).build(),
-    )
+    if (!component.isLocationComponentActivated) {
+        component.activateLocationComponent(
+            LocationComponentActivationOptions.builder(context, style).build(),
+        )
+    }
     component.isLocationComponentEnabled = true
     component.renderMode = RenderMode.NORMAL
     true
 }.getOrDefault(false)
 
-/** To the person, once: tracking lets go by itself as soon as they pan. */
 private fun follow(map: MapLibreMap) {
     runCatching {
         val component = map.locationComponent
         component.cameraMode = CameraMode.TRACKING
         component.zoomWhileTracking(maxOf(map.cameraPosition.zoom, NEAR_ZOOM))
+        if (map.cameraPosition.bearing != 0.0) map.animateCamera(CameraUpdateFactory.bearingTo(0.0))
     }
 }
+
+private const val NEAR_ZOOM = 14.0
 
 private fun viewBox(map: MapLibreMap): ViewBox {
     val b = map.projection.visibleRegion.latLngBounds
     return ViewBox(b.latitudeSouth, b.longitudeWest, b.latitudeNorth, b.longitudeEast)
 }
-
-private fun here(map: MapLibreMap): Here? = runCatching {
-    val c = map.locationComponent
-    if (!c.isLocationComponentActivated || !c.isLocationComponentEnabled) return@runCatching null
-    c.lastKnownLocation?.let { Here(it.latitude, it.longitude) }
-}.getOrNull()
 
 /**
  * The same keys on every feature, always: a source with uneven properties has

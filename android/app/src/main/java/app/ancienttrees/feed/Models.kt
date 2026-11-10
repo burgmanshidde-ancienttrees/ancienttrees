@@ -47,6 +47,12 @@ data class Tree(
     val species: String,
     val age: String?,
     val ageShort: String?,
+    val ageMin: Int? = null,
+    val ageMax: Int? = null,
+    /** On the place's Highlights shelf, decided on the website (lib/highlights.ts). */
+    val highlight: Boolean? = null,
+    /** Its place on that shelf, 0 first. */
+    val highlightRank: Int? = null,
     val lat: Double,
     val lng: Double,
     val city: String,
@@ -80,6 +86,20 @@ data class Tree(
     fun atBest(month: Int): Boolean = month in bestMonths
 
     val commonName: String get() = species.substringBefore("(").trim()
+
+    /** An older feed without the field: a tree with a photograph is a highlight (Models.swift isHighlight). */
+    val isHighlight: Boolean get() = highlight ?: (photo != null)
+
+    /** The short age a card can carry, or null: a number, never a sentence (TreeRow.swift cardAge). */
+    val cardAge: String?
+        get() {
+            val s = ageShort?.trim()
+            if (!s.isNullOrEmpty() && s.any { it.isDigit() }) return s
+            val lo = ageMin ?: return null
+            if (lo <= 0) return null
+            val hi = ageMax
+            return if (hi != null && hi > lo) "$lo-$hi years" else "$lo years"
+        }
 
     /** Only when there is something to meet: the same test as the website's and the iPhone's. */
     val showsAccess: Boolean
@@ -125,7 +145,16 @@ data class Species(
 
 data class TreeCollection(val slug: String, val title: String, val intro: String?, val trees: List<String>)
 
-data class Facet(val slug: String?, val name: String, val face: String?)
+data class Facet(
+    val slug: String?,
+    val name: String,
+    val face: String?,
+    val aka: List<String> = emptyList(),
+    val popularity: Int = 0,
+)
+
+/** A country, and the mainland box its map opens on when its trees would frame an ocean. */
+data class Country(val name: String, val focus: ViewBox?)
 
 /**
  * One feed as read. [skipped] counts rows that could not be read: the app drops
@@ -138,6 +167,9 @@ data class Browse(
     val collections: List<TreeCollection>,
     val cities: List<Facet>,
     val skipped: Int,
+    val countries: List<Country> = emptyList(),
+    /** The website's scientific name per species page (browse.json species). */
+    val scientific: Map<String, String> = emptyMap(),
 )
 
 data class Catalogue(
@@ -146,4 +178,38 @@ data class Catalogue(
     val walks: List<Walk>,
     val species: List<Species>,
     val browse: Browse?,
-)
+    val otherNames: Map<String, List<String>> = emptyMap(),
+) {
+    // The iPhone's indexes (Kit/Catalogue.swift), built once per catalogue.
+    val byId: Map<String, Tree> by lazy { trees.associateBy { it.id } }
+    val byCity: Map<String, List<Tree>> by lazy { trees.groupBy { it.citySlug } }
+    val byCountry: Map<String, List<Tree>> by lazy { trees.groupBy { it.country } }
+    val bySpecies: Map<String, List<Tree>> by lazy { trees.groupBy { it.commonName } }
+    /** Common names in alphabetical order, as Catalogue.swift sorts them. */
+    val speciesNames: List<String> by lazy { bySpecies.keys.filter { it.isNotEmpty() }.sorted() }
+    private val cityFacets: Map<String, Facet> by lazy {
+        browse?.cities.orEmpty().filter { it.slug != null }.associateBy { it.slug!! }
+    }
+    private val countryFacets: Map<String, Country> by lazy { browse?.countries.orEmpty().associateBy { it.name } }
+    /** The species page's own name first, else the first tree's (Catalogue.swift scientificByCommon). */
+    private val scientific: Map<String, String> by lazy {
+        bySpecies.mapNotNull { (common, ts) ->
+            if (common.isEmpty()) return@mapNotNull null
+            val s = browse?.scientific?.get(common) ?: ts.firstNotNullOfOrNull { t ->
+                val open = t.species.indexOf('(')
+                val close = if (open >= 0) t.species.indexOf(')', open) else -1
+                if (open >= 0 && close > open) t.species.substring(open + 1, close).trim().ifEmpty { null } else null
+            }
+            s?.let { common to it }
+        }.toMap()
+    }
+
+    fun tree(id: String): Tree? = byId[id]
+    fun trees(inCity: String): List<Tree> = byCity[inCity].orEmpty()
+    fun treesInCountry(name: String): List<Tree> = byCountry[name].orEmpty()
+    fun treesOfSpecies(common: String): List<Tree> = bySpecies[common].orEmpty()
+    fun aka(city: String): List<String> = cityFacets[city]?.aka.orEmpty()
+    fun popularity(city: String): Int = cityFacets[city]?.popularity ?: 0
+    fun focus(country: String): ViewBox? = countryFacets[country]?.focus
+    fun scientificName(common: String): String? = scientific[common]
+}

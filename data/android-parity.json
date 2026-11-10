@@ -24,27 +24,49 @@
     {
       "what": "Status and navigation bars",
       "why": "Android's own bars at the top and bottom of the screen."
+    },
+    {
+      "what": "Text face",
+      "why": "SF Pro, the iPhone's system face, exists only on Apple platforms; Android's own system face (Roboto) stands in at the same sizes and weights. The brand face Gabarito is the same on both."
+    },
+    {
+      "what": "Share",
+      "why": "The share circle on a tree's card opens Android's share sheet with the same tagged link (utm_campaign=map_card)."
+    },
+    {
+      "what": "Species sheet",
+      "why": "The Species chip's list is a system sheet on both phones: SwiftUI's .sheet on the iPhone, Material's modal bottom sheet on Android."
     }
   ],
   "map": {
     "status": "in-progress",
     "differences": [
-      "Tab bar ported from TabBar.swift; the sheet above it is still Material's, not BottomSheet.swift (build 42 Airbnb sheet).",
-      "No blue dot for the person's position, and My location does not follow a new fix.",
-      "Location chip and account button are Android interim controls, not the iPhone's.",
-      "The catalogue takes several seconds to read on the emulator (org.json over 11.5 MB, about 100 MB of memory), where the iPhone opens at once."
+      "Build 42's Airbnb sheet (LOG.md 2026-11-08: only the count bar at the lowest stop, the tab bar hidden) is decided but not in the iPhone's Swift on main yet; Android follows the Swift and takes it when it lands.",
+      "Location refused: the iPhone shows its recovery sheet (PermissionRecovery.swift) before Settings; Android opens the app's settings directly. Not ported yet.",
+      "Your own trees (photographed by you, not ours) are not on the Android map or in the Collected shelf yet: Android has no store for them until My trees is ported (session 4).",
+      "The snackbar after a bookmark (\"Added to Want to visit\", Undo) is not ported yet.",
+      "First launch reads the 11.5 MB catalogue in about ten seconds on the one-core emulator under a loaded Mac; later launches read a binary snapshot. Not yet measured on a real phone.",
+      "Under a searched city the ambassador and Plus boxes (PlaceAsksBox, PlusUnderBox) are not ported yet (sessions 5 and 6)."
     ]
   },
   "map-full": {
-    "status": "not-ported",
+    "status": "in-progress",
     "differences": [
-      "Sheet at full height not ported (BottomSheet.swift)."
+      "As map."
     ]
   },
   "map-pin": {
-    "status": "not-ported",
+    "status": "in-progress",
     "differences": [
-      "Tree card not ported from TreeCard.swift."
+      "As map; the share circle opens Android's share sheet (forced)."
+    ]
+  },
+  "search": {
+    "status": "in-progress",
+    "differences": [
+      "Recent searches (signed in, kept on the server) are not ported yet.",
+      "A town we have no trees in (Apple's MKLocalSearch on the iPhone) is not looked up yet; Android says nothing matches.",
+      "The on-screen keyboard shows on Android; the iPhone simulator types from the Mac's keyboard, so its shot has none. Both focus the field."
     ]
   },
   "tree": {
