@@ -215,7 +215,7 @@ private fun OwnTreeInner(
         Column(Modifier.align(Alignment.BottomCenter).fillMaxWidth().background(brand.ground)) {
             Box(Modifier.fillMaxWidth().height(0.5.dp).background(brand.hairline))
             Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp).padding(top = 10.dp, bottom = 8.dp).navigationBarsPadding()) {
-                BigButton(stringResource(R.string.share_tree), Sym.IosShare, Modifier.weight(1f)) {
+                BigButton(stringResource(R.string.share_tree), Sym.Share, Modifier.weight(1f)) {
                     if (preparing) return@BigButton
                     preparing = true
                     scope.launch {
@@ -504,7 +504,7 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
                 contentAlignment = Alignment.Center,
             ) {
                 Box(Modifier.size(24.dp).border(1.6.dp, brand.moss, CircleShape), contentAlignment = Alignment.Center) {
-                    Icon(Sym.Pending, null, tint = brand.moss, modifier = Modifier.size(22.dp)) // ellipsis.circle, 17 semibold
+                    Icon(Sym.MoreVert, null, tint = brand.moss, modifier = Modifier.size(22.dp)) // overflow: Android's form
                 }
             }
             DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {

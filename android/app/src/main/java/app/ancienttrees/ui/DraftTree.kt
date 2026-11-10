@@ -499,7 +499,7 @@ private fun DraftTopButtons(
                 contentAlignment = Alignment.Center,
             ) {
                 Box(Modifier.size(24.dp).border(1.6.dp, brand.moss, CircleShape), contentAlignment = Alignment.Center) {
-                    Icon(Sym.Pending, null, tint = brand.moss, modifier = Modifier.size(22.dp)) // ellipsis.circle, 17 semibold
+                    Icon(Sym.MoreVert, null, tint = brand.moss, modifier = Modifier.size(22.dp)) // overflow: Android's form
                 }
             }
             DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {

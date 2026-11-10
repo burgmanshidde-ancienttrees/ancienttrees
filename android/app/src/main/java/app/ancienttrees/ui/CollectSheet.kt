@@ -1025,7 +1025,7 @@ private fun ColumnScope.TickedStep(t: Tree, newFind: Boolean, pinReported: Boole
     }
     if (t.url.isNotEmpty()) {
         SheetButtonView(
-            SheetButton(stringResource(R.string.cf_share), SheetKind.SECONDARY, Sym.IosShare) { host.share(t) },
+            SheetButton(stringResource(R.string.cf_share), SheetKind.SECONDARY, Sym.Share) { host.share(t) },
             Modifier.padding(top = 12.dp).testTag("collect-share"),
         )
     }

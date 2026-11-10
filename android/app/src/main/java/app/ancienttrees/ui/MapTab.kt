@@ -643,7 +643,7 @@ internal fun TreePlaceHeader(tree: Tree, onShare: () -> Unit, onClose: () -> Uni
         horizontalArrangement = Arrangement.spacedBy(12.dp),
         modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).offset(y = (-14).dp).padding(bottom = 2.dp),
     ) {
-        PlaceCircle(Sym.IosShare, "Share ${tree.name}", onShare)
+        PlaceCircle(Sym.Share, "Share ${tree.name}", onShare)
         Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
                 tree.name,

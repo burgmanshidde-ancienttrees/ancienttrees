@@ -651,7 +651,7 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                 Modifier.size(48.dp, 44.dp).clickable(role = Role.Button, onClick = onShare).semantics { contentDescription = share },
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(Sym.IosShareSemibold, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                Icon(Sym.ShareSemibold, null, tint = brand.moss, modifier = Modifier.size(22.dp))
             }
             val report = stringResource(R.string.report_problem)
             Box {

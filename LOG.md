@@ -13,10 +13,16 @@
 
 ## 2026-11-10 Android type and icons (session android-type-icons)
 
-- **Android's text now sets in Inter and its icons are Material Symbols Rounded**, the open set and face closest to the iPhone's SF Symbols and SF Pro (Hidde: "maak het zo veel hetzelfde"). Every text goes through ui/Text.kt, which adds SF's tracking per size and weight; every icon comes from ui/Symbols.kt, generated glyph for glyph by android/generate_symbols.py. Back is the iPhone's chevron. Tab icons, the tree page's top bar, Take me there and the action bar circles are sized to the iPhone's (SF point size times 4/3).
+- **Android's text now sets in Inter and its icons are Material Symbols Rounded**, the open set and face closest to the iPhone's SF Symbols and SF Pro (Hidde: "maak het zo veel hetzelfde"). Every text goes through ui/Text.kt, which adds SF's tracking per size and weight; every icon comes from ui/Symbols.kt, generated glyph for glyph by android/generate_symbols.py. Back (←), share and the overflow (⋮) take Android's form from the same set, per Airbnb's line. Tab icons, the tree page's top bar, Take me there and the action bar circles are sized to the iPhone's (SF point size times 4/3).
 - Libraries: Inter 4.1 (OFL, bundled font files, subset to Latin, Greek and Cyrillic) and Material Symbols Rounded 0.48.0 (Apache 2.0, generated into Kotlin), neither touches reader data. AndroidX material-icons-extended is gone.
 - A check so it cannot drift back: `python3 scripts/android_parity.py --check`, run by qa.py on every push.
 - Icons left the forced-differences list in data/android-parity.json; DECISIONS.md 2026-11-10.
+
+## 2026-11-10 Android app links: assetlinks.json
+
+- The site now publishes `/.well-known/assetlinks.json` for `app.ancienttrees.android`, so Android can verify the manifest's `autoVerify` filter and open ancienttrees.app links in the app, as the iPhone does with apple-app-site-association.
+- It carries one fingerprint today: the debug key on Hidde's Mac (~/.android/debug.keystore, SHA-256 D8:7C:...:2C:09), which signs every build installed on the emulator from this Mac. There is no upload or release key in the repo yet; CI's debug APKs are signed with a throwaway key and stay browser-only.
+- **For Hidde, once:** when the first build goes to Play, Play Console > Setup > App signing shows the "App signing key certificate" SHA-256 (and the upload key's). Both get added to `sha256_cert_fingerprints` in site/public/.well-known/assetlinks.json; until then a Play-installed app opens shared links in the browser.
 
 ## 2026-11-10 night run, second attempt
 

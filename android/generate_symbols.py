@@ -7,7 +7,8 @@ the open sets, Material Symbols Rounded came closest to them side by side
 regular and semibold, and a drawn filled twin for every glyph, which the
 iPhone leans on (the selected tab, bookmark.fill, camera.fill,
 checkmark.seal.fill). Lucide has no filled twins. One set, never mixed, and
-every glyph comes from it: nothing here is drawn by hand.
+every glyph comes from it: nothing here is drawn by hand. Back, share and
+the overflow menu take Android's form (Airbnb's line, DECISIONS.md 2026-11-10).
 
 Each glyph is fetched from the published npm package at a pinned version and
 turned into a Compose ImageVector. Run again after changing GLYPHS:
@@ -30,7 +31,14 @@ URL = "https://cdn.jsdelivr.net/npm/@material-symbols/svg-{w}@{v}/rounded/{name}
 # The SF Symbol each one stands for is named beside it. Weight 400 is SF's
 # regular at the same size; 600 is SF's semibold.
 GLYPHS = {
-    "ArrowBack": ("arrow_back_ios_new", False, 600, True),  # chevron.left, the back button
+    # THE SYSTEM SIGNS TAKE ANDROID'S FORM (Hidde, 2026-11-10, "Yes, Airbnb's
+    # line"; CONVENTIONS.md "One app on iPhone and Android"): back is the arrow,
+    # share Android's share, the overflow menu the vertical dots. They come from
+    # this same set, which is Android's own.
+    "ArrowBack": ("arrow_back", False, 400, True),  # chevron.left on the iPhone
+    "Share": ("share", False, 400, False),  # square.and.arrow.up on the iPhone
+    "ShareSemibold": ("share", False, 600, False),
+    "MoreVert": ("more_vert", False, 400, False),  # ellipsis.circle / ellipsis on the iPhone
     "ChevronRight": ("chevron_right", False, 400, True),  # chevron.right
     "KeyboardArrowDown": ("keyboard_arrow_down", False, 400, False),  # chevron.down
     "UnfoldMore": ("unfold_more", False, 400, False),  # chevron.up.chevron.down
@@ -59,12 +67,8 @@ GLYPHS = {
     "BookmarkFill": ("bookmark", True, 400, False),  # bookmark.fill
     "Verified": ("verified", False, 400, False),  # checkmark.seal
     "VerifiedFill": ("verified", True, 400, False),  # checkmark.seal.fill
-    "IosShare": ("ios_share", False, 400, False),  # square.and.arrow.up
-    "IosShareSemibold": ("ios_share", False, 600, False),
     "Feedback": ("feedback", False, 400, False),  # exclamationmark.bubble
     "FeedbackSemibold": ("feedback", False, 600, False),
-    "Pending": ("pending", False, 600, False),  # ellipsis.circle, the More menu (17 semibold)
-    "MoreHoriz": ("more_horiz", False, 400, False),  # ellipsis
     "TurnRight": ("turn_right", False, 400, False),  # arrow.turn.up.right, Take me there
     "TurnRightSemibold": ("turn_right", False, 600, False),
     "StarShineFill": ("star_shine", True, 400, False),  # sparkles

@@ -316,7 +316,7 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
                             .padding(horizontal = 20.dp, vertical = 6.dp).testTag("people-share"),
                     ) {
                         Box(Modifier.size(32.dp), contentAlignment = Alignment.Center) {
-                            Icon(Sym.IosShare, null, tint = brand.moss, modifier = Modifier.size(20.dp))
+                            Icon(Sym.Share, null, tint = brand.moss, modifier = Modifier.size(20.dp))
                         }
                         Text(stringResource(R.string.people_share), fontSize = 16.sp, color = brand.ink)
                     }
@@ -511,7 +511,7 @@ private fun PersonRow(
         Box(
             Modifier.size(44.dp).clickable(role = Role.Button, onClick = onMore).semantics { contentDescription = more }.testTag("person-more"),
             contentAlignment = Alignment.Center,
-        ) { Icon(Sym.MoreHoriz, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp)) }
+        ) { Icon(Sym.MoreVert, null, tint = brand.inkSoft, modifier = Modifier.size(20.dp)) }
     }
 }
 
