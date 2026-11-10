@@ -97,7 +97,11 @@
       "A town we have no trees in (Apple's MKLocalSearch on the iPhone) is not looked up yet; Android says nothing matches.",
       "The on-screen keyboard shows on Android; the iPhone simulator types from the Mac's keyboard, so its shot has none. Both focus the field."
     ],
-    "owner": null
+    "owner": {
+      "session": "local_android-basis",
+      "name": "android-basis",
+      "since": "2026-11-10"
+    }
   },
   "tree": {
     "status": "in-progress",
@@ -106,14 +110,22 @@
       "Collect: Remove from collected (with Undo) in the collect sheet is not ported yet.",
       "The snackbar after a bookmark: Added to Want to visit with View, Removed with Undo, as SaveHeart.swift (SnackBar.kt)."
     ],
-    "owner": null
+    "owner": {
+      "session": "local_android-basis",
+      "name": "android-basis",
+      "since": "2026-11-10"
+    }
   },
   "tree-nophoto": {
     "status": "in-progress",
     "differences": [
       "As tree."
     ],
-    "owner": null
+    "owner": {
+      "session": "local_android-basis",
+      "name": "android-basis",
+      "since": "2026-11-10"
+    }
   },
   "signin": {
     "status": "parity",
@@ -199,7 +211,12 @@
     "differences": [
       "Move the pin and Merge with another tree are not in the draft's menu yet: their screens (place-pin, MergeChooser) are not ported, as on own-tree.",
       "After Save the page waits a moment for the account to hold the tree before it turns into your tree with Share: the iPhone keeps it on the phone first, Android keeps nothing a person did on the device (hard rule 11)."
-    ]
+    ],
+    "owner": {
+      "session": "local_android-basis",
+      "name": "android-basis",
+      "since": "2026-11-10"
+    }
   },
   "collection-tab-full": {
     "status": "parity",
