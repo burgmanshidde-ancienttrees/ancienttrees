@@ -15,4 +15,34 @@
         <item quantity="one">1 árbol</item>
         <item quantity="other">%1$d árboles</item>
     </plurals>
+    <!-- sign-in -->
+    <string name="signin_title">Tus árboles en todos tus dispositivos</string>
+    <string name="signin_sub">Una cuenta gratuita, un email, sin contraseña. Tus árboles guardados te siguen a cualquier dispositivo.</string>
+    <string name="signin_sub_named">Inicia sesión para guardar %1$s. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.</string>
+    <string name="signin_placeholder">tu@ejemplo.com</string>
+    <string name="signin_send">Envíame un enlace de acceso</string>
+    <string name="signin_google">Continuar con Google</string>
+    <string name="signin_email">Continuar con email</string>
+    <string name="signin_fine">Al continuar aceptas las &lt;a href=\"https://ancienttrees.app/terms\"&gt;Condiciones&lt;/a&gt; y la &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Privacidad&lt;/a&gt;.</string>
+    <string name="signin_sent_title">Mira tu bandeja de entrada</string>
+    <string name="signin_sent_1">Hemos enviado un enlace de acceso a\u0020</string>
+    <string name="signin_sent_2">. Funciona una vez, caduca en 15 minutos y te trae de vuelta aquí.</string>
+    <string name="signin_email_label">Dirección de email</string>
+    <string name="want_to_go">Quiero ir</string>
+    <string name="account">Cuenta</string>
+    <string name="sign_in">Iniciar sesión</string>
+    <string name="sign_out">Cerrar sesión</string>
+    <string name="sign_out_title">¿Cerrar sesión?</string>
+    <string name="sign_out_body">Tu colección se queda en tu cuenta. Inicia sesión de nuevo en cualquier teléfono y vuelve.</string>
+    <string name="delete_account">Eliminar cuenta</string>
+    <string name="delete_title">¿Eliminar tu cuenta?</string>
+    <string name="delete_body">Eliminaremos tu dirección de email y tu colección. No se puede deshacer.</string>
+    <string name="delete">Eliminar</string>
+    <string name="delete_failed">No ha funcionado. No se ha eliminado nada. Inténtalo de nuevo o escribe a info@ancienttrees.app y lo haremos a mano.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="problem_not_email">Eso no parece una dirección de email.</string>
+    <string name="problem_send">No hemos podido enviarlo ahora. Inténtalo dentro de un minuto.</string>
+    <string name="problem_link">Ese enlace ya se ha usado o ha caducado. Pide uno nuevo.</string>
+    <string name="problem_google">El inicio con Google no ha funcionado. Usa tu email por ahora.</string>
+    <!-- /sign-in -->
 </resources>

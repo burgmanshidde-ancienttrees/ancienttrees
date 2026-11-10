@@ -15,4 +15,34 @@
         <item quantity="one">1 Baum</item>
         <item quantity="other">%1$d Bäume</item>
     </plurals>
+    <!-- sign-in -->
+    <string name="signin_title">Deine Bäume auf jedem Gerät</string>
+    <string name="signin_sub">Ein Konto behält, was du sammelst und speicherst.</string>
+    <string name="signin_sub_named">Melde dich an, um %1$s zu speichern. Ein Konto behält, was du sammelst, auf jedem Gerät, das du benutzt.</string>
+    <string name="signin_placeholder">du@beispiel.de</string>
+    <string name="signin_send">Schick mir einen Anmeldelink</string>
+    <string name="signin_google">Weiter mit Google</string>
+    <string name="signin_email">Weiter mit E-Mail</string>
+    <string name="signin_fine">Wenn du fortfährst, stimmst du den &lt;a href=\"https://ancienttrees.app/terms\"&gt;AGB&lt;/a&gt; und der &lt;a href=\"https://ancienttrees.app/privacy\"&gt;Datenschutzerklärung&lt;/a&gt; zu.</string>
+    <string name="signin_sent_title">Schau in dein Postfach</string>
+    <string name="signin_sent_1">Wir haben einen Anmeldelink an\u0020</string>
+    <string name="signin_sent_2">\u0020geschickt. Er funktioniert einmal, läuft nach 15 Minuten ab und bringt dich direkt hierher zurück.</string>
+    <string name="signin_email_label">E-Mail-Adresse</string>
+    <string name="want_to_go">Will ich hin</string>
+    <string name="account">Konto</string>
+    <string name="sign_in">Anmelden</string>
+    <string name="sign_out">Abmelden</string>
+    <string name="sign_out_title">Abmelden?</string>
+    <string name="sign_out_body">Deine Sammlung bleibt in deinem Konto. Melde dich auf einem beliebigen Handy wieder an, und sie ist zurück.</string>
+    <string name="delete_account">Konto löschen</string>
+    <string name="delete_title">Dein Konto löschen?</string>
+    <string name="delete_body">Wir löschen deine E-Mail-Adresse und deine Sammlung. Das lässt sich nicht rückgängig machen.</string>
+    <string name="delete">Löschen</string>
+    <string name="delete_failed">Das hat nicht geklappt. Es wurde nichts gelöscht. Versuch es noch einmal oder schreib an info@ancienttrees.app, dann erledigen wir es von Hand.</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="problem_not_email">Das sieht nicht nach einer E-Mail-Adresse aus.</string>
+    <string name="problem_send">Das ließ sich gerade nicht senden. Versuch es in einer Minute noch einmal.</string>
+    <string name="problem_link">Dieser Anmeldelink wurde schon benutzt oder ist abgelaufen. Fordere einen neuen an.</string>
+    <string name="problem_google">Die Anmeldung mit Google hat nicht geklappt. Nutze vorerst deine E-Mail.</string>
+    <!-- /sign-in -->
 </resources>
