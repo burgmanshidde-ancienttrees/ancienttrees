@@ -1,6 +1,16 @@
 {
   "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
   "days": {
+    "2026-11-10": [
+      {
+        "date": "2026-11-10",
+        "kind": "write",
+        "target": "fort-worth + tucson + vienna + indianapolis (READY leads in st-louis, windsor, segovia held)",
+        "tokens": 120000,
+        "trees": 5,
+        "note": "5 stories merged (ftw_024, ftw_026, tus_015, vie_062, ind_005); 7 READY leads held: UA jacaranda and fig 3398 (no reason a visitor can see), MBG Scotch elm (St. Louis paid share), Pacific Palisades willow (40 km out, past the day trip), Vienna Grimmelshausengasse oak (register line only), Windsor pollards (three trees in one lead, Tree Register recorder unchecked), Campanillas sequoia (23 km out, one of six trunks)."
+      }
+    ],
     "2026-11-09": [
       {
         "date": "2026-11-09",
