@@ -23,6 +23,17 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 compliance
+
+First review, a session audit on Hidde's ask ("wees een lawyer en geef ons een audit"). Fixed the same day: the privacy page rewritten to what the product does (every account has a public profile, notes and the new-from-visitors row are public, shared links), plus who decides, legal bases, retention, processors, rights and the Autoriteit Persoonsgegevens; the terms (16 and over, profiles, notes, names in the visitors row); photo credits on the website link the licence and the source; first mails must carry a way to say no (mailcheck). Open, in data/compliance.json:
+- profiles-33-flipped-public (Hidde): 33 private accounts made public on 2026-10-29 without asking.
+- profiles-public-by-default (Hidde): no choice at sign-up.
+- controller-identity (Hidde): no surname or KvK on the privacy page.
+- posthog-without-consent (Hidde): app analytics with the account number, no consent, no retention.
+- mailed-photos-before-yes (Hidde): mailed photos go live before the permission.
+- mail-words-quoted-without-asking (Hidde): sentences from mails quoted on pages.
+- app-credits-without-links (session): the app's credit line has no licence or source link.
+
 ## 2026-11-09
 
 Web half: the last 24 hours were data (Vienna, San Francisco, Porto write pass, Upper Austria register), one web-errors fix and build 41. No em dashes in site/dist HTML. Standing findings are unchanged.

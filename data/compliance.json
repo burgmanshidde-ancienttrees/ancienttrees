@@ -1,0 +1,33 @@
+{
+  "_note": "Open legal and privacy points, one row each. Written by the weekly compliance review (BRIEF_COMPLIANCE.md) and by sessions; read by scripts/quality.py's compliance_cell (orange while a row is open). owner: hidde (a decision only he can make) or session (work a session can do). Never delete a row: set status fixed (with fixed_in), declined (with his words) or not_needed (with why).",
+  "findings": [
+    {"id": "profiles-33-flipped-public", "owner": "hidde", "first_seen": "2026-11-10", "status": "open",
+     "summary": "On 2026-10-29 the 33 accounts that had chosen a private profile were made public without asking them.",
+     "law": "GDPR art. 25(2) privacy by default; art. 6 lawful basis",
+     "fix": "Set those 33 back to private, or mail them once with the choice and keep private for whoever does not answer."},
+    {"id": "profiles-public-by-default", "owner": "hidde", "first_seen": "2026-11-10", "status": "open",
+     "summary": "New accounts get a public profile (name, picture, Collected, Want to go) visible to anybody signed in, without a choice at sign-up.",
+     "law": "GDPR art. 25(2): data not made accessible to an indefinite number of people without the person's intervention",
+     "fix": "One clear choice when the account is made (public or private), or at least a visible notice with the switch at sign-up."},
+    {"id": "controller-identity", "owner": "hidde", "first_seen": "2026-11-10", "status": "open",
+     "summary": "The privacy page names 'Hidde, in the Netherlands' and info@, without a surname or a business registration.",
+     "law": "GDPR art. 13(1)(a) identity of the controller; Dutch Civil Code 3:15d once there is economic activity",
+     "fix": "Add the full name (or the KvK name and number once registered) to the first paragraph of the privacy page."},
+    {"id": "posthog-without-consent", "owner": "hidde", "first_seen": "2026-11-10", "status": "open",
+     "summary": "The app sends PostHog an install id and, signed in, the account number, without asking first; no retention is set or stated.",
+     "law": "Telecommunicatiewet 11.7a (device storage needs consent unless strictly necessary); GDPR art. 13(2)(a)",
+     "fix": "Ask in the app before analytics starts, or drop the account number and keep only anonymous counts; set a retention in PostHog and name it on the privacy page."},
+    {"id": "mailed-photos-before-yes", "owner": "hidde", "first_seen": "2026-11-10", "status": "open",
+     "summary": "A photograph somebody mails us goes on the site at once and the reply asks afterwards whether that is ok (rule of 2026-10-14).",
+     "law": "Auteurswet art. 1 and 12: publishing needs the maker's permission",
+     "fix": "Ask in the first reply and publish on the yes; or treat 'here are photos for your site' as the yes and record those words with the photo."},
+    {"id": "mail-words-quoted-without-asking", "owner": "hidde", "first_seen": "2026-11-10", "status": "open",
+     "summary": "Sentences from people's mails (data/outreach-words.json) are quoted on tree pages without asking them; mails fall outside the app's terms.",
+     "law": "Auteurswet (original sentences); GDPR art. 6",
+     "fix": "One line in the reply: 'May we put this sentence on the tree's page, without your name?', and quote on the yes."},
+    {"id": "app-credits-without-links", "owner": "session", "first_seen": "2026-11-10", "status": "open",
+     "summary": "The website now links the licence and the source of every CC photograph; the app still prints the name and licence as plain text.",
+     "law": "CC BY / BY-SA section 3(a): licence URI and source where reasonably practicable",
+     "fix": "Send licence_url and source_url in the feed (lib/images.ts licenceUrl and photoSourceUrl) and make the app's credit line tappable."}
+  ]
+}

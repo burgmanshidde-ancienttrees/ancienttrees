@@ -386,6 +386,56 @@ export function creditLinkParts(line: string, attribution?: string | null, licen
   return { before: line.slice(0, i), name, after: line.slice(i + name.length) };
 }
 
+/** The licence deed a Creative Commons label points to, or null when the label
+ *  names no version we can link honestly ("CC BY" alone).
+ *
+ *  Why (compliance audit, 2026-11-10): CC BY and BY-SA ask for the licence's
+ *  name AND a link to it "where reasonably practicable", and versions 2.0 and
+ *  3.0 give no 30-day grace to fix a missing one, which is what claim agencies
+ *  invoice for. A web page can always link, so it does. Ported 2.x/3.0 labels
+ *  ("CC BY-SA 3.0 AT") link their ported deed. */
+export function licenceUrl(licenseStr?: string | null): string | null {
+  const m = (licenseStr ?? "").toLowerCase().match(/\bcc[ -]?(by(?:-(?:sa|nd|nc))*)\s+(\d\.\d)(?:\s+([a-z]{2})\b)?/);
+  if (!m) return null;
+  const [, kind, version, port] = m;
+  const ported = port && version !== "4.0" ? `${port}/` : "";
+  return `https://creativecommons.org/licenses/${kind}/${version}/${ported}`;
+}
+
+/** The page the photograph came from: the record's attribution_url, else the
+ *  source page worked out from the file's own address (a Wikimedia Commons
+ *  file page, an iNaturalist photo, a Geograph photo). Null when neither
+ *  exists. The credit's name links here, so the reader can find the original. */
+export function photoSourceUrl(p: { url?: string | null; attribution_url?: string | null }): string | null {
+  if (p.attribution_url) return p.attribution_url;
+  const u = p.url ?? "";
+  let m = u.match(/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/(?:thumb\/)?[0-9a-f]\/[0-9a-f]{2}\/([^/]+)/);
+  if (m) return `https://commons.wikimedia.org/wiki/File:${m[1]}`;
+  m = u.match(/^https:\/\/inaturalist-open-data\.s3\.amazonaws\.com\/photos\/(\d+)\//);
+  if (m) return `https://www.inaturalist.org/photos/${m[1]}`;
+  m = u.match(/^https:\/\/s\d\.geograph\.org\.uk\/.*\/(\d+)_[0-9a-f]+(?:_\d+x\d+)?\.jpg$/);
+  if (m) return `https://www.geograph.org.uk/photo/${m[1]}`;
+  return null;
+}
+
+/** A finished credit line cut into the pieces a template prints, with the
+ *  photographer's name linked to the source and the licence label to its
+ *  deed whenever we have the address. One function so the tree card and the
+ *  photo figure cannot drift apart. */
+export function creditPieces(line: string, p: { url?: string | null; attribution?: string | null; attribution_url?: string | null; license?: string | null }):
+  { before: string; name: string; nameHref: string | null; between: string; licence: string; licenceHref: string | null; after: string } {
+  const name = creditName(p.attribution) ?? "";
+  const lic = (p.license ?? "").trim();
+  const nameHref = photoSourceUrl(p);
+  const licenceHref = licenceUrl(lic);
+  const i = name ? line.indexOf(name) : -1;
+  if (i < 0) return { before: "", name: line, nameHref: null, between: "", licence: "", licenceHref: null, after: "" };
+  const rest = line.slice(i + name.length);
+  const j = lic && licenceHref ? rest.indexOf(lic) : -1;
+  if (j < 0) return { before: line.slice(0, i), name, nameHref, between: "", licence: "", licenceHref: null, after: rest };
+  return { before: line.slice(0, i), name, nameHref, between: rest.slice(0, j), licence: lic, licenceHref, after: rest.slice(j + lic.length) };
+}
+
 export function creditText(attribution?: string | null, licenseStr?: string | null): string | null {
   const name = creditName(attribution);
   if (!name) return null;

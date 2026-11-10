@@ -307,3 +307,37 @@ jobs:
             after each surface, so a run that dies late leaves half a review
             rather than none.
           claude_args: "--max-turns 160 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""
+
+      # COMPLIANCE, weekly by due date like the code review (Hidde,
+      # 2026-11-10). Due when the newest "## YYYY-MM-DD compliance" heading in
+      # REVIEW.md is seven or more days old, or there is none. What to read
+      # and where it goes: BRIEF_COMPLIANCE.md.
+      - name: Is the compliance review due
+        id: legal
+        run: |
+          git pull --quiet --rebase origin main || true
+          NOW=$(date -u +%s)
+          LAST=$(grep -oE "^## [0-9]{4}-[0-9]{2}-[0-9]{2} compliance" REVIEW.md 2>/dev/null | cut -c4-13 | sort | tail -1)
+          if [ -z "$LAST" ]; then
+            LAST=$(cat archive/REVIEW*.md 2>/dev/null | grep -oE "^## [0-9]{4}-[0-9]{2}-[0-9]{2} compliance" | cut -c4-13 | sort | tail -1)
+          fi
+          if [ -z "$LAST" ]; then AGE=9999; else AGE=$(( (NOW - $(date -u -d "$LAST" +%s)) / 86400 )); fi
+          echo "newest compliance review: ${LAST:-none} ($AGE days)"
+          if [ "$AGE" -ge 7 ]; then
+            echo "due=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "due=no" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Review compliance
+        if: steps.legal.outputs.due == 'yes'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_bots: "github-actions[bot]"
+          prompt: |
+            You are the COMPLIANCE REVIEWER for Ancient Trees. Read
+            BRIEF_COMPLIANCE.md and do exactly what it says, today's date in
+            UTC. You review; you never fix. Write only REVIEW.md,
+            data/compliance.json and LOG.md, then commit and push.
+          claude_args: "--max-turns 80 --allowedTools \"Bash(git:*),Bash(python3:*),Bash(cat:*),Read,Write,Edit,Glob,Grep\""
