@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 Android app links: assetlinks.json
+
+- The site now publishes `/.well-known/assetlinks.json` for `app.ancienttrees.android`, so Android can verify the manifest's `autoVerify` filter and open ancienttrees.app links in the app, as the iPhone does with apple-app-site-association.
+- It carries one fingerprint today: the debug key on Hidde's Mac (~/.android/debug.keystore, SHA-256 D8:7C:...:2C:09), which signs every build installed on the emulator from this Mac. There is no upload or release key in the repo yet; CI's debug APKs are signed with a throwaway key and stay browser-only.
+- **For Hidde, once:** when the first build goes to Play, Play Console > Setup > App signing shows the "App signing key certificate" SHA-256 (and the upload key's). Both get added to `sha256_cert_fingerprints` in site/public/.well-known/assetlinks.json; until then a Play-installed app opens shared links in the browser.
+
 ## 2026-11-10 night run, second attempt
 
 - Write pass: 2 Vienna trees merged (vie_060, vie_061, app-only). 15 pending trees refused on standing holds (rule 10, no trunk named, duplicates); the 7 READY leads need a verify pass first.
