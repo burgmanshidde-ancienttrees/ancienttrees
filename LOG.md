@@ -21,6 +21,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 session: Android, the basic app in one go (Hidde: "kun jij niet ondertussen al beginnen aan de hele app te bouwen")
+
+- **New in `android/`, PRs 14 to 18:** species silhouettes in the pins (generated from site/src/lib/species-icons.ts by android/generate_species_icons.py) and the same-spot stack that spreads on a tap; Gabarito titles; sign in with Google in the browser or an emailed link, both on ancienttrees://auth-callback, the stored token spent with the server before anybody counts as signed in (data/cross-device.json `android:auth/session.refresh`); Want to go hearts on the server; sign out and delete account (delete_user()); Collect this tree with the camera within 3 km, writing the same sightings, storage and visited rows as the iPhone; the Seasons row on a tree page; the account sheet's Collected and Want to visit lanes. Copy taken from the website's own translations where they exist (signin-strings.ts, i18n.ts), the rest written for eight languages.
+- **Left out on purpose:** walks and the at-its-best chip, set aside in the iPhone app on 2026-11-04 (DECISIONS.md). New tree from a photograph with no tree of ours near, the photo library route, notes, public profiles and follows: not in this round.
+- **Dependencies:** AndroidX only (material-icons-extended, exifinterface); no Supabase client, no Google sign-in SDK.
+- **Verified:** android.yml green per PR (unit tests: feed contract against the live site, pins and stack against lib/map.ts, sessions, collect rows, seasons).
+- **Not verified:** nothing has run on a device. Unknowns: Google's return to the app, the emailed link opening it, the camera round trip and upload, how the sheets look at 375 px.
+- **For Hidde:** in the emulator, the first things to try are signing in with Google and with email, a heart, and Collect (the emulator's camera works; its location can be set in the emulator's extended controls).
+
 ## 2026-11-10 session: compliance audit, privacy page and terms brought up to date, weekly compliance light
 
 - Privacy page rewritten to what the product does: every account has a profile, public unless switched off, and what a public profile shows (Collected and Want to go included); notes on trees and the "new from visitors" row are public with a public profile's name; shared links; suggested people. Added what GDPR article 13 requires and the page lacked: who decides, why we may use each kind of data, how long we keep it, who handles it (Supabase, PostHog, Google, Apple, Resend, ImprovMX, GitHub, OpenFreeMap), rights and the Autoriteit Persoonsgegevens, 16 and over.
