@@ -117,7 +117,11 @@
     "differences": [
       "Sign-in sheet written from the website's copy; SignIn.swift not ported."
     ],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "explore": {
     "status": "in-progress",
@@ -152,7 +156,11 @@
     "differences": [
       "Profile and settings (Profile.swift) not ported."
     ],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "photo-viewer": {
     "status": "parity",
@@ -215,7 +223,11 @@
   "profile-signed-in": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "city": {
     "status": "not-ported",
@@ -275,12 +287,20 @@
   "signin-email": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "refused": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "contribute": {
     "status": "not-ported",
@@ -295,22 +315,38 @@
   "profile-edit": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "people": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "early-adopter": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "early-adopter-sheet": {
     "status": "not-ported",
     "differences": [],
-    "owner": null
+    "owner": {
+      "session": "local_f7cbe4ca-d750-49df-8e04-a8e4d80684b1",
+      "name": "android-parity-7-profile",
+      "since": "2026-11-10"
+    }
   },
   "_shared": {
     "_note": "Pieces every screen uses. One owner each; a screen session changes them only through its owner.",
