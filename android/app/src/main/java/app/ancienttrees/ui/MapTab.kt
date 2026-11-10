@@ -411,7 +411,11 @@ fun MapTab(
                         ArrivalCard(arrived, collected = arrived.id in marks.collected, onCollect = { onCollect(arrived) })
                     }
                     if (!nothingInView) {
-                        PlaceList(listed, inReach, onOpen)
+                        PlaceList(
+                            listed, inReach, onOpen,
+                            city = (focusPlace as? FocusPlace.City)?.let { it.slug to placeTitle },
+                            catalogue = catalogue,
+                        )
                     }
                     if (nothingInView) {
                         EmptyPlaceCard(onAdd = onAddTree)
@@ -532,7 +536,14 @@ private fun far(km: Double): String = if (km < 10) String.format(java.util.Local
 
 /** DIRECTION C: Highlights, Collected, then every tree in view as a row. */
 @Composable
-private fun PlaceList(listed: List<Listed>, inReach: Int, onOpen: (Tree) -> Unit) {
+private fun PlaceList(
+    listed: List<Listed>,
+    inReach: Int,
+    onOpen: (Tree) -> Unit,
+    /** The searched city (slug, title): its white box under the shelves, Plus under the trees (PlaceAmbassadors.swift). */
+    city: Pair<String, String>? = null,
+    catalogue: Catalogue? = null,
+) {
     val marks = LocalTreeMarks.current
     val highlights = remember(listed) {
         listed.filter { it.tree.isHighlight }.sortedBy { it.tree.highlightRank ?: Int.MAX_VALUE }.take(10)
@@ -546,6 +557,9 @@ private fun PlaceList(listed: List<Listed>, inReach: Int, onOpen: (Tree) -> Unit
         SheetSectionHead("Collected")
         Shelf(collected.map { it.tree }, onOpen)
     }
+    // UNDER THE HIGHLIGHTS (Hidde, 2026-11-06): the searched city's asks, while its trees are in view.
+    val cityInView = city != null && catalogue != null && listed.any { it.tree.citySlug == city.first }
+    if (cityInView) PlaceAsksBox(city!!.first, city.second, catalogue!!, Modifier.padding(bottom = 6.dp))
     if (listed.isNotEmpty()) {
         SheetSectionHead(
             when {
@@ -558,6 +572,8 @@ private fun PlaceList(listed: List<Listed>, inReach: Int, onOpen: (Tree) -> Unit
             for (hit in listed) TreeRow(hit.tree) { onOpen(hit.tree) }
         }
     }
+    // The Plus question after the trees, the searched city only (map.ts _focusCity).
+    if (cityInView) PlusUnderBox(city!!.second, Modifier.padding(top = 4.dp))
 }
 
 @Composable

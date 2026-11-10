@@ -112,6 +112,16 @@ object FeedParser {
         return out
     }
 
+    /** Every row of species.json `names`, for the chooser's "Not on the map yet" (SpeciesSearch.swift). */
+    fun directory(json: String): List<SpeciesNameRow> {
+        val a = JSONObject(json).optJSONArray("names") ?: return emptyList()
+        return (0 until a.length()).mapNotNull { i ->
+            val o = a.optJSONObject(i) ?: return@mapNotNull null
+            val c = o.text("c") ?: return@mapNotNull null
+            SpeciesNameRow(c, o.text("l").orEmpty(), o.strings("a"), o.flag("m"), o.flag("g"))
+        }
+    }
+
     fun browse(json: String): Browse {
         val root = JSONObject(json)
         val (collections, a) = rows(root.optJSONArray("collections")) { o ->
@@ -161,17 +171,19 @@ object FeedParser {
         }
         val speciesFaces = HashMap<String, String>()
         val sci = HashMap<String, String>()
+        val intros = HashMap<String, String>()
         root.optJSONArray("species")?.let { arr ->
             for (i in 0 until arr.length()) {
                 val o = arr.optJSONObject(i) ?: continue
                 val n = o.text("name") ?: continue
                 o.text("scientific")?.takeIf { it.isNotEmpty() }?.let { sci[n] = it }
                 o.text("face")?.let { speciesFaces[n] = it }
+                o.text("intro")?.takeIf { it.isNotEmpty() }?.let { intros[n] = it }
             }
         }
         return Browse(
             root.getString("version"), collections, cities, a + b + c, countries, sci,
-            countryFaces = countryFaces, speciesFaces = speciesFaces,
+            countryFaces = countryFaces, speciesFaces = speciesFaces, speciesIntros = intros,
             favourites = root.strings("favourites"), islands = root.strings("islands"),
         )
     }
@@ -281,6 +293,7 @@ object FeedParser {
             species = species?.let { runCatching { species(it).rows }.getOrNull() }.orEmpty(),
             browse = browse?.let { runCatching { browse(it) }.getOrNull() },
             otherNames = species?.let { runCatching { otherNames(it) }.getOrNull() }.orEmpty(),
+            directory = species?.let { runCatching { directory(it) }.getOrNull() }.orEmpty(),
         )
     }
 }

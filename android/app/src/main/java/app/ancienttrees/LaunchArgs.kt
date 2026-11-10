@@ -20,6 +20,16 @@ data class LaunchArgs(val args: List<String>) {
     /** -open=mine:<id>: a tree of your own (ContentView .mine). */
     val openMine: String? get() = value("-open")?.takeIf { it.startsWith("mine:") }?.removePrefix("mine:")
 
+    /** -open=city:<slug>: the map looking at that city, its place header in the sheet (ContentView.debugRoute). */
+    val openCity: String? get() = value("-open")?.takeIf { it.startsWith("city:") }?.removePrefix("city:")
+
+    /** -open=species:<Common name>: the species page (Species.swift). */
+    val openSpecies: String? get() = value("-open")?.takeIf { it.startsWith("species:") }?.removePrefix("species:")
+
+    /** -placepin and -speciespick: the opened tree's pin map and species chooser (TreeDetail.swift). */
+    val placePin: Boolean get() = "-placepin" in args
+    val speciesPick: Boolean get() = "-speciespick" in args
+
     /** -mine-demo: two of your own trees, drawn, nothing sent (Sightings.seedDemo). */
     val mineDemo: Boolean get() = "-mine-demo" in args
 

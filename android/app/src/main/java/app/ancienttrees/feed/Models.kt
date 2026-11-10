@@ -192,6 +192,8 @@ data class Browse(
     /** Faces per country and per species (browse.json countries / species `face`). */
     val countryFaces: Map<String, String> = emptyMap(),
     val speciesFaces: Map<String, String> = emptyMap(),
+    /** What each species is, the website's Contract F paragraph (browse.json species `intro`; Species.swift). */
+    val speciesIntros: Map<String, String> = emptyMap(),
     /** Discover's favourite cities and tree islands, in the website's order (lib/favourites.ts). */
     val favourites: List<String> = emptyList(),
     val islands: List<String> = emptyList(),
@@ -204,6 +206,8 @@ data class Catalogue(
     val species: List<Species>,
     val browse: Browse?,
     val otherNames: Map<String, List<String>> = emptyMap(),
+    /** species.json `names`: every row, mapped or not (Kit/SpeciesSearch.swift speciesDirectory). */
+    val directory: List<SpeciesNameRow> = emptyList(),
 ) {
     // The iPhone's indexes (Kit/Catalogue.swift), built once per catalogue.
     val byId: Map<String, Tree> by lazy { trees.associateBy { it.id } }
@@ -237,6 +241,8 @@ data class Catalogue(
     fun popularity(city: String): Int = cityFacets[city]?.popularity ?: 0
     fun focus(country: String): ViewBox? = countryFacets[country]?.focus
     fun scientificName(common: String): String? = scientific[common]
+    /** The species page's paragraph (Catalogue.intro(species:)). */
+    fun intro(species: String): String? = browse?.speciesIntros?.get(species)
 
     val collections: List<TreeCollection> get() = browse?.collections.orEmpty()
     val favourites: List<String> get() = browse?.favourites.orEmpty()
@@ -259,4 +265,22 @@ data class Catalogue(
     fun nearest(lat: Double, lng: Double, limit: Int, withinKm: Double): List<Pair<Tree, Double>> =
         trees.map { it to Geo.km(lat, lng, it.lat, it.lng) }.filter { it.second <= withinKm }
             .sortedBy { it.second }.take(limit)
+}
+
+/** One row of species.json `names` (Kit/SpeciesSearch.swift SpeciesNameRow). */
+data class SpeciesNameRow(
+    /** Our common name, the one every screen prints (hard rule 9). */
+    val c: String,
+    /** The Latin. */
+    val l: String,
+    val a: List<String> = emptyList(),
+    /** false: a species met in a lead that we do not map yet. */
+    val m: Boolean? = null,
+    /** true: a genus, offered as "Oak (Quercus sp.)". */
+    val g: Boolean? = null,
+) {
+    val isMapped: Boolean get() = m != false && g != true
+    val isGenus: Boolean get() = g == true
+    /** What a reader's tree is called when they pick this row, so it groups with the trees that carry it. */
+    val species: String get() = if (isGenus) "$c ($l sp.)" else "$c ($l)"
 }

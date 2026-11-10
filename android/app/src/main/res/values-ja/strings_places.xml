@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The place and species screens (parity session 8): Species.swift, SpeciesChooser.swift,
+     SpeciesPicker.swift, PlacePin.swift, PlaceAmbassadors.swift, AmbassadorBadge.swift, PlusAsk.swift. -->
+<resources>
+    <string name="sp_on_map">地図上に%1$d本</string>
+    <string name="sp_any">すべての種類</string>
+    <string name="sp_which">どんな木ですか？</string>
+    <string name="sp_picker_title">種類</string>
+    <string name="sp_not_mapped">まだ地図にありません</string>
+
+    <string name="pp_title">本当はどこですか？</string>
+    <string name="pp_thanks">ありがとう</string>
+    <string name="pp_cancel">キャンセル</string>
+    <string name="pp_done">完了</string>
+    <string name="pp_drag">ピンが木の上に来るまで地図をドラッグしてください。</string>
+    <string name="pp_zoom">好きなだけ拡大できます。ピンを動かすと送信できます。</string>
+    <string name="pp_far">こちらの位置から%1$d m離れています。</string>
+    <string name="pp_send">木はここです</string>
+    <string name="pp_sending">送信中</string>
+    <string name="pp_sent">確認してピンを移動します。</string>
+    <string name="pp_failed">送信できませんでした。しばらくしてからもう一度お試しください。</string>
+    <string name="pp_account">送信にはアカウントが必要です。あなたの修正で何が変わったかをお伝えするためです。</string>
+
+    <string name="amb_become_the">%1$sのアンバサダーになる</string>
+    <string name="amb_become_a">%1$sのアンバサダーになる</string>
+    <string name="amb_role">%1$sのアンバサダー</string>
+    <string name="amb_one_too">あなたもなりませんか</string>
+    <string name="amb_request_sent">申請を送りました</string>
+    <string name="amb_title_seated">%1$sのアンバサダーになる</string>
+    <string name="amb_open_profile">%1$sさんのプロフィールを開く</string>
+
+    <string name="plus_row">Ancient Trees Plusづくりに協力する</string>
+    <string name="plus_title">Ancient Trees Plus</string>
+    <string name="plus_message">Ancient Treesを長く続けられる場にするため、Plusを準備しています。今はできないことで、どんなことができたら嬉しいですか？</string>
+    <string name="plus_idea_hint">こんなことができたら…</string>
+    <string name="plus_skip">スキップ</string>
+    <string name="plus_next">次へ</string>
+    <string name="plus_choice_title">一番ほしいのはどれですか？</string>
+    <string name="plus_pick_two">2つまで選べます。</string>
+    <string name="plus_send">送信</string>
+    <string name="plus_thanks">ありがとう</string>
+    <string name="plus_tell_q">公開されたらお知らせしましょうか？</string>
+    <string name="plus_tell_me">知らせてほしい</string>
+    <string name="plus_sending">送信中</string>
+    <string name="plus_no_thanks">いいえ</string>
+    <string name="plus_listed">リストに登録しました</string>
+    <string name="plus_done">完了</string>
+    <string name="plus_opt_walks">街の旅行向けのおすすめ木めぐりコース</string>
+    <string name="plus_opt_offline">オフライン地図のダウンロード</string>
+    <string name="plus_opt_season">木が一番きれいな時期のお知らせ</string>
+    <string name="plus_opt_log">集めた木すべてのより豊かな記録</string>
+    <string name="plus_opt_other">その他</string>
+    <string name="plus_other_hint">どんなことを望みますか？</string>
+</resources>

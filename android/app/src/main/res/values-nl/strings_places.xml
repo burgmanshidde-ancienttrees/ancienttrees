@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The place and species screens (parity session 8): Species.swift, SpeciesChooser.swift,
+     SpeciesPicker.swift, PlacePin.swift, PlaceAmbassadors.swift, AmbassadorBadge.swift, PlusAsk.swift. -->
+<resources>
+    <string name="sp_on_map">%1$d op de kaart</string>
+    <string name="sp_any">Elke soort</string>
+    <string name="sp_which">Welke soort boom?</string>
+    <string name="sp_picker_title">Soort</string>
+    <string name="sp_not_mapped">Nog niet op de kaart</string>
+
+    <string name="pp_title">Waar staat hij echt?</string>
+    <string name="pp_thanks">Dank je</string>
+    <string name="pp_cancel">Annuleren</string>
+    <string name="pp_done">Klaar</string>
+    <string name="pp_drag">Sleep de kaart tot de pin op de boom staat.</string>
+    <string name="pp_zoom">Zoom zo ver in als je wilt. Je kunt versturen zodra je de pin hebt verplaatst.</string>
+    <string name="pp_far">Dat is %1$d m van waar wij hem hebben.</string>
+    <string name="pp_send">De boom staat hier</string>
+    <string name="pp_sending">Versturen</string>
+    <string name="pp_sent">We controleren het en verplaatsen de pin.</string>
+    <string name="pp_failed">Dat is niet gelukt. Probeer het zo nog eens.</string>
+    <string name="pp_account">Je hebt een account nodig om dit te versturen, zodat we je kunnen vertellen wat jouw correctie heeft veranderd.</string>
+
+    <string name="amb_become_the">Word de ambassadeur van %1$s</string>
+    <string name="amb_become_a">Word ambassadeur van %1$s</string>
+    <string name="amb_role">Ambassadeur van %1$s</string>
+    <string name="amb_one_too">Word er ook een</string>
+    <string name="amb_request_sent">Verzoek verstuurd</string>
+    <string name="amb_title_seated">Word ambassadeur van %1$s</string>
+    <string name="amb_open_profile">Open het profiel van %1$s</string>
+
+    <string name="plus_row">Help Ancient Trees Plus maken</string>
+    <string name="plus_title">Ancient Trees Plus</string>
+    <string name="plus_message">We werken aan Plus om van Ancient Trees een duurzaam platform te maken. Wat zou je willen dat het doet, wat het nu nog niet doet?</string>
+    <string name="plus_idea_hint">Ik zou graag…</string>
+    <string name="plus_skip">Overslaan</string>
+    <string name="plus_next">Volgende</string>
+    <string name="plus_choice_title">Wat zou je het liefst willen?</string>
+    <string name="plus_pick_two">Kies er maximaal twee.</string>
+    <string name="plus_send">Verstuur</string>
+    <string name="plus_thanks">Dank je</string>
+    <string name="plus_tell_q">Zullen we het je laten weten als het er is?</string>
+    <string name="plus_tell_me">Laat het me weten</string>
+    <string name="plus_sending">Versturen</string>
+    <string name="plus_no_thanks">Nee, dank je</string>
+    <string name="plus_listed">Je staat op de lijst</string>
+    <string name="plus_done">Klaar</string>
+    <string name="plus_opt_walks">Aanbevolen boomwandelingen voor een stedentrip</string>
+    <string name="plus_opt_offline">Offline kaarten downloaden</string>
+    <string name="plus_opt_season">Seizoensmeldingen als bomen op hun mooist zijn</string>
+    <string name="plus_opt_log">Een rijker logboek van elke boom die je hebt verzameld</string>
+    <string name="plus_opt_other">Iets anders</string>
+    <string name="plus_other_hint">Wat zou je willen?</string>
+</resources>
