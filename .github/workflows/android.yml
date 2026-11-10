@@ -31,13 +31,13 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      # The repository's own wrapper, so CI builds with the Gradle a Mac uses;
+      # setup-gradle also checks the wrapper jar against Gradle's checksums.
       - uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '8.14.3'
 
       - name: Build the app and run the unit tests
         working-directory: android
-        run: gradle --no-daemon assembleDebug testDebugUnitTest
+        run: ./gradlew --no-daemon assembleDebug testDebugUnitTest
 
       - name: Keep the test report
         if: always()
