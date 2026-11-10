@@ -179,15 +179,13 @@
     "differences": []
   },
   "collect-place": {
-    "status": "in-progress",
-    "differences": [
-      "The locate arrow in the corner of the map is not drawn on Android yet."
-    ]
+    "status": "parity",
+    "differences": []
   },
   "collect-identify": {
     "status": "in-progress",
     "differences": [
-      "Your own trees within 30 m (a second photograph of a tree you added) are not offered at the top of the list yet: they come from My trees, which is not ported."
+      "Your own trees within 30 m are drawn and add the photograph to that tree, but only once MainActivity passes mine = myTrees and openMine to CollectHost (wiring pending)."
     ]
   },
   "collect-ticked": {
@@ -207,9 +205,9 @@
   "collect-describe": {
     "status": "in-progress",
     "differences": [
-      "The ⋯ menu on the draft and the add tile under More photographs (a further photograph, the sign) are not ported yet.",
-      "The city under the name is not a link yet (the place pages are not ported).",
-      "After Save the page closes; on the iPhone it stays as your tree with Share, which needs My trees (not ported)."
+      "Move the pin and Merge with another tree are not in the draft's menu yet: their screens (place-pin, MergeChooser) are not ported, as on own-tree.",
+      "After Save the page waits a moment for the account to hold the tree before it turns into your tree with Share: the iPhone keeps it on the phone first, Android keeps nothing a person did on the device (hard rule 11).",
+      "The city link and the page staying as your tree after Save need MainActivity to pass account, mine and onCity to DraftTree (wiring pending)."
     ]
   },
   "collection-tab-full": {
