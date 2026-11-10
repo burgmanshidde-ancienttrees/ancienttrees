@@ -171,6 +171,37 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "ind_005",
+      "name": "The Anne Frank Chestnut of the Children's Museum",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "planted 14 April 2013 as a sapling",
+      "age_min": 13,
+      "age_max": null,
+      "age_basis": "source",
+      "location": {
+        "address": "Anne Frank Peace Park, The Children's Museum of Indianapolis, 3000 N Meridian St, Indianapolis, IN",
+        "latitude": 39.81061,
+        "longitude": -86.15789,
+        "neighbourhood": "Children's Museum of Indianapolis, Meridian Street"
+      },
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q140073083",
+        "https://en.wikipedia.org/wiki/Anne_Frank_tree"
+      ],
+      "access": "On the grounds of The Children's Museum of Indianapolis, in its Anne Frank Peace Park. Whether the Peace Park can be reached without a museum ticket is not settled; check with the museum before you go.",
+      "transport": "",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Anne Frank could see a horse chestnut from the attic of the house where she hid in Amsterdam, and this young tree in Indianapolis was grown from it. It was planted on 14 April 2013 in the Anne Frank Peace Park at The Children's Museum of Indianapolis.\n\nBy then its parent was gone. The Amsterdam chestnut came down in a storm in August 2010, so the saplings raised from it are what remains of the tree she wrote about. This one went into Indiana ground less than three years after the original fell.\n\nNothing about its size argues for the trip, and we will not pretend otherwise. It has been here for a little over twelve years, and nobody has published a height or a girth for it. The reason to come is the line it continues, not the trunk.\n\nOne practical question is still open. The Peace Park belongs to the museum's grounds, and we have not been able to confirm whether you can walk in without a museum ticket, so check with the museum before you set out. If you have been, tell us how you got in, and send a photograph. A dated picture of the tree is what this page lacks most.",
+      "how_to_recognise": "You can recognise it as the young horse chestnut in the museum's Anne Frank Peace Park, planted there in 2013. It stands on the grounds of The Children's Museum of Indianapolis.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
