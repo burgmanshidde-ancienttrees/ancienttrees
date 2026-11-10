@@ -243,9 +243,15 @@
     "owner": null
   },
   "collection": {
-    "status": "not-ported",
-    "differences": [],
-    "owner": null
+    "status": "in-progress",
+    "differences": [
+      "Ported with Discover (CollectionView in Home.swift): the intro and the trees, as rows (TreeRow) rather than TreeCard until the card from the tree page is swapped in."
+    ],
+    "owner": {
+      "session": "local_8724be8d",
+      "name": "Discover (main conversation)",
+      "since": "2026-11-10"
+    }
   },
   "place-pin": {
     "status": "not-ported",
