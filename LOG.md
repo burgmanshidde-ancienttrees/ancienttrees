@@ -21,6 +21,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 session: Android, the map opens where you are
+
+- **New in `android/` (PR 13):** location asked on the first open with no screen of ours before it; a "Location off · Use my location" chip while it is off (Settings after a refusal); a my-location button above the sheet; a bottom sheet listing the trees in view with the count (the website's treesInView), nearest first with distance in km or miles by region, as iOS and web write it. Strings in eight languages. New: androidx material-icons-extended (AndroidX); location through MapLibre's engine on Android's own location, no Play services.
+- **Verified:** android.yml green, 18 unit tests (distance, units, the list, the feed contract, pin numbers).
+- **Not verified:** nothing on a device or emulator yet.
+- **Next Android session:** species shapes in the pins, the same-spot stack, brand font; then walks, sign-in, collect, season.
+
 ## 2026-11-10 session: Highlights cards light their pin; Lindenbaum U-Bahn claim softened
 
 - City page, desktop: pointing at a Highlights photo card now lights its pin, as the list cards below already did (Airbnb's list). Paired by tree id. The explore map has no card-to-pin hover at all yet (its pins are map layers); not done.
