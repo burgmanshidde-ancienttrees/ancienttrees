@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">任意です。看板の写真があると助かります。木の名前、種、樹齢が書かれていることが多いです。</string>
     <string name="ot_add_photo">写真を追加</string>
     <string name="ot_share_failed">送信できませんでした。電波のあるところでもう一度リンクをお試しください。</string>
+    <string name="ot_move_pin">ピンを動かす</string>
+    <string name="ot_merge">ほかの木と統合</string>
+    <string name="mg_title">統合先</string>
+    <string name="mg_search">名前で木を探す</string>
+    <string name="mg_none">その名前の木はありません。</string>
+    <string name="mg_confirm_title">%1$sと統合しますか？</string>
+    <string name="mg_confirm_body">写真はその木のページに移り、このコピーはあなたの木から外れます。</string>
+    <string name="mg_confirm">木を統合</string>
+    <string name="mg_done">木を統合しました</string>
 </resources>

@@ -497,7 +497,6 @@ private fun MorePhotos(s: OwnSighting, mine: MyTrees) {
 @Composable
 private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, onSpecies: () -> Unit, onRemove: () -> Unit) {
     val brand = Brand.colors
-    val glass = brand.ground.copy(alpha = 0.92f)
     var menu by remember { mutableStateOf(false) }
     Row(
         Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 16.dp, vertical = 6.dp),
@@ -505,17 +504,17 @@ private fun OwnTopButtons(onBack: () -> Unit, onEdit: (EditableField) -> Unit, o
     ) {
         val back = stringResource(R.string.back)
         Box(
-            Modifier.size(44.dp).shadow(2.dp, CircleShape).background(glass, CircleShape)
+            Modifier.size(44.dp).softDisc()
                 .clickable(role = Role.Button, onClick = onBack).semantics { contentDescription = back },
             contentAlignment = Alignment.Center,
         ) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.moss, modifier = Modifier.size(20.dp))
         }
         Spacer(Modifier.weight(1f))
         val more = stringResource(R.string.ot_more)
         Box {
             Box(
-                Modifier.size(44.dp).shadow(2.dp, CircleShape).background(glass, CircleShape)
+                Modifier.size(44.dp).softDisc()
                     .clickable(role = Role.Button) { menu = true }.semantics { contentDescription = more },
                 contentAlignment = Alignment.Center,
             ) {

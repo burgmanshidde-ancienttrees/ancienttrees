@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">Optioneel. Een foto van het bordje helpt: daarop staan vaak de naam, de soort en de leeftijd.</string>
     <string name="ot_add_photo">Foto toevoegen</string>
     <string name="ot_share_failed">Dat is niet verstuurd. Probeer de link opnieuw als je bereik hebt.</string>
+    <string name="ot_move_pin">Speld verplaatsen</string>
+    <string name="ot_merge">Samenvoegen met een andere boom</string>
+    <string name="mg_title">Samenvoegen met</string>
+    <string name="mg_search">Zoek bomen op naam</string>
+    <string name="mg_none">Geen van onze bomen heet zo.</string>
+    <string name="mg_confirm_title">Samenvoegen met %1$s?</string>
+    <string name="mg_confirm_body">Je foto\'s gaan naar die pagina, en deze kopie verdwijnt uit je bomen.</string>
+    <string name="mg_confirm">Bomen samenvoegen</string>
+    <string name="mg_done">Bomen samengevoegd</string>
 </resources>

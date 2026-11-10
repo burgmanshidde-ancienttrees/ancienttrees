@@ -20,6 +20,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -278,6 +279,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     var snack by remember { mutableStateOf<app.ancienttrees.ui.Snack?>(null) }
     val addedText = androidx.compose.ui.res.stringResource(R.string.snack_added)
     val removedText = androidx.compose.ui.res.stringResource(R.string.snack_removed)
+    val uncollectedText = androidx.compose.ui.res.stringResource(R.string.uncollected)
+    val mergedText = androidx.compose.ui.res.stringResource(R.string.mg_done)
     val signedInText = androidx.compose.ui.res.stringResource(R.string.snack_signed_in)
 
     fun heart(t: Tree) {
@@ -483,6 +486,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     Box(Modifier.fillMaxSize()) {
         CompositionLocalProvider(
             LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+            app.ancienttrees.ui.LocalSearchAccount provides app.ancienttrees.ui.SearchAccount(
+                signedIn = signedIn,
+                token = { account.fresh()?.accessToken },
+                recentDemo = "-recentdemo" in launch.args,
+                addTree = { openCollect() },
+            ),
             app.ancienttrees.ui.LocalPlaceHost provides app.ancienttrees.ui.PlaceHost(
                 signedIn = signedIn,
                 email = (account.state as? SignIn.SignedIn)?.email,
@@ -693,6 +702,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     votes = votes,
                     counts = counts,
                     openPhotoAtStart = launch.photo,
+                    openCollectAtStart = "-collectsheet" in launch.args,
                     actions = TreePageActions(
                         onBack = { open = null },
                         onHeart = { heart(tree) },
@@ -710,6 +720,18 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         onCollectFromLibrary = { collectFromLibrary(tree) },
                         onSpecies = { name -> openSpecies(name) },
                         onPlacePin = { placing = tree },
+                        collectedAt = saves.collectedAt[tree.id],
+                        // REMOVED AT ONCE, WITH UNDO (TreeDetail.uncollectWithUndo): the
+                        // photographs stay, Undo puts the tick back on its first day.
+                        onUncollect = {
+                            val at = saves.collectedAt[tree.id] ?: System.currentTimeMillis()
+                            scope.launch { saves.uncollect(tree.id) }
+                            snack = app.ancienttrees.ui.Snack(
+                                uncollectedText,
+                                icon = androidx.compose.material.icons.Icons.Outlined.Verified,
+                                onUndo = { scope.launch { if (tree.id !in saves.collected) saves.recollect(tree.id, at) } },
+                            )
+                        },
                         onAddPhoto = {
                             if (signedIn) {
                                 collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id)
@@ -852,6 +874,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     // Saved here, then the page stays as your tree with Share (TreeDetail.swift, mine).
                     account = account,
                     mine = myTrees,
+                    onMerged = { t ->
+                        draft = null
+                        saves.noteCollected(t.id)
+                        snack = app.ancienttrees.ui.Snack(mergedText, icon = androidx.compose.material.icons.Icons.Outlined.Verified)
+                        scope.launch { myTrees.load(force = true) }
+                    },
                     onCity = { slug, name ->
                         val t = cat.trees(slug).firstOrNull()
                         draft = null

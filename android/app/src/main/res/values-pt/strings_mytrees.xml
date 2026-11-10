@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">Opcional. Uma foto da placa ajuda: costuma indicar a árvore, a espécie e a idade.</string>
     <string name="ot_add_photo">Adicionar foto</string>
     <string name="ot_share_failed">Não foi enviado. Tenta o link outra vez quando tiveres rede.</string>
+    <string name="ot_move_pin">Mover o pino</string>
+    <string name="ot_merge">Juntar a outra árvore</string>
+    <string name="mg_title">Juntar a</string>
+    <string name="mg_search">Procurar árvores pelo nome</string>
+    <string name="mg_none">Nenhuma das nossas árvores tem esse nome.</string>
+    <string name="mg_confirm_title">Juntar a %1$s?</string>
+    <string name="mg_confirm_body">As tuas fotos passam para a página dela e esta cópia sai das tuas árvores.</string>
+    <string name="mg_confirm">Juntar árvores</string>
+    <string name="mg_done">Árvores juntadas</string>
 </resources>

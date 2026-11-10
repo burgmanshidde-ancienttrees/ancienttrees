@@ -43,6 +43,40 @@ class Saves(private val account: Account) {
         collectedAt = collectedAt + (treeId to System.currentTimeMillis())
     }
 
+    /**
+     * REMOVED AT ONCE, WITH UNDO (TreeDetail.uncollectWithUndo, Hidde 2026-10-10):
+     * the tick comes off here and on the server; the photographs stay. Returns
+     * the day it was first collected, for Undo, or null when the server said no
+     * (then the tick stays, because the server is the record).
+     */
+    suspend fun uncollect(treeId: String): Long? {
+        val s = account.fresh() ?: return null
+        val at = collectedAt[treeId] ?: System.currentTimeMillis()
+        collected = collected - treeId
+        collectedAt = collectedAt - treeId
+        val ok = Supa.delete("/rest/v1/visited?tree_id=eq.${URLEncoder.encode(treeId, "UTF-8")}", s.accessToken)
+        if (!ok) {
+            collected = collected + treeId
+            collectedAt = collectedAt + (treeId to at)
+            return null
+        }
+        return at
+    }
+
+    /** Undo: the tick back on the day it was first made (Saved.restoreVisited). */
+    suspend fun recollect(treeId: String, at: Long): Boolean {
+        val s = account.fresh() ?: return false
+        collected = collected + treeId
+        collectedAt = collectedAt + (treeId to at)
+        val ok = Supa.upsert(
+            "/rest/v1/visited?on_conflict=user_id,tree_id",
+            s.accessToken,
+            JSONArray().put(JSONObject().put("user_id", s.userId).put("tree_id", treeId).put("visited_at", Collector.day(java.util.Date(at)))),
+        )
+        if (!ok) { collected = collected - treeId; collectedAt = collectedAt - treeId }
+        return ok
+    }
+
     /** -collected= and -saved=: the sweep's stand-ins, debug builds only, nothing sent. */
     fun seed(collectedIds: List<String>, savedIds: List<String>) {
         val now = System.currentTimeMillis()

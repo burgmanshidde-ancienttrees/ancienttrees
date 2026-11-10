@@ -164,6 +164,10 @@ class TreePageActions(
     val onSpecies: ((String) -> Unit)? = null,
     /** "Approximate location": the map to move the pin on (PlacePin.swift), else the report sheet. */
     val onPlacePin: (() -> Unit)? = null,
+    /** Remove from collected, at once, with Undo in the snackbar (TreeDetail.uncollectWithUndo). */
+    val onUncollect: (() -> Unit)? = null,
+    /** When this tree was collected (ms), for the sheet's "On 4 October 2026." */
+    val collectedAt: Long? = null,
 )
 
 /** The blue the pin's own ticket mark wears (TreeDetail.ticketBlue). */
@@ -239,8 +243,9 @@ fun TreeDetail(
     counts: VoteCounts,
     actions: TreePageActions,
     openPhotoAtStart: Boolean = false,
+    openCollectAtStart: Boolean = false,
 ) {
-    PlainText { TreeDetailInner(tree = tree, account = account, signedIn = signedIn, fix = fix, hearted = hearted, collected = collected, votes = votes, counts = counts, actions = actions, openPhotoAtStart = openPhotoAtStart) }
+    PlainText { TreeDetailInner(tree = tree, account = account, signedIn = signedIn, fix = fix, hearted = hearted, collected = collected, votes = votes, counts = counts, actions = actions, openPhotoAtStart = openPhotoAtStart, openCollectAtStart = openCollectAtStart) }
 }
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -257,6 +262,7 @@ private fun TreeDetailInner(
     counts: VoteCounts,
     actions: TreePageActions,
     openPhotoAtStart: Boolean,
+    openCollectAtStart: Boolean,
 ) {
     val brand = Brand.colors
     val context = LocalContext.current
@@ -264,7 +270,8 @@ private fun TreeDetailInner(
     var showingMap by remember(tree.id) { mutableStateOf(false) }
     var viewerAt by remember(tree.id) { mutableStateOf(if (openPhotoAtStart && tree.photo != null) 0 else -1) }
     var reportOpening by remember(tree.id) { mutableStateOf<String?>(null) }
-    var choosingCollect by remember(tree.id) { mutableStateOf(false) }
+    // `-collectsheet` opens it at once, for the sweep (TreeDetail.swift).
+    var choosingCollect by remember(tree.id) { mutableStateOf(openCollectAtStart) }
     val pager = rememberPagerState { tree.shots.size + 1 }
     val shotAt = pager.currentPage
     val kmAway = fix?.let { Geo.km(it.lat, it.lng, tree.lat, tree.lng) }
@@ -372,7 +379,9 @@ private fun TreeDetailInner(
         BrandSheet(
             icon = if (collected) Icons.Filled.Verified else Icons.Outlined.PhotoCamera,
             title = if (collected) stringResource(R.string.collected_title, tree.name) else stringResource(R.string.collect_title, tree.name),
-            message = if (collected) null else stringResource(R.string.collect_lead),
+            message = if (collected) actions.collectedAt?.let {
+                stringResource(R.string.collected_on, java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG).format(java.util.Date(it)))
+            } else stringResource(R.string.collect_lead),
             onDismiss = { choosingCollect = false },
             buttons = listOf(
                 SheetButton(stringResource(R.string.collect_camera), SheetKind.PRIMARY, Icons.Outlined.PhotoCamera) {
@@ -383,7 +392,12 @@ private fun TreeDetailInner(
                     choosingCollect = false
                     actions.onCollectFromLibrary()
                 },
-            ),
+            ) + (if (collected && actions.onUncollect != null) listOf(
+                SheetButton(stringResource(R.string.uncollect), SheetKind.DESTRUCTIVE_QUIET) {
+                    choosingCollect = false
+                    actions.onUncollect.invoke()
+                },
+            ) else emptyList()),
         )
     }
 }

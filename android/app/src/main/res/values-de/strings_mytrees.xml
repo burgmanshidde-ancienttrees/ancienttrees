@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">Optional. Ein Foto des Schilds hilft: Es nennt oft den Baum, die Art und sein Alter.</string>
     <string name="ot_add_photo">Foto hinzufügen</string>
     <string name="ot_share_failed">Das wurde nicht gesendet. Versuch den Link noch einmal, wenn du Empfang hast.</string>
+    <string name="ot_move_pin">Stecknadel verschieben</string>
+    <string name="ot_merge">Mit einem anderen Baum zusammenführen</string>
+    <string name="mg_title">Zusammenführen mit</string>
+    <string name="mg_search">Bäume nach Namen suchen</string>
+    <string name="mg_none">Keiner unserer Bäume heißt so.</string>
+    <string name="mg_confirm_title">Mit %1$s zusammenführen?</string>
+    <string name="mg_confirm_body">Deine Fotos wandern auf seine Seite, und diese Kopie verschwindet aus deinen Bäumen.</string>
+    <string name="mg_confirm">Bäume zusammenführen</string>
+    <string name="mg_done">Bäume zusammengeführt</string>
 </resources>

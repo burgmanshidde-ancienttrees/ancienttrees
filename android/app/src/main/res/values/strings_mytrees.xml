@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">Optional. A photo of the sign helps: it often names the tree, the species and its age.</string>
     <string name="ot_add_photo">Add photo</string>
     <string name="ot_share_failed">That did not send. Try the link again when you have signal.</string>
+    <string name="ot_move_pin">Move the pin</string>
+    <string name="ot_merge">Merge with another tree</string>
+    <string name="mg_title">Merge with</string>
+    <string name="mg_search">Search trees by name</string>
+    <string name="mg_none">None of our trees is called that.</string>
+    <string name="mg_confirm_title">Merge into %1$s?</string>
+    <string name="mg_confirm_body">Your photos move to its page, and this copy leaves your trees.</string>
+    <string name="mg_confirm">Merge trees</string>
+    <string name="mg_done">Trees merged</string>
 </resources>

@@ -47,4 +47,13 @@
     <string name="ot_more_photos_body">Facultatif. Une photo du panneau aide : il donne souvent le nom, l\'espèce et l\'âge.</string>
     <string name="ot_add_photo">Ajouter une photo</string>
     <string name="ot_share_failed">Ça n\'est pas parti. Réessaie le lien quand tu as du réseau.</string>
+    <string name="ot_move_pin">Déplacer l\'épingle</string>
+    <string name="ot_merge">Fusionner avec un autre arbre</string>
+    <string name="mg_title">Fusionner avec</string>
+    <string name="mg_search">Chercher des arbres par nom</string>
+    <string name="mg_none">Aucun de nos arbres ne s\'appelle ainsi.</string>
+    <string name="mg_confirm_title">Fusionner avec %1$s ?</string>
+    <string name="mg_confirm_body">Tes photos passent sur sa page, et cette copie quitte tes arbres.</string>
+    <string name="mg_confirm">Fusionner les arbres</string>
+    <string name="mg_done">Arbres fusionnés</string>
 </resources>

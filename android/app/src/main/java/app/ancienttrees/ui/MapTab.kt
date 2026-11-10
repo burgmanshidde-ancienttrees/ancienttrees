@@ -126,6 +126,8 @@ sealed class SearchHit {
     data class Country(val name: String) : SearchHit()
     data class Species(val name: String) : SearchHit()
     data class OneTree(val tree: Tree) : SearchHit()
+    /** A real town with none of our trees (EmptyPlace, 2026-10-25). */
+    data class Place(val name: String, val lat: Double, val lng: Double) : SearchHit()
 }
 
 private data class Listed(val tree: Tree, val km: Double)
@@ -173,6 +175,8 @@ fun MapTab(
     var region by remember { mutableStateOf<ViewBox?>(null) }
     var filters by remember { mutableStateOf(MapFilters()) }
     var focusPlace by remember { mutableStateOf<FocusPlace?>(null) }
+    /** The town a search flew to, for the empty card's title (MapTab.flownPlace). */
+    var flownPlace by remember { mutableStateOf<SearchHit.Place?>(null) }
     var moveTo by remember { mutableStateOf<MoveRequest?>(null) }
     var recentre by remember { mutableIntStateOf(0) }
     var searching by remember { mutableStateOf(launch.search != null) }
@@ -255,6 +259,8 @@ fun MapTab(
             .minByOrNull { it.second }?.first
     }
     val nothingInView = inReach == 0 && arrived == null && selected == null && !filters.isOn
+    // The town's name while the map still looks at the town a search flew to.
+    val placeInView = flownPlace?.let { p -> if (Geo.km(focus.lat, focus.lng, p.lat, p.lng) < 15) p.name else null }
 
     fun fly(lat: Double, lng: Double, metres: Double) {
         val dLat = metres / 2 / 111_320.0
@@ -272,7 +278,8 @@ fun MapTab(
             else -> null
         }
         // A PLACE RAISES THE LIST ONE STOP, NEVER LOWERS IT (Hidde, 2026-11-04).
-        if ((hit is SearchHit.City || hit is SearchHit.Country) && sheet.height == SheetHeight.PEEK) sheet.height = SheetHeight.CARD
+        if ((hit is SearchHit.City || hit is SearchHit.Country || hit is SearchHit.Place) && sheet.height == SheetHeight.PEEK) sheet.height = SheetHeight.CARD
+        flownPlace = hit as? SearchHit.Place
         selected = null
         val c = catalogue ?: return
         when (hit) {
@@ -315,6 +322,11 @@ fun MapTab(
             is SearchHit.OneTree -> {
                 fly(hit.tree.lat, hit.tree.lng, 1200.0)
                 selected = hit.tree
+            }
+            // A real town (MapTab.showPlace): filters off, flown to at town zoom.
+            is SearchHit.Place -> {
+                filters = MapFilters()
+                fly(hit.lat, hit.lng, EmptyPlace.SPAN_METRES)
             }
         }
     }
@@ -431,7 +443,7 @@ fun MapTab(
                         )
                     }
                     if (nothingInView) {
-                        EmptyPlaceCard(onAdd = onAddTree)
+                        EmptyPlaceCard(place = placeInView, onAdd = onAddTree)
                         catalogue?.let { c ->
                             c.trees.minByOrNull { Geo.km(focus.lat, focus.lng, it.lat, it.lng) }?.let { n ->
                                 Column {
@@ -863,7 +875,7 @@ private fun ArrivalCard(tree: Tree, collected: Boolean, onCollect: () -> Unit) {
 
 /** EmptyPlaceCard: no trees here yet, and the ask to add the first one. */
 @Composable
-private fun EmptyPlaceCard(onAdd: () -> Unit) {
+fun EmptyPlaceCard(place: String? = null, onAdd: () -> Unit) {
     val brand = Brand.colors
     Column(
         verticalArrangement = Arrangement.spacedBy(14.dp),
@@ -871,7 +883,7 @@ private fun EmptyPlaceCard(onAdd: () -> Unit) {
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Icon(Icons.Outlined.Park, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(24.dp))
-            Text("No trees mapped here yet", fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
+            Text(if (place != null) "No trees mapped in $place yet" else "No trees mapped here yet", fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = brand.ink)
             Text("Know an old tree here? Add the first one.", fontSize = 14.sp, color = brand.inkSoft)
         }
         Row(
@@ -898,6 +910,8 @@ fun PlainResultRow(
     icon: ImageVector,
     inset: Int = 16,
     onClick: () -> Unit,
+    /** Moss for a result; the grey of history for a recent search. */
+    iconTint: Color? = null,
     title: @Composable (() -> Unit)? = null,
     subLine: @Composable (() -> Unit)? = null,
 ) {
@@ -911,7 +925,7 @@ fun PlainResultRow(
             .clickable(onClick = onClick)
             .padding(horizontal = inset.dp),
     ) {
-        Icon(icon, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+        Icon(icon, null, tint = iconTint ?: brand.moss, modifier = Modifier.size(22.dp))
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
             if (title != null) title() else Text(name, fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.ink, maxLines = 1, overflow = TextOverflow.Ellipsis)
             if (subLine != null) subLine() else Text(sub, fontSize = 12.sp, color = brand.inkSoft, maxLines = 1, overflow = TextOverflow.Ellipsis)

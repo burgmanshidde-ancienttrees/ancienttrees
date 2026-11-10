@@ -300,7 +300,7 @@ fun DiscoverScreen(
                 searching = false
                 // A PLACE LANDS ON THE MAP, as the map's own search does (2026-11-03).
                 when (hit) {
-                    is SearchHit.City, is SearchHit.Country -> act.openPlace(hit)
+                    is SearchHit.City, is SearchHit.Country, is SearchHit.Place -> act.openPlace(hit)
                     is SearchHit.Species -> act.openSpecies(hit.name)
                     is SearchHit.OneTree -> act.openTree(hit.tree)
                 }
