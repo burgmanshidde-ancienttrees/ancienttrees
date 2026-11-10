@@ -60,7 +60,8 @@ import app.ancienttrees.ui.MapLaunch
 import app.ancienttrees.ui.MapTab
 import app.ancienttrees.ui.TabBar
 import app.ancienttrees.ui.TreeMarks
-import app.ancienttrees.ui.TreeScreen
+import app.ancienttrees.ui.TreeDetail
+import app.ancienttrees.ui.TreePageActions
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -93,14 +94,14 @@ class MainActivity : ComponentActivity() {
 /** Dam square: where the map opens with no fix, as on the iPhone. */
 private val DAM_SQUARE = Here(52.3731, 4.8922)
 
-private fun share(context: Context, t: Tree) {
+private fun share(context: Context, t: Tree, from: String = "map_card", message: String? = null) {
     if (t.url.isEmpty()) return
     val link = "https://ancienttrees.app" + t.url + (if ('?' in t.url) "&" else "?") +
-        "utm_source=share&utm_medium=app&utm_campaign=map_card"
+        "utm_source=share&utm_medium=app&utm_campaign=$from"
     val send = Intent(Intent.ACTION_SEND).apply {
         type = "text/plain"
         putExtra(Intent.EXTRA_SUBJECT, t.name)
-        putExtra(Intent.EXTRA_TEXT, link)
+        putExtra(Intent.EXTRA_TEXT, if (message != null) "$message $link" else link)
     }
     context.startActivity(Intent.createChooser(send, null))
 }
@@ -156,6 +157,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val scope = rememberCoroutineScope()
     val account = remember { Account(context.applicationContext) }
     val saves = remember { Saves(account) }
+    // The tree page's thumb and reports (WorthIt.swift): memory only.
+    val votes = remember { app.ancienttrees.account.MyVotes() }
+    val counts = remember { app.ancienttrees.account.VoteCounts() }
+    // A place, species or tree a tree page sends to the map.
+    var go by remember { mutableStateOf<Pair<Long, SearchHit>?>(null) }
     // What somebody was doing when they were asked to sign in, finished when
     // they land ("device" in data/cross-device.json: a pending intent; held in
     // memory only here).
@@ -305,8 +311,6 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // Tapping Discover while on Discover scrolls back up (navigator.scrollToTop).
     var discoverTop by remember { mutableIntStateOf(0) }
     var discoverSearching by remember { mutableStateOf(false) }
-    // A place picked on Discover lands on the map (PlaceLink, navigator.searchOnMap).
-    var mapPlace by remember { mutableStateOf<Pair<Long, SearchHit>?>(null) }
     BackHandler(enabled = tab == 1 && open == null) { tab = 0 }
     fun nearestTree() {
         val t = trees.minByOrNull { Geo.km(origin.lat, origin.lng, it.lat, it.lng) }
@@ -337,7 +341,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 onShare = { t -> share(context, t) },
                 onSearching = { searching = it },
                 raise = raise,
-                place = mapPlace,
+                go = go,
             )
         }
         val cat = catalogue
@@ -357,11 +361,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     openTree = { open = it },
                     openPlace = { hit ->
                         tab = 0
-                        mapPlace = System.nanoTime() to hit
+                        go = System.nanoTime() to hit
                     },
                     openSpecies = { name ->
                         tab = 0
-                        mapPlace = System.nanoTime() to SearchHit.Species(name)
+                        go = System.nanoTime() to SearchHit.Species(name)
                     },
                     openPerson = { id -> openProfileOnWeb(context, id) },
                     showMap = { tab = 0 },
@@ -376,17 +380,36 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             )
         }
         open?.let { tree ->
-            val near = here?.let { Geo.km(it.lat, it.lng, tree.lat, tree.lng) <= Collector.REACH_KM } ?: false
-            TreeScreen(
-                tree,
-                hearted = tree.id in saves.hearts,
-                onHeart = { heart(tree) },
-                onBack = { open = null },
-                canCollect = near,
-                collected = tree.id in saves.collected,
-                collecting = collecting?.id == tree.id,
-                onCollect = { collect(tree) },
-            )
+            CompositionLocalProvider(
+                LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+            ) {
+                TreeDetail(
+                    tree = tree,
+                    account = account,
+                    signedIn = signedIn,
+                    fix = if (located) here else null,
+                    hearted = tree.id in saves.hearts,
+                    collected = tree.id in saves.collected,
+                    votes = votes,
+                    counts = counts,
+                    openPhotoAtStart = launch.photo,
+                    actions = TreePageActions(
+                        onBack = { open = null },
+                        onHeart = { heart(tree) },
+                        onCollect = { collect(tree) },
+                        onShare = { share(context, tree, "tree", "${tree.name}, ${tree.city}.") },
+                        onGo = { hit ->
+                            open = null
+                            tab = 0
+                            go = System.nanoTime() to hit
+                        },
+                        onNeedsSignIn = { then ->
+                            pendingAfterSignIn = then
+                            asking = true
+                        },
+                    ),
+                )
+            }
         }
         if (open == null && !searching && !discoverSearching) {
             TabBar(

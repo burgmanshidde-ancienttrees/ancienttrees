@@ -155,8 +155,8 @@ fun MapTab(
     onShare: (Tree) -> Unit,
     onSearching: (Boolean) -> Unit,
     raise: Int,
-    /** A place or a species handed over from Discover, with a token so the same one twice still lands. */
-    place: Pair<Long, SearchHit>? = null,
+    /** A place, species or tree a tree page sends here, until their own pages are ported. */
+    go: Pair<Long, SearchHit>? = null,
 ) {
     val brand = Brand.colors
     val density = LocalDensity.current
@@ -313,7 +313,7 @@ fun MapTab(
         }
     }
 
-    LaunchedEffect(place) { place?.let { take(it.second) } }
+    LaunchedEffect(go) { go?.let { take(it.second) } }
 
     val stopCoverage = with(density) {
         when (sheet.height) {

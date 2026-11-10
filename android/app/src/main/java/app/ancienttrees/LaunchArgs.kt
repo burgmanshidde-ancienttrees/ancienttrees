@@ -31,6 +31,9 @@ data class LaunchArgs(val args: List<String>) {
         get() = if ("-search" in args) "" else value("-search")
     val signIn: Boolean get() = "-signin" in args
 
+    /** -photo: the opened tree's photograph full screen (TreeDetail.swift). */
+    val photo: Boolean get() = "-photo" in args
+
     /** A fixed position, as the iPhone's sweep stands in Athens without a real fix. */
     val at: Pair<Double, Double>?
         get() = value("-at")?.split(",")?.takeIf { it.size == 2 }?.let { p ->

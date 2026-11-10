@@ -60,8 +60,8 @@ import org.maplibre.geojson.Feature
 import org.maplibre.geojson.FeatureCollection
 import org.maplibre.geojson.Point
 
-private const val STYLE_LIGHT = "https://ancienttrees.app/assets/map-style.json"
-private const val STYLE_DARK = "https://ancienttrees.app/assets/map-style-dark.json"
+internal const val STYLE_LIGHT = "https://ancienttrees.app/assets/map-style.json"
+internal const val STYLE_DARK = "https://ancienttrees.app/assets/map-style-dark.json"
 private const val SOURCE = "at-trees"
 private const val LAYER_MINI = "at-mini"
 private const val LAYER_DOTS = "at-dots"

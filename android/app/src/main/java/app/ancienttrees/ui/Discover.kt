@@ -499,7 +499,7 @@ private fun LazyListScope.discoverContent(
     if (deck.tail.isNotEmpty()) {
         block("discover-tail") {
             ShelfHeader(
-                stringResource(if (located) R.string.discover_more_near else R.string.discover_more),
+                stringResource(if (located) R.string.discover_more_near else R.string.discover_more_trees),
                 seeAll = act.showMap,
             )
         }

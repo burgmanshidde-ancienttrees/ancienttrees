@@ -46,8 +46,22 @@ private fun fetch(url: String): Bitmap? = runCatching {
     }
 }.getOrNull()
 
+/** Already in memory: the card's copy a tapped card just drew, shown at once by the page. */
+fun cachedImage(url: String): Bitmap? = memory.get(url)
+
+/**
+ * [fit] fits the picture inside the box (the photo viewer) instead of filling it.
+ * Until it lands: [fallback] when given, else the tint, or nothing with [placeholder] off.
+ */
 @Composable
-fun RemoteImage(url: String, description: String?, modifier: Modifier = Modifier) {
+fun RemoteImage(
+    url: String,
+    description: String?,
+    modifier: Modifier = Modifier,
+    fit: Boolean = false,
+    placeholder: Boolean = true,
+    fallback: (@Composable () -> Unit)? = null,
+) {
     val bitmap by produceState<Bitmap?>(memory.get(url), url) {
         if (value == null) {
             value = withContext(Dispatchers.IO) { fetch(url) }?.also { memory.put(url, it) }
@@ -58,10 +72,12 @@ fun RemoteImage(url: String, description: String?, modifier: Modifier = Modifier
         Image(
             bitmap = loaded.asImageBitmap(),
             contentDescription = description,
-            contentScale = ContentScale.Crop,
+            contentScale = if (fit) ContentScale.Fit else ContentScale.Crop,
             modifier = modifier,
         )
-    } else {
+    } else if (fallback != null) {
+        Box(modifier) { fallback() }
+    } else if (placeholder) {
         Box(modifier.background(MaterialTheme.colorScheme.surfaceVariant))
     }
 }
