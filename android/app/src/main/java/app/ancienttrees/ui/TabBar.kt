@@ -160,7 +160,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
             modifier = Modifier
                 .size(58.dp)
                 .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.10f), spotColor = Color.Black.copy(alpha = 0.10f))
-                // Pressed dims the whole disc (Motion.kt).
+                // The ripple stays inside the disc (Airbnb's line, 2026-11-10).
                 .clip(CircleShape)
                 .clickable(role = Role.Button, onClick = collect)
                 .background(glass, CircleShape)

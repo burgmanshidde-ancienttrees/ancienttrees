@@ -429,7 +429,7 @@ private fun Hero(
                     .size(44.dp)
                     .clip(CircleShape)
                     .clickable(role = Role.Button, onClick = onFullMap)
-                    // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                    // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                     .background(brand.ground.copy(alpha = 0.92f), CircleShape)
                     .semantics { contentDescription = full },
                 contentAlignment = Alignment.Center,
@@ -589,7 +589,7 @@ private fun AddPhotoButton(onClick: () -> Unit) {
             .heightIn(min = 44.dp)
             .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.moss, CircleShape)
             .semantics { contentDescription = label }
             .padding(horizontal = 14.dp),
@@ -645,7 +645,7 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
                 .shadow(2.dp, CircleShape)
                 .clip(CircleShape)
                 .clickable(role = Role.Button, onClick = onBack)
-                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                 .background(glass, CircleShape)
                 .semantics { contentDescription = back }
                 .testTag("back-to-map"),
@@ -1380,7 +1380,7 @@ private fun SmallBordered(label: String, enabled: Boolean = true, onClick: () ->
             .heightIn(min = 28.dp)
             .clip(CircleShape)
             .clickable(enabled = enabled, role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.moss.copy(alpha = if (enabled) 0.12f else 0.06f), CircleShape)
             .padding(horizontal = 11.dp, vertical = 5.dp),
         contentAlignment = Alignment.Center,
@@ -1415,7 +1415,7 @@ private fun DiscoverChip(title: String, icon: ImageVector, onClick: () -> Unit) 
             .heightIn(min = 44.dp)
             .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.moss.copy(alpha = 0.10f), CircleShape)
             .padding(horizontal = 14.dp, vertical = 8.dp),
     ) {
@@ -1475,7 +1475,7 @@ internal fun BigButton(label: String, icon: ImageVector, modifier: Modifier = Mo
             .height(48.dp)
             .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.moss, CircleShape),
     ) {
         Icon(icon, null, tint = brand.onMoss, modifier = Modifier.size(21.dp)) // 16 semibold

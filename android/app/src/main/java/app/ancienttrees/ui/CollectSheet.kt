@@ -725,7 +725,7 @@ private fun PlaceStep(
                     .height(48.dp)
                     .clip(RoundedCornerShape(50))
                     .clickable(role = Role.Button, onClick = onConfirm)
-                    // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                    // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                     .background(brand.moss, RoundedCornerShape(50))
                     .testTag("collect-place-confirm"),
             ) {

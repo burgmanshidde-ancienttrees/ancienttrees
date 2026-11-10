@@ -674,7 +674,7 @@ private fun PlaceCircle(icon: ImageVector, label: String, onClick: () -> Unit) {
             .size(38.dp)
             .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.ink.copy(alpha = 0.08f), CircleShape)
             .semantics { contentDescription = label },
     ) {
@@ -790,7 +790,7 @@ private fun MapPill(onClick: () -> Unit) {
             .shadow(8.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.18f), spotColor = Color.Black.copy(alpha = 0.18f))
             .clip(RoundedCornerShape(50))
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
             .padding(horizontal = 18.dp, vertical = 11.dp),
     ) {
@@ -810,7 +810,7 @@ internal fun RecentreButton(onClick: () -> Unit, modifier: Modifier = Modifier) 
             .shadow(5.dp, RoundedCornerShape(10.dp), ambientColor = Color.Black.copy(alpha = 0.15f), spotColor = Color.Black.copy(alpha = 0.15f))
             .clip(RoundedCornerShape(10.dp))
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.ground.copy(alpha = 0.92f), RoundedCornerShape(10.dp))
             .semantics { contentDescription = "Back to my location" },
     ) {
@@ -830,7 +830,7 @@ private fun LocationOffChip(refused: Boolean, onClick: () -> Unit, modifier: Mod
             .shadow(6.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.12f), spotColor = Color.Black.copy(alpha = 0.12f))
             .clip(RoundedCornerShape(50))
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
             .padding(horizontal = 14.dp),
     ) {
@@ -859,7 +859,7 @@ private fun ArrivalCard(tree: Tree, collected: Boolean, onCollect: () -> Unit) {
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(50))
                 .clickable(role = Role.Button, onClick = onCollect)
-                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                 .background(if (collected) brand.inkSoft else brand.canopy, RoundedCornerShape(50))
                 .padding(vertical = 13.dp),
         ) {
@@ -891,7 +891,7 @@ fun EmptyPlaceCard(place: String? = null, onAdd: () -> Unit) {
                 .height(48.dp)
                 .clip(RoundedCornerShape(50))
                 .clickable(role = Role.Button, onClick = onAdd)
-                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                 .background(brand.surface, RoundedCornerShape(50)),
         ) {
             Icon(Sym.PhotoCameraFill, null, tint = brand.ink, modifier = Modifier.size(17.dp))

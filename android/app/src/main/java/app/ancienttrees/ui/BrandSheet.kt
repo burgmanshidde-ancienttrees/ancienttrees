@@ -79,7 +79,7 @@ fun SheetButtonView(b: SheetButton, modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxWidth()
             .height(if (quiet) 44.dp else 48.dp)
-            // Pressed dims the whole capsule, fill and label (SheetButtonStyle .opacity(0.8)).
+            // The ripple stays inside the capsule (Airbnb's line, 2026-11-10).
             .clip(RoundedCornerShape(50))
             .clickable(role = Role.Button, onClick = b.action)
             .background(bg, RoundedCornerShape(50)),

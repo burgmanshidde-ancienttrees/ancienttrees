@@ -161,7 +161,7 @@ fun PhotoViewer(photos: List<Photo>, startAt: Int, onClose: () -> Unit) {
                         .size(44.dp)
                         .clip(CircleShape)
                         .clickable(role = Role.Button, onClick = onClose)
-                        // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                        // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                         .background(Color.Black.copy(alpha = 0.45f), CircleShape)
                         .semantics { contentDescription = close },
                 ) {

@@ -348,7 +348,7 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
             .size(44.dp)
             .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
-            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.surface, CircleShape)
             .semantics { contentDescription = label },
         contentAlignment = Alignment.Center,
@@ -483,7 +483,7 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                     .size(44.dp)
                     .clip(CircleShape)
                     .clickable(role = Role.Button, onClick = actions.findPeople)
-                    // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                    // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                     .background(brand.surface, CircleShape)
                     .semantics { contentDescription = label },
                 contentAlignment = Alignment.Center,
@@ -749,7 +749,7 @@ private fun SignedOutLane(lane: TreesLane, signIn: () -> Unit) {
                 .height(48.dp)
                 .clip(CircleShape)
                 .clickable(role = Role.Button, onClick = signIn)
-                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
                 .background(brand.moss, CircleShape),
             contentAlignment = Alignment.Center,
         ) {
