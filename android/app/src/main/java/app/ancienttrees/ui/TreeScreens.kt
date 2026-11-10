@@ -55,7 +55,13 @@ import app.ancienttrees.feed.Precision
 import app.ancienttrees.feed.Tree
 
 @Composable
-fun TreeCard(tree: Tree, onOpen: () -> Unit, onClose: () -> Unit, modifier: Modifier = Modifier) {
+fun TreeCard(
+    tree: Tree,
+    distance: String?,
+    onOpen: () -> Unit,
+    onClose: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     Surface(
         shape = RoundedCornerShape(16.dp),
         shadowElevation = 8.dp,
@@ -83,7 +89,7 @@ fun TreeCard(tree: Tree, onOpen: () -> Unit, onClose: () -> Unit, modifier: Modi
                     overflow = TextOverflow.Ellipsis,
                 )
                 Text(
-                    tree.city,
+                    listOfNotNull(tree.city, distance).joinToString(" · "),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     maxLines = 1,
