@@ -2274,6 +2274,40 @@
       },
       "story": "When Vienna made this black poplar a natural monument in 2004, its crown measured about 36 metres across, very nearly as wide as the tree is tall.\n\nThe height was about 40 metres, on a trunk 5.7 metres round. The register entry, Naturdenkmal 790, put its age at no less than 100 years at the time of designation. That number was a floor, not a count of rings, so the honest statement is that it is well over a century old now and nobody has said by how much. Every figure here dates from 2004; the tree has had more than twenty years since to add to them.\n\nThose measurements matter more for this species than for most. Black poplars grow fast and live short lives by the standards of the oaks and limes elsewhere in Vienna, so a poplar that reached monument size in the Prater has already outlasted most of its kind. The Prater is a public recreation area, free and open at all hours, so there is no gate between you and it.\n\nOne honest warning. The most recent photographs we can find are three views from May 2014, and we have no newer sighting that confirms it still stands. If you walk out to it, tell us whether it is there; a photograph would settle the question for everyone after you.\n\nThe pin is approximate, taken from the city's register point rather than fixed at the trunk, so give yourself a little searching time on arrival.",
       "how_to_recognise": "You can recognise it by its size: a black poplar about 40 metres tall with a trunk 5.7 metres round and a crown some 36 metres wide. It stands in the Prater in Leopoldstadt, Naturdenkmal 790."
+    },
+    {
+      "id": "vie_062",
+      "name": "The Handelskai Black Poplar",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "not documented",
+      "girth_cm": 531,
+      "location": {
+        "address": "Handelskai 268, Leopoldstadt, 1020 Wien (Naturdenkmal 159)",
+        "latitude": 48.217423,
+        "longitude": 16.416549,
+        "neighbourhood": "Leopoldstadt (2nd district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3247701, Schwarzpappel, 2., Handelskai 268)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 42: Populus nigra, 531 cm, height class 16 to 20 m, planting year unknown, about 10 m from the register point)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt"
+      ],
+      "official_register": {
+        "name": "Naturdenkmale Wien (Stadt Wien, MA 22), ND 159, register_id 3247701",
+        "url": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/naturdenkmaeler/bezirk-02.html"
+      },
+      "access": "Free. A city-managed tree (it is in the city's own tree inventory, which covers public street and park trees) on Handelskai by the Danube; see it from the pavement.",
+      "transport": "",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Vienna made this black poplar a natural monument in 1941, in the middle of the Second World War, and gave a single reason, its beautiful crown. More than eighty years later it still stands on Handelskai, the road along the Danube, as Naturdenkmal 159.\n\nThe city's tree inventory supplies the number the register leaves out. It records a black poplar 5.31 metres round about ten metres from the register's point at Handelskai 268, in the height band of 16 to 20 metres. That is a heavy trunk for the species, though not the heaviest on this page. The Prater's protected black poplar, about 1.8 kilometres to the southeast, is 5.7 metres round.\n\nWhat nobody records is its age. The inventory leaves the planting year blank, and the 1941 designation tells us only that the tree was already worth protecting then. Black poplars grow fast and do not live long, so one that was a monument before 1945 has done well to keep going.\n\nThe newest photographs we know of were taken in March 2014. The inventory, which is current city data, is our evidence that it still stands, and our pin is the register's point rather than a fix at the trunk. If you walk along Handelskai, a photograph would help, and if you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, about 5.3 metres round, a black poplar by Handelskai 268. It stands about ten metres from our pin, which is the register's point.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "vie_001"
