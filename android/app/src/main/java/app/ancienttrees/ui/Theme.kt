@@ -8,6 +8,10 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import app.ancienttrees.R
 
 private val Light = lightColorScheme(
     primary = Color(0xFF4A6B2A),
@@ -29,6 +33,13 @@ private val Dark = darkColorScheme(
     onSurface = Color(0xFFECEFE4),
     onSurfaceVariant = Color(0xFFA7AE9E),
     surfaceVariant = Color(0xFF26301E),
+)
+
+/** The display face, Gabarito, as on the iPhone and the website (OFL, android/FONT-LICENSE-OFL.txt). */
+val Brand = FontFamily(
+    Font(R.font.gabarito_regular, FontWeight.Normal),
+    Font(R.font.gabarito_medium, FontWeight.Medium),
+    Font(R.font.gabarito_bold, FontWeight.Bold),
 )
 
 @Composable
