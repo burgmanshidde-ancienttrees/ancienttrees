@@ -78,6 +78,8 @@ data class Tree(
     /** The months of its one real peak (best_time), and which chip it wears then. */
     val bestMonths: List<Int> = emptyList(),
     val seasonKey: String? = null,
+    /** Round the trunk at chest height, from a register or a plaque (girth_cm). */
+    val girthCm: Int? = null,
 ) {
     /** What to show: the set when the feed sent one, otherwise the lead alone. */
     val shots: List<Photo> get() = photos.ifEmpty { listOfNotNull(photo) }

@@ -50,6 +50,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.res.stringResource
+import app.ancienttrees.R
 import androidx.core.graphics.PathParser
 import app.ancienttrees.feed.Tree
 import app.ancienttrees.map.SpeciesIcons
@@ -149,7 +151,7 @@ fun SaveMark(tree: Tree, onPhoto: Boolean) {
     val marks = LocalTreeMarks.current
     val on = tree.id in marks.saved
     val brand = Brand.colors
-    val label = if (on) "Saved ${tree.name}. Tap to remove" else "Save ${tree.name}"
+    val label = if (on) stringResource(R.string.saved_tap_remove, tree.name) else stringResource(R.string.save_tree, tree.name)
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
@@ -186,7 +188,7 @@ fun SeenTag() {
             .padding(horizontal = 10.dp, vertical = 5.dp),
     ) {
         Icon(Icons.Filled.CheckCircle, null, tint = brand.canopy, modifier = Modifier.size(13.dp))
-        Text("Collected", fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = brand.canopy)
+        Text(stringResource(R.string.seen_it_done), fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = brand.canopy)
     }
 }
 
@@ -216,7 +218,7 @@ fun TreeRow(tree: Tree, onOpen: () -> Unit) {
                     Modifier.align(Alignment.BottomEnd).offset(4.dp, 4.dp).size(18.dp).background(Color.White, CircleShape),
                     contentAlignment = Alignment.Center,
                 ) {
-                    Icon(Icons.Filled.CheckCircle, "Collected", tint = brand.canopy, modifier = Modifier.size(18.dp))
+                    Icon(Icons.Filled.CheckCircle, stringResource(R.string.seen_it_done), tint = brand.canopy, modifier = Modifier.size(18.dp))
                 }
             }
         }
@@ -272,37 +274,70 @@ fun HighlightCard(tree: Tree, onOpen: () -> Unit) {
 }
 
 /**
- * A tapped pin's card (TreePlaceBody: TreeCard with no text): the photograph
- * 190 high, rounded 14, a hairline round it, the bookmark and the Collected tag.
+ * TreeCard.swift, built to the AllTrails shape: the photograph 190 high (or the
+ * species drawn on the leaf tile with "No photograph yet"), the bookmark top
+ * right, the Collected tag top left, and under it the name and one meta line.
+ * Rounded 14 with its own hairline, and the tap area is the card and nothing more.
+ * [showText] off: the tapped pin's card in the map sheet, whose header already
+ * says the name (TreePlaceSheet). [uniformTitle]: two lines kept for the name
+ * in a shelf, so a row of cards ends level.
  */
 @Composable
-fun TreePlaceBody(tree: Tree, onOpen: () -> Unit) {
+fun TreeCard(
+    tree: Tree,
+    onOpen: () -> Unit,
+    modifier: Modifier = Modifier,
+    showHeart: Boolean = true,
+    showText: Boolean = true,
+    uniformTitle: Boolean = false,
+) {
     val brand = Brand.colors
     val marks = LocalTreeMarks.current
     val shape = RoundedCornerShape(14.dp)
-    Box(
-        Modifier
-            .padding(horizontal = 16.dp)
+    Column(
+        modifier
             .fillMaxWidth()
-            .height(190.dp)
             .clip(shape)
-            .background(leafTile())
+            .background(brand.surface)
             .border(1.dp, brand.hairline, shape)
             .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen),
     ) {
-        val photo = tree.photo
-        if (photo != null) {
-            RemoteImage(photo.card, null, Modifier.fillMaxSize())
-        } else {
-            Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
-                SpeciesMark(tree.species, Color.White.copy(alpha = 0.9f), Modifier.size(66.dp))
-                Spacer(Modifier.height(8.dp))
-                Text(tree.commonName, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = Color.White)
-                Text("No photograph yet", fontSize = 11.sp, color = Color.White.copy(alpha = 0.75f))
+        Box(Modifier.fillMaxWidth().height(190.dp).background(leafTile())) {
+            val photo = tree.photo
+            if (photo != null) {
+                RemoteImage(photo.card, null, Modifier.fillMaxSize(), placeholder = false)
+            } else {
+                Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
+                    SpeciesMark(tree.species, Color.White.copy(alpha = 0.9f), Modifier.size(66.dp))
+                    Spacer(Modifier.height(8.dp))
+                    Text(tree.commonName, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = Color.White)
+                    Text(stringResource(R.string.no_photo_yet), fontSize = 11.sp, color = Color.White.copy(alpha = 0.75f))
+                }
+            }
+            if (showHeart) Box(Modifier.align(Alignment.TopEnd).padding(6.dp)) { SaveMark(tree, onPhoto = true) }
+            if (tree.id in marks.collected) Box(Modifier.align(Alignment.TopStart).padding(10.dp)) { SeenTag() }
+        }
+        if (showText) {
+            Column(Modifier.padding(horizontal = 12.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                Text(
+                    tree.name,
+                    fontFamily = BrandFace,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 17.sp,
+                    lineHeight = 21.sp,
+                    color = brand.ink,
+                    maxLines = if (uniformTitle) 2 else 3,
+                    minLines = if (uniformTitle) 2 else 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
+                TreeMetaLine(tree, size = 12)
             }
         }
-        Box(Modifier.align(Alignment.TopEnd).padding(6.dp)) { SaveMark(tree, onPhoto = true) }
-        if (tree.id in marks.collected) Box(Modifier.align(Alignment.TopStart).padding(10.dp)) { SeenTag() }
     }
 }
 
+/** A tapped pin's card (TreePlaceBody): the TreeCard with no text, on the sheet's 16 point edges. */
+@Composable
+fun TreePlaceBody(tree: Tree, onOpen: () -> Unit) {
+    TreeCard(tree, onOpen, Modifier.padding(horizontal = 16.dp), showText = false)
+}

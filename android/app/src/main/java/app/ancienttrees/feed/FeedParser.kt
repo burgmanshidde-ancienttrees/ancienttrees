@@ -215,6 +215,7 @@ object FeedParser {
             seasonal = o.flag("seasonal") ?: false,
             bestMonths = o.optJSONObject("best_time")?.ints("months").orEmpty(),
             seasonKey = o.text("season_key"),
+            girthCm = o.number("girth_cm")?.toInt()?.takeIf { it > 0 },
         )
     }
 

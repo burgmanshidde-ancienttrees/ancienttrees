@@ -14,7 +14,7 @@ import java.io.DataOutputStream
 import java.io.File
 
 object Snapshot {
-    private const val MAGIC = 0x41545331 // "ATS1"; bump when Tree changes shape.
+    private const val MAGIC = 0x41545332 // "ATS2"; bump when Tree changes shape.
 
     fun write(file: File, key: String, version: String, trees: List<Tree>) {
         val tmp = File(file.path + ".tmp")
@@ -117,6 +117,7 @@ object Snapshot {
         writeInt(t.bestMonths.size)
         for (m in t.bestMonths) writeInt(m)
         opt(t.seasonKey)
+        optInt(t.girthCm)
     }
 
     private fun DataInputStream.tree(): Tree {
@@ -156,7 +157,7 @@ object Snapshot {
             neighbourhood = neighbourhood, access = access, paidEntry = paid, transport = transport,
             story = story, storyLatin = latin, howToRecognise = recognise, url = url,
             precision = precision, photo = photo, saves = saves, mini = mini, photos = photos,
-            seasonal = seasonal, bestMonths = months, seasonKey = opt(),
+            seasonal = seasonal, bestMonths = months, seasonKey = opt(), girthCm = optInt(),
         )
     }
 }

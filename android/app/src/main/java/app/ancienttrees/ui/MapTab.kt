@@ -155,6 +155,8 @@ fun MapTab(
     onShare: (Tree) -> Unit,
     onSearching: (Boolean) -> Unit,
     raise: Int,
+    /** A place, species or tree a tree page sends here, until their own pages are ported. */
+    go: Pair<Long, SearchHit>? = null,
 ) {
     val brand = Brand.colors
     val density = LocalDensity.current
@@ -311,6 +313,8 @@ fun MapTab(
             }
         }
     }
+
+    LaunchedEffect(go) { go?.let { take(it.second) } }
 
     val stopCoverage = with(density) {
         when (sheet.height) {
