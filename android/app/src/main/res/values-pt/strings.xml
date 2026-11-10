@@ -45,4 +45,11 @@
     <string name="problem_link">Esse link já foi usado ou expirou. Peça um novo.</string>
     <string name="problem_google">O início de sessão com o Google não funcionou. Use o seu email por agora.</string>
     <!-- /sign-in -->
+    <!-- collect -->
+    <string name="seen_it">Colecionar esta árvore</string>
+    <string name="seen_it_done">Colecionada</string>
+    <string name="collected_title">Colecionaste %1$s</string>
+    <string name="collect_lead">Tira uma fotografia para a juntar às tuas árvores.</string>
+    <string name="collect_camera">Tirar uma fotografia</string>
+    <!-- /collect -->
 </resources>

@@ -26,6 +26,11 @@ class Saves(private val account: Account) {
             .mapNotNull { it.optString("tree_id").ifEmpty { null } }.toSet()
     }
 
+    /** A tree just collected; the server already holds the row. */
+    fun noteCollected(treeId: String) {
+        collected = collected + treeId
+    }
+
     /** Signed out: what this phone showed goes with the account. */
     fun forget() {
         hearts = emptySet()

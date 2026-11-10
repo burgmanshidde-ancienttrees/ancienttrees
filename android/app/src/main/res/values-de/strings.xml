@@ -45,4 +45,11 @@
     <string name="problem_link">Dieser Anmeldelink wurde schon benutzt oder ist abgelaufen. Fordere einen neuen an.</string>
     <string name="problem_google">Die Anmeldung mit Google hat nicht geklappt. Nutze vorerst deine E-Mail.</string>
     <!-- /sign-in -->
+    <!-- collect -->
+    <string name="seen_it">Diesen Baum sammeln</string>
+    <string name="seen_it_done">Gesammelt</string>
+    <string name="collected_title">Du hast %1$s gesammelt</string>
+    <string name="collect_lead">Mach ein Foto, um ihn zu deinen Bäumen hinzuzufügen.</string>
+    <string name="collect_camera">Foto aufnehmen</string>
+    <!-- /collect -->
 </resources>

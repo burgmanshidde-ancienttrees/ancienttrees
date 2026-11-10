@@ -45,4 +45,11 @@
     <string name="problem_link">Die inloglink is al gebruikt of verlopen. Vraag een nieuwe aan.</string>
     <string name="problem_google">Inloggen met Google lukte niet. Gebruik voorlopig je e-mail.</string>
     <!-- /sign-in -->
+    <!-- collect -->
+    <string name="seen_it">Deze boom verzamelen</string>
+    <string name="seen_it_done">Verzameld</string>
+    <string name="collected_title">Je hebt %1$s verzameld</string>
+    <string name="collect_lead">Maak een foto om hem aan je bomen toe te voegen.</string>
+    <string name="collect_camera">Maak een foto</string>
+    <!-- /collect -->
 </resources>
