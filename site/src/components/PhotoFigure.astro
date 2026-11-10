@@ -39,7 +39,8 @@
  * wired by hand is the one that silently missed the Spanish city page. Every
  * string comes from UIStrings so the seven translated page sets get this too.
  */
-import { imgSrcset, photoDims, creditRequired, creditText, creditLinkParts, heroFrame } from "../lib/images";
+import { imgSrcset, photoDims, creditRequired, creditText, heroFrame } from "../lib/images";
+import CreditLine from "./CreditLine.astro";
 import { ui } from "../lib/i18n";
 
 type Shot = { url: string; license?: string | null; attribution?: string | null; attribution_url?: string | null };
@@ -81,12 +82,10 @@ const shots = set.map((p, i) => {
   return {
     photo: p,
     dims: photoDims(p),
+    // Printed by CreditLine: the name links to the source (attribution_url,
+    // Ingar Sorensen 2026-10-02, else the Commons/iNaturalist/Geograph page)
+    // and the licence label to its deed (compliance audit, 2026-11-10).
     credit: raw ? t.photoCredit(raw) : null,
-    // The photographer's name as a link, the Unsplash convention, when the
-    // record carries attribution_url (Ingar Sorensen, 2026-10-02: "a link to
-    // my website instead of just my name"). The credit text is split around
-    // the printed name so every language's "Photo:" prefix survives.
-    link: raw && p.attribution_url ? creditLinkParts(t.photoCredit(raw), p.attribution, p.license) : null,
     label: t.photoNumber(i + 1, set.length),
   };
 });
@@ -139,8 +138,7 @@ const swipe = variant === "hero" && (many || withAdd);
     <figcaption class={hasCaptionEnd ? "pc-row" : undefined}>
       {(swipe ? shots : shots.slice(0, 1)).map((s, i) => (
         <span class="pc-credit" data-i={i} hidden={i !== 0}>
-          {s.credit && s.link && <Fragment>{s.link.before}<a href={s.photo.attribution_url} rel="noopener">{s.link.name}</a>{s.link.after}</Fragment>}
-          {s.credit && !s.link && <Fragment>{s.credit}</Fragment>}
+          {s.credit && <CreditLine line={s.credit} photo={s.photo} />}
           {!s.credit && <Fragment set:html="&nbsp;" />}
         </span>
       ))}

@@ -19,7 +19,10 @@ folder exists), and three rows:
                 last good deploy is older than 12 hours while newer commits
                 wait; iOS: "iOS app", ios.yml), the weekly code review
                 (REVIEW.md "## YYYY-MM-DD code", due every 7 days) and the
-                daily fresh-eyes review (REVIEW.md "## YYYY-MM-DD", daily).
+                daily fresh-eyes review (REVIEW.md "## YYYY-MM-DD", daily),
+                and compliance (compliance_cell: the weekly review in
+                BRIEF_COMPLIANCE.md, scripts/privacycheck.py, and open rows
+                in data/compliance.json; since 2026-11-10).
                 Web also: page speed of the ten most-seen pages
                 (scripts/page_speed.py, data/page-speed.json, weekly) and
                 open Dependabot security alerts on the site's libraries.
@@ -179,8 +182,64 @@ def _review_days(text):
             d = datetime.date.fromisoformat(m.group(1))
         except ValueError:
             continue
-        (code if m.group(2).strip().startswith("code") else fresh).append(d)
+        rest = m.group(2).strip()
+        if rest.startswith("compliance"):
+            continue  # compliance_cell reads those
+        (code if rest.startswith("code") else fresh).append(d)
     return max(fresh, default=None), max(code, default=None)
+
+
+COMPLIANCE_DAYS = 7    # BRIEF_COMPLIANCE.md, due every seven days
+
+
+def compliance_cell(today):
+    """Is what we do still legal, and does what we say still match it?
+
+    Hidde, 2026-11-10, after asking for a lawyer's audit himself: "hoe zorgen
+    we dat er om de zoveel tijd een compliancy check is want ik vraag dit nu
+    random", then "een idee om de wekelijkse compliance check ook onderdeel te
+    maken van het groene stoplicht over de error per platform?". So it rides
+    in the Next version row of Web and iOS, like the code review. Three parts:
+    the newest "## YYYY-MM-DD compliance" heading in REVIEW.md (due every 7
+    days, review.yml runs BRIEF_COMPLIANCE.md); scripts/privacycheck.py (red:
+    the privacy page misses a table, a service or a GDPR must); and open rows
+    in data/compliance.json (orange while one waits for Hidde's word or a fix,
+    red when a fix is open past 14 days)."""
+    try:
+        text = open(os.path.join(ROOT, "REVIEW.md"), encoding="utf-8").read()
+    except OSError:
+        text = ""
+    days = []
+    for m in re.finditer(r"^## (\d{4}-\d{2}-\d{2}) compliance", text, flags=re.M):
+        try:
+            days.append(datetime.date.fromisoformat(m.group(1)))
+        except ValueError:
+            pass
+    cells = [_age_cell(max(days, default=None), today, COMPLIANCE_DAYS, "compliance review")]
+    try:
+        import privacycheck
+        cells.append(privacycheck.light())
+    except Exception as e:
+        cells.append(("grey", "privacy check unreadable (%s)" % str(e)[:50]))
+    try:
+        with open(os.path.join(ROOT, "data", "compliance.json"), encoding="utf-8") as f:
+            rows = [r for r in (json.load(f).get("findings") or []) if r.get("status") == "open"]
+    except (OSError, ValueError):
+        rows = []
+    his = [r for r in rows if r.get("owner") == "hidde"]
+    ours = [r for r in rows if r.get("owner") != "hidde"]
+    if his:
+        cells.append(("orange", "%d compliance point(s) wait for Hidde (data/compliance.json)" % len(his)))
+    if ours:
+        ages = []
+        for r in ours:
+            try:
+                ages.append((today - datetime.date.fromisoformat(r.get("first_seen", ""))).days)
+            except ValueError:
+                ages.append(0)
+        colour = "red" if max(ages) > BUG_RED_DAYS else "orange"
+        cells.append((colour, "%d compliance fix(es) open" % len(ours)))
+    return combine(cells)
 
 
 def _age_cell(last, today, max_days, label):
@@ -424,17 +483,18 @@ def assess(now=None):
     today = now.date()
     del UNREAD[:]
     fresh, code = review_cells(today)
+    legal = compliance_cell(today)
     q = {}
     web_bugs = bug_cell("WEB", today)
     q["web"] = {
         "next": combine([ci_cell("deploy.yml", "deploy", now, deploy=True), code, fresh,
-                         speed_cell(), security_cell(now)]),
+                         speed_cell(), security_cell(now), legal]),
         "live": combine([web_live(), uptime_cell(now), livecheck_cell(now)]),
         "bugs": web_bugs[:2],
     }
     ios_bugs = bug_cell("APP", today)
     q["ios"] = {
-        "next": combine([ci_cell("ios.yml", "iOS build", now), code, fresh]),
+        "next": combine([ci_cell("ios.yml", "iOS build", now), code, fresh, legal]),
         "live": ios_live(),
         "bugs": ios_bugs[:2],
     }

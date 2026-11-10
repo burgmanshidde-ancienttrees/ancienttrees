@@ -830,6 +830,8 @@ def check_the_quality_line_stays_in_the_digest():
         (".github/workflows/page-speed.yml", "page_speed.py --if-due", "the weekly page speed measure"),
         (".github/dependabot.yml", "package-ecosystem: \"npm\"", "security updates for the site's libraries"),
         (".github/workflows/review.yml", "-ge 7 ]", "the code review due after seven days, not on a weekday"),
+        ("scripts/quality.py", "compliance_cell(today)", "the weekly compliance review and the privacy page check"),
+        (".github/workflows/review.yml", "BRIEF_COMPLIANCE.md", "the weekly compliance review"),
     ]
     out = []
     for rel, needle, what in need:
@@ -837,6 +839,23 @@ def check_the_quality_line_stays_in_the_digest():
             out.append("%s no longer carries %s (`%s`): the digest's quality line "
                        "(Hidde, 2026-11-04)." % (rel, what, needle))
     return out
+
+
+def check_the_privacy_page_names_what_we_store():
+    """Every table in supabase/, every service that handles reader data and
+    every part GDPR article 13 asks for is named on the privacy page.
+
+    Hidde, 2026-11-10, after a compliance audit found the page six weeks
+    behind the product: "hoe dichten we dit gat". The rules and the map live
+    in scripts/privacycheck.py and data/privacy-map.json; a new table fails
+    here until the privacy page says what it stores. Removing this check
+    needs Hidde."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        import privacycheck
+    except Exception as e:
+        return ["scripts/privacycheck.py cannot be imported (%s)" % e]
+    return ["%s (compliance audit, 2026-11-10)" % p for p in privacycheck.problems()]
 
 
 def check_an_escaped_bug_has_a_test():
@@ -3714,6 +3733,7 @@ def main():
         check_notes_are_read_before_they_are_marked_read,
         check_ambassador_requests_reach_hidde,
         check_the_quality_line_stays_in_the_digest,
+        check_the_privacy_page_names_what_we_store,
         check_every_reader_photo_reaches_hidde,
         check_everything_sent_reaches_hidde,
         check_every_site_route_is_claimed_or_excluded,
@@ -3919,6 +3939,7 @@ def main():
     failures += check_notes_are_read_before_they_are_marked_read()
     failures += check_ambassador_requests_reach_hidde()
     failures += check_the_quality_line_stays_in_the_digest()
+    failures += check_the_privacy_page_names_what_we_store()
     failures += check_an_escaped_bug_has_a_test()
     failures += check_every_reader_photo_reaches_hidde()
     failures += check_everything_sent_reaches_hidde()
