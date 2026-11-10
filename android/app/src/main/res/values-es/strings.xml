@@ -52,4 +52,14 @@
     <string name="collect_lead">Haz una fotografía para añadirlo a tus árboles.</string>
     <string name="collect_camera">Hacer una fotografía</string>
     <!-- /collect -->
+    <!-- seasons -->
+    <string name="seasons_heading">Estaciones</string>
+    <string name="seasons_tally">%1$d de 4</string>
+    <string name="season_now">Ahora</string>
+    <string name="seasons_all">Fotografiado en las cuatro estaciones</string>
+    <string name="season_spring">Primavera</string>
+    <string name="season_summer">Verano</string>
+    <string name="season_autumn">Otoño</string>
+    <string name="season_winter">Invierno</string>
+    <!-- /seasons -->
 </resources>

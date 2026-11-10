@@ -38,6 +38,11 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import app.ancienttrees.feed.Seasons
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -141,7 +146,9 @@ fun TreeScreen(
     val context = LocalContext.current
     Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            val photo = tree.photo
+            // The lead, or the photograph a season tile chose.
+            var shown by remember(tree.id) { mutableIntStateOf(0) }
+            val photo = tree.shots.getOrNull(shown) ?: tree.photo
             if (photo != null) {
                 RemoteImage(
                     photo.full,
@@ -185,6 +192,8 @@ fun TreeScreen(
                     )
                 }
 
+                val month = remember { java.util.Calendar.getInstance().get(java.util.Calendar.MONTH) + 1 }
+
                 // The one warning this product must never soften.
                 if (tree.precision == Precision.APPROXIMATE) {
                     Text(
@@ -222,6 +231,13 @@ fun TreeScreen(
                         }
                     }
                 }
+
+                SeasonsRow(
+                    tree = tree,
+                    month = month,
+                    onShow = { shown = it },
+                    onAsk = if (canCollect && !collected) onCollect else null,
+                )
 
                 Text(
                     storyText(tree),
@@ -284,6 +300,81 @@ fun TreeScreen(
                 contentDescription = stringResource(R.string.want_to_go),
                 tint = if (hearted) Color(0xFFE0454F) else Color.White,
             )
+        }
+    }
+}
+
+@Composable
+private fun seasonName(key: String): String = stringResource(
+    when (key) {
+        "spring" -> R.string.season_spring
+        "summer" -> R.string.season_summer
+        "autumn" -> R.string.season_autumn
+        else -> R.string.season_winter
+    },
+)
+
+/**
+ * Four tiles, one per season: a filled one shows that photograph in the hero, the
+ * empty tile of the season it is now asks for one when the person can collect
+ * here ([onAsk]); other empty tiles are not buttons.
+ */
+@Composable
+private fun SeasonsRow(tree: Tree, month: Int, onShow: (Int) -> Unit, onAsk: (() -> Unit)?) {
+    val tiles = Seasons.tiles(tree)
+    if (tiles.isEmpty()) return
+    val now = Seasons.now(month, tree.lat)
+    val filled = tiles.count { it.first != null }
+    Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        Row(verticalAlignment = Alignment.Bottom) {
+            Text(stringResource(R.string.seasons_heading), fontFamily = Brand, fontWeight = FontWeight.Bold,
+                fontSize = 18.sp, modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.seasons_tally, filled), fontSize = 14.sp,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            for (tile in tiles) {
+                val shot = tile.first?.let { tree.shots[it] }
+                val ask = if (shot == null && tile.key == now) onAsk else null
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(6.dp),
+                    modifier = Modifier
+                        .weight(1f)
+                        .then(
+                            when {
+                                shot != null -> Modifier.clickable { onShow(tile.first!!) }
+                                ask != null -> Modifier.clickable { ask() }
+                                else -> Modifier
+                            },
+                        ),
+                ) {
+                    val shape = RoundedCornerShape(12.dp)
+                    Box(
+                        Modifier
+                            .fillMaxWidth()
+                            .aspectRatio(1f)
+                            .clip(shape)
+                            .background(
+                                if (shot == null && tile.key == now) MaterialTheme.colorScheme.surfaceVariant
+                                else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.06f),
+                            ),
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        if (shot != null) {
+                            RemoteImage(shot.card, seasonName(tile.key), Modifier.fillMaxSize())
+                        } else if (tile.key == now) {
+                            Text(stringResource(R.string.season_now), fontWeight = FontWeight.Bold, fontSize = 12.sp,
+                                color = MaterialTheme.colorScheme.primary)
+                        }
+                    }
+                    Text(seasonName(tile.key), fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
+                }
+            }
+        }
+        if (filled == 4) {
+            Text("\u2713 " + stringResource(R.string.seasons_all), fontWeight = FontWeight.SemiBold, fontSize = 14.sp,
+                color = MaterialTheme.colorScheme.primary)
         }
     }
 }

@@ -106,6 +106,7 @@ object FeedParser {
             creditLine = o.text("credit_line"),
             creditUrl = o.text("credit_url"),
             frame = o.number("frame"),
+            season = o.text("season"),
         )
     }
 
@@ -145,6 +146,12 @@ object FeedParser {
             photo = photo(o.optJSONObject("photo")),
             saves = o.number("saves")?.toInt() ?: 0,
             mini = o.flag("mini") ?: false,
+            photos = o.optJSONArray("photos")?.let { a ->
+                (0 until a.length()).mapNotNull { i -> photo(a.optJSONObject(i)) }
+            }.orEmpty(),
+            seasonal = o.flag("seasonal") ?: false,
+            bestMonths = o.optJSONObject("best_time")?.ints("months").orEmpty(),
+            seasonKey = o.text("season_key"),
         )
     }
 
