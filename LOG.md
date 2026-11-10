@@ -11,6 +11,16 @@
 
 <!-- archive-index -->
 
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-11](archive/LOG-2026-11.md)
+- [2026-10](archive/LOG-2026-10.md)
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
 ## 2026-11-10 session: Android search, tree page and draft at parity with the iPhone (parity batch 10)
 
 - **Product (Android, not in any store):** search shows your recent searches when signed in (read from and written to the account's `recent_searches`, the same rows the iPhone and the website use; a cross per row and Clear all), and a town we hold no trees in now gets the grey card, the towns and the nearest tree we hold (Bern: card, Bern in Switzerland, the Linden of Morat 27 km). The tree page's collect sheet has Remove from collected, done at once with Undo that puts the tick back on its first day, and the collected date line. A tree being added has Move the pin and Merge with another tree in its menu; MergeChooser is ported from the Swift.
@@ -101,7 +111,6 @@ Rungs 1 to 3 clear (no reader photos or notes, health.py green). Rung 5: the For
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
 ## 2026-11-10 session: Android finishing pass, 33 of 39 screens at parity
 
 - **New in the app:** the snackbar (Added to Want to visit with View, Removed with Undo, You are signed in; SaveHeart.swift); your own trees on the map in your own photograph and first on the Collected shelf (TreeMap.setMine, MineTile); the Plus row in Settings and pull to refresh on Find people; TreeCard on the collection page and the oldest-trees list, the ambassador sheet on BrandSheet and hidden for your own places; on collect, the locate arrow on the place map, your own trees within 30 m at the top of the list, and on the draft the ⋯ menu, the add-photo tile, the city link and Share after Save.
