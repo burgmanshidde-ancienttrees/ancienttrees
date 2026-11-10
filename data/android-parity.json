@@ -44,6 +44,18 @@
     {
       "what": "Menus",
       "why": "The report menu on a tree page is the system's own pop-up menu on both phones: SwiftUI's Menu on the iPhone, Material's dropdown menu on Android."
+    },
+    {
+      "what": "Sheets",
+      "why": "Android's bottom sheet runs the full width of the screen with its own drag handle; the iPhone's sheet on iOS 26 floats with a margin. Content, sizes and order are the same."
+    },
+    {
+      "what": "Library photographs",
+      "why": "Android's photo picker removes a photograph's location before the app sees it, so a photograph chosen from the library always asks where the tree stands (the iPhone reads it off the photograph). The camera path is the same on both."
+    },
+    {
+      "what": "Sending a collect",
+      "why": "The iPhone keeps a copy on the phone and sends it in the background; Android keeps nothing on the phone (hard rule 11), so it sends at once and says so when it did not arrive."
     }
   ],
   "map": {
@@ -85,11 +97,11 @@
     "status": "in-progress",
     "differences": [
       "Your own tree (a tree only you have: its menu to change name, species, age, girth, move the pin, merge, remove, and Share this tree) is not ported: it belongs to My trees (session 4).",
-      "Collect: the sheet offers Take a photograph only. Choose from your photos and Remove from collected (with Undo) arrive with the collect flow (session 4). Add a photo and the season tiles open the same camera collect for now.",
       "Approximate location, Show us where it is: the iPhone opens the pin picker (PlacePin.swift); Android opens the report form with The pin is in the wrong place until the picker is ported.",
       "The city link, the species fact, the Discover more chips and the full-map button open the map on that place, species or tree; the iPhone opens the city, country, species and tree-map pages, not ported yet (session 5).",
       "The snackbar after a bookmark (Added to Want to visit, Undo) is not ported yet (as on the map).",
-      "The review prompt after three trees and the tree_opened measurement are not ported (session 8)."
+      "The review prompt after three trees and the tree_opened measurement are not ported (session 8).",
+      "Collect: Remove from collected (with Undo) in the collect sheet is not ported yet."
     ],
     "owner": null
   },
@@ -112,7 +124,7 @@
     "differences": [
       "A species (a pill, By species See all, a species search hit) opens the map filtered to that species; the iPhone opens its species page, which is not ported yet.",
       "A visitor's name, signed in, opens their public profile on the website (ancienttrees.app/profile?u=); the iPhone opens PersonProfile, not ported yet. Signed out both ask for a sign-in first.",
-      "Add a tree and Want to visit's See all go to what Android has today (the nearest tree's page, the account sheet's lanes) until Collect.swift and My trees are ported.",
+      "Want to visit's See all goes to the account sheet's lanes until My trees is ported.",
       "The lists, the oldest trees and the See all pages show their trees as rows (TreeRow), not TreeCard; TreeCard has landed from the tree page and replaces them next.",
       "The ambassador explainer is drawn as its own sheet in Discover.kt; it moves onto BrandSheet.kt (now on main from the tree page). A failed request is a one-line sheet, not the snackbar, until a snackbar is ported.",
       "A card face with no website choice falls back to the first photographed tree; the iPhone's fallback also weighs the photograph's size, which the Android feed reader does not read yet. The feed carries a face for every shelf today, so nothing shows this.",
@@ -146,7 +158,7 @@
     "owner": null
   },
   "collect-intro": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
@@ -155,7 +167,7 @@
     }
   },
   "collect-away": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
@@ -164,8 +176,10 @@
     }
   },
   "collect-place": {
-    "status": "not-ported",
-    "differences": [],
+    "status": "in-progress",
+    "differences": [
+      "The locate arrow in the corner of the map is not drawn on Android yet."
+    ],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
       "name": "Android parity 5: the collect flow",
@@ -173,8 +187,10 @@
     }
   },
   "collect-identify": {
-    "status": "not-ported",
-    "differences": [],
+    "status": "in-progress",
+    "differences": [
+      "Your own trees within 30 m (a second photograph of a tree you added) are not offered at the top of the list yet: they come from My trees, which is not ported."
+    ],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
       "name": "Android parity 5: the collect flow",
@@ -182,8 +198,10 @@
     }
   },
   "collect-ticked": {
-    "status": "not-ported",
-    "differences": [],
+    "status": "parity",
+    "differences": [
+      "The App Store style review ask two seconds after a new tick is not ported (session 8)."
+    ],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
       "name": "Android parity 5: the collect flow",
@@ -191,7 +209,7 @@
     }
   },
   "collect-voted": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
@@ -200,7 +218,7 @@
     }
   },
   "collect-compare": {
-    "status": "not-ported",
+    "status": "parity",
     "differences": [],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
@@ -209,8 +227,12 @@
     }
   },
   "collect-describe": {
-    "status": "not-ported",
-    "differences": [],
+    "status": "in-progress",
+    "differences": [
+      "The ⋯ menu on the draft and the add tile under More photographs (a further photograph, the sign) are not ported yet.",
+      "The city under the name is not a link yet (the place pages are not ported).",
+      "After Save the page closes; on the iPhone it stays as your tree with Share, which needs My trees (not ported)."
+    ],
     "owner": {
       "session": "local_26a9fa67-c5a9-4b1a-b366-b5f9b799171c",
       "name": "Android parity 5: the collect flow",

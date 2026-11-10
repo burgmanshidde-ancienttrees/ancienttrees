@@ -48,7 +48,6 @@ import app.ancienttrees.feed.Tree
 import app.ancienttrees.ui.AccountSheet
 import app.ancienttrees.ui.AncientTreesTheme
 import app.ancienttrees.ui.CollectFailedSheet
-import app.ancienttrees.ui.CollectedSheet
 import app.ancienttrees.ui.DiscoverActions
 import app.ancienttrees.ui.DiscoverScreen
 import app.ancienttrees.ui.HeroCover
@@ -176,34 +175,51 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // camera is the only way in; where the phone stood goes with it.
     var pendingCollect by remember { mutableStateOf<Tree?>(null) }
     var collecting by remember { mutableStateOf<Tree?>(null) }
-    var collectedNow by remember { mutableStateOf<Tree?>(null) }
     var collectFailed by remember { mutableStateOf(false) }
+    // THE COLLECT FLOW (CollectSheet.kt), and a tree only you have being added.
+    var collectStart by remember { mutableStateOf<app.ancienttrees.ui.CollectStart?>(null) }
+    var draft by remember { mutableStateOf<Collector.Draft?>(null) }
     val shot = remember {
         java.io.File(context.cacheDir, "photos").apply { mkdirs() }.let { java.io.File(it, "collect.jpg") }
     }
     val shotUri = remember {
         androidx.core.content.FileProvider.getUriForFile(context, context.packageName + ".photos", shot)
     }
+    // From a tree page's own collect sheet: the camera first, then the flow opens
+    // at the photograph (TreeDetail.openFlowWithPhoto), the tree already known.
     val camera = rememberLauncherForActivityResult(ActivityResultContracts.TakePicture()) { ok ->
         val t = collecting
-        val where = here
-        if (!ok || t == null || where == null) {
-            collecting = null
-            return@rememberLauncherForActivityResult
-        }
+        collecting = null
+        if (!ok || t == null) return@rememberLauncherForActivityResult
         scope.launch {
             val raw = runCatching { shot.readBytes() }.getOrNull()
             shot.delete()
-            val jpeg = raw?.let { Collector.downsized(it) }
-            val landed = jpeg != null && Collector.collect(account, t.id, t.name, jpeg, where.lat, where.lng)
-            collecting = null
-            if (landed) {
-                saves.noteCollected(t.id)
-                collectedNow = t
-            } else {
-                collectFailed = true
-            }
+            val jpeg = raw?.let { Collector.downsized(it) } ?: return@launch
+            collectStart = app.ancienttrees.ui.CollectStart(about = t.name, knownTree = t.id, shotIn = jpeg)
         }
+    }
+    // The same from the library: the flow reads the photograph's own place and date.
+    var choosingFor by remember { mutableStateOf<Tree?>(null) }
+    val library = rememberLauncherForActivityResult(
+        ActivityResultContracts.PickMultipleVisualMedia(1 + Collector.MAX_EXTRAS),
+    ) { uris ->
+        val t = choosingFor
+        choosingFor = null
+        if (uris.isEmpty() || t == null) return@rememberLauncherForActivityResult
+        scope.launch {
+            val p = Collector.read(context, uris.first()) ?: return@launch
+            val more = uris.drop(1).mapNotNull { Collector.read(context, it)?.raw?.let { r -> Collector.downsized(r) } }
+            collectStart = app.ancienttrees.ui.CollectStart(about = t.name, knownTree = t.id, pickedIn = p, pickedMore = more)
+        }
+    }
+    fun collectFromLibrary(t: Tree) {
+        if (!signedIn) {
+            pendingAfterSignIn = { collectFromLibrary(t) }
+            asking = true
+            return
+        }
+        choosingFor = t
+        library.launch(androidx.activity.result.PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
     }
     fun collect(t: Tree) {
         if (!signedIn) {
@@ -286,6 +302,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         val c = catalogue ?: return@LaunchedEffect
         launch.openTree?.let { id -> c.tree(id)?.let { open = it } }
         if (launch.signIn) asking = true
+        if (launch.collectOpen) collectStart = app.ancienttrees.ui.CollectStart()
     }
     LaunchedEffect(Unit) {
         val started = android.os.SystemClock.elapsedRealtime()
@@ -312,10 +329,6 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     var discoverTop by remember { mutableIntStateOf(0) }
     var discoverSearching by remember { mutableStateOf(false) }
     BackHandler(enabled = tab == 1 && open == null) { tab = 0 }
-    fun nearestTree() {
-        val t = trees.minByOrNull { Geo.km(origin.lat, origin.lng, it.lat, it.lng) }
-        if (t != null) open = t
-    }
 
     Box(Modifier.fillMaxSize()) {
         CompositionLocalProvider(
@@ -370,7 +383,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     openPerson = { id -> openProfileOnWeb(context, id) },
                     showMap = { tab = 0 },
                     openWantToVisit = { if (signedIn) showAccount = true else asking = true },
-                    addTree = { nearestTree() },
+                    addTree = { collectStart = app.ancienttrees.ui.CollectStart() },
                     signIn = { then ->
                         pendingAfterSignIn = then
                         asking = true
@@ -407,11 +420,20 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                             pendingAfterSignIn = then
                             asking = true
                         },
+                        onCollectFromLibrary = { collectFromLibrary(tree) },
+                        onAddPhoto = {
+                            if (signedIn) {
+                                collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id)
+                            } else {
+                                pendingAfterSignIn = { collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id) }
+                                asking = true
+                            }
+                        },
                     ),
                 )
             }
         }
-        if (open == null && !searching && !discoverSearching) {
+        if (open == null && !searching && !discoverSearching && draft == null) {
             TabBar(
                 selected = tab,
                 select = { i ->
@@ -422,7 +444,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         else -> Unit
                     }
                 },
-                collect = { nearestTree() },
+                collect = { collectStart = app.ancienttrees.ui.CollectStart() },
                 modifier = Modifier.align(Alignment.BottomCenter),
             )
         }
@@ -438,7 +460,44 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             enter = androidx.compose.animation.EnterTransition.None,
             exit = androidx.compose.animation.fadeOut(androidx.compose.animation.core.tween(400)),
         ) { HeroCover { showingCover = false } }
-        collectedNow?.let { t -> CollectedSheet(t.name, onDismiss = { collectedNow = null }) }
+        collectStart?.let { start ->
+            if (cat != null) {
+                app.ancienttrees.ui.CollectSheet(
+                    catalogue = cat,
+                    origin = origin,
+                    located = located,
+                    host = app.ancienttrees.ui.CollectHost(
+                        account = account,
+                        signedIn = signedIn || launch.signedIn,
+                        collected = saves.collected,
+                        votes = votes,
+                        counts = counts,
+                        needsSignIn = { then -> pendingAfterSignIn = then; asking = true },
+                        askLocation = { if (!refused) ask.launch(LOCATION) },
+                        send = { job -> scope.launch { if (!job()) collectFailed = true } },
+                        ticked = { saves.noteCollected(it) },
+                        openDraft = { draft = it },
+                        share = { t -> share(context, t, "collect", "${t.name}, ${t.city}.") },
+                    ),
+                    start = start,
+                    launch = launch.collect,
+                    onDismiss = { collectStart = null },
+                )
+            }
+        }
+        draft?.let { d ->
+            if (cat != null) {
+                app.ancienttrees.ui.DraftTree(
+                    draft = d,
+                    catalogue = cat,
+                    onSave = { saved, city ->
+                        draft = null
+                        scope.launch { if (!Collector.saveDraft(account, saved, city)) collectFailed = true }
+                    },
+                    onDiscard = { draft = null },
+                )
+            }
+        }
         if (collectFailed) CollectFailedSheet(onDismiss = { collectFailed = false })
         if (showAccount && signedIn) {
             val byId = remember(trees) { trees.associateBy { it.id } }
