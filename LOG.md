@@ -86,6 +86,11 @@ Rungs 1 to 3 clear (no reader photos or notes, health.py green). Rung 5: the For
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 session: PR 30 merged; the flow walk on main waits for a free Mac
+
+- **Merged:** PR 30 (screens linked into one app, flow walk, emulator lock), its build green. The walk was green on its branch (all five steps, under the lock).
+- **Not run on main yet:** no emulator was running, and starting one failed ("qemu_thread_create: Resource temporarily unavailable", about 70 MB of free memory with several sessions and Android Studio open). Run `python3 scripts/android_walk.py` once the emulator is up again.
+
 ## 2026-11-10 session: Android, the basic app in one go (Hidde: "kun jij niet ondertussen al beginnen aan de hele app te bouwen")
 
 - **New in `android/`, PRs 14 to 18:** species silhouettes in the pins (generated from site/src/lib/species-icons.ts by android/generate_species_icons.py) and the same-spot stack that spreads on a tap; Gabarito titles; sign in with Google in the browser or an emailed link, both on ancienttrees://auth-callback, the stored token spent with the server before anybody counts as signed in (data/cross-device.json `android:auth/session.refresh`); Want to go hearts on the server; sign out and delete account (delete_user()); Collect this tree with the camera within 3 km, writing the same sightings, storage and visited rows as the iPhone; the Seasons row on a tree page; the account sheet's Collected and Want to visit lanes. Copy taken from the website's own translations where they exist (signin-strings.ts, i18n.ts), the rest written for eight languages.
