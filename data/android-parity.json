@@ -69,11 +69,9 @@
   "map": {
     "status": "in-progress",
     "differences": [
-      "Build 42's Airbnb sheet (LOG.md 2026-11-08: only the count bar at the lowest stop, the tab bar hidden) is decided but not in the iPhone's Swift on main yet; Android follows the Swift and takes it when it lands.",
-      "Your own trees (photographed by you, not ours) are not on the Android map or in the Collected shelf yet: Android has no store for them until My trees is ported (session 4).",
-      "The snackbar after a bookmark (\"Added to Want to visit\", Undo) is not ported yet.",
+      "Waiting on iOS, not an Android gap: Build 42's Airbnb sheet (LOG.md 2026-11-08: only the count bar at the lowest stop, the tab bar hidden) is decided but not in the iPhone's Swift on main yet; Android follows the Swift and takes it when it lands.",
       "First launch reads the 11.5 MB catalogue in about ten seconds on the one-core emulator under a loaded Mac; later launches read a binary snapshot. Not yet measured on a real phone.",
-      "Under a searched city the ambassador and Plus boxes (PlaceAsksBox, PlusUnderBox) are not ported yet (sessions 5 and 6)."
+      "Your own trees stand on the map in your own photograph and lead the Collected shelf (TreeMap.setMine, MineTile); the photograph comes from the account each launch, so a new install shows the plain mine pin until it has loaded (hard rule 11)."
     ],
     "owner": null
   },
@@ -103,12 +101,9 @@
   "tree": {
     "status": "in-progress",
     "differences": [
-      "Your own tree (a tree only you have: its menu to change name, species, age, girth, move the pin, merge, remove, and Share this tree) is not ported: it belongs to My trees (session 4).",
-      "Approximate location, Show us where it is: the iPhone opens the pin picker (PlacePin.swift); Android opens the report form with The pin is in the wrong place until the picker is ported.",
-      "The city link, the species fact, the Discover more chips and the full-map button open the map on that place, species or tree; the iPhone opens the city, country, species and tree-map pages, not ported yet (session 5).",
-      "The snackbar after a bookmark (Added to Want to visit, Undo) is not ported yet (as on the map).",
       "The review prompt after three trees and the tree_opened measurement are not ported (session 8).",
-      "Collect: Remove from collected (with Undo) in the collect sheet is not ported yet."
+      "Collect: Remove from collected (with Undo) in the collect sheet is not ported yet.",
+      "The snackbar after a bookmark: Added to Want to visit with View, Removed with Undo, as SaveHeart.swift (SnackBar.kt)."
     ],
     "owner": null
   },
@@ -127,12 +122,9 @@
     "owner": null
   },
   "explore": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "A species (a pill, By species See all, a species search hit) opens the map filtered to that species; the iPhone opens its species page, which is not ported yet.",
-      "Want to visit's See all goes to the account sheet's lanes until My trees is ported.",
-      "The lists, the oldest trees and the See all pages show their trees as rows (TreeRow), not TreeCard; TreeCard has landed from the tree page and replaces them next.",
-      "The ambassador explainer is drawn as its own sheet in Discover.kt; it moves onto BrandSheet.kt (now on main from the tree page). A failed request is a one-line sheet, not the snackbar, until a snackbar is ported.",
+      "A failed ambassador request says so in a one-line BrandSheet, where the iPhone shows the snackbar: Android has no shared snackbar yet (as city).",
       "A card face with no website choice falls back to the first photographed tree; the iPhone's fallback also weighs the photograph's size, which the Android feed reader does not read yet. The feed carries a face for every shelf today, so nothing shows this.",
       "Pull to refresh is Material's spinner, the Android counterpart of the iPhone's refresh control (forced)."
     ],
@@ -155,10 +147,11 @@
     ]
   },
   "profile": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Ancient Trees Plus is not a row yet: the Plus question sheet (PlusAsk.swift) is not ported.",
+      "Ancient Trees Plus is the first row under Help, as on the iPhone (Profile.swift helpCard): it opens the city's Plus question (PlaceBox.kt PlusQuestionSheet, from PlusAsk.swift), sends the anonymous answer to plus_answers and Tell me to plus_waitlist, and the row goes once this install answered (plus.answered.v1, device) or the server's switch is off. -plusask opens it.",
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
+      "Directions offers Google Maps and Another maps app (no Apple Maps on Android, forced).",
       "Rate the app opens the Play Store page (forced)."
     ],
     "owner": null
@@ -179,16 +172,12 @@
     "differences": []
   },
   "collect-place": {
-    "status": "in-progress",
-    "differences": [
-      "The locate arrow in the corner of the map is not drawn on Android yet."
-    ]
+    "status": "parity",
+    "differences": []
   },
   "collect-identify": {
-    "status": "in-progress",
-    "differences": [
-      "Your own trees within 30 m (a second photograph of a tree you added) are not offered at the top of the list yet: they come from My trees, which is not ported."
-    ]
+    "status": "parity",
+    "differences": []
   },
   "collect-ticked": {
     "status": "parity",
@@ -207,9 +196,8 @@
   "collect-describe": {
     "status": "in-progress",
     "differences": [
-      "The ⋯ menu on the draft and the add tile under More photographs (a further photograph, the sign) are not ported yet.",
-      "The city under the name is not a link yet (the place pages are not ported).",
-      "After Save the page closes; on the iPhone it stays as your tree with Share, which needs My trees (not ported)."
+      "Move the pin and Merge with another tree are not in the draft's menu yet: their screens (place-pin, MergeChooser) are not ported, as on own-tree.",
+      "After Save the page waits a moment for the account to hold the tree before it turns into your tree with Share: the iPhone keeps it on the phone first, Android keeps nothing a person did on the device (hard rule 11)."
     ]
   },
   "collection-tab-full": {
@@ -220,12 +208,11 @@
     ]
   },
   "profile-signed-in": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Ancient Trees Plus is not a row yet: the Plus question sheet (PlusAsk.swift) is not ported.",
-      "Send feedback opens the website's contribute page until the feedback screen (Contribute.swift, feedbackMode) is ported.",
+      "Ancient Trees Plus is the first row under Help, as on the iPhone (Profile.swift helpCard): it opens the city's Plus question (PlaceBox.kt PlusQuestionSheet, from PlusAsk.swift), sends the anonymous answer to plus_answers and Tell me to plus_waitlist, and the row goes once this install answered (plus.answered.v1, device) or the server's switch is off. -plusask opens it.",
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
-      "As profile: no Directions row, Rate the app opens the Play Store (forced)."
+      "As profile: Directions offers Google Maps and Another maps app, Rate the app opens the Play Store (forced)."
     ],
     "owner": null
   },
@@ -248,9 +235,9 @@
     ]
   },
   "collection": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Ported with Discover (CollectionView in Home.swift): the intro and the trees, as rows (TreeRow) rather than TreeCard until the card from the tree page is swapped in."
+      "CollectionView in Home.swift: the intro, then every tree as the shared TreeCard. The back arrow in the bar and the system back are Android's (forced)."
     ],
     "owner": {
       "session": "local_8724be8d",
@@ -323,9 +310,9 @@
     "owner": null
   },
   "people": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
-      "Pull to refresh on Find people is not added yet.",
+      "Pull to refresh on Find people loads who you follow and Suggested again (Material's pull to refresh, People.swift RefreshableWhen); Followers and Following keep still, as on the iPhone.",
       "Blocked people are held in memory and read back from the server's blocks table; the iPhone also keeps the list on the phone (hard rule 11 on Android).",
       "Share your profile opens Android's share sheet (forced)."
     ],

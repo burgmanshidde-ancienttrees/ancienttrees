@@ -274,6 +274,41 @@ fun HighlightCard(tree: Tree, onOpen: () -> Unit) {
 }
 
 /**
+ * A tree of yours on the map list's Collected shelf (MineTile, TreeRow.swift):
+ * your photograph in the highlight's frame, the Seen tag, its name and the
+ * species when you gave one. No "Your tree" line (Hidde, 2026-11-06).
+ */
+@Composable
+fun MineTile(s: app.ancienttrees.account.OwnSighting, mine: app.ancienttrees.account.MyTrees, onOpen: () -> Unit) {
+    val brand = Brand.colors
+    Column(
+        Modifier
+            .width(220.dp)
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen),
+    ) {
+        Box(Modifier.size(220.dp, 150.dp).clip(RoundedCornerShape(12.dp)).background(brand.surfaceMuted)) {
+            OwnPhoto(s, mine, Modifier.fillMaxSize(), maxSide = 600) { Box(Modifier.fillMaxSize().background(brand.surfaceMuted)) }
+            Box(Modifier.align(Alignment.TopStart).padding(8.dp)) { SeenTag() }
+        }
+        Text(
+            s.name + "\n",
+            fontFamily = BrandFace,
+            fontWeight = FontWeight.Bold,
+            fontSize = 15.sp,
+            color = brand.ink,
+            maxLines = 2,
+            minLines = 2,
+            overflow = TextOverflow.Ellipsis,
+            lineHeight = 19.sp,
+            modifier = Modifier.padding(top = 8.dp),
+        )
+        s.species?.takeIf { it.isNotEmpty() }?.let {
+            Text(it, fontSize = 12.sp, color = brand.inkSoft, maxLines = 1, modifier = Modifier.padding(top = 3.dp))
+        }
+    }
+}
+
+/**
  * TreeCard.swift, built to the AllTrails shape: the photograph 190 high (or the
  * species drawn on the leaf tile with "No photograph yet"), the bookmark top
  * right, the Collected tag top left, and under it the name and one meta line.

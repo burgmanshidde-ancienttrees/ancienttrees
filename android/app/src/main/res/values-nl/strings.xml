@@ -221,4 +221,11 @@
     <string name="done">Klaar</string>
     <string name="report_needs_account">Je hebt een account nodig om een boom te sturen, zodat je kunt zien wat er met elke boom is gebeurd.</string>
     <!-- /tree page -->
+    <!-- snack -->
+    <string name="snack_added">Toegevoegd aan Wil ik bezoeken</string>
+    <string name="snack_removed">Verwijderd uit Wil ik bezoeken</string>
+    <string name="snack_undo">Ongedaan maken</string>
+    <string name="snack_view">Bekijk</string>
+    <string name="snack_signed_in">Je bent ingelogd</string>
+    <!-- /snack -->
 </resources>

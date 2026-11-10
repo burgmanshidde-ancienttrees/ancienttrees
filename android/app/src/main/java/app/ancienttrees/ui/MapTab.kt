@@ -157,6 +157,12 @@ fun MapTab(
     raise: Int,
     /** A place, species or tree a tree page sends here, until their own pages are ported. */
     go: Pair<Long, SearchHit>? = null,
+    /** Your own trees (TreeMap.setMine) and how to fetch each one's photograph. */
+    mine: List<app.ancienttrees.account.OwnSighting> = emptyList(),
+    minePhoto: suspend (String) -> ByteArray? = { null },
+    onMine: (String) -> Unit = {},
+    /** The store your trees' photographs come from, for the Collected shelf's tiles. */
+    myTrees: app.ancienttrees.account.MyTrees? = null,
 ) {
     val brand = Brand.colors
     val density = LocalDensity.current
@@ -339,6 +345,9 @@ fun MapTab(
             bottomCover = minOf(stopCoverage, sheet.halfPx.takeIf { it > 0 } ?: stopCoverage),
             moveTo = moveTo,
             quietSelect = launch.select,
+            mine = mine,
+            minePhoto = minePhoto,
+            onMine = onMine,
             modifier = Modifier.fillMaxSize().graphicsLayer { translationY = sheet.parallax() },
         )
 
@@ -415,6 +424,10 @@ fun MapTab(
                             listed, inReach, onOpen,
                             city = (focusPlace as? FocusPlace.City)?.let { it.slug to placeTitle },
                             catalogue = catalogue,
+                            // minesInView: your trees on the part of the map in view.
+                            mines = region?.let { box -> mine.filter { box.contains(it.lat, it.lng) } }.orEmpty(),
+                            myTrees = myTrees,
+                            onMine = onMine,
                         )
                     }
                     if (nothingInView) {
@@ -543,6 +556,9 @@ private fun PlaceList(
     /** The searched city (slug, title): its white box under the shelves, Plus under the trees (PlaceAmbassadors.swift). */
     city: Pair<String, String>? = null,
     catalogue: Catalogue? = null,
+    mines: List<app.ancienttrees.account.OwnSighting> = emptyList(),
+    myTrees: app.ancienttrees.account.MyTrees? = null,
+    onMine: (String) -> Unit = {},
 ) {
     val marks = LocalTreeMarks.current
     val highlights = remember(listed) {
@@ -553,9 +569,19 @@ private fun PlaceList(
         Shelf(highlights.map { it.tree }, onOpen)
     }
     val collected = remember(listed, marks.collected) { listed.filter { it.tree.id in marks.collected }.take(10) }
-    if (collected.isNotEmpty()) {
+    // COLLECTED, A SHELF LIKE THE HIGHLIGHTS (Hidde, 2026-11-06): the trees you
+    // added first, then the trees of ours you collected, in view (MapTab.swift).
+    val shownMines = if (myTrees != null) mines else emptyList()
+    if (shownMines.isNotEmpty() || collected.isNotEmpty()) {
         SheetSectionHead("Collected")
-        Shelf(collected.map { it.tree }, onOpen)
+        LazyRow(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            contentPadding = PaddingValues(horizontal = 16.dp),
+            modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp).layoutBleed(16.dp),
+        ) {
+            items(shownMines, key = { "mine-" + it.id }) { s -> MineTile(s, myTrees!!) { onMine(s.id) } }
+            items(collected.map { it.tree }, key = { it.id }) { tr -> HighlightCard(tr) { onOpen(tr) } }
+        }
     }
     // UNDER THE HIGHLIGHTS (Hidde, 2026-11-06): the searched city's asks, while its trees are in view.
     val cityInView = city != null && catalogue != null && listed.any { it.tree.citySlug == city.first }

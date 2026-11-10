@@ -221,4 +221,11 @@
     <string name="done">OK</string>
     <string name="report_needs_account">Il faut un compte pour envoyer un arbre, pour que vous puissiez voir ce que chacun est devenu.</string>
     <!-- /tree page -->
+    <!-- snack -->
+    <string name="snack_added">Ajouté à À visiter</string>
+    <string name="snack_removed">Retiré de À visiter</string>
+    <string name="snack_undo">Annuler</string>
+    <string name="snack_view">Voir</string>
+    <string name="snack_signed_in">Vous êtes connecté</string>
+    <!-- /snack -->
 </resources>

@@ -5,16 +5,40 @@
 // FieldEditor, and Screens/SpeciesChooser.swift.
 //
 // The draft lives in memory until Save (data/cross-device.json: unsent drafts
-// are the device's); Save sends it to the account and to us as a tree.
+// are the device's); Save sends it to the account and to us as a tree, and the
+// page then stays as your tree (OwnTree.kt) with Share at the foot.
 
 package app.ancienttrees.ui
 
 import android.graphics.BitmapFactory
 import androidx.activity.compose.BackHandler
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.PickVisualMediaRequest
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.MoreHoriz
+import androidx.compose.material.icons.filled.Verified
+import androidx.compose.material.icons.outlined.CalendarMonth
+import androidx.compose.material.icons.outlined.Delete
+import androidx.compose.material.icons.outlined.Eco
+import androidx.compose.material.icons.outlined.Edit
+import androidx.compose.material.icons.outlined.PhotoCamera
+import androidx.compose.material.icons.outlined.PhotoLibrary
+import androidx.compose.material.icons.outlined.Straighten
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.platform.LocalContext
+import androidx.core.content.FileProvider
+import app.ancienttrees.account.Account
+import app.ancienttrees.account.MyTrees
+import kotlinx.coroutines.launch
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -85,27 +109,106 @@ private enum class Field { NAME, AGE, GIRTH, STORY }
 fun girthCm(text: String): Int? =
     text.replace(",", ".").replace(Regex("[^0-9.]"), "").toDoubleOrNull()?.takeIf { it > 0 && it < 50 }?.let { (it * 100).toInt() }
 
+/**
+ * [account] and [mine] given: Save sends the tree here and, once the account
+ * holds it, THE PAGE STAYS AS YOUR TREE with Share at the foot (TreeDetail's
+ * `live`: "a draft that is saved on this page turns into a saved tree on this
+ * page without being opened again"), under the "Added to your trees" sheet.
+ * Without them Save hands the draft to [onSave] and the page closes, as before.
+ * [onDiscard] also closes the saved page. [onCity] makes the city a link.
+ */
 @Composable
 fun DraftTree(
     draft: Collector.Draft,
     catalogue: Catalogue,
     onSave: (Collector.Draft, String?) -> Unit,
     onDiscard: () -> Unit,
+    account: Account? = null,
+    mine: MyTrees? = null,
+    onCity: ((slug: String, name: String) -> Unit)? = null,
 ) {
     val brand = Brand.colors
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
     var name by remember { mutableStateOf(draft.name) }
     var named by remember { mutableStateOf(false) }
     var age by remember { mutableStateOf("") }
     var girth by remember { mutableStateOf<Int?>(null) }
     var species by remember { mutableStateOf("") }
     var story by remember { mutableStateOf("") }
+    var extras by remember { mutableStateOf(draft.extras) }
     var editing by remember { mutableStateOf<Field?>(null) }
     var choosingSpecies by remember { mutableStateOf(false) }
     var confirmingDiscard by remember { mutableStateOf(false) }
-    val nearest = remember { CollectRules.nearestTree(draft.lat, draft.lng, catalogue.trees) }
-    val city = nearest?.first?.city
+    var removing by remember { mutableStateOf(false) }
+    var saving by remember { mutableStateOf(false) }
+    var saveFailed by remember { mutableStateOf(false) }
+    var savedId by remember { mutableStateOf<String?>(null) }
+    var savedName by remember { mutableStateOf<String?>(null) }
+    // placeLink: the nearest city we publish within 30 km, as on your saved tree.
+    val place = remember(draft.lat, draft.lng, catalogue) { minePlace(catalogue, draft.lat, draft.lng) }
+    val city = place?.first
 
-    BackHandler { confirmingDiscard = true }
+    // SAVED: the same page, now your tree, read from the account.
+    val saved = savedId?.let { id -> mine?.takeIf { it.byId(id) != null } }
+    if (saved != null) {
+        OwnTree(savedId!!, saved, catalogue, onBack = onDiscard, onCity = { slug, n -> onCity?.invoke(slug, n) })
+        savedName?.let { n ->
+            BrandSheet(
+                icon = Icons.Filled.Verified,
+                // The name under the title, not in it: "You added A tree in
+                // Amsterdam" reads wrong. No "with your photograph".
+                title = stringResource(R.string.cf_added_title),
+                message = n,
+                onDismiss = { savedName = null },
+                buttons = listOf(SheetButton(stringResource(R.string.cf_done), SheetKind.PRIMARY) { savedName = null }),
+            )
+        }
+        return
+    }
+
+    fun save() {
+        val d = draft.copy(name = name, note = story, species = species.ifEmpty { null }, age = age.ifEmpty { null },
+            girthCm = girth, extras = extras)
+        if (account == null || mine == null) {
+            onSave(d, city)
+            return
+        }
+        if (saving) return
+        saving = true
+        scope.launch {
+            val ok = Collector.saveDraft(account, d, city)
+            if (ok) mine.load(force = true)
+            saving = false
+            when {
+                ok && mine.byId(d.id) != null -> { savedId = d.id; savedName = d.name }
+                ok -> onDiscard()
+                else -> saveFailed = true
+            }
+        }
+    }
+
+    // A FURTHER PHOTOGRAPH (morePhotosRow): camera or your photos, kept with the draft.
+    val shotFile = remember { java.io.File(context.cacheDir, "photos").apply { mkdirs() }.let { java.io.File(it, "draft-extra.jpg") } }
+    val shotUri = remember { FileProvider.getUriForFile(context, context.packageName + ".photos", shotFile) }
+    fun addExtra(raw: ByteArray?) {
+        scope.launch {
+            val jpeg = raw?.let { Collector.downsized(it) } ?: return@launch
+            if (extras.size < Collector.MAX_EXTRAS) extras = extras + jpeg
+        }
+    }
+    val extraCamera = rememberLauncherForActivityResult(ActivityResultContracts.TakePicture()) { ok ->
+        if (!ok) return@rememberLauncherForActivityResult
+        val raw = runCatching { shotFile.readBytes() }.getOrNull()
+        shotFile.delete()
+        addExtra(raw)
+    }
+    val room = (Collector.MAX_EXTRAS - extras.size).coerceAtLeast(1)
+    val extraLibrary = rememberLauncherForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(maxOf(2, Collector.MAX_EXTRAS))) { uris ->
+        for (u in uris.take(room)) addExtra(runCatching { context.contentResolver.openInputStream(u)?.use { it.readBytes() } }.getOrNull())
+    }
+
+    BackHandler { if (!saving) confirmingDiscard = true }
 
     Box(Modifier.fillMaxSize().background(brand.ground)) {
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
@@ -138,7 +241,25 @@ fun DraftTree(
                         color = brand.ink,
                         modifier = Modifier.clickable(role = Role.Button) { editing = Field.NAME },
                     )
-                    city?.let { Text(it, fontSize = 15.sp, color = brand.ink, textDecoration = TextDecoration.Underline) }
+                    // placeLink: the city near it, tappable, or nothing when none is near.
+                    if (place != null) {
+                        val see = stringResource(R.string.see_every_tree_in, place.first)
+                        Box(Modifier.heightIn(min = 44.dp), contentAlignment = Alignment.CenterStart) {
+                            Text(
+                                place.first,
+                                fontSize = 15.sp,
+                                color = brand.ink,
+                                textDecoration = TextDecoration.Underline,
+                                maxLines = 1,
+                                modifier = if (onCity == null) Modifier else Modifier
+                                    .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) {
+                                        onCity(place.second, place.first)
+                                    }
+                                    .semantics { contentDescription = see }
+                                    .testTag("draft-city"),
+                            )
+                        }
+                    }
                     Facts(age, girth, species, onAge = { editing = Field.AGE }, onGirth = { editing = Field.GIRTH }, onSpecies = { choosingSpecies = true })
                 }
                 if (story.isEmpty()) {
@@ -153,14 +274,50 @@ fun DraftTree(
                 } else {
                     Text(story, fontSize = 17.sp, lineHeight = 22.sp, color = brand.ink, modifier = Modifier.clickable { editing = Field.STORY })
                 }
-                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                // morePhotosRow: up to three further photographs, the sign among
+                // them, and the Add photo tile with camera or your photos.
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.testTag("more-photos")) {
                     Text(stringResource(R.string.cf_more_photos), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 15.sp, color = brand.ink)
-                    if (draft.extras.isNotEmpty()) {
-                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                            for (e in draft.extras) {
-                                val b = remember(e) { BitmapFactory.decodeByteArray(e, 0, e.size) }
-                                if (b != null) {
-                                    Image(b.asImageBitmap(), null, contentScale = ContentScale.Crop, modifier = Modifier.size(84.dp).clip(RoundedCornerShape(11.dp)))
+                    Text(stringResource(R.string.ot_more_photos_body), fontSize = 13.sp, color = brand.inkSoft)
+                    var tileMenu by remember { mutableStateOf(false) }
+                    Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                        for (e in extras) {
+                            val b = remember(e) { BitmapFactory.decodeByteArray(e, 0, e.size) }
+                            if (b != null) {
+                                Image(b.asImageBitmap(), null, contentScale = ContentScale.Crop, modifier = Modifier.size(88.dp).clip(RoundedCornerShape(12.dp)))
+                            }
+                        }
+                        if (extras.size < Collector.MAX_EXTRAS) {
+                            Box {
+                                Column(
+                                    Modifier
+                                        .size(88.dp)
+                                        .background(brand.surfaceMuted, RoundedCornerShape(12.dp))
+                                        .clickable(role = Role.Button) { tileMenu = true }
+                                        .testTag("add-extra-photo"),
+                                    horizontalAlignment = Alignment.CenterHorizontally,
+                                    verticalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterVertically),
+                                ) {
+                                    Icon(Icons.Filled.Add, null, tint = brand.moss, modifier = Modifier.size(22.dp))
+                                    Text(stringResource(R.string.ot_add_photo), fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
+                                }
+                                DropdownMenu(expanded = tileMenu, onDismissRequest = { tileMenu = false }, containerColor = brand.surface) {
+                                    DropdownMenuItem(
+                                        text = { Text(stringResource(R.string.collect_camera), color = brand.ink, fontSize = 16.sp) },
+                                        trailingIcon = { Icon(Icons.Outlined.PhotoCamera, null, tint = brand.ink) },
+                                        onClick = {
+                                            tileMenu = false
+                                            runCatching { extraCamera.launch(shotUri) }
+                                        },
+                                    )
+                                    DropdownMenuItem(
+                                        text = { Text(stringResource(R.string.cf_choose), color = brand.ink, fontSize = 16.sp) },
+                                        trailingIcon = { Icon(Icons.Outlined.PhotoLibrary, null, tint = brand.ink) },
+                                        onClick = {
+                                            tileMenu = false
+                                            extraLibrary.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+                                        },
+                                    )
                                 }
                             }
                         }
@@ -170,42 +327,40 @@ fun DraftTree(
             }
         }
 
-        // The back circle, top left, which asks before anything is thrown away.
-        val back = stringResource(R.string.cf_back)
-        Box(
-            contentAlignment = Alignment.Center,
-            modifier = Modifier
-                .statusBarsPadding()
-                .padding(start = 16.dp, top = 8.dp)
-                .size(40.dp)
-                .shadow(3.dp, CircleShape)
-                .background(brand.ground, CircleShape)
-                .clickable(role = Role.Button) { confirmingDiscard = true }
-                .semantics { contentDescription = back }
-                .testTag("draft-back"),
-        ) {
-            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(20.dp))
-        }
+        // The back circle, which asks before anything is thrown away, and the
+        // ellipsis menu your saved tree carries: the fields you can fill, then
+        // Remove, last and marked (TreeDetail's mine-menu, drafts included).
+        DraftTopButtons(
+            onBack = { if (!saving) confirmingDiscard = true },
+            onEdit = { editing = it },
+            onSpecies = { choosingSpecies = true },
+            onRemove = { removing = true },
+        )
 
-        // SAVE, on a tree still being added: the bar at the foot.
+        // SAVE, on a tree still being added: the bar at the foot. After it the
+        // page stays and this becomes Share (OwnTree above).
         Column(Modifier.align(Alignment.BottomCenter).fillMaxWidth().background(brand.ground)) {
             HorizontalDivider(color = brand.hairline)
             SheetButtonView(
-                SheetButton(stringResource(R.string.cf_save_tree), SheetKind.PRIMARY, Icons.Filled.Check) {
-                    onSave(
-                        draft.copy(
-                            name = name,
-                            note = story,
-                            species = species.ifEmpty { null },
-                            age = age.ifEmpty { null },
-                            girthCm = girth,
-                        ),
-                        city,
-                    )
-                },
+                SheetButton(stringResource(if (saving) R.string.cf_adding else R.string.cf_save_tree), SheetKind.PRIMARY, Icons.Filled.Check) { save() },
                 Modifier.padding(horizontal = 20.dp, vertical = 10.dp).navigationBarsPadding().testTag("draft-save"),
             )
         }
+    }
+    if (saveFailed) CollectFailedSheet(onDismiss = { saveFailed = false })
+    if (removing) {
+        BrandSheet(
+            title = stringResource(R.string.ot_remove_title, name),
+            message = stringResource(R.string.ot_remove_body),
+            onDismiss = { removing = false },
+            buttons = listOf(
+                SheetButton(stringResource(R.string.ot_remove), SheetKind.DESTRUCTIVE) {
+                    removing = false
+                    onDiscard()
+                },
+                SheetButton(stringResource(R.string.ot_keep), SheetKind.SECONDARY) { removing = false },
+            ),
+        )
     }
 
     editing?.let { f ->
@@ -268,6 +423,58 @@ fun DraftTree(
                 SheetButton(stringResource(R.string.cf_keep_editing), SheetKind.SECONDARY) { confirmingDiscard = false },
             ),
         )
+    }
+}
+
+/** OwnTree's top row on a draft: back that asks, and the ⋯ menu (no Move the pin or Merge yet). */
+@Composable
+private fun DraftTopButtons(onBack: () -> Unit, onEdit: (Field) -> Unit, onSpecies: () -> Unit, onRemove: () -> Unit) {
+    val brand = Brand.colors
+    val glass = brand.ground.copy(alpha = 0.92f)
+    var menu by remember { mutableStateOf(false) }
+    Row(
+        Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 16.dp, vertical = 6.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        val back = stringResource(R.string.cf_back)
+        Box(
+            Modifier.size(44.dp).shadow(2.dp, CircleShape).background(glass, CircleShape)
+                .clickable(role = Role.Button, onClick = onBack).semantics { contentDescription = back }.testTag("draft-back"),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = brand.ink, modifier = Modifier.size(20.dp))
+        }
+        Spacer(Modifier.weight(1f))
+        val more = stringResource(R.string.ot_more)
+        Box {
+            Box(
+                Modifier.size(44.dp).shadow(2.dp, CircleShape).background(glass, CircleShape)
+                    .clickable(role = Role.Button) { menu = true }.semantics { contentDescription = more }.testTag("mine-menu"),
+                contentAlignment = Alignment.Center,
+            ) {
+                Box(Modifier.size(24.dp).border(1.6.dp, brand.moss, CircleShape), contentAlignment = Alignment.Center) {
+                    Icon(Icons.Filled.MoreHoriz, null, tint = brand.moss, modifier = Modifier.size(18.dp))
+                }
+            }
+            DropdownMenu(expanded = menu, onDismissRequest = { menu = false }, containerColor = brand.surface) {
+                @Composable
+                fun item(label: Int, icon: androidx.compose.ui.graphics.vector.ImageVector, danger: Boolean = false, go: () -> Unit) =
+                    DropdownMenuItem(
+                        text = { Text(stringResource(label), color = if (danger) brand.dangerText else brand.ink, fontSize = 16.sp) },
+                        trailingIcon = { Icon(icon, null, tint = if (danger) brand.dangerText else brand.ink, modifier = Modifier.size(20.dp)) },
+                        onClick = {
+                            menu = false
+                            go()
+                        },
+                    )
+                item(R.string.ot_change_name, Icons.Outlined.Edit) { onEdit(Field.NAME) }
+                item(R.string.ot_change_species, Icons.Outlined.Eco) { onSpecies() }
+                item(R.string.ot_change_age, Icons.Outlined.CalendarMonth) { onEdit(Field.AGE) }
+                item(R.string.ot_change_girth, Icons.Outlined.Straighten) { onEdit(Field.GIRTH) }
+                HorizontalDivider(color = brand.hairline)
+                item(R.string.ot_remove_tree, Icons.Outlined.Delete, danger = true) { onRemove() }
+            }
+        }
     }
 }
 

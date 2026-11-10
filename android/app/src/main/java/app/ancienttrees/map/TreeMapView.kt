@@ -130,6 +130,10 @@ fun TreeMapView(
     onUserMove: () -> Unit = {},
     /** A selection that should not move the camera (the launch argument). */
     quietSelect: String? = null,
+    /** YOUR OWN TREES (TreeMap.setMine): drawn last, on top of ours, each in your photograph. */
+    mine: List<app.ancienttrees.account.OwnSighting> = emptyList(),
+    minePhoto: suspend (String) -> ByteArray? = { null },
+    onMine: (String) -> Unit = {},
 ) {
     val latestView by rememberUpdatedState(onView)
     val latestUserMove by rememberUpdatedState(onUserMove)
@@ -142,6 +146,7 @@ fun TreeMapView(
     val holder = remember { MapHolder() }
     var ready by remember { mutableStateOf<Pair<MapLibreMap, Style>?>(null) }
     val latestSelected by rememberUpdatedState(selected)
+    val latestOnMine by rememberUpdatedState(onMine)
 
     val mapView = remember {
         MapLibre.getInstance(context)
@@ -163,6 +168,8 @@ fun TreeMapView(
                     }
                     for (n in 2..STACK_ICONS) style.addImage(stackName(n), stackBitmap(context, n))
                     installLayers(style)
+                    style.addImage(MINE_ICON, minePinBitmap(context))
+                    installMine(style)
                     holder.style = style
                     ready = map to style
                 }
@@ -183,6 +190,10 @@ fun TreeMapView(
                 }
                 map.addOnMapClickListener { point ->
                     val at = map.projection.toScreenLocation(point)
+                    mineAt(map, at, context)?.let { id ->
+                        latestOnMine(id)
+                        return@addOnMapClickListener true
+                    }
                     val stack = stackAt(map, at, context)
                     if (stack != null) {
                         holder.spread = spreadOut(map, stack, holder.spots[stack].orEmpty(), context)
@@ -199,6 +210,21 @@ fun TreeMapView(
                     true
                 }
             }
+        }
+    }
+
+    // Your trees, and each one's own photograph as its pin once it has loaded.
+    LaunchedEffect(ready, mine) {
+        val style = ready?.second ?: return@LaunchedEffect
+        style.getSourceAs<GeoJsonSource>(SOURCE_MINE)?.setGeoJson(mineCollection(mine, emptySet()))
+        val drawn = HashSet<String>()
+        for (m in mine) {
+            val path = m.photo ?: continue
+            val bytes = runCatching { minePhoto(path) }.getOrNull() ?: continue
+            val bmp = android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size) ?: continue
+            style.addImage(mineIconFor(m.id), photoPinBitmap(context, bmp))
+            drawn.add(m.id)
+            style.getSourceAs<GeoJsonSource>(SOURCE_MINE)?.setGeoJson(mineCollection(mine, drawn))
         }
     }
 
@@ -599,3 +625,106 @@ private fun pinBitmap(context: Context, shape: String): Bitmap {
     canvas.restore()
     return bitmap
 }
+
+
+// MARK: your own trees (TreeMap.setMine, minePin, photoPin)
+
+private const val SOURCE_MINE = "at-mine"
+private const val LAYER_MINE = "at-mine-pins"
+private const val MINE_ICON = "at-pin-mine"
+
+private fun mineIconFor(id: String) = "at-pin-mine-$id"
+
+/** The same keys on every feature, as on our own source. */
+private fun mineCollection(mine: List<app.ancienttrees.account.OwnSighting>, withPhoto: Set<String>): FeatureCollection =
+    FeatureCollection.fromFeatures(
+        mine.map { m ->
+            Feature.fromGeometry(Point.fromLngLat(m.lng, m.lat)).apply {
+                addStringProperty("mine_id", m.id)
+                addStringProperty("icon", if (m.id in withPhoto) mineIconFor(m.id) else MINE_ICON)
+                addNumberProperty("pr", -1)
+            }
+        },
+    )
+
+/** Placed like every other pin, and first: your own photograph is the one pin that is a picture of the tree. */
+private fun installMine(style: Style) {
+    style.addSource(GeoJsonSource(SOURCE_MINE, FeatureCollection.fromFeatures(emptyList<Feature>())))
+    style.addLayer(
+        SymbolLayer(LAYER_MINE, SOURCE_MINE).withProperties(
+            PropertyFactory.iconImage(Expression.get("icon")),
+            PropertyFactory.iconAllowOverlap(false),
+            PropertyFactory.iconIgnorePlacement(false),
+            PropertyFactory.iconPadding(PinRules.padding(PinRules.PIN_DISTANCE)),
+            PropertyFactory.iconAnchor(Property.ICON_ANCHOR_CENTER),
+            PropertyFactory.symbolSortKey(Expression.get("pr")),
+        ),
+    )
+}
+
+private fun mineAt(map: MapLibreMap, at: PointF, context: Context): String? {
+    val reach = 22 * context.resources.displayMetrics.density
+    val box = RectF(at.x - reach, at.y - reach, at.x + reach, at.y + reach)
+    return map.queryRenderedFeatures(box, LAYER_MINE).firstOrNull { it.hasProperty("mine_id") }?.getStringProperty("mine_id")
+}
+
+/** A white disc with a moss ring and the broadleaf in moss: a tree of yours with no photograph yet. */
+private fun minePinBitmap(context: Context): Bitmap {
+    val metrics = context.resources.displayMetrics
+    val density = metrics.density
+    val size = (PinRules.PIN_SIZE * density).toInt()
+    val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
+    bitmap.density = metrics.densityDpi
+    val canvas = Canvas(bitmap)
+    val c = size / 2f
+    val paint = Paint(Paint.ANTI_ALIAS_FLAG)
+    paint.color = Color.WHITE
+    canvas.drawCircle(c, c, c - 2 * density, paint)
+    paint.color = MOSS
+    paint.style = Paint.Style.STROKE
+    paint.strokeWidth = 3 * density
+    canvas.drawCircle(c, c, c - 2.5f * density, paint)
+    paint.style = Paint.Style.FILL
+    val glyph = 20 * density
+    canvas.save()
+    canvas.translate((size - glyph) / 2, (size - glyph) / 2)
+    canvas.scale(glyph / 40f, glyph / 40f)
+    for (part in SpeciesIcons.icons["broadleaf"].orEmpty()) {
+        paint.alpha = (part.alpha * 255).toInt()
+        when (part) {
+            is SpeciesIcons.Part.Oval -> canvas.drawOval(RectF(part.left, part.top, part.right, part.bottom), paint)
+            is SpeciesIcons.Part.Shape -> PathParser.createPathFromPathData(part.d)?.let { canvas.drawPath(it, paint) }
+        }
+    }
+    canvas.restore()
+    return bitmap
+}
+
+/** Your photograph in the disc, filled to the edge, with an ink ring where ours is white. */
+private fun photoPinBitmap(context: Context, photo: Bitmap): Bitmap {
+    val metrics = context.resources.displayMetrics
+    val density = metrics.density
+    val size = (PinRules.PIN_SIZE * density).toInt()
+    val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
+    bitmap.density = metrics.densityDpi
+    val canvas = Canvas(bitmap)
+    val c = size / 2f
+    val r = c - 2 * density
+    val paint = Paint(Paint.ANTI_ALIAS_FLAG)
+    paint.color = Color.WHITE
+    canvas.drawCircle(c, c, r, paint)
+    canvas.save()
+    canvas.clipPath(android.graphics.Path().apply { addCircle(c, c, r, android.graphics.Path.Direction.CW) })
+    val scale = maxOf(2 * r / photo.width, 2 * r / photo.height)
+    val w = photo.width * scale
+    val h = photo.height * scale
+    canvas.drawBitmap(photo, null, RectF(c - w / 2, c - h / 2, c + w / 2, c + h / 2), paint)
+    canvas.restore()
+    paint.color = INK
+    paint.style = Paint.Style.STROKE
+    paint.strokeWidth = 3 * density
+    canvas.drawCircle(c, c, c - 2.5f * density, paint)
+    return bitmap
+}
+
+private val INK = Color.rgb(0x26, 0x30, 0x1E)

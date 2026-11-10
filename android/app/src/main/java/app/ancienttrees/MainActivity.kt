@@ -31,6 +31,8 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -272,9 +274,28 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         }
     }
 
+    // THE ONE-LINE CONFIRMATION (SnackBar.kt, the iPhone's SaveHeart.swift).
+    var snack by remember { mutableStateOf<app.ancienttrees.ui.Snack?>(null) }
+    val addedText = androidx.compose.ui.res.stringResource(R.string.snack_added)
+    val removedText = androidx.compose.ui.res.stringResource(R.string.snack_removed)
+    val signedInText = androidx.compose.ui.res.stringResource(R.string.snack_signed_in)
+
     fun heart(t: Tree) {
         if (signedIn) {
+            val adding = t.id !in saves.hearts
             scope.launch { saves.toggle(t.id) }
+            snack = if (adding) {
+                app.ancienttrees.ui.Snack(addedText, onView = {
+                    open = null
+                    myLane = app.ancienttrees.ui.TreesLane.WANT
+                    tab = 2
+                })
+            } else {
+                // A save you can put back is not a question: removed at once, with Undo.
+                app.ancienttrees.ui.Snack(removedText, onUndo = {
+                    scope.launch { if (t.id !in saves.hearts) saves.toggle(t.id) }
+                })
+            }
         } else {
             pendingHeart = t
             asking = true
@@ -319,6 +340,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 }
         }
         onLinkRead()
+    }
+    // "You are signed in", after the person signed in on the sheet (not after a
+    // quiet restore at launch): ContentView's onChange(of: isSignedIn).
+    LaunchedEffect(signedIn) {
+        if (signedIn && asking) snack = app.ancienttrees.ui.Snack(signedInText, icon = app.ancienttrees.ui.SignedInIcon)
     }
     LaunchedEffect(signedIn) {
         if (!signedIn) {
@@ -457,7 +483,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             app.ancienttrees.ui.LocalPlaceHost provides app.ancienttrees.ui.PlaceHost(
                 signedIn = signedIn,
                 email = (account.state as? SignIn.SignedIn)?.email,
-                token = { if (signedIn) account.fresh()?.accessToken else null },
+                // Asked at the moment of use: a sheet opened before signing in still gets the new session.
+                token = { account.fresh()?.accessToken },
                 signIn = { reason, then ->
                     signInReason = reason
                     pendingAfterSignIn = then
@@ -483,6 +510,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     asking = true
                 },
                 onOpen = { open = it },
+                mine = if (signedIn || launch.signedIn) myTrees.yoursOnly else emptyList(),
+                minePhoto = { path -> myTrees.photoBytes(path) },
+                onMine = { id -> openMine = id },
+                myTrees = myTrees,
                 onCollect = { collect(it) },
                 onAddTree = { open = null },
                 onShare = { t -> share(context, t) },
@@ -500,11 +531,14 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 signedIn = signedIn,
                 email = (account.state as? SignIn.SignedIn)?.email,
                 wantToVisit = saves.hearts,
-                token = { if (signedIn) account.fresh()?.accessToken else null },
+                // Asked at the moment of use: a sheet opened before signing in still gets the new session.
+                token = { account.fresh()?.accessToken },
                 refresh = { store.refresh(catalogue?.version)?.let { catalogue = it } },
                 scrollToTop = discoverTop,
                 discoverTo = launch.args.firstOrNull { it.startsWith("-discoverto=") }?.removePrefix("-discoverto="),
                 openCollection = collectionLink,
+                // No ambassador row for a place you already look after (Home.swift).
+                myPlaces = profiles.myPlaces.map { it.placeName },
                 act = DiscoverActions(
                     openTree = { open = it },
                     openPlace = { hit ->
@@ -740,6 +774,15 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 onDismiss = { asking = false; signInReason = null; pendingHeart = null; pendingCollect = null; pendingAfterSignIn = null },
             )
         }
+        app.ancienttrees.ui.SnackBar(
+            snack = snack,
+            // Above the floating bar on a tab's root, just above the action bar on a tree page.
+            lift = if (open != null) androidx.compose.ui.unit.Dp(96f) else androidx.compose.ui.unit.Dp(92f),
+            viewLabel = androidx.compose.ui.res.stringResource(R.string.snack_view),
+            undoLabel = androidx.compose.ui.res.stringResource(R.string.snack_undo),
+            dismiss = { snack = null },
+            modifier = Modifier.align(Alignment.BottomCenter).windowInsetsPadding(androidx.compose.foundation.layout.WindowInsets.navigationBars),
+        )
         androidx.compose.animation.AnimatedVisibility(
             visible = showingCover,
             enter = androidx.compose.animation.EnterTransition.None,
@@ -764,6 +807,9 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     located = located,
                     host = app.ancienttrees.ui.CollectHost(
                         account = account,
+                        // Your own trees within 30 m lead the list (CollectSheet.swift).
+                        mine = myTrees,
+                        openMine = { openMine = it },
                         signedIn = signedIn || launch.signedIn,
                         collected = saves.collected,
                         votes = votes,
@@ -800,6 +846,15 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         scope.launch { if (!Collector.saveDraft(account, saved, city)) collectFailed = true else myTrees.load(force = true) }
                     },
                     onDiscard = { draft = null },
+                    // Saved here, then the page stays as your tree with Share (TreeDetail.swift, mine).
+                    account = account,
+                    mine = myTrees,
+                    onCity = { slug, name ->
+                        val t = cat.trees(slug).firstOrNull()
+                        draft = null
+                        tab = 0
+                        go = System.nanoTime() to SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0)
+                    },
                 )
             }
         }
