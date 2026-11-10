@@ -85,8 +85,11 @@ private val ITEMS = listOf(
 @Composable
 fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: Modifier = Modifier) {
     val brand = Brand.colors
-    val glass = brand.ground.copy(alpha = 0.92f)
-    val wash = brand.ink.copy(alpha = 0.06f)
+    // OPAQUE, measured off the iPhone's shots (2026-11-10): its regularMaterial
+    // is frosted to near-opaque, so nothing behind it is legible; Android has no
+    // blur, and at 92 percent the rows under the bar read straight through it.
+    val glass = brand.ground
+    val wash = brand.ink.copy(alpha = 0.14f)
     val edge = Color.White.copy(alpha = 0.25f)
     Row(
         horizontalArrangement = Arrangement.spacedBy(10.dp),
@@ -113,7 +116,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
                     .width(itemWidth)
                     .height(50.dp)
                     .shadow(3.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.06f), spotColor = Color.Black.copy(alpha = 0.06f))
-                    .background(brand.ground.copy(alpha = 0.92f), CircleShape),
+                    .background(brand.ground, CircleShape),
             )
             Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                 ITEMS.forEachIndexed { i, item ->
