@@ -21,6 +21,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 night run (07:37 UTC): nothing shipped
+
+- Rung 1 empty (no photographs or notes waiting). health.py: live site behind main, only 6 of 12 knocks delivered; dispatched a deploy at the end. Writable pile is 10 weak leads (Tucson campus accessions, a Vienna register pair), so refill: San Francisco verify pass (sixth on that register) found 0 new trees; all nine unmined rows were already judged. Wall set for 48h. Phoenix scouting retry was already retried 2026-11-04 (not importable), so nothing new there. pagegaps lists only species, park and Thailand pages, which STRICT_CUT and the trim keep out of Google, so skipped.
+- For the next run: the unmined-lead pile needs sources (930 leads), but no machine fills that; the 28 held trees go through the daily publish.
+
 ## 2026-11-09 daily publish (scheduled task): 25 trees into the app
 
 - **What went on main (c6b78d493), app only under APP FIRST, no web page or place page:** Cincinnati 8, St. Louis 6, Indianapolis +3 (ind_002 to 004), Lexington (Kentucky) 2, Huntsville (Alabama) 2, Birmingham (Alabama) 1, Brighton +3 (bhm_007 to 009). None has a photograph yet. Preflight 0 problems; the 25 is this task's own limit, the pace counts nothing while APP FIRST holds. Done from a worktree on the newest main, because the shared checkout was 62 commits behind.
