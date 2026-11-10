@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 session: Android map tab ported from the iPhone (parity session 2)
+
+- **Product (Android, not in any store):** the map tab is now the iPhone's, ported from MapTab.swift, BottomSheet.swift, TreeMap.swift, TreeRow.swift, TreeCard.swift, TreePlaceSheet.swift, MapSearch.swift and SpeciesPicker.swift. The sheet has the iPhone's four stops and its drag rules (below full the sheet moves, at full the list scrolls, down from the top of the list brings it back), a tap on the peek raises it, and a flick lands on the nearest stop. Search field fixed at the top, the four chips (Want to visit and Collected ask for sign-in first), the count under the grip, Highlights shelf, a Collected shelf, every tree in view as a row, the tapped pin's card with share and close, the Map pill at full height, the locate arrow and the location-off chip riding the sheet. The search page has the iPhone's lanes, Near you and Places worth a trip, and a picked city or country shows only its own trees until a finger moves the map or the cross clears it. The map opens on the person, else Dam square, with a blue dot that follows; it aims into the strip between the chips and the sheet.
+- **Speed:** the catalogue is read row by row instead of as one 11.5 MB object, rows are read on every core, and a binary snapshot of our own catalogue makes later launches skip the JSON. On the one-core emulator under a loaded Mac the first read still takes about ten seconds; a real phone is not measured yet.
+- **Parity:** `scripts/android_parity.py` now takes the iPhone sweep's own arguments (appsweep picks the subject trees, so map-pin is lod_001 on both), stands Android at Dam square like the sweep, waits for the catalogue instead of guessing, and has a search frame. map, map-full, map-pin and search sit side by side in out/parity/index.html; every remaining difference is listed in data/android-parity.json (among them: build 42's Airbnb sheet is decided in this LOG on 11-08 but not in the Swift on main yet, so Android follows the Swift; recent searches, the town lookup, the location recovery sheet, your own trees and the bookmark snackbar are not ported yet).
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-11](archive/LOG-2026-11.md)
