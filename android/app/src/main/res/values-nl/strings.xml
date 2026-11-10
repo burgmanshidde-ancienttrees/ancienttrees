@@ -6,4 +6,13 @@
     <string name="photo_credit">Foto: %1$s</string>
     <string name="back">Terug</string>
     <string name="close">Sluiten</string>
+    <string name="location_off">Locatie uit</string>
+    <string name="use_my_location">Gebruik mijn locatie</string>
+    <string name="turn_on_location">Zet locatie aan</string>
+    <string name="my_location">Mijn locatie</string>
+    <string name="zoom_for_more">Zoom in om de rest te zien</string>
+    <plurals name="trees_in_view">
+        <item quantity="one">1 boom</item>
+        <item quantity="other">%1$d bomen</item>
+    </plurals>
 </resources>

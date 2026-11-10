@@ -6,6 +6,7 @@
 
 package app.ancienttrees.map
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -31,8 +32,13 @@ import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
+import app.ancienttrees.feed.Here
 import app.ancienttrees.feed.Tree
+import app.ancienttrees.feed.ViewBox
 import org.maplibre.android.MapLibre
+import org.maplibre.android.location.LocationComponentActivationOptions
+import org.maplibre.android.location.modes.CameraMode
+import org.maplibre.android.location.modes.RenderMode
 import org.maplibre.android.camera.CameraUpdateFactory
 import org.maplibre.android.geometry.LatLng
 import org.maplibre.android.maps.MapLibreMap
@@ -61,13 +67,22 @@ private const val KEY_ID = "at_id"
 private val TAPPABLE = arrayOf(LAYER_PINS, LAYER_FAR, LAYER_DOTS, LAYER_MINI)
 private val MOSS = Color.rgb(51, 89, 51)
 
+/**
+ * [locationOn]: the person has said yes, so the blue dot shows and the map goes
+ * to them once. [recentre] counts presses of the my-location button.
+ * [onView] hears where the map now looks and, when known, where the person is.
+ */
 @Composable
 fun TreeMapView(
     trees: List<Tree>,
     selected: Tree?,
     onSelect: (Tree?) -> Unit,
+    locationOn: Boolean,
+    recentre: Int,
+    onView: (ViewBox, Here?) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val latestView by rememberUpdatedState(onView)
     val context = LocalContext.current
     val lifecycle = LocalLifecycleOwner.current.lifecycle
     val dark = isSystemInDarkTheme()
@@ -91,6 +106,7 @@ fun TreeMapView(
                     installLayers(style)
                     ready = map to style
                 }
+                map.addOnCameraIdleListener { latestView(viewBox(map), here(map)) }
                 map.addOnMapClickListener { point ->
                     latestSelect(treeAt(map, map.projection.toScreenLocation(point), context, latestById))
                     true
@@ -128,6 +144,23 @@ fun TreeMapView(
         )
     }
 
+    // THE BLUE DOT, only once the person has said yes: switching it on is what
+    // would otherwise make the system ask. The first fix brings the map to them;
+    // after that the map is theirs until they press my location.
+    var located by remember { mutableStateOf(false) }
+    LaunchedEffect(ready, locationOn) {
+        val (map, style) = ready ?: return@LaunchedEffect
+        if (!locationOn || located) return@LaunchedEffect
+        if (startLocation(map, style, context)) {
+            located = true
+            follow(map)
+        }
+    }
+    LaunchedEffect(recentre) {
+        val map = ready?.first ?: return@LaunchedEffect
+        if (recentre > 0 && located) follow(map)
+    }
+
     // The credit stands clear of the system's navigation bar.
     val bottomInset = WindowInsets.navigationBars.getBottom(LocalDensity.current)
     LaunchedEffect(ready, bottomInset) {
@@ -138,6 +171,39 @@ fun TreeMapView(
 
     AndroidView(factory = { mapView }, modifier = modifier)
 }
+
+private const val NEAR_ZOOM = 14.0
+
+@SuppressLint("MissingPermission")
+private fun startLocation(map: MapLibreMap, style: Style, context: Context): Boolean = runCatching {
+    val component = map.locationComponent
+    component.activateLocationComponent(
+        LocationComponentActivationOptions.builder(context, style).build(),
+    )
+    component.isLocationComponentEnabled = true
+    component.renderMode = RenderMode.NORMAL
+    true
+}.getOrDefault(false)
+
+/** To the person, once: tracking lets go by itself as soon as they pan. */
+private fun follow(map: MapLibreMap) {
+    runCatching {
+        val component = map.locationComponent
+        component.cameraMode = CameraMode.TRACKING
+        component.zoomWhileTracking(maxOf(map.cameraPosition.zoom, NEAR_ZOOM))
+    }
+}
+
+private fun viewBox(map: MapLibreMap): ViewBox {
+    val b = map.projection.visibleRegion.latLngBounds
+    return ViewBox(b.latitudeSouth, b.longitudeWest, b.latitudeNorth, b.longitudeEast)
+}
+
+private fun here(map: MapLibreMap): Here? = runCatching {
+    val c = map.locationComponent
+    if (!c.isLocationComponentActivated || !c.isLocationComponentEnabled) return@runCatching null
+    c.lastKnownLocation?.let { Here(it.latitude, it.longitude) }
+}.getOrNull()
 
 /** The same keys on every feature, always: a source with uneven properties has emptied the iPhone's map. */
 private fun collection(trees: List<Tree>): FeatureCollection =

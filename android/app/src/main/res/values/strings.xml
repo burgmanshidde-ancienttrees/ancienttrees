@@ -7,4 +7,13 @@
     <string name="photo_credit">Photo: %1$s</string>
     <string name="back">Back</string>
     <string name="close">Close</string>
+    <string name="location_off">Location off</string>
+    <string name="use_my_location">Use my location</string>
+    <string name="turn_on_location">Turn on location</string>
+    <string name="my_location">My location</string>
+    <string name="zoom_for_more">Zoom in to see the rest</string>
+    <plurals name="trees_in_view">
+        <item quantity="one">1 tree</item>
+        <item quantity="other">%1$d trees</item>
+    </plurals>
 </resources>

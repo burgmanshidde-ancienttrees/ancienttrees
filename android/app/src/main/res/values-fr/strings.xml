@@ -6,4 +6,13 @@
     <string name="photo_credit">Photo : %1$s</string>
     <string name="back">Retour</string>
     <string name="close">Fermer</string>
+    <string name="location_off">Localisation désactivée</string>
+    <string name="use_my_location">Utiliser ma position</string>
+    <string name="turn_on_location">Activer la localisation</string>
+    <string name="my_location">Ma position</string>
+    <string name="zoom_for_more">Zoomez pour voir les autres</string>
+    <plurals name="trees_in_view">
+        <item quantity="one">1 arbre</item>
+        <item quantity="other">%1$d arbres</item>
+    </plurals>
 </resources>
