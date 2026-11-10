@@ -31,6 +31,7 @@ import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
@@ -78,8 +79,10 @@ fun SheetButtonView(b: SheetButton, modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxWidth()
             .height(if (quiet) 44.dp else 48.dp)
-            .background(bg, RoundedCornerShape(50))
-            .clickable(role = Role.Button, onClick = b.action),
+            // Pressed dims the whole capsule, fill and label (SheetButtonStyle .opacity(0.8)).
+            .clip(RoundedCornerShape(50))
+            .clickable(role = Role.Button, onClick = b.action)
+            .background(bg, RoundedCornerShape(50)),
     ) {
         b.icon?.let {
             Icon(it, null, tint = fg, modifier = Modifier.size(18.dp))
@@ -118,11 +121,9 @@ fun BrandSheet(
     extra: @Composable ColumnScope.() -> Unit = {},
 ) {
     val brand = Brand.colors
-    ModalBottomSheet(
-        onDismissRequest = onDismiss,
-        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
-        containerColor = brand.ground,
-    ) {
+    AppSheet(onDismissRequest = onDismiss, containerColor = brand.ground) {
+        // A button slides the sheet down first, then acts (Sheet.kt, the iPhone's dismiss()).
+        val close = LocalSheetClose.current
         Box {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
@@ -162,7 +163,7 @@ fun BrandSheet(
                     verticalArrangement = Arrangement.spacedBy(12.dp),
                     modifier = Modifier.fillMaxWidth().padding(top = 22.dp),
                 ) {
-                    for (b in buttons) SheetButtonView(b)
+                    for (b in buttons) SheetButtonView(b.copy(action = { close(b.action) }))
                 }
                 footnote?.let {
                     Text(
@@ -184,12 +185,15 @@ fun BrandSheet(
 fun SheetCloseButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
     val brand = Brand.colors
     val label = stringResource(R.string.close)
+    // Inside a sheet the cross slides it down first (Sheet.kt).
+    val close = LocalSheetClose.current
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
             .padding(end = 10.dp)
             .size(48.dp)
-            .clickable(role = Role.Button, onClick = onClick)
+            .clip(CircleShape)
+            .clickable(role = Role.Button) { close(onClick) }
             .semantics { contentDescription = label },
     ) {
         Box(Modifier.size(30.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {

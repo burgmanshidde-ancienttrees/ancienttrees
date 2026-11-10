@@ -36,6 +36,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
@@ -158,8 +159,10 @@ fun PhotoViewer(photos: List<Photo>, startAt: Int, onClose: () -> Unit) {
                         .statusBarsPadding()
                         .padding(horizontal = 8.dp)
                         .size(44.dp)
-                        .background(Color.Black.copy(alpha = 0.45f), CircleShape)
+                        .clip(CircleShape)
                         .clickable(role = Role.Button, onClick = onClose)
+                        // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                        .background(Color.Black.copy(alpha = 0.45f), CircleShape)
                         .semantics { contentDescription = close },
                 ) {
                     Icon(Sym.Close, null, tint = Color.White, modifier = Modifier.size(20.dp))

@@ -132,6 +132,8 @@ class TreePageActions(
     val onAddPhoto: (() -> Unit)? = null,
     /** The species name: the species page (Species.swift), else the map's filter. */
     val onSpecies: ((String) -> Unit)? = null,
+    /** The map of this one tree, pushed on the stack (TreeMapPage.kt, Route.treeMap). */
+    val onFullMap: (() -> Unit)? = null,
     /** "Approximate location": the map to move the pin on (PlacePin.swift), else the report sheet. */
     val onPlacePin: (() -> Unit)? = null,
     /** Remove from collected, at once, with Undo in the snackbar (TreeDetail.uncollectWithUndo). */
@@ -262,7 +264,9 @@ private fun TreeDetailInner(
         val frame = tree.photo?.frame
         val heroHeight = if (frame != null && frame > 0) minOf(pageW / frame.toFloat(), pageH * 0.6f) else 300.dp
 
-        Column(Modifier.fillMaxSize().verticalScroll(scroll)) {
+        // NO STRETCH OVER THE HERO (Airbnb's line, Hidde 2026-11-10): Android's
+        // overscroll stays everywhere else, but it distorted the photograph here.
+        Column(Modifier.fillMaxSize().verticalScroll(scroll, overscrollEffect = null)) {
             // THE PAGE SLIDES OVER THE PHOTOGRAPH: the hero keeps half the scroll.
             Box(Modifier.zIndex(0f).graphicsLayer { translationY = scroll.value * 0.5f }) {
                 Hero(
@@ -272,7 +276,7 @@ private fun TreeDetailInner(
                     pager = pager,
                     onToggleMap = { showingMap = !showingMap },
                     onOpenPhoto = { viewerAt = it },
-                    onFullMap = { actions.onGo(SearchHit.OneTree(tree)) },
+                    onFullMap = { actions.onFullMap?.invoke() ?: actions.onGo(SearchHit.OneTree(tree)) },
                     onAddPhoto = { startAddPhoto() },
                 )
             }
@@ -423,8 +427,10 @@ private fun Hero(
                     .align(Alignment.BottomStart)
                     .padding(10.dp)
                     .size(44.dp)
-                    .background(brand.ground.copy(alpha = 0.92f), CircleShape)
+                    .clip(CircleShape)
                     .clickable(role = Role.Button, onClick = onFullMap)
+                    // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                    .background(brand.ground.copy(alpha = 0.92f), CircleShape)
                     .semantics { contentDescription = full },
                 contentAlignment = Alignment.Center,
             ) {
@@ -442,6 +448,8 @@ private fun Hero(
                         Modifier
                             .fillMaxSize()
                             .clickable(interactionSource = noTap, indication = null) { onOpenPhoto(i) },
+                        // The photograph this page is about skips the queue (TreePhoto urgent).
+                        urgent = i == 0,
                         fallback = {
                             val have = cachedImage(shot.card)
                             if (have != null) {
@@ -579,8 +587,10 @@ private fun AddPhotoButton(onClick: () -> Unit) {
         horizontalArrangement = Arrangement.spacedBy(6.dp),
         modifier = Modifier
             .heightIn(min = 44.dp)
-            .background(brand.moss, CircleShape)
+            .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.moss, CircleShape)
             .semantics { contentDescription = label }
             .padding(horizontal = 14.dp),
     ) {
@@ -597,7 +607,7 @@ private fun AddPhotoPill(enabled: Boolean, onClick: () -> Unit) {
     Box(
         Modifier
             .heightIn(min = 44.dp)
-            .clickable(enabled = enabled, role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onClick)
+            .clickable(enabled = enabled, role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onClick)
             .semantics { contentDescription = label },
         contentAlignment = Alignment.Center,
     ) {
@@ -633,8 +643,10 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
             Modifier
                 .size(44.dp)
                 .shadow(2.dp, CircleShape)
-                .background(glass, CircleShape)
+                .clip(CircleShape)
                 .clickable(role = Role.Button, onClick = onBack)
+                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                .background(glass, CircleShape)
                 .semantics { contentDescription = back }
                 .testTag("back-to-map"),
             contentAlignment = Alignment.Center,
@@ -723,7 +735,7 @@ private fun Header(tree: Tree, votes: MyVotes, counts: VoteCounts, signedIn: Boo
                     maxLines = 1,
                     modifier = Modifier
                         .heightIn(min = 44.dp)
-                        .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) {
+                        .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) {
                             actions.onGo(SearchHit.City(tree.citySlug, tree.city, tree.lat, tree.lng))
                         }
                         .semantics { contentDescription = see }
@@ -770,7 +782,7 @@ private fun WorthItButton(tree: Tree, votes: MyVotes, counts: VoteCounts, signed
         modifier = Modifier
             .heightIn(min = 44.dp)
             .widthIn(min = 44.dp)
-            .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) {
+            .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) {
                 if (!signedIn) actions.onNeedsSignIn { } else tap()
             }
             .semantics { contentDescription = label },
@@ -874,7 +886,7 @@ private fun SpeciesColumn(tree: Tree, actions: TreePageActions) {
         Modifier
             .fillMaxWidth()
             .heightIn(min = 44.dp)
-            .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) {
+            .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) {
                 actions.onSpecies?.invoke(tree.commonName) ?: actions.onGo(SearchHit.Species(tree.commonName))
             }
             .semantics { contentDescription = label },
@@ -1303,7 +1315,7 @@ private fun WorthItView(tree: Tree, account: Account, signedIn: Boolean, votes: 
             modifier = Modifier
                 .pull(13.dp, 13.dp)
                 .heightIn(min = 44.dp)
-                .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) { open = !open }
+                .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) { open = !open }
                 .wrapCentreVertically(),
         )
         if (open) {
@@ -1366,8 +1378,10 @@ private fun SmallBordered(label: String, enabled: Boolean = true, onClick: () ->
     Box(
         Modifier
             .heightIn(min = 28.dp)
-            .background(brand.moss.copy(alpha = if (enabled) 0.12f else 0.06f), CircleShape)
+            .clip(CircleShape)
             .clickable(enabled = enabled, role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.moss.copy(alpha = if (enabled) 0.12f else 0.06f), CircleShape)
             .padding(horizontal = 11.dp, vertical = 5.dp),
         contentAlignment = Alignment.Center,
     ) {
@@ -1399,8 +1413,10 @@ private fun DiscoverChip(title: String, icon: ImageVector, onClick: () -> Unit) 
         horizontalArrangement = Arrangement.spacedBy(6.dp),
         modifier = Modifier
             .heightIn(min = 44.dp)
-            .background(brand.moss.copy(alpha = 0.10f), CircleShape)
+            .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.moss.copy(alpha = 0.10f), CircleShape)
             .padding(horizontal = 14.dp, vertical = 8.dp),
     ) {
         Icon(icon, null, tint = brand.ink, modifier = Modifier.size(14.dp))
@@ -1457,8 +1473,10 @@ internal fun BigButton(label: String, icon: ImageVector, modifier: Modifier = Mo
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier
             .height(48.dp)
-            .background(brand.moss, CircleShape)
-            .clickable(role = Role.Button, onClick = onClick),
+            .clip(CircleShape)
+            .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.moss, CircleShape),
     ) {
         Icon(icon, null, tint = brand.onMoss, modifier = Modifier.size(21.dp)) // 16 semibold
         Spacer(Modifier.width(8.dp))

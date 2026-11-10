@@ -121,7 +121,6 @@ private fun OwnTreeInner(
     val brand = Brand.colors
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
-    BackHandler(onBack = onBack)
     // The live record, so an edit shows at once.
     val s = mine.byId(id)
     if (s == null) {
@@ -179,7 +178,7 @@ private fun OwnTreeInner(
                                 textDecoration = TextDecoration.Underline,
                                 maxLines = 1,
                                 modifier = Modifier
-                                    .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) {
+                                    .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) {
                                         onCity(place.second, place.first)
                                     }
                                     .semantics { contentDescription = see },
@@ -238,7 +237,7 @@ private fun OwnTreeInner(
         }
     }
 
-    editing?.let { field ->
+    Lingering(editing) { field ->
         FieldEditor(
             field = field,
             initial = when (field) {
@@ -386,7 +385,7 @@ private fun AddValue(label: String, onClick: () -> Unit) {
     Row(
         Modifier
             .heightIn(min = 44.dp)
-            .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onClick)
+            .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onClick)
             .semantics { contentDescription = label },
         verticalAlignment = Alignment.Top,
         horizontalArrangement = Arrangement.spacedBy(4.dp),
@@ -546,9 +545,8 @@ private fun FieldEditor(field: EditableField, initial: String, onCancel: () -> U
             EditableField.STORY -> R.string.ot_prompt_story
         },
     )
-    ModalBottomSheet(
+    AppSheet(
         onDismissRequest = onCancel,
-        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
         containerColor = brand.ground,
     ) {
         Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(bottom = 16.dp).imePadding()) {

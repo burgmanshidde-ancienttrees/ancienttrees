@@ -116,7 +116,6 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
     val brand = Brand.colors
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
-    BackHandler(onBack = onBack)
     var refused by remember { mutableStateOf(false) }
     var showingLegal by remember { mutableStateOf(false) }
     var showingDelete by remember { mutableStateOf(false) }
@@ -449,17 +448,20 @@ fun BarSheet(
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val brand = Brand.colors
-    ModalBottomSheet(
+    AppSheet(
         onDismissRequest = onDismiss,
-        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
         containerColor = if (grouped) brand.surfaceMuted else brand.ground,
+        // The bar is the top of this sheet; the handle sits over it (BrandSheetHandle).
         dragHandle = null,
     ) {
         Column(Modifier.fillMaxWidth().let { if (grouped) it.fillMaxHeight(0.94f) else it }.navigationBarsPadding()) {
             Box(Modifier.fillMaxWidth().height(56.dp)) {
+                BrandSheetHandle(Modifier.align(Alignment.TopCenter))
+                // Cancel slides the sheet down first (Sheet.kt).
+                val close = LocalSheetClose.current
                 leading?.let { (label, act) ->
                     Text(label, fontSize = 17.sp, color = brand.moss, modifier = Modifier.align(Alignment.CenterStart)
-                        .clickable(role = Role.Button, onClick = act).padding(horizontal = 16.dp, vertical = 12.dp))
+                        .clickable(role = Role.Button) { close(act) }.padding(horizontal = 16.dp, vertical = 12.dp))
                 }
                 Text(title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, modifier = Modifier.align(Alignment.Center))
                 trailing?.let { (label, act) ->

@@ -146,7 +146,6 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
     val brand = Brand.colors
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
-    BackHandler(onBack = onBack)
     val demo = DemoPeople.on(host.args)
     val me = host.userId
     var query by remember { mutableStateOf("") }
@@ -563,7 +562,6 @@ fun PersonProfileScreen(host: PeopleHost, userId: String, onBack: () -> Unit) = 
 private fun PersonInner(host: PeopleHost, userId: String, onBack: () -> Unit) {
     val brand = Brand.colors
     val scope = rememberCoroutineScope()
-    BackHandler(onBack = onBack)
     val demo = DemoPeople.on(host.args)
     var profile by remember { mutableStateOf<Profiles.PublicProfile?>(null) }
     var loaded by remember { mutableStateOf(false) }
@@ -681,7 +679,7 @@ private fun LaneTabs(lane: Int, select: (Int) -> Unit) {
             for ((i, label) in listOf(R.string.person_lane_collected, R.string.want_to_visit).withIndex()) {
                 val on = lane == i
                 Column(
-                    Modifier.width(androidx.compose.foundation.layout.IntrinsicSize.Max).clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) { select(i) }
+                    Modifier.width(androidx.compose.foundation.layout.IntrinsicSize.Max).clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) { select(i) }
                         .testTag(if (i == 0) "person-lane-collected" else "person-lane-want"),
                 ) {
                     Text(stringResource(label), fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = if (on) brand.ink else brand.inkSoft,

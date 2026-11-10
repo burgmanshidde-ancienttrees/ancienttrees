@@ -113,9 +113,8 @@ fun ContributeSheet(
     // The gate at the entrance, as the website does on arrival.
     LaunchedEffect(Unit) { if (!signedIn) onNeedsSignIn() }
 
-    ModalBottomSheet(
+    AppSheet(
         onDismissRequest = onDismiss,
-        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
         containerColor = brand.surfaceMuted,
     ) {
         Column(

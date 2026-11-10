@@ -75,6 +75,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // Photographs on disk between launches (RemoteImage.kt, the iPhone's ImageStore.prepareCache).
+        app.ancienttrees.ui.ImageStore.prepareCache(applicationContext)
         link = intent?.data
         launch = LaunchArgs.from(intent, applicationInfo)
         setContent {
@@ -150,35 +152,32 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val context = LocalContext.current
     val store = remember { CatalogueStore(context.applicationContext) }
     var catalogue by remember { mutableStateOf<Catalogue?>(null) }
-    var selected by remember { mutableStateOf<Tree?>(null) }
-    var open by remember { mutableStateOf<Tree?>(null) }
+    // A place, species or tree a tree page sends to the map.
+    var go by remember { mutableStateOf<Pair<Long, SearchHit>?>(null) }
+    // THE TABS AND THEIR STACKS (Pages.kt, ContentView.swift's three paths).
+    val nav = remember { app.ancienttrees.ui.Nav(if (launch.tab == 1 || launch.tab == 2) launch.tab!! else 0) }
+    fun openTree(t: Tree) = nav.push(app.ancienttrees.ui.Page.TreePage(t.id))
+    /** A place on the map: the map's stack empties and the map tab shows (navigator.searchOnMap). */
+    fun goOnMap(hit: SearchHit) {
+        nav.clear(0)
+        nav.tab = 0
+        go = System.nanoTime() to hit
+    }
     var here by remember { mutableStateOf<Here?>(launch.at?.let { Here(it.first, it.second) }) }
     val scope = rememberCoroutineScope()
     val account = remember { Account(context.applicationContext) }
     val saves = remember { Saves(account) }
     // My trees' server half (account/MyTrees.kt): your own finds, tips and profile, memory only.
     val myTrees = remember { app.ancienttrees.account.MyTrees(account) }
-    // A tree of your own, open (ContentView .mine).
-    var openMine by remember { mutableStateOf<String?>(null) }
     var myLane by remember { mutableStateOf(if (launch.laneWant) app.ancienttrees.ui.TreesLane.WANT else app.ancienttrees.ui.TreesLane.SEEN) }
     // The tree page's thumb and reports (WorthIt.swift): memory only.
     val votes = remember { app.ancienttrees.account.MyVotes() }
     val counts = remember { app.ancienttrees.account.VoteCounts() }
-    // A place, species or tree a tree page sends to the map.
-    var go by remember { mutableStateOf<Pair<Long, SearchHit>?>(null) }
-    var tab by remember { mutableIntStateOf(if (launch.tab == 1 || launch.tab == 2) launch.tab!! else 0) }
-    // A species page (Species.swift), and the tree page it was opened from, which
-    // back returns to: the iPhone's navigation stack two deep.
-    var speciesPage by remember { mutableStateOf<String?>(null) }
-    var underSpecies by remember { mutableStateOf<Tree?>(null) }
+    // A species page (Species.swift), pushed on the stack you are on.
     // The pin map (PlacePin.swift) and the species chooser (SpeciesChooser.swift) over a tree page.
     var placing by remember { mutableStateOf<Tree?>(null) }
     var choosingSpeciesFor by remember { mutableStateOf<Tree?>(null) }
-    fun openSpecies(name: String) {
-        underSpecies = open
-        open = null
-        speciesPage = name
-    }
+    fun openSpecies(name: String) = nav.push(app.ancienttrees.ui.Page.Species(name))
     // What somebody was doing when they were asked to sign in, finished when
     // they land ("device" in data/cross-device.json: a pending intent; held in
     // memory only here).
@@ -191,7 +190,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // SIGN-IN AND PROFILE (ProfilePages.kt): settings, people, a person, the editor.
     val profiles = remember { app.ancienttrees.account.Profiles(launch.args) }
     val moderation = remember { app.ancienttrees.ui.Moderation() }
-    val routes = remember { app.ancienttrees.ui.ProfileRoutes(launch.args) }
+    val routes = remember { app.ancienttrees.ui.ProfileRoutes(launch.args, nav) }
     var signInReason by remember { mutableStateOf<app.ancienttrees.ui.SignInReason?>(null) }
     var recovering by remember { mutableStateOf("-refused" in launch.args) }
     // THE REVIEW ASK (ui/ReviewAsk.kt): trees looked at, asked at a pause, drawn at the root.
@@ -287,19 +286,24 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val mergedText = androidx.compose.ui.res.stringResource(R.string.mg_done)
     val signedInText = androidx.compose.ui.res.stringResource(R.string.snack_signed_in)
 
+    // THE THREE HAPTICS (Motion.kt): selection on a save, success on a collect.
+    val view = androidx.compose.ui.platform.LocalView.current
     fun heart(t: Tree) {
         if (signedIn) {
+            app.ancienttrees.ui.Haptics.selection(view)
             val adding = t.id !in saves.hearts
             scope.launch { saves.toggle(t.id) }
             snack = if (adding) {
                 app.ancienttrees.ui.Snack(addedText, onView = {
-                    open = null
+                    // A link to a tab's own list starts at its root (ContentView openWantToVisit).
+                    nav.clear(2)
                     myLane = app.ancienttrees.ui.TreesLane.WANT
-                    tab = 2
+                    nav.tab = 2
                 })
             } else {
                 // A save you can put back is not a question: removed at once, with Undo.
                 app.ancienttrees.ui.Snack(removedText, onUndo = {
+                    if (t.id !in saves.hearts) app.ancienttrees.ui.Haptics.selection(view)
                     scope.launch { if (t.id !in saves.hearts) saves.toggle(t.id) }
                 })
             }
@@ -342,16 +346,16 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         val cat = catalogue ?: return@LaunchedEffect
         val target = app.ancienttrees.feed.WebLink.parse(uri, app.ancienttrees.feed.WebLink.Lookup.of(cat))
         when (target) {
-            is app.ancienttrees.feed.LinkTarget.TreeAt -> cat.tree(target.id)?.let { tab = 0; open = it }
+            // Pushed on the stack you are on, as navigator.push does.
+            is app.ancienttrees.feed.LinkTarget.TreeAt -> cat.tree(target.id)?.let { openTree(it) }
             is app.ancienttrees.feed.LinkTarget.City -> cat.trees(target.slug).firstOrNull()?.let { t ->
-                open = null; tab = 0
-                go = System.nanoTime() to app.ancienttrees.ui.SearchHit.City(target.slug, t.city, t.lat, t.lng)
+                goOnMap(app.ancienttrees.ui.SearchHit.City(target.slug, t.city, t.lat, t.lng))
             }
-            is app.ancienttrees.feed.LinkTarget.Country -> { open = null; tab = 0; go = System.nanoTime() to app.ancienttrees.ui.SearchHit.Country(target.name) }
-            is app.ancienttrees.feed.LinkTarget.SpeciesAt -> { open = null; speciesPage = target.name }
-            is app.ancienttrees.feed.LinkTarget.Collection -> { open = null; tab = 1; collectionLink = System.nanoTime() to target.slug }
+            is app.ancienttrees.feed.LinkTarget.Country -> goOnMap(app.ancienttrees.ui.SearchHit.Country(target.name))
+            is app.ancienttrees.feed.LinkTarget.SpeciesAt -> openSpecies(target.name)
+            is app.ancienttrees.feed.LinkTarget.Collection -> { nav.tab = 1; collectionLink = System.nanoTime() to target.slug }
             is app.ancienttrees.feed.LinkTarget.Person -> routes.openPerson(target.id)
-            is app.ancienttrees.feed.LinkTarget.Map -> { open = null; tab = 0 }
+            is app.ancienttrees.feed.LinkTarget.Map -> { nav.clear(0); nav.tab = 0 }
             // A shared tree of a reader's: the app has no screen for it yet, so the website shows it.
             is app.ancienttrees.feed.LinkTarget.Shared, null ->
                 runCatching {
@@ -394,7 +398,10 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         }
         pendingHeart?.let { t ->
             pendingHeart = null
-            if (t.id !in saves.hearts) saves.toggle(t.id)
+            if (t.id !in saves.hearts) {
+                app.ancienttrees.ui.Haptics.selection(view)
+                saves.toggle(t.id)
+            }
         }
         pendingCollect?.let { t ->
             pendingCollect = null
@@ -447,7 +454,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     val fixedAt = launch.at
     LaunchedEffect(catalogue) {
         val c = catalogue ?: return@LaunchedEffect
-        launch.openTree?.let { id -> c.tree(id)?.let { open = it } }
+        launch.openTree?.let { id -> c.tree(id)?.let { openTree(it) } }
         launch.openTree?.let { id -> c.tree(id) }?.let { t ->
             if (launch.placePin) placing = t
             if (launch.speciesPick) choosingSpeciesFor = t
@@ -457,7 +464,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             val t = c.trees(slug).firstOrNull()
             go = System.nanoTime() to SearchHit.City(slug, t?.city ?: slug, t?.lat ?: 0.0, t?.lng ?: 0.0)
         }
-        launch.openSpecies?.let { speciesPage = it }
+        launch.openSpecies?.let { openSpecies(it) }
         if (launch.signIn) {
             // The sweep's -signin is the keep-a-tree sheet, as on the iPhone.
             signInReason = app.ancienttrees.ui.SignInReason.KeepTree("")
@@ -467,7 +474,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         // The sweep's stand-ins for an account (debug builds only, nothing sent).
         if (launch.mineDemo) myTrees.seedDemo(launch.at?.first ?: DAM_SQUARE.lat, launch.at?.second ?: DAM_SQUARE.lng)
         if (launch.collectedIds.isNotEmpty() || launch.savedIds.isNotEmpty()) saves.seed(launch.collectedIds, launch.savedIds)
-        launch.openMine?.let { openMine = it }
+        launch.openMine?.let { nav.push(app.ancienttrees.ui.Page.Mine(it)) }
     }
     LaunchedEffect(Unit) {
         val started = android.os.SystemClock.elapsedRealtime()
@@ -476,12 +483,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         store.refresh(catalogue?.version)?.let { catalogue = it }
     }
 
-    BackHandler(enabled = open != null) { open = null }
     // A tree page opened counts as seen; closing it is the pause where the review ask may come.
-    LaunchedEffect(open?.id) {
-        val t = open
+    val topTreeId = (nav.top as? app.ancienttrees.ui.Page.TreePage)?.id
+    LaunchedEffect(topTreeId) {
+        val t = topTreeId
         if (t != null) {
-            review.saw(t.id)
+            review.saw(t)
             hadTreeOpen = true
         } else if (hadTreeOpen) {
             hadTreeOpen = false
@@ -492,12 +499,6 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     LaunchedEffect(Unit) {
         if ("-directions" in launch.args) app.ancienttrees.ui.DirectionsAsk.pending = app.ancienttrees.ui.DirectionsAsk.Pending(52.3676, 4.9041, null)
     }
-    BackHandler(enabled = speciesPage != null && open == null) {
-        speciesPage = null
-        open = underSpecies
-        underSpecies = null
-    }
-    BackHandler(enabled = openMine != null && open == null) { openMine = null }
 
     // WHERE YOU ARE: a live fix, kept up to date while the app is open, else
     // Dam square, the iPhone's first-launch-anywhere default (ContentView.origin).
@@ -507,14 +508,17 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // fix, yes, no or unknown, never the fix itself; a tree of your own is "own".
     fun nearOf(lat: Double, lng: Double): String =
         fix?.let { if (app.ancienttrees.feed.Geo.km(it.lat, it.lng, lat, lng) <= 25) "yes" else "no" } ?: "unknown"
-    LaunchedEffect(open?.id) {
-        val t = open ?: return@LaunchedEffect
-        Measure.event("tree_opened", mapOf("tree" to t.id, "near" to nearOf(t.lat, t.lng)))
-    }
-    LaunchedEffect(openMine) {
-        val id = openMine ?: return@LaunchedEffect
-        val m = myTrees.byId(id)
-        Measure.event("tree_opened", mapOf("tree" to "own", "near" to (m?.let { nearOf(it.lat, it.lng) } ?: "unknown")))
+    LaunchedEffect(nav.top) {
+        when (val p = nav.top) {
+            is app.ancienttrees.ui.Page.TreePage -> catalogue?.tree(p.id)?.let { t ->
+                Measure.event("tree_opened", mapOf("tree" to t.id, "near" to nearOf(t.lat, t.lng)))
+            }
+            is app.ancienttrees.ui.Page.Mine -> {
+                val m = myTrees.byId(p.id)
+                Measure.event("tree_opened", mapOf("tree" to "own", "near" to (m?.let { nearOf(it.lat, it.lng) } ?: "unknown")))
+            }
+            else -> Unit
+        }
     }
     val origin = here ?: DAM_SQUARE
     val located = here != null
@@ -525,269 +529,341 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // Tapping Discover while on Discover scrolls back up (navigator.scrollToTop).
     var discoverTop by remember { mutableIntStateOf(0) }
     var discoverSearching by remember { mutableStateOf(false) }
-    BackHandler(enabled = (tab == 1 || tab == 2) && open == null && openMine == null) { tab = 0 }
+    // Android's back on another tab's root goes to the map (a forced difference: the iPhone has no back there).
+    BackHandler(enabled = nav.tab != 0 && nav.stack.isEmpty()) { nav.tab = 0 }
 
-    Box(Modifier.fillMaxSize()) {
-        CompositionLocalProvider(
-            LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
-            app.ancienttrees.ui.LocalSearchAccount provides app.ancienttrees.ui.SearchAccount(
-                signedIn = signedIn,
-                token = { account.fresh()?.accessToken },
-                recentDemo = "-recentdemo" in launch.args,
-                addTree = { openCollect() },
-            ),
-            app.ancienttrees.ui.LocalPlaceHost provides app.ancienttrees.ui.PlaceHost(
-                signedIn = signedIn,
-                email = (account.state as? SignIn.SignedIn)?.email,
-                // Asked at the moment of use: a sheet opened before signing in still gets the new session.
-                token = { account.fresh()?.accessToken },
-                signIn = { reason, then ->
-                    signInReason = reason
-                    pendingAfterSignIn = then
-                    asking = true
-                },
-                openPerson = { routes.openPerson(it) },
-                myPlaces = profiles.myPlaces.map { it.placeName },
-            ),
-        ) {
-            MapTab(
-                catalogue = catalogue,
-                origin = origin,
-                located = located,
-                granted = granted,
-                locationRefused = refused,
-                signedIn = signedIn,
-                launch = MapLaunch(sheet = launch.sheet, select = launch.select, search = launch.search),
-                showDot = granted && fixedAt == null,
-                // After a no, the recovery sheet first (PermissionRecovery.swift), then Settings.
-                onUseMyLocation = { if (refused) recovering = true else askLocation() },
+    val discoverActions = DiscoverActions(
+            openTree = { openTree(it) },
+            openPlace = { hit -> goOnMap(hit) },
+            // A species tile opens its page, as Home.swift's NavigationLink(Route.species).
+            openSpecies = { name -> openSpecies(name) },
+            openPerson = { id -> routes.openPerson(id) },
+            showMap = { nav.tab = 0 },
+            openWantToVisit = {
+                nav.clear(2)
+                myLane = app.ancienttrees.ui.TreesLane.WANT
+                nav.tab = 2
+            },
+            addTree = { openCollect() },
+            signIn = { then ->
+                pendingAfterSignIn = then
+                asking = true
+            },
+            searching = { discoverSearching = it },
+            openPage = { nav.push(app.ancienttrees.ui.Page.Discover(it)) },
+        )
+
+    val settingsHost = app.ancienttrees.ui.SettingsHost(
+        account = account,
+        profiles = profiles,
+        signedIn = shownSignedIn,
+        email = myEmail,
+        locationAllowed = granted,
+        locationRefused = refused,
+        askLocation = { askLocation() },
+        signIn = { asking = true },
+        editProfile = { routes.editProfile = true },
+        openPrivacy = { routes.openPrivacy() },
+        signedOut = { routes.clear() },
+        signInForFeedback = { signInReason = app.ancienttrees.ui.SignInReason.Feedback; asking = true },
+        args = launch.args,
+                )
+
+    val peopleHost = app.ancienttrees.ui.PeopleHost(
+        account = account,
+        profiles = profiles,
+        moderation = moderation,
+        catalogue = catalogue,
+        yourTrees = (saves.hearts + saves.collected).toList(),
+        userId = myId,
+        args = launch.args,
+        signIn = { r -> signInReason = r; asking = true },
+        editName = { routes.editProfile = true },
+        openPerson = { routes.openPerson(it) },
+        openTree = { openTree(it) },
+                )
+
+    // A TREE PAGE on any stack.
+    @Composable
+    fun TreePage(tree: Tree) {
+        TreeDetail(
+            tree = tree,
+            account = account,
+            signedIn = signedIn,
+            fix = if (located) here else null,
+            hearted = tree.id in saves.hearts,
+            collected = tree.id in saves.collected,
+            votes = votes,
+            counts = counts,
+            openPhotoAtStart = launch.photo,
+            openCollectAtStart = "-collectsheet" in launch.args,
+            actions = TreePageActions(
+                onBack = { nav.pop() },
+                onHeart = { heart(tree) },
+                onCollect = { collect(tree) },
+                onShare = { share(context, tree, "tree", "${tree.name}, ${tree.city}.") },
+                onGo = { hit -> goOnMap(hit) },
                 onNeedsSignIn = { then ->
                     pendingAfterSignIn = then
                     asking = true
                 },
-                onOpen = { open = it },
-                mine = if (signedIn || launch.signedIn) myTrees.yoursOnly else emptyList(),
-                minePhoto = { path -> myTrees.photoBytes(path) },
-                onMine = { id -> openMine = id },
-                myTrees = myTrees,
-                onCollect = { collect(it) },
-                onAddTree = { open = null },
-                onShare = { t -> share(context, t) },
-                onSearching = { searching = it },
-                raise = raise,
-                go = go,
-            )
-        }
-        val cat = catalogue
-        if (tab == 1 && cat != null) {
-            DiscoverScreen(
-                catalogue = cat,
-                origin = origin,
-                located = located,
-                signedIn = signedIn,
-                email = (account.state as? SignIn.SignedIn)?.email,
-                wantToVisit = saves.hearts,
-                // Asked at the moment of use: a sheet opened before signing in still gets the new session.
-                token = { account.fresh()?.accessToken },
-                refresh = { store.refresh(catalogue?.version)?.let { catalogue = it } },
-                scrollToTop = discoverTop,
-                discoverTo = launch.args.firstOrNull { it.startsWith("-discoverto=") }?.removePrefix("-discoverto="),
-                openCollection = collectionLink,
-                // No ambassador row for a place you already look after (Home.swift).
-                myPlaces = profiles.myPlaces.map { it.placeName },
-                act = DiscoverActions(
-                    openTree = { open = it },
-                    openPlace = { hit ->
-                        tab = 0
-                        go = System.nanoTime() to hit
-                    },
-                    // A species tile opens its page, as Home.swift's NavigationLink(Route.species).
-                    openSpecies = { name -> openSpecies(name) },
-                    openPerson = { id -> routes.openPerson(id) },
-                    showMap = { tab = 0 },
-                    openWantToVisit = {
-                        myLane = app.ancienttrees.ui.TreesLane.WANT
-                        tab = 2
-                    },
-                    addTree = { openCollect() },
-                    signIn = { then ->
-                        pendingAfterSignIn = then
+                onCollectFromLibrary = { collectFromLibrary(tree) },
+                onSpecies = { name -> openSpecies(name) },
+                onFullMap = { nav.push(app.ancienttrees.ui.Page.TreeMap(tree.id)) },
+                onPlacePin = { placing = tree },
+                collectedAt = saves.collectedAt[tree.id],
+                // REMOVED AT ONCE, WITH UNDO (TreeDetail.uncollectWithUndo): the
+                // photographs stay, Undo puts the tick back on its first day.
+                onUncollect = {
+                    val at = saves.collectedAt[tree.id] ?: System.currentTimeMillis()
+                    scope.launch { saves.uncollect(tree.id) }
+                    snack = app.ancienttrees.ui.Snack(
+                        uncollectedText,
+                        icon = Sym.Verified,
+                        onUndo = {
+                                if (tree.id !in saves.collected) app.ancienttrees.ui.Haptics.success(view)
+                                scope.launch { if (tree.id !in saves.collected) saves.recollect(tree.id, at) }
+                            },
+                    )
+                },
+                onAddPhoto = {
+                    if (signedIn) {
+                        collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id)
+                    } else {
+                        pendingAfterSignIn = { collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id) }
                         asking = true
-                    },
-                    searching = { discoverSearching = it },
-                ),
-            )
-        }
-        // MY TREES (Collect.swift). The gear opens Settings, your face the profile
-        // editor, the person-with-a-plus Find people, the counts the follow lists.
-        if (tab == 2 && cat != null) {
-            val mtSignedIn = signedIn || launch.signedIn
-            CompositionLocalProvider(
-                LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
-                app.ancienttrees.ui.LocalMyHeader provides app.ancienttrees.ui.MyHeader(
-                    profiles = profiles,
-                    earlyAdopter = earlyAdopter,
-                    openPlace = { slug, name ->
+                    }
+                },
+            ),
+        )
+    }
+
+    // ONE PAGE OF ANY STACK (ContentView.destination): looked up by id at drawing time.
+    @Composable
+    fun PageFor(p: app.ancienttrees.ui.Page) {
+        val cat = catalogue ?: return
+        CompositionLocalProvider(
+            LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+        ) {
+            when (p) {
+                is app.ancienttrees.ui.Page.TreePage -> cat.tree(p.id)?.let { tree -> TreePage(tree) }
+                is app.ancienttrees.ui.Page.Mine -> app.ancienttrees.ui.OwnTree(
+                    id = p.id,
+                    mine = myTrees,
+                    catalogue = cat,
+                    onBack = { nav.pop() },
+                    onCity = { slug, name ->
                         val t = cat.trees(slug).firstOrNull()
-                        tab = 0
-                        go = System.nanoTime() to SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0)
+                        goOnMap(SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0))
                     },
-                ),
-            ) {
-                androidx.compose.runtime.key(myLane) {
-                    app.ancienttrees.ui.MyTreesScreen(
-                        catalogue = cat,
-                        origin = origin,
-                        located = located,
-                        granted = granted,
-                        signedIn = mtSignedIn,
-                        email = myEmail,
-                        saves = saves,
-                        mine = myTrees,
-                        initialSheet = if (launch.sheetFull) app.ancienttrees.ui.SheetHeight.FULL else app.ancienttrees.ui.SheetHeight.HALF,
-                        initialLane = myLane,
-                        onUseMyLocation = { if (refused) recovering = true else askLocation() },
-                        actions = app.ancienttrees.ui.MyTreesActions(
-                            openTree = { open = it },
-                            openMine = { openMine = it },
-                            signIn = { asking = true },
-                            settings = { routes.openSettings() },
-                            editProfile = { if (mtSignedIn) routes.editProfile = true else asking = true },
-                            findPeople = { routes.openPeople(app.ancienttrees.ui.PeopleSource.SEARCH) },
-                            followList = { f -> routes.openPeople(if (f) app.ancienttrees.ui.PeopleSource.FOLLOWERS else app.ancienttrees.ui.PeopleSource.FOLLOWING) },
-                            showMap = { tab = 0 },
-                        ),
+                )
+                is app.ancienttrees.ui.Page.Species -> app.ancienttrees.ui.SpeciesScreen(
+                    commonName = p.name,
+                    catalogue = cat,
+                    origin = origin,
+                    onBack = { nav.pop() },
+                    onOpen = { openTree(it) },
+                )
+                is app.ancienttrees.ui.Page.TreeMap -> cat.tree(p.id)?.let { tree ->
+                    app.ancienttrees.ui.TreeMapPage(tree, cat, onBack = { nav.pop() }, onOpen = { openTree(it) })
+                }
+                is app.ancienttrees.ui.Page.Discover -> app.ancienttrees.ui.DiscoverPageScreen(p.page, cat, discoverActions, onBack = { nav.pop() })
+                else -> if (p.isProfile) app.ancienttrees.ui.ProfilePageScreen(p, routes, settingsHost, peopleHost)
+            }
+        }
+    }
+
+    // THE BAR, drawn on the root of the tab on screen, so a pushed page slides
+    // over it. Movable, so moving it from one tab's root to the next keeps its
+    // pill sliding between them (TabBar.swift).
+    val bar = remember {
+        androidx.compose.runtime.movableContentOf {
+            if (placing == null && !searching && !discoverSearching && draft == null) {
+                Box(Modifier.fillMaxSize(), contentAlignment = Alignment.BottomCenter) {
+                    TabBar(
+                        selected = nav.tab,
+                        select = { i ->
+                            if (i in 0..2) {
+                                // ONLY A REAL SWITCH: tapping the tab you are on is another action (ContentView).
+                                if (i != nav.tab) Measure.event("tab", mapOf("tab" to listOf("Map", "Discover", "My trees")[i]))
+                                if (i == nav.tab) {
+                                    // The tab you are on: back to its root, and on the root, to the
+                                    // top (ContentView.tabSelection).
+                                    if (nav.stack.isNotEmpty()) nav.clear(i) else if (i == 1) discoverTop++
+                                } else {
+                                    nav.tab = i
+                                }
+                            }
+                        },
+                        collect = { openCollect() },
                     )
                 }
             }
         }
-        openMine?.let { id ->
-            if (cat != null) {
-                app.ancienttrees.ui.OwnTree(
-                    id = id,
-                    mine = myTrees,
-                    catalogue = cat,
-                    onBack = { openMine = null },
-                    onCity = { slug, name ->
-                        val t = cat.trees(slug).firstOrNull()
-                        openMine = null
-                        tab = 0
-                        go = System.nanoTime() to SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0)
-                    },
-                )
-            }
-        }
-        if (routes.showing || routes.editProfile || routes.earlyAdopterSheet) {
-            app.ancienttrees.ui.ProfilePages(
-                routes = routes,
-                settings = app.ancienttrees.ui.SettingsHost(
-                    account = account,
-                    profiles = profiles,
-                    signedIn = shownSignedIn,
-                    email = myEmail,
-                    locationAllowed = granted,
-                    locationRefused = refused,
-                    askLocation = { askLocation() },
-                    signIn = { asking = true },
-                    editProfile = { routes.editProfile = true },
-                    openPrivacy = { routes.stack.add(app.ancienttrees.ui.ProfilePage.Privacy) },
-                    signedOut = { routes.clear() },
-                    signInForFeedback = { signInReason = app.ancienttrees.ui.SignInReason.Feedback; asking = true },
-                    args = launch.args,
-                ),
-                people = app.ancienttrees.ui.PeopleHost(
-                    account = account,
-                    profiles = profiles,
-                    moderation = moderation,
-                    catalogue = catalogue,
-                    yourTrees = (saves.hearts + saves.collected).toList(),
-                    userId = myId,
-                    args = launch.args,
-                    signIn = { r -> signInReason = r; asking = true },
-                    editName = { routes.editProfile = true },
-                    openPerson = { routes.openPerson(it) },
-                    openTree = { open = it },
-                ),
-                onEarlyAdopterSeen = {
-                    scope.launch { account.fresh()?.accessToken?.let { app.ancienttrees.account.EarlyAdopter.markSeen(it) } }
+    }
+    @Composable
+    fun Bar() = bar()
+
+    // A tab is composed from the first time it is shown, and stays (TabView keeps its tabs).
+    var visited by remember { mutableStateOf(setOf(nav.tab)) }
+    LaunchedEffect(nav.tab) { visited = visited + nav.tab }
+
+    Box(Modifier.fillMaxSize()) {
+        // THE MAP TAB: always drawn underneath, its pages only while it is the tab on screen.
+        app.ancienttrees.ui.BackOnlyWhen(nav.tab == 0) {
+            app.ancienttrees.ui.PageStack(
+                entries = nav.stacks[0],
+                active = nav.tab == 0,
+                rootPlaced = true,
+                onPop = { nav.pop() },
+                page = { PageFor(it) },
+                root = {
+                    CompositionLocalProvider(
+                        LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+                        app.ancienttrees.ui.LocalSearchAccount provides app.ancienttrees.ui.SearchAccount(
+                            signedIn = signedIn,
+                            token = { account.fresh()?.accessToken },
+                            recentDemo = "-recentdemo" in launch.args,
+                            addTree = { openCollect() },
+                        ),
+                        app.ancienttrees.ui.LocalPlaceHost provides app.ancienttrees.ui.PlaceHost(
+                            signedIn = signedIn,
+                            email = (account.state as? SignIn.SignedIn)?.email,
+                            // Asked at the moment of use: a sheet opened before signing in still gets the new session.
+                            token = { account.fresh()?.accessToken },
+                            signIn = { reason, then ->
+                                signInReason = reason
+                                pendingAfterSignIn = then
+                                asking = true
+                            },
+                            openPerson = { routes.openPerson(it) },
+                            myPlaces = profiles.myPlaces.map { it.placeName },
+                        ),
+                    ) {
+                        MapTab(
+                            catalogue = catalogue,
+                            origin = origin,
+                            located = located,
+                            granted = granted,
+                            locationRefused = refused,
+                            signedIn = signedIn,
+                            launch = MapLaunch(sheet = launch.sheet, select = launch.select, search = launch.search),
+                            showDot = granted && fixedAt == null,
+                            // After a no, the recovery sheet first (PermissionRecovery.swift), then Settings.
+                            onUseMyLocation = { if (refused) recovering = true else askLocation() },
+                            onNeedsSignIn = { then ->
+                                pendingAfterSignIn = then
+                                asking = true
+                            },
+                            onOpen = { openTree(it) },
+                            mine = if (signedIn || launch.signedIn) myTrees.yoursOnly else emptyList(),
+                            minePhoto = { path -> myTrees.photoBytes(path) },
+                            onMine = { id -> nav.push(app.ancienttrees.ui.Page.Mine(id)) },
+                            myTrees = myTrees,
+                            onCollect = { collect(it) },
+                            onAddTree = { nav.clear(0) },
+                            onShare = { t -> share(context, t) },
+                            onSearching = { searching = it },
+                            raise = raise,
+                            go = go,
+                        )
+                    }
+                    if (nav.tab == 0) Bar()
                 },
             )
         }
-        speciesPage?.let { name ->
-            if (cat != null) {
-                CompositionLocalProvider(
-                    LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
-                ) {
-                    app.ancienttrees.ui.SpeciesScreen(
-                        commonName = name,
-                        catalogue = cat,
-                        origin = origin,
-                        onBack = {
-                            speciesPage = null
-                            open = underSpecies
-                            underSpecies = null
-                        },
-                        onOpen = { open = it },
-                    )
-                }
-            }
-        }
-        open?.let { tree ->
-            CompositionLocalProvider(
-                LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
-            ) {
-                TreeDetail(
-                    tree = tree,
-                    account = account,
-                    signedIn = signedIn,
-                    fix = if (located) here else null,
-                    hearted = tree.id in saves.hearts,
-                    collected = tree.id in saves.collected,
-                    votes = votes,
-                    counts = counts,
-                    openPhotoAtStart = launch.photo,
-                    openCollectAtStart = "-collectsheet" in launch.args,
-                    actions = TreePageActions(
-                        onBack = { open = null },
-                        onHeart = { heart(tree) },
-                        onCollect = { collect(tree) },
-                        onShare = { share(context, tree, "tree", "${tree.name}, ${tree.city}.") },
-                        onGo = { hit ->
-                            open = null
-                            tab = 0
-                            go = System.nanoTime() to hit
-                        },
-                        onNeedsSignIn = { then ->
-                            pendingAfterSignIn = then
-                            asking = true
-                        },
-                        onCollectFromLibrary = { collectFromLibrary(tree) },
-                        onSpecies = { name -> openSpecies(name) },
-                        onPlacePin = { placing = tree },
-                        collectedAt = saves.collectedAt[tree.id],
-                        // REMOVED AT ONCE, WITH UNDO (TreeDetail.uncollectWithUndo): the
-                        // photographs stay, Undo puts the tick back on its first day.
-                        onUncollect = {
-                            val at = saves.collectedAt[tree.id] ?: System.currentTimeMillis()
-                            scope.launch { saves.uncollect(tree.id) }
-                            snack = app.ancienttrees.ui.Snack(
-                                uncollectedText,
-                                icon = Sym.Verified,
-                                onUndo = { scope.launch { if (tree.id !in saves.collected) saves.recollect(tree.id, at) } },
-                            )
-                        },
-                        onAddPhoto = {
-                            if (signedIn) {
-                                collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id)
-                            } else {
-                                pendingAfterSignIn = { collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id) }
-                                asking = true
-                            }
-                        },
-                    ),
+        val cat = catalogue
+        // DISCOVER (Home.swift).
+        if (1 in visited && cat != null) {
+            app.ancienttrees.ui.BackOnlyWhen(nav.tab == 1) {
+                app.ancienttrees.ui.PageStack(
+                    entries = nav.stacks[1],
+                    active = nav.tab == 1,
+                    onPop = { nav.pop() },
+                    page = { PageFor(it) },
+                    root = {
+                        DiscoverScreen(
+                            catalogue = cat,
+                            origin = origin,
+                            located = located,
+                            signedIn = signedIn,
+                            email = (account.state as? SignIn.SignedIn)?.email,
+                            wantToVisit = saves.hearts,
+                            // Asked at the moment of use: a sheet opened before signing in still gets the new session.
+                            token = { account.fresh()?.accessToken },
+                            refresh = { store.refresh(catalogue?.version)?.let { catalogue = it } },
+                            scrollToTop = discoverTop,
+                            discoverTo = launch.args.firstOrNull { it.startsWith("-discoverto=") }?.removePrefix("-discoverto="),
+                            openCollection = collectionLink,
+                            // No ambassador row for a place you already look after (Home.swift).
+                            myPlaces = profiles.myPlaces.map { it.placeName },
+                            act = discoverActions,
+                        )
+                        if (nav.tab == 1) Bar()
+                    },
                 )
             }
         }
+        // MY TREES (Collect.swift). The gear opens Settings, your face the profile
+        // editor, the person-with-a-plus Find people, the counts the follow lists.
+        if (2 in visited && cat != null) {
+            val mtSignedIn = signedIn || launch.signedIn
+            app.ancienttrees.ui.BackOnlyWhen(nav.tab == 2) {
+                app.ancienttrees.ui.PageStack(
+                    entries = nav.stacks[2],
+                    active = nav.tab == 2,
+                    onPop = { nav.pop() },
+                    page = { PageFor(it) },
+                    root = {
+                        CompositionLocalProvider(
+                            LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+                            app.ancienttrees.ui.LocalMyHeader provides app.ancienttrees.ui.MyHeader(
+                                profiles = profiles,
+                                earlyAdopter = earlyAdopter,
+                                openPlace = { slug, name ->
+                                    val t = cat.trees(slug).firstOrNull()
+                                    goOnMap(SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0))
+                                },
+                            ),
+                        ) {
+                            androidx.compose.runtime.key(myLane) {
+                                app.ancienttrees.ui.MyTreesScreen(
+                                    catalogue = cat,
+                                    origin = origin,
+                                    located = located,
+                                    granted = granted,
+                                    signedIn = mtSignedIn,
+                                    email = myEmail,
+                                    saves = saves,
+                                    mine = myTrees,
+                                    initialSheet = if (launch.sheetFull) app.ancienttrees.ui.SheetHeight.FULL else app.ancienttrees.ui.SheetHeight.HALF,
+                                    initialLane = myLane,
+                                    onUseMyLocation = { if (refused) recovering = true else askLocation() },
+                                    actions = app.ancienttrees.ui.MyTreesActions(
+                                        openTree = { openTree(it) },
+                                        openMine = { nav.push(app.ancienttrees.ui.Page.Mine(it)) },
+                                        signIn = { asking = true },
+                                        settings = { routes.openSettings() },
+                                        editProfile = { if (mtSignedIn) routes.editProfile = true else asking = true },
+                                        findPeople = { routes.openPeople(app.ancienttrees.ui.PeopleSource.SEARCH) },
+                                        followList = { f -> routes.openPeople(if (f) app.ancienttrees.ui.PeopleSource.FOLLOWERS else app.ancienttrees.ui.PeopleSource.FOLLOWING) },
+                                        showMap = { nav.tab = 0 },
+                                    ),
+                                )
+                            }
+                        }
+                        if (nav.tab == 2) Bar()
+                    },
+                )
+            }
+        }
+        app.ancienttrees.ui.ProfileSheets(
+            routes = routes,
+            settings = settingsHost,
+            onEarlyAdopterSeen = {
+                scope.launch { account.fresh()?.accessToken?.let { app.ancienttrees.account.EarlyAdopter.markSeen(it) } }
+            },
+        )
         placing?.let { t ->
             app.ancienttrees.ui.PlacePin(
                 tree = t,
@@ -817,27 +893,11 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 )
             }
         }
-        if (recovering) {
+        // Every root sheet slides down when its state goes, however it goes (Sheet.kt Lingering).
+        app.ancienttrees.ui.LingeringIf(recovering) {
             app.ancienttrees.ui.PermissionRecovery(app.ancienttrees.ui.Permission.LOCATION, onDismiss = { recovering = false })
         }
-        if (open == null && openMine == null && speciesPage == null && placing == null && !searching && !discoverSearching && draft == null && !routes.showing) {
-            TabBar(
-                selected = tab,
-                select = { i ->
-                    // ONLY A REAL SWITCH: tapping the tab you are on is another action (ContentView).
-                    if (i != tab && i in 0..2) Measure.event("tab", mapOf("tab" to listOf("Map", "Discover", "My trees")[i]))
-                    when (i) {
-                        0 -> tab = 0
-                        1 -> if (tab == 1) discoverTop++ else tab = 1
-                        2 -> tab = 2
-                        else -> Unit
-                    }
-                },
-                collect = { openCollect() },
-                modifier = Modifier.align(Alignment.BottomCenter),
-            )
-        }
-        if (asking && !signedIn) {
+        app.ancienttrees.ui.LingeringIf(asking && !signedIn) {
             SignInSheet(
                 account,
                 reason = signInReason ?: (pendingHeart ?: pendingCollect)?.name?.let { app.ancienttrees.ui.SignInReason.KeepTree(it) }
@@ -848,7 +908,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         app.ancienttrees.ui.SnackBar(
             snack = snack,
             // Above the floating bar on a tab's root, just above the action bar on a tree page.
-            lift = if (open != null) androidx.compose.ui.unit.Dp(96f) else androidx.compose.ui.unit.Dp(92f),
+            lift = if (nav.top is app.ancienttrees.ui.Page.TreePage) androidx.compose.ui.unit.Dp(96f) else androidx.compose.ui.unit.Dp(92f),
             viewLabel = androidx.compose.ui.res.stringResource(R.string.snack_view),
             undoLabel = androidx.compose.ui.res.stringResource(R.string.snack_undo),
             dismiss = { snack = null },
@@ -862,7 +922,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         // The root's two questions (ContentView.swift): which maps app, and the review ask.
         app.ancienttrees.ui.DirectionsAskHost()
         app.ancienttrees.ui.ReviewAskHost(review, launch.args) { feedbackFromReview = true }
-        if (feedbackFromReview) {
+        app.ancienttrees.ui.LingeringIf(feedbackFromReview) {
             app.ancienttrees.ui.ContributeSheet(
                 account, signedIn,
                 onNeedsSignIn = { signInReason = app.ancienttrees.ui.SignInReason.Feedback; asking = true },
@@ -870,7 +930,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 feedbackMode = true,
             )
         }
-        collectStart?.let { start ->
+        app.ancienttrees.ui.Lingering(collectStart) { start ->
             if (cat != null) {
                 app.ancienttrees.ui.CollectSheet(
                     catalogue = cat,
@@ -880,7 +940,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         account = account,
                         // Your own trees within 30 m lead the list (CollectSheet.swift).
                         mine = myTrees,
-                        openMine = { openMine = it },
+                        openMine = { nav.push(app.ancienttrees.ui.Page.Mine(it)) },
                         signedIn = signedIn || launch.signedIn,
                         collected = saves.collected,
                         votes = votes,
@@ -894,6 +954,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                             val isNew = id !in saves.collected
                             saves.noteCollected(id)
                             if (isNew) {
+                                app.ancienttrees.ui.Haptics.success(view)
                                 review.saw(id)
                                 scope.launch { kotlinx.coroutines.delay(2000); review.consider() }
                             }
@@ -922,6 +983,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     mine = myTrees,
                     onMerged = { t ->
                         draft = null
+                        if (t.id !in saves.collected) app.ancienttrees.ui.Haptics.success(view)
                         saves.noteCollected(t.id)
                         snack = app.ancienttrees.ui.Snack(mergedText, icon = Sym.Verified)
                         scope.launch { myTrees.load(force = true) }
@@ -929,20 +991,19 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     onCity = { slug, name ->
                         val t = cat.trees(slug).firstOrNull()
                         draft = null
-                        tab = 0
-                        go = System.nanoTime() to SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0)
+                        goOnMap(SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0))
                     },
                 )
             }
         }
-        if (collectFailed) CollectFailedSheet(onDismiss = { collectFailed = false })
-        if (showAccount && signedIn) {
+        app.ancienttrees.ui.LingeringIf(collectFailed) { CollectFailedSheet(onDismiss = { collectFailed = false }) }
+        app.ancienttrees.ui.LingeringIf(showAccount && signedIn) {
             val byId = remember(trees) { trees.associateBy { it.id } }
             AccountSheet(
                 account,
                 hearted = saves.hearts.mapNotNull { byId[it] }.sortedBy { it.name },
                 collected = saves.collected.mapNotNull { byId[it] }.sortedBy { it.name },
-                onOpen = { showAccount = false; open = it },
+                onOpen = { showAccount = false; openTree(it) },
                 onDismiss = { showAccount = false },
             )
         }

@@ -201,7 +201,7 @@ private fun AmbassadorSeat(place: String, seated: Boolean, link: Boolean) {
             enabled = !(asked || sending),
             role = Role.Button,
             interactionSource = remember { MutableInteractionSource() },
-            indication = null,
+            indication = androidx.compose.foundation.LocalIndication.current,
             onClick = ::tap,
         )
         .testTag("ambassador-wanted")

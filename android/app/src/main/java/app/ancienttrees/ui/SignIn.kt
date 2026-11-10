@@ -123,9 +123,8 @@ fun SignInSheet(account: Account, treeName: String?, onDismiss: () -> Unit) =
 @Composable
 fun SignInSheet(account: Account, reason: SignInReason, onDismiss: () -> Unit) {
     val brand = Brand.colors
-    ModalBottomSheet(
+    AppSheet(
         onDismissRequest = { account.dismissProblem(); onDismiss() },
-        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
         // SOLID, not glass, and the system's own ground (SignIn.swift presentationBackground).
         containerColor = brand.ground,
         modifier = Modifier.testTag("signin-sheet"),

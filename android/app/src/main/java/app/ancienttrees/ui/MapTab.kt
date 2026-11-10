@@ -52,6 +52,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
@@ -671,8 +672,10 @@ private fun PlaceCircle(icon: ImageVector, label: String, onClick: () -> Unit) {
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .size(38.dp)
-            .background(brand.ink.copy(alpha = 0.08f), CircleShape)
+            .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.ink.copy(alpha = 0.08f), CircleShape)
             .semantics { contentDescription = label },
     ) {
         Icon(icon, null, tint = brand.ink, modifier = Modifier.size(18.dp))
@@ -693,7 +696,7 @@ private fun SearchField(place: String?, onOpen: () -> Unit, onClear: () -> Unit,
                 .shadow(8.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.10f), spotColor = Color.Black.copy(alpha = 0.10f))
                 .background(brand.surface, RoundedCornerShape(50))
                 .border(1.dp, brand.hairline, RoundedCornerShape(50))
-                .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen)
+                .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen)
                 .padding(horizontal = 16.dp),
         ) {
             Icon(Sym.SearchSemibold, null, tint = brand.ink, modifier = Modifier.size(22.dp))
@@ -715,7 +718,7 @@ private fun SearchField(place: String?, onOpen: () -> Unit, onClear: () -> Unit,
                     .align(Alignment.CenterEnd)
                     .padding(end = 6.dp)
                     .size(44.dp)
-                    .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onClear)
+                    .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onClear)
                     .semantics { contentDescription = "Clear" },
             ) {
                 Box(Modifier.size(24.dp).background(brand.surfaceMuted, CircleShape), contentAlignment = Alignment.Center) {
@@ -757,7 +760,7 @@ fun FilterChip(label: String, icon: ImageVector?, on: Boolean, onClick: () -> Un
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .height(44.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, role = Role.Button, onClick = onClick)
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button, onClick = onClick)
             .semantics { selected = on },
     ) {
         Row(
@@ -785,8 +788,10 @@ private fun MapPill(onClick: () -> Unit) {
         modifier = Modifier
             .heightIn(min = 44.dp)
             .shadow(8.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.18f), spotColor = Color.Black.copy(alpha = 0.18f))
-            .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
+            .clip(RoundedCornerShape(50))
             .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
             .padding(horizontal = 18.dp, vertical = 11.dp),
     ) {
         Icon(Sym.MapFill, null, tint = brand.ink, modifier = Modifier.size(18.dp))
@@ -803,8 +808,10 @@ internal fun RecentreButton(onClick: () -> Unit, modifier: Modifier = Modifier) 
         modifier = modifier
             .size(44.dp)
             .shadow(5.dp, RoundedCornerShape(10.dp), ambientColor = Color.Black.copy(alpha = 0.15f), spotColor = Color.Black.copy(alpha = 0.15f))
-            .background(brand.ground.copy(alpha = 0.92f), RoundedCornerShape(10.dp))
+            .clip(RoundedCornerShape(10.dp))
             .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.ground.copy(alpha = 0.92f), RoundedCornerShape(10.dp))
             .semantics { contentDescription = "Back to my location" },
     ) {
         Icon(Sym.NearMeFill, null, tint = brand.moss, modifier = Modifier.size(22.dp))
@@ -821,8 +828,10 @@ private fun LocationOffChip(refused: Boolean, onClick: () -> Unit, modifier: Mod
         modifier = modifier
             .height(44.dp)
             .shadow(6.dp, RoundedCornerShape(50), ambientColor = Color.Black.copy(alpha = 0.12f), spotColor = Color.Black.copy(alpha = 0.12f))
-            .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
+            .clip(RoundedCornerShape(50))
             .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.ground.copy(alpha = 0.96f), RoundedCornerShape(50))
             .padding(horizontal = 14.dp),
     ) {
         Icon(Sym.LocationOff, null, tint = brand.ink, modifier = Modifier.size(16.dp))
@@ -848,8 +857,10 @@ private fun ArrivalCard(tree: Tree, collected: Boolean, onCollect: () -> Unit) {
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .fillMaxWidth()
-                .background(if (collected) brand.inkSoft else brand.canopy, RoundedCornerShape(50))
+                .clip(RoundedCornerShape(50))
                 .clickable(role = Role.Button, onClick = onCollect)
+                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                .background(if (collected) brand.inkSoft else brand.canopy, RoundedCornerShape(50))
                 .padding(vertical = 13.dp),
         ) {
             Icon(if (collected) Sym.Verified else Sym.PhotoCameraFill, null, tint = Color.White, modifier = Modifier.size(16.dp))
@@ -878,8 +889,10 @@ fun EmptyPlaceCard(place: String? = null, onAdd: () -> Unit) {
             modifier = Modifier
                 .fillMaxWidth()
                 .height(48.dp)
-                .background(brand.surface, RoundedCornerShape(50))
-                .clickable(role = Role.Button, onClick = onAdd),
+                .clip(RoundedCornerShape(50))
+                .clickable(role = Role.Button, onClick = onAdd)
+                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                .background(brand.surface, RoundedCornerShape(50)),
         ) {
             Icon(Sym.PhotoCameraFill, null, tint = brand.ink, modifier = Modifier.size(17.dp))
             Spacer(Modifier.width(6.dp))

@@ -346,8 +346,10 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
     Box(
         modifier
             .size(44.dp)
-            .background(brand.surface, CircleShape)
+            .clip(CircleShape)
             .clickable(role = Role.Button, onClick = onClick)
+            // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+            .background(brand.surface, CircleShape)
             .semantics { contentDescription = label },
         contentAlignment = Alignment.Center,
     ) {
@@ -414,7 +416,7 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                     .size(60.dp)
                     .clip(CircleShape)
                     .background(brand.moss.copy(alpha = 0.12f))
-                    .clickable(interactionSource = tap, indication = null, role = Role.Button) {
+                    .clickable(interactionSource = tap, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button) {
                         if (signedIn) actions.editProfile() else actions.signIn()
                     }
                     .semantics { contentDescription = photoLabel },
@@ -454,7 +456,7 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                         modifier = Modifier
                             .weight(1f, fill = false)
                             .widthIn(min = 44.dp)
-                            .clickable(interactionSource = tap, indication = null, role = Role.Button) {
+                            .clickable(interactionSource = tap, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button) {
                                 if (signedIn) actions.editProfile() else actions.signIn()
                             }
                             .semantics { contentDescription = nameLabel },
@@ -479,8 +481,10 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                 Modifier
                     .offset(x = 4.dp)
                     .size(44.dp)
-                    .background(brand.surface, CircleShape)
+                    .clip(CircleShape)
                     .clickable(role = Role.Button, onClick = actions.findPeople)
+                    // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                    .background(brand.surface, CircleShape)
                     .semantics { contentDescription = label },
                 contentAlignment = Alignment.Center,
             ) {
@@ -506,7 +510,7 @@ private fun Count(n: Int, word: String, onClick: () -> Unit) {
         maxLines = 1,
         modifier = Modifier
             .heightIn(min = 30.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, role = Role.Button, onClick = onClick)
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button, onClick = onClick)
             .padding(vertical = 4.dp),
     )
 }
@@ -537,7 +541,7 @@ private fun LaneTab(title: String, on: Boolean, onClick: () -> Unit) {
         color = if (on) brand.ink else brand.inkSoft,
         maxLines = 1,
         modifier = Modifier
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, role = Role.Tab, onClick = onClick)
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Tab, onClick = onClick)
             .semantics { selected = on }
             // The 2 point moss line under the chosen word, on the hairline.
             .drawBehind { if (on) drawRect(moss, Offset(0f, size.height - 2.dp.toPx()), Size(size.width, 2.dp.toPx())) }
@@ -743,8 +747,10 @@ private fun SignedOutLane(lane: TreesLane, signIn: () -> Unit) {
             Modifier
                 .fillMaxWidth()
                 .height(48.dp)
-                .background(brand.moss, CircleShape)
-                .clickable(role = Role.Button, onClick = signIn),
+                .clip(CircleShape)
+                .clickable(role = Role.Button, onClick = signIn)
+                // Pressed dims the fill too (Motion.kt, SheetButtonStyle).
+                .background(brand.moss, CircleShape),
             contentAlignment = Alignment.Center,
         ) {
             Text(stringResource(R.string.sign_in), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = brand.surface)

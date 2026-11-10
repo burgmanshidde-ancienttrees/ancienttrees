@@ -132,10 +132,12 @@ class DiscoverActions(
     /** Sign in, then [then] once the account is in (nudge.require). */
     val signIn: (then: (() -> Unit)?) -> Unit,
     val searching: (Boolean) -> Unit,
+    /** A list or a See all, pushed on Discover's stack (Pages.kt). */
+    val openPage: (DiscoverPage) -> Unit = {},
 )
 
 /** One page pushed on Discover's own stack: a list, or a See all. */
-private sealed class DiscoverPage {
+sealed class DiscoverPage {
     data class Collection(val slug: String) : DiscoverPage()
     data class Index(val kind: IndexKind) : DiscoverPage()
 }
@@ -177,8 +179,7 @@ fun DiscoverScreen(
     }
     var visitorRows by remember { mutableStateOf<List<NewFromVisitors.Row>>(emptyList()) }
     LaunchedEffect(signedIn) { visitorRows = NewFromVisitors.load(token()) }
-    var page by remember { mutableStateOf<DiscoverPage?>(null) }
-    LaunchedEffect(openCollection) { openCollection?.let { page = DiscoverPage.Collection(it.second) } }
+    LaunchedEffect(openCollection) { openCollection?.let { act.openPage(DiscoverPage.Collection(it.second)) } }
     var searching by remember { mutableStateOf(false) }
     LaunchedEffect(searching) { act.searching(searching) }
 
@@ -210,7 +211,6 @@ fun DiscoverScreen(
     // Tapping Discover while on Discover scrolls back up.
     LaunchedEffect(scrollToTop) {
         if (scrollToTop > 0) {
-            page = null
             list.animateScrollToItem(0)
             headerHidden = false
         }
@@ -236,7 +236,7 @@ fun DiscoverScreen(
             ) {
                 discoverContent(
                     deck, catalogue, origin, located, signedIn, wantToVisit, visitorRows, email, token, act, myPlaces,
-                    open = { page = it },
+                    open = act.openPage,
                 )
                 item(key = "end") { Spacer(Modifier.height(30.dp + 90.dp)) } // clear of the floating tab bar
             }
@@ -273,13 +273,6 @@ fun DiscoverScreen(
         )
     }
 
-    when (val p = page) {
-        is DiscoverPage.Collection -> catalogue.collections.firstOrNull { it.slug == p.slug }?.let { c ->
-            CollectionPage(c, catalogue, onBack = { page = null }, onOpen = act.openTree)
-        }
-        is DiscoverPage.Index -> IndexPage(p.kind, catalogue, act, onBack = { page = null })
-        null -> Unit
-    }
 
     if (searching) {
         MapSearch(
@@ -578,7 +571,7 @@ fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
                 modifier = Modifier
                     .heightIn(min = 44.dp)
                     .padding(start = 8.dp)
-                    .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = seeAll),
+                    .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = seeAll),
             ) {
                 Text(stringResource(R.string.see_all), fontSize = 15.sp, fontWeight = FontWeight.SemiBold, color = brand.moss)
                 Icon(Sym.ChevronRight, null, tint = brand.moss, modifier = Modifier.size(14.dp))
@@ -633,7 +626,7 @@ private fun Tile(tree: Tree, tag: String, modifier: Modifier = Modifier, onOpen:
             .aspectRatio(3f / 4f)
             .clip(TILE_SHAPE)
             .background(brand.surfaceMuted)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen),
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen),
     ) {
         val p = tree.photo
         if (p != null) {
@@ -678,7 +671,7 @@ private fun PlaceCard(name: String, sub: String, cover: Tree?, onOpen: () -> Uni
             .size(172.dp, 120.dp)
             .clip(RoundedCornerShape(14.dp))
             .background(leafTile())
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null, onClick = onOpen),
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen),
     ) {
         val url = cover?.photo?.card
         if (url != null) {
@@ -723,7 +716,7 @@ private fun SeasonHeroOrBand(deck: Shelves, origin: Here, onOpen: (Tree) -> Unit
             .height(240.dp)
             .clip(RoundedCornerShape(14.dp))
             .background(Brand.colors.surfaceMuted)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) { onOpen(s.hero) }
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) { onOpen(s.hero) }
             .semantics { contentDescription = "discover-season" },
     ) {
         RemoteImage(url, null, Modifier.fillMaxSize())
@@ -783,7 +776,7 @@ private fun VisitorLine(r: NewFromVisitors.Row, signedIn: Boolean, act: Discover
     val name = real ?: stringResource(R.string.discover_a_visitor)
     var m = Modifier.width(TILE_WIDTH).heightIn(min = VISITOR_LINE_HEIGHT)
     if (real != null) {
-        m = m.clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) {
+        m = m.clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current) {
             val id = r.authorId
             if (id != null && signedIn) act.openPerson(id) else act.signIn(null)
         }.semantics { contentDescription = "visitor-name" }
@@ -1073,11 +1066,21 @@ private fun PageBar(title: String, onBack: () -> Unit) {
     }
 }
 
+/** A Discover page on the stack (Pages.kt): a list, or a See all. */
+@Composable
+fun DiscoverPageScreen(p: DiscoverPage, catalogue: Catalogue, act: DiscoverActions, onBack: () -> Unit) {
+    when (p) {
+        is DiscoverPage.Collection -> catalogue.collections.firstOrNull { it.slug == p.slug }?.let { c ->
+            CollectionPage(c, catalogue, onBack = onBack, onOpen = act.openTree)
+        } ?: Box(Modifier.fillMaxSize().background(Brand.colors.ground))
+        is DiscoverPage.Index -> IndexPage(p.kind, catalogue, act, onBack = onBack)
+    }
+}
+
 /** Home.swift CollectionView: the list's intro, then its trees. */
 @Composable
 private fun CollectionPage(c: TreeCollection, catalogue: Catalogue, onBack: () -> Unit, onOpen: (Tree) -> Unit) {
     val brand = Brand.colors
-    BackHandler(onBack = onBack)
     Column(Modifier.fillMaxSize().background(brand.ground)) {
         PageBar(c.title, onBack)
         LazyColumn(
@@ -1098,7 +1101,6 @@ private fun CollectionPage(c: TreeCollection, catalogue: Catalogue, onBack: () -
 @Composable
 private fun IndexPage(kind: IndexKind, c: Catalogue, act: DiscoverActions, onBack: () -> Unit) {
     val brand = Brand.colors
-    BackHandler(onBack = onBack)
     var search by remember { mutableStateOf("") }
     fun matches(s: String) = search.isEmpty() || s.lowercase().contains(search.lowercase())
     val title = stringResource(
