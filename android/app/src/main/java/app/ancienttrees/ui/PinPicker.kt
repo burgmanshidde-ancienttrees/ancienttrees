@@ -42,6 +42,8 @@ fun PinPicker(
     spanMetres: Double,
     onMove: (Here) -> Unit,
     modifier: Modifier = Modifier,
+    /** Presses of a locate control drawn over it (PlacePin's arrow): back to the person. */
+    recentre: Int = 0,
 ) {
     val latest by rememberUpdatedState(onMove)
     val opening = remember { MoveRequest(1L, boxAround(start.lat, start.lng, spanMetres)) }
@@ -53,7 +55,7 @@ fun PinPicker(
             origin = start,
             located = true,
             dot = false,
-            recentre = 0,
+            recentre = recentre,
             onView = { b -> latest(Here((b.south + b.north) / 2, (b.west + b.east) / 2)) },
             moveTo = opening,
             modifier = Modifier.matchParentSize(),

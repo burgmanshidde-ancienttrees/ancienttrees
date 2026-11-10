@@ -144,5 +144,10 @@
       "why": "The Android app's session (android/.../account/Account.kt), the refresh token only, in the app's private SharedPreferences with backup off. A session identifies the device and never travels; at launch it is spent with the server first and only the server's yes signs anybody in (hard rule 11).",
       "off": "Sign out and account deletion remove it; the server revokes it on sign out."
     }
+  },
+  "android:device/plus.answered.v1": {
+    "verdict": "device",
+    "why": "The Android twin of plus.answered.v1 (ui/PlaceBox.kt AppSwitches): whether this install answered the Ancient Trees Plus question, so its row on a city goes once answered (Hidde, 2026-11-05: \"ja dit mag je wel lokkaal opslaan\"). The answer itself is anonymous (plus_answers has no account), so there is nothing on the server to hang it under.",
+    "off": "Nothing: a flag on this install, gone with the app; a new install asks again."
   }
 }

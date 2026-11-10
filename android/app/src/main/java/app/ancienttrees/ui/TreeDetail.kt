@@ -158,6 +158,10 @@ class TreePageActions(
     val onCollectFromLibrary: () -> Unit = {},
     /** The add-photo controls: the collect flow's intro about adding a photo. */
     val onAddPhoto: (() -> Unit)? = null,
+    /** The species name: the species page (Species.swift), else the map's filter. */
+    val onSpecies: ((String) -> Unit)? = null,
+    /** "Approximate location": the map to move the pin on (PlacePin.swift), else the report sheet. */
+    val onPlacePin: (() -> Unit)? = null,
 )
 
 /** The blue the pin's own ticket mark wears (TreeDetail.ticketBlue). */
@@ -318,7 +322,10 @@ private fun TreeDetailInner(
                         }
                     }
                     Header(tree, votes, counts, signedIn, account, actions)
-                    FactsBlock(tree, actions, onPlace = { reportOpening = context.getString(R.string.opening_pin) })
+                    FactsBlock(tree, actions, onPlace = {
+                        // THE MAP, not a form (Hidde, 2026-08-25).
+                        actions.onPlacePin?.invoke() ?: run { reportOpening = context.getString(R.string.opening_pin) }
+                    })
                 }
                 SeasonsRow(tree, onOpen = { viewerAt = it }, onAdd = { startAddPhoto() })
                 ExpandableText(
@@ -881,7 +888,7 @@ private fun SpeciesColumn(tree: Tree, actions: TreePageActions) {
             .fillMaxWidth()
             .heightIn(min = 44.dp)
             .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = null) {
-                actions.onGo(SearchHit.Species(tree.commonName))
+                actions.onSpecies?.invoke(tree.commonName) ?: actions.onGo(SearchHit.Species(tree.commonName))
             }
             .semantics { contentDescription = label },
     ) {
