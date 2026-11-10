@@ -11,6 +11,10 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 night run (window from 12:04 UTC)
+
+Rungs 1 to 3 clear (no reader photos or notes, health.py green). Rung 5: the Fort Worth claim had no register candidates, so one write pass took the READY leads instead. 5 trees merged and preflight-clean: ftw_024, ftw_026 (Fort Worth), tus_015 (Tucson), vie_062 (Vienna), ind_005 (Indianapolis); app-only under APP FIRST. 7 READY leads held with reasons (nothing visible, paid-share limit, past the day-trip limit, multi-tree lead). Fort Worth claim released with --force (ftw_021 is a flagged near-duplicate of ftw_001).
+
 ## 2026-11-10 session: Android collect flow ported from the iPhone (parity session 5)
 
 - **Product (Android, not in any store):** the camera in the tab bar now opens the iPhone's collect flow, ported from CollectSheet.swift, CollectIntro.swift, PinPicker.swift, SpeciesChooser.swift and the draft mode of TreeDetail.swift: "Add a tree" with Take a photograph and Choose from your photos (up to four at once); "Where does it stand?" with the map under a fixed pin when the photograph does not say; "Which one is it?" with the nearby trees, their distance and compass direction, the recognition line, the compare button, the far list with search when our pin is off, "Add a new tree" and "I am not sure which"; "Is this the one" with our photograph, How do I find it and the rough-pin lines; the payoff with "Was it worth the trip?", the note field under the thumb, Done or Add note, and Share this tree; "Thank you, that helps" for the unsure answer; and a new tree goes straight to its own page as a draft (name, age, girth, species from the list, what makes it special) with Save tree at the foot. The tree page's collect sheet gains Choose from your photos, and Add a photo opens the flow's own "Add a photo". Every word in all eight languages.
