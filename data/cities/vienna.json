@@ -2308,6 +2308,87 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "vie_060",
+      "name": "The Prater Meadow Oak (Kaiserallee)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 185 years",
+      "age_min": 150,
+      "age_max": 200,
+      "age_basis": "derived",
+      "girth_cm": 466,
+      "location": {
+        "address": "Kaiserallee, Prater, Leopoldstadt, 1020 Wien (Naturdenkmal 867)",
+        "latitude": 48.210387,
+        "longitude": 16.408387,
+        "neighbourhood": "Leopoldstadt, 2nd district"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42/MA 28)",
+        "https://commons.wikimedia.org/wiki/File:Stieleiche867.jpg"
+      ],
+      "official_register": {
+        "name": "Naturdenkmale Wien (Stadt Wien, MA 22), ND 867, register_id 3257977, designated 2024-02-06",
+        "url": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/naturdenkmaeler/bezirk-02.html"
+      },
+      "access": "Free. Stands on a meadow in the Prater public recreation area (Naherholungsraum Prater), open at all times; no gate.",
+      "transport": "Prater, near the Messe Wien grounds; U2 Messe-Prater is the nearest station (walk time not measured this pass).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Of the 66 trees Vienna's inventory records within about 45 metres of this oak, the next widest oak is 186 centimetres round. This one is 466.\n\nThat gap is the reason to walk out here. The city's tree inventory lists a pedunculate oak on the meadow beside the Kaiserallee in the Prater, its trunk 4.66 metres in circumference, with a planting year of 1841. City inventories often carry estimated planting years for their oldest trees, so read that as roughly 185 years rather than a birth certificate. Somewhere between 150 and 200 is the honest band.\n\nOfficial recognition came late. Vienna declared it a natural monument, Naturdenkmal 867, only on 6 February 2024. The register's reasoning is about the setting as much as the trunk. Standing on its meadow, it says, the oak shapes its surroundings in the Prater's recreation area. Anyone who has crossed open grass towards one broad crown knows what the clerks meant.\n\nIt is still there. A photograph of it was taken in February 2026. The meadow is free and open at all hours, with no gate, close to the Messe Wien grounds, and the U2 stop Messe-Prater is the nearest station.\n\nMake it more than a single stop. The Prater's black poplar, another natural monument with a trunk 5.7 metres round, stands about a kilometre and a half to the south-east in the same park.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.66 metres round, more than twice the girth of any other oak within 45 metres. It stands on the meadow by the Kaiserallee in the Prater, near the Messe Wien grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "vie_061",
+      "name": "The Heustadelwasser Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 110 years",
+      "age_min": 90,
+      "age_max": 130,
+      "age_basis": "derived",
+      "girth_cm": 295,
+      "location": {
+        "address": "Unteres Heustadelwasser, Prater, Leopoldstadt, 1020 Wien (Naturdenkmal 868)",
+        "latitude": 48.199683,
+        "longitude": 16.435784,
+        "neighbourhood": "Leopoldstadt, 2nd district"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42/MA 28)",
+        "https://commons.wikimedia.org/wiki/File:Winterlinde868.jpg"
+      ],
+      "official_register": {
+        "name": "Naturdenkmale Wien (Stadt Wien, MA 22), ND 868, register_id 3257998, designated 2024-06-20",
+        "url": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/naturdenkmaeler/bezirk-02.html"
+      },
+      "access": "Not established with a source. Register text places it in the transition zone between allotment gardens (Kleingaerten) and the Heustadelwasser water; Prater public recreation area. Whether a public path passes it was not confirmed; view from the shore side is the expectation, check before sending anyone.",
+      "transport": "Not established this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Vienna protected this lime for the way it looks from a distance. Naturdenkmal 868, declared on 20 June 2024, is listed because it can be seen from far off and gives shape to the strip of ground where the Prater's allotment gardens meet the still water of the Unteres Heustadelwasser.\n\nIts numbers are modest beside the city's old oaks. The register gives a trunk about 3 metres round, a height of about 20 metres and a crown up to 18 metres across. The city's tree inventory agrees, at 295 centimetres and a height in the 16 to 20 metre class, and records a planting year of 1913. Inventory years for old trees are often estimates, so call it a little over a century, somewhere between 90 and 130 years. If 1913 holds, it has stood through both world wars. The only trees beside it are two birches, the bigger of them 107 centimetres round.\n\nIt was photographed in July 2026, so it stands.\n\nOne thing we have not settled is how close you can get. The tree grows between private allotments and the water, and we have not confirmed a public path to its trunk. Since the register itself praises it as a tree seen from afar, look for it from the water's side rather than through anyone's garden gate. If you find a public path that reaches it, tell us.\n\nCome in July. Small-leaved limes flower later than the other limes, and the scent carries.",
+      "how_to_recognise": "You can recognise it by the trunk, 2.95 metres round, where the only trees beside it are slim birches. It stands where the allotment gardens meet the Unteres Heustadelwasser in the Prater.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the small-leaved lime flowers late and scents the water's edge"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "vie_001"
