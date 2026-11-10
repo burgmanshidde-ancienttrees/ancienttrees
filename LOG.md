@@ -11,6 +11,15 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 session: Android directions, review ask, contribute and feedback ported from the iPhone (parity session 9)
+
+- **Product (Android, not in any store):** the last four sheets are the iPhone's, ported from Kit/Directions.swift, Kit/ReviewPrompt.swift, Screens/Contribute.swift and the BrandSheet look. Take me there asks once which maps app and remembers it on the phone, Settings has the Directions row to change it; Send feedback opens the feedback form in the app (no longer the website); the tree page's report menu uses the same form; the review question comes after three different trees looked at, at a pause, with every timing rule of the iPhone (3, 10 and 25 trees, a week apart, three asks per install, 120 days and a newer version after a Yes).
+- **Forced differences (data/android-parity.json):** no Apple Maps on Android, so the question offers Google Maps or Another maps app (Android's own chooser, which reaches Waze and every maps app). Yes on the review question opens the Play Store page: Hidde chose on 2026-11-10 to keep the question and add no Google Play review library, because Google forbids any question before its in-app rating window.
+- **Same server path as the iPhone:** the form writes the same `submissions` row (kind tree, city, correction or feedback; page the tree's url or "app-profile"). Only the maps choice and the review counters live on the phone, both registered in data/cross-device.json as the iPhone's are.
+- **Parity:** directions, review-ask, contribute and feedback side by side in out/parity/index.html, all four at parity. The signed-in form has no sweep frame on either phone; looked at on Android with -signed-in.
+- **Shared pieces touched (kept small):** MainActivity (the root's two questions, tree pages counted for the review ask, a new tick counted two seconds later), Settings (the Directions row, Send feedback, -contribute and -feedback), TreeDetail (its report form replaced by the shared one, walkTo through Directions), account/Feedback.kt (one Submission.send), scripts/android_parity.py (the four frames).
+- **Tests:** SheetsRulesTest (milestones, the quiet week, the yes rule, the sweep's silence, the links).
+
 ## 2026-11-10 session: Android screens linked into one app, flow walk on the emulator
 
 - **Routes:** a link from the website opens the app's own screen (WebLink.kt, the iPhone's WebLink.swift and ContentView.open): a tree's page, a city or country on the map, species and collection pages, Explore, /open?tree= and ?city=, /profile?u=, and an app-only tree's /<city>#tree=<id>; what the app has no screen for goes back to the browser. The camera in the tab bar and Discover's add-a-tree now ask to sign in BEFORE the collect sheet, as on the iPhone (Hidde, 2026-10-12: "first login than overlay"); every gate reads the server-confirmed account state.

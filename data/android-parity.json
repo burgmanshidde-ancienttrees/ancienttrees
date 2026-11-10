@@ -281,21 +281,11 @@
   },
   "directions": {
     "status": "parity",
-    "differences": [],
-    "owner": {
-      "session": "android-parity-9-sheets-881a0e",
-      "name": "android-parity-9-sheets",
-      "since": "2026-11-10"
-    }
+    "differences": []
   },
   "review-ask": {
     "status": "parity",
-    "differences": [],
-    "owner": {
-      "session": "android-parity-9-sheets-881a0e",
-      "name": "android-parity-9-sheets",
-      "since": "2026-11-10"
-    }
+    "differences": []
   },
   "signin-email": {
     "status": "parity",
@@ -315,21 +305,11 @@
     "status": "parity",
     "differences": [
       "The signed-in form (the four kinds and Where) has no sweep frame on either phone; it was looked at on Android with -signed-in, not side by side."
-    ],
-    "owner": {
-      "session": "android-parity-9-sheets-881a0e",
-      "name": "android-parity-9-sheets",
-      "since": "2026-11-10"
-    }
+    ]
   },
   "feedback": {
     "status": "parity",
-    "differences": [],
-    "owner": {
-      "session": "android-parity-9-sheets-881a0e",
-      "name": "android-parity-9-sheets",
-      "since": "2026-11-10"
-    }
+    "differences": []
   },
   "profile-edit": {
     "status": "parity",
