@@ -1,6 +1,6 @@
 {
   "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named or their profile is public (public true, since 2026-10-28); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
-  "synced": "2026-11-04T13:39Z",
+  "synced": "2026-11-10T13:56Z",
   "ambassadors": [
     {
       "user_id": "de4ed97a-01e5-42ce-83c3-28883cf6d91b",
@@ -59,12 +59,12 @@
       "profile_public": true
     },
     {
-      "user_id": "a9d4dda0-13ee-4f44-985a-c10fcc843402",
-      "place_slug": "porto",
-      "place_name": "Porto",
+      "user_id": "154c94b7-0841-4161-bcab-47405b9a8051",
+      "place_slug": "paris",
+      "place_name": "Paris",
       "public": true,
-      "since": "2026-10-28",
-      "display_name": "Miguel Portugal",
+      "since": "2026-11-02",
+      "display_name": "Loic S.",
       "profile_public": true
     },
     {
@@ -86,21 +86,21 @@
       "profile_public": true
     },
     {
-      "user_id": "154c94b7-0841-4161-bcab-47405b9a8051",
-      "place_slug": "paris",
-      "place_name": "Paris",
-      "public": true,
-      "since": "2026-11-02",
-      "display_name": "Loic S.",
-      "profile_public": true
-    },
-    {
       "user_id": "873a220d-e03b-49ac-9bae-7061e05ee39b",
       "place_slug": "leuven",
       "place_name": "Leuven",
       "public": true,
       "since": "2026-11-04",
       "display_name": "Violaine G.",
+      "profile_public": true
+    },
+    {
+      "user_id": "c61ce7b7-f70a-4af8-8ab3-8a1a50028ace",
+      "place_slug": "porto",
+      "place_name": "Porto",
+      "public": true,
+      "since": "2026-11-10",
+      "display_name": "Tall Ginkgo 7498",
       "profile_public": true
     },
     {

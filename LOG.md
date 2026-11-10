@@ -17,6 +17,11 @@
 - **Flow walk:** android/app/src/androidTest/FlowWalk.kt, run by `python3 scripts/android_walk.py`: tabs reach every place, a tree opens and back leaves it, Want to visit and the camera ask to sign in first, a website link opens its tree. All five green on the emulator; CI compiles it.
 - **Emulator lock:** another session's `am force-stop` crashed a walk mid-run, so `scripts/emulator_lock.py` now serialises the one emulator; android_parity.py and android_walk.py take it.
 - **For Hidde, later:** links from the website open the app only once ancienttrees.app publishes `.well-known/assetlinks.json` with the Play signing key, which exists once the Play account does. Until then they open in the browser.
+## 2026-11-10 session: Porto's ambassador badge moves from Miguel to Carlos
+
+- **Product:** Carlos (request row 529, the Porto button on 2026-10-24) is now Porto's ambassador. Miguel keeps Guimarães, Braga, Calvos and Vales. Hidde: "Yes, swap them". Carlos asked three days before Miguel did and before the request-is-the-yes rule (2026-11-02), so his badge had never been granted; Miguel got Porto with his batch of five on 10-28.
+- **Shown on the Porto page:** Carlos's profile still has its generated name, "Tall Ginkgo 7498", so that is what the page shows until he changes it in Edit profile.
+- Done with `ambassador.grant` / `ambassador.revoke` and a sync (data/ambassadors.json). The heads-up mails for Porto start from a fresh baseline on the next knock, so the first knock mails him nothing.
 
 ## 2026-11-10 session: Android places and species ported from the iPhone (parity session 8)
 
