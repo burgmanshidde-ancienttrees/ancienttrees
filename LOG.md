@@ -11,6 +11,12 @@
 
 <!-- archive-index -->
 
+## 2026-11-10 session: build 42's map sheet, the Airbnb way, on main (PR 40)
+
+- **What changed in the product:** the map's list, as Hidde decided on 11-08. At full height it is the page: no grip, no empty count strip, the list starts right under the search field (the sheet now covers the map behind the field too), and the floating Map pill is the way back. The pill drops the list to a new lowest stop where only the count bar stays ("22 trees") and the tab bar hides, so the map has the screen; a tap or a swipe on the bar brings both back. The opening peek (count plus the top of the first photo, his 08-22 ruling) is unchanged, so the tab bar is there at launch. Every city and country map is the map tab, so they follow; My trees keeps its stops. /explore on a phone drops the same strip (sheet reaches the bar, grip and count go) and gains the Map pill in all eight languages (UIStrings.mapPill). CONVENTIONS.md "A results list over a map, Airbnb's way".
+- **Checked:** appfit 0 findings on 156 screens across 4 phones (iOS 18.6 and 26.5); FlowWalk (with a new map-pill-and-back flow) and the sheet tests green on the SE and the 17 Pro; ButtonWalk, SweepFrames and appsweep gained map-bar; /explore checked at 375 with the new CSS on the live page, the site built in CI.
+- **For Hidde:** build 42 is not archived or uploaded; `scripts/release.py` when you want it in TestFlight, then judge the sheet on your phone. Android takes it from the Swift (data/android-parity.json: map, map-full, new map-bar).
+
 ## 2026-11-10 Android: Continue with Apple
 
 - Android's sign-in sheet now has the iPhone's dark "Continue with Apple" pill, first, Apple's logo at the leading edge (the website's own paths), then Google and email, 10 apart, in all eight languages (the website's words). Checked on the emulator: the sheet matches the iPhone's.
