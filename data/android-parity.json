@@ -102,10 +102,9 @@
   },
   "tree": {
     "status": "parity",
-    "differences": [
-      "The tree_opened measurement is not sent: Android has no PostHog key path yet, so there is nothing to send it through. Nothing a person sees differs."
-    ],
+    "differences": [],
     "notes": [
+      "tree_opened goes to the iPhone's PostHog project with the same tree and near properties (account/Measure.kt, from MainActivity when a tree or a tree of your own opens), as every other Measure.swift event does.",
       "Remove from collected sits in the collect sheet under the two photo buttons, at once with Undo (the tick back on its first day), with the collected date line, as TreeDetail.uncollectWithUndo (-collectsheet opens it).",
       "The review prompt after three trees is Google Play's In-App Review (review-ask, ReviewAsk.kt): it agrees with review-ask's parity.",
       "The snackbar after a bookmark: Added to Want to visit with View, Removed with Undo, as SaveHeart.swift (SnackBar.kt)."

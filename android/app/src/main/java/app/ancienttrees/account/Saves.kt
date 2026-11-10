@@ -58,6 +58,7 @@ class Saves(private val account: Account) {
         if (!ok) {
             collected = collected + treeId
             collectedAt = collectedAt + (treeId to at)
+            Measure.event("sync_failed", mapOf("tree" to treeId, "why" to "visited"))
             return null
         }
         return at
@@ -73,7 +74,12 @@ class Saves(private val account: Account) {
             s.accessToken,
             JSONArray().put(JSONObject().put("user_id", s.userId).put("tree_id", treeId).put("visited_at", Collector.day(java.util.Date(at)))),
         )
-        if (!ok) { collected = collected - treeId; collectedAt = collectedAt - treeId }
+        if (!ok) {
+            collected = collected - treeId; collectedAt = collectedAt - treeId
+            Measure.event("sync_failed", mapOf("tree" to treeId, "why" to "visited"))
+        } else {
+            Measure.event("tree_visited", mapOf("tree" to treeId))
+        }
         return ok
     }
 
@@ -99,7 +105,7 @@ class Saves(private val account: Account) {
      * says no, the heart goes back, because the server is the record.
      */
     suspend fun toggle(treeId: String): Boolean {
-        val s = account.fresh() ?: return false
+        val s = account.fresh() ?: run { Measure.event("sync_failed", mapOf("tree" to treeId, "why" to "no_session")); return false }
         val on = treeId !in hearts
         hearts = if (on) hearts + treeId else hearts - treeId
         heartedAt = if (on) heartedAt + (treeId to System.currentTimeMillis()) else heartedAt - treeId
@@ -116,6 +122,10 @@ class Saves(private val account: Account) {
         if (!ok) {
             hearts = if (on) hearts - treeId else hearts + treeId
             heartedAt = if (on) heartedAt - treeId else heartedAt + (treeId to System.currentTimeMillis())
+            // PostHog hears when a change did NOT reach the account (ContentView's saved.onMutate).
+            Measure.event("sync_failed", mapOf("tree" to treeId, "why" to "saves"))
+        } else if (on) {
+            Measure.event("tree_saved", mapOf("tree" to treeId))
         }
         return ok
     }

@@ -225,6 +225,7 @@ private fun OwnTreeInner(
                             shareFailed = true
                             return@launch
                         }
+                        app.ancienttrees.account.Measure.event("share_tapped", mapOf("where" to "your_photo"))
                         val send = Intent(Intent.ACTION_SEND).apply {
                             type = "text/plain"
                             putExtra(Intent.EXTRA_SUBJECT, tree.name)

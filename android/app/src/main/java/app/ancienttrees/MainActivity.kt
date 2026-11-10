@@ -27,6 +27,7 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
@@ -64,6 +65,7 @@ import app.ancienttrees.ui.TabBar
 import app.ancienttrees.ui.TreeMarks
 import app.ancienttrees.ui.TreeDetail
 import app.ancienttrees.ui.TreePageActions
+import app.ancienttrees.account.Measure
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -98,6 +100,7 @@ private val DAM_SQUARE = Here(52.3731, 4.8922)
 
 private fun share(context: Context, t: Tree, from: String = "map_card", message: String? = null) {
     if (t.url.isEmpty()) return
+    app.ancienttrees.account.Measure.event("share_tapped", mapOf("where" to from))
     val link = "https://ancienttrees.app" + t.url + (if ('?' in t.url) "&" else "?") +
         "utm_source=share&utm_medium=app&utm_campaign=$from"
     val send = Intent(Intent.ACTION_SEND).apply {
@@ -310,6 +313,19 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         if (launch.testSession?.let { account.useTestSession(it) } != true) account.restore()
     }
     LaunchedEffect(Unit) { app.ancienttrees.ui.AppSwitches.refresh(launch.args) }
+    // What people do, to the iPhone's PostHog project (account/Measure.kt). The
+    // queue goes first, so anything stranded by a wood with no signal is filed
+    // before today adds to it (ContentView's launch).
+    LaunchedEffect(Unit) {
+        Measure.start(context, launch.args)
+        Measure.flush()
+        Measure.event("app_open")
+    }
+    // Whether an account is signed in, and which, beside every event (Measure.swift).
+    LaunchedEffect(signedIn, account.session?.userId) {
+        Measure.signedIn = signedIn
+        Measure.account = if (signedIn) account.session?.userId else null
+    }
     // A LINK INTO THE APP: the sign-in callback, or a page of the website the app
     // has a screen for (WebLink.kt, the iPhone's ContentView.open). Read once the
     // catalogue is there, so a tree's path can be told from a city's.
@@ -392,11 +408,25 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // itself stops asking after a second no, so nothing is remembered here.
     var granted by remember { mutableStateOf(locationGranted(context)) }
     var refused by remember { mutableStateOf(false) }
+    var askedAt by remember { mutableLongStateOf(0L) }
     val ask = rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { result ->
+        // The answer to the system's question, the moment it is given (ContentView's
+        // locationManagerDidChangeAuthorization). Only an answer a person gave: after
+        // a second no Android refuses without showing anything, within a few
+        // milliseconds, and counting that on every launch would invent refusals.
+        val yes = result.values.any { it }
+        val shown = System.currentTimeMillis() - askedAt > 400
+        if ((yes && !granted) || (!yes && result.isNotEmpty() && shown)) {
+            Measure.event("location", mapOf("answer" to if (yes) "allowed" else "denied"))
+        }
         granted = result.values.any { it }
         val activity = context as? Activity
         refused = !granted && activity != null &&
             !ActivityCompat.shouldShowRequestPermissionRationale(activity, Manifest.permission.ACCESS_FINE_LOCATION)
+    }
+    fun askLocation() {
+        askedAt = System.currentTimeMillis()
+        ask.launch(LOCATION)
     }
     // THE COVER (HeroCover.swift, ContentView.swift): 2.4 seconds or a tap, cold
     // start only; the location question comes half a second after it has gone.
@@ -408,7 +438,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     LaunchedEffect(showingCover) {
         if (showingCover) return@LaunchedEffect
         kotlinx.coroutines.delay(500)
-        if (!granted && launch.at == null) ask.launch(LOCATION)
+        if (!granted && launch.at == null) askLocation()
     }
     // Back from Settings with location turned on.
     LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { granted = locationGranted(context) }
@@ -473,6 +503,19 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // Dam square, the iPhone's first-launch-anywhere default (ContentView.origin).
     val fix = rememberFix(granted && fixedAt == null)
     LaunchedEffect(fix) { fix?.let { here = it } }
+    // A TREE OPENED (TreeDetail.swift's .task): `near` is within 25 km of the last
+    // fix, yes, no or unknown, never the fix itself; a tree of your own is "own".
+    fun nearOf(lat: Double, lng: Double): String =
+        fix?.let { if (app.ancienttrees.feed.Geo.km(it.lat, it.lng, lat, lng) <= 25) "yes" else "no" } ?: "unknown"
+    LaunchedEffect(open?.id) {
+        val t = open ?: return@LaunchedEffect
+        Measure.event("tree_opened", mapOf("tree" to t.id, "near" to nearOf(t.lat, t.lng)))
+    }
+    LaunchedEffect(openMine) {
+        val id = openMine ?: return@LaunchedEffect
+        val m = myTrees.byId(id)
+        Measure.event("tree_opened", mapOf("tree" to "own", "near" to (m?.let { nearOf(it.lat, it.lng) } ?: "unknown")))
+    }
     val origin = here ?: DAM_SQUARE
     val located = here != null
     var raise by remember { mutableIntStateOf(0) }
@@ -517,7 +560,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 launch = MapLaunch(sheet = launch.sheet, select = launch.select, search = launch.search),
                 showDot = granted && fixedAt == null,
                 // After a no, the recovery sheet first (PermissionRecovery.swift), then Settings.
-                onUseMyLocation = { if (refused) recovering = true else ask.launch(LOCATION) },
+                onUseMyLocation = { if (refused) recovering = true else askLocation() },
                 onNeedsSignIn = { then ->
                     pendingAfterSignIn = then
                     asking = true
@@ -603,7 +646,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         mine = myTrees,
                         initialSheet = if (launch.sheetFull) app.ancienttrees.ui.SheetHeight.FULL else app.ancienttrees.ui.SheetHeight.HALF,
                         initialLane = myLane,
-                        onUseMyLocation = { if (refused) recovering = true else ask.launch(LOCATION) },
+                        onUseMyLocation = { if (refused) recovering = true else askLocation() },
                         actions = app.ancienttrees.ui.MyTreesActions(
                             openTree = { open = it },
                             openMine = { openMine = it },
@@ -644,7 +687,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     email = myEmail,
                     locationAllowed = granted,
                     locationRefused = refused,
-                    askLocation = { ask.launch(LOCATION) },
+                    askLocation = { askLocation() },
                     signIn = { asking = true },
                     editProfile = { routes.editProfile = true },
                     openPrivacy = { routes.stack.add(app.ancienttrees.ui.ProfilePage.Privacy) },
@@ -781,6 +824,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             TabBar(
                 selected = tab,
                 select = { i ->
+                    // ONLY A REAL SWITCH: tapping the tab you are on is another action (ContentView).
+                    if (i != tab && i in 0..2) Measure.event("tab", mapOf("tab" to listOf("Map", "Discover", "My trees")[i]))
                     when (i) {
                         0 -> tab = 0
                         1 -> if (tab == 1) discoverTop++ else tab = 1
@@ -841,7 +886,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         votes = votes,
                         counts = counts,
                         needsSignIn = { then -> pendingAfterSignIn = then; asking = true },
-                        askLocation = { if (!refused) ask.launch(LOCATION) },
+                        askLocation = { if (!refused) askLocation() },
                         send = { job -> scope.launch { if (!job()) collectFailed = true else myTrees.load(force = true) } },
                         ticked = { id ->
                             // A new tick is a tree seen, the strongest kind; the ask waits two

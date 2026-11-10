@@ -193,20 +193,25 @@ object Collector {
         val full = row(s.userId, id, treeId, name, lat, lng, stored, taken = taken, status = status,
             note = note, species = species, extras = extrasStored, age = age, girthCm = girthCm)
         val url = "/rest/v1/sightings?on_conflict=user_id,id"
-        if (Supa.upsert(url, s.accessToken, JSONArray().put(full))) return true
-        if (!full.has("extra_photos")) return false
-        full.remove("extra_photos")
-        return Supa.upsert(url, s.accessToken, JSONArray().put(full))
+        val ok = Supa.upsert(url, s.accessToken, JSONArray().put(full)) ||
+            (full.has("extra_photos") && Supa.upsert(url, s.accessToken, JSONArray().put(full.apply { remove("extra_photos") })))
+        // A NEW sighting, not a row changed afterwards (Sightings.record and .commit). The
+        // name, note and coordinates of somebody's own tree are deliberately not sent.
+        if (ok && storedPath == null) Measure.event("sighting_recorded", mapOf("known_tree" to if (treeId == null) "no" else "yes"))
+        return ok
     }
 
     /** The tick: one `visited` row, today. */
     suspend fun tick(account: Account, treeId: String): Boolean {
         val s = account.fresh() ?: return false
-        return Supa.upsert(
+        val ok = Supa.upsert(
             "/rest/v1/visited?on_conflict=user_id,tree_id",
             s.accessToken,
             JSONArray().put(JSONObject().put("user_id", s.userId).put("tree_id", treeId).put("visited_at", day())),
         )
+        Measure.event(if (ok) "tree_visited" else "sync_failed",
+            if (ok) mapOf("tree" to treeId) else mapOf("tree" to treeId, "why" to "visited"))
+        return ok
     }
 
     /**

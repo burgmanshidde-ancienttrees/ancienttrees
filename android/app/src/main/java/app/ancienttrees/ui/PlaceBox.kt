@@ -385,7 +385,10 @@ private fun PlusRow(city: String) {
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 46.dp)
-            .clickable(role = Role.Button) { asking = true }
+            .clickable(role = Role.Button) {
+                app.ancienttrees.account.Measure.event("plus-open", mapOf("from" to "city"))
+                asking = true
+            }
             .padding(horizontal = 14.dp)
             .testTag("plus-row"),
     ) {
@@ -441,7 +444,10 @@ fun PlusQuestionSheet(city: String, openedFrom: String, onDismiss: () -> Unit) {
             }
             val ok = PlusAnswers.joinWaitlist(t)
             joining = false
-            if (ok) step = PlusStep.LISTED
+            if (ok) {
+                app.ancienttrees.account.Measure.event("plus-tellme")
+                step = PlusStep.LISTED
+            }
         }
     }
     when (step) {
@@ -470,6 +476,7 @@ fun PlusQuestionSheet(city: String, openedFrom: String, onDismiss: () -> Unit) {
                     val text = idea
                     val other = if ("other" in picked) otherText else ""
                     val lang = java.util.Locale.getDefault().language
+                    app.ancienttrees.account.Measure.event("plus-answer", mapOf("choice" to picked.joinToString(",")))
                     scope.launch { PlusAnswers.answer(picked, text, other, shown, city, openedFrom, lang) }
                     // Answered here: the rows go once this sheet closes.
                     AppSwitches.markPlusAnswered(context)

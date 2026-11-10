@@ -70,6 +70,8 @@ object Directions {
 
     /** Opens the remembered app, or asks first (at the root, see DirectionsAskHost). */
     fun walk(context: Context, lat: Double, lng: Double, name: String? = null) {
+        // Measured at the fork rather than in each button (Directions.swift).
+        app.ancienttrees.account.Measure.event("directions")
         val chosen = preferred(context)
         if (chosen != null) open(context, chosen, lat, lng, name)
         else DirectionsAsk.pending = DirectionsAsk.Pending(lat, lng, name)

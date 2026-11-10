@@ -18,6 +18,16 @@
 - A check so it cannot drift back: `python3 scripts/android_parity.py --check`, run by qa.py on every push.
 - Icons left the forced-differences list in data/android-parity.json; DECISIONS.md 2026-11-10.
 
+## 2026-11-10 Android measures what people do, like the iPhone
+
+- Android now sends the iPhone's PostHog events to the same project with the same properties (account/Measure.kt, a port of Kit/Measure.swift): app_open, tab, tree_opened (tree, near), tree_saved, tree_visited, sync_failed, sighting_recorded, directions, share_tapped (map_card, tree, collect, your_photo, profile), location, plus-open, plus-answer, plus-tellme. `os` reads "Android 15" beside "iOS 26", so scripts/posthog.py and the digest count both phones with no change; a debug install says `build: debug` and the digest leaves it out as it does for Xcode installs.
+- No PostHog SDK, on purpose: the iPhone deliberately uses none (Measure.swift: the package brings its own networking, session replay and flags we do not want), so Android sends the same one HTTP POST, the way Supa.kt talks to the server. Nothing added to the build.
+- Emulators stay silent unless `-measure` is passed, the iPhone's simulator rule, so parity shots and CI walks are never counted.
+- On the phone: the install id and the offline queue under the iPhone's keys (measure.install.v1, measure.queue.v1), both already ruled `device` in data/cross-device.json.
+- Privacy page: "the app and iOS version" now reads "the version of the app and of your phone's system (iOS or Android)". privacycheck.py green.
+- The tree page's last parity difference (tree_opened not sent) is closed in data/android-parity.json.
+- Not on Android because the iPhone feature is not there yet: sync_skipped (Android cannot heart signed out; it asks to sign in first).
+
 ## 2026-11-10 Android app links: assetlinks.json
 
 - The site now publishes `/.well-known/assetlinks.json` for `app.ancienttrees.android`, so Android can verify the manifest's `autoVerify` filter and open ancienttrees.app links in the app, as the iPhone does with apple-app-site-association.

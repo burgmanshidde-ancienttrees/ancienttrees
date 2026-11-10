@@ -211,6 +211,7 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 // this install answered or the server's switch is off (AppSwitches).
                 if (AppSwitches.showPlus(context)) {
                     SettingsRow(Sym.StarShineFill, stringResource(R.string.plus_title), tag = "profile-plus") {
+                        app.ancienttrees.account.Measure.event("plus-open", mapOf("from" to "settings"))
                         askingPlus = true
                     }
                     RowDivider(48.dp)
