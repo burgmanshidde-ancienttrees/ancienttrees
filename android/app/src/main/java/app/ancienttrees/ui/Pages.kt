@@ -43,6 +43,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.layout
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.lifecycle.LifecycleOwner
 import kotlinx.coroutines.CancellationException
@@ -182,6 +183,8 @@ fun PageStack(
             Modifier
                 .fillMaxSize()
                 .placedIf(rootPlaced || active)
+                // Off screen is out of the accessibility tree too: TalkBack never reads a hidden tab.
+                .then(if (rootPlaced || active) Modifier else Modifier.clearAndSetSemantics { })
                 .graphicsLayer { translationX = -0.3f * w * above(-1) },
         ) {
             root()
@@ -193,6 +196,7 @@ fun PageStack(
                     Modifier
                         .fillMaxSize()
                         .placedIf(active)
+                        .then(if (active) Modifier else Modifier.clearAndSetSemantics { })
                         .graphicsLayer {
                             translationX = w * (1f - s.progress.value) - 0.3f * w * above(i)
                         }
