@@ -20,6 +20,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -278,6 +279,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     var snack by remember { mutableStateOf<app.ancienttrees.ui.Snack?>(null) }
     val addedText = androidx.compose.ui.res.stringResource(R.string.snack_added)
     val removedText = androidx.compose.ui.res.stringResource(R.string.snack_removed)
+    val uncollectedText = androidx.compose.ui.res.stringResource(R.string.uncollected)
     val signedInText = androidx.compose.ui.res.stringResource(R.string.snack_signed_in)
 
     fun heart(t: Tree) {
@@ -699,6 +701,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     votes = votes,
                     counts = counts,
                     openPhotoAtStart = launch.photo,
+                    openCollectAtStart = "-collectsheet" in launch.args,
                     actions = TreePageActions(
                         onBack = { open = null },
                         onHeart = { heart(tree) },
@@ -716,6 +719,18 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         onCollectFromLibrary = { collectFromLibrary(tree) },
                         onSpecies = { name -> openSpecies(name) },
                         onPlacePin = { placing = tree },
+                        collectedAt = saves.collectedAt[tree.id],
+                        // REMOVED AT ONCE, WITH UNDO (TreeDetail.uncollectWithUndo): the
+                        // photographs stay, Undo puts the tick back on its first day.
+                        onUncollect = {
+                            val at = saves.collectedAt[tree.id] ?: System.currentTimeMillis()
+                            scope.launch { saves.uncollect(tree.id) }
+                            snack = app.ancienttrees.ui.Snack(
+                                uncollectedText,
+                                icon = androidx.compose.material.icons.Icons.Outlined.Verified,
+                                onUndo = { scope.launch { if (tree.id !in saves.collected) saves.recollect(tree.id, at) } },
+                            )
+                        },
                         onAddPhoto = {
                             if (signedIn) {
                                 collectStart = app.ancienttrees.ui.CollectStart(about = tree.name, addsPhoto = true, knownTree = tree.id)
