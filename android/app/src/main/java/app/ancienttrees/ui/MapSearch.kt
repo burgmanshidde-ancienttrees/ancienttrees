@@ -5,8 +5,10 @@
 // first), species match by name, Latin or any other name, trees by a word of
 // their name from four letters. The typed part of a name is drawn heavier.
 //
-// Not yet here (data/android-parity.json "search"): Recent searches (signed in,
-// kept on the server) and the town lookup for places we have no trees in.
+// Recent searches (signed in, on the server: account/RecentSearches.kt) sit under
+// the empty field. A town we hold no trees in comes from the platform's own
+// Geocoder (EmptyPlace.kt) where the iPhone asks MKLocalSearch: the grey card, the
+// towns, and the nearest tree we do hold.
 
 package app.ancienttrees.ui
 
@@ -35,6 +37,9 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Cancel
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.outlined.History
+import androidx.compose.material.icons.outlined.PinDrop
 import androidx.compose.material.icons.outlined.Apartment
 import androidx.compose.material.icons.outlined.Eco
 import androidx.compose.material.icons.outlined.Park
@@ -47,6 +52,15 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.compositionLocalOf
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
+import app.ancienttrees.account.RecentSearches
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
@@ -95,6 +109,18 @@ private class SearchIndex(c: Catalogue) {
     fun treesNamed(q: String): List<Tree> = folded.filter { it.second.startsWith(q) || it.second.contains(" $q") }.map { it.first }
 }
 
+/** Who is searching: the account's recent searches need a signed-in token (MainActivity provides it). */
+data class SearchAccount(
+    val signedIn: Boolean = false,
+    val token: suspend () -> String? = { null },
+    /** `-recentdemo`: three rows so the section can be looked at without signing in. */
+    val recentDemo: Boolean = false,
+    /** The empty card's Add a tree: the camera flow (navigator.collectNearby). */
+    val addTree: () -> Unit = {},
+)
+
+val LocalSearchAccount = compositionLocalOf { SearchAccount() }
+
 private fun fold(s: String) = SpeciesSearch.fold(s)
 private fun treesLabel(n: Int) = if (n == 1) "1 tree" else "$n trees"
 
@@ -113,6 +139,38 @@ fun MapSearch(
     val focus = remember { FocusRequester() }
     LaunchedEffect(Unit) { runCatching { focus.requestFocus() } }
     BackHandler(onBack = onBack)
+    val who = LocalSearchAccount.current
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    val recent = remember { RecentSearches() }
+    // Recent searches: the account's newest five, signed in only.
+    LaunchedEffect(Unit) {
+        if (who.recentDemo) { recent.demo(demoRecent(catalogue, index)); return@LaunchedEffect }
+        if (who.signedIn) recent.load(who.token())
+    }
+    // The geocoder's towns, a beat after the last keystroke, and which query they
+    // answer so a stale answer is never shown under a newer one. Not asked when
+    // one of OUR places carries the name typed.
+    var realPlaces by remember { mutableStateOf<List<RealPlace>>(emptyList()) }
+    var answered by remember { mutableStateOf<String?>(null) }
+    LaunchedEffect(query) {
+        val q = query.trim()
+        if (q.length < 2 || oursIsNamed(catalogue, index, q)) { realPlaces = emptyList(); answered = null; return@LaunchedEffect }
+        delay(300)
+        val found = EmptyPlace.lookup(context, q)
+        realPlaces = found
+        answered = query
+    }
+    /** Every pick: recorded on the account (signed in only), then handed on. The
+     *  upsert outlives this screen, as the iPhone's own Task does. */
+    @OptIn(kotlinx.coroutines.DelicateCoroutinesApi::class)
+    fun pick(hit: SearchHit) {
+        if (who.signedIn) entryFor(catalogue, index, hit)?.let { e ->
+            recent.demo(listOf(e) + recent.rows.filter { it.id != e.id })
+            GlobalScope.launch { recent.record(e, who.token()) }
+        }
+        onPick(hit)
+    }
 
     Column(
         Modifier
@@ -184,19 +242,56 @@ fun MapSearch(
         Box(Modifier.fillMaxWidth().height(0.5.dp).background(brand.hairline))
         LazyColumn(Modifier.fillMaxWidth().weight(1f)) {
             if (query.length < 2) {
+                val mine = recentRows(catalogue, index, recent.rows)
+                if (mine.isNotEmpty()) {
+                    item {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp).padding(top = 6.dp),
+                        ) {
+                            Eyebrow("Recent", Modifier.weight(1f))
+                            Text(
+                                "Clear all",
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = brand.moss,
+                                modifier = Modifier
+                                    .clickable { scope.launch { recent.clear(who.token()) } }
+                                    .padding(12.dp)
+                                    .testTag("recent-clear"),
+                            )
+                        }
+                    }
+                    for (r in mine) item(key = "recent-" + r.entry.id) {
+                        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth().testTag("recent-row")) {
+                            Box(Modifier.weight(1f)) {
+                                PlainResultRow(r.name, r.sub, Icons.Outlined.History, onClick = { pick(r.hit) }, iconTint = brand.inkSoft)
+                            }
+                            Box(
+                                contentAlignment = Alignment.Center,
+                                modifier = Modifier
+                                    .padding(end = 2.dp)
+                                    .size(44.dp)
+                                    .clickable { scope.launch { recent.remove(r.entry, who.token()) } }
+                                    .semantics { contentDescription = "Remove ${r.name} from recent" },
+                            ) { Icon(Icons.Filled.Close, null, tint = brand.inkSoft, modifier = Modifier.size(18.dp)) }
+                        }
+                    }
+                    item { Box(Modifier.padding(top = 10.dp).fillMaxWidth().height(0.5.dp).background(brand.hairline)) }
+                }
                 val near = catalogue.trees
                     .filter { Geo.km(origin.lat, origin.lng, it.lat, it.lng) <= 100 }
                     .sortedWith(compareBy<Tree>({ it.photo == null }, { Geo.km(origin.lat, origin.lng, it.lat, it.lng) }))
                     .take(4)
                 if (near.isNotEmpty()) {
                     item { Head("Near you") }
-                    for (t in near) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Icons.Outlined.Park, query) { onPick(SearchHit.OneTree(t)) } }
+                    for (t in near) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Icons.Outlined.Park, query) { pick(SearchHit.OneTree(t)) } }
                 }
                 item { Head("Places worth a trip") }
                 for (c in index.cities.take(6)) {
                     item {
                         ResultRow(c.name, "${c.country} · ${treesLabel(c.count)}", Icons.Outlined.Apartment, query) {
-                            onPick(SearchHit.City(c.slug, c.name, c.lat, c.lng))
+                            pick(SearchHit.City(c.slug, c.name, c.lat, c.lng))
                         }
                     }
                 }
@@ -207,26 +302,54 @@ fun MapSearch(
                 val showTrees = lane == Lane.TOP || lane == Lane.TREES
                 val ours = r.places.isEmpty() && r.species.isEmpty() && r.trees.isEmpty()
                 val empty = (!showPlaces || r.places.isEmpty()) && (!showSpecies || r.species.isEmpty()) && (!showTrees || r.trees.isEmpty())
-                if (ours && showPlaces) {
+                // NOTHING OF OURS, BUT A REAL TOWN (Hidde, 2026-10-25): the ask to add
+                // the first tree, the towns, and the nearest tree we hold.
+                val town = if (showPlaces) cardTown(catalogue, index, r, query, answered, realPlaces) else null
+                if (town != null) {
+                    item {
+                        Box(Modifier.padding(horizontal = 16.dp).padding(top = 18.dp).testTag("empty-place-card")) {
+                            EmptyPlaceCard(place = town.name, onAdd = who.addTree)
+                        }
+                    }
+                    item { Head("Places") }
+                    for (pl in listOf(town) + realPlaces.filter { it != town }) item(key = "town-" + pl.id) {
+                        Box(Modifier.testTag("empty-place-town")) {
+                            PlainResultRow(
+                                pl.name,
+                                if (pl.country.isEmpty()) "Show on the map" else "${pl.country} · show on the map",
+                                Icons.Outlined.PinDrop,
+                                onClick = { pick(SearchHit.Place(pl.name, pl.lat, pl.lng)) },
+                            )
+                        }
+                    }
+                    EmptyPlace.nearest(catalogue, town.lat, town.lng)?.let { (t, km) ->
+                        item { Head("Nearest tree") }
+                        item {
+                            Box(Modifier.testTag("empty-place-nearest")) {
+                                PlainResultRow(t.name, "${EmptyPlace.distance(km)} from ${town.name} · ${t.city}", Icons.Outlined.Park, onClick = { pick(SearchHit.OneTree(t)) })
+                            }
+                        }
+                    }
+                } else if (ours && showPlaces && answered == query) {
                     item { Note("Nothing matches “$query”. Check the spelling, or try a town nearby.") }
-                } else if (empty) {
+                } else if (empty && !(ours && showPlaces)) {
                     item { Note("Nothing under ${lane.label.lowercase()}. Try Top results.") }
                 }
-                if (showPlaces && r.places.isNotEmpty()) {
+                if (town == null && showPlaces && r.places.isNotEmpty()) {
                     if (lane == Lane.TOP) item { Head("Places") }
-                    for (p in r.places) item { ResultRow(p.name, p.sub, p.icon, query) { onPick(p.hit) } }
+                    for (p in r.places) item { ResultRow(p.name, p.sub, p.icon, query) { pick(p.hit) } }
                 }
                 if (showSpecies && r.species.isNotEmpty()) {
                     if (lane == Lane.TOP) item { Head("Species") }
                     for ((s, hit) in r.species) {
                         item {
-                            SpeciesResultRow(catalogue, s, hit, query) { onPick(SearchHit.Species(s)) }
+                            SpeciesResultRow(catalogue, s, hit, query) { pick(SearchHit.Species(s)) }
                         }
                     }
                 }
                 if (showTrees && r.trees.isNotEmpty()) {
                     if (lane == Lane.TOP) item { Head("Trees") }
-                    for (t in r.trees) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Icons.Outlined.Park, query) { onPick(SearchHit.OneTree(t)) } }
+                    for (t in r.trees) item { ResultRow(t.name, "${t.commonName} · ${t.city}", Icons.Outlined.Park, query) { pick(SearchHit.OneTree(t)) } }
                 }
             }
             item { Spacer(Modifier.height(24.dp)) }
@@ -337,4 +460,83 @@ private fun SpeciesResultRow(c: Catalogue, name: String, hit: SpeciesHit, query:
             )
         },
     )
+}
+
+/** One of our cities or countries carries exactly this name, in English or another language. */
+private fun oursIsNamed(c: Catalogue, idx: SearchIndex, raw: String): Boolean {
+    val q = fold(raw)
+    if (idx.countries.any { fold(it.name) == q }) return true
+    return idx.cities.any { city -> fold(city.name) == q || c.aka(city.slug).any { fold(it) == q } }
+}
+
+/**
+ * The town the empty card is about, or null for no card (MapSearch.cardTown).
+ * When nothing of ours matches, the geocoder's first town. When ours match only in
+ * passing, a town known by EXACTLY the name typed still gets its card (Bern), unless
+ * one of our places begins with what was typed (barce finds Barcelona, not Barce).
+ * Never "no trees" for a place of ours.
+ */
+private fun cardTown(c: Catalogue, idx: SearchIndex, r: Ranked, query: String, answered: String?, real: List<RealPlace>): RealPlace? {
+    if (answered != query || real.isEmpty()) return null
+    val towns = real.filter { !oursIsNamed(c, idx, it.name) }
+    if (towns.isEmpty()) return null
+    if (r.places.isEmpty() && r.species.isEmpty() && r.trees.isEmpty()) return towns[0]
+    val q = fold(query.trim())
+    if (r.places.any { fold(it.name).startsWith(q) }) return null
+    return towns.firstOrNull { fold(it.name) == q }
+}
+
+private fun countrySub(k: CountryRow) = "${treesLabel(k.count)} in ${k.cities} ${if (k.cities == 1) "place" else "places"}"
+
+/** What a pick is recorded as (MapSearch.entry(for:)). */
+private fun entryFor(c: Catalogue, idx: SearchIndex, hit: SearchHit): RecentSearches.Entry? = when (hit) {
+    is SearchHit.City -> RecentSearches.Entry(
+        "city", hit.slug, hit.name,
+        idx.cities.firstOrNull { it.slug == hit.slug }?.let { "${it.country} · ${treesLabel(it.count)}" }.orEmpty(),
+    )
+    is SearchHit.Country -> RecentSearches.Entry("country", hit.name, hit.name, idx.countries.firstOrNull { it.name == hit.name }?.let(::countrySub).orEmpty())
+    is SearchHit.Species -> RecentSearches.Entry("species", hit.name, hit.name, treesLabel(c.treesOfSpecies(hit.name).size))
+    is SearchHit.OneTree -> RecentSearches.Entry("tree", hit.tree.id, hit.tree.name, "${hit.tree.commonName} · ${hit.tree.city}")
+    is SearchHit.Place -> RecentSearches.Entry(
+        "place", String.format(java.util.Locale.US, "%.4f,%.4f", hit.lat, hit.lng), hit.name, "Show on the map",
+    )
+}
+
+private class RecentRow(val entry: RecentSearches.Entry, val name: String, val sub: String, val hit: SearchHit)
+
+/** The account's rows read against today's catalogue; a row no longer ours is left out. */
+private fun recentRows(c: Catalogue, idx: SearchIndex, rows: List<RecentSearches.Entry>): List<RecentRow> = rows.mapNotNull { e ->
+    when (e.kind) {
+        "city" -> idx.cities.firstOrNull { it.slug == e.ref }?.let {
+            RecentRow(e, it.name, "${it.country} · ${treesLabel(it.count)}", SearchHit.City(it.slug, it.name, it.lat, it.lng))
+        }
+        "country" -> idx.countries.firstOrNull { it.name == e.ref }?.let { RecentRow(e, it.name, countrySub(it), SearchHit.Country(it.name)) }
+        "species" -> if (e.ref in c.speciesNames) {
+            val sci = c.scientificName(e.ref)
+            val n = treesLabel(c.treesOfSpecies(e.ref).size)
+            RecentRow(e, e.ref, if (sci != null) "$sci · $n" else n, SearchHit.Species(e.ref))
+        } else null
+        "tree" -> c.tree(e.ref)?.let { RecentRow(e, it.name, "${it.commonName} · ${it.city}", SearchHit.OneTree(it)) }
+        "place" -> {
+            val p = e.ref.split(",").mapNotNull { it.toDoubleOrNull() }
+            if (p.size == 2) RecentRow(e, e.label, e.sub.ifEmpty { "Show on the map" }, SearchHit.Place(e.label, p[0], p[1])) else null
+        }
+        else -> null
+    }
+}
+
+/** Three rows for `-recentdemo`: Canada, Lisbon and a Lisbon tree, the mock's. */
+private fun demoRecent(c: Catalogue, idx: SearchIndex): List<RecentSearches.Entry> {
+    val out = ArrayList<RecentSearches.Entry>()
+    (idx.countries.firstOrNull { it.name == "Canada" } ?: idx.countries.firstOrNull())?.let { k ->
+        entryFor(c, idx, SearchHit.Country(k.name))?.let(out::add)
+    }
+    (idx.cities.firstOrNull { it.slug == "lisbon" } ?: idx.cities.firstOrNull())?.let { city ->
+        entryFor(c, idx, SearchHit.City(city.slug, city.name, city.lat, city.lng))?.let(out::add)
+        val ts = c.trees(city.slug)
+        (ts.firstOrNull { it.name.contains("dragon", ignoreCase = true) } ?: ts.firstOrNull())?.let { t ->
+            entryFor(c, idx, SearchHit.OneTree(t))?.let(out::add)
+        }
+    }
+    return out
 }

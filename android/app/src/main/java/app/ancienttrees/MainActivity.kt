@@ -483,6 +483,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     Box(Modifier.fillMaxSize()) {
         CompositionLocalProvider(
             LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
+            app.ancienttrees.ui.LocalSearchAccount provides app.ancienttrees.ui.SearchAccount(
+                signedIn = signedIn,
+                token = { account.fresh()?.accessToken },
+                recentDemo = "-recentdemo" in launch.args,
+                addTree = { openCollect() },
+            ),
             app.ancienttrees.ui.LocalPlaceHost provides app.ancienttrees.ui.PlaceHost(
                 signedIn = signedIn,
                 email = (account.state as? SignIn.SignedIn)?.email,
