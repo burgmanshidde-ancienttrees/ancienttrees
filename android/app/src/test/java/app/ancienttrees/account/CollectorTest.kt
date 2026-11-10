@@ -12,7 +12,7 @@ class CollectorTest {
         val r = Collector.row("u1", "ID-1", "lis_001", "The Ajuda Dragon Tree", 38.7, -9.2, "u1/ID-1.jpg", noon)
         assertEquals(
             setOf("user_id", "id", "tree_id", "name", "note", "lat", "lng", "taken_at", "status", "updated_at", "shared", "photo"),
-            r.keySet(),
+            r.keys().asSequence().toSet(),
         )
         assertEquals("mine", r.getString("status"))
         assertEquals(true, r.getBoolean("shared"))
