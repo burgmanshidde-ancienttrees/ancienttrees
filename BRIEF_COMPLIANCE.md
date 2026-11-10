@@ -10,7 +10,7 @@ You review; you never fix product or copy. Write only REVIEW.md, data/compliance
 
 - What changed in the last seven days: `git log --since=7.days --stat -- supabase site/src ios/AncientTrees/AncientTrees scripts/mailer.py scripts/outreach_compose.py`, and DECISIONS.md and LOG.md for the same days. A new table, a new field shown to other people, a new mail, a new service, a new kind of photo or text from outside: those are what this review is for.
 - site/src/pages/privacy.astro and site/src/pages/terms.astro, whole, against what the week's changes do. Every sentence that is no longer true is a finding.
-- data/compliance.json first: an open row is not reported again, and a `declined` row is NEVER raised again, in any wording, unless the product itself changes in a way that makes it worse (Hidde, 2026-11-10, declining four points: "dit risico accepteer ik negeer dit vanaf nu"). Public profiles by default, his name off the site, and PostHog with the account number are his accepted risks.
+- data/compliance.json first: an open row is not reported again, and a `declined` row is NEVER raised again, in any wording, unless the product itself changes in a way that makes it worse (Hidde, 2026-11-10, declining the 33 accounts made public on 2026-10-29: "dit risico accepteer ik negeer dit vanaf nu").
 
 ## What to look for
 

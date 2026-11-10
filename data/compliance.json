@@ -10,40 +10,34 @@
       "law": "GDPR art. 25(2) privacy by default; art. 6 lawful basis",
       "fix": "Set those 33 back to private, or mail them once with the choice and keep private for whoever does not answer.",
       "declined_on": "2026-11-10",
-      "why": "Hidde, 2026-11-10, shown the four with options: \"dit risico accepteer ik negeer dit vanaf nu\""
+      "why": "Hidde, 2026-11-10: \"dit risico accepteer ik negeer dit vanaf nu\", then \"ik bedoelde punt 1 33 accounts\""
     },
     {
       "id": "profiles-public-by-default",
       "owner": "hidde",
       "first_seen": "2026-11-10",
-      "status": "declined",
+      "status": "open",
       "summary": "New accounts get a public profile (name, picture, Collected, Want to go) visible to anybody signed in, without a choice at sign-up.",
       "law": "GDPR art. 25(2): data not made accessible to an indefinite number of people without the person's intervention",
-      "fix": "One clear choice when the account is made (public or private), or at least a visible notice with the switch at sign-up.",
-      "declined_on": "2026-11-10",
-      "why": "Hidde, 2026-11-10, shown the four with options: \"dit risico accepteer ik negeer dit vanaf nu\""
+      "fix": "One clear choice when the account is made (public or private), or at least a visible notice with the switch at sign-up."
     },
     {
       "id": "controller-identity",
       "owner": "hidde",
       "first_seen": "2026-11-10",
-      "status": "declined",
+      "status": "open",
       "summary": "The privacy page names only 'Ancient Trees, a small independent project in the Netherlands' and info@: no person and no business registration. His rule 'zet mijn naam er nooit onder' (2026-08-24, qa check_no_owner_name) refuses his name on every page but /about, so the legal identity GDPR asks for is not on the page.",
       "law": "GDPR art. 13(1)(a) identity of the controller; Dutch Civil Code 3:15d once there is economic activity",
-      "fix": "Either a KvK registration whose trade name and number go on the privacy page, or his yes to his full name on /privacy only (widen check_no_owner_name for that page).",
-      "declined_on": "2026-11-10",
-      "why": "Hidde, 2026-11-10, shown the four with options: \"dit risico accepteer ik negeer dit vanaf nu\""
+      "fix": "Either a KvK registration whose trade name and number go on the privacy page, or his yes to his full name on /privacy only (widen check_no_owner_name for that page)."
     },
     {
       "id": "posthog-without-consent",
       "owner": "hidde",
       "first_seen": "2026-11-10",
-      "status": "declined",
+      "status": "open",
       "summary": "The app sends PostHog an install id and, signed in, the account number, without asking first; no retention is set or stated.",
       "law": "Telecommunicatiewet 11.7a (device storage needs consent unless strictly necessary); GDPR art. 13(2)(a)",
-      "fix": "Ask in the app before analytics starts, or drop the account number and keep only anonymous counts; set a retention in PostHog and name it on the privacy page.",
-      "declined_on": "2026-11-10",
-      "why": "Hidde, 2026-11-10, shown the four with options: \"dit risico accepteer ik negeer dit vanaf nu\""
+      "fix": "Ask in the app before analytics starts, or drop the account number and keep only anonymous counts; set a retention in PostHog and name it on the privacy page."
     },
     {
       "id": "mailed-photos-before-yes",
