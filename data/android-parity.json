@@ -86,13 +86,23 @@
       "The city link, the species fact, the Discover more chips and the full-map button open the map on that place, species or tree; the iPhone opens the city, country, species and tree-map pages, not ported yet (session 5).",
       "The snackbar after a bookmark (Added to Want to visit, Undo) is not ported yet (as on the map).",
       "The review prompt after three trees and the tree_opened measurement are not ported (session 8)."
-    ]
+    ],
+    "owner": {
+      "session": "local_4ed4a26c",
+      "name": "tree page (main conversation)",
+      "since": "2026-11-10"
+    }
   },
   "tree-nophoto": {
     "status": "in-progress",
     "differences": [
       "As tree."
-    ]
+    ],
+    "owner": {
+      "session": "local_4ed4a26c",
+      "name": "tree page (main conversation)",
+      "since": "2026-11-10"
+    }
   },
   "signin": {
     "status": "not-ported",
@@ -104,7 +114,12 @@
     "status": "not-ported",
     "differences": [
       "Discover (Home.swift) not ported; the tab raises the list for now."
-    ]
+    ],
+    "owner": {
+      "session": "local_8724be8d",
+      "name": "Discover (main conversation)",
+      "since": "2026-11-10"
+    }
   },
   "collection-tab": {
     "status": "not-ported",
@@ -122,6 +137,11 @@
     "status": "parity",
     "differences": [
       "Delete photo (for your own photographs) comes with My trees (session 4)."
-    ]
+    ],
+    "owner": {
+      "session": "local_4ed4a26c",
+      "name": "tree page (main conversation)",
+      "since": "2026-11-10"
+    }
   }
 }
