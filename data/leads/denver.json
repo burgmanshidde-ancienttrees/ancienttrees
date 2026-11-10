@@ -1,28 +1,30 @@
 {
-  "leads": [
-    {
-      "name": "Cheesman Park American elm, 9th Ave east entrance",
-      "reason": "Only a 2006 Westword mention (tallest champion), Dutch elm risk, no coordinate or current check"
-    },
-    {
-      "name": "Washington Park Kentucky coffeetree (state champion)",
-      "reason": "Only a KDVR summary citing city forester site; exact tree position not found"
-    },
-    {
-      "name": "Fairmount Cemetery arboretum champions",
-      "reason": "2026-11-04 follow-up: the page carries only one PDF (a numbered cemetery tree map, text-extracted: numbers 1-121 with no key) plus a species list; no per-tree PDFs, no champions, no coordinates. Not placeable. Needs the survey key/species list by number (ask the Fairmount Heritage Foundation) or a CTC champion row naming Fairmount. Cemetery at 39.708,-104.904, open dawn to dusk"
-    },
-    {
-      "name": "Denver Botanic Gardens York Street champions",
-      "reason": "40+ champions per garden's news (botanicgardens.org/node/5497, 403 here); no individual tree identified; paid entry"
-    },
-    {
-      "name": "Sops of Wine apple, Semper Open Space (Westminster)",
-      "reason": "Denver7 2026: 140-year-old, 3rd-largest apple in Colorado, public trail; Westminster not Denver, no measurements; candidate for a Westminster/Denver-metro place"
-    },
-    {
-      "name": "Colorado Tree Coalition Denver champions",
-      "reason": "CTC 2026 xlsx gives Denver only as 'Denver' city text: biggest American elm 71 in DBH 98 ft, four English oaks to 58.7 in DBH, wych elm 56.1 in, Kentucky coffeetree etc.; locations unknown, many on private land (Denverite 2016). Denverite article and Forestry register unreachable (Cloudflare)"
-    }
-  ]
+ "leads": [
+  {
+   "name": "Cheesman Park American elm, 9th Ave east entrance",
+   "reason": "Only a 2006 Westword mention (tallest champion), Dutch elm risk, no coordinate or current check"
+  },
+  {
+   "name": "Washington Park Kentucky coffeetree (state champion)",
+   "reason": "Only a KDVR summary citing city forester site; exact tree position not found"
+  },
+  {
+   "name": "Fairmount Cemetery arboretum champions",
+   "reason": "2026-11-04 follow-up: the page carries only one PDF (a numbered cemetery tree map, text-extracted: numbers 1-121 with no key) plus a species list; no per-tree PDFs, no champions, no coordinates. Not placeable. Needs the survey key/species list by number (ask the Fairmount Heritage Foundation) or a CTC champion row naming Fairmount. Cemetery at 39.708,-104.904, open dawn to dusk"
+  },
+  {
+   "name": "Denver Botanic Gardens York Street champions",
+   "reason": "40+ champions per garden's news (botanicgardens.org/node/5497, 403 here); no individual tree identified; paid entry"
+  },
+  {
+   "name": "Sops of Wine apple, Semper Open Space (Westminster)",
+   "reason": "Denver7 2026: 140-year-old, 3rd-largest apple in Colorado, public trail; Westminster not Denver, no measurements; candidate for a Westminster/Denver-metro place",
+   "species": "Apple (Malus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Colorado Tree Coalition Denver champions",
+   "reason": "CTC 2026 xlsx gives Denver only as 'Denver' city text: biggest American elm 71 in DBH 98 ft, four English oaks to 58.7 in DBH, wych elm 56.1 in, Kentucky coffeetree etc.; locations unknown, many on private land (Denverite 2016). Denverite article and Forestry register unreachable (Cloudflare)"
+  }
+ ]
 }

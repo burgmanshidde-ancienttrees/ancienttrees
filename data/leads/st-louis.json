@@ -1,226 +1,242 @@
 {
-  "city": "St. Louis",
-  "country": "United States",
-  "leads": [
-    {
-      "name": "Forest Park champion cucumber tree",
-      "site": "Forest Park",
-      "reason": "MDC layer: Magnolia acuminata, 142 in, 76 ft, 81 ft crown, public ground; Forest Park Forever (2014) confirms a champion cucumber magnolia in the park; exact spot not published, only MDC's fuzzed 38.64194,-90.26636, no photo or exact pin in reach, so cannot be told apart",
-      "latitude": 38.64194,
-      "longitude": -90.26636,
-      "sources": [
-        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0",
-        "https://www.forestparkforever.org/blog/2014/9/3/ksdk-spotlights-the-trees-of-forest-park"
-      ]
-    },
-    {
-      "name": "Forest Park champion red buckeye",
-      "site": "Forest Park",
-      "reason": "Small (72 in, 48 ft); coordinate 38.6393,-90.27768 is MDC layer only; not worth the walk by itself",
-      "latitude": 38.6393,
-      "longitude": -90.27768,
-      "sources": [
-        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
-      ]
-    },
-    {
-      "name": "Tower Grove Park bigtooth aspen state champion",
-      "site": "Tower Grove Park",
-      "reason": "Populus grandidentata 80 in, 87 ft, public ground; MDC coordinate 38.60622,-90.26238 is park-level only; park pages disagree on species (Populus tremuloides in one place); no exact spot",
-      "latitude": 38.60622,
-      "longitude": -90.26238,
-      "sources": [
-        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0",
-        "https://www.towergrovepark.org/blog/arboretum"
-      ]
-    },
-    {
-      "name": "Tower Grove Park 'Hundred Year' Oak Grove",
-      "site": "Tower Grove Park NW quadrant",
-      "reason": "Park's arboretum page: oaks over 13 ft circumference in the NW quadrant; a grove, not one collectible point; find the biggest trunk with a coordinate if a later pass can",
-      "sources": [
-        "https://www.towergrovepark.org/blog/arboretum"
-      ]
-    },
-    {
-      "name": "Tower Grove Park Cypress Ellipse bald cypress colony",
-      "site": "Tower Grove Park, Main Drive",
-      "reason": "Park arboretum page names a bald cypress 'cathedral' on Main Drive; avenue/colony, no sizes; park map also has a bald-cypress stop at 38.60445,-90.24515 (no sizes)",
-      "latitude": 38.60445,
-      "longitude": -90.24515,
-      "sources": [
-        "https://www.towergrovepark.org/blog/arboretum",
-        "https://www.towergroveparkmap.org/bald-cypress"
-      ]
-    },
-    {
-      "name": "Tower Grove Park tuliptree with 8-ft burl",
-      "site": "Tower Grove Park Tree Walk",
-      "reason": "Park text: swelling at the base nearly 8 ft in diameter, probably reacting to internal decay; may be removed; park pin 38.60474,-90.24681; one source, health uncertain",
-      "latitude": 38.60474,
-      "longitude": -90.24681,
-      "sources": [
-        "https://www.towergroveparkmap.org/tuliptree"
-      ]
-    },
-    {
-      "name": "Tower Grove Park English oak / white fir / American beech / Austrian pine (Tree Walk)",
-      "site": "Tower Grove Park",
-      "reason": "Other Tree Walk stops, no size or age given (beech described as small); coordinates on the park map: English oak 38.60446,-90.24806, white fir 38.60421,-90.24774, beech 38.60513,-90.24774, Austrian pine 38.60469,-90.24346",
-      "sources": [
-        "https://www.towergroveparkmap.org/"
-      ]
-    },
-    {
-      "name": "Bellefontaine Cemetery red mulberry (former state champion)",
-      "site": "Bellefontaine Cemetery",
-      "reason": "MDC 2014: Morus rubra 189 in, 51 ft, 58 ft crown; no longer on the MDC champion layer; no location within the cemetery; unconfirmed alive; older than the cemetery per one article; needs section",
-      "sources": [
-        "https://mdc.mo.gov/newsroom/bellefontaine-cemetery-holds-three-state-champion-trees"
-      ]
-    },
-    {
-      "name": "Bellefontaine Cemetery golden rain tree",
-      "site": "Bellefontaine Cemetery",
-      "reason": "Cemetery page: golden rain tree, species brought to America 1809 as gift to Jefferson; no specimen age, size or location",
-      "sources": [
-        "https://www.bellefontainecemetery.org/trees"
-      ]
-    },
-    {
-      "name": "MBG Scotch elm west of Tower Grove House",
-      "site": "Missouri Botanical Garden",
-      "reason": "Garden page: huge Scotch elm (Ulmus glabra), cored to c. 1913, gnarled trunk, branches cabled; one source; not kept to avoid ticketed share above one third",
-      "latitude": 38.6116,
-      "longitude": -90.259,
-      "sources": [
-        "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
-      ]
-    },
-    {
-      "name": "MBG ginkgo by the Gate House",
-      "site": "Missouri Botanical Garden",
-      "reason": "Garden page: very stout ginkgo, possibly bought by Henry Shaw in 1861; one source; no size; ticketed share cap",
-      "sources": [
-        "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
-      ]
-    },
-    {
-      "name": "MBG Osage-oranges behind the Climatron",
-      "site": "Missouri Botanical Garden",
-      "reason": "Garden page: remnants or descendants of Osage-oranges Shaw planted in the 1860s; trees or offspring, no specific trunk; ticketed share cap",
-      "sources": [
-        "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
-      ]
-    },
-    {
-      "name": "MBG pin oak in the Mausoleum",
-      "site": "Missouri Botanical Garden",
-      "reason": "Garden page: tallest tree in the Garden, 125 ft in 2011; inside the Garden (Shaw Mausoleum area); ticketed share cap",
-      "sources": [
-        "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
-      ]
-    },
-    {
-      "name": "Pecan on Butler Hill Road (state champion)",
-      "site": "Butler Hill Road ROW, south St. Louis County",
-      "reason": "MDC layer: Carya illinoinensis 197 in, 132 ft, 100 ft crown, public right-of-way, coordinate 38.47857,-90.40684; MDC Mighty Ones lists a Butler Hill pecan photo; lifecheck NONE; no transit; 132 ft pecan figure unconfirmed by a fetched page except the MDC layer; 25 km out",
-      "latitude": 38.47857,
-      "longitude": -90.40684,
-      "sources": [
-        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
-      ]
-    },
-    {
-      "name": "Shaefer Bend County Park green ash champion",
-      "site": "Shaefer Bend County Park",
-      "reason": "MDC layer: Fraxinus pennsylvanica 175 in, 73 ft; public county park; 38.80929,-90.2818; emerald ash borer risk, ~25 km north",
-      "latitude": 38.80929,
-      "longitude": -90.2818,
-      "sources": [
-        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
-      ]
-    },
-    {
-      "name": "Pacific Palisades black willow champion",
-      "site": "Pacific Palisades Conservation Area (Meramec)",
-      "reason": "MDC 2014: Salix nigra 79 in, 95 ft, 42 ft; public conservation area; ~40 km from the city; MDC layer 38.47208,-90.71300",
-      "latitude": 38.47208,
-      "longitude": -90.713,
-      "sources": [
-        "https://mdc.mo.gov/newsroom/mdc-awards-two-new-state-champion-trees-st-louis-area"
-      ]
-    },
-    {
-      "name": "Washington University Arbor Walk",
-      "site": "WashU Danforth Campus",
-      "reason": "157-tree Arbor Walk, trees.wustl.edu (Level III arboretum); campus, not a small site; no champion or ancient tree named on the home page; not checked tree by tree",
-      "sources": [
-        "https://trees.wustl.edu/"
-      ]
-    },
-    {
-      "name": "Lafayette Park, Compton Hill, Forest Park oldest oak, Calvary Cemetery",
-      "site": "various",
-      "reason": "Searched, nothing sourced to a named tree; Forest Park cleared for the 1904 fair, so old trees unlikely"
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Bellefontaine Cemetery shingle oak (state champion)",
-      "site": "Bellefontaine Cemetery",
-      "reason": "Removed 2022 after decline; trunk portion left as a wildlife tree (cemetery trees page)",
-      "sources": [
-        "https://www.bellefontainecemetery.org/trees"
-      ]
-    },
-    {
-      "name": "Tower Grove Park 'Keebler Elf' catalpa",
-      "site": "Tower Grove Park, Southeast Drive",
-      "reason": "Removed June 2022 for safety (park farewell event 2022-06-09); about 125 to 150 years old",
-      "sources": [
-        "https://towergrovepark.org/calendar/2022/6/9/catalpa-tree-farewell"
-      ]
-    },
-    {
-      "name": "Tower Grove Park Hoole oak",
-      "site": "Tower Grove Park",
-      "reason": "Planted 1882; gone, only a marker remains (Post-Dispatch hidden gems)",
-      "sources": [
-        "http://graphics.stltoday.com/apps/hidden-gems/tower-grove-park/"
-      ]
-    },
-    {
-      "name": "Champion Ohio buckeye, Clayton",
-      "site": "Clayton",
-      "reason": "Private property",
-      "sources": [
-        "https://mdc.mo.gov/newsroom/mdc-awards-new-state-champion-tree-clayton"
-      ]
-    },
-    {
-      "name": "Black hickory, Jefferson County",
-      "site": "Jefferson County",
-      "reason": "Private land",
-      "sources": [
-        "https://mdc.mo.gov/newsroom/mdc-awards-new-state-champion-black-hickory-tree-st-louis-area"
-      ]
-    },
-    {
-      "name": "Slippery elm, Lost Creek Road",
-      "site": "Warren County",
-      "reason": "Private property",
-      "sources": [
-        "https://mdc.mo.gov/newsroom/mdc-awards-two-new-state-champion-trees-st-louis-area"
-      ]
-    },
-    {
-      "name": "MDC champion layer St. Louis County trees marked Private Property (about 10: ash, buckeye, tulip tree, pin oak, cottonwood, etc.)",
-      "site": "St. Louis County/City",
-      "reason": "Private property, no public access",
-      "sources": [
-        "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
-      ]
-    }
-  ]
+ "city": "St. Louis",
+ "country": "United States",
+ "leads": [
+  {
+   "name": "Forest Park champion cucumber tree",
+   "site": "Forest Park",
+   "reason": "MDC layer: Magnolia acuminata, 142 in, 76 ft, 81 ft crown, public ground; Forest Park Forever (2014) confirms a champion cucumber magnolia in the park; exact spot not published, only MDC's fuzzed 38.64194,-90.26636, no photo or exact pin in reach, so cannot be told apart",
+   "latitude": 38.64194,
+   "longitude": -90.26636,
+   "sources": [
+    "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0",
+    "https://www.forestparkforever.org/blog/2014/9/3/ksdk-spotlights-the-trees-of-forest-park"
+   ]
+  },
+  {
+   "name": "Forest Park champion red buckeye",
+   "site": "Forest Park",
+   "reason": "Small (72 in, 48 ft); coordinate 38.6393,-90.27768 is MDC layer only; not worth the walk by itself",
+   "latitude": 38.6393,
+   "longitude": -90.27768,
+   "sources": [
+    "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+   ]
+  },
+  {
+   "name": "Tower Grove Park bigtooth aspen state champion",
+   "site": "Tower Grove Park",
+   "reason": "Populus grandidentata 80 in, 87 ft, public ground; MDC coordinate 38.60622,-90.26238 is park-level only; park pages disagree on species (Populus tremuloides in one place); no exact spot",
+   "latitude": 38.60622,
+   "longitude": -90.26238,
+   "sources": [
+    "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0",
+    "https://www.towergrovepark.org/blog/arboretum"
+   ]
+  },
+  {
+   "name": "Tower Grove Park 'Hundred Year' Oak Grove",
+   "site": "Tower Grove Park NW quadrant",
+   "reason": "Park's arboretum page: oaks over 13 ft circumference in the NW quadrant; a grove, not one collectible point; find the biggest trunk with a coordinate if a later pass can",
+   "sources": [
+    "https://www.towergrovepark.org/blog/arboretum"
+   ],
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Tower Grove Park Cypress Ellipse bald cypress colony",
+   "site": "Tower Grove Park, Main Drive",
+   "reason": "Park arboretum page names a bald cypress 'cathedral' on Main Drive; avenue/colony, no sizes; park map also has a bald-cypress stop at 38.60445,-90.24515 (no sizes)",
+   "latitude": 38.60445,
+   "longitude": -90.24515,
+   "sources": [
+    "https://www.towergrovepark.org/blog/arboretum",
+    "https://www.towergroveparkmap.org/bald-cypress"
+   ]
+  },
+  {
+   "name": "Tower Grove Park tuliptree with 8-ft burl",
+   "site": "Tower Grove Park Tree Walk",
+   "reason": "Park text: swelling at the base nearly 8 ft in diameter, probably reacting to internal decay; may be removed; park pin 38.60474,-90.24681; one source, health uncertain",
+   "latitude": 38.60474,
+   "longitude": -90.24681,
+   "sources": [
+    "https://www.towergroveparkmap.org/tuliptree"
+   ]
+  },
+  {
+   "name": "Tower Grove Park English oak / white fir / American beech / Austrian pine (Tree Walk)",
+   "site": "Tower Grove Park",
+   "reason": "Other Tree Walk stops, no size or age given (beech described as small); coordinates on the park map: English oak 38.60446,-90.24806, white fir 38.60421,-90.24774, beech 38.60513,-90.24774, Austrian pine 38.60469,-90.24346",
+   "sources": [
+    "https://www.towergroveparkmap.org/"
+   ],
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Bellefontaine Cemetery red mulberry (former state champion)",
+   "site": "Bellefontaine Cemetery",
+   "reason": "MDC 2014: Morus rubra 189 in, 51 ft, 58 ft crown; no longer on the MDC champion layer; no location within the cemetery; unconfirmed alive; older than the cemetery per one article; needs section",
+   "sources": [
+    "https://mdc.mo.gov/newsroom/bellefontaine-cemetery-holds-three-state-champion-trees"
+   ],
+   "species": "Mulberry (Morus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Bellefontaine Cemetery golden rain tree",
+   "site": "Bellefontaine Cemetery",
+   "reason": "Cemetery page: golden rain tree, species brought to America 1809 as gift to Jefferson; no specimen age, size or location",
+   "sources": [
+    "https://www.bellefontainecemetery.org/trees"
+   ]
+  },
+  {
+   "name": "MBG Scotch elm west of Tower Grove House",
+   "site": "Missouri Botanical Garden",
+   "reason": "Garden page: huge Scotch elm (Ulmus glabra), cored to c. 1913, gnarled trunk, branches cabled; one source; not kept to avoid ticketed share above one third",
+   "latitude": 38.6116,
+   "longitude": -90.259,
+   "sources": [
+    "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
+   ],
+   "species": "Elm (Ulmus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "MBG ginkgo by the Gate House",
+   "site": "Missouri Botanical Garden",
+   "reason": "Garden page: very stout ginkgo, possibly bought by Henry Shaw in 1861; one source; no size; ticketed share cap",
+   "sources": [
+    "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
+   ],
+   "species": "Ginkgo (Ginkgo sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "MBG Osage-oranges behind the Climatron",
+   "site": "Missouri Botanical Garden",
+   "reason": "Garden page: remnants or descendants of Osage-oranges Shaw planted in the 1860s; trees or offspring, no specific trunk; ticketed share cap",
+   "sources": [
+    "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
+   ]
+  },
+  {
+   "name": "MBG pin oak in the Mausoleum",
+   "site": "Missouri Botanical Garden",
+   "reason": "Garden page: tallest tree in the Garden, 125 ft in 2011; inside the Garden (Shaw Mausoleum area); ticketed share cap",
+   "sources": [
+    "https://www.missouribotanicalgarden.org/gardens-gardening/our-garden/notable-plant-collections/trees"
+   ],
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Pecan on Butler Hill Road (state champion)",
+   "site": "Butler Hill Road ROW, south St. Louis County",
+   "reason": "MDC layer: Carya illinoinensis 197 in, 132 ft, 100 ft crown, public right-of-way, coordinate 38.47857,-90.40684; MDC Mighty Ones lists a Butler Hill pecan photo; lifecheck NONE; no transit; 132 ft pecan figure unconfirmed by a fetched page except the MDC layer; 25 km out",
+   "latitude": 38.47857,
+   "longitude": -90.40684,
+   "sources": [
+    "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+   ]
+  },
+  {
+   "name": "Shaefer Bend County Park green ash champion",
+   "site": "Shaefer Bend County Park",
+   "reason": "MDC layer: Fraxinus pennsylvanica 175 in, 73 ft; public county park; 38.80929,-90.2818; emerald ash borer risk, ~25 km north",
+   "latitude": 38.80929,
+   "longitude": -90.2818,
+   "sources": [
+    "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+   ]
+  },
+  {
+   "name": "Pacific Palisades black willow champion",
+   "site": "Pacific Palisades Conservation Area (Meramec)",
+   "reason": "MDC 2014: Salix nigra 79 in, 95 ft, 42 ft; public conservation area; ~40 km from the city; MDC layer 38.47208,-90.71300",
+   "latitude": 38.47208,
+   "longitude": -90.713,
+   "sources": [
+    "https://mdc.mo.gov/newsroom/mdc-awards-two-new-state-champion-trees-st-louis-area"
+   ],
+   "species": "Willow (Salix sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Washington University Arbor Walk",
+   "site": "WashU Danforth Campus",
+   "reason": "157-tree Arbor Walk, trees.wustl.edu (Level III arboretum); campus, not a small site; no champion or ancient tree named on the home page; not checked tree by tree",
+   "sources": [
+    "https://trees.wustl.edu/"
+   ]
+  },
+  {
+   "name": "Lafayette Park, Compton Hill, Forest Park oldest oak, Calvary Cemetery",
+   "site": "various",
+   "reason": "Searched, nothing sourced to a named tree; Forest Park cleared for the 1904 fair, so old trees unlikely",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Bellefontaine Cemetery shingle oak (state champion)",
+   "site": "Bellefontaine Cemetery",
+   "reason": "Removed 2022 after decline; trunk portion left as a wildlife tree (cemetery trees page)",
+   "sources": [
+    "https://www.bellefontainecemetery.org/trees"
+   ]
+  },
+  {
+   "name": "Tower Grove Park 'Keebler Elf' catalpa",
+   "site": "Tower Grove Park, Southeast Drive",
+   "reason": "Removed June 2022 for safety (park farewell event 2022-06-09); about 125 to 150 years old",
+   "sources": [
+    "https://towergrovepark.org/calendar/2022/6/9/catalpa-tree-farewell"
+   ]
+  },
+  {
+   "name": "Tower Grove Park Hoole oak",
+   "site": "Tower Grove Park",
+   "reason": "Planted 1882; gone, only a marker remains (Post-Dispatch hidden gems)",
+   "sources": [
+    "http://graphics.stltoday.com/apps/hidden-gems/tower-grove-park/"
+   ]
+  },
+  {
+   "name": "Champion Ohio buckeye, Clayton",
+   "site": "Clayton",
+   "reason": "Private property",
+   "sources": [
+    "https://mdc.mo.gov/newsroom/mdc-awards-new-state-champion-tree-clayton"
+   ]
+  },
+  {
+   "name": "Black hickory, Jefferson County",
+   "site": "Jefferson County",
+   "reason": "Private land",
+   "sources": [
+    "https://mdc.mo.gov/newsroom/mdc-awards-new-state-champion-black-hickory-tree-st-louis-area"
+   ]
+  },
+  {
+   "name": "Slippery elm, Lost Creek Road",
+   "site": "Warren County",
+   "reason": "Private property",
+   "sources": [
+    "https://mdc.mo.gov/newsroom/mdc-awards-two-new-state-champion-trees-st-louis-area"
+   ]
+  },
+  {
+   "name": "MDC champion layer St. Louis County trees marked Private Property (about 10: ash, buckeye, tulip tree, pin oak, cottonwood, etc.)",
+   "site": "St. Louis County/City",
+   "reason": "Private property, no public access",
+   "sources": [
+    "https://gisblue.mdc.mo.gov/arcgis/rest/services/Land_Cover/Champion_Trees_List/MapServer/0"
+   ]
+  }
+ ]
 }

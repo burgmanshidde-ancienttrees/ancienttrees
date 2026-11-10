@@ -8,12 +8,16 @@
   {
    "name": "Campus baobab (accession 4386)",
    "reason": "Planted c.1980 from Madagascar seed; state champion/Great Tree 2002 but young (45 yrs). Pin 32.232588,-110.951146.",
-   "source": "https://www.arboretum.arizona.edu/great-trees-arizona"
+   "source": "https://www.arboretum.arizona.edu/great-trees-arizona",
+   "species": "Baobab (Adansonia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Campus calabash (1780) and rock fig (3137)",
    "reason": "Small, young (1970s/1980s) champions; weak 'worth the walk'. Pins 32.230552,-110.948602 and 32.230832,-110.949596.",
-   "source": "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum"
+   "source": "https://arboretum.arizona.edu/arizonas-magnificent-trees-campus-arboretum",
+   "species": "Fig (Ficus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Tucson Presidio fig, Territorial Courtyard, 196 N Court Ave",
@@ -28,7 +32,9 @@
   {
    "name": "Champion Aleppo pine, Pima County church (2021 state report AZ0102 or the 95-inch tree; report layout ambiguous)",
    "reason": "Owner is a Tucson church, open ground unknown, no address; report text and figures misalign across pages. 2023 report names an Aleppo pine on East Richards Row (nominated J. Janecek): unplaced.",
-   "source": "out/tmp/sw/dl/az2022.txt and dffm 2023 report"
+   "source": "out/tmp/sw/dl/az2022.txt and dffm 2023 report",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Tohono Chul Park honey mesquite (2019 state co-champion)",
@@ -38,7 +44,9 @@
   {
    "name": "Common fig, Pima County state champion/heritage (AZ0101, 2020)",
    "reason": "No location published (county only).",
-   "source": "out/tmp/sw/dl/az2022.txt"
+   "source": "out/tmp/sw/dl/az2022.txt",
+   "species": "Fig (Ficus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Mission San Xavier del Bac trees; Fort Lowell Park; Barrio Viejo",
@@ -51,7 +59,9 @@
    "longitude": -110.955086,
    "reason": "Arboretum GIS comment says 'National Register of Big Trees' but American Forests registry not confirmed and the Arizona forestry page lists jacaranda as 'No Champion'; no size, age or story found. Unconfirmed champion claim, no reason to see it.",
    "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
-   "date": "2026-11-04"
+   "date": "2026-11-04",
+   "species": "Jacaranda (Jacaranda sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "UA guajillo (Berlandier's acacia), accession 8219",
@@ -67,7 +77,9 @@
    "longitude": -110.95324,
    "reason": "Heritage tree planted 1979 from seed Warren Jones collected in Sonora, night-blooming, bat-pollinated; no size or champion claim, young, weak reason to visit. Lead only.",
    "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
-   "date": "2026-11-04"
+   "date": "2026-11-04",
+   "species": "Ceiba (Ceiba sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "UA golden shower (Cassia fistula), accession 1539",
@@ -83,7 +95,9 @@
    "longitude": -110.955861,
    "reason": "GIS flags heritage but arboretum heritage page covers only the salvaged fig 1308 (tus_006); no page text for 3398 found, no story. Lead only.",
    "source": "https://services.maps.arizona.edu/pdc/rest/services/Arboretum/MapServer/4",
-   "date": "2026-11-04"
+   "date": "2026-11-04",
+   "species": "Fig (Ficus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": []

@@ -5,14 +5,18 @@
    "status": "lead",
    "reason": "single volunteer measurement (Native Tree Society treesdb 317997, Elijah Whitcomb 2024-07-18, GPS 35 47.434 N -105 48.472 W), a forest tree a visitor cannot tell apart, no age; also Engelmann spruce 135.5 ft/75 in (317999), Douglas-fir 90.8 ft/104 in (318000)",
    "source": "verify pass 2026-11-04 (Santa Fe)",
-   "notes_file": "data/research/santa-fe-notes.md"
+   "notes_file": "data/research/santa-fe-notes.md",
+   "species": "Spruce (Picea sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Capitol grounds: two trios of giant sequoias, twisted juniper",
    "status": "lead",
    "reason": "only a blog and a tourism line (Clay Buchanan Memorial Gardens) name them; no planting year or size. Needs the Capitol Art Foundation or General Services tree list.",
    "source": "verify pass 2026-11-04 (Santa Fe)",
-   "notes_file": "data/research/santa-fe-notes.md"
+   "notes_file": "data/research/santa-fe-notes.md",
+   "species": "Giant Sequoia (Sequoiadendron sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Cottonwood at the start of Canyon Road (bronze boys-climbing-a-tree statue at its base)",

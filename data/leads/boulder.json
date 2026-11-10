@@ -1,47 +1,55 @@
 {
-  "leads": [
-    {
-      "name": "Chautauqua pin oak",
-      "reason": "Tour stop at 39.999724,-105.281957 but no size or rank stated; add if a measurement is found"
-    },
-    {
-      "name": "Shumard oak (tour stop)",
-      "reason": "Tour pin 40.01574,-105.278085, 'largest in Colorado, 48 in DBH' (CTC says 51 in) but site unidentified, may be private; reverse geocode failed"
-    },
-    {
-      "name": "Perry White House bur oak",
-      "reason": "Tour pin 40.024966,-105.266765, 50 in DBH, planted by original owners of 1875 house; probably a residence, view-from-street not established"
-    },
-    {
-      "name": "Decker-Tyler House redbud",
-      "reason": "Tour pin 40.029259,-105.27147, one of state's largest redbuds; likely a private house, no size given"
-    },
-    {
-      "name": "Mapleton school red maple",
-      "reason": "Tour pin 40.020245,-105.285098, state champion, on school grounds (Boulder Valley Mapleton Childhood Education Center); schools need open-grounds evidence"
-    },
-    {
-      "name": "Second Chautauqua-area white oak",
-      "reason": "Tour pin 40.008753,-105.262935, no description beyond fall colour; site unidentified"
-    },
-    {
-      "name": "Baldcypress (tour)",
-      "reason": "Tour pin 40.029075,-105.285645, text says only 'unusual in Boulder'; no size"
-    },
-    {
-      "name": "Mapleton Avenue silver maples",
-      "reason": "blocked: avenue of 200 maples planted 1890, not a single collectible point",
-      "blocked": true
-    },
-    {
-      "name": "CU Old Main cottonwood",
-      "reason": "blocked: felled 17 Jan 2022 (CU Boulder); clones planned",
-      "blocked": true
-    },
-    {
-      "name": "Hygiene national champion plains cottonwood",
-      "reason": "blocked: died 2012 per Colorado Tree Coalition (listed as former national champion, Longmont)",
-      "blocked": true
-    }
-  ]
+ "leads": [
+  {
+   "name": "Chautauqua pin oak",
+   "reason": "Tour stop at 39.999724,-105.281957 but no size or rank stated; add if a measurement is found",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Shumard oak (tour stop)",
+   "reason": "Tour pin 40.01574,-105.278085, 'largest in Colorado, 48 in DBH' (CTC says 51 in) but site unidentified, may be private; reverse geocode failed"
+  },
+  {
+   "name": "Perry White House bur oak",
+   "reason": "Tour pin 40.024966,-105.266765, 50 in DBH, planted by original owners of 1875 house; probably a residence, view-from-street not established",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Decker-Tyler House redbud",
+   "reason": "Tour pin 40.029259,-105.27147, one of state's largest redbuds; likely a private house, no size given"
+  },
+  {
+   "name": "Mapleton school red maple",
+   "reason": "Tour pin 40.020245,-105.285098, state champion, on school grounds (Boulder Valley Mapleton Childhood Education Center); schools need open-grounds evidence",
+   "species": "Maple (Acer sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Second Chautauqua-area white oak",
+   "reason": "Tour pin 40.008753,-105.262935, no description beyond fall colour; site unidentified",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Baldcypress (tour)",
+   "reason": "Tour pin 40.029075,-105.285645, text says only 'unusual in Boulder'; no size"
+  },
+  {
+   "name": "Mapleton Avenue silver maples",
+   "reason": "blocked: avenue of 200 maples planted 1890, not a single collectible point",
+   "blocked": true
+  },
+  {
+   "name": "CU Old Main cottonwood",
+   "reason": "blocked: felled 17 Jan 2022 (CU Boulder); clones planned",
+   "blocked": true
+  },
+  {
+   "name": "Hygiene national champion plains cottonwood",
+   "reason": "blocked: died 2012 per Colorado Tree Coalition (listed as former national champion, Longmont)",
+   "blocked": true
+  }
+ ]
 }

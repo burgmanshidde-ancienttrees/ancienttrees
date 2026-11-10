@@ -1,14 +1,36 @@
 {
-  "city": "Birmingham, Alabama",
-  "country": "United States",
-  "leads": [
-    {"name": "Carolina laurel cherry (Prunus caroliniana), Jefferson County champion 2025", "reason": "Appears only in a search snippet of the Alabama Forestry Commission 2025 PDF (owner/nominator John L. Brasher, probable private land); PDF unreadable here, no location, not a fetched page. Ask forestry.alabama.gov if pursued."},
-    {"name": "Barber Alabama Woodlands remnant forest, Birmingham Botanical Gardens (southern red oaks, tulip poplars; 'oldest native trees' per Bham Now 2020)", "reason": "No individual trunk named, no age or girth; needs the Gardens' Plant Explorer (birmingham.gardenexplorer.org) or staff to name a specimen."},
-    {"name": "Sherman Oak, Samford University Homewood (in front of Samford Hall, historic marker)", "reason": "Current tree planted after 2005 per a single blog; original (dedicated 1915 at East Lake, c. 200 years, felled 1990s) is gone; seedlings planted in 1950s on campus. Young successor, not ancient."},
-    {"name": "Old trees at Oak Hill Cemetery, Birmingham", "reason": "No source names an individual tree; not pursued."},
-    {"name": "Constitution Oak / Duffie Oak", "reason": "Geneva County and Mobile, not Birmingham."}
-  ],
-  "blocked": [
-    {"name": "Sugarberry (Celtis laevigata) at Arlington Antebellum Home", "reason": "Fell in a storm May 2017 (Bham Now); dead, never ship. Arlington is a paid house museum; no surviving named tree found."}
-  ]
+ "city": "Birmingham, Alabama",
+ "country": "United States",
+ "leads": [
+  {
+   "name": "Carolina laurel cherry (Prunus caroliniana), Jefferson County champion 2025",
+   "reason": "Appears only in a search snippet of the Alabama Forestry Commission 2025 PDF (owner/nominator John L. Brasher, probable private land); PDF unreadable here, no location, not a fetched page. Ask forestry.alabama.gov if pursued."
+  },
+  {
+   "name": "Barber Alabama Woodlands remnant forest, Birmingham Botanical Gardens (southern red oaks, tulip poplars; 'oldest native trees' per Bham Now 2020)",
+   "reason": "No individual trunk named, no age or girth; needs the Gardens' Plant Explorer (birmingham.gardenexplorer.org) or staff to name a specimen.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Sherman Oak, Samford University Homewood (in front of Samford Hall, historic marker)",
+   "reason": "Current tree planted after 2005 per a single blog; original (dedicated 1915 at East Lake, c. 200 years, felled 1990s) is gone; seedlings planted in 1950s on campus. Young successor, not ancient."
+  },
+  {
+   "name": "Old trees at Oak Hill Cemetery, Birmingham",
+   "reason": "No source names an individual tree; not pursued."
+  },
+  {
+   "name": "Constitution Oak / Duffie Oak",
+   "reason": "Geneva County and Mobile, not Birmingham.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Sugarberry (Celtis laevigata) at Arlington Antebellum Home",
+   "reason": "Fell in a storm May 2017 (Bham Now); dead, never ship. Arlington is a paid house museum; no surviving named tree found."
+  }
+ ]
 }
