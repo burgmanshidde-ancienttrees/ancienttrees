@@ -246,6 +246,30 @@
    "found_by": "hidde",
    "no_test_reason": "Only a physical iPhone shows it: thirteen simulator walks, Debug and Release, opened the sheet on the broken code. Confirmed by a logged tap on Hidde's phone before and after the fix.",
    "fixed_in": "17c3afa0d"
+  },
+  {
+   "id": "ESC-2026-11-10-android-my-trees-and-the-profile-page-ar",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "android/app/src/main/java/app/ancienttrees/ui/MapSheet.kt",
+   "summary": "Android: My trees and the profile page are see-through, the map shows behind the header and the tiles, where the iPhone's sheet turns opaque as it rises",
+   "first_seen": "2026-11-10",
+   "status": "fixed",
+   "found_by": "hidde",
+   "no_test_reason": "A colour under a full-height sheet: no unit test sees pixels. The parity page's My trees pair (scripts/android_parity.py, iPhone beside Android) checks it, after the fix that makes the sheet solid as it becomes the page.",
+   "fixed_in": "e717d5b1d"
+  },
+  {
+   "id": "ESC-2026-11-10-android-collected-tiles-in-my-trees-show",
+   "surface": "APP",
+   "kind": "BUG",
+   "file": "android/app/src/main/java/app/ancienttrees/ui/MyTrees.kt",
+   "summary": "Android: Collected tiles in My trees show the drawn placeholder tree instead of the tree's photograph (iOS CollectedTile shows the photo)",
+   "first_seen": "2026-11-10",
+   "status": "fixed",
+   "found_by": "hidde",
+   "no_test_reason": "Not a fault in the real code path: the screenshot was the fake -signed-in -mine-demo state, whose demo trees are drawn stand-ins (StandIn). The real path draws the photograph (OursPicture: your newest shot, else ours via RemoteImage); SignedInRoundTrip now signs in on the real test account instead of the fake.",
+   "fixed_in": "e717d5b1d"
   }
  ]
 }

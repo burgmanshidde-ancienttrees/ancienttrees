@@ -9,7 +9,7 @@ package app.ancienttrees
 import android.content.Intent
 import android.content.pm.ApplicationInfo
 
-data class LaunchArgs(val args: List<String>) {
+data class LaunchArgs(val args: List<String>, val testSession: String? = null) {
     private fun value(key: String): String? = args.firstOrNull { it.startsWith("$key=") }?.substringAfter("=")
 
     val tab: Int? get() = value("-tab")?.toIntOrNull()
@@ -102,7 +102,11 @@ data class LaunchArgs(val args: List<String>) {
 
         fun from(intent: Intent?, appInfo: ApplicationInfo): LaunchArgs {
             if (appInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE == 0) return NONE
-            return LaunchArgs(normalise(intent?.getStringArrayExtra("args")?.toList().orEmpty()))
+            return LaunchArgs(
+                normalise(intent?.getStringArrayExtra("args")?.toList().orEmpty()),
+                // AT_TEST_SESSION, as the iPhone's launch environment carries it.
+                intent?.getStringExtra("AT_TEST_SESSION")?.takeIf { it.isNotEmpty() },
+            )
         }
     }
 }

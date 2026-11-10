@@ -339,7 +339,10 @@ private fun SearchField(onClick: () -> Unit) {
         modifier = Modifier
             .fillMaxWidth()
             .height(50.dp)
-            .shadow(6.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.06f), spotColor = Color.Black.copy(alpha = 0.06f))
+            // The iPhone's soft drop (black 6%, radius 6, y 2). Android scales a
+            // shadow colour down again by its own ambient and spot alpha, so the
+            // same visible softness needs stronger numbers here (measured 2026-11-10).
+            .shadow(6.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.18f), spotColor = Color.Black.copy(alpha = 0.32f))
             .background(brand.surface, CircleShape)
             .border(1.dp, brand.hairline, CircleShape)
             .clip(CircleShape)
