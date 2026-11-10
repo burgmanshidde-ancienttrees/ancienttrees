@@ -242,8 +242,7 @@ def dump_screen(adb, name, args, scrolls, density):
         old.unlink()
     w_px, h_px = map(int, re.search(r"(\d+)x(\d+)", adb.shell("wm", "size")).groups())
     for n in range(scrolls + 1):
-        adb.shell("uiautomator", "dump", "/sdcard/at-spacing.xml")
-        xml = adb.run("exec-out", "cat", "/sdcard/at-spacing.xml")
+        xml = dump_ours(adb, density)
         (XML_DIR / f"{name}-{n}.xml").write_text(xml)
         if n < scrolls:
             if 'scrollable="true"' not in xml:
@@ -255,6 +254,32 @@ def dump_screen(adb, name, args, scrolls, density):
 
 
 BOUNDS = re.compile(r"\[(-?\d+),(-?\d+)\]\[(-?\d+),(-?\d+)\]")
+
+
+def dump_ours(adb, density):
+    """UI Automator's tree, with a system dialog out of the way first.
+
+    Found on the first CI run (2026-11-10): a fresh emulator put "Pixel
+    Launcher isn't responding" over every screen, the dumps held only that
+    dialog, nothing matched, and the check passed on 37 empty screens. So a
+    dump without our app in it presses the dialog's Wait (or Close app, or
+    OK) and looks again.
+    """
+    xml = ""
+    for _ in range(4):
+        adb.shell("uiautomator", "dump", "/sdcard/at-spacing.xml")
+        xml = adb.run("exec-out", "cat", "/sdcard/at-spacing.xml")
+        if f'package="{PACKAGE}"' in xml:
+            return xml
+        m = re.search(r'text="(Wait|Close app|OK|Close)"[^>]*bounds="\[(\d+),(\d+)\]\[(\d+),(\d+)\]"', xml)
+        if m:
+            x0, y0, x1, y1 = map(int, m.groups()[1:])
+            adb.shell("input", "tap", str((x0 + x1) // 2), str((y0 + y1) // 2))
+        else:
+            adb.shell("input", "keyevent", "KEYCODE_BACK")
+            adb.shell("am", "start", "-n", ACTIVITY)
+        time.sleep(4)
+    return xml
 
 
 def android_nodes(xml_text, density, screen_h_dp):
@@ -458,7 +483,11 @@ def main():
         ios_from_dump(a.ios_dump)
         return
     ios_all = json.loads(IOS_FRAMES.read_text())
-    pending = set(json.loads(PENDING.read_text())["screens"]) if PENDING.exists() else set()
+    pend = json.loads(PENDING.read_text()) if PENDING.exists() else {}
+    pending = set(pend.get("screens", []))
+    # Screens the iPhone's dump cannot be held against, each with its reason:
+    # measured, shown, never passed off as equal.
+    no_baseline = pend.get("no_ios_baseline", {})
     status = json.loads(STATUS.read_text()) if STATUS.exists() else {}
     FRAMES, PORTED = frames()
     names = a.only or [f for f in PORTED if f in FRAMES and f in ios_all]
@@ -498,10 +527,24 @@ def main():
         pages = [p.read_text() for p in sorted(XML_DIR.glob(f"{name}-*.xml"))]
         if name not in ios_all or not pages:
             result[name] = {"error": "no iPhone frames" if name not in ios_all else "no Android dump"}
+            print(f"FAIL {name:<22} {result[name]['error']}")
+            failing += 1
+            continue
+        if name in no_baseline:
+            result[name] = {"error": "not comparable: " + no_baseline[name]}
+            print(f"n/a  {name:<22} {no_baseline[name]}")
             continue
         allowed = status.get(name, {}).get("spacing_allowed", [])
         r = judge(name, ios_all[name], pages, meta["density"], meta["safe"], meta["h_dp"], allowed)
         r["pending"] = name in pending
+        # NOTHING MEASURED IS A FAILURE, pending or not: the first CI run
+        # matched nothing on 37 screens and called every one "ok".
+        if len(ios_all[name]["els"]) >= 3 and r["matched"] < 2:
+            r["failing"] += 1
+            r["differences"].insert(0, {"kind": "error", "what": "nothing matched: the screen did not open",
+                                        "ios": len(ios_all[name]["els"]), "android": r["matched"],
+                                        "diff": 0, "fails": True, "allowed": None})
+            r["pending"] = False
         result[name] = r
         if not r["pending"]:
             failing += r["failing"]

@@ -38,5 +38,13 @@
   "review-ask",
   "contribute",
   "feedback"
- ]
+ ],
+ "no_ios_baseline": {
+  "profile-edit": "SweepFrames opens it without -signed-in, so the iPhone's dump is signed-out My trees, not the editor (fix the frame in SweepFrames.swift, then refresh data/ios-frames.json)",
+  "photo-viewer": "the iPhone's dump holds the tree page under the viewer, not the viewer",
+  "people": "the iPhone's dump has no elements under people-sheet",
+  "contribute": "the iPhone's dump has no elements under contribute-sheet",
+  "feedback": "the iPhone's dump has no elements under contribute-sheet",
+  "collect-voted": "the iPhone's dump has no elements under collect-note-field"
+ }
 }
