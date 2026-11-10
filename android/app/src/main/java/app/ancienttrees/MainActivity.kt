@@ -305,7 +305,14 @@ private fun App(link: Uri?, onLinkRead: () -> Unit) {
         collectedNow?.let { t -> CollectedSheet(t.name, onDismiss = { collectedNow = null }) }
         if (collectFailed) CollectFailedSheet(onDismiss = { collectFailed = false })
         if (showAccount && signedIn) {
-            AccountSheet(account, saved = saves.hearts.size, onDismiss = { showAccount = false })
+            val byId = remember(trees) { trees.associateBy { it.id } }
+            AccountSheet(
+                account,
+                hearted = saves.hearts.mapNotNull { byId[it] }.sortedBy { it.name },
+                collected = saves.collected.mapNotNull { byId[it] }.sortedBy { it.name },
+                onOpen = { showAccount = false; open = it },
+                onDismiss = { showAccount = false },
+            )
         }
     }
 }
