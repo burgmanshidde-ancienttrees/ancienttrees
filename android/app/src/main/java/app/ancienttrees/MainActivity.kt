@@ -768,7 +768,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                             go = go,
                         )
                     }
-                    if (nav.tab == 0) Bar()
+                    // Also while the catalogue loads: the other tabs' roots wait for it.
+                    if (nav.tab == 0 || catalogue == null) Bar()
                 },
             )
         }
