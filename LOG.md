@@ -95,6 +95,14 @@ Rungs 1 to 3 clear (no reader photos or notes, health.py green). Rung 5: the For
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-10 session: Android finishing pass, 33 of 39 screens at parity
+
+- **New in the app:** the snackbar (Added to Want to visit with View, Removed with Undo, You are signed in; SaveHeart.swift); your own trees on the map in your own photograph and first on the Collected shelf (TreeMap.setMine, MineTile); the Plus row in Settings and pull to refresh on Find people; TreeCard on the collection page and the oldest-trees list, the ambassador sheet on BrandSheet and hidden for your own places; on collect, the locate arrow on the place map, your own trees within 30 m at the top of the list, and on the draft the ⋯ menu, the add-photo tile, the city link and Share after Save.
+- **Fixed:** a sheet opened before signing in (the city's Plus "Tell me") now asks the server for the session when it is used, instead of a sign-in captured earlier.
+- **Machinery:** scripts/gradle_locked.py, one Android build at a time on the Mac (three agents built in parallel without exhausting memory).
+- **Left (in-progress):** map and map-full (build 42's sheet waits on iOS; first-launch read time unmeasured on a phone), search (recent searches, a town without trees), tree and tree-nophoto (review prompt and tree_opened measurement; Remove from collected with Undo), collect-describe (Move the pin and Merge in the draft menu; the short wait after Save, hard rule 11).
+- **Not verified on the emulator:** it would not start from a session ("qemu_thread_create: Resource temporarily unavailable"); every piece was checked by build, unit tests and the Swift side by side. The flow walk on main still waits for Hidde to start the emulator from Android Studio.
+
 ## 2026-11-10 session: PR 30 merged; the flow walk on main waits for a free Mac
 
 - **Merged:** PR 30 (screens linked into one app, flow walk, emulator lock), its build green. The walk was green on its branch (all five steps, under the lock).

@@ -71,7 +71,6 @@
     "differences": [
       "Waiting on iOS, not an Android gap: Build 42's Airbnb sheet (LOG.md 2026-11-08: only the count bar at the lowest stop, the tab bar hidden) is decided but not in the iPhone's Swift on main yet; Android follows the Swift and takes it when it lands.",
       "First launch reads the 11.5 MB catalogue in about ten seconds on the one-core emulator under a loaded Mac; later launches read a binary snapshot. Not yet measured on a real phone.",
-      "Under a searched city the ambassador and Plus boxes (PlaceAsksBox, PlusUnderBox) are not ported yet (sessions 5 and 6).",
       "Your own trees stand on the map in your own photograph and lead the Collected shelf (TreeMap.setMine, MineTile); the photograph comes from the account each launch, so a new install shows the plain mine pin until it has loaded (hard rule 11)."
     ],
     "owner": null
@@ -177,10 +176,8 @@
     "differences": []
   },
   "collect-identify": {
-    "status": "in-progress",
-    "differences": [
-      "Your own trees within 30 m are drawn and add the photograph to that tree, but only once MainActivity passes mine = myTrees and openMine to CollectHost (wiring pending)."
-    ]
+    "status": "parity",
+    "differences": []
   },
   "collect-ticked": {
     "status": "parity",
@@ -200,8 +197,7 @@
     "status": "in-progress",
     "differences": [
       "Move the pin and Merge with another tree are not in the draft's menu yet: their screens (place-pin, MergeChooser) are not ported, as on own-tree.",
-      "After Save the page waits a moment for the account to hold the tree before it turns into your tree with Share: the iPhone keeps it on the phone first, Android keeps nothing a person did on the device (hard rule 11).",
-      "The city link and the page staying as your tree after Save need MainActivity to pass account, mine and onCity to DraftTree (wiring pending)."
+      "After Save the page waits a moment for the account to hold the tree before it turns into your tree with Share: the iPhone keeps it on the phone first, Android keeps nothing a person did on the device (hard rule 11)."
     ]
   },
   "collection-tab-full": {
@@ -212,7 +208,7 @@
     ]
   },
   "profile-signed-in": {
-    "status": "in-progress",
+    "status": "parity",
     "differences": [
       "Ancient Trees Plus is the first row under Help, as on the iPhone (Profile.swift helpCard): it opens the city's Plus question (PlaceBox.kt PlusQuestionSheet, from PlusAsk.swift), sends the anonymous answer to plus_answers and Tell me to plus_waitlist, and the row goes once this install answered (plus.answered.v1, device) or the server's switch is off. -plusask opens it.",
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",

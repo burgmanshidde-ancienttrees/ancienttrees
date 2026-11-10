@@ -807,6 +807,9 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     located = located,
                     host = app.ancienttrees.ui.CollectHost(
                         account = account,
+                        // Your own trees within 30 m lead the list (CollectSheet.swift).
+                        mine = myTrees,
+                        openMine = { openMine = it },
                         signedIn = signedIn || launch.signedIn,
                         collected = saves.collected,
                         votes = votes,
@@ -843,6 +846,15 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         scope.launch { if (!Collector.saveDraft(account, saved, city)) collectFailed = true else myTrees.load(force = true) }
                     },
                     onDiscard = { draft = null },
+                    // Saved here, then the page stays as your tree with Share (TreeDetail.swift, mine).
+                    account = account,
+                    mine = myTrees,
+                    onCity = { slug, name ->
+                        val t = cat.trees(slug).firstOrNull()
+                        draft = null
+                        tab = 0
+                        go = System.nanoTime() to SearchHit.City(slug, name, t?.lat ?: 0.0, t?.lng ?: 0.0)
+                    },
                 )
             }
         }
