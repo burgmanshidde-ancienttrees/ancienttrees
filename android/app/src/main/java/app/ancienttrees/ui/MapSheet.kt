@@ -152,9 +152,13 @@ fun MapSheet(
         val halfPts = visible * SheetStops.HALF
         val isLocked = locked || cardFits
         fun stop(s: SheetHeight): Float = when (s) {
-            // The grip and the count, measured (BottomSheet: 44 + headerHeight + 6).
+            // The grip and the count, 15 above the navigation bar: the iPhone's
+            // frames (data/ios-frames.json map-bar: count 794.7 + 30.3, 15 above the
+            // home indicator's safe area), which is where the recentre control's 120
+            // leaves it 74.7 below. BottomSheet's own sum says + 6; its drawn sheet
+            // stands 9 higher, and the drawn sheet is what a person sees.
             SheetHeight.BAR -> with(density) {
-                if (headerHeight > 0) 44.dp.toPx() + headerHeight + 6.dp.toPx() else SheetStops.BAR.toPx()
+                if (headerHeight > 0) 44.dp.toPx() + headerHeight + 15.dp.toPx() else SheetStops.BAR.toPx()
             }
             SheetHeight.PEEK -> with(density) { SheetStops.PEEK.toPx() }
             SheetHeight.CARD ->
