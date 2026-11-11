@@ -449,7 +449,58 @@ def touch_box(e, n):
     """
     if (n["clk"] or n["cls"] == "Button") and abs(n["h"] - 48) < 0.6 and e["h"] < 47.5:
         n = dict(n, y=round(n["y"] + (48 - e["h"]) / 2, 1), h=e["h"])
+    # The same growth sideways, for a control narrower than 48.
+    if (n["clk"] or n["cls"] == "Button") and abs(n["w"] - 48) < 0.6 and e["w"] < 47.5:
+        n = dict(n, x=round(n["x"] + (48 - e["w"]) / 2, 1), w=e["w"])
     return n
+
+
+TEXT = {"StaticText", "TextView"}
+
+
+def horizontal(pairs, W):
+    """Margins, centring and gaps in a row, on the same pairs (2026-11-11, Hidde
+    on how each page is laid out across its width).
+
+    Both screens are 402 wide while measuring, so a margin is a margin. Text is
+    judged on its aligned side only: where a line's words end is the typeface's
+    width, not our layout. Something centred on the iPhone (its middle within 1
+    of the screen's) is judged by its middle.
+    """
+    out = {}
+    for e, n in pairs:
+        if e["w"] >= W - 1 or e["x"] < 0 or e["x"] + e["w"] > W:
+            continue
+        nm = name_of(e)
+        mid_i = e["x"] + e["w"] / 2
+        if abs(mid_i - W / 2) < 1:
+            out[f"{nm} centre"] = (round(mid_i - W / 2, 1), round(n["x"] + n["w"] / 2 - W / 2, 1))
+            continue
+        left = (round(e["x"], 1), round(n["x"], 1))
+        right = (round(W - e["x"] - e["w"], 1), round(W - n["x"] - n["w"], 1))
+        if e["t"] in TEXT or n["cls"] in TEXT:
+            # Aligned to one side; the other end is where its words stop.
+            if abs(right[1] - right[0]) < abs(left[1] - left[0]):
+                out[f"{nm} right"] = right
+            else:
+                out[f"{nm} left"] = left
+        else:
+            out[f"{nm} left"] = left
+            out[f"{nm} right"] = right
+    # Neighbours in a row: overlapping vertically, next to the right, in the same
+    # order on Android, and the left one not a text (its end is the typeface's).
+    for i, (e, n) in enumerate(pairs):
+        if e["t"] in TEXT:
+            continue
+        row = [(f, m) for f, m in pairs if f is not e and f["x"] >= e["x"] + e["w"] - 0.5
+               and f["y"] < e["y"] + e["h"] and e["y"] < f["y"] + f["h"]]
+        if not row:
+            continue
+        f, m = min(row, key=lambda p: p[0]["x"])
+        if m["x"] < n["x"] + n["w"] - 0.5:
+            continue
+        out[f"{name_of(e)} | {name_of(f)}"] = (round(f["x"] - e["x"] - e["w"], 1), round(m["x"] - n["x"] - n["w"], 1))
+    return out
 
 
 def compare_page(pairs, ios_h, ios_els):
@@ -513,16 +564,18 @@ def sheet_scale(ios):
     return 48.0 / max(set(hs), key=hs.count) if hs else 1.0
 
 
-def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
+def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pending=True):
     allowed_what = {a["what"]: a.get("why", "") for a in allowed}
     k = sheet_scale(ios)
-    gaps, heights, insets_, seen_gap = {}, {}, {}, {}
+    gaps, heights, insets_, seen_gap, across = {}, {}, {}, {}, {}
     matched = 0
     for n, xml in enumerate(xml_pages):
         nodes = android_nodes(xml, density, screen_h_dp)
         pairs = match(ios["els"], nodes)
         matched = max(matched, len(pairs))
         g, h = compare_page(pairs, ios["h"], ios["els"])
+        for key, v in horizontal(pairs, ios["w"]).items():
+            across.setdefault(key, v)
         # A scrolled page meets the same element again: keep the reading
         # where it stood whole (accessibility bounds are cut, never grown).
         for key, v in g.items():
@@ -562,17 +615,20 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
                     else:
                         insets_[f"{name_of(ia)} -> bottom safe area"] = from_safe
     rows = []
-    for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height")):
+    for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height"),
+                                ("across", across, "")):
         for what, (vi, va) in table.items():
             d = round(va - vi, 1)
             if abs(d) <= REPORT:
                 continue
             what_s = what + suffix
             rows.append({"kind": kind, "what": what_s, "ios": vi, "android": va, "diff": d,
-                         "fails": abs(d) > FAIL and what_s not in allowed_what,
+                         "fails": abs(d) > FAIL and what_s not in allowed_what
+                         and not (kind == "across" and h_pending),
                          "allowed": allowed_what.get(what_s)})
     rows.sort(key=lambda r: -abs(r["diff"]))
-    return {"ios_scale": round(k, 4), "matched": matched, "measured": len(gaps) + len(heights) + len(insets_),
+    return {"ios_scale": round(k, 4), "matched": matched,
+            "measured": len(gaps) + len(heights) + len(insets_) + len(across), "across": len(across),
             "gaps": len(gaps), "differences": rows,
             "failing": sum(1 for r in rows if r["fails"])}
 
@@ -592,6 +648,9 @@ def main():
     ios_all = json.loads(IOS_FRAMES.read_text())
     pend = json.loads(PENDING.read_text()) if PENDING.exists() else {}
     pending = set(pend.get("screens", []))
+    # The horizontal half has its own list (added 2026-11-11): every screen
+    # starts on it and leaves when its margins and rows are fixed or listed.
+    h_pending = set(pend.get("screens_across", []))
     # Screens the iPhone's dump cannot be held against, each with its reason:
     # measured, shown, never passed off as equal.
     no_baseline = pend.get("no_ios_baseline", {})
@@ -660,7 +719,8 @@ def main():
             print(f"n/a  {name:<22} {no_baseline[name]}")
             continue
         allowed = status.get(name, {}).get("spacing_allowed", [])
-        r = judge(name, ios_all[name], pages, meta["density"], safe, meta["h_dp"], allowed)
+        r = judge(name, ios_all[name], pages, meta["density"], safe, meta["h_dp"], allowed,
+                  h_pending=name in h_pending)
         r["pending"] = name in pending
         # NOTHING MEASURED IS A FAILURE, pending or not: the first CI run
         # matched nothing on 37 screens and called every one "ok".

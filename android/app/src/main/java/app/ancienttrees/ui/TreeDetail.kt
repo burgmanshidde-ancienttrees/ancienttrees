@@ -697,20 +697,23 @@ private fun TopButtons(glassState: dev.chrisbanes.haze.HazeState?, tree: Tree, o
         Spacer(Modifier.weight(1f))
         Row(
             // Clipped, so each half's ripple stays inside the capsule (Airbnb's line, 2026-11-10).
-            Modifier.height(44.dp).shadow(2.dp, CircleShape).clip(CircleShape).glass(glassState, CircleShape, glass),
+            // The iPhone's toolbar pair (SweepFrames): share 39 wide, 16 apart, report
+            // 44, ending 20 from the edge; evenly split, share sat 11 to the right.
+            Modifier.padding(end = 4.dp).height(44.dp).shadow(2.dp, CircleShape).clip(CircleShape).glass(glassState, CircleShape, glass),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             val share = stringResource(R.string.share_tree)
             Box(
-                Modifier.size(48.dp, 44.dp).clickable(role = Role.Button, onClick = onShare).semantics { contentDescription = share },
+                Modifier.size(39.dp, 44.dp).clickable(role = Role.Button, onClick = onShare).semantics { contentDescription = share },
                 contentAlignment = Alignment.Center,
             ) {
                 Icon(Sym.ShareSemibold, null, tint = brand.moss, modifier = Modifier.size(22.dp))
             }
+            Spacer(Modifier.width(16.dp))
             val report = stringResource(R.string.report_problem)
             Box {
                 Box(
-                    Modifier.size(48.dp, 44.dp).clickable(role = Role.Button) { menu = true }.semantics { contentDescription = report },
+                    Modifier.size(44.dp, 44.dp).clickable(role = Role.Button) { menu = true }.semantics { contentDescription = report },
                     contentAlignment = Alignment.Center,
                 ) {
                     Icon(Sym.FeedbackSemibold, null, tint = brand.moss, modifier = Modifier.size(22.dp))
@@ -936,7 +939,9 @@ private fun SpeciesColumn(tree: Tree, actions: TreePageActions) {
     ) {
         FactColumn(stringResource(R.string.species)) {
             // Common name only, and the chevron that says the species page is one tap away.
-            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+            // HStack(spacing: 4) in Swift, but Material's chevron carries about 4 more
+            // side bearing than SF's: at 0 the visible gap is the iPhone's 8 (review row).
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
                     tree.commonName,
                     fontFamily = BrandFace,

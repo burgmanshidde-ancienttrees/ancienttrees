@@ -33,6 +33,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
@@ -461,7 +462,9 @@ fun CollectSheet(
         sheetState = sheet,
         containerColor = brand.ground,
         properties = ModalBottomSheetProperties(shouldDismissOnBackPress = true),
-        modifier = Modifier.testTag("spot-sheet"),
+        // At its tallest it stops at the safe area's top, as the iPhone's .large
+        // detent: the map stays in a strip above it (collect-place, collect-identify).
+        modifier = Modifier.statusBarsPadding().testTag("spot-sheet"),
         // The map and list steps take the whole height, edge to edge (.large).
         floating = !(stage == Stage.Place || stage == Stage.Identify),
     ) {

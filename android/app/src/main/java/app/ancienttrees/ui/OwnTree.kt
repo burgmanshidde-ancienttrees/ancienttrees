@@ -34,6 +34,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
@@ -139,8 +140,15 @@ private fun OwnTreeInner(
     val place = remember(s.lat, s.lng, catalogue) { minePlace(catalogue, s.lat, s.lng) }
 
     BoxWithConstraints(Modifier.fillMaxSize().background(brand.ground)) {
-        // heroHeight: the photograph's shape across the page, stopped at 60 percent.
-        val heroHeight = minOf(maxWidth * (4f / 3f), maxHeight * 0.6f)
+        // heroHeight: the photograph's shape across the page, stopped at 60 percent of
+        // the page. The Swift's page is its scroll view: under the status bar, above
+        // the home indicator (TreeDetail.swift pageSize), so the navigation bar is
+        // not page here either.
+        val navBottom = with(androidx.compose.ui.platform.LocalDensity.current) {
+            androidx.compose.foundation.layout.WindowInsets.navigationBars
+                .getBottom(androidx.compose.ui.platform.LocalDensity.current).toDp()
+        }
+        val heroHeight = minOf(maxWidth * (4f / 3f), (maxHeight - navBottom) * 0.6f)
         val scroll = rememberScrollState()
         // The photograph and the page, for the glass buttons and the soft top edge (Glass.kt).
         val ownGlass = dev.chrisbanes.haze.rememberHazeState()

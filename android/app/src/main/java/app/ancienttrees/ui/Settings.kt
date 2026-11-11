@@ -250,7 +250,9 @@ private fun SettingsInner(host: SettingsHost, onBack: () -> Unit, askSignOut: Bo
                 fontSize = 11.sp, color = brand.inkSoft.copy(alpha = 0.8f), textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth().padding(top = 4.dp).testTag("build-line"),
             )
-            Spacer(Modifier.height(80.dp))
+            // Profile.swift's Color.clear 80, inside a ScrollView that already keeps
+            // clear of the home indicator: here that bar has to be added.
+            Spacer(Modifier.navigationBarsPadding().height(80.dp))
         }
     }
 
