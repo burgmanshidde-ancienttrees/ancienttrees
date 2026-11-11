@@ -574,14 +574,21 @@ def sheet_scale(ios):
     a screen are scaled back by the button (found 2026-11-11); positions from the
     screen's edges are left as read.
     """
-    if not any(e["id"] in ("sheet-close", "spot-close", "xmark") for e in ios["els"]):
-        return 1.0  # not a presented sheet
+    # Since PR 54 Android draws its floating sheet at the same scale (Sheet.kt,
+    # graphicsLayer, 8 in from each side), so both phones are read as drawn and
+    # nothing is scaled back here; correcting only the iPhone counted it twice.
+    return 1.0
     hs = [e["h"] for e in ios["els"] if e["t"] == "Button" and 45.5 < e["h"] < 47.9 and e["w"] > 300]
     return 48.0 / max(set(hs), key=hs.count) if hs else 1.0
 
 
 def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pending=True):
     allowed_what = {a["what"]: a.get("why", "") for a in allowed}
+    # A reason covers the difference it explains, not any size: one written for a
+    # 28 dp foot hid a 107 dp one after a later change (2026-11-12). "within" sets
+    # the largest difference it covers; a reason without one covers any size, so
+    # give one wherever the size is what the reason is about.
+    allowed_within = {a["what"]: a.get("within") for a in allowed}
     k = sheet_scale(ios)
     gaps, heights, insets_, seen_gap, across = {}, {}, {}, {}, {}
     sheet_pairs, sheet_nodes = [], []
@@ -658,7 +665,9 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed, h_pen
                 continue
             what_s = what + suffix
             rows.append({"kind": kind, "what": what_s, "ios": vi, "android": va, "diff": d,
-                         "fails": abs(d) > FAIL and what_s not in allowed_what
+                         "fails": abs(d) > FAIL and (what_s not in allowed_what
+                                                     or (allowed_within.get(what_s) is not None
+                                                         and abs(d) > allowed_within[what_s]))
                          and not (kind == "across" and h_pending),
                          "allowed": allowed_what.get(what_s)})
     rows.sort(key=lambda r: -abs(r["diff"]))

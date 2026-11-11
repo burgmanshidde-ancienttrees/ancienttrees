@@ -210,11 +210,13 @@
     "spacing_allowed": [
       {
         "what": "add-library -> bottom safe area",
-        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
       },
       {
         "what": "add-library -> screen foot",
-        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
       },
       {
         "what": "spot-close height",
@@ -232,11 +234,13 @@
     "spacing_allowed": [
       {
         "what": "add-library -> bottom safe area",
-        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
       },
       {
         "what": "add-library -> screen foot",
-        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
+        "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing.",
+        "within": 12
       },
       {
         "what": "spot-close height",
@@ -419,7 +423,8 @@
     "spacing_allowed": [
       {
         "what": "directions-google -> screen foot",
-        "why": "Different buttons: the iPhone offers Apple Maps then Google Maps, Android Google Maps then Another maps app (no Apple Maps on Android), so the last button is not the same one; and the card stands on Android's navigation bar, as on every sheet."
+        "why": "Different buttons: the iPhone offers Apple Maps then Google Maps, Android Google Maps then Another maps app (no Apple Maps on Android). Google is the last button on the iPhone and the first here, one 46 button and its 12 higher; the foot itself matches within 3.",
+        "within": 62
       }
     ]
   },
@@ -432,7 +437,8 @@
     "spacing_allowed": [
       {
         "what": "review-no -> screen foot",
-        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing."
+        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing.",
+        "within": 12
       }
     ]
   },
@@ -537,7 +543,8 @@
     "spacing_allowed": [
       {
         "what": "early-adopter-done -> screen foot",
-        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing."
+        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing.",
+        "within": 12
       }
     ]
   },

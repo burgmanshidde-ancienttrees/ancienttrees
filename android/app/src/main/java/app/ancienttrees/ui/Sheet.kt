@@ -18,6 +18,11 @@ import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.navigationBars
+import androidx.compose.foundation.layout.tappableElement
+import androidx.compose.foundation.layout.only
+import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -155,6 +160,11 @@ fun AppSheet(
             sheetState.show()
         }
     }
+    // The gesture bar's height (navigation bar minus anything tappable in it): the
+    // floating card stands over it as iOS 26's stands over the home indicator.
+    val insetDensity = androidx.compose.ui.platform.LocalDensity.current
+    val gestureOnly = (WindowInsets.navigationBars.getBottom(insetDensity) -
+        WindowInsets.tappableElement.getBottom(insetDensity)).coerceAtLeast(0)
     ModalBottomSheet(
         onDismissRequest = onDismissRequest,
         // SCALED, NOT NARROWED (visual review 2026-11-11): iOS 26 lays the fitted
@@ -169,7 +179,11 @@ fun AppSheet(
             scaleX = s
             scaleY = s
             transformOrigin = TransformOrigin(0.5f, 1f)
-            translationY = -10.dp.toPx()
+            // 10 above the screen's edge, as measured on the iPhone, over the gesture
+            // bar: the sheet's window stops on the navigation bar, so it comes down
+            // by the bar's height (its foot stood 31.6 up, the last button 58 against
+            // the iPhone's 35; android_spacing.py, 2026-11-12).
+            translationY = -10.dp.toPx() + gestureOnly
         } else modifier,
         shape = if (floating) RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp, bottomStart = 36.dp, bottomEnd = 36.dp)
         else RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
@@ -180,6 +194,17 @@ fun AppSheet(
         // The iPhone's dimming is light: white under it reads #D6D6DA, Material's 32
         // percent black reads #A8A8A8 (review 2026-11-11, row 124).
         scrimColor = Color.Black.copy(alpha = 0.16f),
+        // iOS 26's floating sheet ignores the bottom safe area (BrandSheetFit,
+        // ignoresSafeArea(.container, edges: .bottom)): its last button stands its
+        // own 28 above the card's foot. Material padded the content by the
+        // navigation bar on top of that, and with the card scaled about its foot
+        // the button stood 80 to 142 above the screen's edge against the iPhone's
+        // 35 (android_spacing.py). Only what can be tapped is kept clear: three-
+        // button navigation, never the gesture bar.
+        contentWindowInsets = {
+            if (floating) WindowInsets.tappableElement.only(WindowInsetsSides.Bottom)
+            else androidx.compose.material3.BottomSheetDefaults.windowInsets
+        },
     ) {
         // A sheet opened from inside this one has its own owner.
         CompositionLocalProvider(LocalSheetClose provides close, LocalSheetPresence provides null) { content() }
