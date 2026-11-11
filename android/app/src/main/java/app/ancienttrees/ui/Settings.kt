@@ -452,7 +452,8 @@ fun PushedBar(title: String, onBack: () -> Unit, trailing: (@Composable () -> Un
             // The navigation bar title: Gabarito Bold 17 (UINavigationBarAppearance, AncientTreesApp.swift).
             title, fontFamily = BrandFace, fontSize = 17.sp, fontWeight = FontWeight.Bold, color = brand.ink, maxLines = 1,
             overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
-            modifier = Modifier.align(Alignment.Center).padding(horizontal = 52.dp),
+            // Clear of the back circle (16 + 44 + 8).
+            modifier = Modifier.align(Alignment.Center).padding(horizontal = 68.dp),
         )
         trailing?.let { Box(Modifier.align(Alignment.CenterEnd).padding(end = 8.dp)) { it() } }
     }
