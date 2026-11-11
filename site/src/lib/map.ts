@@ -308,13 +308,17 @@ export function mapScript(body: string): string {
  * line after it: on a tree page, Back, Take me there and Show us where it is
  * (web_errors, 2026-11-04, Chrome 149 on a tree page). Every map is created
  * behind atCanMap(); a page without one keeps everything else working and
- * its map box simply stays empty, as it did before. Asked once per page. */
+ * its map box simply stays empty, as it did before. Asked once per page.
+ * The library itself is asked first: a script that never arrived (a dropped
+ * connection) or that the browser cannot parse (Chrome 75) leaves no
+ * maplibregl, and the first use of it stopped the page the same way
+ * (web_errors, 2026-11-10 and 11-11, /hong-kong, /assen, a Waremme tree). */
 export const CAN_MAP_JS = `
 function atCanMap() {
   if (atCanMap.v === undefined) {
     try {
       var c = document.createElement('canvas');
-      atCanMap.v = !!(window.WebGLRenderingContext &&
+      atCanMap.v = !!(window.maplibregl && window.WebGLRenderingContext &&
         (c.getContext('webgl2') || c.getContext('webgl') || c.getContext('experimental-webgl')));
     } catch (e) { atCanMap.v = false; }
   }

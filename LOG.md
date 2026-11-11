@@ -21,6 +21,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11 session: a map library that does not load no longer stops the page
+
+Nothing changes for anyone whose map loads. When the MapLibre script never arrives or the browser cannot parse it (3 reports in 24 hours: /hong-kong on Chrome 75, /assen and a Waremme tree on Chrome 156), the rest of the page now keeps working and the map's buttons hide, as they already did without WebGL. `atCanMap()` in lib/map.ts asks for the library too; qa's `check_a_map_is_only_built_when_it_can_be()` holds it. Tested on a copy of the live Waremme page without the library: the old code threw this error, the new code throws nothing. The full qa needs the CI build; only the new check ran locally. web_errors stays red until these reports fall out of its 24 hours.
+
 ## 2026-11-11, night run, second attempt (no new trees)
 
 Nothing visible changed in the product. The shelf is empty and the staged cities have almost no placed leads.

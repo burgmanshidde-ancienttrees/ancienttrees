@@ -2889,6 +2889,31 @@ def check_every_map_shows_one_world():
     return problems
 
 
+def check_a_map_is_only_built_when_it_can_be():
+    """A map that cannot be built must never stop the rest of the page.
+
+    Without WebGL (web_errors, 2026-11-04) or without the library itself
+    (2026-11-10 and 11-11: a script that never arrived, or Chrome 75 that
+    cannot parse it) the first use of maplibregl threw and everything after it
+    on the page was dead. atCanMap() asks both; every `new maplibregl.Map(`
+    in site/src stands behind it.
+
+    Removing this needs Hidde."""
+    problems = []
+    site = ROOT / "site" / "src"
+    guard = re.search(r"function atCanMap\(\).*?return atCanMap\.v;", (site / "lib" / "map.ts").read_text(), re.S)
+    if not guard or "window.maplibregl" not in guard.group(0) or "WebGLRenderingContext" not in guard.group(0):
+        problems.append("lib/map.ts: atCanMap() no longer asks for both the library and WebGL")
+    for f in sorted(site.rglob("*.ts")) + sorted(site.rglob("*.astro")):
+        src = f.read_text()
+        for m in re.finditer(r"new maplibregl\.Map\(", src):
+            if "atCanMap()" not in src[max(0, m.start() - 1500):m.start()]:
+                line = src.count("\n", 0, m.start()) + 1
+                problems.append("%s:%d builds a map without asking atCanMap() first: a browser that cannot draw it loses the whole page"
+                                % (f.relative_to(ROOT), line))
+    return problems
+
+
 def check_one_tree_card_on_every_map():
     """A tapped tree on any website map shows the one card from
     lib/map-card-js.ts, and no map builds its own.
@@ -3810,6 +3835,7 @@ def main():
         check_the_code_is_read_every_week,
         check_every_map_shows_pins_the_same_way,
         check_every_map_shows_one_world,
+        check_a_map_is_only_built_when_it_can_be,
         check_one_tree_card_on_every_map,
     ]
     if args.source_only:
