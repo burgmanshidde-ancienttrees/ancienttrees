@@ -33,6 +33,7 @@ import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performImeAction
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import androidx.compose.ui.test.performTouchInput
@@ -76,6 +77,9 @@ class Walker(val rule: ComposeTestRule) {
     fun type(id: String, text: String) {
         waitFor(id)
         rule.onAllNodes(named(id)).onFirst().performTextInput(text)
+        // Then return, as FlowWalk.swift types "DELETE\n": the keyboard goes away and
+        // the button under it can be reached (on CI it lay under the keyboard).
+        runCatching { rule.onAllNodes(named(id)).onFirst().performImeAction() }
         rule.waitForIdle()
     }
 

@@ -155,7 +155,7 @@ jobs:
           disable-animations: true
           working-directory: android
           # The frames every step left (FlowWalk.shoot) come out whether it passed or not.
-          script: ./gradlew --no-daemon connectedDebugAndroidTest "-Pandroid.testInstrumentationRunnerArguments.AT_SESSION=$AT_SESSION" -Pandroid.testInstrumentationRunnerArguments.notClass=app.ancienttrees.ButtonWalk; s=$?; adb pull /data/local/tmp/walk ../out/android-walk || true; exit $s
+          script: ./gradlew --no-daemon connectedDebugAndroidTest "-Pandroid.testInstrumentationRunnerArguments.AT_SESSION=$AT_SESSION" -Pandroid.testInstrumentationRunnerArguments.notClass=app.ancienttrees.ButtonWalk; s=$?; mkdir -p ../out/android-walk; adb pull /data/local/tmp/walk/. ../out/android-walk || true; exit $s
 
       - name: Keep the walk's report
         if: always()

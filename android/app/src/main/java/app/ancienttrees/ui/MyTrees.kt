@@ -584,7 +584,9 @@ private fun LaneTab(title: String, on: Boolean, tag: String, onClick: () -> Unit
             .testTag(tag)
             // The 2 point moss line under the chosen word, on the hairline.
             .drawBehind { if (on) drawRect(moss, Offset(0f, size.height - 2.dp.toPx()), Size(size.width, 2.dp.toPx())) }
-            .padding(vertical = 12.dp),
+            // 10, not 12: the iPhone's lane button is 43.3 tall (data/ios-frames.json
+            // lane-collected); with Inter's taller line 12 made it 48.
+            .padding(vertical = 10.dp),
     )
 }
 
