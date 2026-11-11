@@ -121,13 +121,21 @@ fun Text(
     onTextLayout: ((TextLayoutResult) -> Unit)? = null,
     style: TextStyle = LocalTextStyle.current,
 ) {
-    // A headline (headlineStyle) breaks greedily, as TextKit does, and only a
-    // two-line one that would end on a single word is balanced (push-out).
-    val headline = style.lineBreak == LineBreak.Heading
+    // TextKit's push-out, for every text that may wrap: break greedily, and when
+    // a two-line text would end on a single word, take one more word down with it
+    // ("...and the / Privacy notice.", "Are you enjoying / Ancient Trees?", "add
+    // and / save trees."); a third line keeps its lone word, as the iPhone's
+    // refused sheet shows. Measured 2026-11-11. The last two words are tied with
+    // a no-break space, so the break stays greedy everywhere else.
+    val wraps = softWrap && maxLines >= 2
     var pushed by remember(text) { mutableStateOf(false) }
-    val styled = if (headline && !pushed) style.copy(lineBreak = LineBreak.Simple) else style
-    val layout: ((TextLayoutResult) -> Unit)? = if (!headline) onTextLayout else { r ->
-        if (!pushed && r.lineCount == 2) {
+    val shown = if (wraps && pushed) text.trimEnd().let { t ->
+        val i = t.lastIndexOf(' ')
+        if (i > 0) t.substring(0, i) + "\u00A0" + t.substring(i + 1) else text
+    } else text
+    val styled = if (wraps) style.copy(lineBreak = LineBreak.Simple) else style
+    val layout: ((TextLayoutResult) -> Unit)? = if (!wraps) onTextLayout else { r ->
+        if (!pushed && r.lineCount == 2 && shown === text) {
             val last = text.substring(r.getLineStart(1), r.getLineEnd(1)).trim()
             if (last.isNotEmpty() && ' ' !in last) pushed = true
         }
@@ -135,7 +143,7 @@ fun Text(
     }
     val (lh, st) = lines(lineHeight, fontSize, fontFamily, styled)
     androidx.compose.material3.Text(
-        text = text, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
+        text = shown, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
         fontWeight = fontWeight, fontFamily = fontFamily ?: style.fontFamily ?: TextFace,
         letterSpacing = spacing(letterSpacing, fontSize, fontWeight, fontFamily, style),
         textDecoration = textDecoration, textAlign = textAlign, lineHeight = lh, overflow = overflow,
@@ -164,14 +172,31 @@ fun Text(
     onTextLayout: (TextLayoutResult) -> Unit = {},
     style: TextStyle = LocalTextStyle.current,
 ) {
-    val (lh, st) = lines(lineHeight, fontSize, fontFamily, style)
+    // The same push-out as the plain Text above; a no-break space has the space's
+    // length, so the styles and links keep their ranges.
+    val wraps = softWrap && maxLines >= 2
+    var pushed by remember(text) { mutableStateOf(false) }
+    val shown = if (wraps && pushed) {
+        val i = text.text.trimEnd().lastIndexOf(' ')
+        if (i > 0) androidx.compose.ui.text.buildAnnotatedString {
+            append(text.subSequence(0, i)); append("\u00A0"); append(text.subSequence(i + 1, text.length))
+        } else text
+    } else text
+    val layout: (TextLayoutResult) -> Unit = { r ->
+        if (wraps && !pushed && r.lineCount == 2 && shown === text) {
+            val last = text.text.substring(r.getLineStart(1), r.getLineEnd(1)).trim()
+            if (last.isNotEmpty() && ' ' !in last) pushed = true
+        }
+        onTextLayout(r)
+    }
+    val (lh, st) = lines(lineHeight, fontSize, fontFamily, if (wraps) style.copy(lineBreak = LineBreak.Simple) else style)
     androidx.compose.material3.Text(
-        text = text, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
+        text = shown, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
         fontWeight = fontWeight, fontFamily = fontFamily ?: style.fontFamily ?: TextFace,
         letterSpacing = spacing(letterSpacing, fontSize, fontWeight, fontFamily, style),
         textDecoration = textDecoration, textAlign = textAlign, lineHeight = lh, overflow = overflow,
         softWrap = softWrap, maxLines = maxLines, minLines = minLines, inlineContent = inlineContent,
-        onTextLayout = onTextLayout, style = st,
+        onTextLayout = layout, style = st,
     )
 }
 
@@ -181,10 +206,11 @@ fun placeholderGrey(): Color =
     if (Brand.colors.ground.red < 0.5f) Color(0x4DEBEBF5) else Color(0x4D3C3C43)
 
 /**
- * A headline's line breaking as Apple's: greedy, except that a two-line headline
+ * A headline's line breaking as Apple's: greedy, except that a two-line text
  * never ends on one word (TextKit's push-out: "Are you enjoying / Ancient Trees?",
  * while "Ancient Trees works best / with your location turned / on" keeps its
- * lone "on", measured on the iPhone 2026-11-11). Text() reads the marker.
+ * lone "on", measured on the iPhone 2026-11-11). Text() does this for every
+ * wrapping text now; the marker is kept so a headline says what it is.
  */
 @Composable
-fun headlineStyle(): TextStyle = LocalTextStyle.current.copy(lineBreak = LineBreak.Heading)
+fun headlineStyle(): TextStyle = LocalTextStyle.current
