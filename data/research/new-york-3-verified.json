@@ -653,7 +653,7 @@
   "how_to_recognise": "You can recognise it as a holly grown to tree size, about 11.7 metres tall with a crown 28 feet wide. It stands on the south side of the Rock Garden, about 25 metres from the Chinese parasol tree."
  },
  {
-  "id": "nyc_094",
+  "id": "nyc_144",
   "name": "The Pagoda Tree by the Camperdown Elm",
   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
   "age_estimate": "not documented",
@@ -675,8 +675,22 @@
   "transport": "Prospect Park station (B, Q), about 0.3 km on foot",
   "location_precision": "confirmed",
   "curation_status": "ai_generated",
-  "verify_notes": "Source: NYC Parks Great Trees entry id=10 (fetched live 2026-11-02, carries lat/lon and a Tree Map ID, the Parks forestry inventory's individual-tree id). Diameter 55 in -> girth_cm 439 (pi x diameter). One official register: counts as enough; Parks entry id=10, Tree Map ID 5379435: 86 ft tall in 1985, canopy spread 62 ft, 55 in diameter. Parks note: native to eastern Asia, once planted at the graves of Japanese scholars; white flower clusters bloom early in the fall (late summer). Stands beside nyc_003 (Camperdown Elm, 40.6602,-73.9651) and nyc_029 (hornbeam, 40.6605,-73.9655): a three-tree stop. iNaturalist 2026-10-13 within radius.",
-  "height_m": 26.2
+  "height_m": 26.2,
+  "story": "Most people who come to see Brooklyn's famous Camperdown elm walk straight past the bigger tree beside it. This Japanese pagoda tree stands a few steps away, south of the Prospect Park Boathouse, and when NYC Parks named it one of the Great Trees of New York City in 1985 it measured 86 feet tall, about 26 metres, with a crown 62 feet wide. The elm, low and propped on cables, reaches about a quarter of that height.\n\nThe trunk is 55 inches across, which works out at about 4.4 metres round, thicker than its famous neighbour's. Parks notes that the species is native to eastern Asia and was once planted at the graves of Japanese scholars. Here it keeps company with rowers and dog walkers instead.\n\nIt also keeps its own calendar. Most trees in the park have finished flowering by June. This one waits for late summer, then opens clusters of white flowers when everything around it has gone plain green. An iNaturalist record from October 2026 shows it still standing, four decades after the city first put its name on the list.\n\nNobody has published when it was planted, and the Parks entry gives no age. If you know, tell us.\n\nThe park is free and open daily, and Prospect Park station on the B and Q lines is about 300 metres away. Come for the elm, stay for the tree that towers over it.",
+  "how_to_recognise": "You can recognise it by its height, far above the low, cabled Camperdown elm beside it, and in late summer by its white flower clusters. It stands a few steps from that elm, south of the Boathouse.",
+  "best_time": {
+   "months": [
+    8
+   ],
+   "kind": "flowers",
+   "label": "August, when white flower clusters open after most of the park has finished flowering"
+  },
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  }
  },
  {
   "id": "nyc_095",
