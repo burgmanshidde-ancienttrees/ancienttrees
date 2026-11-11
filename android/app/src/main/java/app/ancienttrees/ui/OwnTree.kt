@@ -367,11 +367,22 @@ private fun OwnFacts(s: OwnSighting, onEdit: (EditableField) -> Unit, onSpecies:
             }
             Column(Modifier.fillMaxWidth()) {
                 Hairline()
-                Box(Modifier.padding(top = 10.dp)) {
+                val addSpecies = stringResource(R.string.ot_add_species)
+                Box(
+                    // TreeDetail.swift speciesColumn: the whole column is one button,
+                    // at least 44, the label and "Add" inside it; with its own 44 under
+                    // the label the card ran 18 taller than the iPhone's.
+                    Modifier.padding(top = 10.dp).let {
+                        if (tree.species.isEmpty()) it.fillMaxWidth().heightIn(min = 44.dp)
+                            .clickable(role = Role.Button, onClick = onSpecies)
+                            .semantics(mergeDescendants = true) { contentDescription = addSpecies }
+                        else it
+                    },
+                ) {
                     // ON YOUR OWN TREE THIS NAMES THE SPECIES, it does not browse to one.
                     FactColumn(stringResource(R.string.species)) {
                         if (tree.species.isEmpty()) {
-                            AddValue(stringResource(R.string.ot_add_species), onSpecies)
+                            AddValue(addSpecies, null)
                         } else {
                             Text(
                                 tree.commonName,
@@ -393,10 +404,12 @@ private fun OwnFacts(s: OwnSighting, onEdit: (EditableField) -> Unit, onSpecies:
 
 /** addValue: "Add", never "Add it"; the label above names the field. */
 @Composable
-private fun AddValue(label: String, onClick: () -> Unit) {
+private fun AddValue(label: String, onClick: (() -> Unit)?) {
     val brand = Brand.colors
     Row(
-        Modifier
+        // Its own 44 button (age, girth), or, inside a column that is the button
+        // (species: TreeDetail.swift speciesColumn), plain words at their height.
+        if (onClick == null) Modifier else Modifier
             .heightIn(min = 44.dp)
             .clickable(role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onClick)
             .semantics { contentDescription = label },

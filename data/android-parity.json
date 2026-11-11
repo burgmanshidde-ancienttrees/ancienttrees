@@ -254,7 +254,13 @@
   },
   "collect-identify": {
     "status": "parity",
-    "differences": []
+    "differences": [],
+    "spacing_allowed": [
+      {
+        "what": "collect-not-sure right",
+        "why": "Tap area, not drawing: the iPhone's button is as wide as its words (no maxWidth in CollectSheet.swift), Android's ChoiceRow spans the row like the rows above it; the words stand at the same 20 from the left on both."
+      }
+    ]
   },
   "collect-ticked": {
     "status": "parity",

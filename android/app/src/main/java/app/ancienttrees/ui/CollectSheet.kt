@@ -84,6 +84,7 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.ancienttrees.R
@@ -696,6 +697,18 @@ private fun CloseRow(onClose: () -> Unit) {
 
 // MARK: - Where does it stand
 
+/**
+ * The tall steps' close row 4 below the sheet's top, as CollectSheet.swift's
+ * closeRow (.padding(.top, 4)): AppSheet's handle keeps 48 above the content, so
+ * the step comes 44 up into it, taking that room at its foot. Measured, the
+ * place step's title sat 47.6 lower than the iPhone's.
+ */
+private fun Modifier.intoHandleRoom(by: Dp): Modifier = layout { m, c ->
+    val t = by.roundToPx()
+    val p = m.measure(if (c.hasBoundedHeight) c.copy(maxHeight = c.maxHeight + t, minHeight = minOf(c.minHeight + t, c.maxHeight + t)) else c)
+    layout(p.width, (p.height - t).coerceAtLeast(0)) { p.place(0, -t) }
+}
+
 @Composable
 private fun PlaceStep(
     start: Here,
@@ -708,7 +721,7 @@ private fun PlaceStep(
 ) {
     val brand = Brand.colors
     var recentre by remember { mutableIntStateOf(0) }
-    Column(Modifier.fillMaxSize()) {
+    Column(Modifier.fillMaxSize().intoHandleRoom(44.dp)) {
         CloseRow(onClose)
         Column(Modifier.padding(horizontal = 20.dp).padding(bottom = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(stringResource(R.string.cf_where), fontFamily = BrandFace, fontWeight = FontWeight.ExtraBold, fontSize = 24.sp, color = brand.ink)
@@ -777,7 +790,7 @@ private fun IdentifyStep(
     onClose: () -> Unit,
 ) {
     val brand = Brand.colors
-    Column(Modifier.fillMaxSize()) {
+    Column(Modifier.fillMaxSize().intoHandleRoom(44.dp)) {
         CloseRow(onClose)
         Column(
             verticalArrangement = Arrangement.spacedBy(20.dp),
