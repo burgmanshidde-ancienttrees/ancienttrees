@@ -8,7 +8,9 @@
   "collect-place",
   "city",
   "city-map-full",
-  "species-pick"
+  "species-pick",
+  "collect-intro",
+  "collect-away"
  ],
  "no_ios_baseline": {
   "profile-edit": "SweepFrames opens it without -signed-in, so the iPhone's dump is signed-out My trees, not the editor (fix the frame in SweepFrames.swift, then refresh data/ios-frames.json)",

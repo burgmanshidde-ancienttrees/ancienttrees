@@ -215,10 +215,6 @@
       {
         "what": "add-library -> screen foot",
         "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
-      },
-      {
-        "what": "spot-close height",
-        "why": "Accessibility box, not layout: the X is drawn whole, 14 to 62 below the sheet's top as the iPhone's, but its box is reported cut where the lifted intro's layout begins; the gap from it to the text matches."
       }
     ]
   },
@@ -233,10 +229,6 @@
       {
         "what": "add-library -> screen foot",
         "why": "The last button stands 8 above the sheet's content edge on both (CollectSheet.swift .padding(.bottom, 8)). Android's card stands on its navigation bar with a 10 margin (Sheet.kt), the iPhone's on the home indicator: the distance to the screen's edge differs by those system bars, not by our spacing."
-      },
-      {
-        "what": "spot-close height",
-        "why": "Accessibility box, not layout: the X is drawn whole, 14 to 62 below the sheet's top as the iPhone's, but its box is reported cut where the lifted intro's layout begins; the gap from it to the text matches."
       }
     ]
   },
