@@ -633,6 +633,10 @@ private fun AddPhotoPill(enabled: Boolean, onClick: () -> Unit) {
     val label = stringResource(R.string.add_photo_label)
     Box(
         Modifier
+            // 36 in the layout, 44 to the thumb: the Swift's .padding(.vertical, 4)
+            // .contentShape(.rect).padding(.vertical, -4). Laid out at 44 it put
+            // the tree's name 8 lower than on the iPhone (android_spacing.py).
+            .pull(4.dp, 4.dp)
             .heightIn(min = 44.dp)
             .clickable(enabled = enabled, role = Role.Button, interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onClick)
             .semantics { contentDescription = label },
@@ -662,7 +666,8 @@ private fun TopButtons(tree: Tree, onBack: () -> Unit, onShare: () -> Unit, onRe
     val glass = brand.ground.copy(alpha = 0.92f)
     var menu by remember { mutableStateOf(false) }
     Row(
-        Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 16.dp, vertical = 6.dp),
+        // At the top of the safe area, as the iPhone's toolbar (BackButton {16, 62}).
+        Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 16.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         val back = stringResource(R.string.back)
@@ -945,8 +950,9 @@ private fun LocationLine(onPlace: () -> Unit) {
     val label = stringResource(R.string.location_approx_label)
     val lead = stringResource(R.string.location_approx_short)
     val ask = stringResource(R.string.show_us_where)
-    Column(Modifier.padding(bottom = 4.dp)) {
-        Hairline()
+    // The hairline OVER the line's top, as the Swift's .overlay(alignment: .top):
+    // stacked above it, it pushed the line and the story 1 lower (android_spacing.py).
+    Box(Modifier.padding(bottom = 4.dp)) {
         Box(
             Modifier
                 .fillMaxWidth()
@@ -966,6 +972,7 @@ private fun LocationLine(onPlace: () -> Unit) {
                 color = brand.ink,
             )
         }
+        Hairline()
     }
 }
 

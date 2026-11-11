@@ -28,6 +28,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.layout.layout
 import androidx.compose.ui.unit.dp
 import app.ancienttrees.R
 
@@ -36,6 +37,15 @@ fun ExpandableText(text: AnnotatedString, lines: Int, style: TextStyle, modifier
     val brand = Brand.colors
     var expanded by remember(text) { mutableStateOf(false) }
     var cut by remember(text) { mutableStateOf(false) }
+    // SwiftUI puts no leading after the last line. Text.kt's trim only knows the
+    // text's real last line, which a fold hides, so the folded block takes it off
+    // here (Inter's line is 1.21 of its size; the story measured 2.9 too tall).
+    val density = androidx.compose.ui.platform.LocalDensity.current
+    val foldTrim = if (cut && !expanded && style.lineHeight.isSp && style.fontSize.isSp) {
+        with(density) { (style.lineHeight.toPx() - style.fontSize.toPx() * 1.21f).coerceAtLeast(0f).toInt() }
+    } else {
+        0
+    }
     Box(
         modifier
             .fillMaxWidth()
@@ -43,7 +53,11 @@ fun ExpandableText(text: AnnotatedString, lines: Int, style: TextStyle, modifier
                 enabled = cut && !expanded,
                 interactionSource = remember { MutableInteractionSource() },
                 indication = null,
-            ) { expanded = true },
+            ) { expanded = true }
+            .layout { m, c ->
+                val p = m.measure(c)
+                layout(p.width, p.height - foldTrim) { p.place(0, 0) }
+            },
     ) {
         Text(
             text,

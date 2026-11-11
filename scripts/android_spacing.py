@@ -90,7 +90,9 @@ def norm(s):
     # "Amsterdam, 27 trees" (a button's label) and "Amsterdam 27 trees" (the
     # words inside the tappable box) are one name.
     s = re.sub(r"[,.:;\u00a0]", " ", s or "")
-    return re.sub(r"\s+", " ", s).strip().lower()
+    # The opening words are enough for a long text, and a folded story carries
+    # its "more" at the end on Android.
+    return re.sub(r"\s+", " ", s).strip().lower()[:80]
 
 
 BUTTONS = {"Button", "Link", "Switch", "Toggle", "Slider", "SegmentedControl"}
@@ -119,7 +121,13 @@ def ios_from_dump(path):
                 continue
             if not (el.ident or el.label) or el.w <= 0 or el.h <= 0:
                 continue
-            if appfit.inside(el, appfit.NOT_OURS) or in_map(el):
+            # Off the side (the end of a shelf): Android cuts these, so neither counts.
+            if (el.x < 0 or el.x + el.w > s["w"]) and el.w < s["w"]:
+                continue
+            # The navigation bar is measured here (appfit leaves it out): its
+            # height is the page's start, and without its title Android's bar
+            # title takes the page heading's place in the matching.
+            if appfit.inside(el, tuple(t for t in appfit.NOT_OURS if t != "NavigationBar")) or in_map(el):
                 continue
             # The text inside a button reports the BUTTON's frame on the
             # iPhone, not its own line box: it says nothing about the text.
@@ -211,6 +219,9 @@ def set_width(adb, width_dp=402):
     """Density so the screen is width_dp wide; returns the physical size."""
     size = adb.shell("wm", "size")
     m = re.search(r"Physical size: (\d+)x(\d+)", size)
+    if not m:
+        sys.exit("no Android device answers adb: start the emulator (Medium_Phone_API_37.0), "
+                 "or judge the dumps already taken with --no-device")
     w_px, h_px = int(m.group(1)), int(m.group(2))
     density = round(w_px * 160 / width_dp)
     adb.shell("wm", "density", str(density))
@@ -220,8 +231,29 @@ def set_width(adb, width_dp=402):
 def insets(adb, density):
     """The status bar's and the navigation bar's height, in dp."""
     text = adb.shell("dumpsys", "window", "windows")
-    top = max([int(v) for v in re.findall(r"type=statusBars[^\n]*?top=(\d+)", text)] or [0])
-    bottom = max([int(v) for v in re.findall(r"type=navigationBars[^\n]*?bottom=(\d+)", text)] or [0])
+    # The SOURCE frames first (InsetsSource ... type=navigationBars frame=[..]):
+    # the provider lines also list sizes for other rotations and the taskbar,
+    # and the largest of those read a 24 dp gesture bar as 47.6 on CI's API 35.
+    tops, bottoms = [], []
+    w_px, h_px = map(int, re.search(r"(\d+)x(\d+)", adb.shell("wm", "size")).groups())
+    for kind, y0, y1 in re.findall(r"InsetsSource[^\n]*?type=(statusBars|navigationBars)[^\n]*?"
+                                   r"frame=\[\d+,(\d+)\]\[\d+,(\d+)\]", text):
+        y0, y1 = int(y0), int(y1)
+        if kind == "statusBars" and y0 == 0 and y1 > 0:
+            tops.append(y1)
+        if kind == "navigationBars" and y1 == h_px and y0 > 0:
+            bottoms.append(y1 - y0)
+    if not tops:
+        tops = [int(v) for v in re.findall(r"type=statusBars[^\n]*?top=(\d+)", text)]
+    if not bottoms:
+        bottoms = [int(v) for v in re.findall(r"type=navigationBars[^\n]*?bottom=(\d+)", text)]
+    # The status bar is the LARGEST top source (on a Pixel 6 it holds the
+    # camera cutout: 47.6 dp, where other lines say 23.4), the navigation bar
+    # the SMALLEST bottom one (a gesture bar is 24; larger readings are other
+    # rotations and the taskbar). Checked against where Discover's title lands,
+    # 4 under the status bar as on the iPhone, on both CI and the Mac's emulator.
+    top = max(tops) if tops else 0
+    bottom = min(b for b in bottoms if b > 0) if any(b > 0 for b in bottoms) else 0
     return top * 160 / density, bottom * 160 / density
 
 
@@ -308,13 +340,17 @@ def android_nodes(xml_text, density, screen_h_dp):
                 if node.get("clickable") == "true" and not (text or desc):
                     # A tappable box whose words sit in a child: the iPhone's
                     # Button carries those words as its label and its own frame.
-                    text = " ".join(t for t in (c.get("text", "") for c in node.iter("node")) if t)
+                    text = " ".join(t for t in (c.get("text", "") or c.get("content-desc", "")
+                                                for c in node.iter("node")) if t)
                 clipped = False
                 if clip is not None:
                     # The accessibility bounds are cut at the scroller's edge,
                     # so a node touching that edge has a height that is not its own.
                     clipped = abs(y0 - clip[0]) < 1.5 or abs(y1 - clip[1]) < 1.5
                 if y0 < 0.5 or y1 > screen_h_dp - 0.5:
+                    clipped = True
+                # A card running off the side of a shelf is cut there too.
+                if (x0 < 0.5 or x1 > 401.5) and x1 - x0 < 401:
                     clipped = True
                 if (rid or text or desc) and not clipped:
                     out.append({"id": rid, "text": text, "desc": desc,
@@ -333,11 +369,13 @@ def android_nodes(xml_text, density, screen_h_dp):
 # ---------------------------------------------------------------- comparing
 
 def keys_ios(e):
-    return [k for k in (("id", e["id"]), ("t", norm(e["label"]))) if k[1]]
+    # A lone separator ("·") is a glyph inside a line, not a block on the page.
+    return [k for k in (("id", e["id"]), ("t", norm(e["label"]))) if k[1] and re.search(r"\w", k[1])]
 
 
 def keys_android(n):
-    return [k for k in (("id", n["id"]), ("t", norm(n["text"])), ("t", norm(n["desc"]))) if k[1]]
+    return [k for k in (("id", n["id"]), ("t", norm(n["text"])), ("t", norm(n["desc"])))
+            if k[1] and re.search(r"\w", k[1])]
 
 
 def name_of(e):
@@ -364,29 +402,48 @@ def match(ios_els, and_nodes):
     pairs, used = [], set()
     for kind in ("id", "t"):
         index = {}
-        for i, e in enumerate(ios_els):
-            for k in keys_ios(e):
-                if k[0] == kind:
-                    index.setdefault(k[1], []).append(i)
         for n in and_nodes:
-            if id(n) in used:
-                continue
             for k in keys_android(n):
+                if k[0] == kind:
+                    index.setdefault(k[1], []).append(n)
+        for i, e in enumerate(ios_els):
+            if ("i", i) in used:
+                continue
+            for k in keys_ios(e):
                 if k[0] != kind:
                     continue
-                free = [i for i in index.get(k[1], []) if ("i", i) not in used
-                        and (kind == "id" or kinds_fit(ios_els[i], n))]
+                free = [n for n in index.get(k[1], []) if id(n) not in used
+                        and (kind == "id" or kinds_fit(e, n))]
                 if free:
-                    i = free[0]
+                    # The same words twice (a title and a gear behind the page):
+                    # the one standing where this one stands; down a list, in order.
+                    n = min(free, key=lambda n: (round(abs(n["x"] - e["x"]) / 6),
+                                                 round(abs(n["w"] - e["w"]) / 12), n["y"]))
                     used.add(("i", i))
                     used.add(id(n))
-                    pairs.append((ios_els[i], n))
+                    pairs.append((e, n))
                     break
+    pairs = [(a, touch_box(a, n)) for a, n in pairs]
     pairs.sort(key=lambda p: (p[0]["y"], p[0]["x"]))
     return pairs
 
 
-def compare_page(pairs, ios_h):
+def touch_box(e, n):
+    """The drawn box of a tappable node Compose reported at its touch size.
+
+    Compose gives accessibility the TOUCH bounds of anything clickable, grown
+    evenly to Android's 48 dp minimum (SemanticsNode.touchBoundsInRoot), so a
+    44 point pill drawn exactly as on the iPhone reads as 48 here, two dp
+    higher and two lower. Found on the tree page, 2026-11-10: every pill and
+    chip "4 taller". A 48 against a smaller iPhone height is taken as the
+    iPhone's height, centred; anything not exactly 48 is measured as it is.
+    """
+    if (n["clk"] or n["cls"] == "Button") and abs(n["h"] - 48) < 0.6 and e["h"] < 47.5:
+        n = dict(n, y=round(n["y"] + (48 - e["h"]) / 2, 1), h=e["h"])
+    return n
+
+
+def compare_page(pairs, ios_h, ios_els):
     """Gaps between neighbours and heights, for one Android dump."""
     gaps, heights = {}, {}
     for a, b in pairs:
@@ -408,6 +465,20 @@ def compare_page(pairs, ios_h):
             continue
         top = min(ib["y"] for ib, _ in below)
         ib, ab = next(p for p in below if p[0]["y"] == top)
+        # NEIGHBOURS ONLY: nothing of ours between them on the iPhone, nothing
+        # matched between them on Android. Across a block one app does not name,
+        # or a list the two apps order differently, a difference says nothing
+        # about spacing (a map sheet read +426 between two rows).
+        lo, hi = ia["y"] + ia["h"], ib["y"]
+        if any(e is not ia and e is not ib and (e["s"] == "fixed") == (ia["s"] == "fixed")
+               and e["y"] >= lo - 0.5 and e["y"] + e["h"] <= hi + 0.5
+               and e["x"] < ia["x"] + ia["w"] and ia["x"] < e["x"] + e["w"]
+               for e in ios_els):
+            continue
+        if any(n is not aa and n is not ab and aa["y"] + aa["h"] - 0.5 <= n["y"] and n["y"] + n["h"] <= ab["y"] + 0.5
+               and n["x"] < aa["x"] + aa["w"] and aa["x"] < n["x"] + n["w"]
+               for _, n in pairs):
+            continue
         g_ios = ib["y"] - (ia["y"] + ia["h"])
         g_and = ab["y"] - (aa["y"] + aa["h"])
         if ab["y"] < aa["y"]:
@@ -426,7 +497,7 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
         nodes = android_nodes(xml, density, screen_h_dp)
         pairs = match(ios["els"], nodes)
         matched = max(matched, len(pairs))
-        g, h = compare_page(pairs, ios["h"])
+        g, h = compare_page(pairs, ios["h"], ios["els"])
         # A scrolled page meets the same element again: keep the reading
         # where it stood whole (accessibility bounds are cut, never grown).
         for k, v in g.items():
@@ -443,17 +514,31 @@ def judge(screen, ios, xml_pages, density, safe_and, screen_h_dp, allowed):
             # From the safe area, or from the screen's top for a page that
             # draws under the status bar (a hero photograph): whichever agrees
             # better is how the page was laid out.
+            # Not for a sheet: it stands on the foot of a screen 19 taller here,
+            # so its top says nothing and its foot is judged below.
             from_safe = (round(ia["y"] - IOS_SAFE[0], 1), round(aa["y"] - safe_and[0], 1))
             from_top = (round(ia["y"], 1), round(aa["y"], 1))
-            if abs(from_top[1] - from_top[0]) < abs(from_safe[1] - from_safe[0]):
+            if ia["y"] > ios["h"] * 0.3:
+                pass
+            elif abs(from_top[1] - from_top[0]) < abs(from_safe[1] - from_safe[0]):
                 insets_[f"screen top -> {name_of(ia)}"] = from_top
             else:
                 insets_[f"top safe area -> {name_of(ia)}"] = from_safe
-            ia, aa = max(pairs, key=lambda p: p[0]["y"] + p[0]["h"])
-            if ia["y"] + ia["h"] <= ios["h"] and ia["y"] + ia["h"] > ios["h"] * 0.75:
-                insets_[f"{name_of(ia)} -> bottom safe area"] = (
-                    round(ios["h"] - IOS_SAFE[1] - ia["y"] - ia["h"], 1),
-                    round(screen_h_dp - safe_and[1] - aa["y"] - aa["h"], 1))
+            # Only what stands still has a distance from the foot: where a
+            # scrolling page happens to end says nothing. From the safe area or
+            # from the screen's edge, whichever agrees better, as at the top
+            # (TabBar.swift's rule is "22 above the edge").
+            fixed = [p for p in pairs if p[0]["s"] == "fixed" and p[1]["s"] == "fixed"]
+            if fixed:
+                ia, aa = max(fixed, key=lambda p: p[0]["y"] + p[0]["h"])
+                if ios["h"] * 0.75 < ia["y"] + ia["h"] <= ios["h"]:
+                    i_edge, a_edge = ios["h"] - ia["y"] - ia["h"], screen_h_dp - aa["y"] - aa["h"]
+                    from_safe = (round(i_edge - IOS_SAFE[1], 1), round(a_edge - safe_and[1], 1))
+                    from_edge = (round(i_edge, 1), round(a_edge, 1))
+                    if abs(from_edge[1] - from_edge[0]) < abs(from_safe[1] - from_safe[0]):
+                        insets_[f"{name_of(ia)} -> screen foot"] = from_edge
+                    else:
+                        insets_[f"{name_of(ia)} -> bottom safe area"] = from_safe
     rows = []
     for kind, table, suffix in (("inset", insets_, ""), ("gap", gaps, ""), ("height", heights, " height")):
         for what, (vi, va) in table.items():

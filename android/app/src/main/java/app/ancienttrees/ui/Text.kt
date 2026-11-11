@@ -16,6 +16,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
@@ -57,6 +58,29 @@ private fun spacing(letterSpacing: TextUnit, fontSize: TextUnit, fontWeight: Fon
     return sfTracking(if (fontSize.isSpecified) fontSize else style.fontSize, fontWeight ?: style.fontWeight)
 }
 
+/**
+ * SwiftUI's line, for text that wraps. Where the Swift sets a text style the
+ * iPhone puts that style's leading (Apple's ramp: 16 on 21, 17 on 22...) between
+ * lines and none after the last: six lines of .body measure 5 x 22 + 20.3 =
+ * 130.3 and sixteen of .callout 15 x 21 + 19.1 = 334.1, exactly what SweepFrames
+ * reads (data/ios-frames.json, 2026-11-11). A .system(size:) text has no leading
+ * at all, so nothing is guessed from the size: a call that sets a line height
+ * gets it between lines only (centred, both ends trimmed: one line keeps its
+ * font's height), and a call that sets none keeps Inter's own line. Compose
+ * otherwise adds the leading after the last line too.
+ */
+private val SWIFT_LINES = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.Both)
+
+private fun lines(lineHeight: TextUnit, fontSize: TextUnit, fontFamily: FontFamily?, style: TextStyle): Pair<TextUnit, TextStyle> {
+    val family = fontFamily ?: style.fontFamily
+    if (family != null && family != TextFace) return lineHeight to style // Gabarito keeps its own lines
+    val h = if (lineHeight.isSpecified) lineHeight else style.lineHeight
+    if (!h.isSpecified) return lineHeight to style
+    // Always ours: Material's default style carries its own (Center, Trim.None),
+    // and left in place it adds the leading after the last line after all.
+    return h to style.copy(lineHeightStyle = SWIFT_LINES)
+}
+
 /** A text field's style: Inter at SF's tracking. */
 fun sfStyle(
     fontSize: TextUnit = 17.sp,
@@ -91,13 +115,16 @@ fun Text(
     minLines: Int = 1,
     onTextLayout: ((TextLayoutResult) -> Unit)? = null,
     style: TextStyle = LocalTextStyle.current,
-) = androidx.compose.material3.Text(
-    text = text, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
-    fontWeight = fontWeight, fontFamily = fontFamily ?: style.fontFamily ?: TextFace,
-    letterSpacing = spacing(letterSpacing, fontSize, fontWeight, fontFamily, style),
-    textDecoration = textDecoration, textAlign = textAlign, lineHeight = lineHeight, overflow = overflow,
-    softWrap = softWrap, maxLines = maxLines, minLines = minLines, onTextLayout = onTextLayout, style = style,
-)
+) {
+    val (lh, st) = lines(lineHeight, fontSize, fontFamily, style)
+    androidx.compose.material3.Text(
+        text = text, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
+        fontWeight = fontWeight, fontFamily = fontFamily ?: style.fontFamily ?: TextFace,
+        letterSpacing = spacing(letterSpacing, fontSize, fontWeight, fontFamily, style),
+        textDecoration = textDecoration, textAlign = textAlign, lineHeight = lh, overflow = overflow,
+        softWrap = softWrap, maxLines = maxLines, minLines = minLines, onTextLayout = onTextLayout, style = st,
+    )
+}
 
 @Composable
 fun Text(
@@ -119,11 +146,14 @@ fun Text(
     inlineContent: Map<String, InlineTextContent> = mapOf(),
     onTextLayout: (TextLayoutResult) -> Unit = {},
     style: TextStyle = LocalTextStyle.current,
-) = androidx.compose.material3.Text(
-    text = text, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
-    fontWeight = fontWeight, fontFamily = fontFamily ?: style.fontFamily ?: TextFace,
-    letterSpacing = spacing(letterSpacing, fontSize, fontWeight, fontFamily, style),
-    textDecoration = textDecoration, textAlign = textAlign, lineHeight = lineHeight, overflow = overflow,
-    softWrap = softWrap, maxLines = maxLines, minLines = minLines, inlineContent = inlineContent,
-    onTextLayout = onTextLayout, style = style,
-)
+) {
+    val (lh, st) = lines(lineHeight, fontSize, fontFamily, style)
+    androidx.compose.material3.Text(
+        text = text, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
+        fontWeight = fontWeight, fontFamily = fontFamily ?: style.fontFamily ?: TextFace,
+        letterSpacing = spacing(letterSpacing, fontSize, fontWeight, fontFamily, style),
+        textDecoration = textDecoration, textAlign = textAlign, lineHeight = lh, overflow = overflow,
+        softWrap = softWrap, maxLines = maxLines, minLines = minLines, inlineContent = inlineContent,
+        onTextLayout = onTextLayout, style = st,
+    )
+}

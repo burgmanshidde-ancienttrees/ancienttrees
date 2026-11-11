@@ -28,7 +28,9 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.requiredSize
-import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.navigationBars
+import androidx.compose.foundation.layout.tappableElement
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -42,6 +44,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
@@ -52,13 +55,39 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.ancienttrees.R
 
 object TabBar {
-    /** The disc's own 58 plus the gap under it: how deep the bar floats over what is behind it. */
-    val floatDepth = 58.dp + 4.dp
+    /**
+     * TabBar.swift bottomGap, measured from the screen's edge: with a home
+     * indicator the iPhone's bar ends 22 above the edge, reaching into that
+     * area as Photos and Contacts do; without one, 4 above the safe area.
+     * Android's gesture bar is the home indicator; three buttons are tappable,
+     * so the bar never comes closer than 4 above them. Android kept 4 above the
+     * gesture bar and sat 17 higher than the iPhone (android_spacing.py,
+     * 2026-11-11).
+     */
+    val fromEdge: Dp
+        @Composable get() {
+            val d = LocalDensity.current
+            val nav = with(d) { WindowInsets.navigationBars.getBottom(d).toDp() }
+            val tap = with(d) { WindowInsets.tappableElement.getBottom(d).toDp() }
+            return if (nav > 20.dp) maxOf(22.dp, tap + 4.dp) else nav + 4.dp
+        }
+
+    /**
+     * How deep the bar floats over what lies behind it, above the safe area:
+     * the disc's 58 plus the gap (Swift: 58 + bottomGap, negative gap included).
+     */
+    val floatDepth: Dp
+        @Composable get() {
+            val d = LocalDensity.current
+            val nav = with(d) { WindowInsets.navigationBars.getBottom(d).toDp() }
+            return 58.dp + fromEdge - nav
+        }
 
     /** The collect deed's tag: not a tab, intercepted, as on the iPhone. */
     const val COLLECT = 3
@@ -88,7 +117,7 @@ fun TabBar(selected: Int, select: (Int) -> Unit, collect: () -> Unit, modifier: 
         horizontalArrangement = Arrangement.spacedBy(10.dp),
         verticalAlignment = Alignment.CenterVertically,
         // 16, so the first icon lines up with the 20 every page starts its content at.
-        modifier = modifier.fillMaxWidth().navigationBarsPadding().padding(horizontal = 16.dp).padding(bottom = 4.dp),
+        modifier = modifier.fillMaxWidth().padding(horizontal = 16.dp).padding(bottom = TabBar.fromEdge),
     ) {
         BoxWithConstraints(
             Modifier

@@ -549,12 +549,15 @@ private fun Section(title: String, seeAll: (() -> Unit)? = null, content: @Compo
     }
 }
 
-/** Style.swift ShelfHeader: the title and See all on one line. */
+/**
+ * Style.swift ShelfHeader: the title and See all on one line, on one baseline
+ * (HStack(alignment: .firstTextBaseline)). Centred, the title sat 3 lower than
+ * on the iPhone under every shelf with a See all (android_spacing.py).
+ */
 @Composable
 fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
     val brand = Brand.colors
     Row(
-        verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
     ) {
         Text(
@@ -563,13 +566,14 @@ fun ShelfHeader(title: String, seeAll: (() -> Unit)? = null) {
             fontWeight = FontWeight.Bold,
             fontSize = 21.sp,
             color = brand.ink,
-            modifier = Modifier.weight(1f).semantics { heading() },
+            modifier = Modifier.weight(1f).alignByBaseline().semantics { heading() },
         )
         if (seeAll != null) {
             Row(
                 horizontalArrangement = Arrangement.spacedBy(3.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
+                    .alignByBaseline()
                     .heightIn(min = 44.dp)
                     .padding(start = 8.dp)
                     .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = seeAll),
@@ -1046,27 +1050,9 @@ private fun AmbassadorWantedRow(
 
 // MARK: - the pages behind the shelves
 
-/** A pushed page's top bar: back and an inline title (navigationBarTitleDisplayMode(.inline)). */
+/** A pushed page's top bar: Settings.kt's PushedBar, the one iOS 26 inline bar (54). */
 @Composable
-private fun PageBar(title: String, onBack: () -> Unit) {
-    val brand = Brand.colors
-    Box(Modifier.fillMaxWidth().statusBarsPadding().height(44.dp)) {
-        Box(
-            Modifier.align(Alignment.CenterStart).size(44.dp).clickable(onClick = onBack),
-            contentAlignment = Alignment.Center,
-        ) {
-            Icon(
-                Sym.ArrowBack,
-                stringResource(R.string.back), tint = brand.ink, modifier = Modifier.size(22.dp),
-            )
-        }
-        Text(
-            title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, maxLines = 1,
-            overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
-            modifier = Modifier.align(Alignment.Center).padding(horizontal = 52.dp),
-        )
-    }
-}
+private fun PageBar(title: String, onBack: () -> Unit) = PushedBar(title, onBack)
 
 /** A Discover page on the stack (Pages.kt): a list, or a See all. */
 @Composable

@@ -1,5 +1,5 @@
 {
-"_source": "SweepFrames dump, 2026-11-10, iPhone 17 Pro",
+"_source": "SweepFrames dump, 2026-11-11, iPhone 17 Pro",
 "_safe": [
 62.0,
 34.0
@@ -109,26 +109,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "highlight-card",
-"label": "The Leidsebosje Planes, London Plane, ·, 165 years",
-"y": 796.3,
-"h": 212.7,
-"x": 248.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Leidsebosje Planes",
-"y": 798.3,
-"h": 44.0,
-"x": 422.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "The Leidsebosje Planes",
@@ -156,136 +136,6 @@
 "h": 15.7,
 "x": 335.3,
 "w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "165 years",
-"y": 993.3,
-"h": 15.7,
-"x": 344.3,
-"w": 58.7,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Rijksmuseum Wingnut, Caucasian Wingnut, ·, 119 years",
-"y": 796.3,
-"h": 212.7,
-"x": 480.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Rijksmuseum Wingnut",
-"y": 798.3,
-"h": 44.0,
-"x": 654.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Rijksmuseum Wingnut",
-"y": 954.3,
-"h": 36.0,
-"x": 480.0,
-"w": 178.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 993.3,
-"h": 15.7,
-"x": 480.0,
-"w": 117.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 993.3,
-"h": 15.7,
-"x": 602.0,
-"w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "119 years",
-"y": 993.3,
-"h": 15.7,
-"x": 611.0,
-"w": 56.7,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Wertheimpark Wingnut, Caucasian Wingnut, ·, 125 years",
-"y": 796.3,
-"h": 212.7,
-"x": 712.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Wertheimpark Wingnut",
-"y": 798.3,
-"h": 44.0,
-"x": 886.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Wertheimpark Wingnut",
-"y": 954.3,
-"h": 36.0,
-"x": 712.0,
-"w": 186.3,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 993.3,
-"h": 15.7,
-"x": 712.0,
-"w": 117.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 993.3,
-"h": 15.7,
-"x": 834.0,
-"w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "125 years",
-"y": 993.3,
-"h": 15.7,
-"x": 843.0,
-"w": 58.0,
 "s": "fixed"
 },
 {
@@ -419,16 +269,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -436,16 +276,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 },
 {
@@ -625,26 +455,6 @@
 "s": "137"
 },
 {
-"t": "Button",
-"id": "highlight-card",
-"label": "The Leidsebosje Planes, London Plane, ·, 165 years",
-"y": 178.0,
-"h": 212.7,
-"x": 248.0,
-"w": 220.0,
-"s": "137"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Leidsebosje Planes",
-"y": 180.0,
-"h": 44.0,
-"x": 422.0,
-"w": 44.0,
-"s": "137"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "The Leidsebosje Planes",
@@ -672,136 +482,6 @@
 "h": 15.7,
 "x": 335.3,
 "w": 4.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "165 years",
-"y": 375.0,
-"h": 15.7,
-"x": 344.3,
-"w": 58.7,
-"s": "137"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Rijksmuseum Wingnut, Caucasian Wingnut, ·, 119 years",
-"y": 178.0,
-"h": 212.7,
-"x": 480.0,
-"w": 220.0,
-"s": "137"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Rijksmuseum Wingnut",
-"y": 180.0,
-"h": 44.0,
-"x": 654.0,
-"w": 44.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Rijksmuseum Wingnut",
-"y": 336.0,
-"h": 36.0,
-"x": 480.0,
-"w": 178.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 375.0,
-"h": 15.7,
-"x": 480.0,
-"w": 117.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 375.0,
-"h": 15.7,
-"x": 602.0,
-"w": 4.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "119 years",
-"y": 375.0,
-"h": 15.7,
-"x": 611.0,
-"w": 56.7,
-"s": "137"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Wertheimpark Wingnut, Caucasian Wingnut, ·, 125 years",
-"y": 178.0,
-"h": 212.7,
-"x": 712.0,
-"w": 220.0,
-"s": "137"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Wertheimpark Wingnut",
-"y": 180.0,
-"h": 44.0,
-"x": 886.0,
-"w": 44.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Wertheimpark Wingnut",
-"y": 336.0,
-"h": 36.0,
-"x": 712.0,
-"w": 186.3,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 375.0,
-"h": 15.7,
-"x": 712.0,
-"w": 117.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 375.0,
-"h": 15.7,
-"x": 834.0,
-"w": 4.0,
-"s": "137"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "125 years",
-"y": 375.0,
-"h": 15.7,
-"x": 843.0,
-"w": 58.0,
 "s": "137"
 },
 {
@@ -1775,16 +1455,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -1792,16 +1462,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 },
 {
@@ -2061,16 +1721,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -2078,16 +1728,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 }
 ]
@@ -2297,16 +1937,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -2314,16 +1944,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 },
 {
@@ -2493,36 +2113,6 @@
 "s": "0"
 },
 {
-"t": "Button",
-"id": "tree-card",
-"label": "Utrecht",
-"y": 498.0,
-"h": 160.0,
-"x": 412.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "tree-card",
-"label": "Utrecht",
-"y": 498.0,
-"h": 160.0,
-"x": 544.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "tree-card",
-"label": "Leiden",
-"y": 498.0,
-"h": 160.0,
-"x": 676.0,
-"w": 120.0,
-"s": "0"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "New from visitors",
@@ -2653,106 +2243,6 @@
 "s": "0"
 },
 {
-"t": "Button",
-"id": "visitor-tile",
-"label": "Lisbon",
-"y": 725.3,
-"h": 160.0,
-"x": 412.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "visitor-name",
-"label": "Hugo, open profile",
-"y": 892.3,
-"h": 44.0,
-"x": 412.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "visitor-tile",
-"label": "Freiburg",
-"y": 725.3,
-"h": 160.0,
-"x": 544.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "visitor-name",
-"label": "Jannikertree, open profile",
-"y": 892.3,
-"h": 44.0,
-"x": 544.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "J",
-"y": 894.8,
-"h": 11.0,
-"x": 549.2,
-"w": 5.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Jannikertree",
-"y": 893.2,
-"h": 14.3,
-"x": 565.0,
-"w": 72.7,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "visitor-tile",
-"label": "Lisbon",
-"y": 725.3,
-"h": 160.0,
-"x": 676.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "visitor-name",
-"label": "Rooted Plane 5072, open profile",
-"y": 892.3,
-"h": 44.0,
-"x": 676.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "R",
-"y": 894.8,
-"h": 11.0,
-"x": 680.7,
-"w": 6.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Rooted Plane 5072",
-"y": 893.2,
-"h": 14.3,
-"x": 697.0,
-"w": 98.0,
-"s": "0"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "Our favourite tree cities",
@@ -2849,96 +2339,6 @@
 "y": 1091.0,
 "h": 13.3,
 "x": 210.0,
-"w": 44.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Rome, 32 trees",
-"y": 994.3,
-"h": 120.0,
-"x": 384.0,
-"w": 172.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Rome",
-"y": 1070.7,
-"h": 19.3,
-"x": 394.0,
-"w": 40.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "32 trees",
-"y": 1091.0,
-"h": 13.3,
-"x": 394.0,
-"w": 43.7,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Paris, 58 trees",
-"y": 994.3,
-"h": 120.0,
-"x": 568.0,
-"w": 172.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Paris",
-"y": 1070.7,
-"h": 19.3,
-"x": 578.0,
-"w": 34.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "58 trees",
-"y": 1091.0,
-"h": 13.3,
-"x": 578.0,
-"w": 44.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Berlin, 63 trees",
-"y": 994.3,
-"h": 120.0,
-"x": 752.0,
-"w": 172.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Berlin",
-"y": 1070.7,
-"h": 19.3,
-"x": 762.0,
-"w": 41.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "63 trees",
-"y": 1091.0,
-"h": 13.3,
-"x": 762.0,
 "w": 44.0,
 "s": "0"
 },
@@ -3063,36 +2463,6 @@
 "s": "0"
 },
 {
-"t": "Button",
-"id": "",
-"label": "The Autumn Harvest",
-"y": 1487.0,
-"h": 160.0,
-"x": 412.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Europe",
-"y": 1487.0,
-"h": 160.0,
-"x": 544.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Europe",
-"y": 1487.0,
-"h": 160.0,
-"x": 676.0,
-"w": 120.0,
-"s": "0"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "Tree countries",
@@ -3190,96 +2560,6 @@
 "h": 13.3,
 "x": 210.0,
 "w": 50.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Italy, 479 trees",
-"y": 1733.0,
-"h": 120.0,
-"x": 384.0,
-"w": 172.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Italy",
-"y": 1809.3,
-"h": 19.3,
-"x": 394.0,
-"w": 31.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "479 trees",
-"y": 1829.7,
-"h": 13.3,
-"x": 394.0,
-"w": 50.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Germany, 381 trees",
-"y": 1733.0,
-"h": 120.0,
-"x": 568.0,
-"w": 172.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Germany",
-"y": 1809.3,
-"h": 19.3,
-"x": 578.0,
-"w": 65.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "381 trees",
-"y": 1829.7,
-"h": 13.3,
-"x": 578.0,
-"w": 49.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Spain, 359 trees",
-"y": 1733.0,
-"h": 120.0,
-"x": 752.0,
-"w": 172.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Spain",
-"y": 1809.3,
-"h": 19.3,
-"x": 762.0,
-"w": 39.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "359 trees",
-"y": 1829.7,
-"h": 13.3,
-"x": 762.0,
-"w": 51.0,
 "s": "0"
 },
 {
@@ -3415,186 +2695,6 @@
 {
 "t": "Button",
 "id": "",
-"label": "Giant Sequoia, 82",
-"y": 2260.3,
-"h": 44.0,
-"x": 365.0,
-"w": 170.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Giant Sequoia",
-"y": 2273.8,
-"h": 17.0,
-"x": 412.0,
-"w": 87.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "82",
-"y": 2274.5,
-"h": 15.7,
-"x": 507.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Small-leaved Lime, 80",
-"y": 2260.3,
-"h": 44.0,
-"x": 543.7,
-"w": 197.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Small-leaved Lime",
-"y": 2273.8,
-"h": 17.0,
-"x": 590.7,
-"w": 113.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "80",
-"y": 2274.5,
-"h": 15.7,
-"x": 712.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Oriental Plane, 70",
-"y": 2260.3,
-"h": 44.0,
-"x": 748.7,
-"w": 171.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Oriental Plane",
-"y": 2273.8,
-"h": 17.0,
-"x": 795.7,
-"w": 88.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "70",
-"y": 2274.5,
-"h": 15.7,
-"x": 892.0,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Holm Oak, 56",
-"y": 2260.3,
-"h": 44.0,
-"x": 928.3,
-"w": 144.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Holm Oak",
-"y": 2273.8,
-"h": 17.0,
-"x": 975.3,
-"w": 61.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "56",
-"y": 2274.5,
-"h": 15.7,
-"x": 1044.7,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Common Lime, 44",
-"y": 2260.3,
-"h": 44.0,
-"x": 1081.0,
-"w": 173.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Common Lime",
-"y": 2273.8,
-"h": 17.0,
-"x": 1128.0,
-"w": 90.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "44",
-"y": 2274.5,
-"h": 15.7,
-"x": 1226.0,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Sweet Chestnut, 41",
-"y": 2260.3,
-"h": 44.0,
-"x": 1262.3,
-"w": 183.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Sweet Chestnut",
-"y": 2273.8,
-"h": 17.0,
-"x": 1309.3,
-"w": 100.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "41",
-"y": 2274.5,
-"h": 15.7,
-"x": 1417.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
 "label": "London Plane, 318",
 "y": 2312.3,
 "h": 44.0,
@@ -3649,186 +2749,6 @@
 "y": 2326.5,
 "h": 15.7,
 "x": 356.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "European Beech, 81",
-"y": 2312.3,
-"h": 44.0,
-"x": 392.7,
-"w": 183.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "European Beech",
-"y": 2325.8,
-"h": 17.0,
-"x": 439.7,
-"w": 100.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "81",
-"y": 2326.5,
-"h": 15.7,
-"x": 547.7,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Copper Beech, 80",
-"y": 2312.3,
-"h": 44.0,
-"x": 584.0,
-"w": 171.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Copper Beech",
-"y": 2325.8,
-"h": 17.0,
-"x": 631.0,
-"w": 87.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "80",
-"y": 2326.5,
-"h": 15.7,
-"x": 726.7,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Southern Live Oak, 62",
-"y": 2312.3,
-"h": 44.0,
-"x": 763.0,
-"w": 197.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Southern Live Oak",
-"y": 2325.8,
-"h": 17.0,
-"x": 810.0,
-"w": 114.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "62",
-"y": 2326.5,
-"h": 15.7,
-"x": 932.0,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Oak, 49",
-"y": 2312.3,
-"h": 44.0,
-"x": 968.3,
-"w": 108.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Oak",
-"y": 2325.8,
-"h": 17.0,
-"x": 1015.3,
-"w": 24.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "49",
-"y": 2326.5,
-"h": 15.7,
-"x": 1048.0,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Northern Red Oak, 41",
-"y": 2312.3,
-"h": 44.0,
-"x": 1084.3,
-"w": 195.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Northern Red Oak",
-"y": 2325.8,
-"h": 17.0,
-"x": 1131.3,
-"w": 112.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "41",
-"y": 2326.5,
-"h": 15.7,
-"x": 1251.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Caucasian Wingnut, 40",
-"y": 2312.3,
-"h": 44.0,
-"x": 1287.7,
-"w": 204.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 2325.8,
-"h": 17.0,
-"x": 1334.7,
-"w": 121.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "40",
-"y": 2326.5,
-"h": 15.7,
-"x": 1464.0,
 "w": 16.3,
 "s": "0"
 },
@@ -3893,186 +2813,6 @@
 "s": "0"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Large-leaved Lime, 81",
-"y": 2364.3,
-"h": 44.0,
-"x": 391.7,
-"w": 197.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Large-leaved Lime",
-"y": 2377.8,
-"h": 17.0,
-"x": 438.7,
-"w": 113.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "81",
-"y": 2378.5,
-"h": 15.7,
-"x": 560.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Camphor Tree, 73",
-"y": 2364.3,
-"h": 44.0,
-"x": 596.7,
-"w": 171.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Camphor Tree",
-"y": 2377.8,
-"h": 17.0,
-"x": 643.7,
-"w": 87.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "73",
-"y": 2378.5,
-"h": 15.7,
-"x": 739.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Cedar of Lebanon, 59",
-"y": 2364.3,
-"h": 44.0,
-"x": 775.7,
-"w": 193.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Cedar of Lebanon",
-"y": 2377.8,
-"h": 17.0,
-"x": 822.7,
-"w": 109.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "59",
-"y": 2378.5,
-"h": 15.7,
-"x": 940.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Lime, 48",
-"y": 2364.3,
-"h": 44.0,
-"x": 976.7,
-"w": 113.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Lime",
-"y": 2377.8,
-"h": 17.0,
-"x": 1023.7,
-"w": 29.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "48",
-"y": 2378.5,
-"h": 15.7,
-"x": 1061.3,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Olive, 41",
-"y": 2364.3,
-"h": 44.0,
-"x": 1097.7,
-"w": 115.7,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Olive",
-"y": 2377.8,
-"h": 17.0,
-"x": 1144.7,
-"w": 32.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "41",
-"y": 2378.5,
-"h": 15.7,
-"x": 1185.0,
-"w": 16.3,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Tulip Tree, 38",
-"y": 2364.3,
-"h": 44.0,
-"x": 1221.3,
-"w": 144.3,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Tulip Tree",
-"y": 2377.8,
-"h": 17.0,
-"x": 1268.3,
-"w": 61.0,
-"s": "0"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "38",
-"y": 2378.5,
-"h": 15.7,
-"x": 1337.3,
-"w": 16.3,
-"s": "0"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "Tree islands",
@@ -4109,36 +2849,6 @@
 "y": 2475.7,
 "h": 160.0,
 "x": 280.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Oahu",
-"y": 2475.7,
-"h": 160.0,
-"x": 412.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Crete",
-"y": 2475.7,
-"h": 160.0,
-"x": 544.0,
-"w": 120.0,
-"s": "0"
-},
-{
-"t": "Button",
-"id": "",
-"label": "Sardinia",
-"y": 2475.7,
-"h": 160.0,
-"x": 676.0,
 "w": 120.0,
 "s": "0"
 },
@@ -5576,6 +4286,26 @@
 "els": [
 {
 "t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Settings",
+"y": 73.7,
+"h": 20.7,
+"x": 169.3,
+"w": 63.3,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "profile-signin",
 "label": "Sign in, Register and sign in to add and save trees.",
 "y": 122.0,
@@ -6070,6 +4800,26 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Settings",
+"y": 73.7,
+"h": 20.7,
+"x": 169.3,
+"w": 63.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "profile-signin",
@@ -6618,6 +5368,46 @@
 "els": [
 {
 "t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "tree-map-swap",
 "label": "Show this tree on the map",
 "y": 202.0,
@@ -6982,6 +5772,46 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
 {
 "t": "StaticText",
 "id": "",
@@ -7889,16 +6719,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -7906,16 +6726,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 },
 {
@@ -8615,16 +7425,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -8632,16 +7432,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 },
 {
@@ -8740,6 +7530,26 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Aleppo Pine",
+"y": 73.7,
+"h": 20.7,
+"x": 155.7,
+"w": 90.3,
+"s": "fixed"
+},
 {
 "t": "StaticText",
 "id": "",
@@ -9087,6 +7897,26 @@
 "h": 874.0,
 "els": [
 {
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Europe",
+"y": 73.7,
+"h": 20.7,
+"x": 72.0,
+"w": 314.0,
+"s": "fixed"
+},
+{
 "t": "StaticText",
 "id": "",
 "label": "An oak does most of its living quietly, which is why so few of the truly old ones get noticed until someone measures the trunk. These eight, pedunculate and holm, span from a Tegel Forest giant that predates Berlin",
@@ -9402,6 +8232,46 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "tree-map-swap",
@@ -9764,6 +8634,26 @@
 },
 {
 "t": "Button",
+"id": "",
+"label": "Cancel",
+"y": 66.0,
+"h": 36.0,
+"x": 20.0,
+"w": 76.7,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Where is it really?",
+"y": 73.7,
+"h": 20.7,
+"x": 132.7,
+"w": 136.7,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "map-recentre",
 "label": "Back to my location",
 "y": 601.3,
@@ -9828,6 +8718,36 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "mine-menu",
+"label": "More",
+"y": 66.0,
+"h": 36.0,
+"x": 349.0,
+"w": 30.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "ellipsis.circle",
+"label": "More",
+"y": 73.0,
+"h": 22.3,
+"x": 353.0,
+"w": 22.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "tree-photo-open",
@@ -10084,6 +9004,46 @@
 "w": 402.0,
 "h": 874.0,
 "els": [
+{
+"t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
 {
 "t": "Button",
 "id": "tree-map-swap",
@@ -10482,6 +9442,46 @@
 "els": [
 {
 "t": "Button",
+"id": "BackButton",
+"label": "Back",
+"y": 62.0,
+"h": 44.0,
+"x": 16.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "square.and.arrow.up",
+"label": "Share this tree",
+"y": 66.0,
+"h": 36.0,
+"x": 283.0,
+"w": 39.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "ours-menu",
+"label": "Report a problem",
+"y": 66.0,
+"h": 36.0,
+"x": 338.0,
+"w": 44.0,
+"s": "fixed"
+},
+{
+"t": "Image",
+"id": "exclamationmark.bubble",
+"label": "Alert",
+"y": 72.7,
+"h": 22.7,
+"x": 347.7,
+"w": 24.3,
+"s": "fixed"
+},
+{
+"t": "Button",
 "id": "tree-map-swap",
 "label": "Show this tree on the map",
 "y": 202.0,
@@ -10841,6 +9841,26 @@
 "s": "fixed"
 },
 {
+"t": "Button",
+"id": "",
+"label": "Close",
+"y": 82.0,
+"h": 36.0,
+"x": 20.0,
+"w": 67.0,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "What kind of tree is it?",
+"y": 89.7,
+"h": 20.7,
+"x": 114.0,
+"w": 173.7,
+"s": "fixed"
+},
+{
 "t": "SearchField",
 "id": "",
 "label": "Which kind of tree?",
@@ -10967,26 +9987,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "highlight-card",
-"label": "The Leidsebosje Planes, London Plane, ·, 165 years",
-"y": 796.3,
-"h": 212.7,
-"x": 248.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Leidsebosje Planes",
-"y": 798.3,
-"h": 44.0,
-"x": 422.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "The Leidsebosje Planes",
@@ -11014,136 +10014,6 @@
 "h": 15.7,
 "x": 335.3,
 "w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "165 years",
-"y": 993.3,
-"h": 15.7,
-"x": 344.3,
-"w": 58.7,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Rijksmuseum Wingnut, Caucasian Wingnut, ·, 119 years",
-"y": 796.3,
-"h": 212.7,
-"x": 480.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Rijksmuseum Wingnut",
-"y": 798.3,
-"h": 44.0,
-"x": 654.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Rijksmuseum Wingnut",
-"y": 954.3,
-"h": 36.0,
-"x": 480.0,
-"w": 178.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 993.3,
-"h": 15.7,
-"x": 480.0,
-"w": 117.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 993.3,
-"h": 15.7,
-"x": 602.0,
-"w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "119 years",
-"y": 993.3,
-"h": 15.7,
-"x": 611.0,
-"w": 56.7,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Wertheimpark Wingnut, Caucasian Wingnut, ·, 125 years",
-"y": 796.3,
-"h": 212.7,
-"x": 712.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Wertheimpark Wingnut",
-"y": 798.3,
-"h": 44.0,
-"x": 886.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Wertheimpark Wingnut",
-"y": 954.3,
-"h": 36.0,
-"x": 712.0,
-"w": 186.3,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 993.3,
-"h": 15.7,
-"x": 712.0,
-"w": 117.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 993.3,
-"h": 15.7,
-"x": 834.0,
-"w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "125 years",
-"y": 993.3,
-"h": 15.7,
-"x": 843.0,
-"w": 58.0,
 "s": "fixed"
 },
 {
@@ -11277,16 +10147,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -11294,16 +10154,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 },
 {
@@ -11543,26 +10393,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "highlight-card",
-"label": "The Leidsebosje Planes, London Plane, ·, 165 years",
-"y": 796.3,
-"h": 212.7,
-"x": 248.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Leidsebosje Planes",
-"y": 798.3,
-"h": 44.0,
-"x": 422.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
 "t": "StaticText",
 "id": "",
 "label": "The Leidsebosje Planes",
@@ -11590,136 +10420,6 @@
 "h": 15.7,
 "x": 335.3,
 "w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "165 years",
-"y": 993.3,
-"h": 15.7,
-"x": 344.3,
-"w": 58.7,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Rijksmuseum Wingnut, Caucasian Wingnut, ·, 119 years",
-"y": 796.3,
-"h": 212.7,
-"x": 480.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Rijksmuseum Wingnut",
-"y": 798.3,
-"h": 44.0,
-"x": 654.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Rijksmuseum Wingnut",
-"y": 954.3,
-"h": 36.0,
-"x": 480.0,
-"w": 178.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 993.3,
-"h": 15.7,
-"x": 480.0,
-"w": 117.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 993.3,
-"h": 15.7,
-"x": 602.0,
-"w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "119 years",
-"y": 993.3,
-"h": 15.7,
-"x": 611.0,
-"w": 56.7,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "highlight-card",
-"label": "The Wertheimpark Wingnut, Caucasian Wingnut, ·, 125 years",
-"y": 796.3,
-"h": 212.7,
-"x": 712.0,
-"w": 220.0,
-"s": "fixed"
-},
-{
-"t": "Button",
-"id": "save-heart",
-"label": "Save The Wertheimpark Wingnut",
-"y": 798.3,
-"h": 44.0,
-"x": 886.0,
-"w": 44.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "The Wertheimpark Wingnut",
-"y": 954.3,
-"h": 36.0,
-"x": 712.0,
-"w": 186.3,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Caucasian Wingnut",
-"y": 993.3,
-"h": 15.7,
-"x": 712.0,
-"w": 117.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "·",
-"y": 993.3,
-"h": 15.7,
-"x": 834.0,
-"w": 4.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "125 years",
-"y": 993.3,
-"h": 15.7,
-"x": 843.0,
-"w": 58.0,
 "s": "fixed"
 },
 {
@@ -11853,16 +10553,6 @@
 "s": "fixed"
 },
 {
-"t": "Button",
-"id": "",
-"label": "Show only trees that are free to visit",
-"y": 126.0,
-"h": 44.0,
-"x": 340.3,
-"w": 113.0,
-"s": "fixed"
-},
-{
 "t": "Image",
 "id": "ticket",
 "label": "Trailers",
@@ -11870,16 +10560,6 @@
 "h": 10.0,
 "x": 353.7,
 "w": 14.0,
-"s": "fixed"
-},
-{
-"t": "StaticText",
-"id": "",
-"label": "Free to visit",
-"y": 140.2,
-"h": 15.7,
-"x": 374.0,
-"w": 67.3,
 "s": "fixed"
 },
 {
@@ -12514,6 +11194,36 @@
 "h": 58.0,
 "x": 328.0,
 "w": 58.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "",
+"label": "Cancel",
+"y": 82.0,
+"h": 36.0,
+"x": 20.0,
+"w": 76.7,
+"s": "fixed"
+},
+{
+"t": "StaticText",
+"id": "",
+"label": "Your profile",
+"y": 89.7,
+"h": 20.7,
+"x": 157.3,
+"w": 87.0,
+"s": "fixed"
+},
+{
+"t": "Button",
+"id": "",
+"label": "Save",
+"y": 82.0,
+"h": 36.0,
+"x": 319.7,
+"w": 62.3,
 "s": "fixed"
 }
 ]

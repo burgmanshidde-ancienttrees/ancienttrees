@@ -334,7 +334,8 @@ private fun Identity(host: SettingsHost) {
                 host.email?.let { Text(it, fontSize = 13.sp, color = brand.inkSoft, maxLines = 1, overflow = TextOverflow.Ellipsis) }
             } else {
                 Text(stringResource(R.string.settings_sign_in), fontFamily = BrandFace, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = brand.ink)
-                Text(stringResource(R.string.signin_prompt), fontSize = 13.sp, color = brand.inkSoft)
+                // .footnote: its 18 between lines, as the iPhone's two lines (33.7).
+                Text(stringResource(R.string.signin_prompt), fontSize = 13.sp, lineHeight = 18.sp, color = brand.inkSoft)
             }
         }
         Icon(Sym.ChevronRight, null, tint = brand.inkSoft.copy(alpha = 0.6f), modifier = Modifier.size(18.dp))
@@ -429,7 +430,12 @@ fun MenuTick(on: Boolean) {
 @Composable
 fun PushedBar(title: String, onBack: () -> Unit, trailing: (@Composable () -> Unit)? = null) {
     val brand = Brand.colors
-    Box(Modifier.fillMaxWidth().statusBarsPadding().height(44.dp)) {
+    // iOS 26's inline navigation bar is 54 tall, its back button and title in
+    // the top 44 (SweepFrames: NavigationBar {0, 62} {402, 54} on profile,
+    // species, collection). At 44 every pushed page started 10 higher than on
+    // the iPhone (android_spacing.py, 2026-11-11).
+    Box(Modifier.fillMaxWidth().statusBarsPadding().height(54.dp)) {
+    Box(Modifier.fillMaxWidth().height(44.dp)) {
         Box(
             Modifier.align(Alignment.CenterStart).size(44.dp).clickable(role = Role.Button, onClick = onBack),
             contentAlignment = Alignment.Center,
@@ -442,6 +448,7 @@ fun PushedBar(title: String, onBack: () -> Unit, trailing: (@Composable () -> Un
             modifier = Modifier.align(Alignment.Center).padding(horizontal = 52.dp),
         )
         trailing?.let { Box(Modifier.align(Alignment.CenterEnd).padding(end = 8.dp)) { it() } }
+    }
     }
 }
 
