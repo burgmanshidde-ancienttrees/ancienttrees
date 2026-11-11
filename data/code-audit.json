@@ -288,9 +288,10 @@
    "file": "site/src/lib/add-photo-js.ts",
    "summary": "Photographs sent from a tree page on the website were stored unshared, so they never reached the inbox or Hidde",
    "first_seen": "2026-11-11",
-   "status": "open",
+   "status": "fixed",
    "found_by": "hidde",
-   "test": "scripts/qa.py check_web_add_photo_is_shared"
+   "test": "scripts/qa.py check_web_add_photo_is_shared",
+   "fixed_in": "be3392c2a"
   }
  ]
 }
