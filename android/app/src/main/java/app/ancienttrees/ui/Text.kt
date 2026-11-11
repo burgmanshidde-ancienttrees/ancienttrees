@@ -8,6 +8,11 @@ package app.ancienttrees.ui
 import androidx.compose.foundation.text.InlineTextContent
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
@@ -116,13 +121,25 @@ fun Text(
     onTextLayout: ((TextLayoutResult) -> Unit)? = null,
     style: TextStyle = LocalTextStyle.current,
 ) {
-    val (lh, st) = lines(lineHeight, fontSize, fontFamily, style)
+    // A headline (headlineStyle) breaks greedily, as TextKit does, and only a
+    // two-line one that would end on a single word is balanced (push-out).
+    val headline = style.lineBreak == LineBreak.Heading
+    var pushed by remember(text) { mutableStateOf(false) }
+    val styled = if (headline && !pushed) style.copy(lineBreak = LineBreak.Simple) else style
+    val layout: ((TextLayoutResult) -> Unit)? = if (!headline) onTextLayout else { r ->
+        if (!pushed && r.lineCount == 2) {
+            val last = text.substring(r.getLineStart(1), r.getLineEnd(1)).trim()
+            if (last.isNotEmpty() && ' ' !in last) pushed = true
+        }
+        onTextLayout?.invoke(r)
+    }
+    val (lh, st) = lines(lineHeight, fontSize, fontFamily, styled)
     androidx.compose.material3.Text(
         text = text, modifier = modifier, color = color, fontSize = fontSize, fontStyle = fontStyle,
         fontWeight = fontWeight, fontFamily = fontFamily ?: style.fontFamily ?: TextFace,
         letterSpacing = spacing(letterSpacing, fontSize, fontWeight, fontFamily, style),
         textDecoration = textDecoration, textAlign = textAlign, lineHeight = lh, overflow = overflow,
-        softWrap = softWrap, maxLines = maxLines, minLines = minLines, onTextLayout = onTextLayout, style = st,
+        softWrap = softWrap, maxLines = maxLines, minLines = minLines, onTextLayout = layout, style = st,
     )
 }
 
@@ -164,10 +181,10 @@ fun placeholderGrey(): Color =
     if (Brand.colors.ground.red < 0.5f) Color(0x4DEBEBF5) else Color(0x4D3C3C43)
 
 /**
- * A headline's line breaking as Apple's: TextKit's standard strategy pushes a word
- * down rather than leave one alone on the last line ("Are you enjoying / Ancient
- * Trees?", where Compose's greedy break left "Trees?" by itself). Compose's
- * Heading strategy balances the lines the same way.
+ * A headline's line breaking as Apple's: greedy, except that a two-line headline
+ * never ends on one word (TextKit's push-out: "Are you enjoying / Ancient Trees?",
+ * while "Ancient Trees works best / with your location turned / on" keeps its
+ * lone "on", measured on the iPhone 2026-11-11). Text() reads the marker.
  */
 @Composable
-fun headlineStyle(): TextStyle = LocalTextStyle.current.copy(lineBreak = androidx.compose.ui.text.style.LineBreak.Heading)
+fun headlineStyle(): TextStyle = LocalTextStyle.current.copy(lineBreak = LineBreak.Heading)
