@@ -114,6 +114,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     needs: build
+    # ONE ROUND TRIP ON THE TEST ACCOUNT AT A TIME, across every branch: parallel
+    # runs flipped each other's saves on apptest@ (2026-11-11, PR 55's
+    # SignedInRoundTrip waited for "not selected" while three walks shared it).
+    concurrency:
+      group: android-test-account
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 
