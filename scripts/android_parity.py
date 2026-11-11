@@ -55,7 +55,7 @@ from emulator_lock import emulator  # noqa: E402
 
 FRAMES = {name: list(args) for name, args, _ in appsweep.screens(appsweep.pick_subjects())}
 # The screens with an Android port, in the order the page shows them.
-PORTED = ["map", "map-full", "map-pin", "search", "tree", "tree-nophoto", "photo-viewer", "signin",
+PORTED = ["map", "map-full", "map-bar", "map-pin", "search", "tree", "tree-nophoto", "photo-viewer", "signin",
           "explore", "collection-tab", "collection-tab-full", "own-tree", "profile", "profile-signed-in",
           "profile-edit", "signin-email", "refused", "people", "early-adopter", "early-adopter-sheet",
           "collect-intro", "collect-away", "collect-place", "collect-identify", "collect-ticked", "collect-voted",

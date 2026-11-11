@@ -43,6 +43,7 @@ data class LaunchArgs(val args: List<String>, val testSession: String? = null) {
     /** -sheet=full, -sheet=half, -sheet=card, else the peek (MapTab.swift). */
     val sheet: app.ancienttrees.ui.SheetHeight
         get() = when {
+            "-sheet=bar" in args -> app.ancienttrees.ui.SheetHeight.BAR
             "-sheet=full" in args -> app.ancienttrees.ui.SheetHeight.FULL
             "-sheet=half" in args -> app.ancienttrees.ui.SheetHeight.HALF
             "-sheet=card" in args -> app.ancienttrees.ui.SheetHeight.CARD

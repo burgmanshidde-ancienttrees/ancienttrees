@@ -704,6 +704,9 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         }
     }
 
+    // Where the map's list stands: at its count bar the map takes the screen and
+    // the tab bar steps away (Navigator.mapTakesScreen, build 42).
+    var mapStop by remember { mutableStateOf(app.ancienttrees.ui.SheetHeight.PEEK) }
     // THE BAR, drawn on the root of the tab on screen, so a pushed page slides
     // over it. Movable, so moving it from one tab's root to the next keeps its
     // pill sliding between them (TabBar.swift).
@@ -711,6 +714,14 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         androidx.compose.runtime.movableContentOf {
             if (placing == null && !searching && !discoverSearching && draft == null) {
                 Box(Modifier.fillMaxSize(), contentAlignment = Alignment.BottomCenter) {
+                    // .transition(.move(edge: .bottom).combined(with: .opacity)), .spring(duration: 0.28)
+                    androidx.compose.animation.AnimatedVisibility(
+                        visible = !(nav.tab == 0 && mapStop == app.ancienttrees.ui.SheetHeight.BAR),
+                        enter = androidx.compose.animation.slideInVertically(androidx.compose.animation.core.spring(1f, 503f)) { it } +
+                            androidx.compose.animation.fadeIn(androidx.compose.animation.core.spring(1f, 503f)),
+                        exit = androidx.compose.animation.slideOutVertically(androidx.compose.animation.core.spring(1f, 503f)) { it } +
+                            androidx.compose.animation.fadeOut(androidx.compose.animation.core.spring(1f, 503f)),
+                    ) {
                     TabBar(
                         selected = nav.tab,
                         select = { i ->
@@ -728,6 +739,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         },
                         collect = { openCollect() },
                     )
+                    }
                 }
             }
         }
@@ -795,6 +807,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                             onAddTree = { nav.clear(0) },
                             onShare = { t -> share(context, t) },
                             onSearching = { searching = it },
+                            onSheetStop = { mapStop = it },
+                            snackShowing = snack != null,
                             raise = raise,
                             go = go,
                         )
@@ -962,7 +976,12 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
         app.ancienttrees.ui.SnackBar(
             snack = snack,
             // Above the floating bar on a tab's root, just above the action bar on a tree page.
-            lift = if (nav.top is app.ancienttrees.ui.Page.TreePage) androidx.compose.ui.unit.Dp(96f) else androidx.compose.ui.unit.Dp(92f),
+            lift = when {
+                nav.top is app.ancienttrees.ui.Page.TreePage -> androidx.compose.ui.unit.Dp(96f)
+                // Where the Map pill stood (RootSnackLift).
+                nav.tab == 0 && nav.stack.isEmpty() && mapStop == app.ancienttrees.ui.SheetHeight.FULL -> androidx.compose.ui.unit.Dp(70f)
+                else -> androidx.compose.ui.unit.Dp(92f)
+            },
             viewLabel = androidx.compose.ui.res.stringResource(R.string.snack_view),
             undoLabel = androidx.compose.ui.res.stringResource(R.string.snack_undo),
             dismiss = { snack = null },

@@ -60,6 +60,18 @@ class FlowWalk {
         gone("collection-tab")
     }
 
+    // Build 42 (FlowWalk.swift's map pill and back): the pill drops the list to the
+    // count bar, the tab bar steps away, and a tap on the bar brings both back.
+    @Test fun theMapPillTakesTheScreenAndTheBarBringsItBack() {
+        start("-sheet=full")
+        waitFor("map-pill")
+        rule.onNodeWithTag("map-pill").performClick()
+        gone("tab-map")
+        waitFor("map-count")
+        rule.onNodeWithTag("map-count").performClick()
+        waitFor("tab-map")
+    }
+
     @Test fun aTreeOpensAndBackLeavesIt() {
         start("-open=tree:ath_004")
         waitFor("tree-page")

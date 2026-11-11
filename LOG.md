@@ -21,6 +21,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11 session: Android has build 42's map sheet
+
+- **What changed in the product:** on Android, as on the iPhone since PR 40, the map's list at full height is now the page under the search field, with no grip and no count. The Map pill drops it to a new lowest stop where only the count shows and the tab bar steps away, and a tap on that bar brings both back. A drag starts after 18 points and a flick is projected the way SwiftUI does (audit row 30). The grip, the count and the corners change with the sheet frame by frame. Every city and country map follows, since they are the map tab; My trees keeps its stops.
+- **Checked:** map, map-full and map-bar shot on both phones and looked at side by side; pill, bar and flick walked on the emulator; a new FlowWalk step covers pill and back.
+- **Open:** about 10 points less air above Highlights than the iPhone, left to the spacing measurer. The projection's quarter second is the commonly reported figure for SwiftUI, not read from Apple's source.
+
 ## 2026-11-11 session: a map library that does not load no longer stops the page
 
 Nothing changes for anyone whose map loads. When the MapLibre script never arrives or the browser cannot parse it (3 reports in 24 hours: /hong-kong on Chrome 75, /assen and a Waremme tree on Chrome 156), the rest of the page now keeps working and the map's buttons hide, as they already did without WebGL. `atCanMap()` in lib/map.ts asks for the library too; qa's `check_a_map_is_only_built_when_it_can_be()` holds it. Tested on a copy of the live Waremme page without the library: the old code threw this error, the new code throws nothing. The full qa needs the CI build; only the new check ran locally. web_errors stays red until these reports fall out of its 24 hours.
