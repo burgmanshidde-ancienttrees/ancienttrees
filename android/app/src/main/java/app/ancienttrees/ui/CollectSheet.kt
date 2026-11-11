@@ -657,8 +657,8 @@ private fun CollectIntro(
             Column(verticalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.fillMaxWidth()) {
                 // A long press is the library, the shortcut iNaturalist puts on its camera
                 // button (CollectIntro.swift:136); a second way in, never the only one.
-                SheetButtonView(SheetButton(stringResource(R.string.cf_take), SheetKind.PRIMARY, Sym.PhotoCamera, onStart), Modifier.testTag("add-start"), onLongPress = onLibrary)
-                SheetButtonView(SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Sym.PhotoLibrary, onLibrary), Modifier.testTag("add-library"))
+                SheetButtonView(SheetButton(stringResource(R.string.cf_take), SheetKind.PRIMARY, Sym.PhotoCamera, action = onStart), Modifier.testTag("add-start"), onLongPress = onLibrary)
+                SheetButtonView(SheetButton(stringResource(R.string.cf_choose), SheetKind.SECONDARY, Sym.PhotoLibrary, action = onLibrary), Modifier.testTag("add-library"))
             }
         }
         // The iPhone's X box spans 16 to 60 below the sheet's top (centre 38); this
@@ -1016,8 +1016,8 @@ private fun ColumnScope.CompareStep(t: Tree, here: Here, located: Boolean, onThi
         val metres = (Geo.km(here.lat, here.lng, t.lat, t.lng) * 1000).toInt()
         SheetFootnoteText(stringResource(R.string.cf_pin_far, CollectRules.distance(metres)))
     }
-    SheetButtonView(SheetButton(stringResource(R.string.cf_this_one), SheetKind.PRIMARY, null, onThis), Modifier.padding(top = 22.dp).testTag("collect-this-is-the-one"))
-    SheetButtonView(SheetButton(stringResource(R.string.cf_back_to_list), SheetKind.QUIET, null, onBack), Modifier.padding(top = 12.dp))
+    SheetButtonView(SheetButton(stringResource(R.string.cf_this_one), SheetKind.PRIMARY, null, action = onThis), Modifier.padding(top = 22.dp).testTag("collect-this-is-the-one"))
+    SheetButtonView(SheetButton(stringResource(R.string.cf_back_to_list), SheetKind.QUIET, null, action = onBack), Modifier.padding(top = 12.dp))
     if (t.precision == Precision.APPROXIMATE) {
         SheetFootnoteText(
             stringResource(if (t.photo == null && t.howToRecognise.isEmpty()) R.string.cf_foot_nothing else R.string.cf_foot_rough),
@@ -1033,7 +1033,7 @@ private fun ColumnScope.UnsureStep(onDone: () -> Unit) {
     Spacer(Modifier.height(16.dp))
     SheetTitleText(stringResource(R.string.cf_thanks))
     SheetMessageText(stringResource(R.string.cf_unsure_message))
-    SheetButtonView(SheetButton(stringResource(R.string.cf_done), SheetKind.PRIMARY, null, onDone), Modifier.padding(top = 22.dp).testTag("collect-unsure-done"))
+    SheetButtonView(SheetButton(stringResource(R.string.cf_done), SheetKind.PRIMARY, null, action = onDone), Modifier.padding(top = 22.dp).testTag("collect-unsure-done"))
     SheetFootnoteText(stringResource(R.string.cf_unsure_foot))
 }
 
@@ -1083,7 +1083,7 @@ private fun ColumnScope.TickedStep(t: Tree, newFind: Boolean, pinReported: Boole
     }
     val typed = noteText.trim()
     if (typed.isEmpty()) {
-        SheetButtonView(SheetButton(stringResource(R.string.cf_done), SheetKind.PRIMARY, null, onDone), Modifier.padding(top = 22.dp).testTag("collect-done"))
+        SheetButtonView(SheetButton(stringResource(R.string.cf_done), SheetKind.PRIMARY, null, action = onDone), Modifier.padding(top = 22.dp).testTag("collect-done"))
     } else {
         SheetButtonView(
             SheetButton(stringResource(if (sending) R.string.cf_adding else R.string.cf_add_note), SheetKind.PRIMARY, null) {

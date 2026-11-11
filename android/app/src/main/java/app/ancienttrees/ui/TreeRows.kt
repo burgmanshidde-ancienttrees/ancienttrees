@@ -6,6 +6,7 @@
 
 package app.ancienttrees.ui
 
+import androidx.compose.ui.platform.testTag
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -192,6 +193,8 @@ fun TreeRow(tree: Tree, onOpen: () -> Unit) {
         modifier = Modifier
             .fillMaxWidth()
             .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen)
+            // The walks find a tree card by this, as FlowWalk.swift's firstCard does.
+            .testTag("tree-card")
             .padding(vertical = 10.dp),
     ) {
         Box(Modifier.size(64.dp)) {
@@ -241,7 +244,8 @@ fun HighlightCard(tree: Tree, onOpen: () -> Unit) {
     Column(
         Modifier
             .width(220.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen),
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, onClick = onOpen)
+            .testTag("tree-card"),
     ) {
         Box(Modifier.size(220.dp, 150.dp).clip(RoundedCornerShape(12.dp)).background(leafTile())) {
             // Over the leaf tile, which is its placeholder (TreeRow.swift:106).

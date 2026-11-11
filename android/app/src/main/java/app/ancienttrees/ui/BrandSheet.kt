@@ -6,6 +6,7 @@
 
 package app.ancienttrees.ui
 
+import androidx.compose.ui.platform.testTag
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
@@ -55,6 +56,8 @@ data class SheetButton(
     val label: String,
     val kind: SheetKind = SheetKind.SECONDARY,
     val icon: ImageVector? = null,
+    /** The iPhone's accessibility identifier, for the walks (FlowWalk.swift taps by it). */
+    val tag: String? = null,
     val action: () -> Unit,
 )
 
@@ -93,7 +96,8 @@ fun SheetButtonView(
                 if (onLongPress != null) Modifier.combinedClickable(role = Role.Button, onLongClick = onLongPress, onClick = b.action)
                 else Modifier.clickable(role = Role.Button, onClick = b.action),
             )
-            .background(bg, RoundedCornerShape(50)),
+            .background(bg, RoundedCornerShape(50))
+            .then(if (b.tag != null) Modifier.testTag(b.tag) else Modifier),
     ) {
         b.icon?.let {
             // The label's symbol takes the button's 16 (quiet 15) semibold (BrandSheet.swift:62).

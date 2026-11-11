@@ -386,7 +386,7 @@ private fun FindPeopleInner(host: PeopleHost, source: PeopleSource, onBack: () -
                 message = stringResource(R.string.people_thanks_body),
                 icon = Sym.Check,
                 onDismiss = { reporting = null },
-                buttons = listOf(SheetButton(stringResource(R.string.done), SheetKind.PRIMARY) { reporting = null }),
+                buttons = listOf(SheetButton(stringResource(R.string.done), SheetKind.PRIMARY, tag = "report-thanks-done") { reporting = null }),
             )
         } else {
             val reasons = listOf(R.string.report_offensive, R.string.report_impersonation, R.string.report_spam, R.string.report_other)

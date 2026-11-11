@@ -355,7 +355,8 @@ private fun SettingsGear(progress: Float, onClick: () -> Unit, modifier: Modifie
             .clickable(role = Role.Button, onClick = onClick)
             // The ripple stays inside the shape (Airbnb's line, 2026-11-10).
             .background(brand.surface, CircleShape)
-            .semantics { contentDescription = label },
+            .semantics { contentDescription = label }
+            .testTag("mytrees-settings"),
         contentAlignment = Alignment.Center,
     ) {
         Icon(Sym.SettingsMedium, null, tint = brand.ink, modifier = Modifier.size(24.dp).graphicsLayer { alpha = 1f - progress })
@@ -561,14 +562,14 @@ private fun LanePicker(lane: TreesLane, onPick: (TreesLane) -> Unit) {
     Box(Modifier.fillMaxWidth()) {
         Box(Modifier.align(Alignment.BottomStart).fillMaxWidth().height(1.dp).background(brand.hairline))
         Row(horizontalArrangement = Arrangement.spacedBy(24.dp)) {
-            LaneTab(stringResource(R.string.mt_collected), lane == TreesLane.SEEN) { onPick(TreesLane.SEEN) }
-            LaneTab(stringResource(R.string.want_to_visit), lane == TreesLane.WANT) { onPick(TreesLane.WANT) }
+            LaneTab(stringResource(R.string.mt_collected), lane == TreesLane.SEEN, "lane-collected") { onPick(TreesLane.SEEN) }
+            LaneTab(stringResource(R.string.want_to_visit), lane == TreesLane.WANT, "lane-want") { onPick(TreesLane.WANT) }
         }
     }
 }
 
 @Composable
-private fun LaneTab(title: String, on: Boolean, onClick: () -> Unit) {
+private fun LaneTab(title: String, on: Boolean, tag: String, onClick: () -> Unit) {
     val brand = Brand.colors
     val moss = brand.moss
     Text(
@@ -580,6 +581,7 @@ private fun LaneTab(title: String, on: Boolean, onClick: () -> Unit) {
         modifier = Modifier
             .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Tab, onClick = onClick)
             .semantics { selected = on }
+            .testTag(tag)
             // The 2 point moss line under the chosen word, on the hairline.
             .drawBehind { if (on) drawRect(moss, Offset(0f, size.height - 2.dp.toPx()), Size(size.width, 2.dp.toPx())) }
             .padding(vertical = 12.dp),
