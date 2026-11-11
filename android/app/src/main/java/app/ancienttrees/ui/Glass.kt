@@ -85,7 +85,11 @@ const val GLASS_TINT = 0.72f
 // fades the content that slides under the bar at the top of a page (the soft
 // scroll edge). The shapes are the iPhone's; back keeps Android's arrow.
 
-/** A bar's text button in its capsule: Cancel, Save, Close, Done. */
+/**
+ * A bar's text button in its capsule: Cancel, Save, Close, Done. White on a white
+ * bar, so the shadow is what draws it: Android's elevation shadow at the iPhone's
+ * 0.10 vanished (pairs of 2026-11-11, Settings and place-pin), hence 0.2.
+ */
 @Composable
 fun BarCapsule(
     label: String,
@@ -100,7 +104,7 @@ fun BarCapsule(
         contentAlignment = androidx.compose.ui.Alignment.Center,
         modifier = modifier
             .height(height)
-            .shadow(8.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.10f), spotColor = Color.Black.copy(alpha = 0.10f))
+            .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.20f), spotColor = Color.Black.copy(alpha = 0.24f))
             .clip(CircleShape)
             .clickable(enabled = enabled, role = androidx.compose.ui.semantics.Role.Button, onClick = onClick)
             .background(brand.ground, CircleShape)
@@ -125,7 +129,7 @@ fun BackCircle(onBack: () -> Unit, modifier: Modifier = Modifier) {
         contentAlignment = androidx.compose.ui.Alignment.Center,
         modifier = modifier
             .size(44.dp)
-            .shadow(8.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.10f), spotColor = Color.Black.copy(alpha = 0.10f))
+            .shadow(10.dp, CircleShape, ambientColor = Color.Black.copy(alpha = 0.20f), spotColor = Color.Black.copy(alpha = 0.24f))
             .clip(CircleShape)
             .clickable(role = androidx.compose.ui.semantics.Role.Button, onClick = onBack)
             .background(brand.ground, CircleShape)
