@@ -11,6 +11,14 @@
 
 <!-- archive-index -->
 
+## 2026-11-11, night run, second attempt (no new trees)
+
+Nothing visible changed in the product. The shelf is empty and the staged cities have almost no placed leads.
+- The 7 READY leads (St. Louis 2, Tucson 2, Vienna, Windsor, Segovia) went to a write pass. All 7 were held, each with a reason: a ticketed garden over the one-third limit, no public access, no way to tell which trunk, or nothing visible as a reason to go. They are now `status: held` with `held_why`, so READY reads 0.
+- Verify claims on Braga (5 leads), Graz (0 of 11 placed) and Nuremberg (3 of 16 placed) were released without dispatch. Braga is under six candidates and the other two have too few coordinates. All three are walls for 48 hours.
+- Portland is full (33 of 30). The "awaiting a writer" pile is stale files of trees already published.
+- Next run: a coordinate source for Graz or Nuremberg (a register with tree-level points), or a Windsor register retry.
+
 ## 2026-11-11 night run (window from 01:40 UTC)
 
 Rungs 1 to 3: no reader photos or notes waiting; health.py's only finding is that REVIEW.md is 2 days old (`gh workflow run review.yml` refused from the runner, HTTP 403) and one new web error type ("maplibregl is not defined", 1 report, 1 page, below the red threshold). Rung 5, write lane: New York merged 1 tree (nyc_144, the Pagoda Tree by the Camperdown Elm, no photo, app-only under APP FIRST). The shelf's "awaiting a writer: 392" is mostly stale: 38 of 39 New York trees and all Chicago trees were already live, so the Chicago pass wrote nothing. For Hidde: prepare.py's awaiting-a-writer count overstates the shelf; the research files passcheck calls stale could be cleaned up. Not done: a verify pass on a staged Portugal, Germany or Austria city.
