@@ -237,4 +237,6 @@
     <string name="nearby_tap_collect">ここをタップして集める</string>
     <string name="nearby_open_collect">開くと集められます</string>
     <string name="nearby_dismiss">閉じる</string>
+    <!-- The launch loading screen, after six seconds (ContentView.swift slowStart). -->
+    <string name="slow_start">読み込みに時間がかかっています。アプリを閉じてもう一度開いてください。それでも続く場合はお知らせください。</string>
 </resources>

@@ -36,6 +36,12 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.platform.testTag
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.ui.platform.LocalContext
@@ -64,6 +70,7 @@ import app.ancienttrees.ui.LocalTreeMarks
 import app.ancienttrees.ui.MapLaunch
 import app.ancienttrees.ui.MapTab
 import app.ancienttrees.ui.TabBar
+import app.ancienttrees.ui.glassSource
 import app.ancienttrees.ui.TreeMarks
 import app.ancienttrees.ui.TreeDetail
 import app.ancienttrees.ui.TreePageActions
@@ -707,6 +714,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
     // Where the map's list stands: at its count bar the map takes the screen and
     // the tab bar steps away (Navigator.mapTakesScreen, build 42).
     var mapStop by remember { mutableStateOf(app.ancienttrees.ui.SheetHeight.PEEK) }
+    // The layer each tab's root draws into, for the tab bar's glass (Glass.kt).
+    val barGlass = dev.chrisbanes.haze.rememberHazeState()
     // THE BAR, drawn on the root of the tab on screen, so a pushed page slides
     // over it. Movable, so moving it from one tab's root to the next keeps its
     // pill sliding between them (TabBar.swift).
@@ -722,6 +731,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         exit = androidx.compose.animation.slideOutVertically(androidx.compose.animation.core.spring(1f, 503f)) { it } +
                             androidx.compose.animation.fadeOut(androidx.compose.animation.core.spring(1f, 503f)),
                     ) {
+                    CompositionLocalProvider(app.ancienttrees.ui.LocalBarGlass provides barGlass) {
                     TabBar(
                         selected = nav.tab,
                         select = { i ->
@@ -739,6 +749,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         },
                         collect = { openCollect() },
                     )
+                    }
                     }
                 }
             }
@@ -761,6 +772,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                 onPop = { nav.pop() },
                 page = { PageFor(it) },
                 root = {
+                    // What the floating tab bar frosts (Glass.kt).
+                    Box(Modifier.fillMaxSize().glassSource(barGlass)) {
                     CompositionLocalProvider(
                         LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
                         app.ancienttrees.ui.LocalSearchAccount provides app.ancienttrees.ui.SearchAccount(
@@ -814,6 +827,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                         )
                     }
                     // Also while the catalogue loads: the other tabs' roots wait for it.
+                    }
                     if (nav.tab == 0 || catalogue == null) Bar()
                 },
             )
@@ -828,6 +842,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     onPop = { nav.pop() },
                     page = { PageFor(it) },
                     root = {
+                        // What the floating tab bar frosts (Glass.kt).
+                        Box(Modifier.fillMaxSize().glassSource(barGlass)) {
                         DiscoverScreen(
                             catalogue = cat,
                             origin = origin,
@@ -845,6 +861,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                             myPlaces = profiles.myPlaces.map { it.placeName },
                             act = discoverActions,
                         )
+                        }
                         if (nav.tab == 1) Bar()
                     },
                 )
@@ -861,6 +878,8 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                     onPop = { nav.pop() },
                     page = { PageFor(it) },
                     root = {
+                        // What the floating tab bar frosts (Glass.kt).
+                        Box(Modifier.fillMaxSize().glassSource(barGlass)) {
                         CompositionLocalProvider(
                             LocalTreeMarks provides TreeMarks(saves.hearts, saves.collected, onSave = { heart(it) }),
                             app.ancienttrees.ui.LocalMyHeader provides app.ancienttrees.ui.MyHeader(
@@ -897,6 +916,7 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
                                     ),
                                 )
                             }
+                        }
                         }
                         if (nav.tab == 2) Bar()
                     },
@@ -987,6 +1007,34 @@ private fun App(link: Uri?, onLinkRead: () -> Unit, launch: LaunchArgs = LaunchA
             dismiss = { snack = null },
             modifier = Modifier.align(Alignment.BottomCenter).windowInsetsPadding(androidx.compose.foundation.layout.WindowInsets.navigationBars),
         )
+        // THE LAUNCH LOADING SCREEN (ContentView.swift:869-895): until the catalogue is
+        // read, the mark and a spinner on the app's own ground, never a bare map; after
+        // six seconds a line saying it is taking too long.
+        if (catalogue == null) {
+            var slowStart by remember { mutableStateOf(false) }
+            LaunchedEffect(Unit) { kotlinx.coroutines.delay(6000); slowStart = true }
+            androidx.compose.foundation.layout.Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(14.dp, Alignment.CenterVertically),
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(app.ancienttrees.ui.Brand.colors.ground)
+                    .testTag("launch-loading"),
+            ) {
+                app.ancienttrees.ui.SpeciesMark("Pedunculate Oak", app.ancienttrees.ui.Brand.colors.moss, Modifier.size(54.dp))
+                // Android's own spinner shape (Airbnb's line).
+                androidx.compose.material3.CircularProgressIndicator(color = app.ancienttrees.ui.Brand.colors.inkSoft, strokeWidth = 2.dp, modifier = Modifier.size(22.dp))
+                if (slowStart) {
+                    app.ancienttrees.ui.Text(
+                        androidx.compose.ui.res.stringResource(R.string.slow_start),
+                        fontSize = 13.sp,
+                        color = app.ancienttrees.ui.Brand.colors.inkSoft,
+                        textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                        modifier = Modifier.padding(horizontal = 40.dp),
+                    )
+                }
+            }
+        }
         androidx.compose.animation.AnimatedVisibility(
             visible = showingCover,
             enter = androidx.compose.animation.EnterTransition.None,

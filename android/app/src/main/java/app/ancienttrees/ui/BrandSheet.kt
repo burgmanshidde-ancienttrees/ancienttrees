@@ -8,6 +8,7 @@ package app.ancienttrees.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -57,7 +58,12 @@ data class SheetButton(
 
 /** SheetButtonStyle: a capsule the width of the sheet, 48 high (44 for the quiet two). */
 @Composable
-fun SheetButtonView(b: SheetButton, modifier: Modifier = Modifier) {
+fun SheetButtonView(
+    b: SheetButton,
+    modifier: Modifier = Modifier,
+    /** A second way in on a long press (CollectIntro.swift:136, iNaturalist's camera button). */
+    onLongPress: (() -> Unit)? = null,
+) {
     val brand = Brand.colors
     val quiet = b.kind == SheetKind.QUIET || b.kind == SheetKind.DESTRUCTIVE_QUIET
     val fg = when (b.kind) {
@@ -81,7 +87,10 @@ fun SheetButtonView(b: SheetButton, modifier: Modifier = Modifier) {
             .height(if (quiet) 44.dp else 48.dp)
             // The ripple stays inside the capsule (Airbnb's line, 2026-11-10).
             .clip(RoundedCornerShape(50))
-            .clickable(role = Role.Button, onClick = b.action)
+            .then(
+                if (onLongPress != null) Modifier.combinedClickable(role = Role.Button, onLongClick = onLongPress, onClick = b.action)
+                else Modifier.clickable(role = Role.Button, onClick = b.action),
+            )
             .background(bg, RoundedCornerShape(50)),
     ) {
         b.icon?.let {
