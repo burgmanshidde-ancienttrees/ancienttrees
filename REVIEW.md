@@ -23,6 +23,14 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-11-11
+
+Web half: the last 24 hours were Android parity work, one maps fix (atCanMap() asks for maplibregl, qa holds it) and data. No em dashes in site/dist HTML. Standing findings are unchanged.
+
+- WARN site/dist/explore.html still says "Each pin opens a tree with its age, its species, why it is worth the walk, and directions from where you are" while app-only pins open a card with no story. Fifth review. Hard rule 2 and "a decision that changes what the product does also changes what the product says". Replacement: "Each pin opens a tree; some stories are in the app." Translations too.
+- WARN site/src/pages/contribute.astro:17 and :401 (built into contribute.html) still say "verified against independent sources" / "check every tip against independent sources". False since "Good reader input IS the source" (2026-10-12). Sixteenth review in a row. Replacement: "We read every submission before it is kept."
+- NOTE the 11-07 question stands: data/walk-routes.json routing through app-only trees that have no page is unchecked.
+
 ## 2026-11-10 compliance
 
 First review, a session audit on Hidde's ask ("wees een lawyer en geef ons een audit"). Fixed the same day: the privacy page rewritten to what the product does (every account has a public profile, notes and the new-from-visitors row are public, shared links), plus who decides, legal bases, retention, processors, rights and the Autoriteit Persoonsgegevens; the terms (16 and over, profiles, notes, names in the visitors row); photo credits on the website link the licence and the source; first mails must carry a way to say no (mailcheck). Open, in data/compliance.json:
