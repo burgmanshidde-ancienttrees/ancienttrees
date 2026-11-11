@@ -37,6 +37,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.ui.layout.layout
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -335,7 +337,7 @@ private fun MyTreesInner(
         }
 
         // POLARSTEPS' GEAR: it never leaves, and fills in as the list becomes the page.
-        SettingsGear(sheet.pageProgress, actions.settings, Modifier.align(Alignment.TopEnd).statusBarsPadding().padding(top = 6.dp, end = 16.dp))
+        SettingsGear(sheet.pageProgress, actions.settings, Modifier.align(Alignment.TopEnd).statusBarsPadding().padding(end = 16.dp)) // at the safe top, as the Swift's floating slot
     }
 }
 
@@ -383,7 +385,19 @@ private fun WhoYouAre(signedIn: Boolean, email: String?, mine: MyTrees, actions:
         val places = p?.myPlaces.orEmpty()
         val early = header?.earlyAdopter == true
         if (signedIn && (places.isNotEmpty() || early)) {
-            Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
+            // Collect.swift: .frame(minHeight: 44).padding(.vertical, -9.5), 44 to hit
+            // and the pill's own height to lay out; at 44 the tags sat 9 lower.
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .layout { m, c ->
+                        val pl = m.measure(c)
+                        val t = 9.5.dp.roundToPx()
+                        layout(pl.width, (pl.height - 2 * t).coerceAtLeast(0)) { pl.place(0, -t) }
+                    }
+                    .heightIn(min = 44.dp),
+            ) {
                 AmbassadorBadge(places, size = 13, open = { a -> header?.openPlace?.invoke(a.placeSlug, a.placeName) })
                 if (early) EarlyAdopterBadge(13)
             }
@@ -453,9 +467,19 @@ private fun WhoRow(signedIn: Boolean, email: String?, mine: MyTrees, actions: My
                         color = brand.ink,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
+                        // Collect.swift: a 44 frame to hit, .padding(.vertical, -8) to lay
+                        // out, the name centred in it. Laid out at its own 26 the counts
+                        // and badges below sat higher than on the iPhone.
                         modifier = Modifier
                             .weight(1f, fill = false)
+                            .layout { m, c ->
+                                val p = m.measure(c)
+                                val t = 8.dp.roundToPx()
+                                layout(p.width, (p.height - 2 * t).coerceAtLeast(0)) { p.place(0, -t) }
+                            }
                             .widthIn(min = 44.dp)
+                            .heightIn(min = 44.dp)
+                            .wrapContentHeight(Alignment.CenterVertically)
                             .clickable(interactionSource = tap, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button) {
                                 if (signedIn) actions.editProfile() else actions.signIn()
                             }
@@ -508,10 +532,18 @@ private fun Count(n: Int, word: String, onClick: () -> Unit) {
         fontSize = 15.sp,
         color = brand.inkSoft,
         maxLines = 1,
+        // Collect.swift: .frame(minHeight: 44) to hit, .padding(.vertical, -12) to
+        // lay out, so the counts take 20 and the badges follow close under them.
+        // At 30 everything below sat 10 lower than on the iPhone.
         modifier = Modifier
-            .heightIn(min = 30.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button, onClick = onClick)
-            .padding(vertical = 4.dp),
+            .layout { m, c ->
+                val p = m.measure(c)
+                val t = 12.dp.roundToPx()
+                layout(p.width, (p.height - 2 * t).coerceAtLeast(0)) { p.place(0, -t) }
+            }
+            .heightIn(min = 44.dp)
+            .wrapContentHeight(Alignment.CenterVertically)
+            .clickable(interactionSource = remember { MutableInteractionSource() }, indication = androidx.compose.foundation.LocalIndication.current, role = Role.Button, onClick = onClick),
     )
 }
 

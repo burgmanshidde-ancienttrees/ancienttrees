@@ -126,7 +126,13 @@
     "notes": [
       "Continue with Apple is the iPhone's dark pill, first, Apple's logo at the leading edge, then Google and email, 10 apart. Apple goes through Supabase's Apple OAuth redirect in a Custom Tab (Account.openApple), returning on ancienttrees://auth-callback, so an account made with Apple on an iPhone opens here. A first Apple sign-in on Android gets a generated profile name, as the website's redirect fallback does: the redirect carries no name."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "An account keeps what you collect and... height",
+        "why": "Typeface, not spacing: SF sets this sentence a few points wider than Inter at SF's tracking (Text.kt), so at the same size and the same width it wraps to two lines on the iPhone and fits one on Android."
+      }
+    ]
   },
   "explore": {
     "status": "parity",
@@ -151,6 +157,20 @@
       "The ambassador and early-adopter tags under the name are not drawn yet (Badges.kt comes with the profile session).",
       "Signed out on a small phone the sheet stays at half rather than the card stop.",
       "The mission's location-off chip is not drawn when the location is unknown."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "mytrees-settings -> map-recentre",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower and its content ends further from the tab bar: the same rule on a taller screen."
+      },
+      {
+        "what": "lane-signin -> tab-collect",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower and its content ends further from the tab bar: the same rule on a taller screen."
+      },
+      {
+        "what": "mytrees-edit-profile height",
+        "why": "Accessibility box, not layout: the iPhone reports the 44 point tap frame or the capsule, Android the drawn text inside it. The gaps to the neighbours, which carry the layout, are within 2."
+      }
     ]
   },
   "profile": {
@@ -161,7 +181,17 @@
       "Directions offers Google Maps and Another maps app (no Apple Maps on Android, forced).",
       "Rate the app opens the Play Store page (forced)."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "Rate the app, A good rating helps oth... height",
+        "why": "Typeface, not spacing: SF sets this sentence a few points wider than Inter at SF's tracking (Text.kt), so at the same size and the same width it wraps to two lines on the iPhone and fits one on Android."
+      },
+      {
+        "what": "A good rating helps others find Ancie... height",
+        "why": "Typeface, not spacing: SF sets this sentence a few points wider than Inter at SF's tracking (Text.kt), so at the same size and the same width it wraps to two lines on the iPhone and fits one on Android."
+      }
+    ]
   },
   "photo-viewer": {
     "status": "parity",
@@ -223,7 +253,17 @@
       "Distances follows the phone's region until chosen, as on the iPhone; the emulator stands in the US, so it reads Miles where the simulator reads Kilometres.",
       "As profile: Directions offers Google Maps and Another maps app, Rate the app opens the Play Store (forced)."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "Rate the app, A good rating helps oth... height",
+        "why": "Typeface, not spacing: SF sets this sentence a few points wider than Inter at SF's tracking (Text.kt), so at the same size and the same width it wraps to two lines on the iPhone and fits one on Android."
+      },
+      {
+        "what": "A good rating helps others find Ancie... height",
+        "why": "Typeface, not spacing: SF sets this sentence a few points wider than Inter at SF's tracking (Text.kt), so at the same size and the same width it wraps to two lines on the iPhone and fits one on Android."
+      }
+    ]
   },
   "city": {
     "status": "parity",
@@ -241,6 +281,12 @@
     "status": "parity",
     "differences": [
       "SpeciesPage.kt from Species.swift: mark, name, Latin in italics, count, the species paragraph, photographed trees first then nearest. Android's back arrow in the bar (forced). Reached from a tree page's species, Discover's species tiles and its See all list."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "species-intro height",
+        "why": "Pixel rounding: Android sets each 21 sp line in whole pixels (56.4 becomes 57 at the measuring density), so sixteen lines come out about 3 taller; the leading itself is the iPhone's 21 (.callout)."
+      }
     ]
   },
   "collection": {
@@ -267,6 +313,16 @@
       "Naming the species uses the map's species picker, not SpeciesChooser (species-pick, not ported).",
       "The hero keeps a 3:4 portrait shape for every photograph; the iPhone takes the photograph's own shape.",
       "Share sends the link only; the iPhone also hands on a drawn share card (ShareCard.swift)."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "ellipsis.circle height",
+        "why": "Icon box, not spacing: the iPhone reports the SF Symbol glyph's own box, Android the Material Symbols box, sized at SF's point size x 4/3 by the icon rule (PR 42, Symbols.kt). The icon's place in its row matches."
+      },
+      {
+        "what": "plus.circle height",
+        "why": "Icon box, not spacing: the iPhone reports the SF Symbol glyph's own box, Android the Material Symbols box, sized at SF's point size x 4/3 by the icon rule (PR 42, Symbols.kt). The icon's place in its row matches."
+      }
     ]
   },
   "species-pick": {
@@ -277,13 +333,25 @@
   },
   "directions": {
     "status": "parity",
-    "differences": []
+    "differences": [],
+    "spacing_allowed": [
+      {
+        "what": "directions-google -> screen foot",
+        "why": "Different buttons: the iPhone offers Apple Maps then Google Maps, Android Google Maps then Another maps app (no Apple Maps on Android), so the last button is not the same one; and the card stands on Android's navigation bar, as on every sheet."
+      }
+    ]
   },
   "review-ask": {
     "status": "parity",
     "differences": [],
     "notes": [
       "The question before Google's card is kept as on the iPhone (Hidde, 2026-11-10: \"prima doe dat\"), though Google's guide asks for none; it sits behind the remote switch android_review_question in data/app-switches.json, so it can be turned off without a build if Google ever objects. Off, the card comes at the same moments without the question."
+    ],
+    "spacing_allowed": [
+      {
+        "what": "review-no -> screen foot",
+        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing."
+      }
     ]
   },
   "signin-email": {
@@ -291,7 +359,13 @@
     "differences": [
       "As signin: the iPhone's -show-email draws the same sheet; Continue with email opens the field and Email me a sign-in link, then Check your email with Open Gmail or Open Mail chosen by the address."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "An account keeps what you collect and... height",
+        "why": "Typeface, not spacing: SF sets this sentence a few points wider than Inter at SF's tracking (Text.kt), so at the same size and the same width it wraps to two lines on the iPhone and fits one on Android."
+      }
+    ]
   },
   "refused": {
     "status": "parity",
@@ -332,12 +406,32 @@
     "differences": [
       "The tags row (Paris ambassador, Early adopter) matches; the rest of the frame is My trees (collection-tab) and its differences are listed there."
     ],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "mytrees-settings -> map-recentre",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower and its content ends further from the tab bar: the same rule on a taller screen."
+      },
+      {
+        "what": "save-heart -> tab-collect",
+        "why": "The half stop is 52 percent of the visible height on both (BottomSheet.swift SheetHeight.half, MapSheet.kt SheetStops.HALF). The emulator's visible height is 846 against the iPhone's 778, so the sheet rests lower and its content ends further from the tab bar: the same rule on a taller screen."
+      },
+      {
+        "what": "early-adopter-badge height",
+        "why": "Accessibility box, not layout: the iPhone reports the 44 point tap frame or the capsule, Android the drawn text inside it. The gaps to the neighbours, which carry the layout, are within 2."
+      }
+    ]
   },
   "early-adopter-sheet": {
     "status": "parity",
     "differences": [],
-    "owner": null
+    "owner": null,
+    "spacing_allowed": [
+      {
+        "what": "early-adopter-done -> screen foot",
+        "why": "The last button stands 28 above the floating card's bottom edge on both (BrandSheet.swift .padding(.bottom, 28)). Android's card stands on its navigation bar (Sheet.kt), so the distance to the screen's edge adds that bar: Android's system bar, not our spacing."
+      }
+    ]
   },
   "_shared": {
     "_note": "Pieces every screen uses. One owner each; a screen session changes them only through its owner.",

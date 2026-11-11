@@ -108,7 +108,9 @@ fun PlacePin(
         )
 
         // The navigation bar: Cancel (Done once sent) and the title, over the map's top.
-        Box(Modifier.fillMaxWidth().background(brand.ground).statusBarsPadding().height(52.dp)) {
+        // iOS 26's inline bar: 54, its controls in the top 44 (SweepFrames: Cancel
+        // a 36 pill at {20, 66}, 4 under the safe area).
+        Box(Modifier.fillMaxWidth().background(brand.ground).statusBarsPadding().height(54.dp).padding(bottom = 10.dp)) {
             Text(
                 stringResource(if (sent) R.string.pp_done else R.string.pp_cancel),
                 fontSize = 17.sp,
@@ -119,7 +121,7 @@ fun PlacePin(
                     .background(brand.surface, RoundedCornerShape(50))
                     .border(1.dp, brand.hairline, RoundedCornerShape(50))
                     .clickable(role = Role.Button, onClick = onDismiss)
-                    .padding(horizontal = 14.dp, vertical = 9.dp)
+                    .padding(horizontal = 14.dp, vertical = 7.7.dp)
                     .testTag("place-pin-cancel"),
             )
             Text(
