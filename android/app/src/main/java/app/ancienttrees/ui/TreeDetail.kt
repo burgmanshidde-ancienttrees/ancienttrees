@@ -309,9 +309,7 @@ private fun TreeDetailInner(
                 ExpandableText(
                     storyText(tree),
                     lines = 6,
-                    // SwiftUI's .body line: six lines measure 130.3 on the iPhone 17 Pro
-                    // (data/ios-frames.json), 21.7 each; 22 made the story 2 taller.
-                    style = TextStyle(fontSize = 17.sp, lineHeight = 21.7.sp, color = brand.ink),
+                    style = TextStyle(fontSize = 17.sp, lineHeight = 22.sp, color = brand.ink),
                 )
                 NotesSection(tree, account, signedIn, actions)
                 GettingThere(tree)

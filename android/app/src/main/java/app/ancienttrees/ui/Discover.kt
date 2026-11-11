@@ -1048,27 +1048,9 @@ private fun AmbassadorWantedRow(
 
 // MARK: - the pages behind the shelves
 
-/** A pushed page's top bar: back and an inline title (navigationBarTitleDisplayMode(.inline)). */
+/** A pushed page's top bar: Settings.kt's PushedBar, the one iOS 26 inline bar (54). */
 @Composable
-private fun PageBar(title: String, onBack: () -> Unit) {
-    val brand = Brand.colors
-    Box(Modifier.fillMaxWidth().statusBarsPadding().height(44.dp)) {
-        Box(
-            Modifier.align(Alignment.CenterStart).size(44.dp).clickable(onClick = onBack),
-            contentAlignment = Alignment.Center,
-        ) {
-            Icon(
-                Sym.ArrowBack,
-                stringResource(R.string.back), tint = brand.ink, modifier = Modifier.size(22.dp),
-            )
-        }
-        Text(
-            title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = brand.ink, maxLines = 1,
-            overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
-            modifier = Modifier.align(Alignment.Center).padding(horizontal = 52.dp),
-        )
-    }
-}
+private fun PageBar(title: String, onBack: () -> Unit) = PushedBar(title, onBack)
 
 /** A Discover page on the stack (Pages.kt): a list, or a See all. */
 @Composable
