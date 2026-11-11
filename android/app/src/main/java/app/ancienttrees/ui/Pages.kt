@@ -191,7 +191,9 @@ fun PageStack(
                 .fillMaxSize()
                 .placedIf(rootPlaced || active)
                 // Off screen is out of the accessibility tree too: TalkBack never reads a hidden tab.
-                .then(if ((rootPlaced || active) && !covered(-1)) Modifier else Modifier.clearAndSetSemantics { })
+                // Drawn under another tab (the map stays under everything) is still off
+                // screen to TalkBack: only the tab in front is read.
+                .then(if (active && !covered(-1)) Modifier else Modifier.clearAndSetSemantics { })
                 .graphicsLayer { translationX = -0.3f * w * above(-1) },
         ) {
             root()

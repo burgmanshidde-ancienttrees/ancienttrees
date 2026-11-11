@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.AncientTrees" parent="Theme.AppCompat.DayNight.NoActionBar" />
+    <!-- THE LAUNCH (Hidde, 2026-11-11: "heeft android een ander splashscreen?").
+         Android 12 and later always draw a system splash with the app's icon
+         (developer.android.com/develop/ui/views/launch/splash-screen), so the
+         splash itself is Android's (Airbnb's line, CONVENTIONS.md "One app on
+         iPhone and Android"); what surrounds it is the iPhone's: the ground of
+         its generated launch screen, white or black, our own icon, and the same
+         ground behind the first frame, so the hand-off to the cover has no
+         flash. core-splashscreen gives Android 8 to 11 the same splash. -->
+    <style name="Theme.AncientTrees.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/launch_ground</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.AncientTrees</item>
+    </style>
+
+    <style name="Theme.AncientTrees" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/launch_ground</item>
+    </style>
 </resources>

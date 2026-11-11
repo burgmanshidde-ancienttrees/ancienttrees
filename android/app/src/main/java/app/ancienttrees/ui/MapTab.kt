@@ -868,6 +868,8 @@ internal fun RecentreButton(onClick: () -> Unit, modifier: Modifier = Modifier) 
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
+            // The iPhone's identifier on every map that draws it (My trees too), for the walks.
+            .testTag("map-recentre")
             .size(44.dp)
             .shadow(5.dp, RoundedCornerShape(10.dp), ambientColor = Color.Black.copy(alpha = 0.15f), spotColor = Color.Black.copy(alpha = 0.15f))
             .clip(RoundedCornerShape(10.dp))

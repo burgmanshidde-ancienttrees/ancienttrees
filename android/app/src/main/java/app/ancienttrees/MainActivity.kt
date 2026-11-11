@@ -85,6 +85,8 @@ class MainActivity : ComponentActivity() {
     private var link by mutableStateOf<Uri?>(null)
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // The system splash, then the app's theme (themes.xml Theme.AncientTrees.Starting).
+        androidx.core.splashscreen.SplashScreen.Companion.run { installSplashScreen() }
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         // The catalogue starts reading now, not after the first frame (CataloguePreload).

@@ -64,6 +64,10 @@
     {
       "what": "Glyphs the open set does not have",
       "why": "Every icon comes from Material Symbols Rounded (android/generate_symbols.py), never traced from SF Symbols. Where the set has no glyph of the SF shape, the nearest one stands in (visual review 2026-11-11): map.fill is the set's map, whose middle panel is drawn open; leaf is the set's eco leaf, flipped so it lies as the iPhone's does; arrow.turn.up.right is the set's reply arrow, flipped; sparkles and the early adopter's sparkle are auto_awesome (one four-point star has no glyph of its own), from Google's repository of the same set; building.2 is domain; mappin, a ball on a needle, is keep, the set's pin on a needle; person.badge.plus is person_add, whose plus has no disc; ruler is straighten; bubble.left is chat_bubble; ticket is confirmation_number. Sizes and weights are the iPhone's: SF points x 4/3 in dp, weight 600 for semibold, 700 for bold."
+    },
+    {
+      "what": "The system splash",
+      "why": "Android 12 and later draw a splash with the app's icon before the first frame and no app can skip it (developer.android.com/develop/ui/views/launch/splash-screen). The iPhone's generated launch screen is the plain system background. Android's splash takes the iPhone's ground (white, black in dark) and our own icon, with the same ground behind the first frame, then the cover as on the iPhone (themes.xml, CONVENTIONS.md 'One app on iPhone and Android')."
     }
   ],
   "map": {
