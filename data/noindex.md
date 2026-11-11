@@ -134,7 +134,7 @@ Thin places kept indexed (19), a destination tree or real impressions: Alishan, 
 | Luë | France | 1 | 0 |
 | Magescq | France | 1 | 0 |
 | Martinique | France | 1 | 0 |
-| Nantes | France | 1 | 0 |
+| Nantes | France | 1 | 1 |
 | Nicorps | France | 1 | 0 |
 | Pesselieres | France | 1 | 0 |
 | Pianello | France | 1 | 0 |
@@ -296,7 +296,7 @@ Thin places kept indexed (19), a destination tree or real impressions: Alishan, 
 | Suzuka | Japan | 1 | 0 |
 | Takahagi | Japan | 1 | 0 |
 | Takahama | Japan | 1 | 0 |
-| Takayama | Japan | 1 | 21 |
+| Takayama | Japan | 1 | 24 |
 | Takeo | Japan | 1 | 0 |
 | Taketa | Japan | 1 | 0 |
 | Tamba | Japan | 2 | 0 |
