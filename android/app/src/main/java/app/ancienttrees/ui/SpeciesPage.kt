@@ -142,6 +142,9 @@ fun SpeciesScreen(
                     Text(
                         intro,
                         fontSize = 16.sp,
+                        // .callout's leading, 21 between lines (Text.kt): at Inter's own
+                        // line the intro was 25 shorter than the iPhone's.
+                        lineHeight = 21.sp,
                         color = brand.ink,
                         modifier = Modifier.padding(horizontal = 16.dp).padding(bottom = 6.dp).testTag("species-intro"),
                     )

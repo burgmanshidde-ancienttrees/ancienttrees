@@ -226,9 +226,25 @@ def set_width(adb, width_dp=402):
 def insets(adb, density):
     """The status bar's and the navigation bar's height, in dp."""
     text = adb.shell("dumpsys", "window", "windows")
-    top = max([int(v) for v in re.findall(r"type=statusBars[^\n]*?top=(\d+)", text)] or [0])
-    bottom = max([int(v) for v in re.findall(r"type=navigationBars[^\n]*?bottom=(\d+)", text)] or [0])
-    return top * 160 / density, bottom * 160 / density
+    # The SOURCE frames first (InsetsSource ... type=navigationBars frame=[..]):
+    # the provider lines also list sizes for other rotations and the taskbar,
+    # and the largest of those read a 24 dp gesture bar as 47.6 on CI's API 35.
+    tops, bottoms = [], []
+    w_px, h_px = map(int, re.search(r"(\d+)x(\d+)", adb.shell("wm", "size")).groups())
+    for kind, y0, y1 in re.findall(r"InsetsSource[^\n]*?type=(statusBars|navigationBars)[^\n]*?"
+                                   r"frame=\[\d+,(\d+)\]\[\d+,(\d+)\]", text):
+        y0, y1 = int(y0), int(y1)
+        if kind == "statusBars" and y0 == 0 and y1 > 0:
+            tops.append(y1)
+        if kind == "navigationBars" and y1 == h_px and y0 > 0:
+            bottoms.append(y1 - y0)
+    if not tops:
+        tops = [int(v) for v in re.findall(r"type=statusBars[^\n]*?top=(\d+)", text)]
+    if not bottoms:
+        bottoms = [int(v) for v in re.findall(r"type=navigationBars[^\n]*?bottom=(\d+)", text)]
+    # The most common reading, not the largest.
+    pick = lambda xs: max(set(xs), key=xs.count) if xs else 0
+    return pick(tops) * 160 / density, pick(bottoms) * 160 / density
 
 
 def dump_screen(adb, name, args, scrolls, density):

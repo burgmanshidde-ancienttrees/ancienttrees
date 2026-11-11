@@ -59,35 +59,22 @@ private fun spacing(letterSpacing: TextUnit, fontSize: TextUnit, fontWeight: Fon
 }
 
 /**
- * SwiftUI's line, for text that wraps. The iPhone puts the text style's leading
- * (Apple's type ramp: 13 on 18, 15 on 20, 16 on 21, 17 on 22...) between lines
- * and none after the last: six lines of 17 measure 5 x 22 + 20.3 = 130.3, and
- * sixteen of 16 measure 15 x 21 + 19.1 = 334.1, both exactly what SweepFrames
- * reads (data/ios-frames.json, 2026-11-11). Compose, given no line height, set
- * Inter's own (16 on 19.4) and the intro came out 25 shorter; given one, it adds
- * the leading after the last line too. So: the ramp's leading where the call
- * sets none, the glyphs at the top of each line as UIKit sets them, and the last
- * line's extra trimmed. One line keeps exactly its font's height.
+ * SwiftUI's line, for text that wraps. Where the Swift sets a text style the
+ * iPhone puts that style's leading (Apple's ramp: 16 on 21, 17 on 22...) between
+ * lines and none after the last: six lines of .body measure 5 x 22 + 20.3 =
+ * 130.3 and sixteen of .callout 15 x 21 + 19.1 = 334.1, exactly what SweepFrames
+ * reads (data/ios-frames.json, 2026-11-11). A .system(size:) text has no leading
+ * at all, so nothing is guessed from the size: a call that sets a line height
+ * gets it between lines only (centred, both ends trimmed: one line keeps its
+ * font's height), and a call that sets none keeps Inter's own line. Compose
+ * otherwise adds the leading after the last line too.
  */
-private fun swiftLeading(size: TextUnit): TextUnit {
-    if (!size.isSpecified || size.type != androidx.compose.ui.unit.TextUnitType.Sp) return TextUnit.Unspecified
-    return when (size.value) {
-        11f -> 13.sp; 12f -> 16.sp; 13f -> 18.sp; 15f -> 20.sp; 16f -> 21.sp; 17f -> 22.sp
-        20f -> 25.sp; 22f -> 28.sp; 28f -> 34.sp; 34f -> 41.sp
-        else -> TextUnit.Unspecified
-    }
-}
-
-private val SWIFT_LINES = LineHeightStyle(LineHeightStyle.Alignment.Top, LineHeightStyle.Trim.LastLineBottom)
+private val SWIFT_LINES = LineHeightStyle(LineHeightStyle.Alignment.Center, LineHeightStyle.Trim.Both)
 
 private fun lines(lineHeight: TextUnit, fontSize: TextUnit, fontFamily: FontFamily?, style: TextStyle): Pair<TextUnit, TextStyle> {
     val family = fontFamily ?: style.fontFamily
     if (family != null && family != TextFace) return lineHeight to style // Gabarito keeps its own lines
-    val h = when {
-        lineHeight.isSpecified -> lineHeight
-        style.lineHeight.isSpecified -> style.lineHeight
-        else -> swiftLeading(if (fontSize.isSpecified) fontSize else style.fontSize)
-    }
+    val h = if (lineHeight.isSpecified) lineHeight else style.lineHeight
     if (!h.isSpecified) return lineHeight to style
     return h to style.copy(lineHeightStyle = style.lineHeightStyle ?: SWIFT_LINES)
 }
